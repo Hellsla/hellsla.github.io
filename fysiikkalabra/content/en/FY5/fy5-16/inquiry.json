@@ -7,7 +7,7 @@
     "explain reverberation, active noise cancelling, and the working principle of a loudspeaker and a microphone."
   ],
   "prior": [
-    "The sound intensity level $L$ is given in decibels, and it always rises by the same amount when the intensity is multiplied by the same factor (chapter *Loudness of sound*)",
+    "The sound intensity level $L$ is given in decibels, and it always rises by the same amount when the intensity is multiplied by the same factor (chapter *Intensity and the decibel scale*)",
     "A wave is reflected from an obstacle according to the law of reflection and bends behind the edge of an obstacle (chapter *A wave meets an obstacle or a gap*)",
     "Waves that meet add together, and they can strengthen or weaken each other (chapter *When waves combine: superposition and interference*)"
   ],
@@ -28,16 +28,16 @@
       "choices": [
         {
           "text": "$180\\,\\text{dB}$, because the levels of the two towers are added.",
-          "feedback": "Decibels do not add directly; the intensities add (chapter *Loudness of sound*). Two towers double the intensity, and that raises the level by only about $3\\,\\text{dB}$. A level of $180\\,\\text{dB}$ would correspond to an intensity about a billion times greater."
+          "feedback": "Decibels do not add directly; the intensities add (chapter *Intensity and the decibel scale*). Two towers double the intensity, and that raises the level by only about $3\\,\\text{dB}$. A level of $180\\,\\text{dB}$ would correspond to an intensity about a billion times greater."
         },
         {
           "text": "$93\\,\\text{dB}$, because the intensity doubles.",
           "correct": true,
-          "feedback": "Correct. Two equally strong sources double the intensity, and $10\\,\\text{dB} \\cdot \\lg 2 \\approx 3\\,\\text{dB}$ (chapter *Loudness of sound*). This is needed when estimating how much noise reaches the ear."
+          "feedback": "Correct. Two equally strong sources double the intensity, and $10\\,\\text{dB} \\cdot \\lg 2 \\approx 3\\,\\text{dB}$ (chapter *Intensity and the decibel scale*). This is needed when estimating how much noise reaches the ear."
         },
         {
           "text": "$90\\,\\text{dB}$, because the level of each tower is the same.",
-          "feedback": "The second tower brings more energy to the listener, so the intensity increases. The level rises, although only by about $3\\,\\text{dB}$, because the intensity doubles (chapter *Loudness of sound*)."
+          "feedback": "The second tower brings more energy to the listener, so the intensity increases. The level rises, although only by about $3\\,\\text{dB}$, because the intensity doubles (chapter *Intensity and the decibel scale*)."
         },
         {
           "text": "$96\\,\\text{dB}$, because two towers raise the level by $6\\,\\text{dB}$.",
@@ -292,7 +292,7 @@
           "feedback": "You lowered the level by $18\\,\\text{dB}$, that is, by three doublings. When the distance grows from $1.0\\,\\text{m}$ to $4.0\\,\\text{m}$, it doubles only twice, so the level is $88\\,\\text{dB}$."
         }
       ],
-      "solution": "**Given:** $L_1 = 100\\,\\text{dB}$ at a distance of $r_1 = 1.0\\,\\text{m}$, the helper's distance $r_2 = 4.0\\,\\text{m}$; reference $L_0 = 85\\,\\text{dB}$ and $t_0 = 8\\,\\text{h}$; point source in an open space.\n\n**Find:** the helper's permitted daily time $t_\\text{perm}$ in hours.\n\n**Principle:** In an open space the intensity of a point source falls to a quarter every time the distance doubles, so the level falls by $6\\,\\text{dB}$ (chapter *Loudness of sound*). From the helper's level the permitted time follows from the dose rule, in which every $3\\,\\text{dB}$ halves the time.\n\n**Formula:** $L_2 = L_1 - k \\cdot 6\\,\\text{dB}$, where $2^{\\,k} = \\dfrac{r_2}{r_1}$, and $t_\\text{perm} = \\dfrac{t_0}{2^{\\,n}}$, where $n = \\dfrac{L_2 - L_0}{3\\,\\text{dB}}$\n\n**Conversions:** Not needed: the distances are in metres, so their ratio has no unit, and the time comes out directly in hours.\n\n**Substitution:** $2^{\\,k} = 4.0\\,\\text{m} : 1.0\\,\\text{m} = 4$, so $k = 2$ and $L_2 = 100\\,\\text{dB} - 2 \\cdot 6\\,\\text{dB} = 88\\,\\text{dB}$. Then $n = \\dfrac{88\\,\\text{dB} - 85\\,\\text{dB}}{3\\,\\text{dB}} = 1$ and $t_\\text{perm} = \\dfrac{8\\,\\text{h}}{2^1} = 4.0\\,\\text{h}$\n\n**Answer:** $4.0\\,\\text{h}$, two significant figures as in the distances $1.0\\,\\text{m}$ and $4.0\\,\\text{m}$.\n\n**Reasonableness:** Next to the saw, at a level of $100\\,\\text{dB}$, the time would be only $15\\,\\text{min}$. At the helper's position the intensity is $16$ times smaller, so the time is $16 \\cdot 15\\,\\text{min} = 240\\,\\text{min} = 4\\,\\text{h}$. A working day is longer than that, however, so even the helper should wear protectors."
+      "solution": "**Given:** $L_1 = 100\\,\\text{dB}$ at a distance of $r_1 = 1.0\\,\\text{m}$, the helper's distance $r_2 = 4.0\\,\\text{m}$; reference $L_0 = 85\\,\\text{dB}$ and $t_0 = 8\\,\\text{h}$; point source in an open space.\n\n**Find:** the helper's permitted daily time $t_\\text{perm}$ in hours.\n\n**Principle:** In an open space the intensity of a point source falls to a quarter every time the distance doubles, so the level falls by $6\\,\\text{dB}$ (chapter *Intensity and the decibel scale*). From the helper's level the permitted time follows from the dose rule, in which every $3\\,\\text{dB}$ halves the time.\n\n**Formula:** $L_2 = L_1 - k \\cdot 6\\,\\text{dB}$, where $2^{\\,k} = \\dfrac{r_2}{r_1}$, and $t_\\text{perm} = \\dfrac{t_0}{2^{\\,n}}$, where $n = \\dfrac{L_2 - L_0}{3\\,\\text{dB}}$\n\n**Conversions:** Not needed: the distances are in metres, so their ratio has no unit, and the time comes out directly in hours.\n\n**Substitution:** $2^{\\,k} = 4.0\\,\\text{m} : 1.0\\,\\text{m} = 4$, so $k = 2$ and $L_2 = 100\\,\\text{dB} - 2 \\cdot 6\\,\\text{dB} = 88\\,\\text{dB}$. Then $n = \\dfrac{88\\,\\text{dB} - 85\\,\\text{dB}}{3\\,\\text{dB}} = 1$ and $t_\\text{perm} = \\dfrac{8\\,\\text{h}}{2^1} = 4.0\\,\\text{h}$\n\n**Answer:** $4.0\\,\\text{h}$, two significant figures as in the distances $1.0\\,\\text{m}$ and $4.0\\,\\text{m}$.\n\n**Reasonableness:** Next to the saw, at a level of $100\\,\\text{dB}$, the time would be only $15\\,\\text{min}$. At the helper's position the intensity is $16$ times smaller, so the time is $16 \\cdot 15\\,\\text{min} = 240\\,\\text{min} = 4\\,\\text{h}$. A working day is longer than that, however, so even the helper should wear protectors."
     },
     {
       "id": "harjoitukset",

@@ -27,4 +27,17 @@ B_bus = mu0 * 20e3 / (2 * math.pi * 0.30)                               # short 
 a["fy7-4-L3-02"] = -20e3 * 1.0 * B_bus                                  # force on 1,0 m: F = I l B = 266,7 N; opposite currents repel, so by the task's sign rule -> -270 N
 B_h = 53e-6 * math.cos(math.radians(74))                                # horizontal component of the Earth's field (WMM2025: 53 µT, 74°): 14,61 µT
 a["fy7-4-L3-03"] = 2.7e-3 * g / (1.0 * B_h) / 1e3                       # magnetic east–west wire, I l B_h = m g: I = 0,026487 N / (1,0 m · 14,61e-6 T) = 1813 A -> 1,8 kA
-print(json.dumps({k: round(v, 6) for k, v in a.items()}))
+# Exercise-bank additions
+a["fy7-4-L1-06"] = None                                                 # multiple choice (direction): no number; I east x B north = up
+a["fy7-4-L1-07"] = 0.60 * 4.0 / 8.0                                     # F r is constant: F2 = F1 r1 / r2 = 0,60 N · 4,0 / 8,0 = 0,30 N
+a["fy7-4-L1-08"] = 0.050 * math.sin(math.radians(40)) / math.sin(math.radians(20))  # F2 = F1 sin 40° / sin 20° = 0,05 N · 0,6428 / 0,3420 = 0,09397 N -> 0,094 N
+Bs = [dm * 1e-3 * g / (2.0 * l * 0.01) for l, dm in ((2.0, 0.35), (3.0, 0.51), (4.0, 0.71), (5.0, 0.86), (6.0, 1.04))]  # B = Δm g / (I l) for each row: 0,0858 ... 0,0850 T
+a["fy7-4-L2-05"] = sum(Bs) / len(Bs)                                    # mean: 0,4257 T / 5 = 0,08513 T -> 0,085 T (half range 0,0018 T)
+a["fy7-4-L2-06"] = 0.31e-3 * g / (3.0 * 2.5 * 0.01)                     # only l = 2,5 cm is in the field: B = Δm g / (I l) = 3,041e-3 N / 0,075 A m = 0,04055 T -> 0,041 T
+k_coil = sum(I * F for I, F in ((0.2, 1.18), (0.4, 2.27), (0.6, 3.52), (0.8, 4.58), (1.0, 5.83))) / sum(I * I for I in (0.2, 0.4, 0.6, 0.8, 1.0))  # least-squares line through the origin: k = B l = 5,795 N/A
+a["fy7-4-L2-07"] = k_coil / 1.1                                         # l = k / B = 5,795 / 1,1 = 5,27 m -> 5,3 m
+Is = [4.0, 6.0, 8.0, 10.0, 12.0]; acc = [1.8, 3.6, 5.6, 7.3, 9.3]       # rod on rails with friction: a = (l B / m) I − μ g
+k_rod = sum((x - 8.0) * (y - sum(acc) / 5) for x, y in zip(Is, acc)) / sum((x - 8.0) ** 2 for x in Is)  # least-squares slope 0,935 (m/s²)/A
+a["fy7-4-L3-04"] = k_rod * 45e-3 / (12 * 0.01)                          # B = k m / l = 0,935 · 0,045 kg / 0,12 m = 0,351 T -> 0,35 T (μ = 1,96 / 9,81 = 0,20)
+a["fy7-4-L3-05"] = math.sqrt(2 * math.pi * 0.010 * 3.0e-3 * g / (mu0 * 0.50))  # levitating wire, opposite currents: mu0 I² l / (2π r) = m g -> I = 54,25 A -> 54 A
+print(json.dumps({k: round(v, 6) for k, v in a.items() if v is not None}))

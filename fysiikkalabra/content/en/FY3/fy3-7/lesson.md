@@ -197,7 +197,7 @@ where $Q$ is the quantity of heat (J), $s$ is the specific latent heat of fusion
 | $c$ (water) | $4190\,\text{J/(kg}\cdot\text{K)}$ |
 | $c$ (steam) | $2000\,\text{J/(kg}\cdot\text{K)}$ |
 
-In the table, $c$ is the specific heat capacity, which was introduced in chapter *Heating and cooling of a substance*.
+In the table, $c$ is the specific heat capacity, which was introduced in chapter *Heating and cooling of matter: $Q = cm\Delta T$*.
 
 A heating curve shows the temperature as a function of the energy transferred. On the rising parts the substance warms up and $Q = cm\Delta T$ applies. On the horizontal parts the substance changes state and $Q = sm$ or $Q = rm$ applies. The smaller the specific heat capacity, the steeper the temperature rises, so the parts for ice and steam are about twice as steep as the part for water:
 

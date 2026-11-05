@@ -39,12 +39,85 @@
       "answer": 1.2,
       "unit": "s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-11-L1-06",
+      "level": 1,
+      "core": true,
+      "text": "A driver drives at a constant speed of $20\\,\\text{m/s}$. Because of fatigue, their reaction time increases from $1.0\\,\\text{s}$ to $2.0\\,\\text{s}$. The speed and the deceleration of the car in braking stay the same. Which statement about the stopping distance is correct?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Only the reaction distance becomes longer, because braking starts only after the reaction time",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Both the reaction distance and the braking distance become longer, because stopping takes longer",
+          "feedback": "The braking distance is calculated only from the start of braking: it depends only on the initial speed and the deceleration, $s_\\text{b} = \\tfrac{v_0^2}{2a}$. The reaction time does not affect it, because during the reaction time the car simply continues at a constant speed."
+        },
+        {
+          "text": "The stopping distance stays the same, because the speed and the deceleration do not change",
+          "feedback": "The stopping distance also includes the reaction distance $s_\\text{r} = v_0\\,t_\\text{r}$. When the reaction time doubles, the reaction distance doubles, even though the speed and the deceleration do not change."
+        },
+        {
+          "text": "Only the reaction distance becomes longer, because braking starts only after the reaction time",
+          "feedback": "Correct: during the reaction time the car moves at a constant speed, so the reaction distance grows from $20\\,\\text{m}$ to $40\\,\\text{m}$. The braking distance starts only after that and is the same as before.",
+          "correct": true
+        },
+        {
+          "text": "The reaction distance stays the same, because the car always travels it at the same speed",
+          "feedback": "The reaction distance is speed times time, $s_\\text{r} = v_0\\,t_\\text{r}$. Even though the speed is the same, a longer time means a longer distance."
+        }
+      ]
+    },
+    {
+      "id": "fy4-11-L1-07",
+      "level": 1,
+      "text": "In a collision the car stops in an instant. A seat belt stops a passenger wearing it more slowly than a collision with a rigid surface without a belt. Which fact explains why the belt reduces the average force on the passenger?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The change in momentum is the same, but the belt lengthens the time in which the change takes place",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The belt reduces the change in momentum, because the passenger has time to slow down before the collision",
+          "feedback": "The passenger's momentum changes from $m\\,v$ to zero in any case, so the change in momentum is the same with and without the belt. The belt does not slow the passenger before the collision, because they move with the car."
+        },
+        {
+          "text": "The belt increases the impulse on the passenger, so the force decreases",
+          "feedback": "The impulse equals the change in momentum, and it is the same with and without the belt. If the impulse increased while the time stayed the same, the force would increase, not decrease."
+        },
+        {
+          "text": "The change in momentum is the same, but the belt lengthens the time in which the change takes place",
+          "feedback": "Correct: since $F_\\text{avg}\\,\\Delta t = m\\,\\Delta v$ and $m\\,\\Delta v$ is constant, a longer time $\\Delta t$ means a smaller average force.",
+          "correct": true
+        },
+        {
+          "text": "The belt takes some of the momentum for itself, so the passenger's momentum changes less",
+          "feedback": "The passenger's momentum always changes from $m\\,v$ to zero when they stop. The belt affects only the time in which the change takes place."
+        }
+      ]
+    },
+    {
+      "id": "fy4-11-L1-08",
+      "level": 1,
+      "text": "A car brakes on a horizontal gravel-surfaced road as hard as the grip allows. The coefficient of friction between the tyres and the road is $0.75$. Air resistance is neglected. How large is the deceleration of the car?",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 7.4,
+      "unit": "m/s²",
+      "tolerance": 0.02
     }
   ],
   "level2": [
     {
       "id": "fy4-11-L2-01",
       "level": 2,
+      "core": true,
       "text": "A car is driving at $90\\,\\text{km/h}$. The driver's reaction time is $1.5\\,\\text{s}$, and the deceleration of the car in braking is $7.5\\,\\text{m/s}^2$. How long is the stopping distance?",
       "answer": 79.16666666666666,
       "unit": "m",
@@ -53,6 +126,7 @@
     {
       "id": "fy4-11-L2-02",
       "level": 2,
+      "core": true,
       "text": "A car is driving on a snowy horizontal road at $100\\,\\text{km/h}$. The coefficient of friction between the tyres and the snow is $0.30$. How long is the braking distance when the car brakes as hard as the grip allows? Air resistance is neglected.",
       "answer": 131.09156273727572,
       "unit": "m",
@@ -72,6 +146,97 @@
       "text": "At the scene of an accident the police measure the length of a car's skid mark as $32.0\\,\\text{m}$. The car stopped at the end of the mark. The deceleration of the car is estimated as $8.0\\,\\text{m/s}^2$. What was the speed of the car at the start of braking? Answer in $\\text{km/h}$.",
       "answer": 81.45870119269028,
       "unit": "km/h",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-11-L2-05",
+      "level": 2,
+      "core": true,
+      "text": "On a test track the braking distance $s_\\text{b}$ of a passenger car was measured at different initial speeds $v_0$. The car braked with a constant deceleration until it stopped on a horizontal dry road. The table shows example data.\n\nCalculate the squares of the speeds and draw the $(v_0^2, s_\\text{b})$ graph. Fit a straight line through the origin to the points and use its slope to determine the deceleration of the car.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 7.9,
+      "unit": "m/s²",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Braking distance of a car at different initial speeds (example data)",
+        "columns": [
+          "$v_0\\,(\\text{m/s})$",
+          "$s_\\text{b}\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "10.0",
+            "6.5"
+          ],
+          [
+            "15.0",
+            "14.1"
+          ],
+          [
+            "20.0",
+            "25.9"
+          ],
+          [
+            "25.0",
+            "39.6"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-11-L2-06",
+      "level": 2,
+      "text": "In a crash test a car is driven into a wall. The car contains a $75.0\\,\\text{kg}$ test dummy wearing a belt. In different tests the stopping time $\\Delta t$ of the dummy was changed by adjusting the elasticity of the belt, and in each test the average force $F_\\text{avg}$ on the dummy was measured. In all tests the dummy had the same speed before the collision and stopped completely. The table shows example data.\n\nDraw a graph with $\\tfrac{1}{\\Delta t}$ on the horizontal axis and $F_\\text{avg}$ on the vertical axis, and fit a straight line through the origin to the points. Use its slope to determine the speed of the dummy before the collision in $\\text{km/h}$.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 60,
+      "unit": "km/h",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Stopping time and average force of the dummy (example data)",
+        "columns": [
+          "$\\Delta t\\,(\\text{s})$",
+          "$F_\\text{avg}\\,(\\text{kN})$"
+        ],
+        "rows": [
+          [
+            "0.050",
+            "24.8"
+          ],
+          [
+            "0.080",
+            "15.9"
+          ],
+          [
+            "0.100",
+            "12.6"
+          ],
+          [
+            "0.150",
+            "8.3"
+          ],
+          [
+            "0.200",
+            "6.3"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-11-L2-07",
+      "level": 2,
+      "text": "A student solves a problem: “The braking distance of a car from $50\\,\\text{km/h}$ to a stop is $12.0\\,\\text{m}$. The speed $90\\,\\text{km/h}$ is $1.8$ times as large, so the braking distance is also $1.8$ times as large: $1.8 \\cdot 12.0\\,\\text{m} = 21.6\\,\\text{m}$.”\n\nThe deceleration of the car is constant and equal in both braking manoeuvres, the road is horizontal and air resistance is neglected.\n\na) Explain what the error in the student's reasoning is.\n\nb) Calculate the correct braking distance from $90\\,\\text{km/h}$.\n\nThe answer box takes the braking distance of part b).",
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "answer": 38.9,
+      "unit": "m",
       "tolerance": 0.02
     }
   ],
@@ -99,6 +264,94 @@
       "answer": 35.93964334705075,
       "unit": "m",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-11-L3-04",
+      "level": 3,
+      "text": "A road authority is studying a straight stretch of road after a sharp bend. The driver sees an obstacle on the road after the bend only from a distance of $55\\,\\text{m}$, and the speed limit is $80\\,\\text{km/h}$. On wet asphalt the stopping distance $s_\\text{stop}$ of a passenger car was measured at different speeds $v$. The reaction time and the deceleration were the same in all runs, the road was horizontal and air resistance is neglected. The table shows example data.\n\na) Convert the speeds to $\\text{m/s}$ and calculate the ratio $\\tfrac{s_\\text{stop}}{v}$. Draw the graph $\\left(v, \\tfrac{s_\\text{stop}}{v}\\right)$ and use its line to determine the reaction time $t_\\text{r}$ and the deceleration $a$. Hint: divide the formula for the stopping distance by the speed $v$.\n\nb) Calculate the greatest speed at which the car can stop before the obstacle on the wet road. Answer in $\\text{km/h}$.\n\nc) Calculate the stopping distance at $80\\,\\text{km/h}$ and use it to justify whether the speed limit is suitable for this stretch of road.\n\nThe answer box takes the speed of part b).",
+      "kind": [
+        "data",
+        "graph",
+        "model"
+      ],
+      "answer": 66,
+      "unit": "km/h",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Stopping distance on wet asphalt (example data)",
+        "columns": [
+          "$v\\,(\\text{km/h})$",
+          "$s_\\text{stop}\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "30",
+            "17.0"
+          ],
+          [
+            "50",
+            "35.5"
+          ],
+          [
+            "70",
+            "60.0"
+          ],
+          [
+            "90",
+            "92.0"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-11-L3-05",
+      "level": 3,
+      "text": "In a crash test a car hits a wall at $54\\,\\text{km/h}$. The car contains an $80.0\\,\\text{kg}$ test dummy wearing a belt, and an airbag. The measurement starts at the moment of impact, when the speed of the dummy is still $15.0\\,\\text{m/s}$. The table shows example data on the speed of the dummy. Assume that the dummy moves straight ahead and that the net force on it points against the motion all the time.\n\na) Calculate the stopping distance of the dummy. For each $20\\,\\text{ms}$ interval use the mean of the speeds at the start and the end of the interval as the average speed.\n\nb) Calculate the average force on the dummy during the whole stopping.\n\nc) Calculate the greatest force on the dummy, assuming that the deceleration is constant in each $20\\,\\text{ms}$ interval.\n\nd) Use the impulse to justify why the belt and the airbag together reduce the force compared with a situation in which the dummy stopped in $0.010\\,\\text{s}$.\n\nThe answer box takes the force of part c).",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 18.0,
+      "unit": "kN",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Speed of the dummy during the collision (example data)",
+        "columns": [
+          "$t\\,(\\text{ms})$",
+          "$v\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "15.0"
+          ],
+          [
+            "20",
+            "13.4"
+          ],
+          [
+            "40",
+            "10.1"
+          ],
+          [
+            "60",
+            "5.6"
+          ],
+          [
+            "80",
+            "2.2"
+          ],
+          [
+            "100",
+            "0.7"
+          ],
+          [
+            "120",
+            "0.0"
+          ]
+        ]
+      }
     }
   ]
 }

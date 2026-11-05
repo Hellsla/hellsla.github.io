@@ -275,6 +275,7 @@
     "school": "Kiviruukin lukio",
     "status": "building",
     "language": "fi",
+    "translations": ["en", "fi-easy"],
     "sessions": 16,
     "mixer": true,
     "description": "Opintojaksolla kerrataan moduulien FY1–FY8 keskeiset ilmiöt, lait ja taidot ja harjoitellaan ylioppilaskokeen tehtävätyyppejä. Jokainen kertaustunti alkaa lähtötasotestillä ja päättyy alkuperäisiin, ylioppilaskokeen tyylisiin tehtäviin, joissa on mallivastaus ja pisteytysohje itsearviointia varten. Jokainen tehtävä kertoo, minkä luvun taitoja se käyttää, joten heikon kohdan voi kerrata suoraan alkuperäisestä luvusta.",

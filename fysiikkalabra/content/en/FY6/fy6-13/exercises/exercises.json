@@ -27,6 +27,7 @@
     {
       "id": "fy6-13-L1-04",
       "level": 1,
+      "core": true,
       "text": "The area of the plates of a parallel-plate capacitor is $0.025\\,\\text{m}^2$, and there is a layer of air $1.0\\,\\text{mm}$ thick between the plates. What is the capacitance of the capacitor? Give the answer in picofarads.",
       "answer": 221.35,
       "unit": "pF",
@@ -40,12 +41,85 @@
       "answer": 360,
       "unit": "µJ",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-13-L1-06",
+      "level": 1,
+      "text": "A capacitor is first charged to a voltage of $5.0\\,\\text{V}$ and then to $10\\,\\text{V}$. What happens to the capacitance of the capacitor?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "It stays the same, because the capacitance is determined by the construction of the capacitor.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "It doubles, because the charge grows in the same proportion as the voltage.",
+          "feedback": "The charge does grow in the same proportion as the voltage, but the capacitance is their ratio $\\tfrac{Q}{U}$, so it does not change."
+        },
+        {
+          "text": "It decreases, because a higher voltage strains the plates and weakens the ability to store charge.",
+          "feedback": "The capacitance does not weaken as the voltage grows. It depends only on the construction; the strain matters only when the field approaches the dielectric strength of the dielectric."
+        },
+        {
+          "text": "It becomes four times as large, because the energy of the capacitor depends on the square of the voltage.",
+          "feedback": "The energy $W = \\tfrac{1}{2} C U^2$ becomes four times as large when the voltage doubles, but that is exactly why $C$ is a constant in the formula. The capacitance itself does not change."
+        },
+        {
+          "text": "It stays the same, because the capacitance is determined by the construction of the capacitor.",
+          "correct": true,
+          "feedback": "Correct: the capacitance $C = \\tfrac{Q}{U}$ depends on the area of the plates, their distance and the dielectric. When the voltage doubles, the charge doubles too, and the ratio stays the same."
+        }
+      ]
+    },
+    {
+      "id": "fy6-13-L1-07",
+      "level": 1,
+      "core": true,
+      "text": "The source is disconnected from a charged parallel-plate capacitor with air between the plates. After that a plate of dielectric that fills the whole space is pushed between the plates. What happens to the voltage of the capacitor?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "It decreases, because the charge stays the same and the capacitance increases.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "It increases, because the capacitance increases and the charge stays the same.",
+          "feedback": "The charge does stay the same, but the voltage is $U = \\tfrac{Q}{C}$. When $C$ increases and $Q$ stays the same, the voltage decreases and does not increase."
+        },
+        {
+          "text": "It stays the same, because the voltage is determined by the source with which the capacitor was charged.",
+          "feedback": "The source has been disconnected, so it no longer keeps the voltage constant. The voltage follows from the charge and the capacitance, and the capacitance changed."
+        },
+        {
+          "text": "It decreases, because the charge stays the same and the capacitance increases.",
+          "correct": true,
+          "feedback": "Correct: the charge of a disconnected capacitor cannot change, and the dielectric increases the capacitance. Since $U = \\tfrac{Q}{C}$, the voltage decreases."
+        },
+        {
+          "text": "It decreases, because the dielectric lets charge pass from one plate to the other.",
+          "feedback": "The dielectric does not conduct charge: its task is not to conduct. The charge of a disconnected capacitor stays the same, and the voltage decreases because the capacitance increases."
+        }
+      ]
+    },
+    {
+      "id": "fy6-13-L1-08",
+      "level": 1,
+      "text": "The capacitance of a capacitor in the power supply of a computer is $1000\\,\\mu\\text{F}$. Its voltage rises from $6.0\\,\\text{V}$ to $18\\,\\text{V}$. By how much does the energy of the capacitor increase? Give the answer in millijoules.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 144,
+      "unit": "mJ",
+      "tolerance": 0.02
     }
   ],
   "level2": [
     {
       "id": "fy6-13-L2-01",
       "level": 2,
+      "core": true,
       "text": "Between the plates of a capacitor there is a layer of paper $0.020\\,\\text{mm}$ thick, whose dielectric strength is $16\\,\\text{MV/m}$. What is the greatest voltage that can be connected to the capacitor without a breakdown?",
       "answer": 320,
       "unit": "V",
@@ -62,6 +136,7 @@
     {
       "id": "fy6-13-L2-03",
       "level": 2,
+      "core": true,
       "text": "Energy of $200\\,\\text{J}$ is stored in the capacitor of a defibrillator before the shock, when its voltage is $2.0\\,\\text{kV}$. What is the capacitance of the capacitor? Give the answer in microfarads.",
       "answer": 100,
       "unit": "µF",
@@ -73,6 +148,134 @@
       "text": "The capacitance of a supercapacitor is $10\\,\\text{F}$, and it has been charged to its maximum allowed voltage of $2.7\\,\\text{V}$. It powers an LED lamp whose power is $0.50\\,\\text{W}$. Assume that the power stays constant and that all the energy of the capacitor can be used. How long does the lamp stay lit? Give the answer in seconds.",
       "answer": 72.9,
       "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-13-L2-05",
+      "level": 2,
+      "text": "The capacitance of a capacitor is studied by charging it to different voltages. The charge $Q$ in the table has been calculated from the measured charging current (example data).\n\na) Draw the $(U, Q)$ graph of the points, fit a straight line through the origin to the points, and determine the capacitance from the slope of the line.\n\nb) Calculate the energy stored in the capacitor at the voltage $12\\,\\text{V}$. Give the answer in millijoules.\n\nThe answer box takes the result of part b).",
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "answer": 3.4,
+      "unit": "mJ",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Charge of a capacitor as a function of voltage (example data)",
+        "columns": [
+          "$U\\,(\\text{V})$",
+          "$Q\\,(\\mu\\text{C})$"
+        ],
+        "rows": [
+          [
+            "2.0",
+            "94"
+          ],
+          [
+            "4.0",
+            "189"
+          ],
+          [
+            "6.0",
+            "281"
+          ],
+          [
+            "8.0",
+            "380"
+          ],
+          [
+            "10.0",
+            "471"
+          ],
+          [
+            "12.0",
+            "567"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-13-L2-06",
+      "level": 2,
+      "core": true,
+      "text": "A capacitor is charged through a resistor with a $9.0\\,\\text{V}$ battery, and its voltage is measured at intervals of one second (example data). Study the table or draw a graph of the points. During which time interval is the charging current the greatest?",
+      "kind": [
+        "graph",
+        "concept",
+        "data"
+      ],
+      "answer": "During the interval $0\\text{–}1\\,\\text{s}$, because the voltage then grows the fastest.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "During the interval $1\\text{–}2\\,\\text{s}$, because the voltage is then about half of the voltage of the source.",
+          "feedback": "The size of the voltage does not tell the current, but its rate of change does. In this interval the voltage grows only $2.0\\,\\text{V}$, whereas at the start it grew $3.5\\,\\text{V}$ in one second."
+        },
+        {
+          "text": "During the interval $4\\text{–}5\\,\\text{s}$, because the current grows when more charge has accumulated in the capacitor.",
+          "feedback": "The accumulated charge decreases the current: the voltage between the plates opposes the source, and charging slows down. In this interval the voltage grows only $0.5\\,\\text{V}$."
+        },
+        {
+          "text": "During the interval $0\\text{–}1\\,\\text{s}$, because the voltage then grows the fastest.",
+          "correct": true,
+          "feedback": "Correct: the current is the rate of change of the charge, and since $Q = CU$, it is directly proportional to the rate at which the voltage grows. The graph is steepest at the start, when the current is the greatest."
+        },
+        {
+          "text": "During the interval $5\\text{–}6\\,\\text{s}$, because the voltage is then at its greatest and the charge is at its greatest.",
+          "feedback": "A large voltage means a large charge, not a large current. The current is the rate of change of the charge, and in this interval the voltage grows the slowest, only $0.3\\,\\text{V}$."
+        }
+      ],
+      "data": {
+        "caption": "Voltage of a capacitor during charging (example data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$U\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.0"
+          ],
+          [
+            "1.0",
+            "3.5"
+          ],
+          [
+            "2.0",
+            "5.5"
+          ],
+          [
+            "3.0",
+            "6.9"
+          ],
+          [
+            "4.0",
+            "7.7"
+          ],
+          [
+            "5.0",
+            "8.2"
+          ],
+          [
+            "6.0",
+            "8.5"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-13-L2-07",
+      "level": 2,
+      "text": "A student solves a problem: “The capacitance of a capacitor is $220\\,\\mu\\text{F}$, and it is charged with a voltage source of $24\\,\\text{V}$. The source moves to the capacitor a charge $Q = CU = 5.28\\,\\text{mC}$ and gives an energy $QU = 127\\,\\text{mJ}$. All this energy is stored in the capacitor, so $W = 127\\,\\text{mJ}$.”\n\na) What is the error in the student’s reasoning? Justify briefly.\n\nb) Calculate correctly the energy stored in the capacitor in millijoules.\n\nThe answer box takes the result of part b).",
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "answer": 63.4,
+      "unit": "mJ",
       "tolerance": 0.02
     }
   ],
@@ -100,6 +303,89 @@
       "answer": 217.198659,
       "unit": "cm²",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-13-L3-04",
+      "level": 3,
+      "text": "The capacitor of a defibrillator is charged with a constant current of $15\\,\\text{mA}$. The table gives the voltage of the capacitor during charging (example data). The shock is given when the voltage is $1.8\\,\\text{kV}$, and the capacitor discharges through the patient in $5.0\\,\\text{ms}$.\n\nWith a constant current the charge grows steadily, $Q = It$, so the voltage is directly proportional to time.\n\na) Determine the capacitance using the slope of the straight line through the origin that is fitted to the points of the table.\n\nb) Calculate the average power released in the shock in kilowatts.\n\nc) How long does charging to $1.8\\,\\text{kV}$ take? Why must the capacitor of the device not be touched even when the device has been unplugged?\n\nThe answer box takes the result of part b). Justify part c) in writing.",
+      "kind": [
+        "data",
+        "model",
+        "experiment"
+      ],
+      "answer": 48.6,
+      "unit": "kW",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Voltage of a capacitor in constant-current charging (example data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$U\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "2",
+            "203"
+          ],
+          [
+            "4",
+            "396"
+          ],
+          [
+            "6",
+            "607"
+          ],
+          [
+            "8",
+            "805"
+          ],
+          [
+            "10",
+            "992"
+          ],
+          [
+            "12",
+            "1201"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-13-L3-05",
+      "level": 3,
+      "text": "Two parallel-plate capacitors are made of similar plates: the area of a plate is $100\\,\\text{cm}^2$ and the thickness of the dielectric layer is $0.050\\,\\text{mm}$. In one the dielectric is Teflon and in the other glass (table). To be safe, the field may be at most half of the dielectric strength in both. Use the electric constant $\\varepsilon_0 = 8.854 \\cdot 10^{-12}\\,\\text{F/m}$.\n\na) Calculate the greatest allowed voltage and the capacitance of each capacitor.\n\nb) Calculate the energy of each capacitor at this voltage. How many times as large is the energy of the Teflon capacitor as that of the glass capacitor?\n\nc) The relative permittivity of glass is greater than that of Teflon, but Teflon stores more energy. Explain why.\n\nThe answer box takes the ratio of the energies of part b). Justify part c) in writing.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 6.9,
+      "unit": "",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Approximate table values of dielectrics",
+        "columns": [
+          "Dielectric",
+          "$\\varepsilon_\\text{r}$",
+          "$E_\\text{max}\\,(\\text{MV/m})$"
+        ],
+        "rows": [
+          [
+            "Teflon",
+            "2.1",
+            "60"
+          ],
+          [
+            "glass",
+            "5.6",
+            "14"
+          ]
+        ]
+      }
     }
   ]
 }

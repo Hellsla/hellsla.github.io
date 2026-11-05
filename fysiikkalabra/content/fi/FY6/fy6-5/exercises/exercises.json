@@ -3,6 +3,7 @@
     {
       "id": "fy6-5-L1-01",
       "level": 1,
+      "core": true,
       "text": "Polkupyörän valojen johdotuksessa on haarautumispiste. Siihen tulee kaksi johdinta, joiden virrat ovat $2{,}4\\,\\text{A}$ ja $0{,}6\\,\\text{A}$. Pisteestä lähtee kaksi johdinta, ja toisessa niistä virta on $1{,}8\\,\\text{A}$. Kuinka suuri virta kulkee toisessa lähtevässä johtimessa?",
       "answer": 1.2,
       "unit": "A",
@@ -11,6 +12,7 @@
     {
       "id": "fy6-5-L1-02",
       "level": 1,
+      "core": true,
       "text": "Sarjaan kytketyt kaksi vastusta on liitetty jännitelähteeseen, jonka jännite on $12{,}0\\,\\text{V}$. Ensimmäisen vastuksen jännite on $4{,}5\\,\\text{V}$. Kuinka suuri on toisen vastuksen jännite?",
       "answer": 7.5,
       "unit": "V",
@@ -38,6 +40,75 @@
       "text": "Kuvaajassa on sarjaankytkennän potentiaali silmukan eri kohdissa, kun lähteen miinusnapa on nollakohta. Piirissä on lähde ja kolme vastusta. Kuinka suuri on vastuksen $R_2$ jännite? Lue tarvittavat arvot kuvaajasta.",
       "figure": "fy6-5/ex-graph",
       "answer": 4.0,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-5-L1-06",
+      "level": 1,
+      "core": true,
+      "text": "Haarautumispisteeseen tulevien virtojen summa on yhtä suuri kuin siitä lähtevien virtojen summa. Mikä seuraavista selittää tämän oikein?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Varausta ei synny, häviä eikä kerry pisteeseen, joten sinne tuleva varaus myös lähtee pois.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Lähde pakottaa jokaiseen johtimeen yhtä suuren virran, joten haaroihin virta jakautuu aina tasan.",
+          "feedback": "Virta ei jakaudu aina tasan: haarojen virrat riippuvat haarojen resistansseista. Pienemmän resistanssin haarassa kulkee suurempi virta, mutta virtojen summa on silti sama kuin tuleva virta."
+        },
+        {
+          "text": "Haarojen jännitteet ovat yhtä suuret kuin lähteen jännite, joten virratkin ovat yhteensä saman suuruiset.",
+          "feedback": "Virtalaki ei seuraa jännitteistä. Rinnakkaisten haarojen jännite voi olla sama, vaikka virrat ovat eri suuret, eikä jännitteen suuruus kerro virtojen summaa. Virtalain syy on varauksen säilyminen."
+        },
+        {
+          "text": "Varausta ei synny, häviä eikä kerry pisteeseen, joten sinne tuleva varaus myös lähtee pois.",
+          "feedback": "Oikein: Kirchhoffin virtalaki seuraa varauksen säilymisestä. Jos pisteeseen tulisi enemmän varausta kuin siitä lähtee, varaus kasaantuisi siihen, eikä pistettä voisi pitää johtimen kohtana.",
+          "correct": true
+        },
+        {
+          "text": "Virta kuluu vastuksissa, ja haarautumispiste palauttaa kuluneen virran takaisin piiriin.",
+          "feedback": "Virta ei kulu vastuksessa: vastuksen kummallakin puolella virta on yhtä suuri. Vastuksessa pienenee potentiaali, ei virta, eikä haarautumispiste palauta mitään."
+        }
+      ]
+    },
+    {
+      "id": "fy6-5-L1-07",
+      "level": 1,
+      "text": "Virtapiirissä on jännitelähde ja kaksi vastusta sarjassa. Nollakohdaksi on valittu lähteen miinusnapa. Sitten nollakohdaksi valitaan lähteen plusnapa. Mitä tämä muuttaa?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Potentiaalit muuttuvat kaikissa kohdissa saman verran, mutta jännitteet pysyvät samoina.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Vain uuden nollakohdan potentiaali muuttuu, ja muiden kohtien potentiaalit pysyvät ennallaan.",
+          "feedback": "Kaikki potentiaalit mitataan nollakohdasta, joten uusi nollakohta muuttaa jokaisen kohdan potentiaalia. Esimerkiksi miinusnavan potentiaali muuttuu nollasta negatiiviseksi."
+        },
+        {
+          "text": "Vastusten läpi kulkeva virta muuttuu, koska jokaisen kohdan potentiaali saa uuden arvon.",
+          "feedback": "Virran määräävät lähteen jännite ja resistanssit, ja ne pysyvät samoina. Nollakohta on vain laskennallinen valinta, eikä se muuta piirin toimintaa."
+        },
+        {
+          "text": "Vastusten jännitteet muuttuvat, koska jännite lasketaan aina etäisyydestä valittuun nollakohtaan.",
+          "feedback": "Vastuksen jännite on sen päiden potentiaaliero, ja ero ei riipu nollakohdasta. Nollakohdan vaihto ei siis muuta vastuksen jännitettä."
+        },
+        {
+          "text": "Potentiaalit muuttuvat kaikissa kohdissa saman verran, mutta jännitteet pysyvät samoina.",
+          "feedback": "Oikein: potentiaali on jännite nollakohtaan nähden, joten nollakohdan vaihto siirtää kaikkia potentiaaleja yhtä paljon. Kahden kohdan jännite on potentiaalien erotus, jossa siirto kumoutuu.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "fy6-5-L1-08",
+      "level": 1,
+      "text": "Virta $0{,}040\\,\\text{A}$ kulkee kohdasta $A$ sarjaan kytketyn vastuksen $R_1 = 60\\,\\Omega$ kautta kohtaan $B$ ja sieltä vastuksen $R_2 = 90\\,\\Omega$ kautta kohtaan $C$. Kohdan $A$ potentiaali on $9{,}0\\,\\text{V}$. Mikä on kohdan $C$ potentiaali?",
+      "answer": 3.0,
       "unit": "V",
       "tolerance": 0.02
     }
@@ -75,13 +146,102 @@
       "answer": 60,
       "unit": "Ω",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-5-L2-05",
+      "level": 2,
+      "text": "Esimerkkiaineisto: kolme vastusta, $R_1 = 60\\,\\Omega$, $R_2 = 80\\,\\Omega$ ja $R_3 = 50\\,\\Omega$, on kytketty rinnan jännitelähteeseen, jonka jännite on $12\\,\\text{V}$. Jokaisen vastuksen kanssa sarjassa on virtamittari, ja pääjohtimessa on virtamittari $\\text{A}_0$. Lähde, johtimet ja virtamittarit oletetaan ideaalisiksi.\n\nTaulukossa ovat mittarien lukemat. Yksi lukemista on virheellinen, koska Kirchhoffin virtalaki ei toteudu.\n\na) Tarkista haaramittarien lukemat Ohmin lailla.\n\nb) Päättele, mikä lukema on virheellinen, ja laske, mitä sen mittarin pitäisi näyttää.\n\nVastauslaatikkoon tulee kohdan b) tulos.",
+      "kind": [
+        "data",
+        "error"
+      ],
+      "answer": 0.59,
+      "unit": "A",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Virtamittarien lukemat, esimerkkiaineisto",
+        "columns": [
+          "Mittari",
+          "$I\\,(\\text{A})$"
+        ],
+        "rows": [
+          [
+            "$\\text{A}_0$ (pääjohdin)",
+            "0.50"
+          ],
+          [
+            "$\\text{A}_1$ (vastus $R_1$)",
+            "0.20"
+          ],
+          [
+            "$\\text{A}_2$ (vastus $R_2$)",
+            "0.15"
+          ],
+          [
+            "$\\text{A}_3$ (vastus $R_3$)",
+            "0.24"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-5-L2-06",
+      "level": 2,
+      "core": true,
+      "text": "Esimerkkiaineisto: sarjapiirissä on jännitelähde ja kolme vastusta. Kohta $A$ on lähteen plusnapa, ja virta kulkee sieltä vastuksen $R_1$ kautta kohtaan $B$, johtimen kautta kohtaan $C$, vastuksen $R_2$ kautta kohtaan $D$ ja vastuksen $R_3$ kautta lähteen miinusnapaan $E$.\n\nMiinusnapa on nollakohta. Jännitemittarilla mitatut potentiaalit ovat taulukossa, ja virtamittari näyttää $0{,}12\\,\\text{A}$.\n\na) Selitä, miksi kohdilla $B$ ja $C$ on sama potentiaali.\n\nb) Laske vastuksen $R_2$ resistanssi.\n\nVastauslaatikkoon tulee kohdan b) tulos.",
+      "kind": [
+        "data"
+      ],
+      "answer": 40,
+      "unit": "Ω",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Potentiaali piirin kohdissa, esimerkkiaineisto",
+        "columns": [
+          "Kohta",
+          "$V\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "$A$",
+            "12.0"
+          ],
+          [
+            "$B$",
+            "8.4"
+          ],
+          [
+            "$C$",
+            "8.4"
+          ],
+          [
+            "$D$",
+            "3.6"
+          ],
+          [
+            "$E$",
+            "0.0"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-5-L2-07",
+      "level": 2,
+      "text": "Esimerkkitehtävä: sarjassa ovat jännitelähde $9{,}0\\,\\text{V}$ sekä vastukset $R_1 = 100\\,\\Omega$ ja $R_2 = 200\\,\\Omega$. Lähteen plusnapa on kytketty vastukseen $R_1$.\n\nOppilas valitsee nollakohdaksi lähteen plusnavan ja kirjoittaa: ”Virta on $I = 9{,}0\\,\\text{V} : 300\\,\\Omega = 0{,}030\\,\\text{A}$, joten vastusten välisen johtimen potentiaali on $V = R_1 I$, eli kolme volttia.”\n\na) Etsi oppilaan päättelystä virhe.\n\nb) Laske vastusten välisen johtimen potentiaali oikein etumerkkeineen.\n\nVastauslaatikkoon tulee kohdan b) tulos.",
+      "kind": [
+        "error"
+      ],
+      "answer": -3.0,
+      "unit": "V",
+      "tolerance": 0.02
     }
   ],
   "level3": [
     {
       "id": "fy6-5-L3-01",
       "level": 3,
-      "text": "Kolme vastusta, $R_1 = 30\\,\\Omega$, $R_2 = 50\\,\\Omega$ ja $R_3 = 40\\,\\Omega$, on kytketty tässä järjestyksessä sarjaan jännitelähteeseen, jonka jännite on $12\\,\\text{V}$: plusnapa on kytketty vastukseen $R_1$ ja miinusnapa vastukseen $R_3$. Nollakohdaksi valitaan vastusten $R_1$ ja $R_2$ välinen johdin. Mikä on lähteen miinusnavan potentiaali? Anna vastaus etumerkkeineen.",
+      "text": "Kolme vastusta, $R_1 = 30\\,\\Omega$, $R_2 = 50\\,\\Omega$ ja $R_3 = 40\\,\\Omega$, on kytketty tässä järjestyksessä sarjaan jännitelähteeseen, jonka jännite on $12\\,\\text{V}$: plusnapa on kytketty vastukseen $R_1$ ja miinusnapa vastukseen $R_3$.\n\nNollakohdaksi valitaan vastusten $R_1$ ja $R_2$ välinen johdin.\n\nMikä on lähteen miinusnavan potentiaali? Anna vastaus etumerkkeineen.",
       "answer": -9.0,
       "unit": "V",
       "tolerance": 0.02
@@ -102,6 +262,55 @@
       "answer": 1.8,
       "unit": "V",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-5-L3-04",
+      "level": 3,
+      "text": "Esimerkkikytkennässä on kaksi ideaalista jännitelähdettä ja kolme vastusta. Haarautumispisteiden $P$ ja $Q$ välillä on kolme rinnakkaista haaraa.\n\nVasemmassa haarassa on lähde $U_1 = 12\\,\\text{V}$ ja vastus $R_1 = 30\\,\\Omega$, keskimmäisessä vastus $R_2 = 20\\,\\Omega$ ja oikeassa lähde $U_2 = 9{,}0\\,\\text{V}$ ja vastus $R_3 = 30\\,\\Omega$.\n\nKummankin lähteen plusnapa on pisteen $P$ puolella. Virrat $I_1$ ja $I_3$ kulkevat lähteistä pisteeseen $P$, ja virta $I_2$ kulkee pisteestä $P$ vastuksen $R_2$ kautta pisteeseen $Q$.\n\na) Muodosta Kirchhoffin laeilla yhtälöryhmä haaravirroille $I_1$, $I_2$ ja $I_3$ ja ratkaise se.\n\nb) Tarkista ratkaisu energiataseella: lähteen teho on $P = UI$ ja vastuksen teho $P = RI^2$. Perustele, miksi lähteiden tehon summan pitää olla yhtä suuri kuin vastusten tehon summa.\n\nVastauslaatikkoon tulee kohdan a) virta $I_2$.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 0.3,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-5-L3-05",
+      "level": 3,
+      "text": "Jännitejakajalla saadaan lähteen jännitettä pienempi jännite. Esimerkkipiirissä lähteen jännite on $12\\,\\text{V}$. Lähteen plusnapa on kytketty vastukseen $R_1 = 100\\,\\Omega$, jonka jälkeen virta kulkee pisteen $P$ kautta vastukseen $R_2 = 100\\,\\Omega$ ja lähteen miinusnapaan, joka on nollakohta.\n\nPisteen $P$ ja miinusnavan väliin kytketään kuorma, jonka resistanssi on $R_\\text{k}$ (rinnan vastuksen $R_2$ kanssa). Taulukossa ovat pisteen $P$ mitatut potentiaalit eri kuormilla (esimerkkiaineisto).\n\na) Perustele Kirchhoffin laeilla, miksi pisteen $P$ potentiaali on ilman kuormaa $6{,}00\\,\\text{V}$ ja miksi se pienenee kuormitettaessa.\n\nb) Laske pisteen $P$ potentiaali, kun $R_\\text{k} = 100\\,\\Omega$, ja vertaa taulukkoon.\n\nc) Mikä kuorman resistanssi $R_\\text{k}$ pitää pisteen $P$ potentiaalin arvossa $5{,}0\\,\\text{V}$?\n\nVastauslaatikkoon tulee kohdan c) tulos.",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 250,
+      "unit": "Ω",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Pisteen $P$ potentiaali eri kuormilla, esimerkkiaineisto",
+        "columns": [
+          "$R_\\text{k}\\,(\\Omega)$",
+          "$V_P\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "ei kuormaa",
+            "6.00"
+          ],
+          [
+            "1000",
+            "5.72"
+          ],
+          [
+            "100",
+            "4.01"
+          ],
+          [
+            "47",
+            "2.91"
+          ]
+        ]
+      }
     }
   ]
 }

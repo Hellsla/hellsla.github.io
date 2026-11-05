@@ -3,6 +3,7 @@
     {
       "id": "fy7-8-L1-01",
       "level": 1,
+      "core": true,
       "text": "Ovikellon muuntajan ensiökäämissä on $1200$ kierrosta ja toisiokäämissä $60$ kierrosta. Ensiökäämi kytketään verkkojännitteeseen $230\\,\\text{V}$. Kuinka suuri on toisiojännite? Muuntaja oletetaan ideaaliseksi.",
       "answer": 11.5,
       "unit": "V",
@@ -39,12 +40,67 @@
       "answer": 320.0,
       "unit": "MW",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-8-L1-06",
+      "level": 1,
+      "core": true,
+      "text": "Ideaalinen muuntaja kytketään paristoon. Paristo antaa tasajännitettä. Kun ensiökäämin virta on tasaantunut vakioksi, toisiokäämin jännitteeksi mitataan nolla. Mikä on syynä?",
+      "kind": [
+        "concept"
+      ],
+      "unit": "",
+      "tolerance": 0.02,
+      "answer": "Tasavirran synnyttämä magneettivuo ei muutu, joten toisiokäämiin ei indusoidu jännitettä.",
+      "choices": [
+        {
+          "text": "Tasavirta ei kulje käämilangassa, joten ensiökäämiin ei synny magneettikenttää.",
+          "feedback": "Tehtävän mukaan ensiökäämin virta on vakio. Tasavirta siis kulkee käämilangassa ja synnyttää magneettikentän. Syy on se, ettei kenttä muutu."
+        },
+        {
+          "text": "Tasavirran magneettikenttä kumoaa rautasydämen magnetoitumisen, joten sydän ei välitä vuota.",
+          "feedback": "Rautasydän magnetoituu myös tasavirrasta ja välittää vuon käämistä toiseen. Induktio vaatii kuitenkin, että vuo muuttuu."
+        },
+        {
+          "text": "Tasavirran synnyttämä magneettivuo ei muutu, joten toisiokäämiin ei indusoidu jännitettä.",
+          "correct": true,
+          "feedback": "Oikein. Induktiojännite syntyy vain, kun toisiokäämin läpi kulkeva magneettivuo muuttuu. Magneettivuo kertoo, kuinka paljon magneettikenttää kulkee käämin läpi. Vaihtovirta muuttaa vuota koko ajan. Tasavirta ei muuta sitä."
+        },
+        {
+          "text": "Tasajännitettä ei voi muuntaa, koska muuntaja voi vain laskea jännitettä. Se ei voi nostaa sitä.",
+          "feedback": "Muuntaja voi sekä nostaa että laskea vaihtojännitettä. Se riippuu käämien kierrosluvuista. Tasajännitteellä ongelma on se, että vuo ei muutu."
+        }
+      ]
+    },
+    {
+      "id": "fy7-8-L1-07",
+      "level": 1,
+      "core": true,
+      "text": "Voimalaitos siirtää tehon johtoa pitkin. Johdossa muuttuu lämmöksi teho $840\\,\\text{kW}$. Siirtojännite nostetaan kaksinkertaiseksi. Siirrettävä teho ja johdon resistanssi pysyvät samoina. Kuinka suuri häviöteho on nyt? Anna vastaus kilowatteina.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 210.0,
+      "unit": "kW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-8-L1-08",
+      "level": 1,
+      "text": "Muuntajan ensiökäämi ottaa verkosta tehon $80\\,\\text{W}$. Toisiokäämi antaa kuormalle tehon $72\\,\\text{W}$. Hyötysuhde on $\\eta = P_2 : P_1$. Se kertoo, kuinka suuri osa otetusta tehosta saadaan käyttöön. Mikä on muuntajan hyötysuhde prosentteina?",
+      "kind": [
+        "concept"
+      ],
+      "answer": 90.0,
+      "unit": "%",
+      "tolerance": 0.02
     }
   ],
   "level2": [
     {
       "id": "fy7-8-L2-01",
       "level": 2,
+      "core": true,
       "text": "Vesivoimala siirtää tehon $50\\,\\text{MW}$ jännitteellä $110\\,\\text{kV}$ sähköasemalle. Johtimien yhteinen resistanssi on $4{,}0\\,\\Omega$. Kuinka suuri teho johdossa muuttuu lämmöksi? Anna vastaus kilowatteina.",
       "answer": 826.4463,
       "unit": "kW",
@@ -74,6 +130,108 @@
       "answer": 0.8,
       "unit": "Ω",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-8-L2-05",
+      "level": 2,
+      "text": "Opiskelijat tutkivat muuntajaa. Ensiökäämin kierrosten lukumäärää $N_1$ ei tiedetä. Ensiökäämi kytkettiin vaihtojännitteeseen $U_1 = 6{,}00\\,\\text{V}$. Toisiokäämin kierrosten lukumäärää $N_2$ muutettiin. Jokaisella $N_2$:n arvolla mitattiin kuormittamattoman toisiokäämin jännite $U_2$ (esimerkkiaineisto).\n\nPisteet asettuvat likimain suoralle, joka kulkee origon kautta: $U_2 = k N_2$. Sovita pisteisiin suora tai laske jokaiselle riville $U_2 : N_2$. Päättele kulmakertoimen $k$ avulla ensiökäämin kierrosten lukumäärä $N_1$. Muuntaja oletetaan ideaaliseksi.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "data": {
+        "caption": "Toisiojännite $U_2$ eri toisiokäämin kierrosluvuilla $N_2$, kun $U_1 = 6{,}00\\,\\text{V}$ (esimerkkiaineisto)",
+        "columns": [
+          "$N_2$",
+          "$U_2\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "100",
+            "1.22"
+          ],
+          [
+            "200",
+            "2.53"
+          ],
+          [
+            "300",
+            "3.70"
+          ],
+          [
+            "400",
+            "4.93"
+          ],
+          [
+            "600",
+            "7.41"
+          ],
+          [
+            "800",
+            "9.88"
+          ]
+        ]
+      },
+      "answer": 485.68,
+      "unit": "kierrosta",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy7-8-L2-06",
+      "level": 2,
+      "text": "Pienoismuuntajan ensiökäämi on kytketty jännitteeseen $U_1 = 230\\,\\text{V}$. Toisiokäämiin kytkettiin eri suuruisia kuormia.\n\nJokaisella kuormalla mitattiin toisiojännite $U_2$, toisiovirta $I_2$ ja ensiövirta $I_1$ (esimerkkiaineisto). Oletetaan, että ensiöteho on $P_1 = U_1 I_1$.\n\na) Laske jokaiselle riville ensiöteho $P_1$, toisioteho $P_2$ ja hyötysuhde $\\eta = P_2 : P_1$.\n\nb) Millä kuormalla hyötysuhde on suurin? Selitä, miksi hyötysuhde on pienin pienimmällä kuormalla.\n\nKirjoita vastauslaatikkoon kohdan a) hyötysuhde rivillä, jolla toisiovirta on suurin. Anna se prosentteina.",
+      "kind": [
+        "data"
+      ],
+      "data": {
+        "caption": "Pienoismuuntajan mittaukset eri kuormilla, $U_1 = 230\\,\\text{V}$ (esimerkkiaineisto)",
+        "columns": [
+          "$I_2\\,(\\text{A})$",
+          "$U_2\\,(\\text{V})$",
+          "$I_1\\,(\\text{A})$"
+        ],
+        "rows": [
+          [
+            "0.20",
+            "12.4",
+            "0.020"
+          ],
+          [
+            "0.60",
+            "12.2",
+            "0.042"
+          ],
+          [
+            "1.00",
+            "12.0",
+            "0.063"
+          ],
+          [
+            "1.50",
+            "11.8",
+            "0.089"
+          ],
+          [
+            "2.00",
+            "11.5",
+            "0.114"
+          ]
+        ]
+      },
+      "answer": 87.72,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-8-L2-07",
+      "level": 2,
+      "text": "Oppilas ratkaisi tehtävän: ”Ideaalinen muuntaja nostaa verkkojännitteen $230\\,\\text{V}$ jännitteeksi $2300\\,\\text{V}$. Ensiövirta on $2{,}0\\,\\text{A}$. Jännite kasvaa kymmenkertaiseksi, mutta muuntaja ei muuta virtaa. Toisiovirta on siis $2{,}0\\,\\text{A}$. Teho kasvaa arvoon $2300\\,\\text{V} \\cdot 2{,}0\\,\\text{A} = 4600\\,\\text{W}$.”\n\na) Selitä, mikä oppilaan päättelyssä on virheellistä.\n\nb) Laske toisiovirta oikein.\n\nKirjoita vastauslaatikkoon kohdan b) toisiovirta ampeereina.",
+      "kind": [
+        "error"
+      ],
+      "answer": 0.2,
+      "unit": "A",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -100,6 +258,63 @@
       "answer": 3.3058,
       "unit": "kertaa",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-8-L3-04",
+      "level": 3,
+      "text": "Suunnittelija vertaa kahta tapaa siirtää tuulipuiston teho sähköasemalle. Asema on $150\\,\\text{km}$:n päässä. Vaihtoehto A on $220\\,\\text{kV}$:n johto ja vaihtoehto B on $400\\,\\text{kV}$:n johto. Kummassakin on samanlaiset johtimet.\n\nOletetaan, että siirrettävä teho on vakio $200\\,\\text{MW}$ koko vuoden, $8760\\,\\text{h}$. Johtimien yhteinen resistanssi on $0{,}040\\,\\Omega$ johdon kilometriä kohti. Luvut ovat esimerkkiaineistoa.\n\na) Laske johtimien resistanssi ja johdon virta kummassakin vaihtoehdossa.\n\nb) Laske häviöteho ja vuodessa johtoon hukkuva energia kummassakin vaihtoehdossa megawattitunteina.\n\nc) Sähkön hinta on $50\\,\\text{€/MWh}$. Kuinka monta miljoonaa euroa vuodessa vaihtoehto B säästää häviöenergian arvossa verrattuna vaihtoehtoon A? Perustele lisäksi kirjallisesti, miksi häviö pienenee, vaikka siirrettävä teho on sama.\n\nKirjoita vastauslaatikkoon kohdan c) säästö miljoonina euroina.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 1.5149,
+      "unit": "milj. €",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-8-L3-05",
+      "level": 3,
+      "text": "Jakelumuuntajan ulostuloteho $P_\\text{ulos}$ ja sisääntuloteho $P_\\text{sisään}$ mitattiin eri kuormilla (esimerkkiaineisto). Ilman kuormaa muuntaja ottaa silti tehon. Se muuttuu rautasydämessä lämmöksi. Häviöteho on $P_\\text{h} = P_\\text{sisään} - P_\\text{ulos}$.\n\na) Laske jokaiselle riville häviöteho ja hyötysuhde $\\eta = P_\\text{ulos} : P_\\text{sisään}$.\n\nb) Häviötehoa kuvaa malli $P_\\text{h} = P_0 + a P_\\text{ulos}^2$. Perustele, miksi kuormasta riippuva osa on verrannollinen ulostehon neliöön, kun jännite on vakio. Määritä vakiot $P_0$ ja $a$ taulukosta.\n\nc) Hyötysuhde on suurin kuormalla, jolla vakiohäviö $P_0$ on yhtä suuri kuin kuormasta riippuva häviö $a P_\\text{ulos}^2$. Laske tämä ulostehon arvo mallin avulla.\n\nKirjoita vastauslaatikkoon kohdan c) ulostehon arvo kilowatteina.",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "data": {
+        "caption": "Jakelumuuntajan teho eri kuormilla (esimerkkiaineisto)",
+        "columns": [
+          "$P_\\text{ulos}\\,(\\text{kW})$",
+          "$P_\\text{sisään}\\,(\\text{kW})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.6"
+          ],
+          [
+            "10.0",
+            "10.6"
+          ],
+          [
+            "20.0",
+            "20.7"
+          ],
+          [
+            "40.0",
+            "40.9"
+          ],
+          [
+            "60.0",
+            "61.3"
+          ],
+          [
+            "80.0",
+            "81.9"
+          ]
+        ]
+      },
+      "answer": 54.35,
+      "unit": "kW",
+      "tolerance": 0.05
     }
   ]
 }

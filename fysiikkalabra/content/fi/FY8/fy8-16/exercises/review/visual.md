@@ -1,16 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 195defcc8edc8d08
+CONTENT-HASH: eb2ae3787808b0eb
+ROUND: 2
 
 ## Blocking
-(none)
+(none; round 1 had none)
 
 ## Polish
-- [Minor] L2-03 Järkevyys — "niin kauan, kuin" -> "niin kauan kuin" (kantaan jäänyt).
+- [Minor] solutions L2-05 Vastaus — "tarkemmin 68,4" while the Sijoitus gives 68,45; write 68,5 or 68,45 consistently.
+- [Minor] L1-07 is still a third rearrangement of v = H0 d (L1-03, L1-04); consider a two-point data set.
+- [Minor] L3-05 solution — the "Yleinen lipsahdus" sentence in Järkevyys is placed before the sanity check; moving it after the T·λ check would read better.
 
 ## Checked
-- Own Playwright captures at 360 px, ?ratkaisut=1, details opened: every changed formula in fi (L1-05 and L2-03 Sijoitus (three formulas)) plus the en and fi-easy counterparts (contact sheets sheet-fi/en/fi-easy.png in scratchpad shots-fx/).
-- Result: h · \dfrac{c}{X} wraps after 'h ·' into a 2–4 row block, fraction bar intact, units upright with thin spaces, decimal comma; document scrollWidth = 360 = viewport, no clipped KaTeX.
-- LaTeX valid, no red KaTeX; hash at start and end the same.
+- Round 1 Polish resolved: "0–250 Mpc" no longer breaks, slope range now 65-72 matching the answer tolerance 0,05, L3-05 wording no longer says "mikään ei liiku valoa nopeammin", correct MC options reordered and no longer the longest (L2-07 verified).
+- Captures at 1280 px (every solution open): L2 parts 6, 7 and 9 (L2-05 table and graph description, L2-06 answer 1,7·10^2 Mpc, L2-07 MC). No 360 px exercise captures in the packet.
+- Recomputed 68,45, 170,9 Mpc, 10,9 K: match. No red KaTeX, no overflow. Hash at start and end the same.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish 5 · accessibility 4
+illustrations n/a · typography 4 · Finnish 5 · accessibility 4

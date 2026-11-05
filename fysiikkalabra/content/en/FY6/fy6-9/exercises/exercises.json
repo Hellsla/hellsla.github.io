@@ -19,6 +19,7 @@
     {
       "id": "fy6-9-L1-03",
       "level": 1,
+      "core": true,
       "text": "The nominal voltage of an electric-bike battery is $36\\,\\text{V}$ and its capacity is $13\\,\\text{Ah}$. How much energy is stored in the fully charged battery? Answer in watt-hours.",
       "answer": 468,
       "unit": "Wh",
@@ -40,12 +41,82 @@
       "answer": 4.0,
       "unit": "Ah",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-9-L1-06",
+      "level": 1,
+      "core": true,
+      "text": "Two batteries have been charged full. The capacity of one is larger in ampere-hours, but its energy can still be smaller. Why can the energies of batteries not be compared on the basis of ampere-hours alone?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Energy depends on the voltage as well as on the charge, and the voltages of the batteries can be different.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "An ampere-hour measures the running time of a battery, so the energy depends only on how long the battery lasts.",
+          "feedback": "An ampere-hour is a unit of charge, $1\\,\\text{Ah} = 3600\\,\\text{C}$, not a unit of time. How long the battery lasts also depends on how large a current is drawn from it."
+        },
+        {
+          "text": "The energy of a battery depends only on its mass and size, so the capacity tells nothing about the energy.",
+          "feedback": "Energy does not depend on mass alone. The capacity tells the charge, and multiplying it by the voltage gives the energy, $W = UQ$."
+        },
+        {
+          "text": "Energy depends on the voltage as well as on the charge, and the voltages of the batteries can be different.",
+          "correct": true,
+          "feedback": "Correct: energy is voltage times charge, $W = UQ$, so the capacity tells only the charge. Two batteries are compared after the voltage of each has been taken into account."
+        },
+        {
+          "text": "An ampere-hour is a unit of energy, but its value changes with the temperature and age of the battery.",
+          "feedback": "The unit of energy is the watt-hour, not the ampere-hour. An ampere-hour is a unit of charge, and its definition does not change with temperature."
+        }
+      ]
+    },
+    {
+      "id": "fy6-9-L1-07",
+      "level": 1,
+      "text": "A battery is being charged with a charger. In which direction does the current (the conventional direction of current) go inside the battery during charging?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "From the positive terminal to the negative terminal, because the charger drives the current through the battery in the direction opposite to discharging.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "From the negative terminal to the positive terminal, because inside the battery the current goes in charging in the same direction as in discharging.",
+          "feedback": "This is the direction of discharging inside the battery. In charging the charger forces the current through the battery in the opposite direction."
+        },
+        {
+          "text": "No current goes inside the battery, because the battery is charged by the voltage of the charger alone, without a current.",
+          "feedback": "Without a current no energy would be transferred to the battery. The charging current goes through the battery, and thanks to it the chemical energy increases."
+        },
+        {
+          "text": "The direction keeps changing, because the charger produces positive and negative voltage in turn.",
+          "feedback": "A battery is charged with a direct voltage, so the direction of the current stays the same throughout the charging."
+        },
+        {
+          "text": "From the positive terminal to the negative terminal, because the charger drives the current through the battery in the direction opposite to discharging.",
+          "correct": true,
+          "feedback": "Correct: in charging the voltage of the charger is larger than the source voltage of the battery, and it drives the current through the battery from the positive terminal to the negative terminal. In discharging the direction inside the battery is the opposite."
+        }
+      ]
+    },
+    {
+      "id": "fy6-9-L1-08",
+      "level": 1,
+      "text": "The capacity of the battery of a bicycle LED light is $2600\\,\\text{mAh}$. The empty battery is charged with a constant current of $0.50\\,\\text{A}$ until a charge equal to the capacity has passed through the battery. How long does charging take? Answer in hours.",
+      "answer": 5.2,
+      "unit": "h",
+      "tolerance": 0.02
     }
   ],
   "level2": [
     {
       "id": "fy6-9-L2-01",
       "level": 2,
+      "core": true,
       "text": "The source voltage of a motorcycle battery is $12.4\\,\\text{V}$ and its internal resistance is $40\\,\\text{m}\\Omega$. The battery is charged with a charger whose voltage is $14.4\\,\\text{V}$, and the resistance of the charger and wires is $0.36\\,\\Omega$. How large is the charging current?",
       "answer": 5.0,
       "unit": "A",
@@ -74,6 +145,104 @@
       "answer": 84,
       "unit": "%",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-9-L2-05",
+      "level": 2,
+      "kind": [
+        "data"
+      ],
+      "text": "A lithium cell was discharged with a constant current of $0.50\\,\\text{A}$ until the terminal voltage dropped to $3.12\\,\\text{V}$. The table gives the terminal voltage of the cell at one-hour intervals (example data).\n\nAssume that the terminal voltage changes uniformly between the measurements. How much energy did the cell deliver to the circuit during the whole discharge? Answer in watt-hours.",
+      "answer": 9.32,
+      "unit": "Wh",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Terminal voltage of a lithium cell during discharge, example data",
+        "columns": [
+          "$t\\,(\\text{h})$",
+          "$U\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "4.15"
+          ],
+          [
+            "1.0",
+            "3.92"
+          ],
+          [
+            "2.0",
+            "3.80"
+          ],
+          [
+            "3.0",
+            "3.71"
+          ],
+          [
+            "4.0",
+            "3.58"
+          ],
+          [
+            "5.0",
+            "3.12"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-9-L2-06",
+      "level": 2,
+      "core": true,
+      "kind": [
+        "error"
+      ],
+      "text": "A battery is charged for $1.5$ hours with a constant current of $2.0\\,\\text{A}$. The voltage of the charger is $4.2\\,\\text{V}$ and the source voltage of the battery is $3.7\\,\\text{V}$, and both stay constant in this model.\n\nA student calculates: “The power of the charger is $4.2\\,\\text{V} \\cdot 2.0\\,\\text{A} = 8.4\\,\\text{W}$ and the energy is $8.4\\,\\text{W} \\cdot 1.5\\,\\text{h} = 12.6\\,\\text{Wh}$. All of this energy is stored in the battery, so nothing is lost.”\n\na) What is wrong in the student's reasoning?\n\nb) How much of the energy given by the charger becomes internal energy of the resistances? Answer in watt-hours.\n\nThe answer field takes the result of part b).",
+      "answer": 1.5,
+      "unit": "Wh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-9-L2-07",
+      "level": 2,
+      "kind": [
+        "data",
+        "experiment",
+        "graph"
+      ],
+      "text": "In an experiment a $12\\,\\text{V}$ lead-acid battery was charged with an adjustable charger. The voltage of the charger $U_\\text{ch}$ and the charging current $I$ were measured at five values of the voltage (example data). The resistances of the charger, wires and battery are together $R_\\text{tot}$, and they and the source voltage of the battery stay constant.\n\nPlot the points in an $(U_\\text{ch}, I)$ coordinate system and fit a straight line to them. By the voltage law $I = \\dfrac{U_\\text{ch} - E}{R_\\text{tot}}$, so the slope of the line is $\\dfrac{1}{R_\\text{tot}}$. Read the slope from two points of the fitted line and determine the resistance $R_\\text{tot}$.",
+      "answer": 0.4,
+      "unit": "Ω",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Charging current as a function of the voltage of the charger, example data",
+        "columns": [
+          "$U_\\text{ch}\\,(\\text{V})$",
+          "$I\\,(\\text{A})$"
+        ],
+        "rows": [
+          [
+            "13.0",
+            "1.6"
+          ],
+          [
+            "13.4",
+            "2.4"
+          ],
+          [
+            "13.8",
+            "3.5"
+          ],
+          [
+            "14.2",
+            "4.6"
+          ],
+          [
+            "14.6",
+            "5.5"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -100,6 +269,75 @@
       "answer": 3.24,
       "unit": "kJ",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-9-L3-04",
+      "level": 3,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "A lithium cell was discharged with two constant currents until the terminal voltage dropped to the limit $3.00\\,\\text{V}$. Before each discharge the cell was charged full from the same empty state, and charging took $11.0\\,\\text{Wh}$ of energy from the charger each time.\n\nThe table gives the discharge current, the duration of the discharge and the mean of the terminal voltage during the discharge (example data).\n\na) For each current, calculate the charge and the energy obtained from the cell. The energy is the mean voltage times the charge.\n\nb) Calculate the charge–discharge efficiency when the discharge current is $2.0\\,\\text{A}$.\n\nc) Estimate the internal resistance of the cell when the terminal voltage is $U = E - R_\\text{s} I$ and the source voltage $E$ is the same at both currents. Use it to explain why the capacity obtained with the larger current is smaller and why a small internal resistance is important in fast charging.\n\nThe answer field takes the result of part b).",
+      "answer": 77.45,
+      "unit": "%",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Discharge of a lithium cell with two currents, example data",
+        "columns": [
+          "$I\\,(\\text{A})$",
+          "$t\\,(\\text{h})$",
+          "$U_\\text{avg}\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "0.50",
+            "5.2",
+            "3.70"
+          ],
+          [
+            "2.0",
+            "1.2",
+            "3.55"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-9-L3-05",
+      "level": 3,
+      "kind": [
+        "data",
+        "model"
+      ],
+      "text": "The capacity of a car battery is $50\\,\\text{Ah}$. It is charged with a charger whose voltage stays at $14.0\\,\\text{V}$. The resistances of the charger, wires and battery are together $0.40\\,\\Omega$. The source voltage of the battery increases as charging proceeds according to the table (example data).\n\nModel the charging from the charge level $20\\,\\%$ to the charge level $80\\,\\%$ in three stages: the charge levels $20\\,\\%$–$40\\,\\%$, $40\\,\\%$–$60\\,\\%$ and $60\\,\\%$–$80\\,\\%$. In each stage use a constant current calculated from the mean of the source voltages at the start and the end of the stage.\n\na) Calculate the charging current and the duration for each stage, and the duration of the whole charging in hours.\n\nb) Calculate how long charging would take if the current stayed equal to the current at the charge level $20\\,\\%$ throughout. Explain why the actual charging takes longer than this.\n\nThe answer field takes the duration of the whole charging from part a).",
+      "answer": 7.12,
+      "unit": "h",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Source voltage of a car battery as a function of the charge level, example data",
+        "columns": [
+          "Charge level $(\\%)$",
+          "$E\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "20",
+            "12.00"
+          ],
+          [
+            "40",
+            "12.20"
+          ],
+          [
+            "60",
+            "12.40"
+          ],
+          [
+            "80",
+            "12.60"
+          ]
+        ]
+      }
     }
   ]
 }

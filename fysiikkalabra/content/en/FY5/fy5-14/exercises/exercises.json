@@ -35,6 +35,7 @@
     {
       "id": "fy5-14-L1-05",
       "level": 1,
+      "core": true,
       "text": "Classify the sounds as infrasound, audible sound or ultrasound: a) the lowest part of a thunder rumble, $12\\,\\text{Hz}$, b) a reference tuning note, $440\\,\\text{Hz}$, c) a dog whistle, $35\\,\\text{kHz}$, d) the sound of ultrasound imaging, $2.5\\,\\text{MHz}$. Justify using the limits.",
       "answer": "a) infrasound; b) audible sound; c) ultrasound; d) ultrasound",
       "unit": "",
@@ -73,6 +74,7 @@
     {
       "id": "fy5-14-L1-07",
       "level": 1,
+      "core": true,
       "text": "An ambulance drives at a steady speed straight towards a listener at rest, and the siren sounds all the time at its own constant frequency. The air is calm. How does the listener hear the pitch of the siren as the ambulance approaches?",
       "kind": [
         "concept"
@@ -129,6 +131,7 @@
     {
       "id": "fy5-14-L2-03",
       "level": 2,
+      "core": true,
       "text": "A driver drives at $90.0\\,\\text{km/h}$ straight towards a junction where a stationary warning siren sounds at $650\\,\\text{Hz}$. What frequency does the driver hear? The air is calm, and the speed of sound is $340\\,\\text{m/s}$.",
       "answer": 698,
       "unit": "Hz",
@@ -181,6 +184,7 @@
     {
       "id": "fy5-14-L2-06",
       "level": 2,
+      "core": true,
       "text": "A flute and a violin play the same note. The peak frequencies and relative heights were read from the FFT spectra of the sounds recorded with a microphone (example data).\n\na) What is the fundamental frequency of the note played?\n\nb) Which of the instruments sounds brighter, and why? Enter the result of part a) in hertz in the answer box.",
       "kind": [
         "data",

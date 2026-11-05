@@ -232,7 +232,7 @@ def tilanteet():
     d.motion(r"\overline{v}", (1, 0), (cx + 44, cy - 6), length=64)
     d.motion(r"\overline{a}", (0, -1), (cx + 86, cy + 2), length=56, lab=(22, -6))
     d.draw()
-    f.tex(300, 646, r"\text{Maa}", "middle", MUTED)
+    f.tex(328, 646, r"\text{Maa}", "middle", MUTED)
     return f.svg()
 
 

@@ -3,6 +3,7 @@
     {
       "id": "fy6-3-L1-01",
       "level": 1,
+      "core": true,
       "text": "A kettle is connected to a voltage of $230\\,\\text{V}$, and a current of $8.7\\,\\text{A}$ flows through its heating element. What is the resistance of the heating element?",
       "answer": 26,
       "unit": "Ω",
@@ -27,6 +28,7 @@
     {
       "id": "fy6-3-L1-04",
       "level": 1,
+      "core": true,
       "text": "A conductor of a copper cable has a length of $25\\,\\text{m}$ and a cross-sectional area of $2.5\\,\\text{mm}^2$. The resistivity of copper is $1.7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m}$. What is the resistance of the conductor? Answer in ohms.",
       "answer": 0.17,
       "unit": "Ω",
@@ -38,6 +40,78 @@
       "text": "There is a voltage of $5.0\\,\\text{V}$ between the electrodes of a moisture sensor pushed into the soil of a flowerpot, and a current of $2.0\\,\\text{mA}$ flows through the soil. What is the resistance of the soil between the electrodes? Answer in kilohms.",
       "answer": 2.5,
       "unit": "kΩ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-3-L1-06",
+      "level": 1,
+      "core": true,
+      "text": "The characteristic curve of a component, with the current $I$ on the horizontal axis and the voltage $U$ on the vertical axis, is a straight line through the origin. What can be concluded from this?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The component obeys Ohm's law, because the voltage is directly proportional to the current.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The resistance of the component increases with the voltage, because a large voltage resists the current.",
+          "feedback": "If the resistance increased with the voltage, the characteristic curve would be curved. On a straight line the ratio $U : I$ is the same at every point."
+        },
+        {
+          "text": "The resistance of the component is zero, because at zero voltage the current is also zero.",
+          "feedback": "Passing through the origin only tells us that at zero voltage the current is also zero. The resistance is the slope $U : I$ of the line, and it is greater than zero."
+        },
+        {
+          "text": "The component obeys Ohm's law, because the voltage is directly proportional to the current.",
+          "feedback": "Correct: when the curve is a straight line through the origin, doubling the voltage also doubles the current. Then the ratio $R = U : I$ is constant, and the slope of the line is the resistance.",
+          "correct": true
+        },
+        {
+          "text": "The component does not obey Ohm's law, because the current and the voltage increase at the same time.",
+          "feedback": "The current and the voltage increasing at the same time does not yet tell anything. According to Ohm's law their ratio stays constant, and that is exactly what shows as a straight line."
+        }
+      ]
+    },
+    {
+      "id": "fy6-3-L1-07",
+      "level": 1,
+      "text": "Two copper wires are equally thick, but one is twice as long as the other. Which of the following is true?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The resistivity is the same, but the resistance of the longer wire is greater because of the length.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The resistivity of the longer wire is greater, because resistivity increases with length.",
+          "feedback": "Resistivity does not depend on the length or the thickness of the wire, only on the material and the temperature. It is the resistance that depends on the length, not the resistivity."
+        },
+        {
+          "text": "The resistivity is the same, but the resistance of the longer wire is greater because of the length.",
+          "feedback": "Correct: the resistivity $\\rho$ is a property of the material and the same for both wires. The resistance $R = \\rho l : A$ is directly proportional to the length, so the resistance of the longer wire is double.",
+          "correct": true
+        },
+        {
+          "text": "The wires have the same resistance, because they are of the same material and equally thick.",
+          "feedback": "The material and the thickness determine only the resistivity and the cross-sectional area. The resistance also depends on the length: a wire twice as long is like two wires one after the other."
+        },
+        {
+          "text": "The resistance of the longer wire is smaller, because the current has more room in a longer wire.",
+          "feedback": "Increasing the length does not give the current more room. The room for the current is described by the cross-sectional area, and increasing it would reduce the resistance, but increasing the length increases it."
+        }
+      ]
+    },
+    {
+      "id": "fy6-3-L1-08",
+      "level": 1,
+      "text": "The voltage across a resistor made of copper wire is $4.5\\,\\text{V}$ and a current of $0.60\\,\\text{A}$ flows through it. The resistor is replaced by a wire of the same thickness and the same copper that is twice as long. The voltage stays the same $4.5\\,\\text{V}$ and the temperature does not change. How large a current flows through the longer wire?",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 0.3,
+      "unit": "A",
       "tolerance": 0.02
     }
   ],
@@ -74,6 +148,142 @@
       "answer": 8.0,
       "unit": "Ω",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-3-L2-05",
+      "level": 2,
+      "core": true,
+      "text": "A student measured the voltage across a resistor and the current through it (example data). The voltage was set to values from $1.0\\,\\text{V}$ to $8.0\\,\\text{V}$, and the current was measured with a multimeter whose error limit is about $\\pm 0.5\\,\\text{mA}$.\n\na) Draw a fitted line through the origin to the measurement points in a graph with the current $I$ on the horizontal axis and the voltage $U$ on the vertical axis, and read the resistance $R$ of the resistor from the slope of the line.\n\nb) Estimate the uncertainty $\\Delta R$ of the resistance from the scatter of the points.\n\nThe answer box takes the resistance $R$ of part a in ohms.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 150,
+      "unit": "Ω",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Voltage across a resistor and current through it (example data)",
+        "columns": [
+          "$U\\,(\\text{V})$",
+          "$I\\,(\\text{mA})$"
+        ],
+        "rows": [
+          [
+            "1.0",
+            "6.6"
+          ],
+          [
+            "2.0",
+            "13.5"
+          ],
+          [
+            "3.0",
+            "19.8"
+          ],
+          [
+            "4.0",
+            "26.9"
+          ],
+          [
+            "5.0",
+            "33.1"
+          ],
+          [
+            "6.0",
+            "40.2"
+          ],
+          [
+            "7.0",
+            "46.3"
+          ],
+          [
+            "8.0",
+            "53.6"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-3-L2-06",
+      "level": 2,
+      "text": "The voltage across the filament lamp of a bicycle headlight and the current through it were measured at five voltages (example data).\n\na) Calculate the resistance of the lamp $R = U : I$ at each voltage.\n\nb) On the basis of the values you calculated, decide whether the lamp obeys Ohm's law, and explain why the resistance changes.\n\nThe answer box takes how many times as large the resistance of the lamp is at the voltage $5.0\\,\\text{V}$ as at the voltage $1.0\\,\\text{V}$.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 2.0,
+      "unit": "times",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Voltage across a filament lamp and current through it (example data)",
+        "columns": [
+          "$U\\,(\\text{V})$",
+          "$I\\,(\\text{A})$"
+        ],
+        "rows": [
+          [
+            "1.0",
+            "0.098"
+          ],
+          [
+            "2.0",
+            "0.146"
+          ],
+          [
+            "3.0",
+            "0.187"
+          ],
+          [
+            "4.0",
+            "0.221"
+          ],
+          [
+            "5.0",
+            "0.248"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-3-L2-07",
+      "level": 2,
+      "text": "A student measured the voltage across a resistor and the current through it (example data). He reasoned: “When the voltage is $0.0\\,\\text{V}$, the current is $0.00\\,\\text{A}$ and so the resistance $R = U : I$ is $0\\,\\Omega$. At the voltage $1.0\\,\\text{V}$ the resistance is already $5.0\\,\\Omega$, so the resistance increases with the voltage.”\n\na) Explain what is wrong in the student's reasoning.\n\nb) Calculate the resistance of the resistor as the mean $R_{\\text{avg}}$ of the resistances at the non-zero voltages.\n\nThe answer box takes the mean $R_{\\text{avg}}$ of part b in ohms.",
+      "kind": [
+        "error",
+        "data"
+      ],
+      "answer": 4.9,
+      "unit": "Ω",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Voltage across a resistor and current through it (example data)",
+        "columns": [
+          "$U\\,(\\text{V})$",
+          "$I\\,(\\text{A})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.00"
+          ],
+          [
+            "1.0",
+            "0.20"
+          ],
+          [
+            "2.0",
+            "0.41"
+          ],
+          [
+            "3.0",
+            "0.61"
+          ],
+          [
+            "4.0",
+            "0.81"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -100,6 +310,98 @@
       "answer": 3.0,
       "unit": "A",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-3-L3-04",
+      "level": 3,
+      "text": "The voltage across three components and the current through them were measured at the same voltages (example data). The components are a resistor, a filament lamp and a power LED (light-emitting diode), but they have been labelled A, B and C in a mixed-up order.\n\na) Calculate the resistance $R = U : I$ of each component at the voltages where the current is not zero, and identify the components. Justify the identification with the change of the resistance as the voltage increases.\n\nb) Explain why the resistance of a resistor stays constant but that of a filament lamp does not.\n\nc) Calculate the resistance of the diode at the operating point $U = 1.5\\,\\text{V}$ and compare it with the resistance of the filament lamp at the same point.\n\nThe answer box takes the resistance of the diode of part c in ohms.",
+      "kind": [
+        "data",
+        "reasoning",
+        "model"
+      ],
+      "answer": 600,
+      "unit": "Ω",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Currents of the components as a function of the voltage (example data)",
+        "columns": [
+          "$U\\,(\\text{V})$",
+          "$I_\\text{A}\\,(\\text{mA})$",
+          "$I_\\text{B}\\,(\\text{mA})$",
+          "$I_\\text{C}\\,(\\text{mA})$"
+        ],
+        "rows": [
+          [
+            "0.5",
+            "6.6",
+            "31",
+            "0.0"
+          ],
+          [
+            "1.0",
+            "13.5",
+            "46",
+            "0.1"
+          ],
+          [
+            "1.5",
+            "20.0",
+            "57",
+            "2.5"
+          ],
+          [
+            "2.0",
+            "26.6",
+            "66",
+            "21"
+          ],
+          [
+            "3.0",
+            "40.2",
+            "81",
+            "98"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-3-L3-05",
+      "level": 3,
+      "text": "A student wants to investigate experimentally whether the resistance of a metal wire depends on the temperature. She puts a coil of varnished iron wire in a water bath whose temperature can be adjusted. At each temperature the voltage across the wire is kept at $1.00\\,\\text{V}$ and the current is read from an ammeter (example data).\n\na) Name the independent, dependent and controlled variables of the experiment and describe the measuring arrangement: how the ammeter and the voltmeter are connected.\n\nb) Calculate the resistance of the wire $R = U : I$ at each temperature and state by what percentage the resistance has increased from the temperature $20\\,{}^\\circ\\text{C}$ to the temperature $80\\,{}^\\circ\\text{C}$.\n\nc) Name two sources of error that can distort the result, and state how each can be reduced.\n\nThe answer box takes the increase of the resistance of part b as a percentage.",
+      "kind": [
+        "experiment",
+        "data",
+        "reasoning"
+      ],
+      "answer": 38,
+      "unit": "%",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Current through an iron wire at different temperatures, $U = 1.00\\,\\text{V}$ (example data)",
+        "columns": [
+          "$T\\,({}^\\circ\\text{C})$",
+          "$I\\,(\\text{A})$"
+        ],
+        "rows": [
+          [
+            "20",
+            "0.500"
+          ],
+          [
+            "40",
+            "0.442"
+          ],
+          [
+            "60",
+            "0.398"
+          ],
+          [
+            "80",
+            "0.362"
+          ]
+        ]
+      }
     }
   ]
 }

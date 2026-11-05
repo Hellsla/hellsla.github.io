@@ -3,6 +3,7 @@
     {
       "id": "fy5-10-L1-01",
       "level": 1,
+      "core": true,
       "text": "The end of a long coil spring is shaken sideways, and a transverse wave with a frequency of $4.0\\,\\text{Hz}$ and a wavelength of $0.75\\,\\text{m}$ travels in the spring. What is the speed of the wave?",
       "answer": 3.0,
       "unit": "m/s",
@@ -43,6 +44,7 @@
     {
       "id": "fy5-10-L1-06",
       "level": 1,
+      "core": true,
       "text": "A coil spring can be made to vibrate in two ways: its end can be pushed back and forth in the direction of the spring or shaken sideways. Which statement about a longitudinal wave is correct?",
       "kind": [
         "concept"
@@ -113,6 +115,7 @@
     {
       "id": "fy5-10-L2-01",
       "level": 2,
+      "core": true,
       "text": "The graph shows the displacement of one point of a taut rope as a function of time when the end of the rope is shaken steadily. From a snapshot of the rope it has been measured that the distance between successive crests is $1.0\\,\\text{m}$. Read the necessary value from the graph. What is the speed of the wave?",
       "figure": "fy5-10/yt-kuvaaja",
       "answer": 2.5,
@@ -191,6 +194,7 @@
     {
       "id": "fy5-10-L2-06",
       "level": 2,
+      "core": true,
       "text": "A student studies a wave travelling in a taut rope. In the $(t, y)$ graph of one point of the rope the distance between successive peaks is $0.50\\,\\text{s}$. In a photograph of the rope, that is, in the $(x, y)$ graph, the distance between successive crests is $1.5\\,\\text{m}$.\n\nThe student solves: “The distance between the peaks is the wavelength, so $\\lambda = 0.50\\,\\text{m}$. The distance between the crests is the period, so $T = 1.5\\,\\text{s}$. So $v = \\lambda/T = 0.33\\,\\text{m/s}$.”\n\nWhat is wrong in the student's solution? Calculate the correct speed of the wave.",
       "kind": [
         "error"

@@ -3,6 +3,7 @@
   {
    "id": "fy4-16-L1-01",
    "level": 1,
+   "core": true,
    "text": "Hissi lähtee pohjakerroksesta ylöspäin ja kiihtyy $0{,}80\\,\\text{m/s}^2$. Hississä seisoo ihminen, jonka massa on $70{,}0\\,\\text{kg}$. Piirrä ihmisen voimakuvio. Kuinka suuri on lattian tukivoima ihmiseen?",
    "answer": 742.7,
    "unit": "N",
@@ -43,6 +44,79 @@
    "unit": "°",
    "tolerance": 0.02,
    "fbd": "equations"
+  },
+  {
+   "id": "fy4-16-L1-06",
+   "level": 1,
+   "core": true,
+   "text": "Ihminen seisoo kylpyhuonevaa'alla hississä, joka liikkuu ylöspäin ja hidastaa vauhtiaan pysähtyäkseen ylimpään kerrokseen. Vaaka mittaa tukivoimaa. Miten vaa'an lukema on verrattuna lukemaan, kun hissi on paikallaan?",
+   "kind": [
+    "concept"
+   ],
+   "answer": "Lukema on pienempi, koska kiihtyvyys osoittaa alas ja tukivoima on painoa pienempi",
+   "unit": "",
+   "tolerance": 0.02,
+   "choices": [
+    {
+     "text": "Lukema on suurempi, koska hissi liikkuu ylös ja tukivoima on siksi painoa suurempi",
+     "feedback": "Lukema ei riipu liikkeen suunnasta vaan kiihtyvyydestä. Hissi hidastaa, joten kiihtyvyys ei osoita ylös, eikä tukivoima ole painoa suurempi."
+    },
+    {
+     "text": "Lukema on sama, koska ihmisen massa ja paino eivät muutu hissin liikkuessa",
+     "feedback": "Paino ei muutu, mutta vaaka mittaa tukivoimaa. Kun kiihtyvyys ei ole nolla, tukivoima ja paino eivät ole yhtä suuret, joten lukema muuttuu."
+    },
+    {
+     "text": "Lukema on pienempi, koska kiihtyvyys osoittaa alas ja tukivoima on painoa pienempi",
+     "correct": true,
+     "feedback": "Oikein: hidastuessaan ylöspäin liikkuva hissi kiihtyy alaspäin, joten kokonaisvoima osoittaa alas ja tukivoima on painoa pienempi: $N = m(g - a)$."
+    },
+    {
+     "text": "Lukema on nolla, koska hissi hidastaa ja ihminen on silloin painoton",
+     "feedback": "Lukema olisi nolla vain, jos kiihtyvyys olisi alaspäin yhtä suuri kuin $g$. Tavallisen hissin hidastuvuus on paljon pienempi, joten tukivoima on vain hieman painoa pienempi."
+    }
+   ]
+  },
+  {
+   "id": "fy4-16-L1-07",
+   "level": 1,
+   "text": "Laskuvarjohyppääjä laskeutuu varjon alla tasaisella nopeudella. Ilmanvastus on yhtä suuri kuin paino, ja ilmanvastus tekee negatiivista työtä. Mikä väite hänen mekaanisesta energiastaan on oikea?",
+   "kind": [
+    "concept"
+   ],
+   "answer": "Mekaaninen energia pienenee, koska korkeus pienenee ja liike-energia pysyy samana",
+   "unit": "",
+   "tolerance": 0.02,
+   "choices": [
+    {
+     "text": "Mekaaninen energia säilyy, koska nopeus ei muutu ja liike-energia pysyy samana",
+     "feedback": "Mekaaninen energia on liike-energian ja potentiaalienergian summa. Liike-energia pysyy samana, mutta potentiaalienergia pienenee korkeuden pienentyessä."
+    },
+    {
+     "text": "Mekaaninen energia pienenee, koska korkeus pienenee ja liike-energia pysyy samana",
+     "correct": true,
+     "feedback": "Oikein: potentiaalienergia pienenee, liike-energia ei muutu, ja ilmanvastuksen negatiivinen työ muuttaa mekaanisen energian sisäenergiaksi."
+    },
+    {
+     "text": "Mekaaninen energia säilyy, koska paino ja ilmanvastus ovat yhtä suuret ja kumoavat toisensa",
+     "feedback": "Voimien summa on nolla, joten liike-energia ei muutu. Mekaaninen energia silti pienenee, koska ilmanvastus tekee matkalla negatiivista työtä, vaikka sen suuruus on painon suuruinen."
+    },
+    {
+     "text": "Mekaaninen energia kasvaa, koska paino tekee positiivista työtä koko ajan",
+     "feedback": "Painon työ pienentää potentiaalienergiaa, eikä liike-energia kasva. Ilmanvastus tekee yhtä suuren negatiivisen työn, joten mekaaninen energia ei kasva."
+    }
+   ]
+  },
+  {
+   "id": "fy4-16-L1-08",
+   "level": 1,
+   "text": "Oppilas laskee pulkan liikekitkavoiman suoralla rinteellä. Pulkan massa lapsineen on $20{,}0\\,\\text{kg}$, rinteen kaltevuuskulma $30{,}0\\,{}^\\circ$ ja liikekitkakerroin $0{,}200$. Pulkka liukuu rinnettä alas.\n\nOppilaan ratkaisu: ”Tukivoima on yhtä suuri kuin paino, $N = mg$, joten kitkavoima on $F_\\mu = \\mu mg = 0{,}200 \\cdot 20{,}0\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 = 39{,}2\\,\\text{N}$.”\n\nPiirrä pulkan voimakuvio ja etsi oppilaan ratkaisun virhe. Kuinka suuri liikekitkavoima on oikeasti? Vastauslaatikkoon tulee oikea liikekitkavoima.",
+   "kind": [
+    "error"
+   ],
+   "answer": 33.98284,
+   "unit": "N",
+   "tolerance": 0.02,
+   "fbd": "equations"
   }
  ],
  "level2": [
@@ -58,6 +132,7 @@
   {
    "id": "fy4-16-L2-02",
    "level": 2,
+   "core": true,
    "text": "Pulkka lähtee levosta suoran rinteen ylimmästä kohdasta. Rinne on $18{,}0\\,\\text{m}$ pitkä ja $12{,}0^\\circ$:n kulmassa vaakatasoon nähden, ja rinteen juurella pulkan nopeus on $5{,}10\\,\\text{m/s}$. Ilmanvastus jätetään huomiotta. Kuinka suuri on pulkan ja lumen välinen liikekitkakerroin?",
    "answer": 0.137262,
    "unit": "",
@@ -67,6 +142,7 @@
   {
    "id": "fy4-16-L2-03",
    "level": 2,
+   "core": true,
    "text": "Laskuvarjohyppääjä, jonka massa varusteineen on $80{,}0\\,\\text{kg}$, putoaa nopeudella $52{,}0\\,\\text{m/s}$ ja avaa varjonsa. Sinä aikana, kun hän putoaa $145\\,\\text{m}$, hänen nopeutensa pienenee $6{,}0\\,\\text{m/s}$:iin. Piirrä hyppääjän voimakuvio. Kuinka paljon mekaanista energiaa muuttuu tällä matkalla muiksi energiamuodoiksi?",
    "answer": 220.516,
    "unit": "kJ",
@@ -80,6 +156,144 @@
    "unit": "kW",
    "tolerance": 0.02,
    "fbd": "equations"
+  },
+  {
+   "id": "fy4-16-L2-05",
+   "level": 2,
+   "text": "Hissi lähtee pohjakerroksesta ylöspäin. Hississä seisoo ihminen, jonka massa on $62{,}0\\,\\text{kg}$. Hissin nopeus ylöspäin mitattiin videolta, ja taulukko on esimerkkiaineisto.\n\nMääritä hissin kiihtyvyys lähdön jälkeen taulukon ensimmäisen ja viimeisen rivin avulla. Kuinka suuri on lattian tukivoima ihmiseen tänä aikana?",
+   "kind": [
+    "data",
+    "graph"
+   ],
+   "answer": 633.02,
+   "unit": "N",
+   "tolerance": 0.02,
+   "fbd": "equations",
+   "data": {
+    "caption": "Hissin nopeus ylöspäin lähdön jälkeen (esimerkkiaineisto)",
+    "columns": [
+     "$t\\,(\\text{s})$",
+     "$v\\,(\\text{m/s})$"
+    ],
+    "rows": [
+     [
+      "0.0",
+      "0.00"
+     ],
+     [
+      "0.5",
+      "0.21"
+     ],
+     [
+      "1.0",
+      "0.41"
+     ],
+     [
+      "1.5",
+      "0.62"
+     ],
+     [
+      "2.0",
+      "0.79"
+     ],
+     [
+      "2.5",
+      "1.02"
+     ],
+     [
+      "3.0",
+      "1.20"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "fy4-16-L2-06",
+   "level": 2,
+   "text": "Pulkka liukuu vaakasuoralla lumella ilman, että sitä työnnetään. Pulkan paikka $x$ mitattiin videolta sekunnin välein hetkestä, jolloin se ohittaa merkityn pisteen. Taulukko on esimerkkiaineisto, ja ilmanvastus jätetään huomiotta.\n\nTasaisesti hidastuvassa liikkeessä aikavälin keskinopeus on yhtä suuri kuin nopeus välin keskellä. Laske pulkan keskinopeus ensimmäisellä ja viimeisellä sekunnilla, päättele niistä pulkan hidastuvuus ja laske pulkan ja lumen välinen liikekitkakerroin.",
+   "kind": [
+    "data",
+    "graph"
+   ],
+   "answer": 0.08053,
+   "unit": "",
+   "tolerance": 0.05,
+   "fbd": "equations",
+   "data": {
+    "caption": "Pulkan paikka vaakasuoralla lumella (esimerkkiaineisto)",
+    "columns": [
+     "$t\\,(\\text{s})$",
+     "$x\\,(\\text{m})$"
+    ],
+    "rows": [
+     [
+      "0.0",
+      "0.00"
+     ],
+     [
+      "1.0",
+      "3.62"
+     ],
+     [
+      "2.0",
+      "6.38"
+     ],
+     [
+      "3.0",
+      "8.43"
+     ],
+     [
+      "4.0",
+      "9.57"
+     ],
+     [
+      "5.0",
+      "10.03"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "fy4-16-L2-07",
+   "level": 2,
+   "text": "Oppilas määrittää puisen laatikon ja laudan välisen liikekitkakertoimen. Hän asettaa laudan kaltevaksi, tönäisee laatikon liikkeelle ja säätää kaltevuutta, kunnes tönäisty laatikko jatkaa liukumista tasaisella nopeudella. Sitten hän mittaa laudan kaltevuuskulman. Hän toistaa mittauksen viisi kertaa. Taulukko on esimerkkiaineisto.\n\na) Laske kulman keskiarvo $\\alpha_{\\text{ka}}$ ja sen avulla liikekitkakerroin.\n\nb) Arvioi liikekitkakertoimen vaihteluväli laskemalla kerroin kulmien pienimmästä ja suurimmasta arvosta. Kuinka suuri on kertoimen vaihtelu keskiarvon ympärillä?\n\nVastauslaatikkoon tulee kohdan a) tulos.",
+   "kind": [
+    "experiment",
+    "data"
+   ],
+   "answer": 0.321065,
+   "unit": "",
+   "tolerance": 0.03,
+   "fbd": "equations",
+   "data": {
+    "caption": "Kaltevuuskulma, jolla laatikko liukuu tasaisesti (esimerkkiaineisto)",
+    "columns": [
+     "Mittaus",
+     "$\\alpha\\,({}^\\circ)$"
+    ],
+    "rows": [
+     [
+      "1",
+      "17.5"
+     ],
+     [
+      "2",
+      "18.0"
+     ],
+     [
+      "3",
+      "18.5"
+     ],
+     [
+      "4",
+      "17.0"
+     ],
+     [
+      "5",
+      "18.0"
+     ]
+    ]
+   }
   }
  ],
  "level3": [
@@ -110,6 +324,93 @@
    "unit": "kN",
    "tolerance": 0.02,
    "fbd": "equations"
+  },
+  {
+   "id": "fy4-16-L3-04",
+   "level": 3,
+   "text": "Kunta suunnittelee pulkkamäkeä. Pulkka laskee suoraa rinnettä alas ja jatkaa vaakasuoralle kentälle, jonka päässä on aita $25{,}0\\,\\text{m}$:n päässä rinteen juuresta. Mäen tiedot ovat taulukossa, joka on esimerkkiaineisto.\n\nTurvallisuuden vuoksi pulkan on pysähdyttävä vähintään $5{,}0\\,\\text{m}$ ennen aitaa, kun se lähtee levosta rinteen huipulta. Ilmanvastus ja kitkan kasvu rinteen juuren mutkassa jätetään huomiotta, ja kitkakerroin on kummallakin osalla vakio.\n\na) Piirrä pulkan voimakuvio rinteessä ja tasaisella.\n\nb) Kuinka pitkä rinne saa enintään olla?\n\nc) Kuinka suuri on pulkan nopeus rinteen juurella tällä pituudella, ja miksi tulos ei riipu lapsen massasta?\n\nVastauslaatikkoon tulee kohdan b) tulos.",
+   "kind": [
+    "model",
+    "data"
+   ],
+   "answer": 16.33061,
+   "unit": "m",
+   "tolerance": 0.03,
+   "fbd": "equations",
+   "data": {
+    "caption": "Pulkkamäen osat (esimerkkiaineisto)",
+    "columns": [
+     "Osa",
+     "$\\alpha\\,({}^\\circ)$",
+     "$\\mu$"
+    ],
+    "rows": [
+     [
+      "Rinne",
+      "14.0",
+      "0.060"
+     ],
+     [
+      "Tasainen",
+      "0.0",
+      "0.150"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "fy4-16-L3-05",
+   "level": 3,
+   "text": "Laskuvarjohyppääjän massa varusteineen on $78{,}0\\,\\text{kg}$. Taulukossa on hänen nopeutensa alaspäin varjon avautumisen jälkeen. Aineisto on esimerkkiaineisto, ja hyppääjä liikkuu koko ajan alaspäin.\n\na) Laske hyppääjän putoama matka välillä $0$–$3{,}0\\,\\text{s}$ summaamalla jokaisen aikavälin keskinopeus kertaa aikaväli. Käytä keskinopeutena välin päätepisteiden nopeuksien keskiarvoa.\n\nb) Kuinka suuri on ilmanvastus keskimäärin tällä matkalla? Käytä energiaperiaatetta ja oleta, että ilmanvastus on matkan yli keskiarvonsa suuruinen.\n\nc) Onko ilmanvastus välillä $3{,}0$–$4{,}0\\,\\text{s}$ painoa suurempi, pienempi vai yhtä suuri? Perustele taulukon avulla.\n\nVastauslaatikkoon tulee kohdan b) tulos.",
+   "kind": [
+    "data",
+    "model"
+   ],
+   "answer": 2.205,
+   "unit": "kN",
+   "tolerance": 0.03,
+   "fbd": "equations",
+   "data": {
+    "caption": "Hyppääjän nopeus varjon avautumisen jälkeen (esimerkkiaineisto)",
+    "columns": [
+     "$t\\,(\\text{s})$",
+     "$v\\,(\\text{m/s})$"
+    ],
+    "rows": [
+     [
+      "0.0",
+      "46.0"
+     ],
+     [
+      "0.5",
+      "29.8"
+     ],
+     [
+      "1.0",
+      "20.1"
+     ],
+     [
+      "1.5",
+      "14.4"
+     ],
+     [
+      "2.0",
+      "11.0"
+     ],
+     [
+      "2.5",
+      "9.0"
+     ],
+     [
+      "3.0",
+      "7.9"
+     ],
+     [
+      "4.0",
+      "6.8"
+     ]
+    ]
+   }
   }
  ]
 }

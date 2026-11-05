@@ -7,7 +7,7 @@
     "selittämään liikkuvan tangon induktiojännitteen sillä, että magneettinen voima kohdistuu tangon elektroneihin."
   ],
   "prior": [
-    "Magneettikenttä kohdistaa liikkuvaan varattuun hiukkaseen voiman $F = qvB$, kun nopeus on kohtisuorassa kenttää vastaan (luku *Varattu hiukkanen sähkö- ja magneettikentässä*)",
+    "Magneettikenttä kohdistaa liikkuvaan varattuun hiukkaseen voiman $F = |q|vB$, kun nopeus on kohtisuorassa kenttää vastaan (luku *Varatun hiukkasen liike sähkö- ja magneettikentässä*)",
     "Virtajohdin ja käämi synnyttävät ympärilleen magneettikentän (luku *Virtajohtimen ja käämin magneettikenttä*)"
   ],
   "activities": [
@@ -26,17 +26,17 @@
       "prompt": "Elektroni on paikallaan homogeenisessa magneettikentässä. Kentän magneettivuon tiheys on $0{,}50\\,\\text{T}$. Millainen voima kenttä kohdistaa elektroniin?",
       "choices": [
         {
-          "text": "Ei mitään voimaa, koska magneettinen voima $F = qvB$ on nolla, kun nopeus on nolla.",
+          "text": "Ei mitään voimaa, koska magneettinen voima $F = |q|vB$ on nolla, kun nopeus on nolla.",
           "correct": true,
-          "feedback": "Oikein. Magneettikenttä vaikuttaa vain liikkuvaan varaukseen (luku *Varattu hiukkanen sähkö- ja magneettikentässä*). Tästä seuraa tämän luvun asia. Kentässä liikkuvan metallitangon elektronit siirtyvät tangon päähän, mutta paikallaan olevan tangon elektronit eivät."
+          "feedback": "Oikein. Magneettikenttä vaikuttaa vain liikkuvaan varaukseen (luku *Varatun hiukkasen liike sähkö- ja magneettikentässä*). Tästä seuraa tämän luvun asia. Kentässä liikkuvan metallitangon elektronit siirtyvät tangon päähän, mutta paikallaan olevan tangon elektronit eivät."
         },
         {
           "text": "Kentän suuntaisen voiman, koska elektroni on kentässä kuin kompassin neula.",
-          "feedback": "Kompassin neula on magneettinen dipoli. Elektroniin kenttä vaikuttaa kuitenkin vain, kun elektroni liikkuu: $F = qvB$. Kun nopeus on nolla, voima on nolla (luku *Varattu hiukkanen sähkö- ja magneettikentässä*)."
+          "feedback": "Kompassin neula on magneettinen dipoli. Elektroniin kenttä vaikuttaa kuitenkin vain, kun elektroni liikkuu: $F = |q|vB$. Kun nopeus on nolla, voima on nolla (luku *Varatun hiukkasen liike sähkö- ja magneettikentässä*)."
         },
         {
           "text": "Kenttää vastaan kohtisuoran voiman, jonka suuruus riippuu kentästä.",
-          "feedback": "Voima on kohtisuorassa kenttää vastaan vain silloin, kun varaus liikkuu. Sen suuruus on silloin $F = qvB$. Paikallaan olevaan elektroniin ei kohdistu voimaa lainkaan (luku *Varattu hiukkanen sähkö- ja magneettikentässä*)."
+          "feedback": "Voima on kohtisuorassa kenttää vastaan vain silloin, kun varaus liikkuu. Sen suuruus on silloin $F = |q|vB$. Paikallaan olevaan elektroniin ei kohdistu voimaa lainkaan (luku *Varatun hiukkasen liike sähkö- ja magneettikentässä*)."
         }
       ],
       "optional": true

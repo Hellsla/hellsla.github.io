@@ -28,4 +28,18 @@ a["fy4-10-L3-01"] = u ** 2 / (2 * g) * 100              # then ½(m+M)u² = (m+M
 a["fy4-10-L3-02"] = (0.90 * 12 - 0.30 * 40) / 0.60      # firework at 12 m/s up splits; 0,30 kg up at 40 m/s → −2,0 m/s (down)
 u = 3.0 * 4.0 / 120                                     # astronaut (120 kg with the suit) throws a 3,0 kg tool at 4,0 m/s: 0,10 m/s
 a["fy4-10-L3-03"] = 12.0 / u                            # drifts 12,0 m back to the station: t = 120 s
+# Level 1 additions: concept, recoil, elastic exchange of velocities
+a["fy4-10-L1-07"] = 2.0 * 6.0 / 35                      # skater throws a ball: 0 = m v_p' + M v_l' → |v_l'| = 12/35 = 0,3429 m/s
+a["fy4-10-L1-08"] = 1.8                                 # equal masses, elastic, target at rest: velocities are exchanged → 1,8 m/s
+# Level 2 additions
+mA, mB, v0 = 0.50, 0.30, 0.60                           # three collisions of the same carts; experiment 3: vA' = 0,25 and vB' = 0,58 m/s
+a["fy4-10-L2-05"] = 100 * (0.5 * mA * 0.25 ** 2 + 0.5 * mB * 0.58 ** 2) / (0.5 * mA * v0 ** 2)   # E_k left = 0,0661 / 0,090 = 73,4 %
+vA, vA2, vB2 = (0.51 - 0.00) / 1.0, (1.21 - 1.10) / 1.0, (1.54 - 1.27) / 1.0   # speeds from the position table: 0,51, 0,11 and 0,27 m/s
+a["fy4-10-L2-06"] = 100 * (0.5 * 0.40 * vA2 ** 2 + 0.5 * 0.60 * vB2 ** 2) / (0.5 * 0.40 * vA ** 2)   # E_k left = 0,0243 / 0,0520 = 46,7 %
+a["fy4-10-L2-07"] = (0.60 * 0.80 + 0.20 * -0.40) / (0.60 + 0.20)   # error analysis: the left-moving cart is negative → 0,50 m/s
+# Level 3 additions
+vs = math.sqrt(2 * 0.60 * g * 8.0)                      # skid after the collision: ½Mv'² = μMgs → v' = √(2μgs) = 9,704 m/s
+a["fy4-10-L3-04"] = (1100 + 1400) * vs / 1100 * 3.6     # momentum: v_A = (mA+mB)v'/mA = 22,06 m/s = 79,4 km/h
+acc = (0.88 - 0.41) / (0.30 - 0.06)                     # deceleration from the first and last table rows: 1,958 m/s²
+a["fy4-10-L3-05"] = (0.40 + 0.20) * acc                 # friction force F = (mA+mB)·a = 1,175 N
 print(json.dumps(a))

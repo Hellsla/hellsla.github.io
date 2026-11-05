@@ -1,0 +1,1080 @@
+{
+ "intro": "Koe kattaa koko moduulin: tasainen ja tasaisesti kiihtyvä liike, Newtonin lait, voimakuvio ja liikeyhtälö, paino ja kitka, mekaaninen energia ja energiaperiaate sekä liikemäärä, impulssi ja törmäykset. Käytä putoamiskiihtyvyytenä arvoa $g = 9{,}81\\,\\text{m/s}^2$. Pisteytyksessä sama virhe vähentää pisteitä vain kerran: jos jatkat väärällä välituloksella oikein, saat myöhemmistä vaiheista pisteet.",
+ "minutes": 120,
+ "max_points": 70,
+ "sections": [
+  {
+   "title": "Osa 1: Perusosaaminen",
+   "tasks": [
+    "fy4-k1"
+   ]
+  },
+  {
+   "title": "Osa 2: Perustehtävät",
+   "choose": 2,
+   "tasks": [
+    "fy4-k2",
+    "fy4-k3",
+    "fy4-k4",
+    "fy4-k5"
+   ]
+  },
+  {
+   "title": "Osa 3: Soveltavat tehtävät",
+   "choose": 1,
+   "tasks": [
+    "fy4-k6",
+    "fy4-k7"
+   ]
+  }
+ ],
+ "tasks": [
+  {
+   "id": "fy4-k1",
+   "title": "Monivalinnat",
+   "text": "Valitse jokaisessa kohdassa yksi vaihtoehto. Oikea vastaus on $2$ p, väärä tai puuttuva $0$ p.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "choice",
+     "points": 2,
+     "text": "Pienikitkainen vaunu kulkee ylös kaltevaa rataa, pysähtyy hetkeksi ja kulkee takaisin alas. Positiivinen suunta on ylös rinnettä, ja vierimisvastus ja ilmanvastus ovat merkityksettömiä. Mikä kuvaajista A–D esittää vaunun nopeutta $v$ ajan $t$ funktiona?",
+     "options": [
+      "kuvaaja A",
+      "kuvaaja B",
+      "kuvaaja C",
+      "kuvaaja D"
+     ],
+     "correct": 1,
+     "tag": "graph",
+     "figure": "fy4-koe/fy4-k1-graphs"
+    },
+    {
+     "id": "b",
+     "kind": "choice",
+     "points": 2,
+     "text": "Kivi heitetään suoraan ylöspäin. Ilmanvastus on merkityksetön. Mikä pitää paikkansa, kun kivi on lakipisteessä?",
+     "options": [
+      "Kiven nopeus ja kiihtyvyys ovat molemmat nolla.",
+      "Kiihtyvyys on pienempi kuin nousun aikana, mutta ei nolla.",
+      "Kiihtyvyys vaihtaa suuntaa: nousun aikana se osoitti ylöspäin, nyt alaspäin.",
+      "Nopeus on nolla, mutta kiihtyvyys on $9{,}81\\,\\text{m/s}^2$ alaspäin."
+     ],
+     "correct": 3,
+     "tag": "concept"
+    },
+    {
+     "id": "c",
+     "kind": "choice",
+     "points": 2,
+     "text": "Kuorma-auto ja paljon kevyempi henkilöauto törmäävät nokkakkain. Merkitään kuorma-auton henkilöautoon kohdistaman voiman suuruutta $F_1$ ja henkilöauton kuorma-autoon kohdistaman voiman suuruutta $F_2$. Mikä pitää paikkansa törmäyksen aikana?",
+     "options": [
+      "$F_1 = F_2$ koko törmäyksen ajan.",
+      "$F_1 > F_2$, koska kuorma-auton massa on suurempi.",
+      "$F_1 > F_2$, koska henkilöauto vaurioituu enemmän.",
+      "$F_1 < F_2$, jos henkilöauton nopeus on suurempi."
+     ],
+     "correct": 0,
+     "tag": "concept"
+    },
+    {
+     "id": "d",
+     "kind": "choice",
+     "points": 2,
+     "text": "Henkilö seisoo hississä vaa'an päällä. Hissi liikkuu ylöspäin ja hidastaa pysähtyäkseen kerrokseen. Miten vaa'an henkilöön kohdistaman tukivoiman suuruus $N$ suhtautuu henkilön painon suuruuteen $G$ hidastumisen aikana?",
+     "options": [
+      "$N > G$, koska hissi liikkuu ylöspäin.",
+      "$N = G$, koska tukivoima ja paino ovat voima ja vastavoima.",
+      "$N < G$, koska kiihtyvyys osoittaa alaspäin.",
+      "$N = G$, koska henkilö on vaa'an suhteen levossa."
+     ],
+     "correct": 2,
+     "tag": "concept"
+    },
+    {
+     "id": "e",
+     "kind": "choice",
+     "points": 2,
+     "text": "Puupalikka on työnnetty liukumaan ylös kaltevaa lautaa. Käsi ei enää kosketa palikkaa, ja palikka liukuu ylöspäin hidastuen. Kitka otetaan huomioon, ilmanvastus ei. Missä kuvioista A–D palikan voimakuvio on oikein?",
+     "options": [
+      "kuvio A",
+      "kuvio B",
+      "kuvio C",
+      "kuvio D"
+     ],
+     "correct": 0,
+     "tag": "concept",
+     "figure": "fy4-koe/fy4-k1-fbd"
+    },
+    {
+     "id": "f",
+     "kind": "choice",
+     "points": 2,
+     "text": "Laatikon massa on $40\\,\\text{kg}$, ja laatikon ja lattian välinen lepokitkakerroin on $0{,}50$. Laatikkoa työnnetään vaakasuoralla voimalla $120\\,\\text{N}$, mutta se ei liiku. Kuinka suuri on laatikkoon vaikuttava lepokitka?",
+     "options": [
+      "$0\\,\\text{N}$",
+      "$120\\,\\text{N}$",
+      "$196\\,\\text{N}$",
+      "$392\\,\\text{N}$"
+     ],
+     "correct": 1,
+     "tag": "concept"
+    },
+    {
+     "id": "g",
+     "kind": "choice",
+     "points": 2,
+     "text": "Kivi pudotetaan levosta, ja se osuu maahan nopeudella $v$. Kuinka suurella nopeudella kivi osuu maahan, kun pudotuskorkeus on nelinkertainen? Ilmanvastus on merkityksetön.",
+     "options": [
+      "$16v$",
+      "$4v$",
+      "$2v$",
+      "$\\sqrt{2}\\,v$"
+     ],
+     "correct": 2,
+     "tag": "math"
+    },
+    {
+     "id": "h",
+     "kind": "choice",
+     "points": 2,
+     "text": "Kuvaajassa on jalan palloon kohdistama voima potkun aikana. Pallon massa on $0{,}43\\,\\text{kg}$, ja pallo on aluksi levossa. Muut voimat ovat potkun aikana merkityksettömiä. Kuinka suuri on pallon nopeus potkun jälkeen?",
+     "options": [
+      "$2{,}6\\,\\text{m/s}$",
+      "$14\\,\\text{m/s}$",
+      "$28\\,\\text{m/s}$",
+      "$14\\,000\\,\\text{m/s}$"
+     ],
+     "correct": 1,
+     "tag": "graph",
+     "figure": "fy4-koe/fy4-k1-impulse"
+    },
+    {
+     "id": "i",
+     "kind": "choice",
+     "points": 2,
+     "text": "Vaunu A, jonka massa on $2{,}0\\,\\text{kg}$, liikkuu nopeudella $3{,}0\\,\\text{m/s}$ ja törmää paikallaan olevaan vaunuun B, jonka massa on $1{,}0\\,\\text{kg}$. Vaunut tarttuvat yhteen ja jatkavat yhdessä. Kuinka suuri osa vaunun A liike-energiasta on törmäyksen jälkeen vaunujen yhteistä liike-energiaa?",
+     "options": [
+      "$33\\,\\%$",
+      "$44\\,\\%$",
+      "$67\\,\\%$",
+      "$100\\,\\%$"
+     ],
+     "correct": 2,
+     "tag": "math"
+    },
+    {
+     "id": "j",
+     "kind": "choice",
+     "points": 2,
+     "text": "Auto törmää esteeseen ja pysähtyy. Miksi turvatyyny suojaa kuljettajan päätä paremmin kuin rattiin osuminen?",
+     "options": [
+      "Turvatyyny pienentää pään liikemäärän muutosta.",
+      "Turvatyyny pienentää päähän kohdistuvaa impulssia.",
+      "Turvatyyny pysäyttää pään lyhyemmässä ajassa.",
+      "Turvatyyny pienentää päähän kohdistuvaa keskimääräistä voimaa."
+     ],
+     "correct": 3,
+     "tag": "concept"
+    }
+   ],
+   "skills": [
+    "fy4-1",
+    "fy4-2",
+    "fy4-3",
+    "fy4-4",
+    "fy4-5",
+    "fy4-6",
+    "fy4-8",
+    "fy4-9",
+    "fy4-10",
+    "fy4-11"
+   ],
+   "links": {
+    "graph": "fy4-2",
+    "concept": "fy4-5",
+    "math": "fy4-8"
+   }
+  },
+  {
+   "id": "fy4-k2",
+   "title": "Raitiovaunu lähtee pysäkiltä",
+   "source": "example",
+   "source_note": "Mittaustulokset on laadittu esimerkiksi, eivätkä ne ole oikean mittauksen tuloksia.",
+   "text": "Raitiovaunu lähtee pysäkiltä suoralla ja vaakasuoralla radalla. Matkustaja mittasi vaunun nopeuden $v$ puhelimen sovelluksella kahden sekunnin välein. Vaunun massa matkustajineen on $32\\,\\text{t}$.\n\n| $t\\ (\\text{s})$ | $v\\ (\\text{m/s})$ |\n|---|---|\n| $0$ | $0{,}0$ |\n| $2$ | $1{,}8$ |\n| $4$ | $3{,}9$ |\n| $6$ | $5{,}7$ |\n| $8$ | $7{,}6$ |\n| $10$ | $7{,}7$ |\n| $12$ | $7{,}6$ |\n| $14$ | $7{,}6$ |",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "graph",
+     "points": 4,
+     "text": "Piirrä mittaustuloksista $(t, v)$-kuvaaja ja sovita pisteisiin sopiva malli.",
+     "criteria": [
+      {
+       "key": "graph_axes",
+       "points": 1
+      },
+      {
+       "key": "graph_points",
+       "points": 1
+      },
+      {
+       "key": "graph_fit",
+       "points": 2,
+       "detail": "Pisteisiin $0$–$8\\,\\text{s}$ on sovitettu origon kautta kulkeva nouseva suora ja pisteisiin $8$–$14\\,\\text{s}$ vaakasuora suora."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 4,
+     "text": "Määritä vaunun kiihtyvyys sen kiihdyttäessä.",
+     "answer": {
+      "value": 0.95,
+      "unit": "m/s^2",
+      "tolerance": 0.05
+     },
+     "criteria": [
+      {
+       "key": "graph_read",
+       "points": 2,
+       "detail": "Kulmakerroin luetaan nousevalta suoralta, esimerkiksi pisteistä $(0\\,\\text{s};\\ 0\\,\\text{m/s})$ ja $(8{,}0\\,\\text{s};\\ 7{,}6\\,\\text{m/s})$."
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$a \\approx 0{,}95\\,\\text{m/s}^2$."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kuinka pitkän matkan vaunu kulki ensimmäisten $14$ sekunnin aikana?",
+     "answer": {
+      "value": 76,
+      "unit": "m",
+      "tolerance": 0.04
+     },
+     "criteria": [
+      {
+       "text": "Tunnistaa kuljetun matkan $(t, v)$-kuvaajan ja aika-akselin väliin jäävän alueen pinta-alaksi.",
+       "tag": "graph",
+       "points": 2
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "Kolmio $\\tfrac{1}{2} \\cdot 8{,}0\\,\\text{s} \\cdot 7{,}6\\,\\tfrac{\\text{m}}{\\text{s}} = 30{,}4\\,\\text{m}$ ja suorakulmio $6{,}0\\,\\text{s} \\cdot 7{,}6\\,\\tfrac{\\text{m}}{\\text{s}} = 45{,}6\\,\\text{m}$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$s \\approx 76\\,\\text{m}$."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "calc",
+     "points": 3,
+     "text": "Kuinka suuri kokonaisvoima vaunuun vaikuttaa sen kiihdyttäessä? Miksi vaunua eteenpäin vievän voiman on oltava tätä suurempi?",
+     "answer": {
+      "value": 30400,
+      "unit": "N",
+      "tolerance": 0.06
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Newtonin II laki $\\Sigma F = ma$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$32\\,\\text{t} = 32\\,000\\,\\text{kg}$; $\\Sigma F \\approx 30\\,\\text{kN}$."
+      },
+      {
+       "text": "Perustelee, että kokonaisvoima on eteenpäin vievän voiman ja liikettä vastustavien voimien, kuten vierimisvastuksen ja ilmanvastuksen, erotus.",
+       "tag": "concept",
+       "points": 1
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy4-2",
+    "fy4-4"
+   ],
+   "links": {
+    "graph": "fy4-2",
+    "math": "fy4-2",
+    "concept": "fy4-4"
+   }
+  },
+  {
+   "id": "fy4-k3",
+   "title": "Laatikko lava-autossa",
+   "source": "example",
+   "text": "Lava-auton avolavalla on $40\\,\\text{kg}$:n puulaatikko, jota ei ole sidottu. Laatikon ja lavan välinen lepokitkakerroin on $0{,}40$ ja liikekitkakerroin $0{,}30$. Auto liikkuu suoralla ja vaakasuoralla tiellä. Ilmanvastusta laatikkoon ei oteta huomioon.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "word",
+     "points": 4,
+     "text": "Auto kiihdyttää tasaisesti, ja laatikko pysyy lavalla paikallaan. Piirrä laatikon voimakuvio ja nimeä voimat.",
+     "criteria": [
+      {
+       "key": "fbd_forces",
+       "points": 1,
+       "detail": "Paino, lavan tukivoima ja lepokitka; ei eteenpäin vievää ”liikevoimaa”."
+      },
+      {
+       "key": "fbd_directions",
+       "points": 2,
+       "detail": "Lepokitka osoittaa eteenpäin, auton kiihtyvyyden suuntaan, koska juuri se kiihdyttää laatikkoa."
+      },
+      {
+       "key": "fbd_magnitudes",
+       "points": 1,
+       "detail": "Paino ja tukivoima ovat yhtä pitkät; jos kiihtyvyys on piirretty, se on erillinen nuoli eikä voima."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kuinka suuri auton kiihtyvyys saa enintään olla, jotta laatikko ei liu'u lavalla?",
+     "answer": {
+      "value": 3.92,
+      "unit": "m/s^2",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "key": "fbd_equations",
+       "points": 1,
+       "detail": "Pystysuunnassa $N - G = 0$ ja vaakasuunnassa $F_{\\mu 0} = ma$."
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Ehdosta $F_{\\mu 0} \\le \\mu_0 N$ saadaan $a \\le \\mu_0 g$."
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$a_\\text{max} \\approx 3{,}9\\,\\text{m/s}^2$; massa ei vaikuta tulokseen."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kuljettaja jarruttaa tasaisesti nopeudesta $54\\,\\text{km/h}$ pysähdyksiin ajassa $3{,}0\\,\\text{s}$. Liukuuko laatikko lavalla? Jos liukuu, mihin suuntaan se liukuu lavan suhteen?",
+     "answer": {
+      "value": 5.0,
+      "unit": "m/s^2",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$54\\,\\text{km/h} = 15\\,\\text{m/s}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "Auton hidastuvuus on $5{,}0\\,\\text{m/s}^2$."
+      },
+      {
+       "text": "Vertaa hidastuvuutta b-kohdan suurimpaan arvoon: lepokitka ei riitä hidastamaan laatikkoa yhtä paljon kuin autoa.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Laatikko liukuu lavan suhteen eteenpäin eli kohti ohjaamoa."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "calc",
+     "points": 3,
+     "text": "Mitkä voimat vaikuttavat laatikkoon c-kohdan jarrutuksen aikana? Laske laatikon hidastuvuus tien suhteen ja selitä Newtonin lakien avulla, miten laatikko liikkuu lavan suhteen.",
+     "answer": {
+      "value": 2.94,
+      "unit": "m/s^2",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "text": "Nimeää voimat: paino, tukivoima ja taaksepäin osoittava liikekitka; eteenpäin osoittavaa voimaa ei ole.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Laskee hidastuvuuden $a = \\mu g \\approx 2{,}9\\,\\text{m/s}^2$.",
+       "tag": "math",
+       "points": 1
+      },
+      {
+       "text": "Selittää, että laatikko hidastuu vähemmän kuin auto ja jatkaa hitautensa vuoksi liikettään (Newtonin I laki), joten se liikkuu lavan suhteen eteenpäin, vaikka mikään voima ei työnnä sitä eteenpäin.",
+       "tag": "communication",
+       "points": 1
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy4-5",
+    "fy4-6",
+    "fy4-3"
+   ],
+   "links": {
+    "concept": "fy4-5",
+    "math": "fy4-6",
+    "transfer": "fy4-6",
+    "communication": "fy4-3"
+   }
+  },
+  {
+   "id": "fy4-k4",
+   "title": "Liukuva puupalikka",
+   "source": "example",
+   "source_note": "Mittaustulokset on laadittu esimerkiksi.",
+   "text": "Opiskelija tutki puupalikan ja pöydän välistä liikekitkaa. Hän tönäisi $0{,}20\\,\\text{kg}$:n palikan liukumaan vaakasuoralla pöydällä. Valoportti mittasi palikan nopeudeksi $v = (1{,}50 \\pm 0{,}03)\\,\\text{m/s}$ kohdassa, josta palikka liukui vielä matkan $s = (0{,}46 \\pm 0{,}01)\\,\\text{m}$ ennen pysähtymistään. Ilmanvastus on merkityksetön.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 5,
+     "text": "Määritä palikan ja pöydän välinen liikekitkakerroin.",
+     "answer": {
+      "value": 0.249,
+      "unit": "",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 2,
+       "detail": "Kitkan negatiivinen työ kuluttaa liike-energian: $\\tfrac{1}{2}mv^2 - \\mu mgs = 0$, josta $\\mu = \\tfrac{v^2}{2gs}$. Myös liikeyhtälö ja tasaisesti kiihtyvän liikkeen yhtälöt hyväksytään."
+      },
+      {
+       "text": "Perustelee, että vaakasuoralla pinnalla tukivoima on painon suuruinen, joten $F_\\mu = \\mu mg$.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$\\mu \\approx 0{,}25$, ei yksikköä."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 4,
+     "text": "Arvioi kitkakertoimen epävarmuus mittausten epävarmuuksien avulla.",
+     "answer": [
+      {
+       "name": "min",
+       "value": 0.234,
+       "unit": "",
+       "tolerance": 0.03
+      },
+      {
+       "name": "max",
+       "value": 0.265,
+       "unit": "",
+       "tolerance": 0.03
+      }
+     ],
+     "criteria": [
+      {
+       "key": "uncertainty",
+       "points": 2,
+       "detail": "Suurin nopeus ja pienin matka antavat suurimman kertoimen, pienin nopeus ja suurin matka pienimmän."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "Ääriarvot $0{,}234$ ja $0{,}265$."
+      },
+      {
+       "text": "Ilmoittaa tuloksen muodossa $\\mu = 0{,}25 \\pm 0{,}02$.",
+       "tag": "math",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "word",
+     "points": 3,
+     "text": "Kumman mittauksen epävarmuus, nopeuden vai matkan, vaikuttaa tulokseen enemmän? Ehdota, miten tämän mittauksen tarkkuutta voisi parantaa.",
+     "criteria": [
+      {
+       "text": "Vertaa suhteellisia epävarmuuksia: nopeuden $2\\,\\%$ ja matkan noin $2\\,\\%$.",
+       "tag": "experiment",
+       "points": 1
+      },
+      {
+       "text": "Toteaa, että nopeus on lausekkeessa toisessa potenssissa, joten sen vaikutus kaksinkertaistuu noin $4\\,\\%$:iin: nopeuden epävarmuus vaikuttaa enemmän.",
+       "tag": "math",
+       "points": 1
+      },
+      {
+       "text": "Ehdottaa nopeuden mittauksen parantamista, esimerkiksi valoportin katkaisijan pituuden tarkempaa mittausta, toistoja tai videoanalyysiä.",
+       "tag": "experiment",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "word",
+     "points": 3,
+     "text": "Opiskelija asettaa palikan päälle punnuksen, joka kaksinkertaistaa palikan massan, ja tönäisee palikan liukumaan samalla nopeudella. Ennusta, kuinka pitkän matkan palikka nyt liukuu. Perustele.",
+     "criteria": [
+      {
+       "text": "Ennustaa saman liukumismatkan, noin $0{,}46\\,\\text{m}$.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Perustelee: sekä liike-energia että kitkavoima kaksinkertaistuvat, joten massa ei vaikuta matkaan.",
+       "tag": "communication",
+       "points": 1
+      },
+      {
+       "key": "assumptions",
+       "points": 1,
+       "detail": "Kitkakerroin ei riipu tukivoimasta, ja pinnat pysyvät samoina."
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy4-8",
+    "fy4-6",
+    "fy4-7"
+   ],
+   "links": {
+    "math": "fy4-8",
+    "concept": "fy4-6",
+    "experiment": "fy1-3",
+    "communication": "fy4-8",
+    "transfer": "fy4-8"
+   }
+  },
+  {
+   "id": "fy4-k5",
+   "title": "Junavaunujen kytkeminen",
+   "source": "example",
+   "text": "Ratapihalla vaunu A, jonka massa on $24\\,\\text{t}$, vierii vaakasuoralla raiteella nopeudella $1{,}5\\,\\text{m/s}$ kohti paikallaan olevaa vaunua B, jonka massa on $36\\,\\text{t}$. Vaunut kytkeytyvät toisiinsa ja jatkavat yhdessä. Kitka ja vierimisvastus jätetään huomiotta.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kuinka suuri on vaunujen yhteinen nopeus kytkeytymisen jälkeen?",
+     "answer": {
+      "value": 0.6,
+      "unit": "m/s",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 2,
+       "detail": "Liikemäärä säilyy, koska ulkoiset voimat kumoavat toisensa: $m_\\text{A}v_\\text{A} = (m_\\text{A} + m_\\text{B})u$."
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$u = 0{,}60\\,\\text{m/s}$."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kuinka paljon liike-energiaa muuttuu kytkeytymisessä muihin energiamuotoihin? Mihin muotoihin se muuttuu?",
+     "answer": {
+      "value": 16200,
+      "unit": "J",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$E_\\text{k} = \\tfrac{1}{2}mv^2$ ennen ja jälkeen; muutos on niiden erotus."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$27\\,\\text{kJ}$ ennen ja $10{,}8\\,\\text{kJ}$ jälkeen."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$\\Delta E \\approx 16\\,\\text{kJ}$."
+      },
+      {
+       "text": "Energia muuttuu kytkimen ja puskurien muodonmuutokseksi, sisäenergiaksi (vaunut ja puskurit lämpenevät) ja ääneksi.",
+       "tag": "concept",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kytkeytyminen kesti $0{,}80\\,\\text{s}$. Kuinka suuri keskimääräinen voima vaunuun B kohdistui kytkeytymisen aikana?",
+     "answer": {
+      "value": 27000,
+      "unit": "N",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "text": "Käyttää impulssiperiaatetta: vaunuun B kohdistuvan voiman impulssi on vaunun B liikemäärän muutos $21\\,600\\,\\text{N}\\cdot\\text{s}$.",
+       "tag": "transfer",
+       "points": 2
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$F = \\tfrac{\\Delta p}{\\Delta t}$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$F \\approx 27\\,\\text{kN}$."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "word",
+     "points": 3,
+     "text": "Vertaa vaunujen nopeuden muutoksia toisiinsa ja vaunuihin kytkeytymisen aikana kohdistuneita voimia toisiinsa. Selitä ero Newtonin lakien avulla.",
+     "criteria": [
+      {
+       "text": "Nopeuden muutokset ovat A: $-0{,}90\\,\\text{m/s}$ ja B: $+0{,}60\\,\\text{m/s}$.",
+       "tag": "math",
+       "points": 1
+      },
+      {
+       "text": "Newtonin III lain mukaan vaunut kohdistavat toisiinsa yhtä suuret ja vastakkaissuuntaiset voimat yhtä pitkän ajan, joten impulssit ovat yhtä suuret ja vastakkaiset.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Sama impulssi muuttaa raskaamman vaunun nopeutta vähemmän (Newtonin II laki, $\\Delta v = \\tfrac{I}{m}$), joten nopeuksien muutokset ovat kääntäen verrannolliset massoihin.",
+       "tag": "communication",
+       "points": 1
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy4-10",
+    "fy4-9",
+    "fy4-3"
+   ],
+   "links": {
+    "math": "fy4-10",
+    "concept": "fy4-3",
+    "transfer": "fy4-9",
+    "communication": "fy4-10"
+   }
+  },
+  {
+   "id": "fy4-k6",
+   "title": "Pystyhyppy voimalevyltä",
+   "source": "example",
+   "source_note": "Mittaustulokset on laadittu esimerkiksi tällaisesta voimalevymittauksesta.",
+   "text": "Opiskelija tutki pystyhyppyä voimalevyllä, joka mittaa siihen kohdistuvan pystysuoran voiman. Ennen ponnistusta opiskelija oli kyykyssä levossa, ja levyn lukema oli $687\\,\\text{N}$. Hetkellä $t = 0$ hän alkoi ponnistaa suoraan ylöspäin, ja hetkellä $t = 0{,}40\\,\\text{s}$ hänen jalkansa irtosivat levystä. Taulukossa on levyn lukema $F$ ponnistuksen aikana. Ilmanvastus on merkityksetön.\n\n| $t\\ (\\text{s})$ | $F\\ (\\text{N})$ |\n|---|---|\n| $0{,}00$ | $687$ |\n| $0{,}05$ | $1100$ |\n| $0{,}10$ | $1400$ |\n| $0{,}15$ | $1520$ |\n| $0{,}20$ | $1500$ |\n| $0{,}25$ | $1380$ |\n| $0{,}30$ | $1100$ |\n| $0{,}35$ | $600$ |\n| $0{,}40$ | $0$ |",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 3,
+     "text": "Kuinka suuri on opiskelijan massa? Perustele Newtonin lakien avulla, miksi levyn lukema on levossa yhtä suuri kuin opiskelijan paino.",
+     "answer": {
+      "value": 70.0,
+      "unit": "kg",
+      "tolerance": 0.01
+     },
+     "criteria": [
+      {
+       "text": "Levossa opiskelijaan vaikuttavat paino ja levyn tukivoima kumoavat toisensa (Newtonin I laki), joten $N = G$.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Levyn lukema on opiskelijan levyyn kohdistama voima, joka on Newtonin III lain mukaan yhtä suuri kuin tukivoima.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$m = \\tfrac{G}{g} \\approx 70{,}0\\,\\text{kg}$."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "graph",
+     "points": 4,
+     "text": "Piirrä mittaustuloksista $(t, F)$-kuvaaja. Piirrä samaan kuvaan opiskelijan painoa vastaava vaakasuora viiva.",
+     "criteria": [
+      {
+       "key": "graph_axes",
+       "points": 1
+      },
+      {
+       "key": "graph_points",
+       "points": 1
+      },
+      {
+       "key": "graph_fit",
+       "points": 1,
+       "detail": "Pisteet on yhdistetty sileällä käyrällä, koska voima muuttuu jatkuvasti."
+      },
+      {
+       "text": "Painon viiva on kohdassa $687\\,\\text{N}$ koko ponnistuksen ajan.",
+       "tag": "graph",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 5,
+     "text": "Määritä kuvaajan avulla opiskelijan nopeus sillä hetkellä, kun hänen jalkansa irtoavat levystä.",
+     "answer": {
+      "value": 2.46,
+      "unit": "m/s",
+      "tolerance": 0.06
+     },
+     "criteria": [
+      {
+       "text": "Käyttää impulssiperiaatetta: kokonaisvoiman $F - G$ impulssi on liikemäärän muutos, ja alkunopeus on nolla.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "text": "Arvioi käyrän ja aika-akselin väliin jäävän pinta-alan, noin $447\\,\\text{N}\\cdot\\text{s}$, esimerkiksi puolisuunnikkailla tai ruutuja laskemalla.",
+       "tag": "graph",
+       "points": 1
+      },
+      {
+       "text": "Vähentää painon impulssin $687\\,\\text{N} \\cdot 0{,}40\\,\\text{s} \\approx 275\\,\\text{N}\\cdot\\text{s}$ tai laskee suoraan käyrän ja painon viivan välisen alueen, lopun alue negatiivisena.",
+       "tag": "math",
+       "points": 1
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$v = \\tfrac{I}{m}$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$v \\approx 2{,}5\\,\\text{m/s}$."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "calc",
+     "points": 3,
+     "text": "Kuinka korkealle opiskelijan painopiste nousee irtoamiskohdasta?",
+     "answer": {
+      "value": 0.309,
+      "unit": "m",
+      "tolerance": 0.1
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Mekaanisen energian säilyminen $\\tfrac{1}{2}mv^2 = mgh$, kun ilmanvastus on merkityksetön; korkeus lasketaan opiskelijan omasta c-kohdan nopeudesta."
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$h \\approx 0{,}31\\,\\text{m}$."
+      }
+     ]
+    },
+    {
+     "id": "e",
+     "kind": "calc",
+     "points": 5,
+     "text": "Hyppy kuvattiin myös videolle, jonka kuvanopeus oli $30$ kuvaa sekunnissa. Videon mukaan opiskelija oli ilmassa $0{,}49\\,\\text{s}$ ja laskeutui samaan asentoon, jossa hän irtosi levystä. Laske nousukorkeus lentoajan avulla. Arvioi, kuinka hyvin menetelmien tulokset sopivat yhteen ja kumpaa menetelmää kannattaisi parantaa.",
+     "answer": {
+      "value": 0.294,
+      "unit": "m",
+      "tolerance": 0.04
+     },
+     "criteria": [
+      {
+       "text": "Käyttää lentoajan puolikasta nousuaikana, koska liike on symmetrinen: $h = \\tfrac{1}{2}g\\left(\\tfrac{t}{2}\\right)^2$.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$h \\approx 0{,}29\\,\\text{m}$."
+      },
+      {
+       "key": "uncertainty",
+       "points": 1,
+       "detail": "Yhden kuvan epävarmuus $\\tfrac{1}{30}\\,\\text{s} \\approx 0{,}03\\,\\text{s}$ lentoajassa muuttaa korkeutta noin $0{,}04\\,\\text{m}$ eli noin $14\\,\\%$."
+      },
+      {
+       "key": "error_sources",
+       "points": 1,
+       "detail": "Voimalevyn tuloksessa virhettä aiheuttavat harva mittausväli ja pinta-alan arvio; pieni virhe kertautuu, koska kokonaisvoiman impulssi on kahden suuren luvun erotus."
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Tulokset $0{,}31\\,\\text{m}$ ja $0{,}29\\,\\text{m}$ sopivat yhteen epävarmuuksien rajoissa; perusteltu ehdotus, esimerkiksi tiheämpi mittausväli tai suurempi kuvanopeus."
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy4-9",
+    "fy4-8",
+    "fy4-3",
+    "fy4-2"
+   ],
+   "links": {
+    "concept": "fy4-3",
+    "graph": "fy4-9",
+    "transfer": "fy4-9",
+    "math": "fy4-8",
+    "experiment": "fy1-3",
+    "communication": "fy4-9"
+   }
+  },
+  {
+   "id": "fy4-k7",
+   "title": "Pyöräilykypärän iskutesti",
+   "source": "example",
+   "source_note": "Testin arvot on laadittu esimerkiksi; todellisissa kypärästandardeissa pudotuskorkeus ja kiihtyvyyden raja vastaavat näitä.",
+   "figure": "fy4-koe/fy4-k7-pulse",
+   "text": "Pyöräilykypärän iskutestissä kypärä puetaan $5{,}0\\,\\text{kg}$:n päämalliin, joka pudotetaan levosta $1{,}50\\,\\text{m}$:n korkeudelta teräsalustalle. Kypärän vaahtomuovi painuu kasaan ja pysäyttää päämallin, joka ei kimpoa takaisin. Päämallin sisällä oleva anturi mittaa sen kiihtyvyyttä. Kuvaajassa on erään kypärän mittaus; vaahtomuovi painui siinä kasaan $2{,}4\\,\\text{cm}$. Kypärä läpäisee testin, jos päämallin suurin kiihtyvyys on enintään $2450\\,\\text{m/s}^2$ eli $250$ kertaa putoamiskiihtyvyys. Ilmanvastus on merkityksetön.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 3,
+     "text": "Kuinka suuri on päämallin nopeus juuri ennen kuin kypärä osuu alustaan?",
+     "answer": {
+      "value": 5.42,
+      "unit": "m/s",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Mekaanisen energian säilyminen $mgh = \\tfrac{1}{2}mv^2$."
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$v \\approx 5{,}4\\,\\text{m/s}$."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 4,
+     "text": "Määritä kuvaajasta, kuinka kauan päämallin pysähtyminen kestää, ja laske päämallin keskimääräinen kiihtyvyys pysähtymisen aikana. Miksi kuvaajan huippuarvo on suurempi kuin keskimääräinen kiihtyvyys?",
+     "answer": {
+      "value": 603,
+      "unit": "m/s^2",
+      "tolerance": 0.05
+     },
+     "criteria": [
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "$\\Delta t = 9{,}0\\,\\text{ms}$."
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$a = \\tfrac{\\Delta v}{\\Delta t}$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$9{,}0\\,\\text{ms} = 0{,}0090\\,\\text{s}$; $a \\approx 600\\,\\text{m/s}^2$."
+      },
+      {
+       "text": "Kiihtyvyys ei ole vakio: se on alussa ja lopussa pieni, joten keskiarvo on pienempi kuin huippuarvo $950\\,\\text{m/s}^2$.",
+       "tag": "graph",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kuinka suuri keskimääräinen voima kypärä kohdistaa päämalliin pysähtymisen aikana?",
+     "answer": {
+      "value": 3063,
+      "unit": "N",
+      "tolerance": 0.04
+     },
+     "criteria": [
+      {
+       "key": "fbd_equations",
+       "points": 2,
+       "detail": "Päämalliin vaikuttavat paino alaspäin ja kypärän voima ylöspäin. Kun positiivinen suunta on ylös, $F - G = ma$."
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$F \\approx 3{,}1\\,\\text{kN}$, noin $60$ kertaa päämallin paino."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "calc",
+     "points": 5,
+     "text": "Valmistaja suunnittelee ohuempaa kypärää, jonka vaahtomuovi painuisi samassa testissä kasaan vain $1{,}0\\,\\text{cm}$. Arvioi, läpäiseekö ohuempi kypärä testin. Oleta, että kiihtyvyyskuvaajan muoto pysyy samanlaisena.",
+     "answer": {
+      "value": 2280,
+      "unit": "m/s^2",
+      "tolerance": 0.05
+     },
+     "criteria": [
+      {
+       "text": "Valitsee mallin: kun nopeus $v$ pysähtyy matkalla $s$, keskimääräinen kiihtyvyys on $\\tfrac{v^2}{2s}$, joten se on kääntäen verrannollinen painumaan.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "Ohuemman kypärän keskimääräinen kiihtyvyys on noin $1500\\,\\text{m/s}^2$."
+      },
+      {
+       "text": "Käyttää mitatun kuvaajan huippuarvon ja keskimääräisen kiihtyvyyden suhdetta, noin $1{,}6$, (puolisinikaarelle tarkasti $\\tfrac{\\pi}{2} \\approx 1{,}57$), tai kertoo huippuarvon painumien suhteella $2{,}4$.",
+       "tag": "graph",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "Huippuarvo on noin $2300\\,\\text{m/s}^2$."
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Kypärä läpäisee testin niukasti, noin $7\\,\\%$:n marginaalilla, mikä on pieni mallin ja mittauksen epävarmuuteen verrattuna."
+      }
+     ]
+    },
+    {
+     "id": "e",
+     "kind": "word",
+     "points": 4,
+     "text": "Kypärän käyttöohjeen mukaan kypärä on vaihdettava jokaisen kovan iskun jälkeen, vaikka siinä ei näkyisi vaurioita. Perustele ohje. Arvioi lisäksi, kuinka hyvin testi kuvaa onnettomuutta, jossa pyöräilijä ajaa nopeudella $25\\,\\text{km/h}$ päin seinää.",
+     "criteria": [
+      {
+       "text": "Kasaan painunut vaahtomuovi ei palaudu, joten seuraavassa iskussa painuma jää lyhyemmäksi ja kiihtyvyys ja voima kasvavat, kuten d-kohdassa.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "$25\\,\\text{km/h} \\approx 6{,}9\\,\\text{m/s}$, joten liike-energia on noin $(6{,}9 : 5{,}4)^2 \\approx 1{,}6$-kertainen testiin verrattuna.",
+       "tag": "math",
+       "points": 1
+      },
+      {
+       "text": "Vaahtomuovi voi painua pohjaan asti, jolloin kiihtyvyys kasvaa jyrkästi: testi on vähimmäisvaatimus eikä takaa suojaa suuremmissa nopeuksissa.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "assumptions",
+       "points": 1,
+       "detail": "Testissä isku on suora ja päämalli jäykkä; onnettomuudessa vartalo, niska, pään kiertoliike ja iskukulma muuttavat tilannetta."
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy4-8",
+    "fy4-2",
+    "fy4-4",
+    "fy4-11"
+   ],
+   "links": {
+    "math": "fy4-8",
+    "graph": "fy4-2",
+    "transfer": "fy4-11",
+    "concept": "fy4-11",
+    "experiment": "fy1-3",
+    "communication": "fy4-11"
+   }
+  }
+ ]
+}

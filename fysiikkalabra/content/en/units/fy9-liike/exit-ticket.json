@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Convert $54\\,\\text{km/h}$ to $\\text{m/s}$ by substituting the units.",
+    "a": "$54\\,\\text{km/h} = \\dfrac{54 \\cdot 1000\\,\\text{m}}{3600\\,\\text{s}} = 15\\,\\text{m/s}$."
+  },
+  {
+    "q": "A cyclist's velocity falls uniformly from $12\\,\\text{m/s}$ to $4.0\\,\\text{m/s}$ in $4.0\\,\\text{s}$. What is the acceleration, and what does its sign tell you?",
+    "a": "$a = \\dfrac{\\Delta v}{\\Delta t} = \\dfrac{4.0\\,\\text{m/s} - 12\\,\\text{m/s}}{4.0\\,\\text{s}} = -2.0\\,\\text{m/s}^2$. The sign is opposite to that of the velocity, so the speed decreases."
+  }
+]

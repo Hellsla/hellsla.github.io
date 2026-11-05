@@ -1,17 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 38886e25506452a2
+CONTENT-HASH: b81d92cfb4e125cd
+
+Round 2
+
 ## Blocking
 
 ## Polish
-- exercises.json:fy7-9-L1-03 — the skin's 307 K and 9,4 µm appear in the lesson text, so the task is close to a lookup; use another body (e.g. a 3000 K filament).
-- exercises.json:fy7-9-L3-03 — Moon ranging is one formula (s = ct : 2), level 2 in demand; fine as context, but L3 could combine ideas (e.g. wavelengths of 532 nm light in the path).
-- exercises.json:fy7-9-L3-01 — the text asks to deduce the spectral region, but only the millimetre value is graded; the solution covers the region, so mark it as self-check.
+- exercises.json:fy7-9-L1-08 — still a near twin of L1-02 (c = fλ, GHz to cm); change the situation or the unit step (e.g. 12 cm Wi-Fi wave to frequency).
+- exercises.json (L2) — no graph task yet (`curves`/`spectrum` in the plan); consider one in a later round.
+- exercises.json:fy7-9-L3-04 — a and b are level-2 computation, level-3 demand only in c; a "which star looks reddest and why" in b would lift it.
+- Earlier polish on L1-03 (lesson lookup of 307 K) and L3-01/L3-03 still stands.
 
 ## Checked
-- Round-1 blocking L2-02 fixed: peak one gridline (0,2 µm) right of 1, gives 1,2 µm and 2415 K, consistent with the answer.
-- L3-02 false premise removed; the 8,0 µm end correctly gives 89 °C and the 14 µm check gives -66 °C.
-- L2-03 Periaate now states the shift direction.
-- Counts 5/4/3 match the rubric; levels rise (single formula, conversion or two steps, context and reasoning).
-- All solutions follow the seven steps with principle explained; answers agree with exercises.json.
-- No task repeats the Aurinko example; Fixsen 2009 named with source and year.
-- Finnish and units correct.
+- Round 1 had no Blocking. Fixes in the diff are correct: L1-06 correct option moved and reworded (answer equals its choice text, each distractor keeps its own repairing feedback); L2-07 and its solution now state the wire is a black body.
+- L2-05 answer line now rounds each temperature to its own data (2,68·10³, 1,79·10³, 5,8·10³ K); 2683 K in the box is inside the 0,02 tolerance.
+- L3-04 star B changed 500 to 480 nm: T_B = 6038 K (6,0·10³ K), table, solution and the Aurinko comparison agree; the answers 3,19 and the A/C temperatures are unaffected.
+- L1-07 Järkevyys 12,24 cm and L2-06 Järkevyys (now refers to L2-01 correctly) fixed.
+- Paragraph rule: no new task has a lead paragraph over 45 words; lettered parts are separate.
+- Levels, plan coverage and no-duplicate check unchanged from round 1; 1280 px captures of the new tasks show no clipping.

@@ -117,3 +117,82 @@
 **Sijoitus:** $A = 10\,\text{dB} \cdot \lg \dfrac{1{,}0 \cdot 10^{-3}\,\text{W}}{1{,}0 \cdot 10^{-5}\,\text{W}} = 10\,\text{dB} \cdot \lg 100 = 20\,\text{dB}$, $L = \dfrac{20\,\text{dB} - 2{,}0\,\text{dB}}{0{,}20\,\text{dB/km}} = 90\,\text{km} = 90\,000\,\text{m}$, joten $t = \dfrac{1{,}47 \cdot 90\,000\,\text{m}}{3{,}00 \cdot 10^8\,\text{m/s}} = 4{,}41 \cdot 10^{-4}\,\text{s} = 0{,}441\,\text{ms}$
 **Vastaus:** $0{,}44\,\text{ms}$, kaksi merkitsevää numeroa kuten tehot ja vaimennuskerroin.
 **Järkevyys:** Ilman liitoksia kuitu voisi olla $100\,\text{km}$, joten liitokset lyhentävät yhteyttä vähän, kuten pitää. Lasissa valo kulkee noin $200\,\text{km}$ millisekunnissa, joten $90\,\text{km}$:iin kuluu vajaa puoli millisekuntia.
+
+## fy7-16-L1-06
+**Kysytty:** miksi induktiolieden lasilevy ei lämpene itsestään, vaikka kelan magneettikenttä kulkee sen läpi
+**Periaate:** Induktioliedessä kela synnyttää vaihtuvan magneettikentän, ja vaihtuva vuo indusoi johtavaan kappaleeseen pyörrevirtoja. Pyörrevirrat muuttavat sähköenergiaa sisäenergiaksi resistanssissa teholla $RI^2$. Lämpeneminen vaatii siis sen, että kappaleessa voi kulkea sähkövirta.
+**Mallivastaus:** Lasi ei johda sähköä, joten siihen ei synny pyörrevirtoja, jotka muuttaisivat sähköenergiaa sisäenergiaksi. Vaihtoehto, jonka mukaan lasi estää magneettikentän kulun, on väärä, koska kenttä kulkee lasin läpi ja lämmittää kattilan pohjaa. Vaihtoehto, jonka mukaan sulamislämpötila estää lämpenemisen, on väärä, koska lämpeneminen riippuu virrasta eikä sulamislämpötilasta. Vaihtoehto, jonka mukaan pyörrevirrat kumoavat toisensa Lenzin lain mukaan, on väärä, koska Lenzin laki kertoo virran suunnan eikä poista virtaa.
+
+## fy7-16-L1-07
+**Annettu:** teho alussa $P_0 = 4{,}0\,\text{mW}$, vaimennuskerroin $a = 0{,}20\,\text{dB/km}$, pituus $L = 45\,\text{km}$
+**Kysytty:** teho $P$ kuidun lopussa milliwatteina
+**Periaate:** Kuitu on koko matkalta samanlaista, joten vaimennus lasketaan kaavalla $A = aL$. Sen jälkeen tehojen suhde saadaan vaimennuksen määritelmästä ratkaisemalla teho $P$.
+**Kaava:** $A = aL$ ja $A = 10\,\text{dB} \cdot \lg \dfrac{P_0}{P}$, josta $P = P_0 \cdot 10^{-A / (10\,\text{dB})}$
+**Muunnokset:** Ei tarvita: teho säilyy milliwatteina, koska suhde $P : P_0$ on yksikötön.
+**Sijoitus:** $A = 0{,}20\,\tfrac{\text{dB}}{\text{km}} \cdot 45\,\text{km} = 9{,}0\,\text{dB}$, joten $P = 4{,}0\,\text{mW} \cdot 10^{-9{,}0 / 10} = 4{,}0\,\text{mW} \cdot 0{,}1259 = 0{,}5036\,\text{mW}$
+**Vastaus:** $0{,}50\,\text{mW}$, kaksi merkitsevää numeroa kuten lähtötiedot.
+**Järkevyys:** Vaimennus $9{,}0\,\text{dB}$ on noin kolme kertaa $3\,\text{dB}$, eli teho puolittuu kolme kertaa: $4{,}0\,\text{mW} : 8 = 0{,}50\,\text{mW}$, kuten tuloksessa. Teho on pienentynyt, mutta ei kymmenesosaan, koska $9\,\text{dB}$ on vähemmän kuin $10\,\text{dB}$.
+
+## fy7-16-L1-08
+**Annettu:** vaimennuskerroin $a = 0{,}20\,\text{dB/km}$, teho puolittuu eli $P_0 : P = 2$
+**Kysytty:** matka $L$ kilometreinä, jonka kuluessa teho puolittuu
+**Periaate:** Puolittuminen tarkoittaa tehojen suhdetta $2$, joten siitä saadaan vaimennus desibeleinä. Kuitu on koko matkalta samanlaista, joten vaimennus on $A = aL$, ja siitä ratkaistaan matka.
+**Kaava:** $A = 10\,\text{dB} \cdot \lg \dfrac{P_0}{P}$ ja $A = aL$, josta $L = \dfrac{A}{a}$
+**Muunnokset:** Ei tarvita: vaimennus on desibeleinä ja vaimennuskerroin desibelejä kilometriä kohti.
+**Sijoitus:** $A = 10\,\text{dB} \cdot \lg 2 = 3{,}010\,\text{dB}$, joten $L = \dfrac{3{,}010\,\text{dB}}{0{,}20\,\text{dB/km}} = 15{,}05\,\text{km}$
+**Vastaus:** $15\,\text{km}$, kaksi merkitsevää numeroa kuten vaimennuskerroin $0{,}20\,\text{dB/km}$.
+**Järkevyys:** Puolittuminen vastaa noin $3\,\text{dB}$:ä, ja kuitu vaimentaa $0{,}20\,\text{dB}$ kilometrillä, joten $3 : 0{,}2 = 15$ kilometriä. Teho puolittuu noin $15\,\text{km}$:n välein, joten $45\,\text{km}$:n matkalla se puolittuu kolme kertaa.
+
+## fy7-16-L2-05
+**Annettu:** taulukon mittauspisteet $(d;\ \eta)$, rajaksi $\eta = 50\,\%$
+**Kysytty:** etäisyys $d$, jolla hyötysuhde laskee arvoon $50\,\%$, millimetreinä
+**Periaate:** Etäisyyden kasvaessa vastaanotinkäämin läpi kulkeva vuo pienenee jyrkästi, joten hyötysuhde laskee. Raja $50\,\%$ on mittausten $58\,\%$ ja $44\,\%$ välissä, joten etäisyys saadaan kuvaajasta tai lineaarisella interpoloinnilla näiden kahden pisteen välillä.
+**Kuvaajan lukeminen:** Piirrä pisteet $(3;\ 81)$, $(6;\ 73)$, $(10;\ 58)$, $(15;\ 44)$, $(20;\ 31)$ ja $(25;\ 22)$ ja yhdistä ne sujuvalla käyrällä. Vedä vaakasuora viiva korkeudelle $50\,\%$. Käyrä leikkaa sen pisteiden $d = 10\,\text{mm}$ ja $d = 15\,\text{mm}$ välissä, vähän yli puolivälin eli yli $12{,}5\,\text{mm}$.
+**Kaava:** $d = d_1 + (d_2 - d_1) \cdot \dfrac{\eta_1 - 50\,\%}{\eta_1 - \eta_2}$, missä $(d_1;\ \eta_1)$ ja $(d_2;\ \eta_2)$ ovat rajan ympärillä olevat mittauspisteet
+**Muunnokset:** Ei tarvita: etäisyydet ovat millimetreinä ja hyötysuhteet prosentteina, ja yksiköt supistuvat suhteessa.
+**Sijoitus:** $d = 10\,\text{mm} + 5\,\text{mm} \cdot \dfrac{58\,\% - 50\,\%}{58\,\% - 44\,\%} = 10\,\text{mm} + 5\,\text{mm} \cdot 0{,}571 = 12{,}86\,\text{mm}$
+**Vastaus:** $13\,\text{mm}$, kaksi merkitsevää numeroa. Mittaus on tehty noin millimetrin tarkkuudella, joten kuvaajasta luettu arvo $12$–$13\,\text{mm}$ on yhtä hyvä (sujuva käyrä kulkee lineaarista välistä hieman alempana).
+**Järkevyys:** Hyötysuhde $50\,\%$ on lähempänä arvoa $44\,\%$ kuin arvoa $58\,\%$ (eroa $6$ ja $8$ prosenttiyksikköä), joten tulos on vähän yli puolivälin eli yli $12{,}5\,\text{mm}$, kuten pitää. Hyötysuhde laskee kaikilla väleillä, mikä sopii siihen, että vuo heikkenee etäisyyden kasvaessa.
+
+## fy7-16-L2-06
+**Annettu:** alkuteho $P_0 = 800\,\mu\text{W}$, taulukon pituudet $L$ ja tehot $P$
+**Kysytty:** vaimennuskerroin $a$ yksikössä $\text{dB/km}$
+**Periaate:** Kuitu on koko matkalta samanlaista, joten vaimennus kasvaa suoraan verrannollisena pituuteen: $A = aL$. Kun $A$ piirretään pituuden $L$ funktiona, pisteet asettuvat origon kautta kulkevalle suoralle, jonka kulmakerroin on $a$. Suora kulkee origon kautta, koska nollan pituisella kuidulla ei ole vaimennusta.
+**Kuvaajan lukeminen:** Vaimennukset ovat $A = 2{,}15;\ 3{,}89;\ 6{,}11;\ 7{,}93;\ 10{,}05\,\text{dB}$ pituuksilla $10;\ 20;\ 30;\ 40;\ 50\,\text{km}$. Todellisissa mittauksissa pisteet eivät ole täsmälleen samalla suoralla, joten suora piirretään pisteiden lomaan. Sovitettu suora kulkee pisteiden $(0;\ 0)$ ja $(50;\ 10{,}0)$ kautta.
+**Kaava:** $A = 10\,\text{dB} \cdot \lg \dfrac{P_0}{P}$ ja $A = aL$, joten suoran kulmakerroin $a = \dfrac{\Delta A}{\Delta L}$
+**Muunnokset:** Ei tarvita: tehot ovat mikrowatteina ja niiden suhde on yksikötön.
+**Sijoitus:** Esimerkiksi pituudella $10\,\text{km}$: $A = 10\,\text{dB} \cdot \lg \dfrac{800\,\mu\text{W}}{488\,\mu\text{W}} = 2{,}15\,\text{dB}$. Kulmakerroin $a = \dfrac{10{,}0\,\text{dB} - 0}{50\,\text{km} - 0} = 0{,}200\,\text{dB/km}$. Pienimmän neliösumman suora origon kautta antaa kulmakertoimeksi $0{,}2003\,\text{dB/km}$.
+**Vastaus:** $0{,}20\,\text{dB/km}$, kaksi merkitsevää numeroa; teho on mitattu kolmen merkitsevän numeron tarkkuudella, mutta pisteiden hajonta rajoittaa tulosta.
+**Järkevyys:** Yksittäisten pisteiden suhteet $A : L$ ovat välillä $0{,}194$–$0{,}215\,\text{dB/km}$, joten $0{,}20\,\text{dB/km}$ on niiden keskellä. Arvo on tyypillinen tietoliikennekuidulle, jonka vaimennuskerroin on luokkaa $0{,}2\,\text{dB/km}$.
+
+## fy7-16-L2-07
+**Annettu:** vaimennus $A = 20\,\text{dB}$; opiskelijan väite: teho pienenee $20\,\%$ ja perille saapuu $80\,\%$
+**Kysytty:** a) opiskelijan päättelyn virhe; b) perille saapuva osuus lähetetystä tehosta prosentteina
+**Periaate:** Desibeli on logaritminen yksikkö, ei prosentti. Vaimennus $A = 10\,\text{dB} \cdot \lg \dfrac{P_0}{P}$ kertoo tehojen suhteen kymmenpotenssina, ja jokainen $10\,\text{dB}$ pienentää tehon kymmenesosaan. Siksi $20\,\text{dB}$ on kaksi kertaa kymmenesosaan pienentyminen.
+**Kaava:** $\dfrac{P}{P_0} = 10^{-A / (10\,\text{dB})}$
+**Muunnokset:** Lopuksi suhde kerrotaan sadalla prosenteiksi.
+**Sijoitus:** $\dfrac{P}{P_0} = 10^{-20\,\text{dB} / (10\,\text{dB})} = 10^{-2} = 0{,}010$, joten perille saapuu $0{,}010 \cdot 100\,\% = 1{,}0\,\%$
+**Vastaus:** a) Virhe on se, että desibelit tulkittiin prosenteiksi. Desibelit lasketaan yhteen ja tehojen suhteet kerrotaan: kaksi $10\,\text{dB}$:n osuutta pienentää tehon kymmenesosaan kahdesti. b) $1{,}0\,\%$ lähetetystä tehosta saapuu perille. Opiskelijan arvo $80\,\%$ vastaisi vaimennusta vain noin $1\,\text{dB}$.
+**Järkevyys:** Vaimennus $20\,\text{dB}$ on $2 \cdot 10\,\text{dB}$, joten teho on $\tfrac{1}{10} \cdot \tfrac{1}{10} = \tfrac{1}{100}$ eli $1\,\%$. Opiskelijan arvon tarkistus: $10\,\text{dB} \cdot \lg \dfrac{1}{0{,}80} = 0{,}97\,\text{dB}$, joten $80\,\%$ vastaisi noin $1\,\text{dB}$:n vaimennusta eikä $20\,\text{dB}$:ä.
+
+## fy7-16-L3-04
+**Annettu:** $N = 15$, $f = 130\,\text{kHz}$, taulukon $d$ ja $e_0$, latauksen raja $e_0 = 1{,}0\,\text{V}$, uusi taajuus $f' = 100\,\text{kHz}$ ja sama vuo
+**Kysytty:** suurin etäisyys $d$ millimetreinä, jolla lataus toimii taajuudella $100\,\text{kHz}$
+**Periaate:** Vuo vaihtelee sinimuotoisesti, joten $e_0 = N \cdot 2\pi f \cdot \Phi_0$. Taulukon jännitteistä lasketaan vuo jokaisella etäisyydellä. Jännite $1{,}0\,\text{V}$ vaatii taajuudella $100\,\text{kHz}$ tietyn vuon, ja etäisyys saadaan interpoloimalla.
+**Kaava:** $\Phi_0 = \dfrac{e_0}{N \cdot 2\pi f}$, $\Phi_{\min} = \dfrac{1{,}0\,\text{V}}{N \cdot 2\pi f'}$ ja $d = d_1 + (d_2 - d_1) \cdot \dfrac{\Phi_1 - \Phi_{\min}}{\Phi_1 - \Phi_2}$
+**Muunnokset:** $f = 1{,}30 \cdot 10^{5}\,\text{Hz}$, $f' = 1{,}00 \cdot 10^{5}\,\text{Hz}$ ja $1\,\text{Wb} = 10^{6}\,\mu\text{Wb}$.
+**Sijoitus:** a) Nimittäjä on $15 \cdot 2\pi \cdot 1{,}30 \cdot 10^{5}\,\text{Hz} = 1{,}225 \cdot 10^{7}\,\text{Hz}$, joten vuot ovat $0{,}377;\ 0{,}221;\ 0{,}124;\ 0{,}0677;\ 0{,}0384\,\mu\text{Wb}$ etäisyyksillä $4;\ 8;\ 12;\ 16;\ 20\,\text{mm}$.
+b) $\Phi_{\min} = \dfrac{1{,}0\,\text{V}}{15 \cdot 2\pi \cdot 1{,}00 \cdot 10^{5}\,\text{Hz}} = 0{,}1061\,\mu\text{Wb}$ on vuoarvojen $0{,}1241\,\mu\text{Wb}$ ($12\,\text{mm}$) ja $0{,}0677\,\mu\text{Wb}$ ($16\,\text{mm}$) välissä: $d = 12\,\text{mm} + 4\,\text{mm} \cdot \dfrac{0{,}1241 - 0{,}1061}{0{,}1241 - 0{,}0677} = 13{,}28\,\text{mm}$
+**Vastaus:** $13\,\text{mm}$, kaksi merkitsevää numeroa; interpolointi on arvio, koska vuo ei pienene lineaarisesti. c) Sama vuo vaihtelee taajuudella $100\,\text{kHz}$ hitaammin kuin taajuudella $130\,\text{kHz}$, joten indusoituva jännite on pienempi. Raja $1{,}0\,\text{V}$ ylittyy vain suuremmalla vuolla eli lähempänä laturia. Etäisyyden saisi takaisin lisäämällä vastaanotinkäämin kierroksia, koska jännite on suoraan verrannollinen kierrosten lukumäärään.
+**Järkevyys:** Raja-arvo $0{,}1061\,\mu\text{Wb}$ on pienempi kuin vuo etäisyydellä $12\,\text{mm}$ mutta suurempi kuin etäisyydellä $16\,\text{mm}$, joten $13{,}3\,\text{mm}$ on näiden välissä. Taajuudella $130\,\text{kHz}$ raja-arvo olisi $0{,}0816\,\mu\text{Wb}$ ja etäisyys noin $15{,}0\,\text{mm}$, joten taajuuden lasku lyhentää toimintaetäisyyttä, kuten c-kohdassa. Kierrosten lisäys $15$:stä $20$:een kasvattaisi jännitettä kertoimella $1{,}33$ ja korvaisi taajuuden laskun kertoimella $1{,}30$.
+
+## fy7-16-L3-05
+**Annettu:** $f = 30\,\text{kHz}$, $B_0 = 3{,}0\,\text{mT}$, $r = 9{,}0\,\text{cm}$, $R_\text{A} = 0{,}040\,\Omega$, $R_\text{B} = 0{,}050\,\Omega$, $R_\text{C} = 0{,}080\,\Omega$, kenttä homogeeninen ja kohtisuorassa pohjaa vastaan
+**Kysytty:** taajuus $f_\text{C}$ kilohertseinä, jolla kattilan C pohja lämpenee samalla teholla kuin kattilan A pohja taajuudella $30\,\text{kHz}$
+**Periaate:** Silmukan vuo $\Phi = BA$ vaihtelee sinimuotoisesti, joten huippujännite on $e_0 = 2\pi f \cdot \Phi_0$ ja teho $P = U^2 : R$ tehollisella jännitteellä $U = e_0 : \sqrt{2}$. Huippujännite on verrannollinen taajuuteen, joten teho on verrannollinen taajuuden neliöön ja kääntäen verrannollinen resistanssiin.
+**Kaava:** $\Phi_0 = B_0 \cdot \pi r^2$, $e_0 = 2\pi f \cdot \Phi_0$ ja $P = \dfrac{e_0^2}{2R} \sim \dfrac{f^2}{R}$. Yhtäsuuret tehot: $\dfrac{f_\text{C}^2}{R_\text{C}} = \dfrac{f^2}{R_\text{A}}$, josta $f_\text{C} = f \cdot \sqrt{\dfrac{R_\text{C}}{R_\text{A}}}$
+**Muunnokset:** $f = 3{,}0 \cdot 10^{4}\,\text{Hz}$, $B_0 = 3{,}0 \cdot 10^{-3}\,\text{T}$, $r = 0{,}090\,\text{m}$ ja $1\,\text{kW} = 1000\,\text{W}$.
+**Sijoitus:** a) $\Phi_0 = 3{,}0 \cdot 10^{-3}\,\text{T} \cdot \pi \cdot (0{,}090\,\text{m})^2 = 7{,}63 \cdot 10^{-5}\,\text{Wb}$ ja $e_0 = 2\pi \cdot 3{,}0 \cdot 10^{4}\,\text{Hz} \cdot 7{,}63 \cdot 10^{-5}\,\text{Wb} = 14{,}39\,\text{V}$. Tehot $P = \dfrac{(14{,}39\,\text{V})^2}{2R}$ ovat kattilalle A $2{,}59\,\text{kW}$, B $2{,}07\,\text{kW}$ ja C $1{,}29\,\text{kW}$.
+b) $f_\text{C} = 30\,\text{kHz} \cdot \sqrt{\dfrac{0{,}080\,\Omega}{0{,}040\,\Omega}} = 30\,\text{kHz} \cdot \sqrt{2} = 42{,}43\,\text{kHz}$
+**Vastaus:** $42\,\text{kHz}$, kaksi merkitsevää numeroa kuten lähtötiedot. Kattilan C resistanssi on kaksinkertainen, joten sen teho on puolet; taajuuden nosto kasvattaa vuon muutosnopeutta ja jännitettä, ja teho kasvaa taajuuden neliössä. c) Pyörrevirran oma magneettikenttä jätettiin huomiotta: Lenzin lain mukaan se vastustaa vuon muutosta, joten todellinen virta ja teho ovat mallin antamaa pienemmät. Hyvin johtavassa pohjassa (alumiini, kupari) pyörrevirran oma kenttä kumoaa suuren osan vuosta, joten malli ei päde niille; teräksen ferromagnetismi taas lisää lämpenemistä.
+**Järkevyys:** Tehojen suhde $2{,}59\,\text{kW} : 1{,}29\,\text{kW} = 2{,}0$ vastaa resistanssien suhdetta $0{,}080 : 0{,}040 = 2{,}0$. Taajuuden nosto kertoimella $\sqrt{2} = 1{,}414$ kasvattaa tehon kertoimella $1{,}414^2 = 2{,}0$, joten kattilan C teho taajuudella $42{,}4\,\text{kHz}$ on $1{,}29\,\text{kW} \cdot 2{,}0 = 2{,}59\,\text{kW}$.

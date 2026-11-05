@@ -11,6 +11,7 @@
     {
       "id": "fy6-14-L1-02",
       "level": 1,
+      "core": true,
       "text": "Valkoinen LED kytketään $5{,}0\\,\\text{V}$:n USB-virtalähteeseen etuvastuksen kautta. LEDin jännite on $3{,}1\\,\\text{V}$, ja sen virraksi halutaan $20\\,\\text{mA}$. Kuinka suuri etuvastus tarvitaan? Vastaa ohmeina.",
       "answer": 95.0,
       "unit": "Ω",
@@ -40,6 +41,78 @@
       "answer": 22.0,
       "unit": "mW",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-14-L1-06",
+      "level": 1,
+      "core": true,
+      "text": "Pariston jännite on $9{,}0\\,\\text{V}$. Pariston plusnapa on kytketty diodin kautta vastukseen, ja vastus on kytketty pariston miinusnapaan. Diodin symbolin kolmio osoittaa kohti vastusta.\n\nMitä piirissä tapahtuu?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Diodi on päästösuunnassa, joten virta kulkee ja diodin yli on vain pieni jännite.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Diodi on estosuunnassa, joten virta ei kulje ja diodin yli on koko pariston jännite.",
+          "feedback": "Näin tapahtuisi, jos pariston navat olisivat toisin päin. Kun kolmio osoittaa virran kulkusuuntaan eli kohti miinusnapaa, diodi on päästösuunnassa."
+        },
+        {
+          "text": "Diodi on estosuunnassa, joten virta kulkee takaisin ja vastuksen yli on jännite.",
+          "feedback": "Diodi ei päästä virtaa vastakkaiseen suuntaan. Tässä kytkennässä diodi on päästösuunnassa, ja virta kulkee plusnavasta miinusnapaan."
+        },
+        {
+          "text": "Diodi on päästösuunnassa, joten virta kulkee ja diodin yli on vain pieni jännite.",
+          "correct": true,
+          "feedback": "Oikein: virran suunta plusnavasta miinusnapaan on sama kuin kolmion osoittama suunta, joten diodi päästää virran läpi. Diodin jännite on pieni, ja suurin osa pariston jännitteestä on vastuksen yli."
+        },
+        {
+          "text": "Diodi on päästösuunnassa, joten virta kulkee ja diodin yli on koko pariston jännite.",
+          "feedback": "Päästösuunnassa diodin jännite on pieni. Diodin kanssa sarjassa oleva vastus ottaa suurimman osan pariston jännitteestä Kirchhoffin jännitelain mukaan."
+        }
+      ]
+    },
+    {
+      "id": "fy6-14-L1-07",
+      "level": 1,
+      "text": "LED kytketään paristoon, jonka jännite on suurempi kuin LEDin oma jännite. LEDin kanssa sarjaan kytketään etuvastus.\n\nMiksi etuvastus tarvitaan?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "LEDin virta kasvaa jyrkästi jännitteen kasvaessa, joten vastus ottaa ylimääräisen jännitteen.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "LEDin resistanssi on niin suuri, että vastus tarvitaan lisäämään virtaa ja saamaan LED palamaan.",
+          "feedback": "LED ei ole suuriresistanssinen komponentti päästösuunnassa. Ilman etuvastusta virta kasvaisi liian suureksi, ei liian pieneksi."
+        },
+        {
+          "text": "Vastus muuttaa pariston tasajännitteen vaihtojännitteeksi, jota LED tarvitsee toimiakseen.",
+          "feedback": "Vastus ei muuta jännitteen lajia. LED toimii tasajännitteellä, kunhan se on päästösuunnassa ja virta on rajoitettu."
+        },
+        {
+          "text": "Vastus estää virran kulun LEDin läpi väärään suuntaan, kun paristo on kytketty oikein päin.",
+          "feedback": "Väärään suuntaan virta ei kulje LEDin läpi muutenkaan, koska LED on silloin estosuunnassa. Vastus rajoittaa virran suuruutta päästösuunnassa."
+        },
+        {
+          "text": "LEDin virta kasvaa jyrkästi jännitteen kasvaessa, joten vastus ottaa ylimääräisen jännitteen.",
+          "correct": true,
+          "feedback": "Oikein: LEDin jännite pysyy lähes samana, vaikka virta muuttuu paljon, joten ylimääräinen jännite jää vastukselle. Vastuksen avulla virta saadaan sopivaksi, ja LED ei pala loppuun."
+        }
+      ]
+    },
+    {
+      "id": "fy6-14-L1-08",
+      "level": 1,
+      "text": "Laskimen aurinkokennon pinta-ala on $12\\,\\text{cm}^2$. Kirkkaassa auringonvalossa valon voimakkuus kennolla on $1000\\,\\text{W/m}^2$. Tällöin kennon jännite on $2{,}0\\,\\text{V}$ ja virta $100\\,\\text{mA}$. Mikä on kennon hyötysuhde? Vastaa prosentteina.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 16.666667,
+      "unit": "%",
+      "tolerance": 0.03
     }
   ],
   "level2": [
@@ -62,6 +135,7 @@
     {
       "id": "fy6-14-L2-03",
       "level": 2,
+      "core": true,
       "text": "Omakotitalon katolla olevan aurinkopaneelin pinta-ala on $1{,}6\\,\\text{m}^2$. Kun valon voimakkuus on $800\\,\\text{W/m}^2$, paneeli antaa sähkötehon $260\\,\\text{W}$. Mikä on paneelin hyötysuhde? Vastaa prosentteina.",
       "answer": 20.3125,
       "unit": "%",
@@ -73,6 +147,112 @@
       "text": "Pihavalaisimen aurinkokenno lataa valaisimen akkua päivän aikana. Kennon teho on keskimäärin $0{,}35\\,\\text{W}$, ja se lataa akkua $6{,}0\\,\\text{h}$. Kuinka paljon sähköenergiaa kenno tuottaa tänä aikana? Vastaa kilojouleina.",
       "answer": 7.56,
       "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-14-L2-05",
+      "level": 2,
+      "text": "Taulukossa on kolmen LEDin jännite, kun jokaisen virta on $15\\,\\text{mA}$ (esimerkkiaineisto). Jokainen LED kytketään erikseen etuvastuksen kautta $5{,}0\\,\\text{V}$:n jännitelähteeseen, ja virraksi halutaan $15\\,\\text{mA}$.\n\na) Mikä LED tarvitsee suurimman etuvastuksen? Perustele.\n\nb) Laske tämän etuvastuksen resistanssi. Vastaa kohdan b tulos ohmeina.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 206.666667,
+      "unit": "Ω",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "LEDien jännitteet virralla $15\\,\\text{mA}$ (esimerkkiaineisto)",
+        "columns": [
+          "Väri",
+          "$U_\\text{D}\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "Sininen",
+            "3.10"
+          ],
+          [
+            "Punainen",
+            "1.90"
+          ],
+          [
+            "Keltainen",
+            "2.10"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-14-L2-06",
+      "level": 2,
+      "core": true,
+      "text": "Pienen aurinkokennon jännite ja virta mitattiin eri kuormitusvastuksilla samassa valaistuksessa (esimerkkiaineisto).\n\nLaske kennon teho jokaisella kuormitusvastuksella. Kuinka suuri on kennon suurin mitattu teho? Vastaa milliwatteina.",
+      "kind": [
+        "data"
+      ],
+      "answer": 181.09,
+      "unit": "mW",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Aurinkokennon mittaukset eri kuormilla (esimerkkiaineisto)",
+        "columns": [
+          "$R\\,(\\Omega)$",
+          "$U\\,(\\text{V})$",
+          "$I\\,(\\text{mA})$"
+        ],
+        "rows": [
+          [
+            "10",
+            "0.99",
+            "99"
+          ],
+          [
+            "15",
+            "1.48",
+            "99"
+          ],
+          [
+            "20",
+            "1.89",
+            "94"
+          ],
+          [
+            "22",
+            "1.99",
+            "91"
+          ],
+          [
+            "27",
+            "2.12",
+            "78"
+          ],
+          [
+            "33",
+            "2.20",
+            "66"
+          ],
+          [
+            "47",
+            "2.28",
+            "48"
+          ],
+          [
+            "100",
+            "2.34",
+            "23"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-14-L2-07",
+      "level": 2,
+      "text": "Opiskelija mitoittaa sinisen LEDin etuvastuksen. Pariston jännite on $9{,}0\\,\\text{V}$, LEDin jännite $3{,}2\\,\\text{V}$ ja halutaan virraksi $15\\,\\text{mA}$.\n\nOpiskelijan ratkaisu: ”Vastuksen yli on pariston jännite, joten $R = U : I = 9{,}0\\,\\text{V} : 0{,}015\\,\\text{A} = 600\\,\\Omega$.”\n\na) Mikä virhe opiskelijan ratkaisussa on?\n\nb) Laske etuvastus oikein. Vastaa kohdan b tulos ohmeina.",
+      "kind": [
+        "error"
+      ],
+      "answer": 386.666667,
+      "unit": "Ω",
       "tolerance": 0.02
     }
   ],
@@ -100,6 +280,135 @@
       "answer": 25.0,
       "unit": "%",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-14-L3-04",
+      "level": 3,
+      "text": "Omakotitalon katolle suunnitellaan aurinkopaneelisto, jonka yhteenlaskettu pinta-ala on $24\\,\\text{m}^2$. Paneelien ja vaihtosuuntaajan yhteinen hyötysuhde on $19\\,\\%$, ja sen oletetaan pysyvän vakiona koko vuoden.\n\nTaulukossa on paneelien pinnalle tuleva auringonsäteilyn energia neliömetriä kohti $H$ ja talon sähkönkulutus $E_\\text{kul}$ kuukausittain (esimerkkiaineisto, ei mittaustulos).\n\na) Laske paneeliston vuosituotanto.\n\nb) Laske omavaraisuusaste eli vuosituotannon osuus talon vuosikulutuksesta. Vastaa prosentteina.\n\nc) Laske kuukausituotanto ja päättele, missä kuukausissa paneelisto tuottaa vähemmän kuin talo kuluttaa. Miksi omavaraisuusaste ei yksin kerro, paljonko talo ostaa verkosta sähköä?\n\nKohdan b tulos kirjoitetaan vastauslaatikkoon.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 87.698876,
+      "unit": "%",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Säteilyenergia ja sähkönkulutus kuukausittain (esimerkkiaineisto)",
+        "columns": [
+          "Kuukausi",
+          "$H\\,(\\text{kWh/m}^2)$",
+          "$E_\\text{kul}\\,(\\text{kWh})$"
+        ],
+        "rows": [
+          [
+            "Tammi",
+            "12",
+            "620"
+          ],
+          [
+            "Helmi",
+            "32",
+            "560"
+          ],
+          [
+            "Maalis",
+            "80",
+            "520"
+          ],
+          [
+            "Huhti",
+            "120",
+            "400"
+          ],
+          [
+            "Touko",
+            "160",
+            "330"
+          ],
+          [
+            "Kesä",
+            "170",
+            "290"
+          ],
+          [
+            "Heinä",
+            "170",
+            "280"
+          ],
+          [
+            "Elo",
+            "135",
+            "300"
+          ],
+          [
+            "Syys",
+            "85",
+            "370"
+          ],
+          [
+            "Loka",
+            "40",
+            "460"
+          ],
+          [
+            "Marras",
+            "15",
+            "560"
+          ],
+          [
+            "Joulu",
+            "8",
+            "650"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-14-L3-05",
+      "level": 3,
+      "text": "Vihreän LEDin ominaiskäyrä mitattiin pisteittäin (esimerkkiaineisto). LED kytketään $4{,}5\\,\\text{V}$:n paristoon $180\\,\\Omega$:n etuvastuksen kautta. LEDin suurin sallittu pysyvä virta on $25\\,\\text{mA}$.\n\na) Arvioi LEDin kynnysjännite jatkamalla ominaiskäyrän jyrkkää suoraa osaa ($2{,}05$–$2{,}10\\,\\text{V}$) jänniteakselille.\n\nb) Määritä LEDin työpiste eli virta ja jännite piirissä. Vastaa virta milliampeereina.\n\nc) Kuinka paljon LEDin jännite muuttuu, kun virta kasvaa taulukossa arvosta $9{,}8\\,\\text{mA}$ arvoon $41\\,\\text{mA}$? Miksi LEDin jännitteenä voidaan käyttää etuvastusta mitoitettaessa vakioarvoa?\n\nKohdan b tulos kirjoitetaan vastauslaatikkoon.",
+      "kind": [
+        "data",
+        "graph",
+        "model"
+      ],
+      "answer": 13.78,
+      "unit": "mA",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Vihreän LEDin ominaiskäyrä (esimerkkiaineisto)",
+        "columns": [
+          "$U_\\text{D}\\,(\\text{V})$",
+          "$I\\,(\\text{mA})$"
+        ],
+        "rows": [
+          [
+            "1.70",
+            "0.1"
+          ],
+          [
+            "1.80",
+            "0.6"
+          ],
+          [
+            "1.90",
+            "2.4"
+          ],
+          [
+            "2.00",
+            "9.8"
+          ],
+          [
+            "2.05",
+            "20"
+          ],
+          [
+            "2.10",
+            "41"
+          ]
+        ]
+      }
     }
   ]
 }

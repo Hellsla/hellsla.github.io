@@ -1,13 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 774ec48c9aef0617
+CONTENT-HASH: 43e7c90a8f5c51ad
+Mode: full
+Round: 1
 
 ## Blocking
 
+## Fixed
+- None needed: no translation text had to be changed.
+
 ## Polish
-- [Minor] exercise answer fields (open-exercises-1280-1) — the unit beside the input is plain text ("µT", "mT", "km") while the rest of the page is KaTeX; acceptable as an input suffix, noted only for consistency.
 
 ## Checked
-- open-exercises-1280-1 (level 1, ex. 1 with full solution), open-exercises-L2-1280-3 (level 2, ex. 2–3), open-exercises-L3-1280-2 (level 3, ex. 1–2); the solution layout (Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness), aligned rows, fractions, units with thin space, and wrapping checked; the texts of all 12 tasks and solutions read from the packet. Tasks have no figures.
-
-## Scores
-illustrations 5 · typography 4 · Finnish (English prose) 4 · accessibility 4
+- Opened the exercise screenshots of the new tasks (L2-05 solution): equations, units and fractions render without overflow or clipping at 390/1280 width.
+- Data tables of L2-05, L2-06 and L3-04 show the same cells as the Finnish; column headers and captions are translated.
+- Decimal separator in rendered English text and LaTeX is a point.
+- Answer unit label (uT, mT, uVs/(Am), times) fits next to the input field.
+- No untranslated strings visible in the English captures.

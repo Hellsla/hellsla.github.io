@@ -1,19 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: ee5dfc08e51a45b0
+CONTENT-HASH: d01b35fa24c40ba7
+Round: 2
 
 ## Blocking
 
 ## Polish
-- exercises/solutions.md:109 (L3-02 Järkevyys) — the sentence "Näin pienellä energiaerolla molekyyli ei voi absorboida näkyvää valoa tästä tilasta" reads as if one small gap rules out all visible absorption. Say instead that this vibrational transition matches infrared, not visible light, e.g. "tämä siirtymä vastaa infrapunaa eikä näkyvää valoa".
+- solutions.md:181 (L3-05 Kaava) — the new part d) uses $E_\text{fl} = E_\text{abs} - Q$ and $\lambda_\text{fl} = \tfrac{hc}{E_\text{fl}}$, but Kaava lists only $Q$ and $p$. — Add "ja kohdassa d) $\lambda_\text{fl} = \dfrac{hc}{E_\text{abs} - Q}$" to Kaava, so the unknown is solved symbolically before Sijoitus.
+- answers.py (L3-05) — part d) (477 nm) is not checked anywhere, because the answer box is b). — Optionally add a comment line `# d) hc/(hc/400 nm - 0,50 eV) = 476,9 nm -> 477 nm`.
 
 ## Checked
-- I recomputed all 12 answers with my own formulas in one script. Each agrees with answers.py and exercises.json to within 0,4 %: 2,4701 eV, 433,57 nm, 4,5701·10¹⁴ Hz, 1,89 eV, 655,60 nm, 486,27 nm, 670,27 nm, 121,57 nm, 2,1053 eV, 364,70 nm, 82,666 meV, 564,34 nm.
-- The only change since round 2 is the L2-01 reasonableness check, which now states hc ≈ 1240 eV·nm with units. It is correct.
-- L2-02: the pair differences are 1,85, 2,15 and 4,00 eV. The smallest gives the longest line, 670 nm (red); the others are 577 nm and 310 nm.
-- L2-03: 10,2 eV gives 122 nm, which is UV. The conclusion that cold H is transparent to visible light holds.
-- L3-01: the Balmer limit is 364,7 nm, below the 410 nm line and just under 380 nm.
-- L3-02: the CO₂ 15,0 µm band gives 82,7 meV. The ×30 estimate against 500 nm is a real check.
-- L3-03: the task states that no energy becomes heat. The 1,20 eV photon is IR (1033 nm), the second photon carries 2,197 eV, so 564 nm. Rounding to 0,01 eV in the subtraction keeps 3 significant figures.
-- The real lines are correct: He 502 nm (501,6), Na 5,09·10¹⁴ Hz, which is 589 nm, and H 656/486/434 nm.
-- Every solution is complete: given, asked, principle, symbolic formula, conversion by substitution, rounding reason and reasonableness check. Signs and units are right, and the tolerance of 0,02 fits the 3-significant-figure data.
-- Notation (E_y, E_a, ΔE, hc/λ) matches the brief. Scope stays inside FY8.
+- Round-1 blocker fixed: exercises.json L3-04 now says "Kuudes viiva syntyy alimmalta viritystilalta perustilaan". A brute-force search of all level triples (±0,02 eV) now gives only $E_1 ≈ 1{,}10$, $E_2 ≈ 2{,}40$, $E_3 ≈ 3{,}90\,\text{eV}$. In the mirror scheme (1,50/2,80/3,90) the line $E_1 \to 0$ = 1,50 eV would have been measured, as the new Järkevyys says. Unique, and the answer 1127 nm → 1130 nm is right.
+- L3-04 Sijoitus now covers a), b) and c), and assigns every line A–E to its transition correctly.
+- Round-1 polish applied: L1-06 says "viileämmän kaasun" in the answer, option, Periaate and Mallivastaus; L2-06 says "kalsium (kalsiumioni)".
+- L1-06 and L1-08 reordered: exactly one correct option in each, the answer string matches it, and every distractor is wrong with correct feedback.
+- L3-05 d) recomputed: hc/400 nm = 3,100 eV, minus 0,50 eV = 2,600 eV, giving 476,9 nm → 477 nm ✓.
+- L2-07 slope 12,01 nm/mm and max residual 0,76 nm (stated as 0,8 nm) ✓. L2-05 2,2698 eV ✓, L2-06 −0,8486 eV ✓, L3-05 B 22,1 % (A 18,9 %, C 15,1 %) ✓.
+- The Vastaus lines of L2-05, L2-06, L2-07 and L3-04 now answer every part; L1-07 now asks for the cause it requires.
+- Levels 8/7/5, no duplicates, the plan in docs/exercise-bank/FY8.md is followed, and the data are labelled esimerkkiaineisto.
+- The L3 captures at 1280 px were taken after the fix commit.
+- Hash d01b35fa24c40ba7 is the same at the start and the end.

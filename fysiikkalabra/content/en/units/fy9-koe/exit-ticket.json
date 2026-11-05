@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Why are intermediate results not rounded to the same precision as the final result?",
+    "a": "Every rounding shifts the result a little, and the shifts build up in the following steps. When the intermediate results are kept precise and only the final result is rounded, the last significant figure of the final result is reliable."
+  },
+  {
+    "q": "You made a graph with a graphing program and attached a screenshot to your answer. What must you still write as text?",
+    "a": "Which quantities are on the axes, which model was fitted to the points and why, what the coefficient of the fit means physically and what follows from it, for example $k = \\tfrac{\\Delta x}{\\Delta t}$ is the speed of the trolley. Finally the answer with its unit and the right precision."
+  }
+]

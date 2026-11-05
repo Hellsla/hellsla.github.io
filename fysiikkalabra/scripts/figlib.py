@@ -53,7 +53,7 @@ def translate(text, tex=True):
         if t.strip() not in UNITS and t not in TEXTS and re.search(r"[A-Za-zÄÖÅäöå]{2,}", t) and t not in MISSING: MISSING.append(t)
         return TEXTS.get(t, t)
     if not tex: return word(text)
-    text = re.sub(r"(\\(?:text|mathrm|textsf)\{)([^{}]*)\}", lambda m: m.group(1) + word(m.group(2)) + "}", text)
+    text = re.sub(r"(\\(?:text|mathrm|textsf|textbf)\{)([^{}]*)\}", lambda m: m.group(1) + word(m.group(2)) + "}", text)
     return text.replace("{,}", DECIMAL)
 
 

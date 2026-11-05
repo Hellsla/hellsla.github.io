@@ -1,0 +1,1459 @@
+{
+  "intro": "Harjoituskokeen osat II ja III. Valitse Osasta II neljä tehtävää ja Osasta III kaksi tehtävää. Ratkaise tehtävät ensin itse. Arvioi sitten vastauksesi mallivastauksen ja pisteytysohjeen avulla.",
+  "tasks": [
+    {
+      "id": "fy9-harjoituskoe-s1",
+      "title": "Osa II: Kiuas ja löyly",
+      "source": "example",
+      "source_note": "Luvut on valittu niin, että ne ovat todenmukaisia, mutta ne eivät ole mittaustuloksia.",
+      "text": "Kesämökin saunassa on sähkökiuas. Kiukaan teho on $6{,}0\\,\\text{kW}$. Kiukaassa on $25\\,\\text{kg}$ kiuaskiviä. Kivien ominaislämpökapasiteetti on $0{,}80\\,\\tfrac{\\text{kJ}}{\\text{kg} \\cdot \\text{K}}$. Kiuas on päällä $50\\,\\text{min}$ ennen saunomista. Sinä aikana kivien lämpötila nousee $15\\,{}^\\circ\\text{C}$:sta $280\\,{}^\\circ\\text{C}$:een.\n\nSaunomisen aikana kiukaalle heitetään vettä kymmenen kauhallista, ja vedestä syntyy löyly. Vettä on yhteensä $1{,}2\\,\\text{l}$, ja sen lämpötila on $18\\,{}^\\circ\\text{C}$. Vesi höyrystyy kokonaan kuumilla kivillä. Oletetaan, että höyryn lämpötila on syntyessään $100\\,{}^\\circ\\text{C}$. Oletetaan myös, että kaikki höyrystymiseen tarvittava energia tulee kivistä. Veden ominaislämpökapasiteetti on $4{,}19\\,\\tfrac{\\text{kJ}}{\\text{kg} \\cdot \\text{K}}$ ja ominaishöyrystymislämpö $2260\\,\\tfrac{\\text{kJ}}{\\text{kg}}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kuinka paljon energiaa kiviin varastoituu esilämmityksen aikana?",
+          "answer": {
+            "value": 5.3,
+            "unit": "MJ",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$Q = cm\\Delta T$; olomuoto ei muutu."
+            },
+            {
+              "key": "calculation",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$Q \\approx 5{,}3\\,\\text{MJ}$. Tuloksessa on kaksi merkitsevää numeroa, kuten ominaislämpökapasiteetissa."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kiuas käyttää sähköenergiaa esilämmityksen aikana. Kuinka suuri osa tästä sähköenergiasta on lopuksi kivissä?",
+          "answer": {
+            "value": 29.4,
+            "unit": "%",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$E = Pt$ ja osuus $\\tfrac{Q}{E}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$t = 50 \\cdot 60\\,\\text{s}$; $E = 18\\,\\text{MJ} = 5{,}0\\,\\text{kWh}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Osuus on noin $29\\,\\%$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 3,
+          "text": "Naapuri näkee b-kohdan tuloksen ja sanoo: ”Kiukaan hyötysuhde on siis vain noin $30\\,\\%$. Kiuas on huono laite.” Arvioi väitettä.",
+          "criteria": [
+            {
+              "text": "Sähkövastuksessa melkein kaikki sähköenergia muuttuu sisäenergiaksi. Kivien lisäksi lämpenevät ilma, lauteet ja seinät.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Hyötysuhde riippuu siitä, mikä lasketaan hyödyksi. Kun saunaa lämmitetään, myös ilman ja seinien lämpeneminen on hyötyä."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Väite ei pidä paikkaansa. $29\\,\\%$ on se osuus, joka varastoituu kiviin. Se ei ole kiukaan hyötysuhde. Hukkaan menee vain se energia, joka vuotaa ulos seinien ja ilmanvaihdon kautta."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kaikki kymmenen kauhallista vettä höyrystyvät. Kuinka paljon energiaa siirtyy silloin kivistä veteen?",
+          "answer": {
+            "value": 3.12,
+            "unit": "MJ",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Energiaa tarvitaan kahteen asiaan: vesi lämpenee $100\\,{}^\\circ\\text{C}$:een, ja sitten vesi höyrystyy: $Q = cm\\Delta T + rm$.",
+              "tag": "transfer",
+              "points": 2
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$1{,}2\\,\\text{l}$ vettä on $1{,}2\\,\\text{kg}$; $Q \\approx 3{,}1\\,\\text{MJ}$."
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "word",
+          "points": 3,
+          "text": "Kun löylyä on heitetty, iho tuntuu polttavan. Saunan ilman lämpötila ei kuitenkaan juuri nouse. Selitä ilmiö.",
+          "criteria": [
+            {
+              "text": "Höyry tiivistyy eli muuttuu takaisin vedeksi viileämmällä iholla. Ihon lämpötila on noin $35$–$40\\,{}^\\circ\\text{C}$.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Kun höyry tiivistyy, vapautuu yhtä paljon energiaa kuin höyrystymiseen tarvittiin. Tämä energia siirtyy ihoon.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Iho saa paljon energiaa lyhyessä ajassa, vaikka ilman lämpötila ei juuri muutu. Siksi iho tuntuu polttavan."
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy3-6",
+        "fy3-7",
+        "fy2-4",
+        "fy6-7"
+      ],
+      "links": {
+        "math": "fy3-6",
+        "concept": "fy3-7",
+        "transfer": "fy3-7",
+        "communication": "fy2-4"
+      }
+    },
+    {
+      "id": "fy9-harjoituskoe-s2",
+      "title": "Osa II: Laatikko peräkärryssä",
+      "source": "example",
+      "source_note": "Luvut on valittu niin, että ne ovat todenmukaisia, mutta ne eivät ole mittaustuloksia.",
+      "text": "Henkilöauto vetää peräkärryä maantiellä. Nopeus on $80\\,\\text{km/h}$. Peräkärryn lava on vaakasuora. Lavalla on puinen työkalulaatikko, jota ei ole sidottu kiinni. Laatikon ja lavan välinen lepokitkakerroin on $0{,}45$. Kuljettaja joutuu jarruttamaan. Hän jarruttaa tasaisesti, kunnes auto pysähtyy. Ilmanvastusta ei oteta huomioon laatikon liikkeessä.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 4,
+          "text": "Laatikko pysyy paikallaan lavan suhteen jarrutuksen aikana. Piirrä laatikon voimakuvio jarrutuksen aikana. Nimeä voimat. Perustele, miksi voimat osoittavat näihin suuntiin.",
+          "criteria": [
+            {
+              "key": "fbd_object",
+              "points": 1,
+              "detail": "Kappale on laatikko. Voimat piirretään laatikkoon."
+            },
+            {
+              "key": "fbd_forces",
+              "points": 1,
+              "detail": "Paino $\\overline{G}$, tukivoima $\\overline{N}$ ja lepokitka $\\overline{F}_{\\mu 0}$. Eteenpäin ei ole ”liikkeen voimaa”."
+            },
+            {
+              "key": "fbd_directions",
+              "points": 1,
+              "detail": "Lepokitka osoittaa taaksepäin, koska laatikko hidastuu yhdessä kärryn kanssa."
+            },
+            {
+              "key": "fbd_representation",
+              "points": 1,
+              "detail": "Paino ja tukivoima ovat yhtä pitkät. Kiihtyvyys taaksepäin on merkitty erikseen."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Hidastuvuus kertoo, kuinka nopeasti nopeus pienenee. Kuinka suuri kärryn hidastuvuus saa enintään olla, jotta laatikko ei ala liukua lavalla?",
+          "answer": {
+            "value": 4.41,
+            "unit": "m/s²",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 2,
+              "detail": "$F_{\\mu 0} = ma$ ja $F_{\\mu 0} \\le \\mu_0 N = \\mu_0 mg$, joten $a_\\text{max} = \\mu_0 g$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$a_\\text{max} \\approx 4{,}4\\,\\text{m/s}^2$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Laatikon täytyy pysyä paikallaan koko jarrutuksen ajan. Kuinka pitkä jarrutusmatkan täytyy silloin vähintään olla?",
+          "answer": {
+            "value": 55.9,
+            "unit": "m",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Tasaisesti hidastuva liike: $v_0^2 = 2as$, joten $s = \\dfrac{v_0^2}{2a}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$80\\,\\text{km/h} = \\tfrac{80}{3{,}6}\\,\\text{m/s} = 22{,}2\\,\\text{m/s}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Noin $56\\,\\text{m}$. Kuivalla asfaltilla auto voisi pysähtyä selvästi lyhyemmällä matkalla."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 4,
+          "text": "Kuljettaja ehdottaa, että laatikkoon laitetaan lisää työkaluja. Silloin laatikko olisi raskaampi ja pysyisi paremmin paikallaan. Arvioi ehdotusta fysiikan avulla.",
+          "criteria": [
+            {
+              "text": "Suurin lepokitka $\\mu_0 mg$ kasvaa, kun massa kasvaa. Myös voima $ma$, joka tarvitaan laatikon hidastamiseen, kasvaa samassa suhteessa.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Massa supistuu eli häviää yhtälöstä: $a_\\text{max} = \\mu_0 g$ ei riipu massasta. Siksi lisäpaino ei auta."
+            },
+            {
+              "text": "Ehdottaa keinon, joka toimii: laatikko sidotaan kiinni, tai lavalle laitetaan liukueste, joka suurentaa kitkakerrointa.",
+              "tag": "transfer",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy4-5",
+        "fy4-6",
+        "fy4-2",
+        "fy4-4"
+      ],
+      "links": {
+        "concept": "fy4-5",
+        "communication": "fy4-5",
+        "math": "fy4-2",
+        "transfer": "fy4-6"
+      }
+    },
+    {
+      "id": "fy9-harjoituskoe-s3",
+      "title": "Osa II: Urut kylmässä kirkossa",
+      "source": "example",
+      "source_note": "Äänen nopeudet ovat taulukkoarvoja kuivalle ilmalle. Muut luvut on valittu niin, että ne ovat todenmukaisia.",
+      "text": "Kirkon urkujen yksi pilli on metalliputki. Putken molemmat päät ovat avoimet. Pillin soiva pituus on $1{,}31\\,\\text{m}$. Talvella kirkkoa lämmitetään vain tilaisuuksien ajaksi. Arkisin sisälämpötila on $8\\,{}^\\circ\\text{C}$. Urkuri huomaa, että silloin urut soivat matalammalta kuin lämpimässä kirkossa.\n\n| Ilman lämpötila | Äänen nopeus ilmassa |\n|---|---|\n| $0\\,{}^\\circ\\text{C}$ | $331{,}3\\,\\text{m/s}$ |\n| $8\\,{}^\\circ\\text{C}$ | $336{,}1\\,\\text{m/s}$ |\n| $20\\,{}^\\circ\\text{C}$ | $343{,}2\\,\\text{m/s}$ |\n\nPillin metallin pituuden lämpötilakerroin on $2{,}3 \\cdot 10^{-5}\\,\\tfrac{1}{\\text{K}}$. Pillin päät vaikuttavat vähän seisovan aallon pituuteen, mutta tätä ei oteta huomioon.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kirkon ilman lämpötila on $20\\,{}^\\circ\\text{C}$. Mikä on silloin pillin perustaajuus eli matalin taajuus?",
+          "answer": {
+            "value": 131.0,
+            "unit": "Hz",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Avoimen putken molemmissa päissä on kupu. Siksi perusvärähtelyssä pillin pituus on puolet aallonpituudesta.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$f_1 = \\dfrac{v}{2L}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$f_1 \\approx 131\\,\\text{Hz}$."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Mikä on perustaajuus, kun kirkon lämpötila on $8\\,{}^\\circ\\text{C}$? Kuinka monta prosenttia perustaajuus on muuttunut?",
+          "answer": {
+            "value": 128.3,
+            "unit": "Hz",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Pillin pituus pysyy (lähes) samana. Siksi taajuus muuttuu samassa suhteessa kuin äänen nopeus.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "$f_1 \\approx 128\\,\\text{Hz}$; muutos on noin $-2{,}1\\,\\%$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kirkko jäähtyy $20\\,{}^\\circ\\text{C}$:sta $8\\,{}^\\circ\\text{C}$:een. Kuinka paljon pillin pituus muuttuu? Tämäkin muutos vaikuttaa taajuuteen. Vertaa sen vaikutusta b-kohdan muutokseen.",
+          "answer": {
+            "value": 0.36,
+            "unit": "mm",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\Delta L = \\alpha L_0 \\Delta T$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$|\\Delta L| \\approx 0{,}36\\,\\text{mm}$, suhteellisesti $0{,}028\\,\\%$."
+            },
+            {
+              "text": "Lyhenevä pilli nostaisi taajuutta vain noin $0{,}03\\,\\%$. Ilman jäähtyminen laskee taajuutta noin $2\\,\\%$.",
+              "tag": "communication",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Urut soivat matalammalta ilman takia. Syy ei ole se, että metalli kutistuu."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 4,
+          "text": "Urkujen rakentaja sulkee toisen samanpituisen pillin yläpään tulpalla. Miten tulpatun pillin sävel eroaa avoimen pillin sävelestä? Perustele seisovan aallon avulla.",
+          "criteria": [
+            {
+              "text": "Suljetussa päässä on solmu ja avoimessa päässä kupu. Siksi perusvärähtelyssä pituus on neljäsosa aallonpituudesta.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$f_1 = \\dfrac{v}{4L} \\approx 65{,}5\\,\\text{Hz}$. Se on puolet avoimen pillin taajuudesta, joten sävel on oktaavin matalampi."
+            },
+            {
+              "text": "Tulpatussa pillissä syntyvät vain perustaajuuden parittomat kerrannaiset $3f_1, 5f_1, \\ldots$",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Siksi myös sointiväri eli äänen laatu on erilainen kuin avoimessa pillissä."
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy5-13",
+        "fy5-14",
+        "fy3-8"
+      ],
+      "links": {
+        "concept": "fy5-13",
+        "math": "fy3-8",
+        "transfer": "fy5-14",
+        "communication": "fy3-8"
+      }
+    },
+    {
+      "id": "fy9-harjoituskoe-s4",
+      "title": "Osa II: Jatkojohto kelalla",
+      "source": "example",
+      "source_note": "Luvut on valittu niin, että ne ovat todenmukaisia, mutta ne eivät ole mittaustuloksia.",
+      "text": "Kesäjuhlissa pihan grillikatokseen viedään sähköt jatkojohdolla. Johto on $25{,}0\\,\\text{m}$ pitkä. Johdon johtimet ovat kuparia, ja niiden poikkipinta-ala on $1{,}5\\,\\text{mm}^2$. Virta kulkee laitteelle yhtä johdinta pitkin ja palaa toista johdinta pitkin. Johtoon kytketään sähkögrilli ($1{,}6\\,\\text{kW}$) ja vedenkeitin ($1{,}8\\,\\text{kW}$). Laitteiden tehot on ilmoitettu jännitteellä $230\\,\\text{V}$. Pistorasian jännite on $230\\,\\text{V}$.\n\nKuparin resistiivisyys on $1{,}68 \\cdot 10^{-8}\\,\\Omega \\cdot \\text{m}$. Laske verkkojännitteen ja virran tehollisarvoilla samalla tavalla kuin tasavirralla. Oleta, että laitteiden resistanssit eivät muutu.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kuinka suuri on jatkojohdon resistanssi?",
+          "answer": {
+            "value": 0.56,
+            "unit": "Ω",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Virta kulkee kahden johtimen kautta. Siksi johtimen kokonaispituus on $50{,}0\\,\\text{m}$.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$R = \\rho \\dfrac{l}{A}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$1{,}5\\,\\text{mm}^2 = 1{,}5 \\cdot 10^{-6}\\,\\text{m}^2$; $R \\approx 0{,}56\\,\\Omega$."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kuinka suuri virta johdossa kulkee, kun molemmat laitteet ovat päällä?",
+          "answer": {
+            "value": 14.27,
+            "unit": "A",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Laitteiden resistanssit $R = \\tfrac{U^2}{P}$. Laitteet ovat rinnankytkennässä, ja johdon resistanssi on niiden kanssa sarjassa."
+            },
+            {
+              "key": "calculation",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$I \\approx 14\\,\\text{A}$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kuinka suuri teho muuttuu jatkojohdossa lämmöksi?",
+          "answer": {
+            "value": 114.0,
+            "unit": "W",
+            "tolerance": 0.08
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$P = RI^2$"
+            },
+            {
+              "key": "calculation",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$P \\approx 110\\,\\text{W}$."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 3,
+          "text": "Oletetaan, että jatkojohdon johtimien poikkipinta-ala on $2{,}5\\,\\text{mm}^2$. Kuinka suuri teho muuttuisi silloin lämmöksi?",
+          "answer": {
+            "value": 70.4,
+            "unit": "W",
+            "tolerance": 0.08
+          },
+          "criteria": [
+            {
+              "text": "Resistanssi on kääntäen verrannollinen poikkipinta-alaan: kun pinta-ala kasvaa, resistanssi pienenee. $R \\approx 0{,}34\\,\\Omega$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$P \\approx 70\\,\\text{W}$."
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "word",
+          "points": 3,
+          "text": "Jatkojohtoa ei kelattu auki kelalta. Juhlien aikana kela lämpeni selvästi. Selitä, miksi kelalla oleva johto lämpenee enemmän kuin auki levitetty johto. Selitä myös, miksi se on vaarallista.",
+          "criteria": [
+            {
+              "text": "Lämpöteho on sama. Kelalla johdon kierrokset kuitenkin lämmittävät toisiaan, eikä lämpö pääse siirtymään ympäristöön.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Lämpötila nousee, kunnes johdosta siirtyy pois yhtä paljon lämpöä kuin siinä syntyy. Kuparin resistanssi kasvaa, kun kupari lämpenee.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Eristys voi sulaa. Silloin voi syntyä oikosulku tai tulipalo. Siksi kela kelataan auki ennen kuin johtoon kytketään suuri kuorma."
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy6-3",
+        "fy6-4",
+        "fy6-6",
+        "fy6-15"
+      ],
+      "links": {
+        "transfer": "fy6-3",
+        "math": "fy6-6",
+        "concept": "fy6-15",
+        "communication": "fy6-15"
+      }
+    },
+    {
+      "id": "fy9-harjoituskoe-s5",
+      "title": "Osa II: Valo uima-altaan pohjassa",
+      "source": "example",
+      "source_note": "Luvut on valittu niin, että ne ovat todenmukaisia, mutta ne eivät ole mittaustuloksia.",
+      "text": "Uimahallin hyppyaltaan pohjassa on valaisin. Valaisimessa on pyöreä lasi-ikkuna, jonka halkaisija on $25{,}0\\,\\text{cm}$. Ikkunan keskikohta on $2{,}40\\,\\text{m}$:n syvyydellä. Valaisimen sisällä on ilmaa, jonka paine on normaali ilmanpaine. Illalla hallin valot sammutetaan. Silloin vedenpinnalla näkyy valaisimen yläpuolella kirkas pyöreä alue. Alueen ulkopuolella pinta on tumma. Veden taitekerroin on $1{,}33$ ja tiheys $1000\\,\\tfrac{\\text{kg}}{\\text{m}^3}$. Veden pinta on tyyni eli se ei liiku.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "Mikä on veden ja ilman rajapinnan rajakulma?",
+          "answer": {
+            "value": 48.75,
+            "unit": "°",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$n_1 \\sin\\alpha_\\text{r} = n_2 \\sin 90^\\circ$, joten $\\sin\\alpha_\\text{r} = \\tfrac{n_2}{n_1}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\alpha_\\text{r} \\approx 48{,}8^\\circ$."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka suuri on vedenpinnan kirkkaan alueen säde? Ajattele, että valaisin on yksi piste.",
+          "answer": {
+            "value": 2.74,
+            "unit": "m",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Kirkkaan alueen reunalla säde osuu pintaan rajakulmassa. Säteet, jotka osuvat pintaan tätä loivemmin, heijastuvat kokonaan.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$r = h \\tan\\alpha_\\text{r}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$r \\approx 2{,}74\\,\\text{m}$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 3,
+          "text": "Sukeltaja on altaan pohjalla valaisimen vieressä. Hän katsoo vedenpintaa kirkkaan alueen ulkopuolella. Mitä hän näkee? Miksi?",
+          "criteria": [
+            {
+              "text": "Kun valo osuu pintaan rajakulmaa suuremmassa tulokulmassa, valo heijastuu kokonaan takaisin veteen. Tätä kutsutaan kokonaisheijastukseksi.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Pinta näyttää peililtä. Sukeltaja näkee siinä altaan pohjan ja seinät. Hän ei näe hallin kattoa."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 3,
+          "text": "Altaan vesi ja ilmanpaine painavat ikkunaa yhdessä ulkopuolelta. Valaisimen sisällä oleva ilma painaa ikkunaa sisäpuolelta. Kuinka paljon suurempi on ulkopuolen voima?",
+          "answer": {
+            "value": 1156.0,
+            "unit": "N",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Ilmanpaine vaikuttaa ikkunan molemmilla puolilla. Siksi nettovoima eli voimien erotus tulee hydrostaattisesta paineesta: $F = \\rho g h A$."
+            },
+            {
+              "key": "calculation",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$A = \\pi\\left(\\tfrac{d}{2}\\right)^2$; $F \\approx 1{,}16\\,\\text{kN}$."
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "word",
+          "points": 2,
+          "text": "Kun valaisinta katsotaan altaan reunalta, se näyttää olevan lähempänä pintaa kuin $2{,}40\\,\\text{m}$:n syvyydessä. Selitä, miksi.",
+          "criteria": [
+            {
+              "text": "Valaisimesta tulevat säteet taittuvat, kun ne siirtyvät vedestä ilmaan. Ne taittuvat poispäin pinnan normaalista.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Silmä jatkaa taittuneita säteitä suoraan taaksepäin. Siksi säteet näyttävät tulevan matalammalta."
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy7-10",
+        "fy7-12",
+        "fy3-4"
+      ],
+      "links": {
+        "math": "fy7-12",
+        "concept": "fy7-12",
+        "communication": "fy7-10"
+      }
+    },
+    {
+      "id": "fy9-harjoituskoe-s6",
+      "title": "Osa II: Järven pohjasta nostettu ruuhi",
+      "source": "example",
+      "source_note": "Elävän puun hiili-14-aktiivisuus ja puoliintumisaika ovat kirjallisuusarvoja. Ruuhen mittaus on keksitty.",
+      "text": "Sukeltajat löysivät järven pohjasta puisen ruuhen eli veneen. Ruuhi on koverrettu yhdestä puunrungosta. Ruuhesta otettiin näyte. Näytteen hiili-14:n aktiivisuudeksi mitattiin $0{,}198\\,\\tfrac{\\text{Bq}}{\\text{g}}$. Se tarkoittaa, että yhdessä grammassa hiiltä tapahtuu $0{,}198$ hajoamista sekunnissa. Mittauksen epävarmuus on $\\pm 0{,}004\\,\\tfrac{\\text{Bq}}{\\text{g}}$.\n\nElävässä puussa hiili-14:n aktiivisuus on $0{,}226\\,\\tfrac{\\text{Bq}}{\\text{g}}$, koska puu ottaa ilmasta koko ajan uutta hiilidioksidia. Kun puu kaadetaan, uutta hiili-14:ää ei enää tule. Hiili-14:n puoliintumisaika on $5730$ vuotta.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 3,
+          "text": "Hiili-14 hajoaa beetahajoamisella. Kirjoita hajoamisen reaktioyhtälö. Kerro, mitä ytimessä tapahtuu.",
+          "criteria": [
+            {
+              "text": "$^{14}_{6}\\text{C} \\to {}^{14}_{7}\\text{N} + {}^{\\phantom{-}0}_{-1}\\text{e} + \\overline{\\nu}_\\text{e}$; tytärydin eli uusi ydin on typpi.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Massaluku ja varausluku säilyvät eli pysyvät samoina: $14 = 14 + 0$ ja $6 = 7 - 1$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "text": "Ytimessä neutroni muuttuu protoniksi. Ydin lähettää elektronin ja antineutriinon.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka vanha ruuhi on?",
+          "answer": {
+            "value": 1093.0,
+            "unit": "a",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$A = A_0 \\left(\\tfrac{1}{2}\\right)^{t/T_{1/2}}$"
+            },
+            {
+              "text": "Ratkaisee ajan logaritmin avulla: $t = T_{1/2} \\cdot \\dfrac{\\ln(A_0 / A)}{\\ln 2}$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$t \\approx 1{,}09 \\cdot 10^3$ vuotta."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Aktiivisuuden mittauksessa on epävarmuutta. Arvioi, kuinka suuri epävarmuus siitä tulee ruuhen ikään.",
+          "answer": {
+            "value": 167.0,
+            "unit": "a",
+            "tolerance": 0.06
+          },
+          "criteria": [
+            {
+              "key": "uncertainty",
+              "points": 2,
+              "detail": "Ikä lasketaan ääriarvoilla eli pienimmällä ja suurimmalla arvolla $0{,}194$ ja $0{,}202\\,\\tfrac{\\text{Bq}}{\\text{g}}$: noin $930$ ja $1260$ vuotta."
+            },
+            {
+              "key": "calculation",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Ikä on $(1{,}09 \\pm 0{,}17) \\cdot 10^3$ vuotta. Epävarmuudessa on yksi tai kaksi merkitsevää numeroa."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 4,
+          "text": "Museon tutkija sanoo, että samalla menetelmällä ei voi ajoittaa $200\\,000$ vuotta vanhaa puuta. Hänen mukaansa sillä ei voi ajoittaa myöskään puuta, joka kaadettiin kymmenen vuotta sitten. Perustele, miksi.",
+          "criteria": [
+            {
+              "text": "$200\\,000$ vuodessa kuluu noin $35$ puoliintumisaikaa. Alkuperäisistä ytimistä on jäljellä vain noin $3 \\cdot 10^{-11}$. Aktiivisuutta ei voi erottaa taustasäteilystä.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "text": "Kymmenessä vuodessa aktiivisuus pienenee vain noin $0{,}1\\,\\%$. Se on paljon vähemmän kuin mittauksen epävarmuus $2\\,\\%$.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Menetelmä toimii, kun ikä on muutamasta sadasta vuodesta muutamaan kymmeneen tuhanteen vuoteen."
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy8-8",
+        "fy8-9",
+        "fy1-3"
+      ],
+      "links": {
+        "concept": "fy8-8",
+        "math": "fy8-9",
+        "experiment": "fy1-3",
+        "communication": "fy8-9"
+      }
+    },
+    {
+      "id": "fy9-harjoituskoe-s7",
+      "title": "Osa II: Squashpallon lämpötila",
+      "source": "example",
+      "source_note": "Luvut on valittu niin, että ne ovat todenmukaisia, mutta ne eivät ole mittaustuloksia.",
+      "text": "Squashin pelaajat lyövät palloa ennen ottelua, jotta pallo lämpenee. Kylmä pallo pomppaa huonosti. Opiskelija haluaa tutkia kokeen avulla, miten pallon lämpötila vaikuttaa siihen, kuinka korkealle pallo pomppaa. Hänellä on nämä välineet: squashpallo, vesihaude (vesiastia, jonka lämpötilaa voi säätää), pakastin, infrapunalämpömittari, mittanauha, puhelimen kamera, jalusta ja paperipyyhkeitä.\n\nEsikokeessa eli ensimmäisessä kokeilussa pallo oli huoneenlämpöinen. Se pudotettiin levosta $1{,}50\\,\\text{m}$:n korkeudelta betonilattialle. Pallo pomppasi $0{,}36\\,\\text{m}$:n korkeudelle. Korkeudet mitattiin pallon alareunasta.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 6,
+          "text": "Suunnittele koe. Kerro nämä asiat: tutkimuskysymys, muuttujat ja suureet, jotka pidetään vakioina eli samoina. Kerro myös, miten asetat ja mittaat pallon lämpötilan, miten mittaat pomppukorkeuden ja miten käsittelet tulokset.",
+          "criteria": [
+            {
+              "text": "Tutkimuskysymys ja muuttujat: lämpötila on riippumaton muuttuja, ja pomppukorkeus (tai suhde $\\tfrac{h_2}{h_1}$) on riippuva muuttuja.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "Vakioina pidetään pudotuskorkeus, sama pallo ja sama alusta. Pallo pudotetaan aina levosta.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "Lämpötila asetetaan vesihauteessa tai pakastimessa. Pallo kuivataan. Pallon pinnan lämpötila mitataan juuri ennen pudotusta, koska pallo jäähtyy tai lämpenee nopeasti.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "Pomppukorkeus luetaan videolta mittanauhaa vasten. Kamera on pomppukorkeuden tasolla.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "Ainakin viisi lämpötilaa laajalta väliltä, esimerkiksi $0$–$50\\,{}^\\circ\\text{C}$. Jokainen mittaus toistetaan.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Tulokset esitetään kuvaajana: pomppukorkeus lämpötilan funktiona. Johtopäätös tehdään kuvaajan muodosta."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Esikokeen pompussa osa pallon mekaanisesta energiasta muuttuu muiksi energiamuodoiksi. Kuinka monta prosenttia?",
+          "answer": {
+            "value": 76.0,
+            "unit": "%",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Ylimmissä kohdissa pallo on hetken levossa: $E = mgh$. Siksi osuus on $1 - \\tfrac{h_2}{h_1}$; massa supistuu."
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Ilmanvastus on pieni, koska matka on lyhyt."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Noin $76\\,\\%$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kuinka suuri on pallon nopeus heti pompun jälkeen esikokeessa?",
+          "answer": {
+            "value": 2.66,
+            "unit": "m/s",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\tfrac{1}{2}mv^2 = mgh_2$, joten $v = \\sqrt{2gh_2}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v \\approx 2{,}7\\,\\text{m/s}$. Tuloksessa on kaksi merkitsevää numeroa."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Video kuvataan nopeudella $30$ kuvaa sekunnissa. Arvioi, kuinka tarkasti pomppukorkeuden voi lukea videolta. Kerro kaksi keinoa, joilla mittausta voi parantaa.",
+          "criteria": [
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Lakipisteessä pallo liikkuu hitaasti. Kuvien välillä pallo liikkuu vain muutaman millimetrin. Siksi huipun voi löytää noin $1\\,\\text{cm}$:n tarkkuudella."
+            },
+            {
+              "key": "error_sources",
+              "points": 1,
+              "detail": "Parallaksivirhe: jos kamera ei ole huipun tasolla, lukema on väärä."
+            },
+            {
+              "text": "Parannukset: kamera huipun korkeudelle ja kauemmas, mittanauha pallon taakse, monta toistoa ja niiden keskiarvo.",
+              "tag": "experiment",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy1-8",
+        "fy4-8",
+        "fy1-3"
+      ],
+      "links": {
+        "experiment": "fy1-8",
+        "communication": "fy1-8",
+        "math": "fy4-8",
+        "transfer": "fy4-8"
+      }
+    },
+    {
+      "id": "fy9-harjoituskoe-s8",
+      "title": "Osa III: Putoavat kahvinsuodattimet",
+      "source": "example",
+      "source_note": "Aineistossa on vaihtelua samalla tavalla kuin mittauksissa, mutta se ei ole mittaus.",
+      "text": "Ryhmä tutki, miten ilmanvastus riippuu nopeudesta. He pinosivat kahvinsuodatinpusseja sisäkkäin. Pino pudotettiin levosta $2{,}5\\,\\text{m}$:n korkeudelta, ja putoaminen kuvattiin videolle. Videoanalyysin mukaan pino saavutti vakionopeuden eli tasaisen nopeuden ennen viimeistä metriä. Vakionopeus määritettiin viimeisen metrin aikana. Yhden suodatinpussin massa on $1{,}20\\,\\text{g}$. Pinon muoto ei muutu, kun pusseja lisätään.\n\n| Pusseja pinossa $N$ | Vakionopeus $v\\ (\\text{m/s})$ |\n|---|---|\n| $1$ | $1{,}06$ |\n| $2$ | $1{,}45$ |\n| $3$ | $1{,}84$ |\n| $4$ | $2{,}08$ |\n| $5$ | $2{,}39$ |\n| $6$ | $2{,}54$ |\n\nRyhmässä esitettiin kaksi mallia. Aino: ”Ilmanvastus on suoraan verrannollinen nopeuteen.” Eetu: ”Ilmanvastus on suoraan verrannollinen nopeuden neliöön.”",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 4,
+          "text": "Selitä voimakuvion avulla, miksi suodatinpino putoaa lopulta vakionopeudella.",
+          "criteria": [
+            {
+              "key": "fbd_forces",
+              "points": 1,
+              "detail": "Pinoon vaikuttavat paino $\\overline{G}$ alaspäin ja ilmanvastus $\\overline{F}_\\text{v}$ ylöspäin."
+            },
+            {
+              "text": "Aluksi nopeus ja ilmanvastus ovat pieniä. Siksi kokonaisvoima ja kiihtyvyys osoittavat alaspäin, ja nopeus kasvaa.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Ilmanvastus kasvaa, kun nopeus kasvaa. Lopulta ilmanvastus on yhtä suuri kuin paino.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Silloin kokonaisvoima on nolla, kiihtyvyys on nolla ja nopeus pysyy samana (Newtonin I laki)."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 2,
+          "text": "Neljän pussin pino putoaa vakionopeudella. Kuinka suuri on silloin ilmanvastus?",
+          "answer": {
+            "value": 47.1,
+            "unit": "mN",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Vakionopeudella $F_\\text{v} = G = Nmg$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$F_\\text{v} \\approx 47{,}1\\,\\text{mN}$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "graph",
+          "points": 7,
+          "text": "Tee aineistosta kuvaaja. Päättele kuvaajan avulla, kumpi malli kuvaa mittauksia paremmin. Perustele valintasi.",
+          "criteria": [
+            {
+              "text": "Laskee jokaiselle pinolle ilmanvastuksen $F_\\text{v} = Nmg$ ja nopeuden neliön $v^2$.",
+              "tag": "graph",
+              "points": 1
+            },
+            {
+              "key": "graph_axes",
+              "points": 1,
+              "detail": "Pystyakselilla on $F_\\text{v}$ ja vaaka-akselilla $v^2$ (tai $v$). Akseleilla on yksiköt."
+            },
+            {
+              "key": "graph_points",
+              "points": 1
+            },
+            {
+              "key": "graph_fit",
+              "points": 1,
+              "detail": "Suora kulkee origon kautta, koska ilmanvastus on nolla, kun pino on levossa."
+            },
+            {
+              "text": "Vertaa malleja: $(v, F_\\text{v})$-pisteet kaartuvat ylöspäin. Niihin sovitettu suora leikkaa nopeusakselin noin kohdassa $0{,}8\\,\\text{m/s}$. $(v^2, F_\\text{v})$-pisteet ovat suoralla, joka kulkee origon kautta.",
+              "tag": "graph",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Eetun malli kuvaa mittauksia paremmin."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 4,
+          "text": "Määritä c-kohdan kuvaajasta valitsemasi mallin verrannollisuuskerroin $k$.",
+          "answer": {
+            "value": 0.0107,
+            "unit": "kg/m",
+            "tolerance": 0.04
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 2,
+              "detail": "Kulmakerroin luetaan suoralta kahdesta pisteestä, jotka ovat kaukana toisistaan."
+            },
+            {
+              "key": "calculation",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$k \\approx 0{,}0107\\,\\tfrac{\\text{kg}}{\\text{m}}$ eli $\\tfrac{\\text{N} \\cdot \\text{s}^2}{\\text{m}^2}$."
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "calc",
+          "points": 3,
+          "text": "Pinossa on kymmenen pussia. Ennusta pinon vakionopeus. Arvioi, kuinka luotettava ennuste on, kun koe tehdään samalla tavalla.",
+          "answer": {
+            "value": 3.32,
+            "unit": "m/s",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$v = \\sqrt{\\tfrac{10mg}{k}} \\approx 3{,}3\\,\\text{m/s}$."
+            },
+            {
+              "text": "Ennuste on ekstrapolaatio eli se ulottuu mitatun alueen ($v \\le 2{,}54\\,\\text{m/s}$) ulkopuolelle.",
+              "tag": "graph",
+              "points": 1
+            },
+            {
+              "text": "Raskaampi pino tarvitsee pidemmän matkan, ennen kuin se saavuttaa rajanopeuden. Siksi $2{,}5\\,\\text{m}$:n pudotus ei ehkä riitä.",
+              "tag": "experiment",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy4-14",
+        "fy4-5",
+        "fy1-4"
+      ],
+      "links": {
+        "concept": "fy4-14",
+        "graph": "fy1-4",
+        "math": "fy4-14",
+        "experiment": "fy1-4",
+        "communication": "fy4-5"
+      }
+    },
+    {
+      "id": "fy9-harjoituskoe-s9",
+      "title": "Osa III: Syvälämpökaivo",
+      "source": "example",
+      "source_note": "Tiedote, yhtiö ja mittaukset on keksitty. Kallioperän lämpötila nousee syvyyden mukana suunnilleen yhtä paljon kuin Suomessa yleensä.",
+      "text": "Kaupungin energiayhtiö suunnittelee syvälämpölaitosta. Tässä on ote yhtiön tiedotteesta:\n\n> Maapallon sisällä on valtava lämpövarasto. Kallioperän lämpö on peräisin suurelta osin kallion uraanin, toriumin ja kalium-40:n radioaktiivisista hajoamisista. Porattavan kaivoparin syvyys on $6{,}0$ kilometriä, ja kaivon pohjalla kallion lämpötila on yli $120\\,{}^\\circ\\text{C}$. Toiseen kaivoon pumpataan vettä, joka lämpenee kalliossa ja nousee toista kaivoa pitkin ylös. Laitos tuottaa kaukolämpöverkkoon $10\\,\\text{MW}$ lämpötehoa.\n\nYhtiön koekaivosta mitattiin kallion lämpötila eri syvyyksillä:\n\n| Syvyys $z\\ (\\text{km})$ | Lämpötila $T\\ ({}^\\circ\\text{C})$ |\n|---|---|\n| $0{,}5$ | $15{,}4$ |\n| $1{,}0$ | $23{,}3$ |\n| $1{,}5$ | $32{,}5$ |\n| $2{,}0$ | $41{,}3$ |\n| $2{,}5$ | $49{,}2$ |\n| $3{,}0$ | $58{,}0$ |\n\nSuunnitelman mukaan kaivoon pumpataan $30{,}0\\,\\text{kg}$ vettä sekunnissa. Vesi palaa kaukolämpöverkosta, ja sen lämpötila on silloin $40\\,{}^\\circ\\text{C}$. Vesi nousee toisesta kaivosta, ja sen lämpötila on silloin $90\\,{}^\\circ\\text{C}$. Kaivossa paine on suuri, ja siksi vesi pysyy nesteenä.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 6,
+          "text": "Esitä mittaukset kuvaajana. Sovita mittauksiin malli.",
+          "criteria": [
+            {
+              "key": "graph_axes",
+              "points": 1,
+              "detail": "Vaaka-akselilla on syvyys $z$ (km) ja pystyakselilla lämpötila $T$ (°C)."
+            },
+            {
+              "key": "graph_points",
+              "points": 1
+            },
+            {
+              "key": "graph_fit",
+              "points": 2,
+              "detail": "Pisteet ovat lähes suoralla. Sovitettu suora ei kulje origon kautta, koska maanpinnan lämpötila ei ole nolla."
+            },
+            {
+              "text": "Suoraa on jatkettu kuvaajassa katkoviivalla syvyyteen $6{,}0\\,\\text{km}$. Jatkoon on merkitty, että se on ekstrapolaatio.",
+              "tag": "graph",
+              "points": 1
+            },
+            {
+              "text": "Kerrotaan sovitteen yhtälö ja sen vakioiden merkitys (maanpinnan lämpötila on noin $7\\,{}^\\circ\\text{C}$).",
+              "tag": "communication",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Määritä, kuinka monta astetta kallion lämpötila nousee yhtä kilometriä kohti.",
+          "answer": {
+            "value": 17.1,
+            "unit": "°C/km",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 2,
+              "detail": "Kulmakerroin luetaan sovitetulta suoralta kahdesta pisteestä, jotka ovat kaukana toisistaan."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Noin $17{,}1\\,\\tfrac{{}^\\circ\\text{C}}{\\text{km}}$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "Arvioi mallin avulla kallion lämpötila $6{,}0\\,\\text{km}$:n syvyydessä.",
+          "answer": {
+            "value": 109.4,
+            "unit": "°C",
+            "tolerance": 0.04
+          },
+          "criteria": [
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$T = 6{,}7\\,{}^\\circ\\text{C} + 17{,}1\\,\\tfrac{{}^\\circ\\text{C}}{\\text{km}} \\cdot 6{,}0\\,\\text{km}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Noin $110\\,{}^\\circ\\text{C}$."
+            },
+            {
+              "text": "Toteaa, että arviossa oletetaan: lämpötila nousee samaa tahtia myös välillä $3$–$6\\,\\text{km}$, jota ei ole mitattu.",
+              "tag": "graph",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 3,
+          "text": "Vesivirta on suunnitelman mukainen. Kuinka suuren lämpötehon laitos antaa silloin kaukolämpöverkkoon?",
+          "answer": {
+            "value": 6.29,
+            "unit": "MW",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Joka sekunti $30{,}0\\,\\text{kg}$ vettä lämpenee $50\\,\\text{K}$. Siksi teho on $P = \\tfrac{Q}{t} = c \\cdot \\tfrac{m}{t} \\cdot \\Delta T$.",
+              "tag": "transfer",
+              "points": 2
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$P \\approx 6{,}29\\,\\text{MW}$."
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "word",
+          "points": 3,
+          "text": "Tiedotteessa on väitteitä kaivon pohjan lämpötilasta ja laitoksen lämpötehosta. Arvioi väitteitä mittausten ja omien laskujesi perusteella.",
+          "criteria": [
+            {
+              "text": "Lämpötila: mallin mukaan noin $110\\,{}^\\circ\\text{C}$. Väite ”yli $120\\,{}^\\circ\\text{C}$” vaatisi, että lämpötila nousee syvemmällä nopeammin kuin koekaivossa.",
+              "tag": "communication",
+              "points": 1
+            },
+            {
+              "text": "Teho: jos lämpötila nousee yhtä paljon, $10\\,\\text{MW}$ vaatisi noin $48\\,\\text{kg/s}$:n vesivirran tai suuremman lämpötilaeron.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Kumpikaan väite ei seuraa annetuista tiedoista. Väitteet ovat liian optimistisia, jos syvemmältä ei ole muuta tietoa."
+            }
+          ]
+        },
+        {
+          "id": "f",
+          "kind": "word",
+          "points": 2,
+          "text": "Tiedotteen mukaan kallioperän lämpö tulee radioaktiivisista hajoamisista. Selitä, miten hajoaminen lämmittää kalliota.",
+          "criteria": [
+            {
+              "text": "Hajoamisessa vapautuu energiaa. Se on hiukkasten ja säteilyn liike-energiaa.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Hiukkaset ja gammasäteily antavat energiansa ympärillä olevalle kalliolle. Kallion sisäenergia ja lämpötila kasvavat.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy1-4",
+        "fy3-6",
+        "fy8-8",
+        "fy2-6"
+      ],
+      "links": {
+        "graph": "fy1-4",
+        "math": "fy1-4",
+        "transfer": "fy3-6",
+        "communication": "fy2-6",
+        "concept": "fy8-8"
+      }
+    },
+    {
+      "id": "fy9-harjoituskoe-s10",
+      "title": "Osa III: Jousi ja sen oma massa",
+      "source": "example",
+      "source_note": "Aineistossa on vaihtelua samalla tavalla kuin mittauksissa, mutta se ei ole mittaus.",
+      "text": "Opiskelijat ripustivat kierrejousen telineeseen. He kiinnittivät jousen alapäähän punnuksia. Jokaisella punnuksella jousi pantiin värähtelemään ylös ja alas pienellä amplitudilla eli niin, että punnus poikkeaa vain vähän tasapainoasemasta. Opiskelijat mittasivat, kuinka kauan kymmenen värähdystä kestää. Tämä aika on $t_{10}$. Jousen oma massa on $61\\,\\text{g}$.\n\n| Punnuksen massa $m\\ (\\text{kg})$ | $t_{10}\\ (\\text{s})$ |\n|---|---|\n| $0{,}100$ | $4{,}37$ |\n| $0{,}200$ | $5{,}86$ |\n| $0{,}300$ | $7{,}13$ |\n| $0{,}400$ | $8{,}19$ |\n| $0{,}500$ | $9{,}03$ |\n| $0{,}600$ | $9{,}90$ |\n\nLisäksi he mittasivat venymän. Kun jouseen ripustetaan $0{,}300\\,\\text{kg}$:n punnus, levossa oleva jousi on $11{,}8\\,\\text{cm}$ pidempi kuin ilman punnusta.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 7,
+          "text": "Tee aineistosta kuvaaja, jonka pisteet ovat suoralla. Sovita pisteisiin suora. Perustele, miksi valitsit nämä suureet akseleille.",
+          "criteria": [
+            {
+              "text": "Valitsee akseleille $m$ ja $T^2$. Perustelee valinnan jousivärähtelijän jaksonajalla $T = 2\\pi\\sqrt{\\tfrac{m}{k}}$: siitä seuraa, että $T^2$ on verrannollinen massaan.",
+              "tag": "transfer",
+              "points": 2
+            },
+            {
+              "text": "Laskee jaksonajat $T = \\tfrac{t_{10}}{10}$ ja niiden neliöt.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "graph_axes",
+              "points": 1
+            },
+            {
+              "key": "graph_points",
+              "points": 1
+            },
+            {
+              "key": "graph_fit",
+              "points": 2,
+              "detail": "Suoraa ei pakoteta kulkemaan origon kautta. Suora leikkaa pystyakselin vähän origon yläpuolella."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Määritä kuvaajasta jousen jousivakio.",
+          "answer": {
+            "value": 25.0,
+            "unit": "N/m",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Kulmakerroin $\\tfrac{\\Delta(T^2)}{\\Delta m}$ luetaan suoralta."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Kulmakerroin on $\\tfrac{4\\pi^2}{k}$, joten $k = \\tfrac{4\\pi^2}{\\text{kulmakerroin}}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$k \\approx 25{,}0\\,\\tfrac{\\text{N}}{\\text{m}}$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Suora ei kulje origon kautta. Selitä, mistä tämä johtuu. Osa jousen omasta massasta värähtelee ikään kuin punnuksen mukana. Määritä kuvaajasta, kuinka suuri tämä osa on.",
+          "answer": {
+            "value": 20.5,
+            "unit": "g",
+            "tolerance": 0.06
+          },
+          "criteria": [
+            {
+              "text": "Myös jousi itse liikkuu. Sen alapää liikkuu punnuksen mukana, ja yläpää on paikallaan. Siksi värähtelevä massa on $m + m_\\text{j}$.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Suora leikkaa massa-akselin kohdassa $-m_\\text{j}$ eli $m_\\text{j} = \\tfrac{b}{\\text{kulmakerroin}}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "$m_\\text{j} \\approx 21\\,\\text{g}$. Se on noin kolmasosa jousen massasta $61\\,\\text{g}$."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 3,
+          "text": "Määritä jousivakio venymämittauksesta. Vertaa tulosta b-kohdan tulokseen.",
+          "answer": {
+            "value": 24.9,
+            "unit": "N/m",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Levossa jousivoima on yhtä suuri kuin paino: $kx = mg$, joten $k = \\tfrac{mg}{x}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$k \\approx 24{,}9\\,\\tfrac{\\text{N}}{\\text{m}}$."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Tulokset eroavat vain noin $0{,}3\\,\\%$. Siksi menetelmät tukevat toisiaan."
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "word",
+          "points": 2,
+          "text": "Opiskelija väittää: kun punnuksen massa kaksinkertaistetaan, jaksonaika kaksinkertaistuu. Arvioi väitettä aineiston perusteella.",
+          "criteria": [
+            {
+              "text": "Aineistossa massa muuttuu $0{,}300\\,\\text{kg} \\to 0{,}600\\,\\text{kg}$. Jaksonaika kasvaa vain $0{,}713\\,\\text{s} \\to 0{,}990\\,\\text{s}$ eli noin $1{,}39$-kertaiseksi.",
+              "tag": "graph",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Väite on väärä. Jaksonaika kasvaa massan neliöjuuren mukaan, noin $\\sqrt{2} \\approx 1{,}41$-kertaiseksi."
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy5-9",
+        "fy5-8",
+        "fy1-4"
+      ],
+      "links": {
+        "transfer": "fy5-9",
+        "math": "fy5-9",
+        "graph": "fy1-4",
+        "concept": "fy5-8",
+        "communication": "fy5-8"
+      }
+    }
+  ]
+}

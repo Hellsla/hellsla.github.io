@@ -3,6 +3,7 @@
     {
       "id": "fy8-2-L1-01",
       "level": 1,
+      "core": true,
       "text": "The spectrum of a helium gas tube has a green line at the wavelength $502\\,\\text{nm}$. What is the difference between the energies of the helium atom's states in the transition that produces this line? Give the answer in electronvolts.",
       "answer": 2.47,
       "unit": "eV",
@@ -39,12 +40,87 @@
       "answer": 656,
       "unit": "nm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-2-L1-06",
+      "level": 1,
+      "core": true,
+      "text": "A student looks at a light source with a spectroscope and sees a continuous band of colour with several narrow dark lines on it. Which of the following explains this spectrum?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The light has passed through a cooler gas, and its atoms have absorbed the photons whose energy is the difference between two states.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The source is a glowing thin gas whose atoms emit photons only at certain energies and leave the other wavelengths dark.",
+          "feedback": "A glowing thin gas gives an emission spectrum: separate bright lines on a dark background. In this situation it is the other way round, because the background is bright and the lines are dark."
+        },
+        {
+          "text": "The source is a hot solid body whose atoms have quantised energy states and therefore produce narrow dark lines.",
+          "feedback": "The atoms of a hot solid body interact with each other, and the body emits a continuous spectrum without dark lines. A line spectrum is formed only by separate atoms, that is, by a thin gas."
+        },
+        {
+          "text": "The light has passed through a cooler gas, and its atoms have absorbed the photons whose energy is the difference between two states.",
+          "correct": true,
+          "feedback": "Correct: the dark lines on a continuous background are an absorption spectrum. The atoms of the gas take from the light only the photons whose energy is exactly the difference between some pair of energy states, and these wavelengths remain as dark lines. The gas has to be cooler than the source behind it."
+        },
+        {
+          "text": "The gas has converted part of the light into heat equally at all wavelengths, and so the whole spectrum has dimmed evenly.",
+          "feedback": "An even dimming would not make narrow lines. The lines are formed only at the wavelengths whose photons have an energy corresponding to the difference between two energy states of the atom; the other wavelengths pass through the gas."
+        }
+      ]
+    },
+    {
+      "id": "fy8-2-L1-07",
+      "level": 1,
+      "text": "In the spectra of gas discharge tubes of different elements the lines are at different wavelengths. Explain briefly in two or three sentences why each element has its own lines and what causes the energy states of atoms to be different. Use the words energy state, photon and difference between energies.",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "The energy states of an atom are quantised, and the atoms of each element have their own energy states, because the charge of the nucleus and the number of electrons are different. An atom emits a photon when it moves from a higher state to a lower one, and the energy of the photon is the difference between the energies of the states. Because the differences are different for different elements, the wavelengths of the photons, and so the lines, are also different.",
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-2-L1-08",
+      "level": 1,
+      "text": "A student solved the problem like this: “A hydrogen atom moves from the state $n = 2$, whose energy is $E_2 = -3.40\\,\\text{eV}$, to the state $n = 3$, whose energy is $E_3 = -1.51\\,\\text{eV}$. The energy of the photon is the difference between the states, $E_3 - E_2 = -1.51\\,\\text{eV} - (-3.40\\,\\text{eV}) = 1.89\\,\\text{eV}$, so the atom emits a photon whose energy is $1.89\\,\\text{eV}$.”\n\nThe numerical value is correct, but the conclusion is not. What is the error in the student's reasoning?",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "answer": "In a transition to a higher state the energy of the atom increases, so the atom absorbs a photon and does not emit one.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The energy of the photon is the sum of the energies of the states and not the difference, so the correct result would be negative.",
+          "feedback": "The energy of a photon is always the difference between two states, because energy is conserved in the transition. The sum has no physical meaning, and the energy of a photon is positive."
+        },
+        {
+          "text": "The difference between the states still has to be divided by the Planck constant before it is the energy of the photon, so the unit is wrong.",
+          "feedback": "The difference between the energies of the states is directly the energy $hf$ of the photon. The Planck constant is needed only when the frequency or the wavelength is calculated from the energy, and the difference is not divided by it."
+        },
+        {
+          "text": "In a transition to a higher state the energy of the atom increases, so the atom absorbs a photon and does not emit one.",
+          "correct": true,
+          "feedback": "Correct: the state $n = 3$ is higher than the state $n = 2$. An atom can move up to a higher state only by receiving a photon whose energy is the difference between the states, $1.89\\,\\text{eV}$. Emitting a photon would require a transition from a higher state to a lower one."
+        },
+        {
+          "text": "The energy of a photon of visible light is over $3\\,\\text{eV}$, so such a small energy difference cannot produce light.",
+          "feedback": "The energies of photons of visible light are about $1.7$–$3.3\\,\\text{eV}$, so $1.89\\,\\text{eV}$ is visible red light. The error is not in the order of magnitude but in the direction of the transition."
+        }
+      ]
     }
   ],
   "level2": [
     {
       "id": "fy8-2-L2-01",
       "level": 2,
+      "core": true,
       "text": "A hydrogen atom moves from the state $n = 4$, whose energy is $-0.85\\,\\text{eV}$, to the state $n = 2$, whose energy is $-3.40\\,\\text{eV}$. What is the wavelength of the photon produced? Give the answer in nanometres.",
       "answer": 486,
       "unit": "nm",
@@ -73,6 +149,146 @@
       "answer": 2.11,
       "unit": "eV",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-2-L2-05",
+      "level": 2,
+      "core": true,
+      "text": "Three bright lines were measured with a spectroscope from the spectrum of an unknown gas discharge lamp: $435.7\\,\\text{nm}$ (violet), $546.3\\,\\text{nm}$ (green) and $577.2\\,\\text{nm}$ (yellow). The table gives the wavelengths of the brightest emission lines of four elements (example data).\n\na) Which element is in the lamp? Justify your answer by comparing all three lines with the table.\n\nb) What is the energy of the photon of the green line of the lamp? Give the answer in electronvolts.\n\nThe answer box takes the result of part b).",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 2.27,
+      "unit": "eV",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Emission lines of the elements, example data",
+        "columns": [
+          "Element",
+          "$\\lambda_1\\,(\\text{nm})$",
+          "$\\lambda_2\\,(\\text{nm})$",
+          "$\\lambda_3\\,(\\text{nm})$",
+          "$\\lambda_4\\,(\\text{nm})$"
+        ],
+        "rows": [
+          [
+            "Hydrogen",
+            "410.2",
+            "434.0",
+            "486.1",
+            "656.3"
+          ],
+          [
+            "Helium",
+            "447.1",
+            "501.6",
+            "587.6",
+            "667.8"
+          ],
+          [
+            "Sodium",
+            "498.3",
+            "568.8",
+            "589.0",
+            "616.1"
+          ],
+          [
+            "Mercury",
+            "404.7",
+            "435.8",
+            "546.1",
+            "577.0"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-2-L2-06",
+      "level": 2,
+      "text": "Seven dark lines were measured from the spectrum of the Sun, which has dark lines on a bright continuous background (example data). For comparison, the wavelengths of the lines of the elements are: hydrogen $434.0\\,\\text{nm}$, $486.1\\,\\text{nm}$ and $656.3\\,\\text{nm}$, calcium (calcium ion) $393.4\\,\\text{nm}$, magnesium $518.4\\,\\text{nm}$ and sodium $589.0\\,\\text{nm}$.\n\na) Which of the lines A–G can be identified, and which elements are therefore in the atmosphere of the Sun? Why are the lines dark? Which of the lines remains unidentified?\n\nb) The lines of hydrogen are formed when an atom moves from the state $n = 2$, whose energy is $-3.40\\,\\text{eV}$, to a higher state. What is the energy of the state to which the atom moves when it absorbs a photon of line C? Give the answer in electronvolts.\n\nThe answer box takes the result of part b).",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": -0.85,
+      "unit": "eV",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Dark lines of the absorption spectrum of the Sun, example data",
+        "columns": [
+          "Line",
+          "$\\lambda\\,(\\text{nm})$"
+        ],
+        "rows": [
+          [
+            "A",
+            "393.5"
+          ],
+          [
+            "B",
+            "434.1"
+          ],
+          [
+            "C",
+            "486.0"
+          ],
+          [
+            "D",
+            "518.3"
+          ],
+          [
+            "E",
+            "527.1"
+          ],
+          [
+            "F",
+            "589.1"
+          ],
+          [
+            "G",
+            "656.4"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-2-L2-07",
+      "level": 2,
+      "text": "A student studies two light sources with a spectroscope: an incandescent lamp and a mercury gas discharge tube. The reading $x$ of the scale of the eyepiece of the spectroscope is in millimetres.\n\na) What kind of spectrum does the student see from each source, and how can they be told apart?\n\nb) The scale is calibrated with the known lines of the mercury tube (table, example data). Another tube contains an unknown gas, and at its blue-green line the reading is $x = 16.4\\,\\text{mm}$. Draw the calibration graph $(x, \\lambda)$, fit a straight line to it and determine the wavelength of the line in nanometres.\n\nThe answer box takes the result of part b).",
+      "kind": [
+        "experiment",
+        "data",
+        "graph"
+      ],
+      "answer": 497,
+      "unit": "nm",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Lines of mercury and readings of the scale, example data",
+        "columns": [
+          "$\\lambda\\,(\\text{nm})$",
+          "$x\\,(\\text{mm})$"
+        ],
+        "rows": [
+          [
+            "404.7",
+            "8.7"
+          ],
+          [
+            "435.8",
+            "11.4"
+          ],
+          [
+            "546.1",
+            "20.5"
+          ],
+          [
+            "577.0",
+            "23.1"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -99,6 +315,86 @@
       "answer": 564,
       "unit": "nm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-2-L3-04",
+      "level": 3,
+      "text": "A model atom has a ground state and three excited states, and all six transitions between the states are possible. A hot gas of such atoms emits six lines. Five of them were measured (table, example data). The sixth line is formed from the lowest excited state to the ground state. It has the longest wavelength of the lines and is so far in the infrared that the detector does not detect it.\n\na) Calculate the energies of the photons of the measured lines in electronvolts.\n\nb) Deduce the energies of the excited states above the ground state and draw the energy level diagram of the atom, marking which line is which transition.\n\nc) What is the wavelength of the sixth line? Justify your reasoning.\n\nThe answer box takes the result of part c) in nanometres.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 1130,
+      "unit": "nm",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Measured emission lines of the model atom, example data",
+        "columns": [
+          "Line",
+          "$\\lambda\\,(\\text{nm})$"
+        ],
+        "rows": [
+          [
+            "A",
+            "318"
+          ],
+          [
+            "B",
+            "443"
+          ],
+          [
+            "C",
+            "517"
+          ],
+          [
+            "D",
+            "827"
+          ],
+          [
+            "E",
+            "954"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-2-L3-05",
+      "level": 3,
+      "text": "Three fluorescent dyes are illuminated with short-wavelength light, and the wavelength of the light that each dye radiates is measured (example data). Assume that for each absorbed photon the dye emits one fluorescence photon, and that the energy that does not leave as a photon is converted to heat.\n\na) Calculate the energies of the absorbed and the emitted photon for each dye in electronvolts.\n\nb) In which dye is the share converted to heat the greatest, and what percentage of the energy of the absorbed photon is it?\n\nc) Explain why the wavelength of fluorescent light is longer than that of the absorbed light and where the missing energy goes.\n\nd) A fourth dye, D, absorbs light with a wavelength of $400\\,\\text{nm}$, and for each absorbed photon $0.50\\,\\text{eV}$ is converted to heat. What is the wavelength of its fluorescent light in nanometres?\n\nThe answer box takes the share of part b) in per cent.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 22.1,
+      "unit": "%",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Illumination and fluorescence of the dyes, example data",
+        "columns": [
+          "Dye",
+          "$\\lambda_\\text{abs}\\,(\\text{nm})$",
+          "$\\lambda_\\text{fl}\\,(\\text{nm})$"
+        ],
+        "rows": [
+          [
+            "A",
+            "365",
+            "450"
+          ],
+          [
+            "B",
+            "405",
+            "520"
+          ],
+          [
+            "C",
+            "450",
+            "530"
+          ]
+        ]
+      }
     }
   ]
 }

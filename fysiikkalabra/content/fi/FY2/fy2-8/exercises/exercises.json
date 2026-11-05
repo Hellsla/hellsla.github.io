@@ -3,6 +3,7 @@
     {
       "id": "fy2-8-L1-01",
       "level": 1,
+      "core": true,
       "text": "Esimerkkitalous käyttää sähköä $3000\\,\\text{kWh}$ vuodessa. Sähkö tuotetaan vesivoimalla, jonka elinkaaren päästökerroin on $24\\,\\text{g/kWh}$. Kuinka paljon hiilidioksidiekvivalenttia talouden sähkönkäytöstä syntyy vuodessa? Anna vastaus kilogrammoina.",
       "answer": 72,
       "unit": "kg",
@@ -44,6 +45,7 @@
     {
       "id": "fy2-8-L1-06",
       "level": 1,
+      "core": true,
       "text": "Mikä seuraavista kuvaa parhaiten luonnollista kasvihuoneilmiötä?",
       "kind": [
         "concept"
@@ -66,7 +68,7 @@
         },
         {
           "text": "Kasvihuonekaasut päästävät Auringon säteilyn läpi mutta hidastavat maanpinnan lämpösäteilyn poistumista.",
-          "feedback": "Oikein: maanpinta lämpenee Auringon säteilystä ja lähettää lämpösäteilyä, jonka kasvihuonekaasut hidastavat. Siksi keskilämpötila on noin $+15\\,{}^\\circ\\text{C}$ eikä noin $-18\\,{}^\\circ\\text{C}$.",
+          "feedback": "Oikein: maanpinta lämpenee Auringon säteilystä ja lähettää lämpösäteilyä, jonka kasvihuonekaasut hidastavat. Siksi maanpinnan keskilämpötila on noin $+15\\,{}^\\circ\\text{C}$, kun yksinkertainen säteilytasapainomalli antaa efektiiviseksi säteilylämpötilaksi noin $-18\\,{}^\\circ\\text{C}$.",
           "correct": true
         }
       ]
@@ -122,6 +124,7 @@
     {
       "id": "fy2-8-L2-02",
       "level": 2,
+      "core": true,
       "text": "Esimerkkitalous käyttää sähköä $3600\\,\\text{kWh}$ vuodessa. Sähkö tuotettiin ensin kivihiilellä ($820\\,\\text{g/kWh}$), mutta talous siirtyy ostamaan tuulisähköä ($12\\,\\text{g/kWh}$). Kuinka monta tonnia hiilidioksidiekvivalenttia vuosittaiset päästöt pienenevät? Anna vastaus tonneina.",
       "answer": 2.9,
       "unit": "t",
@@ -146,6 +149,7 @@
     {
       "id": "fy2-8-L2-05",
       "level": 2,
+      "core": true,
       "text": "Taulukossa on ilmakehän hiilidioksidipitoisuus $c$ eri vuosina (NOAA:n Mauna Loan mittausaseman vuosikeskiarvot, pyöristetty kokonaisiksi ppm-arvoiksi). Oletetaan, että pitoisuus kasvaa vuosien $2005$ ja $2020$ välillä tasaisesti, eli mallina on suora. Kuinka monta ppm pitoisuus kasvaa tämän mallin mukaan keskimäärin vuodessa? Anna vastaus yksikössä ppm/a.",
       "kind": [
         "data"

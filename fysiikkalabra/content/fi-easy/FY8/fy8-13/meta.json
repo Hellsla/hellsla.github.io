@@ -28,7 +28,7 @@
     },
     {
       "term": "efektiivinen annos",
-      "explain": "Annos, jossa on otettu huomioon säteilylaji ja kudosten herkkyys. Se kuvaa koko kehon syöpäriskiä. Yksikkö on sievert."
+      "explain": "Annos, jossa on otettu huomioon säteilylaji ja kudosten herkkyys. Sillä arvioidaan pienten annosten syöpäriskiä keskimääräiselle ihmiselle. Yksikkö on sievert."
     },
     {
       "term": "radon",

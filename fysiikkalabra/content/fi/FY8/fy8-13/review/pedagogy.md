@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: e9e47c77f1bab9da
+CONTENT-HASH: e173669c713bd9b1
 
 ## Blocking
+(none)
 
 ## Polish
+(none)
 
 ## Checked
-- Delta round 4: the sim canvas label "lähde" now comes from lang key `lahde_kanvas` (`$\text{lähde}$` in fi.json, same value as before; en/fi-easy keys exist). Rendered Finnish unchanged; no lesson wording or content changed (0 changed lines).
-- Rest of the lesson is as approved in the previous report.
-- Re-review after change: fi version unchanged by this edit; no content change; earlier verdict stands.
+- batch delta review: scope was the diff only (teacher: "katselmoi vain muuttuneet osat"); the packet's diff for fi fy8-13 is empty (0 changed wording lines) and the hash equals the one I passed, so nothing new to judge; previous PASS stands.

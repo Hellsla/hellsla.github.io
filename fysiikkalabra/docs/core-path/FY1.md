@@ -1,0 +1,18 @@
+# FY1: ydinpolun valinta
+
+Jokaisen luvun ydinharjoituksiksi on valittu neljä tason 1 ja 2 tehtävää luvun oppimistavoitteiden perusteella. Yleensä mukana on kaksi laskua luvun keskeisestä kaavasta tai muunnoksesta sekä yksi tai kaksi muuta tehtävää: käsitetehtävä, virheen etsiminen, itse piirretty kuvaaja tai mittausaineiston käsittely. Ne on valittu niin, että ne kattavat tavoitteen, jota laskut eivät kata. Kaikki tehtävät ovat valmiita tehtäviä, eikä niiden sisältöä ole muutettu. FY1 on mittaamisen ja mallintamisen kurssi, joten kuvaajan piirtäminen ja mittausaineiston tulkinta kuuluvat ydinpolkuun luvuissa 4–7, joissa ne ovat tavoitteissa. Mikään luku ei jää pelkkien laskujen varaan.
+
+| Luku | Ydintehtävät | Taidot | Perustelu tavoitteiden kannalta |
+|---|---|---|---|
+| fy1-1 | L1-02, L1-04, L2-01, L2-06 | lasku, lasku, lasku, sanallinen/tutkimus | Tehtävä L1-04 vertaa atomin ja ytimen kokoa, mikä liittää luvun aineen rakenteeseen. Kokoja kirjoitetaan kymmenpotenssimuodossa ja verrataan Linnunradan kokoon, ja taulukkotehtävässä määritetään suuruusluokat ja perustellaan, miksi suuruusluokka ei ole sama kuin eksponentti (perusvuorovaikutukset harjoitellaan oppitunnin tehtävässä *vuorovaikutukset*). |
+| fy1-2 | L1-01, L1-03, L2-01, L2-07 | lasku, lasku, lasku, sanallinen | Yksiköitä muunnetaan etuliitteillä, pinta-ala ilmoitetaan oikealla määrällä merkitseviä numeroita, ja virheen etsimisessä yksikkötarkastelu paljastaa väärin kootun kaavan (etäisyydet astronomisina yksikköinä ja valon kulkuaikana harjoitellaan oppitunnin Voyager-tehtävissä). |
+| fy1-3 | L1-01, L1-06, L2-01, L2-06 | lasku, sanallinen, lasku, sanallinen/tutkimus | Keskiarvo ja vaihteluvälin puolikas lasketaan, käsitetehtävä tunnistaa systemaattisen virheen, ja kahden ryhmän aineistosta perustellaan, kumpi mittaus on toistettavampi ja kumpi oikeampi. |
+| fy1-4 | L1-01, L1-07, L2-01, L2-06 | lasku, sanallinen, lasku, kuvaaja/sanallinen/tutkimus | Kulmakerroin lasketaan kahdesta pisteestä, käsitetehtävä kertoo, mitä kulmakerroin tarkoittaa, ja opiskelija piirtää mittauspisteistä kuvaajan, sovittaa suoran ja selittää vakiotermin merkityksen (lineaarisen mallin rajat tutkitaan oppitunnin kokeessa 3). |
+| fy1-5 | L1-01, L1-03, L2-05, L2-06 | lasku, lasku, kuvaaja/tutkimus, sanallinen/tutkimus | Matka lasketaan nopeudesta ja ajasta ja aika luetaan $(t, s)$-kuvaajasta, opiskelija piirtää videoanalyysin pisteistä kuvaajan ja määrittää nopeuden kulmakertoimesta, ja virheen etsiminen näyttää, että paikka ei ole suoraan verrannollinen aikaan, kun $s_0 \neq 0$. |
+| fy1-6 | L1-01, L1-06, L2-01, L2-05 | lasku, sanallinen, lasku, kuvaaja/tutkimus | Nopeus ja aika lasketaan kaavalla $v = gt$, käsitetehtävä päättelee, että massa ei vaikuta putoamiseen ilman ilmanvastusta, ja valoporttimittauksesta piirretään $(t, v)$-kuvaaja, jonka kulmakertoimesta saadaan $g$. |
+| fy1-7 | L1-01, L1-02, L2-05, L2-07 | lasku, lasku, kuvaaja/tutkimus, sanallinen/tutkimus | Tiheys ja massa lasketaan kaavalla $m = \rho V$, mittauksista piirretään $(V, m)$-kuvaaja, jonka kulmakertoimesta aine tunnistetaan, ja vedensiirtokokeen virheen etsiminen harjoittelee tiheyden määrittämistä mittaustuloksista. |
+| fy1-8 | L1-01, L1-07, L2-01, L2-06 | lasku, sanallinen, lasku, sanallinen/tutkimus | Suhteellinen epävarmuus lasketaan, käsitetehtävä tunnistaa hyvän tutkimuskysymyksen, ja virheen etsiminen korjaa koesuunnitelman reiluksi muuttamalla vain yhtä muuttujaa. |
+
+## Merkityt oppitunnin tehtävät
+
+- fy1-8 *suunnittele* (explain, Suunnittele oma tutkimus): opiskelija muotoilee tutkimuskysymyksen ja hypoteesin ja suunnittelee reilun kokeen. Tehtävä on luvun tutkimustaidon päätuotos, ja se merkitään ydintehtäväksi, jotta se näkyy yhtä tärkeänä kuin laskut.

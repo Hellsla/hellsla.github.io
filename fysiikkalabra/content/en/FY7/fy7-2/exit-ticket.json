@@ -5,6 +5,6 @@
   },
   {
     "q": "A proton and an electron fly at the same speed perpendicular to the same magnetic field. How do their paths differ?",
-    "a": "The paths curve in opposite directions, because the charges have opposite signs. The magnitudes of the charges are equal, so the radius $r = mv : (qB)$ is proportional to the mass: the path of the electron is about $1840$ times smaller than that of the proton."
+    "a": "The paths curve in opposite directions, because the charges have opposite signs. The magnitudes of the charges are equal, so the radius $r = mv : (|q|B)$ is proportional to the mass: the path of the electron is about $1840$ times smaller than that of the proton."
   }
 ]

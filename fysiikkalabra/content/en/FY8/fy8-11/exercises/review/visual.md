@@ -1,15 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 9785d98178775482
+CONTENT-HASH: 28f9eb13b6cff796
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
+## Fixed
+(none needed)
+
 ## Polish
-- [Minor] answer boxes L2-02, L3-02 — unit as plain "10¹⁴ J/kg" while solutions typeset fractions; check convention (carried).
-- [Minor] solutions L2-01 Reasonableness — dense inline unit check; own LaTeX line (carried).
+(none)
 
 ## Checked
-Delta: the hash is unchanged from the version that passed (0 changed wording lines); round-2 fixes touched the lesson, not the exercises. No figures in the set; layout identical to the previous opened captures (open-exercises-L2-1280-1).
+- Opened fy8-11-open-exercises-L2-1280-6 and neighbouring captures: the table, answer box, English UI labels (Write a solution, Check) and the staged solution render correctly; formulas typeset with decimal points.
+- Data tables of L2-05, L2-06 and L3-04 show English captions and column headings; LaTeX units in headings render.
+- No Finnish text visible in the captures; no overflow or clipped fractions.
 
 ## Scores
 illustrations n/a · typography 5 · English 5 · accessibility 4

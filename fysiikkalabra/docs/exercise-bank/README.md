@@ -39,9 +39,12 @@ aineiston tulkinta. Kaikilla uusilla tehtävillä täydellinen malliratkaisu tai
 | 5–8 | FY3 neljän luvun erissä opetusjärjestyksessä | |
 | 9–12 | FY4 neljän luvun erissä | |
 | 13–17 | FY5 3–4 luvun erissä | |
+| FY6 a–d | fy6-1…4, 5…8, 9…12, 13…16 | oma ketju; FY6 valmis → `exercise_total: 20` |
+| FY7 a–d | fy7-1…4, 5…8, 9…12, 13…16 | oma ketju; FY7 valmis → `exercise_total: 20` |
+| FY8 a–d | fy8-1…4, 5…8, 9…12, 13…16 | oma ketju; FY8 valmis → `exercise_total: 20` |
 
 Prioriteetti luvun rivillä: **P1** keskeinen YO-sisältö ja suuri tyyppivaje (aineisto- ja käsitetehtävät puuttuvat
 kokonaan), **P2** tärkeä, **P3** soveltava tai jo monipuolisempi luku. Erien sisällä P1 ensin.
 
-Suunnitelmat: [FY1](FY1.md) · [FY2](FY2.md) · [FY3](FY3.md) · [FY4](FY4.md) · [FY5](FY5.md). FY6–FY8 tehdään,
-kun niiden avoimet PR:t (#222, #228, #232) on yhdistetty.
+Suunnitelmat: [FY1](FY1.md) · [FY2](FY2.md) · [FY3](FY3.md) · [FY4](FY4.md) · [FY5](FY5.md) · [FY6](FY6.md) ·
+[FY7](FY7.md) · [FY8](FY8.md).

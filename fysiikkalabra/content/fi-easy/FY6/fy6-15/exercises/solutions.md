@@ -48,6 +48,26 @@
 **Vastaus:** $51\,\text{W}$, kaksi merkitsevää numeroa kuten resistanssissa ja virrassa.
 **Järkevyys:** Teho on kuin pienen hehkulampun. Se jakautuu koko johdon pituudelle, joten ehjä johto lämpenee vain vähän. Jos johto on kelalla tiukasti rullattuna, siitä siirtyy huonosti lämpöä ympäristöön. Silloin johto voi kuumeta vaarallisesti.
 
+## fy6-15-L1-06
+**Kysytty:** mikä väite suojamaadoituksen tehtävästä on oikein
+**Periaate:** Suojamaadoitus yhdistää laitteen metallirungon maahan johtimella. Jos vaihejohdin koskettaa vian takia runkoa, suuri vikavirta kulkee tätä johdinta pitkin. Silloin sulake tai vikavirtasuoja katkaisee virran, eikä runko jää jännitteiseksi.
+**Mallivastaus:** Oikea väite on tämä: maadoitus ohjaa vikavirran johdinta pitkin maahan, ja sulake tai vikavirtasuoja katkaisee virran. Väite sähkönkulutuksen pienenemisestä on väärä, koska normaalisti maadoitusjohtimessa ei kulje virtaa. Väite rungon eristämisestä maasta on väärä, koska maadoitus yhdistää rungon maahan. Se ei eristä runkoa. Väite rungon jatkuvasta jännitteisyydestä on väärä, koska maadoituksen tarkoitus on estää runkoa jäämästä jännitteiseksi.
+
+## fy6-15-L1-07
+**Kysytty:** mikä väite suojausluokan II laitteesta on oikein
+**Periaate:** Suojausluokka kertoo, miten laite suojaa käyttäjää sähköiskulta. Luokan I laitteen metallirunko on suojamaadoitettu. Luokan II laitteessa on kaksinkertainen tai vahvistettu eristys. Luokan III laite toimii pienellä suojajännitteellä. Luokan II suoja on siis eristyksessä: yksi eristysvika ei vielä tuo verkkojännitettä kuoreen.
+**Mallivastaus:** Oikea väite on tämä: laitteessa on kaksinkertainen eristys, joten kuori ei tule jännitteiseksi yhden vian takia. Väite maadoitetusta metallirungosta on väärä, koska se kuvaa luokkaa I. Väite pienestä suojajännitteestä on väärä, koska se kuvaa luokkaa III. Väite vesitiiviistä kuoresta on väärä, koska suojausluokka kertoo suojasta sähköiskua vastaan. Se ei kerro, kestääkö laite kosteutta.
+
+## fy6-15-L1-08
+**Annettu:** ilmaväli $d = 2{,}0\,\text{mm}$, tasainen kenttä, ilman läpilyöntilujuus $E_\text{max} = 3{,}0\,\text{MV/m}$
+**Kysytty:** suurin sallittu jännite $U_\text{max}$ kilovoltteina
+**Periaate:** Tasaisessa kentässä kentän voimakkuus on jännite jaettuna välin pituudella. Ilma ei lyö läpi, kun kenttä on enintään läpilyöntilujuuden suuruinen. Suurin sallittu jännite on siis se, jolla kenttä on juuri $E_\text{max}$.
+**Kaava:** $E = \dfrac{U}{d} \le E_\text{max}$, josta $U_\text{max} = E_\text{max}\,d$
+**Muunnokset:** $d = 2{,}0\,\text{mm} = 2{,}0 \cdot 0{,}001\,\text{m} = 0{,}0020\,\text{m}$; $E_\text{max} = 3{,}0\,\text{MV/m} = 3{,}0 \cdot 1\,000\,000\,\text{V/m}$; tulos $1\,\text{kV} = 1000\,\text{V}$.
+**Sijoitus:** $U_\text{max} = 3\,000\,000\,\text{V/m} \cdot 0{,}0020\,\text{m} = 6000\,\text{V} = 6{,}0\,\text{kV}$
+**Vastaus:** $6{,}0\,\text{kV}$, kaksi merkitsevää numeroa kuten läpilyöntilujuudessa $3{,}0\,\text{MV/m}$.
+**Järkevyys:** Yksi megavoltti metriä kohti on yksi kilovoltti millimetriä kohti. Ilma kestää siis noin $3\,\text{kV}$ jokaista millimetriä kohti. Kahden millimetrin välillä se on $2 \cdot 3\,\text{kV} = 6\,\text{kV}$. Pistorasian $230\,\text{V}$ on tästä kaukana alle. Salaman tai suurjännitejohdon jännitteet ovat kuitenkin tuhansia kertoja suurempia.
+
 ## fy6-15-L2-01
 **Annettu:** nimellisvirta $I_\text{s} = 16\,\text{A}$, jännite $U = 230\,\text{V}$, päällä olevat tehot $P_1 = 2000\,\text{W}$ ja $P_2 = 1200\,\text{W}$
 **Kysytty:** teho $P_\text{lisä}$, jonka ryhmään voi vielä kytkeä
@@ -88,6 +108,36 @@
 **Vastaus:** $15\,\text{V}$, kaksi merkitsevää numeroa kuten resistanssissa $1{,}5\,\text{k}\Omega$.
 **Järkevyys:** Tulos on paljon pienempi kuin verkkojännite $230\,\text{V}$ ja pienempi kuin suojajännitteen yläraja $50\,\text{V}$. Siksi märissä tiloissa käytetään vikavirtasuojaa ja erityisen pientä jännitettä. Kun iho on märkä, jo kymmenien volttien jännite voi olla vaarallinen.
 
+## fy6-15-L2-05
+**Annettu:** kosketusjännite $U = 230\,\text{V}$; resistanssit taulukosta: $R_1 = 55\,\text{k}\Omega$ (kuiva iho, kumikengät), $R_2 = 12\,\text{k}\Omega$ (kuiva iho, paljaat jalat), $R_3 = 2{,}4\,\text{k}\Omega$ (märät kädet), $R_4 = 0{,}90\,\text{k}\Omega$ (kylpyammeessa)
+**Kysytty:** a) virta $I$ jokaisessa tilanteessa ja sen vaikutus; b) kylpyammeen ja kumikenkien virtojen suhde $I_4 : I_1$
+**Periaate:** Keho on osa virtapiiriä kosketuskohdan ja maan välillä. Kehon läpi kulkeva virta saadaan Ohmin laista virtatien resistanssin avulla. Virran vaikutuksen näkee siitä, kuinka suuri virta on, kun sitä verrataan kynnysarvoihin. Jännite on joka tilanteessa sama, joten virrat ovat kääntäen verrannollisia resistansseihin. Jos resistanssi on pienempi, virta on suurempi.
+**Kaava:** $I = \dfrac{U}{R}$ ja $\dfrac{I_4}{I_1} = \dfrac{U / R_4}{U / R_1} = \dfrac{R_1}{R_4}$
+**Muunnokset:** $R_1 = 55\,\text{k}\Omega = 55 \cdot 1000\,\Omega = 55\,000\,\Omega$, samoin $R_2 = 12\,000\,\Omega$, $R_3 = 2400\,\Omega$ ja $R_4 = 900\,\Omega$; virrat ampeereista milliampeereiksi: $1\,\text{A} = 1000\,\text{mA}$. Suhteessa kiloohmit supistuvat pois.
+**Sijoitus:** $I_1 = \dfrac{230\,\text{V}}{55\,000\,\Omega} = 4{,}2\,\text{mA}$, $I_2 = \dfrac{230\,\text{V}}{12\,000\,\Omega} = 19{,}2\,\text{mA}$, $I_3 = \dfrac{230\,\text{V}}{2400\,\Omega} = 95{,}8\,\text{mA}$, $I_4 = \dfrac{230\,\text{V}}{900\,\Omega} = 255{,}6\,\text{mA}$ ja $\dfrac{I_4}{I_1} = \dfrac{55\,\text{k}\Omega}{0{,}90\,\text{k}\Omega} = 61{,}11$
+**Vastaus:** noin $61$-kertainen, kaksi merkitsevää numeroa kuten resistanssissa $0{,}90\,\text{k}\Omega$. Kohta a): kumikengillä $4{,}2\,\text{mA}$ tuntuu, mutta virta jää alle irrottamiskynnyksen. Paljain jaloin $19\,\text{mA}$ ylittää irrottamiskynnyksen, joten ote ei välttämättä irtoa. Märin käsin $96\,\text{mA}$ ja kylpyammeessa $256\,\text{mA}$ ylittävät kammiovärinän vaaran rajan.
+**Järkevyys:** Arvio: $55 : 0{,}9 \approx 60$. Sama suhde saadaan virroista: $256\,\text{mA} : 4{,}2\,\text{mA} \approx 61$. Kaikki neljä virtaa ovat suurempia kuin tuntokynnys $0{,}5\,\text{mA}$. Virta kasvaa samassa järjestyksessä kuin resistanssi pienenee. Samalla jännitteellä kosteus ja paljas iho kasvattavat virran yli kuusikymmenkertaiseksi.
+
+## fy6-15-L2-06
+**Annettu:** sulakkeen nimellisvirta $I_\text{s} = 10\,\text{A}$, jännite $U = 230\,\text{V}$; tehot taulukosta: vedenkeitin $2000\,\text{W}$, pölynimuri $1400\,\text{W}$, silitysrauta $1100\,\text{W}$, leivänpaahdin $800\,\text{W}$, kahvinkeitin $600\,\text{W}$
+**Kysytty:** a) parit, joiden yhteisvirta ylittää $I_\text{s}$; b) suurin yhteisteho, joka ei ylitä rajaa, ja sitä vastaava virta $I$ ampeereina
+**Periaate:** Ryhmän laitteet ovat rinnan samassa jännitteessä, joten niiden virrat lasketaan yhteen. Ryhmäjohdon virta on yhteisteho jaettuna jännitteellä. Sulakkeen nimellisvirta ylittyy, kun yhteisteho on suurempi kuin $P_\text{max} = UI_\text{s}$.
+**Kaava:** $P_\text{max} = UI_\text{s}$ ja $I = \dfrac{P_1 + P_2}{U}$
+**Muunnokset:** Ei tarvita: $1\,\text{W} : 1\,\text{V} = 1\,\text{A}$.
+**Sijoitus:** $P_\text{max} = 230\,\text{V} \cdot 10\,\text{A} = 2300\,\text{W}$. Parien yhteistehot: vedenkeitin ja pölynimuri $3400\,\text{W}$, vedenkeitin ja silitysrauta $3100\,\text{W}$, vedenkeitin ja leivänpaahdin $2800\,\text{W}$, vedenkeitin ja kahvinkeitin $2600\,\text{W}$, pölynimuri ja silitysrauta $2500\,\text{W}$. Kaikki ovat yli $2300\,\text{W}$. Muut parit jäävät sen alle. Niistä suurin on pölynimuri ja leivänpaahdin: $1400\,\text{W} + 800\,\text{W} = 2200\,\text{W}$. Virta on $I = \dfrac{2200\,\text{W}}{230\,\text{V}} = 9{,}565\,\text{A}$
+**Vastaus:** $9{,}6\,\text{A}$, kaksi merkitsevää numeroa kuten sulakkeen nimellisvirrassa. Kohta a): sulakkeen nimellisvirran ylittävät vedenkeittimen yhdistelmät kaikkien muiden laitteiden kanssa sekä pölynimurin ja silitysraudan pari.
+**Järkevyys:** Virta $9{,}6\,\text{A}$ on vähän alle rajan $10\,\text{A}$. Pari mahtuu siis ryhmään, mutta varaa jää hyvin vähän. Seuraavaksi suurin pari, pölynimuri ja kahvinkeitin, antaisi vain $2000\,\text{W} : 230\,\text{V} = 8{,}7\,\text{A}$. Vedenkeitin yksin ($8{,}7\,\text{A}$) mahtuu ryhmään, mutta mikään toinen laite ei mahdu sen rinnalle.
+
+## fy6-15-L2-07
+**Annettu:** sulake $16\,\text{A}$, kosketusjännite $U = 230\,\text{V}$, virtatien resistanssi $R = 2{,}00\,\text{k}\Omega$
+**Kysytty:** a) virhe opiskelijan väitteessä ja laite, joka katkaisee pienen virran; b) kehon läpi kulkeva virta $I$ milliampeereina
+**Periaate:** Sulake suojaa johtoa ylikuumenemiselta, ja sen nimellisvirta on kymmeniä ampeereja. Ihmisen läpi kulkeva virta on kymmeniä tai satoja milliampeereja eli satoja kertoja pienempi. Sulake ei huomaa sitä lainkaan. Ihmisen kautta kulkevan pienen virran katkaisee vikavirtasuoja, joka laukeaa noin $30\,\text{mA}$:n vikavirrasta. Kehon läpi kulkeva virta saadaan Ohmin laista.
+**Kaava:** $U = RI$, josta $I = \dfrac{U}{R}$
+**Muunnokset:** $R = 2{,}00\,\text{k}\Omega = 2{,}00 \cdot 1000\,\Omega = 2000\,\Omega$; $1\,\text{A} = 1000\,\text{mA}$.
+**Sijoitus:** $I = \dfrac{230\,\text{V}}{2000\,\Omega} = 0{,}115\,\text{A} = 115\,\text{mA}$
+**Vastaus:** $115\,\text{mA}$, kolme merkitsevää numeroa kuten jännitteessä ja resistanssissa. Opiskelijan virhe on, että hän uskoo sulakkeen suojaavan ihmistä. Sulake ei huomaa kehon läpi kulkevaa virtaa, koska sen nimellisvirta $16\,\text{A}$ on moninkertainen kehon virtaan verrattuna. Sulake suojaa ihmistä vain yhdessä suojamaadoituksen kanssa. Kehon kautta kulkevan virran katkaisee vikavirtasuoja.
+**Järkevyys:** Sulakkeen virta $16\,\text{A}$ on $16\,\text{A} : 0{,}115\,\text{A} \approx 139$-kertainen kehon virtaan verrattuna, joten sulake ei laukea. Virta $115\,\text{mA}$ on yli kaksinkertainen kammiovärinän vaaran rajaan $50\,\text{mA}$ nähden. Se on myös moninkertainen vikavirtasuojan laukaisuvirtaan $30\,\text{mA}$ nähden, joten vikavirtasuoja laukeaisi.
+
 ## fy6-15-L3-01
 **Annettu:** johtimien resistanssi $R = 0{,}50\,\Omega$, mitoitusvirta $I_1 = 10\,\text{A}$, todellinen virta $I_2 = 22\,\text{A}$
 **Kysytty:** kuinka moninkertainen lämpöteho $P_2$ on tehoon $P_1$ verrattuna
@@ -118,3 +168,24 @@
 **Sijoitus:** $I = \dfrac{600\,\text{V} - 400\,\text{V}}{4000\,\Omega} = \dfrac{200\,\text{V}}{4000\,\Omega} = 0{,}050\,\text{A} = 50\,\text{mA}$
 **Vastaus:** $50\,\text{mA}$, kaksi merkitsevää numeroa kuten resistanssissa $4{,}0\,\text{k}\Omega$.
 **Järkevyys:** Virta on kammiovärinän vaaran rajalla, vaikka ihminen ei koske johtimeen lainkaan. Jos jalat olisivat yhdessä, potentiaaliero ja virta olisivat lähes nolla. Jalasta toiseen kulkeva virta ei välttämättä kulje sydämen kautta, mutta kaatuminen voi tuoda sydämen virran reitille. Kauempana käyrä loivenee: kohtien $4{,}0\,\text{m}$ ja $6{,}0\,\text{m}$ välinen jännite on vain $100\,\text{V}$, vaikka väli on kaksi metriä. Pois kannattaa siis siirtyä lyhyin askelin.
+
+## fy6-15-L3-04
+**Annettu:** johtimien resistanssi $R = 0{,}40\,\Omega$; taulukosta virrat $I = 4{,}0$; $8{,}0$; $12{,}0$; $16{,}0\,\text{A}$ ja lämpötilan nousut $\Delta T = 2{,}1$; $7{,}6$; $17{,}2$; $30{,}4\,\text{K}$; eristeen raja $\Delta T_\text{max} = 50\,\text{K}$
+**Kysytty:** a) kulmakerroin $k$ yksikössä $\text{K/W}$; b) virta $I_\text{max}$, jolla lämpötilan nousu on $50\,\text{K}$, ampeereina; c) riittävätkö $16\,\text{A}$:n ja $25\,\text{A}$:n sulakkeet
+**Periaate:** Johtimen resistanssissa syntyy lämpöteho $P = RI^2$ (luku *Sähköteho ja vastuksen lämpeneminen*). Kun lämpötila on pysähtynyt, johto luovuttaa ympäristöön saman tehon, joka siinä syntyy. Mittaus näyttää, että lämpötilan nousu kasvaa tehon mukana. Jos pisteet $(P, \Delta T)$ ovat suoralla, joka kulkee origon kautta, niin $\Delta T = kP$. Silloin lämpötilan nousu on suoraan verrannollinen tehoon. Kun tehoa ei synny, johto on ympäristön lämpötilassa, joten suora kulkee origon kautta.
+**Kuvaajan lukeminen:** Pisteet $(P, \Delta T)$ ovat $(6{,}4\,\text{W};\ 2{,}1\,\text{K})$, $(25{,}6\,\text{W};\ 7{,}6\,\text{K})$, $(57{,}6\,\text{W};\ 17{,}2\,\text{K})$ ja $(102{,}4\,\text{W};\ 30{,}4\,\text{K})$. Ne ovat lähes suoralla, joka kulkee origon kautta. Suhteet $\Delta T : P$ ovat $0{,}33$; $0{,}30$; $0{,}30$ ja $0{,}30\,\text{K/W}$. Ensimmäinen poikkeaa vähän, koska pientä lämpötilan nousua on vaikeampi lukea tarkasti. Origon kautta sovitetun suoran kulmakerroin on $k = \dfrac{\sum P\,\Delta T}{\sum P^2}$.
+**Kaava:** $\Delta T = kP = kRI^2$, josta $I_\text{max} = \sqrt{\dfrac{\Delta T_\text{max}}{kR}}$
+**Muunnokset:** Ei tarvita: lämpötilan nousu on sama kelvineinä ja celsiusasteina, ja $1\,\text{K/W}$ tulee suoraan taulukon yksiköistä.
+**Sijoitus:** $\sum P\,\Delta T = 6{,}4 \cdot 2{,}1 + 25{,}6 \cdot 7{,}6 + 57{,}6 \cdot 17{,}2 + 102{,}4 \cdot 30{,}4 = 4311{,}7$ ja $\sum P^2 = 6{,}4^2 + 25{,}6^2 + 57{,}6^2 + 102{,}4^2 = 14\,499{,}8$, joten $k = \dfrac{4311{,}7}{14\,499{,}8}\,\dfrac{\text{K}}{\text{W}} = 0{,}2974\,\dfrac{\text{K}}{\text{W}}$. Virta on $I_\text{max} = \sqrt{\dfrac{50\,\text{K}}{0{,}2974\,\text{K/W} \cdot 0{,}40\,\Omega}} = \sqrt{420{,}3\,\text{A}^2} = 20{,}50\,\text{A}$
+**Vastaus:** $21\,\text{A}$, kaksi merkitsevää numeroa kuten rajassa $50\,\text{K}$ (kohta a: $k \approx 0{,}30\,\text{K/W}$). c) Virralla $16\,\text{A}$ lämpötilan nousu on $\Delta T = 0{,}2974 \cdot 0{,}40 \cdot 16^2\,\text{K} = 30\,\text{K}$. Se on alle rajan $50\,\text{K}$, joten $16\,\text{A}$:n sulake riittää suojaamaan tämän johdon. Virralla $25\,\text{A}$ nousu olisi $0{,}2974 \cdot 0{,}40 \cdot 25^2\,\text{K} = 74\,\text{K}$. Se on yli rajan, joten $25\,\text{A}$:n sulake ei suojaisi johtoa. Johto voisi kuumentua vaarallisen kuumaksi, ennen kuin sulake laukeaa.
+**Järkevyys:** Tarkistus: virralla $20{,}5\,\text{A}$ teho on $0{,}40 \cdot 20{,}5^2\,\text{W} = 168\,\text{W}$ ja nousu $0{,}2974 \cdot 168\,\text{K} = 50\,\text{K}$. Raja $20{,}5\,\text{A}$ on suurimman mitatun virran $16\,\text{A}$ ulkopuolella, joten se on ennuste mittausalueen ulkopuolelle. Virta kasvaa tekijällä $20{,}5 : 16 = 1{,}28$. Teho ja lämpötilan nousu kasvavat tekijällä $1{,}28^2 = 1{,}64$, joten $30{,}4\,\text{K} \cdot 1{,}64 = 50\,\text{K}$.
+
+## fy6-15-L3-05
+**Annettu:** jännite $U = 230\,\text{V}$, kehon virtatien resistanssi $R_\text{k} = 1{,}5\,\text{k}\Omega$, vikavirtasuojan laukaisuraja $30\,\text{mA}$; eristysresistanssit taulukosta: $R_\text{e} = 900$; $120$; $40$; $12$ ja $4{,}0\,\text{k}\Omega$ viikoilla 1, 3, 5, 7 ja 9
+**Kysytty:** a) ihmisen läpi kulkeva virta $I$ jokaisena viikkona; b) viikko, jona vikavirtasuoja laukeaa, ja miksi se ei yksin riitä; c) suurin $R_\text{e}$, jolla vikavirtasuoja laukeaa, kiloohmeina
+**Periaate:** Vuoto kulkee vaihejohtimesta eristyksen läpi runkoon ja rungosta ihmisen läpi maahan. Resistanssit $R_\text{e}$ ja $R_\text{k}$ ovat siis sarjassa, ja koko virtatien resistanssi on niiden summa (luku *Vastusten sarja- ja rinnankytkennät*). Sama virta kulkee ihmisen ja vikavirtasuojan läpi, ja se saadaan Ohmin laista. Vikavirtasuoja laukeaa, kun virta ylittää rajan $I_\text{raja} = 30\,\text{mA}$. Rajatilanteessa siis $R_\text{e} + R_\text{k} = U : I_\text{raja}$.
+**Kaava:** $I = \dfrac{U}{R_\text{e} + R_\text{k}}$; rajalla $I_\text{raja} = \dfrac{U}{R_\text{e} + R_\text{k}}$, josta $R_\text{e} = \dfrac{U}{I_\text{raja}} - R_\text{k}$
+**Muunnokset:** $R_\text{k} = 1{,}5\,\text{k}\Omega = 1500\,\Omega$; $I_\text{raja} = 30\,\text{mA} = 0{,}030\,\text{A}$; esimerkiksi $R_\text{e} = 900\,\text{k}\Omega = 900\,000\,\Omega$; virrat ampeereista milliampeereiksi: $1\,\text{A} = 1000\,\text{mA}$; tulos ohmeista kiloohmeiksi: $1\,\text{k}\Omega = 1000\,\Omega$.
+**Sijoitus:** Rajalla $R_\text{e} = \dfrac{230\,\text{V}}{0{,}030\,\text{A}} - 1500\,\Omega = 7667\,\Omega - 1500\,\Omega = 6167\,\Omega = 6{,}167\,\text{k}\Omega$. Virrat: viikko 1: $\dfrac{230\,\text{V}}{900\,000\,\Omega + 1500\,\Omega} = 0{,}26\,\text{mA}$; viikko 3: $\dfrac{230\,\text{V}}{121\,500\,\Omega} = 1{,}9\,\text{mA}$; viikko 5: $\dfrac{230\,\text{V}}{41\,500\,\Omega} = 5{,}5\,\text{mA}$; viikko 7: $\dfrac{230\,\text{V}}{13\,500\,\Omega} = 17{,}0\,\text{mA}$; viikko 9: $\dfrac{230\,\text{V}}{5500\,\Omega} = 41{,}8\,\text{mA}$
+**Vastaus:** $6{,}2\,\text{k}\Omega$, kaksi merkitsevää numeroa kuten kehon resistanssissa $1{,}5\,\text{k}\Omega$. Kohta b): vikavirtasuoja laukeaa vasta viikon 9 mittauksessa, jossa virta ylittää rajan. Viikoilla 3, 5 ja 7 virta on tuntokynnyksen yläpuolella. Viikolla 7 se ylittää myös irrottamiskynnyksen $10\,\text{mA}$, joten ote ei välttämättä irtoa, vaikka vikavirtasuoja ei laukea. Vikavirtasuoja suojaa vasta, kun virta on lähellä kammiovärinän vaaraa. Siksi rungon maadoituksen on oltava kunnossa, ja laitteen käyttö on lopetettava, kun eristys on heikentynyt.
+**Järkevyys:** Raja-arvolla $R_\text{e} = 6167\,\Omega$ koko resistanssi on $7667\,\Omega$ ja virta $230\,\text{V} : 7667\,\Omega = 30\,\text{mA}$. Viikon 9 resistanssi $4{,}0\,\text{k}\Omega$ on pienempi kuin raja, joten virta $41{,}8\,\text{mA}$ ylittää laukaisurajan. Viikon 7 resistanssi $12\,\text{k}\Omega$ on suurempi kuin raja, joten virta $17{,}0\,\text{mA}$ jää sen alle, vaikka se on ihmiselle jo vaarallinen.

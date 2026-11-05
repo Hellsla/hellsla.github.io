@@ -521,13 +521,16 @@ def item_packet(iid, lang=courses.SOURCE_LANG):
     if iid.endswith("-sovella"):
         code = iid[:-len("-sovella")]; kind, folder, st = "Sovella itsenäisesti", practice.folder(code, lang), practice.status(code, lang)
         names, hash_cmd = ["tasks.json", "solutions.md"], f"python3 scripts/practice.py hash {code}"
+    elif iid.endswith("-koe"):
+        code = iid[:-len("-koe")] + practice.EXAM; kind, folder, st = "Esimerkkikoe (example exam)", practice.folder(code, lang), practice.status(code, lang)
+        names, hash_cmd = ["tasks.json", "solutions.md"], f"python3 scripts/practice.py hash {code}"
     elif iid in investigations.ids(lang):
         kind, folder, st = "experimental investigation", investigations.folder(iid, lang), investigations.status(iid, lang)
         names, hash_cmd = ["investigation.json", "investigation.md", "teacher.md"], f"python3 scripts/investigations.py hash {iid}"
     elif iid in guides.ids(lang):
         kind, folder, st = "TVT guide", guides.folder(iid, lang), guides.status(iid, lang)
         names, hash_cmd = ["guide.json", "guide.md"], f"python3 scripts/guides.py hash {iid}"
-    else: sys.exit(f"{iid}: not a lesson, an investigation, a TVT guide or <COURSE>-sovella")
+    else: sys.exit(f"{iid}: not a lesson, an investigation, a TVT guide, <COURSE>-sovella or <COURSE>-koe")
     if lang != courses.SOURCE_LANG: hash_cmd += f" --lang {lang}"
     mode = "none" if st["reports"]["visual"] == "PASS" else "full"
     out = (f"# Packet: {iid} ({kind}, {lang})\nRole: **visual** (`.claude/agents/visual-editorial-reviewer.md`). Mode: **{mode}**. Content hash now: `{st['hash']}`.\n"

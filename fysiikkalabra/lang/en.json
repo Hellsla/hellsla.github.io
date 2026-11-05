@@ -58,7 +58,7 @@
       "Predict first: once you have committed to an answer, you notice what is surprising in the investigation.",
       "Use the simulation like an experiment: change one thing at a time and record what happens.",
       "Open an answer or a model solution only after you have tried yourself, and compare yours with it step by step.",
-      "Do the core exercises; the others are extra practice, and level 3 is challenging application.",
+      "Do the core exercises. Besides calculating, the core path includes investigating, explaining and graphical representations: written reasoning, graphs, force diagrams and interpreting measurement data. The others are extra practice, and level 3 is challenging application.",
       "Review by recalling: close the book and write down or explain from memory what you learned in the chapter. Recalling strengthens learning more than rereading.",
       "Practise in several short sessions and come back to earlier topics later. One long session just before a test is quickly forgotten.",
       "Mix review exercises from different chapters, so that you learn to recognise which model fits the situation.",
@@ -120,7 +120,9 @@
     "local_status_note_building": "Units are published as they are completed and checked. The scope and assessment have not been confirmed.",
     "local_status_ready": "Ready",
     "home_h1": "Explore. Understand. Apply.",
-    "home_sub": "Predict, try it out and explain in your own words.",
+    "home_sub": "Simulations, worked examples and exercises for every upper secondary physics module.",
+    "home_wip": "Work in progress",
+    "home_wip_title": "The site is still a work in progress: content is being added and corrected all the time.",
     "study": "How to study",
     "about": "About",
     "about_lead": "How Ruukkilabra began, why it comes in three language forms, how AI is used and who makes it.",
@@ -158,7 +160,7 @@
     "chapter_course": "All chapters of {{course}}",
     "choose": "Choose an option.",
     "exercise_word": "Exercise",
-    "exercise_path": "You do not need to do every exercise. Start with the <strong>core exercises</strong>: they practise the main points of the chapter. The other exercises of levels 1 and 2 are extra practice if you want more certainty, and level 3 is challenging application.",
+    "exercise_path": "You do not need to do every exercise. Start with the <strong>core exercises</strong>: they practise the main points of the chapter. Not all core exercises are calculations: in some you give written reasoning, draw a graph or a force diagram, or interpret measurement data. Then compare your answer with the model solution. The other exercises of levels 1 and 2 are extra practice if you want more certainty, and level 3 is challenging application.",
     "core_exercise": "Core",
     "level_kind_1": "basic practice",
     "level_kind_2": "applied practice",
@@ -202,10 +204,12 @@
     "stage_herata": "Think about it",
     "stage_ennusta": "Predict",
     "stage_tutki": "Investigate",
-    "stage_selita": "Theory summary",
-    "stage_sovella": "Apply",
+    "stage_selita": "Theory",
+    "stage_sovella": "Examples",
     "stage_tarkista": "Check your understanding",
     "nav_tarkista": "Check",
+    "lead_sovella": "First follow the worked example. Then practise the same yourself: the hints help if you get stuck.",
+    "lead_tarkista": "Finally, test whether you have reached the chapter's goals. If an answer is wrong, you get a suggestion of what to review.",
     "sim_howto": "How to use",
     "sim_model": "Assumptions of the model",
     "sim_calc": "How the calculation works",
@@ -256,7 +260,7 @@
     "learn": "In this lesson, you will learn to",
     "prior": "Prior knowledge",
     "prior_chapter": "chapter",
-    "core_path": "<strong>Core path:</strong> follow the steps in order. Tasks marked <em>Optional</em> give extra practice. <span class=\"path-count\">Optional tasks: {{n}}.</span>",
+    "core_path": "<strong>Core path:</strong> follow the steps in order. Besides calculations, the core path includes investigations, explanations and graphs. Tasks marked <em>Optional</em> give extra practice. <span class=\"path-count\">Optional tasks: {{n}}.</span>",
     "revise": "Would you change your prediction?",
     "revise_no": "No",
     "revise_yes": "Yes",
@@ -267,14 +271,17 @@
     "self_assess_lead": "Tick the points your own answer already contains.",
     "criteria_done": "What is missing from my answer?",
     "exit_lead": "Answer on your own first and only then open the answer.",
-    "check_practice": "Suggestion: one answer does not show everything you can do, but review the <a href=\"#selita\">theory summary</a> and do the <a href=\"#exercises\">core exercises</a>.",
-    "further_practice": "Review the <a href=\"#selita\">theory summary</a> and practise with the <a href=\"#exercises\">exercises</a>.",
+    "check_practice": "Suggestion: one answer does not show everything you can do, but review the <a href=\"#selita\">theory</a> and do the <a href=\"#exercises\">core exercises</a>.",
+    "further_practice": "Review the <a href=\"#selita\">theory</a> and practise with the <a href=\"#exercises\">exercises</a>.",
     "answer_in": "Answer in {{unit}}",
     "did_solution": "I have done my solution.",
     "exp_copy": "Copy table",
     "exp_csv": "Download CSV"
   },
   "js": {
+    "split_open": "Open the exercises beside the theory",
+    "split_close": "Close side view",
+    "split_status": "The exercises are now on the right, the theory on the left.",
     "check_number": "Type a number, for example 9.81.",
     "correct": "Correct.",
     "not_quite": "Not quite.",
@@ -387,7 +394,9 @@
     "ra_fast": "fast",
     "ra_voice_auto": "best available",
     "ra_bar": "Read aloud",
-    "ra_no_voice": "Your device has no English voice, so the browser reads with another voice. You can add an English voice in your device's language settings."
+    "ra_no_voice": "Your device has no English voice, so the browser reads with another voice. You can add an English voice in your device's language settings.",
+    "mc_score": "Multiple choice: {{got}} / {{max}} p",
+    "exam_total": "Your score: {{got}} / {{max}} p"
   },
   "sims": {
     "fy2-2": {
@@ -2451,9 +2460,9 @@
     }
   },
   "practice": {
-    "title": "Apply independently",
+    "title": "Challenge tasks",
     "eyebrow": "{{code}} · at the end of the module",
-    "page_title": "{{code}} · Apply independently",
+    "page_title": "{{code}} · Challenge tasks",
     "description": "{{code}} {{title}}: exercises to solve independently, model answers and marking guides for self-assessment.",
     "lead": "In these tasks nobody tells you which formula to use. Decide yourself which phenomena and models belong to the situation, solve the task on paper and justify your solution, as in the matriculation examination.",
     "howto": "Solve the task yourself first, on paper or on a computer. You may use a calculator, a data booklet and graphing software. Write out your reasoning, formulas, substitutions and answers with units.",
@@ -2476,7 +2485,7 @@
     "also": "Also accepted",
     "practise_more": "Practise more:",
     "practise_link": "{{competency}}, chapter {{chapter}}",
-    "course_lead": "At the end of the module you can try whether you can apply what you have learned independently, in the style of the matriculation examination. The model answers and marking guides open after your own solution.",
+    "course_lead": "Extended application tasks, like the tasks in Part 3 of the example exam. They are not real exam tasks. The model answers and marking guides open after your own solution.",
     "course_count": "{{tasks}} · {{points}}",
     "kind_own": "own work",
     "step_names": {
@@ -2491,7 +2500,8 @@
       "Järkevyys": "Reasonableness",
       "Mallivastaus": "Model answer",
       "Kuvaaja": "Graph",
-      "Kuvaajan lukeminen": "Reading the graph"
+      "Kuvaajan lukeminen": "Reading the graph",
+      "Perustelu": "Justification"
     },
     "tasks_n": {
       "one": "{{n}} task",
@@ -2992,7 +3002,7 @@
   "mixer": {
     "title": "Exam task mixer",
     "description": "Every exam-style task of the site in one place: filter by module, competency or task type, or pick three at random.",
-    "lead": "Here are all the exam-style tasks of the site, from the modules' Apply independently sections and the lessons of the review course. Each task shows which chapters' skills it uses.",
+    "lead": "Here are all the exam-style tasks of the site, from the modules' challenge tasks and the lessons of the review course. Each task shows which chapters' skills it uses.",
     "howto": "Choose a module, a competency or a task type, or pick three tasks at random as for an exam. Solve a task yourself first, then open the model answer and the scoring on its page.",
     "filter_label": "Filter the tasks",
     "search": "Search for a task",
@@ -3007,5 +3017,23 @@
     "none": "No task matches your choices. Choose Show all.",
     "course_heading": "Exam task mixer",
     "course_lead": "All exam-style tasks of the review lessons and the modules on one page, to filter or pick at random."
+  },
+  "exam": {
+    "title": "Example exam",
+    "eyebrow": "{{code}} · end of module",
+    "description": "{{code}} {{title}}: an example exam in three parts like a course exam, with selection rules, model answers and marking guides.",
+    "lead": "This is a practice exam like a course exam. Do it as a real exam: calmly, without looking at the model answers until you are done.",
+    "rules": "Structure of the exam",
+    "rule_all": "answer every item, at most {{max}} p.",
+    "rule_choose": "answer {{choose}} of {{n}} tasks. Each task is {{points}} p, the part gives at most {{max}} p.",
+    "max": "The maximum score is {{max}} p. Tasks worth {{offered}} p are offered, but under the selection rules at most {{max}} p count.",
+    "minutes": "Allow about {{minutes}} minutes.",
+    "howto": "Write your solutions on paper or a computer. You may use a calculator, a data booklet and graphing software. Open the model answers only when the whole exam is done.",
+    "correct": "Correct answer: {{option}}",
+    "course_lead": "Take the example exam at the end of the course like a real course exam: you have 120 minutes, and it has multiple-choice items and tasks to choose from. The model answers and marking guides open after the exam.",
+    "course_count": "{{max}} p, three parts",
+    "total_title": "Exam score",
+    "total_note": "The page scores the multiple-choice items when you open their model answer. The other points are your own assessment. In the optional parts the best tasks count under the rules.",
+    "revise": "If a task went badly, go back to the chapters listed under Skills from chapters for that task."
   }
 }

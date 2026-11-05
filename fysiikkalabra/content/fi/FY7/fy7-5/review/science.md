@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 2f29d9f694dda152
+CONTENT-HASH: bdb8a5d35a3da719
+Mode: full in the packet; scope by the teacher's ruling ("katselmoi vain muuttuneet osat"): the diff since the last PASS (`git diff 2d74cd20a -- content/fi/FY7/fy7-5/lesson.md content/fi/FY7/fy7-5/inquiry.json`; commits e16001bcb, 26592e4b6, cc317598e) plus what the changed lines touch. The exercise set is reviewed apart.
 
 ## Blocking
+(none)
 
 ## Polish
-- lesson.md:199 "käämin läpi kulkeva magneettikenttä **muuttuu**", and the correct option of inquiry.json ennuste-sisalla, "koska käämin läpi kulkeva magneettikenttä ei silloin muutu". These read as "how much field passes through the coil", which matches the informal flux definition on the next lines, so they are not an error. Writing "vuo" would still match the induction law better.
+(none)
 
 ## Checked
-- Round-1 blocker fixed. lesson.md:199 now says "Paikallaan oleva käämi … muuttumattomassa kentässä ei saa jännitettä", and the cause list says "Muutos", not "Kentän muutos". The summary says "Jos vuo ei muutu, jännitettä ei synny". The contribution says "Käämiin syntyy jännite vain, kun sen läpi kulkeva magneettivuo muuttuu". The glossary entry `induktio` uses the same flux wording. These are now consistent with e = vBl in a constant B and with the sim's ±20 mV.
-- Yleinen virhekäsitys, the hook, the exit ticket and check-1 all state the condition (a coil at rest, or flux that does not change), and none contradicts the moving-coil case.
-- Worked example: 0,20 V, one turn 0,80 mV, cm²→m², symbolic first, 2 s.f.
-- Kaava graph: Φmax 2,0 mWb, e = ∓20 mV, and the sign agrees with e = −NΔΦ/Δt.
-- Rod: eE = evB → e = vBl, with the flux-rule cross-check.
-- sim.js is unchanged since round 1. It still uses overlap(x), e = −NBlv / 0 / +NBlv, and samples e_tulo, t_tulo and e_sisalla correctly.
-- koe-1 and koe-2 isolate v and N. The model answer e·Δt = −20 mV·s = −NΔΦ is right.
-- I recomputed the virhe values (0,72 V, 72 V, 0,36 V), siirto 4,8 V with its mistakes, tarkistus-2 0,50 V with its mistakes, and exit 20 mWb in one script.
-- Every choice item has exactly one correct option, and each distractor's feedback is right.
+- inquiry.json:10, :29, :35, :39 — F = qvB now F = |q|vB: right for the magnitude (electron q = −e < 0), same notation as fy7-2 lesson.md:262–264 (|q|vB sin α, |q|vB = mv²/r).
+- Warm-up choice set unchanged in substance: still exactly one correct option (no force at v = 0); each distractor's feedback still says why it is wrong.
+- lesson.md:362 F_m = evB with e the elementary charge (magnitude) agrees with |q|vB for an electron; eE = evB ⇒ E = vB ⇒ e = vBl unchanged.
+- Chapter references renamed to the current titles: *Varatun hiukkasen liike sähkö- ja magneettikentässä* (fy7-2 meta) and *Homogeeninen sähkökenttä* (FY6 meta); the cited content is in those chapters.
+- lesson.md:198 new photo caption (ravistettava taskulamppu): magnet slides through the coil, flux through the coil changes, voltage is induced, it charges the energy store — correct and worded as the section's "muutos synnyttää jännitteen".
+- Hash bdb8a5d35a3da719 at start and end, equal to the packet's.

@@ -12,6 +12,12 @@ Finnish (fi) is the source. For every other language, lang/<lang>.json and conte
                         (## keys), the same figures (data-fig) and the same formulas once the words in \\text{}
                         are set aside; figures.json translates every text figures.py draws (figures.py --lang)
 
+  a course unit         content/<lang>/units/<id>/ of a local course that lists <lang> in its "translations"
+                        (local-courses.json, FY9; teacher 2026-11-04): unit.json, inquiry.json, exit-ticket.json
+                        and the task set (practice.py check) are the source unit's data with only the texts
+                        translated, unit.md and teacher.md keep its sections, figures and formulas, and its figures
+                        are drawn in the language (units.py figures <id> --lang, figures.json in the unit's folder)
+
 A lesson not translated yet is listed, not an error: build.py publishes a language's lessons as they come, each
 after its own two reviews (reviews.py; the review files live in the language's folder). An S2 language (S2_LANGS,
 Selkeä suomi, NOTES.md §12) needs meta.json key_concepts and may add a formula in a concrete example, never lose one.
@@ -24,7 +30,7 @@ import courses, i18n, inquiry
 ROOT = courses.ROOT
 TEXT_KEYS = {"text", "pending", "detail", "q", "a", "title", "question", "prompt", "feedback", "model", "hint", "hints", "howto", "calc", "label",
              "goals", "prerequisites_note", "glossary", "lead", "summary", "name", "mistakes", "explain", "options", "speaker",
-             "claim", "why", "predictions", "rubric", "note", "words",
+             "claim", "why", "fold", "predictions", "rubric", "note", "words",
              "solution", "contribution", "learn", "prior", "criteria", "pair", "intro", "source_note", "answer", "practice", "caption", "columns"}
 WORD_UNIT = re.compile(r"kpl|milj|vrk|kertaa|kierros|heilahdus|toistoa|tuhatta|suuruusluokkaa|ihmistä|annosta|ilma|viivaa|vahvistin|prosenttiyksik")   # a unit that is Finnish words
 
@@ -157,6 +163,64 @@ def check_lesson(fi, tr, lang, errs):
         if r.returncode: errs.append(f"{rel}: figures.py --lang {lang}: " + (r.stdout + r.stderr).strip().splitlines()[-1])
 
 
+UNIT_JSON = ("unit.json", "inquiry.json", "exit-ticket.json")
+UNIT_MD = ("unit.md", "teacher.md")
+UNIT_SET = ("sovella/tasks.json", "sovella/solutions.md")
+
+
+def check_unit(uid, lang, errs):
+    """A unit's translation (content/<lang>/units/<id>/) against its source (units.lang_of): the checks of a lesson's
+    translation, with unit.json for meta.json (its title and description translated, key_concepts in an S2 language)."""
+    global S2
+    import practice, units
+    a, b = units.folder(uid, units.lang_of(uid)), units.folder(uid, lang)
+    rel = b.relative_to(ROOT); S2 = lang in S2_LANGS
+    for n in UNIT_JSON + UNIT_MD + UNIT_SET:
+        if (a / n).exists() != (b / n).exists(): errs.append(f"{rel}/{n}: {'missing' if (a / n).exists() else 'not in the source unit'}")
+    try:
+        ua, ub = (json.loads((x / "unit.json").read_text()) for x in (a, b))
+        key_concepts(ua, ub.pop("key_concepts", None), lang, f"{rel}/unit.json", errs)
+        if "description" in ua and "description" in ub:
+            if lost(ua["description"], ub["description"], S2): errs.append(f"{rel}/unit.json.description: formulas differ from the source")
+            ub["description"] = ua["description"]           # a text, translated
+        same_data(ua, ub, f"{rel}/unit.json", errs)
+        for n in UNIT_JSON[1:]:
+            if (a / n).is_file() and (b / n).is_file(): same_data(json.loads((a / n).read_text()), json.loads((b / n).read_text()), f"{rel}/{n}", errs)
+    except (OSError, json.JSONDecodeError) as e: errs.append(f"{rel}: {e}")
+    for n in UNIT_MD:
+        if not ((a / n).is_file() and (b / n).is_file()): continue
+        ta, tb = (a / n).read_text(), (b / n).read_text(); sa, sb = md_shape(ta), md_shape(tb)
+        for k in sa:
+            if k == "formulas":
+                if Counter(sa[k]) - Counter(sb[k]) if S2 else sa[k] != sb[k]: errs.append(f"{rel}/{n}: formulas differ from the source: {formula_diff(*(re.sub(r'<svg.*?</svg>', '', x, flags=re.S) for x in (ta, tb)))}"[:600])
+            elif sa[k] != sb[k]: errs.append(f"{rel}/{n}: {k} differ from the source ({sb[k]} vs {sa[k]})"[:400])
+        if n == "unit.md":                                  # the sections inquiry.json places, by key
+            i18n.set_lang(lang); kb = [inquiry.heading(h)[0] for h in re.findall(r"^## (.+)$", tb, re.M)]
+            i18n.set_lang(units.lang_of(uid)); ka = [inquiry.heading(h)[0] for h in re.findall(r"^## (.+)$", ta, re.M)]
+            i18n.set_lang(i18n.SOURCE)
+            if ka != kb: errs.append(f"{rel}/unit.md: section keys {[k for k in kb if k not in ka]} are not the source's; name the source heading at "
+                                     "the end of a translated one: `## The electronic exam {Sähköinen koe}`")
+    if (a / UNIT_SET[0]).is_file() and (b / UNIT_SET[0]).is_file():   # its tasks: the same parts, points, answers, criteria; figures in the language
+        errs += practice.check(units.task_key(uid), lang)
+    try:
+        text, new, missing = units.draw(uid, lang)
+        if text is not None and new != text: errs.append(f"{rel}/unit.md: figures differ from figures.py (python scripts/units.py figures {uid} --lang {lang})")
+        if missing: errs.append(f"{rel}/figures.json has no translation for: " + "; ".join(missing)[:400])
+    except Exception as e: errs.append(f"{rel}: figures.py --lang {lang}: {e}")
+
+
+def unit_translations(lang):
+    """(translated, not yet) unit ids of the local courses that list lang in their "translations"."""
+    import local_courses, units
+    done, todo = [], []
+    for code, c in local_courses.load().items():
+        if lang not in c.get("translations", []): continue
+        for uid in [u["id"] for ch in c.get("chapters", []) for u in ch.get("units", [])]:
+            if units.lang_of(uid) is None: continue
+            (done if (units.folder(uid, lang) / "unit.json").is_file() else todo).append(uid)
+    return done, todo
+
+
 def check_language(lang):
     errs, notes = [e for e in i18n.check() if e.startswith(f"lang/{lang}.json")], []
     cur = courses.curriculum(); f = ROOT / "content" / lang / "courses.json"
@@ -173,6 +237,9 @@ def check_language(lang):
         check_lesson(fi, t, lang, errs)
     extra = [t.name for t in courses.lessons(lang=lang) if not (courses.translation(t, i18n.SOURCE) / "meta.json").exists()]
     errs += [f"content/{lang}/: {x} has no Finnish lesson" for x in extra]
+    done, todo = unit_translations(lang)
+    for uid in done: check_unit(uid, lang, errs)
+    notes += todo
     return errs, notes
 
 

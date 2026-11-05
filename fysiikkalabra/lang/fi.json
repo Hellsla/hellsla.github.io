@@ -58,7 +58,7 @@
       "Ennusta ensin: kun olet sitoutunut vastaukseen, huomaat, mikä tutkimuksessa yllättää.",
       "Käytä simulaatiota kuin koetta: muuta yhtä asiaa kerrallaan ja kirjaa, mitä tapahtuu.",
       "Avaa vastaus tai malliratkaisu vasta, kun olet itse yrittänyt, ja vertaa omaasi siihen vaihe vaiheelta.",
-      "Tee ydintehtävät; muut tehtävät ovat lisäharjoitusta ja tason 3 tehtävät haastavaa soveltamista.",
+      "Tee ydintehtävät. Ydinpolkuun kuuluu laskemisen lisäksi tutkimista, selittämistä ja graafisia esityksiä: sanallisia perusteluja, kuvaajia, voimakuvioita ja mittausaineiston tulkintaa. Muut tehtävät ovat lisäharjoitusta ja tason 3 tehtävät haastavaa soveltamista.",
       "Kertaa muistelemalla: sulje kirja ja kirjoita tai selitä muistista, mitä luvussa opit. Muisteleminen vahvistaa oppimista enemmän kuin uudelleen lukeminen.",
       "Harjoittele useana lyhyenä kertana ja palaa vanhoihin aiheisiin myöhemmin. Yksi pitkä rupeama juuri ennen koetta unohtuu nopeasti.",
       "Sekoita kertaustehtäviä eri luvuista, niin opit tunnistamaan, mikä malli tilanteeseen sopii.",
@@ -120,7 +120,9 @@
     "local_status_note_building": "Opintojakson oppitunteja julkaistaan sitä mukaa kuin ne valmistuvat ja on tarkistettu. Laajuutta ja arviointia ei ole vielä vahvistettu.",
     "local_status_ready": "Valmis",
     "home_h1": "Tutki. Oivalla. Sovella.",
-    "home_sub": "Ennusta, kokeile ja selitä omin sanoin.",
+    "home_sub": "Simulaatiot, esimerkit ja tehtävät kaikkiin lukion fysiikan moduuleihin.",
+    "home_wip": "Työn alla",
+    "home_wip_title": "Sivusto on vielä työn alla: sisältöä lisätään ja korjataan jatkuvasti.",
     "study": "Näin opiskelet",
     "about": "Sivustosta",
     "about_lead": "Mistä Ruukkilabra sai alkunsa, miksi se on kolmella kielimuodolla, miten tekoälyä käytetään ja kuka sen tekee.",
@@ -158,7 +160,7 @@
     "chapter_course": "Kaikki moduulin {{course}} luvut",
     "choose": "Valitse vaihtoehto.",
     "exercise_word": "Tehtävä",
-    "exercise_path": "Kaikkia tehtäviä ei tarvitse tehdä. Aloita <strong>ydintehtävistä</strong>: ne harjoittavat luvun pääasiat. Tason 1 ja 2 muut tehtävät ovat lisäharjoitusta, jos haluat varmuutta, ja tason 3 tehtävät haastavaa soveltamista.",
+    "exercise_path": "Kaikkia tehtäviä ei tarvitse tehdä. Aloita <strong>ydintehtävistä</strong>: ne harjoittavat luvun pääasiat. Kaikki ydintehtävät eivät ole laskuja, vaan osassa perustellaan sanallisesti, piirretään kuvaaja tai voimakuvio tai tulkitaan mittausaineistoa. Vertaa silloin omaa vastaustasi malliratkaisuun. Tason 1 ja 2 muut tehtävät ovat lisäharjoitusta, jos haluat varmuutta, ja tason 3 tehtävät haastavaa soveltamista.",
     "core_exercise": "Ydintehtävä",
     "level_kind_1": "perusharjoitus",
     "level_kind_2": "soveltava harjoitus",
@@ -202,10 +204,12 @@
     "stage_herata": "Pohdinta",
     "stage_ennusta": "Ennusta",
     "stage_tutki": "Tutki",
-    "stage_selita": "Teoriatiivistelmä",
-    "stage_sovella": "Sovella",
+    "stage_selita": "Teoria",
+    "stage_sovella": "Esimerkit",
     "stage_tarkista": "Tarkista osaamisesi",
     "nav_tarkista": "Tarkista",
+    "lead_sovella": "Katso ensin mallilasku. Harjoittele sitten samaa itse: vihjeet auttavat, jos jäät jumiin.",
+    "lead_tarkista": "Testaa lopuksi, osaatko luvun tavoitteet. Jos vastaus menee väärin, saat ehdotuksen, mitä kerrata.",
     "sim_howto": "Käyttöohje",
     "sim_model": "Mallin oletukset",
     "sim_calc": "Laskennan selitys",
@@ -248,8 +252,8 @@
     "self_assess_lead": "Rastita kohdat, jotka omassa vastauksessasi jo on.",
     "criteria_done": "Mitä vastauksestani puuttuu?",
     "exit_lead": "Vastaa ensin itse ja avaa vastaus vasta sitten.",
-    "check_practice": "Ehdotus: yksi vastaus ei vielä kerro koko osaamistasi, mutta kertaa asia <a href=\"#selita\">teoriatiivistelmästä</a> ja tee <a href=\"#exercises\">ydintehtävät</a>.",
-    "further_practice": "Kertaa asia <a href=\"#selita\">teoriatiivistelmästä</a> ja harjoittele <a href=\"#exercises\">tehtävillä</a>.",
+    "check_practice": "Ehdotus: yksi vastaus ei vielä kerro koko osaamistasi, mutta kertaa asia <a href=\"#selita\">teoriasta</a> ja tee <a href=\"#exercises\">ydintehtävät</a>.",
+    "further_practice": "Kertaa asia <a href=\"#selita\">teoriasta</a> ja harjoittele <a href=\"#exercises\">tehtävillä</a>.",
     "nothing_locked": "ei mitään",
     "setup": "Alkutila:",
     "locked": "Vakiona:",
@@ -261,7 +265,7 @@
     "learn": "Tällä tunnilla opit",
     "prior": "Pohjatiedot",
     "prior_chapter": "luku",
-    "core_path": "<strong>Ydinpolku:</strong> etene vaiheiden mukaan. <em>Valinnainen</em>-merkityt tehtävät tarjoavat lisäharjoittelua. <span class=\"path-count\">Valinnaisia tehtäviä {{n}}.</span>",
+    "core_path": "<strong>Ydinpolku:</strong> etene vaiheiden mukaan. Ydinpolkuun kuuluvat laskujen lisäksi tutkimukset, selitykset ja kuvaajat. <em>Valinnainen</em>-merkityt tehtävät tarjoavat lisäharjoittelua. <span class=\"path-count\">Valinnaisia tehtäviä {{n}}.</span>",
     "revise": "Muuttaisitko ennustettasi?",
     "revise_no": "En",
     "revise_yes": "Kyllä",
@@ -275,6 +279,9 @@
     "exp_csv": "Lataa CSV"
   },
   "js": {
+    "split_open": "Avaa tehtävät teorian viereen",
+    "split_close": "Sulje sivunäkymä",
+    "split_status": "Tehtävät ovat nyt oikealla. Teoria jää vasemmalle.",
     "check_number": "Kirjoita luku, esimerkiksi 9,81.",
     "correct": "Oikein.",
     "not_quite": "Ei aivan.",
@@ -387,7 +394,9 @@
     "ra_fast": "nopea",
     "ra_voice_auto": "paras saatavilla",
     "ra_bar": "Ääneenluku",
-    "ra_no_voice": "Laitteessasi ei ole suomenkielistä puheääntä, joten selain lukee toisella äänellä. Suomen puheäänen voi lisätä laitteen kieliasetuksista, tai voit käyttää Edge-selainta."
+    "ra_no_voice": "Laitteessasi ei ole suomenkielistä puheääntä, joten selain lukee toisella äänellä. Suomen puheäänen voi lisätä laitteen kieliasetuksista, tai voit käyttää Edge-selainta.",
+    "mc_score": "Monivalinnat: {{got}} / {{max}} p",
+    "exam_total": "Pisteesi: {{got}} / {{max}} p"
   },
   "sims": {
     "fy2-2": {
@@ -2451,10 +2460,10 @@
     }
   },
   "practice": {
-    "title": "Sovella itsenäisesti",
+    "title": "Haastetehtävät",
     "eyebrow": "{{code}} · moduulin lopuksi",
-    "page_title": "{{code}} · Sovella itsenäisesti",
-    "description": "{{code}} {{title}}: itsenäisesti ratkaistavat tehtävät, mallivastaukset ja pisteytysohjeet itsearviointiin.",
+    "page_title": "{{code}} · Haastetehtävät",
+    "description": "{{code}} {{title}}: laajat soveltavat haastetehtävät, mallivastaukset ja pisteytysohjeet itsearviointiin.",
     "lead": "Näissä tehtävissä kukaan ei kerro, mitä kaavaa käyttää. Päätä itse, mitkä ilmiöt ja mallit tilanteeseen liittyvät, ratkaise tehtävä paperille ja perustele ratkaisusi, kuten ylioppilaskokeessa.",
     "howto": "Ratkaise ensin itse paperille tai tietokoneelle. Saat käyttää laskinta, taulukkokirjaa ja kuvaajaohjelmaa. Kirjoita näkyviin perustelut, kaavat, sijoitukset ja vastaukset yksiköineen.",
     "points": "{{n}} p",
@@ -2476,7 +2485,7 @@
     "also": "Hyväksytään myös",
     "practise_more": "Harjoittele lisää:",
     "practise_link": "{{competency}}, luku {{chapter}}",
-    "course_lead": "Moduulin lopuksi voit kokeilla, osaatko soveltaa oppimaasi itsenäisesti ylioppilaskokeen tapaan. Mallivastaukset ja pisteytysohjeet avautuvat oman ratkaisun jälkeen.",
+    "course_lead": "Laajoja soveltavia tehtäviä, samanlaisia kuin esimerkkikokeen osan 3 tehtävät. Ne eivät ole oikeita koetehtäviä. Mallivastaukset ja pisteytysohjeet avautuvat oman ratkaisun jälkeen.",
     "course_count": "{{tasks}} · {{points}}",
     "kind_own": "oma työ",
     "step_names": {
@@ -2491,7 +2500,8 @@
       "Järkevyys": "Järkevyys",
       "Mallivastaus": "Mallivastaus",
       "Kuvaaja": "Kuvaaja",
-      "Kuvaajan lukeminen": "Kuvaajan lukeminen"
+      "Kuvaajan lukeminen": "Kuvaajan lukeminen",
+      "Perustelu": "Perustelu"
     },
     "tasks_n": {
       "one": "{{n}} tehtävä",
@@ -2992,7 +3002,7 @@
   "mixer": {
     "title": "YO-sekoitin",
     "description": "Kaikki sivuston ylioppilaskokeen tyyliset tehtävät yhdessä: suodata moduulin, osaamisen tai tehtävätyypin mukaan tai arvo kolme tehtävää.",
-    "lead": "Tässä ovat kaikki sivuston ylioppilaskokeen tyyliset tehtävät moduulien Sovella itsenäisesti -osioista ja kertauskurssin tunneilta. Jokainen tehtävä kertoo, minkä lukujen taitoja se käyttää.",
+    "lead": "Tässä ovat kaikki sivuston ylioppilaskokeen tyyliset tehtävät moduulien haastetehtävistä ja kertauskurssin tunneilta. Jokainen tehtävä kertoo, minkä lukujen taitoja se käyttää.",
     "howto": "Valitse moduuli, osaaminen tai tehtävätyyppi, tai arvo kolme tehtävää kuin koetta varten. Ratkaise tehtävä ensin itse, ja avaa sitten sen sivulla mallivastaus ja pisteytys.",
     "filter_label": "Suodata tehtäviä",
     "search": "Hae tehtävää",
@@ -3007,5 +3017,23 @@
     "none": "Yksikään tehtävä ei vastaa valintoja. Valitse Näytä kaikki.",
     "course_heading": "YO-sekoitin",
     "course_lead": "Kertaustuntien ja moduulien kaikki ylioppilaskokeen tyyliset tehtävät yhdellä sivulla, suodatettavina ja arvottavina."
+  },
+  "exam": {
+    "title": "Esimerkkikoe",
+    "eyebrow": "{{code}} · moduulin lopuksi",
+    "description": "{{code}} {{title}}: esimerkkikoe, jossa on kurssikokeen tapaan kolme osaa, valintasäännöt, mallivastaukset ja pisteytysohjeet.",
+    "lead": "Tämä on kurssikokeen kaltainen harjoituskoe. Tee se kuin oikea koe: rauhassa ja katsomatta mallivastauksia ennen kuin olet valmis.",
+    "rules": "Kokeen rakenne",
+    "rule_all": "vastaa kaikkiin kohtiin, enintään {{max}} p.",
+    "rule_choose": "vastaa {{choose}} tehtävään {{n}}:stä. Tehtävä on {{points}} p, osasta saa enintään {{max}} p.",
+    "max": "Kokeen enimmäispistemäärä on {{max}} p. Tehtäviä on tarjolla yhteensä {{offered}} p:n edestä, mutta valintasääntöjen takia niistä voi saada enintään {{max}} p.",
+    "minutes": "Varaa aikaa noin {{minutes}} minuuttia.",
+    "howto": "Kirjoita ratkaisut paperille tai tietokoneelle. Saat käyttää laskinta, taulukkokirjaa ja kuvaajaohjelmaa. Avaa mallivastaus vasta, kun koko koe on tehty.",
+    "correct": "Oikea vastaus: {{option}}",
+    "course_lead": "Tee esimerkkikoe kurssin lopuksi kuin oikea kurssikoe: aikaa on 120 minuuttia, ja kokeessa on monivalintoja ja valittavia tehtäviä. Mallivastaukset ja pisteytysohjeet avautuvat kokeen jälkeen.",
+    "course_count": "{{max}} p, kolme osaa",
+    "total_title": "Kokeen pisteet",
+    "total_note": "Monivalinnat pisteyttää sivu, kun avaat niiden mallivastauksen. Muut pisteet ovat oma arviosi. Valinnaisista osista lasketaan parhaat tehtävät sääntöjen mukaan.",
+    "revise": "Jos jokin tehtävä jäi heikoksi, palaa luvuille, jotka on mainittu tehtävän kohdassa Taidot luvuista."
   }
 }

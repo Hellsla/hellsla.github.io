@@ -3,6 +3,7 @@
     {
       "id": "fy4-14-L1-01",
       "level": 1,
+      "core": true,
       "text": "Laskuvarjohyppääjä, jonka massa varusteineen on $75{,}0\\,\\text{kg}$, putoaa vatsa alaspäin rajanopeudella. Piirrä hyppääjän voimakuvio. Kuinka suuri on ilmanvastus?",
       "answer": 735.75,
       "unit": "N",
@@ -30,6 +31,7 @@
     {
       "id": "fy4-14-L1-04",
       "level": 1,
+      "core": true,
       "text": "Jalkapallo, jonka massa on $0{,}450\\,\\text{kg}$, on potkaistu suoraan ylöspäin, ja se nousee vielä. Eräällä hetkellä ilmanvastus on $1{,}20\\,\\text{N}$. Piirrä pallon voimakuvio. Kuinka suuri on palloon vaikuttava kokonaisvoima tällä hetkellä?",
       "answer": 5.6145,
       "unit": "N",
@@ -78,6 +80,7 @@
     {
       "id": "fy4-14-L1-07",
       "level": 1,
+      "core": true,
       "text": "Kaksi samankokoista ja samanmuotoista palloa pudotetaan korkealta ilmassa. Toinen on täytetty hiekalla ja toinen on tyhjä. Kumpi pallo saavuttaa suuremman rajanopeuden?",
       "kind": [
         "concept"
@@ -158,6 +161,7 @@
     {
       "id": "fy4-14-L2-05",
       "level": 2,
+      "core": true,
       "text": "Vaahtomuovipallon massa on $20{,}0\\,\\text{g}$. Pallo pudotetaan levosta, ja sen nopeus mitataan videolta. Taulukko on esimerkkiaineisto.\n\nMääritä pallon kiihtyvyys hetkellä $t = 0{,}60\\,\\text{s}$ kulmakertoimena taulukon pisteistä $t = 0{,}40\\,\\text{s}$ ja $t = 0{,}80\\,\\text{s}$. Kuinka suuri ilmanvastus palloon vaikuttaa tällä hetkellä?",
       "kind": [
         "data",

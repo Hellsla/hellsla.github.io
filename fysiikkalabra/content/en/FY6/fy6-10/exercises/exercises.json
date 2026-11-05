@@ -11,6 +11,7 @@
     {
       "id": "fy6-10-L1-02",
       "level": 1,
+      "core": true,
       "text": "The charges of two small spheres are $+15\\,\\text{nC}$ and $+25\\,\\text{nC}$, and the distance between the centres of the spheres is $4.0\\,\\text{cm}$. How large is the electric force between the spheres? Give the answer in millinewtons.",
       "answer": 2.107,
       "unit": "mN",
@@ -27,6 +28,7 @@
     {
       "id": "fy6-10-L1-04",
       "level": 1,
+      "core": true,
       "text": "The charges of two identical metal spheres are $+12\\,\\text{nC}$ and $-4.0\\,\\text{nC}$. The spheres are touched together and separated. How large is the charge of each sphere after the contact? Give the answer in nanocoulombs.",
       "answer": 4.0,
       "unit": "nC",
@@ -38,6 +40,75 @@
       "text": "Two point charges, $+2.0\\,\\mu\\text{C}$ and $-4.0\\,\\mu\\text{C}$, are $0.50\\,\\text{m}$ apart. How large is the electric force between them?",
       "answer": 0.2876,
       "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-10-L1-06",
+      "level": 1,
+      "core": true,
+      "text": "A neutral plastic rod and a neutral woollen cloth are rubbed against each other, and the rod becomes negatively charged. Which statement about the charges of the objects after the rubbing is correct?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The wool is positive and equal in magnitude, because electrons moved to the rod.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The wool stays neutral, because the friction creates new electrons in the rod out of nothing.",
+          "feedback": "Charge is not created out of nothing. Electrons are not made but move from one object to the other, so the negative charge the rod received is missing from somewhere else: from the wool."
+        },
+        {
+          "text": "The wool is negative like the rod, because the friction gives both of them extra electrons.",
+          "feedback": "Neither can get electrons without them coming from somewhere. When the rod gains electrons, the wool must lose some, so the wool stays positive."
+        },
+        {
+          "text": "The wool is positive and equal in magnitude, because electrons moved to the rod.",
+          "correct": true,
+          "feedback": "Correct: when rubbing, electrons move from one object to the other. The rod gained electrons and the wool lost the same number, so the charges of the objects are equal in magnitude but opposite in sign, and the total charge is conserved."
+        },
+        {
+          "text": "The wool is positive but less charged, because part of the charge turned into heat.",
+          "feedback": "Charge does not turn into heat or disappear. According to the conservation of charge, the total charge of an isolated system stays the same, so the charge of the wool is equal in magnitude to that of the rod."
+        }
+      ]
+    },
+    {
+      "id": "fy6-10-L1-07",
+      "level": 1,
+      "text": "The electric force between two point charges is $F$. What happens to the force when the distance between the charges is doubled and the charges stay the same?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The force decreases to one quarter, because the distance is in the denominator to the second power.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The force halves, because the force is inversely proportional to the distance and not to its square.",
+          "feedback": "The force is inversely proportional not to the distance but to its square. At double the distance the denominator $r^2$ becomes four times as large, not twice."
+        },
+        {
+          "text": "The force doubles, because a longer distance lets the charges act over a larger area.",
+          "feedback": "The electric force weakens as the distance grows; it does not get stronger. The distance is in the denominator of the formula, so increasing it reduces the force."
+        },
+        {
+          "text": "The force stays the same, because the charges and the constant of Coulomb's law do not change at all.",
+          "feedback": "The charges and the constant really do stay the same, but the force also depends on the distance: $r$ is in the denominator of the formula, so changing it changes the force."
+        },
+        {
+          "text": "The force decreases to one quarter, because the distance is in the denominator to the second power.",
+          "correct": true,
+          "feedback": "Correct: when the distance doubles, the value of the denominator $r^2$ becomes four times as large, so the force decreases to one quarter."
+        }
+      ]
+    },
+    {
+      "id": "fy6-10-L1-08",
+      "level": 1,
+      "text": "The current of a mobile phone charger is $0.50\\,\\text{A}$. How large a charge moves in the circuit in $3.0\\,\\text{min}$? Give the answer in coulombs.",
+      "answer": 90.0,
+      "unit": "C",
       "tolerance": 0.02
     }
   ],
@@ -73,6 +144,111 @@
       "answer": 36.94,
       "unit": "nC",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-10-L2-05",
+      "level": 2,
+      "core": true,
+      "text": "A torsion balance is used to measure the force $F$ between two small spheres with equal charges as a function of the distance $r$ between their centres. The measurement results are in the table (example data).\n\na) For each distance, calculate $1 : r^2$ and plot the points $(1 : r^2,\\, F)$ on a coordinate grid. Justify from the graph that the force is inversely proportional to the square of the distance.\n\nb) Fit a straight line through the origin to the points and determine the charge $q$ of each sphere from its slope. The constant of Coulomb's law is $k = 8.988 \\cdot 10^{9}\\,\\tfrac{\\text{N} \\cdot \\text{m}^2}{\\text{C}^2}$. Give the answer in nanocoulombs.\n\nWrite the result of part b) in the answer box.",
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "answer": 24.73,
+      "unit": "nC",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Force $F$ between the spheres as a function of the distance $r$ (example data)",
+        "columns": [
+          "$r\\,(\\text{cm})$",
+          "$F\\,(\\text{mN})$"
+        ],
+        "rows": [
+          [
+            "2.0",
+            "13.6"
+          ],
+          [
+            "3.0",
+            "6.4"
+          ],
+          [
+            "4.0",
+            "3.4"
+          ],
+          [
+            "5.0",
+            "2.3"
+          ],
+          [
+            "6.0",
+            "1.52"
+          ],
+          [
+            "8.0",
+            "0.91"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-10-L2-06",
+      "level": 2,
+      "text": "The force between two pairs of charges was measured at different distances (example data). In pair A the charge of each sphere is $20\\,\\text{nC}$. In pair B the charge of one sphere is $20\\,\\text{nC}$ and that of the other is an unknown $q_\\text{B}$. All the charges have the same sign.\n\na) Calculate the ratio of the forces $F_\\text{B} : F_\\text{A}$ for each distance and explain why the ratio is approximately the same at all distances.\n\nb) From the mean of the ratios, deduce $q_\\text{B}$. Give the answer in nanocoulombs.\n\nWrite the result of part b) in the answer box.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 69.79,
+      "unit": "nC",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Force $F$ for the charge pairs A and B (example data)",
+        "columns": [
+          "$r\\,(\\text{cm})$",
+          "$F_\\text{A}\\,(\\text{mN})$",
+          "$F_\\text{B}\\,(\\text{mN})$"
+        ],
+        "rows": [
+          [
+            "2.0",
+            "9.1",
+            "31.0"
+          ],
+          [
+            "3.0",
+            "3.9",
+            "14.4"
+          ],
+          [
+            "4.0",
+            "2.3",
+            "7.6"
+          ],
+          [
+            "6.0",
+            "1.0",
+            "3.5"
+          ],
+          [
+            "8.0",
+            "0.55",
+            "1.95"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-10-L2-07",
+      "level": 2,
+      "text": "A student calculates the electric force between two point charges, $+8.0\\,\\text{nC}$ and $+12\\,\\text{nC}$. The distance between the charges is $3.0\\,\\text{cm}$. The student uses the formula $F = k\\,\\dfrac{q_1 q_2}{r}$ and gets the result $0.029\\,\\text{mN}$.\n\na) What is the error in the student's solution?\n\nb) Calculate the force correctly in millinewtons. The constant of Coulomb's law is $k = 8.988 \\cdot 10^{9}\\,\\tfrac{\\text{N} \\cdot \\text{m}^2}{\\text{C}^2}$.\n\nWrite the result of part b) in the answer box.",
+      "kind": [
+        "error"
+      ],
+      "answer": 0.9587,
+      "unit": "mN",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -87,7 +263,7 @@
     {
       "id": "fy6-10-L3-02",
       "level": 3,
-      "text": "In a hydrogen atom, the electron and the proton attract each other with both an electric force and a gravitational force $F_\\text{g} = G\\,\\tfrac{m_\\text{e} m_\\text{p}}{r^2}$, where $G = 6.674 \\cdot 10^{-11}\\,\\tfrac{\\text{N} \\cdot \\text{m}^2}{\\text{kg}^2}$. The mass of the electron is $m_\\text{e} = 9.109 \\cdot 10^{-31}\\,\\text{kg}$ and that of the proton $m_\\text{p} = 1.673 \\cdot 10^{-27}\\,\\text{kg}$. How many times larger is the electric force than the gravitational force? Also explain why the answer does not depend on the distance.",
+      "text": "In a hydrogen atom, the electron and the proton attract each other with both an electric force and a gravitational force $F_\\text{g} = G\\,\\tfrac{m_\\text{e} m_\\text{p}}{r^2}$, where $G = 6.674 \\cdot 10^{-11}\\,\\tfrac{\\text{N} \\cdot \\text{m}^2}{\\text{kg}^2}$.\n\nThe mass of the electron is $m_\\text{e} = 9.109 \\cdot 10^{-31}\\,\\text{kg}$ and that of the proton $m_\\text{p} = 1.673 \\cdot 10^{-27}\\,\\text{kg}$.\n\nHow many times larger is the electric force than the gravitational force? Also explain why the answer does not depend on the distance.",
       "answer": 2.268e+39,
       "unit": "",
       "tolerance": 0.02
@@ -98,6 +274,30 @@
       "text": "A point charge $+4.0\\,\\text{nC}$ is at $x = 0$ and a point charge $+1.0\\,\\text{nC}$ at $x = 12\\,\\text{cm}$. A third point charge is brought to a point on the $x$-axis between them. At which point is there no net force on the third charge? Give the answer in centimetres from the point $x = 0$.",
       "answer": 8.0,
       "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-10-L3-04",
+      "level": 3,
+      "text": "Example situation: two fixed point charges are on the $x$-axis, $q_1 = +6.0\\,\\text{nC}$ at $x = 0$ and $q_2 = -2.5\\,\\text{nC}$ at $x = 12\\,\\text{cm}$. A small positive test charge, on which only these two charges act, is brought to the axis.\n\na) Using the directions of the forces, justify for each of the three regions of the axis ($x < 0$, $0 < x < 12\\,\\text{cm}$ and $x > 12\\,\\text{cm}$) whether the net force on the test charge can be zero.\n\nb) Calculate the point where the net force is zero. Give the answer in centimetres from the point $x = 0$.\n\nc) Explain why the result does not depend on the magnitude of the test charge.\n\nWrite the result of part b) in the answer box.",
+      "kind": [
+        "reasoning",
+        "model"
+      ],
+      "answer": 33.85,
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-10-L3-05",
+      "level": 3,
+      "text": "Example situation: two identical small spheres, each of mass $0.80\\,\\text{g}$, are suspended from the same point by light, electrically insulating threads $0.30\\,\\text{m}$ long.\n\nThe spheres have received equal charges of the same sign and repel each other. In equilibrium each thread is at an angle $\\theta = 10\\,{}^\\circ$ to the vertical.\n\nThe spheres can be treated as point charges, and $g = 9.81\\,\\text{m/s}^2$.\n\na) Draw the forces acting on one sphere and use them to justify that the magnitude of the electric force is $F = mg\\tan\\theta$.\n\nb) Calculate the distance between the centres of the spheres and the charge $q$ of each sphere. Give the charge in nanocoulombs.\n\nc) The charge of one sphere is tripled. Explain why the angle of each thread from the vertical is still equal, even though the angle changes.\n\nWrite the charge of part b) in the answer box.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 40.88,
+      "unit": "nC",
       "tolerance": 0.02
     }
   ]

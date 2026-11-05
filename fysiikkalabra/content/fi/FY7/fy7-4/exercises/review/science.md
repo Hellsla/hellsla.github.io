@@ -1,18 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: a3578858afaf37ff
+CONTENT-HASH: 2410c9996b853823
 
 ## Blocking
+- (none)
 
 ## Polish
-- fy7-4-L2-02 (solutions.md, answers.py): the drawn line goes through (5,0 A; 1,50 g), which gives B = 0,0736 → 0,074 T. An exact least-squares fit through the origin of the five plotted points gives a slope of 0,2995 g/A, so B = 0,0734 → 0,073 T. The two values straddle the rounding boundary. The tolerance (3 %) accepts both, so nothing needs to change. If you want a cleaner case, nudge one point so that the least-squares slope rounds to 0,300 g/A.
+- solutions.md:196 fy7-4-L3-05 b) (B) — new sentence "Sivusuunnassa järjestely ei ole vakaa: sivuun siirtynyt johdin voisi kääntyä tai kaatua" names no mechanism and clashes with the task, where the wire "voi liikkua vain pystysuunnassa". Write: "Ilman sivuttaista ohjausta tasapaino olisi sivusuunnassa epävakaa: sivulle siirtyneeseen johtimeen kohdistuvalla hylkimisvoimalla on vaakakomponentti, joka työntää sitä kauemmas. Siksi tehtävässä johdin liikkuu vain pystysuunnassa."
+- docs/exercise-bank/FY7.md:27 (carried over from round 1) — Taso 3 still names the terminal-velocity/energy rail task and the commutator + torque task; record that L3-04 (rail with friction, a(I) data) and L3-05 (levitating wire) were made instead.
+- exercises.json fy7-4-L2-05 says "keksitty esimerkkiaineisto", the other data tasks "esimerkkiaineisto"; use one wording throughout.
 
 ## Checked
-- Round-1 blocking items are fixed. The Earth's field is now 53 µT at 74° (WMM2025), and L3-03 has been recomputed to 1,813 kA → 1,8 kA in exercises.json, solutions.md and answers.py. "Kompassin mukaan itä–länsi" and "magneettiseen pohjoiseen" now make the wire perpendicular to the horizontal component.
-- I recomputed all twelve answers in one script with my own formulas: 0,24 N; 0,193 → 0,19 N; 0,10 T; 1,019 → 1,0 N; 3,0 A; 3,2 mN; 0,0736 → 0,074 T; 30°; 18 m/s²; 2,354 → 2,4 A; −266,7 → −270 N; 1,813 → 1,8 kA. They agree with exercises.json and answers.py.
-- L3-02: the new sign rule (attract +, repel −) and the answer −270 N are consistent in the task, the solution and answers.py.
-- L1-04 geometry: a wire along the magnetic meridian lies in B's vertical plane, so the angle between them equals the inclination, 74°. The Järkevyys estimate (about 1 kg/m, about 1000 N) is now realistic.
-- Directions: in L3-03 an eastward current × the northward H gives a force up, and the vertical component gives a horizontal force. In L3-01 the current direction is chosen so the force points up, and reversing it gives a tension of 2mg. In L2-01 parallel currents attract.
-- Figure balance-points: it gives every value the task needs, its description carries the same data, and it shows no B or slope.
-- Reasonableness checks: the equivalent masses (25 g, 100 g, 0,3 g, 36 g, 27 kg) and the comparisons are correct.
-- Conversions, the symbolic solution before substitution, and rounding to the limiting datum are right in all twelve solutions.
-- Scope and notation match the lesson brief (F = I l B sin α, B₁ = μ0 I₁ : (2πr), μ0 in Vs/(Am)). Every two-wire task meets l ≫ r.
+- Round 2. Round 1 had no Blocking items; the round-1 Polish items are fixed: L3-04 Periaate now "liikkuvan tangon kiihtyvyys on positiivinen vain, kun IlB > μmg"; L2-07 Järkevyys uses the lesson example's radius 1,3 cm (brief: r = 1,3 cm, N = 60): 5,27 m / (2π · 0,013 m) = 64,5 ≈ 65 turns, correct.
+- Recomputed all 19 numeric answers in one script with my own formulas; all equal answers.py and exercises.json within tolerance (L3-03 with F_vert = IlB cos 74° → 1,81 kA; L2-07 LSQ through origin 5,795 N/A → 5,27 m; L3-04 slope 0,935, intercept −1,96 → B = 0,351 T, μ = 0,200).
+- L3-05 Sijoitus rewritten in steps: μ₀l = 6,283 · 10⁻⁷ Vs/A, 2πrmg = 1,849 · 10⁻³ N·m, ratio 2943 A², I = 54,25 A; units consistent; renders cleanly at 1280 px (shot L3-1280-8).
+- L1-06: correct option moved to third place, wording unchanged in physics; exactly one correct option, distractor feedback right.
+- L1-08 Periaate wording "verrannollinen kulman siniin eikä itse kulmaan" correct.
+- L2-05, L2-07, L3-04 captions shortened; data unchanged.
+- Levels 8/7/5; scope FY7 + FY4 dynamics; notation matches the brief.
+- Hash identical at start and end.

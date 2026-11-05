@@ -1,13 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: b6131b393ad33d64
+CONTENT-HASH: eda68d9188c67dc3
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
-## Polish
-- (none)
+## Fixed
+- exercises.json L2-05 b): "Moninkertainenko" (awkward, abstract) changed to "Kuinka monta kertaa suurempi ..." (plain words, same meaning, no numbers touched).
 
-## Checked (delta: L1-04 Järkevyys wording)
-- "lämpö ei pääse pois" became "siitä siirtyy huonosti lämpöä ympäristöön. Silloin johto voi kuumeta vaarallisesti.": two short sentences, plain words, causal link kept, no new term.
-- Task, hints, answer 51 W and solution steps unchanged; 12 tasks over levels 5/4/3 as approved.
-- fi-easy stays plain Finnish.
+## Polish
+(none)
+
+## Checked
+- All 8 new exercises: task, hints, distractor feedback and solution steps keep the fi pedagogy (one correct option, feedback names the misconception: class I/III, earthing vs fuse vs RCD).
+- Plain Finnish: short sentences, terms explained (läpilyöntilujuus, vikavirta, suojausluokka).
+- Reasonableness sections and answer units translated, none dropped.
+

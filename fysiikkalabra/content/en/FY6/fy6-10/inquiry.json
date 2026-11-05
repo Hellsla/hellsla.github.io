@@ -7,7 +7,7 @@
     "describe the electric field of a point charge with field lines."
   ],
   "prior": [
-    "Electric current is moving charge, $I = Q : t$, and the charge of an electron is $-e$ (chapter *Electric circuit, current and voltage*)",
+    "Electric current is moving charge, $I = Q : t$, and the charge of an electron is $-e$ (chapter *Circuit, electric current and voltage*)",
     "A force and its reaction force are equal in magnitude and opposite in direction (chapter *Interaction and force: Newton's first and third laws*)"
   ],
   "activities": [
@@ -29,7 +29,7 @@
         {
           "text": "$0.25\\,\\text{A}$",
           "correct": true,
-          "feedback": "Correct. Electric current is the charge that passes in a unit of time, $I = Q : t = 0.50\\,\\text{C} : 2.0\\,\\text{s} = 0.25\\,\\text{A}$ (chapter *Electric circuit, current and voltage*). Today we look at where charge comes from and how charges act on each other."
+          "feedback": "Correct. Electric current is the charge that passes in a unit of time, $I = Q : t = 0.50\\,\\text{C} : 2.0\\,\\text{s} = 0.25\\,\\text{A}$ (chapter *Circuit, electric current and voltage*). Today we look at where charge comes from and how charges act on each other."
         },
         {
           "text": "$1.0\\,\\text{A}$",

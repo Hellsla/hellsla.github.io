@@ -29,4 +29,19 @@ a["fy8-11-L3-01"] = rate * 24 * 3600 * m["U-235"] * U_KG                        
 Q_pp = (4 * m["H-1"] - m["He-4"]) * U_MEV * 1e6 * EV                            # 4 H-1 -> He-4: 26,73 MeV in J
 a["fy8-11-L3-02"] = 3.83e26 / Q_pp / 1e37                                      # Sun 3,83e26 W: 8,95e37 He-4 per s (unit 10^37 1/s)
 a["fy8-11-L3-03"] = 24100 * math.log2(1000) / 1e5                              # Pu-239 to 1/1000: 2,402e5 a (unit 10^5 a)
+# Added exercises (MC L1-06, L1-07, L2-07 have no numeric answer)
+a["fy8-11-L1-08"] = 200e6 * EV / 1e-11                                         # 200 MeV in J: 3,204e-11 J (unit 10^-11 J)
+N_g = [1000, 1013, 1022, 1038, 1049, 1064]                                     # example data: neutrons per generation
+k_n = (N_g[-1] / N_g[0]) ** (1 / 5)                                            # k from first and last value: 1,01248 (> 1, supercritical)
+a["fy8-11-L2-05"] = N_g[0] * k_n ** 50                                         # same k to generation 50: 1859,6 -> 1860
+P_fin = [890, 890, 1600, 507, 507]                                             # MW, net electric power of the five Finnish reactors (TVO:n ja Fortumin verkkosivut, tilanne 2024)
+a["fy8-11-L2-06"] = 0.90 * sum(P_fin) * 365 * 24 / 1e6                         # capacity factor 0,90, 8760 h: 34,64 TWh
+t_s, A_s = [0, 10, 20, 30, 40, 50], [30000, 23900, 19250, 15050, 11950, 9650]  # example data: activity (TBq/t) of spent fuel, t from ~10 a after discharge
+y_s = [math.log(v) for v in A_s]                                               # least squares of ln A against t (standard library only)
+mt, my = sum(t_s) / 6, sum(y_s) / 6
+slope = sum((x - mt) * (y - my) for x, y in zip(t_s, y_s)) / sum((x - mt) ** 2 for x in t_s)   # -lambda = -0,02285 1/a
+ln_A0 = my - slope * mt                                                        # ln A0 = 10,311 -> A0 = 30060 TBq/t
+a["fy8-11-L3-04"] = (ln_A0 - math.log(100)) / -slope                           # time to 100 TBq/t: 249,7 a (T_1/2 = 30,3 a)
+P_el, eta, E_th = 507e6, 0.33, 507e6 / 0.33 * 0.92 * 365 * 24 * 3600           # Loviisa unit: P_th = 1536 MW, 92 % of 365 d: 4,457e16 J
+a["fy8-11-L3-05"] = E_th / Q_f * m["U-235"] * U_KG                              # fissions 1,391e27 x 3,903e-25 kg = 543,0 kg U-235 per year (stored 540: two significant figures)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

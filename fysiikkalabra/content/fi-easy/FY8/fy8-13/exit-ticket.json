@@ -1,7 +1,7 @@
 [
   {
     "q": "Mitä eroa on absorboituneella annoksella (yksikkö gray) ja efektiivisellä annoksella (yksikkö sievert)?",
-    "a": "Absorboitunut annos kertoo, kuinka paljon säteilyenergiaa kudos absorboi kilogrammaa kohti. Efektiivinen annos painottaa sitä säteilylajin ja säteilytettyjen kudosten herkkyyden mukaan. Siksi se kuvaa koko kehon pitkän aikavälin syöpäriskiä."
+    "a": "Absorboitunut annos kertoo, kuinka paljon säteilyenergiaa kudos absorboi kilogrammaa kohti. Efektiivinen annos painottaa sitä säteilylajin ja säteilytettyjen kudosten herkkyyden mukaan. Siksi sen avulla arvioidaan pienten annosten pitkän aikavälin syöpäriskiä keskimääräiselle ihmiselle. Se ei kerro yhden ihmisen omaa riskiä."
   },
   {
     "q": "Nimeä kolme tapaa suojautua gammasäteilyn lähteeltä ja kerro, miten kukin pienentää annosta.",

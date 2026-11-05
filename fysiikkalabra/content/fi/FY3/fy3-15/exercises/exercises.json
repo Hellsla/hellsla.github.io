@@ -3,6 +3,7 @@
     {
       "id": "fy3-15-L1-01",
       "level": 1,
+      "core": true,
       "text": "Vesivoimalaitoksen turbiini muuttaa veden liike-energiasta mekaaniseksi energiaksi $92{,}0\\,\\%$, ja generaattori muuttaa turbiinin akselin energiasta sähköksi $98{,}0\\,\\%$. Mikä on koko laitoksen hyötysuhde? Anna vastaus prosentteina.",
       "answer": 90.2,
       "unit": "%",
@@ -44,6 +45,7 @@
     {
       "id": "fy3-15-L1-06",
       "level": 1,
+      "core": true,
       "text": "Lauhdevoimalaitos ja yhteistuotantolaitos polttavat saman määrän samaa polttoainetta. Yhteistuotantolaitoksen kokonaishyötysuhde on silti selvästi suurempi. Mikä tämän selittää?",
       "kind": [
         "concept"
@@ -98,6 +100,7 @@
     {
       "id": "fy3-15-L2-01",
       "level": 2,
+      "core": true,
       "text": "Turvetta polttavan lauhdevoimalaitoksen polttoaineteho on $300\\,\\text{MW}$. Kattilan hyötysuhde on 0,880, höyrykierron (turbiini ja lauhdutin) 0,420 ja generaattorin 0,980. Kuinka suuri on laitoksen sähköteho? Anna vastaus megawatteina.",
       "answer": 109,
       "unit": "MW",
@@ -171,6 +174,7 @@
     {
       "id": "fy3-15-L2-06",
       "level": 2,
+      "core": true,
       "text": "Taulukossa on kolmen voimalaitoksen polttoaine- tai reaktoriteho $P_0$ ja sähköteho $P_\\text{s}$ (esimerkkiaineisto). Kaikki laitokset ovat lauhdevoimalaitoksia, ja loput energiasta siirtyy hukkalämpönä ympäristöön.\n\na) Laske kunkin laitoksen hyötysuhde.\n\nb) Laske kunkin laitoksen hukkalämmön teho $P_\\text{h}$.\n\nc) Onko heikoimman hyötysuhteen laitoksella myös suurin hukkalämmön teho? Perustele.\n\nAnna b)-kohdassa suurimman hukkalämmön teho vastauslaatikkoon megawatteina.",
       "kind": [
         "data",
@@ -229,7 +233,7 @@
     {
       "id": "fy3-15-L3-02",
       "level": 3,
-      "text": "Tuulipuisto tuottaa vuodessa sähköä $36{,}0\\,\\text{GWh}$ ($1\\,\\text{GWh} = 3{,}60 \\cdot 10^{12}\\,\\text{J}$). Jos sama sähkö tuotettaisiin kivihiilellä lauhdevoimalaitoksessa, jonka hyötysuhde on 0,380 ja jossa hiilen lämpöarvo on $25{,}0\\,\\text{MJ/kg}$, kuinka monta kilotonnia hiiltä ($1\\,\\text{kt} = 10^{6}\\,\\text{kg}$) vuodessa poltettaisiin? Selitä myös, miksi tuulipuiston hyötysuhdetta ei voi verrata hiilivoimalaitoksen hyötysuhteeseen yhtä suoraan kuin kahden lauhdevoimalaitoksen.",
+      "text": "Tuulipuisto tuottaa vuodessa sähköä $36{,}0\\,\\text{GWh}$ ($1\\,\\text{GWh} = 3{,}60 \\cdot 10^{12}\\,\\text{J}$).\n\nJos sama sähkö tuotettaisiin kivihiilellä lauhdevoimalaitoksessa, jonka hyötysuhde on 0,380 ja jossa hiilen lämpöarvo on $25{,}0\\,\\text{MJ/kg}$, kuinka monta kilotonnia hiiltä ($1\\,\\text{kt} = 10^{6}\\,\\text{kg}$) vuodessa poltettaisiin?\n\nSelitä myös, miksi tuulipuiston hyötysuhdetta ei voi verrata hiilivoimalaitoksen hyötysuhteeseen yhtä suoraan kuin kahden lauhdevoimalaitoksen.",
       "answer": 13.6,
       "unit": "kt",
       "tolerance": 0.02

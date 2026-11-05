@@ -8,7 +8,7 @@
   ],
   "prior": [
     "Power tells how much energy is transformed from one form to another per second (chapter *Power*)",
-    "Voltage tells how many joules of energy one coulomb of charge gives up in a component (chapter *Electric circuit, current and voltage*)",
+    "Voltage tells how many joules of energy one coulomb of charge gives up in a component (chapter *Circuit, electric current and voltage*)",
     "The voltage of a resistor is $U = RI$ (chapter *Resistance and Ohm's law*)",
     "The same current flows through resistors in series, and resistors in parallel have the same voltage (chapter *Resistors in series and in parallel*)"
   ],

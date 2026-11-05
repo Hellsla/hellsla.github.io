@@ -3,6 +3,7 @@
     {
       "id": "fy1-6-L1-01",
       "level": 1,
+      "core": true,
       "text": "Pallo päästetään putoamaan levosta, ja ilmanvastus jätetään huomiotta. Mikä on pallon nopeus, kun pudotuksen alusta on kulunut $3{,}0\\,\\text{s}$?",
       "answer": 29.43,
       "unit": "m/s",
@@ -43,6 +44,7 @@
     {
       "id": "fy1-6-L1-06",
       "level": 1,
+      "core": true,
       "text": "Astronautti pudottaa Kuun pinnalla yhtä aikaa samalta korkeudelta levosta vasaran ja höyhenen. Kuussa ei ole ilmakehää. Mitä tapahtuu?",
       "kind": [
         "concept"
@@ -116,6 +118,7 @@
     {
       "id": "fy1-6-L2-01",
       "level": 2,
+      "core": true,
       "text": "Pallo päästetään putoamaan levosta, ja se osuu maahan nopeudella $12{,}0\\,\\text{m/s}$. Ilmanvastus jätetään huomiotta. Kuinka kauan pallo putosi?",
       "answer": 1.223242,
       "unit": "s",
@@ -149,6 +152,7 @@
     {
       "id": "fy1-6-L2-05",
       "level": 2,
+      "core": true,
       "text": "Valoporttimittauksessa pienen kappaleen nopeus $v$ mitattiin eri hetkillä $t$ pudotuksen alusta, kun kappale päästettiin putoamaan levosta. Piirrä mittauspisteistä $(t, v)$-kuvaaja, sovita pisteisiin suora ja määritä sen kulmakerroin. Mikä on putoamiskiihtyvyys $g$ mittauksen mukaan? Vertaa tulosta taulukkoarvoon $9{,}81\\,\\text{m/s}^2$.",
       "kind": [
         "data",

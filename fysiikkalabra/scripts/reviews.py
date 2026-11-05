@@ -105,10 +105,11 @@ RULES = {                       # category: (science, pedagogy, visual)
     "figure":         ("full",  "full", "delta"),    # figure geometry or text; a picture file
     "photo":          ("none",  "none", "delta"),    # a licensed photograph beside the text (figure.unit-photo, assets/pics/<course>/photos.json): illustration only, never a task (teacher 2026-11-01 FY14, 2026-11-03 FY1–FY3)
     "illustration":   ("none",  "delta", "delta"),   # an illustration (data-fig="hero" or "scene"): no text, no physics claim (teacher 2026-10-26)
+    "core-mark":      ("none",  "none", "none"),    # an exercise or lesson activity marked core (`"core": true`) or unmarked, nothing else: the module's core path as a whole is reviewed in docs/core-path/ (teacher 2026-11-05)
     "paragraphs":     ("none",  "none", "none"),    # a task text cut into paragraphs (a blank line, "\\n\\n" in the JSON string), its words unchanged: build.exercise_text renders them, check_layout checks them (teacher 2026-11-04)
     "split":          ("none",  "none", "none"),    # passed as one lesson before the split; this part's files moved, unchanged (answers.py: line for line)
 }
-WHY = {"paragraphs": "a task text cut into paragraphs, its words unchanged", "photo": "a licensed illustration photograph added, moved or recaptioned", "typography": "formulas re-set (spacing, fraction style, decimal comma) or a symbol set as maths, or blank lines, without a change of meaning", "tests": "simulation tests added or tightened", "comments": "comments only", "style": "figure or sim styling only",
+WHY = {"core-mark": "exercises or activities marked core or unmarked, nothing else", "paragraphs": "a task text cut into paragraphs, its words unchanged", "photo": "a licensed illustration photograph added, moved or recaptioned", "typography": "formulas re-set (spacing, fraction style, decimal comma) or a symbol set as maths, or blank lines, without a change of meaning", "tests": "simulation tests added or tightened", "comments": "comments only", "style": "figure or sim styling only",
        "label-position": "a figure label nudged, text unchanged", "wording": "wording without numbers or symbols",
        "relocated": "the sim's text moved word for word into its lead and boxes",
        "chapter-ref": "a chapter reference follows that chapter's new title",
@@ -678,6 +679,27 @@ def _math_and_numbers(s):
     return re.findall(r"\$[^$]*\$", s), re.findall(r"\d+(?:[.,]\d+)?", re.sub(r"\$[^$]*\$", " ", s))
 
 
+def core_marks(old, new):
+    """The old exercises.json or inquiry.json with each exercise's or activity's `core` mark set as in the new one, when
+    that is a change (teacher 2026-11-05, "ydinpolku"); None otherwise. Whatever else changed is classified as usual."""
+    try: o, n = json.loads(old), json.loads(new)
+    except (json.JSONDecodeError, TypeError): return None
+    if not isinstance(o, dict) or not isinstance(n, dict): return None
+    def items(d):
+        if isinstance(d.get("activities"), list): return [a for a in d["activities"] if isinstance(a, dict)]
+        return [e for v in d.values() if isinstance(v, list) for e in v if isinstance(e, dict)]
+    new_items = {e.get("id"): e for e in items(n) if "id" in e}
+    changed = False
+    for e in items(o):
+        m = new_items.get(e.get("id"))
+        if m is None or m.get("core") == e.get("core"): continue
+        if "core" in m: e["core"] = m["core"]
+        else: del e["core"]
+        order = [k for k in m if k in e] + [k for k in e if k not in m]   # the key where the new version has it
+        items_ = [(k, e[k]) for k in order]; e.clear(); e.update(items_); changed = True
+    return json.dumps(o, ensure_ascii=False) if changed else None
+
+
 def objective_form(old, new):
     """The old inquiry.json with `learn` replaced by the new one when only the goals' wording changed (the same
     number of goals, each keeping its formulas and numbers: "Osaat laskea … $P = E : t$" → "laskemaan … $P = E : t$");
@@ -799,6 +821,11 @@ def changes(folder, base, part="lesson", split=False):
             keep = lambda s: "\n".join(l for l in s.splitlines() if not any(json.dumps(h, ensure_ascii=False) in l for h in heroes))
             if heroes and keep(a) == keep(b):
                 cats.add("illustration"); n += sum(1 for l in lines if l.startswith(("+", "-")) and not l.startswith(("+++", "---"))); diff += lines; continue
+        core = core_marks(ra, rb) if rel.endswith(("exercises.json", "inquiry.json")) and ra and rb else None
+        if core is not None:                           # core marks set or removed (teacher 2026-11-05); the rest as usual
+            cats.add("core-mark"); ra = core; a = _view(ra, rel, False)
+            if a == b: n += sum(1 for l in lines if l.startswith(("+", "-")) and not l.startswith(("+++", "---"))); diff += lines; continue
+            lines = list(difflib.unified_diff(a.splitlines(), b.splitlines(), lineterm="", n=2))
         goals = objective_form(ra, rb) if rel.endswith("inquiry.json") and ra and rb else None
         if goals is not None:                          # the goals rephrased; whatever else changed is classified as usual
             cats.add("objective-form"); ra = goals; a = _view(ra, rel, False)
@@ -959,6 +986,7 @@ def _baseline_items():
         out += [("investigation", lang, i, "-", investigations.folder(i, lang), lambda i=i, lang=lang: investigations.status(i, lang)) for i in investigations.ids(lang)]
         out += [("guide", lang, g, "-", guides.folder(g, lang), lambda g=g, lang=lang: guides.status(g, lang)) for g in guides.ids(lang)]
         out += [("sovella", lang, c, "-", practice.folder(c, lang), lambda c=c, lang=lang: practice.status(c, lang)) for c in practice.courses_with(lang)]
+        out += [("koe", lang, c, "-", practice.folder(c, lang), lambda c=c, lang=lang: practice.status(c, lang)) for c in practice.exams(lang)]
     return out
 
 
@@ -1013,7 +1041,7 @@ def verify_baseline():
     if not BASELINE.is_file(): return []
     rel = BASELINE.relative_to(ROOT).as_posix(); errs = []
     for r in baseline_rows():
-        if len(r) != len(BASELINE_COLS) or r["kind"] not in ("lesson", "investigation", "guide", "sovella") or not re.fullmatch(r"[0-9a-f]{16}", r.get("hash", "")):
+        if len(r) != len(BASELINE_COLS) or r["kind"] not in ("lesson", "investigation", "guide", "sovella", "koe") or not re.fullmatch(r"[0-9a-f]{16}", r.get("hash", "")):
             errs.append(f"{rel}: malformed row {r}")
     first = (git("log", "--diff-filter=A", "--format=%H", "--", rel) or "").split()
     if not first: return errs                           # not committed yet (the commit that writes it)

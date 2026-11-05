@@ -39,8 +39,8 @@
    "aihe": "fy7-magnetismi",
    "kasite": "Lorentz force",
    "maaritelma": "The force that a magnetic field exerts on a moving charge.",
-   "kaava": "F = qvB\\sin\\alpha",
-   "kaava_puhe": "F equals q times v times B times sine alpha"
+   "kaava": "F = |q|vB\\sin\\alpha",
+   "kaava_puhe": "F equals the absolute value of q times v times B times sine alpha"
   },
   {
    "id": "fy7-virtajohtimen-voima",

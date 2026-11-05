@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: cca8005f5904026c
+CONTENT-HASH: 885c14806ece5ea9
+Mode: full in the packet; scope by the teacher's ruling ("katselmoi vain muuttuneet osat"): the diff since the last PASS (`git diff f35980b22 -- content/fi-easy/FY6/fy6-12/exercises`) plus what the changed lines touch.
+Round 2 (follow-up: korjattujen käsitteiden yhdenmukaisuus)
 
 ## Blocking
 (none)
 
 ## Polish
-- solutions.md L1-05 Vastaus/Answer: 50 V and 200 V read off a grid have one significant figure formally, so "two significant figures" because the positions have two is a loose rationale; the value 150 eV is right and the sentence is harmless. Optional: "reading the line at grid crossings adds no extra uncertainty".
+- exercises.json:72 — "Tässä potentiaali on nolla negatiivisella levyllä" says "tässä", but the L1-06 stem shows no plates — optional: "Kun potentiaali on nolla negatiivisella levyllä ja x on etäisyys siitä, ..."; physics is right as it stands.
 
 ## Checked
-- Delta (solutions.md L1-05 Answer): the earlier "result is exact" is removed and replaced by a significant-figure statement; the overstatement is resolved.
-- All 12 answers recomputed in one script and equal answers.py: 3.845e-17 J; 0.36 uJ; 8.01e-16 J; 0.18 mJ; 150 eV; -75 eV; -120 eV; 4.392e5 m/s; 284.3 V; 6.80e6 m/s; 42.86; 4.34 mm.
-- 200 V - 50 V = 150 V from the figure (V = 50 V/cm * x, 250 V at 5.0 cm) is consistent; no physics or number changed.
-- Numbers, LaTeX and tolerances identical to the Finnish reference.
+- Diff is five lines: `core: true` on L1-04, L1-06, L1-08, L2-03 and one feedback sentence in L1-06; no number, answer, unit, tolerance or correct flag changed.
+- L1-06 feedback: zero of potential at the negative plate, x measured from it, matches the fi change and the lesson's convention; sign agrees with the correct option.
+- Same core marks as fi.
+- Hash 885c14806ece5ea9 at start and end, equal to the packet's.

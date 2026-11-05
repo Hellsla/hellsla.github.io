@@ -4,7 +4,7 @@
   "title": "The wave-mechanical model of the atom and orbitals",
   "goals": [
     "LOPS FY8: structure of the atom, quantum states of the electrons of an atom and the principle of the wave-mechanical model of the atom",
-    "Clarification: the states of an electron through standing waves and the probability interpretation; an orbital as a region where the probability exceeds a threshold; connection to the orbitals of chemistry"
+    "Clarification: the states of an electron through standing waves and the probability interpretation; an orbital as a quantum state of the electron, pictured as a region where the probability exceeds a threshold; connection to the orbitals of chemistry"
   ],
   "prerequisites": [
     "fy8-4"

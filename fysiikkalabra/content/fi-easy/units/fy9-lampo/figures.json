@@ -1,0 +1,21 @@
+{
+ "Kuvitus: aurinkoinen talvipäivä Lapissa. Vasemmalla hirsinen laavu, jonka katolla on lunta. Laavun edessä palaa nuotio kivien keskellä, ja sen päällä riippuu kolmijalasta noessa musta pannu, joka on täynnä lunta. Pannusta nousee höyryä. Nuotion vieressä on sanko lunta. Taustalla on lumisia tuntureita ja kuusia.": "Kuvitus: aurinkoinen talvipäivä Lapissa. Vasemmalla on hirsinen laavu. Laavun katolla on lunta. Laavun edessä palaa nuotio kivien keskellä. Nuotion päällä riippuu kolmijalasta musta nokipannu. Pannu on täynnä lunta, ja siitä nousee höyryä. Nuotion vieressä on sanko, jossa on lunta. Taustalla on lumisia tuntureita ja kuusia.",
+ "Käsitekartta. Ylhäällä solmu energia säilyy: eristetyssä systeemissä luovutettu lämpömäärä on yhtä suuri kuin vastaanotettu. Siitä lähtee alas neljä haaraa. Lämpeneminen: Q = c m ΔT, kun olomuoto ei muutu, ja kelvinlämpötila T = θ + 273,15. Olomuodon muutos: sulaminen Q = s m ja höyrystyminen Q = r m vakiolämpötilassa. Lämpölaajeneminen: pituus ΔL = α L0 ΔT ja tilavuus ΔV = γ V0 ΔT. Lämmön siirtyminen: johtuminen, konvektio ja säteily, sekä seinän läpi johtuva teho P = U A ΔT.": "Käsitekartta. Ylhäällä on solmu energia säilyy: eristetyssä systeemissä luovutettu lämpömäärä on yhtä suuri kuin vastaanotettu. Solmusta lähtee alas neljä haaraa. Lämpeneminen: Q = c m ΔT, kun olomuoto ei muutu, ja kelvinlämpötila T = θ + 273,15. Olomuodon muutos: sulaminen Q = s m ja höyrystyminen Q = r m, kun lämpötila pysyy samana. Lämpölaajeneminen: pituus ΔL = α L0 ΔT ja tilavuus ΔV = γ V0 ΔT. Lämmön siirtyminen: johtuminen, konvektio ja säteily sekä seinän läpi johtuva teho P = U A ΔT.",
+ "energia säilyy": "energia säilyy",
+ "luovutettu": "luovutettu",
+ "vastaanotettu": "vastaanotettu",
+ "olomuoto sama": "olomuoto sama",
+ "kelvinit": "kelvinit",
+ "sulaminen": "sulaminen",
+ "höyrystyminen": "höyrystyminen",
+ "pituus": "pituus",
+ "tilavuus": "tilavuus",
+ "seinän läpi": "seinän läpi",
+ "johtuminen, konvektio, säteily": "johtuminen, konvektio, säteily",
+ "Kuvaaja mittakaavassa: kilogramman lumen lämpötila T celsiusasteina siirretyn energian Q funktiona kilojouleina. Lumi lämpenee −10 asteesta 0 asteeseen, kun energiaa on siirtynyt 21 kJ. Sitten lämpötila pysyy 0 asteessa, kunnes energiaa on siirtynyt 355 kJ: sulamiseen kuluu Q = s m = 334 kJ. Sulamisvesi lämpenee 100 asteeseen, kun energiaa on siirtynyt 774 kJ: tähän kuluu Q = c m ΔT = 419 kJ. Sen jälkeen vesi kiehuu 100 asteessa, ja kuvaaja jatkuu vaakasuorana nuolena, koska höyrystyminen Q = r m vaatisi vielä 2260 kJ.": "Kuvaaja mittakaavassa. Kuvaaja näyttää kilogramman lunta lämpötilan T celsiusasteina. Vaaka-akselilla on siirretty energia Q kilojouleina. Lumi lämpenee −10 asteesta 0 asteeseen, kun energiaa on siirtynyt 21 kJ. Sitten lämpötila pysyy 0 asteessa, kunnes energiaa on siirtynyt 355 kJ. Sulamiseen kuluu siis Q = s m = 334 kJ. Sulamisvesi lämpenee 100 asteeseen, kun energiaa on siirtynyt 774 kJ. Tähän kuluu Q = c m ΔT = 419 kJ. Sen jälkeen vesi kiehuu 100 asteessa. Kuvaaja jatkuu vaakasuorana nuolena, koska höyrystyminen Q = r m vaatisi vielä 2260 kJ.",
+ "Kuvaaja: höyrystyneen veden massa Δm viidessä minuutissa uppokuumentimen tehon P funktiona. Viisi mustaa pistettä tehoilla 200–1000 W. Pisteisiin on sovitettu nouseva suora, jota on jatkettu katkoviivana vaaka-akselille ja tehoon 1100 W asti. Suora kulkee pisteiden (100 W; 4 g) ja (1100 W; 137 g) kautta; nämä kaksi suoran pistettä on ympyröity, ja niistä luetaan kulmakerroin noin 0,133 g/W. Suora leikkaa vaaka-akselin noin teholla 70 W. Suora ei kulje origon kautta.": "Kuvaaja: höyrystyneen veden massa Δm viidessä minuutissa uppokuumentimen tehon P funktiona. Kuvaajassa on viisi mustaa pistettä tehoilla 200–1000 W. Pisteisiin on sovitettu nouseva suora. Suoraa on jatkettu katkoviivana vaaka-akselille ja tehoon 1100 W asti. Suora kulkee pisteiden (100 W; 4 g) ja (1100 W; 137 g) kautta. Nämä kaksi suoran pistettä on ympyröity, ja niistä luetaan kulmakerroin noin 0,133 g/W. Suora leikkaa vaaka-akselin noin teholla 70 W. Suora ei kulje origon kautta.",
+ "lämpeneminen": "lämpeneminen",
+ "olomuodon muutos": "olomuodon muutos",
+ "lämpölaajeneminen": "lämpölaajeneminen",
+ "lämmön siirtyminen": "lämmön siirtyminen"
+}

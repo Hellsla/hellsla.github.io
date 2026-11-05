@@ -1,13 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 3cba9a702fcdaee9
+CONTENT-HASH: 89f77d1ef5cc0755
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+- solutions.md L3-05 Principle: garbled "The maximum is half of the distance 2x from the hole" reworded to "A maximum is half of the distance 2x away from the hole" (no formula change).
+- solutions.md L2-07 and exercises.json L2-07 choice 2 feedback: "not shared among anything" -> "not divided among several maxima".
 
 ## Polish
-- content/en/FY7/fy7-13/exercises/solutions.md (L1-03 Reasonableness) — 625 nm "orange-red"; red rather (carried over from fi, harmless).
+- solutions.md L3-02 Principle (line 104) still says "half of the separation of the dots from the hole"; understandable, left as is.
 
 ## Checked
-- Every number of exercises.json and solutions.md equal to fi (script, decimal comma normalised); answers.py shared and unchanged.
-- All 12 answers recomputed with my own formulas: 3,333 µm, 18,97°, 625 nm, 14,04°, 1,690 µm; 7 dots; 16,28 cm; 595,5 /mm; 9,39 cm; 466,7 nm; 1,599 µm; 532,6 nm — equal to exercises.json.
-- Task texts keep every condition of fi: perpendicular incidence, screen perpendicular to the beam, screen wide enough (L2-01), screen parallel to the disc (L3-02), same set-up (L3-03).
-- Solutions: seven steps, symbolic first, tan then sin, kλ < d (L2-01), reflection-grating model stated, rounding reasons — faithful translations.
+- All 20 exercises compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags and every number in texts, choices, feedback, data cells identical (decimal point in en, comma in fi-easy); solutions.md numbers equal to fi (1160/843 tokens, normalised).
+- New tasks L1-06..08, L2-05..07, L3-04..05: answers recomputed (32.14 deg, 4, 633.7 nm, 5.53 %, 625 nm, 0.737 um); equal to json.
+- L1-06 and L2-07: answer string equals the single correct choice; one correct flag, same as fi.
+- No Finnish left in en (grep); table column "I (relative)" translated.
+- check_i18n.py en: 0 errors.

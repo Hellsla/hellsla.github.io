@@ -1,11 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 99e2b107951ed66f
+CONTENT-HASH: 4b9525e95331f53c
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+- exercises.json L2-05 data table header: left-over Finnish column title "Potku" changed to "Kick" (fi shows the same column; numbers untouched).
 
 ## Polish
+(none)
 
 ## Checked
-Compared all 12 exercises (exercises.json: ids, texts, answers, units, tolerances, figure id fy4-9/ex-potku) and 12 solutions (solutions.md) in en with the Finnish, number by number: masses, speeds, forces, times, conversions (54 km/h = 15 m/s, 46 g, 0.50 ms, 10 kN, 3.6), results (5.1, 6.0, 4.86, 6.0, 150, 6.0 kN, 6.4 kN, 1.5, 26, 3.0, 58, 60) and the trapezoid reading of the F-t graph (48 N s).
-Checked against the changed lesson content: signs of change in momentum and impulse (L2-03: positive direction towards the wall, v0 = +14, v = -11 m/s, I = -1.5 N s, magnitude 1.5 N s, impulse points away from the wall; L2-01 braking force negative, magnitude 6.0 kN; L3-03 signed velocities, force magnitude via |v - v0|); magnitude vs signed values are stated the same way as in the Finnish; net-force wording in the Principle steps agrees with the lesson's impulse wording; the exercise graph is the force as a function of time with positive area.
-Locale: decimal point (also in LaTeX), step labels Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness/Reading the graph. No Finnish left in en. Ran check_i18n.py (0 errors), build.py fy4-9, figures.py --check, check_layout.py at 360 and 1280 px. Nothing needed fixing.
+- All 20 exercises compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags (L1-06 single correct option, same feedback roles), data table cells and every digit sequence in texts, choices, feedback and solutions.md (835 numbers each, equal; decimal point in en JSON and LaTeX where fi has a comma).
+- New exercises L1-06..08, L2-05..07, L3-04..05 read in full: meaning, signs (L1-06, L3-04, L3-05 up positive), part labels a-c and the answer-box part (b) match fi.
+- Re-derived: L1-07 1.8 m/s, L1-08 18000, L2-05 927.45 N, L2-06 5.0 N, L2-07 2.88 m/s, L3-04 50.45 km/h, L3-05 447.34 N; all agree with fi.
+- Natural English throughout: sentences, feedback and solutions read idiomatically; no Finnish left after the fix (grep for Finnish words and ä/ö clean).
+- check_i18n.py en: 0 errors.

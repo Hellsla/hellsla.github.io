@@ -95,11 +95,13 @@
       if (reading) return mark(reading);
       if (pinned) return mark(pinned);
       let last = null;
-      if (inView.size) targets.forEach((t) => { if (inView.has(t)) last = t; });    // a sub-section (Exit ticket) wins over its stage
+      const side = document.documentElement.classList.contains('tasks-split');   // the exercises in their side panel (part 9) are always on screen
+      const live = side ? targets.filter((t) => t.id !== 'exercises') : targets;
+      if ([...inView].some((t) => live.includes(t))) live.forEach((t) => { if (inView.has(t)) last = t; });    // a sub-section (Exit ticket) wins over its stage
       else {
         const line = window.innerHeight * 0.35;
-        targets.forEach((t) => { if (t.getBoundingClientRect().top <= line) last = t; });
-        if (!last) last = targets[0];
+        live.forEach((t) => { if (t.getBoundingClientRect().top <= line) last = t; });
+        if (!last) last = live[0];
       }
       if (last) mark(last.id);
     };
@@ -109,7 +111,7 @@
       targets.forEach((t) => io.observe(t));
     }
     let ticking = false;     // the gaps between sections and old browsers: the last section whose top passed the line
-    window.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(() => { ticking = false; if (!inView.size) update(); }); } }, { passive: true });
+    window.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(() => { ticking = false; if (!inView.size || document.documentElement.classList.contains('tasks-split')) update(); }); } }, { passive: true });
     const reView = () => { const a = links.find((x) => x.hasAttribute('aria-current')); if (a) keepInView(a); };
     window.addEventListener('resize', reView);
     // the Kuuntele tools (readaloud.js) appear in the bar only once a voice is found, after the stage may be marked
@@ -470,6 +472,7 @@
   window.flSolutionsOpen = OPEN_ALL;
   if (OPEN_ALL) {
     const main = document.querySelector('main');
+  const theory = document.getElementById('selita') || document.getElementById('teoria');
     if (main) { const p = document.createElement('p'); p.className = 'teacher-note'; p.setAttribute('role', 'note'); p.textContent = msg('teacher_mode'); main.prepend(p); }
   }
   // a locked box's summary does not open it (a click, Enter or Space all arrive as a click); a script may still open it
@@ -567,4 +570,92 @@
   document.addEventListener('toggle', e => { fit(e.target); later(); }, true);   // later: maths auto-rendered on open
   new MutationObserver(later).observe(document.body, {subtree: true, attributes: true, attributeFilter: ['hidden']});   // a solution unlocked (try-first) or revealed
   window.flFitMath = fit;
+})();
+
+/* 9. Tasks beside the theory (teacher 2026-11-05: "Oikealla puolella näkyisi tehtävät ja vasemmalla puolella teoria";
+   not the default, opened when the student starts on the exercises). From 1100 px a button under the Tehtävät heading,
+   and the Tehtävät link of the stage bar (or any link to #exercises), open the exercises as a panel on the right that
+   scrolls on its own, while the lesson stays on the left, where it was (or, opened from the exercises themselves at
+   the end of the page, at the theory stage), and scrolls with the page. "Sulje
+   sivunäkymä" (or Esc inside the panel) puts the exercises back at the end of the page; the lesson stays put. Below 1100 px there is no button and nothing changes (site.css keeps the
+   panel's rules inside the same media query, so a window made narrower falls back to the one column by itself).
+   The choice is not stored: every page opens in the one reading column. */
+(() => {
+  const ex = document.getElementById('exercises');
+  const h2 = ex && ex.querySelector(':scope > h2');
+  if (!ex || !h2 || !window.matchMedia) return;
+  const L10N = (() => { try { return JSON.parse(document.getElementById('fl-strings').textContent).js || {}; } catch (e) { return {}; } })();
+  const say = (k, d) => (typeof L10N[k] === 'string' ? L10N[k] : d);
+  const WIDE = window.matchMedia('(min-width:1100px)');
+  const root = document.documentElement;
+  const isOpen = () => root.classList.contains('tasks-split');
+  const head = document.createElement('div'); head.className = 'split-head';
+  h2.before(head); head.append(h2);
+  const btn = document.createElement('button'); btn.type = 'button'; btn.className = 'split-toggle';
+  btn.setAttribute('aria-controls', 'exercises');
+  const status = document.createElement('p'); status.className = 'visually-hidden'; status.setAttribute('aria-live', 'polite');
+  head.append(btn, status);
+  const label = () => { const o = isOpen(); btn.textContent = say(o ? 'split_close' : 'split_open', o ? 'Sulje sivunäkymä' : 'Avaa tehtävät teorian viereen'); btn.setAttribute('aria-expanded', String(o)); };
+  const items = () => [...ex.querySelectorAll('li[id], details.level')];
+  const firstVisible = (top) => items().find((el) => el.offsetParent && el.getBoundingClientRect().bottom > top + 8);
+  // The lesson on the left does not move when the panel opens or closes (teacher 2026-11-05, "en halua että
+  // vasemmanpuoleinen näkymä liikkuu"): the reading column keeps its left edge (--split-l, the panel takes the room to
+  // its right) and the block at the top of the window stays at the same height, however the narrower page reflows.
+  const main = document.querySelector('main');
+  const theory = document.getElementById('selita') || document.getElementById('teoria');
+  const barBottom = () => { const t = document.querySelector('nav.toc'); return t ? Math.max(0, t.getBoundingClientRect().bottom) : 0; };
+  const anchor = () => {
+    if (window.scrollY < 2) return null;                // at the top of the page it stays at the top
+    const y = barBottom() + 6, x0 = main.getBoundingClientRect().left;   // what is seen just under the bar, in the reading column
+    for (const dx of [40, 120, 240]) for (const dy of [0, 24, 60]) {
+      const hit = document.elementFromPoint(x0 + dx, y + dy);
+      if (!hit || !main.contains(hit) || ex.contains(hit) || hit.closest('.lab-side, #sim')) continue;
+      let el = hit.closest('p, li, h1, h2, h3, h4, figure, table, summary, .katex-display, .eq-chain') || hit;
+      if (el.getBoundingClientRect().height > window.innerHeight) el = hit;
+      return [el, el.getBoundingClientRect().top];
+    }
+    return null;
+  };
+  const keepAt = (a) => { if (a && a[0].isConnected) window.scrollBy(0, a[0].getBoundingClientRect().top - a[1]); };
+  const open = () => {
+    if (isOpen() || !WIDE.matches) return;
+    const r = ex.getBoundingClientRect(), keep = r.top < window.innerHeight * 0.5 ? firstVisible(0) : null;
+    const atEnd = r.top < window.innerHeight - 40;      // the exercises already on screen: the left side goes to the theory (teacher 2026-11-05)
+    const at = atEnd ? null : anchor(), m = main.getBoundingClientRect().left, rem = parseFloat(getComputedStyle(root).fontSize) || 16;
+    const room = window.innerWidth - (38 + 2 + 30) * rem;   // the reading column, the gap and a panel at least 30rem wide
+    root.style.setProperty('--split-l', Math.round(Math.max(2 * rem, Math.min(m, room))) + 'px');
+    root.classList.add('tasks-split'); label();
+    ex.setAttribute('role', 'region'); ex.setAttribute('aria-label', h2.textContent);
+    if (!ex.querySelector('details.level[open]')) { const d = ex.querySelector('details.level'); if (d) d.open = true; }   // the first level open, ready to start
+    ex.scrollTop = keep ? Math.max(0, keep.offsetTop - head.offsetHeight - 16) : 0;
+    if (atEnd && theory) window.scrollTo({ top: theory.getBoundingClientRect().top + window.scrollY - barBottom() - 8, behavior: 'instant' });
+    else keepAt(at);
+    status.textContent = say('split_status', '');
+    btn.focus({ preventScroll: true });
+    window.dispatchEvent(new Event('resize'));          // the formulas and the stage bar measure their new widths
+    if (at) [0, 200, 450].forEach((t) => setTimeout(() => keepAt(at), t));   // again after the formulas are re-fitted and inquiry.js has moved the simulation
+    setTimeout(() => window.dispatchEvent(new Event('scroll')), 1000);   // after the bar's tap pin: mark the stage on the left
+  };
+  const close = () => {
+    if (!isOpen()) return;
+    const at = anchor();
+    root.classList.remove('tasks-split'); label();
+    ex.removeAttribute('role'); ex.removeAttribute('aria-label'); status.textContent = '';
+    keepAt(at);
+    window.dispatchEvent(new Event('resize'));
+    [0, 200, 450].forEach((t) => setTimeout(() => keepAt(at), t));
+    btn.focus({ preventScroll: true });
+  };
+  btn.addEventListener('click', () => (isOpen() ? close() : open()));
+  label();
+  // a link to the exercises (the stage bar's Tehtävät, "harjoittele tehtävillä") opens the panel on a wide screen
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest && e.target.closest('a[href="#exercises"]');
+    if (!a || !WIDE.matches || e.defaultPrevented || e.button || e.metaKey || e.ctrlKey || e.shiftKey) return;
+    e.preventDefault();
+    if (isOpen()) { ex.scrollTo({ top: 0 }); btn.focus({ preventScroll: true }); } else open();
+    window.dispatchEvent(new Event('scroll'));          // the stage bar marks the stage on the left again
+  });
+  ex.addEventListener('keydown', (e) => { if (e.key === 'Escape' && isOpen() && !e.target.closest('dialog, .rich-text-editor, [contenteditable="true"]')) close(); });
+  WIDE.addEventListener ? WIDE.addEventListener('change', () => { if (!WIDE.matches) close(); }) : null;
 })();

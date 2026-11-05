@@ -3,6 +3,7 @@
     {
       "id": "fy5-4-L1-01",
       "level": 1,
+      "core": true,
       "text": "Auto ajaa moottoritien liittymän kaarteessa tasaisella nopeudella $20\\,\\text{m/s}$. Kaarteen säde on $80\\,\\text{m}$. Kuinka suuri on auton normaalikiihtyvyys?",
       "answer": 5.0,
       "unit": "m/s²",
@@ -43,6 +44,7 @@
     {
       "id": "fy5-4-L1-06",
       "level": 1,
+      "core": true,
       "text": "Auto kääntyy vasemmalle tasaisella vauhdilla, ja takapenkillä istuva matkustaja painuu oikeaa ovea vasten. Matkustajasta tuntuu kuin jokin työntäisi häntä ulospäin. Mikä selittää tämän oikein?",
       "kind": [
         "concept"
@@ -116,6 +118,7 @@
     {
       "id": "fy5-4-L2-01",
       "level": 2,
+      "core": true,
       "text": "Pyöräilijä ajaa alikulkutunnelin notkon pohjan läpi tasaisella nopeudella $8{,}0\\,\\text{m/s}$. Pyöräilijän ja pyörän yhteinen massa on $80\\,\\text{kg}$. Notkon pohjalla tien kaaren säde on $16\\,\\text{m}$. Ilmanvastus ja vierimisvastus jätetään huomiotta. Kuinka suuri on tien tukivoima pyörään notkon pohjalla? Vastaa kilonewtoneina.",
       "answer": 1.1048,
       "unit": "kN",
@@ -228,6 +231,7 @@
     {
       "id": "fy5-4-L2-07",
       "level": 2,
+      "core": true,
       "text": "Oppilas ratkaisi tehtävän: ”Auto, jonka massa on $850\\,\\text{kg}$, ajaa vaakasuoran kaarteen läpi tasaisella nopeudella $18\\,\\text{m/s}$. Kaarteen säde on $75\\,\\text{m}$. Kuinka suuri kitkavoima tien on kohdistettava autoon?”\n\nOppilaan ratkaisu: ”Autoon vaikuttavat kitka kohti kaarteen keskipistettä ja keskipakoisvoima ulospäin. Keskipakoisvoima on $m\\tfrac{v^2}{r} = 3672\\,\\text{N}$. Kokonaisvoiman pitää osoittaa kohti keskipistettä ja olla $m\\tfrac{v^2}{r}$, joten kitkan on oltava kokonaisvoima lisättynä keskipakoisvoimalla: $F_\\mu = 3672\\,\\text{N} + 3672\\,\\text{N} = 7344\\,\\text{N}$.”\n\na) Selitä, mikä virhe oppilaan ratkaisussa on.\n\nb) Laske oikea kitkavoima.\n\nVastauslaatikkoon tulee osan b) tulos kilonewtoneina.",
       "kind": [
         "error"

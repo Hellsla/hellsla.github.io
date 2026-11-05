@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 99e2b107951ed66f
+CONTENT-HASH: 4b9525e95331f53c
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
+## Fixed
+- exercises.json L2-05 data table header: left-over Finnish column title "Potku" changed to "Kick" (fi shows the same column; numbers untouched).
+
 ## Polish
-- [Minor] answer fields (open-exercises-*) — the unit beside the input ("kg·m/s", "N·s", "km/h") is plain text while the rest of the page sets units in maths — set the field units as `$\text{N}\cdot\text{s}$` if the template allows (project-wide, not chapter-specific).
-- [Minor] L3-1 solution (open-exercises-L3-1280-2) — the "READING THE GRAPH" block is dense (one paragraph, five numbers) — break after the rising edge and after the falling edge.
+(none)
 
 ## Checked
-- open-exercises-1280-1, -3 (level 1: figures-free tasks, solution cards with Given/Find/Principle/Formula/Substitution/Answer/Reasonableness).
-- open-exercises-L2-1280-2 (golf-ball task, split formula chain `F_avg Δt = … = mv`), contact-5 for the rest of L2 and the exit ticket.
-- open-exercises-L3-1280-1, -2 (sled trapezoid graph on a grid, axis arrows, units, tick numbers LaTeX; trapezoid area chain; seat-belt task).
-- Opened solutions sit inside their cards and push the next task down; no clipping, no sideways scroll at 1280; Finnish words on the page: none.
-
-## Scores
-illustrations 5 · typography 4 · Finnish 5 (English prose) · accessibility 4
+- Opened captures of the new tasks (L2 and L3 solution-open shots at 1280 px, en): step labels, formula boxes, answer chip, tables and reasonableness callouts render without overflow or Finnish leftovers in the visible text.
+- Data tables of L2-05..07, L3-04, L3-05 have translated captions and column headers (captures predate the L2-05 header fix; the fix changes only one short header word).
+- Decimal point (en) / comma (fi-easy) as in the locale; units and LaTeX identical to fi, so layout equals the reviewed fi layout.

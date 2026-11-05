@@ -7,7 +7,7 @@
     "laskemaan irtoavien elektronien suurimman liike-energian ja raja-aallonpituuden valosähköisellä yhtälöllä."
   ],
   "prior": [
-    "Aallon nopeus, taajuus ja aallonpituus liittyvät toisiinsa yhtälöllä $v = f\\lambda$ (luku *Mekaaninen aaltoliike*)",
+    "Aallon nopeus, taajuus ja aallonpituus liittyvät toisiinsa yhtälöllä $v = f\\lambda$ (luku *Aaltojen synty ja eteneminen*)",
     "Liikkuvan kappaleen liike-energia on $E_\\text{k} = \\tfrac{1}{2} m v^2$ (luku *Liike-energia, potentiaalienergia ja mekaaninen energia*)",
     "Energia säilyy, kun se muuttuu muodosta toiseen (luku *Energialajit ja energian säilyminen*)"
   ],
@@ -30,7 +30,7 @@
         {
           "text": "Violetin valon, koska lyhyempi aallonpituus tarkoittaa suurempaa taajuutta.",
           "correct": true,
-          "feedback": "Oikein. Aaltoliikkeen perusyhtälöstä $c = f\\lambda$ saadaan $f = \\tfrac{c}{\\lambda}$ (luku *Mekaaninen aaltoliike*). Lyhyempi aallonpituus antaa siis suuremman taajuuden. Violetin valon taajuus on noin $7{,}5 \\cdot 10^{14}\\,\\text{Hz}$ ja punaisen noin $4{,}6 \\cdot 10^{14}\\,\\text{Hz}$."
+          "feedback": "Oikein. Aaltoliikkeen perusyhtälöstä $c = f\\lambda$ saadaan $f = \\tfrac{c}{\\lambda}$ (luku *Aaltojen synty ja eteneminen*). Lyhyempi aallonpituus antaa siis suuremman taajuuden. Violetin valon taajuus on noin $7{,}5 \\cdot 10^{14}\\,\\text{Hz}$ ja punaisen noin $4{,}6 \\cdot 10^{14}\\,\\text{Hz}$."
         },
         {
           "text": "Punaisen valon, koska pidempi aalto värähtelee useammin.",

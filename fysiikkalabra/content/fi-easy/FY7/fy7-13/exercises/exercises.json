@@ -11,6 +11,7 @@
     {
       "id": "fy7-13-L1-02",
       "level": 1,
+      "core": true,
       "text": "Punaisen laserin valon aallonpituus on $650\\,\\text{nm}$. Valo osuu kohtisuoraan hilaan, jonka hilavakio on $2{,}00\\,\\mu\\text{m}$. Missä kulmassa keskimaksimin suunnasta ensimmäisen kertaluvun maksimi on?",
       "answer": 18.9656,
       "unit": "°",
@@ -39,6 +40,59 @@
       "answer": 1.6898,
       "unit": "µm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-13-L1-06",
+      "level": 1,
+      "core": true,
+      "text": "Laserin valo kulkee kapean raon läpi. Varjostimelle syntyy diffraktiokuvio. Mitä kuvion leveydelle tapahtuu, kun rakoa kavennetaan?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Kuvio levenee, koska kapeassa raossa valo taipuu enemmän sivuille.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Kuvio kapenee, koska kapeampi rako päästää läpi vain suoraan etenevän valon.",
+          "feedback": "Väärin. Valo ei kulje kapeasta raosta vain suoraan. Se taipuu raon reunoilla. Mitä kapeampi rako on, sitä enemmän valo leviää sivuille."
+        },
+        {
+          "text": "Kuvio pysyy yhtä leveänä, koska diffraktio riippuu vain valon aallonpituudesta.",
+          "feedback": "Väärin. Diffraktion voimakkuus riippuu siitä, kuinka suuri raon leveys on aallonpituuteen verrattuna. Se ei riipu pelkästä aallonpituudesta. Kun aallonpituus pysyy samana ja rako kapenee, kuvio muuttuu."
+        },
+        {
+          "text": "Kuvio levenee, koska kapeassa raossa valo taipuu enemmän sivuille.",
+          "feedback": "Oikein. Diffraktio on sitä voimakkaampaa, mitä lähempänä raon leveys on aallonpituutta. Kapeasta raosta valo leviää suuremmalle kulma-alueelle, joten kuvio on varjostimella leveämpi.",
+          "correct": true
+        },
+        {
+          "text": "Kuvio levenee, koska rako lyhentää aallonpituutta ja siirtää maksimeja ulommas.",
+          "feedback": "Väärin. Rako ei muuta aallonpituutta. Aallonpituus tulee valonlähteestä. Kuvio levenee siksi, että valo taipuu kapeassa raossa enemmän."
+        }
+      ]
+    },
+    {
+      "id": "fy7-13-L1-07",
+      "level": 1,
+      "text": "Opiskelija vaihtaa hilan tiheämpään. Uudessa hilassa on $500$ viivaa millimetrillä. Vihreän laserin valon aallonpituus on $532\\,\\text{nm}$. Valo osuu kohtisuoraan hilaan. Missä kulmassa keskimaksimin suunnasta toisen kertaluvun maksimi on uudella hilalla?",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 32.1407,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-13-L1-08",
+      "level": 1,
+      "text": "Natriumlampun keltaisen valon aallonpituus on $589\\,\\text{nm}$. Valo osuu kohtisuoraan hilaan, jossa on $400$ viivaa millimetrillä. Mikä on suurin kertaluku $k$, jonka maksimi vielä syntyy?",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 4,
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -53,6 +107,7 @@
     {
       "id": "fy7-13-L2-02",
       "level": 2,
+      "core": true,
       "text": "Punaisen laserin valon aallonpituus on $650\\,\\text{nm}$. Valo osuu kohtisuoraan hilaan, jossa on $100$ viivaa millimetrillä. Varjostin on $2{,}50\\,\\text{m}$ päässä hilasta kohtisuorassa sädettä vastaan. Kuinka kaukana keskimaksimista ensimmäisen kertaluvun maksimi on varjostimella? Anna vastaus senttimetreinä.",
       "answer": 16.2844,
       "unit": "cm",
@@ -73,6 +128,103 @@
       "answer": 9.3916,
       "unit": "cm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-13-L2-05",
+      "level": 2,
+      "core": true,
+      "text": "Opiskelija määrittää punaisen laserin aallonpituuden hilalla. Hilassa on $100$ viivaa millimetrillä. Hila ja varjostin ovat kohtisuorassa sädettä vastaan. Varjostin on $L = 1{,}00\\,\\text{m}$ päässä hilasta.\n\nHän mittaa mittanauhalla, kuinka kaukana keskimaksimista kertaluvun $k$ maksimi on. Etäisyys on $x_k$. Mittaustulokset ovat taulukossa.\n\na) Laske jokaiselle maksimille kulma $\\theta_k$ ja sen sini $\\sin\\theta_k$. Piirrä pisteet $(k, \\sin\\theta_k)$. Sovita pisteisiin suora, joka kulkee origon kautta.\n\nb) Laske suoran kulmakertoimesta laserin aallonpituus $\\lambda$ nanometreinä.\n\nKohdan b) tulos kirjoitetaan vastauslaatikkoon.",
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "answer": 633.7384,
+      "unit": "nm",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Maksimien paikat varjostimella (esimerkkiaineisto)",
+        "columns": [
+          "$k$",
+          "$x_k\\,(\\text{cm})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "6.3"
+          ],
+          [
+            "2",
+            "12.6"
+          ],
+          [
+            "3",
+            "19.5"
+          ],
+          [
+            "4",
+            "26.0"
+          ],
+          [
+            "5",
+            "33.5"
+          ],
+          [
+            "6",
+            "41.1"
+          ],
+          [
+            "7",
+            "49.4"
+          ],
+          [
+            "8",
+            "59.0"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-13-L2-06",
+      "level": 2,
+      "text": "Opiskelija mittaa hilalla, jossa on $600$ viivaa millimetrillä, vihreän laserin ensimmäisen kertaluvun maksimin. Varjostin on $L = 1{,}00\\,\\text{m}$ päässä hilasta kohtisuorassa sädettä vastaan. Maksimi on $x = 33{,}7\\,\\text{cm}$ päässä keskimaksimista.\n\nOpiskelija ratkaisee aallonpituuden näin: ”Kulma on pieni, joten $\\sin\\theta \\approx x : L = 0{,}337$. Hilayhtälöstä $\\lambda = d\\sin\\theta = 1{,}667\\,\\mu\\text{m} \\cdot 0{,}337 = 562\\,\\text{nm}$.”\n\na) Mikä opiskelijan päättelyssä on väärin?\n\nb) Laske aallonpituus oikein.\n\nc) Kuinka monta prosenttia opiskelijan tulos poikkeaa oikeasta tuloksesta? Laita oikea tulos nimittäjään.\n\nKohdan c) tulos prosentteina kirjoitetaan vastauslaatikkoon.",
+      "kind": [
+        "error"
+      ],
+      "answer": 5.5258,
+      "unit": "%",
+      "tolerance": 0.05
+    },
+    {
+      "id": "fy7-13-L2-07",
+      "level": 2,
+      "text": "Opiskelija määrittää laserin aallonpituuden hilalla. Hän mittaa mittanauhalla, kuinka kaukana keskimaksimista maksimi on. Etäisyys on $x$. Lukemisvirhe on aina noin $\\Delta x = 2\\,\\text{mm}$. Mikä muutos pienentää aallonpituuden suhteellista virhettä?",
+      "kind": [
+        "experiment",
+        "concept"
+      ],
+      "answer": "Mitataan kauempana oleva maksimi, koska sama lukemisvirhe on pienempi osa suuremmasta etäisyydestä.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Siirretään varjostin lähemmäs hilaa, koska lyhyempi etäisyys pienentää mittausvirhettä.",
+          "feedback": "Väärin. Kun $L$ pienenee, myös $x$ pienenee. Sama $\\Delta x$ on silloin suurempi osa etäisyydestä, joten suhteellinen virhe kasvaa."
+        },
+        {
+          "text": "Käytetään harvempaa hilaa, koska silloin maksimit ovat lähempänä ja virhe jakautuu useammalle.",
+          "feedback": "Väärin. Harvemmalla hilalla kulmat ja siksi myös $x$ pienenevät. Sama $\\Delta x$ on silloin suurempi osa etäisyydestä. Virhe ei jakaudu mihinkään."
+        },
+        {
+          "text": "Käytetään kirkkaampaa laseria, koska silloin maksimit siirtyvät kauemmas toisistaan.",
+          "feedback": "Väärin. Laserin kirkkaus ei vaikuta maksimien paikkoihin. Paikat riippuvat aallonpituudesta, hilavakiosta ja etäisyydestä $L$. Ne eivät riipu valon voimakkuudesta."
+        },
+        {
+          "text": "Mitataan kauempana oleva maksimi, koska sama lukemisvirhe on pienempi osa suuremmasta etäisyydestä.",
+          "feedback": "Oikein. Kun mitataan suuremman kertaluvun maksimi, $x$ on suurempi, mutta lukemisvirhe $\\Delta x$ pysyy samana. Suhteellinen virhe $\\Delta x : x$ pienenee. Sama pätee aallonpituuteen.",
+          "correct": true
+        }
+      ]
     }
   ],
   "level3": [
@@ -99,6 +251,134 @@
       "answer": 532.5781,
       "unit": "nm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-13-L3-04",
+      "level": 3,
+      "text": "Kuvitellaan koe. Kaksoisraon rakoväli on $d = 0{,}250\\,\\text{mm}$. Valonlähteenä on laser, jonka aallonpituutta ei tunneta. Varjostin on kohtisuorassa sädettä vastaan $L = 2{,}00\\,\\text{m}$ päässä raoista.\n\nValoanturi mittaa kuvion suhteellisen intensiteetin $I$ eli valon voimakkuuden. Se mittaa sen etäisyyden $x$ funktiona keskimaksimista. Lukemat ovat taulukossa.\n\na) Piirrä taulukon pisteistä kuvaaja $I(x)$. Lue kuvaajasta ensimmäisen kertaluvun maksimin paikka $x_1$. Laske laserin aallonpituus $\\lambda$.\n\nb) Missä kohdassa toisen kertaluvun maksimi on? Tarkista, että taulukossa on huippu tässä kohdassa.\n\nc) Kaksoisrako korvataan kuvitellulla hilalla. Hilan hilavakio on sama $0{,}250\\,\\text{mm}$. Mihin kohtaan ensimmäisen kertaluvun maksimi tulee? Miten hilan kuvio eroaa kaksoisraon kuviosta?\n\nKohdan a) tulos nanometreinä kirjoitetaan vastauslaatikkoon.",
+      "kind": [
+        "data",
+        "graph",
+        "model"
+      ],
+      "answer": 624.998,
+      "unit": "nm",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Kaksoisraon kuvion intensiteetti (esimerkkiaineisto)",
+        "columns": [
+          "$x\\,(\\text{mm})$",
+          "$I$ (suhteellinen)"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "1.00"
+          ],
+          [
+            "1.0",
+            "0.65"
+          ],
+          [
+            "2.5",
+            "0.00"
+          ],
+          [
+            "3.0",
+            "0.09"
+          ],
+          [
+            "3.5",
+            "0.35"
+          ],
+          [
+            "4.0",
+            "0.65"
+          ],
+          [
+            "4.5",
+            "0.91"
+          ],
+          [
+            "5.0",
+            "1.00"
+          ],
+          [
+            "5.5",
+            "0.89"
+          ],
+          [
+            "6.0",
+            "0.64"
+          ],
+          [
+            "6.5",
+            "0.36"
+          ],
+          [
+            "7.0",
+            "0.09"
+          ],
+          [
+            "7.5",
+            "0.00"
+          ],
+          [
+            "9.0",
+            "0.65"
+          ],
+          [
+            "9.5",
+            "0.91"
+          ],
+          [
+            "10.0",
+            "1.00"
+          ],
+          [
+            "10.5",
+            "0.89"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-13-L3-05",
+      "level": 3,
+      "text": "Opiskelija tutkii DVD-levyä heijastushilana. Vihreän laserin säde kulkee levyn suuntaisessa pahvissa olevan reiän läpi. Laserin aallonpituus on $532\\,\\text{nm}$. Säde osuu kohtisuoraan levyn pintaan.\n\nLevystä heijastuneet ensimmäisen kertaluvun maksimit $k = \\pm 1$ näkyvät pahvilla reiän kummallakin puolella. Opiskelija mittaa maksimien välimatkan $2x$ neljällä eri etäisyydellä $L$ pahvin ja levyn välillä. Tulokset ovat taulukossa.\n\na) Laske jokaisesta mittauksesta levyn raitojen etäisyys $d$. Laske myös niiden keskiarvo $d_{\\text{ka}}$.\n\nb) Osoita laskemalla, että toisen kertaluvun maksimia ei synny. Kuinka monta valopistettä pahvilla näkyy? Minne nollannen kertaluvun heijastus menee?\n\nc) Kuinka monta prosenttia keskiarvo $d_{\\text{ka}}$ poikkeaa DVD-levyn raitavälistä $0{,}74\\,\\mu\\text{m}$?\n\nKohdan a) keskiarvo mikrometreinä kirjoitetaan vastauslaatikkoon.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 0.7374,
+      "unit": "µm",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Maksimien $\\pm 1$ välimatka (esimerkkiaineisto)",
+        "columns": [
+          "$L\\,(\\text{cm})$",
+          "$2x\\,(\\text{cm})$"
+        ],
+        "rows": [
+          [
+            "4.0",
+            "8.3"
+          ],
+          [
+            "6.0",
+            "12.5"
+          ],
+          [
+            "8.0",
+            "16.7"
+          ],
+          [
+            "10.0",
+            "20.9"
+          ]
+        ]
+      }
     }
   ]
 }

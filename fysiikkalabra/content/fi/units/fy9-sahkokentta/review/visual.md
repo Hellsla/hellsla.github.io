@@ -1,5 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 29b45f18108766eb
+CONTENT-HASH: 9c10b36b9630971c
+
+## Delta review
+Delta review, 2026-11-04 (previous PASS hash 29b45f18108766eb). `git diff HEAD -- content/fi/units/fy9-sahkokentta lessons/units/fy9-sahkokentta` shows one changed line: `sovella/tasks.json`, s1 b rubric criterion `calculation` (1 p). The long formula with the fraction inside the square root is now three formulas: $F_\text{s} = 4{,}93 \cdot 10^{-4}\,\text{N}$ ja $k = 8{,}988 \cdot 10^{9}\,\text{N}\cdot\text{m}^2/\text{C}^2$, joten $q = 0{,}080\,\text{m} \cdot \sqrt{F_\text{s}/k} \approx 1{,}87 \cdot 10^{-8}\,\text{C}$ ja $n \approx 1{,}2 \cdot 10^{11}$. Nothing else changed in the unit.
+- Built the preview and opened it in Playwright at 360 and 1280 px with every details element open. At 1280 px the criterion reads cleanly on two lines. `check_layout.py fy9-sahkokentta --width 360` and `--width 1280`: OK for `preview/fy9-sahkokentta` (en and fi-easy also OK).
+- **Polish (not blocking):** at 360 px the third formula, $q = 0{,}080\,\text{m} \cdot \sqrt{F_\text{s}/k} \approx 1{,}87 \cdot 10^{-8}\,\text{C}$, is still about 319 px wide in a 278 px column. `flFitMath` puts it on its own scrolling line (kx-wide), so the page does not overflow and the check passes, but the end of the result ("· 10⁻⁸ C") is hidden until the reader scrolls. The same happens at 390 px (16 px). Fix if wanted: split once more, e.g. `$q = 0{,}080\,\text{m} \cdot \sqrt{F_\text{s}/k}$ eli $q \approx 1{,}87 \cdot 10^{-8}\,\text{C}$`, with the same change in en and fi-easy. I did not edit it, because the translations follow this source.
+
+## Previous review
 
 Round 2 (delta review of round 1 fixes; round 1 hash 63bd93568ec525b8). Visual and editorial review of fy9-sahkokentta, 2026-11-04. I built `preview/fy9-sahkokentta.html` and opened it in Playwright at 390 and 1280 px, with every details element open and every solution shown.
 

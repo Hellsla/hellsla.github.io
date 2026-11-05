@@ -3,6 +3,7 @@
     {
       "id": "fy4-4-L1-01",
       "level": 1,
+      "core": true,
       "text": "A horizontal net force of $6.0\\,\\text{N}$ acts on a toy car of mass $2.5\\,\\text{kg}$. What is the acceleration of the toy car?",
       "answer": 2.4,
       "unit": "m/s²",
@@ -27,6 +28,7 @@
     {
       "id": "fy4-4-L1-04",
       "level": 1,
+      "core": true,
       "text": "A box of mass $12\\,\\text{kg}$ is pulled on a horizontal floor with a horizontal force of $38\\,\\text{N}$. The friction force from the floor on the box is $20\\,\\text{N}$. Draw the free-body diagram of the box. What is the acceleration of the box?",
       "answer": 1.5,
       "unit": "m/s²",
@@ -45,6 +47,7 @@
     {
       "id": "fy4-4-L1-06",
       "level": 1,
+      "core": true,
       "text": "An elevator moves upward and slows down to stop. The positive direction is up. Which statement about the net force $\\Sigma\\overline{F}$ acting on the elevator is correct?",
       "kind": [
         "concept"
@@ -116,6 +119,7 @@
     {
       "id": "fy4-4-L2-03",
       "level": 2,
+      "core": true,
       "text": "A crane lowers a load of $120\\,\\text{kg}$ downward at a velocity of $2.0\\,\\text{m/s}$. Just before the ground the load slows down uniformly and stops in $2.0\\,\\text{s}$. What is the tension in the rope during the slowing down?",
       "answer": 1297,
       "unit": "N",

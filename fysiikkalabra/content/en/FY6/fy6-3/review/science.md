@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: c97d32336375acfa
+CONTENT-HASH: 7be8861751636773
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-- Numbers, units, formulas and the 7-step worked example agree with the Finnish (decimal point in en); inquiry feedback values (0.182 A, 0.250 A, 8.3 and 12.0 ohm) match.
-- Terms are correct English physics: resistance, resistor, characteristic curve, resistivity, filament lamp, nichrome, constantan.
-- Fixed: sim experiment state still showed the Finnish component names (komponentti, vastus); now English.
-- Re-review after the concept fix: lesson and inquiry state 'electrical energy is changed into internal energy' (matches the Finnish 'sisäenergiaksi'); no 'heat' wording left that conflicts. Lamp model symbols R_c, R_r, U_r in the 'calc' text are defined in the same sentence and carry the same values (1.0 ohm, 12.0 ohm, 3.0 V, exponent 0.6) as the Finnish and the solutions.
+batch delta review: the misconception paragraph now limits the constant ratio $U : I$ to an ohmic resistor at constant temperature and conditions, and states the direct proportionality as following from that; this replaces the former unconditional "does not depend on the voltage" (a B condition now stated) and agrees with the next sentences (resistance depends on temperature; a filament lamp's resistance rises because the current heats the wire). Filament-bulb caption (tungsten filament, electron–ion collisions turning electric energy into internal energy, the wire heats up) is the school model and consistent with the lesson's last paragraph on energy, not current, being changed in a resistor. The prior-knowledge chapter reference now matches the title *Circuit, electric current and voltage*. No numbers, choices or answers changed.

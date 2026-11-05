@@ -1,16 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 5956ef5842dcecd2
+CONTENT-HASH: 54e23328ba3116c2
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+(none needed: the English text already matched fi in every number and was natural)
 
 ## Polish
-- answers.py:fy8-9-L2-04 comment "0,6943 mg -> 0,694 mg" and fy8-9-L3-03 comment "6,96 %" are stale: the code gives 0.6953 mg and 6.972 %, matching exercises.json (0.695, 6.97) and solutions.md; fix the comments only.
+(none)
 
 ## Checked
-- Recomputed all 12 answers independently: 92.82 MBq, 16.29 %, 0.02303 1/a, 13.34 kBq, 24.0 h, 1.0003e-6 1/s, 7.294e14, 777.2 MBq, 0.6953 mg, 7957 a, 5.046 min, 6.972 % — all within tolerance and agree with answers.py.
-- answers.py uses the right physics (decay law, λ = ln 2/T½, A = λN, m ∝ N, background subtracted before the ratio).
-- L3-02: net rates 790 → 200; without subtraction 5.45 min, as the reasonableness says.
-- L3-03: shares computed with both half-lives in days (Cs 10 994 d); daughter decays excluded as stated.
-- L2-02: Am-241 mass ≈ 0.29 µg, consistent with "about 0.3 µg"; L1-04 λ(Co-60) = 4.17e-9 1/s matches T½ = 5.27 a.
-- Every solution symbolic first, conversions shown, rounding justified by the limiting datum; reasonableness checks are real checks.
-- No scope beyond FY8 central contents (decay law, activity).
+- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) and the 12 older ones compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags, choices, data cells identical; every number in texts, choices, feedback and solutions.md equal to fi (decimal point in en, comma in fi-easy).
+- solutions.md of en has the same number sequence as fi (1312 numbers) and the same 198 lines; formulas unchanged.
+- L1-06: one correct option, distractor feedback names the same misconceptions as fi.
+- Key answers re-derived from the Finnish data: L2-05, L2-06, L2-07, L3-04, L3-05 agree with fi.
+- check_i18n.py en: 0 errors.

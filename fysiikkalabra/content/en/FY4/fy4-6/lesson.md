@@ -303,7 +303,7 @@ Friction opposes the sliding of surfaces **relative to each other**, not necessa
   <foreignObject x="554.5" y="137.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\overline{a}$</div></foreignObject>
 </svg>
 
-Besides friction, other contact forces can act on an object. **Buoyancy** is the force with which a liquid or a gas pushes upward an object immersed in it, and the **drag of the medium** is the force with which air or water opposes the motion of an object. Air drag is treated in more detail in the chapter *Air drag and falling in air*. In this chapter air drag and buoyancy are ignored.
+Besides friction, other contact forces can act on an object. **Buoyancy** is the force with which a liquid or a gas pushes upward an object immersed in it, and the **drag of the medium** is the force with which air or water opposes the motion of an object. Air drag is treated in more detail in the chapter *Air resistance and falling through air*. In this chapter air drag and buoyancy are ignored.
 
 ## Formula: The friction force and the inclined plane
 The magnitude of the weight is

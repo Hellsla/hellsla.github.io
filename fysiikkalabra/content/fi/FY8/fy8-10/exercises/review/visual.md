@@ -1,16 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 848b3b84e36daf0e
+CONTENT-HASH: 16344269b7035d57
+Round: 2
 
 ## Blocking
 (none)
 
+Round 1 had no Blocking items; the round-2 changes were checked and are correct and well rendered (L1-06 and L1-08 option order and distractors, L2-05 spreadsheet hint, L2-07 rewritten question, answer and feedback, L3-04 b) wording and the rounding-error explanation, L3-05 assumption sentence).
+
 ## Polish
-- [Minor] solutions.md fy8-10-L3-01 **Annettu** — still lists "vertailuarvo $\tfrac{E_\text{B}}{A} = 7{,}07\,\text{MeV}$", which the task text no longer gives (the comparison was removed from the question) — drop it from Annettu or keep the comparison only under Vastaus/Järkevyys.
+- [Minor] exercises.json 10-7, 10-12, 10-20 — unit labels beside the answer fields ("MeV", "10^14 kg", "10^20 kg") are plain text; project-wide field convention — leave.
+- [Minor] solutions.md L2-07 (10-15) Mallivastaus — long (about eight sentences); the Fe-56 plus He-4 counter-example is good, but a line break before "Muiden ytimien kanssa" would help reading.
+- [Minor] solutions.md L3-04 (10-19) Järkevyys — carries three ideas (rounding error, which method is more exact, the coal comparison); split into two short paragraphs when next edited.
+- [Minor] solutions.md L3-05 (10-20) Järkevyys — "(todellisuudessa vain ydin fuusioituu, joten osuus ytimen vedystä on suurempi)" is clumsy; "todellisuudessa vain tähden ydin fuusioituu, joten ytimen vedestä kuluisi suurempi osuus".
 
 ## Checked
-- Delta: open-exercises-1280-1 (L1-01: Vastaus now "0,098940 u" with a comma sentence, no stray semicolon) and open-exercises-L3-1280-1 (L3-01: question is its own bold sentence, chains aligned, no overflow).
-- L1-03 Kaava now leads with the formula; text read in the diff, layout identical to the previous capture pattern.
-- Maths: units upright with thin space, decimal commas, `\tfrac{\text{MeV}}{c^2}` readable.
+- 1280 px captures with every solution open: L2 part 8 (10-14 solution end, 10-15 task and options with the new text) and L3 part 7 (10-20 task, Annettu, Kaava, answer field). Chains, tables and boxes render cleanly; no clipping or red source.
+- Diff of exercises.json and solutions.md against 0f82a5dd8 read in full. Only 1280 px exercise captures exist; 360 px rests on check_layout (ok).
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

@@ -11,6 +11,7 @@
     {
       "id": "fy4-10-L1-02",
       "level": 1,
+      "core": true,
       "text": "Ilmatyynyradalla $0{,}50\\,\\text{kg}$:n vaunu liikkuu nopeudella $0{,}80\\,\\text{m/s}$. Se törmää levossa olevaan $0{,}30\\,\\text{kg}$:n vaunuun. Vaunut jäävät kiinni toisiinsa. Kitka jätetään huomiotta. Millä nopeudella vaunut jatkavat yhdessä?",
       "answer": 0.5,
       "unit": "m/s",
@@ -39,12 +40,66 @@
       "answer": 0.2,
       "unit": "m/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-10-L1-06",
+      "level": 1,
+      "core": true,
+      "text": "Kaksi ilmatyynyradan vaunua törmää ja jää kiinni toisiinsa. Ulkoiset voimat ovat törmäyksen aikana niin pieniä, ettei niillä ole merkitystä. Mikä väite tästä täysin kimmottomasta törmäyksestä on oikein?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Liikemäärä säilyy, mutta liike-energia pienenee, koska osa siitä muuttuu sisäenergiaksi.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Liike-energia säilyy, mutta kokonaisliikemäärä pienenee, koska vaunut hidastuvat törmäyksessä.",
+          "feedback": "Liikemäärä säilyy, kun ulkoisten voimien impulssi on hyvin pieni. Täysin kimmottomassa törmäyksessä pienenee liike-energia."
+        },
+        {
+          "text": "Sekä liikemäärä että liike-energia pienenevät, koska kappaleet tarttuvat toisiinsa kiinni.",
+          "feedback": "Kiinni tarttuminen ei poista liikemäärää: vaunujen yhteinen liikemäärä on sama kuin ennen törmäystä. Vain liike-energia pienenee."
+        },
+        {
+          "text": "Liikemäärä säilyy, mutta liike-energia pienenee, koska osa siitä muuttuu sisäenergiaksi.",
+          "feedback": "Oikein: sisäiset voimat eivät muuta kokonaisliikemäärää, joten se säilyy. Osa liike-energiasta muuttuu muodonmuutoksissa sisäenergiaksi ja ääneksi.",
+          "correct": true
+        },
+        {
+          "text": "Kokonaisliikemäärä säilyy ja liike-energia kasvaa, koska vaunujen yhteinen massa on suurempi.",
+          "feedback": "Liike-energia ei voi kasvaa ilman energian lähdettä. Yhteinen nopeus pienenee, ja siksi $\\tfrac12 mv^2$ on törmäyksen jälkeen pienempi kuin ennen."
+        }
+      ]
+    },
+    {
+      "id": "fy4-10-L1-07",
+      "level": 1,
+      "text": "Jäällä levossa seisova luistelija, jonka massa on $35\\,\\text{kg}$, heittää $2{,}0\\,\\text{kg}$:n pallon vaakasuoraan nopeudella $6{,}0\\,\\text{m/s}$ jään suhteen. Kitka jätetään huomiotta heiton ajalta. Millä nopeudella luistelija liukuu heiton jälkeen? Ilmoita nopeuden suuruus.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 0.342857,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-10-L1-08",
+      "level": 1,
+      "text": "Biljardissa $0{,}17\\,\\text{kg}$:n lyöntipallo liikkuu nopeudella $1{,}8\\,\\text{m/s}$ ja osuu suoraan samanlaiseen palloon, joka on levossa. Törmäys on kimmoisa ja kitka jätetään huomiotta. Kuinka suuri on osuman kohteena olleen pallon nopeus törmäyksen jälkeen?",
+      "kind": [
+        "concept"
+      ],
+      "answer": 1.8,
+      "unit": "m/s",
+      "tolerance": 0.02
     }
   ],
   "level2": [
     {
       "id": "fy4-10-L2-01",
       "level": 2,
+      "core": true,
       "text": "Ilmakivääristä ammutaan $0{,}50\\,\\text{g}$:n luoti nopeudella $180\\,\\text{m/s}$. Kiväärin massa on $3{,}2\\,\\text{kg}$. Kivääri on ennen laukausta levossa, ja ampuja tukee sitä kevyesti. Ampujan tuki jätetään huomiotta, koska laukaus kestää vain hetken. Millä nopeudella kivääri lähtee liikkumaan taaksepäin?",
       "answer": 0.028125,
       "unit": "m/s",
@@ -73,6 +128,105 @@
       "answer": 15000.0,
       "unit": "kg",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-10-L2-05",
+      "level": 2,
+      "core": true,
+      "text": "Ilmatyynyradalla vaunu A ($m_\\text{A} = 0{,}50\\,\\text{kg}$) liikkuu oikealle ja törmää vaunuun B ($m_\\text{B} = 0{,}30\\,\\text{kg}$), joka on levossa. Törmäys tehtiin kolmella eri tavalla, ja nopeudet mitattiin videoanalyysillä. Oikealle on positiivinen suunta, kitka jätetään huomiotta ja aineisto on esimerkkiaineisto.\n\na) Laske kokonaisliikemäärä ennen törmäystä ja sen jälkeen jokaisessa kokeessa. Säilyykö liikemäärä mittaustarkkuuden rajoissa?\n\nb) Laske kokeiden 1 ja 2 liike-energia ennen törmäystä ja sen jälkeen. Luokittele törmäykset kimmoisiksi, täysin kimmottomiksi tai osittain kimmoisiksi.\n\nc) Laske kokeessa 3, kuinka suuri osuus alkuperäisestä liike-energiasta on jäljellä. Luokittele törmäys.\n\nVastauslaatikkoon tulee osan c) osuus prosentteina.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 73.4,
+      "unit": "%",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Vaunujen nopeudet törmäyksen molemmin puolin (esimerkkiaineisto)",
+        "columns": [
+          "Koe",
+          "$v_\\text{A}\\,(\\text{m/s})$",
+          "$v_\\text{B}\\,(\\text{m/s})$",
+          "$v_\\text{A}'\\,(\\text{m/s})$",
+          "$v_\\text{B}'\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "0.60",
+            "0.00",
+            "0.16",
+            "0.74"
+          ],
+          [
+            "2",
+            "0.60",
+            "0.00",
+            "0.37",
+            "0.37"
+          ],
+          [
+            "3",
+            "0.60",
+            "0.00",
+            "0.25",
+            "0.58"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-10-L2-06",
+      "level": 2,
+      "text": "Ilmatyynyradalla vaunu A ($0{,}40\\,\\text{kg}$) liikkuu oikealle ja törmää vaunuun B ($0{,}60\\,\\text{kg}$), joka on levossa. Videoanalyysillä mitattiin vaunujen paikat $x$ (esimerkkiaineisto). Törmäys tapahtuu hetkellä noin $2{,}0\\,\\text{s}$. Vaunut liikkuvat tasaisella nopeudella ennen törmäystä ja sen jälkeen. Kitka jätetään huomiotta.\n\na) Määritä taulukosta vaunujen nopeudet ennen törmäystä ja sen jälkeen.\n\nb) Säilyykö kokonaisliikemäärä mittaustarkkuuden rajoissa?\n\nc) Kuinka monta prosenttia alkuperäisestä liike-energiasta on jäljellä törmäyksen jälkeen?\n\nVastauslaatikkoon tulee osan c) tulos.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 46.7,
+      "unit": "%",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Vaunujen paikat (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$x_\\text{A}\\,(\\text{m})$",
+          "$x_\\text{B}\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.00",
+            "1.00"
+          ],
+          [
+            "1.0",
+            "0.51",
+            "1.00"
+          ],
+          [
+            "3.0",
+            "1.10",
+            "1.27"
+          ],
+          [
+            "4.0",
+            "1.21",
+            "1.54"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-10-L2-07",
+      "level": 2,
+      "text": "Oppilas ratkaisee tehtävän: ilmatyynyradalla $0{,}60\\,\\text{kg}$:n vaunu liikkuu oikealle nopeudella $0{,}80\\,\\text{m/s}$ ja $0{,}20\\,\\text{kg}$:n vaunu vasemmalle nopeudella $0{,}40\\,\\text{m/s}$. Vaunut törmäävät ja jäävät kiinni toisiinsa. Kitka jätetään huomiotta.\n\nOppilaan ratkaisu: $v' = \\dfrac{0{,}60 \\cdot 0{,}80 + 0{,}20 \\cdot 0{,}40}{0{,}60 + 0{,}20}\\,\\text{m/s} = 0{,}70\\,\\text{m/s}$.\n\nMikä virhe ratkaisussa on? Laske oikea yhteinen nopeus etumerkkeineen, kun oikealle on positiivinen suunta.\n\nVastauslaatikkoon tulee oikea yhteinen nopeus.",
+      "kind": [
+        "error"
+      ],
+      "answer": 0.5,
+      "unit": "m/s",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -99,6 +253,59 @@
       "answer": 120.0,
       "unit": "s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-10-L3-04",
+      "level": 3,
+      "text": "Tutkijat selvittävät onnettomuutta. Henkilöauto A törmäsi suoralla vaakasuoralla tiellä takaapäin pysäköityyn autoon B, joka oli levossa. Esimerkkitilanne: A:n massa on $1100\\,\\text{kg}$ ja B:n massa $1400\\,\\text{kg}$. Autot jäivät kiinni toisiinsa ja liukuivat yhdessä jarrutusjäljen mukaan $8{,}0\\,\\text{m}$ pysähtymiseen. Kaikki pyörät olivat lukossa, ja kuivan asfaltin liukukitkakerroin on $\\mu = 0{,}60$.\n\nOleta, että kitkalla ja ilmanvastuksella ei ole merkitystä itse törmäyksen aikana. Oleta myös, että liukumisen aikana autoihin vaikuttaa vain vakiosuuruinen liukukitka.\n\na) Laske autojen yhteinen nopeus heti törmäyksen jälkeen energiaperiaatteella.\n\nb) Laske auton A nopeus ennen törmäystä.\n\nc) Auton A kuljettaja väittää ajaneensa nopeusrajoituksella $50\\,\\text{km/h}$. Sopiiko väite tulokseen? Miten kitkakertoimen epävarmuus $\\mu = 0{,}50 \\dots 0{,}70$ vaikuttaa päätelmään?\n\nVastauslaatikkoon tulee osan b) tulos yksikössä $\\text{km/h}$.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 79.4,
+      "unit": "km/h",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-10-L3-05",
+      "level": 3,
+      "text": "Oppilaat tutkivat kitkan vaikutusta törmäykseen. Vaunu A ($0{,}40\\,\\text{kg}$) liukuu tasaisella pöydällä ja osuu vaunuun B ($0{,}20\\,\\text{kg}$), joka on levossa. Vaunu A tarttuu vaunuun B tarranauhalla. Valokenno mittasi vaunun A nopeudeksi juuri ennen törmäystä $1{,}50\\,\\text{m/s}$. Videoanalyysillä mitattiin yhdessä liukuvan vaunuparin nopeus $v$ (taulukko, esimerkkiaineisto). Aika $t$ lasketaan törmäyshetkestä.\n\nOppilas laski ensimmäisen mittauspisteen avulla kokonaisliikemäärän törmäyksen jälkeen. Hän päätteli, ettei liikemäärä säily. Oleta, että kitka on pöydän aiheuttama vakiosuuruinen voima. Oleta myös, että kitkan impulssi on itse törmäyksen aikana niin pieni, ettei sillä ole merkitystä.\n\na) Määritä taulukosta vaunuparin hidastuvuuden suuruus.\n\nb) Laske vaunuparia hidastava kitkavoima.\n\nc) Päättele taulukosta vaunuparin nopeus heti törmäyksen jälkeen ja tarkista liikemäärän säilyminen. Mikä oppilaan päättelyssä oli vialla?\n\nVastauslaatikkoon tulee osan b) kitkavoima.",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 1.175,
+      "unit": "N",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Yhdessä liukuvien vaunujen nopeus (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$v\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "0.06",
+            "0.88"
+          ],
+          [
+            "0.12",
+            "0.77"
+          ],
+          [
+            "0.18",
+            "0.65"
+          ],
+          [
+            "0.24",
+            "0.52"
+          ],
+          [
+            "0.30",
+            "0.41"
+          ]
+        ]
+      }
     }
   ]
 }

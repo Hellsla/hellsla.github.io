@@ -3,6 +3,7 @@
     {
       "id": "fy8-10-L1-01",
       "level": 1,
+      "core": true,
       "text": "The mass of a carbon-12 atom is exactly $12.000000\\,\\text{u}$. The mass of a hydrogen atom is $m_\\text{H} = 1.007825\\,\\text{u}$ and that of a neutron $m_\\text{n} = 1.008665\\,\\text{u}$. What is the mass defect of the carbon-12 nucleus ${}^{12}_{6}\\text{C}$? Give the answer in atomic mass units.",
       "answer": 0.09894,
       "unit": "u",
@@ -39,6 +40,79 @@
       "answer": 2.388,
       "unit": "10⁻³ u",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-10-L1-06",
+      "level": 1,
+      "text": "What does the binding energy $E_\\text{B}$ of a nucleus mean?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The energy needed to break the nucleus into separate nucleons, which was released when the nucleus was formed.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Energy stored in the nucleus that is released when the nucleus is broken into separate nucleons.",
+          "feedback": "This is the wrong way round: breaking a nucleus up takes energy and does not release it. The energy was already released when the nucleons bound together into a nucleus."
+        },
+        {
+          "text": "The energy needed to break the nucleus into separate nucleons, which was released when the nucleus was formed.",
+          "correct": true,
+          "feedback": "Correct: the nucleus is more stable and lighter than the separate nucleons. The energy $\\Delta m\\,c^2$ corresponding to the mass defect $\\Delta m$ was released when the nucleus was formed, and the same energy must be given back to separate the nucleons."
+        },
+        {
+          "text": "The total kinetic energy of the nucleons in the nucleus, which keeps the nucleus from breaking into separate nucleons.",
+          "feedback": "Binding energy is not kinetic energy. It is the energy that was released when the nucleons bound together, and it corresponds to the mass defect: the nucleus is lighter than the separate nucleons."
+        },
+        {
+          "text": "The energy of the electric attraction between the nucleus and the electrons around it, which holds the atom together.",
+          "feedback": "That is the binding energy of the atom's electrons, which for hydrogen is only $13.6\\,\\text{eV}$, whereas the binding energy of a nucleus is millions of electronvolts. The binding energy of a nucleus concerns how protons and neutrons are bound to each other."
+        }
+      ]
+    },
+    {
+      "id": "fy8-10-L1-07",
+      "level": 1,
+      "text": "The mass of an electron is $5.486 \\cdot 10^{-4}\\,\\text{u}$. What energy does this mass correspond to? Use $1\\,\\text{u} = 931.5\\,\\tfrac{\\text{MeV}}{c^2}$. Give the answer in megaelectronvolts.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 0.511,
+      "unit": "MeV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-10-L1-08",
+      "level": 1,
+      "core": true,
+      "text": "The binding energy per nucleon $\\tfrac{E_\\text{B}}{A}$ is greatest for the nuclei of iron-56 and nickel-62. What does this tell us?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "The nucleons in these nuclei are on average bound more tightly than in other nuclei, so the nuclei are especially stable.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "These nuclei have the greatest binding energy $E_\\text{B}$ of the whole nucleus of all nuclei, even greater than the uranium nucleus, because they are tightly bound.",
+          "feedback": "The binding energy of the whole nucleus grows with the number of nucleons, so for uranium-238 it is about $1800\\,\\text{MeV}$ and for iron-56 only about $490\\,\\text{MeV}$. The peak concerns the binding energy per nucleon."
+        },
+        {
+          "text": "The most energy is stored in these nuclei, so they release the most energy when they break into pieces.",
+          "feedback": "Binding energy is not stored energy. Breaking a nucleus up takes energy, and the requirement per nucleon is greatest for exactly these nuclei, so they are stable and do not release energy."
+        },
+        {
+          "text": "The nucleons in these nuclei are on average bound more tightly than in other nuclei, so the nuclei are especially stable.",
+          "correct": true,
+          "feedback": "Correct: a large $\\tfrac{E_\\text{B}}{A}$ means that removing one nucleon takes a lot of energy on average. Iron and nickel are therefore at the peak of the graph, and their nuclei are especially stable."
+        },
+        {
+          "text": "In these nuclei the mass defect per nucleon is the smallest, so they are the lightest of all possible nuclei.",
+          "feedback": "The mass defect corresponds to the binding energy, so the greatest binding energy per nucleon means the greatest mass defect per nucleon, not the smallest. The mass of a nucleus also does not tell about the binding, because heavier nuclei have more nucleons."
+        }
+      ]
     }
   ],
   "level2": [
@@ -53,6 +127,7 @@
     {
       "id": "fy8-10-L2-02",
       "level": 2,
+      "core": true,
       "text": "Radium-226 decays by alpha decay: ${}^{226}_{88}\\text{Ra} \\to {}^{222}_{86}\\text{Rn} + {}^{4}_{2}\\text{He}$. The atomic masses are $m({}^{226}\\text{Ra}) = 226.025410\\,\\text{u}$, $m({}^{222}\\text{Rn}) = 222.017578\\,\\text{u}$ and $m({}^{4}\\text{He}) = 4.002603\\,\\text{u}$. How much energy is released in the decay? Use $1\\,\\text{u} = 931.5\\,\\tfrac{\\text{MeV}}{c^2}$. Give the answer in megaelectronvolts.",
       "answer": 4.871,
       "unit": "MeV",
@@ -73,6 +148,121 @@
       "answer": 3.68,
       "unit": "10¹⁴ kg",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-10-L2-05",
+      "level": 2,
+      "core": true,
+      "text": "The table gives the atomic masses of eight nuclides. Use the mass of the hydrogen atom $m_\\text{H} = 1.007825\\,\\text{u}$, the mass of the neutron $m_\\text{n} = 1.008665\\,\\text{u}$ and the conversion $1\\,\\text{u} = 931.5\\,\\tfrac{\\text{MeV}}{c^2}$. You may use a spreadsheet.\n\na) Calculate the mass defect, the binding energy and the binding energy per nucleon of each nuclide. Order the nuclides by binding energy per nucleon from smallest to largest.\n\nb) Which of the nuclides is more tightly bound than all the others, and what is its binding energy per nucleon? The answer box takes the value of part b) in megaelectronvolts.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 8.795,
+      "unit": "MeV",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Atomic masses $m$ (AME2020, rounded to six decimals)",
+        "columns": [
+          "Nuclide",
+          "$Z$",
+          "$A$",
+          "$m\\,(\\text{u})$"
+        ],
+        "rows": [
+          [
+            "${}^{4}\\text{He}$",
+            "2",
+            "4",
+            "4.002603"
+          ],
+          [
+            "${}^{12}\\text{C}$",
+            "6",
+            "12",
+            "12.000000"
+          ],
+          [
+            "${}^{20}\\text{Ne}$",
+            "10",
+            "20",
+            "19.992440"
+          ],
+          [
+            "${}^{40}\\text{Ca}$",
+            "20",
+            "40",
+            "39.962591"
+          ],
+          [
+            "${}^{62}\\text{Ni}$",
+            "28",
+            "62",
+            "61.928345"
+          ],
+          [
+            "${}^{120}\\text{Sn}$",
+            "50",
+            "120",
+            "119.902202"
+          ],
+          [
+            "${}^{138}\\text{Ba}$",
+            "56",
+            "138",
+            "137.905247"
+          ],
+          [
+            "${}^{238}\\text{U}$",
+            "92",
+            "238",
+            "238.050788"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-10-L2-06",
+      "level": 2,
+      "text": "A student calculated the binding energy of the lithium-6 nucleus ${}^{6}_{3}\\text{Li}$. They used the proton mass $m_\\text{p} = 1.007276\\,\\text{u}$, the neutron mass $m_\\text{n} = 1.008665\\,\\text{u}$ and the mass of the lithium-6 atom $m({}^{6}\\text{Li}) = 6.015123\\,\\text{u}$.\n\nTheir calculation: $\\Delta m = 3 \\cdot 1.007276\\,\\text{u} + 3 \\cdot 1.008665\\,\\text{u} - 6.015123\\,\\text{u} = 0.032700\\,\\text{u}$, so $E_\\text{B} = 0.032700 \\cdot 931.5\\,\\text{MeV} = 30.46\\,\\text{MeV}$.\n\na) What is the error in the calculation? Justify.\n\nb) Calculate the binding energy correctly using the mass of the hydrogen atom $m_\\text{H} = 1.007825\\,\\text{u}$ and the conversion $1\\,\\text{u} = 931.5\\,\\tfrac{\\text{MeV}}{c^2}$. The answer box takes the result of part b) in megaelectronvolts.",
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "answer": 31.99,
+      "unit": "MeV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-10-L2-07",
+      "level": 2,
+      "text": "Iron-56 is at the peak of the binding energy curve together with nickel-62, at about $8.8\\,\\text{MeV}$ per nucleon. Why is no energy obtained by combining iron nuclei with each other or by splitting them?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "In the nuclei formed the nucleons would be on average more loosely bound, so the binding energy would decrease and the reaction would require energy.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "For iron nuclei the electric repulsion is so strong that they cannot get close enough to each other, so no reaction is possible.",
+          "feedback": "Electric repulsion only affects how hard it is to start fusion, not whether the reaction releases energy. In splitting, the nuclei do not need to approach each other at all. What matters is whether the binding energy grows in the reaction."
+        },
+        {
+          "text": "Iron is such a chemically stable substance that its atomic nuclei cannot take part in any nuclear reactions.",
+          "feedback": "Chemical stability concerns electrons and the bonds between atoms, not nuclei. The nuclei of iron can be changed in nuclear reactions, but that would take energy, not release it."
+        },
+        {
+          "text": "The iron nucleus has as many protons as neutrons, so the nucleons cannot rearrange to release energy.",
+          "feedback": "Iron-56 has $26$ protons and $30$ neutrons, so the claim is not true. Whether energy is released also does not depend on the numbers of protons and neutrons being equal but on whether the binding energy grows in the reaction."
+        },
+        {
+          "text": "In the nuclei formed the nucleons would be on average more loosely bound, so the binding energy would decrease and the reaction would require energy.",
+          "correct": true,
+          "feedback": "Correct: energy is released only if the total binding energy of the nuclei formed is greater than that of the original ones. On both sides of the peak $\\tfrac{E_\\text{B}}{A}$ is smaller, so combining or splitting iron nuclei would move the nucleons toward looser binding and would require energy. With other nuclei, a reaction can still release energy."
+        }
+      ]
     }
   ],
   "level3": [
@@ -98,6 +288,59 @@
       "text": "A pot contains $1.00\\,\\text{kg}$ of water that cools from a temperature of $80.0\\,{}^\\circ\\text{C}$ to a temperature of $20.0\\,{}^\\circ\\text{C}$. The specific heat capacity of water is $4.19\\,\\tfrac{\\text{kJ}}{\\text{kg} \\cdot \\text{K}}$ and the speed of light $2.998 \\cdot 10^{8}\\,\\text{m/s}$. By how much does the mass of the water decrease as it cools? Give the answer in the unit $10^{-12}\\,\\text{kg}$.",
       "answer": 2.8,
       "unit": "10⁻¹² kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-10-L3-04",
+      "level": 3,
+      "text": "When a neutron hits a uranium-235 nucleus, the nucleus can split into two lighter nuclei. One possible reaction is ${}^{1}_{0}\\text{n} + {}^{235}_{92}\\text{U} \\to {}^{141}_{56}\\text{Ba} + {}^{92}_{36}\\text{Kr} + 3\\,{}^{1}_{0}\\text{n}$. The table gives the atomic masses and the binding energies per nucleon of the nuclides.\n\nUse the neutron mass $m_\\text{n} = 1.008665\\,\\text{u}$ and the values $1\\,\\text{u} = 931.5\\,\\tfrac{\\text{MeV}}{c^2}$, $1\\,\\text{u} = 1.66054 \\cdot 10^{-27}\\,\\text{kg}$ and $1\\,\\text{MeV} = 1.602177 \\cdot 10^{-13}\\,\\text{J}$.\n\na) Calculate the reaction energy $Q$ from the atomic masses.\n\nb) Calculate $Q$ also from the binding energies per nucleon in the table. Which method is more accurate? Justify briefly why the results differ slightly.\n\nc) The mass of a uranium-235 sample is $1.00\\,\\text{g}$, and all of its nuclei split in the way described above. How much energy is released? Justify why the result is reasonable. The answer box takes the result of part c) in the unit $10^{10}\\,\\text{J}$.",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 7.11,
+      "unit": "10¹⁰ J",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Atomic masses $m$ and binding energy per nucleon (AME2020)",
+        "columns": [
+          "Nuclide",
+          "$A$",
+          "$m\\,(\\text{u})$",
+          "$\\tfrac{E_\\text{B}}{A}\\,(\\text{MeV})$"
+        ],
+        "rows": [
+          [
+            "${}^{141}\\text{Ba}$",
+            "141",
+            "140.914411",
+            "8.326"
+          ],
+          [
+            "${}^{92}\\text{Kr}$",
+            "92",
+            "91.926156",
+            "8.513"
+          ],
+          [
+            "${}^{235}\\text{U}$",
+            "235",
+            "235.043930",
+            "7.591"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-10-L3-05",
+      "level": 3,
+      "text": "The radiated power of a star is $L = 1.0 \\cdot 10^{28}\\,\\text{W}$ (example data, the star is not real). Assume that the power stays the same and that the energy comes from a reaction in which four hydrogen atoms ${}^{1}\\text{H}$ turn into one helium-4 atom ${}^{4}\\text{He}$; the energy carried away by neutrinos is ignored.\n\nUse the atomic masses $m_\\text{H} = 1.007825\\,\\text{u}$ and $m({}^{4}\\text{He}) = 4.002603\\,\\text{u}$ and the values $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$ and year $= 365.25 \\cdot 24 \\cdot 3600\\,\\text{s}$.\n\na) By how much does the mass of the star decrease in a year because of radiation?\n\nb) What share of the mass of the hydrogen atoms turns into energy in the reaction?\n\nc) How much hydrogen must turn into helium in a year? The answer box takes the result of part c) in the unit $10^{20}\\,\\text{kg}$.\n\nd) The mass of the star is $2.0 \\cdot 10^{31}\\,\\text{kg}$, and $70\\,\\%$ of it is hydrogen. What share of the hydrogen is used up in a billion years? Is the assumption of constant power reasonable over this time span? Justify.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 4.9,
+      "unit": "10²⁰ kg",
       "tolerance": 0.02
     }
   ]

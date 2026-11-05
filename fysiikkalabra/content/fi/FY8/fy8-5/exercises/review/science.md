@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 1c8a634f4609ffc4
+CONTENT-HASH: 60d9e9328cf45092
+Round: 3. Re-review: the only change since the PASS is the boxed value moved to the start of the first answer-step line (answers_shown).
 
 ## Blocking
 
 ## Polish
-- solutions.md L2-04 Järkevyys — "juuri näkyvän alueen alapuolella, lähellä ultraviolettia": 365 nm is already ultraviolet (UVA), not near it. — Write "aallonpituus on lähellä ultraviolettia" → "aallonpituus on ultraviolettia, juuri näkyvän alueen ulkopuolella".
+- solutions.md fy8-5-L1-07 Mallivastaus — "Sumenemisselitys ei kelpaa …" rebuts the fan-blade option that round 2 removed; the new distractor (pilvi osoittaa tarkan paikan, muut pisteet kohinaa) is not addressed. — Replace the sentence with "Pilvi ei osoita yhtä tarkkaa paikkaa, eivätkä muut pisteet ole kohinaa: jokainen piste on yhtä pätevä mittaustulos."
+- exercises.json fy8-5-L3-05 — the stem now says "siirtyy perustilasta ylemmälle tilalle" and c) repeats "Siirtymä on 3s → 3p" and then the same transition again. — Drop "Siirtymä on 3s → 3p." from c).
+- figure fy8-5/string (L2-06) — carried over: the node-count labels stay in the figure; a) no longer asks for them, so this is now harmless. Optional: remove the labels so that c) still makes the student count nodes.
 
 ## Checked
-- Round-1 polish is resolved: L1-01 now says "s, p, d, …" with "1, 3, 5, …", and its check uses the differences of 2, 8, 18, 32 instead of a fifth subshell.
-- Recomputed independently in one script, agreeing with answers.py: L1 50, 5,2625 %, 300, 1,5111 eV, −0,544 eV; L2 102,57 nm, 8, 960, 364,70 nm; L3 n = 3,986 → 16 orbitals, 15 (P), 4235.
-- L3-01: 1 → 4 is 97,25 nm with these constants, so 97,3 nm is the Lyman line and the rounding to n = 4 is safe.
-- L3-03: an exact 2s isodensity region at 90 % gives an inner ball of 5,25 % of the 5,27 % inside the node, which justifies "käytännössä kokonaan". The exact count is 4237, so "noin 4240" is sound.
-- L1-02: 421/8000 matches the model's 5,27 % (expected 421,2).
-- L2-03: the radii 0,071 and 0,14 nm match the 1s radial distribution (0,0707 and 0,1408 nm).
-- Solutions are symbolic first, with eV→J by substitution. The 3-significant-figure rounding follows from 13,6 eV, and the expected counts are called odotusarvo.
-- The reasonableness checks are real comparisons: 122 nm for 2p→1s, E_4 against E_3 and E_5, argon as a noble gas, phosphorus.
-- Within FY8 scope: E_n is given as data, with no de Broglie and no Schrödinger equation.
+- Round-1 polish applied: L3-05 b) now gives the screening reason; L3-04 calls the end-point slope a check of the fitted 13,62 eV and "kuorille" is fixed; L2-06 b) computes f₁ = 64/1,60 = 40 Hz directly; L3-05 names NIST ASD as source.
+- L2-06 rewrite: λ 1,60/0,80/0,533 m, f 40/80/120 Hz; the key 120 Hz is the two-node state; the solution answers a), b), c) in order.
+- L1-06, L1-07, L2-07 options reordered: exactly one `correct` each, `answer` equals that option's text, every distractor wrong and its feedback right.
+- L2-05 table only changed its decimal sign; 72,25 %, 92,0 %, 0,145 nm unchanged. answers.py unchanged and still equal to the keys.
+- Set coherent with the plan in docs/exercise-bank/FY8.md; no duplicates; levels fit. Hash identical at start and end.
+- L2-05 answer step now starts "Vastauslaatikkoon $72{,}3\,\%$." It equals 289 : 400 = 72,25 % rounded to 3 s.f., the key 72,25 (tol 0,02) and b); same unit, LaTeX with decimal comma; the line reads well.

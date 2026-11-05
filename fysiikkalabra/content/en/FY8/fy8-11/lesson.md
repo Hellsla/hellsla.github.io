@@ -430,7 +430,7 @@ In **fusion**, two light nuclei join to form a heavier nucleus. The most promisi
 $$
 {}^{2}_{1}\text{H} + {}^{3}_{1}\text{H} \rightarrow {}^{4}_{2}\text{He} + {}^{1}_{0}\text{n}
 $$
-The nuclei are positively charged and repel each other, so they reach the range of the strong interaction only when they collide at a very high speed. This is why the fuel must be heated into a plasma at a temperature of about $1.5 \cdot 10^{8}\,\text{K}$. In the core of the Sun, hydrogen fuses into helium at about $1.5 \cdot 10^{7}\,\text{K}$, because the enormous density and tunnelling (chapter *Laser and quantum structures*) help the nuclei to join.
+The nuclei are positively charged and repel each other, so they reach the range of the strong interaction only when they collide at a very high speed. This is why the fuel must be heated into a plasma at a temperature of about $1.5 \cdot 10^{8}\,\text{K}$. In the core of the Sun, hydrogen fuses into helium at about $1.5 \cdot 10^{7}\,\text{K}$, because the enormous density and tunnelling (chapter *Lasers and quantum structures*) help the nuclei to join.
 
 <svg data-fig="fuusio" viewBox="0 0 600 320" role="img" aria-label="Schematic figure, not to scale: the fusion of deuterium and tritium. On the left, a deuterium nucleus with one proton and one neutron and a tritium nucleus with one proton and two neutrons approach each other at high speed, although their positive charges repel each other. On the right, a helium-4 nucleus and a free neutron have formed from them, and an energy of 17.6 megaelectronvolts is released." style="max-width:100%;font-size:24px">
   <circle cx="59" cy="160" r="12" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>

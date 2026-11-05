@@ -1,13 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: d2aa7c70d7cf6c63
+CONTENT-HASH: e733db822fea11fb
+Mode: full in the packet; scope by the teacher's ruling ("katselmoi vain muuttuneet osat"): the diff since the last PASS (`git diff d6007a53c -- content/fi/FY6/fy6-12/exercises`) plus what the changed lines touch.
+Round 3 (follow-up: korjattujen käsitteiden yhdenmukaisuus)
 
 ## Blocking
 (none)
 
 ## Polish
-- solutions.md L1-05 Vastaus/Answer: 50 V and 200 V read off a grid have one significant figure formally, so "two significant figures" because the positions have two is a loose rationale; the value 150 eV is right and the sentence is harmless. Optional: "reading the line at grid crossings adds no extra uncertainty".
+- exercises.json:72 — the L1-06 stem names only "homogeeninen sähkökenttä", no plates, so the feedback's "negatiivisella levyllä" refers to plates the task never shows — optional: "kun potentiaalin nollakohta on kentän synnyttävällä negatiivisella levyllä"; physics is right as it stands.
 
 ## Checked
-- Delta (solutions.md L1-05 Answer): the earlier "result is exact" is removed and replaced by a significant-figure statement; the overstatement is resolved.
-- All 12 answers recomputed in one script and equal answers.py: 3.845e-17 J; 0.36 uJ; 8.01e-16 J; 0.18 mJ; 150 eV; -75 eV; -120 eV; 4.392e5 m/s; 284.3 V; 6.80e6 m/s; 42.86; 4.34 mm.
-- 200 V - 50 V = 150 V from the figure (V = 50 V/cm * x, 250 V at 5.0 cm) is consistent; no physics or number changed.
+- Diff is five lines: `core: true` on L1-04, L1-06, L1-08, L2-03 and one feedback sentence in L1-06; no number, answer, unit, tolerance or correct flag changed.
+- L1-06 feedback: V = Ex with zero at the negative plate and x measured from it matches the lesson Kaava and Tiivistelmä word for word in content; sign is right (V grows from − to +, falls in the field direction), consistent with the correct option's "potentiaali laskee kentän suuntaan".
+- Same convention as solutions.md:65, :115, :147 (V = Ex from the negative plate).
+- Core marks are science-neutral; the four tasks use only lesson formulas (W = qU, |q|U = ½mv², eV).
+- Hash e733db822fea11fb at start and end, equal to the packet's.

@@ -684,7 +684,7 @@ Moni ajattelee myös, että pidempi kiihdytysmatka antaa hiukkaselle enemmän en
 ## Tiivistelmä
 - Sähköinen voima on konservatiivinen, joten varauksella on kentässä potentiaalienergiaa $E_\text{p} = qV$. Kentän tekemä työ on potentiaalienergian väheneminen.
 - Potentiaali $V$ on potentiaalienergia varausyksikköä kohti, $1\,\text{V} = 1\,\text{J/C}$. Se on kentän kohdan ominaisuus. Kahden kohdan potentiaaliero on niiden välinen jännite.
-- Homogeenisessa kentässä potentiaali muuttuu tasaisesti, $V = Ex$, ja kenttä osoittaa suuremmasta potentiaalista pienempään. Tasapotentiaalipinnat ovat levyjen suuntaisia, ja kenttäviivat ovat niitä vastaan kohtisuorassa.
+- Homogeenisessa kentässä potentiaali muuttuu tasaisesti, $V = Ex$, kun negatiivinen levy on potentiaalin nollakohta ja $x$ on etäisyys siitä. Kenttä osoittaa suuremmasta potentiaalista pienempään. Tasapotentiaalipinnat ovat levyjen suuntaisia, ja kenttäviivat ovat niitä vastaan kohtisuorassa.
 - Kun varaus kulkee potentiaalieron $U$ läpi, kenttä tekee työn $qU$ matkasta ja reitistä riippumatta. Levosta lähtenyt hiukkanen saa liike-energian $\tfrac{1}{2}mv^2 = |q|U$.
 - Positiivinen varaus lähtee liikkeelle kohti pienempää potentiaalia ja negatiivinen kohti suurempaa. Kummankin potentiaalienergia pienenee.
 - Elektronivoltti on hiukkasten energian yksikkö: $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$.

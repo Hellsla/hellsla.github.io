@@ -276,10 +276,10 @@ P \approx \frac{k}{N}
 ```
 missä $P$ on todennäköisyys, $k$ alueeseen osuneiden mittausten määrä ja $N$ kaikkien mittausten määrä. Arvio tarkentuu, kun $N$ kasvaa. Mittausten välillä elektronilla ei ole rataa, jonka voisi piirtää.
 
-### Orbitaali on todennäköisyysalue
-Kun mittaustulokset merkitään pisteiksi, syntyy elektronipilvi. Pilvi on tihein siellä, missä elektroni havaitaan todennäköisimmin. Pilvellä ei ole terävää reunaa. Siksi **orbitaali** piirretään alueena, jonka sisällä elektroni havaitaan valitulla todennäköisyydellä. Tavallisesti todennäköisyys on $90\,\%$.
+### Orbitaali kuvaa elektronin kvanttitilaa
+Kun mittaustulokset merkitään pisteiksi, syntyy elektronipilvi. Pilvi on tihein siellä, missä elektroni havaitaan todennäköisimmin. Pilvellä ei ole terävää reunaa. **Orbitaali** kuvaa elektronin kvanttitilaa. Kvanttitila on atomin sallittu seisova aalto. Se määrää, millä todennäköisyydellä elektroni havaitaan eri kohdissa. Kuvissa orbitaali näytetään alueena, jonka sisällä elektroni havaitaan valitulla todennäköisyydellä. Tavallisesti todennäköisyys on $90\,\%$. Piirretty alue on vain havainnollistus. Se ei ole orbitaalin määritelmä.
 
-Raja on sovittu kynnysarvo eikä seinä. Noin kymmenesosa mittauksista osuu sen ulkopuolelle. Vetyatomin $1\text{s}$-orbitaalin $90\,\%$:n raja on pallo, jonka säde on $0{,}14\,\text{nm}$. Sanalla orbitaali tarkoitetaan myös itse tilaa, esimerkiksi $2\text{p}$-orbitaalia.
+Raja on sovittu kynnysarvo eikä seinä. Noin kymmenesosa mittauksista osuu sen ulkopuolelle. Vetyatomin $1\text{s}$-orbitaalin $90\,\%$:n raja on pallo, jonka säde on $0{,}14\,\text{nm}$. Esimerkiksi $2\text{p}$-orbitaali on yksi vetyatomin tiloista.
 
 <svg data-fig="cloud" viewBox="0 0 600 372" role="img" aria-label="Pistekuva mittakaavassa: vetyatomin 1s-elektronin paikka on mitattu yhden kerran, 20 kertaa ja 1000 kertaa. Jokainen mittaustulos on merkitty pisteeksi. Yksi piste ei kerro jakaumasta mitään. Kahdestakymmenestä pisteestä näkee, että ne kasautuvat ytimen ympärille. Tuhannesta pisteestä muodostuu pilvi. Pilvi on tihein ytimen lähellä ja harvenee ulospäin. Kolmanteen kuvaan on piirretty ympyrä, jonka sisällä on 90 prosenttia osumista. Se on 1s-orbitaalin raja, ja sen säde on 0,14 nm. Rajan ulkopuolelle jääneet osumat ovat harmaita. Kuva on läpivalaisu: kolmiulotteiset osumat on piirretty yhteen tasoon. Siksi osa harmaista pisteistä näkyy ympyrän sisällä, vaikka ne ovat rajan edessä tai takana. Ydin on punainen piste." style="max-width:100%;font-size:24px">
   <line x1="200" y1="24" x2="200" y2="296" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
@@ -1453,6 +1453,6 @@ Toinen virhe on ajatella, että pilvi syntyy, koska elektroni kiitää niin nope
 ## Tiivistelmä
 - Aaltomekaanisessa atomimallissa elektronin tilaa kuvaa seisova aalto, joka levittäytyy ytimen ympärille. Vain tietyt aallon muodot ovat mahdollisia, joten energia on kvantittunut. Vetyatomissa energia on sitä suurempi, mitä enemmän solmuja on.
 - Todennäköisyystulkinta: aalto kertoo, kuinka todennäköisesti elektroni havaitaan kussakin kohdassa. Yksi mittaus antaa yhden satunnaisen pisteen. Jakauma näkyy vasta monesta mittauksesta: $P \approx \tfrac{k}{N}$.
-- Orbitaali on alue, jonka sisällä elektroni havaitaan valitulla todennäköisyydellä, esimerkiksi $90\,\%$. Vetyatomin $1\text{s}$-orbitaalin $90\,\%$:n raja on pallo, jonka säde on $0{,}14\,\text{nm}$.
+- Orbitaali kuvaa elektronin kvanttitilaa. Sitä havainnollistetaan alueella, jonka sisällä elektroni havaitaan valitulla todennäköisyydellä, esimerkiksi $90\,\%$. Vetyatomin $1\text{s}$-orbitaalin $90\,\%$:n raja on pallo, jonka säde on $0{,}14\,\text{nm}$.
 - Kuorella $n$ on $n^2$ orbitaalia ja enintään $2n^2$ elektronia. Vetyatomin energiatasot ovat $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$.
 - Orbitaalit täyttyvät alimmasta energiasta alkaen ($1\text{s}$, $2\text{s}$, $2\text{p}$, $3\text{s}$, $3\text{p}$). Tämä on kemian elektronikonfiguraatioiden (elektronien sijoitus orbitaaleille) ja jaksollisen järjestelmän perusta.

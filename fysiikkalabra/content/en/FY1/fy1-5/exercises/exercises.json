@@ -3,6 +3,7 @@
     {
       "id": "fy1-5-L1-01",
       "level": 1,
+      "core": true,
       "text": "A cyclist rides uniformly at $5.5\\,\\text{m/s}$. How far does the cyclist travel in 20 seconds?",
       "answer": 110,
       "unit": "m",
@@ -19,6 +20,7 @@
     {
       "id": "fy1-5-L1-03",
       "level": 1,
+      "core": true,
       "text": "The graph shows the position of a walker as a function of time. The walker keeps moving uniformly in the same direction also beyond the graph. How many seconds pass from the start until the walker has travelled $150\\,\\text{m}$?",
       "figure": "fy1-5/line-read",
       "answer": 60,
@@ -130,6 +132,7 @@
     {
       "id": "fy1-5-L2-05",
       "level": 2,
+      "core": true,
       "text": "The motion of a walker was filmed, and the position $s$ of the walker from the starting mark was measured by video analysis as a function of time $t$. The walker moves uniformly, and the points deviate from a straight line because of measurement uncertainty.\n\nDraw a graph of the points and fit a straight line to them. Determine the speed of the walker from the slope of the line and use it to predict the position of the walker at time $12\\,\\text{s}$. How many metres from the starting mark is the walker then? Justify why the prediction is a model value and not a measurement.",
       "kind": [
         "data",
@@ -176,6 +179,7 @@
     {
       "id": "fy1-5-L2-06",
       "level": 2,
+      "core": true,
       "text": "A trolley moves uniformly on a track. It is initially at $s_0 = 8.0\\,\\text{m}$, and at time $2.0\\,\\text{s}$ it is at $11\\,\\text{m}$. A student reasons: “When the time triples to $6.0\\,\\text{s}$, the position triples, so the trolley is then at $33\\,\\text{m}$.” Find the student's error and calculate the correct position of the trolley at time $6.0\\,\\text{s}$.",
       "kind": [
         "error",

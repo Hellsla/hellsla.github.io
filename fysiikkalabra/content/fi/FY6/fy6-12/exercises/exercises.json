@@ -27,6 +27,7 @@
     {
       "id": "fy6-12-L1-04",
       "level": 1,
+      "core": true,
       "text": "Varaus $4{,}0\\,\\mu\\text{C}$ siirtyy sähkökentässä kohdasta $A$, jonka potentiaali on $60\\,\\text{V}$, kohtaan $B$, jonka potentiaali on $15\\,\\text{V}$. Kuinka suuren työn sähkökenttä tekee varaukseen? Vastaa millijouleina.",
       "answer": 0.18,
       "unit": "mJ",
@@ -38,6 +39,79 @@
       "text": "Kuvaajassa on kahden yhdensuuntaisen levyn välisen homogeenisen kentän potentiaali, kun $x$ on etäisyys negatiivisesta levystä. Protoni siirtyy kohdasta $x = 4{,}0\\,\\text{cm}$ kohtaan $x = 1{,}0\\,\\text{cm}$, ja siihen vaikuttaa vain sähköinen voima. Kuinka paljon protonin liike-energia kasvaa? Lue tarvittavat arvot kuvaajasta ja vastaa elektronivoltteina.",
       "figure": "fy6-12/ex-vgraph",
       "answer": 150.0,
+      "unit": "eV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-12-L1-06",
+      "level": 1,
+      "core": true,
+      "text": "Homogeenisessa sähkökentässä on kaksi pientä kappaletta: toisen varaus on $+q$ ja toisen $-q$. Kumpikin siirtyy saman matkan kentän suuntaan. Mitä niiden sähköiselle potentiaalienergialle tapahtuu?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Positiivisen varauksen potentiaalienergia pienenee ja negatiivisen kasvaa, koska potentiaali laskee kentän suuntaan.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Kummankin varauksen potentiaalienergia pienenee, koska sähkökenttä tekee siirtymän aikana työtä kumpaankin varaukseen positiivisesti.",
+          "feedback": "Kenttä tekee työn $q(V_A - V_B)$, ja sen etumerkki riippuu varauksen etumerkistä. Kentän suuntaan negatiiviseen varaukseen kohdistuu voima vastakkaiseen suuntaan, joten kenttä tekee siihen negatiivisen työn ja sen potentiaalienergia kasvaa."
+        },
+        {
+          "text": "Positiivisen varauksen potentiaalienergia kasvaa ja negatiivisen pienenee, koska potentiaali kasvaa kentän suuntaan ja $E_\\text{p} = qV$.",
+          "feedback": "Kaava $E_\\text{p} = qV$ on oikea, mutta potentiaalin suunta on väärin: kenttä osoittaa kohti pienempää potentiaalia, joten kentän suuntaan potentiaali pienenee. Silloin positiivisen varauksen potentiaalienergia pienenee ja negatiivisen kasvaa."
+        },
+        {
+          "text": "Positiivisen varauksen potentiaalienergia pienenee ja negatiivisen kasvaa, koska potentiaali laskee kentän suuntaan.",
+          "correct": true,
+          "feedback": "Oikein: kenttä osoittaa suuremmasta potentiaalista pienempään, joten kentän suuntaan potentiaali $V$ pienenee. Potentiaalienergia $qV$ pienenee silloin positiiviselle varaukselle ja kasvaa negatiiviselle, koska $q$:n etumerkki kääntää muutoksen."
+        },
+        {
+          "text": "Kummankin varauksen potentiaalienergia pysyy samana, koska varaukset siirtyvät saman matkan samassa homogeenisessa kentässä.",
+          "feedback": "Kenttä on homogeeninen, mutta potentiaali ei ole sama kaikkialla: se muuttuu tasaisesti matkan funktiona, $V = Ex$, kun potentiaalin nollakohta on negatiivisella levyllä ja $x$ on etäisyys siitä. Kun varaus siirtyy kentän suuntaan, sen kohdan potentiaali muuttuu ja potentiaalienergia $qV$ muuttuu sen mukana."
+        }
+      ]
+    },
+    {
+      "id": "fy6-12-L1-07",
+      "level": 1,
+      "text": "Kahden yhdensuuntaisen levyn välinen jännite on $200\\,\\text{V}$. Aluksi nollakohdaksi valitaan negatiivinen levy, jolloin positiivisen levyn potentiaali on $+200\\,\\text{V}$. Sen jälkeen nollakohdaksi valitaankin positiivinen levy. Mikä väite on tämän jälkeen oikein?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Negatiivisen levyn potentiaali on $-200\\,\\text{V}$, ja jännite on edelleen $200\\,\\text{V}$, koska jännite on potentiaalien erotus.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Levyjen välinen jännite on nyt $0\\,\\text{V}$, koska toisen levyn potentiaali on nolla ja jännite mitataan nollakohtaan nähden.",
+          "feedback": "Jännite on kahden kohdan potentiaalien erotus, ei toisen kohdan potentiaali nollakohtaan nähden. Toisen levyn potentiaali on nyt nolla, mutta toisen on $-200\\,\\text{V}$, ja erotus on edelleen $200\\,\\text{V}$."
+        },
+        {
+          "text": "Negatiivisen levyn potentiaali on $-200\\,\\text{V}$, ja jännite on edelleen $200\\,\\text{V}$, koska jännite on potentiaalien erotus.",
+          "correct": true,
+          "feedback": "Oikein: nollakohdan siirto muuttaa kummankin levyn potentiaalia saman verran, mutta potentiaalien erotus eli jännite $U = 0 - (-200\\,\\text{V})$ pysyy samana. Siksi kenttäkin on ennallaan."
+        },
+        {
+          "text": "Positiivisen levyn potentiaali on edelleen $+200\\,\\text{V}$, koska potentiaali on levyn oma ominaisuus eikä riipu nollakohdasta.",
+          "feedback": "Potentiaali kertoo jännitteen valittuun nollakohtaan nähden, joten se muuttuu nollakohdan mukana: positiivisen levyn potentiaali on nyt $0\\,\\text{V}$. Vain potentiaaliero eli jännite ei riipu nollakohdan valinnasta."
+        },
+        {
+          "text": "Levyjen välinen kenttä kääntyy toisin päin ja jännite on nyt $-200\\,\\text{V}$, koska nollakohdan siirto kääntää potentiaalien järjestyksen.",
+          "feedback": "Nollakohdan siirto ei muuta kentän suuntaa eikä voimakkuutta: kenttä osoittaa edelleen positiiviselta levyltä negatiiviselle. Kaikki potentiaalit siirtyvät saman verran, joten niiden järjestys ja erotus säilyvät."
+        }
+      ]
+    },
+    {
+      "id": "fy6-12-L1-08",
+      "level": 1,
+      "core": true,
+      "text": "Kaksinkertaisesti positiivinen ioni, jonka varaus on $+2e$, lähtee levosta ja kulkee $450\\,\\text{V}$:n potentiaalieron läpi. Kuinka suuri liike-energia ionilla on lopuksi? Vain sähköinen voima vaikuttaa ioniin. Vastaa elektronivoltteina.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 900.0,
       "unit": "eV",
       "tolerance": 0.02
     }
@@ -62,6 +136,7 @@
     {
       "id": "fy6-12-L2-03",
       "level": 2,
+      "core": true,
       "text": "Alfahiukkasen varaus on $+2e$ ja massa $6{,}645 \\cdot 10^{-27}\\,\\text{kg}$. Alfahiukkanen lähtee levosta ja kulkee $2{,}0\\,\\text{kV}$:n potentiaalieron läpi. Kuinka suuri on sen nopeus? Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Vastaa metreinä sekunnissa.",
       "answer": 439166.0,
       "unit": "m/s",
@@ -74,13 +149,126 @@
       "answer": 284.301,
       "unit": "V",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-12-L2-05",
+      "level": 2,
+      "text": "Kahden yhdensuuntaisen levyn väli on $d = 6{,}0\\,\\text{cm}$. Levyjen välistä mitataan potentiaali eri etäisyyksillä $x$ negatiivisesta levystä, joka on nollakohta. Taulukon arvot ovat esimerkkiaineistoa, ja niissä on pientä mittaushajontaa.\n\na) Sovita mittapisteisiin origon kautta kulkeva suora ja laske sen kulmakertoimesta (pienimmän neliösumman menetelmällä tai lukemalla suoralta yksi piste) kentänvoimakkuus $E$ yksikössä $\\text{V/m}$.\n\nb) Päättele levyjen välinen jännite $U$.\n\nVastauslaatikkoon tulee kohdan b) tulos voltteina.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 30.1,
+      "unit": "V",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Potentiaali (esimerkkiaineisto)",
+        "columns": [
+          "$x\\,(\\text{cm})$",
+          "$V\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "1.0",
+            "5.2"
+          ],
+          [
+            "2.0",
+            "9.7"
+          ],
+          [
+            "3.0",
+            "15.4"
+          ],
+          [
+            "4.0",
+            "19.6"
+          ],
+          [
+            "5.0",
+            "25.3"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-12-L2-06",
+      "level": 2,
+      "text": "Opiskelija kirjoittaa: ”Positiivinen varaus liikkuu itsestään aina kohti suurempaa potentiaalia, koska varaus pyrkii kohti suurempaa energiaa.” Mikä on väitteen virhe, kun varaukseen vaikuttaa vain sähköinen voima?",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "answer": "Sähköinen voima kiihdyttää positiivista varausta kentän suuntaan eli kohti pienempää potentiaalia, jolloin sen potentiaalienergia pienenee.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Varaus liikkuu kohti suurempaa potentiaalia vain silloin, kun sen massa on pieni, ja raskaampi hiukkanen liikkuu kohti pienempää potentiaalia.",
+          "feedback": "Liikkeen suunnan ratkaisee voiman suunta, ja sen määrää varauksen etumerkki ja kentän suunta, ei massa. Massa vaikuttaa vain siihen, kuinka voimakkaasti hiukkanen kiihtyy: levosta lähtevä positiivinen varaus kiihtyy aina kentän suuntaan."
+        },
+        {
+          "text": "Varaukseen ei vaikuta voimaa lainkaan, ennen kuin se on saavuttanut nollapotentiaalin, joten varaus ei lähde itsestään liikkeelle.",
+          "feedback": "Voima riippuu kentänvoimakkuudesta, ei siitä, missä nollakohta on. Homogeenisessa kentässä varaukseen vaikuttaa joka kohdassa sama voima $qE$, ja nollakohdan valinta on vain sopimus, joka ei muuta kenttää."
+        },
+        {
+          "text": "Varaus liikkuu kohti suurempaa potentiaalia, jos potentiaali on positiivinen, ja kohti pienempää potentiaalia, jos potentiaali on negatiivinen.",
+          "feedback": "Liikkeen suunta ei riipu potentiaalin etumerkistä, koska nollakohta valitaan vapaasti. Ratkaisevaa on potentiaalin muutos: levosta lähtevä positiivinen varaus liikkuu aina kohti pienempää potentiaalia riippumatta siitä, onko potentiaali positiivinen vai negatiivinen."
+        },
+        {
+          "text": "Sähköinen voima kiihdyttää positiivista varausta kentän suuntaan eli kohti pienempää potentiaalia, jolloin sen potentiaalienergia pienenee.",
+          "correct": true,
+          "feedback": "Oikein: kenttä osoittaa suuremmasta potentiaalista pienempään, ja positiivinen varaus kiihtyy kentän suuntaan. Silloin $E_\\text{p} = qV$ pienenee ja liike-energia kasvaa. Varaus pyrkii kohti pienempää potentiaalienergiaa, ei suurempaa."
+        }
+      ]
+    },
+    {
+      "id": "fy6-12-L2-07",
+      "level": 2,
+      "text": "Tutkija kiihdyttää positiivisia ioneja levosta eri kiihdytysjännitteillä $U$ ja mittaa kunkin ionin loppunopeuden $v$. Jokaisen ionin varaus on $+e$, missä $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Taulukon arvot ovat esimerkkiaineistoa, ja niissä on pientä mittaushajontaa.\n\na) Laske ionin massa jokaiselle taulukon riville ja ota massojen keskiarvo.\n\nb) Päättele ionin laji, kun vaihtoehdot ovat protoni ($1{,}673 \\cdot 10^{-27}\\,\\text{kg}$), deuteroni ($3{,}344 \\cdot 10^{-27}\\,\\text{kg}$) ja yksinkertaisesti varautunut heliumioni (He$^+$, $6{,}646 \\cdot 10^{-27}\\,\\text{kg}$).\n\nVastauslaatikkoon tulee kohdan a) keskiarvo kilogrammoina.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 6.66e-27,
+      "unit": "kg",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Ionin nopeus (esimerkkiaineisto)",
+        "columns": [
+          "$U\\,(\\text{V})$",
+          "$v\\,(10^{4}\\,\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "100",
+            "6.88"
+          ],
+          [
+            "200",
+            "9.95"
+          ],
+          [
+            "300",
+            "12.0"
+          ],
+          [
+            "400",
+            "13.9"
+          ],
+          [
+            "500",
+            "15.4"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
     {
       "id": "fy6-12-L3-01",
       "level": 3,
-      "text": "Elektroni kulkee kohdan $A$ kautta nopeudella $2{,}0 \\cdot 10^{6}\\,\\text{m/s}$. Kohdan $A$ potentiaali on $40\\,\\text{V}$. Elektroni jatkaa kohtaan $B$, jonka potentiaali on $160\\,\\text{V}$, ja siihen vaikuttaa vain sähköinen voima. Kuinka suuri on elektronin nopeus kohdassa $B$? Elektronin massa on $9{,}109 \\cdot 10^{-31}\\,\\text{kg}$. Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$.",
+      "text": "Elektroni kulkee kohdan $A$ kautta nopeudella $2{,}0 \\cdot 10^{6}\\,\\text{m/s}$. Kohdan $A$ potentiaali on $40\\,\\text{V}$. Elektroni jatkaa kohtaan $B$, jonka potentiaali on $160\\,\\text{V}$, ja siihen vaikuttaa vain sähköinen voima.\n\nKuinka suuri on elektronin nopeus kohdassa $B$?\n\nElektronin massa on $9{,}109 \\cdot 10^{-31}\\,\\text{kg}$. Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$.",
       "answer": 6797710.0,
       "unit": "m/s",
       "tolerance": 0.02
@@ -96,10 +284,68 @@
     {
       "id": "fy6-12-L3-03",
       "level": 3,
-      "text": "Kahden yhdensuuntaisen levyn väli on $2{,}0\\,\\text{cm}$, ja niiden välinen jännite on $600\\,\\text{V}$. Protoni lähtee negatiivisen levyn reiästä kohti positiivista levyä nopeudella $3{,}0 \\cdot 10^{5}\\,\\text{m/s}$. Kuinka lähelle positiivista levyä protoni pääsee, ennen kuin se kääntyy takaisin? Protonin massa on $1{,}673 \\cdot 10^{-27}\\,\\text{kg}$. Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Vastaa millimetreinä.",
+      "text": "Kahden yhdensuuntaisen levyn väli on $2{,}0\\,\\text{cm}$, ja niiden välinen jännite on $600\\,\\text{V}$. Protoni lähtee negatiivisen levyn reiästä kohti positiivista levyä nopeudella $3{,}0 \\cdot 10^{5}\\,\\text{m/s}$.\n\nKuinka lähelle positiivista levyä protoni pääsee, ennen kuin se kääntyy takaisin?\n\nProtonin massa on $1{,}673 \\cdot 10^{-27}\\,\\text{kg}$. Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Vastaa millimetreinä.",
       "answer": 4.33521,
       "unit": "mm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-12-L3-04",
+      "level": 3,
+      "text": "Katodisädeputkessa elektronit lähtevät käytännössä levosta ja kiihdytetään $1{,}8\\,\\text{kV}$:n jännitteellä. Sen jälkeen ne saapuvat kahden vaakasuoran poikkeutuslevyn väliin levyjen suuntaisesti keskeltä väliä. Levyt ovat $5{,}0\\,\\text{cm}$ pitkät, niiden väli on $1{,}5\\,\\text{cm}$ ja niiden välinen jännite on $120\\,\\text{V}$.\n\nKäytä arvoja $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$, $m = 9{,}109 \\cdot 10^{-31}\\,\\text{kg}$ ja $g = 9{,}81\\,\\text{m/s}^2$. Poikkeutuslevyjen välillä kenttä on homogeeninen, ja levyjen ulkopuolella kenttä jätetään huomiotta.\n\na) Laske elektronin nopeus ennen poikkeutuslevyjä.\n\nb) Laske, kuinka paljon elektroni on poikkeutunut levyjen suuntaisesta suorasta poistuessaan levyjen väliltä, ja tarkista, osuuko se levyyn.\n\nc) Perustele laskemalla, että painovoima voidaan jättää huomiotta.\n\nVastauslaatikkoon tulee kohdan b) poikkeama millimetreinä.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 2.78,
+      "unit": "mm",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy6-12-L3-05",
+      "level": 3,
+      "text": "Elektronisuihkun elektronien liike-energiat vaihtelevat. Jakaumaa tutkitaan vastajännitteellä: elektronit saapuvat hilalle, jonka potentiaali on $U_\\text{v}$ verran pienempi kuin lähteen, joten elektroni pääsee hilan läpi vain, jos sen liike-energia on vähintään $eU_\\text{v}$. Läpi päässeiden elektronien osuus mitataan eri vastajännitteillä. Taulukon arvot ovat esimerkkiaineistoa.\n\nKäytä arvoja $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$ ja $m = 9{,}109 \\cdot 10^{-31}\\,\\text{kg}$. Nopeudet ovat niin pieniä valon nopeuteen verrattuna, että lauseke $\\tfrac{1}{2}mv^2$ pätee.\n\na) Kuinka suuri osuus elektroneista on liike-energialtaan vähintään $40\\,\\text{eV}$ mutta alle $60\\,\\text{eV}$? Perustele.\n\nb) Laske osuudet kullekin $20\\,\\text{eV}$:n energiavälille ja arvioi elektronien keskimääräinen liike-energia olettaen, että jokaisen välin elektronien energia on välin keskikohdassa.\n\nc) Laske nopeus, joka vastaa tätä keskimääräistä liike-energiaa.\n\nd) Perustele lyhyesti, miksi kohdan b) tulos on arvio eikä tarkka arvo.\n\nVastauslaatikkoon tulee kohdan c) nopeus.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 4140000.0,
+      "unit": "m/s",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Läpäisyosuus (esimerkkiaineisto)",
+        "columns": [
+          "$U_\\text{v}\\,(\\text{V})$",
+          "Osuus $(\\%)$"
+        ],
+        "rows": [
+          [
+            "0",
+            "100"
+          ],
+          [
+            "20",
+            "98"
+          ],
+          [
+            "40",
+            "71"
+          ],
+          [
+            "60",
+            "22"
+          ],
+          [
+            "80",
+            "3"
+          ],
+          [
+            "100",
+            "0"
+          ]
+        ]
+      }
     }
   ]
 }

@@ -468,7 +468,7 @@
         },
         {
           "text": "Kerroin $\\tfrac{1}{2}$ on turha, koska lähde antaa energian $QU$, joten energia on $67\\,680\\,\\text{J}$.",
-          "feedback": "Lähde antaa latauksessa energian $QU$, mutta kondensaattoriin varastoituu siitä vain puolet; toinen puoli muuttuu johtimien ja vastusten sisäenergiaksi. Kerroin $\\tfrac{1}{2}$ kuuluu kaavaan. Virhe on mikrofaradien muuntamatta jättäminen."
+          "feedback": "Kun tyhjä kondensaattori ladataan vakiojännitelähteellä, lähde antaa energian $QU$, mutta kondensaattoriin varastoituu siitä vain puolet; toinen puoli muuttuu johtimien ja vastusten sisäenergiaksi. Kerroin $\\tfrac{1}{2}$ kuuluu kaavaan. Virhe on mikrofaradien muuntamatta jättäminen."
         },
         {
           "text": "Jännitettä ei pidä korottaa toiseen potenssiin, joten energia on $\\tfrac{1}{2} \\cdot 470 \\cdot 12\\,\\text{J} = 2820\\,\\text{J}$.",

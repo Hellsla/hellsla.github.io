@@ -3,6 +3,7 @@
     {
       "id": "fy3-2-L1-01",
       "level": 1,
+      "core": true,
       "text": "Mopoa työnnetään liikkeen suuntaan $80\\,\\text{N}$:n voimalla. Matka on 25 metriä. Kuinka suuren työn työntävä voima tekee?",
       "answer": 2.0,
       "unit": "kJ",
@@ -44,6 +45,7 @@
     {
       "id": "fy3-2-L1-06",
       "level": 1,
+      "core": true,
       "text": "Oppilas kantaa repun vaakasuoraan käytävää pitkin tasaisella vauhdilla. Reppua kannatteleva voima osoittaa ylöspäin. Miksi tämä voima ei tee työtä?",
       "kind": [
         "concept"
@@ -138,6 +140,7 @@
     {
       "id": "fy3-2-L2-04",
       "level": 2,
+      "core": true,
       "text": "Vaunua työnnetään liikkeen suuntaisella voimalla. Aluksi voima on $10\\,\\text{N}$ matkalla $0\\text{–}2{,}0\\,\\text{m}$. Sen jälkeen voima kasvaa tasaisesti $10\\,\\text{N}$:sta $30\\,\\text{N}$:iin matkalla $2{,}0\\text{–}6{,}0\\,\\text{m}$. Laske voiman tekemä kokonaistyö $(s, F)$-kuvaajan pinta-alana.",
       "answer": 100,
       "unit": "J",
@@ -186,6 +189,7 @@
     {
       "id": "fy3-2-L2-06",
       "level": 2,
+      "core": true,
       "text": "Oppilas mittaa portaissa tekemäänsä työtä ja tehoa. Hänen massansa on $62\\,\\text{kg}$. Portaissa on 18 askelmaa, ja jokaisen korkeus on $0{,}17\\,\\text{m}$. Oppilas nousee portaat kolme kertaa mahdollisimman tasaisella vauhdilla. Ajanotto antaa taulukon nousuajat (esimerkkiaineisto).\n\nOletetaan, että työtä vaatii vain oppilaan painon nostaminen portaiden korkeudelle. Laske oppilaan keskimääräinen teho nousun aikana. Käytä nousuaikojen keskiarvoa.",
       "kind": [
         "experiment",

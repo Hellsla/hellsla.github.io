@@ -3,6 +3,7 @@
     {
       "id": "fy8-9-L1-01",
       "level": 1,
+      "core": true,
       "text": "For isotope imaging, a technetium-$99\\text{m}$ preparation is made whose activity is $740\\,\\text{MBq}$. The half-life of technetium-$99\\text{m}$ is $6.01\\,\\text{h}$. What is the activity of the preparation $18.0\\,\\text{h}$ later? Give the answer in megabecquerels.",
       "answer": 92.8,
       "unit": "MBq",
@@ -39,6 +40,53 @@
       "answer": 24.0,
       "unit": "h",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-9-L1-06",
+      "level": 1,
+      "core": true,
+      "text": "The half-life of an isotope in a sample is $4.0\\,\\text{h}$. The sample has been stored for $8.0\\,\\text{h}$. Which of the following statements about the undecayed nuclei of the sample is correct?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "One quarter of the nuclei remain, because each half-life removes half of those remaining at that time.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "All the nuclei have decayed, because the second half-life removes the half that was left after the first.",
+          "feedback": "This is a common misconception. The second half-life does not remove all of what was left but only half of it: in every half-life the same fraction of the remaining nuclei decays, so one quarter of the nuclei are still left."
+        },
+        {
+          "text": "Half of the nuclei remain, because decay stops once the first half-life has passed.",
+          "feedback": "Decay does not stop after a half-life. Every remaining nucleus still has the same probability of decaying per unit of time, so in the second half-life half of the remaining nuclei decay too."
+        },
+        {
+          "text": "One quarter of the nuclei remain, because each half-life removes half of those remaining at that time.",
+          "correct": true,
+          "feedback": "Correct: $8.0\\,\\text{h}$ is two half-lives. In the first half-life half of the nuclei decay and in the second half of those that were left, so of the original nuclei $\\tfrac{1}{2} \\cdot \\tfrac{1}{2} = \\tfrac{1}{4}$ remain."
+        },
+        {
+          "text": "One eighth of the nuclei remain, because old nuclei decay faster the longer they have existed.",
+          "feedback": "A nucleus has no memory: its decay probability does not depend on its age. So in every half-life the same fraction, one half, decays, and after two half-lives one quarter remains, not one eighth."
+        }
+      ]
+    },
+    {
+      "id": "fy8-9-L1-07",
+      "level": 1,
+      "text": "The half-life of strontium-90 is $28.8\\,\\text{a}$. A strontium-90 sample is stored for $144\\,\\text{a}$. What percentage of the strontium-90 nuclei of the sample is then still undecayed? Assume that no new strontium-90 is formed.",
+      "answer": 3.13,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-9-L1-08",
+      "level": 1,
+      "text": "The activity of a cobalt-60 radiation source is $A_0$ at the start. The half-life of cobalt-60 is $5.27\\,\\text{a}$. How long does it take for the activity of the source to decrease to $10.0\\,\\%$ of its initial value? Give the answer in years.",
+      "answer": 17.5,
+      "unit": "a",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -53,6 +101,7 @@
     {
       "id": "fy8-9-L2-02",
       "level": 2,
+      "core": true,
       "text": "The radiation source of an old smoke detector contains americium-241, and the activity of the source is $37\\,\\text{kBq}$. The half-life of americium-241 is $433\\,\\text{a}$. How many americium nuclei are there in the source? Use $1\\,\\text{a} = 365.25\\,\\text{d}$. Give the answer in the unit $10^{14}$.",
       "answer": 7.3,
       "unit": "· 10¹⁴",
@@ -73,6 +122,181 @@
       "answer": 0.695,
       "unit": "mg",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-9-L2-05",
+      "level": 2,
+      "core": true,
+      "kind": [
+        "data"
+      ],
+      "text": "Students measured the pulse counts of a barium-$137\\text{m}$ sample with a Geiger counter in $10\\,\\text{s}$ intervals for $400\\,\\text{s}$ (example data). The background radiation was measured separately without the sample, and it gave on average $8$ pulses per $10\\,\\text{s}$ interval.\n\na) Subtract the contribution of the background from each measurement result and calculate the net pulse counts.\n\nb) Determine the half-life of the sample using the net pulse counts. You can make use of the fact that at $320\\,\\text{s}$ the net pulse count has fallen to slightly under a quarter of its initial value: it is about $23\\,\\%$ of the initial value.\n\nThe answer box takes the result of part b) in seconds.",
+      "answer": 149,
+      "unit": "s",
+      "tolerance": 0.06,
+      "data": {
+        "caption": "Pulse count of the barium-$137\\text{m}$ sample in a $10\\,\\text{s}$ interval (example data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "pulses in $10\\,\\text{s}$"
+        ],
+        "rows": [
+          [
+            "0",
+            "291"
+          ],
+          [
+            "40",
+            "250"
+          ],
+          [
+            "80",
+            "204"
+          ],
+          [
+            "120",
+            "178"
+          ],
+          [
+            "160",
+            "143"
+          ],
+          [
+            "200",
+            "126"
+          ],
+          [
+            "240",
+            "103"
+          ],
+          [
+            "280",
+            "90"
+          ],
+          [
+            "320",
+            "72"
+          ],
+          [
+            "360",
+            "66"
+          ],
+          [
+            "400",
+            "51"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-9-L2-06",
+      "level": 2,
+      "kind": [
+        "data",
+        "error"
+      ],
+      "text": "The pulse counts of a radioactive sample were measured every $30\\,\\text{s}$ in $10\\,\\text{s}$ intervals (example data). Measured separately, the background radiation gave $20$ pulses per $10\\,\\text{s}$ interval.\n\nA student solved for the half-life like this: “At the start the pulse count is $200$, so half of it is $100$. According to the table the pulse count is $100$ at about $70\\,\\text{s}$, so the half-life is $70\\,\\text{s}$.”\n\na) Determine the half-life of the sample correctly by subtracting the background.\n\nb) Explain why the student’s result is too large.\n\nThe answer box takes the result of part a) in seconds.",
+      "answer": 60,
+      "unit": "s",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Pulse count of the sample in a $10\\,\\text{s}$ interval (example data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "pulses in $10\\,\\text{s}$"
+        ],
+        "rows": [
+          [
+            "0",
+            "200"
+          ],
+          [
+            "30",
+            "148"
+          ],
+          [
+            "60",
+            "108"
+          ],
+          [
+            "90",
+            "84"
+          ],
+          [
+            "120",
+            "65"
+          ],
+          [
+            "150",
+            "50"
+          ],
+          [
+            "180",
+            "43"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-9-L2-07",
+      "level": 2,
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "text": "Background radiation was measured with a Geiger counter without a sample in ten consecutive $10\\,\\text{s}$ intervals (example data). The sum of the pulse counts is $80$. Then a radioactive sample was brought to the counter, and in one $10\\,\\text{s}$ interval $340$ pulses were obtained.\n\na) Calculate the average pulse count of the background in a $10\\,\\text{s}$ interval.\n\nb) Calculate the net pulse rate caused by the sample in pulses per second.\n\nc) The random scatter of a pulse count has the size $\\pm\\sqrt{N}$. Calculate the relative scatter of the pulse count $340$ as a percentage and estimate why the variation of the background of $5$–$11$ pulses does not change the net result significantly.\n\nThe answer box takes the result of part b).",
+      "answer": 33.2,
+      "unit": "1/s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Pulse count of the background radiation in a $10\\,\\text{s}$ interval (example data)",
+        "columns": [
+          "interval",
+          "pulses"
+        ],
+        "rows": [
+          [
+            "1",
+            "7"
+          ],
+          [
+            "2",
+            "9"
+          ],
+          [
+            "3",
+            "6"
+          ],
+          [
+            "4",
+            "10"
+          ],
+          [
+            "5",
+            "8"
+          ],
+          [
+            "6",
+            "7"
+          ],
+          [
+            "7",
+            "9"
+          ],
+          [
+            "8",
+            "8"
+          ],
+          [
+            "9",
+            "11"
+          ],
+          [
+            "10",
+            "5"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -99,6 +323,102 @@
       "answer": 6.97,
       "unit": "%",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-9-L3-04",
+      "level": 3,
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "text": "In a hospital laboratory there is a sample containing two radionuclides. The half-life of one is $6.0\\,\\text{h}$, and the half-life of the other is unknown but much longer. The total activity of the sample was measured for $7$ days (example data). The total activity is the sum of the activities of the two nuclides, and each follows its own decay law.\n\na) Justify why the half-life of the longer-lived nuclide should be determined using the last measurements of the table, and determine it in days.\n\nb) Deduce the activity of the longer-lived nuclide at the moment $t = 0$ and the share of the shorter-lived nuclide in the total activity at the start.\n\nc) Using the measurement point $t = 12\\,\\text{h}$, show that the data fit the half-life $6.0\\,\\text{h}$ of the shorter-lived nuclide.\n\nThe answer box takes the result of part a).",
+      "answer": 2.68,
+      "unit": "d",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Total activity of the sample (example data)",
+        "columns": [
+          "$t\\,(\\text{h})$",
+          "$A\\,(\\text{MBq})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "1000"
+          ],
+          [
+            "12",
+            "376"
+          ],
+          [
+            "24",
+            "206"
+          ],
+          [
+            "48",
+            "122"
+          ],
+          [
+            "72",
+            "93.4"
+          ],
+          [
+            "96",
+            "71.2"
+          ],
+          [
+            "120",
+            "55.9"
+          ],
+          [
+            "168",
+            "32.8"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-9-L3-05",
+      "level": 3,
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "text": "A thyroid patient was given an iodine-131 preparation, and the activity of the iodine-131 in the patient’s body was measured for $8$ days (example data). The physical half-life of iodine-131 is $T_\\text{phys} = 8.02\\,\\text{d}$. The activity decreases faster than on the basis of decay alone, because the body also removes iodine (urine, sweat). The removal is a biological process described by its own half-life $T_\\text{bio}$.\n\nDecay and removal are independent of each other, and each removes nuclei in the same exponential way. The probability of a nucleus being removed per second is therefore the sum of these two probabilities, that is, the total removal is described by the constant $\\lambda_\\text{eff} = \\lambda_\\text{phys} + \\lambda_\\text{bio}$.\n\na) Using the table, determine the effective half-life $T_\\text{eff}$ of the activity.\n\nb) Determine the biological half-life $T_\\text{bio}$.\n\nc) What percentage of the initial activity would remain after $8.0\\,\\text{d}$ if the iodine were removed only through physical decay? Compare with the measured value and deduce which process decreases the iodine-131 activity of the body faster.\n\nThe answer box takes the result of part b) in days.",
+      "answer": 4.96,
+      "unit": "d",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Iodine-131 activity in the patient’s body (example data)",
+        "columns": [
+          "$t\\,(\\text{d})$",
+          "$A\\,(\\text{MBq})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "400"
+          ],
+          [
+            "2",
+            "256"
+          ],
+          [
+            "4",
+            "161"
+          ],
+          [
+            "6",
+            "104"
+          ],
+          [
+            "8",
+            "65.5"
+          ]
+        ]
+      }
     }
   ]
 }

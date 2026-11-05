@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Kirjoita tulos $l = 0{,}04567\\,\\text{m} \\pm 0{,}0012\\,\\text{m}$ millimetreinä. Pyöristä tulos oikein.",
+    "a": "$l = (45{,}7 \\pm 1{,}2)\\,\\text{mm}$. Epävarmuuden ensimmäinen numero on $1$. Siksi epävarmuudessa pidetään kaksi merkitsevää numeroa, $1{,}2\\,\\text{mm}$. Tulos pyöristetään samaan desimaaliin."
+  },
+  {
+    "q": "Mikä on $(t, v)$-kuvaajan kulmakertoimen yksikkö? Mitä kulmakerroin kertoo?",
+    "a": "Yksikkö on $\\tfrac{\\text{m/s}}{\\text{s}} = \\text{m/s}^2$. Kulmakerroin on kappaleen kiihtyvyys. Se kertoo, kuinka paljon nopeus muuttuu sekunnissa."
+  }
+]

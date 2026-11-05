@@ -27,6 +27,7 @@
     {
       "id": "fy4-3-L1-04",
       "level": 1,
+      "core": true,
       "text": "A car drives along a straight road at constant velocity. The road pushes the driving wheels of the car forwards with a force of $620\\,\\text{N}$, and the air resistance on the car is $380\\,\\text{N}$. In addition, rolling resistance acts backwards on the car. How large is the rolling resistance?",
       "answer": 240,
       "unit": "N",
@@ -43,6 +44,7 @@
     {
       "id": "fy4-3-L1-06",
       "level": 1,
+      "core": true,
       "text": "An ice hockey puck slides straight at constant velocity on very slippery ice. Friction and air resistance can be ignored. Which statement about the forces acting on the puck is correct?",
       "kind": [
         "concept"
@@ -140,6 +142,7 @@
     {
       "id": "fy4-3-L2-04",
       "level": 2,
+      "core": true,
       "text": "The weight of an elevator car is $5.8\\,\\text{kN}$, and the car contains passengers whose total mass is $320\\,\\text{kg}$. The elevator rises at constant velocity. How large is the tension of the cable on the car? Answer in kilonewtons.",
       "answer": 8.9,
       "unit": "kN",
@@ -240,6 +243,7 @@
     {
       "id": "fy4-3-L2-07",
       "level": 2,
+      "core": true,
       "text": "A student reasons: “When a fist hits a wall, the wall pushes the fist back with an equally large force. The forces are opposite and equally large, so they cancel each other and the motion of the fist does not change.”\n\nWhat is the error in the student’s reasoning?",
       "kind": [
         "concept"

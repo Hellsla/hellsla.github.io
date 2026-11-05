@@ -3,6 +3,7 @@
     {
       "id": "fy7-8-L1-01",
       "level": 1,
+      "core": true,
       "text": "The primary coil of a doorbell transformer has $1200$ turns and the secondary coil $60$ turns. The primary coil is connected to the mains voltage $230\\,\\text{V}$. How large is the secondary voltage? Assume the transformer to be ideal.",
       "answer": 11.5,
       "unit": "V",
@@ -39,12 +40,67 @@
       "answer": 320.0,
       "unit": "MW",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-8-L1-06",
+      "level": 1,
+      "core": true,
+      "text": "An ideal transformer is connected to a battery that gives a direct voltage. When the current in the primary coil has settled to a constant value, the voltage of the secondary coil is measured to be zero. What is the reason?",
+      "kind": [
+        "concept"
+      ],
+      "unit": "",
+      "tolerance": 0.02,
+      "answer": "The magnetic flux produced by the direct current does not change, so no voltage is induced in the secondary coil.",
+      "choices": [
+        {
+          "text": "Direct current cannot pass through the wire of the coil, so no magnetic field is formed in the primary coil.",
+          "feedback": "According to the task the current in the primary coil is constant, so the direct current does flow in the wire of the coil and produces a magnetic field. The reason is that the field does not change."
+        },
+        {
+          "text": "The magnetic field of the direct current cancels the magnetization of the iron core, so the core does not transmit the flux.",
+          "feedback": "The iron core is magnetized by a direct current too and transmits the flux from one coil to the other. Induction would, however, require the flux to change."
+        },
+        {
+          "text": "The magnetic flux produced by the direct current does not change, so no voltage is induced in the secondary coil.",
+          "correct": true,
+          "feedback": "Correct: an induced voltage arises only when the magnetic flux through the secondary coil changes. Alternating current changes the flux continuously, direct current does not."
+        },
+        {
+          "text": "Direct voltage cannot be transformed, because a transformer can only lower a voltage and not raise it.",
+          "feedback": "A transformer can both raise and lower an alternating voltage, and this depends on the numbers of turns of the coils. With direct voltage the problem is that the flux stays constant."
+        }
+      ]
+    },
+    {
+      "id": "fy7-8-L1-07",
+      "level": 1,
+      "core": true,
+      "text": "A power plant transmits power along a line, and a power of $840\\,\\text{kW}$ becomes internal energy in the line. The transmission voltage is doubled, and the transmitted power and the resistance of the line stay the same. How large is the power loss now? Give the answer in kilowatts.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 210.0,
+      "unit": "kW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-8-L1-08",
+      "level": 1,
+      "text": "The primary coil of a transformer takes a power of $80\\,\\text{W}$ from the mains, and the secondary coil gives the load a power of $72\\,\\text{W}$. The efficiency is $\\eta = P_2 : P_1$. What is the efficiency of the transformer as a percentage?",
+      "kind": [
+        "concept"
+      ],
+      "answer": 90.0,
+      "unit": "%",
+      "tolerance": 0.02
     }
   ],
   "level2": [
     {
       "id": "fy7-8-L2-01",
       "level": 2,
+      "core": true,
       "text": "A hydroelectric power plant transmits a power of $50\\,\\text{MW}$ at a voltage of $110\\,\\text{kV}$ to a substation. The total resistance of the conductors is $4.0\\,\\Omega$. How large a power becomes internal energy in the line? Give the answer in kilowatts.",
       "answer": 826.4463,
       "unit": "kW",
@@ -74,6 +130,108 @@
       "answer": 0.8,
       "unit": "Ω",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-8-L2-05",
+      "level": 2,
+      "text": "Students investigate a transformer whose number of turns $N_1$ of the primary coil is not known. The primary coil was connected to an alternating voltage $U_1 = 6.00\\,\\text{V}$, and the number of turns $N_2$ of the secondary coil was varied. At each value of $N_2$ the voltage $U_2$ of the unloaded secondary coil was measured (example data).\n\nThe points lie approximately on a straight line through the origin, $U_2 = k N_2$. Fit a line to the points or calculate $U_2 : N_2$ for each row, and use the slope $k$ to deduce the number of turns $N_1$ of the primary coil. Assume the transformer to be ideal.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "data": {
+        "caption": "Secondary voltage $U_2$ against turns $N_2$, $U_1 = 6.00\\,\\text{V}$ (example data)",
+        "columns": [
+          "$N_2$",
+          "$U_2\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "100",
+            "1.22"
+          ],
+          [
+            "200",
+            "2.53"
+          ],
+          [
+            "300",
+            "3.70"
+          ],
+          [
+            "400",
+            "4.93"
+          ],
+          [
+            "600",
+            "7.41"
+          ],
+          [
+            "800",
+            "9.88"
+          ]
+        ]
+      },
+      "answer": 485.68,
+      "unit": "turns",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy7-8-L2-06",
+      "level": 2,
+      "text": "The primary coil of a small transformer is connected to a voltage $U_1 = 230\\,\\text{V}$. Loads of different sizes were connected to the secondary coil.\n\nAt each load the secondary voltage $U_2$, the secondary current $I_2$ and the primary current $I_1$ were measured (example data). Assume that the primary power is $P_1 = U_1 I_1$.\n\na) For each row calculate the primary power $P_1$, the secondary power $P_2$ and the efficiency $\\eta = P_2 : P_1$.\n\nb) At which load is the efficiency greatest? Explain why the efficiency is lowest at the smallest load.\n\nIn the answer box give the efficiency from part a) on the row where the secondary current is greatest, as a percentage.",
+      "kind": [
+        "data"
+      ],
+      "data": {
+        "caption": "Measurements of a small transformer at different loads, $U_1 = 230\\,\\text{V}$ (example data)",
+        "columns": [
+          "$I_2\\,(\\text{A})$",
+          "$U_2\\,(\\text{V})$",
+          "$I_1\\,(\\text{A})$"
+        ],
+        "rows": [
+          [
+            "0.20",
+            "12.4",
+            "0.020"
+          ],
+          [
+            "0.60",
+            "12.2",
+            "0.042"
+          ],
+          [
+            "1.00",
+            "12.0",
+            "0.063"
+          ],
+          [
+            "1.50",
+            "11.8",
+            "0.089"
+          ],
+          [
+            "2.00",
+            "11.5",
+            "0.114"
+          ]
+        ]
+      },
+      "answer": 87.72,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-8-L2-07",
+      "level": 2,
+      "text": "A student solved a problem: “An ideal transformer raises the mains voltage $230\\,\\text{V}$ to $2300\\,\\text{V}$. The primary current is $2.0\\,\\text{A}$. The voltage becomes ten times as large, but a transformer does not change the current, so the secondary current is $2.0\\,\\text{A}$. The power increases to $2300\\,\\text{V} \\cdot 2.0\\,\\text{A} = 4600\\,\\text{W}$.”\n\na) Explain what is wrong in the student's reasoning.\n\nb) Calculate the secondary current correctly.\n\nIn the answer box give the secondary current from part b) in amperes.",
+      "kind": [
+        "error"
+      ],
+      "answer": 0.2,
+      "unit": "A",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -100,6 +258,63 @@
       "answer": 3.3058,
       "unit": "times",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-8-L3-04",
+      "level": 3,
+      "text": "A designer compares two ways of transmitting the power of a wind farm to a substation $150\\,\\text{km}$ away. Option A is a $220\\,\\text{kV}$ line and option B a $400\\,\\text{kV}$ line, with similar conductors in both.\n\nAssume that the transmitted power is a constant $200\\,\\text{MW}$ throughout the year, $8760\\,\\text{h}$. The total resistance of the conductors is $0.040\\,\\Omega$ per kilometre of line. The figures are example data.\n\na) Calculate the resistance of the conductors and the current of the line in each option.\n\nb) Calculate the power loss and the energy lost in the line in a year in each option, in megawatt-hours.\n\nc) The price of electricity is $50\\,\\text{€/MWh}$. How many million euros a year does option B save in the value of the lost energy compared with option A? In addition, justify in writing why the loss is smaller even though the transmitted power is the same.\n\nIn the answer box give the saving from part c) in millions of euros.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 1.5149,
+      "unit": "million €",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-8-L3-05",
+      "level": 3,
+      "text": "The output power $P_\\text{out}$ and the input power $P_\\text{in}$ of a distribution transformer were measured at different loads (example data). Even with no load the transformer takes a power that becomes internal energy in the iron core. The power loss is $P_\\text{h} = P_\\text{in} - P_\\text{out}$.\n\na) For each row calculate the power loss and the efficiency $\\eta = P_\\text{out} : P_\\text{in}$.\n\nb) The power loss is described by the model $P_\\text{h} = P_0 + a P_\\text{out}^2$. Justify why the part that depends on the load is proportional to the square of the output power when the voltage is constant, and determine the constants $P_0$ and $a$ from the table.\n\nc) The efficiency is greatest at the load where the constant loss $P_0$ equals the load-dependent loss $a P_\\text{out}^2$. Calculate this value of the output power using the model.\n\nIn the answer box give the output power from part c) in kilowatts.",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "data": {
+        "caption": "Power of a distribution transformer at different loads (example data)",
+        "columns": [
+          "$P_\\text{out}\\,(\\text{kW})$",
+          "$P_\\text{in}\\,(\\text{kW})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.6"
+          ],
+          [
+            "10.0",
+            "10.6"
+          ],
+          [
+            "20.0",
+            "20.7"
+          ],
+          [
+            "40.0",
+            "40.9"
+          ],
+          [
+            "60.0",
+            "61.3"
+          ],
+          [
+            "80.0",
+            "81.9"
+          ]
+        ]
+      },
+      "answer": 54.35,
+      "unit": "kW",
+      "tolerance": 0.05
     }
   ]
 }

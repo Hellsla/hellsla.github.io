@@ -3,6 +3,7 @@
     {
       "id": "fy8-14-L1-01",
       "level": 1,
+      "core": true,
       "text": "An X-ray beam passes through a $6.8\\,\\text{cm}$ thick layer of soft tissue. The half-value thickness of soft tissue for this radiation is $3.4\\,\\text{cm}$. What percentage of the radiation gets through the tissue?",
       "answer": 25,
       "unit": "%",
@@ -39,6 +40,57 @@
       "answer": 32,
       "unit": "kBq",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-14-L1-06",
+      "level": 1,
+      "core": true,
+      "text": "In a PET scan the patient is given a tracer containing a positron-emitting nuclide, for example fluorine-$18$. Why is emitting a positron suited to imaging in which the position of the source is to be found from outside the body?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The positron annihilates into two photons in opposite directions, and the line segment joining them passes through the source.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The positron travels through the tissue all the way out, so the detector detects it directly at the source.",
+          "feedback": "The positron is a charged particle and stops in the tissue within a few millimetres. The detector does not detect the positron itself but only the photons produced later in its annihilation."
+        },
+        {
+          "text": "The positron has no electric charge, so it does not scatter in the tissue and its direct path shows clearly in the image.",
+          "feedback": "The positron has a positive charge, so it ionises and stops in the tissue quickly. An uncharged particle would be, for example, a photon or a neutron, and the detector does not see the path of a positron."
+        },
+        {
+          "text": "When the positron slows down it produces X-radiation whose energy tells how deep the tumour is.",
+          "feedback": "The bremsstrahlung of a positron does not tell the depth of the tumour. The position is given by the directions of the annihilation photons, not by their energy: it is always $511\\,\\text{keV}$."
+        },
+        {
+          "text": "The positron annihilates into two photons in opposite directions, and the line segment joining them passes through the source.",
+          "correct": true,
+          "feedback": "Correct: the annihilation produces two photons of equal energy in opposite directions. When the detector registers them at the same time, the source lies on the segment joining them, and the intersection of many segments reveals the position of the tracer."
+        }
+      ]
+    },
+    {
+      "id": "fy8-14-L1-07",
+      "level": 1,
+      "text": "A radiographer notices that a chest image is very noisy and a small change in the lung cannot be seen in it. She suggests: “It is always best to keep the dose as small as possible, so let us reduce it even further.”\n\nIs the suggestion sensible from the point of view of radiation protection? Justify briefly.",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "No, it is not. When the dose is too small, the image stays noisy and what was being looked for cannot be seen in it. The examination has to be repeated, and the patient receives two doses instead of one. Optimisation means the smallest dose with which the image answers the question.",
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-14-L1-08",
+      "level": 1,
+      "text": "In an X-ray tube the electrons are accelerated through a voltage of $80\\,\\text{kV}$, and they decelerate in the anode. A single electron can give a single X-ray photon at most all of its kinetic energy. What is the greatest energy an X-ray photon can have? The elementary charge is $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$. Give the answer in joules.",
+      "answer": 1.3e-14,
+      "unit": "J",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -69,9 +121,101 @@
     {
       "id": "fy8-14-L2-04",
       "level": 2,
+      "core": true,
       "text": "Right after the tracer is injected, the dose rate of the radiation from a PET patient is $30\\,\\mu\\text{Sv/h}$ at a distance of $1.0\\,\\text{m}$. A nurse helps the patient for $5.0\\,\\text{min}$ at a distance of $0.50\\,\\text{m}$. How large a dose does the nurse receive? Assume that the patient can be treated as a point source and that the dose rate stays constant during this time. Give the answer in microsieverts.",
       "answer": 10,
       "unit": "µSv",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-14-L2-05",
+      "level": 2,
+      "text": "The table has example data on the imaging examinations a patient had during a year. The effective doses are of the order of magnitude of typical examinations. The average annual dose from natural radiation in Finland is $5.1\\,\\text{mSv}$ (STUK-A263, 2020).\n\nWhat percentage of the annual dose from natural radiation is the total effective dose that the patient received from all the examinations in the table together?",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 44,
+      "unit": "%",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "The patient's examinations during a year (example data)",
+        "columns": [
+          "Examination",
+          "$H_\\text{E}\\,(\\text{mSv})$",
+          "Times"
+        ],
+        "rows": [
+          [
+            "Dental X-ray",
+            "0.010",
+            "3"
+          ],
+          [
+            "Chest X-ray",
+            "0.10",
+            "2"
+          ],
+          [
+            "Head CT",
+            "2.0",
+            "1"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-14-L2-06",
+      "level": 2,
+      "text": "The activity of a tracer in a patient's body was followed after the injection. The table is example data. The half-life of the radioactive decay of the tracer is $6.01\\,\\text{h}$.\n\na) Deduce from the table in how many hours the activity in the patient halves. Compare the result with the half-life $6.01\\,\\text{h}$ and explain the difference.\n\nb) What percentage of the activity that would remain if the activity decreased by radioactive decay alone is the measured activity at $12.0\\,\\text{h}$?\n\nWrite the result of part b) in the answer box.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 51,
+      "unit": "%",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Activity of the tracer in the patient (example data)",
+        "columns": [
+          "$t\\,(\\text{h})$",
+          "$A\\,(\\text{MBq})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "500"
+          ],
+          [
+            "2.0",
+            "355"
+          ],
+          [
+            "4.0",
+            "252"
+          ],
+          [
+            "8.0",
+            "123"
+          ],
+          [
+            "12.0",
+            "64"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-14-L2-07",
+      "level": 2,
+      "core": true,
+      "text": "The lead shield of a PET syringe is dimensioned so that at most $1.0\\,\\%$ of the $511\\,\\text{keV}$ photons of the syringe get through the shield. The half-value thickness of lead is $0.26\\,\\text{mm}$ for $140\\,\\text{keV}$ photons and $3.9\\,\\text{mm}$ for $511\\,\\text{keV}$ photons.\n\nThe student's solution: “The share to be let through is $0.010$, so $\\left(\\tfrac{1}{2}\\right)^{n} = 0.010$ and $n = \\dfrac{\\ln 0.010}{\\ln 0.5} = 6.64$. The thickness is $d = n \\cdot d_{1/2} = 6.64 \\cdot 0.26\\,\\text{mm} = 1.7\\,\\text{mm}$.”\n\nFind the student's error and calculate the correct thickness of the lead shield in millimetres.",
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "answer": 26,
+      "unit": "mm",
       "tolerance": 0.02
     }
   ],
@@ -99,6 +243,101 @@
       "answer": 17,
       "unit": "mm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-14-L3-04",
+      "level": 3,
+      "text": "In a PET-CT examination the patient is injected with an FDG tracer whose fluorine-$18$ decays during the waiting time before imaging. The table has the data of the examination (example data). At the start of imaging the patient must have an activity of at least the table value per mass of the patient. Assume that during the waiting time the activity decreases only by decay. The dose coefficient applies to the injected activity.\n\na) Calculate the patient's total effective dose when the doses of the PET part and the CT part are added together. Use the smallest injected activity with which the imaging succeeds.\n\nb) Compare the total dose with the annual dose from natural radiation, $5.1\\,\\text{mSv}$, and justify when such an examination is justified.\n\nWrite the result of part a) in the answer box.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 10,
+      "unit": "mSv",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Data of the PET-CT examination (example data)",
+        "columns": [
+          "Quantity",
+          "Value",
+          "Unit"
+        ],
+        "rows": [
+          [
+            "Mass of the patient",
+            "75",
+            "$\\text{kg}$"
+          ],
+          [
+            "Activity at imaging",
+            "2.0",
+            "$\\text{MBq/kg}$"
+          ],
+          [
+            "Waiting time",
+            "60",
+            "$\\text{min}$"
+          ],
+          [
+            "Half-life",
+            "110",
+            "$\\text{min}$"
+          ],
+          [
+            "Dose coefficient",
+            "0.019",
+            "$\\text{mSv/MBq}$"
+          ],
+          [
+            "Dose of the CT part",
+            "6.0",
+            "$\\text{mSv}$"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-14-L3-05",
+      "level": 3,
+      "text": "In an industrial thickness gauge the $60\\,\\text{keV}$ gamma radiation of americium-$241$ passes through an aluminium plate to a detector. The gauge is calibrated by measuring the count rate $R$ of the detector at known plate thicknesses $d$; the background radiation has been subtracted. The table is example data. For the unknown plate the count rate is $402\\,\\tfrac{1}{\\text{s}}$.\n\na) Calculate from the table the ratios $R_{n+1} : R_n$ of the count rates of successive measurements. What do they tell about the attenuation?\n\nb) Determine the half-value thickness of aluminium for this radiation from the calibration data.\n\nc) Calculate the thickness of the unknown plate in millimetres.\n\nWrite the result of part c) in the answer box.",
+      "kind": [
+        "data",
+        "experiment",
+        "model"
+      ],
+      "answer": 12,
+      "unit": "mm",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Calibration of the thickness of an aluminium plate (example data)",
+        "columns": [
+          "$d\\,(\\text{mm})$",
+          "$R\\,(\\tfrac{1}{\\text{s}})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "1006"
+          ],
+          [
+            "5.0",
+            "689"
+          ],
+          [
+            "10.0",
+            "468"
+          ],
+          [
+            "15.0",
+            "327"
+          ],
+          [
+            "20.0",
+            "221"
+          ]
+        ]
+      }
     }
   ]
 }

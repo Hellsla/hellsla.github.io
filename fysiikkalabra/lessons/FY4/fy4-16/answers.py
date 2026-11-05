@@ -27,4 +27,16 @@ a3 = (m3 * g - Gd) / m3                             # mg − N = ma (positive do
 a["fy4-16-L3-02"] = a3 * 2.0                        # v = a t = 2,287 m/s, the greatest speed (then 800 N slows it in 2,67 s)
 m, v1, v2, h = 70.0, 50.0, 6.0, 60.0                # canopy opens: 50,0 → 6,0 m/s over 60,0 m of fall
 a["fy4-16-L3-03"] = -(0.5 * m * (v2 ** 2 - v1 ** 2) - m * g * h) / h / 1000   # W_v = ΔE_mek = −127,4 kJ = −F_v h → F_v = 2,124 kN
+# Exercise-bank additions: MC tasks L1-06, L1-07 have no number (they are checked as text)
+a["fy4-16-L1-08"] = 0.200 * 20.0 * g * math.cos(math.radians(30.0))   # slope: N = mg cos α, F = μN = 0,200 · 169,9 = 33,98 N (the student's μmg = 39,2 N is wrong)
+a["fy4-16-L2-05"] = 62.0 * (g + 1.20 / 3.0)         # lift speeds up: a = Δv/Δt = 1,20/3,0 = 0,400 m/s², N = m(g + a) = 633,0 N
+v_first, v_last = 3.62 - 0.00, 10.03 - 9.57         # flat run-out: mean speeds in the 1st and 5th second = speeds at 0,5 s and 4,5 s
+a["fy4-16-L2-06"] = (v_first - v_last) / (4.5 - 0.5) / g   # |a| = 0,790 m/s², μ = |a|/g = 0,0805
+al_ka = (17.5 + 18.0 + 18.5 + 17.0 + 18.0) / 5      # sum 89,0°, mean 17,8°; steady slide: μ = tan α
+a["fy4-16-L2-07"] = math.tan(math.radians(al_ka))   # 0,3211 (range tan 17,0° … tan 18,5° = 0,306 … 0,335, ± 0,015)
+al, mu1, mu2, d = math.radians(14.0), 0.060, 0.150, 25.0 - 5.0   # hill: slope 14,0°, flat 20,0 m before the safety margin
+a["fy4-16-L3-04"] = mu2 * d / (math.sin(al) - mu1 * math.cos(al))   # mgL sin α − μ1 mg L cos α − μ2 mg d = 0 → L = 16,33 m (v at foot 7,67 m/s)
+mj, ts, vs = 78.0, [0, .5, 1, 1.5, 2, 2.5, 3], [46.0, 29.8, 20.1, 14.4, 11.0, 9.0, 7.9]   # canopy table, first 3,0 s
+hj = sum((vs[i] + vs[i + 1]) / 2 * (ts[i + 1] - ts[i]) for i in range(6))   # trapezoids: 55,625 m
+a["fy4-16-L3-05"] = (mj * g + (0.5 * mj * vs[0] ** 2 - 0.5 * mj * vs[-1] ** 2) / hj) / 1000   # F_v = mg + ΔE_k/h = 765,2 + 1439,8 N = 2,205 kN
 print(json.dumps(a))

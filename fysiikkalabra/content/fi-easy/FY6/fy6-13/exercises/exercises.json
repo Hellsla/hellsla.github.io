@@ -27,6 +27,7 @@
     {
       "id": "fy6-13-L1-04",
       "level": 1,
+      "core": true,
       "text": "Levykondensaattorin levyjen pinta-ala on $0{,}025\\,\\text{m}^2$, ja levyjen välissä on ilmaa $1{,}0\\,\\text{mm}$:n paksuudelta. Mikä on kondensaattorin kapasitanssi? Vastaa pikofaradeina.",
       "answer": 221.35,
       "unit": "pF",
@@ -40,12 +41,85 @@
       "answer": 360,
       "unit": "µJ",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-13-L1-06",
+      "level": 1,
+      "text": "Kondensaattori ladataan ensin $5{,}0\\,\\text{V}$:n ja sitten $10\\,\\text{V}$:n jännitteeseen. Mitä kondensaattorin kapasitanssille tapahtuu?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Se pysyy samana, koska kapasitanssi määräytyy kondensaattorin rakenteesta.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Se kaksinkertaistuu, koska varaus kasvaa jännitteen mukana samassa suhteessa.",
+          "feedback": "Varaus kasvaa samassa suhteessa kuin jännite. Kapasitanssi on kuitenkin näiden suhde $\\tfrac{Q}{U}$, joten se ei muutu."
+        },
+        {
+          "text": "Se pienenee, koska suurempi jännite rasittaa levyjä ja heikentää varastointikykyä.",
+          "feedback": "Kapasitanssi ei heikkene, kun jännite kasvaa. Se riippuu vain rakenteesta. Rasitus on tärkeä vasta, kun kenttä on lähellä eristeen läpilyöntilujuutta."
+        },
+        {
+          "text": "Se nelinkertaistuu, koska kondensaattorin energia riippuu jännitteen neliöstä.",
+          "feedback": "Energia $W = \\tfrac{1}{2} C U^2$ nelinkertaistuu, kun jännite kaksinkertaistuu. Siksi $C$ on kaavassa vakio. Kapasitanssi itse ei muutu."
+        },
+        {
+          "text": "Se pysyy samana, koska kapasitanssi määräytyy kondensaattorin rakenteesta.",
+          "correct": true,
+          "feedback": "Oikein: kapasitanssi $C = \\tfrac{Q}{U}$ riippuu levyjen pinta-alasta, niiden etäisyydestä ja eristeestä. Kun jännite kaksinkertaistuu, myös varaus kaksinkertaistuu. Suhde pysyy samana."
+        }
+      ]
+    },
+    {
+      "id": "fy6-13-L1-07",
+      "level": 1,
+      "core": true,
+      "text": "Ladatun ilmaeristeisen levykondensaattorin lähde irrotetaan. Sen jälkeen levyjen väliin työnnetään eristelevy, joka täyttää koko välin. Mitä kondensaattorin jännitteelle tapahtuu?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Se pienenee, koska varaus pysyy samana ja kapasitanssi kasvaa.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Se kasvaa, koska kapasitanssi kasvaa ja varaus pysyy samana.",
+          "feedback": "Varaus pysyy samana, se on oikein. Jännite on kuitenkin $U = \\tfrac{Q}{C}$. Kun $C$ kasvaa ja $Q$ pysyy samana, jännite pienenee. Se ei kasva."
+        },
+        {
+          "text": "Se pysyy samana, koska jännite määräytyy lähteestä, jolla kondensaattori ladattiin.",
+          "feedback": "Lähde on irrotettu. Se ei enää pidä jännitettä vakiona. Jännite riippuu varauksesta ja kapasitanssista, ja kapasitanssi muuttui."
+        },
+        {
+          "text": "Se pienenee, koska varaus pysyy samana ja kapasitanssi kasvaa.",
+          "correct": true,
+          "feedback": "Oikein: irrotetun kondensaattorin varaus ei voi muuttua, ja eriste kasvattaa kapasitanssia. Koska $U = \\tfrac{Q}{C}$, jännite pienenee."
+        },
+        {
+          "text": "Se pienenee, koska eriste päästää varausta levyltä toiselle.",
+          "feedback": "Eriste ei johda varausta. Sen tehtävä on olla johtamatta. Irrotetun kondensaattorin varaus pysyy samana. Jännite pienenee, koska kapasitanssi kasvaa."
+        }
+      ]
+    },
+    {
+      "id": "fy6-13-L1-08",
+      "level": 1,
+      "text": "Tietokoneen virtalähteen kondensaattorin kapasitanssi on $1000\\,\\mu\\text{F}$. Sen jännite nousee arvosta $6{,}0\\,\\text{V}$ arvoon $18\\,\\text{V}$. Kuinka paljon kondensaattorin energia kasvaa? Vastaa millijouleina.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 144,
+      "unit": "mJ",
+      "tolerance": 0.02
     }
   ],
   "level2": [
     {
       "id": "fy6-13-L2-01",
       "level": 2,
+      "core": true,
       "text": "Kondensaattorin levyjen välissä on $0{,}020\\,\\text{mm}$:n paksuinen paperikerros, jonka läpilyöntilujuus on $16\\,\\text{MV/m}$. Kuinka suuri jännite kondensaattoriin voidaan enintään kytkeä ilman läpilyöntiä?",
       "answer": 320,
       "unit": "V",
@@ -62,6 +136,7 @@
     {
       "id": "fy6-13-L2-03",
       "level": 2,
+      "core": true,
       "text": "Sydäniskurin kondensaattoriin varastoidaan ennen iskua energiaa $200\\,\\text{J}$, kun sen jännite on $2{,}0\\,\\text{kV}$. Mikä on kondensaattorin kapasitanssi? Vastaa mikrofaradeina.",
       "answer": 100,
       "unit": "µF",
@@ -73,6 +148,134 @@
       "text": "Superkondensaattorin kapasitanssi on $10\\,\\text{F}$, ja se on ladattu suurimpaan sallittuun jännitteeseensä $2{,}7\\,\\text{V}$. Sillä käytetään LED-valaisinta, jonka teho on $0{,}50\\,\\text{W}$. Oleta, että teho pysyy vakiona. Oleta myös, että kondensaattorin koko energia saadaan käyttöön. Kuinka kauan valaisin palaa? Vastaa sekunteina.",
       "answer": 72.9,
       "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-13-L2-05",
+      "level": 2,
+      "text": "Kondensaattorin kapasitanssia tutkitaan lataamalla se eri jännitteisiin. Taulukon varaus $Q$ on laskettu mitatusta latausvirrasta (esimerkkiaineisto).\n\na) Piirrä pisteistä $(U, Q)$-kuvaaja. Sovita pisteisiin suora, joka kulkee origon kautta. Määritä kapasitanssi suoran kulmakertoimesta. Kulmakerroin kertoo, kuinka jyrkästi suora nousee.\n\nb) Laske kondensaattoriin varastoituva energia jännitteellä $12\\,\\text{V}$. Vastaa millijouleina.\n\nVastauslaatikkoon tulee kohdan b) tulos.",
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "answer": 3.4,
+      "unit": "mJ",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Kondensaattorin varaus jännitteen funktiona (esimerkkiaineisto)",
+        "columns": [
+          "$U\\,(\\text{V})$",
+          "$Q\\,(\\mu\\text{C})$"
+        ],
+        "rows": [
+          [
+            "2.0",
+            "94"
+          ],
+          [
+            "4.0",
+            "189"
+          ],
+          [
+            "6.0",
+            "281"
+          ],
+          [
+            "8.0",
+            "380"
+          ],
+          [
+            "10.0",
+            "471"
+          ],
+          [
+            "12.0",
+            "567"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-13-L2-06",
+      "level": 2,
+      "core": true,
+      "text": "Kondensaattori ladataan vastuksen kautta $9{,}0\\,\\text{V}$:n paristolla. Sen jännite mitataan sekunnin välein (esimerkkiaineisto). Tutki taulukkoa tai piirrä pisteistä kuvaaja. Millä aikavälillä latausvirta on suurin?",
+      "kind": [
+        "graph",
+        "concept",
+        "data"
+      ],
+      "answer": "Välillä $0\\text{–}1\\,\\text{s}$, koska jännite kasvaa silloin nopeimmin.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Välillä $1\\text{–}2\\,\\text{s}$, koska jännite on silloin noin puolet lähteen jännitteestä.",
+          "feedback": "Virran kertoo jännitteen muutosnopeus. Jännitteen suuruus ei sitä kerro. Tällä välillä jännite kasvaa vain $2{,}0\\,\\text{V}$. Alussa se kasvoi $3{,}5\\,\\text{V}$ yhdessä sekunnissa."
+        },
+        {
+          "text": "Välillä $4\\text{–}5\\,\\text{s}$, koska virta kasvaa, kun kondensaattoriin on kertynyt enemmän varausta.",
+          "feedback": "Kertynyt varaus pienentää virtaa. Levyjen välinen jännite vastustaa lähdettä, ja lataus hidastuu. Tällä välillä jännite kasvaa vain $0{,}5\\,\\text{V}$."
+        },
+        {
+          "text": "Välillä $0\\text{–}1\\,\\text{s}$, koska jännite kasvaa silloin nopeimmin.",
+          "correct": true,
+          "feedback": "Oikein: virta kertoo, kuinka nopeasti varaus siirtyy. Koska $Q = CU$, virta on suoraan verrannollinen jännitteen kasvunopeuteen. Kuvaaja on jyrkimmillään alussa. Silloin virta on suurin."
+        },
+        {
+          "text": "Välillä $5\\text{–}6\\,\\text{s}$, koska jännite on silloin suurimmillaan ja varaus suurimmillaan.",
+          "feedback": "Suuri jännite tarkoittaa suurta varausta. Se ei tarkoita suurta virtaa. Virta kertoo, kuinka nopeasti varaus muuttuu. Tällä välillä jännite kasvaa hitaimmin, vain $0{,}3\\,\\text{V}$."
+        }
+      ],
+      "data": {
+        "caption": "Kondensaattorin jännite latauksen aikana (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$U\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.0"
+          ],
+          [
+            "1.0",
+            "3.5"
+          ],
+          [
+            "2.0",
+            "5.5"
+          ],
+          [
+            "3.0",
+            "6.9"
+          ],
+          [
+            "4.0",
+            "7.7"
+          ],
+          [
+            "5.0",
+            "8.2"
+          ],
+          [
+            "6.0",
+            "8.5"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-13-L2-07",
+      "level": 2,
+      "text": "Oppilas ratkaisee tehtävän: ”Kondensaattorin kapasitanssi on $220\\,\\mu\\text{F}$, ja se ladataan $24\\,\\text{V}$:n jännitelähteellä. Lähde siirtää kondensaattoriin varauksen $Q = CU = 5{,}28\\,\\text{mC}$ ja antaa energian $QU = 127\\,\\text{mJ}$. Kondensaattoriin varastoituu koko tämä energia, joten $W = 127\\,\\text{mJ}$.”\n\na) Mikä virhe oppilaan päättelyssä on? Perustele lyhyesti.\n\nb) Laske kondensaattoriin varastoituva energia oikein millijouleina.\n\nVastauslaatikkoon tulee kohdan b) tulos.",
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "answer": 63.4,
+      "unit": "mJ",
       "tolerance": 0.02
     }
   ],
@@ -100,6 +303,89 @@
       "answer": 217.198659,
       "unit": "cm²",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-13-L3-04",
+      "level": 3,
+      "text": "Sydäniskurin kondensaattori ladataan vakiovirralla $15\\,\\text{mA}$. Sydäniskuri on laite, joka antaa sydämelle sähköiskun. Taulukossa on kondensaattorin jännite latauksen aikana (esimerkkiaineisto). Isku annetaan, kun jännite on $1{,}8\\,\\text{kV}$. Kondensaattori purkautuu potilaan läpi $5{,}0\\,\\text{ms}$:ssa.\n\nVakiovirralla varaus kasvaa tasaisesti, $Q = It$. Siksi jännite on suoraan verrannollinen aikaan.\n\na) Määritä kapasitanssi. Käytä taulukon pisteisiin sovitetun suoran kulmakerrointa. Suora kulkee origon kautta.\n\nb) Laske iskussa vapautuva keskimääräinen teho kilowatteina.\n\nc) Kuinka kauan lataus kestää $1{,}8\\,\\text{kV}$:iin? Miksi laitteen kondensaattoriin ei saa koskea silloinkaan, kun laite on irrotettu verkosta?\n\nVastauslaatikkoon tulee kohdan b) tulos. Perustele kohta c) kirjallisesti.",
+      "kind": [
+        "data",
+        "model",
+        "experiment"
+      ],
+      "answer": 48.6,
+      "unit": "kW",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Kondensaattorin jännite vakiovirtalatauksessa (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$U\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "2",
+            "203"
+          ],
+          [
+            "4",
+            "396"
+          ],
+          [
+            "6",
+            "607"
+          ],
+          [
+            "8",
+            "805"
+          ],
+          [
+            "10",
+            "992"
+          ],
+          [
+            "12",
+            "1201"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-13-L3-05",
+      "level": 3,
+      "text": "Kaksi levykondensaattoria valmistetaan samanlaisista levyistä. Levyn pinta-ala on $100\\,\\text{cm}^2$ ja eristekerroksen paksuus $0{,}050\\,\\text{mm}$. Toisessa eristeenä on teflon ja toisessa lasi (taulukko). Varmuuden vuoksi kenttä saa olla kummassakin enintään puolet läpilyöntilujuudesta. Käytä sähkövakiota $\\varepsilon_0 = 8{,}854 \\cdot 10^{-12}\\,\\text{F/m}$.\n\na) Laske kummankin kondensaattorin suurin sallittu jännite ja kapasitanssi.\n\nb) Laske kummankin kondensaattorin energia tällä jännitteellä. Kuinka moninkertainen teflonkondensaattorin energia on lasikondensaattorin energiaan verrattuna?\n\nc) Lasin suhteellinen permittiivisyys on suurempi kuin teflonin. Silti teflon varastoi enemmän energiaa. Selitä miksi.\n\nVastauslaatikkoon tulee kohdan b) energioiden suhde. Perustele kohta c) kirjallisesti.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 6.9,
+      "unit": "",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Eristeiden likimääräisiä taulukkoarvoja",
+        "columns": [
+          "Eriste",
+          "$\\varepsilon_\\text{r}$",
+          "$E_\\text{max}\\,(\\text{MV/m})$"
+        ],
+        "rows": [
+          [
+            "teflon",
+            "2.1",
+            "60"
+          ],
+          [
+            "lasi",
+            "5.6",
+            "14"
+          ]
+        ]
+      }
     }
   ]
 }

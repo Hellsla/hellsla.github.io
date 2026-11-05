@@ -83,7 +83,7 @@ for lang in i18n.languages():
         mod = (out / f"{code}.html").read_text()
         hrefs = [h for h in re.findall(r'<li class="live[^"]*">.*?<a href="([^"]+)"', mod) if "kasitteet.html" not in h]   # the card links: below
         expect(f"{lang} {code}: the module page links {done} lessons, each published (two clicks)",
-               len([h for h in hrefs if not h.endswith("-sovella.html")]) == done and all((out / h).is_file() for h in hrefs), hrefs)
+               len([h for h in hrefs if not h.endswith(("-sovella.html", "-koe.html"))]) == done and all((out / h).is_file() for h in hrefs), hrefs)
         cards = re.findall(r'<li class="live ch-card">(.*?)</li>', mod, re.S)   # chapter cards (teacher 2026-11-03, "Ruukkikortit")
         expect(f"{lang} {code}: every published chapter is a card with one link, its opening illustration and its Miksi question",
                len(cards) == done and all(len(re.findall(r"<a ", c)) == 1 and 'class="ch-img"><svg aria-hidden="true"' in c and 'class="ch-why"' in c for c in cards),
@@ -103,8 +103,8 @@ for lang in i18n.languages():
            and f'<meta name="description" content="{_h.escape(T("site.home_description"))}">' in home)
     expect(f"{lang}: no sample lesson and no call to action on the front page",
            not re.search(r'class="(featured[^"]*|actions|button|quiet-link)"', home), re.findall(r'class="(featured[^"]*|actions|button|quiet-link)"', home)[:3])
-    intro = re.search(r'<section class="home-intro"[^>]*><h1 id="h-intro">(.*?)</h1><p class="lead">(.*?)</p>(?:<img class="intro-school" [^>]+>)?</section>', home)
-    expect(f"{lang}: the heading and one line under it, then the module list",
+    intro = re.search(r'<section class="home-intro"[^>]*><div class="intro-title"><h1 id="h-intro">(.*?)</h1><p class="wip-badge" title="[^"]+">(?:[^<]+)</p></div><p class="lead">(.*?)</p>(?:<img class="intro-school" [^>]+>)?</section>', home)
+    expect(f"{lang}: the heading with its work-in-progress badge and one line under it, then the module list",
            bool(intro) and intro.group(1) == T("site.home_h1") and intro.group(2) == T("site.home_sub") and home.find('class="catalogue"') > intro.end())
     hdr = re.search(r'<header class="top">.*?</header>', home, re.S).group(0); ftr = re.search(r'<footer class="bottom">.*?</footer>', home, re.S).group(0)
     expect(f"{lang}: the header links Näin opiskelet and Lukuvinkit in that order, no Moduulit on the front page (teacher 2026-11-04)",
@@ -261,16 +261,16 @@ for lang in i18n.languages():
             page = f.read_text(); cards = concept_cards.chapter_cards(code, l["id"], lang)
             if bool(cards) != ('id="kertaa-kasitteet"' in page): wrong.append(f"{l['id']}: section {'missing' if cards else 'without cards'}"); continue
             if not cards: continue
-            sec = re.search(r'<section class="stage stage-concepts kc-section" id="kertaa-kasitteet".*?</section>', page, re.S).group(0)
+            sec = re.search(r'<div class="activity act-concepts kc-section" id="kertaa-kasitteet".*?</script></div>', page, re.S).group(0)
             if not all(f'data-id="{c["id"]}"' in sec for c in cards): wrong.append(f"{l['id']}: a card missing from the list")
-            ex = page.find('id="exercises"')
-            if not (page.index('id="exit"') < page.index('id="kertaa-kasitteet"') and (ex < 0 or page.index('id="kertaa-kasitteet"') < ex)): wrong.append(f"{l['id']}: not after the exit ticket")
+            hj = re.search(r'<section class="stage" id="sovella".*?</section>', page, re.S)
+            if hj and not hj.group(0).endswith(sec + "</section>"): wrong.append(f"{l['id']}: not the last part of Esimerkit")
             toc = re.search(r'<nav class="toc".*?</nav>', page, re.S)
-            if not toc or 'href="#kertaa-kasitteet"' not in toc.group(0): wrong.append(f"{l['id']}: no Käsitteet stage in the navigation")
+            if not toc or 'href="#kertaa-kasitteet"' in toc.group(0): wrong.append(f"{l['id']}: a Käsitteet stage of its own in the navigation")
             sel = re.search(r'<section class="stage" id="selita".*?</section>', page, re.S)
-            if page.count("data-kortti=") != (sel.group(0).count("data-kortti=") if sel else 0): wrong.append(f"{l['id']}: a card term outside Teoriatiivistelmä")
+            if page.count("data-kortti=") != (sel.group(0).count("data-kortti=") if sel else 0): wrong.append(f"{l['id']}: a card term outside Teoria")
             if f'href="kasitteet.html?moduuli={code}"' not in sec: wrong.append(f"{l['id']}: no link to the module's cards")
-    expect(f"{lang}: exactly the chapters with cards have 'Kertaa luvun käsitteet' after the exit ticket, listed, in the navigation, terms only in Teoriatiivistelmä", not wrong, wrong[:5])
+    expect(f"{lang}: exactly the chapters with cards have 'Kertaa luvun käsitteet' as the last part of Esimerkit, listed, not in the navigation (teacher 2026-11-05), terms only in Teoria", not wrong, wrong[:5])
 
 JS = """() => { const R = (e) => e.getBoundingClientRect(), out = [];
   if (document.scrollingElement.scrollWidth > innerWidth) out.push('horizontal scroll ' + document.scrollingElement.scrollWidth);

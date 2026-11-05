@@ -27,6 +27,7 @@
     {
       "id": "fy8-11-L1-04",
       "level": 1,
+      "core": true,
       "text": "In the fusion of two deuterium nuclei, a helium-3 nucleus and a neutron are formed: ${}^{2}_{1}\\text{H} + {}^{2}_{1}\\text{H} \\rightarrow {}^{3}_{2}\\text{He} + {}^{1}_{0}\\text{n}$. The atomic masses are: deuterium $2.0141018\\,\\text{u}$, helium-3 $3.0160293\\,\\text{u}$ and neutron $1.0086649\\,\\text{u}$. How much energy is released in the reaction? Give the answer in megaelectronvolts.",
       "answer": 3.27,
       "unit": "MeV",
@@ -38,6 +39,75 @@
       "text": "The mass of a neutron is $1.0086649\\,\\text{u}$. What energy does the mass of the neutron correspond to? Give the answer in megaelectronvolts.",
       "answer": 939.6,
       "unit": "MeV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-11-L1-06",
+      "level": 1,
+      "core": true,
+      "text": "In a nuclear reactor there is a moderator, for example water, between the fuel rods. What is the job of the moderator?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "It slows down fast neutrons, because slow neutrons are more likely than fast ones to cause fissions of uranium-235.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "It absorbs neutrons, so the multiplication factor stays close to one and the chain reaction cannot accelerate out of control.",
+          "feedback": "This is the job of the control rods. Control rods contain a material that captures neutrons, and they are used to adjust the multiplication factor. The moderator does not remove neutrons but reduces their speed."
+        },
+        {
+          "text": "It transfers the heat released in the fissions to the turbine, because water conducts heat better than the uranium fuel itself.",
+          "feedback": "Transferring heat is the job of the coolant, and water in a reactor can act as both coolant and moderator. The moderator's own job has to do with neutrons, not with heat transfer."
+        },
+        {
+          "text": "It slows down fast neutrons, because slow neutrons are more likely than fast ones to cause fissions of uranium-235.",
+          "correct": true,
+          "feedback": "Correct: the neutrons produced in fission are very fast, and a uranium-235 nucleus captures a slow neutron more easily than a fast one. The moderator makes the neutrons collide with light nuclei and reduces their speed, so the chain reaction continues."
+        },
+        {
+          "text": "It increases the number of neutrons, because as it slows down, each neutron splits into several smaller neutrons going in different directions.",
+          "feedback": "A neutron does not split into parts as it slows down; it loses kinetic energy in collisions. The number of neutrons increases only in fissions, in each of which two or three new neutrons are released."
+        }
+      ]
+    },
+    {
+      "id": "fy8-11-L1-07",
+      "level": 1,
+      "text": "In the core of the Sun, hydrogen fuses into helium at a temperature of about $15 \\cdot 10^{6}\\,\\text{K}$. Why does fusion require such a high temperature?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The nuclei repel each other electrically, so they need a large kinetic energy to get close to each other.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "When hot, the mass of the nuclei decreases, and this decrease in mass is the energy that fusion needs in order to start.",
+          "feedback": "Temperature does not reduce the mass of the nuclei. In fusion the mass decreases only in the reaction, and the energy corresponding to the mass difference is released, not needed to start the reaction."
+        },
+        {
+          "text": "The high temperature makes the nuclei radioactive, and only radioactive nuclei can join together through the action of nuclear forces.",
+          "feedback": "The nuclei that fuse, such as hydrogen and deuterium, are stable and do not become radioactive when heated. Temperature affects the speed of the nuclei, not their stability."
+        },
+        {
+          "text": "Nuclei join together only in a liquid, and the high temperature is needed to keep the matter liquid throughout the reaction.",
+          "feedback": "At such a high temperature matter is plasma, not a liquid. The reason is not the state of matter but that the electric repulsion between the nuclei has to be overcome with a large kinetic energy."
+        },
+        {
+          "text": "The nuclei repel each other electrically, so they need a large kinetic energy to get close to each other.",
+          "correct": true,
+          "feedback": "Correct: atomic nuclei have a positive charge, so they repel each other. Only when the nuclei are very close to each other do the short-range nuclear forces overcome the repulsion, and at a high temperature the nuclei have enough kinetic energy to approach."
+        }
+      ]
+    },
+    {
+      "id": "fy8-11-L1-08",
+      "level": 1,
+      "text": "In one fission of uranium-235, an average of $200\\,\\text{MeV}$ of energy is released. How much is this in joules? Use the conversion factor $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$. Give the answer in the unit $10^{-11}\\,\\text{J}$.",
+      "answer": 3.2,
+      "unit": "10⁻¹¹ J",
       "tolerance": 0.02
     }
   ],
@@ -73,6 +143,130 @@
       "answer": 4.11,
       "unit": "%",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-11-L2-05",
+      "level": 2,
+      "core": true,
+      "text": "In a reactor start-up test, the number of neutrons in the chain was measured in five successive generations (table, example data). Assume that the multiplication factor $k$ stays the same all the time.\n\na) Determine the multiplication factor $k$ using the first and last values of the table. Is the reactor subcritical, critical or supercritical?\n\nb) How many neutrons would there be in the chain in generation $50$ if the multiplication factor stayed the same?\n\nThe answer box takes the result of part b).",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 1860,
+      "unit": "",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Number of neutrons in the chain, example data",
+        "columns": [
+          "Generation $g$",
+          "Neutrons $N_g$"
+        ],
+        "rows": [
+          [
+            "0",
+            "1000"
+          ],
+          [
+            "1",
+            "1013"
+          ],
+          [
+            "2",
+            "1022"
+          ],
+          [
+            "3",
+            "1038"
+          ],
+          [
+            "4",
+            "1049"
+          ],
+          [
+            "5",
+            "1064"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-11-L2-06",
+      "level": 2,
+      "text": "The table shows the rounded net electrical powers of the nuclear power reactors in Finland (websites of TVO and Fortum, situation in 2024).\n\na) Calculate the total net electrical power of the reactors.\n\nb) In a year ($365\\,\\text{d}$) the reactors produce $90\\,\\%$ of the energy they would produce running at nominal power for the whole year (capacity factor $0.90$, an assumption). How much electrical energy is this? Give the answer in terawatt-hours.\n\nThe answer box takes the result of part b).",
+      "kind": [
+        "data"
+      ],
+      "answer": 34.6,
+      "unit": "TWh",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Reactors of Finnish nuclear power plants, net electrical power (MW) (websites of TVO and Fortum, situation in 2024)",
+        "columns": [
+          "Plant",
+          "Reactor",
+          "$P\\,(\\text{MW})$"
+        ],
+        "rows": [
+          [
+            "Olkiluoto",
+            "OL1",
+            "890"
+          ],
+          [
+            "Olkiluoto",
+            "OL2",
+            "890"
+          ],
+          [
+            "Olkiluoto",
+            "OL3",
+            "1600"
+          ],
+          [
+            "Loviisa",
+            "LO1",
+            "507"
+          ],
+          [
+            "Loviisa",
+            "LO2",
+            "507"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-11-L2-07",
+      "level": 2,
+      "core": true,
+      "text": "A student writes: “A uranium-235 nucleus captures a neutron and splits. Before the reaction there are $236$ nucleons and after the reaction $236$, so the mass of the products is the same as the mass of the starting materials. Therefore no energy is released in fission.” Fission does, however, release energy. What is the error in the student's reasoning?",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "answer": "The number of nucleons is conserved, but the nucleons of the products are more tightly bound, so the mass decreases and the mass difference is released as energy.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The number of nucleons is conserved, but the nucleons of the products are more tightly bound, so the mass decreases and the mass difference is released as energy.",
+          "correct": true,
+          "feedback": "Correct: the number of nucleons is conserved, but mass does not depend on the number alone. In the products the binding energy per nucleon is greater, so their total mass is smaller, and the energy corresponding to the mass difference is released."
+        },
+        {
+          "text": "The number of nucleons is not conserved in fission, because some of the nucleons turn into energy and disappear, so there are fewer nucleons in the products.",
+          "feedback": "The number of nucleons is conserved: before and after the reaction there are $236$ of them, when the released neutrons are counted. No nucleon turns into energy; the mass decreases because the binding energy increases."
+        },
+        {
+          "text": "Mass and energy are separate from each other, so energy can be released without the total mass changing at all in the reaction.",
+          "feedback": "Mass and energy are not separate: according to the equivalence of mass and energy, the released energy corresponds to a decrease in mass, $Q = \\Delta m\\,c^2$. Without a mass difference no energy would be released."
+        },
+        {
+          "text": "The nucleons of the products are more loosely bound than those of the starting materials, so the mass of the products is greater and energy is released as the mass increases.",
+          "feedback": "The situation is the opposite: in the products the binding energy per nucleon is greater, not smaller. The total mass of more tightly bound nucleons is smaller, and the decreasing mass releases energy."
+        }
+      ]
     }
   ],
   "level3": [
@@ -98,6 +292,65 @@
       "text": "Spent nuclear fuel contains plutonium-239, whose half-life is $24\\,100\\,\\text{a}$. How long does it take for its activity to decrease to a thousandth of the original? Give the answer in the unit $10^{5}\\,\\text{a}$.",
       "answer": 2.4,
       "unit": "10⁵ a",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-11-L3-04",
+      "level": 3,
+      "text": "The activity of spent nuclear fuel removed from a reactor was measured in a cooling pool over five decades (table, example data, activity per tonne of fuel). The time $t$ is counted from about $10$ years after removal, when the short-lived fission products have already decayed. The activity is then determined mainly by caesium-137 and strontium-90.\n\na) Plot the natural logarithm of the activity, $\\ln A$, as a function of time, fit a straight line to the points and use it to determine the half-life of the activity.\n\nb) How many years pass before the activity of the fission products has fallen to $100\\,\\tfrac{\\text{TBq}}{\\text{t}}$ (an example value), if the activity follows the same decay law all the time?\n\nc) Explain why the real activity does not follow this law after hundreds of years, and why the fuel disposed of in Onkalo has to be isolated for thousands of years. Use plutonium-239, whose half-life is $24\\,100\\,\\text{a}$, as an example.\n\nThe answer box takes the result of part b) in years.",
+      "kind": [
+        "data",
+        "graph",
+        "model",
+        "reasoning"
+      ],
+      "answer": 250,
+      "unit": "a",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Activity of spent fuel, example data",
+        "columns": [
+          "$t\\,(\\text{a})$",
+          "$A\\,(\\tfrac{\\text{TBq}}{\\text{t}})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "30000"
+          ],
+          [
+            "10",
+            "23900"
+          ],
+          [
+            "20",
+            "19250"
+          ],
+          [
+            "30",
+            "15050"
+          ],
+          [
+            "40",
+            "11950"
+          ],
+          [
+            "50",
+            "9650"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-11-L3-05",
+      "level": 3,
+      "text": "The net electrical power of one reactor of the Loviisa power plant is $507\\,\\text{MW}$ (Fortum, 2024).\n\nAssume that the efficiency of the plant is $0.33$, that is, the electrical power is $33\\,\\%$ of the thermal power of the reactor, and that the reactor operates at full power for $92\\,\\%$ of the year ($365\\,\\text{d}$). Also assume that all the thermal power comes from fissions of uranium-235, each releasing $200\\,\\text{MeV}$.\n\nThe atomic mass of uranium-235 is $235.0439282\\,\\text{u}$, $1\\,\\text{u} = 1.66054 \\cdot 10^{-27}\\,\\text{kg}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$.\n\na) Calculate the thermal power of the reactor and the power that is transferred from the plant to the cooling water.\n\nb) How many kilograms of uranium-235 undergo fission in the reactor in a year?\n\nc) How many tonnes of coal would have to be burned to produce the same thermal energy, when the heating value of coal is $24\\,\\tfrac{\\text{MJ}}{\\text{kg}}$? What does the comparison tell about the energies of nuclear reactions and combustion?\n\nThe answer box takes the result of part b).",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 540,
+      "unit": "kg",
       "tolerance": 0.02
     }
   ]

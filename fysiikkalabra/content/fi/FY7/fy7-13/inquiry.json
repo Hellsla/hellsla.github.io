@@ -7,7 +7,7 @@
     "määrittämään laserin aallonpituuden hilan ja varjostimelta mitattujen etäisyyksien avulla."
   ],
   "prior": [
-    "Kahden samassa vaiheessa värähtelevän lähteen aallot vahvistavat toisiaan, kun matkaero on kokonainen määrä aallonpituuksia (luku *Aaltojen interferenssi*)",
+    "Kahden samassa vaiheessa värähtelevän lähteen aallot vahvistavat toisiaan, kun matkaero on kokonainen määrä aallonpituuksia (luku *Aaltojen yhteisvaikutus: superpositio ja interferenssi*)",
     "Valo on sähkömagneettista aaltoliikettä, ja näkyvän valon aallonpituus on $400$–$700\\,\\text{nm}$ (luku *Sähkömagneettinen säteily ja mustan kappaleen spektri*)",
     "Prismassa violetti valo taittuu eniten, koska lasin taitekerroin on sille suurin (luku *Dispersio: prisma ja sateenkaari*)"
   ],
@@ -37,7 +37,7 @@
         {
           "text": "Aallot heikentävät toisiaan, koska ne saapuvat vastakkaisissa vaiheissa.",
           "correct": true,
-          "feedback": "Oikein. Matkaero $1{,}5\\lambda$ on puoli aallonpituutta yli kokonaisen määrän, joten toisen aallon harja kohtaa toisen aallon pohjan (luku *Aaltojen interferenssi*). Tänään sama ehto selittää valon kirkkaat ja tummat kohdat."
+          "feedback": "Oikein. Matkaero $1{,}5\\lambda$ on puoli aallonpituutta yli kokonaisen määrän, joten toisen aallon harja kohtaa toisen aallon pohjan (luku *Aaltojen yhteisvaikutus: superpositio ja interferenssi*). Tänään sama ehto selittää valon kirkkaat ja tummat kohdat."
         }
       ],
       "optional": true

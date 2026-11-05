@@ -1,0 +1,680 @@
+{
+  "intro": "Six matriculation-exam-style problems bring together the lesson's pressure, gases and heat engine. Solve them as in the exam: justify the choice of model, check that the temperature is in kelvins and the pressure is the total pressure, solve for the quantity asked before substituting numbers, and assess whether the result is reasonable. Open the model answer and the marking scheme only when your solution is finished.",
+  "tasks": [
+    {
+      "id": "fy9-kaasut-s1",
+      "title": "Compressed-air lift",
+      "source": "example",
+      "source_note": "The lift and its numbers are an invented example.",
+      "skills": [
+        "fy3-4",
+        "fy3-11",
+        "fy3-9"
+      ],
+      "text": "The car lift of a small repair shop works with compressed air. The piston of the lift's vertical cylinder has a diameter of $0.200\\,\\text{m}$, and the piston supports the lifting platform on which the car stands. The mass of the car and the platform together is $1800\\,\\text{kg}$. Above the piston is outside air at a pressure of $101\\,\\text{kPa}$. The compressed air comes from the compressor's tank, whose volume is $100\\,\\textsf{l}$ and whose gauge shows a gauge pressure of $900\\,\\text{kPa}$ when the compressor switches off.\n\nThe car is lifted $1.20\\,\\text{m}$ slowly at a constant speed. Before the lift there is hardly any air in the cylinder under the piston. Assume that the temperature of the air stays the same all the time and that the friction of the piston is negligible.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 5,
+          "text": "What is the gauge pressure in the cylinder during the lift?",
+          "answer": {
+            "value": 562.1,
+            "unit": "kPa",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "At constant speed the forces are in balance: $\\Delta p\\,A = mg$, where $\\Delta p$ is the pressure difference between the air in the cylinder and the outside air."
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "$A = \\pi r^2 = \\pi \\cdot (0.100\\,\\text{m})^2 \\approx 0.0314\\,\\text{m}^2$ and $mg \\approx 17.7\\,\\text{kN}$, so $\\Delta p \\approx 562\\,\\text{kPa}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "The radius from the diameter, the pressure from pascals to kilopascals; three significant figures."
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "The gauge pressure is smaller than the tank's $900\\,\\text{kPa}$, so air flows from the tank into the cylinder."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 5,
+          "text": "How much work does the lift do on the car and the platform? Justify the result by calculating it in two different ways. Explain why the air in the cylinder nevertheless does more work.",
+          "answer": {
+            "value": 21.19,
+            "unit": "kJ",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$W = mgh$ and $W = \\Delta p\\,\\Delta V$, where $\\Delta V = Ah$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$W = 1800\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\cdot 1.20\\,\\text{m} \\approx 21.2\\,\\text{kJ}$ and $562\\,\\text{kPa} \\cdot 37.7\\,\\textsf{l} \\approx 21.2\\,\\text{kJ}$."
+            },
+            {
+              "text": "Explains that the air in the cylinder pushes the piston with the total pressure $663\\,\\text{kPa}$ and does the work $p\\,\\Delta V \\approx 25.0\\,\\text{kJ}$; the difference $3.8\\,\\text{kJ}$ goes into pushing the outside air above the piston out of the way.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\text{kPa} \\cdot \\textsf{l} = \\text{J}$ or a conversion to base units; three significant figures."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 5,
+          "text": "What does the tank's gauge read after one lift? Is the air in the tank enough for a second, identical lift if the compressor does not start in between? Also assess how the temperature assumption affects the result.",
+          "answer": {
+            "value": 650.0,
+            "unit": "kPa",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The amount of air is conserved at constant temperature: $p_1V_\\text{s} = p_2V_\\text{s} + p_\\text{c}\\,\\Delta V$, where $p_\\text{c} = 663\\,\\text{kPa}$ is the total pressure in the cylinder."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$p_1 = 1001\\,\\text{kPa}$, so $p_2 = 1001\\,\\text{kPa} - 663\\,\\text{kPa} \\cdot 0.377 \\approx 751\\,\\text{kPa}$, that is, about $650\\,\\text{kPa}$ on the gauge."
+            },
+            {
+              "text": "Justifies that air flows only from a higher pressure to a lower one, so the tank must hold at least $663\\,\\text{kPa}$ throughout the lift; after a second lift the pressure would be about $501\\,\\text{kPa}$, so the second lift stops partway (at a height of about $0.4\\,\\text{m}$).",
+              "tag": "transfer",
+              "points": 2
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "The air leaving the tank cools as it expands, so the pressure is momentarily even lower until the air warms to room temperature."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy3-4",
+        "concept": "fy3-11",
+        "transfer": "fy3-9"
+      }
+    },
+    {
+      "id": "fy9-kaasut-s2",
+      "title": "The farm's biogas engine",
+      "source": "example",
+      "source_note": "The plant and its numbers are an invented example; the heat of combustion of methane is a rounded table value.",
+      "skills": [
+        "fy3-10",
+        "fy3-11",
+        "fy3-15"
+      ],
+      "text": "At a farm's biogas plant the gas produced from manure is purified into almost pure methane. The methane is burnt in an engine that turns a generator. According to the gas meter, $52.0\\,\\text{m}^3$ of methane flows into the engine per hour. At the meter the temperature of the gas is $25\\,{}^\\circ\\text{C}$ and its pressure $104\\,\\text{kPa}$.\n\nThe combined electrical efficiency of the engine and the generator is $36\\,\\%$. Of the heat of the exhaust gases and the engine's cooling water, $75\\,\\%$ is recovered with heat exchangers, and it is used to heat the cowshed and the farmhouse. The molar mass of methane is $16.0\\,\\text{g/mol}$, and its heat of combustion is $50.0\\,\\text{MJ/kg}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 5,
+          "text": "How many kilograms of methane does the engine burn per hour?",
+          "answer": {
+            "value": 34.92,
+            "unit": "kg",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$n = \\dfrac{pV}{RT}$ and $m = nM$"
+            },
+            {
+              "key": "units_precision",
+              "points": 2,
+              "detail": "$T = 298.15\\,\\text{K}$, the pressure in pascals, $M = 0.0160\\,\\text{kg/mol}$; the answer to three significant figures."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$n \\approx 2180\\,\\text{mol}$ per hour, $m \\approx 34.9\\,\\text{kg}$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "The density of methane $34.9\\,\\text{kg} : 52.0\\,\\text{m}^3 \\approx 0.67\\,\\text{kg/m}^3$ is smaller than that of air, because the molar mass of methane is smaller."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 5,
+          "text": "What is the electrical power of the plant?",
+          "answer": {
+            "value": 174.6,
+            "unit": "kW",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$P_0 = \\dfrac{Hm}{t}$ and $P_\\text{s} = \\eta_\\text{s} P_0$"
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "In an hour $Hm \\approx 1746\\,\\text{MJ}$ is released, so $P_0 \\approx 485\\,\\text{kW}$ and $P_\\text{s} \\approx 175\\,\\text{kW}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "The hour in seconds, $1\\,\\text{h} = 3600\\,\\text{s}$; three significant figures."
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "The electrical power is less than half of the fuel power, as it should be in a heat engine."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 5,
+          "text": "Why can the engine not turn all of the fuel power into electricity, even if its friction were removed completely? What share of the fuel power is put to use as electricity and heat together?",
+          "answer": {
+            "value": 84.0,
+            "unit": "%",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Explains that the engine is a heat engine: it can do work only by giving part of the heat to a colder environment (exhaust gas, cooling water), so this heat cannot be avoided even in a frictionless engine.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "The heat power given away $485\\,\\text{kW} - 175\\,\\text{kW} \\approx 310\\,\\text{kW}$, recovered $0.75 \\cdot 310\\,\\text{kW} \\approx 233\\,\\text{kW}$, so $\\eta_\\text{tot} = (175 + 233) : 485 \\approx 84\\,\\%$."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The total efficiency is high because the heat given away is used for heating; the share of electricity does not grow because of it."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy3-10",
+        "concept": "fy3-11",
+        "communication": "fy3-15"
+      }
+    },
+    {
+      "id": "fy9-kaasut-s3",
+      "title": "Air in a glass syringe",
+      "source": "example",
+      "source_note": "The data are an invented example: the numbers were calculated from a model in which the volume of the air is $37.5\\,\\text{ml}$ at the temperature $0\\,{}^\\circ\\text{C}$ and proportional to the kelvin temperature, and variation like that of reading a scale was added to them.",
+      "skills": [
+        "fy3-13",
+        "fy3-9",
+        "fy3-10",
+        "fy1-4"
+      ],
+      "text": "Students investigated how the volume of air depends on the temperature at constant pressure. The tip of a glass syringe was closed with a stopper, and air was left in the syringe. The syringe was immersed horizontally in a water bath whose temperature was raised in steps. The glass piston slides in the syringe almost without friction, so the pressure of the air in the syringe is always the air pressure $101.3\\,\\text{kPa}$. At each temperature they waited until the piston stopped, and the volume was read from the syringe's scale. The uncertainty of the volume reading was estimated to be $\\pm 0.3\\,\\text{ml}$.\n\n| $\\theta\\ ({}^\\circ\\text{C})$ | $V\\ (\\text{ml})$ |\n|---|---|\n| $5$ | $38.2$ |\n| $15$ | $39.9$ |\n| $25$ | $41.1$ |\n| $35$ | $42.5$ |\n| $45$ | $43.8$ |\n| $55$ | $45.1$ |\n| $65$ | $46.5$ |\n| $75$ | $47.8$ |",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 5,
+          "text": "Present the volume of the air as a function of the temperature as a graph, and fit a suitable model to the points.",
+          "criteria": [
+            {
+              "key": "graph_axes",
+              "points": 1,
+              "detail": "$\\theta\\ ({}^\\circ\\text{C})$ on the horizontal axis, $V\\ (\\text{ml})$ on the vertical axis; the vertical axis may start at, for example, $36\\,\\text{ml}$ when this is stated."
+            },
+            {
+              "key": "graph_points",
+              "points": 1
+            },
+            {
+              "key": "graph_fit",
+              "points": 2,
+              "detail": "A rising straight line is fitted to the points, passing between the points and through the uncertainty bars; the points are not joined into a broken line."
+            },
+            {
+              "text": "States that the points lie on a straight line within the measurement uncertainty: the volume increases by the same amount for each degree of temperature.",
+              "tag": "graph",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 5,
+          "text": "Use the graph to determine the temperature at which the volume of the air would be zero according to the model. Estimate the uncertainty of the result, and compare the result with the accepted value $-273.15\\,{}^\\circ\\text{C}$.",
+          "answer": {
+            "value": -279,
+            "unit": "°C",
+            "tolerance": 0.05
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The slope from two points of the line far apart, for example $(0\\,{}^\\circ\\text{C};\\ 37.7\\,\\text{ml})$ and $(80\\,{}^\\circ\\text{C};\\ 48.5\\,\\text{ml})$: $k \\approx 0.135\\,\\text{ml}/{}^\\circ\\text{C}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\theta_0 = -\\dfrac{V_0}{k} = -\\dfrac{37.7\\,\\text{ml}}{0.135\\,\\text{ml}/{}^\\circ\\text{C}} \\approx -279\\,{}^\\circ\\text{C}$"
+            },
+            {
+              "key": "uncertainty",
+              "points": 2,
+              "detail": "The steepest and the least steep line that still pass through all the uncertainty bars give about $-265\\,{}^\\circ\\text{C}$ and $-294\\,{}^\\circ\\text{C}$, so $\\theta_0 \\approx (-279 \\pm 15)\\,{}^\\circ\\text{C}$; the uncertainty is large because the line is extended almost four times the length of the measurement range."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The accepted value is inside the interval, so the result agrees with it; the difference is not significant."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 5,
+          "text": "What amount of substance of air is in the syringe? Use the slope you determined from the graph.",
+          "answer": {
+            "value": 1.646,
+            "unit": "mmol",
+            "tolerance": 0.05
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$V = \\dfrac{nR}{p}\\,T$, so the slope is $k = \\dfrac{\\Delta V}{\\Delta T} = \\dfrac{nR}{p}$ and $n = \\dfrac{pk}{R}$; a change of one kelvin equals a change of one degree Celsius."
+            },
+            {
+              "key": "units_precision",
+              "points": 2,
+              "detail": "$k = 0.135\\,\\text{ml/K} = 0.135 \\cdot 10^{-6}\\,\\text{m}^3/\\text{K}$ and $p = 101\\,300\\,\\text{Pa}$; three significant figures."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$n \\approx 1.65 \\cdot 10^{-3}\\,\\text{mol} = 1.65\\,\\text{mmol}$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "A single measured point gives almost the same: $n = \\dfrac{pV}{RT} = \\dfrac{101\\,300\\,\\text{Pa} \\cdot 41.1 \\cdot 10^{-6}\\,\\text{m}^3}{8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 298.15\\,\\text{K}} \\approx 1.68\\,\\text{mmol}$."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 5,
+          "text": "Another group made the same measurement, but the tip of their syringe was connected to a tube that held $1.5\\,\\text{ml}$ of air and stayed outside the bath at room temperature. Because the air in the tube belongs to the enclosed amount of air, the group added the tube's $1.5\\,\\text{ml}$ to every volume read from the syringe's scale. How does this change their line and their estimate of absolute zero? Assess whether the error can be removed by repeating the measurements.",
+          "criteria": [
+            {
+              "text": "Explains that the air in the tube does not warm, so its volume stays constant and the same addition $1.5\\,\\text{ml}$ is made to every total volume: the line moves upwards, but its slope does not change.",
+              "tag": "experiment",
+              "points": 2
+            },
+            {
+              "key": "error_sources",
+              "points": 2,
+              "detail": "Reasons out the direction: the zero point $\\theta_0 = -\\dfrac{V_0 + 1.5\\,\\text{ml}}{k}$ moves colder, by about $11\\,\\text{K}$ ($1.5 : 37.5 \\cdot 273\\,\\text{K}$)."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The error is systematic, so repetitions do not remove it; the whole amount of air must be kept in the bath, or the constant volume of the tube is left out of the total volume, and then the air in the syringe alone follows the law $V \\propto T$."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy1-4",
+        "math": "fy3-10",
+        "experiment": "fy3-13",
+        "communication": "fy3-13"
+      }
+    },
+    {
+      "id": "fy9-kaasut-s4",
+      "title": "A ship powered by the heat of seawater",
+      "source": "example",
+      "source_note": "The brochure and the inventions' numbers are invented examples.",
+      "skills": [
+        "fy3-11",
+        "fy3-5",
+        "fy3-15"
+      ],
+      "text": "An inventor is seeking funding for a ship whose engine needs no fuel. His brochure says:\n\n> Our engine takes heat from seawater at a temperature of $15\\,{}^\\circ\\text{C}$ and turns it completely into work that drives the propeller. Slightly cooled water flows behind the ship. Energy is conserved, because the internal energy of the sea turns into the motion of the ship. That is why the engine breaks no law of nature.\n\nA second inventor proposes, for winter use, a machine that works between seawater ($3\\,{}^\\circ\\text{C}$) and frosty air ($-20\\,{}^\\circ\\text{C}$). According to him the machine takes heat from the seawater at a rate of $500\\,\\text{kW}$ and does work at a rate of $30\\,\\text{kW}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 6,
+          "text": "Assess the first inventor's brochure. What in the brochure is true and what is not? Justify.",
+          "criteria": [
+            {
+              "text": "States that the conservation of energy does not rule out the idea: as far as energy goes, the internal energy of the sea could turn into work, and the brochure describes this correctly.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "text": "Justifies that a heat engine can do work only if it gives part of the heat to a colder environment; not all heat can be turned into work, and a machine with only one temperature does no work.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 2,
+              "detail": "Conclusion: the brochure's claim “breaks no law of nature” is wrong, the engine cannot work as described, and the project is not worth funding."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Calculate the efficiency of the second inventor's machine and the heat power given to the frosty air. Assess why the efficiency is so small.",
+          "answer": {
+            "value": 6.0,
+            "unit": "%",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\eta = \\dfrac{P_W}{P_1}$ and $P_2 = P_1 - P_W$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\eta = 30\\,\\text{kW} : 500\\,\\text{kW} = 0.060 = 6.0\\,\\%$ and $P_2 = 470\\,\\text{kW}$"
+            },
+            {
+              "text": "Explains that the temperature difference of $23\\,\\text{K}$ between the hot source and the cold environment is small compared with the temperature of the hot source, $276\\,\\text{K}$, so only a small part of the heat can turn into work.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Energy is conserved: $30\\,\\text{kW} + 470\\,\\text{kW} = 500\\,\\text{kW}$; the machine gives almost all the heat it takes to the cold."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 5,
+          "text": "The ship's cabins are heated with a heat pump that takes heat from the same $3\\,{}^\\circ\\text{C}$ seawater. The pump uses an electrical power of $10\\,\\text{kW}$ and gives a heat power of $35\\,\\text{kW}$ to the cabins. Explain why this is possible, even though the first inventor's engine is not.",
+          "criteria": [
+            {
+              "text": "Explains that the heat pump does not turn heat into work but uses electricity to move heat from the cold seawater to the warm cabins: $25\\,\\text{kW}$ comes from the sea and $10\\,\\text{kW}$ from the electricity.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "text": "States that the ratio $35 : 10 = 3.5$ is a coefficient of performance and not an efficiency, and that energy is conserved, so nothing is created out of nothing.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The difference: the heat pump needs external work to move heat from cold to warm, whereas the brochure's engine promises work without a colder environment."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy3-11",
+        "math": "fy3-15",
+        "communication": "fy3-11"
+      }
+    },
+    {
+      "id": "fy9-kaasut-s5",
+      "title": "The molar mass of air by weighing",
+      "source": "example",
+      "source_note": "The report and its measurement results are invented examples.",
+      "skills": [
+        "fy3-10",
+        "fy1-3",
+        "fy1-4"
+      ],
+      "text": "A group of students wanted to determine the molar mass of air by weighing. An extract from the group's report:\n\n> We weighed a $1.5$-litre soft-drink bottle with a bicycle valve fitted in its cap. The bottle held room air at air pressure, and its mass was $52.36\\,\\text{g}$. We pumped air into the bottle with a bicycle pump until the pump's gauge showed $210\\,\\text{kPa}$. We detached the pump and weighed the bottle immediately: $55.64\\,\\text{g}$. The room temperature was $21\\,{}^\\circ\\text{C}$. We calculated the amount of substance of the added air from the ideal gas law and got a molar mass of $25\\,\\text{g/mol}$. So the table value $29.0\\,\\text{g/mol}$ is too large.\n\nThe resolution of the scale is $0.01\\,\\text{g}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Show how the group got a molar mass of $25\\,\\text{g/mol}$.",
+          "answer": {
+            "value": 25.45,
+            "unit": "g/mol",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\Delta n = \\dfrac{\\Delta p\\,V}{RT}$, because the volume and the temperature are the same before and after, and $M = \\dfrac{\\Delta m}{\\Delta n}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\Delta p = 210\\,000\\,\\text{Pa}$, $V = 0.0015\\,\\text{m}^3$, $T = 294.15\\,\\text{K}$; the answer to two significant figures."
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "$\\Delta m = 3.28\\,\\text{g}$, $\\Delta n \\approx 0.129\\,\\text{mol}$, so $M \\approx 25\\,\\text{g/mol}$."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 6,
+          "text": "Assess whether the group's conclusion is justified. Name the most important sources of error in the measurement and tell in which direction each changes the result.",
+          "criteria": [
+            {
+              "key": "error_sources",
+              "points": 3,
+              "detail": "For example: the pumped air is warm at first, so the gauge reading is higher than at room temperature and $\\Delta n$ is calculated too large (decreases the result); the pump's gauge measures the pressure in the hose and is imprecise (in either direction); air escapes when the pump is detached (decreases $\\Delta m$ and the result); the real volume of the bottle is over $1.5\\,\\textsf{l}$ and grows under pressure (increases the result)."
+            },
+            {
+              "key": "uncertainty",
+              "points": 2,
+              "detail": "Estimates the size of the effects: for example, a gauge pressure $10\\,\\text{kPa}$ lower would give $27\\,\\text{g/mol}$ and air at $30\\,{}^\\circ\\text{C}$ about $27\\,\\text{g/mol}$, while the scale's $0.01\\,\\text{g}$ affects the result by less than $1\\,\\%$."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "A single measurement whose errors push the result in the same direction does not show the table value to be wrong."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 5,
+          "text": "Design an improved experiment that gives the molar mass of air more reliably.",
+          "criteria": [
+            {
+              "text": "Measures the necessary quantities reliably: the volume of the bottle by filling it with water and weighing, the gauge pressure with a precise gauge directly from the bottle, and the reading only when the air has cooled to room temperature.",
+              "tag": "experiment",
+              "points": 2
+            },
+            {
+              "text": "Repeats the measurement at several different gauge pressures and keeps the other factors the same, for example the same bottle and valve, and detaching always in the same way.",
+              "tag": "experiment",
+              "points": 2
+            },
+            {
+              "text": "Presents the results as a $(\\Delta p, \\Delta m)$ graph and determines the molar mass from the slope of the line $\\dfrac{MV}{RT}$.",
+              "tag": "graph",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy3-10",
+        "experiment": "fy1-3",
+        "graph": "fy1-4",
+        "communication": "fy1-3"
+      }
+    },
+    {
+      "id": "fy9-kaasut-s6",
+      "title": "Vacuum lifter and glass pane",
+      "source": "example",
+      "source_note": "The lifter and its numbers are an invented example; the coefficients of friction are indicative values.",
+      "skills": [
+        "fy3-4",
+        "fy4-5",
+        "fy4-6",
+        "fy4-4"
+      ],
+      "text": "A glazier from a glass shop lifts a window pane with a vacuum lifter that hangs from the cable of a crane. The lifter's round rubber pad is placed against the glass, and a pump sucks air from under the pad so that the pressure under the pad is $60\\,\\text{kPa}$ lower than the pressure of the outside air. The inner diameter of the pad is $300\\,\\text{mm}$.\n\nThe length of the glass pane is $2.40\\,\\text{m}$, its width $1.20\\,\\text{m}$ and its thickness $10\\,\\text{mm}$, and the density of the glass is $2500\\,\\text{kg/m}^3$. The coefficient of static friction between rubber and dry glass is $0.60$, and for wet glass $0.30$. The crane accelerates the lift with an acceleration of at most $1.2\\,\\text{m/s}^2$. According to the manufacturer's instructions, the holding force of the lifter must be at least twice what the lift requires.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 5,
+          "text": "The pane is lifted from a pallet in a horizontal position, and the pad is in the middle of the upper surface of the pane. Draw the force diagram of the pane at the start of the lift, while the crane is accelerating. What is the minimum partial vacuum needed under the pad to keep the pane attached?",
+          "answer": {
+            "value": 11.21,
+            "unit": "kPa",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "fbd_forces",
+              "points": 1,
+              "detail": "The weight downwards and the force of the pressure difference $F_\\text{p} = \\Delta p\\,A$ upwards; at the minimum partial vacuum the normal force from the rim of the pad is zero."
+            },
+            {
+              "key": "fbd_equations",
+              "points": 1,
+              "detail": "$F_\\text{p} - mg = ma$"
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "$m = 72.0\\,\\text{kg}$, $A = \\pi \\cdot (0.150\\,\\text{m})^2 \\approx 0.0707\\,\\text{m}^2$ and $\\Delta p = \\dfrac{m(g + a)}{A} \\approx 11.2\\,\\text{kPa}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Millimetres to metres and the radius from the diameter; three significant figures."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 5,
+          "text": "For installation the pane is turned upright, and the pad is on the vertical surface of the pane. Draw the force diagram of the pane, and calculate the minimum partial vacuum now needed when the lift accelerates in the same way.",
+          "answer": {
+            "value": 18.69,
+            "unit": "kPa",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "fbd_forces",
+              "points": 1,
+              "detail": "Weight, the force of the pressure difference, the normal force from the rim of the pad and static friction; no other forces."
+            },
+            {
+              "key": "fbd_directions",
+              "points": 1,
+              "detail": "The force of the pressure difference horizontally towards the pad and the normal force horizontally away from the pad, both perpendicular to the surface of the glass; static friction upwards along the surface."
+            },
+            {
+              "key": "fbd_equations",
+              "points": 1,
+              "detail": "$N = F_\\text{p} = \\Delta p\\,A$ and $F_{\\mu 0} - mg = ma$, where $F_{\\mu 0} \\le \\mu_0 N$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\Delta p = \\dfrac{m(g + a)}{\\mu_0 A} \\approx 18.7\\,\\text{kPa}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Three significant figures and the unit $\\text{kPa}$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 5,
+          "text": "Use the manufacturer's instructions to assess whether the glazier can lift the pane in the upright position also in the rain, when the glass is wet.",
+          "criteria": [
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "On wet glass $\\dfrac{m(g + a)}{0.30 \\cdot A} \\approx 37\\,\\text{kPa}$ is needed, so the safety factor is $60 : 37 \\approx 1.6$."
+            },
+            {
+              "key": "conclusion",
+              "points": 2,
+              "detail": "No: when dry, the upright lift meets the instructions ($60 : 18.7 \\approx 3.2$) and the horizontal lift clearly ($5.4$), but when wet the safety factor stays below two."
+            },
+            {
+              "text": "Justifies why the upright position is more demanding: the force of the pressure is perpendicular to the surface of the glass, that is, horizontal, so the weight is carried only by friction, which is at most $\\mu_0$ times the normal force.",
+              "tag": "transfer",
+              "points": 2
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy3-4",
+        "concept": "fy4-5",
+        "communication": "fy4-6",
+        "transfer": "fy4-6"
+      }
+    }
+  ]
+}

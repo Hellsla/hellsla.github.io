@@ -1,5 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 678dc353273487b6
+CONTENT-HASH: cc10e5fca522a7b1
+
+## Delta review (2026-11-04, previous hash 678dc353273487b6)
+The only change is in the tilanteet figure: in lessons/units/fy9-ympyraliike/figures.py the label "Maa" moved from x=300 to x=328, and the redrawn SVG is inlined in unit.md (foreignObject x 280.5 → 308.5). `git diff HEAD` shows no other change in content/fi/units/fy9-ympyraliike or lessons/units/fy9-ympyraliike. No forces, vectors, equations or numbers changed. The label still names the Earth arc below the satellite panel, so the physics is unchanged. Still PASS.
 
 Round 2 (delta review of round 1 fixes; round 1 hash fc0aa5da26550049). Science review of fy9-ympyraliike.
 

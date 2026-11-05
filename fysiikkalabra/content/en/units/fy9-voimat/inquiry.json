@@ -1,0 +1,526 @@
+{
+  "version": 1,
+  "contribution": "The review lesson brings together Newton's laws, drawing free-body diagrams, weight, static and kinetic friction, the inclined plane, connected bodies and air resistance from module FY4 into one method (free-body diagram first, then the equations of motion) and practises matriculation-exam-type tasks on them: finding mistakes in free-body diagrams, equations of motion in components, tensions in connected bodies, a graph of measured data with a fit, and evaluating a friction experiment.",
+  "learn": [
+    "draw a free-body diagram and write the equations of motion for a new situation without help",
+    "solve friction, slope and connected-body tasks with Newton's laws",
+    "evaluate free-body diagrams, solutions and friction measurements with justification"
+  ],
+  "prior": [
+    "Force and counterforce act on different objects (chapter *Interaction and force: Newton's first and third laws*)",
+    "The net force is $\\Sigma\\overline{F} = m\\overline{a}$ and points in the direction of the acceleration (chapter *Newton's second law*)",
+    "A free-body diagram is drawn in eight steps, and components replace the force in the calculation (chapter *Free-body diagrams and the combined effect of forces*)",
+    "Kinetic friction is $F_\\mu = \\mu N$, and on a slope $N = mg\\cos\\alpha$ (chapter *Weight, friction and the inclined plane*)",
+    "Each connected body gets its own equation of motion (chapter *Equation of motion for connected bodies*)",
+    "At terminal velocity air resistance is as large as the weight (chapter *Air resistance and falling through air*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "On the way to the summer cottage a car pulls a trailer loaded with firewood. When they set off from the traffic lights, the car and the trailer accelerate together. By Newton's third law the trailer pulls the car backwards with a force as large as the force with which the car pulls the trailer forwards. In the matriculation exam a situation like this often begins with the words \"Draw a free-body diagram\".",
+      "question": "How can the car and the trailer set off if the forces they exert on each other are equal and opposite? Which forces decide the motion of the trailer?"
+    },
+    {
+      "id": "lt-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Diagnostic 1: a sliding puck",
+      "prompt": "An ice-hockey puck has left the stick and slides straight forwards on the ice. Air resistance is ignored. Which forces act on the puck while it slides?",
+      "choices": [
+        {
+          "text": "The weight, the normal force of the ice and a small friction backwards.",
+          "feedback": "Correct. Nothing pushes the puck forwards any more. The motion continues without a force, and a small friction slows it down gradually. Review if needed in the chapter *Interaction and force: Newton's first and third laws*.",
+          "correct": true
+        },
+        {
+          "text": "The weight, the normal force, friction and the force of the stick, which weakens.",
+          "feedback": "The stick acts on the puck only during contact. Nothing acts forwards on the sliding puck: a force is needed to change motion, not to keep it going. Review in the chapter *Interaction and force: Newton's first and third laws*."
+        },
+        {
+          "text": "The weight, the normal force and a force of motion that is larger than friction.",
+          "feedback": "There is no \"force of motion\", because it has no cause. The puck slows down, so the net force points backwards: horizontally there is only friction. Review in the chapter *Interaction and force: Newton's first and third laws*."
+        }
+      ]
+    },
+    {
+      "id": "lt-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Diagnostic 2: a collision",
+      "prompt": "A lorry and a small car collide. Which one does the larger force act on in the collision?",
+      "choices": [
+        {
+          "text": "On the lorry, because it is heavier and moves with a larger force.",
+          "feedback": "A moving object has no force that it carries with it. In the collision the vehicles act on each other, and by the third law the forces are equal. Review in the chapter *Interaction and force: Newton's first and third laws*."
+        },
+        {
+          "text": "On the car, because its velocity changes more in the collision.",
+          "feedback": "The velocity of the car changes more because its mass is smaller, not because the force is larger. Force and counterforce are equal. Review in the chapter *Interaction and force: Newton's first and third laws*."
+        },
+        {
+          "text": "An equal force on each, but in opposite directions.",
+          "feedback": "Correct. Force and counterforce are equal and opposite, and they act on different vehicles. The velocity of the car, which has the smaller mass, changes more. Review if needed in the chapter *Interaction and force: Newton's first and third laws*.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "lt-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Diagnostic 3: the lift stops",
+      "prompt": "A lift moves upwards and slows down to stop at the top floor. In which direction does the net force on the lift car point?",
+      "choices": [
+        {
+          "text": "Upwards, because the lift is still moving upwards.",
+          "feedback": "The net force points in the direction of the acceleration, not of the velocity. While rising and slowing down, the acceleration points downwards. Review in the chapter *Newton's second law*."
+        },
+        {
+          "text": "Downwards, because the speed decreases while moving upwards.",
+          "feedback": "Correct. The speed decreases, so the acceleration and the net force point downwards, although the car moves upwards. The force of the cable is smaller than the weight. Review if needed in the chapter *Newton's second law*.",
+          "correct": true
+        },
+        {
+          "text": "The net force is zero, because the lift is still moving.",
+          "feedback": "The net force is zero only when the velocity does not change. The velocity of the decelerating lift changes, so the net force is not zero. Review in the chapter *Newton's second law*."
+        }
+      ]
+    },
+    {
+      "id": "lt-4",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Diagnostic 4: an oblique pull",
+      "prompt": "A child pulls a sledge by a rope that rises obliquely upwards, and the sledge slides on horizontal snow. How do the normal force $N$ of the snow and the weight $G$ of the sledge compare?",
+      "choices": [
+        {
+          "text": "$N = G$, because the sledge does not move vertically.",
+          "feedback": "Vertically the sum of the forces is zero, but there are three vertical forces: the weight, the normal force and the vertical component of the rope's force. So $N = G - T\\sin\\alpha$. Review in the chapter *Free-body diagrams and the combined effect of forces*."
+        },
+        {
+          "text": "$N > G$, because the pull of the rope presses the sledge against the snow.",
+          "feedback": "The rope pulls the sledge obliquely *upwards*, so it lessens how hard the sledge presses against the snow. With an oblique push downwards the normal force would be larger than the weight. Review in the chapter *Free-body diagrams and the combined effect of forces*."
+        },
+        {
+          "text": "$N < G$, because the force of the rope has an upward component.",
+          "feedback": "Correct. Vertically $N + T\\sin\\alpha - G = 0$, so $N = G - T\\sin\\alpha$. Review if needed in the chapter *Free-body diagrams and the combined effect of forces*.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "lt-5",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Diagnostic 5: a hanging mass and a cart",
+      "prompt": "A cart is on a horizontal table, and a string tied to it runs over a pulley at the edge of the table to a hanging mass $m_2$. There is no friction. When the cart is released, the hanging mass descends with acceleration. How large is the tension $T$ in the string?",
+      "choices": [
+        {
+          "text": "$T = m_2 g$, because the weight of the hanging mass pulls the cart.",
+          "feedback": "The cart is pulled by the string, not by the weight of the hanging mass. If $T$ were $m_2 g$, the net force on the hanging mass would be zero and it would not accelerate. Review in the chapter *Equation of motion for connected bodies*."
+        },
+        {
+          "text": "$T < m_2 g$, because the hanging mass accelerates downwards.",
+          "feedback": "Correct. The equation of motion of the hanging mass is $m_2 g - T = m_2 a$, and a downward acceleration requires $T < m_2 g$. Review if needed in the chapter *Equation of motion for connected bodies*.",
+          "correct": true
+        },
+        {
+          "text": "$T > m_2 g$, because the string must also move the cart.",
+          "feedback": "The string moves the cart, but the hanging mass accelerates downwards, so the net force on it points downwards: $T$ is smaller than its weight. Review in the chapter *Equation of motion for connected bodies*."
+        }
+      ]
+    },
+    {
+      "id": "lt-6",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Diagnostic 6: static friction",
+      "prompt": "A cupboard is pushed horizontally with a force of $40\\,\\text{N}$, but it does not move. The largest possible value of static friction is $\\mu_0 N = 90\\,\\text{N}$. How large is the friction force on the cupboard?",
+      "choices": [
+        {
+          "text": "$90\\,\\text{N}$, because static friction is $\\mu_0 N$.",
+          "feedback": "$\\mu_0 N$ is the upper limit of static friction, not its value. The cupboard is at rest, so the friction is as large as the push. Review in the chapter *Weight, friction and the inclined plane*."
+        },
+        {
+          "text": "$40\\,\\text{N}$, because the net force is zero.",
+          "feedback": "Correct. Static friction adapts to the situation: the cupboard stays in place, so the friction cancels the push. Review if needed in the chapter *Weight, friction and the inclined plane*.",
+          "correct": true
+        },
+        {
+          "text": "$50\\,\\text{N}$, because $90\\,\\text{N} - 40\\,\\text{N}$ is left over.",
+          "feedback": "The difference only tells how much the push could still be increased before sliding. At rest the friction is as large as the push. Review in the chapter *Weight, friction and the inclined plane*."
+        },
+        {
+          "text": "Zero, because the cupboard does not slide or even move.",
+          "feedback": "Without friction the push would accelerate the cupboard. Static friction acts precisely because the surfaces tend to slide. Review in the chapter *Weight, friction and the inclined plane*."
+        }
+      ]
+    },
+    {
+      "id": "aineisto",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Two skydivers",
+      "source": "simulated",
+      "source_note": "The curves are values from the model of the simulation in the chapter *Air resistance and falling through air*, not measurements.",
+      "figure": "fy4-14/vt",
+      "text": "The graph shows the velocity of two skydivers falling in the same position as a function of time before the parachute is opened. The masses of the skydivers with their equipment are $60.0\\,\\text{kg}$ and $100.0\\,\\text{kg}$. The dashed line is the velocity without air resistance. First think about what the steepness of a curve tells about the acceleration and the net force. Answer below with the air resistance on the heavier skydiver.",
+      "question": {
+        "type": "numeric",
+        "fbd": "equations",
+        "prompt": "How large is the air resistance on the $100.0\\,\\text{kg}$ skydiver at the moment $t = 25\\,\\text{s}$? Answer in newtons.",
+        "answer": 981,
+        "unit": "N",
+        "tolerance": 0.02,
+        "hints": [
+          "What does the curve look like at $25\\,\\text{s}$? What does that tell about the acceleration?",
+          "When the velocity does not change, the net force is zero. Which two forces act on the skydiver?",
+          "The air resistance is as large as the weight: $F_\\text{v} = mg$."
+        ],
+        "mistakes": [
+          {
+            "value": 0,
+            "feedback": "The curve is horizontal, so the *net force* is zero, not the air resistance. The weight pulls the skydiver down all the time, and the air resistance cancels it."
+          },
+          {
+            "value": 588.6,
+            "feedback": "This is the weight of the $60.0\\,\\text{kg}$ skydiver. The question asks for the air resistance on the heavier skydiver."
+          },
+          {
+            "value": 6100,
+            "feedback": "You multiplied the mass by the velocity. The air resistance comes from the balance of forces: at terminal velocity $F_\\text{v} = mg$."
+          }
+        ],
+        "solution": "**Given:** mass $m = 100.0\\,\\text{kg}$; from the graph the velocity of the heavier skydiver is about $61\\,\\text{m/s}$ at $25\\,\\text{s}$ and the curve is horizontal; $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the air resistance $F_\\text{v}$ in newtons\n\n**Principle:** The acceleration is the steepness of the $(t, v)$ curve. When the curve is horizontal, the velocity does not change, so the acceleration and, by Newton's second law, the net force are zero. Only the weight downwards and the air resistance upwards act on the skydiver, so they are equal (chapter *Air resistance and falling through air*).\n\n**Reading the graph:** The $100\\,\\text{kg}$ curve has levelled off at about $61\\,\\text{m/s}$ already before $25\\,\\text{s}$, so it is horizontal there: the skydiver falls at terminal velocity.\n\n**Free-body diagram:** The skydiver as a rectangle, positive direction downwards. The weight $\\overline{G}$ from the centre downwards and the air resistance $\\overline{F}_\\text{v}$ equally long upwards. The downward velocity is marked separately, the acceleration is zero.\n```voimakuvio\nG 981\nF_v 981 ylös\na 0\nv alas\n```\n\n**Formula:** $mg - F_\\text{v} = ma = 0$, so $F_\\text{v} = mg$\n\n**Conversions:** None needed, the quantities are in base units.\n\n**Substitution:** $F_\\text{v} = 100.0\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 = 981\\,\\text{N}$\n\n**Answer:** $981\\,\\text{N}$, three significant figures like the acceleration of free fall $9.81\\,\\text{m/s}^2$.\n\n**Reasonableness:** The velocity does not affect the result directly: at terminal velocity the air resistance is always as large as the weight. The air resistance on the lighter skydiver at terminal velocity is $588.6\\,\\text{N}$, and that is why that skydiver's terminal velocity is smaller, about $48\\,\\text{m/s}$. At the start of the jump, at $t = 0$, the air resistance is zero and the curves are as steep as the dashed line, $a = g$."
+      }
+    },
+    {
+      "id": "teoriatiivistelma",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava",
+        "Virheet",
+        "Kertaa"
+      ]
+    },
+    {
+      "id": "virhe-rinne",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the mistake: a sledge on a slope",
+      "prompt": "A sledge ($25\\,\\text{kg}$ with the child) slides down a slope, the angle of inclination of the slope is $20^\\circ$ and the coefficient of kinetic friction $0.10$. A student calculated the friction: \"$F_\\mu = \\mu m g = 0.10 \\cdot 25\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\approx 25\\,\\text{N}$.\" What is wrong in the solution?",
+      "choices": [
+        {
+          "text": "The friction should be $\\mu mg\\sin\\alpha \\approx 8.4\\,\\text{N}$, because the motion is along the slope.",
+          "feedback": "Friction is along the slope, but its magnitude depends on the normal force, which is perpendicular to the slope: $N = mg\\cos\\alpha$. The component $mg\\sin\\alpha$ takes the sledge down the slope."
+        },
+        {
+          "text": "For a sliding sledge the coefficient of static friction should be used, not the coefficient of kinetic friction.",
+          "feedback": "The sledge slides, so kinetic friction $\\mu N$ acts on it. The coefficient of static friction only gives the upper limit of static friction for an object that does not slide."
+        },
+        {
+          "text": "The normal force is not $mg$: on a slope $N = mg\\cos\\alpha$, so $F_\\mu \\approx 23\\,\\text{N}$.",
+          "feedback": "Correct. Only the weight and the normal force act perpendicular to the surface, so $N = mg\\cos 20^\\circ$ and $F_\\mu = 0.10 \\cdot 25\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\cdot \\cos 20^\\circ \\approx 23\\,\\text{N}$.",
+          "correct": true
+        },
+        {
+          "text": "There is no mistake in the solution, because the mass and $g$ are the same on a slope too.",
+          "feedback": "The mass and $g$ are the same, but the normal force is not as large as the weight: on a slope only the perpendicular component of the weight presses the sledge against the snow."
+        }
+      ]
+    },
+    {
+      "id": "hihna",
+      "stage": "sovella",
+      "type": "interpret",
+      "title": "Find the mistake: a box on a belt",
+      "fbd": "error",
+      "text": "A conveyor belt starts moving to the right and accelerates. A cardboard box accelerates with the belt without sliding. Air resistance is ignored. A student drew the free-body diagram of the box.\n\n<svg viewBox=\"0 0 600 340\" role=\"img\" aria-label=\"Two pictures. On the left a situation picture: a cardboard box is on a horizontal conveyor belt, which starts moving to the right and accelerates. The box does not slide on the belt. Above the box a blue velocity arrow and an orange acceleration arrow point to the right. On the right the free-body diagram of the box drawn by the student, the box as a rectangle: the weight G from the centre downwards, the normal force N from the bottom surface upwards as long as the weight, and the friction force F mu from the left corner of the bottom surface to the left. Next to the diagram an orange acceleration arrow points to the right.\" style=\"max-width:100%;font-size:28px\">\n  <foreignObject x=\"46\" y=\"5\" width=\"168\" height=\"34\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:28px;color:#6b7480\">$\\text{situation picture}$</div></foreignObject>\n  <rect x=\"26\" y=\"236\" width=\"220\" height=\"22\" rx=\"11\" fill=\"#495057\" stroke=\"#1f2933\" stroke-width=\"2.5\"/>\n  <circle cx=\"37\" cy=\"247\" r=\"9\" fill=\"#c4ccd4\" stroke=\"#1f2933\" stroke-width=\"2\"/>\n  <circle cx=\"235\" cy=\"247\" r=\"9\" fill=\"#c4ccd4\" stroke=\"#1f2933\" stroke-width=\"2\"/>\n  <line x1=\"56\" y1=\"240\" x2=\"66\" y2=\"240\" stroke=\"#868e96\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n  <line x1=\"82\" y1=\"240\" x2=\"92\" y2=\"240\" stroke=\"#868e96\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n  <line x1=\"108\" y1=\"240\" x2=\"118\" y2=\"240\" stroke=\"#868e96\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n  <line x1=\"134\" y1=\"240\" x2=\"144\" y2=\"240\" stroke=\"#868e96\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n  <line x1=\"160\" y1=\"240\" x2=\"170\" y2=\"240\" stroke=\"#868e96\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n  <line x1=\"186\" y1=\"240\" x2=\"196\" y2=\"240\" stroke=\"#868e96\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n  <line x1=\"212\" y1=\"240\" x2=\"222\" y2=\"240\" stroke=\"#868e96\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n  <rect x=\"54\" y=\"258\" width=\"10\" height=\"50\" fill=\"#6c757d\" stroke=\"#1f2933\" stroke-width=\"2\"/>\n  <rect x=\"208\" y=\"258\" width=\"10\" height=\"50\" fill=\"#6c757d\" stroke=\"#1f2933\" stroke-width=\"2\"/>\n  <line x1=\"16\" y1=\"308\" x2=\"256\" y2=\"308\" stroke=\"#1f2933\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n  <line x1=\"16\" y1=\"308\" x2=\"6\" y2=\"320\" stroke=\"#6b7480\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"32\" y1=\"308\" x2=\"22\" y2=\"320\" stroke=\"#6b7480\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"48\" y1=\"308\" x2=\"38\" y2=\"320\" stroke=\"#6b7480\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"64\" y1=\"308\" x2=\"54\" y2=\"320\" stroke=\"#6b7480\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"80\" y1=\"308\" x2=\"70\" y2=\"320\" stroke=\"#6b7480\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"96\" y1=\"308\" x2=\"86\" y2=\"320\" stroke=\"#6b7480\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"112\" y1=\"308\" x2=\"102\" y2=\"320\" stroke=\"#6b7480\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"128\" y1=\"308\" x2=\"118\" y2=\"320\" stroke=\"#6b7480\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"144\" y1=\"308\" x2=\"134\" y2=\"320\" stroke=\"#6b7480\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"160\" y1=\"308\" x2=\"150\" y2=\"320\" stroke=\"#6b7480\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"176\" y1=\"308\" x2=\"166\" y2=\"320\" stroke=\"#6b7480\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"192\" y1=\"308\" x2=\"182\" y2=\"320\" stroke=\"#6b7480\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"208\" y1=\"308\" x2=\"198\" y2=\"320\" stroke=\"#6b7480\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"224\" y1=\"308\" x2=\"214\" y2=\"320\" stroke=\"#6b7480\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"240\" y1=\"308\" x2=\"230\" y2=\"320\" stroke=\"#6b7480\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <rect x=\"96\" y=\"172\" width=\"84\" height=\"64\" rx=\"3\" fill=\"#f1dfb5\" stroke=\"#a97a35\" stroke-width=\"2.5\"/>\n  <line x1=\"96\" y1=\"192\" x2=\"180\" y2=\"192\" stroke=\"#a97a35\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <line x1=\"138\" y1=\"172\" x2=\"138\" y2=\"192\" stroke=\"#a97a35\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <line x1=\"110\" y1=\"120\" x2=\"172\" y2=\"120\" stroke=\"#1971c2\" stroke-width=\"2.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"174\" y1=\"120\" x2=\"162\" y2=\"126\" stroke=\"#1971c2\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <line x1=\"174\" y1=\"120\" x2=\"162\" y2=\"114\" stroke=\"#1971c2\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <foreignObject x=\"177.5\" y=\"103\" width=\"37\" height=\"34\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:28px;color:#1971c2\">$\\overline{v}$</div></foreignObject>\n  <line x1=\"110\" y1=\"84\" x2=\"172\" y2=\"84\" stroke=\"#e8590c\" stroke-width=\"2.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"174\" y1=\"84\" x2=\"162\" y2=\"90\" stroke=\"#e8590c\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <line x1=\"174\" y1=\"84\" x2=\"162\" y2=\"78\" stroke=\"#e8590c\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <foreignObject x=\"177.5\" y=\"67\" width=\"37\" height=\"34\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:28px;color:#e8590c\">$\\overline{a}$</div></foreignObject>\n  <line x1=\"276\" y1=\"20\" x2=\"276\" y2=\"320\" stroke=\"#c9c2b2\" stroke-width=\"1.5\" stroke-linecap=\"butt\" stroke-dasharray=\"6 6\"/>\n  <foreignObject x=\"373\" y=\"5\" width=\"154\" height=\"34\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:28px;color:#6b7480\">$\\text{free-body diagram}$</div></foreignObject>\n  <line x1=\"500\" y1=\"170\" x2=\"560\" y2=\"170\" stroke=\"#e8590c\" stroke-width=\"2.5\" stroke-linecap=\"butt\"/>\n  <path d=\"M549,176.5 L562,170 L549,163.5\" fill=\"none\" stroke=\"#e8590c\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <foreignObject x=\"559.5\" y=\"135\" width=\"37\" height=\"34\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:28px;color:#e8590c\">$\\overline{a}$</div></foreignObject>\n  <rect x=\"380\" y=\"145\" width=\"100\" height=\"70\" fill=\"#f6f1e6\" stroke=\"#1f2933\" stroke-width=\"2.5\"/>\n  <line x1=\"430\" y1=\"180\" x2=\"430\" y2=\"253\" stroke=\"#c92a2a\" stroke-width=\"4\" stroke-linecap=\"butt\"/>\n  <path d=\"M430,270 L422,252 L438,252 Z\" fill=\"#c92a2a\" stroke-linejoin=\"round\"/>\n  <foreignObject x=\"393.5\" y=\"257\" width=\"37\" height=\"34\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:28px;color:#c92a2a\">$\\overline{G}$</div></foreignObject>\n  <line x1=\"452\" y1=\"215\" x2=\"452\" y2=\"142\" stroke=\"#c92a2a\" stroke-width=\"4\" stroke-linecap=\"butt\"/>\n  <path d=\"M452,125 L460,143 L444,143 Z\" fill=\"#c92a2a\" stroke-linejoin=\"round\"/>\n  <foreignObject x=\"453.5\" y=\"108\" width=\"37\" height=\"34\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:28px;color:#c92a2a\">$\\overline{N}$</div></foreignObject>\n  <line x1=\"380\" y1=\"215\" x2=\"370\" y2=\"215\" stroke=\"#c92a2a\" stroke-width=\"4\" stroke-linecap=\"butt\"/>\n  <path d=\"M353,215 L371,207 L371,223 Z\" fill=\"#c92a2a\" stroke-linejoin=\"round\"/>\n  <foreignObject x=\"321\" y=\"180\" width=\"52\" height=\"34\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:28px;color:#c92a2a\">$\\overline{F}_{\\mu}$</div></foreignObject>\n</svg>",
+      "question": {
+        "type": "choice",
+        "prompt": "What is wrong in the student's free-body diagram?",
+        "choices": [
+          {
+            "text": "The diagram is missing the force of the belt that moves the box forwards.",
+            "feedback": "The belt acts on the box with only two forces: the normal force and friction. \"The force of the belt moving it forwards\" is exactly the friction, and in the diagram it points the wrong way."
+          },
+          {
+            "text": "The friction must point to the right, because only it can accelerate the box.",
+            "feedback": "Correct. Friction is the only horizontal force, and the box accelerates to the right, so static friction must point to the right. The belt tends to slide forwards from under the box, and static friction prevents it.",
+            "correct": true
+          },
+          {
+            "text": "The normal force must be longer than the weight, because the box accelerates.",
+            "feedback": "The box accelerates horizontally, so vertically the acceleration is zero and the normal force is as large as the weight. This is correct in the diagram."
+          },
+          {
+            "text": "The acceleration arrow does not belong next to a free-body diagram at all.",
+            "feedback": "The acceleration may be marked next to the object in its own colour, as long as it is not a force. This has been done correctly in the diagram; the mistake is in the direction of one force."
+          }
+        ]
+      }
+    },
+    {
+      "id": "suodatin",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Which graph: a coffee filter",
+      "prompt": "A light coffee filter is dropped from rest, and it soon reaches its terminal velocity. How does the acceleration of the filter change as a function of time while the filter falls?",
+      "choices": [
+        {
+          "text": "The acceleration stays at $g$ until it suddenly drops to zero.",
+          "feedback": "Air resistance grows gradually with the speed, so the net force and the acceleration decrease gradually and do not stop suddenly."
+        },
+        {
+          "text": "The acceleration grows from zero to $g$ as the speed grows.",
+          "feedback": "This describes the growth of the speed wrongly: at the start the speed is zero but the acceleration is at its largest, $g$, because there is no air resistance yet. The acceleration decreases and does not grow."
+        },
+        {
+          "text": "The acceleration is zero all the time, because the filter is light.",
+          "feedback": "Even a light filter has a weight, and at the start it is the only force. So the filter accelerates at first, until the air resistance grows as large as the weight."
+        },
+        {
+          "text": "The acceleration starts at $g$ and decreases gradually towards zero.",
+          "feedback": "Correct. At the start there is no air resistance, so $a = g$. As the speed grows, the air resistance grows and the net force decreases, until at terminal velocity $a = 0$.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "kaksi-kappaletta",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Justified claim: pulley",
+      "prompt": "Bodies with masses $2.0\\,\\text{kg}$ and $3.0\\,\\text{kg}$ hang from the ends of a string that runs over a light, frictionless pulley. The bodies are released from rest. Which claim about the tension $T$ in the string is correct?",
+      "choices": [
+        {
+          "text": "$T = 29.4\\,\\text{N}$, because the weight of the heavier body pulls the string.",
+          "feedback": "The heavier body accelerates downwards, so the net force on it points downwards and $T$ is smaller than its weight."
+        },
+        {
+          "text": "$T = 49.1\\,\\text{N}$, because the string holds up both bodies.",
+          "feedback": "The sum of the weights would be the force on the pulley's mounting at rest, not the tension in the string. The string pulls each body with the force $T$, which lies between the weights."
+        },
+        {
+          "text": "$T$ lies between the weights $19.6\\,\\text{N}$ and $29.4\\,\\text{N}$.",
+          "feedback": "Correct. The lighter body accelerates upwards, so $T > m_1 g$, and the heavier one downwards, so $T < m_2 g$. From the equations $T = \\tfrac{2 m_1 m_2}{m_1 + m_2}\\,g \\approx 23.5\\,\\text{N}$.",
+          "correct": true
+        },
+        {
+          "text": "$T = 9.8\\,\\text{N}$, because the difference of the weights moves the bodies.",
+          "feedback": "The difference of the weights, $9.8\\,\\text{N}$, is the net force on the whole system, which accelerates both bodies. The lighter body would not rise if $T$ were smaller than its weight."
+        }
+      ]
+    },
+    {
+      "id": "nosturi",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "A crane lowers a load",
+      "fbd": "equations",
+      "prompt": "A construction crane lowers a $650\\,\\text{kg}$ concrete element vertically downwards. Before it reaches the ground the crane brakes: the element still moves downwards, but its speed decreases steadily, and the deceleration is $0.60\\,\\text{m/s}^2$. How large is the tension in the cable during the braking? Answer in kilonewtons.",
+      "answer": 6.7665,
+      "unit": "kN",
+      "tolerance": 0.02,
+      "hints": [
+        "In which direction does the acceleration point when a load moving downwards slows down?",
+        "The acceleration points upwards, so the net force points upwards: $T - mg = ma$, with upwards positive.",
+        "$T = m(g + a) = 650\\,\\text{kg} \\cdot (9.81 + 0.60)\\,\\text{m/s}^2$."
+      ],
+      "mistakes": [
+        {
+          "value": 5.9865,
+          "feedback": "The direction of the acceleration is wrong. The load moves downwards but slows down, so the acceleration and the net force point *upwards*: $T$ is larger than the weight."
+        },
+        {
+          "value": 6.3765,
+          "feedback": "This is the weight of the element. The force of the cable is as large as the weight only when the velocity does not change; during braking the net force is not zero."
+        },
+        {
+          "value": 0.39,
+          "feedback": "You calculated only the net force $ma$. The cable must also hold up the weight: $T = mg + ma$."
+        }
+      ],
+      "solution": "**Given:** mass $m = 650\\,\\text{kg}$, deceleration $0.60\\,\\text{m/s}^2$ (the load moves downwards and slows down), $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the tension $T$ in the cable in kilonewtons\n\n**Principle:** The element is chosen as the object. The Earth (weight) and the cable (tension) act on it. The velocity points downwards and decreases, so the acceleration points upwards, and by Newton's second law the net force also points upwards (chapter *Newton's second law*).\n\n**Free-body diagram:** The element as a rectangle, positive direction upwards. The weight $\\overline{G}$ from the centre downwards and the tension of the cable $\\overline{T}$ from the top surface upwards, longer than the weight. The downward velocity and the upward acceleration are marked separately.\n```voimakuvio\nG 6376,5\nT 6766,5 90\na ylös\nv alas\n```\n\n**Formula:** $T - mg = ma$, so $T = m(g + a)$\n\n**Conversions:** The acceleration points upwards, so $a = +0.60\\,\\text{m/s}^2$. Finally $1\\,\\text{N} = 0.001\\,\\text{kN}$.\n\n**Substitution:** $T = 650\\,\\text{kg} \\cdot (9.81\\,\\text{m/s}^2 + 0.60\\,\\text{m/s}^2) = 650\\,\\text{kg} \\cdot 10.41\\,\\text{m/s}^2 = 6766.5\\,\\text{N} = 6.7665\\,\\text{kN}$\n\n**Answer:** $6.8\\,\\text{kN}$, two significant figures like the deceleration $0.60\\,\\text{m/s}^2$.\n\n**Reasonableness:** The weight is $650\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\approx 6.38\\,\\text{kN}$. During braking the cable must both hold up the weight and slow the load down, so $T$ is about $6\\,\\%$ larger than the weight, as it should be when $a$ is about $6\\,\\%$ of $g$."
+    },
+    {
+      "id": "vinoveto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Pulling a sledge at an angle",
+      "fbd": "equations",
+      "prompt": "A sledge with a mass of $18\\,\\text{kg}$ including its load is pulled on horizontal snow at a constant velocity. The pull of the rope is $60\\,\\text{N}$, and the rope is at an angle of $25^\\circ$ to the horizontal. Determine the coefficient of kinetic friction between the sledge and the snow.",
+      "answer": 0.35959,
+      "unit": "",
+      "tolerance": 0.03,
+      "hints": [
+        "Constant velocity: the sum of the forces is zero along both axes. Which four forces act on the sledge?",
+        "Horizontally $T\\cos\\alpha = F_\\mu$, vertically $N + T\\sin\\alpha = mg$.",
+        "$N = mg - T\\sin\\alpha$ and $\\mu = \\dfrac{T\\cos\\alpha}{mg - T\\sin\\alpha}$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.30795,
+          "feedback": "You used the weight $mg$ as the normal force. The vertical component of the rope holds up part of the sledge, so $N = mg - T\\sin\\alpha$ is smaller than the weight."
+        },
+        {
+          "value": 0.33979,
+          "feedback": "You divided the whole pull by the weight. The friction is as large as the *horizontal component* of the pull, $T\\cos\\alpha$, and the normal force is $mg - T\\sin\\alpha$."
+        },
+        {
+          "value": 0.16773,
+          "feedback": "You used the vertical component of the pull, $T\\sin\\alpha$, as the friction. Friction is horizontal, so it cancels the horizontal component of the pull, $T\\cos\\alpha$."
+        }
+      ],
+      "solution": "**Given:** mass $m = 18\\,\\text{kg}$, pull $T = 60\\,\\text{N}$, angle $\\alpha = 25^\\circ$, velocity constant, $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the coefficient of kinetic friction $\\mu$\n\n**Principle:** The velocity is constant, so by Newton's first law the sum of the forces is zero along both axes. The force of the rope is oblique, so it is split into components. The sledge slides, so the friction is kinetic friction $\\mu N$ (chapters *Free-body diagrams and the combined effect of forces* and *Weight, friction and the inclined plane*).\n\n**Free-body diagram:** The sledge as a rectangle, the $x$ axis to the right and the $y$ axis upwards. The weight $\\overline{G}$ from the centre downwards, the normal force $\\overline{N}$ from the bottom surface upwards, the tension of the rope $\\overline{T}$ from the front end obliquely upwards and kinetic friction $\\overline{F}_\\mu$ from the rear corner of the bottom surface backwards.\n```voimakuvio\npinta 0\nG 176,58\nN 151,22\nT 60 25\nF_mu 54,38 vasen\na 0\nv oikea\n```\n\n**Formula:** $x$: $T\\cos\\alpha - F_\\mu = 0$ and $y$: $N + T\\sin\\alpha - mg = 0$. With $F_\\mu = \\mu N$ we get $\\mu = \\dfrac{T\\cos\\alpha}{mg - T\\sin\\alpha}$\n\n**Conversions:** None needed, the quantities are in base units.\n\n**Substitution:** $T\\cos\\alpha = 60\\,\\text{N} \\cdot \\cos 25^\\circ = 54.38\\,\\text{N}$ and $N = 18\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 - 60\\,\\text{N} \\cdot \\sin 25^\\circ = 176.58\\,\\text{N} - 25.36\\,\\text{N} = 151.22\\,\\text{N}$, so $\\mu = \\dfrac{54.38\\,\\text{N}}{151.22\\,\\text{N}} = 0.3596$\n\n**Answer:** $\\mu \\approx 0.36$, two significant figures like the mass $18\\,\\text{kg}$ and the pull $60\\,\\text{N}$. A coefficient of friction has no unit.\n\n**Reasonableness:** The coefficient is smaller than $1$ and larger than the few hundredths of a waxed ski, which suits an ordinary plastic sledge in soft snow. If the weight were used as the normal force, the coefficient would be about $0.31$, so the effect of the oblique pull is about $15\\,\\%$."
+    },
+    {
+      "id": "pulkkamaki",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "A steep sledging hill",
+      "fbd": "equations",
+      "prompt": "A sledge slides down a steep hill. The angle of inclination of the hill is $28^\\circ$, and the coefficient of kinetic friction between the sledge and the snow is $0.15$. Air resistance is ignored. How large is the acceleration of the sledge?",
+      "answer": 3.3062,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "hints": [
+        "Choose the $x$ axis down the slope and the $y$ axis perpendicular to the slope. What are the components of the weight?",
+        "$y$: $N = mg\\cos\\alpha$. $x$: $mg\\sin\\alpha - \\mu N = ma$.",
+        "The mass cancels: $a = g(\\sin\\alpha - \\mu\\cos\\alpha)$."
+      ],
+      "mistakes": [
+        {
+          "value": 4.6055,
+          "feedback": "You forgot the friction. The sledge slides, so kinetic friction $\\mu N$ holds it back, pointing up the slope."
+        },
+        {
+          "value": 3.134,
+          "feedback": "You used the weight $mg$ as the normal force. On a slope $N = mg\\cos\\alpha$, because only the perpendicular component of the weight presses the sledge against the snow."
+        },
+        {
+          "value": 5.9045,
+          "feedback": "Friction points up the slope, because the sledge slides down, so it reduces the acceleration: $a = g(\\sin\\alpha - \\mu\\cos\\alpha)$."
+        }
+      ],
+      "solution": "**Given:** angle of inclination $\\alpha = 28^\\circ$, coefficient of kinetic friction $\\mu = 0.15$, $g = 9.81\\,\\text{m/s}^2$; air resistance is left out\n\n**Find:** the acceleration $a$ of the sledge\n\n**Principle:** The Earth (weight) and the snow (normal force and kinetic friction) act on the sledge. The sledge slides down, so friction points up the slope. Newton's second law is written for an axis along the slope and an axis perpendicular to it; perpendicular to the slope the acceleration is zero (chapter *Weight, friction and the inclined plane*).\n\n**Free-body diagram:** The sledge as a rectangle parallel to the slope, the $x$ axis down the slope. The weight $\\overline{G}$ from the centre straight down, the normal force $\\overline{N}$ from the bottom surface perpendicular to the slope, outwards, and kinetic friction $\\overline{F}_\\mu$ from the upper corner of the bottom surface up the slope. The components of the weight with dashed lines.\n```voimakuvio\npinta -28\nG 100\nN 88,29\nF_mu 13,24 ylös\na alas\nakselit -28\nkomponentit G\n```\n\n**Formula:** $y$: $N - mg\\cos\\alpha = 0$ and $x$: $mg\\sin\\alpha - \\mu N = ma$, so $a = g(\\sin\\alpha - \\mu\\cos\\alpha)$\n\n**Conversions:** None needed. The mass is not needed, because it cancels.\n\n**Substitution:** $a = 9.81\\,\\text{m/s}^2 \\cdot (\\sin 28^\\circ - 0.15 \\cdot \\cos 28^\\circ) = 9.81\\,\\text{m/s}^2 \\cdot (0.4695 - 0.1324) = 3.306\\,\\text{m/s}^2$\n\n**Answer:** $a \\approx 3.3\\,\\text{m/s}^2$, two significant figures like the coefficient of friction $0.15$.\n\n**Reasonableness:** Without friction the acceleration would be $g\\sin 28^\\circ \\approx 4.6\\,\\text{m/s}^2$, and friction reduces it by about a quarter. The result is smaller than $g$, as it should be on a slope. In the free-body diagram the weight is $100$ units, so the lengths of the arrows are to scale."
+    },
+    {
+      "id": "lentopallo",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "A volleyball hit upwards",
+      "fbd": "equations",
+      "prompt": "A volleyball ($270\\,\\text{g}$) is hit straight upwards. At one moment during the rise the air resistance on the ball is $0.60\\,\\text{N}$. How large is the acceleration of the ball at that moment?",
+      "answer": 12.032,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "hints": [
+        "In which direction does the air resistance point when the ball rises?",
+        "The weight and the air resistance both point downwards. Choose downwards as the positive direction: $mg + F_\\text{v} = ma$.",
+        "$a = g + \\dfrac{F_\\text{v}}{m}$, with the mass in kilograms."
+      ],
+      "mistakes": [
+        {
+          "value": 7.5878,
+          "feedback": "Air resistance points against the velocity. For a rising ball it points *downwards*, in the same direction as the weight, so the acceleration is larger than $g$."
+        },
+        {
+          "value": 2.2222,
+          "feedback": "You calculated only the part due to air resistance. The weight also accelerates the ball downwards: $a = g + F_\\text{v} : m$."
+        },
+        {
+          "value": 9.81222,
+          "feedback": "The mass must be converted into kilograms: $270\\,\\text{g} = 0.270\\,\\text{kg}$."
+        }
+      ],
+      "solution": "**Given:** mass $m = 270\\,\\text{g}$, air resistance $F_\\text{v} = 0.60\\,\\text{N}$, the ball rises, $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the acceleration $a$ of the ball\n\n**Principle:** After the hit only the Earth (weight) and the air (air resistance) act on the ball. Air resistance points against the velocity, so for a rising ball it points downwards together with the weight. The net force and the acceleration point downwards (chapter *Air resistance and falling through air*).\n\n**Free-body diagram:** The ball as a rectangle, positive direction downwards. The weight $\\overline{G}$ from the centre downwards and the air resistance $\\overline{F}_\\text{v}$ downwards. The upward velocity and the downward acceleration are marked separately.\n```voimakuvio\nG 2,6487\nF_v 0,60 alas\na alas\nv ylös\n```\n\n**Formula:** $mg + F_\\text{v} = ma$, so $a = g + \\dfrac{F_\\text{v}}{m}$\n\n**Conversions:** $270\\,\\text{g} = 270 \\cdot 0.001\\,\\text{kg} = 0.270\\,\\text{kg}$\n\n**Substitution:** $a = 9.81\\,\\text{m/s}^2 + \\dfrac{0.60\\,\\text{N}}{0.270\\,\\text{kg}} = 9.81\\,\\text{m/s}^2 + 2.222\\,\\text{m/s}^2 = 12.03\\,\\text{m/s}^2$\n\n**Answer:** $a \\approx 12\\,\\text{m/s}^2$ downwards, two significant figures like the air resistance $0.60\\,\\text{N}$.\n\n**Reasonableness:** The acceleration is larger than $g$, because both forces slow the rise: the ball stops sooner than without air resistance. The air resistance is about a fifth of the weight $2.65\\,\\text{N}$, which suits a light ball hit hard."
+    },
+    {
+      "id": "lisaa",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "At the end of the lesson there are matriculation-exam-style tasks. Write the solution in your notebook or on the computer as in the exam: free-body diagram first, then the equations of motion. Only then assess your solution with the model answer and the marking scheme."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "A car drives up a straight hill at a constant speed of $60\\,\\text{km/h}$. Which claim about the forces acting on the car is correct?",
+      "choices": [
+        {
+          "text": "The net force points uphill, because the car moves uphill.",
+          "feedback": "The net force points in the direction of the acceleration. At a constant velocity the acceleration is zero, so the net force is zero too. Review in the chapter *Newton's second law*."
+        },
+        {
+          "text": "The net force is zero, because the speed and direction of the car do not change.",
+          "feedback": "Correct. The velocity does not change, so by the first law the net force is zero: the force moving the car forwards is as large as the air resistance, the rolling resistance and $mg\\sin\\alpha$ together.",
+          "correct": true
+        },
+        {
+          "text": "The net force points downhill, because the weight pulls the car downwards.",
+          "feedback": "The component of the weight along the slope pulls downhill, but the force moving the car forwards cancels it and the resistive forces. The velocity does not change, so the net force is zero. Review in the chapter *Weight, friction and the inclined plane*."
+        }
+      ],
+      "practice": "Review the first law in the chapter [*Interaction and force: Newton's first and third laws*](fy4-3.html) and the forces on a slope in the chapter [*Weight, friction and the inclined plane*](fy4-6.html)."
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculation",
+      "fbd": "equations",
+      "prompt": "Box A ($30\\,\\text{kg}$) and box B ($20\\,\\text{kg}$) are side by side on a horizontal floor. A is pushed horizontally with a force of $120\\,\\text{N}$, and A pushes B ahead of it. The coefficient of kinetic friction between each box and the floor is $0.15$. How large is the force with which A pushes B?",
+      "answer": 48.0,
+      "unit": "N",
+      "tolerance": 0.02,
+      "hints": [
+        "The boxes move together. First calculate the acceleration of the whole system: which horizontal forces are external?",
+        "$a = \\dfrac{F - \\mu(m_\\text{A} + m_\\text{B})g}{m_\\text{A} + m_\\text{B}}$. Then draw the free-body diagram of B alone.",
+        "The equation of motion of B: $P - \\mu m_\\text{B} g = m_\\text{B} a$."
+      ],
+      "mistakes": [
+        {
+          "value": 120,
+          "feedback": "The push acts on A, not on B. Only the force $P$ of A acts on B, and it is smaller, because part of the push goes into accelerating A and into A's friction."
+        },
+        {
+          "value": 18.57,
+          "feedback": "You calculated only the net force on B, $m_\\text{B} a$. A must also overcome the friction on B, $\\mu m_\\text{B} g$."
+        },
+        {
+          "value": 72,
+          "feedback": "This is A's share of the mass multiplied by the push. The force on B comes from B's own equation of motion."
+        }
+      ],
+      "practice": "Review a free-body diagram and an equation of motion for each body in the chapter [*Equation of motion for connected bodies*](fy4-13.html) and friction in the chapter [*Weight, friction and the inclined plane*](fy4-6.html).",
+      "solution": "**Given:** $m_\\text{A} = 30\\,\\text{kg}$, $m_\\text{B} = 20\\,\\text{kg}$, push $F = 120\\,\\text{N}$, coefficient of kinetic friction $\\mu = 0.15$ for both, $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the force $P$ with which A pushes B\n\n**Principle:** The boxes move together, so they have the same acceleration. The acceleration comes from the whole system, in which the forces between A and B are internal and cancel each other (third law). Then B alone is chosen as the object, and the force of A becomes external (chapter *Equation of motion for connected bodies*).\n\n**Free-body diagram:** Box B as a rectangle, positive direction to the right. The weight $\\overline{G}$ from the centre downwards, the normal force $\\overline{N}$ from the bottom surface upwards, the push of A $\\overline{P}$ from the left side to the right and kinetic friction $\\overline{F}_\\mu$ from the rear corner of the bottom surface to the left.\n```voimakuvio\npinta 0\nG 196,2\nN 196,2\nP 48 0 työntö @vasen\nF_mu 29,43 vasen\na oikea\n```\n\n**Formula:** System: $F - \\mu(m_\\text{A} + m_\\text{B})g = (m_\\text{A} + m_\\text{B})a$. B: $P - \\mu m_\\text{B} g = m_\\text{B} a$, so $P = m_\\text{B}(a + \\mu g) = \\dfrac{m_\\text{B}}{m_\\text{A} + m_\\text{B}}\\,F$\n\n**Conversions:** None needed, the quantities are in base units.\n\n**Substitution:** $a = \\dfrac{120\\,\\text{N} - 0.15 \\cdot 50\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2}{50\\,\\text{kg}} = \\dfrac{46.425\\,\\text{N}}{50\\,\\text{kg}} = 0.9285\\,\\text{m/s}^2$ and $P = 20\\,\\text{kg} \\cdot (0.9285\\,\\text{m/s}^2 + 1.4715\\,\\text{m/s}^2) = 48.0\\,\\text{N}$\n\n**Answer:** $P \\approx 48\\,\\text{N}$, two significant figures like the coefficient of friction $0.15$.\n\n**Reasonableness:** When the coefficient of friction is the same, B gets the same fraction of the push as its fraction of the total mass: $\\tfrac{20}{50} \\cdot 120\\,\\text{N} = 48\\,\\text{N}$. The force is smaller than the push $120\\,\\text{N}$, as it should be. A pushes B with a force of $48\\,\\text{N}$, and B pushes A backwards with a force of the same magnitude."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain",
+      "prompt": "A heavy and a light wooden box, whose bottoms are of the same wood, are on a plank. The plank is tilted slowly. Explain with a free-body diagram and an equation of motion why the boxes start to slide at the same angle of inclination, although a larger weight acts on the heavier one.",
+      "criteria": [
+        "The answer says that the component of the weight $mg\\sin\\alpha$, which is proportional to the mass, pulls the box down the slope.",
+        "The answer says that the normal force is $N = mg\\cos\\alpha$, and so the upper limit of static friction $\\mu_0 mg\\cos\\alpha$ is also proportional to the mass.",
+        "The answer writes the condition for sliding $mg\\sin\\alpha = \\mu_0 mg\\cos\\alpha$ and states that the mass cancels: $\\tan\\alpha_0 = \\mu_0$.",
+        "The answer states that the limiting angle depends only on the coefficient of static friction of the surfaces, and mentions the assumption of the model (friction does not depend on the area)."
+      ],
+      "model": "The box is chosen as the object. The forces on it are the weight $\\overline{G}$ straight down, the normal force of the plank $\\overline{N}$ perpendicular to the plank and static friction $\\overline{F}_\\mu$ up the plank. With the $x$ axis along the plank, the component of the weight $mg\\sin\\alpha$ tends to take the box down, and perpendicular to the plank $N = mg\\cos\\alpha$. Static friction can be at most $\\mu_0 N = \\mu_0 mg\\cos\\alpha$. The box starts to slide when $mg\\sin\\alpha$ grows as large as this upper limit: $mg\\sin\\alpha_0 = \\mu_0 mg\\cos\\alpha_0$. For the heavier box both the component pulling it down and the upper limit of friction are larger, in the same ratio as the mass. The mass cancels, and $\\tan\\alpha_0 = \\mu_0$: the limiting angle depends only on the coefficient of static friction of the surfaces. The result holds in the model $F_{\\mu 0} \\le \\mu_0 N$, in which friction does not depend on the area of the contact surface.",
+      "practice": "Review the forces on a slope and the limiting angle in the chapter [*Weight, friction and the inclined plane*](fy4-6.html)."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally two quick questions. Answer on your own first and only then open the answer."
+    }
+  ]
+}

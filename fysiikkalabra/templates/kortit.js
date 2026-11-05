@@ -4,7 +4,7 @@
    { [card id]: { tila: "osasin" | "kertaa", osasinPutki: n, muokattu: ms } }. "Kertaa myöhemmin" (or "Lisää
    kertauspakkaan") puts a card in the student's review deck (tila "kertaa"); three "Osasin" in a row take it out.
    Nothing is sent anywhere. Each .kc-data element (written by the build) holds the cards and the texts of one place:
-     .kc-section   a lesson after the exit ticket: the chapter's cards two at a time (row()), and in
+     .kc-section   a lesson, the end of Esimerkit: the chapter's cards two at a time (row()), and in
                    Teoriatiivistelmä the popovers of bold terms (strong[data-kortti]) and the chips after the summary list
      .kc-deck      a module page: "Kertauspakkasi", the deck's count and chapters, "Kertaa nyt"
      .kc-practice  Sovella itsenäisesti: the deck's cards of the module (the section stays hidden when there are none)

@@ -7,7 +7,7 @@
     "solve multi-step problems about everyday heat phenomena."
   ],
   "prior": [
-    "The quantity of heat when heating is $Q = cm\\Delta T$ (chapter *Heating and cooling of a substance: $Q = cm\\Delta T$*)",
+    "The quantity of heat when heating is $Q = cm\\Delta T$ (chapter *Heating and cooling of matter: $Q = cm\\Delta T$*)",
     "Melting and vaporisation need energy (freezing and condensation release it), but the temperature does not change, $Q = sm$ and $Q = rm$ (chapter *Changes of state*)",
     "The power conducted through a building part is $P = UA\\Delta T$ (chapter *Heat transfer, energy balance and climate change*)"
   ],

@@ -1,0 +1,36 @@
+{
+  "id": "fy9-lampo",
+  "course": "FY9",
+  "chapter": 2,
+  "order": 2,
+  "title": "Lämpö ja olomuodon muutokset",
+  "description": "Kerrataan FY3-moduulin lämpöopin asiat: lämpötila, sisäenergia, lämpömäärä, olomuodon muutokset, jään ja veden lämpötasapaino, lämpölaajeneminen sekä lämmön siirtyminen ja energiatase. Lisäksi ratkaistaan ylioppilaskokeen tyylisiä tehtäviä.",
+  "kind": "review",
+  "minutes": 75,
+  "subjects": [
+    "physics"
+  ],
+  "sources": [],
+  "key_concepts": [
+    {
+      "term": "lämpö",
+      "explain": "Energiaa, joka siirtyy lämpimästä kappaleesta kylmempään lämpötilaeron vuoksi. Kappaleessa ei ole lämpöä, vaan sisäenergiaa."
+    },
+    {
+      "term": "sisäenergia",
+      "explain": "Kaikkien hiukkasten liike-energian ja vuorovaikutusenergian summa. Se riippuu lämpötilasta, aineen määrästä ja olomuodosta."
+    },
+    {
+      "term": "ominaislämpökapasiteetti",
+      "explain": "Kertoo, kuinka paljon energiaa tarvitaan, kun kilogramman lämpötila nousee yhden kelvinin. Merkki on $c$, ja $Q = cm\\Delta T$."
+    },
+    {
+      "term": "ominaissulamislämpö",
+      "explain": "Energia, joka tarvitaan kilogramman sulattamiseen. Lämpötila ei muutu sulamisen aikana. Merkki on $s$, ja $Q = sm$."
+    },
+    {
+      "term": "lämpötasapaino",
+      "explain": "Tila, jossa kappaleilla on sama lämpötila, eikä lämpöä enää siirry niiden välillä. Luovutettu lämpö on yhtä suuri kuin vastaanotettu."
+    }
+  ]
+}

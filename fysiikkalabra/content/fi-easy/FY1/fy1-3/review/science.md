@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 3966c49388305829
+CONTENT-HASH: 7f59e0e2f3d10af7
 
 ## Blocking
-(none)
 
 ## Polish
-- none
 
 ## Checked
-- batch delta review: key_concepts, reworded sentences, photo captions, objective-form and level-policy edits, chapter-reference titles judged against the guardrails and the lesson text; restyled figure lines are styling only.
+batch delta review: Ydinajatus now defines mittausepävarmuus as an estimate of how large the measurement error may be and says it is generally not the largest possible difference from the true value (guardrails: Measurement and data); mittausvirhe kept as the signed difference $x - x_\text{oikea}$; new caliper photo caption (reads to fractions of a millimetre, the instrument's precision affects the uncertainty) is correct and consistent with the rest of the lesson.

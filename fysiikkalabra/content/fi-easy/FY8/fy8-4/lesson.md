@@ -948,7 +948,7 @@
 ## Ydinajatus
 
 ### Aalto vai hiukkanen?
-Kaksoisrakokokeessa valo kulkee kahden kapean raon läpi varjostimelle. Raot ovat lähellä toisiaan. Varjostimelle syntyy kirkkaita ja tummia raitoja. Aaltomalli selittää raidat näin: kahdesta raosta lähtevät aallot vahvistavat toisiaan siellä, missä matkaero on aallonpituuden monikerta. Matkaero tarkoittaa sitä, kuinka paljon pidemmän matkan toinen aalto kulkee. Aallot heikentävät toisiaan siellä, missä matkaero on puolikas aallonpituus tai muu puolikkaan aallonpituuden pariton monikerta (luku *Aaltojen interferenssi*).
+Kaksoisrakokokeessa valo kulkee kahden kapean raon läpi varjostimelle. Raot ovat lähellä toisiaan. Varjostimelle syntyy kirkkaita ja tummia raitoja. Aaltomalli selittää raidat näin: kahdesta raosta lähtevät aallot vahvistavat toisiaan siellä, missä matkaero on aallonpituuden monikerta. Matkaero tarkoittaa sitä, kuinka paljon pidemmän matkan toinen aalto kulkee. Aallot heikentävät toisiaan siellä, missä matkaero on puolikas aallonpituus tai muu puolikkaan aallonpituuden pariton monikerta (luku *Aaltojen yhteisvaikutus: superpositio ja interferenssi*).
 
 Valosähköisessä ilmiössä valo taas luovuttaa energiansa pieninä erinä eli kvantteina. Yksi fotoni, jonka energia on $hf$, voi irrottaa enintään yhden elektronin (luku *Valosähköinen ilmiö ja fotoni*). Fotoni on tietyn taajuuden valon energian pienin erä. Molemmat havainnot pitävät paikkansa. Miten sama valo voi olla molempia?
 

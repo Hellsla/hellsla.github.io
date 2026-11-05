@@ -1,5 +1,5 @@
 # Packet: FY6-sovella (Sovella itsenäisesti, fi)
-Role: **visual** (`.claude/agents/visual-editorial-reviewer.md`). Mode: **full**. Content hash now: `b1e8c35e57ad6a01`.
+Role: **visual** (`.claude/agents/visual-editorial-reviewer.md`). Mode: **full**. Content hash now: `a34f3aab0e6c03cc`.
 House rules: `CLAUDE.md` (in your context). This is not a lesson: no inquiry stages, no exercises; judge the page as the Sovella itsenäisesti it is (an investigation: the student's working instructions by working mode, the figures and set-up sketches, the data tables and graphs, the teacher's notes; a guide: the screenshots of the software are the school's own and are judged for legibility and fit, not redrawn).
 
 ## Your standard (docs/EDITORIAL_QUALITY_STANDARD.md: severity and dimensions 7–10)
@@ -983,7 +983,7 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 
 ### d)
 **Kysytty:** onko kondensaattorissa vaaraa pariston irrottamisen jälkeen, miten se puretaan turvallisesti ja kuinka suuri virta kulkisi kehon läpi
-**Periaate:** Kondensaattori varastoi varauksen ja energian levyilleen eikä sen jännite katoa, kun lataava paristo irrotetaan. Vaara riippuu varastoituneesta energiasta ja jännitteestä, ei paristosta. Virran suuruus kehon läpi saadaan jännitteestä ja resistanssista.
+**Periaate:** Kondensaattorin levyillä on varaukset $+Q$ ja $-Q$, ja energia on varastoitunut levyjen väliseen sähkökenttään. Jännite ei katoa, kun lataava paristo irrotetaan. Vaara riippuu varastoituneesta energiasta ja jännitteestä, ei paristosta. Virran suuruus kehon läpi saadaan jännitteestä ja resistanssista.
 **Mallivastaus:** *Vaara.* Kondensaattori on pariston irrottamisen jälkeen edelleen $300\,\text{V}$:ssa, ja siinä on noin $15\,\text{J}$. Laite ei saa jännitettä pienestä paristosta, vaan kondensaattorista, joka voi purkautua korjaajan kehon kautta.
 
 *Virta.* Jos kehon resistanssi on $1{,}0\,\text{k}\Omega$, virta olisi aluksi $I = \dfrac{U}{R} = \dfrac{300\,\text{V}}{1{,}0 \cdot 10^{3}\,\Omega} = 0{,}30\,\text{A}$. Se on moninkertainen verrattuna muutamaan kymmeneen milliampeeriin, jotka voivat jo olla vaarallisia. Virta pienenee kondensaattorin purkautuessa, mutta alun virta riittää vaaralliseen sähköiskuun.
@@ -1008,7 +1008,7 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 ## Figure inventory (inline figures; the captures `fig-N-390` show them in page order)
 - `content/fi/FY6/sovella/solutions.md:18–85` [fy6-s1-graph] in “a)”: Kuvaaja: pariston napajännite U voltteina virran I funktiona ampeereina. Kuusi mustaa pistettä virroilla 0,10–0,60 A; jännite pienenee arvosta 4,48 V arvoon 3,89 V. Pisteisiin on sovitettu suora, joka kulkee pisteiden lo — labels: $0{,}1$ · $0{,}2$ · $0{,}3$ · $0{,}4$ · $0{,}5$ · $0{,}6$ · $0{,}7$ · $0{,}8$ · $3{,}8$ · $4{,}0$ · $4{,}2$ · $4{,}4$ · $4{,}6$ · $4{,}8$ · $I\ (\text{A})$ · $U\ (\text{V})$ · $3{,}6$ · $0$ · <span style="background:#ffffff;padding:0 5px;border-radius:3px">$\Delta I = 0{,}50\,\text{A}$</span> · <spa
 
-## Screenshots (current: they show the content hash above; paths relative to the folder that holds review/; contact sheets first, then the captures your judgement needs at full size)
+## Screenshots (STALE or MISSING: run `python3 scripts/screenshot.py FY6-sovella --if-stale` first and use the list it writes to review/shots.md; paths relative to the folder that holds review/; contact sheets first, then the captures your judgement needs at full size)
 | file | shows | px | ≈ tokens |
 |---|---|---|---|
 | review/shots/contact-1.png | contact sheet: captures #1–#12 | 1260×1932 | 3245 |

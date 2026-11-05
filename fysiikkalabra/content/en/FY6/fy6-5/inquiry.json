@@ -9,7 +9,7 @@
   "prior": [
     "The voltage across the branches of a parallel connection is the same, and the same current passes through every part of a series connection (chapter *Resistors in series and in parallel*)",
     "The voltage of a resistor is $U = RI$ (chapter *Resistance and Ohm's law*)",
-    "Voltage tells how much energy per unit of charge changes from one form to another (chapter *Electric circuit, current and voltage*)"
+    "Voltage tells how much energy per unit of charge changes from one form to another (chapter *Circuit, electric current and voltage*)"
   ],
   "activities": [
     {

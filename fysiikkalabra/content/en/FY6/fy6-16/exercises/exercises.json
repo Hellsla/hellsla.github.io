@@ -39,6 +39,54 @@
       "answer": 88.0,
       "unit": "%",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-16-L1-06",
+      "level": 1,
+      "core": true,
+      "text": "When choosing a charging station, the power of the station in kilowatts ($\\text{kW}$) and the size of the battery of the car in kilowatt-hours ($\\text{kWh}$) are compared. What do these two numbers tell?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The kilowatt tells the charging speed, that is, the power, and the kilowatt-hour tells the energy that fits in the battery, because energy is power times time.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The kilowatt tells the energy that fits in the battery, and the kilowatt-hour tells the charging speed, because speed is always measured in hours.",
+          "feedback": "The numbers are the wrong way round. The kilowatt is a unit of power and tells how fast energy is transferred, and the kilowatt-hour is a unit of energy, $1\\,\\text{kWh} = 1\\,\\text{kW} \\cdot 1\\,\\text{h}$. Speed is not measured in kilowatt-hours."
+        },
+        {
+          "text": "The kilowatt tells the charging speed, that is, the power, and the kilowatt-hour tells the energy that fits in the battery, because energy is power times time.",
+          "correct": true,
+          "feedback": "Correct: power $P$ tells how fast energy is transferred, and energy is $W = Pt$. So a station of $11\\,\\text{kW}$ transfers $11\\,\\text{kWh}$ in an hour, and filling an empty $60\\,\\text{kWh}$ battery takes, without losses, about $60\\,\\text{kWh} : 11\\,\\text{kW} \\approx 5.5\\,\\text{h}$."
+        },
+        {
+          "text": "The kilowatt and the kilowatt-hour are the same thing, because both contain a kilowatt and they tell the same amount of electricity.",
+          "feedback": "The units measure different quantities. The kilowatt is power and the kilowatt-hour is energy, which is obtained by multiplying power by time. At the same power, the longer a device is on, the more energy accumulates."
+        },
+        {
+          "text": "The kilowatt tells the voltage of the station, and the kilowatt-hour its current, because voltage and current determine the charging time.",
+          "feedback": "Voltage is measured in volts and current in amperes, not in kilowatts. The kilowatt is a unit of power, and power is voltage times current, $P = UI$."
+        }
+      ]
+    },
+    {
+      "id": "fy6-16-L1-07",
+      "level": 1,
+      "text": "A charging station draws a constant power of $7.4\\,\\text{kW}$ from the grid, and charging lasts $5.5\\,\\text{h}$. How much energy does the station take from the grid? Answer in kilowatt-hours.",
+      "answer": 40.7,
+      "unit": "kWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-16-L1-08",
+      "level": 1,
+      "core": true,
+      "text": "The combined resistance of the conductors of a charging cable is $0.25\\,\\Omega$ and the charging current is $16\\,\\text{A}$. How much power is converted into internal energy in the cable, that is, heats the cable? Answer in watts.",
+      "answer": 64.0,
+      "unit": "W",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -54,6 +102,7 @@
     {
       "id": "fy6-16-L2-02",
       "level": 2,
+      "core": true,
       "text": "A single-phase charging station draws a current of $16\\,\\text{A}$ at a voltage of $230\\,\\text{V}$. The energy of the battery of the car is $60\\,\\text{kWh}$, and it is charged from a charge level of $20\\,\\%$ to $80\\,\\%$. The efficiency of charging is $90\\,\\%$, and the power stays constant the whole time. How long does charging take? Answer in hours.",
       "answer": 10.869565,
       "unit": "h",
@@ -74,6 +123,108 @@
       "answer": 6.528,
       "unit": "V",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-16-L2-05",
+      "level": 2,
+      "core": true,
+      "text": "The table shows the electric power of a detached house hour by hour in the evening before the charging station is installed (example data).\n\nThe main fuses of the house are $3 \\cdot 25\\,\\text{A}$, and the loads of the house are divided equally between the three phases. The family is planning a three-phase charging station that draws an equal current from each phase conductor. The phase voltage is $230\\,\\text{V}$. Assume that the power of the house stays at the value in the table for each hour.\n\na) What is the peak power of the house, and at what time does it occur?\n\nb) How large may the charging power of the station be during the peak so that the current of the main fuses is not exceeded?\n\nc) Using the table, justify when the station can use a power of $11\\,\\text{kW}$ without load management.\n\nThe answer field takes the result of part b) in kilowatts.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 10.45,
+      "unit": "kW",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Electric power of the house in the evening (example data)",
+        "columns": [
+          "Time of day",
+          "$P_{\\text{house}}\\,(\\text{kW})$"
+        ],
+        "rows": [
+          [
+            "17–18",
+            "2.1"
+          ],
+          [
+            "18–19",
+            "3.4"
+          ],
+          [
+            "19–20",
+            "6.8"
+          ],
+          [
+            "20–21",
+            "5.2"
+          ],
+          [
+            "21–22",
+            "3.9"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-16-L2-06",
+      "level": 2,
+      "text": "A student calculates how long charging a battery takes.\n\nProblem: the energy of the battery of a car is $60\\,\\text{kWh}$, and it is charged from a charge level of $20\\,\\%$ to $80\\,\\%$. A single-phase station draws a power of $7.4\\,\\text{kW}$ from the grid, and the efficiency of charging is $92\\,\\%$.\n\nThe student's solution: “$t = \\dfrac{W}{P} = \\dfrac{60\\,\\text{kWh}}{7.4\\,\\text{kW}} \\approx 8.1\\,\\text{h}$”.\n\na) Name two errors in the student's solution.\n\nb) Calculate the correct charging time in hours.\n\nThe answer field takes the result of part b).",
+      "kind": [
+        "error"
+      ],
+      "answer": 5.287897,
+      "unit": "h",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-16-L2-07",
+      "level": 2,
+      "text": "The power the charging station drew from the grid was measured during one charge at half-hour intervals. The measurement is in the table (example data). The power stays nearly constant at first and decreases when the battery fills up.\n\na) Draw the $(t, P)$ graph and calculate the energy drawn from the grid during the measurement period $0\\text{–}3.0\\,\\text{h}$ as the area under the graph. Use straight lines joining the points, so that the area divides into trapezoids half an hour wide.\n\nb) Calculate the average power over this measurement period.\n\nThe answer field takes the result of part a) in kilowatt-hours.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 22.85,
+      "unit": "kWh",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Power of the charging station during charging (example data)",
+        "columns": [
+          "$t\\,(\\text{h})$",
+          "$P\\,(\\text{kW})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "11.0"
+          ],
+          [
+            "0.5",
+            "11.0"
+          ],
+          [
+            "1.0",
+            "10.8"
+          ],
+          [
+            "1.5",
+            "8.7"
+          ],
+          [
+            "2.0",
+            "5.9"
+          ],
+          [
+            "2.5",
+            "3.1"
+          ],
+          [
+            "3.0",
+            "1.4"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -98,6 +249,77 @@
       "level": 3,
       "text": "During the night, $40\\,\\text{kWh}$ has to be stored in the battery of a car. Charging starts at $22.00$, and the car has to be ready at $7.00$. The efficiency of charging is $90\\,\\%$.\n\nA three-phase charging station draws an equal current from each phase conductor, and the phase voltage is $230\\,\\text{V}$.\n\nWhat is the smallest charging current needed in one phase conductor when the current is kept constant all night?",
       "answer": 7.156915,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-16-L3-04",
+      "level": 3,
+      "text": "A family is considering replacing a petrol car with an electric car. The table shows the monthly distances the family drove last year (example data).\n\nThe electric car consumes $16.0\\,\\text{kWh}$ from the battery per hundred kilometres, and the efficiency of charging is $90.0\\,\\%$. The price of home charging including transmission is $15\\,\\text{c/kWh}$. The petrol car consumes $6.50\\,\\textsf{l}$ per hundred kilometres, and the price of petrol is $1.85\\,\\text{€/}\\textsf{l}$ (example price).\n\na) Calculate the yearly driving distance of the family from the table.\n\nb) How much more do the running costs of the petrol car come to in a year than those of the electric car charged at home?\n\nc) Would the electric car still be cheaper if all the charging were done at public rapid charging at a price of $0.45\\,\\text{€/kWh}$? Justify by calculating.\n\nThe answer field takes the result of part b) in euros.",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 1370.06,
+      "unit": "€",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Monthly distances driven by the family (example data)",
+        "columns": [
+          "Month",
+          "$s\\,(\\text{km})$",
+          "Month",
+          "$s\\,(\\text{km})$"
+        ],
+        "rows": [
+          [
+            "January",
+            "1050",
+            "July",
+            "1100"
+          ],
+          [
+            "February",
+            "980",
+            "August",
+            "1260"
+          ],
+          [
+            "March",
+            "1150",
+            "September",
+            "1350"
+          ],
+          [
+            "April",
+            "1240",
+            "October",
+            "1290"
+          ],
+          [
+            "May",
+            "1380",
+            "November",
+            "1170"
+          ],
+          [
+            "June",
+            "1420",
+            "December",
+            "1250"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-16-L3-05",
+      "level": 3,
+      "text": "The main fuses of a detached house are $3 \\cdot 25\\,\\text{A}$. At the evening peak time the following are on: a sauna heater $6.0\\,\\text{kW}$, the oven and stove together $3.3\\,\\text{kW}$, the dishwasher $1.8\\,\\text{kW}$, and lighting and entertainment electronics $0.90\\,\\text{kW}$ (example data). Assume that these loads are divided equally between the three phases. The phase voltage is $230\\,\\text{V}$.\n\nThe family installs a single-phase charging station on one phase. The station is at the end of a $30\\,\\text{m}$ long cable, and the copper conductors of the cable have a cross-sectional area of $2.5\\,\\text{mm}^2$. The current flows to the station along the phase conductor and returns along the neutral conductor. The resistivity of copper is $1.7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m}$.\n\na) Calculate the combined current of the loads of the house in one phase conductor.\n\nb) How large a charging current may the station draw at most at peak time on the phase it is connected to?\n\nc) Calculate the heating power of the cable at this current and at a current of $16\\,\\text{A}$. Use the calculation to justify why the charging current should be limited in the evening.\n\nThe answer field takes the result of part b) in amperes.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 7.608696,
       "unit": "A",
       "tolerance": 0.02
     }

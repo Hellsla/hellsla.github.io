@@ -1,0 +1,501 @@
+{
+  "version": 1,
+  "contribution": "The review lesson brings together the FY2 module's conservation of energy, power, the kilowatt-hour, efficiency, heat of combustion and the comparison of production methods, and FY3's work and the energy chain of a power plant, into one model, and practises matriculation-exam-style problems on them: energy flow diagrams, efficiencies that multiply, telling power and energy apart, unit conversions by substitution, a graph of data and a reasoned comparison of production methods.",
+  "learn": [
+    "solve energy, power and efficiency problems, substituting the units",
+    "draw and interpret energy flow diagrams, energy chains and graphs of consumption data",
+    "evaluate energy production methods and claims with reasons"
+  ],
+  "prior": [
+    "Energy is conserved: it is transformed and transferred but does not disappear (chapter *Forms of energy and conservation of energy*)",
+    "Power is energy per unit time, and $1\\,\\text{kWh} = 3.6\\,\\text{MJ}$ (chapter *Power*)",
+    "Efficiency is the fraction of the energy taken in that is useful (chapter *Efficiency*)",
+    "The energy released from a fuel is $E = Hm$ (chapter *Fuels and heat of combustion*)",
+    "The efficiencies of the stages of a power plant are multiplied (chapter *Energy production and the efficiency of power plants*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "The battery of an electric car holds $40\\,\\text{kWh}$ of energy. Ten litres of petrol weigh about $7.5\\,\\text{kg}$, and the heat of combustion of petrol is about $43\\,\\text{MJ/kg}$. At home the car is charged from an ordinary socket at a power of $2.3\\,\\text{kW}$, at a fast charger at a power of $100\\,\\text{kW}$. In the matriculation exam a situation like this can be the start of a problem: the numbers are given, but the formulas are not.",
+      "question": "Which holds more energy, a full battery or ten litres of petrol, and why does charging at home still take all night?"
+    },
+    {
+      "id": "lt-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting level 1: the sledge stops",
+      "prompt": "A sledge slides down a hill and stops on level snow. What has finally happened to the sledge's potential energy?",
+      "choices": [
+        {
+          "text": "It has become thermal energy of the snow, the runners and the air.",
+          "feedback": "Correct. Friction and air resistance transform mechanical energy into thermal energy, and the total energy is conserved. Review if needed in the chapter *Forms of energy and conservation of energy*.",
+          "correct": true
+        },
+        {
+          "text": "It has been used up, because the sledge no longer moves.",
+          "feedback": "Energy is not used up and does not disappear. The kinetic energy has been transformed by friction into thermal energy, which spreads into the snow and the air. Review the chapter *Forms of energy and conservation of energy*."
+        },
+        {
+          "text": "It is still in the sledge as potential energy.",
+          "feedback": "The sledge is now lower than at the start, so its potential energy is smaller. The difference has become thermal energy by way of the motion. Review the chapter *Forms of energy and conservation of energy*."
+        }
+      ]
+    },
+    {
+      "id": "lt-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting level 2: power or energy",
+      "prompt": "A hair dryer has a power of $1800\\,\\text{W}$, and it is on for $10\\,\\text{min}$ a day. A fridge has an average power of $40\\,\\text{W}$, and it is plugged in all day and night. Which uses more electrical energy in a day?",
+      "choices": [
+        {
+          "text": "The hair dryer, because its power is much greater.",
+          "feedback": "Power only tells how fast energy is transformed. Energy is power multiplied by time: the dryer $1.8\\,\\text{kW} \\cdot \\tfrac{1}{6}\\,\\text{h} = 0.30\\,\\text{kWh}$, the fridge $0.040\\,\\text{kW} \\cdot 24\\,\\text{h} \\approx 0.96\\,\\text{kWh}$. Review the chapter *Power*."
+        },
+        {
+          "text": "The fridge, because it is in use for much longer.",
+          "feedback": "Correct. The fridge uses about $0.96\\,\\text{kWh}$ and the dryer $0.30\\,\\text{kWh}$. A small power for a long time can transform more energy than a large power for a moment. Review if needed in the chapter *Power*.",
+          "correct": true
+        },
+        {
+          "text": "The same, because both are connected to the same grid.",
+          "feedback": "The same grid does not mean the same energy. The energy depends on the power of the device and how long it is used, $E = P\\,t$, and these are very different for these devices. Review the chapter *Power*."
+        }
+      ]
+    },
+    {
+      "id": "lt-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting level 3: the kilowatt-hour",
+      "prompt": "How many joules are there in one kilowatt-hour?",
+      "choices": [
+        {
+          "text": "$3.6 \\cdot 10^{3}\\,\\text{J}$",
+          "feedback": "An hour is $3600\\,\\text{s}$, but a kilowatt is $1000\\,\\text{W}$. Substitute both: $1\\,\\text{kWh} = 1000\\,\\text{W} \\cdot 3600\\,\\text{s}$. Review the chapter *Power*."
+        },
+        {
+          "text": "$1.0 \\cdot 10^{3}\\,\\text{J}$",
+          "feedback": "The prefix kilo means a thousand, but a kilowatt-hour also contains an hour. A watt is a joule per second, so the time must be converted to seconds: $1\\,\\text{kWh} = 1000\\,\\text{W} \\cdot 3600\\,\\text{s}$. Review the chapter *Power*."
+        },
+        {
+          "text": "$3.6 \\cdot 10^{6}\\,\\text{J}$",
+          "feedback": "Correct. $1\\,\\text{kWh} = 1000\\,\\text{W} \\cdot 3600\\,\\text{s} = 3\\,600\\,000\\,\\text{J} = 3.6\\,\\text{MJ}$. Review if needed in the chapter *Power*.",
+          "correct": true
+        },
+        {
+          "text": "$6.0 \\cdot 10^{4}\\,\\text{J}$",
+          "feedback": "An hour has $60$ minutes, but a watt is a joule *per second*. Substitute the hour in seconds: $1\\,\\text{kWh} = 1000\\,\\text{W} \\cdot 3600\\,\\text{s}$. Review the chapter *Power*."
+        }
+      ]
+    },
+    {
+      "id": "lt-4",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting level 4: three stages",
+      "prompt": "Energy passes through three successive stages, and the efficiency of each stage is $90\\,\\%$. What is the efficiency of the whole chain?",
+      "choices": [
+        {
+          "text": "$70\\,\\%$, because each stage wastes $10\\,\\%$.",
+          "feedback": "The second stage wastes $10\\,\\%$ of what it receives, not of the original energy. The efficiencies are multiplied: $0.90 \\cdot 0.90 \\cdot 0.90 \\approx 0.73$. Review the chapter *Energy production and the efficiency of power plants*."
+        },
+        {
+          "text": "$90\\,\\%$, because the stages are alike.",
+          "feedback": "Each stage takes the useful energy of the previous stage and wastes part of that too, so a chain is always weaker than a single stage. Review the chapter *Energy production and the efficiency of power plants*."
+        },
+        {
+          "text": "about $73\\,\\%$, because the efficiencies are multiplied.",
+          "feedback": "Correct. $0.90 \\cdot 0.90 \\cdot 0.90 = 0.729 \\approx 73\\,\\%$. Review if needed in the chapter *Energy production and the efficiency of power plants*.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "lt-5",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting level 5: wood and petrol",
+      "prompt": "The heat of combustion of air-dried firewood is $15\\,\\text{MJ/kg}$ and that of petrol $43\\,\\text{MJ/kg}$. Which releases more energy when it burns: $2.0\\,\\text{kg}$ of wood or $1.0\\,\\text{kg}$ of petrol?",
+      "choices": [
+        {
+          "text": "The wood, because there is twice as much mass of it.",
+          "feedback": "The mass is double, but the heat of combustion is less than half. The energy released is $E = Hm$: wood $30\\,\\text{MJ}$, petrol $43\\,\\text{MJ}$. Review the chapter *Fuels and heat of combustion*."
+        },
+        {
+          "text": "The petrol, because its $Hm$ is greater.",
+          "feedback": "Correct. The wood releases $15\\,\\tfrac{\\text{MJ}}{\\text{kg}} \\cdot 2.0\\,\\text{kg} = 30\\,\\text{MJ}$, the petrol $43\\,\\text{MJ}$. Review if needed in the chapter *Fuels and heat of combustion*.",
+          "correct": true
+        },
+        {
+          "text": "The same, because both burn completely.",
+          "feedback": "Burning completely does not make the energies equal: the energy depends on both the heat of combustion and the mass, $E = Hm$. Review the chapter *Fuels and heat of combustion*."
+        }
+      ]
+    },
+    {
+      "id": "lt-6",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting level 6: a wind turbine's year",
+      "prompt": "A wind turbine has a rated power of $5.0\\,\\text{MW}$, and a year has $8760\\,\\text{h}$. Which claim about the turbine's annual production is correct?",
+      "choices": [
+        {
+          "text": "It is $5.0\\,\\text{MW} \\cdot 8760\\,\\text{h} \\approx 44\\,\\text{GWh}$.",
+          "feedback": "This would be the production if the turbine ran at its rated power all year. The wind varies, so the average power is smaller than the rated power. Review the chapter *Ways of producing energy and how they compare*."
+        },
+        {
+          "text": "It is clearly less than $44\\,\\text{GWh}$, because the wind varies.",
+          "feedback": "Correct. The rated power is the maximum power. The year's energy is the average power multiplied by $8760\\,\\text{h}$, and the average power is much smaller than the rated power. Review if needed in the chapter *Ways of producing energy and how they compare*.",
+          "correct": true
+        },
+        {
+          "text": "It is more than $44\\,\\text{GWh}$, because the power increases in a strong wind.",
+          "feedback": "The rated power is the maximum power at which the turbine operates; in a strong wind the power is limited. So the year's energy cannot exceed $5.0\\,\\text{MW} \\cdot 8760\\,\\text{h}$. Review the chapter *Ways of producing energy and how they compare*."
+        }
+      ]
+    },
+    {
+      "id": "aineisto",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "The energy chain of a condensing power plant",
+      "source": "example",
+      "text": "The bar chart shows the power of an example plant at the stages of its energy chain: the fuel power $P_0$, the power after the boiler $P_1$, the power after the steam cycle $P_2$ and the electrical power after the generator and the transformer $P_3$. Read the powers from the chart and calculate the efficiency of each stage. Answer below with the efficiency of the steam cycle. The model answer also has the efficiencies of the other stages and a check that their product is the efficiency of the whole plant.\n\n<svg viewBox=\"0 0 400 346\" role=\"img\" aria-label=\"Bar chart to scale: the power of a condensing power plant at the stages of its energy chain. The heights of the bars are P_0 = 400 MW (fuel), P_1 = 350 MW (after the boiler), P_2 = 150 MW (after the steam cycle) and P_3 = 140 MW (after the generator and the transformer, that is, electricity). The grid spacing is 50 MW.\" style=\"max-width:100%;font-size:21px\">\n  <line x1=\"76\" y1=\"270\" x2=\"390\" y2=\"270\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"76\" y1=\"243.5\" x2=\"390\" y2=\"243.5\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"76\" y1=\"217.5\" x2=\"390\" y2=\"217.5\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"76\" y1=\"191\" x2=\"390\" y2=\"191\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"76\" y1=\"165\" x2=\"390\" y2=\"165\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"76\" y1=\"138.5\" x2=\"390\" y2=\"138.5\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"76\" y1=\"112.5\" x2=\"390\" y2=\"112.5\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"76\" y1=\"86\" x2=\"390\" y2=\"86\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"76\" y1=\"60\" x2=\"390\" y2=\"60\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"75\" y1=\"296\" x2=\"404\" y2=\"296\" stroke=\"#1f2933\" stroke-width=\"2.5\" stroke-linecap=\"butt\"/>\n  <path d=\"M416,296 L403,302 L403,290 Z\" fill=\"#1f2933\" stroke-linejoin=\"round\"/>\n  <line x1=\"76\" y1=\"297\" x2=\"76\" y2=\"46\" stroke=\"#1f2933\" stroke-width=\"2.5\" stroke-linecap=\"butt\"/>\n  <path d=\"M76,34 L82,47 L70,47 Z\" fill=\"#1f2933\" stroke-linejoin=\"round\"/>\n  <line x1=\"69\" y1=\"270\" x2=\"76\" y2=\"270\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <line x1=\"69\" y1=\"243.5\" x2=\"76\" y2=\"243.5\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"23\" y=\"231\" width=\"41\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$100$</div></foreignObject>\n  <line x1=\"69\" y1=\"217.5\" x2=\"76\" y2=\"217.5\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <line x1=\"69\" y1=\"191\" x2=\"76\" y2=\"191\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"23\" y=\"178.5\" width=\"41\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$200$</div></foreignObject>\n  <line x1=\"69\" y1=\"165\" x2=\"76\" y2=\"165\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <line x1=\"69\" y1=\"138.5\" x2=\"76\" y2=\"138.5\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"23\" y=\"126\" width=\"41\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$300$</div></foreignObject>\n  <line x1=\"69\" y1=\"112.5\" x2=\"76\" y2=\"112.5\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <line x1=\"69\" y1=\"86\" x2=\"76\" y2=\"86\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"23\" y=\"73.5\" width=\"41\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$400$</div></foreignObject>\n  <line x1=\"69\" y1=\"60\" x2=\"76\" y2=\"60\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"47\" y=\"303.5\" width=\"19\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$0$</div></foreignObject>\n  <foreignObject x=\"66\" y=\"5.5\" width=\"66\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px\">$P\\ (\\text{MW})$</div></foreignObject>\n  <rect x=\"90\" y=\"86\" width=\"50\" height=\"210\" fill=\"#f1dfb5\" stroke=\"#1f2933\" stroke-width=\"2\"/>\n  <foreignObject x=\"100\" y=\"307.5\" width=\"30\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:21px\">$P_0$</div></foreignObject>\n  <rect x=\"168.5\" y=\"112.5\" width=\"50\" height=\"183.5\" fill=\"#f1dfb5\" stroke=\"#1f2933\" stroke-width=\"2\"/>\n  <foreignObject x=\"179\" y=\"307.5\" width=\"30\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:21px\">$P_1$</div></foreignObject>\n  <rect x=\"247\" y=\"217.5\" width=\"50\" height=\"78.5\" fill=\"#f1dfb5\" stroke=\"#1f2933\" stroke-width=\"2\"/>\n  <foreignObject x=\"257\" y=\"307.5\" width=\"30\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:21px\">$P_2$</div></foreignObject>\n  <rect x=\"325.5\" y=\"222.5\" width=\"50\" height=\"73.5\" fill=\"#b2f2bb\" stroke=\"#1f2933\" stroke-width=\"2\"/>\n  <foreignObject x=\"336\" y=\"307.5\" width=\"30\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:21px\">$P_3$</div></foreignObject>\n</svg>",
+      "question": {
+        "type": "numeric",
+        "prompt": "How large is the efficiency $\\eta_2$ of the steam cycle, that is, what percentage of the power entering the steam cycle comes out of it? Answer as a percentage.",
+        "answer": 42.86,
+        "unit": "%",
+        "tolerance": 0.03,
+        "hints": [
+          "The denominator of a stage's efficiency is the power *entering* the stage, not the fuel power.",
+          "The power after the boiler, $P_1$, enters the steam cycle, and $P_2$ leaves it.",
+          "$\\eta_2 = \\dfrac{P_2}{P_1} = \\dfrac{150\\,\\text{MW}}{350\\,\\text{MW}}$."
+        ],
+        "mistakes": [
+          {
+            "value": 37.5,
+            "feedback": "You divided by the fuel power $P_0$. In the efficiency of a stage the denominator is the power entering the stage, $P_1$."
+          },
+          {
+            "value": 35,
+            "feedback": "This is the efficiency of the whole plant, $P_3 : P_0$. The efficiency of the steam cycle is $P_2 : P_1$."
+          },
+          {
+            "value": 57.14,
+            "feedback": "This is the fraction lost in the steam cycle, $(P_1 - P_2) : P_1$. The efficiency is the fraction that comes out."
+          }
+        ],
+        "solution": "**Given:** from the chart $P_0 = 400\\,\\text{MW}$, $P_1 = 350\\,\\text{MW}$, $P_2 = 150\\,\\text{MW}$ and $P_3 = 140\\,\\text{MW}$; the grid spacing is $50\\,\\text{MW}$\n\n**Find:** the efficiency $\\eta_2$ of the steam cycle as a percentage\n\n**Principle:** The efficiency of a stage is the fraction of the power entering it that comes out. The power $P_1$ given by the boiler enters the steam cycle, and $P_2$ leaves it. Energy is conserved, so the difference $P_1 - P_2$ is transferred as heat to the surroundings in the condenser.\n\n**Reading the graph:** The tops of the bars are on grid lines: $P_1$ on the seventh line ($7 \\cdot 50\\,\\text{MW} = 350\\,\\text{MW}$) and $P_2$ on the third ($150\\,\\text{MW}$).\n\n**Formula:** $\\eta_2 = \\dfrac{P_2}{P_1}$\n\n**Conversions:** Both powers are in megawatts, so the unit cancels and no conversions are needed. The ratio is converted to a percentage by multiplying it by $100\\,\\%$.\n\n**Substitution:** $\\eta_2 = \\dfrac{150\\,\\text{MW}}{350\\,\\text{MW}} = 0.4286 = 42.86\\,\\%$\n\n**Answer:** $43\\,\\%$, two significant figures, because the powers are read from the chart to about $5\\,\\text{MW}$.\n\n**Reasonableness:** The other stages are $\\eta_1 = 350 : 400 = 0.875$ and $\\eta_3 = 140 : 150 \\approx 0.933$. The product $0.875 \\cdot 0.4286 \\cdot 0.933 = 0.350$ is the same as $P_3 : P_0 = 140 : 400 = 0.35$. The steam cycle is the weakest stage, as it should be in a heat engine: part of the heat must be given off to the colder surroundings."
+      }
+    },
+    {
+      "id": "teoriatiivistelma",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava",
+        "Virheet",
+        "Kertaa"
+      ]
+    },
+    {
+      "id": "virhe-kwh",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the mistake: the radiator",
+      "prompt": "A student calculated how much energy a $2.0\\,\\text{kW}$ electric radiator uses in $30\\,\\text{min}$: “$E = P\\,t = 2.0\\,\\text{kW} \\cdot 30\\,\\text{min} = 60\\,\\text{kWh}$.” What is wrong with the solution?",
+      "choices": [
+        {
+          "text": "The formula is wrong: energy is power divided by time.",
+          "feedback": "Power is energy divided by time, $P = \\Delta E : \\Delta t$, so energy is power multiplied by time. The formula is correct; the mistake is in the unit: the minutes must be converted to hours."
+        },
+        {
+          "text": "The kilowatt-hour is a unit of power, so the answer is $60\\,\\text{kW}$.",
+          "feedback": "The kilowatt-hour is a unit of energy, and energy is what is asked here. The mistake is in the time: $30\\,\\text{min} = 0.50\\,\\text{h}$, so the correct energy is $1.0\\,\\text{kWh}$."
+        },
+        {
+          "text": "The time has not been converted to hours: correctly $E = 1.0\\,\\text{kWh}$.",
+          "feedback": "Correct. The product of power and time is in kilowatt-hours only when the time is in hours: $30\\,\\text{min} = 0.50\\,\\text{h}$, so $E = 2.0\\,\\text{kW} \\cdot 0.50\\,\\text{h} = 1.0\\,\\text{kWh}$.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "kuvio",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Read the energy flow diagram",
+      "figure": "fy2-4/grid",
+      "prompt": "The energy flow diagram in the figure is drawn to scale on squared paper. What is the efficiency of the electric motor?",
+      "choices": [
+        {
+          "text": "$33\\,\\%$",
+          "feedback": "You compared the useful arrow with the loss arrow, $2 : 6$. The denominator of the efficiency is the energy taken in, that is, the width of the incoming arrow, $8$ squares."
+        },
+        {
+          "text": "$60\\,\\%$",
+          "feedback": "You read the useful energy ($60\\,\\text{J}$) as a percentage. The efficiency is a ratio: $60\\,\\text{J} : 240\\,\\text{J} = 0.25$."
+        },
+        {
+          "text": "$25\\,\\%$",
+          "feedback": "Correct. The useful arrow is $2$ squares wide and the incoming arrow $8$ squares, so $\\eta = 2 : 8 = 0.25$. The kinetic energy is therefore $0.25 \\cdot 240\\,\\text{J} = 60\\,\\text{J}$.",
+          "correct": true
+        },
+        {
+          "text": "$75\\,\\%$",
+          "feedback": "This is the fraction lost, $6 : 8$. The efficiency is the fraction of the incoming arrow that is useful, that is, kinetic energy."
+        }
+      ]
+    },
+    {
+      "id": "yhteistuotanto",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "A reasoned claim: the heat pump",
+      "prompt": "An air-source heat pump takes an electrical power of $1.0\\,\\text{kW}$ from the grid and gives a heat power of $3.5\\,\\text{kW}$ to the room. Which claim is justified?",
+      "choices": [
+        {
+          "text": "The efficiency of the pump is $350\\,\\%$, so it produces part of the energy out of nothing.",
+          "feedback": "Energy is not created out of nothing. The pump transfers heat from the outdoor air into the room, about $2.5\\,\\text{kW}$, and the electricity brings the remaining $1.0\\,\\text{kW}$. That is why the number $3.5$ is not called an efficiency but the coefficient of performance."
+        },
+        {
+          "text": "The pump transfers heat from the outdoor air indoors, so the heat power can be greater than the electrical power.",
+          "feedback": "Correct. The room receives the $1.0\\,\\text{kW}$ of electricity and the $2.5\\,\\text{kW}$ transferred from the outdoor air, $3.5\\,\\text{kW}$ in total. Energy is conserved when all the energies entering the pump are counted.",
+          "correct": true
+        },
+        {
+          "text": "The numbers are wrong, because the output power cannot be greater than the input power.",
+          "feedback": "The output power cannot be greater than *all* the power taken in. Besides electricity the pump takes heat from the outdoor air, so the electrical power is not its whole input power."
+        }
+      ]
+    },
+    {
+      "id": "lataus",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Power and energy in charging",
+      "prompt": "The $0.60\\,\\text{kWh}$ battery of an electric bicycle is charged from empty to full, once with an ordinary charger at a power of $120\\,\\text{W}$ and once with a fast charger at a power of $600\\,\\text{W}$. The efficiency is the same in both charges. Which claim is correct?",
+      "choices": [
+        {
+          "text": "The fast charger transfers more energy to the battery, because its power is greater.",
+          "feedback": "A full battery holds the same $0.60\\,\\text{kWh}$ whatever the charging power. Power only tells how fast the energy is transferred."
+        },
+        {
+          "text": "The same amount of energy is transferred, but the fast charger takes less time.",
+          "feedback": "Correct. The energy is the same, and the time is $t = E : P$: with the ordinary charger $600\\,\\text{Wh} : 120\\,\\text{W} = 5.0\\,\\text{h}$, with the fast charger $1.0\\,\\text{h}$, if the power stays the same during the whole charge. In reality charging slows down as the battery fills up.",
+          "correct": true
+        },
+        {
+          "text": "The ordinary charger transfers more energy, because charging takes longer.",
+          "feedback": "A longer time at a small power and a short time at a large power give the same energy, $E = P\\,t$. Both times the battery holds the same $0.60\\,\\text{kWh}$."
+        }
+      ]
+    },
+    {
+      "id": "sauna",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "The electric sauna stove",
+      "prompt": "An electric sauna stove with a power of $8.0\\,\\text{kW}$ heats a sauna for $1.5\\,\\text{h}$. How much electrical energy does the stove use? Answer in megajoules.",
+      "answer": 43.2,
+      "unit": "MJ",
+      "tolerance": 0.02,
+      "hints": [
+        "The stove runs at a constant power, so the energy is power multiplied by time.",
+        "Kilowatts times hours gives kilowatt-hours. Convert them to megajoules by substituting $1\\,\\text{kWh} = 1000\\,\\text{W} \\cdot 3600\\,\\text{s}$.",
+        "$E = 8.0\\,\\text{kW} \\cdot 1.5\\,\\text{h} = 12\\,\\text{kWh} = 12 \\cdot 3.6\\,\\text{MJ}$."
+      ],
+      "mistakes": [
+        {
+          "value": 12,
+          "feedback": "This is the energy in kilowatt-hours. Convert it to megajoules: $1\\,\\text{kWh} = 3.6\\,\\text{MJ}$."
+        },
+        {
+          "value": 0.72,
+          "feedback": "You converted the time to $90$ minutes but used the minutes as seconds. A watt is a joule per second: $1.5\\,\\text{h} = 1.5 \\cdot 3600\\,\\text{s} = 5400\\,\\text{s}$."
+        },
+        {
+          "value": 3.33,
+          "feedback": "You divided the kilowatt-hours by $3.6$. One kilowatt-hour is $3.6\\,\\text{MJ}$, so the kilowatt-hours are multiplied by $3.6$."
+        }
+      ],
+      "solution": "**Given:** power $P = 8.0\\,\\text{kW}$, time $t = 1.5\\,\\text{h}$\n\n**Find:** the electrical energy $E$ in megajoules\n\n**Principle:** The stove transforms electrical energy at a constant power, so the energy transformed is power multiplied by time (chapter *Power*).\n\n**Formula:** $P = \\dfrac{E}{t}$, so $E = P\\,t$\n\n**Conversions:** The power in watts and the time in seconds: $8.0\\,\\text{kW} = 8.0 \\cdot 1000\\,\\text{W} = 8000\\,\\text{W}$ and $1.5\\,\\text{h} = 1.5 \\cdot 3600\\,\\text{s} = 5400\\,\\text{s}$. Joules to megajoules: $1\\,\\text{J} = 10^{-6}\\,\\text{MJ}$.\n\n**Substitution:** $E = 8000\\,\\text{W} \\cdot 5400\\,\\text{s} = 43\\,200\\,000\\,\\text{J} = 43.2\\,\\text{MJ}$\n\n**Answer:** $43\\,\\text{MJ}$, two significant figures like the power $8.0\\,\\text{kW}$ and the time $1.5\\,\\text{h}$.\n\n**Reasonableness:** In kilowatt-hours $E = 8.0\\,\\text{kW} \\cdot 1.5\\,\\text{h} = 12\\,\\text{kWh}$, and $12 \\cdot 3.6\\,\\text{MJ} = 43.2\\,\\text{MJ}$: the same result. At an example price of $20\\,\\text{c/kWh}$ heating the sauna costs about $2.4\\,\\text{€}$, which is a usual order of magnitude."
+    },
+    {
+      "id": "sahkoauto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "From fuel to wheels",
+      "prompt": "On a highway the motor of an electric car gives a mechanical power of $15\\,\\text{kW}$. The electricity is produced in a condensing power plant (efficiency $38\\,\\%$), the efficiency of transmission in the grid is $96\\,\\%$, that of charging and the battery $90\\,\\%$ and that of the motor $90\\,\\%$. How large a fuel power is needed at the power plant to keep the car going? Answer in kilowatts.",
+      "answer": 50.76,
+      "unit": "kW",
+      "tolerance": 0.03,
+      "hints": [
+        "The useful power of each stage is the power taken in by the next stage. What is the efficiency of the whole chain?",
+        "The efficiency of the chain is the product of the efficiencies of the stages: $\\eta = \\eta_1\\,\\eta_2\\,\\eta_3\\,\\eta_4$.",
+        "$P_0 = \\dfrac{P_\\text{a}}{\\eta} = \\dfrac{15\\,\\text{kW}}{0.38 \\cdot 0.96 \\cdot 0.90 \\cdot 0.90}$."
+      ],
+      "mistakes": [
+        {
+          "value": 107.1,
+          "feedback": "You added up the loss percentages ($62 + 4 + 10 + 10 = 86\\,\\%$). Each stage wastes part of what it receives, so the efficiencies are multiplied."
+        },
+        {
+          "value": 4.43,
+          "feedback": "You multiplied the motor's power by the efficiency. The power plant needs *more* power than the motor gives, so divide by the efficiency of the chain."
+        },
+        {
+          "value": 39.47,
+          "feedback": "You took only the power plant's efficiency into account. Transmission, charging and the motor also waste part of the power."
+        }
+      ],
+      "solution": "**Given:** power given by the motor $P_\\text{a} = 15\\,\\text{kW}$; efficiencies $\\eta_1 = 38\\,\\%$ (power plant), $\\eta_2 = 96\\,\\%$ (transmission), $\\eta_3 = 90\\,\\%$ (charging and battery) and $\\eta_4 = 90\\,\\%$ (motor)\n\n**Find:** the fuel power $P_0$ of the power plant in kilowatts\n\n**Principle:** The stages are in series: the useful power of each stage is the power taken in by the next one. So the efficiency of the whole chain is the product of the efficiencies of the stages, and the power taken in is obtained by dividing the useful power by it (chapter *Energy production and the efficiency of power plants*).\n\n**Formula:** $\\eta = \\eta_1\\,\\eta_2\\,\\eta_3\\,\\eta_4 = \\dfrac{P_\\text{a}}{P_0}$, so $P_0 = \\dfrac{P_\\text{a}}{\\eta_1\\,\\eta_2\\,\\eta_3\\,\\eta_4}$\n\n**Conversions:** Percentages to decimals: $38\\,\\% = 0.38$, $96\\,\\% = 0.96$ and $90\\,\\% = 0.90$. The power can stay in kilowatts, because the answer is asked in kilowatts.\n\n**Substitution:** $P_0 = \\dfrac{15\\,\\text{kW}}{0.38 \\cdot 0.96 \\cdot 0.90 \\cdot 0.90} = \\dfrac{15\\,\\text{kW}}{0.2955} = 50.76\\,\\text{kW}$\n\n**Answer:** $51\\,\\text{kW}$, two significant figures like the power $15\\,\\text{kW}$ and the efficiencies.\n\n**Reasonableness:** The efficiency of the chain, $0.30$, is smaller than that of the weakest stage, $0.38$, as it must be in a multiplication. About three times the motor's power is needed as fuel power, and the check $0.2955 \\cdot 50.76\\,\\text{kW} = 15.0\\,\\text{kW}$ agrees."
+    },
+    {
+      "id": "pelletti",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "The pellet boiler",
+      "prompt": "Heating a detached house needs $15\\,000\\,\\text{kWh}$ of heat a year. The efficiency of the pellet boiler is $85\\,\\%$, and the heat of combustion of wood pellets is $17\\,\\text{MJ/kg}$. How many tonnes of pellets are burnt in a year? Answer in tonnes.",
+      "answer": 3.737,
+      "unit": "t",
+      "tolerance": 0.03,
+      "hints": [
+        "The boiler must get more energy from the pellets than the heat that goes into the house. How much?",
+        "The energy of the fuel is $E_\\text{o} = E_\\text{a} : \\eta$, and the mass of pellets is found with the heat of combustion: $E_\\text{o} = Hm$.",
+        "Convert $E_\\text{o}$ to megajoules by substituting $1\\,\\text{kWh} = 3.6\\,\\text{MJ}$, and divide by the heat of combustion."
+      ],
+      "mistakes": [
+        {
+          "value": 2.7,
+          "feedback": "You multiplied the heat demand by the efficiency. The boiler takes *more* energy from the pellets than it gives, so divide by the efficiency."
+        },
+        {
+          "value": 3.176,
+          "feedback": "You forgot the efficiency. Because of the boiler's losses, more fuel is needed than the heat demand alone."
+        },
+        {
+          "value": 1.038,
+          "feedback": "You divided the kilowatt-hours directly by the heat of combustion, whose unit is $\\text{MJ/kg}$. Convert first: $1\\,\\text{kWh} = 3.6\\,\\text{MJ}$."
+        }
+      ],
+      "solution": "**Given:** heat demand, that is, the energy given by the boiler, $E_\\text{a} = 15\\,000\\,\\text{kWh}$, efficiency $\\eta = 85\\,\\%$, heat of combustion $H = 17\\,\\text{MJ/kg}$\n\n**Find:** the mass $m$ of pellets burnt, in tonnes\n\n**Principle:** The efficiency of the boiler is the fraction of the energy released from the pellets that is given to the house as heat. The energy released is the heat of combustion multiplied by the mass, because the heat of combustion is energy per kilogram (chapters *Efficiency* and *Fuels and heat of combustion*).\n\n**Formula:** $\\eta = \\dfrac{E_\\text{a}}{E_\\text{o}}$ and $E_\\text{o} = Hm$, so $m = \\dfrac{E_\\text{a}}{\\eta H}$\n\n**Conversions:** $15\\,000\\,\\text{kWh} = 15\\,000 \\cdot 3.6\\,\\text{MJ} = 54\\,000\\,\\text{MJ}$, $85\\,\\% = 0.85$ and finally $1\\,\\text{kg} = 0.001\\,\\text{t}$.\n\n**Substitution:** $m = \\dfrac{54\\,000\\,\\text{MJ}}{0.85 \\cdot 17\\,\\tfrac{\\text{MJ}}{\\text{kg}}} = 3737\\,\\text{kg} = 3.737\\,\\text{t}$\n\n**Answer:** $3.7\\,\\text{t}$, two significant figures like the efficiency $85\\,\\%$ and the heat of combustion $17\\,\\text{MJ/kg}$.\n\n**Reasonableness:** Without losses $54\\,000\\,\\text{MJ} : 17\\,\\tfrac{\\text{MJ}}{\\text{kg}} \\approx 3200\\,\\text{kg}$ of pellets would be needed; because of the losses a little more is needed, as it should be. A few tonnes of pellets a year is a usual amount for a detached house."
+    },
+    {
+      "id": "hissi",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "The goods lift",
+      "prompt": "A goods lift raises an $800\\,\\text{kg}$ load at a constant speed $24\\,\\text{m}$ up in $30\\,\\text{s}$. The efficiency of the lift's motor and machinery is $75\\,\\%$. How large an electrical power does the motor take? Answer in kilowatts.",
+      "answer": 8.371,
+      "unit": "kW",
+      "tolerance": 0.02,
+      "hints": [
+        "The lift does work to raise the load. What is the work of lifting, and how large a power follows from it?",
+        "The work of lifting is $W = mgh$ and the useful power $P_\\text{a} = W : t$.",
+        "The power taken by the motor is $P_\\text{o} = P_\\text{a} : \\eta$."
+      ],
+      "mistakes": [
+        {
+          "value": 6.278,
+          "feedback": "This is the useful power that goes into lifting. The motor takes more, because part of the power becomes heat: $P_\\text{o} = P_\\text{a} : \\eta$."
+        },
+        {
+          "value": 4.709,
+          "feedback": "You multiplied the useful power by the efficiency. The power taken by the motor is greater than the useful power, so divide by the efficiency."
+        },
+        {
+          "value": 188.4,
+          "feedback": "This is the work of lifting in kilojoules. Power is work divided by the time $30\\,\\text{s}$."
+        }
+      ],
+      "solution": "**Given:** mass $m = 800\\,\\text{kg}$, lifting height $h = 24\\,\\text{m}$, time $t = 30\\,\\text{s}$, efficiency $\\eta = 75\\,\\%$, $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the power $P_\\text{o}$ taken by the motor in kilowatts\n\n**Principle:** The load rises at a constant speed, so the lifting force is equal to the weight $mg$ and the work of lifting is $mgh$ (chapter *Work and energy*). The useful power is the work divided by the time, and the motor takes a power of which only the share $\\eta$ is useful.\n\n**Formula:** $P_\\text{a} = \\dfrac{mgh}{t}$ and $\\eta = \\dfrac{P_\\text{a}}{P_\\text{o}}$, so $P_\\text{o} = \\dfrac{mgh}{\\eta\\,t}$\n\n**Conversions:** $75\\,\\% = 0.75$ and finally $1\\,\\text{W} = 0.001\\,\\text{kW}$. The other quantities are in base units.\n\n**Substitution:** $P_\\text{o} = \\dfrac{800\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\cdot 24\\,\\text{m}}{0.75 \\cdot 30\\,\\text{s}} = \\dfrac{188\\,352\\,\\text{J}}{22.5\\,\\text{s}} = 8371\\,\\text{W} = 8.371\\,\\text{kW}$\n\n**Answer:** $8.4\\,\\text{kW}$, two significant figures like the height $24\\,\\text{m}$, the time $30\\,\\text{s}$ and the efficiency $75\\,\\%$.\n\n**Reasonableness:** The useful power is $188\\,352\\,\\text{J} : 30\\,\\text{s} \\approx 6.3\\,\\text{kW}$, and the motor takes four thirds of that, about $8.4\\,\\text{kW}$. The power is about that of an electric sauna stove, which suits the motor of a goods lift."
+    },
+    {
+      "id": "lisaa",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "At the end of the lesson are the matriculation-exam-style problems. Write your solution in your notebook or on the computer as in the exam, and only then assess it with the model answer and the scoring guide."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "A condensing power plant has an electrical power of $600\\,\\text{MW}$, and its efficiency is $40\\,\\%$. Which claim is correct?",
+      "choices": [
+        {
+          "text": "The fuel power is $1500\\,\\text{MW}$, and $900\\,\\text{MW}$ is transferred as heat to the surroundings.",
+          "feedback": "Correct. $P_0 = 600\\,\\text{MW} : 0.40 = 1500\\,\\text{MW}$, and energy is conserved: $1500\\,\\text{MW} - 600\\,\\text{MW} = 900\\,\\text{MW}$ is waste heat.",
+          "correct": true
+        },
+        {
+          "text": "The plant produces $600\\,\\text{MW}$ of energy per hour, and the losses are $240\\,\\text{MW}$.",
+          "feedback": "The megawatt is a unit of power, not of energy: in an hour the plant produces $600\\,\\text{MWh}$. The losses are calculated from the power taken in, $0.60 \\cdot 1500\\,\\text{MW} = 900\\,\\text{MW}$. Review the chapter *Efficiency*."
+        },
+        {
+          "text": "The fuel power is $1000\\,\\text{MW}$, because the losses are $40\\,\\%$ of the electrical power.",
+          "feedback": "Efficiency and losses are calculated from the power taken in, not from the power given. $P_0 = P_\\text{a} : \\eta = 600\\,\\text{MW} : 0.40 = 1500\\,\\text{MW}$. Review the chapter *Energy production and the efficiency of power plants*."
+        }
+      ],
+      "practice": "Review the denominator of efficiency in the chapter [*Efficiency*](fy2-4.html) and the chain of a power plant in the chapter [*Energy production and the efficiency of power plants*](fy3-15.html)."
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculation",
+      "prompt": "A phone battery holds $15\\,\\text{Wh}$ of energy. The combined efficiency of the charger and the battery is $80\\,\\%$. How much electrical energy is taken from the grid when an empty battery is charged full? Answer in kilojoules.",
+      "answer": 67.5,
+      "unit": "kJ",
+      "tolerance": 0.02,
+      "hints": [
+        "The energy going into the battery is the useful energy. Which is greater: the energy taken from the grid or the energy going into the battery?",
+        "$E_\\text{o} = E_\\text{a} : \\eta$, and the watt-hour is converted by substituting $1\\,\\text{Wh} = 1\\,\\text{W} \\cdot 3600\\,\\text{s}$.",
+        "$E_\\text{o} = 15\\,\\text{Wh} : 0.80 = 18.75\\,\\text{Wh}$."
+      ],
+      "mistakes": [
+        {
+          "value": 54,
+          "feedback": "This is the energy going into the battery in kilojoules. More is taken from the grid, because in charging part of the energy becomes heat: divide by the efficiency."
+        },
+        {
+          "value": 43.2,
+          "feedback": "You multiplied by the efficiency. The energy taken in is greater than the useful energy: $E_\\text{o} = E_\\text{a} : \\eta$."
+        },
+        {
+          "value": 18.75,
+          "feedback": "This is the energy taken in, in watt-hours. Convert it to kilojoules: $1\\,\\text{Wh} = 3600\\,\\text{J}$."
+        }
+      ],
+      "practice": "Review converting the watt-hour in the chapter [*Power*](fy2-3.html) and the energy taken in in the chapter [*Efficiency*](fy2-4.html).",
+      "solution": "**Given:** energy going into the battery $E_\\text{a} = 15\\,\\text{Wh}$, efficiency $\\eta = 80\\,\\%$\n\n**Find:** the energy $E_\\text{o}$ taken from the grid, in kilojoules\n\n**Principle:** The efficiency is the fraction of the energy taken from the grid that is stored in the battery. Energy is conserved, and the rest becomes heat in the charger and the battery, so more is taken from the grid than the battery holds.\n\n**Formula:** $\\eta = \\dfrac{E_\\text{a}}{E_\\text{o}}$, so $E_\\text{o} = \\dfrac{E_\\text{a}}{\\eta}$\n\n**Conversions:** $15\\,\\text{Wh} = 15 \\cdot 1\\,\\text{W} \\cdot 3600\\,\\text{s} = 54\\,000\\,\\text{J}$ and $80\\,\\% = 0.80$; finally $1\\,\\text{J} = 0.001\\,\\text{kJ}$.\n\n**Substitution:** $E_\\text{o} = \\dfrac{54\\,000\\,\\text{J}}{0.80} = 67\\,500\\,\\text{J} = 67.5\\,\\text{kJ}$\n\n**Answer:** $68\\,\\text{kJ}$, two significant figures like the energy $15\\,\\text{Wh}$ and the efficiency $80\\,\\%$.\n\n**Reasonableness:** The energy taken in is a quarter greater than the energy going into the battery, $1 : 0.80 = 1.25$. The part that becomes heat is $67.5\\,\\text{kJ} - 54\\,\\text{kJ} = 13.5\\,\\text{kJ}$, which is felt as the charger warming up. The amount is small: less than $0.02\\,\\text{kWh}$."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain",
+      "prompt": "The town's combined heat and power plant has an overall efficiency of $88\\,\\%$ and an electrical efficiency of $30\\,\\%$. A councillor says: “The efficiency of a condensing power plant is only $40\\,\\%$, so combined heat and power is more than twice as good a way to produce electricity.” Evaluate the claim. Explain what causes the difference between the efficiencies and why the numbers cannot be compared directly.",
+      "criteria": [
+        "The answer says that in the overall efficiency both electricity and district heat count as useful, in a condensing power plant only electricity.",
+        "The answer says that in a condensing power plant the heat of the condenser is wasted, while in combined heat and power it heats district heating water.",
+        "The answer compares the electrical efficiencies: the $30\\,\\%$ of combined heat and power is even smaller than the $40\\,\\%$ of the condensing power plant.",
+        "The answer argues that electricity is more valuable than district heat, so the claim “twice as good” does not hold for electricity."
+      ],
+      "model": "The claim does not hold. The $88\\,\\%$ of combined heat and power is an overall efficiency: both electricity ($30\\,\\%$ of the fuel power) and district heat ($58\\,\\%$) count as useful. The $40\\,\\%$ of the condensing power plant is an electrical efficiency alone. The difference comes from the heat of the condenser: in a condensing power plant it is transferred to the sea or a lake as waste heat, in combined heat and power it heats district heating water. From the same fuel combined heat and power produces even less electricity, because the steam is condensed at a higher temperature. Electricity and heat are not equally valuable either: electricity can be used for anything and can be transmitted far, while district heat is good only for heating nearby. Combined heat and power is therefore an efficient way to produce electricity *and* heat when heat is needed, but not a producer of electricity that is twice as good.",
+      "practice": "Review combined heat and power and the overall efficiency in the chapter [*Energy production and the efficiency of power plants*](fy3-15.html)."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer first by yourself and only then open the answer."
+    }
+  ]
+}

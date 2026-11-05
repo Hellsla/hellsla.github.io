@@ -1,0 +1,986 @@
+{
+ "intro": "Koe kattaa koko moduulin: fysiikka tieteenä ja maailmankaikkeuden mittasuhteet, suureet ja yksiköt, mittaaminen ja tulosten luotettavuus, kuvaajat ja lineaarinen malli, tasainen liike, putoamiskiihtyvyys, tiheys sekä kokeellinen tutkiminen. Pisteytyksessä sama virhe vähentää pisteitä vain kerran: jos jatkat väärällä välituloksella oikein, saat myöhemmistä vaiheista pisteet.",
+ "minutes": 120,
+ "max_points": 70,
+ "sections": [
+  {
+   "title": "Osa 1: Perusosaaminen",
+   "tasks": [
+    "fy1-k1"
+   ]
+  },
+  {
+   "title": "Osa 2: Perustehtävät",
+   "choose": 2,
+   "tasks": [
+    "fy1-k2",
+    "fy1-k3",
+    "fy1-k4",
+    "fy1-k5"
+   ]
+  },
+  {
+   "title": "Osa 3: Soveltavat tehtävät",
+   "choose": 1,
+   "tasks": [
+    "fy1-k6",
+    "fy1-k7"
+   ]
+  }
+ ],
+ "tasks": [
+  {
+   "id": "fy1-k1",
+   "title": "Monivalinnat",
+   "text": "Valitse jokaisessa kohdassa yksi vaihtoehto. Oikea vastaus on $2$ p, väärä tai puuttuva $0$ p.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "choice",
+     "points": 2,
+     "text": "Atomin halkaisija on monta kertaa sen ytimen halkaisija. Mikä on oikea suuruusluokka?",
+     "options": [
+      "noin $10$ kertaa",
+      "noin $10^{2}$ kertaa",
+      "noin $10^{5}$ kertaa",
+      "noin $10^{10}$ kertaa"
+     ],
+     "correct": 2,
+     "tag": "concept"
+    },
+    {
+     "id": "b",
+     "kind": "choice",
+     "points": 2,
+     "text": "Mikä perusvuorovaikutus pitää elektronit atomissa ytimen lähellä?",
+     "options": [
+      "gravitaatio",
+      "sähkömagneettinen vuorovaikutus",
+      "vahva vuorovaikutus",
+      "heikko vuorovaikutus"
+     ],
+     "correct": 1,
+     "tag": "concept"
+    },
+    {
+     "id": "c",
+     "kind": "choice",
+     "points": 2,
+     "text": "Mikä seuraavista on SI-järjestelmän perussuure?",
+     "options": [
+      "sähkövirta",
+      "nopeus",
+      "tiheys",
+      "pinta-ala"
+     ],
+     "correct": 0,
+     "tag": "concept"
+    },
+    {
+     "id": "d",
+     "kind": "choice",
+     "points": 2,
+     "text": "Merkitään massaa $m$, tilavuutta $V$, tiheyttä $\\rho$, matkaa $s$ ja aikaa $t$. Minkä lausekkeen yksikkö on sama kuin nopeuden yksikkö?",
+     "options": [
+      "$\\dfrac{\\rho V}{m\\,t}$",
+      "$\\dfrac{\\rho\\,s}{m\\,t}$",
+      "$\\dfrac{m\\,t}{\\rho V s}$",
+      "$\\dfrac{m\\,s}{\\rho V t}$"
+     ],
+     "correct": 3,
+     "tag": "math"
+    },
+    {
+     "id": "e",
+     "kind": "choice",
+     "points": 2,
+     "text": "Mikropiirin johtimen leveys on $45\\,\\text{nm}$. Kuinka suuri leveys on metreinä?",
+     "options": [
+      "$4{,}5 \\cdot 10^{-11}\\,\\text{m}$",
+      "$4{,}5 \\cdot 10^{-8}\\,\\text{m}$",
+      "$4{,}5 \\cdot 10^{-6}\\,\\text{m}$",
+      "$4{,}5 \\cdot 10^{-5}\\,\\text{m}$"
+     ],
+     "correct": 1,
+     "tag": "math"
+    },
+    {
+     "id": "f",
+     "kind": "choice",
+     "points": 2,
+     "text": "Pyöräilijä ajoi $12{,}6\\,\\text{km}$ ajassa $0{,}75\\,\\text{h}$. Miten keskinopeus ilmoitetaan oikealla tarkkuudella?",
+     "options": [
+      "$16{,}8\\,\\text{km/h}$",
+      "$16{,}80\\,\\text{km/h}$",
+      "$17\\,\\text{km/h}$",
+      "$20\\,\\text{km/h}$"
+     ],
+     "correct": 2,
+     "tag": "math"
+    },
+    {
+     "id": "g",
+     "kind": "choice",
+     "points": 2,
+     "text": "Kaksi ryhmää mittasi saman pallon putoamisajan samalta korkeudelta. Ryhmä A sai tulokseksi $(1{,}42 \\pm 0{,}03)\\,\\text{s}$ ja ryhmä B $(1{,}47 \\pm 0{,}04)\\,\\text{s}$. Mikä päätelmä on perusteltu?",
+     "options": [
+      "Tulokset sopivat yhteen, koska niiden epävarmuusvälit ovat osittain päällekkäin.",
+      "Tulokset ovat ristiriidassa, koska ne eivät ole yhtä suuret.",
+      "Ryhmän A tulos on oikea, koska sen epävarmuus on pienempi.",
+      "Tuloksista ei voi päätellä mitään, koska kaikissa mittauksissa on virheitä."
+     ],
+     "correct": 0,
+     "tag": "experiment"
+    },
+    {
+     "id": "h",
+     "kind": "choice",
+     "points": 2,
+     "text": "Kuvaajassa on suoraa käytävää kulkevan kävelijän paikka $s$ ajan $t$ funktiona. Mikä väite pitää paikkansa?",
+     "options": [
+      "Kävelijä on levossa aikavälillä $0$–$4\\,\\text{s}$.",
+      "Kävelijän vauhti on suurin aikavälillä $7$–$9\\,\\text{s}$.",
+      "Kävelijä on lopuksi palannut lähtöpaikkaansa.",
+      "Aikavälillä $4$–$7\\,\\text{s}$ kävelijän nopeus on $6\\,\\text{m/s}$."
+     ],
+     "correct": 1,
+     "tag": "graph",
+     "figure": "fy1-koe/fy1-k1-walk"
+    },
+    {
+     "id": "i",
+     "kind": "choice",
+     "points": 2,
+     "text": "Kaksi samankokoista kuulaa, joiden massat ovat $0{,}2\\,\\text{kg}$ ja $2\\,\\text{kg}$, pudotetaan levosta yhtä aikaa. Ilmanvastus on merkityksetön. Mikä pitää paikkansa $0{,}5\\,\\text{s}$ kuluttua?",
+     "options": [
+      "Raskaamman kuulan nopeus on $10$ kertaa kevyemmän nopeus.",
+      "Raskaamman kuulan nopeus on vähän suurempi.",
+      "Kuulien nopeudet ovat yhtä suuret.",
+      "Kevyemmän kuulan nopeus on suurempi."
+     ],
+     "correct": 2,
+     "tag": "concept"
+    },
+    {
+     "id": "j",
+     "kind": "choice",
+     "points": 2,
+     "text": "Neljän kappaleen massat ja tilavuudet ovat: A $40\\,\\text{g}$ ja $50\\,\\text{cm}^3$, B $270\\,\\text{g}$ ja $100\\,\\text{cm}^3$, C $1{,}0\\,\\text{kg}$ ja $0{,}50\\,\\text{dm}^3$, D $79\\,\\text{g}$ ja $10\\,\\text{cm}^3$. Missä järjestyksessä kappaleiden tiheydet ovat pienimmästä suurimpaan?",
+     "options": [
+      "A, B, C, D",
+      "A, C, B, D",
+      "C, A, B, D",
+      "D, B, C, A"
+     ],
+     "correct": 1,
+     "tag": "math"
+    }
+   ],
+   "skills": [
+    "fy1-1",
+    "fy1-2",
+    "fy1-3",
+    "fy1-5",
+    "fy1-6",
+    "fy1-7"
+   ],
+   "links": {
+    "concept": "fy1-1",
+    "math": "fy1-2",
+    "experiment": "fy1-3",
+    "graph": "fy1-5"
+   }
+  },
+  {
+   "id": "fy1-k2",
+   "title": "Palava kynttilä",
+   "source": "example",
+   "source_note": "Mittaustulokset on laadittu esimerkiksi, eivätkä ne ole oikean mittauksen tuloksia.",
+   "text": "Opiskelija mittasi palavan kynttilän pituuden $L$ kymmenen minuutin välein. Huoneessa ei ollut vetoa.\n\n| $t\\ (\\text{min})$ | $L\\ (\\text{cm})$ |\n|---|---|\n| $0$ | $15{,}0$ |\n| $10$ | $13{,}9$ |\n| $20$ | $12{,}6$ |\n| $30$ | $11{,}5$ |\n| $40$ | $10{,}4$ |\n| $50$ | $9{,}1$ |",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "graph",
+     "points": 4,
+     "text": "Piirrä mittaustuloksista $(t, L)$-kuvaaja ja sovita siihen suora.",
+     "criteria": [
+      {
+       "key": "graph_axes",
+       "points": 1
+      },
+      {
+       "key": "graph_points",
+       "points": 1
+      },
+      {
+       "key": "graph_fit",
+       "points": 2,
+       "detail": "Suora kulkee pisteiden joukon keskeltä koko mittausalueella."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 5,
+     "text": "Kuinka monta senttimetriä kynttilä lyhenee minuutissa? Kirjoita myös kynttilän pituudelle mallin yhtälö.",
+     "answer": {
+      "value": 0.118,
+      "unit": "cm/min",
+      "tolerance": 0.06
+     },
+     "criteria": [
+      {
+       "key": "graph_read",
+       "points": 2,
+       "detail": "Kulmakerroin lasketaan suoralta kahdesta kaukana toisistaan olevasta pisteestä, ei kahdesta vierekkäisestä mittauspisteestä."
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "Noin $0{,}12\\,\\text{cm/min}$."
+      },
+      {
+       "text": "Kirjoittaa mallin $L = -0{,}12\\,\\tfrac{\\text{cm}}{\\text{min}} \\cdot t + 15{,}0\\,\\text{cm}$ ja tulkitsee kulmakertoimen negatiiviseksi, koska kynttilä lyhenee.",
+       "tag": "graph",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 3,
+     "text": "Milloin kynttilä on mallin mukaan $2{,}0\\,\\text{cm}$ pitkä?",
+     "answer": {
+      "value": 110,
+      "unit": "min",
+      "tolerance": 0.06
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Mallista ratkaistaan $t = \\tfrac{L - b}{k}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "Noin $110\\,\\text{min}$ eli vajaat kaksi tuntia sytyttämisestä."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "word",
+     "points": 3,
+     "text": "Kuinka luotettava c-kohdan ennuste on? Perustele.",
+     "criteria": [
+      {
+       "text": "Toteaa, että ennuste on mittausalueen ulkopuolella (ekstrapolointi), joten mittaukset eivät osoita mallin pätevän siellä.",
+       "tag": "graph",
+       "points": 1
+      },
+      {
+       "text": "Nimeää ainakin yhden syyn, miksi palaminen voi muuttua, esimerkiksi kynttilän paksuuden, sydämen pituuden tai vedon muutoksen.",
+       "tag": "experiment",
+       "points": 1
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Ennuste on suuruusluokka-arvio, ehkä kymmenien minuuttien tarkkuudella."
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy1-4"
+   ],
+   "links": {
+    "graph": "fy1-4",
+    "math": "fy1-4",
+    "experiment": "fy1-3",
+    "communication": "fy1-4"
+   }
+  },
+  {
+   "id": "fy1-k3",
+   "title": "Juoksija ja pyöräilijä",
+   "source": "example",
+   "text": "Elina lähtee kotiovelta juoksemaan suoraa rantareittiä tasaisella nopeudella $3{,}2\\,\\text{m/s}$. Aaro lähtee samasta paikasta samaan suuntaan pyörällä $5{,}0\\,\\text{min}$ myöhemmin ja ajaa tasaisella nopeudella $6{,}0\\,\\text{m/s}$. Mitataan aika $t$ Elinan lähdöstä ja paikka $s$ kotiovelta.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "graph",
+     "points": 4,
+     "text": "Piirrä Elinan ja Aaron $(t, s)$-kuvaajat samaan koordinaatistoon ensimmäisten $12$ minuutin ajalta.",
+     "criteria": [
+      {
+       "key": "graph_axes",
+       "points": 1
+      },
+      {
+       "text": "Elinan kuvaaja on origosta alkava suora, jonka kulmakerroin on $3{,}2\\,\\text{m/s}$.",
+       "tag": "graph",
+       "points": 1
+      },
+      {
+       "text": "Aaron kuvaaja alkaa kohdasta $(5{,}0\\,\\text{min};\\ 0\\,\\text{m})$ ja on jyrkempi suora.",
+       "tag": "graph",
+       "points": 1
+      },
+      {
+       "text": "Leikkauspiste on merkitty ja tulkittu hetkeksi, jolloin Aaro saavuttaa Elinan.",
+       "tag": "communication",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 6,
+     "text": "Milloin ja kuinka kaukana kotoa Aaro saavuttaa Elinan?",
+     "answer": [
+      {
+       "name": "t",
+       "value": 642.9,
+       "unit": "s",
+       "tolerance": 0.02
+      },
+      {
+       "name": "s",
+       "value": 2057,
+       "unit": "m",
+       "tolerance": 0.03
+      }
+     ],
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 2,
+       "detail": "Paikat $s_\\text{E} = v_\\text{E}t$ ja $s_\\text{A} = v_\\text{A}(t - t_0)$, kun $t_0 = 300\\,\\text{s}$."
+      },
+      {
+       "text": "Käyttää ehtoa, että saavutushetkellä molemmat ovat samassa paikassa.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$t \\approx 640\\,\\text{s} \\approx 11\\,\\text{min}$ Elinan lähdöstä, $s \\approx 2{,}1\\,\\text{km}$."
+      },
+      {
+       "key": "reasonableness",
+       "points": 1,
+       "detail": "Tulos sopii a-kohdan kuvaajan leikkauspisteeseen."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "word",
+     "points": 5,
+     "text": "Elinan nopeus tunnetaan vain epätarkasti: se on $(3{,}2 \\pm 0{,}2)\\,\\text{m/s}$. Arvioi, kuinka tarkasti kohtaamispaikka voidaan ennustaa. Vertaa kohtaamispaikan suhteellista epävarmuutta Elinan nopeuden suhteelliseen epävarmuuteen ja selitä ero.",
+     "criteria": [
+      {
+       "key": "uncertainty",
+       "points": 2,
+       "detail": "Laskee kohtaamispaikan nopeuden ääriarvoilla $3{,}0\\,\\text{m/s}$ ja $3{,}4\\,\\text{m/s}$: noin $1{,}8\\,\\text{km}$ ja $2{,}4\\,\\text{km}$."
+      },
+      {
+       "text": "Ilmoittaa tuloksen muodossa $s \\approx (2{,}1 \\pm 0{,}3)\\,\\text{km}$.",
+       "tag": "math",
+       "points": 1
+      },
+      {
+       "text": "Toteaa, että kohtaamispaikan suhteellinen epävarmuus (noin $15\\,\\%$) on yli kaksinkertainen Elinan nopeuden epävarmuuteen ($6\\,\\%$) verrattuna, ja selittää syyn: suurempi Elinan nopeus sekä pidentää etumatkaa että pienentää erotusnopeutta, joten vaikutukset summautuvat.",
+       "tag": "communication",
+       "points": 2
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy1-5",
+    "fy1-3"
+   ],
+   "links": {
+    "graph": "fy1-5",
+    "math": "fy1-5",
+    "transfer": "fy1-5",
+    "communication": "fy1-5",
+    "experiment": "fy1-3"
+   }
+  },
+  {
+   "id": "fy1-k4",
+   "title": "Heilurin heilahdukset",
+   "source": "example",
+   "source_note": "Mittaustulokset on laadittu esimerkiksi.",
+   "text": "Kuusi opiskelijaa mittasi sekuntikellolla saman heilurin kymmenen heilahduksen keston $t_{10}$. Yksi heilahdus tarkoittaa liikettä ääriasennosta toiseen ääriasentoon ja takaisin.\n\n| opiskelija | $t_{10}\\ (\\text{s})$ |\n|---|---|\n| $1$ | $14{,}2$ |\n| $2$ | $14{,}5$ |\n| $3$ | $13{,}9$ |\n| $4$ | $14{,}4$ |\n| $5$ | $14{,}1$ |\n| $6$ | $16{,}8$ |",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "word",
+     "points": 3,
+     "text": "Mitä tulokselle $16{,}8\\,\\text{s}$ pitää tehdä? Perustele.",
+     "criteria": [
+      {
+       "text": "Tunnistaa tuloksen karkeaksi virheeksi, koska se poikkeaa selvästi muista.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Esittää todennäköisen syyn: $16{,}8\\,\\text{s}$ vastaa noin $12$ heilahdusta, joten heilahduksia on laskettu väärin.",
+       "tag": "experiment",
+       "points": 1
+      },
+      {
+       "text": "Toteaa, että tulos jätetään pois vasta, kun syy on varmistettu, ja poisjättö perusteluineen kirjataan.",
+       "tag": "communication",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 6,
+     "text": "Ilmoita yhden heilahduksen kesto $T$ epävarmuuksineen.",
+     "answer": [
+      {
+       "name": "T",
+       "value": 1.42,
+       "unit": "s",
+       "tolerance": 0.01
+      },
+      {
+       "name": "dx",
+       "value": 0.03,
+       "unit": "s",
+       "tolerance": 0.01
+      }
+     ],
+     "criteria": [
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "Viiden tuloksen keskiarvo $\\bar{t}_{10} = 14{,}22\\,\\text{s}$."
+      },
+      {
+       "key": "uncertainty",
+       "points": 2,
+       "detail": "Vaihteluvälin puolikas $\\Delta t_{10} = \\tfrac{14{,}5\\,\\text{s} - 13{,}9\\,\\text{s}}{2} = 0{,}3\\,\\text{s}$."
+      },
+      {
+       "text": "Jakaa sekä keskiarvon että epävarmuuden kymmenellä: $T = \\tfrac{t_{10}}{10}$.",
+       "tag": "math",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 2,
+       "detail": "$T = (1{,}42 \\pm 0{,}03)\\,\\text{s}$: epävarmuus yhdellä merkitsevällä numerolla ja tulos samaan desimaaliin."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "word",
+     "points": 3,
+     "text": "Miksi kannattaa mitata kymmenen heilahduksen kesto eikä yhden?",
+     "criteria": [
+      {
+       "text": "Ajanoton suurin virhelähde on reaktioaika kellon käynnistyksessä ja pysäytyksessä.",
+       "tag": "experiment",
+       "points": 1
+      },
+      {
+       "text": "Reaktioajan aiheuttama virhe on suunnilleen yhtä suuri mitattiinpa yksi tai kymmenen heilahdusta.",
+       "tag": "experiment",
+       "points": 1
+      },
+      {
+       "text": "Kun pidempi aika jaetaan kymmenellä, virhe yhtä heilahdusta kohti pienenee kymmenesosaan.",
+       "tag": "math",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "word",
+     "points": 3,
+     "text": "Eräs opiskelija huomasi pysäyttäneensä kellon jokaisella kerralla hieman myöhässä. Millainen virhe tämä on? Paljastuuko se, kun mittausta toistetaan?",
+     "criteria": [
+      {
+       "text": "Virhe on systemaattinen, koska se siirtää kaikkia tuloksia samaan suuntaan.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Toistaminen ei paljasta eikä poista virhettä, sillä tulosten hajonta ei kasva.",
+       "tag": "experiment",
+       "points": 1
+      },
+      {
+       "text": "Virhe huomataan vertaamalla toiseen menetelmään tai vertailuarvoon, esimerkiksi videolta mitattuun aikaan.",
+       "tag": "experiment",
+       "points": 1
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy1-3"
+   ],
+   "links": {
+    "concept": "fy1-3",
+    "experiment": "fy1-3",
+    "communication": "fy1-3",
+    "math": "fy1-3"
+   }
+  },
+  {
+   "id": "fy1-k5",
+   "title": "Mistä ruuvit on tehty?",
+   "source": "example",
+   "text": "Opiskelija haluaa selvittää, mistä metallista samanlaiset ruuvit on tehty. Kahdenkymmenen ruuvin yhteismassa on $96\\,\\text{g}$. Mittalasissa on vettä $50{,}0\\,\\text{ml}$, ja kun ruuvit upotetaan veteen, pinta nousee lukemaan $62{,}5\\,\\text{ml}$. Kunkin mittalasin lukeman epävarmuus on $0{,}5\\,\\text{ml}$.\n\n| aine | $\\rho\\ (\\text{g/cm}^3)$ |\n|---|---|\n| alumiini | $2{,}70$ |\n| teräs | $7{,}85$ |\n| messinki | $8{,}5$ |\n| kupari | $8{,}96$ |",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 5,
+     "text": "Laske ruuvien tiheys.",
+     "answer": {
+      "value": 7.68,
+      "unit": "g/cm^3",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$\\rho = \\tfrac{m}{V}$, ja ruuvien tilavuus on lukemien erotus."
+      },
+      {
+       "key": "units_precision",
+       "points": 2,
+       "detail": "$1\\,\\text{ml} = 1\\,\\text{cm}^3$; $\\rho \\approx 7{,}7\\,\\text{g/cm}^3$."
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "key": "reasonableness",
+       "points": 1,
+       "detail": "Tiheys on metallien tiheyksien välillä."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "word",
+     "points": 3,
+     "text": "Mistä metallista ruuvit todennäköisimmin on tehty? Perustele.",
+     "criteria": [
+      {
+       "text": "Päättelee, että ruuvit ovat todennäköisimmin terästä.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Perustelee vertaamalla tulosta taulukon arvoihin: teräksen tiheys on lähimpänä.",
+       "tag": "communication",
+       "points": 1
+      },
+      {
+       "text": "Toteaa, että alumiini on selvästi poissuljettu, koska sen tiheys on noin kolmasosa.",
+       "tag": "math",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Voiko mittauksen perusteella sulkea pois sen, että ruuvit ovat messinkiä? Perustele mittausepävarmuuden avulla.",
+     "answer": [
+      {
+       "name": "min",
+       "value": 7.11,
+       "unit": "g/cm^3",
+       "tolerance": 0.02
+      },
+      {
+       "name": "max",
+       "value": 8.35,
+       "unit": "g/cm^3",
+       "tolerance": 0.02
+      }
+     ],
+     "criteria": [
+      {
+       "key": "uncertainty",
+       "points": 2,
+       "detail": "Tilavuuden epävarmuus on kahden lukeman epävarmuuksien summa $1{,}0\\,\\text{ml}$, joten $V$ on $11{,}5$–$13{,}5\\,\\text{cm}^3$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "Tiheys on välillä $7{,}1$–$8{,}3\\,\\text{g/cm}^3$."
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Messingin $8{,}5\\,\\text{g/cm}^3$ on juuri välin ulkopuolella: messinki on epätodennäköinen mutta niukasti, ja varma erottelu vaatisi tarkemman mittauksen."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "word",
+     "points": 3,
+     "text": "Miten mittausta voisi parantaa?",
+     "criteria": [
+      {
+       "text": "Käytetään enemmän ruuveja, jolloin tilavuuden muutos on suurempi ja sen suhteellinen epävarmuus pienempi.",
+       "tag": "experiment",
+       "points": 1
+      },
+      {
+       "text": "Käytetään kapeampaa mittalasia, jossa on tiheämpi asteikko.",
+       "tag": "experiment",
+       "points": 1
+      },
+      {
+       "text": "Huolehditaan, ettei ruuveihin jää ilmakuplia ja että ne punnitaan kuivina.",
+       "tag": "experiment",
+       "points": 1
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy1-7",
+    "fy1-3"
+   ],
+   "links": {
+    "math": "fy1-7",
+    "concept": "fy1-7",
+    "communication": "fy1-7",
+    "experiment": "fy1-3"
+   }
+  },
+  {
+   "id": "fy1-k6",
+   "title": "Pallo ja kahvinsuodatin",
+   "source": "example",
+   "source_note": "Aineisto on laadittu esimerkiksi tällaisesta videoanalyysistä.",
+   "text": "Opiskelijat pudottivat levosta kumipallon ja paperisen kahvinsuodattimen ja kuvasivat putoamiset. Videoanalyysillä he määrittivät kappaleiden nopeudet $v_\\text{pallo}$ ja $v_\\text{suodatin}$ eri hetkillä $t$ pudotuksen alusta.\n\n| $t\\ (\\text{s})$ | $v_\\text{pallo}\\ (\\text{m/s})$ | $v_\\text{suodatin}\\ (\\text{m/s})$ |\n|---|---|---|\n| $0{,}05$ | $0{,}47$ | $0{,}47$ |\n| $0{,}10$ | $0{,}99$ | $0{,}86$ |\n| $0{,}15$ | $1{,}45$ | $1{,}13$ |\n| $0{,}20$ | $1{,}95$ | $1{,}30$ |\n| $0{,}25$ | $2{,}44$ | $1{,}39$ |\n| $0{,}30$ | $2{,}90$ | $1{,}44$ |\n| $0{,}35$ | $3{,}41$ | $1{,}47$ |\n| $0{,}40$ | $3{,}87$ | $1{,}48$ |",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "graph",
+     "points": 6,
+     "text": "Piirrä molempien kappaleiden $(t, v)$-kuvaajat samaan koordinaatistoon. Sovita kummankin pisteisiin niihin sopiva malli.",
+     "criteria": [
+      {
+       "key": "graph_axes",
+       "points": 1
+      },
+      {
+       "key": "graph_points",
+       "points": 2,
+       "detail": "Kahden kappaleen pisteet on erotettu toisistaan värillä tai merkillä."
+      },
+      {
+       "key": "graph_fit",
+       "points": 2,
+       "detail": "Pallon pisteisiin on sovitettu origon kautta kulkeva suora, suodattimen pisteisiin kaareva käyrä eikä suoraa."
+      },
+      {
+       "text": "Kuvaajasta näkyy, että suodattimen nopeuden kasvu hidastuu ja nopeus lähestyy vakioarvoa.",
+       "tag": "graph",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 5,
+     "text": "Määritä pallon putoamiskiihtyvyys kuvaajasta. Vertaa tulosta arvoon $9{,}81\\,\\text{m/s}^2$.",
+     "answer": {
+      "value": 9.67,
+      "unit": "m/s^2",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "Kulmakerroin luetaan suoralta kahdesta kaukana toisistaan olevasta pisteestä."
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$v = gt$, joten $g$ on suoran kulmakerroin."
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$g \\approx 9{,}7\\,\\text{m/s}^2$."
+      },
+      {
+       "key": "reasonableness",
+       "points": 1,
+       "detail": "Ero on noin $1\\,\\%$: ilmanvastus on pallolle pieni, ja ero mahtuu videoanalyysin tarkkuuteen."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "word",
+     "points": 4,
+     "text": "Selitä, miksi kahvinsuodattimen kuvaaja poikkeaa pallon kuvaajasta.",
+     "criteria": [
+      {
+       "text": "Syy on ilmanvastus.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Suodatin on kevyt ja leveä, joten ilmanvastus vaikuttaa siihen paljon enemmän kuin palloon (myös: kevyt pinta-alaansa nähden).",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Alussa nopeus on pieni ja kappaleet kiihtyvät lähes samoin; nopeuden kasvaessa ilmanvastus kasvaa ja suodattimen nopeuden kasvu hidastuu.",
+       "tag": "communication",
+       "points": 1
+      },
+      {
+       "text": "Suodattimen nopeus lähestyy vakioarvoa noin $1{,}5\\,\\text{m/s}$, eikä malli $v = gt$ kuvaa sen liikettä.",
+       "tag": "graph",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "calc",
+     "points": 5,
+     "text": "Sama pallo pudotetaan korkean rakennuksen katolta. Laske b-kohdan mallilla pallon nopeus $1{,}2\\,\\text{s}$ kuluttua kilometreinä tunnissa. Arvioi, onko ennuste luotettava.",
+     "answer": {
+      "value": 42,
+      "unit": "km/h",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$v = gt$ b-kohdan kiihtyvyydellä (myös $9{,}81\\,\\text{m/s}^2$ hyväksytään)."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$1\\,\\text{m/s} = 3{,}6\\,\\text{km/h}$; $v \\approx 42\\,\\text{km/h}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "key": "assumptions",
+       "points": 2,
+       "detail": "Ennuste on mittausalueen ulkopuolella: kolminkertaisella nopeudella ilmanvastus on pallollekin suurempi, joten todellinen nopeus on jonkin verran pienempi."
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy1-6",
+    "fy1-4"
+   ],
+   "links": {
+    "graph": "fy1-4",
+    "math": "fy1-6",
+    "concept": "fy1-6",
+    "communication": "fy1-6",
+    "transfer": "fy1-6"
+   }
+  },
+  {
+   "id": "fy1-k7",
+   "title": "Paperiarkin paksuus",
+   "source": "example",
+   "source_note": "Mittaustulokset on laadittu esimerkiksi.",
+   "text": "Tulostinpaperin pakkauksessa lukee: $500$ arkkia, $80\\,\\text{g/m}^2$. Merkintä tarkoittaa, että yhden neliömetrin kokoisen arkin massa on $80\\,\\text{g}$. Käytössä on viivoitin, jossa on millimetriasteikko.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "word",
+     "points": 4,
+     "text": "Suunnittele, miten yhden arkin paksuus voidaan määrittää viivoittimella. Kerro, mitä mitataan ja miksi.",
+     "criteria": [
+      {
+       "text": "Mitataan arkkipinon paksuus eikä yksittäisen arkin, koska viivoittimen lukematarkkuus on noin $1\\,\\text{mm}$ ja arkki on paljon ohuempi.",
+       "tag": "experiment",
+       "points": 1
+      },
+      {
+       "text": "Pinon paksuus jaetaan arkkien määrällä, jolloin suhteellinen epävarmuus pienenee.",
+       "tag": "math",
+       "points": 1
+      },
+      {
+       "text": "Pino puristetaan joka kerta samalla tavalla tasaiseksi, jotta väliin jäävä ilma ei muuta tulosta.",
+       "tag": "experiment",
+       "points": 1
+      },
+      {
+       "text": "Mitataan usealla arkkimäärällä ja määritetään paksuus kuvaajan kulmakertoimesta, jolloin poikkeava tulos näkyy.",
+       "tag": "experiment",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "graph",
+     "points": 6,
+     "text": "Opiskelija mittasi eri arkkimäärien $N$ pinoille paksuuden $d$. Kunkin lukeman epävarmuus on $1\\,\\text{mm}$. Piirrä mittauksista $(N, d)$-kuvaaja ja sovita siihen suora. Pitääkö suoran kulkea origon kautta? Perustele.\n\n| $N$ | $100$ | $200$ | $300$ | $400$ | $500$ |\n|---|---|---|---|---|---|\n| $d\\ (\\text{mm})$ | $10$ | $21$ | $30$ | $41$ | $51$ |",
+     "criteria": [
+      {
+       "key": "graph_axes",
+       "points": 1
+      },
+      {
+       "key": "graph_points",
+       "points": 2
+      },
+      {
+       "key": "graph_fit",
+       "points": 2,
+       "detail": "Suora kulkee pisteiden joukon keskeltä."
+      },
+      {
+       "text": "Perustelee, että suoran kuuluu kulkea origon kautta: nollan arkin pino on nollan paksuinen, ja pisteet sopivat tähän epävarmuuden rajoissa.",
+       "tag": "concept",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 5,
+     "text": "Määritä yhden arkin paksuus mikrometreinä ja arvioi tuloksen epävarmuus.",
+     "answer": [
+      {
+       "name": "d",
+       "value": 102,
+       "unit": "um",
+       "tolerance": 0.03
+      },
+      {
+       "name": "dx",
+       "value": 2,
+       "unit": "um",
+       "tolerance": 0.01
+      }
+     ],
+     "criteria": [
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "Kulmakerroin suoran kaukaisesta pisteestä, esimerkiksi $\\tfrac{51\\,\\text{mm}}{500}$."
+      },
+      {
+       "key": "units_precision",
+       "points": 2,
+       "detail": "$0{,}102\\,\\text{mm} = 102\\,\\mu\\text{m}$."
+      },
+      {
+       "key": "uncertainty",
+       "points": 2,
+       "detail": "Annettu lukeman epävarmuus $1\\,\\text{mm}$ jaettuna $500$ arkilla on $2\\,\\mu\\text{m}$: $d = (102 \\pm 2)\\,\\mu\\text{m}$."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "calc",
+     "points": 5,
+     "text": "Laske paperin tiheys ja vertaa sitä veden tiheyteen.",
+     "answer": {
+      "value": 784,
+      "unit": "kg/m^3",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "text": "Yhden neliömetrin arkin tilavuus on $V = 1\\,\\text{m}^2 \\cdot d$.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$\\rho = \\tfrac{m}{V}$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$102\\,\\mu\\text{m} = 1{,}02 \\cdot 10^{-4}\\,\\text{m}$ ja $80\\,\\text{g} = 0{,}080\\,\\text{kg}$; $\\rho \\approx 780\\,\\text{kg/m}^3$."
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "key": "reasonableness",
+       "points": 1,
+       "detail": "Tiheys on pienempi kuin veden $1000\\,\\text{kg/m}^3$, koska paperin kuitujen välissä on ilmaa."
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy1-8",
+    "fy1-4",
+    "fy1-7"
+   ],
+   "links": {
+    "experiment": "fy1-8",
+    "math": "fy1-2",
+    "concept": "fy1-4",
+    "graph": "fy1-4",
+    "transfer": "fy1-7"
+   }
+  }
+ ]
+}

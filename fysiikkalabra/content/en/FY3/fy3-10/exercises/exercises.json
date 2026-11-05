@@ -3,6 +3,7 @@
     {
       "id": "fy3-10-L1-01",
       "level": 1,
+      "core": true,
       "text": "The volume of the inside of a fridge is $0.250\\,\\text{m}^3$. When the door has been closed for a long time, the temperature of the air in the fridge is $278\\,\\text{K}$ and the pressure is $1.01 \\cdot 10^5\\,\\text{Pa}$. How many moles of air are in the fridge? Use the value $R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$.",
       "answer": 10.9,
       "unit": "mol",
@@ -43,6 +44,7 @@
     {
       "id": "fy3-10-L1-06",
       "level": 1,
+      "core": true,
       "text": "What does the amount of substance $n$ describe in the equation of state of an ideal gas $pV = nRT$?",
       "kind": [
         "concept"
@@ -117,7 +119,8 @@
     {
       "id": "fy3-10-L2-01",
       "level": 2,
-      "text": "The pressure gauge of the oxygen cylinder of an ambulance is broken. The volume of the cylinder is $10.0\\,\\textsf{l}$, and weighing shows that the cylinder contains $2.40\\,\\text{kg}$ of oxygen. The temperature in the garage is $15\\,{}^\\circ\\text{C}$. What is the pressure of the oxygen in the cylinder in bars ($1\\,\\text{bar}$ = $100\\,\\text{kPa}$)? The molar mass of oxygen is $32.0\\,\\text{g/mol}$. Use the value $R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$ and assume that oxygen obeys the equation of state of an ideal gas.",
+      "core": true,
+      "text": "The pressure gauge of the oxygen cylinder of an ambulance is broken. The volume of the cylinder is $10.0\\,\\textsf{l}$, and weighing shows that the cylinder contains $2.40\\,\\text{kg}$ of oxygen. The temperature in the garage is $15\\,{}^\\circ\\text{C}$.\n\nWhat is the pressure of the oxygen in the cylinder in bars ($1\\,\\text{bar}$ = $100\\,\\text{kPa}$)?\n\nThe molar mass of oxygen is $32.0\\,\\text{g/mol}$. Use the value $R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$ and assume that oxygen obeys the equation of state of an ideal gas.",
       "answer": 180,
       "unit": "bar",
       "tolerance": 0.02
@@ -150,6 +153,7 @@
     {
       "id": "fy3-10-L2-05",
       "level": 2,
+      "core": true,
       "text": "A motorist suspects that the tyre of a passenger car is leaking. The motorist measures the total pressure of the air in the tyre before driving and immediately after a long drive (example data set). The volume of the tyre is assumed to stay the same.\n\na) Calculate how high the pressure in the tyre would be after the drive if no air had leaked.\n\nb) What percentage of the original amount of air in the tyre has leaked? Justify with the equation of state why measuring the pressure alone is not enough to show a leak.\n\nThe answer box takes the result of part b).",
       "kind": [
         "data",

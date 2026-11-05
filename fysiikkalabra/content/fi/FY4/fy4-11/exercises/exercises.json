@@ -39,12 +39,85 @@
       "answer": 1.2,
       "unit": "s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-11-L1-06",
+      "level": 1,
+      "core": true,
+      "text": "Kuljettaja ajaa tasaisella nopeudella $20\\,\\text{m/s}$. Väsymyksen vuoksi hänen reaktioaikansa pitenee $1{,}0\\,\\text{s}$:sta $2{,}0\\,\\text{s}$:iin. Nopeus ja auton hidastuvuus jarrutuksessa pysyvät samoina. Mikä väite pysähtymismatkasta on oikein?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Vain reaktiomatka pitenee, koska jarrutus alkaa vasta reaktioajan jälkeen",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Sekä reaktiomatka että jarrutusmatka pitenevät, koska pysähtyminen kestää kauemmin",
+          "feedback": "Jarrutusmatka lasketaan vasta jarrutuksen alusta: se riippuu vain alkunopeudesta ja hidastuvuudesta, $s_\\text{j} = \\tfrac{v_0^2}{2a}$. Reaktioaika ei vaikuta siihen, koska reaktioajan auto vain jatkaa tasaisella nopeudella."
+        },
+        {
+          "text": "Pysähtymismatka pysyy samana, koska nopeus ja hidastuvuus eivät muutu",
+          "feedback": "Pysähtymismatkaan kuuluu myös reaktiomatka $s_\\text{r} = v_0\\,t_\\text{r}$. Kun reaktioaika kaksinkertaistuu, reaktiomatka kaksinkertaistuu, vaikka nopeus ja hidastuvuus eivät muutu."
+        },
+        {
+          "text": "Vain reaktiomatka pitenee, koska jarrutus alkaa vasta reaktioajan jälkeen",
+          "feedback": "Oikein: reaktioajan auto kulkee tasaisella nopeudella, joten reaktiomatka kasvaa $20\\,\\text{m}$:stä $40\\,\\text{m}$:iin. Jarrutusmatka alkaa vasta sen jälkeen ja on sama kuin ennen.",
+          "correct": true
+        },
+        {
+          "text": "Reaktiomatka pysyy samana, koska auto kulkee sen aina samalla nopeudella",
+          "feedback": "Reaktiomatka on nopeus kertaa aika, $s_\\text{r} = v_0\\,t_\\text{r}$. Vaikka nopeus on sama, pidempi aika tarkoittaa pidempää matkaa."
+        }
+      ]
+    },
+    {
+      "id": "fy4-11-L1-07",
+      "level": 1,
+      "text": "Kolarissa auto pysähtyy hetkessä. Turvavyö pysäyttää vyöhön kiinnitetyn matkustajan hitaammin kuin törmäys jäykkään pintaan ilman vyötä. Mikä seikka selittää, miksi vyö pienentää matkustajaan kohdistuvaa keskimääräistä voimaa?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Liikemäärän muutos on sama, mutta vyö pidentää aikaa, jossa muutos tapahtuu",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Vyö pienentää liikemäärän muutosta, koska matkustaja ehtii hidastua ennen törmäystä",
+          "feedback": "Matkustajan liikemäärä muuttuu arvosta $m\\,v$ nollaan joka tapauksessa, joten liikemäärän muutos on sama vyön kanssa ja ilman. Vyö ei hidasta häntä ennen törmäystä, koska hän liikkuu auton mukana."
+        },
+        {
+          "text": "Vyö kasvattaa matkustajaan kohdistuvaa impulssia, joten voima pienenee",
+          "feedback": "Impulssi on yhtä suuri kuin liikemäärän muutos, ja se on sama vyön kanssa ja ilman. Jos impulssi kasvaisi samalla kun aika pysyisi samana, voima kasvaisi eikä pienenisi."
+        },
+        {
+          "text": "Liikemäärän muutos on sama, mutta vyö pidentää aikaa, jossa muutos tapahtuu",
+          "feedback": "Oikein: koska $F_\\text{ka}\\,\\Delta t = m\\,\\Delta v$ ja $m\\,\\Delta v$ on vakio, pidempi aika $\\Delta t$ tarkoittaa pienempää keskimääräistä voimaa.",
+          "correct": true
+        },
+        {
+          "text": "Vyö ottaa osan liikemäärästä itselleen, joten matkustajan liikemäärä muuttuu vähemmän",
+          "feedback": "Matkustajan liikemäärä muuttuu aina arvosta $m\\,v$ nollaan, kun hän pysähtyy. Vyö vaikuttaa vain siihen, kuinka pitkässä ajassa muutos tapahtuu."
+        }
+      ]
+    },
+    {
+      "id": "fy4-11-L1-08",
+      "level": 1,
+      "text": "Auto jarruttaa vaakasuoralla sorapäällysteisellä tiellä niin lujaa kuin pito sallii. Renkaiden ja tien välinen kitkakerroin on $0{,}75$. Ilmanvastus jätetään huomiotta. Kuinka suuri on auton hidastuvuus?",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 7.4,
+      "unit": "m/s²",
+      "tolerance": 0.02
     }
   ],
   "level2": [
     {
       "id": "fy4-11-L2-01",
       "level": 2,
+      "core": true,
       "text": "Auto ajaa nopeudella $90\\,\\text{km/h}$. Kuljettajan reaktioaika on $1{,}5\\,\\text{s}$, ja auton hidastuvuus jarrutuksessa on $7{,}5\\,\\text{m/s}^2$. Kuinka pitkä on pysähtymismatka?",
       "answer": 79.16666666666666,
       "unit": "m",
@@ -53,6 +126,7 @@
     {
       "id": "fy4-11-L2-02",
       "level": 2,
+      "core": true,
       "text": "Auto ajaa lumisella vaakasuoralla tiellä nopeudella $100\\,\\text{km/h}$. Renkaiden ja lumen välinen kitkakerroin on $0{,}30$. Kuinka pitkä on jarrutusmatka, kun auto jarruttaa niin lujaa kuin pito sallii? Ilmanvastus jätetään huomiotta.",
       "answer": 131.09156273727572,
       "unit": "m",
@@ -72,6 +146,97 @@
       "text": "Poliisi mittaa onnettomuuspaikalla auton jarrutusjäljen pituudeksi $32{,}0\\,\\text{m}$. Auto pysähtyi jäljen päähän. Auton hidastuvuus on arvioitu $8{,}0\\,\\text{m/s}^2$:ksi. Kuinka suuri oli auton nopeus jarrutuksen alussa? Vastaa yksikössä $\\text{km/h}$.",
       "answer": 81.45870119269028,
       "unit": "km/h",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-11-L2-05",
+      "level": 2,
+      "core": true,
+      "text": "Koeradalla mitattiin henkilöauton jarrutusmatka $s_\\text{j}$ eri alkunopeuksilla $v_0$. Auto jarrutti vakiohidastuvuudella pysähtymiseen asti vaakasuoralla kuivalla tiellä. Taulukossa on esimerkkiaineisto.\n\nLaske nopeuksien neliöt ja piirrä $(v_0^2, s_\\text{j})$-kuvaaja. Sovita pisteisiin origon kautta kulkeva suora ja määritä sen kulmakertoimen avulla auton hidastuvuus.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 7.9,
+      "unit": "m/s²",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Auton jarrutusmatka eri alkunopeuksilla (esimerkkiaineisto)",
+        "columns": [
+          "$v_0\\,(\\text{m/s})$",
+          "$s_\\text{j}\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "10.0",
+            "6.5"
+          ],
+          [
+            "15.0",
+            "14.1"
+          ],
+          [
+            "20.0",
+            "25.9"
+          ],
+          [
+            "25.0",
+            "39.6"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-11-L2-06",
+      "level": 2,
+      "text": "Törmäyskokeessa auto ajetaan seinää vasten. Autossa on vyöhön kiinnitetty $75{,}0\\,\\text{kg}$:n koehenkilönukke. Eri kokeissa nuken pysähtymisaikaa $\\Delta t$ muutettiin vyön joustoa säätämällä, ja jokaisessa kokeessa mitattiin nukkeen kohdistuva keskimääräinen voima $F_\\text{ka}$. Nukke oli kaikissa kokeissa samalla nopeudella ennen törmäystä ja pysähtyi kokonaan. Taulukossa on esimerkkiaineisto.\n\nPiirrä kuvaaja, jonka vaaka-akselilla on $\\tfrac{1}{\\Delta t}$ ja pystyakselilla $F_\\text{ka}$, ja sovita pisteisiin origon kautta kulkeva suora. Määritä sen kulmakertoimen avulla nuken nopeus ennen törmäystä yksikössä $\\text{km/h}$.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 60,
+      "unit": "km/h",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Nuken pysähtymisaika ja keskimääräinen voima (esimerkkiaineisto)",
+        "columns": [
+          "$\\Delta t\\,(\\text{s})$",
+          "$F_\\text{ka}\\,(\\text{kN})$"
+        ],
+        "rows": [
+          [
+            "0.050",
+            "24.8"
+          ],
+          [
+            "0.080",
+            "15.9"
+          ],
+          [
+            "0.100",
+            "12.6"
+          ],
+          [
+            "0.150",
+            "8.3"
+          ],
+          [
+            "0.200",
+            "6.3"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-11-L2-07",
+      "level": 2,
+      "text": "Opiskelija ratkaisee tehtävän: \"Auton jarrutusmatka nopeudesta $50\\,\\text{km/h}$ pysähdyksiin on $12{,}0\\,\\text{m}$. Nopeus $90\\,\\text{km/h}$ on $1{,}8$-kertainen, joten myös jarrutusmatka on $1{,}8$-kertainen: $1{,}8 \\cdot 12{,}0\\,\\text{m} = 21{,}6\\,\\text{m}$.\"\n\nAuton hidastuvuus on molemmissa jarrutuksissa vakio ja yhtä suuri, tie on vaakasuora ja ilmanvastus jätetään huomiotta.\n\na) Selitä, mikä virhe opiskelijan päättelyssä on.\n\nb) Laske oikea jarrutusmatka nopeudesta $90\\,\\text{km/h}$.\n\nVastauslaatikkoon tulee kohdan b) jarrutusmatka.",
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "answer": 38.9,
+      "unit": "m",
       "tolerance": 0.02
     }
   ],
@@ -99,6 +264,94 @@
       "answer": 35.93964334705075,
       "unit": "m",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-11-L3-04",
+      "level": 3,
+      "text": "Tienpitäjä tarkastelee maantien suoraa osuutta jyrkän mutkan jälkeen. Kuljettaja näkee tiellä olevan esteen mutkan jälkeen vasta $55\\,\\text{m}$:n päästä, ja nopeusrajoitus on $80\\,\\text{km/h}$. Märällä asfaltilla mitattiin henkilöauton pysähtymismatka $s_\\text{p}$ eri nopeuksilla $v$. Reaktioaika ja hidastuvuus olivat kaikissa ajoissa samat, tie oli vaakasuora ja ilmanvastus jätetään huomiotta. Taulukossa on esimerkkiaineisto.\n\na) Muunna nopeudet yksikköön $\\text{m/s}$ ja laske suhde $\\tfrac{s_\\text{p}}{v}$. Piirrä kuvaaja $\\left(v, \\tfrac{s_\\text{p}}{v}\\right)$ ja määritä sen suoran avulla reaktioaika $t_\\text{r}$ ja hidastuvuus $a$. Vihje: jaa pysähtymismatkan kaava nopeudella $v$.\n\nb) Laske suurin nopeus, jolla auto ehtii pysähtyä ennen estettä märällä tiellä. Vastaa yksikössä $\\text{km/h}$.\n\nc) Laske pysähtymismatka nopeudella $80\\,\\text{km/h}$ ja perustele sen avulla, onko nopeusrajoitus sopiva tälle tiejaksolle.\n\nVastauslaatikkoon tulee kohdan b) nopeus.",
+      "kind": [
+        "data",
+        "graph",
+        "model"
+      ],
+      "answer": 66,
+      "unit": "km/h",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Pysähtymismatka märällä asfaltilla (esimerkkiaineisto)",
+        "columns": [
+          "$v\\,(\\text{km/h})$",
+          "$s_\\text{p}\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "30",
+            "17.0"
+          ],
+          [
+            "50",
+            "35.5"
+          ],
+          [
+            "70",
+            "60.0"
+          ],
+          [
+            "90",
+            "92.0"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-11-L3-05",
+      "level": 3,
+      "text": "Törmäyskokeessa auto ajaa seinään nopeudella $54\\,\\text{km/h}$. Autossa on vyöhön kiinnitetty $80{,}0\\,\\text{kg}$:n koehenkilönukke ja turvatyyny. Mittaus alkaa törmäyshetkestä, jolloin nuken nopeus on vielä $15{,}0\\,\\text{m/s}$. Taulukossa on esimerkkiaineisto nuken nopeudesta. Oletetaan, että nukke liikkuu suoraan eteenpäin ja että nukkeen vaikuttava kokonaisvoima osoittaa koko ajan liikettä vastaan.\n\na) Laske nuken pysähtymismatka. Käytä kullakin $20\\,\\text{ms}$:n välillä välin alun ja lopun nopeuden keskiarvoa keskinopeutena.\n\nb) Laske nukkeen kohdistuva keskimääräinen voima koko pysähtymisen aikana.\n\nc) Laske nukkeen kohdistuva suurin voima olettaen, että hidastuvuus on kullakin $20\\,\\text{ms}$:n välillä vakio.\n\nd) Perustele impulssin avulla, miksi turvavyö ja turvatyyny yhdessä pienentävät voimaa verrattuna tilanteeseen, jossa nukke pysähtyisi ajassa $0{,}010\\,\\text{s}$.\n\nVastauslaatikkoon tulee kohdan c) voima.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 18.0,
+      "unit": "kN",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Nuken nopeus törmäyksen aikana (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{ms})$",
+          "$v\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "15.0"
+          ],
+          [
+            "20",
+            "13.4"
+          ],
+          [
+            "40",
+            "10.1"
+          ],
+          [
+            "60",
+            "5.6"
+          ],
+          [
+            "80",
+            "2.2"
+          ],
+          [
+            "100",
+            "0.7"
+          ],
+          [
+            "120",
+            "0.0"
+          ]
+        ]
+      }
     }
   ]
 }

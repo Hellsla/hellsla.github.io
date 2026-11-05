@@ -1,14 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 0fdb00d7ade003fa
+CONTENT-HASH: a0681aa6ababb603
+Mode: translation
+Round: 1
 
 ## Blocking
+(none)
+
+## Fixed
+- exercises.json L1-06 (two feedbacks), L2-06 (a), L3-04 (a) and solutions.md L1-06, L1-07, L2-05 — natural English: "the galaxy's own motion" for "the own motion of the galaxy", "during the light's journey", "explain why ... from the units alone", "the model's speed". Meaning, numbers and LaTeX unchanged.
 
 ## Polish
-- Packet (tooling) — the en exercise brief in packet-science.md is still empty (Finnish heading filter); not a content issue (carried).
+(none)
 
 ## Checked
-- Delta re-review: the only change since the passed version is commit fd2e54e95 in exercises/solutions.md (360 px narrowing); hash 0fdb00d7ade003fa equals the packet's, at start and end. No task, answer, unit, tolerance or other file changed.
-- solutions.md:47 (L1-05) — `\dfrac{6.626·10⁻³⁴ J s · 2.998·10⁸ m/s}{X}` → `6.626·10⁻³⁴ J s · \dfrac{2.998·10⁸ m/s}{X}` is identical (a·b/X = a·(b/X)); X = 1.06 · 10⁻³ m still the denominator, braces balanced (old numerator's closing brace now closes the new one), units J s · m/s / (m) give J; recomputed 1.8740 · 10⁻²² J → 1.1698 · 10⁻³ eV, as written.
-- solutions.md:77 (L2-03) — `\dfrac{6.626·10⁻³⁴ J s · 2.998·10⁸ m/s}{X}` → `6.626·10⁻³⁴ J s · \dfrac{2.998·10⁸ m/s}{X}` is identical (a·b/X = a·(b/X)); X = 9.636 · 10⁻⁷ m still the denominator, braces balanced (old numerator's closing brace now closes the new one), units J s · m/s / (m) give J; recomputed 2.0615 · 10⁻¹⁹ J → 1.287 eV, as written.
-- Decimal point kept in every changed number; `\,\text{}` units unchanged.
-- Previous review's recomputation of all 12 answers and its other checks stand (content unchanged).
+- Ids L1-06..08, L2-05..07, L3-04..05 present and in the same order as fi; kind, level, unit, tolerance and correct flags identical.
+- Answers identical to fi: 69.2 km/s/Mpc, 68.45 km/s/Mpc, 170.9 Mpc, 1.885, 10.9 K; multiple-choice exactly one correct choice in L1-06, L1-08, L2-07, the same one as in fi.
+- Data tables L2-05 (9 rows) and L3-04 (7 rows x 3 columns): every cell equals fi; symbols v_obs/v_vis (en) and v_hav/v_näk (fi-easy) consistent with the fi pair.
+- Numbers and LaTeX identical to fi apart from the decimal separator (point); check_i18n en: 0 errors (formula parity).
+- solutions.md: sums 11 439 330 and 167 127, 28 Mpc deviation 18 %, z = 3.000, k = 4.000, 10.9 K all as in fi; no maths changed.

@@ -3,6 +3,7 @@
     {
       "id": "fy3-12-L1-01",
       "level": 1,
+      "core": true,
       "text": "Hirsimökin yläpohjan pinta-ala on $45\\,\\text{m}^2$ ja U-arvo $0{,}24\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. Mökissä on $22\\,{}^\\circ\\text{C}$ ja ulkona $-18\\,{}^\\circ\\text{C}$. Kuinka suuri lämpöteho johtuu yläpohjan läpi ulos?",
       "answer": 432,
       "unit": "W",
@@ -44,6 +45,7 @@
     {
       "id": "fy3-12-L1-06",
       "level": 1,
+      "core": true,
       "text": "Istut tuulettomana iltana nuotion edessä, ja kasvosi tuntuvat lämpimiltä, vaikka nuotion ja kasvojesi välissä oleva ilma on viileää. Miten lämpöä siirtyy pääasiassa nuotiolta kasvoihisi?",
       "kind": [
         "concept"
@@ -136,6 +138,7 @@
     {
       "id": "fy3-12-L2-01",
       "level": 2,
+      "core": true,
       "text": "Kesämökin seinien pinta-ala on $70\\,\\text{m}^2$ ja U-arvo $0{,}50\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. Yläpohjan pinta-ala on $50{,}0\\,\\text{m}^2$ ja U-arvo $0{,}30\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. Muiden rakenteiden läpi johtuva lämpö jätetään huomiotta. Talviviikonloppuna mökkiä lämmittävät sähköpatterit, joiden yhteisteho on $2{,}0\\,\\text{kW}$. Mikä on alin ulkolämpötila, jossa patterit pystyvät pitämään mökissä $20\\,{}^\\circ\\text{C}$?",
       "answer": -20,
       "unit": "°C",
@@ -226,6 +229,7 @@
     {
       "id": "fy3-12-L2-07",
       "level": 2,
+      "core": true,
       "text": "Oppilaat tutkivat seinäpaneelin eristyskykyä. Paneelin pinta-ala on $0{,}50\\,\\text{m}^2$. Paneelin sisäpuolta lämmitetään sähkövastuksella, joka pitää lämpötilat vakioina, ja mitataan paneelin läpi johtuva teho $P$ eri lämpötilaeroilla $\\Delta T$ (esimerkkiaineisto).\n\na) Piirrä pisteet $(\\Delta T, P)$-koordinaatistoon ja sovita niihin origon kautta kulkeva suora. Perustele, miksi suoran kuuluu kulkea origon kautta. Suora kulkee likimain pisteen $(50{,}0\\,\\text{K};\\ 8{,}75\\,\\text{W})$ kautta. Määritä suoran kulmakertoimesta paneelin U-arvo.\n\nb) Mitä pisteiden asettuminen suoralle kertoo tehon ja lämpötilaeron välisestä riippuvuudesta? Miksi lämpötilojen oli pysyttävä vakioina mittauksen ajan?\n\nAnna a)-kohdan U-arvo vastauslaatikkoon.",
       "kind": [
         "data",

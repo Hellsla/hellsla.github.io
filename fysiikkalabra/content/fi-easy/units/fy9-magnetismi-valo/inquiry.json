@@ -1,0 +1,479 @@
+{
+  "version": 1,
+  "contribution": "Kertaustunnilla kootaan FY7-moduulin asiat kolmeksi malliksi. Asiat ovat magneettikenttä, varatun hiukkasen liike sähkö- ja magneettikentässä, virtajohtimen ja käämin kenttä, voima virtajohtimeen, induktio ja Lenzin laki, generaattori, vaihtovirta, muuntaja ja sähkönsiirto, sähkömagneettinen säteily sekä valon heijastuminen, taittuminen, dispersio, kokonaisheijastuminen, interferenssi, hila, ohut kalvo ja polarisaatio. Kolme mallia ovat nämä: kenttä kohdistaa voiman liikkuvaan varaukseen, muuttuva vuo synnyttää jännitteen, ja valo on sähkömagneettinen aalto. Tunnilla harjoitellaan ylioppilaskokeen tyyppisiä tehtäviä: voiman suunnan päättely, vuon muutos ja Lenzin laki, siirtohäviö, rajakulma, hila ja ohut kalvo, suoran johtimen kentän linearisoitu aineisto, hilaraportin arviointi ja FY5:n ympyräliikkeen yhdistäminen syklotroniin.",
+  "learn": [
+    "ratkaisemaan magnetismi-, induktio- ja valotehtäviä: valitset sopivan mallin ja tarkistat sen ehdot",
+    "piirtämään ja tulkitsemaan kuvaajia, jotka on tehty magneettikentän ja valon mittauksista",
+    "arvioimaan perustellusti väitteitä ja mittausraportteja, jotka koskevat sähkönsiirtoa ja valoilmiöitä"
+  ],
+  "prior": [
+    "Magneettinen voima vaikuttaa liikkuvaan varaukseen. Voima on kohtisuorassa sekä nopeutta että kenttää vastaan (luku *Varatun hiukkasen liike sähkö- ja magneettikentässä*)",
+    "Induktiojännite syntyy, kun magneettivuo muuttuu (luku *Sähkömagneettinen induktio*)",
+    "Muuntaja muuttaa vaihtojännitettä. Siirtojohdon häviöteho on $P_\\text{h} = RI^2$ (luku *Muuntaja ja sähköenergian siirto*)",
+    "Valo taittuu rajapinnassa taittumislain $n_1\\sin\\alpha_1 = n_2\\sin\\alpha_2$ mukaan (luku *Valon heijastuminen ja taittuminen*)",
+    "Hilan maksimit ovat niissä suunnissa, joille $d\\sin\\theta = k\\lambda$ (luku *Valon interferenssi ja diffraktio*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Saaristokylässä on kymmenen mökkiä. Ne saavat sähkönsä mantereelta merikaapelia pitkin. Kaapelin pituus on $1{,}0\\,\\text{km}$. Kaapelin johtimien yhteinen resistanssi on $0{,}50\\,\\Omega$. Kaapelia pitkin siirretään mantereelta enintään $40\\,\\text{kW}$:n teho. Mökeissä jännite on $230\\,\\text{V}$, mutta kaapelissa siirtojännite on $20\\,\\text{kV}$. Kokeessa tällainen tilanne voi olla tehtävän alku: luvut on annettu, mutta kaavaa ei ole annettu.",
+      "question": "Kuinka suuri virta kaapelissa kulkisi kummallakin jännitteellä? Kuinka suuri osa tehosta muuttuisi kaapelissa lämmöksi?"
+    },
+    {
+      "id": "lt-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Lähtötaso 1: protoni magneettikentässä",
+      "prompt": "Protoni lentää tyhjiökammiossa. Se liikkuu kohtisuoraan homogeenista magneettikenttää vastaan. Homogeeninen tarkoittaa, että kenttä on joka kohdassa samanlainen. Sähkökenttää ei ole. Miten protonin liike muuttuu kentässä?",
+      "choices": [
+        {
+          "text": "Protoni kiihtyy kentän suuntaan, koska kenttä vetää varausta.",
+          "feedback": "Magneettinen voima ei osoita kentän suuntaan. Se on kohtisuorassa sekä nopeutta että kenttää vastaan. Siksi se ei voi kiihdyttää protonia kentän suuntaan. Kertaa luvussa *Varatun hiukkasen liike sähkö- ja magneettikentässä*."
+        },
+        {
+          "text": "Protoni kiertää ympyrää, ja sen vauhti pysyy samana.",
+          "feedback": "Oikein. Voima $F = qvB$ on koko ajan kohtisuorassa nopeutta vastaan. Siksi se ei tee työtä. Voima kääntää liikkeen suuntaa ja on keskeisvoima eli voima, joka osoittaa ympyrän keskipisteeseen. Radan säde on $r = \\tfrac{mv}{qB}$. Kertaa tarvittaessa luvussa *Varatun hiukkasen liike sähkö- ja magneettikentässä*.",
+          "correct": true
+        },
+        {
+          "text": "Protoni hidastuu, koska kenttä jarruttaa liikkuvaa varausta.",
+          "feedback": "Magneettinen voima on kohtisuorassa nopeutta vastaan. Siksi se ei jarruta eikä lisää vauhtia. Tässä tilanteessa vain sähkökenttä voisi muuttaa vauhtia. Kertaa luvussa *Varatun hiukkasen liike sähkö- ja magneettikentässä*."
+        }
+      ]
+    },
+    {
+      "id": "lt-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Lähtötaso 2: magneetti käämin sisällä",
+      "prompt": "Voimakas neodyymimagneetti on paikallaan käämin sisällä. Käämi on johdinkela eli johdin, joka on kierretty monta kertaa. Käämin päät on kytketty jännitemittariin. Mitä mittari näyttää?",
+      "choices": [
+        {
+          "text": "Suurta jännitettä, koska käämin läpi kulkee voimakas kenttä.",
+          "feedback": "Voimakas kenttä antaa suuren vuon. Jännite riippuu kuitenkin siitä, kuinka nopeasti vuo muuttuu: $\\tfrac{\\Delta\\Phi}{\\Delta t}$. Paikallaan olevan magneetin vuo ei muutu. Kertaa luvussa *Sähkömagneettinen induktio*."
+        },
+        {
+          "text": "Tasaista pientä jännitettä, kunnes magneetti heikkenee.",
+          "feedback": "Magneetti ei heikkene. Jännite ei synny kentästä vaan kentän muutoksesta. Kun vuo on vakio eli ei muutu, jännite on nolla. Kertaa luvussa *Sähkömagneettinen induktio*."
+        },
+        {
+          "text": "Nollaa, koska käämin läpi kulkeva vuo ei muutu.",
+          "feedback": "Oikein. Induktiolain $e = -N\\tfrac{\\Delta\\Phi}{\\Delta t}$ mukaan jännite syntyy vain, kun vuo muuttuu. Kun magneettia liikutetaan, mittarin lukema ei ole enää nolla. Kertaa tarvittaessa luvussa *Sähkömagneettinen induktio*.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "lt-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Lähtötaso 3: loittoneva magneetti",
+      "prompt": "Kevyt kuparirengas roikkuu langan varassa. Sauvamagneetin pohjoisnapa on renkaan vieressä. Magneetti vedetään nopeasti poispäin renkaasta, eli magneetti loittonee. Miten rengas liikkuu?",
+      "choices": [
+        {
+          "text": "Rengas seuraa magneettia, koska induktiovirta vastustaa vuon pienenemistä.",
+          "feedback": "Oikein. Renkaan läpi kulkeva vuo pienenee. Siksi induktiovirran kenttä osoittaa renkaan keskellä samaan suuntaan kuin magneetin kenttä. Renkaan siihen kylkeen, joka on magneettia kohti, syntyy etelänapa. Etelänapa vetää pohjoisnapaa. Kertaa tarvittaessa luvussa *Lenzin laki ja pyörrevirrat*.",
+          "correct": true
+        },
+        {
+          "text": "Rengas työntyy poispäin, koska induktiovirta vastustaa aina magneetin kenttää.",
+          "feedback": "Induktiovirta ei vastusta kenttää vaan kentän muutosta. Kun magneetti loittonee, vuo pienenee. Rengas vastustaa pienenemistä: se vetää magneettia puoleensa. Kertaa luvussa *Lenzin laki ja pyörrevirrat*."
+        },
+        {
+          "text": "Rengas pysyy paikallaan, koska kupari ei ole magneettista ainetta.",
+          "feedback": "Kupari ei ole ferromagneettinen eli magneetti ei vedä sitä. Kupari kuitenkin johtaa sähköä. Muuttuva vuo synnyttää renkaaseen induktiovirran, ja magneetin kenttä kohdistaa virtaan voiman. Kertaa luvussa *Lenzin laki ja pyörrevirrat*."
+        }
+      ]
+    },
+    {
+      "id": "lt-4",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Lähtötaso 4: kaksi virtajohdinta",
+      "prompt": "Kaksi pitkää johdinta on rinnakkain eli vierekkäin samansuuntaisina. Kummassakin johtimessa kulkee virta samaan suuntaan. Mitä johtimet tekevät toisilleen?",
+      "choices": [
+        {
+          "text": "Ne hylkivät toisiaan, koska kummassakin liikkuu samanmerkkisiä varauksia.",
+          "feedback": "Johtimet ovat sähköisesti neutraaleja eli niissä on yhtä paljon positiivista ja negatiivista varausta. Siksi sähköinen voima ei ratkaise. Kumpikin johdin on toisen magneettikentässä. Kun virrat ovat samansuuntaiset, voima vetää johtimia yhteen. Kertaa luvussa *Voima virtajohtimeen: sähkömoottori ja kaiutin*."
+        },
+        {
+          "text": "Ne vetävät toisiaan, koska kumpikin on toisen magneettikentässä.",
+          "feedback": "Oikein. Johtimen $1$ kenttä on $B_1 = \\tfrac{\\mu_0 I_1}{2\\pi r}$. Se kohdistaa johtimeen $2$ voiman $F = I_2 l B_1$. Kun virrat ovat samansuuntaiset, voima osoittaa toista johdinta kohti. Kertaa tarvittaessa luvussa *Voima virtajohtimeen: sähkömoottori ja kaiutin*.",
+          "correct": true
+        },
+        {
+          "text": "Ne eivät vaikuta toisiinsa, koska kenttä vain kiertää johdinta.",
+          "feedback": "Kenttä kiertää johdinta ympyröinä. Toisen johtimen kohdalla kenttä on kohtisuorassa johdinta vastaan. Siksi voima on suurin mahdollinen, $F = I_2 l B_1$. Kertaa luvussa *Voima virtajohtimeen: sähkömoottori ja kaiutin*."
+        }
+      ]
+    },
+    {
+      "id": "lt-5",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Lähtötaso 5: valo lasista ilmaan",
+      "prompt": "Valo kulkee lasin sisällä. Se tulee lasin ja ilman rajapintaan tulokulmassa $50^\\circ$. Lasin taitekerroin on $1{,}52$. Siksi rajakulma on noin $41^\\circ$. Mitä valolle tapahtuu?",
+      "choices": [
+        {
+          "text": "Se taittuu ilmaan kohti normaalia, koska ilma on optisesti harvempaa.",
+          "feedback": "Kun valo menee harvempaan aineeseen, se taittuu normaalista poispäin. Normaali on suora, joka on kohtisuorassa rajapintaa vastaan. Kun tulokulma on suurempi kuin rajakulma, taittunutta sädettä ei ole lainkaan. Kertaa luvussa *Kokonaisheijastuminen ja valokuitu*."
+        },
+        {
+          "text": "Osa taittuu ilmaan ja osa heijastuu, kuten rajapinnassa aina.",
+          "feedback": "Näin käy, kun tulokulma on pienempi kuin rajakulma. Kun tulokulma on suurempi kuin rajakulma, taittumislaki antaisi $\\sin\\alpha_2 > 1$. Se on mahdotonta, joten taittunutta sädettä ei ole. Kertaa luvussa *Kokonaisheijastuminen ja valokuitu*."
+        },
+        {
+          "text": "Kaikki valo heijastuu takaisin, koska kulma on suurempi kuin rajakulma.",
+          "feedback": "Oikein. $\\sin\\alpha_\\text{r} = \\tfrac{1{,}00}{1{,}52}$, joten $\\alpha_\\text{r} \\approx 41^\\circ$. Tulokulmalla $50^\\circ$ taittumislaki antaisi $\\sin\\alpha_2 = 1{,}52 \\cdot \\sin 50^\\circ \\approx 1{,}16$. Se on mahdotonta. Siksi valo kokonaisheijastuu eli kaikki valo heijastuu takaisin lasiin. Kertaa tarvittaessa luvussa *Kokonaisheijastuminen ja valokuitu*.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "lt-6",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Lähtötaso 6: valkoinen valo hilassa",
+      "prompt": "Valkoinen valo tulee kohtisuoraan hilaan. Hila on levy, jossa on paljon tiheitä rakoja tai viivoja. Mikä väri poikkeaa ensimmäisen kertaluvun spektrissä eniten keskimaksimin suunnasta?",
+      "choices": [
+        {
+          "text": "Punainen, koska sen aallonpituus on näkyvistä väreistä pisin.",
+          "feedback": "Oikein. Hilayhtälö on $d\\sin\\theta = k\\lambda$. Samalla kertaluvulla $\\sin\\theta$ on verrannollinen aallonpituuteen: kun aallonpituus kasvaa, myös $\\sin\\theta$ kasvaa samassa suhteessa. Siksi punainen poikkeaa eniten. Kertaa tarvittaessa luvussa *Valon interferenssi ja diffraktio*.",
+          "correct": true
+        },
+        {
+          "text": "Violetti, koska violetti valo taittuu lasissa eniten.",
+          "feedback": "Prismassa violetti poikkeaa eniten, koska violetin taitekerroin on suurin. Hilassa suunnan määrää matkaero, $d\\sin\\theta = k\\lambda$. Siksi hilassa pisin aallonpituus poikkeaa eniten. Kertaa luvussa *Valon interferenssi ja diffraktio*."
+        },
+        {
+          "text": "Kaikki värit poikkeavat yhtä paljon, koska hila on sama.",
+          "feedback": "Hila on sama, mutta maksimin suunta riippuu aallonpituudesta: $\\sin\\theta = \\tfrac{k\\lambda}{d}$. Siksi valkoinen valo hajoaa hilassa spektriksi eli väreiksi. Kertaa luvussa *Valon interferenssi ja diffraktio*."
+        }
+      ]
+    },
+    {
+      "id": "aineisto",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Magneetti neljässä putkessa",
+      "source": "example",
+      "source_note": "Keksitty esimerkki: muoviputken aika on laskettu vapaasta pudotuksesta. Metalliputkien ajat ovat samaa suuruusluokkaa kuin koulun kokeissa.",
+      "text": "Fysiikan tunnilla pudotettiin sama neodyymimagneetti neljään pystysuoraan putkeen. Magneetin massa on $12{,}0\\,\\text{g}$. Putkien pituus on $1{,}00\\,\\text{m}$. Putkien halkaisijat ovat samat. Magneetti ei tartu yhteenkään putkeen. Putoamisaika luettiin puhelimen hidastetusta videosta. Videolta näkyy myös, että alumiini- ja kupariputkessa magneetti putoaa lähes koko matkan tasaisella vauhdilla.\n\n| Putki | $t\\ (\\text{s})$ |\n|---|---|\n| muovi | $0{,}46$ |\n| alumiini | $3{,}4$ |\n| kupari | $6{,}3$ |\n| kupari, jossa pitkittäinen rako | $0{,}62$ |\n\nPohdi ensin kahta asiaa. Miksi metalliputket hidastavat magneettia, vaikka se ei tartu niihin? Miksi rako muuttaa tuloksen? Vastaa sitten alla kupariputken luvulla. Mallivastauksessa verrataan kaikkia putkia.",
+      "question": {
+        "type": "numeric",
+        "prompt": "Millä teholla magneetin potentiaalienergiaa muuttuu kupariputken sisäenergiaksi? Vastaa milliwatteina.",
+        "answer": 18.69,
+        "unit": "mW",
+        "tolerance": 0.03,
+        "hints": [
+          "Mikä voima jarruttaa magneettia, kun se putoaa tasaisella vauhdilla? Kuinka suuri sen on oltava?",
+          "Tasaisessa liikkeessä jarruttava voima on yhtä suuri kuin paino $mg$. Vauhti on $v = \\tfrac{h}{t}$.",
+          "Teho on $P = Fv = mg \\cdot \\tfrac{h}{t}$. Muunna lopuksi: $1\\,\\text{W} = 1000\\,\\text{mW}$."
+        ],
+        "mistakes": [
+          {
+            "value": 117.7,
+            "feedback": "Tämä on potentiaalienergian muutos $mgh$ millijouleina. Teho on energia aikayksikköä kohti. Jaa siis putoamisajalla."
+          },
+          {
+            "value": 34.62,
+            "feedback": "Tämä on alumiiniputken teho. Tehtävässä kysytään kupariputkea. Siinä putoamisaika on $6{,}3\\,\\text{s}$."
+          },
+          {
+            "value": 0.01869,
+            "feedback": "Tämä on teho watteina. Vastaa milliwatteina: $1\\,\\text{W} = 1000\\,\\text{mW}$."
+          }
+        ],
+        "solution": "**Annettu:** magneetin massa $m = 12{,}0\\,\\text{g}$, putken pituus $h = 1{,}00\\,\\text{m}$, kupariputken putoamisaika $t = 6{,}3\\,\\text{s}$, $g = 9{,}81\\,\\text{m/s}^2$; vauhti on lähes koko matkan tasainen\n\n**Kysytty:** teho $P$, jolla potentiaalienergiaa muuttuu kupariputken sisäenergiaksi, yksikössä $\\text{mW}$\n\n**Periaate:** Putoava magneetti muuttaa putken läpi kulkevaa magneettivuota. Siksi metalliputkeen syntyy pyörrevirtoja eli virtoja, jotka kiertävät putken seinässä. Lenzin lain mukaan pyörrevirtojen kenttä vastustaa muutosta ja jarruttaa magneettia. Virrat myös lämmittävät putkea (luku *Lenzin laki ja pyörrevirrat*). Vauhti on tasainen. Newtonin ensimmäisen lain mukaan jarruttava voima on siis yhtä suuri kuin paino. Liike-energia ei muutu. Siksi kaikki potentiaalienergia, joka vähenee, muuttuu sisäenergiaksi. Teho on voima kertaa vauhti.\n\n**Kaava:** $v = \\dfrac{h}{t}$, $F = mg$ ja $P = Fv = \\dfrac{mgh}{t}$\n\n**Muunnokset:** $12{,}0\\,\\text{g} = 12{,}0 \\cdot 0{,}001\\,\\text{kg} = 0{,}0120\\,\\text{kg}$ ja lopuksi $1\\,\\text{W} = 1000\\,\\text{mW}$\n\n**Sijoitus:** $v = \\dfrac{1{,}00\\,\\text{m}}{6{,}3\\,\\text{s}} = 0{,}159\\,\\text{m/s}$, joten $P = 0{,}0120\\,\\text{kg} \\cdot 9{,}81\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot 0{,}159\\,\\tfrac{\\text{m}}{\\text{s}} = 0{,}01869\\,\\text{W} = 18{,}69\\,\\text{mW}$\n\n**Vastaus:** $P \\approx 19\\,\\text{mW}$. Vastauksessa on kaksi merkitsevää numeroa, kuten putoamisajassa $6{,}3\\,\\text{s}$.\n\n**Järkevyys:** Muoviputki ei jarruta. Vapaan pudotuksen aika on $\\sqrt{\\tfrac{2h}{g}} = \\sqrt{\\tfrac{2 \\cdot 1{,}00\\,\\text{m}}{9{,}81\\,\\text{m/s}^2}} \\approx 0{,}45\\,\\text{s}$. Se on sama kuin mitattu aika $0{,}46\\,\\text{s}$. Kuparin resistiivisyys on pienempi kuin alumiinin. Siksi kuparissa pyörrevirrat ja jarrutus ovat voimakkaampia. Alumiiniputkessa teho on $\\tfrac{0{,}0120\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot 1{,}00\\,\\text{m}}{3{,}4\\,\\text{s}} \\approx 35\\,\\text{mW}$. Teho on suurempi, koska sama energia muuttuu lyhyemmässä ajassa. Rako katkaisee reitin, jota pitkin virrat kiertävät putken ympäri. Siksi jarrutus jää pieneksi. Kupariputken lopussa liike-energiaa on vain $\\tfrac12 \\cdot 0{,}0120\\,\\text{kg} \\cdot (0{,}159\\,\\text{m/s})^2 \\approx 0{,}15\\,\\text{mJ}$. Potentiaalienergiaa vapautui $118\\,\\text{mJ}$."
+      }
+    },
+    {
+      "id": "teoriatiivistelma",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava",
+        "Virheet",
+        "Kertaa"
+      ]
+    },
+    {
+      "id": "virhe-siirto",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe: voimajohdon häviö",
+      "prompt": "Voimalaitos siirtää tehon $50\\,\\text{MW}$ voimajohtoa pitkin. Jännite on $110\\,\\text{kV}$. Johtimien resistanssi on yhteensä $4{,}0\\,\\Omega$. Opiskelija laski häviötehon eli tehon, joka muuttuu johdossa lämmöksi: ”$P_\\text{h} = \\tfrac{U^2}{R} = \\tfrac{(110\\,000\\,\\text{V})^2}{4{,}0\\,\\Omega} = 3{,}0\\,\\text{GW}$.” Mikä ratkaisussa on väärin?",
+      "choices": [
+        {
+          "text": "Jännite olisi pitänyt ensin muuttaa huippuarvoksi kertomalla se luvulla $\\sqrt{2}$.",
+          "feedback": "Siirtojännite ja virta ilmoitetaan tehollisina arvoina. Niillä teho on $P = UI$. Virhe on toisaalla: $110\\,\\text{kV}$ ei ole johdon resistanssin yli. Kertaa luvussa *Muuntaja ja sähköenergian siirto*."
+        },
+        {
+          "text": "Siirtojännite ei ole johdon yli. Ensin lasketaan virta $I = \\tfrac{P}{U}$.",
+          "feedback": "Oikein. $I = \\tfrac{50 \\cdot 10^6\\,\\text{W}}{110 \\cdot 10^3\\,\\text{V}} \\approx 455\\,\\text{A}$ ja $P_\\text{h} = RI^2 = 4{,}0\\,\\Omega \\cdot (455\\,\\text{A})^2 \\approx 830\\,\\text{kW}$. Se on noin $1{,}7\\,\\%$ siirretystä tehosta.",
+          "correct": true
+        },
+        {
+          "text": "Resistanssi olisi pitänyt kertoa johdon pituudella kilometreinä.",
+          "feedback": "Resistanssi $4{,}0\\,\\Omega$ on jo koko johdon resistanssi. Lausekkeessa $\\tfrac{U^2}{R}$ jännitteen pitäisi olla resistanssin yli. Johdon jännitehäviö on kuitenkin vain $RI$. Kertaa luvussa *Muuntaja ja sähköenergian siirto*."
+        }
+      ]
+    },
+    {
+      "id": "lue-kuvaaja",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Lue kuvaaja: generaattorin jännite",
+      "figure": "fy7-7/trace",
+      "prompt": "Kuvaajassa on pienen generaattorin jännite ajan funktiona. Mikä väite on oikein?",
+      "choices": [
+        {
+          "text": "Taajuus on $50\\,\\text{Hz}$, ja tehollinen arvo on noin $8{,}5\\,\\text{V}$.",
+          "feedback": "Tehollinen arvo on oikein, mutta taajuus ei ole. Jännite on nolla $20\\,\\text{ms}$:n välein. Yhden jakson aikana nollakohtia on kuitenkin kaksi: kerran jännite nousee ja kerran laskee. Jaksonaika on siis $40\\,\\text{ms}$, joten $f = \\tfrac{1}{T} = 25\\,\\text{Hz}$. Kertaa luvussa *Generaattori ja vaihtovirta*."
+        },
+        {
+          "text": "Taajuus on $25\\,\\text{Hz}$, ja tehollinen arvo on $12\\,\\text{V}$.",
+          "feedback": "Taajuus on oikein, mutta $12\\,\\text{V}$ on huippuarvo eli suurin arvo. Sinimuotoisen jännitteen tehollinen arvo on $U = \\tfrac{U_0}{\\sqrt{2}} \\approx 8{,}5\\,\\text{V}$. Kertaa luvussa *Generaattori ja vaihtovirta*."
+        },
+        {
+          "text": "Taajuus on $25\\,\\text{Hz}$, ja tehollinen arvo on noin $8{,}5\\,\\text{V}$.",
+          "feedback": "Oikein. Jakso toistuu $40\\,\\text{ms}$:n välein, joten $f = \\tfrac{1}{0{,}040\\,\\text{s}} = 25\\,\\text{Hz}$. Tehollinen arvo on $U = \\tfrac{12\\,\\text{V}}{\\sqrt{2}} \\approx 8{,}5\\,\\text{V}$.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "rata",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Mikä hiukkanen: kaartuva rata",
+      "figure": "fy7-2/track-sign",
+      "prompt": "Kuvassa hiukkanen tulee vasemmalta tyhjiökammion magneettikenttään. Kenttä osoittaa paperiin sisään. Hiukkasen rata kaartuu alaspäin. Hiukkanen on protoni, elektroni tai neutroni. Mikä väite on oikein?",
+      "choices": [
+        {
+          "text": "Hiukkanen on elektroni, koska protoniin voima osoittaisi ylöspäin.",
+          "feedback": "Oikein. Positiivinen varaus liikkuu oikealle, ja kenttä osoittaa paperiin. Oikean käden sääntö antaa silloin voiman ylöspäin. Rata kaartuu kuitenkin alaspäin. Siksi varaus on negatiivinen. Kertaa tarvittaessa luvussa *Varatun hiukkasen liike sähkö- ja magneettikentässä*.",
+          "correct": true
+        },
+        {
+          "text": "Hiukkanen on protoni, koska voima osoittaa kenttäviivojen suuntaan.",
+          "feedback": "Magneettinen voima on kohtisuorassa kenttää vastaan. Se ei ole kentän suuntainen. Tässä protoniin voima osoittaisi ylöspäin. Siksi alaspäin kaartuva hiukkanen on negatiivinen. Kertaa luvussa *Varatun hiukkasen liike sähkö- ja magneettikentässä*."
+        },
+        {
+          "text": "Merkkiä ei voi päätellä, koska kenttä kaartaa kaikkia samoin.",
+          "feedback": "Kenttä kaartaa positiivista ja negatiivista varausta vastakkaisiin suuntiin. Neutronilla ei ole varausta, joten se kulkisi suoraan. Alaspäin kaartuva rata kertoo, että varaus on negatiivinen. Kertaa luvussa *Varatun hiukkasen liike sähkö- ja magneettikentässä*."
+        }
+      ]
+    },
+    {
+      "id": "aurinkolasit",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Perusteltu väite: polaroidut aurinkolasit",
+      "prompt": "Kalastaja käyttää polaroituja aurinkolaseja. Hän huomaa, että lasit poistavat lähes kokonaan häikäisyn, joka heijastuu järven pinnasta. Rantametsää lasit himmentävät vain vähän. Mikä selitys on oikein?",
+      "choices": [
+        {
+          "text": "Lasit himmentävät kaikkea valoa yhtä paljon, mutta häikäisy on kirkkainta valoa.",
+          "feedback": "Silloin myös metsä himmenisi samassa suhteessa. Polarisaattori valitsee värähtelysuunnan. Se päästää yhden suunnan läpi ja pysäyttää suunnan, joka on kohtisuorassa sitä vastaan. Kertaa luvussa *Valon polarisaatio*."
+        },
+        {
+          "text": "Heijastus on osittain vaakasuoraan polarisoitunut, ja lasit pysäyttävät sen.",
+          "feedback": "Oikein. Valo, joka heijastuu veden pinnasta, on osittain polarisoitunut pinnan suuntaisesti. Polarisoitunut tarkoittaa, että valo värähtelee yhdessä suunnassa. Brewsterin kulmassa valo on kokonaan polarisoitunut. Lasien läpäisysuunta on pystysuora. Siksi häikäisy pysähtyy. Metsän valo on polarisoimatonta, ja siitä pääsee läpi noin puolet. Kertaa tarvittaessa luvussa *Valon polarisaatio*.",
+          "correct": true
+        },
+        {
+          "text": "Lasit suodattavat sinisen valon, ja veden pinnasta heijastuva häikäisy on sinistä.",
+          "feedback": "Häikäisy on heijastunutta auringonvaloa, ei pelkkää sinistä valoa. Polaroidut lasit eivät suodata väriä. Ne suodattavat värähtelysuuntaa. Kertaa luvussa *Valon polarisaatio*."
+        }
+      ]
+    },
+    {
+      "id": "siipi",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Lentokoneen siivet",
+      "prompt": "Matkustajakone lentää vaakasuoraan Etelä-Suomen yllä. Sen nopeus on $230\\,\\text{m/s}$. Siipien kärjet ovat $34\\,\\text{m}$:n päässä toisistaan. Maan magneettikentän suuruus on siellä $52\\,\\mu\\text{T}$. Kentän pystykomponentti eli pystysuora osa on $50\\,\\mu\\text{T}$. Kuinka suuri induktiojännite syntyy siipien kärkien välille?",
+      "answer": 0.391,
+      "unit": "V",
+      "tolerance": 0.02,
+      "hints": [
+        "Kone lentää vaakasuoraan. Mikä kentän komponentti on silloin kohtisuorassa sekä siipeä että nopeutta vastaan?",
+        "Vaakasuora siipi liikkuu vaakasuoraan. Siksi jännitteeseen vaikuttaa vain kentän pystykomponentti $B_\\text{v}$.",
+        "Liikkuvan johtimen jännite on $e = vB_\\text{v}l$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.4066,
+          "feedback": "Käytit koko kentän suuruutta $52\\,\\mu\\text{T}$. Vaakakomponentti synnyttää siiven elektroneihin pystysuoran voiman. Se ei siirrä elektroneja siiven suuntaan. Vain pystykomponentti $50\\,\\mu\\text{T}$ vaikuttaa."
+        },
+        {
+          "value": 0.1095,
+          "feedback": "Käytit vaakakomponenttia $14\\,\\mu\\text{T}$. Siipi on vaakasuora ja liikkuu vaakasuoraan. Silloin jännitteen synnyttää pystykomponentti."
+        }
+      ],
+      "solution": "**Annettu:** nopeus $v = 230\\,\\text{m/s}$ vaakasuoraan, siiven pituus kärjestä kärkeen $l = 34\\,\\text{m}$, kentän pystykomponentti $B_\\text{v} = 50\\,\\mu\\text{T}$ (koko kenttä $52\\,\\mu\\text{T}$)\n\n**Kysytty:** siipien kärkien välinen induktiojännite $e$ yksikössä $\\text{V}$\n\n**Periaate:** Siivessä on johtavuuselektroneja eli elektroneja, jotka voivat liikkua metallissa. Ne liikkuvat koneen mukana kentässä. Magneettinen voima siirtää niitä siiven suuntaan. Elektronit siirtyvät, kunnes kärkien väliin syntyy jännite (luku *Sähkömagneettinen induktio*). Voima siiven suuntaan syntyy vain siitä kentän komponentista, joka on kohtisuorassa sekä nopeutta että siipeä vastaan. Kun siipi ja nopeus ovat vaakasuoria, tämä komponentti on pystykomponentti (luku *Magneetit, magneettinen dipoli ja magneettikenttä*).\n\n**Kaava:** $e = vB_\\text{v}l$\n\n**Muunnokset:** $50\\,\\mu\\text{T} = 50 \\cdot 10^{-6}\\,\\text{T}$\n\n**Sijoitus:** $e = 230\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot 50 \\cdot 10^{-6}\\,\\text{T} \\cdot 34\\,\\text{m} = 0{,}391\\,\\text{V}$\n\n**Vastaus:** $e \\approx 0{,}39\\,\\text{V}$. Vastauksessa on kaksi merkitsevää numeroa, kuten pystykomponentissa $50\\,\\mu\\text{T}$ ja pituudessa $34\\,\\text{m}$.\n\n**Järkevyys:** Yksiköt sopivat: $\\tfrac{\\text{m}}{\\text{s}} \\cdot \\text{T} \\cdot \\text{m} = \\text{V}$. Jännite on samaa luokkaa kuin pienen pariston jännite, koska Maan kenttä on heikko. Koneen sisällä jännitettä ei voi mitata, koska mittarin johtimiin syntyy sama jännite."
+    },
+    {
+      "id": "sirius",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Siriuksen lämpötila",
+      "prompt": "Sirius on taivaan kirkkain tähti. Sen säteilyn spektrin huippu on aallonpituudella $292\\,\\text{nm}$. Oletetaan, että tähti säteilee kuin musta kappale. Kuinka suuri on Siriuksen pintalämpötila?",
+      "answer": 9925,
+      "unit": "K",
+      "tolerance": 0.02,
+      "hints": [
+        "Mikä laki yhdistää mustan kappaleen spektrin huipun aallonpituuden ja lämpötilan?",
+        "Wienin siirtymälaki $\\lambda_\\text{max} T = b$, missä $b = 2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}$.",
+        "$T = \\tfrac{b}{\\lambda_\\text{max}}$. Aallonpituuden on oltava metreinä: $292\\,\\text{nm} = 292 \\cdot 10^{-9}\\,\\text{m}$."
+      ],
+      "mistakes": [
+        {
+          "value": 9.925,
+          "feedback": "Käytit kerrointa $10^{-6}$. Se kuuluu mikrometreille. $1\\,\\text{nm} = 10^{-9}\\,\\text{m}$, joten $292\\,\\text{nm} = 2{,}92 \\cdot 10^{-7}\\,\\text{m}$."
+        },
+        {
+          "value": 9652,
+          "feedback": "Tämä on lämpötila celsiusasteina. Wienin siirtymälaki antaa absoluuttisen lämpötilan kelvineinä. Tehtävässä kysytään sitä."
+        }
+      ],
+      "solution": "**Annettu:** spektrin huipun aallonpituus $\\lambda_\\text{max} = 292\\,\\text{nm}$, Wienin vakio $b = 2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}$; tähti säteilee likimain eli melkein kuin musta kappale\n\n**Kysytty:** pintalämpötila $T$ yksikössä $\\text{K}$\n\n**Periaate:** Mitä kuumempi musta kappale on, sitä lyhyemmällä aallonpituudella sen spektrin huippu on. Huipun aallonpituus on kääntäen verrannollinen absoluuttiseen lämpötilaan: kun lämpötila kaksinkertaistuu, aallonpituus puolittuu (luku *Sähkömagneettinen säteily ja mustan kappaleen spektri*). Tähden pinta säteilee likimain kuin musta kappale.\n\n**Kaava:** $\\lambda_\\text{max} T = b$, joten $T = \\dfrac{b}{\\lambda_\\text{max}}$\n\n**Muunnokset:** $292\\,\\text{nm} = 292 \\cdot 10^{-9}\\,\\text{m} = 2{,}92 \\cdot 10^{-7}\\,\\text{m}$\n\n**Sijoitus:** $T = \\dfrac{2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}}{2{,}92 \\cdot 10^{-7}\\,\\text{m}} = 9925\\,\\text{K}$\n\n**Vastaus:** $T \\approx 9{,}92 \\cdot 10^3\\,\\text{K}$. Vastauksessa on kolme merkitsevää numeroa, kuten aallonpituudessa $292\\,\\text{nm}$.\n\n**Järkevyys:** Auringon pintalämpötila on noin $5800\\,\\text{K}$, ja sen huippu on noin $500\\,\\text{nm}$:n kohdalla. Sirius on lähes kaksi kertaa kuumempi. Siksi sen huippu on lähes puolet lyhyemmällä aallonpituudella, ultraviolettialueella. Tämän vuoksi Sirius näyttää sinivalkoiselta."
+    },
+    {
+      "id": "ikkuna",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sukeltajan ikkuna",
+      "prompt": "Sukeltaja on tyynessä järvessä $3{,}0\\,\\text{m}$:n syvyydellä. Hän katsoo suoraan ylöspäin. Hän näkee taivaan vain pyöreästä alueesta, joka on suoraan hänen yläpuolellaan. Alueen ulkopuolella vedenpinta näyttää peililtä: siitä heijastuu järven pohja. Veden taitekerroin on $1{,}33$. Kuinka suuri on pyöreän alueen säde vedenpinnalla?",
+      "answer": 3.421,
+      "unit": "m",
+      "tolerance": 0.02,
+      "hints": [
+        "Mistä suunnista ilmasta tuleva valo voi ylipäätään tulla sukeltajan silmään?",
+        "Alueen reunalla valo tulee ilmasta lähes pinnan suuntaisesti. Se taittuu veteen rajakulmassa: $\\sin\\alpha_\\text{r} = \\tfrac{1{,}00}{1{,}33}$.",
+        "Säde on $r = h\\tan\\alpha_\\text{r}$, missä $h$ on syvyys."
+      ],
+      "mistakes": [
+        {
+          "value": 2.256,
+          "feedback": "Käytit sinin arvoa. Suorakulmaisessa kolmiossa viereinen kateetti on syvyys. Silloin vastainen kateetti on $r = h\\tan\\alpha_\\text{r}$."
+        },
+        {
+          "value": 6.842,
+          "feedback": "Tämä on alueen halkaisija. Tehtävässä kysytään sädettä."
+        }
+      ],
+      "solution": "**Annettu:** syvyys $h = 3{,}0\\,\\text{m}$, veden taitekerroin $n_1 = 1{,}33$, ilman taitekerroin $n_2 = 1{,}00$\n\n**Kysytty:** pyöreän alueen säde $r$ vedenpinnalla yksikössä $\\text{m}$\n\n**Periaate:** Kun valo tulee ilmasta veteen, se taittuu kohti normaalia. Taitekulma on suurin, kun valo tulee pinnan suuntaisesti. Silloin taitekulma on sama kuin rajakulma veden ja ilman välillä (luvut *Valon heijastuminen ja taittuminen* ja *Kokonaisheijastuminen ja valokuitu*). Siksi taivaan valo tulee silmään vain kartiosta, jonka puolikas huippukulma on $\\alpha_\\text{r}$. Kun sukeltaja katsoo pintaa kauempaa, veden alta tuleva valo kokonaisheijastuu. Siksi pinta näyttää peililtä.\n\n**Kaava:** $\\sin\\alpha_\\text{r} = \\dfrac{n_2}{n_1}$ ja $\\tan\\alpha_\\text{r} = \\dfrac{r}{h}$, joten $r = h\\tan\\alpha_\\text{r}$\n\n**Muunnokset:** Suureet ovat perusyksiköissä, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $\\sin\\alpha_\\text{r} = \\dfrac{1{,}00}{1{,}33} = 0{,}752$, joten $\\alpha_\\text{r} = 48{,}75^\\circ$ ja $r = 3{,}0\\,\\text{m} \\cdot \\tan 48{,}75^\\circ = 3{,}0\\,\\text{m} \\cdot 1{,}140 = 3{,}42\\,\\text{m}$\n\n**Vastaus:** $r \\approx 3{,}4\\,\\text{m}$. Vastauksessa on kaksi merkitsevää numeroa, kuten syvyydessä $3{,}0\\,\\text{m}$.\n\n**Järkevyys:** Rajakulma on vähän yli $45^\\circ$. Siksi säteen on oltava vähän suurempi kuin syvyys. Näin on: $3{,}4\\,\\text{m} > 3{,}0\\,\\text{m}$. Syvemmällä alue on suurempi. Se näyttää kuitenkin samankokoiselta, koska kulma pysyy samana."
+    },
+    {
+      "id": "oljy",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Öljykalvo lätäkössä",
+      "prompt": "Lätäkön vedenpinnalla on ohut öljykalvo. Yhdessä kohdassa kalvon paksuus on $300\\,\\text{nm}$. Öljyn taitekerroin on $1{,}45$ ja veden $1{,}33$. Valkoinen valo tulee kalvoon lähes kohtisuoraan. Mikä näkyvän valon ($400$–$700\\,\\text{nm}$) aallonpituus heijastuu tästä kalvon kohdasta voimakkaimmin?",
+      "answer": 580,
+      "unit": "nm",
+      "tolerance": 0.02,
+      "hints": [
+        "Kalvossa on kaksi heijastusta. Kumpi niistä kääntää aallon? Vertaa taitekertoimia kummallakin pinnalla.",
+        "Heijastus ilmasta öljyyn ($1{,}00 \\to 1{,}45$) kääntää aallon. Heijastus öljystä veteen ($1{,}45 \\to 1{,}33$) ei käännä. Kun käännöksiä on yksi, vahvistavan interferenssin ehto on $2nd = \\left(k + \\tfrac12\\right)\\lambda$.",
+        "$\\lambda = \\tfrac{2nd}{k + \\frac12}$. Kokeile arvoja $k = 0, 1, 2$. Valitse aallonpituus, joka on näkyvää valoa."
+      ],
+      "mistakes": [
+        {
+          "value": 870,
+          "feedback": "Käytit ehtoa $2nd = k\\lambda$. Tässä kalvossa vain yläpinnan heijastus kääntää aallon. Siksi $2nd = k\\lambda$ antaa heikentävän interferenssin. Lisäksi $870\\,\\text{nm}$ on infrapunaa."
+        },
+        {
+          "value": 435,
+          "feedback": "Käytit ehtoa $2nd = k\\lambda$, kun $k = 2$. Kun käännöksiä on yksi, vahvistava ehto on $2nd = \\left(k + \\tfrac12\\right)\\lambda$. Aallonpituus $435\\,\\text{nm}$ heijastuu heikosti."
+        },
+        {
+          "value": 1740,
+          "feedback": "Tämä on ehdon $2nd = \\left(k + \\tfrac12\\right)\\lambda$ ratkaisu, kun $k = 0$. Se on kuitenkin infrapunaa. Kokeile seuraavia kertalukuja."
+        }
+      ],
+      "solution": "**Annettu:** kalvon paksuus $d = 300\\,\\text{nm}$, öljyn taitekerroin $n = 1{,}45$, veden taitekerroin $1{,}33$, valo tulee lähes kohtisuoraan; näkyvä valo $400$–$700\\,\\text{nm}$\n\n**Kysytty:** näkyvän valon aallonpituus $\\lambda$, joka heijastuu voimakkaimmin\n\n**Periaate:** Aallot heijastuvat kalvon yläpinnasta ja alapinnasta. Nämä aallot interferoivat eli yhdistyvät. Niiden matkaero on $2nd$. Aalto kääntyy, kun se heijastuu ainetta vasten, jonka taitekerroin on suurempi (luku *Ohuen kalvon interferenssi*). Yläpinnassa $1{,}00 \\to 1{,}45$ aalto kääntyy. Alapinnassa $1{,}45 \\to 1{,}33$ aalto ei käänny. Yksi käännös vastaa puolen aallonpituuden lisäsiirtymää. Siksi vahvistava ehto on $2nd = \\left(k + \\tfrac12\\right)\\lambda$.\n\n**Kaava:** $2nd = \\left(k + \\tfrac12\\right)\\lambda$, joten $\\lambda = \\dfrac{2nd}{k + \\frac12}$, $k = 0, 1, 2, \\ldots$\n\n**Muunnokset:** Pidetään pituudet nanometreinä, koska vastauskin halutaan nanometreinä.\n\n**Sijoitus:** $2nd = 2 \\cdot 1{,}45 \\cdot 300\\,\\text{nm} = 870\\,\\text{nm}$. Kun $k = 0$: $\\lambda = \\dfrac{870\\,\\text{nm}}{0{,}5} = 1740\\,\\text{nm}$; kun $k = 1$: $\\lambda = \\dfrac{870\\,\\text{nm}}{1{,}5} = 580\\,\\text{nm}$; kun $k = 2$: $\\lambda = \\dfrac{870\\,\\text{nm}}{2{,}5} = 348\\,\\text{nm}$\n\n**Vastaus:** $\\lambda = 580\\,\\text{nm}$. Vastauksessa on kolme merkitsevää numeroa, kuten paksuudessa $300\\,\\text{nm}$ ja taitekertoimessa $1{,}45$. Muut ratkaisut ovat infrapunaa ja ultraviolettia.\n\n**Järkevyys:** $580\\,\\text{nm}$ on keltaista valoa. Siksi tämä kalvon kohta näyttää kellertävältä. Kalvon paksuus vaihtelee. Siksi väri vaihtuu kohdasta toiseen, kuten lätäkön öljykalvossa näkyy."
+    },
+    {
+      "id": "lisaa",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Tunnin lopussa on ylioppilaskokeen tyylisiä tehtäviä. Kirjoita ratkaisu vihkoon tai koneelle kuten kokeessa. Arvioi ratkaisu vasta sitten mallivastauksen ja pisteytyksen avulla."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Generaattorin käämi pyörii tasaisesti homogeenisessa magneettikentässä. Missä asennossa käämiin syntyvä jännite on suurimmillaan?",
+      "choices": [
+        {
+          "text": "Kun käämin taso on kohtisuorassa kenttää vastaan ja vuo on suurin.",
+          "feedback": "Silloin vuo on suurin. Se ei kuitenkaan sillä hetkellä muutu. Siksi jännite on nolla. Kertaa luvussa *Generaattori ja vaihtovirta*."
+        },
+        {
+          "text": "Kun käämin taso on kentän suuntainen ja vuo on nolla.",
+          "feedback": "Oikein. Silloin käämin sivut liikkuvat kohtisuoraan kenttää vastaan, ja vuo muuttuu nopeimmin. Siksi jännite on huippuarvossaan $e_0 = NBA \\cdot 2\\pi f$. Kertaa tarvittaessa luvussa *Generaattori ja vaihtovirta*.",
+          "correct": true
+        },
+        {
+          "text": "Jännite on kaikissa asennoissa sama, koska pyöriminen on tasaista.",
+          "feedback": "Tasainen pyöriminen antaa sinimuotoisen jännitteen $e = e_0\\sin(2\\pi f t)$. Jännite vaihtelee nollan ja huippuarvon välillä. Kertaa luvussa *Generaattori ja vaihtovirta*."
+        }
+      ],
+      "practice": "Kertaa vuon muutos ja generaattorin jännite luvussa [*Generaattori ja vaihtovirta*](fy7-7.html). Kertaa induktiolaki luvussa [*Sähkömagneettinen induktio*](fy7-5.html)."
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Laskeminen",
+      "prompt": "Halogeenivalaisimessa on muuntaja. Muuntajan ensiökäämissä on $920$ kierrosta ja toisiokäämissä $48$ kierrosta. Ensiökäämi on kytketty $230\\,\\text{V}$:n verkkojännitteeseen. Toisiopiirin lampun virta on $4{,}6\\,\\text{A}$. Oletetaan, että muuntaja on ideaalinen eli siinä ei ole häviöitä. Kuinka suuri virta kulkee ensiökäämissä?",
+      "answer": 0.24,
+      "unit": "A",
+      "tolerance": 0.02,
+      "hints": [
+        "Mikä säilyy ideaalisessa muuntajassa, kun jännite muuttuu?",
+        "Teho säilyy, $U_1 I_1 = U_2 I_2$. Lisäksi $\\tfrac{U_1}{U_2} = \\tfrac{N_1}{N_2}$.",
+        "$I_1 = I_2 \\cdot \\tfrac{N_2}{N_1}$"
+      ],
+      "mistakes": [
+        {
+          "value": 88.17,
+          "feedback": "Käänsit muuntosuhteen. Jännite laskee ensiöstä toisioon. Siksi virta on ensiössä pienempi kuin toisiossa: $I_1 = I_2 \\cdot \\tfrac{N_2}{N_1}$."
+        },
+        {
+          "value": 12.0,
+          "feedback": "Tämä on toisiojännite voltteina. Tehtävässä kysytään ensiökäämin virtaa."
+        }
+      ],
+      "practice": "Kertaa muuntajan jännitteet ja virrat luvussa [*Muuntaja ja sähköenergian siirto*](fy7-8.html).",
+      "solution": "**Annettu:** kierrokset $N_1 = 920$ ja $N_2 = 48$, ensiöjännite $U_1 = 230\\,\\text{V}$, toisiovirta $I_2 = 4{,}6\\,\\text{A}$; muuntaja on ideaalinen\n\n**Kysytty:** ensiövirta $I_1$ yksikössä $\\text{A}$\n\n**Periaate:** Ideaalisessa muuntajassa jännitteiden suhde on sama kuin kierrosten suhde. Teho säilyy. Siksi virtojen suhde on kierrosten käänteinen suhde (luku *Muuntaja ja sähköenergian siirto*). Jännitteet ja virrat ovat tehollisia arvoja.\n\n**Kaava:** $\\dfrac{N_1}{N_2} = \\dfrac{I_2}{I_1}$, joten $I_1 = I_2 \\cdot \\dfrac{N_2}{N_1}$\n\n**Muunnokset:** Suureet ovat perusyksiköissä, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $I_1 = 4{,}6\\,\\text{A} \\cdot \\dfrac{48}{920} = 0{,}240\\,\\text{A}$\n\n**Vastaus:** $I_1 \\approx 0{,}24\\,\\text{A}$. Vastauksessa on kaksi merkitsevää numeroa, kuten virrassa $4{,}6\\,\\text{A}$.\n\n**Järkevyys:** Toisiojännite on $U_2 = 230\\,\\text{V} \\cdot \\tfrac{48}{920} = 12{,}0\\,\\text{V}$. Teho on toisiossa $12{,}0\\,\\text{V} \\cdot 4{,}6\\,\\text{A} \\approx 55\\,\\text{W}$ ja ensiössä $230\\,\\text{V} \\cdot 0{,}240\\,\\text{A} \\approx 55\\,\\text{W}$. Tehot ovat samat, kuten pitää."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä",
+      "prompt": "Sähkömagneetissa on pystysuora rautasydän. Sen ympärille on pujotettu kevyt alumiinirengas. Kun sähkömagneetin tasavirta kytketään päälle, rengas hyppää ylös ja putoaa takaisin. Kun virta on jo päällä, rengas lepää paikallaan. Jos renkaassa on kapea rako, rengas ei hyppää lainkaan. Selitä havainnot.",
+      "criteria": [
+        "Vastaus toteaa, että virtaa kytkettäessä renkaan läpi kulkeva magneettivuo kasvaa nopeasti. Siksi renkaaseen syntyy induktiojännite. Suljetussa renkaassa syntyy myös induktiovirta.",
+        "Vastaus perustelee Lenzin lailla, että induktiovirran kenttä vastustaa vuon kasvua. Siksi rengas ja sähkömagneetti hylkivät toisiaan.",
+        "Vastaus selittää, että tasaisella virralla vuo ei muutu. Siksi induktiovirtaa ja voimaa ei ole.",
+        "Vastaus selittää, että rako katkaisee virran kulkureitin. Jännite syntyy, mutta virtaa ei synny. Siksi ei synny myöskään voimaa."
+      ],
+      "model": "Kun virta kytketään, sähkömagneetin kenttä kasvaa nopeasti. Myös renkaan läpi kulkeva magneettivuo kasvaa nopeasti. Induktiolain mukaan renkaaseen syntyy jännite. Rengas on suljettu johdin, joten siinä kulkee induktiovirta. Lenzin lain mukaan induktiovirran oma kenttä vastustaa vuon kasvua. Renkaan alapuolelle syntyy samanniminen napa kuin sähkömagneetin yläpäässä. Samannimiset navat hylkivät toisiaan. Hetken ajan hylkivä voima on suurempi kuin renkaan paino, ja rengas hyppää. Kun virta on tasainen, vuo ei enää muutu. Silloin induktiovirtaa ei ole, eikä renkaaseen kohdistu magneettista voimaa. Raolliseen renkaaseen syntyy jännite, mutta virta ei pääse kiertämään. Siksi voimaa ei synny. Hypyn energia tulee sähkömagneetin virtalähteestä.",
+      "practice": "Kertaa Lenzin laki luvussa [*Lenzin laki ja pyörrevirrat*](fy7-6.html). Kertaa induktiolaki luvussa [*Sähkömagneettinen induktio*](fy7-5.html)."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi on kaksi nopeaa kysymystä. Vastaa ensin itse. Avaa vastaus vasta sitten."
+    }
+  ]
+}

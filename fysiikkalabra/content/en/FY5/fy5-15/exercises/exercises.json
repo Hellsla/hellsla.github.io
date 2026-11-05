@@ -11,6 +11,7 @@
     {
       "id": "fy5-15-L1-02",
       "level": 1,
+      "core": true,
       "text": "The intensity of the sound of a vacuum cleaner at the ear of the user is $3.2 \\cdot 10^{-5}\\,\\text{W/m}^2$. What is the sound intensity level? Give the answer in decibels.",
       "answer": 75,
       "unit": "dB",
@@ -43,6 +44,7 @@
     {
       "id": "fy5-15-L1-06",
       "level": 1,
+      "core": true,
       "text": "What does it mean that the sound intensity level is $0\\,\\text{dB}$?",
       "kind": [
         "concept"
@@ -73,6 +75,7 @@
     {
       "id": "fy5-15-L1-07",
       "level": 1,
+      "core": true,
       "text": "A student calculates that two identical dishwashers, each producing $64\\,\\text{dB}$ alone, produce $128\\,\\text{dB}$ together. What is the error in the student's calculation?",
       "kind": [
         "error",
@@ -114,6 +117,7 @@
     {
       "id": "fy5-15-L2-01",
       "level": 2,
+      "core": true,
       "text": "A portable loudspeaker produces a sound power of $0.050\\,\\text{W}$. What is the sound intensity level at a distance of $3.0\\,\\text{m}$ from the loudspeaker when the sound spreads evenly in all directions and is not reflected? Give the answer in decibels.",
       "answer": 86,
       "unit": "dB",
@@ -146,6 +150,7 @@
     {
       "id": "fy5-15-L2-05",
       "level": 2,
+      "core": true,
       "text": "The sound intensity level of a small loudspeaker was measured at different distances from the loudspeaker in an open field (example data). The meter readings are in the table.\n\na) By how many decibels did the level drop on average when the distance doubled? Calculate the total change in level between the distances $1.0\\,\\text{m}$ and $16\\,\\text{m}$ and divide it by the number of doublings of the distance.\n\nb) Compare the result with the prediction of the point source model. Enter the result of part a) in decibels in the answer box.",
       "kind": [
         "data",

@@ -1,15 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 69fc5e0aeb956c21
+CONTENT-HASH: 04ccd2767440e5a9
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
+## Fixed
+- L2-05 and L3-04 texts: "lineaarinen interpolointi" now explained in plain words in the task text itself ("laskea arvo kahden mittauspisteen väliltä suoran avulla"); numbers and answers unchanged.
+
 ## Polish
-- [Minor] solutions L3-02, Kaava line — four relations in one running line ("... ja P = U^2/R, josta") is dense; separate lines would read better.
+(none)
 
 ## Checked
-- open-exercises level 1 (part 1), level 2 (part 2), level 3 (part 3) at 1280 px with solutions open; exercise texts read in full.
-- Task texts are situation then question; case endings correct; units LaTeX; decimal comma throughout; "Ydintehtävä"/"Valinnainen" pills consistent; no overflow.
+- Captures fy7-16-open-exercises-1280-*, -L2-1280-*, -L3-1280-* of the new tasks opened (L1-08, L2-05, L3-05 in detail): headings, formula blocks, data tables and answer boxes render as in fi; no overflow.
+- Decimal separator and units consistent in text, tables and formulas (en: point; fi-easy: comma in text and LaTeX as in fi).
+- Table captions and column headers translated; symbols and units unchanged.
+- The edits after the captures change words only (no formula or layout), so the captures still apply.
 
 ## Scores
-illustrations n/a (5) · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 5

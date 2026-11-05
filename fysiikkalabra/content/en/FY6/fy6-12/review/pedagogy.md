@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 0672750c648ab7b0
+CONTENT-HASH: 9f0133e283d84987
 
 ## Blocking
+(none)
 
 ## Polish
-- None.
+- The plasma-ball photo leans decorative; the caption ties it to electrons accelerated in a field, a clause on potential difference would earn its place.
+- Check once that the worked example in the lesson uses the same zero of potential and x as the summary now states.
 
 ## Checked
-- Structure identical to Finnish: Key idea, Formula, 7-stage example, misconception, summary; inquiry activities, predictions with reveal links, experiments with locked/vary, explain criteria, exit ticket, nothing dropped.
-- Learning goals complete "In this lesson, you will learn to" + calculate/explain/calculate. Text reads as natural textbook English; paragraphs short.
-- Fixed: the two experiment tables showed the Finnish words 'hiukkanen', 'protoni', 'elektroni', 'alfahiukkanen' in inquiry.json names/values; now particle, proton, electron, alpha particle (verified in the rebuilt captures).
+batch delta review (en): three photos placed where they support potential energy, electron direction and gas discharge; lightning caption 2 physically correct (negative cloud base, electrons towards higher potential); V = Ex qualification clears an ambiguity.

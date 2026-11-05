@@ -1,0 +1,13 @@
+{
+  "id": "fy9-koe",
+  "course": "FY9",
+  "chapter": 1,
+  "order": 1,
+  "title": "The matriculation exam and answer technique",
+  "description": "What a complete answer in the physics exam contains: the seven steps of a solution, graphs and justified explanations, command words, time management and a review test covering all of upper secondary physics.",
+  "kind": "review",
+  "minutes": 75,
+  "subjects": [
+    "physics"
+  ]
+}

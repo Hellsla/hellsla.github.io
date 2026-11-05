@@ -1,0 +1,747 @@
+{
+  "intro": "Tässä on kuusi ylioppilaskokeen tyylistä tehtävää. Ne kokoavat yhteen tunnin aiheet: liikkeen, kuvaajat ja mittausaineiston. Ratkaise tehtävät kuten kokeessa. Valitse ensin koordinaatisto ja positiivinen suunta. Perustele, miksi valitset tietyn mallin. Ratkaise kysytty suure kaavasta ennen kuin sijoitat luvut. Arvioi lopuksi, onko tulos järkevä. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
+  "tasks": [
+    {
+      "id": "fy9-liike-s1",
+      "title": "Kiihdytyskaista",
+      "source": "example",
+      "source_note": "Liittymä, ajoneuvot ja luvut ovat keksittyjä esimerkkejä. Ne vastaavat suuruusluokaltaan tavallista moottoritien liittymää.",
+      "skills": [
+        "fy4-2",
+        "fy4-12",
+        "fy1-5"
+      ],
+      "text": "Auto tulee moottoritien kiihdytyskaistalle nopeudella $54\\,\\text{km/h}$. Kiihdytyskaista on kaista, jolla auto lisää vauhtia ennen kuin se siirtyy moottoritielle. Kaista on $270\\,\\text{m}$ pitkä. Auto kiihdyttää kaistalla tasaisesti, ja sen nopeus kaistan lopussa on $108\\,\\text{km/h}$. Moottoritien oikeanpuoleisella kaistalla ajaa rekka tasaisella nopeudella $81\\,\\text{km/h}$. Kun auto on kiihdytyskaistan alussa, rekka on $40\\,\\text{m}$ auton takana. Kaistat ovat rinnakkain, joten paikat voidaan mitata samaa tietä pitkin.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka kauan auton kiihdytys kaistalla kestää?",
+          "answer": {
+            "value": 12.0,
+            "unit": "s",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Siirtymä on $(t,v)$-kuvaajan pinta-ala: $\\Delta x = \\dfrac{v_0 + v}{2}\\,t$. Siitä saadaan $t = \\dfrac{2\\,\\Delta x}{v_0 + v}$ (tai käytetään paikan yhtälöä ja yhtälöä $v = v_0 + a\\,t$ yhdessä)."
+            },
+            {
+              "text": "Muuntaa nopeudet niin, että sijoittaa myös yksiköt: $54\\,\\text{km/h} = \\dfrac{54 \\cdot 1000\\,\\text{m}}{3600\\,\\text{s}} = 15\\,\\text{m/s}$ ja $108\\,\\text{km/h} = 30\\,\\text{m/s}$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$t = \\dfrac{2 \\cdot 270\\,\\text{m}}{15\\,\\text{m/s} + 30\\,\\text{m/s}} = 12{,}0\\,\\text{s}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$t \\approx 12\\,\\text{s}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kuinka suuri on auton kiihtyvyys?",
+          "answer": {
+            "value": 1.25,
+            "unit": "m/s²",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$a = \\dfrac{\\Delta v}{\\Delta t}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$a = \\dfrac{30\\,\\text{m/s} - 15\\,\\text{m/s}}{12{,}0\\,\\text{s}} = 1{,}25\\,\\text{m/s}^2$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$a \\approx 1{,}3\\,\\text{m/s}^2$ (tai $1{,}25\\,\\text{m/s}^2$)"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 5,
+          "text": "Ehtiikö rekka kiihdytyksen aikana auton rinnalle eli auton viereen? Kuinka pieni on rekan ja auton välimatka pienimmillään?",
+          "answer": {
+            "value": 17.5,
+            "unit": "m",
+            "tolerance": 0.04
+          },
+          "criteria": [
+            {
+              "text": "Kirjoittaa kummankin paikan samassa koordinaatistossa. Origo on kaistan alussa, $x_\\text{A} = v_0\\,t + \\tfrac{1}{2}\\,a\\,t^2$ ja $x_\\text{R} = -40\\,\\text{m} + v_\\text{R}\\,t$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "text": "Perustelee, että välimatka pienenee niin kauan kuin rekka on nopeampi. Välimatka on pienimmillään, kun nopeudet ovat yhtä suuret: $v_0 + a\\,t = v_\\text{R}$, $t = 6{,}0\\,\\text{s}$.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$x_\\text{A} = 112{,}5\\,\\text{m}$ ja $x_\\text{R} = 95\\,\\text{m}$, välimatka $17{,}5\\,\\text{m}$"
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Rekka ei ehdi auton rinnalle. Auto pysyy vähintään noin $18\\,\\text{m}$ edellä, ja kaistan lopussa ero on taas $40\\,\\text{m}$. (Myös: yhtälöllä $x_\\text{A} = x_\\text{R}$ ei ole reaalisia ratkaisuja.)"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Toinen kuljettaja kiihdyttää samalla kaistalla tasaisesti koko kaistan matkan. Hän kiihdyttää kuitenkin vain nopeuteen $72\\,\\text{km/h}$. Selitä kuvaajien avulla, miksi rekka silloin saavuttaa hänet. Selitä myös, miksi kiihdytyskaistalla kannattaa kiihdyttää samaan nopeuteen kuin muu liikenne.",
+          "criteria": [
+            {
+              "text": "Selittää, että auto on koko kaistan ajan hitaampi kuin rekka ($72\\,\\text{km/h} < 81\\,\\text{km/h}$). Siksi $(t,v)$-kuvaajassa rekan suorakulmion ala kasvaa nopeammin kuin auton ala. Perustelee myös luvuilla: kiihdytys kestää noin $15{,}4\\,\\text{s}$ ja auton keskinopeus on $17{,}5\\,\\text{m/s}$. Rekka kulkee siis keskimäärin noin $5\\,\\text{m/s}$ nopeammin. Se kuroo umpeen noin $77\\,\\text{m}$, mikä on enemmän kuin $40\\,\\text{m}$:n ero.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Rekka saavuttaa ja ohittaa auton ennen kaistan loppua. Kun auto tulee kaistan päähän $270\\,\\text{m}$:iin, rekka on noin $307\\,\\text{m}$:n kohdalla. Auton pitäisi siis siirtyä rekan taakse tai jarruttaa. Kuljettaja, joka on kiihdyttänyt muun liikenteen nopeuteen, pysyy edellä."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy4-2",
+        "concept": "fy4-12",
+        "communication": "fy4-12"
+      }
+    },
+    {
+      "id": "fy9-liike-s2",
+      "title": "Kaksi palloa aulassa",
+      "source": "example",
+      "source_note": "Tilanne ja luvut ovat keksittyjä esimerkkejä. Ilmanvastusta ei oteta huomioon.",
+      "skills": [
+        "fy4-2",
+        "fy4-12",
+        "fy1-6"
+      ],
+      "text": "Koulun aulassa tehdään liikuntatunnin koe. Opiskelija heittää tennispallon suoraan ylös. Pallo lähtee $1{,}5\\,\\text{m}$:n korkeudelta lattiasta, ja sen nopeus on $12{,}0\\,\\text{m/s}$. Täsmälleen samalla hetkellä toinen opiskelija pudottaa toisen pallon. Hän pudottaa sen levosta kolmannen kerroksen kaiteelta. Kaide on $9{,}0\\,\\text{m}$:n korkeudella lattiasta. Pallot liikkuvat vierekkäisiä pystysuoria linjoja pitkin, joten ne eivät törmää. Ilmanvastusta ei oteta huomioon.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka korkealle lattiasta heitetty pallo nousee?",
+          "answer": {
+            "value": 8.84,
+            "unit": "m",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Perustelee, että lakipisteessä nopeus on nolla, mutta kiihtyvyys on yhä $g$ alaspäin. Valitsee koordinaatiston (ylös on positiivinen).",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$t_\\text{l} = \\dfrac{v_0}{g}$ ja $y = y_0 + v_0\\,t_\\text{l} - \\tfrac{1}{2}\\,g\\,t_\\text{l}^2$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$t_\\text{l} \\approx 1{,}22\\,\\text{s}$ ja nousu $7{,}34\\,\\text{m}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$y \\approx 8{,}8\\,\\text{m}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 5,
+          "text": "Milloin pallot ohittavat toisensa? Millä korkeudella ne silloin ovat?",
+          "answer": [
+            {
+              "name": "t",
+              "value": 0.625,
+              "unit": "s",
+              "tolerance": 0.03
+            },
+            {
+              "name": "y",
+              "value": 7.08,
+              "unit": "m",
+              "tolerance": 0.03
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 2,
+              "detail": "Kohtaamisehto $y_\\text{A}(t) = y_\\text{B}(t)$: $y_{0\\text{A}} + v_0\\,t - \\tfrac{1}{2}\\,g\\,t^2 = y_{0\\text{B}} - \\tfrac{1}{2}\\,g\\,t^2$. Siitä saadaan $t = \\dfrac{y_{0\\text{B}} - y_{0\\text{A}}}{v_0}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$t = 7{,}5\\,\\text{m} : 12{,}0\\,\\text{m/s} = 0{,}625\\,\\text{s}$ ja $y = 9{,}0\\,\\text{m} - \\tfrac{1}{2} \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot (0{,}625\\,\\text{s})^2$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$t \\approx 0{,}63\\,\\text{s}$ ja $y \\approx 7{,}1\\,\\text{m}$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Tarkistus toisen pallon paikkafunktiolla antaa saman korkeuden. Ohitus tapahtuu ennen kuin heitetty pallo on lakipisteessä ja ennen kuin pudotettu pallo osuu lattiaan."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 3,
+          "text": "Selitä, miksi ohitushetki ei riipu putoamiskiihtyvyydestä. Ohittaisivatko pallot toisensa Kuussa samalla hetkellä?",
+          "criteria": [
+            {
+              "text": "Selittää, että molemmilla palloilla on sama kiihtyvyys. Siksi niiden nopeuksien erotus pysyy koko ajan $12{,}0\\,\\text{m/s}$, ja välimatka $7{,}5\\,\\text{m}$ pienenee tasaisesti.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Kuussa ohitushetki on sama $0{,}63\\,\\text{s}$. Ohituskorkeus on kuitenkin suurempi (noin $8{,}7\\,\\text{m}$), koska kumpikin pallo putoaa vähemmän."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 3,
+          "text": "Mitkä ovat pallojen nopeudet ohitushetkellä?",
+          "answer": [
+            {
+              "name": "vA",
+              "value": 5.87,
+              "unit": "m/s",
+              "tolerance": 0.03
+            },
+            {
+              "name": "vB",
+              "value": -6.13,
+              "unit": "m/s",
+              "tolerance": 0.03
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$v = v_0 - g\\,t$ kummallekin pallolle, ylös on positiivinen"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$v_\\text{A} = 12{,}0\\,\\text{m/s} - 9{,}81\\,\\text{m/s}^2 \\cdot 0{,}625\\,\\text{s} \\approx 5{,}87\\,\\text{m/s}$ ja $v_\\text{B} \\approx -6{,}13\\,\\text{m/s}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v_\\text{A} \\approx 5{,}9\\,\\text{m/s}$ ylöspäin ja $v_\\text{B} \\approx -6{,}1\\,\\text{m/s}$ eli alaspäin; etumerkit ja suunnat on kerrottu"
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy4-2",
+        "math": "fy4-12",
+        "communication": "fy4-12"
+      }
+    },
+    {
+      "id": "fy9-liike-s3",
+      "title": "Lähijuna saapuu asemalle",
+      "source": "example",
+      "source_note": "Aineisto on keksitty esimerkki. Siihen on lisätty samanlaista vaihtelua kuin puhelimen paikannuksessa.",
+      "skills": [
+        "fy1-4",
+        "fy4-2",
+        "fy1-3"
+      ],
+      "text": "Lähijuna lähestyi asemaa. Matkustaja tallensi junan nopeuden puhelimen paikannussovelluksella neljän sekunnin välein. Sovellus näyttää nopeuden kilometreinä tunnissa ja kokonaislukuina. Valmistajan mukaan näytetyn nopeuden epävarmuus on noin $\\pm 1\\,\\text{km/h}$.\n\n| $t\\ (\\text{s})$ | $v\\ (\\text{km/h})$ |\n|---|---|\n| $0$ | $91$ |\n| $4$ | $89$ |\n| $8$ | $90$ |\n| $12$ | $84$ |\n| $16$ | $77$ |\n| $20$ | $67$ |\n| $24$ | $56$ |\n| $28$ | $49$ |\n| $32$ | $39$ |\n| $36$ | $28$ |\n| $40$ | $21$ |\n\nTallennus katkesi hetkellä $40\\,\\text{s}$. Silloin juna oli vielä liikkeessä.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 6,
+          "text": "Esitä junan nopeus ajan funktiona kuvaajana. Sovita pisteisiin sopiva malli.",
+          "criteria": [
+            {
+              "key": "graph_axes",
+              "points": 1,
+              "detail": "Vaaka-akselilla on $t\\ (\\text{s})$ ja pystyakselilla $v\\ (\\text{km/h})$. Aika-akseli jatkuu ainakin $50\\,\\text{s}$:iin c-kohtaa varten."
+            },
+            {
+              "key": "graph_points",
+              "points": 1
+            },
+            {
+              "key": "graph_fit",
+              "points": 2,
+              "detail": "Kolmen ensimmäisen pisteen kohdalla on vaakasuora suora. Jarrutuksen pisteisiin on sovitettu laskeva suora, joka kulkee pisteiden välistä. Pisteitä ei yhdistetä murtoviivaksi."
+            },
+            {
+              "text": "Tunnistaa aineistosta kaksi vaihetta. Perustelee, miksi kolmea ensimmäistä pistettä ei oteta mukaan jarrutuksen suoraan: niissä nopeus on vakio.",
+              "tag": "graph",
+              "points": 2
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 5,
+          "text": "Määritä junan kiihtyvyys jarrutuksen aikana. Anna vastaus yksikössä $\\text{m/s}^2$.",
+          "answer": {
+            "value": -0.645,
+            "unit": "m/s²",
+            "tolerance": 0.06
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Kulmakerroin luetaan sovitetulta suoralta kahdesta pisteestä, jotka ovat kaukana toisistaan, esimerkiksi $(12\\,\\text{s};\\ 85\\,\\text{km/h})$ ja $(40\\,\\text{s};\\ 20\\,\\text{km/h})$: noin $-2{,}3\\,\\text{km/h}$ sekunnissa."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$a = \\dfrac{\\Delta v}{\\Delta t}$"
+            },
+            {
+              "text": "Muuntaa nopeuden muutoksen niin, että sijoittaa myös yksiköt: $-65\\,\\text{km/h} = \\dfrac{-65 \\cdot 1000\\,\\text{m}}{3600\\,\\text{s}} \\approx -18{,}1\\,\\text{m/s}$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$a \\approx -0{,}65\\,\\text{m/s}^2$; tulos $-0{,}61$…$-0{,}68\\,\\text{m/s}^2$ hyväksytään."
+            },
+            {
+              "text": "Tulkitsee etumerkin: kiihtyvyys on vastakkainen nopeudelle, joten vauhti pienenee.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 5,
+          "text": "Arvioi kuvaajan avulla, milloin juna pysähtyy. Arvioi myös, kuinka pitkän matkan juna kulkee jarrutuksen alusta siihen, kun se pysähtyy.",
+          "answer": {
+            "value": 481,
+            "unit": "m",
+            "tolerance": 0.07
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Jarrutus alkaa kohdasta, jossa vaakasuora ja laskeva suora leikkaavat (noin $10\\,\\text{s}$). Juna pysähtyy kohdassa, jossa jarrutussuora leikkaa aika-akselin (noin $48$–$49\\,\\text{s}$, suoraa jatketaan)."
+            },
+            {
+              "text": "Perustelee, että matka on $(t,v)$-kuvaajan ja aika-akselin välinen pinta-ala. Tässä alue on kolmio $\\tfrac{1}{2}\\,v_0\\,\\Delta t$.",
+              "tag": "graph",
+              "points": 2
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\tfrac{1}{2} \\cdot 25\\,\\text{m/s} \\cdot 38{,}5\\,\\text{s} \\approx 481\\,\\text{m}$, nopeus muunnettuna $90\\,\\text{km/h} = 25\\,\\text{m/s}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "noin $480\\,\\text{m}$; tulos $450$–$520\\,\\text{m}$ hyväksytään"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 4,
+          "text": "Matkustaja päättelee, että juna pysähtyi tarkalleen c-kohdan matkan päähän jarrutuksen alusta. Arvioi, kuinka luotettava päätelmä on.",
+          "criteria": [
+            {
+              "key": "assumptions",
+              "points": 2,
+              "detail": "Pysähtymishetki on ekstrapolointi eli arvio mittausalueen ulkopuolelta. Malli olettaa, että jarrutus jatkui samanlaisena myös hetken $40\\,\\text{s}$ jälkeen. Kuljettaja kuitenkin usein keventää jarrutusta juuri ennen pysähtymistä."
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Kulmakertoimessa on epävarmuutta. Jyrkin ja loivin pisteisiin sopiva suora antavat pysähtymishetkelle ja matkalle vaihteluvälin (noin $\\pm 20\\,\\text{m}$). Nopeuden epävarmuus $\\pm 1\\,\\text{km/h}$ on pieni verrattuna nopeuden muutokseen."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Tulos on suuruusluokaltaan luotettava (noin $480\\,\\text{m}$), mutta se ei ole ”tarkka”. Tulos kannattaa ilmoittaa kahdella merkitsevällä numerolla ja epävarmuuden kanssa."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy1-4",
+        "math": "fy4-2",
+        "concept": "fy4-2",
+        "transfer": "fy1-4",
+        "experiment": "fy1-3",
+        "communication": "fy1-4"
+      }
+    },
+    {
+      "id": "fy9-liike-s4",
+      "title": "Keskinopeusvalvonta",
+      "source": "example",
+      "source_note": "Valvontaosuus ja luvut ovat keksittyjä esimerkkejä. Keskinopeusvalvonnassa mitataan, kuinka kauan ajoneuvolta kestää ajaa tieosuus. Aika mitataan kameroilla, jotka ovat osuuden alussa ja lopussa.",
+      "skills": [
+        "fy4-1",
+        "fy4-2",
+        "fy1-3"
+      ],
+      "text": "Kunta harkitsee keskinopeusvalvontaa suoralle tieosuudelle. Osuus on $3{,}0\\,\\text{km}$ pitkä, ja nopeusrajoitus on $80\\,\\text{km/h}$. Osuuden alussa ja lopussa on kamera. Kamera kirjaa eli tallentaa hetken, jolloin ajoneuvo ajaa sen ohi. Järjestelmä laskee ajoneuvon keskinopeuden osuudella. Jos keskinopeus on yli $80\\,\\text{km/h}$, järjestelmä ilmoittaa ylinopeudesta. Kunnanvaltuustossa esitettiin kolme kannanottoa eli mielipidettä:\n\n1. ”Valvonta on epäreilua: keskinopeus ei todista, että kukaan olisi ajanut ylinopeutta yhdessäkään kohdassa.”\n2. ”Ajoin osuudesta $2{,}0\\,\\text{km}$ nopeudella $100\\,\\text{km/h}$ ja loput $1{,}0\\,\\text{km}$ nopeudella $60\\,\\text{km/h}$, joten keskinopeuteni oli $80\\,\\text{km/h}$.”\n3. ”Kamerat voisi sijoittaa vain $100\\,\\text{m}$:n päähän toisistaan, niin valvontaa olisi helpompi rakentaa.”\n\nKamerat kirjaavat ohitushetken $0{,}5\\,\\text{s}$:n tarkkuudella.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 5,
+          "text": "Arvioi ensimmäinen kannanotto. Perustele vastauksesi $(t,x)$- tai $(t,v)$-kuvaajan avulla.",
+          "criteria": [
+            {
+              "text": "Selittää, että keskinopeus on siirtymä jaettuna ajalla. $(t,x)$-kuvaajassa se on sen suoran kulmakerroin, joka kulkee osuuden alku- ja loppupisteen kautta.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "text": "Perustelee kuvaajalla: jos nopeus olisi koko ajan enintään $80\\,\\text{km/h}$, $(t,v)$-kuvaajan alle jäävä ala olisi enintään $80\\,\\text{km/h}$ kertaa aika. Silloin keskinopeus ei voisi ylittää rajaa. (Tai: $(t,x)$-kuvaaja ei voi nousta keskimäärin jyrkemmin kuin sen jyrkimmässä kohdassa.)",
+              "tag": "graph",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Kannanotto on väärä. Jos keskinopeus on yli $80\\,\\text{km/h}$, nopeus on ollut jossain kohdassa yli $80\\,\\text{km/h}$. Toisin päin päätelmä ei toimi: jos keskinopeus on alle rajan, se ei todista, että ylinopeutta ei ollut."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 5,
+          "text": "Arvioi toinen kannanotto. Laske kuljettajan keskinopeus osuudella.",
+          "answer": {
+            "value": 81.8,
+            "unit": "km/h",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$v_\\text{ka} = \\dfrac{\\Delta x}{t_1 + t_2}$, missä $t_1 = \\dfrac{\\Delta x_1}{v_1}$ ja $t_2 = \\dfrac{\\Delta x_2}{v_2}$"
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "$t_1 = 2{,}0\\,\\text{km} : 100\\,\\text{km/h} = 0{,}020\\,\\text{h} = 72\\,\\text{s}$ ja $t_2 = 1{,}0\\,\\text{km} : 60\\,\\text{km/h} = 60\\,\\text{s}$; $v_\\text{ka} = 3{,}0\\,\\text{km} : 132\\,\\text{s} \\approx 81{,}8\\,\\text{km/h}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v_\\text{ka} \\approx 82\\,\\text{km/h}$"
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Kannanotto on väärä. Nopeuksien keskiarvo olisi oikein vain, jos kumpaakin nopeutta ajettaisiin yhtä kauan. Kuljettaja ajoi nopeammin pidemmän matkan, ja keskinopeus ylittää rajan."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 5,
+          "text": "Arvioi kolmas kannanotto. Auto ajaa nopeudella $80\\,\\text{km/h}$. Kuinka suuri on keskinopeuden epävarmuus $3{,}0\\,\\text{km}$:n osuudella? Kuinka suuri se on $100\\,\\text{m}$:n osuudella?",
+          "criteria": [
+            {
+              "key": "uncertainty",
+              "points": 2,
+              "detail": "Kulkuaika lasketaan kahdesta kirjauksesta, joten sen epävarmuus on noin $1\\,\\text{s}$. $3{,}0\\,\\text{km}$:n osuudella aika on $135\\,\\text{s}$. Siksi keskinopeuden epävarmuus on noin $80\\,\\text{km/h} \\cdot 1\\,\\text{s} : 135\\,\\text{s} \\approx 0{,}6\\,\\text{km/h}$."
+            },
+            {
+              "text": "Laskee lyhyen osuuden. Aika on $4{,}5\\,\\text{s}$, joten yhden sekunnin virhe muuttaa keskinopeutta noin $18\\,\\text{km/h}$ eli yli $20\\,\\%$.",
+              "tag": "math",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Kannanotto ei pidä. Lyhyellä osuudella ajanoton epävarmuus on liian suuri verrattuna kulkuaikaan. Siksi valvontaosuuden on oltava pitkä."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy4-1",
+        "graph": "fy4-2",
+        "math": "fy4-1",
+        "experiment": "fy1-3",
+        "communication": "fy4-1"
+      }
+    },
+    {
+      "id": "fy9-liike-s5",
+      "title": "Kärry kaltevalla radalla",
+      "source": "example",
+      "source_note": "Raportti ja sen mittaustulokset ovat keksittyjä esimerkkejä.",
+      "skills": [
+        "fy4-2",
+        "fy1-3",
+        "fy1-4",
+        "fy1-8"
+      ],
+      "text": "Opiskelijaryhmä tutki, onko kärryn liike kaltevalla eli vinolla radalla tasaisesti kiihtyvää. Tässä on ote ryhmän raportista:\n\n> Päästimme kärryn levosta radan yläpäästä. Yksi ryhmän jäsen käynnisti sekuntikellon, kun kärry lähti, ja pysäytti sen, kun kärry ohitti mittanauhan $1{,}20\\,\\text{m}$:n kohdan. Aika oli $1{,}6\\,\\text{s}$. Laskimme kiihtyvyydeksi $0{,}94\\,\\text{m/s}^2$. Koska saimme kiihtyvyydelle arvon, kärryn liike on tasaisesti kiihtyvää.\n\nRyhmä arvioi, että käsin tehdyn ajanoton epävarmuus on noin $0{,}2\\,\\text{s}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Näytä, miten ryhmä sai kiihtyvyyden. Arvioi, kuinka paljon tulos voi muuttua ajanoton epävarmuuden takia.",
+          "answer": {
+            "value": 0.9375,
+            "unit": "m/s²",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Kun kappale lähtee levosta, $x = \\tfrac{1}{2}\\,a\\,t^2$. Siksi $a = \\dfrac{2x}{t^2}$. Ryhmä olettaa tässä jo, että kiihtyvyys on tasainen."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$a = \\dfrac{2 \\cdot 1{,}20\\,\\text{m}}{(1{,}6\\,\\text{s})^2} \\approx 0{,}94\\,\\text{m/s}^2$"
+            },
+            {
+              "key": "uncertainty",
+              "points": 2,
+              "detail": "Ajoilla $1{,}4\\,\\text{s}$ ja $1{,}8\\,\\text{s}$ saadaan $1{,}22\\,\\text{m/s}^2$ ja $0{,}74\\,\\text{m/s}^2$, joten $a \\approx 0{,}9 \\pm 0{,}3\\,\\text{m/s}^2$. Ajan suhteellinen epävarmuus on noin $13\\,\\%$. Se kaksinkertaistuu, koska aika on kaavassa toisessa potenssissa."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 5,
+          "text": "Arvioi ryhmän johtopäätös. Nimeä mittauksen tärkeimmät heikkoudet.",
+          "criteria": [
+            {
+              "text": "Huomaa, että päättely on kehäpäätelmä: se olettaa sen, mikä pitäisi osoittaa. Kaava $a = \\dfrac{2x}{t^2}$ olettaa tasaisen kiihtyvyyden. Siksi kaavalla saatu luku ei voi osoittaa, että liike on tasaisesti kiihtyvää. Yksi $(t,x)$-piste sopii mihin tahansa kiihtyvään liikkeeseen.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "error_sources",
+              "points": 2,
+              "detail": "Esimerkiksi reaktioaika ajanoton alussa ja lopussa, kärryn lähtö ehkä tönäisten, ohituskohdan arviointi sivulta katsoen ja vain yksi mittaus ilman toistoja."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Johtopäätös ei ole perusteltu. Tasaisen kiihtyvyyden osoittamiseen tarvitaan monta mittauspistettä eri hetkiltä. Lisäksi pitää tarkastella, kuinka hyvin malli sopii pisteisiin."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 6,
+          "text": "Suunnittele koe, jolla voi luotettavasti selvittää, onko kärryn liike tasaisesti kiihtyvää. Kokeella pitää myös voida määrittää kärryn kiihtyvyys.",
+          "criteria": [
+            {
+              "text": "Mittaa kärryn paikan monella hetkellä, esimerkiksi videoanalyysillä (tunnettu kuvanopeus, mittakaava radan tasossa) tai valoporteilla eri kohdissa.",
+              "tag": "experiment",
+              "points": 2
+            },
+            {
+              "text": "Esittää tulokset kuvaajana ja sovittaa niihin mallin: $(t,x)$-pisteisiin toisen asteen polynomi, jolloin $a = 2A$, tai $(t,v)$-pisteisiin suora, jonka kulmakerroin on $a$. Tarkastelee, osuvatko pisteet mallille.",
+              "tag": "graph",
+              "points": 2
+            },
+            {
+              "text": "Toistaa mittaukset. Pitää radan kaltevuuden ja lähtötavan samoina (kärry päästetään levosta ilman tönäisyä). Arvioi kiihtyvyyden epävarmuuden toistojen hajonnasta tai sovituksesta.",
+              "tag": "experiment",
+              "points": 2
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy4-2",
+        "experiment": "fy1-3",
+        "concept": "fy4-2",
+        "graph": "fy1-4",
+        "communication": "fy1-8"
+      }
+    },
+    {
+      "id": "fy9-liike-s6",
+      "title": "Pudotus puhelimen videolla",
+      "source": "example",
+      "source_note": "Mittaus ja luvut ovat keksittyjä esimerkkejä.",
+      "skills": [
+        "fy4-2",
+        "fy1-4",
+        "fy1-3",
+        "fy1-6"
+      ],
+      "text": "Opiskelija pudotti pallon levosta. Hän kuvasi putoamisen puhelimella nopeudella $60$ kuvaa sekunnissa. Videoanalyysiohjelmassa hän asetti mittakaavan metrimitan avulla. Mitta oli jalustalla $3{,}00\\,\\text{m}$:n päässä kamerasta. Pallo putosi $0{,}30\\,\\text{m}$ mitan takana eli $3{,}30\\,\\text{m}$:n päässä kamerasta.\n\nOhjelma antoi pallon korkeuden $y$ lattiasta joka kolmannesta kuvasta eli $0{,}05\\,\\text{s}$:n välein:\n\n| $t\\ (\\text{s})$ | $y\\ (\\text{m})$ |\n|---|---|\n| $0{,}00$ | $1{,}653$ |\n| $0{,}10$ | $1{,}607$ |\n| $0{,}20$ | $1{,}469$ |\n| $0{,}30$ | $1{,}253$ |\n| $0{,}40$ | $0{,}939$ |\n| $0{,}50$ | $0{,}538$ |\n\nTaulukossa on joka toinen piste. Taulukkolaskentaohjelma sovitti kaikkiin yhteentoista pisteeseen toisen asteen polynomin $y = A\\,t^2 + B\\,t + C$. Ohjelma antoi $A = (-4{,}44 \\pm 0{,}05)\\,\\text{m/s}^2$, $B = -0{,}007\\,\\text{m/s}$ ja $C = 1{,}651\\,\\text{m}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Määritä pallon putoamiskiihtyvyys sovituksen avulla.",
+          "answer": {
+            "value": 8.88,
+            "unit": "m/s²",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Vertaa polynomia paikan yhtälöön $y = y_0 + v_0\\,t + \\tfrac{1}{2}\\,a\\,t^2$. Päättelee, että $A = \\tfrac{1}{2}\\,a$ ja $B \\approx 0$ (pallo lähti levosta).",
+              "tag": "graph",
+              "points": 2
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$a = 2A = 2 \\cdot (-4{,}44\\,\\text{m/s}^2) = -8{,}88\\,\\text{m/s}^2$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Putoamiskiihtyvyys on $8{,}88\\,\\text{m/s}^2$ alaspäin (miinusmerkki tulee siitä, että $y$ kasvaa ylöspäin)."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka suuri on tuloksen epävarmuus sovituksen perusteella? Sopiiko tulos taulukkoarvoon $9{,}81\\,\\text{m/s}^2$?",
+          "answer": {
+            "value": 0.1,
+            "unit": "m/s²",
+            "tolerance": 0.05
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\Delta a = 2\\,\\Delta A$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\Delta a = 2 \\cdot 0{,}05\\,\\text{m/s}^2 = 0{,}10\\,\\text{m/s}^2$, eli $a = (8{,}88 \\pm 0{,}10)\\,\\text{m/s}^2$"
+            },
+            {
+              "key": "conclusion",
+              "points": 2,
+              "detail": "Ero taulukkoarvoon on $0{,}93\\,\\text{m/s}^2$. Se on noin yhdeksän kertaa epävarmuus, joten tulos ei sovi taulukkoarvoon. Pisteiden pieni hajonta ei kerro systemaattisesta virheestä."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Selitä, mistä systemaattinen virhe johtuu ja mihin suuntaan se muuttaa tulosta. Korjaa tulos.",
+          "answer": {
+            "value": 9.77,
+            "unit": "m/s²",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "error_sources",
+              "points": 2,
+              "detail": "Mittakaava asetettiin metrimitan tasossa. Pallo liikkui kuitenkin kauempana kamerasta kuin mitta. Siksi pallon matkat näkyvät kuvassa pienempinä. Ohjelma antaa liian pienet matkat ja liian pienen kiihtyvyyden."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Todelliset matkat ovat $3{,}30 : 3{,}00 = 1{,}10$-kertaiset, joten $a = 1{,}10 \\cdot 8{,}88\\,\\text{m/s}^2 \\approx 9{,}77\\,\\text{m/s}^2$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$a \\approx (9{,}8 \\pm 0{,}1)\\,\\text{m/s}^2$. Tämä sopii taulukkoarvoon $9{,}81\\,\\text{m/s}^2$"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Opiskelijan pari ehdottaa, että kiihtyvyys laskettaisiin vain ensimmäisestä ja viimeisestä pisteestä kaavalla $a = \\dfrac{2\\,\\Delta y}{t^2}$. Arvioi ehdotus.",
+          "criteria": [
+            {
+              "text": "Selittää, että sovitus käyttää kaikkia pisteitä. Siksi yhden pisteen satunnainen virhe vaikuttaa vähemmän. Sovituksesta saadaan myös epävarmuus, ja siitä näkee, sopiiko malli.",
+              "tag": "experiment",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Kahden pisteen laskulla saadaan tässä lähes sama tulos ($8{,}92\\,\\text{m/s}^2$). Lasku on kuitenkin herkempi yhden pisteen virheelle ja lähtöhetken virheelle. Se ei myöskään korjaa mittakaavavirhettä. Sovitus on parempi."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy1-4",
+        "math": "fy4-2",
+        "experiment": "fy1-3",
+        "communication": "fy1-3"
+      }
+    }
+  ]
+}

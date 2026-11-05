@@ -3,6 +3,7 @@
     {
       "id": "fy1-3-L1-01",
       "level": 1,
+      "core": true,
       "text": "A small ball's falling time is measured four times and the results are $0.52\\,\\text{s}$, $0.48\\,\\text{s}$, $0.55\\,\\text{s}$ and $0.49\\,\\text{s}$. What is the mean of the series?",
       "answer": 0.51,
       "unit": "s",
@@ -44,6 +45,7 @@
     {
       "id": "fy1-3-L1-06",
       "level": 1,
+      "core": true,
       "text": "Which of the following situations is an example of a systematic error?",
       "kind": [
         "concept"
@@ -98,6 +100,7 @@
     {
       "id": "fy1-3-L2-01",
       "level": 2,
+      "core": true,
       "text": "The rolling time of a ball is measured six times: $1.84\\,\\text{s}$, $1.91\\,\\text{s}$, $1.78\\,\\text{s}$, $1.88\\,\\text{s}$, $1.96\\,\\text{s}$ and $1.82\\,\\text{s}$. The estimate of random error is taken to be half of the range. What percentage of the mean is it?",
       "answer": 4.83,
       "unit": "%",
@@ -183,6 +186,7 @@
     {
       "id": "fy1-3-L2-06",
       "level": 2,
+      "core": true,
       "text": "Two groups measured the same amount of water, whose volume is known accurately: $50.0\\,\\text{ml}$. The results are in the table. Calculate the deviation of the mean of group A's results from the known value, with its sign. Which series of measurements is more repeatable and which is closer to the true value? Justify with the half-ranges and the means.",
       "kind": [
         "data",

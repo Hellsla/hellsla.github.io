@@ -132,7 +132,7 @@
 ## Ydinajatus
 
 ### Valo on poikittaista aaltoa
-Luvussa *Sähkömagneettinen säteily ja mustan kappaleen spektri* nähtiin, että valo on sähkömagneettista aaltoa. Sähkökenttä ja magneettikenttä värähtelevät kohtisuorassa toisiaan vastaan. Ne värähtelevät kohtisuorassa myös aallon etenemissuuntaa vastaan. Valo on siis poikittaista aaltoa, kuten aalto narussa (luku *Mekaaninen aaltoliike*). Poikittaisessa aallossa on tärkeää, mihin suuntaan värähtely tapahtuu. Valon **polarisaatiosuunta** on se suunta, jossa sähkökenttä värähtelee.
+Luvussa *Sähkömagneettinen säteily ja mustan kappaleen spektri* nähtiin, että valo on sähkömagneettista aaltoa. Sähkökenttä ja magneettikenttä värähtelevät kohtisuorassa toisiaan vastaan. Ne värähtelevät kohtisuorassa myös aallon etenemissuuntaa vastaan. Valo on siis poikittaista aaltoa, kuten aalto narussa (luku *Aaltojen synty ja eteneminen*). Poikittaisessa aallossa on tärkeää, mihin suuntaan värähtely tapahtuu. Valon **polarisaatiosuunta** on se suunta, jossa sähkökenttä värähtelee.
 
 Ääni on pitkittäistä aaltoa. Siinä väliaine värähtelee etenemissuunnassa, eikä värähtelylle jää muita suuntia. Siksi ääntä ei voi polarisoida. Valon voi polarisoida, ja se osoittaa, että valo on poikittaista aaltoa.
 
@@ -267,9 +267,9 @@ Ihanteellinen polarisaattori päästää läpi puolet polarisoimattoman valon in
 </svg>
 
 ### Kaksi polarisaattoria
-Toista polarisaattoria, jonka eteen tulee jo polarisoitunutta valoa, sanotaan **analysaattoriksi**. Jos analysaattorin läpäisysuunta on sama kuin valon polarisaatiosuunta, kaikki valo pääsee läpi. Kun analysaattoria kierretään, läpi tulevan valon intensiteetti pienenee.
+Toista polarisaattoria, johon tulee jo polarisoitunutta valoa, sanotaan **analysaattoriksi**. Jos analysaattorin läpäisysuunta on sama kuin valon polarisaatiosuunta, kaikki valo pääsee läpi. Kun analysaattoria kierretään, läpi tulevan valon intensiteetti pienenee.
 
-Kun läpäisysuunnat ovat kohtisuorassa toisiaan vastaan, polarisaattorit ovat ristissä. Silloin ihanteellisten kalvojen läpi ei pääse valoa lainkaan. Kahdella polarisaattorikalvolla voi siis tutkia, onko valo polarisoitunutta ja mihin suuntaan. Jos valo on polarisoitunutta, sen kirkkaus vaihtelee, kun kalvoa kierretään. Polarisoimattoman valon kirkkaus ei muutu, vaikka kalvoa kierretään.
+Kun läpäisysuunnat ovat kohtisuorassa toisiaan vastaan, polarisaattorit ovat ristissä. Silloin ihanteellisten kalvojen läpi ei pääse valoa lainkaan. Kahdella polarisaattorikalvolla voi siis tutkia, onko valo polarisoitunutta ja mihin suuntaan. Jos valo on polarisoitunutta, sen kirkkaus vaihtelee, kun kalvoa kierretään. Polarisoimattoman valon kirkkaus ei muutu, vaikka kalvoa kierretään. Jos ristissä olevien polarisaattorien väliin asetetaan vinoon kolmas kalvo, valoa pääsee taas läpi. Keskimmäisen kalvon jälkeen valolla on nimittäin komponentti eli osa myös viimeisen kalvon läpäisysuunnassa.
 
 <svg data-fig="sheets" viewBox="0 0 600 320" role="img" aria-label="Periaatekuva: kaksi paria pyöreitä polarisaattorikalvoja valopöydän päällä. Kalvojen viivoitus näyttää läpäisysuunnan. Vasemmalla kalvojen läpäisysuunnat ovat samat, ja kulma on 0 astetta. Päällekkäinen osa on vain vähän tummempi kuin yksi kalvo. Oikealla toisen kalvon läpäisysuunta on pystysuora ja toisen vaakasuora, ja kulma on 90 astetta. Päällekkäinen osa on lähes musta." style="max-width:100%;font-size:24px">
   <defs><clipPath id="fy715s-a"><circle cx="112" cy="132" r="72.5"/></clipPath><clipPath id="fy715s-b"><circle cx="190" cy="132" r="72.5"/></clipPath><clipPath id="fy715s-c"><circle cx="410" cy="132" r="72.5"/></clipPath><clipPath id="fy715s-d"><circle cx="488" cy="132" r="72.5"/></clipPath></defs>
@@ -627,15 +627,16 @@ I_2 &= \tfrac{1}{2} I_0 \cos^2\theta \\
 ## Yleinen virhekäsitys
 Moni ajattelee, että polarisaattori toimii kuin tumma lasi, joka himmentää kaikkea valoa saman verran. Polarisaattori kuitenkin valitsee värähtelysuunnan. Polarisoitunut valo voi päästä läpi lähes kokonaan tai ei lainkaan sen mukaan, mihin asentoon kalvo on käännetty.
 
-Toinen virhe on käyttää Malusin lakia polarisoimattomalle valolle. Polarisoimattoman valon intensiteetti puolittuu ensimmäisessä polarisaattorissa kulmasta riippumatta. Kulma $\theta$ mitataan vasta polarisoituneen valon polarisaatiosuunnasta.
+Toinen virhe on unohtaa, että polarisoimattoman valon intensiteetti puolittuu ensimmäisessä polarisaattorissa. Kalvon asento ei vaikuta tähän. Kalvon asennolla on merkitystä vasta polarisoituneelle valolle. Kulma mitataan polarisoituneen valon polarisaatiosuunnasta. Siksi kulmalla ei ole väliä ensimmäisessä polarisaattorissa.
 
 Kolmas virhe on ajatella, että lisäkalvo voi vain vähentää läpi tulevaa valoa. Oletetaan, että kaksi polarisaattoria on ristissä. Kun niiden väliin laitetaan kolmas polarisaattori $45^\circ$:n kulmaan, läpi pääsee taas valoa. Keskimmäisen kalvon läpi tullut valo on polarisoitunut $45^\circ$:n kulmaan. Sillä on siksi komponentti myös viimeisen kalvon läpäisysuunnassa.
 
 ## Tiivistelmä
 - Valo on poikittaista aaltoa, joten se voidaan polarisoida. Polarisaatiosuunta on sähkökentän värähtelysuunta. Ääntä ei voi polarisoida, koska se on pitkittäistä aaltoa.
 - Ihanteellinen polarisaattori päästää läpi puolet polarisoimattoman valon intensiteetistä. Läpi tullut valo on polarisoitunutta läpäisysuuntaan.
-- Polarisoituneen valon intensiteetti analysaattorin jälkeen on $I = I_0 \cos^2\theta$ (Malusin laki). Ristissä olevien polarisaattorien läpi ei pääse valoa.
-- Eristeen pinnasta heijastunut valo on osittain polarisoitunutta pinnan suuntaisesti. Brewsterin kulmassa $\tan\alpha_\text{B} = n_2 : n_1$ se on täysin polarisoitunutta. Polaroidut aurinkolasit, nestekidenäytöt ja 3D-lasit käyttävät polarisaatiota hyväksi.
+- Kun polarisoitunut valo tulee toiseen polarisaattoriin eli analysaattoriin, läpi tulevan valon intensiteetti riippuu läpäisysuuntien välisestä kulmasta. Jos läpäisysuunnat ovat samat, kaikki ensimmäisen polarisaattorin läpi tullut valo pääsee läpi. Ristissä olevien polarisaattorien läpi ei pääse valoa. Jos niiden väliin asetetaan vinoon kolmas polarisaattori, valoa pääsee taas läpi.
+- Eristeen pinnasta heijastunut valo on osittain polarisoitunutta pinnan suuntaisesti. Brewsterin kulmassa se on täysin polarisoitunutta. Polaroidut aurinkolasit, nestekidenäytöt ja 3D-lasit käyttävät polarisaatiota hyväksi.
+- Syventävä: polarisoituneen valon intensiteetti analysaattorin jälkeen on $I = I_0 \cos^2\theta$ (Malusin laki). Brewsterin kulmalle pätee $\tan\alpha_\text{B} = n_2 : n_1$ (Brewsterin laki).
 
 <svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Kuvitus: pöydällä on puhelin, jonka näyttö loistaa kirkkaana. Näytön päälle on asetettu vinosti neliön muotoinen harmaa polarisaattorikalvo. Kalvon alle jäävä osa näytöstä näyttää lähes mustalta. Kalvon kulma, joka on näytön ulkopuolella, näyttää vain vähän harmaalta." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy715s-table" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy715s-screen" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d0e6fb"/><stop offset="1" stop-color="#ffffff"/></linearGradient><clipPath id="fy715s-film"><path d="M300,170 L470,140 L500,320 L330,350 Z"/></clipPath></defs>

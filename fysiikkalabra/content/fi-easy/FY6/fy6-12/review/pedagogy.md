@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: c542c1823b37cf93
+CONTENT-HASH: 92f0939fc12d8abd
 
 ## Blocking
+(none)
 
 ## Polish
-- None.
+- Plasma-ball photo leans decorative; a clause on potential difference would earn its place.
 
 ## Checked
-- Structure identical to Finnish: Key idea, Formula, 7-stage example, misconception, summary; inquiry activities, predictions with reveal links, experiments with locked/vary, explain criteria, exit ticket, nothing dropped.
-- Really plain Finnish, not a copy: one idea per sentence, terms explained at first use (potentiaalienergia, tasapotentiaalipinta, kohtisuorassa, säilyy eli pysyy samana), the misconception reordered into short steps; learning goals use the -maan/-mään form like the reference. meta.json has 5 key_concepts with explanations.
+batch delta review (fi-easy, NOTES 12): three photos with short alt texts and captions tied to potential energy; V = Ex qualification in two sentences; lightning caption 2 physically correct.

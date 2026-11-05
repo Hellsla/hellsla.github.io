@@ -52,7 +52,7 @@ def git(*a):
 
 
 def page_of(course, lid):
-    return f"{course}-sovella" if lid == "sovella" else lid
+    return f"{course}-{lid}" if lid in ("sovella", "koe") else lid
 
 
 def scope(base):

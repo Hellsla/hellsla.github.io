@@ -491,7 +491,12 @@ def link_languages():
                 return (f'<details class="lang-menu"><summary><span class="visually-hidden">{esc(here("site.language"))}: </span>'
                         f'<span class="lang-current">{esc(here("format.language_name"))}</span></summary>'
                         f'<ul class="lang-list" aria-label="{esc(here("site.language_choose"))}">{"".join(items)}</ul></details>')
-            f.write_text(re.sub(r"<!--fl-languages:([\w.-]+)-->", control, f.read_text()))
+            html = re.sub(r"<!--fl-languages:([\w.-]+)-->", control, f.read_text())
+            if lang != i18n.SOURCE:   # a link in the text to a page only the source language has (FY10's investigations from FY9): that page
+                src = OUTS[i18n.SOURCE]
+                html = re.sub(r'\bhref="([\w.-]+\.html)([#?][^"]*)?"', lambda m: m.group(0) if (OUTS[lang] / m.group(1)).is_file() or not (src / m.group(1)).is_file()
+                              else f'href="{os.path.relpath(src / m.group(1), OUTS[lang]).replace(os.sep, "/")}{m.group(2) or ""}"', html)
+            f.write_text(html)
 
 
 def chapter_card(html):
@@ -540,11 +545,11 @@ def course_text(code, mod):
     return out
 
 
-def chapter_nav(out, modules, built_ids, practice_built):
+def chapter_nav(out, modules, built_ids, practice_built, exam_built=()):
     """Edellinen luku / Seuraava luku under every lesson and Sovella page of this language (teacher 2026-10-29). The
     order is the module's lesson order in curriculum.json (the teaching order: FY3 is not numeric), only published
-    pages are linked, the first chapter leads back to the module page, the last to Sovella itsenäisesti when it is
-    published (else the module page), and the Sovella page back to the last chapter. Links stay in this language's
+    pages are linked, the first chapter leads back to the module page, the last to the Esimerkkikoe and then
+    Haastetehtävät (Sovella) when published (else the module page), each back to the one before. Links stay in this language's
     folder, so the language is kept; new chapters join the sequence when they are published."""
     if only:                                       # a preview links the lessons a full build would publish, and itself
         built_ids = built_ids | {f.name for f in courses.lessons(lang=T.lang) if review_status(f)["state"] != "draft"}
@@ -553,6 +558,7 @@ def chapter_nav(out, modules, built_ids, practice_built):
                 f'<span class="dir">{direction}</span><span class="name">{esc(name)}</span></a>')
     for code, mod in modules:
         seq = [(l["id"] + ".html", l["title"]) for l in mod.get("lessons", []) if l["id"] in built_ids]
+        if code in exam_built: seq.append((practice.page_name(code + practice.EXAM), T("exam.title")))     # teacher 2026-11-05: koe, then Haastetehtävät
         if code in practice_built: seq.append((practice.page_name(code), T("practice.title")))
         course = (f"{code}.html", T("lesson.chapter_course", course=code))
         for i, (name, _) in enumerate(seq):
@@ -581,13 +587,15 @@ def unit_sections(md_text):
 
 
 def build_units(lang, out, unit_pub):
-    """The course units written in this language (scripts/units.py): each page in the lesson template with the
-    inquiry stages, the course's components (units/<course>/units.js and units.css), its simulation, its credits,
-    sources and teacher notes, and Previous / Next unit in the course's order. A draft is built only as a preview."""
-    published = {f"{u}.html" for u, ul in unit_pub.items() if ul == lang}
+    """The course units in this language, written in it or translated into it (scripts/units.py): each page in the
+    lesson template with the inquiry stages, the course's components (units/<course>/units.js and units.css), its
+    simulation, its credits, sources and teacher notes, Previous / Next unit in the course's order, "Luvun tärkeät
+    käsitteet" in an S2 language and, once another language publishes the unit too, the language links (teacher
+    2026-11-04, FY9 in en and fi-easy). A draft is built only as a preview. unit_pub: {unit id: languages published}."""
+    published = {f"{u}.html" for u, ls in unit_pub.items() if lang in ls}
     for uid in units.ids(lang):
         if only and only != uid: continue
-        if uid not in unit_pub: continue
+        if lang not in unit_pub.get(uid, ()): continue
         errs = units.check(uid, lang)
         if errs: sys.exit("\n".join(errs))
         d = units.load(uid, lang); st = units.status(uid, lang); f = units.folder(uid, lang); code = d["course"]
@@ -612,7 +620,8 @@ def build_units(lang, out, unit_pub):
         tasks_html = ""                                  # the unit's own task set (FY9): its Tehtävät, last on the page
         if units.has_tasks(uid, lang):
             tasks_html, _ = practice.render(units.task_key(uid), lang, md, solution_html, T("practice.title"), embedded=True, prefix=units.number(uid))
-        body, toc = inquiry.render(f, inq, {"intro": intro, "sections": sections, "sim": sim, "exercises": tasks_html, "exit": exit_html}, md)
+        body, toc = inquiry.render(f, inq, {"intro": intro, "sections": sections, "sim": sim, "exercises": tasks_html, "exit": exit_html,
+                                            "concepts": inquiry.key_concepts_html(uid, d.get("key_concepts"), md)}, md)   # Selkeä suomi only (NOTES.md §12)
         if not tasks_html:
             for key in ("check_practice", "further_practice"):   # a unit without tasks has no exercises section: point to the theory summary only
                 body = body.replace(T(f"inquiry.{key}"), re.sub(r'(,| and)[^<]*<a href="#exercises">[^<]*</a>', "", T(f"inquiry.{key}")))
@@ -638,7 +647,7 @@ def build_units(lang, out, unit_pub):
                 .replace("{{scripts}}", f'<script src="inquiry.js"></script>' + ('<script src="selfassess.js"></script>' if tasks_html else "")
                          + (f'<script src="units/{code.lower()}/units.js"></script>' if cdir.is_dir() else ""))
                 .replace("{{description}}", esc(d["description"])).replace("{{url}}", URL + f"{uid}.html")
-                .replace("{{languages}}", ""))
+                .replace("{{languages}}", languages_nav(f"{uid}.html") if len(unit_pub[uid]) > 1 else ""))   # a unit in one language has none
         (out / f"{uid}.html").write_text(rebase(html))
         print("built", uid, f"({st['state']})")
 
@@ -719,7 +728,7 @@ def build_language(lang):
             (SITE / ref).parent.mkdir(parents=True, exist_ok=True); shutil.copy(courses.pic_source(ref), SITE / ref); assets.append(ref)
         name = f"{meta['id']}.html"
         titles = chapter_titles(meta["course"])
-        kc_section = concept_cards.lesson_section(meta["course"], meta["id"], T, lang, titles)   # "Kertaa luvun käsitteet" after the exit ticket (teacher 2026-11-03)
+        kc_section = concept_cards.lesson_section(meta["course"], meta["id"], T, lang, titles)   # "Kertaa luvun käsitteet": the end of Esimerkit (teacher 2026-11-05)
         if inq is None:                                   # classic layout: theory (with the sim inside), exit ticket, exercises
             sim = sim.replace("<!--sim-info-->", "")
             if sim and "<!-- sim -->" in lesson_html: lesson_html = lesson_html.replace("<!-- sim -->", sim, 1)
@@ -745,8 +754,7 @@ def build_language(lang):
                 sections["Tiivistelmä"] = tv.replace("</ul>", "</ul>" + kc, 1) if "</ul>" in tv else tv + kc
             parts = {"intro": intro, "sections": sections, "sim": sim, "exercises": ex_html,
                      "concepts": inquiry.key_concepts_html(meta["id"], meta.get("key_concepts"), lambda t: nbsp_units(render_md(t))),   # Selkeä suomi only (NOTES.md §12)
-                     "exit": f'<div id="exit"><h3>{inquiry.exit_title()}</h3>{exit_items}</div>', "cards": kc_section,
-                     "cards_nav": concept_cards.lesson_nav(T) if kc_section else ""}
+                     "exit": f'<div id="exit"><h3>{inquiry.exit_title()}</h3>{exit_items}</div>', "cards": kc_section}
             body, toc = inquiry.render(folder, inq, parts, lambda t: nbsp_units(render_md(t)))
             if kc_section:   # bold terms of Teoriatiivistelmä that name a card open it (never before that stage)
                 body = re.sub(r'<section class="stage" id="selita".*?</section>', lambda m: concept_cards.mark_terms(m.group(0), meta["course"], lang), body, count=1, flags=re.S)
@@ -793,6 +801,28 @@ def build_language(lang):
                                                 points=T.count("practice.task_points", sum(practice.total(t) for t in tasks if t.get("kind") != "own")))
         print("built", pname, f"({ps['state']})")
 
+    # Esimerkkikoe: a course's example exam (scripts/practice.py render_exam, docs/exam-guidelines.md, teacher 2026-11-05),
+    # the same task format and gate as Sovella itsenäisesti, its page after it; a preview builds it with `build.py <COURSE>-koe`.
+    exam_built = {}
+    for key in practice.exams(lang):
+        code, pname = practice.course_of(key), practice.page_name(key)
+        if only and only != pname[:-5]: continue
+        ps = practice.status(key, lang)
+        if ps["state"] != "reviewed" and not (only or build_all):
+            if (LIVE / out.relative_to(SITE) / pname).is_file():
+                print(f"{'::warning::' if os.environ.get('GITHUB_ACTIONS') else 'WARNING:'} {pname} is on the live site but its reviews are not current; this build removes it")
+            continue
+        body, ptoc = practice.render(key, lang, lambda t: nbsp_units(render_md(t)), solution_html, T("exam.title"))
+        html = (texts(tpl).replace("{{title}}", esc(T("exam.title"))).replace("{{course}}", code).replace("{{notice}}", notice("reviewed" if ps["state"] == "reviewed" else "draft"))
+                .replace("{{strings}}", strings_block(None)).replace("{{back_to_course}}", esc(T("site.back_to_course", course=code)))
+                .replace("{{toc}}", ptoc).replace("{{main}}", f'<article id="teoria" class="inquiry practice exam">{body}</article><!--fl-chapter-nav:{code}-koe-->')
+                .replace("{{scripts}}", '<script src="selfassess.js"></script>')
+                .replace("{{description}}", esc(T("exam.description", code=code, title=course_text(code, curriculum[code])["title"]))).replace("{{url}}", URL + pname)
+                .replace("{{languages}}", languages_nav(pname)))
+        (out / pname).write_text(rebase(html))
+        exam_built[code] = T("exam.course_count", max=practice.max_points(practice.load(key, lang)))
+        print("built", pname, f"({ps['state']})")
+
     # Course pages and front page. Every module in curriculum.json gets a page; lessons built in this run are
     # links, the rest are listed as "tulossa" so students see the whole course and nav links always resolve.
     modules = [(k, course_text(k, v)) for k, v in curriculum.items() if not k.startswith("_")]
@@ -825,6 +855,7 @@ def build_language(lang):
         # a language link from a page this language lacks lands here (link_languages): the note at its #unavailable-<id> says so
         missing = [(l["id"], l["title"]) for l in slots if l["id"] not in built_ids]
         if code not in practice_built: missing.append((f"{code}-sovella", T("practice.title")))
+        if code not in exam_built: missing.append((f"{code}-koe", T("exam.title")))
         notes = "".join(f'<p class="unavailable" id="unavailable-{lid}" role="note" tabindex="-1">{T("site.unavailable_note", title=esc(title))}</p>'
                         for lid, title in missing)
         goals = "".join(f"<li>{esc(g)}</li>" for g in mod.get("tavoitteet", []))
@@ -832,16 +863,18 @@ def build_language(lang):
                 f'<p class="lead">{esc(T("site.module_question." + code))}</p>'
                 f'<p class="mod-status">{main_label}{(" · " + extra_label) if extra_label else ""}</p>'
                 + f'<h2>{T("site.course_lessons")}</h2>{items}<div class="mod-more">'
+                + concept_cards.module_section(code, T, lang, chapter_titles(code, built_ids))   # Kertauspakkasi: the student's deck of the module (teacher 2026-11-03); order deck, exam, Haastetehtävät (teacher 2026-11-05)
+                + (f'<section><h2>{T("exam.title")}</h2><p>{T("exam.course_lead")}</p><ul class="lessons practice-link"><li class="live">'
+                   f'<a href="{practice.page_name(code + practice.EXAM)}">{T("exam.title")}</a> <span class="count">{exam_built[code]}</span></li></ul></section>' if code in exam_built else "")
                 + (f'<section><h2>{T("practice.title")}</h2><p>{T("practice.course_lead")}</p><ul class="lessons practice-link"><li class="live">'
                    f'<a href="{practice.page_name(code)}">{T("practice.title")}</a> <span class="count">{practice_built[code]}</span></li></ul></section>' if code in practice_built else "")
-                + concept_cards.module_section(code, T, lang, chapter_titles(code, built_ids))   # Kertauspakkasi: the student's deck of the module (teacher 2026-11-03)
                 + (f'<section><h2>{T("site.course_goals")}</h2><details class="goals"><summary>{T.count("site.course_goals_show", len(mod.get("tavoitteet", [])))}</summary>'
                    f'<p>{T("site.course_goals_lead")}</p><ul>{goals}</ul></details></section>' if goals else "") + "</div>")
         desc = T("site.course_description", code=code, title=mod["title"], done=done, n=len(slots))
         (out / f"{code}.html").write_text(page(T("site.course_title", code=code, title=mod["title"]), body,
                                                 f'<a href="index.html">{T("site.name")}</a> › {code}', f"{code}.html", desc, main_class="reading module-page"))
 
-    chapter_nav(out, modules, built_ids, practice_built)
+    chapter_nav(out, modules, built_ids, practice_built, exam_built)
 
     # Lukiokohtaiset opintojaksot (teacher 2026-10-30, scripts/local_courses.py): school-specific courses from
     # local-courses.json, apart from the national modules; a page and a front-page row in each language that has the
@@ -897,14 +930,24 @@ def build_language(lang):
         (out / f"{iid}.html").write_text(rebase(html)); inv_built[iid] = d
         print("built", iid, f"({st['state']})")
     # Course units (teacher's brief 2026-11-01, FY14; scripts/units.py): the lessons of a local course written in its
-    # own language, published only in that language's folder when all three reviews pass. Every language's course
-    # page links to them there, so which units are published is decided from their reviews, not from built files.
-    unit_pub = {u: ul for ul, u in units.all_units() if units.status(u, ul)["state"] == "reviewed" or build_all or only == u}
+    # own language and, for a course with "translations" (FY9, teacher 2026-11-04), translated, each language version
+    # published in its language's folder when its own three reviews pass (a translation only where that language has
+    # the course, so its links to the course page hold). Every language's course page links each unit's version in its
+    # own language when published, else the source language's, so this is decided from the reviews, not from built files.
+    unit_pub = {}
+    for ul, u in units.all_units():
+        if not (units.status(u, ul)["state"] == "reviewed" or build_all or only == u): continue
+        if units.is_translation(u, ul) and not (build_all or only) and units.load(u, ul)["course"] not in local_courses.load(ul):
+            if ul == lang: print(f"note: {ul}/{u}.html waits for {units.load(u, ul)['course']} in content/{ul}/local-courses.json"); continue
+        unit_pub.setdefault(u, set()).add(ul)
     if lang in units.languages(): build_units(lang, out, unit_pub)
     local = local_courses.load(lang)
     local_rows = ""
     for code, c in local.items():
-        cu = [(u, units.load(u, ul), os.path.relpath(OUTS[ul] / f"{u}.html", out).replace(os.sep, "/")) for u, ul in unit_pub.items() if units.load(u, ul)["course"] == code]
+        cu = []
+        for u, ls in unit_pub.items():                   # (id, the language linked, href): this language's version, else the source's
+            ul = lang if lang in ls else units.lang_of(u) if units.lang_of(u) in ls else None
+            if ul and units.load(u, ul)["course"] == code: cu.append((u, ul, os.path.relpath(OUTS[ul] / f"{u}.html", out).replace(os.sep, "/")))
         local_rows += home_row(code, c["title"], c["subtitle"])
         (out / f"{code}.html").write_text(page(f"{code} {c['title']}", local_courses.page_body(code, c, T, chapters, {f"{i}.html" for i in built_ids},
                                                                                                   [(i, d) for i, d in inv_built.items() if code in d["courses"]],
@@ -929,7 +972,9 @@ def build_language(lang):
     school = next(iter(local.values()))["school"] if local else ""
     plan_rows = "".join(planned_row(p) for p in local_courses.planned(lang))
     home = (local_notes +
-        f'<section class="home-intro" aria-labelledby="h-intro"><h1 id="h-intro">{T("site.home_h1")}</h1>'
+        # beside the heading a small badge: the site is still being built (teacher 2026-11-05, "leima että työn alla")
+        f'<section class="home-intro" aria-labelledby="h-intro"><div class="intro-title"><h1 id="h-intro">{T("site.home_h1")}</h1>'
+        f'<p class="wip-badge" title="{esc(T("site.home_wip_title"))}">{T("site.home_wip")}</p></div>'
         f'<p class="lead">{T("site.home_sub")}</p>'
         # from 700 px the school's logo stands here, over the right column, so that both lists start level (teacher
         # 2026-11-04); the list's own heading (the same logo) is then visually hidden, site.css .intro-school
@@ -984,11 +1029,11 @@ def build_language(lang):
                 removed.append(lid if lang == i18n.SOURCE else f"{lang}/{lid}")
                 print(f"{'::warning::' if os.environ.get('GITHUB_ACTIONS') else 'WARNING:'} {old_page.relative_to(LIVE)} is on the live site but its reviews are not current ({why}); this build removes it")
     pre = out.relative_to(SITE).as_posix() + "/" if out != SITE else ""
-    expected.extend(pre + n for n in ["index.html", ABOUT] + ([PRIVACY] if priv_md else []) + ([concept_cards.APP] if concept_cards.modules(concept_cards.data_lang(lang)) else []) + ([reading_tips.PAGE] if reading_tips.SOURCE.is_file() else []) + [STUDY_PAGE] + [f"{c}.html" for c, _ in modules] + [f"{c}.html" for c in local] + [f"{i}.html" for i in built_ids] + [f"{i}.html" for i in inv_built] + [f"{g}.html" for g in guide_built] + [practice.page_name(c) for c in practice_built] + mixer_built
-                    + [f"{u}.html" for u, ul in unit_pub.items() if ul == lang and not only])
+    expected.extend(pre + n for n in ["index.html", ABOUT] + ([PRIVACY] if priv_md else []) + ([concept_cards.APP] if concept_cards.modules(concept_cards.data_lang(lang)) else []) + ([reading_tips.PAGE] if reading_tips.SOURCE.is_file() else []) + [STUDY_PAGE] + [f"{c}.html" for c, _ in modules] + [f"{c}.html" for c in local] + [f"{i}.html" for i in built_ids] + [f"{i}.html" for i in inv_built] + [f"{g}.html" for g in guide_built] + [practice.page_name(c) for c in practice_built] + [practice.page_name(c + practice.EXAM) for c in exam_built] + mixer_built
+                    + [f"{u}.html" for u, ls in unit_pub.items() if lang in ls and not only])
     if SITE.name == "site.tmp" and lang in units.languages():   # a unit that lost its reviews leaves the site only with a warning
         for u in units.ids(lang):
-            if u not in unit_pub and (LIVE / out.relative_to(SITE) / f"{u}.html").is_file():
+            if lang not in unit_pub.get(u, ()) and (LIVE / out.relative_to(SITE) / f"{u}.html").is_file():
                 print(f"{'::warning::' if os.environ.get('GITHUB_ACTIONS') else 'WARNING:'} {u}.html is on the live site but its reviews are not current; this build removes it")
     print(f"built {pre or ''}index +", len(modules), "module pages ->", ((LIVE if SITE.name == "site.tmp" else SITE) / pre).relative_to(ROOT),
           f"({sum(m['state'] == 'reviewed' for ms in built.values() for m in ms)} reviewed, {len(legacy_ids)} legacy, "

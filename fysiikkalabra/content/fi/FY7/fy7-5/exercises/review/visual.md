@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: a185346777ce05d8
+CONTENT-HASH: a48533fe7157ea8e
+ROUND: 2
 
 ## Blocking
-(none)
+(none) Round 1 had none; the round-2 changes (L1-07 answer rounded to 2,3 V, L2-05 now uses the single 0,40-0,50 s interval, L3-04 chains split into two boxes, L3-05 |A| wording) render correctly.
 
 ## Polish
-- [Minor] L1-01 Järkevyys — "noin A6-arkin (postikortin) kokoinen" now fits /bin/bash{,}015\,\text{m}^2$ (an A6 sheet is about /bin/bash{,}0155\,\text{m}^2$); the round-1 A5 comment is resolved. Hyphen in "A6-arkin" is correct. Other round-1 polish items (L2-02 axis, L3-01 sources) are untouched.
+- [Minor] exercises.json L3-05 table — negative values "-0,02", "-0,32", "-2,15" still typed with a hyphen; use a real minus sign "−".
 
 ## Checked
-- Delta: one line in solutions.md (L1-01 Järkevyys). Opened open-exercises-1280-1 (lesson shots folder, same hash content): the line renders inside the yellow Järkevyys card, no clipping, the Sijoitus rows and the answer box are unchanged. No other task changed.
+- 1280 px: L2 part 8 (L2-05 vuo-taulukko/graph reading), L3 parts 5 and 7 (L3-04 vaunu, L3-05 käämi pulses), changed tasks and layout around them. No exercise captures at 360/390 px; relies on green check_layout 360 px.
+- Tables, answer boxes, aligned chains, display formulas: no clipping, overflow or red KaTeX. Changed answers recomputed (1,452 V, 0,164 V/s, 2,25 V ≈ 2,3 V): match.
+- Hash checked at start: a48533fe7157ea8e.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations n/a · typography 4 · Finnish 5 · accessibility 4

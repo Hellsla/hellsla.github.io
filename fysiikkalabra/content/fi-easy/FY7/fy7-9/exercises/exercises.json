@@ -3,6 +3,7 @@
     {
       "id": "fy7-9-L1-01",
       "level": 1,
+      "core": true,
       "text": "FM-radiokanava lähettää taajuudella $94{,}0\\,\\text{MHz}$. Kuinka suuri on radioaallon aallonpituus? Radioaallon nopeus ilmassa on $c = 3{,}00 \\cdot 10^{8}\\,\\text{m/s}$.",
       "answer": 3.1915,
       "unit": "m",
@@ -39,12 +40,60 @@
       "answer": 563.9098,
       "unit": "THz",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-9-L1-06",
+      "level": 1,
+      "core": true,
+      "text": "Radioaallot ja valo ovat sähkömagneettisia aaltoja. Tyhjiössä etenevässä sähkömagneettisessa aallossa on sähkökenttä $\\overline{E}$ ja magneettikenttä $\\overline{B}$. Mikä seuraavista kuvaa aallon rakennetta oikein?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Kentät ovat kohtisuorassa toisiaan ja etenemissuuntaa vastaan, koska aalto on poikittainen.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Kentät värähtelevät etenemissuunnan suuntaisesti, koska aalto on pitkittäinen kuten ääni.",
+          "feedback": "Sähkömagneettinen aalto on poikittainen: kentät värähtelevät kohtisuorassa etenemissuuntaa vastaan. Ääni on pitkittäistä aaltoliikettä ja tarvitsee väliaineen, valo ei."
+        },
+        {
+          "text": "Vain sähkökenttä värähtelee, koska magneettikenttää syntyy vain kestomagneeteista.",
+          "feedback": "Magneettikenttä värähtelee aallossa sähkökentän kanssa. Muuttuva sähkökenttä synnyttää magneettikentän, joten aallon magneettikenttä ei tarvitse kestomagneettia."
+        },
+        {
+          "text": "Kentät ovat kohtisuorassa toisiaan ja etenemissuuntaa vastaan, koska aalto on poikittainen.",
+          "correct": true,
+          "feedback": "Oikein: muuttuva sähkökenttä synnyttää magneettikentän ja muuttuva magneettikenttä sähkökentän, joten aalto etenee tyhjiössäkin. Kentät värähtelevät kohtisuorassa toisiaan ja etenemissuuntaa vastaan."
+        },
+        {
+          "text": "Kentät ovat samansuuntaiset keskenään, koska ne värähtelevät yhtä aikaa samassa suunnassa.",
+          "feedback": "Kentät eivät ole samansuuntaiset vaan kohtisuorassa toisiaan vastaan. Jos ne olisivat samansuuntaiset, ne eivät voisi synnyttää toisiaan ja kuljettaa aaltoa eteenpäin."
+        }
+      ]
+    },
+    {
+      "id": "fy7-9-L1-07",
+      "level": 1,
+      "text": "GPS-satelliitti kiertää Maata noin $20\\,200\\,\\text{km}$:n korkeudella. Kuinka kauan satelliitin radiosignaalilla kestää kulkea satelliitista vastaanottimeen? Satelliitti on suoraan vastaanottimen yläpuolella. Radioaallon nopeus on $c = 3{,}00 \\cdot 10^{8}\\,\\text{m/s}$. Anna vastaus millisekunteina.",
+      "answer": 67.3333,
+      "unit": "ms",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-9-L1-08",
+      "level": 1,
+      "text": "Yhden 5G-matkapuhelinverkon taajuuskaistan keskitaajuus on $3{,}5\\,\\text{GHz}$. Kuinka suuri on radioaallon aallonpituus tällä taajuudella? Radioaallon nopeus on $c = 3{,}00 \\cdot 10^{8}\\,\\text{m/s}$. Anna vastaus senttimetreinä.",
+      "answer": 8.5714,
+      "unit": "cm",
+      "tolerance": 0.02
     }
   ],
   "level2": [
     {
       "id": "fy7-9-L2-01",
       "level": 2,
+      "core": true,
       "text": "Puulämmitteisen pizzauunin holvin sisäpinnan lämpötila on $450\\,{}^\\circ\\text{C}$. Holvi oletetaan mustaksi kappaleeksi. Millä aallonpituudella holvin lähettämän säteilyn spektrin huippu on? Anna vastaus mikrometreinä.",
       "answer": 4.0075,
       "unit": "µm",
@@ -74,6 +123,87 @@
       "answer": 5796.0,
       "unit": "K",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-9-L2-05",
+      "level": 2,
+      "core": true,
+      "text": "Spektrometrillä mitattiin kolmen valonlähteen säteilyn spektrin huipun aallonpituus (esimerkkiaineisto). Kaikkien kolmen lähteen oletetaan säteilevän kuin musta kappale.\n\na) Laske lähteiden pintalämpötilat.\n\nb) Mikä lähteistä on kuumin? Onko jonkin lähteen spektrin huippu näkyvän valon alueella ($380\\,\\text{nm}$–$750\\,\\text{nm}$)? Perustele tuloksilla.\n\nKirjoita vastauslaatikkoon a-kohdasta hehkulangan lämpötila kelvineinä.",
+      "kind": [
+        "data"
+      ],
+      "answer": 2683.3,
+      "unit": "K",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Lähteiden spektrin huiput (esimerkkiaineisto)",
+        "columns": [
+          "Lähde",
+          "$\\lambda_\\text{max}\\,(\\mu\\text{m})$"
+        ],
+        "rows": [
+          [
+            "Kynttilän liekki",
+            "1.62"
+          ],
+          [
+            "Hehkulanka",
+            "1.08"
+          ],
+          [
+            "Aurinko",
+            "0.50"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-9-L2-06",
+      "level": 2,
+      "text": "Valimossa teräsharkko kuumennetaan lämpötilaan $1500\\,{}^\\circ\\text{C}$. Opiskelija laski harkon mustan kappaleen säteilyn spektrin huipun aallonpituuden näin:\n\n$\\lambda_\\text{max} = \\dfrac{b}{t} = \\dfrac{2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}}{1500} = 1{,}93\\,\\mu\\text{m}$\n\na) Selitä, mikä virhe opiskelijan ratkaisussa on.\n\nb) Laske huipun aallonpituus oikein mikrometreinä.\n\nKirjoita vastauslaatikkoon b-kohdan tulos.",
+      "kind": [
+        "error"
+      ],
+      "answer": 1.6344,
+      "unit": "µm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-9-L2-07",
+      "level": 2,
+      "text": "Oppilaat tutkivat, miten hehkulampun langan säteilyn spektrin huipun aallonpituus riippuu langan lämpötilasta. He mittasivat langan lämpötilan ja spektrin huipun neljällä eri jännitteellä (esimerkkiaineisto). Lanka oletetaan mustaksi kappaleeksi.\n\na) Laske jokaisen mittauksen tulo $\\lambda_\\text{max} T$ yksikössä $10^{-3}\\,\\text{m} \\cdot \\text{K}$.\n\nb) Laske tulojen keskiarvo $b_{\\text{ka}}$ ja vertaa sitä Wienin siirtymälain vakioon $b = 2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}$. Tukevatko mittaukset lakia?\n\nKirjoita vastauslaatikkoon b-kohdan keskiarvo yksikössä $10^{-3}\\,\\text{m} \\cdot \\text{K}$.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 2.897,
+      "unit": "10⁻³ m·K",
+      "tolerance": 0.01,
+      "data": {
+        "caption": "Langan lämpötila ja spektrin huippu (esimerkkiaineisto)",
+        "columns": [
+          "$T\\,(\\text{K})$",
+          "$\\lambda_\\text{max}\\,(\\mu\\text{m})$"
+        ],
+        "rows": [
+          [
+            "2000",
+            "1.47"
+          ],
+          [
+            "2400",
+            "1.18"
+          ],
+          [
+            "2800",
+            "1.06"
+          ],
+          [
+            "3200",
+            "0.89"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -100,6 +230,80 @@
       "answer": 384000.0,
       "unit": "km",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-9-L3-04",
+      "level": 3,
+      "text": "Tähtitieteilijä mittasi kolmen tähden säteilyn spektrin huipun aallonpituuden ja kirjasi tähden havaitun värin (esimerkkiaineisto). Tähtien oletetaan säteilevän kuin mustat kappaleet.\n\na) Laske tähtien pintalämpötilat.\n\nb) Kuinka monta kertaa kuumempi tähti C on kuin tähti A?\n\nc) Tähden C spektrin huippu on ultraviolettialueella (aallonpituus on lyhyempi kuin näkyvällä valolla), mutta tähti näkyy sinivalkoisena. Tähden A huippu on infrapunassa (aallonpituus on pidempi kuin näkyvällä valolla), mutta tähti näkyy punaisena. Selitä, miksi huipun paikka ja näkyvä väri eivät ole sama asia.\n\nKirjoita vastauslaatikkoon b-kohdan lämpötilojen suhde.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 3.1923,
+      "unit": "kertaa",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Tähtien spektrin huiput ja värit (esimerkkiaineisto)",
+        "columns": [
+          "Tähti",
+          "$\\lambda_\\text{max}\\,(\\text{nm})$",
+          "Väri"
+        ],
+        "rows": [
+          [
+            "A",
+            "830",
+            "punainen"
+          ],
+          [
+            "B",
+            "480",
+            "keltavalkoinen"
+          ],
+          [
+            "C",
+            "260",
+            "sinivalkoinen"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-9-L3-05",
+      "level": 3,
+      "text": "Seppä ottaa uunista hehkuvan rautatangon ja antaa sen jäähtyä ilmassa. Tangon säteilyn spektrin huipun aallonpituus mitattiin spektrometrillä neljänä ajanhetkenä (esimerkkiaineisto). Tanko oletetaan mustaksi kappaleeksi. Pimeässä sen hehku näkyy silmälle vain, kun lämpötila on yli $800\\,\\text{K}$.\n\na) Laske tangon lämpötila jokaisella ajanhetkellä.\n\nb) Laske tangon keskimääräinen jäähtymisnopeus koko mittausajalta yksikössä $\\text{K/min}$.\n\nc) Arvioi, kuinka monta minuuttia ensimmäisestä mittauksesta hehku sammuu, kun jäähtymisen oletetaan jatkuvan keskimääräisellä nopeudella. Onko tangon todellinen hehkuaika arviota lyhyempi vai pidempi? Perustele taulukon tiedoilla.\n\nKirjoita vastauslaatikkoon c-kohdan arvio minuutteina.",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 17.476,
+      "unit": "min",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Jäähtyvän tangon spektrin huippu (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{min})$",
+          "$\\lambda_\\text{max}\\,(\\mu\\text{m})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "1.80"
+          ],
+          [
+            "4",
+            "2.05"
+          ],
+          [
+            "8",
+            "2.35"
+          ],
+          [
+            "12",
+            "2.75"
+          ]
+        ]
+      }
     }
   ]
 }

@@ -7,7 +7,7 @@
     "deduce the temperature of a body from the spectrum of its radiation and the colour of its glow."
   ],
   "prior": [
-    "A wave travels one wavelength during one period, and $v = f\\lambda$ (chapter *Mechanical waves*)",
+    "A wave travels one wavelength during one period, and $v = f\\lambda$ (chapter *How waves form and travel*)",
     "A changing magnetic flux induces a voltage (chapter *Electromagnetic induction*)",
     "All bodies emit thermal radiation, and a hotter body radiates more (chapter *Heat transfer, energy balance and climate change*)"
   ],
@@ -29,15 +29,15 @@
         {
           "text": "It is halved.",
           "correct": true,
-          "feedback": "Correct. A wave travels one wavelength during one period, so $v = f\\lambda$ (chapter *Mechanical waves*). When $v$ stays the same and $f$ doubles, $\\lambda$ is halved. The same holds for light, whose speed is $c$."
+          "feedback": "Correct. A wave travels one wavelength during one period, so $v = f\\lambda$ (chapter *How waves form and travel*). When $v$ stays the same and $f$ doubles, $\\lambda$ is halved. The same holds for light, whose speed is $c$."
         },
         {
           "text": "It doubles.",
-          "feedback": "When the frequency rises, the period gets shorter, and the wave has time to travel a shorter distance during one period. Since $v = f\\lambda$ and $v$ stays the same, a doubled frequency halves the wavelength (chapter *Mechanical waves*)."
+          "feedback": "When the frequency rises, the period gets shorter, and the wave has time to travel a shorter distance during one period. Since $v = f\\lambda$ and $v$ stays the same, a doubled frequency halves the wavelength (chapter *How waves form and travel*)."
         },
         {
           "text": "It stays the same.",
-          "feedback": "Wavelength, frequency and speed are related: $v = f\\lambda$ (chapter *Mechanical waves*). If $v$ stays the same and $f$ doubles, $\\lambda$ must be halved."
+          "feedback": "Wavelength, frequency and speed are related: $v = f\\lambda$ (chapter *How waves form and travel*). If $v$ stays the same and $f$ doubles, $\\lambda$ must be halved."
         }
       ],
       "optional": true

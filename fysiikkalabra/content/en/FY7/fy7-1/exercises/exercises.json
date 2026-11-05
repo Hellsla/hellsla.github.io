@@ -19,6 +19,7 @@
     {
       "id": "fy7-1-L1-03",
       "level": 1,
+      "core": true,
       "text": "At a compass the horizontal component of the Earth's magnetic field is $14\\,\\mu\\text{T}$ towards the north and the field of a magnet on the table is $48\\,\\mu\\text{T}$ towards the east. What is the horizontal total field in microtesla?",
       "answer": 50.0,
       "unit": "µT",
@@ -39,12 +40,85 @@
       "answer": "Away from the magnet: the field of the magnet points away from the north pole, and the north pole of the needle repels the north pole of the magnet.",
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-1-L1-06",
+      "level": 1,
+      "core": true,
+      "text": "A magnet attracts an iron nail but not an aluminium can or a copper coin. Which of the following explains the difference?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Iron is ferromagnetic, so its magnetic domains align in the field of the magnet; aluminium and copper are not.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Iron conducts electricity better than aluminium and copper, so the field of the magnet makes more current flow in iron.",
+          "feedback": "Wrong: electrical conductivity does not decide it. Copper conducts electricity even better than iron, yet a magnet does not attract it. What matters is whether the substance is ferromagnetic."
+        },
+        {
+          "text": "Iron is denser and heavier than aluminium, so a magnet attracts only heavier pieces of metal.",
+          "feedback": "Wrong: magnetic interaction does not depend on mass or density. Copper is even denser than iron, and a magnet still does not attract it. What matters is whether the substance is ferromagnetic."
+        },
+        {
+          "text": "Iron is ferromagnetic, so its magnetic domains align in the field of the magnet; aluminium and copper are not.",
+          "feedback": "Correct: a magnet attracts only ferromagnetic substances, such as iron, nickel and cobalt. The magnetic domains of iron align in the field of the magnet, and the substance becomes magnetised. Aluminium and copper have no such domains.",
+          "correct": true
+        },
+        {
+          "text": "The atomic dipoles of aluminium and copper cancel each other completely, whereas iron has no magnetic atomic dipoles at all.",
+          "feedback": "Wrong: the atoms of iron have magnetic dipoles, and they form domains that point the same way. This is exactly what makes iron ferromagnetic. The claim is the opposite of the truth."
+        }
+      ]
+    },
+    {
+      "id": "fy7-1-L1-07",
+      "level": 1,
+      "text": "The north end of a compass needle points towards the geographic north. What does this tell about the Earth's magnetic poles?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Near the geographic North Pole there is the Earth's magnetic south pole, because the north pole of the needle is attracted by an unlike pole.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Near the geographic North Pole there is the Earth's magnetic north pole, because the north pole of the needle seeks a pole of the same name.",
+          "feedback": "Wrong: poles of the same name repel each other, so the north end of the needle does not seek a north pole. It points towards an unlike pole, that is, a magnetic south pole."
+        },
+        {
+          "text": "The needle points north because the rotation of the Earth turns a light needle along the axis of rotation, and the magnetic field has no part in it.",
+          "feedback": "Wrong: the needle of a compass is a magnet, and it is turned by the Earth's magnetic field. It would work the same way even if the Earth did not rotate, and it points towards a magnetic pole, not along the axis of rotation."
+        },
+        {
+          "text": "The Earth's magnetic field has no poles, so the needle points north only because of gravity and the friction of the bearing.",
+          "feedback": "Wrong: the Earth's field resembles the field of a bar magnet, and it has a pole at each end. The needle is turned by magnetic interaction, not by gravity or friction."
+        },
+        {
+          "text": "Near the geographic North Pole there is the Earth's magnetic south pole, because the north pole of the needle is attracted by an unlike pole.",
+          "feedback": "Correct: the north end of the needle is the north pole of a magnet, and unlike poles attract each other. Since the north end of the needle points towards the geographic north, there is the Earth's magnetic south pole.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "fy7-1-L1-08",
+      "level": 1,
+      "text": "In Oulu the magnetic flux density of the Earth's magnetic field is about $53\\,\\mu\\text{T}$, and the field points $76\\,{}^\\circ$ below the horizontal. What is the vertical component of the field in microtesla?",
+      "kind": [
+        "model"
+      ],
+      "answer": 51.4,
+      "unit": "µT",
+      "tolerance": 0.02
     }
   ],
   "level2": [
     {
       "id": "fy7-1-L2-01",
       "level": 2,
+      "core": true,
       "text": "The field of a magnet at a compass is $25\\,\\mu\\text{T}$ towards the east, and the horizontal component of the Earth's magnetic field is $14\\,\\mu\\text{T}$ towards the north. Through how many degrees does the compass needle turn from north towards east?",
       "answer": 60.8,
       "unit": "°",
@@ -73,6 +147,102 @@
       "answer": 9.82,
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-1-L2-05",
+      "level": 2,
+      "core": true,
+      "text": "A compass is on the axis of a bar magnet, east of the magnet, and the field of the magnet points east at the compass. The horizontal component of the Earth's magnetic field is $14\\,\\mu\\text{T}$ towards the north. The table gives the angle through which the compass needle turns from north when the distance of the compass from the magnet is $r$ (example data).\n\na) Calculate the magnetic flux density $B_\\text{m}$ of the magnet at a distance of $12\\,\\text{cm}$.\n\nb) Calculate $B_\\text{m}$ also at distances of $8.0\\,\\text{cm}$ and $16\\,\\text{cm}$. Is the field inversely proportional to the distance? Justify by comparing how the field changes when the distance doubles.\n\nEnter the result of part a) in microtesla in the answer field.",
+      "kind": [
+        "data"
+      ],
+      "answer": 14.5,
+      "unit": "µT",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Turning angle of the compass needle as a function of distance",
+        "columns": [
+          "$r\\,(\\text{cm})$",
+          "$\\theta\\,({}^\\circ)$"
+        ],
+        "rows": [
+          [
+            "8.0",
+            "73"
+          ],
+          [
+            "10.0",
+            "61"
+          ],
+          [
+            "12.0",
+            "46"
+          ],
+          [
+            "16.0",
+            "24"
+          ],
+          [
+            "20.0",
+            "12"
+          ],
+          [
+            "25.0",
+            "7"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-1-L2-06",
+      "level": 2,
+      "text": "The components of the magnetic flux density were measured with the magnetometer of a smartphone in three places in the same room (example data). The phone was held in the same orientation every time, and the components are perpendicular to each other. The Earth's field in this room is about $50\\,\\mu\\text{T}$.\n\na) Calculate the total field in each place.\n\nb) In which place is there probably iron or steel nearby? Justify.\n\nEnter in the answer field the total field next to the desk from part a) in microtesla.",
+      "kind": [
+        "data"
+      ],
+      "answer": 70.7,
+      "unit": "µT",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Magnetometer readings in three places",
+        "columns": [
+          "Location",
+          "$B_x\\,(\\mu\\text{T})$",
+          "$B_y\\,(\\mu\\text{T})$",
+          "$B_z\\,(\\mu\\text{T})$"
+        ],
+        "rows": [
+          [
+            "window",
+            "11",
+            "-5.0",
+            "-47"
+          ],
+          [
+            "sofa",
+            "12",
+            "-4.0",
+            "-49"
+          ],
+          [
+            "desk",
+            "31",
+            "14",
+            "-62"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-1-L2-07",
+      "level": 2,
+      "text": "A student solves the problem: “At a compass the horizontal component of the Earth's magnetic field is $14\\,\\mu\\text{T}$ towards the north and the field of a magnet on the table is $30\\,\\mu\\text{T}$ towards the east. Through how many degrees does the needle turn from north towards east?”\n\nTheir solution: $\\tan\\theta = \\dfrac{B_\\text{h}}{B_\\text{m}} = \\dfrac{14\\,\\mu\\text{T}}{30\\,\\mu\\text{T}} = 0.467$, so $\\theta = \\tan^{-1} 0.467 = 25\\,{}^\\circ$.\n\na) Why is the result implausible when the field of the magnet is much greater than the Earth's field? What is the mistake in the solution?\n\nb) Calculate the correct angle.\n\nEnter the result of part b) in degrees in the answer field.",
+      "kind": [
+        "error"
+      ],
+      "answer": 65.0,
+      "unit": "°",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -99,6 +269,89 @@
       "answer": 2.03,
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-1-L3-04",
+      "level": 3,
+      "text": "The table gives the magnetic flux density $B$ of the Earth's magnetic field and the inclination $I$, that is, the direction of the field below the horizontal, in three towns (example data, close to the values of the World Magnetic Model). In each town the same bar magnet is placed next to a compass so that its field at the compass is $20\\,\\mu\\text{T}$ towards the east.\n\na) Calculate the horizontal component of the Earth's field in each town.\n\nb) Calculate the angle through which the compass needle turns from north towards east in each town.\n\nc) The total field is almost the same in all the towns. Explain why the turning angle of the needle nevertheless grows as one goes north, and what this tells about the operation of a compass in the north.\n\nEnter the result of part b) for Utsjoki in the answer field.",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 61.6,
+      "unit": "°",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "The Earth's magnetic field in three towns",
+        "columns": [
+          "Town",
+          "$B\\,(\\mu\\text{T})$",
+          "$I\\,({}^\\circ)$"
+        ],
+        "rows": [
+          [
+            "Helsinki",
+            "53",
+            "74"
+          ],
+          [
+            "Oulu",
+            "53",
+            "76"
+          ],
+          [
+            "Utsjoki",
+            "52",
+            "78"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-1-L3-05",
+      "level": 3,
+      "text": "A researcher measures the field of a bar magnet as a function of distance with a compass. The magnet lies in the east–west direction east of the compass, on its axis, with its south pole towards the compass, so its field points east at the compass. The horizontal component of the Earth's magnetic field is $14\\,\\mu\\text{T}$ towards the north. The table gives the angle through which the needle turns from north when the distance of the compass from the magnet is $r$ (example data).\n\na) Calculate the magnetic flux density $B_\\text{m}$ of the magnet at each point and show that the product $B_\\text{m} r^3$ is approximately constant.\n\nb) The magnet is turned to the north–south direction and placed north of the compass, on its axis, with its north pole towards the compass. Assume that the field of the magnet at the compass is as great as the table gives for the same distance on the axis. At what distance $r_0$ is the horizontal total field zero, so that the needle does not settle in any direction?\n\nc) Which way does the north end of the needle point when the distance is less than $r_0$, and which way when it is greater? Justify.\n\nEnter the result of part b) in centimetres in the answer field.",
+      "kind": [
+        "data",
+        "experiment",
+        "model"
+      ],
+      "answer": 16.2,
+      "unit": "cm",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Turning angle of the compass needle as a function of distance",
+        "columns": [
+          "$r\\,(\\text{cm})$",
+          "$\\theta\\,({}^\\circ)$"
+        ],
+        "rows": [
+          [
+            "12.0",
+            "69"
+          ],
+          [
+            "14.0",
+            "56"
+          ],
+          [
+            "16.0",
+            "47"
+          ],
+          [
+            "20.0",
+            "27"
+          ],
+          [
+            "24.0",
+            "18"
+          ],
+          [
+            "30.0",
+            "8"
+          ]
+        ]
+      }
     }
   ]
 }

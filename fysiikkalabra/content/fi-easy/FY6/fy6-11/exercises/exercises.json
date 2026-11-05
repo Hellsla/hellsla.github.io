@@ -19,6 +19,7 @@
     {
       "id": "fy6-11-L1-03",
       "level": 1,
+      "core": true,
       "text": "Kahden yhdensuuntaisen metallilevyn välinen jännite on $600\\,\\text{V}$. Levyjen etäisyys on $0{,}040\\,\\text{m}$. Kuinka suuri on sähkökentän voimakkuus levyjen välissä?",
       "answer": 15000.0,
       "unit": "V/m",
@@ -40,12 +41,82 @@
       "answer": 30000.0,
       "unit": "N/C",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-11-L1-06",
+      "level": 1,
+      "text": "Varatun kappaleen sähkökenttää kuvataan kenttäviivoilla. Kenttäviiva on viiva, joka näyttää voiman suunnan. Kuviossa viivat ovat alueella A lähellä toisiaan ja alueella B kaukana toisistaan. Mitä viivojen tiheydestä voi päätellä?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Kenttä on voimakkaampi alueella A, koska viivojen tiheys kuvaa kentän voimakkuutta.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Kenttä on voimakkaampi alueella B, koska viivojen väliin jää enemmän tilaa, jossa kenttä voi vaikuttaa.",
+          "feedback": "Kenttää on myös viivojen välissä. Kenttäviiva näyttää voiman suunnan. Viivojen väliin jäävä tila ei kasvata kenttää: harvassa olevat viivat kertovat heikommasta kentästä."
+        },
+        {
+          "text": "Alueella A on enemmän varausta, koska jokainen kenttäviiva esittää yhtä alueella olevaa varausta.",
+          "feedback": "Kenttäviivat eivät ole varauksia. Ne lähtevät positiivisista varauksista ja päättyvät negatiivisiin varauksiin. Niiden tiheys kertoo kentän voimakkuuden siinä kohdassa."
+        },
+        {
+          "text": "Kenttä on yhtä voimakas molemmilla alueilla, koska kenttäviivat näyttävät vain voiman suunnan.",
+          "feedback": "Suunnan lisäksi viivojen tiheys kertoo kentän voimakkuuden. Vain homogeenisessa kentässä viivat ovat joka kohdassa yhtä tiheässä. Tässä tiheys on eri alueilla erilainen."
+        },
+        {
+          "text": "Kenttä on voimakkaampi alueella A, koska viivojen tiheys kuvaa kentän voimakkuutta.",
+          "feedback": "Oikein: kenttäviivojen tiheys kertoo kentän voimakkuuden. Tiheässä olevat viivat tarkoittavat voimakasta kenttää. Harvassa olevat viivat tarkoittavat heikkoa kenttää.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "fy6-11-L1-07",
+      "level": 1,
+      "core": true,
+      "text": "Kahden pystysuoran levyn välissä on homogeeninen sähkökenttä. Kenttä osoittaa oikealle. Levyjen väliin tulee negatiivisesti varautunut pölyhiukkanen. Mihin suuntaan hiukkaseen kohdistuva sähköinen voima osoittaa?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Vasemmalle, koska negatiiviseen varaukseen kohdistuva voima on kentän suuntaa vastaan.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Vasemmalle, koska negatiiviseen varaukseen kohdistuva voima on kentän suuntaa vastaan.",
+          "feedback": "Oikein: kun $q$ on negatiivinen, voima $\\overline{F} = q\\overline{E}$ osoittaa kentän vastaiseen suuntaan. Hiukkanen siirtyy kohti positiivista levyä.",
+          "correct": true
+        },
+        {
+          "text": "Oikealle, koska sähköinen voima osoittaa aina kentän suuntaan, olipa varaus positiivinen tai negatiivinen.",
+          "feedback": "Voima on $\\overline{F} = q\\overline{E}$. Negatiivisella varauksella voima on siis kentän suuntaa vastaan. Vain positiiviseen varaukseen voima osoittaa kentän suuntaan."
+        },
+        {
+          "text": "Oikealle, koska negatiivinen hiukkanen vetäytyy kohti negatiivista levyä, joka on oikealla.",
+          "feedback": "Samanmerkkiset varaukset hylkivät toisiaan. Negatiivinen hiukkanen hylkiytyy negatiiviselta levyltä. Se vetäytyy positiiviselle levylle, joka on vasemmalla, kentän lähtöpuolella."
+        },
+        {
+          "text": "Mihinkään, koska homogeenisessa kentässä voimat kumoavat toisensa, kun kenttä on joka kohdassa sama.",
+          "feedback": "Homogeenisuus tarkoittaa, että kenttä on joka kohdassa yhtä voimakas ja samansuuntainen. Se ei poista voimaa: hiukkaseen kohdistuu vakiovoima $F = qE$."
+        }
+      ]
+    },
+    {
+      "id": "fy6-11-L1-08",
+      "level": 1,
+      "text": "Ilmanpuhdistimen levyjen väliin halutaan homogeeninen kenttä. Kentän voimakkuus on $4{,}0 \\cdot 10^{5}\\,\\text{V/m}$. Levyjen välinen jännite on $3{,}0\\,\\text{kV}$. Kuinka suuri levyjen etäisyyden pitää olla? Vastaa millimetreinä.",
+      "answer": 7.5,
+      "unit": "mm",
+      "tolerance": 0.02
     }
   ],
   "level2": [
     {
       "id": "fy6-11-L2-01",
       "level": 2,
+      "core": true,
       "text": "Kahden yhdensuuntaisen levyn välinen jännite on $4{,}5\\,\\text{kV}$. Levyjen etäisyys on $9{,}0\\,\\text{mm}$. Levyjen väliin tuodaan pieni pallo, jonka varaus on $4{,}0\\,\\text{nC}$. Kuinka suuri sähköinen voima palloon kohdistuu? Vastaa millinewtoneina.",
       "answer": 2.0,
       "unit": "mN",
@@ -74,6 +145,109 @@
       "answer": 0.45,
       "unit": "mN",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-11-L2-05",
+      "level": 2,
+      "text": "Opiskelija tutkii levyjen välistä kenttää. Hän pitää jännitteen vakiona ja muuttaa levyjen etäisyyttä $d$. Levyjen keskelle asetetaan pieni testivaraus $q = 5{,}0\\,\\text{nC}$. Siihen kohdistuva sähköinen voima $F$ mitataan. Taulukon mittaukset ovat esimerkkiaineistoa.\n\na) Laske sähkökentän voimakkuus $E = F : q$ jokaiselle etäisyydelle.\n\nb) Laske tulo $E \\cdot d$ jokaiselle etäisyydelle ja tulojen keskiarvo. Laske tulojen summa ensin.\n\nc) Perustele tulosten avulla, että $E = U : d$. Kerro, mikä suure tulo $E \\cdot d$ on.\n\nAnna vastauslaatikkoon b)-kohdan keskiarvo voltteina.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 400.1,
+      "unit": "V",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Esimerkkiaineisto: testivarauksen voima eri levyjen etäisyyksillä",
+        "columns": [
+          "$d\\,(\\text{cm})$",
+          "$F\\,(\\mu\\text{N})$"
+        ],
+        "rows": [
+          [
+            "2.0",
+            "102"
+          ],
+          [
+            "3.0",
+            "65.5"
+          ],
+          [
+            "4.0",
+            "51.0"
+          ],
+          [
+            "5.0",
+            "39.0"
+          ],
+          [
+            "6.0",
+            "34.0"
+          ],
+          [
+            "8.0",
+            "24.6"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-11-L2-06",
+      "level": 2,
+      "text": "Kahden pystysuoran levyn etäisyys on $6{,}0\\,\\text{cm}$. Levyjen välinen jännite on $1{,}8\\,\\text{kV}$. Levyjen välissä on pieni pallo, jonka varaus on $4{,}0\\,\\text{nC}$. Pallon etäisyys positiivisesta levystä on $1{,}5\\,\\text{cm}$. Pallo on kaukana levyjen päistä.\n\nOpiskelija ratkaisee voiman näin: ”Pallo on $1{,}5\\,\\text{cm}$:n päässä levystä, joten $E = U : d = 1800\\,\\text{V} : 0{,}015\\,\\text{m} = 1{,}2 \\cdot 10^{5}\\,\\text{V/m}$ ja $F = qE = 4{,}0 \\cdot 10^{-9}\\,\\text{C} \\cdot 1{,}2 \\cdot 10^{5}\\,\\text{V/m} = 0{,}48\\,\\text{mN}$.”\n\na) Mikä virhe opiskelijan ratkaisussa on?\n\nb) Laske sähköinen voima oikein.\n\nAnna vastauslaatikkoon b)-kohdan tulos millinewtoneina.",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "answer": 0.12,
+      "unit": "mN",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-11-L2-07",
+      "level": 2,
+      "core": true,
+      "text": "Opiskelija haluaa selvittää, onko kenttä levyjen välissä homogeeninen.\n\nLevyt ovat leveät. Levyjen etäisyys on $2{,}0\\,\\text{cm}$ ja jännite $600\\,\\text{V}$. Levyjen reunat ovat $10\\,\\text{cm}$:n päässä keskikohdasta.\n\nTestivaraus $q = 2{,}0\\,\\text{nC}$ viedään levyjen puoliväliin. Siihen kohdistuva voima $F$ mitataan levyjen suuntaisella suoralla eri etäisyyksillä $x$ keskikohdasta. Taulukon mittaukset ovat esimerkkiaineistoa.\n\na) Laske sähkökentän voimakkuus $E = F : q$ jokaisessa mittauspisteessä.\n\nb) Kenttää pidetään homogeenisena niissä pisteissä, joissa $E$ poikkeaa keskikohdan arvosta alle $3\\,\\%$. Mitkä pisteet ovat tällaisia? Miten kenttä käyttäytyy muualla? Laske poikkeamat.\n\nc) Laske homogeenisten pisteiden voimien summa ensin. Laske sitten niiden sähkökentän voimakkuuden keskiarvo. Vertaa tulosta arvoon $U : d$.\n\nAnna vastauslaatikkoon c)-kohdan keskiarvo yksikössä $\\text{V/m}$.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 29812.5,
+      "unit": "V/m",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Esimerkkiaineisto: testivarauksen voima levyjen suuntaisella suoralla",
+        "columns": [
+          "$x\\,(\\text{cm})$",
+          "$F\\,(\\mu\\text{N})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "60.2"
+          ],
+          [
+            "2.0",
+            "59.8"
+          ],
+          [
+            "4.0",
+            "59.5"
+          ],
+          [
+            "6.0",
+            "59.0"
+          ],
+          [
+            "8.0",
+            "58.0"
+          ],
+          [
+            "10.0",
+            "33.0"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -100,6 +274,66 @@
       "answer": 23.063569,
       "unit": "nC",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-11-L3-04",
+      "level": 3,
+      "text": "Esimerkkiaineisto: Millikanin kokeen kaltaisessa mittauksessa öljypisarat leijuvat yksi kerrallaan kahden vaakasuoran levyn välissä. Levyjen välinen jännite säädetään sopivaksi.\n\nLevyjen etäisyys on $d = 8{,}0\\,\\text{mm}$. Positiivinen levy on ylempänä. Taulukossa on viiden pisaran massa ja leijumisjännite. Käytä arvoa $g = 9{,}81\\,\\text{m/s}^2$.\n\na) Laske jokaisen pisaran varauksen suuruus $q$. Päättele varauksen merkki.\n\nb) Pisaroiden varaukset ovat alkeisvarauksen $e$ kokonaislukukertoja. Päättele jokaisen pisaran alkeisvarausten lukumäärä $n$. Laske alkeisvaraukselle arvio suhteiden $q : n$ keskiarvona. Laske suhteiden summa ensin.\n\nc) Vertaa tulosta kirjallisuusarvoon $1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Perustele, miksi aineisto tukee sitä, että varaus esiintyy vain alkeisvarauksen monikertoina.\n\nd) Ilmanpuhdistimessa varautuneet pölyhiukkaset kulkevat levyjen välissä. Selitä, miksi hiukkaset kerääntyvät levyille. Selitä myös, mitä tapahtuu, kun jännite kasvaa.\n\nAnna vastauslaatikkoon b)-kohdan alkeisvarauksen arvio coulombeina.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 1.6017e-19,
+      "unit": "C",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Esimerkkiaineisto: öljypisaroiden leijumisjännitteet",
+        "columns": [
+          "$\\text{Pisara}$",
+          "$m\\,(10^{-15}\\,\\text{kg})$",
+          "$U\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "3.8",
+            "931"
+          ],
+          [
+            "2",
+            "4.6",
+            "746"
+          ],
+          [
+            "3",
+            "3.2",
+            "1580"
+          ],
+          [
+            "4",
+            "5.1",
+            "627"
+          ],
+          [
+            "5",
+            "4.2",
+            "683"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-11-L3-05",
+      "level": 3,
+      "text": "Esimerkkitilanne: mustesuihkukirjoittimessa pieni mustepisara varataan. Se ohjataan kahden vaakasuoran levyn väliin. Kenttä poikkeuttaa pisaraa sivuun.\n\nPisaran massa on $3{,}0 \\cdot 10^{-11}\\,\\text{kg}$ ja varaus $1{,}0 \\cdot 10^{-12}\\,\\text{C}$. Pisara tulee levyjen väliin levyjen puolivälistä. Se liikkuu vaakasuoraan nopeudella $20\\,\\text{m/s}$.\n\nLevyjen pituus on $10\\,\\text{mm}$ ja niiden etäisyys $5{,}0\\,\\text{mm}$. Jännite on $2{,}0\\,\\text{kV}$. Ilmanvastus jätetään huomiotta. Käytä arvoa $g = 9{,}81\\,\\text{m/s}^2$.\n\na) Laske pisaraan kohdistuva sähköinen voima ja vertaa sitä pisaran painoon. Voiko painon jättää huomiotta?\n\nb) Laske pisaran kiihtyvyys levyjen välissä.\n\nc) Kuinka kauan pisara on levyjen välissä?\n\nd) Kuinka paljon pisara poikkeaa alkuperäisestä suunnastaan levyjen päässä?\n\ne) Osuuko pisara levyyn? Entä jos jännite kaksinkertaistetaan? Perustele laskemalla.\n\nAnna vastauslaatikkoon d)-kohdan poikkeama millimetreinä.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 1.6667,
+      "unit": "mm",
+      "tolerance": 0.03
     }
   ]
 }

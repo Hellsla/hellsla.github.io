@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: f4c25dfd29e9d304
+CONTENT-HASH: 6dec24abd3d540b2
 
 ## Blocking
 (none)
@@ -8,4 +8,4 @@ CONTENT-HASH: f4c25dfd29e9d304
 (none)
 
 ## Checked
-batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Terms: aaltomekaaninen atomimalli (wave around the nucleus, no orbit), orbitaali (region with a chosen probability) and todennäköisyystulkinta agree with the lesson word for word.
+- batch delta review (scope: the diff only, by the teacher's ruling): meta goal identical to the fi change ("orbitaali elektronin kvanttitilana ja sen kuva alueena ...") and consistent with lesson.md:279–282 (orbitaali kuvaa kvanttitilaa; raja on sovittu kynnysarvo); physics right; hash equal at start and end.

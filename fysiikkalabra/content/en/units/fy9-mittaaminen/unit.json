@@ -1,0 +1,14 @@
+{
+  "id": "fy9-mittaaminen",
+  "course": "FY9",
+  "chapter": 1,
+  "order": 2,
+  "title": "Measurement, uncertainty and graphs",
+  "description": "A review of quantities and units, measurement uncertainty and significant figures, and of graphing a data set, fitting a straight line, linearisation and interpreting the slope, in the style of matriculation exam problems.",
+  "kind": "review",
+  "minutes": 75,
+  "subjects": [
+    "physics"
+  ],
+  "sources": []
+}

@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: de38d8677f37062d
+CONTENT-HASH: 41f7504db171fdcc
 
 ## Blocking
+(none)
 
 ## Polish
-
+(none)
 
 ## Checked
-batch delta review: opened the image file(s) (transformer-750kv) and rendered unit-photo with caption at 1280 px (float right, 320 px wide, inside column, no clipping) and 390 px (stacked, no horizontal overflow); alt text matches what is visible, caption physically sound and tied to the chapter, Finnish natural, number+unit in LaTeX.
+- batch delta review: heading "Muuntaja tarvitsee muuttuvan magneettivuon" and its paragraph; built page and scripts/screenshot.py fy7-8 (captures current), changed passages opened at 390 px (g-390-0): clean wrapping, KaTeX renders, no inline formula wraps, no clipping, no horizontal scroll. Diff read; the rest of the lesson unchanged.

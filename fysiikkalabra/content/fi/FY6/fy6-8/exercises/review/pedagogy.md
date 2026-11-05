@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: fc1949394b1858c6
-
+CONTENT-HASH: b5d23bcdac8390ad
+ROUND: 3
 ## Blocking
-(none)
-
+(none) Round 1 Blocking resolved: L2-06 tolerance 0,13 accepts 0,35–0,45 A as the solution states; L3-05 lead split into paragraphs of 33 and 22 words.
 ## Polish
-- exercises.json fy6-8-L3-03 — task text asks only E but the solution computes R_s on the way; fine, but "Kuinka suuri on lähdejännite?" could add "ja sisäinen resistanssi" if both goals are wanted (optional).
-
+- exercises/solutions.md fy6-8-L3-04 and L3-05 "Vastaus": parts "b) ..." and "c) ..." follow without a blank line, so markdown may join them into one paragraph; add a blank line between lettered parts.
+- L3-04 is long (fit two batteries, three power parts); acceptable for L3, but giving the fitted E and R_s of the new battery would shorten it.
 ## Checked
-- Levels 5/4/3; none repeats the worked example (AA cell with 4,0 Ω load).
-- Together they cover napajännite, oikosulkuvirta, sarja- ja rinnankytkentä, sisäisen resistanssin määritys kahdesta mittauksesta ja kuvaajasta.
-- L1-05 figure: description gives the four points and 0,5 A/0,5 V grid; intercepts not written, answer not disclosed.
-- L3-02 (battery reversed) and L3-01 (parallel, current per cell) require transfer, not a copy of the lesson.
-- Solutions followable step by step; sanity checks real (energy balance, second measurement).
-- Finnish correct; 390 px stage capture usable.
+- L3-05 no longer gives away the error (sentence removed); context changed to a four-AA group, E 6,11 V / R_s 0,80 Ω plausible; slope of table 1,10 Ω, short circuit 7,6 A correct.
+- L2-06 table now crosses between rows 0,30 and 0,50 A (1,45/1,42 then 1,35/1,38 V); recomputed from the fits, crossing 0,40 A at 1,40 V.
+- L2-05 b) now asks for slope variation (±0,03 Ω); solution gives 0,53–0,59 Ω, inside tolerance 0,06.
+- L2-07 and L1-06/07 MC distractors misconception-based with repairing feedback; levels and plan fit; solutions complete.
+- Delta (answer-step first line now starts with the boxed value): checked each added value against the solution result and exercises.json answer/tolerance, same unit, decimal comma; the line reads well and agrees. Values: L3-04 35 % (answer 35, tol 0,05; solution 1,10/3,10 = 35,5 %).

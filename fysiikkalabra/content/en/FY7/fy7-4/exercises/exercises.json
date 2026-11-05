@@ -3,6 +3,7 @@
     {
       "id": "fy7-4-L1-01",
       "level": 1,
+      "core": true,
       "text": "In a laboratory a straight wire is perpendicular to a uniform magnetic field. There is $0.40\\,\\text{m}$ of wire in the field, the current in the wire is $12\\,\\text{A}$ and the magnetic flux density is $0.050\\,\\text{T}$. How large is the force on the wire?",
       "answer": 0.24,
       "unit": "N",
@@ -39,12 +40,66 @@
       "answer": 3.0,
       "unit": "A",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-4-L1-06",
+      "level": 1,
+      "core": true,
+      "text": "A horizontal straight wire is in a magnetic field that points horizontally north. The current in the wire flows horizontally east. In which direction does the magnetic field push the wire?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Upwards, because the force is perpendicular to both the current and the field, and by the right-hand rule it points up.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "North, because the magnetic field pulls a current-carrying wire in the direction of the field lines towards the pole of the magnet, where the field is strongest.",
+          "feedback": "The force is not in the direction of the field. It is perpendicular to the field: a component along the field produces no force at all, and a current-carrying wire does not move towards a pole like a piece of iron."
+        },
+        {
+          "text": "East, because the force is in the direction of the current and pushes the charges moving in the wire forward, like wind on a sailing boat.",
+          "feedback": "The force is not in the direction of the current. The magnetic force is perpendicular to the direction of motion of the charges, that is, to the current, so it neither speeds up nor slows down the charges along their path."
+        },
+        {
+          "text": "Upwards, because the force is perpendicular to both the current and the field, and by the right-hand rule it points up.",
+          "correct": true,
+          "feedback": "Correct: the force is always perpendicular to both the direction of the current and the direction of the field. When the thumb points in the direction of the current, east, and the fingers in the direction of the field, north, the palm points up. If the current or the field were reversed, the force would point downwards."
+        },
+        {
+          "text": "Downwards, because the magnetic field pulls the wire towards itself in the same way as the Earth pulls an object, and the current is horizontal.",
+          "feedback": "The magnetic force is not an attraction like gravity; its direction is obtained with the right-hand rule from the directions of the current and the field. With these directions the rule gives upwards, not downwards."
+        }
+      ]
+    },
+    {
+      "id": "fy7-4-L1-07",
+      "level": 1,
+      "text": "Two long parallel wires are $4.0\\,\\text{cm}$ apart, and the same current flows in them in the same direction. A force of $0.60\\,\\text{N}$ acts, in the field of the other wire, on a $1.0\\,\\text{m}$ length of one wire. How large is the force on the same length when the distance between the wires is increased to $8.0\\,\\text{cm}$ and the currents stay the same?",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 0.3,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-4-L1-08",
+      "level": 1,
+      "text": "A straight piece of wire is in a uniform magnetic field at an angle of $20^\\circ$ to the field, and a force of $0.050\\,\\text{N}$ acts on it. The piece of wire is turned to an angle of $40^\\circ$ to the field so that the current and the magnetic flux density stay the same. How large is the force on the piece of wire now?",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 0.094,
+      "unit": "N",
+      "tolerance": 0.02
     }
   ],
   "level2": [
     {
       "id": "fy7-4-L2-01",
       "level": 2,
+      "core": true,
       "text": "In a laboratory two parallel wires run side by side for $0.80\\,\\text{m}$ at a distance of $5.0\\,\\text{mm}$ from each other. A current of $10\\,\\text{A}$ flows in the same direction in both wires. How large is the force on a wire in the magnetic field of the other wire? Give the answer in millinewtons.",
       "answer": 3.2,
       "unit": "mN",
@@ -74,6 +129,100 @@
       "answer": 18,
       "unit": "m/s²",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-4-L2-05",
+      "level": 2,
+      "text": "Students measured the magnetic flux density between the poles of a magnet with a current balance. The length $l$ of the horizontal part of the balance's wire loop was changed by changing the loop. Each time the part was entirely in the field and perpendicular to it, and the current was $2.0\\,\\text{A}$. The change $\\Delta m$ in the reading of the balance was measured after the current was switched on (invented example data).\n\na) Calculate the magnetic flux density $B$ from each measurement, when the force is $F = \\Delta m \\cdot g$.\n\nb) Calculate the mean of the results $B_{\\text{mean}}$ and estimate the spread as half of the difference between the largest and the smallest result.\n\nWrite the mean from part b) in the answer box.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 0.085,
+      "unit": "T",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Change in the reading of the current balance as a function of the length of the wire",
+        "columns": [
+          "$l\\,(\\text{cm})$",
+          "$\\Delta m\\,(\\text{g})$"
+        ],
+        "rows": [
+          [
+            "2.0",
+            "0.35"
+          ],
+          [
+            "3.0",
+            "0.51"
+          ],
+          [
+            "4.0",
+            "0.71"
+          ],
+          [
+            "5.0",
+            "0.86"
+          ],
+          [
+            "6.0",
+            "1.04"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-4-L2-06",
+      "level": 2,
+      "text": "A student measured the magnetic flux density between the poles of a magnet with a current balance. The horizontal part of the wire of the balance is $6.0\\,\\text{cm}$ long, but the gap between the poles of the magnet is only $2.5\\,\\text{cm}$ wide, so only $2.5\\,\\text{cm}$ of the wire is in the field and perpendicular to it. When a current of $3.0\\,\\text{A}$ flowed in the wire, the reading of the balance changed by $0.31\\,\\text{g}$. The student calculated: “The force is $F = \\Delta m \\cdot g = 3.04 \\cdot 10^{-3}\\,\\text{N}$ and $B = \\dfrac{F}{I l}$, when $l = 6.0\\,\\text{cm}$. So $B = 0.017\\,\\text{T}$.” (example data)\n\na) Find the error in the student's calculation.\n\nb) Calculate the magnetic flux density correctly.\n\nWrite the result of part b) in the answer box.",
+      "kind": [
+        "error"
+      ],
+      "answer": 0.041,
+      "unit": "T",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy7-4-L2-07",
+      "level": 2,
+      "core": true,
+      "text": "The force on the voice coil of a loudspeaker was measured with the coil in the gap of a magnet. In the gap the magnetic flux density of the radial magnetic field is $1.1\\,\\text{T}$, and the field is perpendicular to the wire of the coil everywhere.\n\nThe current $I$ in the coil was varied, and the force $F$ on the coil was measured with a force sensor (example data).\n\nDraw a graph of the data points and fit a straight line through the origin to the points. Determine from the slope of the line the total length $l$ of the wire in the coil.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 5.3,
+      "unit": "m",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Force on the voice coil of a loudspeaker as a function of the current",
+        "columns": [
+          "$I\\,(\\text{A})$",
+          "$F\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "0.20",
+            "1.18"
+          ],
+          [
+            "0.40",
+            "2.27"
+          ],
+          [
+            "0.60",
+            "3.52"
+          ],
+          [
+            "0.80",
+            "4.58"
+          ],
+          [
+            "1.00",
+            "5.83"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -99,6 +248,60 @@
       "text": "A thin aluminium wire of length $1.0\\,\\text{m}$ and mass $2.7\\,\\text{g}$ is horizontal and runs east–west by the compass.\n\nThe magnetic flux density of the Earth's magnetic field in southern Finland is about $53\\,\\mu\\text{T}$, and the field points towards magnetic north and downwards at an angle of $74^\\circ$ to the horizontal (WMM2025 model, NOAA/BGS).\n\nHow large a current would have to flow in the wire for the Earth's magnetic field to support the weight of the wire? Give the answer in kiloamperes.",
       "answer": 1.8,
       "unit": "kA",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-4-L3-04",
+      "level": 3,
+      "text": "In a physics experiment the acceleration of a rod sliding on rails was studied. Two horizontal rails are $12\\,\\text{cm}$ apart, and a rod of mass $45\\,\\text{g}$ lies across them. In the region of the rails there is a vertical uniform magnetic field whose magnetic flux density $B$ is not known. A current flows along one rail to the rod, through the rod and back along the other rail. The rod slides on the rails, and the sliding friction is constant. The current $I$ was varied and the acceleration $a$ of the rod was measured (example data).\n\na) Draw a graph of the data points and fit a straight line to the points. Using Newton's second law, explain why the points should lie on a straight line and why the line does not pass through the origin.\n\nb) Determine the magnetic flux density $B$ from the slope of the line.\n\nc) Determine the coefficient of sliding friction $\\mu$ from the point where the line crosses the vertical axis.\n\nWrite the magnetic flux density from part b) in the answer box.",
+      "kind": [
+        "data",
+        "graph",
+        "model"
+      ],
+      "answer": 0.35,
+      "unit": "T",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Acceleration of the rod as a function of the current",
+        "columns": [
+          "$I\\,(\\text{A})$",
+          "$a\\,(\\text{m/s}^2)$"
+        ],
+        "rows": [
+          [
+            "4.0",
+            "1.8"
+          ],
+          [
+            "6.0",
+            "3.6"
+          ],
+          [
+            "8.0",
+            "5.6"
+          ],
+          [
+            "10.0",
+            "7.3"
+          ],
+          [
+            "12.0",
+            "9.3"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-4-L3-05",
+      "level": 3,
+      "text": "Two long horizontal wires lie one above the other. The lower wire is fixed. The upper wire is $0.50\\,\\text{m}$ long, its mass is $3.0\\,\\text{g}$, and it can move only vertically without friction. The wires are connected in series, so the same current $I$ flows in them. The wires are so long compared with the distance that the field of the lower wire can be treated as the field of an infinitely long wire. When the current is switched on for a short time, the upper wire floats in place at a distance of $1.0\\,\\text{cm}$ from the lower one.\n\na) Justify in which directions the current must flow in the wires, and calculate the current needed.\n\nb) Justify whether the floating is stable in the vertical direction: what happens if the upper wire moves slightly higher or lower?\n\nWrite the current from part a) in the answer box.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 54,
+      "unit": "A",
       "tolerance": 0.02
     }
   ]

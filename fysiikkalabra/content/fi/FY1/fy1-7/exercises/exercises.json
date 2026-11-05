@@ -3,6 +3,7 @@
   {
    "id": "fy1-7-L1-01",
    "level": 1,
+   "core": true,
    "text": "Kierrätyspisteellä punnitaan harmaa metallinen harkko. Sen massa on $340\\,\\text{g}$ ja tilavuus $30{,}0\\,\\text{cm}^3$. Kuinka suuri on harkon aineen tiheys? Anna vastaus yksikössä $\\text{g/cm}^3$.",
    "answer": 11.3,
    "unit": "g/cm³",
@@ -11,6 +12,7 @@
   {
    "id": "fy1-7-L1-02",
    "level": 1,
+   "core": true,
    "text": "Alumiinilevyn tilavuus on $35{,}0\\,\\text{cm}^3$, ja alumiinin tiheys on $2{,}70\\,\\text{g/cm}^3$. Kuinka suuri on levyn massa? Anna vastaus grammoina.",
    "answer": 94.5,
    "unit": "g",
@@ -149,6 +151,7 @@
   {
    "id": "fy1-7-L2-05",
    "level": 2,
+   "core": true,
    "text": "Tasalaatuisesta metallista valmistettiin eri kokoisia kappaleita, ja jokaisen tilavuus ja massa mitattiin. Piirrä mittauspisteistä $(V,m)$-kuvaaja ja sovita pisteisiin origon kautta kulkeva suora. Mikä on aineen tiheys yksikössä $\\text{g/cm}^3$? Mikä aine on kyseessä? Käytä oppitunnin taulukkoa.",
    "kind": [
     "data",
@@ -232,7 +235,8 @@
   {
    "id": "fy1-7-L2-07",
    "level": 2,
-   "text": "Oppilas määritti metallikappaleen tiheyden vedensiirtomenetelmällä. Kappaleen massa on $107\\,\\text{g}$. Mittalasin lukema oli ennen upotusta $60\\,\\text{ml}$ ja upotuksen jälkeen $72\\,\\text{ml}$. Oppilas laski $\\rho = 107\\,\\text{g} : 72\\,\\text{cm}^3 = 1{,}5\\,\\text{g/cm}^3$ ja päätteli kappaleen olevan kevyttä muovia. Etsi oppilaan virhe ja laske oikea tiheys yksikössä $\\text{g/cm}^3$. Mikä aine kappale voi olla?",
+   "core": true,
+   "text": "Oppilas määritti metallikappaleen tiheyden vedensiirtomenetelmällä. Kappaleen massa on $107\\,\\text{g}$. Mittalasin lukema oli ennen upotusta $60\\,\\text{ml}$ ja upotuksen jälkeen $72\\,\\text{ml}$.\n\nOppilas laski $\\rho = 107\\,\\text{g} : 72\\,\\text{cm}^3 = 1{,}5\\,\\text{g/cm}^3$ ja päätteli kappaleen olevan kevyttä muovia.\n\nEtsi oppilaan virhe ja laske oikea tiheys yksikössä $\\text{g/cm}^3$. Mikä aine kappale voi olla?",
    "kind": [
     "error",
     "experiment"

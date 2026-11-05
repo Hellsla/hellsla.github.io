@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 3fb0a5efd2862cdf
+CONTENT-HASH: df914065e3c42db8
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- The goals and contribution in inquiry.json still say "wave motion" generically; that is fine, since the lesson treats mechanical waves throughout and says light comes in FY7.
 
 ## Checked
-batch delta review: chapter titles renamed in the title, meta and every chapter reference; every reference names the current title of the right chapter (no stale old title left in content/en/FY5); new illustration caption (one flick of a taut rope makes a single pulse): consistent with the pulse definition; no formula, number, option or feedback physics changed; every changed choice keeps its single correct option.
+batch delta review: the definition in Key idea and in the Summary now reads "Mechanical wave motion is the propagation of a disturbance in a medium", which removes the implied claim that every wave needs a medium (electromagnetic waves do not) and agrees with the following sentence "A mechanical wave needs a medium". The two places are worded the same. Particles vibrate about equilibrium, energy but not matter carried, thermal motion in a gas: unchanged and correct. No numbers, choices or answers changed.

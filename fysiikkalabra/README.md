@@ -224,6 +224,12 @@ pictures, templates and scripts are shared by every language.
 - **Selkeä suomi** (`fi-easy`, an S2 language: `check_i18n.S2_LANGS`) follows NOTES.md §12: the same physics in
   clearer Finnish, and `key_concepts` in each lesson's `meta.json` (`translate_kit.py` hands them to the translator as
   `key_concepts.json`), rendered as *Luvun tärkeät käsitteet* (term and plain explanation; the student writes notes in a notebook).
+- **Course units** (teacher 2026-11-04, FY9 in en and fi-easy): a local course lists its translation languages in
+  `local-courses.json` `"translations"`; `python scripts/translate_kit.py extract|apply <unit id> <lang> <dir>` makes
+  `content/<lang>/units/<id>/` (fi-easy with `key_concepts` in `unit.json`), `check_i18n.py` checks it like a lesson,
+  and it has its own hash and three reviews (`units.py hash <id> --lang <lang>`). `build.py` publishes it at
+  `site/<lang>/<id>.html` once `content/<lang>/local-courses.json` has the course; until then the course page links the
+  source version (`scripts/test_unit_i18n.py`).
 - Finnish only, for now: the agents' briefs, the lint's text rules (`lint_lesson.py`, `check_solutions.py`) and the
   reference lesson `content/_gold/`.
 
@@ -238,6 +244,17 @@ Lessons are reviewed one by one; three small tools keep one physics idea the sam
   fit, internal-energy, temperature, phase-change, efficiency, heat-transfer, gas, fuel) from every chapter, with file
   and place, in a packet of about 15–25 k tokens instead of the courses' 2 MB of sources; `changed` names the concepts a
   pull request touches, so a concept-wide correction gets one cross-chapter science review (`.claude/commands/lesson.md`).
+
+## Esimerkkikoe
+Each course may end with an example exam after Sovella itsenäisesti (teacher 2026-11-05): the same task format, key
+`<COURSE>/koe` (`content/<lang>/<COURSE>/koe/`, `lessons/<COURSE>/koe/`, ids `<slug>-k<n>`, page `<COURSE>-koe.html`),
+plus `"sections": [{"title": "Osa 2: …", "choose": 2, "tasks": ["fy1-k2", …]}]` (no `choose`: every task counts),
+`"max_points"` (checked against the selection rules), `"minutes"`, and multiple-choice parts
+`{"id": "a", "kind": "choice", "points": 2, "text": "…", "options": ["…", "…", "…", "…"], "correct": 1, "tag": "concept"}`
+whose solution is one `**Perustelu:**` step. The page scores multiple choice when its solution is opened and counts the
+exam total per section under its rule (templates/selfassess.js). Design brief: `docs/exam-guidelines.md`; command
+`/exam <COURSE>`; checks `python scripts/practice.py check <COURSE>/koe`; reviews as for Sovella
+(`practice.py packet <COURSE>/koe --role science|pedagogy|visual`).
 
 ## Sovella itsenäisesti
 Each course ends with a few independent, exam-style tasks (teacher 2026-10-28; principles in NOTES.md §9), a part of

@@ -359,7 +359,7 @@ Osamäärä $\Delta\Phi : \Delta t$ on vuon kuvaajan $(t, \Phi)$ kulmakerroin. I
 </svg>
 
 ### Liikkuvan johtimen induktiojännite
-Kun suora metallitanko liikkuu nopeudella $v$ kohtisuoraan homogeenista magneettikenttää $B$ vastaan, tangon mukana liikkuvat myös sen johtavuuselektronit. Luvussa *Varattu hiukkanen sähkö- ja magneettikentässä* todettiin, että magneettikenttä kohdistaa liikkuvaan varaukseen voiman $F_\text{m} = evB$. Voima osoittaa tangon suuntaan, joten elektronit siirtyvät tangon toiseen päähän. Toiseen päähän jää elektronivajaus, ja päiden välille syntyy sähkökenttä $E$, joka vetää elektroneja takaisin. Siirtyminen loppuu, kun sähköinen voima $F_\text{s} = eE$ kumoaa magneettisen voiman. Silloin $eE = evB$ eli $E = vB$. Homogeenisessa kentässä jännite on kentän ja pituuden tulo (luku *Homogeeninen sähkökenttä, potentiaali ja potentiaalienergia*), joten tangon päiden välinen induktiojännite on
+Kun suora metallitanko liikkuu nopeudella $v$ kohtisuoraan homogeenista magneettikenttää $B$ vastaan, tangon mukana liikkuvat myös sen johtavuuselektronit. Luvussa *Varatun hiukkasen liike sähkö- ja magneettikentässä* todettiin, että magneettikenttä kohdistaa liikkuvaan varaukseen voiman $F_\text{m} = evB$. Voima osoittaa tangon suuntaan, joten elektronit siirtyvät tangon toiseen päähän. Toiseen päähän jää elektronivajaus, ja päiden välille syntyy sähkökenttä $E$, joka vetää elektroneja takaisin. Siirtyminen loppuu, kun sähköinen voima $F_\text{s} = eE$ kumoaa magneettisen voiman. Silloin $eE = evB$ eli $E = vB$. Homogeenisessa kentässä jännite on kentän ja pituuden tulo (luku *Homogeeninen sähkökenttä*), joten tangon päiden välinen induktiojännite on
 ```latex
 e = vBl
 ```

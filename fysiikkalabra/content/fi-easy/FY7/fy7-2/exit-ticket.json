@@ -5,6 +5,6 @@
   },
   {
     "q": "Protoni ja elektroni lentävät samalla vauhdilla kohtisuoraan samaan magneettikenttään. Miten niiden radat eroavat toisistaan?",
-    "a": "Radat kaartuvat vastakkaisiin suuntiin, koska varaukset ovat vastakkaismerkkiset. Varausten suuruus on sama, joten säde $r = mv : (qB)$ on verrannollinen massaan. Elektronin radan säde on noin $1840$ kertaa pienempi kuin protonin."
+    "a": "Radat kaartuvat vastakkaisiin suuntiin, koska varaukset ovat vastakkaismerkkiset. Varausten suuruus on sama, joten säde $r = mv : (|q|B)$ on verrannollinen massaan. Elektronin radan säde on noin $1840$ kertaa pienempi kuin protonin."
   }
 ]

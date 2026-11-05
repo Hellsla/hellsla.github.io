@@ -1,20 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: bb2bd021a2242f9f
+CONTENT-HASH: fc04ba6d7ec78737
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
-Round 2: the earlier Major (L3-01 solution, both free-body diagrams: $\overline{F}_\mu$ a bare arrowhead) is resolved. $\overline{F}_\mu$ now has a short visible shaft on the slope and on the flat part, at 390 and 1280, and reads as a vector.
+## Fixed
+(none)
 
 ## Polish
-- [Minor] L3-01 — $\overline{F}_\mu$ is still short beside $\overline{N}$ and $\overline{G}$ (true to its size); its label on the flat part sits close to the hatching.
-- [Minor] Exercise start page at 390 px — "Taso 2 · soveltava harjoitus" wraps and "4 tehtävää" splits onto two lines.
-- [Minor] Free-body diagram subscripts ($F_\mu$, $G_x$) are small; enlarge if the renderer allows.
-- [Minor] The earlier note on the L3-01 Kaava line is resolved: the equation stays on one line (checked).
+(none)
 
 ## Checked
-- Hash bb2bd021a2242f9f at start and end; text unchanged.
-- Rendered all 17 exercise svgs at 390 and 1280; opened the L3-01 two-body figure at both widths, open-exercises-L3-1280-1 and -2 (task, solution, Kaava, Sijoitus, Vastaus), stage-exercises-390 and the full figure sheet: nothing clipped or overlapping.
+- Screenshots of the new tasks (L2-05..07, L3-04..05 at 1280) open: tables, free-body diagrams, formula blocks and answer boxes render without clipping; data tables captions and headers translated.
+- Decimal point and unit spacing consistent; LaTeX identical to fi apart from decimal marks.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · language 5 · accessibility 4

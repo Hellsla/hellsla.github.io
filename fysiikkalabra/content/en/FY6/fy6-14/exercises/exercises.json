@@ -11,6 +11,7 @@
     {
       "id": "fy6-14-L1-02",
       "level": 1,
+      "core": true,
       "text": "A white LED is connected to a $5.0\\,\\text{V}$ USB power supply through a series resistor. The voltage of the LED is $3.1\\,\\text{V}$, and the desired current is $20\\,\\text{mA}$. What series resistor is needed? Give the answer in ohms.",
       "answer": 95.0,
       "unit": "Ω",
@@ -40,6 +41,78 @@
       "answer": 22.0,
       "unit": "mW",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-14-L1-06",
+      "level": 1,
+      "core": true,
+      "text": "The voltage of a battery is $9.0\\,\\text{V}$. The positive terminal of the battery is connected through a diode to a resistor, and the resistor is connected to the negative terminal of the battery. The triangle of the diode symbol points towards the resistor.\n\nWhat happens in the circuit?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The diode is in the forward direction, so current flows and there is only a small voltage across the diode.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The diode is in the reverse direction, so no current flows and the whole voltage of the battery is across the diode.",
+          "feedback": "This would happen if the terminals of the battery were the other way round. When the triangle points in the direction of the current, that is, towards the negative terminal, the diode is in the forward direction."
+        },
+        {
+          "text": "The diode is in the reverse direction, so current flows back and there is a voltage across the resistor.",
+          "feedback": "A diode does not let current through in the opposite direction. In this circuit the diode is in the forward direction, and current flows from the positive terminal to the negative terminal."
+        },
+        {
+          "text": "The diode is in the forward direction, so current flows and there is only a small voltage across the diode.",
+          "correct": true,
+          "feedback": "Correct: the direction of the current from the positive terminal to the negative terminal is the same as the direction the triangle points, so the diode lets the current through. The voltage of the diode is small, and most of the voltage of the battery is across the resistor."
+        },
+        {
+          "text": "The diode is in the forward direction, so current flows and the whole voltage of the battery is across the diode.",
+          "feedback": "In the forward direction the voltage of the diode is small. By Kirchhoff's voltage law the resistor in series with the diode takes most of the voltage of the battery."
+        }
+      ]
+    },
+    {
+      "id": "fy6-14-L1-07",
+      "level": 1,
+      "text": "An LED is connected to a battery whose voltage is greater than the voltage of the LED itself. A series resistor is connected in series with the LED.\n\nWhy is the series resistor needed?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The current of the LED grows steeply as the voltage grows, so the resistor takes the extra voltage.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The resistance of the LED is so large that the resistor is needed to increase the current and make the LED light up.",
+          "feedback": "In the forward direction an LED is not a component of large resistance. Without a series resistor the current would grow too large, not too small."
+        },
+        {
+          "text": "The resistor changes the direct voltage of the battery into the alternating voltage that the LED needs in order to work.",
+          "feedback": "A resistor does not change the type of the voltage. An LED works on direct voltage as long as it is in the forward direction and the current is limited."
+        },
+        {
+          "text": "The resistor prevents current from flowing through the LED in the wrong direction when the battery is connected the right way round.",
+          "feedback": "Current does not flow through an LED in the wrong direction anyway, because the LED is then in the reverse direction. The resistor limits the size of the current in the forward direction."
+        },
+        {
+          "text": "The current of the LED grows steeply as the voltage grows, so the resistor takes the extra voltage.",
+          "correct": true,
+          "feedback": "Correct: the voltage of an LED stays almost the same even when the current changes a lot, so the extra voltage is left for the resistor. The resistor makes the current suitable, and the LED does not burn out."
+        }
+      ]
+    },
+    {
+      "id": "fy6-14-L1-08",
+      "level": 1,
+      "text": "The area of the solar cell of a calculator is $12\\,\\text{cm}^2$. In bright sunlight the light intensity at the cell is $1000\\,\\text{W/m}^2$. Then the voltage of the cell is $2.0\\,\\text{V}$ and the current $100\\,\\text{mA}$. What is the efficiency of the cell? Give the answer as a percentage.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 16.666667,
+      "unit": "%",
+      "tolerance": 0.03
     }
   ],
   "level2": [
@@ -62,6 +135,7 @@
     {
       "id": "fy6-14-L2-03",
       "level": 2,
+      "core": true,
       "text": "The area of a solar panel on the roof of a detached house is $1.6\\,\\text{m}^2$. When the light intensity is $800\\,\\text{W/m}^2$, the panel gives an electric power of $260\\,\\text{W}$. What is the efficiency of the panel? Give the answer as a percentage.",
       "answer": 20.3125,
       "unit": "%",
@@ -73,6 +147,112 @@
       "text": "The solar cell of a garden lamp charges the battery of the lamp during the day. The average power of the cell is $0.35\\,\\text{W}$, and it charges the battery for $6.0\\,\\text{h}$. How much electrical energy does the cell produce during this time? Give the answer in kilojoules.",
       "answer": 7.56,
       "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-14-L2-05",
+      "level": 2,
+      "text": "The table shows the voltage of three LEDs when the current of each is $15\\,\\text{mA}$ (example data). Each LED is connected separately through a series resistor to a voltage source of $5.0\\,\\text{V}$, and the desired current is $15\\,\\text{mA}$.\n\na) Which LED needs the largest series resistor? Justify your answer.\n\nb) Calculate the resistance of this series resistor. Give the result of part b in ohms.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 206.666667,
+      "unit": "Ω",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Voltages of the LEDs at the current $15\\,\\text{mA}$ (example data)",
+        "columns": [
+          "Colour",
+          "$U_\\text{D}\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "Blue",
+            "3.10"
+          ],
+          [
+            "Red",
+            "1.90"
+          ],
+          [
+            "Yellow",
+            "2.10"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-14-L2-06",
+      "level": 2,
+      "core": true,
+      "text": "The voltage and the current of a small solar cell were measured with different load resistors in the same illumination (example data).\n\nCalculate the power of the cell with each load resistor. What is the greatest measured power of the cell? Give the answer in milliwatts.",
+      "kind": [
+        "data"
+      ],
+      "answer": 181.09,
+      "unit": "mW",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Measurements of a solar cell with different loads (example data)",
+        "columns": [
+          "$R\\,(\\Omega)$",
+          "$U\\,(\\text{V})$",
+          "$I\\,(\\text{mA})$"
+        ],
+        "rows": [
+          [
+            "10",
+            "0.99",
+            "99"
+          ],
+          [
+            "15",
+            "1.48",
+            "99"
+          ],
+          [
+            "20",
+            "1.89",
+            "94"
+          ],
+          [
+            "22",
+            "1.99",
+            "91"
+          ],
+          [
+            "27",
+            "2.12",
+            "78"
+          ],
+          [
+            "33",
+            "2.20",
+            "66"
+          ],
+          [
+            "47",
+            "2.28",
+            "48"
+          ],
+          [
+            "100",
+            "2.34",
+            "23"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-14-L2-07",
+      "level": 2,
+      "text": "A student is dimensioning the series resistor of a blue LED. The voltage of the battery is $9.0\\,\\text{V}$, the voltage of the LED is $3.2\\,\\text{V}$, and the desired current is $15\\,\\text{mA}$.\n\nThe student's solution: “The voltage of the battery is across the resistor, so $R = U : I = 9.0\\,\\text{V} : 0.015\\,\\text{A} = 600\\,\\Omega$.”\n\na) What is the error in the student's solution?\n\nb) Calculate the series resistor correctly. Give the result of part b in ohms.",
+      "kind": [
+        "error"
+      ],
+      "answer": 386.666667,
+      "unit": "Ω",
       "tolerance": 0.02
     }
   ],
@@ -100,6 +280,135 @@
       "answer": 25.0,
       "unit": "%",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-14-L3-04",
+      "level": 3,
+      "text": "A solar panel array with a total area of $24\\,\\text{m}^2$ is planned for the roof of a detached house. The combined efficiency of the panels and the inverter is $19\\,\\%$, and it is assumed to stay constant throughout the year.\n\nThe table shows the energy of solar radiation per square metre $H$ falling on the surface of the panels and the electricity consumption of the house $E_\\text{kul}$ for each month (example data, not a measurement result).\n\na) Calculate the annual production of the panel array.\n\nb) Calculate the degree of self-sufficiency, that is, the share of the annual production in the annual consumption of the house. Give the answer as a percentage.\n\nc) Calculate the monthly production and deduce in which months the panel array produces less than the house consumes. Why does the degree of self-sufficiency alone not tell how much electricity the house buys from the grid?\n\nThe result of part b is written in the answer box.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 87.698876,
+      "unit": "%",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Radiation energy and electricity consumption by month (example data)",
+        "columns": [
+          "Month",
+          "$H\\,(\\text{kWh/m}^2)$",
+          "$E_\\text{kul}\\,(\\text{kWh})$"
+        ],
+        "rows": [
+          [
+            "Jan",
+            "12",
+            "620"
+          ],
+          [
+            "Feb",
+            "32",
+            "560"
+          ],
+          [
+            "Mar",
+            "80",
+            "520"
+          ],
+          [
+            "Apr",
+            "120",
+            "400"
+          ],
+          [
+            "May",
+            "160",
+            "330"
+          ],
+          [
+            "Jun",
+            "170",
+            "290"
+          ],
+          [
+            "Jul",
+            "170",
+            "280"
+          ],
+          [
+            "Aug",
+            "135",
+            "300"
+          ],
+          [
+            "Sep",
+            "85",
+            "370"
+          ],
+          [
+            "Oct",
+            "40",
+            "460"
+          ],
+          [
+            "Nov",
+            "15",
+            "560"
+          ],
+          [
+            "Dec",
+            "8",
+            "650"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-14-L3-05",
+      "level": 3,
+      "text": "The characteristic curve of a green LED was measured point by point (example data). The LED is connected to a battery of $4.5\\,\\text{V}$ through a series resistor of $180\\,\\Omega$. The greatest permitted continuous current of the LED is $25\\,\\text{mA}$.\n\na) Estimate the threshold voltage of the LED by extending the steep straight part of the characteristic curve ($2.05$–$2.10\\,\\text{V}$) to the voltage axis.\n\nb) Determine the operating point of the LED, that is, the current and the voltage in the circuit. Give the current in milliamperes.\n\nc) By how much does the voltage of the LED change when the current grows in the table from $9.8\\,\\text{mA}$ to $41\\,\\text{mA}$? Why can a constant value be used for the voltage of the LED when dimensioning the series resistor?\n\nThe result of part b is written in the answer box.",
+      "kind": [
+        "data",
+        "graph",
+        "model"
+      ],
+      "answer": 13.78,
+      "unit": "mA",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Characteristic curve of a green LED (example data)",
+        "columns": [
+          "$U_\\text{D}\\,(\\text{V})$",
+          "$I\\,(\\text{mA})$"
+        ],
+        "rows": [
+          [
+            "1.70",
+            "0.1"
+          ],
+          [
+            "1.80",
+            "0.6"
+          ],
+          [
+            "1.90",
+            "2.4"
+          ],
+          [
+            "2.00",
+            "9.8"
+          ],
+          [
+            "2.05",
+            "20"
+          ],
+          [
+            "2.10",
+            "41"
+          ]
+        ]
+      }
     }
   ]
 }

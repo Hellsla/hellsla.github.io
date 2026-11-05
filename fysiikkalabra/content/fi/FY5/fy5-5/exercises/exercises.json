@@ -299,7 +299,7 @@
     {
       "id": "fy5-5-L3-03",
       "level": 3,
-      "text": "Kumpi vetää Maata voimakkaammin, Aurinko vai Kuu, ja kuinka moninkertaisesti? Auringon massa on $1{,}99 \\cdot 10^{30}\\,\\text{kg}$ ja sen keskipisteen etäisyys Maan keskipisteestä $1{,}50 \\cdot 10^{8}\\,\\text{km}$. Kuun massa on $7{,}35 \\cdot 10^{22}\\,\\text{kg}$ ja etäisyys $3{,}84 \\cdot 10^{5}\\,\\text{km}$. Anna Auringon Maahan kohdistaman voiman suhde Kuun Maahan kohdistamaan voimaan.",
+      "text": "Kumpi vetää Maata voimakkaammin, Aurinko vai Kuu, ja kuinka moninkertaisesti?\n\nAuringon massa on $1{,}99 \\cdot 10^{30}\\,\\text{kg}$ ja sen keskipisteen etäisyys Maan keskipisteestä $1{,}50 \\cdot 10^{8}\\,\\text{km}$. Kuun massa on $7{,}35 \\cdot 10^{22}\\,\\text{kg}$ ja etäisyys $3{,}84 \\cdot 10^{5}\\,\\text{km}$.\n\nAnna Auringon Maahan kohdistaman voiman suhde Kuun Maahan kohdistamaan voimaan.",
       "answer": 177,
       "unit": "",
       "tolerance": 0.02

@@ -1,0 +1,505 @@
+{
+  "version": 1,
+  "contribution": "The review lesson brings together electric charge and Coulomb's law, the uniform electric field, electric potential energy and potential, the capacitor and its energy, the diode, the LED and the solar cell, and electrical safety and the home electrical system from course FY6 into one method (a charge creates a field, and the field exerts a force on a charge and does work on it), and practises matriculation-exam-style tasks on them: the vector sum of forces, the equilibrium of charged balls, the capacitor and the dielectric, linearising and fitting a capacitance measurement, the dangers of high voltage, assessing a solar panel report, and an ion thruster that links potential to the impulse principle of course FY4.",
+  "learn": [
+    "solve charge, field, potential and capacitor tasks by choosing a suitable principle",
+    "draw and interpret the graph and the fit of a capacitance measurement",
+    "assess claims about electrical safety and measurement reports with justification"
+  ],
+  "prior": [
+    "Coulomb's law is $F = k\\tfrac{\\lvert q_1 q_2 \\rvert}{r^2}$, and charge is conserved (chapter *Electric charge and Coulomb's law*)",
+    "In a field a charge experiences the force $\\overline{F} = q\\overline{E}$, and between plates $E = \\tfrac{U}{d}$ (chapter *Uniform electric field*)",
+    "The work done by the field is $W = qU$, and for a particle starting from rest $\\tfrac12 mv^2 = \\lvert q \\rvert U$ (chapter *Potential energy and potential in an electric field*)",
+    "Capacitance is $C = \\tfrac{Q}{U}$, and the energy is $W = \\tfrac12 CU^2$ (chapter *The capacitor and its energy*)",
+    "The series resistor of an LED is $R = \\tfrac{U - U_\\text{D}}{I}$ (chapter *Semiconductors, the diode, the LED and the solar cell*)",
+    "A fuse protects the cable and a residual current device protects the person (chapter *Electrical safety at home and at work*)",
+    "The power of a three-phase device is $P = 3UI$ (chapter *Applied chapter: the electric car and the home electrical system*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "On a frosty day the indoor air is dry. You walk in woollen socks across a woollen rug and reach a finger towards the metal handle of the front door. Just before you touch it, a spark of about $3\\,\\text{mm}$ jumps between the finger and the handle, and your finger stings. The voltage of the spark is thousands of volts, but no harm is done. In the exam a situation like this can be the start of a task: the phenomenon and the numbers are given, but the law is not.",
+      "question": "What does the length of the spark tell you, and why is a spark of thousands of volts not dangerous, although the $230\\,\\text{V}$ of a socket can be lethal?"
+    },
+    {
+      "id": "lt-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Diagnostic 1: Coulomb's law",
+      "prompt": "Two small charged balls are $4.0\\,\\text{cm}$ apart, and the force between them is $F$. The charge of one ball is doubled, and the balls are moved $8.0\\,\\text{cm}$ apart. How large is the force now?",
+      "choices": [
+        {
+          "text": "$2F$, because the force is directly proportional to the charge.",
+          "feedback": "Doubling the charge does double the force, but the distance doubled as well. In Coulomb's law the distance is squared, so on its own it reduces the force to a quarter. Review in the chapter *Electric charge and Coulomb's law*."
+        },
+        {
+          "text": "$F$, because the two doublings cancel each other.",
+          "feedback": "The changes do not have an equally strong effect: the charge is in the law to the first power, the distance to the second. Twice the distance gives a quarter of the force. Review in the chapter *Electric charge and Coulomb's law*."
+        },
+        {
+          "text": "$\\tfrac{F}{2}$, because the square of the distance becomes four times as large.",
+          "feedback": "Correct. $F' = k\\tfrac{2q_1 q_2}{(2r)^2} = \\tfrac{2}{4}F = \\tfrac{F}{2}$. The charge doubles the force and twice the distance reduces it to a quarter. Review if needed in the chapter *Electric charge and Coulomb's law*.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "lt-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Diagnostic 2: an electron in a field",
+      "prompt": "Between two horizontal plates the electric field points from top to bottom. An electron at rest is brought between the plates. In which direction does the electric force on it point?",
+      "choices": [
+        {
+          "text": "Down, because the field lines always show the direction of the force.",
+          "feedback": "A field line shows the direction of the force on a *positive* charge. The charge of the electron is negative, so $\\overline{F} = q\\overline{E}$ points against the field. Review in the chapter *Uniform electric field*."
+        },
+        {
+          "text": "Up, against the field, because the electron is negative.",
+          "feedback": "Correct. $\\overline{F} = q\\overline{E}$ and $q = -e$, so the force points against the field, towards the upper, positive plate. Review if needed in the chapter *Uniform electric field*.",
+          "correct": true
+        },
+        {
+          "text": "Nowhere, because the mass of the electron is so small.",
+          "feedback": "The electric force depends on the charge, not on the mass: $F = eE$. A small mass only means that the same force gives the electron an enormous acceleration. Review in the chapter *Uniform electric field*."
+        }
+      ]
+    },
+    {
+      "id": "lt-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Diagnostic 3: the same potential difference",
+      "prompt": "A proton and an electron start from rest, and each travels through a potential difference of $500\\,\\text{V}$ in its own direction. Forces other than the electric force are not taken into account. Which statement is true?",
+      "choices": [
+        {
+          "text": "The kinetic energy of the proton is larger, because its mass is larger.",
+          "feedback": "The work done by the field is $qU$, and it does not depend on the mass. The charges have the same magnitude $e$, so both get the same kinetic energy $500\\,\\text{eV}$. Review in the chapter *Potential energy and potential in an electric field*."
+        },
+        {
+          "text": "The speeds are equal, because the charges have the same magnitude.",
+          "feedback": "The kinetic energies are equal, but $\\tfrac12 mv^2 = eU$ gives the light electron a much larger speed, about $43$ times as large. Review in the chapter *Potential energy and potential in an electric field*."
+        },
+        {
+          "text": "Both have $500\\,\\text{eV}$, but the electron is faster.",
+          "feedback": "Correct. The field does the work $eU = 500\\,\\text{eV}$ on each. The mass of the electron is about $1800$ times smaller, so its speed is $\\sqrt{1800} \\approx 43$ times larger. Review if needed in the chapter *Potential energy and potential in an electric field*.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "lt-4",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Diagnostic 4: a disconnected capacitor",
+      "prompt": "An air-filled parallel-plate capacitor is charged and disconnected from the source. After that the plates are pulled twice as far apart. How does the voltage between the plates change?",
+      "choices": [
+        {
+          "text": "It doubles, because the charge stays the same and the capacitance is halved.",
+          "feedback": "Correct. $C = \\tfrac{\\varepsilon_0 A}{d}$ is halved, and the $Q$ of a disconnected capacitor stays the same, so $U = \\tfrac{Q}{C}$ doubles. Separating the plates requires work, so the energy also increases. Review if needed in the chapter *The capacitor and its energy*.",
+          "correct": true
+        },
+        {
+          "text": "The voltage stays the same, because the source charged it to this voltage.",
+          "feedback": "The voltage would stay the same only if the source were still connected. The charge of a disconnected capacitor stays the same, so the voltage changes with the capacitance. Review in the chapter *The capacitor and its energy*."
+        },
+        {
+          "text": "The voltage is halved, because the capacitance is halved in the same ratio.",
+          "feedback": "The capacitance is halved, but $U = \\tfrac{Q}{C}$: when the charge stays the same and $C$ decreases, the voltage increases. Review in the chapter *The capacitor and its energy*."
+        }
+      ]
+    },
+    {
+      "id": "lt-5",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Diagnostic 5: an LED in the reverse direction",
+      "prompt": "A red LED and a series resistor are connected in series to a $3.0\\,\\text{V}$ battery, but the LED has been turned to the reverse direction. How large is the voltage across the LED?",
+      "choices": [
+        {
+          "text": "About $1.9\\,\\text{V}$, because that is the voltage of a red LED.",
+          "feedback": "About $1.9\\,\\text{V}$ is the voltage of a red LED in the forward direction, when a current flows. In the reverse direction no current flows. Review in the chapter *Semiconductors, the diode, the LED and the solar cell*."
+        },
+        {
+          "text": "The whole $3.0\\,\\text{V}$, because no voltage is left across the resistor.",
+          "feedback": "Correct. In the reverse direction $I = 0$, so the voltage of the resistor is $RI = 0$, and by Kirchhoff's voltage law the whole voltage of the source is across the LED. Review if needed in the chapter *Semiconductors, the diode, the LED and the solar cell*.",
+          "correct": true
+        },
+        {
+          "text": "Zero, because the LED does not conduct and is not part of the circuit.",
+          "feedback": "The LED is still in the circuit, although it does not conduct. An open point in a circuit is exactly the point across which the voltage is. Review in the chapter *Semiconductors, the diode, the LED and the solar cell*."
+        }
+      ]
+    },
+    {
+      "id": "lt-6",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Diagnostic 6: the residual current device",
+      "prompt": "The socket circuit of a bathroom has a residual current device with a tripping current of $30\\,\\text{mA}$. What does the residual current device compare when it decides whether to cut the current?",
+      "choices": [
+        {
+          "text": "The currents of the phase conductor and the neutral conductor with each other.",
+          "feedback": "Correct. In an intact circuit the currents are equal. If part of the current gets to earth through a fault and, for example, a person, the returning current is smaller, and the device trips when the difference exceeds $30\\,\\text{mA}$. Review if needed in the chapter *Electrical safety at home and at work*.",
+          "correct": true
+        },
+        {
+          "text": "The total current of the circuit with the rated current of the fuse.",
+          "feedback": "The total current is monitored by the fuse, which protects the cable from overheating. Its rated current is amperes, so it does not notice a current through a person. Review in the chapter *Electrical safety at home and at work*."
+        },
+        {
+          "text": "The voltage of the socket with the mains voltage $230\\,\\text{V}$.",
+          "feedback": "A residual current device does not measure voltage. It detects a leakage current that flows to earth by some other route than along the neutral conductor. Review in the chapter *Electrical safety at home and at work*."
+        }
+      ]
+    },
+    {
+      "id": "aineisto",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Potential between the plates",
+      "source": "model",
+      "source_note": "The graph has been calculated from the uniform field model $V = Ex$, as in the chapter *Potential energy and potential in an electric field*.",
+      "figure": "fy6-12/ex-vgraph",
+      "text": "The graph shows the potential $V$ between two plates as a function of the distance $x$. The distance is measured from the negative plate, whose potential is zero, and the positive plate is at $x = 5.0\\,\\text{cm}$. First think about what the slope of the graph tells you about the field and in which direction an electron starting from rest moves. Answer below with the speed of the electron.",
+      "question": {
+        "type": "numeric",
+        "prompt": "An electron starts from rest at the negative plate. Read the potential at $x = 3.0\\,\\text{cm}$ from the graph. How large is the speed of the electron at this point? The mass of the electron is $9.109 \\cdot 10^{-31}\\,\\text{kg}$. Give the answer in $\\text{km/s}$.",
+        "answer": 7264,
+        "unit": "km/s",
+        "tolerance": 0.03,
+        "hints": [
+          "Read the potential at $x = 3.0\\,\\text{cm}$. The electron moves towards the higher potential, so its potential energy decreases by $eU$, where $U$ is the potential difference between the starting point and the end point.",
+          "Only the electric force does work. First say in words which energy is conserved and what the decrease in potential energy turns into.",
+          "The kinetic energy increases as much as the potential energy decreases: $\\tfrac12 mv^2 = eU$, so $v = \\sqrt{\\dfrac{2 \\cdot 1.602 \\cdot 10^{-19}\\,\\text{C} \\cdot 150\\,\\text{V}}{9.109 \\cdot 10^{-31}\\,\\text{kg}}}$, and finally $1\\,\\text{km/s} = 1000\\,\\text{m/s}$."
+        ],
+        "mistakes": [
+          {
+            "value": 9377,
+            "feedback": "You used the whole voltage between the plates, $250\\,\\text{V}$. Up to the point $x = 3.0\\,\\text{cm}$ the electron has travelled only through the potential difference $150\\,\\text{V}$."
+          },
+          {
+            "value": 5136,
+            "feedback": "The factor $2$ is missing from the formula: the kinetic energy is $\\tfrac12 mv^2$, so $v = \\sqrt{\\tfrac{2eU}{m}}$."
+          },
+          {
+            "value": 169.5,
+            "feedback": "You used the mass of the proton. The mass of the electron is $9.109 \\cdot 10^{-31}\\,\\text{kg}$, about $1800$ times smaller."
+          }
+        ],
+        "solution": "**Given:** from the graph the potential $V = 150\\,\\text{V}$ at $x = 3.0\\,\\text{cm}$, the potential of the starting point $0\\,\\text{V}$; $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$, $m = 9.109 \\cdot 10^{-31}\\,\\text{kg}$, initial speed zero\n\n**Find:** the speed $v$ of the electron at $x = 3.0\\,\\text{cm}$\n\n**Principle:** The electric force is conservative and the other forces are negligible, so the sum of the kinetic energy and the potential energy is conserved. The charge of the electron is negative, so it moves towards the higher potential, and its potential energy decreases by $eU$, where $U$ is the potential difference travelled (chapter *Potential energy and potential in an electric field*).\n\n**Reading the graph:** The line rises from the origin to the point $(5.0\\,\\text{cm}; 250\\,\\text{V})$, so each centimetre raises the potential by $50\\,\\text{V}$. At $x = 3.0\\,\\text{cm}$ the line is at the grid line $150\\,\\text{V}$.\n\n**Formula:** $\\tfrac12 mv^2 = eU$, so $v = \\sqrt{\\dfrac{2eU}{m}}$\n\n**Conversions:** $1\\,\\text{C} \\cdot 1\\,\\text{V} = 1\\,\\text{J}$ and $\\sqrt{1\\,\\text{J} : 1\\,\\text{kg}} = 1\\,\\text{m/s}$. Finally $1\\,\\text{km/s} = 1000\\,\\text{m/s}$.\n\n**Substitution:** $v = \\sqrt{\\dfrac{2 \\cdot 1.602 \\cdot 10^{-19}\\,\\text{C} \\cdot 150\\,\\text{V}}{9.109 \\cdot 10^{-31}\\,\\text{kg}}} = \\sqrt{5.276 \\cdot 10^{13}\\,\\text{m}^2/\\text{s}^2} = 7.264 \\cdot 10^{6}\\,\\text{m/s} = 7260\\,\\text{km/s}$\n\n**Answer:** $v \\approx 7.3 \\cdot 10^{3}\\,\\text{km/s}$, two significant figures, because the point $3.0\\,\\text{cm}$ read from the graph has the precision of two figures.\n\n**Reasonableness:** The slope of the graph is the field strength $E = \\tfrac{250\\,\\text{V}}{0.050\\,\\text{m}} = 5000\\,\\text{V/m}$, and the field points from the positive plate to the negative one, so the force on the electron points towards the positive plate, as assumed. The speed is about $2.4\\,\\%$ of the speed of light, so the classical kinetic energy is good enough. At the positive plate the speed would be $\\sqrt{\\tfrac{250}{150}} \\approx 1.3$ times as large."
+      }
+    },
+    {
+      "id": "teoriatiivistelma",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava",
+        "Virheet",
+        "Kertaa"
+      ]
+    },
+    {
+      "id": "virhe-etuvastus",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the mistake: the series resistor of an LED",
+      "prompt": "The voltage of a green LED is $2.2\\,\\text{V}$ when its current is $15\\,\\text{mA}$. The LED is connected in series with a series resistor to a $5.0\\,\\text{V}$ source. A student calculated the resistor like this: $R = \\tfrac{U}{I} = \\tfrac{5.0\\,\\text{V}}{0.015\\,\\text{A}} \\approx 330\\,\\Omega$. What is wrong in the solution?",
+      "choices": [
+        {
+          "text": "The current must be converted: $15\\,\\text{mA} = 15\\,\\text{A}$, so $R \\approx 0.33\\,\\Omega$.",
+          "feedback": "That conversion is the wrong way round: $15\\,\\text{mA} = 15 \\cdot 0.001\\,\\text{A} = 0.015\\,\\text{A}$, as the student did. The mistake is in the voltage. Review in the chapter *Semiconductors, the diode, the LED and the solar cell*."
+        },
+        {
+          "text": "The voltage of the LED is added to the voltage of the source, so $R \\approx 480\\,\\Omega$.",
+          "feedback": "In a series circuit the voltage of the source is *shared* between the resistor and the LED, $U = U_R + U_\\text{D}$, so there is less than $5.0\\,\\text{V}$ across the resistor. Review in the chapter *Semiconductors, the diode, the LED and the solar cell*."
+        },
+        {
+          "text": "Across the resistor there is only $5.0\\,\\text{V} - 2.2\\,\\text{V}$, so $R \\approx 190\\,\\Omega$.",
+          "feedback": "Correct. $R = \\tfrac{U - U_\\text{D}}{I} = \\tfrac{2.8\\,\\text{V}}{0.015\\,\\text{A}} \\approx 190\\,\\Omega$. The student's $330\\,\\Omega$ would give only about $8.5\\,\\text{mA}$, and the LED would glow more dimly.",
+          "correct": true
+        },
+        {
+          "text": "There is no mistake, because Ohm's law holds for the whole circuit.",
+          "feedback": "An LED does not obey Ohm's law: its voltage stays almost the same when the current changes. Ohm's law holds only for the resistor, across which there is $U - U_\\text{D}$. Review in the chapter *Semiconductors, the diode, the LED and the solar cell*."
+        }
+      ]
+    },
+    {
+      "id": "lue-kuvaaja",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Read the graph: charging a capacitor",
+      "figure": "fy6-13/ex-qu",
+      "prompt": "The graph shows the voltage $U$ of a capacitor as a function of its charge $Q$ during charging. Which statement is true according to the graph?",
+      "choices": [
+        {
+          "text": "The capacitance is $0.20\\,\\mu\\text{F}$, that is, the voltage divided by the charge.",
+          "feedback": "Capacitance is the charge divided by the voltage, $C = \\tfrac{Q}{U} = \\tfrac{70\\,\\mu\\text{C}}{14\\,\\text{V}}$, not its reciprocal. Review in the chapter *The capacitor and its energy*."
+        },
+        {
+          "text": "The energy at the end is $0.98\\,\\text{mJ}$, that is, the charge times the voltage.",
+          "feedback": "$QU$ would be the energy if the whole charge were moved across the full voltage. The voltage grows from zero, so the energy is the area of the triangle, $\\tfrac12 QU$. Review in the chapter *The capacitor and its energy*."
+        },
+        {
+          "text": "The capacitance increases during charging, because the voltage increases.",
+          "feedback": "The graph is a straight line through the origin, so $\\tfrac{Q}{U}$ is constant: the capacitance depends only on the structure, not on the voltage. Review in the chapter *The capacitor and its energy*."
+        },
+        {
+          "text": "The capacitance is $5.0\\,\\mu\\text{F}$, the energy at the end $0.49\\,\\text{mJ}$.",
+          "feedback": "Correct. $C = \\tfrac{70\\,\\mu\\text{C}}{14\\,\\text{V}} = 5.0\\,\\mu\\text{F}$ and $W = \\tfrac12 QU = \\tfrac12 \\cdot 70 \\cdot 10^{-6}\\,\\text{C} \\cdot 14\\,\\text{V} = 0.49\\,\\text{mJ}$, the area of the triangle under the line.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "oljypisara",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Which description: a floating oil droplet",
+      "prompt": "A small charged oil droplet floats at rest between two horizontal plates. The upper plate is positive and the lower one negative. Which verbal description of the free-body diagram of the droplet is correct?",
+      "choices": [
+        {
+          "text": "Weight down and the electric force down in the direction of the field; the droplet is positive.",
+          "feedback": "If both forces pointed down, the net force would not be zero, and the droplet would accelerate downwards. The sum of the forces on a droplet at rest is zero. Review in the chapter *Uniform electric field*."
+        },
+        {
+          "text": "Weight down and an equal electric force up; the droplet is negative.",
+          "feedback": "Correct. The droplet is at rest, so $qE = mg$. The field points down, so an upward force requires a negative charge: $\\overline{F} = q\\overline{E}$ points against the field.",
+          "correct": true
+        },
+        {
+          "text": "Only the electric force up, because the weight of the droplet is negligibly small.",
+          "feedback": "The weight of an electron is negligible, but that of an oil droplet is not. If only an upward force acted on the droplet, it would accelerate upwards and not float. Review in the chapter *Uniform electric field*."
+        },
+        {
+          "text": "Weight down, electric force up and the field as a force arrow of its own.",
+          "feedback": "The field is not a force. The field tells what kind of force acts on a charge, and only the electric force $q\\overline{E}$ is drawn in the free-body diagram. Review in the chapter *Uniform electric field*."
+        }
+      ]
+    },
+    {
+      "id": "turvallisuus",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Claim: the fuse and the residual current device",
+      "prompt": "The socket circuit of a bathroom has a $10\\,\\text{A}$ fuse and a $30\\,\\text{mA}$ residual current device. Which statement is true?",
+      "choices": [
+        {
+          "text": "The residual current device trips when part of the current leaks to earth through a person.",
+          "feedback": "Correct. The leakage current does not return along the neutral conductor, so the currents of the phase and neutral conductors differ, and the device trips when the difference exceeds $30\\,\\text{mA}$.",
+          "correct": true
+        },
+        {
+          "text": "The fuse cuts the current at once if $50\\,\\text{mA}$ flows through a person.",
+          "feedback": "The rated current of the fuse is $10\\,\\text{A}$, two hundred times larger. A fuse protects the cable from overheating, not the person. Review in the chapter *Electrical safety at home and at work*."
+        },
+        {
+          "text": "The residual current device protects you even if you touch the phase and neutral conductors at the same time.",
+          "feedback": "Then the current returns through the person to the neutral conductor, and no difference arises between the currents of the phase and neutral conductors. The device does not trip. Review in the chapter *Electrical safety at home and at work*."
+        },
+        {
+          "text": "A $10\\,\\text{A}$ fuse that often blows can be replaced with a $16\\,\\text{A}$ fuse.",
+          "feedback": "The size of the fuse is chosen according to the cable. A larger fuse would let into the cable a current that can heat it and start a fire. Review in the chapter *Electrical safety at home and at work*."
+        }
+      ]
+    },
+    {
+      "id": "kolme-varausta",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Three charges on a rail",
+      "prompt": "Three small charged balls are on an insulating rail on the same line. Ball A, whose charge is $+4.0\\,\\text{nC}$, is at $0\\,\\text{cm}$, ball B, whose charge is $-6.0\\,\\text{nC}$, is at $5.0\\,\\text{cm}$ and ball C, whose charge is $+2.0\\,\\text{nC}$, is at $10.0\\,\\text{cm}$. How large is the total electric force on ball C?",
+      "answer": 35.95,
+      "unit": "µN",
+      "tolerance": 0.03,
+      "hints": [
+        "Calculate the forces of A and B on ball C separately with Coulomb's law. Remember the distances to ball C: $10.0\\,\\text{cm}$ and $5.0\\,\\text{cm}$.",
+        "A and C have the same sign, so A pushes C away, to the right. B and C have opposite signs, so B pulls C to the left. Forces in opposite directions are subtracted.",
+        "$F_\\text{A} = k\\dfrac{4.0 \\cdot 10^{-9}\\,\\text{C} \\cdot 2.0 \\cdot 10^{-9}\\,\\text{C}}{(0.100\\,\\text{m})^2}$ and $F_\\text{B} = k\\dfrac{6.0 \\cdot 10^{-9}\\,\\text{C} \\cdot 2.0 \\cdot 10^{-9}\\,\\text{C}}{(0.050\\,\\text{m})^2}$"
+      ],
+      "mistakes": [
+        {
+          "value": 50.33,
+          "feedback": "You added the forces. A pushes C to the right and B pulls it to the left, so the forces are in opposite directions and they are subtracted."
+        },
+        {
+          "value": 43.14,
+          "feedback": "This is only the force of B. A also acts on C, although it is further away."
+        },
+        {
+          "value": 7.19,
+          "feedback": "This is only the force of A. The closer ball B acts on C much more strongly."
+        }
+      ],
+      "solution": "**Given:** $q_\\text{A} = +4.0\\,\\text{nC}$ at $0\\,\\text{cm}$, $q_\\text{B} = -6.0\\,\\text{nC}$ at $5.0\\,\\text{cm}$, $q_\\text{C} = +2.0\\,\\text{nC}$ at $10.0\\,\\text{cm}$, $k = 8.988 \\cdot 10^{9}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{C}^2}$\n\n**Find:** the magnitude $F$ of the total force on ball C\n\n**Principle:** The balls are small, so they are point charges. Each of the other balls acts on C as if the other one were not there, and the total force is the vector sum of the forces. The positive direction is chosen to the right. A and C have the same sign, so the force of A points away from C, that is, to the right. B and C have opposite signs, so the force of B points towards B, that is, to the left (chapter *Electric charge and Coulomb's law*).\n\n**Formula:** $F_\\text{A} = k\\dfrac{\\lvert q_\\text{A} q_\\text{C} \\rvert}{r_\\text{AC}^2}$, $F_\\text{B} = k\\dfrac{\\lvert q_\\text{B} q_\\text{C} \\rvert}{r_\\text{BC}^2}$ and $F = F_\\text{A} - F_\\text{B}$\n\n**Conversions:** $r_\\text{AC} = 10.0\\,\\text{cm} = 0.100\\,\\text{m}$ and $r_\\text{BC} = 5.0\\,\\text{cm} = 0.050\\,\\text{m}$; $1\\,\\text{nC} = 10^{-9}\\,\\text{C}$. Finally $1\\,\\text{N} = 10^{6}\\,\\mu\\text{N}$.\n\n**Substitution:** $F_\\text{A} = 8.988 \\cdot 10^{9}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{C}^2} \\cdot \\dfrac{8.0 \\cdot 10^{-18}\\,\\text{C}^2}{0.0100\\,\\text{m}^2} = 7.19 \\cdot 10^{-6}\\,\\text{N}$, $F_\\text{B} = 8.988 \\cdot 10^{9}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{C}^2} \\cdot \\dfrac{12 \\cdot 10^{-18}\\,\\text{C}^2}{0.0025\\,\\text{m}^2} = 43.14 \\cdot 10^{-6}\\,\\text{N}$ and $F = 7.19\\,\\mu\\text{N} - 43.14\\,\\mu\\text{N} = -35.95\\,\\mu\\text{N}$\n\n**Answer:** $F \\approx 36\\,\\mu\\text{N}$ to the left, towards ball B. Two significant figures, as in the charges.\n\n**Reasonableness:** The force of B is larger, because B is half as far away and its charge is larger: the distance alone makes the force four times as large and the charge one and a half times as large, six times in total. That is why the total force points towards B."
+    },
+    {
+      "id": "polyhiukkanen",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "A dust particle in an electrostatic precipitator",
+      "prompt": "The two parallel plates of an electrostatic precipitator are $8.0\\,\\text{mm}$ apart, and the voltage between them is $6.0\\,\\text{kV}$. A dust particle has received a charge of $50$ elementary charges. How large is the electric force on the particle between the plates?",
+      "answer": 6.008,
+      "unit": "pN",
+      "tolerance": 0.03,
+      "hints": [
+        "The field between the plates is uniform. First calculate the field strength from the voltage and the distance between the plates.",
+        "$E = \\tfrac{U}{d}$ and $F = qE$, where $q = 50e$.",
+        "$F = 50 \\cdot 1.602 \\cdot 10^{-19}\\,\\text{C} \\cdot \\dfrac{6000\\,\\text{V}}{0.0080\\,\\text{m}}$, and finally $1\\,\\text{pN} = 10^{-12}\\,\\text{N}$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.006008,
+          "feedback": "You substituted the distance in millimetres. First convert $8.0\\,\\text{mm} = 8.0 \\cdot 0.001\\,\\text{m} = 0.0080\\,\\text{m}$."
+        },
+        {
+          "value": 0.1202,
+          "feedback": "You calculated the force on one elementary charge. The charge of the particle is $50$ elementary charges, so the force is $50$ times as large."
+        }
+      ],
+      "solution": "**Given:** the distance between the plates $d = 8.0\\,\\text{mm}$, the voltage $U = 6.0\\,\\text{kV}$, the charge $q = 50e$, $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$\n\n**Find:** the electric force $F$ on the particle\n\n**Principle:** Between large parallel plates the field is uniform, so its strength is the voltage divided by the distance between the plates, and the force is the same everywhere between the plates. The charge consists of elementary charges (chapters *Uniform electric field* and *Electric charge and Coulomb's law*).\n\n**Formula:** $E = \\dfrac{U}{d}$ and $F = qE = 50e \\cdot \\dfrac{U}{d}$\n\n**Conversions:** $U = 6.0\\,\\text{kV} = 6.0 \\cdot 1000\\,\\text{V} = 6000\\,\\text{V}$ and $d = 8.0\\,\\text{mm} = 8.0 \\cdot 0.001\\,\\text{m} = 0.0080\\,\\text{m}$. Finally $1\\,\\text{N} = 10^{12}\\,\\text{pN}$.\n\n**Substitution:** $E = \\dfrac{6000\\,\\text{V}}{0.0080\\,\\text{m}} = 7.5 \\cdot 10^{5}\\,\\text{V/m}$ and $F = 50 \\cdot 1.602 \\cdot 10^{-19}\\,\\text{C} \\cdot 7.5 \\cdot 10^{5}\\,\\text{V/m} = 6.008 \\cdot 10^{-12}\\,\\text{N} = 6.0\\,\\text{pN}$\n\n**Answer:** $F \\approx 6.0\\,\\text{pN}$, two significant figures, as in the voltage and the distance.\n\n**Reasonableness:** The field $0.75\\,\\text{MV/m}$ is below the dielectric strength of air, $3\\,\\text{MV/m}$, so the precipitator works without sparking. The force is small, but the mass of a dust particle a micrometre in size is only about $10^{-15}\\,\\text{kg}$, so its weight is about $10^{-14}\\,\\text{N}$, hundreds of times smaller than the electric force. That is why the field steers the particle onto the plate."
+    },
+    {
+      "id": "defibrillaattori",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "The capacitor of a defibrillator",
+      "prompt": "The capacitance of the capacitor of a defibrillator is $140\\,\\mu\\text{F}$. Before a shock the device stores an energy of $200\\,\\text{J}$ in the capacitor. To what voltage must the capacitor be charged?",
+      "answer": 1690,
+      "unit": "V",
+      "tolerance": 0.03,
+      "hints": [
+        "The energy of a capacitor depends on the capacitance and the voltage. Which form of the energy expression is suitable when $C$ and $W$ are known?",
+        "$W = \\tfrac12 CU^2$, so $U = \\sqrt{\\tfrac{2W}{C}}$.",
+        "$U = \\sqrt{\\dfrac{2 \\cdot 200\\,\\text{J}}{140 \\cdot 10^{-6}\\,\\text{F}}}$"
+      ],
+      "mistakes": [
+        {
+          "value": 1195,
+          "feedback": "The factor $2$ is missing from the formula: the energy is $\\tfrac12 CU^2$, so $U = \\sqrt{\\tfrac{2W}{C}}$."
+        },
+        {
+          "value": 2857000,
+          "feedback": "You forgot the square root: $\\tfrac{2W}{C}$ is $U^2$, not $U$."
+        },
+        {
+          "value": 1.69,
+          "feedback": "You substituted the capacitance in microfarads. First convert $140\\,\\mu\\text{F} = 140 \\cdot 10^{-6}\\,\\text{F}$."
+        }
+      ],
+      "solution": "**Given:** the capacitance $C = 140\\,\\mu\\text{F}$, the energy $W = 200\\,\\text{J}$\n\n**Find:** the charging voltage $U$\n\n**Principle:** During charging the voltage grows in the same ratio as the charge, so the energy stored in the capacitor is $\\tfrac12 CU^2$. When the capacitance and the energy are known, the voltage is solved from this expression (chapter *The capacitor and its energy*).\n\n**Formula:** $W = \\tfrac12 CU^2$, so $U = \\sqrt{\\dfrac{2W}{C}}$\n\n**Conversions:** $C = 140\\,\\mu\\text{F} = 140 \\cdot 10^{-6}\\,\\text{F}$. In addition $\\sqrt{\\tfrac{\\text{J}}{\\text{F}}} = \\sqrt{\\tfrac{\\text{J}\\cdot\\text{V}}{\\text{C}}} = \\sqrt{\\text{V}^2} = \\text{V}$.\n\n**Substitution:** $U = \\sqrt{\\dfrac{2 \\cdot 200\\,\\text{J}}{140 \\cdot 10^{-6}\\,\\text{F}}} = \\sqrt{2.857 \\cdot 10^{6}\\,\\text{V}^2} = 1690\\,\\text{V}$\n\n**Answer:** $U \\approx 1.7\\,\\text{kV}$. The values $140\\,\\mu\\text{F}$ and $200\\,\\text{J}$ do not show their precision, so the result is given to two significant figures; the intermediate result $1690\\,\\text{V}$ is accepted.\n\n**Reasonableness:** The charge is $Q = CU = 140 \\cdot 10^{-6}\\,\\text{F} \\cdot 1690\\,\\text{V} \\approx 0.24\\,\\text{C}$, and the check $\\tfrac12 QU = \\tfrac12 \\cdot 0.237\\,\\text{C} \\cdot 1690\\,\\text{V} \\approx 200\\,\\text{J}$ agrees. A large capacitor can keep a dangerous voltage for a long time, so you must never open the device yourself."
+    },
+    {
+      "id": "sahkoauto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "The charging time of an electric car",
+      "prompt": "The energy of an electric car's battery when full is $64\\,\\text{kWh}$. The battery is charged from a charge level of $20\\,\\%$ to $80\\,\\%$ at a three-phase charging station that draws a current of $16\\,\\text{A}$ from each phase conductor. The phase voltage is $230\\,\\text{V}$, and the efficiency of charging is $0.90$. How long does the charging take?",
+      "answer": 3.865,
+      "unit": "h",
+      "tolerance": 0.03,
+      "hints": [
+        "First calculate how much energy must be transferred to the battery: $60\\,\\%$ of the battery's energy.",
+        "A three-phase device draws the power $UI$ from each phase, so the power drawn from the grid is $P = 3UI$. Only the fraction $\\eta$ of it ends up in the battery.",
+        "$t = \\dfrac{0.60 \\cdot 64\\,\\text{kWh}}{0.90 \\cdot 3 \\cdot 230\\,\\text{V} \\cdot 16\\,\\text{A}}$"
+      ],
+      "mistakes": [
+        {
+          "value": 3.478,
+          "feedback": "You forgot the efficiency. More energy must be taken from the grid than is stored in the battery, so the charging takes longer."
+        },
+        {
+          "value": 11.59,
+          "feedback": "You calculated the power of only one phase, $230\\,\\text{V} \\cdot 16\\,\\text{A}$. A three-phase station draws the same current from each of the three phases."
+        },
+        {
+          "value": 3.13,
+          "feedback": "You multiplied by the efficiency the wrong way round. Only $90\\,\\%$ of the power taken from the grid goes into the battery, so the time is longer than without losses."
+        }
+      ],
+      "solution": "**Given:** the energy of the battery $64\\,\\text{kWh}$, the charge level $20\\,\\% \\to 80\\,\\%$, the current $I = 16\\,\\text{A}$ in each phase, $U = 230\\,\\text{V}$, the efficiency $\\eta = 0.90$\n\n**Find:** the charging time $t$\n\n**Principle:** The energy to be transferred to the battery is $60\\,\\%$ of the battery's energy. A three-phase station draws the same current from each phase conductor, so the power taken from the grid is three times the power of one phase. The efficiency tells what fraction of the energy taken from the grid is stored in the battery. The power is assumed constant, which suits the steady part of the charging (chapter *Applied chapter: the electric car and the home electrical system*).\n\n**Formula:** $W_\\text{battery} = 0.60 \\cdot 64\\,\\text{kWh}$, $P = 3UI$ and $t = \\dfrac{W_\\text{battery}}{\\eta P}$\n\n**Conversions:** $P = 3 \\cdot 230\\,\\text{V} \\cdot 16\\,\\text{A} = 11\\,040\\,\\text{W} = 11.04\\,\\text{kW}$, because $1\\,\\text{kW} = 1000\\,\\text{W}$. When the energy is in kilowatt-hours and the power in kilowatts, the time comes out in hours.\n\n**Substitution:** $W_\\text{battery} = 0.60 \\cdot 64\\,\\text{kWh} = 38.4\\,\\text{kWh}$ and $t = \\dfrac{38.4\\,\\text{kWh}}{0.90 \\cdot 11.04\\,\\text{kW}} = \\dfrac{38.4\\,\\text{kWh}}{9.936\\,\\text{kW}} = 3.86\\,\\text{h}$\n\n**Answer:** $t \\approx 3.9\\,\\text{h}$, or about $3\\,\\text{h}\\;50\\,\\text{min}$, two significant figures, as in the current $16\\,\\text{A}$ and the efficiency $0.90$.\n\n**Reasonableness:** $\\tfrac{38.4\\,\\text{kWh}}{0.90} \\approx 42.7\\,\\text{kWh}$ is taken from the grid, of which about $4.3\\,\\text{kWh}$ turns into internal energy of the charger and the cables. From an ordinary socket with a current of $8\\,\\text{A}$ the same charge would take over $20\\,\\text{h}$, so a three-phase station suits overnight charging."
+    },
+    {
+      "id": "lisaa",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "At the end of the lesson there are matriculation-exam-style tasks. Write the solution in your notebook or on the computer as in the exam: the diagram or circuit first, then the principle and the equation in symbols. Only then assess the solution with the model answer and the marking scheme."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "A charged dust particle is halfway between two large parallel plates of an air purifier. The air flow carries it close to the negative plate. How does the electric force on the particle change?",
+      "choices": [
+        {
+          "text": "The force increases, because the charges of the plate are now closer.",
+          "feedback": "Each large plate gives a field between the plates whose magnitude does not depend on the distance from the plate. Approaching the negative plate therefore changes neither the field nor the force: between the plates the field is uniform. Review in the chapter *Uniform electric field*."
+        },
+        {
+          "text": "The force decreases, because the positive plate is now further away.",
+          "feedback": "Each plate gives a field between the plates that does not depend on the distance, and the fields add up. The field and the force are the same in the whole gap. Review in the chapter *Uniform electric field*."
+        },
+        {
+          "text": "It stays the same, because between the plates the field is uniform.",
+          "feedback": "Correct. Between the plates $E = \\tfrac{U}{d}$ everywhere, so $F = qE$ is the same as long as the particle is not near the edges of the plates. Review if needed in the chapter *Uniform electric field*.",
+          "correct": true
+        }
+      ],
+      "practice": "Review how a uniform field arises and the effect of the edges of the plates in the chapter [*Uniform electric field*](fy6-11.html)."
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculation",
+      "prompt": "The capacitance of a capacitor is $2.2\\,\\mu\\text{F}$, and its dielectric is a paper layer $0.020\\,\\text{mm}$ thick whose dielectric strength is $16\\,\\text{MV/m}$. How much energy at most can be stored in the capacitor without breakdown?",
+      "answer": 112.6,
+      "unit": "mJ",
+      "tolerance": 0.03,
+      "hints": [
+        "The dielectric withstands only a certain field. First calculate the largest voltage the paper layer can withstand.",
+        "$U_\\text{max} = E_\\text{max}d$ and $W = \\tfrac12 CU_\\text{max}^2$.",
+        "$U_\\text{max} = 16 \\cdot 10^{6}\\,\\tfrac{\\text{V}}{\\text{m}} \\cdot 0.020 \\cdot 10^{-3}\\,\\text{m}$"
+      ],
+      "mistakes": [
+        {
+          "value": 225.3,
+          "feedback": "The energy is $\\tfrac12 CU^2$, not $CU^2$: during charging the voltage grows from zero, so the average voltage is half of the final voltage."
+        },
+        {
+          "value": 0.352,
+          "feedback": "You calculated $\\tfrac12 CU$, which is half of the charge, not the energy. The energy is $\\tfrac12 CU^2$."
+        }
+      ],
+      "practice": "Review dielectric strength and the energy of a capacitor in the chapter [*The capacitor and its energy*](fy6-13.html).",
+      "solution": "**Given:** the capacitance $C = 2.2\\,\\mu\\text{F}$, the thickness of the dielectric $d = 0.020\\,\\text{mm}$, the dielectric strength $E_\\text{max} = 16\\,\\text{MV/m}$\n\n**Find:** the largest energy that can be stored, $W_\\text{max}$\n\n**Principle:** The field between the plates is $E = \\tfrac{U}{d}$. Breakdown does not occur when the field is at most the dielectric strength of the dielectric, so the largest allowed voltage is $E_\\text{max}d$. The energy grows with the square of the voltage, so it is largest at this voltage (chapter *The capacitor and its energy*).\n\n**Formula:** $U_\\text{max} = E_\\text{max}d$ and $W_\\text{max} = \\tfrac12 CU_\\text{max}^2$\n\n**Conversions:** $d = 0.020\\,\\text{mm} = 0.020 \\cdot 10^{-3}\\,\\text{m} = 2.0 \\cdot 10^{-5}\\,\\text{m}$, $E_\\text{max} = 16 \\cdot 10^{6}\\,\\text{V/m}$ and $C = 2.2 \\cdot 10^{-6}\\,\\text{F}$. Finally $1\\,\\text{J} = 1000\\,\\text{mJ}$.\n\n**Substitution:** $U_\\text{max} = 16 \\cdot 10^{6}\\,\\tfrac{\\text{V}}{\\text{m}} \\cdot 2.0 \\cdot 10^{-5}\\,\\text{m} = 320\\,\\text{V}$ and $W_\\text{max} = \\tfrac12 \\cdot 2.2 \\cdot 10^{-6}\\,\\text{F} \\cdot (320\\,\\text{V})^2 = 0.1126\\,\\text{J}$\n\n**Answer:** $W_\\text{max} \\approx 0.11\\,\\text{J}$, or about $110\\,\\text{mJ}$, two significant figures, as in the data.\n\n**Reasonableness:** In practice the largest allowed voltage marked on a capacitor is lower than $320\\,\\text{V}$, because the dielectric may have weak spots. The energy is small, but a $320\\,\\text{V}$ capacitor can still give a painful shock."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain",
+      "prompt": "A balloon rubbed on a woollen jumper sticks to a wall, although the wall has no net charge. Explain with the movement of charges and Coulomb's law why the wall attracts the balloon. Also say where the part of opposite sign of the charge created by rubbing went.",
+      "criteria": [
+        "The answer states that during rubbing electrons moved from the wool to the balloon, so the balloon is negative and the woollen jumper equally positive: charge is conserved.",
+        "The answer explains polarisation: the positive parts of the wall's molecules turn or move slightly towards the balloon and the negative parts away, although the wall stays neutral.",
+        "The answer justifies with Coulomb's law that the attraction of the closer positive parts is larger than the repulsion of the more distant negative parts, because the force decreases with the square of the distance.",
+        "The answer states that the net force pulls the balloon towards the wall, and friction and the normal force of the wall hold the balloon in place against its weight."
+      ],
+      "model": "When the balloon is rubbed, electrons move from the wool onto the surface of the balloon. The balloon gets a negative charge, and an equal positive charge is left on the woollen jumper, because charge is conserved: it only moves from one object to another. The wall is an insulator, so its electrons cannot move freely, but the field of the balloon shifts the charges of each molecule slightly. The molecules become polarised: their positive parts are slightly closer to the balloon and the negative parts slightly further away. The wall as a whole stays neutral. By Coulomb's law the force is inversely proportional to the square of the distance, so the attraction of the closer positive parts is larger than the repulsion of the more distant negative parts. The net force pulls the balloon towards the wall. The normal force of the wall and friction hold the balloon in place until the charge gradually leaks away into the humid air.",
+      "practice": "Review the conservation of charge, induction and polarisation in the chapter [*Electric charge and Coulomb's law*](fy6-10.html)."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally two quick questions. Answer on your own first and only then open the answer."
+    }
+  ]
+}

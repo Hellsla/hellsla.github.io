@@ -326,7 +326,7 @@ The electric field strength at a point where an electric force $\overline{F}$ ac
 where $\overline{E}$ is the electric field strength ($\text{N/C}$), $\overline{F}$ the electric force ($\text{N}$) and $q$ the test charge ($\text{C}$). When the field is known, the force on any charge is obtained by multiplying: $\overline{F} = q\overline{E}$. If $q$ is negative, the force points against the field.
 
 ### The field from the voltage of the plates
-The strength of a uniform field can be calculated from the voltage between the plates. When a positive charge $q$ moves from the positive plate to the negative one, the same force $F = qE$ acts on it the whole way, and the field does the work $W = Fd = qEd$. According to the chapter *Electric circuit, current and voltage*, voltage tells the energy per unit charge, so the same work is also $W = qU$. When these are set equal, the charge cancels, and the strength of a uniform field is
+The strength of a uniform field can be calculated from the voltage between the plates. When a positive charge $q$ moves from the positive plate to the negative one, the same force $F = qE$ acts on it the whole way, and the field does the work $W = Fd = qEd$. According to the chapter *Circuit, electric current and voltage*, voltage tells the energy per unit charge, so the same work is also $W = qU$. When these are set equal, the charge cancels, and the strength of a uniform field is
 ```latex
 E = \frac{U}{d}
 ```

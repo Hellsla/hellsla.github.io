@@ -1,0 +1,847 @@
+{
+  "intro": "Six matriculation-exam-style tasks bring together the charges, the electric field, potential, the capacitor, semiconductors and electrical safety of the lesson. Solve them as in the exam: draw a free-body diagram or a circuit where needed, justify which principle you use and why it applies, solve for the asked quantity before substituting numbers, and assess whether the result is reasonable. Open the model answer and the marking scheme only when your solution is ready.",
+  "tasks": [
+    {
+      "id": "fy9-sahkokentta-s1",
+      "title": "Two charged balls on threads",
+      "source": "example",
+      "source_note": "The experiment and its numbers are an invented example. The orders of magnitude correspond to a school electrostatics demonstration.",
+      "skills": [
+        "fy6-10",
+        "fy4-5",
+        "fy4-3"
+      ],
+      "text": "In a physics lesson two identical polystyrene balls coated with graphite were hung from the same hook on thin insulating threads. The balls were charged by touching them at the same time with a charged rod, so they received equal charges of the same sign. The balls moved apart and came to rest so that the threads formed a symmetrical V.\n\n- the mass of each ball $0.50\\,\\text{g}$\n- the length of the thread from the hook to the centre of the ball $40.0\\,\\text{cm}$\n- the distance between the centres of the balls at rest $8.0\\,\\text{cm}$\n\nThe balls are small compared with the distance between them, and the air is dry.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 5,
+          "text": "Draw the free-body diagram of one ball. How large is the electric force on the balls?",
+          "answer": {
+            "value": 0.493,
+            "unit": "mN",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "fbd_forces",
+              "points": 1,
+              "detail": "On the ball the weight $\\overline{G}$ down, the tension $\\overline{T}$ of the thread along the thread towards the hook and the electric force $\\overline{F}_\\text{s}$ of the other ball horizontally away from the other ball."
+            },
+            {
+              "text": "Justifies that the ball is at rest, so the sum of the forces is zero: the horizontal component of the force of the thread cancels the electric force and the vertical component cancels the weight.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\tan\\alpha = \\dfrac{F_\\text{s}}{mg}$ and $\\sin\\alpha = \\dfrac{r/2}{L}$, so $F_\\text{s} = mg\\tan\\alpha$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\sin\\alpha = \\tfrac{4.0\\,\\text{cm}}{40.0\\,\\text{cm}} = 0.100$, $\\alpha \\approx 5.74^\\circ$, $F_\\text{s} = 4.905\\,\\text{mN} \\cdot 0.1005 \\approx 0.493\\,\\text{mN}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$F_\\text{s} \\approx 0.49\\,\\text{mN}$ to two significant figures, as the distance $8.0\\,\\text{cm}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "How large is the charge of each ball? How many electrons have moved if the balls are positive?",
+          "answer": {
+            "value": 18.74,
+            "unit": "nC",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Coulomb's law for equal charges: $F_\\text{s} = k\\dfrac{q^2}{r^2}$, so $q = r\\sqrt{\\dfrac{F_\\text{s}}{k}}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$F_\\text{s} = 4.93 \\cdot 10^{-4}\\,\\text{N}$ and $k = 8.988 \\cdot 10^{9}\\,\\text{N}\\cdot\\text{m}^2/\\text{C}^2$, so $q = 0.080\\,\\text{m} \\cdot \\sqrt{F_\\text{s}/k} \\approx 1.87 \\cdot 10^{-8}\\,\\text{C}$ and $n = \\tfrac{q}{e} \\approx 1.2 \\cdot 10^{11}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$q \\approx 19\\,\\text{nC}$ to two significant figures; electrons have moved away from the balls"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Tens of nanocoulombs is the order of magnitude of the charge obtained by rubbing, and $10^{11}$ electrons are only a small fraction of the electrons of the ball."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "One ball is touched for a moment with a third identical, uncharged ball, which is then taken away. How large would the electric force on the balls be if their distance were still $8.0\\,\\text{cm}$? Are the forces on the balls equal?",
+          "answer": {
+            "value": 0.2465,
+            "unit": "mN",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Justifies with the conservation of charge that identical balls share the charge equally: the charge of the touched ball is $\\tfrac{q}{2}$.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$F = k\\dfrac{q \\cdot \\tfrac{q}{2}}{r^2} = \\tfrac12 \\cdot 0.493\\,\\text{mN} \\approx 0.25\\,\\text{mN}$"
+            },
+            {
+              "text": "Justifies that the forces are force and counterforce, so an equal force acts on each ball, although the charges are different.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 3,
+          "text": "The balls come to a new position of rest. How large is the distance between the centres of the balls now?",
+          "answer": {
+            "value": 6.35,
+            "unit": "cm",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "The angle is small, so $\\tan\\alpha \\approx \\sin\\alpha = \\tfrac{r}{2L}$; justifies the assumption."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$k\\dfrac{q \\cdot q/2}{r^2} = mg\\dfrac{r}{2L}$, so $r^3 = \\tfrac12 r_0^3$ and $r = \\dfrac{r_0}{\\sqrt[3]{2}}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$r = \\dfrac{8.0\\,\\text{cm}}{1.26} \\approx 6.3\\,\\text{cm}$"
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy6-10",
+        "math": "fy6-10",
+        "transfer": "fy4-5"
+      }
+    },
+    {
+      "id": "fy9-sahkokentta-s2",
+      "title": "A demonstration capacitor and a glass plate",
+      "source": "example",
+      "source_note": "The capacitor and its numbers are an invented example. The values of the dielectrics are from the table of the chapter *The capacitor and its energy*.",
+      "skills": [
+        "fy6-13",
+        "fy6-11",
+        "fy6-12"
+      ],
+      "text": "The demonstration capacitor of the physics classroom has two square aluminium plates with a side of $25.0\\,\\text{cm}$. The plates are parallel, $3.00\\,\\text{mm}$ apart, and there is air between them. The capacitor is charged with a high-voltage source to a voltage of $4.50\\,\\text{kV}$.\n\n| Dielectric | $\\varepsilon_\\text{r}$ | $E_\\text{max}\\ (\\text{MV/m})$ |\n|---|---|---|\n| air | $1.0$ | $3$ |\n| glass | $5.6$ | $14$ |\n\nThe electric constant is $\\varepsilon_0 = 8.854 \\cdot 10^{-12}\\,\\text{F/m}$. The effect of the edges of the plates is not taken into account.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "How large is the capacitance of the capacitor? How large is the charge on the plates?",
+          "answer": [
+            {
+              "name": "C",
+              "value": 184.5,
+              "unit": "pF",
+              "tolerance": 0.02
+            },
+            {
+              "name": "Q",
+              "value": 0.8301,
+              "unit": "µC",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$C = \\dfrac{\\varepsilon_0\\varepsilon_\\text{r}A}{d}$ and $Q = CU$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$A = 0.250\\,\\text{m} \\cdot 0.250\\,\\text{m} = 0.0625\\,\\text{m}^2$, $C = \\dfrac{8.854 \\cdot 10^{-12}\\,\\text{F/m} \\cdot 0.0625\\,\\text{m}^2}{0.00300\\,\\text{m}} \\approx 1.84 \\cdot 10^{-10}\\,\\text{F}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$Q = 1.845 \\cdot 10^{-10}\\,\\text{F} \\cdot 4500\\,\\text{V} \\approx 8.30 \\cdot 10^{-7}\\,\\text{C}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$C \\approx 184\\,\\text{pF}$ and $Q \\approx 0.830\\,\\mu\\text{C}$ to three significant figures, as the data"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "How much energy has been stored in the capacitor? Assess whether the air gap is safe from breakdown.",
+          "answer": [
+            {
+              "name": "W",
+              "value": 1.868,
+              "unit": "mJ",
+              "tolerance": 0.02
+            },
+            {
+              "name": "E",
+              "value": 1.5,
+              "unit": "MV/m",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$W = \\tfrac12 CU^2$ and $E = \\dfrac{U}{d}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$W = \\tfrac12 \\cdot 1.845 \\cdot 10^{-10}\\,\\text{F} \\cdot (4500\\,\\text{V})^2 \\approx 1.87\\,\\text{mJ}$ and $E = \\tfrac{4500\\,\\text{V}}{0.00300\\,\\text{m}} = 1.50\\,\\text{MV/m}$"
+            },
+            {
+              "text": "Compares with the dielectric strength of air: $1.50\\,\\text{MV/m}$ is half of the value $3\\,\\text{MV/m}$, so breakdown would occur only at a voltage of about $9\\,\\text{kV}$.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$W \\approx 1.87\\,\\text{mJ}$ and $E \\approx 1.50\\,\\text{MV/m}$ to three significant figures"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "The capacitor is disconnected from the source, and a glass plate $3.00\\,\\text{mm}$ thick, which fills the gap completely, is pushed between the plates. How large is the voltage between the plates now? How large is the energy of the capacitor?",
+          "answer": [
+            {
+              "name": "U",
+              "value": 803.6,
+              "unit": "V",
+              "tolerance": 0.02
+            },
+            {
+              "name": "W",
+              "value": 0.3335,
+              "unit": "mJ",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "text": "Justifies that the charge $Q$ of a disconnected capacitor does not change, but the capacitance becomes $\\varepsilon_\\text{r}$ times as large.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$U' = \\dfrac{Q}{\\varepsilon_\\text{r}C} = \\dfrac{U}{\\varepsilon_\\text{r}}$ and $W' = \\tfrac12 QU'$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$U' = \\tfrac{4500\\,\\text{V}}{5.6} \\approx 804\\,\\text{V}$ and $W' = \\tfrac12 \\cdot 8.30 \\cdot 10^{-7}\\,\\text{C} \\cdot 804\\,\\text{V} \\approx 0.334\\,\\text{mJ}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$U' \\approx 8.0 \\cdot 10^{2}\\,\\text{V}$ and $W' \\approx 0.33\\,\\text{mJ}$ to two significant figures, as $\\varepsilon_\\text{r} = 5.6$; the energy has decreased by a factor of $5.6$"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Where has the energy of part c gone? A student says: \"The source has been disconnected, so the plates can now be touched with bare hands.\" Assess the claim.",
+          "criteria": [
+            {
+              "text": "Explains that the field of the plates pulls the polarising glass plate into the gap and does work on it; the energy goes to the pushing hand or into kinetic and internal energy of the glass.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Justifies that a disconnected capacitor keeps its charge, so there is still a voltage of hundreds of volts between the plates.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The claim is wrong: the capacitor is first discharged, for example with an insulated discharge rod or through a resistor, before the plates are touched."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy6-13",
+        "math": "fy6-13",
+        "transfer": "fy6-11",
+        "communication": "fy6-13"
+      }
+    },
+    {
+      "id": "fy9-sahkokentta-s3",
+      "title": "Plate separation and capacitance",
+      "source": "example",
+      "source_note": "The data are an invented example: the capacitances have been calculated from the parallel-plate capacitor model, and the capacitance of the leads and variation like that of measurements have been added to them.",
+      "skills": [
+        "fy6-13",
+        "fy1-4",
+        "fy1-3"
+      ],
+      "text": "Students investigated how the capacitance of a parallel-plate capacitor depends on the distance between the plates. Two square aluminium plates with a side of $20.0\\,\\text{cm}$ were placed facing each other, and plastic spacers were put between them. There was air between the plates. The plates were connected with leads to a multimeter that measures capacitance.\n\n| $d\\ (\\text{mm})$ | $C\\ (\\text{pF})$ |\n|:---:|:---:|\n| $1.0$ | $375$ |\n| $1.5$ | $260$ |\n| $2.0$ | $199$ |\n| $3.0$ | $140$ |\n| $4.0$ | $109$ |\n| $5.0$ | $93$ |\n| $6.0$ | $82$ |",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 4,
+          "text": "Present the capacitance as a function of the distance between the plates as a graph. Use the graph to justify whether the capacitance is inversely proportional to the distance between the plates.",
+          "criteria": [
+            {
+              "key": "graph_axes",
+              "points": 1,
+              "detail": "On the horizontal axis $d\\ (\\text{mm})$, on the vertical axis $C\\ (\\text{pF})$."
+            },
+            {
+              "key": "graph_points",
+              "points": 1
+            },
+            {
+              "text": "Justifies from the data: when the distance doubles from $1.0\\,\\text{mm}$ to $2.0\\,\\text{mm}$ or from $3.0\\,\\text{mm}$ to $6.0\\,\\text{mm}$, the capacitance is not halved ($375 \\to 199$, $140 \\to 82$), and instead of zero the curve seems to approach a value of about $20\\,\\text{pF}$, so plain inverse proportionality does not fit.",
+              "tag": "graph",
+              "points": 2
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "graph",
+          "points": 6,
+          "text": "Form from the data a quantity as a function of which the graph of the capacitance is a straight line. Justify your choice. Present the graph and fit a straight line to the points.",
+          "criteria": [
+            {
+              "text": "Justifies the linearisation: for a parallel-plate capacitor $C = \\varepsilon_0 A \\cdot \\tfrac{1}{d}$, so $C$ is directly proportional to the quantity $\\tfrac{1}{d}$; the capacitance of the leads and the meter themselves adds a constant term.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "text": "Adds a correctly calculated column of $\\tfrac{1}{d}$, with its unit, to the table.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "graph_axes",
+              "points": 1,
+              "detail": "On the horizontal axis $\\tfrac{1}{d}\\ (\\tfrac{1}{\\text{mm}})$, on the vertical axis $C\\ (\\text{pF})$."
+            },
+            {
+              "key": "graph_fit",
+              "points": 2,
+              "detail": "The fitted line passes through the points and crosses the vertical axis at about $22\\,\\text{pF}$, not at the origin."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 5,
+          "text": "Determine the slope of the line. Use it to determine the electric constant $\\varepsilon_0$ and compare the result with the table value $8.854 \\cdot 10^{-12}\\,\\text{F/m}$.",
+          "answer": {
+            "value": 8.844,
+            "unit": "pF/m",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The slope is read from two points of the line far apart, for example $(0.20; 93)$ and $(1.00; 376)$: $k \\approx 354\\,\\text{pF}\\cdot\\text{mm}$."
+            },
+            {
+              "text": "Interprets the slope: according to the model $k = \\varepsilon_0 A$ when there is air between the plates ($\\varepsilon_\\text{r} \\approx 1.0$).",
+              "tag": "graph",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\varepsilon_0 = \\dfrac{k}{A}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\varepsilon_0 = \\dfrac{354 \\cdot 10^{-12}\\,\\text{F} \\cdot 10^{-3}\\,\\text{m}}{0.0400\\,\\text{m}^2} \\approx 8.84 \\cdot 10^{-12}\\,\\text{F/m}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\varepsilon_0 \\approx (8.8 \\pm 0.3) \\cdot 10^{-12}\\,\\text{F/m}$ to two significant figures, because the thickness of the spacers is uncertain by a few per cent; the intermediate result $8.84 \\cdot 10^{-12}\\,\\text{F/m}$ is accepted"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 5,
+          "text": "What is the value at which the line crosses the vertical axis, and what does it mean in this measurement? Assess at which distances the parallel-plate capacitor model no longer holds.",
+          "answer": {
+            "value": 22.2,
+            "unit": "pF",
+            "tolerance": 0.15
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The extension of the line crosses the vertical axis at about $22\\,\\text{pF}$, when $\\tfrac{1}{d} \\to 0$."
+            },
+            {
+              "text": "Interprets the constant term: it is the capacitance of the leads and the meter themselves, which is measured in addition to the capacitance of the plates; the meter would show it even if the plates were very far apart.",
+              "tag": "graph",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Using two points of the line $b = 93\\,\\text{pF} - 354\\,\\text{pF}\\cdot\\text{mm} \\cdot 0.20\\,\\tfrac{1}{\\text{mm}} \\approx 22\\,\\text{pF}$"
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "The model requires a uniform field: the distance must be small compared with the side of the plate, $200\\,\\text{mm}$. When $d$ increases, the field at the edges increases the capacitance above the value of the model."
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "At the smallest distances the uncertainty of the thickness of the spacers and the bending of the plates, for example $\\pm 0.1\\,\\text{mm}$, is $10\\,\\%$ of the distance $1.0\\,\\text{mm}$; that is why the slope is best determined from the whole line."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy1-4",
+        "concept": "fy6-13",
+        "math": "fy6-13",
+        "transfer": "fy6-13",
+        "experiment": "fy1-3"
+      }
+    },
+    {
+      "id": "fy9-sahkokentta-s4",
+      "title": "A bird, a fishing rod and a fallen conductor",
+      "source": "example",
+      "source_note": "The situations are invented examples. The resistance and the current of the line are of the typical order of magnitude of a medium-voltage network.",
+      "skills": [
+        "fy6-15",
+        "fy6-12",
+        "fy6-13"
+      ],
+      "text": "A $20\\,\\text{kV}$ medium-voltage line runs along the shore of a lake; its conductors are bare aluminium cables. The nominal voltage $20\\,\\text{kV}$ is the voltage between the phase conductors, so the voltage of each conductor relative to earth is about $12\\,\\text{kV}$. A current of $100\\,\\text{A}$ flows in the conductor, and the resistance of the conductor is $0.30\\,\\Omega$ per kilometre. The dielectric strength of air is about $3\\,\\text{MV/m}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 5,
+          "text": "A crow sits on a conductor. A student says: \"The bird is safe because its feet are dry and insulate.\" Assess the claim.",
+          "criteria": [
+            {
+              "text": "Explains that a current flows through the body only if there is a voltage, that is, a potential difference, between two points of the body.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Calculates or estimates the voltage between the bird's feet: over a distance of about $5\\,\\text{cm}$, $U = RI = 0.30\\,\\tfrac{\\Omega}{\\text{km}} \\cdot 0.05 \\cdot 10^{-3}\\,\\text{km} \\cdot 100\\,\\text{A} \\approx 1.5\\,\\text{mV}$.",
+              "tag": "math",
+              "points": 2
+            },
+            {
+              "text": "States that the potential of the bird is almost the same as that of the conductor, about $12\\,\\text{kV}$ relative to earth, but this is not dangerous, because the bird does not connect the conductor to earth or to another conductor.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The claim is wrong in its justification: the bird is safe because its feet are at almost the same potential, not because the feet would insulate."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 5,
+          "text": "An angler casts with a carbon-fibre rod under the line. Explain why he can get an electric shock although the rod does not touch the conductor. Estimate the smallest air gap that can break down.",
+          "criteria": [
+            {
+              "text": "Explains that carbon fibre conducts electricity, so the tip of the rod is almost at earth potential when the angler stands on the ground; the whole voltage between the conductor and earth is then across the air gap.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Estimates with the uniform field model $d = \\tfrac{U}{E_\\text{max}} = \\tfrac{12 \\cdot 10^{3}\\,\\text{V}}{3 \\cdot 10^{6}\\,\\text{V/m}} \\approx 4\\,\\text{mm}$, using as the voltage the $12\\,\\text{kV}$ between the conductor and earth and not the $20\\,\\text{kV}$ between the phase conductors.",
+              "tag": "math",
+              "points": 2
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "The estimate is a lower limit: near a thin conductor the field is stronger than $\\tfrac{U}{d}$, and humid air and dirt weaken the insulation, so an arc can strike across a clearly longer gap too."
+            },
+            {
+              "text": "Explains the consequence: after the breakdown the current flows through the arc, the rod and the angler to earth, and with the resistance of the body the voltage of $12\\,\\text{kV}$ gives a current of the order of amperes.",
+              "tag": "transfer",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 5,
+          "text": "A storm breaks the conductor, and it falls to the ground on the shore meadow. Why must you not go close, and how do you leave the area? Why is a cow in the meadow in greater danger than a person?",
+          "criteria": [
+            {
+              "text": "Explains that the current spreads into the ground from the point of contact, and the potential of the ground decreases as the distance increases, so there is a voltage between different points.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Explains step voltage: the voltage between the feet is the larger, the closer you are to the point of contact and the longer the step is.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Gives correct instructions: leave with short steps with the feet together or by jumping with both feet together, do not approach the conductor, and call the emergency number $112$ to report the damage.",
+              "tag": "communication",
+              "points": 2
+            },
+            {
+              "text": "Justifies that the front and hind legs of a cow are far apart, so the voltage between them is large, and the current flows through the chest and the heart.",
+              "tag": "transfer",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy6-15",
+        "math": "fy6-12",
+        "transfer": "fy6-13",
+        "communication": "fy6-15"
+      }
+    },
+    {
+      "id": "fy9-sahkokentta-s5",
+      "title": "The efficiency of a solar panel",
+      "source": "example",
+      "source_note": "The report and its numbers are an invented example. The measured values have been calculated from a model of a panel of ten silicon cells.",
+      "skills": [
+        "fy6-14",
+        "fy1-8",
+        "fy1-3"
+      ],
+      "text": "A student measured the efficiency of a small solar panel. An extract from the report:\n\n> I took the panel to a sunny yard at noon in May. With a multimeter I measured the open-circuit voltage $6.10\\,\\text{V}$ and the short-circuit current $210\\,\\text{mA}$. I also connected different resistors to the panel in turn and measured the voltage and the current:\n>\n> | $R\\ (\\Omega)$ | $U\\ (\\text{V})$ | $I\\ (\\text{mA})$ |\n> |---|---|---|\n> | $10$ | $2.10$ | $210$ |\n> | $20$ | $4.17$ | $209$ |\n> | $25$ | $4.97$ | $199$ |\n> | $30$ | $5.36$ | $179$ |\n> | $40$ | $5.67$ | $142$ |\n> | $60$ | $5.86$ | $98$ |\n> | $100$ | $5.97$ | $60$ |\n>\n> The power of the panel is $P = UI = 6.10\\,\\text{V} \\cdot 0.210\\,\\text{A} = 1.281\\,\\text{W}$. The area of the panel is $60\\,\\text{cm}^2$, and on a sunny day the light intensity is $1000\\,\\text{W/m}^2$, so the efficiency is $21.35\\,\\%$. The panel is better than the $15\\,\\%$ stated by the manufacturer.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 5,
+          "text": "Determine from the table of the report the largest power of the panel and the corresponding efficiency, when the light intensity is the one the report assumes.",
+          "answer": [
+            {
+              "name": "P",
+              "value": 0.989,
+              "unit": "W",
+              "tolerance": 0.02
+            },
+            {
+              "name": "eta",
+              "value": 16.48,
+              "unit": "%",
+              "tolerance": 0.04
+            }
+          ],
+          "criteria": [
+            {
+              "text": "Justifies that the power of the panel at each load is the product of the voltage and the current at the same moment, and the largest power is found among these products.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$P = UI$ and $\\eta = \\dfrac{P}{GA}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "The powers are $0.44$, $0.87$, $0.99$, $0.96$, $0.80$, $0.57$ and $0.36\\,\\text{W}$; the largest is $4.97\\,\\text{V} \\cdot 0.199\\,\\text{A} \\approx 0.989\\,\\text{W}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\eta = \\dfrac{0.989\\,\\text{W}}{1000\\,\\tfrac{\\text{W}}{\\text{m}^2} \\cdot 0.0060\\,\\text{m}^2} \\approx 0.165$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$P_\\text{max} \\approx 0.99\\,\\text{W}$ and $\\eta \\approx 16\\,\\%$, two significant figures, as in the area $60\\,\\text{cm}^2$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 5,
+          "text": "Assess the conclusion of the report and the reliability of the measurement. Name the shortcomings of the report and justify them.",
+          "criteria": [
+            {
+              "key": "error_sources",
+              "points": 2,
+              "detail": "The main reason is a systematic error: the open-circuit voltage and the short-circuit current do not occur at the same time, so $U_\\text{oc}I_\\text{sc}$ is larger than any real power of the panel; the largest power in the table is $0.99\\,\\text{W}$."
+            },
+            {
+              "text": "Justifies that the light intensity was not measured: $1000\\,\\text{W/m}^2$ is an assumption, and the real value depends on the height of the sun, the angle of the panel and clouds, so the efficiency may be different.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "The report lacks uncertainty: $21.35\\,\\%$ gives too many figures, when the light intensity is estimated and the area is given to two figures."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The conclusion is wrong: the correctly calculated efficiency, about $16\\,\\%$, agrees with the manufacturer's value $15\\,\\%$ within the precision of the measurements."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 5,
+          "text": "Design an improved experiment that gives the efficiency of the panel reliably. Say what is measured, what is kept constant and how the result is determined.",
+          "criteria": [
+            {
+              "text": "Measures the light intensity with an irradiance meter in the plane of the panel at the same time as the electrical quantities, and keeps the panel perpendicular to the rays of the sun.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "Measures the voltage and the current with many loads, for example with a variable resistor, especially near the power peak, and repeats the series; the light intensity and the temperature of the panel stay as constant as possible.",
+              "tag": "experiment",
+              "points": 2
+            },
+            {
+              "text": "Determines the largest power from a graph: plots the power $P = UI$ as a function of the voltage and reads the peak, or plots the $(U, I)$ curve and finds the largest rectangle.",
+              "tag": "graph",
+              "points": 1
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Estimates the uncertainty of the efficiency from the uncertainties of the light intensity, the area and the power, and compares the result with the manufacturer's value with its uncertainties."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy6-14",
+        "math": "fy6-14",
+        "experiment": "fy1-8",
+        "graph": "fy6-14",
+        "communication": "fy1-8"
+      }
+    },
+    {
+      "id": "fy9-sahkokentta-s6",
+      "title": "The ion thruster of a satellite",
+      "source": "example",
+      "source_note": "The satellite and the numbers of the thruster are an invented example. The orders of magnitude correspond to real ion thrusters that use xenon.",
+      "skills": [
+        "fy6-12",
+        "fy6-11",
+        "fy4-9",
+        "fy4-4"
+      ],
+      "text": "A communications satellite is raised to a higher orbit with an ion thruster. In the thruster xenon atoms are made into positive ions $\\text{Xe}^+$, whose charge is $+e$. The ions start almost from rest, accelerate in the electric field between two metal grids and fly out into space. Finally the ion beam is neutralised with electrons, so the satellite does not become charged.\n\n- the voltage between the grids $1.10\\,\\text{kV}$, the distance between the grids $1.0\\,\\text{mm}$\n- the current of the ion beam $1.60\\,\\text{A}$\n- the mass of a xenon ion $2.180 \\cdot 10^{-25}\\,\\text{kg}$, the elementary charge $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$\n- the mass of the satellite $650\\,\\text{kg}$, the electric power of the solar panels $2.5\\,\\text{kW}$",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "At what speed do the ions leave the thruster? How strong is the electric field between the grids?",
+          "answer": {
+            "value": 40.21,
+            "unit": "km/s",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Justifies with the energy principle: only the electric force does work, so the decrease $eU$ in the potential energy of the ion turns into kinetic energy.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\tfrac12 mv^2 = eU$, so $v = \\sqrt{\\dfrac{2eU}{m}}$, and $E = \\dfrac{U}{d}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$v = \\sqrt{\\dfrac{2 \\cdot 1.602 \\cdot 10^{-19}\\,\\text{C} \\cdot 1100\\,\\text{V}}{2.180 \\cdot 10^{-25}\\,\\text{kg}}} \\approx 4.02 \\cdot 10^{4}\\,\\text{m/s}$ and $E = 1.1\\,\\text{MV/m}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v \\approx 40.2\\,\\text{km/s}$ to three significant figures, as the voltage $1.10\\,\\text{kV}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "How large a thrust does the ion beam give the satellite?",
+          "answer": {
+            "value": 87.54,
+            "unit": "mN",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Justifies with the impulse principle: the change in momentum of the ions leaving each second is given by the force of the thruster, and the counterforce pushes the satellite.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Ions per second $N = \\dfrac{I}{e}$, mass flow rate $\\dfrac{\\Delta m}{\\Delta t} = N m$ and $F = \\dfrac{\\Delta m}{\\Delta t}\\,v$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$N = \\tfrac{1.60\\,\\text{A}}{1.602 \\cdot 10^{-19}\\,\\text{C}} \\approx 9.99 \\cdot 10^{18}\\,\\tfrac{1}{\\text{s}}$, $\\tfrac{\\Delta m}{\\Delta t} \\approx 2.18 \\cdot 10^{-6}\\,\\text{kg/s}$, $F \\approx 0.0875\\,\\text{N}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$F \\approx 87.5\\,\\text{mN}$ to three significant figures"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "The thruster runs continuously for $30$ days. How much does the speed of the satellite change during this time? How much xenon is used?",
+          "answer": [
+            {
+              "name": "dv",
+              "value": 349.1,
+              "unit": "m/s",
+              "tolerance": 0.02
+            },
+            {
+              "name": "m",
+              "value": 5.644,
+              "unit": "kg",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$a = \\dfrac{F}{M}$, $\\Delta v = a\\,\\Delta t$ and $m_\\text{Xe} = \\dfrac{\\Delta m}{\\Delta t} \\cdot \\Delta t$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\Delta t = 30 \\cdot 24 \\cdot 3600\\,\\text{s} = 2.592 \\cdot 10^{6}\\,\\text{s}$, $a \\approx 1.35 \\cdot 10^{-4}\\,\\text{m/s}^2$, $\\Delta v \\approx 349\\,\\text{m/s}$, $m_\\text{Xe} \\approx 5.64\\,\\text{kg}$"
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "The mass of the satellite stays almost constant, because less than $1\\,\\%$ of the mass is used as xenon, and the thrust is along the orbit; the effect of gravity on the orbital speed is not calculated here."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\Delta v \\approx 349\\,\\text{m/s}$ and $m_\\text{Xe} \\approx 5.64\\,\\text{kg}$ to three significant figures, as the thrust"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Are the solar panels enough to run the thruster? Explain why the thrust of an ion thruster is small although its power is large, and why it is used anyway.",
+          "criteria": [
+            {
+              "text": "Calculates the power of the beam $P = UI = 1100\\,\\text{V} \\cdot 1.60\\,\\text{A} \\approx 1.76\\,\\text{kW}$, which is less than the $2.5\\,\\text{kW}$ of the panels; it is the same as the kinetic energy of the ions per second, $\\tfrac12 \\tfrac{\\Delta m}{\\Delta t} v^2$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "text": "Explains the relation $F = \\tfrac{2P}{v}$: with a given power a large ion speed gives a small thrust, but little propellant is used, because each kilogram gives a momentum of $40\\,\\text{km/s} \\cdot 1\\,\\text{kg}$.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The power is enough. An ion thruster suits long orbit changes that take weeks; for launch or fast manoeuvres the thrust is too small."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy6-12",
+        "math": "fy6-12",
+        "transfer": "fy4-9",
+        "communication": "fy4-9"
+      }
+    }
+  ]
+}

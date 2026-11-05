@@ -1,0 +1,14 @@
+{
+  "id": "fy9-harjoituskoe",
+  "course": "FY9",
+  "chapter": 7,
+  "order": 1,
+  "title": "Practice exam",
+  "description": "A full-length six-hour practice exam on the whole of upper secondary physics: the compulsory Part I of short items, four of the seven problems of Part II and two of the three data-based problems of Part III, with model answers and marking schemes for self-assessment.",
+  "kind": "review",
+  "minutes": 360,
+  "subjects": [
+    "physics"
+  ],
+  "sources": []
+}

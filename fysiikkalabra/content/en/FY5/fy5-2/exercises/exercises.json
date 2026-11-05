@@ -43,6 +43,7 @@
     {
       "id": "fy5-2-L1-06",
       "level": 1,
+      "core": true,
       "text": "A vertical $10\\,\\text{N}$ force acts upwards on the left end of a light rod and a vertical $10\\,\\text{N}$ force downwards on the right end. The rod is initially at rest and is not supported anywhere. The weight of the rod is ignored.\n\nWhat happens to the rod?",
       "kind": [
         "concept"
@@ -91,6 +92,7 @@
     {
       "id": "fy5-2-L2-01",
       "level": 2,
+      "core": true,
       "text": "A uniform plank of length $4.00\\,\\text{m}$ and mass $25.0\\,\\text{kg}$ rests horizontally on two supports. The supports are $0.50\\,\\text{m}$ and $3.00\\,\\text{m}$ from the left end of the plank. How large is the support force of the left support?",
       "answer": 98.1,
       "unit": "N",
@@ -107,6 +109,7 @@
     {
       "id": "fy5-2-L2-03",
       "level": 2,
+      "core": true,
       "text": "A uniform bookshelf has depth $0.400\\,\\text{m}$ and height $1.80\\,\\text{m}$, and its centre of mass is in the middle. The shelf is tilted forwards so that it rests only on its front edge. What is the angle of tilt from the vertical when the shelf is at the limit of toppling, that is, when it would topple by itself if the angle grew any more? Answer in degrees.",
       "answer": 12.5,
       "unit": "°",
@@ -124,6 +127,7 @@
     {
       "id": "fy5-2-L2-05",
       "level": 2,
+      "core": true,
       "text": "A uniform plank ($3.00\\,\\text{m}$, $10.0\\,\\text{kg}$) rests horizontally on two force sensors. The sensors are at the ends of the plank. A person standing on the plank moves step by step towards the right end. The table gives the reading $N_1$ of the left sensor as a function of the position $x$ of the person, where $x$ is measured from the left end of the plank. The data is example data.\n\na) Draw a graph of the measurement points $(x, N_1)$, fit a line to the points and determine its slope. Calculate the mass of the person from the slope.\n\nb) Use the moment condition to explain why the points lie on a line.\n\nThe answer box takes the mass of the person from part a) in kilograms.",
       "kind": [
         "data",

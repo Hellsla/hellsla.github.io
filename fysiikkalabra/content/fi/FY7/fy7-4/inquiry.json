@@ -7,7 +7,7 @@
     "selittämään, miten tasavirtamoottori ja kaiutin toimivat."
   ],
   "prior": [
-    "Magneettikenttä kohdistaa liikkuvaan varattuun hiukkaseen voiman, joka on kohtisuorassa nopeutta ja kenttää vastaan (luku *Varattu hiukkanen sähkö- ja magneettikentässä*)",
+    "Magneettikenttä kohdistaa liikkuvaan varattuun hiukkaseen voiman, joka on kohtisuorassa nopeutta ja kenttää vastaan (luku *Varatun hiukkasen liike sähkö- ja magneettikentässä*)",
     "Suoran virtajohtimen magneettikenttä kiertää johdinta, ja sen suuruus on $B = \\mu_0 I : (2\\pi r)$ (luku *Virtajohtimen ja käämin magneettikenttä*)"
   ],
   "activities": [

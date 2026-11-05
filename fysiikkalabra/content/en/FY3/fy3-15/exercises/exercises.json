@@ -3,6 +3,7 @@
     {
       "id": "fy3-15-L1-01",
       "level": 1,
+      "core": true,
       "text": "The turbine of a hydropower plant converts $92.0\\,\\%$ of the kinetic energy of the water into mechanical energy, and the generator converts $98.0\\,\\%$ of the energy of the turbine shaft into electricity. What is the efficiency of the whole plant? Give your answer as a percentage.",
       "answer": 90.2,
       "unit": "%",
@@ -44,6 +45,7 @@
     {
       "id": "fy3-15-L1-06",
       "level": 1,
+      "core": true,
       "text": "A condensing power plant and a combined heat and power plant burn the same amount of the same fuel. The overall efficiency of the combined heat and power plant is still clearly higher. What explains this?",
       "kind": [
         "concept"
@@ -98,6 +100,7 @@
     {
       "id": "fy3-15-L2-01",
       "level": 2,
+      "core": true,
       "text": "The fuel power of a peat-burning condensing power plant is $300\\,\\text{MW}$. The efficiency of the boiler is 0.880, of the steam cycle (turbine and condenser) 0.420 and of the generator 0.980. How large is the electric power of the plant? Give your answer in megawatts.",
       "answer": 109,
       "unit": "MW",
@@ -171,6 +174,7 @@
     {
       "id": "fy3-15-L2-06",
       "level": 2,
+      "core": true,
       "text": "The table gives the fuel or reactor power $P_0$ and the electric power $P_\\text{s}$ of three power plants (example data). All the plants are condensing power plants, and the rest of the energy is transferred to the surroundings as waste heat.\n\na) Calculate the efficiency of each plant.\n\nb) Calculate the waste heat power $P_\\text{h}$ of each plant.\n\nc) Does the plant with the lowest efficiency also have the largest waste heat power? Justify your answer.\n\nIn part b), enter the largest waste heat power in the answer box in megawatts.",
       "kind": [
         "data",
@@ -229,7 +233,7 @@
     {
       "id": "fy3-15-L3-02",
       "level": 3,
-      "text": "A wind farm produces $36.0\\,\\text{GWh}$ of electricity in a year ($1\\,\\text{GWh} = 3.60 \\cdot 10^{12}\\,\\text{J}$). If the same electricity were produced with hard coal in a condensing power plant with an efficiency of 0.380 and where the heat of combustion of coal is $25.0\\,\\text{MJ/kg}$, how many kilotonnes of coal ($1\\,\\text{kt} = 10^{6}\\,\\text{kg}$) would be burned in a year? Also explain why the efficiency of a wind farm cannot be compared with the efficiency of a coal power plant as directly as those of two condensing power plants.",
+      "text": "A wind farm produces $36.0\\,\\text{GWh}$ of electricity in a year ($1\\,\\text{GWh} = 3.60 \\cdot 10^{12}\\,\\text{J}$).\n\nIf the same electricity were produced with hard coal in a condensing power plant with an efficiency of 0.380 and where the heat of combustion of coal is $25.0\\,\\text{MJ/kg}$, how many kilotonnes of coal ($1\\,\\text{kt} = 10^{6}\\,\\text{kg}$) would be burned in a year?\n\nAlso explain why the efficiency of a wind farm cannot be compared with the efficiency of a coal power plant as directly as those of two condensing power plants.",
       "answer": 13.6,
       "unit": "kt",
       "tolerance": 0.02

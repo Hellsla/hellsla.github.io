@@ -684,7 +684,7 @@ Many also think that a longer acceleration distance gives a particle more energy
 ## Summary
 - The electric force is conservative, so a charge in a field has potential energy $E_\text{p} = qV$. The work done by the field is the decrease of the potential energy.
 - Potential $V$ is potential energy per unit charge, $1\,\text{V} = 1\,\text{J/C}$. It is a property of a point in the field, and the potential difference of two points is the voltage between them.
-- In a uniform field the potential changes steadily, $V = Ex$, and the field points from a higher potential to a lower one. Equipotential surfaces are parallel to the plates, and the field lines are perpendicular to them.
+- In a uniform field the potential changes steadily, $V = Ex$, when the negative plate is the zero of potential and $x$ is the distance from it. The field points from a higher potential to a lower one. Equipotential surfaces are parallel to the plates, and the field lines are perpendicular to them.
 - When a charge travels through a potential difference $U$, the field does the work $qU$ regardless of the distance and the path. A particle that starts from rest gets the kinetic energy $\tfrac{1}{2}mv^2 = |q|U$.
 - A positive charge starts moving toward a lower potential and a negative charge toward a higher one; the potential energy of each decreases.
 - The electronvolt is a unit of energy for particles: $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.

@@ -1,14 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 6631e8a5347af402
+CONTENT-HASH: b07019580b69ebba
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+- solutions.md L3-04 Reasonableness: "its square, 3.3: 4.959 MW : 1.500 MW = 3.3" read as a ratio of ratios; now "its square, 3.3. Indeed, 4.959 MW : 1.500 MW = 3.3." No number changed.
 
 ## Polish
-- exercises/solutions.md:120 — "331 MW give … 826 A" (carried from round 1; same in the Finnish): 331 MW / 400 kV = 828 A — write 828 A or 330.6 MW.
+- L3-05 and L3-04 solutions keep the Finnish wording "reading error" and "economical"; understandable, left as in fi.
 
 ## Checked
-- Round 2: the diff since round 1 (930a3e02) changes only L1-02 unit "turns", L3-03 unit "times" and L1-03 "local substation"; answers and tolerances unchanged.
-- "turns" (N1 = 40 · 230/8.0 = 1150) and "times" (ratio (400/220)² = 3.306) are the right units for their answers.
-- L1-03: a local substation lowering 20 kV to 400 V is the right device; I1 = 250 A · 400/20 000 = 5.0 A.
-- The round-1 recomputation of all 12 answers still stands.
-- Hash identical at start and end.
+- All 8 new ids (L1-06..08, L2-05..07, L3-04..05) exist in en with the same level, kind, answer, tolerance and correct flags as fi; L1-06 has one correct choice, the same one as fi, and the model answer equals its text.
+- Every data-table cell (L2-05, L2-06, L3-05) and every number in text and solutions is identical to fi (automatic number comparison of exercises.json and solutions.md: no difference); decimal point in JSON and LaTeX.
+- Units: turns, %, A, kW, million EUR are right for the answers; the old units turns/times from earlier rounds remain.
+- Recomputed: 486 turns, 87.7 %, 0.20 A, 210 kW, 90 %, 1.515 million EUR, 54.35 kW; all match.
+- Each wrong-choice feedback in L1-06 says why it is wrong and is correct physics (DC flux constant, no induction).
+- No Finnish characters left in en files; check_i18n en: 0 errors.

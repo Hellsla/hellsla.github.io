@@ -1,0 +1,36 @@
+{
+  "id": "fy9-energia",
+  "course": "FY9",
+  "chapter": 2,
+  "order": 1,
+  "title": "Energia, teho ja hyötysuhde",
+  "description": "Kerrataan FY2-moduulin asioita: energian säilyminen, teho, kilowattitunti, hyötysuhde, lämpöarvo, energiantuotanto ja voimalaitoksen energiaketju. Niistä ratkaistaan ylioppilaskokeen tyylisiä tehtäviä.",
+  "kind": "review",
+  "minutes": 75,
+  "subjects": [
+    "physics"
+  ],
+  "sources": [],
+  "key_concepts": [
+    {
+      "term": "energian säilyminen",
+      "explain": "Energiaa ei synny tyhjästä, eikä se katoa. Se vain muuttuu muodosta toiseen tai siirtyy paikasta toiseen."
+    },
+    {
+      "term": "teho",
+      "explain": "Kertoo, kuinka nopeasti energiaa muuttuu tai siirtyy: $P = \\frac{\\Delta E}{\\Delta t}$. Tehon yksikkö on watti (W)."
+    },
+    {
+      "term": "kilowattitunti",
+      "explain": "Energian yksikkö, ei tehon yksikkö. Laite, jonka teho on $1\\,\\text{kW}$, käyttää tunnissa energiaa $1\\,\\text{kWh} = 3{,}6\\,\\text{MJ}$."
+    },
+    {
+      "term": "hyötysuhde",
+      "explain": "Kertoo, kuinka suuri osa otetusta energiasta tulee hyödyksi: $\\eta = \\frac{E_\\text{a}}{E_\\text{o}}$. Peräkkäisten vaiheiden hyötysuhteet kerrotaan."
+    },
+    {
+      "term": "lämpöarvo",
+      "explain": "Kertoo, kuinka paljon energiaa vapautuu, kun kilogramma polttoainetta palaa. Energia on $E = Hm$."
+    }
+  ]
+}

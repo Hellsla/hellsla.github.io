@@ -3,6 +3,7 @@
     {
       "id": "fy2-1-L1-01",
       "level": 1,
+      "core": true,
       "text": "A stone is at rest high up on a cliff, and its potential energy is $50\\,\\text{J}$. The stone falls to the ground, where the potential energy is zero. Air resistance is ignored. What is the kinetic energy of the stone just before it hits the ground?",
       "answer": 50.0,
       "unit": "J",
@@ -104,6 +105,7 @@
     {
       "id": "fy2-1-L1-08",
       "level": 1,
+      "core": true,
       "text": "A phone is being charged with a charger from a wall socket, and the charger feels warm in the hand. Describe the change of energy as a chain, from the energy coming along the cable from the wall socket to the moment it is in the battery. Use the law of conservation of energy to explain why the charger warms up.",
       "kind": [
         "reasoning"
@@ -117,6 +119,7 @@
     {
       "id": "fy2-1-L2-01",
       "level": 2,
+      "core": true,
       "text": "An electric scooter sets off. Chemical energy of $3.00\\,\\text{kJ}$ is released from its battery, and the scooter and rider gain kinetic energy of $2150\\,\\text{J}$ from it. The rest changes into thermal energy in the battery, the motor and the tyres. How many joules of energy are changed into thermal energy?",
       "answer": 850.0,
       "unit": "J",
@@ -186,6 +189,7 @@
     {
       "id": "fy2-1-L2-06",
       "level": 2,
+      "core": true,
       "text": "An inventor demonstrates a water device that he claims works forever without outside energy.\n\nWater falling from the upper pool turns a generator and loses potential energy of $100\\,\\text{J}$ per cycle. The generator changes all of this energy into electrical energy. A pump uses $80\\,\\text{J}$ of it and lifts the water back to the upper pool, and the rest of the electrical energy goes to a lamp.\n\nHow many joules of energy does the device create from nothing in one cycle, if the claim is true? Explain which principle of energy is broken.",
       "kind": [
         "error",

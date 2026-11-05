@@ -1,7 +1,7 @@
 """Inquiry-based lesson structure: validation and rendering of content/<lang>/<course>/<id>/inquiry.json (format version 1).
 
-A lesson with inquiry.json is rendered as stages — Pohdinta → Ennusta → Tutki → Teoriatiivistelmä → Sovella →
-Tarkista osaamisesi — each holding activities; stages may repeat, be omitted, or hold the lesson's existing
+A lesson with inquiry.json is rendered as stages — Pohdinta → Ennusta → Tutki → Teoria → Esimerkit →
+Tarkista osaamisesi (Teoria and Esimerkit were Teoriatiivistelmä and Sovella until 2026-11-05; Esimerkit was Harjoittele for a day, teacher: "pitää olla lyhyt") — each holding activities; stages may repeat, be omitted, or hold the lesson's existing
 parts (theory sections of lesson.md, the simulation, the exit ticket). The exit ticket opens Tarkista osaamisesi,
 before its checks, with no link of its own in the navigation (teacher 2026-11-04: one step fewer). The exercises always
 come last, in their own section "Tehtävät". A lesson without the file renders in the classic layout. See
@@ -40,9 +40,29 @@ QUESTION_TYPES = ("choice", "numeric", "explain")
 FIGURE_TYPES = ("hook", "text", "choice", "numeric", "explain", "interpret")   # may carry "figure": "<id>" (scripts/figcat.py)
 FBD_TAGS = ("identify", "select", "error", "draw", "equations")   # "fbd": the force-diagram skill a task practises (docs/force-diagrams.md)
 ID_RE = re.compile(r"^[a-z][a-z0-9-]{1,40}$")
+CORE_TYPES = ("choice", "experiment", "interpret", "numeric", "explain")   # may carry "core": true: a task of the lesson marked Ydintehtävä, like a core exercise (teacher 2026-11-05)
 OPTIONAL_TYPES = ("hook", "text", "choice", "experiment", "interpret", "numeric", "explain", "reflect", "theory", "exit")   # may carry "optional": true
 SOURCES = ("measured", "statistics", "simulated", "model", "example")   # statistics and example: teacher's FY2 rule 2026-10-28 (real sourced data / invented data said so)      # interpret "source"; its badge is lang "inquiry.source_<source>"
 RESERVED_IDS = {"sim", "sim-root", "exercises", "exit", "teoria", "herata", "ennusta", "tutki", "selita", "sovella", "tarkista"}   # ids the page already uses
+
+
+# The stages Teoriatiivistelmä and Sovella were renamed Teoria and Esimerkit (teacher 2026-11-05: the theory stage holds
+# more than a summary, and Sovella holds a worked example and practice). The texts written before name them the old way
+# ("Palaute avautuu, kun olet lukenut Teoriatiivistelmän kohdan …"); the page shows the new names, so the reviewed
+# content (and its hash) stays as it is. New text names the stages Teoria / Esimerkit (Theory / Examples) directly.
+_BACK = str.maketrans("äöÄÖ", "aoAO")             # tiivistelmä takes front-vowel endings, teoria back-vowel ones
+def _teoria(m):                                   # Teoriatiivistelmä(n) → Teoria(n); a place case → Teoria-osassa, not "teoriassa" (= in theory)
+    end = m.group(2)
+    return m.group(1) + "eoria" + (end if end in ("", "n") else "-osa" + end.translate(_BACK))
+OLD_STAGE_TERMS = ((re.compile(r"\b([Tt])eoriatiivistelmä(\w*)"), _teoria),
+                   (re.compile(r"\b([Tt])heory summary\b"), lambda m: m.group(1) + "heory"),
+                   (re.compile(r'(<a href="#sovella">)(?:Sovella|Apply)(</a>)'), lambda m: m.group(1) + T("inquiry.stage_sovella") + m.group(2)))
+
+
+def current_stage_names(html):
+    """The page's html with the old stage names of the texts replaced by the current ones (Teoriatiivistelmän → Teorian)."""
+    for rx, new in OLD_STAGE_TERMS: html = rx.sub(new, html)
+    return html
 
 
 def heading(title):
@@ -174,6 +194,8 @@ def validate(folder, inquiry, lesson_md):
                 for _, msg in (figcat.check_refs(json.dumps({"figure": x["figure"]})) if isinstance(x["figure"], str) else [(0, "an id such as \"fy1-4/scatter\"")]): E(f"{where}.figure: {msg}")
         if "optional" in a and (not isinstance(a["optional"], bool) or (a["optional"] and t not in OPTIONAL_TYPES)):
             errs.append(f"{path}.optional: true or false, and only on {', '.join(OPTIONAL_TYPES)} (the simulation and the exercises are never folded away)")
+        if "core" in a and (not isinstance(a["core"], bool) or (a["core"] and (t not in CORE_TYPES or a.get("optional")))):
+            errs.append(f"{path}.core: true or false, only on {', '.join(CORE_TYPES)} and never with optional (a core task is on the core path)")
         if "fold" in a and (not isinstance(a["fold"], str) or not a["fold"].strip() or len(a["fold"]) > 24 or t not in OPTIONAL_TYPES or a.get("optional")):
             errs.append(f"{path}.fold: a short tag (at most 24 characters) for a required part kept closed until it is opened, only on {', '.join(OPTIONAL_TYPES)} and not with optional")
         if "fbd" in a and a["fbd"] not in FBD_TAGS: errs.append(f"{path}.fbd: one of {', '.join(FBD_TAGS)} (docs/force-diagrams.md)")
@@ -378,7 +400,11 @@ def answer_label(unit):
 
 
 def numeric_html(a, md, aid):
-    unit = esc(a.get("unit", "")); mistakes = esc(json.dumps(a.get("mistakes", []), ensure_ascii=False))
+    unit = esc(a.get("unit", ""))
+    # a mistake's feedback may carry Markdown (a chapter link "[*…*](fy7-10.html)"): it goes to the page as HTML too
+    ms = [dict(m, html=inline(md, m["feedback"])) if isinstance(m, dict) and re.search(r"\]\(|\*", m.get("feedback", "")) else m
+          for m in a.get("mistakes", []) or []]
+    mistakes = esc(json.dumps(ms, ensure_ascii=False))
     sol = (f'<details class="solution"><summary>{T("inquiry.show_solution")}</summary><div class="steps">'
            f'{mathlayout.steps_html(md(mathlayout.solution_md(a["solution"], T("lesson.solution_display_steps"))), T("lesson.solution_answer_step"))}</div></details>' if a.get("solution") else "")
     shown = answers_shown.shown(a.get("solution") or "", T("lesson.solution_answer_step"), a["answer"], a.get("tolerance", 0.02))
@@ -627,6 +653,8 @@ def render(folder, inquiry, parts, md):
     def act(a):
         t, aid = a["type"], a["id"]
         head = f'<h3>{esc(a["title"])}</h3>' if a.get("title") else ""
+        if a.get("core") and not a.get("optional"):   # a task of the lesson on the core path, tagged like a core exercise (teacher 2026-11-05)
+            head = f'<p class="act-core"><span class="ex-core">{T("lesson.core_exercise")}</span></p>' + head
         if t == "hook": content = f'<div class="hook">{md(a["text"])}{fig_of(a)}</div>' + (f'<p class="question">{inline(md, a["question"])}</p>' if a.get("question") else "")
         elif t == "text": content = md(a["text"]) + fig_of(a)
         elif t == "choice": content = choice_html(a, md, lid, aid)
@@ -667,6 +695,7 @@ def render(folder, inquiry, parts, md):
         return "".join(act(a) for a in items)
 
     toc, n = [], 0
+    cards_at = next((s for s in ("sovella", "tarkista", "selita") if by_stage[s]), None) if parts.get("cards") else None
     for sid, title in stages():
         items = by_stage[sid]
         if not items: continue
@@ -676,22 +705,22 @@ def render(folder, inquiry, parts, md):
             inner = (flow(items[:si]) + f'<div class="lab"><div class="lab-side">{act(items[si])}</div>'
                      f'<div class="lab-main">{flow(items[si + 1:])}</div></div>')
         else: inner = flow(items)
+        if sid == cards_at: inner += parts["cards"]       # the chapter's concept cards close Esimerkit (teacher 2026-11-05)
         if sid == "ennusta":                           # closed at first; reopened later, the answers are still there
             k = sum(1 for a in items if a["type"] == "choice")
             inner = (f'<details class="fold" data-fold="{sid}"><summary><span class="fold-title">{T("inquiry.fold_title")}</span> '
                      f'<span class="fold-status" data-n="{k}">{T("inquiry.fold_question_one" if k == 1 else "inquiry.fold_question_many", n=k)}</span></summary>'
                      f'<div class="fold-body">{inner}</div></details>')
-        body.append(f'<section class="stage" id="{sid}" data-stage="{sid}"><h2><span class="stage-no" aria-hidden="true">{n}</span>{title}</h2>{inner}</section>')
+        lead = f'<p class="stage-lead">{T(f"inquiry.lead_{sid}")}</p>' if T.has(f"inquiry.lead_{sid}") else ""   # what the stage is for (teacher 2026-11-05)
+        body.append(f'<section class="stage" id="{sid}" data-stage="{sid}"><h2><span class="stage-no" aria-hidden="true">{n}</span>{title}</h2>{lead}{inner}</section>')
         toc.append(toc_link(sid, n, title))
-    if parts.get("cards"):                             # "Kertaa luvun käsitteet" after the exit ticket (scripts/concept_cards.py)
-        body.append(parts["cards"]); toc.append(parts.get("cards_nav", ""))
     if parts.get("exercises"):                         # the exercises close the page, after the exit ticket
         text = ""                                      # the exercises' own lead text is not shown (teacher 2026-11-04: "turhia")
         aid = ex_act["id"] if ex_act else "harjoitukset"
         body.append(f'<section class="stage stage-practice" id="exercises" data-stage="exercises"><h2>{exercises_title()}</h2>'
                     f'<div class="activity act-exercises" id="{esc(aid)}" data-type="exercises">{text}{parts["exercises"]}</div></section>')
         toc.append(f'<a href="#exercises" class="toc-end"><span class="toc-label">{exercises_title()}</span></a>')
-    return "\n".join(body), "".join(toc)
+    return current_stage_names("\n".join(body)), "".join(toc)
 
 
 if __name__ == "__main__":

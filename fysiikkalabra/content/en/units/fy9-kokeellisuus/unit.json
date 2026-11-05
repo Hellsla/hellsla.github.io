@@ -1,0 +1,14 @@
+{
+  "id": "fy9-kokeellisuus",
+  "course": "FY9",
+  "chapter": 1,
+  "order": 3,
+  "title": "Experimental work and its assessment",
+  "description": "A review of how to plan an experiment, how to calculate a result with its uncertainty from a graph, and how to recognise the errors and systematic errors of a report.",
+  "kind": "review",
+  "minutes": 75,
+  "subjects": [
+    "physics"
+  ],
+  "sources": []
+}

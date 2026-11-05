@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 3fb0a5efd2862cdf
+CONTENT-HASH: df914065e3c42db8
 
 ## Blocking
+(none)
 
 ## Polish
+(none)
 
 ## Checked
-batch delta review: chapter title and chapter cross-reference renames only (no figures, maths or numbers changed); opened contact-1 captures (fy5-13, fy5-14 plus layout of the long new titles at 390 px), titles wrap cleanly, cross-references read naturally.
+- batch delta review: opened the captures of the changed passages (theory-1280 / example-390), source diff read; no figure changed; text-only edits render cleanly, no clipping, no horizontal overflow, no inline formula wrapped.

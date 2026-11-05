@@ -1,15 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 89df6326aca699a5
+CONTENT-HASH: 36ac7c9b588458f9
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions.md L2-01 Järkevyys — "ero $0{,}1\,\text{keV}$ tasojen erotukseen $1173{,}3\,\text{keV}$ johtuu" reads clumsily — "ero tasojen erotukseen $1173{,}3\,\text{keV}$ on $0{,}1\,\text{keV}$ ja johtuu lähes kokonaan ...".
-- [Minor] solutions.md L2-02 Järkevyys — round-1 note: keep the `+1 - 2 = -1` chain unbroken.
+- [Minor] exercises.json L1-08, L2-05..07, L3-04..05 — closing line "A-kohdan tulos kirjoitetaan vastauskenttään." differs from FY8-5..7 ("Anna a)-kohdan tulos vastauslaatikkoon.") and from the other tasks of this chapter — use one form across the chapter.
+- [Minor] exercises.json L3-04 text/solutions — nuclide names in plain text ("Pb-210:stä", "Rn-222:sta") break across lines ("Pb-" / "206:een") — bind them with a non-breaking hyphen or set as ${}^{210}\text{Pb}$:stä as the other tasks do.
+- [Minor] solutions.md L3-04 Sijoitus — a)–d) run together in one block; start each on its own line.
+- [Minor] solutions.md L2-07 Vastaus — "Suoralta luettu arvo on 915 … 920 keV" while the box answer is 916: state the reading range or the single value consistently.
 
 ## Checked
-- Delta (one rewritten Järkevyys, L2-01): open-exercises-L2-1280-2 — text fits its card, all quantities in LaTeX with units, paragraph about 80 words, layout intact; the figures/values are consistent (1173,2 / 1173,3 / 1173,24 keV; 0,931 pm).
+- Opened at 1280 px: open-exercises-L2-1280-4 (end of an existing solution and 8-12 task), open-exercises-L3-1280-5 (L3-04 solution).
+- Read all new tasks and solutions in source (L1-06..08, L2-05..07, L3-04..05). Recomputed: Z/N changes for the six rows (3 beta minus), 144 neutrons, 916,4 keV (fit), 4 beta minus, 1150,2 keV and 1,08 pm; all match answers.
+- Nuclide notation, tables and level reasoning render correctly; L3-05 level diagram is to be drawn on paper, no figure expected.
+- Not opened: remaining new-task captures (judged from source and packet checks); no 360 px capture of the exercises exists.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 5
+illustrations n/a (5) · typography 4 · Finnish 4 · accessibility 4

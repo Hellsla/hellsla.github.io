@@ -53,14 +53,16 @@ def owners():
             out.append((folder.name, courses.code_dir(folder), folder))
         sov = ROOT / "lessons" / code / "sovella"
         if (sov / "figures.py").is_file(): out.append((f"{courses.slug(code)}-sovella", sov, ROOT / "content" / i18n.SOURCE / code / "sovella"))
+        koe = ROOT / "lessons" / code / "koe"
+        if (koe / "figures.py").is_file(): out.append((f"{courses.slug(code)}-koe", koe, ROOT / "content" / i18n.SOURCE / code / "koe"))
     return [o for o in out if (o[1] / "figures.py").is_file()]
 
 
 def owner(oid):
     """(code folder, text folder) of an owner id, or None."""
-    m = re.match(r"^([a-z]+\d+)-sovella$", oid)
+    m = re.match(r"^([a-z]+\d+)-(sovella|koe)$", oid)
     if m:
-        code = m.group(1).upper(); return ROOT / "lessons" / code / "sovella", ROOT / "content" / i18n.SOURCE / code / "sovella"
+        code, sub = m.group(1).upper(), m.group(2); return ROOT / "lessons" / code / sub, ROOT / "content" / i18n.SOURCE / code / sub
     lid = courses.LESSON_ID.match(oid)
     if not lid: return None
     for folder in courses.lessons():
@@ -167,7 +169,7 @@ def source_slice(text, name):
             if isinstance(sub, ast.Name) and sub.id in defs and sub.id not in seen:
                 seen.add(sub.id); used.append(defs[sub.id]); todo.append(defs[sub.id])
     lines = text.splitlines()
-    parts = [ast.get_source_segment(text, node) or "" for node in sorted(set(used), key=lambda n: n.lineno)]
+    parts = [ast.get_source_segment(text, node) or "" for node in sorted(set(used), key=lambda n: (n.lineno, n.col_offset))]
     return "\n\n".join(parts + [f"FIGURES[{name!r}] = {ast.get_source_segment(text, entry)}"])
 
 
@@ -269,7 +271,7 @@ def _uses():
             text = f.read_text(); rel = f.relative_to(ROOT / "content" / lang).as_posix()
             parts = rel.split("/")
             if len(parts) < 3: continue  # courses.json of a translation: names, no figures
-            oid = parts[1] if parts[1] != "sovella" else f"{parts[0].lower()}-sovella"
+            oid = parts[1] if parts[1] not in ("sovella", "koe") else f"{parts[0].lower()}-{parts[1]}"
             for fid in refs_in(text): uses.setdefault(fid, []).append(f"{lang}:{rel}")
             if lang != i18n.SOURCE: continue
             src = text.replace('\\"', '"')

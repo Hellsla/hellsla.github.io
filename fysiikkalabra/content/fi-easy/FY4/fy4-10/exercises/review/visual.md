@@ -1,17 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 4e04e6035c29bd49
+CONTENT-HASH: 0a4b561e503e708d
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+(none needed)
 
 ## Polish
-- [Minor] open-exit-1280 / contact-5 #49 — "Exit ticket" is English on a Finnish page (site-wide label; teacher decision: "Lähtölippu").
+(none)
 
 ## Checked
-- contact-5 (levels 1 and 2 with all solutions open, and the exit ticket); level 3 via its statements in the packet text.
-- The packet text of all twelve exercises read for language.
-- No inline figures in the exercise set. Maths: decimal comma, "kg:n" case endings after upright units, fractions and substitution chains render cleanly; boxed answers match the stated significant figures.
-- Selkeä suomi: short sentences, assumptions given in each task, solutions follow the standard order (Annettu, Kysytty, Periaate, Kaava, Muunnokset, Sijoitus, Vastaus, Järkevyys).
-- Hints, answers and solutions are readable at 1280 px.
+- Opened the level 2 and level 3 captures with solutions open (open-exercises-L2-1280-7, open-exercises-L3-1280-6): L2-05 and L3-04 solutions render without overflow.
+- Maths is typeset, units upright, decimal comma consistent; .
+- Data tables carry translated captions and headers.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 4

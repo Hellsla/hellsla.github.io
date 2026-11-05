@@ -1,0 +1,479 @@
+{
+  "version": 1,
+  "contribution": "The review lesson brings together the photoelectric effect and the photon, spectra and energy levels, the hydrogen atom, wave–particle duality and orbitals, the LED and the laser, the atomic nucleus and radioactive decay, the decay law, mass defect and binding energy, fission and fusion, ionising radiation, radiation dose and radiation safety, uses of radiation, the Standard Model and the evolution of the universe from module FY8 into one model of quantised energy, and practises matriculation-exam-type problems on them: the energy of one photon, decay equations and the decay law, mass difference and reaction energy, dose, distance and shielding, measurement data of the photoelectric effect, assessing a report and combining the energy principles of FY2 and FY3 with a nuclear power plant.",
+  "learn": [
+    "solve problems about photons, atoms, nuclei and radiation by choosing a suitable model",
+    "draw and interpret graphs of measurement data on the photoelectric effect and radioactive decay",
+    "assess claims and measurements about radiation and nuclear energy with justification"
+  ],
+  "prior": [
+    "The energy of one photon is $E = hf$, and it gives its energy to one electron (chapter *The photoelectric effect and the photon*)",
+    "The energy of the photon of a spectral line is the difference of two energy states (chapter *Spectra reveal the energy levels of atoms*)",
+    "Each half-life halves the number of undecayed nuclei (chapter *The decay law and half-life*)",
+    "In a nuclear reaction the mass decreases, and the energy corresponding to the mass difference is released (chapter *Mass defect and nuclear binding energy*)",
+    "Protection against radiation uses time, distance and shielding (chapter *Radiation dose and radiation safety in Finland*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "In winter the tomatoes of a greenhouse grow under LED grow lights. The total power of the lights is several kilowatts, and most of the light is red, with a wavelength of about $660\\,\\text{nm}$. The radiation power of a dentist's X-ray unit is much smaller, but the energy of its photons is about $60\\,\\text{keV}$. The ionisation energy of a water molecule is $12.6\\,\\text{eV}$. In the exam a situation like this can be the start of a problem: the numbers are given, but the formula is not.",
+      "question": "Why does a large light power not ionise, while a small X-ray power does? How large is the energy of one red photon in electronvolts?"
+    },
+    {
+      "id": "lt-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting level 1: brighter red light",
+      "prompt": "A zinc plate is lit with red light, and no electrons leave the plate. The intensity of the light is made ten times larger, but the colour stays the same. What happens?",
+      "choices": [
+        {
+          "text": "Electrons start to leave, because bright light brings more energy to the plate.",
+          "feedback": "Brighter light brings more photons, but the energy $hf$ of each photon stays the same. One electron gets the energy of one photon, so if $hf < W$, no electrons leave. Review in the chapter *The photoelectric effect and the photon*."
+        },
+        {
+          "text": "Still no electrons leave, because the energy of one photon does not change.",
+          "feedback": "Correct. The intensity tells the number of photons, and the frequency sets the energy of one photon. The energy of a red photon is smaller than the work function of zinc, about $4.3\\,\\text{eV}$. Review if needed in the chapter *The photoelectric effect and the photon*.",
+          "correct": true
+        },
+        {
+          "text": "Electrons leave after a delay, once they have collected enough energy.",
+          "feedback": "The wave model predicted a delay, but none is observed in experiments. An electron does not collect energy from several photons, so at too low a frequency electrons never leave. Review in the chapter *The photoelectric effect and the photon*."
+        }
+      ]
+    },
+    {
+      "id": "lt-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting level 2: a photon in hydrogen gas",
+      "prompt": "Photons with energy $11.0\\,\\text{eV}$ pass through hydrogen atoms in the ground state. The levels of hydrogen are $E_1 = -13.6\\,\\text{eV}$, $E_2 = -3.40\\,\\text{eV}$ and $E_3 = -1.51\\,\\text{eV}$. What happens to the photons?",
+      "choices": [
+        {
+          "text": "They are absorbed, and the atom moves to level $2$, because the energy is enough for that.",
+          "feedback": "The transition $1 \\to 2$ needs exactly $10.2\\,\\text{eV}$. When the electron stays in the atom, the extra energy has nowhere to go, so the photon is not absorbed. Review in the chapter *Energy levels of the hydrogen atom and the Bohr model*."
+        },
+        {
+          "text": "They ionise the atoms, because the energy is larger than the energy of level $1$.",
+          "feedback": "Ionisation from the ground state needs $13.6\\,\\text{eV}$, so $11.0\\,\\text{eV}$ is not enough to free the electron. Nor does the photon match any difference of levels. Review in the chapter *Energy levels of the hydrogen atom and the Bohr model*."
+        },
+        {
+          "text": "They pass through the gas, because the energy is not the difference of any pair of levels.",
+          "feedback": "Correct. The differences from the ground state are $10.2\\,\\text{eV}$ and $12.1\\,\\text{eV}$, and ionisation needs $13.6\\,\\text{eV}$. A photon of $11.0\\,\\text{eV}$ matches none of them, so it passes through. Review if needed in the chapter *Energy levels of the hydrogen atom and the Bohr model*.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "lt-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting level 3: a red and a blue LED",
+      "prompt": "A red and a blue LED are connected in turn to an adjustable voltage supply, and the voltage is raised from zero. Which one starts to conduct and shine at a lower voltage?",
+      "choices": [
+        {
+          "text": "The red one, because the energy of its photon, and so its threshold voltage, is smaller.",
+          "feedback": "Correct. At the threshold voltage $eU_\\text{k} \\approx hf = \\tfrac{hc}{\\lambda}$, so the LED with the longer wavelength needs a lower voltage: red about $1.9\\,\\text{V}$, blue about $2.7\\,\\text{V}$. Review if needed in the chapter *Light from an LED and measuring the Planck constant*.",
+          "correct": true
+        },
+        {
+          "text": "The blue one, because the wavelength of blue light is shorter than that of red.",
+          "feedback": "A short wavelength means a large photon energy $\\tfrac{hc}{\\lambda}$. The electron must get at least this energy from the voltage supply, so the blue LED needs a higher voltage. Review in the chapter *Light from an LED and measuring the Planck constant*."
+        },
+        {
+          "text": "Both at the same time, because the LEDs are connected to the same voltage supply.",
+          "feedback": "The same voltage supply does not mean the same threshold. Each electron must get an energy $eU$ that is enough for the energy $hf$ of one photon, so the threshold depends on the colour of the light. Review in the chapter *Light from an LED and measuring the Planck constant*."
+        }
+      ]
+    },
+    {
+      "id": "lt-4",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting level 4: iodine-131 three weeks later",
+      "prompt": "The half-life of iodine-131 is $8.0$ days. A sample contains $N_0$ iodine-131 nuclei at first. What fraction of the nuclei is still undecayed after $24$ days?",
+      "choices": [
+        {
+          "text": "One eighth, because $24$ days is three half-lives.",
+          "feedback": "Correct. $N = N_0 \\left(\\tfrac12\\right)^{24/8.0} = N_0 \\left(\\tfrac12\\right)^{3} = \\tfrac18 N_0$. Review if needed in the chapter *The decay law and half-life*.",
+          "correct": true
+        },
+        {
+          "text": "None, because half decays in $8$ days and the rest in $16$ days.",
+          "feedback": "Decay is not steady. Each half-life halves the amount that is left, so the sample never disappears completely. Review in the chapter *The decay law and half-life*."
+        },
+        {
+          "text": "One third, because three half-lives leave one third.",
+          "feedback": "Half-lives multiply the amount by $\\tfrac12$; they do not divide it by their number. After three half-lives $\\tfrac12 \\cdot \\tfrac12 \\cdot \\tfrac12 = \\tfrac18$ is left. Review in the chapter *The decay law and half-life*."
+        }
+      ]
+    },
+    {
+      "id": "lt-5",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting level 5: the decay of carbon-14",
+      "prompt": "Carbon-14 ($Z = 6$) decays by beta minus decay. Which nucleus is formed? The atomic number of nitrogen is $7$ and that of boron $5$.",
+      "choices": [
+        {
+          "text": "Boron-14, because the nucleus loses an electron and its charge decreases.",
+          "feedback": "In beta minus decay a neutron of the nucleus turns into a proton, and an electron leaves the nucleus. The charge of the nucleus increases by one, so $Z$ is $7$. Review in the chapter *The atomic nucleus and radioactive decay*."
+        },
+        {
+          "text": "Carbon-13, because one particle leaves the nucleus and the mass number decreases.",
+          "feedback": "The mass number of the electron is zero, so the mass number $14$ is conserved. The charge number is conserved: $6 = 7 + (-1)$, so nitrogen-14 is formed. Review in the chapter *The atomic nucleus and radioactive decay*."
+        },
+        {
+          "text": "Nitrogen-14, because $Z$ increases by one and the mass number stays the same.",
+          "feedback": "Correct. ${}^{14}_{6}\\text{C} \\to {}^{14}_{7}\\text{N} + {}^{0}_{-1}\\text{e} + \\bar{\\nu}$: the mass number $14$ and the charge number $6$ are conserved. Review if needed in the chapter *The atomic nucleus and radioactive decay*.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "lt-6",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting level 6: radon in indoor air",
+      "prompt": "The alpha radiation of radon and its decay products is stopped by a sheet of paper. Why is radon still the largest source of radiation dose for people in Finland?",
+      "choices": [
+        {
+          "text": "Radon also emits gamma radiation, which passes through the walls of the house.",
+          "feedback": "The radon dose does not come from radiation passing through the walls. Radon is a gas that is breathed in, and its decay products stay in the lungs. Review in the chapter *Radiation dose and radiation safety in Finland*."
+        },
+        {
+          "text": "The decay products are breathed into the lungs, and there the alpha radiation ionises densely.",
+          "feedback": "Correct. In the lungs alpha radiation gives up its energy over a distance of a few cells, and its weighting factor is $20$. Review if needed in the chapter *Radiation dose and radiation safety in Finland*.",
+          "correct": true
+        },
+        {
+          "text": "Radon is everywhere, so its alpha radiation keeps passing through the skin.",
+          "feedback": "Alpha radiation does not pass through the dead surface layer of the skin. The danger is that the decay products of radon are breathed into the lungs, where alpha radiation hits the cells. Review in the chapter *Ionising radiation and the body*."
+        }
+      ]
+    },
+    {
+      "id": "aineisto",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Three unknown sources",
+      "source": "example",
+      "source_note": "The readings have been calculated from a model of penetrating power, with a half-value thickness of $5.5\\,\\text{mm}$ in lead for the gamma radiation of source C, and variation like that of measurements has been added to them.",
+      "text": "The school's radiation laboratory has three sealed radiation sources A, B and C whose labels have worn off. Each source in turn was placed in front of a GM tube at the same distance, and the counts were recorded for one minute with no absorber and behind three different absorbers. Without a source the background radiation was $20$ counts per minute.\n\n| Absorber | A | B | C |\n|---|---|---|---|\n| no absorber | $640$ | $530$ | $980$ |\n| sheet of paper | $22$ | $516$ | $962$ |\n| aluminium $3.0\\,\\text{mm}$ | $19$ | $24$ | $603$ |\n| lead $10\\,\\text{mm}$ | $21$ | $21$ | $196$ |\n\nFrom the table, work out what radiation each source emits. Then determine the half-value thickness of lead for the gamma radiation of source C and compare it with the value $5.5\\,\\text{mm}$ for the gamma radiation of caesium-137. Answer below with the half-value thickness. The model answer also justifies the types of radiation of the sources.",
+      "question": {
+        "type": "numeric",
+        "prompt": "How large is the half-value thickness of lead for the gamma radiation of source C?",
+        "answer": 5.79,
+        "unit": "mm",
+        "tolerance": 0.04,
+        "hints": [
+          "What part of the radiation of source C gets through $3.0\\,\\text{mm}$ of aluminium? What part through $10\\,\\text{mm}$ of lead?",
+          "First subtract the background of $20$ counts per minute. Behind the aluminium almost only gamma radiation is left, $583$ counts per minute.",
+          "$\\tfrac{176}{583} = \\left(\\tfrac12\\right)^{d/d_{1/2}}$ with $d = 10\\,\\text{mm}$. Solve $d_{1/2}$ with a logarithm."
+        ],
+        "mistakes": [
+          {
+            "value": 4.09,
+            "feedback": "You compared the reading behind the lead with the reading without an absorber. Without an absorber the beta radiation is also included, and the aluminium already stops it. The share of gamma radiation is the reading measured behind the aluminium."
+          },
+          {
+            "value": 6.17,
+            "feedback": "You did not subtract the background radiation. Subtract $20$ counts per minute from both readings before you calculate their ratio."
+          }
+        ],
+        "solution": "**Given:** counts per minute with no absorber and behind paper, $3.0\\,\\text{mm}$ of aluminium and $10\\,\\text{mm}$ of lead; background radiation $20$ counts per minute. The readings of source C $980$, $962$, $603$ and $196$; from the table the half-value thickness of lead $5.5\\,\\text{mm}$ for the gamma radiation of caesium-137\n\n**Find:** the half-value thickness $d_{1/2}$ of lead for the gamma radiation of source C in $\\text{mm}$\n\n**Principle:** Alpha radiation is stopped by paper and beta radiation by a few millimetres of aluminium, but gamma radiation is only attenuated: each half-value thickness halves it (chapter *Ionising radiation and the body*). The reading of source A drops to the background level behind the paper, so it emits only alpha radiation. The reading of source B drops to the background level only behind the aluminium, so it emits beta radiation. The reading of source C decreases behind the aluminium but does not vanish, so it emits beta and gamma radiation. Behind the aluminium almost only gamma radiation is left, so it is compared with the reading behind the lead. The background is subtracted first.\n\n**Formula:** $I = I_0 \\left(\\tfrac12\\right)^{d/d_{1/2}}$, so $\\ln\\tfrac{I_0}{I} = \\tfrac{d}{d_{1/2}} \\ln 2$ and $d_{1/2} = \\dfrac{d \\ln 2}{\\ln (I_0 : I)}$\n\n**Conversions:** The counts are in the same unit, so their ratio is a pure number, and no conversions are needed.\n\n**Substitution:** $I_0 = 603 - 20 = 583$ and $I = 196 - 20 = 176$ counts per minute, so $d_{1/2} = \\dfrac{10\\,\\text{mm} \\cdot \\ln 2}{\\ln (583 : 176)} = \\dfrac{10\\,\\text{mm} \\cdot 0.693}{1.198} = 5.79\\,\\text{mm}$\n\n**Answer:** $d_{1/2} \\approx 5.8\\,\\text{mm}$, two significant figures, because the lead thickness $10\\,\\text{mm}$ and the randomly varying counts do not give a better accuracy.\n\n**Reasonableness:** Ten millimetres is just under two half-value thicknesses, and the net reading fell to about a third, as $\\left(\\tfrac12\\right)^{1.7} \\approx 0.31$ predicts. The result is a little larger than the $5.5\\,\\text{mm}$ of the table, because the aluminium also attenuates the gamma radiation by about $6\\,\\%$, so $583$ is a slightly too small estimate of the original gamma radiation. Correcting for this gives $5.5\\,\\text{mm}$, so source C may well be caesium-137."
+      }
+    },
+    {
+      "id": "teoriatiivistelma",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava",
+        "Virheet",
+        "Kertaa"
+      ]
+    },
+    {
+      "id": "virhe-laser",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the mistake: the photons of a laser pointer",
+      "prompt": "The power of a green laser pointer is $5.0\\,\\text{mW}$ and its wavelength $532\\,\\text{nm}$. A student calculated the photon energy $\\tfrac{hc}{\\lambda} = 2.33\\,\\text{eV}$ and wrote: “The number of photons leaving per second is $\\tfrac{P}{E} = \\tfrac{5.0 \\cdot 10^{-3}\\,\\text{W}}{2.33\\,\\text{eV}} = 2.1 \\cdot 10^{-3}$.” What is wrong in the solution?",
+      "choices": [
+        {
+          "text": "The frequency should have been calculated first, because the photon energy is $hf$ and not $\\tfrac{hc}{\\lambda}$.",
+          "feedback": "The expressions are the same, because $f = \\tfrac{c}{\\lambda}$, and the energy $2.33\\,\\text{eV}$ is right. The mistake is in the units: the ratio of watts to electronvolts is not a number per second. Review in the chapter *Lasers and quantum structures*."
+        },
+        {
+          "text": "The power should have been divided by two, because only half of the energy ends up as light.",
+          "feedback": "The laser power $5.0\\,\\text{mW}$ is already the power of the light. The mistake is that the energy is in electronvolts: it must be converted into joules before dividing. Review in the chapter *Lasers and quantum structures*."
+        },
+        {
+          "text": "The energy should have been converted into joules; there are about $1.3 \\cdot 10^{16}$ photons per second.",
+          "feedback": "Correct. $2.33\\,\\text{eV} = 2.33 \\cdot 1.602 \\cdot 10^{-19}\\,\\text{J} = 3.73 \\cdot 10^{-19}\\,\\text{J}$, so $\\tfrac{N}{t} = \\tfrac{5.0 \\cdot 10^{-3}\\,\\text{W}}{3.73 \\cdot 10^{-19}\\,\\text{J}} \\approx 1.3 \\cdot 10^{16}\\,\\tfrac{1}{\\text{s}}$. Review if needed in the chapter *Lasers and quantum structures*.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "lue-kayra",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Read the graph: binding energy per nucleon",
+      "figure": "fy8-10/kayra-points",
+      "prompt": "The graph shows the binding energy per nucleon of nuclei as a function of the mass number. Which claim is correct?",
+      "choices": [
+        {
+          "text": "Joining two nuclei with $A \\approx 120$ into a nucleus with $A \\approx 240$ releases energy.",
+          "feedback": "In the graph $\\tfrac{E_\\text{B}}{A}$ decreases from about $8.5\\,\\text{MeV}$ to about $7.6\\,\\text{MeV}$, so the product would be less tightly bound, and the reaction would need energy. Review in the chapter *Mass defect and nuclear binding energy*."
+        },
+        {
+          "text": "Splitting a nucleus with $A \\approx 240$ in two releases about $200\\,\\text{MeV}$.",
+          "feedback": "Correct. The binding energy per nucleon increases by about $0.9\\,\\text{MeV}$, so about $240 \\cdot 0.9\\,\\text{MeV} \\approx 220\\,\\text{MeV}$ is released, that is about $200\\,\\text{MeV}$. Review if needed in the chapter *Fission, fusion and nuclear power*.",
+          "correct": true
+        },
+        {
+          "text": "Fusion of iron nuclei releases the most energy, because iron is at the peak of the graph.",
+          "feedback": "The nuclei at the peak are more tightly bound than all the others. From them neither fusion nor fission can lead to a more tightly bound nucleus, so iron cannot be used as an energy source. Review in the chapter *Mass defect and nuclear binding energy*."
+        }
+      ]
+    },
+    {
+      "id": "hiukkaset",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Justified claim: which decay is possible?",
+      "prompt": "The mass of a free neutron is $939.6\\,\\tfrac{\\text{MeV}}{c^2}$, that of a proton $938.3\\,\\tfrac{\\text{MeV}}{c^2}$ and that of an electron $0.51\\,\\tfrac{\\text{MeV}}{c^2}$. Which decay can happen spontaneously?",
+      "choices": [
+        {
+          "text": "$n \\to p + e^- + \\bar{\\nu}$, because all the numbers are conserved and $Q > 0$.",
+          "feedback": "Correct. Charge $0 = 1 - 1 + 0$, baryon number $1 = 1$, lepton number $0 = 1 - 1$, and $Q = (939.6 - 938.3 - 0.51)\\,\\text{MeV} \\approx 0.8\\,\\text{MeV} > 0$. Review if needed in the chapter *The Standard Model: elementary particles and interactions*.",
+          "correct": true
+        },
+        {
+          "text": "$p \\to n + e^+ + \\nu$, because charge and lepton number are conserved.",
+          "feedback": "The numbers are conserved, but a free proton is lighter than a neutron and a positron together, so $Q < 0$. In a nucleus beta plus decay can happen when the energy of the nucleus is enough. Review in the chapter *The Standard Model: elementary particles and interactions*."
+        },
+        {
+          "text": "$n \\to p + e^-$, because charge is conserved and the leftover mass becomes kinetic energy.",
+          "feedback": "Charge is conserved, but lepton number is not: at the start it is $0$ and at the end $1$. That is why an antineutrino $\\bar{\\nu}$ is always included. Review in the chapter *The Standard Model: elementary particles and interactions*."
+        }
+      ]
+    },
+    {
+      "id": "kaksoisrako",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Justified claim: electrons one at a time",
+      "prompt": "In a double-slit experiment the electron beam is so weak that there is only one electron in the apparatus at a time. Hits build up on the detector for a long time. Which claim is correct?",
+      "choices": [
+        {
+          "text": "No fringes form, because the electrons cannot collide with each other.",
+          "feedback": "The fringes are not caused by collisions of electrons. They form even though the electrons arrive one at a time, because the probability of each electron's hit is described by a wave through both slits. Review in the chapter *Light and electrons as waves and particles*."
+        },
+        {
+          "text": "The hits build up into fringes, even though each electron hits a single point.",
+          "feedback": "Correct. The position of a single hit cannot be predicted, but the wave gives the probability: hardly any electrons hit the dark fringes. Review if needed in the chapter *Light and electrons as waves and particles*.",
+          "correct": true
+        },
+        {
+          "text": "Each electron splits and spreads over the whole detector as a faint fringe.",
+          "feedback": "An electron is always detected whole at one point. The fringe pattern appears only as the distribution of many hits. Review in the chapter *Light and electrons as waves and particles*."
+        }
+      ]
+    },
+    {
+      "id": "rontgen",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "A dental X-ray",
+      "prompt": "In a dentist's X-ray tube electrons are accelerated from the cathode to the anode by a voltage of $65\\,\\text{kV}$. An electron braking in the anode can give all its kinetic energy to one photon. How short is the shortest wavelength of the X-rays?",
+      "answer": 0.01908,
+      "unit": "nm",
+      "tolerance": 0.02,
+      "hints": [
+        "How much kinetic energy does an electron get from a voltage $U$?",
+        "The electron gets the energy $eU$, and the largest photon energy is $hf = eU$.",
+        "$\\lambda_\\text{min} = \\tfrac{hc}{eU}$. Finally convert metres into nanometres."
+      ],
+      "mistakes": [
+        {
+          "value": 19.08,
+          "feedback": "The result is a thousand times too large. You substituted the voltage in kilovolts or answered in picometres: $65\\,\\text{kV} = 65\\,000\\,\\text{V}$ and $1\\,\\text{nm} = 1000\\,\\text{pm}$."
+        },
+        {
+          "value": 0.03816,
+          "feedback": "You divided by only half of the energy. All the kinetic energy $eU$ can go to one photon, so $hf_\\text{max} = eU$."
+        }
+      ],
+      "solution": "**Given:** accelerating voltage $U = 65\\,\\text{kV}$, $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$, $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$\n\n**Find:** the shortest wavelength $\\lambda_\\text{min}$ in $\\text{nm}$\n\n**Principle:** The electric field does the work $eU$ on the electron, so the electron arrives at the anode with kinetic energy $eU$. The largest photon energy arises when the electron gives all its kinetic energy to one photon. The largest energy corresponds to the shortest wavelength (chapter *Radiation in medicine and technology*).\n\n**Formula:** $hf_\\text{max} = \\dfrac{hc}{\\lambda_\\text{min}} = eU$, so $\\lambda_\\text{min} = \\dfrac{hc}{eU}$\n\n**Conversions:** $65\\,\\text{kV} = 65 \\cdot 1000\\,\\text{V} = 65\\,000\\,\\text{V}$ and finally $1\\,\\text{m} = 10^{9}\\,\\text{nm}$\n\n**Substitution:** $\\lambda_\\text{min} = \\dfrac{6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\cdot 2.998 \\cdot 10^{8}\\,\\tfrac{\\text{m}}{\\text{s}}}{1.602 \\cdot 10^{-19}\\,\\text{C} \\cdot 65\\,000\\,\\text{V}} = 1.908 \\cdot 10^{-11}\\,\\text{m} = 0.01908\\,\\text{nm}$\n\n**Answer:** $\\lambda_\\text{min} \\approx 0.019\\,\\text{nm}$, two significant figures like the voltage $65\\,\\text{kV}$.\n\n**Reasonableness:** The estimate $hc \\approx 1240\\,\\text{eV}\\,\\text{nm}$ gives $1240\\,\\text{eV}\\,\\text{nm} : 65\\,000\\,\\text{eV} \\approx 0.019\\,\\text{nm}$. The wavelength is tens of thousands of times shorter than that of visible light, as it should be for X-rays."
+    },
+    {
+      "id": "radiohiili",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "A dugout canoe found in a lake",
+      "prompt": "In a sample of a wooden dugout canoe raised from the bottom of a lake, the carbon-14 activity per gram of carbon is $72.0\\,\\%$ of the value of living wood. The half-life of carbon-14 is $5700$ years. How old is the canoe? Assume that the share of carbon-14 in living wood has stayed the same.",
+      "answer": 2701,
+      "unit": "a",
+      "tolerance": 0.02,
+      "hints": [
+        "When the tree was felled, no new carbon-14 came in any more. What happened to the activity after that?",
+        "$A = A_0 \\left(\\tfrac12\\right)^{t/T_{1/2}}$, where $\\tfrac{A}{A_0} = 0.720$.",
+        "$t = T_{1/2} \\cdot \\dfrac{\\ln (A_0 : A)}{\\ln 2}$"
+      ],
+      "mistakes": [
+        {
+          "value": 10470,
+          "feedback": "You calculated with the fraction $0.28$, which is the fraction of decayed nuclei. $72.0\\,\\%$ is left, so $\\tfrac{A_0}{A} = \\tfrac{1}{0.720}$."
+        },
+        {
+          "value": 3192,
+          "feedback": "You used a linear model, in which the activity would decrease by the same amount every year. The decay law halves what is left every half-life."
+        }
+      ],
+      "solution": "**Given:** the ratio of activities $\\tfrac{A}{A_0} = 0.720$, half-life $T_{1/2} = 5700\\,\\text{a}$\n\n**Find:** the age $t$ of the canoe in years\n\n**Principle:** A living tree takes carbon from the air, so its share of carbon-14 stays the same. When the tree was felled, carbon-14 only decayed, and the activity decreases according to the decay law (chapter *The decay law and half-life*). The activity per gram does not depend on the size of the sample.\n\n**Formula:** $\\dfrac{A}{A_0} = \\left(\\dfrac12\\right)^{t/T_{1/2}}$, so $\\ln\\dfrac{A_0}{A} = \\dfrac{t}{T_{1/2}} \\ln 2$ and $t = T_{1/2} \\cdot \\dfrac{\\ln (A_0 : A)}{\\ln 2}$\n\n**Conversions:** The age comes out in the same unit as the half-life, years, so no conversions are needed.\n\n**Substitution:** $t = 5700\\,\\text{a} \\cdot \\dfrac{\\ln (1 : 0.720)}{\\ln 2} = 5700\\,\\text{a} \\cdot \\dfrac{0.3285}{0.6931} = 2701\\,\\text{a}$\n\n**Answer:** $t \\approx 2700\\,\\text{a}$, two significant figures like the half-life $5700\\,\\text{a}$.\n\n**Reasonableness:** One half-life would leave $50\\,\\%$, so $72\\,\\%$ means less than half a half-life, and $2700\\,\\text{a} \\approx 0.47\\,T_{1/2}$. Check: $\\left(\\tfrac12\\right)^{0.474} \\approx 0.72$."
+    },
+    {
+      "id": "fuusio",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Fusion of two deuterium nuclei",
+      "prompt": "In a fusion experiment two deuterium nuclei join: ${}^{2}_{1}\\text{H} + {}^{2}_{1}\\text{H} \\to {}^{3}_{2}\\text{He} + {}^{1}_{0}\\text{n}$. The atomic masses are ${}^{2}\\text{H}$: $2.014102\\,\\text{u}$, ${}^{3}\\text{He}$: $3.016029\\,\\text{u}$ and the neutron $1.008665\\,\\text{u}$. How much energy does one reaction release?",
+      "answer": 3.27,
+      "unit": "MeV",
+      "tolerance": 0.02,
+      "hints": [
+        "Where does the released energy come from? Compare the masses of the reactants and the products.",
+        "$Q = (m_\\text{initial} - m_\\text{final})\\,c^2$. Atomic masses can be used, because there are two electrons on both sides.",
+        "Substitute the mass difference in atomic mass units and $1\\,\\text{u} = 931.5\\,\\tfrac{\\text{MeV}}{c^2}$."
+      ],
+      "mistakes": [
+        {
+          "value": 942.8,
+          "feedback": "You forgot the neutron from the products. The mass of the products is the sum of the masses of helium-3 and the neutron."
+        },
+        {
+          "value": 5.24e-13,
+          "feedback": "This is the energy in joules. The question asks for megaelectronvolts, which you get directly by multiplying the mass difference by $931.5\\,\\tfrac{\\text{MeV}}{\\text{u}}$."
+        }
+      ],
+      "solution": "**Given:** $m({}^{2}\\text{H}) = 2.014102\\,\\text{u}$, $m({}^{3}\\text{He}) = 3.016029\\,\\text{u}$, $m_\\text{n} = 1.008665\\,\\text{u}$, $1\\,\\text{u} = 931.5\\,\\tfrac{\\text{MeV}}{c^2}$\n\n**Find:** the energy $Q$ released by one reaction in $\\text{MeV}$\n\n**Principle:** In a nuclear reaction the mass number and the charge number are conserved, but the mass is not: the products are lighter, and the energy corresponding to the mass difference is released as kinetic energy of the products (chapters *Mass defect and nuclear binding energy* and *Fission, fusion and nuclear power*). Atomic masses can be used, because there are two electrons on each side.\n\n**Formula:** $Q = (m_\\text{initial} - m_\\text{final})\\,c^2 = \\left(2m({}^{2}\\text{H}) - m({}^{3}\\text{He}) - m_\\text{n}\\right)c^2$\n\n**Conversions:** The mass difference is substituted in atomic mass units, and $1\\,\\text{u} = 931.5\\,\\tfrac{\\text{MeV}}{c^2}$ is substituted for the unit, so that $c^2$ cancels.\n\n**Substitution:** $\\Delta m = 2 \\cdot 2.014102\\,\\text{u} - 3.016029\\,\\text{u} - 1.008665\\,\\text{u} = 0.003510\\,\\text{u}$, so $Q = 0.003510 \\cdot 931.5\\,\\tfrac{\\text{MeV}}{c^2} \\cdot c^2 = 3.270\\,\\text{MeV}$\n\n**Answer:** $Q \\approx 3.27\\,\\text{MeV}$, three significant figures, because the mass difference $0.003510\\,\\text{u}$ is known to four figures and the conversion factor $931.5$ to four.\n\n**Reasonableness:** The mass decreases by only about $0.09\\,\\%$, which is typical of nuclear reactions. The result is smaller than the $17.6\\,\\text{MeV}$ of deuterium–tritium fusion, because helium-3 is much less tightly bound than helium-4."
+    },
+    {
+      "id": "suojaus",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "A gamma source in a storeroom",
+      "prompt": "An industrial gauge contains a caesium-137 source whose dose rate is $1.6\\,\\tfrac{\\text{mSv}}{\\text{h}}$ at a distance of one metre. In the storeroom a worker is $5.0\\,\\text{m}$ from the source, and there is $11\\,\\text{mm}$ of lead in between. The half-value thickness of lead is $5.5\\,\\text{mm}$. How large is the dose rate where the worker is? Answer in $\\mu\\text{Sv/h}$.",
+      "answer": 16.0,
+      "unit": "µSv/h",
+      "tolerance": 0.02,
+      "hints": [
+        "Two things reduce the dose rate: the distance and the lead. Calculate the effect of each separately as a factor.",
+        "The distance $1.0\\,\\text{m} \\to 5.0\\,\\text{m}$ gives the factor $\\left(\\tfrac{1.0}{5.0}\\right)^2$, and $11\\,\\text{mm}$ is two half-value thicknesses.",
+        "$\\dot{H} = 1.6\\,\\tfrac{\\text{mSv}}{\\text{h}} \\cdot \\tfrac{1}{25} \\cdot \\tfrac14$, and $1\\,\\text{mSv} = 1000\\,\\mu\\text{Sv}$."
+      ],
+      "mistakes": [
+        {
+          "value": 80.0,
+          "feedback": "You reduced the dose rate in proportion to the distance, by the factor $\\tfrac15$. The dose rate of a point source decreases in proportion to the square of the distance: $\\tfrac{1}{25}$."
+        },
+        {
+          "value": 64.0,
+          "feedback": "You forgot the effect of the lead. $11\\,\\text{mm}$ is two half-value thicknesses, so it lets a quarter through."
+        },
+        {
+          "value": 0.016,
+          "feedback": "This is the dose rate in $\\tfrac{\\text{mSv}}{\\text{h}}$. The question asks for microsieverts per hour: $1\\,\\text{mSv} = 1000\\,\\mu\\text{Sv}$."
+        }
+      ],
+      "solution": "**Given:** $\\dot{H}_1 = 1.6\\,\\tfrac{\\text{mSv}}{\\text{h}}$ at the distance $r_1 = 1.0\\,\\text{m}$, the worker's distance $r_2 = 5.0\\,\\text{m}$, lead thickness $d = 11\\,\\text{mm}$, half-value thickness $d_{1/2} = 5.5\\,\\text{mm}$\n\n**Find:** the dose rate $\\dot{H}$ where the worker is, in $\\mu\\text{Sv/h}$\n\n**Principle:** From a point source the radiation spreads over the surface of a sphere whose area grows as the square of the distance, so the dose rate decreases as $\\tfrac{1}{r^2}$. Lead attenuates gamma radiation so that each half-value thickness halves it (chapter *Radiation dose and radiation safety in Finland*). The effects are independent of each other, so the factors are multiplied.\n\n**Formula:** $\\dot{H} = \\dot{H}_1 \\left(\\dfrac{r_1}{r_2}\\right)^2 \\left(\\dfrac12\\right)^{d/d_{1/2}}$\n\n**Conversions:** Finally $1\\,\\text{mSv} = 1000\\,\\mu\\text{Sv}$. The ratio of the thicknesses is a pure number, because both are in millimetres.\n\n**Substitution:** $\\dot{H} = 1.6\\,\\tfrac{\\text{mSv}}{\\text{h}} \\cdot \\left(\\dfrac{1.0\\,\\text{m}}{5.0\\,\\text{m}}\\right)^2 \\cdot \\left(\\dfrac12\\right)^{11 : 5.5} = 1.6\\,\\tfrac{\\text{mSv}}{\\text{h}} \\cdot 0.040 \\cdot 0.25 = 0.016\\,\\tfrac{\\text{mSv}}{\\text{h}} = 16\\,\\tfrac{\\mu\\text{Sv}}{\\text{h}}$\n\n**Answer:** $\\dot{H} \\approx 16\\,\\mu\\text{Sv/h}$, two significant figures like the dose rate $1.6\\,\\tfrac{\\text{mSv}}{\\text{h}}$.\n\n**Reasonableness:** The distance reduces the dose rate $25$-fold and the lead $4$-fold, $100$-fold in all, and $1600\\,\\mu\\text{Sv/h} : 100 = 16\\,\\mu\\text{Sv/h}$. The result is still hundreds of times larger than the outdoor background radiation, so nobody should stay in the storeroom without need."
+    },
+    {
+      "id": "lisaa",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "At the end of the lesson come the matriculation-exam-style problems. Write your solution in your notebook or on the computer as in the exam, and only then assess it with the model answer and the marking scheme."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "In a picture in the book the $1\\text{s}$ orbital of the hydrogen atom is drawn as a sphere of radius $0.14\\,\\text{nm}$. What does the picture show?",
+      "choices": [
+        {
+          "text": "The orbit along which the electron circles the nucleus at a steady speed.",
+          "feedback": "An electron has no observable orbit. The orbits of the Bohr model were abandoned, but the energy levels remained. An orbital describes the probability of detecting the electron. Review in the chapter *The wave-mechanical model of the atom and orbitals*."
+        },
+        {
+          "text": "The size of the electron, since the electron is spread evenly over the whole sphere.",
+          "feedback": "An electron is always detected whole at one point. The orbital tells where it is likely to be detected, and the boundary has been chosen so that about $90\\,\\%$ of the detections are inside the sphere. Review in the chapter *The wave-mechanical model of the atom and orbitals*."
+        },
+        {
+          "text": "The region inside which the electron is detected with a probability of about $90\\,\\%$.",
+          "feedback": "Correct. One measurement gives one random point, and of the points of many measurements about $90\\,\\%$ are inside the sphere. Review if needed in the chapter *The wave-mechanical model of the atom and orbitals*.",
+          "correct": true
+        }
+      ],
+      "practice": "Review the probability interpretation of the orbital in the chapter [*The wave-mechanical model of the atom and orbitals*](fy8-5.html) and the energy levels in the chapter [*Energy levels of the hydrogen atom and the Bohr model*](fy8-3.html)."
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculation",
+      "prompt": "According to its certificate, the activity of the school's caesium-137 source was $370\\,\\text{kBq}$ in 1996. The half-life of caesium-137 is $30.1$ years, and the mass of one atom is $137\\,\\text{u}$, where $1\\,\\text{u} = 1.66 \\cdot 10^{-27}\\,\\text{kg}$. How large is the mass of caesium-137 in the source in 2026? Answer in nanograms.",
+      "answer": 57.81,
+      "unit": "ng",
+      "tolerance": 0.02,
+      "hints": [
+        "First calculate the activity in 2026. How many half-lives have passed?",
+        "The activity is $A = \\lambda N$, where $\\lambda = \\tfrac{\\ln 2}{T_{1/2}}$, so the number of nuclei is $N = \\tfrac{A T_{1/2}}{\\ln 2}$. The half-life in seconds: $1\\,\\text{a} = 3.156 \\cdot 10^{7}\\,\\text{s}$.",
+        "The mass is $m = N \\cdot 137\\,\\text{u}$, and $1\\,\\text{kg} = 10^{12}\\,\\text{ng}$."
+      ],
+      "mistakes": [
+        {
+          "value": 115.4,
+          "feedback": "You used the activity of 1996. The activity has almost halved in $30$ years, so first calculate the activity in 2026."
+        },
+        {
+          "value": 40.07,
+          "feedback": "You multiplied the activity by the half-life. $N = \\tfrac{A}{\\lambda} = \\tfrac{A T_{1/2}}{\\ln 2}$, so also divide by $\\ln 2 \\approx 0.693$."
+        },
+        {
+          "value": 1.832e-06,
+          "feedback": "You substituted the half-life in years, although the activity is decays per second. Convert the half-life into seconds."
+        }
+      ],
+      "practice": "Review the decay law, the decay constant and activity in the chapter [*The decay law and half-life*](fy8-9.html).",
+      "solution": "**Given:** activity in 1996 $A_0 = 370\\,\\text{kBq}$, time $t = 30\\,\\text{a}$, half-life $T_{1/2} = 30.1\\,\\text{a}$, mass of an atom $m_\\text{a} = 137\\,\\text{u}$, $1\\,\\text{u} = 1.66 \\cdot 10^{-27}\\,\\text{kg}$, $1\\,\\text{a} = 3.156 \\cdot 10^{7}\\,\\text{s}$\n\n**Find:** the mass $m$ of caesium-137 in 2026 in $\\text{ng}$\n\n**Principle:** The activity decreases by the same decay law as the number of nuclei. The activity is the number of nuclei multiplied by the decay constant, which gives the probability per second that one nucleus decays (chapter *The decay law and half-life*). The source contains an enormous number of nuclei, so the law holds well. The mass is the number of nuclei multiplied by the mass of one atom.\n\n**Formula:** $A = A_0 \\left(\\tfrac12\\right)^{t/T_{1/2}}$, $A = \\dfrac{\\ln 2}{T_{1/2}}\\,N$ and $m = N m_\\text{a}$, so $m = \\dfrac{A_0 \\left(\\tfrac12\\right)^{t/T_{1/2}}\\,T_{1/2}\\,m_\\text{a}}{\\ln 2}$\n\n**Conversions:** $370\\,\\text{kBq} = 370 \\cdot 1000\\,\\tfrac{1}{\\text{s}} = 3.70 \\cdot 10^{5}\\,\\tfrac{1}{\\text{s}}$, $T_{1/2} = 30.1 \\cdot 3.156 \\cdot 10^{7}\\,\\text{s} = 9.500 \\cdot 10^{8}\\,\\text{s}$, $m_\\text{a} = 137 \\cdot 1.66 \\cdot 10^{-27}\\,\\text{kg} = 2.274 \\cdot 10^{-25}\\,\\text{kg}$ and finally $1\\,\\text{kg} = 10^{12}\\,\\text{ng}$\n\n**Substitution:** $A = 3.70 \\cdot 10^{5}\\,\\tfrac{1}{\\text{s}} \\cdot \\left(\\tfrac12\\right)^{30 : 30.1} = 1.854 \\cdot 10^{5}\\,\\tfrac{1}{\\text{s}}$, $N = \\dfrac{1.854 \\cdot 10^{5}\\,\\tfrac{1}{\\text{s}} \\cdot 9.500 \\cdot 10^{8}\\,\\text{s}}{0.6931} = 2.541 \\cdot 10^{14}$ and $m = 2.541 \\cdot 10^{14} \\cdot 2.274 \\cdot 10^{-25}\\,\\text{kg} = 5.78 \\cdot 10^{-11}\\,\\text{kg} = 57.8\\,\\text{ng}$\n\n**Answer:** $m \\approx 57.8\\,\\text{ng}$, three significant figures like the activity $370\\,\\text{kBq}$ and the half-life $30.1\\,\\text{a}$.\n\n**Reasonableness:** Thirty years is almost one half-life, so the activity has almost halved, as $185\\,\\text{kBq}$ shows. A source of hundreds of thousands of becquerels contains only tens of nanograms of caesium, because the decay probability of a single nucleus is small, $\\lambda \\approx 7.3 \\cdot 10^{-10}\\,\\tfrac{1}{\\text{s}}$."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain",
+      "figure": "fy8-11/sidosenergia-luku",
+      "prompt": "A nuclear power plant gets its energy from the fission of uranium-235, the Sun from the fusion of hydrogen into helium. Using the graph, explain why both the splitting of a heavy nucleus and the joining of light nuclei release energy, and why the mass decreases in both.",
+      "criteria": [
+        "The answer states that the binding energy per nucleon is largest for medium-heavy nuclei, around $A = 60$, and smaller for both light and heavy nuclei.",
+        "The answer justifies that fission and fusion produce nuclei that are closer to the peak and so more tightly bound, so the binding energy increases and the difference is released.",
+        "The answer explains that a larger binding energy means a larger mass defect: the mass of the products is smaller, and the energy $Q = \\Delta m\\,c^2$ corresponding to the mass difference is released.",
+        "The answer states that the mass number and the charge number are conserved, although the mass decreases."
+      ],
+      "model": "The graph shows that the binding energy per nucleon is largest for medium-heavy nuclei, around the mass number $60$, and smaller for both light and heavy nuclei. When uranium-235 splits into two medium-heavy nuclei, the nucleons move from the right edge of the graph towards the peak, and the binding energy per nucleon increases from about $7.6\\,\\text{MeV}$ to about $8.5\\,\\text{MeV}$. When hydrogen fuses into helium, the nucleons move upwards from the left edge. In both, the products are more tightly bound than the reactants, so the total binding energy increases and the difference is released as kinetic energy and gamma radiation. A larger binding energy means a larger mass defect $\\Delta m = \\tfrac{E_\\text{B}}{c^2}$: the total mass of the products is smaller than that of the reactants, and the released energy is $Q = (m_\\text{initial} - m_\\text{final})\\,c^2$. The mass number and the charge number are conserved, but the mass is not.",
+      "practice": "Review the binding energy curve in the chapter [*Mass defect and nuclear binding energy*](fy8-10.html) and the reaction energy in the chapter [*Fission, fusion and nuclear power*](fy8-11.html)."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally two quick questions. Answer on your own first, and only then open the answer."
+    }
+  ]
+}

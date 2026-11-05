@@ -3,6 +3,7 @@
     {
       "id": "fy7-3-L1-01",
       "level": 1,
+      "core": true,
       "text": "Pitkässä suorassa johtimessa kulkee virta $12\\,\\text{A}$. Kuinka suuri on magneettivuon tiheys $3{,}0\\,\\text{cm}$:n etäisyydellä johtimesta? Anna vastaus mikrotesloina.",
       "answer": 80,
       "unit": "µT",
@@ -11,6 +12,7 @@
     {
       "id": "fy7-3-L1-02",
       "level": 1,
+      "core": true,
       "text": "Käämissä on $500$ kierrosta, ja sen pituus on $25\\,\\text{cm}$. Käämissä kulkee virta $1{,}2\\,\\text{A}$. Kuinka suuri on magneettivuon tiheys käämin keskellä? Käämi on pitkä paksuuteensa verrattuna. Anna vastaus millitesloina.",
       "answer": 3.0,
       "unit": "mT",
@@ -38,6 +40,59 @@
       "text": "Fysiikan luokan käämissä on $300$ kierrosta, ja sen pituus on $15\\,\\text{cm}$. Käämissä kulkee virta $0{,}40\\,\\text{A}$. Kuinka suuri on magneettivuon tiheys käämin keskellä? Käämi on pitkä paksuuteensa verrattuna. Anna vastaus millitesloina.",
       "answer": 1.0,
       "unit": "mT",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-3-L1-06",
+      "level": 1,
+      "core": true,
+      "text": "Pystysuorassa pitkässä johtimessa kulkee virta ylöspäin. Mikä seuraavista kuvaa oikein johtimen magneettikentän suunnan ylhäältä katsottuna ja sen, miten suunta muuttuu, kun virran suunta käännetään?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Kenttäviivat ovat ympyröitä vastapäivään, ja virran kääntö kääntää kierron, koska suunta määräytyy oikean käden säännöllä.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Kenttäviivat ovat ympyröitä vastapäivään, ja virran kääntö ei muuta kiertoa, koska suunta määräytyy johtimen aineen mukaan.",
+          "feedback": "Kentän suunta ei riipu johtimen aineesta vaan virran suunnasta. Kun virta kääntyy, kenttä kääntyy mukana, koska kenttä syntyy liikkuvista varauksista."
+        },
+        {
+          "text": "Kenttäviivat ovat suoria johtimesta poispäin, ja virran kääntö kääntää ne johdinta kohti, koska virta työntää kentän ulos.",
+          "feedback": "Virtajohtimen kenttäviivat eivät ala johtimesta eivätkä pääty siihen: ne ovat johtimen ympärillä samankeskisiä ympyröitä. Kenttä ei säteile johtimesta ulospäin kuten sähkövaraus kenttään."
+        },
+        {
+          "text": "Kenttäviivat ovat ympyröitä vastapäivään, ja virran kääntö kääntää kierron, koska suunta määräytyy oikean käden säännöllä.",
+          "feedback": "Oikein: kun oikean käden peukalo osoittaa virran suuntaan ylös, sormet kiertävät johdinta ylhäältä katsottuna vastapäivään. Kun virta kääntyy, peukalo osoittaa alas ja kentän kierto kääntyy myötäpäivään.",
+          "correct": true
+        },
+        {
+          "text": "Kenttäviivat ovat ympyröitä myötäpäivään, ja virran kääntö kääntää kierron, koska suunta määräytyy vasemman käden säännöllä.",
+          "feedback": "Kurssilla käytetään oikean käden sääntöä: peukalo virran suuntaan, sormet kentän suuntaan. Vasemman käden säännöllä suunta tulisi väärin päin, vaikka kentän kääntyminen virran mukana on oikea ajatus."
+        }
+      ]
+    },
+    {
+      "id": "fy7-3-L1-07",
+      "level": 1,
+      "kind": [
+        "reasoning"
+      ],
+      "text": "Käämissä on $400$ kierrosta $20\\,\\text{cm}$:n pituudella, ja siinä kulkee virta $0{,}75\\,\\text{A}$. Käämiin kelataan lisää lankaa niin, että kierroksia on yhteensä $1000$ samalla $20\\,\\text{cm}$:n pituudella. Virta pysyy samana. Käämi on pitkä paksuuteensa verrattuna. Kuinka suuri on magneettivuon tiheys käämin keskellä lisäyksen jälkeen? Anna vastaus millitesloina.",
+      "answer": 4.7,
+      "unit": "mT",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-3-L1-08",
+      "level": 1,
+      "kind": [
+        "reasoning"
+      ],
+      "text": "Pitkässä suorassa johtimessa ja pitkässä käämissä kulkee sama virta $2{,}0\\,\\text{A}$. Käämissä on $250$ kierrosta $10\\,\\text{cm}$:n pituudella. Käämi on pitkä paksuuteensa verrattuna. Kuinka moninkertainen on käämin keskikohdan magneettivuon tiheys siihen verrattuna, joka johtimella on $2{,}0\\,\\text{cm}$:n etäisyydellä johtimesta?",
+      "answer": 310,
+      "unit": "kertaa",
       "tolerance": 0.02
     }
   ],
@@ -73,6 +128,120 @@
       "answer": 80,
       "unit": "µT",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-3-L2-05",
+      "level": 2,
+      "core": true,
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "text": "Opiskelija mittaa magneettikenttäanturilla käämin keskellä magneettivuon tiheyden $B$ eri virroilla $I$. Käämissä on $600$ kierrosta, ja sen pituus on $0{,}300\\,\\text{m}$. Aineisto on esimerkkiaineisto.\n\na) Piirrä mittauspisteistä kuvaaja $(I,\\,B)$ ja sovita pisteisiin suora. Määritä suoran kulmakerroin $A$.\n\nb) Laske kulmakertoimesta tyhjiön permeabiliteetin arvio $\\mu_0 = A l : N$ ja anna se yksikössä $\\mu\\text{Vs/(Am)}$ eli $10^{-6}\\,\\text{Vs/(Am)}$.\n\nAnna vastauskenttään kohdan b) tulos.",
+      "answer": 1.26,
+      "unit": "µVs/(Am)",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Käämin sisäkenttä virran funktiona (esimerkkiaineisto)",
+        "columns": [
+          "$I\\,(\\text{A})$",
+          "$B\\,(\\text{mT})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.05"
+          ],
+          [
+            "0.5",
+            "1.31"
+          ],
+          [
+            "1.0",
+            "2.60"
+          ],
+          [
+            "1.5",
+            "3.80"
+          ],
+          [
+            "2.0",
+            "5.12"
+          ],
+          [
+            "2.5",
+            "6.31"
+          ],
+          [
+            "3.0",
+            "7.60"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-3-L2-06",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "Pitkän suoran johtimen magneettivuon tiheys mitattiin kolmella etäisyydellä $r$ johtimesta. Maan kentän vaikutus on vähennetty tuloksista, ja virta on tuntematon. Aineisto on esimerkkiaineisto.\n\na) Laske jokaiselle riville tulo $B \\cdot r$ ja päättele sen avulla, onko $B$ kääntäen verrannollinen etäisyyteen $r$.\n\nb) Päättele johtimen virta $I$ tulon $B \\cdot r$ keskiarvosta.\n\nc) Kuinka suuri magneettivuon tiheys on $3{,}0\\,\\text{cm}$:n etäisyydellä johtimesta? Anna vastaus mikrotesloina.\n\nd) Arvioi magneettivuon tiheys $0{,}50\\,\\text{cm}$:n etäisyydellä johtimesta kääntäen verrannollisuuden avulla. Anna tulos mikrotesloina.\n\nAnna vastauskenttään kohdan c) tulos.",
+      "answer": 54,
+      "unit": "µT",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Suoran johtimen kenttä etäisyyden funktiona (esimerkkiaineisto)",
+        "columns": [
+          "$r\\,(\\text{cm})$",
+          "$B\\,(\\mu\\text{T})$"
+        ],
+        "rows": [
+          [
+            "1.0",
+            "161"
+          ],
+          [
+            "2.0",
+            "79"
+          ],
+          [
+            "4.0",
+            "41"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-3-L2-07",
+      "level": 2,
+      "kind": [
+        "experiment",
+        "error"
+      ],
+      "text": "Opiskelija mittaa käämin sisäkenttää anturilla, joka mittaa magneettivuon tiheyden komponentin anturin omassa suunnassa.\n\nHän asettaa anturin käämin keskelle, mutta anturi on kääntynyt $60\\,{}^\\circ$ käämin akseliin nähden. Käämi on pitkä, ja sen sisällä kenttä on homogeeninen ja akselin suuntainen.\n\nMikä seuraavista kuvaa oikein, miten tämä vaikuttaa mittaustulokseen?",
+      "answer": "Lukema on liian pieni, koska anturi mittaa vain oman suuntansa komponentin eikä koko kenttää.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Lukema on oikea, koska käämin sisällä kenttä on homogeeninen eikä anturin suunnalla ole väliä.",
+          "feedback": "Kentän homogeenisuus tarkoittaa, että suuruus ja suunta ovat joka kohdassa samat, ei sitä, että anturin suunta olisi yhdentekevä. Anturi mittaa komponentin omassa suunnassaan, joten vinossa oleva anturi näyttää vähemmän."
+        },
+        {
+          "text": "Lukema on liian suuri, koska vinossa oleva anturi on lähempänä käämin lankoja ja niiden kenttää.",
+          "feedback": "Kenttä ei voimistu langan lähellä käämin sisällä: se on homogeeninen koko poikkileikkauksessa. Anturin kallistus ei muuta kenttää vaan sen, kuinka suuri osa kentästä näkyy anturin suunnassa."
+        },
+        {
+          "text": "Lukema on liian pieni, koska anturin kallistus heikentää käämin kenttää ja langat jäävät sivulle.",
+          "feedback": "Anturin asento ei vaikuta käämin kenttään, koska anturi vain mittaa kenttää. Lukema on pieni siksi, että anturi mittaa vain osan kentästä, ei siksi, että kenttä itse heikkenisi."
+        },
+        {
+          "text": "Lukema on liian pieni, koska anturi mittaa vain oman suuntansa komponentin eikä koko kenttää.",
+          "feedback": "Oikein: anturi näyttää kentän komponentin omassa suunnassaan. Kun kulma akseliin on $60\\,{}^\\circ$, komponentti on $B \\cos 60\\,{}^\\circ = 0{,}50\\,B$, joten lukema on vain puolet todellisesta, vaikka kenttä itse ei muutu.",
+          "correct": true
+        }
+      ]
     }
   ],
   "level3": [
@@ -99,6 +268,60 @@
       "answer": 4.0,
       "unit": "cm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-3-L3-04",
+      "level": 3,
+      "kind": [
+        "data",
+        "graph",
+        "reasoning"
+      ],
+      "text": "Kompassi on pöydällä, ja sen neula osoittaa pohjoiseen. Suoraan kompassin yläpuolelle, $4{,}0\\,\\text{cm}$:n korkeudelle, viritetään pohjois–eteläsuuntainen pitkä johdin. Johtimen kenttä on kompassin kohdalla vaakasuora ja kohtisuorassa Maan kentän vaakakomponenttia $B_\\text{h}$ vastaan. Kun johtimeen kytketään virta $I$, neula kääntyy kulman $\\alpha$. Kokeessa virtaa muutetaan viidesti ja jokaisella virralla luetaan neulan kulma. Aineisto on esimerkkiaineisto.\n\na) Etsi suure, jonka kuvaaja virran funktiona on suora, ja perustele valintasi. Sovita pisteisiin suora.\n\nb) Määritä suoran kulmakertoimen avulla Maan magneettikentän vaakakomponentti $B_\\text{h}$ mikrotesloina.\n\nc) Perustele, miksi kulma $\\alpha$ itse ei ole suoraan verrannollinen virtaan ja miksi neulan kulma lähestyy kulmaa $90\\,{}^\\circ$, vaikka virtaa kasvatettaisiin paljon.\n\nAnna vastauskenttään kohdan b) tulos.",
+      "answer": 16,
+      "unit": "µT",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Kompassin neulan kääntyminen virran funktiona (esimerkkiaineisto)",
+        "columns": [
+          "$I\\,(\\text{A})$",
+          "$\\alpha\\,({}^\\circ)$"
+        ],
+        "rows": [
+          [
+            "1.0",
+            "17.5"
+          ],
+          [
+            "2.0",
+            "32.0"
+          ],
+          [
+            "3.0",
+            "43.5"
+          ],
+          [
+            "4.0",
+            "51.0"
+          ],
+          [
+            "5.0",
+            "57.5"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-3-L3-05",
+      "level": 3,
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "text": "Opiskelija suunnittelee sähkömagneettia. Hänellä on $30\\,\\text{m}$ eristettyä kuparilankaa, jonka metallin halkaisija on $0{,}50\\,\\text{mm}$ ja eristeineen $0{,}55\\,\\text{mm}$. Kuparin resistiivisyys on $\\rho = 1{,}7 \\cdot 10^{-8}\\,\\Omega\\,\\text{m}$. Hän kelaa langan yhteen kerrokseen tiiviisti toistensa viereen pahviputken ympärille. Putken ulkohalkaisija on $3{,}0\\,\\text{cm}$, ja yhden kierroksen langan pituus on $\\pi \\cdot 3{,}0\\,\\text{cm}$. Käämi liitetään virtalähteeseen, jonka jännite on $6{,}0\\,\\text{V}$. Oletetaan, että virtalähde antaa tarvittavan virran ja että virtapiirin resistanssi on vain langan resistanssi. Käämi on riittävän pitkä, jotta pitkän käämin kaava pätee.\n\na) Laske käämin kierrosten lukumäärä $N$ ja pituus $l$.\n\nb) Laske langan resistanssi $R = \\rho L : A$ ja käämin virta $I$.\n\nc) Laske magneettivuon tiheys käämin keskellä millitesloina.\n\nd) Perustele, mitä käämin keskikentälle tapahtuisi, jos lanka olisi $60\\,\\text{m}$ pitkä ja jännite pysyisi samana. Kasvaako kenttä, pieneneekö se vai pysyykö se ennallaan? Käämi pysyy yksikerroksisena.\n\nAnna vastauskenttään kohdan c) tulos.",
+      "answer": 5.3,
+      "unit": "mT",
+      "tolerance": 0.03
     }
   ]
 }

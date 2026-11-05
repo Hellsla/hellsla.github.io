@@ -1,19 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: cd77831d711f3f85
+CONTENT-HASH: cd5b133c0f7ecf25
 
 ## Blocking
 
 ## Polish
-- exercises/exercises.json:99 (L3-03) — "Kumpikin pallo on kosketuksissa seinään ajan 0,020 s": the clay ball sticks, so its contact never ends; the intended quantity is the stopping/collision time — fix: "Kummankin pallon törmäys kestää 0,020 s" (or "savipallo pysähtyy 0,020 s:ssa").
-- exercises/solutions.md:59 (L2-01) — a deceleration of ≈0,51 g is firm braking rather than "tavallista jarrutusta" — fix: "vastaa reipasta jarrutusta kuivalla tiellä".
+- exercises/solutions.md:175 (L2-07) — the rounding reason cites "nopeudessa 1,50 m/s pyöristettynä", but that speed has three significant figures and is not used in the calculation (Δv = I/m) — write "kaksi merkitsevää numeroa kuten massassa 0,50 kg".
+- exercises/exercises.json:362 (L3-05) — a 12 ms contact time read from video at 1 ms resolution needs a high-speed camera (an ordinary 30–240 fps video gives 4–33 ms steps) — write "kuvasi suurnopeuskameralla" or give the frame rate.
+- exercises/exercises.json:362 (L3-05 c) — the stick-versus-bounce comparison repeats the idea of L3-03 (clay ball vs rubber ball). Acceptable as one part of a multi-step task; c) could instead ask for the fall and rise heights.
 
 ## Checked
-- All 12 answers recomputed in one script with my own formulas; all equal exercises.json and answers.py (5,1; 6,0; 4,86; 6,0; 150; 6,0 kN; 6,44 kN; 1,5; 25,65; 3,0; 57,6 km/h; 60 N).
-- Signs: L2-03 positive toward the wall, v = −11 m/s, |I| = 1,5 N·s pointing away from the wall; L2-04 force along motion.
-- L3-01 figure ex-potku (figures.py): trapezoid 0→60 N at 0,20 s, 60 N to 0,80 s, 0 at 1,00 s → 48 N·s, matches solution.
-- Conditions stated in tasks: weight neglected (L1-03, L2-02 with F/G ≈ 14 000 justified), friction/air resistance neglected (L2-01, L2-04, L3-01), only belt force horizontally (L3-02).
-- Units and conversions (54 km/h = 15 m/s, 46 g, 0,50 ms, ×3,6) correct; rounding to two significant figures justified by the data.
-- Reasonableness checks are real checks (L3-02 10 kN ≈ 14 × weight; L2-03 sign-error value 0,18 N·s shown too small).
-- Solutions solve symbolically before substitution; impulse principle applied to the net force each time.
-- L3-03 uses Newton's third law correctly to turn the wall's force on the ball into the ball's force on the wall.
-- Typo fix only since review: exercises.json L3-01 "Lasta istuu pulkassa" → "Lapsi istuu pulkassa"; no other change (verified by git diff).
+- I recomputed all 20 answers with my own formulas in one script (trapezoids from the raw tables). The new ones are 1,8; 18 000; 927,45; 5,0 (a: 67 N); 2,88; 50,45 km/h (I = 981 N·s, c: 39,2 kN); 447,3 N (c: 251 N). All agree with exercises.json and answers.py.
+- L1-06: exactly one correct option, every distractor is wrong and its feedback says why; p takes the sign of v.
+- L3-05: the weight is included in the net force (N − mg)Δt = Δp, signs taken upward, v from free fall (fy4-3 prerequisite). The heights 1,23 m and 0,78 m are realistic for a basketball.
+- L2-07 / L3-04: the area is computed correctly as Δt·Σ(interior points) because F = 0 at both ends; peak force > mean force; the rebound speed 1,38 m/s < 1,50 m/s is physically possible.
+- Assumptions are stated in each task (weight neglected, friction neglected, only the airbag/belt force acting horizontally); the solutions use the same ones.
+- Significant figures and tolerances fit the data; every new answer rounded to 2 s.f. lies inside its tolerance.
+- Scope: everything is impulse, momentum change, area under F(t), mean force and 1-D signs; there is no conservation or 2-D content. Notation matches the brief (F_ka, v₀, Δp).
+- Plan in docs/exercise-bank/FY4.md covered: MC direction, p = mv, error analysis, kick table, bumper experiment, force sensor area, soft/hard comparison, YO-style bounce. Levels are 8/7/5.
+- Round 2: L2-07 "seitsemän puolisuunnikasta" is correct (8 points, 7 intervals); L1-08 "noin 180-kertainen" is correct. No numbers changed; hash is the same at the start and at the end.

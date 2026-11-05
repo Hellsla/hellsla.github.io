@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: b0d6a520defc0939
+CONTENT-HASH: 29e5ecd1dc7acc04
 Round: 2
 
 ## Blocking
@@ -17,3 +17,9 @@ Round: 2
 - MC L2-07: correct C (88) is not the longest, distractors are real unit slips and consistent with the solution.
 - Level 2 data tasks L2-05 and L2-06 fit; level 3 tasks are modelling and data interpretation.
 - Solutions follow the principle, formula, substitution, sanity check order.
+
+## Follow-up (2026-11-04, teacher's edit of L1-06: exercises.json:69, solutions.md:125)
+- L1-06 feedback (exercises.json:69) and model answer (solutions.md:125) now use the lesson's terms (maanpinnan keskilämpötila, yksinkertainen säteilytasapainomalli, efektiivinen säteilylämpötila) and the lesson's framing ("havainnollistaa"); the feedback still repairs the misconception rather than restating the option.
+- The model answer adds the 33 K difference, which is right and gives the student a concrete measure of the effect. Length stays reasonable for a level-1 check.
+- Polish: "kun" → "kun taas" in both sentences, so the contrast cannot be read as a cause.
+- Scope: only these two sentences; the rest of this report stands from the earlier round.

@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: eb06fbdf6f8f7a75
+CONTENT-HASH: 90c5f28699ad31ea
+Mode: translation
+Round: 1
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L3-03 — kolme aallonpituutta yhdessä lauseessa (kantaan jäänyt).
-- [Minor] L2-01 Annettu — pitkä lause; jaa (kantaan jäänyt).
+- [Minor] Captures exist at 1280 px only for the exercises; no 390 px exercise capture of the new tasks. Layout is the same component as fi, so no new risk.
 
 ## Checked
-- Own Playwright captures at 360 px, ?ratkaisut=1, details opened: every changed formula in fi (L1-05 and L2-03 Sijoitus (three formulas)) plus the en and fi-easy counterparts (contact sheets sheet-fi/en/fi-easy.png in scratchpad shots-fx/).
-- Result: h · \dfrac{c}{X} wraps after 'h ·' into a 2–4 row block, fraction bar intact, units upright with thin spaces, decimal comma; document scrollWidth = 360 = viewport, no clipped KaTeX.
-- LaTeX valid, no red KaTeX; hash at start and end the same.
+- Opened fi-easy captures fy8-16-open-exercises-L2-1280-7.png (L2-05 solution) and fy8-16-open-exercises-L3-1280-6.png (L3-04 solution, start of L3-05): KaTeX renders, fractions and units upright, no overflow, no red errors.
+- Tables of L2-05 and L3-04 have the translated caption and column headers; numbers with thin-space thousands separators as in fi.
+- Decimal comma in all rendered numbers; the shots predate the wording polish, which changed text only.
 
 ## Scores
 illustrations n/a · typography 5 · Finnish 5 · accessibility 4

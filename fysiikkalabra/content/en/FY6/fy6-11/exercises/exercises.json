@@ -19,6 +19,7 @@
     {
       "id": "fy6-11-L1-03",
       "level": 1,
+      "core": true,
       "text": "The voltage between two parallel metal plates is $600\\,\\text{V}$, and the distance of the plates is $0.040\\,\\text{m}$. How large is the electric field strength between the plates?",
       "answer": 15000.0,
       "unit": "V/m",
@@ -40,12 +41,82 @@
       "answer": 30000.0,
       "unit": "N/C",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-11-L1-06",
+      "level": 1,
+      "text": "The electric field of a charged object is described with field lines. In a field-line diagram the lines are close together in region A and far apart in region B. What can be concluded from the density of the field lines?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The field is stronger in region A, because the density of the lines describes the strength of the field.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The field is stronger in region B, because more space is left between the lines, where the field can act.",
+          "feedback": "The field exists between the lines too. A field line shows the direction of the force, and the space between the lines does not increase the field: lines far apart mean a weaker field."
+        },
+        {
+          "text": "There is more charge in region A, because each field line represents one charge in the region.",
+          "feedback": "Field lines are not charges. They start from positive charges and end at negative charges, and their density describes the strength of the field at that point."
+        },
+        {
+          "text": "The field is equally strong in both regions, because field lines only show the direction of the force.",
+          "feedback": "Besides the direction, the density of the lines tells the strength of the field. Only in a uniform field are the lines equally dense everywhere, and here the density is different in different regions."
+        },
+        {
+          "text": "The field is stronger in region A, because the density of the lines describes the strength of the field.",
+          "feedback": "Correct: the density of the field lines tells the strength of the field. Lines close together mean a strong field and lines far apart mean a weak field.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "fy6-11-L1-07",
+      "level": 1,
+      "core": true,
+      "text": "There is a uniform electric field pointing to the right between two vertical plates. A negatively charged dust particle comes between the plates. In which direction does the electric force on the particle point?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "To the left, because the force on a negative charge is opposite to the direction of the field.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "To the left, because the force on a negative charge is opposite to the direction of the field.",
+          "feedback": "Correct: when $q$ is negative, the force $\\overline{F} = q\\overline{E}$ points opposite to the field. The particle moves towards the positive plate.",
+          "correct": true
+        },
+        {
+          "text": "To the right, because the electric force always points in the direction of the field, whether the charge is positive or negative.",
+          "feedback": "The force is $\\overline{F} = q\\overline{E}$, so for a negative charge the force is opposite to the field. Only the force on a positive charge points in the direction of the field."
+        },
+        {
+          "text": "To the right, because the negative particle is attracted towards the negative plate, which is on the right.",
+          "feedback": "Charges of the same sign repel each other. The negative particle is repelled by the negative plate and attracted to the positive plate, which is on the left, on the side where the field starts."
+        },
+        {
+          "text": "Nowhere, because in a uniform field the forces cancel each other when the field is the same at every point.",
+          "feedback": "Uniform means that the field is equally strong and in the same direction at every point. It does not remove the force: a constant force $F = qE$ acts on the particle."
+        }
+      ]
+    },
+    {
+      "id": "fy6-11-L1-08",
+      "level": 1,
+      "text": "A uniform field whose strength is $4.0 \\cdot 10^{5}\\,\\text{V/m}$ is wanted between the plates of an air purifier. The voltage between the plates is $3.0\\,\\text{kV}$. How large must the distance of the plates be? Answer in millimetres.",
+      "answer": 7.5,
+      "unit": "mm",
+      "tolerance": 0.02
     }
   ],
   "level2": [
     {
       "id": "fy6-11-L2-01",
       "level": 2,
+      "core": true,
       "text": "The voltage between two parallel plates is $4.5\\,\\text{kV}$, and the distance of the plates is $9.0\\,\\text{mm}$. A small ball whose charge is $4.0\\,\\text{nC}$ is brought between the plates. How large is the electric force on the ball? Answer in millinewtons.",
       "answer": 2.0,
       "unit": "mN",
@@ -74,6 +145,109 @@
       "answer": 0.45,
       "unit": "mN",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-11-L2-05",
+      "level": 2,
+      "text": "A student studies the field between plates by keeping the voltage constant and changing the distance $d$ of the plates. A small test charge $q = 5.0\\,\\text{nC}$ is placed at the middle of the plates, and the electric force $F$ on it is measured. The measurements in the table are example data.\n\na) Calculate the electric field strength $E = F : q$ for each distance.\n\nb) Calculate the product $E \\cdot d$ for each distance and their mean. Calculate the sum of the products first.\n\nc) Using the results, justify that $E = U : d$, and say which quantity the product $E \\cdot d$ is.\n\nGive the mean from part b) in volts in the answer box.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 400.1,
+      "unit": "V",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Example data: force on a test charge at different plate distances",
+        "columns": [
+          "$d\\,(\\text{cm})$",
+          "$F\\,(\\mu\\text{N})$"
+        ],
+        "rows": [
+          [
+            "2.0",
+            "102"
+          ],
+          [
+            "3.0",
+            "65.5"
+          ],
+          [
+            "4.0",
+            "51.0"
+          ],
+          [
+            "5.0",
+            "39.0"
+          ],
+          [
+            "6.0",
+            "34.0"
+          ],
+          [
+            "8.0",
+            "24.6"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-11-L2-06",
+      "level": 2,
+      "text": "The distance of two vertical plates is $6.0\\,\\text{cm}$ and the voltage between them is $1.8\\,\\text{kV}$. Between the plates there is a small ball whose charge is $4.0\\,\\text{nC}$ and whose distance from the positive plate is $1.5\\,\\text{cm}$. The ball is far from the ends of the plates.\n\nA student solves the force like this: “The ball is $1.5\\,\\text{cm}$ from the plate, so $E = U : d = 1800\\,\\text{V} : 0.015\\,\\text{m} = 1.2 \\cdot 10^{5}\\,\\text{V/m}$ and $F = qE = 4.0 \\cdot 10^{-9}\\,\\text{C} \\cdot 1.2 \\cdot 10^{5}\\,\\text{V/m} = 0.48\\,\\text{mN}$.”\n\na) What is the error in the student's solution?\n\nb) Calculate the electric force correctly.\n\nGive the result of part b) in millinewtons in the answer box.",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "answer": 0.12,
+      "unit": "mN",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-11-L2-07",
+      "level": 2,
+      "core": true,
+      "text": "A student wants to find out whether the field between the plates is uniform.\n\nThe distance of the wide plates is $2.0\\,\\text{cm}$, the voltage is $600\\,\\text{V}$, and the edges of the plates are $10\\,\\text{cm}$ from the centre.\n\nA test charge $q = 2.0\\,\\text{nC}$ is taken to the midpoint between the plates, and the force $F$ on it is measured along a line parallel to the plates at different distances $x$ from the centre. The measurements in the table are example data.\n\na) Calculate the electric field strength $E = F : q$ at each measurement point.\n\nb) The field is considered uniform at the points where $E$ differs from the value at the centre by less than $3\\,\\%$. Which points are these, and how does the field behave elsewhere? Calculate the deviations.\n\nc) Calculate first the sum of the forces at the uniform points and then the mean of their electric field strengths. Compare the result with the value $U : d$.\n\nGive the mean from part c) in the unit $\\text{V/m}$ in the answer box.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 29812.5,
+      "unit": "V/m",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Example data: force on a test charge along a line parallel to the plates",
+        "columns": [
+          "$x\\,(\\text{cm})$",
+          "$F\\,(\\mu\\text{N})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "60.2"
+          ],
+          [
+            "2.0",
+            "59.8"
+          ],
+          [
+            "4.0",
+            "59.5"
+          ],
+          [
+            "6.0",
+            "59.0"
+          ],
+          [
+            "8.0",
+            "58.0"
+          ],
+          [
+            "10.0",
+            "33.0"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -100,6 +274,66 @@
       "answer": 23.063569,
       "unit": "nC",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-11-L3-04",
+      "level": 3,
+      "text": "Example data: in a measurement like Millikan's experiment, oil droplets hover one at a time between two horizontal plates when the voltage between the plates is adjusted suitably.\n\nThe distance of the plates is $d = 8.0\\,\\text{mm}$ and the positive plate is on top. The table gives the mass and the hovering voltage of five droplets. Use the value $g = 9.81\\,\\text{m/s}^2$.\n\na) Calculate the magnitude of the charge $q$ of each droplet and deduce the sign of the charge.\n\nb) The charges of the droplets are whole-number multiples of the elementary charge $e$. Deduce the number $n$ of elementary charges of each droplet and calculate an estimate of the elementary charge as the mean of the ratios $q : n$. Calculate the sum of the ratios first.\n\nc) Compare the result with the literature value $1.602 \\cdot 10^{-19}\\,\\text{C}$ and justify why the data supports charge occurring only as multiples of the elementary charge.\n\nd) In an air purifier, charged dust particles pass between the plates. Explain why the particles collect on the plates and what happens when the voltage increases.\n\nGive the estimate of the elementary charge from part b) in coulombs in the answer box.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 1.6017e-19,
+      "unit": "C",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Example data: hovering voltages of oil droplets",
+        "columns": [
+          "$\\text{Droplet}$",
+          "$m\\,(10^{-15}\\,\\text{kg})$",
+          "$U\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "3.8",
+            "931"
+          ],
+          [
+            "2",
+            "4.6",
+            "746"
+          ],
+          [
+            "3",
+            "3.2",
+            "1580"
+          ],
+          [
+            "4",
+            "5.1",
+            "627"
+          ],
+          [
+            "5",
+            "4.2",
+            "683"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-11-L3-05",
+      "level": 3,
+      "text": "Example situation: in an inkjet printer a small ink droplet is charged and directed between two horizontal plates, where the field deflects it sideways.\n\nThe mass of the droplet is $3.0 \\cdot 10^{-11}\\,\\text{kg}$ and its charge is $1.0 \\cdot 10^{-12}\\,\\text{C}$. The droplet enters halfway between the plates, horizontally, at a speed of $20\\,\\text{m/s}$.\n\nThe length of the plates is $10\\,\\text{mm}$, their distance is $5.0\\,\\text{mm}$ and the voltage is $2.0\\,\\text{kV}$. Air resistance is ignored. Use the value $g = 9.81\\,\\text{m/s}^2$.\n\na) Calculate the electric force on the droplet and compare it with the weight of the droplet. Can the weight be ignored?\n\nb) Calculate the acceleration of the droplet between the plates.\n\nc) How long is the droplet between the plates?\n\nd) How much does the droplet deviate from its original direction at the ends of the plates?\n\ne) Does the droplet hit a plate? What if the voltage is doubled? Justify by calculating.\n\nGive the deviation from part d) in millimetres in the answer box.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 1.6667,
+      "unit": "mm",
+      "tolerance": 0.03
     }
   ]
 }

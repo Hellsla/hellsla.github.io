@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 785104440d20a841
+CONTENT-HASH: 4124867e5d7571f6
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] caption: the number $4{,}45$ has no unit; "4,45 pulssia sekunnissa" (unit as on the display, CPS) would be clearer for S2 readers. Decimal comma is correct.
+(none)
 
 ## Checked
-batch delta review: caption with $4{,}45$ renders correctly with decimal comma and matches the display. Rendered preview/fi-easy/fy8-13.html at 390 and 1280 px, photo figure opened at 390; KaTeX renders without error, no clipping, no horizontal overflow.
+- batch delta review: the Luvun tärkeät käsitteet list with the new *efektiivinen annos* explanation captured at 360 and 390 px: short plain sentences, consistent with the lesson's own answer text ("pienten annosten … syöpäriskiä keskimääräiselle ihmiselle"), nothing clipped; check_layout 360 OK.

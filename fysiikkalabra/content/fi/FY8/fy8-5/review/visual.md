@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: c7fd61aad41928c6
+CONTENT-HASH: 45ac0575dbe6b9c7
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] Photo is a general lab view of foil-wrapped equipment; the STM tip is not visible, so the caption carries the point (acceptable).
+(none)
 
 ## Checked
-batch delta review: rendered the new figure.unit-photo at 390 px and 1280 px from the built page (own captures, plus fig-row-1280 to confirm the existing figures survived); photo loads, no horizontal overflow, caption and credit line legible, alt text matches the image, LaTeX in captions renders ($6{,}3\,\text{V}$, $656\,\text{nm}$, $n = 3$) with units upright; no clipping.
+- batch delta review: only meta.json goals[1] (Täsmennys) changed, which the build does not show on the page (only goals[0] reaches the page description); wording fluent; opened fy8-5-fig-row-1280 (re-captured, page unchanged); check_layout 360 OK.

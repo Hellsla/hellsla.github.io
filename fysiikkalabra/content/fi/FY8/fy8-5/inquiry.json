@@ -3,7 +3,7 @@
   "contribution": "Elektronin tila kuvataan seisovana aaltona ja todennäköisyysjakaumana: simulaation mittaussarjoista opiskelija näkee, miten satunnaisista osumista syntyy orbitaali, mitä $90\\,\\%$:n raja tarkoittaa ja miksi Bohrin säde on yleisin etäisyys, ja kuorten orbitaalimäärät yhdistyvät kemian elektronikonfiguraatioihin.",
   "learn": [
     "selittämään, miten seisovat aallot johtavat atomin elektronin sallittuihin tiloihin.",
-    "tulkitsemaan orbitaalin alueeksi, jonka sisällä elektroni havaitaan valitulla todennäköisyydellä.",
+    "tulkitsemaan orbitaalin elektronin kvanttitilaksi ja sen kuvan alueeksi, jonka sisällä elektroni havaitaan valitulla todennäköisyydellä.",
     "laskemaan kuoren orbitaalien ja elektronien määrän sekä siirtymässä syntyvän fotonin energian."
   ],
   "prior": [

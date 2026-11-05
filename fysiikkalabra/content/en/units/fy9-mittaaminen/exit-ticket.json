@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Write the result $l = 0.04567\\,\\text{m} \\pm 0.0012\\,\\text{m}$ in millimetres and correctly rounded.",
+    "a": "$l = (45.7 \\pm 1.2)\\,\\text{mm}$. The first digit of the uncertainty is $1$, so it keeps two significant figures, $1.2\\,\\text{mm}$, and the result is rounded to the same decimal place."
+  },
+  {
+    "q": "What is the unit of the slope of a $(t, v)$ graph, and what does the slope tell?",
+    "a": "The unit is $\\tfrac{\\text{m/s}}{\\text{s}} = \\text{m/s}^2$, and the slope is the acceleration of the object: how much the speed changes in a second."
+  }
+]

@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 956616c738487239
+CONTENT-HASH: 60566c60301b819d
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] electron-beam-circle photo caption — the coils are not visible in the photo, and the caption says "Käämit tuottavat..." — optionally "Ulkopuoliset käämit (kuvassa eivät näy) tuottavat..."; the alt text is now correct, so this is optional.
+- [Minor] whole page (pre-existing, outside this delta) — other inline formulas still break at 390 px, e.g. `q = e = 1{,}602 \cdot 10^{-19}\,\text{C}` (worked example, Siirto; also at 1280 px), `v = E : B = 1{,}0 \cdot 10^{6}\,\text{m/s}`; templates/lesson.html glues only pieces of at most 14 characters, so a longer formula can break (teacher's rule: never) — brace each as one group `${...}$`, as done in fy7-2 L1-02, or show it as a display row.
 
 ## Checked
-- Round 2 (delta): the three figure.unit-photo images, rendered from preview/fy7-2.html with playwright at 390 and 1280 px (lazy images forced and scrolled into view; all loaded, naturalWidth 1600, no horizontal overflow, scrollWidth equals viewport).
-- aurora-levi: the alt text (wide green aurora band over a starry sky; rocky fell slope and a few pines below) matches the photo. Credit line and caption are intact.
-- electron-beam-circle: the alt text (dark glass sphere, blue-green circular electron beam, scale across the sphere, electron gun at the bottom) matches the photo. It no longer claims visible coils.
-- berkeley-cyclotron: the alt text (black-and-white photo, 1939, two men beside a large electromagnet and vacuum chamber in a hall) matches the photo. I count two men, one at each side.
-- The photos sit in the column at 320 px wide with the caption below and nothing clipped. The rest of the page is unchanged since the earlier PASS (the hash is the same as in the packet; layout and a11y checks are clean).
+- delta review of 2c31ff041: Laskennan selitys box: $|q|vB$, $F_\text{m} = |q|vB$, $F_\text{s} = |q|E$; diff read. `screenshot.py fy7-2 --if-stale` (fresh captures).
+- Own 390 px element captures of each changed block opened (scratchpad caps/fi-fy7-2-*-390.png): text wraps cleanly, KaTeX renders, no clipping, no horizontal scroll. Measured every inline .katex (getClientRects().length) at 360, 390 and 1280 px, all boxes open and all feedback shown, after `build.py fy7-2`: no formula in a changed passage breaks onto two lines.
+- Earlier: batch delta review: all $|q|$ formulas of the lesson (sähköinen voima, $W = |q|U$, $F_\text{m} = |q|vB \sin\alpha$, $r = mv : (|q|B)$ inline and in displays, the nopeusvalitsin display $|q|E = |q|vB$, massaspektrometri $m = |q| B_2 r / v$, summary bullets). Built page at 360, 390 and 1280 px with every box open: all 23 inline formulas containing $|q|$ stay on one line in the lesson text (the one that wraps is in the exercise solutions, see exercises/review/visual.md); captures q-390-1 to q-390-3 opened: the bars read as absolute value, $\overline{F}_\text{s} = q\overline{E}$ vector set correctly, the aligned display is centred. No clipping, no horizontal scroll.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

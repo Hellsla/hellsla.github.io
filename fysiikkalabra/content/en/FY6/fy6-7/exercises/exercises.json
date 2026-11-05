@@ -3,6 +3,7 @@
     {
       "id": "fy6-7-L1-01",
       "level": 1,
+      "core": true,
       "text": "The power of a laptop is $45\\,\\text{W}$. The computer is used for $4.0\\,\\text{h}$. How much electrical energy does it use? Answer in kilowatt-hours.",
       "answer": 0.18,
       "unit": "kWh",
@@ -11,7 +12,7 @@
     {
       "id": "fy6-7-L1-02",
       "level": 1,
-      "text": "A kettle uses $0.15\\,\\text{kWh}$ of electrical energy in one boiling. How large is the energy in megajoules?",
+      "text": "A kettle uses $0.15\\,\\text{kWh}$ of electrical energy each time it boils water. How large is the energy in megajoules?",
       "answer": 0.54,
       "unit": "MJ",
       "tolerance": 0.02
@@ -38,6 +39,57 @@
       "text": "The power of an LED lamp in a hallway is $6.0\\,\\text{W}$, and it burns $5.0\\,\\text{h}$ every day. How much electrical energy does the lamp use in a year ($365$ days)? Answer in kilowatt-hours.",
       "answer": 10.95,
       "unit": "kWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-7-L1-06",
+      "level": 1,
+      "core": true,
+      "text": "On an electricity bill, electrical energy is given in kilowatt-hours ($\\text{kWh}$). Which quantity does the kilowatt-hour measure?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Energy, because it is obtained by multiplying the power of a device by the time of use.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Power, because it tells how much electricity a device uses in an hour.",
+          "feedback": "Power tells how fast energy is used, and its unit is the kilowatt. A kilowatt-hour is power multiplied by time, so it is energy."
+        },
+        {
+          "text": "Current, because it tells how much charge passes through a wire in an hour.",
+          "feedback": "The unit of current is the ampere, and an electricity bill does not charge for current. A kilowatt-hour contains power, that is voltage and current together, multiplied by time."
+        },
+        {
+          "text": "Energy, because it is obtained by multiplying the power of a device by the time of use.",
+          "correct": true,
+          "feedback": "Correct: the kilowatt-hour is a unit of energy, $1\\,\\text{kWh} = 1\\,\\text{kW} \\cdot 1\\,\\text{h}$. It tells how much electrical energy has been used, not how fast."
+        },
+        {
+          "text": "Price, because the electricity company bills electricity in periods of one hour at a time.",
+          "feedback": "The kilowatt-hour is a physical quantity, not money. The price is calculated by multiplying the energy used by a price, which is for example $15\\,\\text{c/kWh}$."
+        }
+      ]
+    },
+    {
+      "id": "fy6-7-L1-07",
+      "level": 1,
+      "text": "The power of a coffee maker is $0.90\\,\\text{kW}$, and it is on for $15\\,\\text{min}$ a day on average. Electricity costs $18\\,\\text{c/kWh}$ including transmission. How much does the coffee maker cost in $30$ days? Basic charges are not taken into account.",
+      "answer": 1.215,
+      "unit": "€",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-7-L1-08",
+      "level": 1,
+      "text": "A student calculates how long $1.0\\,\\text{kWh}$ of energy lasts a table fan whose power is $40\\,\\text{W}$.\n\nThe student's solution is: “The time is the product of energy and power, $t = E \\cdot P = 1.0 \\cdot 40 = 40$. So the fan runs for $40$ hours.”\n\nFind the student's error and calculate the correct time in hours.",
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "answer": 25.0,
+      "unit": "h",
       "tolerance": 0.02
     }
   ],
@@ -74,6 +126,149 @@
       "answer": 75.92,
       "unit": "kWh",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-7-L2-05",
+      "level": 2,
+      "core": true,
+      "text": "The use of household appliances is collected in a table (example data). The power is the power of the device while in use and the time is the time of use per day.\n\na) Calculate the energy of each appliance per day in kilowatt-hours and find out which appliance uses the most energy.\n\nb) Calculate the combined energy of the appliances in a year ($365$ days) in kilowatt-hours.\n\nc) Choose one appliance whose energy is worth reducing, and justify the choice.\n\nThe answer field takes the result of part b).",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 733.65,
+      "unit": "kWh",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Use of appliances at home (example data)",
+        "columns": [
+          "Appliance",
+          "$P\\,(\\text{W})$",
+          "$t\\,(\\text{h/d})$"
+        ],
+        "rows": [
+          [
+            "Lighting",
+            "90",
+            "5.0"
+          ],
+          [
+            "Television",
+            "110",
+            "4.0"
+          ],
+          [
+            "Computer",
+            "60",
+            "6.0"
+          ],
+          [
+            "Vacuum cleaner",
+            "1200",
+            "0.50"
+          ],
+          [
+            "Toaster",
+            "800",
+            "0.20"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-7-L2-06",
+      "level": 2,
+      "core": true,
+      "text": "The readings of a family's electricity meter were recorded every morning at 8 o'clock for a week (example data). Electricity costs $16\\,\\text{c/kWh}$ including transmission.\n\na) Using the meter readings, calculate the energy during each day, the energy used during the week and the average energy per day.\n\nb) Calculate the average electrical power of the home over the week in watts.\n\nc) Calculate the price of the week's electricity without basic charges.\n\nThe answer field takes the result of part b).",
+      "kind": [
+        "data"
+      ],
+      "answer": 335.119,
+      "unit": "W",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Electricity meter readings (example data)",
+        "columns": [
+          "$t\\,(\\text{d})$",
+          "Reading $(\\text{kWh})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "12437.2"
+          ],
+          [
+            "1",
+            "12444.9"
+          ],
+          [
+            "2",
+            "12452.1"
+          ],
+          [
+            "3",
+            "12460.3"
+          ],
+          [
+            "4",
+            "12467.8"
+          ],
+          [
+            "5",
+            "12476.9"
+          ],
+          [
+            "6",
+            "12486.1"
+          ],
+          [
+            "7",
+            "12493.5"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-7-L2-07",
+      "level": 2,
+      "text": "A student measured the electricity consumption of an old refrigerator with an energy meter connected between the socket and the refrigerator. The reading of the meter was $0.00\\,\\text{kWh}$ at the start, and it was read every $12\\,\\text{h}$ for $48\\,\\text{h}$ (example data).\n\na) Draw a graph of the readings and fit a straight line through the origin to the points. Read the energy at $48\\,\\text{h}$ from the line.\n\nb) Estimate the energy of the refrigerator in a year ($365$ days), assuming that the consumption is all the time the same as in the measurement.\n\nc) Name two factors that can make the yearly estimate inaccurate.\n\nThe answer field takes the result of part b).",
+      "kind": [
+        "experiment",
+        "data",
+        "graph"
+      ],
+      "answer": 299.3,
+      "unit": "kWh",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Reading of the energy meter of the refrigerator (example data)",
+        "columns": [
+          "$t\\,(\\text{h})$",
+          "$E\\,(\\text{kWh})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "0.00"
+          ],
+          [
+            "12",
+            "0.43"
+          ],
+          [
+            "24",
+            "0.79"
+          ],
+          [
+            "36",
+            "1.24"
+          ],
+          [
+            "48",
+            "1.64"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -99,6 +294,71 @@
       "text": "The resistance of the heating resistor of a water heater is $26.5\\,\\Omega$, and it is connected to a voltage of $230\\,\\text{V}$. The heater warms water at night for $2.50\\,\\text{h}$. Assume that the resistance of the resistor stays constant. How much electrical energy does the heater use during the night? Answer in kilowatt-hours.",
       "answer": 4.990566,
       "unit": "kWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-7-L3-04",
+      "level": 3,
+      "text": "The electricity consumption of a home and the price of electricity were measured over one day in four-hour periods (example data). The price $a$ is the total price of energy and transmission, and it is the same for the whole period.\n\nThe resistor of a water heater, whose power is $2.0\\,\\text{kW}$, was on for $3.0\\,\\text{h}$ in the period from $16$ to $20$ o'clock, and its energy is included in the consumption of that period.\n\na) Calculate the total cost of the day's electrical energy and the average price in cents per kilowatt-hour.\n\nb) The heating of the heater is moved to the period from $00$ to $04$ o'clock, and the other consumption stays the same. Calculate how much money the move saves per day.\n\nc) Justify why the saving arises even though no less energy is used, and name one reason why the move does not necessarily succeed every day.\n\nThe answer field takes the result of part b) in euros.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 0.93,
+      "unit": "€",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Consumption and price during a day (example data)",
+        "columns": [
+          "Period (time of day)",
+          "$E\\,(\\text{kWh})$",
+          "$a\\,(\\text{c/kWh})$"
+        ],
+        "rows": [
+          [
+            "00–04",
+            "1.2",
+            "3.9"
+          ],
+          [
+            "04–08",
+            "1.8",
+            "7.2"
+          ],
+          [
+            "08–12",
+            "2.6",
+            "12.4"
+          ],
+          [
+            "12–16",
+            "2.0",
+            "9.6"
+          ],
+          [
+            "16–20",
+            "8.4",
+            "19.4"
+          ],
+          [
+            "20–24",
+            "3.0",
+            "11.8"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-7-L3-05",
+      "level": 3,
+      "text": "A family's old refrigerator-freezer uses $320\\,\\text{kWh}$ of energy a year (measured with an energy meter). According to the energy label, the yearly consumption of a new appliance of the same size is $98\\,\\text{kWh}$, and the appliance costs $489\\,\\text{€}$. Electricity costs $17\\,\\text{c/kWh}$ including transmission. The numbers are example data.\n\nAssume that the price and the consumptions stay constant and the old appliance is taken away without sales income.\n\na) Calculate the yearly energy saving of the new appliance in kilowatt-hours and in euros.\n\nb) Calculate the payback time, that is, the time in which the saving equals the price of the new appliance.\n\nc) The service life of the new appliance is $15\\,\\text{a}$. Calculate how much money the new appliance saves during its service life after the purchase price, and justify whether the replacement is sensible. Name one factor that the model does not take into account.\n\nThe answer field takes the result of part b) in years.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 12.957,
+      "unit": "a",
       "tolerance": 0.02
     }
   ]

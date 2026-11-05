@@ -8,7 +8,7 @@
   ],
   "prior": [
     "The voltage of a resistor is $U = RI$, and the characteristic curve of a resistor that obeys Ohm's law is a straight line (chapter *Resistance and Ohm's law*)",
-    "In a series connection the same current flows through every component, and the voltage of the source is shared among them (chapter *Kirchhoff's laws and potential in an electric circuit*)",
+    "In a series connection the same current flows through every component, and the voltage of the source is shared among them (chapter *Kirchhoff's laws and potential in a circuit*)",
     "The power of a component is $P = UI$ (chapter *Electric power and the heating of a resistor*)"
   ],
   "activities": [
