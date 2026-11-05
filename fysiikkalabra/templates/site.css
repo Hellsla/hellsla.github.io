@@ -43,7 +43,7 @@
   --sim-fs:1.0625rem;--sim-lh:1.65;   /* the body and the simulations: p5 measures its text in a span on the body, and the sims' label tests rely on it */
   /* spacing and measure */
   --measure:38rem;--gap:2.5rem;   /* text column (about 70 characters) and the gutter between the text and margin tracks */
-  --stage-space:4.5rem;          /* above a stage */
+  --stage-space:2.75rem;         /* above a stage: 44 px (was 72 px, too long a gap for the teacher 2026-11-05) */
   --card-pad:1.25rem 1.5rem;--card-radius:16px;--inner-radius:10px;
   --sticky-top:4.5rem;           /* below the sticky stage bar */
   /* figure palette (NOTES.md §3): one meaning per colour across every lesson; text and patterns carry the same information */
@@ -52,7 +52,7 @@
   --fig-heat:#e8590c;--fig-hot:#c92a2a;--fig-hot-light:#ffd8cc;--fig-cold:#1971c2;--fig-cold-light:#d0e6fb;
   --fig-metal:#8a96a3;--fig-copper:#b8622d;--fig-ice:#a5d8ff;--fig-glass:#eef5f9;
 }
-@media (max-width:600px){:root{--card-pad:1rem 1rem;--stage-space:3.25rem}}
+@media (max-width:600px){:root{--card-pad:1rem 1rem;--stage-space:2.25rem}}
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;font:var(--sim-fs)/var(--sim-lh) var(--sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;
