@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 9b65aff5f585da33
-Round: 3
+CONTENT-HASH: 7b14ba9ee8f88098
+Round: 4
 
 ## Blocking
 (none)
@@ -14,3 +14,4 @@ Round: 3
 - Solution keeps Find, Principle, Model answer; explains why the order differs from mass order and gives an estimate check.
 - English reads naturally; fuel names (petrol, firewood, coal, milled peat) match the other tasks.
 - Duplicate "put in order" sentence (text and prompt) avoided as in the fi-easy wording; the other 16 tasks unchanged.
+- Round 3 -> 4 (commit 442c889ba): L3-04 Substitution line split into groups of four months (2100+1900+1600+1100 = 6700, 600+250+200+250 = 1300, 600+1100+1600+2000 = 5300, sum 6700+1300+5300 = 13 300); recomputed, correct, same numbers and wording pattern as the Finnish. No other change; no edits needed.

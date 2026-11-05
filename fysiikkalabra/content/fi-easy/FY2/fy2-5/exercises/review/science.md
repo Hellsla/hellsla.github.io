@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 211e9d903c19aad9
-Round: 3
+CONTENT-HASH: 02606fa88d01b0b2
+Round: 4
 
 ## Blocking
 (none)
@@ -15,3 +15,4 @@ Round: 3
 - No formula, number or unit lost; L2-08 solution numbers equal the Finnish.
 - Language: selkosuomi per NOTES.md section 12: heat of combustion explained in a sentence, same physics, decimal comma.
 - check_i18n.py: nothing for fy2-5; build.py fy2-5 succeeds. Earlier 16 tasks unchanged since round 2.
+- Round 3 -> 4 (commit 442c889ba): L3-04 Substitution line split into groups of four months (2100+1900+1600+1100 = 6700, 600+250+200+250 = 1300, 600+1100+1600+2000 = 5300, sum 6700+1300+5300 = 13 300); recomputed, correct, same numbers and wording pattern as the Finnish. No other change; no edits needed.

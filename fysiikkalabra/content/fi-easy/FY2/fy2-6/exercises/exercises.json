@@ -131,7 +131,7 @@
         },
         {
           "text": "noin $2000$ taloa",
-          "feedback": "Oikein: keskiteho on $0{,}33 \\cdot 3{,}0\\,\\text{MW} \\approx 1\\,\\text{MW}$, eli $1000\\,\\text{kW}$. Vuosienergia on noin $1000\\,\\text{kW} \\cdot 8760\\,\\text{h}$, eli noin $8{,}7 \\cdot 10^{6}\\,\\text{kWh}$. Talojen määrä on $8{,}7 \\cdot 10^{6} : 5000 \\approx 1700$, ja se on suuruusluokaltaan $2000$.",
+          "feedback": "Oikein: keskiteho on $0{,}33 \\cdot 3{,}0\\,\\text{MW} \\approx 1\\,\\text{MW}$, eli $1000\\,\\text{kW}$. Vuosienergia on noin $1000\\,\\text{kW} \\cdot 8760\\,\\text{h}$, eli noin $8{,}7 \\cdot 10^{6}\\,\\text{kWh}$. Talojen määrä on $8{,}7 \\cdot 10^{6} : 5000 \\approx 1700$, joten lähin vaihtoehto on $2000$.",
           "correct": true
         },
         {

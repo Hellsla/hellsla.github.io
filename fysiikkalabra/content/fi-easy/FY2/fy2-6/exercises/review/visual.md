@@ -1,20 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: 228954afba2038d2
+VERDICT: PASS
+CONTENT-HASH: 76e6f1007ca3b2fb
 Mode: delta
-Round: 1
+Round: 2
 
 ## Blocking
-- [Major] fy2-6-L1-09 (390 px render, feedback open) — in the feedback of the correct option the chain "0,33 · 3,0 MW ≈ 1 MW = 1000 kW" is cut at the right edge of the card: the unit shows as "1000 kV" (right edge 353 px, text column ends 346 px). A value and its unit are clipped on a phone; the solution itself (split into short lines) is fine — Break the chain, e.g. "the average power is $0.33 \cdot 3.0\,\text{MW} \approx 1\,\text{MW}$, that is $1000\,\text{kW}$" (Finnish: "eli").
+(none)
 
 ## Polish
 - none
 
 ## Checked
-- Rendered at 390 px myself (Playwright, preview/fi-easy/fy2-6.html, level open, all feedback and solution open): fy2-6-L1-09, whole card, read in crops; measured every formula against its text column (katex errors: 0, page overflow: none).
-- 1280 px captures of fi-easy were NOT opened (only the English 1280 capture of the same task); the fi-easy judgement rests on my 390 px render.
-- Not opened: the contact sheets and the other tasks of the chapter (unchanged since the earlier PASS); figures (none in the exercise set).
-- Read as text only: wording of the task, options, feedback and solution in Selkeä suomi (terms explained, one instruction per sentence, no AI phrasing; case endings after maths correct).
-- Changed-text only for the delta: the new task, its solution, and the L3-03 paragraph split (text read only, not rendered at 390).
+- Round-1 Major confirmed fixed by a live render at 390 px (Playwright, rebuilt preview/fi-easy/fy2-6.html, level open, every feedback and the solution open): fy2-6-L1-09, the correct-option feedback chain (now split into short formulas joined by "that is"/"eli"/"so"/"joten"; the unit "kW" is whole). Read in crops; measured every formula against its text column: none overflows, no clipped chain, KaTeX errors 0, no page-level horizontal overflow.
+- The wrapped lines break after "eli"/"that is" or at an operator, not mid-formula; the solution's fraction chain "η = E_a/E_o = 360 kJ/600 kJ = 0.60 = 60 %" still fits on one row.
+- Not opened: the fresh review/shots 1280 px captures and contact sheets (my render replaces them for this fix), the other tasks of the chapter (unchanged), fi-easy language judged from the task text in the render only.
+- Hash taken at the start and again at the end: identical.
 
 ## Scores
-illustrations 5 · typography 3 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
