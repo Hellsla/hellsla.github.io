@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: da6046c3a1ee90f4
+CONTENT-HASH: d62b2b53d0757222
 
 ## Blocking
 
@@ -10,7 +10,7 @@ CONTENT-HASH: da6046c3a1ee90f4
 - L2-07 recomputed: n = (109 − 85)/3 = 8; t_sall = 480 min / 256 = 1,875 min ≈ 1,9 min. The student's answer is 8 h : 8 = 1,0 h = 60 min exactly, so the earlier mismatch between 1,3 h and 80 min is gone.
 - answers.py round(t_allowed(109)·60, 1) = 1,9; exercises.json has 1.9 min with tolerance 0.02. An unrounded 1,875 is off by 1,3 % and is still accepted. Two significant figures fit the data.
 - Solution: the unknown is solved symbolically before substitution, the conversion 8 h = 480 min is right, and 2⁸ = 256 is right. a) names the error correctly: dividing by n instead of 2ⁿ.
-- Järkevyys: 60 min / 1,875 min = 32, so "32-kertainen" is exact. Under t₀/n each extra step really shortens the time less. The halving chain 8 h → … → 1,875 min has eight steps. It prints 7,5 min only as an intermediate value, not as an answer that can be read off.
+- Round-5 wording: Vastaus a) "jaetaan kahdella kahdeksan kertaa eli kaikkiaan luvulla 256" is right (2⁸ = 256). In the Järkevyys, 60 min / 1,875 min = 32 is exact; three halvings take 8 h to 1 h and five more take 60 min to 60/32 = 1,875 min, eight in all. Under t₀/n each extra step really shortens the time less. The inquiry's 7,5 min is no longer printed even as an intermediate value.
 - "opiskelija" is used throughout; the task text and the solution agree (24 dB, 8 steps, 1,0 h).
 - The rest of the set is unchanged since round 3: the other 15 numeric answers recomputed in round 3 still match answers.py and exercises.json.
 - The known eq-chain collapse on main is not counted as a finding.
