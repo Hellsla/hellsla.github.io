@@ -49,18 +49,18 @@
       ],
       "unit": "",
       "tolerance": 0.02,
-      "answer": "Kattoon asennetaan huokoisia vaimennuslevyjä, jotka imevät osan niihin osuvasta äänestä.",
+      "answer": "Kattoon asennetaan huokoisia levyjä, jotka imevät osan niihin osuvasta äänestä.",
       "choices": [
         {
-          "text": "Seiniin ja kattoon asennetaan kiiltäviä laattoja, jotka heijastavat äänen tasaisesti takaisin huoneeseen.",
+          "text": "Seiniin asennetaan kiiltäviä laattoja, jotka heijastavat äänen tasaisesti takaisin huoneeseen.",
           "feedback": "Väärin: kovat ja sileät pinnat heijastavat ääntä lähes kokonaan, joten ääni kiertää huoneessa kauemmin ja jälkikaiunta-aika pitenee."
         },
         {
-          "text": "Puhujan ääntä vaimennetaan mikrofonilla, jolloin ääni ehtii hiljentyä muutamassa sekunnissa.",
-          "feedback": "Väärin: jälkikaiunta-aika on aika, jossa taso laskee $60\\,\\text{dB}$, eikä se riipu äänen alkuvoimakkuudesta. Se määräytyy huoneen pinnoista."
+          "text": "Puhujaa pyydetään puhumaan hiljempaa, jolloin ääni ehtii hiljentyä nopeammin.",
+          "feedback": "Väärin: jälkikaiunta-aika on aika, jossa taso laskee $60\\,\\text{dB}$, eikä se riipu äänen alkutasosta. Se määräytyy huoneen pinnoista."
         },
         {
-          "text": "Kattoon asennetaan huokoisia vaimennuslevyjä, jotka imevät osan niihin osuvasta äänestä.",
+          "text": "Kattoon asennetaan huokoisia levyjä, jotka imevät osan niihin osuvasta äänestä.",
           "correct": true,
           "feedback": "Oikein: pehmeät ja huokoiset pinnat vaimentavat heijastuvaa ääntä, joten taso laskee nopeammin ja jälkikaiunta-aika lyhenee."
         },
@@ -87,24 +87,24 @@
       ],
       "unit": "",
       "tolerance": 0.02,
-      "answer": "Kelan vaihtovirta ja magneetti saavat kartion värähtelemään signaalin tahdissa, ja kartio työntää ilmaa.",
+      "answer": "Kelan vaihtovirta ja magneetti saavat kartion värähtelemään, ja kartio työntää ilmaa.",
       "choices": [
         {
-          "text": "Kelan vaihtovirta ja magneetti saavat kartion värähtelemään signaalin tahdissa, ja kartio työntää ilmaa.",
-          "correct": true,
-          "feedback": "Oikein: magneettikentässä kulkeva vaihtovirta saa kelan ja siihen kiinnitetyn kartion värähtelemään, ja kartio synnyttää ilmaan ääniaallon."
-        },
-        {
-          "text": "Signaalin virta lämmittää kartion takana olevaa ilmaa, ja ilman nopea laajeneminen kuuluu äänenä.",
-          "feedback": "Väärin: kaiuttimessa lämpenemisellä ei ole osuutta äänen syntyyn. Lämpöä syntyy vain hukkaenergiana, vaikka suurin osa sähköenergiasta muuttuu sisäenergiaksi."
+          "text": "Signaalin virta lämmittää kartion takana olevaa ilmaa, ja ilman laajeneminen kuuluu äänenä.",
+          "feedback": "Väärin: kaiuttimessa ääni syntyy kartion liikkeestä, ei ilman lämpenemisestä. Lämpöä syntyy vain hukkaenergiana."
         },
         {
           "text": "Magneetti pyörii tasaisesti kelan sisällä, ja pyörimisen taajuus on äänen taajuus.",
           "feedback": "Väärin: kaiuttimessa ei ole pyörivää magneettia. Magneetti on paikallaan ja äänen taajuuden määrää kelan virran vaihtelu."
         },
         {
-          "text": "Äänen paineenvaihtelut liikuttavat kartiota, ja kartion liike synnyttää kelaan vaihtelevan jännitteen.",
+          "text": "Äänen paineenvaihtelut liikuttavat kalvoa, ja kalvon liike synnyttää kelaan vaihtelevan jännitteen.",
           "feedback": "Väärin: tämä kuvaa mikrofonia, jossa ääni liikuttaa kalvoa ja liike muutetaan jännitteeksi. Kaiuttimessa suunta on päinvastainen."
+        },
+        {
+          "text": "Kelan vaihtovirta ja magneetti saavat kartion värähtelemään, ja kartio työntää ilmaa.",
+          "correct": true,
+          "feedback": "Oikein: magneettikentässä kulkeva vaihtovirta saa kelan ja siihen kiinnitetyn kartion värähtelemään, ja kartio synnyttää ilmaan ääniaallon."
         }
       ]
     }
@@ -195,7 +195,7 @@
         "data",
         "reasoning"
       ],
-      "text": "Tienvarteen suunnitellaan meluestettä. Pistemäisen äänilähteen taso mitattiin samassa kohdassa ilman estettä ja esteen takana eri taajuuksilla (esimerkkiaineisto).\n\na) Kuinka monta desibeliä enemmän este vaimentaa taajuuden $4000\\,\\text{Hz}$ ääntä kuin taajuuden $500\\,\\text{Hz}$ ääntä?\n\nb) Selitä aallonpituuden avulla, miksi matala ääni vaimenee esteen takana huonommin. Äänen nopeus ilmassa on $343\\,\\text{m/s}$.\n\nKirjoita a-kohdan tulos vastauslaatikkoon.",
+      "text": "Tienvarteen suunnitellaan meluestettä. Pistemäisen äänilähteen taso mitattiin samassa kohdassa ilman estettä ja esteen takana eri taajuuksilla (esimerkkiaineisto).\n\na) Kuinka monta desibeliä enemmän este vaimentaa taajuuden $4000\\,\\text{Hz}$ ääntä kuin taajuuden $500\\,\\text{Hz}$ ääntä?\n\nb) Selitä aallonpituuden avulla, miksi matala ääni vaimenee esteen takana huonommin. Äänen nopeus ilmassa on $343\\,\\text{m/s}$ ja este on $3{,}0\\,\\text{m}$ korkea.\n\nKirjoita a-kohdan tulos vastauslaatikkoon.",
       "answer": 11.8,
       "unit": "dB",
       "tolerance": 0.03,
@@ -237,9 +237,9 @@
         "error",
         "reasoning"
       ],
-      "text": "Konepajan mittauspisteessä kone A tuottaa tason $83\\,\\text{dB}$ ja kone B tason $80\\,\\text{dB}$. Oppilas laskee: \"Kun molemmat käyvät, taso on $83\\,\\text{dB} + 80\\,\\text{dB} = 163\\,\\text{dB}$.\"\n\na) Selitä, miksi laskutapa on väärä.\n\nb) Laske oikea yhteinen taso. Lähteiden intensiteetit summautuvat, ja taso on $L = 10\\,\\text{dB} \\cdot \\lg \\dfrac{I}{I_0}$.\n\nKirjoita b-kohdan tulos vastauslaatikkoon.",
-      "answer": 85,
-      "unit": "dB",
+      "text": "Konepajan työpisteessä melutaso on $100\\,\\text{dB}$. Oppilas laskee sallitun päivittäisen altistusajan ylemmän toiminta-arvon ($8\\,\\text{h}$ tasolla $85\\,\\text{dB}$) perusteella näin: ”Taso ylittää toiminta-arvon $15\\,\\text{dB}$, ja jokainen $3\\,\\text{dB}$ lisää jakaa ajan: $15\\,\\text{dB} : 3\\,\\text{dB} = 5$, joten sallittu aika on $8\\,\\text{h} : 5 = 1{,}6\\,\\text{h}$.”\n\na) Selitä, mikä oppilaan päättelyssä on väärin.\n\nb) Laske oikea sallittu altistusaika minuutteina.\n\nKirjoita b-kohdan tulos vastauslaatikkoon.",
+      "answer": 15,
+      "unit": "min",
       "tolerance": 0.02
     }
   ],
@@ -313,7 +313,7 @@
         "model",
         "reasoning"
       ],
-      "text": "Ulkofestivaalilla yksi kaiutinpylväs tuottaa tason $112\\,\\text{dB}$ etäisyydellä $2{,}0\\,\\text{m}$. Pidä pylvästä pistemäisenä lähteenä avoimessa tilassa ilman heijastuksia: taso laskee $6\\,\\text{dB}$ aina, kun etäisyys kaksinkertaistuu. Kuulija seisoo paikallaan etäisyydellä $8{,}0\\,\\text{m}$.\n\nKuulijalla on vaahtomuovitulpat, jotka eivät istu tiiviisti: niiden vaimennus on käytännössä vain $8\\,\\text{dB}$ kaikilla tasoilla.\n\na) Mikä on melutaso kuulijan paikalla ilman tulppia?\n\nb) Kuinka monta tuntia kuulija saa olla paikallaan tulppien kanssa, kun vertailukohtana on ylempi toiminta-arvo ($8\\,\\text{h}$ tasolla $85\\,\\text{dB}$)?\n\nc) Konsertti kestää $3{,}0\\,\\text{h}$. Kuinka monta prosenttia annos on vertailuannoksesta, ja riittääkö, että kuulija siirtyy etäisyydelle $16\\,\\text{m}$? Perustele laskemalla.\n\nKirjoita b-kohdan tulos vastauslaatikkoon.",
+      "text": "Ulkofestivaalilla yksi kaiutinpylväs tuottaa tason $112\\,\\text{dB}$ etäisyydellä $2{,}0\\,\\text{m}$. Pidä pylvästä pistemäisenä lähteenä avoimessa tilassa ilman heijastuksia: taso laskee $6\\,\\text{dB}$ aina, kun etäisyys kaksinkertaistuu. Kuulija seisoo paikallaan etäisyydellä $8{,}0\\,\\text{m}$.\n\nKuulijalla on vaahtomuovitulpat, jotka eivät istu tiiviisti: niiden vaimennus on käytännössä vain $8\\,\\text{dB}$ kaikilla tasoilla.\n\na) Mikä on melutaso kuulijan paikalla ilman tulppia?\n\nb) Kuinka monta tuntia kuulija saa olla paikallaan tulppien kanssa, kun vertailukohtana on ylempi toiminta-arvo ($8\\,\\text{h}$ tasolla $85\\,\\text{dB}$)?\n\nc) Konsertti kestää $3{,}0\\,\\text{h}$. Kuinka monta prosenttia annos on vertailuannoksesta, ja riittääkö, että kuulija siirtyy etäisyydelle $16\\,\\text{m}$ ja pitää tulpat siellä edelleen korvissaan? Perustele laskemalla.\n\nKirjoita b-kohdan tulos vastauslaatikkoon.",
       "answer": 1.6,
       "unit": "h",
       "tolerance": 0.03

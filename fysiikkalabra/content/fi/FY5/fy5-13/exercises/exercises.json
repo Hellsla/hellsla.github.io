@@ -92,7 +92,7 @@
         },
         {
           "text": "$600\\,\\text{Hz}$, koska suljetun putken ominaistaajuudet ovat perustaajuuden neljän monikertoja.",
-          "feedback": "Neljä liittyy perustaajuuden kaavaan $f_1 = \\tfrac{v}{4L}$, mutta ominaistaajuudet ovat perustaajuuden monikertoja $f_n = n f_1$, joissa $n$ on pariton. Luku $600\\,\\text{Hz} = 4 f_1$ ei ole sellainen."
+          "feedback": "Neljä kuuluu kaavaan $f_1 = \\tfrac{v}{4L}$, mutta kerroin $n$ on pariton, koska ominaistaajuudet ovat $f_n = n f_1$. Luku $600\\,\\text{Hz} = 4 f_1$ ei ole sellainen."
         },
         {
           "text": "$75\\,\\text{Hz}$, koska alempia ominaistaajuuksia saadaan jakamalla perustaajuus kokonaisluvulla.",
@@ -189,7 +189,7 @@
     {
       "id": "fy5-13-L2-06",
       "level": 2,
-      "text": "Äänen nopeutta mitataan resonanssiputkella. Pystysuoran putken alaosassa on vettä, ja putken suun yllä soi äänirauta, jonka taajuus on $512\\,\\text{Hz}$. Kun vedenpintaa lasketaan, ääni voimistuu kolmessa kohdassa. Veden pinta toimii putken suljettuna päänä. Taulukossa on ilmapatsaan pituus $L$ veden pinnasta putken suulle kussakin kohdassa (esimerkkiaineisto).\n\na) Määritä äänen nopeus ilmassa. Käytä ensimmäisen ja kolmannen resonanssin pituuksien erotusta, jolloin putken pään korjausta ei tarvita.\n\nb) Laske, kuinka paljon ensimmäinen pituus poikkeaa neljänneksestä aallonpituutta, ja selitä poikkeaman syy.\n\nVastauslaatikkoon tulee a)-kohdan tulos.",
+      "text": "Äänen nopeutta mitataan resonanssiputkella. Pystysuoran putken alaosassa on vettä, ja putken suun yllä soi äänirauta, jonka taajuus on $512\\,\\text{Hz}$. Kun vedenpintaa lasketaan, ääni voimistuu kolmessa kohdassa. Veden pinta toimii putken suljettuna päänä. Taulukossa on ilmapatsaan pituus $L$ veden pinnasta putken suulle kussakin kohdassa (esimerkkiaineisto).\n\na) Määritä äänen nopeus ilmassa. Käytä ensimmäisen ja kolmannen resonanssin pituuksien erotusta, jolloin putken pääkorjausta ei tarvita.\n\nb) Laske, kuinka paljon ensimmäinen pituus poikkeaa neljänneksestä aallonpituutta, ja selitä poikkeaman syy.\n\nVastauslaatikkoon tulee a)-kohdan tulos.",
       "kind": [
         "experiment",
         "data"
@@ -278,7 +278,7 @@
     {
       "id": "fy5-13-L3-04",
       "level": 3,
-      "text": "Kitaran kielen värähtelevä osa on kaikissa mittauksissa $0{,}650\\,\\text{m}$ pitkä, ja kieli on kiinni kummastakin päästä. Kielen jännitysvoimaa $F$ muutetaan virityskoneistolla, ja kielen perustaajuus $f_1$ mitataan jokaisella jännitysvoimalla. Taulukossa ovat mittaustulokset (esimerkkiaineisto).\n\nTutkitaan, onko perustaajuus verrannollinen jännitysvoiman neliöjuureen, $f_1 \\propto \\sqrt{F}$, vai itse jännitysvoimaan, $f_1 \\propto F$.\n\na) Laske jokaiselle mittaukselle suhteet $\\tfrac{f_1}{F}$ ja $\\tfrac{f_1^2}{F}$. Kumpi suhde pysyy mittausepävarmuuden rajoissa vakiona?\n\nb) Päättele a)-kohdan perusteella, kuinka moninkertaiseksi perustaajuus muuttuu, kun jännitysvoima nelinkertaistetaan.\n\nc) Ennusta perustaajuus, kun jännitysvoima on $120\\,\\text{N}$. Käytä vakiona toisen suhteen keskiarvoa ja arvioi ennusteen luotettavuutta.\n\nVastauslaatikkoon tulee c)-kohdan tulos.",
+      "text": "Kitaran kielen värähtelevä osa on kaikissa mittauksissa $0{,}650\\,\\text{m}$ pitkä, ja kieli on kiinni kummastakin päästä. Kielen jännitysvoimaa $F$ muutetaan virityskoneistolla, ja kielen perustaajuus $f_1$ mitataan jokaisella jännitysvoimalla. Taulukossa ovat mittaustulokset (esimerkkiaineisto).\n\nTutkitaan, onko perustaajuus verrannollinen jännitysvoiman neliöjuureen, $f_1 \\propto \\sqrt{F}$, vai itse jännitysvoimaan, $f_1 \\propto F$.\n\na) Laske jokaiselle mittaukselle suhteet $\\tfrac{f_1}{F}$ ja $\\tfrac{f_1^2}{F}$. Kumpi suhde pysyy mittausepävarmuuden rajoissa vakiona?\n\nb) Päättele a)-kohdan perusteella, kuinka moninkertaiseksi perustaajuus muuttuu, kun jännitysvoima nelinkertaistetaan.\n\nc) Ennusta perustaajuus, kun jännitysvoima on $120\\,\\text{N}$. Käytä vakiona suhteen $\\tfrac{f_1^2}{F}$ keskiarvoa ja arvioi ennusteen luotettavuutta.\n\nVastauslaatikkoon tulee c)-kohdan tulos.",
       "kind": [
         "data",
         "model"
@@ -315,7 +315,7 @@
     {
       "id": "fy5-13-L3-05",
       "level": 3,
-      "text": "Kylmässä varastohallissa tutkitaan kahta samanpituista, $0{,}800\\,\\text{m}$:n pituista putkea A ja B. Toinen on avoin molemmista päistä ja toinen suljettu toisesta päästä, mutta merkinnät ovat kadonneet. Putken suun lähellä soi kaiutin, jonka taajuutta nostetaan, ja kolme alinta resonanssitaajuutta mitataan. Putken pään korjaus jätetään huomiotta. Äänen nopeus ei ole hallissa $340\\,\\text{m/s}$, koska ilma on kylmää. Taulukossa ovat mittaustulokset (esimerkkiaineisto).\n\na) Päättele taajuuksien suhteista, kumpi putki on avoin ja kumpi suljettu.\n\nb) Laske äänen nopeus ilmassa kummankin putken tuloksista ja anna lopputuloksena niiden keskiarvo.\n\nc) Selitä, miksi putket kuulostavat erilaisilta, vaikka ne ovat yhtä pitkiä.\n\nVastauslaatikkoon tulee b)-kohdan keskiarvo.",
+      "text": "Kylmässä varastohallissa tutkitaan kahta samanpituista, $0{,}800\\,\\text{m}$:n pituista putkea A ja B. Toinen on avoin molemmista päistä ja toinen suljettu toisesta päästä, mutta merkinnät ovat kadonneet. Putken suun lähellä soi kaiutin, jonka taajuutta nostetaan, ja kolme alinta resonanssitaajuutta mitataan. Putken pääkorjaus jätetään huomiotta. Äänen nopeus ei ole hallissa $340\\,\\text{m/s}$, koska ilma on kylmää. Taulukossa ovat mittaustulokset (esimerkkiaineisto).\n\na) Päättele taajuuksien suhteista, kumpi putki on avoin ja kumpi suljettu.\n\nb) Laske äänen nopeus ilmassa kummankin putken tuloksista ja anna lopputuloksena niiden keskiarvo.\n\nc) Selitä, miksi putket kuulostavat erilaisilta, vaikka ne ovat yhtä pitkiä.\n\nVastauslaatikkoon tulee b)-kohdan keskiarvo.",
       "kind": [
         "data",
         "reasoning"

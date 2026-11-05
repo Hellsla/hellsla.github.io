@@ -31,7 +31,7 @@ a["fy5-15-L3-02"] = 0.50 * math.sqrt(10 ** ((30 - 0) / 10))   # mosquito 30 dB a
 # level 3 additions
 P_est = [I_of(l) * 4 * math.pi * r ** 2 for l, r in [(91.1, 5.0), (84.8, 10.0), (79.3, 20.0), (72.6, 40.0)]]   # P = I·4πr² from each reading: 0,405; 0,380; 0,428; 0,366 W
 P_mean = sum(P_est) / 4                                  # mean 0,3945 W
-a["fy5-15-L3-04"] = math.sqrt(P_mean / (4 * math.pi * I_of(55)))   # distance where L = 55 dB: sqrt(P / (4π I)) = 315 m
+a["fy5-15-L3-04"] = round(math.sqrt(P_mean / (4 * math.pi * I_of(55))), -1)   # distance where L = 55 dB: sqrt(P / (4π I)) = 315 m -> 3,2e2 m (two significant figures)
 I_amp = 0.20 / (4 * math.pi * 8.0 ** 2)                  # guitar amp 0,20 W at 8,0 m: 2,487e-4 W/m²
 I_drum = I_of(90) / (8.0 / 2.0) ** 2                     # drums 90 dB at 2,0 m -> at 8,0 m I/16 = 6,25e-5 W/m²
 I_sum = I_amp + I_drum                                   # total 3,112e-4 W/m² (L = 84,93 dB at 8,0 m)

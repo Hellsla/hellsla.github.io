@@ -32,6 +32,6 @@ a["fy5-14-L3-02"] = 440 + 4
 # L3-03 spectrum 147, 441, 735, 1029 Hz: only odd multiples of 147 Hz (answer in words)
 # L3-04 blood flow: f = f0 (v + vb)/(v - vb) -> vb = v df/(2 f0 + df), v = 1540 m/s, f0 = 4,00 MHz, df = 2470 Hz
 a["fy5-14-L3-04"] = 1540.0 * 2470 / (2 * 4.00e6 + 2470)   # 0,4753 m/s -> 0,475 m/s
-# L3-05 speed of sound from the slope of s(t): (2,50 - 0,50) m / (7,71 - 1,88) ms
-a["fy5-14-L3-05"] = (2.50 - 0.50) / ((7.71 - 1.88) * 1e-3)  # 343,1 m/s -> 343 m/s
+# L3-05 plucked string: peaks 196, 392, ... 1176 Hz -> f1 = 1176/6 = 196 Hz; v = 2 L f1, L = 0,650 m
+a["fy5-14-L3-05"] = 2 * 0.650 * (1176 / 6)            # 254,8 m/s -> 255 m/s
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

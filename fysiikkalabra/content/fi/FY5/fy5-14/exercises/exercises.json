@@ -47,7 +47,7 @@
       "kind": [
         "concept"
       ],
-      "answer": "Sen taajuus on suurempi, joten ilman paine vaihtelee useammin sekunnissa.",
+      "answer": "Sen taajuus on suurempi, joten paine vaihtelee useammin sekunnissa.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
@@ -60,7 +60,7 @@
           "feedback": "Äänen nopeus ilmassa ei riipu taajuudesta. Kun nopeus on sama, korkeampi taajuus tarkoittaa lyhyempää aallonpituutta $\\lambda = \\tfrac{v}{f}$, ei pidempää."
         },
         {
-          "text": "Sen taajuus on suurempi, joten ilman paine vaihtelee useammin sekunnissa.",
+          "text": "Sen taajuus on suurempi, joten paine vaihtelee useammin sekunnissa.",
           "feedback": "Oikein: äänenkorkeuden määrää taajuus. Korkeampi ääni tarkoittaa enemmän värähdyksiä sekunnissa eli suurempaa taajuutta $f$.",
           "correct": true
         },
@@ -77,7 +77,7 @@
       "kind": [
         "concept"
       ],
-      "answer": "Vakio ja sireenin omaa korkeampi, koska aaltorintamat ovat edessä tiheässä.",
+      "answer": "Vakio ja korkeampi kuin sireenin oma, koska aaltorintamat tihenevät edessä.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
@@ -86,17 +86,17 @@
           "feedback": "Tämä on yleinen virhekäsitys. Kuultu taajuus riippuu auton nopeudesta, ei etäisyydestä. Kun nopeus on vakio, myös kuultu taajuus on vakio. Lähestyessä kasvaa äänen voimakkuus, ei korkeus."
         },
         {
-          "text": "Vakio ja sireenin omaa korkeampi, koska aaltorintamat ovat edessä tiheässä.",
-          "feedback": "Oikein: lähde kulkee omien aaltorintamiensa perässä, joten rintamat ovat sen edessä tiheässä ja aallonpituus on lyhyempi. Kuultu taajuus $f = \\tfrac{v}{\\lambda}$ on siksi suurempi kuin $f_0$ ja pysyy samana, kunnes auto ohittaa kuulijan.",
-          "correct": true
-        },
-        {
           "text": "Täsmälleen sireenin oma taajuus, koska auton liike muuttaa vain äänen voimakkuutta.",
           "feedback": "Sireeni värähtelee koko ajan taajuudella $f_0$, mutta kuulija havaitsee aaltorintamat tiheämmin, koska lähde liikkuu niiden perässä. Liike muuttaa siis myös kuultua taajuutta, ei vain voimakkuutta."
         },
         {
-          "text": "Sireenin omaa matalampi, koska auton liike hidastaa äänen etenemistä.",
+          "text": "Sireenin omaa matalampi, koska auton liike hidastaa äänen etenemistä ilmassa.",
           "feedback": "Äänen nopeus ilmassa ei riipu lähteen liikkeestä. Lähestyvän lähteen edessä aallonpituus lyhenee, joten kuultu taajuus on suurempi, ei pienempi."
+        },
+        {
+          "text": "Vakio ja korkeampi kuin sireenin oma, koska aaltorintamat tihenevät edessä.",
+          "feedback": "Oikein: lähde kulkee omien aaltorintamiensa perässä, joten rintamat ovat sen edessä tiheässä ja aallonpituus on lyhyempi. Kuultu taajuus $f = \\tfrac{v}{\\lambda}$ on siksi suurempi kuin $f_0$ ja pysyy samana, kunnes auto ohittaa kuulijan.",
+          "correct": true
         }
       ]
     },
@@ -122,7 +122,7 @@
       "id": "fy5-14-L2-02",
       "level": 2,
       "text": "Kaiutin lähettää ilmassa ääntä, jonka aallonpituus on $0{,}850\\,\\text{m}$. Ääni siirtyy järven pinnasta veteen. Mikä on äänen aallonpituus vedessä? Äänen nopeus ilmassa on $340\\,\\text{m/s}$ ja vedessä $1480\\,\\text{m/s}$.",
-      "answer": 3.70,
+      "answer": 3.7,
       "unit": "m",
       "tolerance": 0.02
     },
@@ -310,41 +310,51 @@
     {
       "id": "fy5-14-L3-05",
       "level": 3,
-      "text": "Opiskelijat määrittävät äänen nopeutta ilmassa (esimerkkiaineisto). Kaiutin lähettää lyhyen napsahduksen, jolloin tietokone käynnistää ajanoton. Mikrofoni on samalla suoralla etäisyydellä $s$ kaiuttimesta ja pysäyttää ajanoton havaitessaan napsahduksen. Mitattuun aikaan $t$ sisältyy myös laitteen kiinteä viive, joka on joka mittauksessa sama.\n\na) Piirrä mittauspisteet kuvaajaan, jossa aika $t$ on vaaka-akselilla ja etäisyys $s$ pystyakselilla, ja sovita pisteisiin suora.\n\nb) Määritä äänen nopeus suoran kulmakertoimesta.\n\nc) Selitä, miksi suora ei kulje origon kautta, ja arvioi laitteen viive millisekunteina. Anna vastauslaatikkoon kohdan b) tulos.",
+      "text": "Kitaransoittaja näpäyttää $0{,}650\\,\\text{m}$ pitkää kieltä kahdella tavalla: kielen keskikohdasta ja aivan sillan läheltä. Äänet nauhoitetaan, ja FFT-spektreistä luetaan piikkien taajuudet ja suhteelliset amplitudit (esimerkkiaineisto). Kummassakin spektrissä perustaajuuden amplitudi on merkitty arvoksi $1{,}00$.\n\na) Mikä on kielen perustaajuus? Mitkä harmoniset puuttuvat lähes kokonaan, kun kieltä näpätään keskeltä?\n\nb) Laske aallon nopeus kielessä. Anna vastauslaatikkoon tämän kohdan tulos.\n\nc) Selitä, miksi osa harmonisista puuttuu keskeltä näpäytettäessä, ja kerro, kummalla tavalla soitettu ääni kuulostaa kirkkaammalta ja miksi.",
       "kind": [
         "data",
-        "graph",
-        "experiment"
+        "model"
       ],
-      "answer": 343,
+      "answer": 255,
       "unit": "m/s",
       "tolerance": 0.02,
       "data": {
-        "caption": "Esimerkkiaineisto: napsahduksen kulkuaika",
+        "caption": "Esimerkkiaineisto: spektrien piikit, suhteellinen amplitudi",
         "columns": [
-          "$s\\,(\\text{m})$",
-          "$t\\,(\\text{ms})$"
+          "$f\\,(\\text{Hz})$",
+          "Keskeltä",
+          "Sillan lähellä"
         ],
         "rows": [
           [
-            "0.50",
-            "1.88"
-          ],
-          [
+            "196",
             "1.00",
-            "3.30"
+            "1.00"
           ],
           [
-            "1.50",
-            "4.80"
+            "392",
+            "0.02",
+            "0.47"
           ],
           [
-            "2.00",
-            "6.22"
+            "588",
+            "0.11",
+            "0.30"
           ],
           [
-            "2.50",
-            "7.71"
+            "784",
+            "0.01",
+            "0.19"
+          ],
+          [
+            "980",
+            "0.04",
+            "0.13"
+          ],
+          [
+            "1176",
+            "0.01",
+            "0.09"
           ]
         ]
       }

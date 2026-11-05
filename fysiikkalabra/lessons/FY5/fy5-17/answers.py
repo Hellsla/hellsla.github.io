@@ -26,8 +26,7 @@ t_fat = 2 * 0.040 / 1450                              # two layers: 4,0 cm of fa
 d_muscle = 1580 * (80.0e-6 - t_fat) / 2               # the rest of 80,0 µs in muscle at 1580 m/s: 0,01962 m
 a["fy5-17-L3-02"] = (0.040 + d_muscle) * 100          # depth below the skin 5,96 cm (one speed 1540 m/s would give 6,16 cm)
 a["fy5-17-L3-03"] = 200 * math.sqrt(10 / 4000)        # tsunami period constant: λ = vT ∝ √h, 200 km at 4000 m -> 10,0 km at 10 m
-# Added exercises (bank): level 1
-a["fy5-17-L1-08"] = 343 / 60.0e3 * 1e3                # bat call 60,0 kHz in air: λ = 343 / 60e3 m = 5,717e-3 m -> 5,72 mm
+# Added exercises (bank): level 1 (L1-06..08 are multiple choice, no number)
 # Level 2
 a["fy5-17-L2-05"] = 1540 * (109.2 - 58.9) * 1e-6 / 2 * 100   # A-scan peaks 58,9 and 109,2 µs: layer 1540 · 50,3e-6 / 2 = 0,03873 m -> 3,87 cm
 _L = [0.200, 0.300, 0.400, 0.500]; _t = [270e-6, 407e-6, 540e-6, 677e-6]

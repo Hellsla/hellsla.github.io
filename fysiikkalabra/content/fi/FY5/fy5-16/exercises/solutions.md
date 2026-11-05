@@ -132,7 +132,7 @@
 **Annettu:** ennen levyjä taso laskee $90{,}3\,\text{dB}$:stä $74{,}4\,\text{dB}$:iin ja levyjen jälkeen $90{,}2\,\text{dB}$:stä $50{,}1\,\text{dB}$:iin ajassa $\Delta t = 0{,}40\,\text{s}$; lasku on tasainen
 **Kysytty:** jälkikaiunta-ajan lyhenemä prosentteina
 **Periaate:** Kun taso laskee tasaisesti, jälkikaiunta-aika on aika, jossa lasku on $60\,\text{dB}$. Lasketaan se kummallekin mittaukselle mitatun pudotuksen ja ajan avulla ja verrataan aikoja.
-**Kuvaajan lukeminen:** Pudotus ennen levyjä on $\Delta L_1 = 90{,}3\,\text{dB} - 74{,}4\,\text{dB} = 15{,}9\,\text{dB}$ ja levyjen jälkeen $\Delta L_2 = 90{,}2\,\text{dB} - 50{,}1\,\text{dB} = 40{,}1\,\text{dB}$.
+**Taulukon lukeminen:** Pudotus ennen levyjä on $\Delta L_1 = 90{,}3\,\text{dB} - 74{,}4\,\text{dB} = 15{,}9\,\text{dB}$ ja levyjen jälkeen $\Delta L_2 = 90{,}2\,\text{dB} - 50{,}1\,\text{dB} = 40{,}1\,\text{dB}$.
 **Kaava:** $T = \dfrac{60\,\text{dB}}{\Delta L} \cdot \Delta t$ ja lyhenemä $= \dfrac{T_1 - T_2}{T_1} \cdot 100\,\%$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:**
@@ -151,7 +151,7 @@ T_2 &= \frac{60\,\text{dB}}{40{,}1\,\text{dB}} \cdot 0{,}40\,\text{s} \\
 **Annettu:** vaimennus $\Delta L = L_\text{ilman} - L_\text{este}$ taajuuksilla $125$, $500$, $2000$ ja $4000\,\text{Hz}$ taulukon arvoista; äänen nopeus $v = 343\,\text{m/s}$
 **Kysytty:** a) ero vaimennuksessa taajuuksilla $4000\,\text{Hz}$ ja $500\,\text{Hz}$; b) miksi matala ääni vaimenee huonommin
 **Periaate:** Esteen vaimennus on tason pudotus esteen takana. Aalto kiertyy esteen ohi sitä paremmin, mitä pidempi sen aallonpituus $\lambda = \dfrac{v}{f}$ on esteen kokoon verrattuna.
-**Kuvaajan lukeminen:** Taulukosta vaimennukset ovat $125\,\text{Hz}$: $8{,}1\,\text{dB}$, $500\,\text{Hz}$: $13{,}4\,\text{dB}$, $2000\,\text{Hz}$: $22{,}2\,\text{dB}$ ja $4000\,\text{Hz}$: $25{,}2\,\text{dB}$.
+**Taulukon lukeminen:** Taulukosta vaimennukset ovat $125\,\text{Hz}$: $8{,}1\,\text{dB}$, $500\,\text{Hz}$: $13{,}4\,\text{dB}$, $2000\,\text{Hz}$: $22{,}2\,\text{dB}$ ja $4000\,\text{Hz}$: $25{,}2\,\text{dB}$.
 **Kaava:** $\Delta L = L_\text{ilman} - L_\text{este}$ ja $\lambda = \dfrac{v}{f}$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:**
@@ -167,21 +167,22 @@ Aallonpituudet ovat $\lambda_{125} = \dfrac{343\,\text{m/s}}{125\,\text{Hz}} = 2
 **Järkevyys:** Vaimennus kasvaa taajuuden mukana joka rivillä: $8{,}1 < 13{,}4 < 22{,}2 < 25{,}2\,\text{dB}$. Siksi tulos on positiivinen, ja ero on pienempi kuin suurin vaimennus $25{,}2\,\text{dB}$.
 
 ## fy5-16-L2-07
-**Annettu:** $L_\text{A} = 83\,\text{dB}$, $L_\text{B} = 80\,\text{dB}$; lähteiden intensiteetit summautuvat
-**Kysytty:** a) miksi desibelejä ei lasketa yhteen; b) yhteinen taso $L$
-**Periaate:** Desibeliasteikko on logaritminen, joten tasot eivät summaudu. Summautuvat intensiteetit, ja taso lasketaan vasta summasta. Vertaamalla suurempaan tasoon $L_\text{A}$ ei tarvita vertailuintensiteettiä $I_0$.
-**Kaava:** $\dfrac{I_\text{B}}{I_\text{A}} = 10^{\,(L_\text{B} - L_\text{A}) / (10\,\text{dB})}$ ja $L = L_\text{A} + 10\,\text{dB} \cdot \lg \dfrac{I_\text{A} + I_\text{B}}{I_\text{A}}$
-**Muunnokset:** Ei tarvita.
+**Annettu:** työpisteen taso $L = 100\,\text{dB}$; vertailu $L_0 = 85\,\text{dB}$ ja $t_0 = 8\,\text{h}$; oppilaan tulos $1{,}6\,\text{h}$
+**Kysytty:** a) mikä oppilaan päättelyssä on väärin; b) oikea sallittu aika $t_\text{sall}$ minuutteina
+**Periaate:** Jokainen $3\,\text{dB}$ toiminta-arvon yli puolittaa sallitun ajan, joten aika jaetaan kahdella jokaista $3\,\text{dB}$:n askelta kohti. Askeleet kertautuvat: aika jaetaan luvulla $2^{\,n}$, ei luvulla $n$.
+**Kaava:** $n = \dfrac{L - L_0}{3\,\text{dB}}$ ja $t_\text{sall} = \dfrac{t_0}{2^{\,n}}$
+**Muunnokset:** $1\,\text{h} = 60\,\text{min}$.
 **Sijoitus:**
 $$\begin{aligned}
-\frac{I_\text{B}}{I_\text{A}} &= 10^{\,-0{,}30} \\
-&= 0{,}501 \\
-L &= 83\,\text{dB} + 10\,\text{dB} \cdot \lg 1{,}501 \\
-&= 83\,\text{dB} + 1{,}76\,\text{dB} \\
-&= 84{,}76\,\text{dB}
+n &= \frac{100\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} \\
+&= 5 \\
+t_\text{sall} &= \frac{8\,\text{h}}{2^{\,5}} \\
+&= \frac{8\,\text{h}}{32} \\
+&= 0{,}25\,\text{h} \\
+&= 15\,\text{min}
 \end{aligned}$$
-**Vastaus:** a) Taso on logaritminen suure: kun intensiteetti kasvaa kertoimella, taso kasvaa vain desibelien lisäyksenä, joten tasojen summa $163\,\text{dB}$ ei kuvaa mitään todellista äänenvoimakkuutta. b) $85\,\text{dB}$, kokonaisina desibeleinä kuten lähtötiedot.
-**Järkevyys:** Yhteinen taso on suurempi kuin kumpikaan yksin ($83\,\text{dB}$ ja $80\,\text{dB}$) mutta vain vähän suurempi kuin voimakkaampi kone. Se on pienempi kuin $86\,\text{dB}$, joka saataisiin kahdesta $83\,\text{dB}$:n koneesta ($83\,\text{dB} + 3\,\text{dB}$), kuten heikomman koneen kohdalla pitääkin.
+**Vastaus:** a) Oppilas laski askelten määrän $n = 5$ oikein mutta jakoi ajan luvulla $5$. Jokainen askel puolittaa jäljellä olevan ajan, joten ajan pitää jakaa luvulla $2^{\,5} = 32$. b) Sallittu aika on $15\,\text{min}$.
+**Järkevyys:** Oppilaan $1{,}6\,\text{h}$ eli $96\,\text{min}$ on yli kuusinkertainen oikeaan nähden, vaikka taso on selvästi toiminta-arvon yli. Tarkistus askel kerrallaan: $8\,\text{h} \to 4\,\text{h} \to 2\,\text{h} \to 1\,\text{h} \to 30\,\text{min} \to 15\,\text{min}$ on viisi puolitusta.
 
 ## fy5-16-L3-04
 **Annettu:** sahaus $L_1 = 97\,\text{dB}$, $t_1 = 1{,}0\,\text{h}$; höyläys $L_2 = 91\,\text{dB}$, $t_2 = 2{,}0\,\text{h}$; kokoaminen $L_3 = 85\,\text{dB}$, $t_3 = 3{,}0\,\text{h}$; vertailu $L_0 = 85\,\text{dB}$ ja $t_0 = 8\,\text{h}$
@@ -193,7 +194,7 @@ L &= 83\,\text{dB} + 10\,\text{dB} \cdot \lg 1{,}501 \\
 Sahaus: $n_1 = \dfrac{97 - 85}{3} = 4$, joten $t_{\text{sall},1} = 8\,\text{h} : 16 = 0{,}50\,\text{h}$ ja osuus on $1{,}0\,\text{h} : 0{,}50\,\text{h} = 2{,}0$. Höyläys: $n_2 = 2$, $t_{\text{sall},2} = 2{,}0\,\text{h}$ ja osuus $1{,}0$. Kokoaminen: $n_3 = 0$, $t_{\text{sall},3} = 8\,\text{h}$ ja osuus $0{,}375$.
 $$\begin{aligned}
 D &= 2{,}0 + 1{,}0 + 0{,}375 \\
-&= 3{,}375 \approx 3{,}4
+&= 3{,}375
 \end{aligned}$$
 Kohta b:
 $$\begin{aligned}
@@ -203,7 +204,7 @@ $$\begin{aligned}
 &= 5{,}26\,\text{dB}
 \end{aligned}$$
 Kohta c: kotelo laskee sahauksen tason arvoon $87\,\text{dB}$, jolloin $n_1 = \dfrac{2}{3}$ ja $t_{\text{sall},1} = \dfrac{8\,\text{h}}{2^{2/3}} = 5{,}04\,\text{h}$, osuus $1{,}0 : 5{,}04 = 0{,}198$. Uusi annos on $D = 0{,}198 + 1{,}0 + 0{,}375 = 1{,}57$.
-**Vastaus:** a) $340\,\%$. b) vähintään $5{,}3\,\text{dB}$. c) Ei riitä yksin, koska annos on edelleen noin $160\,\%$ vertailuannoksesta. Kotelon lisäksi tarvitaan esimerkiksi kuulonsuojaimet, joiden vaimennus on vähintään $\dfrac{3\,\text{dB} \cdot \lg 1{,}57}{\lg 2} = 2{,}0\,\text{dB}$, tai höyläyskoneen sijoittaminen erilleen työpisteestä.
+**Vastaus:** a) noin $340\,\%$. b) vähintään $5{,}3\,\text{dB}$. c) Ei riitä yksin, koska annos on edelleen noin $160\,\%$ vertailuannoksesta. Kotelon lisäksi tarvitaan esimerkiksi kuulonsuojaimet, joiden vaimennus on vähintään $\dfrac{3\,\text{dB} \cdot \lg 1{,}57}{\lg 2} = 2{,}0\,\text{dB}$, tai höyläyskoneen sijoittaminen erilleen työpisteestä.
 **Järkevyys:** Sahaus ja höyläys ovat yli toiminta-arvon, joten annoksen täytyy olla yli $100\,\%$. Tavalliset suojaimet vaimentavat $20$–$30\,\text{dB}$, joten $5{,}3\,\text{dB}$ täyttyy helposti.
 
 ## fy5-16-L3-05
@@ -221,6 +222,6 @@ n &= \frac{92\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} \\
 t_\text{sall} &= \frac{8\,\text{h}}{2^{\,2{,}33}} \\
 &= 1{,}59\,\text{h}
 \end{aligned}$$
-Kohta c: annos on $\dfrac{3{,}0\,\text{h}}{1{,}59\,\text{h}} = 1{,}89$ eli $190\,\%$. Etäisyydellä $16\,\text{m}$ taso on $100\,\text{dB} - 6\,\text{dB} = 94\,\text{dB}$ ja tulppien kanssa $86\,\text{dB}$. Silloin $n = \dfrac{1}{3}$, $t_\text{sall} = \dfrac{8\,\text{h}}{2^{1/3}} = 6{,}35\,\text{h}$ ja annos on $\dfrac{3{,}0\,\text{h}}{6{,}35\,\text{h}} = 0{,}47$ eli $47\,\%$.
-**Vastaus:** a) $100\,\text{dB}$. b) $1{,}6\,\text{h}$, kaksi merkitsevää numeroa kuten vaimennuksessa ja kestossa. c) Paikallaan etäisyydellä $8{,}0\,\text{m}$ annos on $190\,\%$ eli liian suuri. Siirtyminen etäisyydelle $16\,\text{m}$ riittää, koska annos putoaa noin $47\,\%$:iin.
+Kohta c: annos on $\dfrac{3{,}0\,\text{h}}{1{,}59\,\text{h}} = 1{,}89$ eli $190\,\%$. Etäisyydellä $16\,\text{m}$ taso on $100\,\text{dB} - 6\,\text{dB} = 94\,\text{dB}$ ja tulpat korvissa $86\,\text{dB}$. Silloin $n = \dfrac{1}{3}$, $t_\text{sall} = \dfrac{8\,\text{h}}{2^{1/3}} = 6{,}35\,\text{h}$ ja annos on $\dfrac{3{,}0\,\text{h}}{6{,}35\,\text{h}} = 0{,}47$ eli $47\,\%$.
+**Vastaus:** a) $100\,\text{dB}$. b) $1{,}6\,\text{h}$, kaksi merkitsevää numeroa kuten vaimennuksessa ja kestossa. c) Paikallaan etäisyydellä $8{,}0\,\text{m}$ annos on $190\,\%$ eli liian suuri. Jos kuulija pitää tulpat korvissa myös etäisyydellä $16\,\text{m}$, siirtyminen riittää, koska annos putoaa noin $47\,\%$:iin.
 **Järkevyys:** Ilman tulppia sallittu aika olisi vain $8\,\text{h} : 2^5 = 0{,}25\,\text{h}$, joten $8\,\text{dB}$:n vaimennus pidentää sitä noin kuusinkertaiseksi, ja $1{,}59\,\text{h} : 0{,}25\,\text{h} = 6{,}3 \approx 2^{8/3} = 6{,}35$.

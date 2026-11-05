@@ -57,7 +57,7 @@
         },
         {
           "text": "Ääni on kipukynnyksellä, koska asteikon nollakohta on valittu kaikkein voimakkaimman äänen mukaan.",
-          "feedback": "Kipukynnys on noin $1\\,\\text{W/m}^2$, jolloin taso on noin $120\\,\\text{dB}$. Asteikon nollakohta on valittu päinvastoin kuulokynnyksen eli heikoimman kuultavan äänen mukaan."
+          "feedback": "Kipukynnys on moninkertainen kuulokynnykseen verrattuna, joten se on asteikon yläpäässä. Asteikon nollakohta on valittu päinvastoin kuulokynnyksen eli heikoimman kuultavan äänen mukaan."
         },
         {
           "text": "Intensiteetti on $I_0$, koska silloin $\\lg(I/I_0) = \\lg 1 = 0$.",
@@ -73,31 +73,31 @@
     {
       "id": "fy5-15-L1-07",
       "level": 1,
-      "text": "Opiskelija laskee, että kaksi samanlaista ilmastointikonetta, joista kumpikin tuottaa yksinään $70\\,\\text{dB}$, tuottavat yhdessä $140\\,\\text{dB}$. Mikä on opiskelijan laskussa virhe?",
+      "text": "Opiskelija laskee, että kaksi samanlaista astianpesukonetta, joista kumpikin tuottaa yksinään $64\\,\\text{dB}$, tuottavat yhdessä $128\\,\\text{dB}$. Mikä on opiskelijan laskussa virhe?",
       "kind": [
         "error",
         "concept"
       ],
-      "answer": "Intensiteetit lasketaan yhteen eikä desibelejä, joten intensiteetti kaksinkertaistuu ja taso nousee vain noin $3\\,\\text{dB}$ arvoon $73\\,\\text{dB}$.",
+      "answer": "Desibelejä ei lasketa yhteen, vaan intensiteetit, joten taso nousee vain noin $3\\,\\text{dB}$ arvoon $67\\,\\text{dB}$.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Koneet ovat toisistaan riippuvia lähteitä, joten desibelit lasketaan yhteen, mutta taso on vain $105\\,\\text{dB}$.",
-          "feedback": "Ilmastointikoneet toimivat toisistaan riippumatta, joten niiden intensiteetit lasketaan yhteen. Desibelejä ei lasketa yhteen riippuvillakaan lähteillä, ja tulos $105\\,\\text{dB}$ on yhtä virheellinen."
-        },
-        {
-          "text": "Intensiteetit lasketaan yhteen eikä desibelejä, joten intensiteetti kaksinkertaistuu ja taso nousee vain noin $3\\,\\text{dB}$ arvoon $73\\,\\text{dB}$.",
-          "feedback": "Oikein: toisistaan riippumattomien lähteiden intensiteetit lasketaan yhteen. Kaksinkertainen intensiteetti lisää tasoa $10\\,\\text{dB} \\cdot \\lg 2 \\approx 3{,}0\\,\\text{dB}$.",
-          "correct": true
-        },
-        {
-          "text": "Tasoista lasketaan keskiarvo, koska desibelit kuvaavat voimakkuutta keskimäärin, joten yhteistaso on $70\\,\\text{dB}$.",
+          "text": "Tasoista lasketaan keskiarvo, koska desibelit kuvaavat voimakkuutta keskimäärin, joten yhteistaso on $64\\,\\text{dB}$.",
           "feedback": "Toinen kone lisää ääntä, joten yhteistason täytyy olla suurempi kuin yhden koneen taso. Keskiarvo ei kuvaa kahden lähteen yhteisvaikutusta, ja desibelit eivät ole keskiarvoistettavia voimakkuuksia."
         },
         {
-          "text": "Kaksi konetta kasvattaa intensiteetin kymmenkertaiseksi, joten taso nousee $10\\,\\text{dB}$ arvoon $80\\,\\text{dB}$.",
+          "text": "Jokainen kone lisää tasoon kolme desibeliä, joten yhteistaso on $64\\,\\text{dB} + 2 \\cdot 3\\,\\text{dB} = 70\\,\\text{dB}$.",
+          "feedback": "Vakiolisäys $3\\,\\text{dB}$ koskee koko yhteistasoa vain kerran, ei kutakin konetta erikseen. Kaksinkertainen intensiteetti nostaa tason yhteensä vain noin $3\\,\\text{dB}$, ei kuutta desibeliä."
+        },
+        {
+          "text": "Kaksi konetta kasvattaa intensiteetin kymmenkertaiseksi, joten taso nousee $10\\,\\text{dB}$ arvoon $74\\,\\text{dB}$.",
           "feedback": "Kahden samanlaisen koneen intensiteetti on kaksinkertainen, ei kymmenkertainen. Taso nousee $10\\,\\text{dB}$ vasta, kun intensiteetti kasvaa kymmenkertaiseksi, eli kymmenen samanlaisen koneen yhteisvaikutuksesta."
+        },
+        {
+          "text": "Desibelejä ei lasketa yhteen, vaan intensiteetit, joten taso nousee vain noin $3\\,\\text{dB}$ arvoon $67\\,\\text{dB}$.",
+          "feedback": "Oikein: toisistaan riippumattomien lähteiden intensiteetit lasketaan yhteen. Kaksinkertainen intensiteetti lisää tasoa $10\\,\\text{dB} \\cdot \\lg 2 \\approx 3{,}0\\,\\text{dB}$.",
+          "correct": true
         }
       ]
     },
@@ -298,9 +298,9 @@
         "model",
         "reasoning"
       ],
-      "answer": 315,
+      "answer": 320,
       "unit": "m",
-      "tolerance": 0.03,
+      "tolerance": 0.05,
       "data": {
         "caption": "Esimerkki: taso ulkona",
         "columns": [

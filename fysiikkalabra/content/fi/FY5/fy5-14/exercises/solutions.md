@@ -125,25 +125,25 @@
 **Kaava:** $f_\text{h} = |f_1 - f_2|$ ja $T_\text{h} = \dfrac{1}{f_\text{h}}$
 **Muunnokset:** Ei tarvita: taajuudet ovat hertseinä, joten jaksonaika tulee sekunteina.
 **Sijoitus:** $f_\text{h} = |392\,\text{Hz} - 398\,\text{Hz}| = 6\,\text{Hz}$, joten $T_\text{h} = \dfrac{1}{6\,\text{Hz}} = 0{,}1667\,\text{s}$
-**Vastaus:** $0{,}167\,\text{s}$, kolme merkitsevää numeroa.
-**Järkevyys:** Voimakkaita hetkiä on $6$ sekunnissa, ja $6 \cdot 0{,}167\,\text{s} \approx 1{,}0\,\text{s}$. Taajuusero on alle $10\,\text{Hz}$, joten huojunta erottuu selvästi.
+**Vastaus:** $0{,}167\,\text{s}$, kolme merkitsevää numeroa, koska äänirautojen nimellistaajuudet otetaan tarkkoina.
+**Järkevyys:** Kuusi huojuntajaksoa kestää yhteensä $6 \cdot 0{,}1667\,\text{s} = 1{,}00\,\text{s}$, mikä sopii taajuuteen $6\,\text{Hz}$. Taajuusero on alle $10\,\text{Hz}$, joten huojunta erottuu selvästi.
 
 ## fy5-14-L2-05
 **Annettu:** torven taajuus paikallaan $f_0 = 392\,\text{Hz}$, neljä mitattua taajuutta $431\,\text{Hz}$, $429\,\text{Hz}$, $432\,\text{Hz}$ ja $430\,\text{Hz}$, äänen nopeus $v = 340\,\text{m/s}$
 **Kysytty:** auton nopeus $v_\text{s}$
 **Periaate:** Auto eli äänilähde lähestyy paikallaan olevaa kuulijaa, joten pätee liikkuvan lähteen Dopplerin kaava miinusmerkillä. Mittaukset vaihtelevat hieman, joten käytetään niiden keskiarvoa $f_\text{ka}$. Kaavasta ratkaistaan lähteen nopeus.
-**Kuvaajan lukeminen:** Taulukon neljän taajuuden summa on $431 + 429 + 432 + 430 = 1722$ hertsiä, joten keskiarvo on $f_\text{ka} = \dfrac{1722\,\text{Hz}}{4} = 430{,}5\,\text{Hz}$.
+**Aineiston käsittely:** Taulukon neljän taajuuden summa on $431 + 429 + 432 + 430 = 1722$ hertsiä, joten keskiarvo on $f_\text{ka} = \dfrac{1722\,\text{Hz}}{4} = 430{,}5\,\text{Hz}$.
 **Kaava:** $f_\text{ka} = f_0 \cdot \dfrac{v}{v - v_\text{s}}$, josta $v - v_\text{s} = \dfrac{f_0 v}{f_\text{ka}}$ ja $v_\text{s} = v \left(1 - \dfrac{f_0}{f_\text{ka}}\right)$
 **Muunnokset:** Ei tarvita: taajuudet ovat hertseinä, ja niiden suhteesta yksikkö supistuu.
 **Sijoitus:** $v_\text{s} = 340\,\text{m/s} \cdot \left(1 - \dfrac{392\,\text{Hz}}{430{,}5\,\text{Hz}}\right) = 340\,\text{m/s} \cdot 0{,}08943 = 30{,}41\,\text{m/s}$
 **Vastaus:** $30{,}4\,\text{m/s}$, kolme merkitsevää numeroa kuten taajuuksissa.
-**Järkevyys:** $30{,}4\,\text{m/s}$ on noin $109\,\text{km/h}$, mikä on suurin piirtein maantienopeus. Arvio $f_0 \cdot \tfrac{v_\text{s}}{v} = 392\,\text{Hz} \cdot \tfrac{30{,}4}{340} \approx 35\,\text{Hz}$ vastaa mitattua nousua $430{,}5\,\text{Hz} - 392\,\text{Hz} = 38{,}5\,\text{Hz}$ kohtuullisesti, koska nimittäjässä on $v - v_\text{s}$ eikä $v$. Mittaukset poikkeavat keskiarvosta enintään $1{,}5\,\text{Hz}$, mikä vastaa noin $0{,}4\,\text{m/s}$:n vaihtelua nopeudessa.
+**Järkevyys:** $30{,}4\,\text{m/s}$ on noin $109\,\text{km/h}$, mikä on suurin piirtein maantienopeus. Takaisinlaskenta: $\dfrac{392\,\text{Hz}}{1 - 30{,}41/340} = 430{,}5\,\text{Hz}$ on mitattu keskiarvo. Yksittäiset mittaukset antavat nopeuksiksi $29{,}3$–$31{,}5\,\text{m/s}$, joten hajonta on noin $1\,\text{m/s}$.
 
 ## fy5-14-L2-06
 **Annettu:** huilun ja viulun spektrien piikit taajuuksilla $262\,\text{Hz}$, $524\,\text{Hz}$, $785\,\text{Hz}$, $1047\,\text{Hz}$ ja $1309\,\text{Hz}$ sekä niiden suhteelliset korkeudet taulukossa
 **Kysytty:** perustaajuus $f_1$ sekä se, kumpi soitin kuulostaa kirkkaammalta
 **Periaate:** Soittimen osasävelet muodostavat harmonisen sarjan $f_n = n f_1$, joten perustaajuus on sarjan alin taajuus ja piikkien väli. Se ei välttämättä ole voimakkain piikki. Sointiväri riippuu yläsävelten voimakkuuksista: kirkkaassa äänessä yläsävelet ovat voimakkaita.
-**Kuvaajan lukeminen:** Alin piikki on $262\,\text{Hz}$ molemmissa spektreissä. Piikit ovat sen monikertoja: $\dfrac{524}{2} = 262$, $\dfrac{785}{3} \approx 262$, $\dfrac{1047}{4} \approx 262$ ja $\dfrac{1309}{5} \approx 262$. Viulun voimakkain piikki on toinen harmoninen $524\,\text{Hz}$, mutta se ei ole perustaajuus.
+**Aineiston käsittely:** Alin piikki on $262\,\text{Hz}$ molemmissa spektreissä. Piikit ovat sen monikertoja: $\dfrac{524}{2} = 262$, $\dfrac{785}{3} \approx 262$, $\dfrac{1047}{4} \approx 262$ ja $\dfrac{1309}{5} \approx 262$. Viulun voimakkain piikki on toinen harmoninen $524\,\text{Hz}$, mutta se ei ole perustaajuus.
 **Kaava:** $f_n = n f_1$, joten $f_1 = \dfrac{f_n}{n}$
 **Muunnokset:** Ei tarvita: kaikki taajuudet ovat hertseinä.
 **Sijoitus:** $f_1 = \dfrac{1309\,\text{Hz}}{5} = 261{,}8\,\text{Hz}$
@@ -153,7 +153,7 @@
 ## fy5-14-L2-07
 **Annettu:** auton nopeus $v_\text{s} = 30{,}0\,\text{m/s}$, torven taajuus $f_0 = 500\,\text{Hz}$, äänen nopeus $v = 340\,\text{m/s}$, opiskelijan tulos $544\,\text{Hz}$
 **Kysytty:** opiskelijan virhe ja oikea kuultu taajuus $f$
-**Periaate:** Opiskelija käytti kaavaa, joka koskee liikkuvaa kuulijaa. Tässä kuulija on paikallaan ja äänilähde eli auto liikkuu, joten pätee liikkuvan lähteen kaava. Lähteen liike lyhentää aallonpituutta lähteen edessä ($\lambda = (v - v_\text{s}) T_0$), kun taas kuulijan liike ei muuta aallonpituutta. Auto lähestyy, joten merkki valitaan niin, että $f > f_0$. Virhe ei ole siinä, että Doppler muuttaisi vain voimakkuutta: lähestyessä muuttuu myös taajuus.
+**Periaate:** Opiskelija käytti kaavaa, joka koskee liikkuvaa kuulijaa. Tässä kuulija on paikallaan ja äänilähde eli auto liikkuu, joten pätee liikkuvan lähteen kaava. Lähteen liike lyhentää aallonpituutta lähteen edessä ($\lambda = (v - v_\text{s}) T_0$), kun taas kuulijan liike ei muuta aallonpituutta. Auto lähestyy, joten merkki valitaan niin, että $f > f_0$.
 **Kaava:** $f = f_0 \cdot \dfrac{v}{v - v_\text{s}}$
 **Muunnokset:** Ei tarvita: nopeudet ovat jo yksikössä m/s.
 **Sijoitus:**
@@ -165,7 +165,7 @@ $\begin{aligned} f &= 500\,\text{Hz} \cdot \dfrac{340\,\text{m/s}}{(340 - 30{,}0
 **Annettu:** anturin taajuus $f_0 = 4{,}00\,\text{MHz} = 4{,}00 \cdot 10^6\,\text{Hz}$, äänen nopeus kudoksessa $v = 1540\,\text{m/s}$, taajuuden muutokset $\Delta f$ taulukossa, veri virtaa suoraan kohti anturia
 **Kysytty:** veren suurin mitattu virtausnopeus $v_\text{v}$
 **Periaate:** Anturi on paikallaan, ja punasolu liikkuu kohti sitä nopeudella $v_\text{v}$. Punasolu on ensin liikkuva kuulija, joka lähestyy lähdettä ja kuulee taajuuden $f_1 = f_0 \cdot \tfrac{v + v_\text{v}}{v}$. Se heijastaa saman taajuuden takaisin, joten se on sitten liikkuva lähde, joka lähestyy paikallaan olevaa anturia, ja anturi vastaanottaa taajuuden $f = f_1 \cdot \tfrac{v}{v - v_\text{v}}$. Doppler-siirtymä tulee siis kahdesti, minkä vuoksi muutos on lähes kaksinkertainen yhteen siirtymään verrattuna. Suurin virtausnopeus vastaa suurinta taajuuden muutosta.
-**Kuvaajan lukeminen:** Taulukon suurin muutos on $\Delta f = 2{,}47\,\text{kHz}$ hetkellä $t = 0{,}20\,\text{s}$.
+**Aineiston käsittely:** Taulukon suurin muutos on $\Delta f = 2{,}47\,\text{kHz}$ hetkellä $t = 0{,}20\,\text{s}$.
 **Kaava:** $f = f_0 \cdot \dfrac{v + v_\text{v}}{v - v_\text{v}}$, josta $\Delta f = f - f_0 = f_0 \cdot \dfrac{2 v_\text{v}}{v - v_\text{v}}$ ja $v_\text{v} = \dfrac{v \, \Delta f}{2 f_0 + \Delta f}$
 **Muunnokset:** $\Delta f = 2{,}47\,\text{kHz} = 2470\,\text{Hz}$ ja $f_0 = 4{,}00\,\text{MHz} = 4\,000\,000\,\text{Hz}$.
 **Sijoitus:** Nimittäjä on $2 f_0 + \Delta f = 8\,000\,000\,\text{Hz} + 2470\,\text{Hz} = 8\,002\,470\,\text{Hz}$.
@@ -174,13 +174,13 @@ $\begin{aligned} v_\text{v} &= \dfrac{1540\,\text{m/s} \cdot 2470\,\text{Hz}}{8\
 **Järkevyys:** Nopeus on paljon pienempi kuin äänen nopeus, joten $v_\text{v} \approx \tfrac{v \, \Delta f}{2 f_0} = 0{,}4755\,\text{m/s}$, mikä poikkeaa tuloksesta alle $0{,}1\,\%$. Yhden siirtymän tulos olisi $\tfrac{v \, \Delta f}{f_0} \approx 0{,}95\,\text{m/s}$, kaksinkertainen. Alle metrin sekunnissa oleva huippunopeus on uskottava verisuonessa.
 
 ## fy5-14-L3-05
-**Annettu:** etäisyydet $s$ ja ajat $t$ taulukossa; ajassa on kiinteä laitteen viive $t_0$
-**Kysytty:** äänen nopeus $v$ suoran kulmakertoimesta sekä viiveen $t_0$ arvio
-**Periaate:** Ääni etenee ilmassa tasaisella nopeudella, joten kulkuaika on $\tfrac{s}{v}$ ja mitattu aika $t = \tfrac{s}{v} + t_0$. Kuvaajassa $s(t)$ on suora, jonka kulmakerroin on $v$ ja joka leikkaa aika-akselin kohdassa $t_0$. Viive siirtää kaikkia pisteitä yhtä paljon ajassa, joten kulmakerroin ei riipu siitä.
-**Kuvaajan lukeminen:** Kuvaajassa $t$ on vaaka- ja $s$ pystyakselilla, ja pisteet asettuvat nousevalle suoralle. Suoralle valitaan pisteet $(1{,}88\,\text{ms};\ 0{,}50\,\text{m})$ ja $(7{,}71\,\text{ms};\ 2{,}50\,\text{m})$, jotka ovat kaukana toisistaan. Niiden erotukset ovat $\Delta s = 2{,}50\,\text{m} - 0{,}50\,\text{m} = 2{,}00\,\text{m}$ ja $\Delta t = 7{,}71\,\text{ms} - 1{,}88\,\text{ms} = 5{,}83\,\text{ms}$.
-**Kaava:** $v = \dfrac{\Delta s}{\Delta t}$
-**Muunnokset:** $\Delta t = 5{,}83\,\text{ms} = 5{,}83 \cdot 10^{-3}\,\text{s}$.
+**Annettu:** kielen pituus $L = 0{,}650\,\text{m}$, spektrien piikit taajuuksilla $196\,\text{Hz}$, $392\,\text{Hz}$, $588\,\text{Hz}$, $784\,\text{Hz}$, $980\,\text{Hz}$ ja $1176\,\text{Hz}$ sekä niiden suhteelliset amplitudit taulukossa
+**Kysytty:** perustaajuus $f_1$, puuttuvat harmoniset, aallon nopeus kielessä $v$ ja sointivärin ero
+**Periaate:** Molemmista päistä kiinnitetyn kielen ominaistaajuudet ovat $f_n = n f_1$, ja perustaajuudella kielessä on yksi kupu, jolloin $L = \tfrac{\lambda_1}{2}$ ja $v = \lambda_1 f_1$. Parillisilla harmonisilla on kielen keskellä solmu, eikä näpäytys solmussa viritä niitä.
+**Aineiston käsittely:** Alin piikki on $196\,\text{Hz}$, ja muut ovat sen monikertoja: $\dfrac{392}{196} = 2$, $\dfrac{588}{196} = 3$, $\dfrac{784}{196} = 4$, $\dfrac{980}{196} = 5$ ja $\dfrac{1176}{196} = 6$. Keskeltä näpätyssä spektrissä parillisten harmonisten ($n = 2$, $4$, $6$) amplitudit ovat enintään $0{,}02$.
+**Kaava:** $L = \dfrac{\lambda_1}{2}$, joten $\lambda_1 = 2L$, ja $v = \lambda_1 f_1$, josta $v = 2 L f_1$
+**Muunnokset:** Ei tarvita: pituus on metreinä ja taajuus hertseinä.
 **Sijoitus:**
-$\begin{aligned} v &= \dfrac{2{,}00\,\text{m}}{5{,}83 \cdot 10^{-3}\,\text{s}} \\ &= 343{,}1\,\text{m/s} \end{aligned}$
-**Vastaus:** $343\,\text{m/s}$, kolme merkitsevää numeroa kuten mittausten erotuksissa. Suora ei kulje origon kautta, koska ajanotto kattaa äänen kulkuajan lisäksi laitteen viiveen: kun $s = 0$, aika ei ole nolla. Viive saadaan ensimmäisestä pisteestä: $t_0 = 1{,}88\,\text{ms} - \tfrac{0{,}50\,\text{m}}{343\,\text{m/s}} = 1{,}88\,\text{ms} - 1{,}46\,\text{ms} = 0{,}42\,\text{ms}$.
-**Järkevyys:** Tulos poikkeaa taulukkoarvosta $340\,\text{m/s}$ noin $1\,\%$, joten se sopii huoneenlämpöiselle ilmalle. Viimeisestä pisteestä viiveeksi tulee $7{,}71\,\text{ms} - 7{,}29\,\text{ms} = 0{,}42\,\text{ms}$, sama kuin ensimmäisestä. Jos nopeus laskettaisiin ensimmäisestä pisteestä jakamalla, $\tfrac{0{,}50\,\text{m}}{1{,}88\,\text{ms}} \approx 266\,\text{m/s}$, tulos olisi noin $22\,\%$ liian pieni, koska viive on osa ajasta.
+$\begin{aligned} v &= 2 \cdot 0{,}650\,\text{m} \cdot 196\,\text{Hz} \\ &= 254{,}8\,\text{m/s} \end{aligned}$
+**Vastaus:** a) $196\,\text{Hz}$; keskeltä näpäytettäessä puuttuvat parilliset harmoniset $392\,\text{Hz}$, $784\,\text{Hz}$ ja $1176\,\text{Hz}$. b) $255\,\text{m/s}$, kolme merkitsevää numeroa kuten pituudessa ja taajuudessa. c) Parillisilla harmonisilla on kielen keskellä solmu, eikä solmukohta lähde värähtelemään, joten ne puuttuvat. Parittomilla keskellä on kupu, joten ne syntyvät. Keskeltä näpätty ääni on lähes puhdas perussävel ja pehmeä. Sillan lähellä kaikki harmoniset syntyvät, esimerkiksi kolmannen amplitudi on $0{,}30$ ja kuudennen $0{,}09$. Runsaat yläsävelet tekevät äänestä kirkkaan. Korkeus on sama, koska perustaajuus on molemmissa $196\,\text{Hz}$.
+**Järkevyys:** Aallonpituus on $\lambda_1 = 2 \cdot 0{,}650\,\text{m} = 1{,}30\,\text{m}$, ja $1{,}30\,\text{m} \cdot 196\,\text{Hz} \approx 255\,\text{m/s}$, kitaran kielelle tavallinen luokka. Taajuus $196\,\text{Hz}$ on sävel G3 eli kitaran kolmas kieli. Keskeltä näpäytettäessä parittomien amplitudit laskevat noin kuten $\tfrac{1}{n^2}$: $\tfrac{1}{9} = 0{,}11$ ja $\tfrac{1}{25} = 0{,}04$, kuten taulukossa.

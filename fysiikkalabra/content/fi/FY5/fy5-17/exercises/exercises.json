@@ -66,7 +66,7 @@
         },
         {
           "text": "S-aalto on poikittainen, joten sen energia kuluu loppuun Maan keskipisteen lähellä, mutta P-aalto ei.",
-          "feedback": "Poikittaisuus ei kuluta aallon energiaa loppuun. S-aalto etenee pitkiä matkoja kiinteässä kalliossa, eikä aallon suunta vaikuttaa siihen, vaan se, välittääkö väliaine poikittaisen aallon."
+          "feedback": "Poikittaisuus ei kuluta aallon energiaa loppuun. S-aalto etenee pitkiä matkoja kiinteässä kalliossa, eikä aallon suunta vaikuta siihen, vaan se, välittääkö väliaine poikittaisen aallon."
         }
       ]
     },
@@ -87,7 +87,7 @@
         },
         {
           "text": "Geeli poistaa ihon ja anturin väliltä ilman, joka heijastaisi lähes koko pulssin takaisin.",
-          "feedback": "Oikein: ilman ja ihon rajapinnalta heijastuu noin $99{,}9\\,\\%$, joten ilmakerros pysäyttäisi pulssin. Geelin ja ihon rajapinnalta heijastuu vain noin $0{,}2\\,\\%$, joten pulssi pääsee kudokseen.",
+          "feedback": "Oikein: ilman ja ihon rajapinnalta heijastuu lähes koko pulssi, joten ilmakerros pysäyttäisi sen. Geelin ja ihon rajapinnalta heijastuu vain pieni osa, joten pulssi pääsee kudokseen.",
           "correct": true
         },
         {
@@ -103,10 +103,32 @@
     {
       "id": "fy5-17-L1-08",
       "level": 1,
-      "text": "Hyönteisiä saalistava lepakko päästää äännähdyksen, jonka taajuus on $60{,}0\\,\\text{kHz}$. Ääni etenee ilmassa nopeudella $343\\,\\text{m/s}$. Mikä on äänen aallonpituus ilmassa? Anna vastaus millimetreinä.",
-      "answer": 5.72,
-      "unit": "mm",
-      "tolerance": 0.02
+      "text": "Ultraäänikuvauksessa pienin erottuva yksityiskohta on sitä pienempi, mitä suurempi pulssin taajuus on. Silti syvällä olevaa rakennetta kuvataan usein pienemmällä taajuudella. Miksi suurinta mahdollista taajuutta ei käytetä aina?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Suuri taajuus vaimenee kudoksessa nopeasti, joten syvältä tulevat kaiut olisivat liian heikkoja.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Suuri taajuus hidastaa ääntä kudoksessa, joten kaiku palaisi syvältä liian myöhään kuvaan.",
+          "feedback": "Äänen nopeuden määrää väliaine, ei taajuus: kudoksessa pulssi etenee likimain nopeudella $1540\\,\\text{m/s}$ kaikilla kuvauksessa käytetyillä taajuuksilla. Kaiku ei siis myöhästy taajuuden vuoksi."
+        },
+        {
+          "text": "Suuri taajuus antaa pitkän aallonpituuden, joten pienet yksityiskohdat sumenisivat kuvassa.",
+          "feedback": "Yhtälöstä $v = f\\lambda$ seuraa päinvastoin: kun nopeus on sama, suuri taajuus antaa lyhyen aallonpituuden ja tarkan kuvan. Tarkkuus ei siis ole ongelma vaan suuren taajuuden etu."
+        },
+        {
+          "text": "Suuri taajuus heijastuu kokonaan jo ihon pinnalta, joten pulssi ei pääsisi ollenkaan kudokseen sisään.",
+          "feedback": "Heijastuvan osuuden määrää rajapinnan kahden aineen ero, ei pulssin taajuus. Geelillä pulssi pääsee ihon läpi myös suurella taajuudella."
+        },
+        {
+          "text": "Suuri taajuus vaimenee kudoksessa nopeasti, joten syvältä tulevat kaiut olisivat liian heikkoja.",
+          "feedback": "Oikein: kudos vaimentaa suuritaajuista ultraääntä nopeasti, joten pulssi ei yletä syvälle ja kaiut heikkenevät. Syvälle kuvataan pienemmällä taajuudella, vaikka kuva on silloin karkeampi.",
+          "correct": true
+        }
+      ]
     }
   ],
   "level2": [
@@ -315,7 +337,7 @@
         "model",
         "reasoning"
       ],
-      "text": "Merenpohjan järistys synnyttää tsunamin, joka etenee suoraan rannikolle kolmen osuuden kautta. Taulukossa on osuuksien pituudet ja veden syvyydet (esimerkkiaineisto). Oletetaan, että syvyys on jokaisella osuudella vakio, aallonpituus on kaikilla osuuksilla yli $10\\,\\text{km}$ ja aallon nopeus noudattaa kaavaa $v = \\sqrt{g h}$.\n\na) Laske tsunamin kulkuaika jokaisella osuudella ja koko matkalla.\n\nb) Vertaa osuuksien 1 ja 3 kulkuaikoja ja selitä, miksi lyhyin osuus vie kuitenkin yli puolet pisimmän osuuden ajasta. Perustele myös, miksi kaava on käypä viimeisellä osuudella.\n\nVastauslaatikkoon kirjoitetaan a-kohdan koko matkan kulkuaika minuutteina.",
+      "text": "Merenpohjan järistys synnyttää tsunamin, joka etenee suoraan rannikolle kolmen osuuden kautta. Taulukossa on osuuksien pituudet ja veden syvyydet (esimerkkiaineisto). Oletetaan, että syvyys on jokaisella osuudella vakio, aallonpituus on kaikilla osuuksilla noin $200\\,\\text{km}$ valtamerellä ja yli $10\\,\\text{km}$ myös rannikolla ja aallon nopeus noudattaa kaavaa $v = \\sqrt{g h}$.\n\na) Laske tsunamin kulkuaika jokaisella osuudella ja koko matkalla.\n\nb) Vertaa osuuksien 1 ja 3 kulkuaikoja ja selitä, miksi lyhyin osuus vie kuitenkin yli puolet osuuden 1 ajasta. Perustele myös, miksi kaava on käypä viimeisellä osuudella.\n\nVastauslaatikkoon kirjoitetaan a-kohdan koko matkan kulkuaika minuutteina.",
       "answer": 57,
       "unit": "min",
       "tolerance": 0.03,
