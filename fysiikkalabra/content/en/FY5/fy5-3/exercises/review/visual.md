@@ -1,12 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 5b4bae1bd1b66c54
+CONTENT-HASH: c48e979ac256fd22
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
+
 ## Blocking
 (none)
+
+## Fixed
+(none needed)
+
 ## Polish
-- [Minor] none
+(none)
+
 ## Checked
-- Captures opened (en): fy5-3-open-exercises-1280-5 (L1, en)
-- Solutions follow the principle, formula, conversions, substitution, answer, reasonableness layout; units upright with thin space.
-- check_layout.py at 345 px: OK for preview/en/fy5-3. Maths, units and subscripts match the Finnish typography.
-## Scores
-illustrations 5 · typography 4 · English 4 · accessibility 4
+- Captures opened (en): fy5-3-open-exercises-L2-1280-5 (L2-05 with data table) and fy5-3-open-exercises-L3-1280-4 (L3-04 start): maths, units, table and headings render cleanly; no overflow.
+- Table headers and captions are short and translated; LaTeX units upright with thin space.
+- Display blocks and tables identical in structure to fi.

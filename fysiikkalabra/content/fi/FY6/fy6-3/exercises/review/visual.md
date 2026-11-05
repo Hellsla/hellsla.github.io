@@ -1,18 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 16920a23dbfb2683
+CONTENT-HASH: 4e821e3ca31d2886
+ROUND: 2
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] L3-02 answer field (open-exercises-L3-1280-2) — the unit beside the input is plain "µΩ·m" while the task and solution now set it as maths — it is a native field label, so at most set it as `$\mu\Omega\cdot\text{m}$` if the template allows.
-- [Minor] L2-02 (lamp graph) — no marker at the read-off point, which suits a task; unchanged, optional.
+- [Minor] fy6-3-L3-05 Sijoitus (open-exercises-L3-1280-7) — still fragmented: R_20 in one box, R_40 as a loose line, R_60 and R_80 in the next, and a long Muuttujat/Mallijärjestely paragraph — put all four rows in one aligned block and split the paragraph into list lines.
+- [Minor] fy6-3-L2-05 Vastaus (open-exercises-L2-1280-7) — "kolme merkitsevää numeroa, koska epävarmuus on vain noin 2 Ω; epävarmuus on noin ΔR ≈ 2 Ω" repeats itself — drop the second clause.
+- [Minor] fy6-3-L2-05 — a graph task with no model figure; the solution describes the fitted line in words only — a small fitted-line plot would let the student check their drawing (carried over).
+- [Minor] data tables (all new) — numeric column headers sit centred, values left-aligned (template-wide).
 
 ## Checked
-- open-exercises-L3-1280-2 (L3-02): the task now has "$\mu\Omega\cdot\text{m}$" as maths and the "Kysytty" line too; Sijoitus rows aligned, with 5,47 $\Omega/\text{m}$ consistent with the revised answers.py comment.
-- open-exercises-L3-1280-3 (L3-03): the new Järkevyys clause "koska siinä resistanssi pituutta kohti on suurin" reads naturally; the card is intact.
-- open-exercises-L2-1280-1 (L2-01 and the layout around it): unchanged and intact.
-- The Järkevyys fix in the L2 wire task ("vähän yli simulaation ohuimman langan ($0{,}10\,\text{mm}^2$)") was read in the packet diff; it is a one-line wording change with maths in LaTeX and no layout risk.
+- Round 1 Blocking (L3-04, skipped 1,0 V row and false "600 Ω:sta") is resolved: Sijoitus now has "1,0 V : 0,1 mA = 10 kΩ" and Vastaus "10 kΩ:sta 31 Ω:iin" (open-exercises-L3-1280-5, -6); 0,5 V correctly excluded (I = 0).
+- open-exercises-1280-7 (L1-07 reordered choices, L1-08 task and answer chip)
+- open-exercises-L2-1280-7 (L2-05 Sijoitus and Vastaus after the wording change, L2-07 "Polkupyörän etulampun" task and table)
+- open-exercises-L3-1280-5, -6, -7, -8 (L3-04 solution and Järkevyys, L3-05 task, table, solution; Vastaus "38 % (laskettu 38,1 %)" now consistent)
+- Not available: 360 px captures of exercise cards (packet layout 360 px check ok).
+- Maths re-computed against the table: R_A ≈ 75 Ω; R_B 16–37 Ω; R_C 10 kΩ, 600 Ω, 95 Ω, 31 Ω; 600 / 26 = 23; 2,762 / 2,000 -> 38,1 %; steps 0,262, 0,251, 0,249 Ω.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

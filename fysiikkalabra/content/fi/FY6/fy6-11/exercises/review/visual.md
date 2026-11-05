@@ -1,16 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 6b6367e7cf4b6ce7
+CONTENT-HASH: 171aa8bf96452262
+
+Round 3. The round-2 Blocking item (11-15 Annettu line) is resolved; nothing else changed.
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- [Minor] 11-15 Sijoitus — one long run-on paragraph for a), b) and c) before the boxes (still visible in open-exercises-L2-1280-10); start b) and c) on their own lines.
+- [Minor] 11-19 (L3-04) Vastaus — c) mixes "alle 1 %" with the Järkevyys "1,3 %" check; state "noin 0,1 %" consistently (1,60 vs 1,602). Carried over.
+- [Minor] 11-13, 11-15 (carried over) — F(d) and F(x) tasks have no plot; optional.
 
 ## Checked
-- Delta: L1-05 Järkevyys rewritten ('Suora sovitettiin origon kautta, koska mallin $F = qE$ mukaan ...'). Opened fy6-11-open-exercises-1280-6 (fi): the sentence wraps cleanly, $F = qE$ renders inline, units upright.
-- Finnish reads fluently; 'homogeenisessa kentässä' and the stated reason for the origin fit are clear. L1-05 graph (open-exercises-1280-5, en capture, same figure) unchanged.
-- Hash at start and end: 6b6367e7cf4b6ce7. Captures re-made for this hash (screenshot.py --if-stale); no layout change around the edited sentence.
+- Diff d6007a53c^..d6007a53c: only solutions.md L2-07 Annettu, 52,1 → 58,0 µN; the list now reads 60,2; 59,8; 59,5; 59,0; 58,0 and 33,0 µN, identical to the task table (open-exercises-L2-1280-9: 58,0 at 8,0 cm) and to E = 2,90 · 10⁴ V/m and 3,7 % in the Sijoitus.
+- Opened open-exercises-L2-1280-9 (task, table, Annettu) and -10 (Sijoitus, Vastaus, Järkevyys): layout intact, no clipping or overflow.
+- Hash identical at start and end. No 360 px exercise capture exists.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

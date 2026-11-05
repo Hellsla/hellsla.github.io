@@ -1,11 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 8a4c7e67bfedd340
+CONTENT-HASH: 17889d93fd9a1d5b
+Mode: full (translation review against the reviewed Finnish set)
+Round 2
 
 ## Blocking
 (none)
 
+## Fixed
+(none needed)
+
 ## Polish
-- [Minor] some sentences identical to the Finnish by design.
+(none)
 
 ## Checked
-- 12 tasks present. Simplified: tasks L1-02, L1-03, L1-04, L1-05, L2-04, L3-01, L3-02, L3-03 into shorter sentences; "pyörimistaajuus eli kierrosten määrä sekunnissa" explained.
+- Re-review after one change: in the fy5-4-L3-05 solution one display formula was split into two display formulas. The three display formulas now match content/fi exactly (same maths, same order, same connecting sentence translated).
+- All exercises still match content/fi in ids, levels, kinds, answers, units, tolerances, data and numbers; check_i18n.py fi-easy: 0 errors for fy5-4.
+- Role (pedagogy) findings from the earlier PASS are unaffected; the split only shortens line width at 360 px.

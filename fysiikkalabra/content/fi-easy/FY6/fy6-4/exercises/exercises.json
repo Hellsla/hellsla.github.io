@@ -39,6 +39,74 @@
       "answer": 110,
       "unit": "Ω",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-4-L1-06",
+      "level": 1,
+      "text": "Sinulla on kolme samanlaista $100\\,\\Omega$:n vastusta. Kaikki kolme pitää käyttää samassa kytkennässä. Millä kytkennällä kokonaisresistanssi on pienin?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Kaikki kolme rinnan, koska virralla on silloin kolme rinnakkaista kulkureittiä.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Kaikki kolme rinnan, koska virralla on silloin kolme rinnakkaista kulkureittiä.",
+          "feedback": "Oikein. Rinnankytkennässä jokainen vastus on oma kulkureittinsä. Kokonaisresistanssi on $\\tfrac{100\\,\\Omega}{3} \\approx 33\\,\\Omega$. Se on pienempi kuin missään muussa kytkennässä.",
+          "correct": true
+        },
+        {
+          "text": "Kaikki kolme sarjaan, koska silloin virta kulkee jokaisen vastuksen läpi.",
+          "feedback": "Sarjaankytkennässä resistanssit lasketaan yhteen: $100\\,\\Omega + 100\\,\\Omega + 100\\,\\Omega = 300\\,\\Omega$. Se on kytkennöistä suurin, ei pienin."
+        },
+        {
+          "text": "Kaksi rinnan ja kolmas niiden kanssa sarjaan, koska kytkennässä on kumpaakin tapaa.",
+          "feedback": "Rinnakkaisosan resistanssi on $50\\,\\Omega$. Kolmas vastus sarjassa nostaa kokonaisresistanssin arvoon $150\\,\\Omega$. Tämä sekakytkentä on suurempi kuin kolmen vastuksen rinnankytkentä."
+        },
+        {
+          "text": "Kaksi sarjaan ja kolmas niiden kanssa rinnan, koska rinnalle lisätty vastus pienentää tulosta.",
+          "feedback": "Sarjaosan resistanssi on $200\\,\\Omega$. Sen rinnalla $100\\,\\Omega$ antaa $\\tfrac{200 \\cdot 100}{300}\\,\\Omega \\approx 67\\,\\Omega$. Se on pienempi kuin $100\\,\\Omega$, mutta suurempi kuin kolmen vastuksen rinnankytkentä $33\\,\\Omega$."
+        }
+      ]
+    },
+    {
+      "id": "fy6-4-L1-07",
+      "level": 1,
+      "text": "Ideaaliseen paristoon (sen jännite ei laske, vaikka virta kasvaa) on kytketty kaksi samanlaista lamppua rinnan. Sitten paristoon kytketään vielä kolmas samanlainen lamppu rinnan kahden ensimmäisen kanssa. Mitä tapahtuu kytkennän kokonaisresistanssille ja paristosta lähtevälle virralle?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Resistanssi pienenee ja virta kasvaa, koska uusi haara avaa virralle lisää kulkureittejä.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Resistanssi pienenee ja virta kasvaa, koska uusi haara avaa virralle lisää kulkureittejä.",
+          "feedback": "Oikein. Kolmas lamppu lisää uuden haaran, jossa kulkee oma virtansa. Kokonaisvirta on haaravirtojen summa, joten se kasvaa. Kun jännite pysyy samana, suurempi virta tarkoittaa pienempää kokonaisresistanssia.",
+          "correct": true
+        },
+        {
+          "text": "Resistanssi kasvaa ja virta pienenee, koska virran tiellä on nyt enemmän vastuksia.",
+          "feedback": "Näin käy vain sarjaankytkennässä. Rinnan lisätty vastus ei ole muiden tiellä vaan niiden vieressä. Siksi kokonaisresistanssi pienenee."
+        },
+        {
+          "text": "Resistanssi ei muutu eikä virta muutu, koska pariston jännite pysyy samana.",
+          "feedback": "Jännite pysyy samana, mutta jokainen haara ottaa oman virtansa $I = U : R$. Uusi haara lisää kokonaisvirtaa. Kumpikaan suure ei siis pysy ennallaan."
+        },
+        {
+          "text": "Resistanssi pienenee ja virta pienenee, koska paristo joutuu syöttämään useampaa lamppua.",
+          "feedback": "Resistanssi todella pienenee. Ohmin lain $I = U : R$ mukaan virta kuitenkin kasvaa, kun jännite pysyy samana ja resistanssi pienenee. Ideaalisen pariston jännite ei laske, vaikka kuormitus kasvaa."
+        }
+      ]
+    },
+    {
+      "id": "fy6-4-L1-08",
+      "level": 1,
+      "text": "Vastus $90\\,\\Omega$ ja tuntematon vastus $R_x$ on kytketty rinnan. Kytkennän kokonaisresistanssi on $36\\,\\Omega$. Kuinka suuri on resistanssi $R_x$?",
+      "answer": 60,
+      "unit": "Ω",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,6 +141,121 @@
       "answer": 1.3,
       "unit": "kΩ",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy6-4-L2-05",
+      "level": 2,
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "text": "Oppilas tutkii kokeella, noudattavatko vastusten kytkennät kaavoja. Hän mittaa yleismittarilla (mittarilla, joka mittaa mm. resistanssia) kolmen vastuksen resistanssit erikseen. Hän mittaa myös niiden sarjaankytkennän ja rinnankytkennän kokonaisresistanssin. Taulukon lukemat ovat esimerkkiaineistoa. Yleismittarin ilmoitettu virheraja eli suurin mittausvirhe on $\\pm 1{,}5\\,\\%$ lukemasta.\n\na) Laske sarjaankytkennän kokonaisresistanssi yksittäisistä mittaustuloksista. Päättele, onko ero mitattuun arvoon virherajan sisällä.\n\nb) Laske rinnankytkennän kokonaisresistanssi samoista yksittäisistä tuloksista. Päättele samoin.\n\nVastauslaatikkoon tulee b-kohdassa laskettu rinnankytkennän kokonaisresistanssi.",
+      "answer": 102.1,
+      "unit": "Ω",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Vastusten resistanssit yleismittarilla (esimerkkiaineisto)",
+        "columns": [
+          "Mitattu kohde",
+          "$R\\,(\\Omega)$"
+        ],
+        "rows": [
+          [
+            "Vastus 1",
+            "217"
+          ],
+          [
+            "Vastus 2",
+            "328"
+          ],
+          [
+            "Vastus 3",
+            "468"
+          ],
+          [
+            "Kolme vastusta sarjassa",
+            "1009"
+          ],
+          [
+            "Kolme vastusta rinnan",
+            "101.4"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-4-L2-06",
+      "level": 2,
+      "kind": [
+        "data",
+        "error"
+      ],
+      "text": "Piirissä on $9{,}0\\,\\text{V}$:n paristo. Sen kanssa on sarjassa vastus $R_1 = 100\\,\\Omega$ ja kaksi rinnan kytkettyä $200\\,\\Omega$:n vastusta $R_2$ ja $R_3$. Oppilas mittaa paristosta lähtevän virran $I$, vastuksen $R_1$ jännitteen $U_1$ ja rinnakkaisosan jännitteen $U_{23}$. Taulukon lukemat ovat esimerkkiaineistoa. Mittarit toimivat oikein, mutta piirin kytkennässä on virhe.\n\na) Laske rinnakkaisosan resistanssi mittarilukemista. Kuinka suuri sen pitäisi olla, jos kytkentä on oikein?\n\nb) Päättele, mikä kytkentävirhe selittää lukemat.\n\nVastauslaatikkoon tulee a-kohdassa mittarilukemista laskettu rinnakkaisosan resistanssi.",
+      "answer": 198,
+      "unit": "Ω",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Mittarilukemat (esimerkkiaineisto)",
+        "columns": [
+          "Mitattu suure",
+          "Lukema"
+        ],
+        "rows": [
+          [
+            "Virta $I\\,(\\text{mA})$",
+            "30.2"
+          ],
+          [
+            "Jännite $U_1\\,(\\text{V})$",
+            "3.02"
+          ],
+          [
+            "Jännite $U_{23}\\,(\\text{V})$",
+            "5.98"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-4-L2-07",
+      "level": 2,
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "text": "Oppilas määrittää tuntemattoman vastuksen $R_x$ resistanssin. Hän kytkee sen rinnan $60\\,\\Omega$:n vastuksen kanssa säädettävään jännitelähteeseen. Hän mittaa lähteen jännitteen $U$ ja lähteestä lähtevän virran $I$. Taulukon lukemat ovat esimerkkiaineistoa.\n\na) Laske jokaisesta mittauksesta suhde $U : I$ ja niiden keskiarvo. Keskiarvo on rinnankytkennän kokonaisresistanssi.\n\nb) Laske kokonaisresistanssin avulla tuntemattoman vastuksen resistanssi $R_x$.\n\nVastauslaatikkoon tulee b-kohdan resistanssi $R_x$.",
+      "answer": 40.4,
+      "unit": "Ω",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Rinnankytkennän virta jännitteen funktiona (esimerkkiaineisto)",
+        "columns": [
+          "$U\\,(\\text{V})$",
+          "$I\\,(\\text{mA})$"
+        ],
+        "rows": [
+          [
+            "2.0",
+            "83"
+          ],
+          [
+            "4.0",
+            "166"
+          ],
+          [
+            "6.0",
+            "247"
+          ],
+          [
+            "8.0",
+            "333"
+          ],
+          [
+            "10.0",
+            "414"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -100,6 +283,52 @@
       "answer": 150,
       "unit": "Ω",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-4-L3-04",
+      "level": 3,
+      "kind": [
+        "data",
+        "error",
+        "reasoning"
+      ],
+      "text": "Piirilevyllä vastus $R_1 = 70\\,\\Omega$ on sarjassa kahden rinnan kytketyn vastuksen kanssa. Ne ovat $R_2 = 110\\,\\Omega$ ja $R_3 = 110\\,\\Omega$. Levyn kokonaisresistanssiksi mitataan ohmimittarilla $180\\,\\Omega$. Piirikaavion mukaan sen pitäisi kuitenkin olla jokin toinen. Levyyn kytketään $9{,}0\\,\\text{V}$:n paristo, ja ampeerimittarit antavat taulukon lukemat (esimerkkiaineisto). Kytkentävirhe voi olla se, että vastus on irronnut johtimesta. Mittarit ja vastusten arvot ovat kunnossa.\n\na) Laske kokonaisresistanssi, joka levyllä pitäisi olla, kun kytkentä on oikein.\n\nb) Laske kokonaisresistanssi, jos rinnakkaisosasta puuttuu toinen haara (vastus on irti johtimesta). Päättele taulukon lukemista, kumpi vastuksista $R_2$ ja $R_3$ on irti.\n\nc) Laske, kuinka suuri virta kulkisi vastuksen $R_3$ läpi, kun vika on korjattu ja levy on kytketty samaan paristoon.\n\nVastauslaatikkoon tulee c-kohdan virta.",
+      "answer": 36,
+      "unit": "mA",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Ampeerimittarien lukemat (esimerkkiaineisto)",
+        "columns": [
+          "Mittauskohta",
+          "$I\\,(\\text{mA})$"
+        ],
+        "rows": [
+          [
+            "Pariston virta",
+            "49.8"
+          ],
+          [
+            "Vastuksen $R_2$ virta",
+            "49.7"
+          ],
+          [
+            "Vastuksen $R_3$ virta",
+            "0.0"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-4-L3-05",
+      "level": 3,
+      "kind": [
+        "reasoning",
+        "model"
+      ],
+      "text": "Laitteen korjauksessa tarvitaan täsmälleen $470\\,\\Omega$:n resistanssi, mutta sopivaa vastusta ei ole. Varastossa on E12-sarjan vastuksia, yksi kutakin: $100\\,\\Omega$, $390\\,\\Omega$, $560\\,\\Omega$, $1{,}2\\,\\text{k}\\Omega$, $1{,}5\\,\\text{k}\\Omega$, $2{,}7\\,\\text{k}\\Omega$ ja $5{,}6\\,\\text{k}\\Omega$ (esimerkkiaineisto). Kahdesta eri vastuksesta kootaan joko sarjaan- tai rinnankytkentä.\n\na) Valitse kaksi vastusta ja kytkentätapa. Kokonaisresistanssin pitää olla mahdollisimman lähellä arvoa $470\\,\\Omega$. Perustele laskuilla, miksi muut kytkennät ovat huonompia.\n\nb) Laske valitun kytkennän kokonaisresistanssi. Laske myös sen poikkeama arvosta $470\\,\\Omega$ prosentteina arvosta $470\\,\\Omega$.\n\nVastauslaatikkoon tulee b-kohdan poikkeama prosentteina.",
+      "answer": 1.32,
+      "unit": "%",
+      "tolerance": 0.05
     }
   ]
 }

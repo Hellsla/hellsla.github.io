@@ -1,12 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 778b291ab487f1ac
+CONTENT-HASH: b258729aa462d5af
+Mode: full (translation review against the reviewed Finnish set)
+Round 2
 
 ## Blocking
 (none)
 
+## Fixed
+(none needed)
+
 ## Polish
-- [Minor] L2-04 the "wire" in the reasonableness note was not introduced in the task (also in the Finnish).
+(none)
 
 ## Checked
-- All 12 tasks and 12 worked solutions present at three levels; fbd flags unchanged; task wording clear and conditions stated (no air resistance, smooth table).
-- English reads naturally; British spelling (tyres, metres, kilonewtons).
+- Re-review after one change: in the fy5-4-L3-05 solution one display formula was split into two display formulas. The three display formulas now match content/fi exactly (same maths, same order, same connecting sentence translated).
+- All exercises still match content/fi in ids, levels, kinds, answers, units, tolerances, data and numbers; check_i18n.py en: 0 errors for fy5-4.
+- Role (pedagogy) findings from the earlier PASS are unaffected; the split only shortens line width at 360 px.

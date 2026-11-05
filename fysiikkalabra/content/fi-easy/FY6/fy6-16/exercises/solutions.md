@@ -118,3 +118,98 @@
 **Sijoitus:** $I = \dfrac{40\,000\,\text{Wh}}{3 \cdot 0{,}90 \cdot 230\,\text{V} \cdot 9{,}0\,\text{h}} = \dfrac{40\,000\,\text{Wh}}{5589\,\text{Vh}} = 7{,}157\,\text{A}$
 **Vastaus:** $7{,}2\,\text{A}$. Vastauksessa on kaksi merkitsevää numeroa, kuten energiassa $40\,\text{kWh}$ ja hyötysuhteessa $90\,\%$.
 **Järkevyys:** Verkosta otetaan $40\,\text{kWh} : 0{,}90 \approx 44\,\text{kWh}$. Yhdeksässä tunnissa se vaatii noin $4{,}9\,\text{kW}$, ja $4900\,\text{W} : 690\,\text{V} \approx 7\,\text{A}$. Virta on alle puolet aseman $16\,\text{A}$:stä. Hidas yölataus jättää siis tilaa saunalle ja muille kuormille.
+
+## fy6-16-L1-06
+**Kysytty:** mitä aseman kilowattiluku ja akun kilowattituntiluku kertovat.
+**Periaate:** Teho kertoo, kuinka nopeasti energiaa siirtyy. Tehon yksikkö on kilowatti. Energia saadaan, kun teho kerrotaan ajalla, $W = Pt$. Siksi energian yksikkö on kilowatti kertaa tunti eli kilowattitunti. Latausnopeus on siis tehoa, ja akun koko on energiaa.
+**Mallivastaus:** Aseman kilowattiluku kertoo latausnopeuden eli tehon. Akun kilowattituntiluku kertoo, kuinka paljon energiaa akkuun mahtuu. Väite, jonka mukaan luvut ovat toisinpäin, on väärä. Kilowattitunti on energian yksikkö, eikä nopeutta voi mitata sillä. Väite, jonka mukaan yksiköt ovat sama asia, on väärä. Kilowattitunti saadaan, kun kilowatti kerrotaan ajalla. Väite, jonka mukaan kilowatti on jännite ja kilowattitunti virta, on väärä. Jännite mitataan voltteina ja virta ampeereina. Esimerkiksi $11\,\text{kW}$:n asema siirtää tunnissa $11\,\text{kWh}$.
+
+## fy6-16-L1-07
+**Annettu:** teho $P = 7{,}4\,\text{kW}$, latausaika $t = 5{,}5\,\text{h}$
+**Kysytty:** verkosta otettu energia $W_\text{verkko}$ kilowattitunteina
+**Periaate:** Teho on vakio, joten energia on teho kertaa aika (luku *Sähköenergia kotona*). Tehtävässä lasketaan verkosta otettu energia. Hyötysuhdetta ei siis tarvita.
+**Kaava:** $W_\text{verkko} = Pt$
+**Muunnokset:** Ei tarvita. Kun kilowatit kerrotaan tunneilla, tulos on suoraan kilowattitunteina.
+**Sijoitus:** $W_\text{verkko} = 7{,}4\,\text{kW} \cdot 5{,}5\,\text{h} = 40{,}7\,\text{kWh}$
+**Vastaus:** $41\,\text{kWh}$. Vastauksessa on kaksi merkitsevää numeroa, kuten tehossa $7{,}4\,\text{kW}$ ja ajassa $5{,}5\,\text{h}$.
+**Järkevyys:** Arvio: teho $7\,\text{kW}$ kuuden tunnin ajan on $42\,\text{kWh}$. Tulos on vähän pienempi, koska teho ja aika ovat vähän pienemmät. Tulos on suunnilleen yhtä suuri kuin tavallisen sähköauton akun energia.
+
+## fy6-16-L1-08
+**Annettu:** resistanssi $R = 0{,}25\,\Omega$, virta $I = 16\,\text{A}$
+**Kysytty:** kaapelin lämpenemisteho $P$ watteina
+**Periaate:** Kun virta kulkee resistanssin läpi, sähköenergiaa muuttuu sisäenergiaksi. Teho saadaan Joulen laista. Teho riippuu virran neliöstä ja resistanssista.
+**Kaava:** $P = RI^2$
+**Muunnokset:** Ei tarvita. Kun ohmit ja ampeerit sijoitetaan kaavaan, tulos on suoraan watteina.
+**Sijoitus:** $P = 0{,}25\,\Omega \cdot (16\,\text{A})^2 = 0{,}25\,\Omega \cdot 256\,\text{A}^2 = 64\,\text{W}$
+**Vastaus:** $64\,\text{W}$. Vastauksessa on kaksi merkitsevää numeroa, kuten resistanssissa $0{,}25\,\Omega$.
+**Järkevyys:** Jännitehäviö on $RI = 0{,}25\,\Omega \cdot 16\,\text{A} = 4{,}0\,\text{V}$. Teho on jännitehäviö kertaa virta, $4{,}0\,\text{V} \cdot 16\,\text{A} = 64\,\text{W}$. Tulos on pieni aseman tehoon verrattuna. Kaapelin lämmittämiseen se kuitenkin riittää.
+
+## fy6-16-L2-05
+**Annettu:** talon teho tunneittain taulukosta, pääsulakkeet $3 \cdot 25\,\text{A}$, $U = 230\,\text{V}$, kolmivaiheinen asema
+**Kysytty:** a) huipputeho ja sen aika, b) aseman suurin latausteho $P_\text{a}$ huipun aikana kilowatteina, c) milloin $11\,\text{kW}$ sallitaan
+**Periaate:** Pääsulake rajoittaa jokaisen vaihejohtimen virtaa. Kuormat jakautuvat tasan vaiheille, joten koko talon teho voi olla enintään $3UI_\text{p}$. Talon ja aseman tehot lasketaan yhteen. Asemalle jää se teho, jota talo ei käytä.
+**Kuvaajan lukeminen:** Taulukossa suurin teho on $6{,}8\,\text{kW}$ kello $19\text{–}20$.
+**Kaava:** $P_\text{max} = 3UI_\text{p}$ ja $P_\text{talo} + P_\text{a} \le P_\text{max}$, joten $P_\text{a} = 3UI_\text{p} - P_\text{talo}$, missä $I_\text{p} = 25\,\text{A}$
+**Muunnokset:** $3UI_\text{p}$ lasketaan watteina ja muunnetaan kilowateiksi: $17\,250\,\text{W} = 17{,}25\,\text{kW}$.
+**Sijoitus:** $P_\text{max} = 3 \cdot 230\,\text{V} \cdot 25\,\text{A} = 17\,250\,\text{W} = 17{,}25\,\text{kW}$, joten $P_\text{a} = 17{,}25\,\text{kW} - 6{,}8\,\text{kW} = 10{,}45\,\text{kW}$
+**Vastaus:** Vastauslaatikkoon $10{,}5\,\text{kW}$. Vastauksessa on yksi desimaali, kuten taulukon tehoissa. a) Huipputeho on kello $19\text{–}20$.
+
+b) Aseman teho saa olla huipun aikana enintään $10{,}5\,\text{kW}$.
+
+c) Asema saa käyttää täyttä tehoa $11\,\text{kW}$, kun talon teho on enintään $17{,}25\,\text{kW} - 11\,\text{kW} = 6{,}25\,\text{kW}$. Taulukossa vain kello $19\text{–}20$ ylittää tämän ($6{,}8\,\text{kW}$). Muina tunteina kuormanhallintaa ei tarvita, kun oletetaan, että talon teho pysyy tunnin ajan taulukon arvossa. Kello $19\text{–}20$ asemaa pitää rajoittaa. Oikeassa elämässä tunnin sisällä voi olla lyhyitä huippuja, ja silloin kuormanhallintaa voidaan tarvita.
+**Järkevyys:** Virta huipun aikana jokaisessa vaiheessa: talo $6800\,\text{W} : 690\,\text{V} \approx 9{,}9\,\text{A}$ ja asema $10\,450\,\text{W} : 690\,\text{V} \approx 15{,}1\,\text{A}$. Yhteensä virta on $25{,}0\,\text{A}$ eli täsmälleen pääsulakkeen raja. Tulos on pienempi kuin aseman $11\,\text{kW}$, kuten huipun aikana pitääkin.
+
+## fy6-16-L2-06
+**Annettu:** akun energia $60\,\text{kWh}$, varaustaso $20\,\% \to 80\,\%$, verkosta otettu teho $P = 7{,}4\,\text{kW}$, $\eta = 92\,\%$
+**Kysytty:** a) kaksi virhettä opiskelijan ratkaisussa, b) oikea latausaika $t$ tunteina
+**Periaate:** Latauksessa akkuun siirretään vain se osa akun energiasta, jonka varaustasojen erotus kertoo. Koko akkua ei ladata. Verkosta otetusta energiasta vain hyötysuhteen osuus varastoituu akkuun. Latausaika lasketaan siis jakamalla akkuun menevä energia hyötysuhteen ja tehon tulolla.
+**Kaava:** $\eta P t = W_\text{akku}$, joten $t = \dfrac{W_\text{akku}}{\eta P}$
+**Muunnokset:** $W_\text{akku} = (0{,}80 - 0{,}20) \cdot 60\,\text{kWh} = 36\,\text{kWh}$ ja $\eta = 0{,}92$
+**Sijoitus:** $t = \dfrac{36\,\text{kWh}}{0{,}92 \cdot 7{,}4\,\text{kW}} = \dfrac{36\,\text{kWh}}{6{,}808\,\text{kW}} = 5{,}288\,\text{h}$
+**Vastaus:** Vastauslaatikkoon $5{,}3\,\text{h}$. Vastauksessa on kaksi merkitsevää numeroa, kuten hyötysuhteessa $92\,\%$. a) Ensimmäinen virhe: opiskelija käyttää koko akun energiaa $60\,\text{kWh}$. Akkuun siirretään kuitenkin vain $60\,\%$ siitä eli $36\,\text{kWh}$.
+
+Toinen virhe: opiskelija ei ota huomioon hyötysuhdetta. Hän jakaa pelkällä teholla eikä tulolla $\eta P$.
+
+b) Oikea latausaika on $5{,}3\,\text{h}$.
+**Järkevyys:** Jos vain hyötysuhde unohdetaan, tulos on $36\,\text{kWh} : 7{,}4\,\text{kW} \approx 4{,}9\,\text{h}$. Hyötysuhde pidentää aikaa tästä, kuten pitääkin. Opiskelijan $8{,}1\,\text{h}$ on liian pitkä, koska se kuvaa koko akun täyttöä tyhjästä täyteen.
+
+## fy6-16-L2-07
+**Annettu:** verkosta otettu teho $P$ ajan $t$ funktiona taulukosta, mittausväli $0{,}5\,\text{h}$, $t = 0\text{–}3{,}0\,\text{h}$
+**Kysytty:** a) verkosta otettu energia $W_\text{verkko}$ kilowattitunteina, b) keskiteho $P_\text{ka}$ kilowatteina
+**Periaate:** Teho muuttuu ajan mukana, joten energia ei ole teho kertaa aika. Energia on $(t, P)$-kuvaajan alle jäävä pinta-ala. Se saadaan laskemalla yhteen puolen tunnin mittaisten puolisuunnikkaiden pinta-alat. Keskiteho on energia jaettuna kokonaisajalla.
+**Kuvaajan lukeminen:** Pisteet yhdistetään suorilla. Jokaisen puolen tunnin välin pinta-ala on välin päätepisteiden tehojen keskiarvo kertaa $\Delta t = 0{,}5\,\text{h}$. Ensimmäinen ja viimeinen teho ovat $11{,}0\,\text{kW}$ ja $1{,}4\,\text{kW}$. Välissä ovat $11{,}0$, $10{,}8$, $8{,}7$, $5{,}9$ ja $3{,}1\,\text{kW}$.
+**Kaava:** väli kerrallaan $W_i = \Delta t \cdot \dfrac{P_i + P_{i+1}}{2}$, kaikkien välien summa $W_\text{verkko} = \sum W_i$, ja $P_\text{ka} = \dfrac{W_\text{verkko}}{t}$
+**Muunnokset:** Ei tarvita. Kun kilowatit kerrotaan tunneilla, tulos on kilowattitunteina.
+**Sijoitus:** Välitehojen summa on $11{,}0 + 10{,}8 + 8{,}7 + 5{,}9 + 3{,}1 = 39{,}5\,\text{kW}$. Päätepisteiden keskiarvo on $(11{,}0 + 1{,}4) : 2 = 6{,}2\,\text{kW}$. Siis $W_\text{verkko} = 0{,}5\,\text{h} \cdot (6{,}2\,\text{kW} + 39{,}5\,\text{kW}) = 22{,}85\,\text{kWh}$ ja $P_\text{ka} = \dfrac{22{,}85\,\text{kWh}}{3{,}0\,\text{h}} = 7{,}617\,\text{kW}$
+**Vastaus:** Vastauslaatikkoon $23\,\text{kWh}$. Vastauksessa on kaksi merkitsevää numeroa, kuten tehoissa. a) Verkosta otettu energia on $23\,\text{kWh}$.
+
+b) Keskiteho on $7{,}6\,\text{kW}$.
+**Järkevyys:** Jos teho olisi pysynyt koko ajan arvossa $11\,\text{kW}$, energiaa olisi otettu $3{,}0\,\text{h}$ aikana $33\,\text{kWh}$. Tulos on pienempi, koska teho laskee latauksen loppua kohti. Keskiteho $7{,}6\,\text{kW}$ on huipputehon $11\,\text{kW}$ ja loppuarvon $1{,}4\,\text{kW}$ välissä.
+
+## fy6-16-L3-04
+**Annettu:** kuukausimatkat taulukosta, sähköauto $16{,}0\,\text{kWh}$ akusta sadalla kilometrillä, $\eta = 90{,}0\,\%$, $a_\text{koti} = 15\,\text{snt/kWh}$, $a_\text{julk} = 0{,}45\,\text{€/kWh}$, bensiiniauto $6{,}50\,\textsf{l}$ sadalla kilometrillä, bensiinin hinta $b = 1{,}85\,\text{€/}\textsf{l}$
+**Kysytty:** b) bensiiniauton ja sähköauton kotilatauksen vuosikustannusten erotus $\Delta K$ euroina
+**Periaate:** Vuosikustannus on kulutettu määrä kertaa hinta. Sähköautolla maksetaan verkosta otetusta energiasta. Siksi akusta kulutettu energia jaetaan hyötysuhteella. Bensiiniautolla maksetaan ostetuista litroista. Kulutus on molemmilla suoraan verrannollinen ajettuun matkaan. Siksi $100\,\text{km}$:n kulutus kerrotaan luvulla $s : 100\,\text{km}$.
+**Kaava:** $W_\text{verkko} = \dfrac{s}{100\,\text{km}} \cdot \dfrac{w}{\eta}$, $K_\text{s} = a W_\text{verkko}$, $K_\text{b} = \dfrac{s}{100\,\text{km}} \cdot v b$ ja $\Delta K = K_\text{b} - K_\text{s}$, missä $w = 16{,}0\,\text{kWh}$ ja $v = 6{,}50\,\textsf{l}$
+**Muunnokset:** $a_\text{koti} = 15\,\text{snt/kWh} = 0{,}15\,\text{€/kWh}$ ja $\eta = 0{,}900$
+**Sijoitus:** Kuukausimatkojen summa on $s = 14\,640\,\text{km}$, joten $s : 100\,\text{km} = 146{,}4$. Sähköauto: $W_\text{verkko} = 146{,}4 \cdot 16{,}0\,\text{kWh} : 0{,}900 = 2602{,}7\,\text{kWh}$ ja $K_\text{s} = 0{,}15\,\text{€/kWh} \cdot 2602{,}7\,\text{kWh} = 390{,}4\,\text{€}$. Bensiiniauto: $K_\text{b} = 146{,}4 \cdot 6{,}50\,\textsf{l} \cdot 1{,}85\,\text{€/}\textsf{l} = 1760{,}5\,\text{€}$. Erotus on $\Delta K = 1760{,}5\,\text{€} - 390{,}4\,\text{€} = 1370{,}1\,\text{€}$.
+**Vastaus:** Vastauslaatikkoon $1370\,\text{€}$ eli pyöristettynä kymmeneen euroon. Sähkön kustannus $390\,\text{€}$ on annettu kahdella merkitsevällä numerolla. a) Vuosittainen ajomatka on $14\,640\,\text{km}$.
+
+b) Bensiiniauto maksaa vuodessa noin $1370\,\text{€}$ enemmän.
+
+c) Julkisella latauksella $K_\text{s} = 0{,}45\,\text{€/kWh} \cdot 2602{,}7\,\text{kWh} = 1171{,}2\,\text{€}$. Se on edelleen pienempi kuin bensiiniauton $1760{,}5\,\text{€}$. Säästö pienenee arvoon $1760{,}5\,\text{€} - 1171{,}2\,\text{€} = 589{,}3\,\text{€}$ eli noin $780\,\text{€}$ pienemmäksi. Sähköauto on silti edullisempi, koska sen energiankulutus on pieni. Sen kustannus on noin kaksi kolmasosaa bensiiniauton kustannuksesta.
+**Järkevyys:** Arvio: $15\,000\,\text{km}$ on $150$ kertaa $100\,\text{km}$. Sähköauto maksaa noin $150 \cdot 2{,}7\,\text{€} \approx 400\,\text{€}$ ($100\,\text{km}$ maksaa $17{,}8\,\text{kWh} \cdot 0{,}15\,\text{€/kWh} \approx 2{,}7\,\text{€}$). Bensiiniauto maksaa $150 \cdot 12\,\text{€} = 1800\,\text{€}$ ($100\,\text{km}$ maksaa $6{,}5\,\textsf{l} \cdot 1{,}85\,\text{€/}\textsf{l} \approx 12\,\text{€}$). Erotus on siis noin $1400\,\text{€}$. Verkosta otettu energia $17{,}8\,\text{kWh}$ sadalla kilometrillä on suurempi kuin akusta kulutettu $16{,}0\,\text{kWh}$. Niin pitääkin olla, koska latauksessa on häviöitä.
+
+## fy6-16-L3-05
+**Annettu:** pääsulakkeet $3 \cdot 25\,\text{A}$, $U = 230\,\text{V}$, kuormat $6{,}0\,\text{kW}$, $3{,}3\,\text{kW}$, $1{,}8\,\text{kW}$ ja $0{,}90\,\text{kW}$ jaettuna tasan kolmelle vaiheelle, kaapeli $l = 30\,\text{m}$, $A = 2{,}5\,\text{mm}^2$, $\rho = 1{,}7 \cdot 10^{-8}\,\Omega\cdot\text{m}$
+**Kysytty:** b) suurin latausvirta $I_\text{a}$ ampeereina ja c) kaapelin lämpenemisteho $P_\text{johto}$ kahdella virralla
+**Periaate:** Saman vaihejohtimen kautta kulkevat virrat lasketaan yhteen. Summa saa olla enintään pääsulakkeen virta. Talon kuormat jakautuvat tasan vaiheille, joten talon virta yhdessä vaiheessa saadaan kolmivaiheisen tehon kaavasta. Yksivaiheinen asema kuormittaa vain yhtä vaihetta. Sille jää se virta, joka sillä vaiheella on jäljellä. Kaapelin kuparijohtimet ovat vastus. Sen lämpenemisteho on Joulen lain mukaan $RI^2$.
+**Kaava:** $P_\text{talo} = 3UI_\text{talo}$, joten $I_\text{talo} = \dfrac{P_\text{talo}}{3U}$; $I_\text{talo} + I_\text{a} \le I_\text{p}$, joten $I_\text{a} = I_\text{p} - I_\text{talo}$; $P_\text{johto} = \rho \dfrac{2l}{A} I^2$
+**Muunnokset:** $P_\text{talo} = 6{,}0\,\text{kW} + 3{,}3\,\text{kW} + 1{,}8\,\text{kW} + 0{,}90\,\text{kW} = 12{,}0\,\text{kW} = 12\,000\,\text{W}$ ja $A = 2{,}5\,\text{mm}^2 = 2{,}5 \cdot 10^{-6}\,\text{m}^2$
+**Sijoitus:** $I_\text{talo} = \dfrac{12\,000\,\text{W}}{3 \cdot 230\,\text{V}} = 17{,}39\,\text{A}$ ja $I_\text{a} = 25\,\text{A} - 17{,}39\,\text{A} = 7{,}609\,\text{A}$. Kaapelin resistanssi on $R = 1{,}7 \cdot 10^{-8}\,\Omega\cdot\text{m} \cdot \dfrac{2 \cdot 30\,\text{m}}{2{,}5 \cdot 10^{-6}\,\text{m}^2} = 0{,}408\,\Omega$. Siis $P_\text{johto} = 0{,}408\,\Omega \cdot (7{,}609\,\text{A})^2 = 23{,}6\,\text{W}$ ja virralla $16\,\text{A}$ $P_\text{johto} = 0{,}408\,\Omega \cdot (16\,\text{A})^2 = 104{,}4\,\text{W}$.
+**Vastaus:** Vastauslaatikkoon $7{,}6\,\text{A}$. Vastauksessa on kaksi merkitsevää numeroa, kuten kuormien tehoissa. a) Talon virta on $17\,\text{A}$ jokaisessa vaihejohtimessa.
+
+b) Asema saa ottaa enintään $7{,}6\,\text{A}$.
+
+c) Kaapelin lämpenemisteho on $24\,\text{W}$ virralla $7{,}6\,\text{A}$ ja $104\,\text{W}$ virralla $16\,\text{A}$. Virta kasvaa kertoimella $16 : 7{,}609 \approx 2{,}1$. Teho kasvaa kertoimen neliön verran eli noin $4{,}4$-kertaiseksi. Illalla pääsulake on jo lähes täynnä. Virta $16\,\text{A}$ ylittäisi sen ($17{,}4\,\text{A} + 16\,\text{A} = 33{,}4\,\text{A}$). Kuormanhallinnan pitää siis rajoittaa latausvirta ruuhka-ajaksi. Pienempi virta pitää myös kaapelin viileämpänä.
+**Järkevyys:** Talon virta ja aseman virta ovat yhteensä $17{,}39\,\text{A} + 7{,}609\,\text{A} = 25{,}0\,\text{A}$ eli täsmälleen pääsulakkeen raja. Aseman teho olisi vain $230\,\text{V} \cdot 7{,}609\,\text{A} \approx 1{,}75\,\text{kW}$. Hidas lataus on siis järkevä ruuhka-aikaan. Yöllä kiuas ja liesi ovat pois päältä, ja silloin virtaa voi taas lisätä.

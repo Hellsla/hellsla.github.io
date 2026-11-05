@@ -1,13 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 1aa0d4b32789301b
+CONTENT-HASH: a80ee8ee2111fea5
+Mode: full (translation review against the reviewed Finnish set; 8 new exercises L1-06..08, L2-05..07, L3-04..05)
+Round 2
 
 ## Blocking
 (none)
 
+## Fixed
+(none needed: the text already matched the Finnish in every number and was natural)
+
 ## Polish
-- (Minor) Solutions and exercise texts are close to the Finnish (about 15 of 121 solution lines and 7 of 105 exercise lines differ); acceptable since the arithmetic text is short, but more per-step simplification would help a weak reader.
+(none)
 
 ## Checked
-- Lesson is genuinely simplified: mean sentence length about 10 words vs 15 in the Finnish, key terms explained, same structure, nothing dropped.
-- Goals and key concepts complete; paristo explained as single-use, akku as rechargeable.
-- Re-review after the concept-review commit: howto wording (electrical energy transformed into internal energy), efficiency paragraph (often below 100 %, charging always, R and R_s), L3-03 sisäenergiaksi, matching the Finnish; no numbers changed; $ counts equal.
+- Selkosuomi: short sentences, one idea each, common words; terms (napajännite, lähdejännite, sisäinen resistanssi, hyötysuhde, varaustaso) used as in the lesson; tasks keep parts a, b, c and 'Vastauskenttään tulee ... tulos'.
+- Choice feedback of L1-06 and L1-07 matches the Finnish meaning; the correct choice is the same.
+- 'Mallinna' in L3-05 is a little heavy but defined by the sentence that follows (three stages, constant current), so left.
+- check_i18n fi-easy: 0 errors.

@@ -1,13 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 22aad268dadfe836
+CONTENT-HASH: 0705b915b6f0ca56
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
+## Fixed
+(none)
+
 ## Polish
-- L1-05 Järkevyys: "Suora sovitettiin origon kautta" -> "Suora piirrettiin origon kautta" would be plainer for fi-easy ("sovittaa" is a statistics word). Taste only.
+(none)
 
 ## Checked
-- Delta L1-05 Järkevyys: the reason for the origin is now given as the model F = qE, in two short sentences (the Finnish version has one long one). Plain Finnish kept; "homogeenisessa kentässä" is explained in the fi-easy lesson.
-- Field versus force on a charge stays distinct ("vaikka kenttä on olemassa").
-- Numbers unchanged and consistent with the Finnish set.
+- Short sentences, common words; fi texts split into short sentences (e.g. L2-05, L2-07, L3-05) and the field line is explained in L1-06.
+- Tasks, answer-box instructions and hints match fi; example-data labels kept.
+- Multi-part tasks keep a), b), c) structure and the final answer-box line.
+- Distractor feedback names the misconception without revealing the correct option.

@@ -27,4 +27,32 @@ a["fy6-8-L3-02"] = (1.5 + 1.5 - 1.5) / (4.0 + 3 * 0.25)   # one cell reversed: E
 I1, I2 = 1.20 / 2.0, 1.44 / 6.0                           # load 2,0 ohm: 0,60 A; 6,0 ohm: 0,24 A
 Rs = (1.44 - 1.20) / (I1 - I2)                            # R_s = 0,24 V : 0,36 A = 0,667 ohm
 a["fy6-8-L3-03"] = 1.20 + Rs * I1                         # E = U1 + R_s I1 = 1,60 V
+# Exercise bank additions (teacher 2026-11-04): L1-06, L1-07 and L2-07 are multiple choice (no number)
+
+
+def fit(pts):
+    """Least-squares line y = k x + b through the points (a student's by-eye line lands within the tolerance)."""
+    n = len(pts)
+    xm, ym = sum(x for x, _ in pts) / n, sum(y for _, y in pts) / n
+    k = sum((x - xm) * (y - ym) for x, y in pts) / sum((x - xm) ** 2 for x, _ in pts)
+    return k, ym - k * xm
+
+
+a["fy6-8-L1-08"] = (1.50 - 1.31) / 0.50                   # R_s = (E - U) / I = 0,19 V : 0,50 A = 0,38 ohm
+d5 = [(0.20, 1.43), (0.40, 1.31), (0.60, 1.20), (0.80, 1.10), (1.00, 0.99), (1.20, 0.86)]   # data of L2-05
+k5, b5 = fit(d5)                                          # slope -0,559 ohm, intercept E = 1,54 V
+a["fy6-8-L2-05"] = round(-k5, 2)                          # R_s = 0,56 ohm (tolerance 0,05: 0,53…0,59)
+IA = [0.10, 0.20, 0.40, 0.60, 0.80, 1.00]                 # data of L2-06
+kA, bA = fit(list(zip(IA, [1.55, 1.50, 1.40, 1.29, 1.21, 1.10])))   # A: E 1,60 V, R_s 0,50 ohm
+kB, bB = fit(list(zip(IA, [1.47, 1.44, 1.40, 1.35, 1.31, 1.27])))   # B: E 1,49 V, R_s 0,22 ohm
+a["fy6-8-L2-06"] = round((bA - bB) / (kB - kA), 2)        # lines cross at I = (E_A - E_B) / (R_A - R_B) = 0,40 A
+I3 = [0.10, 0.20, 0.30, 0.40, 0.50]                       # data of L3-04
+kN, bN = fit(list(zip(I3, [1.56, 1.53, 1.51, 1.48, 1.46])))   # new: E 1,58 V, R_s 0,25 ohm
+kO, bO = fit(list(zip(I3, [1.41, 1.30, 1.19, 1.09, 0.97])))   # aged: E 1,52 V, R_s 1,09 ohm
+Rold = -kO
+a["fy6-8-L3-04"] = round(100 * Rold / (2.0 + Rold))       # share heating the cell: R_s / (R + R_s) = 35 % (new cell 11 %)
+# part c (aged cell, P(R) = E² R / (R + R_s)²): 0,47 W, 0,53 W, 0,47 W, 0,34 W at 0,55; 1,1; 2,2; 4,4 ohm -> largest at R ≈ R_s, where 50 % heats the cell
+d6 = [(0.50, 5.56), (1.00, 5.00), (1.50, 4.45), (2.00, 3.91), (2.50, 3.36), (3.00, 2.79)]   # data of L3-05
+k6, b6 = fit(d6)                                          # slope -1,103 ohm (leads included), E = 6,11 V
+a["fy6-8-L3-05"] = round(b6 / (-k6 - 0.30), 1)            # true R_s = 1,10 - 0,30 = 0,80 ohm: I_k = 6,11 V : 0,80 ohm = 7,6 A (the pupil's 5,6 A)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

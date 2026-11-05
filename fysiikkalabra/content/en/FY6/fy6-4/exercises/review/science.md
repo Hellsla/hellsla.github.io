@@ -1,13 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 30f989395b8ce63a
+CONTENT-HASH: bc67e70570a33706
+Mode: full
+Round: 1
 
 ## Blocking
 
+## Fixed
+- exercises.json fy6-4-L3-05: "A repair of a device needs" changed to "Repairing a device requires" (natural phrasing).
+- exercises.json fy6-4-L3-04: "is off the wire" / "is off" changed to "has come off the wire" / "has come off" in the text (solutions keep the short "is off", acceptable).
 
 ## Polish
 
-
 ## Checked
-- All 12 exercises: data, answers, units and tolerances equal the Finnish (number multiset identical in exercises.json and solutions.md). Each solution has the 7 steps (Given, Find, Principle, Formula, Conversions, Substitution, Answer, Reasonableness; L3-01 adds Reading the figure).
-- L3-02 unit "kertaa" changed to "times" in the English exercises.json (the check shows it).
-- Re-review after the internal-energy concept fix: solution of fy6-4-L1-04 (light and internal energy of the filaments) matches the Finnish; numbers and steps unchanged.
+- Scripted comparison against content/fi (exercises.json, all 20 exercises incl. the 8 new L1-06..08, L2-05..07, L3-04..05): keys, ids, answers, units, tolerances, correct flags, choices, feedback, data-table cells identical; every number identical in exercises.json and in solutions.md (English; decimal point in en JSON/LaTeX where required).
+- Answers recomputed: 33 ohm concept, 60, 102.1, 198, 40.4 ohm, 36 mA, 1.32 % (L3-05: 560 || 2700 = 463.8 ohm), all equal to the Finnish.
+- check_i18n.py en: 0 errors for fy6-4 (remaining errors are in fy6-1..3, outside this task).

@@ -40,6 +40,58 @@
       "answer": 5.0,
       "unit": "Ω",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-6-L1-06",
+      "level": 1,
+      "text": "Two resistors with different resistances are connected in series to a voltage source. In which resistor is more electrical energy transformed into internal energy?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "In the resistor with the larger resistance, because the current is the same and the power grows with the resistance.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "In the resistor with the smaller resistance, because the current in it is larger and the power grows with the current.",
+          "feedback": "In a series connection the current does not divide: all the components form a single loop, and the same current flows through both. A larger current in the smaller resistance belongs to a parallel connection, not to a series one."
+        },
+        {
+          "text": "In the resistor with the smaller resistance, because the voltage across each is the same and the power is then larger.",
+          "feedback": "The same voltage across the resistors occurs only in a parallel connection. In a series connection the voltage of the source is divided among the resistors, and the larger resistance has the larger share."
+        },
+        {
+          "text": "In the resistor with the larger resistance, because the current is the same and the power grows with the resistance.",
+          "feedback": "Correct: in a series connection the same current flows through both, so in the form of Joule's law $P = RI^2$ the power grows with the resistance. The resistor with the larger resistance also gets a larger share of the voltage of the source.",
+          "correct": true
+        },
+        {
+          "text": "The same amount in both, because the same current flows through each and the power depends only on the current.",
+          "feedback": "The current is the same, but the power also depends on the voltage: the voltage across the larger resistance is larger ($U = RI$), so the power $P = UI$ is larger in that resistor."
+        }
+      ]
+    },
+    {
+      "id": "fy6-6-L1-07",
+      "level": 1,
+      "text": "An LED strip is connected to a voltage of $12\\,\\text{V}$, and a current of $350\\,\\text{mA}$ flows through it. How large is the power of the strip? Give the answer in watts.",
+      "kind": [
+        "model"
+      ],
+      "answer": 4.2,
+      "unit": "W",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-6-L1-08",
+      "level": 1,
+      "text": "The voltage across a resistor is $2.0\\,\\text{V}$, and a power of $0.80\\,\\text{W}$ is transformed into internal energy in the resistor. The voltage is raised to three times the value, to $6.0\\,\\text{V}$, and the resistance of the resistor stays the same. How large is the power in the resistor now?",
+      "kind": [
+        "model"
+      ],
+      "answer": 7.2,
+      "unit": "W",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +126,136 @@
       "answer": 17.9,
       "unit": "K",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-6-L2-05",
+      "level": 2,
+      "text": "A resistor was in air at a temperature of $22.0\\,{}^\\circ\\text{C}$. Different voltages were connected to the resistor, and at each voltage we waited until the temperature $T$ of the surface of the resistor no longer changed. The table gives the voltage $U$, the current $I$ and the steady temperature $T$.\n\na) Calculate the power $P = UI$ for each measurement and draw a graph in which the rise in temperature $\\Delta T = T - 22.0\\,{}^\\circ\\text{C}$ is a function of the power $P$. Fit a straight line to the points.\n\nb) By how many kelvins does the surface of the resistor warm up per one watt?\n\nc) Explain why the temperature levels off and does not rise without limit.\n\nEnter the result of part b) in the box.",
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "answer": 12.1,
+      "unit": "K/W",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Heating of a resistor (example data)",
+        "columns": [
+          "$U\\,(\\text{V})$",
+          "$I\\,(\\text{A})$",
+          "$T\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "3.0",
+            "0.064",
+            "24.4"
+          ],
+          [
+            "6.0",
+            "0.127",
+            "31.0"
+          ],
+          [
+            "9.0",
+            "0.192",
+            "42.6"
+          ],
+          [
+            "12.0",
+            "0.254",
+            "58.9"
+          ],
+          [
+            "15.0",
+            "0.320",
+            "80.2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-6-L2-06",
+      "level": 2,
+      "text": "The table gives the voltage $U$ and the current $I$ of a small incandescent bulb measured at different voltages.\n\na) Calculate the power $P = UI$ of the bulb for each measurement.\n\nb) By what percentage does the power of the bulb increase when the voltage increases from $3.0\\,\\text{V}$ to $6.0\\,\\text{V}$?\n\nc) If the resistance of the bulb stayed constant, the power would increase here by $300\\,\\%$. Explain why the power increases less.\n\nEnter the result of part b) in the box.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 172,
+      "unit": "%",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Current of an incandescent bulb as a function of voltage (example data)",
+        "columns": [
+          "$U\\,(\\text{V})$",
+          "$I\\,(\\text{A})$"
+        ],
+        "rows": [
+          [
+            "0.5",
+            "0.098"
+          ],
+          [
+            "1.0",
+            "0.150"
+          ],
+          [
+            "2.0",
+            "0.212"
+          ],
+          [
+            "3.0",
+            "0.254"
+          ],
+          [
+            "4.0",
+            "0.287"
+          ],
+          [
+            "5.0",
+            "0.318"
+          ],
+          [
+            "6.0",
+            "0.346"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-6-L2-07",
+      "level": 2,
+      "text": "A student connected two different bulbs A and B in series and measured the current and the voltage across each bulb. Bulb A shone more brightly than bulb B. The student reasoned: “The brighter bulb A uses less current than bulb B, so its power is smaller.”\n\na) What is wrong in the student's reasoning? Justify your answer with the measurement results in the table.\n\nb) By how many watts is the power of bulb A greater than the power of bulb B?\n\nEnter the result of part b) in the box.",
+      "kind": [
+        "data",
+        "error",
+        "reasoning"
+      ],
+      "answer": 3.0,
+      "unit": "W",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Bulbs connected in series (example data)",
+        "columns": [
+          "Bulb",
+          "$U\\,(\\text{V})$",
+          "$I\\,(\\text{A})$"
+        ],
+        "rows": [
+          [
+            "A",
+            "9.0",
+            "0.50"
+          ],
+          [
+            "B",
+            "3.0",
+            "0.50"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -100,6 +282,73 @@
       "answer": 12.0,
       "unit": "Ω",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-6-L3-04",
+      "level": 3,
+      "text": "A toaster has two heating resistors, $R_1$ and $R_2$. Their power was measured at the $230\\,\\text{V}$ mains voltage in three different connections. The resistances of the resistors are assumed to stay constant. The manufacturer permits a power of at most $1.4\\,\\text{kW}$ for the resistor $R_1$ and at most $0.75\\,\\text{kW}$ for the resistor $R_2$.\n\na) Calculate the resistances $R_1$ and $R_2$.\n\nb) In the toaster the resistors are in parallel. The mains voltage rises by $10\\,\\%$, that is, to $253\\,\\text{V}$. Determine by calculation which resistor exceeds its permitted power.\n\nc) Explain why precisely this resistor is overloaded, although more energy is transformed in the other resistor.\n\nEnter in the box the power of the overloaded resistor in part b) at the voltage $253\\,\\text{V}$.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 822.1,
+      "unit": "W",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Power of the toaster resistors at $230\\,\\text{V}$ (example data)",
+        "columns": [
+          "Connection",
+          "$P\\,(\\text{W})$"
+        ],
+        "rows": [
+          [
+            "Only $R_1$",
+            "1100"
+          ],
+          [
+            "$R_1$ and $R_2$ in series",
+            "420"
+          ],
+          [
+            "$R_1$ and $R_2$ in parallel",
+            "1780"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-6-L3-05",
+      "level": 3,
+      "text": "During renovation a heater of $2.0\\,\\text{kW}$ and $230\\,\\text{V}$ is connected to a socket with a $50\\,\\text{m}$ extension cord that is completely coiled on a reel. The table gives the total resistance of the conductors of two cord types (the outgoing conductor and the return conductor). The heater and the extension cord are in series, the voltage of the socket is $230\\,\\text{V}$, and the resistance of the heater is the same as at the rated values.\n\na) Calculate the resistance of the heater and the current when the thin cord is used.\n\nb) How large a power is transformed into internal energy in the thin cord? Calculate the same for the thick cord.\n\nc) Explain why the thin coiled cord warms up much more than the thick one, although the current through the heater is almost the same with both cords.\n\nEnter in the box the power of the thin cord in part b).",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 152.5,
+      "unit": "W",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Resistance of the conductors of an extension cord (example data)",
+        "columns": [
+          "Cord",
+          "$A\\,(\\text{mm}^2)$",
+          "$R\\,(\\Omega)$"
+        ],
+        "rows": [
+          [
+            "Thin",
+            "0.75",
+            "2.4"
+          ],
+          [
+            "Thick",
+            "2.5",
+            "0.71"
+          ]
+        ]
+      }
     }
   ]
 }

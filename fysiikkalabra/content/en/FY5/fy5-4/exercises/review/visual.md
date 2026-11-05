@@ -1,15 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 778b291ab487f1ac
+CONTENT-HASH: b258729aa462d5af
+Mode: full (translation review against the reviewed Finnish set)
+Round 2
 
 ## Blocking
 (none)
 
+## Fixed
+(none needed)
+
 ## Polish
-- [Minor] none beyond shared UI strings.
+(none)
 
 ## Checked
-- Captures opened: open-exercises-L2-1280-1 (solution opened, force diagram, formulas render), stage-exercises-390 via contact-3, check_layout 345 px OK.
-- Maths typography: units upright with thin space, decimal point, force diagram labels in English.
-
-## Scores
-illustrations 4 · typography 4 · English 4 · accessibility 4
+- Re-review after one change: in the fy5-4-L3-05 solution one display formula was split into two display formulas. The three display formulas now match content/fi exactly (same maths, same order, same connecting sentence translated).
+- All exercises still match content/fi in ids, levels, kinds, answers, units, tolerances, data and numbers; check_i18n.py en: 0 errors for fy5-4.
+- Role (visual) findings from the earlier PASS are unaffected; the split only shortens line width at 360 px.

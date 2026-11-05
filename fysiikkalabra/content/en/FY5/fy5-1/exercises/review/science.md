@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 3e2aa01509562fab
+CONTENT-HASH: aec313c8e309aea9
 
 ## Blocking
 (none)
@@ -8,5 +8,9 @@ CONTENT-HASH: 3e2aa01509562fab
 - none.
 
 ## Checked
-- exercises.json and solutions.md against the Finnish: 12 exercises, the same data, units, tolerances, figure id fy5-1/ruutu; every answer recomputed with my own formulas (37.5, 9.6, 150, 12, 0.3, 17.2, 29.75, 7.0, 231, 61.9, 1.0, 48): all inside tolerance; solutions carry all seven steps, the grid-reading step of L1-04 and the sin 130 = cos 40 style checks as in Finnish.
-- Fixed: cross wrench -> wheel brace (L3-03 text and solution), wrench -> spanner, 'his force' -> 'the child's force'; physics unchanged.
+- All 20 exercises vs the Finnish with a script: ids, keys, answers, units, tolerances, correct flags, choices, feedback, data table cells and every number identical (decimal point in JSON and LaTeX; only word order differs in L1-08, L2-03 in en).
+- New tasks L1-06..08, L2-05..07, L3-04..05 recomputed: -9.0, 25.1->25, 0.118, 21.6, 70.9 (788 N; 47.3, 31.5), 166 N (B; A 240, C 200): inside tolerance, solutions carry all steps and the same checks as the Finnish.
+- Choices: correct flag only on the Finnish correct option in L1-06 and L1-07; physics of feedback (line of action through hinges, r = 0) unchanged.
+- Fixed: L2-06 text and solution 'net moment of the weights of the masses' -> 'of the weights (the gravitational forces on the hanging masses)'; no numbers touched.
+- No Finnish text left in exercises.json or solutions.md.
+- check_i18n: formula parity with fi holds for this chapter.

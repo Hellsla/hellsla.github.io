@@ -1,5 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 4abeecff3b7699af
+CONTENT-HASH: 52fc2f236602dd83
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
@@ -8,6 +10,9 @@ CONTENT-HASH: 4abeecff3b7699af
 (none)
 
 ## Checked
-- Exercises and solutions compared with the Finnish set: every number, unit, answer and tolerance identical, all 12 solutions complete (7 steps).
-- Level counts 5/4/3 as in the Finnish set.
-- Plain Finnish, step order and justifications kept.
+- Captures opened: fy6-14-open-exercises-1280-6 (L1-06 choices and feedback), -L2-1280-6 (L2-06 table), -L3-1280-5 (L3-04 solution, Finnish months).
+- Tables show translated headers and months, units set as maths, decimal comma consistent, no overflow or clipped text at 1280 px.
+- Answer boxes, units (mW, %, ohm) and the solution blocks render as in fi.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

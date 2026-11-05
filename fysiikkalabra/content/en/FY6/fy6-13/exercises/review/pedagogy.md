@@ -1,12 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 9e52abd71d23848d
+CONTENT-HASH: 8544fb54b522a8ea
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
+## Fixed
+(none needed)
+
 ## Polish
-- (none) Same levels (5/4/3) and order as the Finnish; the taste notes of the Finnish set (L2-04 pattern, no qualitative charge/discharge task) stand.
+(none)
 
 ## Checked
-- Natural English task texts, the question last, units asked in the same form as the Finnish.
-- Nothing dropped; solutions are complete in this language.
+- Same levels (5/4/3 plus the new 8 tasks), order, kinds and hint structure as fi; nothing dropped or added.
+- L1-06, L1-07, L2-06: four choices, one correct, each distractor feedback names the same misconception as fi (proportional growth, strain, squared energy, dielectric conducting, current vs voltage size).
+- L2-05, L3-04, L3-05: parts a), b), c) and the sentence on what the answer box takes are all present; the question comes last in each part.
+- English reads naturally at the right level; solution model answers for the written parts (L2-07, L3-04 c, L3-05 c) complete.

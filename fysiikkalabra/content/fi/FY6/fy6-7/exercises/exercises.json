@@ -39,6 +39,56 @@
       "answer": 10.95,
       "unit": "kWh",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-7-L1-06",
+      "level": 1,
+      "text": "Sähkölaskussa sähköenergia ilmoitetaan kilowattitunteina ($\\text{kWh}$). Mitä suuretta kilowattitunti mittaa?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Energiaa, koska se saadaan kertomalla laitteen teho käyttöajalla.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Tehoa, koska se kertoo, kuinka paljon sähköä laite käyttää tunnissa.",
+          "feedback": "Teho kertoo, kuinka nopeasti energiaa käytetään, ja sen yksikkö on kilowatti. Kilowattitunti on teho kerrottuna ajalla, joten se on energiaa."
+        },
+        {
+          "text": "Virtaa, koska se kertoo, kuinka paljon varausta johdossa kulkee tunnissa.",
+          "feedback": "Virran yksikkö on ampeeri, eikä sähkölaskussa laskuteta virtaa. Kilowattitunnissa on teho eli jännite ja virta yhdessä kerrottuna ajalla."
+        },
+        {
+          "text": "Energiaa, koska se saadaan kertomalla laitteen teho käyttöajalla.",
+          "correct": true,
+          "feedback": "Oikein: kilowattitunti on energian yksikkö, $1\\,\\text{kWh} = 1\\,\\text{kW} \\cdot 1\\,\\text{h}$. Se kertoo, kuinka paljon sähköenergiaa on käytetty, ei sitä, kuinka nopeasti."
+        },
+        {
+          "text": "Hintaa, koska sähköyhtiö laskuttaa sähkön tunnin jaksoissa kerrallaan.",
+          "feedback": "Kilowattitunti on fysikaalinen suure, ei raha. Hinta lasketaan kertomalla kulutettu energia hinnalla, joka on esimerkiksi $15\\,\\text{snt/kWh}$."
+        }
+      ]
+    },
+    {
+      "id": "fy6-7-L1-07",
+      "level": 1,
+      "text": "Kahvinkeittimen teho on $0{,}90\\,\\text{kW}$, ja se on päällä keskimäärin $15\\,\\text{min}$ vuorokaudessa. Sähkö maksaa siirtoineen $18\\,\\text{snt/kWh}$. Kuinka paljon kahvinkeitin maksaa $30$ vuorokaudessa? Perusmaksuja ei oteta huomioon.",
+      "answer": 1.215,
+      "unit": "€",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-7-L1-08",
+      "level": 1,
+      "text": "Oppilas laskee, kuinka kauan $1{,}0\\,\\text{kWh}$ energiaa riittää pöytätuulettimelle, jonka teho on $40\\,\\text{W}$. Hänen ratkaisunsa on: ”Aika on energian ja tehon tulo, $t = E \\cdot P = 1{,}0 \\cdot 40 = 40$. Tuuletin toimii siis $40$ tuntia.” Etsi oppilaan virhe ja laske oikea aika tunteina.",
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "answer": 25.0,
+      "unit": "h",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +124,147 @@
       "answer": 75.92,
       "unit": "kWh",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-7-L2-05",
+      "level": 2,
+      "text": "Kotitalouden laitteiden käyttö on koottu taulukkoon (esimerkkiaineisto). Teho on laitteen teho käytön aikana ja aika käyttöaika vuorokaudessa.\n\na) Laske kunkin laitteen energia vuorokaudessa kilowattitunteina ja selvitä, mikä laite käyttää eniten energiaa.\n\nb) Laske laitteiden yhteinen energia vuodessa ($365$ vuorokautta) kilowattitunteina.\n\nc) Valitse yksi laite, jonka energiaa kannattaa pienentää, ja perustele valinta.\n\nVastauskenttään tulee kohdan b) tulos.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 733.65,
+      "unit": "kWh",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Laitteiden käyttö kotona (esimerkkiaineisto)",
+        "columns": [
+          "Laite",
+          "$P\\,(\\text{W})$",
+          "$t\\,(\\text{h/vrk})$"
+        ],
+        "rows": [
+          [
+            "Valaistus",
+            "90",
+            "5.0"
+          ],
+          [
+            "Televisio",
+            "110",
+            "4.0"
+          ],
+          [
+            "Tietokone",
+            "60",
+            "6.0"
+          ],
+          [
+            "Pölynimuri",
+            "1200",
+            "0.50"
+          ],
+          [
+            "Leivänpaahdin",
+            "800",
+            "0.20"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-7-L2-06",
+      "level": 2,
+      "text": "Perheen sähkömittarin lukemat kirjattiin joka aamu kello 8 viikon ajan (esimerkkiaineisto). Sähkö maksaa siirtoineen $16\\,\\text{snt/kWh}$.\n\na) Laske mittarin lukemien avulla energia kunkin vuorokauden aikana sekä viikon aikana käytetty energia ja keskimääräinen energia vuorokaudessa.\n\nb) Laske kodin sähkötehon keskiarvo viikon aikana watteina.\n\nc) Laske viikon sähkön hinta ilman perusmaksuja.\n\nVastauskenttään tulee kohdan b) tulos.",
+      "kind": [
+        "data"
+      ],
+      "answer": 335.119,
+      "unit": "W",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Sähkömittarin lukemat (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{vrk})$",
+          "Lukema $(\\text{kWh})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "12437.2"
+          ],
+          [
+            "1",
+            "12444.9"
+          ],
+          [
+            "2",
+            "12452.1"
+          ],
+          [
+            "3",
+            "12460.3"
+          ],
+          [
+            "4",
+            "12467.8"
+          ],
+          [
+            "5",
+            "12476.9"
+          ],
+          [
+            "6",
+            "12486.1"
+          ],
+          [
+            "7",
+            "12493.5"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-7-L2-07",
+      "level": 2,
+      "text": "Oppilas mittasi vanhan jääkaapin sähkönkulutuksen energiamittarilla, joka oli kytketty pistorasian ja jääkaapin väliin. Mittarin lukema oli alussa $0{,}00\\,\\text{kWh}$, ja se luettiin $12\\,\\text{h}$:n välein $48\\,\\text{h}$:n ajan (esimerkkiaineisto).\n\na) Piirrä lukemista kuvaaja ja sovita pisteisiin origon kautta kulkeva suora. Lue suoralta energia $48\\,\\text{h}$:n kohdalla.\n\nb) Arvioi jääkaapin energia vuodessa ($365$ vuorokautta) olettaen, että kulutus on koko ajan sama kuin mittauksessa.\n\nc) Mainitse kaksi tekijää, jotka voivat tehdä vuosiarviosta epätarkan.\n\nVastauskenttään tulee kohdan b) tulos.",
+      "kind": [
+        "experiment",
+        "data",
+        "graph"
+      ],
+      "answer": 299.3,
+      "unit": "kWh",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Jääkaapin energiamittarin lukema (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{h})$",
+          "$E\\,(\\text{kWh})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "0.00"
+          ],
+          [
+            "12",
+            "0.43"
+          ],
+          [
+            "24",
+            "0.79"
+          ],
+          [
+            "36",
+            "1.24"
+          ],
+          [
+            "48",
+            "1.64"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -99,6 +290,71 @@
       "text": "Lämminvesivaraajan lämmitysvastuksen resistanssi on $26{,}5\\,\\Omega$, ja se on kytketty $230\\,\\text{V}$:n jännitteeseen. Varaaja lämmittää vettä yöllä $2{,}50\\,\\text{h}$. Oletetaan, että vastuksen resistanssi pysyy vakiona. Kuinka paljon sähköenergiaa varaaja käyttää yön aikana? Vastaa kilowattitunteina.",
       "answer": 4.990566,
       "unit": "kWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-7-L3-04",
+      "level": 3,
+      "text": "Kodin sähkönkulutus ja sähkön hinta mitattiin yhden vuorokauden ajalta neljän tunnin jaksoissa (esimerkkiaineisto). Hinta $a$ on energian ja siirron hinta yhteensä, ja se on sama koko jakson ajan.\n\nLämminvesivaraajan vastus, jonka teho on $2{,}0\\,\\text{kW}$, oli päällä $3{,}0\\,\\text{h}$ jaksolla klo $16$–$20$, ja sen energia sisältyy kyseisen jakson kulutukseen.\n\na) Laske vuorokauden sähköenergian kokonaiskustannus ja keskihinta senttiä kilowattituntia kohti.\n\nb) Varaajan lämmitys siirretään jaksolle klo $00$–$04$, ja muu kulutus pysyy ennallaan. Laske, kuinka paljon rahaa siirto säästää vuorokaudessa.\n\nc) Perustele, miksi säästö syntyy, vaikka energiaa ei kulu vähemmän, ja nimeä yksi syy, miksi siirto ei välttämättä onnistu jokaisena vuorokautena.\n\nVastauskenttään tulee kohdan b) tulos euroina.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 0.93,
+      "unit": "€",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Kulutus ja hinta vuorokauden aikana (esimerkkiaineisto)",
+        "columns": [
+          "Jakso (klo)",
+          "$E\\,(\\text{kWh})$",
+          "$a\\,(\\text{snt/kWh})$"
+        ],
+        "rows": [
+          [
+            "00–04",
+            "1.2",
+            "3.9"
+          ],
+          [
+            "04–08",
+            "1.8",
+            "7.2"
+          ],
+          [
+            "08–12",
+            "2.6",
+            "12.4"
+          ],
+          [
+            "12–16",
+            "2.0",
+            "9.6"
+          ],
+          [
+            "16–20",
+            "8.4",
+            "19.4"
+          ],
+          [
+            "20–24",
+            "3.0",
+            "11.8"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-7-L3-05",
+      "level": 3,
+      "text": "Perheen vanha jääkaappi-pakastin käyttää energiaa $320\\,\\text{kWh}$ vuodessa (energiamittarilla mitattu). Uuden samankokoisen laitteen energiamerkinnän mukaan vuosikulutus on $98\\,\\text{kWh}$, ja laite maksaa $489\\,\\text{€}$. Sähkö maksaa siirtoineen $17\\,\\text{snt/kWh}$. Luvut ovat esimerkkiaineistoa.\n\nOletetaan, että hinta ja kulutukset pysyvät vakioina ja vanha laite viedään pois ilman myyntituloa.\n\na) Laske uuden laitteen vuotuinen energiansäästö kilowattitunteina ja euroina.\n\nb) Laske takaisinmaksuaika eli aika, jossa säästö on yhtä suuri kuin uuden laitteen hinta.\n\nc) Uuden laitteen käyttöikä on $15\\,\\text{a}$. Laske, kuinka paljon rahaa uusi laite säästää käyttöikänsä aikana ostohinnan jälkeen, ja perustele, onko vaihto järkevä. Mainitse yksi tekijä, jota malli ei ota huomioon.\n\nVastauskenttään tulee kohdan b) tulos vuosina.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 12.957,
+      "unit": "a",
       "tolerance": 0.02
     }
   ]
