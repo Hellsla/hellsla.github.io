@@ -193,3 +193,13 @@ b) Puuta kuluu noin $940\,\text{kg}$ enemmän kuin pellettejä, kaksi merkitsev�
 c) Pellettien kulutus nousee hyötysuhteella $0{,}75$ määrään $2800\,\text{kg}$, eli $330\,\text{kg}$ enemmän: kun hyötysuhde laskee, osa vapautuvasta energiasta menee häviöihin ja samaan hyötyenergiaan tarvitaan enemmän polttoainetta.
 d) Öljyä kuluu vähiten, koska sen lämpöarvo on yli kaksi kertaa niin suuri kuin puulla ja pelleteillä ($43 : 15 = 2{,}9$), kun taas hyötysuhteet ovat samaa suuruusluokkaa ($0{,}90$ ja $0{,}70$); lämpöarvo ratkaisee massan suuruusluokan.
 **Järkevyys:** Arvio ilman häviöitä: puuta $36\,000 : 15 = 2400\,\text{kg}$ ja pellettejä $36\,000 : 17 = 2120\,\text{kg}$. Hyötysuhteet suurentavat nämä arvoihin $2400 : 0{,}70 = 3430\,\text{kg}$ ja $2120 : 0{,}85 = 2490\,\text{kg}$, mikä sopii tulokseen. Pellettikattilan massa kasvaa $2824\,\text{kg} : 2491\,\text{kg} = 1{,}13$-kertaiseksi, ja $0{,}85 : 0{,}75 = 1{,}13$, kuten pitää.
+
+## fy2-5-L2-08
+**Kysytty:** polttoaineiden järjestys vapautuvan energian $E$ mukaan pienimmästä suurimpaan
+**Periaate:** Jokaisesta polttoaineesta vapautuva energia on $E = Hm$, kun massa on kilogrammoina. Järjestys ei ole sama kuin massan eikä lämpöarvon järjestys, koska energiaan vaikuttavat molemmat.
+**Mallivastaus:** Muunnetaan ensin massat kilogrammoiksi: $1500\,\text{g} = 1{,}5\,\text{kg}$ ja $0{,}0040\,\text{t} = 4{,}0\,\text{kg}$. Sitten lasketaan energiat:
+Bensiini: $E = 43\,\tfrac{\text{MJ}}{\text{kg}} \cdot 1{,}5\,\text{kg} = 64{,}5\,\text{MJ}$
+Polttopuu: $E = 15\,\tfrac{\text{MJ}}{\text{kg}} \cdot 5{,}0\,\text{kg} = 75\,\text{MJ}$
+Kivihiili: $E = 26\,\tfrac{\text{MJ}}{\text{kg}} \cdot 4{,}0\,\text{kg} = 104\,\text{MJ}$
+Jyrsinturve: $E = 10\,\tfrac{\text{MJ}}{\text{kg}} \cdot 12\,\text{kg} = 120\,\text{MJ}$
+Pienimmästä suurimpaan: bensiini, polttopuu, kivihiili, jyrsinturve. Massan mukaan järjestys olisi bensiini ($1{,}5\,\text{kg}$), kivihiili ($4{,}0\,\text{kg}$), polttopuu ($5{,}0\,\text{kg}$), jyrsinturve ($12\,\text{kg}$), joten polttopuu ja kivihiili vaihtavat paikkaa: kivihiilen suurempi lämpöarvo korvaa pienemmän massan. Arvio: bensiini on lähes $40\,\text{MJ}$ kilogrammaa kohti mutta vain pieni määrä, joten sen energia jää pienimmäksi, mikä sopii.

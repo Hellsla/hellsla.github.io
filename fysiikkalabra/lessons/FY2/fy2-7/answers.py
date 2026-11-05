@@ -22,7 +22,7 @@ a["fy2-7-L2-04"] = P_send * 24                        # E = P t = 50,0 kW · 24 
 a["fy2-7-L3-01"] = round(600 / 0.91 - 600 / 0.94)     # needs 600 MWh; loss 9,0 % vs 6,0 %: 659,3 - 638,3 = 21,0 MWh saved
 a["fy2-7-L3-02"] = 500 * 0.910 - 520 * 0.850          # A: 500 MWh at 91,0 % -> 455,0; B: 520 MWh at 85,0 % -> 442,0; A delivers 13,0 MWh more
 a["fy2-7-L3-03"] = round(150 * 8760 / 1000 / 20)      # loss 150 kW for 8760 h = 1314 MWh; one house 20 MWh/year: 65,7 -> 66 houses
-# Exercise bank additions (L1-06 and L2-07 are multiple choice: no number)
+# Exercise bank additions (L1-06, L2-07 and L2-08 are multiple choice: no number)
 a["fy2-7-L1-07"] = (250 - 238) / 250 * 100            # sent 250 MWh, delivered 238 MWh: loss 12 MWh = 4,8 %
 a["fy2-7-L1-08"] = 800 - 728                          # power sent 800 kW, delivered 728 kW: loss power 72 kW
 a["fy2-7-L2-05"] = (2650 - 2395) / 2650 * 100         # sent 820+760+640+430 = 2650 MWh, delivered 745+692+577+381 = 2395 MWh: 255/2650 = 9,62 %

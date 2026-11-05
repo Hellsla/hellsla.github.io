@@ -234,6 +234,53 @@
      "correct": true
     }
    ]
+  },
+  {
+   "id": "fy2-7-L2-08",
+   "level": 2,
+   "text": "Esimerkkitilanteessa sähköverkkoon syötetään viikossa $1000\\,\\text{MWh}$ sähköenergiaa ja siellä häviää $4{,}0\\,\\%$ lähtevästä energiasta.\n\nSamalla alueella kaukolämpöverkkoon syötetään viikossa $300\\,\\text{MWh}$ lämpöenergiaa ja siellä häviää $9{,}0\\,\\%$ lähtevästä energiasta.\n\nKummassa verkossa häviää viikossa enemmän energiaa?",
+   "kind": [
+    "concept",
+    "reasoning"
+   ],
+   "answer": "Sähköverkossa",
+   "unit": "",
+   "tolerance": 0.02,
+   "choices": [
+    {
+     "text": "Kaukolämpöverkossa",
+     "feedback": "Tämä vertaa vain häviöprosentteja. Prosentti kertoo osuuden lähtevästä energiasta, mutta häviävä energia riippuu myös siitä, kuinka paljon energiaa verkkoon lähtee."
+    },
+    {
+     "text": "Sähköverkossa",
+     "feedback": "Oikein: sähköverkkoon lähtee yli kolminkertainen määrä energiaa, joten pienempikin osuus on energiana suurempi.",
+     "correct": true
+    },
+    {
+     "text": "Yhtä paljon molemmissa",
+     "feedback": "Häviöt ovat samat vain, jos osuus kertaa lähtevä energia on sama. Tässä sekä osuudet että lähtevät energiat ovat eri suuria, joten tulokset eroavat."
+    }
+   ],
+   "reason_prompt": "Mikä perustelu selittää vastauksesi?",
+   "reasons": [
+    {
+     "text": "Kaukolämpöverkon häviöprosentti on suurempi, joten sen häviö on aina suurempi.",
+     "feedback": "Tämä on yleinen virhekäsitys: suuri prosentti ei yksin ratkaise. Häviö on osuus lähtevästä energiasta, joten myös lähtevän energian määrä vaikuttaa."
+    },
+    {
+     "text": "Häviö on osuus lähtevästä energiasta, joten verkko, johon lähtee paljon enemmän energiaa, voi menettää enemmän pienemmällä prosentilla.",
+     "feedback": "Oikein: häviö on osuus kertaa lähtevä energia, joten lähtevän energian määrä ja osuus ratkaisevat yhdessä.",
+     "correct": true
+    },
+    {
+     "text": "Sähköverkossa on pitkät voimalinjat, ja pitkillä linjoilla häviää aina enemmän energiaa kuin lyhyillä putkilla.",
+     "feedback": "Tehtävässä ei kerrota matkoista, eikä pituus yksin ratkaise. Tehtävän tiedoista häviö saadaan laskemalla lähtevästä energiasta ja osuudesta."
+    },
+    {
+     "text": "Sähköenergia siirtyy valon nopeudella, joten siinä häviää eniten.",
+     "feedback": "Sähkö kulkee todella nopeasti, mutta nopeus ei selitä häviön suuruutta. Häviö syntyy lämpenemisestä, ja sen määrän saa osuudesta ja lähtevästä energiasta."
+    }
+   ]
   }
  ],
  "level3": [

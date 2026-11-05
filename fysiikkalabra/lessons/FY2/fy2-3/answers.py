@@ -31,4 +31,5 @@ cons = [8400, 9100, 9900, 10400, 10600, 10300, 9800, 9600]; prod = [8900, 8900, 
 a["fy2-3-L3-04"] = sum(c - p for c, p in zip(cons, prod) if c > p) * 1.0 / 1000   # 200+600+800+800+400 = 2800 MWh = 2,8 GWh
 run = 11.5 + 12.0 + 11.5 + 12.0; off = 18.0 + 18.5 + 17.5 + 18.0
 a["fy2-3-L3-05"] = (100 * run / (run + off) / 1000 * YEAR_H - 130) * PRICE   # 39,5 W; 346 kWh; (346 - 130) kWh · 0,20 €/kWh = 43,2 €
+# fy2-3-L2-08 is multiple choice: no number (P doubles: 6,0 kWh : 1,5 h = 4,0 kW vs 6,0 kWh : 3,0 h = 2,0 kW)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

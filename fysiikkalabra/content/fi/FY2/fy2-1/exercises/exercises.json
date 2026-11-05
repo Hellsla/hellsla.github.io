@@ -113,6 +113,44 @@
       "answer": "Sähköenergia → (laturissa) sähköenergia ja lämpöenergia → akussa kemiallinen energia; osa muuttuu lämpöenergiaksi, joten laturi lämpenee, eikä energia katoa",
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-1-L1-09",
+      "level": 1,
+      "text": "Pallo pudotetaan levosta metrin korkeudelta kovalle lattialle. Se pomppii useita kertoja, jokainen pomppu on edellistä matalampi, ja lopulta pallo jää lepoon lattialle. Pallon, lattian ja ilman oletetaan muodostavan eristetyn systeemin. Päättele, mitkä väitteet tilanteesta ovat tosia ja mitkä epätosia.",
+      "kind": [
+        "concept"
+      ],
+      "answer": "1 tosi, 2 epätosi, 3 tosi, 4 epätosi, 5 tosi",
+      "unit": "",
+      "tolerance": 0.02,
+      "statements": [
+        {
+          "text": "Pallon mekaaninen energia on ensimmäisen pomppauksen jälkeen pienempi kuin pudotushetkellä.",
+          "true": true,
+          "feedback": "Oikein: osa pallon potentiaalienergiasta muuttui törmäyksessä ja ilmanvastuksen takia lämpöenergiaksi ja ääneksi, joten mekaaninen energia $E_\\text{p} + E_\\text{k}$ pieneni."
+        },
+        {
+          "text": "Pallon energia on kulunut loppuun, kun pallo on pysähtynyt lattialle.",
+          "true": false,
+          "feedback": "Väärin: virhekäsitys \"energia kuluu loppuun\". Energia ei häviä, vaan se on muuttunut muotoon, jota on vaikea hyödyntää: pallo, lattia ja ilma ovat lämmenneet hieman."
+        },
+        {
+          "text": "Pomppujen aikana pallon, lattian ja ilman yhteenlaskettu energia pysyy samana.",
+          "true": true,
+          "feedback": "Oikein: pallo, lattia ja ilma muodostavat likimain eristetyn systeemin, joten kaikkien energialajien summa on sama alussa ja lopussa: $E_\\text{alussa} = E_\\text{lopussa}$."
+        },
+        {
+          "text": "Kun pallo osuu lattiaan, osa energiasta muuttuu lämpöenergiaksi ja ääneksi, ja siksi energiaa on yhteensä vähemmän kuin alussa.",
+          "true": false,
+          "feedback": "Väärin: lämpöenergia ja ääni kuuluvat energian kokonaissummaan. Mekaaninen energia vähenee, mutta kokonaisenergia ei, koska se vain muuttaa muotoa."
+        },
+        {
+          "text": "Kun pallo on pysähtynyt, sen alun potentiaalienergia on ympäristössä lämpöenergiana.",
+          "true": true,
+          "feedback": "Oikein: potentiaalienergia muuttui pomppujen aikana liike-energian kautta lämpöenergiaksi, joka hajaantui palloon, lattiaan ja ilmaan. Sitä ei voi enää helposti käyttää pallon nostamiseen."
+        }
+      ]
     }
   ],
   "level2": [

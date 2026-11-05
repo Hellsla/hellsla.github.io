@@ -59,6 +59,11 @@
 **Periaate:** Energia ei synny eikä katoa, vaan muuttaa muotoa: $E_\text{alussa} = E_\text{lopussa}$. Jokaisessa muutoksessa osa energiasta muuttuu lämpöenergiaksi, joka siirtyy lämpönä ympäristöön.
 **Mallivastaus:** Pistorasiasta tulee sähköenergiaa. Laturi muuttaa sen puhelimen akulle sopivaksi sähköenergiaksi, ja akussa sähköenergia varastoituu kemialliseksi energiaksi. Ketju on siis sähköenergia → sähköenergia → kemiallinen energia. Muutos ei ole täydellinen: osa pistorasiasta tulevasta sähköenergiasta muuttuu laturissa lämpöenergiaksi, ja siksi laturi lämpenee ja lämpöä siirtyy ympäristöön. Energian säilymislain mukaan pistorasiasta otettu energia on yhtä suuri kuin akkuun varastoitunut kemiallinen energia ja lämpöenergia yhteensä, joten energiaa ei ole kadonnut. Lämpöenergiaa ei kuitenkaan voi enää käyttää puhelimen lataamiseen.
 
+## fy2-1-L1-09
+**Kysytty:** mitkä väitteistä pomppivan pallon energiasta ovat tosia ja mitkä epätosia
+**Periaate:** Energiaa ei synny eikä katoa, vaan se muuttaa muotoa: eristetyssä systeemissä $E_\text{alussa} = E_\text{lopussa}$. Summaan kuuluvat kaikki energialajit, myös lämpöenergia. Törmäyksessä ja ilmanvastuksen takia mekaanista energiaa muuttuu lämpöenergiaksi ja ääneksi.
+**Mallivastaus:** Väitteet 1, 3 ja 5 ovat tosia. Mekaaninen energia $E_\text{p} + E_\text{k}$ pienenee jokaisessa pompussa, mutta pallon, lattian ja ilman kokonaisenergia pysyy samana. Lopussa pallolla ei ole liike-energiaa eikä potentiaalienergiaa pudotuskorkeuden verran, ja sama energia on lämpöenergiana pallossa, lattiassa ja ilmassa. Väitteet 2 ja 4 ovat epätosia: energia ei kulu loppuun, ja lämpöenergia on osa kokonaisenergiaa, joten kokonaisenergia ei vähene.
+
 ## fy2-1-L2-01
 **Annettu:** akusta vapautuva kemiallinen energia $E_\text{kem} = 3{,}00\,\text{kJ}$, potkulaudan ja kuljettajan liike-energia $E_\text{k} = 2150\,\text{J}$
 **Kysytty:** lämpöenergiaksi muuttuva energia $E_\text{lämpö}$ yksikössä $\text{J}$

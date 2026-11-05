@@ -258,6 +258,76 @@
           "feedback": "Yksikkö $\\text{g/kWh} \\cdot \\text{kWh}$ antaa grammat, ei milligrammoja. Tulos $1640\\,\\text{g}$ on $1{,}6\\,\\text{kg}$."
         }
       ]
+    },
+    {
+      "id": "fy2-8-L2-08",
+      "level": 2,
+      "text": "Taulukossa on esimerkkivoimalan vuosittainen sähköntuotanto $E$ ja sen elinkaaren hiilidioksidiekvivalenttipäästö $m$ (esimerkkiaineisto, ei tilasto). Jokaisen vuoden päästöarvon epävarmuus on $\\Delta m = 10\\,\\text{kt}$. Minkä seuraavista päätelmistä taulukon aineisto tukee?",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": "Päästö oli vuonna $2024$ pienempi kuin vuonna $2020$, koska ero $100\\,\\text{kt}$ on selvästi suurempi kuin epävarmuus $10\\,\\text{kt}$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Esimerkkivoimalan tuotanto ja päästö (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{a})$",
+          "$E\\,(\\text{GWh})$",
+          "$m\\,(\\text{kt})$"
+        ],
+        "rows": [
+          [
+            "2020",
+            "1000",
+            "520"
+          ],
+          [
+            "2021",
+            "1020",
+            "515"
+          ],
+          [
+            "2022",
+            "1010",
+            "470"
+          ],
+          [
+            "2023",
+            "1030",
+            "468"
+          ],
+          [
+            "2024",
+            "1000",
+            "420"
+          ]
+        ]
+      },
+      "choices": [
+        {
+          "text": "Päästö pieneni jo vuodesta $2020$ vuoteen $2021$, koska luku $515\\,\\text{kt}$ on pienempi kuin $520\\,\\text{kt}$.",
+          "feedback": "Epävarmuuden sivuuttaminen. Ero $520\\,\\text{kt} - 515\\,\\text{kt} = 5\\,\\text{kt}$ on pienempi kuin epävarmuus $10\\,\\text{kt}$, joten se voi johtua pelkästä mittaus- ja laskentavaihtelusta. Tästä parista pienenemistä ei voi osoittaa."
+        },
+        {
+          "text": "Taulukko todistaa, että päästö pieneni, koska voimala siirtyi kivihiilestä biomassaan.",
+          "feedback": "Syyn ylitulkinta. Taulukossa on vain tuotanto ja päästö, ei tietoa polttoaineesta. Aineisto näyttää, että päästö pieneni, mutta ei sitä, miksi: syyksi kelpaisi yhtä hyvin esimerkiksi tehokkaampi laitteisto tai jokin muu muutos."
+        },
+        {
+          "text": "Päästö oli vuonna $2024$ pienempi kuin vuonna $2020$, koska ero $100\\,\\text{kt}$ on selvästi suurempi kuin epävarmuus $10\\,\\text{kt}$.",
+          "feedback": "Oikein: vuosien $2020$ ja $2024$ päästöjen ero on $520\\,\\text{kt} - 420\\,\\text{kt} = 100\\,\\text{kt}$, kymmenkertainen epävarmuuteen $10\\,\\text{kt}$ nähden. Pieneneminen on siis todennäköisesti todellista, vaikka yksittäisten vuosien pienet erot jäisivät epävarmuuden sisään.",
+          "correct": true
+        },
+        {
+          "text": "Päästö on vuonna $2034$ enää $170\\,\\text{kt}$, koska pieneneminen jatkuu samaa vauhtia kuin vuosina $2020$–$2024$.",
+          "feedback": "Liian pitkä ekstrapolointi. Aineisto kattaa vain viisi vuotta, ja ennuste ulottuisi kymmenen vuotta sen ulkopuolelle. Päästöjen kehitys voi muuttua, esimerkiksi jos voimalan tuotantotapa tai käyttö muuttuu, joten suora ei perustele näin pitkää ennustetta."
+        },
+        {
+          "text": "Päästö ei muuttunut, koska sähköntuotanto oli vuosina $2020$ ja $2024$ sama, $1000\\,\\text{GWh}$.",
+          "feedback": "Väärän sarakkeen lukeminen. Luku $1000\\,\\text{GWh}$ kuuluu sarakkeeseen $E$, joka kertoo tuotetun energian. Päästö on sarakkeessa $m$, ja siinä arvo pieneni $520\\,\\text{kt}$:sta $420\\,\\text{kt}$:iin. Sama tuotanto ja pienempi päästö tarkoittavat pienempää päästöä tuotettua energiaa kohti."
+        }
+      ]
     }
   ],
   "level3": [
