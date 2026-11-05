@@ -203,7 +203,7 @@
     "stage_ennusta": "Predict",
     "stage_tutki": "Investigate",
     "stage_selita": "Theory",
-    "stage_sovella": "Practice",
+    "stage_sovella": "Examples",
     "stage_tarkista": "Check your understanding",
     "nav_tarkista": "Check",
     "lead_sovella": "First follow the worked example. Then practise the same yourself: the hints help if you get stuck.",

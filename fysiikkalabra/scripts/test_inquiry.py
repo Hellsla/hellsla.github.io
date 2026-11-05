@@ -107,7 +107,7 @@ def page_form(pg, b, url, acts, page):
         if here: want += [inquiry.NAV.get(sid, t)]          # the exit ticket has no link of its own: it opens Tarkista osaamisesi (teacher 2026-11-04)
     want.append(inquiry.EXERCISES_TITLE)
     check("nav names the stages and the exercises (no link of their own for the exit ticket or the concept cards)", toc == want, f"{toc} != {want}")
-    check("the concept cards close Harjoittele (teacher 2026-11-05)", pg.evaluate("(() => { const k = document.getElementById('kertaa-kasitteet'); if (!k) return true; const s = k.closest('section.stage'); return !!s && (s.id === 'sovella' || !document.getElementById('sovella')) && s.lastElementChild === k; })()"))
+    check("the concept cards close Esimerkit (teacher 2026-11-05)", pg.evaluate("(() => { const k = document.getElementById('kertaa-kasitteet'); if (!k) return true; const s = k.closest('section.stage'); return !!s && (s.id === 'sovella' || !document.getElementById('sovella')) && s.lastElementChild === k; })()"))
     check("the exit ticket opens Tarkista osaamisesi, before its checks", pg.evaluate("(() => { const x = document.getElementById('exit'); if (!x) return true; const a = x.closest('.activity'), s = x.closest('#tarkista'); return !!s && s.querySelector('.activity') === a; })()"))
     order = pg.evaluate("[...document.querySelectorAll('article > section, article > .intro')].map((e) => e.id || e.className)")
     order = [o for o in order if o != "credits"]          # the photo credits (build.photo_credits) follow as the page's colophon

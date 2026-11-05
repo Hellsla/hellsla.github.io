@@ -264,13 +264,13 @@ for lang in i18n.languages():
             sec = re.search(r'<div class="activity act-concepts kc-section" id="kertaa-kasitteet".*?</script></div>', page, re.S).group(0)
             if not all(f'data-id="{c["id"]}"' in sec for c in cards): wrong.append(f"{l['id']}: a card missing from the list")
             hj = re.search(r'<section class="stage" id="sovella".*?</section>', page, re.S)
-            if hj and not hj.group(0).endswith(sec + "</section>"): wrong.append(f"{l['id']}: not the last part of Harjoittele")
+            if hj and not hj.group(0).endswith(sec + "</section>"): wrong.append(f"{l['id']}: not the last part of Esimerkit")
             toc = re.search(r'<nav class="toc".*?</nav>', page, re.S)
             if not toc or 'href="#kertaa-kasitteet"' in toc.group(0): wrong.append(f"{l['id']}: a Käsitteet stage of its own in the navigation")
             sel = re.search(r'<section class="stage" id="selita".*?</section>', page, re.S)
             if page.count("data-kortti=") != (sel.group(0).count("data-kortti=") if sel else 0): wrong.append(f"{l['id']}: a card term outside Teoria")
             if f'href="kasitteet.html?moduuli={code}"' not in sec: wrong.append(f"{l['id']}: no link to the module's cards")
-    expect(f"{lang}: exactly the chapters with cards have 'Kertaa luvun käsitteet' as the last part of Harjoittele, listed, not in the navigation (teacher 2026-11-05), terms only in Teoria", not wrong, wrong[:5])
+    expect(f"{lang}: exactly the chapters with cards have 'Kertaa luvun käsitteet' as the last part of Esimerkit, listed, not in the navigation (teacher 2026-11-05), terms only in Teoria", not wrong, wrong[:5])
 
 JS = """() => { const R = (e) => e.getBoundingClientRect(), out = [];
   if (document.scrollingElement.scrollWidth > innerWidth) out.push('horizontal scroll ' + document.scrollingElement.scrollWidth);

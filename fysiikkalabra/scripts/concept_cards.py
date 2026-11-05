@@ -17,7 +17,7 @@ without dollars and `kaava_puhe` how it reads aloud (screen readers, aria-label)
 
 Where the cards appear (one component, templates/kortit.js; never before the Teoriatiivistelmä):
   - a lesson: in Teoriatiivistelmä every bold term that names a card (mark_terms) opens a popover, and after the
-    Tiivistelmä list a row of chips "Tämän luvun käsitteet (n)"; as the last part of Harjoittele "Kertaa luvun
+    Tiivistelmä list a row of chips "Tämän luvun käsitteet (n)"; as the last part of Esimerkit "Kertaa luvun
     käsitteet" with the chapter's cards (lesson_section; without JavaScript a definition list), no stage of its own
     in the step navigation (teacher 2026-11-05);
   - a module page: "Kertauspakkasi" (module_section), the cards a student marked "Kertaa myöhemmin";
@@ -137,7 +137,7 @@ def chips(code, lid, T, lang):
 
 
 def lesson_section(code, lid, T, lang, titles):
-    """The last part of the Harjoittele stage (teacher 2026-11-05: the cards are practice, no stage of their own in the
+    """The last part of the Esimerkit stage (teacher 2026-11-05: the cards are practice, no stage of their own in the
     navigation; inquiry.render puts it there), or "" when the chapter has no cards in this language."""
     cards = chapter_cards(code, lid, lang)
     if not cards: return ""
