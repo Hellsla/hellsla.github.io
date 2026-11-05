@@ -110,6 +110,42 @@
       "answer": 670,
       "unit": "N",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-1-L1-09",
+      "level": 1,
+      "text": "Kappale, jonka massa on $0{,}50\\,\\text{kg}$, riippuu levossa voimamittarin koukussa Maan pinnalla. Voimamittari näyttää $4{,}9\\,\\text{N}$.\n\nKuvioissa $G$ on kappaleen paino, $F$ voimamittarin koukun voima kappaleeseen ja $F_\\text{k}$ kappaleen voima voimamittariin. Kaikki kuviot on piirretty samassa mittakaavassa.\n\nMikä voimakuvio esittää oikein ne voimat, jotka vaikuttavat kappaleeseen?",
+      "kind": [
+        "concept",
+        "model"
+      ],
+      "fbd": "select",
+      "answer": "Voimakuvio B",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Voimakuvio A",
+          "figure": "fy3-1/pick-weight-only",
+          "feedback": "Tästä puuttuu voimamittarin voima $F$. Mittari ei vain näytä lukemaa: kappale on vuorovaikutuksessa myös koukun kanssa, ja venynyt jousi vetää kappaletta ylöspäin voimalla $4{,}9\\,\\text{N}$."
+        },
+        {
+          "text": "Voimakuvio B",
+          "figure": "fy3-1/pick-rest",
+          "correct": true,
+          "feedback": "Oikein: Maa vetää kappaletta alaspäin voimalla $G$ ja koukku ylöspäin voimalla $F$. Paino on $G = 0{,}50\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2$, eli $G \\approx 4{,}9\\,\\text{N}$, sama kuin lukema, joten nuolet ovat yhtä pitkät."
+        },
+        {
+          "text": "Voimakuvio C",
+          "figure": "fy3-1/pick-long-pull",
+          "feedback": "Nuoli $F$ on tässä kaksi kertaa niin pitkä kuin $G$. Ajatus, että mittarin pitää vetää painoa enemmän pitääkseen kappaleen ylhäällä, ei pidä: mittari näyttää $4{,}9\\,\\text{N}$, saman kuin paino."
+        },
+        {
+          "text": "Voimakuvio D",
+          "figure": "fy3-1/pick-extra",
+          "feedback": "Voima $F_\\text{k}$ on kappaleen voima mittariin, ja se vaikuttaa mittariin eikä kappaleeseen. Kuvioon piirretään vain kappaleeseen vaikuttavat voimat, tässä $G$ ja $F$."
+        }
+      ]
     }
   ],
   "level2": [

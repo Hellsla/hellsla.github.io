@@ -189,3 +189,18 @@
 **Vastaus:** $16\,{}^\circ\text{C}$ (laskettuna $16{,}3\,{}^\circ\text{C}$), kaksi merkitsevää numeroa, koska lineaarinen interpolointi kaarevalla taulukkokäyrällä rajoittaa tuloksen noin $\pm 0{,}5\,\text{K}$:n tarkkuuteen.
 **Järkevyys:** Lämpötila $16\,{}^\circ\text{C}$ on lähellä maapallon todellista keskilämpötilaa noin $+15\,{}^\circ\text{C}$. Teho $398{,}3\,\tfrac{\text{W}}{\text{m}^2}$ on suurempi kuin $239\,\tfrac{\text{W}}{\text{m}^2}$, kuten pitää, koska maanpinta saa ilmakehältä lisää energiaa. Rajatapaus $f = 0$ antaa $S = 239\,\tfrac{\text{W}}{\text{m}^2}$, ja sitä vastaa taulukosta noin $255\,\text{K}$.
 **Mallivastaus c):** Ilman ilmakehää maanpinta säteilisi vain imemänsä tehon $239\,\tfrac{\text{W}}{\text{m}^2}$, jota vastaa taulukosta $255\,\text{K}$ eli $255 - 273{,}15 \approx -18\,{}^\circ\text{C}$. Malli antaa ilmakehällä lämpötilan $16{,}3\,{}^\circ\text{C}$, eli noin $34\,\text{K}$ lämpimämmän, joten kasvihuoneilmiö nostaa maanpinnan lämpötilaa tämän verran. Malli on silti karkea: oikea ilmakehä imee Auringon säteilyä, osuus $0{,}80$ vaihtelee aallonpituuden mukaan, ja pilvet, konvektio ja veden haihtuminen siirtävät energiaa maanpinnalta ylös muullakin tavalla kuin säteilemällä.
+
+## fy3-12-L2-08
+**Kysytty:** rakennusosien läpi johtuvat lämpötehot $P$ ja niiden järjestys pienimmästä suurimpaan.
+**Periaate:** Kun lämpötilat rakennusosan molemmilla puolilla pysyvät vakioina, läpi johtuva lämpöteho on $P = UA\Delta T$. Lämpötilaero on kaikilla osilla sama $30\,\text{K}$, mutta U-arvo ja pinta-ala vaihtelevat, joten järjestys selviää vasta, kun kummatkin otetaan mukaan.
+**Mallivastaus:** Lasketaan ensin kunkin osan $UA$ ja sitten teho:
+
+Ovi: $UA = 2{,}0\,\text{W/K}$, $P = 2{,}0\,\text{W/K} \cdot 30\,\text{K} = 60\,\text{W}$
+
+Yläpohja: $UA = 7{,}2\,\text{W/K}$, $P = 7{,}2\,\text{W/K} \cdot 30\,\text{K} = 216\,\text{W}$
+
+Ikkunat: $UA = 9{,}6\,\text{W/K}$, $P = 9{,}6\,\text{W/K} \cdot 30\,\text{K} = 288\,\text{W}$
+
+Seinä: $UA = 15{,}3\,\text{W/K}$, $P = 15{,}3\,\text{W/K} \cdot 30\,\text{K} = 459\,\text{W}$
+
+Pienimmästä suurimpaan: ovi, yläpohja, ikkunat, seinä. Pelkkä U-arvo antaisi väärän järjestyksen, koska ikkunoilla ja ovella U-arvo on suuri mutta pinta-ala pieni, ja pelkkä pinta-ala antaisi sen myös väärin, koska seinän U-arvo on pieni mutta pinta-ala suuri. Tulokset annetaan kahdella merkitsevällä numerolla, koska U-arvot on annettu kahdella: noin $60\,\text{W}$, $220\,\text{W}$, $290\,\text{W}$ ja $460\,\text{W}$. Arvio: seinän $UA \approx 0{,}2 \cdot 90 = 18\,\text{W/K}$ on suurin ja oven $2\,\text{W/K}$ pienin, mikä sopii.

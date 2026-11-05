@@ -266,6 +266,41 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy3-9-L2-08",
+      "level": 2,
+      "text": "Kertakäyttöruiskussa on $40\\,\\text{ml}$ ilmaa $100\\,\\text{kPa}$:n paineessa. Ruiskun kärki suljetaan, ja mäntää työnnetään hitaasti, kunnes ilman tilavuus on $10\\,\\text{ml}$. Ilman lämpötila pysyy koko ajan samana.\n\nMikä kuvaajista esittää ilman paineen $p$ tilavuuden $V$ funktiona puristuksen aikana?",
+      "kind": [
+        "graph",
+        "concept"
+      ],
+      "answer": "Kuvaaja B",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Kuvaaja A",
+          "figure": "fy3-9/pick-line",
+          "feedback": "Suora kulkee oikeiden päätepisteiden kautta, mutta tilavuudella $20\\,\\text{ml}$ se näyttää $300\\,\\text{kPa}$. Kääntäen verrannollisuus ei ole laskeva suora: puolet tilavuudesta antaa kaksinkertaisen paineen $200\\,\\text{kPa}$."
+        },
+        {
+          "text": "Kuvaaja B",
+          "figure": "fy3-9/pick-boyle",
+          "correct": true,
+          "feedback": "Oikein: tulo $pV = 100\\,\\text{kPa} \\cdot 40\\,\\text{ml}$ pysyy vakiona. Tilavuudella $20\\,\\text{ml}$ paine on $200\\,\\text{kPa}$ ja tilavuudella $10\\,\\text{ml}$ $400\\,\\text{kPa}$, joten kuvaaja on laskeva kaari."
+        },
+        {
+          "text": "Kuvaaja C",
+          "figure": "fy3-9/pick-flat",
+          "feedback": "Tässä paine pysyy arvossa $100\\,\\text{kPa}$. Vakiolämpötila ei tarkoita vakiopainetta: kun sama ilma puristetaan pienempään tilaan, hiukkaset törmäävät seinämiin useammin ja paine kasvaa."
+        },
+        {
+          "text": "Kuvaaja D",
+          "figure": "fy3-9/pick-rising",
+          "feedback": "Tässä paine pienenee tilavuuden mukana, ikään kuin $p$ olisi suoraan verrannollinen tilavuuteen $V$. Boylen laissa riippuvuus on käänteinen: kun tilavuus pienenee, paine kasvaa."
+        }
+      ]
     }
   ],
   "level3": [

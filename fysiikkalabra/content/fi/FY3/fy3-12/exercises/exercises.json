@@ -268,6 +268,33 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy3-12-L2-08",
+      "level": 2,
+      "text": "Esimerkkirakennuksen sisällä on $21\\,{}^\\circ\\text{C}$ ja ulkona $-9\\,{}^\\circ\\text{C}$, joten lämpötilaero on $\\Delta T = 30\\,\\text{K}$ jokaisen rakennusosan yli ja lämpötilat pysyvät vakioina. Rakennusosien U-arvot ja pinta-alat ovat esimerkkiarvoja.\n\nOvi: $U = 1{,}0\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$, $A = 2{,}0\\,\\text{m}^2$.\n\nSeinä: $U = 0{,}17\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$, $A = 90\\,\\text{m}^2$.\n\nIkkunat: $U = 1{,}2\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$, $A = 8{,}0\\,\\text{m}^2$.\n\nYläpohja: $U = 0{,}09\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$, $A = 80\\,\\text{m}^2$.\n\nLaske kunkin rakennusosan läpi johtuva lämpöteho $P$ ja järjestä rakennusosat.",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "prompt": "Järjestä rakennusosat niiden läpi johtuvan lämpötehon $P$ mukaan pienimmästä suurimpaan.",
+      "order": [
+        {
+          "text": "Ovi"
+        },
+        {
+          "text": "Yläpohja"
+        },
+        {
+          "text": "Ikkunat"
+        },
+        {
+          "text": "Seinä"
+        }
+      ],
+      "answer": "Ovi (noin $60\\,\\text{W}$), yläpohja (noin $220\\,\\text{W}$), ikkunat (noin $290\\,\\text{W}$), seinä (noin $460\\,\\text{W}$).",
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level3": [

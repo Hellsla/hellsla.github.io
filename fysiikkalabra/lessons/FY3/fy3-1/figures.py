@@ -1,4 +1,5 @@
-"""Figures of this lesson (scripts/figlib.py); `python scripts/figures.py fy3-1` writes them into lesson.md."""
+"""Figures of this lesson (scripts/figlib.py, scripts/fbd.py); `python scripts/figures.py fy3-1` writes them into lesson.md."""
+from fbd import FBD
 from figlib import Fig, Axes, INK, MUTED, WHITE, RULE, HEAT_LIGHT, HOT, ALUMINIUM, METAL_EDGE, IRON, WATER, COPPER, GRAIN, fi
 import herolib as H
 
@@ -153,11 +154,61 @@ def spring_points():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "scene": scene, "forcemeter": forcemeter, "force-extension": force_extension, "weight-mass": weight_mass, "spring-points": spring_points}
+# Voimakuvion valinta (task fy3-1-L1-09, docs/exercise-types.md type 3): a body of 0,50 kg hangs at rest from a force
+# meter that reads 4,9 N, so its weight G = mg = 4,9 N and the meter's pull F = 4,9 N. Four option diagrams to one
+# scale (14 units per newton); only "pick-rest" is right. FY3 writes forces without the vector overline (FY4 adds it).
+PICK_G, PICK_SCALE, PICK_BODY = 4.9, 14, (150, 206, 120, 70)
+PICK_TOP, PICK_BOTTOM = (150, 206 - 35), (150, 206 + 35)
+
+
+def pick_fbd(fid, label, pull=PICK_G, extra=False, wrong=None):
+    """One option: the hanging body as a rectangle, its weight G from the centre and the meter's pull F from the top face,
+    where the hook is attached; extra adds the body's own pull on the meter, F_k, which acts on the meter, not on the body."""
+    f = Fig(fid, 320, label, width=300)
+    d = FBD(f, scale=PICK_SCALE, body=PICK_BODY, a_dir=(0, 0), wrong=wrong)
+    d.force("G", (0, -PICK_G), PICK_BODY[:2], kind="gravity", tex="G", lab=(-22, 8))
+    if pull:
+        d.force("F", (0, pull), PICK_TOP, kind="tension", rope=(0, 1), tex="F", lab=(22, 4))
+    if extra:
+        d.force("F_k", (0, -PICK_G), (190, PICK_BOTTOM[1]), kind="other", tex=r"F_\text{k}", lab=(28, -30))
+    d.draw()
+    return f.svg()
+
+
+def pick_rest():
+    return pick_fbd("fy31-pick-rest", "Voimakuvio mittakaavassa: kappale suorakulmiona. Kappaleen keskipisteestä alaspäin "
+                    "osoittaa voima G ja yläpinnan keskeltä ylöspäin voima F. Nuolet ovat yhtä pitkät.")
+
+
+def pick_weight_only():
+    return pick_fbd("fy31-pick-weight-only", "Voimakuvio mittakaavassa: kappale suorakulmiona. Kappaleen keskipisteestä "
+                    "alaspäin osoittaa voima G. Muita voimia ei ole piirretty.", pull=0,
+                    wrong="the meter's pull on the body is missing: only the weight is drawn")
+
+
+def pick_long_pull():
+    return pick_fbd("fy31-pick-long-pull", "Voimakuvio mittakaavassa: kappale suorakulmiona. Kappaleen keskipisteestä alaspäin "
+                    "osoittaa voima G ja yläpinnan keskeltä ylöspäin voima F. Nuoli F on kaksi kertaa niin pitkä kuin nuoli G.",
+                    pull=2 * PICK_G, wrong="the meter's pull is drawn twice the weight although the meter reads 4,9 N")
+
+
+def pick_extra():
+    return pick_fbd("fy31-pick-extra", "Voimakuvio mittakaavassa: kappale suorakulmiona. Kappaleen keskipisteestä alaspäin "
+                    "osoittaa voima G, yläpinnan keskeltä ylöspäin voima F ja alapinnasta alaspäin voima F_k. "
+                    "Kaikki kolme nuolta ovat yhtä pitkät.", extra=True,
+                    wrong="an extra force F_k, the body's pull on the meter, acts on the meter, not on the body")
+
+
+FIGURES = {"hero": hero, "scene": scene, "forcemeter": forcemeter, "force-extension": force_extension, "weight-mass": weight_mass, "spring-points": spring_points,
+           "pick-rest": pick_rest, "pick-weight-only": pick_weight_only, "pick-long-pull": pick_long_pull, "pick-extra": pick_extra}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "forcemeter": "safe: double weight, double extension, no values",
     "force-extension": "reveals: the points and x/F = 0,4 cm/N",
     "weight-mass": "reveals: the weights of 100 kg on Earth, Mars and the Moon",
     "spring-points": "safe: five (F, x) calibration points of a spring without the line; the description lists the points",
+    "pick-rest": "reveals: the right option of task fy3-1-L1-09 (a hanging body at rest: G down, the meter's F up, equal)",
+    "pick-weight-only": "safe: a wrong option of task fy3-1-L1-09 (only the weight G, the meter's pull missing)",
+    "pick-long-pull": "safe: a wrong option of task fy3-1-L1-09 (the meter's pull F drawn twice the weight)",
+    "pick-extra": "safe: a wrong option of task fy3-1-L1-09 (an extra F_k, the body's pull on the meter)",
 }

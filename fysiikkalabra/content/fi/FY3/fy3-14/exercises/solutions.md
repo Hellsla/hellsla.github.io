@@ -151,6 +151,28 @@ $$\begin{aligned} T &= \dfrac{4190\,\text{J} + 33\,400\,\text{J} - 42\,000\,\tex
 **Periaate:** Eristetyssä astiassa energia säilyy: veden jäähtyessään luovuttama lämpö kuluu jään lämmittämiseen ja sulattamiseen. Siksi ratkaisevaa on, riittääkö veden luovuttama lämpö kaiken jään lämmittämiseen ja sulattamiseen. Jos riittää, jää sulaa kokonaan, ja muuten jäätä jää jäljelle.
 **Mallivastaus:** Ensin verrataan lämpömääriä: veden jäähtyessään nollaan asteeseen luovuttamaa lämpöä verrataan siihen lämpöön, jonka jään lämmittäminen sulamislämpötilaan ja sen sulattaminen vaativat. Pelkkä massojen vertailu ei riitä, koska sulaminen riippuu energiasta eikä siitä, kumpaa ainetta on enemmän. Lämpötilojen vertailu ei riitä, koska se ei kerro lämmön määrää. Ominaislämpökapasiteettien vertailu ei riitä, koska se kertoo lämpenemisestä eikä sulamisesta.
 
+## fy3-14-L1-09
+**Annettu:** vesi $m_\text{v} = 0{,}25\,\text{kg}$, $T_\text{v} = 18\,{}^\circ\text{C}$; jää $m_\text{j} = 0{,}080\,\text{kg}$, $T_\text{j} = 0\,{}^\circ\text{C}$; $c_\text{v} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ja $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
+**Kysytty:** mitkä väitteistä jään ja veden lopputilanteesta ovat tosia ja mitkä epätosia
+**Periaate:** Eristetyssä astiassa energia säilyy. Ensin verrataan lämpömäärää $Q_\text{v}$, jonka vesi voi luovuttaa jäähtyessään $0\,{}^\circ\text{C}$:seen, siihen lämpömäärään $Q_\text{j}$, jonka jää tarvitsee sulaakseen kokonaan. Jos $Q_\text{v} < Q_\text{j}$, jäätä jää ja lämpötila on $0\,{}^\circ\text{C}$.
+**Mallivastaus:** Veden luovuttama lämpö:
+
+$Q_\text{v} = c_\text{v} m_\text{v} T_\text{v}$
+
+$Q_\text{v} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}25\,\text{kg} \cdot 18\,\text{K}$
+
+$Q_\text{v} = 18\,855\,\text{J} \approx 19\,\text{kJ}$
+
+Jää on jo sulamislämpötilassa, joten sen sulattaminen vaatii:
+
+$Q_\text{j} = s\,m_\text{j}$
+
+$Q_\text{j} = 334\,000\,\tfrac{\text{J}}{\text{kg}} \cdot 0{,}080\,\text{kg}$
+
+$Q_\text{j} = 26\,720\,\text{J} \approx 27\,\text{kJ}$
+
+Väitteet 1, 3 ja 4 ovat tosia. Koska $Q_\text{v} < Q_\text{j}$, kaikki jää ei sula. Sulaneen jään massa on $m_\text{s} = \dfrac{Q_\text{v}}{s}$, eli $m_\text{s} = 0{,}056\,\text{kg}$, ja jäätä jää noin $24\,\text{g}$. Astiassa on jäätä ja vettä yhtä aikaa, joten lämpötila on $0\,{}^\circ\text{C}$. Väite 2 on epätosi: massojen vertailu ei ratkaise sulamista vaan lämpömäärien vertailu. Väite 5 on epätosi: keskiarvo $\tfrac{18 + 0}{2}\,{}^\circ\text{C} = 9\,{}^\circ\text{C}$ unohtaisi sulamislämmön, ja lopputilan lämpötila on $0\,{}^\circ\text{C}$.
+
 ## fy3-14-L2-05
 **Annettu:** teho $P = 150\,\text{W}$, jää lämpötilassa $0\,{}^\circ\text{C}$, suoran pisteet $(0\,\text{s};\ 0\,\text{g})$ ja $(300\,\text{s};\ 133\,\text{g})$; taulukosta vertailuarvo $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
 **Kysytty:** jään ominaissulamislämpö $s$ yksikössä $\tfrac{\text{kJ}}{\text{kg}}$

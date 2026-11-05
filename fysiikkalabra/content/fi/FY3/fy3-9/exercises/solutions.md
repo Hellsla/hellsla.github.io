@@ -254,3 +254,18 @@ h &= \dfrac{399{,}5\,\text{kPa} - 101\,\text{kPa}}{9{,}81\,\tfrac{\text{kPa}}{\t
 **Vastaus:** $h \approx 30\,\text{m}$, kaksi merkitsevää numeroa kuten rajatilavuudessa $1{,}5\,\textsf{l}$. Jos käytetään pintaa vastaavaa tuloa $101\,\text{kPa} \cdot 6{,}0\,\textsf{l} = 606\,\text{kPa}\cdot\textsf{l}$, tulos on $31\,\text{m}$, mikä on saman suuruinen.
 **Mallivastaus c):** Paineen suhde on $399{,}5 : 101 \approx 4{,}0$, eli paine on nelinkertainen pintaan verrattuna. Kolmenkymmenen metrin vesipatsas lisää painetta noin $3 \cdot 101\,\text{kPa}$, ja siihen lisätään vielä ilmanpaine. Tilavuuksien suhde on $6{,}0\,\textsf{l} : 1{,}5\,\textsf{l} = 4{,}0$, eli tilavuus on neljäsosa. Suhteet ovat käänteiset, kuten Boylen laki vaatii.
 **Järkevyys:** Taulukon rivi $h = 20{,}0\,\text{m}$ antaa paineen $297\,\text{kPa}$ eli noin kolminkertaisen ilmanpaineen ja tilavuuden $2{,}0\,\textsf{l}$ eli kolmasosan. Jokainen lisätty $10\,\text{m}$ lisää painetta noin $98\,\text{kPa}$ eli noin ilmanpaineen verran, joten syvyydessä $30\,\text{m}$ paine on noin $4$-kertainen ja tilavuus neljäsosa, $6{,}0\,\textsf{l} : 4 = 1{,}5\,\textsf{l}$. Syvyys $30\,\text{m}$ on taulukon syvimmän rivin $20\,\text{m}$ alapuolella, joten kyseessä on ekstrapolointi, jonka luotettavuus perustuu oletukseen vakiolämpötilasta ja vakioilmamäärästä.
+
+## fy3-9-L2-08
+**Kysytty:** mikä neljästä kuvaajasta esittää ruiskun ilman paineen $p$ tilavuuden $V$ funktiona, kun $40\,\text{ml}$ ilmaa paineessa $100\,\text{kPa}$ puristetaan hitaasti tilavuuteen $10\,\text{ml}$ samassa lämpötilassa.
+**Periaate:** Ruiskun kärki on suljettu, joten ilman määrä ei muutu, ja lämpötila pysyy samana. Tilanmuutos on siis isoterminen, ja Boylen laki pätee: $pV$ on vakio. Paine on kääntäen verrannollinen tilavuuteen, joten $(V, p)$-kuvaaja on laskeva kaari eikä suora.
+**Mallivastaus:** Oikea on kuvaaja B. Boylen laista ratkaistaan paine tilavuudella $V_2$.
+
+$p_1 V_1 = p_2 V_2$, joten $p_2 = \dfrac{p_1 V_1}{V_2}$
+
+$p_2 = \dfrac{100\,\text{kPa} \cdot 40\,\text{ml}}{20\,\text{ml}}$, eli $p_2 = 200\,\text{kPa}$
+
+$p_3 = \dfrac{100\,\text{kPa} \cdot 40\,\text{ml}}{10\,\text{ml}}$, eli $p_3 = 400\,\text{kPa}$
+
+Kuvaaja B kulkee pisteiden $(40\,\text{ml};\ 100\,\text{kPa})$, $(20\,\text{ml};\ 200\,\text{kPa})$ ja $(10\,\text{ml};\ 400\,\text{kPa})$ kautta. Kuvaaja A on laskeva suora: sen päätepisteet ovat oikein, mutta tilavuudella $20\,\text{ml}$ se antaa $300\,\text{kPa}$, koska suorassa paine kasvaisi saman verran jokaista millilitraa kohti. Kuvaajassa C paine pysyy samana, mikä sekoittaa vakiolämpötilan vakiopaineeseen. Kuvaajassa D paine pienenee puristettaessa, ikään kuin paine olisi suoraan verrannollinen tilavuuteen.
+
+**Kuvaajan lukeminen:** Jokaisesta kuvaajasta luetaan paine kolmella tilavuudella: $40\,\text{ml}$, $20\,\text{ml}$ ja $10\,\text{ml}$. Kuvaajat A ja B alkavat ja päättyvät samoihin pisteisiin, joten ne erottaa vasta paine tilavuudella $20\,\text{ml}$: kuvaajassa A se on $300\,\text{kPa}$ ja kuvaajassa B $200\,\text{kPa}$.

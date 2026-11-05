@@ -178,6 +178,20 @@ Pienin massa: $m = \dfrac{486\,000\,\text{J} + 50\,280\,\text{J}}{355\,000\,\tfr
 **Vastaus:** $2{,}9\,\text{h}$, kaksi merkitsevää numeroa kuten arvoissa $0{,}80\,\text{kg}$, $0{,}70\,\text{m}^2$ ja $1{,}4\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$.
 **Järkevyys:** Oppilaan tulos $0{,}25\,\text{h}$ eli noin $15$ minuuttia olisi liian lyhyt: teho $25\,\text{W}$ sulattaa kilogramman jäätä vasta tunneissa. Virheellisen ja oikean tuloksen suhde $\dfrac{2{,}913}{0{,}253} \approx 11{,}5$ on sama kuin lämpötilaerojen suhde $\dfrac{299}{26} \approx 11{,}5$, mikä osoittaa, että koko ero tulee väärästä $\Delta T$:stä. Tulos on saman kokoluokan kuin kappaleen esimerkissä: noin kolme tuntia.
 
+## fy3-16-L2-08
+**Annettu:** ensimmäinen retki $m_1 = 1{,}0\,\text{kg}$, $U_1 = U$, $\Delta T_1 = 20\,\text{K}$; toinen retki $m_2 = 1{,}5\,\text{kg}$, $U_2 = 0{,}5\,U$, $\Delta T_2 = 30\,\text{K}$; pinta-ala $A$ sama
+**Kysytty:** kuinka jään kestoaika $t$ muuttuu ensimmäisestä retkestä toiseen
+**Periaate:** Kun jäätä on, sisällä on $0\,{}^\circ\text{C}$, joten lämpötilaero seinän yli on ulkolämpötila celsiusasteina. Seinän läpi tuleva teho $UA\Delta T$ sulattaa jään: $UA\Delta T\,t = s\,m$, josta $t = \dfrac{s\,m}{UA\Delta T}$. Aika on suoraan verrannollinen jään massaan ja kääntäen verrannollinen U-arvoon ja lämpötilaeroon. Sulamislämpö $s$ ja pinta-ala $A$ ovat samat ja supistuvat suhteesta.
+**Mallivastaus:** Kestoaikojen suhde:
+
+$\dfrac{t_2}{t_1} = \dfrac{m_2}{m_1} \cdot \dfrac{U_1}{U_2} \cdot \dfrac{\Delta T_1}{\Delta T_2}$
+
+$\dfrac{t_2}{t_1} = \dfrac{1{,}5}{1{,}0} \cdot \dfrac{U}{0{,}5\,U} \cdot \dfrac{20}{30}$
+
+$\dfrac{t_2}{t_1} = 1{,}5 \cdot 2 \cdot \dfrac{2}{3} = 2$
+
+Kestoaika kasvaa kaksinkertaiseksi. Massa ja lämpötilaero kasvavat molemmat kertoimella $1{,}5$ ja kumoavat toisensa, joten muutoksen aiheuttaa U-arvon puolittuminen. Jos U-arvo luettaisiin väärin päin, saataisiin puolet. Jos ulkolämpötilan nousu unohdettaisiin, saataisiin kolminkertainen aika $1{,}5 \cdot 2 = 3$, ja jos U-arvo unohdettaisiin, aika pysyisi samana, $1{,}5 \cdot \tfrac{2}{3} \cdot 1 = 1$.
+
 ## fy3-16-L3-04
 **Annettu:** keskimääräinen $U = 0{,}50\,\tfrac{\text{W}}{\text{m}^2\text{K}}$, $A = 120\,\text{m}^2$, $T_\text{sisä} = 18\,{}^\circ\text{C}$, $t = 720\,\text{h}$ kuukaudessa; ulkolämpötilat taulukosta: $5\,{}^\circ\text{C}$, $0\,{}^\circ\text{C}$, $-4\,{}^\circ\text{C}$, $-9\,{}^\circ\text{C}$, $-7\,{}^\circ\text{C}$, $-3\,{}^\circ\text{C}$; A: $\eta_\text{A} = 1{,}00$, $0{,}15\,\tfrac{\text{€}}{\text{kWh}}$; B: $\eta_\text{B} = 0{,}70$, lämpöarvo $H = 15\,\tfrac{\text{MJ}}{\text{kg}}$, $0{,}18\,\tfrac{\text{€}}{\text{kg}}$
 **Kysytty:** edullisemman ratkaisun säästö kustannuksissa lämmityskaudella euroina

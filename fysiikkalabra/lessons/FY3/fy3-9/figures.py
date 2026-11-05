@@ -197,8 +197,55 @@ def boyle_points():
     return f.svg()
 
 
+# Kuvaajan valinta (task fy3-9-L2-08, docs/exercise-types.md type 2): 40 ml of air at 100 kPa is pushed slowly to 10 ml
+# at a constant temperature, so pV = 4000 kPa·ml: 200 kPa at 20 ml and 400 kPa at 10 ml. Four (V, p) option graphs on
+# the same grid over 10–40 ml; only "pick-boyle" is right.
+PICK_K, PICK_V = 4000.0, (10, 40)
+PICK_DESC = "Kuvaaja mittakaavassa: ilman paine p tilavuuden V funktiona, kun V on 10–40 ml. Ruudukon väli on 5 ml ja 50 kPa. "
+
+
+def pick_axes(fid, label):
+    """One option of the graph choice: (V, p) axes, V 0–45 ml and p 0–450 kPa, on one grid for every option."""
+    f = Fig(fid, 380, PICK_DESC + label)
+    a = Axes(f, (96, 320), (470, 50), x=(0, 45), y=(0, 450), xticks=[5, 10, 15, 20, 25, 30, 35, 40, 45],
+             yticks=[50, 100, 150, 200, 250, 300, 350, 400, 450], xlabel=r"V\ (\text{ml})", ylabel=r"p\ (\text{kPa})",
+             xfmt=lambda v: fi(v) if v % 10 == 0 else "", yfmt=lambda v: fi(v) if v % 100 == 0 else "")
+    return f, a
+
+
+def pick_boyle():
+    f, a = pick_axes("fy39-pick-boyle", "Laskeva kaari: paine on 100 kPa tilavuudella 40 ml, 200 kPa tilavuudella 20 ml "
+                     "ja 400 kPa tilavuudella 10 ml.")
+    a.curve(lambda v: PICK_K / v, *PICK_V, WATER, 3.5, 120)
+    return f.svg()
+
+
+def pick_line():
+    """The lesson's warned mistake: a falling straight line through the right end points (300 kPa at 20 ml)."""
+    f, a = pick_axes("fy39-pick-line", "Laskeva suora: paine on 100 kPa tilavuudella 40 ml, 300 kPa tilavuudella 20 ml "
+                     "ja 400 kPa tilavuudella 10 ml.")
+    a.line([(40, 100), (10, 400)], WATER, 3.5)
+    return f.svg()
+
+
+def pick_flat():
+    """Constant temperature read as constant pressure."""
+    f, a = pick_axes("fy39-pick-flat", "Vaakasuora jana: paine on 100 kPa kaikilla tilavuuksilla 10 ml:stä 40 ml:aan.")
+    a.line([(10, 100), (40, 100)], WATER, 3.5)
+    return f.svg()
+
+
+def pick_rising():
+    """Pressure read as proportional to volume: 100 kPa at 40 ml, 25 kPa at 10 ml."""
+    f, a = pick_axes("fy39-pick-rising", "Nouseva suora: paine on 25 kPa tilavuudella 10 ml, 50 kPa tilavuudella 20 ml "
+                     "ja 100 kPa tilavuudella 40 ml.")
+    a.line([(10, 25), (40, 100)], WATER, 3.5)
+    return f.svg()
+
+
 FIGURES = {"hero": hero, "micro-boyle": micro_boyle, "boyle-graphs": boyle_graphs, "absolute-zero": absolute_zero,
-           "iso-processes": iso_processes, "boyle-points": boyle_points}
+           "iso-processes": iso_processes, "boyle-points": boyle_points,
+           "pick-boyle": pick_boyle, "pick-line": pick_line, "pick-flat": pick_flat, "pick-rising": pick_rising}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "micro-boyle": "reveals: half the volume gives twice the pressure",
@@ -206,4 +253,8 @@ REUSE = {
     "boyle-points": "safe: five (V, p) points without the curve; the description lists the points",
     "absolute-zero": "reveals: the extrapolation to 0 K",
     "iso-processes": "safe: the isobaric and isochoric setups, no values",
+    "pick-boyle": "reveals: the right option of task fy3-9-L2-08 (40 ml at 100 kPa pushed to 10 ml, pV = 4000 kPa·ml)",
+    "pick-line": "safe: a wrong option of task fy3-9-L2-08 (a falling straight line through the right end points)",
+    "pick-flat": "safe: a wrong option of task fy3-9-L2-08 (constant pressure 100 kPa)",
+    "pick-rising": "safe: a wrong option of task fy3-9-L2-08 (pressure proportional to volume)",
 }

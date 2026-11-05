@@ -268,6 +268,66 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy3-13-L2-08",
+      "level": 2,
+      "text": "Esimerkkiaineisto: suljetun jäykän pullon ilman paine mitattiin viidessä lämpötilassa. Paineen lukeman epävarmuus on $\\Delta p = 1{,}0\\,\\text{kPa}$ jokaiselle lukemalle. Lämpötilan epävarmuus on niin pieni, että se jätetään huomiotta.\n\nMinkä seuraavista päätelmistä taulukon aineisto tukee?",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": "Paine kasvoi lämpötilasta $20{,}0\\,{}^\\circ\\text{C}$ lämpötilaan $60{,}0\\,{}^\\circ\\text{C}$, koska ero $13{,}5\\,\\text{kPa}$ on paljon suurempi kuin $\\Delta p$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Suljetun pullon ilman paine (esimerkkiaineisto)",
+        "columns": [
+          "$\\theta\\,({}^\\circ\\text{C})$",
+          "$p\\,(\\text{kPa})$"
+        ],
+        "rows": [
+          [
+            "20.0",
+            "102.0"
+          ],
+          [
+            "22.0",
+            "102.8"
+          ],
+          [
+            "30.0",
+            "105.2"
+          ],
+          [
+            "45.0",
+            "110.4"
+          ],
+          [
+            "60.0",
+            "115.5"
+          ]
+        ]
+      },
+      "choices": [
+        {
+          "text": "Paine kasvoi lämpötilasta $20{,}0\\,{}^\\circ\\text{C}$ lämpötilaan $22{,}0\\,{}^\\circ\\text{C}$, koska $102{,}8\\,\\text{kPa}$ on suurempi kuin $102{,}0\\,\\text{kPa}$.",
+          "feedback": "Epävarmuus jäi huomiotta. Ero $0{,}8\\,\\text{kPa}$ on pienempi kuin $\\Delta p = 1{,}0\\,\\text{kPa}$, ja epävarmuusvälit $101{,}0$–$103{,}0\\,\\text{kPa}$ ja $101{,}8$–$103{,}8\\,\\text{kPa}$ menevät päällekkäin. Tästä parista kasvua ei voi osoittaa."
+        },
+        {
+          "text": "Paine ei muutu lämpötilan mukana, koska lukemien $102{,}0\\,\\text{kPa}$ ja $102{,}8\\,\\text{kPa}$ ero jää epävarmuuden sisään.",
+          "feedback": "Liian vahva päätelmä. Kun eroa ei voi osoittaa, se ei todista, ettei eroa ole: kaksi lähekkäistä lämpötilaa ei erota pientä muutosta. Koko aineistossa paine kasvaa selvästi, ja ero $13{,}5\\,\\text{kPa}$ on paljon epävarmuutta suurempi."
+        },
+        {
+          "text": "Paine kasvoi lämpötilasta $20{,}0\\,{}^\\circ\\text{C}$ lämpötilaan $60{,}0\\,{}^\\circ\\text{C}$, koska ero $13{,}5\\,\\text{kPa}$ on paljon suurempi kuin $\\Delta p$.",
+          "correct": true,
+          "feedback": "Oikein: ero $13{,}5\\,\\text{kPa}$ on yli kymmenkertainen epävarmuuteen $1{,}0\\,\\text{kPa}$ nähden, ja välit $101{,}0$–$103{,}0\\,\\text{kPa}$ ja $114{,}5$–$116{,}5\\,\\text{kPa}$ ovat erillään. Kasvu on siis todennäköisesti todellista."
+        },
+        {
+          "text": "Paine on lämpötilassa $-100\\,{}^\\circ\\text{C}$ varmasti $62\\,\\text{kPa}$, koska suora sopii kaikkiin mittauspisteisiin.",
+          "feedback": "Ekstrapolointi esitetty varmana. Lämpötila $-100\\,{}^\\circ\\text{C}$ on $120\\,{}^\\circ\\text{C}$ mittausalueen alapuolella, ja suoran arvo on vain arvio, jonka epävarmuus kasvaa jatkettaessa. Suorana pysyminen siellä on oletus, ei mittaustulos."
+        }
+      ]
     }
   ],
   "level3": [

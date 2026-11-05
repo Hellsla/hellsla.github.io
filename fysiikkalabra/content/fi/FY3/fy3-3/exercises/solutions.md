@@ -234,3 +234,16 @@ T_3 &= 293{,}15\,\text{K} \cdot \frac{1001\,\text{kPa}}{701\,\text{kPa}} \\
 Liike-energia kasvaa siis $13{,}6\,\%$.
 **Vastaus:** $145\,{}^\circ\text{C}$ (tarkasti $145{,}46\,{}^\circ\text{C}$), kolme merkitsevää numeroa kuten ilmanpaineessa $101\,\text{kPa}$. Muut tulokset: kokonaispaine $797\,\text{kPa}$ ja ylipaine $696\,\text{kPa}$ lämpötilassa $60{,}0\,{}^\circ\text{C}$ (venttiili ei avaudu), ja liike-energia kasvaa $13{,}6\,\%$. Kokonaispaine kasvaa $796{,}7 : 701 = 1{,}136$-kertaiseksi eli $13{,}6\,\%$, saman verran kuin liike-energia, mutta ylipaine kasvaa $695{,}7 : 600 = 1{,}16$-kertaiseksi eli $16\,\%$. Kokonaispaine on verrannollinen kelvinlämpötilaan, koska se syntyy hiukkasten törmäyksistä; ylipaine on kokonaispaineen ja ilmanpaineen erotus.
 **Järkevyys:** Venttiilin avautumisessa kokonaispaine kasvaa suhteessa $1001 : 701 = 1{,}43$, joten kelvinlämpötilan on kasvettava samoin: $293 \cdot 1{,}43 \approx 419\,\text{K}$, mikä vastaa tuloksen $418{,}61\,\text{K} - 273{,}15 = 145{,}46\,{}^\circ\text{C} \approx 145\,{}^\circ\text{C}$ suuruusluokkaa. Auton sisällä oleva $60\,{}^\circ\text{C}$ on selvästi alle $145\,{}^\circ\text{C}$, joten venttiili ei avaudu. Jos ylipainetta pidettäisiin verrannollisena, saataisiin väärin $293{,}15 \cdot 1{,}5 - 273{,}15 \approx 167\,{}^\circ\text{C}$.
+
+## fy3-3-L1-09
+**Kysytty:** vakion $c$ yksikkö, kun $p = c\,T$, paine on yksikössä $\text{kPa}$ ja lämpötila yksikössä $\text{K}$
+**Periaate:** Yhtälön $p = c\,T$ molempien puolten yksikön on oltava sama. Vasemmalla on paine, joten tulon $c\,T$ yksikön on oltava $\text{kPa}$. Lämpötilan yksikkö on $\text{K}$, joten $c$:n yksikön on supistettava kelvin pois.
+**Mallivastaus:** Ratkaistaan $c$:
+
+$c = \dfrac{p}{T}$
+
+Sijoitetaan yksiköt:
+
+$[c] = \dfrac{\text{kPa}}{\text{K}}$
+
+Tarkistus: $\tfrac{\text{kPa}}{\text{K}} \cdot \text{K} = \text{kPa}$, joten $c\,T$ on paine. Vastaus on siis $\tfrac{\text{kPa}}{\text{K}}$. Vaihtoehto $\text{kPa} \cdot \text{K}$ kertoo yksiköt, vaikka $c$ saadaan jakamalla. Vaihtoehto $\tfrac{\text{K}}{\text{kPa}}$ on jakolasku väärinpäin, ja vaihtoehto $\text{kPa}$ unohtaa lämpötilan yksikön. Esimerkkiarvoilla $p = 120\,\text{kPa}$ ja $T = 300\,\text{K}$ saadaan $c = 120\,\text{kPa} : 300\,\text{K} = 0{,}40\,\tfrac{\text{kPa}}{\text{K}}$.
