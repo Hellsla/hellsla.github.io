@@ -118,3 +118,87 @@
 **Sijoitus:** $hf = -3{,}40\,\text{eV} - (-13{,}6\,\text{eV}) = 10{,}2\,\text{eV}$. Ionisaatioon tarvitaan $0 - (-3{,}40\,\text{eV}) = 3{,}40\,\text{eV}$. Siis $E_\text{k} = 10{,}2\,\text{eV} - 3{,}40\,\text{eV} = 6{,}80\,\text{eV}$
 **Vastaus:** Energia riittää, ja liike-energia on $6{,}8\,\text{eV}$. Erotus ilmoitetaan yhden desimaalin tarkkuudella kuten fotonin energia $10{,}2\,\text{eV}$.
 **Järkevyys:** Perustilaan päättyvän siirtymän fotoni on ultraviolettia ja paljon energisempi kuin näkyvä valo. Tilasta $n = 2$ elektroni irtoaa jo energialla $3{,}40\,\text{eV}$, joten ionisaatio on odotettavissa. Perustilassa olevaa atomia sama fotoni ei voisi ionisoida, koska $10{,}2\,\text{eV} < 13{,}6\,\text{eV}$. Se voisi vain virittää atomin tasolle $2$.
+
+## fy8-3-L1-06
+**Kysytty:** mikä neljästä siirtymästä $5 \to 4$, $3 \to 2$, $2 \to 1$ ja $4 \to 1$ lähettää fotonin, jonka aallonpituus on lyhin.
+**Periaate:** Fotonin energia on lähtötason ja päätason energioiden erotus. Aallonpituus on kääntäen verrannollinen energiaan, $\lambda = \tfrac{hc}{E_\text{y} - E_\text{a}}$. Lyhin aallonpituus kuuluu siis siirtymälle, jonka energiaero on suurin. Vetyatomin tasot $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$ ovat sitä tiheämmässä, mitä ylempänä ne ovat. Siksi pelkkä tason numero ei ratkaise. Erotukset ovat $E_5 - E_4 = 0{,}306\,\text{eV}$, $E_3 - E_2 = 1{,}89\,\text{eV}$, $E_2 - E_1 = 10{,}2\,\text{eV}$ ja $E_4 - E_1 = 12{,}75\,\text{eV}$.
+**Mallivastaus:** Lyhin aallonpituus syntyy siirtymässä tasolta $4$ perustilaan. Sen energiaero on neljästä suurin, ja aallonpituus on silloin noin $97{,}3\,\text{nm}$. Siirtymä ylimmältä tasolta $5$ tasolle $4$ antaa pienimmän energiaeron, koska ylätasot ovat lähellä toisiaan. Siirtymä $3 \to 2$ tuottaa näkyvää valoa. Sen aallonpituus on pitkä ultraviolettiin verrattuna. Siirtymä $2 \to 1$ päättyy myös perustilaan, mutta sen energiaero on pienempi kuin siirtymällä $4 \to 1$.
+
+## fy8-3-L1-07
+**Annettu:** siirtymät päättyvät tasolle $n = 1$, $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
+**Kysytty:** Lymanin sarjan pisin aallonpituus $\lambda_\text{max}$ nanometreinä
+**Periaate:** Mitä pienempi fotonin energia on, sitä pidempi on aallonpituus. Perustilaan päättyvistä siirtymistä pienin energiaero on lähimmältä tasolta. Se on siirtymä $n = 2 \to n = 1$.
+**Kaava:** $\dfrac{hc}{\lambda} = E_2 - E_1$, josta $\lambda_\text{max} = \dfrac{hc}{E_2 - E_1}$
+**Muunnokset:** $E_2 - E_1$ lasketaan elektronivoltteina. Se muunnetaan jouleiksi sijoittamalla $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$. Lopuksi $1\,\text{m} = 10^{9}\,\text{nm}$.
+**Sijoitus:** Tulo $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. $E_2 - E_1 = -\dfrac{13{,}6\,\text{eV}}{4} + 13{,}6\,\text{eV} = 10{,}2\,\text{eV} = 10{,}2 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 1{,}6340 \cdot 10^{-18}\,\text{J}$ ja $\lambda_\text{max} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1{,}6340 \cdot 10^{-18}\,\text{J}} = 1{,}2157 \cdot 10^{-7}\,\text{m} = 121{,}57\,\text{nm}$
+**Vastaus:** $122\,\text{nm}$. Vastauksessa on kolme merkitsevää numeroa, kuten arvossa $13{,}6\,\text{eV}$.
+**Järkevyys:** Aallonpituus on lyhyempi kuin näkyvän valon alaraja noin $400\,\text{nm}$. Viiva on siis ultraviolettia. Siirtymä $3 \to 1$ antaa energian $12{,}09\,\text{eV}$ ja lyhyemmän aallonpituuden $102{,}6\,\text{nm}$. Siksi $122\,\text{nm}$ on sarjan pisin.
+
+## fy8-3-L1-08
+**Annettu:** vetyatomin energiatasot $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$, alkutila $n = 2$, lopputila $n = 4$
+**Kysytty:** absorboituneen fotonin energia $hf$ elektronivoltteina
+**Periaate:** Atomi absorboi fotonin ja virittyy, kun fotonin energia on täsmälleen ylemmän ja alemman tason energioiden erotus. Energia säilyy, joten koko fotonin energia siirtyy atomille.
+**Kaava:** $hf = E_4 - E_2$
+**Muunnokset:** Ei tarvita, koska tasojen energiat ja vastaus ovat elektronivoltteina.
+**Sijoitus:** $hf = -\dfrac{13{,}6\,\text{eV}}{16} - \left(-\dfrac{13{,}6\,\text{eV}}{4}\right) = -0{,}85\,\text{eV} + 3{,}40\,\text{eV} = 2{,}55\,\text{eV}$
+**Vastaus:** $2{,}55\,\text{eV}$. Vastauksessa on kolme merkitsevää numeroa, kuten arvossa $13{,}6\,\text{eV}$.
+**Järkevyys:** Energia on pienempi kuin ionisaatioenergia $13{,}6\,\text{eV}$. Se on myös pienempi kuin energia $12{,}75\,\text{eV}$, joka nostaa atomin perustilasta tasolle $n = 4$. Syy on se, että alkutila $n = 2$ on perustilaa ylempänä. Vastaava aallonpituus on $\lambda = \tfrac{hc}{2{,}55\,\text{eV}} \approx 486\,\text{nm}$. Se on näkyvää valoa ja sama kuin Balmerin sarjan viivalla $4 \to 2$.
+
+## fy8-3-L2-05
+**Annettu:** taulukon neljä Balmerin viivaa ($n = 3, 4, 5, 6$ ja $\lambda = 656{,}7$; $486{,}1$; $434{,}5$; $410{,}2\,\text{nm}$), $E_n = -\tfrac{E_\text{ion}}{n^2}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
+**Kysytty:** vedyn ionisaatioenergia $E_\text{ion}$ elektronivoltteina
+**Periaate:** Fotonin energia on tasojen erotus, $hf = E_n - E_2 = \tfrac{E_\text{ion}}{4} - \tfrac{E_\text{ion}}{n^2}$. Taajuus on siis $\tfrac{1}{n^2}$:n lineaarinen funktio, $f = \tfrac{E_\text{ion}}{4h} - \tfrac{E_\text{ion}}{h} \cdot \tfrac{1}{n^2}$. Suoran kulmakerroin on $-\tfrac{E_\text{ion}}{h}$. Mittauspisteet eivät yleensä asetu täsmälleen suoralle, koska mittauksessa on epävarmuutta. Siksi pisteisiin sovitetaan suora, ja kulmakerroin luetaan suoralta. Sitä ei lueta kahdesta vierekkäisestä mittauspisteestä.
+**Kuvaajan lukeminen:** Taajuudet $f = \tfrac{c}{\lambda}$ ovat $456{,}5$; $616{,}7$; $690{,}0$ ja $730{,}9\,\text{THz}$ kohdissa $\tfrac{1}{n^2} = 0{,}111$; $0{,}0625$; $0{,}0400$ ja $0{,}0278$. Pisteisiin sovitettu suora kulkee mittausalueen sisällä pisteiden $(0{,}0300;\ 723{,}3\,\text{THz})$ ja $(0{,}1100;\ 460{,}2\,\text{THz})$ kautta. Kulmakerroin on siis $k = \dfrac{460{,}2\,\text{THz} - 723{,}3\,\text{THz}}{0{,}1100 - 0{,}0300} = -3289\,\text{THz}$.
+**Kaava:** $k = -\dfrac{E_\text{ion}}{h}$, josta $E_\text{ion} = -h k$
+**Muunnokset:** $k = -3289\,\text{THz} = -3{,}289 \cdot 10^{15}\,\text{Hz}$. Joulet muunnetaan elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\text{J}$.
+**Sijoitus:** $E_\text{ion} = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 3{,}289 \cdot 10^{15}\,\text{Hz} = 2{,}1793 \cdot 10^{-18}\,\text{J} = \dfrac{2{,}1793 \cdot 10^{-18}}{1{,}602 \cdot 10^{-19}}\,\text{eV} = 13{,}60\,\text{eV}$
+**Vastaus:** $13{,}6\,\text{eV}$. Pisteet asettuvat suoralle, koska taajuus on lineaarinen funktio suureesta $\tfrac{1}{n^2}$. Vastauksessa on kolme merkitsevää numeroa. Aallonpituuksien epävarmuus $\pm 0{,}5\,\text{nm}$ on alle $0{,}2\,\%$ aallonpituudesta, joten se ei rajoita kolmatta numeroa.
+**Järkevyys:** Suoran jatke pystyakselille on ekstrapolointi eli jatko mittausalueen ulkopuolelle. Se on sallittua, koska malli on lineaarinen. Suoran vakiotermi $822\,\text{THz}$ vastaa energiaa $h \cdot 822\,\text{THz} = 3{,}40\,\text{eV}$. Se on $\tfrac{13{,}6\,\text{eV}}{4}$. Sitä vastaava aallonpituus $\tfrac{c}{822\,\text{THz}} \approx 365\,\text{nm}$ on Balmerin sarjan raja. Tulos on sama kuin vedyn ionisaatioenergia perustilasta, joka tunnetaan arvona $13{,}6\,\text{eV}$.
+
+## fy8-3-L2-06
+**Annettu:** kuvitteellisen atomin tasot kaaviosta, atomi perustilassa $E_1$, fotonien aallonpituudet $300$; $413$; $500$; $207$ ja $248\,\text{nm}$, sallittu poikkeama $\pm 0{,}05\,\text{eV}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
+**Kysytty:** niiden fotonien lukumäärä, jotka perustilassa oleva atomi absorboi
+**Periaate:** Atomi absorboi fotonin vain, jos fotonin energia on täsmälleen kahden tason energioiden erotus. Perustilassa oleva atomi voi nousta vain tasolle $E_2$, $E_3$ tai $E_4$. Vertailtavat erotukset ovat siis perustilasta ylöspäin.
+**Kuvaajan lukeminen:** Tasot ovat $E_1 = -8{,}0\,\text{eV}$, $E_2 = -5{,}0\,\text{eV}$, $E_3 = -3{,}0\,\text{eV}$ ja $E_4 = -2{,}0\,\text{eV}$. Perustilasta lähtevät erotukset ovat $E_2 - E_1 = 3{,}0\,\text{eV}$, $E_3 - E_1 = 5{,}0\,\text{eV}$ ja $E_4 - E_1 = 6{,}0\,\text{eV}$. Ionisaatioon tarvittaisiin $0 - E_1 = 8{,}0\,\text{eV}$.
+**Kaava:** $E = \dfrac{hc}{\lambda}$
+**Muunnokset:** $\lambda = 300 \cdot 10^{-9}\,\text{m}$ jne. Joulet muunnetaan elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\text{J}$.
+**Sijoitus:** Tulo $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. Fotoni $300\,\text{nm}$: $E = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{300 \cdot 10^{-9}\,\text{m} \cdot 1{,}602 \cdot 10^{-19}\,\text{J/eV}} = 4{,}13\,\text{eV}$, fotoni $413\,\text{nm}$: $3{,}00\,\text{eV}$, fotoni $500\,\text{nm}$: $2{,}48\,\text{eV}$, fotoni $207\,\text{nm}$: $5{,}99\,\text{eV}$ ja fotoni $248\,\text{nm}$: $5{,}00\,\text{eV}$. Absorboituvat fotonit ovat $413\,\text{nm}$ ($1 \to 2$), $248\,\text{nm}$ ($1 \to 3$) ja $207\,\text{nm}$ ($1 \to 4$).
+**Vastaus:** $3$. Atomi absorboi kolme fotonia: fotonit $413\,\text{nm}$, $248\,\text{nm}$ ja $207\,\text{nm}$. Niiden energiat vastaavat perustilasta ylöspäin lähteviä erotuksia. Fotonit $300\,\text{nm}$ ja $500\,\text{nm}$ eivät vastaa mitään erotusta.
+**Järkevyys:** Absorboituvien fotonien energiat ovat alle ionisaatioenergian $8{,}0\,\text{eV}$, joten atomi jää sidotuksi. Fotoni $300\,\text{nm}$ ($4{,}13\,\text{eV}$) on kahden sallitun erotuksen $3{,}0\,\text{eV}$ ja $5{,}0\,\text{eV}$ välissä. Siksi se menee atomin läpi.
+
+## fy8-3-L2-07
+**Annettu:** siirtymä $n = 5 \to n = 1$, $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$, oppilaan tulos $340\,\text{eV}$
+**Kysytty:** a) oppilaan virhe, b) fotonin energia $hf$ elektronivoltteina
+**Periaate:** Oppilaalla on kaksi virhettä. Väite radan koosta voi pitää paikkansa Bohrin mallissa, jossa säde kasvaa luvun $n^2$ mukaan. Fotonin energia ei kuitenkaan riipu radan koosta vaan tasojen energioiden erotuksesta, $hf = E_\text{y} - E_\text{a}$. Lisäksi tason energia ei kasva luvun $n^2$ mukaan vaan pienenee: $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$ lähestyy nollaa, kun $n$ kasvaa. Oppilaan tulos $340\,\text{eV}$ olisi suurempi kuin atomin ionisaatioenergia $13{,}6\,\text{eV}$. Se on mahdotonta siirtymälle sidotulta tasolta.
+**Kaava:** $hf = E_5 - E_1$
+**Muunnokset:** Ei tarvita, koska energiat ja vastaus ovat elektronivoltteina.
+**Sijoitus:** $hf = -\dfrac{13{,}6\,\text{eV}}{25} - \left(-13{,}6\,\text{eV}\right) = -0{,}544\,\text{eV} + 13{,}6\,\text{eV} = 13{,}056\,\text{eV}$
+**Vastaus:** a) Fotonin energia on tasojen energioiden erotus. Se ei ole verrannollinen radan kokoon. Tulos $340\,\text{eV}$ ylittäisi myös ionisaatioenergian. b) $13{,}1\,\text{eV}$. Vastauksessa on kolme merkitsevää numeroa, kuten arvossa $13{,}6\,\text{eV}$.
+**Järkevyys:** Tulos on alle ionisaatioenergian $13{,}6\,\text{eV}$. Näin pitääkin olla, kun siirrytään sidotulta tasolta perustilaan. Tason $n = 5$ energian itseisarvo on vain $\tfrac{1}{25}$ perustilan arvosta. Siksi energiaero on lähes koko ionisaatioenergia: $13{,}06\,\text{eV}$ on $96\,\%$ arvosta $13{,}6\,\text{eV}$. Vastaava aallonpituus on noin $95{,}0\,\text{nm}$, ultraviolettia.
+
+## fy8-3-L3-04
+**Annettu:** emissioviivat $\lambda = 1876$; $1282$ ja $1094\,\text{nm}$ ($\pm 1\,\text{nm}$), $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$, kaikki viivat päättyvät samalle tasolle, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
+**Kysytty:** vähimmäistaajuus $f_\text{ion}$ terahertseinä, jolla fotoni ionisoi atomin siitä tasosta, jolle siirtymät päättyvät
+**Periaate:** Jokaisen viivan fotonin energia on lähtötason ja päätason energioiden erotus, $\tfrac{hc}{\lambda} = E_\text{y} - E_m$. Tässä $m$ on yhteinen päätaso. Kokeillaan päätasoa. Ylempi taso on $E_\text{y} = E_m + \tfrac{hc}{\lambda}$, ja siitä saadaan $n_\text{y} = \sqrt{\tfrac{13{,}6\,\text{eV}}{-E_\text{y}}}$. Sen on oltava kokonaisluku. Ionisaatioon tilasta $m$ tarvitaan energia $0 - E_m$, ja fotonin energia on $hf$.
+**Kaava:** $\dfrac{hc}{\lambda} = E_\text{y} - E_m$ ja ionisaatiolle $h f_\text{ion} = 0 - E_m$, josta $f_\text{ion} = \dfrac{13{,}6\,\text{eV}}{m^2 h}$
+**Muunnokset:** Fotonien energiat lasketaan joulina. Ne muunnetaan elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\text{J}$. Ionisaatioenergia muunnetaan jouleiksi kertomalla luvulla $1{,}602 \cdot 10^{-19}\,\text{J}$. Lopuksi $1\,\text{THz} = 10^{12}\,\text{Hz}$.
+**Sijoitus:** Tulo $hc = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. Fotonien energiat ovat $\tfrac{hc}{\lambda} = 0{,}6610\,\text{eV}$, $0{,}9672\,\text{eV}$ ja $1{,}1335\,\text{eV}$.
+
+- Päätaso $m = 1$ (ylätaso kokonaisluku): $n_\text{y} \approx 1{,}03$; $1{,}04$ ja $1{,}04$, ei kokonaislukuja.
+- Päätaso $m = 2$: $n_\text{y} \approx 2{,}23$; $2{,}36$ ja $2{,}45$, ei kokonaislukuja.
+- Päätaso $m \geq 4$: kaikkien viivojen energioiden olisi oltava enintään $\tfrac{13{,}6\,\text{eV}}{16} = 0{,}85\,\text{eV}$, mutta suurin on $1{,}1335\,\text{eV}$.
+- Päätaso $m = 3$: $E_\text{y} = -1{,}5111\,\text{eV} + 0{,}6610\,\text{eV} = -0{,}8501\,\text{eV}$, $n_\text{y} = 4{,}00$, sitten $n_\text{y} = 5{,}00$ ja $n_\text{y} = 6{,}00$. Viivat ovat siirtymiä $4 \to 3$, $5 \to 3$ ja $6 \to 3$.
+
+Ionisaatioon tilasta $3$ tarvitaan $1{,}5111\,\text{eV} = 1{,}5111 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 2{,}4209 \cdot 10^{-19}\,\text{J}$ ja $f_\text{ion} = \dfrac{2{,}4209 \cdot 10^{-19}\,\text{J}}{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}} = 3{,}653 \cdot 10^{14}\,\text{Hz} = 365{,}3\,\text{THz}$
+**Vastaus:** $365\,\text{THz}$ eli $3{,}65 \cdot 10^{14}\,\text{Hz}$. Vastauksessa on kolme merkitsevää numeroa, kuten arvossa $13{,}6\,\text{eV}$. Aallonpituuksien epävarmuus $\pm 1\,\text{nm}$ on alle $0{,}1\,\%$. Rajaa vastaa aallonpituus $\tfrac{c}{f_\text{ion}} \approx 821\,\text{nm}$, joka on lähi-infrapunaa.
+**Järkevyys:** Raja-aallonpituus $821\,\text{nm}$ on lyhyempi kuin mikään havaituista viivoista ($1094$–$1876\,\text{nm}$). Näin sarjassa pitääkin olla: sarjan lyhin mahdollinen aallonpituus vastaa siirtymää äärettömän korkealta tasolta. Viiva $4 \to 3$ on sarjan pisin ja energialtaan pienin, $0{,}661\,\text{eV}$, joten sekin täsmää.
+
+## fy8-3-L3-05
+**Annettu:** viivat $\lambda = 102{,}6$; $121{,}6$; $486{,}1$; $656{,}3$ ja $1875\,\text{nm}$ ($\pm 1\,\text{nm}$), atomit perustilassa, $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
+**Kysytty:** ultraviolettilähteen aallonpituus $\lambda_\text{L}$ nanometreinä
+**Periaate:** Jokaisen viivan fotonin energia on tasojen erotus, ja energia säilyy. Kun viivat on tunnistettu, ylin lähtötaso on se taso, jolle atomit viritettiin. Fotoni nosti atomin perustilasta tälle tasolle. Lähteen fotonin energia on siis tämän tason ja perustilan energioiden erotus. Jos viritystaso olisi ylempi, kaasu lähettäisi myös siitä lähteviä viivoja.
+**Kaava:** $\dfrac{hc}{\lambda_\text{L}} = E_\text{y} - E_1$, josta $\lambda_\text{L} = \dfrac{hc}{E_\text{y} - E_1}$
+**Muunnokset:** Fotonien energiat muunnetaan jouleista elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\text{J}$. Lopuksi $1\,\text{m} = 10^{9}\,\text{nm}$.
+**Sijoitus:** Tulo $hc = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. Viivojen energiat ovat $12{,}09$; $10{,}20$; $2{,}551$; $1{,}889$ ja $0{,}661\,\text{eV}$. Ne vastaavat tasoparien erotuksia $E_3 - E_1 = 12{,}09\,\text{eV}$, $E_2 - E_1 = 10{,}20\,\text{eV}$, $E_4 - E_2 = 2{,}55\,\text{eV}$, $E_3 - E_2 = 1{,}889\,\text{eV}$ ja $E_4 - E_3 = 0{,}661\,\text{eV}$. Viivat ovat siis siirtymät $3 \to 1$, $2 \to 1$, $4 \to 2$, $3 \to 2$ ja $4 \to 3$. Ylin lähtötaso on $n = 4$. Tasolta $n = 5$ lähtisi viivoja $\lambda = 95{,}0$; $434$; $1282$ tai $4052\,\text{nm}$. Taulukossa ei ole yhtäkään, joten atomit eivät virittyneet ylemmäs kuin tasolle $n = 4$. Suora siirtymä $4 \to 1$ lähettää lähteen aallonpituuden $97{,}3\,\text{nm}$. Se suodatettiin pois, joten sitä ei ole taulukossa. Lähteen fotonin energia on $E_4 - E_1 = 13{,}6\,\text{eV} - \dfrac{13{,}6\,\text{eV}}{16} = 12{,}75\,\text{eV} = 12{,}75 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 2{,}0426 \cdot 10^{-18}\,\text{J}$ ja $\lambda_\text{L} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{2{,}0426 \cdot 10^{-18}\,\text{J}} = 9{,}725 \cdot 10^{-8}\,\text{m} = 97{,}25\,\text{nm}$
+**Vastaus:** $97{,}3\,\text{nm}$. Vastauksessa on kolme merkitsevää numeroa, kuten arvossa $13{,}6\,\text{eV}$.
+**Järkevyys:** Lähteen fotonin energia $12{,}75\,\text{eV}$ on pienempi kuin ionisaatioenergia $13{,}6\,\text{eV}$, joten atomit eivät ionisoidu. Aallonpituus on lyhyempi kuin lyhin havaittu viiva $102{,}6\,\text{nm}$. Siirtymäketjun $4 \to 3 \to 2 \to 1$ fotonien energioiden summa on $0{,}661\,\text{eV} + 1{,}889\,\text{eV} + 10{,}20\,\text{eV} = 12{,}75\,\text{eV}$. Palatessaan atomi siis vapauttaa täsmälleen absorboidun energian.

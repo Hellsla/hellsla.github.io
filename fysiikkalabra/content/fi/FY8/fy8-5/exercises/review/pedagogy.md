@@ -1,17 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 1c8a634f4609ffc4
+CONTENT-HASH: 60d9e9328cf45092
 
+Round: 3
 ## Blocking
 (none)
 
 ## Polish
-- solutions.md L3-03 (rivit 117–118) — edellisen kierroksen huomio on yhä voimassa: laskettu 4235 pyöristetään vastaukseksi 4240 ja tehtävän oletus sisäosan kuulumisesta alueeseen on keinotekoinen. Anna vastaukseksi suoraan 4235 tai pyydä "noin".
-- exercises.json L1 — kolme viidestä tehtävästä on yhden sijoituksen laskuja eikä orbitaalikuvan tulkintatehtävää ole ennen tasoa 3; vaihda halutessasi L1-05 tulkintatehtävään.
+- exercises.json fy8-5-L3-05 / solutions.md b) — kaliumin ja natriumin vertailu on nyt hyvä; varjostus mainitaan ratkaisussa, mutta tehtävän kohta b) pyytää vain "kuoria ja hylkimistä", mikä riittää. Ei toimenpiteitä.
+- exercises.json fy8-5-L1-06, L1-07, L2-07 — kolme tehtävää käsittelee edelleen samaa virhekäsitystä (rata/seinä/pilvi), mutta väärät vaihtoehdot eroavat nyt toisistaan; riittävä.
 
 ## Checked
-- Delta (L1-01 Järkevyys): uusi perustelu on oikein; erotukset 6, 10, 14 kasvavat neljällä, seuraava on 18 ja 32 + 18 = 50.
-- Uusi perustelu on parempi kuin vanha: se tarkistaa tuloksen taulukon sarjaa vasten eikä toista laskua orbitaalimäärän kautta.
-- Lause "kuorelle n = 5 mahtuu enemmän elektroneja kuin kuorelle n = 4" on perusteltu tuloksella 50 > 32.
-- Muut ratkaisun vaiheet (Periaate, Kaava, Muunnokset, Sijoitus, Vastaus) ovat ennallaan ja seurattavissa.
-- Tasot nousevat, mikään tehtävä ei toista esimerkkiä (3d→2p); aiempi tarkistus pätee.
-- Suomi: ei uusia kielivirheitä muutetussa kohdassa.
+- Round 1:n Polish-kohdat on kaikki korjattu: L2-06 c) "perustele laskemiesi taajuuksien avulla", L3-05 johdannosta poistettu 3s-vihje ja lähde (NIST) lisätty, varjostus mainittu ratkaisussa, L1-07:n väärät vaihtoehdot eri virheistä, L2-05:n taulukko desimaalipilkuilla.
+- L2-06: a) λ = 1,60/0,80/0,533 m, b) f = 40/80/120 Hz kaikille kolmelle tilalle, vastauslaatikko 120 Hz (kaksi solmua) vastaa ratkaisua.
+- L3-04: johdanto jaettu kappaleisiin; luvut (1,887…3,020 eV, n = 3,00…5,98, k = 13,62 eV, 397 nm) ennallaan ja täsmäävät.
+- L3-05: c) 590 nm, d) 241 nm vastaavat ratkaisua; 3s -> 3p ilmoitetaan vasta kohdassa c).
+- Vastausvaihtoehtojen järjestys sekoitettu (oikea ei enää ensimmäisenä) L1-xx ja L2-07; vain yksi oikea kussakin.
+- Ratkaisut: kaikki vaiheet mukana, kohdat omina kappaleinaan L2-05 ja L2-06.
+- Määrät 8/7/5 ja tasot sopivat; ei kaksoiskappaleita. Kaappauksia ei avattu uudelleen, koska muutokset ovat tekstimuutoksia.
+- Delta (Vastaus line now starts with "Vastauslaatikkoon $72{,}3\,\%$."): L2-05 b) 72,25 % rounds to 72,3 %, matches the solution, exercises.json answer 72,25 (tol 2 %), same unit, decimal comma; the line reads well.

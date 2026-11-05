@@ -1,20 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 00f71cce9b5857cd
+CONTENT-HASH: 6afc032326200d35
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+- exercises.json L2-05, L2-06, L3-04, L3-05 `text` — the translation held a literal backslash-n (`\\n\\n`) where fi has real line breaks, so the task text showed `\n\n` on the page (visible in open-exercises-L2-1280-5 and L3-1280-4 captures) and the a)/b)/c) parts ran together; replaced with real newlines (the same line breaks as fi).
 
 ## Polish
-- exercises/solutions.md:119 — "nuclear reactions, where the mass defect is almost one per cent" mixes the binding mass defect (≈0.8 %) with the mass change in a reaction (10⁻⁵–10⁻³, as Check 3 of the lesson says) — "in nuclei, where the mass defect is almost one per cent".
-- exercises/review/packet-science.md (tooling) — the exercise brief section is empty for en; judged against the en lesson text instead.
+- solutions.md L3-03 reasonableness — "where the mass defect is almost one per cent" follows the reviewed fi wording; left as is.
 
 ## Checked
-- All 12 answers recomputed independently in one script (my formulas, task data only): every exercises.json value and answers.py line agrees within tolerance (L1-01 0.09894 u … L3-03 2.797·10⁻¹² kg).
-- L1-01/L2-01: electron cancellation with Z hydrogen atoms stated correctly; Fe-56 Δm 0.528464 u, 8.790 MeV per nucleon.
-- L2-02 Ra-226 alpha: 0.005229 u, 4.871 MeV; electron count 86 + 2 = 88 right.
-- L2-03: 2.27502·10⁻²⁸ kg, 2.045·10⁻¹¹ J; eV cross-check 127.7 MeV and its rounding explanation right.
-- L2-04 Sun: Pt/c² = 3.68·10¹⁴ kg; assumptions (constant power, solar wind ignored) stated.
-- L3-01: E = −Q = 20.58 MeV; He-3 binding 7.72 MeV (2.6 per nucleon) and 28.3 − 7.7 check right.
-- L3-02: 23.848 MeV from binding energies; atomic-mass check 0.025601 u → 23.85 MeV.
-- L3-03: Q = c m ΔT, ΔT 60.0 K, Δm 2.80·10⁻¹² kg.
-- L1-04 check: 25 GWh, 1600 MW in ≈ 16 h right.
-- Rounding reasons name the limiting datum (931.5, data significant figures); notation matches the lesson (m_H, m_n, m_atom, E_B, Q, m_initial/m_final).
+- Compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags, data table cells, and every number in texts, choices, feedback and solutions.md (184 lines each, numbers equal per line; decimal point in en JSON and LaTeX where fi has a comma).
+- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) read in full in en against fi; one correct option each in L1-06, L1-08, L2-07, and the distractor feedback names the same error as fi.
+- Re-derived key answers: L1-07 0.511 MeV, L2-05 nickel-62 8.795 MeV, L2-06 31.99 MeV (3 electrons, 1.53 MeV), L3-04 Q 173.3 MeV and 7.11e10 J, L3-05 4.9e20 kg; all agree with fi.
+- check_i18n.py en: 0 errors after the fix.
+- No Finnish left in en (grep for ä/ö and Finnish words).

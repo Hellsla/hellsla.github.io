@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 5a8b8e986aaa6340
+CONTENT-HASH: 6702b9fe339ccec9
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
 ## Polish
-- Nine of twelve tasks are attenuation calculations (carried).
-- "pulssitaajuus" in L2-01 and L3-02 is not defined; add "eli pulsseja sekunnissa" (carried).
-- L1-05 needs an eV conversion; level 2 fits better (carried).
+(none)
 
 ## Checked
-- Delta: L1-05 Sijoitus: h·(c/X) instead of (h·c)/X — same value, intermediate results and answers unchanged, so the arithmetic and the student's path (Kaava hc/λ, then Sijoitus) still agree; the fraction now shows c/X as the quantity being divided, which is arguably clearer for tracing the units.
-- Opened own 360 px captures (?ratkaisut=1) of every changed solution step (scratchpad shots-fx/): the Sijoitus now wraps as 'h · [fraction c/X] = result' on two to four short rows, nothing clipped, no page scroll; same fraction-over-line form as the other solutions.
-- Levels, tasks and answers untouched by the commit; earlier PASS stands.
+- Level, kind and order of the 8 new tasks identical to fi; the stepwise a)-d) structure and the "Enter in the box ..." sentence preserved.
+- Answer options in L1-06, L1-08, L2-07 keep the same distractor logic and diagnostic feedback as fi; the correct answer is not given away by length or wording.
+- New terms are explained where first needed (nettopulssimäärä, kantama ja geometrinen hyötysuhde selitetty).
+- Language: plain Finnish (selkosuomi); natural and unambiguous.
+- Worked solutions follow Given/Asked/Principle/Formula/Conversions/Substitution/Answer/Reasonableness, as in fi.

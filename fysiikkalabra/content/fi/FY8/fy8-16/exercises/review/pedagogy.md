@@ -1,13 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 195defcc8edc8d08
+CONTENT-HASH: eb2ae3787808b0eb
+Round: 2
 
 ## Blocking
 (none)
 
 ## Polish
-- solutions fy8-16-L2-03 Järkevyys — "niin kauan, kuin" -> "niin kauan kuin" (kantaan jäänyt).
+- solutions.md fy8-16-L2-06 Vastaus — "$1{,}7 \cdot 10^{2}\,\text{Mpc}$" with stored answer 170,9 and the Järkevyys using 170,9 mixes two precisions; write "$171\,\text{Mpc}$ (kolme merkitsevää numeroa kuten aallonpituuksissa)" or "noin $1{,}7 \cdot 10^{2}\,\text{Mpc}$ (tarkemmin $170{,}9$)".
+- fy8-16-L1-06 — the new Doppler distractor is a reasonable misconception; add to its feedback that the lesson's redshift formula $z = \Delta\lambda/\lambda_0$ is the same for both causes only at small $z$, or leave as is.
+- fy8-16-L2-07 — the correct option sits last, in L1-06 first; shuffle one so position carries no signal across the set.
 
 ## Checked
-- Delta: L1-05 and L2-03 Sijoitus (three formulas): h·(c/X) instead of (h·c)/X — same value, intermediate results and answers unchanged, so the arithmetic and the student's path (Kaava hc/λ, then Sijoitus) still agree; the fraction now shows c/X as the quantity being divided, which is arguably clearer for tracing the units.
-- Opened own 360 px captures (?ratkaisut=1) of every changed solution step (scratchpad shots-fx/): the Sijoitus now wraps as 'h · [fraction c/X] = result' on two to four short rows, nothing clipped, no page scroll; same fraction-over-line form as the other solutions.
-- Levels, tasks and answers untouched by the commit; earlier PASS stands.
+- Round 1 had no Blocking; Polish applied: L3-04 kpc sentence removed, L2-06 lead reworded, L3-05 c) slip named (z = 3 gives 8,2 K, correct 10,9 K), L1-07 shows 69,2, L2-05 self-check "suoran tulee kulkea origon kautta".
+- L2-05 tolerance widened to 5 %: eye-fit range 65–72 now fits 68,45 ± 5 % (65,0–71,9); acceptable for a drawn line.
+- L2-06 recomputed: 170,9 Mpc; student's 8,4·10^5 Mpc is about 4900 times too large (text says 4900, correct).
+- L3-05: z = 3,000, k = 4, T = 10,9 K; b) rewritten as "tulosta ei voi pitää galaksin nopeutena", consistent with solution.
+- L1-06 and L1-08 option edits keep one misconception per distractor with repairing feedback; L1-06 model answer updated for the Doppler option.
+- No 360 px exercise captures listed.

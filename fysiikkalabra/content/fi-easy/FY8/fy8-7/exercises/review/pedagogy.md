@@ -1,12 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 5124d76d81e95f4d
+CONTENT-HASH: 20081bbccb796bb7
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+- L3-05 solution: grammar slip "spontaanista valoa" -> "spontaania valoa".
 
 ## Polish
-1. exercises.json fy8-7-L2-01, L2-02, L3-03 — earlier polish notes stand (L2-01 repeats the lesson's transfer model, L2-02 readable from the rate graph, L3-03 one frequency ratio): vary data or add a second idea if the set is revised.
+(none)
 
 ## Checked
-- Delta: solutions.md:37 (L1-04) intermediate numerator now 3,192·10^-9 J m (3,0·10^-3 · 1064·10^-9 = 3,192·10^-9); 3,192·10^-9 / 1,9865·10^-25 = 1,6069·10^16 now follows step by step. Answer 1,6·10^16 and Järkevyys unchanged.
-- No task text, level, data or hint changed; levels 5/4/3 and the slot's goals as before.
-- Capture open-exercises-1280-5 (L1-04) predates the fix and still shows 10^-12; the source is correct, so the capture needs regenerating.
+- Selkosuomi: short sentences, common words; new terms are explained where first needed (viritetty atomi in L1-06, energiarako in L2-05, fotonivuo in L2-06, koherentti valo in the L1-06 solution, kvanttihyötysuhde in L3-04).
+- Learning goals, levels and the part asked for the answer box equal fi; choice feedback still names the misconception and gives the correct reason.
+- Solutions are split into short sentences without changing steps or numbers.
+- Distractor texts stay equally plausible and of similar length as in fi.

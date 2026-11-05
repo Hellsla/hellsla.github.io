@@ -39,6 +39,52 @@
       "answer": 6.57e-34,
       "unit": "J s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-6-L1-06",
+      "level": 1,
+      "text": "A red LED is connected to a gradually increasing voltage. Below $1.5\\,\\text{V}$ the LED does not glow at all, but after about $1.8\\,\\text{V}$ it lights up. What explains why the LED lights up only at the threshold voltage?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "A photon can be produced only when the energy $eU$ received by the electron is approximately equal to the energy $hf$ of the photon.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Light is produced by heating: the LED starts to glow only when the voltage $U$ has heated the semiconductor hot enough.",
+          "feedback": "Heating is not the reason. The light of an LED is not the light of a glowing hot object; it is produced when an electron drops from the conduction band into a hole in the valence band and gives up its energy as a photon. A photon can be produced only when the energy $eU$ of the electron is sufficient."
+        },
+        {
+          "text": "Photons are produced already at a small voltage $U$, but they are infrared, and as the voltage increases their frequency rises to red.",
+          "feedback": "This is a common misconception. The energy of a photon is determined by the energy gap of the semiconductor, not by the voltage, so the colour of the light of the same LED does not change when the voltage is adjusted. Increasing the voltage above the threshold increases the current and thus the number of photons."
+        },
+        {
+          "text": "A photon can be produced only when the energy $eU$ received by the electron is approximately equal to the energy $hf$ of the photon.",
+          "correct": true,
+          "feedback": "Correct: the energy of one photon is approximately $hf$, and it comes from one electron. If the energy $eU$ is smaller, no photon is produced. At the threshold voltage $eU_\\text{k} \\approx hf$, and after that the current and the amount of light increase steeply."
+        },
+        {
+          "text": "Photons are produced already at a small voltage $U$, but the casing of the LED absorbs them until the current is large enough.",
+          "feedback": "The casing does not absorb light in this way. Below the threshold voltage the electrons do not receive enough energy, so no photons are produced at all. The threshold voltage is the condition for producing a photon, not a property of the casing."
+        }
+      ]
+    },
+    {
+      "id": "fy8-6-L1-07",
+      "level": 1,
+      "text": "The threshold voltage of a green LED is $2.30\\,\\text{V}$. Assume that at the threshold voltage the energy that an electron receives from the voltage source is exactly the energy of one photon, $eU_\\text{k} = \\tfrac{hc}{\\lambda}$.\n\nUse the values $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^8\\,\\text{m/s}$ and $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$.\n\nWhat is the wavelength of the light of the LED? Give the answer in nanometres.",
+      "answer": 539,
+      "unit": "nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-6-L1-08",
+      "level": 1,
+      "text": "A current of $10.0\\,\\text{mA}$ flows through an LED used as an indicator light. The elementary charge is $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$. How many electrons pass through the LED in a second? Give the answer in the form $x \\cdot 10^{16}\\,\\tfrac{1}{\\text{s}}$ and write the number $x$ in the box.",
+      "answer": 6.24,
+      "unit": "10¹⁶ 1/s",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,6 +119,166 @@
       "answer": 0.541,
       "unit": "eV",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-6-L2-05",
+      "level": 2,
+      "text": "The current–voltage characteristic of a red LED was measured by connecting the LED in series with a protective resistor and gradually increasing the voltage. The table is sample data. In the graph $(U, I)$ the current is at first almost zero and then increases almost linearly.\n\nUse the values $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^8\\,\\text{m/s}$ and $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$.\n\na) Draw the graph $I(U)$ on paper and decide which points belong to the linear part.\n\nb) Fit a line to the linear part and extend it to the voltage axis, where $I = 0$. Read the threshold voltage $U_\\text{k}$.\n\nc) The peak wavelength of the LED is $650\\,\\text{nm}$. Calculate the voltage $\\tfrac{hc}{e\\lambda}$ and compare it with the measured threshold voltage.\n\nWrite in the box the threshold voltage of part b) in volts.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 1.86,
+      "unit": "V",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Current of a red LED as a function of voltage (sample data)",
+        "columns": [
+          "$U\\,(\\text{V})$",
+          "$I\\,(\\text{mA})$"
+        ],
+        "rows": [
+          [
+            "0.50",
+            "0.0"
+          ],
+          [
+            "1.00",
+            "0.0"
+          ],
+          [
+            "1.50",
+            "0.0"
+          ],
+          [
+            "1.70",
+            "0.1"
+          ],
+          [
+            "1.80",
+            "0.6"
+          ],
+          [
+            "1.90",
+            "2.6"
+          ],
+          [
+            "2.00",
+            "8.8"
+          ],
+          [
+            "2.10",
+            "15.0"
+          ],
+          [
+            "2.20",
+            "20.9"
+          ],
+          [
+            "2.30",
+            "27.3"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-6-L2-06",
+      "level": 2,
+      "text": "A group measured the current–voltage characteristic of a red LED whose peak wavelength is $630\\,\\text{nm}$.\n\nThree students read the threshold voltage from it in different ways (table, sample data). Aino read as the threshold voltage the voltage at which the current is $0.1\\,\\text{mA}$, Eero fitted a line to the straight part of the graph and extended it to the voltage axis, and Salla read the voltage at which the current is $10\\,\\text{mA}$.\n\nAssume $eU_\\text{k} = \\tfrac{hc}{\\lambda}$. Use the values $c = 2.998 \\cdot 10^8\\,\\text{m/s}$ and $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$ and the accepted value of the Planck constant, $6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$.\n\na) From the threshold voltage of each student, calculate the Planck constant $h = \\tfrac{eU_\\text{k}\\lambda}{c}$.\n\nb) Which of the reading methods are incorrect and why? Explain why Aino’s reading is too small and Salla’s too large.\n\nc) Calculate by what percentage the Planck constant given by Salla differs from the accepted value.\n\nWrite in the box the deviation of part c) as a percentage.",
+      "kind": [
+        "data",
+        "error"
+      ],
+      "answer": 3.65,
+      "unit": "%",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Threshold voltage with different reading methods (sample data)",
+        "columns": [
+          "Student",
+          "$U_\\text{k}\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "Aino",
+            "1.74"
+          ],
+          [
+            "Eero",
+            "1.88"
+          ],
+          [
+            "Salla",
+            "2.04"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-6-L2-07",
+      "level": 2,
+      "text": "The spectrum of a red LED was measured with a spectrometer. The table gives the relative intensity $I_\\text{rel}$ at different wavelengths, with the greatest intensity set to the value $1.00$ (sample data).\n\nUse the values $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^8\\,\\text{m/s}$ and $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$.\n\na) Draw the spectrum on paper and read the wavelength $\\lambda_\\text{p}$ of the peak. Why is the wavelength of an LED given as the wavelength of the peak and not as a colour estimated by eye?\n\nb) Read the width of the spectrum as the difference between the wavelengths at the two points where the intensity is half of the maximum. Compare the result with the width of the spectrum of a laser diode, about $1\\,\\text{nm}$.\n\nc) Calculate the difference $\\Delta E$ between the energies of the photons at these two points and use it to explain why an LED is not monochromatic.\n\nWrite in the box the energy difference of part c) in electronvolts.",
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "answer": 0.0625,
+      "unit": "eV",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Spectrum of a red LED (sample data)",
+        "columns": [
+          "$\\lambda\\,(\\text{nm})$",
+          "$I_\\text{rel}$"
+        ],
+        "rows": [
+          [
+            "605",
+            "0.01"
+          ],
+          [
+            "610",
+            "0.06"
+          ],
+          [
+            "615",
+            "0.21"
+          ],
+          [
+            "620",
+            "0.50"
+          ],
+          [
+            "625",
+            "0.84"
+          ],
+          [
+            "630",
+            "1.00"
+          ],
+          [
+            "635",
+            "0.86"
+          ],
+          [
+            "640",
+            "0.50"
+          ],
+          [
+            "645",
+            "0.22"
+          ],
+          [
+            "650",
+            "0.06"
+          ],
+          [
+            "655",
+            "0.01"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -99,6 +305,67 @@
       "answer": 22.1,
       "unit": "%",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy8-6-L3-04",
+      "level": 3,
+      "text": "A group measured the threshold voltages of five LEDs as the extension of the line of the current–voltage graph (table, sample data).\n\nThe zero point of the voltmeter was off: when the terminals of the meter were short-circuited, the meter showed $+0.05\\,\\text{V}$, so all the measured voltages are $0.05\\,\\text{V}$ too large.\n\nUse the values $c = 2.998 \\cdot 10^8\\,\\text{m/s}$ and $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$ and the accepted value of the Planck constant, $6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$.\n\na) Calculate the frequencies $f = \\tfrac{c}{\\lambda}$ and fit a line to the measured points $(f, U_\\text{measured})$, for example with Graphical Analysis Pro. Record the slope and the intercept on the vertical axis.\n\nb) Correct the voltages by subtracting the zero-point error and fit the line again. Which of the characteristics of the line changes and which does not?\n\nc) Calculate the Planck constant from the slope of the line and its deviation from the accepted value as a percentage.\n\nd) Also calculate the Planck constant from the threshold voltage of the red LED alone with the formula $h = \\tfrac{eU_\\text{k}\\lambda}{c}$, before and after the correction. Using your results, justify why the Planck constant should be determined from the slope of the line and not from a single LED.\n\nWrite in the box the Planck constant obtained in part c) from the slope of the line, in the unit $\\text{J}\\,\\text{s}$.",
+      "kind": [
+        "data",
+        "graph",
+        "error",
+        "reasoning"
+      ],
+      "answer": 6.74e-34,
+      "unit": "J s",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Threshold voltages of LEDs with the zero-point error of the meter (sample data)",
+        "columns": [
+          "Colour",
+          "$\\lambda\\,(\\text{nm})$",
+          "$U_\\text{measured}\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "red",
+            "630",
+            "1.93"
+          ],
+          [
+            "orange",
+            "590",
+            "2.08"
+          ],
+          [
+            "yellow",
+            "570",
+            "2.15"
+          ],
+          [
+            "green",
+            "525",
+            "2.36"
+          ],
+          [
+            "blue",
+            "465",
+            "2.64"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-6-L3-05",
+      "level": 3,
+      "text": "A measurement made with LEDs in class gave for the line between the threshold voltage and the frequency, $U_\\text{k} = kf + b$, the slope $k = 4.15 \\cdot 10^{-15}\\,\\text{V}\\,\\text{s}$ and the intercept $b = -0.10\\,\\text{V}$ (sample data).\n\nThe threshold voltage of an unknown LED was measured with the same method as $U_\\text{k} = 2.46\\,\\text{V}$, with a measurement uncertainty of the voltage of $\\pm 0.05\\,\\text{V}$. A spectrometer showed the peak of the spectrum of the LED at $483\\,\\text{nm}$.\n\nUse the values $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^8\\,\\text{m/s}$ and $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$.\n\na) Calculate the frequency and the wavelength of the light of the unknown LED using the calibration line.\n\nb) Also calculate the wavelength from the equation $eU_\\text{k} = \\tfrac{hc}{\\lambda}$ and compare both with the result of the spectrometer. Which method is better and why?\n\nc) Estimate the uncertainty of the wavelength of part a) when the voltage may be off by $0.05\\,\\text{V}$.\n\nWrite in the box the wavelength of part a) in nanometres.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 486,
+      "unit": "nm",
+      "tolerance": 0.02
     }
   ]
 }

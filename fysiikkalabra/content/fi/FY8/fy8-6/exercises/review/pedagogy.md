@@ -1,19 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 6e962ba765f93e9c
+CONTENT-HASH: 4d9d5477327a2bc7
+
+Round: 2
 
 ## Blocking
+(none)
 
 ## Polish
-- L2-04 solution — add one line that the phosphor, not the LED junction, absorbs the blue photon.
-- L1-03 — only c = fλ with no LED idea; link it to an LED to stay within the slot.
-- L3-02 — numbers in, formula out; add a situation (graph with error bars) and ask whether the accepted h lies in the interval.
-- L3-03 — close to L2-03 (same 20 mA, same chain); change the current or ask for the heat power.
-- L3-01 — repeats the lesson's "aineisto"; ask also for the deviation and the meaning of the intercept.
+- exercises.json fy8-6-L2-05 b) — "sovita ... suora" ei kerro pisteitä; kohta a) pyytää päättelemään ne, mikä on tarkoituksellista. Vihje "(noin viisi pistettä)" olisi mahdollinen mutta ei välttämätön.
+- exercises.json fy8-6-L3-04 — neljä kohtaa ja kaksi eri h-määritystä on edelleen raskas; ratkaisu on nyt jaettu kappaleisiin, mikä auttaa.
 
 ## Checked
-- Delta only adds units to L1-03 Järkevyys and "1 C · 1 V = 1 J" in L2-xx Muunnokset: correct, clearer.
-- Estimate in L1-03 now carries m/s, m and Hz: dimensionally consistent.
-- Levels 5/4/3 unchanged; none repeats the example.
-- Solutions keep the Annettu–Kysytty–Periaate–Kaava–Muunnokset–Sijoitus–Vastaus–Järkevyys order, principle explained.
-- Finnish and cases correct.
-- Hash unchanged at end: 6e962ba765f93e9c.
+- Round 1:n Blocking (L2-07 vastaus väitti puolet intensiteetistä välillä 1,91–2,03 eV) on korjattu: puolimaksimikohdat ovat nyt 620 ja 640 nm, ja ratkaisu sanoo, että fotonit välillä 1,94–2,00 eV muodostavat spektrin pääosan (taulukosta noin 87 %).
+- L2-07: λp = 630 nm, leveys 20 nm, ΔE = 2,0000 − 1,9375 = 0,0625 eV; answer 0.0625 vastaa ratkaisua; taulukko on symmetrinen ja täsmää.
+- L2-05: pisteiden keskipiste (2,10 V; 14,92 mA) ja k = 61,5 mA/V antavat Uk = 1,857 V; vastaus 1,86 V täsmää; Järkevyys-kohdan viittaus korjattu.
+- L2-06: h = 5,86 / 6,33 / 6,87 · 10^-34 Js, Sallan poikkeama 3,65 %; Eeron lukutapaa ei enää esitetä virheellisenä (round 1 Polish toteutettu).
+- L1-08: vastausmuoto "x · 10^16 1/s", answer 6,24 täsmää; L1-06 vaihtoehdot sekoitettu ja vastaus lyhennetty.
+- L3-04: ratkaisu jaettu kappaleisiin, luvut ennallaan (k = 4,208 · 10^-15 Vs, h = 6,74 · 10^-34 Js).
+- Määrät 8/7/5, tasot ja kinds sopivat suunnitelmaan; ei kaksoiskappaleita.

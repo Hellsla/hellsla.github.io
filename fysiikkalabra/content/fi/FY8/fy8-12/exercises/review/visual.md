@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 2154b64dd2c82968
+CONTENT-HASH: dac3457805b63750
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] exercises.json 12-7 — the field label "1/min" is plain text while the answer shows $\text{min}^{-1}$; project-wide field convention — leave.
+- [Minor] 12-13, 12-14, 12-19, 12-20 — "Vastaa laatikkoon kohdan c) ..." where the rest of the set (and the other chapters) writes "Vastauslaatikkoon tulee kohdan c) tulos"; unify the phrase.
+- [Minor] 12-14 b) — "Piirrä paperille" has no graph in the solution, only "Kuvaajan lukeminen" values; fine for a paper task, but a one-line note that the reading is read off the drawn curve would help.
+- [Minor] solutions.md 12-8 Mallivastaus — long single paragraph; split after the first two sentences.
 
 ## Checked
-- Own Playwright captures at 360 px, ?ratkaisut=1, details opened: every changed formula in fi (L1-05 Sijoitus) plus the en and fi-easy counterparts (contact sheets sheet-fi/en/fi-easy.png in scratchpad shots-fx/).
-- Result: h · \dfrac{c}{X} wraps after 'h ·' into a 2–4 row block, fraction bar intact, units upright with thin spaces, decimal comma; document scrollWidth = 360 = viewport, no clipped KaTeX.
-- LaTeX valid, no red KaTeX; hash at start and end the same.
+- 1280 px captures, every solution open: L1 parts 6-9 (12-6, 12-7, 12-8), L2 parts 4-10 (12-12 to 12-15 in full, both tables), L3 parts 5-9 (12-19, 12-20 in full). Chains, tables, fractions with units and answer boxes render cleanly; no clipping or red KaTeX. Only 1280 px exercise captures exist; 360 px rests on check_layout (ok).
 
 ## Scores
-illustrations n/a · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

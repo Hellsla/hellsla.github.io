@@ -1,14 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 0fdb00d7ade003fa
+CONTENT-HASH: a0681aa6ababb603
+Mode: translation
+Round: 1
 
 ## Blocking
 (none)
 
+## Fixed
+- exercises.json L1-06 (two feedbacks), L2-06 (a), L3-04 (a) and solutions.md L1-06, L1-07, L2-05 — natural English: "the galaxy's own motion" for "the own motion of the galaxy", "during the light's journey", "explain why ... from the units alone", "the model's speed". Meaning, numbers and LaTeX unchanged.
+
 ## Polish
-- L1-05 and L2-03 both ask for a photon energy of the background radiation; consider noting the 1/H0 idea in L2-02 (carried).
-- L3-02 — say "released" energy per reaction explicitly in the answer unit (carried).
+- Part c) of L3-04 and L3-05 b) are open reasoning prompts with only the final number in the answer field; same as fi, kept.
 
 ## Checked
-- Delta: L1-05 and L2-03 Sijoitus (three formulas): h·(c/X) instead of (h·c)/X — same value, intermediate results and answers unchanged, so the arithmetic and the student's path (Kaava hc/λ, then Sijoitus) still agree; the fraction now shows c/X as the quantity being divided, which is arguably clearer for tracing the units.
-- Opened own 360 px captures (?ratkaisut=1) of every changed solution step (scratchpad shots-fx/): the Sijoitus now wraps as 'h · [fraction c/X] = result' on two to four short rows, nothing clipped, no page scroll; same fraction-over-line form as the other solutions.
-- Levels, tasks and answers untouched by the commit; earlier PASS stands.
+- Level order and exercise count match fi (L1 8, L2 7, L3 5 in total with the new ones).
+- Feedback of every wrong choice in L1-06, L1-08 and L2-07 names the misconception and does not leak the answer, as in fi.
+- Natural English, no Finnish left in the 8 new exercises (text, choices, feedback, table captions, solutions).
+- Error-analysis tasks (L2-06, L2-07) keep the student's quote and ask for the same two parts as fi.
+- Solutions keep the fi structure (Annettu/Kysytty/Periaate/Kaava/Muunnokset/Sijoitus/Vastaus/Järkevyys).

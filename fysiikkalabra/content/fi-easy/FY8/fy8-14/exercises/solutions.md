@@ -117,3 +117,77 @@
 **Sijoitus:** $d = 3{,}9\,\text{mm} \cdot \dfrac{\ln 20}{\ln 2} = 3{,}9\,\text{mm} \cdot \dfrac{2{,}9957}{0{,}69315} = 3{,}9\,\text{mm} \cdot 4{,}3219 = 16{,}86\,\text{mm}$
 **Vastaus:** noin $17\,\text{mm}$. Vastauksessa on kaksi merkitsevää numeroa, kuten puoliintumispaksuudessa $3{,}9\,\text{mm}$ ja osuudessa $5{,}0\,\%$.
 **Järkevyys:** Neljä puoliintumispaksuutta päästäisi läpi $\tfrac{1}{16} \approx 6{,}3\,\%$ ja viisi $\tfrac{1}{32} \approx 3{,}1\,\%$. Paksuuden on siis oltava lukujen $4 \cdot 3{,}9\,\text{mm} = 15{,}6\,\text{mm}$ ja $5 \cdot 3{,}9\,\text{mm} = 19{,}5\,\text{mm}$ välissä. Teknetium-$99\text{m}$:n fotoneille, joiden energia on $140\,\text{keV}$, sama vaimennus vaatisi vain noin $1\,\text{mm}$ lyijyä, koska niiden puoliintumispaksuus on noin $0{,}26\,\text{mm}$.
+
+## fy8-14-L1-06
+**Kysytty:** miksi positronia lähettävä merkkiaine sopii lähteen paikantamiseen kehon ulkopuolelta.
+**Periaate:** Positroni on varattu hiukkanen. Se pysähtyy kudoksessa jo muutaman millimetrin matkalla ja annihiloituu elektronin kanssa. Annihilaatiossa hiukkaset häviävät ja niistä syntyy säteilyä. Alussa liikemäärä on lähes nolla. Siksi syntyy kaksi fotonia, jotka lähtevät vastakkaisiin suuntiin. Niillä on sama energia $E_\gamma = m_e c^2 = 511\,\text{keV}$.
+**Mallivastaus:** Positroni annihiloituu elektronin kanssa kahdeksi vastakkaiseksi fotoniksi. Fotonien yhdistävä jana kulkee lähteen kautta. Ilmaisin havaitsee fotonit yhtä aikaa, ja lähde on tällä janalla. Kun piirretään monta janaa, niiden leikkauskohta näyttää merkkiaineen paikan. Ilmaisin ei havaitse positronia itseään. Positroni pysähtyy kudokseen, koska se on sähkövarauksellinen eikä kulje suoraan ulos. Fotonien energia on aina $511\,\text{keV}$. Energia ei kerro syvyyttä vaan sen, että kyseessä on annihilaatio.
+
+## fy8-14-L1-07
+**Kysytty:** onko annoksen pienentäminen kohinaisessa kuvassa säteilysuojelun kannalta järkevää.
+**Periaate:** Säteilyn käytön periaatteita ovat oikeutus, optimointi ja annosrajat. Optimointi ei tarkoita mahdollisimman pientä annosta hinnalla millä hyvänsä. Se tarkoittaa pienintä annosta, jolla kuva vastaa kysymykseen.
+**Mallivastaus:** Ehdotus ei ole järkevä. Kun annos on liian pieni, kuva jää kohinaiseksi. Siitä ei näe pientä keuhkomuutosta, jota etsittiin. Tutkimus joudutaan tekemään uudelleen, ja potilas saa kaksi annosta yhden sijasta. Siksi annosta ei pienennetä enempää. Kuvausasetukset valitaan niin, että kuva on juuri riittävän selvä.
+
+## fy8-14-L1-08
+**Annettu:** kiihdytysjännite $U = 80\,\text{kV}$, alkeisvaraus $e = 1{,}602 \cdot 10^{-19}\,\text{C}$
+**Kysytty:** röntgenfotonin suurin mahdollinen energia $E_\text{max}$ jouleina
+**Periaate:** Jännite $U$ antaa elektronille liike-energian $eU$. Fotoni saa suurimman energian silloin, kun elektroni antaa sille koko liike-energiansa. Näin käy, kun elektroni jarruttaa anodissa.
+**Kaava:** $E_\text{max} = eU$
+**Muunnokset:** $U = 80\,\text{kV} = 80 \cdot 1000\,\text{V} = 80\,000\,\text{V}$, ja $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$.
+**Sijoitus:** $E_\text{max} = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 80\,000\,\text{V} = 1{,}2816 \cdot 10^{-14}\,\text{J}$
+**Vastaus:** $1{,}3 \cdot 10^{-14}\,\text{J}$. Vastauksessa on kaksi merkitsevää numeroa, kuten jännitteessä $80\,\text{kV}$.
+**Järkevyys:** Elektronin energia on $80\,\text{keV}$, ja $80\,000 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 1{,}28 \cdot 10^{-14}\,\text{J}$. Kuvauksessa fotonien energia on kymmeniä kiloelektronivoltteja. Tulos on siis oikeaa suuruusluokkaa. Useimmat fotonit saavat tätä pienemmän energian, koska jarruttava elektroni antaa usein vain osan energiastaan.
+
+## fy8-14-L2-05
+**Annettu:** taulukosta hammaskuva $0{,}010\,\text{mSv}$ kolme kertaa, keuhkokuva $0{,}10\,\text{mSv}$ kaksi kertaa ja pään TT $2{,}0\,\text{mSv}$ kerran. Luonnon säteilyn vuosiannos on $H_\text{luonto} = 5{,}1\,\text{mSv}$ (STUK-A263, 2020).
+**Kysytty:** kokonaisannoksen osuus $p$ luonnon säteilyn vuosiannoksesta prosentteina
+**Periaate:** Efektiivisiä annoksia voi verrata suoraan ja laskea yhteen. Kokonaisannos on jokaisen tutkimuksen annos kertaa tutkimusten lukumäärä, ja nämä tulot lasketaan yhteen. Vertailu tehdään yhdellä jakolaskulla.
+**Kaava:** $H = n_1 H_1 + n_2 H_2 + n_3 H_3$ ja $p = \dfrac{H}{H_\text{luonto}} \cdot 100\,\%$
+**Muunnokset:** Niitä ei tarvita, koska kaikki annokset ovat millisieverteinä. Osuus muutetaan prosenteiksi kertomalla se luvulla $100\,\%$.
+**Sijoitus:** $H = 3 \cdot 0{,}010\,\text{mSv} + 2 \cdot 0{,}10\,\text{mSv} + 1 \cdot 2{,}0\,\text{mSv} = 0{,}030\,\text{mSv} + 0{,}20\,\text{mSv} + 2{,}0\,\text{mSv} = 2{,}23\,\text{mSv}$
+$p = \dfrac{2{,}23\,\text{mSv}}{5{,}1\,\text{mSv}} \cdot 100\,\% = 43{,}73\,\%$
+**Vastaus:** $44\,\%$. Vastauksessa on kaksi merkitsevää numeroa, kuten luonnon säteilyn annoksessa $5{,}1\,\text{mSv}$.
+**Järkevyys:** Pään TT:n annos $2{,}0\,\text{mSv}$ on lähes koko summa, ja $2{,}0 : 5{,}1 \approx 0{,}39$. Pienet kuvat lisäävät vain $0{,}23\,\text{mSv}$. Kokonaisuus on siis $(2{,}0 + 0{,}23) : 5{,}1 \approx 0{,}44$ eli noin $44\,\%$. Annos on alle puolet vuosiannoksesta, ja suurin osa siitä tulee yhdestä TT-tutkimuksesta.
+
+## fy8-14-L2-06
+**Annettu:** taulukosta aktiivisuus $A = 500$; $355$; $252$; $123$ ja $64\,\text{MBq}$ ajanhetkinä $t = 0{,}0$; $2{,}0$; $4{,}0$; $8{,}0$ ja $12{,}0\,\text{h}$. Hajoamisen puoliintumisaika on $T_{1/2} = 6{,}01\,\text{h}$.
+**Kysytty:** a) aika, jossa aktiivisuus potilaassa puolittuu. b) Mitatun aktiivisuuden osuus $p$ pelkän hajoamisen antamasta aktiivisuudesta hetkellä $12{,}0\,\text{h}$ prosentteina.
+**Periaate:** Aktiivisuus potilaassa pienenee kahdesta syystä. Ydin hajoaa, ja elimistö poistaa merkkiainetta, esimerkiksi virtsan mukana. Pelkän hajoamisen antama aktiivisuus noudattaa lakia $A = A_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$.
+**Kaava:** a) puolittumisaika luetaan taulukosta. b) $A_\text{hajoaminen} = A_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$ ja $p = \dfrac{A_\text{mitattu}}{A_\text{hajoaminen}} \cdot 100\,\%$
+**Muunnokset:** Niitä ei tarvita, koska aika ja puoliintumisaika ovat molemmat tunteina ja aktiivisuudet megabecquereleinä.
+**Sijoitus:**
+a) Aktiivisuus $500\,\text{MBq}$ puolittuu noin arvoon $250\,\text{MBq}$ ajassa $4{,}0\,\text{h}$ (taulukossa $252\,\text{MBq}$). Se puolittuu edelleen noin arvoon $125\,\text{MBq}$ seuraavassa $4{,}0\,\text{h}$:ssa (taulukossa $123\,\text{MBq}$ hetkellä $8{,}0\,\text{h}$). Puolittumisaika on siis noin $4{,}0\,\text{h}$.
+b) $A_\text{hajoaminen} = 500\,\text{MBq} \cdot \left(\tfrac{1}{2}\right)^{12{,}0\,\text{h} / 6{,}01\,\text{h}} = 500\,\text{MBq} \cdot 0{,}2506 = 125{,}3\,\text{MBq}$, joten $p = \dfrac{64\,\text{MBq}}{125{,}3\,\text{MBq}} \cdot 100\,\% = 51{,}1\,\%$
+**Vastaus:** b) $51\,\%$. Vastauksessa on kaksi merkitsevää numeroa, kuten mitatussa aktiivisuudessa $64\,\text{MBq}$. Kohdassa a) puolittumisaika on noin $4{,}0\,\text{h}$. Se on lyhyempi kuin hajoamisen puoliintumisaika, koska hajoamisen lisäksi merkkiainetta poistuu elimistöstä.
+**Järkevyys:** Kaksitoista tuntia on kaksi puoliintumisaikaa hajoamiselle. Pelkällä hajoamisella aktiivisuus olisi siis noin $500 : 4 = 125\,\text{MBq}$, ja mitattu $64\,\text{MBq}$ on noin puolet siitä. Kolme puolittumisaikaa $4{,}0\,\text{h}$ antaisi $500 : 8 = 62{,}5\,\text{MBq}$. Se sopii mitattuun arvoon.
+
+## fy8-14-L2-07
+**Annettu:** läpi päästettävä osuus ${I : I_0} = 1{,}0\,\% = 0{,}010$, lyijyn puoliintumispaksuus $511\,\text{keV}$:n fotoneille $d_{1/2} = 3{,}9\,\text{mm}$ ja $140\,\text{keV}$:n fotoneille $0{,}26\,\text{mm}$
+**Kysytty:** oppilaan virhe ja lyijysuojan oikea paksuus $d$ millimetreinä
+**Periaate:** Puoliintumispaksuus riippuu fotonien energiasta. Suojan on pysäytettävä $511\,\text{keV}$:n fotonit. Laskussa pitää siis käyttää niiden puoliintumispaksuutta $3{,}9\,\text{mm}$. Oppilas käytti $140\,\text{keV}$:n fotonien arvoa $0{,}26\,\text{mm}$, joten suoja olisi liian ohut. Oppilaan luku $n = 6{,}64$ on muuten oikein.
+**Kaava:** $\left(\tfrac{1}{2}\right)^{n} = \dfrac{I}{I_0}$, josta $n = \dfrac{\ln (I_0 : I)}{\ln 2}$ ja $d = n \, d_{1/2}$
+**Muunnokset:** $1{,}0\,\% = 0{,}010$, joten ${I_0 : I} = {1 : 0{,}010} = 100$. Paksuus saadaan millimetreinä, kuten puoliintumispaksuus.
+**Sijoitus:** $n = \dfrac{\ln 100}{\ln 2} = \dfrac{4{,}6052}{0{,}69315} = 6{,}644$ ja $d = 6{,}644 \cdot 3{,}9\,\text{mm} = 25{,}91\,\text{mm}$
+**Vastaus:** oikea paksuus on $26\,\text{mm}$. Vastauksessa on kaksi merkitsevää numeroa, kuten puoliintumispaksuudessa $3{,}9\,\text{mm}$. Oppilaan tulos $1{,}7\,\text{mm}$ on väärä, koska se perustuu energian $140\,\text{keV}$ arvoon.
+**Järkevyys:** Seitsemän puoliintumispaksuutta päästäisi läpi $\left(\tfrac{1}{2}\right)^{7} = \tfrac{1}{128} \approx 0{,}78\,\%$ ja kuusi $\tfrac{1}{64} \approx 1{,}6\,\%$. Paksuuden on siis oltava lukujen $6 \cdot 3{,}9\,\text{mm} = 23{,}4\,\text{mm}$ ja $7 \cdot 3{,}9\,\text{mm} = 27{,}3\,\text{mm}$ välissä. Oppilaan $1{,}7\,\text{mm}$ on $511\,\text{keV}$:n fotoneille vain $1{,}7 : 3{,}9 \approx 0{,}44$ puoliintumispaksuutta. Läpi pääsisi silloin noin $74\,\%$ eikä $1{,}0\,\%$.
+
+## fy8-14-L3-04
+**Annettu:** taulukosta massa $m = 75\,\text{kg}$, vaadittu aktiivisuus kuvauksen alussa $a = 2{,}0\,\tfrac{\text{MBq}}{\text{kg}}$, odotusaika $t = 60\,\text{min}$, fluori-$18$:n puoliintumisaika $T_{1/2} = 110\,\text{min}$, annoskerroin $k = 0{,}019\,\tfrac{\text{mSv}}{\text{MBq}}$, TT-osan annos $H_\text{TT} = 6{,}0\,\text{mSv}$. Luonnon säteilyn vuosiannos on $5{,}1\,\text{mSv}$.
+**Kysytty:** a) potilaan efektiivinen kokonaisannos $H$ millisieverteinä. b) Vertailu luonnon säteilyyn ja tutkimuksen oikeutus.
+**Periaate:** Kuvaukseen tarvittava aktiivisuus $A_\text{kuv} = a m$ on oltava jäljellä odotusajan jälkeen. Odotusaikana aktiivisuus pienenee vain hajoamalla. Siksi ruiskutettava aktiivisuus $A_0$ on suurempi kuin $A_\text{kuv}$. Pienin sopiva arvo saadaan hajoamislaista. Annos riippuu ruiskutetusta aktiivisuudesta. PET-osan ja TT-osan annokset lasketaan yhteen.
+**Kaava:** $A_\text{kuv} = A_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$, josta $A_0 = \dfrac{a m}{\left(\tfrac{1}{2}\right)^{t/T_{1/2}}}$, ja $H = k A_0 + H_\text{TT}$
+**Muunnokset:** Niitä ei tarvita, koska odotusaika ja puoliintumisaika ovat molemmat minuutteina. Annoskerroin on millisievertteinä megabecquerelia kohti.
+**Sijoitus:** $A_\text{kuv} = 2{,}0\,\tfrac{\text{MBq}}{\text{kg}} \cdot 75\,\text{kg} = 150\,\text{MBq}$ ja $\left(\tfrac{1}{2}\right)^{60\,\text{min} / 110\,\text{min}} = \left(\tfrac{1}{2}\right)^{0{,}5455} = 0{,}6853$, joten $A_0 = \dfrac{150\,\text{MBq}}{0{,}6853} = 218{,}9\,\text{MBq}$. Tällöin $H = 0{,}019\,\tfrac{\text{mSv}}{\text{MBq}} \cdot 218{,}9\,\text{MBq} + 6{,}0\,\text{mSv} = 4{,}16\,\text{mSv} + 6{,}0\,\text{mSv} = 10{,}16\,\text{mSv}$
+**Vastaus:** a) $10\,\text{mSv}$. Vastauksessa on kaksi merkitsevää numeroa, kuten massassa $75\,\text{kg}$ ja aktiivisuudessa $2{,}0\,\tfrac{\text{MBq}}{\text{kg}}$. b) Kokonaisannos on noin kaksi luonnon säteilyn vuosiannosta ($10{,}16 : 5{,}1 = 2{,}0$). Se on siis selvästi suurempi kuin vuosiannos. Tutkimus on oikeutettu, kun lääkäri arvioi kaksi asiaa. Tulos ratkaisee hoitoa koskevan kysymyksen, eikä pienemmän annoksen menetelmällä saada samaa tietoa. Silloin hyöty potilaalle on suurempi kuin säteilyn aiheuttama pieni lisäriski. Annos optimoidaan käyttämällä pienintä aktiivisuutta, jolla kuva onnistuu.
+**Järkevyys:** Odotusaika $60\,\text{min}$ on hieman yli puolet puoliintumisajasta. Noin kolmannes aktiivisuudesta ehtii siis hajota: $150 : 0{,}69 \approx 217\,\text{MBq}$. Tämä vastaa tulosta $218{,}9\,\text{MBq}$. PET-osan annos $4{,}2\,\text{mSv}$ on samaa suuruusluokkaa kuin muiden PET-tutkimusten annokset, ja TT-osa lisää siihen vielä enemmän.
+
+## fy8-14-L3-05
+**Annettu:** taulukosta paksuudet $d = 0{,}0$; $5{,}0$; $10{,}0$; $15{,}0$ ja $20{,}0\,\text{mm}$ ja laskentataajuudet $R = 1006$; $689$; $468$; $327$ ja $221\,\tfrac{1}{\text{s}}$. Tuntemattoman levyn laskentataajuus on $R_x = 402\,\tfrac{1}{\text{s}}$.
+**Kysytty:** a) laskentataajuuksien suhteet. b) Alumiinin puoliintumispaksuus $d_{1/2}$. c) Tuntemattoman levyn paksuus $d_x$ millimetreinä.
+**Periaate:** Oletetaan, että säteily vaimenee puoliintumispaksuuden mukaan. Silloin jokainen yhtä paksu lisäkerros pienentää laskentataajuutta samalla kertoimella. Laskentataajuus on verrannollinen ilmaisimeen osuvan säteilyn intensiteettiin. Siksi $R = R_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$. Tuntematon paksuus ratkaistaan logaritmilla.
+**Kuvaajan lukeminen:** Taulukosta luetaan kaikkien levyjen laskentataajuudet. Kohdassa a) lasketaan suhteet $689 : 1006 = 0{,}685$, $468 : 689 = 0{,}679$, $327 : 468 = 0{,}699$ ja $221 : 327 = 0{,}676$. Ne ovat lähes samat, noin $0{,}68$, vaikka mittauksessa on pientä satunnaisvaihtelua. Jokainen $5{,}0\,\text{mm}$ levyä pienentää siis laskentataajuuden samaan murto-osaan. Se sopii eksponentiaaliseen vaimenemiseen. Kohdassa b) lasketaan puoliintumispaksuus taulukon ensimmäisestä ja viimeisestä rivistä. Tarkistuksena voi sovittaa suoran $\ln R$:n ja $d$:n välille kaikkiin viiteen pisteeseen. Se antaa $d_{1/2} = 9{,}18\,\text{mm}$ ja $d_x = 12{,}1\,\text{mm}$ eli saman vastauksen.
+**Kaava:** $\dfrac{R_0}{R} = 2^{d/d_{1/2}}$, josta $d = d_{1/2} \cdot \dfrac{\ln (R_0 : R)}{\ln 2}$. Kalibroinnista $d_{1/2} = \dfrac{d_{20} \ln 2}{\ln (R_0 : R_{20})}$ ja tuntemattomalle $d_x = d_{1/2} \cdot \dfrac{\ln (R_0 : R_x)}{\ln 2}$.
+**Muunnokset:** Niitä ei tarvita, koska paksuudet ovat millimetreinä. Laskentataajuuksien suhde on paljas luku.
+**Sijoitus:** b) $d_{1/2} = \dfrac{20{,}0\,\text{mm} \cdot 0{,}69315}{\ln (1006 : 221)} = \dfrac{13{,}863\,\text{mm}}{1{,}5157} = 9{,}147\,\text{mm}$. c) $d_x = 9{,}147\,\text{mm} \cdot \dfrac{\ln (1006 : 402)}{0{,}69315} = 9{,}147\,\text{mm} \cdot \dfrac{0{,}9174}{0{,}69315} = 9{,}147\,\text{mm} \cdot 1{,}3236 = 12{,}11\,\text{mm}$
+**Vastaus:** c) $12\,\text{mm}$. Vastauksessa on kaksi merkitsevää numeroa. Puoliintumispaksuus $d_{1/2}$ on määritetty kalibroinnista, ja mittausten satunnaisvaihtelu rajoittaa sen tarkkuuden noin kahteen numeroon (suhteet $0{,}68 \pm 0{,}01$). Kohdassa b) alumiinin puoliintumispaksuus on $9{,}1\,\text{mm}$.
+**Järkevyys:** Laskentataajuus $402\,\tfrac{1}{\text{s}}$ on taulukon arvojen $468$ ($10{,}0\,\text{mm}$) ja $327$ ($15{,}0\,\text{mm}$) välissä. Paksuuden on siis oltava $10{,}0\,\text{mm}$:n ja $15{,}0\,\text{mm}$:n välissä, ja $12{,}1\,\text{mm}$ on. Tarkistus: $12{,}1\,\text{mm}$ on $12{,}1 : 9{,}147 = 1{,}32$ puoliintumispaksuutta, ja $1006 \cdot \left(\tfrac{1}{2}\right)^{1{,}32} = 403$, kuten mitattu $402$. Tulos pätee vain kalibroidulla välillä. Taustasäteily on vähennettävä, koska se ei vaimene levyssä.

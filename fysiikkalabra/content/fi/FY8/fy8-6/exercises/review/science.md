@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 6e962ba765f93e9c
+CONTENT-HASH: 4d9d5477327a2bc7
+Round: 2
 
 ## Blocking
 
 ## Polish
-- exercises/exercises.json (L2-01) — "kuinka suuri jännite LEDiin on vähintään kytkettävä" while solutions.md L2-01 says the measured threshold is usually about 0,1 V below the estimate; "Arvioi LEDin kynnysjännite" avoids calling it a minimum.
-- solutions.md L2-03 — Vastaus "noin 39 mW, kaksi merkitsevää numeroa" while exercises.json stores 39.4; harmless within 2 % tolerance.
-- solutions.md L2-04 Järkevyys — "kuten fluoresenssissa aina": fine at this level (C); "tavallisesti" would be exact.
+- solutions.md fy8-6-L2-06 Vastaus — "hänen ylimääräinen noin 0,16 V kumoaa osan siitä, että kynnysjännite on … noin 0,1 V pienempi" (my round-1 wording) understates it: 0,16 V cancels the whole 0,09 V deficit (hc/eλ = 1,97 V, Eero 1,88 V) and overshoots by 0,07 V, which is why |+3,65 %| < |−4,5 %|. — Write "kumoaa koko noin 0,09 V:n eron ja ylittää arvon hc/(eλ) noin 0,07 V:lla, joten poikkeama on pienempi kuin Eerolla".
+- solutions.md fy8-6-L2-07 Vastaus — 0,0625 eV is the difference of two nearly equal energies; a ±1 nm reading of the half-maximum points changes it by ±0,003 eV, so "kolme merkitsevää numeroa kuten aallonpituuksissa" overstates it. — Give 0,063 eV (or 0,06 eV) with that reason; the key 0.0625 with tolerance 3 % can stay.
+- docs/exercise-bank/FY8.md fy8-6 — carried over: Taso 3 says "h tyypillisesti hieman liian suuri", but the set (L3-04, L2-06) shows the single-LED h is usually too small; L1-08 (elektronit sekunnissa) is not in the plan and L1-07 is L2-01 reversed one level lower. — Fix the plan.
 
 ## Checked
-- One-script recompute of all 12 answers with own formulas: 3,124e-19 J; 2,362 eV; 4,612e14 Hz; 873,2 nm; 6,568e-34; 2,638 V; 6,304e-34 (stored 6,3e-34, within tolerance); 39,36 mW; 0,541 eV; 6,748e-34 (LSQ k = 4,212e-15, b = −0,164 V); 2,403e-35; 22,08 % — all match answers.py and solutions.
-- L3-01 data realistic (offsets −0,11…−0,13 V below hc/(eλ)); two-endpoint check 4,18e-15 V s right.
-- L3-02 steepest/shallowest lines as an estimated range; (6,6 ± 0,2)·10^-34 J s, ≈ 4 %.
-- L3-03 at most one photon per electron; 68 mW upper-bound check real.
-- L2-02 assumption eU_k = hc/λ stated in the task; −4,9 % explained by the offset, consistent with the brief.
-- L2-03, L3-03 assumptions (one escaping photon per electron) stated in the tasks.
-- Units, conversions, symbolic solving first, rounding by the limiting datum throughout.
-- Notation (U_k, h = ek, 1240 eV nm) matches the brief; within FY8 scope.
+- Round-1 Blocking L2-06 resolved: the false "lähimpänä hyväksyttyä arvoa" clause is gone; b) is answered in Vastaus (Aino and Salla wrong and why, Salla closer by chance, Eero's −4,5 % is the ~0,1 V gap).
+- Round-1 Blocking L2-07 resolved: "intensiteetti on vähintään puolet maksimista … 1,94–2,00 eV" (that band holds about 87 % of the tabulated intensity, "pääosa" is right); E_g is called a material property with thermal spread.
+- L2-07 new data: peak 630 nm, half-maximum points 620/640 nm, FWHM 20 nm (typical red LED, round-1 polish applied); ΔE = 2,0000 − 1,9375 = 0,0625 eV; answers.py gives 0,06250, key 0.0625.
+- L2-05 now uses the fit's mean point (2,10 V; 14,92 mA): U_k = 1,857 V, recomputed. L3-04 says "yleensä"; c)/d) split matches the solution; h = 6,742·10⁻³⁴ J s.
+- L1-06 reordered: one correct option, answer text matches, distractors and feedback right. L1-08 asks for x, key 6,24.
+- All 19 answers.py values reproduced; hash identical at start and end.

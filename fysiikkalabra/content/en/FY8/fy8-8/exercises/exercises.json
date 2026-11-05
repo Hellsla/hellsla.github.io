@@ -39,6 +39,59 @@
       "answer": 10,
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-8-L1-06",
+      "level": 1,
+      "text": "A radioactive nucleus can decay in several ways. Which of the following decays increases the atomic number $Z$ of the nucleus by one and leaves the mass number $A$ unchanged?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Beta minus decay, because in the nucleus a neutron changes into a proton and an electron leaves",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Beta minus decay, because in the nucleus a neutron changes into a proton and an electron leaves",
+          "correct": true,
+          "feedback": "Correct: when a neutron changes into a proton, the number of protons increases by one, and the total number of nucleons stays the same. The charge number is conserved when the charge number $-1$ of the electron is counted: for example ${}^{14}_{6}\\text{C} \\to {}^{14}_{7}\\text{N} + {}^{0}_{-1}\\text{e} + \\bar{\\nu}$."
+        },
+        {
+          "text": "Beta plus decay, because in the nucleus a proton changes into a neutron and a positron leaves",
+          "feedback": "In this decay a proton changes into a neutron, so the atomic number decreases by one and does not increase. The mass number stays the same, but the direction is wrong: ${}^{18}_{9}\\text{F} \\to {}^{18}_{8}\\text{O} + {}^{0}_{+1}\\text{e} + \\nu$."
+        },
+        {
+          "text": "Alpha decay, because two protons and two neutrons leave the nucleus as a single unit",
+          "feedback": "The alpha particle takes two protons and two neutrons out of the nucleus, so the atomic number decreases by two and the mass number by four. Neither fits the change asked about."
+        },
+        {
+          "text": "Gamma decay, because a gamma photon leaves the nucleus and the nucleus moves to a lower energy level",
+          "feedback": "A gamma photon carries away only energy. The numbers of protons and neutrons do not change, so both the atomic number and the mass number stay the same."
+        }
+      ]
+    },
+    {
+      "id": "fy8-8-L1-07",
+      "level": 1,
+      "text": "Radium-226 ${}^{226}_{88}\\text{Ra}$ decays by alpha decay. How many neutrons are there in the daughter nucleus that is formed?",
+      "kind": [
+        "concept"
+      ],
+      "answer": 136,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-8-L1-08",
+      "level": 1,
+      "text": "Cobalt-60 ${}^{60}_{27}\\text{Co}$ decays by beta minus decay to an excited nickel-60 nucleus, which releases its excitation energy by emitting a gamma photon.\n\na) How many protons are there in the nucleus after the gamma photon has left?\n\nb) Justify briefly why the emission of a gamma photon changes neither the number of protons nor the number of neutrons of the nucleus.\n\nThe result of part a) is entered in the answer field.",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": 28,
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,6 +126,127 @@
       "answer": 138,
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-8-L2-05",
+      "level": 2,
+      "text": "The table gives the proton number $Z$ and the neutron number $N$ of six radioactive nuclei before decay, and the numbers $Z'$ and $N'$ of the daughter nucleus after decay. The numbers are from the main decay modes of the nuclei (NNDC NuDat 3).\n\na) Deduce the decay mode of each row: alpha, beta minus, beta plus or gamma decay.\n\nb) Calculate in how many of the rows the nucleus decays by beta minus decay.\n\nThe result of part b) is entered in the answer field.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 3,
+      "unit": "",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Proton and neutron numbers of the nucleus before decay ($Z$, $N$) and after it ($Z'$, $N'$)",
+        "columns": [
+          "Nucleus",
+          "$Z$",
+          "$N$",
+          "$Z'$",
+          "$N'$"
+        ],
+        "rows": [
+          [
+            "Ra-226",
+            "88",
+            "138",
+            "86",
+            "136"
+          ],
+          [
+            "Pb-210",
+            "82",
+            "128",
+            "83",
+            "127"
+          ],
+          [
+            "Na-22",
+            "11",
+            "11",
+            "10",
+            "12"
+          ],
+          [
+            "I-131",
+            "53",
+            "78",
+            "54",
+            "77"
+          ],
+          [
+            "Ba-137 (excited)",
+            "56",
+            "81",
+            "56",
+            "81"
+          ],
+          [
+            "Sr-90",
+            "38",
+            "52",
+            "39",
+            "51"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-8-L2-06",
+      "level": 2,
+      "text": "A student wrote the equation of the alpha decay of americium-241 as ${}^{241}_{95}\\text{Am} \\to {}^{237}_{94}\\text{Np} + {}^{4}_{2}\\text{He}$ and justified it: “The alpha particle is a single particle, so the atomic number decreases by one.”\n\na) Find the student's error by checking whether the mass number and the charge number are conserved in the equation.\n\nb) Write the correct decay equation and calculate how many neutrons there are in the daughter nucleus.\n\nThe number of neutrons in part b) is entered in the answer field.",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "answer": 144,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-8-L2-07",
+      "level": 2,
+      "text": "A gamma spectrometer sorts the pulses of the detector into channels according to the height of the pulse, so its channel number is proportional to the energy of the photon. The energy scale is obtained by calibrating the device with sources whose gamma line energies are known. The table gives the channel number of the peak for four lines (example data, energies NNDC NuDat 3). The peak of an unknown source falls on channel $1531$.\n\na) Draw a graph in which $E_\\gamma$ is a function of the channel number, and fit a straight line to the points.\n\nb) Read from the line the energy $E_\\gamma$ of the unknown peak in kiloelectronvolts.\n\nc) Explain why fitting a straight line is better than joining two points.\n\nThe result of part b) is entered in the answer field.",
+      "kind": [
+        "experiment",
+        "data",
+        "graph"
+      ],
+      "answer": 916,
+      "unit": "keV",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Calibration of a gamma spectrometer: channel of the peak and energy of the line",
+        "columns": [
+          "Source",
+          "Channel",
+          "$E_\\gamma\\,(\\text{keV})$"
+        ],
+        "rows": [
+          [
+            "Am-241",
+            "98",
+            "59.54"
+          ],
+          [
+            "Cs-137",
+            "1104",
+            "661.7"
+          ],
+          [
+            "Co-60",
+            "1961",
+            "1173.2"
+          ],
+          [
+            "Co-60",
+            "2227",
+            "1332.5"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -99,6 +273,106 @@
       "answer": 87,
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-8-L3-04",
+      "level": 3,
+      "text": "Radon-222 ${}^{222}_{86}\\text{Rn}$ is a member of the uranium series, and the series ends in stable lead-206, ${}^{206}_{82}\\text{Pb}$. The table lists members of the series in order, and each nucleus is the daughter nucleus of the previous one (NNDC NuDat 3). The series has only alpha and beta minus decays.\n\na) Deduce the decay mode of each transition from the table.\n\nb) The nuclei between Pb-210 and Pb-206 are missing. Calculate how many alpha and how many beta minus decays there are between them.\n\nc) Calculate how many beta minus decays there are in the whole series from Rn-222 to Pb-206. Check the result by calculating the number of alpha decays from the change in the mass number and substituting it into the change in the atomic number.\n\nd) Justify why alpha decays alone could not take radon to lead-206.\n\nThe number of beta minus decays in part c) is entered in the answer field.",
+      "kind": [
+        "data",
+        "reasoning",
+        "model"
+      ],
+      "answer": 4,
+      "unit": "",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Members of the uranium series in order",
+        "columns": [
+          "Nucleus",
+          "$A$",
+          "$Z$"
+        ],
+        "rows": [
+          [
+            "Rn-222",
+            "222",
+            "86"
+          ],
+          [
+            "Po-218",
+            "218",
+            "84"
+          ],
+          [
+            "Pb-214",
+            "214",
+            "82"
+          ],
+          [
+            "Bi-214",
+            "214",
+            "83"
+          ],
+          [
+            "Po-214",
+            "214",
+            "84"
+          ],
+          [
+            "Pb-210",
+            "210",
+            "82"
+          ],
+          [
+            "Pb-206 (stable)",
+            "206",
+            "82"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-8-L3-05",
+      "level": 3,
+      "text": "Five lines were measured from the gamma spectrum of an imaginary nucleus (example data). In addition to the ground state, the nucleus has three excited levels, and the nucleus is at first on the top level. In a second experiment the energy of the lowest excited level was found to be $351.2\\,\\text{keV}$ above the ground state. The sixth possible transition does not appear in the table.\n\na) Deduce all the energy levels of the nucleus from the table and draw a level diagram with the transitions. Justify your deduction with the differences of the levels.\n\nb) Calculate the energy of the missing gamma line.\n\nc) Calculate the wavelength of the missing line in picometres ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{keV} = 1000\\,\\text{eV}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$).\n\nThe result of part c) is entered in the answer field.",
+      "kind": [
+        "data",
+        "reasoning",
+        "model"
+      ],
+      "answer": 1.08,
+      "unit": "pm",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Measured gamma lines",
+        "columns": [
+          "Line",
+          "$E_\\gamma\\,(\\text{keV})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "351.2"
+          ],
+          [
+            "2",
+            "468.9"
+          ],
+          [
+            "3",
+            "681.3"
+          ],
+          [
+            "4",
+            "820.5"
+          ],
+          [
+            "5",
+            "1501.4"
+          ]
+        ]
+      }
     }
   ]
 }

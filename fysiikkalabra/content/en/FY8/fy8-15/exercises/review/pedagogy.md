@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 5ed5af187d8f9cb2
+CONTENT-HASH: c0821c73c198f4f9
 
 ## Blocking
 (none)
 
 ## Polish
-- Level 1 is mostly charge/baryon-number counting; L1-01 repeats the lesson's Delta++ reasoning (carried).
-- No level 1-2 task asks whether a given reaction is possible (carried).
-- Nothing practises beta decay at quark level or mediators (carried).
+- Part c) of L3-04 and L3-05 asks for an explanation while the answer box takes only b); the text says so ("The answer box takes the result of part b)"), as in fi.
 
 ## Checked
-- Delta: L2-03 Sijoitus: h·(c/X) instead of (h·c)/X — same value, intermediate results and answers unchanged, so the arithmetic and the student's path (Kaava hc/λ, then Sijoitus) still agree; the fraction now shows c/X as the quantity being divided, which is arguably clearer for tracing the units.
-- Opened own 360 px captures (?ratkaisut=1) of every changed solution step (scratchpad shots-fx/): the Sijoitus now wraps as 'h · [fraction c/X] = result' on two to four short rows, nothing clipped, no page scroll; same fraction-over-line form as the other solutions.
-- Levels, tasks and answers untouched by the commit; earlier PASS stands.
+- Levels and counts match fi: level 1 has 8, level 2 has 7, level 3 has 5 tasks.
+- Distractor feedback of L1-06, L1-07 and L2-07 says why each wrong option is wrong, with the same content as fi; the error-analysis task L2-07 names the misconception.
+- English is natural and at the right register for upper secondary physics; terms (mediator particle, antiparticle, baryon number, lepton number, annihilation) are used as in the lesson.
+- Hints toward the method are in the task text (quark charges, B formula, neutrino lepton numbers) as in fi.

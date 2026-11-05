@@ -1,14 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: c4e7b71ee927ba5d
+CONTENT-HASH: 86b73387a7a9c485
 
 ## Blocking
+(none)
+
+## Fixed
+- L2-07 (answer feedback x2 and solutions.md model answer) — added the explanation "eli hajoamisessa vapautuu energiaa" after "$Q > 0$" so that the term is understood without the lesson.
 
 ## Polish
-- lessons/FY8/fy8-15/answers.py:22 (L2-02) comment says "-> 37,8 MeV" while exercises.json and the solution give 37,84 MeV — align the comment (carried).
-- exercises.json L1-04 — "annihiloituvat eli tuhoutuvat kahdeksi fotoniksi": "muuttuvat kahdeksi fotoniksi" is safer (carried).
+- L1-06 task adds "(Välittäjähiukkanen on hiukkanen, joka välittää voiman.)"; good, no change.
 
 ## Checked
-- Delta re-review: the only change since the passed version is commit fd2e54e95 in exercises/solutions.md (360 px narrowing); hash c4e7b71ee927ba5d equals the packet's, at start and end. No task, answer, unit, tolerance or other file changed.
-- solutions.md:77 (L2-03) — `\dfrac{6,626·10⁻³⁴ J s · 2,998·10⁸ m/s}{X}` → `6,626·10⁻³⁴ J s · \dfrac{2,998·10⁸ m/s}{X}` is identical (a·b/X = a·(b/X)); X = 1,6372 · 10⁻¹³ J still the denominator, braces balanced (old numerator's closing brace now closes the new one), units J s · m/s / (J) give m; recomputed 1,2133 · 10⁻¹² m = 1,2133 pm, as written.
-- Decimal comma `{,}` kept in every changed number; `\,\text{}` units unchanged.
-- Previous review's recomputation of all 12 answers and its other checks stand (content unchanged).
+- New exercises L1-06..08, L2-05..07, L3-04..05: ids, level, kind, answers (1; 5; 3; 0.797 MeV; 218.5 MeV), units, tolerances, correct flags and choice order match fi; a script diff of all non-text fields and of all numbers in exercises.json against fi found none.
+- Data table cells and LaTeX are identical to fi (decimal point in JSON tables).
+- Recomputed all eight answers (charge +1 e; 5 hadrons; 3 forbidden reactions; 0.7965 = 0.797 MeV; 218.471 MeV); solutions.md numbers equal fi.
+- Terms explained in simple Finnish: välittäjähiukkanen, annihiloituu eli tuhoutuu, antikvarkin varaus vastakkainen kuin kvarkin varaus.
+- check_i18n.py fi-easy: 0 errors.

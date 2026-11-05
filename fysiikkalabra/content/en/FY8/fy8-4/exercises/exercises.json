@@ -39,6 +39,75 @@
       "answer": 3.18,
       "unit": "10¹⁵ 1/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-4-L1-06",
+      "level": 1,
+      "text": "In a double-slit experiment the light of a laser is dimmed so that the photons arrive at the slits one at a time. When thousands of hits have accumulated, a stripe pattern has formed on the screen. Which explanation fits the observation?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The wave determines the probability of a photon hitting each place, and the most hits accumulate in the bright stripes.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The photons hit each other in the slits and steer each other's directions, so the hits pile up in certain stripes.",
+          "feedback": "The photons arrive one at a time, so there is no second photon in the slits to collide with. The pattern still forms, so its cause is not an interaction between the photons."
+        },
+        {
+          "text": "Each photon splits into two parts, and the parts hit different places, so even a single photon draws the stripe pattern.",
+          "feedback": "A photon is always registered as a whole in one place. A single hit is a dot, and the stripe pattern becomes visible only after many hits have accumulated."
+        },
+        {
+          "text": "The wave determines the probability of a photon hitting each place, and the most hits accumulate in the bright stripes.",
+          "feedback": "Correct: the place where a single photon hits is random, but the wave model gives the probability of detection. Thousands of hits build up a stripe pattern in which the bright stripes get the most hits and the dark ones the fewest.",
+          "correct": true
+        },
+        {
+          "text": "Each photon travels like a bullet through only one of the slits, and the stripes come from photons reflected off the edges of the slits.",
+          "feedback": "In the bullet model the hits would be distributed as the sum of two single-slit patterns, and no dark stripes would form. The observed dark stripes, where almost no photons hit, do not fit this model."
+        }
+      ]
+    },
+    {
+      "id": "fy8-4-L1-07",
+      "level": 1,
+      "text": "A blue-violet laser diode emits light of wavelength $405\\,\\text{nm}$. What is the energy of one photon? Give the answer in electronvolts.",
+      "answer": 3.06,
+      "unit": "eV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-4-L1-08",
+      "level": 1,
+      "text": "A student claims: “A photon has no mass, so it has no momentum. Therefore light cannot push a mirror from which it reflects.” What is wrong in the student's reasoning?",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "answer": "Momentum does not require mass, because the momentum of a photon is determined by its energy and the mirror receives some of it in the reflection.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "A photon has a small non-zero mass, and it is precisely the mass that makes it a carrier of momentum that pushes the mirror.",
+          "feedback": "A photon has no mass. Its momentum comes from its energy, not from mass, so the correction must not give the photon a mass."
+        },
+        {
+          "text": "The mirror is pushed by the heat of the light and not by the momentum of the photons, so momentum is not needed to explain the push.",
+          "feedback": "The push comes from the transfer of momentum, not from heat. It can be measured even when the mirror does not warm up significantly, and it is explained by the momentum of the photon."
+        },
+        {
+          "text": "The momentum of the photon exists, but it is not transferred to the mirror, because momentum is not conserved when a photon is reflected.",
+          "feedback": "Momentum is always conserved. When the momentum of the photon reverses, the mirror receives the difference and the total momentum stays the same."
+        },
+        {
+          "text": "Momentum does not require mass, because the momentum of a photon is determined by its energy and the mirror receives some of it in the reflection.",
+          "feedback": "Correct: the momentum of a photon is its energy divided by the speed of light, so it has momentum without mass. In the reflection the momentum of the photon changes, and because of conservation of momentum the mirror receives momentum of the same magnitude.",
+          "correct": true
+        }
+      ]
     }
   ],
   "level2": [
@@ -73,6 +142,124 @@
       "answer": 8.67,
       "unit": "10⁻¹⁵ W",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-4-L2-05",
+      "level": 2,
+      "text": "Example data: in a double-slit experiment, single photons are registered on a screen divided into seven equally wide bands. The table gives the number of hits in each band when a total of $N = 50$, $N = 500$ and $N = 5000$ hits have accumulated. Band 4 is in the middle of the screen.\n\na) Calculate the share of the hits in band 4 out of all hits, as a percentage, for each of the three values of $N$.\n\nb) How many times as many hits does band 4 have compared with band 3 when $N = 5000$?\n\nc) What is the smallest value of $N$ in the table that is enough for the bright and dark bands to be clearly distinguishable? Justify with the numbers of hits.\n\nGive the result of part b) in the answer box.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 11.4,
+      "unit": "",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Number of hits by band",
+        "columns": [
+          "Band",
+          "$N = 50$",
+          "$N = 500$",
+          "$N = 5000$"
+        ],
+        "rows": [
+          [
+            "1",
+            "3",
+            "22",
+            "191"
+          ],
+          [
+            "2",
+            "6",
+            "88",
+            "914"
+          ],
+          [
+            "3",
+            "3",
+            "18",
+            "208"
+          ],
+          [
+            "4",
+            "22",
+            "248",
+            "2377"
+          ],
+          [
+            "5",
+            "5",
+            "23",
+            "213"
+          ],
+          [
+            "6",
+            "7",
+            "87",
+            "889"
+          ],
+          [
+            "7",
+            "4",
+            "14",
+            "208"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-4-L2-06",
+      "level": 2,
+      "text": "Example data: X-rays of wavelength $\\lambda = 71.10\\,\\text{pm}$ scatter from graphite. The table gives the wavelength $\\lambda'$ of the scattered radiation at different scattering angles $\\theta$.\n\na) For each angle, calculate the change in wavelength $\\Delta\\lambda = \\lambda' - \\lambda$ and the quantity $1 - \\cos\\theta$.\n\nb) Draw a graph from the measurement points with $1 - \\cos\\theta$ on the horizontal axis and $\\Delta\\lambda$ on the vertical axis, and fit a straight line to the points. Determine the slope of the line and state what it expresses.\n\nc) What is the change in wavelength when the photon scatters straight back ($\\theta = 180\\,{}^\\circ$)? Use the fitted line.\n\nGive the result of part c) in the answer box in picometres.",
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "answer": 4.85,
+      "unit": "pm",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Wavelength of the scattered X-rays",
+        "columns": [
+          "$\\theta\\,({}^\\circ)$",
+          "$\\lambda'\\,(\\text{pm})$"
+        ],
+        "rows": [
+          [
+            "30",
+            "71.42"
+          ],
+          [
+            "60",
+            "72.30"
+          ],
+          [
+            "90",
+            "73.55"
+          ],
+          [
+            "120",
+            "74.70"
+          ],
+          [
+            "150",
+            "75.65"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-4-L2-07",
+      "level": 2,
+      "text": "A student calculates the photon flow of a red laser as follows: “The wavelength is $633\\,\\text{nm}$ and the power $2.0\\,\\text{mW}$. The energy of one photon is $hf = \\dfrac{hc}{\\lambda}$. I substitute $633$ as the wavelength and get $hf = 3.14 \\cdot 10^{-28}\\,\\text{J}$. The number of photons per second is $\\dfrac{N}{t} = \\dfrac{P}{hf} = 6.4 \\cdot 10^{24}\\,\\tfrac{1}{\\text{s}}$.”\n\na) Where is the error in the student's calculation? How can you tell even before calculating that the result $6.4 \\cdot 10^{24}\\,\\tfrac{1}{\\text{s}}$ cannot be correct? Compare with the $1\\,\\text{mW}$ laser pointer mentioned in the chapter, which emits about $3 \\cdot 10^{15}$ photons per second.\n\nb) Calculate the number of photons per second correctly.\n\nGive the result of part b) in the answer box in units of $10^{15}\\,\\tfrac{1}{\\text{s}}$.",
+      "kind": [
+        "error"
+      ],
+      "answer": 6.4,
+      "unit": "10¹⁵ 1/s",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -99,6 +286,52 @@
       "answer": 0.604,
       "unit": "m/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-4-L3-04",
+      "level": 3,
+      "text": "Example data: a double-slit experiment uses a green laser of wavelength $532\\,\\text{nm}$. The light is dimmed with filters so that the power of the light arriving at the slits is $1.5 \\cdot 10^{-15}\\,\\text{W}$. Of the photons arriving at the slits, $20\\,\\%$ pass through the slits and hit the area of the detector, and the detector registers $40\\,\\%$ of the photons that hit it. The length of the apparatus is $1.5\\,\\text{m}$.\n\na) How many photons per second arrive at the slits?\n\nb) How many hits per second does the detector register?\n\nc) How long does it take to collect $5000$ hits?\n\nd) What is the average distance between consecutive photons? Use it to justify why the stripe pattern cannot arise from photons colliding with each other.\n\ne) If a meter told us for each photon through which slit it travelled, the stripe pattern would disappear. On this basis, explain why the stripe pattern cannot arise from each photon travelling, in a way that can be known, through only one of the slits.\n\nGive the result of part c) in the answer box in seconds.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 15.6,
+      "unit": "s",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy8-4-L3-05",
+      "level": 3,
+      "text": "Example data: X-ray photons of wavelength $\\lambda = 0.07110\\,\\text{nm}$ scatter from almost free electrons that are initially at rest. The table gives the wavelength $\\lambda'$ of the scattered photon at three scattering angles $\\theta$ (the angle between the directions of the incident and scattered photons). Consider scattering at the angle $\\theta = 120\\,{}^\\circ$.\n\na) Calculate the momenta $p$ and $p'$ of the incident and the scattered photon.\n\nb) Momentum is conserved as a vector quantity: $\\overline{p} = \\overline{p}' + \\overline{p}_e$. Draw the triangle of the momenta and use it with the law of cosines to calculate the magnitude $p_\\text{e}$ of the momentum of the electron.\n\nc) Calculate the kinetic energy of the electron in two ways: from the momentum using the formula $E_\\text{k} = \\dfrac{p_\\text{e}^2}{2m_\\text{e}}$, where $m_\\text{e} = 9.109 \\cdot 10^{-31}\\,\\text{kg}$, and from conservation of energy. Do the results agree?\n\nGive the result of part b) in the answer box in units of $10^{-23}\\,\\text{kg}\\cdot\\text{m/s}$.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 1.57,
+      "unit": "10⁻²³ kg·m/s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Wavelength of the scattered photon",
+        "columns": [
+          "$\\theta\\,({}^\\circ)$",
+          "$\\lambda'\\,(\\text{nm})$"
+        ],
+        "rows": [
+          [
+            "60",
+            "0.07230"
+          ],
+          [
+            "90",
+            "0.07353"
+          ],
+          [
+            "120",
+            "0.07476"
+          ]
+        ]
+      }
     }
   ]
 }
