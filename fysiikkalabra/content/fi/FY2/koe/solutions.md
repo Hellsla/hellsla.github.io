@@ -7,13 +7,13 @@
 **Perustelu:** Jokaisessa pompussa osa pallon mekaanisesta energiasta muuttuu pallon ja lattian lämpöenergiaksi ja ääneksi. Energia ei häviä, mutta se muuttuu muotoon, josta pallo ei saa sitä takaisin liikkeeseen. Energian säilyminen ei vaadi, että pallo pomppaa yhtä korkealle; se vaatii, että kaikkien energiamuotojen summa pysyy samana.
 
 ### c)
-**Perustelu:** $1\,\text{Wh} = 1\,\text{W} \cdot 3600\,\text{s} = 3600\,\text{J}$, joten $15\,\text{Wh} = 15 \cdot 3600\,\text{J} = 54\,000\,\text{J} = 54\,\text{kJ}$. Vastaus $15\,\text{kJ}$ syntyy, jos wattitunti luullaan kilojouleksi.
+**Perustelu:** $1\,\text{Wh} = 1\,\text{W} \cdot 3600\,\text{s} = 3600\,\text{J}$. Siten $15\,\text{Wh} = 15 \cdot 3600\,\text{J}$, mikä on $54\,000\,\text{J}$ eli $54\,\text{kJ}$. Vastaus $15\,\text{kJ}$ syntyy, jos wattitunti luullaan kilojouleksi.
 
 ### d)
 **Perustelu:** Energia on teho kertaa aika: LED-lamppu kuluttaa $5\,\text{W} \cdot 10\,\text{h} = 50\,\text{Wh}$ ja hehkulamppu $60\,\text{W} \cdot 1\,\text{h} = 60\,\text{Wh}$. Hehkulamppu kuluttaa enemmän, vaikka se palaa vain kymmenesosan ajasta. Pelkkä teho tai pelkkä aika ei ratkaise.
 
 ### e)
-**Perustelu:** Hyötyenergiaa on $400\,\text{J} - 120\,\text{J} = 280\,\text{J}$, joten hyötysuhde on $\dfrac{280\,\text{J}}{400\,\text{J}} = 0{,}70 = 70\,\%$. Vaihtoehto $30\,\%$ on hukan osuus. Hyötysuhde ei voi olla yli $100\,\%$, ja $3{,}3$ syntyy, jos jaetaan väärin päin.
+**Perustelu:** Hyötyenergiaa on $400\,\text{J} - 120\,\text{J} = 280\,\text{J}$, joten hyötysuhde on $\dfrac{280\,\text{J}}{400\,\text{J}} = 0{,}70 = 70\,\%$. Vaihtoehto $30\,\%$ on hukan osuus. Hyötysuhde ei voi olla yli $100\,\%$, ja $3{,}3$ syntyy, jos otettu energia jaetaan hukalla.
 
 ### f)
 **Perustelu:** Olkiluoto 3:n sähköteho on noin $1600\,\text{MW} = 1{,}6\,\text{GW}$. Megawatti on tuulivoimalan luokkaa, kilowatti kodinkoneen luokkaa, ja terawatti on koko maailman sähköntuotannon tehon suuruusluokkaa.
@@ -51,7 +51,7 @@
 ### b)
 **Annettu:** $E_\text{verkko} = 42{,}7\,\text{kWh}$, $P = 11\,\text{kW}$
 **Kysytty:** latausaika $t$
-**Periaate:** Latausaseman teho on teho, jolla se ottaa energiaa verkosta. Teho on energia aikayksikköä kohti.
+**Periaate:** Latausasema ottaa verkosta tehon $11\,\text{kW}$, joten aika lasketaan verkosta otetusta energiasta. Teho on energia aikayksikköä kohti.
 **Kaava:** $P = \dfrac{E}{t} \Rightarrow t = \dfrac{E}{P}$
 **Muunnokset:** $0{,}88\,\text{h} = 0{,}88 \cdot 60\,\text{min} \approx 53\,\text{min}$
 **Sijoitus:** $t = \dfrac{42{,}7\,\text{kWh}}{11\,\text{kW}} \approx 3{,}88\,\text{h}$
@@ -83,7 +83,7 @@
 ### a)
 **Annettu:** lämmöntarve $E_\text{hyöty} = 18\,000\,\text{kWh}$, $\eta = 0{,}85$, $H = 17\,\text{MJ/kg}$
 **Kysytty:** pellettien massa $m$
-**Periaate:** Kattila muuttaa vain $85\,\%$ polttoaineen energiasta talon lämmöksi, joten polttoaineen energiaa tarvitaan enemmän kuin lämpöä. Polttoaineen energia on lämpöarvo kertaa massa.
+**Periaate:** Kattila muuttaa vain $85\,\%$ polttoaineen energiasta $E_\text{pa}$ talon lämmöksi, joten polttoaineen energiaa tarvitaan enemmän kuin lämpöä. Polttoaineen energia on lämpöarvo kertaa massa.
 **Kaava:** $E_\text{pa} = \dfrac{E_\text{hyöty}}{\eta}$ ja $E_\text{pa} = Hm \Rightarrow m = \dfrac{E_\text{pa}}{H}$
 **Muunnokset:** $1\,\text{kWh} = 3{,}6\,\text{MJ}$, joten $E_\text{pa} = \dfrac{18\,000\,\text{kWh}}{0{,}85} \approx 21\,180\,\text{kWh} = 21\,180 \cdot 3{,}6\,\text{MJ} \approx 76\,200\,\text{MJ}$
 **Sijoitus:** $m = \dfrac{76\,200\,\text{MJ}}{17\,\tfrac{\text{MJ}}{\text{kg}}} \approx 4480\,\text{kg}$
@@ -103,7 +103,7 @@
 ### c)
 **Kysytty:** miksi pellettilämmitystä pidetään ilmastolle parempana ja mitä perustelu edellyttää
 **Periaate:** Ilmastovaikutus riippuu siitä, lisääkö poltto ilmakehän hiilidioksidia pysyvästi.
-**Mallivastaus:** Pellettien hiili on peräisin puusta, joka on sitonut sen ilmakehän hiilidioksidista lähivuosikymmeninä. Kun metsä kasvaa takaisin, se sitoo hiilen uudelleen, joten hiili kiertää ilmakehän ja kasvillisuuden välillä. Öljyn hiili taas on ollut miljoonia vuosia maan alla, ja sen poltto lisää ilmakehän hiilidioksidia pysyvästi. Perustelu edellyttää, että hakattu metsä todella kasvaa takaisin; sitoutuminen kestää vuosikymmeniä, joten lyhyellä aikavälillä puun poltto lisää ilmakehän hiilidioksidia. Lisäksi pellettien valmistus ja kuljetus vaativat energiaa, ja pienpoltosta syntyy pienhiukkaspäästöjä. Pellettilämmitys on siis ilmastolle parempi pitkällä aikavälillä, mutta ei päästötön.
+**Mallivastaus:** Pellettien hiili on peräisin puusta, joka on sitonut sen ilmakehän hiilidioksidista lähivuosikymmeninä. Kun metsä kasvaa takaisin, se sitoo hiilen uudelleen, joten hiili kiertää ilmakehän ja kasvillisuuden välillä. Öljyn hiili taas on ollut miljoonia vuosia maan alla, ja sen poltto lisää ilmakehän hiilidioksidia pysyvästi. Perustelu edellyttää, että hakattu metsä todella kasvaa takaisin; sitoutuminen kestää vuosikymmeniä, joten lyhyellä aikavälillä puun poltto lisää ilmakehän hiilidioksidia. Pellettilämmitys on siis ilmastolle parempi pitkällä aikavälillä, mutta ei päästötön. (Lisäksi pellettien valmistus ja kuljetus vaativat energiaa.)
 
 ### Yleisiä virheitä
 - Hyötysuhteella kerrotaan, kun pitäisi jakaa, jolloin polttoainetta näyttää tarvittavan vähemmän kuin lämpöä.
@@ -113,7 +113,7 @@
 ## fy2-k4
 
 ### a)
-**Kysytty:** kuukausituotannon pylväskuvaaja
+**Kysytty:** kuukausituotannon kuvaaja ja kuvaajatyypin perustelu
 **Kuvaaja:** Vaaka-akselilla on kuukausi ja pystyakselilla kuukauden tuotanto $E\ (\text{kWh})$. Jokainen kuukausi on oma pylväänsä.
 
 <svg data-fig="fy2-k4-bars" viewBox="0 0 600 420" role="img" aria-label="Pylväskuvaaja: aurinkopaneelien sähköntuotanto kilowattitunteina kuukausittain. Tuotanto on suurinta touko-, kesä- ja heinäkuussa, noin 870 kilowattituntia, ja lähes nolla marras-, joulu- ja tammikuussa." style="max-width:100%;font-size:24px">
@@ -175,12 +175,12 @@
 
 ### b)
 **Annettu:** kuukausituotannot ja talon kulutus $15\,000\,\text{kWh}$
-**Kysytty:** vuosituotanto ja sen osuus kulutuksesta
+**Kysytty:** vuosituotannon osuus kulutuksesta
 **Periaate:** Vuoden tuotanto on kuukausien summa. Osuus on tuotannon ja kulutuksen suhde.
 **Kaava:** $E_\text{vuosi} = E_1 + E_2 + \dots + E_{12}$ ja osuus $= \dfrac{E_\text{vuosi}}{E_\text{kulutus}}$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $E_\text{vuosi} = 5325\,\text{kWh}$ ja osuus $= \dfrac{5325\,\text{kWh}}{15\,000\,\text{kWh}} \approx 0{,}355$
-**Vastaus:** Paneelit tuottavat noin $5300\,\text{kWh}$ eli noin $36\,\%$ talon vuotuisesta sähkönkulutuksesta. Osuus koskee koko vuotta: marras–tammikuussa paneelit eivät kata kulutuksesta juuri mitään.
+**Vastaus:** Paneelit tuottavat noin $5300\,\text{kWh}$ eli noin $36\,\%$ talon vuotuisesta sähkönkulutuksesta. Osuus on koko vuoden keskiarvo: marras–tammikuussa paneelit kattavat kulutuksesta vain murto-osan.
 **Järkevyys:** Noin $900\,\text{kWh}$ kilowattia kohti vuodessa on Etelä-Suomen aurinkopaneeleille tyypillinen suuruusluokka.
 
 ### c)
@@ -194,9 +194,9 @@
 **Järkevyys:** Yöllä tuotanto on nolla ja talvella lähes nolla, joten keskiteho on pieni osa huipputehosta.
 
 ### d)
-**Kysytty:** miksi keskiteho on pieni ja mitä vuodenaikavaihtelu tarkoittaa
+**Kysytty:** miksi keskiteho on pieni ja voiko aurinkosähkö yksin korvata fossiilisen sähkön
 **Periaate:** Aurinkopaneelin teho riippuu siitä, kuinka paljon Auringon säteilyä siihen osuu.
-**Mallivastaus:** Huipputeho saavutetaan vain kirkkaana päivänä, kun Aurinko on korkealla. Yöllä tuotanto on nolla, pilvisellä säällä pieni, ja aamulla ja illalla Aurinko on matalalla. Talvella päivät ovat Suomessa lyhyitä ja Aurinko on matalalla tai lumi peittää paneelit, joten tuotanto on lähes nolla juuri silloin, kun sähköä ja lämpöä tarvitaan eniten. Talo tarvitsee siksi talvella sähköä verkosta tai muusta tuotannosta, ja kesän ylijäämä myydään verkkoon tai varastoidaan. Aurinkosähkö sopii Suomessa parhaiten osaksi energiahuoltoa, jossa on myös säädettävää tuotantoa.
+**Mallivastaus:** Huipputeho saavutetaan vain kirkkaana päivänä, kun Aurinko on korkealla. Yöllä tuotanto on nolla, pilvisellä säällä pieni, ja aamulla ja illalla Aurinko on matalalla. Talvella päivät ovat Suomessa lyhyitä ja Aurinko on matalalla tai lumi peittää paneelit, joten tuotanto on lähes nolla juuri silloin, kun sähköä ja lämpöä tarvitaan eniten. Aurinkosähkö on käytön aikana päästötöntä, ja kesällä se vähentää fossiilisilla polttoaineilla tuotetun sähkön tarvetta, mikä hillitsee ilmastonmuutosta. Yksin se ei kuitenkaan voi korvata fossiilista sähköä Suomessa: talvella tarvitaan muuta tuotantoa, kuten tuuli-, vesi- tai ydinvoimaa, säätövoimaa ja varastointia, ja kesän ylijäämä myydään verkkoon tai varastoidaan.
 
 ### Yleisiä virheitä
 - Kuukausituotannot yhdistetään viivalla tai niihin sovitetaan suora.
@@ -212,7 +212,7 @@
 **Kaava:** $E = Pt$
 **Muunnokset:** $t = 365 \cdot 24\,\text{h} = 8760\,\text{h}$ ja $1\,\text{GWh} = 1000\,\text{MWh}$
 **Sijoitus:** $E = 20\,\text{MW} \cdot 8760\,\text{h} = 175\,200\,\text{MWh} \approx 175\,\text{GWh}$
-**Vastaus:** Palvelimet käyttävät noin $175\,\text{GWh}$ vuodessa, kaksi merkitsevää numeroa kuten tehossa (noin $180\,\text{GWh}$).
+**Vastaus:** Palvelimet käyttävät vuodessa noin $180\,\text{GWh}$ (laskettu arvo $175\,\text{GWh}$ pyöristettynä kahteen merkitsevään numeroon kuten teho). Jatkossa käytetään laskettua arvoa.
 **Järkevyys:** Sama määrä kuin noin $12\,000$ omakotitalon vuoden sähkönkulutus, mikä on suuren datakeskuksen luokkaa.
 
 ### b)
@@ -228,7 +228,7 @@
 **Muunnokset:** $1\,\text{GWh} = 10^{6}\,\text{kWh}$, joten $0{,}70 \cdot 175{,}2\,\text{GWh} \approx 122{,}6\,\text{GWh} = 122{,}6 \cdot 10^{6}\,\text{kWh}$
 **Sijoitus:** $N = \dfrac{122{,}6 \cdot 10^{6}\,\text{kWh}}{15\,000\,\text{kWh}} \approx 8200$
 **Vastaus:** Talteen otetulla lämmöllä voitaisiin lämmittää noin $8000$ omakotitaloa.
-**Järkevyys:** Kahdenkymmenen megawatin jatkuva lämpöteho on pienen kaupungin kaukolämmön luokkaa.
+**Järkevyys:** Talteen saatu lämpöteho on keskimäärin $0{,}70 \cdot 20\,\text{MW} = 14\,\text{MW}$, mikä on pienen kaupungin kaukolämmön luokkaa.
 
 ### d)
 **Kysytty:** arvio väitteestä
@@ -305,7 +305,7 @@
 ### c)
 **Annettu:** akku $500\,\text{Wh}$, $\eta = 0{,}80$, $P = 150\,\text{W}$
 **Kysytty:** aika $t$, jonka akku riittää
-**Periaate:** Moottori ja voimansiirto saavat akun energiasta polkimille $80\,\%$. Aika saadaan hyödyksi saadusta energiasta ja tehosta.
+**Periaate:** Moottori ja voimansiirto muuttavat akun energiasta $80\,\%$ pyörää liikuttavaksi hyötyenergiaksi. Aika saadaan hyödyksi saadusta energiasta ja tehosta.
 **Kaava:** $t = \dfrac{\eta E}{P}$
 **Muunnokset:** $0{,}67\,\text{h} = 0{,}67 \cdot 60\,\text{min} \approx 40\,\text{min}$
 **Sijoitus:** $\eta E = 0{,}80 \cdot 500\,\text{Wh} = 400\,\text{Wh}$ ja $t = \dfrac{400\,\text{Wh}}{150\,\text{W}} \approx 2{,}67\,\text{h}$
@@ -315,7 +315,7 @@
 ### d)
 **Kysytty:** kumpi on energian kannalta tehokkaampi ja mitä pelkkä hyötysuhdevertailu ohittaa
 **Periaate:** Vertailussa on katsottava koko ketju energialähteestä liikkeeseen sekä energian tuotannon ympäristövaikutukset.
-**Mallivastaus:** Laitteen tasolla sähkömoottori on selvästi tehokkaampi: sen hyötysuhde $80\,\%$ on yli kolminkertainen lihasten $25\,\%$:iin verrattuna, joten saman matkan energiasta kuluu sähkönä noin kolmasosa ravintoenergian määrästä. Vertailu ei kuitenkaan ota huomioon, miten ravinto ja sähkö tuotetaan. Ruoan viljely, jalostus ja kuljetus vaativat energiaa, ja sähkön tuotannon hyötysuhde ja päästöt riippuvat tuotantotavasta: tuulisähkö on lähes päästötöntä, fossiilinen sähkö ei. Lisäksi pyöräilijä syö joka tapauksessa, ja liikunnalla on terveyshyötyjä, joita sähkö ei tuo. Energian kannalta sähköpyörä on tehokas, mutta paras valinta riippuu koko ketjusta ja tavoitteesta.
+**Mallivastaus:** Laitteen tasolla sähkömoottori on selvästi tehokkaampi: sen hyötysuhde $80\,\%$ on yli kolminkertainen lihasten $25\,\%$:iin verrattuna, joten saman matkan energiasta kuluu sähkönä noin kolmasosa ravintoenergian määrästä. Vertailu ei kuitenkaan ota huomioon, miten ravinto ja sähkö tuotetaan. Ruoan viljely, jalostus ja kuljetus vaativat energiaa, ja sähkön tuotannon hyötysuhde ja päästöt riippuvat tuotantotavasta: tuulisähkö on lähes päästötöntä, fossiilinen sähkö ei. Lisäksi pyöräilijä syö joka tapauksessa, joten vertailun tulos riippuu siitä, lasketaanko hänen ravintonsa liikkumisen energiankulutukseksi. Energian kannalta sähköpyörä on tehokas, mutta paras valinta riippuu koko ketjusta ja tavoitteesta.
 
 ### Yleisiä virheitä
 - Kohdassa b hyötysuhteella kerrotaan, kun pitäisi jakaa.

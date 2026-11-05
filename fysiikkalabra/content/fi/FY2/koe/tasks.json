@@ -1,5 +1,5 @@
 {
- "intro": "Koe kattaa koko moduulin: energialajit, energian säilyminen ja muuntuminen, teho ja hyötysuhde, polttoaineet ja lämpöarvo, energiantuotantotavat, energian siirtäminen sekä energiantuotannon vaikutukset ympäristöön ja ilmastoon.",
+ "intro": "Koe kattaa koko moduulin: energialajit, energian säilyminen ja muuntuminen, teho ja hyötysuhde, polttoaineet ja lämpöarvo, energiantuotantotavat, energian siirtäminen sekä energiantuotannon vaikutukset ympäristöön ja ilmastoon. Pisteytyksessä sama virhe vähentää pisteitä vain kerran: jos jatkat väärällä välituloksella oikein, saat myöhemmistä vaiheista pisteet.",
  "minutes": 120,
  "max_points": 70,
  "sections": [
@@ -54,12 +54,12 @@
      "points": 2,
      "text": "Pallo pudotetaan lattialle, ja se pomppaa joka kerta matalammalle, kunnes jää lattialle. Mikä väite pitää paikkansa?",
      "options": [
-      "Pallon energia häviää vähitellen.",
       "Energia muuttuu vähitellen pallon ja lattian lämpöenergiaksi ja ääneksi, eikä kokonaisenergia muutu.",
+      "Pallon energia häviää vähitellen.",
       "Energia muuttuu pallon potentiaalienergiaksi, joka jää lattialle.",
       "Energia säilyy vain, jos pallo pomppaa yhtä korkealle."
      ],
-     "correct": 1,
+     "correct": 0,
      "tag": "concept"
     },
     {
@@ -139,11 +139,11 @@
      "text": "Sähkön tuotannon ja kulutuksen on oltava joka hetki tasapainossa. Mikä seuraavista tuotantotavoista sopii parhaiten tasaamaan nopeasti tuulivoiman vaihtelua?",
      "options": [
       "aurinkovoima",
-      "vesivoima",
       "ydinvoima",
-      "tuulivoima toisella paikkakunnalla"
+      "tuulivoima toisella paikkakunnalla",
+      "vesivoima"
      ],
-     "correct": 1,
+     "correct": 3,
      "tag": "concept"
     },
     {
@@ -166,12 +166,12 @@
      "points": 2,
      "text": "Mikä väite kasvihuoneilmiöstä pitää paikkansa?",
      "options": [
+      "Kasvihuonekaasut päästävät Auringon säteilyn lähes esteettä läpi, mutta hidastavat Maan lähettämän lämpösäteilyn poistumista avaruuteen.",
       "Kasvihuonekaasut estävät Auringon säteilyä pääsemästä maanpinnalle.",
       "Ilman kasvihuoneilmiötä Maan pinta olisi nykyistä lämpimämpi.",
-      "Kasvihuonekaasut päästävät Auringon säteilyn lähes esteettä läpi, mutta hidastavat Maan lähettämän lämpösäteilyn poistumista avaruuteen.",
       "Kasvihuoneilmiö johtuu otsonikerroksen ohenemisesta."
      ],
-     "correct": 2,
+     "correct": 0,
      "tag": "concept"
     }
    ],
@@ -194,7 +194,7 @@
    "id": "fy2-k2",
    "title": "Sähköauton lataus",
    "source": "example",
-   "text": "Sähköauton akkuun mahtuu $64\\,\\text{kWh}$ energiaa. Auto ladataan kotona latausasemalla, jonka teho on $11\\,\\text{kW}$. Akun varaus nousee $20\\,\\%$:sta $80\\,\\%$:iin. Latauksen hyötysuhde on $90\\,\\%$, eli verkosta otetusta energiasta $90\\,\\%$ päätyy akkuun. Sähkö maksaa $12$ senttiä kilowattitunnilta.",
+   "text": "Sähköauton akkuun mahtuu $64\\,\\text{kWh}$ energiaa. Auto ladataan kotona latausasemalla, joka ottaa sähköverkosta tehon $11\\,\\text{kW}$. Akun varaus nousee $20\\,\\%$:sta $80\\,\\%$:iin. Latauksen hyötysuhde on $90\\,\\%$, eli verkosta otetusta energiasta $90\\,\\%$ päätyy akkuun. Sähkö maksaa $12$ senttiä kilowattitunnilta.",
    "parts": [
     {
      "id": "a",
@@ -300,7 +300,7 @@
      "id": "d",
      "kind": "word",
      "points": 3,
-     "text": "Ladattaessa latausasema ja akku lämpenevät hieman. Mihin \"hävinnyt\" energia on mennyt? Eikö energian pitäisi säilyä?",
+     "text": "Ladattaessa latausasema ja akku lämpenevät hieman. Mihin ”hävinnyt” energia on mennyt? Eikö energian pitäisi säilyä?",
      "criteria": [
       {
        "text": "Noin $4{,}3\\,\\text{kWh}$ muuttuu lämmöksi latauslaitteessa, johdoissa ja akussa.",
@@ -402,7 +402,7 @@
      "id": "c",
      "kind": "word",
      "points": 5,
-     "text": "Pellettejä poltettaessa vapautuu polttoaineen energiaa kohti jopa hieman enemmän hiilidioksidia kuin öljyä poltettaessa. Miksi pellettilämmitystä silti pidetään ilmaston kannalta parempana? Arvioi myös, mitä perustelu edellyttää.",
+     "text": "Pellettejä poltettaessa vapautuu polttoaineen energiaa kohti noin puolitoista kertaa niin paljon hiilidioksidia kuin öljyä poltettaessa (IPCC:n oletuspäästökertoimet: puu noin $112\\,\\text{g/MJ}$, kevyt polttoöljy noin $74\\,\\text{g/MJ}$). Miksi pellettilämmitystä silti pidetään ilmaston kannalta parempana? Arvioi myös, mitä perustelu edellyttää.",
      "criteria": [
       {
        "text": "Pellettien hiili on peräisin ilmakehästä lähivuosikymmeninä kasvaneesta puusta, öljyn hiili miljoonia vuosia maassa olleesta fossiilisesta varastosta.",
@@ -416,13 +416,8 @@
       },
       {
        "key": "assumptions",
-       "points": 1,
-       "detail": "Perustelu edellyttää, että hakattu metsä kasvaa takaisin; sitoutuminen kestää vuosikymmeniä."
-      },
-      {
-       "text": "Mainitsee muitakin vaikutuksia, esimerkiksi pellettien valmistuksen ja kuljetuksen energian tai pienhiukkaspäästöt.",
-       "tag": "communication",
-       "points": 1
+       "points": 2,
+       "detail": "Perustelu edellyttää, että hakattu metsä kasvaa takaisin, ja sitoutuminen kestää vuosikymmeniä: lyhyellä aikavälillä ilmakehän hiilidioksidi lisääntyy."
       }
      ]
     }
@@ -450,7 +445,7 @@
      "id": "a",
      "kind": "graph",
      "points": 4,
-     "text": "Esitä kuukausituotanto pylväskuvaajana.",
+     "text": "Esitä kuukausituotanto sopivana kuvaajana ja perustele kuvaajatyypin valinta.",
      "criteria": [
       {
        "key": "graph_axes",
@@ -458,7 +453,7 @@
        "detail": "Vaaka-akselilla kuukaudet, pystyakselilla energia yksikköineen."
       },
       {
-       "text": "Jokainen kuukausi on oma pylväänsä oikealla korkeudella.",
+       "text": "Pylväskuvaaja (tai pisteet), jossa jokainen kuukausi on oikealla korkeudella.",
        "tag": "graph",
        "points": 2
       },
@@ -474,26 +469,30 @@
      "kind": "calc",
      "points": 3,
      "text": "Kuinka suuren osan talon vuotuisesta sähkönkulutuksesta paneelit tuottavat?",
-     "answer": {
-      "value": 5325,
-      "unit": "kWh",
-      "tolerance": 0.01
-     },
+     "answer": [
+      {
+       "name": "E",
+       "value": 5325,
+       "unit": "kWh",
+       "tolerance": 0.01
+      },
+      {
+       "name": "share",
+       "value": 35.5,
+       "unit": "%",
+       "tolerance": 0.02
+      }
+     ],
      "criteria": [
       {
        "key": "calculation",
-       "points": 1,
-       "detail": "Vuosituotanto $5325\\,\\text{kWh}$."
+       "points": 2,
+       "detail": "Vuosituotanto $5325\\,\\text{kWh}$ ja osuus $\\tfrac{5325}{15\\,000}$."
       },
       {
        "key": "units_precision",
        "points": 1,
        "detail": "Osuus noin $36\\,\\%$."
-      },
-      {
-       "text": "Huomauttaa, että osuus koskee vuotta: talvella paneelit eivät kata kulutusta lainkaan.",
-       "tag": "communication",
-       "points": 1
       }
      ]
     },
@@ -542,12 +541,12 @@
      "id": "d",
      "kind": "word",
      "points": 4,
-     "text": "Selitä, miksi keskiteho on niin paljon huipputehoa pienempi, ja mitä tuotannon vuodenaikavaihtelu tarkoittaa suomalaisen talon energiahuollolle.",
+     "text": "Selitä, miksi keskiteho on niin paljon huipputehoa pienempi. Arvioi tuotannon vuodenaikavaihtelun perusteella, voiko aurinkosähkö yksin korvata Suomessa fossiilisilla polttoaineilla tuotetun sähkön ilmastonmuutoksen hillitsemiseksi.",
      "criteria": [
       {
        "text": "Huipputeho saavutetaan vain kirkkaana päivänä Auringon ollessa korkealla; yöllä tuotanto on nolla ja pilvisellä säällä pieni.",
        "tag": "concept",
-       "points": 2
+       "points": 1
       },
       {
        "text": "Talvella päivät ovat lyhyitä ja Aurinko matalalla, ja juuri silloin sähköä ja lämpöä tarvitaan eniten.",
@@ -555,9 +554,14 @@
        "points": 1
       },
       {
+       "text": "Aurinkosähkö on käytön aikana päästötöntä ja vähentää fossiilisen sähkön tarvetta kesällä.",
+       "tag": "communication",
+       "points": 1
+      },
+      {
        "key": "conclusion",
        "points": 1,
-       "detail": "Talo tarvitsee talvella sähköä verkosta tai muusta tuotannosta, ja kesän ylijäämä myydään verkkoon tai varastoidaan."
+       "detail": "Yksin se ei riitä: talvella tarvitaan muuta tuotantoa, säätövoimaa tai varastointia."
       }
      ]
     }
@@ -565,11 +569,12 @@
    "skills": [
     "fy2-3",
     "fy2-6",
+    "fy2-8",
     "fy1-4"
    ],
    "links": {
     "graph": "fy1-4",
-    "communication": "fy2-6",
+    "communication": "fy2-8",
     "math": "fy2-3",
     "concept": "fy2-6"
    }
@@ -666,7 +671,7 @@
      "id": "d",
      "kind": "word",
      "points": 3,
-     "text": "Arvioi väitettä: \"Koska hukkalämpö käytetään, datakeskus ei aiheuta lainkaan päästöjä.\"",
+     "text": "Arvioi väitettä: ”Koska hukkalämpö käytetään, datakeskus ei aiheuta lainkaan päästöjä.”",
      "criteria": [
       {
        "text": "Päästöt riippuvat siitä, miten keskuksen käyttämä sähkö tuotetaan.",
@@ -702,7 +707,7 @@
    "id": "fy2-k6",
    "title": "Sähköä talvipäivänä",
    "source": "example",
-   "source_note": "Luvut on pyöristetty ja laadittu esimerkiksi suomalaisen sähköjärjestelmän mittakaavasta; ne eivät ole yhden päivän tilastoja.",
+   "source_note": "Tuntiluvut on laadittu esimerkiksi suomalaisen sähköjärjestelmän mittakaavasta, eivätkä ne ole yhden päivän tilastoja. Kapasiteetit ja osuudet ovat pyöristettyjä suuruusluokka-arvioita vuoden 2025 tilanteesta.",
    "text": "Taulukossa on Suomen sähkönkulutus ja tuotanto tuotantotavoittain kolmena hetkenä samana talvipäivänä. Kulutuksen ja tuotannon erotus tuodaan naapurimaista tai, jos tuotanto on suurempi, viedään niihin. Tehot ovat megawatteina $(\\text{MW})$.\n\n| | klo $3$ | klo $9$ | klo $18$ |\n|---|---|---|---|\n| kulutus | $10\\,200$ | $12\\,800$ | $13\\,500$ |\n| ydinvoima | $4400$ | $4400$ | $4400$ |\n| tuulivoima | $5600$ | $2100$ | $900$ |\n| vesivoima | $1300$ | $2600$ | $2900$ |\n| muu tuotanto | $2400$ | $3200$ | $3400$ |\n\nSuomessa on tuulivoimaa noin $9000\\,\\text{MW}$ ja ydinvoimaa noin $4400\\,\\text{MW}$. Tuulivoimalat tuottavat vuodessa keskimäärin noin $30\\,\\%$ siitä energiasta, jonka ne tuottaisivat koko ajan täydellä teholla, ja ydinvoimalat noin $90\\,\\%$.",
    "parts": [
     {
@@ -810,7 +815,7 @@
      "id": "d",
      "kind": "calc",
      "points": 7,
-     "text": "Arvioi väitettä: \"Suomessa on jo enemmän tuulivoimaa kuin ydinvoimaa, joten tuulivoima voisi korvata ydinvoiman.\" Laske arviosi tueksi tuuli- ja ydinvoiman vuosituotanto.",
+     "text": "Arvioi väitettä: ”Suomessa on jo enemmän tuulivoimaa kuin ydinvoimaa, joten tuulivoima voisi korvata ydinvoiman.” Laske arviosi tueksi tuuli- ja ydinvoiman vuosituotanto.",
      "answer": [
       {
        "name": "wind",
@@ -943,7 +948,7 @@
      "id": "c",
      "kind": "calc",
      "points": 5,
-     "text": "Sähköpyörän moottori antaa polkimille saman tehon $150\\,\\text{W}$ ilman pyöräilijän apua. Kuinka kauan täysi akku riittää?",
+     "text": "Sähköpyörän moottori pyörittää pyörää ilman pyöräilijän apua niin, että hyödyksi saatu teho on sama $150\\,\\text{W}$. Kuinka kauan täysi akku riittää?",
      "answer": {
       "value": 2.67,
       "unit": "h",
@@ -998,7 +1003,7 @@
        "points": 1
       },
       {
-       "text": "Pyöräilijä syö joka tapauksessa, ja liikunnalla on terveyshyötyjä, joten pelkkä hyötysuhde ei ratkaise valintaa.",
+       "text": "Toteaa, että pyöräilijä syö joka tapauksessa, joten vertailun tulos riippuu siitä, mitä energiankulutukseen lasketaan.",
        "tag": "communication",
        "points": 1
       },

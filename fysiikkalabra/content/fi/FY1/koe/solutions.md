@@ -13,7 +13,7 @@
 **Perustelu:** Tulo $\rho V$ on massa, joten $\dfrac{m}{\rho V}$ on yksikötön luku. Lausekkeen $\dfrac{m\,s}{\rho V t}$ yksikkö on siis sama kuin osamäärän $\dfrac{s}{t}$ eli $\text{m/s}$. Muiden yksiköt ovat $\dfrac{\rho V}{m\,t}$: $\tfrac{1}{\text{s}}$, $\dfrac{\rho\,s}{m\,t}$: $\tfrac{1}{\text{m}^2 \cdot \text{s}}$ ja $\dfrac{m\,t}{\rho V s}$: $\tfrac{\text{s}}{\text{m}}$.
 
 ### e)
-**Perustelu:** Etuliite nano on $10^{-9}$, joten $45\,\text{nm} = 45 \cdot 10^{-9}\,\text{m} = 4{,}5 \cdot 10^{-8}\,\text{m}$. Vaihtoehto $4{,}5 \cdot 10^{-6}\,\text{m}$ syntyy, jos nano sekoitetaan mikroon.
+**Perustelu:** Etuliite nano on $10^{-9}$, joten $45\,\text{nm} = 45 \cdot 10^{-9}\,\text{m}$ eli $4{,}5 \cdot 10^{-8}\,\text{m}$. Vaihtoehto $4{,}5 \cdot 10^{-5}\,\text{m}$ syntyy, jos nano sekoitetaan mikroon ($10^{-6}$).
 
 ### f)
 **Perustelu:** $\dfrac{12{,}6\,\text{km}}{0{,}75\,\text{h}} = 16{,}8\,\text{km/h}$. Aika on annettu kahdella merkitsevällä numerolla, joten tulos ilmoitetaan kahdella: $17\,\text{km/h}$. Vastaus $16{,}80\,\text{km/h}$ väittää tuloksen tunnetuksi paljon tarkemmin kuin lähtötiedot sallivat, ja $20\,\text{km/h}$ on pyöristetty liikaa.
@@ -28,7 +28,7 @@
 **Perustelu:** Ilman ilmanvastusta kaikki kappaleet putoavat samalla kiihtyvyydellä $g$ massasta riippumatta, joten molempien nopeus on $v = gt = 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 0{,}5\,\text{s} \approx 4{,}9\,\text{m/s}$. Ajatus, että raskas kappale putoaa nopeammin, on yleinen virhekäsitys.
 
 ### j)
-**Perustelu:** Lasketaan tiheydet samassa yksikössä $\text{g/cm}^3$: A $\dfrac{40\,\text{g}}{50\,\text{cm}^3} = 0{,}80\,\text{g/cm}^3$, B $\dfrac{270\,\text{g}}{100\,\text{cm}^3} = 2{,}7\,\text{g/cm}^3$, C $\dfrac{1000\,\text{g}}{500\,\text{cm}^3} = 2{,}0\,\text{g/cm}^3$ (koska $0{,}50\,\text{dm}^3 = 500\,\text{cm}^3$) ja D $\dfrac{79\,\text{g}}{10\,\text{cm}^3} = 7{,}9\,\text{g/cm}^3$. Järjestys on A, C, B, D. Suurin massa ei tarkoita suurinta tiheyttä.
+**Perustelu:** Lasketaan tiheydet samassa yksikössä $\text{g/cm}^3$. A: $40\,\text{g} : 50\,\text{cm}^3 = 0{,}80\,\text{g/cm}^3$. B: $270\,\text{g} : 100\,\text{cm}^3 = 2{,}7\,\text{g/cm}^3$. C: $0{,}50\,\text{dm}^3 = 500\,\text{cm}^3$, joten $1000\,\text{g} : 500\,\text{cm}^3 = 2{,}0\,\text{g/cm}^3$. D: $79\,\text{g} : 10\,\text{cm}^3 = 7{,}9\,\text{g/cm}^3$. Järjestys on A, C, B, D. Suurin massa ei tarkoita suurinta tiheyttä.
 
 ### Yleisiä virheitä
 - Kohdassa d verrataan vain kirjaimia eikä yksiköitä, tai unohdetaan, että $\rho V$ on massa.
@@ -89,7 +89,7 @@
   <circle cx="275" cy="154.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <circle cx="340" cy="175" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <circle cx="405" cy="199.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="106" y="247" width="420" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$k = \dfrac{9{,}0\,\text{cm} - 15{,}0\,\text{cm}}{51\,\text{min}} \approx -0{,}12\,\tfrac{\text{cm}}{\text{min}}$</div></foreignObject>
+  <foreignObject x="99.5" y="281" width="332" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$k = \dfrac{-6{,}0\,\text{cm}}{51\,\text{min}} \approx -0{,}12\,\tfrac{\text{cm}}{\text{min}}$</div></foreignObject>
 </svg>
 
 **Mallivastaus:** Pisteet asettuvat lähes suoralle, joten niihin sovitetaan suora, joka kulkee pisteiden joukon keskeltä: pisteitä jää suoran molemmin puolin. Pisteitä ei yhdistetä murtoviivaksi, koska jokaisessa mittauksessa on pieni virhe. Kynttilä lyhenee tasaisesti.
@@ -193,14 +193,14 @@
 **Kaava:** $s_\text{E} = v_\text{E}t$ ja $s_\text{A} = v_\text{A}(t - t_0)$. Kun $s_\text{E} = s_\text{A}$: $v_\text{E}t = v_\text{A}t - v_\text{A}t_0$, joten $t = \dfrac{v_\text{A}t_0}{v_\text{A} - v_\text{E}}$.
 **Muunnokset:** $t_0 = 5{,}0 \cdot 60\,\text{s} = 300\,\text{s}$
 **Sijoitus:** $t = \dfrac{6{,}0\,\tfrac{\text{m}}{\text{s}} \cdot 300\,\text{s}}{6{,}0\,\tfrac{\text{m}}{\text{s}} - 3{,}2\,\tfrac{\text{m}}{\text{s}}} = \dfrac{1800\,\text{m}}{2{,}8\,\tfrac{\text{m}}{\text{s}}} \approx 643\,\text{s}$ ja $s = v_\text{E}t = 3{,}2\,\tfrac{\text{m}}{\text{s}} \cdot 643\,\text{s} \approx 2060\,\text{m}$
-**Vastaus:** Aaro saavuttaa Elinan noin $640\,\text{s} \approx 10{,}7\,\text{min}$ Elinan lähdön jälkeen noin $2{,}1\,\text{km}$:n päässä kotoa. Kaksi merkitsevää numeroa, kuten nopeuksissa.
+**Vastaus:** Aaro saavuttaa Elinan noin $640\,\text{s}$ eli noin $11\,\text{min}$ Elinan lähdön jälkeen noin $2{,}1\,\text{km}$:n päässä kotoa. Kaksi merkitsevää numeroa, kuten nopeuksissa.
 **Järkevyys:** Tarkistus Aaron liikkeestä: $6{,}0\,\tfrac{\text{m}}{\text{s}} \cdot (643\,\text{s} - 300\,\text{s}) \approx 2060\,\text{m}$, sama paikka. Tulos sopii a-kohdan leikkauspisteeseen.
 
 ### c)
 **Kysytty:** kohtaamispaikan epävarmuus ja syy sen suuruuteen
 **Periaate:** Lasketaan kohtaamispaikka Elinan nopeuden ääriarvoilla $3{,}0\,\text{m/s}$ ja $3{,}4\,\text{m/s}$ samalla tavalla kuin b-kohdassa.
 **Mallivastaus:** Kun $v_\text{E} = 3{,}0\,\text{m/s}$, Elinalla on $900\,\text{m}$:n etumatka ja ero kuroutuu umpeen nopeudella $3{,}0\,\text{m/s}$: aikaa kuluu $300\,\text{s}$, ja paikka on $6{,}0\,\tfrac{\text{m}}{\text{s}} \cdot 300\,\text{s} = 1{,}8\,\text{km}$. Kun $v_\text{E} = 3{,}4\,\text{m/s}$, etumatka on $1020\,\text{m}$ ja erotusnopeus $2{,}6\,\text{m/s}$: aikaa kuluu noin $390\,\text{s}$, ja paikka on noin $2{,}4\,\text{km}$. Kohtaamispaikka on siis $s \approx (2{,}1 \pm 0{,}3)\,\text{km}$.
-Elinan nopeuden suhteellinen epävarmuus on vain $\tfrac{0{,}2}{3{,}2} \approx 6\,\%$, mutta kohtaamispaikan noin $15\,\%$. Saavuttamiseen kuluva aika riippuu nopeuksien erotuksesta $2{,}8\,\text{m/s}$, ja sama $0{,}2\,\text{m/s}$ on erotuksesta noin $7\,\%$. Lisäksi suurempi nopeus kasvattaa samalla Elinan etumatkaa, joten kumpikin vaikutus siirtää kohtaamista samaan suuntaan. Kun lähes samoista nopeuksista lasketaan erotus, pieni epävarmuus kasvaa suureksi.
+Elinan nopeuden suhteellinen epävarmuus on $\tfrac{0{,}2}{3{,}2} \approx 6\,\%$, mutta kohtaamispaikan $\tfrac{0{,}3}{2{,}1} \approx 15\,\%$, eli yli kaksinkertainen. Syy on se, että Elinan nopeus vaikuttaa kohtaamiseen kahdella tavalla samaan suuntaan: suurempi nopeus pidentää hänen etumatkaansa (noin $6\,\%$) ja samalla pienentää erotusnopeutta $v_\text{A} - v_\text{E}$, jolla Aaro kuroo etumatkaa umpeen (noin $7\,\%$). Kun molemmat vaikutukset kasvattavat saavuttamiseen kuluvaa aikaa, niiden suhteelliset epävarmuudet summautuvat, ja lisäksi Aaron kulkema matka kasvaa saman ajan mukana.
 
 ### Yleisiä virheitä
 - Aaron paikaksi kirjoitetaan $s_\text{A} = v_\text{A}t$, jolloin Aaro lähtisi samaan aikaan.
@@ -221,7 +221,7 @@ Elinan nopeuden suhteellinen epävarmuus on vain $\tfrac{0{,}2}{3{,}2} \approx 6
 ### b)
 **Annettu:** $t_{10}$: $14{,}2$; $14{,}5$; $13{,}9$; $14{,}4$; $14{,}1\,\text{s}$ (karkea virhe poistettu)
 **Kysytty:** yhden heilahduksen kesto $T$ ja sen epävarmuus $\Delta T$
-**Periaate:** Toistojen keskiarvo on paras arvio. Tässä kurssissa epävarmuutta arvioidaan vaihteluvälin puolikkaalla. Yksi heilahdus on kymmenesosa kymmenen heilahduksen ajasta, joten sekä keskiarvo että epävarmuus jaetaan kymmenellä.
+**Periaate:** Toistojen keskiarvo on paras arvio. Tässä kurssissa tulosten hajontaa arvioidaan vaihteluvälin puolikkaalla, ja sitä käytetään varovaisena epävarmuusarviona. Yksi heilahdus on kymmenesosa kymmenen heilahduksen ajasta, joten sekä keskiarvo että epävarmuus jaetaan kymmenellä.
 **Kaava:** $\bar{t}_{10} = \dfrac{t_1 + \dots + t_5}{5}$, $\Delta t_{10} = \dfrac{t_\text{max} - t_\text{min}}{2}$, $T = \dfrac{\bar{t}_{10}}{10}$ ja $\Delta T = \dfrac{\Delta t_{10}}{10}$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $\bar{t}_{10} = \dfrac{71{,}1\,\text{s}}{5} = 14{,}22\,\text{s}$ ja $\Delta t_{10} = \dfrac{14{,}5\,\text{s} - 13{,}9\,\text{s}}{2} = 0{,}3\,\text{s}$, joten $T = \dfrac{14{,}22\,\text{s}}{10} = 1{,}422\,\text{s}$ ja $\Delta T = \dfrac{0{,}3\,\text{s}}{10} = 0{,}03\,\text{s}$.
@@ -258,12 +258,12 @@ Elinan nopeuden suhteellinen epävarmuus on vain $\tfrac{0{,}2}{3{,}2} \approx 6
 ### b)
 **Kysytty:** todennäköisin metalli
 **Periaate:** Aine tunnistetaan vertaamalla mitattua tiheyttä taulukon arvoihin.
-**Mallivastaus:** Mitattu tiheys $7{,}7\,\text{g/cm}^3$ on lähimpänä teräksen tiheyttä $7{,}85\,\text{g/cm}^3$, joten ruuvit ovat todennäköisimmin terästä. Alumiini on varmasti poissuljettu, sillä sen tiheys $2{,}70\,\text{g/cm}^3$ on vain noin kolmasosa mitatusta. Messinki ja kupari ovat kauempana, mutta niiden erottaminen teräksestä riippuu mittauksen tarkkuudesta (c-kohta).
+**Mallivastaus:** Mitattu tiheys $7{,}7\,\text{g/cm}^3$ on lähimpänä teräksen tiheyttä $7{,}85\,\text{g/cm}^3$, joten ruuvit ovat todennäköisimmin terästä. Alumiini on selvästi poissuljettu, sillä sen tiheys $2{,}70\,\text{g/cm}^3$ on vain noin kolmasosa mitatusta. Messinki ja kupari ovat kauempana, mutta niiden erottaminen teräksestä riippuu mittauksen tarkkuudesta (c-kohta).
 
 ### c)
 **Annettu:** lukemien epävarmuus $0{,}5\,\text{ml}$ kumpikin, $m = 96\,\text{g}$
 **Kysytty:** tiheyden vaihteluväli ja voiko messingin sulkea pois
-**Periaate:** Tilavuus on kahden lukeman erotus, joten pahimmassa tapauksessa molempien lukemien virheet kasvattavat tai pienentävät sitä samaan suuntaan. Tiheyden ääriarvot lasketaan tilavuuden ääriarvoilla. Massan epävarmuus, noin $1\,\%$, on tähän verrattuna pieni.
+**Periaate:** Tilavuus on kahden lukeman erotus, joten pahimmassa tapauksessa molempien lukemien virheet kasvattavat tai pienentävät sitä samaan suuntaan. Tiheyden ääriarvot lasketaan tilavuuden ääriarvoilla.
 **Kaava:** $\rho_\text{min} = \dfrac{m}{V + \Delta V}$ ja $\rho_\text{max} = \dfrac{m}{V - \Delta V}$, kun $\Delta V = 2 \cdot 0{,}5\,\text{ml}$
 **Muunnokset:** $\Delta V = 1{,}0\,\text{ml} = 1{,}0\,\text{cm}^3$, joten $V$ on $11{,}5$–$13{,}5\,\text{cm}^3$.
 **Sijoitus:** $\rho_\text{min} = \dfrac{96\,\text{g}}{13{,}5\,\text{cm}^3} \approx 7{,}11\,\tfrac{\text{g}}{\text{cm}^3}$ ja $\rho_\text{max} = \dfrac{96\,\text{g}}{11{,}5\,\text{cm}^3} \approx 8{,}35\,\tfrac{\text{g}}{\text{cm}^3}$
@@ -341,8 +341,8 @@ Elinan nopeuden suhteellinen epävarmuus on vain $\tfrac{0{,}2}{3{,}2} \approx 6
   <circle cx="360" cy="283.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
   <circle cx="406.5" cy="282" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
   <circle cx="453.5" cy="281" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="425.5" y="193.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{pallo}$</div></foreignObject>
-  <foreignObject x="360" y="295.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\text{suodatin}$</div></foreignObject>
+  <foreignObject x="341.5" y="202.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{pallo}$</div></foreignObject>
+  <foreignObject x="285.5" y="307.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\text{suodatin}$</div></foreignObject>
   <foreignObject x="98.5" y="62" width="283" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$g = \dfrac{3{,}87\,\tfrac{\text{m}}{\text{s}}}{0{,}40\,\text{s}} \approx 9{,}7\,\tfrac{\text{m}}{\text{s}^2}$</div></foreignObject>
 </svg>
 
@@ -370,7 +370,7 @@ Elinan nopeuden suhteellinen epävarmuus on vain $\tfrac{0{,}2}{3{,}2} \approx 6
 **Periaate:** Oletetaan, että pallo putoaa edelleen mallin $v = gt$ mukaisesti eli että ilmanvastus pysyy merkityksettömänä.
 **Kaava:** $v = gt$
 **Muunnokset:** Tunnissa $3600\,\text{s}$, joten $1\,\tfrac{\text{m}}{\text{s}} = \tfrac{3600\,\text{m}}{1\,\text{h}} = 3{,}6\,\tfrac{\text{km}}{\text{h}}$.
-**Sijoitus:** $v = 9{,}67\,\tfrac{\text{m}}{\text{s}^2} \cdot 1{,}2\,\text{s} \approx 11{,}6\,\tfrac{\text{m}}{\text{s}} = 11{,}6 \cdot 3{,}6\,\tfrac{\text{km}}{\text{h}} \approx 42\,\tfrac{\text{km}}{\text{h}}$
+**Sijoitus:** $v = 9{,}7\,\tfrac{\text{m}}{\text{s}^2} \cdot 1{,}2\,\text{s} \approx 11{,}6\,\tfrac{\text{m}}{\text{s}}$ ja $11{,}6 \cdot 3{,}6\,\tfrac{\text{km}}{\text{h}} \approx 42\,\tfrac{\text{km}}{\text{h}}$
 **Vastaus:** Mallin mukaan $v \approx 42\,\text{km/h}$ (kaksi merkitsevää numeroa, kuten ajassa $1{,}2\,\text{s}$). Arvolla $9{,}81\,\text{m/s}^2$ saadaan sama tulos pyöristettynä. Ennuste on mittausalueen ulkopuolella: nopeus on lähes kolminkertainen mitattuun suurimpaan verrattuna. Koska ilmanvastus kasvaa nopeuden kasvaessa, se hidastaa palloakin enemmän kuin mittauksissa, joten todellinen nopeus on todennäköisesti jonkin verran pienempi. Ennuste on hyvä suuruusluokka-arvio.
 **Järkevyys:** Nopeus kasvaa joka sekunti noin $35\,\text{km/h}$, joten $1{,}2\,\text{s}$:ssa noin $40\,\text{km/h}$ on uskottava.
 
@@ -397,11 +397,12 @@ Elinan nopeuden suhteellinen epävarmuus on vain $\tfrac{0{,}2}{3{,}2} \approx 6
   <line x1="309" y1="370" x2="309" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="385.5" y1="370" x2="385.5" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="462" y1="370" x2="462" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="80" y1="320" x2="500" y2="320" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="80" y1="270" x2="500" y2="270" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="80" y1="220" x2="500" y2="220" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="80" y1="170" x2="500" y2="170" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="80" y1="120" x2="500" y2="120" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="80" y1="327" x2="500" y2="327" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="80" y1="284.5" x2="500" y2="284.5" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="80" y1="241.5" x2="500" y2="241.5" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="80" y1="198.5" x2="500" y2="198.5" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="80" y1="155.5" x2="500" y2="155.5" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="80" y1="113" x2="500" y2="113" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="80" y1="70" x2="500" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="79" y1="370" x2="514" y2="370" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M526,370 L513,376 L513,364 Z" fill="#1f2933" stroke-linejoin="round"/>
@@ -417,33 +418,35 @@ Elinan nopeuden suhteellinen epävarmuus on vain $\tfrac{0{,}2}{3{,}2} \approx 6
   <foreignObject x="363" y="379.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$400$</div></foreignObject>
   <line x1="462" y1="370" x2="462" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="439.5" y="379.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$500$</div></foreignObject>
-  <line x1="73" y1="320" x2="80" y2="320" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="35" y="305.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$10$</div></foreignObject>
-  <line x1="73" y1="270" x2="80" y2="270" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="35" y="255.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$20$</div></foreignObject>
-  <line x1="73" y1="220" x2="80" y2="220" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="35" y="205.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$30$</div></foreignObject>
-  <line x1="73" y1="170" x2="80" y2="170" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="35" y="155.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$40$</div></foreignObject>
-  <line x1="73" y1="120" x2="80" y2="120" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="35" y="105.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$50$</div></foreignObject>
+  <line x1="73" y1="327" x2="80" y2="327" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="35" y="312.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$10$</div></foreignObject>
+  <line x1="73" y1="284.5" x2="80" y2="284.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="35" y="270" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$20$</div></foreignObject>
+  <line x1="73" y1="241.5" x2="80" y2="241.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="35" y="227" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$30$</div></foreignObject>
+  <line x1="73" y1="198.5" x2="80" y2="198.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="35" y="184" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$40$</div></foreignObject>
+  <line x1="73" y1="155.5" x2="80" y2="155.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="35" y="141" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$50$</div></foreignObject>
+  <line x1="73" y1="113" x2="80" y2="113" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="35" y="98.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$60$</div></foreignObject>
   <line x1="73" y1="70" x2="80" y2="70" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="35" y="55.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$60$</div></foreignObject>
+  <foreignObject x="35" y="55.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$70$</div></foreignObject>
   <foreignObject x="50" y="375.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0$</div></foreignObject>
   <foreignObject x="532" y="355.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$N$</div></foreignObject>
   <foreignObject x="70" y="13.5" width="74" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$d\ (\text{mm})$</div></foreignObject>
-  <polyline points="80,370 492.5,94.5" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <line x1="462" y1="115" x2="462" y2="370" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <line x1="80" y1="115" x2="462" y2="115" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <circle cx="156.5" cy="320" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="232.5" cy="265" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="309" cy="220" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="385.5" cy="165" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="462" cy="115" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="95.5" y="81" width="220" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$d_1 = \dfrac{51\,\text{mm}}{500} = 0{,}102\,\text{mm}$</div></foreignObject>
+  <polyline points="80,370 492.5,134" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="462" y1="151.5" x2="462" y2="370" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <line x1="80" y1="151.5" x2="462" y2="151.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <circle cx="156.5" cy="327" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="232.5" cy="280" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="309" cy="241.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="385.5" cy="194.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="462" cy="151.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <foreignObject x="95.5" y="71" width="220" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$d_1 = \dfrac{51\,\text{mm}}{500} = 0{,}102\,\text{mm}$</div></foreignObject>
 </svg>
 
-**Mallivastaus:** Pisteet asettuvat suoralle, joka kulkee origon kautta: nollan arkin pinon paksuus on nolla, ja jokainen arkki lisää paksuutta yhtä paljon. Paksuus on siis suoraan verrannollinen arkkimäärään. Pisteet poikkeavat suorasta enintään noin $1\,\text{mm}$, mikä on viivoittimen lukematarkkuuden verran.
+**Mallivastaus:** Pisteet asettuvat suoralle. Suoran pitää kulkea origon kautta, sillä nollan arkin pinon paksuus on nolla, ja jokainen arkki lisää paksuutta yhtä paljon: paksuus on suoraan verrannollinen arkkimäärään. Pisteet sopivat tähän, koska ne poikkeavat origon kautta kulkevasta suorasta enintään noin $1\,\text{mm}$ eli lukeman epävarmuuden verran.
 
 ### c)
 **Annettu:** b-kohdan suora
@@ -453,7 +456,7 @@ Elinan nopeuden suhteellinen epävarmuus on vain $\tfrac{0{,}2}{3{,}2} \approx 6
 **Kaava:** $d_1 = \dfrac{\Delta d}{\Delta N}$ ja $\Delta d_1 = \dfrac{\Delta d}{N}$
 **Muunnokset:** $1\,\text{mm} = 1000\,\mu\text{m}$
 **Sijoitus:** $d_1 = \dfrac{51\,\text{mm} - 0\,\text{mm}}{500 - 0} = 0{,}102\,\text{mm} = 0{,}102 \cdot 1000\,\mu\text{m} = 102\,\mu\text{m}$ ja $\Delta d_1 = \dfrac{1\,\text{mm}}{500} = 0{,}002\,\text{mm} = 2\,\mu\text{m}$
-**Vastaus:** Yhden arkin paksuus on $d_1 = (102 \pm 2)\,\mu\text{m}$, kun lukeman epävarmuus on $1\,\text{mm}$ ja se jaetaan $500$ arkilla.
+**Vastaus:** Yhden arkin paksuus on $d_1 = (102 \pm 2)\,\mu\text{m}$, kun annettu lukeman epävarmuus $1\,\text{mm}$ jaetaan $500$ arkilla.
 **Järkevyys:** Tulostinpaperin paksuus on tyypillisesti noin $0{,}1\,\text{mm}$, joten tulos on oikeaa suuruusluokkaa. Origon kautta kulkeva pienimmän neliösumman suora antaa saman, $102\,\mu\text{m}$.
 
 ### d)

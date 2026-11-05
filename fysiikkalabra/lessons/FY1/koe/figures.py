@@ -27,7 +27,7 @@ def candle():
     ax.line([(0, 15.0), (58, 15.0 - 6.0 / 51 * 58)], INK, 3)
     ax.guide(51, 9.0)
     for t, L in zip(T2, L2): ax.point(t, L)
-    f.tex(ax.X(4), ax.Y(5.0), r"k = \dfrac{9{,}0\,\text{cm} - 15{,}0\,\text{cm}}{51\,\text{min}} \approx -0{,}12\,\tfrac{\text{cm}}{\text{min}}", "start")
+    f.tex(ax.X(3), ax.Y(3.2), r"k = \dfrac{-6{,}0\,\text{cm}}{51\,\text{min}} \approx -0{,}12\,\tfrac{\text{cm}}{\text{min}}", "start")
     return f.svg()
 
 
@@ -62,8 +62,8 @@ def fall():
     ax.guide(0.40, 3.87)
     for t, v in zip(T6, V6): ax.point(t, v)
     for t, v in zip(T6, VL6): ax.point(t, v, COLD)
-    f.tex(ax.X(0.37), ax.Y(2.7), r"\text{pallo}", "start", INK)
-    f.tex(ax.X(0.30), ax.Y(1.0), r"\text{suodatin}", "start", COLD)
+    f.tex(ax.X(0.355), ax.Y(2.55), r"\text{pallo}", "end", INK)
+    f.tex(ax.X(0.22), ax.Y(0.8), r"\text{suodatin}", "start", COLD)
     f.tex(ax.X(0.02), ax.Y(4.65), r"g = \dfrac{3{,}87\,\tfrac{\text{m}}{\text{s}}}{0{,}40\,\text{s}} \approx 9{,}7\,\tfrac{\text{m}}{\text{s}^2}", "start")
     return f.svg()
 
@@ -74,12 +74,12 @@ N7 = [100, 200, 300, 400, 500]; D7 = [10, 21, 30, 41, 51]
 def paper():
     f = Fig("fy1-k7-graph", 420, "Kuvaaja: arkkipinon paksuus d millimetreinä arkkimäärän N funktiona. Viisi pistettä sadasta viiteensataan arkkiin "
             "ovat origon kautta kulkevalla suoralla; suoralta on luettu piste (500; 51 mm).")
-    ax = Axes(f, (80, 370), (500, 70), x=(0, 550), y=(0, 60), xticks=[0, 100, 200, 300, 400, 500], yticks=[0, 10, 20, 30, 40, 50, 60],
+    ax = Axes(f, (80, 370), (500, 70), x=(0, 550), y=(0, 70), xticks=[0, 100, 200, 300, 400, 500], yticks=[0, 10, 20, 30, 40, 50, 60, 70],
               xlabel=r"N", ylabel=r"d\ (\text{mm})")
     ax.line([(0, 0), (540, 51 / 500 * 540)], INK, 3)
     ax.guide(500, 51)
     for N, d in zip(N7, D7): ax.point(N, d)
-    f.tex(ax.X(20), ax.Y(52), r"d_1 = \dfrac{51\,\text{mm}}{500} = 0{,}102\,\text{mm}", "start")
+    f.tex(ax.X(20), ax.Y(63), r"d_1 = \dfrac{51\,\text{mm}}{500} = 0{,}102\,\text{mm}", "start")
     return f.svg()
 
 

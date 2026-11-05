@@ -24,7 +24,7 @@ out["fy2-k3-b"] = round(need / eo * kWh / Ho, 0)
 out["k3-fuel-energy"] = (round(need / ep), round(need / eo))
 # fy2-k4: solar panels
 M4 = [40, 150, 420, 680, 870, 880, 860, 700, 440, 210, 60, 15]   # kWh per month
-out["fy2-k4-b"] = sum(M4); out["k4-share"] = round(100 * sum(M4) / 15000, 1)
+out["fy2-k4-b-E"] = sum(M4); out["fy2-k4-b-share"] = round(100 * sum(M4) / 15000, 1)
 out["fy2-k4-c-P"] = round(sum(M4) / 8760, 2); out["fy2-k4-c-f"] = round(100 * sum(M4) / 8760 / 6.0, 1)
 out["k4-winter"] = sum(M4[i] for i in (0, 1, 10, 11))
 # fy2-k5: data centre

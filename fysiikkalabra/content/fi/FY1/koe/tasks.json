@@ -1,5 +1,5 @@
 {
- "intro": "Koe kattaa koko moduulin: fysiikka tieteenä ja maailmankaikkeuden mittasuhteet, suureet ja yksiköt, mittaaminen ja tulosten luotettavuus, kuvaajat ja lineaarinen malli, tasainen liike, putoamiskiihtyvyys, tiheys sekä kokeellinen tutkiminen.",
+ "intro": "Koe kattaa koko moduulin: fysiikka tieteenä ja maailmankaikkeuden mittasuhteet, suureet ja yksiköt, mittaaminen ja tulosten luotettavuus, kuvaajat ja lineaarinen malli, tasainen liike, putoamiskiihtyvyys, tiheys sekä kokeellinen tutkiminen. Pisteytyksessä sama virhe vähentää pisteitä vain kerran: jos jatkat väärällä välituloksella oikein, saat myöhemmistä vaiheista pisteet.",
  "minutes": 120,
  "max_points": 70,
  "sections": [
@@ -68,12 +68,12 @@
      "points": 2,
      "text": "Mikä seuraavista on SI-järjestelmän perussuure?",
      "options": [
+      "sähkövirta",
       "nopeus",
       "tiheys",
-      "sähkövirta",
       "pinta-ala"
      ],
-     "correct": 2,
+     "correct": 0,
      "tag": "concept"
     },
     {
@@ -124,12 +124,12 @@
      "points": 2,
      "text": "Kaksi ryhmää mittasi saman pallon putoamisajan samalta korkeudelta. Ryhmä A sai tulokseksi $(1{,}42 \\pm 0{,}03)\\,\\text{s}$ ja ryhmä B $(1{,}47 \\pm 0{,}04)\\,\\text{s}$. Mikä päätelmä on perusteltu?",
      "options": [
+      "Tulokset sopivat yhteen, koska niiden epävarmuusvälit ovat osittain päällekkäin.",
       "Tulokset ovat ristiriidassa, koska ne eivät ole yhtä suuret.",
       "Ryhmän A tulos on oikea, koska sen epävarmuus on pienempi.",
-      "Tulokset sopivat yhteen, koska niiden epävarmuusvälit ovat osittain päällekkäin.",
       "Tuloksista ei voi päätellä mitään, koska kaikissa mittauksissa on virheitä."
      ],
-     "correct": 2,
+     "correct": 0,
      "tag": "experiment"
     },
     {
@@ -382,7 +382,7 @@
       {
        "key": "units_precision",
        "points": 1,
-       "detail": "$t \\approx 640\\,\\text{s} \\approx 10{,}7\\,\\text{min}$ Elinan lähdöstä, $s \\approx 2{,}1\\,\\text{km}$."
+       "detail": "$t \\approx 640\\,\\text{s} \\approx 11\\,\\text{min}$ Elinan lähdöstä, $s \\approx 2{,}1\\,\\text{km}$."
       },
       {
        "key": "reasonableness",
@@ -395,7 +395,7 @@
      "id": "c",
      "kind": "word",
      "points": 5,
-     "text": "Elinan nopeus tunnetaan vain epätarkasti: se on $(3{,}2 \\pm 0{,}2)\\,\\text{m/s}$. Arvioi, kuinka tarkasti kohtaamispaikka voidaan ennustaa. Selitä, miksi epävarmuus on suuri.",
+     "text": "Elinan nopeus tunnetaan vain epätarkasti: se on $(3{,}2 \\pm 0{,}2)\\,\\text{m/s}$. Arvioi, kuinka tarkasti kohtaamispaikka voidaan ennustaa. Vertaa kohtaamispaikan suhteellista epävarmuutta Elinan nopeuden suhteelliseen epävarmuuteen ja selitä ero.",
      "criteria": [
       {
        "key": "uncertainty",
@@ -408,7 +408,7 @@
        "points": 1
       },
       {
-       "text": "Selittää, että saavuttamiseen kuluva aika riippuu nopeuksien erotuksesta $2{,}8\\,\\text{m/s}$, jonka suhteellinen epävarmuus on paljon suurempi kuin Elinan nopeuden.",
+       "text": "Toteaa, että kohtaamispaikan suhteellinen epävarmuus (noin $15\\,\\%$) on yli kaksinkertainen Elinan nopeuden epävarmuuteen ($6\\,\\%$) verrattuna, ja selittää syyn: suurempi Elinan nopeus sekä pidentää etumatkaa että pienentää erotusnopeutta, joten vaikutukset summautuvat.",
        "tag": "communication",
        "points": 2
       }
@@ -611,7 +611,7 @@
        "points": 1
       },
       {
-       "text": "Toteaa, että alumiini on varmasti poissuljettu, koska sen tiheys on noin kolmasosa.",
+       "text": "Toteaa, että alumiini on selvästi poissuljettu, koska sen tiheys on noin kolmasosa.",
        "tag": "math",
        "points": 1
       }
@@ -772,7 +772,7 @@
        "points": 1
       },
       {
-       "text": "Suodatin on kevyt ja leveä, joten ilmanvastus on sille suuri verrattuna sen painoon.",
+       "text": "Suodatin on kevyt ja leveä, joten ilmanvastus vaikuttaa siihen paljon enemmän kuin palloon (myös: kevyt pinta-alaansa nähden).",
        "tag": "concept",
        "points": 1
       },
@@ -872,7 +872,7 @@
      "id": "b",
      "kind": "graph",
      "points": 6,
-     "text": "Opiskelija mittasi eri arkkimäärien $N$ pinoille paksuuden $d$. Piirrä mittauksista $(N, d)$-kuvaaja ja sovita siihen suora.\n\n| $N$ | $100$ | $200$ | $300$ | $400$ | $500$ |\n|---|---|---|---|---|---|\n| $d\\ (\\text{mm})$ | $10$ | $21$ | $30$ | $41$ | $51$ |",
+     "text": "Opiskelija mittasi eri arkkimäärien $N$ pinoille paksuuden $d$. Kunkin lukeman epävarmuus on $1\\,\\text{mm}$. Piirrä mittauksista $(N, d)$-kuvaaja ja sovita siihen suora. Pitääkö suoran kulkea origon kautta? Perustele.\n\n| $N$ | $100$ | $200$ | $300$ | $400$ | $500$ |\n|---|---|---|---|---|---|\n| $d\\ (\\text{mm})$ | $10$ | $21$ | $30$ | $41$ | $51$ |",
      "criteria": [
       {
        "key": "graph_axes",
@@ -880,7 +880,7 @@
       },
       {
        "key": "graph_points",
-       "points": 1
+       "points": 2
       },
       {
        "key": "graph_fit",
@@ -888,13 +888,8 @@
        "detail": "Suora kulkee pisteiden joukon keskeltä."
       },
       {
-       "text": "Perustelee, että suoran kuuluu kulkea origon kautta: nollan arkin pino on nollan paksuinen.",
+       "text": "Perustelee, että suoran kuuluu kulkea origon kautta: nollan arkin pino on nollan paksuinen, ja pisteet sopivat tähän epävarmuuden rajoissa.",
        "tag": "concept",
-       "points": 1
-      },
-      {
-       "text": "Toteaa, että pisteet poikkeavat suorasta vain lukematarkkuuden $1\\,\\text{mm}$ verran.",
-       "tag": "experiment",
        "points": 1
       }
      ]
@@ -932,7 +927,7 @@
       {
        "key": "uncertainty",
        "points": 2,
-       "detail": "Lukeman epävarmuus $1\\,\\text{mm}$ jaettuna $500$ arkilla on $2\\,\\mu\\text{m}$: $d = (102 \\pm 2)\\,\\mu\\text{m}$."
+       "detail": "Annettu lukeman epävarmuus $1\\,\\text{mm}$ jaettuna $500$ arkilla on $2\\,\\mu\\text{m}$: $d = (102 \\pm 2)\\,\\mu\\text{m}$."
       }
      ]
     },
