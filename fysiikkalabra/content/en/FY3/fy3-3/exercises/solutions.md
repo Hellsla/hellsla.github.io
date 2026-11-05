@@ -234,3 +234,16 @@ T_3 &= 293.15\,\text{K} \cdot \frac{1001\,\text{kPa}}{701\,\text{kPa}} \\
 So the kinetic energy increases by $13.6\,\%$.
 **Answer:** $145\,{}^\circ\text{C}$ (exactly $145.46\,{}^\circ\text{C}$), three significant figures like the atmospheric pressure $101\,\text{kPa}$. Other results: the total pressure is $797\,\text{kPa}$ and the gauge pressure $696\,\text{kPa}$ at $60.0\,{}^\circ\text{C}$ (the valve does not open), and the kinetic energy increases by $13.6\,\%$. The total pressure increases by a factor of $796.7 : 701 = 1.136$, or $13.6\,\%$, the same as the kinetic energy, but the gauge pressure increases by a factor of $695.7 : 600 = 1.16$, or $16\,\%$. The total pressure is proportional to the temperature in kelvins, because it arises from the collisions of the particles; the gauge pressure is the difference between the total pressure and the atmospheric pressure.
 **Reasonableness:** When the valve opens, the total pressure increases by the ratio $1001 : 701 = 1.43$, so the temperature in kelvins must increase by the same factor: $293 \cdot 1.43 \approx 419\,\text{K}$, which matches the order of magnitude of the result $418.61\,\text{K} - 273.15 = 145.46\,{}^\circ\text{C} \approx 145\,{}^\circ\text{C}$. The $60\,{}^\circ\text{C}$ inside a car is clearly below $145\,{}^\circ\text{C}$, so the valve does not open. If the gauge pressure were taken as proportional, the wrong result would be $293.15 \cdot 1.5 - 273.15 \approx 167\,{}^\circ\text{C}$.
+
+## fy3-3-L1-09
+**Find:** the unit of the constant $c$ when $p = c\,T$, the pressure is in the unit $\text{kPa}$ and the temperature in the unit $\text{K}$
+**Principle:** Both sides of the equation $p = c\,T$ must have the same unit. On the left is the pressure, so the unit of the product $c\,T$ must be $\text{kPa}$. The unit of temperature is $\text{K}$, so the unit of $c$ must cancel the kelvin.
+**Model answer:** Solve for $c$:
+
+$c = \dfrac{p}{T}$
+
+Substitute the units:
+
+$[c] = \dfrac{\text{kPa}}{\text{K}}$
+
+Check: $\tfrac{\text{kPa}}{\text{K}} \cdot \text{K} = \text{kPa}$, so $c\,T$ is a pressure. The answer is therefore $\tfrac{\text{kPa}}{\text{K}}$. The option $\text{kPa} \cdot \text{K}$ multiplies the units although $c$ is obtained by dividing. The option $\tfrac{\text{K}}{\text{kPa}}$ is the division upside down, and the option $\text{kPa}$ forgets the unit of temperature. With the example values $p = 120\,\text{kPa}$ and $T = 300\,\text{K}$ we get $c = 120\,\text{kPa} : 300\,\text{K} = 0.40\,\tfrac{\text{kPa}}{\text{K}}$.

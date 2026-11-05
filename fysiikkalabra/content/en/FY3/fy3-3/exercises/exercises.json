@@ -109,6 +109,36 @@
           "feedback": "The walls do not prevent warming: heating raises the temperature of the gas, and it is the rise in temperature that changes the other state variables."
         }
       ]
+    },
+    {
+      "id": "fy3-3-L1-09",
+      "level": 1,
+      "text": "The pressure of a gas in a closed rigid container is directly proportional to the temperature in kelvins: $p = c\\,T$. The pressure is given in kilopascals and the temperature in kelvins.\n\nWhat is the unit of the constant $c$?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "$c$ is in the unit $\\tfrac{\\text{kPa}}{\\text{K}}$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "$c$ is in the unit $\\tfrac{\\text{kPa}}{\\text{K}}$.",
+          "correct": true,
+          "feedback": "Correct: $c = \\dfrac{p}{T}$, so the unit is the unit of pressure divided by the unit of temperature, $\\tfrac{\\text{kPa}}{\\text{K}}$. Then the product $c\\,T$ is in kilopascals."
+        },
+        {
+          "text": "$c$ is in the unit $\\text{kPa} \\cdot \\text{K}$.",
+          "feedback": "This multiplies the units, although $c$ is obtained by dividing: $c = \\dfrac{p}{T}$. Then the product $c\\,T$ would be in the unit $\\text{kPa} \\cdot \\text{K}^2$, which is not a pressure."
+        },
+        {
+          "text": "$c$ is in the unit $\\tfrac{\\text{K}}{\\text{kPa}}$.",
+          "feedback": "This turns the division upside down: $c$ is pressure divided by temperature, not temperature divided by pressure. Then the product $c\\,T$ would be in the unit $\\tfrac{\\text{K}^2}{\\text{kPa}}$, not in kilopascals."
+        },
+        {
+          "text": "$c$ is in the unit $\\text{kPa}$.",
+          "feedback": "This forgets the unit of temperature. If $c$ were in kilopascals, the product $c\\,T$ would be in the unit $\\text{kPa} \\cdot \\text{K}$. The kelvin must cancel out, so $c$ must have the kelvin as a divisor."
+        }
+      ]
     }
   ],
   "level2": [

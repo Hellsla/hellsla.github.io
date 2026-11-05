@@ -110,6 +110,42 @@
       "answer": 670,
       "unit": "N",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-1-L1-09",
+      "level": 1,
+      "text": "A body of mass $0.50\\,\\text{kg}$ hangs at rest from the hook of a force meter on the surface of the Earth. The force meter reads $4.9\\,\\text{N}$.\n\nIn the diagrams $G$ is the weight of the body, $F$ is the force of the hook of the force meter on the body and $F_\\text{k}$ is the force of the body on the force meter. All diagrams are drawn to the same scale.\n\nWhich force diagram shows correctly the forces that act on the body?",
+      "kind": [
+        "concept",
+        "model"
+      ],
+      "fbd": "select",
+      "answer": "Force diagram B",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Force diagram A",
+          "figure": "fy3-1/pick-weight-only",
+          "feedback": "The force $F$ of the force meter is missing. The meter does not just show a reading: the body also interacts with the hook, and the stretched spring pulls the body upwards with a force of $4.9\\,\\text{N}$."
+        },
+        {
+          "text": "Force diagram B",
+          "figure": "fy3-1/pick-rest",
+          "correct": true,
+          "feedback": "Correct: the Earth pulls the body down with the force $G$ and the hook pulls it up with the force $F$. The weight is $G = 0.50\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2$, that is $G \\approx 4.9\\,\\text{N}$, the same as the reading, so the arrows are equally long."
+        },
+        {
+          "text": "Force diagram C",
+          "figure": "fy3-1/pick-long-pull",
+          "feedback": "The arrow $F$ here is twice as long as $G$. The idea that the meter must pull harder than the weight to hold the body up is wrong: the meter reads $4.9\\,\\text{N}$, the same as the weight."
+        },
+        {
+          "text": "Force diagram D",
+          "figure": "fy3-1/pick-extra",
+          "feedback": "The force $F_\\text{k}$ is the force of the body on the meter, and it acts on the meter, not on the body. A force diagram shows only the forces that act on the body, here $G$ and $F$."
+        }
+      ]
     }
   ],
   "level2": [

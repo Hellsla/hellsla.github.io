@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 06e3ab72bb92e102
+CONTENT-HASH: 2ed55e71f88658da
 Mode: translation
-Round: 1
+Round: 2
 
 ## Blocking
 (none)
-
-## Fixed
-- fy3-1-L1-07 feedback and solution: 'even in a space with no air' reworded to 'even where there is no air' (natural English).
 
 ## Polish
 - none
 
 ## Checked
-- Task structure (a/b parts, answer-box instruction, model-answer pointer), distractor feedback and solution sequence (Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness) equal the reviewed Finnish.
-- Misconception feedback of L1-06, L1-07 and the error task L2-07 keeps the same diagnostic and wording level; no hint leaks the answer.
-- Language level: English reads naturally, short sentences and terms explained where needed (rover, celestial body, calibration in fi-easy; plain in en); no Finnish left in en.
-- Levels and kinds of the 8 new tasks unchanged from Finnish.
+- L1-09 is a level 1 force-diagram choice (fbd select): situation first, question last, four figures needed to answer, scale statement given; distractors each carry one recognisable error (missing force, wrong length, extra force on the wrong body).
+- Feedback of every option names its error and repairs it without restating a bare answer; the solution puts the diagram reasoning before the arrow comparison and computes G first.
+- Terms F, G, F_k are defined in the task text before use.
+- English reads naturally, structure and feedback equal the Finnish, nothing clipped in the exercise layout.

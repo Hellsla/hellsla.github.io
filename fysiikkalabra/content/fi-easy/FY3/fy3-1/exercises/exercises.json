@@ -110,6 +110,42 @@
       "answer": 670,
       "unit": "N",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-1-L1-09",
+      "level": 1,
+      "text": "Kappaleen massa on $0{,}50\\,\\text{kg}$. Kappale riippuu levossa voimamittarin koukussa Maan pinnalla. Voimamittari näyttää $4{,}9\\,\\text{N}$.\n\nKuvioissa $G$ on kappaleen paino. $F$ on voimamittarin koukun voima kappaleeseen. $F_\\text{k}$ on kappaleen voima voimamittariin. Kaikki kuviot on piirretty samassa mittakaavassa.\n\nMikä voimakuvio esittää oikein ne voimat, jotka vaikuttavat kappaleeseen? Voimakuvio näyttää nuolina kaikki voimat, jotka kohdistuvat eli osuvat kappaleeseen.",
+      "kind": [
+        "concept",
+        "model"
+      ],
+      "fbd": "select",
+      "answer": "Voimakuvio B",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Voimakuvio A",
+          "figure": "fy3-1/pick-weight-only",
+          "feedback": "Tästä puuttuu voimamittarin voima $F$. Mittari ei vain näytä lukemaa. Kappale on vuorovaikutuksessa myös koukun kanssa. Venynyt jousi vetää kappaletta ylöspäin voimalla $4{,}9\\,\\text{N}$."
+        },
+        {
+          "text": "Voimakuvio B",
+          "figure": "fy3-1/pick-rest",
+          "correct": true,
+          "feedback": "Oikein: Maa vetää kappaletta alaspäin voimalla $G$ ja koukku ylöspäin voimalla $F$. Paino on $G = 0{,}50\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2$, eli $G \\approx 4{,}9\\,\\text{N}$. Se on sama kuin lukema, joten nuolet ovat yhtä pitkät."
+        },
+        {
+          "text": "Voimakuvio C",
+          "figure": "fy3-1/pick-long-pull",
+          "feedback": "Nuoli $F$ on tässä kaksi kertaa niin pitkä kuin $G$. Ajatus ei pidä, että mittarin pitää vetää painoa enemmän, jotta kappale pysyy ylhäällä. Mittari näyttää $4{,}9\\,\\text{N}$, saman kuin paino."
+        },
+        {
+          "text": "Voimakuvio D",
+          "figure": "fy3-1/pick-extra",
+          "feedback": "Voima $F_\\text{k}$ on kappaleen voima mittariin. Se vaikuttaa mittariin eikä kappaleeseen. Kuvioon piirretään vain kappaleeseen vaikuttavat voimat, tässä $G$ ja $F$."
+        }
+      ]
     }
   ],
   "level2": [

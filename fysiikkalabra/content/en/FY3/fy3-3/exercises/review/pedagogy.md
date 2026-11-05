@@ -1,29 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 951cc75ea0f5bc43
-Round: 3
-Mode: delta
+CONTENT-HASH: 369f211a9cf2d977
+Mode: translation
+Round: 2
 
 ## Blocking
 (none)
-
-## Fixed
-- L2-05 and L3-04: "a random error varies in one direction and the other" changed to "varies in both directions" (clearer English, same meaning).
-- L2-07 a): "choose the earliest at which" changed to "choose the earliest time at which".
-- L3-04 a): "You check the other parts against the solution." changed to the imperative "Check the other parts against the solution."
-- L3-04 d): "The temperature of the person measured in the mouth is" changed to "The person's temperature measured in the mouth is".
 
 ## Polish
 - none
 
 ## Checked
-- The 8 new exercises keep the Finnish difficulty ladder (concept choice, data table with correction, time series, multi-part model task) and the Finnish hints, e.g. the ratio hint in L2-06.
-- Part labels a)-d) and the closing line naming which part goes in the answer box match the Finnish in all new multi-part tasks.
-- Distractor feedback in L1-06 and L1-08 explains the misconception and does not leak into the other options, as in the Finnish.
-- Terms systematic error, random error, gauge pressure, spread (half the range) are explained in the task text as in the Finnish.
-- Register is plain and natural English for upper secondary level.
-
-## Checked in round 2
-- Delta (HEAD): only the line breaks of aligned model-solution rows changed (long row split into "..." and "&= result"). The step order, reasoning, numbers and wording are unchanged; the shorter rows read more easily on a phone, the "&=" continuation sits under the first "=". No learning-related change.
-
-## Checked in round 3
-- Delta (HEAD~3..HEAD, solutions.md display maths only): Only layout changed: the corrected forehead temperature now sits in its own display formula after the aligned block; the earlier one-row split "\\ &=" is gone, so the line reads as one calculation. Step order, reasoning and numbers unchanged. No learning-related change.
+- L1-09 is a level 1 concept choice: setting first, the question as its own sentence, the proportional model given, nothing the lesson did not prepare.
+- Distractors are misconception-based (multiplying units, inverting, forgetting K) and each feedback repairs the error with a cancellation check.
+- Solution is stepwise: solve for c, substitute units, check c*T, then an example value.
+- English reads naturally, structure and feedback equal the Finnish, nothing clipped in the exercise layout.
