@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: bb63035ce3d7afb9
+CONTENT-HASH: b06084335558b3a5
 
 ## Blocking
 
 ## Polish
-- [Minor] fy3-11-L2-08 reasons — the correct reason is the only one that states the formula $W/Q_1$, which hints at it by form; give one distractor a formula too, e.g. "hyötysuhde on $Q_1/W$, ..." phrased as the misconception.
-- [Minor] fy3-11-L2-08 reasons feedback — fractions $\tfrac{120}{300}$ in running text are small at 390 px; acceptable.
+- [Minor] fy3-11-L2-08 reasons — the fixed reason ("... $Q_1$ ... $W = Q_1 - Q_2$") now carries a formula like the correct one, so the round-1 form cue is gone; nothing further needed.
 
 ## Checked
-- Rendered fy3-11 preview at 390 px, L2-08 with answer feedback, reason feedback and the solution open; opened the images.
-- Task text splits into situation and question; the A and B data lines are clear. No overflow (scrollWidth 390). Solution fractions $\eta_A$, $\eta_B$ are set in rows within 390 px.
-- Distractors catch the chapter's warned mistake ("same work, same efficiency", "more heat in, more work").
-- Option form: lengths comparable; one reason (true but irrelevant) is a good distractor.
+- Round 2 (delta). The only change is the wording of reason 2 (symbol $Q_1$ and $W = Q_1 - Q_2$ as maths, one clause). Text-only check of that line: LaTeX, no plain quantity, fluent Finnish, similar length to the other reasons.
+- Rendered fy3-11 at 390 px (task, answer and reason feedback, solution; images opened, round-1 render plus a re-render with the new build): no overflow (scrollWidth 390), solution fractions set in rows. I did not zoom in on the reworded reason itself; it is judged from text.
+- Hash at start and end the same.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 4

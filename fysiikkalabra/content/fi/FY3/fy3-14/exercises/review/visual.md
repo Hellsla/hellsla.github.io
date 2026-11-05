@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 501fa6aaa0208bbd
-ROUND: 1
+CONTENT-HASH: c85d98ce6115a0a2
+ROUND: 2
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy3-14-L1-09 feedback 1 vs solutions.md — feedback gives $18\,900\,\text{J}$, the solution $18\,855\,\text{J}$; use the same figure ($18\,855\,\text{J} \approx 19\,\text{kJ}$).
-- [Minor] for science: $Q_\text{v} = c_\text{v} m_\text{v} T_\text{v}$ uses the temperature $T_\text{v}$ as the drop to 0 °C; the chapter's notation may want $\Delta T$ (teaching point, not presentation).
-- [Minor] L1-09 stem — "(esimerkkiarvot)" sits mid-sentence after the ice temperature; move it to the sentence start ("Esimerkkiarvoilla: …").
-- [Minor] Statement list order is fixed (T F T T F); a student who gets two right can guess the pattern — consider reordering (pedagogy).
+- [Minor] fy3-14-L2-08 (moved from L1-09) — the statement order is still fixed (T F T T F), so the pattern can be guessed; consider reordering. (Carried over.)
+- [Minor] for science: $Q_\text{v} = c_\text{v} m_\text{v} T_\text{v}$ uses the temperature $T_\text{v}$ as the drop to $0\,{}^\circ\text{C}$ ($18\,\text{K}$); the chapter's notation may want $\Delta T$. (Carried over.)
+- [Minor] Stem — "(esimerkkiarvot)" still sits mid-sentence after the ice temperature. (Carried over.)
 
 ## Checked
-- Method: the packet's contact sheets and shots/ folder were not present in the worktree, so I rendered the new task myself with Playwright chromium at 390 px from preview/FYID.html, with solution, hints and feedback open (screenshots opened in three to four segments each). Text-only checks are named as such.
-- Opened fy3-14-L1-09 at 390 px in three segments: stem, five statements with Tosi/Epätosi buttons and their feedback cards, answer line, Annettu/Kysytty/Periaate, the stacked Mallivastaus rows. No overflow (scrollWidth 390), all formulas fit, fractions \tfrac readable, Q_v/Q_j subscripts clear.
-- Form check (text): statements are all of similar length; the false ones are not marked by hedging. Statements 2 and 5 catch the chapter's warned mistakes (compare masses, average temperatures). Within scope.
+- From render (390 px, Playwright chromium, preview rebuilt, hints, feedback and solution open; fresh capture opened in segments): the moved task fy3-14-L2-08 in level 2 (Taso 2 · soveltava harjoitus), stem, five statements with their feedback, answer line, Annettu/Periaate/Mallivastaus. No overflow (scrollWidth 390); formulas fit. The new statement 5 feedback (mass-weighted mean, $14\,{}^\circ\text{C}$) wraps cleanly and the sentence reads well.
+- Round 1 findings: feedback 1 now $18\,855\,\text{J}$, matching the solution (fixed). The others above are unchanged.
+- From text only: the mass-weighted mean (0,25 · 18 / 0,33 = 13,6, about $14\,{}^\circ\text{C}$) is right; solutions.md moved block identical to before; options not identifiable by form.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

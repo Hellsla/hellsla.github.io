@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 2949b01f2b88f424
+CONTENT-HASH: 83748953571d3f72
 
 ## Blocking
 
 ## Polish
-- [Minor] fy3-12-L2-08 task text — "Laske kunkin rakennusosan läpi johtuva lämpöteho $P$ ja järjestä rakennusosat." is followed by the prompt "Järjestä rakennusosat … pienimmästä suurimpaan."; the order instruction appears twice. Drop "ja järjestä rakennusosat" from the text.
-- [Minor] fy3-12-L2-08 data lines — each U and A line wraps in two rows at 390 px; one line per part (U and A) reads easier, or a small table.
+- [Minor] fy3-12-L2-08 data lines — each U and A pair wraps to two rows at 390 px; acceptable, a small table would read easier.
 
 ## Checked
-- Rendered fy3-12 preview at 390 px, L2-08 with the answer and solution open; opened the images. The order selects ("Sija") are usable at phone width; no overflow (scrollWidth 390).
-- Units $\text{W/(m}^2\cdot\text{K)}$ render correctly with the thin space; solution rows fit 390 px. The solution's closing paragraph explains the wrong orders (only U, only A).
-- An order task has no answer options, so form cues do not apply. The chapter's warned mistake (comparing only U) is what the task catches.
-- Text only: level 3 paragraph splits from the diff.
+- Round 2 (delta). Round-1 duplicate instruction fixed: the text now ends "Laske ... $P$ ja vertaa niitä." and the prompt "Järjestä ..." carries the ordering once. Yläpohja $U = 0{,}090$ now matches the two-figure precision of the other U values.
+- Rendered fy3-12 at 390 px (task, order selects; images opened): reads in the right order, no overflow (scrollWidth 390). The solution still says the answers are given to two figures; "0,090" is consistent with that (text check).
+- Hash at start and end the same.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4
