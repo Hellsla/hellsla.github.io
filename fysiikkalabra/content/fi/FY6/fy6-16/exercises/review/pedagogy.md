@@ -1,15 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 314a764bcc4556f0
+CONTENT-HASH: 81bbe5b3454f7162
+ROUND: 2
 
 ## Blocking
-(none)
 
 ## Polish
-- exercises.json fy6-16-L2-04 — still asks for the cable's voltage drop, a quantity the lesson does not name — ask for the heating power or add a half-sentence on voltage drop to the lesson.
-- No task on vikavirtasuoja, insulation or the fuse's purpose; L1-02 is a bare P = UI — turn it into a threshold or qualitative item.
+- L2-06 repeats the existing L2-02 (60 kWh, 20 % to 80 %, charging time with efficiency); change the numbers or ask for the effect of the omitted efficiency (carried over).
+- L2-05 b), L2-03 and L3-05 a)–b) all do "3·25 A minus house load"; L3-05's cable loss is the new part (carried over).
+- L3-04: the plan also asks for an emissions comparison; only cost is compared (optional, carried over).
+- L2-07 a) asks for six trapezoids, heavy at level 2 but one method (carried over).
 
-## Checked (round 2, diff HEAD~1..HEAD)
-- solutions.md L3-02 Vastaus now says why 156 % is not rounded (10 A and 16 A are exact settings): the earlier vague sentence is replaced.
-- solutions.md L3-01 Järkevyys now gives the annual grid energies (3260 and 3660 kWh), so the "400 kWh" estimate can be followed.
-- Fraction units in solutions (L1-04, L3-01) written as €/kWh; values unchanged.
-- Levels 5/4/3, answers, figure lataus-ex and its description unchanged and still fine.
+## Checked
+- Round-1 items resolved: L1-06 feedback now computes 60 kWh : 11 kW ≈ 5,5 h "ilman häviöitä"; L2-05 states the hourly-constant assumption in the task and in the solution c) (with the real-world caveat); L2-07 now fixes the interval 0–3,0 h in a) and b), so 22,85 kWh and 7,617 kW are unambiguous.
+- L2-05: 17,25 − 6,8 = 10,45 kW; 6,25 kW limit and only 19–20 h exceeding it, correct.
+- L2-07: units added to the sums (39,5 kW, 6,2 kW); 0,5 h · 45,7 kW = 22,85 kWh, correct.
+- L3-04: answer 1370 € now rounded explicitly to ten euros (390 € at two significant figures); 14 640 km and 1370,06 € unchanged.
+- Levels fit the plan; render not re-opened (wording only).

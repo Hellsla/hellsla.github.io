@@ -1,12 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: cca8005f5904026c
+CONTENT-HASH: d1fdac06786f6ddd
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
+
+## Fixed
+(none needed: the text already matched fi and was natural)
 
 ## Polish
 (none)
 
 ## Checked
-- Delta L1-05 Vastaus: "tulos on tarkka" -> "Tuloksessa on kaksi merkitsevää numeroa. Potentiaalit luetaan 50 V:n ruudukkoviivoilta, ja paikat on annettu kahden merkitsevän numeron tarkkuudella." Three short sentences, plain Finnish, the reason is given instead of an "exact" overclaim.
-- "50 V:n" case correct; answer 150 eV and figure values unchanged and consistent with the Finnish set.
+- Language is plain Finnish (selkosuomi); short sentences, no unexplained terms beyond what fi-easy already defines.
+- Hints and distractor feedback in L1-06, L1-07, L2-06 name the misconception and point to the right idea, as in fi.
+- Multi-part tasks L2-05, L2-07, L3-04, L3-05 keep the a)-d) structure and the line saying which part goes in the answer box.
+- Answer-field strings of L1-06, L1-07, L2-06 equal the text of the correct choice.

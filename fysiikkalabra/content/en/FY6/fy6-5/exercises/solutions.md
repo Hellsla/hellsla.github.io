@@ -118,3 +118,88 @@
 **Substitution:** Two bulbs: $R_\text{b} = 30\,\Omega$ and $V_\text{two} = \dfrac{30\,\Omega}{50\,\Omega} \cdot 12\,\text{V} = 7.2\,\text{V}$. One bulb: $R_\text{b} = 60\,\Omega$ and $V_\text{one} = \dfrac{60\,\Omega}{80\,\Omega} \cdot 12\,\text{V} = 9.0\,\text{V}$. $\Delta V = 9.0\,\text{V} - 7.2\,\text{V} = 1.8\,\text{V}$
 **Answer:** $1.8\,\text{V}$, two significant figures like the resistances.
 **Reasonableness:** The current decreases from $0.24\,\text{A}$ to $0.15\,\text{A}$, so the voltage of the series resistor decreases from $4.8\,\text{V}$ to $3.0\,\text{V}$, that is, by $1.8\,\text{V}$, and the voltage of the bulb increases by exactly that much. The remaining bulb shines brighter, because its voltage increases.
+
+## fy6-5-L1-06
+**Find:** why the sum of the currents arriving at a junction is equal to the sum of the currents leaving it.
+**Principle:** Current is the charge that passes through the cross-section of a wire in a unit of time. A junction is a point of a wire where charge cannot collect and where none is created or destroyed. So the charge arriving there leaves at the same rate, and this is Kirchhoff's current law.
+**Model answer:** The law follows from the conservation of charge: charge is neither created, destroyed nor collected at the junction, so the sum of the arriving currents is equal to the sum of the leaving currents. The current does not divide equally among the branches, but the resistances of the branches determine how large a share of the current flows in each branch. The common voltage of the branches does not explain the current law, and current is not used up in a resistor: in a resistor the potential decreases, not the current.
+
+## fy6-5-L1-07
+**Find:** what happens to the potentials, the voltages and the current when another point is chosen as the zero point.
+**Principle:** Potential is the voltage of a point relative to the chosen zero point, and voltage is the difference of the potentials of two points $U_{AB} = V_A - V_B$. When all potentials are measured from the new zero point, each changes by the same amount, and in the difference the change cancels out. The current is determined by the source and the resistors, not by the choice of the zero point.
+**Model answer:** The potentials of all points change by the same amount. When the positive terminal is chosen as the zero point, the potential of the positive terminal is $0$ and the potential of the negative terminal is negative, and its magnitude is the voltage of the source. The voltages between the points, including the voltages of the resistors, stay the same, because they are differences of potentials. The current in the resistors does not change, because the zero point is only a choice made for calculation and does not change how the circuit works. So what stays unchanged is not the potentials but the voltages and the currents.
+
+## fy6-5-L1-08
+**Given:** $V_A = 9.0\,\text{V}$, $R_1 = 60\,\Omega$, $R_2 = 90\,\Omega$, $I = 0.040\,\text{A}$
+**Find:** the potential $V_C$ of the point $C$ in volts
+**Principle:** The same current flows through both resistors. In a resistor the potential drops in the direction of the current by the voltage $RI$, so when going from the point $A$ to the point $C$ the potential drops by the voltage of each resistor.
+**Formula:** $V_C = V_A - R_1 I - R_2 I$
+**Conversions:** Not needed: all quantities are in base units.
+**Substitution:** $V_C = 9.0\,\text{V} - 60\,\Omega \cdot 0.040\,\text{A} - 90\,\Omega \cdot 0.040\,\text{A} = 9.0\,\text{V} - 2.4\,\text{V} - 3.6\,\text{V} = 3.0\,\text{V}$
+**Answer:** $3.0\,\text{V}$, two significant figures like the given values.
+**Reasonableness:** The total drop in the resistors is $150\,\Omega \cdot 0.040\,\text{A} = 6.0\,\text{V}$, and $9.0\,\text{V} - 6.0\,\text{V} = 3.0\,\text{V}$. The potential decreases in the direction of the current, so $V_C$ is smaller than $V_A$.
+
+## fy6-5-L2-05
+**Given:** $U = 12\,\text{V}$, $R_1 = 60\,\Omega$, $R_2 = 80\,\Omega$, $R_3 = 50\,\Omega$ in parallel; readings $\text{A}_0$: $0.50\,\text{A}$, $\text{A}_1$: $0.20\,\text{A}$, $\text{A}_2$: $0.15\,\text{A}$, $\text{A}_3$: $0.24\,\text{A}$
+**Find:** the wrong reading and the correct reading $I_0$ of the meter $\text{A}_0$ in the main wire in amperes
+**Principle:** The voltage of each resistor of the parallel branches is the voltage of the source, so Ohm's law $I = U : R$ gives the branch currents, and the branch meters can be checked with them. By Kirchhoff's current law the current of the main wire is the sum of the branch currents.
+**Formula:** $I_k = \dfrac{U}{R_k}$ and $I_0 = I_1 + I_2 + I_3$
+**Conversions:** Not needed: $1\,\text{V} : 1\,\Omega = 1\,\text{A}$.
+**Substitution:** $\dfrac{12\,\text{V}}{60\,\Omega} = 0.20\,\text{A}$, $\dfrac{12\,\text{V}}{80\,\Omega} = 0.15\,\text{A}$ and $\dfrac{12\,\text{V}}{50\,\Omega} = 0.24\,\text{A}$, as the branch meters show. The sum of the branch currents is $0.20\,\text{A} + 0.15\,\text{A} + 0.24\,\text{A} = 0.59\,\text{A}$.
+**Answer:** $0.59\,\text{A}$. The wrong reading is that of the meter in the main wire, $0.50\,\text{A}$, because it is smaller than the sum of the branch currents.
+**Reasonableness:** The total resistance would be $12\,\text{V} : 0.59\,\text{A} \approx 20\,\Omega$, which is smaller than the smallest branch resistance $50\,\Omega$, as it should be in a parallel connection. With the reading $0.50\,\text{A}$ more current would leave into the branches than arrives at the point.
+
+## fy6-5-L2-06
+**Given:** potentials $V_A = 12.0\,\text{V}$, $V_B = 8.4\,\text{V}$, $V_C = 8.4\,\text{V}$, $V_D = 3.6\,\text{V}$, $V_E = 0\,\text{V}$; current $I = 0.12\,\text{A}$
+**Find:** the resistance of the resistor $R_2$ in ohms
+**Principle:** Between the points $B$ and $C$ there is only a wire, in which the potential does not change ($\Delta V = 0$), so they have the same potential. The resistor $R_2$ is between the points $C$ and $D$, so its voltage is the difference of the potentials. In a series connection the same current flows through it, and Ohm's law gives the resistance.
+**Formula:** $U_2 = V_C - V_D$ and $R_2 = \dfrac{U_2}{I}$
+**Conversions:** Not needed: the potentials are in volts and the current in amperes.
+**Substitution:** $U_2 = 8.4\,\text{V} - 3.6\,\text{V} = 4.8\,\text{V}$ and $R_2 = \dfrac{4.8\,\text{V}}{0.12\,\text{A}} = 40\,\Omega$
+**Answer:** $40\,\Omega$, two significant figures like the current.
+**Reasonableness:** The voltages of the resistors are $12.0\,\text{V} - 8.4\,\text{V} = 3.6\,\text{V}$, $4.8\,\text{V}$ and $3.6\,\text{V} - 0\,\text{V} = 3.6\,\text{V}$, together $12.0\,\text{V}$, the voltage of the source. The resistances $30\,\Omega$, $40\,\Omega$ and $30\,\Omega$ give the current $12.0\,\text{V} : 100\,\Omega = 0.12\,\text{A}$, which is the measured reading.
+
+## fy6-5-L2-07
+**Given:** $U = 9.0\,\text{V}$, $R_1 = 100\,\Omega$, $R_2 = 200\,\Omega$; the zero point is the positive terminal of the source; the student's current $0.030\,\text{A}$
+**Find:** the student's error and the correct potential $V$ of the wire between the resistors in volts, with its sign
+**Principle:** The student's current is correct but the sign is wrong. In a resistor the potential drops in the direction of the current, and the current flows from the positive terminal through the resistor $R_1$. When the zero point is the positive terminal, the potential of the wire between the resistors is therefore below zero: $V = 0 - R_1 I$.
+**Formula:** $I = \dfrac{U}{R_1 + R_2}$ and $V = 0 - R_1 I$
+**Conversions:** Not needed: $1\,\text{V} : 1\,\Omega = 1\,\text{A}$.
+**Substitution:** $I = \dfrac{9.0\,\text{V}}{100\,\Omega + 200\,\Omega} = 0.030\,\text{A}$ and $V = 0 - 100\,\Omega \cdot 0.030\,\text{A} = -3.0\,\text{V}$
+**Answer:** $-3.0\,\text{V}$, two significant figures. The error was in the sign: the student treated the drop in the resistor as a rise.
+**Reasonableness:** The potential of the negative terminal is $-9.0\,\text{V}$. The voltage of the resistor $R_1$ is $0 - (-3.0\,\text{V}) = 3.0\,\text{V}$ and the voltage of the resistor $R_2$ is $-3.0\,\text{V} - (-9.0\,\text{V}) = 6.0\,\text{V}$, and they correspond to the products $100\,\Omega \cdot 0.030\,\text{A}$ and $200\,\Omega \cdot 0.030\,\text{A}$.
+
+## fy6-5-L3-04
+**Given:** $U_1 = 12\,\text{V}$, $U_2 = 9.0\,\text{V}$, $R_1 = 30\,\Omega$, $R_2 = 20\,\Omega$, $R_3 = 30\,\Omega$; currents $I_1$ and $I_3$ to the point $P$ and $I_2$ from the point $P$
+**Find:** the branch currents and especially the current $I_2$ in amperes, and the check with the energy balance
+**Principle:** At the junction $P$ the current law gives $I_1 + I_3 = I_2$. The left loop (source $U_1$, resistors $R_1$ and $R_2$) and the right loop (source $U_2$, resistors $R_3$ and $R_2$) are traversed in the direction of the current, and by the voltage law the sum of the changes of potential is zero in each. Three equations are enough for three unknown currents. In the energy balance the power produced by the sources turns completely into internal energy of the resistors, because no energy is lost in ideal sources and wires.
+**Formula:** $I_1 + I_3 = I_2$, $U_1 - R_1 I_1 - R_2 I_2 = 0$ and $U_2 - R_3 I_3 - R_2 I_2 = 0$. From the loop equations $I_1 = \dfrac{U_1 - R_2 I_2}{R_1}$ and $I_3 = \dfrac{U_2 - R_2 I_2}{R_3}$. Power: $P = UI$ in a source and $P = RI^2$ in a resistor.
+**Conversions:** Not needed: all quantities are in base units.
+**Substitution:** From the loop equations (the units $\text{V}$, $\Omega$ and $\text{A}$ left out):
+
+$$\begin{aligned} I_1 &= \frac{12 - 20\, I_2}{30} \\ I_3 &= \frac{9.0 - 20\, I_2}{30} \end{aligned}$$
+
+From the current law $I_1 + I_3 = I_2$:
+
+$$\begin{aligned} \frac{21 - 40\, I_2}{30} &= I_2 \\ 21 &= 70\, I_2 \\ I_2 &= 0.30\,\text{A} \end{aligned}$$
+
+Then $I_1 = \dfrac{12\,\text{V} - 6.0\,\text{V}}{30\,\Omega} = 0.20\,\text{A}$ and $I_3 = \dfrac{9.0\,\text{V} - 6.0\,\text{V}}{30\,\Omega} = 0.10\,\text{A}$.
+
+The power of the sources is $12\,\text{V} \cdot 0.20\,\text{A} + 9.0\,\text{V} \cdot 0.10\,\text{A} = 2.4\,\text{W} + 0.9\,\text{W} = 3.3\,\text{W}$. The power of the resistors is $30\,\Omega \cdot (0.20\,\text{A})^2 + 20\,\Omega \cdot (0.30\,\text{A})^2 + 30\,\Omega \cdot (0.10\,\text{A})^2 = 1.2\,\text{W} + 1.8\,\text{W} + 0.3\,\text{W} = 3.3\,\text{W}$.
+**Answer:** $I_2 = 0.30\,\text{A}$, two significant figures like the given values. The other branch currents are $I_1 = 0.20\,\text{A}$ and $I_3 = 0.10\,\text{A}$, and the power of the sources and the power of the resistors are both $3.3\,\text{W}$, so the energy balance holds.
+**Reasonableness:** The current law holds: $0.20\,\text{A} + 0.10\,\text{A} = 0.30\,\text{A}$. The voltage between the points $P$ and $Q$ is $R_2 I_2 = 6.0\,\text{V}$, and it is obtained also from the side of each source: $12\,\text{V} - 30\,\Omega \cdot 0.20\,\text{A} = 6.0\,\text{V}$ and $9.0\,\text{V} - 30\,\Omega \cdot 0.10\,\text{A} = 6.0\,\text{V}$. All the currents are positive, so each source really does produce current to the point $P$.
+
+## fy6-5-L3-05
+**Given:** $U = 12\,\text{V}$, $R_1 = 100\,\Omega$, $R_2 = 100\,\Omega$; load $R_\text{L}$ in parallel with the resistor $R_2$; the negative terminal is the zero point; the measurements of the table
+**Find:** the load resistance $R_\text{L}$ in ohms when $V_P = 5.0\,\text{V}$; in addition the explanation of the unloaded and the loaded divider and the result with the load $100\,\Omega$
+**Principle:** Without a load the resistors $R_1$ and $R_2$ are in series, and the potential of the point $P$ is the voltage of the resistor $R_2$. When a load is connected, by the current law the current of the resistor $R_1$ divides between the resistor $R_2$ and the load, and these are in parallel, so they have the same voltage $V_P$. The load decreases the resistance of the branch, the total current increases, the voltage of the resistor $R_1$ increases and by the voltage law $V_P = U - R_1 I$ decreases. The asked resistance is obtained by inverting the divider formula: first the resistance $R_\text{p}$ of the branch, from which the load.
+**Formula:** Unloaded: $V_P = \dfrac{R_2}{R_1 + R_2}\, U$. Loaded: $\dfrac{1}{R_\text{p}} = \dfrac{1}{R_2} + \dfrac{1}{R_\text{L}}$ and $V_P = \dfrac{R_\text{p}}{R_1 + R_\text{p}}\, U$. When $V_P$ is known, $R_\text{p} = \dfrac{R_1 V_P}{U - V_P}$ and $R_\text{L} = \dfrac{R_\text{p} R_2}{R_2 - R_\text{p}}$ (solved from the formula of the parallel connection).
+**Conversions:** Not needed: all quantities are in base units.
+**Substitution:** a) Without a load the resistors $R_1$ and $R_2$ are in series, so the current is the same everywhere and by the voltage law the voltage of the source divides between them. Since $R_1 = R_2$, the potential of the point $P$ is half the voltage of the source: $V_P = \dfrac{100\,\Omega}{200\,\Omega} \cdot 12\,\text{V} = 6.00\,\text{V}$. When a load is connected, by the current law the current of the resistor $R_1$ divides between the resistor $R_2$ and the load, so the current increases, the voltage of the resistor $R_1$ increases and $V_P = U - R_1 I$ decreases.
+
+b) With the load $100\,\Omega$ we have $R_\text{p} = 50\,\Omega$ and $V_P = \dfrac{50\,\Omega}{150\,\Omega} \cdot 12\,\text{V} = 4.0\,\text{V}$. The result agrees with the value $4.01\,\text{V}$ of the table within the accuracy of the measurement.
+
+c) $R_\text{p} = \dfrac{100\,\Omega \cdot 5.0\,\text{V}}{12\,\text{V} - 5.0\,\text{V}} = 71.4\,\Omega$ and $R_\text{L} = \dfrac{71.4\,\Omega \cdot 100\,\Omega}{100\,\Omega - 71.4\,\Omega} = 250\,\Omega$.
+
+**Answer:** $250\,\Omega$, to two significant figures. A smaller load resistance would lower the potential below $5.0\,\text{V}$ (with the load $100\,\Omega$ it is $4.0\,\text{V}$) and a greater load resistance would raise it closer to $6.0\,\text{V}$.
+**Reasonableness:** When $R_\text{L} = 250\,\Omega$, the current of the resistor $R_1$ is $12\,\text{V} : (100\,\Omega + 71.4\,\Omega) = 0.070\,\text{A}$ and its voltage is $100\,\Omega \cdot 0.070\,\text{A} = 7.0\,\text{V}$, so $V_P = 12\,\text{V} - 7.0\,\text{V} = 5.0\,\text{V}$. The currents in the branches are $5.0\,\text{V} : 100\,\Omega = 0.050\,\text{A}$ and $5.0\,\text{V} : 250\,\Omega = 0.020\,\text{A}$, together $0.070\,\text{A}$, as the current law requires. The value $250\,\Omega$ lies between the rows $1000\,\Omega$ ($5.72\,\text{V}$) and $100\,\Omega$ ($4.01\,\text{V}$) of the table, just like $5.0\,\text{V}$.

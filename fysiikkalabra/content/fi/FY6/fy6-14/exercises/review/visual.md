@@ -1,17 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: c36b87a99d9ffab9
+CONTENT-HASH: d82481d212cae25e
+
+Round 2.
 
 ## Blocking
-(none) Round 1 Critical fixed: L3-02 now reads as nine (U; I) pairs in LaTeX, wrapping cleanly in the task text (open-exercises-L3-1280-2); the solution's "Annettu" and Sijoitus agree with it.
+(none)
 
 ## Polish
-- [Minor] ex-led aria-label — "päättyy 30 milliampeeriin hieman 2,2 voltin oikealle puolelle" lets a screen-reader student bound the L1-05 answer; omit the value.
-- [Minor] solutions L1-01 Järkevyys — "kuten kokemuksesta tiedetään" is vague; name the comparison.
-- [Minor] L3-02 at 390 px was not captured in the set (only 1280 open states); inline pairs wrap freely so no overflow is expected, deterministic layout 360 px is clean.
+- [Minor] solutions L3-05, Järkevyys — "työpisteen jännite on hieman kynnysjännitettä $2{,}0\,\text{V}$ suurempi, kuten jyrkällä käyrällä kuuluukin" — selkeämpi: "…kuten jyrkällä käyrällä kuuluukin, koska virta on kynnysjännitteen jälkeen jo suuri".
+- [Minor] solutions L3-05, Vastaus-rivi näyttää "14 mA" kun laskettu arvo on $13{,}8\,\text{mA}$ — merkitsevien numeroiden perustelu on mukana, ok; ei muutosta.
 
 ## Checked
-- open-exercises-L3-1280-2 (L3-02 task and solution start); round 1 captures of L1-01, L1-05 with ex-led, Tarkista graph (ex-kenno), L2/L3 solutions stand.
-- Maths: units upright, decimal comma, colon for division, rows aligned, no red KaTeX source.
+- Kierroksen 1 Polish: kynnysjännite ($1{,}85\,\text{V}$) korvattu jyrkän suoran jatkeella $2{,}0\,\text{V}$ (420 mA/V, leikkaus 2,00 V täsmää taulukkoon), L1-06:n kömpelö virke korjattu, L1-08:lle lisätty `kind`.
+- L1-06 (9,0 V, "pieni jännite"), L1-07 (LED-vastus) ja L3-05 laskettu uudelleen: työpiste 13,8 mA / 2,02 V, ΔU 0,10 V (5 %), kaikki täsmäävät; tolerance 0,03 kattaa vastauksen 14 mA.
+- Avatut kaappaukset 1280 px: open-exercises-L3-1280-7 ja -8 (14-20 taulukko, kuvaajan lukeminen, leikkaus, sijoitus, vastaus ja järkevyys). Ei ylivuotoa, murtolausekkeet ja yksiköt ehjinä.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

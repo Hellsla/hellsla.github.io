@@ -39,6 +39,52 @@
       "answer": 0.6,
       "unit": "m",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-2-L1-06",
+      "level": 1,
+      "text": "A vertical $10\\,\\text{N}$ force acts upwards on the left end of a light rod and a vertical $10\\,\\text{N}$ force downwards on the right end. The rod is initially at rest and is not supported anywhere. The weight of the rod is ignored.\n\nWhat happens to the rod?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The rod starts to rotate, because the moments of the forces turn it in the same direction.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The rod stays at rest, because the sum of the forces is zero and that is enough for equilibrium.",
+          "feedback": "A zero sum of forces only guarantees that the centre of mass of the rod does not start to move. Rotation is prevented only by the moment condition, and it is violated here: the forces are not on the same line."
+        },
+        {
+          "text": "The rod starts to move upwards, because the upward force acts at the left end.",
+          "feedback": "The forces are equal and opposite, so the sum of the forces is zero and the motion of the centre of mass of the rod does not change. The point of application of a force does not decide the translation but the rotation."
+        },
+        {
+          "text": "The rod starts to rotate, because the moments of the forces turn it in the same direction.",
+          "correct": true,
+          "feedback": "Correct: equilibrium requires two conditions, the sum of the forces is zero and the sum of the moments is zero. Here the first condition is met, but the forces act on different lines. About the midpoint of the rod both moments have the same direction, so their sum is not zero and the rod rotates."
+        },
+        {
+          "text": "The rod stays at rest, because equal forces produce equal opposite moments.",
+          "feedback": "Equal forces do not yet mean equal opposite moments. About the midpoint of the rod each force turns the rod in the same direction, so the moments add up and do not cancel."
+        }
+      ]
+    },
+    {
+      "id": "fy5-2-L1-07",
+      "level": 1,
+      "text": "A light seesaw plank is supported at its middle, and its weight can be ignored. On one side of the plank sits a child of mass $28\\,\\text{kg}$ at a distance of $1.4\\,\\text{m}$ from the pivot. How far from the pivot must a child of mass $40\\,\\text{kg}$ sit on the other side so that the plank stays horizontal?",
+      "answer": 0.98,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-2-L1-08",
+      "level": 1,
+      "text": "A uniform plank has length $2.4\\,\\text{m}$ and mass $6.0\\,\\text{kg}$. A sack of mass $3.0\\,\\text{kg}$ is placed at the right end of the plank. How far from the left end of the plank is the common centre of mass of the plank and the sack?",
+      "answer": 1.6,
+      "unit": "m",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +120,95 @@
       "answer": 450,
       "unit": "N",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-2-L2-05",
+      "level": 2,
+      "text": "A uniform plank ($3.00\\,\\text{m}$, $10.0\\,\\text{kg}$) rests horizontally on two force sensors. The sensors are at the ends of the plank. A person standing on the plank moves step by step towards the right end. The table gives the reading $N_1$ of the left sensor as a function of the position $x$ of the person, where $x$ is measured from the left end of the plank. The data is example data.\n\na) Draw a graph of the measurement points $(x, N_1)$, fit a line to the points and determine its slope. Calculate the mass of the person from the slope.\n\nb) Use the moment condition to explain why the points lie on a line.\n\nThe answer box takes the mass of the person from part a) in kilograms.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 62,
+      "unit": "kg",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Reading of the left sensor as a function of the position of the person (example data)",
+        "columns": [
+          "$x\\,(\\text{m})$",
+          "$N_1\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "0.50",
+            "558"
+          ],
+          [
+            "1.00",
+            "452"
+          ],
+          [
+            "1.50",
+            "355"
+          ],
+          [
+            "2.00",
+            "250"
+          ],
+          [
+            "2.50",
+            "153"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-2-L2-06",
+      "level": 2,
+      "text": "A bench has length $2.40\\,\\text{m}$ and mass $14.0\\,\\text{kg}$, and its centre of mass is in the middle. The legs of the bench are $0.20\\,\\text{m}$ and $2.20\\,\\text{m}$ from the left end of the bench, and they support the bench vertically upwards. A person of mass $72.0\\,\\text{kg}$ sits on the bench $0.60\\,\\text{m}$ from the left end.\n\nA student calculates the support force $N_2$ of the right leg like this: “I choose the left leg as the point of moments, so its support force drops out. The force of the person is $F_\\text{h} = 706.3\\,\\text{N}$ and its lever arm is $r_\\text{h} = 0.40\\,\\text{m}$. The lever arm of the right leg is $r_2 = 2.00\\,\\text{m}$. The moment condition is $N_2 r_2 = F_\\text{h} r_\\text{h}$, from which $N_2 = 141.3\\,\\text{N}$.”\n\na) Which force did the student forget? Justify why its moment is not zero about the chosen point of moments.\n\nb) Calculate the support force of the right leg correctly.\n\nThe answer box takes the result of part b).",
+      "kind": [
+        "error"
+      ],
+      "answer": 210,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-2-L2-07",
+      "level": 2,
+      "text": "The mass of a uniform metre rule ($100.0\\,\\text{cm}$) was determined by an experiment. The centre of mass of the rule is at the $50.0\\,\\text{cm}$ mark. A mass was hung at the $5.0\\,\\text{cm}$ mark of the rule, and the rule was placed on a sharp support at the point $x$ where it stayed horizontal. The experiment was repeated with different masses. The data is example data.\n\na) Calculate the mass $M$ of the rule from each measurement and calculate the mean of the results.\n\nb) Why is it worth doing the experiment with several different masses and not just one?\n\nThe answer box takes the mean from part a) in grams.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 110,
+      "unit": "g",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Support point at which the metre rule stays horizontal (example data)",
+        "columns": [
+          "$m\\,(\\text{g})$",
+          "$x\\,(\\text{cm})$"
+        ],
+        "rows": [
+          [
+            "50.0",
+            "35.8"
+          ],
+          [
+            "100.0",
+            "28.7"
+          ],
+          [
+            "150.0",
+            "24.0"
+          ],
+          [
+            "200.0",
+            "21.1"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -101,6 +236,68 @@
       "answer": 1.21,
       "unit": "m",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-2-L3-04",
+      "level": 3,
+      "text": "A uniform ladder ($5.00\\,\\text{m}$, $12.0\\,\\text{kg}$) leans with its upper end against a smooth vertical wall and with its lower end against a horizontal floor. The ladder makes an angle of $65.0\\,{}^\\circ$ with the floor. The wall is smooth, so the force of the wall is horizontal. The coefficient of static friction between the floor and the ladder is $\\mu = 0.40$.\n\nA person of mass $75.0\\,\\text{kg}$ climbs the ladder. The weight of the person acts along the ladder at the point where the person is.\n\na) Draw the free-body diagram of the ladder when the person is at the middle of the ladder. Name the forces.\n\nb) How far $s$ along the ladder from its lower end can the person climb before the ladder starts to slip?\n\nc) Justify in words why the danger of slipping grows as the person climbs higher.\n\nThe answer box takes the result of part b).",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 4.6,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-2-L3-05",
+      "level": 3,
+      "text": "The distance between the front and rear legs of a chair is $0.40\\,\\text{m}$ and the mass of the chair is $8.00\\,\\text{kg}$. The centre of mass of the chair is halfway between the legs. A person of mass $72.0\\,\\text{kg}$ sits on the chair and reaches forward by leaning the upper body. The table gives the horizontal distance $x_\\text{h}$ of the centre of mass of the person from the rear legs as a function of the lean angle $\\theta$ of the upper body. The feet of the person do not reach the floor, so the whole weight of the person rests on the chair. The data is example data. The legs do not slip, and the chair can topple only onto its front legs.\n\na) Calculate how far from the rear legs the centre of mass of the person can be at most so that the chair does not topple.\n\nb) Determine by linear interpolation from the table the lean angle at which the chair starts to topple.\n\nc) Explain in words why reaching forward topples the chair, and think of one change that would allow a longer reach.\n\nThe answer box takes the angle from part b) in degrees.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 53,
+      "unit": "°",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Position of the centre of mass of the person as a function of the lean (example data)",
+        "columns": [
+          "$\\theta\\,({}^\\circ)$",
+          "$x_\\text{h}\\,(\\text{cm})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "20.0"
+          ],
+          [
+            "10",
+            "25.1"
+          ],
+          [
+            "20",
+            "29.4"
+          ],
+          [
+            "30",
+            "34.2"
+          ],
+          [
+            "40",
+            "38.1"
+          ],
+          [
+            "50",
+            "41.3"
+          ],
+          [
+            "60",
+            "44.4"
+          ]
+        ]
+      }
     }
   ]
 }

@@ -39,6 +39,74 @@
    "answer": 30,
    "unit": "s",
    "tolerance": 0.02
+  },
+  {
+   "id": "fy6-1-L1-06",
+   "level": 1,
+   "text": "Taskulampun piiri on suljettu ja lamppu palaa. Mikä seuraavista väitteistä sovitusta virran suunnasta ja elektronien liikkeestä on oikein?",
+   "kind": [
+    "concept"
+   ],
+   "answer": "Sovittu virran suunta on plusnavasta miinusnapaan, ja elektronit liikkuvat piirissä vastakkaiseen suuntaan.",
+   "unit": "",
+   "tolerance": 0.02,
+   "choices": [
+    {
+     "text": "Sovittu virran suunta on plusnavasta miinusnapaan, ja elektronit liikkuvat piirissä vastakkaiseen suuntaan.",
+     "feedback": "Oikein: virran suunta on sovittu ennen elektronin löytymistä niin, että virta kulkee ulkoisessa piirissä plusnavasta miinusnapaan. Elektronin varaus on negatiivinen, joten elektronit liikkuvat vastakkaiseen suuntaan, miinusnavasta plusnapaan.",
+     "correct": true
+    },
+    {
+     "text": "Virta on sovittu kulkemaan plusnavasta miinusnapaan, ja elektronit liikkuvat samaan suuntaan kuin virta.",
+     "feedback": "Elektronien varaus on negatiivinen, joten ne liikkuvat sovittuun virran suuntaan nähden vastakkaiseen suuntaan: ulkoisessa piirissä miinusnavasta plusnapaan. Sovittu suunta ei siis kerro elektronien liikesuuntaa."
+    },
+    {
+     "text": "Virta kulkee lampulle asti ja kuluu siinä loppuun, joten lampun jälkeen johdossa ei kulje virtaa.",
+     "feedback": "Virta ei kulu lampussa. Varaus kiertää suljetussa piirissä ja palaa paristoon, joten virta on yhtä suuri lampun molemmin puolin. Lampussa muuttuu energia valoksi ja sisäenergiaksi, ei varaus."
+    },
+    {
+     "text": "Elektronit kulkevat miinusnavasta valon nopeudella lamppuun, joten lamppu syttyy vasta niiden saavuttua.",
+     "feedback": "Johto on valmiiksi täynnä vapaita elektroneja, ja ne alkavat liikkua kaikkialla piirissä yhtä aikaa. Elektronit eivät kulje valon nopeudella, vaan etenevät hitaasti, ja lamppu syttyy heti kytkimen sulkeuduttua."
+    }
+   ]
+  },
+  {
+   "id": "fy6-1-L1-07",
+   "level": 1,
+   "text": "Kuvittele kytkentäkaavio, jossa paristo, kytkin ja lamppu on piirretty yhteen silmukkaan. Kytkin on piirretty avoimeksi eli vipu on irti. Mitä piirissä tapahtuu?",
+   "kind": [
+    "concept"
+   ],
+   "answer": "Lamppu ei pala, koska silmukka ei ole suljettu, joten varaus ei pääse kiertämään eikä virta kulje missään.",
+   "unit": "",
+   "tolerance": 0.02,
+   "choices": [
+    {
+     "text": "Lamppu ei pala, koska silmukka ei ole suljettu, joten varaus ei pääse kiertämään eikä virta kulje missään.",
+     "feedback": "Oikein: virta kulkee vain suljetussa virtapiirissä. Avoin kytkin katkaisee silmukan, joten varaus ei pääse kiertämään piirissä ja virta on nolla joka kohdassa, myös pariston ja kytkimen välisessä johdossa.",
+     "correct": true
+    },
+    {
+     "text": "Lamppu ei pala, koska virta kulkee pariston plusnavasta kytkimeen asti mutta ei sen yli.",
+     "feedback": "Virta ei voi kulkea kytkimeen asti, jos silmukka on auki. Varaus liikkuu piirissä vain, jos se pääsee kiertämään koko silmukan, joten virta on nolla myös kytkimen toisella puolella eli pariston puoleisessa johdossa."
+    },
+    {
+     "text": "Lamppu palaa himmeästi, koska paristo antaa varaukselle energiaa silloinkin, kun kytkin on auki.",
+     "feedback": "Jännite on paristolla jatkuvasti, mutta energiaa siirtyy lamppuun vain, kun varaus kulkee lampun läpi. Avoimessa piirissä varaus ei liiku lampun kautta, joten lamppuun ei siirry energiaa eikä se pala lainkaan."
+    },
+    {
+     "text": "Lamppu palaa, koska johtojen elektronit liikkuvat vapaasti kytkimen raon yli.",
+     "feedback": "Kytkimen väliin jäävä rako on ilmaa, joka on eriste. Elektronit eivät pääse sen yli, joten virta ei kulje eikä lamppu pala."
+    }
+   ]
+  },
+  {
+   "id": "fy6-1-L1-08",
+   "level": 1,
+   "text": "Johtimen läpi kulkee $0{,}25\\,\\text{A}$:n virta $1{,}0\\,\\text{min}$:n ajan. Kuinka monta elektronia kulkee johtimen läpi tänä aikana? Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Vastaa lukuna.",
+   "answer": 9.36e19,
+   "unit": "",
+   "tolerance": 0.02
   }
  ],
  "level2": [
@@ -74,6 +142,114 @@
    "unit": "C",
    "tolerance": 0.02,
    "figure": "fy6-1/virta-kuvaaja"
+  },
+  {
+   "id": "fy6-1-L2-05",
+   "level": 2,
+   "text": "Taulukossa on esimerkkiaineisto: kulahtaneen pariston lampun läpi kulkevan virran mittaus, kun virta hiipuu ajan kuluessa. Virta on mitattu $10\\,\\text{s}$:n välein.\n\na) Arvioi lampun läpi kulkenut varaus $60\\,\\text{s}$:n aikana olettamalla, että virta muuttuu kullakin $10\\,\\text{s}$:n välillä tasaisesti. Välin keskivirta on silloin välin päiden virtojen keskiarvo.\n\nb) Laske virran keskiarvo koko $60\\,\\text{s}$:n ajalta.\n\nc) Lampun jälkeiseen johtoon kytketään toinen ampeerimittari. Mitä se näyttää hetkellä $30\\,\\text{s}$, ja miksi?\n\nKirjoita vastauslaatikkoon kohdan a) tulos.",
+   "kind": [
+    "data",
+    "reasoning"
+   ],
+   "answer": 22.8,
+   "unit": "C",
+   "tolerance": 0.02,
+   "data": {
+    "caption": "Lampun läpi kulkeva virta ajan funktiona (esimerkkiaineisto)",
+    "columns": [
+     "$t\\,(\\text{s})$",
+     "$I\\,(\\text{A})$"
+    ],
+    "rows": [
+     [
+      "0",
+      "0.50"
+     ],
+     [
+      "10",
+      "0.46"
+     ],
+     [
+      "20",
+      "0.42"
+     ],
+     [
+      "30",
+      "0.37"
+     ],
+     [
+      "40",
+      "0.34"
+     ],
+     [
+      "50",
+      "0.30"
+     ],
+     [
+      "60",
+      "0.28"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "fy6-1-L2-06",
+   "level": 2,
+   "text": "Oppilas kokoaa kaksi piiriä, joissa kummassakin on $1{,}5\\,\\text{V}$:n paristo ja lamppu.\n\nPiirissä A pariston plusnapa on yhdistetty johdolla lampun toiseen kantaan. Lampun toinen kanta ja pariston miinusnapa eivät ole yhteydessä mihinkään. Oppilas sanoo: ”Virta kulkee plusnavasta lamppuun ja kuluu siinä loppuun, joten toista johtoa ei tarvita.”\n\nPiirissä B paristo, kytkin ja lamppu ovat yhdessä suljetussa silmukassa, ja kytkin on suljettu. Lisäksi lampun molempiin kantoihin on liitetty paksu johto, joka ohittaa lampun.\n\na) Palaako lamppu piirissä A? Selitä oppilaan päättelyn virhe.\n\nb) Palaako lamppu piirissä B? Perustele, minne virta kulkee.\n\nc) Kuinka piiri A korjataan niin, että lamppu palaa?",
+   "kind": [
+    "error",
+    "concept"
+   ],
+   "answer": "A: lamppu ei pala, koska silmukka ei ole suljettu eikä varaus pääse kiertämään; virta ei kulu lampussa, vaan se vaatii suljetun silmukan. B: lamppu ei pala, koska virta kulkee lampun ohittavan johdon kautta. A korjataan yhdistämällä lampun toinen kanta pariston miinusnapaan.",
+   "unit": "",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy6-1-L2-07",
+   "level": 2,
+   "text": "Oppilas haluaa osoittaa kokeellisesti, että virta ei kulu lampussa. Hän mittaa virran saman piirin kohdista ennen lamppua ja lampun jälkeen. Taulukossa on esimerkkiaineisto viidestä mittauksesta. Ampeerimittarin resoluutio eli pienin näyttöaskel on $0{,}01\\,\\text{A}$.\n\na) Kerro, miten ampeerimittari kytketään piiriin ja miten mittaus tehdään, jotta virta saadaan mitattua molemmista kohdista.\n\nb) Laske virran keskiarvo ennen lamppua ja lampun jälkeen. Kirjoita ensin summat.\n\nc) Tukevatko mittaukset sitä, että virta kuluu lampussa? Perustele.",
+   "kind": [
+    "data",
+    "experiment"
+   ],
+   "answer": "Ampeerimittari kytketään virtapiiriin sarjaan, ensin ennen lamppua ja sitten lampun jälkeen. Keskiarvot ovat $0{,}310\\,\\text{A}$ ennen lamppua ja $0{,}306\\,\\text{A}$ lampun jälkeen, ja ero on pienempi kuin mittarin resoluutio eli pienin näyttöaskel $0{,}01\\,\\text{A}$. Mittaukset eivät osoita virran kuluvan lampussa: virta on molemmin puolin lampun yhtä suuri.",
+   "unit": "",
+   "tolerance": 0.02,
+   "data": {
+    "caption": "Virta ennen lamppua ja lampun jälkeen (esimerkkiaineisto)",
+    "columns": [
+     "Mittaus",
+     "$I_{\\text{ennen}}\\,(\\text{A})$",
+     "$I_{\\text{jälkeen}}\\,(\\text{A})$"
+    ],
+    "rows": [
+     [
+      "1",
+      "0.32",
+      "0.31"
+     ],
+     [
+      "2",
+      "0.30",
+      "0.30"
+     ],
+     [
+      "3",
+      "0.33",
+      "0.32"
+     ],
+     [
+      "4",
+      "0.29",
+      "0.30"
+     ],
+     [
+      "5",
+      "0.31",
+      "0.30"
+     ]
+    ]
+   }
   }
  ],
  "level3": [
@@ -101,6 +277,66 @@
    "unit": "",
    "tolerance": 0.02,
    "model_figure": "fy6-1/kaavio-malli"
+  },
+  {
+   "id": "fy6-1-L3-04",
+   "level": 3,
+   "text": "Taulukossa on esimerkkiaineisto: puhelimen akun jännite $U$ ja akusta otettu virta $I$ viiden peräkkäisen tunnin aikana, kun täysi akku purkautuu tyhjäksi. Arvot ovat kunkin tunnin keskiarvoja, ja ne oletetaan vakioiksi tunnin ajan. Energia, joka siirtyy akusta laitteelle, on $E = UQ = UIt$.\n\na) Laske jokaisen tunnin aikana siirtynyt energia wattitunteina ja summaa ne koko purkautumisen energiaksi. Wattitunti on energia, joka siirtyy, kun jännite on $1\\,\\text{V}$ ja virta $1\\,\\text{A}$ kestää tunnin.\n\nb) Laske akusta kulkenut kokonaisvaraus ampeeritunteina ja akun keskijännite koko purkautumisen ajalta. Ilmoita lisäksi energia kilojouleina.\n\nc) Ystävä arvioi energian kertomalla kokonaisvarauksen alkujännitteellä $4{,}0\\,\\text{V}$. Laske, kuinka monta prosenttia liian suuri arvio on, ja selitä miksi.\n\nKirjoita vastauslaatikkoon kohdan a) kokonaisenergia wattitunteina.",
+   "kind": [
+    "data",
+    "model",
+    "reasoning"
+   ],
+   "answer": 12.5,
+   "unit": "Wh",
+   "tolerance": 0.04,
+   "data": {
+    "caption": "Puhelimen akun purkautuminen (esimerkkiaineisto)",
+    "columns": [
+     "Tunti",
+     "$U\\,(\\text{V})$",
+     "$I\\,(\\text{A})$"
+    ],
+    "rows": [
+     [
+      "1.",
+      "4.0",
+      "0.80"
+     ],
+     [
+      "2.",
+      "3.8",
+      "0.75"
+     ],
+     [
+      "3.",
+      "3.7",
+      "0.70"
+     ],
+     [
+      "4.",
+      "3.6",
+      "0.60"
+     ],
+     [
+      "5.",
+      "3.4",
+      "0.50"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "fy6-1-L3-05",
+   "level": 3,
+   "text": "Kuparijohdossa on paljon vapaita elektroneja. Esimerkkiaineisto: tietyssä kuparijohdossa on $1{,}3 \\cdot 10^{23}$ vapaata elektronia jokaista johdon metriä kohti. Johtimen läpi kulkee tasainen $0{,}40\\,\\text{A}$:n virta lamppuun. Oletetaan, että kaikki johdon vapaat elektronit liikkuvat samalla nopeudella $v$.\n\na) Laske elektronien nopeus $v$ millimetreinä sekunnissa. Sekunnissa poikkileikkauksen läpi kulkevat ne elektronit, jotka ovat sekunnin alussa matkalla $v \\cdot 1\\,\\text{s}$ ennen poikkileikkausta.\n\nb) Kuinka monta tuntia kestää, että elektroni kulkee johdossa matkan $1{,}0\\,\\text{m}$?\n\nc) Elektronit etenevät hitaasti, mutta lamppu syttyy heti kytkintä painettaessa. Selitä, miksi lamppu syttyy heti ja miksi se ei kuitenkaan odota, että pariston elektronit saapuvat lamppuun.\n\nKirjoita vastauslaatikkoon kohdan a) tulos.",
+   "kind": [
+    "model",
+    "reasoning"
+   ],
+   "answer": 0.0192,
+   "unit": "mm/s",
+   "tolerance": 0.02
   }
  ]
 }

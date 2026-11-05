@@ -561,7 +561,7 @@ h2.intro-h{margin:0 0 .45rem;font:700 var(--fs-small)/1.3 var(--sans);letter-spa
 .hook{font:400 1.125rem/1.6 var(--serif)}.hook>:first-child{margin-top:0}
 .question{font:500 1.1875rem/1.45 var(--serif);color:var(--ink);margin:1rem 0 0;padding-left:1rem;border-left:4px solid var(--accent)}
 p.task{margin:.3rem 0 .5rem}
-p.task.scenario,p.task.more{margin-bottom:.6rem}p.task.ask,legend .ask{font-weight:600}   /* a long task: the situation, then the question asked (inquiry.py split_prompt) */
+p.task.scenario,p.task.more{margin-bottom:.6rem}   /* a long task: the situation, then the question asked (inquiry.py split_prompt); the question and the parts a), b) in normal weight like the rest of the task (teacher 2026-11-04) */
 legend .scenario,legend .ask{display:block}legend .scenario{font-weight:400;margin-bottom:.6rem}
 
 /* choices: the card is the frame, so the fieldset itself is plain */

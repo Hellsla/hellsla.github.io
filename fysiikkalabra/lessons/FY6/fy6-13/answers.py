@@ -28,4 +28,21 @@ a["fy6-13-L3-01"] = (W2 - W1) * 1e6                        # the energy grows by
 a["fy6-13-L3-02"] = (5.6 - 1.0) * 220e-12 * 1.5e3 * 1e6    # connected, glass in: dQ = (eps_r - 1) C U = 1,518 µC
 d = 2 * 6.0e3 / 24e6                                       # only half of 24 MV/m used: d = 6,0 kV : 12 MV/m = 0,50 mm
 a["fy6-13-L3-03"] = 1.0e-9 * d / (EPS0 * 2.6) * 1e4        # A = C d : (eps0 eps_r) = 217 cm^2
+# Exercise bank additions (teacher 2026-11-04): L1-06, L1-07 and L2-06 are multiple choice (no number)
+a["fy6-13-L1-08"] = 0.5 * 1000e-6 * (18 ** 2 - 6.0 ** 2) * 1e3   # dW = 1/2 C (U2^2 - U1^2) = 1/2 · 1000 µF · (324 - 36) V^2 = 144 mJ
+# L2-05 table: (U in V, Q in µC); line through the origin, slope k = Σ U Q / Σ U^2 = C in µF
+uq = [(2.0, 94), (4.0, 189), (6.0, 281), (8.0, 380), (10.0, 471), (12.0, 567)]
+c_fit = sum(u * q for u, q in uq) / sum(u * u for u, _ in uq)  # 47,2 µF
+a["fy6-13-L2-05"] = 0.5 * c_fit * 1e-6 * 12 ** 2 * 1e3         # W = 1/2 C U^2 = 1/2 · 47,2 µF · (12 V)^2 = 3,40 mJ
+a["fy6-13-L2-07"] = 0.5 * 220e-6 * 24 ** 2 * 1e3               # W = 1/2 C U^2 = 1/2 · 220 µF · (24 V)^2 = 63,4 mJ (half of QU = 127 mJ)
+# L3-04 table: (t in s, U in V) at I = 15 mA; U = (I / C) t, line through the origin, slope k = Σ t U / Σ t^2
+tu = [(0, 0), (2, 203), (4, 396), (6, 607), (8, 805), (10, 992), (12, 1201)]
+k_fit = sum(t * u for t, u in tu) / sum(t * t for t, _ in tu)   # 100,01 V/s
+c_flash = 15e-3 / k_fit                                         # C = I / k = 150 µF
+a["fy6-13-L3-04"] = 0.5 * c_flash * 1800 ** 2 / 5.0e-3 / 1e3    # W = 1/2 C U^2 = 243 J, P = W : t = 243 J : 5,0 ms = 48,6 kW
+def flash_w(eps_r, e_max):                                      # L3-05: A = 100 cm², d = 0,050 mm, field at most 1/2 E_max
+    d_ = 0.050e-3
+    u_max = 0.5 * e_max * d_                                    # teflon 1500 V, glass 350 V
+    return 0.5 * (EPS0 * eps_r * 100e-4 / d_) * u_max ** 2      # W = 1/2 C U^2: teflon 4,18 mJ, glass 0,607 mJ
+a["fy6-13-L3-05"] = flash_w(2.1, 60e6) / flash_w(5.6, 14e6)     # ratio 6,89
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

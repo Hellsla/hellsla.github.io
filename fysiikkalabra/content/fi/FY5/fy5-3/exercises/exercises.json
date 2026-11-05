@@ -39,6 +39,52 @@
       "answer": 7680,
       "unit": "m/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-3-L1-06",
+      "level": 1,
+      "text": "Pieni kappale kiertää ympyrärataa tasaisella vauhdilla. Mikä seuraavista väitteistä kappaleen nopeuden suunnasta on oikein?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Nopeus on radan tangentin suuntainen, koska kappale liikkuu joka hetki radan suuntaan.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Nopeus osoittaa kohti keskipistettä, koska kappale kaartaa jatkuvasti kohti ympyrän keskustaa.",
+          "feedback": "Kappale ei liiku kohti keskipistä, vaan pysyy koko ajan samalla etäisyydellä siitä. Kohti keskipistettä osoittaa kappaleeseen vaikuttava kokonaisvoima, ei nopeus."
+        },
+        {
+          "text": "Nopeus osoittaa keskipisteestä poispäin, koska kappaleeseen vaikuttaa ulospäin työntävä voima.",
+          "feedback": "Mikään voima ei työnnä kappaletta ulospäin. Jos naru katkeaisi, kappale jatkaisi suoraan sen hetkisen nopeutensa suuntaan eikä lentäisi poispäin keskipisteestä."
+        },
+        {
+          "text": "Nopeus on radan tangentin suuntainen, koska kappale liikkuu joka hetki radan suuntaan.",
+          "feedback": "Oikein: nopeus on aina liikkeen suuntainen, ja ympyräradalla se on kohtisuorassa sädettä vastaan eli radan tangentin suuntainen. Suunta kääntyy kappaleen kiertäessä, joten nopeus muuttuu, vaikka vauhti pysyy samana.",
+          "correct": true
+        },
+        {
+          "text": "Nopeuden suunta pysyy kiinteänä, koska tasaisessa liikkeessä myös suunta pysyy samana.",
+          "feedback": "Tasainen tarkoittaa tässä vain vauhdin pysymistä samana. Nopeus on vektori, ja sen suunta kääntyy koko ajan, kun kappale kiertää rataa."
+        }
+      ]
+    },
+    {
+      "id": "fy5-3-L1-07",
+      "level": 1,
+      "text": "Auton moottorin kampiakseli pyörii pyörimistaajuudella $3000\\,\\tfrac{1}{\\text{min}}$. Kuinka kauan yksi kierros kestää? Anna vastaus sekunteina.",
+      "answer": 0.02,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-3-L1-08",
+      "level": 1,
+      "text": "Seinäkellon minuuttiviisarin kärki on $12\\,\\text{cm}$:n päässä viisarin akselista. Viisari tekee yhden kierroksen tunnissa. Kuinka suuri on viisarin kärjen ratanopeus? Anna vastaus yksikössä mm/s.",
+      "answer": 0.21,
+      "unit": "mm/s",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,6 +119,95 @@
       "answer": 25,
       "unit": "m/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-3-L2-05",
+      "level": 2,
+      "text": "Karusellin kierrosaika halutaan määrittää tarkasti. Oppilas mittaa kellolla viisi kertaa ajan $t_{10}$, joka kuluu kymmeneen peräkkäiseen kierrokseen (esimerkkiaineisto). Karusellin reunalla oleva istuin on $2{,}1\\,\\text{m}$:n päässä akselista.\n\na) Laske kierrosaika $T$ mittausten keskiarvosta ja perustele, miksi mitataan monta kierrosta kerralla.\n\nb) Laske istuimen ratanopeus $v$.\n\nVastauslaatikkoon tulee kohdan b) tulos.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 3.2,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Kymmenen kierroksen ajat (esimerkkiaineisto)",
+        "columns": [
+          "$n$",
+          "$t_{10}\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "41.2"
+          ],
+          [
+            "2",
+            "40.6"
+          ],
+          [
+            "3",
+            "41.8"
+          ],
+          [
+            "4",
+            "40.9"
+          ],
+          [
+            "5",
+            "41.5"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-3-L2-06",
+      "level": 2,
+      "text": "Taulukossa on kolmen Maata kiertävän satelliitin likimääräiset ratojen säteet $r$ Maan keskipisteestä ja kierrosajat $T$ (esimerkkiaineisto, pyöristettyjä arvoja). Oletetaan, että radat ovat ympyröitä.\n\na) Laske kunkin satelliitin ratanopeus yksikössä km/s.\n\nb) Mitä aineisto kertoo radan koon ja ratanopeuden yhteydestä: onko kauempana oleva satelliitti nopeampi vai hitaampi?\n\nVastauslaatikkoon tulee kohdan a) geostationaarisen satelliitin ratanopeus.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 3.07,
+      "unit": "km/s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Satelliittien radat (esimerkkiaineisto)",
+        "columns": [
+          "Rata",
+          "$r\\,(10^{6}\\,\\text{m})$",
+          "$T\\,(\\text{min})$"
+        ],
+        "rows": [
+          [
+            "Matala",
+            "6.92",
+            "95.5"
+          ],
+          [
+            "Paikannus",
+            "26.56",
+            "717.9"
+          ],
+          [
+            "Geostat.",
+            "42.16",
+            "1436"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-3-L2-07",
+      "level": 2,
+      "text": "Oppilas laskee auton renkaan reunan ratanopeutta. Renkaan halkaisija on $64\\,\\text{cm}$ ja se pyörii pyörimistaajuudella $8{,}0\\,\\tfrac{1}{\\text{s}}$.\n\nOppilaan ratkaisu: \"Sijoitan kaavaan $v = 2\\pi r f$ arvot $0{,}64\\,\\text{m}$ ja $8{,}0\\,\\tfrac{1}{\\text{s}}$, jolloin $v = 32\\,\\text{m/s}$.\"\n\na) Etsi oppilaan virhe ja selitä, miten se vaikuttaa tulokseen.\n\nb) Laske renkaan reunan oikea ratanopeus.\n\nVastauslaatikkoon tulee kohdan b) tulos.",
+      "kind": [
+        "error"
+      ],
+      "answer": 16,
+      "unit": "m/s",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -98,6 +233,52 @@
       "text": "Polkupyörän eturattaan säde on $10{,}0\\,\\text{cm}$ ja takarattaan säde $4{,}0\\,\\text{cm}$. Ketju liikkuu kummankin rattaan kehällä samalla ratanopeudella. Takaratas ja takapyörä pyörivät yhdessä, ja takapyörän säde on $0{,}34\\,\\text{m}$.\n\nPyöräilijä polkee niin, että eturatas pyörii pyörimistaajuudella $1{,}0\\,\\tfrac{1}{\\text{s}}$.\n\nKuinka suuri on pyörän vauhti, kun rengas ei luista maata vasten? Anna vastaus yksikössä km/h.",
       "answer": 19,
       "unit": "km/h",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-3-L3-04",
+      "level": 3,
+      "text": "Raketit laukaistaan usein itään läheltä päiväntasaajaa, koska Maan pyöriminen antaa niille lisää vauhtia. Taulukossa on kolmen laukaisupaikan leveysaste $\\varphi$ (pyöristettyjä arvoja).\n\nMallinnetaan Maa pallona, jonka säde on $R = 6371\\,\\text{km}$ ja joka tekee yhden kierroksen kierrosajassa $T = 86\\,164\\,\\text{s}$. Leveysasteella $\\varphi$ oleva paikka kiertää Maan akselia ympyrää, jonka säde on $r = R\\cos\\varphi$.\n\na) Laske laukaisupaikkojen ratanopeudet Maan pyörimisen mukana.\n\nb) Kuinka monta metriä sekunnissa suuremman vauhdin Kourou antaa itään laukaistulle raketille kuin Plesetsk?\n\nc) Kuinka monta prosenttia Kourousta saatava vauhti on matalan radan vauhdista $7{,}7\\,\\text{km/s}$? Perustele, miksi paikkojen ratanopeudet eroavat, vaikka kaikki tekevät kierroksen samassa ajassa.\n\nVastauslaatikkoon tulee kohdan b) tulos.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 250,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Laukaisupaikkojen leveysasteet",
+        "columns": [
+          "Laukaisupaikka",
+          "$\\varphi\\,({}^\\circ)$"
+        ],
+        "rows": [
+          [
+            "Kourou",
+            "5.2"
+          ],
+          [
+            "Cape Canaveral",
+            "28.5"
+          ],
+          [
+            "Plesetsk",
+            "62.7"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-3-L3-05",
+      "level": 3,
+      "text": "CD-levyä soitettaessa levy pyörii niin, että lukulaser kulkee uraa pitkin vakioratanopeudella $v = 1{,}2\\,\\text{m/s}$. Ura on tiivis spiraali, joka alkaa etäisyydeltä $r_1 = 25\\,\\text{mm}$ levyn keskipisteestä ja päättyy etäisyydelle $r_2 = 58\\,\\text{mm}$. Viereisten uran kierrosten väli on $1{,}6\\,\\mu\\text{m}$ (esimerkkiaineisto, tyypillisiä arvoja).\n\na) Laske levyn pyörimistaajuus yksikössä $\\tfrac{1}{\\text{min}}$ uran alussa ja lopussa.\n\nb) Oletetaan, että uran säde kasvaa tasaisesti kierros kierrokselta, jolloin uran pituus on kierrosten lukumäärä kertaa keskimääräisen säteen $r_{\\text{ka}}$ ympyrän kehä. Laske uran kierrosten lukumäärä, uran pituus ja levyn soittoaika minuutteina.\n\nc) Perustele, miksi levyn pyörimistaajuuden täytyy pienentyä soiton aikana.\n\nVastauslaatikkoon tulee kohdan b) soittoaika.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 75,
+      "unit": "min",
       "tolerance": 0.02
     }
   ]

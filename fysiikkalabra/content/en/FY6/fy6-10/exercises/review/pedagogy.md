@@ -1,11 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 68b57a1e746ced18
+CONTENT-HASH: ac9f07827b25cf14
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
+
+## Fixed
+(none needed)
 
 ## Polish
 (none)
 
 ## Checked
-- 12 exercises over levels 1-3 (5/4/3) and solutions match the Finnish set; nothing dropped.
+- Parts a/b/c of L2-05..07 and L3-04..05 keep the Finnish task structure, and the answer box still asks only for part b).
+- Distractor feedback in L1-06 and L1-07 names the same misconception as in fi, with the same level of hint.
+- English is natural and plain; sentences stay short enough for a student.

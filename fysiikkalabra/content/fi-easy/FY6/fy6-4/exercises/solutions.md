@@ -118,3 +118,78 @@
 **Sijoitus:** $R_\text{r} R_\text{s} = 60\,\Omega \cdot 250\,\Omega = 15\,000\,\Omega^2$ ja $R_\text{s}^2 - 4 R_\text{r} R_\text{s} = 62\,500\,\Omega^2 - 60\,000\,\Omega^2 = 2500\,\Omega^2$, jonka neliöjuuri on $50\,\Omega$. Siis $R_1 = \dfrac{250\,\Omega \pm 50\,\Omega}{2}$, joten $R_1 = 150\,\Omega$ tai $R_1 = 100\,\Omega$
 **Vastaus:** $150\,\Omega$; toinen vastus on $100\,\Omega$. Kaksi merkitsevää numeroa kuten arvossa $60\,\Omega$; data otetaan tarkkoina, sillä juuren alla oleva ero $62\,500 - 60\,000$ on pieni ja tulos herkkä datan viimeiselle numerolle.
 **Järkevyys:** Tarkistus: $150\,\Omega + 100\,\Omega = 250\,\Omega$ ja $\dfrac{150\,\Omega \cdot 100\,\Omega}{250\,\Omega} = 60\,\Omega$. Rinnankytkennän tulos on pienempi kuin pienempi vastus $100\,\Omega$, kuten pitää.
+
+## fy6-4-L1-06
+**Kysytty:** mikä kolmen samanlaisen $100\,\Omega$:n vastuksen kytkentä antaa pienimmän kokonaisresistanssin.
+**Periaate:** Rinnan lisätty vastus avaa virralle uuden kulkureitin. Silloin kokonaisresistanssi pienenee. Sarjaan lisätty vastus suurentaa sitä. Pienin kokonaisresistanssi saadaan siis, kun kaikki vastukset ovat rinnan. Ero näkyy, kun lasketaan jokaisen kytkennän kokonaisresistanssi: kaikki rinnan $\tfrac{100\,\Omega}{3} \approx 33\,\Omega$, kaksi sarjaan ja kolmas rinnan $\tfrac{200 \cdot 100}{300}\,\Omega \approx 67\,\Omega$, kaksi rinnan ja kolmas sarjaan $50\,\Omega + 100\,\Omega = 150\,\Omega$ ja kaikki sarjaan $300\,\Omega$.
+**Mallivastaus:** Pienin kokonaisresistanssi saadaan kytkemällä kaikki kolme vastusta rinnan, koska virralla on silloin kolme rinnakkaista kulkureittiä. Kokonaisresistanssi on $33\,\Omega$. Se on pienempi kuin yhdenkään vastuksen resistanssi. Kaikkien kolmen sarjaankytkentä on suurin ($300\,\Omega$). Sekakytkennät jäävät näiden väliin.
+
+## fy6-4-L1-07
+**Kysytty:** mitä kokonaisresistanssille ja paristosta lähtevälle virralle tapahtuu, kun rinnakkaisten lamppujen joukkoon lisätään kolmas lamppu.
+**Periaate:** Rinnankytkennässä jokaisen haaran yli on pariston jännite $U$. Jokainen haara ottaa virran $I = U : R$. Paristosta lähtevä virta on haaravirtojen summa, joten uusi haara kasvattaa sitä. Jännite pysyy samana ja virta kasvaa. Silloin Ohmin lain mukaan kokonaisresistanssi pienenee. Kaksi samanlaista lamppua antaa resistanssin $\tfrac{R_\text{L}}{2}$ ja kolme antaa $\tfrac{R_\text{L}}{3}$. Tässä $R_\text{L}$ on yhden lampun resistanssi.
+**Mallivastaus:** Kokonaisresistanssi pienenee ja paristosta lähtevä virta kasvaa, koska uusi haara avaa virralle lisää kulkureittejä. Kumpikin vanha lamppu ottaa saman virran kuin ennenkin. Kolmas lamppu lisää oman virtansa niiden päälle. Vastusten lisääminen suurentaa kokonaisresistanssia vain sarjaankytkennässä.
+
+## fy6-4-L1-08
+**Annettu:** rinnan kytketyt vastukset $R_1 = 90\,\Omega$ ja tuntematon $R_x$, kokonaisresistanssi $R = 36\,\Omega$
+**Kysytty:** tuntemattoman vastuksen resistanssi $R_x$
+**Periaate:** Rinnankytkennässä kokonaisresistanssin käänteisluku on haarojen käänteislukujen summa. Kokonaisresistanssi ja toinen haara tunnetaan. Silloin tuntemattoman haaran käänteisluku saadaan vähennyslaskulla. Lopuksi se käännetään.
+**Kaava:** $\dfrac{1}{R} = \dfrac{1}{R_1} + \dfrac{1}{R_x}$, josta $\dfrac{1}{R_x} = \dfrac{1}{R} - \dfrac{1}{R_1}$
+**Muunnokset:** Ei tarvita, kaikki resistanssit ovat ohmeina.
+**Sijoitus:** $\dfrac{1}{R_x} = \dfrac{1}{36\,\Omega} - \dfrac{1}{90\,\Omega} = \dfrac{5 - 2}{180\,\Omega} = \dfrac{1}{60\,\Omega}$, joten $R_x = 60\,\Omega$
+**Vastaus:** $60\,\Omega$, kaksi merkitsevää numeroa kuten annetuissa arvoissa.
+**Järkevyys:** Rinnankytkennän tulos $36\,\Omega$ on pienempi kuin kumpikaan vastuksista, $90\,\Omega$ ja $60\,\Omega$. Tarkistus: $\dfrac{90\,\Omega \cdot 60\,\Omega}{90\,\Omega + 60\,\Omega} = \dfrac{5400\,\Omega^2}{150\,\Omega} = 36\,\Omega$.
+
+## fy6-4-L2-05
+**Annettu:** taulukosta yksittäiset resistanssit $R_1 = 217\,\Omega$, $R_2 = 328\,\Omega$ ja $R_3 = 468\,\Omega$, mitattu sarjaankytkentä $1009\,\Omega$ ja mitattu rinnankytkentä $101{,}4\,\Omega$; mittarin virheraja $\pm 1{,}5\,\%$ lukemasta
+**Kysytty:** rinnankytkennän laskettu kokonaisresistanssi $R_\text{rinnan}$ ja onko ero mitattuun virherajan sisällä
+**Periaate:** Kytkentöjen kaavat ennustavat kokonaisresistanssin yksittäisistä resistansseista. Sarjaankytkennässä resistanssit lasketaan yhteen. Rinnankytkennässä yhteen lasketaan käänteisluvut. Lasketun ja mitatun arvon eroa verrataan niin, että ero suhteutetaan mitattuun arvoon. Sitten tulosta verrataan virherajaan.
+**Kuvaajan lukeminen:** Ei kuvaajaa; arvot luetaan taulukosta.
+**Kaava:** $R_\text{sarja} = R_1 + R_2 + R_3$ ja $\dfrac{1}{R_\text{rinnan}} = \dfrac{1}{R_1} + \dfrac{1}{R_2} + \dfrac{1}{R_3}$
+**Muunnokset:** Ei tarvita, kaikki resistanssit ovat ohmeina.
+**Sijoitus:** a) $R_\text{sarja} = 217\,\Omega + 328\,\Omega + 468\,\Omega = 1013\,\Omega$. Ero mitattuun on $1013\,\Omega - 1009\,\Omega = 4\,\Omega$ eli $\dfrac{4\,\Omega}{1009\,\Omega} \approx 0{,}4\,\%$. Se on pienempi kuin $1{,}5\,\%$. b) $\dfrac{1}{R_\text{rinnan}} = \dfrac{1}{217\,\Omega} + \dfrac{1}{328\,\Omega} + \dfrac{1}{468\,\Omega} = 0{,}009\,794\,\dfrac{1}{\Omega}$, joten $R_\text{rinnan} = 102{,}1\,\Omega$. Ero mitattuun on $102{,}1\,\Omega - 101{,}4\,\Omega = 0{,}7\,\Omega$ eli $\dfrac{0{,}7\,\Omega}{101{,}4\,\Omega} \approx 0{,}7\,\%$.
+**Vastaus:** $102\,\Omega$, kolme merkitsevää numeroa kuten mittaustuloksissa. Sarjaankytkennän ero on noin $0{,}4\,\%$ ja rinnankytkennän noin $0{,}7\,\%$. Kumpikin on virherajan $1{,}5\,\%$ sisällä, joten mittaus tukee kytkentöjen kaavoja.
+**Järkevyys:** Laskettu rinnankytkentä on pienempi kuin pienin yksittäinen resistanssi $217\,\Omega$. Sarjaankytkentä on suurempi kuin suurin, $468\,\Omega$. Näin pitääkin olla. Pyöristetyillä luvuilla $\tfrac{1}{200} + \tfrac{1}{300} + \tfrac{1}{500} = 0{,}010$, joten $R \approx 100\,\Omega$.
+
+## fy6-4-L2-06
+**Annettu:** paristo $U = 9{,}0\,\text{V}$, $R_1 = 100\,\Omega$ sarjassa rinnakkaisten $R_2 = R_3 = 200\,\Omega$ kanssa; mittarilukemat $I = 30{,}2\,\text{mA}$, $U_1 = 3{,}02\,\text{V}$ ja $U_{23} = 5{,}98\,\text{V}$
+**Kysytty:** rinnakkaisosan resistanssi $R_{23}$ mittarilukemista ja kytkentävirheen syy
+**Periaate:** Rinnakkaisosa on sarjassa vastuksen $R_1$ kanssa. Siksi paristosta lähtevä virta $I$ kulkee sen läpi. Ohmin lain mukaan rinnakkaisosan resistanssi on sen jännite jaettuna virralla. Tulosta verrataan arvoon, jonka rinnankytkennän kaava antaa vastuksille $200\,\Omega$ ja $200\,\Omega$.
+**Kuvaajan lukeminen:** Ei kuvaajaa; arvot luetaan taulukosta.
+**Kaava:** $R_{23} = \dfrac{U_{23}}{I}$ ja oikealla kytkennällä $R_{23} = \dfrac{R_2 R_3}{R_2 + R_3}$
+**Muunnokset:** $I = 30{,}2\,\text{mA} = 30{,}2 \cdot 0{,}001\,\text{A} = 0{,}0302\,\text{A}$.
+**Sijoitus:** $R_{23} = \dfrac{5{,}98\,\text{V}}{0{,}0302\,\text{A}} = 198\,\Omega$. Oikein kytketyllä piirillä $R_{23} = \dfrac{200\,\Omega \cdot 200\,\Omega}{400\,\Omega} = 100\,\Omega$. Vastuksen $R_1$ resistanssi mittarilukemista on $\dfrac{3{,}02\,\text{V}}{0{,}0302\,\text{A}} = 100\,\Omega$, joten $R_1$ on kunnossa.
+**Vastaus:** a) $198\,\Omega$, kolme merkitsevää numeroa kuten lukemissa. Oikein kytketyssä piirissä sen pitäisi olla $100\,\Omega$. b) Mitattu arvo on likimain yhden $200\,\Omega$:n vastuksen resistanssi. Toinen rinnakkaisista vastuksista ei siis ole mukana piirissä: sen johdin on irti tai haara on poikki. Virta kulkee vain yhden vastuksen kautta.
+**Järkevyys:** Jos yksi haara puuttuu, kokonaisresistanssi on $100\,\Omega + 200\,\Omega = 300\,\Omega$ ja virta $9{,}0\,\text{V} : 300\,\Omega = 30\,\text{mA}$. Se vastaa lukemaa $30{,}2\,\text{mA}$. Oikea kytkentä antaisi $9{,}0\,\text{V} : 200\,\Omega = 45\,\text{mA}$, joten mittaus eroaa siitä selvästi. Jännitteet summautuvat: $3{,}02\,\text{V} + 5{,}98\,\text{V} = 9{,}00\,\text{V}$.
+
+## fy6-4-L2-07
+**Annettu:** tunnettu vastus $R_1 = 60\,\Omega$ rinnan tuntemattoman $R_x$:n kanssa; mittaukset $(U;\ I)$: $(2{,}0\,\text{V};\ 83\,\text{mA})$, $(4{,}0\,\text{V};\ 166\,\text{mA})$, $(6{,}0\,\text{V};\ 247\,\text{mA})$, $(8{,}0\,\text{V};\ 333\,\text{mA})$ ja $(10{,}0\,\text{V};\ 414\,\text{mA})$
+**Kysytty:** tuntemattoman vastuksen resistanssi $R_x$
+**Periaate:** Jännitelähteen kannalta rinnankytkentä on kuin yksi vastus. Sen resistanssi saadaan Ohmin laista $R = U : I$. Mittaussarjan keskiarvo vähentää yksittäisen mittauksen hajontaa. Kokonaisresistanssi ja toinen haara tunnetaan. Silloin tuntematon haara saadaan rinnankytkennän kaavasta.
+**Kuvaajan lukeminen:** Ei kuvaajaa; arvot luetaan taulukosta. Jos pisteet piirrettäisiin $(I;\ U)$-koordinaatistoon, ne olisivat suoralla, joka kulkee origon kautta. Suoran kulmakerroin on kokonaisresistanssi.
+**Kaava:** $R = \dfrac{U}{I}$, $\dfrac{1}{R} = \dfrac{1}{R_1} + \dfrac{1}{R_x}$, josta $\dfrac{1}{R_x} = \dfrac{1}{R} - \dfrac{1}{R_1}$
+**Muunnokset:** $83\,\text{mA} = 83 \cdot 0{,}001\,\text{A} = 0{,}083\,\text{A}$, ja vastaavasti muut virrat.
+**Sijoitus:** a) Suhteet $U : I$ ovat $24{,}1\,\Omega$, $24{,}1\,\Omega$, $24{,}3\,\Omega$, $24{,}0\,\Omega$ ja $24{,}2\,\Omega$. Niiden summa on $120{,}7\,\Omega$, joten keskiarvo on $R_\text{ka} = \dfrac{120{,}7\,\Omega}{5} = 24{,}13\,\Omega$. b) $\dfrac{1}{R_x} = \dfrac{1}{24{,}13\,\Omega} - \dfrac{1}{60\,\Omega} = 0{,}02477\,\dfrac{1}{\Omega}$, joten $R_x = 40{,}4\,\Omega$.
+**Vastaus:** $40\,\Omega$, kaksi merkitsevää numeroa kuten jännitteissä ja virroissa. Laskussa pidetään yksi numero enemmän, $40{,}4\,\Omega$. Suhteet vaihtelevat vain välillä $24{,}0\,\Omega$ ja $24{,}3\,\Omega$, joten kokonaisresistanssi $24{,}1\,\Omega$ on luotettava.
+**Järkevyys:** Kokonaisresistanssi $24{,}1\,\Omega$ on pienempi kuin kumpikaan haara, $60\,\Omega$ ja $40{,}4\,\Omega$. Rinnankytkennässä näin pitää olla. Tarkistus: $\dfrac{60\,\Omega \cdot 40{,}4\,\Omega}{100{,}4\,\Omega} = 24{,}1\,\Omega$.
+
+## fy6-4-L3-04
+**Annettu:** $R_1 = 70\,\Omega$ sarjassa rinnakkaisten $R_2 = 110\,\Omega$ ja $R_3 = 110\,\Omega$ kanssa; mitattu kokonaisresistanssi $180\,\Omega$; paristo $U = 9{,}0\,\text{V}$; ampeerimittarien lukemat: pariston virta $49{,}8\,\text{mA}$, $R_2$:n virta $49{,}7\,\text{mA}$ ja $R_3$:n virta $0{,}0\,\text{mA}$
+**Kysytty:** a) oikein kytketyn levyn kokonaisresistanssi, b) vikaa selittävä kytkentä ja c) vastuksen $R_3$ virta $I_3$ korjatussa piirissä milliampeereina
+**Periaate:** Oikein kytketty levy on sekakytkentä. Rinnakkaiset $R_2$ ja $R_3$ korvataan yhdellä vastuksella $R_{23}$, joka on sarjassa vastuksen $R_1$ kanssa. Mitattua $180\,\Omega$ verrataan oikean kytkennän arvoon ja vian ehdokkaan arvoon. Virtamittarit kertovat, missä haarassa virtaa ei kulje. Korjatussa piirissä rinnakkaisosan jännite saadaan Ohmin laista. Se jaetaan vastuksen $R_3$ resistanssilla.
+**Kuvaajan lukeminen:** Ei kuvaajaa; arvot luetaan taulukosta.
+**Kaava:** $R_{23} = \dfrac{R_2 R_3}{R_2 + R_3}$, $R = R_1 + R_{23}$, $I = \dfrac{U}{R}$, $U_{23} = R_{23} I$ ja $I_3 = \dfrac{U_{23}}{R_3}$
+**Muunnokset:** Ei tarvita laskun aikana. Lopuksi $1\,\text{A} = 1000\,\text{mA}$.
+**Sijoitus:** a) $R_{23} = \dfrac{110\,\Omega \cdot 110\,\Omega}{220\,\Omega} = 55\,\Omega$ ja $R = 70\,\Omega + 55\,\Omega = 125\,\Omega$. b) Jos toinen haara on irti, jäljellä on vain yksi $110\,\Omega$:n vastus, ja $R = 70\,\Omega + 110\,\Omega = 180\,\Omega$. Se vastaa mittausta. Virta $R_3$:n johdossa on $0{,}0\,\text{mA}$ ja $R_2$:n virta on yhtä suuri kuin pariston virta, joten irti on $R_3$. c) Korjatussa piirissä $I = \dfrac{9{,}0\,\text{V}}{125\,\Omega} = 0{,}072\,\text{A}$, $U_{23} = 55\,\Omega \cdot 0{,}072\,\text{A} = 3{,}96\,\text{V}$ ja $I_3 = \dfrac{3{,}96\,\text{V}}{110\,\Omega} = 0{,}036\,\text{A} = 36\,\text{mA}$
+**Vastaus:** $36\,\text{mA}$, kaksi merkitsevää numeroa kuten jännitteessä $9{,}0\,\text{V}$. Levyn kokonaisresistanssin pitäisi olla $125\,\Omega$. Mittaukset selittyvät sillä, että vastus $R_3$ on irti johtimesta.
+**Järkevyys:** Korjatussa piirissä kummankin yhtä suuren haaran virta on puolet kokonaisvirrasta, $0{,}072\,\text{A} : 2 = 0{,}036\,\text{A}$. Jännitteet summautuvat: $0{,}072\,\text{A} \cdot 70\,\Omega + 3{,}96\,\text{V} = 5{,}04\,\text{V} + 3{,}96\,\text{V} = 9{,}0\,\text{V}$.
+
+## fy6-4-L3-05
+**Annettu:** tavoite $R_\text{tav} = 470\,\Omega$; varaston vastukset $100\,\Omega$, $390\,\Omega$, $560\,\Omega$, $1200\,\Omega$, $1500\,\Omega$, $2700\,\Omega$ ja $5600\,\Omega$, yksi kutakin
+**Kysytty:** parhaan kahden vastuksen kytkennän kokonaisresistanssi ja sen poikkeama arvosta $470\,\Omega$ prosentteina
+**Periaate:** Sarjaankytkennän tulos on suurempi kuin kumpikaan vastuksista. Rinnankytkennän tulos on pienempi kuin kumpikaan. Tämä rajaa ehdokkaat ennen laskemista. Sarjaan sopivat vain pienet vastukset ja rinnan vain suuret. Ehdokkaiden kokonaisresistanssit lasketaan, ja poikkeamia $\dfrac{|R - R_\text{tav}|}{R_\text{tav}}$ verrataan.
+**Kuvaajan lukeminen:** Ei kuvaajaa; arvot luetaan tehtävästä.
+**Kaava:** $R_\text{sarja} = R_a + R_b$, $R_\text{rinnan} = \dfrac{R_a R_b}{R_a + R_b}$ ja poikkeama $p = \dfrac{|R - R_\text{tav}|}{R_\text{tav}} \cdot 100\,\%$
+**Muunnokset:** $1{,}2\,\text{k}\Omega = 1200\,\Omega$, $1{,}5\,\text{k}\Omega = 1500\,\Omega$, $2{,}7\,\text{k}\Omega = 2700\,\Omega$ ja $5{,}6\,\text{k}\Omega = 5600\,\Omega$.
+**Sijoitus:** Sarjaankytkentä: tavoitetta $470\,\Omega$ pienempiä vastuksia ovat vain $100\,\Omega$ ja $390\,\Omega$. Niiden summa on $490\,\Omega$ (poikkeama $4{,}3\,\%$). Mikä tahansa muu sarjaankytkentä on vähintään $100\,\Omega + 560\,\Omega = 660\,\Omega$ ja huonompi. Rinnankytkentä: tulos on pienempi kuin pienempi vastus. Siksi pienemmän vastuksen on oltava yli $470\,\Omega$. Kyseeseen tulevat vastukset $560\,\Omega$, $1200\,\Omega$, $1500\,\Omega$, $2700\,\Omega$ ja $5600\,\Omega$. Parit, joissa on $560\,\Omega$, antavat $382\,\Omega$, $408\,\Omega$, $\dfrac{560 \cdot 2700}{3260}\,\Omega = 463{,}8\,\Omega$ ja $509\,\Omega$. Muissa pareissa pienempi vastus on vähintään $1200\,\Omega$, joten tulos on suurempi kuin $\dfrac{1200 \cdot 1500}{2700}\,\Omega = 667\,\Omega$. Paras on siis $560\,\Omega$ rinnan $2700\,\Omega$:n kanssa: $R = 463{,}8\,\Omega$, ja $p = \dfrac{470 - 463{,}8}{470} \cdot 100\,\% = 1{,}32\,\%$
+**Vastaus:** $1{,}3\,\%$, kaksi merkitsevää numeroa. Kytkentä on $560\,\Omega$ rinnan $2700\,\Omega$:n kanssa, ja kokonaisresistanssi on $464\,\Omega$. Paras sarjaankytkentä ($100\,\Omega + 390\,\Omega$) poikkeaa $4{,}3\,\%$. Rinnankytkentä on siis yli kolme kertaa tarkempi.
+**Järkevyys:** Tulos $463{,}8\,\Omega$ on pienempi kuin $560\,\Omega$, kuten rinnankytkennässä pitää. Se on lähellä tavoitetta.
