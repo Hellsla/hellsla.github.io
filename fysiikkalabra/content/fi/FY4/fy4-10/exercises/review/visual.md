@@ -1,21 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 051efb6706e3999f
+CONTENT-HASH: fec4683407094eec
 
 ## Blocking
 
 ## Polish
-- [Minor] solutions.md L3-01 and L2-02 Kaava (open-exercises-L3-1280-1, -L2-1280-2) — a long inline formula wraps inside a bracket ("$= (m +$" / "$M)\,gh$") and after a minus ("$\tfrac12 m_1 v_1^2 -$" / "$\tfrac12(m_1+m_2)\,v'^2$") — write the energy equation as its own inline formula after a word ("…, ja energiaperiaatteesta $\tfrac12 (m+M)\,v'^2 = (m+M)\,gh$") so that each formula stays on one line.
-- [Minor] solutions.md L2-02 and L2-03 Järkevyys (-L2-1280-3, #58) — inside the laid-out row box, $\tfrac{m_2}{m_1+m_2} = \tfrac{75}{160}$ and $\tfrac{m_1}{m_1+m_2}$ render very small — use $\dfrac{…}{…}$ there, or keep the ratio short enough to stay inline.
-- [Minor] solutions.md L3-01 Kaava — $h = \dfrac{v'^2}{2 \cdot g}$ → $h = \dfrac{v'^2}{2g}$, as the rest of the course writes it.
-- [Minor] solutions.md L3-03 Periaate (2) — "painovoima, joka on yhteinen vapaa pudotus aseman kanssa" calls a force a free fall → "Heiton jälkeen astronauttiin vaikuttaa vain painovoima, joka ei muuta hänen liikettään aseman suhteen, koska asema putoaa vapaasti samalla tavalla, joten hän liikkuu tasaisella nopeudella."
+- [Minor] solutions.md fy4-10-L1-07 Sijoitus (open-exercises-1280-7) — "$-0{,}342857\,\text{m/s}$" shows six digits while the answer is 2 sig. figs — "$= -0{,}343\,\text{m/s}$", then Vastaus $0{,}34\,\text{m/s}$.
+- [Minor] solutions.md fy4-10-L1-08 Järkevyys (open-exercises-1280-9) — chains "$0{,}17 \cdot 1{,}8\,\text{kg}\cdot\text{m/s}$" have a bare $0{,}17$ (mass without kg) — "$0{,}17\,\text{kg} \cdot 1{,}8\,\text{m/s}$"; same in L3-04 Järkevyys ("$1100 \cdot 22{,}06 = 24\,266$", units only at the end).
+- [Minor] solutions.md fy4-10-L3-04 (open-exercises-L3-1280-7) — the block "Mallivastaus virheestä" has no error to model (it is a model/plausibility task) — rename to "Johtopäätös" or fold into Vastaus.
+- [Minor] L1-08 is tagged `concept` but is a calculation with a numeric answer; tag `reasoning` for consistency with the other numeric L1 tasks (for science/pedagogy).
+- [Minor] tables of L3-05 and L2-05 (open-exercises-L2-1280-6, L3-1280-7) — numeric column headers sit centred over right- or left-aligned values; align them (page CSS, developer).
 
 ## Checked
-- contact-5, contact-6 (all 12 exercises with Vastaus and solution open)
-- open-exercises-1280-1 (L1-01 in full: input, Kirjoita ratkaisu, Vastaus, solution blocks)
-- open-exercises-L2-1280-2, -L2-1280-3 (L2-01…L2-03)
-- open-exercises-L3-1280-1, -L3-1280-4 (L3-01, L3-03)
-- stage-exercises-390 seen on contact-3 (#26) only
-- Source: exercises.json and solutions.md read in full; no figures in the set; lint shows no plain quantities
+- Round 2: re-opened the retaken captures of the changed solutions; L1-06 feedback and Periaate now say "muodonmuutoksissa sisäenergiaksi ja ääneksi", reads correctly; no new defects.
+- Text of L1-06…08, L2-05…07, L3-04…05 with data tables and complete solutions; numbers recomputed (energies, 73,4 %, 46,7 %, 79,4 km/h, 1,175 N all match the answer boxes).
+- open-exercises-1280-7, -9 (L1-06 solution, L1-07, L1-08), L2-1280-6, -8, -10 (L2-05 table and solution, L2-06 table and solution, L2-07), L3-1280-6, -7, -8 (L3-04 solution, L3-05 task, table and solution).
+- 1280 px only, no per-task 390 captures; 360/768/1280 layout checks clean per packet. No figures in the new tasks (tables only); no plain number+unit.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: c2760d9bfb0ce891
+CONTENT-HASH: cde76ff1bfd14f4a
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
+## Fixed
+(none needed)
+
 ## Polish
-- [Minor] L3-1 Reasonableness — the inline chain "$400\,\text{W/m}^2 \cdot 0.5 \cdot 0.5 = 100\,\text{W/m}^2$" wraps with a trailing "$\cdot$" on a line end — shorten the sentence so the chain starts a line.
+- The review screenshots in content/en/FY7/fy7-15/review/shots/ show an earlier ordering of the tasks, so the L3 captures do not all show the new tasks; text and maths were checked from the source instead.
 
 ## Checked
-- open-exercises-1280 L1 part 1 and 3, L2 part 2, L3 parts 2 and 3; open-tarkista-1280-1/2 (exercise 2 with hints and solution); open-exit-1280.
-- Solutions follow principle, formula, substitution, answer, reasonableness; substitution chains align at "=", fractions and roots legible; units upright with thin space; 3 significant figures consistent between substitution and answer.
-- check_layout at 340 px OK; no Finnish visible; no plain-text quantities.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+- Captures opened: open-exercises-1280-7 (L1-07 with solution) and L2/L3 captures (L2-06, L2-07 and L3 reasonableness): formulas, units (W/m2 upright), decimal point and substitution chains render cleanly; nothing clipped.
+- Data tables of L2-05, L2-06 and L3-04 have the same cells as fi; headers carry the quantities and units; captions say example data.
+- No Finnish visible in the English page; no plain-text quantities in either language.

@@ -1,11 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 4e04e6035c29bd49
+CONTENT-HASH: 0a4b561e503e708d
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+- solutions.md fy4-10-L3-04 (Principle): "törmäyksen lyhyen ajan, joten" was ungrammatical; now "törmäyksen lyhyen ajan aikana, joten".
 
 ## Polish
+(none)
 
 ## Checked
-- Rewrote byte-identical Muunnokset lines ("Muunnoksia ei tarvita, koska …"), Annettu tails ("aluksi molemmat ovat levossa", "positiivinen suunta on oikealle") and the L1-02 Järkevyys in shorter sentences.
-- Every solution keeps all eight steps; answers state the sig.-fig. reason as a full sentence.
-- Task texts split into short sentences with the question last; lint 0 errors, 0 warnings.
+- Task texts keep the Finnish order: situation, data, then question; the answer-box sentence is kept in each task with a multi-part question.
+- Part labels a), b), c) and the guided self-assessment prompts (what error, what was wrong in the student's reasoning) are preserved.
+- Selkosuomi holds: short sentences, common words, terms (kimmoton, liikemäärä, impulssi) explained as in fi-easy lessons; long fi sentences were already split.
+- Model answers keep every step and the reasonableness checks of fi; nothing dropped.

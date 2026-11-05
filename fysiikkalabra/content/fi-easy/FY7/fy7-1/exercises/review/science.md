@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: f0f474548982cdbd
+CONTENT-HASH: 57d948820be4c485
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- I recomputed every answer with my own formulas: L1-01 60 000; L1-02 13,7 µT; L1-03 50,0 µT; L2-01 60,8°; L2-02 49,7 µT; L2-03 53,4 µT; L2-04 9,82; L3-01 −11 µT; L3-03 2,03. All agree with exercises.json and answers.py.
-- The numbers and the solution steps are the same as in the Finnish version. The simplification dropped no Periaate, Muunnokset or Järkevyys step, and no reason for the significant figures.
-- L3-01: beside the middle of a N-pointing magnet the field points south. 14 − 25 = −11 µT, so the needle reverses; that is correct.
-- L1-04 and L1-05: the model answers' pole reasoning is right (the cut faces are opposite poles; the needle points away from the N pole).
-- L3-02: domains aligned and retained in hard steel; above the Curie point (770 °C) the order is lost, and on cooling the domains form in random directions. Correct.
-- L3-03: the WMM-level values for Helsinki and Longyearbyen are plausible. The reason given (only B_h turns the needle) is right.
-- Units, conversions (µT to T in L1-01) and the significant-figure reasons are right throughout.
+- Scripted comparison against fi of all 20 exercises: ids, kinds, units, tolerances, answers, correct flags, choice count and order, table cells are identical; every number in texts, feedback and solutions matches (decimal point/comma only).
+- New tasks recomputed: L1-08 53 sin 76° = 51.4 µT; L2-05 14 tan 46° = 14.5 µT (45.8 and 6.23 at 8.0 and 16 cm, ratio 7.3 vs 2³ = 8); L2-06 √5001 = 70.7 µT (48.5, 50.6 elsewhere); L2-07 atan(30/14) = 65.0°; L3-04 61.6° (53.9°, 57.3°); L3-05 k = 59.1·10³, r0 = 16.2 cm.
+- L1-06 and L1-07: exactly one correct option, each wrong option's feedback says why it is wrong; Earth's magnetic south pole near the geographic north is stated correctly.
+- L3-05 directions (field east with S pole toward compass; N pole north of compass gives field south, opposing B_h) kept as in fi.
+- Terminology (selkosuomi) matches the glossary: magnetic domain, ferromagnetic, inclination, horizontal component.
+- No Finnish left in en; check_i18n.py fi-easy: 0 errors.

@@ -39,6 +39,58 @@
       "answer": 3.0,
       "unit": "A",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-4-L1-06",
+      "level": 1,
+      "text": "Vaakasuora suora johdin on magneettikentässä. Kenttä osoittaa vaakasuoraan pohjoiseen. Johtimessa kulkee virta vaakasuoraan itään. Mihin suuntaan magneettikenttä työntää johdinta?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Ylöspäin, koska voima on kohtisuorassa sekä virtaa että kenttää vastaan. Oikean käden säännöllä se osoittaa ylös.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Pohjoiseen, koska kenttä vetää virtajohdinta kenttäviivojen suuntaan kohti magneetin napaa, jossa kenttä on voimakkain.",
+          "feedback": "Voima ei ole kentän suuntainen. Se on kohtisuorassa kenttää vastaan. Kentän suuntainen osa ei aiheuta voimaa ollenkaan. Virtajohdin ei myöskään liiku kohti napaa niin kuin rautakappale."
+        },
+        {
+          "text": "Itään, koska voima on virran suuntainen ja työntää johtimessa liikkuvia varauksia eteenpäin, kuten tuuli purjevenettä.",
+          "feedback": "Voima ei ole virran suuntainen. Magneettinen voima on kohtisuorassa varauksen liikesuuntaan eli virtaan nähden. Se ei siis nopeuta eikä hidasta varauksia niiden kulkusuunnassa."
+        },
+        {
+          "text": "Ylöspäin, koska voima on kohtisuorassa sekä virtaa että kenttää vastaan. Oikean käden säännöllä se osoittaa ylös.",
+          "correct": true,
+          "feedback": "Oikein: voima on aina kohtisuorassa sekä virran että kentän suuntaa vastaan. Peukalo osoittaa virran suuntaan itään ja sormet kentän suuntaan pohjoiseen. Silloin kämmen osoittaa ylös. Jos virta tai kenttä kääntyisi, voima kääntyisi alaspäin."
+        },
+        {
+          "text": "Alaspäin, koska magneettikenttä vetää johdinta puoleensa samalla tavalla kuin Maa vetää kappaletta, ja virta on vaakasuora.",
+          "feedback": "Magneettinen voima ei ole vetovoima kuten painovoima. Sen suunta saadaan oikean käden säännöllä virran ja kentän suunnista. Näillä suunnilla sääntö antaa ylöspäin, ei alaspäin."
+        }
+      ]
+    },
+    {
+      "id": "fy7-4-L1-07",
+      "level": 1,
+      "text": "Kaksi pitkää rinnakkaista johdinta on $4{,}0\\,\\text{cm}$:n etäisyydellä toisistaan. Niissä kulkee sama virta samaan suuntaan. Toisen johtimen $1{,}0\\,\\text{m}$:n pituiseen osaan kohdistuu toisen johtimen kentässä $0{,}60\\,\\text{N}$:n voima. Kuinka suuri voima kohdistuu samaan osaan, kun johtimien etäisyys kasvatetaan $8{,}0\\,\\text{cm}$:iin? Virrat pysyvät samoina.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 0.3,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-4-L1-08",
+      "level": 1,
+      "text": "Suora johdinosa on homogeenisessa magneettikentässä $20^\\circ$:n kulmassa kenttään nähden. Siihen kohdistuu $0{,}050\\,\\text{N}$:n voima. Johdinosa käännetään $40^\\circ$:n kulmaan kenttään nähden. Virta ja magneettivuon tiheys pysyvät samoina. Kuinka suuri voima johdinosaan kohdistuu nyt?",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 0.094,
+      "unit": "N",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +126,99 @@
       "answer": 18,
       "unit": "m/s²",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-4-L2-05",
+      "level": 2,
+      "text": "Opiskelijat mittasivat virtavaa'alla magneetin napojen välisen magneettivuon tiheyden. Virtavaaka on laite, joka mittaa virtajohtimeen kohdistuvaa voimaa. Vaa'an johdinsilmukan vaakasuoran osan pituus $l$ vaihdettiin vaihtamalla silmukkaa. Osa oli joka kerralla kokonaan kentässä ja kohtisuorassa sitä vastaan. Virta oli $2{,}0\\,\\text{A}$. Vaa'an lukeman muutos $\\Delta m$ mitattiin virran kytkemisen jälkeen (keksitty esimerkkiaineisto).\n\na) Laske magneettivuon tiheys $B$ jokaisesta mittauksesta, kun voima on $F = \\Delta m \\cdot g$.\n\nb) Laske tulosten keskiarvo $B_{\\text{ka}}$. Arvioi hajonta: se on puolet suurimman ja pienimmän tuloksen erotuksesta.\n\nKirjoita vastauslaatikkoon keskiarvo b)-kohdasta.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 0.085,
+      "unit": "T",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Virtavaa'an lukeman muutos johtimen pituuden funktiona",
+        "columns": [
+          "$l\\,(\\text{cm})$",
+          "$\\Delta m\\,(\\text{g})$"
+        ],
+        "rows": [
+          [
+            "2.0",
+            "0.35"
+          ],
+          [
+            "3.0",
+            "0.51"
+          ],
+          [
+            "4.0",
+            "0.71"
+          ],
+          [
+            "5.0",
+            "0.86"
+          ],
+          [
+            "6.0",
+            "1.04"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-4-L2-06",
+      "level": 2,
+      "text": "Opiskelija mittasi virtavaa'alla magneetin napojen välisen magneettivuon tiheyden. Vaa'an virtajohtimen vaakasuora osa on $6{,}0\\,\\text{cm}$ pitkä. Magneetin napojen väli on kuitenkin vain $2{,}5\\,\\text{cm}$ leveä. Siksi vain $2{,}5\\,\\text{cm}$ johtimesta on kentässä ja kohtisuorassa sitä vastaan. Kun johtimessa kulki $3{,}0\\,\\text{A}$:n virta, vaa'an lukema muuttui $0{,}31\\,\\text{g}$. Opiskelija laski: ”Voima on $F = \\Delta m \\cdot g = 3{,}04 \\cdot 10^{-3}\\,\\text{N}$ ja $B = \\dfrac{F}{I l}$, kun $l = 6{,}0\\,\\text{cm}$. Siis $B = 0{,}017\\,\\text{T}$.” (esimerkkiaineisto)\n\na) Etsi opiskelijan laskun virhe.\n\nb) Laske magneettivuon tiheys oikein.\n\nKirjoita vastauslaatikkoon b)-kohdan tulos.",
+      "kind": [
+        "error"
+      ],
+      "answer": 0.041,
+      "unit": "T",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy7-4-L2-07",
+      "level": 2,
+      "text": "Kaiuttimen puhekelan voimaa mitattiin, kun kela oli magneetin raossa. Raossa säteittäisen magneettikentän magneettivuon tiheys on $1{,}1\\,\\text{T}$. Kenttä on joka kohdassa kohtisuorassa kelan johdinta vastaan. Kelan virtaa $I$ muutettiin, ja kelaan kohdistuva voima $F$ mitattiin voima-anturilla (esimerkkiaineisto). Piirrä mittauspisteistä kuvaaja ja sovita pisteisiin origon kautta kulkeva suora. Määritä suoran kulmakertoimesta kelan johtimen kokonaispituus $l$.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 5.3,
+      "unit": "m",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Kaiuttimen puhekelaan kohdistuva voima virran funktiona",
+        "columns": [
+          "$I\\,(\\text{A})$",
+          "$F\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "0.20",
+            "1.18"
+          ],
+          [
+            "0.40",
+            "2.27"
+          ],
+          [
+            "0.60",
+            "3.52"
+          ],
+          [
+            "0.80",
+            "4.58"
+          ],
+          [
+            "1.00",
+            "5.83"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -99,6 +244,60 @@
       "text": "Ohut alumiinilanka on vaakasuorassa kompassin mukaan itä–länsisuunnassa. Langan pituus on $1{,}0\\,\\text{m}$ ja massa $2{,}7\\,\\text{g}$.\n\nMaan magneettikentän magneettivuon tiheys on Etelä-Suomessa noin $53\\,\\mu\\text{T}$. Kenttä osoittaa magneettiseen pohjoiseen ja alaspäin $74^\\circ$:n kulmassa vaakatasoon nähden (WMM2025-malli, NOAA/BGS).\n\nKuinka suuri virta langassa pitäisi kulkea, jotta Maan magneettikenttä kannattelisi langan painon? Anna vastaus kiloampeereina.",
       "answer": 1.8,
       "unit": "kA",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-4-L3-04",
+      "level": 3,
+      "text": "Fysiikan työssä tutkittiin kiskoilla liukuvan tangon kiihtyvyyttä. Kaksi vaakasuoraa kiskoa on $12\\,\\text{cm}$:n etäisyydellä toisistaan. Niiden päällä on poikittain tanko, jonka massa on $45\\,\\text{g}$. Kiskojen alueella on pystysuora homogeeninen magneettikenttä. Sen magneettivuon tiheyttä $B$ ei tunneta. Virta kulkee toista kiskoa pitkin tankoon, tangon läpi ja toista kiskoa pitkin takaisin. Tanko liukuu kiskoilla, ja liukukitka on vakio. Virtaa $I$ muutettiin ja tangon kiihtyvyys $a$ mitattiin (esimerkkiaineisto).\n\na) Piirrä mittauspisteistä kuvaaja ja sovita pisteisiin suora. Perustele Newtonin toisen lain avulla, miksi pisteiden pitäisi asettua suoralle ja miksi suora ei kulje origon kautta.\n\nb) Määritä magneettivuon tiheys $B$ suoran kulmakertoimesta.\n\nc) Määritä liukukitkakerroin $\\mu$ suoran ja pystyakselin leikkauspisteestä.\n\nKirjoita vastauslaatikkoon magneettivuon tiheys b)-kohdasta.",
+      "kind": [
+        "data",
+        "graph",
+        "model"
+      ],
+      "answer": 0.35,
+      "unit": "T",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Tangon kiihtyvyys virran funktiona",
+        "columns": [
+          "$I\\,(\\text{A})$",
+          "$a\\,(\\text{m/s}^2)$"
+        ],
+        "rows": [
+          [
+            "4.0",
+            "1.8"
+          ],
+          [
+            "6.0",
+            "3.6"
+          ],
+          [
+            "8.0",
+            "5.6"
+          ],
+          [
+            "10.0",
+            "7.3"
+          ],
+          [
+            "12.0",
+            "9.3"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-4-L3-05",
+      "level": 3,
+      "text": "Kaksi pitkää vaakasuoraa johdinta on päällekkäin. Alempi johdin on kiinteä. Ylempi johdin on $0{,}50\\,\\text{m}$ pitkä ja sen massa on $3{,}0\\,\\text{g}$. Se voi liikkua vain pystysuunnassa ja ilman kitkaa. Johtimet on kytketty sarjaan, joten niissä kulkee sama virta $I$. Johtimet ovat niin pitkiä verrattuna etäisyyteen, että alemman johtimen kenttä voidaan käsitellä äärettömän pitkän johtimen kenttänä. Kun virta kytketään lyhyeksi ajaksi, ylempi johdin leijuu paikallaan $1{,}0\\,\\text{cm}$:n etäisyydellä alemmasta.\n\na) Perustele, missä suunnissa virran täytyy kulkea johtimissa, ja laske tarvittava virta.\n\nb) Perustele, onko leijuminen vakaata pystysuunnassa. Mitä tapahtuu, jos ylempi johdin siirtyy hieman ylemmäs tai alemmas?\n\nKirjoita vastauslaatikkoon virta a)-kohdasta.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 54,
+      "unit": "A",
       "tolerance": 0.02
     }
   ]

@@ -22,4 +22,21 @@ a["fy7-1-L2-04"] = math.tan(rad(60)) / math.tan(rad(10)) # B_m = B_h tan θ at 1
 a["fy7-1-L3-01"] = 14 - 25                               # north component, north positive: magnet 25 µT south against B_h 14 µT north: −11 µT, the needle turns round
 # L3-02 (words): a steel paper clip stroked with a magnet stays magnetised; heating towards the Curie temperature disorders the domains
 a["fy7-1-L3-03"] = 53 * math.cos(rad(74)) / (55 * math.cos(rad(82.5)))   # B_h Helsinki 14,6 µT : Longyearbyen 7,18 µT = 2,03
+# Exercise-bank additions
+# L1-06 (words): a magnet attracts iron, not aluminium or copper: only ferromagnetic matter has domains that line up
+# L1-07 (words): the compass needle's N end points to geographic north: Earth's magnetic S pole is there (unlike poles attract)
+a["fy7-1-L1-08"] = 53 * math.sin(rad(76))                # Oulu B = 53 µT, I = 76°: B_v = B sin I = 51,4 µT
+# L2-05: B_m = B_h tan θ at r = 12 cm (θ = 46°, B_h = 14 µT): 14,5 µT; B_m r³ is roughly constant, not B_m r
+B_h = 14
+a["fy7-1-L2-05"] = B_h * math.tan(rad(46))
+# L2-06: magnetometer at the desk (31; 14; −62) µT: B = sqrt(Bx² + By² + Bz²) = 70,7 µT, ≈ 20 µT above Earth's 50 µT: iron nearby
+a["fy7-1-L2-06"] = math.sqrt(31**2 + 14**2 + 62**2)
+# L2-07 (error analysis): the student inverted the ratio; correct θ = atan(B_m / B_h) = atan(30/14) = 65,0°
+a["fy7-1-L2-07"] = math.degrees(math.atan(30 / 14))
+# L3-04: B_h = B cos I at Helsinki (53; 74°), Oulu (53; 76°), Utsjoki (52; 78°); magnet 20 µT east: θ = atan(20 / B_h), Utsjoki 61,6°
+a["fy7-1-L3-04"] = math.degrees(math.atan(20 / (52 * math.cos(rad(78)))))
+# L3-05: B_m = 14 µT · tan θ for r = 12…30 cm; k = mean of B_m r³ = 59,1 · 10³ µT cm³; B_m(r0) = B_h gives r0 = (k / B_h)^(1/3) = 16,2 cm
+meas = [(12, 69), (14, 56), (16, 47), (20, 27), (24, 18), (30, 8)]
+k = sum(B_h * math.tan(rad(th)) * r**3 for r, th in meas) / len(meas)
+a["fy7-1-L3-05"] = (k / B_h) ** (1 / 3)
 print(json.dumps(a))

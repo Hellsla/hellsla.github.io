@@ -1,17 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 888e56deaf79b0a5
+CONTENT-HASH: 79448261a661cbdd
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
+## Fixed
+(none needed: the fi-easy text already matched fi in every number and was clear plain Finnish)
+
 ## Polish
-(none)
+- solutions.md L1-04 Reasonableness and L3-03 "about 410 V" (414 V is exact) are inherited from the reviewed fi; not changed here to keep parity, worth a later fi fix.
 
 ## Checked
-- All 12 answers recomputed independently and with answers.py; every one matches exercises.json.
-- Task data and answers are identical to the Finnish set: the numbers in every text and solution section match.
-- L2-02: the trace figure (peak 12 V on a grid line, T = 40 ms) gives B = 0,127 T. figures.json keeps the numbers of the alt text.
-- L3-01: sin, not cos, from the perpendicular position; the reasonableness check explains why.
-- L3-02: mean power U₀²/2R = 20 W.
-- L3-03: U ∝ f, with no frequency converter as stated.
-- Significant figures and the reasonableness checks are correct (6,4 Hz; 2,00 kW; leap year 8784 h).
+- New tasks L1-06..08, L2-05..07, L3-04..05: ids, kinds, answers, units, tolerances and choice `correct` flags equal fi (script comparison of exercises.json).
+- Data tables (L2-05 14 rows, L2-06, L3-04) cell by cell equal fi; en/fi-easy JSON keep the decimal point, LaTeX keeps the fi numbers.
+- Every number in all solutions.md sections equals fi (decimal comma normalised); no Finnish left in en.
+- Recomputed: 20.0 ms, 12.02 V, 5.94 V, 2.44 %, 0.2609 A, B = 0.3404 T, P2 = 56.85 W, p_max = 113.7 W; all match.
+- Formulas unchanged; check_i18n fi-easy: 0 errors.

@@ -30,4 +30,18 @@ dt = 2 * 0.600 / v                                       # constant deceleration
 a["fy4-11-L3-02"] = 70.0 * v / dt                        # F_ka = m v0 / Δt = 11 253 N
 v = kmh(80)
 a["fy4-11-L3-03"] = v * 1.0 + v * v / (2 * 6.0) - v * v / (2 * 9.0)   # gap = s_r + s_j(own) − s_j(ahead) = 22,2 + 41,2 − 27,4 = 35,9 m
+# Exercise bank additions: L1-06 and L1-07 are multiple choice (no number)
+a["fy4-11-L1-08"] = round(0.75 * g, 1)                   # full grip on a level road: a = μg = 0,75 · 9,81 = 7,358 m/s² → 7,4 m/s²
+vv = [10.0, 15.0, 20.0, 25.0]; ss = [6.5, 14.1, 25.9, 39.6]
+k = 38.2 / 600.0                                         # line through the origin read at (600 m²/s², 38,2 m): k = 0,0637 s²/m
+a["fy4-11-L2-05"] = round(1 / (2 * k), 1)                # s_j = v0²/(2a) → slope k = 1/(2a), a = 7,85 → 7,9 m/s²
+k = 25.0 / 20.0                                          # F_ka = mΔv · (1/Δt): line through the origin and (20,0 1/s; 25,0 kN), k = 1,25 kN·s
+a["fy4-11-L2-06"] = round(k * 1000 / 75.0 * 3.6, -1)     # Δv = 1250 N·s / 75,0 kg = 16,67 m/s = 60,0 km/h → 60
+a["fy4-11-L2-07"] = round(12.0 * (90 / 50) ** 2, 1)      # s_j ∝ v0²: 12,0 m · 1,8² = 38,88 m → 38,9 m (the student's 1,8 · 12,0 = 21,6 m is wrong)
+tr, aw, dsee = 1.2, 5.1, 55.0                            # wet road fit of s_p/v = t_r + v/(2a): t_r = 1,2 s, a = 5,1 m/s²; sight distance 55 m
+vmax = -aw * tr + math.sqrt((aw * tr) ** 2 + 2 * aw * dsee)   # t_r v + v²/(2a) = d → v = 18,34 m/s
+a["fy4-11-L3-04"] = round(vmax * 3.6, 0)                 # 66,0 km/h → 66 (stopping distance at 80 km/h is 75 m > 55 m)
+vd = [15.0, 13.4, 10.1, 5.6, 2.2, 0.7, 0.0]              # dummy speed every 20 ms
+steps = [vd[i] - vd[i + 1] for i in range(6)]            # Δv per 20 ms interval; the largest is 4,5 m/s (40–60 ms)
+a["fy4-11-L3-05"] = round(80.0 * max(steps) / 0.020 / 1000, 1)   # F_max = m Δv/Δt = 80,0 kg · 4,5 m/s : 0,020 s = 18,0 kN
 print(json.dumps(a))

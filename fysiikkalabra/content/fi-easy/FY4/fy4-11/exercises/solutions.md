@@ -48,6 +48,26 @@
 **Vastaus:** $1{,}20\,\text{s}$. Vastauksessa on kolme merkitsevää numeroa, kuten nopeudessa $15{,}0\,\text{m/s}$ ja matkassa $18{,}0\,\text{m}$.
 **Järkevyys:** Tavallinen reaktioaika on noin sekunti, joten $1{,}2\,\text{s}$ on uskottava. Sekunnissa auto kulkee $15\,\text{m}$, ja $18\,\text{m}$ on vähän enemmän, joten aika on vähän yli sekunnin.
 
+## fy4-11-L1-06
+**Kysytty:** mikä väite pysähtymismatkasta on oikein, kun reaktioaika pitenee mutta nopeus ja hidastuvuus pysyvät samoina.
+**Periaate:** Pysähtymismatka on reaktiomatka plus jarrutusmatka. Reaktioajan auto kulkee tasaisella nopeudella, joten $s_\text{r} = v_0\,t_\text{r}$. Jarrutusmatka $s_\text{j} = \dfrac{v_0^2}{2a}$ alkaa vasta reaktioajan jälkeen. Se riippuu vain nopeudesta ja hidastuvuudesta.
+**Mallivastaus:** Vain reaktiomatka pitenee. Se kasvaa $20\,\text{m/s} \cdot 1{,}0\,\text{s} = 20\,\text{m}$:stä arvoon $20\,\text{m/s} \cdot 2{,}0\,\text{s} = 40\,\text{m}$. Auto kulkee pidemmän ajan tasaisella nopeudella ennen kuin jarrutus alkaa. Jarrutusmatka pysyy samana. Nopeus ja hidastuvuus eivät muutu, eikä reaktioaika ole jarrutusmatkan kaavassa. Pysähtymismatka ei siis pysy samana. Se pitenee reaktiomatkan lisäyksen verran eli $20\,\text{m}$. Väite "reaktiomatka pysyy samana" on väärä, koska matka riippuu ajasta. Väite "jarrutusmatkakin pitenee" on väärä, koska reaktioaikana ei jarruteta.
+
+## fy4-11-L1-07
+**Kysytty:** miksi turvavyö pienentää matkustajaan kohdistuvaa keskimääräistä voimaa.
+**Periaate:** Impulssiperiaatteen mukaan voiman impulssi on yhtä suuri kuin liikemäärän muutos, $F_\text{ka}\,\Delta t = m\,\Delta v$. Kun matkustaja pysähtyy, hänen liikemääränsä muuttuu arvosta $m\,v$ nollaan.
+**Mallivastaus:** Liikemäärän muutos on yhtä suuri vyön kanssa ja ilman vyötä, koska matkustaja pysähtyy kummassakin tapauksessa. Vyö ei siis pienennä liikemäärän muutosta eikä impulssia. Vyö pidentää aikaa $\Delta t$, jossa muutos tapahtuu. Se antaa matkustajan hidastua tasaisemmin ja pidemmässä ajassa. Kun $m\,\Delta v$ on vakio, pidempi aika tarkoittaa pienempää keskimääräistä voimaa $F_\text{ka} = \dfrac{m\,\Delta v}{\Delta t}$. Vyö ei hidasta matkustajaa ennen törmäystä. Se ei myöskään ota osaa hänen liikemäärästään. Matkustaja liikkuu auton mukana, kunnes auto pysähtyy.
+
+## fy4-11-L1-08
+**Annettu:** kitkakerroin $\mu = 0{,}75$, vaakasuora tie, täysi pito; $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** auton hidastuvuus $a$ yksikössä $\text{m/s}^2$
+**Periaate:** Vaakasuoralla tiellä auto ei kiihdy pystysuunnassa, joten tukivoima on yhtä suuri kuin paino, $N = mg$. Täydessä jarrutuksessa kitka $F_\mu = \mu N$ on ainoa vaakasuora voima. Newtonin toisen lain mukaan $\mu mg = ma$. Massa supistuu pois.
+**Kaava:** $a = \mu g$
+**Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
+**Sijoitus:** $a = 0{,}75 \cdot 9{,}81\,\text{m/s}^2 = 7{,}358\,\text{m/s}^2$
+**Vastaus:** $7{,}4\,\text{m/s}^2$. Vastauksessa on kaksi merkitsevää numeroa, kuten kitkakertoimessa $0{,}75$.
+**Järkevyys:** Kitkakerroin on pienempi kuin kuivalla asfaltilla ($0{,}92$). Siksi hidastuvuus on pienempi kuin kuivan asfaltin $9{,}0\,\text{m/s}^2$. Se on kuitenkin noin $2{,}5$-kertainen lumeen verrattuna ($\mu = 0{,}30$ antaa noin $2{,}9\,\text{m/s}^2$). Sama suhde on kitkakertoimilla: $0{,}75 : 0{,}30 = 2{,}5$.
+
 ## fy4-11-L2-01
 **Annettu:** $v_0 = 90\,\text{km/h}$, reaktioaika $t_\text{r} = 1{,}5\,\text{s}$, hidastuvuus $a = 7{,}5\,\text{m/s}^2$
 **Kysytty:** pysähtymismatka $s_\text{p}$ yksikössä $\text{m}$
@@ -88,6 +108,58 @@
 **Vastaus:** $81\,\text{km/h}$. Vastauksessa on kaksi merkitsevää numeroa, koska hidastuvuus $8{,}0\,\text{m/s}^2$ on arvio kahden numeron tarkkuudella.
 **Järkevyys:** Kuivalla tiellä $80\,\text{km/h}$:n nopeudesta jarrutusmatka on noin $27$–$31\,\text{m}$ hidastuvuudesta riippuen, joten $32\,\text{m}$:n jälki sopii noin $80\,\text{km/h}$:n nopeuteen. Todellinen nopeus voi olla suurempi, jos auto osui johonkin ennen pysähtymistä.
 
+## fy4-11-L2-05
+**Annettu:** taulukosta $v_0 = 10{,}0$; $15{,}0$; $20{,}0$ ja $25{,}0\,\text{m/s}$ ja jarrutusmatkat $6{,}5$; $14{,}1$; $25{,}9$ ja $39{,}6\,\text{m}$; hidastuvuus vakio, auto pysähtyy
+**Kysytty:** auton hidastuvuus $a$ yksikössä $\text{m/s}^2$
+**Periaate:** Vakiohidastuvuudella jarrutusmatka on $s_\text{j} = \dfrac{v_0^2}{2a}$. Kun matka piirretään nopeuden neliön funktiona, kuvaaja on suora, joka kulkee origon kautta. Suoran kulmakerroin on $\dfrac{1}{2a}$.
+**Kuvaajan lukeminen:** Nopeuksien neliöt ovat $100$; $225$; $400$ ja $625\,\text{m}^2/\text{s}^2$. Pisteet $(v_0^2, s_\text{j})$ ovat lähes suoralla, joka kulkee origon kautta. Mittauksessa on pientä satunnaista vaihtelua, joten suora kulkee pisteiden lomassa. Sovitetulta suoralta luetaan piste $(600\,\text{m}^2/\text{s}^2;\ 38{,}2\,\text{m})$.
+**Kaava:** kulmakerroin $k = \dfrac{s_\text{j}}{v_0^2} = \dfrac{1}{2a}$, joten $a = \dfrac{1}{2k}$
+**Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
+**Sijoitus:** Kulmakerroin on $k = \dfrac{38{,}2\,\text{m}}{600\,\text{m}^2/\text{s}^2} = 0{,}0637\,\text{s}^2/\text{m}$. Hidastuvuus on
+```latex
+\begin{aligned}
+a &= \frac{1}{2 \cdot 0{,}0637\,\text{s}^2/\text{m}} \\
+&= 7{,}85\,\text{m/s}^2
+\end{aligned}
+```
+**Vastaus:** $7{,}9\,\text{m/s}^2$. Vastauksessa on kaksi merkitsevää numeroa. Jarrutusmatkat on mitattu kolmen tai neljän numeron tarkkuudella, ja suoran lukeminen on likimääräistä.
+**Järkevyys:** Tulos on lähellä kuivan asfaltin arvoa $9{,}0\,\text{m/s}^2$, mutta hieman pienempi. Tarkistus yhdellä pisteellä: nopeudella $20{,}0\,\text{m/s}$ saadaan $\dfrac{(20{,}0\,\text{m/s})^2}{2 \cdot 7{,}85\,\text{m/s}^2} = 25{,}5\,\text{m}$. Mitattu arvo on $25{,}9\,\text{m}$. Kun nopeus kaksinkertaistuu $10$:stä $20\,\text{m/s}$:iin, matka kasvaa $6{,}5\,\text{m}$:stä $25{,}9\,\text{m}$:iin. Se on noin nelinkertainen, kuten neliöllinen riippuvuus ennustaa.
+
+## fy4-11-L2-06
+**Annettu:** $m = 75{,}0\,\text{kg}$, nuken nopeus muuttuu arvosta $v_0$ nollaan; $\Delta t = 0{,}050$; $0{,}080$; $0{,}100$; $0{,}150$ ja $0{,}200\,\text{s}$ ja $F_\text{ka} = 24{,}8$; $15{,}9$; $12{,}6$; $8{,}3$ ja $6{,}3\,\text{kN}$
+**Kysytty:** nuken nopeus ennen törmäystä $v_0$ yksikössä $\text{km/h}$
+**Periaate:** Impulssiperiaatteen mukaan $F_\text{ka}\,\Delta t = m\,\Delta v$. Nopeuden muutos on sama kaikissa kokeissa, joten $F_\text{ka} = m\,\Delta v \cdot \dfrac{1}{\Delta t}$. Kun voima piirretään käänteisajan $\tfrac{1}{\Delta t}$ funktiona, kuvaaja on suora, joka kulkee origon kautta. Suoran kulmakerroin on liikemäärän muutos $m\,\Delta v$.
+**Kuvaajan lukeminen:** Käänteisajat ovat $20{,}0$; $12{,}5$; $10{,}0$; $6{,}7$ ja $5{,}0\,\text{s}^{-1}$. Pisteet ovat lähes suoralla, joka kulkee origon kautta. Pientä satunnaista vaihtelua on, joten suora kulkee pisteiden lomassa. Sovitetulta suoralta luetaan piste $(20{,}0\,\text{s}^{-1};\ 25{,}0\,\text{kN})$. Kulmakerroin on siis $\dfrac{25{,}0\,\text{kN}}{20{,}0\,\text{s}^{-1}} = 1{,}25\,\text{kN}\cdot\text{s}$.
+**Kaava:** $m\,\Delta v = $ kulmakerroin, joten $v_0 = \Delta v = \dfrac{\text{kulmakerroin}}{m}$
+**Muunnokset:** $1{,}25\,\text{kN}\cdot\text{s} = 1250\,\text{N}\cdot\text{s} = 1250\,\text{kg}\cdot\text{m/s}$ ja lopuksi $1\,\text{m/s} = 3{,}6\,\text{km/h}$.
+**Sijoitus:** Nopeus $v_0 = \Delta v$ on
+```latex
+\begin{aligned}
+v_0 &= \frac{1250\,\text{kg}\cdot\text{m/s}}{75{,}0\,\text{kg}} \\
+&= 16{,}67\,\text{m/s} \\
+&= 60{,}0\,\text{km/h}
+\end{aligned}
+```
+**Vastaus:** $60\,\text{km/h}$. Vastauksessa on kaksi merkitsevää numeroa, koska suoran kulmakerroin luetaan kuvaajasta likimääräisesti.
+**Järkevyys:** Tulo $F_\text{ka}\,\Delta t$ on jokaisessa mittauksessa lähes sama: $24{,}8\,\text{kN} \cdot 0{,}050\,\text{s} = 1{,}24\,\text{kN}\cdot\text{s}$ ja $6{,}3\,\text{kN} \cdot 0{,}200\,\text{s} = 1{,}26\,\text{kN}\cdot\text{s}$. Näin pitääkin olla, kun liikemäärän muutos on vakio. Pisin pysähtymisaika antaa pienimmän voiman. Aineisto näyttää siis, miten vyön joustavuus vaikuttaa.
+
+## fy4-11-L2-07
+**Annettu:** jarrutusmatka nopeudesta $50\,\text{km/h}$ on $12{,}0\,\text{m}$, kysytään jarrutusmatka nopeudesta $90\,\text{km/h}$; hidastuvuus vakio ja sama molemmissa
+**Kysytty:** a) mikä virhe opiskelijan päättelyssä on; b) jarrutusmatka $s_\text{j}$ nopeudesta $90\,\text{km/h}$ yksikössä $\text{m}$
+**Periaate:** Vakiohidastuvuudella jarrutusmatka $s_\text{j} = \dfrac{v_0^2}{2a}$ on verrannollinen nopeuden neliöön, ei nopeuteen. Kun hidastuvuus on sama, nopeuden suhde $k$ muuttaa jarrutusmatkaa kertoimella $k^2$.
+**Kaava:** $\dfrac{s_2}{s_1} = \dfrac{v_2^2 / (2a)}{v_1^2 / (2a)} = \left(\dfrac{v_2}{v_1}\right)^2$, joten $s_2 = s_1 \left(\dfrac{v_2}{v_1}\right)^2$
+**Muunnokset:** Nopeuksien suhde ei riipu yksiköstä, joten muunnosta ei tarvita: $\dfrac{90\,\text{km/h}}{50\,\text{km/h}} = 1{,}8$.
+**Sijoitus:** Jarrutusmatka $s_2$ on
+```latex
+\begin{aligned}
+s_2 &= 12{,}0\,\text{m} \cdot 1{,}8^2 \\
+&= 12{,}0\,\text{m} \cdot 3{,}24 \\
+&= 38{,}88\,\text{m}
+\end{aligned}
+```
+**Vastaus:** a) Opiskelija pitää jarrutusmatkaa nopeuteen verrannollisena. Jarrutusmatka on kuitenkin verrannollinen nopeuden neliöön. Jarrutusaika $t_\text{j} = \tfrac{v_0}{a}$ kasvaa nopeuden mukana, ja samalla myös keskinopeus kasvaa. Siksi nopeuden suhde pitää korottaa toiseen potenssiin. b) $38{,}9\,\text{m}$. Vastauksessa on kolme merkitsevää numeroa, kuten annetussa jarrutusmatkassa $12{,}0\,\text{m}$.
+**Järkevyys:** Tarkistus hidastuvuuden kautta: $a = \dfrac{(13{,}89\,\text{m/s})^2}{2 \cdot 12{,}0\,\text{m}} = 8{,}04\,\text{m/s}^2$. Nopeudella $90\,\text{km/h} = 25{,}0\,\text{m/s}$ jarrutusmatka on $\dfrac{(25{,}0\,\text{m/s})^2}{2 \cdot 8{,}04\,\text{m/s}^2} = 38{,}9\,\text{m}$, kuten laskussa. Opiskelijan tulos on yli $17\,\text{m}$ liian pieni.
+
 ## fy4-11-L3-01
 **Annettu:** rajoitus $30\,\text{km/h}$, todellinen nopeus $v_0 = 40\,\text{km/h}$, reaktioaika $t_\text{r} = 1{,}0\,\text{s}$, hidastuvuus $a = 9{,}0\,\text{m/s}^2$; lapsi on etäisyydellä $d$, joka on pysähtymismatka $30\,\text{km/h}$:n nopeudesta
 **Kysytty:** auton nopeus $v$ lapsen kohdalla yksikössä $\text{km/h}$
@@ -117,3 +189,67 @@
 **Sijoitus:** $d = 22{,}22\,\text{m/s} \cdot 1{,}0\,\text{s} + \dfrac{(22{,}22\,\text{m/s})^2}{2 \cdot 6{,}0\,\text{m/s}^2} - \dfrac{(22{,}22\,\text{m/s})^2}{2 \cdot 9{,}0\,\text{m/s}^2} = 22{,}22\,\text{m} + 41{,}15\,\text{m} - 27{,}43\,\text{m} = 35{,}94\,\text{m}$
 **Vastaus:** $36\,\text{m}$. Vastauksessa on kaksi merkitsevää numeroa, kuten reaktioajassa $1{,}0\,\text{s}$ ja hidastuvuuksissa.
 **Järkevyys:** Jos autojen hidastuvuudet olisivat samat, välimatkaksi riittäisi reaktiomatka $22\,\text{m}$. Kuluneet renkaat lisäävät tarvittavaa väliä noin $14\,\text{m}$. Välimatka $36\,\text{m}$ vastaa noin $1{,}6\,\text{s}$:n ajoaikaa nopeudella $22\,\text{m/s}$.
+
+## fy4-11-L3-04
+**Annettu:** esteen havaintoetäisyys $d = 55\,\text{m}$, rajoitus $80\,\text{km/h}$; taulukosta $v = 30$; $50$; $70$ ja $90\,\text{km/h}$ ja $s_\text{p} = 17{,}0$; $35{,}5$; $60{,}0$ ja $92{,}0\,\text{m}$; reaktioaika ja hidastuvuus vakioita, tie vaakasuora
+**Kysytty:** a) $t_\text{r}$ ja $a$; b) suurin nopeus $v_\text{max}$ yksikössä $\text{km/h}$, jolla auto ehtii pysähtyä matkalla $d$; c) pysähtymismatka nopeudella $80\,\text{km/h}$ ja johtopäätös rajoituksesta
+**Periaate:** Pysähtymismatka on $s_\text{p} = v\,t_\text{r} + \dfrac{v^2}{2a}$. Kun se jaetaan nopeudella, saadaan $\dfrac{s_\text{p}}{v} = t_\text{r} + \dfrac{1}{2a}\,v$. Kuvaaja $\left(v, \tfrac{s_\text{p}}{v}\right)$ on siis suora. Sen vakiotermi on reaktioaika ja kulmakerroin on $\tfrac{1}{2a}$. Suurin nopeus ratkaistaan vaatimuksesta $s_\text{p} = d$.
+**Kuvaajan lukeminen:** Nopeudet ovat $8{,}33$; $13{,}89$; $19{,}44$ ja $25{,}0\,\text{m/s}$. Suhteet $\tfrac{s_\text{p}}{v}$ ovat $2{,}04$; $2{,}56$; $3{,}09$ ja $3{,}68\,\text{s}$. Pisteet ovat lähes suoralla. Sovitetulta suoralta luetaan pisteet $(10\,\text{m/s};\ 2{,}19\,\text{s})$ ja $(25\,\text{m/s};\ 3{,}66\,\text{s})$. Kulmakerroin on $\dfrac{(3{,}66 - 2{,}19)\,\text{s}}{(25 - 10)\,\text{m/s}} = 0{,}098\,\text{s}^2/\text{m}$. Suoran leikkaus pystyakselilla on $2{,}19\,\text{s} - 0{,}098\,\text{s}^2/\text{m} \cdot 10\,\text{m/s} = 1{,}21\,\text{s}$.
+**Kaava:** $t_\text{r}$ = leikkauskohta, $a = \dfrac{1}{2 \cdot \text{kulmakerroin}}$ ja $v\,t_\text{r} + \dfrac{v^2}{2a} = d$, joten $\dfrac{1}{2a}\,v^2 + t_\text{r}\,v - d = 0$ ja positiivinen ratkaisu on $v = -a\,t_\text{r} + \sqrt{(a\,t_\text{r})^2 + 2a\,d}$
+**Muunnokset:** $1\,\text{km/h} = \tfrac{1}{3{,}6}\,\text{m/s}$ ja $1\,\text{m/s} = 3{,}6\,\text{km/h}$.
+**Sijoitus:** a) Reaktioaika on $t_\text{r} = 1{,}2\,\text{s}$ ja hidastuvuus $a = \dfrac{1}{2 \cdot 0{,}098\,\text{s}^2/\text{m}} = 5{,}1\,\text{m/s}^2$. b) Lasketaan ensin tulo $a\,t_\text{r} = 5{,}1\,\text{m/s}^2 \cdot 1{,}2\,\text{s} = 6{,}12\,\text{m/s}$ ja sitten
+```latex
+\begin{aligned}
+2a\,d &= 2 \cdot 5{,}1\,\text{m/s}^2 \cdot 55\,\text{m} \\
+&= 561\,\text{m}^2/\text{s}^2 \\
+v_\text{max} &= -6{,}12\,\text{m/s} \\
+&\quad + \sqrt{(6{,}12\,\text{m/s})^2 + 561\,\text{m}^2/\text{s}^2} \\
+&= -6{,}12\,\text{m/s} + 24{,}46\,\text{m/s} \\
+&= 18{,}34\,\text{m/s} \\
+&= 66{,}0\,\text{km/h}
+\end{aligned}
+```
+c) Nopeus $80\,\text{km/h} = 22{,}22\,\text{m/s}$, joten
+```latex
+\begin{aligned}
+s_\text{p} &= 22{,}22\,\text{m/s} \cdot 1{,}2\,\text{s} \\
+&\quad + \frac{(22{,}22\,\text{m/s})^2}{2 \cdot 5{,}1\,\text{m/s}^2} \\
+&= 26{,}7\,\text{m} + 48{,}4\,\text{m} \\
+&= 75{,}1\,\text{m}
+\end{aligned}
+```
+**Vastaus:** a) $t_\text{r} \approx 1{,}2\,\text{s}$ ja $a \approx 5{,}1\,\text{m/s}^2$. b) $66\,\text{km/h}$. Vastauksessa on kaksi merkitsevää numeroa, kuten reaktioajassa $1{,}2\,\text{s}$ ja hidastuvuudessa. c) Pysähtymismatka nopeudella $80\,\text{km/h}$ on noin $75\,\text{m}$. Se on selvästi enemmän kuin näkyvyysmatka $55\,\text{m}$. Rajoitus $80\,\text{km/h}$ ei sovi märälle tielle tällä osuudella, koska auto ei ehtisi pysähtyä ennen estettä. Se ehtisi hidastua vain nopeuteen noin $51\,\text{km/h}$ ennen kuin se osuu esteeseen. Esimerkiksi nopeudella $60\,\text{km/h}$ pysähtymismatka on noin $47\,\text{m}$. Aineiston mukaan väliaikainen rajoitus $60\,\text{km/h}$ siis riittäisi. Päätelmä koskee märkää tietä ja esimerkkiaineiston reaktioaikaa.
+**Järkevyys:** Hidastuvuus $5{,}1\,\text{m/s}^2$ vastaa kitkakerrointa $\mu = \dfrac{5{,}1}{9{,}81} = 0{,}52$. Se on uskottava märälle asfaltille ja pienempi kuin kuivan asfaltin $0{,}92$. Reaktioaika $1{,}2\,\text{s}$ on tavallinen. Tarkistus: nopeudella $66\,\text{km/h} = 18{,}3\,\text{m/s}$ saadaan $18{,}3\,\text{m/s} \cdot 1{,}2\,\text{s} + \dfrac{(18{,}3\,\text{m/s})^2}{2 \cdot 5{,}1\,\text{m/s}^2} = 22{,}0\,\text{m} + 32{,}8\,\text{m} = 54{,}8\,\text{m} \approx 55\,\text{m}$. Nopeudella $80\,\text{km/h}$ nopeus esteen kohdalla olisi $\sqrt{(22{,}22\,\text{m/s})^2 - 2 \cdot 5{,}1\,\text{m/s}^2 \cdot (55 - 26{,}7)\,\text{m}} = 14{,}3\,\text{m/s} \approx 51\,\text{km/h}$.
+
+## fy4-11-L3-05
+**Annettu:** $m = 80{,}0\,\text{kg}$, $v_0 = 15{,}0\,\text{m/s}$ ($54\,\text{km/h}$), nopeudet $15{,}0$; $13{,}4$; $10{,}1$; $5{,}6$; $2{,}2$; $0{,}7$ ja $0{,}0\,\text{m/s}$ ajanhetkillä $0$; $20$; $40$; $60$; $80$; $100$ ja $120\,\text{ms}$
+**Kysytty:** a) pysähtymismatka $s$; b) keskimääräinen voima $F_\text{ka}$; c) suurin voima $F_\text{max}$ yksikössä $\text{kN}$; d) miksi vyö ja turvatyyny pienentävät voimaa
+**Periaate:** Matka on $(t,v)$-kuvaajan alle jäävä pinta-ala. Kullakin $20\,\text{ms}$:n välillä se on keskinopeus kertaa aika. Voima saadaan impulssiperiaatteesta $F\,\Delta t = m\,\Delta v$. Koko pysähtyminen antaa keskimääräisen voiman. Yksittäinen $20\,\text{ms}$:n väli antaa voiman sillä välillä. Suurin voima on sen välin voima, jolla nopeus muuttuu eniten.
+**Kuvaajan lukeminen:** Välien nopeuden muutokset ovat $1{,}6$; $3{,}3$; $4{,}5$; $3{,}4$; $1{,}5$ ja $0{,}7\,\text{m/s}$. Nopeus muuttuu eniten välillä $40$–$60\,\text{ms}$. Silloin se pienenee $4{,}5\,\text{m/s}$. Nuken pysähtymisaika on $120\,\text{ms}$, koska nopeus on silloin nolla.
+**Kaava:** $s = \sum \tfrac{v_\text{alku} + v_\text{loppu}}{2}\,\Delta t$, $F_\text{ka} = \dfrac{m\,\Delta v}{\Delta t}$ ja kullakin välillä $F = \dfrac{m\,\Delta v_\text{väli}}{\Delta t_\text{väli}}$
+**Muunnokset:** $20\,\text{ms} = 0{,}020\,\text{s}$ ja $120\,\text{ms} = 0{,}120\,\text{s}$.
+**Sijoitus:** a) Keskinopeuksien summa on $14{,}2 + 11{,}75 + 7{,}85 + 3{,}9 + 1{,}45 + 0{,}35 = 39{,}5\,\text{m/s}$, joten
+```latex
+\begin{aligned}
+s &= 39{,}5\,\text{m/s} \cdot 0{,}020\,\text{s} \\
+&= 0{,}79\,\text{m}
+\end{aligned}
+```
+b) Keskimääräinen voima on
+```latex
+\begin{aligned}
+F_\text{ka} &= \frac{80{,}0\,\text{kg} \cdot 15{,}0\,\text{m/s}}{0{,}120\,\text{s}} \\
+&= 10\,000\,\text{N}
+\end{aligned}
+```
+c) Suurin voima on välillä $40$–$60\,\text{ms}$:
+```latex
+\begin{aligned}
+F_\text{max} &= \frac{80{,}0\,\text{kg} \cdot 4{,}5\,\text{m/s}}{0{,}020\,\text{s}} \\
+&= 18\,000\,\text{N} \\
+&= 18{,}0\,\text{kN}
+\end{aligned}
+```
+d) Liikemäärän muutos on $m\,\Delta v = 80{,}0\,\text{kg} \cdot 15{,}0\,\text{m/s} = 1200\,\text{kg}\cdot\text{m/s}$. Se on sama riippumatta siitä, suojaako nukkea vyö ja turvatyyny. Jos nukke pysähtyisi ajassa $0{,}010\,\text{s}$, keskimääräinen voima olisi $F_\text{ka} = \dfrac{1200\,\text{kg}\cdot\text{m/s}}{0{,}010\,\text{s}} = 120\,000\,\text{N}$ eli $120\,\text{kN}$.
+**Vastaus:** c) Suurin voima on $18{,}0\,\text{kN}$. Vastauksessa on kolme merkitsevää numeroa, kuten nopeuden muutoksessa $4{,}5\,\text{m/s}$ ja massassa $80{,}0\,\text{kg}$. Lisäksi a) pysähtymismatka on $0{,}79\,\text{m}$ ja b) keskimääräinen voima on $10\,\text{kN}$. d) Vyö ja turvatyyny pidentävät pysähtymisajan noin arvoon $0{,}12\,\text{s}$. Jäykkään pintaan osuessa aika olisi noin $0{,}010\,\text{s}$ ja keskimääräinen voima $120\,\text{kN}$, eli $12$-kertainen. Liikemäärän muutos ja impulssi ovat samat, joten pidempi aika tarkoittaa pienempää voimaa, $F_\text{ka} = \tfrac{m\,\Delta v}{\Delta t}$. Vyö pitää nuken auton mukana ja antaa sen hidastua yhdessä auton kanssa. Turvatyyny jakaa voiman suurelle alalle. Ne toimivat yhdessä, eivät toistensa sijasta. Voima vaihtelee törmäyksen aikana, joten suurin voima $18{,}0\,\text{kN}$ on suurempi kuin keskimääräinen.
+**Järkevyys:** Nuken paino on $80{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 785\,\text{N}$. Suurin voima on noin $23$-kertainen ja keskimääräinen voima noin $13$-kertainen painoon verrattuna. Suurin voima on $1{,}8$-kertainen keskimääräiseen nähden. Matkan voi tarkistaa keskinopeudella: koko ajan keskinopeus on noin $0{,}79\,\text{m} : 0{,}120\,\text{s} = 6{,}6\,\text{m/s}$. Se on alle puolet alkunopeudesta $15{,}0\,\text{m/s}$, koska nopeus on pienentynyt keskivaiheilla nopeammin kuin tasaisessa hidastumisessa.

@@ -1,13 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 458df872a2e45b5e
+CONTENT-HASH: 1e20d2a076721b94
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+(none needed: the plain Finnish already matched fi in every number and was clear)
 
 ## Polish
+(none)
 
 ## Checked
-- Every number in exercises.json and solutions.md equals the Finnish source. The ids, answers, tolerances and units are identical.
-- Recomputed in one script: L1 35.107°, 196 078 km/s, 1.5161, 37.0°, 42.0°; L2 265.0 ns, 34.983°, 183 038 km/s (n ≈ 1.639; curve 1.6387), 15.646°; L3 0.9659°, 30.703°, 1.6650°. All are within tolerance of the keys.
-- The simplified task texts keep every datum and condition (L2-01's v = c : n assumption, one internal reflection, level ground, "tulee ilmasta").
-- The solutions keep the physics after the sentences are split: the group-velocity caveat, θ − h for the top of the arc, the inside-the-arc argument, and the rounding reasons.
-- The figure flint-points has a fi-easy aria-label that gives the same information and no answer.
+- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) and all older ones compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags, choices, data cells, and every number in texts, choices, feedback and solutions.md are identical (decimal point in JSON; solutions.md has 829 numbers each, equal).
+- Formulas, subscripts and LaTeX numbers match fi; check_i18n.py fi-easy: 0 errors.
+- No Finnish left in the English set (grep for ä/ö/å clean).
+- Key values re-derived: L1-07 264.71 nm, L1-08 12.3 deg, L2-05 0.765 deg, L2-06 42.29 deg, L2-07 197 889 km/s, L3-04 n = 1.400, L3-05 7.42 deg; all agree with fi.

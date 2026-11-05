@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 708af1408f91eb5f
+CONTENT-HASH: 8dfbc174c1098756
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
+## Fixed
+(none needed)
+
 ## Polish
-- [Minor] L3-1 Järkevyys — the chain "$400\,\text{W/m}^2 \cdot 0{,}5 \cdot 0{,}5 = 100\,\text{W/m}^2$" wraps with a trailing "$\cdot$" at a line end — shorten the sentence so the chain starts a line.
+- The review screenshots in content/fi-easy/FY7/fy7-15/review/shots/ show an earlier ordering of the tasks, so the L3 captures do not all show the new tasks; text and maths were checked from the source instead.
 
 ## Checked
-- open-exercises-1280-2 (L1 exercises 1-2), L3-2 and L3-4 (Brewster under water, background-light exercise); open-tarkista-1280-2.
-- Task texts split into situation and question; solutions in the fixed order; decimal comma consistent; units upright; 3 significant figures consistent; answer box and unit labels clear.
-- check_layout at 340 px OK.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+- Captures opened: open-exercises-1280-7 (L1-07 with solution) and L2/L3 captures (L2-06, L2-07 and L3 reasonableness): formulas, units (W/m2 upright), decimal comma and substitution chains render cleanly; nothing clipped.
+- Data tables of L2-05, L2-06 and L3-04 have the same cells as fi; headers carry the quantities and units; captions say example data.
+- No Finnish visible in the English page; no plain-text quantities in either language.

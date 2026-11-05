@@ -39,6 +39,58 @@
       "answer": 0.2,
       "unit": "m/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-10-L1-06",
+      "level": 1,
+      "text": "Two air-track carts collide and stick together. External forces are negligible during the collision. Which statement about this perfectly inelastic collision is correct?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Momentum is conserved, but kinetic energy decreases, because some of it changes into internal energy.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Kinetic energy is conserved, but the total momentum decreases, because the carts slow down in the collision.",
+          "feedback": "Momentum is conserved when the impulse of the external forces is negligibly small. Kinetic energy is the quantity that decreases in a perfectly inelastic collision."
+        },
+        {
+          "text": "Both momentum and kinetic energy decrease, because the objects stick together.",
+          "feedback": "Sticking together does not remove momentum: the common momentum of the carts is the same as before the collision. Only kinetic energy decreases."
+        },
+        {
+          "text": "Momentum is conserved, but kinetic energy decreases, because some of it changes into internal energy.",
+          "feedback": "Correct: internal forces do not change the total momentum, so it is conserved. Some of the kinetic energy changes into internal energy and sound in the deformations.",
+          "correct": true
+        },
+        {
+          "text": "The total momentum is conserved and kinetic energy increases, because the combined mass of the carts is greater.",
+          "feedback": "Kinetic energy cannot increase without a source of energy. The common velocity becomes smaller so that $\\tfrac12 mv^2$ after the collision is smaller than before."
+        }
+      ]
+    },
+    {
+      "id": "fy4-10-L1-07",
+      "level": 1,
+      "text": "A skater of mass $35\\,\\text{kg}$ stands at rest on ice and throws a $2.0\\,\\text{kg}$ ball horizontally at $6.0\\,\\text{m/s}$ relative to the ice. Friction is neglected for the duration of the throw. At what velocity does the skater glide after the throw? Give the magnitude of the velocity.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 0.342857,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-10-L1-08",
+      "level": 1,
+      "text": "In billiards a $0.17\\,\\text{kg}$ cue ball moves at $1.8\\,\\text{m/s}$ and hits an identical ball at rest head-on. The collision is elastic and friction is neglected. What is the velocity of the ball that was hit after the collision?",
+      "kind": [
+        "concept"
+      ],
+      "answer": 1.8,
+      "unit": "m/s",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,6 +125,104 @@
       "answer": 15000.0,
       "unit": "kg",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-10-L2-05",
+      "level": 2,
+      "text": "On an air track cart A ($m_\\text{A} = 0.50\\,\\text{kg}$) moves to the right and collides with cart B ($m_\\text{B} = 0.30\\,\\text{kg}$) at rest. The collision was carried out in three different ways, and the velocities were measured with video analysis. Right is the positive direction, friction is neglected and the data is example data.\n\na) Calculate the total momentum before and after in each experiment. Is momentum conserved within the measurement accuracy?\n\nb) Calculate the kinetic energy before and after in experiments 1 and 2 and classify the collisions as elastic, perfectly inelastic or partially elastic.\n\nc) Calculate the fraction of the original kinetic energy that remains in experiment 3 and classify the collision.\n\nThe answer box takes the fraction of part c) as a percentage.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 73.4,
+      "unit": "%",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Velocities of the carts on both sides of the collision (example data)",
+        "columns": [
+          "Experiment",
+          "$v_\\text{A}\\,(\\text{m/s})$",
+          "$v_\\text{B}\\,(\\text{m/s})$",
+          "$v_\\text{A}'\\,(\\text{m/s})$",
+          "$v_\\text{B}'\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "0.60",
+            "0.00",
+            "0.16",
+            "0.74"
+          ],
+          [
+            "2",
+            "0.60",
+            "0.00",
+            "0.37",
+            "0.37"
+          ],
+          [
+            "3",
+            "0.60",
+            "0.00",
+            "0.25",
+            "0.58"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-10-L2-06",
+      "level": 2,
+      "text": "On an air track cart A ($0.40\\,\\text{kg}$) moves to the right and collides with cart B ($0.60\\,\\text{kg}$) at rest. The positions $x$ of the carts were measured with video analysis (example data). The collision takes place at about $2.0\\,\\text{s}$, and the carts move at constant velocity before and after it. Friction is neglected.\n\na) Determine the velocities of the carts before and after the collision from the table.\n\nb) Is the total momentum conserved within the measurement accuracy?\n\nc) What percentage of the original kinetic energy remains after the collision?\n\nThe answer box takes the result of part c).",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 46.7,
+      "unit": "%",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Positions of the carts (example data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$x_\\text{A}\\,(\\text{m})$",
+          "$x_\\text{B}\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.00",
+            "1.00"
+          ],
+          [
+            "1.0",
+            "0.51",
+            "1.00"
+          ],
+          [
+            "3.0",
+            "1.10",
+            "1.27"
+          ],
+          [
+            "4.0",
+            "1.21",
+            "1.54"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-10-L2-07",
+      "level": 2,
+      "text": "A student solves a problem: on an air track a $0.60\\,\\text{kg}$ cart moves to the right at $0.80\\,\\text{m/s}$ and a $0.20\\,\\text{kg}$ cart to the left at $0.40\\,\\text{m/s}$. The carts collide and stick together. Friction is neglected.\n\nThe student's solution: $v' = \\dfrac{0.60 \\cdot 0.80 + 0.20 \\cdot 0.40}{0.60 + 0.20}\\,\\text{m/s} = 0.70\\,\\text{m/s}$.\n\nWhat is the error in the solution? Calculate the correct common velocity with its sign, when right is the positive direction.\n\nThe answer box takes the correct common velocity.",
+      "kind": [
+        "error"
+      ],
+      "answer": 0.5,
+      "unit": "m/s",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -99,6 +249,59 @@
       "answer": 120.0,
       "unit": "s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-10-L3-04",
+      "level": 3,
+      "text": "Investigators are studying an accident in which car A hit a parked car B, at rest, from behind on a straight horizontal road. Example situation: the mass of A is $1100\\,\\text{kg}$ and the mass of B is $1400\\,\\text{kg}$. The cars stuck together and slid on together $8.0\\,\\text{m}$ to a stop, according to the skid marks. All the wheels were locked, and the coefficient of sliding friction of dry asphalt is $\\mu = 0.60$.\n\nAssume that friction and air resistance can be neglected during the collision itself and that during the sliding only a constant sliding friction acts on the cars.\n\na) Calculate the common velocity of the cars immediately after the collision using the work–energy principle.\n\nb) Calculate the velocity of car A before the collision.\n\nc) The driver of car A claims to have been driving at the speed limit of $50\\,\\text{km/h}$. Is the claim consistent with the result? How does the uncertainty of the friction coefficient $\\mu = 0.50 \\dots 0.70$ affect the conclusion?\n\nThe answer box takes the result of part b) in $\\text{km/h}$.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 79.4,
+      "unit": "km/h",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-10-L3-05",
+      "level": 3,
+      "text": "Students study the effect of friction on a collision. Cart A ($0.40\\,\\text{kg}$) slides on a level table and hits cart B ($0.20\\,\\text{kg}$) at rest, to which it attaches with a strip of hook-and-loop tape. A light gate measured the velocity of cart A just before the collision as $1.50\\,\\text{m/s}$. The velocity $v$ of the pair of carts sliding together was measured with video analysis (table, example data), and the time $t$ is counted from the moment of the collision.\n\nUsing the first measurement point, a student calculated the total momentum after the collision and concluded that momentum is not conserved. Assume that friction is a constant force caused by the table and that its impulse is negligibly small during the collision itself.\n\na) Determine the magnitude of the deceleration of the pair of carts from the table.\n\nb) Calculate the friction force that slows the pair of carts.\n\nc) Deduce from the table the velocity of the pair of carts immediately after the collision and check the conservation of momentum. What was wrong in the student's reasoning?\n\nThe answer box takes the friction force of part b).",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 1.175,
+      "unit": "N",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Velocity of the carts sliding together (example data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$v\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "0.06",
+            "0.88"
+          ],
+          [
+            "0.12",
+            "0.77"
+          ],
+          [
+            "0.18",
+            "0.65"
+          ],
+          [
+            "0.24",
+            "0.52"
+          ],
+          [
+            "0.30",
+            "0.41"
+          ]
+        ]
+      }
     }
   ]
 }

@@ -39,6 +39,52 @@
       "answer": 1.6,
       "unit": "10⁻¹³ N",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-2-L1-06",
+      "level": 1,
+      "text": "A proton flies in a vacuum perpendicular to a uniform magnetic field. What happens to the kinetic energy of the proton as it travels in the field?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The kinetic energy stays the same, because the magnetic force is perpendicular to the velocity and does no work.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The kinetic energy increases, because the magnetic force pulls the proton in the direction of the field and so does work.",
+          "feedback": "This is a common misconception. The magnetic force does not pull the particle in the direction of the field like a magnet pulling an iron nail; it is perpendicular to both the field and the velocity. Only an electric field can increase the speed."
+        },
+        {
+          "text": "The kinetic energy decreases, because the magnetic force points opposite to the velocity and brakes the proton.",
+          "feedback": "A braking force would be in the direction of the velocity, but the magnetic force is always perpendicular to the velocity. So it cannot slow the particle down; it bends the path into a circle."
+        },
+        {
+          "text": "The kinetic energy stays the same, because the magnetic force is perpendicular to the velocity and does no work.",
+          "feedback": "Correct: a force that is perpendicular to the direction of motion all the time does no work. The magnetic force only turns the direction of the velocity and acts as the centripetal force of the circular path, so the speed and the kinetic energy do not change.",
+          "correct": true
+        },
+        {
+          "text": "The kinetic energy increases if the field is strong enough, because a large force then does work.",
+          "feedback": "What matters is not the magnitude of the force but its direction. However strong the field is, a perpendicular force does no work. A strong field only bends the path into a smaller circle, $r = mv : (qB)$."
+        }
+      ]
+    },
+    {
+      "id": "fy7-2-L1-07",
+      "level": 1,
+      "text": "In an electron-beam tube, electrons of mass $9.109 \\cdot 10^{-31}\\,\\text{kg}$ and charge $1.602 \\cdot 10^{-19}\\,\\text{C}$ fly at a speed of $3.0 \\cdot 10^{6}\\,\\text{m/s}$ perpendicular to a uniform magnetic field. The electrons are to go round a circular path whose radius is $4.0\\,\\text{cm}$. What magnetic flux density is needed? Give the answer in millitesla.",
+      "answer": 0.43,
+      "unit": "mT",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-2-L1-08",
+      "level": 1,
+      "text": "An electron of mass $9.109 \\cdot 10^{-31}\\,\\text{kg}$ and charge $1.602 \\cdot 10^{-19}\\,\\text{C}$ flies at a speed of $5.0 \\cdot 10^{6}\\,\\text{m/s}$ perpendicular to a uniform magnetic field. The magnetic flux density is $0.020\\,\\text{T}$. How long does it take the electron to go once round the full circle? Give the answer in nanoseconds.",
+      "answer": 1.8,
+      "unit": "ns",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,6 +119,111 @@
       "answer": 2.0,
       "unit": "mm/s",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy7-2-L2-05",
+      "level": 2,
+      "text": "In a vacuum chamber there is a uniform magnetic field whose magnetic flux density is $0.050\\,\\text{T}$ and which points into the page. Three ions enter the chamber from left to right at the same speed $2.0 \\cdot 10^{5}\\,\\text{m/s}$, and the magnitude of the charge of each is $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$. A position-sensitive detector records the direction in which each path curves in the plane of the page and the radius of the circular path; the results are in the table (an example data set). The mass of a proton is $1.673 \\cdot 10^{-27}\\,\\text{kg}$.\n\na) Deduce whether the charge of each ion is positive or negative.\n\nb) Calculate the ratio $m : q$ of the ion on path 1 and compare it with the value of the proton. What ion can it be?\n\nc) How many times as great is the ratio $m : q$ of the ion on path 3 as that of the ion on path 1? Read the radii from the table.\n\nGive in the answer field the ratio $m : q$ of part b) in the form $\\ldots \\cdot 10^{-8}\\,\\text{kg/C}$.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 1.0,
+      "unit": "10⁻⁸ kg/C",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Paths of the ions in a vacuum chamber",
+        "columns": [
+          "Path",
+          "Curves",
+          "$r\\,(\\text{cm})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "up",
+            "4.1"
+          ],
+          [
+            "2",
+            "down",
+            "4.2"
+          ],
+          [
+            "3",
+            "up",
+            "8.4"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-2-L2-06",
+      "level": 2,
+      "text": "Ions of an ion beam resembling magnesium hit the detector of a mass spectrometer at three points A, B and C (an example data set). All the ions have the same charge $e$, they have passed through a velocity selector at the same speed and they travel a semicircle in the same magnetic field, so the distance of the point of impact from the slit is the diameter of the path, $d = 2r$. The mass of the ion at point A is known, $24.0\\,\\text{u}$. The table gives the distance of each point of impact from the slit and the number of hits $N$ collected at the detector, which is proportional to the share of the isotope in the ion source.\n\na) Deduce the masses of the ions at points of impact B and C in atomic mass units.\n\nb) Calculate what percentage of the ions hit point A.\n\nGive in the answer field the result of part b) as a percentage.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 78.9,
+      "unit": "%",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Points of impact on the detector",
+        "columns": [
+          "Point",
+          "$d\\,(\\text{cm})$",
+          "$N$"
+        ],
+        "rows": [
+          [
+            "A",
+            "19.2",
+            "7890"
+          ],
+          [
+            "B",
+            "20.1",
+            "1000"
+          ],
+          [
+            "C",
+            "20.7",
+            "1110"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-2-L2-07",
+      "level": 2,
+      "text": "A student claims: “A particle going round a circular path in a magnetic field completes a revolution faster when its speed increases, because the circumference is travelled faster.” What is the error in the student’s reasoning?",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "answer": "The radius grows in the same proportion as the speed, so the circumference gets longer by the same factor and the period stays the same.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The magnetic force accelerates the particle all the time, so the speed grows by itself and the period gets shorter.",
+          "feedback": "The magnetic force is perpendicular to the velocity, so it does no work and does not accelerate the particle. The speed stays constant in the field, and the period does not get shorter, because the path grows with the speed."
+        },
+        {
+          "text": "The radius decreases as the speed increases, because a greater force bends the path more tightly and the circumference gets shorter.",
+          "feedback": "The force $qvB$ does grow with the speed, but circular motion would require a centripetal force $mv^2 : r$, which grows as the square of the speed. That is why a faster particle curves more gently: the radius $r = mv : (qB)$ grows with the speed."
+        },
+        {
+          "text": "The radius grows faster than the speed, so the circumference gets longer by more and a revolution takes more time.",
+          "feedback": "The radius is directly proportional to the speed, $r \\propto v$, not steeper. Double the speed gives exactly double the radius and circumference, so the longer path exactly cancels the greater speed."
+        },
+        {
+          "text": "The radius grows in the same proportion as the speed, so the circumference gets longer by the same factor and the period stays the same.",
+          "feedback": "Correct: $r = mv : (qB)$, so double the speed gives double the radius and double the circumference. Double the distance is travelled at double the speed in the same time, and the period $T = 2\\pi m : (qB)$ does not depend on the speed.",
+          "correct": true
+        }
+      ]
     }
   ],
   "level3": [
@@ -97,8 +248,61 @@
       "level": 3,
       "text": "A proton and an alpha particle are accelerated from rest by the same voltage, and after that they fly perpendicular to the same magnetic field. The mass of the proton is $1.673 \\cdot 10^{-27}\\,\\text{kg}$ and its charge $e$, the mass of the alpha particle $6.645 \\cdot 10^{-27}\\,\\text{kg}$ and its charge $2e$. How many times as large is the radius of the path of the alpha particle as that of the proton?",
       "answer": 1.41,
-      "unit": "kertaa",
+      "unit": "times",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-2-L3-04",
+      "level": 3,
+      "text": "In a mass spectrometer, singly positively charged ions ($q = e = 1.602 \\cdot 10^{-19}\\,\\text{C}$) are accelerated from rest by a voltage $U$. After that they travel a semicircle perpendicular to a uniform magnetic field whose magnetic flux density is $0.200\\,\\text{T}$. The ion source contains one element, which is lithium-7, sodium-23 or potassium-39. The radius $r$ of the path of the ions was measured at different accelerating voltages (an example data set). The atomic mass unit is $1\\,\\text{u} = 1.661 \\cdot 10^{-27}\\,\\text{kg}$.\n\na) Derive an equation that tells how the square of the radius $r^2$ depends on the voltage $U$.\n\nb) Draw from the measured points a graph with $U$ on the horizontal axis and $r^2$ on the vertical axis, and fit a straight line to the points (a line fitted by hand is enough). Determine from its slope the mass of the ion in atomic mass units.\n\nc) Deduce which ion it is, and justify why the line must pass through the origin.\n\nGive in the answer field the mass of the ion from part b) in the unit u.",
+      "kind": [
+        "data",
+        "graph",
+        "model"
+      ],
+      "answer": 22.8,
+      "unit": "u",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Radius of the path as a function of the accelerating voltage",
+        "columns": [
+          "$U\\,(\\text{V})$",
+          "$r\\,(\\text{cm})$"
+        ],
+        "rows": [
+          [
+            "200",
+            "4.9"
+          ],
+          [
+            "400",
+            "6.8"
+          ],
+          [
+            "600",
+            "8.5"
+          ],
+          [
+            "800",
+            "9.8"
+          ],
+          [
+            "1000",
+            "10.8"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-2-L3-05",
+      "level": 3,
+      "text": "In an example cyclotron, protons go round in a uniform magnetic field whose magnetic flux density is $1.00\\,\\text{T}$. The protons start from the centre practically at rest, and at each crossing of the gap between the D-electrodes a voltage of $60\\,\\text{kV}$ accelerates them. A proton crosses the gap twice per revolution. At the moment of extraction the protons go round a circular path whose radius is $0.20\\,\\text{m}$. The mass of a proton is $1.673 \\cdot 10^{-27}\\,\\text{kg}$, its charge $1.602 \\cdot 10^{-19}\\,\\text{C}$ and the speed of light $3.00 \\cdot 10^{8}\\,\\text{m/s}$.\n\na) Calculate the speed and the kinetic energy of the proton at the moment of extraction.\n\nb) How many times has the proton crossed the gap and how many revolutions has it gone round? How long does the acceleration take?\n\nc) Calculate the ratio of the speed to the speed of light and assess whether a classical treatment is justified here.\n\nGive in the answer field the acceleration time of part b) in microseconds.",
+      "kind": [
+        "model"
+      ],
+      "answer": 1.05,
+      "unit": "µs",
+      "tolerance": 0.03
     }
   ]
 }

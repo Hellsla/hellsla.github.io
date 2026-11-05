@@ -118,3 +118,77 @@
 **Substitution:** $\Phi = \dfrac{0.90\,\text{V} \cdot 0.040\,\text{s}}{2 \cdot 300} = \dfrac{0.036\,\text{V}\cdot\text{s}}{600} = 6.0 \cdot 10^{-5}\,\text{Wb} = 0.060\,\text{mWb}$
 **Answer:** $0.060\,\text{mWb}$, two significant figures like the peak value $0.90\,\text{V}$ and the duration $40\,\text{ms}$.
 **Reasonableness:** If the cross-sectional area of the coil is about $2\,\text{cm}^2 = 2 \cdot 10^{-4}\,\text{m}^2$, the average field through a turn is $6.0 \cdot 10^{-5}\,\text{Wb} : 2 \cdot 10^{-4}\,\text{m}^2 = 0.3\,\text{T}$, which suits a small strong magnet. When the magnet leaves the coil, a pulse of opposite sign appears, with an equal area.
+
+## fy7-5-L1-06
+**Find:** why no induced voltage appears between a magnet at rest and a coil even though the flux is large
+**Principle:** According to the law of induction, the voltage appearing in the coil is $e = -N\dfrac{\Delta\Phi}{\Delta t}$, that is, it depends on the rate of change of the flux and not on the size of the flux. When the magnet is at rest relative to the coil, the flux stays constant, so $\Delta\Phi = 0$.
+**Model answer:** The flux through the coil is large, but it does not change, because the magnet and the coil are at rest relative to each other. A voltage appears only when the flux changes, so the voltmeter reads zero. When the magnet is moved, the flux changes and the meter shows a voltage, the greater the faster the flux changes. The field does not prevent a voltage from appearing, and a current is not a precondition for the voltage: the current is a consequence of the voltage in a closed circuit.
+
+## fy7-5-L1-07
+**Given:** number of turns of the first coil $N_1 = 120$ and voltage $e_1 = 0.90\,\text{V}$; number of turns of the second coil $N_2 = 300$; the coils are otherwise similar and the magnet moves in the same way
+**Find:** induced voltage $e_2$ of the second coil in volts
+**Principle:** The coils have the same area and the magnet moves in the same way, so the rate of change of the flux through one turn, $\Delta\Phi : \Delta t$, is the same in both. The turns are in series, so the voltage is directly proportional to the number of turns.
+**Formula:** $e_1 = N_1\dfrac{\Delta\Phi}{\Delta t}$ and $e_2 = N_2\dfrac{\Delta\Phi}{\Delta t}$, so $e_2 = \dfrac{N_2}{N_1}\,e_1$
+**Conversions:** Not needed: the numbers of turns are plain numbers, and the voltage is in volts.
+**Substitution:** $e_2 = \dfrac{300}{120} \cdot 0.90\,\text{V} = 2.5 \cdot 0.90\,\text{V} = 2.25\,\text{V} \approx 2.3\,\text{V}$
+**Answer:** $2.3\,\text{V}$, two significant figures like the voltage $0.90\,\text{V}$.
+**Reasonableness:** There are more than twice as many turns, so the voltage is more than double: $2 \cdot 0.90\,\text{V} = 1.8\,\text{V}$ is smaller and $3 \cdot 0.90\,\text{V} = 2.7\,\text{V}$ greater than the answer. The voltage of one turn is the same in both, $0.90\,\text{V} : 120 = 7.5\,\text{mV}$.
+
+## fy7-5-L1-08
+**Given:** length of the rod $l = 0.50\,\text{m}$, speed $v = 0.60\,\text{m/s}$, induced voltage $e = 18\,\text{mV}$; the rod, the velocity and the field are mutually perpendicular
+**Find:** magnetic flux density $B$ in teslas
+**Principle:** A magnetic force acts on the electrons of the moving rod, and a voltage $e = vBl$ appears between the ends of the rod. The voltage is directly proportional to the magnetic flux density, so $B$ can be solved from the measured voltage.
+**Formula:** $e = vBl$, so $B = \dfrac{e}{vl}$
+**Conversions:** $e = 18\,\text{mV} = 18 \cdot 0.001\,\text{V} = 0.018\,\text{V}$
+**Substitution:** $B = \dfrac{0.018\,\text{V}}{0.60\,\text{m/s} \cdot 0.50\,\text{m}} = \dfrac{0.018\,\text{V}}{0.30\,\text{m}^2/\text{s}} = 0.060\,\text{T}$
+**Answer:** $0.060\,\text{T}$, two significant figures like the given values.
+**Reasonableness:** Check: $0.60\,\text{m/s} \cdot 0.060\,\text{T} \cdot 0.50\,\text{m} = 0.018\,\text{V}$. The field is more than a thousand times stronger than the Earth's magnetic field but clearly weaker than the field of a strong electromagnet, which suits the vicinity of a permanent magnet.
+
+## fy7-5-L2-05
+**Given:** number of turns $N = 120$; from the table the flux $\Phi$ through one turn as a function of time $t$, interval $0.10\,\text{s}$ (sample data)
+**Find:** greatest absolute value of the induced voltage $|e|$ in volts
+**Principle:** According to the law of induction, the voltage is proportional to the rate of change of the flux $\Delta\Phi : \Delta t$, so the voltage is greatest where the flux changes fastest. The flux changes roughly steadily during each interval, so the voltage is roughly constant in each interval.
+**Reading the graph:** From the flux values of the table the change in flux $\Delta\Phi$ is calculated for each $0.10\,\text{s}$ interval. In the rising phase ($0$–$0.30\,\text{s}$) the changes are $0.98$, $1.05$ and $0.97\,\text{mWb}$, the greatest being $1.05\,\text{mWb}$ in the interval $0.10$–$0.20\,\text{s}$. In the interval $0.30$–$0.40\,\text{s}$ the flux hardly changes ($0.01\,\text{mWb}$). In the falling phase the changes are $\Delta\Phi = 1.21\,\text{mWb}$ in the interval $0.40$–$0.50\,\text{s}$ and $1.20\,\text{mWb}$ in the interval $0.50$–$0.60\,\text{s}$. The steepest single interval is therefore $0.40$–$0.50\,\text{s}$, in which $\Delta\Phi = 1.21\,\text{mWb}$ and $\Delta t = 0.10\,\text{s}$.
+**Formula:** $|e| = N\dfrac{\Delta\Phi}{\Delta t}$
+**Conversions:** $\Delta\Phi = 1.21\,\text{mWb} = 1.21 \cdot 10^{-3}\,\text{Wb}$
+**Substitution:** $|e| = 120 \cdot \dfrac{1.21 \cdot 10^{-3}\,\text{Wb}}{0.10\,\text{s}} = 120 \cdot 0.0121\,\text{V} = 1.452\,\text{V} \approx 1.45\,\text{V}$
+**Answer:** $1.45\,\text{V}$, three significant figures like the flux values of the table. The average over the whole falling phase $0.40$–$0.60\,\text{s}$ gives roughly the same result, $1.45\,\text{V}$.
+**Reasonableness:** In the rising phase the flux changes by about $0.010\,\tfrac{\text{Wb}}{\text{s}}$, so the voltage is $120 \cdot 0.010\,\text{V} = 1.2\,\text{V}$, smaller than in the falling phase. The greatest voltage is where the flux changes fastest, not where the flux is greatest.
+
+## fy7-5-L2-06
+**Given:** length of the rod in the field $l = 0.20\,\text{m}$; from the table the voltage $e$ as a function of speed $v$ (sample data), the rod and the velocity perpendicular to the field
+**Find:** magnetic flux density $B$ in teslas
+**Principle:** The voltage of the moving rod is $e = vBl$. When $B$ and $l$ stay the same, $e$ is directly proportional to the speed $v$, so the $(v, e)$ points lie on a straight line through the origin whose slope is $Bl$. The points deviate slightly from the line because of measurement errors.
+**Reading the graph:** The fitted line passes from the origin between the points (for example through the point $(0.60\,\text{m/s};\ 18\,\text{mV})$ and the origin). The slope of the line is $k = \Delta e : \Delta v = 18\,\text{mV} : 0.60\,\text{m/s} = 30\,\tfrac{\text{mV}}{\text{m/s}}$. The quotients $e : v$ of all the points are between $29$ and $31\,\tfrac{\text{mV}}{\text{m/s}}$, so the line describes the data well.
+**Formula:** $k = Bl$, so $B = \dfrac{k}{l}$
+**Conversions:** $k = 30\,\tfrac{\text{mV}}{\text{m/s}} = 30 \cdot 0.001\,\tfrac{\text{V}}{\text{m/s}} = 0.030\,\tfrac{\text{V}}{\text{m/s}}$
+**Substitution:** $B = \dfrac{0.030\,\text{V}\cdot\text{s/m}}{0.20\,\text{m}} = 0.15\,\text{T}$
+**Answer:** $0.15\,\text{T}$, two significant figures like the length $0.20\,\text{m}$ and the slope.
+**Reasonableness:** Check: $0.40\,\text{m/s} \cdot 0.15\,\text{T} \cdot 0.20\,\text{m} = 12\,\text{mV}$, which matches the value $11.9\,\text{mV}$ of the table. A calculation based on a single point would be less certain than fitting a line, because the error of a single point would affect the result directly.
+
+## fy7-5-L2-07
+**Find:** what is wrong in the student's calculation
+**Principle:** The formula $e = vBl$ is derived for a situation in which the velocity, the rod and the field are mutually perpendicular: the magnetic force shifts the electrons moving with the rod along the rod, and a voltage appears between the ends. In the student's problem the rod moves in the direction of the field, so this condition is not met.
+**Model answer:** When the rod moves in the direction of the field, the velocity of the electrons is parallel to the field, so the magnetic force is zero. The electrons do not shift to the end of the rod, no charge collects at the ends, and no voltage appears between the ends of the rod. The student's result $0.30\,\text{V}$ is wrong; the correct voltage is zero. The same result follows from the flux: the rod does not sweep any new area through the field lines, so the flux does not change. The formula $e = vBl$ may be used only when the three directions are perpendicular to each other.
+
+## fy7-5-L3-04
+**Given:** length of the rod $l = 0.40\,\text{m}$, magnetic flux density $B = 0.25\,\text{T}$, start from rest, steady acceleration; from the table $e(t)$ at six measurement points (sample data), among others $e = 198\,\text{mV}$ at the moment $t = 1.2\,\text{s}$
+**Find:** a) acceleration $a$ of the cart ($\text{m/s}^2$) and the justification for the growth of the voltage; b) distance $s$ travelled by the cart in $1.2\,\text{s}$
+**Principle:** The rod, the velocity and the field are perpendicular, so the voltage between the ends of the rod is $e = vBl$. The cart accelerates steadily from rest, so $v = at$. It follows that $e = aBl \cdot t$: the voltage is directly proportional to time, and the slope of the line through the $(t, e)$ points is $k = aBl$.
+**Reading the graph:** The quotients $e : t$ are $0.160$, $0.163$, $0.163$, $0.166$, $0.163$ and $0.165\,\tfrac{\text{V}}{\text{s}}$, so the voltage really grows in direct proportion to time. The slope of the line fitted through the origin is $k = 0.164\,\tfrac{\text{V}}{\text{s}}$ (least-squares fit), and it suits all the quotients $0.160$–$0.166\,\tfrac{\text{V}}{\text{s}}$.
+**Formula:** a) $k = aBl$, so $a = \dfrac{k}{Bl}$. b) The distance in uniformly accelerated motion from rest is $s = \tfrac{1}{2}at^2$.
+**Conversions:** $1\,\text{mV} = 0.001\,\text{V}$, so $k$ is in SI units.
+**Substitution:** a) $a = \dfrac{0.164\,\text{V/s}}{0.25\,\text{T} \cdot 0.40\,\text{m}} = \dfrac{0.164\,\text{V/s}}{0.100\,\text{T}\cdot\text{m}} = 1.64\,\text{m/s}^2$. b) $s = \tfrac{1}{2} \cdot 1.64\,\text{m/s}^2 \cdot (1.2\,\text{s})^2 = 1.18\,\text{m}$
+**Answer:** a) $a = 1.6\,\text{m/s}^2$, two significant figures like the field and the length. b) $s \approx 1.2\,\text{m}$.
+**Reasonableness:** At the moment $1.2\,\text{s}$ the speed of the cart is $v = 1.64\,\text{m/s}^2 \cdot 1.2\,\text{s} = 1.97\,\text{m/s}$. Then $e = 1.97\,\text{m/s} \cdot 0.25\,\text{T} \cdot 0.40\,\text{m} = 0.197\,\text{V}$, which matches the measured $198\,\text{mV}$.
+
+## fy7-5-L3-05
+**Given:** number of turns $N = 250$; from the table $e(t)$ at the moments $0$–$48\,\text{ms}$ at intervals of $4\,\text{ms}$ (sample data); before the drop and after it the flux is zero; the voltage is zero at about the moment $24\,\text{ms}$, when the magnet is in the middle of the coil
+**Find:** a) the greatest magnetic flux $\Phi$ through one turn in milliwebers; b) the same from the second pulse and an explanation of the differences between the pulses
+**Principle:** It follows from the law of induction that the product $e\,\Delta t$ over a short interval is $-N\Delta\Phi$. When these products are added up over the whole pulse, the sum is the area between the voltage graph $(t, e)$ and the time axis, and it is $N$ times the total change in flux. During the first pulse the flux grows from zero to its greatest value, and at the end of the pulse the voltage is zero, because the flux no longer changes.
+**Reading the graph:** The area is estimated with the trapezoid rule: the area of each $4\,\text{ms}$ interval is the average of the voltages at the ends of the interval times $0.004\,\text{s}$. The voltages of the first pulse are $-0.02$, $0.09$, $0.63$, $1.77$, $1.77$, $0.60$ and $0.03\,\text{V}$. The sum gives the absolute value of the area $|A_\text{a}| = 0.004\,\text{s} \cdot (\tfrac{1}{2}(-0.02) + 0.09 + 0.63 + 1.77 + 1.77 + 0.60 + \tfrac{1}{2}\cdot 0.03)\,\text{V} = 0.004\,\text{s} \cdot 4.865\,\text{V} = 0.01946\,\text{V}\cdot\text{s}$.
+**Formula:** $|A_\text{a}| = N\Phi$, so $\Phi = \dfrac{|A_\text{a}|}{N}$
+**Conversions:** $1\,\text{ms} = 0.001\,\text{s}$; the answer is converted to milliwebers: $1\,\text{Wb} = 1000\,\text{mWb}$; $\text{V}\cdot\text{s} = \text{Wb}$.
+**Substitution:** a) $\Phi = \dfrac{0.01946\,\text{V}\cdot\text{s}}{250} = 7.78 \cdot 10^{-5}\,\text{Wb} = 0.0778\,\text{mWb}$. b) Calculated in the same way, the area of the second pulse ($24$–$48\,\text{ms}$) is $-0.01968\,\text{V}\cdot\text{s}$, so $\Phi = 0.01968\,\text{V}\cdot\text{s} : 250 = 0.0787\,\text{mWb}$.
+**Answer:** a) $\Phi \approx 0.078\,\text{mWb}$, two significant figures, because the voltages are given to two decimal places and the area is an estimate. b) The second pulse gives $0.079\,\text{mWb}$, the same flux. In the first pulse the flux grows and in the second it decreases back to zero, so the signs of the voltages are opposite, and the total change in flux is equally large in both pulses, so the areas are equal in absolute value. The magnet accelerates as it falls, so the same change in flux takes place in a shorter time in the second pulse: the pulse is narrower and taller.
+**Reasonableness:** The areas of the pulses differ by about $1\,\%$, so the data are internally consistent. The triangle approximation $\tfrac{1}{2} \cdot 1.8\,\text{V} \cdot 0.020\,\text{s} = 0.018\,\text{V}\cdot\text{s}$ gives the same order of magnitude.

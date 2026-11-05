@@ -1,18 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: c63d60a9030d2421
+CONTENT-HASH: 84c105908df6ddd4
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
+## Fixed
+(none)
+
 ## Polish
-- [Minor] fy7-5-L3-01, Periaate — "Vaakakomponentti joko on nopeuden suuntainen tai antaa pystysuoran voiman. Siksi jännitteen antaa e = vB_v l." reads clumsily and is unclear for a student. Suggested: "Vaakakomponentti on joko nopeuden suuntainen tai antaa vain pystysuoran voiman, joka ei siirrä elektroneja akselin päihin. Siksi jännite on e = vB_v l."
-- [Minor] fy7-5-L3-01 task text — "WMM2025–malli" uses an en dash in a compound; use a hyphen: "WMM2025-malli".
-- [Minor] fy7-5-L2-02 task graph (flux-task) — tick numerals are large and serif next to the surrounding text; legible, with units and the 0,1 s / 1 mWb grid given. The picture and its description carry the same information. Consider smaller tick type.
+(none)
 
 ## Checked
-- open-exercises 1280 L1 parts 1, 3, 5; L2 parts 1, 2, 3, 4; L3 parts 1, 3, 5
-- Solution layout (Annettu to Järkevyys), substitution chains, units upright with a thin space, decimal comma, "kaksi merkitsevää numeroa" lines
-- The graph task figure and its answer reading
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+- Opened the exercise captures of the new tasks (fi-easy): tables (sample data, six or thirteen rows) render with caption, headers and units; sub-questions a) and b) separate cleanly.
+- Answer box shows the right unit (V, T, m/s2, mWb); solution blocks with formulas, fractions and the reasonableness box render without overflow at 1280 and phone width.
+- No Finnish in the en captures; no raw LaTeX or broken markup in text, tables or solutions.
+- Decimal separator consistent with the language (point in en, comma in fi-easy text and maths).

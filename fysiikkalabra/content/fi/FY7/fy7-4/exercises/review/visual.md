@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: a3578858afaf37ff
+CONTENT-HASH: 2410c9996b853823
+Round: 2
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] L3-02 — the question still opens "Kuinka suuri voima", yet the expected answer is the signed value −270 N; the added sign rule is clear, but "Mikä on voiman etumerkillinen arvo" would match it — optional.
-- [Minor] L1-04 / L3-03 — "(WMM2025-malli, NOAA/BGS)" is a bare source tag in the task; fine, but a consistent form (both with the tag, as now) should be kept in the solutions' Annettu line too.
+- [Minor] L3-05 Sijoitus — the radicand is now dimensionless with "A" after the root (the numerator unit N·m and the denominator unit Vs/A are given on the lines above); acceptable, but a short note "yksikkö $\sqrt{\text{N}\cdot\text{m} : (\text{Vs/A})} = \text{A}$" would let the pupil follow the units.
+- [Minor] L2-05, L2-07, L3-04 tables — long captions with "(esimerkkiaineisto)" make 2 tables scroll at 360 px (check_layout notes "2 wide table, scrolls", status OK); shorten the captions if wanted (carried over, now only a note).
 
 ## Checked
-- open-exercises-L2-1280-2 (L2-02, balance-points graph): the fitted line now stops at 5 A as solid and continues dashed to 6 A; markers are distinct from the line, scatter about the line visible, axis titles with units, ticks and gridlines legible; the previous Minor is resolved. Solution "Kuvaajan lukeminen" reads clearly and matches the picture (1,47 g slightly below the line)
-- open-exercises-L2-1280-3 (L2-02 solution maths: aligned rows, fractions, units)
-- open-exercises-L3-1280-2 and -3 (L3-02 sign rule in task, Kysytty and Vastaus "−270 N" with the rule explained; L3-03 new values 53 µT, 74°, 1,8 kA, Sijoitus chain in rows, nothing clipped)
-- open-exercises-1280-2 and -3 (L1-02 unchanged layout; L1-03 "Virtavaaka" wording in task and Periaate)
-- L1-04 changed text read from the diff (53 µT, 74°, 1,0189 N chain, new Järkevyys sentence): units and angles in LaTeX, consistent significant figures
+- Round 1 Blocking (L3-05 Sijoitus overflow at 360 px) is resolved: the chain is split into Nimittäjä, Osoittaja and a short root chain; `check_layout.py fy7-4 --width 360` is OK for fi, en and fi-easy. Capture L3-1280-7/8 shows no clipping or red source.
+- Round 1 Polish: L1-08 Periaate now "kulman siniin $\sin\alpha$ eikä itse kulmaan $\alpha$" (resolved); L2-06 pupil's calculation is in ”…” (resolved); L2-07 Järkevyys uses the lesson's radius 1,3 cm, 65 turns (resolved).
+- Recomputed L3-05: numerator 1,849·10^-3 N·m, denominator 6,283·10^-7 Vs/A, I = 54,25 A, F = 0,0294 N = mg; L2-06 (3,04·10^-3 N, 0,041 T), L2-07 (l = 5,3 m): the answers match the solutions. L3-05 b) now says the arrangement is unstable sideways, which is correct.
+- L1-06 option wording changed only in the correct option and its answer text.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

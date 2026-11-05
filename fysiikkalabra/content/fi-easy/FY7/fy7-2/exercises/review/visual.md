@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: f8563eea6efa006f
+CONTENT-HASH: 8b63fd945d794697
+Mode: full
+Round: 1
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] solutions.md L2-01 Sijoitus — the connecting word between the v chain and the r display is not shown (the layout renders the display as its own block); the two blocks read as consecutive steps, so nothing is lost.
+- [Minor] Taulukon sarakeotsikot (Rata, Kaartuu, Kohta) ovat lyhyitä; ei muutettavaa.
 
 ## Checked
-- Delta: L2-01 solution Sijoitus, r as an aligned display (fraction row, \quad \cdot v row, = 0,06463 m = 6,463 cm row); rendered at 360 and 390 px from the built page with every solution open, and open-exercises-L2-1280-1 at laptop width.
-- Result: three rows with equals signs in one column, units upright with a thin space, nothing clipped, no horizontal overflow; the v chain above it is unchanged.
-- Only the line breaking of the formula changed; text, numbers and units unchanged (diff read). Deterministic layout checks 360/768/1280 clean per packet.
+- Avattu fi-easy-kuvakaappaus open-exercises-L3-1280-6 (L3-04 ratkaisu): kaavat, desimaalipilkku, yksiköt pystyssä, ei leikkautumista, ei vaakasuuntaista ylivuotoa.
+- Uusien tehtävien tekstit, taulukot ja kuvatekstit luettu käännöksestä; selitykset sulkeissa (liike-energia, klassinen käsittely) näkyvät luettavasti.
+- Ei englantia tai muuta vierasta kieltä sivulla.
+- check_i18n.py fi-easy: 0 errors.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 4

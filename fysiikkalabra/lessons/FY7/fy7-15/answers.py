@@ -3,7 +3,7 @@ Ideal polariser: unpolarised light I -> I / 2; Malus's law I = I0 cos² θ for p
 tan α_B = n2 / n1, and at the Brewster angle the reflected and refracted rays are perpendicular (α_B + α2 = 90°).
 Prints {exercise id: number} as JSON on the last line; the lint and the gate compare it with exercises.json."""
 import json
-from math import cos, tan, atan, acos, sqrt, degrees, radians
+from math import cos, sin, tan, atan, acos, sqrt, degrees, radians
 
 a = {}
 # Level 1: one formula, values given
@@ -21,4 +21,20 @@ a["fy7-15-L2-04"] = 90 - degrees(atan(1.50))                 # glass 1,50 at α_
 a["fy7-15-L3-01"] = 800 / 2 * cos(radians(30.0)) ** 2 * cos(radians(60.0)) ** 2   # crossed pair with a middle one at 30°: 75,0 W/m²
 a["fy7-15-L3-02"] = degrees(atan(1.00 / 1.33))               # light in water reflecting off the surface: α_B = 36,94° (< α_r = 48,8°)
 a["fy7-15-L3-03"] = 16 + (420 - 16) * cos(radians(60.0)) ** 2   # background 16 lx + Malus part 404 lx · cos² 60° = 117 lx
+# Level 1 (added): concept MC has no number; Malus and Brewster with new values
+a["fy7-15-L1-07"] = 300 * cos(radians(55.0)) ** 2            # polarised 300 W/m², 55,0°: 98,70 W/m² -> 98,7
+a["fy7-15-L1-08"] = degrees(atan(1.46 / 1.00))               # air -> fused silica: α_B = 55,59° -> 55,6°
+# Level 2 (added)
+# L2-05: least-squares line E = E0 cos²θ + E_t through the ten example readings; the slope is the polarised part E0
+_th = list(range(0, 91, 10))
+_E = [322, 308, 288, 240, 194, 133, 88, 41, 18, 7]
+_x = [cos(radians(t)) ** 2 for t in _th]
+_mx, _my = sum(_x) / len(_x), sum(_E) / len(_E)
+_k = sum((u - _mx) * (v - _my) for u, v in zip(_x, _E)) / sum((u - _mx) ** 2 for u in _x)
+a["fy7-15-L2-05"] = _k                                       # slope 313,9 lx (intercept 6,9 lx = background) -> 314 lx
+a["fy7-15-L2-06"] = degrees(acos(sqrt(0.40)))                # I / I0 = 0,40 = cos² θ: θ = 50,77° -> 50,8°
+a["fy7-15-L2-07"] = degrees(atan(1.36 / 1.00))               # air -> ethanol: α_B = 53,67° (the student's 36,3° is the refraction angle)
+# Level 3 (added)
+a["fy7-15-L3-04"] = 100 * (0.5 * cos(radians(45.0)) ** 2 * sin(radians(45.0)) ** 2)   # I3 / I0 = (1/8) sin² 2θ, max at 45°: 12,5 %
+a["fy7-15-L3-05"] = 40 * cos(radians(90.0 - 25.0)) ** 2      # Brewster-reflected glare is horizontal; lens axis 25° off vertical: 40 W/m² · cos² 65° = 7,144 W/m²
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

@@ -1,16 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 5d735ce13b92c2f3
+CONTENT-HASH: 3e8591f7a1a46170
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
+## Fixed
+(none)
+
 ## Polish
-- [Minor] fy7-6-L3-01 solution — a lone "so" sits between two display chains and reads as a stray heading — fold it into the sentence before or after the second chain.
-- [Minor] fy7-6-L2-02 solution, Reasonableness — the unit check "Wb/s = V·s/s = V" is set as a three-row display chain for one trivial step — acceptable, but one inline line would read better.
+(none)
 
 ## Checked
-- open-exercises-1280-2 (L1-02, L1-03), open-exercises-L2-1280-3 (L2-02, L2-03), open-exercises-L3-1280-2 (L3-01, L3-02) and -4 (L3-03), all from review/shots.
-- exercises.json and solutions.md read in full: quantities and units in LaTeX, \cdot and colon used, no plain-text units, no Finnish words. The set has no figures.
+- Captures fy7-6-open-exercises-L2-1280-8 (L2-06 solution, L2-07 task and table) and L3-1280-6 (L3-04 solution) opened for en; tables, captions, headers and display chains render without overflow, units and symbols set in LaTeX.
+- Table captions and column headers translated (e.g. t_thick/t_thin vs t_paksu/t_ohut), no plain-text units, no Finnish in en.
+- Decimal separators correct for the language; no mixed styles.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish (English prose) 5 · accessibility 5
+illustrations 5 · typography 5 · language 5 · accessibility 5

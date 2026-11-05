@@ -39,6 +39,55 @@
       "answer": 42.0,
       "unit": "°",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-11-L1-06",
+      "level": 1,
+      "text": "Valkoinen valo tulee ilmasta lasiprismaan. Violetti osa taittuu enemmän kuin punainen osa. Mikä väite selittää eron oikein?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Lasin taitekerroin on violetille suurempi, joten violetti valo hidastuu lasissa enemmän.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Violetin valon taajuus kasvaa lasissa. Siksi sen aallonpituus pienenee ja säde kääntyy jyrkemmin.",
+          "feedback": "Väärin. Valon taajuus ei muutu rajapinnassa. Sama väri säilyttää taajuutensa ilmassa ja lasissa. Ero syntyy siitä, että lasin taitekerroin on eri väreille eri suuri."
+        },
+        {
+          "text": "Lasi värjää valkoisen valon. Violetti valo syntyy vasta lasissa ja kääntyy jyrkemmin.",
+          "feedback": "Väärin. Värit ovat jo valkoisessa valossa, eikä lasi värjää valoa. Prisma vain erottaa värit, koska taitekerroin on eri aallonpituuksille eri suuri."
+        },
+        {
+          "text": "Lasin taitekerroin on violetille suurempi, joten violetti valo hidastuu lasissa enemmän.",
+          "feedback": "Oikein. Taitekerroin riippuu aallonpituudesta. Tätä sanotaan dispersioksi. Lasissa taitekerroin on suurin violetille. Taittumislain $\\sin\\alpha_1 = n\\sin\\alpha_2$ mukaan suurempi $n$ antaa pienemmän taitekulman. Silloin suunta muuttuu enemmän.",
+          "correct": true
+        },
+        {
+          "text": "Punainen valo etenee lasissa tyhjiön nopeudella. Siksi se ei taitu yhtä paljon kuin violetti.",
+          "feedback": "Väärin. Lasissa kaikki värit etenevät hitaammin kuin tyhjiössä, myös punainen. Punainenkin taittuu. Se taittuu vain vähemmän kuin violetti, koska sen taitekerroin on pienempi."
+        }
+      ]
+    },
+    {
+      "id": "fy7-11-L1-07",
+      "level": 1,
+      "text": "Violetin valon aallonpituus tyhjiössä on $405\\,\\text{nm}$. Valo tulee kruunulasiin. Kruunulasin taitekerroin violetille valolle on $1{,}530$. Valon taajuus ei muutu rajapinnassa. Aallolle pätee $v = f\\lambda$. Mikä on violetin valon aallonpituus lasissa? Anna vastaus nanometreinä.",
+      "answer": 264.7059,
+      "unit": "nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-11-L1-08",
+      "level": 1,
+      "text": "Sateenkaaren punainen reuna näkyy kulmassa $42{,}3^\\circ$ vastapisteen suunnasta. Aurinko on $30{,}0^\\circ$ horisontin yläpuolella. Siksi vastapiste on $30{,}0^\\circ$ horisontin alapuolella. Kuinka korkealla horisontin yläpuolella kaaren punaisen reunan huippu on?",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 12.3,
+      "unit": "°",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +123,68 @@
       "answer": 15.6459,
       "unit": "°",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-11-L2-05",
+      "level": 2,
+      "text": "Taulukossa on kolmen lasityypin taitekertoimet punaiselle ($656\\,\\text{nm}$) ja violetille ($405\\,\\text{nm}$) valolle. Arvot ovat tyypillisiä, ja aineisto on esimerkki. Valkoisen valon kapea kimppu tulee ilmasta lasilevyn pintaan tulokulmassa $60{,}0^\\circ$. Älä pyöristä välituloksia.\n\na) Laske punaisen ja violetin valon taitekulmien erotus $\\Delta\\alpha = \\alpha_\\text{p} - \\alpha_\\text{v}$ flinttilasissa.\n\nb) Laske erotus $\\Delta\\alpha$ myös kruunulasissa ja akryylilasissa.\n\nc) Mikä lasityyppi erottaa värit eniten? Perustele taulukon taitekertoimilla, miksi prismaspektrometri kannattaa tehdä mieluummin flinttilasista kuin kruunu- tai akryylilasista.\n\nAnna vastauskenttään kohdan a) tulos asteina.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 0.7646,
+      "unit": "°",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Lasien taitekertoimet (tyypillisiä arvoja, esimerkkiaineisto)",
+        "columns": [
+          "Lasi",
+          "$n_\\text{p}\\,(656\\,\\text{nm})$",
+          "$n_\\text{v}\\,(405\\,\\text{nm})$"
+        ],
+        "rows": [
+          [
+            "Kruunulasi",
+            "1.5143",
+            "1.5302"
+          ],
+          [
+            "Flinttilasi",
+            "1.6150",
+            "1.6498"
+          ],
+          [
+            "Akryylilasi",
+            "1.4892",
+            "1.5062"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-11-L2-06",
+      "level": 2,
+      "text": "Opiskelija päättelee: ”Punainen taittuu vähiten, joten se kääntyy pisarassa vähiten. Se poikkeaa pienimpään kulmaan vastapisteen suunnasta. Siksi punainen on sateenkaaren sisäreunalla.”\n\nVeden taitekerroin on punaiselle valolle $1{,}3315$ ja violetille valolle $1{,}3431$. Valo tulee pisaran pintaan tulokulmassa $59{,}0^\\circ$. Se heijastuu kerran pisaran takapinnasta ja lähtee pisarasta.\n\na) Laske kummankin värin kulma $\\theta$ vastapisteen suunnasta.\n\nb) Mikä opiskelijan päättelyssä on oikein ja mikä väärin? Perustele a)-kohdan tuloksilla.\n\nAnna vastauskenttään punaisen valon kulma $\\theta$ asteina.",
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "answer": 42.2913,
+      "unit": "°",
+      "tolerance": 0.01
+    },
+    {
+      "id": "fy7-11-L2-07",
+      "level": 2,
+      "text": "Kuvaajassa on kruunulasin N-BK7 taitekerroin $n$ tyhjiöaallonpituuden $\\lambda$ funktiona. Mittauspisteet ovat aallonpituuksilla $405$, $436$, $486$, $546$, $589$ ja $656\\,\\text{nm}$. Oranssin valon ($\\lambda_0 = 600\\,\\text{nm}$) taitekerroin on siksi luettava pisteiden välistä käyrältä.\n\nValon nopeus tyhjiössä on $c = 3{,}00 \\cdot 10^8\\,\\text{m/s}$. Valon taajuus ei muutu, kun valo tulee lasiin.\n\na) Lue kuvaajasta taitekerroin aallonpituudella $600\\,\\text{nm}$.\n\nb) Laske valon nopeus lasissa tällä aallonpituudella.\n\nc) Laske valon aallonpituus lasissa.\n\nAnna vastauskenttään kohdan b) nopeus kilometreinä sekunnissa.",
+      "kind": [
+        "graph",
+        "data"
+      ],
+      "answer": 197889.1821,
+      "unit": "km/s",
+      "tolerance": 0.003,
+      "figure": "fy7-11/n-graph"
     }
   ],
   "level3": [
@@ -100,6 +211,71 @@
       "answer": 1.6647,
       "unit": "°",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-11-L3-04",
+      "level": 3,
+      "text": "Opiskelijat mallintavat sateenkaarta pisaralla, jossa valo heijastuu kerran takapinnasta. Taulukossa on punaisen valon kulma $\\theta$ vastapisteen suunnasta tulokulman $\\alpha$ funktiona kahdelle pisaralle. Toinen on vesipisara. Toisessa on tuntematon sokeriliuos. Aineisto on esimerkki. Veden taitekerroin punaiselle valolle on $1{,}3315$.\n\na) Laske jokaisen taulukon rivin kulmista $\\alpha$ ja $\\theta$ taitekulma $\\beta$ liuospisarassa. Laske siitä liuoksen taitekerroin $n$. Ota rivien taitekertoimista keskiarvo.\n\nb) Lue taulukosta kummankin pisaran suurin kulma $\\theta$. Laske, kuinka monta astetta pienemmässä kulmassa liuospisaroiden kaari näkyisi.\n\nc) Perustele taulukon avulla, miksi kaari syntyy juuri suurimman kulman $\\theta$ kohdalle. Kerro, näkyisikö liuospisaroiden kaari vesisateen kaaren sisä- vai ulkopuolella.\n\nAnna vastauskenttään kohdan a) taitekertoimen keskiarvo.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 1.4,
+      "unit": "",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Kulma $\\theta$ tulokulman funktiona (esimerkkiaineisto)",
+        "columns": [
+          "$\\alpha\\,({}^\\circ)$",
+          "$\\theta_\\text{vesi}\\,({}^\\circ)$",
+          "$\\theta_\\text{liuos}\\,({}^\\circ)$"
+        ],
+        "rows": [
+          [
+            "40.0",
+            "35.46",
+            "29.35"
+          ],
+          [
+            "50.0",
+            "40.49",
+            "32.67"
+          ],
+          [
+            "55.0",
+            "41.87",
+            "33.26"
+          ],
+          [
+            "58.0",
+            "42.25",
+            "33.10"
+          ],
+          [
+            "62.0",
+            "42.15",
+            "32.41"
+          ],
+          [
+            "66.0",
+            "41.29",
+            "30.91"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-11-L3-05",
+      "level": 3,
+      "text": "Spektrometrin prisma on flinttilasia (esimerkkiaineisto). Sen taitekerroin on punaiselle valolle $n_\\text{p} = 1{,}6150$ ja violetille valolle $n_\\text{v} = 1{,}6498$.\n\nKapea valkoisen valon kimppu tulee ilmasta prisman ensimmäiseen pintaan tulokulmassa $50{,}0^\\circ$.\n\nSuurempi huippukulma $A$ erottaa värit paremmin. Säde pääsee kuitenkin ulos toisesta pinnasta vain, jos $n\\sin\\alpha_3 < 1$. Älä pyöristä välituloksia, sillä ulostulokulma on herkkä pyöristykselle.\n\na) Laske suurin huippukulma $A_\\text{max}$, jolla violetti valo vielä pääsee ulos toisesta pinnasta. Rajatapauksessa lähtevän säteen taitekulma on $\\alpha_4 = 90^\\circ$. Laske sama punaiselle ja päättele, kumpi väri rajoittaa huippukulmaa.\n\nb) Prisman huippukulmaksi valitaan $A = 64{,}0^\\circ$. Laske punaisen ja violetin säteen poikkeamakulmat sekä niiden erotus $\\Delta\\delta = \\delta_\\text{v} - \\delta_\\text{p}$.\n\nc) Kuinka paljon erotus $\\Delta\\delta$ muuttuisi, jos huippukulma olisi $60{,}0^\\circ$? Miksi huippukulmaksi ei kannata valita $65{,}0^\\circ$?\n\nAnna vastauskenttään kohdan b) erotus $\\Delta\\delta$ asteina.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 7.417,
+      "unit": "°",
+      "tolerance": 0.05
     }
   ]
 }

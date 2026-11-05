@@ -1,13 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: d9d37bab6a393027
+CONTENT-HASH: 24f527adb3299ded
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+(none needed: numbers, units, formulas and answers equal to fi)
 
 ## Polish
-- content/fi-easy/FY7/fy7-13/exercises/solutions.md (L1-03 Järkevyys) — 625 nm "oranssinpunaista"; red rather (carried over from fi).
+- solutions.md L2-05 uses "kulmakerroin" without explanation; the idea (slope of the line) is stated in the same Principle line ("sen kulmakerroin on lambda : d"), so left as is.
 
 ## Checked
-- Every number of exercises.json and solutions.md equal to fi (script); answers.py shared.
-- All 12 answers recomputed with my own formulas (3,333 µm, 18,97°, 625 nm, 14,04°, 1,690 µm; 7; 16,28 cm; 595,5 /mm; 9,39 cm; 466,7 nm; 1,599 µm; 532,6 nm): equal to exercises.json.
-- Split sentences keep every condition (kohtisuoraan, varjostin kohtisuorassa / levyn suuntainen, leveä varjostin, sama asetelma).
-- L3-01 Järkevyys shortened (no "overlap expected" clause) but Vastaus states the overlap; reasoning complete.
+- All 20 exercises compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags and every number in texts, choices, feedback, data cells identical (decimal point in en, comma in fi-easy); solutions.md numbers equal to fi (1160/843 tokens, normalised).
+- Formula parity with fi: check_i18n.py fi-easy 0 errors.
+- Physics statements (tan for the screen triangle, sin in the grating equation, kλ < d, zeroth-order reflection back through the hole) are the same as in fi.
+- L1-06 and L2-07: answer string equals the single correct choice.
