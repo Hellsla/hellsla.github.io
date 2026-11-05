@@ -1,19 +1,16 @@
-VERDICT: FAIL
-CONTENT-HASH: beb42d2e273c0e91
+VERDICT: PASS
+CONTENT-HASH: b9aec31fc4971a53
 
 ## Blocking
-- exercises/solutions.md:191 — fy5-15-L2-06, Kaava: a stray fence line "```" after the closing fence of the latex block; it renders as a literal ``` in the solution (L2 capture at 1280 px, part 8). A broken render. — delete line 191.
-- exercises/exercises.json:74 — fy5-15-L1-07 (new) copies the setting and the answer of the existing neighbouring task fy5-16-L1-02: two identical ventilation units/fans of 70 dB → 73 dB. A new task must not duplicate a task or answer of a neighbouring chapter (A). — change the source and the level, e.g. two identical 64 dB dishwashers, the student gets 128 dB, the correct answer 67 dB; change the options, feedback and the solution to match (105 dB → e.g. 96 dB, mean 64 dB, 10-fold 74 dB).
 
 ## Polish
-- exercises/solutions.md:244 — fy5-15-L3-04: "315 m, kolme merkitsevää numeroa kuten mittarin lukemissa" — the limit 55 dB is given in whole decibels; ±0,5 dB moves r between 297 m and 334 m. Give 3,2 · 10² m with two significant figures and widen the tolerance to about 0,05.
-- exercises/solutions.md:245 — fy5-15-L3-04 c: "todellinen taso on yleensä pienempi kuin malli ennustaa" while the same sentence lists reflections from buildings and temperature layers, which can raise the level. Write "voi olla pienempi tai suurempi; ilman ja maan vaimennus pienentää sitä yleensä".
-- exercises/exercises.json:105 — fy5-15-L1-08 (1,0 W/m² → 120 dB) is answered word for word in the feedback of L1-06 (exercises.json:60) and in the lesson summary. Use another intensity, e.g. 0,25 W/m² → 114 dB.
+- exercises/solutions.md:144 — fy5-15-L1-07 (replaced): the same concept (equal sources add 3 dB) also appears in the old fy5-16-L1-02 (70 dB fans → 73 dB). Here the setting, numbers and format are different (64 dB dishwashers, MC error analysis, 67 dB), and fy5-15 is the earlier chapter, so it is acceptable. No change is needed.
 
 ## Checked
-- Recomputed all 8 new answers in one script: L1-08 120; L2-05 6,025 (steps 6,1/5,8/6,1/6,1); L2-06 3,96; L2-07 mean 4,0 dB → 2,51; L3-04 P = 0,394 W, r = 315 m; L3-05 84,9 dB, 44,6 m. All match answers.py and the solutions.
-- L2-06: the reflections explain the direction of the error (measured level above the 1/r² model, gap growing with distance). L2-07: microphone saturation explains the low reading at 90 dB.
-- L1-06, L1-07 MC: exactly one correct option, and the distractor feedback is right.
-- Assumptions are stated in the task (point source, no reflection or absorption) and do not contradict the later explanations in L3-04 c and L2-06 c.
-- Scope: intensity, level, summing intensities, 1/r²; the log-scale reasoning in L3-05 c follows the plan. There are no figures, so no values read from figures and no "graph" kinds.
-- fy5-14 and fy5-17: no overlap.; plan 8/7/5 met.
+- Round-1 Blocking resolved: the stray fence after the L2-06 Kaava block is gone (solutions.md has an even fence count, 28). Capture L2-1280-8 shows a clean formula block and no literal backticks.
+- Round-1 Blocking resolved: L1-07 now uses two 64 dB dishwashers (student 128 dB, correct 67,01 dB). Exactly one option is correct. The distractors (mean 64 dB, +3 dB per machine giving 70 dB, ten-fold intensity giving 74 dB) are wrong, and their feedback is right. It no longer copies the setting or answer of fy5-16-L1-02. No other FY5 chapter has this task (grep).
+- Round-1 Polish done: L1-06 feedback no longer gives 120 dB, so L1-08 stays a task. L3-04 is now 3,2·10² m with the ±0,5 dB range 297–334 m and tolerance 0,05, and its c) explanation says "pienempi tai suurempi".
+- Recomputed in one script: L1-08 120 dB; L2-05 6,025 dB (steps 6,1/5,8/6,1/6,1); L2-06 model 67,94 dB, difference 3,96 dB; L2-07 mean 4,0 dB → k = 2,51; L3-04 P = 0,405/0,380/0,428/0,366 W, mean 0,3945 W, r = 315 m; L3-05 84,93 dB, 44,6 m (sources alone 84,0 and 78,0 dB). All match answers.py and the solutions.
+- The error directions are right: reflections raise the level and the gap grows with distance (L2-06); the saturated microphone reads low at 90 dB (L2-07).
+- The assumptions are stated in the task (point source, no reflection or absorption) and are not contradicted by the explanations.
+- Scope: intensity, level, summing intensities and 1/r² are inside the slot. There are no figures, and no "graph" kind is used. The plan 8/7/5 is met and the levels fit it.

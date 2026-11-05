@@ -1,15 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: 1d2219da8a5ea8a9
+VERDICT: PASS
+CONTENT-HASH: f3f7dd18087405bc
 
 ## Blocking
-- exercises.json fy5-14-L3-05 (whole task, solutions.md fy5-14-L3-05) — near-duplicate of fy5-11-L2-05 (speed of sound from (distance, time) data with a constant device delay t0, slope from two far-apart rows, answer 343 m/s) and overlaps fy5-10-L2-07 (two-point slope of d vs Δt). The extra parts (draw the line, estimate the delay 0,42 ms) do not make it a new idea, and it is a level 2 task, not level 3. Fix: replace it with a different level-3 data/model task of this chapter, e.g. a table of the speed of sound in air at 0, 10, 20, 30 °C (331, 337, 343, 349 m/s) -> fit v = v0 + kT, predict v at -15 °C and the beat/pitch consequence for a pipe, or a spectrum + beats task; with its full solution.
 
 ## Polish
-- fy5-14-L2-05 repeats the idea of old L2-04 (racing car away, 23 m/s) and L3-01 (ambulance 28 m/s); only the averaging is new. Consider a before/after-passing table (approach and recede) so it differs.
-- fy5-14-L3-05 (if the idea is kept in any form) solution picks two data points as "points on the line"; points for the slope should be read from the fitted line.
-- fy5-14-L2-05 Järkevyys — "vastaa kohtuullisesti" (35 Hz vs 38,5 Hz) is a weak sanity check; use the exact ratio 392/(1−30,4/340) = 430,5 Hz instead.
+- fy5-14-L3-05 c) asks which sound is brighter and why, the same reasoning as L2-06 b); b) (v = 2Lf1) repeats the fy5-13 string calculation. The new idea (plucking position decides which harmonics appear) is in a) and c), so the task stays; no change required.
+- fy5-14-L2-05 repeats the idea of L2-04/L3-01 (car, approach); only the averaging is new. A before/after-passing table would vary it. Not a defect.
+- fy5-14-L3-05 solution Järkevyys: "kitaran kielelle tavallinen luokka" for 255 m/s is vague; say that guitar strings give about 200-400 m/s or drop the sentence.
 
 ## Checked
-- L1-06..08, L2-05..07, L3-04 recomputed: beat period 0,167 s; v_s = 30,4 m/s; f_1 = 262 Hz with harmonics 524..1309; 544 Hz vs correct 548,4 Hz (error direction "too small" is right); blood speed 0,475 m/s via f0(v+vv)/(v-vv), double Doppler explained correctly. All answers match solutions.
-- Levels fit (L1 concept/one-step, L2 data/error, L3 modelling); stay within the chapter (Doppler, beats, FFT, harmonic series); no duplicate in fy5-1..13 except the item above; "graph" kind only in L3-05, which asks to draw.
-- Solutions step by step; $\begin{aligned}$ blocks render correctly at 1280 px; 360 px check ok; Finnish correct.
+- Round 1 Blocking resolved: the near-duplicate L3-05 (speed of sound from a slope with a delay) is gone; the replacement has no overlap with fy5-10-L2-07, fy5-11-L2-05 or fy5-13 (no answer 255 m/s elsewhere in FY5; no plucking-position task in fy5-1..13).
+- L3-05 recomputed: f1 = 196 Hz (392/196 = 2 ... 1176/196 = 6); v = 2 · 0,650 m · 196 Hz = 254,8 -> 255 m/s matches the answer. Physics right: the middle of the string is a node of the even harmonics and an antinode of the odd ones; the table (even <= 0,02; odd 1,00, 0,11, 0,04, near 1/n^2) fits that and the solution says so; pluck near the bridge gives all harmonics, so a brighter sound; pitch equal because f1 equal.
+- The "graph" kind is not used; data kind correct for tables; no value read from a figure; no simplifying assumption contradicts a later explanation.
+- L3-05 is in scope (harmonic series, timbre, FFT; node/antinode from the prerequisite fy5-13), level 3 fits (data, model, three parts, explanation).
+- L1-06..08, L2-05..07, L3-04 unchanged since round 1 and still match their solutions (T = 0,167 s; 30,4 m/s; 262 Hz; 548 Hz vs 544 Hz error direction too small; 0,475 m/s with double Doppler explained); L3-04 blood-flow Doppler is not repeated in fy5-15..17.
+- Solutions step by step, Finnish and case after number+unit correct, equation blocks render at 1280 px, 360 px layout check ok.
