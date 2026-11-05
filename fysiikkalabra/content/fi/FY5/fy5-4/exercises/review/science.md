@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 4b2e59499271c581
+CONTENT-HASH: 46e452c734acb155
 
 ## Blocking
 
 ## Polish
-- exercises.json:272 (fy5-4-L3-04) — the new wording says a_n "laskettiin nopeudesta ja radan muodosta", and part a) then asks for the radius from v and a_n. That is circular. Write instead "kiihtyvyysanturin lukemasta on vähennetty painovoiman osuus", or "normaalikiihtyvyys mitattiin anturilla (painovoiman vaikutus poistettu)".
-- solutions.md (L3-04 Vastaus) — gives ≈ 260 N with two significant figures, but the answer box stays 257.4. That is within the 2 % tolerance, so fine. Optionally set the answer to 260 so that it matches the solution.
-- solutions.md (L3-04 Järkevyys) — the energy check could name its source: "mekaanisen energian säilyminen: ½mv₁² = ½mv₂² + mg·2r".
+- exercises.json:272 (fy5-4-L3-04) — the wording says a_n "laskettiin nopeudesta ja radan muodosta", and part a) then asks for the radius from v and a_n, which is circular — write instead "kiihtyvyysanturin lukemasta on vähennetty painovoiman osuus" (carried over from the previous round, still optional).
+- solutions.md (L3-04 Järkevyys) — the energy check could name its source: "mekaanisen energian säilyminen: ½mv₁² = ½mv₂² + mg·2r" (carried over, optional).
 
 ## Checked
-- Round-1 Blocking fixed. In L3-04 the bottom row is 27,2 m/s and 53,2 m/s², so r = 13,91 m against 13,90 m from the top row. v₁² − v₂² = 543,8 and 4gr = 545,6 m²/s², so the data now agree with energy conservation. N_ala = 3780,6 N = 6,42 mg, N_ylä = 257,4 N, v_min = 11,68 m/s < 14,0 m/s.
-- Round-1 Blocking fixed. L1-08 now starts from 1,0 m/s² and gives 9,0 m/s² ≈ 0,92 g. The task and its reasonableness check now agree.
-- L2-05: on a smooth table the weight and the table's support force cancel, and the horizontal string tension is the only horizontal force, so the model is exact. Least squares gives 25,0 g and the line through (49; 1,53) gives 24,98 g; the solution states that it was drawn by eye.
-- L3-05: the algebra step (divide the equations, then divide by cos α) is correct, and the wording "rata on vaakasuora ympyrä" is clear. v₀ 48,2, v_max 97,29 and flat 81,3 km/h are unchanged.
-- I ran answers.py: every value matches exercises.json (L1-08 9.0, L3-04 257.4).
-- The 1280 px capture of the L3-05 solution with display math renders cleanly; the 360 px layout check is OK.
-- Unchanged tasks and the round-1 findings (MC options, L2-06, L2-07, scope, 8/7/5) still hold.
+- The diff since the last science review (commit 1847106e2 → HEAD) touches only solutions.md in fy5-4, 3 insertions and 1 deletion, all in L3-05.
+- L3-05: the old single display formula is split into $\dfrac{\tan\alpha+\mu_0}{1-\mu_0\tan\alpha} = \dfrac{v^2}{g\,r}$ followed by $v_\text{max} = \sqrt{g\,r\,\dfrac{\tan\alpha+\mu_0}{1-\mu_0\tan\alpha}}$. The maths is identical, and dropping the ⇒ loses nothing, because the second line follows directly by solving for v.
+- L3-05 numbers recomputed: tan 8,0° = 0,1405, g r = 1275,3 m²/s², fraction 0,5727, v_max = 27,03 m/s = 97,29 km/h; v₀ 48,2 and flat 81,3 km/h are unchanged.
+- Both display formulas are on their own paragraphs with blank lines, consistent with the other display math in the solution.
+- Nothing else in exercises.json, solutions.md or answers.py has changed, so the earlier PASS findings (L1-08, L2-05, L3-04 data consistency, MC options, scope, 8/7/5) still hold.
+- The content hash is 46e452c734acb155 at both the start and the end.

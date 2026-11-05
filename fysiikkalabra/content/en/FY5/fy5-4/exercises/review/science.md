@@ -1,21 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: cfb6c19a09b4fc1c
+CONTENT-HASH: b258729aa462d5af
 Mode: full (translation review against the reviewed Finnish set)
-Round 1
+Round 2
 
 ## Blocking
 (none)
 
 ## Fixed
-- exercises.json L2-05: "The table is smooth" -> "The tabletop is smooth" (the word clashed with the data table beside it).
-- L2-06: "just barely stays" -> "only just stays".
-- L1-07 feedback: "Acceleration tells the change of the velocity" -> "tells how the velocity changes".
+(none needed)
 
 ## Polish
 (none)
 
 ## Checked
-- The 8 new exercises (L1-06..08, L2-05..07, L3-04..05) compared with fi field by field: ids, kinds, answers (9.0, 24.98, 0.5477, 3.672, 257.4, 97.29), units, tolerances, fbd flags, correct flags and data table cells identical.
-- Choices: one correct per concept item, same order and same correct flag as fi; feedback means the same (no centrifugal force, friction inwards, direction change = acceleration).
-- All numbers and LaTeX formulas in solutions.md match fi (decimal point); voimakuvio blocks identical; check_i18n 0 errors.
-- Terms: centripetal acceleration, net force, static friction used correctly; no centrifugal force claimed.
+- Re-review after one change: in the fy5-4-L3-05 solution one display formula was split into two display formulas. The three display formulas now match content/fi exactly (same maths, same order, same connecting sentence translated).
+- All exercises still match content/fi in ids, levels, kinds, answers, units, tolerances, data and numbers; check_i18n.py en: 0 errors for fy5-4.
+- Role (science) findings from the earlier PASS are unaffected; the split only shortens line width at 360 px.
