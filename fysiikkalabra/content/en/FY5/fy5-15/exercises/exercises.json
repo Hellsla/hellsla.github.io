@@ -39,6 +39,75 @@
       "answer": 20,
       "unit": "dB",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-15-L1-06",
+      "level": 1,
+      "text": "What does it mean that the sound intensity level is $0\\,\\text{dB}$?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The intensity is $I_0$, because then $\\lg(I/I_0) = \\lg 1 = 0$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "There is no sound at all, because the intensity is zero and the value of the logarithm is then zero.",
+          "feedback": "This is a common misconception. If the intensity were zero, the quotient $I/I_0$ would be zero, and the logarithm of zero does not exist. A level of $0\\,\\text{dB}$ means that the sound exists but is exactly as strong as the threshold of hearing."
+        },
+        {
+          "text": "The sound is at the threshold of pain, because the zero point of the scale has been chosen according to the loudest sound.",
+          "feedback": "The threshold of pain is many times the threshold of hearing, so it is at the upper end of the scale. The zero point of the scale has been chosen the other way round, according to the threshold of hearing, that is, the weakest audible sound."
+        },
+        {
+          "text": "The intensity is $I_0$, because then $\\lg(I/I_0) = \\lg 1 = 0$.",
+          "feedback": "Correct: when $I = I_0$, the quotient is $1$ and $\\lg 1 = 0$, so the level is $0\\,\\text{dB}$. It is the threshold of hearing, not silence.",
+          "correct": true
+        },
+        {
+          "text": "The sound is weaker than the threshold of hearing, because zero is the smallest number that can be used on the scale.",
+          "feedback": "The scale does not end at zero. For sounds weaker than the threshold of hearing the quotient $I/I_0$ is less than $1$ and its logarithm is negative, so the level is negative. Zero is therefore not the lower limit of the scale."
+        }
+      ]
+    },
+    {
+      "id": "fy5-15-L1-07",
+      "level": 1,
+      "text": "A student calculates that two identical dishwashers, each producing $64\\,\\text{dB}$ alone, produce $128\\,\\text{dB}$ together. What is the error in the student's calculation?",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "answer": "Decibels are not added, but intensities are, so the level rises by only about $3\\,\\text{dB}$ to $67\\,\\text{dB}$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The levels are averaged, because decibels describe loudness on average, so the combined level is $64\\,\\text{dB}$.",
+          "feedback": "The second machine adds sound, so the combined level must be higher than the level of one machine. An average does not describe the combined effect of two sources, and decibels are not loudnesses that can be averaged."
+        },
+        {
+          "text": "Each machine adds three decibels to the level, so the combined level is $64\\,\\text{dB} + 2 \\cdot 3\\,\\text{dB} = 70\\,\\text{dB}$.",
+          "feedback": "The constant increase of $3\\,\\text{dB}$ applies to the whole combined level only once, not to each machine separately. Doubling the intensity raises the level by only about $3\\,\\text{dB}$ in total, not by six decibels."
+        },
+        {
+          "text": "Two machines make the intensity ten times as great, so the level rises by $10\\,\\text{dB}$ to $74\\,\\text{dB}$.",
+          "feedback": "The intensity of two identical machines is twice as great, not ten times. The level rises by $10\\,\\text{dB}$ only when the intensity becomes ten times as great, that is, from the combined effect of ten identical machines."
+        },
+        {
+          "text": "Decibels are not added, but intensities are, so the level rises by only about $3\\,\\text{dB}$ to $67\\,\\text{dB}$.",
+          "feedback": "Correct: the intensities of independent sources are added. Doubling the intensity raises the level by $10\\,\\text{dB} \\cdot \\lg 2 \\approx 3.0\\,\\text{dB}$.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "fy5-15-L1-08",
+      "level": 1,
+      "text": "The threshold of pain, that is, the intensity at which a sound starts to feel painful, is about $1.0\\,\\text{W/m}^2$. What is the sound intensity level corresponding to this intensity? Give the answer in decibels.",
+      "answer": 120,
+      "unit": "dB",
+      "tolerance": 0.01
     }
   ],
   "level2": [
@@ -73,6 +142,126 @@
       "answer": 4,
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-15-L2-05",
+      "level": 2,
+      "text": "The sound intensity level of a small loudspeaker was measured at different distances from the loudspeaker in an open field (example data). The meter readings are in the table.\n\na) By how many decibels did the level drop on average when the distance doubled? Calculate the total change in level between the distances $1.0\\,\\text{m}$ and $16\\,\\text{m}$ and divide it by the number of doublings of the distance.\n\nb) Compare the result with the prediction of the point source model. Enter the result of part a) in decibels in the answer box.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 6.03,
+      "unit": "dB",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Example: level in a field",
+        "columns": [
+          "$r\\,(\\text{m})$",
+          "$L\\,(\\text{dB})$"
+        ],
+        "rows": [
+          [
+            "1.0",
+            "84.2"
+          ],
+          [
+            "2.0",
+            "78.1"
+          ],
+          [
+            "4.0",
+            "72.3"
+          ],
+          [
+            "8.0",
+            "66.2"
+          ],
+          [
+            "16",
+            "60.1"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-15-L2-06",
+      "level": 2,
+      "text": "A loudspeaker was measured at different distances in a reverberant gym hall (example data). The meter readings are in the table.\n\na) Calculate what the level would be at $8.0\\,\\text{m}$ if the loudspeaker were a point source and the sound were not reflected, and the reading at $1.0\\,\\text{m}$ were correct.\n\nb) By how many decibels is the measured level at $8.0\\,\\text{m}$ greater than the prediction of part a)?\n\nc) Explain briefly what causes the difference. Enter the result of part b) in decibels in the answer box.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 4.0,
+      "unit": "dB",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Example: level in a hall",
+        "columns": [
+          "$r\\,(\\text{m})$",
+          "$L\\,(\\text{dB})$"
+        ],
+        "rows": [
+          [
+            "1.0",
+            "86.0"
+          ],
+          [
+            "2.0",
+            "80.1"
+          ],
+          [
+            "4.0",
+            "75.0"
+          ],
+          [
+            "8.0",
+            "71.9"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-15-L2-07",
+      "level": 2,
+      "text": "A student compares a phone sound level app with a calibrated sound level meter by measuring the same sound with both (example data). The readings are in the table.\n\na) Calculate the mean error of the phone at the four lowest levels, where the difference is steady.\n\nb) By what factor does the phone estimate the sound intensity to be too great at these levels? Enter the result of part b) as a number in the answer box.\n\nc) What suggests that the phone's microphone no longer works reliably at $90.0\\,\\text{dB}$?",
+      "kind": [
+        "data",
+        "experiment",
+        "error"
+      ],
+      "answer": 2.5,
+      "unit": "",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Example: meters",
+        "columns": [
+          "$L_\\text{ref}\\,(\\text{dB})$",
+          "$L_\\text{phone}\\,(\\text{dB})$"
+        ],
+        "rows": [
+          [
+            "50.0",
+            "54.1"
+          ],
+          [
+            "60.0",
+            "63.8"
+          ],
+          [
+            "70.0",
+            "74.2"
+          ],
+          [
+            "80.0",
+            "83.9"
+          ],
+          [
+            "90.0",
+            "88.6"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -99,6 +288,56 @@
       "answer": "She is not: a negative level means that the intensity is positive but less than the threshold of hearing, $I = 10^{-0.5} I_0 \\approx 3.2 \\cdot 10^{-13}\\,\\text{W/m}^2$; the average listener cannot hear it, but the most sensitive listeners may hear it at the most sensitive frequencies.",
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-15-L3-04",
+      "level": 3,
+      "text": "At an outdoor event, the sound intensity level of a loudspeaker was measured at four distances (example data). The readings are in the table. Assume that the loudspeaker is a point source and the sound spreads evenly in all directions and is not reflected or attenuated.\n\na) Calculate the sound power of the loudspeaker from each reading and take the mean of the four values as the power.\n\nb) In the yard of the nearest dwelling the level may be at most $55\\,\\text{dB}$. How far from the loudspeaker is the level this high, when the power of part a) is used?\n\nc) Justify why it is worth determining the power from all the readings and not from just one, and what in real outdoor air could make the level at a long distance differ from the model. Enter the result of part b) in metres in the answer box.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 320,
+      "unit": "m",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Example: level outdoors",
+        "columns": [
+          "$r\\,(\\text{m})$",
+          "$L\\,(\\text{dB})$"
+        ],
+        "rows": [
+          [
+            "5.0",
+            "91.1"
+          ],
+          [
+            "10.0",
+            "84.8"
+          ],
+          [
+            "20.0",
+            "79.3"
+          ],
+          [
+            "40.0",
+            "72.6"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-15-L3-05",
+      "level": 3,
+      "text": "A listener stands at a concert at a point whose distance from both the guitar amplifier and the drum kit is $8.0\\,\\text{m}$. The sound power of the guitar amplifier is $0.20\\,\\text{W}$ (example data). The level of the drum kit was measured at a distance of $2.0\\,\\text{m}$ and it was $90\\,\\text{dB}$. Assume that the sources are in the same place and are independent point sources, and that the sound spreads evenly in all directions and is not reflected or attenuated.\n\na) Calculate the combined level at the listener's position.\n\nb) How far from the sources should the listener be for the level to be at most $70\\,\\text{dB}$?\n\nc) The intensity varies from the threshold of hearing to the threshold of pain $1\\,\\text{W/m}^2$, that is, by a factor of $10^{12}$. Justify briefly why it makes sense for hearing to use the logarithmic decibel scale. Enter the result of part b) in metres in the answer box.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 45,
+      "unit": "m",
+      "tolerance": 0.03
     }
   ]
 }

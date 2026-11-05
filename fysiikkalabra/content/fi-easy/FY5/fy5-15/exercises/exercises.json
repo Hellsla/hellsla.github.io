@@ -39,6 +39,75 @@
       "answer": 20,
       "unit": "dB",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-15-L1-06",
+      "level": 1,
+      "text": "Mitä tarkoittaa, että äänen intensiteettitaso on $0\\,\\text{dB}$?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Intensiteetti on $I_0$, koska silloin $\\lg(I/I_0) = \\lg 1 = 0$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Ääntä ei ole lainkaan, koska intensiteetti on nolla ja logaritmin arvo on silloin nolla.",
+          "feedback": "Tämä on yleinen virhekäsitys. Jos intensiteetti olisi nolla, osamäärä $I/I_0$ olisi nolla. Nollan logaritmia ei ole olemassa. Taso $0\\,\\text{dB}$ tarkoittaa, että ääni on olemassa. Se on juuri yhtä voimakas kuin kuulokynnys."
+        },
+        {
+          "text": "Ääni on kipukynnyksellä, koska asteikon nollakohta on valittu kaikkein voimakkaimman äänen mukaan.",
+          "feedback": "Kipukynnys on moninkertainen kuulokynnykseen verrattuna, joten se on asteikon yläpäässä. Asteikon nollakohta on valittu päinvastoin kuulokynnyksen mukaan. Kuulokynnys on heikoin ääni, jonka kuulee."
+        },
+        {
+          "text": "Intensiteetti on $I_0$, koska silloin $\\lg(I/I_0) = \\lg 1 = 0$.",
+          "feedback": "Oikein. Kun $I = I_0$, osamäärä on $1$ ja $\\lg 1 = 0$. Silloin taso on $0\\,\\text{dB}$. Se on kuulokynnys, ei hiljaisuus.",
+          "correct": true
+        },
+        {
+          "text": "Ääni on kuulokynnystä heikompi, koska nolla on pienin luku, jota asteikolla voi käyttää.",
+          "feedback": "Asteikko ei pääty nollaan. Kuulokynnystä heikommilla äänillä osamäärä $I/I_0$ on pienempi kuin $1$. Sen logaritmi on negatiivinen, joten taso on negatiivinen. Nolla ei siis ole asteikon alaraja."
+        }
+      ]
+    },
+    {
+      "id": "fy5-15-L1-07",
+      "level": 1,
+      "text": "Opiskelija laskee, että kaksi samanlaista astianpesukonetta tuottaa yhdessä $128\\,\\text{dB}$. Kumpikin kone tuottaa yksinään $64\\,\\text{dB}$. Mikä on virhe opiskelijan laskussa?",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "answer": "Desibelejä ei lasketa yhteen, vaan intensiteetit. Siksi taso nousee vain noin $3\\,\\text{dB}$ arvoon $67\\,\\text{dB}$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Tasoista lasketaan keskiarvo, koska desibelit kuvaavat voimakkuutta keskimäärin. Siksi yhteistaso on $64\\,\\text{dB}$.",
+          "feedback": "Toinen kone lisää ääntä. Siksi yhteistason täytyy olla suurempi kuin yhden koneen taso. Keskiarvo ei kuvaa kahden lähteen yhteisvaikutusta. Desibeleistä ei lasketa keskiarvoa tällä tavalla."
+        },
+        {
+          "text": "Jokainen kone lisää tasoon kolme desibeliä. Siksi yhteistaso on $64\\,\\text{dB} + 2 \\cdot 3\\,\\text{dB} = 70\\,\\text{dB}$.",
+          "feedback": "Lisäys $3\\,\\text{dB}$ tulee koko yhteistasoon vain kerran, ei kustakin koneesta erikseen. Kaksinkertainen intensiteetti nostaa tasoa yhteensä vain noin $3\\,\\text{dB}$, ei kuutta desibeliä."
+        },
+        {
+          "text": "Kaksi konetta tekee intensiteetistä kymmenkertaisen. Siksi taso nousee $10\\,\\text{dB}$ arvoon $74\\,\\text{dB}$.",
+          "feedback": "Kahden samanlaisen koneen intensiteetti on kaksinkertainen, ei kymmenkertainen. Taso nousee $10\\,\\text{dB}$ vasta, kun intensiteetti kasvaa kymmenkertaiseksi. Siihen tarvitaan kymmenen samanlaista konetta."
+        },
+        {
+          "text": "Desibelejä ei lasketa yhteen, vaan intensiteetit. Siksi taso nousee vain noin $3\\,\\text{dB}$ arvoon $67\\,\\text{dB}$.",
+          "feedback": "Oikein. Toisistaan riippumattomien lähteiden intensiteetit lasketaan yhteen. Kaksinkertainen intensiteetti lisää tasoa $10\\,\\text{dB} \\cdot \\lg 2 \\approx 3{,}0\\,\\text{dB}$.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "fy5-15-L1-08",
+      "level": 1,
+      "text": "Kipukynnys on intensiteetti, jolla ääni alkaa tuntua kivuliaalta. Se on noin $1{,}0\\,\\text{W/m}^2$. Mikä on tätä intensiteettiä vastaava intensiteettitaso? Anna vastaus desibeleinä.",
+      "answer": 120,
+      "unit": "dB",
+      "tolerance": 0.01
     }
   ],
   "level2": [
@@ -73,6 +142,126 @@
       "answer": 4,
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-15-L2-05",
+      "level": 2,
+      "text": "Avoimella pellolla mitattiin pienen kaiuttimen äänen intensiteettitasoa eri etäisyyksillä kaiuttimesta (esimerkkiaineisto). Mittarin lukemat ovat taulukossa.\n\na) Kuinka monta desibeliä taso laski keskimäärin, kun etäisyys kaksinkertaistui? Laske ensin tason kokonaismuutos etäisyyksien $1{,}0\\,\\text{m}$ ja $16\\,\\text{m}$ välillä. Jaa se etäisyyden kaksinkertaistumisten määrällä.\n\nb) Vertaa tulosta pistemäisen lähteen mallin ennusteeseen. Anna vastauslaatikkoon kohdan a) tulos desibeleinä.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 6.03,
+      "unit": "dB",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Esimerkki: taso pellolla",
+        "columns": [
+          "$r\\,(\\text{m})$",
+          "$L\\,(\\text{dB})$"
+        ],
+        "rows": [
+          [
+            "1.0",
+            "84.2"
+          ],
+          [
+            "2.0",
+            "78.1"
+          ],
+          [
+            "4.0",
+            "72.3"
+          ],
+          [
+            "8.0",
+            "66.2"
+          ],
+          [
+            "16",
+            "60.1"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-15-L2-06",
+      "level": 2,
+      "text": "Kaiutinta mitattiin kaikuisessa liikuntasalissa eri etäisyyksiltä (esimerkkiaineisto). Mittarin lukemat ovat taulukossa.\n\na) Laske, mikä taso olisi $8{,}0\\,\\text{m}$:n päässä. Oleta, että kaiutin olisi pistemäinen lähde eikä ääni heijastuisi. Oleta myös, että $1{,}0\\,\\text{m}$:n lukema on oikea.\n\nb) Kuinka monta desibeliä suurempi mitattu taso $8{,}0\\,\\text{m}$:n päässä on kuin kohdan a) ennuste?\n\nc) Selitä lyhyesti, mistä ero johtuu. Anna vastauslaatikkoon kohdan b) tulos desibeleinä.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 4.0,
+      "unit": "dB",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Esimerkki: taso salissa",
+        "columns": [
+          "$r\\,(\\text{m})$",
+          "$L\\,(\\text{dB})$"
+        ],
+        "rows": [
+          [
+            "1.0",
+            "86.0"
+          ],
+          [
+            "2.0",
+            "80.1"
+          ],
+          [
+            "4.0",
+            "75.0"
+          ],
+          [
+            "8.0",
+            "71.9"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-15-L2-07",
+      "level": 2,
+      "text": "Opiskelija vertaa puhelimen äänitasosovellusta kalibroituun äänitasomittariin. Hän mittaa saman äänen kummallakin (esimerkkiaineisto). Lukemat ovat taulukossa.\n\na) Laske puhelimen keskimääräinen virhe neljällä pienimmällä tasolla, joilla ero on tasainen.\n\nb) Kuinka moninkertaiseksi puhelin arvioi äänen intensiteetin näillä tasoilla? Anna vastauslaatikkoon kohdan b) tulos lukuna.\n\nc) Mikä viittaa siihen, että puhelimen mikrofoni ei toimi enää kohdassa $90{,}0\\,\\text{dB}$ luotettavasti?",
+      "kind": [
+        "data",
+        "experiment",
+        "error"
+      ],
+      "answer": 2.5,
+      "unit": "",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Esimerkki: mittarit",
+        "columns": [
+          "$L_\\text{ref}\\,(\\text{dB})$",
+          "$L_\\text{puh}\\,(\\text{dB})$"
+        ],
+        "rows": [
+          [
+            "50.0",
+            "54.1"
+          ],
+          [
+            "60.0",
+            "63.8"
+          ],
+          [
+            "70.0",
+            "74.2"
+          ],
+          [
+            "80.0",
+            "83.9"
+          ],
+          [
+            "90.0",
+            "88.6"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -99,6 +288,56 @@
       "answer": "Ei ole. Negatiivinen taso tarkoittaa, että intensiteetti on positiivinen mutta pienempi kuin kuulokynnys, $I = 10^{-0{,}5} I_0 \\approx 3{,}2 \\cdot 10^{-13}\\,\\text{W/m}^2$. Keskimääräinen kuulija ei kuule tuuletinta. Herkimmät kuulijat voivat kuulla sen herkimmillä taajuuksilla.",
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-15-L3-04",
+      "level": 3,
+      "text": "Ulkoilmatapahtumassa mitattiin kaiuttimen äänen intensiteettitasoa neljältä etäisyydeltä (esimerkkiaineisto). Lukemat ovat taulukossa. Oleta, että kaiutin on pistemäinen lähde. Oleta myös, että ääni leviää tasaisesti joka suuntaan eikä heijastu tai vaimene.\n\na) Laske jokaisesta lukemasta kaiuttimen ääniteho. Ota tehoksi neljän arvon keskiarvo.\n\nb) Lähimmän asunnon pihalla taso saa olla enintään $55\\,\\text{dB}$. Kuinka kaukana kaiuttimesta taso on tämä, kun käytetään kohdan a) tehoa?\n\nc) Perustele, miksi teho kannattaa määrittää kaikista lukemista eikä vain yhdestä. Kerro myös, mikä todellisessa ulkoilmassa voisi saada pitkän matkan tason poikkeamaan mallista. Anna vastauslaatikkoon kohdan b) tulos metreinä.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 320,
+      "unit": "m",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Esimerkki: taso ulkona",
+        "columns": [
+          "$r\\,(\\text{m})$",
+          "$L\\,(\\text{dB})$"
+        ],
+        "rows": [
+          [
+            "5.0",
+            "91.1"
+          ],
+          [
+            "10.0",
+            "84.8"
+          ],
+          [
+            "20.0",
+            "79.3"
+          ],
+          [
+            "40.0",
+            "72.6"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-15-L3-05",
+      "level": 3,
+      "text": "Kuuntelija seisoo konsertissa pisteessä. Sen etäisyys on $8{,}0\\,\\text{m}$ sekä kitaravahvistimesta että rumpusetistä. Kitaravahvistimen ääniteho on $0{,}20\\,\\text{W}$ (esimerkkiaineisto). Rumpusetin taso mitattiin $2{,}0\\,\\text{m}$:n päässä, ja se oli $90\\,\\text{dB}$. Oleta, että lähteet ovat samassa paikassa ja ovat toisistaan riippumattomia pistemäisiä lähteitä. Oleta myös, että ääni leviää tasaisesti joka suuntaan eikä heijastu tai vaimene.\n\na) Laske kuuntelijan kohdalla vallitseva yhteistaso.\n\nb) Kuinka kaukana lähteistä kuuntelijan tulisi olla, jotta taso olisi enintään $70\\,\\text{dB}$?\n\nc) Intensiteetti vaihtelee kuulokynnyksestä kipukynnykseen $1\\,\\text{W/m}^2$ eli kertoimella $10^{12}$. Perustele lyhyesti, miksi kuulon kannalta on järkevää käyttää logaritmista desibeliasteikkoa. Anna vastauslaatikkoon kohdan b) tulos metreinä.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 45,
+      "unit": "m",
+      "tolerance": 0.03
     }
   ]
 }

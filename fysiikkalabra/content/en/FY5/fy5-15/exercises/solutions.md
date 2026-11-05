@@ -135,3 +135,147 @@ It is positive, about a third of the threshold of hearing. Every time the intens
 - say that the intensity is always positive and a negative level means an intensity smaller than the threshold of hearing $I_0$
 - calculate or estimate the intensity from the level $-5\,\text{dB}$ as the power $10^{-0.5}$
 - say that the threshold of hearing depends on the person and the frequency, so the fan can be heard only by the most sensitive listeners at the most sensitive frequencies.
+
+
+## fy5-15-L1-06
+**Find:** what a sound intensity level of $0\,\text{dB}$ means
+**Principle:** The sound intensity level is $L = 10\,\text{dB} \cdot \lg \dfrac{I}{I_0}$, so it compares the intensity with the threshold of hearing $I_0$. The level is zero when the argument of the logarithm is $1$.
+**Model answer:** The correct option is the one according to which the intensity is $I_0$, because then $\lg(I/I_0) = \lg 1 = 0$. A level of $0\,\text{dB}$ is therefore the threshold of hearing, the weakest sound that a listener can just barely perceive, not silence. The option that says there is no sound is wrong, because the logarithm of zero does not exist and the intensity $I = 0$ gives no level. The option about the threshold of pain is wrong, because the threshold of pain is many times the threshold of hearing, that is, at the upper end of the scale. The option that says zero is the lower limit of the scale is wrong, because for weaker sounds the quotient $I/I_0$ is less than $1$ and the level is negative.
+
+## fy5-15-L1-07
+**Find:** what the error is in the calculation in which the combined level of two $64\,\text{dB}$ machines comes out as $128\,\text{dB}$
+**Principle:** The intensities of independent sound sources are added, and the combined level is calculated from the total intensity. Decibels are a logarithmic scale, so they cannot be added.
+**Model answer:** The error is that the student adds the decibels. Two identical machines double the intensity, and doubling the intensity raises the level by only $10\,\text{dB} \cdot \lg 2 \approx 3.0\,\text{dB}$, so the combined level is about $67\,\text{dB}$. The claim that each machine would add three decibels and the level would be $70\,\text{dB}$ is wrong, because the increase of three decibels applies to the whole combined level only once. The claim about the average $64\,\text{dB}$ is wrong, because the second machine adds sound. The claim about a tenfold intensity and a level of $74\,\text{dB}$ is wrong, because two machines give only twice the intensity; an increase of $10\,\text{dB}$ would require ten machines.
+
+## fy5-15-L1-08
+**Given:** intensity at the threshold of pain $I = 1.0\,\text{W/m}^2$, threshold of hearing $I_0 = 1.0 \cdot 10^{-12}\,\text{W/m}^2$
+**Find:** the sound intensity level $L$ in decibels
+**Principle:** The sound intensity level is obtained by comparing the intensity with the threshold of hearing $I_0$ on a logarithmic scale.
+**Formula:** $L = 10\,\text{dB} \cdot \lg \dfrac{I}{I_0}$
+**Conversions:** Not needed: both intensities are in $\text{W/m}^2$, so the units cancel in the quotient.
+**Substitution:** the quotient is $I/I_0 = 10^{12}$, so
+```latex
+\begin{aligned}
+L &= 10\,\text{dB} \cdot \lg \dfrac{1.0\,\text{W/m}^2}{1.0 \cdot 10^{-12}\,\text{W/m}^2} \\
+&= 10\,\text{dB} \cdot \lg 10^{12} \\
+&= 120\,\text{dB}
+\end{aligned}
+```
+**Answer:** $120\,\text{dB}$, two significant figures like the threshold of pain $1.0\,\text{W/m}^2$.
+**Reasonableness:** The ratio of the intensities is $10^{12}$, and every tenfold increase raises the level by $10\,\text{dB}$, so $12 \cdot 10\,\text{dB} = 120\,\text{dB}$. This matches the common knowledge that $120\,\text{dB}$ is the level near a jet aircraft and hurts the ear.
+
+## fy5-15-L2-05
+**Given:** from the table the distances $1.0\,\text{m}$, $2.0\,\text{m}$, $4.0\,\text{m}$, $8.0\,\text{m}$ and $16\,\text{m}$ and the levels $84.2\,\text{dB}$, $78.1\,\text{dB}$, $72.3\,\text{dB}$, $66.2\,\text{dB}$ and $60.1\,\text{dB}$
+**Find:** the average drop in level $\Delta L_1$ per doubling of the distance, in decibels
+**Principle:** Each measuring point is twice the previous one, so the distances are $1.0\,\text{m} \to 2.0\,\text{m} \to 4.0\,\text{m} \to 8.0\,\text{m} \to 16\,\text{m}$, so there are $n = 4$ doublings. The average drop is obtained by dividing the total change in level by $n$.
+**Formula:** $\Delta L_1 = \dfrac{L(1.0\,\text{m}) - L(16\,\text{m})}{n}$
+**Conversions:** Not needed: the levels are in decibels, and $n$ is a plain number.
+**Substitution:** there are $n = 4$ doublings, so
+```latex
+\begin{aligned}
+\Delta L_1 &= \dfrac{84.2\,\text{dB} - 60.1\,\text{dB}}{4} \\
+&= \dfrac{24.1\,\text{dB}}{4} \\
+&= 6.025\,\text{dB}
+\end{aligned}
+```
+**Answer:** $6.03\,\text{dB}$, three significant figures like the meter readings; the division by $4$ is exact.
+**Reasonableness:** The point source model predicts that doubling the distance reduces the intensity to a quarter, so the level drops by $10\,\text{dB} \cdot \lg 4 = 6.02\,\text{dB}$. The measured average drop $6.03\,\text{dB}$ is practically the same, and the individual drops $6.1\,\text{dB}$, $5.8\,\text{dB}$, $6.1\,\text{dB}$ and $6.1\,\text{dB}$ vary only by the measurement error. An open field therefore works as a point source model.
+
+## fy5-15-L2-06
+**Given:** from the table $L(1.0\,\text{m}) = 86.0\,\text{dB}$ and $L(8.0\,\text{m}) = 71.9\,\text{dB}$; the distance increases by the factor $\dfrac{8.0\,\text{m}}{1.0\,\text{m}} = 8.0$
+**Find:** the difference between the measured level $L_\text{meas}$ and the prediction of the point source model $L_\text{model}$, $L_\text{meas} - L_\text{model}$, in decibels
+**Principle:** If the sound travelled from a point source without reflections, the intensity would be inversely proportional to the square of the distance, and the difference in levels would depend only on the ratio of the distances. The prediction is calculated from the reading at $1.0\,\text{m}$ and compared with the measurement.
+**Formula:** $\Delta L = L_\text{meas} - L_\text{model}$, where the prediction is
+```latex
+L_\text{model} = L_1 - 10\,\text{dB} \cdot \lg \left[\left(\dfrac{r_2}{r_1}\right)^{2}\right]
+```
+**Conversions:** Not needed: the distances are in metres and the ratio has no unit.
+**Substitution:** the ratio of the distances is $8.0$, so
+```latex
+\begin{aligned}
+L_\text{model} &= 86.0\,\text{dB} - 10\,\text{dB} \cdot \lg 64 \\
+&= 86.0\,\text{dB} - 18.06\,\text{dB} \\
+&= 67.94\,\text{dB} \\
+L_\text{meas} - L_\text{model} &= 71.9\,\text{dB} - 67.94\,\text{dB} \\
+&= 3.96\,\text{dB}
+\end{aligned}
+```
+**Answer:** $4.0\,\text{dB}$, two significant figures, because the readings of the difference are given to a tenth of a decibel and the prediction is rounded. The prediction of part a) is about $67.9\,\text{dB}$.
+**Reasonableness:** A level $3.96\,\text{dB}$ higher means that the measured intensity is about $10^{0.396} = 2.5$ times that of the model. Explanation: the walls, ceiling and floor of the hall reflect the sound, so in addition to the direct sound, reflected sound arrives at the listening position. The direct sound weakens with distance, but the reflected sound does not nearly as much, so the difference grows farther away: the measured drops $5.9\,\text{dB}$, $5.1\,\text{dB}$ and $3.1\,\text{dB}$ remain smaller than the $6.0\,\text{dB}$ of a point source.
+
+## fy5-15-L2-07
+**Given:** from the table the levels of the reference meter $50.0\,\text{dB}$, $60.0\,\text{dB}$, $70.0\,\text{dB}$ and $80.0\,\text{dB}$ and the readings of the phone $54.1\,\text{dB}$, $63.8\,\text{dB}$, $74.2\,\text{dB}$ and $83.9\,\text{dB}$; in addition $90.0\,\text{dB}$ and $88.6\,\text{dB}$
+**Find:** the factor $k = \dfrac{I_\text{phone}}{I_\text{ref}}$, that is, by what factor the phone estimates the intensity to be too great
+**Principle:** The error of the phone $\Delta L = L_\text{phone} - L_\text{ref}$ is almost the same at the four lowest levels, so it is a systematic error. The difference in levels depends only on the ratio of the intensities, so the ratio of the intensities can be obtained from the mean error.
+**Formula:** $\Delta L_\text{avg} = \dfrac{\Sigma \Delta L}{4}$ and $\Delta L_\text{avg} = 10\,\text{dB} \cdot \lg k$, so
+```latex
+k = 10^{\,\Delta L_\text{avg}/(10\,\text{dB})}
+```
+**Conversions:** Not needed: all levels are in decibels, and the ratio $k$ has no unit.
+**Substitution:** The errors are $4.1\,\text{dB}$, $3.8\,\text{dB}$, $4.2\,\text{dB}$ and $3.9\,\text{dB}$. Their sum is $16.0\,\text{dB}$, so
+```latex
+\begin{aligned}
+\Delta L_\text{avg} &= \dfrac{16.0\,\text{dB}}{4} \\
+&= 4.0\,\text{dB} \\
+k &= 10^{\,4.0\,\text{dB}/(10\,\text{dB})} \\
+&= 2.51
+\end{aligned}
+```
+**Answer:** $2.5$, two significant figures like the mean error $4.0\,\text{dB}$. The phone exceeds the level by $4.0\,\text{dB}$ on average, that is, it estimates the intensity to be about $2.5$ times too great. Result of part c): at $90.0\,\text{dB}$ the error would be expected to be $+4\,\text{dB}$, but the phone shows $1.4\,\text{dB}$ too little, so the reading does not follow the others; the microphone probably saturates (overloads) at a loud sound.
+**Reasonableness:** Three decibels would correspond to double the intensity and five decibels to an intensity $10^{0.5} = 3.2$ times as great, so $4.0\,\text{dB}$ gives a number between $2$ and $3.2$, and $2.5$ is one. A systematic error is corrected by subtracting about $4\,\text{dB}$ from the readings, but the correction is valid only in the measured range $50\,\text{dB}$–$80\,\text{dB}$.
+
+## fy5-15-L3-04
+**Given:** from the table the distances $5.0\,\text{m}$, $10.0\,\text{m}$, $20.0\,\text{m}$ and $40.0\,\text{m}$ and the levels $91.1\,\text{dB}$, $84.8\,\text{dB}$, $79.3\,\text{dB}$ and $72.6\,\text{dB}$; limit $L_\text{limit} = 55\,\text{dB}$ and threshold of hearing $I_0 = 1.0 \cdot 10^{-12}\,\text{W/m}^2$; point source, even spreading, no reflections or attenuation
+**Find:** a) the sound power $P$ of the loudspeaker and b) the distance $r$ at which the level is $55\,\text{dB}$, in metres
+**Principle:** The intensity is calculated from each reading using the level equation, and for a point source $I = \dfrac{P}{4\pi r^2}$ gives the power $P = I \cdot 4\pi r^2$. Because the readings contain measurement error, the power is the mean of all the values. When the power is known, the same formula is solved for the distance at which the intensity corresponds to the limit level.
+**Formula:** $r = \sqrt{\dfrac{P}{4\pi I_\text{limit}}}$, where the power and the intensities are
+```latex
+\begin{aligned}
+&I = I_0 \cdot 10^{\,L/(10\,\text{dB})} \\
+&P = I \cdot 4\pi r^2
+\end{aligned}
+```
+**Conversions:** Not needed: the distances are in metres and the intensities in $\text{W/m}^2$.
+**Substitution:** From the readings the intensities are $1.288 \cdot 10^{-3}\,\text{W/m}^2$, $3.020 \cdot 10^{-4}\,\text{W/m}^2$, $8.51 \cdot 10^{-5}\,\text{W/m}^2$ and $1.820 \cdot 10^{-5}\,\text{W/m}^2$, and the powers $0.4047\,\text{W}$, $0.3795\,\text{W}$, $0.4278\,\text{W}$ and $0.3659\,\text{W}$. The sum of the powers is $1.578\,\text{W}$, so the mean is $P = 0.3945\,\text{W}$. The intensity at the limit level is $I_\text{limit} = 1.0 \cdot 10^{-12}\,\text{W/m}^2 \cdot 10^{5.5} = 3.162 \cdot 10^{-7}\,\text{W/m}^2$, and
+```latex
+\begin{aligned}
+r &= \sqrt{\dfrac{0.3945\,\text{W}}{4\pi \cdot 3.162 \cdot 10^{-7}\,\text{W/m}^2}} \\
+&= \sqrt{9.93 \cdot 10^{4}\,\text{m}^2} \\
+&= 315\,\text{m} \approx 3.2 \cdot 10^{2}\,\text{m}
+\end{aligned}
+```
+**Answer:** The result of part b) is $3.2 \cdot 10^{2}\,\text{m}$, two significant figures, because the limit $55\,\text{dB}$ is given in whole decibels and $\pm 0.5\,\text{dB}$ changes the distance between $297\,\text{m}$ and $334\,\text{m}$; the sound power of part a) is about $0.39\,\text{W}$.
+**Reasonableness:** The level drops by $6.0\,\text{dB}$ with every doubling of the distance. From the level $72.6\,\text{dB}$ at $40\,\text{m}$ to the level $55\,\text{dB}$ is about $17.6\,\text{dB}$, that is, about $2.9$ doublings, so the distance is about $40\,\text{m} \cdot 2^{2.9} \approx 300\,\text{m}$, which fits the result $3.2 \cdot 10^{2}\,\text{m}$. **Justification (part c):** A single reading contains measurement error: the power estimates vary between $0.366\,\text{W}$ and $0.428\,\text{W}$, so the mean evens out the error. Over a long distance, the attenuation of sound by air, attenuation by the ground and vegetation, wind and temperature layers, and reflections from buildings can differ from the model, because the model does not include them; the real level may be lower or higher than the model predicts (attenuation by air and ground usually lowers it, reflections raise it), so the result $3.2 \cdot 10^{2}\,\text{m}$ is an estimate.
+
+## fy5-15-L3-05
+**Given:** power of the guitar amplifier $P_1 = 0.20\,\text{W}$, level of the drum kit $L_2 = 90\,\text{dB}$ at distance $r_2 = 2.0\,\text{m}$, distance of the listener $r = 8.0\,\text{m}$, target level $L_\text{limit} = 70\,\text{dB}$ and $I_0 = 1.0 \cdot 10^{-12}\,\text{W/m}^2$; the sources are in the same place, independent and point sources
+**Find:** a) the combined level $L$ at a distance of $8.0\,\text{m}$ and b) the distance $r_\text{limit}$ at which the combined level is $70\,\text{dB}$, in metres
+**Principle:** The sources are independent, so their intensities are added. The intensity of the amplifier is obtained from the power with the formula $I = \dfrac{P}{4\pi r^2}$, and that of the drums from the level using the level equation and the effect of doubling the distance. Both intensities decrease like $\dfrac{1}{r^2}$, so the total intensity does too, and the distance is obtained from the ratio.
+**Formula:** $r_\text{limit} = r \sqrt{\dfrac{I}{I_\text{limit}}}$, where the total intensity and the level are
+```latex
+\begin{aligned}
+&I = I_1 + I_2 \\
+&L = 10\,\text{dB} \cdot \lg \dfrac{I}{I_0}
+\end{aligned}
+```
+**Conversions:** Not needed: the distances are in metres and the levels in decibels.
+**Substitution:** Amplifier: $I_1 = \dfrac{0.20\,\text{W}}{4\pi \cdot (8.0\,\text{m})^2} = 2.487 \cdot 10^{-4}\,\text{W/m}^2$. Drums: from the level $90\,\text{dB}$ nearby we get $I = 10^{-12}\,\text{W/m}^2 \cdot 10^{9} = 1.0 \cdot 10^{-3}\,\text{W/m}^2$ at a distance of $2.0\,\text{m}$, and at a distance of $8.0\,\text{m}$ the intensity is $\left(\dfrac{2.0}{8.0}\right)^2 = \dfrac{1}{16}$ of that, that is, $I_2 = 6.25 \cdot 10^{-5}\,\text{W/m}^2$. Thus
+```latex
+\begin{aligned}
+I &= 2.487 \cdot 10^{-4}\,\text{W/m}^2 \\
+&\quad + 6.25 \cdot 10^{-5}\,\text{W/m}^2 \\
+&= 3.112 \cdot 10^{-4}\,\text{W/m}^2 \\
+L &= 10\,\text{dB} \cdot \lg \dfrac{3.112 \cdot 10^{-4}}{10^{-12}} \\
+&= 84.93\,\text{dB}
+\end{aligned}
+```
+The level $70\,\text{dB}$ corresponds to $I_\text{limit} = 10^{-12}\,\text{W/m}^2 \cdot 10^{7} = 1.0 \cdot 10^{-5}\,\text{W/m}^2$, so
+```latex
+\begin{aligned}
+r_\text{limit} &= 8.0\,\text{m} \cdot \sqrt{\dfrac{3.112 \cdot 10^{-4}}{1.0 \cdot 10^{-5}}} \\
+&= 8.0\,\text{m} \cdot 5.579 \\
+&= 44.6\,\text{m}
+\end{aligned}
+```
+**Answer:** The result of part b) is $45\,\text{m}$, two significant figures like the power $0.20\,\text{W}$ and the distance $8.0\,\text{m}$; the combined level of part a) is about $85\,\text{dB}$.
+**Reasonableness:** The level drops from the combined level $84.9\,\text{dB}$ to $70\,\text{dB}$, that is, by $14.9\,\text{dB}$, which is about $2.5$ doublings of the distance ($6.0\,\text{dB}$ each), and $8.0\,\text{m} \cdot 2^{2.5} \approx 45\,\text{m}$. The combined level is greater than either source alone ($84.0\,\text{dB}$ and $78.0\,\text{dB}$) but smaller than the sum of their decibels. **Justification (part c):** The range of intensities of hearing is enormous: from the threshold of hearing to the threshold of pain the intensity grows by a factor of $10^{12}$. The logarithmic scale compresses this range into the numbers $0\,\text{dB}$–$120\,\text{dB}$, and hearing distinguishes roughly relative differences, so the same factor of intensity, for example doubling, feels like roughly the same change (about $3\,\text{dB}$) at a quiet and at a loud sound.
