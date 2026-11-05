@@ -19,6 +19,7 @@
     {
       "id": "fy5-5-L1-03",
       "level": 1,
+      "core": true,
       "text": "Merkurius-planeetan massa on $3{,}30 \\cdot 10^{23}\\,\\text{kg}$ ja säde $2{,}44 \\cdot 10^{6}\\,\\text{m}$. Kuinka suuri on gravitaatiokentän voimakkuus Merkuriuksen pinnalla?",
       "answer": 3.70,
       "unit": "m/s²",
@@ -43,6 +44,7 @@
     {
       "id": "fy5-5-L1-06",
       "level": 1,
+      "core": true,
       "text": "Maa vetää Kuuta gravitaatiovoimalla. Kuinka suurella voimalla Kuu vetää Maata?",
       "kind": [
         "concept"
@@ -136,6 +138,7 @@
     {
       "id": "fy5-5-L2-01",
       "level": 2,
+      "core": true,
       "text": "Laboratoriossa mitataan kahden samanmassaisen lyijypallon välistä gravitaatiovoimaa. Kun pallojen keskipisteiden etäisyys on $0{,}40\\,\\text{m}$, voima on $0{,}60\\,\\mu\\text{N}$. Kuinka suuri on kummankin pallon massa?",
       "answer": 38,
       "unit": "kg",
@@ -241,6 +244,7 @@
     {
       "id": "fy5-5-L2-07",
       "level": 2,
+      "core": true,
       "text": "Taulukossa on Maan gravitaatiokentän voimakkuus $g$ eri korkeuksilla $h$ Maan pinnan yläpuolella (esimerkkiaineisto). Maan säde on $R = 6378\\,\\text{km}$.\n\na) Laske jokaiselle riville tulo $g\\,(R + h)^2$ yksikössä $\\text{m}^3/\\text{s}^2$ ja laske tulojen keskiarvo.\n\nb) Mitä suuretta tulo vastaa gravitaatiolain mukaan ja mitä sen pysyminen likimain vakiona osoittaa?\n\nKirjoita a-kohdan keskiarvo vastauslaatikkoon yksikössä $10^{14}\\,\\text{m}^3/\\text{s}^2$.",
       "kind": [
         "data"

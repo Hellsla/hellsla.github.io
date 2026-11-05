@@ -3,6 +3,7 @@
     {
       "id": "fy5-6-L1-01",
       "level": 1,
+      "core": true,
       "text": "The weather satellite NOAA-20 orbits the Earth in a nearly circular orbit of radius $7196\\,\\text{km}$. The mass of the Earth is $5.97 \\cdot 10^{24}\\,\\text{kg}$. Calculate the orbital speed of the satellite. Give the answer in kilometres per second.",
       "answer": 7.44,
       "unit": "km/s",
@@ -43,6 +44,7 @@
     {
       "id": "fy5-6-L1-06",
       "level": 1,
+      "core": true,
       "text": "An astronaut floats on a space station that orbits the Earth at an altitude of $400\\,\\text{km}$. Which of the following explains the floating?",
       "kind": [
         "concept"
@@ -99,6 +101,7 @@
     {
       "id": "fy5-6-L2-02",
       "level": 2,
+      "core": true,
       "text": "A probe orbiting Mars follows a circular orbit at an altitude of $400\\,\\text{km}$ above the surface of Mars. The mass of Mars is $6.42 \\cdot 10^{23}\\,\\text{kg}$ and its radius $3390\\,\\text{km}$. Calculate the orbital speed of the probe. Give the answer in kilometres per second.",
       "answer": 3.36,
       "unit": "km/s",
@@ -123,6 +126,7 @@
     {
       "id": "fy5-6-L2-05",
       "level": 2,
+      "core": true,
       "text": "The table gives the orbital radius $r$ and the orbital period $T$ of the four largest moons of Jupiter (example data, rounded from the real values). The moons orbit Jupiter in nearly circular orbits.\n\nThe circular-orbit model gives $T^2 = \\dfrac{4\\pi^2}{\\gamma M} r^3$, where $M$ is the mass of Jupiter. Calculate the ratio $\\dfrac{r^3}{T^2}$ for each moon in SI units and note that the ratio is almost the same.\n\nDetermine the mass of Jupiter from the mean of the ratios. Give the answer in the unit $10^{27}\\,\\text{kg}$.",
       "kind": [
         "data",

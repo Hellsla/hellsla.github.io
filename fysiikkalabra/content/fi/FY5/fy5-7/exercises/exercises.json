@@ -19,6 +19,7 @@
     {
       "id": "fy5-7-L1-03",
       "level": 1,
+      "core": true,
       "text": "Kuvaaja esittää jousen varassa värähtelevän punnuksen poikkeamaa ajan funktiona. Mikä on värähtelyn amplitudi?",
       "figure": "fy5-7/l1-kuvaaja",
       "answer": 2.5,
@@ -85,6 +86,7 @@
     {
       "id": "fy5-7-L1-08",
       "level": 1,
+      "core": true,
       "text": "Oppilas väittää: ”Kun värähtelijän taajuus kaksinkertaistuu, myös jaksonaika kaksinkertaistuu, koska molemmat kertovat värähtelyn nopeudesta.” Mikä seuraavista korjaa väitteen oikein?",
       "kind": [
         "error",
@@ -118,6 +120,7 @@
     {
       "id": "fy5-7-L2-01",
       "level": 2,
+      "core": true,
       "text": "Ilmatyynyradalla oleva vaunu on kiinnitetty kahden jousen väliin ja värähtelee radan suunnassa. Kuvaaja esittää vaunun poikkeamaa tasapainoasemasta ajan funktiona sinimallin mukaan. Mikä on vaunun poikkeama tasapainoasemasta hetkellä $0{,}10\\,\\text{s}$?",
       "figure": "fy5-7/l2-kuvaaja",
       "answer": 2.9,
@@ -127,6 +130,7 @@
     {
       "id": "fy5-7-L2-02",
       "level": 2,
+      "core": true,
       "text": "Graphical Analysis Pron sinisovitus $y = A \\sin(Bt + C) + D$ antoi värähtelevän punnuksen mittaukselle kertoimen $B = 12{,}6\\,\\tfrac{1}{\\text{s}}$. Mikä on värähtelyn taajuus?",
       "answer": 2.01,
       "unit": "Hz",

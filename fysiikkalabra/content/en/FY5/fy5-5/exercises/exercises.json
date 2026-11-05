@@ -19,6 +19,7 @@
     {
       "id": "fy5-5-L1-03",
       "level": 1,
+      "core": true,
       "text": "The mass of the planet Mercury is $3.30 \\cdot 10^{23}\\,\\text{kg}$ and its radius is $2.44 \\cdot 10^{6}\\,\\text{m}$. How large is the gravitational field strength on the surface of Mercury?",
       "answer": 3.7,
       "unit": "m/s²",
@@ -43,6 +44,7 @@
     {
       "id": "fy5-5-L1-06",
       "level": 1,
+      "core": true,
       "text": "The Earth pulls the Moon with a gravitational force. How large a force does the Moon exert on the Earth?",
       "kind": [
         "concept"
@@ -136,6 +138,7 @@
     {
       "id": "fy5-5-L2-01",
       "level": 2,
+      "core": true,
       "text": "In a laboratory the gravitational force between two lead spheres of equal mass is measured. When the distance between the centres of the spheres is $0.40\\,\\text{m}$, the force is $0.60\\,\\mu\\text{N}$. What is the mass of each sphere?",
       "answer": 38,
       "unit": "kg",
@@ -241,6 +244,7 @@
     {
       "id": "fy5-5-L2-07",
       "level": 2,
+      "core": true,
       "text": "The table gives the gravitational field strength $g$ of the Earth at different heights $h$ above the Earth's surface (example data). The radius of the Earth is $R = 6378\\,\\text{km}$.\n\na) For each row calculate the product $g\\,(R + h)^2$ in the unit $\\text{m}^3/\\text{s}^2$ and calculate the mean of the products.\n\nb) According to the law of gravitation, which quantity does the product correspond to, and what does its staying approximately constant show?\n\nWrite the mean of part a in the answer box in the unit $10^{14}\\,\\text{m}^3/\\text{s}^2$.",
       "kind": [
         "data"

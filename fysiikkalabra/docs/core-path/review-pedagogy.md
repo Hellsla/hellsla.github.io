@@ -2,20 +2,28 @@ VERDICT: PASS
 
 Pedagogy review of the module-level core path selection for FY1–FY8. This review stands in for re-reviewing each exercise set whose only change is a `"core": true` mark (reviews.py carry category `core-mark`). Checked against Lauri's brief of 2026-11-05.
 
-The first pass covered FY1, FY2, FY3, FY4, FY6 and FY7. A second pass added FY8 (all 16 chapters, with the bank extended to 20 exercises per chapter) and FY5 (13 of 17 chapters).
+The first pass covered FY1, FY2, FY3, FY4, FY6 and FY7. A second pass added FY8 (all 16 chapters, with the bank extended to 20 exercises per chapter) and FY5 (13 of 17 chapters). A third pass added fy5-5–fy5-8, which were marked after their bank PR (#314) was merged.
 
-The verdict does not cover fy5-5–fy5-8 yet. Their bank PR (#314) is still open and they carry no marks, so they still fall back to the default first two of levels 1 and 2. That makes their core calculations only (`core_path.py` lists them as the only calculation-only chapters left in FY1–FY8). Review these four chapters when they are marked.
+All three passes pass. The third pass first failed fy5-5, fy5-6 and fy5-7 on three Blocking items, all now fixed (see below). fy5-8 passed as marked.
 
 ## Blocking
 
-None. I found no chapter whose core set clearly mismatches its learning goals or the brief:
+None. The third pass (fy5-5–fy5-8) had three Blocking items. All are fixed, and I checked them against the files:
+
+- **fy5-6** (fixed): the core mark moved from L2-06 to L2-05 in fi, en and fi-easy. L1-01, L2-02 and L2-06 had all computed the same orbital speed, and no core exercise touched the period or tested the circular-orbit model. L2-05 (Jupiter's moons, $r^3/T^2$ nearly the same, then Jupiter's mass) does both and keeps the data skill. The FY5.md row now lists L1-01, L1-06, L2-02, L2-05 and names *siirto* and *tarkistus-2* for the period from the equation of motion. `core_path.py FY5` shows the new set.
+- **fy5-7** (fixed): the row said L2-02 gives the period. It asks for the frequency. The row also left out goal 2 (L2-01 computes $x(0{,}10\,\text{s})$ from $A$ and $T$ read off the graph). The first sentence now says both. The selection did not change.
+- **fy5-5** (fixed): the row said the core computes the force between two balls (L2-01 asks for their mass from the measured force) and that L2-07 only shows $g$ falling with height (it shows $g(R+h)^2$ constant). The row now says what the tasks do and names *tarkistus-3* for goal 3. The selection did not change.
+
+**fy5-8 passes.** L1-08 (slope of spring B's line) and L2-05 (choose the linear region, then fit a line through the origin) cover goal 2, the spring constant from a slope, which the earlier note asked for. L1-06 covers the range where $F_\text{v} = kx$ holds, and L2-01 covers the elastic potential energy. The direction of the harmonic force (goal 1) is not in any core exercise, but it is in the required lesson tasks *pred-1*, *johtopaatos* and *check-1* ($F = -kx$). The row is accurate.
+
+In all passes, I found no chapter whose core set clearly mismatches its learning goals or the brief:
 
 - Every chapter has 4 core exercises (fy6-13 has 5, with a stated reason, and fy7-15 is the rework discussed below).
 - All marked exercises are level 1–2 and already existed. No content was changed.
 - No chapter's core is calculations only. Written reasoning, self-drawn graphs and investigation or data tasks are chosen where the goals ask for them. Force diagrams are core in the FY4 chapters whose goals name them (4–6, 13, 14, 16).
 - The marking is the same everywhere: `"core": true` on an exercise or a non-optional lesson task, rendered with the same "Ydintehtävä" tag (build.py `exercise_html`, inquiry.py `act`).
-- The fi, en and fi-easy files mark the same ids in all 80 chapters of the first pass and in all 33 chapters of FY5 and FY8. fy5-5–fy5-8 have no marks in any language.
-- **FY5** (13 marked chapters): 4 core exercises per chapter, 5 in fy5-15 (with a stated reason). Force diagrams are core in fy5-4, the chapter whose goals name them: L2-01 and the error task L2-07, both with `fbd`. In fy5-2 the force-diagram goal is carried by the required lesson task *piirra* (explain, draw). fy5-11 has one calculation and three reasoning tasks, which suits its qualitative goals. FFT, beats and spectra in fy5-14 are covered by L2-06 together with the required lesson tasks *spektri*, *fft* and *huojunta-kuvaaja*.
+- The fi, en and fi-easy files mark the same ids in all 80 chapters of the first pass and in all 33 chapters of FY5 and FY8. In the third pass, fy5-5–fy5-8 mark the same ids in fi, en and fi-easy, all at level 1 or 2.
+- **FY5** (13 chapters in the second pass, all 17 in the third pass): 4 core exercises per chapter, 5 in fy5-15 (with a stated reason). Force diagrams are core in fy5-4, the chapter whose goals name them: L2-01 and the error task L2-07, both with `fbd`. In fy5-2 the force-diagram goal is carried by the required lesson task *piirra* (explain, draw). fy5-11 has one calculation and three reasoning tasks, which suits its qualitative goals. FFT, beats and spectra in fy5-14 are covered by L2-06 together with the required lesson tasks *spektri*, *fft* and *huojunta-kuvaaja*.
 - **FY8**: 4 core exercises in every chapter, none of them calculations only. Self-drawn or read graphs are chosen where a constant comes from a slope or a graph: fy8-1 (Planck), fy8-4 (Compton), fy8-6 (LED threshold, L2-05), fy8-8 (gamma calibration), fy8-12 (half-value thickness) and fy8-16 (Hubble). Chapters with explaining or classifying goals (fy8-11, fy8-14, fy8-15) have one plain calculation each, with reasoning and error-finding tasks in place of the rest.
 
 **fy7-15 is enough.** The basic path leaves out Malus's and Brewster's laws (the theory box and the whole of level 2 are deepening content). So L1-01 (half the intensity through one polariser) and L1-06 (why polarised sunglasses cut glare) are the only level 1–2 exercises that fit the basic path. Explicit `"core": false` on L2-01 and L2-02 stops the default first-two rule from putting Malus calculations on the core path. The three marked lesson tasks cover the other goals:
@@ -52,7 +60,9 @@ All optional. Each item swaps one existing exercise or adds a mark to an existin
 - **fy8-3**: the goal "arvioimaan Bohrin mallin onnistumisia ja puutteita" has no level 1–2 exercise. Its only task is the optional *tarkistus-3* (what the Bohr model got right and why it was abandoned). This is the same kind of gap as fy8-16, and the same two options apply. FY8.md does not mention it.
 - **fy5-14**: optionally swap L1-03 (third overtone) for L1-05 (classify infrasound, audible sound and ultrasound). The infra/ultra classification in goal 1 has no core task, while the harmonic series is also met in L2-06's FFT spectra. Keep L1-03 if the calculation weighs more.
 - **fy5-2**: the goal "laskemaan tukivoimia voimakuvion … avulla" has no core exercise with `fbd` (the chapter's bank has none at levels 1–2). It is carried by the required lesson task *piirra* (explain, draw). This is a candidate for the lesson-mark rule above.
-- **fy5-5–fy5-8**: select and review once PR #314 is merged. Their goals call for a graph and a sine fit (fy5-7) and for a spring constant from a slope (fy5-8). The current default core does neither.
+- **fy5-7**: the graph and sine-fit goals are now covered. L1-03 and L2-01 read the $(t, x)$ graph, L2-02 interprets a fit coefficient, and the required lesson tasks *koe-1*–*koe-3* fit a sine to points. No core exercise is a data task. If one is wanted, swap L1-08 for L2-05 (frequency from a series of peak times). L1-03 and L2-01 have no `graph` in `kind`, so `core_path.py` counts them as *lasku* (FY5.md says this). Adding `"graph"` would make the report accurate. That is a metadata change, as for fy3-1 and fy3-9.
+- **fy5-8**: L1-08 and L2-05 both practise the spring constant from a slope. That is deliberate, since the second goal is the chapter's main one. L1-07 (energy when the extension doubles) could replace L1-06 if the energy goal needs more weight. *johtopaatos* already asks for it.
+- **fy5-5**: goal 1 names accelerations too, but L1-06 asks only about the forces (the feedback mentions the accelerations). The accelerations are in the required *johtopaatos*. No change needed.
 
 ## Checked
 
@@ -70,7 +80,8 @@ All optional. Each item swaps one existing exercise or adds a mark to an existin
   - FY8: fy8-3, fy8-5, fy8-6, fy8-9, fy8-11, fy8-14, fy8-15, fy8-16
   - Also read the lesson activities of fy8-3 and fy8-16.
   - Re-read the core ids of fy1-1, fy3-1 and fy3-3 after the swaps.
-- Ran the same consistency script over FY5 and FY8 (33 chapters): fi, en and fi-easy core ids match, every mark is in level 1 or 2, and the count is 4 except fy5-15 (5) and fy5-5–fy5-8 (0, unmarked). No `inquiry.json` in FY5 or FY8 carries `core`. The first-pass check still passes on all 80 chapters after the swaps.
+- Third pass: ran `python3 scripts/core_path.py FY5`. For fy5-5–fy5-8, read the `learn` goals, all level 1–2 exercises in fi (text, `kind`, data and figures), the rows in FY5.md, and the lesson activities with their `optional` flags. Checked the fy5-7 graph values in `lessons/FY5/fy5-7/answers.py` and `figures.py`. Checked that fi, en and fi-easy mark the same ids (4 per chapter, levels 1–2), that L2-05 exists in all three languages for the proposed fy5-6 swap, and that no `inquiry.json` in these chapters carries `core`. After the fixes: re-read the fy5-5, fy5-6 and fy5-7 rows in FY5.md, re-checked the core ids in all three languages (fy5-6 now L1-01, L1-06, L2-02, L2-05) and re-ran `core_path.py FY5`.
+- Ran the same consistency script over FY5 and FY8 (33 chapters): fi, en and fi-easy core ids match, every mark is in level 1 or 2, and the count is 4 except fy5-15 (5) and fy5-5–fy5-8 (0, unmarked at the time; 4 each in the third pass). No `inquiry.json` in FY5 or FY8 carries `core`. The first-pass check still passes on all 80 chapters after the swaps.
 - Read the lesson activities (`inquiry.json`, including the `optional` flags) for fy1-1, fy1-2, fy1-8, fy2-4, fy2-8, fy3-3, fy6-10 and fy7-15.
 - Ran a script over all 80 chapters of the six modules. It confirmed that:
   - the ordered list of core ids in fi equals the list in en and in fi-easy;
