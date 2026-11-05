@@ -1,15 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 80b579567e7ecba1
+CONTENT-HASH: b5a6b2f9904f4525
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
+
+## Fixed
+- exercises.json L1-06 and L2-06 question stems: "describes the situation ... correctly" / "corrects the claim correctly" reworded to natural English ("correctly describes the pulses after they meet", "correctly fixes the claim"). No numbers or flags touched.
 
 ## Polish
 (none)
 
 ## Checked
-- exercises.json and solutions.md compared with content/fi/FY5/fy5-12/exercises: same 12 tasks, ids, answers, units and tolerances (check_i18n: no difference in anything but texts).
-- All numbers compared by script with the Finnish (decimal comma → point): identical multisets in both files.
-- Every solution keeps its seven parts (Given, Find, Principle, Formula, Conversions, Substitution, Answer, Reasonableness; L1-03 Find/Principle/Model answer) — 103 bold lead-ins in both languages.
-- Physics wording checked task by task: L1-01 4.0 cm, L1-02 +1.8 cm, L1-03 c/d/c/d, L1-04 0.34 m, L1-05 3.0 cm, L2-01 0.80 m (Pythagoras, n = 0), L2-02 10.0 cm (unit conversion kept), L2-03 1.0 mm (unequal amplitudes), L2-04 1.5 s, L3-01 6 quiet spots (triangle inequality), L3-02 Δs = v/(f2 − f1) = 6.0 cm, L3-03 8.0 m (diffraction argument for in-phase gaps).
-- Significant-figure justifications translated faithfully ("to a tenth of a centimetre" = Finnish millimetre precision).
+- 20 tasks; ids, answers, units, tolerances, kind tags, correct flags and choice counts identical to fi for L1-06..08, L2-05..07, L3-04..05.
+- Every number in all new tasks, choices, feedback and data tables compared by script with the Finnish (decimal comma to point): identical.
+- Answers recomputed: L1-08 200 Hz, L2-05 680 Hz, L2-07 4.0 mm (lambda 2.0 cm), L3-04 4.00 m and 340 Hz, L3-05 850 Hz (853/851 Hz check).
+- Solutions keep all lead-ins and the Finnish reasoning (n = 0 argument, triangle/Pythagoras steps, lambda/2 spacing, energy conservation, noise-cancelling headphones).
+- No Finnish left in en; check_i18n en: 0 errors.

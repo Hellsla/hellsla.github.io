@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 80b579567e7ecba1
+CONTENT-HASH: b5a6b2f9904f4525
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions L2-01 Formula — the long λ = 2(√(d² + s_B²) − s_B) chain wraps after "λ =" at 1280 px (same as the Finnish); split into two inline formulas when the Finnish is next edited.
+(none)
 
 ## Checked
-- open-exercises-L3-1280-2 at full size; level 1 opened in contact-4 (#45–48); exercise intro in contact-3 (#25).
-- Decimal points throughout, upright units with thin spaces, \cdot for products, aligned substitution chains, answer boxes.
-- No Finnish left (grep for ä/ö and {,} in exercises.json and solutions.md: none).
+- fy5-12-open-exercises-1280-6.png (L1-06 solution, L1-07 choices): clean, no Finnish, no clipping.
+- fy5-12-open-exercises-L2-1280-6.png (L2-05 table with six points, solution, formulas): table and calculation boxes legible.
+- Data tables L2-05, L2-07, L3-05: captions translated, columns and cells match fi.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish (English) 5 · accessibility 5
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4
