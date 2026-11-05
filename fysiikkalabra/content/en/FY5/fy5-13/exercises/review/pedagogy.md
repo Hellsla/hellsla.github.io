@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 777ce47a22b6a090
+CONTENT-HASH: 173579a1f8da8734
 
 ## Blocking
 (none)
+
+## Fixed
+- solutions.md L3-05: wording "hall" made "warehouse", as in the task (consistency only).
 
 ## Polish
 (none)
 
 ## Checked
-- Levels 1–3 (5/4/3 tasks) as in the Finnish; situation first, question last in every task; core markers on L1-01/02 and L2-01/02.
-- Solutions complete (given, find, principle, formula solved symbolically, conversions, substitution, answer with significant-figure reason, reasonableness) in every task; nothing dropped.
-- L2-04 figure needed to answer and legible at 1280 px (open-exercises-L2-1280 via contact-5 #60); its description gives the ruler and loop count.
-- Contexts (double bass, school pipe, church organ, cello, resonance tube, vibrator and pulley) translated naturally; no Finnish left; chapter names only.
+- Structure of the eight new tasks equals the Finnish: situation first, question last, parts a)/b)/c) kept, "The answer box takes the result of part ..." in every multi-part task.
+- Core misconception tasks (L1-06 node versus antinode, L1-07 closed tube, L1-08 error analysis, L2-07 shortened string) keep one-misconception-per-distractor feedback that explains why, not only that it is wrong.
+- Solutions keep all parts (Given, Find, Principle, Formula, Conversions, Substitution, Answer with significant-figure reason, Reasonableness); model answers of the concept tasks discuss every distractor.
+- Wording reads as natural British textbook English (tuning peg, fingerboard, tuning fork, warehouse); no calques from the Finnish found.
