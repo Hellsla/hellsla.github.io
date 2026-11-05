@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: d0e4b45564aa64a8
-ROUND: 2
+CONTENT-HASH: bf811b5954b48e62
+ROUND: 3
 
 ## Blocking
-(none) Both round-1 Majors fixed: (1) the Mallivastaus chains are broken at "=" ("... = 1,0 kg · 20 K, eli Q = 83 800 J ≈ 84 kJ") and every result with its unit is visible at 390 px; (2) the task lists the items as Kattila, Kiehuva vesi, Teekannu, Jääpussi, which is neither the answer order nor the mass order, so the form no longer gives the answer away (the select widget stays shuffled).
+(none) Delta of commit 3b0a55d57: the masses in the L2-08 model answer are now listed smallest first (kiehuva vesi 0,10 kg, jääpussi 0,50 kg, kattila 0,60 kg, teekannu 1,0 kg), matching "pienimmästä suurimpaan" used for the heat order. Reads clearly and consistently.
 
 ## Polish
-- [Minor] Mallivastaus last "Arvio" sentence is long; split after "paljon".
-- [Minor] Periaate now names c, s and r in a list-like sentence; fine, optional comma tidy.
+- [Minor] "Lämmön järjestys on lähes päinvastainen" — the quantity is lämpömäärä; "Lämpömäärien järjestys on lähes päinvastainen" is more exact (the heat order is the reverse of the mass order except that jääpussi and kattila keep their places).
+- [Minor] The Arvio sentence is long; optional split after "paljon".
 
 ## Checked
-- Renders (own Playwright, 390 px, preview/fy3-7.html): L2-08 with all ranks set, answers shown, solution open, read in tiles: task rows, four selects with "Oikea sija", Periaate, Mallivastaus. No katex overflow; scrollWidth 390.
-- Text only: the other exercises of the set (full-mode packet); nothing outside L2-08 re-rendered.
+- Render (own Playwright, 390 px, preview/fy3-7.html rebuilt with build.py fy3-7): L2-08 with ranks set, feedback unhidden, solution open; read the end of Periaate, the four Mallivastaus chains and the changed sentence. All chains and the unit-bearing masses fit; no katex overflow; scrollWidth 390.
+- Text only: the rest of the page unchanged since round 2 (PASS); hash at start and end bf811b5954b48e62.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 4

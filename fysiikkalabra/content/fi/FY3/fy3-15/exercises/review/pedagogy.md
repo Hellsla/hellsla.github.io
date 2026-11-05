@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 59dbbb72338667fe
+CONTENT-HASH: 6dc7d815de1ec77f
 
 ## Blocking
 - none
 
 ## Polish
-- fy3-15-L2-08 — the 15 000 MW option can be dropped by sight (above the 1200 MW given); the "final temperature in kelvins" distractor is not a mistake the chapter warned of; "kuten lauhdutinhäviöltä odottaa" reads oddly. All optional (round 1, unchanged).
+- fy3-15-L2-08 — the 15 000 MW option can be dropped by sight (above the 1200 MW given); the "final temperature in kelvins" distractor is not a mistake the chapter warned of. Both optional (round 1, unchanged).
 
 ## Checked
-- Round 2. Round-1 Blocking resolved: the task is now fy3-15-L2-08 (level 2, three steps and a magnitude choice), in the level2 list, no id clash, solutions.md heading renamed, no L1-09 left. Level-1 count is 8.
-- Content otherwise unchanged and verified in round 1 (5,0·10⁸ W, 42 %).
-- Text only (the diff is the move; no fresh render opened for this chapter).
+- Round 3 (delta). The diff is the typo "polttoaineteosta" to "polttoainetehosta" in the correct option's feedback and in the solution's Järkevyys; both read correctly now and no other occurrence remains. Numbers unchanged (5,0·10⁸ W, 42 %); the round-2 level fix stands.
+- Text only; no render opened (a spelling change).
