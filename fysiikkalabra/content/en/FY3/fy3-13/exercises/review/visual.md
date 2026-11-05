@@ -1,18 +1,20 @@
-VERDICT: FAIL
+VERDICT: PASS
 CONTENT-HASH: 733cd6c68e7ef781
 Mode: full
-Round: 2
+Round: 3
 
 ## Blocking
-- [Major] data-table captions in L2-05, L2-06, L2-07, L3-04, L3-05 (L2-08 is fixed and fits) (390 px) — the caption is one unwrapped line wider than the phone, so the closing "(example data)" / "(esimerkkiaineisto)" label is cut off (measured caption widths against about 330 px of space: "Pressure of the air in a sealed flask (example data)" is 356 px wide). It is the label that marks the data as example data, so a reader may take it for a real measurement. The same defect was in my round-1 finding; the round-1 fix reached only L2-08, and the cause is the shared template, not the wording — let the caption wrap (white-space: normal on the data table caption in templates/CSS), which fixes every chapter at once; shortening each caption is the alternative. May wait only if the template fix is scheduled before publication.
+(none)
+
+## Fixed
+- Data-table captions: after the template change (table.ex-data caption wraps) every data caption in the page measures at 390 px with its right edge at 357 px or less and two lines at most, so "(example data)" / "(esimerkkiaineisto)" is fully visible. Round-2 Major closed. Round-1 fixes (en pick-* aria-labels, fy3-13 L2-08 caption) stay fixed.
 
 ## Polish
-- [Minor] L2-08 solution (fy3-13) / graph tick labels (fy3-9) — small items from round 1 (en-dash line break in "114.5–116.5 kPa"; small tick labels of the pick-* graphs at 390 px) remain optional.
+- [Minor] small tick labels of the fy3-9 pick-* graphs at 390 px; optional.
+- [Minor] (pre-existing, out of scope) fy3-13 lesson inquiry.json: the feedback chain "θ0 = 40 °C − 116 kPa / 0.367 … ≈ −276 °C" is wider than the phone; break it at the equals signs.
 
 ## Checked
-- Own 390 px renders of every exercise task with solutions open: en 9 and 13, contact sheets 0, 2 (fy3-9) and 0, 3 (fy3-13), L2-08 individually; caption widths of every data table in the four pages measured by script.
-- Round-1 Major fixed: the L2-08 caption "Air pressure, sealed bottle (example data)" now fits at 390 px.
-- Maths (fractions, aligned substitutions, units upright, decimal point) clean in the opened tasks; no other blocking item seen. Sheets 1, 4, 5 of the full en sets were not opened.
+- Rebuilt fy3-9 and fy3-13; measured every exercise data caption of en and fi-easy pages at 390 px by script (all fit); opened crops of a two-line caption in fi-easy fy3-13 L3-04 and en fy3-9 L2-06 (wrapped, legible, table unharmed). Rounds 1-2 renders of the tasks and solutions (maths, units, layout) remain valid, as the content hash is unchanged by CSS. Hash re-run at the end: unchanged.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish (English) 4 · accessibility 4
