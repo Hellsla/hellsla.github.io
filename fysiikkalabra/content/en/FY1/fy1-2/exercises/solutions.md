@@ -69,6 +69,11 @@
 **Principle:** In the formula $\rho = \dfrac{m}{V}$ the mass is divided by the volume. Units are treated like quantities: the unit of a quantity is obtained by substituting the units of the quantities into the formula. The unit of volume is a product of three lengths, $\text{m}\cdot\text{m}\cdot\text{m} = \text{m}^3$.
 **Model answer:** Substitute the units into the formula: $\dfrac{\text{kg}}{\text{m}^3}$, so the unit of density is $\text{kg/m}^3$. The kilogram is in the numerator because the mass is in the numerator of the formula. The product $\text{kg}\cdot\text{m}^3$ does not come from a division, the inverse $\text{m}^3/\text{kg}$ would describe volume per unit of mass, and the square metre is a unit of area. A unit check can therefore be used to verify that a formula has been written correctly.
 
+## fy1-2-L1-09
+**Find:** which of the given expressions can be a speed.
+**Principle:** A speed tells how long a distance is covered in a unit of time, so its unit is a unit of length divided by a unit of time. The unit of an expression is obtained by substituting the units into the expression in the same way as for quantities: units are multiplied and divided like numerical values.
+**Model answer:** The expression $\dfrac{12\,\text{km}}{3.0\,\text{h}}$ is a distance divided by a time, and its unit is $\text{km/h}$, so it can be a speed. The unit of the product is $\text{km}\cdot\text{h}$, so it is not a length divided by a time. The unit of the inverse expression is $\text{h/km}$, that is time per distance, so it is not a speed either. A squared time in the denominator gives the unit $\text{km/h}^2$, which is a unit of the acceleration type. The answer is therefore found from the units alone, and no numerical values need to be calculated.
+
 ## fy1-2-L2-01
 **Given:** clock frequency $f = 3.2\,\text{GHz}$, time $t = 5.0\,\text{ms}$; $1\,\text{GHz} = 10^{9}\,\text{Hz}$ and $1\,\text{Hz} = 1/\text{s}$
 **Find:** the number of clock cycles $N$

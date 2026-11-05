@@ -114,6 +114,37 @@
           "correct": true
         }
       ]
+    },
+    {
+      "id": "fy1-2-L1-09",
+      "level": 1,
+      "text": "The distance $s$ is measured in kilometres and the time $t$ in hours. Which of the following expressions can be a speed?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "$\\dfrac{12\\,\\text{km}}{3.0\\,\\text{h}}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "$12\\,\\text{km}\\cdot3.0\\,\\text{h}$",
+          "feedback": "The unit of the product is $\\text{km}\\cdot\\text{h}$, which is not a length divided by a time. A speed tells how long a distance is covered in a unit of time, so the distance is divided by the time, not multiplied by it."
+        },
+        {
+          "text": "$\\dfrac{3.0\\,\\text{h}}{12\\,\\text{km}}$",
+          "feedback": "The unit is $\\text{h/km}$, that is time per distance. It is the inverse of a speed: it tells how long it takes to cover one kilometre. In a speed the distance is in the numerator and the time in the denominator."
+        },
+        {
+          "text": "$\\dfrac{12\\,\\text{km}}{3.0\\,\\text{h}}$",
+          "feedback": "Correct: the unit is $\\text{km/h}$, a length divided by a time, and it is a unit of speed. The expression can also be converted to $\\text{m/s}$.",
+          "correct": true
+        },
+        {
+          "text": "$\\dfrac{12\\,\\text{km}}{(3.0\\,\\text{h})^2}$",
+          "feedback": "The time in the denominator is squared, so the unit is $\\text{km/h}^2$. It is a unit of the acceleration type, not of speed: in a speed the time is in the denominator only to the first power."
+        }
+      ]
     }
   ],
   "level2": [

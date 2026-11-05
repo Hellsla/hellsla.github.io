@@ -613,7 +613,7 @@ ul.choices input:disabled+span{color:var(--ink-2)}ul.choices input:checked:disab
 fieldset.choice.models ul.choices{display:grid;gap:.4rem;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr))}
 fieldset.choice.models ul.choices li{display:flex;flex-direction:column}fieldset.choice.models ul.choices label{border:1px solid var(--line);border-radius:10px;flex:1 0 auto;box-sizing:border-box}fieldset.choice.models .feedback{margin-left:0}   /* the opened feedback follows its card in the same grid cell, never over the next row (visual audit 2026-10-31, fy1-8) */
 fieldset.choice.figures ul.choices{display:grid;gap:.6rem;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr))}
-fieldset.choice.figures ul.choices label{height:100%;box-sizing:border-box}fieldset.choice.figures ul.choices label>span{flex:1;min-width:0}
+fieldset.choice.figures ul.choices li{display:flex;flex-direction:column}fieldset.choice.figures ul.choices label{flex:1 0 auto;box-sizing:border-box}fieldset.choice.figures .feedback{margin-left:0}   /* the opened feedback follows its card in the same grid cell (visual review 2026-11-05, fy1-5 L2-08) */fieldset.choice.figures ul.choices label>span{flex:1;min-width:0}
 fieldset.choice.figures .task-fig{margin:.3rem 0 0}
 .explain .drew{display:flex;gap:.6rem;align-items:flex-start;min-height:44px;padding:.5rem 0;cursor:pointer}.explain .drew input{margin:.25rem 0 0;width:1.15rem;height:1.15rem;flex:none;accent-color:var(--accent)}
 .crit-detail{color:var(--ink-2)}

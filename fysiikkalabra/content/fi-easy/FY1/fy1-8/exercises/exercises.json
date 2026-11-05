@@ -131,6 +131,45 @@
           "feedback": "Parannusehdotus ja jatkotutkimus kuuluvat pohdintaan. Tuloksissa ei kerrota ehdotuksia."
         }
       ]
+    },
+    {
+      "id": "fy1-8-L1-09",
+      "level": 1,
+      "text": "Oppilaat tutkivat, riippuuko leluauton kulkuaika rampin alapäästä maaliviivalle auton massasta. He lisäävät autoon painoja ($0\\,\\text{g}$, $50\\,\\text{g}$ ja $100\\,\\text{g}$). He käyttävät samaa ramppia ja samaa matkaa. He mittaavat ajan käsikellolla, jonka epävarmuus on $\\Delta t = 0{,}2\\,\\text{s}$. Päättele, mitkä väitteet tutkimussuunnitelmasta ovat tosia ja mitkä epätosia.",
+      "kind": [
+        "concept",
+        "experiment"
+      ],
+      "answer": "1 tosi, 2 epätosi, 3 epätosi, 4 tosi, 5 epätosi",
+      "unit": "",
+      "tolerance": 0.02,
+      "statements": [
+        {
+          "text": "Muutettava muuttuja on auton massa ja mitattava muuttuja on kulkuaika.",
+          "true": true,
+          "feedback": "Oikein: massaa muutetaan tarkoituksella, ja sen vaikutusta mitataan ajasta. Muutettava ja mitattava muuttuja ovat eri suureita."
+        },
+        {
+          "text": "Rampin kulma saa vaihdella ajojen välillä, koska tutkimuksessa ei tutkita kulmaa.",
+          "true": false,
+          "feedback": "Väärin: juuri siksi kulma pitää vakioida eli pitää samana. Jos kulma muuttuu massan mukana, ei tiedetä, kumpi muutos vaikutti aikaan. Vakioitavat muuttujat pidetään samoina."
+        },
+        {
+          "text": "Yksi ajo kullakin massalla riittää, koska kello näyttää sadasosasekunteja.",
+          "true": false,
+          "feedback": "Väärin: kellon tarkkuus ei ole sama asia kuin ajanoton epävarmuus. Käsin mitattuna epävarmuus on noin $0{,}2\\,\\text{s}$. Yhdestä lukemasta ei näe hajontaa. Mittaus toistetaan useita kertoja."
+        },
+        {
+          "text": "Jos kahden massan ajat eroavat toisistaan vähemmän kuin $0{,}2\\,\\text{s}$, mittaus ei osoita massan vaikuttavan aikaan.",
+          "true": true,
+          "feedback": "Oikein: ero, joka ei ylitä epävarmuutta, voi johtua pelkästä ajanoton virheestä. Silloin eroa ei voi osoittaa. Tämä ei kuitenkaan todista, ettei vaikutusta ole."
+        },
+        {
+          "text": "Jos aika ei riipu massasta, tutkimus on epäonnistunut.",
+          "true": false,
+          "feedback": "Väärin: hypoteesin kumoutuminen on tutkimustulos, josta opitaan jotakin. Epäonnistunut tutkimus on sellainen, josta ei voi päätellä mitään, esimerkiksi hallitsemattomien muuttujien vuoksi."
+        }
+      ]
     }
   ],
   "level2": [

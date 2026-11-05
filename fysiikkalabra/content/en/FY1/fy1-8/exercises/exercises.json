@@ -131,6 +131,45 @@
           "feedback": "A suggestion for improvement and further research belongs in the discussion. The results do not present suggestions."
         }
       ]
+    },
+    {
+      "id": "fy1-8-L1-09",
+      "level": 1,
+      "text": "Students investigate whether the time a toy car takes to travel from the bottom of a ramp to the finish line depends on the mass of the car. They add weights to the car ($0\\,\\text{g}$, $50\\,\\text{g}$ and $100\\,\\text{g}$), use the same ramp and the same distance, and measure the time with a hand-held stopwatch whose uncertainty is $\\Delta t = 0.2\\,\\text{s}$. Decide which statements about the research plan are true and which are false.",
+      "kind": [
+        "concept",
+        "experiment"
+      ],
+      "answer": "1 true, 2 false, 3 false, 4 true, 5 false",
+      "unit": "",
+      "tolerance": 0.02,
+      "statements": [
+        {
+          "text": "The independent variable is the mass of the car and the dependent variable is the travel time.",
+          "true": true,
+          "feedback": "Correct: the mass is changed on purpose and its effect is measured from the time. The independent and the dependent variable are different quantities."
+        },
+        {
+          "text": "The angle of the ramp may vary between runs, because the investigation does not study the angle.",
+          "true": false,
+          "feedback": "Wrong: that is exactly why the angle must be controlled. If the angle changes with the mass, it is not known which change affected the time. Controlled variables are kept the same."
+        },
+        {
+          "text": "One run with each mass is enough, because the clock shows hundredths of a second.",
+          "true": false,
+          "feedback": "Wrong: the resolution of a clock is not the same thing as the uncertainty of timing. Timed by hand, the uncertainty is about $0.2\\,\\text{s}$, and a single reading does not show the spread. The measurement is repeated several times."
+        },
+        {
+          "text": "If the times of two masses differ by less than $0.2\\,\\text{s}$, the measurement does not show that mass affects the time.",
+          "true": true,
+          "feedback": "Correct: a difference that does not exceed the uncertainty can be caused by timing error alone. Then the difference cannot be demonstrated, but this does not prove that there is no effect."
+        },
+        {
+          "text": "If the time does not depend on mass, the investigation has failed.",
+          "true": false,
+          "feedback": "Wrong: a refuted hypothesis is a result from which something is learned. A failed investigation is one from which nothing can be concluded, for example because of uncontrolled variables."
+        }
+      ]
     }
   ],
   "level2": [

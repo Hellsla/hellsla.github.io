@@ -216,12 +216,12 @@
         {
           "text": "Kuvaaja A",
           "figure": "fy1-5/pick-away",
-          "feedback": "Tässä paikka kasvaa kohtaan $12\\,\\text{m}$, joten kävelijä etenisi poispäin lähtöpisteestä. Virhe on kulmakertoimen etumerkissä: kulmakerroin kertoo myös suunnan. Kun kävelijä palaa kohti lähtöpistettä, paikka $s$ pienenee ja suora laskee."
+          "feedback": "Tässä paikka kasvaa kohtaan $12\\,\\text{m}$, joten kävelijä etenisi poispäin lähtöpisteestä. Kun kävelijä palaa kohti lähtöpistettä, paikka $s$ pienenee, joten suoran täytyy laskea eikä nousta."
         },
         {
           "text": "Kuvaaja B",
           "figure": "fy1-5/pick-vt",
-          "feedback": "Tämä on $(t, v)$-kuvaaja: pystyakselilla on nopeus $v$, ei paikka $s$. Siinä paikallaan seisominen on $v = 0$ ja tasainen kävely vaakasuora viiva, mutta paikan kuvaajassa vaakasuora viiva tarkoittaa paikallaan oloa. Kuvaajasta ei näe, että kävelijä on alussa kohdassa $6{,}0\\,\\text{m}$."
+          "feedback": "Tämä on $(t, v)$-kuvaaja: pystyakselilla on nopeus $v$, ei paikka $s$. Siinä paikallaan seisominen on $v = 0$ ja tasainen kävely vaakasuora viiva, mutta paikan kuvaajassa vaakasuora viiva tarkoittaa paikallaan oloa. Kuvaajasta ei näe, missä kävelijä on, eikä sitä, että hän on alussa kohdassa $6{,}0\\,\\text{m}$."
         },
         {
           "text": "Kuvaaja C",
@@ -232,7 +232,7 @@
         {
           "text": "Kuvaaja D",
           "figure": "fy1-5/pick-distance",
-          "feedback": "Tämä on kuljetun matkan kuvaaja, ei paikan: matka on nolla seisomisen ajan ja kasvaa sitten $6{,}0\\,\\text{m}$:iin. Paikka kertoo, missä kävelijä on, joten se alkaa arvosta $6{,}0\\,\\text{m}$ eikä nollasta ja pienenee paluumatkalla."
+          "feedback": "Tämän kuvaajan pystyakselilla on kuljettu matka $\\Delta s$, ei paikka $s$: matka on nolla seisomisen ajan ja kasvaa sitten $6{,}0\\,\\text{m}$:iin. Paikka kertoo, missä kävelijä on, joten se alkaa arvosta $6{,}0\\,\\text{m}$ eikä nollasta ja pienenee paluumatkalla."
         }
       ]
     }

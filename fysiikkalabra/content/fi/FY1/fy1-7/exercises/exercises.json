@@ -248,7 +248,7 @@
   {
    "id": "fy1-7-L2-08",
    "level": 2,
-   "text": "Neljän tuntemattoman kiinteän kappaleen massat ja tilavuudet on mitattu eri yksiköillä:\n\n- Kappale A: massa $135\\,\\text{g}$, tilavuus $50\\,\\text{cm}^3$\n- Kappale B: massa $0{,}36\\,\\text{kg}$, tilavuus $0{,}40\\,\\text{dm}^3$\n- Kappale C: massa $4{,}5\\,\\text{kg}$, tilavuus $500\\,\\text{cm}^3$\n- Kappale D: massa $120\\,\\text{g}$, tilavuus $100\\,\\text{ml}$\n\nMuunna arvot samaan yksikköön ja laita kappaleet järjestykseen tiheyden mukaan.",
+   "text": "Neljän tuntemattoman kiinteän kappaleen massat ja tilavuudet on mitattu eri yksiköillä.\n\nKappale A: massa $135\\,\\text{g}$, tilavuus $50\\,\\text{cm}^3$\n\nKappale B: massa $0{,}36\\,\\text{kg}$, tilavuus $0{,}40\\,\\text{dm}^3$\n\nKappale C: massa $4{,}5\\,\\text{kg}$, tilavuus $500\\,\\text{cm}^3$\n\nKappale D: massa $120\\,\\text{g}$, tilavuus $100\\,\\text{ml}$\n\nMissä järjestyksessä kappaleet ovat tiheyden mukaan pienimmästä suurimpaan?",
    "kind": [
     "model",
     "reasoning"

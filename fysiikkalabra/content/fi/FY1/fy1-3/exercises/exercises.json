@@ -246,12 +246,12 @@
     {
       "id": "fy1-3-L2-08",
       "level": 2,
-      "text": "Oppilas ripustaa saman heilurilanguan päähän ensin kevyen ja sitten raskaan kuulan ja mittaa kymmenen heilahduksen ajan käsikellolla viisi kertaa kummallakin kuulalla. Käsin otetun ajan lukeman epävarmuus on $\\Delta x = 0{,}2\\,\\text{s}$ jokaiselle tulokselle. Kevyen kuulan tulosten keskiarvo on $\\bar{t}_\\text{kevyt} = 14{,}30\\,\\text{s}$ ja raskaan $\\bar{t}_\\text{raskas} = 14{,}36\\,\\text{s}$. Mikä seuraavista päätelmistä aineisto tukee?",
+      "text": "Oppilas ripustaa saman heilurin langan päähän ensin kevyen ja sitten raskaan kuulan ja mittaa kymmenen heilahduksen ajan käsikellolla viisi kertaa kummallakin kuulalla. Käsin otetun ajan epävarmuus on $\\Delta t = 0{,}2\\,\\text{s}$ jokaiselle tulokselle. Laskimen antamat keskiarvot ovat kevyellä kuulalla $\\bar{t}_\\text{kevyt} = 14{,}30\\,\\text{s}$ ja raskaalla kuulalla $\\bar{t}_\\text{raskas} = 14{,}36\\,\\text{s}$ (kymmenen heilahduksen aika). Mikä seuraavista päätelmistä aineisto tukee?",
       "kind": [
         "data",
         "reasoning"
       ],
-      "answer": "Aineisto ei osoita painon vaikuttavan heilahdusaikaan, koska keskiarvojen ero on pienempi kuin lukeman epävarmuus.",
+      "answer": "Aineisto ei osoita kuulan massan vaikuttavan heilahdusaikaan, koska keskiarvojen ero on pienempi kuin käsin otetun ajan epävarmuus.",
       "unit": "",
       "tolerance": 0.02,
       "data": {
@@ -292,20 +292,20 @@
       "choices": [
         {
           "text": "Raskas kuula heilahtaa hitaammin, koska sen keskiarvo on suurempi.",
-          "feedback": "Ero $14{,}36\\,\\text{s} - 14{,}30\\,\\text{s} = 0{,}06\\,\\text{s}$ on paljon pienempi kuin lukeman epävarmuus $0{,}2\\,\\text{s}$. Näin pieni ero voi syntyä pelkästä satunnaisvaihtelusta, joten sitä ei voi pitää todisteena eroavuudesta."
+          "feedback": "Ero $14{,}36\\,\\text{s} - 14{,}30\\,\\text{s} = 0{,}06\\,\\text{s}$ on paljon pienempi kuin käsin otetun ajan epävarmuus $0{,}2\\,\\text{s}$. Näin pieni ero voi syntyä pelkästä satunnaisvaihtelusta, joten sitä ei voi pitää todisteena eroavuudesta."
         },
         {
-          "text": "Aineisto ei osoita painon vaikuttavan heilahdusaikaan, koska keskiarvojen ero on pienempi kuin lukeman epävarmuus.",
+          "text": "Aineisto ei osoita kuulan massan vaikuttavan heilahdusaikaan, koska keskiarvojen ero on pienempi kuin käsin otetun ajan epävarmuus.",
           "correct": true,
           "feedback": "Oikein: ero $0{,}06\\,\\text{s}$ jää epävarmuuden $0{,}2\\,\\text{s}$ sisään, joten eroa ei voida osoittaa. Se ei kuitenkaan todista aikojen olevan yhtä suuret, vaan että tämä mittaus ei erota niitä."
         },
         {
-          "text": "Kuulan paino ei vaikuta heilahdusaikaan, koska keskiarvot ovat melkein samat.",
+          "text": "Kuulan massa ei vaikuta heilahdusaikaan, koska keskiarvot ovat melkein samat.",
           "feedback": "Liian vahva päätelmä. Kun eroa ei voida osoittaa, se ei vielä todista, ettei eroa ole: pieni todellinen ero voisi hukkua käsinmittauksen epävarmuuteen. Aineisto vain ei näytä eroa."
         },
         {
-          "text": "Kevyen kuulan heilahdusaika on $14{,}300\\,\\text{s}$, koska keskiarvo lasketaan viidestä tuloksesta.",
-          "feedback": "Ylitarkka väite. Keskiarvolla ei saa olla enempää merkitseviä numeroita kuin epävarmuus sallii: tulosten epävarmuus on $0{,}2\\,\\text{s}$, joten tulos voidaan ilmoittaa vain kymmenesosasekunnin tarkkuudella. Toistot pienentävät satunnaisvirhettä mutta eivät tee tuloksesta tuhannesosasekunnin tarkkaa."
+          "text": "Kevyen kuulan kymmenen heilahduksen aika on $14{,}300\\,\\text{s}$, koska keskiarvo lasketaan viidestä tuloksesta.",
+          "feedback": "Ylitarkka väite. Keskiarvolla ei saa olla enempää merkitseviä numeroita kuin epävarmuus sallii (laskimen antamat keskiarvot $14{,}30\\,\\text{s}$ ja $14{,}36\\,\\text{s}$ pidetään vertailussa täsmällisinä, mutta tulos ilmoitetaan pyöristettynä): tulosten epävarmuus on $0{,}2\\,\\text{s}$, joten tulos voidaan ilmoittaa vain kymmenesosasekunnin tarkkuudella. Toistot pienentävät satunnaisvirhettä mutta eivät tee tuloksesta tuhannesosasekunnin tarkkaa."
         }
       ]
     }

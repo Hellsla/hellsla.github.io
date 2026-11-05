@@ -292,7 +292,7 @@
     {
       "id": "fy1-4-L2-08",
       "level": 2,
-      "text": "Säiliötä täytettiin tasaisella vesivirralla ja veden tilavuutta $V$ mitattiin ajan $t$ funktiona. Mittauspisteisiin sovitetun suoran kulmakerroin, eli veden virtaama, laskettiin alla olevalla tavalla. Täsmälleen yhdellä rivillä on virhe.\n\nRivi 1: Sovitetulta suoralta luetaan pisteet $(2{,}0\\,\\text{min};\\ 5{,}0\\,\\textsf{l})$ ja $(10{,}0\\,\\text{min};\\ 17{,}0\\,\\textsf{l})$.\nRivi 2: $\\Delta V = 17{,}0\\,\\textsf{l} - 5{,}0\\,\\textsf{l} = 12{,}0\\,\\textsf{l}$\nRivi 3: $\\Delta t = 10{,}0\\,\\text{min} - 2{,}0\\,\\text{min} = 12{,}0\\,\\text{min}$\nRivi 4: $k = \\dfrac{\\Delta V}{\\Delta t} = \\dfrac{12{,}0\\,\\textsf{l}}{12{,}0\\,\\text{min}} = 1{,}0\\,\\tfrac{\\textsf{l}}{\\text{min}}$\n\nMillä rivillä virhe on?",
+      "text": "Säiliötä täytettiin tasaisella vesivirralla ja veden tilavuutta $V$ mitattiin ajan $t$ funktiona. Mittauspisteisiin sovitetun suoran kulmakerroin, eli veden virtaama, laskettiin alla olevalla tavalla. Laskussa voi olla virhe.\n\nRivi 1: Sovitetulta suoralta luetaan pisteet $(2{,}0\\,\\text{min};\\ 5{,}0\\,\\textsf{l})$ ja $(10{,}0\\,\\text{min};\\ 17{,}0\\,\\textsf{l})$.\n\nRivi 2: $\\Delta V = 17{,}0\\,\\textsf{l} - 5{,}0\\,\\textsf{l} = 12{,}0\\,\\textsf{l}$\n\nRivi 3: $\\Delta t = 10{,}0\\,\\text{min} - 2{,}0\\,\\text{min} = 12{,}0\\,\\text{min}$\n\nRivi 4: $k = \\dfrac{\\Delta V}{\\Delta t} = \\dfrac{12{,}0\\,\\textsf{l}}{12{,}0\\,\\text{min}} = 1{,}0\\,\\tfrac{\\textsf{l}}{\\text{min}}$\n\nMillä rivillä virhe on?",
       "kind": [
         "error"
       ],

@@ -133,6 +133,11 @@
 **Principle:** The results section tells what was measured and calculated: tables, graphs, means and uncertainties. The discussion interprets the results: it evaluates sources of error and reliability, takes a stand on the hypothesis and suggests further research.
 **Model answer:** The sentence “The mean of the five measurements was $12.4\,\text{s}$ and half of the range was $0.2\,\text{s}$.” belongs in the results, because it states calculated values without interpretation. The evaluation of a source of error (reaction time), the stand on the hypothesis and the suggestion for improvement (photogate) are interpretation, so they belong in the discussion.
 
+## fy1-8-L1-09
+**Find:** which of the five statements about the research plan are true.
+**Principle:** In a fair test one variable is changed, another is measured and the others are kept constant. The measurement is repeated so that the spread shows, and a difference can be demonstrated only if it exceeds the uncertainty. A result that refutes the hypothesis is still a result.
+**Model answer:** 1 true: the mass is the variable to change and the travel time the variable to measure. 2 false: the angle of the ramp must be controlled, otherwise it is not known which change affected the time. 3 false: what the clock shows does not tell the uncertainty $0.2\,\text{s}$ of timing by hand, and a single run does not show the spread, so the run is repeated. 4 true: a difference smaller than $0.2\,\text{s}$ can be caused by the timing alone, so the difference cannot be demonstrated; however, this does not prove that there is no effect. 5 false: the refutation of a hypothesis is a research result, and a failed investigation is one from which nothing can be concluded.
+
 ## fy1-8-L2-05
 **Given:** times of the light ball $3.12\,\text{s}$, $3.08\,\text{s}$, $3.16\,\text{s}$, $3.10\,\text{s}$ and $3.14\,\text{s}$; times of the heavy ball $3.06\,\text{s}$, $3.12\,\text{s}$, $3.04\,\text{s}$, $3.10\,\text{s}$ and $3.08\,\text{s}$
 **Find:** the difference of the means as a percentage of the uncertainty, and the conclusion on whether the data supports the claim

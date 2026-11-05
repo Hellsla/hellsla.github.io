@@ -99,11 +99,11 @@ def line_read():
 PICK_T, PICK_S = (0, 10), (0, 12)
 
 
-def pick_st(fid, label, pts):
+def pick_st(fid, label, pts, ylabel=r"s\ (\text{m})"):
     """One option of the graph choice: a (t, s) graph, t 0–10 s and s 0–12 m, with the walker's broken line."""
     f = Fig(fid, 380, label)
     ax = Axes(f, (96, 320), (470, 70), x=PICK_T, y=PICK_S, xticks=list(range(1, 11)), yticks=[2, 4, 6, 8, 10, 12],
-              xlabel=r"t\ (\text{s})", ylabel=r"s\ (\text{m})", xfmt=lambda v: str(int(v)) if v % 2 == 0 else "")
+              xlabel=r"t\ (\text{s})", ylabel=ylabel, xfmt=lambda v: str(int(v)) if v % 2 == 0 else "")
     ax.line(pts, COLD, 3)
     return f.svg()
 
@@ -121,9 +121,9 @@ def pick_away():
 
 
 def pick_distance():
-    return pick_st("fy15-pick-distance", "Kuvaaja mittakaavassa: paikka s ajan t funktiona. Ruudukon väli on 1 s ja 2 m. Viiva on vaakasuora "
-                   "kohdassa s = 0 m aikavälillä 0–4 s ja nousee sitten suorana kohtaan s = 6 m hetkellä 10 s.",
-                   [(0, 0), (4, 0), (10, 6)])
+    return pick_st("fy15-pick-distance", "Kuvaaja mittakaavassa: kuljettu matka Δs ajan t funktiona. Ruudukon väli on 1 s ja 2 m. Viiva on vaakasuora "
+                   "kohdassa Δs = 0 m aikavälillä 0–4 s ja nousee sitten suorana kohtaan Δs = 6 m hetkellä 10 s.",
+                   [(0, 0), (4, 0), (10, 6)], ylabel=r"\Delta s\ (\text{m})")
 
 
 def pick_vt():
@@ -147,6 +147,6 @@ REUSE = {
     "line-read": "safe: one straight line through the origin, grid crossings to read, no slope marked (graph is the lesson figure)",
     "pick-back": "reveals: the right option of task fy1-5-L2-08 (stands at 6 m, then back to the start)",
     "pick-away": "safe: a wrong option of task fy1-5-L2-08 (stands at 6 m, then away from the start)",
-    "pick-distance": "safe: a wrong option of task fy1-5-L2-08 (the distance walked instead of the position)",
+    "pick-distance": "safe: a wrong option of task fy1-5-L2-08 (the distance walked, Δs, instead of the position)",
     "pick-vt": "safe: a wrong option of task fy1-5-L2-08 (a (t, v) graph: 0, then 1,0 m/s)",
 }
