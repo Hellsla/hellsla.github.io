@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: a9fc9cb18c0434a8
+CONTENT-HASH: 35a961c55c19b541
 
 ## Blocking
 (none)
 
 ## Fixed
-- (none needed in the exercise files)
+- (none needed)
 
 ## Polish
 - none
 
 ## Checked
-- The tasks, parts a)-d), the instruction which part goes in the answer box and the order of choices match the Finnish; no hint added or removed.
-- Feedback texts keep their role (correct: confirms and explains; wrong: names the misconception). Student-error task L2-07 keeps the quoted solution unchanged.
-- Model answers for open parts (L2-05 b, L2-06 c, L2-07 a, L3-04 c, L3-05 d) are complete and match the Finnish reasoning.
-- Translation (English): natural, no Finnish words left; terms consistent (thermal conductivity, latent heat of fusion, heat loss coefficient, U-value).
-- check_i18n.py: 0 errors.
+- L2-08 asks for a comparison of two trips by proportional reasoning; the task text does not give the ratio away, the answer is not disclosed before the student chooses.
+- Each distractor targets one real misconception (forgotten U-value, inverted U-value, forgotten outdoor temperature) and its feedback names it and repairs it.
+- Model answer is staged: ratio formula, substitution, result, then interpretation and the three wrong routes; matches the Finnish.
+- Translation (English): natural, decimal point, no Finnish words left; terms consistent (U-value, latent heat of fusion).
+- Order of choices and the rest of the set match the previously passed version; check_i18n.py clean, build ok.

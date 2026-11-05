@@ -1,21 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 38b3c624adaef8c4
+CONTENT-HASH: fc8e9463ff0d07a5
 Mode: full
-Round: 1
+Round: 2
 
 ## Blocking
 (none)
 
 ## Fixed
-- (none)
+- (none; no text edits were needed)
 
 ## Polish
-- L3-04 text: "ääriviiva" ja "epävarmuusjana" ovat vaativia sanoja; ne on kuitenkin selitetty tehtävässä (jyrkin kulkee alapään ja yläpään kautta), joten ne jätettiin fi:n mukaisiksi.
+- (none)
 
 ## Checked
-- The 8 new tasks teach the same step as in fi: concept (absolute zero, extrapolation), unit conversion, centre-point fit, short vs long fitting interval, leak diagnosis by slopes, uncertainty from limit lines, calibration by extrapolation.
-- Choices: one correct flag each, distractors and feedback carry the same misconception as fi (freezing point, condensation, particles stop; interpolation, repeating, line through every point).
-- Feedback tells why a choice is wrong and does not give the answer away beyond fi.
-- Selkosuomi: short sentences, 'koska'-clauses split into two sentences, terms (ekstrapolointi, keskipiste = keskiarvot) explained.
-- Answer-field sentence names the part whose result is entered in every multi-part task.
-- check_i18n.py fi-easy: 0 errors.
+- L2-08 teaches the same YO-skill step as fi; easier Finnish: short sentences ("Epävarmuusvälit menevät päällekkäin. Tästä parista ei voi osoittaa..."), difficult word explained once, glossary terms kept.
+- Question stays last; feedback names the specific error of each option; solution steps one idea per sentence.
+- Natural Finnish, no padding or childish tone.
+- check_i18n.py: nothing for fy3-13; build.py fy3-13 succeeds (see report).

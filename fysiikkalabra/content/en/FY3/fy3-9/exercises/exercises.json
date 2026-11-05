@@ -266,6 +266,41 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy3-9-L2-08",
+      "level": 2,
+      "text": "A disposable syringe contains $40\\,\\text{ml}$ of air at a pressure of $100\\,\\text{kPa}$. The tip of the syringe is closed, and the plunger is pushed slowly until the volume of the air is $10\\,\\text{ml}$. The temperature of the air stays the same throughout.\n\nWhich graph shows the pressure $p$ of the air as a function of the volume $V$ during the compression?",
+      "kind": [
+        "graph",
+        "concept"
+      ],
+      "answer": "Graph B",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Graph A",
+          "figure": "fy3-9/pick-line",
+          "feedback": "The line passes through the right end points, but at the volume $20\\,\\text{ml}$ it shows $300\\,\\text{kPa}$. Inverse proportionality is not a falling straight line: half the volume gives double the pressure, $200\\,\\text{kPa}$."
+        },
+        {
+          "text": "Graph B",
+          "figure": "fy3-9/pick-boyle",
+          "correct": true,
+          "feedback": "Correct: the product $pV = 100\\,\\text{kPa} \\cdot 40\\,\\text{ml}$ stays constant. At the volume $20\\,\\text{ml}$ the pressure is $200\\,\\text{kPa}$ and at the volume $10\\,\\text{ml}$ it is $400\\,\\text{kPa}$, so the graph is a falling curve."
+        },
+        {
+          "text": "Graph C",
+          "figure": "fy3-9/pick-flat",
+          "feedback": "Here the pressure stays at $100\\,\\text{kPa}$. A constant temperature does not mean a constant pressure: when the same air is squeezed into a smaller space, the particles hit the walls more often and the pressure rises."
+        },
+        {
+          "text": "Graph D",
+          "figure": "fy3-9/pick-rising",
+          "feedback": "Here the pressure falls together with the volume, as if $p$ were directly proportional to the volume $V$. In Boyle's law the dependence is inverse: when the volume decreases, the pressure increases."
+        }
+      ]
     }
   ],
   "level3": [

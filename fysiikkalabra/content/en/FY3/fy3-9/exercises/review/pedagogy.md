@@ -1,7 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 503e26d6c082c1a1
-Mode: full
-Round: 1
+CONTENT-HASH: abcb9e023a03aec9
+Mode: delta
+Round: 2
 
 ## Blocking
 (none)
@@ -13,7 +13,7 @@ Round: 1
 - None.
 
 ## Checked
-- Full translation review of the 8 new tasks against the Finnish: levels, kinds, hints, feedback to every distractor, sub-task structure (a, b, c) and "write the result of part x" lines match the reviewed source.
-- Teaching sequence and difficulty unchanged; wording is natural English.
-- Solutions keep the house structure (Given, Find, Principle, Formula, Substitution, Answer, Reasonableness).
-- check_i18n.py en: 0 errors.
+- fy3-9-L2-08 keeps the YO-skill form (graph and concept kinds, four graph choices with figures, one feedback per distractor naming its misconception) and the level of the Finnish.
+- The question does not give the answer away; the solution ends with how to read the graph, as in the Finnish.
+- Natural English, decimal point not needed here (integers), terms consistent.
+- check_i18n.py: nothing for fy3-9; build.py fy3-9 succeeds.

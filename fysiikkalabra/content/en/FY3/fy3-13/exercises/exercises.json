@@ -268,6 +268,66 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy3-13-L2-08",
+      "level": 2,
+      "text": "Example data: the pressure of the air in a sealed rigid bottle was measured at five temperatures. The uncertainty of the pressure reading is $\\Delta p = 1.0\\,\\text{kPa}$ for every reading. The uncertainty of the temperature is so small that it is ignored.\n\nWhich of the following conclusions does the data in the table support?",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": "The pressure increased from the temperature $20.0\\,{}^\\circ\\text{C}$ to the temperature $60.0\\,{}^\\circ\\text{C}$, because the difference $13.5\\,\\text{kPa}$ is much greater than $\\Delta p$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Pressure of the air in a sealed bottle (example data)",
+        "columns": [
+          "$\\theta\\,({}^\\circ\\text{C})$",
+          "$p\\,(\\text{kPa})$"
+        ],
+        "rows": [
+          [
+            "20.0",
+            "102.0"
+          ],
+          [
+            "22.0",
+            "102.8"
+          ],
+          [
+            "30.0",
+            "105.2"
+          ],
+          [
+            "45.0",
+            "110.4"
+          ],
+          [
+            "60.0",
+            "115.5"
+          ]
+        ]
+      },
+      "choices": [
+        {
+          "text": "The pressure increased from the temperature $20.0\\,{}^\\circ\\text{C}$ to the temperature $22.0\\,{}^\\circ\\text{C}$, because $102.8\\,\\text{kPa}$ is greater than $102.0\\,\\text{kPa}$.",
+          "feedback": "The uncertainty was ignored. The difference $0.8\\,\\text{kPa}$ is smaller than $\\Delta p = 1.0\\,\\text{kPa}$, and the uncertainty intervals $101.0$–$103.0\\,\\text{kPa}$ and $101.8$–$103.8\\,\\text{kPa}$ overlap. An increase cannot be shown from this pair."
+        },
+        {
+          "text": "The pressure does not change with the temperature, because the difference between the readings $102.0\\,\\text{kPa}$ and $102.8\\,\\text{kPa}$ stays within the uncertainty.",
+          "feedback": "Too strong a conclusion. When a difference cannot be shown, that does not prove that there is no difference: two close temperatures do not separate a small change. In the whole data the pressure clearly increases, and the difference $13.5\\,\\text{kPa}$ is much greater than the uncertainty."
+        },
+        {
+          "text": "The pressure increased from the temperature $20.0\\,{}^\\circ\\text{C}$ to the temperature $60.0\\,{}^\\circ\\text{C}$, because the difference $13.5\\,\\text{kPa}$ is much greater than $\\Delta p$.",
+          "correct": true,
+          "feedback": "Correct: the difference $13.5\\,\\text{kPa}$ is more than ten times the uncertainty $1.0\\,\\text{kPa}$, and the intervals $101.0$–$103.0\\,\\text{kPa}$ and $114.5$–$116.5\\,\\text{kPa}$ are separate. So the increase is probably real."
+        },
+        {
+          "text": "At the temperature $-100\\,{}^\\circ\\text{C}$ the pressure is certainly $62\\,\\text{kPa}$, because a line fits all the measurement points.",
+          "feedback": "An extrapolation presented as certain. The temperature $-100\\,{}^\\circ\\text{C}$ is $120\\,{}^\\circ\\text{C}$ below the measurement range, and the value of the line is only an estimate whose uncertainty grows as the line is extended. That the line stays straight there is an assumption, not a measurement result."
+        }
+      ]
     }
   ],
   "level3": [

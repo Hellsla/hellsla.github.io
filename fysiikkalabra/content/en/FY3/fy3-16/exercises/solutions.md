@@ -178,6 +178,20 @@ Smallest mass: $m = \dfrac{486\,000\,\text{J} + 50\,280\,\text{J}}{355\,000\,\tf
 **Answer:** $2.9\,\text{h}$, two significant figures, as in the values $0.80\,\text{kg}$, $0.70\,\text{m}^2$ and $1.4\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$.
 **Reasonableness:** The student's result of $0.25\,\text{h}$, about $15$ minutes, would be too short: a power of $25\,\text{W}$ melts a kilogram of ice only in hours. The ratio of the wrong and correct results, $\dfrac{2.913}{0.253} \approx 11.5$, is the same as the ratio of the temperature differences, $\dfrac{299}{26} \approx 11.5$, which shows that the whole difference comes from the wrong $\Delta T$. The result is of the same order of magnitude as in the example of the section: about three hours.
 
+## fy3-16-L2-08
+**Given:** first trip $m_1 = 1.0\,\text{kg}$, $U_1 = U$, $\Delta T_1 = 20\,\text{K}$; second trip $m_2 = 1.5\,\text{kg}$, $U_2 = 0.5\,U$, $\Delta T_2 = 30\,\text{K}$; area $A$ the same
+**Find:** how the time $t$ the ice lasts changes from the first trip to the second
+**Principle:** While there is ice, the inside is at $0\,{}^\circ\text{C}$, so the temperature difference across the wall is the outdoor temperature in degrees Celsius. The power through the wall, $UA\Delta T$, melts the ice: $UA\Delta T\,t = s\,m$, from which $t = \dfrac{s\,m}{UA\Delta T}$. The time is directly proportional to the mass of the ice and inversely proportional to the U-value and the temperature difference. The latent heat of fusion $s$ and the area $A$ are the same and cancel from the ratio.
+**Model answer:** The ratio of the durations:
+
+$\dfrac{t_2}{t_1} = \dfrac{m_2}{m_1} \cdot \dfrac{U_1}{U_2} \cdot \dfrac{\Delta T_1}{\Delta T_2}$
+
+$\dfrac{t_2}{t_1} = \dfrac{1.5}{1.0} \cdot \dfrac{U}{0.5\,U} \cdot \dfrac{20}{30}$
+
+$\dfrac{t_2}{t_1} = 1.5 \cdot 2 \cdot \dfrac{2}{3} = 2$
+
+The time doubles. The mass and the temperature difference both increase by the factor $1.5$ and cancel each other, so the change is caused by the halving of the U-value. If the U-value were read the wrong way round, half would be obtained. If the rise in the outdoor temperature were forgotten, a tripled time $1.5 \cdot 2 = 3$ would be obtained, and if the U-value were forgotten, the time would stay the same, $1.5 \cdot \tfrac{2}{3} \cdot 1 = 1$.
+
 ## fy3-16-L3-04
 **Given:** average $U = 0.50\,\tfrac{\text{W}}{\text{m}^2\text{K}}$, $A = 120\,\text{m}^2$, $T_\text{in} = 18\,{}^\circ\text{C}$, $t = 720\,\text{h}$ per month; outdoor temperatures from the table: $5\,{}^\circ\text{C}$, $0\,{}^\circ\text{C}$, $-4\,{}^\circ\text{C}$, $-9\,{}^\circ\text{C}$, $-7\,{}^\circ\text{C}$, $-3\,{}^\circ\text{C}$; A: $\eta_\text{A} = 1.00$, $0.15\,\tfrac{\text{€}}{\text{kWh}}$; B: $\eta_\text{B} = 0.70$, heating value $H = 15\,\tfrac{\text{MJ}}{\text{kg}}$, $0.18\,\tfrac{\text{€}}{\text{kg}}$
 **Find:** the saving in cost over the heating season from the cheaper option, in euros

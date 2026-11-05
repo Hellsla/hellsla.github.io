@@ -1,21 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: fcc0d449c338b7d3
+CONTENT-HASH: 2b92f583c1086679
 Mode: full
-Round: 1
+Round: 2
 
 ## Blocking
 (none)
 
 ## Fixed
-- (none)
+- (none; no text edits were needed)
 
 ## Polish
-- L3-04 text: "limit line" and "uncertainty bar" are defined in the same sentence, so the wording is kept as in fi.
+- (none)
 
 ## Checked
-- The 8 new tasks teach the same step as in fi: concept (absolute zero, extrapolation), unit conversion, centre-point fit, short vs long fitting interval, leak diagnosis by slopes, uncertainty from limit lines, calibration by extrapolation.
-- Choices: one correct flag each, distractors and feedback carry the same misconception as fi (freezing point, condensation, particles stop; interpolation, repeating, line through every point).
-- Feedback tells why a choice is wrong and does not give the answer away beyond fi.
-- Wording is idiomatic English at upper-secondary level; part labels a), b), c) and the answer-field sentence match fi.
-- Answer-field sentence names the part whose result is entered in every multi-part task.
-- check_i18n.py en: 0 errors.
+- L2-08 teaches the same YO-skill step as fi (data + reasoning: interpret a difference against the stated uncertainty; reject over-strong and extrapolated claims); table and four distractors each carry one recognisable error.
+- Situation first, question last as its own sentence; feedback explains why each option fails without giving more than fi.
+- Solution is stepwise: principle, difference, intervals, then each rejected conclusion.
+- Idiomatic English at upper-secondary level.
+- check_i18n.py: nothing for fy3-13; build.py fy3-13 succeeds (see report).

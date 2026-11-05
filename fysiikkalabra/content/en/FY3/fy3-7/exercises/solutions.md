@@ -89,6 +89,18 @@
 **Answer:** $0.94\,\text{MJ}$, two significant figures like the masses $2.0\,\text{kg}$ and $0.10\,\text{kg}$.
 **Reasonableness:** Estimate: $4\,\tfrac{\text{kJ}}{\text{kg}\cdot\text{K}} \cdot 2\,\text{kg} \cdot 85\,\text{K} \approx 680\,\text{kJ}$ and $2300 \cdot 0.1 = 230\,\text{kJ}$, about $0.9\,\text{MJ}$ in total. The mass that vaporises is only $0.10\,\text{kg}$, not the whole $2.0\,\text{kg}$. Even so, that small amount takes $\dfrac{226}{938.3} \approx 24\,\%$ of the energy, because $r$ is large.
 
+## fy3-7-L2-08
+**Find:** the order of the batches by the quantity of heat $Q$ needed, from smallest to largest
+**Principle:** Warming needs $Q = cm\Delta T$, melting $Q = sm$ and vaporisation $Q = rm$. In a change of state the temperature does not change, but a lot of energy is still used. The order is not the same as the order of the masses, nor does it depend on whether the state has changed, because the result depends on the mass, the change in temperature and the specific heat capacity $c$, the specific latent heat of fusion $s$ or the specific latent heat of vaporisation $r$.
+**Model answer:** Let us calculate the quantity of heat of each batch:
+Teapot: $Q = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 1.0\,\text{kg} \cdot 20\,\text{K}$,
+that is, $Q = 83\,800\,\text{J} \approx 84\,\text{kJ}$
+Ice bag: $Q = 334\,\tfrac{\text{kJ}}{\text{kg}} \cdot 0.50\,\text{kg} = 167\,\text{kJ}$
+Pan: $Q = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.60\,\text{kg} \cdot 80\,\text{K}$,
+that is, $Q = 201\,120\,\text{J} \approx 201\,\text{kJ}$
+Boiling water: $Q = 2260\,\tfrac{\text{kJ}}{\text{kg}} \cdot 0.10\,\text{kg} = 226\,\text{kJ}$
+From smallest to largest: teapot, ice bag, pan, boiling water. In order of mass from smallest to largest it would be boiling water $0.10\,\text{kg}$, ice bag $0.50\,\text{kg}$, pan $0.60\,\text{kg}$ and teapot $1.0\,\text{kg}$. The order of the heat is almost the opposite, so mass does not decide. Melting ice needs less than warming a panful of water to the boiling point, so a change of state is not always the biggest item. Estimate: vaporisation needs a lot even for a small mass because $r$ is large, and so only $0.10\,\text{kg}$ is enough to pass all the other batches.
+
 ## fy3-7-L3-01
 **Given:** juice (the $c$ of water) $m_1 = 0.35\,\text{kg}$, $T_1 = 25\,{}^\circ\text{C}$; ice $m_2 = 60\,\text{g}$, $T_0 = 0\,{}^\circ\text{C}$; no heat losses; from the table $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ and $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
 **Find:** the final temperature $T$ when all the ice has melted

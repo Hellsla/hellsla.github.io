@@ -1,7 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 38b3c624adaef8c4
+CONTENT-HASH: fc8e9463ff0d07a5
 Mode: full
-Round: 1
+Round: 2
 
 ## Blocking
 (none)
@@ -10,12 +10,10 @@ Round: 1
 - (none; no text edits were needed)
 
 ## Polish
-- solutions.md L2-05 Substitution: "$250\,{}^\circ\text{C} : 5$" uses a colon for division (as in the Finnish source); selkokielessä selkeämpi olisi jakomerkki, mutta kaava pysyy pariteetissa fi:n kanssa. Same in L2-06 and L2-07 ("2.0 : 15", "104.0 kPa : 0.33").
+- (none)
 
 ## Checked
-- Scripted comparison of exercises.json against fi: all 219 leaf strings and values checked; ids, answers, units, tolerances, correct flags, choice order, kind lists and table cells identical; every number in texts and feedback equals fi (decimal comma kept in fi-easy prose, point in JSON data cells as in fi).
-- solutions.md: the 20 sections match fi in every number (scripted); no formula changed.
-- New tasks L1-06..08, L2-05..07, L3-04..05: answers recomputed from the data (77.4 K, -274, -302, -370, 10.7, -17.5 degC) and equal the Finnish answers.
-- Terms follow the guardrails: absolute zero is the lowest energy, not "particles stop"; extrapolation is an estimate under a model assumption.
-- Language: short sentences, terms explained in context (ekstrapolointi, interpolointi, epävarmuus); no English left.
-- check_i18n.py fi-easy: 0 errors.
+- Scripted comparison of fy3-13-L2-08 against fi: table, answer, kind, choice order, correct flag and all numbers identical; formulas and units kept; decimal comma in text.
+- Recomputed: 13.5 kPa >> 1.0 kPa, 0.8 kPa overlaps, ~62 kPa at -100 degC is an extrapolation of 120 degC; physics same as fi.
+- NOTES.md section 12: extrapolointi explained in the feedback inline ("eli suoran jatkaminen mittausalueen ulkopuolelle"); no step dropped.
+- check_i18n.py: nothing for fy3-13; build.py fy3-13 succeeds (see report).
