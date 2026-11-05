@@ -166,7 +166,7 @@ $P_\text{L} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 12\,000\,\tfr
 
 $P_\text{L} \approx 5{,}0 \cdot 10^8\,\text{W} = 500\,\text{MW}$
 
-Lähin vaihtoehto on $500\,\text{MW}$. Järkevyys: tulos on noin $42\,\%$ polttoaineteosta $1200\,\text{MW}$, mikä sopii siihen, että lauhduttimen kautta siirtyy suuri osa polttoaineen energiasta. Muut vaihtoehdot syntyvät virheistä: $0{,}5\,\text{MW}$ kun tiheys jää käyttämättä, $50\,\text{MW}$ kun kuutiometri luetaan sadaksi kilogrammaksi ja $15\,000\,\text{MW}$ kun nousuna käytetään loppulämpötilaa kelvineinä.
+Lähin vaihtoehto on $500\,\text{MW}$. Järkevyys: tulos on noin $42\,\%$ polttoainetehosta $1200\,\text{MW}$, mikä sopii siihen, että lauhduttimen kautta siirtyy suuri osa polttoaineen energiasta. Muut vaihtoehdot syntyvät virheistä: $0{,}5\,\text{MW}$ kun tiheys jää käyttämättä, $50\,\text{MW}$ kun kuutiometri luetaan sadaksi kilogrammaksi ja $15\,000\,\text{MW}$ kun nousuna käytetään loppulämpötilaa kelvineinä.
 
 ## fy3-15-L3-01
 **Annettu:** $P_0 = 600\,\text{MW}$. Pelkkä sähkö: $P_\text{s,0} = 240\,\text{MW}$. Täysi yhteistuotanto: $P_\text{s,täysi} = 180\,\text{MW}$ ja $P_\text{k,täysi} = 348\,\text{MW}$. Nyt kaukolämpöteho on $P_\text{k} = 200\,\text{MW}$.

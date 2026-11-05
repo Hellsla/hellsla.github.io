@@ -243,7 +243,7 @@
         {
           "text": "$500\\,\\text{MW}$",
           "correct": true,
-          "feedback": "Oikein: vesivirta on $q_m = 12\\,000\\,\\text{kg/s}$ ja lämpötilan nousu $\\Delta T = 10\\,\\text{K}$. Teho on $P_\\text{L} = c\\,q_m\\,\\Delta T$, eli $P_\\text{L} \\approx 5{,}0 \\cdot 10^8\\,\\text{W} \\approx 500\\,\\text{MW}$. Se on noin $42\\,\\%$ polttoaineteosta $1200\\,\\text{MW}$, mikä sopii lauhdutinhäviöksi."
+          "feedback": "Oikein: vesivirta on $q_m = 12\\,000\\,\\text{kg/s}$ ja lämpötilan nousu $\\Delta T = 10\\,\\text{K}$. Teho on $P_\\text{L} = c\\,q_m\\,\\Delta T$, eli $P_\\text{L} \\approx 5{,}0 \\cdot 10^8\\,\\text{W} \\approx 500\\,\\text{MW}$. Se on noin $42\\,\\%$ polttoainetehosta $1200\\,\\text{MW}$, mikä sopii lauhdutinhäviöksi."
         },
         {
           "text": "$15\\,000\\,\\text{MW}$",
