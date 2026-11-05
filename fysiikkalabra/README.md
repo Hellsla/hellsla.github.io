@@ -224,6 +224,12 @@ pictures, templates and scripts are shared by every language.
 - **Selkeä suomi** (`fi-easy`, an S2 language: `check_i18n.S2_LANGS`) follows NOTES.md §12: the same physics in
   clearer Finnish, and `key_concepts` in each lesson's `meta.json` (`translate_kit.py` hands them to the translator as
   `key_concepts.json`), rendered as *Luvun tärkeät käsitteet* (term and plain explanation; the student writes notes in a notebook).
+- **Course units** (teacher 2026-11-04, FY9 in en and fi-easy): a local course lists its translation languages in
+  `local-courses.json` `"translations"`; `python scripts/translate_kit.py extract|apply <unit id> <lang> <dir>` makes
+  `content/<lang>/units/<id>/` (fi-easy with `key_concepts` in `unit.json`), `check_i18n.py` checks it like a lesson,
+  and it has its own hash and three reviews (`units.py hash <id> --lang <lang>`). `build.py` publishes it at
+  `site/<lang>/<id>.html` once `content/<lang>/local-courses.json` has the course; until then the course page links the
+  source version (`scripts/test_unit_i18n.py`).
 - Finnish only, for now: the agents' briefs, the lint's text rules (`lint_lesson.py`, `check_solutions.py`) and the
   reference lesson `content/_gold/`.
 

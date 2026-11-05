@@ -1,0 +1,10 @@
+[
+  {
+    "q": "A merry-go-round makes one revolution in $6.0\\,\\text{s}$. How large is the speed of a child sitting $2.4\\,\\text{m}$ from the centre?",
+    "a": "$v = \\dfrac{2\\pi r}{T} = \\dfrac{2\\pi \\cdot 2.4\\,\\text{m}}{6.0\\,\\text{s}} \\approx 2.5\\,\\text{m/s}$. The velocity is along the tangent of the path, and a child sitting next to the central pole moves more slowly, although the period is the same."
+  },
+  {
+    "q": "A satellite is moved from an orbit of radius $r$ to an orbit of radius $3r$. By what factor does the gravitational force of the Earth on the satellite change?",
+    "a": "The gravitational force is inversely proportional to the square of the distance: $\\dfrac{F_2}{F_1} = \\dfrac{r^2}{(3r)^2} = \\dfrac{1}{9}$. The force falls to a ninth, but it does not vanish."
+  }
+]

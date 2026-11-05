@@ -1,0 +1,35 @@
+{
+  "id": "fy9-koe",
+  "course": "FY9",
+  "chapter": 1,
+  "order": 1,
+  "title": "Ylioppilaskoe ja vastaustekniikka",
+  "description": "Mitä täydellinen vastaus fysiikan kokeessa sisältää: ratkaisun seitsemän vaihetta, kuvaajat, perustellut selitykset, tehtäväsanat ja ajankäyttö. Lopuksi tehdään kertaustesti koko lukion fysiikasta.",
+  "kind": "review",
+  "minutes": 75,
+  "subjects": [
+    "physics"
+  ],
+  "key_concepts": [
+    {
+      "term": "suure",
+      "explain": "Ominaisuus, jonka voi mitata, esimerkiksi massa tai aika. Suureella on lukuarvo ja yksikkö."
+    },
+    {
+      "term": "yksikkö",
+      "explain": "Kertoo, millä mitalla suure mitataan, esimerkiksi kilogramma tai sekunti. Vastaus ilman yksikköä ei ole valmis."
+    },
+    {
+      "term": "kulmakerroin",
+      "explain": "Kertoo, kuinka jyrkästi suora nousee. Se lasketaan sovitteelta eli sovitetulta suoralta kahdesta pisteestä, jotka ovat kaukana toisistaan: $k = \\frac{\\Delta y}{\\Delta x}$."
+    },
+    {
+      "term": "malli",
+      "explain": "Yksinkertaistettu kuvaus ilmiöstä. Mallissa on oletuksia, esimerkiksi kitkaa ei ole. Vastauksessa kerrotaan, mitä malli jättää pois."
+    },
+    {
+      "term": "merkitsevä numero",
+      "explain": "Numero, joka kertoo mittauksen tarkkuuden. Lopputuloksessa on yhtä monta merkitsevää numeroa kuin epätarkimmassa lähtöarvossa."
+    }
+  ]
+}

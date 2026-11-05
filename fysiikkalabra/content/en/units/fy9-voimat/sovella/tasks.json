@@ -1,0 +1,785 @@
+{
+  "intro": "Six matriculation-exam-style tasks bring together the lesson's Newton's laws, free-body diagrams, friction, the inclined plane, connected bodies and air resistance. Solve them as in the exam: draw the free-body diagram before the equations, justify the choice of model, solve for the required quantity before substituting numbers and assess whether the result is reasonable. Open the model answer and the marking scheme only when your solution is finished.",
+  "tasks": [
+    {
+      "id": "fy9-voimat-s1",
+      "title": "Winching a boat",
+      "source": "example",
+      "source_note": "The boat, the ramp and the coefficients of friction are invented examples that match the order of magnitude of wet plastic slide strips and an aluminium boat.",
+      "skills": [
+        "fy4-5",
+        "fy4-6",
+        "fy4-4"
+      ],
+      "text": "On the shore by the summer cottage there is a wooden boat ramp whose angle of inclination is $14^\\circ$. The surface of the ramp has plastic slide strips. In the autumn an aluminium boat with a mass of $280\\,\\text{kg}$ is pulled out of the water up the ramp with an electric winch. The cable of the winch is parallel to the ramp.\n\nBetween the bottom of the boat and the wet slide strips:\n\n- coefficient of static friction $\\mu_0 = 0.35$\n- coefficient of kinetic friction $\\mu = 0.25$",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 4,
+          "text": "Draw the free-body diagram of the boat when the winch pulls the boat up the ramp at a constant velocity.",
+          "criteria": [
+            {
+              "key": "fbd_forces",
+              "points": 1,
+              "detail": "Four forces: the weight, the normal force of the ramp, kinetic friction and the tension of the cable; no extra force in the direction of motion."
+            },
+            {
+              "key": "fbd_directions",
+              "points": 1,
+              "detail": "The weight straight down, the normal force perpendicular to the ramp, outwards, friction down the ramp (the boat slides up) and the force of the cable up the ramp."
+            },
+            {
+              "key": "fbd_representation",
+              "points": 1,
+              "detail": "The boat as a rectangle parallel to the ramp; the weight from the centre, the normal force and friction from the contact surface, the force of the cable from the point of attachment; each force with its own symbol."
+            },
+            {
+              "key": "fbd_magnitudes",
+              "points": 1,
+              "detail": "The normal force slightly shorter than the weight; the force of the cable as long as the friction and the component of the weight along the ramp together. Components distinguished from forces."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 5,
+          "text": "How large is the force with which the winch cable pulls the boat when the boat moves at a constant velocity?",
+          "answer": {
+            "value": 1330.8,
+            "unit": "N",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "fbd_equations",
+              "points": 1,
+              "detail": "$x$ axis up the ramp: $T - mg\\sin\\alpha - F_\\mu = 0$; $y$: $N - mg\\cos\\alpha = 0$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$T = mg(\\sin\\alpha + \\mu\\cos\\alpha)$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$mg\\sin\\alpha \\approx 665\\,\\text{N}$ and $F_\\mu = \\mu mg\\cos\\alpha \\approx 666\\,\\text{N}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$T \\approx 1.3\\,\\text{kN}$ to two significant figures"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "For example: the force of the cable is about half of the weight $2.7\\,\\text{kN}$, and friction is about half of the pull."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 6,
+          "text": "The winch stops, and the boat is left on the ramp. Does the boat stay in place if the cable goes slack? At least how large should the angle of inclination of the ramp be for the boat to start sliding from rest back into the water by itself?",
+          "answer": {
+            "value": 19.29,
+            "unit": "°",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Justifies that static friction acts on the boat at rest, and that it is only as large as needed, at most $\\mu_0 N$.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The boat stays if $mg\\sin\\alpha \\le \\mu_0 mg\\cos\\alpha$, that is $\\tan\\alpha \\le \\mu_0$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Static friction needed $665\\,\\text{N}$ and upper limit $\\mu_0 N \\approx 933\\,\\text{N}$ (or $\\tan 14^\\circ \\approx 0.25 < 0.35$)."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The boat stays in place."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Limiting angle $\\alpha_0 = \\arctan 0.35 \\approx 19^\\circ$"
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "States that the mass cancels and that the result assumes the model $F_{\\mu 0} \\le \\mu_0 N$; wetness, ice or dirt can change the coefficient."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy4-5",
+        "communication": "fy4-5",
+        "math": "fy4-6",
+        "transfer": "fy4-6"
+      }
+    },
+    {
+      "id": "fy9-voimat-s2",
+      "title": "A snowmobile and two sledges",
+      "source": "example",
+      "source_note": "The sledges, the masses and the coefficient of friction are invented examples that match the order of magnitude of sledges sliding on snow.",
+      "skills": [
+        "fy4-13",
+        "fy4-6",
+        "fy4-3"
+      ],
+      "text": "On a frozen lake a snowmobile pulls two sledges one behind the other. Between the snowmobile and the front sledge A there is rope 1, and between sledge A and the rear sledge B rope 2. The ropes are horizontal and light.\n\n| Sledge | Mass with load |\n|---|---|\n| A | $120\\,\\text{kg}$ |\n| B | $80\\,\\text{kg}$ |\n\nThe coefficient of kinetic friction between each sledge and the snow is $0.10$. The snowmobile sets off so that the sledges accelerate steadily at $0.50\\,\\text{m/s}^2$. Air resistance is ignored.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 4,
+          "text": "Draw separately the free-body diagrams of sledge A and sledge B while they set off.",
+          "criteria": [
+            {
+              "key": "fbd_object",
+              "points": 1,
+              "detail": "Two separate diagrams; each with only the forces acting on that sledge."
+            },
+            {
+              "key": "fbd_forces",
+              "points": 1,
+              "detail": "A: weight, normal force, friction, rope 1 forwards and rope 2 backwards. B: weight, normal force, friction and rope 2 forwards."
+            },
+            {
+              "key": "fbd_directions",
+              "points": 1,
+              "detail": "Friction forces backwards, rope 2 pulls A backwards and B forwards."
+            },
+            {
+              "key": "fbd_representation",
+              "points": 1,
+              "detail": "Different symbols for different forces, for example $\\overline{T}_1$, $\\overline{T}_2$, $\\overline{N}_\\text{A}$; the acceleration marked separately and not as a force."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "How large is the tension in rope 2?",
+          "answer": {
+            "value": 118.48,
+            "unit": "N",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "fbd_equations",
+              "points": 1,
+              "detail": "B: $T_2 - \\mu m_\\text{B} g = m_\\text{B} a$"
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$T_2 = m_\\text{B}(a + \\mu g)$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$T_2 \\approx 120\\,\\text{N}$ ($118\\,\\text{N}$)"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "For example: $T_2$ is larger than the friction on B, $78\\,\\text{N}$, because the sledge also accelerates."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "How large is the tension in rope 1?",
+          "answer": {
+            "value": 296.2,
+            "unit": "N",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "fbd_equations",
+              "points": 1,
+              "detail": "A: $T_1 - T_2 - \\mu m_\\text{A} g = m_\\text{A} a$, or both sledges as one system."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$T_1 = (m_\\text{A} + m_\\text{B})(a + \\mu g)$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "The force of rope 2 taken into account in the equation of A as a force pulling backwards."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$T_1 \\approx 300\\,\\text{N}$ ($296\\,\\text{N}$)"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "The snowmobile driver claims: \"The tension in the rear rope is half the tension in the front rope, because there are two sledges.\" Evaluate the claim.",
+          "criteria": [
+            {
+              "text": "Explains that rope 2 accelerates and pulls only sledge B, rope 1 both sledges.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Justifies with the results of parts b and c that the ratio is the ratio of the masses $\\tfrac{m_\\text{B}}{m_\\text{A} + m_\\text{B}} = 0.40$, when the coefficient of friction is the same.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The claim does not hold: the ratio depends on the masses, not on the number of sledges; it would be a half only for equally heavy sledges."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy4-13",
+        "communication": "fy4-13",
+        "math": "fy4-13"
+      }
+    },
+    {
+      "id": "fy9-voimat-s3",
+      "title": "A cart and a force sensor",
+      "source": "example",
+      "source_note": "The measurement results are invented example values calculated from a model, with small random variation added as in a measurement.",
+      "skills": [
+        "fy4-4",
+        "fy1-4",
+        "fy4-6"
+      ],
+      "text": "In a physics lesson a cart is pulled on a horizontal track by a string that is horizontal. A force sensor attached to the cart measures the pulling force $F$ of the string, and a motion sensor measures the acceleration $a$ of the cart. The pulling force is changed by hanging different masses from the other end of the string. The mass of the cart with the sensor is not known.\n\n| $F\\ (\\text{N})$ | $a\\ (\\text{m/s}^2)$ |\n|---|---|\n| $0.40$ | $0.20$ |\n| $0.60$ | $0.41$ |\n| $0.80$ | $0.67$ |\n| $1.00$ | $0.88$ |\n| $1.20$ | $1.14$ |\n| $1.40$ | $1.35$ |\n| $1.60$ | $1.61$ |",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 4,
+          "text": "Plot the acceleration as a function of the pulling force and fit a model to the points.",
+          "criteria": [
+            {
+              "key": "graph_axes",
+              "points": 1,
+              "detail": "$F\\ (\\text{N})$ on the horizontal axis, $a\\ (\\text{m/s}^2)$ on the vertical axis, evenly spaced scales."
+            },
+            {
+              "key": "graph_points",
+              "points": 1
+            },
+            {
+              "key": "graph_fit",
+              "points": 2,
+              "detail": "One straight line passing between the points; the line is not forced through the origin, and it is extended to the horizontal axis."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 6,
+          "text": "Determine from the graph the mass of the cart and the magnitude of the friction force slowing the cart. Justify why the line does not pass through the origin.",
+          "answer": [
+            {
+              "name": "M",
+              "value": 0.851,
+              "unit": "kg",
+              "tolerance": 0.04
+            },
+            {
+              "name": "F",
+              "value": 0.238,
+              "unit": "N",
+              "tolerance": 0.1
+            }
+          ],
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 2,
+              "detail": "The slope from two points on the line far apart, $k \\approx 1.18\\,\\tfrac{1}{\\text{kg}}$, and the point where the line crosses the $F$ axis, $F_0 \\approx 0.24\\,\\text{N}$."
+            },
+            {
+              "key": "fbd_equations",
+              "points": 1,
+              "detail": "$F - F_\\mu = ma$, so $a = \\tfrac{1}{m}F - \\tfrac{F_\\mu}{m}$: the slope is $\\tfrac{1}{m}$ and at the intercept $F = F_\\mu$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$m = \\tfrac{1}{k}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$m \\approx 0.85\\,\\text{kg}$ and $F_\\mu \\approx 0.24\\,\\text{N}$"
+            },
+            {
+              "text": "Explains that with a small pull part of the force goes into overcoming friction, so the acceleration is zero already while $F$ is still larger than zero.",
+              "tag": "communication",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 5,
+          "text": "Draw the free-body diagram of the cart when the pulling force is $1.20\\,\\text{N}$, and explain how the diagram and the model of part b are connected.",
+          "criteria": [
+            {
+              "key": "fbd_forces",
+              "points": 1,
+              "detail": "The weight, the normal force of the track, the pull of the string and friction; no others."
+            },
+            {
+              "key": "fbd_directions",
+              "points": 1,
+              "detail": "The pull forwards, friction backwards, the normal force up, the weight down."
+            },
+            {
+              "key": "fbd_representation",
+              "points": 1,
+              "detail": "The cart as a rectangle; the pull from the point where the string is attached, friction from the contact surface, the weight from the centre; each force with its own symbol."
+            },
+            {
+              "key": "fbd_magnitudes",
+              "points": 1,
+              "detail": "The normal force as long as the weight, the pull clearly longer than the friction ($1.20\\,\\text{N}$ and $0.24\\,\\text{N}$); the acceleration marked separately."
+            },
+            {
+              "key": "fbd_equations",
+              "points": 1,
+              "detail": "The horizontal equation of motion $F - F_\\mu = ma$ is the equation of the line in part b."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 5,
+          "text": "Determine the coefficient of rolling resistance between the wheels of the cart and the track, $\\mu = \\tfrac{F_\\mu}{N}$. How would the line of part a change if a $0.500\\,\\text{kg}$ mass were added on top of the cart?",
+          "answer": {
+            "value": 0.0285,
+            "unit": "",
+            "tolerance": 0.06
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$N = mg$, because the string is horizontal, so $\\mu = \\dfrac{F_\\mu}{mg}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\mu \\approx 0.029$ without a unit"
+            },
+            {
+              "text": "Predicts that the line becomes less steep: the slope $\\tfrac{1}{m + 0.500\\,\\text{kg}} \\approx 0.74\\,\\tfrac{1}{\\text{kg}}$.",
+              "tag": "graph",
+              "points": 1
+            },
+            {
+              "text": "Predicts that the intercept moves to the right, because friction grows with the normal force: to about $0.38\\,\\text{N}$.",
+              "tag": "graph",
+              "points": 1
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "In the model friction is proportional to the normal force and does not depend on the speed; this must be checked with a new measurement."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy1-4",
+        "math": "fy4-4",
+        "concept": "fy4-5",
+        "communication": "fy4-4",
+        "transfer": "fy4-6"
+      }
+    },
+    {
+      "id": "fy9-voimat-s4",
+      "title": "What moves you forwards?",
+      "source": "example",
+      "source_note": "The coefficients of friction are rounded typical values, not measurement results.",
+      "skills": [
+        "fy4-3",
+        "fy4-6",
+        "fy4-5"
+      ],
+      "text": "A winter morning: Ella walks across the glare ice of her home yard to the bus stop. A car standing at the traffic lights next to the stop sets off when the light turns green. The car has front-wheel drive: the engine turns only the front wheels.\n\nThe coefficient of static friction between a tyre and the road is about $0.8$ on dry asphalt and about $0.1$ on ice.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 4,
+          "text": "Explain with Newton's laws which force accelerates Ella forwards when she starts to walk, and why setting off is difficult on glare ice.",
+          "criteria": [
+            {
+              "text": "The foot pushes the ground backwards, and by the third law the ground pushes the foot forwards.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "This force is the static friction of the ground, the only horizontal external force that can accelerate Ella.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "On ice the upper limit of static friction $\\mu_0 N$ is small, so the foot slides if it pushes harder.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The acceleration stays small on ice; the steps must be short and the foot placed vertically."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 4,
+          "text": "Ella's little brother says: \"The car sets off because the engine pushes the car forwards.\" Evaluate the claim.",
+          "criteria": [
+            {
+              "text": "The engine is part of the car: the internal forces of the car do not change the state of motion of the whole car (third law, the forces cancel).",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "The external force forwards is the static friction of the road on the driving wheels: the wheel tends to slide backwards relative to the road.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The claim is partly right: the engine turns the wheels, but it is the road that pushes the car."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 4,
+          "text": "Draw the free-body diagram of the car when the car accelerates on a horizontal road. Take air resistance and rolling resistance into account.",
+          "criteria": [
+            {
+              "key": "fbd_forces",
+              "points": 1,
+              "detail": "The weight, the normal forces, the static friction of the road on the driving wheels forwards, rolling resistance and air resistance backwards."
+            },
+            {
+              "key": "fbd_directions",
+              "points": 1,
+              "detail": "Friction on the driving wheels forwards, the resistive forces backwards."
+            },
+            {
+              "key": "fbd_representation",
+              "points": 1,
+              "detail": "The car as a rectangle; the forces from their points of application, friction from the contact surface; each with its own symbol."
+            },
+            {
+              "key": "fbd_magnitudes",
+              "points": 1,
+              "detail": "The force moving the car forwards is larger than the resistive forces, because the car accelerates; velocity and acceleration separately."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Estimate the largest acceleration the road can give the car on dry asphalt and on ice, if all the wheels were driving wheels. Why is the largest acceleration of a front-wheel-drive car smaller still?",
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$ma_\\text{max} = \\mu_0 N = \\mu_0 mg$, so $a_\\text{max} = \\mu_0 g$; the mass cancels."
+            },
+            {
+              "text": "About $8\\,\\text{m/s}^2$ on asphalt and about $1\\,\\text{m/s}^2$ on ice.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "text": "The static friction pushing forwards acts only on the driving front wheels, whose normal force is only part of the weight, so $\\mu_0 N_\\text{etu} < \\mu_0 mg$ (etu = front).",
+              "tag": "transfer",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy4-3",
+        "communication": "fy4-6",
+        "math": "fy4-6",
+        "transfer": "fy4-6"
+      }
+    },
+    {
+      "id": "fy9-voimat-s5",
+      "title": "A phone on a book cover",
+      "source": "example",
+      "source_note": "The report and the measurement results are invented examples.",
+      "skills": [
+        "fy4-6",
+        "fy1-3",
+        "fy1-8"
+      ],
+      "text": "A group of students determined the coefficient of static friction between the silicone case of a phone and the cover of a hardback book. An extract from the group's report:\n\n> We placed the phone on the book cover and lifted one edge of the book by hand until the phone started to slide. We read the angle from a protractor, next to which we filmed the measurement with a phone. We repeated the measurement five times.\n>\n> | Measurement | 1 | 2 | 3 | 4 | 5 |\n> |---|---|---|---|---|---|\n> | $\\alpha_0$ | $22^\\circ$ | $24^\\circ$ | $21^\\circ$ | $23^\\circ$ | $33^\\circ$ |\n>\n> In measurement 5 the book was lifted with a jerk, because the person lifting it was in a hurry.\n>\n> We calculated the coefficient of static friction from the largest angle, because then the phone certainly slid: $\\mu_0 = \\sin 33^\\circ = 0.54$. Conclusion: the coefficient of static friction of the silicone case is $0.54$, so the phone stays in place on all surfaces inclined at less than $33^\\circ$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 5,
+          "text": "Determine the coefficient of static friction correctly from the group's results and estimate its uncertainty.",
+          "answer": {
+            "value": 0.4142,
+            "unit": "",
+            "tolerance": 0.05
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "At the limit of sliding $mg\\sin\\alpha_0 = \\mu_0 mg\\cos\\alpha_0$, so $\\mu_0 = \\tan\\alpha_0$."
+            },
+            {
+              "text": "Leaves out measurement 5 on the basis of the recorded gross error (the jerk), not only because it differs.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Mean $22.5^\\circ$ and $\\tan 22.5^\\circ \\approx 0.41$"
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "The spread $21^\\circ\\text{–}24^\\circ$ corresponds to coefficients $0.38\\text{–}0.45$; the uncertainty is half the range, that is $\\mu_0 \\approx 0.41 \\pm 0.03$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Two significant figures, no unit"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 5,
+          "text": "Evaluate the method and the conclusion of the report. Which of them are wrong or incomplete, and why?",
+          "criteria": [
+            {
+              "key": "error_sources",
+              "points": 2,
+              "detail": "Wrong formula ($\\sin$ and not $\\tan$); choosing the largest angle, although that is exactly the gross error; lifting by hand and reading the angle at the moment of sliding are imprecise."
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "The report has no uncertainty and no mean."
+            },
+            {
+              "key": "conclusion",
+              "points": 2,
+              "detail": "The conclusion is generalised wrongly: the coefficient applies only to this case and this cover, and $\\tan\\alpha_0 \\approx 0.41$ gives a limiting angle of about $22^\\circ$, not $33^\\circ$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 5,
+          "text": "Plan an experiment to determine the coefficient of kinetic friction for the same surfaces. Say what is measured, with what equipment, how the result is calculated and how the reliability is improved.",
+          "criteria": [
+            {
+              "text": "A working method: for example the phone is pulled on the horizontal cover with a force sensor at a constant velocity, so that $F = \\mu mg$, or the phone slides on a steeper cover and the acceleration is measured from a video or with the phone's acceleration sensor.",
+              "tag": "experiment",
+              "points": 2
+            },
+            {
+              "text": "The measured quantities and the equipment named (mass with a scale, force with a sensor, or angle and acceleration).",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The formula for the calculation from the free-body diagram: $\\mu = \\dfrac{F}{mg}$ or $\\mu = \\dfrac{g\\sin\\alpha - a}{g\\cos\\alpha}$."
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Repetitions, mean and spread; several masses or angles and a graph, for example an $(N, F_\\mu)$ line through the origin."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "experiment": "fy1-8",
+        "math": "fy4-6",
+        "communication": "fy1-3"
+      }
+    },
+    {
+      "id": "fy9-voimat-s6",
+      "title": "The sliding-mat hill",
+      "source": "example",
+      "source_note": "The hill and the coefficient of friction are invented examples that match the order of magnitude of a plastic sliding mat and packed snow.",
+      "skills": [
+        "fy4-6",
+        "fy4-2",
+        "fy4-14"
+      ],
+      "text": "Behind the school there is a hill for sliding mats: a $40\\,\\text{m}$ long even slope with an angle of inclination of $12^\\circ$, and below it a horizontal field. The transition between the slope and the field is gentle, and the speed does not change there. The coefficient of kinetic friction between the plastic sliding mat and the packed snow is $0.080$ both on the slope and on the field. A rider starts from rest at the top of the slope. In the first model air resistance is ignored.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 5,
+          "text": "How large is the rider's speed at the bottom of the slope?",
+          "answer": {
+            "value": 10.087,
+            "unit": "m/s",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "fbd_equations",
+              "points": 1,
+              "detail": "$x$ down the slope: $mg\\sin\\alpha - \\mu mg\\cos\\alpha = ma_1$"
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$a_1 = g(\\sin\\alpha - \\mu\\cos\\alpha)$ and from rest $v^2 = 2a_1 s$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$a_1 \\approx 1.27\\,\\text{m/s}^2$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v \\approx 10\\,\\text{m/s}$ ($10.1\\,\\text{m/s}$)"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "For example $10\\,\\text{m/s} \\approx 36\\,\\text{km/h}$ is fast for a sliding mat but possible; the time on the slope is about $8\\,\\text{s}$."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 5,
+          "text": "How far does the rider slide on the field before stopping?",
+          "answer": {
+            "value": 64.83,
+            "unit": "m",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "fbd_equations",
+              "points": 1,
+              "detail": "On the field only friction acts horizontally: $-\\mu mg = ma_2$"
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$a_2 = -\\mu g$ and $0 - v^2 = 2a_2 s_2$, so $s_2 = \\dfrac{v^2}{2\\mu g}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$a_2 \\approx -0.785\\,\\text{m/s}^2$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$s_2 \\approx 65\\,\\text{m}$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "For example: the deceleration on the field, $0.785\\,\\text{m/s}^2$, is smaller than the acceleration on the slope, $1.27\\,\\text{m/s}^2$, so the stopping distance is longer than the slope."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 5,
+          "text": "Dad claims: \"I slide further on the field than the children, because I am heavier.\" Evaluate the claim first with the model of parts a and b, and then with air resistance taken into account.",
+          "criteria": [
+            {
+              "text": "In the model the mass cancels both on the slope and on the field, so the distance does not depend on the mass.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "text": "Air resistance depends on the speed, the size and the shape, not on the mass; for a heavier rider it is a smaller part of the weight, so his deceleration grows less.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Air resistance shortens everyone's distance; other differences (position, bottom of the sliding mat) also have an effect."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The claim may hold in reality, but the reason is air resistance, not that a heavy rider would press the sliding mat forwards."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy4-2",
+        "concept": "fy4-14",
+        "transfer": "fy4-6",
+        "communication": "fy4-14"
+      }
+    }
+  ]
+}

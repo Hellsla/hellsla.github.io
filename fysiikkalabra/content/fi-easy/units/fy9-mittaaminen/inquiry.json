@@ -1,0 +1,513 @@
+{
+  "version": 1,
+  "contribution": "Tällä kertaustunnilla kerrataan FY1:n taitoja: mittaamista ja kuvaajia. Taitoja harjoitellaan ylioppilaskokeen tehtävätyyppien avulla. Tunnilla käsitellään tuloksen epävarmuutta ja tarkkuutta, kuvaajan piirtämistä taulukosta, suoran sovitusta ja linearisointia sekä kulmakertoimen ja vakiotermin yksikköjä ja merkitystä. Lisäksi käsitellään interpolointia ja ekstrapolointia. Lopussa on alkuperäisiä pitkiä tehtäviä. Yksi niistä yhdistää mittaamisen kaasujen tilanyhtälöön.",
+  "learn": [
+    "piirtämään mittausaineistosta kuvaajan ja valitsemaan siihen sopivan sovituksen.",
+    "tulkitsemaan kulmakertoimen ja vakiotermin yksiköineen eli kertomaan, mitä ne fysiikassa tarkoittavat.",
+    "arvioimaan tuloksen epävarmuuden ja ilmoittamaan tuloksen perustellulla tarkkuudella."
+  ],
+  "prior": [
+    "Tulos ilmoitetaan muodossa $\\bar{x} \\pm \\Delta x$. Epävarmuus pyöristetään yhteen merkitsevään numeroon (luku *Mittaaminen ja mittauksen luotettavuus*)",
+    "Mittauspisteisiin sovitetaan suora. Sen kulmakerroin luetaan suoran kahdesta pisteestä, jotka ovat kaukana toisistaan (luku *Graafinen esitys ja suoran sovittaminen*)",
+    "Saman aineen massa on suoraan verrannollinen tilavuuteen. $(V, m)$-suoran kulmakerroin on tiheys (luku *Tiheys*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Kokeen tehtävässä on mittaustaulukko. Mittalasiin kaadettiin nestettä $20\\,\\text{ml}$ kerrallaan. Jokaisen lisäyksen jälkeen mittalasi ja neste punnittiin yhdessä vaa'alla. Aino laskee jokaiselta riviltä massan ja tilavuuden suhteen. Sitten hän laskee suhteiden keskiarvon. Eetu piirtää $(V, m)$-kuvaajan. Hän sovittaa pisteisiin suoran ja lukee suoran kulmakertoimen. Aineisto on sama, mutta Aino ja Eetu saavat hyvin erilaiset tulokset.",
+      "question": "Kumman tapa antaa nesteen tiheyden? Mitä toinen tapa jättää huomiotta eli ottamatta mukaan?"
+    },
+    {
+      "id": "lahto-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Lähtötaso 1: tarkkuus",
+      "prompt": "Kiven massa on $32{,}46\\,\\text{g}$. Kivi upotetaan mittalasiin, jossa on vettä. Lukema nousee $52\\,\\text{ml}$:stä $64\\,\\text{ml}$:aan. Miten kiven tiheys ilmoitetaan perustellulla tarkkuudella?",
+      "choices": [
+        {
+          "text": "$\\rho \\approx 2{,}705\\,\\text{g/cm}^3$",
+          "feedback": "Kaikki laskimen numerot eivät ole luotettavia. Tilavuus on lukemien erotus $64\\,\\text{ml} - 52\\,\\text{ml} = 12\\,\\text{ml}$. Siinä on vain kaksi merkitsevää numeroa. Siksi myös tiheydessä on kaksi merkitsevää numeroa: $2{,}7\\,\\text{g/cm}^3$. Kertaa merkitsevät numerot luvussa *Suureet, yksiköt ja SI-järjestelmä*."
+        },
+        {
+          "text": "$\\rho \\approx 2{,}7\\,\\text{g/cm}^3$",
+          "correct": true,
+          "feedback": "Oikein. Tilavuus on lukemien erotus $12\\,\\text{ml} = 12\\,\\text{cm}^3$. Siinä on kaksi merkitsevää numeroa. Jakolaskun tuloksessa on yhtä monta merkitsevää numeroa kuin epätarkimmassa lähtöarvossa. Siksi $32{,}46\\,\\text{g} : 12\\,\\text{cm}^3 = 2{,}705\\,\\text{g/cm}^3 \\approx 2{,}7\\,\\text{g/cm}^3$. Erotuksen tarkkuudesta kerrotaan luvussa *Tiheys*."
+        },
+        {
+          "text": "$\\rho \\approx 2{,}71\\,\\text{g/cm}^3$",
+          "feedback": "Kolme numeroa olisi oikein, jos tilavuus tunnettaisiin kolmen numeron tarkkuudella. Lukemissa $52\\,\\text{ml}$ ja $64\\,\\text{ml}$ on kaksi numeroa. Myös niiden erotuksessa $12\\,\\text{ml}$ on vain kaksi numeroa. Kertaa erotuksen tarkkuus luvussa *Tiheys*."
+        },
+        {
+          "text": "$\\rho \\approx 3\\,\\text{g/cm}^3$",
+          "feedback": "Yksi numero on liian vähän. Silloin tulos muuttuu yli $10\\,\\%$. Tilavuudessa $12\\,\\text{ml}$ on kaksi merkitsevää numeroa. Siksi tiheys ilmoitetaan kahdella numerolla: $2{,}7\\,\\text{g/cm}^3$. Kertaa merkitsevät numerot luvussa *Suureet, yksiköt ja SI-järjestelmä*."
+        }
+      ]
+    },
+    {
+      "id": "lahto-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Lähtötaso 2: toistaminen",
+      "prompt": "Keittiövaaka näyttää $0{,}8\\,\\text{g}$, kun sen päällä ei ole mitään. Vaakaa ei nollata. Opiskelija punnitsee saman kappaleen kymmenen kertaa. Sitten hän laskee tuloksista keskiarvon. Mitä keskiarvosta voi sanoa?",
+      "choices": [
+        {
+          "text": "Toistot poistavat nollakohdan virheen, koska virheet kumoavat toisensa.",
+          "feedback": "Vain satunnaisvirheet kumoavat toisensa eli poistavat toistensa vaikutuksen. Satunnaisvirhe on joskus plusmerkkinen ja joskus miinusmerkkinen. Nollakohdan virhe lisää jokaiseen punnitukseen saman $0{,}8\\,\\text{g}$. Siksi virhe on myös keskiarvossa. Kertaa virhelajit luvussa *Mittaaminen ja mittauksen luotettavuus*."
+        },
+        {
+          "text": "Keskiarvossa on yhä noin $0{,}8\\,\\text{g}$:n systemaattinen virhe.",
+          "correct": true,
+          "feedback": "Oikein. Nollakohdan virhe on systemaattinen. Se siirtää jokaista lukemaa samaan suuntaan. Siksi toistaminen ja keskiarvo eivät poista sitä. Virhe korjataan niin, että tuloksesta vähennetään $0{,}8\\,\\text{g}$ tai vaaka nollataan. Systemaattisesta virheestä kerrotaan luvussa *Mittaaminen ja mittauksen luotettavuus*."
+        },
+        {
+          "text": "Kyse on karkeasta virheestä, joten keskiarvoa ei voi käyttää.",
+          "feedback": "Karkea virhe on yksi erehdys. Se näkyy tuloksena, joka on erilainen kuin muut. Nollakohdan virhe on sama jokaisessa punnituksessa. Siksi se on systemaattinen virhe, ja sen voi korjata. Tulosta ei tarvitse heittää pois. Kertaa virhelajit luvussa *Mittaaminen ja mittauksen luotettavuus*."
+        },
+        {
+          "text": "Keskiarvo on oikea, koska vaa'an resoluutio on $0{,}1\\,\\text{g}$.",
+          "feedback": "Resoluutio kertoo vain, kuinka pieni muutos näkyy näytössä. Se ei kerro, onko nollakohta oikea. Vaaka voi näyttää kymmenykset ja olla silti $0{,}8\\,\\text{g}$ väärässä. Resoluution ja epävarmuuden erosta kerrotaan luvussa *Mittaaminen ja mittauksen luotettavuus*."
+        }
+      ]
+    },
+    {
+      "id": "lahto-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Lähtötaso 3: kulmakerroin",
+      "prompt": "Opiskelija on sovittanut suoran kahdeksaan mittauspisteeseen. Miten hänen kannattaa määrittää suoran kulmakerroin?",
+      "choices": [
+        {
+          "text": "Kahdesta vierekkäisestä mittauspisteestä, jotka ovat lähellä suoraa.",
+          "feedback": "Vierekkäisten pisteiden erotukset ovat pieniä. Siksi kummankin pisteen satunnaisvirhe muuttaa kulmakerrointa paljon. Kulmakerroin luetaan sovitetulta suoralta kahdesta pisteestä, jotka ovat kaukana toisistaan. Kertaa luvussa *Graafinen esitys ja suoran sovittaminen*."
+        },
+        {
+          "text": "Ensimmäisestä ja viimeisestä mittauspisteestä, jotka ovat kauimpana toisistaan.",
+          "feedback": "Pisteet ovat kaukana toisistaan. Ne ovat kuitenkin mittauspisteitä, ja niissä on omat virheensä. Lisäksi tulos ei käytä muita kuutta pistettä ollenkaan. Pisteet luetaan sovitetulta suoralta. Kertaa luvussa *Graafinen esitys ja suoran sovittaminen*."
+        },
+        {
+          "text": "Kahdesta sovitetun suoran pisteestä, jotka ovat kaukana toisistaan.",
+          "correct": true,
+          "feedback": "Oikein. Suora on sovitettu kaikkiin pisteisiin, joten sen kulmakerroin käyttää koko aineistoa. Kun pisteet ovat kaukana toisistaan, erotukset ovat suuria. Silloin lukemisen virhe vaikuttaa vähän. Kulmakertoimen lukemisesta kerrotaan luvussa *Graafinen esitys ja suoran sovittaminen*."
+        },
+        {
+          "text": "Laskemalla jokaisen pisteen suhteen $y : x$ ja laskemalla suhteista keskiarvon.",
+          "feedback": "Suhde $y : x$ on kulmakerroin vain silloin, kun suora kulkee origon kautta. Jos vakiotermi ei ole nolla, suhteet ovat vääriä. Ne myös muuttuvat pisteestä toiseen. Kertaa vakiotermin merkitys luvussa *Graafinen esitys ja suoran sovittaminen*."
+        }
+      ]
+    },
+    {
+      "id": "lahto-4",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Lähtötaso 4: vakiotermi",
+      "prompt": "Kynttilä palaa. Kynttilän pituus $h$ mitattiin puolen tunnin välein. Aika $t$ lasketaan siitä, kun kynttilä sytytettiin. Pisteisiin sovitetun suoran yhtälö on $h = -0{,}80\\,\\tfrac{\\text{cm}}{\\text{h}} \\cdot t + 18{,}0\\,\\text{cm}$. Mitä vakiotermi $18{,}0\\,\\text{cm}$ kertoo?",
+      "choices": [
+        {
+          "text": "Mittausvirheen, joka poistetaan pakottamalla suora kulkemaan origon kautta.",
+          "feedback": "Tässä vakiotermillä on fysikaalinen merkitys. Se on suoran arvo, kun $t = 0$. Jos suora pakotetaan origon kautta, se väittää, että kynttilän pituus oli nolla, kun se sytytettiin. Lisäksi kulmakerroin muuttuisi. Kertaa vakiotermin merkitys luvussa *Graafinen esitys ja suoran sovittaminen*."
+        },
+        {
+          "text": "Kynttilän pituuden sytyttämishetkellä, kun aika on nolla.",
+          "correct": true,
+          "feedback": "Oikein. Kun $t = 0$, suoran yhtälöstä jää jäljelle vain vakiotermi. Siksi $18{,}0\\,\\text{cm}$ on kynttilän pituus sytyttämishetkellä. Kulmakerroin $-0{,}80\\,\\text{cm/h}$ kertoo, kuinka paljon kynttilä lyhenee tunnissa. Tästä kerrotaan luvussa *Graafinen esitys ja suoran sovittaminen*."
+        },
+        {
+          "text": "Kuinka monta senttimetriä kynttilä lyhenee yhdessä tunnissa.",
+          "feedback": "Lyheneminen tunnissa on kulmakerroin $0{,}80\\,\\text{cm/h}$. Se ei ole vakiotermi. Vakiotermi on suoran arvo, kun $t = 0$, eli kynttilän pituus sytyttämishetkellä. Kertaa luvussa *Graafinen esitys ja suoran sovittaminen*."
+        },
+        {
+          "text": "Että kynttilän pituus ja aika ovat suoraan verrannolliset.",
+          "feedback": "Suoraa verrannollisuutta kuvaa suora, joka kulkee origon kautta. Sen vakiotermi on nolla. Tässä vakiotermi on $18{,}0\\,\\text{cm}$, ja pituus pienenee, kun aikaa kuluu. Kertaa luvussa *Graafinen esitys ja suoran sovittaminen*."
+        }
+      ]
+    },
+    {
+      "id": "lahto-5",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Lähtötaso 5: linearisointi",
+      "prompt": "Vaunu lähtee levosta ja kiihtyy tasaisesti. Valoporteilla mitataan vaunun kulkema matka $s$ ja aika $t$ lähdöstä. Minkä kuvaajan pisteet asettuvat suoralle?",
+      "choices": [
+        {
+          "text": "$(t, s)$-kuvaajan, koska matka kasvaa, kun aikaa kuluu.",
+          "feedback": "Matka kasvaa, mutta yhä nopeammin, koska nopeus kasvaa. Siksi $(t, s)$-kuvaaja kaartuu ylöspäin. Kun $s = \\tfrac{1}{2}at^2$, suora saadaan $(t^2, s)$-kuvaajasta. Kertaa luvussa *Kiihtyvyys ja tasaisesti kiihtyvä liike* ja TVT-ohjeesta *Suoran sovittaminen mittauspisteisiin*."
+        },
+        {
+          "text": "$(t^2, s)$-kuvaajan, koska matka on $s = \\tfrac{1}{2}at^2$.",
+          "correct": true,
+          "feedback": "Oikein. Matka on verrannollinen ajan neliöön. Siksi $(t^2, s)$-kuvaaja on suora, joka kulkee origon kautta. Sen kulmakerroin on $\\tfrac{a}{2}$. Liikkeen yhtälöt kerrataan luvussa *Kiihtyvyys ja tasaisesti kiihtyvä liike*."
+        },
+        {
+          "text": "$(\\sqrt{t}, s)$-kuvaajan, koska nopeus kasvaa tasaisesti.",
+          "feedback": "Neliöjuuri tekisi suoraksi kuvaajan, joka kaartuu alaspäin. Tasaisesti kiihtyvässä liikkeessä $(t, s)$-kuvaaja kaartuu ylöspäin, ja $s = \\tfrac{1}{2}at^2$. Siksi oikea vaaka-akseli on $t^2$. Kertaa luvussa *Kiihtyvyys ja tasaisesti kiihtyvä liike*."
+        },
+        {
+          "text": "$(\\tfrac{1}{t}, s)$-kuvaajan, koska nopeus muuttuu.",
+          "feedback": "Suure $\\tfrac{1}{t}$ tekee kuvaajasta suoran, kun $y$ on kääntäen verrannollinen $x$:ään, kuten Boylen laissa. Tasaisesti kiihtyvässä liikkeessä $s = \\tfrac{1}{2}at^2$. Siksi oikea vaaka-akseli on $t^2$. Kertaa luvussa *Kiihtyvyys ja tasaisesti kiihtyvä liike*."
+        }
+      ]
+    },
+    {
+      "id": "lahto-6",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Lähtötaso 6: mitatun alueen ulkopuolella",
+      "prompt": "Jousen venymä mitattiin, kun voima oli $0$–$10\\,\\text{N}$. Pisteet asettuvat suoralle, joka kulkee origon kautta. Mitä venymästä voidaan sanoa, kun voima on $40\\,\\text{N}$?",
+      "choices": [
+        {
+          "text": "Venymä on varmasti nelinkertainen, koska mitattu suora kulkee origon kautta.",
+          "feedback": "Mittaukset osoittavat, että suora pätee vain alueella $0$–$10\\,\\text{N}$. Suuri voima voi venyttää jousta pysyvästi. Silloin riippuvuus ei ole enää suora. Ekstrapoloinnista kerrotaan luvussa *Graafinen esitys ja suoran sovittaminen*."
+        },
+        {
+          "text": "Suoran jatke on vain arvio, koska yli $10\\,\\text{N}$:n voimia ei mitattu.",
+          "correct": true,
+          "feedback": "Oikein. Ekstrapolointi tarkoittaa suoran jatkamista mitatun alueen ulkopuolelle. Se olettaa, että riippuvuus pysyy samanlaisena myös siellä. Arvio on perusteltu vain, jos tiedetään, että jousi kestää $40\\,\\text{N}$ venymättä pysyvästi. Tästä kerrotaan luvussa *Graafinen esitys ja suoran sovittaminen*."
+        },
+        {
+          "text": "Venymää ei voi arvioida ollenkaan, koska sitä ei ole mitattu.",
+          "feedback": "Arvion voi tehdä, kun suoraa jatketaan. Pitää kuitenkin muistaa, että se on vain arvio. Ekstrapoloinnin luotettavuus pitää perustella. Perusteluna voi olla esimerkiksi tieto siitä, millä voimalla jousi alkaa venyä pysyvästi. Kertaa luvussa *Graafinen esitys ja suoran sovittaminen*."
+        },
+        {
+          "text": "Venymä on pienempi, koska jousen kulmakerroin pienenee aina, kun kuorma kasvaa.",
+          "feedback": "Mittaukset eivät kerro, että kulmakerroin pienenee. Liian suuri kuorma voi päinvastoin venyttää jousta enemmän ja pysyvästi. Mitatun alueen ulkopuolella tulos on vain arvio. Kertaa luvussa *Graafinen esitys ja suoran sovittaminen*."
+        }
+      ]
+    },
+    {
+      "id": "tutki-kaasu",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Kaasun paine ja lämpötila",
+      "source": "example",
+      "figure": "fy3-3/extrapolation-points",
+      "text": "Astia on suljettu ja jäykkä eli sen tilavuus ei muutu. Astian ilmaa lämmitettiin vesihauteessa. Paine mitattiin anturilla viidessä lämpötilassa. Kuvaajassa ovat mittauspisteet, mutta niissä ei ole sovitettua suoraa. Sovita ensin pisteisiin suora vihkoon tai kuvaajaohjelmaan. Lue sitten suoran kulmakerroin ja vakiotermi yksiköineen. Mieti lopuksi, mitä kumpikin kertoo astian kaasusta.",
+      "question": {
+        "type": "numeric",
+        "prompt": "Jatka sovitettua suoraa mitatun alueen ulkopuolelle. Missä lämpötilassa suora leikkaa vaaka-akselin? Toisin sanoen: missä lämpötilassa paine olisi mallin mukaan nolla? Vastaa celsiusasteina.",
+        "answer": -270,
+        "unit": "°C",
+        "tolerance": 0.05,
+        "hints": [
+          "Lue suoralta kaksi pistettä, jotka ovat kaukana toisistaan. Valitse esimerkiksi kohdat $0\\,{}^\\circ\\text{C}$ ja $100\\,{}^\\circ\\text{C}$.",
+          "Suoran yhtälö on $p = k\\theta + b$. Paine on nolla, kun $k\\theta + b = 0$.",
+          "$\\theta_0 = -\\dfrac{b}{k}$, missä $b \\approx 75\\,\\text{kPa}$ ja $k = \\dfrac{\\Delta p}{\\Delta \\theta}$ yksikössä $\\text{kPa}/{}^\\circ\\text{C}$."
+        ],
+        "mistakes": [
+          {
+            "value": 270,
+            "feedback": "Luku on oikean kokoinen, mutta merkki puuttuu. Suora laskee vasemmalle. Siksi se kohtaa vaaka-akselin negatiivisessa lämpötilassa: $\\theta_0 = -\\tfrac{b}{k}$."
+          },
+          {
+            "value": -75,
+            "feedback": "$75\\,\\text{kPa}$ on vakiotermi eli paine lämpötilassa $0\\,{}^\\circ\\text{C}$. Se ei ole lämpötila. Jaa vakiotermi kulmakertoimella: $\\theta_0 = -\\tfrac{b}{k}$."
+          }
+        ],
+        "solution": "**Annettu:** kuvaajan viisi mittauspistettä lämpötiloissa $0$–$100\\,{}^\\circ\\text{C}$. Astia on suljettu ja jäykkä, joten kaasun määrä ja tilavuus pysyvät samoina.\n\n**Kysytty:** lämpötila $\\theta_0$, jossa paine on suoran mukaan nolla, yksikössä ${}^\\circ\\text{C}$\n\n**Periaate:** Pisteet ovat melkein suoralla. Siksi paine riippuu lämpötilasta lineaarisesti eli suoran mukaan: $p = k\\theta + b$. Kulmakerroin kertoo, kuinka monta kilopascalia paine kasvaa, kun lämpötila nousee yhden celsiusasteen. Vakiotermi on paine lämpötilassa $0\\,{}^\\circ\\text{C}$. Kysytty lämpötila saadaan, kun suoraa jatketaan kauas mitatun alueen ulkopuolelle. Tätä sanotaan ekstrapoloinniksi.\n\n**Kuvaajan lukeminen:** Suora on sovitettu pisteiden lomaan eli niiden väliin. Se kulkee pisteiden $(0\\,{}^\\circ\\text{C};\\ 75{,}0\\,\\text{kPa})$ ja $(100\\,{}^\\circ\\text{C};\\ 102{,}6\\,\\text{kPa})$ kautta. Siksi vakiotermi on $b = 75{,}0\\,\\text{kPa}$.\n\n**Kaava:** $k = \\dfrac{\\Delta p}{\\Delta\\theta}$. Paine on nolla, kun $k\\theta_0 + b = 0$. Siitä saadaan $\\theta_0 = -\\dfrac{b}{k}$\n\n**Muunnokset:** Ei tarvita. Lämpötilat ovat celsiusasteina ja paineet kilopascaleina, ja $\\text{kPa}$ supistuu.\n\n**Sijoitus:** $k = \\dfrac{102{,}6\\,\\text{kPa} - 75{,}0\\,\\text{kPa}}{100\\,{}^\\circ\\text{C} - 0\\,{}^\\circ\\text{C}} = 0{,}276\\,\\tfrac{\\text{kPa}}{{}^\\circ\\text{C}}$ ja $\\theta_0 = -\\dfrac{75{,}0\\,\\text{kPa}}{0{,}276\\,\\text{kPa}/{}^\\circ\\text{C}} = -271{,}7\\,{}^\\circ\\text{C}$\n\n**Vastaus:** $\\theta_0 \\approx -270\\,{}^\\circ\\text{C}$. Vastauksessa on kaksi merkitsevää numeroa. Syy: pisteiden paineet luetaan kuvaajasta noin kahden numeron tarkkuudella, ja suoraa jatketaan lähes kolme kertaa mitatun alueen pituus. Kulmakerroin $0{,}28\\,\\text{kPa}/{}^\\circ\\text{C}$ kertoo, kuinka nopeasti paine kasvaa, kun kaasua lämmitetään. Vakiotermi $75\\,\\text{kPa}$ on paine veden jäätymispisteessä.\n\n**Järkevyys:** Tulos on lähellä absoluuttista nollapistettä $-273{,}15\\,{}^\\circ\\text{C}$ (luku *Termodynaaminen systeemi, tilanmuuttujat ja lämpötila*). Ekstrapolointi on kuitenkin vain mallin ennuste. Todellinen kaasu muuttuu nesteeksi kauan ennen kuin sen paine laskisi nollaan. Siksi paine ei oikeasti seuraa suoraa niin kauas. Jos suoran kaltevuus muuttuu vähän, leikkauskohta siirtyy kymmeniä asteita. Tämä näkyy vastauksen tarkkuudessa."
+      }
+    },
+    {
+      "id": "tiivistelma",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Kokonaiskuva",
+        "Kaava",
+        "Yleisiä virheitä",
+        "Kertaa tarvittaessa"
+      ]
+    },
+    {
+      "id": "virhe-tulos",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe: tuloksen muoto",
+      "prompt": "Opiskelija määritti putoamiskiihtyvyyden kuvaajasta. Hän kirjoitti vastaukseksi $g = (9{,}7634 \\pm 0{,}38)\\,\\text{m/s}^2$. Mikä on tuloksen oikein pyöristetty muoto?",
+      "choices": [
+        {
+          "text": "$g = (9{,}76 \\pm 0{,}38)\\,\\text{m/s}^2$",
+          "feedback": "Epävarmuuden ensimmäinen numero on $3$. Siksi epävarmuus pyöristetään yhteen merkitsevään numeroon: $0{,}4\\,\\text{m/s}^2$. Toinen numero $8$ ei ole luotettava, koska jo ensimmäinen numero on epävarma. Kertaa pyöristys luvussa *Mittaaminen ja mittauksen luotettavuus*."
+        },
+        {
+          "text": "$g = (9{,}8 \\pm 0{,}4)\\,\\text{m/s}^2$",
+          "correct": true,
+          "feedback": "Oikein. Epävarmuus pyöristetään yhteen merkitsevään numeroon, $0{,}4\\,\\text{m/s}^2$. Tulos pyöristetään samaan desimaaliin, $9{,}8\\,\\text{m/s}^2$. Pyöristyssääntö on luvussa *Mittaaminen ja mittauksen luotettavuus*."
+        },
+        {
+          "text": "$g = (9{,}7634 \\pm 0{,}4)\\,\\text{m/s}^2$",
+          "feedback": "Epävarmuus on oikein, mutta tulos on pyöristetty eri tarkkuuteen. Jos jo kymmenesosat ovat epävarmoja, sadasosilla ja tuhannesosilla ei ole merkitystä. Tulos pyöristetään samaan desimaaliin kuin epävarmuus: $9{,}8\\,\\text{m/s}^2$. Kertaa luvussa *Mittaaminen ja mittauksen luotettavuus*."
+        },
+        {
+          "text": "$g = (10 \\pm 0{,}4)\\,\\text{m/s}^2$",
+          "feedback": "Tulos on pyöristetty liikaa. Epävarmuudessa ovat mukana kymmenesosat, joten ne kuuluvat myös tulokseen. Oikea muoto on $(9{,}8 \\pm 0{,}4)\\,\\text{m/s}^2$. Kertaa luvussa *Mittaaminen ja mittauksen luotettavuus*."
+        }
+      ]
+    },
+    {
+      "id": "aika-kuvaaja",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Valitse suora kuvaaja",
+      "prompt": "Leikkiauto ajaa $2{,}0\\,\\text{m}$:n pituisen radan tasaisella nopeudella. Rata ajetaan monta kertaa eri nopeuksilla $v$. Joka kerta mitataan aika $t$, joka radan ajamiseen kuluu. Minkä kuvaajan pisteiden pitäisi asettua suoralle, joka kulkee origon kautta?",
+      "choices": [
+        {
+          "text": "$(v, t)$-kuvaajan pisteiden",
+          "feedback": "Kun nopeus kasvaa, aika lyhenee. Siksi $(v, t)$-kuvaaja on laskeva käyrä eikä suora. Matka on joka kerta sama, joten $t = \\tfrac{s}{v}$. Siis $t$ on verrannollinen suureeseen $\\tfrac{1}{v}$. Kertaa linearisointi luvussa *Graafinen esitys ja suoran sovittaminen*."
+        },
+        {
+          "text": "$(v^2, t)$-kuvaajan pisteiden",
+          "feedback": "Neliö tekisi kuvaajasta suoran, jos aika olisi verrannollinen nopeuden neliöön. Aika kuitenkin lyhenee, kun nopeus kasvaa: $t = \\tfrac{s}{v}$. Kertaa luvussa *Graafinen esitys ja suoran sovittaminen*."
+        },
+        {
+          "text": "$(\\tfrac{1}{v}, t)$-kuvaajan pisteiden",
+          "correct": true,
+          "feedback": "Oikein. Matka on vakio, joten $t = s \\cdot \\tfrac{1}{v}$. Siksi $(\\tfrac{1}{v}, t)$-kuvaaja on suora, joka kulkee origon kautta. Sen kulmakerroin on radan pituus $s$. Linearisoinnista kerrotaan luvussa *Graafinen esitys ja suoran sovittaminen*."
+        },
+        {
+          "text": "$(\\sqrt{v}, t)$-kuvaajan pisteiden",
+          "feedback": "Neliöjuuri ei poista kääntäen verrannollisuutta. Aika lyhenee yhä, kun $\\sqrt{v}$ kasvaa. Koska $t = \\tfrac{s}{v}$, vaaka-akselille tulee $\\tfrac{1}{v}$. Kertaa luvussa *Graafinen esitys ja suoran sovittaminen*."
+        }
+      ]
+    },
+    {
+      "id": "vakiotermi",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Arvioi johtopäätös",
+      "prompt": "Mallin mukaan jousen venymä $x$ on suoraan verrannollinen voimaan $F$. Mittauspisteisiin sovitetun suoran vakiotermi on kuitenkin $0{,}4\\,\\text{cm}$. Venymien epävarmuus on $\\pm 0{,}1\\,\\text{cm}$. Mikä johtopäätös on parhaiten perusteltu?",
+      "choices": [
+        {
+          "text": "Vakiotermi on selvästi suurempi kuin epävarmuus, joten sille etsitään syy, esimerkiksi nollakohta.",
+          "correct": true,
+          "feedback": "Oikein. Vakiotermi $0{,}4\\,\\text{cm}$ on neljä kertaa niin suuri kuin venymien epävarmuus. Siksi satunnaisvirhe ei selitä sitä. Syy on todennäköisesti systemaattinen. Esimerkiksi venymät on ehkä mitattu väärästä nollakohdasta. Kulmakerroin voi silti olla oikea. Kertaa luvussa *Graafinen esitys ja suoran sovittaminen*."
+        },
+        {
+          "text": "Suora pakotetaan kulkemaan origon kautta, koska mallin mukaan sen pitää tehdä niin.",
+          "feedback": "Pakotettu suora ei kulkisi pisteiden kohdalta, ja kulmakerroin muuttuisi. Aineisto kertoo, että jotain on tapahtunut. Syy selvitetään ensin, ennen kuin suora pakotetaan origon kautta. Kertaa luvussa *Graafinen esitys ja suoran sovittaminen*."
+        },
+        {
+          "text": "Vakiotermi osoittaa, että jousi ei noudata lineaarista mallia ollenkaan millään voimalla.",
+          "feedback": "Pisteet ovat suoralla, joten riippuvuus on lineaarinen. Vain suoran paikka on siirtynyt. Siirtymä kertoo systemaattisesta virheestä, esimerkiksi väärästä nollakohdasta. Se ei kerro, että malli on väärä. Kertaa virhelajit luvussa *Mittaaminen ja mittauksen luotettavuus*."
+        },
+        {
+          "text": "Vakiotermi on pieni, joten se pyöristetään nollaksi, eikä sitä käsitellä enempää.",
+          "feedback": "Pieni ei tarkoita samaa kuin merkityksetön. Vakiotermiä verrataan epävarmuuteen eikä nollaan. $0{,}4\\,\\text{cm}$ on neljä kertaa niin suuri kuin epävarmuus $0{,}1\\,\\text{cm}$. Kertaa luvussa *Mittaaminen ja mittauksen luotettavuus*."
+        }
+      ]
+    },
+    {
+      "id": "virhelaji",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Tunnista virhelaji",
+      "prompt": "Mittalasi on pöydällä. Opiskelija lukee sen asteikon joka kerta seisten ja ylhäältä vinosti. Hänen silmänsä eivät ole nestepinnan tasolla. Millainen virhe tuloksiin syntyy?",
+      "choices": [
+        {
+          "text": "Satunnaisvirhe, joka pienenee keskiarvossa, kun lukemia otetaan enemmän.",
+          "feedback": "Satunnaisvirhe on joskus plusmerkkinen ja joskus miinusmerkkinen. Kun lukema luetaan ylhäältä vinosti, se on joka kerta väärin samaan suuntaan. Siksi keskiarvo ei korjaa virhettä. Kertaa virhelajit luvussa *Mittaaminen ja mittauksen luotettavuus*."
+        },
+        {
+          "text": "Systemaattinen virhe: jokainen lukema on väärin samaan suuntaan.",
+          "correct": true,
+          "feedback": "Oikein. Kun asteikko luetaan aina samasta väärästä kulmasta, kaikki lukemat siirtyvät samaan suuntaan. Toistaminen ei poista virhettä. Virhe korjataan niin, että asteikko luetaan silmät nestepinnan tasolla. Systemaattisesta virheestä kerrotaan luvussa *Mittaaminen ja mittauksen luotettavuus*."
+        },
+        {
+          "text": "Karkea virhe, joka näkyy yhtenä lukemana, joka on selvästi erilainen kuin muut.",
+          "feedback": "Karkea virhe on yksi erehdys. Tässä sama lukutapa toistuu joka kerta. Siksi mikään lukema ei ole erilainen kuin muut. Kaikki lukemat ovat väärin samaan suuntaan. Kertaa luvussa *Mittaaminen ja mittauksen luotettavuus*."
+        },
+        {
+          "text": "Virhettä ei synny, koska lukutapa on joka kerta täsmälleen sama.",
+          "feedback": "Juuri sama lukutapa tekee virheestä systemaattisen. Virhe toistuu samanlaisena joka kerta. Tulokset voivat olla lähellä toisiaan mutta silti väärässä kohdassa. Kertaa toistettavuus ja oikeellisuus luvussa *Mittaaminen ja mittauksen luotettavuus*."
+        }
+      ]
+    },
+    {
+      "id": "kolikot",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Kolikkopino",
+      "prompt": "Pinossa on kymmenen samanlaista kolikkoa. Opiskelija mittaa pinon korkeuden viivaimella. Korkeus on $18{,}5\\,\\text{mm}$. Viivaimen pienin asteikkoväli on $1\\,\\text{mm}$. Siksi pinon korkeuden epävarmuudeksi arvioidaan $0{,}5\\,\\text{mm}$. Kuinka suuri on yhden kolikon paksuuden suhteellinen epävarmuus? Vastaa prosentteina.",
+      "answer": 2.7,
+      "unit": "%",
+      "tolerance": 0.12,
+      "hints": [
+        "Pinossa on kymmenen kolikkoa. Kuinka paksu yksi kolikko on? Kuinka suuri on sen paksuuden epävarmuus?",
+        "Sekä paksuus että sen epävarmuus jaetaan kymmenellä: $d = 1{,}85\\,\\text{mm}$ ja $\\Delta d = 0{,}05\\,\\text{mm}$.",
+        "$\\varepsilon = \\dfrac{\\Delta d}{d} \\cdot 100\\,\\% = \\dfrac{0{,}05\\,\\text{mm}}{1{,}85\\,\\text{mm}} \\cdot 100\\,\\%$"
+      ],
+      "mistakes": [
+        {
+          "value": 27,
+          "feedback": "Jaoit pinon epävarmuuden $0{,}5\\,\\text{mm}$ yhden kolikon paksuudella. Kun pinon korkeus jaetaan kymmenellä, myös sen epävarmuus jaetaan kymmenellä: $\\Delta d = 0{,}05\\,\\text{mm}$. Juuri siksi kannattaa mitata koko pino."
+        },
+        {
+          "value": 0.27,
+          "feedback": "Jaoit yhden kolikon epävarmuuden $0{,}05\\,\\text{mm}$ koko pinon korkeudella. Vertaa saman kolikon lukuja: $\\tfrac{\\Delta d}{d} = \\tfrac{0{,}05\\,\\text{mm}}{1{,}85\\,\\text{mm}}$."
+        },
+        {
+          "value": 0.027,
+          "feedback": "Tämä on suhteellinen epävarmuus desimaalilukuna. Vastaus kysytään prosentteina. Kerro siksi suhde $\\tfrac{\\Delta d}{d} = 0{,}027$ sadalla prosentilla."
+        }
+      ],
+      "solution": "**Annettu:** pinon korkeus $h = 18{,}5\\,\\text{mm}$, sen epävarmuus $\\Delta h = 0{,}5\\,\\text{mm}$, kolikoiden määrä $N = 10$\n\n**Kysytty:** yhden kolikon paksuuden suhteellinen epävarmuus $\\varepsilon$ prosentteina\n\n**Periaate:** Kolikot ovat samanlaisia. Siksi yhden kolikon paksuus on pinon korkeus jaettuna kymmenellä. Pinon korkeus luetaan vain kerran. Siksi koko lukeman epävarmuus jakautuu kymmenelle kolikolle. Suhteellinen epävarmuus vertaa epävarmuutta itse tulokseen.\n\n**Kaava:** $d = \\dfrac{h}{N}$ ja $\\Delta d = \\dfrac{\\Delta h}{N}$, joten $\\varepsilon = \\dfrac{\\Delta d}{d} \\cdot 100\\,\\% = \\dfrac{\\Delta h}{h} \\cdot 100\\,\\%$\n\n**Muunnokset:** Ei tarvita. Millimetrit supistuvat suhteessa.\n\n**Sijoitus:** $d = 18{,}5\\,\\text{mm} : 10 = 1{,}85\\,\\text{mm}$, $\\Delta d = 0{,}5\\,\\text{mm} : 10 = 0{,}05\\,\\text{mm}$ ja $\\varepsilon = \\dfrac{0{,}05\\,\\text{mm}}{1{,}85\\,\\text{mm}} \\cdot 100\\,\\% = 2{,}70\\,\\%$\n\n**Vastaus:** $\\varepsilon \\approx 3\\,\\%$ ($2{,}7\\,\\%$). Epävarmuus $0{,}5\\,\\text{mm}$ on arvio, jossa on yksi merkitsevä numero. Siksi yksi numero riittää. Välituloksessa voi käyttää kahta numeroa. Kolikon paksuus on $(1{,}85 \\pm 0{,}05)\\,\\text{mm}$.\n\n**Järkevyys:** Jos yksi kolikko mitattaisiin samalla viivaimella, epävarmuus olisi $0{,}5\\,\\text{mm} : 1{,}85\\,\\text{mm} \\approx 27\\,\\%$. Se on kymmenen kertaa niin suuri. Kun mitataan pino, yhden kolikon epävarmuus pienenee. Syy on se, että yhden lukeman epävarmuus jakautuu kymmenelle kolikolle."
+    },
+    {
+      "id": "jousi-suora",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Jousen suora",
+      "prompt": "Jouseen ripustettiin eri punnuksia. Jokaisella kuormalla mitattiin jousen kokonaispituus $L$. $F$ on voima, joka venyttää jousta. Pisteisiin sovitettu $(L, F)$-suora kulkee pisteiden $(15{,}0\\,\\text{cm};\\ 1{,}2\\,\\text{N})$ ja $(35{,}0\\,\\text{cm};\\ 17{,}0\\,\\text{N})$ kautta. Mikä on jousen jousivakio? Vastaa yksikössä $\\text{N/m}$.",
+      "answer": 79,
+      "unit": "N/m",
+      "tolerance": 0.02,
+      "hints": [
+        "Jousen venymä on $L - L_0$. $L_0$ on jousen pituus ilman kuormaa. Kumpi suoran suure on jousivakio: kulmakerroin vai vakiotermi?",
+        "$F = k(L - L_0) = kL - kL_0$. Siksi jousivakio on kulmakerroin $k = \\dfrac{\\Delta F}{\\Delta L}$.",
+        "$k = \\dfrac{17{,}0\\,\\text{N} - 1{,}2\\,\\text{N}}{0{,}350\\,\\text{m} - 0{,}150\\,\\text{m}}$"
+      ],
+      "mistakes": [
+        {
+          "value": 0.79,
+          "feedback": "Luku on oikein yksikössä $\\text{N/cm}$. Muunna pituudet metreiksi ennen kuin jaat: $20{,}0\\,\\text{cm} = 0{,}200\\,\\text{m}$."
+        },
+        {
+          "value": 48.6,
+          "feedback": "Jaoit yhden pisteen voiman jousen kokonaispituudella. Pituus ei ole venymä, koska jousella on pituus jo ilman kuormaa. Laske kulmakerroin suoran kahden pisteen erotuksista: $k = \\tfrac{\\Delta F}{\\Delta L}$."
+        },
+        {
+          "value": 8,
+          "feedback": "Jaoit ensimmäisen pisteen voiman jousen kokonaispituudella. Pituus ei ole venymä, koska jousella on pituus jo ilman kuormaa. Laske kulmakerroin suoran kahden pisteen erotuksista: $k = \\tfrac{\\Delta F}{\\Delta L}$."
+        }
+      ],
+      "solution": "**Annettu:** sovitetun suoran pisteet $(L_1;\\ F_1) = (15{,}0\\,\\text{cm};\\ 1{,}2\\,\\text{N})$ ja $(L_2;\\ F_2) = (35{,}0\\,\\text{cm};\\ 17{,}0\\,\\text{N})$. $L$ on jousen kokonaispituus.\n\n**Kysytty:** jousivakio $k$ yksikössä $\\text{N/m}$\n\n**Periaate:** Jousen venymä on $L - L_0$. $L_0$ on jousen pituus ilman kuormaa. Venyttävä voima on verrannollinen venymään. Silloin $F = kL - kL_0$ on suora. Sen kulmakerroin on jousivakio, ja vakiotermi on $-kL_0$. Suhde $F : L$ ei ole jousivakio, koska $L$ ei ole venymä.\n\n**Kaava:** $k = \\dfrac{\\Delta F}{\\Delta L} = \\dfrac{F_2 - F_1}{L_2 - L_1}$\n\n**Muunnokset:** $L_1 = 15{,}0\\,\\text{cm} = 15{,}0 \\cdot 0{,}01\\,\\text{m} = 0{,}150\\,\\text{m}$ ja $L_2 = 35{,}0 \\cdot 0{,}01\\,\\text{m} = 0{,}350\\,\\text{m}$\n\n**Sijoitus:** $k = \\dfrac{17{,}0\\,\\text{N} - 1{,}2\\,\\text{N}}{0{,}350\\,\\text{m} - 0{,}150\\,\\text{m}} = \\dfrac{15{,}8\\,\\text{N}}{0{,}200\\,\\text{m}} = 79{,}0\\,\\tfrac{\\text{N}}{\\text{m}}$\n\n**Vastaus:** $k \\approx 79{,}0\\,\\text{N/m}$. Vastauksessa on kolme merkitsevää numeroa, kuten erotuksissa $15{,}8\\,\\text{N}$ ja $0{,}200\\,\\text{m}$.\n\n**Järkevyys:** Jousen pituus ilman kuormaa on $L_0 = L_1 - \\tfrac{F_1}{k} = 0{,}150\\,\\text{m} - \\tfrac{1{,}2\\,\\text{N}}{79{,}0\\,\\text{N/m}} \\approx 0{,}135\\,\\text{m}$. Se on lyhyempi kuin mikään mitattu pituus, ja niin pitää ollakin. Jousivakio $79\\,\\text{N/m}$ on tavallista suuruusluokkaa koulun vetojouselle."
+    },
+    {
+      "id": "kuula-kouru",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Kuula kourussa",
+      "prompt": "Kuula lähtee levosta ja vierii alas kaltevaa kourua. Aika mitataan siitä hetkestä, kun kuula lähtee. Opiskelija piirsi $(t^2, s)$-kuvaajan. Hän sovitti pisteisiin suoran, joka kulkee origon kautta. Suora kulkee myös pisteen $(4{,}0\\,\\text{s}^2;\\ 2{,}48\\,\\text{m})$ kautta. Kuinka suuri on kuulan kiihtyvyys?",
+      "answer": 1.24,
+      "unit": "m/s²",
+      "tolerance": 0.04,
+      "hints": [
+        "Mikä on suoran kulmakerroin? Mikä on sen yksikkö?",
+        "Liikkeen yhtälö on $s = \\tfrac{1}{2}at^2$. Kun vaaka-akselilla on $t^2$, kulmakerroin on $k = \\tfrac{a}{2}$.",
+        "$a = 2k = 2 \\cdot \\dfrac{2{,}48\\,\\text{m}}{4{,}0\\,\\text{s}^2}$"
+      ],
+      "mistakes": [
+        {
+          "value": 0.62,
+          "feedback": "Tämä on suoran kulmakerroin $k$. Koska $s = \\tfrac{1}{2}at^2$, kulmakerroin on vain puolet kiihtyvyydestä: $a = 2k$."
+        },
+        {
+          "value": 0.31,
+          "feedback": "Tulos on neljäsosa oikeasta. Joko jaoit kulmakertoimen kahdella, tai korotit vaaka-akselin arvon $4{,}0$ vielä toiseen potenssiin. Akselilla on kuitenkin jo $t^2 = 4{,}0\\,\\text{s}^2$. Yhtälössä $s = \\tfrac{1}{2}at^2$ kulmakerroin on $k = \\tfrac{a}{2}$, joten $a = 2k$."
+        }
+      ],
+      "solution": "**Annettu:** $(t^2, s)$-suora, joka kulkee origon kautta ja pisteen $(t^2;\\ s) = (4{,}0\\,\\text{s}^2;\\ 2{,}48\\,\\text{m})$ kautta. Kuula lähtee levosta.\n\n**Kysytty:** kuulan kiihtyvyys $a$ yksikössä $\\text{m/s}^2$\n\n**Periaate:** $(t^2, s)$-pisteet ovat suoralla, joten kiihtyvyys on vakio. Kun kappale lähtee levosta ja kiihtyy tasaisesti, $s = \\tfrac{1}{2}at^2$. Aika lasketaan lähtöhetkestä. Yhtälö on muotoa $y = kx$. Siinä $y = s$, $x = t^2$ ja kulmakerroin $k = \\tfrac{a}{2}$.\n\n**Kaava:** $k = \\dfrac{\\Delta s}{\\Delta (t^2)}$ ja $k = \\dfrac{a}{2}$, joten $a = 2k$\n\n**Muunnokset:** Ei tarvita. $\\tfrac{\\text{m}}{\\text{s}^2}$ on jo kiihtyvyyden yksikkö.\n\n**Sijoitus:** Suora kulkee origon ja annetun pisteen kautta: $k = \\dfrac{2{,}48\\,\\text{m} - 0\\,\\text{m}}{4{,}0\\,\\text{s}^2 - 0\\,\\text{s}^2} = 0{,}620\\,\\tfrac{\\text{m}}{\\text{s}^2}$ ja $a = 2 \\cdot 0{,}620\\,\\tfrac{\\text{m}}{\\text{s}^2} = 1{,}24\\,\\tfrac{\\text{m}}{\\text{s}^2}$\n\n**Vastaus:** $a \\approx 1{,}2\\,\\text{m/s}^2$. Vastauksessa on kaksi merkitsevää numeroa, kuten luvussa $4{,}0\\,\\text{s}^2$.\n\n**Järkevyys:** Kulmakertoimen yksikkö $\\tfrac{\\text{m}}{\\text{s}^2}$ on kiihtyvyyden yksikkö, ja niin pitää ollakin. Kiihtyvyys on paljon pienempi kuin $g = 9{,}81\\,\\text{m/s}^2$. Se sopii kouruun, joka on vain vähän kalteva. Tarkistus: kahdessa sekunnissa kuula kulkee $\\tfrac{1}{2} \\cdot 1{,}24\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot (2{,}0\\,\\text{s})^2 = 2{,}48\\,\\text{m}$."
+    },
+    {
+      "id": "kattila",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Lue suoran yhtälöstä",
+      "prompt": "Kattilassa on vettä. Veden lämpötila mitattiin minuutin välein $12$ minuutin ajan. Pisteisiin sovitetun suoran yhtälö on $\\theta = 4{,}6\\,\\tfrac{{}^\\circ\\text{C}}{\\text{min}} \\cdot t + 14\\,{}^\\circ\\text{C}$. Milloin veden lämpötila oli mallin mukaan $60\\,{}^\\circ\\text{C}$? Vastaa minuutteina.",
+      "answer": 10.0,
+      "unit": "min",
+      "tolerance": 0.03,
+      "hints": [
+        "Sijoita suoran yhtälöön $\\theta = 60\\,{}^\\circ\\text{C}$. Ratkaise sitten $t$.",
+        "$t = \\dfrac{\\theta - b}{k}$, missä $b = 14\\,{}^\\circ\\text{C}$ ja $k = 4{,}6\\,\\tfrac{{}^\\circ\\text{C}}{\\text{min}}$.",
+        "$t = \\dfrac{60\\,{}^\\circ\\text{C} - 14\\,{}^\\circ\\text{C}}{4{,}6\\,{}^\\circ\\text{C/min}}$"
+      ],
+      "mistakes": [
+        {
+          "value": 13.0,
+          "feedback": "Jaoit lämpötilan $60\\,{}^\\circ\\text{C}$ kulmakertoimella. Alussa vesi ei ollut $0\\,{}^\\circ\\text{C}$:ista vaan $14\\,{}^\\circ\\text{C}$:ista. Siksi vakiotermi vähennetään ensin: $t = \\tfrac{\\theta - b}{k}$."
+        },
+        {
+          "value": 16.1,
+          "feedback": "Lisäsit vakiotermin, vaikka se pitää vähentää. Yhtälöstä $\\theta = kt + b$ saadaan $t = \\tfrac{\\theta - b}{k}$."
+        }
+      ],
+      "solution": "**Annettu:** sovitettu suora $\\theta = kt + b$, jossa $k = 4{,}6\\,\\tfrac{{}^\\circ\\text{C}}{\\text{min}}$ ja $b = 14\\,{}^\\circ\\text{C}$. Mittausalue on $0$–$12\\,\\text{min}$. Lämpötila on $\\theta = 60\\,{}^\\circ\\text{C}$.\n\n**Kysytty:** hetki $t$, jolloin lämpötila on $60\\,{}^\\circ\\text{C}$, minuutteina\n\n**Periaate:** Sovitettu suora on veden lämpenemisen malli. Siksi hetki ratkaistaan suoran yhtälöstä. Kulmakerroin on lämpenemisnopeus. Vakiotermi on veden alkulämpötila.\n\n**Kaava:** $\\theta = kt + b$, josta saadaan $t = \\dfrac{\\theta - b}{k}$\n\n**Muunnokset:** Ei tarvita. Celsiusasteet supistuvat, ja aika saadaan minuutteina.\n\n**Sijoitus:** $t = \\dfrac{60\\,{}^\\circ\\text{C} - 14\\,{}^\\circ\\text{C}}{4{,}6\\,\\tfrac{{}^\\circ\\text{C}}{\\text{min}}} = \\dfrac{46\\,{}^\\circ\\text{C}}{4{,}6\\,\\tfrac{{}^\\circ\\text{C}}{\\text{min}}} = 10{,}0\\,\\text{min}$\n\n**Vastaus:** $t \\approx 10\\,\\text{min}$. Vastauksessa on kaksi merkitsevää numeroa, kuten kulmakertoimessa $4{,}6\\,{}^\\circ\\text{C/min}$.\n\n**Järkevyys:** Hetki on mittausalueen $0$–$12\\,\\text{min}$ sisällä. Siksi kyse on interpoloinnista eli arvon lukemisesta mitattujen pisteiden väliltä. Malli on testattu tällä alueella. Kymmenessä minuutissa lämpötila nousee $46\\,{}^\\circ\\text{C}$ alkulämpötilasta $14\\,{}^\\circ\\text{C}$, ja $14 + 46 = 60$."
+    },
+    {
+      "id": "tarkista-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Toistettavuus ja oikeellisuus",
+      "prompt": "Kaksi ryhmää mittasi saman pöydän pituuden. Ryhmä A sai tulokset $1{,}803\\,\\text{m}$, $1{,}804\\,\\text{m}$ ja $1{,}803\\,\\text{m}$. Ryhmä B sai tulokset $1{,}79\\,\\text{m}$, $1{,}82\\,\\text{m}$ ja $1{,}80\\,\\text{m}$. Pöytä mitattiin vielä paljon tarkemmalla laitteella. Tämä tarkistusmittaus antoi $1{,}800\\,\\text{m}$. Mikä väite on oikein?",
+      "practice": "Kertaa toistettavuus, oikeellisuus ja virhelajit luvussa [*Mittaaminen ja mittauksen luotettavuus*](fy1-3.html).",
+      "choices": [
+        {
+          "text": "Ryhmän A tulos on oikeampi, koska sen tulokset ovat lähempänä toisiaan.",
+          "feedback": "Kun tulokset ovat lähellä toisiaan, toistettavuus on hyvä. Se ei kerro oikeellisuudesta. Ryhmän A keskiarvo $1{,}803\\,\\text{m}$ on $3\\,\\text{mm}$ päässä tarkistusarvosta. Ero on monta kertaa suurempi kuin ryhmän hajonta. Kertaa luvussa *Mittaaminen ja mittauksen luotettavuus*."
+        },
+        {
+          "text": "Ryhmän A mittaus on toistettava, mutta siinä on systemaattinen virhe.",
+          "correct": true,
+          "feedback": "Oikein. Ryhmän A tulos on $(1{,}8033 \\pm 0{,}0005)\\,\\text{m}$. Tämä väli ei sisällä arvoa $1{,}800\\,\\text{m}$. Kaikki tulokset ovat siirtyneet samaan suuntaan. Ryhmän B tulos on $(1{,}803 \\pm 0{,}015)\\,\\text{m}$. Se sopii yhteen tarkistusarvon kanssa, vaikka sen hajonta on suurempi."
+        },
+        {
+          "text": "Ryhmän B mittaus on huonompi, koska sen suuri hajonta on systemaattinen virhe.",
+          "feedback": "Hajonta johtuu satunnaisvirheestä. Se ei ole systemaattinen virhe. Ryhmän B tulos $(1{,}803 \\pm 0{,}015)\\,\\text{m}$ sisältää tarkistusarvon. Siksi siinä ei näy systemaattista virhettä. Kertaa luvussa *Mittaaminen ja mittauksen luotettavuus*."
+        },
+        {
+          "text": "Kummassakaan mittauksessa ei ole virhettä, koska keskiarvot ovat samat.",
+          "feedback": "Vaikka keskiarvot ovat samat, virhe voi silti olla olemassa. Molemmat keskiarvot ovat $3\\,\\text{mm}$ päässä tarkistusarvosta. Tärkeää on se, kuinka suuri tämä ero on verrattuna epävarmuuteen. Ryhmällä A ero on monta kertaa suurempi kuin epävarmuus. Kertaa luvussa *Mittaaminen ja mittauksen luotettavuus*."
+        }
+      ]
+    },
+    {
+      "id": "tarkista-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Kulmakertoimen epävarmuus",
+      "prompt": "Opiskelija määritti nesteen tiheyden $(V, m)$-kuvaajasta. Sovitetun suoran kulmakerroin on $0{,}920\\,\\tfrac{\\text{g}}{\\text{cm}^3}$. Hän piirsi myös jyrkimmän ja loivimman suoran, jotka kulkevat epävarmuusjanojen kautta. Jyrkimmän suoran kulmakerroin on $0{,}948\\,\\tfrac{\\text{g}}{\\text{cm}^3}$ ja loivimman $0{,}892\\,\\tfrac{\\text{g}}{\\text{cm}^3}$. Kuinka suuri on tiheyden epävarmuus $\\Delta\\rho$? Vastaa yksikössä $\\text{kg/m}^3$.",
+      "answer": 28,
+      "unit": "kg/m³",
+      "tolerance": 0.08,
+      "practice": "Kertaa epävarmuuden arvioiminen ja pyöristäminen luvussa [*Mittaaminen ja mittauksen luotettavuus*](fy1-3.html) ja TVT-ohjeesta *Kulmakertoimen epävarmuus*.",
+      "hints": [
+        "Jyrkin ja loivin suora rajaavat arvioidun vaihteluvälin. Mikä on sen puolikas?",
+        "$\\Delta\\rho = \\dfrac{k_\\text{max} - k_\\text{min}}{2}$",
+        "Muunna lopuksi: $1\\,\\tfrac{\\text{g}}{\\text{cm}^3} = 1000\\,\\tfrac{\\text{kg}}{\\text{m}^3}$."
+      ],
+      "mistakes": [
+        {
+          "value": 56,
+          "feedback": "Tämä on koko vaihteluväli $k_\\text{max} - k_\\text{min}$. Epävarmuus on sen puolikas, koska tulos ilmoitetaan muodossa $\\rho \\pm \\Delta\\rho$."
+        },
+        {
+          "value": 0.028,
+          "feedback": "Luku on oikein yksikössä $\\text{g/cm}^3$. Muunna se yksikköön $\\text{kg/m}^3$: kerro tuhannella."
+        }
+      ],
+      "solution": "**Annettu:** sovitetun suoran kulmakerroin $k = 0{,}920\\,\\tfrac{\\text{g}}{\\text{cm}^3}$, jyrkimmän suoran kulmakerroin $k_\\text{max} = 0{,}948\\,\\tfrac{\\text{g}}{\\text{cm}^3}$ ja loivimman suoran kulmakerroin $k_\\text{min} = 0{,}892\\,\\tfrac{\\text{g}}{\\text{cm}^3}$\n\n**Kysytty:** tiheyden epävarmuus $\\Delta\\rho$ yksikössä $\\text{kg/m}^3$\n\n**Periaate:** $(V, m)$-suoran kulmakerroin on tiheys. Jyrkin ja loivin suora kulkevat vielä epävarmuusjanojen kautta. Ne rajaavat kulmakertoimen arvioidun vaihteluvälin. Epävarmuudeksi otetaan tämän välin puolikas.\n\n**Kaava:** $\\Delta\\rho = \\dfrac{k_\\text{max} - k_\\text{min}}{2}$\n\n**Muunnokset:** $1\\,\\tfrac{\\text{g}}{\\text{cm}^3} = \\dfrac{10^{-3}\\,\\text{kg}}{10^{-6}\\,\\text{m}^3} = 1000\\,\\tfrac{\\text{kg}}{\\text{m}^3}$\n\n**Sijoitus:** $\\Delta\\rho = \\dfrac{0{,}948\\,\\tfrac{\\text{g}}{\\text{cm}^3} - 0{,}892\\,\\tfrac{\\text{g}}{\\text{cm}^3}}{2} = 0{,}028\\,\\tfrac{\\text{g}}{\\text{cm}^3} = 0{,}028 \\cdot 1000\\,\\tfrac{\\text{kg}}{\\text{m}^3} = 28\\,\\tfrac{\\text{kg}}{\\text{m}^3}$\n\n**Vastaus:** $\\Delta\\rho \\approx 30\\,\\text{kg/m}^3$, kun epävarmuus pyöristetään yhteen merkitsevään numeroon. Ennen pyöristystä epävarmuus on $28\\,\\text{kg/m}^3$. Tulos ilmoitetaan muodossa $\\rho = (920 \\pm 30)\\,\\text{kg/m}^3$.\n\n**Järkevyys:** Suhteellinen epävarmuus on $28 : 920 \\approx 3\\,\\%$. Se on tavallinen koulun mittauksessa. Sovitetun suoran kulmakerroin on melkein jyrkimmän ja loivimman suoran puolivälissä, kuten yleensä."
+    },
+    {
+      "id": "tarkista-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä",
+      "prompt": "Palaa tunnin alun tehtävään. Vaaka punnitsee mittalasin ja nesteen yhdessä. Selitä, miksi nesteen tiheys kannattaa määrittää $(V, m)$-kuvaajan kulmakertoimesta. Selitä myös, miksi ei kannata laskea jokaiselta riviltä suhdetta $m : V$.",
+      "practice": "Kertaa astian massa vakioterminä luvussa [*Tiheys*](fy1-7.html) ja kulmakertoimen lukeminen luvussa [*Graafinen esitys ja suoran sovittaminen*](fy1-4.html).",
+      "criteria": [
+        "Vastaus kertoo, että punnittuun massaan sisältyy mittalasin massa. Siksi suhde $m : V$ on liian suuri ja muuttuu, kun tilavuus muuttuu.",
+        "Vastaus kertoo, että kulmakerroin $\\tfrac{\\Delta m}{\\Delta V}$ syntyy vain nesteen massan muutoksesta. Siksi mittalasin massa supistuu pois.",
+        "Vastaus kertoo, että suoran vakiotermi on tyhjän mittalasin massa.",
+        "Vastaus kertoo, että suora sovitetaan kaikkiin pisteisiin. Siksi yksittäisten pisteiden satunnaisvirheet vaikuttavat tulokseen vähemmän."
+      ],
+      "model": "Vaaka punnitsee mittalasin ja nesteen yhdessä: $m = \\rho V + m_0$. Tässä $m_0$ on mittalasin massa. Siksi suhde $m : V = \\rho + \\tfrac{m_0}{V}$ on aina suurempi kuin tiheys. Suhde myös pienenee, kun nestettä lisätään. Siksi Ainon keskiarvo on väärin. Kun nestettä lisätään, mittalasin massa pysyy samana. Massan muutos johtuu siis vain nesteestä. Siksi kulmakerroin $\\tfrac{\\Delta m}{\\Delta V}$ on nesteen tiheys, ja $m_0$ supistuu pois. Suoran vakiotermi kertoo tyhjän mittalasin massan. Lisäksi suora sovitetaan kaikkiin pisteisiin. Siksi yhden pisteen satunnaisvirhe vaikuttaa tulokseen vähemmän kuin arvossa, joka on laskettu yhdeltä riviltä. Eetun tapa antaa siis tiheyden."
+    },
+    {
+      "id": "lopuksi",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Vastaa lopuksi kahteen nopeaan kysymykseen ilman muistiinpanoja."
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "q": "An electron flies parallel to a magnetic field. How large a magnetic force acts on it?",
+    "a": "None at all. $F = qvB\\sin\\alpha$, and in motion parallel to the field $\\alpha = 0^\\circ$, so $\\sin 0^\\circ = 0$ and $F = 0$."
+  },
+  {
+    "q": "The speed of light in diamond is $1.24 \\cdot 10^{8}\\,\\text{m/s}$. What is the refractive index of diamond?",
+    "a": "$n = \\tfrac{c}{v} = \\tfrac{3.00 \\cdot 10^{8}\\,\\text{m/s}}{1.24 \\cdot 10^{8}\\,\\text{m/s}} \\approx 2.42$."
+  }
+]

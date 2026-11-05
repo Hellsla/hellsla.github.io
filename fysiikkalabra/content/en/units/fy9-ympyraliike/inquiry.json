@@ -1,0 +1,508 @@
+{
+  "version": 1,
+  "contribution": "The review lesson brings together the moment, the equilibrium of a body, uniform circular motion (period, speed, centripetal acceleration and the equation of motion), the law of gravitation and the circular orbits of satellites from module FY5 into one method (free-body diagram first, then the equilibrium conditions or the equation of motion towards the centre) and practises matriculation-exam-type problems on them: the lever arm and the choice of the pivot point, recognising the centripetal force, the orbit of a satellite, linearising and fitting a centripetal-force measurement, evaluating a lever experiment, and combining a loop track with the work–energy principle of module FY4.",
+  "learn": [
+    "solve equilibrium, circular-motion and satellite problems with a free-body diagram and Newton's second law",
+    "draw and interpret the graph and the fit of a centripetal-force measurement",
+    "evaluate claims and measurements about moments, centripetal force and weightlessness with justification"
+  ],
+  "prior": [
+    "The moment of a force is $M = Fr$, where $r$ is the lever arm of the force (chapter *Moment: the turning effect of a force*)",
+    "For a body at rest $\\Sigma\\overline{F} = \\overline{0}$ and $\\Sigma M = 0$ (chapter *Equilibrium of a body: forces and moments*)",
+    "The orbital speed is $v = \\tfrac{2\\pi r}{T}$, and the velocity is along the tangent of the path (chapter *Moving in a circle: period and speed*)",
+    "In uniform circular motion the net force points to the centre, $\\Sigma F = m\\tfrac{v^2}{r}$ (chapter *Centripetal acceleration and the equation of motion in a circle*)",
+    "The gravitational force is $F = \\gamma\\tfrac{m_1 m_2}{r^2}$ (chapter *The gravitational force between bodies*)",
+    "The orbital speed of a satellite is $v = \\sqrt{\\tfrac{\\gamma M}{r}}$, and the radius of the orbit is $r = R + h$ (chapter *Satellites and planets in circular orbits*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "A satellite dish is fixed to the gable wall of a detached house and points low in the southern sky towards a television satellite. The installer aimed the dish once, and it has not needed turning since. Yet the satellite orbits the Earth above the equator at a speed of about $3\\,\\text{km/s}$. In the exam a situation like this can be the start of a problem: the situation and the numbers are given, but the law is not.",
+      "question": "Why does the satellite seem to stay still as seen from the dish? What decides how far from the Earth it must orbit?"
+    },
+    {
+      "id": "lt-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting-level check 1: the lever arm",
+      "prompt": "A wheel nut is being undone with a spanner. The hand pulls the handle $0.30\\,\\text{m}$ from the centre of the nut, but the force is at a slant to the handle. Besides the size of the force, what is needed to calculate the moment of the force?",
+      "choices": [
+        {
+          "text": "The distance $0.30\\,\\text{m}$ as it is, because the hand is at that point.",
+          "feedback": "The distance to the point of application is enough only when the force is perpendicular to the handle. The moment of a slanting force is set by the lever arm, which is shorter than $0.30\\,\\text{m}$. Review in the chapter *Moment: the turning effect of a force*."
+        },
+        {
+          "text": "The perpendicular distance of the axis from the line of action of the force, that is, the lever arm.",
+          "feedback": "Correct. The lever arm is $r = d\\sin\\alpha$, so a slanting pull gives a smaller moment than an equally large perpendicular pull. If needed, review in the chapter *Moment: the turning effect of a force*.",
+          "correct": true
+        },
+        {
+          "text": "The whole length of the spanner, because a longer spanner always gives a larger force.",
+          "feedback": "A long spanner does not increase the force of the hand. It lengthens the lever arm when the grip is further from the axis, and the moment is the force times the lever arm. Review in the chapter *Moment: the turning effect of a force*."
+        }
+      ]
+    },
+    {
+      "id": "lt-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting-level check 2: two supports",
+      "prompt": "A uniform plank rests on two trestles. Trestle 1 is $0.5\\,\\text{m}$ and trestle 2 is $1.5\\,\\text{m}$ from the middle of the plank. Which trestle carries a larger share of the weight of the plank?",
+      "choices": [
+        {
+          "text": "Trestle 2, because its distance from the centre of gravity is larger.",
+          "feedback": "A longer distance does not mean a larger force. The moment condition about the centre of gravity is $N_1 \\cdot 0.5\\,\\text{m} = N_2 \\cdot 1.5\\,\\text{m}$, so $N_2$ is smaller. Review in the chapter *Equilibrium of a body: forces and moments*."
+        },
+        {
+          "text": "Each carries half, because the plank is uniform.",
+          "feedback": "Each support carries half of the weight only when the supports are equally far from the centre of gravity. Here the distances are different, so the normal forces are too. Review in the chapter *Equilibrium of a body: forces and moments*."
+        },
+        {
+          "text": "Trestle 1, because it is closer to the centre of gravity of the plank.",
+          "feedback": "Correct. From the moment condition about the centre of gravity $N_1 \\cdot 0.5\\,\\text{m} = N_2 \\cdot 1.5\\,\\text{m}$, so trestle 1 carries three times as much as trestle 2, that is, $75\\,\\%$ of the weight. If needed, review in the chapter *Equilibrium of a body: forces and moments*.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "lt-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting-level check 3: two points on the same record",
+      "prompt": "The record on a record player turns steadily. There are two stickers on the record: A is $5\\,\\text{cm}$ and B $15\\,\\text{cm}$ from the centre. How do the periods and the speeds of the stickers compare?",
+      "choices": [
+        {
+          "text": "The periods are the same, and the speed of B is three times as large.",
+          "feedback": "Correct. The record is rigid, so the period $T$ is the same, and the speed $v = \\tfrac{2\\pi r}{T}$ is directly proportional to the radius. If needed, review in the chapter *Moving in a circle: period and speed*.",
+          "correct": true
+        },
+        {
+          "text": "The speeds are the same, but the period of B is three times as long.",
+          "feedback": "The record is rigid, so every point on it makes a revolution in the same time. In the same time B travels a circumference three times as long, so its speed is three times as large. Review in the chapter *Moving in a circle: period and speed*."
+        },
+        {
+          "text": "The periods and the speeds are the same, because the record turns steadily.",
+          "feedback": "Turning steadily means that the speed does not change with time. At different radii the speeds are still different, because in one revolution B travels a longer distance in the same time. Review in the chapter *Moving in a circle: period and speed*."
+        }
+      ]
+    },
+    {
+      "id": "lt-4",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting-level check 4: a car on a bend",
+      "prompt": "A car drives round a bend of a level road at a constant speed. Air resistance and rolling resistance are not taken into account. What horizontal force acts on the car?",
+      "choices": [
+        {
+          "text": "A centrifugal force outwards and an equally large friction force inwards.",
+          "feedback": "If the horizontal forces cancelled each other, the car would carry straight on. There is no centrifugal force: nothing pulls the car outwards. Review in the chapter *Centripetal acceleration and the equation of motion in a circle*."
+        },
+        {
+          "text": "The force of the engine forwards along the tangent of the path.",
+          "feedback": "The speed does not change and there are no resistive forces, so no net force along the tangent is needed. Changing direction needs a force pointing to the centre of the bend. Review in the chapter *Centripetal acceleration and the equation of motion in a circle*."
+        },
+        {
+          "text": "The friction of the road on the tyres towards the centre of the bend.",
+          "feedback": "Correct. Friction is the only horizontal force, so it is the net force: $F_\\mu = m\\tfrac{v^2}{r}$. On a slippery road static friction is not enough, and the car goes straighter than the road curves. If needed, review in the chapter *Centripetal acceleration and the equation of motion in a circle*.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "lt-5",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting-level check 5: gravitation further away",
+      "prompt": "The weight of a space probe on the surface of the Earth is $800\\,\\text{N}$. The probe rises to a height of $6371\\,\\text{km}$, where its distance from the centre of the Earth is two Earth radii. How large is the gravitational force of the Earth on the probe then?",
+      "choices": [
+        {
+          "text": "About $400\\,\\text{N}$, because the distance from the centre doubles.",
+          "feedback": "The gravitational force is inversely proportional to the *square* of the distance, not to the distance. Twice the distance gives a quarter of the force. Review in the chapter *The gravitational force between bodies*."
+        },
+        {
+          "text": "About $200\\,\\text{N}$, because the force decreases with the square of the distance.",
+          "feedback": "Correct. $F = \\gamma\\tfrac{Mm}{r^2}$, so at twice the distance the force is $\\tfrac14 \\cdot 800\\,\\text{N} = 200\\,\\text{N}$. If needed, review in the chapter *The gravitational force between bodies*.",
+          "correct": true
+        },
+        {
+          "text": "Zero, because the probe is already in space above the atmosphere.",
+          "feedback": "Gravitation does not stop at the edge of the atmosphere. It weakens with the square of the distance but never becomes zero. Review in the chapter *The gravitational force between bodies*."
+        }
+      ]
+    },
+    {
+      "id": "lt-6",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting-level check 6: weightlessness",
+      "prompt": "A space station orbits the Earth at a height of about $400\\,\\text{km}$, and an astronaut floats inside it. Which explanation is physically correct?",
+      "choices": [
+        {
+          "text": "There is no gravity on the station, because it is so far from the Earth.",
+          "feedback": "$400\\,\\text{km}$ is little compared with the radius of the Earth, $6371\\,\\text{km}$, so gravitation there is almost as strong as at the surface. Without it the station would not stay in its orbit. Review in the chapter *Satellites and planets in circular orbits*."
+        },
+        {
+          "text": "A centrifugal force cancels gravitation, so the net force is zero.",
+          "feedback": "If the net force were zero, the station would carry straight on and not orbit the Earth. The gravitational force is the net force on the station. Review in the chapter *Satellites and planets in circular orbits*."
+        },
+        {
+          "text": "The station and the astronaut fall freely together, so the normal force is zero.",
+          "feedback": "Correct. Gravitation acts all the time and gives the station and the astronaut the same acceleration towards the Earth. That is why the floor does not press on the astronaut, although their weight is almost $90\\,\\%$ of its value at the surface. If needed, review in the chapter *Satellites and planets in circular orbits*.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "aineisto",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Three satellites on the same curve",
+      "source": "model",
+      "source_note": "The curve is the graph of the chapter *Satellites and planets in circular orbits*: it is calculated from the formula $v = \\sqrt{\\tfrac{\\gamma M}{r}}$, and the points are calculated from the real periods of the satellites.",
+      "figure": "fy5-6/vr",
+      "text": "The graph shows the orbital speed $v$ of a satellite in a circular orbit round the Earth as a function of the radius $r$ of the orbit. The radius is measured from the centre of the Earth, and the unit of the horizontal axis is $1000\\,\\text{km}$. The space station ISS, a GPS satellite and a geostationary satellite are marked on the curve. First think about why the curve falls: why does a satellite orbiting further away move more slowly, although its orbit is longer? Answer below with the period of the GPS satellite.",
+      "question": {
+        "type": "numeric",
+        "prompt": "Read the radius of the orbit and the orbital speed of the GPS satellite from the graph. How long is the period of the GPS satellite? Answer in hours.",
+        "answer": 11.98,
+        "unit": "h",
+        "tolerance": 0.07,
+        "hints": [
+          "At the GPS point read the radius $r$ from the horizontal axis and the orbital speed $v$ from the vertical axis. Note the units of the axes, $1000\\,\\text{km}$ and $\\text{km/s}$.",
+          "In one revolution the satellite travels the circumference $2\\pi r$ at the orbital speed $v$, so $T = \\tfrac{2\\pi r}{v}$.",
+          "$T = \\dfrac{2\\pi \\cdot 26.6 \\cdot 10^{6}\\,\\text{m}}{3.9 \\cdot 10^{3}\\,\\text{m/s}}$, and finally $1\\,\\text{h} = 3600\\,\\text{s}$."
+        ],
+        "mistakes": [
+          {
+            "value": 43120,
+            "feedback": "This is the period in seconds. Convert to hours: $1\\,\\text{h} = 3600\\,\\text{s}$."
+          },
+          {
+            "value": 43.12,
+            "feedback": "You substituted the radius in thousands of kilometres and the speed in kilometres per second, so the result is in thousands of seconds. First convert $r$ to metres and $v$ to $\\text{m/s}$."
+          },
+          {
+            "value": 1.91,
+            "feedback": "You divided the radius by the speed. The distance travelled in one revolution is the circumference $2\\pi r$, not the radius."
+          }
+        ],
+        "solution": "**Given:** from the graph, the radius of the orbit of the GPS satellite $r \\approx 26.6 \\cdot 1000\\,\\text{km}$ and the orbital speed $v \\approx 3.87\\,\\text{km/s}$\n\n**Find:** the period $T$ in hours\n\n**Principle:** The satellite is in uniform circular motion: the gravitation of the Earth is the only force, and it turns the direction of the velocity without changing the speed. In one revolution the satellite travels the circumference $2\\pi r$ at the constant speed $v$ (chapters *Moving in a circle: period and speed* and *Satellites and planets in circular orbits*).\n\n**Reading the graph:** On the horizontal axis the GPS point is a little to the right of the reading $25$, at about $26.6$, and on the vertical axis a little below $4$, at about $3.87$. So the radius is about $26\\,600\\,\\text{km}$ and the orbital speed about $3.87\\,\\text{km/s}$.\n\n**Formula:** $v = \\dfrac{2\\pi r}{T}$, so $T = \\dfrac{2\\pi r}{v}$\n\n**Conversions:** $r = 26.6 \\cdot 1000\\,\\text{km} = 26.6 \\cdot 10^{6}\\,\\text{m}$ and $v = 3.87\\,\\text{km/s} = 3.87 \\cdot 1000\\,\\text{m/s} = 3870\\,\\text{m/s}$. Finally $1\\,\\text{h} = 3600\\,\\text{s}$.\n\n**Substitution:** $T = \\dfrac{2\\pi \\cdot 26.6 \\cdot 10^{6}\\,\\text{m}}{3870\\,\\text{m/s}} = 43\\,190\\,\\text{s} = \\dfrac{43\\,190}{3600}\\,\\text{h} = 12.0\\,\\text{h}$\n\n**Answer:** $T \\approx 12\\,\\text{h}$, two significant figures, because the values read from the graph are accurate to about two figures.\n\n**Reasonableness:** The real period of a GPS satellite is $11\\,\\text{h}\\;58\\,\\text{min}$, about half a day, so the reading is right. The result lies between the ISS's roughly one and a half hours and the geostationary satellite's roughly one day, as the radii suggest it should: further away the orbit is longer and the speed smaller, so the period grows quickly."
+      }
+    },
+    {
+      "id": "teoriatiivistelma",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava",
+        "Virheet",
+        "Kertaa"
+      ]
+    },
+    {
+      "id": "virhe-momentti",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error: the lid of a chest",
+      "prompt": "The lid of a wooden chest turns about hinges at its back edge, and the depth of the lid from the hinges to the front edge is $0.50\\,\\text{m}$. The lid is lifted at the front edge with a force of $30\\,\\text{N}$ at an angle of $40^\\circ$ to the lid. A student calculated the moment of the force about the hinges like this: $M = Fd = 30\\,\\text{N} \\cdot 0.50\\,\\text{m} = 15\\,\\text{Nm}$. What is wrong with the solution?",
+      "choices": [
+        {
+          "text": "The lever arm is $d\\cos 40^\\circ$, so the moment is about $11\\,\\text{Nm}$.",
+          "feedback": "The angle is between the force and the lid. The moment is given by the component perpendicular to the lid, $F\\sin 40^\\circ$. The component along the lid, $F\\cos 40^\\circ$, passes through the hinge and does not turn the lid. Review in the chapter *Moment: the turning effect of a force*."
+        },
+        {
+          "text": "The lever arm is $d\\sin 40^\\circ$, so the moment is about $9.6\\,\\text{Nm}$.",
+          "feedback": "Correct. The force is not perpendicular to the lid, so the lever arm is shorter than $0.50\\,\\text{m}$: $r = 0.50\\,\\text{m} \\cdot \\sin 40^\\circ \\approx 0.32\\,\\text{m}$ and $M = 30\\,\\text{N} \\cdot 0.32\\,\\text{m} \\approx 9.6\\,\\text{Nm}$.",
+          "correct": true
+        },
+        {
+          "text": "The unit of moment is the joule, because it is a newton times a metre.",
+          "feedback": "The unit of moment is $\\text{Nm}$. In work the distance is along the force, in a moment the lever arm is perpendicular to the force, so the units are kept apart. Review in the chapter *Moment: the turning effect of a force*."
+        },
+        {
+          "text": "The weight of the lid itself must be included in the moment of the lifting force.",
+          "feedback": "The weight of the lid has a moment of its own, but the question asks for the moment of the lifting force. The error is in the lever arm of the force. Review in the chapter *Moment: the turning effect of a force*."
+        }
+      ]
+    },
+    {
+      "id": "lue-kuvaaja",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Read the graph: centripetal acceleration",
+      "figure": "fy5-4/kuvaaja",
+      "prompt": "The graph shows the centripetal acceleration as a function of the speed for two radii of the path, $50\\,\\text{m}$ and $100\\,\\text{m}$. Which claim is true according to the graph?",
+      "choices": [
+        {
+          "text": "When the radius doubles at the same speed, the acceleration doubles.",
+          "feedback": "In the graph the curve for the radius $100\\,\\text{m}$ is *lower*: twice the radius halves the acceleration, because $a_\\text{n} = \\tfrac{v^2}{r}$. Review in the chapter *Centripetal acceleration and the equation of motion in a circle*."
+        },
+        {
+          "text": "The acceleration is directly proportional to the speed, because the curves start at the origin.",
+          "feedback": "A curve through the origin is not a straight line: the curves get steeper as the speed grows. Direct proportionality would show as a straight line. The acceleration is proportional to the square of the speed. Review in the chapter *Centripetal acceleration and the equation of motion in a circle*."
+        },
+        {
+          "text": "When the speed doubles at the same radius, the acceleration becomes four times as large.",
+          "feedback": "Correct. At the radius $50\\,\\text{m}$ the acceleration is about $2.0\\,\\text{m/s}^2$ at the speed $10\\,\\text{m/s}$ and about $8.0\\,\\text{m/s}^2$ at the speed $20\\,\\text{m/s}$, as $a_\\text{n} = \\tfrac{v^2}{r}$ predicts.",
+          "correct": true
+        },
+        {
+          "text": "At the speed $30\\,\\text{m/s}$ the acceleration is the same at both radii.",
+          "feedback": "The curves move apart as the speed grows: at the speed $30\\,\\text{m/s}$ the accelerations are $18\\,\\text{m/s}^2$ and $9\\,\\text{m/s}^2$. Review in the chapter *Centripetal acceleration and the equation of motion in a circle*."
+        }
+      ]
+    },
+    {
+      "id": "maalari",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Claim: a painter on a plank",
+      "prompt": "A painter walks on a plank resting on two trestles, from above the left trestle towards the right trestle. The plank stays at rest. Which claim about the normal forces of the trestles is true while the painter walks?",
+      "choices": [
+        {
+          "text": "Both normal forces stay the same, because the weight does not change.",
+          "feedback": "The sum of the weights, and so the sum of the normal forces, stays the same, but the shares change. The trestle closer to the painter carries more: the moment condition decides the shares. Review in the chapter *Equilibrium of a body: forces and moments*."
+        },
+        {
+          "text": "The right normal force grows, but the left normal force does not change.",
+          "feedback": "Then the sum of the normal forces would grow although the weights stay the same, and the sum of the forces would not be zero. When the right normal force grows, the left one must decrease by the same amount. Review in the chapter *Equilibrium of a body: forces and moments*."
+        },
+        {
+          "text": "The sum of the normal forces grows as the painter approaches the right trestle.",
+          "feedback": "The sum of the forces is zero all the time, so the sum of the normal forces is always equal to the sum of the weights. The position of the painter changes only the shares. Review in the chapter *Equilibrium of a body: forces and moments*."
+        },
+        {
+          "text": "The right normal force grows and the left one decreases; the sum stays the same.",
+          "feedback": "Correct. For translation $N_1 + N_2 = G_\\text{plank} + G_\\text{painter}$ stays the same. The moment condition about the left trestle shows that $N_2$ grows as the lever arm of the painter's weight grows.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "satelliitin-voimat",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Which free-body diagram: a satellite",
+      "prompt": "A satellite orbits the Earth in a circular orbit. Which description in words of the free-body diagram of the satellite is correct?",
+      "choices": [
+        {
+          "text": "A gravitational force towards the centre of the Earth and an equally large centrifugal force outwards.",
+          "feedback": "There is no centrifugal force, and it is not drawn. If the forces cancelled each other, the satellite would carry straight on along the tangent of the orbit. Review in the chapter *Centripetal acceleration and the equation of motion in a circle*."
+        },
+        {
+          "text": "Only the gravitational force towards the centre of the Earth; the velocity is marked separately.",
+          "feedback": "Correct. Gravitation is the only force and so the net force. It points to the centre and gives the centripetal acceleration $\\tfrac{v^2}{r}$. The velocity is marked as an arrow of its own beside the body, not as a force.",
+          "correct": true
+        },
+        {
+          "text": "A gravitational force towards the Earth and a force along the motion that keeps up the speed.",
+          "feedback": "No force is needed to keep the speed. In a circular orbit gravitation is perpendicular to the velocity, so it does not change the speed but turns the direction of the velocity. Review in the chapter *Satellites and planets in circular orbits*."
+        },
+        {
+          "text": "No force at all, because the satellite is weightless in space.",
+          "feedback": "Weightlessness means that the normal force is zero, not that gravitation is missing. Without a force the satellite would carry straight on. Review in the chapter *Satellites and planets in circular orbits*."
+        }
+      ]
+    },
+    {
+      "id": "poljin",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "The moment on a pedal",
+      "prompt": "A cyclist stands on a pedal and presses it straight down with a force of $520\\,\\text{N}$. The length of the crank from the bottom-bracket axle to the pedal axle is $0.170\\,\\text{m}$, and the crank points forwards $35^\\circ$ above the horizontal. How large is the moment of the force about the bottom-bracket axle?",
+      "answer": 72.41,
+      "unit": "Nm",
+      "tolerance": 0.03,
+      "hints": [
+        "The lever arm of the force is the perpendicular distance of the bottom-bracket axle from the line of action of the force. Draw the crank and the vertical line through the pedal.",
+        "The distance of the vertical line of action from the axle is the horizontal reach of the crank: $r = d\\cos 35^\\circ$.",
+        "$M = 520\\,\\text{N} \\cdot 0.170\\,\\text{m} \\cdot \\cos 35^\\circ$"
+      ],
+      "mistakes": [
+        {
+          "value": 88.4,
+          "feedback": "You multiplied the force by the length of the crank. The force is at a slant to the crank, so the lever arm is shorter than $0.170\\,\\text{m}$."
+        },
+        {
+          "value": 50.7,
+          "feedback": "You used the sine of the angle $35^\\circ$. The angle is between the crank and the *horizontal*, and the lever arm of the vertical force is the horizontal reach of the crank, $d\\cos 35^\\circ$."
+        }
+      ],
+      "solution": "**Given:** force $F = 520\\,\\text{N}$ straight down, length of the crank $d = 0.170\\,\\text{m}$, crank $35^\\circ$ above the horizontal\n\n**Find:** the moment $M$ of the force about the bottom-bracket axle\n\n**Principle:** The crank can only turn about the bottom-bracket axle, so the turning effect of the force is given by the moment $M = Fr$. The lever arm $r$ is the perpendicular distance of the axle from the vertical line of action of the force. The angle between the force and the extension of the crank is $\\alpha = 90^\\circ + 35^\\circ = 125^\\circ$, so $r = d\\sin 125^\\circ = d\\cos 35^\\circ$ (chapter *Moment: the turning effect of a force*).\n\n**Formula:** $M = Fr$ and $r = d\\cos 35^\\circ$, so $M = Fd\\cos 35^\\circ$\n\n**Conversions:** None needed: the force is in newtons and the length in metres, so the moment comes out in newton-metres.\n\n**Substitution:** $M = 520\\,\\text{N} \\cdot 0.170\\,\\text{m} \\cdot \\cos 35^\\circ = 88.4\\,\\text{Nm} \\cdot 0.8192 = 72.41\\,\\text{Nm}$\n\n**Answer:** $M \\approx 72\\,\\text{Nm}$, two significant figures like the angle $35^\\circ$.\n\n**Reasonableness:** When the crank is horizontal, the lever arm is the whole $0.170\\,\\text{m}$ and the moment is largest, $88\\,\\text{Nm}$. When the crank is vertical, the lever arm is zero. The result lies between these, and at the angle $35^\\circ$ the lever arm is still over $80\\,\\%$ of the length of the crank."
+    },
+    {
+      "id": "lumilapio",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "A snow shovel held level",
+      "prompt": "A snow shovel lifts $4.0\\,\\text{kg}$ of snow, and the shovel is held still and level for a moment. The back hand is at the end of the handle, and the front hand supports the handle $0.45\\,\\text{m}$ from the back hand. The centre of gravity of the snow is $1.30\\,\\text{m}$ from the back hand. The mass of the shovel is $1.5\\,\\text{kg}$, and its centre of gravity is $0.90\\,\\text{m}$ from the back hand. The hands act on the shovel vertically. How large a force does the front hand use to support the shovel?",
+      "answer": 142.8,
+      "unit": "N",
+      "tolerance": 0.03,
+      "hints": [
+        "Choose the back hand as the pivot point. Then the unknown force of the back hand does not appear in the moment condition.",
+        "The force of the front hand turns the shovel one way, the weights of the snow and the shovel the other way: $F_\\text{f} \\cdot 0.45\\,\\text{m} = m_\\text{snow} g \\cdot 1.30\\,\\text{m} + m_\\text{shovel} g \\cdot 0.90\\,\\text{m}$.",
+        "$F_\\text{f} \\cdot 0.45\\,\\text{m} = (4.0\\,\\text{kg} \\cdot 1.30\\,\\text{m} + 1.5\\,\\text{kg} \\cdot 0.90\\,\\text{m}) \\cdot 9.81\\,\\text{m/s}^2$, and solve it for $F_\\text{f}$."
+      ],
+      "mistakes": [
+        {
+          "value": 113.4,
+          "feedback": "You forgot the weight of the shovel itself. It too turns the shovel about the back hand, and its lever arm is $0.90\\,\\text{m}$."
+        },
+        {
+          "value": 88.8,
+          "feedback": "This is the downward force of the back hand. The force of the front hand is larger: the front hand holds up both the weights and the push of the back hand."
+        },
+        {
+          "value": 53.96,
+          "feedback": "This is the combined weight of the snow and the shovel. The front hand is close to the back hand, so its force is much larger than the weight; use the moment condition."
+        }
+      ],
+      "solution": "**Given:** snow $m_\\text{snow} = 4.0\\,\\text{kg}$ at the distance $1.30\\,\\text{m}$, shovel $m_\\text{shovel} = 1.5\\,\\text{kg}$ at the distance $0.90\\,\\text{m}$ and the front hand at the distance $0.45\\,\\text{m}$, all measured from the back hand; the shovel level and at rest; $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the force $F_\\text{f}$ of the front hand\n\n**Principle:** The shovel is at rest, so it is in equilibrium: the sum of the forces and the sum of the moments are zero. The back hand is chosen as the pivot point, so the unknown force of the back hand does not appear in the moment condition. The forces are vertical and the handle horizontal, so the lever arms are the distances from the back hand (chapter *Equilibrium of a body: forces and moments*).\n\n**Formula:** $F_\\text{f} \\cdot 0.45\\,\\text{m} - m_\\text{snow} g \\cdot 1.30\\,\\text{m} - m_\\text{shovel} g \\cdot 0.90\\,\\text{m} = 0$, so $F_\\text{f} = \\dfrac{(m_\\text{snow} \\cdot 1.30\\,\\text{m} + m_\\text{shovel} \\cdot 0.90\\,\\text{m})\\,g}{0.45\\,\\text{m}}$\n\n**Conversions:** None needed: the masses are in kilograms and the distances in metres.\n\n**Substitution:** The sum of the moments of the weights about the back hand is $(4.0\\,\\text{kg} \\cdot 1.30\\,\\text{m} + 1.5\\,\\text{kg} \\cdot 0.90\\,\\text{m}) \\cdot 9.81\\,\\text{m/s}^2 = 6.55\\,\\text{kg} \\cdot \\text{m} \\cdot 9.81\\,\\text{m/s}^2 = 64.26\\,\\text{N} \\cdot \\text{m}$, so $F_\\text{f} = \\dfrac{64.26\\,\\text{N} \\cdot \\text{m}}{0.45\\,\\text{m}} = 142.8\\,\\text{N}$\n\n**Answer:** $F_\\text{f} \\approx 140\\,\\text{N}$, two significant figures like the mass $4.0\\,\\text{kg}$ and the distance $0.45\\,\\text{m}$.\n\n**Reasonableness:** The weight of the snow and the shovel is only $5.5\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\approx 54\\,\\text{N}$. The lever arm of the front hand is short, so its force is almost three times as large, and the back hand must press down with the force $143\\,\\text{N} - 54\\,\\text{N} \\approx 89\\,\\text{N}$. That is why holding the shovel level feels heavy, and why it pays to keep the hands far apart."
+    },
+    {
+      "id": "puhelin",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "A phone on a roundabout",
+      "prompt": "A phone lies on a non-slip mat on the dashboard of a car. The coefficient of static friction between the phone and the mat is $0.40$. The car drives round a level roundabout at a constant speed, and the phone moves in a circle of radius $15\\,\\text{m}$. What is the greatest speed at which the car can drive without the phone starting to slide? Answer in kilometres per hour.",
+      "answer": 27.62,
+      "unit": "km/h",
+      "tolerance": 0.03,
+      "hints": [
+        "Which force keeps the phone moving in a circle with the car? In which direction does it point?",
+        "Static friction is the only horizontal force on the phone: $F_{\\mu 0} = m\\tfrac{v^2}{r}$, and it can be at most $\\mu_0 N = \\mu_0 mg$.",
+        "$v = \\sqrt{\\mu_0 g r}$, and finally $1\\,\\text{m/s} = 3.6\\,\\text{km/h}$."
+      ],
+      "mistakes": [
+        {
+          "value": 7.67,
+          "feedback": "This is the speed in metres per second. Convert: $1\\,\\text{m/s} = 3.6\\,\\text{km/h}$."
+        },
+        {
+          "value": 58.86,
+          "feedback": "You calculated the square of the speed, $\\mu_0 g r$, in the unit $\\text{m}^2/\\text{s}^2$. Take the square root and convert to kilometres per hour."
+        },
+        {
+          "value": 39.06,
+          "feedback": "You used the diameter of the circle. In the equation of motion $m\\tfrac{v^2}{r}$ is the radius of the path, $15\\,\\text{m}$."
+        }
+      ],
+      "solution": "**Given:** coefficient of static friction $\\mu_0 = 0.40$, radius of the path $r = 15\\,\\text{m}$, level path and constant speed, $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the greatest speed $v$ at which the phone does not slide, in kilometres per hour\n\n**Principle:** The phone moves with the car in uniform circular motion, so the sum of the forces on it points to the centre of the path. Vertically the weight and the normal force cancel each other, $N = mg$. Horizontally the only force is the static friction of the mat, so it is the centripetal force. Static friction can be at most $\\mu_0 N$, and at the greatest speed it is exactly this large (chapter *Centripetal acceleration and the equation of motion in a circle*).\n\n**Formula:** $\\mu_0 mg = m\\dfrac{v^2}{r}$, so the mass cancels and $v = \\sqrt{\\mu_0 g r}$\n\n**Conversions:** The speed comes out in $\\text{m/s}$ and is converted by substituting $1\\,\\text{m} = 0.001\\,\\text{km}$ and $1\\,\\text{s} = \\tfrac{1}{3600}\\,\\text{h}$, that is, $1\\,\\text{m/s} = 3.6\\,\\text{km/h}$.\n\n**Substitution:** $v = \\sqrt{0.40 \\cdot 9.81\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot 15\\,\\text{m}} = \\sqrt{58.86\\,\\tfrac{\\text{m}^2}{\\text{s}^2}} = 7.672\\,\\text{m/s} = 7.672 \\cdot 3.6\\,\\text{km/h} = 27.6\\,\\text{km/h}$\n\n**Answer:** $v \\approx 28\\,\\text{km/h}$, two significant figures like the coefficient of friction $0.40$ and the radius $15\\,\\text{m}$.\n\n**Reasonableness:** Roundabouts are usually driven at $20\\text{–}30\\,\\text{km/h}$, so the phone only just stays on the mat. The centripetal acceleration is then $\\mu_0 g \\approx 3.9\\,\\text{m/s}^2$. The mass cancelled, so a heavy and a light phone start to slide at the same speed."
+    },
+    {
+      "id": "tiedesatelliitti",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "The period of a science satellite",
+      "prompt": "A satellite studying the atmosphere orbits the Earth in a circular orbit at a height of $690\\,\\text{km}$. The mass of the Earth is $5.97 \\cdot 10^{24}\\,\\text{kg}$ and its radius $6371\\,\\text{km}$. How long is the period of the satellite? Answer in minutes.",
+      "answer": 98.43,
+      "unit": "min",
+      "tolerance": 0.02,
+      "hints": [
+        "The radius of the orbit is measured from the centre of the Earth: $r = R + h$.",
+        "The gravitational force is the only force on the satellite: $\\gamma\\tfrac{Mm}{r^2} = m\\tfrac{v^2}{r}$, so $v = \\sqrt{\\tfrac{\\gamma M}{r}}$.",
+        "The period is $T = \\tfrac{2\\pi r}{v}$, and finally $1\\,\\text{min} = 60\\,\\text{s}$."
+      ],
+      "mistakes": [
+        {
+          "value": 3.007,
+          "feedback": "You substituted the height $690\\,\\text{km}$ as the radius of the orbit. The radius is measured from the centre of the Earth: $r = R + h = 7061\\,\\text{km}$."
+        },
+        {
+          "value": 5906,
+          "feedback": "This is the period in seconds. Convert to minutes: $1\\,\\text{min} = 60\\,\\text{s}$."
+        },
+        {
+          "value": 1.64,
+          "feedback": "This is the period in hours. The unit asked for is the minute."
+        }
+      ],
+      "solution": "**Given:** height $h = 690\\,\\text{km}$, mass of the Earth $M = 5.97 \\cdot 10^{24}\\,\\text{kg}$, radius $R = 6371\\,\\text{km}$, $\\gamma = 6.674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2}$\n\n**Find:** the period $T$ in minutes\n\n**Principle:** Only the gravitational force of the Earth acts on the satellite, so it is the net force and gives the centripetal acceleration $\\tfrac{v^2}{r}$ in the circular orbit. The radius of the orbit is measured from the centre of the Earth. In one revolution the satellite travels the circumference $2\\pi r$ (chapter *Satellites and planets in circular orbits*).\n\n**Formula:** $\\gamma\\dfrac{Mm}{r^2} = m\\dfrac{v^2}{r}$, so $v = \\sqrt{\\dfrac{\\gamma M}{r}}$ and $T = \\dfrac{2\\pi r}{v}$, where $r = R + h$\n\n**Conversions:** $r = 6371\\,\\text{km} + 690\\,\\text{km} = 7061\\,\\text{km} = 7061 \\cdot 1000\\,\\text{m} = 7.061 \\cdot 10^{6}\\,\\text{m}$. Finally $1\\,\\text{min} = 60\\,\\text{s}$.\n\n**Substitution:** $v = \\sqrt{\\dfrac{6.674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2} \\cdot 5.97 \\cdot 10^{24}\\,\\text{kg}}{7.061 \\cdot 10^{6}\\,\\text{m}}} = 7512\\,\\text{m/s}$ and $T = \\dfrac{2\\pi \\cdot 7.061 \\cdot 10^{6}\\,\\text{m}}{7512\\,\\text{m/s}} = 5906\\,\\text{s} = \\dfrac{5906}{60}\\,\\text{min} = 98.4\\,\\text{min}$\n\n**Answer:** $T \\approx 98.4\\,\\text{min}$, three significant figures like the mass of the Earth $5.97 \\cdot 10^{24}\\,\\text{kg}$.\n\n**Reasonableness:** The period is a little longer than the ISS's roughly $93\\,\\text{min}$, because the orbit is a little higher. The orbital speed $7.5\\,\\text{km/s}$ is a little smaller than the roughly $7.9\\,\\text{km/s}$ calculated at the level of the surface, as it should be further away."
+    },
+    {
+      "id": "lisaa",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "At the end of the lesson come the matriculation-exam-style problems. Write the solution in your notebook or on the computer as in the exam: free-body diagram first, then the equilibrium conditions or the equation of motion. Only then assess the solution with the model answer and the marking scheme."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "A child is on a swing. At the lowest point of the swing the child moves horizontally. How large is the force of the swing's chains on the child compared with the child's weight?",
+      "choices": [
+        {
+          "text": "Equal to the weight, because the child does not move vertically.",
+          "feedback": "The vertical velocity is zero for an instant, but the acceleration is not: the direction of the velocity turns, and the acceleration points up to the centre of the path. Review in the chapter *Centripetal acceleration and the equation of motion in a circle*."
+        },
+        {
+          "text": "Smaller than the weight, because a centrifugal force pulls the child down.",
+          "feedback": "There is no centrifugal force. The force of the chains and the weight are the only forces, and their sum must point to the centre, that is, up, so the force of the chains is larger than the weight. Review in the chapter *Centripetal acceleration and the equation of motion in a circle*."
+        },
+        {
+          "text": "Larger than the weight, because the net force points up to the centre.",
+          "feedback": "Correct. At the lowest point the centre of the path is at the point of suspension of the swing, above. The equation of motion is $F - G = m\\tfrac{v^2}{r}$, so the force of the chains is $F > G$. If needed, review in the chapter *Centripetal acceleration and the equation of motion in a circle*.",
+          "correct": true
+        }
+      ],
+      "practice": "Review the equation of motion towards the centre and the forces on a hump and in a dip in the chapter [*Centripetal acceleration and the equation of motion in a circle*](fy5-4.html)."
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculation",
+      "prompt": "A wheelbarrow holds soil, and the mass of the barrow and the soil together is $75\\,\\text{kg}$. Their common centre of gravity is horizontally $0.40\\,\\text{m}$ from the wheel axle, and the handles are horizontally $1.25\\,\\text{m}$ from the axle. The handles of the barrow are lifted vertically so that the legs just leave the ground and the barrow stays still. How large a lifting force is needed?",
+      "answer": 235.4,
+      "unit": "N",
+      "tolerance": 0.03,
+      "hints": [
+        "When the legs leave the ground, only the weight, the normal force of the wheel and the lifting force act on the barrow. About which point is it best to take moments?",
+        "About the wheel axle the lever arm of the normal force is zero: $F \\cdot 1.25\\,\\text{m} = mg \\cdot 0.40\\,\\text{m}$.",
+        "$F = \\dfrac{75\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\cdot 0.40\\,\\text{m}}{1.25\\,\\text{m}}$"
+      ],
+      "mistakes": [
+        {
+          "value": 735.75,
+          "feedback": "This is the weight of the whole load. The wheel carries most of it, because the centre of gravity is close to the axle."
+        },
+        {
+          "value": 500.3,
+          "feedback": "This is the normal force of the wheel. The lifting force is the difference of the weight and the normal force."
+        },
+        {
+          "value": 2299,
+          "feedback": "The lever arms are the wrong way round. The lever arm of the lifting force, $1.25\\,\\text{m}$, is longer than the lever arm of the weight, so the lifting force is smaller than the weight."
+        }
+      ],
+      "practice": "Review the choice of the pivot point and the equilibrium conditions in the chapter [*Equilibrium of a body: forces and moments*](fy5-2.html) and the lever arm of a force in the chapter [*Moment: the turning effect of a force*](fy5-1.html).",
+      "solution": "**Given:** mass $m = 75\\,\\text{kg}$, horizontal distance of the centre of gravity from the axle $0.40\\,\\text{m}$, horizontal distance of the handles from the axle $1.25\\,\\text{m}$, $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the vertical lifting force $F$\n\n**Principle:** The barrow is at rest, so it is in equilibrium. The legs no longer touch the ground, so the forces on the barrow are the weight at the centre of gravity, the normal force of the wheel at the axle and the lifting force at the handles. The wheel axle is chosen as the pivot point, so the lever arm of the unknown normal force is zero. The forces are vertical, so the lever arms are the horizontal distances from the axle (chapter *Equilibrium of a body: forces and moments*).\n\n**Formula:** $F \\cdot 1.25\\,\\text{m} - mg \\cdot 0.40\\,\\text{m} = 0$, so $F = \\dfrac{mg \\cdot 0.40\\,\\text{m}}{1.25\\,\\text{m}}$\n\n**Conversions:** None needed: the mass is in kilograms and the distances in metres.\n\n**Substitution:** $F = \\dfrac{75\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\cdot 0.40\\,\\text{m}}{1.25\\,\\text{m}} = \\dfrac{294.3\\,\\text{Nm}}{1.25\\,\\text{m}} = 235.4\\,\\text{N}$\n\n**Answer:** $F \\approx 240\\,\\text{N}$, two significant figures like the mass $75\\,\\text{kg}$ and the distance $0.40\\,\\text{m}$.\n\n**Reasonableness:** The weight is $736\\,\\text{N}$, and the lifting force is $\\tfrac{0.40}{1.25} = 32\\,\\%$ of it, as the moment condition requires. The wheel carries the remaining $500\\,\\text{N}$. That is why it pays to load the barrow close to the wheel."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain",
+      "prompt": "Two satellites orbit the Earth in circular orbits at the same height. The mass of one is $100\\,\\text{kg}$ and that of the other $3000\\,\\text{kg}$. Use Newton's second law and the law of gravitation to explain why their orbital speeds are equal, although a $30$ times larger gravitational force acts on the heavier one. Also say how the orbital speed changes if the satellite is moved further from the Earth.",
+      "criteria": [
+        "The answer states that the gravitational force is the only force on the satellite and so the net force, which points to the centre of the Earth.",
+        "The answer writes the equation of motion $\\gamma\\tfrac{Mm}{r^2} = m\\tfrac{v^2}{r}$.",
+        "The answer justifies that the mass of the satellite cancels, so $v = \\sqrt{\\tfrac{\\gamma M}{r}}$ does not depend on it: a larger mass needs a larger force to turn.",
+        "The answer states that further away the orbital speed is smaller, because $v$ is inversely proportional to the square root of the radius."
+      ],
+      "model": "Choose the satellite as the body. Only the gravitational force of the Earth, $F = \\gamma\\tfrac{Mm}{r^2}$, acts on it, and it points to the centre of the Earth. So it is the net force, and in uniform circular motion Newton's second law gives $\\gamma\\tfrac{Mm}{r^2} = m\\tfrac{v^2}{r}$. A $30$ times larger force acts on the heavier satellite, but turning it into a circular orbit also needs a $30$ times larger force, because the force needed, $m\\tfrac{v^2}{r}$, is proportional to the mass. The mass $m$ cancels from the equation, and the orbital speed is $v = \\sqrt{\\tfrac{\\gamma M}{r}}$, which depends only on the mass of the Earth and the radius of the orbit. If the satellite is moved further away, $r$ grows and the orbital speed decreases: for example, at four times the radius the orbital speed is half. The result holds when the satellite is much lighter than the Earth and the orbit is a circle.",
+      "practice": "Review the derivation of the orbital speed and the cancelling of the mass in the chapter [*Satellites and planets in circular orbits*](fy5-6.html) and the law of gravitation in the chapter [*The gravitational force between bodies*](fy5-5.html)."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally two quick questions. Answer on your own first and only then open the answer."
+    }
+  ]
+}

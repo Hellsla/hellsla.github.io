@@ -1,0 +1,497 @@
+{
+  "version": 1,
+  "contribution": "The review lesson brings together the concepts of temperature, internal energy and heat, the quantity of heat, changes of state, the thermal balance of ice and water, thermal expansion, heat transfer and the energy balance from module FY3 into one model of conservation of energy, and practises matriculation-exam-style problems on them: interpreting a heating curve, an energy balance step by step, reasoning out the final state, fitting a straight line to measured data and assessing a calorimetry report.",
+  "learn": [
+    "solve problems on the quantity of heat, changes of state and thermal balance using conservation of energy",
+    "draw and interpret heating curves and graphs of measured data",
+    "assess the results, sources of error and claims of heat experiments with justification"
+  ],
+  "prior": [
+    "A temperature difference is the same in kelvins and in degrees Celsius (chapter *Thermodynamic system, state variables and temperature*)",
+    "Heat is the transfer of energy because of a temperature difference, and $\\Delta U = Q + W$ (chapter *Internal energy, heat and conservation of energy*)",
+    "The quantity of heat is $Q = cm\\Delta T$ when the state does not change (chapter *Heating and cooling of matter*)",
+    "Melting and vaporisation need the energy $Q = sm$ and $Q = rm$ at constant temperature (chapter *Changes of state*)",
+    "The power conducted through a building element is $P = UA\\Delta T$ (chapter *Heat transfer, energy balance and climate change*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Hikers are at a lean-to shelter in Lapland, and there is no liquid water nearby. They fill a sooty pot with snow and hang it over the campfire. The temperature of the snow is $-10\\,{}^\\circ\\text{C}$. First the pot holds only snow, then slush, then water that finally boils. In the exam a situation like this can be the start of a problem: the situation is described, but the formulas are not.",
+      "question": "Which stage takes more of the campfire's energy: turning a kilogram of snow into water, or heating the same water from $0\\,{}^\\circ\\text{C}$ to boiling? Why?"
+    },
+    {
+      "id": "lt-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting point 1: change in temperature",
+      "prompt": "In the morning the temperature of the air in a room rises from $18\\,{}^\\circ\\text{C}$ to $23\\,{}^\\circ\\text{C}$. By how many kelvins does the temperature rise?",
+      "choices": [
+        {
+          "text": "$5\\,\\text{K}$, because a kelvin and a degree Celsius are the same size.",
+          "feedback": "Correct. The scales have different zero points but the same size of degree, so the temperature difference is the same: $23\\,{}^\\circ\\text{C} - 18\\,{}^\\circ\\text{C} = 5\\,\\text{K}$. If needed, review the chapter *Thermodynamic system, state variables and temperature*.",
+          "correct": true
+        },
+        {
+          "text": "$278\\,\\text{K}$, because $273$ is added to degrees Celsius.",
+          "feedback": "The number $273$ is added when one temperature is converted to kelvins, not to a temperature difference. The addition to both readings cancels in the difference: $296\\,\\text{K} - 291\\,\\text{K} = 5\\,\\text{K}$. Review the chapter *Thermodynamic system, state variables and temperature*."
+        },
+        {
+          "text": "$296\\,\\text{K}$, because the final temperature is $296\\,\\text{K}$.",
+          "feedback": "$296\\,\\text{K}$ is the final temperature, not the change. The change is the difference between the final and initial temperatures, and it is the same in kelvins and in degrees Celsius: $5\\,\\text{K}$. Review the chapter *Thermodynamic system, state variables and temperature*."
+        }
+      ]
+    },
+    {
+      "id": "lt-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting point 2: tea and a lake",
+      "prompt": "A cup holds $0.2\\,\\text{kg}$ of tea at $80\\,{}^\\circ\\text{C}$. In winter the water of a lake is at about $4\\,{}^\\circ\\text{C}$ near the bottom. Which statement is correct?",
+      "choices": [
+        {
+          "text": "The tea contains more heat, because it is hotter.",
+          "feedback": "A body does not contain heat: heat is energy that is transferred because of a temperature difference. The energy stored is internal energy, and it also depends on the amount of substance. Review the chapter *Internal energy, heat and conservation of energy*."
+        },
+        {
+          "text": "The water of the lake has more internal energy, although it is colder.",
+          "feedback": "Correct. Internal energy is the sum of the energies of all the particles, so the huge amount of water in the lake contains much more internal energy than a cup of tea. Temperature only tells how vigorous the thermal motion is. If needed, review the chapter *Internal energy, heat and conservation of energy*.",
+          "correct": true
+        },
+        {
+          "text": "The internal energy is the same, because both are liquid water.",
+          "feedback": "The same substance and state do not make the internal energy equal. Internal energy depends both on the temperature and on the amount of substance, and the lake holds millions of times more water. Review the chapter *Internal energy, heat and conservation of energy*."
+        }
+      ]
+    },
+    {
+      "id": "lt-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting point 3: sand and water",
+      "prompt": "The Sun gives the same quantity of heat to a kilogram of sand ($c = 800\\,\\text{J/(kg}\\cdot\\text{K)}$) and to a kilogram of water ($c = 4190\\,\\text{J/(kg}\\cdot\\text{K)}$). What happens to the temperatures?",
+      "choices": [
+        {
+          "text": "The water warms up more, because its $c$ is larger.",
+          "feedback": "A large $c$ means that a lot of energy is needed to raise the temperature by one degree. With the same quantity of heat the water therefore warms up less: $\\Delta T = \\tfrac{Q}{cm}$. Review the chapter *Heating and cooling of matter*."
+        },
+        {
+          "text": "Both warm up equally, because the masses are the same.",
+          "feedback": "The change in temperature depends on the substance as well as the mass: $\\Delta T = \\tfrac{Q}{cm}$. The $c$ of sand is about one fifth of the value for water. Review the chapter *Heating and cooling of matter*."
+        },
+        {
+          "text": "The sand warms up about five times more than the water.",
+          "feedback": "Correct. $\\Delta T = \\tfrac{Q}{cm}$, so with the same $Q$ and $m$ the rise in temperature is inversely proportional to $c$: $4190 : 800 \\approx 5.2$. If needed, review the chapter *Heating and cooling of matter*.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "lt-4",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting point 4: the hob on full",
+      "prompt": "Water is boiling in a pan at normal pressure. The power of the hob is doubled. What happens?",
+      "choices": [
+        {
+          "text": "The temperature of the water rises above $100\\,{}^\\circ\\text{C}$, because more energy comes in.",
+          "feedback": "During boiling the extra energy vaporises water and does not raise the temperature. At normal pressure the water stays at $100\\,{}^\\circ\\text{C}$ until it has boiled away. Review the chapter *Changes of state*."
+        },
+        {
+          "text": "The temperature stays at $100\\,{}^\\circ\\text{C}$, but the water vaporises faster.",
+          "feedback": "Correct. During a change of state at constant pressure the temperature stays constant. A larger power vaporises water faster: $\\tfrac{\\Delta m}{\\Delta t} = \\tfrac{P}{r}$ when the losses are small. If needed, review the chapter *Changes of state*.",
+          "correct": true
+        },
+        {
+          "text": "The temperature and the rate of vaporisation stay the same, because the water is already boiling.",
+          "feedback": "The temperature stays the same, but the energy does not disappear: the extra power goes into vaporisation, so the water boils away faster. Review the chapter *Changes of state*."
+        }
+      ]
+    },
+    {
+      "id": "lt-5",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting point 5: ice and water",
+      "prompt": "An insulated container holds $0.10\\,\\text{kg}$ of ice at $0\\,{}^\\circ\\text{C}$ and $0.10\\,\\text{kg}$ of water at $20\\,{}^\\circ\\text{C}$. What is the final state?",
+      "choices": [
+        {
+          "text": "All the ice melts, and the temperature is $10\\,{}^\\circ\\text{C}$.",
+          "feedback": "The average forgets the latent heat of fusion. When the water cools to $0\\,{}^\\circ\\text{C}$ it gives only $cm\\Delta T \\approx 8.4\\,\\text{kJ}$, but melting the ice needs $sm = 33.4\\,\\text{kJ}$. Review the chapter *Thermal balance during a change of state*."
+        },
+        {
+          "text": "All the ice just melts, and the temperature is $0\\,{}^\\circ\\text{C}$.",
+          "feedback": "The heat is not enough to melt all the ice: the water gives about $8.4\\,\\text{kJ}$, and melting would need $33.4\\,\\text{kJ}$. Some ice is left. Review the chapter *Thermal balance during a change of state*."
+        },
+        {
+          "text": "Some of the ice melts, and the temperature is exactly $0\\,{}^\\circ\\text{C}$.",
+          "feedback": "Correct. The $8.4\\,\\text{kJ}$ from the water melts only about $25\\,\\text{g}$ of ice. When the container holds both ice and water, the temperature is $0\\,{}^\\circ\\text{C}$. If needed, review the chapter *Thermal balance during a change of state*.",
+          "correct": true
+        },
+        {
+          "text": "Some of the water freezes, and the temperature falls below $0\\,{}^\\circ\\text{C}$.",
+          "feedback": "The ice is already at $0\\,{}^\\circ\\text{C}$, so it cannot cool the water below $0\\,{}^\\circ\\text{C}$ or freeze it. Heat flows from the water to the ice, and some of the ice melts. Review the chapter *Thermal balance during a change of state*."
+        }
+      ]
+    },
+    {
+      "id": "lt-6",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting point 6: a hole in a plate",
+      "prompt": "A steel plate has a round hole in it. The plate is heated evenly to $200\\,{}^\\circ\\text{C}$. What happens to the hole?",
+      "choices": [
+        {
+          "text": "The hole gets smaller, because the steel expands into the hole.",
+          "feedback": "A body expands in all directions in the same proportion, like an enlarged photograph. The spacing of the particles at the edge of the hole grows, so the circumference of the hole gets longer and the hole gets bigger. Review the chapter *Thermal expansion*."
+        },
+        {
+          "text": "The hole stays the same size, because there is no material in it.",
+          "feedback": "There is no material in the hole, but there is at its edge. The steel of the edge lengthens like the rest of the plate, so the diameter of the hole grows: $\\Delta L = \\alpha L_0 \\Delta T$. Review the chapter *Thermal expansion*."
+        },
+        {
+          "text": "The hole gets bigger in the same proportion as the other dimensions of the plate.",
+          "feedback": "Correct. Thermal expansion enlarges all dimensions in the same proportion, including the diameter of the hole. This is used in shrink fitting. If needed, review the chapter *Thermal expansion*.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "aineisto",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Heating curve of a block of ice",
+      "source": "example",
+      "figure": "fy3-7/melting-curve",
+      "text": "A $0.60\\,\\text{kg}$ block of ice taken from a freezer is heated in an insulated container, and its temperature is measured as a function of the energy transferred. The graph has three parts. First think about what happens in each part and which law holds there. Then read the values you need from the graph. The model answer also gives the latent heat of fusion and the specific heat capacity of water from the same graph.",
+      "question": {
+        "type": "numeric",
+        "prompt": "What is the specific heat capacity of ice according to the graph? Give the answer in $\\text{J/(kg}\\cdot\\text{K)}$.",
+        "answer": 2083,
+        "unit": "J/(kg·K)",
+        "tolerance": 0.07,
+        "hints": [
+          "In which part of the graph is the substance still ice, and how much energy goes into it?",
+          "In the first part the state does not change, so $Q = cm\\Delta T$ and $c = \\dfrac{Q}{m\\,\\Delta T}$.",
+          "The ice warms from $-16\\,{}^\\circ\\text{C}$ to $0\\,{}^\\circ\\text{C}$ while $20\\,\\text{kJ}$ of energy is transferred."
+        ],
+        "mistakes": [
+          {
+            "value": 1250,
+            "feedback": "You divided the energy only by the change in temperature. Specific heat capacity is per kilogram, so divide by the mass $0.60\\,\\text{kg}$ as well."
+          },
+          {
+            "value": 20833,
+            "feedback": "You used the energy $200\\,\\text{kJ}$ of the horizontal part. During it the ice melts and does not warm up, so it tells about the latent heat of fusion. The $c$ of ice comes from the first, rising part."
+          },
+          {
+            "value": 129.6,
+            "feedback": "You used the kelvin temperature $257\\,\\text{K}$ as the change in temperature. The change is $0\\,{}^\\circ\\text{C} - (-16\\,{}^\\circ\\text{C}) = 16\\,\\text{K}$."
+          }
+        ],
+        "solution": "**Given:** mass of the ice $m = 0.60\\,\\text{kg}$; from the graph, the ice warms from $-16\\,{}^\\circ\\text{C}$ to $0\\,{}^\\circ\\text{C}$ while $0$–$20\\,\\text{kJ}$ of energy is transferred\n\n**Find:** the specific heat capacity of ice $c_\\text{i}$ in $\\text{J/(kg}\\cdot\\text{K)}$\n\n**Principle:** In the first part the substance is ice all the time, so the state does not change and $Q = cm\\Delta T$ holds. In the horizontal part the ice melts at constant temperature ($Q = sm$), and in the last part the meltwater warms up. The container is insulated, so all the energy transferred goes into the ice.\n\n**Reading the graph:** The end point of the rising part $(20\\,\\text{kJ};\\ 0\\,{}^\\circ\\text{C})$ is at a grid intersection, but the starting point $(0\\,\\text{kJ};\\ -16\\,{}^\\circ\\text{C})$ is read between grid lines, so its reading precision is about $\\pm 1\\,{}^\\circ\\text{C}$.\n\n**Formula:** $Q = c_\\text{i} m \\Delta T$, so $c_\\text{i} = \\dfrac{Q}{m\\,\\Delta T}$\n\n**Conversions:** $20\\,\\text{kJ} = 20 \\cdot 1000\\,\\text{J} = 20\\,000\\,\\text{J}$. The change in temperature is the same in kelvins and in degrees Celsius: $\\Delta T = 0\\,{}^\\circ\\text{C} - (-16\\,{}^\\circ\\text{C}) = 16\\,\\text{K}$.\n\n**Substitution:** $c_\\text{i} = \\dfrac{20\\,000\\,\\text{J}}{0.60\\,\\text{kg} \\cdot 16\\,\\text{K}} = 2083\\,\\text{J/(kg}\\cdot\\text{K)}$\n\n**Answer:** $2.1\\,\\text{kJ/(kg}\\cdot\\text{K)}$, that is about $2100\\,\\text{J/(kg}\\cdot\\text{K)}$, two significant figures like the mass $0.60\\,\\text{kg}$ and the $20\\,\\text{kJ}$ read from the graph.\n\n**Reasonableness:** The table value is $2100\\,\\text{J/(kg}\\cdot\\text{K)}$. From the same graph the latent heat of fusion is $s = 200\\,\\text{kJ} : 0.60\\,\\text{kg} \\approx 333\\,\\text{kJ/kg}$, and the last part rises about half as steeply, because the $c$ of water is about twice the value for ice: $80\\,\\text{kJ} : (0.60\\,\\text{kg} \\cdot 32\\,\\text{K}) \\approx 4.2\\,\\text{kJ/(kg}\\cdot\\text{K)}$."
+      }
+    },
+    {
+      "id": "teoriatiivistelma",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava",
+        "Virheet",
+        "Kertaa"
+      ]
+    },
+    {
+      "id": "virhe-sulaminen",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error: melting ice",
+      "prompt": "A student calculated how much energy is needed to melt a $0.50\\,\\text{kg}$ block of ice that is already at $0\\,{}^\\circ\\text{C}$: \"$Q = cm\\Delta T = 2100\\,\\text{J/(kg}\\cdot\\text{K)} \\cdot 0.50\\,\\text{kg} \\cdot 0\\,\\text{K} = 0\\,\\text{J}$.\" What is wrong in the solution?",
+      "choices": [
+        {
+          "text": "The temperature must be converted to kelvins, so that $\\Delta T = 273\\,\\text{K}$.",
+          "feedback": "A change in temperature is the same in kelvins and in degrees Celsius, and during melting the temperature does not change at all. The error is in the formula: melting takes the energy $Q = sm$."
+        },
+        {
+          "text": "The formula is wrong: melting needs $Q = sm \\approx 167\\,\\text{kJ}$.",
+          "feedback": "Correct. $Q = cm\\Delta T$ holds only when the state does not change. Melting needs energy although the temperature stays at $0\\,{}^\\circ\\text{C}$: $Q = 334\\,\\text{kJ/kg} \\cdot 0.50\\,\\text{kg} = 167\\,\\text{kJ}$.",
+          "correct": true
+        },
+        {
+          "text": "The solution is correct: ice at $0\\,{}^\\circ\\text{C}$ melts without extra energy.",
+          "feedback": "If ice melted without energy, it would not stay ice in a room at $0\\,{}^\\circ\\text{C}$. Melting increases the interaction energy between the particles, and that needs $Q = sm$."
+        }
+      ]
+    },
+    {
+      "id": "kaide",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Justified claim: the railing and the bench",
+      "prompt": "On a frosty morning a park has a metal railing and a wooden bench that have both been outdoors all night. The railing feels much colder to a bare hand than the bench. Which explanation is correct?",
+      "choices": [
+        {
+          "text": "The railing is colder, because metal cools more than wood during the night.",
+          "feedback": "During the night both have reached thermal equilibrium with the outdoor air, so their temperature is the same. The difference is in how fast they conduct energy away from the hand."
+        },
+        {
+          "text": "Metal is a good conductor of heat, so energy flows quickly from the hand.",
+          "feedback": "Correct. Both have the same temperature, but in metal the free electrons carry energy away from under the hand efficiently. Wood is a poor conductor, so its surface warms up under the hand and energy flows slowly.",
+          "correct": true
+        },
+        {
+          "text": "Metal transfers cold to the hand faster than wood.",
+          "feedback": "Cold is not transferred: the net flow of energy is from the warmer to the colder body, that is, from the hand to the railing. The hand feels cold when energy leaves it quickly."
+        }
+      ]
+    },
+    {
+      "id": "kansi",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Justified claim: the stuck lid",
+      "prompt": "The metal lid of a glass jar is stuck. Hot water is run over the lid for a moment, and then the lid opens more easily. What is the best explanation?",
+      "choices": [
+        {
+          "text": "The hot water softens the glass, so the mouth of the jar gives way.",
+          "feedback": "Glass softens only at temperatures of hundreds of degrees. The hot water mainly warms the lid, and metal expands more than glass."
+        },
+        {
+          "text": "The heat reduces the friction between the lid and the glass, so the lid slides.",
+          "feedback": "Friction hardly depends on temperature in this range. What matters is that the metal lid expands and its thread comes loose from the glass."
+        },
+        {
+          "text": "The metal lid expands more than the glass when it warms, so it loosens.",
+          "feedback": "Correct. The coefficient of linear expansion of metal is larger than that of glass (for example steel $12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$, glass $9 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$), and the water warms the lid first. The diameter of the lid grows more than the mouth of the jar.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "jaalasi",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Which graph: iced water on the table",
+      "prompt": "A glass holds water and a lot of ice cubes, and the temperature of the mixture is $0\\,{}^\\circ\\text{C}$ at first. The glass is left in a room at $22\\,{}^\\circ\\text{C}$, and the temperature is followed for two hours. Which description of the graph of temperature against time is correct?",
+      "choices": [
+        {
+          "text": "The graph rises steadily as a straight line towards room temperature.",
+          "feedback": "As long as there is ice in the glass, the energy from the room melts ice and does not raise the temperature. The graph is horizontal at first."
+        },
+        {
+          "text": "The graph stays horizontal at $0\\,{}^\\circ\\text{C}$ at first and starts to rise only when the ice has melted.",
+          "feedback": "Correct. The temperature of a mixture of ice and water is $0\\,{}^\\circ\\text{C}$ as long as there is ice. After that the water warms up, and the rise slows down as the temperature difference to the room gets smaller.",
+          "correct": true
+        },
+        {
+          "text": "The graph first falls below $0\\,{}^\\circ\\text{C}$, because the ice cools the water.",
+          "feedback": "The ice and the water are already at the same temperature $0\\,{}^\\circ\\text{C}$, so no heat flows between them. The energy from the room melts ice, and the temperature cannot fall."
+        }
+      ]
+    },
+    {
+      "id": "amme",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Bath water",
+      "prompt": "A bath holds $80.0\\,\\text{kg}$ of water at $42.0\\,{}^\\circ\\text{C}$. It is too hot, so cold water at $8.0\\,{}^\\circ\\text{C}$ is added. How much cold water is needed for the final temperature to be $37.0\\,{}^\\circ\\text{C}$? Heat losses are ignored. Give the answer in kilograms.",
+      "answer": 13.79,
+      "unit": "kg",
+      "tolerance": 0.02,
+      "hints": [
+        "The hot water cools and the cold water warms to the same final temperature. Which one gives out heat, and which one receives it?",
+        "Energy is conserved: $c m_1 (T_1 - T) = c m_2 (T - T_2)$. Which factor cancels?",
+        "$m_2 = \\dfrac{m_1 (T_1 - T)}{T - T_2} = \\dfrac{80.0\\,\\text{kg} \\cdot 5.0\\,\\text{K}}{29.0\\,\\text{K}}$."
+      ],
+      "mistakes": [
+        {
+          "value": 11.76,
+          "feedback": "You used the difference $42.0\\,{}^\\circ\\text{C} - 8.0\\,{}^\\circ\\text{C}$ as the warming of the cold water. The cold water warms only up to the final temperature: $T - T_2 = 29.0\\,\\text{K}$."
+        },
+        {
+          "value": 10.81,
+          "feedback": "You divided by the final temperature $37.0\\,{}^\\circ\\text{C}$. The quantity of heat needs the *change* in temperature: the cold water warms by $37.0\\,{}^\\circ\\text{C} - 8.0\\,{}^\\circ\\text{C} = 29.0\\,\\text{K}$."
+        },
+        {
+          "value": 464,
+          "feedback": "You swapped the temperature differences. The hot water cools by only $5.0\\,\\text{K}$, so much less cold water than hot water is needed."
+        }
+      ],
+      "solution": "**Given:** hot water $m_1 = 80.0\\,\\text{kg}$, $T_1 = 42.0\\,{}^\\circ\\text{C}$; cold water $T_2 = 8.0\\,{}^\\circ\\text{C}$; final temperature $T = 37.0\\,{}^\\circ\\text{C}$\n\n**Find:** the mass of the cold water $m_2$ in kilograms\n\n**Principle:** Energy is conserved when there are no losses: the quantity of heat given out by the hot water equals the quantity received by the cold water. Each only cools or warms, so $Q = cm\\Delta T$ holds, and $c$ is the same for both (chapter *Heating and cooling of matter*).\n\n**Formula:** $c m_1 (T_1 - T) = c m_2 (T - T_2)$, so $m_2 = \\dfrac{m_1 (T_1 - T)}{T - T_2}$\n\n**Conversions:** None needed: the specific heat capacity cancels, and the temperature differences are the same in kelvins and in degrees Celsius.\n\n**Substitution:** $m_2 = \\dfrac{80.0\\,\\text{kg} \\cdot (42.0\\,{}^\\circ\\text{C} - 37.0\\,{}^\\circ\\text{C})}{37.0\\,{}^\\circ\\text{C} - 8.0\\,{}^\\circ\\text{C}} = \\dfrac{80.0\\,\\text{kg} \\cdot 5.0\\,\\text{K}}{29.0\\,\\text{K}} = 13.79\\,\\text{kg}$\n\n**Answer:** $14\\,\\text{kg}$, two significant figures, because the cooling of the hot water $42.0\\,{}^\\circ\\text{C} - 37.0\\,{}^\\circ\\text{C} = 5.0\\,\\text{K}$ is, as a difference, known to only two figures.\n\n**Reasonableness:** The quantities of heat are equal: $c \\cdot 80.0\\,\\text{kg} \\cdot 5.0\\,\\text{K}$ and $c \\cdot 13.79\\,\\text{kg} \\cdot 29.0\\,\\text{K}$, because $80.0 \\cdot 5.0 = 400$ and $13.79 \\cdot 29.0 \\approx 400$. Little cold water is needed, because it warms almost six times more than the hot water cools."
+    },
+    {
+      "id": "juhlajaat",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Ice for the drinks",
+      "prompt": "For a party, $12.0\\,\\text{kg}$ of drinks are cooled from $22.0\\,{}^\\circ\\text{C}$ to $6.0\\,{}^\\circ\\text{C}$ with ice cubes from a freezer at $-18.0\\,{}^\\circ\\text{C}$. How much ice is needed when all the ice melts and the meltwater warms to $6.0\\,{}^\\circ\\text{C}$? The specific heat capacity of the drinks is the same as that of water, and heat losses are ignored. Give the answer in kilograms.",
+      "answer": 2.027,
+      "unit": "kg",
+      "tolerance": 0.02,
+      "hints": [
+        "In which three stages does the ice use the energy it gets from the drinks?",
+        "The ice warms to $0\\,{}^\\circ\\text{C}$ ($c_\\text{i} m \\Delta T$), melts ($sm$) and the meltwater warms to $6.0\\,{}^\\circ\\text{C}$ ($c_\\text{w} m \\Delta T$).",
+        "$m_\\text{i} = \\dfrac{c_\\text{w} m_\\text{w} \\cdot 16.0\\,\\text{K}}{c_\\text{i} \\cdot 18.0\\,\\text{K} + s + c_\\text{w} \\cdot 6.0\\,\\text{K}}$."
+      ],
+      "mistakes": [
+        {
+          "value": 12.78,
+          "feedback": "You forgot the latent heat of fusion of the ice. Most of the energy given out by the drinks goes into melting the ice: $s = 334\\,\\text{kJ/kg}$."
+        },
+        {
+          "value": 2.24,
+          "feedback": "You forgot that the ice first warms from $-18.0\\,{}^\\circ\\text{C}$ to $0\\,{}^\\circ\\text{C}$. That takes $c_\\text{i} \\cdot 18.0\\,\\text{K}$ for every kilogram."
+        },
+        {
+          "value": 2.164,
+          "feedback": "You forgot that the meltwater still warms from $0\\,{}^\\circ\\text{C}$ to $6.0\\,{}^\\circ\\text{C}$."
+        }
+      ],
+      "solution": "**Given:** drinks $m_\\text{w} = 12.0\\,\\text{kg}$, $T_\\text{w} = 22.0\\,{}^\\circ\\text{C}$; ice $T_\\text{i} = -18.0\\,{}^\\circ\\text{C}$; final temperature $T = 6.0\\,{}^\\circ\\text{C}$; from the table $c_\\text{w} = 4190\\,\\text{J/(kg}\\cdot\\text{K)}$, $c_\\text{i} = 2100\\,\\text{J/(kg}\\cdot\\text{K)}$ and $s = 334\\,\\text{kJ/kg}$\n\n**Find:** the mass of the ice $m_\\text{i}$ in kilograms\n\n**Principle:** Energy is conserved: the heat given out by the drinks goes into warming the ice to $0\\,{}^\\circ\\text{C}$, melting it at constant temperature and warming the meltwater to $6.0\\,{}^\\circ\\text{C}$. For the warming stages $Q = cm\\Delta T$ holds, for the melting $Q = sm$ (chapter *Thermal balance during a change of state*).\n\n**Formula:** $c_\\text{w} m_\\text{w} (T_\\text{w} - T) = m_\\text{i}\\,(c_\\text{i} \\Delta T_\\text{i} + s + c_\\text{w} \\Delta T_\\text{m})$, so $m_\\text{i} = \\dfrac{c_\\text{w} m_\\text{w} (T_\\text{w} - T)}{c_\\text{i} \\Delta T_\\text{i} + s + c_\\text{w} \\Delta T_\\text{m}}$, where $\\Delta T_\\text{i}$ is the warming of the ice and $\\Delta T_\\text{m}$ that of the meltwater\n\n**Conversions:** $s = 334\\,\\text{kJ/kg} = 334\\,000\\,\\text{J/kg}$. The temperature differences are the same in kelvins and in degrees Celsius: $T_\\text{w} - T = 16.0\\,\\text{K}$, $\\Delta T_\\text{i} = 18.0\\,\\text{K}$ and $\\Delta T_\\text{m} = 6.0\\,\\text{K}$.\n\n**Substitution:** $m_\\text{i} = \\dfrac{4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 12.0\\,\\text{kg} \\cdot 16.0\\,\\text{K}}{(37\\,800 + 334\\,000 + 25\\,140)\\,\\tfrac{\\text{J}}{\\text{kg}}} = \\dfrac{804\\,480\\,\\text{J}}{396\\,940\\,\\tfrac{\\text{J}}{\\text{kg}}} = 2.027\\,\\text{kg}$\n\n**Answer:** $2.03\\,\\text{kg}$, three significant figures like the mass $12.0\\,\\text{kg}$ and the cooling of the drinks $16.0\\,\\text{K}$; the two-figure $6.0\\,\\text{K}$ belongs to a small term that is only about $6\\,\\%$ of the denominator.\n\n**Reasonableness:** Each kilogram of ice takes about $397\\,\\text{kJ}$, of which melting is $334\\,\\text{kJ}$. With water at $0\\,{}^\\circ\\text{C}$ alone the same cooling would need $804\\,480\\,\\text{J} : 25\\,140\\,\\tfrac{\\text{J}}{\\text{kg}} \\approx 32\\,\\text{kg}$, more than fifteen times the mass, so ice is an efficient coolant."
+    },
+    {
+      "id": "masto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Radio mast",
+      "prompt": "A steel radio mast is $300\\,\\text{m}$ tall on a frosty night when its temperature is $-25\\,{}^\\circ\\text{C}$. On a summer day the temperature of the mast is $+25\\,{}^\\circ\\text{C}$, and the coefficient of linear expansion of steel is $12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$. How much taller is the mast in summer than in winter? Give the answer in millimetres.",
+      "answer": 180,
+      "unit": "mm",
+      "tolerance": 0.02,
+      "hints": [
+        "What is the change in the temperature of the mast from winter to summer?",
+        "The change in temperature is the difference between the final and initial temperatures: $25\\,{}^\\circ\\text{C} - (-25\\,{}^\\circ\\text{C})$.",
+        "$\\Delta L = \\alpha L_0 \\Delta T = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 300\\,\\text{m} \\cdot 50\\,\\text{K}$."
+      ],
+      "mistakes": [
+        {
+          "value": 0,
+          "feedback": "The temperatures $-25\\,{}^\\circ\\text{C}$ and $+25\\,{}^\\circ\\text{C}$ do not cancel each other. The change is $25\\,{}^\\circ\\text{C} - (-25\\,{}^\\circ\\text{C}) = 50\\,\\text{K}$."
+        },
+        {
+          "value": 1073,
+          "feedback": "You used a kelvin temperature as the change in temperature. The change in length needs the change in temperature, which is the same in kelvins and in degrees Celsius: $50\\,\\text{K}$."
+        },
+        {
+          "value": 90,
+          "feedback": "You used only one of the temperatures, $25\\,\\text{K}$. The mast warms from $-25\\,{}^\\circ\\text{C}$ to $+25\\,{}^\\circ\\text{C}$, that is, by $50\\,\\text{K}$."
+        }
+      ],
+      "solution": "**Given:** length of the mast $L_0 = 300\\,\\text{m}$, $\\alpha = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$; temperatures $T_1 = -25\\,{}^\\circ\\text{C}$ and $T_2 = +25\\,{}^\\circ\\text{C}$\n\n**Find:** the change in height $\\Delta L$ in millimetres\n\n**Principle:** As steel warms, the vibration of its particles becomes stronger and their average distance grows, so the mast lengthens. The steel stays solid, and the change $50\\,\\text{K}$ is less than a hundred kelvins, so $\\Delta L = \\alpha L_0 \\Delta T$ is a good model (chapter *Thermal expansion*).\n\n**Formula:** $\\Delta L = \\alpha L_0 \\Delta T$, where $\\Delta T = T_2 - T_1$\n\n**Conversions:** $\\Delta T = 25\\,{}^\\circ\\text{C} - (-25\\,{}^\\circ\\text{C}) = 50\\,\\text{K}$, the same in kelvins and in degrees Celsius. Finally $1\\,\\text{m} = 1000\\,\\text{mm}$.\n\n**Substitution:** $\\Delta L = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 300\\,\\text{m} \\cdot 50\\,\\text{K} = 0.18\\,\\text{m} = 0.18 \\cdot 1000\\,\\text{mm} = 180\\,\\text{mm}$\n\n**Answer:** $180\\,\\text{mm}$, that is $18\\,\\text{cm}$, two significant figures like the coefficient of expansion $12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$ and the temperatures.\n\n**Reasonableness:** Steel lengthens by about one hundred-thousandth of its length per kelvin: for a $300\\,\\text{m}$ mast that is $3.6\\,\\text{mm}$ per kelvin and $180\\,\\text{mm}$ for $50\\,\\text{K}$. The change is less than a thousandth of the height of the mast, but the anchorages of the guy wires that support the mast must still give way."
+    },
+    {
+      "id": "katko",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Power cut in the frost",
+      "prompt": "The heating of a detached house stops because of a power cut. The house loses heat at $180\\,\\text{W}$ for every kelvin of difference between the indoor and outdoor temperatures. It is $21\\,{}^\\circ\\text{C}$ indoors and $-20\\,{}^\\circ\\text{C}$ outdoors. The combined heat capacity of the structures, furniture and air of the house is $30\\,\\text{MJ/K}$. By how many kelvins does the indoor temperature fall during the first hour? Give the answer in kelvins.",
+      "answer": 0.886,
+      "unit": "K",
+      "tolerance": 0.03,
+      "hints": [
+        "At what power is heat conducted out of the house at the start of the power cut?",
+        "The power is $P = 180\\,\\tfrac{\\text{W}}{\\text{K}} \\cdot \\Delta T$, and the energy $Q = Pt$ transferred in an hour lowers the temperature by $\\tfrac{Q}{C}$.",
+        "$\\Delta T_\\text{in} = \\dfrac{P\\,t}{C} = \\dfrac{7380\\,\\text{W} \\cdot 3600\\,\\text{s}}{30 \\cdot 10^{6}\\,\\text{J/K}}$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.000246,
+          "feedback": "You calculated the fall in temperature per second. The question asks for the fall in an hour: multiply by the time $3600\\,\\text{s}$."
+        },
+        {
+          "value": 0.454,
+          "feedback": "You used the indoor temperature $21\\,\\text{K}$ as the temperature difference. The power depends on the difference between the indoor and outdoor temperatures, $21\\,{}^\\circ\\text{C} - (-20\\,{}^\\circ\\text{C}) = 41\\,\\text{K}$."
+        },
+        {
+          "value": 886,
+          "feedback": "You converted the heat capacity wrongly. $30\\,\\text{MJ/K} = 30 \\cdot 10^{6}\\,\\text{J/K}$, not $30 \\cdot 10^{3}\\,\\text{J/K}$."
+        }
+      ],
+      "solution": "**Given:** heat loss $180\\,\\text{W}$ per kelvin, $T_\\text{in} = 21\\,{}^\\circ\\text{C}$, $T_\\text{out} = -20\\,{}^\\circ\\text{C}$, heat capacity $C = 30\\,\\text{MJ/K}$, time $t = 1\\,\\text{h}$\n\n**Find:** the fall in the indoor temperature $\\Delta T_\\text{in}$ in kelvins\n\n**Principle:** Heat is conducted out at a power proportional to the temperature difference, like $P = UA\\Delta T$. With no heating there is no energy balance: the energy leaving reduces the internal energy of the house, and the temperature falls according to $Q = C\\,\\Delta T$ (chapters *Heat transfer, energy balance and climate change* and *Heating and cooling of matter*). During the first hour the indoor temperature changes by less than a kelvin, so the power is almost constant.\n\n**Formula:** $P = 180\\,\\tfrac{\\text{W}}{\\text{K}} \\cdot (T_\\text{in} - T_\\text{out})$ and $P\\,t = C\\,\\Delta T_\\text{in}$, so $\\Delta T_\\text{in} = \\dfrac{P\\,t}{C}$\n\n**Conversions:** $1\\,\\text{h} = 3600\\,\\text{s}$ and $30\\,\\text{MJ/K} = 30 \\cdot 10^{6}\\,\\text{J/K}$. The temperature difference is the same in kelvins: $21\\,{}^\\circ\\text{C} - (-20\\,{}^\\circ\\text{C}) = 41\\,\\text{K}$.\n\n**Substitution:** $P = 180\\,\\tfrac{\\text{W}}{\\text{K}} \\cdot 41\\,\\text{K} = 7380\\,\\text{W}$ and $\\Delta T_\\text{in} = \\dfrac{7380\\,\\text{W} \\cdot 3600\\,\\text{s}}{30 \\cdot 10^{6}\\,\\text{J/K}} = 0.886\\,\\text{K}$\n\n**Answer:** about $0.89\\,\\text{K}$, two significant figures like the heat capacity $30\\,\\text{MJ/K}$ and the temperature difference $41\\,\\text{K}$.\n\n**Reasonableness:** Less than a degree in an hour fits experience: a house cools slowly even in a hard frost, because its heat capacity is large. The fall slows down as the temperature difference gets smaller, so the result is only an estimate for the first hour. At the initial rate the temperature would fall by about $21\\,\\text{K}$ in a day, in reality less."
+    },
+    {
+      "id": "lisaa",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "At the end of the lesson there are matriculation-exam-style problems. Write your solution in your notebook or on the computer as in the exam, and only then assess it with the model answer and the marking scheme."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "In an insulated container, ice at $0\\,{}^\\circ\\text{C}$ melts into water at $0\\,{}^\\circ\\text{C}$. Which statement is correct?",
+      "choices": [
+        {
+          "text": "The average kinetic energy of the particles grows, because more energy comes in.",
+          "feedback": "The temperature stays at $0\\,{}^\\circ\\text{C}$, so the thermal motion of the particles does not become stronger. The incoming energy changes the interactions between the particles. Review the chapter *Changes of state*."
+        },
+        {
+          "text": "The internal energy stays the same, because the temperature does not change.",
+          "feedback": "The same temperature does not mean the same internal energy. Melting needs the energy $sm$, and it increases the interaction energy between the particles. Review the chapter *Internal energy, heat and conservation of energy*."
+        },
+        {
+          "text": "The internal energy grows, but the average kinetic energy of the particles does not change.",
+          "feedback": "Correct. During melting the energy transferred to the substance changes the interactions between the particles and increases the interaction energy between them. The temperature, and therefore the thermal motion, stays the same. If needed, review the chapter *Changes of state*.",
+          "correct": true
+        }
+      ],
+      "practice": "Review the energy of a change of state in the chapter [*Changes of state*](fy3-7.html) and internal energy in the chapter [*Internal energy, heat and conservation of energy*](fy3-5.html)."
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculation",
+      "prompt": "A gutter holds $12\\,\\text{m}$ of heating cable with a power of $30\\,\\text{W}$ per metre. The cable melts snow at $0\\,{}^\\circ\\text{C}$ that has collected in the gutter, and all its energy goes into melting. How many kilograms of snow does the cable melt in an hour? Give the answer in kilograms.",
+      "answer": 3.88,
+      "unit": "kg",
+      "tolerance": 0.02,
+      "hints": [
+        "How much energy does the cable give in an hour?",
+        "The power of the cable is $P = 12\\,\\text{m} \\cdot 30\\,\\tfrac{\\text{W}}{\\text{m}}$ and the energy $Q = Pt$. The snow is already at $0\\,{}^\\circ\\text{C}$, so the energy goes into melting: $Q = sm$.",
+        "$m = \\dfrac{P\\,t}{s} = \\dfrac{360\\,\\text{W} \\cdot 3600\\,\\text{s}}{334\\,000\\,\\text{J/kg}}$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.573,
+          "feedback": "You used the latent heat of vaporisation. The snow melts into water, so the right constant is the specific latent heat of fusion $s = 334\\,\\text{kJ/kg}$."
+        },
+        {
+          "value": 0.00108,
+          "feedback": "You calculated the amount that melts in a second. Multiply the power by the length of an hour in seconds: $1\\,\\text{h} = 3600\\,\\text{s}$."
+        },
+        {
+          "value": 0.0647,
+          "feedback": "You used a minute as the time. An hour is $3600\\,\\text{s}$."
+        }
+      ],
+      "practice": "Review the latent heat of fusion in the chapter [*Changes of state*](fy3-7.html).",
+      "solution": "**Given:** length of the cable $12\\,\\text{m}$ and power $30\\,\\text{W}$ per metre, time $t = 1\\,\\text{h}$; the snow is at $0\\,{}^\\circ\\text{C}$; from the table $s = 334\\,\\text{kJ/kg}$\n\n**Find:** the mass $m$ of snow melted, in kilograms\n\n**Principle:** The snow is already at its melting point, so the energy of the cable does not raise the temperature but melts snow at constant temperature: $Q = sm$. The power of the cable is constant, so the energy it gives is $Q = Pt$ (chapter *Changes of state*).\n\n**Formula:** $P\\,t = s m$, so $m = \\dfrac{P\\,t}{s}$\n\n**Conversions:** $P = 12\\,\\text{m} \\cdot 30\\,\\tfrac{\\text{W}}{\\text{m}} = 360\\,\\text{W}$, $1\\,\\text{h} = 3600\\,\\text{s}$ and $334\\,\\text{kJ/kg} = 334\\,000\\,\\text{J/kg}$.\n\n**Substitution:** $m = \\dfrac{360\\,\\text{W} \\cdot 3600\\,\\text{s}}{334\\,000\\,\\text{J/kg}} = \\dfrac{1\\,296\\,000\\,\\text{J}}{334\\,000\\,\\text{J/kg}} = 3.88\\,\\text{kg}$\n\n**Answer:** $3.9\\,\\text{kg}$, two significant figures like the length $12\\,\\text{m}$ and the power $30\\,\\text{W}$ per metre.\n\n**Reasonableness:** In an hour the cable gives $0.36\\,\\text{kWh}$, that is about $1.3\\,\\text{MJ}$, and each kilogram of snow needs $0.334\\,\\text{MJ}$: just under four kilograms. In reality some of the energy warms the air and the gutter, so a little less melts."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain",
+      "prompt": "Two identical glasses of juice are cooled: $50\\,\\text{g}$ of ice cubes at $0\\,{}^\\circ\\text{C}$ is added to one, and $50\\,\\text{g}$ of water at $0\\,{}^\\circ\\text{C}$ to the other. Which juice cools more? Explain using conservation of energy, and estimate the difference with numbers.",
+      "criteria": [
+        "The answer says that the juice cooled with ice cubes cools more.",
+        "The answer says that the energy given out by the juice first goes into melting the ice ($Q = sm$) and only then into warming the meltwater, whereas the water at $0\\,{}^\\circ\\text{C}$ only warms up.",
+        "The answer estimates the difference: melting $50\\,\\text{g}$ takes $334\\,\\text{kJ/kg} \\cdot 0.050\\,\\text{kg} \\approx 17\\,\\text{kJ}$, as much as warming $50\\,\\text{g}$ of water by about $80\\,\\text{K}$.",
+        "The answer justifies with conservation of energy: in an insulated glass the heat given out by the juice equals the heat received by the ice or the water."
+      ],
+      "model": "The juice cooled with ice cubes cools more. Energy is conserved, so the heat given out by the juice equals the heat received by the added substance. The water at $0\\,{}^\\circ\\text{C}$ only warms up, and each kelvin needs $4.19\\,\\text{kJ}$ per kilogram. The ice, on the other hand, first takes the latent heat of fusion while its temperature stays at $0\\,{}^\\circ\\text{C}$: melting $50\\,\\text{g}$ takes $334\\,\\text{kJ/kg} \\cdot 0.050\\,\\text{kg} \\approx 17\\,\\text{kJ}$. The same energy would warm $50\\,\\text{g}$ of water by about $80\\,\\text{K}$. Only after melting does the meltwater warm up like the water at $0\\,{}^\\circ\\text{C}$. That is why the ice takes much more energy from the juice, and the temperature of the juice falls more, although the ice and the water were equally cold at first.",
+      "practice": "Review the thermal balance of ice and water in the chapter [*Thermal balance during a change of state*](fy3-14.html)."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer them yourself first, and only then open the answer."
+    }
+  ]
+}

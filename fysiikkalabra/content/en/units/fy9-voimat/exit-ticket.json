@@ -1,0 +1,10 @@
+[
+  {
+    "q": "A book is at rest on a table. Which force is the counterforce of the book's weight according to Newton's third law? Is it the normal force of the table?",
+    "a": "The counterforce of the weight is the force with which the book pulls the Earth upwards: the weight is an interaction between the Earth and the book, so the counterforce acts on the Earth. The normal force of the table is not the counterforce, although it is equal and opposite: it acts on the same object, the book, and is equal only because the book is at rest (first law). The counterforce of the normal force is the force of the book on the table, downwards."
+  },
+  {
+    "q": "A box ($10.0\\,\\text{kg}$) is at rest on a slope whose angle of inclination is $30^\\circ$. How large is the normal force of the slope?",
+    "a": "Only the weight and the normal force act perpendicular to the surface, so $N = mg\\cos\\alpha = 10.0\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\cdot \\cos 30^\\circ \\approx 85.0\\,\\text{N}$, smaller than the weight $98.1\\,\\text{N}$."
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Fluorine-18 ($Z = 9$) decays by beta plus decay. Which nucleus is formed?",
+    "a": "In beta plus decay a proton turns into a neutron, so $Z$ decreases by one and the mass number is conserved: ${}^{18}_{9}\\text{F} \\to {}^{18}_{8}\\text{O} + {}^{0}_{+1}\\text{e} + \\nu$. Oxygen-18 is formed. Review if needed the chapter *The atomic nucleus and radioactive decay*."
+  },
+  {
+    "q": "How large is the energy of a photon of $400\\,\\text{nm}$ violet light in electronvolts?",
+    "a": "$E = \\tfrac{hc}{\\lambda} \\approx \\tfrac{1240\\,\\text{eV}\\,\\text{nm}}{400\\,\\text{nm}} = 3.1\\,\\text{eV}$. Review if needed the chapter *The photoelectric effect and the photon*."
+  }
+]

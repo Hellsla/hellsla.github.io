@@ -1,0 +1,828 @@
+{
+  "intro": "Six matriculation-exam-style problems bring together the lesson's direct-current circuits, electric power and electrical energy. Solve them as in the exam: first work out the connection and the model and justify why the model suits the situation, solve for the unknown before substituting numbers, and assess whether the result is reasonable. Open the model answer and the marking scheme only when your solution is finished.",
+  "tasks": [
+    {
+      "id": "fy9-tasavirta-s1",
+      "title": "The rear-window heater",
+      "source": "example",
+      "source_note": "The dimensions and measurements of the heater are invented. The resistance of a real strip changes slightly with temperature.",
+      "skills": [
+        "fy6-4",
+        "fy6-3",
+        "fy6-6",
+        "fy6-8"
+      ],
+      "text": "The rear window of a car has a heater with $10$ thin conducting strips side by side. At the edges of the glass there are two busbars, and each strip runs from one busbar to the other. The length of a strip is $1.10\\,\\text{m}$ and its width $3.0\\,\\text{mm}$, and the resistivity of the strip material is $3.0 \\cdot 10^{-7}\\,\\Omega\\cdot\\text{m}$. When the engine is running, the voltage between the busbars is $13.5\\,\\text{V}$, and a clamp meter on the lead of the heater shows $12.0\\,\\text{A}$. Assume that the resistance of the strips does not depend on temperature.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "What is the power of the heater, and what is the resistance of one strip?",
+          "answer": [
+            {
+              "name": "P",
+              "value": 162.0,
+              "unit": "W",
+              "tolerance": 0.02
+            },
+            {
+              "name": "R",
+              "value": 11.25,
+              "unit": "Ω",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "text": "Justifies the connection: each strip is between the busbars, so the strips are in parallel, the voltage across all of them is the same $13.5\\,\\text{V}$ and the current divides equally.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$P = UI$, $I_1 = \\dfrac{I}{10}$ and $R_1 = \\dfrac{U}{I_1}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$P = 13.5\\,\\text{V} \\cdot 12.0\\,\\text{A} = 162\\,\\text{W}$, $I_1 = 1.20\\,\\text{A}$ and $R_1 = 11.25\\,\\Omega$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$P \\approx 162\\,\\text{W}$ and $R_1 \\approx 11.3\\,\\Omega$ to three significant figures"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "How thick is a strip?",
+          "answer": {
+            "value": 9.78,
+            "unit": "µm",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$R_1 = \\rho\\,\\dfrac{l}{A}$, so $A = \\dfrac{\\rho l}{R_1}$, and the thickness is $h = \\dfrac{A}{b}$, where $b$ is the width of the strip"
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "$A = \\dfrac{3.0 \\cdot 10^{-7}\\,\\Omega\\cdot\\text{m} \\cdot 1.10\\,\\text{m}}{11.25\\,\\Omega} = 2.93 \\cdot 10^{-8}\\,\\text{m}^2$ and $h = \\dfrac{2.93 \\cdot 10^{-8}\\,\\text{m}^2}{3.0 \\cdot 10^{-3}\\,\\text{m}} = 9.8 \\cdot 10^{-6}\\,\\text{m}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$h \\approx 9.8\\,\\mu\\text{m}$, that is, about $0.01\\,\\text{mm}$, two significant figures like the resistivity and the width"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 3,
+          "text": "One strip breaks because of a scratch. How do the current and the power of the heater change, and does the glass warm up as well as before where the strips are intact?",
+          "criteria": [
+            {
+              "text": "Justifies with the parallel connection: the broken branch does not change the voltage across the other strips, so the current and the power of the intact strips stay as they were.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Current $9 \\cdot 1.20\\,\\text{A} = 10.8\\,\\text{A}$ and power $13.5\\,\\text{V} \\cdot 10.8\\,\\text{A} \\approx 146\\,\\text{W}$"
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The current and the power decrease by a tenth, the intact strips heat as before, and only a narrow frosty band remains where the broken strip is."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 4,
+          "text": "The engine is switched off, and the heater runs on the battery alone. The emf of the battery is $12.6\\,\\text{V}$ and its internal resistance $0.020\\,\\Omega$. What is the power of the heater now, when all the strips are intact?",
+          "answer": {
+            "value": 136.2,
+            "unit": "W",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Resistance of the heater $R = \\dfrac{R_1}{10}$, $I = \\dfrac{E}{R + R_\\text{s}}$ and $P = RI^2$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$R = 1.125\\,\\Omega$, $I = \\dfrac{12.6\\,\\text{V}}{1.145\\,\\Omega} = 11.0\\,\\text{A}$ and $P = 1.125\\,\\Omega \\cdot (11.0\\,\\text{A})^2 \\approx 136\\,\\text{W}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$P \\approx 136\\,\\text{W}$ to three significant figures"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "The power is about $84\\,\\%$ of that with the engine running, because the terminal voltage $12.4\\,\\text{V}$ is smaller than $13.5\\,\\text{V}$ and the power is proportional to the square of the voltage."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy6-4",
+        "math": "fy6-6",
+        "communication": "fy6-4"
+      }
+    },
+    {
+      "id": "fy9-tasavirta-s2",
+      "title": "The battery of an electric scooter",
+      "source": "example",
+      "source_note": "The figures for the battery, the charger and the riding are invented. The emf of a real battery increases during charging, so the charging current decreases.",
+      "skills": [
+        "fy6-9",
+        "fy6-8",
+        "fy6-7"
+      ],
+      "text": "The rating plate of an electric scooter's battery reads $36\\,\\text{V}$ and $10.4\\,\\text{Ah}$. The voltage of the manufacturer's charger is $42.0\\,\\text{V}$. In addition, it is known that:\n\n- when riding at $20\\,\\text{km/h}$, an average of $7.5\\,\\text{A}$ is drawn from the battery\n- the emf of the empty battery is $34.5\\,\\text{V}$ and its internal resistance $0.40\\,\\Omega$\n- the resistance of the charger and the leads is $2.6\\,\\Omega$ in total\n- electricity including transmission costs $15\\,\\text{c/kWh}$",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "How much energy is stored in the fully charged battery? Give the answer in watt-hours and in megajoules.",
+          "answer": {
+            "value": 374.4,
+            "unit": "Wh",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$W = UQ$ with the rated voltage"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$W = 36\\,\\text{V} \\cdot 10.4\\,\\text{Ah} = 374\\,\\text{Wh}$ and $374.4 \\cdot 3600\\,\\text{J} = 1.35\\,\\text{MJ}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$W \\approx 374\\,\\text{Wh} \\approx 1.35\\,\\text{MJ}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "How far can you ride on a full battery at $20\\,\\text{km/h}$?",
+          "answer": {
+            "value": 27.73,
+            "unit": "km",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$Q = It$, so $t = \\dfrac{Q}{I}$, and the distance $s = vt$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$t = \\dfrac{10.4\\,\\text{Ah}}{7.5\\,\\text{A}} = 1.39\\,\\text{h}$ and $s = 20\\,\\tfrac{\\text{km}}{\\text{h}} \\cdot 1.39\\,\\text{h} = 27.7\\,\\text{km}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$s \\approx 28\\,\\text{km}$, two significant figures like the current and the speed"
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Assumption: the whole capacity can be used and the current stays at its average. Hills, wind, cold and accelerations shorten the distance."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "The charger is connected to the empty battery. What is the charging current at the start of charging, and what is the terminal voltage of the battery then?",
+          "answer": [
+            {
+              "name": "I",
+              "value": 2.5,
+              "unit": "A",
+              "tolerance": 0.02
+            },
+            {
+              "name": "U",
+              "value": 35.5,
+              "unit": "V",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "text": "Justifies with the voltage law: around the loop the potential rises in the charger and falls across the resistance of the charger and the leads, across the internal resistance of the battery and by the emf of the battery, because the current passes through the battery from the positive terminal to the negative terminal.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$I = \\dfrac{U_\\text{ch} - E}{R + R_\\text{s}}$ and $U = E + R_\\text{s} I$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$I = \\dfrac{42.0\\,\\text{V} - 34.5\\,\\text{V}}{2.6\\,\\Omega + 0.40\\,\\Omega} = 2.5\\,\\text{A}$ and $U = 34.5\\,\\text{V} + 0.40\\,\\Omega \\cdot 2.5\\,\\text{A} = 35.5\\,\\text{V}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$I \\approx 2.5\\,\\text{A}$ and $U \\approx 35.5\\,\\text{V}$"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 4,
+          "text": "Estimate the efficiency of charging when the voltage of the charger stays at $42.0\\,\\text{V}$ and a charge of $10.4\\,\\text{Ah}$ passes through the battery during charging. How much does one full charge cost?",
+          "answer": {
+            "value": 85.71,
+            "unit": "%",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$W_\\text{ch} = U_\\text{ch} Q$ and $\\eta = \\dfrac{W_\\text{bat}}{W_\\text{ch}}$, where $W_\\text{bat}$ is the energy of part a"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$W_\\text{ch} = 42.0\\,\\text{V} \\cdot 10.4\\,\\text{Ah} = 437\\,\\text{Wh}$ and $\\eta = \\dfrac{374\\,\\text{Wh}}{437\\,\\text{Wh}} = 0.857$; cost $0.437\\,\\text{kWh} \\cdot 0.15\\,\\tfrac{\\text{€}}{\\text{kWh}} \\approx 0.066\\,\\text{€}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\eta \\approx 86\\,\\%$ and a cost of about $7\\,\\text{c}$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "The efficiency is below $100\\,\\%$, because about $62\\,\\text{Wh}$ is transformed into internal energy of the resistances; charging is cheap compared with, for example, a bus ticket."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy6-9",
+        "concept": "fy6-9",
+        "transfer": "fy6-7"
+      }
+    },
+    {
+      "id": "fy9-tasavirta-s3",
+      "title": "Torch batteries under load",
+      "source": "example",
+      "source_note": "The figures are calculated from a model, and variation like that of real measurements has been added to them.",
+      "skills": [
+        "fy6-8",
+        "fy1-4",
+        "fy6-6"
+      ],
+      "text": "Students investigated the battery holder of a torch, which contains three new AA batteries in series. A variable resistor and an ammeter were connected in series to the terminals of the holder, and a voltmeter across the terminals of the holder. The variable resistor was adjusted, and at each setting the current $I$ and the terminal voltage $U$ were read.\n\n| $I\\ (\\text{A})$ | $U\\ (\\text{V})$ |\n|---|---|\n| $0.10$ | $4.56$ |\n| $0.25$ | $4.43$ |\n| $0.40$ | $4.34$ |\n| $0.60$ | $4.18$ |\n| $0.80$ | $4.06$ |\n| $1.00$ | $3.89$ |",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 5,
+          "text": "Present the terminal voltage as a function of the current as a graph and fit a model to the points. Justify the choice of model.",
+          "criteria": [
+            {
+              "key": "graph_axes",
+              "points": 1,
+              "detail": "$I\\ (\\text{A})$ on the horizontal axis, $U\\ (\\text{V})$ on the vertical axis; the vertical axis starts at zero or the break is marked, and there is room to extend the axis to the current $0$."
+            },
+            {
+              "key": "graph_points",
+              "points": 1,
+              "detail": "Six points in the right places, not joined into a broken line."
+            },
+            {
+              "key": "graph_fit",
+              "points": 2,
+              "detail": "One falling straight line between the points, extended to the vertical axis."
+            },
+            {
+              "text": "Justifies the straight line: the terminal voltage is smaller by the voltage drop $R_\\text{s} I$ across the internal resistance, and the drop is proportional to the current when $E$ and $R_\\text{s}$ are constant.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 6,
+          "text": "Determine the emf and the internal resistance of the group of batteries from the graph. Compare the results with the typical values of a new AA battery, which are an emf of $1.5$–$1.6\\,\\text{V}$ and an internal resistance of $0.1$–$0.3\\,\\Omega$.",
+          "answer": [
+            {
+              "name": "E",
+              "value": 4.63,
+              "unit": "V",
+              "tolerance": 0.02
+            },
+            {
+              "name": "Rs",
+              "value": 0.733,
+              "unit": "Ω",
+              "tolerance": 0.06
+            }
+          ],
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 2,
+              "detail": "$E$ from the intercept on the vertical axis, about $4.63\\,\\text{V}$; the slope from two points of the line far apart, for example $(0\\,\\text{A};\\ 4.63\\,\\text{V})$ and $(1.20\\,\\text{A};\\ 3.75\\,\\text{V})$."
+            },
+            {
+              "text": "Interprets: the intercept on the vertical axis is the emf, because without a current $U = E$, and the negative of the slope is the internal resistance.",
+              "tag": "graph",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$R_\\text{s} = -\\dfrac{\\Delta U}{\\Delta I} = -\\dfrac{3.75\\,\\text{V} - 4.63\\,\\text{V}}{1.20\\,\\text{A}} \\approx 0.73\\,\\Omega$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$E \\approx 4.63\\,\\text{V}$ and $R_\\text{s} \\approx 0.73\\,\\Omega$; values of $4.60$–$4.66\\,\\text{V}$ and $0.70$–$0.77\\,\\Omega$ read from the graph are accepted."
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "In series the emfs and the internal resistances add up, so per battery $1.54\\,\\text{V}$ and $0.24\\,\\Omega$, the typical values of new AA batteries."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "How large a current would flow if the terminals of the holder were short-circuited? Why was this current not measured, and how reliable is the result?",
+          "answer": {
+            "value": 6.31,
+            "unit": "A",
+            "tolerance": 0.05
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$I_\\text{k} = \\dfrac{E}{R_\\text{s}}$ or the intersection of the line with the horizontal axis"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$I_\\text{k} = \\dfrac{4.63\\,\\text{V}}{0.733\\,\\Omega} \\approx 6.3\\,\\text{A}$"
+            },
+            {
+              "text": "Justifies why a short circuit is not measured: the large current would heat the batteries and could damage them.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "The result is an extrapolation to more than six times the current, outside the measuring range; it assumes that $R_\\text{s}$ stays the same at large currents, so it is only an estimate."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 5,
+          "text": "The resistance of the torch bulb is $3.6\\,\\Omega$ when it is lit. What power is transferred to the bulb, and what fraction of the source power $EI$ of the batteries is it?",
+          "answer": {
+            "value": 4.11,
+            "unit": "W",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$I = \\dfrac{E}{R + R_\\text{s}}$, $P = RI^2$ and the fraction $\\dfrac{RI^2}{EI}$"
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "$I = \\dfrac{4.63\\,\\text{V}}{4.33\\,\\Omega} = 1.07\\,\\text{A}$, $P = 3.6\\,\\Omega \\cdot (1.07\\,\\text{A})^2 = 4.11\\,\\text{W}$ and $EI = 4.95\\,\\text{W}$, so the fraction is $83\\,\\%$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$P \\approx 4.1\\,\\text{W}$, two significant figures like the resistance of the bulb"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "The remaining $0.84\\,\\text{W}$ or so heats the batteries. The current $1.07\\,\\text{A}$ is slightly above the measuring range, so the model probably holds well for it."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy1-4",
+        "concept": "fy6-8",
+        "math": "fy6-8",
+        "experiment": "fy6-8",
+        "transfer": "fy6-8"
+      }
+    },
+    {
+      "id": "fy9-tasavirta-s4",
+      "title": "Three claims about electrical safety",
+      "source": "example",
+      "source_note": "The claims and the figures are invented.",
+      "skills": [
+        "fy6-6",
+        "fy6-4",
+        "fy6-5",
+        "fy6-3"
+      ],
+      "text": "At a residents' evening of a housing company, electrical safety was discussed, and three claims were made during the evening.\n\n1. “An extension cord heats up because part of the current is used up in the cord. That is why a thin extension cord is dangerous only if it is long.”\n2. “When more devices are connected to the same socket circuit, the current of each device decreases, because the current of the circuit is shared between more devices.”\n3. “A bird can sit safely on a bare high-voltage line, but if at the same time it touches an earthed pylon with its wing, it gets an electric shock.”\n\nThe voltage of the sockets at home is $230\\,\\text{V}$, and the current and power of heating devices can be estimated with the same laws as in a direct-current circuit. The resistivity of copper is $1.7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m}$ and that of aluminium $2.7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 5,
+          "text": "Assess claim 1. As an example, estimate the power that is transformed into internal energy in a $15\\,\\text{m}$ extension cord whose two conductors each have a cross-sectional area of $0.75\\,\\text{mm}^2$, when a current of $10\\,\\text{A}$ passes through the cord.",
+          "criteria": [
+            {
+              "text": "Explains that current is not used up: the same current passes along the cord to the device and back. In the resistance of the conductors electrical energy is transformed into internal energy at the power $P = RI^2$.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "The current passes through two $15\\,\\text{m}$ conductors: $R = \\rho\\,\\dfrac{2l}{A} = 0.68\\,\\Omega$ and $P = 0.68\\,\\Omega \\cdot (10\\,\\text{A})^2 = 68\\,\\text{W}$."
+            },
+            {
+              "text": "Explains that both a small cross-sectional area and a large length increase the resistance and that the power grows as the square of the current, so a large current makes a thin cord dangerous even when it is short.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The claim is wrong: the cord does not use up current, and a thin cord heats up with a large current whatever its length. A cord wound on a reel cannot cool down."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 5,
+          "text": "Assess claim 2. Use as an example a $2000\\,\\text{W}$ kettle and an $850\\,\\text{W}$ toaster on the same circuit, whose fuse is $10\\,\\text{A}$.",
+          "criteria": [
+            {
+              "text": "Explains the parallel connection: the mains voltage $230\\,\\text{V}$ is across every socket and device, so the current of a device $I = \\tfrac{P}{U}$ does not depend on the other devices.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\tfrac{2000\\,\\text{W}}{230\\,\\text{V}} = 8.7\\,\\text{A}$ and $\\tfrac{850\\,\\text{W}}{230\\,\\text{V}} = 3.7\\,\\text{A}$, in total $12.4\\,\\text{A}$"
+            },
+            {
+              "text": "Concludes from the current law that the wiring of the circuit carries the sum of the branch currents, which exceeds $10\\,\\text{A}$; the fuse cuts off the current and protects the wiring of the circuit from overheating.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The claim is wrong: the currents of the devices do not decrease, but the total current of the circuit increases with each device."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 5,
+          "text": "Assess claim 3. Estimate the voltage between the bird's feet when the feet are $4.0\\,\\text{cm}$ apart on an aluminium conductor whose cross-sectional area is $400\\,\\text{mm}^2$ and which carries $600\\,\\text{A}$.",
+          "criteria": [
+            {
+              "text": "Explains that the current through the bird is set by the potential difference between its feet, not by the potential of the line relative to the earth.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Resistance of the line between the feet $R = \\rho\\,\\dfrac{l}{A} = 2.7 \\cdot 10^{-6}\\,\\Omega$ and voltage $U = RI \\approx 1.6\\,\\text{mV}$."
+            },
+            {
+              "text": "Explains that the pylon is at the potential of the earth, so on contact almost the whole voltage between the line and the earth is across the bird's body, and a dangerous current passes through the body.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The claim is true: what is dangerous is not the high potential of the line but a large potential difference between two points of the body."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy6-5",
+        "math": "fy6-3",
+        "transfer": "fy6-4",
+        "communication": "fy6-6"
+      }
+    },
+    {
+      "id": "fy9-tasavirta-s5",
+      "title": "Does the resistor obey Ohm's law?",
+      "source": "example",
+      "source_note": "The report and the measurements are invented. The error limits of the meters have the same form as those of the multimeter in the chapter *Measurements in an electric circuit*.",
+      "skills": [
+        "fy6-2",
+        "fy6-3",
+        "fy1-3",
+        "fy1-8"
+      ],
+      "text": "A group of students investigated whether a carbon-film resistor obeys Ohm's law. The group connected the resistor to an adjustable voltage source, an ammeter in series and a voltmeter in parallel with the resistor. The voltage was measured on the $20\\,\\text{V}$ range of a multimeter (resolution $0.01\\,\\text{V}$, error limit $\\pm(0.5\\,\\% + 2\\ \\text{digits})$) and the current on the $200\\,\\text{mA}$ range of another multimeter (resolution $0.1\\,\\text{mA}$, error limit $\\pm(1.0\\,\\% + 2\\ \\text{digits})$).\n\n| Measurement | $U\\ (\\text{V})$ | $I\\ (\\text{mA})$ |\n|---|---|---|\n| 1 | $0.51$ | $5.3$ |\n| 2 | $1.50$ | $15.0$ |\n| 3 | $3.02$ | $29.6$ |\n\nThe group's conclusion: “The resistances are $96\\,\\Omega$, $100\\,\\Omega$ and $102\\,\\Omega$. The resistance increases as the voltage increases, so the resistor does not obey Ohm's law.”",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 5,
+          "text": "Calculate the resistance of measurement 1 and its error limit from the error limits of the meters.",
+          "answer": {
+            "value": 96.23,
+            "unit": "Ω",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$R = \\dfrac{U}{I}$; error limit of a meter $\\Delta x = p \\cdot x + n \\cdot r$; limits of the resistance from the extreme values $R_\\text{min} = \\dfrac{U - \\Delta U}{I + \\Delta I}$ and $R_\\text{max} = \\dfrac{U + \\Delta U}{I - \\Delta I}$ or from the sum of the relative error limits"
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "$\\Delta U = 0.023\\,\\text{V}$ and $\\Delta I = 0.25\\,\\text{mA}$; $R = \\dfrac{0.51\\,\\text{V}}{0.0053\\,\\text{A}} = 96.2\\,\\Omega$; limits about $88\\,\\Omega$ and $106\\,\\Omega$"
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "The relative error limit is about $4.4\\,\\% + 4.8\\,\\% \\approx 9\\,\\%$, so $\\Delta R \\approx 9\\,\\Omega$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$R = (96 \\pm 9)\\,\\Omega$: the error limit to one significant figure and the result to the same precision"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 5,
+          "text": "Assess the group's conclusion.",
+          "criteria": [
+            {
+              "key": "uncertainty",
+              "points": 2,
+              "detail": "The error limits of measurements 2 and 3 are about $\\pm 4\\,\\Omega$ and $\\pm 3\\,\\Omega$; all three intervals include the value $100\\,\\Omega$, so the resistances do not differ from each other within the measurement precision."
+            },
+            {
+              "key": "error_sources",
+              "points": 1,
+              "detail": "For small readings the digits part $n \\cdot r$ dominates: $0.51\\,\\text{V}$ on the $20\\,\\text{V}$ range and $5.3\\,\\text{mA}$ on the $200\\,\\text{mA}$ range are coarse, so measurement 1 is the least precise, and it is exactly the one that deviates most."
+            },
+            {
+              "text": "States that heating could change the resistance, but the power of the resistor is at most about $0.09\\,\\text{W}$, so the resistor hardly heats up.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The conclusion is not justified: the data fit a constant resistance of about $100\\,\\Omega$, and no dependence on voltage can be concluded from three imprecise points."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 5,
+          "text": "Plan how to improve the measurement so that the validity of Ohm's law can be established reliably.",
+          "criteria": [
+            {
+              "text": "Several points, for example eight, are measured over a wide voltage range, an $(I, U)$ graph is drawn and a straight line is fitted; according to Ohm's law the points lie on a straight line through the origin whose slope is $R$.",
+              "tag": "experiment",
+              "points": 2
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "The smallest range on which the reading fits is used: for example $0.510\\,\\text{V}$ on the $2\\,\\text{V}$ range gives an error limit of $0.005\\,\\text{V}$, that is, about $0.9\\,\\%$."
+            },
+            {
+              "text": "The temperature of the resistor is kept constant: a small power and short measuring times, and the voltage is measured both increasing and decreasing, so that any effect of heating would show as differences.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "The ammeter is kept in series and the voltmeter in parallel with the resistor, and the effect of the meters on the circuit is assessed: the current through the voltmeter is negligibly small, because its resistance is much larger than $100\\,\\Omega$.",
+              "tag": "experiment",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy6-2",
+        "experiment": "fy6-2",
+        "concept": "fy6-3",
+        "communication": "fy1-8"
+      }
+    },
+    {
+      "id": "fy9-tasavirta-s6",
+      "title": "The hot-water heater",
+      "source": "example",
+      "source_note": "The data of the heater are invented, and they correspond to an ordinary heater in a detached house.",
+      "skills": [
+        "fy3-6",
+        "fy6-6",
+        "fy6-7"
+      ],
+      "text": "The hot-water storage heater of a detached house holds $300\\,\\text{l}$ of water and has an electric resistor whose power is $3.0\\,\\text{kW}$ at a voltage of $230\\,\\text{V}$. When the hot water has been used, the heater fills with cold water at a temperature of $15\\,{}^\\circ\\text{C}$, and the resistor heats the water to $70\\,{}^\\circ\\text{C}$. The manufacturer states that the warm heater gives off $1.6\\,\\text{kWh}$ of energy to its surroundings per day. Electricity including transmission costs $14\\,\\text{c/kWh}$. The specific heat capacity of water is $4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$, and the mass of one litre of water is $1.0\\,\\text{kg}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 5,
+          "text": "How long does heating the water take when the heat losses are ignored?",
+          "answer": {
+            "value": 6.4,
+            "unit": "h",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Justifies the energy principle: the electrical energy of the resistor is transformed almost entirely into internal energy of the water, because the efficiency of a resistive heater is practically $100\\,\\%$, so $Pt = cm\\Delta T$.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$Q = cm\\Delta T$ and $t = \\dfrac{Q}{P}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$Q = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 300\\,\\text{kg} \\cdot 55\\,\\text{K} = 69.1\\,\\text{MJ}$ and $t = \\dfrac{69.1 \\cdot 10^6\\,\\text{J}}{3000\\,\\text{W}} = 23\\,000\\,\\text{s}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$t \\approx 6.4\\,\\text{h}$, two significant figures like the power $3.0\\,\\text{kW}$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "The heating fits into the night hours, and the energy $19\\,\\text{kWh}$ costs about $2.7\\,\\text{€}$."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "What is the average power of the heat losses of the heater, and how much do the losses cost in a year?",
+          "answer": {
+            "value": 66.67,
+            "unit": "W",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$P = \\dfrac{E}{t}$ and the energy for a year $365 \\cdot 1.6\\,\\text{kWh}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$P = \\dfrac{1600\\,\\text{Wh}}{24\\,\\text{h}} = 66.7\\,\\text{W}$; in a year $584\\,\\text{kWh}$ and $584\\,\\text{kWh} \\cdot 0.14\\,\\tfrac{\\text{€}}{\\text{kWh}} = 82\\,\\text{€}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$P \\approx 67\\,\\text{W}$ and about $82\\,\\text{€}$ a year"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "The loss power is a little under a hundred watts, so the heater keeps warming its room like a small heater; thicker insulation would reduce the loss."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "In the evening the mains voltage is $220\\,\\text{V}$. What is the power of the resistor then, when its resistance is assumed to be the same?",
+          "answer": {
+            "value": 2.745,
+            "unit": "kW",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$R = \\dfrac{U^2}{P}$ and $P' = \\dfrac{U'^2}{R} = P \\left(\\dfrac{U'}{U}\\right)^2$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$R = \\dfrac{(230\\,\\text{V})^2}{3000\\,\\text{W}} = 17.6\\,\\Omega$ and $P' = \\dfrac{(220\\,\\text{V})^2}{17.6\\,\\Omega} = 2.74\\,\\text{kW}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$P' \\approx 2.7\\,\\text{kW}$, about $8.5\\,\\%$ less; the heating takes about $7.0\\,\\text{h}$"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 3,
+          "text": "A shower uses $8.0\\,\\text{l}$ of water at $40\\,{}^\\circ\\text{C}$ per minute for $10\\,\\text{min}$. How much electrical energy does the hot water of the shower correspond to, when the water has been heated from $15\\,{}^\\circ\\text{C}$?",
+          "answer": {
+            "value": 2.328,
+            "unit": "kWh",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$E = cm\\Delta T$, where $m = 80\\,\\text{kg}$ and $\\Delta T = 25\\,\\text{K}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$E = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 80\\,\\text{kg} \\cdot 25\\,\\text{K} = 8.38\\,\\text{MJ} = 2.33\\,\\text{kWh}$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "The shower costs about $33\\,\\text{c}$, and a full heater ($19\\,\\text{kWh}$) is enough for about eight such showers."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy3-6",
+        "math": "fy6-7"
+      }
+    }
+  ]
+}

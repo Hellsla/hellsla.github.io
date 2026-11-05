@@ -1,0 +1,14 @@
+{
+  "id": "fy9-kaasut",
+  "course": "FY9",
+  "chapter": 2,
+  "order": 3,
+  "title": "Pressure, gases and the heat engine",
+  "description": "A review of the FY3 module's pressure and hydrostatic pressure, Boyle's law and changes of state of a gas, the ideal gas law, determining absolute zero, and the work done by a gas, the heat engine and the efficiency of a power plant, with matriculation-exam-style problems on them.",
+  "kind": "review",
+  "minutes": 75,
+  "subjects": [
+    "physics"
+  ],
+  "sources": []
+}

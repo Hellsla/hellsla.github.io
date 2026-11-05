@@ -491,7 +491,12 @@ def link_languages():
                 return (f'<details class="lang-menu"><summary><span class="visually-hidden">{esc(here("site.language"))}: </span>'
                         f'<span class="lang-current">{esc(here("format.language_name"))}</span></summary>'
                         f'<ul class="lang-list" aria-label="{esc(here("site.language_choose"))}">{"".join(items)}</ul></details>')
-            f.write_text(re.sub(r"<!--fl-languages:([\w.-]+)-->", control, f.read_text()))
+            html = re.sub(r"<!--fl-languages:([\w.-]+)-->", control, f.read_text())
+            if lang != i18n.SOURCE:   # a link in the text to a page only the source language has (FY10's investigations from FY9): that page
+                src = OUTS[i18n.SOURCE]
+                html = re.sub(r'\bhref="([\w.-]+\.html)([#?][^"]*)?"', lambda m: m.group(0) if (OUTS[lang] / m.group(1)).is_file() or not (src / m.group(1)).is_file()
+                              else f'href="{os.path.relpath(src / m.group(1), OUTS[lang]).replace(os.sep, "/")}{m.group(2) or ""}"', html)
+            f.write_text(html)
 
 
 def chapter_card(html):
@@ -581,13 +586,15 @@ def unit_sections(md_text):
 
 
 def build_units(lang, out, unit_pub):
-    """The course units written in this language (scripts/units.py): each page in the lesson template with the
-    inquiry stages, the course's components (units/<course>/units.js and units.css), its simulation, its credits,
-    sources and teacher notes, and Previous / Next unit in the course's order. A draft is built only as a preview."""
-    published = {f"{u}.html" for u, ul in unit_pub.items() if ul == lang}
+    """The course units in this language, written in it or translated into it (scripts/units.py): each page in the
+    lesson template with the inquiry stages, the course's components (units/<course>/units.js and units.css), its
+    simulation, its credits, sources and teacher notes, Previous / Next unit in the course's order, "Luvun tärkeät
+    käsitteet" in an S2 language and, once another language publishes the unit too, the language links (teacher
+    2026-11-04, FY9 in en and fi-easy). A draft is built only as a preview. unit_pub: {unit id: languages published}."""
+    published = {f"{u}.html" for u, ls in unit_pub.items() if lang in ls}
     for uid in units.ids(lang):
         if only and only != uid: continue
-        if uid not in unit_pub: continue
+        if lang not in unit_pub.get(uid, ()): continue
         errs = units.check(uid, lang)
         if errs: sys.exit("\n".join(errs))
         d = units.load(uid, lang); st = units.status(uid, lang); f = units.folder(uid, lang); code = d["course"]
@@ -612,7 +619,8 @@ def build_units(lang, out, unit_pub):
         tasks_html = ""                                  # the unit's own task set (FY9): its Tehtävät, last on the page
         if units.has_tasks(uid, lang):
             tasks_html, _ = practice.render(units.task_key(uid), lang, md, solution_html, T("practice.title"), embedded=True, prefix=units.number(uid))
-        body, toc = inquiry.render(f, inq, {"intro": intro, "sections": sections, "sim": sim, "exercises": tasks_html, "exit": exit_html}, md)
+        body, toc = inquiry.render(f, inq, {"intro": intro, "sections": sections, "sim": sim, "exercises": tasks_html, "exit": exit_html,
+                                            "concepts": inquiry.key_concepts_html(uid, d.get("key_concepts"), md)}, md)   # Selkeä suomi only (NOTES.md §12)
         if not tasks_html:
             for key in ("check_practice", "further_practice"):   # a unit without tasks has no exercises section: point to the theory summary only
                 body = body.replace(T(f"inquiry.{key}"), re.sub(r'(,| and)[^<]*<a href="#exercises">[^<]*</a>', "", T(f"inquiry.{key}")))
@@ -638,7 +646,7 @@ def build_units(lang, out, unit_pub):
                 .replace("{{scripts}}", f'<script src="inquiry.js"></script>' + ('<script src="selfassess.js"></script>' if tasks_html else "")
                          + (f'<script src="units/{code.lower()}/units.js"></script>' if cdir.is_dir() else ""))
                 .replace("{{description}}", esc(d["description"])).replace("{{url}}", URL + f"{uid}.html")
-                .replace("{{languages}}", ""))
+                .replace("{{languages}}", languages_nav(f"{uid}.html") if len(unit_pub[uid]) > 1 else ""))   # a unit in one language has none
         (out / f"{uid}.html").write_text(rebase(html))
         print("built", uid, f"({st['state']})")
 
@@ -897,14 +905,24 @@ def build_language(lang):
         (out / f"{iid}.html").write_text(rebase(html)); inv_built[iid] = d
         print("built", iid, f"({st['state']})")
     # Course units (teacher's brief 2026-11-01, FY14; scripts/units.py): the lessons of a local course written in its
-    # own language, published only in that language's folder when all three reviews pass. Every language's course
-    # page links to them there, so which units are published is decided from their reviews, not from built files.
-    unit_pub = {u: ul for ul, u in units.all_units() if units.status(u, ul)["state"] == "reviewed" or build_all or only == u}
+    # own language and, for a course with "translations" (FY9, teacher 2026-11-04), translated, each language version
+    # published in its language's folder when its own three reviews pass (a translation only where that language has
+    # the course, so its links to the course page hold). Every language's course page links each unit's version in its
+    # own language when published, else the source language's, so this is decided from the reviews, not from built files.
+    unit_pub = {}
+    for ul, u in units.all_units():
+        if not (units.status(u, ul)["state"] == "reviewed" or build_all or only == u): continue
+        if units.is_translation(u, ul) and not (build_all or only) and units.load(u, ul)["course"] not in local_courses.load(ul):
+            if ul == lang: print(f"note: {ul}/{u}.html waits for {units.load(u, ul)['course']} in content/{ul}/local-courses.json"); continue
+        unit_pub.setdefault(u, set()).add(ul)
     if lang in units.languages(): build_units(lang, out, unit_pub)
     local = local_courses.load(lang)
     local_rows = ""
     for code, c in local.items():
-        cu = [(u, units.load(u, ul), os.path.relpath(OUTS[ul] / f"{u}.html", out).replace(os.sep, "/")) for u, ul in unit_pub.items() if units.load(u, ul)["course"] == code]
+        cu = []
+        for u, ls in unit_pub.items():                   # (id, the language linked, href): this language's version, else the source's
+            ul = lang if lang in ls else units.lang_of(u) if units.lang_of(u) in ls else None
+            if ul and units.load(u, ul)["course"] == code: cu.append((u, ul, os.path.relpath(OUTS[ul] / f"{u}.html", out).replace(os.sep, "/")))
         local_rows += home_row(code, c["title"], c["subtitle"])
         (out / f"{code}.html").write_text(page(f"{code} {c['title']}", local_courses.page_body(code, c, T, chapters, {f"{i}.html" for i in built_ids},
                                                                                                   [(i, d) for i, d in inv_built.items() if code in d["courses"]],
@@ -985,10 +1003,10 @@ def build_language(lang):
                 print(f"{'::warning::' if os.environ.get('GITHUB_ACTIONS') else 'WARNING:'} {old_page.relative_to(LIVE)} is on the live site but its reviews are not current ({why}); this build removes it")
     pre = out.relative_to(SITE).as_posix() + "/" if out != SITE else ""
     expected.extend(pre + n for n in ["index.html", ABOUT] + ([PRIVACY] if priv_md else []) + ([concept_cards.APP] if concept_cards.modules(concept_cards.data_lang(lang)) else []) + ([reading_tips.PAGE] if reading_tips.SOURCE.is_file() else []) + [STUDY_PAGE] + [f"{c}.html" for c, _ in modules] + [f"{c}.html" for c in local] + [f"{i}.html" for i in built_ids] + [f"{i}.html" for i in inv_built] + [f"{g}.html" for g in guide_built] + [practice.page_name(c) for c in practice_built] + mixer_built
-                    + [f"{u}.html" for u, ul in unit_pub.items() if ul == lang and not only])
+                    + [f"{u}.html" for u, ls in unit_pub.items() if lang in ls and not only])
     if SITE.name == "site.tmp" and lang in units.languages():   # a unit that lost its reviews leaves the site only with a warning
         for u in units.ids(lang):
-            if u not in unit_pub and (LIVE / out.relative_to(SITE) / f"{u}.html").is_file():
+            if lang not in unit_pub.get(u, ()) and (LIVE / out.relative_to(SITE) / f"{u}.html").is_file():
                 print(f"{'::warning::' if os.environ.get('GITHUB_ACTIONS') else 'WARNING:'} {u}.html is on the live site but its reviews are not current; this build removes it")
     print(f"built {pre or ''}index +", len(modules), "module pages ->", ((LIVE if SITE.name == "site.tmp" else SITE) / pre).relative_to(ROOT),
           f"({sum(m['state'] == 'reviewed' for ms in built.values() for m in ms)} reviewed, {len(legacy_ids)} legacy, "

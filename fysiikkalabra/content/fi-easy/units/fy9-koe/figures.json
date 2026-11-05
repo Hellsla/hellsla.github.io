@@ -1,0 +1,20 @@
+{
+ "Kuvitus: koepöytä ylhäältä vinosti nähtynä. Pöydällä on kannettava tietokone, jonka näytöllä on kuvaaja: mittauspisteet ja niihin sovitettu nouseva suora. Tietokoneen vieressä ovat laskin, ruutuvihko, jossa on lyijykynällä piirretty kappale ja nuolia, lyijykynä ja vesipullo. Seinällä on kello. Kuvassa ei ole tekstiä.": "Kuvitus: koepöytä vinosti ylhäältä. Pöydällä on kannettava tietokone. Sen näytöllä on kuvaaja: mittauspisteet ja niihin sovitettu nouseva suora. Tietokoneen vieressä ovat laskin, ruutuvihko, lyijykynä ja vesipullo. Vihkoon on piirretty lyijykynällä kappale ja nuolia. Seinällä on kello. Kuvassa ei ole tekstiä.",
+ "Kaavio: täydellisen ratkaisun seitsemän vaihetta allekkain numeroituina kortteina. 1 Annettu ja kysytty: suureet yksiköineen. 2 Periaate: laki ja miksi se pätee. 3 Kaava ratkaistuna: kysytty symboleilla. 4 Muunnokset: perusyksiköihin. 5 Sijoitus: luvut yksiköineen. 6 Vastaus: yksikkö ja tarkkuus. 7 Järkevyys: arvio tai vertailu. Korttien välissä on nuolet ylhäältä alas.": "Kaavio: täydellisen ratkaisun seitsemän vaihetta. Vaiheet ovat numeroituja kortteja allekkain. 1 Annettu ja kysytty: suureet yksiköineen. 2 Periaate: laki ja miksi se pätee. 3 Kaava ratkaistuna: kysytty symboleilla. 4 Muunnokset: perusyksiköihin. 5 Sijoitus: luvut yksiköineen. 6 Vastaus: yksikkö ja tarkkuus. 7 Järkevyys: arvio tai vertailu. Korttien välissä on nuolet ylhäältä alas.",
+ "Annettu ja kysytty": "Annettu ja kysytty",
+ "suureet yksiköineen": "suureet yksiköineen",
+ "Periaate": "Periaate",
+ "laki ja miksi se pätee": "laki ja miksi se pätee",
+ "Kaava ratkaistuna": "Kaava ratkaistuna",
+ "kysytty symboleilla": "kysytty symboleilla",
+ "Muunnokset": "Muunnokset",
+ "perusyksiköihin": "perusyksiköihin",
+ "Sijoitus": "Sijoitus",
+ "luvut yksiköineen": "luvut yksiköineen",
+ "Vastaus": "Vastaus",
+ "yksikkö ja tarkkuus": "yksikkö ja tarkkuus",
+ "Järkevyys": "Järkevyys",
+ "arvio tai vertailu": "arvio tai vertailu",
+ "Kuvaaja mittakaavassa: kärryn paikka x metreinä ajan t funktiona sekunteina, keksityt esimerkkiarvot. Seitsemän mittauspistettä ajanhetkillä 0–6 s nousee lähes suoraan. Pisteisiin on sovitettu suora, joka kulkee pisteiden lomitse. Kulmakerroin luetaan suoralta kahdesta kaukana toisistaan olevasta pisteestä, (1,0 s; 1,02 m) ja (5,0 s; 3,50 m), katkoviivakolmion avulla: Δt = 4,0 s ja Δx = 2,48 m, joten kulmakerroin on noin 0,62 m/s.": "Kuvaaja mittakaavassa: kärryn paikka x metreinä ajan t funktiona sekunteina. Arvot ovat keksittyjä esimerkkejä. Seitsemän mittauspistettä ajanhetkillä 0–6 s nousee melkein suoraan. Pisteisiin on sovitettu suora, joka kulkee pisteiden välistä. Kulmakerroin luetaan suoralta kahdesta kaukana toisistaan olevasta pisteestä, (1,0 s; 1,02 m) ja (5,0 s; 3,50 m). Katkoviivakolmio näyttää: Δt = 4,0 s ja Δx = 2,48 m. Kulmakerroin on siis noin 0,62 m/s.",
+ "Kuvaaja: heilahdusjakson neliö T² neliösekunteina langan pituuden L funktiona metreinä. Kuusi mittauspistettä pituuksilla 0,200–0,950 m nousee suoraan. Pisteisiin on sovitettu suora, joka leikkaa pystyakselin hieman origon yläpuolella, noin arvossa 0,06 s². Suoralta on luettu kaksi pistettä katkoviivoin: (0,100 m; 0,46 s²) ja (0,900 m; 3,68 s²). Kulmakerroin on noin 4,03 s²/m.": "Kuvaaja: heilahdusjakson neliö T² neliösekunteina langan pituuden L funktiona metreinä. Kuusi mittauspistettä pituuksilla 0,200–0,950 m nousee suoraan. Pisteisiin on sovitettu suora. Se leikkaa pystyakselin vähän origon yläpuolella, noin arvossa 0,06 s². Suoralta on luettu katkoviivoilla kaksi pistettä: (0,100 m; 0,46 s²) ja (0,900 m; 3,68 s²). Kulmakerroin on noin 4,03 s²/m."
+}
