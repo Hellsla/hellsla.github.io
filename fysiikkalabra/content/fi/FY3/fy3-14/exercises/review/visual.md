@@ -1,18 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 2a315176056af704
+CONTENT-HASH: 501fa6aaa0208bbd
+ROUND: 1
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] solutions.md L2-05 Vastaus — a)-kohta puuttuu Vastaus-osasta, kun taas b) on siellä — ok jos a) on Sijoituksessa; harkitse yhtä lausetta "a) 338 kJ/kg".
-- [Minor] solutions.md L1-07, L2-05 Järkevyys — "21 kJ : 334 kJ/kg" on kunnossa, mutta L3-05 Sijoitus-ketjun luvuilta puuttuu yksikkö (4190 · 0,300 · 40 J − …) — lisää yksiköt tai jätä, jos ketju on tarkoituksella luvuin.
-- [Minor] L3-04 ja L3-05 taulukot — sarakeotsikot (KaTeX) näkyvät 1280 px kuvassa eri kohdassa kuin arvot; sivuston yhteinen taulukkotyyli, ei tämän tehtävän vika.
-- [Minor] solutions.md:198 L3-04 c) — pitkä inline-kaava nousee omaksi laatikokseen, ja "joten" jää yksin riville sen alle; kirjoita c) samaan tapaan kuin a): "c) Jään lämpeneminen on" + display-rivit, ja "joten" seuraavan laatikon eteen samalle riville tai pudota se.
+- [Minor] fy3-14-L1-09 feedback 1 vs solutions.md — feedback gives $18\,900\,\text{J}$, the solution $18\,855\,\text{J}$; use the same figure ($18\,855\,\text{J} \approx 19\,\text{kJ}$).
+- [Minor] for science: $Q_\text{v} = c_\text{v} m_\text{v} T_\text{v}$ uses the temperature $T_\text{v}$ as the drop to 0 °C; the chapter's notation may want $\Delta T$ (teaching point, not presentation).
+- [Minor] L1-09 stem — "(esimerkkiarvot)" sits mid-sentence after the ice temperature; move it to the sentence start ("Esimerkkiarvoilla: …").
+- [Minor] Statement list order is fixed (T F T T F); a student who gets two right can guess the pattern — consider reordering (pedagogy).
 
 ## Checked
-- Round 3 (delta): L3-04 Sijoitus rivitetty display-`aligned`-riveiksi.
-- review/shots/fy3-14-open-exercises-L3-1280-6.png, -7.png (otettu commitin 6018cf733 jälkeen): "Ensin … = 3,95, joten" ja "= 4,45, joten" yhdellä rivillä; s_1-, s_2- ja s_2'-ketjut yksi =-askel riviä kohden, murtoviivat ja yksiköt siistit, ei ylivuotoa eikä punaista lähdettä. Vastaus ja Järkevyys ennallaan.
-- 360 px: tehtävistä ei ole 360 px kaappauksia; deterministinen layout 360 px -tarkistus on ok, ja levein uusi rivi (s_2':n ensimmäinen murtolauseke) on noin 25 merkkiä.
+- Method: the packet's contact sheets and shots/ folder were not present in the worktree, so I rendered the new task myself with Playwright chromium at 390 px from preview/FYID.html, with solution, hints and feedback open (screenshots opened in three to four segments each). Text-only checks are named as such.
+- Opened fy3-14-L1-09 at 390 px in three segments: stem, five statements with Tosi/Epätosi buttons and their feedback cards, answer line, Annettu/Kysytty/Periaate, the stacked Mallivastaus rows. No overflow (scrollWidth 390), all formulas fit, fractions \tfrac readable, Q_v/Q_j subscripts clear.
+- Form check (text): statements are all of similar length; the false ones are not marked by hedging. Statements 2 and 5 catch the chapter's warned mistakes (compare masses, average temperatures). Within scope.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

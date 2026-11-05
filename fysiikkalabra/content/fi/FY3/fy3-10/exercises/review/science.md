@@ -1,23 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 00b576af999c02d9
-Round: 2
+CONTENT-HASH: 67c156379d17e0ac
+Round: 1
 
 ## Blocking
 (none)
 
 ## Polish
-- L3-04 b and L2-05 b teach the same point: a pressure change alone does not show how much gas left when the temperature changed. L3-03 is also a Δn tank task. For a distinct level 3, make c) (the balloon count, or the end limit at 101 kPa) the boxed result, or say in the plan line that L3-04 builds on L2-05.
-- solutions.md:184 (L3-04 Vastaus a) — $n_3 = 5{,}32$ mol has three digits, but $p_3 = 6{,}5$ bar has two. Write 5,3 mol, or say that it is an intermediate value.
-- solutions.md (L3-04 Järkevyys) — "Yksi litra ilmaa … 0,041 mol": say "kaasua", since the gas is helium.
-- L3-04 — a real cylinder gauge shows overpressure. The task says "kokonaispaine", so the data are consistent, but adding "(mittari on kalibroitu kokonaispaineelle)" or using 15,2 / 12,0 / 7,5 bar as gauge readings would make the setup realistic.
+- exercises.json:297 (L2-08 text) — $V = 2{,}0\,\textsf{l}$ has two significant figures, so a careful student may call row 3's "$T \approx 301\,\text{K}$" (three) a fault, which weakens "exactly one wrong row". Give $V = 2{,}00\,\textsf{l}$ (row 1 then $0{,}00200\,\text{m}^3$).
+- exercises.json:321 and :326 (feedback D, "ei virhettä") — "koska pullossa on huoneenlämpöistä ilmaa" / "ei sovi suljettuun pulloon": the task never says the air is at room temperature. Either state it in the task or phrase the check as "574 °C olisi uunin lämpötila, ei tavallisen pullon".
+- The task does not exercise the lesson's other warned mistakes (mixed kPa/m³ units, heavy gas); row 1 touches units only as a correct line. Optional.
 
 ## Checked
-- Round-1 Blocking (L3-04 CO₂ Z table) resolved: the task has been replaced by a helium cylinder task. The plan line in docs/exercise-bank/FY3.md is updated to match.
-- New L3-04 recomputed: n₁ = 12,29, n₂ = 9,000, n₃ = 5,318 mol; m = 27,87 g → 28 g (answers.py agrees); one balloon is 0,2066 mol; 33,7 balloons used (15,9 + 17,8); 21,7 more down to 101 kPa, so "21 täyttä" is right; the pressure-difference shortcut gives 25,2 g, too small for the reason stated. The model assumptions are stated, and the task is level 3 YO style.
-- Round-1 Polish resolved: L1-07 is 2,3 l (2,314 l intermediate, answer 2.3); L3-05 now gives the ICAO-rounding reason; L2-05 uses a realistic 300 kPa total pressure.
-- L2-05 (new numbers): 322,6 kPa without a leak and a leaked share of 5,47 % → 5,5 %.
-- L2-06: least-squares fit 0,408 cm³/K + 1,1 cm³; the line values 115,4 and 148,0 cm³ match; n = 4,95 mmol → 5,0 mmol.
-- L2-07 (new B volumes): pV is 244 (A) and 304,5–306 (B); exactly one correct option, and its feedback says 305.
-- L3-05 c: the linear estimate gives 12,8 km. "Todellinen raja hieman korkeammalla" is right: V(h) is convex, and the ICAO profile gives about 13,3 km.
-- All 20 answers recomputed in one script; they agree.
-- Hash unchanged at the start and the end.
+- New task L2-08 (virheen löytäminen), recomputed: pV = 200 J, nR = 0,6648 J/K, T = 300,8 K ≈ 301 K; θ = 27,7 °C ≈ 28 °C (273,15 or 273 gives 28); the wrong row gives 573,8 ≈ 574 °C.
+- Rows 1–3 really correct (100 kPa = 10⁵ Pa, 2,0 l = 0,0020 m³, T = pV/(nR)); row 4 is the only error; "Laskussa ei ole virhettä" last, as docs/exercise-types.md asks.
+- Each feedback's physics right; "200 J" for the numerator is the right unit (Pa·m³ = J), and the reason that T is already in kelvins (R's unit) is right.
+- Row 4 is the lesson's warned Celsius/Kelvin confusion; option texts of similar length and form.
+- Notation as in the brief ($pV = nRT$, $R = 8{,}31$, $\theta$, rigid closed bottle = fixed n and V).
+- Renders: L2 screenshot 12 at 1280 px (options, solution). Phone width judged from text: the longest inline chain (row 3) is a displayed fraction plus "≈ 301 K", about 260 px.
+- answers.py and other tasks unchanged since the previous PASS; hash identical at start and end.

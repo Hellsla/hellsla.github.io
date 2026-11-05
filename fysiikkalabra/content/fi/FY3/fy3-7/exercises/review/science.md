@@ -1,18 +1,21 @@
-VERDICT: PASS
-CONTENT-HASH: 6adc73b630c26584
-Round: 3
+VERDICT: FAIL
+CONTENT-HASH: 81ec0d4c8cbaa96e
+Round: 1 (YO-skill task)
 
-Round 3 checks the last commit (`git show HEAD -- content/fi/FY3`), which touches only fy3-7 L2-05 (tolerance and Vastaus line); the rest is covered by the round-2 PASS.
+Scope: the new task L2-08 (ordering, added 2026-11-05). The rest of the set and answers.py are unchanged since the round-3 PASS.
 
 ## Blocking
-- none
+- solutions.md L2-08 Mallivastaus, "Massan mukaan järjestys olisi täsmälleen päinvastainen". This is false (A). By mass, from largest to smallest, the order is teekannu 1,0, kattila 0,60, jääpussi 0,50, kiehuva vesi 0,10 kg. The answer's reverse is teekannu, jääpussi, kattila, kiehuva vesi. The jääpussi and kattila places differ. — Fix: "Massan mukaan (suurimmasta pienimpään: teekannu, kattila, jääpussi, kiehuva vesi) järjestys olisi lähes päinvastainen, joten massa ei ratkaise."
+- solutions.md L2-08 Kattila: "$\ldots = 201\,000\,\text{J} \approx 201\,\text{kJ}$". The product is 201 120 J, so the "=" is wrong (A). — Fix: "$= 201\,120\,\text{J} \approx 201\,\text{kJ}$".
 
 ## Polish
-- none
+- solutions.md L2-08 Periaate, "olomuodon muutoksen kerroin". This is vague. Fix: "ominaissulamis- tai ominaishöyrystymislämpö $s$ tai $r$".
+- solutions.md L2-08 Mallivastaus: the four inline chains are about 400–430 px wide at 1280 px (Teekannu, Kattila), more than the 300 px phone budget, so they will wrap mid-chain. Fix: one aligned display block, or split each at "=".
 
 ## Checked
-- Arithmetic: s = 600 W · 139 s / 0,250 kg = 333 600 J/kg, so 334 kJ/kg. 334 · 0,95 = 317,3 kJ/kg, so the accepted range is 317,3..350,7 kJ/kg. The naive table-row reading 600 · 130 / 0,250 = 312 kJ/kg is 6,6 % low and is now rejected, as the Vastaus says ("liian pieni").
-- Careful readings still pass: Δt = 137..141 s gives 328,8..338,4 kJ/kg, and even Δt = 133 s gives 319,2. Only Δt below about 132,2 s fails.
-- Tolerance 0,05 in exercises.json, "±5 %" in the Vastaus line, and the answer 334 kJ/kg agree with the task text (hint to estimate start and end from the slopes) and with the solution (18 s, 157 s, 139 s). The lesson-level answers.py is not used by the exercise set; the exercise answer is in exercises.json.
-- Physics unchanged: slopes 1,14 K/s and 0,575 K/s agree with P/(cm).
+- My own script gives 83,8 / 167 / 201,1 / 226 kJ, so the order is teekannu < jääpussi < kattila < kiehuva vesi, as `order` says. The order holds over the rounding range of the two-figure masses: 0,10 kg gives at least 215 kJ against at most 203 kJ for the kattila.
+- The conditions are given in the task: s, r and c, the states, and 100 °C for the evaporation. The kattila only heats to 100 °C and does not evaporate. Q = sm and rm have no ΔT, as the lesson says.
+- The items target the lesson's warned mistake that a change of state with no rise in temperature needs little energy. The jääpussi needs 2× the teekannu, and the evaporation is the largest item.
+- The task is within fy3-6 and fy3-7.
+- Renders: I viewed review/shots/fy3-7-open-exercises-L2-1280-11.png (after the commit). The prompt, the shuffled items and the solution render. I judged the phone width from that image's scale, not from a 390 px shot.
 - The hash was the same at the start and at the end.

@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 42492e47d1fafc99
-Round: 3
-
-Round 3 checks the last commit (`git show HEAD -- content/fi/FY3`), which touches only the fy3-4 L3-05 Järkevyys line; the rest is covered by the round-2 PASS.
-
+CONTENT-HASH: 7aab3f782db93840
 ## Blocking
-- none
-
+(none)
 ## Polish
-- fy3-4-L3-05: the answer field takes F4 only; F1 and the 1:3:5:7 ratio carry the part d) reasoning but are not checked. Acceptable (carried over).
-
+- exercises.json (fy3-4-L1-09, 10^6 feedback) — "kilometri on muunnettu metreiksi kymmenen kertaa liian pieneksi" is a slightly artificial slip; simpler: "Tämä vastaa noin 100 m:n syvyyttä, kymmenesosaa annetusta."
+- "Suuruusluokka" is not defined in the stem; the solution defines it (nearest power of ten). A half sentence in the stem would help.
+- The distractors do not test the chapter's warned mistakes (vesimäärä, voima vs paine, ilmanpaine); only 10^5 touches atmosphere. They do catch the real magnitude slips for this task.
 ## Checked
-- The ≈ in the L3-05 Järkevyys is the right sign for a check made with rounded kN values, and it models for students that a rounded product is compared approximately. It matches the task text, Vastaus and the answer 858,4 kN; the solution structure is unchanged and complete.
-- Nothing else changed since the round-2 PASS (counts 8/7/5, levels, no duplicates).
+- Type 5: the options are 10^5 to 10^8, shuffled on the page, so the correct one is not the middle or longest; each feedback names the depth or slip it corresponds to.
+- 9,81 · 10^6 Pa rounds to 10^7; the chapter summary (about 1 atm per 10 m) lets a student estimate without a calculator.
+- Solution converts km, calculates, rounds and gives the estimate route; formula chain in feedback (ρgh ≈ ... ≈ 9,8 · 10^6 Pa) wraps at ≈ (text judgement).
+- Within FY3-4 scope; situation first, question last; Finnish fine.
+- Renders: the 1280 px open-solution captures of the new task (shuffled option order, feedback after a wrong try, solution block) were opened. The 390 px fit of inline chains was judged from text only (no phone capture of the exercises exists); each inline chain is short or breaks at = or ·.

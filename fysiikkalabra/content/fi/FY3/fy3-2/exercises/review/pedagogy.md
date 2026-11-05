@@ -1,25 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 881c48cc15dadf41
-Round: 4
-Mode: delta
-
+CONTENT-HASH: ea1ce6ceaffe60d0
 ## Blocking
-
+(none)
 ## Polish
-- exercises.json fy3-2-L3-05 d) — "tehon ja ajan 8,0 s tulona saatuun työhön" is a little heavy; "vertaa sitä tuloon $P t$, kun $t = 8{,}0\,\text{s}$" reads more easily.
-- exercises.json fy3-2-L1-08 — the 500 kg and the height are now explained as irrelevant in the model answer; consider dropping the numbers from the task, optional.
-- solutions.md — the Kaava lines now use "0,5 ·" instead of 1/2; consistent, but the lesson's own notation should be checked to match.
-
+- exercises.json (fy3-2-L2-08) — the stem says "voima kasvaa tasaisesti nollasta" but never says the work is read from the (s,F) graph; fine, since the lesson teaches it, but the first-stage options (2 W1, 3 W1) give no hint that a graph is needed; no change required.
+- The distractors do not touch the chapter's warned mistakes (työ vs ponnistelu, työ vs teho); they catch the chapter's central mistake (W = Fs with a varying force), which is more relevant to this task.
 ## Checked
-- Round-1 Polish carried and fixed: L3-05 d) is no longer circular (P t = 28,8 kJ against m g h = 28,7 kJ for the last table point, 8,0 s and 6,5 m); b) is reworded to the constant-speed argument of the W = m g h derivation, so Newton's first law is no longer used; L3-04 now states why the work is a triangle; L2-07 has a written Mallivastaus (mass 40 used as force, W approx 590 J); L1-08 explains the unused numbers.
-- Recomputed: 55,3 J, 230 W, 590 J, 25 cm, 3,6 kW, 1,5 m/s; match answers and tolerances.
-- MC correct positions shuffled (L1-06 third, L1-08 fourth), new distractors in L1-06 and L1-08 are real misconceptions with repairing feedback.
-- Typographic quotes in L2-07 fixed; the long solutions are split into aligned blocks.
-- Set 8/7/5; no duplicate of the worked example; levels fit the plan.
-- Hash unchanged at the end.
-
-## Checked in round 3
-- Delta (HEAD): only the line breaks of aligned model-solution rows changed (long row split into "..." and "&= result"). The step order, reasoning, numbers and wording are unchanged; the shorter rows read more easily on a phone, the "&=" continuation sits under the first "=". No learning-related change.
-
-## Checked in round 4
-- Delta (HEAD~3..HEAD, solutions.md display maths only): Only line breaks of the aligned trapezoid rows changed; step order, reasoning, numbers and wording are the same. A product broken before "\cdot" and a sum broken before "+" read naturally and are easier to follow on a phone. No learning-related change.
+- Two-stage task (answer + reason): the reasons are a wrong-idea reason (W = Fs) and two true statements that do not explain the answer; the correct reason is not the only hedged or the longest (the W = Fs reason is longest).
+- 3 W1 is a real error (only the second part, 3,0 J); 2 W1 is the constant-force error; arithmetic checked: 1,0 J, 4,0 J.
+- Within what FY3-2 teaches (area under (s,F) for a varying force); no Hooke's law constant needed.
+- Solution explains both distractors and the area ratio 2 · 2 = 4; formulas short, no chain over 300 px.
+- Situation first, question last; Finnish fine.
+- Renders: the 1280 px open-solution captures of the new task (shuffled option order, feedback after a wrong try, solution block) were opened. The 390 px fit of inline chains was judged from text only (no phone capture of the exercises exists); each inline chain is short or breaks at = or ·.

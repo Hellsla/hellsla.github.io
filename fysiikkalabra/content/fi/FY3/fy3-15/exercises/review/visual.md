@@ -1,17 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 379dfaed9bef0431
+CONTENT-HASH: 5c27ead8d6e6759b
+ROUND: 1
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] solutions `fy3-15-L2-05` Sijoitus — the sentence "Sähköhyötysuhteet ovat [chain] (2021), … (2023). Kokonaishyötysuhteet ovat …" is broken up by the inline chains, with "(2021)," left dangling after the box (L2-1280-6) — put the years in one aligned block (`\eta_\text{s,2021} = \tfrac{840}{2400} = 35{,}0\,\%`, …).
-- [Minor] solutions `fy3-15-L3-05` — "Kuvaajan lukeminen" heads a table reading, rename "Taulukon lukeminen"; the answers to c) and d) are only inside Järkevyys with no label, add "Mallivastaus c) ja d)" as the other chapters do; Vastaus shows $1720\,\text{MW}$ beside the chain's $1716\,\text{MW}$ and answer key — write "$1716\,\text{MW} \approx 1720\,\text{MW}$".
-- [Minor] solutions `fy3-15-L2-07` — the explanation for a) (why summing is wrong) sits in Järkevyys only; add a "Mallivastaus a)" block. `L2-06` Vastaus continues "(ydinvoimala), kolme merkitsevää…" after the box; reword "Suurin teho on ydinvoimalalla: …".
-- [Minor] `fy3-15-L3-04` solutions — subscript $\text{CHP}$ is an English abbreviation in Finnish text; use $\text{yt}$ (yhteistuotanto), as the glossary term.
+- [Minor] fy3-15-L1-09 correct feedback and solutions.md Järkevyys — "noin $42\,\%$ polttoaineteholla $1200\,\text{MW}$" is wrong case, and "kuten lauhdutinhäviöltä odottaa" is unclear — "noin $42\,\%$ polttoaineteosta $1200\,\text{MW}$, mikä on uskottava osuus lauhduttimen kautta menevälle lämmölle".
+- [Minor] solutions.md Mallivastaus — $P_\text{L} = 5{,}0 \cdot 10^8\,\text{W} = 500\,\text{MW}$ is rounded (4190 · 12000 · 10 = 5,03 · 10^8), feedback uses \approx; write \approx.
+- [Minor] solutions.md Periaate — "massavirta (kg/s)" is a plain-text unit; set $(\text{kg/s})$ as maths.
+- [Minor] Distractors 0,5 MW and 50 MW remain plausible only by the stem figure 1200 MW; fine, but the feedback of 15 000 MW names the elimination, so it gives the elimination technique away early.
 
 ## Checked
-- 1280 px captures with solutions open: open-exercises-1280-7 to -9 (L1-06, L1-07, L1-08), L2-1280-5 to -10 (L2-05 table, L2-06 table, L2-07 error task), L3-1280-4 to -9 (L3-04 text and solution, L3-05 table, solution, Järkevyys). No 360 px exercise captures exist; check_layout 360 px is clean per the packet.
-- All eight new tasks' arithmetic checked against solutions (34,0 %, 12,0 GWh, 90,0 %, 1560 MW, 36,6 %, 132 MW, 1716 MW); no plain quantities in new text; scope fits the lesson. Hash unchanged at the end.
+- Method: the packet's contact sheets and shots/ folder were not present in the worktree, so I rendered the new task myself with Playwright chromium at 390 px from preview/FYID.html, with solution, hints and feedback open (screenshots opened in three to four segments each). Text-only checks are named as such.
+- Opened fy3-15-L1-09 at 390 px in three segments: stem, four options (shuffled, geometric spread), all four feedback cards, answer, Annettu/Kysytty/Periaate and the Mallivastaus rows with stacked fractions. No overflow (scrollWidth 390); \dfrac{V}{t}, \tfrac units and 10^8 are legible; each feedback chain fits.
+- Form check (text): the correct option is not the longest or the only hedged one; the values differ by factors of ten, so form does not reveal it. Distractors catch the unit-conversion, density and K-versus-°C mistakes. Within scope. Text only: that 12 000 kg/s · 4190 · 10 K gives these values (for science).
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

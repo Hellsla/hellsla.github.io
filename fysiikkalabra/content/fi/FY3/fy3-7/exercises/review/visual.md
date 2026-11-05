@@ -1,21 +1,18 @@
-VERDICT: PASS
-CONTENT-HASH: 6adc73b630c26584
-ROUND: 3
-
-Round 3 checks the last commit (`git show HEAD -- content/fi/FY3`), which touches only fy3-7 L2-05 (tolerance and Vastaus line); the rest is covered by the round-2 PASS.
+VERDICT: FAIL
+CONTENT-HASH: 81ec0d4c8cbaa96e
 
 ## Blocking
-(none)
+- [Major] fy3-7-L2-08, Mallivastaus (390 px render) — the Teekannu and Kattila chains `Q = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 1{,}0\,\text{kg} \cdot 20\,\text{K} = 83\,800\,\text{J} \approx 84\,\text{kJ}` (and the Kattila one) run past the box: they stop at "= 83 8" and "= 20", so the results and units are not visible — the solution's key numbers are unreadable on a phone and the chain-width rule is broken — break each at "=" onto a second line, or give the result on its own line after the substitution.
+- [Major] fy3-7-L2-08, task text — the four items are listed Teekannu, Jääpussi, Kattila, Kiehuva vesi, which is exactly the correct ascending order (the select widget is shuffled, the text is not) — the answer is identifiable by form — list them in another order (for example Kattila, Kiehuva vesi, Teekannu, Jääpussi) and change the "Oikea sija" data and model answer accordingly if they depend on the text order.
 
 ## Polish
-- [Minor] The round-2 polish on L2-05 (tolerance accepting 312 kJ/kg) is resolved: 0,05 gives 317,3..350,7 and the Vastaus says ±5 %.
-- [Minor] Stearin Mallivastaus c): "4190 · 35,0 J = 146 650 J" and "2 406 650 J" lack units on the factors (carried over, verify).
-- [Minor] Data tables: header and number alignment (site-wide; carried over).
-- [Minor] Answer-field wording "Vastauslaatikkoon" vs "Vastauskenttään" in fy3-4 (site-wide; carried over).
+- [Minor] Model answer: "Jään sulaminen vaatii vähemmän kuin kattilallisen lämmittäminen ... joten olomuodon muutos ei aina ole suurin menoerä" is fine; the final "Arvio:" sentence is long, could be split after "paljon".
+- [Minor] The order select shows "Sija" with 1-4; the feedback "Oikea sija: 2" is clear; no change.
 
 ## Checked
-- Diff HEAD read: one number in exercises.json (0.05) and "\pm 5\,\%" in solutions.md, valid LaTeX with the thin space as elsewhere; no layout impact. No plain-text quantity in the changed text.
-- No new capture; one-character change.
+- Own render at 390 px (preview/fy3-7.html), L2-08 with all four ranks set correctly, "Vastaa" pressed, hidden parts unhidden, solution open; read in four tiles: task rows, four selects with "Oikea sija", saved-answer, Kysytty/Periaate/Mallivastaus.
+- The task's fractions of units (`\tfrac{kJ}{kg}`) render well in prose; no overflow of the page (scrollWidth 390).
+- From text only: other changed tasks (paragraph splits), distractor logic (mass-order and phase-change-biggest misconceptions are addressed in the solution).
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 3 · Finnish 4 · accessibility 4

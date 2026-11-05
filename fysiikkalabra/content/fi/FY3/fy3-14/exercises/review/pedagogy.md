@@ -1,17 +1,15 @@
-VERDICT: PASS
-CONTENT-HASH: 2a315176056af704
+VERDICT: FAIL
+CONTENT-HASH: 501fa6aaa0208bbd
 
 ## Blocking
+- exercises.json:119 fy3-14-L1-09 — level 1 is "one formula or one step of reasoning" (CLAUDE.md "Exercise levels"), but this task needs two calculations ($Q_\text{v}$ and $Q_\text{j}$), a comparison and a conclusion about what remains; that is level 2, and the level-1 set is already about 9 tasks — move it to level 2 (id fy3-14-L2-08, in the level2 list, and rename its heading in solutions.md) or cut it to one step (give $Q_\text{v}$ and $Q_\text{j}$ in the task and ask only which statements follow).
 
 ## Polish
-- exercises.json L3-04, mittaus 1 — now 0,200 kg, 30,0 °C, 0,0500 kg, 8,2 °C, which is the L2-04 task (8,1 °C) with one digit moved; the L3 task still repeats an L2 measurement. Change the water to e.g. 0,250 kg / 25,0 °C and T = 7,0 °C (recompute s_1 and the solution) so the set has no near-duplicate.
-- L2-05 a) — "Piirrä kuvaaja ja vedä suora" still comes with the two points the line passes through, so the drawing is only a check; drop the points and let the student read (300 s; 133 g), or drop "piirrä".
-- solutions.md L3-05 Vastaus a) — the new parenthesis about "rajatapaus, jossa kaikki jää juuri suli" is confusing next to the plain answer; delete it (c) already shows the rows lie below 29 °C).
-- L2-05 solution Vastaus — the sentence about room heat melting extra ice is correct but sits after the main answer; move it to a separate "Virhelähteet" line so the b) answer stays one sentence.
-- solutions.md:188, 194 L3-04 — "Ensin … = 3,95" gives a bare number; optionally name it ("Ensin sulkulauseke: …") so the student sees where 3,95 comes from in the Kaava.
+- Statements 1 and 3 state both heats and statement 4 states the conclusion, so the comparison and the answer are shown to the student; drop the numbers from statements 1 and 3 (e.g. "Vesi voi luovuttaa enemmän lämpöä kuin jään sulattaminen vaatii.").
+- Only the false statement 2 gives a "koska" reason, a mild form cue; give a true statement a reason too.
+- The task is close to the lesson's misconception example (0,30 kg water, 0,10 kg ice, 25,1 and 33,4 kJ); change the structure (e.g. ice at −5 °C or all ice melting) if it stays in the set.
 
 ## Checked
-- Round 3 (delta): L3-04 Sijoitus now computes the bracket first in a short inline formula ("Ensin … = 3,95, joten") and then s_1, s_2 and s_2' as one-step-per-row display chains. Reads naturally; the order (bracket → fraction → J/kg → kJ/kg) matches how a student would work it.
-- Values unchanged (3,95; 4,45; 331; 373 kJ/kg; s_2' = 335 100 J/kg); Vastaus and Järkevyys untouched, so a), b), c) still follow the task parts.
-- Phone usability: no 360 px exercise capture exists; the layout 360 px check passes and the widest new row (s_2' first fraction) is about 250 px at 1280 px in open-exercises-L3-1280-7, well inside a phone column.
-- Earlier Polish carried over unchanged (still open in exercises.json and solutions.md).
+- Numbers verified: 18,9 kJ, 26,7 kJ, 56 g melted, 24 g left. Statement 5 catches the chapter's "keskiarvo" and statement 2 the "massojen vertailu" idea; each feedback gives its reason.
+- Solution: both Q's, comparison, then each statement in turn. Within fy3-14.
+- Text only: no 390 px capture; the longest chain (Q_v with units, about 230 px by estimate) fits 300 px.

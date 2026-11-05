@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 56d94f2d09a1fcbc
+CONTENT-HASH: 760578538cb329ae
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] solutions.md L2-06 Vastaus — kohdat esitetään järjestyksessä b), a), c) — järjestä a), b), c). Carried over.
-- [Minor] solutions.md L2-05 ja L3-04 Vastaus — mallivastaukset ovat pitkiä kappaleita — jaa kohdittain omille riveilleen. Carried over.
-- [Minor] L3-04 taulukko — "-32" tavuviivalla — käytä miinusmerkkiä (−32). Carried over.
-- [Minor] L2-05, L2-06 — vastauslaatikon yksikkö "10⁻⁶ 1/K" tavallista tekstiä — pidä, jos laatikko ei tue matematiikkaa.
+- [Minor] fy3-8-L2-08 Arvio — "Kolminkertainen muutos jäisi saamatta vain, jos sauvat olisivat yhtä pitkiä." is awkward; "Kolminkertainen muutos saataisiin vain, jos sauvat olisivat yhtä pitkiä."
+- [Minor] Correct option is a little longer than the others ("Kasvaa: ... on 1,5 kertaa") but the difference is small and the options share the same pattern; the distractors catch the warned mistakes (only ΔT, only L, constant). No change needed.
+- [Minor] Feedback of "Pysyy samana": "Aine määrää vain kertoimen α" — good; keep.
 
 ## Checked
-- Round 3 (delta, text-only). L2-06 Vastaus a): the garbled clause is gone and the sentence now reads cleanly in Finnish; no layout change, the answer paragraph is slightly shorter. No new captures taken; round-2 captures of the L2-06 solution (L2-1280-8) still apply.
+- Own render at 390 px (preview/fy3-8.html), L2-08 with the correct option picked, all four feedback boxes unhidden, solution open; read in four tiles: task, four options with feedback, Kysytty/Periaate/Mallivastaus with the ratio fraction.
+- The `\dfrac` ratio, all inline `\Delta L_\text{B}/\Delta L_\text{A} = 0{,}5 \cdot 3 = 1{,}5` chains and units fit 390 px; no clipping, scrollWidth 390.
+- From text only: paragraph splits of the changed tasks; the 0,5 mm and 0,7 mm estimate agrees with 12·10^-6.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

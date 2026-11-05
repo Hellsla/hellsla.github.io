@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 652c6d5613fc0f41
-Round: 2
-
+CONTENT-HASH: 3dd71e954a48a7f8
 ## Blocking
-- none
-
+(none)
 ## Polish
-- fy3-6-L2-05 and L3-04 use almost the same set-up (calorimeter, resistor, 0,50 kg, one reading per minute) and L2-02 is a third heating line. The plan asks for both and L3-04 adds curvature and losses, so keep them; consider a different mass or power in L2-05 against pattern-matching (carried over).
-- fy3-6-L2-07 overlaps the last sentence of existing L2-04; fine as an error-analysis task. In a), the model answer could state the criterion: the average is right only if the heat capacities c·m are equal (carried over).
-- fy3-6-L1-08: a) (C = 540 J/K) is not checked in the field; acceptable for level 1 (carried over).
-
+- exercises.json:262 — feedback of "Laskussa ei ole virhettä" names the wrong line ("virhe rivillä 4"), so a second try is a copy; say only "Laskussa on virhe: tarkista, mitä tulos kertoo energian suunnasta".
+- exercises.json:234 — row 3 "Q = 450 · 3,0 · (-180)" has no units in the substitution; add \text{J/(kg·K)}, kg and K (the lesson habit), or say the units are left out on purpose.
+- Row 4 is the only prose line and the one with a bold claim, which helps a student spot it by form; acceptable at level 2, but a subtler wording ("Q on negatiivinen, joten levy vastaanottaa energiaa") would test the sign more.
 ## Checked
-- Round 1 Polish applied: the "2 %" in the c-determination answer is now "noin 1 %" and agrees with the energy balance; L1-06 options shortened so the correct one is no longer the longest, the "heijastaa kokonaan" absurdity softened, and a density distractor added with repairing feedback; the solution mentions the density option; the L2-06 sanity check no longer relies on a recalled value; Muunnokset/Sijoitus now carry units; L3-04 states room temperature 20 °C and uses "muutaman prosentin"; L3-05 answer discusses significant figures and the 0,1 °C reading precision.
-- Recomputed: 78 K, 32,4 kJ, 4138 and 2083 J/(kg K), 22,84 °C, 81,3 W, k = 0,599 W/K (others 0,58..0,61); all match.
-- Counts 8/7/5; complete solutions; L3-04/05 genuine level 3; no duplicates; levels fit.
+- Type 4: arithmetic of rows 1-3 checked (1350 · 180 = 243 000); exactly one line wrong, last option last.
+- The row 1 distractor catches the chapter's own warned mistake (adding 273 to ΔT); rows 2 and 3 catch "own cooling formula" and "minus sign is a slip".
+- Within FY3-6: negative Q and the sign convention are known from FY3-5.
+- Inline lines in the stem are short (each under about 200 px); solution reads step by step in the 1280 capture.
+- Finnish fine; the question is the last sentence.
+- Renders: the 1280 px open-solution captures of the new task (shuffled option order, feedback after a wrong try, solution block) were opened. The 390 px fit of inline chains was judged from text only (no phone capture of the exercises exists); each inline chain is short or breaks at = or ·.

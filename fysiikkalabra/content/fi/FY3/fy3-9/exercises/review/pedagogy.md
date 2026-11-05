@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 757be2ef1f647d60
+CONTENT-HASH: fb4c9e7694ba0259
 
 ## Blocking
 - none
 
 ## Polish
-- L1-07 — still a third direct Boyle calculation after L1-01 and L1-02; give it a unit step (bar and ml) or a sketch-reading element. Carried over.
-- L2-05 / L2-07 — both heat a closed vessel and read p(theta); acceptable. Carried over.
+- exercises.json fy3-9-L2-08, option D feedback — "paine pienenee tilavuuden mukana" is ambiguous (the graph shows p rising with V) — "Tässä paine pienenee, kun tilavuus pienenee, ikään kuin $p$ olisi suoraan verrannollinen tilavuuteen $V$."
 
 ## Checked
-- Round 3. L2-05 a) now reads "…ja perustele, miksi lämpötilan on oltava kelvineinä." Clear task; the caption "astiassa A / astiassa B" matches the text, so the student is not confused by two names for the vessels.
-- The deduction (isokoorinen vs isobaarinen) rests on the ratios, as intended; the solution Periaate and Mallivastaus a) fit the task, including the Celsius comparison that answers the "miksi kelvineinä" part.
-- L3-05 Mallivastaus c): the author's note is deleted; the answer ends on the inverse-ratio statement (Boylen laki), which is a proper model answer.
-- Counts 8/7/5, scope and the rest of the set unchanged since round 2.
+- L2-08 (kuvaajan valinta, new): situation first, question last; the four graphs share the end points (40 ml; 100 kPa) and (10 ml; 400 kPa) for A and B, so only the 20 ml reading separates them. That is the lesson's misconception ("kääntäen verrannollisuus ei ole laskeva suora"), and A is that error.
+- Figures A–D legible in the 1280 px render, labelled axes, grid; the options are shuffled and the letters stay with their figures. No form cue to the correct one; each feedback names its confusion.
+- Solution: principle (isothermal, closed, pV constant), p at 20 and 10 ml, why each wrong graph is wrong, how to read it. Within fy3-9; level 2 fits (two readings plus a model). The old set is unchanged.
+- From the render: L2-08 question, options, feedback, solution at 1280 px. Text only: phone width (no 390 px exercise capture; the solution has only short lines, no long chain).

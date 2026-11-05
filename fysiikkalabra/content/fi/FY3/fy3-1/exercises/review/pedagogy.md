@@ -1,20 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: aee75e10fdf5cfc4
-Round: 2
-
+CONTENT-HASH: e2152bc8e282da0b
 ## Blocking
-
+(none)
 ## Polish
-- exercises.json fy3-1-L1-08 — the unit conversion (0,18 t) removes the plain repeat of the worked example, but the task is still close to L1-03/L1-05 (mass x g on another body); acceptable at level 1.
-- solutions.md fy3-1-L2-06 — the Kuu weight is a distractor and the solution now says it is not needed; consider asking g_Kuu as part b) later, optional.
-- solutions.md fy3-1-L3-04 — the heading "Taulukon lukeminen" is now correct (graph kind dropped); the plan's "graph" item for level 3 is covered by L2-05 only, which is enough.
-- exercises.json fy3-1-L2-05 — "Kuvaajan lukeminen" refers to a drawn line the student must draw alone; fine, but the task text could say "Piirrä suora" explicitly if it does not.
-
+- exercises.json:141 — option C feedback ("pitääkseen kappaleen ylhäällä") quietly uses equilibrium reasoning, which is FY4 — argue only from the reading: "mittari näyttää 4,9 N, joten F = 4,9 N, saman kuin G".
+- exercises.json:117 — the stem defines F as acting on the body and F_k as acting on the meter, so A and D can be dropped by reading alone and only C needs the calculation; acceptable at level 1, but say so in the solution ("tehtävän selitys jo kertoo...") or leave F_k undefined.
+- The new task's distractors (missing F, F too long, extra F_k) do not touch the chapter's own warned mistake (massa/paino, "voimamittari näyttää massan"); that is carried by L1-06, L2-07 and L3-03, so only noted.
 ## Checked
-- Round-1 Blocking (L2-07 a) "viidesosa" claim) is resolved: the model answer now says the mass is about a tenth of 4,9 (0,4995 kg), which is true and supports the claim.
-- Round-1 Polish carried and fixed: L2-05 slope read from the drawn line (4,90 N / 0,50 kg = 9,8), L1-06 feedback wording, L2-06 Kuu row explained, L3-04 and L3-05 tell where the other parts are checked, L1-08 changed.
-- MC correct positions are now shuffled (L1-06 third, L1-07 fourth); distractors keep their own feedback.
-- Recomputed: 670 N, 9,8, 3,7, 0,50 kg, 3,6 m/s² (Mars, 3 % off), 682 kg (935 kg; 1617 - 935); all match answers and tolerances.
-- L3-05 solution display math (aligned block) renders cleanly in the 1280 px L3 capture, nothing clipped; no 360 px exercise capture was in the packet.
-- No Newton's laws used; set is 8/7/5 and the levels fit the plan.
-- Hash unchanged at the end.
+- L1-09 (3 Voimakuvion valinta) stays level 1: one step, G = mg gives 4,9 N, and the arrow lengths follow from numbers, not from Newton's laws.
+- Correct option not identifiable by form: options are figures, labels are neutral, order is shuffled on the page.
+- Each distractor has one recognisable error and feedback that names it; the solution explains the principle (one force per interaction) before the numbers.
+- Within FY3-1 scope: G, F and the body-on-meter pair are described in words; no vector or Newton term used.
+- Situation first, question last as its own sentence; Finnish fine.
+- Renders: the 1280 px open-solution captures of the new task (shuffled option order, feedback after a wrong try, solution block) were opened. The 390 px fit of inline chains was judged from text only (no phone capture of the exercises exists); each inline chain is short or breaks at = or ·.

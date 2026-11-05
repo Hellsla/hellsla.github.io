@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 56d94f2d09a1fcbc
-
+CONTENT-HASH: 760578538cb329ae
 ## Blocking
-- none
-
+(none)
 ## Polish
-- exercises.json L3-04 — the 25,0 m steel rail with summer gap is still close to L2-03; a bridge deck or pipeline loop would widen the set. Acceptable. Carried over.
-- L2-06 — same skill as L2-04; only the metal and the scatter question differ. Accept as practice. Carried over.
-- L2-05 c) — the 4 °C density maximum is explained in the solution but not hinted in the task; add "tiheys on suurin 4 °C:ssa". Carried over.
-- L1-07 — the correct option is the longest of four; shorten it. Carried over.
-
+- solutions.md:100 — "Kolminkertainen muutos jäisi saamatta vain, jos sauvat olisivat yhtä pitkiä" says the opposite of what is meant; write "Kolminkertainen muutos saataisiin vain, jos sauvat olisivat yhtä pitkiä."
+- Stem is a list of facts then the question; fine, but name the rods' material in the first sentence ("Teräksestä tehdyt sauvat...") to keep the situation first.
+- The wrong options catch the ΔL ∝ L0 · ΔT misreadings (only ΔT, only L0, same material = same ΔL), not the chapter's warned mistakes (particles grow, holes shrink, water); reasonable for this task.
 ## Checked
-- Round 3. The only change is the L2-06 Vastaus a) clause: removing the garbled sentence leaves a clear model answer (3 sig. figs. justified by 1,10 mm), and the b) reasoning is untouched.
-- Solution still consistent with the task: α = 22,9 · 10⁻⁶ 1/K, aluminium, point scatter explained by measurement uncertainty.
-- Counts 8/7/5 and the rest of the set unchanged since round 2.
+- Type 6: the correct option is the product 0,5 · 3 = 1,5, not equal to either single factor; wrong options are 3, 0,5 and 1 (unchanged); each feedback names the overlooked factor. Arithmetic and the arvio (0,5 mm, 0,7 mm) checked.
+- Correct option not identifiable by form (all four have the same shape; order shuffled by the page).
+- Within FY3-8: ΔL = α L0 ΔT is in the summary; α cancels.
+- The ratio fraction displays clearly in the 1280 capture and is short enough for 390 px (text judgement).
+- Finnish otherwise fine; question last.
+- Renders: the 1280 px open-solution captures of the new task (shuffled option order, feedback after a wrong try, solution block) were opened. The 390 px fit of inline chains was judged from text only (no phone capture of the exercises exists); each inline chain is short or breaks at = or ·.

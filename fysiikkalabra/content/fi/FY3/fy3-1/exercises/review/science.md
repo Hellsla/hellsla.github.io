@@ -1,21 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: aee75e10fdf5cfc4
-
-Round 2. Delta review of the round-1 fixes (HEAD~2..HEAD~1) on the 20-task set; focus on the 8 new tasks.
+CONTENT-HASH: e2152bc8e282da0b
 
 ## Blocking
-- none
 
 ## Polish
-- exercises/exercises.json:105 (L1-08) — the mass is now given as $0{,}18\,\text{t}$, so the task needs a t → kg conversion; this set's answers.py header puts "one conversion" at level 2. — Acceptable at level 1; or give $180\,\text{kg}$ again (two significant figures can be said in the answer line).
-- exercises/exercises.json:188 (L2-06) — the Kuu row (1,2 N) is still unused; the solution now says so, but the plan line asks "g-arvot ja vertailu". — Ask also $g_\text{Kuu}$ (1,59 m/s²) and a comparison, or drop the row.
+- exercises/solutions.md:199 — "Mittarin lukema on tämän voiman suuruus": strictly the meter shows the body's pull on it ($F_\text{k}$), equal in size to $F$; as written it is a fair FY3 simplification (C) that avoids Newton's third law. Optional: "Mittarin lukema kertoo tämän voiman suuruuden."
+- exercises/exercises.json:115 (L1-09) — voimakuvio as a convention is not in the brief's lesson; the task text defines it well enough ("voimat, jotka vaikuttavat kappaleeseen", every symbol named), so it stays in scope. The distractors test FBD errors, not the chapter's own warned mistake (massa vs. paino); acceptable for type 3.
 
 ## Checked
-- Round-1 Blocking (L2-07 a, "viidesosa") resolved: solutions.md:167 now says the mass is about a tenth of the reading 4,9, i.e. ≈ 0,49 kg; correct and consistent with b) 0,4995 → 0,50 kg.
-- Round-1 Polish resolved: L2-05 slope read from the fitted line (origin, 0,50 kg; 4,90 N) → 9,8 m/s², least squares through origin 9,800; answers.py line updated to match.
-- L3-05 Järkevyys now 2,64 · 612 kg ≈ 1616 ≈ 1620 kg; aligned Sijoitus block recomputed: 935 kg, 9172 N, 3469 N, 1617 kg, 682 kg.
-- L3-04: "graph" dropped from kind, step renamed "Taulukon lukeminen"; task now says where b) is checked; g_X = 3,59 → 3,6 m/s² unchanged.
-- L1-08: 0,18 t = 180 kg, G = 667,8 → 670 N, two significant figures from 0,18 t; answers.py `0.18 * 1000 * g["Mars"]` right.
-- L1-06, L1-07: options reordered only; `answer` still equals the single correct option; feedback unchanged in physics.
-- Plan docs/exercise-bank/FY3.md:11 now names the spring-calibration and lander tasks and gives the reason for leaving out the lift scale (Newton's laws, FY4).
-- Hash checked at start and end: unchanged.
+- L1-09 recomputed: $G = 0{,}50 \cdot 9{,}81 = 4{,}905\,\text{N} \approx 4{,}9\,\text{N}$ = the reading, so equal arrows (B) follow from data, not from Newton I (FY4): in scope.
+- Exactly one correct option; A (missing $F$), C ($F = 2G$ ≙ 9,8 N), D ($F_\text{k}$ acts on the meter) each really wrong, feedback right.
+- Figures (render, 1280 px shots 8–9): G from centre, F from the top face, lengths as the descriptions say; options shuffled; descriptions do not give the answer away; options are form-neutral ("Voimakuvio A–D").
+- Inline chains at 390 px (Playwright on preview, solution/feedback opened): longest 203 px, fits.
+- Rest of the set (unchanged, PASS before): answers.py unchanged; lint/answer checks ok.
+- Hash same at start and end.

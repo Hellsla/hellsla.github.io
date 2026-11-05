@@ -1,23 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 196fd38f148cdfeb
-Round: 2
+CONTENT-HASH: 07ff0780b71756eb
+Round: 1 (YO-skill task)
 
-Round 2: I reviewed the round-1 fixes (`git diff HEAD~1`) in the 20-task set.
+Scope: the new task L1-09 (true/false statements, added 2026-11-05). The other 20 tasks and answers.py are unchanged since the round-2 PASS (`git show HEAD`).
 
 ## Blocking
 - none
 
 ## Polish
-- solutions.md:169 and exercises.json:207 (L2-07): the Vastaus now argues correctly that the honest result is about 50 J, but the boxed answer and `answer` are still 50,4 J. The 2 % tolerance accepts 50, so nothing breaks. Fix: box "$\Delta U \approx 50\,\text{J}$" and set answer 50 (answers.py can stay at 50,4 before rounding).
-- solutions.md L3-04: the heading "Kuvaajan lukeminen" sits above a table reading ("Taulukossa jakovälejä…"). "Taulukon lukeminen" would be accurate.
-- Carried over from round 1: the plan's level-2 error item (forgetting the calorimeter) became a sign error (L2-06). This is fine physically, and pedagogy should judge it.
+- solutions.md L1-09 Periaate, "Eristetyssä sylinterissä $Q = 0$". The glossary's *eristetty systeemi* also excludes work, but here $W = 60\,\text{J}$. Fix: write "Lämpöeristetyssä sylinterissä", as the task text does.
 
 ## Checked
-- Round-1 Blocking (L3-05, a missing condition) is resolved. exercises.json:315 now says "vastuksen ja keittimen rungon oma lämpeneminen on merkityksetön". The Periaate uses the same assumption, so $Q_\text{ulos} = E_\text{v} - \Delta U$ is now fully the heat lost to the surroundings, and c) ("keittimen seinän kautta ilmaan ja pöytään") agrees with it. The phrase "kuten hyvin eristetyllä keittimellä" was dropped, and the text now says 15 % is "selvästi mitattava osa".
-- Round-1 Polish was resolved. L1-07 states that the vessel's own warming is neglected, so "täsmälleen" in the correct option's feedback holds.
-- Round-1 Polish was resolved. L2-05 removed the ideal-gas clause from the task and the solution; ΔU = 0 now rests on the internal energy being a state function. That is correct for any gas.
-- L1-06 and L1-07 reorders and rewordings: each has exactly one correct option, the answer string matches the correct choice, and the feedback fits each option.
-- I recomputed all eight new answers in one script, and they agree with answers.py and are within tolerance: L1-08 36 kJ; L2-05 −90 J; L2-06 20 J; L2-07 50,4 J (spread ±0,2 N ≈ 4,8 %); L3-04 18,72 J; L3-05 P = 1999 W, 34,8 kJ = 14,5 %, cumulative loss 8,1/16,3/26,1/34,8 kJ, mean 0,29 kW.
-- Signs follow ΔU = Q + W throughout. The scope, the 8/7/5 levels and the absence of duplicates are unchanged.
-- The L3 screenshot at 1280 px (part 8, taken after the fix commit) renders the changed L3-05 solution cleanly.
+- I recomputed ΔU = Q + W = 0 + 60 J = 60 J with my own script. Statements 1 and 2 are true and 3–5 false, and the answer string matches the flags.
+- The conditions are stated in the task. There is no heat exchange with the surroundings, and the air stays a gas, so a rise in U means a rise in T. The air is the system, and the work is done on it, so W > 0. The cylinder does not move, so ΔU = Q + W holds as written.
+- The distractors catch the lesson's own warned mistakes. Statement 5 ("enemmän lämpöä") is the "heat is stored" mistake, statement 4 is "only heating changes U", and statement 3 confuses W with Q. Every feedback is correct and agrees with the glossary.
+- The correct statements cannot be spotted by form. True and false statements are of similar length, and none is hedged.
+- The task stays within fy3-5 (the first law and its signs).
+- Inline formulas: the longest is $\Delta U = Q + W = 0 + 60\,\text{J} = 60\,\text{J}$, about 200 px, so it fits 300 px.
+- Renders: I viewed review/shots/fy3-5-open-exercises-1280-9.png, taken after the commit. Statements 3–5 and the solution render cleanly. I judged statements 1–2 and all the feedback from the text only, and I checked no 390 px render of the solution.
 - The hash was the same at the start and at the end.

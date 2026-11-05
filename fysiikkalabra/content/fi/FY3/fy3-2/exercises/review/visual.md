@@ -1,28 +1,19 @@
-VERDICT: PASS
-CONTENT-HASH: 881c48cc15dadf41
-ROUND: 4
-Mode: delta
+VERDICT: FAIL
+CONTENT-HASH: ea1ce6ceaffe60d0
+ROUND: 1
 
 ## Blocking
-(none) Earlier Blocking: none. Round-1 Polish resolved: L2-05 now shows W1..W4 on separate rows, L3-05 uses plain "6,52 m/8,0 s" instead of nested fractions, and the d) check no longer an identity (fitted-line work against the table's last point, 28,8 kJ vs 28,7 kJ, arithmetic verified).
+- [Major] fy3-2-L2-08, feedback of the correct choice "Työ on $4\,W_1$." — the feedback is shown as soon as the first stage is answered, before the reason question appears, and reads "Oikein: työ on voimakuvaajan kolmion pinta-ala. Sekä matka että suurin voima kaksinkertaistuvat…". That is nearly word for word the correct reason ("kolmion pinta-ala, ja sekä kanta että korkeus kaksinkertaistuvat"), so the second stage tests copying, not reasoning (seen in the 390 px render, one screen apart) — shorten the choice feedback to the result only, e.g. "Oikein: $W = 4\,W_1$. Valitse seuraavaksi perustelu." and keep the explanation in the reason feedback and the solution.
 
 ## Polish
-- [Minor] Task tables (L2-05, L2-06, L3-04, L3-05, 1280 px) — header centred, numbers left or right aligned — align both the same way.
-- [Minor] L2-07 (open-exercises-L2-1280-8) — the Mallivastaus appears above Kysytty and Periaate, unlike the other solutions — optional: place it after Sijoitus.
-- [Minor] L2-05 Kaava — "0,5 ·" replaces the fraction 1/2 in the formula (an intentional change); a reader may still expect \tfrac{1}{2}; fine as is, only keep it consistent in the other FY3 work chapters.
-- [Minor] No 360 px captures of the new tasks (only stage-exercises-390); check_layout 360 is clean.
+- [Minor] L2-08 — only task in the chapter with a reason stage and no figure; a small $(s, F)$ triangle for $10\,\text{cm}$ and $20\,\text{cm}$ would help but is optional.
+- [Minor] Reason 2 and 4 feedback begin "Väite on tosi, mutta…": fine, but two in a row reads mechanical.
 
 ## Checked
-- open-exercises-L2-1280-6: L2-05 (formula line, four trapezoid rows, answer 55 J) and the start of L2-06 (stairs, table).
-- open-exercises-L2-1280-8: L2-07 (error task, model answer, Sijoitus block, Järkevyys).
-- open-exercises-L3-1280-7: L3-05 (a) to d), aligned Sijoitus, Vastaus, Järkevyys).
-- Diff of the MC reorder in L1 read; no clipping or overflow at 1280.
-
-## Checked in round 3
-- Delta (HEAD): split rows read well in source: each continuation "\\ &= result" aligns under the first "=" of its aligned block, the Finnish decimal comma / English point and unit spacing are unchanged. check_layout.py 360 px --site is OK for fy3-2 (the site still serves the previous version of the formulas, so this does not yet prove the new rows). No 360 px solution captures exist in review/shots (only 390 and 1280 shots), so the 360 px result is judged from the source: rows are now at most about one line of text at 360 px.
+- Rendered fy3-2-L2-08 at 390 px with both stages and the solution open (three tiles): quantities in KaTeX (case endings $10\,\text{cm}$:n, :iin), no clipping or horizontal overflow at 390 and 360 (measured).
+- Sijoitus lines are two short display rows, W_1 and W_2, then the ratio with a colon: reads well.
+- Form: correct choice and reason are not the longest (reason lengths 96/80/86/97), distractors catch the chapter's own mistake $W = F s$ for a varying force; stays within the chapter's teaching.
+- Text only: the rest of the set (unchanged).
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
-
-## Checked in round 4
-- Delta (HEAD~3..HEAD, solutions.md display maths only): Split rows read well in source: each continuation is indented with \quad under the row's left side, the decimal separator and unit spacing are unchanged. check_layout.py fy3-2 --width 360 on freshly built preview: OK (fi, en, fi-easy), no formula overflow, only the existing wide-table scroll warning.
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

@@ -1,19 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 9c772e8e03edf7ce
-ROUND: 3
+CONTENT-HASH: ae1ef4425b8ef94d
+ROUND: 1
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] Task tables (all new ones, 1280 px) — header centred, numbers left or right aligned — align both the same way. (Carried over.)
-- [Minor] L3-05 Vastaus — the last paragraph mixes the result and a sig-figs aside; put the result first and the remark in its own sentence. (Carried over.)
-- [Minor] L3-04 Mallivastaus (B) — dense eight-sentence paragraph; split after "ekstrapoloitaessa". (Carried over.)
-- [Minor] No 360 px captures of the new tasks. (Carried over.)
+- [Minor] fy3-13-L2-08 data table at 390 px — caption (esimerkkiaineisto) is 334 px wide in a 328 px table, so it touches the card edge and the table scrolls by 6 px — shorten the caption (e.g. "Pullon ilman paine, esimerkkiaineisto") or let it wrap.
+- [Minor] solutions.md L2-08 Kysytty — "mikä päätelmä on se, jonka … tukevat" is clumsy — "mitkä päätelmistä aineisto ja epävarmuus $\Delta p = 1{,}0\,\text{kPa}$ tukevat".
+- [Minor] solutions.md L2-08 Mallivastaus — one dense eight-sentence paragraph after the display line; split before "Muut päätelmät eivät kestä."
+- [Minor] Option 4 asks about a fitted line (62 kPa at -100 °C) that the task never shows; the student cannot check the number — say "pisteisiin sovitettu suora" in the stem or the option.
+- [Minor] Carried: the L3-01 and L3-02 paragraph splits are text-only checked.
 
 ## Checked
-- This round's change is one text line (L1-06 feedback, shown only after a wrong answer) plus answers.py; no layout effect. The sentence is one short line that cannot overflow. The L1 exercise captures (open-exercises-1280-1..9) show no clipping; the feedback text itself is not in a capture (taken before the edit).
-- Nothing else changed since round 2.
+- Method: the packet's contact sheets and shots/ folder were not present in the worktree, so I rendered the new task myself with Playwright chromium at 390 px from preview/FYID.html, with solution, hints and feedback open (screenshots opened in three to four segments each). Text-only checks are named as such.
+- Opened fy3-13-L2-08 at 390 px (stem, table, four options, all feedback, Vastaus/Kirjoita ratkaisu, answer, Kysytty/Periaate/Mallivastaus). No page overflow (scrollWidth 390); every KaTeX span fits the card; the inline chain is one short line.
+- Form check (text): the correct option is not the longest nor the only hedged one; it is one of two "Paine kasvoi" options, so form does not give it away. Distractors catch the chapter's warned mistakes (uncertainty ignored, absence of evidence read as evidence of absence, extrapolation stated as certain). Within the chapter's scope.
+- L3-01 and L3-02 paragraph splits: text only.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4
