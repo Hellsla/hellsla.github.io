@@ -242,6 +242,72 @@
       "answer": 14,
       "unit": "heilahdusta",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-3-L2-08",
+      "level": 2,
+      "text": "Oppilas ripustaa saman heilurin langan päähän ensin kevyen kuulan ja sitten raskaan kuulan. Hän mittaa kymmenen heilahduksen ajan käsikellolla viisi kertaa kummallakin kuulalla. Käsin otetun ajan epävarmuus eli mittauksen mahdollinen virhe on $\\Delta t = 0{,}2\\,\\text{s}$ jokaiselle tulokselle. Laskimen antamat keskiarvot ovat kevyellä kuulalla $\\bar{t}_\\text{kevyt} = 14{,}30\\,\\text{s}$ ja raskaalla kuulalla $\\bar{t}_\\text{raskas} = 14{,}36\\,\\text{s}$. Ne ovat kymmenen heilahduksen aikoja. Minkä päätelmän aineisto tukee?",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": "Aineisto ei osoita kuulan massan vaikuttavan heilahdusaikaan, koska keskiarvojen ero on pienempi kuin käsin otetun ajan epävarmuus.",
+      "unit": "",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Kymmenen heilahduksen aika",
+        "columns": [
+          "$n$",
+          "$t_\\text{kevyt}\\,(\\text{s})$",
+          "$t_\\text{raskas}\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "14.3",
+            "14.4"
+          ],
+          [
+            "2",
+            "14.1",
+            "14.2"
+          ],
+          [
+            "3",
+            "14.4",
+            "14.5"
+          ],
+          [
+            "4",
+            "14.2",
+            "14.3"
+          ],
+          [
+            "5",
+            "14.5",
+            "14.4"
+          ]
+        ]
+      },
+      "choices": [
+        {
+          "text": "Raskas kuula heilahtaa hitaammin, koska sen keskiarvo on suurempi.",
+          "feedback": "Ero $14{,}36\\,\\text{s} - 14{,}30\\,\\text{s} = 0{,}06\\,\\text{s}$ on paljon pienempi kuin käsin otetun ajan epävarmuus $0{,}2\\,\\text{s}$. Näin pieni ero voi syntyä pelkästä satunnaisvaihtelusta. Siksi sitä ei voi pitää todisteena siitä, että ajat ovat erilaiset."
+        },
+        {
+          "text": "Aineisto ei osoita kuulan massan vaikuttavan heilahdusaikaan, koska keskiarvojen ero on pienempi kuin käsin otetun ajan epävarmuus.",
+          "correct": true,
+          "feedback": "Oikein. Ero $0{,}06\\,\\text{s}$ jää epävarmuuden $0{,}2\\,\\text{s}$ sisään, joten eroa ei voida osoittaa. Tämä ei kuitenkaan todista, että ajat ovat yhtä suuret. Se kertoo vain, että tämä mittaus ei erota niitä."
+        },
+        {
+          "text": "Kuulan massa ei vaikuta heilahdusaikaan, koska keskiarvot ovat melkein samat.",
+          "feedback": "Tämä päätelmä on liian vahva. Kun eroa ei voida osoittaa, se ei vielä todista, ettei eroa ole. Pieni todellinen ero voisi hukkua käsinmittauksen epävarmuuteen. Aineisto vain ei näytä eroa."
+        },
+        {
+          "text": "Kevyen kuulan kymmenen heilahduksen aika on $14{,}300\\,\\text{s}$, koska keskiarvo lasketaan viidestä tuloksesta.",
+          "feedback": "Tämä väite on liian tarkka. Keskiarvolla ei saa olla enempää merkitseviä numeroita kuin epävarmuus sallii. Laskimen antamat keskiarvot $14{,}30\\,\\text{s}$ ja $14{,}36\\,\\text{s}$ pidetään vertailussa täsmällisinä, mutta tulos ilmoitetaan pyöristettynä. Tulosten epävarmuus on $0{,}2\\,\\text{s}$, joten tulos voidaan ilmoittaa vain kymmenesosasekunnin tarkkuudella. Toistot pienentävät satunnaisvirhettä, mutta ne eivät tee tuloksesta tuhannesosasekunnin tarkkaa."
+        }
+      ]
     }
   ],
   "level3": [

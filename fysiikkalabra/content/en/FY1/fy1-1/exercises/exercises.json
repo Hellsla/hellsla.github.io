@@ -94,6 +94,37 @@
       "answer": 10000,
       "unit": "times",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-1-L1-09",
+      "level": 1,
+      "text": "In a solar eclipse the Moon covers the Sun exactly, so the Sun and the Moon look equally large in the sky. The distance of the Moon from the Earth is $3.84\\cdot10^{8}\\,\\text{m}$, the diameter of the Moon is $3.47\\cdot10^{6}\\,\\text{m}$ and the diameter of the Sun is $1.39\\cdot10^{9}\\,\\text{m}$.\n\nAn object looks equally large when its distance is as many times the distance of the Moon as its diameter is times the diameter of the Moon. Which value is a reasonable estimate for the distance of the Earth from the Sun?",
+      "kind": [
+        "concept",
+        "model"
+      ],
+      "answer": "About $1.5\\cdot10^{11}\\,\\text{m}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "About $1.5\\cdot10^{11}\\,\\text{m}$",
+          "correct": true,
+          "feedback": "Correct: the diameter of the Sun is $1.39\\cdot10^{9}\\,\\text{m} : 3.47\\cdot10^{6}\\,\\text{m}\\approx400$ times the diameter of the Moon, so the Sun is about $400$ times farther away than the Moon: $3.84\\cdot10^{8}\\,\\text{m}\\cdot400\\approx1.5\\cdot10^{11}\\,\\text{m}$."
+        },
+        {
+          "text": "About $1.5\\cdot10^{9}\\,\\text{m}$",
+          "feedback": "This is only about $4$ times the distance of the Moon, although the Sun is about $400$ times larger than the Moon. That close, the Sun would look about a hundred times larger than the Moon, and the Moon would not cover it in an eclipse."
+        },
+        {
+          "text": "About $1.5\\cdot10^{8}\\,\\text{m}$",
+          "feedback": "This is less than half the distance of the Moon, so the Sun would be closer than the Moon and would look a thousand times larger than the Moon. If you remember the number $150$ million, it is the distance in kilometres; in metres it is $1.5\\cdot10^{11}$."
+        },
+        {
+          "text": "About $1.5\\cdot10^{13}\\,\\text{m}$",
+          "feedback": "This is about $39\\,000$ times the distance of the Moon, although the diameter of the Sun is only about $400$ times the diameter of the Moon. That far away, the Sun would look about a hundred times smaller than the Moon, and the Moon would not cover it."
+        }
+      ]
     }
   ],
   "level2": [

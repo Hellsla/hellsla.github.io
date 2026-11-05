@@ -200,6 +200,41 @@
       "answer": 8.0,
       "unit": "m",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-5-L2-08",
+      "level": 2,
+      "text": "A walker first stands still for $4.0\\,\\text{s}$ at a point $6.0\\,\\text{m}$ from the starting point. Then she walks steadily at a speed of $1.0\\,\\text{m/s}$ straight back towards the starting point until she is there. The position $s$ is measured from the starting point.\n\nWhich of the graphs shows the position $s$ of the walker as a function of time $t$?",
+      "kind": [
+        "graph",
+        "concept"
+      ],
+      "answer": "Graph C",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Graph A",
+          "figure": "fy1-5/pick-away",
+          "feedback": "In this graph the position increases to $12\\,\\text{m}$, so the walker would move away from the starting point. When the walker returns towards the starting point, the position $s$ decreases, so the line must go down and not up."
+        },
+        {
+          "text": "Graph B",
+          "figure": "fy1-5/pick-vt",
+          "feedback": "This is a $(t, v)$ graph: the vertical axis shows the velocity $v$, not the position $s$. In it, standing still is $v = 0$ and steady walking is a horizontal line, but in a position graph a horizontal line means staying in place. You cannot see from this graph where the walker is, nor that she is at $6.0\\,\\text{m}$ at the start."
+        },
+        {
+          "text": "Graph C",
+          "figure": "fy1-5/pick-back",
+          "correct": true,
+          "feedback": "Correct: the position stays at $6.0\\,\\text{m}$ at first, so the line is horizontal. Then the position decreases steadily by $6.0\\,\\text{m}$ in $6.0\\,\\text{s}$, so the line goes down and the walker is at the starting point at the time $10\\,\\text{s}$."
+        },
+        {
+          "text": "Graph D",
+          "figure": "fy1-5/pick-distance",
+          "feedback": "The vertical axis of this graph shows the distance walked $\\Delta s$, not the position $s$: the distance is zero while standing and then grows to $6.0\\,\\text{m}$. The position tells where the walker is, so it starts from $6.0\\,\\text{m}$ and not from zero, and it decreases on the way back."
+        }
+      ]
     }
   ],
   "level3": [

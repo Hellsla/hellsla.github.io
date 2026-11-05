@@ -288,6 +288,40 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy1-4-L2-08",
+      "level": 2,
+      "text": "Säiliötä täytettiin tasaisella vesivirralla. Veden tilavuutta $V$ mitattiin ajan $t$ funktiona. Mittauspisteisiin sovitetun suoran kulmakerroin eli veden virtaama laskettiin alla olevalla tavalla. Laskussa voi olla virhe.\n\nRivi 1: Sovitetulta suoralta luetaan pisteet $(2{,}0\\,\\text{min};\\ 5{,}0\\,\\textsf{l})$ ja $(10{,}0\\,\\text{min};\\ 17{,}0\\,\\textsf{l})$.\n\nRivi 2: $\\Delta V = 17{,}0\\,\\textsf{l} - 5{,}0\\,\\textsf{l} = 12{,}0\\,\\textsf{l}$\n\nRivi 3: $\\Delta t = 10{,}0\\,\\text{min} - 2{,}0\\,\\text{min} = 12{,}0\\,\\text{min}$\n\nRivi 4: $k = \\dfrac{\\Delta V}{\\Delta t} = \\dfrac{12{,}0\\,\\textsf{l}}{12{,}0\\,\\text{min}} = 1{,}0\\,\\tfrac{\\textsf{l}}{\\text{min}}$\n\nMillä rivillä virhe on?",
+      "kind": [
+        "error"
+      ],
+      "answer": "Rivi 3: $\\Delta t = 10{,}0\\,\\text{min} - 2{,}0\\,\\text{min} = 12{,}0\\,\\text{min}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Rivi 1: Sovitetulta suoralta luetaan kaksi kaukana toisistaan olevaa pistettä $(2{,}0\\,\\text{min};\\ 5{,}0\\,\\textsf{l})$ ja $(10{,}0\\,\\text{min};\\ 17{,}0\\,\\textsf{l})$.",
+          "feedback": "Rivi 1 on oikein. Pisteet luetaan sovitetulta suoralta eikä mittauspisteistä. Ne ovat kaukana toisistaan, joten lukemavirhe vaikuttaa kulmakertoimeen vähän. Virhe on jossakin toisessa rivissä."
+        },
+        {
+          "text": "Rivi 2: $\\Delta V = 17{,}0\\,\\textsf{l} - 5{,}0\\,\\textsf{l} = 12{,}0\\,\\textsf{l}$",
+          "feedback": "Rivi 2 on oikein. Tilavuuden muutos on loppuarvo miinus alkuarvo, ja $17{,}0 - 5{,}0 = 12{,}0$. Jos pidät tätä riviä virheellisenä, sekoitat tilavuuden muutoksen tilavuuteen $17{,}0\\,\\textsf{l}$ tai lasket erotuksen väärään suuntaan."
+        },
+        {
+          "text": "Rivi 3: $\\Delta t = 10{,}0\\,\\text{min} - 2{,}0\\,\\text{min} = 12{,}0\\,\\text{min}$",
+          "feedback": "Tämä rivi on virheellinen. Erotus on $10{,}0\\,\\text{min} - 2{,}0\\,\\text{min} = 8{,}0\\,\\text{min}$. Luku $12{,}0$ syntyy, kun aikoja ei vähennetä vaan lasketaan yhteen ($10{,}0 + 2{,}0$). Se voi syntyä myös, kun ajan muutokseen kopioidaan tilavuuden muutoksen luku. Kulmakertoimen nimittäjässä on aina saman kahden pisteen $x$-arvojen erotus.",
+          "correct": true
+        },
+        {
+          "text": "Rivi 4: $k = \\dfrac{\\Delta V}{\\Delta t} = \\dfrac{12{,}0\\,\\textsf{l}}{12{,}0\\,\\text{min}} = 1{,}0\\,\\tfrac{\\textsf{l}}{\\text{min}}$",
+          "feedback": "Rivin 4 kaava ja jakolasku ovat oikein. Kulmakerroin on $y$:n muutos jaettuna $x$:n muutoksella, ja yksikkö on litraa minuutissa. Tulos on silti väärä, koska rivillä käytetty ajan muutos on otettu rivin 3 virheellisestä tuloksesta. Virhe tehtiin rivillä 3, ei tällä rivillä."
+        },
+        {
+          "text": "Laskussa ei ole virhettä",
+          "feedback": "Virhe on rivillä 3. Ajan muutos on $8{,}0\\,\\text{min}$, ei $12{,}0\\,\\text{min}$. Siksi oikea kulmakerroin on $12{,}0\\,\\textsf{l} : 8{,}0\\,\\text{min} = 1{,}5\\,\\tfrac{\\textsf{l}}{\\text{min}}$. Rivin 4 tulos $1{,}0\\,\\tfrac{\\textsf{l}}{\\text{min}}$ on liian pieni, joten laskussa on virhe."
+        }
+      ]
     }
   ],
   "level3": [

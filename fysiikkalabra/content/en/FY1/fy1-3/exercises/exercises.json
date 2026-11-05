@@ -242,6 +242,72 @@
       "answer": 14,
       "unit": "swings",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-3-L2-08",
+      "level": 2,
+      "text": "A student hangs first a light ball and then a heavy ball at the end of the string of the same pendulum, and measures the time of ten swings with a hand-held stopwatch five times with each ball. The uncertainty of a hand-timed measurement is $\\Delta t = 0.2\\,\\text{s}$ for each result. The averages given by the calculator are $\\bar{t}_\\text{light} = 14.30\\,\\text{s}$ for the light ball and $\\bar{t}_\\text{heavy} = 14.36\\,\\text{s}$ for the heavy ball (the time of ten swings). Which of the following conclusions do the data support?",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": "The data do not show that the mass of the ball affects the swing time, because the difference of the averages is smaller than the uncertainty of the hand-timed measurement.",
+      "unit": "",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Time of ten swings",
+        "columns": [
+          "$n$",
+          "$t_\\text{light}\\,(\\text{s})$",
+          "$t_\\text{heavy}\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "14.3",
+            "14.4"
+          ],
+          [
+            "2",
+            "14.1",
+            "14.2"
+          ],
+          [
+            "3",
+            "14.4",
+            "14.5"
+          ],
+          [
+            "4",
+            "14.2",
+            "14.3"
+          ],
+          [
+            "5",
+            "14.5",
+            "14.4"
+          ]
+        ]
+      },
+      "choices": [
+        {
+          "text": "The heavy ball swings more slowly, because its average is larger.",
+          "feedback": "The difference $14.36\\,\\text{s} - 14.30\\,\\text{s} = 0.06\\,\\text{s}$ is much smaller than the uncertainty of the hand-timed measurement, $0.2\\,\\text{s}$. A difference this small can arise from random variation alone, so it cannot be taken as evidence of a difference."
+        },
+        {
+          "text": "The data do not show that the mass of the ball affects the swing time, because the difference of the averages is smaller than the uncertainty of the hand-timed measurement.",
+          "correct": true,
+          "feedback": "Correct: the difference $0.06\\,\\text{s}$ is within the uncertainty $0.2\\,\\text{s}$, so a difference cannot be shown. However, this does not prove that the times are equal, only that this measurement does not tell them apart."
+        },
+        {
+          "text": "The mass of the ball does not affect the swing time, because the averages are almost the same.",
+          "feedback": "Too strong a conclusion. When a difference cannot be shown, that does not yet prove there is no difference: a small real difference could be lost in the uncertainty of hand timing. The data simply do not show a difference."
+        },
+        {
+          "text": "The time of ten swings of the light ball is $14.300\\,\\text{s}$, because the average is calculated from five results.",
+          "feedback": "An over-precise claim. An average must not have more significant figures than the uncertainty allows (the averages given by the calculator, $14.30\\,\\text{s}$ and $14.36\\,\\text{s}$, are treated as exact in the comparison, but the result is given rounded): the uncertainty of the results is $0.2\\,\\text{s}$, so the result can only be given to a tenth of a second. Repetition reduces random error but does not make the result accurate to a thousandth of a second."
+        }
+      ]
     }
   ],
   "level3": [

@@ -196,3 +196,10 @@
 **Vastaus:** $143{,}2\,\text{AU}$, yksi desimaali kuten alkuetäisyydessä $119{,}7\,\text{AU}$, joka on summan epätarkin luku. Oppilas kertoi nopeuden $\text{km/s}$ vuosilla eikä sekunneilla, joten tulos ei ollut matka. Lisäksi hän laski yhteen kilometrejä ja tähtitieteellisiä yksiköitä. Malli ei ollut väärä.
 **Mallivastaus mittauksesta:** Mittaus $143{,}05\,\text{AU}$ poikkeaa ennusteesta vain noin $0{,}1\,\text{AU}$. Ennuste kesti siis testin, ja mittaus tukee mallia. Yksi osuma ei kuitenkaan todista mallia kaikkiin tilanteisiin. Nopeus voi muuttua hitaasti, ja malli pätee vain lähellä mitattua väliä.
 **Järkevyys:** Vuodessa Voyager kulkee $15{,}341\,\text{km/s}\cdot3{,}156\cdot10^{7}\,\text{s} = 4{,}84\cdot10^{8}\,\text{km} = 3{,}2\,\text{AU}$. Seitsemässä ja neljänneksessä vuodessa matka on noin $23\,\text{AU}$. Tulos täsmää.
+
+## fy1-1-L1-09
+**Annettu:** Kuun etäisyys $3{,}84\cdot10^{8}\,\text{m}$, Kuun halkaisija $3{,}47\cdot10^{6}\,\text{m}$, Auringon halkaisija $1{,}39\cdot10^{9}\,\text{m}$. Pimennyksessä Aurinko ja Kuu näyttävät yhtä suurilta.
+**Kysytty:** Maan etäisyys Auringosta $d_\text{A}$. Se valitaan neljästä vaihtoehdosta, joiden suuruusluokka on eri.
+**Periaate:** Kohde näyttää yhtä suurelta, kun sen etäisyys on yhtä monta kertaa Kuun etäisyys kuin sen halkaisija on Kuun halkaisija. Pimennyksessä Aurinko ja Kuu näyttävät yhtä suurilta. Siksi etäisyyksien suhde on sama kuin halkaisijoiden suhde.
+**Mallivastaus:** Halkaisijoiden suhde on $\dfrac{1{,}39\cdot10^{9}\,\text{m}}{3{,}47\cdot10^{6}\,\text{m}}\approx400$. Siksi $d_\text{A}\approx400\cdot3{,}84\cdot10^{8}\,\text{m}\approx1{,}5\cdot10^{11}\,\text{m}$. Se on oikea vastaus. Arvo $1{,}5\cdot10^{8}\,\text{m}$ on alle puolet Kuun etäisyydestä, joten Aurinko olisi Kuuta lähempänä. Arvo $1{,}5\cdot10^{9}\,\text{m}$ on vain noin $4$ kertaa Kuun etäisyys. Arvo $1{,}5\cdot10^{13}\,\text{m}$ on noin $39\,000$ kertaa Kuun etäisyys. Kumpikaan ei vastaa kerrointa $400$.
+**Järkevyys:** Valo kulkee matkan $1{,}5\cdot10^{11}\,\text{m} : 3{,}0\cdot10^{8}\,\text{m/s} = 5{,}0\cdot10^{2}\,\text{s}$ eli noin $8\,\text{min}$. Se on Auringon valon tunnettu kulkuaika.

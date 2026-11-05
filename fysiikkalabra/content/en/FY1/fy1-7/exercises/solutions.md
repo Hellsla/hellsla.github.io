@@ -194,3 +194,34 @@ $$L = \frac{V}{A} = \frac{m}{\rho\,\pi r^2}$$
 **Substitution:** $V_\text{Cu} = \dfrac{520\,\text{g} - 2.70\,\tfrac{\text{g}}{\text{cm}^3} \cdot 100\,\text{cm}^3}{8.96\,\tfrac{\text{g}}{\text{cm}^3} - 2.70\,\tfrac{\text{g}}{\text{cm}^3}} = \dfrac{250\,\text{g}}{6.26\,\tfrac{\text{g}}{\text{cm}^3}} = 39.9\,\text{cm}^3$
 **Answer:** $39.9\,\text{cm}^3$, three significant figures, because the densities in the table have three figures and the data $520\,\text{g}$ and $100\,\text{cm}^3$ are read to three figures. The volume of aluminium is $V_\text{Al} = 100\,\text{cm}^3 - 39.9\,\text{cm}^3 = 60.1\,\text{cm}^3$.
 **Reasonableness:** If the object were pure aluminium, its mass would be $270\,\text{g}$, and if it were pure copper, $896\,\text{g}$. The actual mass $520\,\text{g}$ is between these and closer to aluminium, so less than half of the volume is copper, like $39.9\,\text{cm}^3$. There is more aluminium by volume ($60.1\,\text{cm}^3$), but more copper by mass: the mass of the copper is about $357.5\,\text{g}$ and that of the aluminium about $162.3\,\text{g}$, because the density of copper is several times as great. Check: $8.96 \cdot 39.9\,\text{g} + 2.70 \cdot 60.1\,\text{g} = 357.5\,\text{g} + 162.3\,\text{g} = 519.8\,\text{g} \approx 520\,\text{g}$.
+
+## fy1-7-L2-08
+**Given:** object A: $m_\text{A} = 135\,\text{g}$, $V_\text{A} = 50\,\text{cm}^3$; object B: $m_\text{B} = 0.36\,\text{kg}$, $V_\text{B} = 0.40\,\text{dm}^3$; object C: $m_\text{C} = 4.5\,\text{kg}$, $V_\text{C} = 500\,\text{cm}^3$; object D: $m_\text{D} = 120\,\text{g}$, $V_\text{D} = 100\,\text{ml}$
+
+**Find:** the order of the objects by density $\rho$ from smallest to largest
+
+**Principle:** Density is mass per volume, $\rho = \dfrac{m}{V}$, so objects can be compared only when all of them are in the same unit. The heaviest object is not necessarily the densest, because density also depends on the volume. Let us convert everything to $\text{g/cm}^3$ and calculate the density of each. The order is found by calculation; the substances do not need to be guessed.
+
+**Model answer:** Conversions:
+
+$0.36\,\text{kg} = 360\,\text{g}$
+
+$0.40\,\text{dm}^3 = 400\,\text{cm}^3$
+
+$4.5\,\text{kg} = 4500\,\text{g}$
+
+$100\,\text{ml} = 100\,\text{cm}^3$
+
+Densities:
+
+$\rho_\text{A} = 135\,\text{g} : 50\,\text{cm}^3 = 2.7\,\tfrac{\text{g}}{\text{cm}^3}$
+
+$\rho_\text{B} = 360\,\text{g} : 400\,\text{cm}^3 = 0.90\,\tfrac{\text{g}}{\text{cm}^3}$
+
+$\rho_\text{C} = 4500\,\text{g} : 500\,\text{cm}^3 = 9.0\,\tfrac{\text{g}}{\text{cm}^3}$
+
+$\rho_\text{D} = 120\,\text{g} : 100\,\text{cm}^3 = 1.2\,\tfrac{\text{g}}{\text{cm}^3}$
+
+From smallest to largest the order is B, D, A, C.
+
+Object B would float in water and the others would sink. The order by mass would be different: object C is the heaviest and object D the lightest, but density tells the mass per volume, not the total mass of the object. The densities are given with two significant figures, like the least precise initial values; the order does not change, because the densities differ clearly from each other.

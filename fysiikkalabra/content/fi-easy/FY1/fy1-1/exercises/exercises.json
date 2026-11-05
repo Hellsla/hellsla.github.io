@@ -94,6 +94,37 @@
       "answer": 10000,
       "unit": "kertaa",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-1-L1-09",
+      "level": 1,
+      "text": "Auringonpimennyksessä Kuu peittää Auringon täsmälleen. Siksi Aurinko ja Kuu näyttävät taivaalla yhtä suurilta. Kuun etäisyys Maasta on $3{,}84\\cdot10^{8}\\,\\text{m}$. Kuun halkaisija on $3{,}47\\cdot10^{6}\\,\\text{m}$ ja Auringon halkaisija $1{,}39\\cdot10^{9}\\,\\text{m}$.\n\nKohde näyttää yhtä suurelta, kun sen etäisyys on yhtä monta kertaa Kuun etäisyys kuin sen halkaisija on Kuun halkaisija. Mikä arvo on järkevä arvio Maan etäisyydelle Auringosta?",
+      "kind": [
+        "concept",
+        "model"
+      ],
+      "answer": "Noin $1{,}5\\cdot10^{11}\\,\\text{m}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Noin $1{,}5\\cdot10^{11}\\,\\text{m}$",
+          "correct": true,
+          "feedback": "Oikein. Auringon halkaisija on $1{,}39\\cdot10^{9}\\,\\text{m} : 3{,}47\\cdot10^{6}\\,\\text{m}\\approx400$ kertaa Kuun halkaisija. Siksi Aurinko on noin $400$ kertaa Kuuta kauempana: $3{,}84\\cdot10^{8}\\,\\text{m}\\cdot400\\approx1{,}5\\cdot10^{11}\\,\\text{m}$."
+        },
+        {
+          "text": "Noin $1{,}5\\cdot10^{9}\\,\\text{m}$",
+          "feedback": "Tämä on vain noin $4$ kertaa Kuun etäisyys, vaikka Aurinko on noin $400$ kertaa Kuuta suurempi. Niin lähellä Aurinko näyttäisi noin sata kertaa Kuuta suuremmalta. Silloin Kuu ei peittäisi sitä pimennyksessä."
+        },
+        {
+          "text": "Noin $1{,}5\\cdot10^{8}\\,\\text{m}$",
+          "feedback": "Tämä on alle puolet Kuun etäisyydestä. Silloin Aurinko olisi Kuuta lähempänä ja näyttäisi tuhat kertaa Kuuta suuremmalta. Jos muistat luvun $150$ miljoonaa, se on etäisyys kilometreinä. Metreinä se on $1{,}5\\cdot10^{11}$."
+        },
+        {
+          "text": "Noin $1{,}5\\cdot10^{13}\\,\\text{m}$",
+          "feedback": "Tämä on noin $39\\,000$ kertaa Kuun etäisyys, vaikka Auringon halkaisija on vain noin $400$ kertaa Kuun halkaisija. Niin kaukana Aurinko näyttäisi noin sata kertaa Kuuta pienemmältä. Silloin Kuu ei peittäisi sitä."
+        }
+      ]
     }
   ],
   "level2": [
