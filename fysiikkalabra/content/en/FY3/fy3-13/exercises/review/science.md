@@ -1,13 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 2b92f583c1086679
-Mode: full
+CONTENT-HASH: 733cd6c68e7ef781
+Mode: delta
 Round: 2
 
 ## Blocking
 (none)
 
 ## Fixed
-- (none; no text edits were needed)
+- (none; delta: only the L2-08 table caption was shortened to "Air pressure, sealed bottle (example data)"; no number, formula or answer changed)
 
 ## Polish
 - (none)
@@ -17,3 +17,4 @@ Round: 2
 - Recomputed: 115.5-102.0 = 13.5 kPa (>10 x 1.0); 0.8 < 1.0 so intervals overlap; fitted slope ~0.34 kPa/degC gives ~62 kPa at -100 degC. Correct choice is the only valid conclusion.
 - Physics: "cannot show" is not "no difference"; extrapolation is an estimate under a linearity assumption; sealed rigid bottle justifies rising p. Same as fi.
 - check_i18n.py: nothing for fy3-13; build.py fy3-13 succeeds (see report).
+- Caption shortened to fit 390 px: still describes the data (air pressure, sealed bottle); no physics change.

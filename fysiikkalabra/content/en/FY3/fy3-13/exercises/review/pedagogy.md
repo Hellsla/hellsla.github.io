@@ -1,13 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 2b92f583c1086679
-Mode: full
+CONTENT-HASH: 733cd6c68e7ef781
+Mode: delta
 Round: 2
 
 ## Blocking
 (none)
 
 ## Fixed
-- (none; no text edits were needed)
+- (none; delta: only the L2-08 table caption was shortened to "Air pressure, sealed bottle (example data)"; no number, formula or answer changed)
 
 ## Polish
 - (none)
@@ -18,3 +18,4 @@ Round: 2
 - Solution is stepwise: principle, difference, intervals, then each rejected conclusion.
 - Idiomatic English at upper-secondary level.
 - check_i18n.py: nothing for fy3-13; build.py fy3-13 succeeds (see report).
+- Caption now fits at 390 px and still names what the table shows.
