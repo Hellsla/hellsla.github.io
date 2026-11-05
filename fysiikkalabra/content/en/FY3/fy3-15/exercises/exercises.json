@@ -219,6 +219,37 @@
       "answer": 36.6,
       "unit": "%",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-15-L2-08",
+      "level": 2,
+      "text": "The fuel power of a condensing power plant is $1200\\,\\text{MW}$. Sea water flows through the condenser at $12\\,\\text{m}^3$ per second, and the water warms in the condenser from $8\\,{}^\\circ\\text{C}$ to $18\\,{}^\\circ\\text{C}$ (example values). The density of water is $1000\\,\\text{kg/m}^3$ and its specific heat capacity is $4190\\,\\text{J/(kg}\\cdot\\text{K)}$. What is the order of magnitude of the thermal power $P_\\text{L}$ transferred from the condenser to the water? Choose the nearest value.",
+      "kind": [
+        "reasoning",
+        "model"
+      ],
+      "answer": "$500\\,\\text{MW}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "$0.5\\,\\text{MW}$",
+          "feedback": "This result comes from reading $12\\,\\text{m}^3$ directly as $12\\,\\text{kg}$ and not using the density. The water flow is $q_m = \\rho V/t = 12\\,000\\,\\text{kg/s}$, a thousand times larger, and the power is correspondingly a thousand times larger."
+        },
+        {
+          "text": "$50\\,\\text{MW}$",
+          "feedback": "This result comes from converting a cubic metre wrongly into a hundred litres, that is a hundred kilograms. A cubic metre is $1000\\,\\text{l}$ and the water is $1000\\,\\text{kg}$, so the water flow is $12\\,000\\,\\text{kg/s}$."
+        },
+        {
+          "text": "$500\\,\\text{MW}$",
+          "correct": true,
+          "feedback": "Correct: the water flow is $q_m = 12\\,000\\,\\text{kg/s}$ and the rise in temperature is $\\Delta T = 10\\,\\text{K}$. The power is $P_\\text{L} = c\\,q_m\\,\\Delta T$, that is $P_\\text{L} \\approx 5.0 \\cdot 10^8\\,\\text{W} \\approx 500\\,\\text{MW}$. It is about $42\\,\\%$ of the fuel power $1200\\,\\text{MW}$, which fits a condenser loss."
+        },
+        {
+          "text": "$15\\,000\\,\\text{MW}$",
+          "feedback": "This result comes from taking the final temperature in kelvins, $291\\,\\text{K}$, as the rise $\\Delta T$. The rise is the difference of the temperatures, $10\\,\\text{K}$. The result would also exceed the whole fuel power of the plant, $1200\\,\\text{MW}$, so it is impossible."
+        }
+      ]
     }
   ],
   "level3": [

@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: ffa203d1e90b934b
-Mode: full
-Round: 2
+CONTENT-HASH: 6caedbf0fb375664
+
+Mode: translation review (fi-easy (NOTES.md section 12)) against the reviewed Finnish. Round 2, new task fy3-14-L2-08.
 
 ## Blocking
+(none)
 
 ## Polish
-- None (carried over from round 1: none).
+- None.
 
 ## Checked
-- Round 2 (delta): only solutions.md L3-04 Sijoitus changed (commits bf75c929d, 6018cf733): long inline fractions became display `aligned` rows, bracket computed first.
-- solutions.md:185-199 recomputed: 0,200·21,8 − 0,0500·8,2 = 3,95; 0,200·23,8 − 0,0500·6,2 = 4,45; 4190·3,95/0,0500 = 331 010 → 331 000 J/kg = 331 kJ/kg; 4190·4,45/0,0500 = 372 910 → 372 900 J/kg = 373 kJ/kg.
-- c): 2100·0,0500·18,0 J = 1890 J; (18 645,5 J − 1890 J)/0,0500 kg = 335 110 → 335 100 J/kg. Identical to the previous chain and to fi; Vastaus (331/373/335 kJ/kg) and answers.py untouched.
-- Formulas identical to fi character for character in the changed block.
-- Hash unchanged at start and end.
+- fy3-14-L2-08 recomputed independently: Q_w = 4190*0.25*18 = 18 855 J, Q_i = 334000*0.080 = 26 720 J, melted 56 g, 24 g left, T = 0 C; statements 1 T, 2 F, 3 T, 4 T, 5 F. Equals fi.
+- Answer, unit, tolerance, kind, order/statements/choices, correct flags and their order equal fi.
+- solutions.md of L2-08: every number, unit and formula equals fi; decimal comma kept.
+- Physics and scope unchanged; no Finnish-only terms left.
+- No translation fix needed. check_i18n.py shows nothing for fy3-14; build.py fy3-14 succeeds.
