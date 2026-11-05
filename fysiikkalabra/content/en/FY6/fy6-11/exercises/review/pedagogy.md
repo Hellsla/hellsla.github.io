@@ -1,13 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: dc685bf962f617f6
+CONTENT-HASH: 9dbe67314c91de71
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
 (none)
 
 ## Polish
 (none)
 
 ## Checked
-- Delta L1-05 Reasonableness: the line "goes through the origin" is now explained by the model F = qE (an uncharged ball feels no electric force in a uniform field). The student learns why the fit is forced through the origin, not only that it is.
-- "although the field exists" keeps field and force on a charge apart.
-- Numbers and check point (91 µN at 3.0 nC) unchanged; matches the Finnish version.
+- Wording is natural English at the level of the Finnish; tasks, hints and answer-box instructions match fi sentence by sentence.
+- Data tables and captions marked as example data in L2-05, L2-07, L3-04, as in fi.
+- Student's error in L2-06 stated in neutral terms; no hint to the answer in the task text.
+- Feedback of L1-06/L1-07 distractors names the misconception without giving away the correct option.

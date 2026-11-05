@@ -1,17 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 83920706a91f4df7
+CONTENT-HASH: cf52e4c26916eaa1
+ROUND: 2
 
 ## Blocking
 
 ## Polish
-- [Minor] fy6-1-L2-02, fy6-1-L3-02 — the answer has no unit, so the field shows only "?" and the reader cannot see that a pure number is expected — end the question with "Vastaa lukuna." (L3-02 already asks "kuinka monta kertaa").
-- [Minor] fy6-1/virta-kuvaaja (open-exercises-L2-1280-4) — the zero-current segment 50–60 s runs exactly on the t-axis and hides the axis; reads right with the text, but a slightly offset or dashed end would be clearer.
-- [Minor] fy6-1/kaavio-malli (open-exercises-L3-1280-3) — the figure has no label for the battery polarity beyond the +/− marks and no $U$; fine as a model answer, optional.
+- [Minor] fy6-1-L2-06 Periaate vs Mallivastaus b) — the Periaate now says "lähes koko virta kulkee johdon kautta" (hehkulangan läpi kulkee hieman virtaa), while the Mallivastaus says "Lampun läpi ei kulje virtaa" — write "lampun läpi ei kulje juuri virtaa" in the Mallivastaus, or "lähes koko virta" in both.
+- [Minor] fy6-1-L1-08 Muunnokset — the clause "virta on jo ampeereina." stands as loose text under the maths box (open-exercises-1280-8) — put it in the same line before the box or drop the semicolon-split.
+- [Minor] data tables (L2-05, L2-07, L3-04) — numeric column headers sit centred while the values are left-aligned, so "I (A)" does not stand over its numbers (template-wide) — align numeric cells with their headers.
+- [Minor] fy6-1-L3-05 Vastaus c) — the new sentence is correct but "lampun oman hehkulangan elektronit liikkuvat heti" could add that the energy is carried by the electric field, not by the battery's electrons (carried over, now mostly addressed).
 
 ## Checked
-- open-exercises-1280-1 (L1-01 whole solution), contact-5 #53–57 (L1 all), contact-5 #58–62 and contact-6 #61–62 (L2), contact-6 #63–66 (L3)
-- open-exercises-L2-1280-4 (graph, axes, units, ticks), open-exercises-L3-1280-3/4 (model figure, model answer, equal-sign rows with fractions)
-- figures valinta-a/b/c via fig-9–11 and tarkista-390-2; virhe-kaavio via fig-8
+- Round 1 had no Blocking items; its Polish is resolved for L1-07 ("Kuvittele kytkentäkaavio ...") and L1-08 ("Vastaa lukuna." shown); L2-07 and L3-05 wording changes read well.
+- open-exercises-1280-6, -7, -8 (L1-07 task and choices, L1-08 task, answer chip, Muunnokset/Sijoitus/Järkevyys after the 0,25 A change)
+- open-exercises-L2-1280-6, -7, -8 (L2-06 Periaate/Mallivastaus, L2-07 text, table, Mallivastaus)
+- open-exercises-L3-1280-8 (L3-05 Vastaus and Järkevyys)
+- Not available: 360 px captures of exercise cards (packet layout 360 px check ok).
+- Maths re-computed: 0,25 A · 60 s / 1,602·10^-19 C = 9,36·10^19 (answers.py, json, solution and Järkevyys 15 C · 6,2·10^18 = 9,3·10^19 agree); L2-07 means 0,310 / 0,306 A, differences at most one step 0,01 A.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4

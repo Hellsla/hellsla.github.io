@@ -30,4 +30,18 @@ a["fy6-5-L3-02"] = U23 / (0.20 - U23 / 60)                # I3 = 0,20 A - 4,0 V 
 V_both = 12.0 * par(60, 60) / (20 + par(60, 60))          # both lamps: junction at 12 V · 30/50 = 7,2 V
 V_one = 12.0 * 60 / (20 + 60)                             # one lamp: 12 V · 60/80 = 9,0 V
 a["fy6-5-L3-03"] = V_one - V_both                         # the junction's potential rises by 1,8 V
+# Exercise bank additions (teacher 2026-11-04): L1-06 and L1-07 are multiple choice (no number)
+a["fy6-5-L1-08"] = 9.0 - 60 * 0.040 - 90 * 0.040          # V_C = V_A - R1 I - R2 I = 9,0 V - 2,4 V - 3,6 V = 3,0 V
+a["fy6-5-L2-05"] = 12.0 / 60 + 12.0 / 80 + 12.0 / 50      # data: branch readings agree with U / R; main wire I_0 = 0,20 + 0,15 + 0,24 = 0,59 A (reading 0,50 A is wrong)
+a["fy6-5-L2-06"] = (8.4 - 3.6) / 0.12                     # data: R2 between C (8,4 V) and D (3,6 V): 4,8 V : 0,12 A = 40 ohm
+a["fy6-5-L2-07"] = 0 - 100 * (9.0 / (100 + 200))          # error analysis: zero at the plus pole, V = -R1 I = -3,0 V
+# L3-04: two sources, three parallel branches; I1 + I3 = I2, U1 - R1 I1 - R2 I2 = 0, U2 - R3 I3 - R2 I2 = 0
+I2 = (12.0 / 30 + 9.0 / 30) / (1 + 20 / 30 + 20 / 30)    # I2 (1 + R2/R1 + R2/R3) = U1/R1 + U2/R3 -> 0,30 A
+I1 = (12.0 - 20 * I2) / 30                                # 0,20 A
+I3 = (9.0 - 20 * I2) / 30                                 # 0,10 A
+assert abs(12.0 * I1 + 9.0 * I3 - (30 * I1**2 + 20 * I2**2 + 30 * I3**2)) < 1e-9   # energy balance 3,3 W
+a["fy6-5-L3-04"] = I2
+# L3-05: voltage divider 12 V, R1 = R2 = 100 ohm, load Rk in parallel with R2; V_P = 5,0 V
+Rp = 100 * 5.0 / (12.0 - 5.0)                             # R_p = R1 V / (U - V) = 71,4 ohm
+a["fy6-5-L3-05"] = 1 / (1 / Rp - 1 / 100)                 # 1/Rk = 1/Rp - 1/R2 -> 250 ohm
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

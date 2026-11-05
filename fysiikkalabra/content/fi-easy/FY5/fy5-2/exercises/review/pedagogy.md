@@ -1,12 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 7f243e11380e1fd4
+CONTENT-HASH: d09bd50771be86d1
+Mode: full
+Round: 1
 
 ## Blocking
 (none)
+
+## Fixed
+- L2-05: "pisteet ovat suoralla" -> "pisteet ovat samalla suoralla".
+- L3-05: "Etäisyys on ylävartalon kallistuskulman mukaan" -> "Etäisyys on annettu ... kallistuskulman mukaan".
+- Other text already plain Finnish (short sentences, terms from the glossary).
 
 ## Polish
 - None.
 
 ## Checked
-- The task texts and solutions were an unchanged copy of the Finnish. Now: every task text split into short sentences (one idea each, "Liikkeen kyltti" to "Kaupan kyltti"), all 12 "Periaate" paragraphs, the long "Järkevyys" and the shelf "Kaava" paragraph rewritten in short sentences; "etenemisen/pyörimisen" replaced by "liikkeen/kiertymisen" as in the easy lesson. Nothing dropped.
-- Delta: exercises/ unchanged since 20d2cb7 (git diff); the hash changed only because figures.json gained the seesaw figure words (keinu-voimat); the figures used by the exercises (hylly, kyltti) and their words are untouched, and the new subscript key 'l' is used only by the seesaw diagram. Verdict stands.
+- 8 + 7 + 5 tasks with the same levels, kinds, part structure (a/b/c) and "answer box takes ..." sentences as the Finnish; all seven solution parts present for the new tasks.
+- Data tasks keep the example-data notice and the graph / interpolation instructions; error task L2-06 quotes the student's solution unchanged.
+- Selkosuomi: short sentences, common words; Finnish terms (momenttiehto, painopiste, tukivoima) used as in the lesson; decimal comma in text and LaTeX, point in table cells as in fi.

@@ -39,6 +39,96 @@
       "answer": 22,
       "unit": "m/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-17-L1-06",
+      "level": 1,
+      "text": "Maanjäristyksen jälkeen asemat järistystä vastapäätä Maapallon toisella puolella havaitsevat P-aallon mutta eivät S-aaltoa. Mitä tästä päätellään Maan sisäosista?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Maan ulkoydin on nestettä: neste välittää pitkittäisen P-aallon mutta ei poikittaista S-aaltoa.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Maan ulkoydin on kiinteää, ja kiinteä aine heijastaa S-aallot takaisin mutta päästää P-aallot läpi.",
+          "feedback": "Kiinteä aine ei heijasta S-aaltoa pois, vaan välittää sen: S-aalto etenee kiinteässä, koska kerrokset vetävät sivulle siirtyneen kerroksen takaisin. Juuri nesteessä S-aalto ei etene."
+        },
+        {
+          "text": "S-aalto on P-aaltoa hitaampi, joten se ei ehdi toiselle puolelle Maapalloa ennen mittauksen loppua.",
+          "feedback": "Hitaampi aalto saapuu vain myöhemmin, eikä sen puuttumista voi selittää sillä. S-aalto kulkee kyllä Maan kuoren ja vaipan läpi, mutta ulkoydin pysäyttää sen."
+        },
+        {
+          "text": "Maan ulkoydin on nestettä: neste välittää pitkittäisen P-aallon mutta ei poikittaista S-aaltoa.",
+          "feedback": "Oikein: poikittainen aalto tarvitsee väliaineen, joka vastustaa muodon muuttumista, eikä neste vastusta. P-aalto etenee nesteessäkin, joten S-aalloille jää varjoalue ja P-aaltoja havaitaan silti.",
+          "correct": true
+        },
+        {
+          "text": "S-aalto on poikittainen, joten sen energia kuluu loppuun Maan keskipisteen lähellä, mutta P-aalto ei.",
+          "feedback": "Poikittaisuus ei kuluta aallon energiaa loppuun. S-aalto etenee pitkiä matkoja kiinteässä kalliossa, eikä aallon suunta vaikuta siihen, vaan se, välittääkö väliaine poikittaisen aallon."
+        }
+      ]
+    },
+    {
+      "id": "fy5-17-L1-07",
+      "level": 1,
+      "text": "Ultraäänitutkimuksessa anturin ja ihon väliin levitetään geeliä. Mikä on geelin tehtävä?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Geeli poistaa ihon ja anturin väliltä ilman, joka heijastaisi lähes koko pulssin takaisin.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Geeli tekee ihosta sileän peilipinnan, joten pulssi heijastuu iholta takaisin tarkemmin.",
+          "feedback": "Tutkimuksessa halutaan päinvastoin, että pulssi pääsee ihon läpi ja heijastuu vasta kudosten rajapinnoilta. Kuvan tekevät syvemmältä palaavat kaiut."
+        },
+        {
+          "text": "Geeli poistaa ihon ja anturin väliltä ilman, joka heijastaisi lähes koko pulssin takaisin.",
+          "feedback": "Oikein: ilman ja ihon rajapinnalta heijastuu lähes koko pulssi, joten ilmakerros pysäyttäisi sen. Geelin ja ihon rajapinnalta heijastuu vain pieni osa, joten pulssi pääsee kudokseen.",
+          "correct": true
+        },
+        {
+          "text": "Geeli kasvattaa pulssin taajuutta, jolloin aallonpituus lyhenee ja kuvasta tulee tarkempi.",
+          "feedback": "Taajuuden määrää anturi eikä geeli. Väliaine ei muuta lähetetyn pulssin taajuutta; geeli vain poistaa heijastavan ilmakerroksen."
+        },
+        {
+          "text": "Geeli vaimentaa syvien kudosten kaikuja, jotta ne eivät sekoitu pinnan lähellä oleviin kaikuihin.",
+          "feedback": "Kaikujen vaimentaminen huonontaisi kuvaa. Jokainen rajapinta halutaan näkyviin, ja geelin tarkoitus on päinvastoin päästää pulssi kudokseen eikä heikentää sitä."
+        }
+      ]
+    },
+    {
+      "id": "fy5-17-L1-08",
+      "level": 1,
+      "text": "Ultraäänikuvauksessa pienin erottuva yksityiskohta on sitä pienempi, mitä suurempi pulssin taajuus on. Silti syvällä olevaa rakennetta kuvataan usein pienemmällä taajuudella. Miksi suurinta mahdollista taajuutta ei käytetä aina?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Suuri taajuus vaimenee kudoksessa nopeasti, joten syvältä tulevat kaiut olisivat liian heikkoja.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Suuri taajuus hidastaa ääntä kudoksessa, joten kaiku palaisi syvältä liian myöhään kuvaan.",
+          "feedback": "Äänen nopeuden määrää väliaine, ei taajuus: kudoksessa pulssi etenee likimain nopeudella $1540\\,\\text{m/s}$ kaikilla kuvauksessa käytetyillä taajuuksilla. Kaiku ei siis myöhästy taajuuden vuoksi."
+        },
+        {
+          "text": "Suuri taajuus antaa pitkän aallonpituuden, joten pienet yksityiskohdat sumenisivat kuvassa.",
+          "feedback": "Yhtälöstä $v = f\\lambda$ seuraa päinvastoin: kun nopeus on sama, suuri taajuus antaa lyhyen aallonpituuden ja tarkan kuvan. Tarkkuus ei siis ole ongelma vaan suuren taajuuden etu."
+        },
+        {
+          "text": "Suuri taajuus heijastuu kokonaan jo ihon pinnalta, joten pulssi ei pääsisi ollenkaan kudokseen sisään.",
+          "feedback": "Heijastuvan osuuden määrää rajapinnan kahden aineen ero, ei pulssin taajuus. Geelillä pulssi pääsee ihon läpi myös suurella taajuudella."
+        },
+        {
+          "text": "Suuri taajuus vaimenee kudoksessa nopeasti, joten syvältä tulevat kaiut olisivat liian heikkoja.",
+          "feedback": "Oikein: kudos vaimentaa suuritaajuista ultraääntä nopeasti, joten pulssi ei yletä syvälle ja kaiut heikkenevät. Syvälle kuvataan pienemmällä taajuudella, vaikka kuva on silloin karkeampi.",
+          "correct": true
+        }
+      ]
     }
   ],
   "level2": [
@@ -74,6 +164,106 @@
       "answer": 20,
       "unit": "s",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy5-17-L2-05",
+      "level": 2,
+      "kind": [
+        "data"
+      ],
+      "text": "Ultraäänilaite piirtää A-kuvauksen, jossa kolme kaikupiikkiä vastaa kolmea kudosrajaa. Taulukossa on piikkien hetket pulssin lähettämisestä lukien (esimerkkiaineisto). Ääni etenee kudoksessa nopeudella $1540\\,\\text{m/s}$.\n\na) Laske kunkin rajapinnan syvyys.\n\nb) Kuinka paksu on kudoskerros, jota rajaavat piikkejä 2 ja 3 vastaavat rajapinnat? Anna vastaus senttimetreinä.\n\nVastauslaatikkoon kirjoitetaan b-kohdan kerroksen paksuus.",
+      "answer": 3.87,
+      "unit": "cm",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "A-kuvauksen kaikupiikit (esimerkkiaineisto)",
+        "columns": [
+          "Piikki",
+          "$t\\,(\\mu\\text{s})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "21.4"
+          ],
+          [
+            "2",
+            "58.9"
+          ],
+          [
+            "3",
+            "109.2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-17-L2-06",
+      "level": 2,
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "text": "Opiskelijat mittaavat äänen nopeutta vedessä ultraäänellä. Vesiastian seinään kiinnitetty anturi lähettää pulssin kohti metallilevyä, joka on vedessä etäisyydellä $L$ anturista, ja mittaa kaiun paluuajan $t$. Levyn paikkaa muutetaan neljä kertaa (esimerkkiaineisto).\n\nLaske äänen nopeus jokaisesta mittauksesta ja anna nopeuksien keskiarvo $v_\\text{ka}$. Anna vastaus metreinä sekunnissa.",
+      "answer": 1480,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Levyn etäisyys ja kaiun paluuaika vedessä (esimerkkiaineisto)",
+        "columns": [
+          "$L\\,(\\text{cm})$",
+          "$t\\,(\\mu\\text{s})$"
+        ],
+        "rows": [
+          [
+            "20.0",
+            "270"
+          ],
+          [
+            "30.0",
+            "407"
+          ],
+          [
+            "40.0",
+            "540"
+          ],
+          [
+            "50.0",
+            "677"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-17-L2-07",
+      "level": 2,
+      "text": "Opiskelija ratkaisee tehtävän: ”Seismografiasemalla S-aalto saapui $16{,}0\\,\\text{s}$ P-aallon jälkeen. P-aallon nopeus on $6{,}0\\,\\text{km/s}$ ja S-aallon $3{,}5\\,\\text{km/s}$. Kuinka kaukana järistys tapahtui?”\n\nOpiskelijan ratkaisu: $d = v_\\text{P}\\,\\Delta t = 6{,}0\\,\\text{km/s} \\cdot 16{,}0\\,\\text{s} = 96\\,\\text{km}$.\n\nTulos on väärä. Mikä virhe ratkaisussa on?",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "answer": "Aikaero $\\Delta t$ ei ole P-aallon kulkuaika vaan kulkuaikojen erotus, joten $d \\neq v_\\text{P}\\,\\Delta t$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Aallon kulkema matka pitäisi jakaa kahdella, koska aalto kulkee järistyksestä asemalle ja takaisin.",
+          "feedback": "Maanjäristysaalto kulkee vain yhteen suuntaan, järistyksestä asemalle. Jakaminen kahdella kuuluu kaikuun, joka palaa lähteen luo, ja se tekisi tuloksesta vielä pienemmän."
+        },
+        {
+          "text": "Laskussa pitäisi käyttää S-aallon nopeutta, koska aikaero mitataan S-aallon saapumishetkeen asti.",
+          "feedback": "Aikaero ei ole S-aallon kulkuaika, joten tulokseksi tulisi $3{,}5\\,\\text{km/s} \\cdot 16{,}0\\,\\text{s} = 56\\,\\text{km}$, mikä on yhtä väärin. Aikaero on kahden kulkuajan erotus."
+        },
+        {
+          "text": "Sekunnit pitäisi muuttaa tunneiksi, koska nopeus on annettu kilometreinä eikä metreinä sekunnissa.",
+          "feedback": "Nopeus on yksikössä $\\text{km/s}$ ja aika sekunteina, joten sekunnit supistuvat ja tulos on suoraan kilometreinä. Yksiköt on ratkaisussa käsitelty oikein."
+        },
+        {
+          "text": "Aikaero $\\Delta t$ ei ole P-aallon kulkuaika vaan kulkuaikojen erotus, joten $d \\neq v_\\text{P}\\,\\Delta t$.",
+          "feedback": "Oikein: P-aalto kulki jo ennen kuin aikaa $\\Delta t$ aletaan mitata. Oikea matka saadaan kaavasta $d = \\dfrac{v_\\text{P} v_\\text{S}}{v_\\text{P} - v_\\text{S}}\\,\\Delta t$, ja se on $134\\,\\text{km}$.",
+          "correct": true
+        }
+      ]
     }
   ],
   "level3": [
@@ -100,6 +290,82 @@
       "answer": 10,
       "unit": "km",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-17-L3-04",
+      "level": 3,
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "text": "Kolme seismografiasemaa rekisteröi saman maanjäristyksen. Asemien paikat on annettu koordinaatteina, joissa $x$-akseli osoittaa itään ja $y$-akseli pohjoiseen (yksikkö $\\text{km}$). Jokaisella asemalla on mitattu S- ja P-aallon saapumisaikojen erotus $\\Delta t$ (esimerkkiaineisto).\n\nOletetaan, että aallot etenevät suoraan tasaisilla nopeuksilla $v_\\text{P} = 6{,}0\\,\\text{km/s}$ ja $v_\\text{S} = 3{,}5\\,\\text{km/s}$ ja että järistys on samassa tasossa asemien kanssa.\n\na) Laske järistyksen etäisyys jokaiselta asemalta.\n\nb) Ratkaise järistyksen paikan koordinaatit asemien A ja B etäisyyksistä. Asema C ratkaisee, kumpi kahdesta mahdollisesta paikasta on oikea.\n\nc) Perustele, miksi kaksi asemaa ei riitä paikantamiseen.\n\nVastauslaatikkoon kirjoitetaan b-kohdan järistyksen $y$-koordinaatti kilometreinä.",
+      "answer": 42,
+      "unit": "km",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Asemat ja aikaerot (esimerkkiaineisto)",
+        "columns": [
+          "Asema",
+          "$(x,\\,y)\\,(\\text{km})$",
+          "$\\Delta t\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "A",
+            "(0, 0)",
+            "10.0"
+          ],
+          [
+            "B",
+            "(120, 0)",
+            "7.5"
+          ],
+          [
+            "C",
+            "(60, 90)",
+            "5.9"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-17-L3-05",
+      "level": 3,
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "text": "Merenpohjan järistys synnyttää tsunamin, joka etenee suoraan rannikolle kolmen osuuden kautta. Taulukossa on osuuksien pituudet ja veden syvyydet (esimerkkiaineisto). Oletetaan, että syvyys on jokaisella osuudella vakio, aallonpituus on kaikilla osuuksilla noin $200\\,\\text{km}$ valtamerellä ja yli $10\\,\\text{km}$ myös rannikolla ja aallon nopeus noudattaa kaavaa $v = \\sqrt{g h}$.\n\na) Laske tsunamin kulkuaika jokaisella osuudella ja koko matkalla.\n\nb) Vertaa osuuksien 1 ja 3 kulkuaikoja ja selitä, miksi lyhyin osuus vie kuitenkin yli puolet osuuden 1 ajasta. Perustele myös, miksi kaava on käypä viimeisellä osuudella.\n\nVastauslaatikkoon kirjoitetaan a-kohdan koko matkan kulkuaika minuutteina.",
+      "answer": 57,
+      "unit": "min",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Tsunamin reitti (esimerkkiaineisto)",
+        "columns": [
+          "Osuus",
+          "$s\\,(\\text{km})$",
+          "$h\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "300",
+            "4000"
+          ],
+          [
+            "2",
+            "100",
+            "1000"
+          ],
+          [
+            "3",
+            "20",
+            "50"
+          ]
+        ]
+      }
     }
   ]
 }

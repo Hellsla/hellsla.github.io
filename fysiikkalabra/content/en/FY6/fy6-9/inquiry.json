@@ -134,7 +134,7 @@
       "names": {
         "t": "duration of charging",
         "Ulat": "charger voltage",
-        "R": "resistance of charger and wires",
+        "R": "charger and wire resistance",
         "alku": "charge level at the start"
       },
       "units": {
@@ -180,7 +180,7 @@
       "names": {
         "t": "duration of charging",
         "Ulat": "charger voltage",
-        "R": "resistance of charger and wires",
+        "R": "charger and wire resistance",
         "alku": "charge level at the start"
       },
       "units": {
@@ -223,7 +223,7 @@
       "names": {
         "t": "duration of charging",
         "Ulat": "charger voltage",
-        "R": "resistance of charger and wires",
+        "R": "charger and wire resistance",
         "alku": "charge level at the start"
       },
       "units": {

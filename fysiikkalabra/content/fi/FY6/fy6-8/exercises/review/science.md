@@ -1,15 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: fc1949394b1858c6
+CONTENT-HASH: b5d23bcdac8390ad
+Round: 3. Re-review: the only change since the PASS is the boxed value moved to the start of the first answer-step line (answers_shown). Round 2: Checked the round-1 Blocking fix and the diff since 00b2dcb54 (tolerances, new L2-06 table, L2-05 slope uncertainty, L3-05 as a four-AA group, L3-04 and L1-07 heat wording, option order in L1-06 and L1-07, answers.py comment).
 
 ## Blocking
 
 ## Polish
-- exercises/solutions.md:43 (L1-05 Periaate) — "Oikosulkuvirtaa ei mitattu" now sits next to points that are "mallista lasketut", so "mitattu" implies the other points were measured. Write "Oikosulkupiste ei ole kuvaajan pisteiden joukossa, vaan …".
-- exercises/solutions.md:49 (L1-05 Järkevyys) — "pysyy samana myös mittausalueen ulkopuolella": with model points, "pisteiden alueen ulkopuolella".
-- Carried from round 1: L3-03 rounding reason (the 2,0 Ω and 6,0 Ω data limit R_s I₁) and L1-05 reading uncertainty (about 0,1 A, not the 0,5 A grid step).
+- solutions.md:186 (fy6-8-L3-04 b) — "Vastauslaatikkoon:" now repeats the label already on line 185. Optional: start b) with "Noin $35\,\%$ …".
+- solutions.md:146 (fy6-8-L2-05 Kuvaajan lukeminen) — b) now asks how much the slope can vary, and the solution states "±0,03 Ω" without showing how it was found. Add the method: draw the steepest and the shallowest line that still pass the points within about ±0,01 V, for example (0,20 A; 1,44 V)–(1,20 A; 0,85 V) and (0,20 A; 1,42 V)–(1,20 A; 0,87 V), which give 0,59 Ω and 0,55 Ω.
+- L2-07 repeats L1-06's idea (no current gives E) at level 2. This is for pedagogy to judge.
 
 ## Checked
-- Change judged: L1-05 task text and solution no longer call the figure's points measured; "(mallista lasketut pisteet)" matches the figure catalog ("four model (I, U) points") and figures.py (points on U = 4,5 − 1,5 I exactly). This removes the invented-measurement problem (guardrail: say whether data are measured, simulated or calculated).
-- Extrapolation to U = 0 still says why it is justified (R_s constant beyond the points).
-- All 12 answers recomputed in one script with my own formulas (L3-01 by node analysis, L1-05 from the slope of two points, L3-03 by solving two equations): 1,38 V; 32,5 A; 6,2 V; 0,15 Ω; 3,0 A; 1,0 Ω; 5,5 V; 3,0 W; 1,0 A; 0,75 A; 0,316 A; 1,60 V — all match answers.py and exercises.json.
-- No number, symbol or answer changed; physics, notation (E, R_s, I_k) and assumptions as in my earlier PASS.
+- Hash b5d23bcdac8390ad at start and end.
+- Round-1 Blocking is resolved. The L2-05 tolerance 0,06 accepts 0,526–0,594 Ω, which covers the stated 0,53–0,59 Ω. The L2-06 tolerance 0,13 accepts 0,348–0,452 A, which covers 0,35–0,45 A.
+- L2-06 new rows: they match U = 1,60 − 0,50 I (A) and 1,49 − 0,22 I (B) to ±0,005 V. Least squares gives a crossing at 0,396 A, between the 0,30 A row (A higher) and the 0,50 A row (B higher), as the solution says. The crossing is no longer a table row.
+- L2-05: least squares gives 0,559 Ω and E = 1,539 V. ±0,03 Ω is a realistic by-eye range (standard error 0,010 Ω).
+- L3-05: for a four-AA group, E = 6,11 V and R_s = 0,80 Ω (0,2 Ω per cell) are realistic. I_k = 7,6 A agrees with answers.py. The giveaway sentence is gone, and the answers.py comment now says 5,6 A.
+- L3-04 and L1-07: "muuttuu pariston sisäenergiaksi" and "sisäenergia kasvaa" follow the heat guardrail.
+- L1-06, L1-07 and L2-07: one correct option each, and `answer` equals its text. "merkitty" is removed. The distractor feedback is right.
+- L2-06: "B pystyy antamaan suuremman virran" is now the right cause.
+- answers.py was recomputed and compared with every numeric answer; all agree.
+- L3-04 answer step now starts "Vastauslaatikkoon $35\,\%$." It equals the key 35 % (tol 0,05), the Sijoitus share 0,355 and b); same unit, LaTeX; the line reads well.

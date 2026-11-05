@@ -27,4 +27,20 @@ v_chain = 2 * pi * 0.100 * 1.0                           # chain: v = 2π · 0,1
 f_rear = v_chain / (2 * pi * 0.040)                      # rear sprocket and wheel: f = 0,6283 / (2π · 0,040 m) = 2,5 1/s
 v_bike = 2 * pi * 0.34 * f_rear                          # tyre around the hub = bike's speed (no slipping): 5,341 m/s
 a["fy5-3-L3-03"] = v_bike * 3.6                          # 5,341 m/s = 5,341 · 3,6 km/h = 19,23 km/h -> 19 km/h
+# Exercise bank additions (teacher 2026-11-04): L1-06 is multiple choice (no number)
+a["fy5-3-L1-07"] = 1 / (3000 / 60)                       # crankshaft: f = 3000 / 60 s = 50 1/s, T = 1 / f = 0,020 s
+a["fy5-3-L1-08"] = 2 * pi * 120 / 3600                   # minute hand: v = 2π · 120 mm / 3600 s = 0,2094 mm/s -> 0,21 mm/s
+t10 = [41.2, 40.6, 41.8, 40.9, 41.5]                     # data of L2-05: ten laps, five timings
+T_carousel = (sum(t10) / len(t10)) / 10                  # mean 41,2 s for ten laps -> T = 4,12 s
+a["fy5-3-L2-05"] = 2 * pi * 2.1 / T_carousel             # seat: v = 2π · 2,1 m / 4,12 s = 3,203 m/s -> 3,2 m/s
+sats = [(6.92e6, 95.5), (26.56e6, 717.9), (42.16e6, 1436)]   # data of L2-06: (r in m, T in min)
+v_sat = [2 * pi * r / (T * 60) / 1000 for r, T in sats]  # km/s: 7,588 / 3,874 / 3,0745
+a["fy5-3-L2-06"] = round(v_sat[2], 2)                    # geostationary: v = 2π · 42,16e6 m / 86160 s = 3,0745 km/s -> 3,07 km/s
+a["fy5-3-L2-07"] = 2 * pi * (0.64 / 2) * 8.0             # radius = d / 2 = 0,32 m: v = 2π · 0,32 m · 8,0 1/s = 16,08 m/s -> 16 m/s
+R_e, T_e = 6371e3, 86164                                 # Earth model: R = 6371 km, T = 86 164 s
+v_lat = lambda phi: 2 * pi * R_e * math.cos(math.radians(phi)) / T_e   # latitude circle r = R cos φ
+a["fy5-3-L3-04"] = v_lat(5.2) - v_lat(62.7)              # Kourou 462,7 m/s − Plesetsk 213,1 m/s = 249,6 m/s -> 250 m/s
+N_turns = (58 - 25) / 1.6e-3                             # CD: (58 − 25) mm / 0,0016 mm = 20 625 turns
+s_track = N_turns * 2 * pi * 0.0415                      # N · 2π r_ka, r_ka = 41,5 mm: 5378 m
+a["fy5-3-L3-05"] = s_track / 1.2 / 60                    # t = s / v = 4482 s = 74,7 min -> 75 min
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

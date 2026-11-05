@@ -39,6 +39,74 @@
       "answer": 51.2,
       "unit": "W",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-15-L1-06",
+      "level": 1,
+      "text": "Pesukoneen metallirunko on liitetty suojamaadoitusjohtimella maahan. Mikä väite suojamaadoituksen tehtävästä on oikein?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Se ohjaa vikavirran maahan, jolloin sulake tai vikavirtasuoja katkaisee virran.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Se pienentää laitteen sähkönkulutusta, koska osa virrasta palaa maahan hyödyttömänä.",
+          "feedback": "Maadoitus ei vaikuta laitteen normaaliin sähkönkulutukseen: normaalikäytössä maadoitusjohtimessa ei kulje virtaa lainkaan. Se tulee käyttöön vasta vian sattuessa."
+        },
+        {
+          "text": "Se ohjaa vikavirran maahan, jolloin sulake tai vikavirtasuoja katkaisee virran.",
+          "correct": true,
+          "feedback": "Oikein: kun vaihejohdin koskettaa vian takia runkoa, maadoitusjohdin vie suuren vikavirran maahan. Virta kasvaa niin suureksi, että suojalaite katkaisee sen, eikä runko jää jännitteiseksi."
+        },
+        {
+          "text": "Se eristää rungon maasta, jolloin vika ei voi päästää virtaa kulkemaan rungossa.",
+          "feedback": "Maadoitus tekee päinvastoin: se yhdistää rungon maahan johtimella. Jos runko olisi eristetty, vikavirta ei pääsisi pois ja runko voisi jäädä jännitteiseksi."
+        },
+        {
+          "text": "Se pitää rungon aina jännitteisenä, jolloin vika huomataan ennen kuin laite hajoaa.",
+          "feedback": "Maadoituksen tarkoitus on estää runkoa jäämästä jännitteiseksi. Jännitteinen runko olisi sähköiskun vaara, ei hyödyllinen merkki viasta."
+        }
+      ]
+    },
+    {
+      "id": "fy6-15-L1-07",
+      "level": 1,
+      "text": "Hiustenkuivaaja kuuluu suojausluokkaan II. Mikä väite luokan II laitteesta on oikein?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Laitteessa on kaksinkertainen eristys, joten kuori ei tule jännitteiseksi yhden vian takia.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Laitteen metallirunko on liitetty maadoitusjohtimeen, joten vikavirta kulkee johdinta pitkin maahan.",
+          "feedback": "Tämä kuvaa luokkaa I, jonka metallirunko on suojamaadoitettu. Luokan II laitteessa ei ole suojamaadoitusta vaan kaksinkertainen tai vahvistettu eristys."
+        },
+        {
+          "text": "Laite toimii pienellä suojajännitteellä, joten siinä ei ole vaarallista jännitettä lainkaan.",
+          "feedback": "Tämä kuvaa luokkaa III, jossa laite toimii pienellä suojajännitteellä. Luokan II laite kytketään verkkojännitteeseen $230\\,\\text{V}$, ja sen suoja on eristyksessä."
+        },
+        {
+          "text": "Laitteen kuori on tiivis ja vesitiivis, joten sitä voi käyttää turvallisesti suihkussa.",
+          "feedback": "Suojausluokka kertoo suojauksesta sähköiskua vastaan, ei kosteudenkestosta. Märkätilaan sopivuus määräytyy muiden merkintöjen mukaan, eikä luokan II hiustenkuivaajaa saa silti käyttää suihkussa."
+        },
+        {
+          "text": "Laitteessa on kaksinkertainen eristys, joten kuori ei tule jännitteiseksi yhden vian takia.",
+          "correct": true,
+          "feedback": "Oikein: luokan II laitteessa on kaksinkertainen tai vahvistettu eristys, joten yksi eristysvika ei vielä tuo verkkojännitettä käyttäjän kosketeltavaan kuoreen. Siksi se ei tarvitse suojamaadoitusta."
+        }
+      ]
+    },
+    {
+      "id": "fy6-15-L1-08",
+      "level": 1,
+      "text": "Kaksi metallilevyä on ilmassa $2{,}0\\,\\text{mm}$:n päässä toisistaan, ja niiden välinen sähkökenttä on tasainen. Ilman läpilyöntilujuus on $3{,}0\\,\\text{MV/m}$. Kuinka suuri jännite levyjen välillä saa enintään olla, jotta ilma ei lyö läpi? Vastaa kilovoltteina.",
+      "answer": 6.0,
+      "unit": "kV",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,6 +141,95 @@
       "answer": 15.0,
       "unit": "V",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-15-L2-05",
+      "level": 2,
+      "text": "Taulukossa on neljän tilanteen virtatien resistanssi $R$, kun ihminen koskettaa jännitteistä osaa ja kosketusjännite on $230\\,\\text{V}$ (esimerkkiaineisto).\n\nVirran vaikutukset (IEC 60479-1:n tyyppiset suuntaa antavat arvot): tuntokynnys $0{,}5\\,\\text{mA}$, irrottamiskynnys $10\\,\\text{mA}$, hengitys vaikeutuu $30\\,\\text{mA}$ ja kammiovärinän vaara yli $50\\,\\text{mA}$.\n\na) Laske kehon läpi kulkeva virta jokaisessa tilanteessa ja kerro, mikä virran vaikutus on kyseessä.\n\nb) Kuinka moninkertainen virta on kylpyammeessa verrattuna kuivaan ihoon ja kumikenkiin?\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 61.11,
+      "unit": "kertaa",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Virtatien resistanssi $R$ eri tilanteissa (esimerkkiaineisto)",
+        "columns": [
+          "Tilanne",
+          "$R\\,(\\text{k}\\Omega)$"
+        ],
+        "rows": [
+          [
+            "Kuiva iho, kumikengät",
+            "55"
+          ],
+          [
+            "Kuiva iho, paljaat jalat",
+            "12"
+          ],
+          [
+            "Märät kädet",
+            "2.4"
+          ],
+          [
+            "Kylpyammeessa",
+            "0.90"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-15-L2-06",
+      "level": 2,
+      "text": "Kodin ryhmäjohto on suojattu $10\\,\\text{A}$:n sulakkeella, ja verkkojännite on $230\\,\\text{V}$. Taulukossa ovat ryhmään kytkettävät laitteet ja niiden ottotehot (esimerkkiaineisto).\n\na) Mitkä kahden laitteen yhdistelmät ylittävät sulakkeen nimellisvirran, kun molemmat ovat päällä yhtä aikaa?\n\nb) Valitse laitepari, jonka yhteisteho on mahdollisimman suuri mutta ei ylitä sulakkeen rajaa. Kuinka suuri virta ryhmäjohdossa silloin kulkee? Vastaa ampeereina.\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 9.565,
+      "unit": "A",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Laitteiden ottotehot $P$ (esimerkkiaineisto)",
+        "columns": [
+          "Laite",
+          "$P\\,(\\text{W})$"
+        ],
+        "rows": [
+          [
+            "Vedenkeitin",
+            "2000"
+          ],
+          [
+            "Pölynimuri",
+            "1400"
+          ],
+          [
+            "Silitysrauta",
+            "1100"
+          ],
+          [
+            "Leivänpaahdin",
+            "800"
+          ],
+          [
+            "Kahvinkeitin",
+            "600"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-15-L2-07",
+      "level": 2,
+      "text": "Opiskelija kirjoittaa: \"Ryhmäjohtoni sulake on $16\\,\\text{A}$, joten se suojaa minua sähköiskulta. Jos kosketan vioittuneen laitteen jännitteistä runkoa, sulake katkaisee virran heti.\"\n\nKosketusjännite on $230\\,\\text{V}$, ja märän ihmisen virtatien resistanssi on $2{,}00\\,\\text{k}\\Omega$.\n\na) Mikä opiskelijan väitteessä on virhe? Nimeä laite, joka katkaisee ihmisen läpi kulkevan pienen virran.\n\nb) Laske kehon läpi kulkeva virta milliampeereina.\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
+      "kind": [
+        "error"
+      ],
+      "answer": 115.0,
+      "unit": "mA",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -100,6 +257,86 @@
       "answer": 50.0,
       "unit": "mA",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-15-L3-04",
+      "level": 3,
+      "text": "Jatkojohto lämpenee, kun siinä kulkee virta. Johdon johtimien yhteenlaskettu resistanssi on $0{,}40\\,\\Omega$. Johdon kuoren lämpötilan nousu $\\Delta T$ ympäristöön nähden mitattiin eri virroilla sen jälkeen, kun lämpötila oli vakiintunut (esimerkkiaineisto). Oleta, että lämpötilan nousu riippuu johdossa kehittyvästä lämpötehosta samalla tavalla kaikilla virroilla.\n\na) Laske lämpöteho $P = RI^2$ jokaiselle virralle ja piirrä pisteet $(P,\\, \\Delta T)$. Perustele kuvaajasta, että lämpötilan nousu on suoraan verrannollinen lämpötehoon, ja sovita pisteisiin origon kautta kulkeva suora. Määritä sen kulmakerroin $k$ yksikössä $\\text{K/W}$.\n\nb) Johdon eriste kestää enintään $50\\,\\text{K}$:n lämpötilan nousun. Laske virta, jolla tämä raja tulee vastaan. Vastaa ampeereina.\n\nc) Päättele laskemalla, riittääkö $16\\,\\text{A}$:n sulake suojaamaan johtoa ylikuumenemiselta. Entä $25\\,\\text{A}$:n sulake?\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
+      "kind": [
+        "data",
+        "graph",
+        "model"
+      ],
+      "answer": 20.5,
+      "unit": "A",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Jatkojohdon kuoren lämpötilan nousu $\\Delta T$ virran $I$ funktiona (esimerkkiaineisto)",
+        "columns": [
+          "$I\\,(\\text{A})$",
+          "$\\Delta T\\,(\\text{K})$"
+        ],
+        "rows": [
+          [
+            "4.0",
+            "2.1"
+          ],
+          [
+            "8.0",
+            "7.6"
+          ],
+          [
+            "12.0",
+            "17.2"
+          ],
+          [
+            "16.0",
+            "30.4"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-15-L3-05",
+      "level": 3,
+      "text": "Pyykinkoneen suojamaadoitusjohdin on katkennut, joten koneen runko ei ole maadoitettu. Lämmitysvastuksen eristys on alkanut heikentyä: jos vaihejohdin vuotaa eristyksen läpi runkoon, vuotopolun resistanssi $R_\\text{e}$ on sarjassa runkoa koskettavan ihmisen kanssa. Eristysresistanssi mitattiin kahden viikon välein (esimerkkiaineisto).\n\nOletetaan, että märällä lattialla seisova ihminen koskettaa runkoa ja hänen virtatien resistanssinsa on $R_\\text{k} = 1{,}5\\,\\text{k}\\Omega$. Jännite on $230\\,\\text{V}$, ja vikavirtasuoja laukeaa, kun maahan kulkeva virta ylittää $30\\,\\text{mA}$.\n\na) Laske ihmisen läpi kulkeva virta jokaisena mittausviikkona.\n\nb) Missä mittauksessa vikavirtasuoja laukeaa? Perustele aineistosta, miksi vikavirtasuoja ei silti yksin tee tilanteesta turvallista aiemmilla viikoilla.\n\nc) Laske suurin eristysresistanssi $R_\\text{e}$, jolla vikavirtasuoja vielä laukeaa. Vastaa kiloohmeina.\n\nKirjoita vastauslaatikkoon kohdan c) tulos.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 6.167,
+      "unit": "kΩ",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Lämmitysvastuksen eristysresistanssi $R_\\text{e}$ (esimerkkiaineisto)",
+        "columns": [
+          "Viikko",
+          "$R_\\text{e}\\,(\\text{k}\\Omega)$"
+        ],
+        "rows": [
+          [
+            "1",
+            "900"
+          ],
+          [
+            "3",
+            "120"
+          ],
+          [
+            "5",
+            "40"
+          ],
+          [
+            "7",
+            "12"
+          ],
+          [
+            "9",
+            "4.0"
+          ]
+        ]
+      }
     }
   ]
 }

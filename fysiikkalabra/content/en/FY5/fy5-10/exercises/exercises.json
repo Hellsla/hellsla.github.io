@@ -39,6 +39,74 @@
       "answer": 0.25,
       "unit": "s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-10-L1-06",
+      "level": 1,
+      "text": "A coil spring can be made to vibrate in two ways: its end can be pushed back and forth in the direction of the spring or shaken sideways. Which statement about a longitudinal wave is correct?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The points of the spring vibrate in the direction of propagation, and compressions and rarefactions form in the spring",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The points of the spring vibrate perpendicular to the direction of propagation, and crests and troughs form in the spring",
+          "feedback": "This describes a transverse wave, not a longitudinal one. In a longitudinal wave the points of the medium vibrate in the direction of propagation."
+        },
+        {
+          "text": "The points of the spring travel along with the wave from the source to the receiver, and matter moves to the other end of the spring",
+          "feedback": "A wave does not carry matter with it. The points of the spring vibrate around their equilibrium positions and return to their places, and only the disturbance and energy move forward."
+        },
+        {
+          "text": "The points of the spring vibrate in the direction of propagation, and compressions and rarefactions form in the spring",
+          "feedback": "Correct: in a longitudinal wave the points of the medium vibrate in the direction of propagation, so travelling compressions and rarefactions form in the spring. Sound in air is a similar wave.",
+          "correct": true
+        },
+        {
+          "text": "The points of the spring stay in place, and only the end of the spring vibrates",
+          "feedback": "As the wave passes, every point of the spring vibrates in turn around its equilibrium position. The disturbance travels through the whole spring, so not all points stay in place."
+        }
+      ]
+    },
+    {
+      "id": "fy5-10-L1-07",
+      "level": 1,
+      "text": "The end of a taut rope is shaken steadily. Then the shaking frequency is doubled, but the rope and its tension stay the same. What happens to the wave?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The wavelength halves, because the speed stays the same and the wavelength is the speed divided by the frequency",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The wavelength halves, because the speed stays the same and the wavelength is the speed divided by the frequency",
+          "feedback": "Correct: the speed is determined by the rope, not by the movement of the hand. From the fundamental equation $\\lambda = v/f$ it follows that when $f$ doubles and $v$ stays the same, $\\lambda$ halves.",
+          "correct": true
+        },
+        {
+          "text": "The speed of the wave doubles, because more frequent shaking pushes the wave forward faster",
+          "feedback": "This is a common misconception. The speed is determined by the medium, that is, the rope and its tension, and the frequency does not change it. The frequency changes the wavelength."
+        },
+        {
+          "text": "The wavelength stays the same, because the wavelength is determined by the material of the rope and not by the movement of the hand",
+          "feedback": "The wavelength is not determined by the rope alone. The speed is determined by the rope, but the wavelength is $\\lambda = v/f$, so it also depends on the frequency of the source."
+        },
+        {
+          "text": "The wavelength doubles, because more frequent shaking stretches the wave longer",
+          "feedback": "With more frequent shaking, twice as many crests start in the same time, but they travel the same distance. So the crests fit closer together and the wavelength becomes shorter."
+        }
+      ]
+    },
+    {
+      "id": "fy5-10-L1-08",
+      "level": 1,
+      "text": "In a thunderstorm the lightning is seen practically at once, but the thunder is heard $4.0\\,\\text{s}$ later. The speed of sound in air is $343\\,\\text{m/s}$. How far away did the lightning strike? Give the answer in kilometres.",
+      "answer": 1.4,
+      "unit": "km",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +142,99 @@
       "answer": 6000,
       "unit": "m/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-10-L2-05",
+      "level": 2,
+      "text": "A longitudinal pulse travelling in a coil spring was filmed, and the position of the leading edge of the pulse was read from the frames. Example data is in the table. The position is measured from the zero mark of the measuring tape, and at the start of the filming the pulse was already slightly past the zero mark.\n\nDraw the $(t, x)$ graph and fit a straight line to the points. What is the speed of the pulse?\n\nGive the answer as the slope of the line.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 2.6,
+      "unit": "m/s",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Position of the leading edge of the pulse (example data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$x\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "0.00",
+            "0.10"
+          ],
+          [
+            "0.20",
+            "0.62"
+          ],
+          [
+            "0.40",
+            "1.13"
+          ],
+          [
+            "0.60",
+            "1.66"
+          ],
+          [
+            "0.80",
+            "2.17"
+          ],
+          [
+            "1.00",
+            "2.70"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-10-L2-06",
+      "level": 2,
+      "text": "A student studies a wave travelling in a taut rope. In the $(t, y)$ graph of one point of the rope the distance between successive peaks is $0.50\\,\\text{s}$. In a photograph of the rope, that is, in the $(x, y)$ graph, the distance between successive crests is $1.5\\,\\text{m}$.\n\nThe student solves: “The distance between the peaks is the wavelength, so $\\lambda = 0.50\\,\\text{m}$. The distance between the crests is the period, so $T = 1.5\\,\\text{s}$. So $v = \\lambda/T = 0.33\\,\\text{m/s}$.”\n\nWhat is wrong in the student's solution? Calculate the correct speed of the wave.",
+      "kind": [
+        "error"
+      ],
+      "answer": 3.0,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-10-L2-07",
+      "level": 2,
+      "text": "The speed of sound is measured with two microphones that are on the same line as a loudspeaker. The loudspeaker makes a short click, and a meter shows the time that the click needs to travel the distance between the microphones.\n\nExample data is in the table. The distance $d$ is the distance between the microphones and $\\Delta t$ is the travel time of the sound between them.\n\nDetermine the speed of sound by calculating the slope of the line through the points $d = 0.50\\,\\text{m}$ and $d = 2.00\\,\\text{m}$. Justify why the slope is better than the quotient of a single row.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 340,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Distance between the microphones and travel time (example data)",
+        "columns": [
+          "$d\\,(\\text{m})$",
+          "$\\Delta t\\,(\\text{ms})$"
+        ],
+        "rows": [
+          [
+            "0.50",
+            "1.5"
+          ],
+          [
+            "1.00",
+            "2.9"
+          ],
+          [
+            "1.50",
+            "4.4"
+          ],
+          [
+            "2.00",
+            "5.9"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -100,6 +261,75 @@
       "answer": 40,
       "unit": "s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-10-L3-04",
+      "level": 3,
+      "text": "Example data: a $12.0\\,\\text{m}$ long rope is tightened with different forces $F$, and a pulse made at the end of the rope travels the whole length of the rope in time $t$. The measurement results are in the table.\n\nCalculate the speed of the pulse for each tension. Investigate whether the speed depends on the tension directly proportionally or in some other way.\n\nThe rope is shaken at a frequency of $5.0\\,\\text{Hz}$ when the tension is $30\\,\\text{N}$. What is the wavelength of the wave that forms? Justify why the wavelength would change if the rope were replaced with a thicker one but the frequency were kept the same.\n\nGive the answer as the wavelength.",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 5.1,
+      "unit": "m",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Travel time of the pulse as a function of tension (example data)",
+        "columns": [
+          "$F\\,(\\text{N})$",
+          "$t\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "5.0",
+            "1.15"
+          ],
+          [
+            "10.0",
+            "0.800"
+          ],
+          [
+            "20.0",
+            "0.570"
+          ],
+          [
+            "40.0",
+            "0.410"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-10-L3-05",
+      "level": 3,
+      "text": "Example data: a long rope consists of two parts of different thickness joined together. The end of the rope is shaken steadily at a frequency of $5.0\\,\\text{Hz}$, and the wavelength is measured in both parts. The results are in the table.\n\nAt the start of the shaking, a single pulse is made in the rope, and it travels first through the thin part and then through the thick part. The reflection of the pulse at the joint is ignored, and the pulse travels at a steady speed in both parts.\n\nHow long does the pulse take to travel the whole length of the rope? Justify why the frequency is the same in both parts but the wavelength is not.",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 4.9,
+      "unit": "s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Parts of the rope (example data)",
+        "columns": [
+          "Part",
+          "$L\\,(\\text{m})$",
+          "$\\lambda\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "Thin",
+            "10.0",
+            "0.80"
+          ],
+          [
+            "Thick",
+            "6.0",
+            "0.50"
+          ]
+        ]
+      }
     }
   ]
 }

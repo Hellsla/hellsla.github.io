@@ -40,6 +40,77 @@
       "answer": 150.0,
       "unit": "eV",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-12-L1-06",
+      "level": 1,
+      "text": "Two small bodies are in a uniform electric field: the charge of one is $+q$ and that of the other $-q$. Each moves the same distance in the direction of the field. What happens to their electric potential energy?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The potential energy of the positive charge decreases and that of the negative charge increases, because the potential falls in the direction of the field.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The potential energy of both charges decreases, because the electric field does positive work on both charges during the displacement.",
+          "feedback": "The field does the work $q(V_A - V_B)$, and its sign depends on the sign of the charge. In the direction of the field a force in the opposite direction acts on the negative charge, so the field does negative work on it and its potential energy increases."
+        },
+        {
+          "text": "The potential energy of the positive charge increases and that of the negative charge decreases, because the potential increases in the direction of the field and $E_\\text{p} = qV$.",
+          "feedback": "The formula $E_\\text{p} = qV$ is correct, but the direction of the potential is wrong: the field points toward a lower potential, so in the direction of the field the potential decreases. Then the potential energy of the positive charge decreases and that of the negative charge increases."
+        },
+        {
+          "text": "The potential energy of the positive charge decreases and that of the negative charge increases, because the potential falls in the direction of the field.",
+          "correct": true,
+          "feedback": "Correct: the field points from a higher potential to a lower one, so in the direction of the field the potential $V$ decreases. The potential energy $qV$ then decreases for a positive charge and increases for a negative charge, because the sign of $q$ reverses the change."
+        },
+        {
+          "text": "The potential energy of both charges stays the same, because the charges move the same distance in the same uniform field.",
+          "feedback": "The field is uniform, but the potential is not the same everywhere: it changes steadily with distance, $V = Ex$. When a charge moves in the direction of the field, the potential at its location changes and the potential energy $qV$ changes with it."
+        }
+      ]
+    },
+    {
+      "id": "fy6-12-L1-07",
+      "level": 1,
+      "text": "The voltage between two parallel plates is $200\\,\\text{V}$. At first the negative plate is chosen as the zero point, so the potential of the positive plate is $+200\\,\\text{V}$. Then the positive plate is chosen as the zero point instead. Which claim is correct after this?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The potential of the negative plate is $-200\\,\\text{V}$, and the voltage is still $200\\,\\text{V}$, because the voltage is the difference of the potentials.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The voltage between the plates is now $0\\,\\text{V}$, because the potential of one plate is zero and the voltage is measured relative to the zero point.",
+          "feedback": "The voltage is the difference between the potentials of two points, not the potential of one point relative to the zero point. The potential of one plate is now zero, but that of the other is $-200\\,\\text{V}$, and the difference is still $200\\,\\text{V}$."
+        },
+        {
+          "text": "The potential of the negative plate is $-200\\,\\text{V}$, and the voltage is still $200\\,\\text{V}$, because the voltage is the difference of the potentials.",
+          "correct": true,
+          "feedback": "Correct: moving the zero point changes the potential of both plates by the same amount, but the difference of the potentials, that is, the voltage $U = 0 - (-200\\,\\text{V})$, stays the same. So the field is unchanged too."
+        },
+        {
+          "text": "The potential of the positive plate is still $+200\\,\\text{V}$, because the potential is a property of the plate itself and does not depend on the zero point.",
+          "feedback": "The potential tells the voltage relative to the chosen zero point, so it changes with the zero point: the potential of the positive plate is now $0\\,\\text{V}$. Only the potential difference, that is, the voltage, does not depend on the choice of the zero point."
+        },
+        {
+          "text": "The field between the plates reverses and the voltage is now $-200\\,\\text{V}$, because moving the zero point reverses the order of the potentials.",
+          "feedback": "Moving the zero point changes neither the direction nor the strength of the field: the field still points from the positive plate to the negative one. All potentials shift by the same amount, so their order and difference are preserved."
+        }
+      ]
+    },
+    {
+      "id": "fy6-12-L1-08",
+      "level": 1,
+      "text": "A doubly charged positive ion, whose charge is $+2e$, starts from rest and travels through a potential difference of $450\\,\\text{V}$. What is the final kinetic energy of the ion? Only the electric force acts on the ion. Answer in electronvolts.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 900.0,
+      "unit": "eV",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +145,119 @@
       "answer": 284.301,
       "unit": "V",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-12-L2-05",
+      "level": 2,
+      "text": "The separation of two parallel plates is $d = 6.0\\,\\text{cm}$. The potential between the plates is measured at different distances $x$ from the negative plate, which is the zero point. The values in the table are example data, and they contain a little measurement scatter.\n\na) Fit a line through the origin to the data points and calculate the field strength $E$ in the unit $\\text{V/m}$ from its slope (by the least-squares method or by reading one point from the line).\n\nb) Deduce the voltage $U$ between the plates.\n\nThe answer box takes the result of part b) in volts.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 30.1,
+      "unit": "V",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Potential (example data)",
+        "columns": [
+          "$x\\,(\\text{cm})$",
+          "$V\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "1.0",
+            "5.2"
+          ],
+          [
+            "2.0",
+            "9.7"
+          ],
+          [
+            "3.0",
+            "15.4"
+          ],
+          [
+            "4.0",
+            "19.6"
+          ],
+          [
+            "5.0",
+            "25.3"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-12-L2-06",
+      "level": 2,
+      "text": "A student writes: “A positive charge always moves by itself toward a higher potential, because a charge tends toward a greater energy.” What is the error in the claim when only the electric force acts on the charge?",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "answer": "The electric force accelerates a positive charge in the direction of the field, that is, toward a lower potential, and then its potential energy decreases.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The charge moves toward a higher potential only when its mass is small, and a heavier particle moves toward a lower potential.",
+          "feedback": "The direction of the motion is decided by the direction of the force, which is determined by the sign of the charge and the direction of the field, not by the mass. The mass affects only how strongly the particle accelerates: a positive charge starting from rest always accelerates in the direction of the field."
+        },
+        {
+          "text": "No force acts on the charge at all until it has reached zero potential, so the charge does not start moving by itself.",
+          "feedback": "The force depends on the field strength, not on where the zero point is. In a uniform field the same force $qE$ acts on the charge at every point, and the choice of the zero point is only a convention that does not change the field."
+        },
+        {
+          "text": "The charge moves toward a higher potential if the potential is positive, and toward a lower potential if the potential is negative.",
+          "feedback": "The direction of the motion does not depend on the sign of the potential, because the zero point is chosen freely. What matters is the change of the potential: a positive charge starting from rest always moves toward a lower potential, whether the potential is positive or negative."
+        },
+        {
+          "text": "The electric force accelerates a positive charge in the direction of the field, that is, toward a lower potential, and then its potential energy decreases.",
+          "correct": true,
+          "feedback": "Correct: the field points from a higher potential to a lower one, and a positive charge accelerates in the direction of the field. Then $E_\\text{p} = qV$ decreases and the kinetic energy grows. The charge tends toward a smaller potential energy, not a greater one."
+        }
+      ]
+    },
+    {
+      "id": "fy6-12-L2-07",
+      "level": 2,
+      "text": "A researcher accelerates positive ions from rest with different accelerating voltages $U$ and measures the final speed $v$ of each ion. The charge of every ion is $+e$, where $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$. The values in the table are example data, and they contain a little measurement scatter.\n\na) Calculate the mass of the ion for each row of the table and take the mean of the masses.\n\nb) Deduce the kind of the ion when the options are a proton ($1.673 \\cdot 10^{-27}\\,\\text{kg}$), a deuteron ($3.344 \\cdot 10^{-27}\\,\\text{kg}$) and a singly charged helium ion (He$^+$, $6.646 \\cdot 10^{-27}\\,\\text{kg}$).\n\nThe answer box takes the mean of part a) in kilograms.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 6.66e-27,
+      "unit": "kg",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Speed of the ion (example data)",
+        "columns": [
+          "$U\\,(\\text{V})$",
+          "$v\\,(10^{4}\\,\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "100",
+            "6.88"
+          ],
+          [
+            "200",
+            "9.95"
+          ],
+          [
+            "300",
+            "12.0"
+          ],
+          [
+            "400",
+            "13.9"
+          ],
+          [
+            "500",
+            "15.4"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -100,6 +284,64 @@
       "answer": 4.33521,
       "unit": "mm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-12-L3-04",
+      "level": 3,
+      "text": "In a cathode-ray tube the electrons start practically from rest and are accelerated by a voltage of $1.8\\,\\text{kV}$. Then they enter between two horizontal deflection plates, parallel to the plates, from the middle of the gap. The plates are $5.0\\,\\text{cm}$ long, their separation is $1.5\\,\\text{cm}$ and the voltage between them is $120\\,\\text{V}$.\n\nUse the values $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$, $m = 9.109 \\cdot 10^{-31}\\,\\text{kg}$ and $g = 9.81\\,\\text{m/s}^2$. Between the deflection plates the field is uniform, and outside the plates the field is neglected.\n\na) Calculate the speed of the electron before the deflection plates.\n\nb) Calculate how much the electron has been deflected from the straight line parallel to the plates when it leaves the space between the plates, and check whether it hits a plate.\n\nc) Justify by calculation that gravity can be neglected.\n\nThe answer box takes the deflection of part b) in millimetres.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 2.78,
+      "unit": "mm",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy6-12-L3-05",
+      "level": 3,
+      "text": "The kinetic energies of the electrons in an electron beam vary. The distribution is studied with a retarding voltage: the electrons arrive at a grid whose potential is lower than that of the source by $U_\\text{r}$, so an electron gets through the grid only if its kinetic energy is at least $eU_\\text{r}$. The share of the electrons that get through is measured at different retarding voltages. The values in the table are example data.\n\nUse the values $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$ and $m = 9.109 \\cdot 10^{-31}\\,\\text{kg}$. The speeds are so small compared with the speed of light that the expression $\\tfrac{1}{2}mv^2$ holds.\n\na) What share of the electrons has a kinetic energy of at least $40\\,\\text{eV}$ but less than $60\\,\\text{eV}$? Justify.\n\nb) Calculate the shares for each $20\\,\\text{eV}$ energy interval and estimate the mean kinetic energy of the electrons, assuming that the energy of the electrons of each interval is at the midpoint of the interval.\n\nc) Calculate the speed that corresponds to this mean kinetic energy.\n\nd) Justify briefly why the result of part b) is an estimate and not an exact value.\n\nThe answer box takes the speed of part c).",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 4140000.0,
+      "unit": "m/s",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Share that gets through (example data)",
+        "columns": [
+          "$U_\\text{r}\\,(\\text{V})$",
+          "Share $(\\%)$"
+        ],
+        "rows": [
+          [
+            "0",
+            "100"
+          ],
+          [
+            "20",
+            "98"
+          ],
+          [
+            "40",
+            "71"
+          ],
+          [
+            "60",
+            "22"
+          ],
+          [
+            "80",
+            "3"
+          ],
+          [
+            "100",
+            "0"
+          ]
+        ]
+      }
     }
   ]
 }

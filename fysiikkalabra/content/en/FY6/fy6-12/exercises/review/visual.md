@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 1476a6df92ad0e40
+CONTENT-HASH: 63fb0ff104381c6c
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
+
+## Fixed
+(none needed: the text already matched fi and was natural)
 
 ## Polish
 (none)
 
 ## Checked
-- Delta: L1-05 Answer now 'Two significant figures, because ...'. Opened fy6-12-open-exercises-1280-6 (en): the answer box and the sentence render cleanly, units upright with a thin space.
-- Wording is clear and consistent with the other significant-figure notes.
-- Hash at start and end: 1476a6df92ad0e40. Captures re-made for this hash (screenshot.py --if-stale); no layout change around the edited sentence.
-
-## Scores
-illustrations 5 · typography 5 · Finnish n/a · accessibility 5
+- Opened captures fy6-12-open-exercises-L2-1280-7.png (en L2-06 choices and feedback) and L3 captures for L3-04: no overflow, formulas and units render, data tables fit.
+- Table headers ($x$, $V$, $U$, $v$, $U_\text{r}$, Share/Osuus) short; captions translated.
+- No stray Finnish in en captures; fi-easy captures use decimal comma in prose.

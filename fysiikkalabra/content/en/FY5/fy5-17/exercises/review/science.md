@@ -1,12 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: f41d9f11f7e3dadf
+CONTENT-HASH: bbcd7efb0075a3d1
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+(none needed: the English text already matched fi in every number and was natural)
 
 ## Polish
+(none)
 
 ## Checked
-- exercises.json: all 12 texts compared with the Finnish; answer, unit, tolerance, figure and every non-text field identical; data, numbers and the asked unit kept (decimal point).
-- solutions.md: all 12 seven-part solutions complete; every substitution and result identical to the Finnish (7.01 cm, 0.205 mm, 23.7 m, 2.6 m, 22 m/s, 168 km, 10.3 MHz, 3.9 kHz, about 20 s, 7.06 m, 5.96 cm, 10 km).
-- Fixed: L3-02 "The true depth is below these" (ambiguous: a depth "below" reads as deeper) → "less than both of these", matching "näiden alapuolella" = smaller. L2-03 garbled pulse-count sentence rewritten ("the number of pulses that fit into one second is at most one second divided by this time"); "return trip" → "round trip". L2-02 "First solve for the wavelength, then for the frequency".
-- Subscripts translated consistently (v_bat, d_fat, v_mus) and used the same way in Given, Formula and Substitution.
+- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) compared with content/fi: ids, levels, kinds, answers (3.87 cm, 1480 m/s, 42 km, 57 min), units, tolerances, correct flags, choices and feedback, data table cells and every number are identical (decimal point in en JSON and LaTeX).
+- Re-derived: L2-05 d = 1.65, 4.54, 8.41 cm and 3.87 cm; L2-06 mean 1478.6 m/s; L2-07 134 km; L3-04 distances 84.0, 63.0, 49.6 km, y = 41.8 km; L3-05 57.1 min. All agree with fi.
+- solutions.md prose of the new tasks matches fi step by step; no Finnish left in en (grep); check_i18n.py en: 0 errors.

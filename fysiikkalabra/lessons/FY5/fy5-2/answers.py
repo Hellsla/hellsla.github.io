@@ -30,4 +30,24 @@ a["fy5-2-L3-02"] = (4.00 * g * 0.60 + 8.00 * g * 1.20) / (1.20 * math.sin(math.r
 # moments about the rear carrier: 300 N · (5,00 m − a) = G (2,50 m − a) -> a = (G · 2,50 − 300 · 5,00) / (G − 300)
 Glog = 90.0 * g
 a["fy5-2-L3-03"] = (Glog * 2.50 - 300 * 5.00) / (Glog - 300)   # 1,213 m
+# Exercise-bank additions
+# L1-06 (words): equal and opposite forces on different lines -> sum of forces 0, moments add -> the rod rotates
+a["fy5-2-L1-07"] = 28 * 1.4 / 40                         # seesaw: m1 g r1 = m2 g r2 -> r2 = 28 kg · 1,4 m / 40 kg = 0,98 m
+a["fy5-2-L1-08"] = (6.0 * 1.2 + 3.0 * 2.4) / (6.0 + 3.0)  # plank 2,4 m, 6,0 kg (CoM 1,2 m) + 3,0 kg at the right end: 1,6 m
+# L2-05: person on a plank on two sensors; N1 = G_L/2 + m g − (m g / L) x, slope read from the fitted line through (0,50 m; 556 N) and (2,50 m; 151 N)
+k = (151 - 556) / (2.50 - 0.50)                          # -202,5 N/m
+a["fy5-2-L2-05"] = -k * 3.00 / g                         # m = −k L / g = 61,9 kg -> 62 kg
+Gb, Gh = 14.0 * g, 72.0 * g                              # bench 2,40 m, 14,0 kg, legs at 0,20 m and 2,20 m, person 72,0 kg at 0,60 m; moments about the left leg
+a["fy5-2-L2-06"] = (Gb * 1.00 + Gh * 0.40) / 2.00        # N2 · 2,00 m = Gb · 1,00 m + Gh · 0,40 m -> 209,9 N -> 210 N (the student's 141,3 N forgets Gb)
+rows = [(50.0, 35.8), (100.0, 28.7), (150.0, 24.0), (200.0, 21.1)]   # ruler: m (x − 5,0 cm) = M (50,0 cm − x)
+a["fy5-2-L2-07"] = sum(m * (x - 5.0) / (50.0 - x) for m, x in rows) / len(rows)   # mean 110,2 g -> 110 g
+# Level 3
+# ladder 5,00 m, 12,0 kg, 65,0° to the floor, smooth wall, mu = 0,40, person 75,0 kg at s along the ladder.
+# N = (12,0 + 75,0) kg g, N_wall = mu N at the limit; moments about the foot: N_wall L sin α = Gt (L/2) cos α + Gh s cos α
+al = math.radians(65.0)
+Gt2, Gh2 = 12.0 * g, 75.0 * g
+a["fy5-2-L3-04"] = (0.40 * (Gt2 + Gh2) * 5.00 * math.sin(al) - Gt2 * 2.50 * math.cos(al)) / (Gh2 * math.cos(al))   # 4,575 m -> 4,6 m
+# chair: legs 0,40 m apart, chair 8,00 kg (CoM 0,20 m), person 72,0 kg; tips when the common CoM is at the front legs
+xh = (80.0 * 0.40 - 8.00 * 0.20) / 72.0 * 100            # 42,22 cm
+a["fy5-2-L3-05"] = 50 + 10 * (xh - 41.3) / (44.4 - 41.3)  # linear interpolation between (50°; 41,3 cm) and (60°; 44,4 cm): 52,97° -> 53°
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

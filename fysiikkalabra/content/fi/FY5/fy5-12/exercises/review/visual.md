@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 5c06581261401d51
+CONTENT-HASH: 1d11cb0e3736a1a7
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions L2-01 Kaava — the long "λ = 2(√(d²+s_B²) − s_B)" wraps after "λ =" at 1280 px — split into two inline formulas.
-- [Minor] L1-03 and L3-01/L3-03 ask "Perustele" but the answer field takes only the final value (L1-03 has none) — consider saying that the reasoning goes in "Kirjoita ratkaisu".
+(none)
 
 ## Checked
-- Round 2: L1-02, L2-02, L3-02, L3-03 texts and solutions reread; L3-02 (new subtraction derivation) and L3-03 opened at 1280: rows aligned, L3-03 wording fixed.
-- 1280: open-exercises level 1 parts 1 and 3, level 2 parts 1 and 3, level 3 parts 1, 3 and 4; 390: exercises stage
-- All sixteen solutions read in the packet text; no inline figures in the exercise set; SI units, decimal comma, case endings ("1,20 m:n") consistent
+- Hash 1d11cb0e3736a1a7 at start and end. Round 1 Blocking (empty `.eq-chain` boxes in opened solutions) is resolved: with the local lesson.js fix the calculation rows render in every capture opened, with the equals signs aligned.
+- Opened open-exercises-L3-1280-8 (L3-05 Sijoitus rows all render; Vastaus 8,5 · 10^2 Hz) and earlier L2-1280-8. Changed text re-read: L2-05 wording "heikoimman äänen kohdat" with the 0,30 to 1,70 m range, L2-06 reordered options, L2-07 Järkevyys; consistent.
 
 ## Scores
-illustrations n/a (5) · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

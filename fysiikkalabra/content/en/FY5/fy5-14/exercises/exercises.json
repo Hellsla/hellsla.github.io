@@ -39,6 +39,74 @@
       "answer": "a) infrasound; b) audible sound; c) ultrasound; d) ultrasound",
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-14-L1-06",
+      "level": 1,
+      "text": "Two tuning forks sound one after the other in air. One sound seems clearly higher than the other, but both seem equally loud. Which of the following must be true of the higher sound?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Its frequency is greater, so the pressure varies more times per second.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Its amplitude is greater, so the air pressure varies more strongly.",
+          "feedback": "Amplitude determines the loudness of a sound, not its pitch. In the problem the sounds seem equally loud, so the amplitudes can be the same even though the pitch is different."
+        },
+        {
+          "text": "Its wavelength is longer, because a high-pitched sound travels faster in air.",
+          "feedback": "The speed of sound in air does not depend on frequency. When the speed is the same, a higher frequency means a shorter wavelength $\\lambda = \\tfrac{v}{f}$, not a longer one."
+        },
+        {
+          "text": "Its frequency is greater, so the pressure varies more times per second.",
+          "feedback": "Correct: pitch is determined by frequency. A higher sound means more vibrations per second, that is, a greater frequency $f$.",
+          "correct": true
+        },
+        {
+          "text": "Its period is longer, so one vibration takes longer.",
+          "feedback": "Period and frequency are reciprocals, $T = \\tfrac{1}{f}$. The period of the higher sound is shorter, not longer."
+        }
+      ]
+    },
+    {
+      "id": "fy5-14-L1-07",
+      "level": 1,
+      "text": "An ambulance drives at a steady speed straight towards a listener at rest, and the siren sounds all the time at its own constant frequency. The air is calm. How does the listener hear the pitch of the siren as the ambulance approaches?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Constant and higher than the siren's own, because the wavefronts are bunched up in front.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Higher and higher the closer the car is, because the distance to the listener keeps getting shorter.",
+          "feedback": "This is a common misconception. The frequency heard depends on the speed of the car, not on its distance. When the speed is constant, the frequency heard is also constant. As the car approaches, the loudness of the sound grows, not the pitch."
+        },
+        {
+          "text": "Exactly the siren's own frequency, because the motion of the car changes only the loudness of the sound.",
+          "feedback": "The siren vibrates all the time at the frequency $f_0$, but the listener meets the wavefronts more often, because the source moves after them. So the motion changes the frequency heard too, not only the loudness."
+        },
+        {
+          "text": "Lower than the siren's own, because the motion of the car slows down the sound in air.",
+          "feedback": "The speed of sound in air does not depend on the motion of the source. In front of an approaching source the wavelength becomes shorter, so the frequency heard is greater, not smaller."
+        },
+        {
+          "text": "Constant and higher than the siren's own, because the wavefronts are bunched up in front.",
+          "feedback": "Correct: the source moves after its own wavefronts, so the fronts are bunched up in front of it and the wavelength is shorter. The frequency heard $f = \\tfrac{v}{\\lambda}$ is therefore greater than $f_0$ and stays the same until the car passes the listener.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "fy5-14-L1-08",
+      "level": 1,
+      "text": "Two tuning forks with frequencies $392\\,\\text{Hz}$ and $398\\,\\text{Hz}$ sound at the same time. How much time passes between two successive loud moments, that is, what is the period of the beats? Give the answer in seconds.",
+      "answer": 0.167,
+      "unit": "s",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,6 +141,100 @@
       "answer": 23,
       "unit": "m/s",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy5-14-L2-05",
+      "level": 2,
+      "text": "A student standing beside the road records the sound of the horn of a car driving straight towards him. When the car is at rest, the frequency of the horn is $392\\,\\text{Hz}$. As the car approaches, the frequency is measured four times (example data).\n\nThe car drives at a steady speed. The air is calm, and the speed of sound is $340\\,\\text{m/s}$. How fast is the car moving according to the mean of the measurements?",
+      "kind": [
+        "data"
+      ],
+      "answer": 30.4,
+      "unit": "m/s",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Example data: frequency of the horn as the car approaches",
+        "columns": [
+          "Measurement",
+          "$f\\,(\\text{Hz})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "431"
+          ],
+          [
+            "2",
+            "429"
+          ],
+          [
+            "3",
+            "432"
+          ],
+          [
+            "4",
+            "430"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-14-L2-06",
+      "level": 2,
+      "text": "A flute and a violin play the same note. The peak frequencies and relative heights were read from the FFT spectra of the sounds recorded with a microphone (example data).\n\na) What is the fundamental frequency of the note played?\n\nb) Which of the instruments sounds brighter, and why? Enter the result of part a) in hertz in the answer box.",
+      "kind": [
+        "data",
+        "concept"
+      ],
+      "answer": 262,
+      "unit": "Hz",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Example data: peaks of the spectra, relative height",
+        "columns": [
+          "$f\\,(\\text{Hz})$",
+          "Flute",
+          "Violin"
+        ],
+        "rows": [
+          [
+            "262",
+            "1.00",
+            "0.70"
+          ],
+          [
+            "524",
+            "0.35",
+            "1.00"
+          ],
+          [
+            "785",
+            "0.08",
+            "0.80"
+          ],
+          [
+            "1047",
+            "0.02",
+            "0.55"
+          ],
+          [
+            "1309",
+            "0.01",
+            "0.30"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-14-L2-07",
+      "level": 2,
+      "text": "A student solves a problem: a car drives at $30.0\\,\\text{m/s}$ straight towards a listener at rest and sounds a horn with a frequency of $500\\,\\text{Hz}$. The speed of sound is $340\\,\\text{m/s}$.\n\nThe student uses the formula $f = f_0 \\cdot \\tfrac{v + v_\\text{s}}{v}$ and gets the frequency heard $544\\,\\text{Hz}$.\n\nWhat is the error in the student's solution? Calculate the correct frequency heard.",
+      "kind": [
+        "error"
+      ],
+      "answer": 548,
+      "unit": "Hz",
+      "tolerance": 0.002
     }
   ],
   "level3": [
@@ -99,6 +261,103 @@
       "answer": "Fundamental frequency $147\\,\\text{Hz}$; the even multiples ($294\\,\\text{Hz}$, $588\\,\\text{Hz}$, $882\\,\\text{Hz}$) are missing, so the air column vibrates like a tube closed at one end.",
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-14-L3-04",
+      "level": 3,
+      "text": "A cardiologist measures the speed of blood flow with an ultrasound device (example data). The probe emits ultrasound with a frequency of $f_0 = 4.00\\,\\text{MHz}$ towards blood that flows straight towards the probe. The red blood cells reflect the sound back to the probe. The sound travels in tissue at $1540\\,\\text{m/s}$.\n\nThe probe measures the change in the frequency of the reflected sound, $\\Delta f = f - f_0$, at different moments of the heartbeat.\n\nWhat is the greatest measured speed of the blood? Treat the red blood cell first as a moving listener that receives the sound of the probe, and then as a moving source that emits the same frequency back. Justify briefly why the measured change is almost double compared with one Doppler shift.",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 0.475,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Example data: change in frequency during the heartbeat",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$\\Delta f\\,(\\text{kHz})$"
+        ],
+        "rows": [
+          [
+            "0.00",
+            "0.31"
+          ],
+          [
+            "0.10",
+            "1.26"
+          ],
+          [
+            "0.20",
+            "2.47"
+          ],
+          [
+            "0.30",
+            "1.64"
+          ],
+          [
+            "0.40",
+            "0.58"
+          ],
+          [
+            "0.50",
+            "0.29"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-14-L3-05",
+      "level": 3,
+      "text": "A guitarist plucks a $0.650\\,\\text{m}$ long string in two ways: from the middle of the string and very close to the bridge. The sounds are recorded, and the peak frequencies and relative amplitudes are read from the FFT spectra (example data). In both spectra the amplitude of the fundamental frequency is marked as $1.00$.\n\na) What is the fundamental frequency of the string? Which harmonics are almost entirely missing when the string is plucked in the middle?\n\nb) Calculate the speed of the wave in the string. Enter the result of this part in the answer box.\n\nc) Explain why some of the harmonics are missing when plucking in the middle, and tell which way of plucking gives the brighter sound and why.",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 255,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Example data: peaks of the spectra, relative amplitude",
+        "columns": [
+          "$f\\,(\\text{Hz})$",
+          "Middle",
+          "Near the bridge"
+        ],
+        "rows": [
+          [
+            "196",
+            "1.00",
+            "1.00"
+          ],
+          [
+            "392",
+            "0.02",
+            "0.47"
+          ],
+          [
+            "588",
+            "0.11",
+            "0.30"
+          ],
+          [
+            "784",
+            "0.01",
+            "0.19"
+          ],
+          [
+            "980",
+            "0.04",
+            "0.13"
+          ],
+          [
+            "1176",
+            "0.01",
+            "0.09"
+          ]
+        ]
+      }
     }
   ]
 }

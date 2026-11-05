@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: c467bcc940349896
-
+CONTENT-HASH: 83b798cb46578690
+ROUND: 3
 ## Blocking
-(none)
+(none) The round 1 Blocking item is resolved: fy6-7-L2-07 now reads "$0{,}00\,\text{kWh}$" (L2-1280-9 shows "0,00 kWh").
 
 ## Polish
-- [Minor] solutions.md fy6-7-L1-05 Järkevyys — "suunnilleen saman verran (hieman enemmän) ... ($9{,}0\,\text{kWh}$)" : sulkulause on kömpelö; kirjoita "noin viidenneksen enemmän kuin yksi puolentoista tunnin saunomiskerta $6\,\text{kW}$:n kiukaalla ($9{,}0\,\text{kWh}$)".
-- [Minor] fy6-7/washer (open-exercises-L2-1280-1) — y-akselin välimerkit (0,2 kW) ilman numeroita; aiempi huomio ennallaan, kuvaus antaa ruudukon välin.
+- [Minor] solutions.md fy6-7-L3-05 Sijoitus (L3-1280-7) — the sentences are still split around display blocks: "… $S = …$ vuodessa ja [block] vuodessa. Takaisinmaksuaika on" leaves a lone "vuodessa." between blocks; write each result as a complete sentence before its block ("Vuosisäästö on" [block] "Takaisinmaksuaika on" [block]).
+- [Minor] solutions.md fy6-7-L3-05 Vastaus c) — "vanha jääkaappi lämmittää asuntoa enemmän, joten sähkölämmityksen aikana talvella osa säästöstä menetetään" is a long sentence; for science: confirm the wording of the omitted heating effect (the waste heat of the old fridge helps only in the heating season and only if heating is electric).
 
 ## Checked
-- Hash alussa ja lopussa.
-- open-exercises-1280-2 (L1-02 ja L1-03:n alku), -3 (L1-03 silitysrauta: Annettu–Järkevyys, jakolasku ja $10\,\text{A}$:n / $16\,\text{A}$:n sijamuodot), -4 (L1-04), -5 (L1-05 uusi Järkevyys).
-- open-exercises-L2-1280-1 (washer-kuvaaja, id-nimen muutos pesukone→washer ei näy sivulla; kuva ehjä) ja -2 (L2-01 Järkevyys "käyttää yli puolet", L2-02).
-- Yksiköt LaTeXissa, desimaalipilkku, kaksoispiste jakona; ei paljaita lukuja yksikköineen.
+- Round 1 Polish: L3-04 Kaava S on its own display line (fixed, L3-1280-5), L3-04 example no longer in parentheses (fixed), "kello 8" in plain text (fixed), L2-06 "Kuvaajan lukeminen" replaced by "Taulukon lukeminen" with the daily differences (fixed; 7,7+7,2+8,2+7,5+9,1+9,2+7,4 = 56,3 recomputed).
+- 1280 px captures open-exercises-L2-1280-6, -7, -8, -9 (L2-05, L2-06, L2-07), L3-1280-5, -7 (L3-04, L3-05) read at full size; exercises.json diff (L1-06 correct option moved to third place, task texts split into paragraphs) and solutions.md read. No 390/360 px capture of exercise cards exists; packet layout checks are clean.
+- Delta (boxed value at the start of the Vastaus/Answer line): the added value is correct (matches solution and exercises.json within tolerance, unit and decimal sign right, LaTeX number+unit) and the line is short and reads well; no layout change beyond one short sentence.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 5
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

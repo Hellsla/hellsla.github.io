@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: c151092fba01b963
+CONTENT-HASH: 183d240a2cb1f209
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+- L1-07 distractor feedback (option 3): ungrammatical "Aallonpituuden ei määrää pelkkä naru. Narun määräämä on nopeus." changed to "Aallonpituutta ei määrää pelkkä naru. Naru määrää nopeuden."
 
 ## Polish
+(none)
 
 ## Checked
-- contact-5 (#49–#60): tason 1 tehtävät 1–5, tason 2 tehtävät 1–4 ja tason 3 tehtävä 1 avattuine ratkaisuineen; L2-01:n (t, y)-kuvaaja (akselit $y\,(\text{cm})$, $t\,(\text{s})$, tikit 0,4 … 2) luettava.
-- contact-3 #25–#26: tarkistustehtävät ja Tehtävät-osion tasot.
-- Kaavat renderöityvät, tasatut rivit, laatikoidut vastaukset, desimaalipilkku, alaindeksit $v_\text{i}$, $\lambda_\text{v}$.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+- Screenshots of the new tasks (L2-05 table, L3-04 table and solution, L2-06) checked: tables, units, input unit labels and calculation boxes render; no truncated or overflowing text.
+- Empty calculation boxes, if any, are the known template bug and not a translation issue.

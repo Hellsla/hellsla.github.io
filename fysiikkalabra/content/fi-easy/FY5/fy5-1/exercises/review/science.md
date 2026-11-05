@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 4a3059eebaeae5aa
+CONTENT-HASH: 28d9efb918f4e39a
 
 ## Blocking
 (none)
@@ -8,4 +8,9 @@ CONTENT-HASH: 4a3059eebaeae5aa
 - none.
 
 ## Checked
-- exercises.json and solutions.md against the Finnish: same 12 exercises, data, units, tolerances, figure id; answers recomputed (37,5; 9,6; 150; 12; 0,3; 17,2; 29,75; 7,0; 231; 61,9; 1,0; 48) all inside tolerance; solutions keep every step (Annettu to Järkevyys) and the justification of significant figures.
+- All 20 exercises vs the Finnish with a script: ids, keys, answers, units, tolerances, correct flags, choices, feedback, data table cells and every number identical (decimal point in JSON and LaTeX; only word order differs in L1-08, L2-03 in en).
+- New tasks L1-06..08, L2-05..07, L3-04..05 recomputed: -9.0, 25.1->25, 0.118, 21.6, 70.9 (788 N; 47.3, 31.5), 166 N (B; A 240, C 200): inside tolerance, solutions carry all steps and the same checks as the Finnish.
+- Choices: correct flag only on the Finnish correct option in L1-06 and L1-07; physics of feedback (line of action through hinges, r = 0) unchanged.
+- none needed.
+- Plain Finnish: short sentences, terms (varsi, vaikutussuora, otekohta) explained in context.
+- check_i18n: formula parity with fi holds for this chapter.
