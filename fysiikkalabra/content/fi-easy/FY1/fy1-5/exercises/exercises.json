@@ -200,6 +200,41 @@
       "answer": 8.0,
       "unit": "m",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-5-L2-08",
+      "level": 2,
+      "text": "Kävelijä seisoo ensin paikallaan $4{,}0\\,\\text{s}$ kohdassa, joka on $6{,}0\\,\\text{m}$:n päässä lähtöpisteestä. Sitten hän kävelee tasaisesti vauhdilla $1{,}0\\,\\text{m/s}$ suoraan takaisin kohti lähtöpistettä, kunnes on siinä. Paikka $s$ mitataan lähtöpisteestä.\n\nMikä kuvaajista esittää kävelijän paikkaa $s$ ajan $t$ funktiona?",
+      "kind": [
+        "graph",
+        "concept"
+      ],
+      "answer": "Kuvaaja C",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Kuvaaja A",
+          "figure": "fy1-5/pick-away",
+          "feedback": "Tässä paikka kasvaa kohtaan $12\\,\\text{m}$, joten kävelijä etenisi poispäin lähtöpisteestä. Kun kävelijä palaa kohti lähtöpistettä, paikka $s$ pienenee. Siksi suoran täytyy laskea eikä nousta."
+        },
+        {
+          "text": "Kuvaaja B",
+          "figure": "fy1-5/pick-vt",
+          "feedback": "Tämä on $(t, v)$-kuvaaja. Pystyakselilla on nopeus $v$, ei paikka $s$. Siinä paikallaan seisominen on $v = 0$ ja tasainen kävely vaakasuora viiva. Paikan kuvaajassa vaakasuora viiva taas tarkoittaa paikallaan oloa. Tästä kuvaajasta ei näe, missä kävelijä on, eikä sitä, että hän on alussa kohdassa $6{,}0\\,\\text{m}$."
+        },
+        {
+          "text": "Kuvaaja C",
+          "figure": "fy1-5/pick-back",
+          "correct": true,
+          "feedback": "Oikein. Paikka pysyy aluksi arvossa $6{,}0\\,\\text{m}$, joten viiva on vaakasuora. Sitten paikka pienenee tasaisesti $6{,}0\\,\\text{m}$ ajassa $6{,}0\\,\\text{s}$. Suora laskee, ja kävelijä on lähtöpisteessä hetkellä $10\\,\\text{s}$."
+        },
+        {
+          "text": "Kuvaaja D",
+          "figure": "fy1-5/pick-distance",
+          "feedback": "Tämän kuvaajan pystyakselilla on kuljettu matka $\\Delta s$, ei paikka $s$. Matka on nolla seisomisen ajan ja kasvaa sitten $6{,}0\\,\\text{m}$:iin. Paikka kertoo, missä kävelijä on. Siksi se alkaa arvosta $6{,}0\\,\\text{m}$ eikä nollasta, ja se pienenee paluumatkalla."
+        }
+      ]
     }
   ],
   "level3": [

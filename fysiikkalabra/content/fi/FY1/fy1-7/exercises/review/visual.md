@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: c9e42a3b190e9ad8
-Round: 3
+CONTENT-HASH: f7cdc3d203132d99
 
 ## Blocking
 
 ## Polish
-- [Minor] exercises.json fy1-7-L3-04 — "päättele taulukon perusteella" does not name the table; use "oppitunnin tiheystaulukon perusteella".
-- [Minor] solutions.md L3-04, Kaava — four definitions run together in one sentence; split V', V and ρ, ρ' onto separate lines (carried over).
-- [Minor] solutions.md L3-04 Vastaus — "noin 17 %" after "-16,7 %": state once, with the sign explained (carried over).
+- [Minor] L2-08 — "Kappale B: massa 0,36 kg, tilavuus 0,40 dm³" lines are separate paragraphs, so the data block has wide spacing; acceptable, a table would be tighter (optional).
+- [Minor] Solution L2-08 — closing paragraph after "B, D, A, C." is still a dense block of three sentences; optional split.
 
 ## Checked
-- Round 3 delta is one word in the L3-04 task ("lyijyisen" to "metallikappaleen"); opened fy1-7-open-exercises-L3-1280-4 (captures taken after the commit): the new task text wraps normally, input and Annettu card (with Cu and Pb densities as fractions) render without overflow. No 360 px exercise capture exists.
-- Earlier Blocking: none; round-2 Polish on the material hint is fixed.
+- Round 2; hash f7cdc3d203132d99 at start and end. Round 1 Majors fixed: live renders of 7-16 at 390 and 1280 px and open-exercises-L2-1280-10 show the data as four separate paragraphs, the Annettu line with indexed symbols (m_A, V_A …), conversions one per row and each ρ on its own row with the colon and a legible unit fraction, no overlap.
+- Ordering selects usable at 390 px; answer line and solution card without clipping or overflow.
+- Older exercises were not re-opened (unchanged since earlier PASS apart from paragraph splits, which render cleanly).
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4

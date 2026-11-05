@@ -388,7 +388,15 @@ def exercise_choice(e):
     exercise's place. Its answer and model solution open after "Olen tehnyt ratkaisun", like a written task's."""
     md = lambda t: nbsp_units(render_md(t))
     lid = e["id"].rsplit("-L", 1)[0]
-    return inquiry.choice_html({"prompt": e.get("prompt") or T("lesson.choose"), "choices": e["choices"]}, md, lid, e["id"])
+    if e.get("statements"):                                    # true-or-false statements (teacher 2026-11-05)
+        return inquiry.truefalse_html({"prompt": e.get("prompt") or T("lesson.choose_tf"), "statements": e["statements"]}, md, e["id"])
+    if e.get("order"):                                         # putting items in order by a quantity (teacher 2026-11-05)
+        return inquiry.order_html({"prompt": e.get("prompt") or T("lesson.choose_order"), "order": e["order"]}, md, lid, e["id"])
+    layout = "figures" if any(c.get("figure") for c in e["choices"]) else "list"   # options drawn as graphs or force diagrams
+    html = inquiry.choice_html({"prompt": e.get("prompt") or T("lesson.choose"), "choices": e["choices"], "layout": layout}, md, lid, e["id"])
+    if e.get("reasons"):                                       # two-stage: the answer, then the reason for it (teacher 2026-11-05)
+        html += inquiry.choice_html({"prompt": e.get("reason_prompt") or T("lesson.choose_reason"), "choices": e["reasons"]}, md, lid, e["id"] + "-why")
+    return html
 
 
 
@@ -429,7 +437,7 @@ def exercise_html(e, solution_html, read=None, core=False, num=None):
     model = figcat.figure_html(e["model_figure"], T.lang, read) if e.get("model_figure") else ""   # a drawing task's model diagram, inside the solution
     sol = f'<details class="solution"><summary>{T("lesson.solution")}</summary>{model}<div class="steps">{solution_html}</div></details>' if solution_html else ""
     fig = figcat.figure_html(e["figure"], T.lang, read) if e.get("figure") else ""   # a figure by its id (scripts/figcat.py)
-    fig = (data_table(e["data"]) if e.get("data") else "") + fig + (exercise_choice(e) if e.get("choices") else "")
+    fig = (data_table(e["data"]) if e.get("data") else "") + fig + (exercise_choice(e) if e.get("choices") or e.get("statements") or e.get("order") else "")
     tag = f'<span class="ex-core">{T("lesson.core_exercise")}</span>' if core else ""
     solved = "" if numeric else f'<label class="solved"><input type="checkbox"> <span>{T("inquiry.did_solution")}</span></label>'   # a written task opens its answer after this tick (lesson.js part 8)
     return (f'<li id="{e["id"]}"{" class=" + chr(34) + "core" + chr(34) if core else ""}' + (f' data-num="{num}">' + number_label(num) if num else ">") + f'{tag}{exercise_text(nbsp_units(e["text"]), f"{e['id']}-q")}{fig}{check}{solved}'

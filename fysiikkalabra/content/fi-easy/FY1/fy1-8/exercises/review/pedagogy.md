@@ -1,20 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 40cf159dbcdb453e
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 0714f54cbaa54000
 
 ## Blocking
 (none)
-
-## Fixed
-(none needed)
 
 ## Polish
 (none)
 
 ## Checked
-- selkosuomi text of the 8 new tasks reads naturally (short sentences, common words, terms explained; decimal comma in text/LaTeX, point in data cells as in fi).
-- Distractor feedback in L1-06..08 and L2-06 keeps the fi diagnostic point (dependent, controlled, instrument; results vs discussion; repeats vs confounded variables).
-- L2-05, L2-07, L3-04, L3-05 keep every sub-question of fi (calculate, decide, explain, write two sentences, name three controlled variables).
-- Terms explained in context (uncertainty = half of range; independent = manipulated).
-- Task difficulty and scaffolding unchanged from fi.
+- L1-09: situation first, question last as its own sentence; a level-1 concept/experiment task of five short statements, each with its own feedback that repairs the misconception.
+- Distractors keep fi's misconception targets (uncontrolled angle, one run enough because of clock resolution, failure equals no effect).
+- Solution explains the principle and judges each statement in order; can be followed by a student who could not solve it.
+- Selkosuomi per NOTES.md §12: short sentences, one idea each, 'vakioida eli pitää samana' explains the term, same physics as fi.
+- Layout of a true/false task unchanged from fi; short statements read on a 360 px screen.

@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 309a5b315853626c
+CONTENT-HASH: b978a0408e18213b
 
 ## Blocking
 
 ## Polish
-- content/fi/FY1/fy1-1/exercises/exercises.json:228 (L2-07) — the task says "pisteet asettuvat suoralle". Measured points lie on the line only approximately; the residuals here are −0,28…+0,31 mm. — Write "asettuvat likimain suoralle", in line with the fits guardrail.
-- content/fi/FY1/fy1-1/exercises/exercises.json:65 (L1-06) — the distractor "Malli on teoria, jota ei voi enää muuttaa" mixes up model and theory. The feedback refutes "unchangeable" correctly but leaves "a model is a theory" unanswered. — Add half a sentence: a theory too stays open to revision.
+- content/fi/FY1/fy1-1/exercises/exercises.json:263 (L1-09) — "Kuu peittää Auringon täsmälleen" holds only roughly: the Moon's distance varies, so annular eclipses also occur. — Write "lähes täsmälleen" or "juuri ja juuri".
+- content/fi/FY1/fy1-1/exercises/exercises.json (L2-07) — "pisteet asettuvat suoralle" (carried over): measured points lie on the line only roughly. — Write "likimain suoralle".
+- content/fi/FY1/fy1-1/exercises/exercises.json (L1-06) — The distractor's feedback leaves "malli on teoria" unanswered (carried over). — Add that a theory also stays open to revision.
 
 ## Checked
-- Round 3 diff (`git diff HEAD~1 -- content/fi/FY1`): only solutions.md:183 (L3-04 Kaava) changed, from one line with \quad separators to three formulas joined by commas and "ja".
-- L3-04 formulas are unchanged: V_sade = hA, V_pisara = (4/3)πr³, N = V_sade/V_pisara. Recomputed: h = 8,33·10⁻⁴ m, V_sade = 5,0 m³, V_pisara = 4,19·10⁻⁹ m³, N = 1,19·10⁹. A 20 % larger diameter gives −42 %, so the answer and the sensitivity still hold.
-- Everything else is unchanged since round 2 (PASS). The round-2 checks still apply: L2-07 fit and uncertainty, L2-05 scale model, L1-06 options, L3-05, and all 19 numeric answers against answers.py.
-- The hash was the same at the start and the end.
+- Round 1 Blocking items are both fixed. The task now gives the Sun's and Moon's diameters, the Moon's distance and the equal-apparent-size rule. These data alone decide the answer, the unused Earth diameter is gone, and the false "vain yksi sopii väliin" is gone from the solution.
+- L1-09 recomputed: 1,39·10⁹ / 3,47·10⁶ = 400,6, and 400,6 · 3,84·10⁸ m = 1,54·10¹¹ m, so the key is correct.
+- L1-09 distractors recomputed: 1,5·10⁹ m is 3,9 times the Moon's distance, so the Sun would look 103 times bigger than the Moon ("noin sata" is fine). 1,5·10⁸ m is 0,39 times, which gives 1025 times bigger ("tuhat" is fine). 1,5·10¹³ m is 39 000 times, which gives 98 times smaller. Every distractor is really wrong, and its feedback is right.
+- The stated proportionality (equal apparent size when the distance ratio equals the diameter ratio) is the right small-angle model, at a level that suits FY1. The solution has Annettu, Kysytty, Periaate and Mallivastaus, and it agrees with the feedback.
+- The other tasks are unchanged since round 1. All 19 numeric answers were recomputed in round 1 and match answers.py.
+- The hash was b978a0408e18213b at the start and at the end.

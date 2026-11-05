@@ -244,6 +244,33 @@
    "answer": 8.9,
    "unit": "g/cm³",
    "tolerance": 0.03
+  },
+  {
+   "id": "fy1-7-L2-08",
+   "level": 2,
+   "text": "Neljän tuntemattoman kiinteän kappaleen massat ja tilavuudet on mitattu eri yksiköillä.\n\nKappale A: massa $135\\,\\text{g}$, tilavuus $50\\,\\text{cm}^3$\n\nKappale B: massa $0{,}36\\,\\text{kg}$, tilavuus $0{,}40\\,\\text{dm}^3$\n\nKappale C: massa $4{,}5\\,\\text{kg}$, tilavuus $500\\,\\text{cm}^3$\n\nKappale D: massa $120\\,\\text{g}$, tilavuus $100\\,\\text{ml}$\n\nMissä järjestyksessä kappaleet ovat tiheyden mukaan pienimmästä suurimpaan?",
+   "kind": [
+    "model",
+    "reasoning"
+   ],
+   "prompt": "Järjestä tiheyden mukaan pienimmästä suurimpaan.",
+   "order": [
+    {
+     "text": "Kappale B"
+    },
+    {
+     "text": "Kappale D"
+    },
+    {
+     "text": "Kappale A"
+    },
+    {
+     "text": "Kappale C"
+    }
+   ],
+   "answer": "Kappale B ($0{,}90\\,\\text{g/cm}^3$), kappale D ($1{,}2\\,\\text{g/cm}^3$), kappale A ($2{,}7\\,\\text{g/cm}^3$), kappale C ($9{,}0\\,\\text{g/cm}^3$).",
+   "unit": "",
+   "tolerance": 0.02
   }
  ],
  "level3": [

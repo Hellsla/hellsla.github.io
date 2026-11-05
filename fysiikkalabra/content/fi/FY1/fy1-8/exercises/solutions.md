@@ -133,6 +133,11 @@
 **Periaate:** Tulososio kertoo, mitä mitattiin ja laskettiin: taulukot, kuvaajat, keskiarvot ja epävarmuudet. Pohdinta tulkitsee tuloksia: se arvioi virhelähteitä ja luotettavuutta, ottaa kantaa hypoteesiin ja ehdottaa jatkotutkimusta.
 **Mallivastaus:** Tuloksiin kuuluu lause ”Viiden mittauksen keskiarvo oli $12{,}4\,\text{s}$ ja puolet vaihteluvälistä $0{,}2\,\text{s}$.”, koska se kertoo laskettuja arvoja ilman tulkintaa. Virhelähteen arviointi (reaktioaika), kanta hypoteesiin ja parannusehdotus (valokenno) ovat tulkintaa, joten ne kuuluvat pohdintaan.
 
+## fy1-8-L1-09
+**Kysytty:** mitkä viidestä väitteestä tutkimussuunnitelmasta ovat tosia.
+**Periaate:** Reilussa kokeessa muutetaan yhtä muuttujaa, mitataan toista ja pidetään muut vakioina. Mittaus toistetaan, jotta hajonta näkyy, ja ero voidaan osoittaa vain, jos se ylittää epävarmuuden. Tulos, joka kumoaa hypoteesin, on silti tulos.
+**Mallivastaus:** 1 tosi: massa on muutettava ja kulkuaika mitattava muuttuja. 2 epätosi: rampin kulma pitää vakioida, muuten ei tiedetä, kumpi muutos vaikutti aikaan. 3 epätosi: kellon näyttämä ei kerro käsiajanoton epävarmuutta $0{,}2\,\text{s}$, ja yhdestä ajosta ei näe hajontaa, joten ajo toistetaan. 4 tosi: $0{,}2\,\text{s}$ pienempi ero voi johtua pelkästä ajanotosta, joten eroa ei voida osoittaa; tämä ei kuitenkaan todista, ettei vaikutusta ole. 5 epätosi: hypoteesin kumoutuminen on tutkimustulos, ja epäonnistunut tutkimus on sellainen, josta ei voi päätellä mitään.
+
 ## fy1-8-L2-05
 **Annettu:** kevyen pallon ajat $3{,}12\,\text{s}$, $3{,}08\,\text{s}$, $3{,}16\,\text{s}$, $3{,}10\,\text{s}$ ja $3{,}14\,\text{s}$; raskaan pallon ajat $3{,}06\,\text{s}$, $3{,}12\,\text{s}$, $3{,}04\,\text{s}$, $3{,}10\,\text{s}$ ja $3{,}08\,\text{s}$
 **Kysytty:** keskiarvojen erotus prosentteina epävarmuudesta sekä johtopäätös, tukeeko aineisto väitettä

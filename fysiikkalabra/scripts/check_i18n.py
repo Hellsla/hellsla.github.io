@@ -28,7 +28,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import courses, i18n, inquiry
 
 ROOT = courses.ROOT
-TEXT_KEYS = {"text", "pending", "detail", "q", "a", "title", "question", "prompt", "feedback", "model", "hint", "hints", "howto", "calc", "label",
+TEXT_KEYS = {"text", "reason_prompt", "pending", "detail", "q", "a", "title", "question", "prompt", "feedback", "model", "hint", "hints", "howto", "calc", "label",
              "goals", "prerequisites_note", "glossary", "lead", "summary", "name", "mistakes", "explain", "options", "speaker",
              "claim", "why", "fold", "predictions", "rubric", "note", "words",
              "solution", "contribution", "learn", "prior", "criteria", "pair", "intro", "source_note", "answer", "practice", "caption", "columns"}

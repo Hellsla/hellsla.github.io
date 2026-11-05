@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 5a9d2e56890d8159
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: b9de02e0cb00073f
+Mode: full (translation review against the reviewed Finnish set; new task L2-08)
+Round 2
 
 ## Blocking
 (none)
 
 ## Fixed
-(none needed: the English text already matched fi in every number and was natural)
+(none needed)
 
 ## Polish
 (none)
 
 ## Checked
-- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) and all older ones compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags, data cells, and every number in texts, choices, feedback and solutions.md are identical (decimal point in en where fi has comma; solutions.md has 613 numbers each, equal).
-- Units: no Finnish left (grep); display units are translated (times / swings / g/cm³ as appropriate).
-- L1-06: one correct option, distractor feedback names the right error type (random, random, gross) as in fi.
-- Re-derived key answers: L1-07 5.43 cm, L2-05 1.82 s, L2-06 +0.94 ml, L2-07 N=14, L3-04 2.41 s (2.48 s with all eight), L3-05 gap 0.04 g/cm³; all agree with fi.
-- check_i18n.py en: 0 errors for fy1-3; lint_lesson.py clean.
+- fy1-3-L2-08 compared with content/fi: id, level, kind, tolerance, data table (10 cells), the four choices (one correct, same as fi), feedback and solutions.md carry identical numbers and the same physics (decimal point, natural English).
+- Recomputed: light 71.5/5 = 14.30 s, heavy 71.8/5 = 14.36 s, difference 0.06 s = one third of 0.2 s; half-ranges 0.2 s and 0.15 s; 14.3 s ± 0.2 s, one swing 1.43 s ± 0.02 s; all correct.
+- Conclusion "data do not show an effect" is correctly distinguished from "no effect"; over-precise 14.300 s distractor feedback is right.
+- check_i18n.py shows nothing for fy1-3; build.py fy1-3 succeeds; older exercises unchanged.

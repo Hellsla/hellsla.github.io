@@ -94,10 +94,59 @@ def line_read():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "motion": motion, "graph": graph, "line-read": line_read}
+# Kuvaajan valinta (task fy1-5-L2-08, docs/exercise-types.md type 2): a walker stands at s = 6 m for 0–4 s, then walks
+# back toward the start at 1,0 m/s and reaches it at 10 s. Four option graphs on the same grid; only "pick-back" is right.
+PICK_T, PICK_S = (0, 10), (0, 12)
+
+
+def pick_st(fid, label, pts, ylabel=r"s\ (\text{m})"):
+    """One option of the graph choice: a (t, s) graph, t 0–10 s and s 0–12 m, with the walker's broken line."""
+    f = Fig(fid, 380, label)
+    ax = Axes(f, (96, 320), (470, 70), x=PICK_T, y=PICK_S, xticks=list(range(1, 11)), yticks=[2, 4, 6, 8, 10, 12],
+              xlabel=r"t\ (\text{s})", ylabel=ylabel, xfmt=lambda v: str(int(v)) if v % 2 == 0 else "")
+    ax.line(pts, COLD, 3)
+    return f.svg()
+
+
+def pick_back():
+    return pick_st("fy15-pick-back", "Kuvaaja mittakaavassa: paikka s ajan t funktiona. Ruudukon väli on 1 s ja 2 m. Viiva on vaakasuora "
+                   "kohdassa s = 6 m aikavälillä 0–4 s ja laskee sitten suorana kohtaan s = 0 m hetkellä 10 s.",
+                   [(0, 6), (4, 6), (10, 0)])
+
+
+def pick_away():
+    return pick_st("fy15-pick-away", "Kuvaaja mittakaavassa: paikka s ajan t funktiona. Ruudukon väli on 1 s ja 2 m. Viiva on vaakasuora "
+                   "kohdassa s = 6 m aikavälillä 0–4 s ja nousee sitten suorana kohtaan s = 12 m hetkellä 10 s.",
+                   [(0, 6), (4, 6), (10, 12)])
+
+
+def pick_distance():
+    return pick_st("fy15-pick-distance", "Kuvaaja mittakaavassa: kuljettu matka Δs ajan t funktiona. Ruudukon väli on 1 s ja 2 m. Viiva on vaakasuora "
+                   "kohdassa Δs = 0 m aikavälillä 0–4 s ja nousee sitten suorana kohtaan Δs = 6 m hetkellä 10 s.",
+                   [(0, 0), (4, 0), (10, 6)], ylabel=r"\Delta s\ (\text{m})")
+
+
+def pick_vt():
+    """The v–t confusion: zero while standing, then a constant 1,0 m/s, drawn on (t, v) axes."""
+    f = Fig("fy15-pick-vt", 380, "Kuvaaja mittakaavassa: nopeus v ajan t funktiona. Ruudukon väli on 1 s ja 0,25 m/s. Viiva on "
+            "t-akselilla, v = 0, aikavälillä 0–4 s ja on sitten vaakasuora kohdassa v = 1,0 m/s aikavälillä 4–10 s.")
+    ax = Axes(f, (96, 320), (470, 70), x=PICK_T, y=(0, 1.5), xticks=list(range(1, 11)), yticks=[0.25, 0.5, 0.75, 1.0, 1.25, 1.5],
+              xlabel=r"t\ (\text{s})", ylabel=r"v\ (\text{m/s})", xfmt=lambda v: str(int(v)) if v % 2 == 0 else "",
+              yfmt=lambda v: {0.5: "0{,}5", 1.0: "1{,}0", 1.5: "1{,}5"}.get(v, ""))
+    ax.line([(0, 0), (4, 0)], COLD, 3)
+    ax.line([(4, 1.0), (10, 1.0)], COLD, 3)
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "motion": motion, "graph": graph, "line-read": line_read,
+           "pick-back": pick_back, "pick-away": pick_away, "pick-distance": pick_distance, "pick-vt": pick_vt}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "motion": "safe: equal spacing at equal times, no distances",
     "graph": "reveals: the slope 3 m/s of both lines and s0 = 5 m",
     "line-read": "safe: one straight line through the origin, grid crossings to read, no slope marked (graph is the lesson figure)",
+    "pick-back": "reveals: the right option of task fy1-5-L2-08 (stands at 6 m, then back to the start)",
+    "pick-away": "safe: a wrong option of task fy1-5-L2-08 (stands at 6 m, then away from the start)",
+    "pick-distance": "safe: a wrong option of task fy1-5-L2-08 (the distance walked, Δs, instead of the position)",
+    "pick-vt": "safe: a wrong option of task fy1-5-L2-08 (a (t, v) graph: 0, then 1,0 m/s)",
 }

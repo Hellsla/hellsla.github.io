@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: b767859bee6529a5
+CONTENT-HASH: 1a41d04fd9a53a26
+
+Full review, round 2. Only L2-08 changed since round 1; I recomputed every answer again.
 
 ## Blocking
 
 ## Polish
-- content/fi/FY1/fy1-3/exercises/solutions.md:140 (L1-08) — "Pienempi lukemaväli … joten työntömitta on tarkempi väline" infers accuracy from resolution alone. The guardrail keeps *resoluutio* apart from the manufacturer's error limit, which for a digital caliper is typically about 0,02 mm, larger than 0,005 mm. — Say that the ratio 100 concerns reading only, and that the caliper's total uncertainty is set by its stated error limit.
-- content/fi/FY1/fy1-3/exercises/solutions.md:163 (L2-06) — "eli siinä on systemaattinen virhe" is stated as certain, while line 164 now says *todennäköisesti*. — Write "todennäköisesti systemaattinen virhe" here too.
+- solutions.md:140 (L1-08) — Carried over: "joten työntömitta on tarkempi väline" infers accuracy from resolution alone. — Limit the claim to reading uncertainty.
+- solutions.md:163 (L2-06) — Carried over: "eli siinä on systemaattinen virhe" should say *todennäköisesti*, as line 164 does.
 
 ## Checked
-- Round-1 Blocking (L1-07, the invented digit) is fixed. The solution now says "5,428 cm olisi liian tarkka … tuhannesosien".
-- New L1-08: 0,5 mm against 0,005 mm gives a ratio of 100, and answers.py gives the same. The task states the half-step rule for both instruments, and the digital rounding argument is right. The task stays within FY1 central contents.
-- L2-05: 33⅓ rpm gives 1,800 s, which really is just outside 1,805–1,835 s. A slow turntable or a timing error is offered as a possibility, not stated as fact. This closes the round-1 Polish item.
-- L2-06: the implausible pipette/cylinder pairing is removed. The rounding to hundredths now rests on ΔV_A = 0,15 ml. Deviation +0,94 ml.
-- L3-04: the reason is the logbook entry, not the size of the deviation. Without the entry the result stays in the data: mean 2,48 s, half-range 0,295 → 0,30 s (×10). The deviation is reported and repeating is advised, as the outlier guardrail asks.
-- L3-05: the gap is 0,04 g/cm³. The non-overlap is worded as "ilmoitetut epävarmuudet", and "ei todista kummankaan vääräksi" is kept.
-- answers.py agrees with exercises.json for all 19 numeric tasks.
+- Round-1 Blocking is fixed (exercises.json:307, solutions.md:201). Option 4 now says "kymmenen heilahduksen aika 14,300 s". The Mallivastaus gives 14,3 s ± 0,2 s for ten swings and the period as about 1,43 s ± 0,02 s; 0,2/10 = 0,02 s is right.
+- The round-1 Polish items in L2-08 are done. The uncertainty is now "käsin otetun ajan epävarmuus Δt = 0,2 s", the stem marks 14,30 s and 14,36 s as calculator means of ten swings, the text says "kuulan massan", and the typo is fixed.
+- The added remark in option 4's feedback (unrounded means are kept for the comparison, the result is rounded for reporting) is right and removes the inconsistency.
+- L2-08 still has exactly one correct option. The difference 0,06 s and the half-ranges 0,20 s and 0,15 s are right, and "cannot be shown, not proof of equality" follows the guardrail.
+- All 19 numeric answers were recomputed with my own formulas and agree with exercises.json and answers.py within tolerance.
 - The hash was the same at the start and the end.

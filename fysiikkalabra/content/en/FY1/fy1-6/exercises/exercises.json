@@ -272,6 +272,57 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy1-6-L2-08",
+      "level": 2,
+      "text": "In a vacuum chamber two balls of the same size are dropped from rest from the same height at the same time: the mass of the heavier one is $4.0\\,\\text{kg}$ and that of the lighter one $1.0\\,\\text{kg}$. The speed of the heavier ball $2.0\\,\\text{s}$ after the drop is $19.6\\,\\text{m/s}$. What is the speed of the lighter ball at the same moment?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "$19.6\\,\\text{m/s}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "$4.9\\,\\text{m/s}$",
+          "feedback": "This assumes that speed is proportional to mass, so a ball four times lighter would be four times slower. In free fall the speed $v = g\\,t$ does not depend on mass."
+        },
+        {
+          "text": "$9.8\\,\\text{m/s}$",
+          "feedback": "Here the number $g = 9.81\\,\\text{m/s}^2$ has been read as a speed. It tells how much the speed grows each second, and the speed after two seconds is $g\\,t$."
+        },
+        {
+          "text": "$19.6\\,\\text{m/s}$",
+          "feedback": "Correct: there is no air resistance, so both balls are in free fall and the speed is $v = g\\,t$ regardless of mass.",
+          "correct": true
+        },
+        {
+          "text": "$78\\,\\text{m/s}$",
+          "feedback": "This assumes that the light ball accelerates four times as much because it is four times lighter. Mass does not affect the acceleration of free fall, so the speed is the same as that of the heavier ball."
+        }
+      ],
+      "reason_prompt": "Which reason explains your answer?",
+      "reasons": [
+        {
+          "text": "The balls are of the same size and they start from rest.",
+          "feedback": "The statement is true, but it does not explain the answer. Objects of different sizes would also fall equally fast in a vacuum, and starting from rest only tells that $v = g\\,t$ begins from zero."
+        },
+        {
+          "text": "The heavier ball is pulled harder towards the Earth, so its speed grows faster.",
+          "feedback": "This is a common misconception: the heavier ball is also harder to set in motion, and these two effects cancel each other. The acceleration of free fall $g$ is the same for all objects."
+        },
+        {
+          "text": "The acceleration of free fall $g$ is the same for all objects without air resistance, so the speed $v = g\\,t$ does not depend on mass.",
+          "feedback": "Correct: the speed grows by the same amount every second, $g$, regardless of mass, so the balls are equally fast at every moment.",
+          "correct": true
+        },
+        {
+          "text": "The lighter ball is easier to set in motion, so its speed grows faster.",
+          "feedback": "It is true that a lighter object is easier to set in motion, but in free fall it is also pulled less. The overall effect cancels, and the acceleration is the same $g$."
+        }
+      ]
     }
   ],
   "level3": [

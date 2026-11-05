@@ -275,19 +275,66 @@ def numbers_with_units(text):
 def exercise_choice_errors(e):
     """A multiple-choice exercise (teacher 2026-11-04): 3–5 options, exactly one correct, every option with feedback
     that names the reasoning (a wrong one: the misconception behind it); its `answer` is the correct option's text, so
-    the Vastaus box and the written-task rules (solutions.md Kysytty · Periaate · Mallivastaus) apply."""
-    ch = e.get("choices")
-    if not isinstance(ch, list) or not 3 <= len(ch) <= 5: return ["choices: 3–5 options"]
+    the Vastaus box and the written-task rules (solutions.md Kysytty · Periaate · Mallivastaus) apply. Since 2026-11-05
+    (teacher, YO skills) also: options drawn as figures, a two-stage task (`reasons`: the reason for the answer),
+    true-or-false `statements` and an `order` task; docs/exercise-types.md."""
+    kinds = [k for k in ("choices", "statements", "order") if k in e]
+    if len(kinds) > 1: return [f"one answer form per task: {' or '.join(kinds)}"]
+    out = ["unit: empty in a multiple-choice task"] if e.get("unit") else []
+    if "statements" in e: return out + statement_errors(e)
+    if "order" in e: return out + order_errors(e)
+    out += option_errors(e.get("choices"), "choices")
+    right = [c for c in e.get("choices") or [] if isinstance(c, dict) and c.get("correct") is True]
+    if len(right) == 1 and e.get("answer") != right[0].get("text"): out.append("answer: the correct option's text, word for word")
+    if "reasons" in e: out += option_errors(e["reasons"], "reasons")   # two-stage: the answer, then its reason (teacher 2026-11-05)
+    if "reason_prompt" in e and "reasons" not in e: out.append("reason_prompt: only with reasons")
+    return out
+
+
+def option_errors(ch, key):
+    """3–5 options, each with a text and its own feedback, exactly one correct; an option may be a figure by its id
+    (a graph or a force diagram to choose, teacher 2026-11-05)."""
+    if not isinstance(ch, list) or not 3 <= len(ch) <= 5: return [f"{key}: 3–5 options"]
     out = []
     for i, c in enumerate(ch):
-        if not (isinstance(c, dict) and isinstance(c.get("text"), str) and c["text"].strip()): out.append(f"choices[{i}].text: a text is required")
-        elif not (isinstance(c.get("feedback"), str) and c["feedback"].strip()): out.append(f"choices[{i}].feedback: every option needs its own feedback")
-        if isinstance(c, dict) and set(c) - {"text", "feedback", "correct"}: out.append(f"choices[{i}]: keys are text, feedback, correct")
-    right = [c for c in ch if isinstance(c, dict) and c.get("correct") is True]
-    if len(right) != 1: out.append("choices: exactly one option has \"correct\": true")
-    elif e.get("answer") != right[0].get("text"): out.append("answer: the correct option's text, word for word")
-    if e.get("unit"): out.append("unit: empty in a multiple-choice task")
+        if not (isinstance(c, dict) and isinstance(c.get("text"), str) and c["text"].strip()): out.append(f"{key}[{i}].text: a text is required")
+        elif not (isinstance(c.get("feedback"), str) and c["feedback"].strip()): out.append(f"{key}[{i}].feedback: every option needs its own feedback")
+        if isinstance(c, dict) and set(c) - {"text", "feedback", "correct", "figure"}: out.append(f"{key}[{i}]: keys are text, feedback, correct, figure")
+    if len([c for c in ch if isinstance(c, dict) and c.get("correct") is True]) != 1: out.append(f"{key}: exactly one option has \"correct\": true")
     return out
+
+
+def written_answer(e):
+    return [] if isinstance(e.get("answer"), str) and e["answer"].strip() else ["answer: the right answers in words (the Vastaus box)"]
+
+
+def statement_errors(e):
+    """True-or-false statements (teacher 2026-11-05): 3–6 statements about one phenomenon, each with "true" (a boolean)
+    and feedback that gives the reason; at least one true and one false, so marking all alike never passes."""
+    st = e["statements"]
+    if not isinstance(st, list) or not 3 <= len(st) <= 6: return ["statements: 3–6 statements"]
+    out = []
+    for i, c in enumerate(st):
+        if not (isinstance(c, dict) and isinstance(c.get("text"), str) and c["text"].strip()): out.append(f"statements[{i}].text: a text is required"); continue
+        if not isinstance(c.get("true"), bool): out.append(f"statements[{i}].true: true or false")
+        if not (isinstance(c.get("feedback"), str) and c["feedback"].strip()): out.append(f"statements[{i}].feedback: every statement needs its reason")
+        if set(c) - {"text", "true", "feedback"}: out.append(f"statements[{i}]: keys are text, true, feedback")
+    truths = {c.get("true") for c in st if isinstance(c, dict)}
+    if truths != {True, False}: out.append("statements: at least one true and one false")
+    return out + written_answer(e)
+
+
+def order_errors(e):
+    """Putting items in order (teacher 2026-11-05): 3–6 items written in the correct order (the page shuffles them),
+    each a text and optionally a figure; the prompt names the quantity and the direction ("pienimmästä suurimpaan")."""
+    od = e["order"]
+    if not isinstance(od, list) or not 3 <= len(od) <= 6: return ["order: 3–6 items"]
+    out = []
+    for i, c in enumerate(od):
+        if not (isinstance(c, dict) and isinstance(c.get("text"), str) and c["text"].strip()): out.append(f"order[{i}].text: a text is required")
+        elif set(c) - {"text", "figure"}: out.append(f"order[{i}]: keys are text, figure")
+    if not (isinstance(e.get("prompt"), str) and e["prompt"].strip()): out.append("prompt: names the quantity and the direction of the order")
+    return out + written_answer(e)
 
 
 DATA_NUM = re.compile(r"[−-]?\d+(?:\.\d+)?")
@@ -343,7 +390,7 @@ def check_exercises(L, folder):
             if e.get("fbd") == "draw" and not e.get("model_figure"): L.err("exercises.json", line, f"{eid}: a drawing task shows its model diagram in the solution (\"model_figure\": \"<id>\")")
             for k in e.get("kind", []) if isinstance(e.get("kind", []), list) else [None]:
                 if k not in courses.EXERCISE_KINDS: L.err("exercises.json", line, f"{eid}: kind is a list of {', '.join(courses.EXERCISE_KINDS)}")
-            if "choices" in e:
+            if "choices" in e or "statements" in e or "order" in e:
                 for msg in exercise_choice_errors(e): L.err("exercises.json", line, f"{eid}: {msg}")
             if "data" in e:
                 for msg in data_errors(e["data"]): L.err("exercises.json", line, f"{eid}: data: {msg}")

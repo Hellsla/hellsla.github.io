@@ -244,6 +244,33 @@
       "answer": 8.9,
       "unit": "g/cm³",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy1-7-L2-08",
+      "level": 2,
+      "text": "The masses and volumes of four unknown solid objects have been measured in different units.\n\nObject A: mass $135\\,\\text{g}$, volume $50\\,\\text{cm}^3$\n\nObject B: mass $0.36\\,\\text{kg}$, volume $0.40\\,\\text{dm}^3$\n\nObject C: mass $4.5\\,\\text{kg}$, volume $500\\,\\text{cm}^3$\n\nObject D: mass $120\\,\\text{g}$, volume $100\\,\\text{ml}$\n\nIn which order are the objects by density, from smallest to largest?",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "prompt": "Arrange by density from smallest to largest.",
+      "order": [
+        {
+          "text": "Object B"
+        },
+        {
+          "text": "Object D"
+        },
+        {
+          "text": "Object A"
+        },
+        {
+          "text": "Object C"
+        }
+      ],
+      "answer": "Object B ($0.90\\,\\text{g/cm}^3$), object D ($1.2\\,\\text{g/cm}^3$), object A ($2.7\\,\\text{g/cm}^3$), object C ($9.0\\,\\text{g/cm}^3$).",
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level3": [

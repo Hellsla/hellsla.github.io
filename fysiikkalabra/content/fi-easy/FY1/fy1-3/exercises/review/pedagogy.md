@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 66a272c3a96649d3
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 039bbf04c7489009
+Mode: full (translation review against the reviewed Finnish set; new task L2-08)
+Round 2
 
 ## Blocking
 (none)
 
 ## Fixed
-(none needed: the selkosuomi (fi-easy) text already matched fi in every number and was natural)
+(none needed)
 
 ## Polish
 (none)
 
 ## Checked
-- Structure of the translation matches fi: same hint-free tasks, same steps in Given/Find/Principle/Formula/Substitution/Answer/Reasonableness, same model answers for L2-07, L3-04 and L3-05.
-- Language level suits the course (selkosuomi (fi-easy)): terms (systematic error, random error, gross error, half of the range, consistent, uncertainty interval) are used consistently and explained where fi explains them.
-- No hints or answers added or removed compared with fi; feedback of L1-06 explains why each wrong option is wrong.
+- L2-08 keeps the YO-skill form of fi: data table plus a single-best-conclusion multiple choice, no hint, no answer given away in the text.
+- Each distractor targets a real misconception (difference as proof, "no effect" proved, over-precise average) and its feedback repairs it as in fi.
+- Language level suits the course (fi-easy): short sentences, terms consistent with the rest of the set; Solution has Given/Find/Principle/Model answer as in fi.

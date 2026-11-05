@@ -272,6 +272,57 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy1-6-L2-08",
+      "level": 2,
+      "text": "Tyhjiökammiossa pudotetaan levosta samalta korkeudelta yhtä aikaa kaksi samankokoista palloa. Raskaamman pallon massa on $4{,}0\\,\\text{kg}$ ja kevyemmän pallon massa on $1{,}0\\,\\text{kg}$. Raskaamman pallon nopeus on $2{,}0\\,\\text{s}$:n kuluttua pudotuksesta $19{,}6\\,\\text{m/s}$. Mikä on kevyemmän pallon nopeus samalla hetkellä?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "$19{,}6\\,\\text{m/s}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "$4{,}9\\,\\text{m/s}$",
+          "feedback": "Tässä oletetaan, että nopeus on verrannollinen massaan eli että neljä kertaa kevyempi pallo on neljä kertaa hitaampi. Vapaassa pudotuksessa nopeus $v = g\\,t$ ei riipu massasta."
+        },
+        {
+          "text": "$9{,}8\\,\\text{m/s}$",
+          "feedback": "Tässä luku $g = 9{,}81\\,\\text{m/s}^2$ on tulkittu nopeudeksi. Se kertoo, kuinka paljon nopeus kasvaa sekunnissa. Nopeus kahden sekunnin kuluttua on $g\\,t$."
+        },
+        {
+          "text": "$19{,}6\\,\\text{m/s}$",
+          "feedback": "Oikein: ilmanvastusta ei ole, joten kumpikin pallo on vapaassa pudotuksessa. Nopeus on $v = g\\,t$ massasta riippumatta.",
+          "correct": true
+        },
+        {
+          "text": "$78\\,\\text{m/s}$",
+          "feedback": "Tässä oletetaan, että kevyt pallo kiihtyy neljä kertaa enemmän, koska se on neljä kertaa kevyempi. Massa ei vaikuta putoamiskiihtyvyyteen. Siksi nopeus on sama kuin raskaammalla pallolla."
+        }
+      ],
+      "reason_prompt": "Mikä perustelu selittää vastauksesi?",
+      "reasons": [
+        {
+          "text": "Pallot ovat samankokoisia ja ne lähtevät levosta.",
+          "feedback": "Väite on tosi, mutta se ei selitä vastausta. Myös eri kokoiset kappaleet putoaisivat tyhjiössä yhtä nopeasti. Levosta lähtö kertoo vain, että $v = g\\,t$ alkaa nollasta."
+        },
+        {
+          "text": "Raskaampi pallo vetää itseään voimakkaammin kohti Maata, joten sen nopeus kasvaa nopeammin.",
+          "feedback": "Tämä on yleinen virhekäsitys. Raskaampi pallo on myös vaikeampi saada liikkeelle, ja nämä kaksi vaikutusta kumoavat toisensa eli poistavat toisensa. Putoamiskiihtyvyys $g$ on sama kaikille kappaleille."
+        },
+        {
+          "text": "Putoamiskiihtyvyys $g$ on sama kaikille kappaleille ilman ilmanvastusta, joten nopeus $v = g\\,t$ ei riipu massasta.",
+          "feedback": "Oikein: nopeus kasvaa joka sekunti saman verran $g$ massasta riippumatta. Siksi pallot ovat joka hetki yhtä nopeita.",
+          "correct": true
+        },
+        {
+          "text": "Kevyempi pallo on helpompi saada liikkeelle, joten sen nopeus kasvaa nopeammin.",
+          "feedback": "Kevyemmän kappaleen saa kyllä helpommin liikkeelle, mutta vapaassa pudotuksessa Maa myös vetää sitä vähemmän. Vaikutukset kumoavat toisensa, ja kiihtyvyys on sama $g$."
+        }
+      ]
     }
   ],
   "level3": [

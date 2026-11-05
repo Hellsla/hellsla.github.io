@@ -26,7 +26,7 @@ def chapter(folder):
     mix = dict.fromkeys(COLS, 0)
     for items in ex.values():
         for e in items:
-            mix["choice" if e.get("choices") else "calc" if isinstance(e.get("answer"), (int, float)) else "written"] += 1
+            mix["choice" if e.get("choices") or e.get("statements") or e.get("order") else "calc" if isinstance(e.get("answer"), (int, float)) else "written"] += 1
             for k in e.get("kind", []): mix[k] += 1
     return n, mix
 

@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 1b1e5178b3cffb72
+CONTENT-HASH: 18f2780582100755
 
 ## Blocking
 
 ## Polish
-- [Minor] solutions.md L2-05, Kuvaajan lukeminen (open-exercises-L2-1280-5) — the point pairs "(0 s; 1,2 m)" / "(5,0 s; 8,2 m)" break across lines at the semicolon — keep each point on one line (non-breaking space after the semicolon) or write the points as display items.
-- [Minor] L3-05 task — the instruction "Piirretään (t, s)-kuvaaja ..." is passive and sits between two imperatives; "Piirrä (t, s)-kuvaaja ..." or "Oletetaan, että kuvaaja piirretään ..." reads as one voice. The sentence also sets the scale before the question that uses it, which is fine.
-- [Minor] L2-05, L3-04 — "Piirrä kuvaaja" has no plotted example in the solution (carried over, optional).
+- [Minor] L2-08 (5-16) — after a wrong answer the chosen card keeps the green "selected" tint while the line below says "Ei aivan"; a neutral selection tint would avoid reading as correct (template, optional).
+- [Minor] L2-08 option graphs — no marked tick at 6 m or at 4 s / 10 s; the grid suffices, optional.
 
 ## Checked
-- Round 2 delta, captures current for this hash (taken after the edits). Opened open-exercises-L2-1280-5, -6 (L2-05 with s instead of x, wider accepted range), L3-1280-5 to -8 (L3-04 rewritten, L3-05 replaced by the bullet task); no 360 px exercise capture exists (only stage-exercises-390).
-- Round 1 had no Blocking. Carried-over Polish fixed: "Osa 2:" capitalisation done, "18 m" now consistent with "kaksi merkitsevää numeroa".
-- L3-04 and L3-05: tables show decimal comma, units in headers, fractions with units, long chains broken into aligned rows, MC-free number answers; solution cards open without overflow or clipping.
-- Notation: x replaced by s throughout the changed tasks, consistent with the chapter glossary (paikka, matka).
+- Round 2; hash 18f2780582100755 at start and end. Round 1 Major (feedback of a figure choice overflowing under the next card and Vastaa) is fixed: live renders of 5-16 at 390 and 1280 px after a wrong answer, and open-exercises-L2-1280-9, show the feedback inside its own grid cell, fully readable, no overlap.
+- Opened the four option figures (A–D): consistent axes, units, strokes; B clearly a (t, v) graph. Solution card and "Kuvaajan lukeminen" read cleanly; maths and units in LaTeX.
+- Not every older capture of the full exercise set was re-opened (earlier rounds passed them; only L2-08 and the paragraph splits changed).
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

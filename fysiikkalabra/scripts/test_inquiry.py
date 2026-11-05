@@ -89,6 +89,39 @@ WIDE = """() => {      // the wide layout as rendered: which blocks sit side by 
 }"""
 
 
+
+def list_tasks(pg, url):
+    """The exercises answered as a list (teacher 2026-11-05, inquiry.js 2b–2c): true-or-false statements and order tasks.
+    Every item wrong: the wrong ones are marked and one change is offered; wrong again: every right answer is shown and the
+    task locks. Reloaded and answered right: "Oikein", every item marked right."""
+    sets = pg.locator("fieldset.tf, fieldset.order")
+    if not sets.count(): return
+    pg.evaluate("document.querySelectorAll('#exercises details').forEach((d) => { d.open = true; })")
+    js_wrong = """(fs) => { const tf = fs.classList.contains('tf');
+        fs.querySelectorAll(tf ? '.tf-list > li' : '.order-list > li').forEach((li, j, all) => {
+          if (tf) li.querySelector(`input[value="${li.dataset.true === '1' ? '0' : '1'}"]`).checked = true;
+          else li.querySelector('select').value = String(((Number(li.dataset.rank)) % all.length) + 1); }); }"""
+    js_right = """(fs) => { const tf = fs.classList.contains('tf');
+        fs.querySelectorAll(tf ? '.tf-list > li' : '.order-list > li').forEach((li) => {
+          if (tf) li.querySelector(`input[value="${li.dataset.true}"]`).checked = true; else li.querySelector('select').value = li.dataset.rank; }); }"""
+    ids = [x.get_attribute("data-id") for x in sets.all()]
+    for i in ids:
+        fs = pg.locator(f'fieldset[data-id="{i}"]'); rows = fs.locator("ol.tf-list > li, ul.order-list > li"); n = rows.count()
+        fs.locator("button.commit").click()
+        check(f"{i}: Vastaa asks for every item first", fs.locator("output").get_attribute("data-state") == "hint")
+        fs.evaluate(js_wrong); fs.locator("button.commit").click()
+        marked = fs.locator('li[data-state="no"]').count()
+        check(f"{i}: the first wrong answer marks the wrong items and offers one change", marked == n and f"{n}/{n}" in fs.locator("output").inner_text() and fs.locator("button.commit").is_visible(), f"{marked}/{n}")
+        fs.locator("button.commit").click()
+        shown = fs.locator(".feedback:visible, .ord-right:visible").count()
+        check(f"{i}: the second wrong answer shows every right answer and locks", shown == n and not fs.locator("button.commit").is_visible(), f"{shown}/{n} shown")
+    pg.goto(url); pg.wait_for_timeout(300)
+    pg.evaluate("document.querySelectorAll('#exercises details').forEach((d) => { d.open = true; })")
+    for i in ids:
+        fs = pg.locator(f'fieldset[data-id="{i}"]'); n = fs.locator("ol.tf-list > li, ul.order-list > li").count()
+        fs.evaluate(js_right); fs.locator("button.commit").click()
+        check(f"{i}: the right answers are marked right", fs.locator("output").get_attribute("data-state") == "ok" and fs.locator('li[data-state="ok"]').count() == n)
+
 def page_form(pg, b, url, acts, page):
     """The lesson page form of 2026-10-26 (CLAUDE.md "Lesson page"), checked on the rendered page. pg is a 1280 px page."""
     names = pg.evaluate(NAMES)
@@ -245,6 +278,7 @@ def generic(lid):
                 check(f"{a['id']}: a wrong choice shows its own feedback", vis == [wv] and "Ei aivan" in loc.locator("output").inner_text(), f"visible {vis}, chose {wv}")
             loc.locator("input[data-correct='1']").first.check(); loc.locator("button.commit").click()
             check(f"{a['id']}: the correct choice is marked right", "Oikein" in loc.locator("output").inner_text())
+        list_tasks(pg, url)
         wrongs = {}
         for pr in preds:
             loc = pg.locator(f"#{pr['id']}"); wrong = int(loc.locator("input[data-correct='0']").first.get_attribute("value")); wrongs[pr["id"]] = str(wrong)

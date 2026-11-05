@@ -198,7 +198,10 @@
     "goal_note": "Täsmennys",
     "kc_title": "Luvun tärkeät käsitteet",
     "kc_optional": "Vapaaehtoinen",
-    "kc_lead": "Tutustu luvun tärkeisiin käsitteisiin. Voit kirjoittaa niiden merkitykset sinulle vahvimmalla kielellä tai useammalla kielellä."
+    "kc_lead": "Tutustu luvun tärkeisiin käsitteisiin. Voit kirjoittaa niiden merkitykset sinulle vahvimmalla kielellä tai useammalla kielellä.",
+    "choose_reason": "Valitse perustelu vastauksellesi.",
+    "choose_tf": "Onko väite tosi vai epätosi?",
+    "choose_order": "Laita järjestykseen."
   },
   "inquiry": {
     "stage_herata": "Pohdinta",
@@ -276,7 +279,11 @@
     "answer_in": "Vastaus yksikössä {{unit}}",
     "did_solution": "Olen tehnyt ratkaisun.",
     "exp_copy": "Kopioi taulukko",
-    "exp_csv": "Lataa CSV"
+    "exp_csv": "Lataa CSV",
+    "tf_true": "Tosi",
+    "tf_false": "Epätosi",
+    "order_place": "Sija järjestyksessä",
+    "order_pick": "Sija"
   },
   "js": {
     "split_open": "Avaa tehtävät teorian viereen",
@@ -396,7 +403,16 @@
     "ra_bar": "Ääneenluku",
     "ra_no_voice": "Laitteessasi ei ole suomenkielistä puheääntä, joten selain lukee toisella äänellä. Suomen puheäänen voi lisätä laitteen kieliasetuksista, tai voit käyttää Edge-selainta.",
     "mc_score": "Monivalinnat: {{got}} / {{max}} p",
-    "exam_total": "Pisteesi: {{got}} / {{max}} p"
+    "exam_total": "Pisteesi: {{got}} / {{max}} p",
+    "tf_all_first": "Valitse ensin jokaiseen väitteeseen tosi tai epätosi.",
+    "order_all_first": "Anna ensin jokaiselle kohdalle sija.",
+    "order_distinct": "Käytä jokaista sijaa vain kerran.",
+    "list_all_right": "Oikein, kaikki kohdat.",
+    "list_wrong": "Ei aivan: {{n}}/{{total}} kohtaa on väärin, ja ne on merkitty. Voit muuttaa vastauksia vielä kerran.",
+    "list_reveal": "Ei aivan. Oikeat vastaukset on merkitty perusteluineen.",
+    "tf_is_true": "Tosi",
+    "tf_is_false": "Epätosi",
+    "order_right_place": "Oikea sija: {{n}}"
   },
   "sims": {
     "fy2-2": {

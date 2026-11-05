@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 858946470e7d35ed
+CONTENT-HASH: d91dc312a9901fe7
 
 ## Blocking
 
 ## Polish
-- [Minor] L2-07 Sijoitus, Muunnokset, Vastaus — the litre `\textsf{l}` reads as a capital I or a bar in "l²/s" and "12 l"; project-wide litre convention, a look at the shared glyph.
-- [Minor] L2-05, L3-05 table headers — "Yksikkö" and "solmua" in `\text{}` render in the serif maths face next to sans headers; leave words plain, keep maths for unit symbols.
-- [Minor] L2-07 task — the pupil's quotation opens with a straight quote and is run into the paragraph; set it as its own paragraph with ” ”.
-- [Minor] L2-05, L2-06, L3-05 tables — left-aligned, narrow, numbers not aligned by the decimal comma (known shared-component item).
+- [Minor] L1-09, L2-07 — the litre `\textsf{l}` reads like a capital I or bar in "l/s" and "12 l"; project-wide litre convention, shared glyph.
+- [Minor] L2-07 task — carried: the pupil's quotation should stand as its own paragraph with ” ”; the split now helps.
+- [Minor] L2-05, L3-05 tables — left-aligned, narrow, decimals not aligned (known shared-component item).
 
 ## Checked
-- Round 3 delta. Only L3-04 Vastaus changed ("pienillä heilahduksilla pätee T = 2π√(L/g)"). Opened open-exercises-L3-1280-5 (fresh): Vastaus chip a = 1/2, the sentence with the inline fraction-in-root formula renders cleanly, Järkevyys set apart, no clipping.
-- Opened open-exercises-L3-1280-4: pendulum task, Annettu, Kysytty, Periaate intact; layout survived.
-- Everything else unchanged since the round-2 PASS.
+- Round 1 delta (new YO-skill task L1-09, paragraph splits in L2-07, L3-04, L3-05, solutions.md).
+- open-exercises-1280-9: L1-09 answer chip with fraction 12 km / 3,0 h, Kysytty, Periaate and Mallivastaus; km/h, km·h and km/h² set upright with correct spacing, nothing clipped.
+- L2-07, L3-04, L3-05 task paragraph splits checked against the source diff (situation, quotation, question each a paragraph); layout of neighbouring tasks unchanged.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 5 · accessibility 4

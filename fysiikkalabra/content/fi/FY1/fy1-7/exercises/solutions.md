@@ -193,3 +193,34 @@ $$L = \frac{V}{A} = \frac{m}{\rho\,\pi r^2}$$
 **Sijoitus:** $V_\text{Cu} = \dfrac{520\,\text{g} - 2{,}70\,\tfrac{\text{g}}{\text{cm}^3} \cdot 100\,\text{cm}^3}{8{,}96\,\tfrac{\text{g}}{\text{cm}^3} - 2{,}70\,\tfrac{\text{g}}{\text{cm}^3}} = \dfrac{250\,\text{g}}{6{,}26\,\tfrac{\text{g}}{\text{cm}^3}} = 39{,}9\,\text{cm}^3$
 **Vastaus:** $39{,}9\,\text{cm}^3$, kolme merkitsevää numeroa, koska taulukon tiheydet ovat kolmella numerolla ja tiedot $520\,\text{g}$ ja $100\,\text{cm}^3$ luetaan kolmen numeron tarkkuudella. Alumiinia on $V_\text{Al} = 100\,\text{cm}^3 - 39{,}9\,\text{cm}^3 = 60{,}1\,\text{cm}^3$.
 **Järkevyys:** Jos kappale olisi pelkkää alumiinia, sen massa olisi $270\,\text{g}$, ja pelkkää kuparia $896\,\text{g}$. Todellinen massa $520\,\text{g}$ on näiden välissä ja lähempänä alumiinia, joten kuparia on alle puolet tilavuudesta, kuten $39{,}9\,\text{cm}^3$. Alumiinia on enemmän tilavuuden mukaan ($60{,}1\,\text{cm}^3$), mutta kuparia on enemmän massan mukaan: kuparin massa on noin $357{,}5\,\text{g}$ ja alumiinin noin $162{,}3\,\text{g}$, koska kuparin tiheys on moninkertainen. Tarkistus: $8{,}96 \cdot 39{,}9\,\text{g} + 2{,}70 \cdot 60{,}1\,\text{g} = 357{,}5\,\text{g} + 162{,}3\,\text{g} = 519{,}8\,\text{g} \approx 520\,\text{g}$.
+
+## fy1-7-L2-08
+**Annettu:** kappale A: $m_\text{A} = 135\,\text{g}$, $V_\text{A} = 50\,\text{cm}^3$; kappale B: $m_\text{B} = 0{,}36\,\text{kg}$, $V_\text{B} = 0{,}40\,\text{dm}^3$; kappale C: $m_\text{C} = 4{,}5\,\text{kg}$, $V_\text{C} = 500\,\text{cm}^3$; kappale D: $m_\text{D} = 120\,\text{g}$, $V_\text{D} = 100\,\text{ml}$
+
+**Kysytty:** kappaleiden järjestys tiheyden $\rho$ mukaan pienimmästä suurimpaan
+
+**Periaate:** Tiheys on massa tilavuutta kohti, $\rho = \dfrac{m}{V}$, joten kappaleita voi verrata vain, kun kaikilla on sama yksikkö. Raskain kappale ei ole välttämättä tihein, koska tiheyteen vaikuttaa myös tilavuus. Muunnetaan kaikki yksikköön $\text{g/cm}^3$ ja lasketaan jokaisen tiheys. Järjestys löytyy laskemalla, aineita ei tarvitse arvata.
+
+**Mallivastaus:** Muunnokset:
+
+$0{,}36\,\text{kg} = 360\,\text{g}$
+
+$0{,}40\,\text{dm}^3 = 400\,\text{cm}^3$
+
+$4{,}5\,\text{kg} = 4500\,\text{g}$
+
+$100\,\text{ml} = 100\,\text{cm}^3$
+
+Tiheydet:
+
+$\rho_\text{A} = 135\,\text{g} : 50\,\text{cm}^3 = 2{,}7\,\tfrac{\text{g}}{\text{cm}^3}$
+
+$\rho_\text{B} = 360\,\text{g} : 400\,\text{cm}^3 = 0{,}90\,\tfrac{\text{g}}{\text{cm}^3}$
+
+$\rho_\text{C} = 4500\,\text{g} : 500\,\text{cm}^3 = 9{,}0\,\tfrac{\text{g}}{\text{cm}^3}$
+
+$\rho_\text{D} = 120\,\text{g} : 100\,\text{cm}^3 = 1{,}2\,\tfrac{\text{g}}{\text{cm}^3}$
+
+Pienimmästä suurimpaan järjestys on B, D, A, C.
+
+Kappale B kelluisi vedessä ja muut uppoaisivat. Massan mukaan järjestys olisi eri: kappale C on raskain ja kappale D kevein, mutta tiheys kertoo massan tilavuutta kohti, ei kappaleen kokonaismassaa. Tiheydet on annettu kahdella merkitsevällä numerolla, kuten epätarkimmat lähtöarvot; järjestys ei muutu, koska tiheydet eroavat selvästi toisistaan.

@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: c2df97fe60adb95a
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 9cfa5cdd244942ed
+Mode: full (translation review against the reviewed Finnish set; new task fy1-5-L2-08)
+Round 2
 
 ## Blocking
 (none)
 
 ## Fixed
-(none needed: text already matched fi in every number and was natural)
+- "velocity" changed to "speed" for $v$ and the slope in L2-08 (exercises.json, solutions.md, figures.json caption of pick-vt): the English lesson calls $v$ speed throughout, and fi uses one word (nopeus).
 
 ## Polish
 (none)
 
 ## Checked
-- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) and older ones compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags, data table cells identical; every number in texts, choices, feedback and solutions.md equal (704 numbers each in solutions.md; decimal point in JSON/LaTeX).
-- Re-derived: L1-07 9.6 m, L1-08 2.5 m/s, L2-05 18 m (v 1.4 m/s), L2-06 17 m, L2-07 8.0 m, L3-04 1.3 m/s (40 m / 30 s), L3-05 300 m/s; all agree with fi.
-- No Finnish left in en (grep); check_i18n.py en: 0 errors.
+- L2-08 compared with content/fi: same id, level, kinds, answer "C", exactly one correct option (pick-back); texts, feedback, solution numbers (6.0 m, 4.0 s, 1.0 m/s, 6.0 s, 10 s, 12 m) identical.
+- Re-derived: return 6.0 m / 1.0 m/s = 6.0 s, arrival at 4.0 s + 6.0 s = 10 s; only graph C (6 m flat to 4 s, then down to 0 m at 10 s) fits; A rises to 12 m, B is (t, v), D is distance from 0 to 6 m.
+- All four pick-* figure descriptions in figures.json translated and match the fi captions (points, grid 1 s / 2 m / 0.25 m/s); check_i18n.py: nothing for fy1-5; build.py fy1-5 succeeds.

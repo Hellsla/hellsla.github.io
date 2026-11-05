@@ -69,6 +69,11 @@
 **Periaate:** Kaavassa $\rho = \dfrac{m}{V}$ massa jaetaan tilavuudella. Yksiköille tehdään sama kuin suureille: suureen yksikkö saadaan sijoittamalla kaavaan suureiden yksiköt. Tilavuuden yksikkö on kolmen pituuden tulo, $\text{m}\cdot\text{m}\cdot\text{m} = \text{m}^3$.
 **Mallivastaus:** Sijoitetaan yksiköt kaavaan: $\dfrac{\text{kg}}{\text{m}^3}$, eli tiheyden yksikkö on $\text{kg/m}^3$. Kilogramma on osoittajassa, koska massa on kaavan osoittajassa. Tulo $\text{kg}\cdot\text{m}^3$ ei tule jakolaskusta, käänteinen $\text{m}^3/\text{kg}$ kuvaisi tilavuutta massayksikköä kohti, ja neliömetri on pinta-alan yksikkö. Yksikkötarkastelulla voi siis tarkistaa, onko kaava kirjoitettu oikein.
 
+## fy1-2-L1-09
+**Kysytty:** mikä annetuista lausekkeista voi olla nopeus.
+**Periaate:** Nopeus kertoo, kuinka pitkä matka kuljetaan aikayksikössä, joten sen yksikkö on pituusyksikkö jaettuna aikayksiköllä. Lausekkeen yksikkö saadaan sijoittamalla yksiköt lausekkeeseen samalla tavalla kuin suureet: yksiköt kerrotaan ja jaetaan samoin kuin lukuarvot.
+**Mallivastaus:** Lauseke $\dfrac{12\,\text{km}}{3{,}0\,\text{h}}$ on matka jaettuna ajalla, ja sen yksikkö on $\text{km/h}$, joten se voi olla nopeus. Tulon yksikkö on $\text{km}\cdot\text{h}$, joten se ei ole pituus jaettuna ajalla. Käänteisen lausekkeen yksikkö on $\text{h/km}$, eli aika matkaa kohti, joten sekään ei ole nopeus. Neliöity aika nimittäjässä antaa yksikön $\text{km/h}^2$, joka on kiihtyvyyden tyyppinen yksikkö. Vastaus ratkeaa siis pelkästään yksiköistä, eikä lukuarvoja tarvitse laskea.
+
 ## fy1-2-L2-01
 **Annettu:** kellotaajuus $f = 3{,}2\,\text{GHz}$, aika $t = 5{,}0\,\text{ms}$; $1\,\text{GHz} = 10^{9}\,\text{Hz}$ ja $1\,\text{Hz} = 1/\text{s}$
 **Kysytty:** kellojaksojen lukumäärä $N$
