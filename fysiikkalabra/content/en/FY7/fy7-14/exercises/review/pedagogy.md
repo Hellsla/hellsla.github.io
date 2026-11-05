@@ -1,15 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 66d73ff6f128ff74
+CONTENT-HASH: be1bb316e8571aa9
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+- solutions.md L2-07 reasonableness — clumsy "the about $1.3\,\%$" — reworded to "is close to the $1.3\,\%$ mentioned in the chapter".
 
 ## Polish
-- L1-05 — the solution says "as stated in the chapter" for n_c = sqrt(n_glass); the lesson gives it as a result without derivation, so the Principle's equal-strength step (1.00 : n_c = n_c : n_plastic) is the whole reasoning; fine, but a student may not see why the ratios must match. One more sentence would help.
-- L3-01 — "second dark band, when the topmost black region is not counted" is correct and clearly stated, but a student may still count the black top; the solution handles it well.
+- (none beyond the Fixed item)
 
 ## Checked
-- Levels 5/4/3 as required; L1 one formula each, L2 first decide the number of inversions (L2-04 is the one-inversion case with n_layer > n_glass, a good contrast), L3 combines (bands, eight-surface objective, two wavelengths).
-- None repeats the worked example (380 nm film); L2-01 is a near-sibling but asks for the missing wavelength, a different condition.
-- Answers recomputed: all 12 match (e.g. 1117.2, 90.58, 607.2, 282.61, 59.78, 442.86, 0.987^8 = 90.06 %, 592.1 nm with k = 2).
-- Situation first, question last; contexts recognisable (soap film, camera lens, spectacles).
-- Solutions follow Given, Find, Principle, Formula, Conversions, Substitution, Answer, Reasonableness with the principle explained, not just named.
+- Same pedagogy as the reviewed fi set: part labels a)/b)/c), answer-box sentence ("takes ... of part b)") present in every multi-part task, example-data wording kept.
+- Level and kind tags unchanged (L2-06 error analysis, L2-05/L2-07/L3-05 data+graph, L1-06 concept).
+- Solutions keep the fixed order Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness, with significant-figure reasoning and reasonableness checks translated faithfully.
+- Student's wrong solution in L2-06 quoted with the same numbers (2nd = 665 nm) and the same error.
+- Reading level: English is natural and idiomatic; no Finnish left (grep for ä/ö in JSON and solutions empty); decimal point used in JSON and LaTeX.

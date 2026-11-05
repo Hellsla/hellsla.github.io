@@ -1,13 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 6cc6cd6b4cb5fbbc
+CONTENT-HASH: 825acbc29d3636fd
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+- L3-04 part c: added short explanations "(aallonpituus on lyhyempi / pidempi kuin näkyvällä valolla)" after ultraviolettialue and infrapuna, so the terms are explained in plain Finnish.
 
 ## Polish
+(none)
 
 ## Checked
-- All 12 answers recomputed in one script with my own formulas and agree with exercises.json: 3,1915 m, 12,2449 cm, 9,4397 µm, 9993 K, 563,91 THz, 4,0075 µm, 2415 K, 4,8264 µm, 5796 K, 1,0633 mm, 89,1 °C, 384000 km.
-- Every number, unit, tolerance and the figure id identical to the passed fi set; task texts keep the black-body assumption and the asked unit.
-- Solutions: split sentences keep the principle, symbolic solution, conversions, rounding reasons and reasonableness checks.
-- L2-02 figure description (fi-easy figures.json) carries the same information as fi and does not give the answer.
-- L3-03: dropping fi's "lähes koko" (ilmakehän läpi) is a level-appropriate simplification (C); c = 3,00 · 10⁸ m/s to three figures is unaffected.
+- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) and all older ones compared with content/fi by script (ids, levels, kinds, answers, units, tolerances, correct flags, choice counts, data cells, every number in texts, choices, feedback): identical, decimal point per language (comma in text as in fi).
+- solutions.md: same sections and numbers as fi for all new tasks; reasonableness checks and model answers translated faithfully.
+- Language: clear plain Finnish (short sentences, terms explained).
+- Re-derived key answers: L1-07 67.33 ms, L1-08 8.571 cm, L2-05 2683 K, L2-06 1.634 µm, L2-07 2.897, L3-04 ratio 3.192, L3-05 17.5 min; all agree with fi.
+- check_i18n.py fi-easy: 0 errors.

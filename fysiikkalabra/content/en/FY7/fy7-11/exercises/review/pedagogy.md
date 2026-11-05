@@ -1,15 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 7ae87cbc6cfd7f44
+CONTENT-HASH: 07439b13533f3ae8
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
+## Fixed
+- exercises.json L2-05 c) — "Justify with ... why a prism spectrometer is better made of" reworded to "Use the refractive indices in the table to explain why ...".
+- exercises.json L3-04 c) — "tell whether" changed to "say whether". No numbers touched.
+
 ## Polish
-- exercises.json L3-01, L3-03 (still open from round 1) — both are long chains of the same two formulas with rounding and the angles prescribed; only L3-02 asks for a judgement. Consider one L3 task where the student decides what to compute.
-- exercises.json L1-05 — pure substitution with no refractive-index step; level 1 practises the colour-dependent n only in L1-01..03.
+(none)
 
 ## Checked
-- Diff judged: red subscript p changed to r in solutions L2-01, L3-01 and L3-03 (Given, Find, Formula, Substitution, Reasonableness); no p subscript remains in exercises.json or solutions.md; the content and numbers are unchanged.
-- Counts 5/4/3 match the rubric; none repeats the worked example.
-- Solutions keep the Given/Find/Principle/.../Reasonableness form, with principles explained and significant-figure losses noted.
-- L2-03 figure description gives the data without the answer.
+- Same task structure as fi: L1-06 has one correct option, each distractor feedback names its own misconception (frequency change, glass colours light, red unrefracted) and does not give away the answer.
+- Task texts keep the same stepwise a)/b)/c) structure and the answer-field sentence as fi.
+- Language level suits the course: natural English / short plain Finnish sentences with terms explained (dispersio, vastapiste, taitekerroin).
+- Solutions keep Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness (Annettu..Järkevyys in fi-easy); model answers for L2-05, L2-06, L3-04, L3-05 make the same points as fi.
+- L2-06 error analysis and L3-04 inside/outside question are preserved with the same reasoning.

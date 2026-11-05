@@ -48,6 +48,31 @@
 **Vastaus:** $1{,}6 \cdot 10^{-13}\,\text{N}$, kaksi merkitsevää numeroa kuten vauhdissa ja kentässä.
 **Järkevyys:** Kohtisuorassa kentässä voima olisi kaksinkertainen, $3{,}2 \cdot 10^{-13}\,\text{N}$. Kulma $30^\circ$ puolittaa sen, koska vain puolet nopeudesta on kohtisuorassa kenttää vastaan. Kentän suuntaisesti liikkuvaan protoniin voimaa ei olisi lainkaan.
 
+## fy7-2-L1-06
+**Kysytty:** mitä protonin liike-energialle tapahtuu, kun se kulkee magneettikentässä kohtisuoraan kenttää vastaan.
+**Periaate:** Liike-energia muuttuu vain, jos hiukkaseen vaikuttava voima tekee työtä. Magneettinen voima $qvB$ on aina kohtisuorassa nopeutta vastaan. Siksi se ei tee työtä eikä muuta vauhtia. Se vain kääntää liikesuuntaa ja toimii ympyräradan keskeisvoimana. Vauhtia voi muuttaa vain sähkökenttä.
+**Mallivastaus:** Liike-energia pysyy samana. Protoni kulkee ympyrärataa tasaisella vauhdilla, koska voima on koko ajan kohtisuorassa nopeutta vastaan eikä tee työtä. Kenttä ei kiihdytä eikä jarruta protonia. Voima ei myöskään ole kentän suuntainen, vaan kohtisuorassa sekä kenttää että nopeutta vastaan. Voimakas kenttä ei muuta tätä. Se taivuttaa radan vain pienemmäksi ympyräksi.
+
+## fy7-2-L1-07
+**Annettu:** elektroni, $m = 9{,}109 \cdot 10^{-31}\,\text{kg}$, $q = 1{,}602 \cdot 10^{-19}\,\text{C}$, $v = 3{,}0 \cdot 10^{6}\,\text{m/s}$ kohtisuorassa kenttää vastaan, ympyräradan säde $r = 4{,}0\,\text{cm}$
+**Kysytty:** magneettivuon tiheys $B$ millitesloina
+**Periaate:** Magneettinen voima on kohtisuorassa nopeutta vastaan ja koko ajan yhtä suuri. Siksi se on elektronin ympyräliikkeen keskeisvoima.
+**Kaava:** $qvB = \dfrac{mv^2}{r}$, josta $B = \dfrac{mv}{qr}$
+**Muunnokset:** $r = 4{,}0\,\text{cm} = 4{,}0 \cdot 0{,}01\,\text{m} = 0{,}040\,\text{m}$. Lopuksi $1\,\text{T} = 1000\,\text{mT}$.
+**Sijoitus:** $B = \dfrac{9{,}109 \cdot 10^{-31}\,\text{kg} \cdot 3{,}0 \cdot 10^{6}\,\text{m/s}}{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 0{,}040\,\text{m}} = 4{,}264 \cdot 10^{-4}\,\text{T} = 0{,}4264\,\text{mT}$
+**Vastaus:** $0{,}43\,\text{mT}$, kaksi merkitsevää numeroa kuten vauhdissa ja säteessä.
+**Järkevyys:** Kenttä on noin 8,5-kertainen Maan magneettikenttään ($0{,}05\,\text{mT}$) verrattuna. Sen tuottaa helposti pieni käämi. Tarkistus laskemalla takaisin: $r = \dfrac{mv}{qB} = \dfrac{9{,}109 \cdot 10^{-31}\,\text{kg} \cdot 3{,}0 \cdot 10^{6}\,\text{m/s}}{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 4{,}264 \cdot 10^{-4}\,\text{T}} = 0{,}040\,\text{m}$.
+
+## fy7-2-L1-08
+**Annettu:** elektroni, $m = 9{,}109 \cdot 10^{-31}\,\text{kg}$, $q = 1{,}602 \cdot 10^{-19}\,\text{C}$, $v = 5{,}0 \cdot 10^{6}\,\text{m/s}$ kohtisuorassa kenttää vastaan, $B = 0{,}020\,\text{T}$
+**Kysytty:** yhteen kierrokseen kuluva aika eli kierrosaika $T$ nanosekunteina
+**Periaate:** Ympyräradalla kierrosaika on radan pituus jaettuna vauhdilla. Magneettinen voima on keskeisvoima, ja siitä saadaan säde. Vauhti supistuu kierrosajan lausekkeesta pois.
+**Kaava:** $T = \dfrac{2\pi r}{v}$ ja $r = \dfrac{mv}{qB}$, joten $T = \dfrac{2\pi m}{qB}$
+**Muunnokset:** Ei tarvita, koska suureet ovat SI-yksiköissä. Lopuksi $1\,\text{s} = 10^{9}\,\text{ns}$.
+**Sijoitus:** $T = \dfrac{2\pi \cdot 9{,}109 \cdot 10^{-31}\,\text{kg}}{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 0{,}020\,\text{T}} = 1{,}786 \cdot 10^{-9}\,\text{s} = 1{,}786\,\text{ns}$
+**Vastaus:** $1{,}8\,\text{ns}$, kaksi merkitsevää numeroa kuten kentässä $0{,}020\,\text{T}$. Vauhti $5{,}0 \cdot 10^{6}\,\text{m/s}$ ei vaikuta tulokseen.
+**Järkevyys:** Säteen kautta: $r = \dfrac{mv}{qB} = 1{,}42 \cdot 10^{-3}\,\text{m}$ ja $T = \dfrac{2\pi r}{v} = \dfrac{2\pi \cdot 1{,}42 \cdot 10^{-3}\,\text{m}}{5{,}0 \cdot 10^{6}\,\text{m/s}} = 1{,}79 \cdot 10^{-9}\,\text{s}$. Tulos on sama. Jos vauhti olisi kaksinkertainen, säde ja kehä kaksinkertaistuisivat. Kierrosaika pysyisi samana.
+
 ## fy7-2-L2-01
 **Annettu:** protoni, $m = 1{,}673 \cdot 10^{-27}\,\text{kg}$, $q = 1{,}602 \cdot 10^{-19}\,\text{C}$, kiihdytysjännite $U = 500\,\text{V}$, lähtee levosta; $B = 0{,}050\,\text{T}$ kohtisuorassa nopeutta vastaan
 **Kysytty:** ympyräradan säde $r$ senttimetreinä
@@ -89,6 +114,33 @@ $$\begin{aligned} r &= \dfrac{1{,}673 \cdot 10^{-27}\,\text{kg}}{1{,}602 \cdot 1
 **Vastaus:** $2{,}0\,\text{mm/s}$, kaksi merkitsevää numeroa kuten kentässä $50\,\mu\text{T}$.
 **Järkevyys:** Protoni liikkuu vain etanan vauhdilla. Silloin jo Maan heikko kenttä antaa siihen yhtä suuren magneettisen voiman kuin painovoima. Hiukkasten tavallisilla vauhdeilla, noin $10^{6}\,\text{m/s}$, magneettinen voima on noin $10^{8}$–$10^{9}$ kertaa painoa suurempi. Siksi painovoima jätetään huomiotta.
 
+## fy7-2-L2-05
+**Annettu:** $B = 0{,}050\,\text{T}$ paperiin sisään; kaikilla ioneilla $v = 2{,}0 \cdot 10^{5}\,\text{m/s}$ oikealle ja $q = 1{,}602 \cdot 10^{-19}\,\text{C}$; radat: 1 kaartuu ylös, $r_1 = 4{,}1\,\text{cm}$, 2 alas, $r_2 = 4{,}2\,\text{cm}$, 3 ylös, $r_3 = 8{,}4\,\text{cm}$; protonin massa $m_\text{p} = 1{,}673 \cdot 10^{-27}\,\text{kg}$
+**Kysytty:** a) ionien varauksen merkit, b) radan 1 ionin suhde $m : q$ muodossa $\ldots \cdot 10^{-8}\,\text{kg/C}$ ja ionin tunnistus, c) radan 3 ja radan 1 suhteiden $m : q$ suhde
+**Periaate:** a) Oikean käden säännössä peukalo osoittaa nopeuden suuntaan eli oikealle. Etusormi osoittaa kentän suuntaan eli paperiin sisään. Keskisormi osoittaa silloin ylös. Positiiviseen varaukseen vaikuttaa siis voima ylöspäin ja negatiiviseen alaspäin. Rata kaartuu voiman suuntaan. b) Magneettinen voima on keskeisvoima, $qvB = mv^2 : r$. Siitä saadaan $m : q$ säteestä, kun vauhti ja kenttä tunnetaan. c) Samalla vauhdilla ja kentällä $m : q = rB : v$ on verrannollinen säteeseen. Suhteiden suhde on siis säteiden suhde.
+**Kuvaajan lukeminen:** Taulukosta: radat 1 ja 3 kaartuvat ylös, rata 2 alas. Säteet ovat $4{,}1\,\text{cm}$, $4{,}2\,\text{cm}$ ja $8{,}4\,\text{cm}$.
+**Kaava:** $r = \dfrac{mv}{qB}$, josta $\dfrac{m}{q} = \dfrac{rB}{v}$
+**Muunnokset:** $r_1 = 4{,}1\,\text{cm} = 4{,}1 \cdot 0{,}01\,\text{m} = 0{,}041\,\text{m}$. Lisäksi $\tfrac{\text{m} \cdot \text{T}}{\text{m/s}} = \tfrac{\text{kg}}{\text{C}}$.
+**Sijoitus:** a) Radat 1 ja 3: positiivinen varaus; rata 2: negatiivinen varaus. b) $\dfrac{m}{q} = \dfrac{0{,}041\,\text{m} \cdot 0{,}050\,\text{T}}{2{,}0 \cdot 10^{5}\,\text{m/s}} = 1{,}025 \cdot 10^{-8}\,\text{kg/C}$. Protonille $\dfrac{m_\text{p}}{e} = \dfrac{1{,}673 \cdot 10^{-27}\,\text{kg}}{1{,}602 \cdot 10^{-19}\,\text{C}} = 1{,}044 \cdot 10^{-8}\,\text{kg/C}$. c) $\dfrac{m_3 : q_3}{m_1 : q_1} = \dfrac{r_3}{r_1} = \dfrac{8{,}4\,\text{cm}}{4{,}1\,\text{cm}} = 2{,}05$
+**Vastaus:** a) Radat 1 ja 3 ovat positiivisten hiukkasten, rata 2 negatiivisen hiukkasen. b) $1{,}0 \cdot 10^{-8}\,\text{kg/C}$, kaksi merkitsevää numeroa kuten vauhdissa ja kentässä. Arvo on sama kuin protonin arvo, joten rata 1 voi olla protonin (H$^+$-ioni). c) Noin kaksinkertainen, $2{,}0$ kertaa.
+**Järkevyys:** Radan 1 arvo poikkeaa protonin arvosta alle $2\,\%$. Se on mittauksen tarkkuuden sisällä. Radan 2 ionilla on lähes sama $m : q$, mutta vastakkainen varaus. Se voi olla H$^-$-ioni, jossa protonin ympärillä on kaksi elektronia. Sen massa on käytännössä protonin massa. Radan 3 ionin $m : q = 2{,}1 \cdot 10^{-8}\,\text{kg/C}$ on kaksinkertainen. Se voi olla esimerkiksi H$_2^+$-ioni, jonka massa on kaksinkertainen ja varaus $e$. Vauhti $2{,}0 \cdot 10^{5}\,\text{m/s}$ vastaa protonille energiaa noin $210\,\text{eV}$. Ionisuihku kulkee siis tyhjiökammiossa ilman törmäyksiä.
+
+## fy7-2-L2-06
+**Annettu:** osumakohdat A, B ja C etäisyyksillä $d_\text{A} = 19{,}2\,\text{cm}$, $d_\text{B} = 20{,}1\,\text{cm}$ ja $d_\text{C} = 20{,}7\,\text{cm}$, osumia $N_\text{A} = 7890$, $N_\text{B} = 1000$ ja $N_\text{C} = 1110$; $m_\text{A} = 24{,}0\,\text{u}$; sama varaus, vauhti ja kenttä
+**Kysytty:** a) ionien B ja C massat atomimassayksikköinä, b) kohtaan A osuneiden ionien osuus prosentteina
+**Periaate:** Ionit kulkevat puoliympyrän, joten $d = 2r$. Nyt $r = mv : (qB)$, ja $q$, $v$ ja $B$ ovat samat. Siksi osumakohdan etäisyys $d$ on verrannollinen massaan. Osumien lukumäärä on verrannollinen siihen, kuinka suuri osuus isotoopilla on ionilähteessä.
+**Kuvaajan lukeminen:** Taulukosta: kevyin ioni osuu lähimmäs rakoa. Sitä osuu selvästi eniten.
+**Kaava:** $\dfrac{m}{m_\text{A}} = \dfrac{d}{d_\text{A}}$, josta $m = m_\text{A} \cdot \dfrac{d}{d_\text{A}}$; osuus $p_\text{A} = \dfrac{N_\text{A}}{N_\text{A} + N_\text{B} + N_\text{C}} \cdot 100\,\%$
+**Muunnokset:** Ei tarvita. Etäisyydet ovat samassa yksikössä ja supistuvat. Osumien summa on $7890 + 1000 + 1110 = 10000$.
+**Sijoitus:** a) $m_\text{B} = 24{,}0\,\text{u} \cdot \dfrac{20{,}1\,\text{cm}}{19{,}2\,\text{cm}} = 25{,}1\,\text{u}$ ja $m_\text{C} = 24{,}0\,\text{u} \cdot \dfrac{20{,}7\,\text{cm}}{19{,}2\,\text{cm}} = 25{,}9\,\text{u}$. b) Summa on $10000$, joten $p_\text{A} = \dfrac{7890}{10000} \cdot 100\,\% = 78{,}9\,\%$
+**Vastaus:** a) $25{,}1\,\text{u}$ ja $25{,}9\,\text{u}$. Isotooppien massaluvut ovat siis $24$, $25$ ja $26$. b) $78{,}9\,\%$, kolme merkitsevää numeroa kuten osumien lukumäärissä.
+**Järkevyys:** Massat ovat lähellä kokonaislukuja $25$ ja $26$, kuten isotoopeilla pitääkin. Yhtä massayksikköä vastaa osumakohdan siirtymä $19{,}2\,\text{cm} : 24{,}0 = 0{,}80\,\text{cm}$. Muiden isotooppien osuudet ovat $10{,}0\,\%$ ja $11{,}1\,\%$. Kaikki yhteensä: $78{,}9\,\% + 10{,}0\,\% + 11{,}1\,\% = 100\,\%$.
+
+## fy7-2-L2-07
+**Kysytty:** mikä on oppilaan päättelyn virhe, kun hän väittää nopeamman hiukkasen kiertävän kierroksen nopeammin.
+**Periaate:** Kierrosaika on radan pituus jaettuna vauhdilla, $T = 2\pi r : v$. Oppilas pitää kehän pituuden samana. Magneettikentässä säde $r = mv : (qB)$ kuitenkin kasvaa vauhdin mukana. Kun säde sijoitetaan, saadaan $T = 2\pi m : (qB)$. Siinä ei ole vauhtia.
+**Mallivastaus:** Oppilas unohtaa, että säde ei pysy samana. Kaksinkertainen vauhti antaa kaksinkertaisen säteen ja siis kaksinkertaisen kehän. Kaksinkertainen matka kuljetaan kaksinkertaisella vauhdilla, joten siihen kuluu sama aika kuin ennen. Kierrosaika riippuu vain hiukkasen massasta, varauksesta ja kentästä. Magneettinen voima ei myöskään kiihdytä hiukkasta, koska se on kohtisuorassa nopeutta vastaan. Säde ei pienene vauhdin kasvaessa. Säde ei myöskään kasva vauhtia jyrkemmin, vaan se on suoraan verrannollinen vauhtiin.
+
 ## fy7-2-L3-01
 **Annettu:** hiili-12- ja hiili-14-ionit, sama varaus $q$, sama kiihdytysjännite $U$ levosta, sama magneettikenttä $B$; $m_{12} = 12{,}0\,\text{u}$, $m_{14} = 14{,}0\,\text{u}$, $r_{12} = 25{,}0\,\text{cm}$; ionit kulkevat puoliympyrän
 **Kysytty:** osumakohtien välimatka $\Delta d$ senttimetreinä
@@ -118,3 +170,24 @@ $$\begin{aligned} r &= \dfrac{1{,}673 \cdot 10^{-27}\,\text{kg}}{1{,}602 \cdot 1
 **Sijoitus:** $\dfrac{r_\alpha}{r_\text{p}} = \sqrt{\dfrac{6{,}645 \cdot 10^{-27}\,\text{kg} \cdot e}{1{,}673 \cdot 10^{-27}\,\text{kg} \cdot 2e}} = \sqrt{1{,}986} = 1{,}409$
 **Vastaus:** $1{,}41$ kertaa, kolme merkitsevää numeroa; tulos on lähes täsmälleen $\sqrt{2}$.
 **Järkevyys:** Alfahiukkasella on noin nelinkertainen massa ja kaksinkertainen varaus. Siksi $m : q$ on kaksinkertainen ja säde on $\sqrt{2} \approx 1{,}41$-kertainen. Alfahiukkanen saa samasta jännitteestä kaksinkertaisen energian mutta pienemmän vauhdin kuin protoni. Suurempi massa voittaa, joten rata on loivempi.
+
+## fy7-2-L3-04
+**Annettu:** ionit $q = e = 1{,}602 \cdot 10^{-19}\,\text{C}$, kiihdytys levosta jännitteellä $U$, $B = 0{,}200\,\text{T}$; mittaukset $(U;\ r)$: $(200\,\text{V};\ 4{,}9\,\text{cm})$, $(400\,\text{V};\ 6{,}8\,\text{cm})$, $(600\,\text{V};\ 8{,}5\,\text{cm})$, $(800\,\text{V};\ 9{,}8\,\text{cm})$ ja $(1000\,\text{V};\ 10{,}8\,\text{cm})$; $1\,\text{u} = 1{,}661 \cdot 10^{-27}\,\text{kg}$; vaihtoehdot litium-7, natrium-23 ja kalium-39
+**Kysytty:** a) $r^2$ jännitteen $U$ funktiona, b) ionin massa $m$ atomimassayksikköinä, c) ionin tunnistus ja se, miksi suora kulkee origon kautta
+**Periaate:** Kiihdytyksessä sähkökentän työ $qU$ muuttuu ionin liike-energiaksi, $qU = \tfrac{1}{2}mv^2$. Magneettikentässä magneettinen voima on keskeisvoima, $qvB = mv^2 : r$, josta $v = qBr : m$. Kun vauhti sijoitetaan kiihdytysyhtälöön, saadaan suora $r^2 = kU$. Sen kulmakerroin $k$ kertoo massan.
+**Kuvaajan lukeminen:** Lasketaan $r^2$: $24{,}0$, $46{,}2$, $72{,}3$, $96{,}0$ ja $116{,}6\,\text{cm}^2$. Kun nämä piirretään jännitteen funktiona, pisteet asettuvat origon kautta kulkevan suoran ympärille. Osamäärä $r^2 : U$ on joka pisteessä noin $0{,}12\,\text{cm}^2/\text{V}$. Pisteisiin sovitetun suoran kulmakerroin on $k = 0{,}118\,\dfrac{\text{cm}^2}{\text{V}}$ (pienimmän neliösumman sovitus origon kautta; hyvin piirretty suora antaa saman kulmakertoimen).
+**Kaava:** a) $qU = \tfrac{1}{2}mv^2$ ja $v = \dfrac{qBr}{m}$ antavat $qU = \dfrac{q^2B^2r^2}{2m}$, josta $r^2 = \dfrac{2m}{qB^2}\,U$. b) Kulmakerroin on $k = \dfrac{2m}{qB^2}$, josta $m = \dfrac{qB^2k}{2}$.
+**Muunnokset:** $k = 0{,}118\,\dfrac{\text{cm}^2}{\text{V}} = 0{,}118 \cdot 10^{-4}\,\dfrac{\text{m}^2}{\text{V}} = 1{,}18 \cdot 10^{-5}\,\dfrac{\text{m}^2}{\text{V}}$. Lopuksi $m$ jaetaan atomimassayksiköllä.
+**Sijoitus:** $m = \dfrac{1{,}602 \cdot 10^{-19}\,\text{C} \cdot (0{,}200\,\text{T})^2}{2} \cdot 1{,}18 \cdot 10^{-5}\,\text{m}^2/\text{V} = 3{,}78 \cdot 10^{-26}\,\text{kg}$ eli atomimassayksikköinä $\dfrac{3{,}78 \cdot 10^{-26}\,\text{kg}}{1{,}661 \cdot 10^{-27}\,\text{kg}} = 22{,}8\,\text{u}$
+**Vastaus:** a) $r^2 = \dfrac{2m}{qB^2}\,U$, suora origon kautta. b) noin $23\,\text{u}$ ($22{,}8\,\text{u}$). Tarkkuutta rajoittavat säteiden kaksi merkitsevää numeroa. Käsin sovitetulla suoralla $22\text{–}23\,\text{u}$ on siis hyvä vastaus. c) Ioni on natrium-23, jonka massa on noin $23\,\text{u}$. Suoran täytyy kulkea origon kautta, koska kun $U = 0$, ioni ei saa liike-energiaa eikä sillä ole rataa, $r = 0$.
+**Järkevyys:** Litium-7 ($7\,\text{u}$) antaisi kulmakertoimen $0{,}118\,\text{cm}^2/\text{V} \cdot 7 : 22{,}8 = 0{,}036\,\text{cm}^2/\text{V}$. Kalium-39 ($39\,\text{u}$) antaisi arvon $0{,}202\,\text{cm}^2/\text{V}$. Kumpikin poikkeaa selvästi mittauksesta. Natrium-23:lle kaava $r^2 = 2mU : (qB^2)$ antaa jännitteellä $U = 400\,\text{V}$ säteen $r = 6{,}9\,\text{cm}$. Se sopii mitattuun arvoon $6{,}8\,\text{cm}$. Vauhti tällä jännitteellä on noin $6 \cdot 10^{4}\,\text{m/s}$, joten klassinen käsittely pätee.
+
+## fy7-2-L3-05
+**Annettu:** $B = 1{,}00\,\text{T}$, rakoylityksen kiihdytysjännite $U = 60\,\text{kV}$, kaksi ylitystä kierroksella, ulosvetosäde $r = 0{,}20\,\text{m}$, $m = 1{,}673 \cdot 10^{-27}\,\text{kg}$, $q = 1{,}602 \cdot 10^{-19}\,\text{C}$, $c = 3{,}00 \cdot 10^{8}\,\text{m/s}$; protoni lähtee käytännössä levosta
+**Kysytty:** a) vauhti ja liike-energia ulosvetohetkellä, b) rakoylitysten ja kierrosten lukumäärä sekä kiihdytysaika $t$ mikrosekunteina, c) vauhdin suhde valon nopeuteen ja klassisen käsittelyn arviointi
+**Periaate:** Magneettikenttä ei muuta vauhtia vaan kaartaa rataa. Siksi vauhti saadaan ulosvetosäteestä kaavasta $r = mv : (qB)$. Kaiken liike-energian antaa sähkökenttä: jokainen rakoylitys antaa energian $qU$. Kierrosaika $T = 2\pi m : (qB)$ ei riipu vauhdista eikä säteestä. Kiihdytysaika on siis kierrosten lukumäärä kertaa $T$.
+**Kaava:** $v = \dfrac{qBr}{m}$, $E_\text{k} = \tfrac{1}{2}mv^2$, rakoylitysten lukumäärä $n = \dfrac{E_\text{k}}{qU}$, kierrosten lukumäärä $\dfrac{n}{2}$, $T = \dfrac{2\pi m}{qB}$ ja $t = \dfrac{n}{2}\,T$
+**Muunnokset:** $U = 60\,\text{kV} = 60 \cdot 1000\,\text{V} = 6{,}0 \cdot 10^{4}\,\text{V}$. Lopuksi $1\,\mu\text{s} = 10^{-6}\,\text{s}$.
+**Sijoitus:** a) $v = \dfrac{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1{,}00\,\text{T} \cdot 0{,}20\,\text{m}}{1{,}673 \cdot 10^{-27}\,\text{kg}} = 1{,}92 \cdot 10^{7}\,\text{m/s}$ ja $E_\text{k} = \tfrac{1}{2} \cdot 1{,}673 \cdot 10^{-27}\,\text{kg} \cdot (1{,}92 \cdot 10^{7}\,\text{m/s})^2 = 3{,}07 \cdot 10^{-13}\,\text{J}$. b) Yhdellä ylityksellä energia kasvaa määrän $qU = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 6{,}0 \cdot 10^{4}\,\text{V} = 9{,}61 \cdot 10^{-15}\,\text{J}$, joten $n = \dfrac{3{,}07 \cdot 10^{-13}\,\text{J}}{9{,}61 \cdot 10^{-15}\,\text{J}} = 31{,}9 \approx 32$ ylitystä eli $16$ kierrosta. Kierrosaika on $T = \dfrac{2\pi \cdot 1{,}673 \cdot 10^{-27}\,\text{kg}}{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1{,}00\,\text{T}} = 6{,}56 \cdot 10^{-8}\,\text{s}$, joten $t = 16 \cdot 6{,}56 \cdot 10^{-8}\,\text{s} = 1{,}05 \cdot 10^{-6}\,\text{s} = 1{,}05\,\mu\text{s}$. c) $\dfrac{v}{c} = \dfrac{1{,}92 \cdot 10^{7}\,\text{m/s}}{3{,}00 \cdot 10^{8}\,\text{m/s}} = 0{,}064$
+**Vastaus:** a) $1{,}92 \cdot 10^{7}\,\text{m/s}$ ja $3{,}07 \cdot 10^{-13}\,\text{J}$ (noin $1{,}9\,\text{MeV}$). b) Noin $32$ ylitystä ja $16$ kierrosta. Kiihdytys kestää $1{,}05\,\mu\text{s}$, kolme merkitsevää numeroa kuten kentässä ja säteessä. c) Vauhti on noin $6\,\%$ valon nopeudesta. Suhteellisuusteorian korjaus liike-energiaan on siksi suuruusluokkaa $\tfrac{3}{4}(v : c)^2 \approx 0{,}3\,\%$. Klassinen käsittely on tässä kelvollinen. Suuremmilla energioilla kierrosaika alkaisi kasvaa, eikä kiihdytysjännitteen vaihtotahti pysyisi vakiona.
+**Järkevyys:** Kierrosaika ulosvetosäteellä: $\dfrac{2\pi r}{v} = \dfrac{2\pi \cdot 0{,}20\,\text{m}}{1{,}92 \cdot 10^{7}\,\text{m/s}} = 6{,}56 \cdot 10^{-8}\,\text{s}$. Tulos on sama kuin kaavalla $T = 2\pi m : (qB)$. Energian tarkistus: $32 \cdot 9{,}61 \cdot 10^{-15}\,\text{J} = 3{,}08 \cdot 10^{-13}\,\text{J}$, sama kuin $E_\text{k}$.

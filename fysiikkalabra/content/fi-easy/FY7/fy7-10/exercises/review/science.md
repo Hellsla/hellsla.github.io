@@ -1,16 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: f6b561328d28f597
+CONTENT-HASH: 42fcf9545eae0e70
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+(none needed: fi-easy matches fi in every number, unit, tolerance and flag, and the wording is plain)
 
 ## Polish
+(none)
 
 ## Checked
-- One script recomputed all 12 answers from the fi-easy task text with my own formulas: 1,3636; 1,2397; 38; 34,733; 58,750; 36,602; 2,0019; 34,667 ps; 1,5321; 60,0; 52,940; 34,249 — all agree with exercises.json and answers.py to < 10⁻⁴ relative.
-- Simplification fidelity: exercises.json and solutions.md have the same numbers, units, tolerances and answers as the passed fi set, task by task; split sentences keep every condition.
-- Task texts state what the physics needs: L2-01 asks the angle from the normal, L2-04 the half-cylinder geometry, L3-01 the plane of the normals, L2-03 perpendicular passage.
-- L1-05 and L3-02 go water → air below the critical angle (48,75°); the solutions check sin α₂ < 1.
-- L2-03: Δt = (n − 1)d : c derived symbolically, cm → m right, 35 ps to two figures; the 67/100 ps check is right. L2-01's wrong-route 16,1° is right.
-- L3-03: sin α₁ : v₁ = sin α₂ : v₂ from n = c : v, cross-checked with 1,33 and 1,52.
-- L3-01: the corner-reflector statement ("samaan periaatteeseen perustuvat") is kept.
-- Every solution has all seven steps, solves symbolically first, rounds by the limiting datum, and its significant-figure reason is stated.
+- Script comparison of exercises.json against content/fi: same ids (20), kinds, answers, units, tolerances, correct flags, choice order, data cells and every number in texts and feedback (fi-easy keeps the decimal comma in text, as fi).
+- solutions.md: all 20 solutions have the same numbers and steps as fi; check_i18n formula parity passes.
+- Re-derived L1-07 416.4 nm, L1-08 25.50, L2-05 slope 1.498, L2-06 35.17, L2-07 dn 0.038, L3-04 mean 1.3301, L3-05 19.47 mm: all agree.
+- Selkosuomi: short sentences; the new tasks split fi's long sentences (L2-05, L2-07, L3-04, L3-05) and L3-04 defines apparent depth in its own sentence.
+- check_i18n.py fi-easy: 0 errors.

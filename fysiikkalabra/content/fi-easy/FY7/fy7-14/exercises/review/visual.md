@@ -1,14 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: c08412ccc1cdb153
+CONTENT-HASH: 32434261a000870a
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L3-02 Järkevyys — "(1 − 0,0426)^8" breaks after the minus sign at phone width; keep the expression together.
+- [Minor] solutions L3-05 "Reading the graph" — the point (0; 0.05 mm) can wrap across lines in the narrow capture ("(0; / 0.05 mm)"); same in fi, a rendering matter only.
 
 ## Checked
-- open-exercises-1280-1, open-exercises-L2-1280-4, open-exercises-L3-1280-3, contact-4 (level headers, instructions). Steps annettu, kysytty, periaate, kaava, muunnokset, sijoitus, vastaus, järkevyys in fixed order; the järkevyys callout renders; decimal comma and units correct (1117,2 nm → 1120 nm, three significant figures stated); fluent Finnish, no mechanical phrasing. check_layout 340 px OK.
+- Opened captures fy7-14-open-exercises-1280-8, -9, L2-1280-8, L3-1280-8 (fi-easy): text, KaTeX formulas, tables and answer boxes render; no overflow or Finnish text visible in en.
+- Units and decimal separators consistent in rendered formulas and tables.
+- Headings and labels (Given/Find... or Annettu/Kysytty...) shown in the right language.
 
 ## Scores
-illustrations n/a (5) · typography 4 · Finnish 5 · accessibility 5
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

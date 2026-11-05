@@ -1,14 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 3610a94dab924019
+CONTENT-HASH: c5e955f0b193c0c7
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+(none needed: no number, answer, unit, tolerance or formula differs from fi)
 
 ## Polish
+(none)
 
 ## Checked
-- Kaikki 12 vastausta laskettu omalla skriptillä tehtävien tekstistä: 48,75°, 24,41°, 61,04°, 2,041·10⁵ km/s, 0,50 ms, 1,456, 1,414, 2,007·10⁵ km/s, 1,217 ms, 2,053 m, 67,58 ns, 77,61°. Vastaavat exercises.jsonia toleranssin sisällä.
-- Luvut exercises.jsonissa ja solutions.md:ssä identtiset fi-version kanssa; pilkotut tehtävätekstit säilyttävät kaikki lähtötiedot ja oletukset (esim. L2-04 ja L3-02 "akselin suuntaisesti", L3-02 "suora kuitu").
-- L2-02: valo tulee pitkän sivutahkon läpi ja osuu kateettitahkolle 45°:ssa; n ≥ 1/sin 45° = 1,41, rajatapaus (≥) sanottu.
-- L3-01 r = h tan α_r; L3-02 matka L/sin α_r ja Δt = (n1 L/c)(n1/n2 − 1), 2 merkitsevää numeroa perusteltu erotuksella 0,020; L3-03 tarkistaa ensin rajakulman 62,46° > 60°. Oikein.
-- Jokainen ratkaisu: annettu, kysytty, periaate, symbolinen ratkaisu, muunnokset, pyöristys rajoittavan tiedon mukaan, aito järkevyystarkistus.
-- Laajuus FY7 kokonaisheijastuminen + fy7-10 taittuminen ja v = c/n.
+- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) and the 12 older ones compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags, choices, data cells and every number in texts, choices, feedback and solutions.md are identical (decimal point in en JSON and LaTeX; comma in fi-easy as in fi); solutions.md: same numbers per exercise (20 sections each, only an order difference in L1-08 en).
+- L1-06: one correct option, the three distractor feedbacks name the right misconception, as in fi.
+- Re-derived key answers: L1-07 63.20°, L1-08 103 km, L2-05 n = 1.493 (acrylic, not polystyrene), L2-06 width 0.8 µs = 800 ns, L2-07 38.8°, L3-04 17.4° (A 14.0°, C 9.8°), L3-05 R_min = 16.06 mm; all agree with fi.
+- Terminology: rajakulma, kokonaisheijastuminen, taitekerroin, tulokulma, ydin/kuori, vastaanottokulma ovat oikein ja yhdenmukaisia; uudet termit (intensiteetti, vaihteluväli, hajonta, suhteellinen viive) on selitetty.
+- check_i18n.py fi-easy: 0 errors.

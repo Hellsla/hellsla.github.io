@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: aca1e5e86a2b06fb
+CONTENT-HASH: 1362402d4e28bc6a
+
+Round 2
 
 ## Blocking
+(none) Round 1 had none; the round-1 fixes were checked and are correct.
 
 ## Polish
-- exercises.json:fy7-1-L3-03 — Helsinki is 53 µT here but 52 µT in the lesson table and example; "82,5°" suggests false precision for a "noin" value. Fix: use 52 µT and 82° with answer 1,87 as before, or say "kurssin arvo 52 µT" in the lesson.
-- exercises.json:fy7-1-L3-01 — answer is now -11 µT; the sign convention is stated, but a student may enter 11. Fix: add "(vastaus voi olla negatiivinen)" or accept the sign as the graded part in the solution note.
-- exercises.json:fy7-1-L2-01 — still repeats the worked example with unknown and given swapped (earlier Polish, unchanged).
-- exercises.json:fy7-1-L2-02 — three-component Pythagoras not in the lesson (earlier Polish, unchanged).
+- exercises.json fy7-1-L1-08 — now B = 53 µT, I = 76° (answer 51,4 µT, solution and answers.py agree), but it is still a near twin of L1-02 (B cos I vs B sin I). Acceptable as the vertical-component counterpart; asking for both components would add more.
+- exercises.json fy7-1-L3-04 c) — overlaps L3-03 (horizontal component shrinks northwards, compass gets weaker); say in the question "Selitä, miksi kulma kasvaa, vaikka koko kenttä ei muutu" so the new twist is explicit.
+- exercises.json fy7-1-L2-06 — the iron conclusion in b) is the learning goal and is not checkable; add a short hint "(vertaa Maan kenttään 50 µT)" so students need not guess.
+- solutions.md fy7-1-L3-05 — fine now (scatter reason for the mean added); the figures 5,3…6,3·10^4 in Vastaus and "tuhatta" in Sijoitus use different scales (10^3 vs 10^4); one scale throughout reads easier.
 
 ## Checked
-- L1-05: "Maan kenttä jätetään huomiotta" removes the earlier ambiguity; the answer (away from the magnet) is now unambiguous.
-- L2-03: 52/sin 77° = 53,4 µT recomputed; 53,4 cos 77° = 12,0 µT, so the sanity check is true.
-- L3-01: the north-positive sign convention makes the key insight (needle flips) part of the checked value; solution explains how the sign gives the direction.
-- L3-02: "riittävän kuumaksi" replaces "punahehkuinen", which is more accurate; the model answer names the Curie temperature and random re-formation of domains.
-- L3-03: 53 cos 74° / (55 cos 82,5°) = 14,61 / 7,179 = 2,03 recomputed; the "miksi" part now has a model answer with a criterion (horizontal component, not total field).
-- answers.py agrees with exercises.json and solutions.md for all changed tasks.
-- Finnish: "$53\,\mu\text{T}$", "$770\,{}^\circ\text{C}$" formatting and cases correct.
+- Round 1 Polish applied: L2-05 b) now uses 8,0 cm and 16 cm (tan 73° → 45,8 µT, tan 24° → 6,23 µT, ratio 7,3, near 2^3, consistent with the table and answer 14,5 µT for a)); L1-08 numbers changed and consistent; L3-05 mean explained; MC option order shuffled so the correct answer is not always first.
+- New tasks L1-06..08, L2-05..07, L3-04..05 recomputed: all answers match their solutions; counts 8/7/5; levels fit; kinds (conceptual MC, data, error analysis, experiment, model) covered; no duplicate of the worked example.
+- Solutions have all steps (given, asked, principle, formula, units, substitution, answer, sanity check); Finnish reads correctly.
+- Screenshots not opened; phone fit relied on the passed 360 px layout check.

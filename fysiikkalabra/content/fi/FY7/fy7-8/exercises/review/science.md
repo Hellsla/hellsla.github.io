@@ -1,17 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 851f5dc3356412a5
+CONTENT-HASH: b0742fa0acf09e72
+ROUND: 2
 
 ## Blocking
 
 ## Polish
-- exercises.json:20 / solutions.md:21 (L1-03) — the brief's lesson says the substation lowers 20 kV to 230 V; this task uses 400 V. Both right (400 V between phases); "vaiheiden välinen jännite" would prevent a seeming contradiction.
-- exercises.json:54 (L2-02) — a phone charges with DC; "tasasuuntausta ei oteta huomioon" would close the gap (C).
-- exercises.json:97 / solutions.md:112 (L3-03) — loss share is treated as the only limit; conductor heating also limits current (C). The Järkevyys example gives 826 A for 331 MW at 400 kV; 331 MW gives 827,5 A (826 A belongs to 330,6 MW). Trivial.
+- solutions.md L2-06 Kaava: "oletus: virta ja jännite ovat samassa vaiheessa" is stated, but the low-load row (54 %) is where a magnetising current makes U₁I₁ overstate P₁ the most. One clause in b) would keep the explanation honest: "pienellä kuormalla oletus P₁ = U₁I₁ on epätarkin".
+- solutions.md L3-05 Periaate: "ehto … saadaan tästä derivoimalla, mutta sitä ei johdeta tässä" is fine. Note that a least-squares fit of P_h − P₀ against P² gives 54,7 kW, which agrees with 54 kW.
 
 ## Checked
-- Round-1 blocker fixed: L1-04 Järkevyys now "noin viiden sähkökiukaan tehoa" (36 kW : 5 ≈ 7 kW, a real home stove).
-- All 12 answers recomputed from the task text with own formulas: identical to answers.py and exercises.json (L2-01 826,4 kW, L2-02 43,5 mA, L2-03 0,992 %, L3-01 0,75 %, L3-02 4,0 Ω, L3-03 3,306).
-- L2-04: least-squares fit P = k I² through the origin of the five plotted points gives k = 0,801 Ω; curve through (5,0 A; 20 W) and R = 0,80 Ω right; description gives the same data and no R; solution reads the curve, not a raw point.
-- Every line-loss task uses I = P : U then R I², never U²/R; L3-01 uses the transmission voltage, with a correct "450 MW > 150 MW, impossible" check.
-- Ideal-transformer ratios used the right way round (L1-01, L1-02, L1-03, L2-02).
-- Units, conversions, symbolic solving before substitution, significant figures and tolerances consistent; notation matches the brief.
+- Round-1 Blocking item L3-04 is resolved. The text now says "Oletetaan, että siirrettävä teho on vakio 200 MW koko vuoden", and the solution says "Koska teho on vakio, häviöenergia on P_h t".
+- L3-04 resistance: the text now says "johtimien yhteinen resistanssi 0,040 Ω johdon kilometriä kohti", so there is no reason to double it. R = 6,0 Ω, I = 909/500 A, E_A = 43 450 MWh, E_B = 13 140 MWh, saving 1,515 M€.
+- L2-06: the answer is 87,7 % with three significant figures and a correct reason (0,114 A; 11,5 V; 2,00 A). The P₁ = U₁I₁ assumption is now stated in the task. Losses are 2,12–3,22 W, and η runs 53,9 → 87,7 %.
+- L3-05: the rounding reason is now based on 1,3 kW (two figures). The rows give 49 / 56,6 / 55,5 / 54,3 kW, which matches "49–57 kW".
+- L1-06: "kun virta on asettunut vakioksi" removes the switch-on pulse case.
+- L1-08: η = P₂ : P₁ is stated in the task, and 72/80 = 90 %.
+- L2-05: the fit through the origin gives k = 0,012354 V per turn, so N₁ = 485,7. The unit in the solution is now V/kierros.
+- I recomputed all new answers in one script, and they agree with answers.py and exercises.json: L1-07 210 kW, L1-08 90 %, L2-05 485,7, L2-06 87,72 %, L2-07 0,20 A, L3-04 1,5149 M€, L3-05 54,35 kW.
+- Hash unchanged at start and end.

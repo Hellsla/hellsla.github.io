@@ -39,6 +39,58 @@
       "answer": 58.7495,
       "unit": "°",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-10-L1-06",
+      "level": 1,
+      "text": "A ray of light arrives obliquely from the air at the surface of a glass plate and continues in the glass. Which of the following correctly describes how the ray behaves at the boundary and why?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The ray is refracted towards the normal, because light travels more slowly in glass than in air.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The ray is refracted away from the normal, because light travels faster in glass than in air.",
+          "feedback": "Light travels more slowly in glass than in air, because the refractive index of glass is greater than $1$. The ray would be refracted away from the normal only when passing into an optically less dense material, for example from glass into air."
+        },
+        {
+          "text": "The ray continues straight in the same direction, because the frequency of light does not change at the boundary.",
+          "feedback": "The frequency really does stay the same, but the direction changes, because the speed and the wavelength change. Light arriving obliquely at a boundary is always refracted when the refractive indices of the materials are different."
+        },
+        {
+          "text": "The ray is refracted towards the normal, because light travels more slowly in glass than in air.",
+          "correct": true,
+          "feedback": "Correct: glass is optically denser than air, so the speed of light decreases at the boundary. The wavefronts turn so that the ray is refracted towards the normal, and the angle of refraction is smaller than the angle of incidence."
+        },
+        {
+          "text": "The ray is refracted towards the normal, because the frequency of light increases when it passes into glass.",
+          "feedback": "The direction is right, but the reason is wrong. The frequency does not change at the boundary; the speed and the wavelength of light decrease, and it is the change in speed that turns the wavefronts."
+        }
+      ]
+    },
+    {
+      "id": "fy7-10-L1-07",
+      "level": 1,
+      "text": "The wavelength of the light of a red laser in air is $633\\,\\text{nm}$. The light passes from air into window glass whose refractive index is $1.52$. The frequency of the light does not change at the boundary, and the refractive index of air is taken to be $1.00$. What is the wavelength of the light in the glass? Give the answer in nanometres.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 416.4474,
+      "unit": "nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-10-L1-08",
+      "level": 1,
+      "text": "A ray of light passes from ethanol into diamond at an angle of incidence of $50.0^\\circ$. The refractive index of ethanol is $1.36$ and that of diamond $2.42$. What is the angle of refraction in the diamond?",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 25.4996,
+      "unit": "°",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +126,77 @@
       "answer": 1.5321,
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-10-L2-05",
+      "level": 2,
+      "text": "A group of students studied the refraction of light from air into a semicircular glass block and measured the angle of incidence $\\alpha_1$ and the angle of refraction $\\alpha_2$ with a protractor. The reading accuracy is $\\pm 0.5^\\circ$. The measurements are example data.\n\nCalculate $\\sin\\alpha_1$ and $\\sin\\alpha_2$ for each measurement point and draw a graph with $\\sin\\alpha_1$ on the vertical axis and $\\sin\\alpha_2$ on the horizontal axis. Fit a straight line through the origin to the points: the line passes through the origin, because at an angle of incidence of $0^\\circ$ the angle of refraction is also $0^\\circ$.\n\nWhat is the slope of the line? Use it to deduce the refractive index of the glass when the refractive index of air is $1.00$. Write the refractive index of the glass in the answer box.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 1.4985,
+      "unit": "",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Refraction of light from air into glass (example data)",
+        "columns": [
+          "$\\alpha_1\\,({}^\\circ)$",
+          "$\\alpha_2\\,({}^\\circ)$"
+        ],
+        "rows": [
+          [
+            "10.0",
+            "6.5"
+          ],
+          [
+            "20.0",
+            "13.5"
+          ],
+          [
+            "30.0",
+            "19.0"
+          ],
+          [
+            "40.0",
+            "25.5"
+          ],
+          [
+            "50.0",
+            "30.5"
+          ],
+          [
+            "60.0",
+            "36.0"
+          ],
+          [
+            "70.0",
+            "38.5"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-10-L2-06",
+      "level": 2,
+      "text": "A student solved the problem as follows: “Light passes from air into water at an angle of incidence of $50.0^\\circ$. The refractive index of water is $1.33$ and that of air $1.00$. The light is refracted towards the normal, so the angle of refraction is smaller than the angle of incidence. I divide the angle of incidence by the refractive index: $\\alpha_2 = 50.0^\\circ : 1.33 = 37.6^\\circ$.”\n\nExplain what is wrong in the student's solution and calculate the correct angle of refraction. Write the correct angle of refraction in the answer box.",
+      "kind": [
+        "error"
+      ],
+      "answer": 35.1678,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-10-L2-07",
+      "level": 2,
+      "text": "A student measured the refraction of light from air into an acrylic plate with a laser. The angle of incidence was $45.0^\\circ$ and the angle of refraction $28.0^\\circ$. The uncertainty of reading each angle is $\\pm 0.5^\\circ$ with the protractor. The measurements are example data.\n\nFirst calculate the refractive index $n$ of the acrylic with the measured angles, and then the smallest and the largest refractive index that fit within the uncertainty limits of the angles. The refractive index of air is $1.00$. Estimate the uncertainty $\\Delta n$ of the refractive index as half of the difference between the smallest and the largest value. Write the uncertainty $\\Delta n$ in the answer box.",
+      "kind": [
+        "experiment"
+      ],
+      "answer": 0.0379,
+      "unit": "",
+      "tolerance": 0.03
     }
   ],
   "level3": [
@@ -99,6 +222,56 @@
       "text": "Light travels in material A at the speed $2.25 \\cdot 10^{8}\\,\\text{m/s}$ and in material B at the speed $1.97 \\cdot 10^{8}\\,\\text{m/s}$. A ray of light passes from material A into material B at an angle of incidence of $40.0^\\circ$. What is the angle of refraction?",
       "answer": 34.2494,
       "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-10-L3-04",
+      "level": 3,
+      "text": "A small object lies at the bottom of a pool at a depth of $d = 60.0\\,\\text{cm}$ below the surface of the water. A student looks at the object from the air at different angles $\\alpha_2$ to the normal of the surface and measures, for each viewing angle, the apparent depth $h'$, that is, the depth at which the object appears to be. The measurements are example data.\n\nThe ray arriving at the eye and the ray travelling from the object to the same point on the surface are in the same vertical plane.\n\nAssume that the object appears to be directly above its real position.\n\nThe point on the surface is at a horizontal distance $x$ from the point above the object. In the water the angle between the ray and the normal is $\\alpha_1$, and the extension drawn to the apparent position makes the angle $\\alpha_2$ with the normal.\n\na) Draw a picture of the situation. From this information derive an equation from which $\\alpha_1$ can be calculated, and calculate $\\alpha_1$ for each row of the table.\n\nb) Calculate the refractive index $n$ for each row from the law of refraction, when the refractive index of air is $1.00$. Determine the refractive index of water as the mean of these four values. It is worth calculating the sum separately.\n\nc) Justify why the apparent depth is smaller than the real depth and why it decreases as the viewing angle increases.\n\nWrite the result of part b), that is, the refractive index of water, in the answer box.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 1.3301,
+      "unit": "",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Apparent depth of the object at different viewing angles (example data)",
+        "columns": [
+          "$\\alpha_2\\,({}^\\circ)$",
+          "$h'\\,(\\text{cm})$"
+        ],
+        "rows": [
+          [
+            "10.0",
+            "44.9"
+          ],
+          [
+            "20.0",
+            "43.8"
+          ],
+          [
+            "30.0",
+            "42.0"
+          ],
+          [
+            "40.0",
+            "39.6"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-10-L3-05",
+      "level": 3,
+      "text": "A horizontal glass plate of thickness $6.0\\,\\text{mm}$ and refractive index $1.52$ lies on top of a layer of water. The thickness of the water layer is $20.0\\,\\text{mm}$ and the refractive index of water $1.33$.\n\nA laser beam arrives from the air at the upper surface of the glass plate at an angle of incidence of $55.0^\\circ$. The refractive index of air is $1.00$, and all boundaries are horizontal.\n\na) Calculate the angle of refraction in the glass.\n\nb) Calculate the angle between the ray and the normal in the water. Justify why it would be the same even if there were no glass plate.\n\nc) What horizontal distance does the ray travel when it passes through the glass plate and the water layer to the lower surface of the water layer? Write the result of part c) in millimetres in the answer box.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 19.4742,
+      "unit": "mm",
       "tolerance": 0.02
     }
   ]

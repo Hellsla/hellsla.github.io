@@ -1,21 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 987e5aa22e0b9d99
+CONTENT-HASH: 0fdbd005b7711e68
+
+Round 2
 
 ## Blocking
-(none)
+(none) Round 1 had none; the round-1 fixes were checked and are correct.
 
 ## Polish
-- solutions.md fy7-2-L1-02 "Vastaus" — "jännite 500 V tulkitaan vähintään kaksinumeroiseksi" is vague for a 17-year-old — fix: "jännite 500 V tulkitaan kahden merkitsevän numeron tarkkuudella".
-- Unchanged from round 1 and still open (the diff did not touch them): exercises.json has no task that gives d, B2 and v and asks for the ion's mass (the lesson's goal "massa massaspektrometrissä" is practised only in the example); L2-02 is a single rearrangement; L3-03 repeats the reasoning of L3-01; the exit-ticket question 1 repeats L1-03; no task asks the force direction with a figure.
+- exercises.json fy7-2-L3-05 c) — the constant-period argument was dropped (now v/c and the classical check), which removes the overlap with L3-02. The solution says "kolme merkitsevää numeroa kuten kentässä ja säteessä", but r = 0,20 m and U = 60 kV have two; say "kaksi merkitsevää numeroa" or give r as 0,200 m.
+- exercises.json fy7-2-L2-05 c) — the table is needed only for the radii; acceptable. The new ion explanations (H^-, H2^+, 210 eV for a proton at 2,0·10^5 m/s, checked: correct) are a good fix.
+- exercises.json fy7-2-L3-04 — task text allows a hand-fitted line, and the solution gives 22–23 u; add the answer tolerance to the answer-box line ("noin 23 u") only if students find 22,8 vs 22 confusing.
 
 ## Checked
-- L1-01 sanity check: units added after each factor, 1,6·10⁻¹⁹ C · 3·10⁵ m/s · 0,25 T ≈ 1,2·10⁻¹⁴ N; the product is correct and the step is now followable
-- L1-02: the rounding note matches the answer 6,5 cm (6,463 cm, 2 s.f.); 500 V is a plain number that suggests a loose precision, and the note settles it
-- Both changes are in the solutions only; no task text, answer or level changed, so the levels and answer recomputation of round 1 stand
-- Finnish of the changed lines is correct; units match the prompt
-- Delta (CI layout fix): L2 solution r = m:(qB) · v shown as an aligned display over three rows; recomputed 2,0886e-7 · 3,0945e5 = 0,06463 m, step order unchanged, readable at 360 px.
-
-## Follow-up (987e5aa22e0b9d99: four edits on top of the hash above)
-- L1-02: writing the electron's charge as a magnitude ($|q| = e$) and using $|q|$ in the formula teaches the sign convention the lesson uses ($F = |q|vB$) instead of silently dropping the minus sign; the answer and the levels are unchanged.
-- L2-03 and L3-02: the chapter references now name chapters the student can actually find (*Homogeeninen sähkökenttä*, *Ympyrärata: jaksonaika ja ratanopeus*), which makes the prerequisite pointers usable.
-- No blocking issue. Main's polish items above stand.
+- Round 1 Polish applied: L1-08 now v = 5,0·10^6 m/s (r = 1,42 mm, T = 1,79 ns, answer 1,8 ns) so identical numbers no longer hide the independence of T from v; L2-05 right-hand rule applied with finger directions and ions named; L3-04 "sovitettu suora" wording; L3-05 B = 1,00 T gives v = 1,92·10^7 m/s, E_k = 3,07·10^-13 J, 32 crossings, 16 revolutions, t = 1,05 µs, v/c = 6 %, correction ≈ 0,3 %; answer 1,05 µs agrees with answers.py.
+- Järkevyys of L1-07 corrected to "8,5-kertainen" (0,4264 mT / 0,05 mT = 8,5).
+- New tasks recomputed; counts 8/7/5; levels fit; MC distractors are real misconceptions with repairing feedback; no copy of the neon example.
+- Screenshots not opened; phone fit relied on the passed 360 px layout check.

@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: da441494f5b9baaf
+CONTENT-HASH: 629e6d3bdd24f189
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+- L1-07 task text: "travel from a satellite directly above the receiver to the receiver" reworded to "travel from the satellite to the receiver when the satellite is directly above the receiver".
+- solutions.md L2-06 Reasonableness: "he used" changed to "the student used" (gender-neutral, as fi).
 
 ## Polish
-- [Minor] Exercise L2-02 — the graph's y-axis labels only 0.4, 0.8, 1.2 though grid lines are 0.2 apart; the task needs only the x position, so acceptable — optionally label every second grid line.
-- [Minor] Exercise cards — the "Answer" and "Show the solution" toggles sit side by side with ▼ for both; fine, no action.
+(none)
 
 ## Checked
-- open-exercises-1280-1 (L1), open-exercises-L2-1280-1, -2, -3, open-exercises-L3-1280-1, stage-exercises-390 (contact sheet 3)
-- L2-02 figure: axis titles with units, grid, curve and visible band readable; its aria-label is in English on the page (the Finnish text in the packet's figure catalogue is not what the page uses)
-- Formulas, conversions and substitutions render aligned, `\cdot` throughout, decimal point in English, SI units upright; Given/Find/Principle/Formula/Answer order consistent; English fluent.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 (English) · accessibility 5
+- Screenshots fy7-9-open-exercises-* of the new tasks viewed in this language: tables, captions, column headers and units render without overflow; no Finnish left (en) / no untranslated English (fi-easy).
+- LaTeX identical to fi (formula parity, check_i18n 0 errors).

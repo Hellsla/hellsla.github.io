@@ -1,14 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 6cc6cd6b4cb5fbbc
+CONTENT-HASH: 825acbc29d3636fd
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+- L3-04 part c: added short explanations "(aallonpituus on lyhyempi / pidempi kuin näkyvällä valolla)" after ultraviolettialue and infrapuna, so the terms are explained in plain Finnish.
 
 ## Polish
-- exercises.json L2-02 — y axis labelled 0,4/0,8/1,2 while the grid is 0,2; harmless since only the peak's x position is needed.
+(none)
 
 ## Checked
-- Levels rise: L1 one formula (c = fλ, Wien), L2 Celsius conversion, graph reading, temperature difference, frequency to peak; L3 cosmic background with region deduction, thermal-camera range, Moon laser ranging.
-- None repeats the worked example (Sun, 502 nm); contexts authentic and varied.
-- L2-02: figure needed to answer, description gives the same data without marking the peak, solution has a "Kuvaajan lukeminen" step; seen at 1280 px.
-- Solutions: Annettu/Kysytty/Periaate/Kaava/Muunnokset/Sijoitus/Vastaus/Järkevyys; principles explained, significant figures justified; spot-checked L2-04 (5796 K), L3-02 (89,1 °C), L3-01.
-- Finnish: wording and cases correct (27 °C:sta 327 °C:een), easy-language register kept.
+- Task wording keeps the fi scaffolding: assumptions (black body), asked unit, the answer-box instruction and the a/b/c structure with the same learning demand (L2-06 error diagnosis, L3-04 reasoning, L3-05 model limits).
+- Feedback of the L1-06 choices names the specific misconception as in fi; one correct option.
+- Language: clear plain Finnish (short sentences, terms explained).
+- check_i18n.py fi-easy: 0 errors.

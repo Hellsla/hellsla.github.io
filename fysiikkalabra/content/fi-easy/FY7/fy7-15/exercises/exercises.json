@@ -39,6 +39,52 @@
       "answer": 67.5485,
       "unit": "°",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-15-L1-06",
+      "level": 1,
+      "text": "Polaroiduissa aurinkolaseissa on polarisaattorikalvo. Kalvon läpäisysuunta on pystysuora. Miksi lasit vähentävät erityisesti vedenpinnasta heijastuvaa häikäisyä?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Heijastunut valo on osittain polarisoitunutta vaakasuuntaan, ja kalvo absorboi vaakasuuntaisen värähtelyn.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Heijastunut valo on osittain polarisoitunutta pystysuuntaan, ja kalvo absorboi pystysuuntaisen värähtelyn kokonaan.",
+          "feedback": "Suunta on väärin päin. Pinnasta heijastunut valo on polarisoitunut pinnan suuntaan eli vaakasuuntaan. Pystysuora kalvo absorboi juuri vaakasuuntaisen värähtelyn. Jos heijastunut valo olisi pystysuuntaista, kalvo päästäisi sen kokonaan läpi."
+        },
+        {
+          "text": "Kalvo päästää läpi vain pystysuoraan etenevät säteet, ja vaakasuoraan etenevä häikäisy jää kokonaan pois.",
+          "feedback": "Läpäisysuunta tarkoittaa sähkökentän värähtelysuuntaa. Se ei tarkoita valon etenemissuuntaa. Valo etenee kalvon läpi samaan suuntaan riippumatta siitä, mihin suuntaan se on polarisoitunut."
+        },
+        {
+          "text": "Heijastunut valo on osittain polarisoitunutta vaakasuuntaan, ja kalvo absorboi vaakasuuntaisen värähtelyn.",
+          "feedback": "Oikein: heijastunut valo on osittain polarisoitunutta pinnan suuntaan eli vaakasuuntaan. Pystysuora kalvo päästää läpi vain sähkökentän pystysuuntaisen osan. Siksi häikäisyn vaakasuuntainen osa absorboituu. Tämän takia lasien suuntaus on tärkeä: kallistettu kalvo päästäisi häikäisyä läpi.",
+          "correct": true
+        },
+        {
+          "text": "Kalvo on tummennettu, joten se vaimentaa kaikkea valoa yhtä paljon ja häikäisyn osuus siksi pienenee.",
+          "feedback": "Tummennettu lasi vaimentaisi myös häikäisyä, mutta yhtä paljon kuin muuta valoa. Silloin häikäisyn osuus ei pienenisi. Polarisaattori vaimentaa häikäisyä enemmän, koska heijastunut valo on polarisoitunutta siihen suuntaan, jonka kalvo absorboi."
+        }
+      ]
+    },
+    {
+      "id": "fy7-15-L1-07",
+      "level": 1,
+      "text": "Puhelimen näytön polarisoituneen valon intensiteetti on $300\\,\\text{W/m}^2$. Valo tulee ihanteelliseen polarisaattorikalvoon. Kalvon läpäisysuunta on kulmassa $55{,}0^\\circ$ valon polarisaatiosuuntaan nähden. Kuinka suuri on valon intensiteetti kalvon jälkeen?",
+      "answer": 98.697,
+      "unit": "W/m²",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-15-L1-08",
+      "level": 1,
+      "text": "Sulatetun kvartsilasin taitekerroin on $1{,}46$. Valo tulee ilmasta kvartsilasin pintaan. Millä tulokulmalla valo heijastuu täysin polarisoituneena? Ilman taitekerroin on $1{,}00$.",
+      "answer": 55.5915,
+      "unit": "°",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,6 +119,128 @@
       "answer": 33.6901,
       "unit": "°",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-15-L2-05",
+      "level": 2,
+      "text": "Opiskelija tutki Malusin lakia valoanturilla. Anturin edessä oli polarisaattorikalvo. Anturi mittasi puhelimen näytön polarisoitunutta valoa ja huoneen taustavaloa. Kulma $\\theta$ on kalvon läpäisysuunnan ja näytön polarisaatiosuunnan välinen kulma. Luku $E$ on anturin lukema luksiyksikössä. Aineisto on esimerkkiaineisto.\n\nPiirrä lukema $E$ kulman kosinin neliön $\\cos^2\\theta$ funktiona ja sovita pisteisiin suora. Taustavalo lisää jokaiseen lukemaan saman verran. Vähennä taustavalon osuus. Kuinka suuri on lukema, jonka pelkkä näytön polarisoitunut valo antaa, kun kalvon läpäisysuunta on näytön polarisaation suuntainen?",
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "answer": 314.0,
+      "unit": "lx",
+      "tolerance": 0.015,
+      "data": {
+        "caption": "Anturin lukema kalvon kulman funktiona (esimerkkiaineisto)",
+        "columns": [
+          "$\\theta\\,(^\\circ)$",
+          "$E\\,(\\text{lx})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "322"
+          ],
+          [
+            "10",
+            "308"
+          ],
+          [
+            "20",
+            "288"
+          ],
+          [
+            "30",
+            "240"
+          ],
+          [
+            "40",
+            "194"
+          ],
+          [
+            "50",
+            "133"
+          ],
+          [
+            "60",
+            "88"
+          ],
+          [
+            "70",
+            "41"
+          ],
+          [
+            "80",
+            "18"
+          ],
+          [
+            "90",
+            "7"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-15-L2-06",
+      "level": 2,
+      "text": "Opiskelija mittasi, kuinka suuri osa polarisoituneesta valosta pääsee polarisaattorin läpi. Hän mittasi sen polarisaattorin kulman funktiona. Kulma $\\theta$ on valon polarisaatiosuunnan ja polarisaattorin läpäisysuunnan välinen kulma. Suhde $I : I_0$ on läpi tulleen valon intensiteetin suhde tulevan valon intensiteettiin. Aineisto on esimerkkiaineisto.\n\nPiirrä mittauspisteistä kuvaaja ja piirrä niiden kautta tasainen käyrä. Lue käyrältä kulma, jolla intensiteetti on $40\\,\\%$ tulevan valon intensiteetistä. Tarkista tulos Malusin laista. Anna kulma asteina.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 50.8,
+      "unit": "°",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Läpi tullut osuus kulman funktiona (esimerkkiaineisto)",
+        "columns": [
+          "$\\theta\\,(^\\circ)$",
+          "$I : I_0$"
+        ],
+        "rows": [
+          [
+            "0",
+            "1.00"
+          ],
+          [
+            "15",
+            "0.94"
+          ],
+          [
+            "30",
+            "0.73"
+          ],
+          [
+            "45",
+            "0.51"
+          ],
+          [
+            "60",
+            "0.26"
+          ],
+          [
+            "75",
+            "0.06"
+          ],
+          [
+            "90",
+            "0.01"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-15-L2-07",
+      "level": 2,
+      "text": "Opiskelija ratkaisee tehtävää: ”Valo tulee ilmasta etanolin pintaan. Etanolin taitekerroin on $1{,}36$ ja ilman $1{,}00$. Millä tulokulmalla heijastunut valo on täysin polarisoitunutta?”\n\nHän kirjoittaa: ”Brewsterin laki on $\\tan\\alpha_\\text{B} = n_1 : n_2$. Ilman taitekerroin on $n_1 = 1{,}00$ ja etanolin $n_2 = 1{,}36$, joten $\\tan\\alpha_\\text{B} = 1{,}00 : 1{,}36 = 0{,}735$ ja $\\alpha_\\text{B} = 36{,}3^\\circ$.”\n\nEtsi opiskelijan virhe ja laske oikea Brewsterin kulma asteina. Selitä, mikä opiskelijan saama kulma $36{,}3^\\circ$ oikeasti on tässä tilanteessa.",
+      "kind": [
+        "error"
+      ],
+      "answer": 53.7,
+      "unit": "°",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -98,6 +266,68 @@
       "text": "Opiskelija mittaa puhelimen näytön polarisoitunutta valoa valoanturilla. Anturin edessä on polarisaattorikalvo.\n\nKun kalvon läpäisysuunta on näytön polarisaation suuntainen, anturi näyttää $420\\,\\text{lx}$. Kun kalvoa on kierretty siitä $90{,}0^\\circ$, anturi näyttää $16\\,\\text{lx}$. Tämä lukema on huoneen taustavaloa, joka lisää jokaiseen lukemaan saman verran.\n\nOletetaan, että taustavalo ei riipu kalvon asennosta. Oletetaan myös, että kalvo on ihanteellinen ja anturin lukema on verrannollinen valon intensiteettiin.\n\nMitä anturi näyttää, kun kalvoa on kierretty $60{,}0^\\circ$ suurimman lukeman asennosta?",
       "answer": 117.0,
       "unit": "lx",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-15-L3-04",
+      "level": 3,
+      "text": "Kolme ihanteellista polarisaattoria on peräkkäin. Ensimmäiseen tulee polarisoimatonta valoa, jonka intensiteetti on $960\\,\\text{W/m}^2$. Viimeisen läpäisysuunta on kohtisuorassa ensimmäisen läpäisysuuntaan nähden. Keskimmäinen on kulmassa $\\theta$ ensimmäiseen nähden.\n\nOpiskelija mittasi valon intensiteetin $I_3$ viimeisen polarisaattorin jälkeen. Hän mittasi sen kulman $\\theta$ funktiona. Aineisto on esimerkkiaineisto.\n\na) Millä kulmalla $\\theta$ intensiteetti on suurin? Perustele, miksi kulmat $15^\\circ$ ja $75^\\circ$ antavat likimain saman lukeman.\n\nb) Johda intensiteetille $I_3$ lauseke kulman $\\theta$ funktiona. Laske, kuinka monta prosenttia polarisoimattoman valon intensiteetistä $I_0$ pääsee läpi suurimmillaan.\n\nc) Selitä, miksi kolmas polarisaattori päästää valoa läpi, vaikka ensimmäinen ja viimeinen ovat ristissä.\n\nKirjoita vastauslaatikkoon kohdan b) tulos prosentteina.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 12.5,
+      "unit": "%",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Intensiteetti viimeisen polarisaattorin jälkeen (esimerkkiaineisto)",
+        "columns": [
+          "$\\theta\\,(^\\circ)$",
+          "$I_3\\,(\\text{W/m}^2)$"
+        ],
+        "rows": [
+          [
+            "0",
+            "1"
+          ],
+          [
+            "15",
+            "32"
+          ],
+          [
+            "30",
+            "86"
+          ],
+          [
+            "45",
+            "114"
+          ],
+          [
+            "60",
+            "93"
+          ],
+          [
+            "75",
+            "28"
+          ],
+          [
+            "90",
+            "2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-15-L3-05",
+      "level": 3,
+      "text": "Kalastaja istuu järven rannalla. Vedenpinnasta heijastuu häikäisevää auringonvaloa. Heijastuneen valon intensiteetti silmän kohdalla on $40\\,\\text{W/m}^2$. Aurinko on niin korkealla, että valo heijastuu veden pinnasta Brewsterin kulmassa. Veden taitekerroin on $1{,}33$ ja ilman $1{,}00$.\n\nKalastaja käyttää polaroituja aurinkolaseja. Lasien läpäisysuunta on pystysuora. Hän kallistaa päätään niin, että läpäisysuunta on kulmassa $25{,}0^\\circ$ pystysuunnasta.\n\na) Kuinka korkealla Aurinko on horisontin yläpuolella?\n\nb) Kuinka suuri on häikäisyn intensiteetti lasien jälkeen?\n\nc) Tavallinen tummennettu lasi päästäisi läpi $30\\,\\%$ valon intensiteetistä suunnasta riippumatta. Kumpi lasi vähentää häikäisyä enemmän, ja miksi? Vertaa lopuksi lasien vaikutusta polarisoimattomaan valoon.\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 7.144,
+      "unit": "W/m²",
       "tolerance": 0.02
     }
   ]

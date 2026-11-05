@@ -39,6 +39,52 @@
       "answer": 67.5485,
       "unit": "°",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-15-L1-06",
+      "level": 1,
+      "text": "Polarised sunglasses have a polariser film with a vertical transmission axis. Why do they reduce especially the glare reflected from the surface of water?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Reflected light is partially polarised in the horizontal direction, and the film absorbs the horizontal oscillation.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Reflected light is partially polarised in the vertical direction, and the film absorbs the vertical oscillation completely.",
+          "feedback": "The direction is the wrong way round. Light reflected from a surface is polarised along the surface, that is, in the horizontal direction, and a vertical film is exactly what absorbs horizontal oscillation. If the reflected light were vertically polarised, the film would let it all through."
+        },
+        {
+          "text": "The film lets through only rays travelling vertically, and glare travelling horizontally is blocked completely.",
+          "feedback": "The transmission axis means the direction of oscillation of the electric field, not the direction in which the light travels. Light travels through the film in the same direction regardless of how it is polarised."
+        },
+        {
+          "text": "Reflected light is partially polarised in the horizontal direction, and the film absorbs the horizontal oscillation.",
+          "feedback": "Correct: reflected light is partially polarised along the surface, that is, in the horizontal direction. A vertical film lets through only the vertical component of the electric field, so the horizontal part of the glare is absorbed. This is why the orientation of the glasses matters: a tilted film would let glare through.",
+          "correct": true
+        },
+        {
+          "text": "The film is tinted, so it dims all light equally and the share of glare therefore decreases.",
+          "feedback": "Tinted glass would also dim glare, but by the same amount as other light, so the share of glare would not decrease. A polariser dims glare more, because reflected light is polarised in the direction that the film absorbs."
+        }
+      ]
+    },
+    {
+      "id": "fy7-15-L1-07",
+      "level": 1,
+      "text": "The intensity of the polarised light of a phone display is $300\\,\\text{W/m}^2$. The light arrives at an ideal polariser film whose transmission axis is at an angle of $55.0^\\circ$ to the polarisation direction of the light. What is the intensity of the light after the film?",
+      "answer": 98.697,
+      "unit": "W/m²",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-15-L1-08",
+      "level": 1,
+      "text": "The refractive index of fused quartz glass is $1.46$. At what angle of incidence is light arriving from air at the surface of quartz glass reflected completely polarised? The refractive index of air is $1.00$.",
+      "answer": 55.5915,
+      "unit": "°",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,6 +119,128 @@
       "answer": 33.6901,
       "unit": "°",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-15-L2-05",
+      "level": 2,
+      "text": "A student investigated Malus's law with a light sensor. A polariser film was in front of the sensor, and the sensor measured the polarised light of a phone display and the background light of the room. The angle $\\theta$ is the angle between the transmission axis of the film and the polarisation direction of the display, and $E$ is the reading of the sensor in lux. The data is example data.\n\nPlot the reading $E$ as a function of the square of the cosine of the angle, $\\cos^2\\theta$, and fit a straight line to the points. The background light adds the same amount to every reading. Subtract the share of the background light. What is the reading that the polarised light of the display alone gives when the transmission axis of the film is aligned with the polarisation of the display?",
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "answer": 314.0,
+      "unit": "lx",
+      "tolerance": 0.015,
+      "data": {
+        "caption": "Reading of the sensor as a function of the angle of the film (example data)",
+        "columns": [
+          "$\\theta\\,(^\\circ)$",
+          "$E\\,(\\text{lx})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "322"
+          ],
+          [
+            "10",
+            "308"
+          ],
+          [
+            "20",
+            "288"
+          ],
+          [
+            "30",
+            "240"
+          ],
+          [
+            "40",
+            "194"
+          ],
+          [
+            "50",
+            "133"
+          ],
+          [
+            "60",
+            "88"
+          ],
+          [
+            "70",
+            "41"
+          ],
+          [
+            "80",
+            "18"
+          ],
+          [
+            "90",
+            "7"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-15-L2-06",
+      "level": 2,
+      "text": "A student measured the share of polarised light that passes through a polariser as a function of the angle of the polariser. The angle $\\theta$ is the angle between the polarisation direction of the light and the transmission axis of the polariser, and $I : I_0$ is the ratio of the intensity of the transmitted light to the intensity of the incident light. The data is example data.\n\nPlot a graph of the measured points and draw a smooth curve through them. Read from the curve the angle at which the intensity is $40\\,\\%$ of the intensity of the incident light, and check the result with Malus's law. Give the angle in degrees.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 50.8,
+      "unit": "°",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Transmitted share as a function of the angle (example data)",
+        "columns": [
+          "$\\theta\\,(^\\circ)$",
+          "$I : I_0$"
+        ],
+        "rows": [
+          [
+            "0",
+            "1.00"
+          ],
+          [
+            "15",
+            "0.94"
+          ],
+          [
+            "30",
+            "0.73"
+          ],
+          [
+            "45",
+            "0.51"
+          ],
+          [
+            "60",
+            "0.26"
+          ],
+          [
+            "75",
+            "0.06"
+          ],
+          [
+            "90",
+            "0.01"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-15-L2-07",
+      "level": 2,
+      "text": "A student is solving a problem: “Light arrives from air at the surface of ethanol. The refractive index of ethanol is $1.36$ and that of air $1.00$. At what angle of incidence is the reflected light completely polarised?”\n\nThe student writes: “Brewster's law is $\\tan\\alpha_\\text{B} = n_1 : n_2$. The refractive index of air is $n_1 = 1.00$ and that of ethanol $n_2 = 1.36$, so $\\tan\\alpha_\\text{B} = 1.00 : 1.36 = 0.735$ and $\\alpha_\\text{B} = 36.3^\\circ$.”\n\nFind the student's error and calculate the correct Brewster's angle in degrees. Explain what the angle $36.3^\\circ$ that the student obtained actually is in this situation.",
+      "kind": [
+        "error"
+      ],
+      "answer": 53.7,
+      "unit": "°",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -98,6 +266,68 @@
       "text": "A student measures the polarised light of a phone display with a light sensor with a polarising film in front of it.\n\nWhen the transmission axis of the film is aligned with the polarisation of the display, the sensor shows $420\\,\\text{lx}$. When the film has been turned $90.0^\\circ$ from that position, the sensor shows $16\\,\\text{lx}$. This reading is background light of the room, which adds the same amount to every reading.\n\nAssume that the background light does not depend on the position of the film, that the film is ideal and that the reading of the sensor is proportional to the intensity of the light.\n\nWhat does the sensor show when the film has been turned $60.0^\\circ$ from the position of the largest reading?",
       "answer": 117.0,
       "unit": "lx",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-15-L3-04",
+      "level": 3,
+      "text": "Three ideal polarisers are placed one after another. Unpolarised light with intensity $960\\,\\text{W/m}^2$ arrives at the first one. The transmission axis of the last one is perpendicular to that of the first, and the middle one is at an angle $\\theta$ to the first.\n\nA student measured the intensity $I_3$ of the light after the last polariser as a function of the angle $\\theta$. The data is example data.\n\na) At what angle $\\theta$ is the intensity greatest? Justify why the angles $15^\\circ$ and $75^\\circ$ give approximately the same reading.\n\nb) Derive an expression for the intensity $I_3$ as a function of the angle $\\theta$, and calculate what percentage of the intensity $I_0$ of the unpolarised light passes through at most.\n\nc) Explain why the third polariser lets light through even though the first and the last are crossed.\n\nWrite the result of part b) as a percentage in the answer box.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 12.5,
+      "unit": "%",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Intensity after the last polariser (example data)",
+        "columns": [
+          "$\\theta\\,(^\\circ)$",
+          "$I_3\\,(\\text{W/m}^2)$"
+        ],
+        "rows": [
+          [
+            "0",
+            "1"
+          ],
+          [
+            "15",
+            "32"
+          ],
+          [
+            "30",
+            "86"
+          ],
+          [
+            "45",
+            "114"
+          ],
+          [
+            "60",
+            "93"
+          ],
+          [
+            "75",
+            "28"
+          ],
+          [
+            "90",
+            "2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-15-L3-05",
+      "level": 3,
+      "text": "An angler sits on the shore of a lake, and glaring sunlight is reflected from the surface of the water. The intensity of the reflected light at the eye is $40\\,\\text{W/m}^2$. The Sun is at such a height that the light is reflected from the water surface at Brewster's angle. The refractive index of water is $1.33$ and that of air $1.00$.\n\nThe angler wears polarised sunglasses whose transmission axis is vertical, and tilts their head so that the transmission axis is at an angle of $25.0^\\circ$ from the vertical.\n\na) How high is the Sun above the horizon?\n\nb) What is the intensity of the glare after the glasses?\n\nc) An ordinary tinted lens would let through $30\\,\\%$ of the intensity of the light regardless of direction. Which lens reduces glare more, and why? Finally, compare the effect of the lenses on unpolarised light.\n\nWrite the result of part b) in the answer box.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 7.144,
+      "unit": "W/m²",
       "tolerance": 0.02
     }
   ]

@@ -1,12 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: b23d6b7a8c4b3f3f
+CONTENT-HASH: f9042958b6e46deb
+Mode: full
+Round: 1
 
 ## Blocking
 
+## Fixed
+- None needed.
+
 ## Polish
-- Earlier Polish items (direction-of-force task, L1-03/L1-05 level, L3-02 sign convention, L1-04 reasonableness line) are unchanged by this diff and still open.
+- None.
 
 ## Checked
-- Delta: the two shortened figure headings ("same direction", "opposite directions") are clear and keep the meaning; the figure is not used by any exercise, so no task or solution is affected.
-- No task, solution or level text changed; the earlier review stands.
-- The hash was the same at the start and the end.
+- Level, task type (kind), answer box and the parts a), b), c) of every new task match the Finnish, so level and difficulty are unchanged.
+- Choices of L1-06: the same four options in the same order; each distractor keeps its misconception and its corrective feedback; the correct option and its feedback are the translated fi ones.
+- Hints of what to write in the answer box ("Write ... in the answer box") are kept in all multi-part tasks.
+- English is clear and at the level of the Finnish; terms (current balance, voice coil, radial field, spread) are used as in the lesson.
+- Solutions keep the full Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness structure of the Finnish.
+- The hash was the same at the start and the end (no edits).

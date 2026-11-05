@@ -1,16 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 65bb443bf3d0519a
+CONTENT-HASH: bfc9f517bb3ff29d
+Mode: full
+Round: 1
 
 ## Blocking
-(none)
+
+## Fixed
+- None needed.
 
 ## Polish
-- [Minor] Taso 2, tehtävä 2 (open-exercises-L2-1280-2) — balance-points-kuvaaja: sovitettu suora ja katkoviiva samalla punaisella, mittauspisteet violetteja ja erottuvia, akselit ja yksiköt ($\Delta m$ (g), $I$ (A)) selkeät — jatkoksi katkoviivaa voisi nimetä "ekstrapolaatioksi" tehtävätekstissä; vain valinnainen.
-- [Minor] Taso 1–3 — pitkät ratkaisut ovat tiiviitä, mutta rakenne (Annettu, Kysytty, Periaate, Kaava, Muunnokset, Sijoitus, Vastaus, Järkevyys) on johdonmukainen eikä mikään leikkaudu.
+- None.
 
 ## Checked
-- open-exercises L1 (contact-6 #61–#63 yhteenveto kaikista tasoista contact-5/6), L2-2 täysikokoisena (kuvaaja ja ratkaisu), L2 ja L3 kontaktilehdiltä.
-- Syöttökentät, yksiköt, Tarkista, ratkaisut avattuina: ei leikkautumista eikä vaakavieritystä; kaikki suureet ja yksiköt LaTeXilla.
+- Opened content/fi-easy/FY7/fy7-4/review/shots/fy7-4-open-exercises-1280-5.png (L1 end, en) and fy7-4-open-exercises-L2-1280-6.png, fy7-4-open-exercises-L3-1280-5.png: task text, data tables (L2-05, L3-04), answer box with unit, and open solutions render without clipping; LaTeX renders correctly.
+- Tables: captions and column heads are short and fit; no horizontal overflow at this width.
+- Decimal separator: comma in text and formulas, point in table cells as in fi; no Finnish left in the English page.
+- The hash was the same at the start and the end (no edits).
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · language 4 · accessibility 4

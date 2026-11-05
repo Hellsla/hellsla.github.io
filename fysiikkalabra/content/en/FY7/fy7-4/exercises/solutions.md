@@ -48,6 +48,31 @@
 **Answer:** $3.0\,\text{A}$, two significant figures like the data.
 **Reasonableness:** A current of a few amperes is usual for a laboratory power supply. Units: $\tfrac{\text{N}}{\text{T}\cdot\text{m}} = \tfrac{\text{N}}{\frac{\text{N}}{\text{A}\cdot\text{m}}\cdot\text{m}} = \text{A}$.
 
+## fy7-4-L1-06
+**Find:** the direction of the force that the magnetic field exerts on the current-carrying wire when the field points north and the current flows east.
+**Principle:** The force $\overline{F}$ is perpendicular to both the current and the magnetic field $\overline{B}$, and its direction is obtained with the right-hand rule: the thumb points in the direction of the current, the fingers in the direction of the field and the palm in the direction of the force. The directions of the current and the field are perpendicular to each other, so the force is greatest and its direction is the third direction, perpendicular to both.
+**Model answer:** The force points upwards. When the thumb points east and the fingers north, the palm points up. The force is not in the direction of the field or of the current, and it is not an attraction downwards like weight: it is perpendicular to both. If the current or the field were reversed, the force would point downwards.
+
+## fy7-4-L1-07
+**Given:** distance $r_1 = 4.0\,\text{cm}$, force $F_1 = 0.60\,\text{N}$, new distance $r_2 = 8.0\,\text{cm}$; the currents $I_1$ and $I_2$ and the length $l = 1.0\,\text{m}$ stay the same
+**Find:** force $F_2$ in newtons at the new distance
+**Principle:** The magnitude of the field of the other wire is $B_1 = \dfrac{\mu_0 I_1}{2\pi r}$, and it decreases as the distance increases. The force on the second wire is $F = I_2 l B_1$, so the force is inversely proportional to the distance when the currents and the length do not change.
+**Formula:** $F = \dfrac{\mu_0 I_1 I_2 l}{2\pi r}$, so $F r$ is constant and $F_1 r_1 = F_2 r_2$, from which $F_2 = F_1 \cdot \dfrac{r_1}{r_2}$
+**Conversions:** None needed: the distances are compared with each other, so the centimetres cancel.
+**Substitution:** $F_2 = 0.60\,\text{N} \cdot \dfrac{4.0\,\text{cm}}{8.0\,\text{cm}} = 0.60\,\text{N} \cdot 0.50 = 0.30\,\text{N}$
+**Answer:** $0.30\,\text{N}$, two significant figures like the data.
+**Reasonableness:** The distance doubled, so the field and the force halved: $0.60\,\text{N} : 2 = 0.30\,\text{N}$. The force does not drop to a quarter, because it is proportional to the first power of the distance, not to the square.
+
+## fy7-4-L1-08
+**Given:** angle $\alpha_1 = 20^\circ$, force $F_1 = 0.050\,\text{N}$, new angle $\alpha_2 = 40^\circ$; $I$, $l$ and $B$ stay the same
+**Find:** force $F_2$ in newtons at the new angle
+**Principle:** The force is $F = I l B \sin\alpha$, and $I$, $l$ and $B$ do not change, so the force is proportional to the sine of the angle, $\sin\alpha$, and not to the angle $\alpha$ itself. Doubling the angle therefore does not double the force.
+**Formula:** $\dfrac{F_2}{F_1} = \dfrac{I l B \sin\alpha_2}{I l B \sin\alpha_1} = \dfrac{\sin\alpha_2}{\sin\alpha_1}$, so $F_2 = F_1 \cdot \dfrac{\sin\alpha_2}{\sin\alpha_1}$
+**Conversions:** None needed: the force is in newtons, and the angles are given in degrees directly for the sine function.
+**Substitution:** $F_2 = 0.050\,\text{N} \cdot \dfrac{\sin 40^\circ}{\sin 20^\circ} = 0.050\,\text{N} \cdot \dfrac{0.6428}{0.3420} = 0.09397\,\text{N}$
+**Answer:** $0.094\,\text{N}$, two significant figures like the force $0.050\,\text{N}$.
+**Reasonableness:** The force increases as the angle approaches $90^\circ$, but by less than a factor of two: $0.094\,\text{N} < 2 \cdot 0.050\,\text{N} = 0.100\,\text{N}$. The greatest possible force would be $0.050\,\text{N} : 0.3420 = 0.146\,\text{N}$, and $0.094\,\text{N}$ stays below it.
+
 ## fy7-4-L2-01
 **Given:** currents of the wires $I_1 = I_2 = 10\,\text{A}$ in the same direction, distance $r = 5.0\,\text{mm}$, length of the parallel part $l = 0.80\,\text{m}$, $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Find:** force $F$ between the wires in millinewtons
@@ -89,6 +114,37 @@
 **Answer:** $18\,\text{m/s}^2$, two significant figures like the data.
 **Reasonableness:** The acceleration is almost twice the acceleration of free fall, which is plausible for a light rod acted on by a force equal to the weight of a $36\,\text{g}$ object. In reality friction would reduce the acceleration.
 
+## fy7-4-L2-05
+**Given:** the measurements of the table $(l;\ \Delta m)$: $(2.0\,\text{cm};\ 0.35\,\text{g})$, $(3.0\,\text{cm};\ 0.51\,\text{g})$, $(4.0\,\text{cm};\ 0.71\,\text{g})$, $(5.0\,\text{cm};\ 0.86\,\text{g})$ and $(6.0\,\text{cm};\ 1.04\,\text{g})$; current $I = 2.0\,\text{A}$, $g = 9.81\,\text{m/s}^2$
+**Find:** the mean of the magnetic flux density $B_{\text{mean}}$ in teslas and the spread
+**Principle:** When a current flows in the field, a force $F = I l B$ acts on the wire, and the balance measures it as a change in weight, $F = \Delta m \cdot g$. Each measurement gives its own value of $B$. The results are usually not exactly the same because of measurement uncertainty, so they are averaged.
+**Formula:** $\Delta m \cdot g = I l B$, so $B = \dfrac{\Delta m \cdot g}{I l}$
+**Conversions:** $\Delta m$ from grams to kilograms and $l$ from centimetres to metres: for example $0.35\,\text{g} = 0.35 \cdot 10^{-3}\,\text{kg}$ and $2.0\,\text{cm} = 0.020\,\text{m}$.
+**Substitution:** First row: $B = \dfrac{0.35 \cdot 10^{-3}\,\text{kg} \cdot 9.81\,\text{m/s}^2}{2.0\,\text{A} \cdot 0.020\,\text{m}} = 0.0858\,\text{T}$. The other rows give in the same way $0.0834\,\text{T}$, $0.0871\,\text{T}$, $0.0844\,\text{T}$ and $0.0850\,\text{T}$. The sum is $0.4257\,\text{T}$, so $B_{\text{mean}} = 0.4257\,\text{T} : 5 = 0.08513\,\text{T}$. The spread is $(0.0871\,\text{T} - 0.0834\,\text{T}) : 2 = 0.0018\,\text{T}$.
+**Answer:** $B_{\text{mean}} = 0.085\,\text{T}$, two significant figures like the current and the lengths; the spread is approximately $0.002\,\text{T}$, so the result is $(0.085 \pm 0.002)\,\text{T}$. The spread is a simple estimate of the variation of the measurements, not the uncertainty of the mean.
+**Reasonableness:** The length tripled ($2.0\,\text{cm} \to 6.0\,\text{cm}$) and the change in the reading grew $0.35\,\text{g} \to 1.04\,\text{g}$, that is, about threefold, as the formula $F = I l B$ predicts. The field is typical of a laboratory magnet, about a tenth of a tesla.
+
+## fy7-4-L2-06
+**Given:** length of the horizontal part of the wire $6.0\,\text{cm}$, length in the field $l = 2.5\,\text{cm}$, current $I = 3.0\,\text{A}$, change in the reading $\Delta m = 0.31\,\text{g}$, $g = 9.81\,\text{m/s}^2$
+**Find:** a) the student's error; b) magnetic flux density $B$ in teslas
+**Principle:** In the formula $F = I l B$ the length $l$ is only the length of the part of the wire that is in the field, because the field exerts a force only on that part. The student used the length of the whole wire, $6.0\,\text{cm}$, although only $2.5\,\text{cm}$ is in the field. The divisor was therefore too large and $B$ too small.
+**Formula:** $\Delta m \cdot g = I l B$, so $B = \dfrac{\Delta m \cdot g}{I l}$
+**Conversions:** $\Delta m = 0.31\,\text{g} = 0.31 \cdot 10^{-3}\,\text{kg}$ and $l = 2.5\,\text{cm} = 0.025\,\text{m}$
+**Substitution:** $B = \dfrac{0.31 \cdot 10^{-3}\,\text{kg} \cdot 9.81\,\text{m/s}^2}{3.0\,\text{A} \cdot 0.025\,\text{m}} = \dfrac{3.041 \cdot 10^{-3}\,\text{N}}{0.075\,\text{A}\cdot\text{m}} = 0.04055\,\text{T}$
+**Answer:** a) The student divided the force by the length of the whole wire, $6.0\,\text{cm}$, instead of the length in the field, $2.5\,\text{cm}$. b) $B = 0.041\,\text{T}$, two significant figures like the change in the reading $0.31\,\text{g}$.
+**Reasonableness:** The student's result $0.017\,\text{T}$ relates to the correct one by the ratio $2.5 : 6.0 = 0.42$, and $0.041\,\text{T} \cdot 0.42 = 0.017\,\text{T}$, so the error explains exactly that difference. The correct value is larger, because the same force arises from a shorter wire only if the field is stronger.
+
+## fy7-4-L2-07
+**Given:** the points of the table $(I;\ F)$: $(0.20\,\text{A};\ 1.18\,\text{N})$, $(0.40\,\text{A};\ 2.27\,\text{N})$, $(0.60\,\text{A};\ 3.52\,\text{N})$, $(0.80\,\text{A};\ 4.58\,\text{N})$ and $(1.00\,\text{A};\ 5.83\,\text{N})$; $B = 1.1\,\text{T}$, field perpendicular to the wire
+**Find:** total length $l$ of the wire in the coil in metres
+**Principle:** In a radial field every part of the wire is perpendicular to the field, so the force is $F = I l B$ and $l$ is the length of the whole wire. When $B$ and $l$ do not change, $F$ is directly proportional to the current $I$. The line passes through the origin, because without current there is no force on the coil.
+**Reading the graph:** The points lie on a rising line with points on both sides of it. The fitted line passes through the origin and the point $(1.00\,\text{A};\ 5.8\,\text{N})$. The slope is read from the line, not from two adjacent data points.
+**Formula:** The slope of the line is $k = \dfrac{F}{I} = B l$, so $l = \dfrac{k}{B}$
+**Conversions:** None needed: $\text{N}/\text{A} = \text{T}\cdot\text{m}$, so $k : B$ is in metres.
+**Substitution:** $k = \dfrac{5.8\,\text{N} - 0\,\text{N}}{1.00\,\text{A} - 0\,\text{A}} = 5.8\,\dfrac{\text{N}}{\text{A}}$ and $l = \dfrac{5.8\,\text{N/A}}{1.1\,\text{T}} = 5.27\,\text{m}$
+**Answer:** $5.3\,\text{m}$, two significant figures like the field $1.1\,\text{T}$. Because the fit is done by eye, an answer of $5.1\text{–}5.5\,\text{m}$ is good.
+**Reasonableness:** The wire of the coil is wound into many turns: if the radius of the coil is the same as in the example of the chapter, $1.3\,\text{cm}$, the length of one turn is $2\pi \cdot 0.013\,\text{m} = 0.082\,\text{m}$, so $5.3\,\text{m}$ corresponds to about $65$ turns, which is close to the number of turns of the loudspeaker coil in the chapter, $60$. For example, with a current of $1.0\,\text{A}$ the force is $5.8\,\text{N}$, which is many times the weight of the cone.
+
 ## fy7-4-L3-01
 **Given:** mass of the rod $m = 12\,\text{g}$, length in the field $l = 20\,\text{cm}$, $B = 0.25\,\text{T}$, rod perpendicular to the horizontal field; $g = 9.81\,\text{m/s}^2$
 **Find:** current $I$ at which the wires go slack
@@ -118,3 +174,24 @@
 **Substitution:** $I = \dfrac{0.0027\,\text{kg} \cdot 9.81\,\text{m/s}^2}{1.0\,\text{m} \cdot 53 \cdot 10^{-6}\,\text{T} \cdot \cos 74^\circ} = \dfrac{0.026487\,\text{N}}{1.4609 \cdot 10^{-5}\,\text{T}\cdot\text{m}} = 1813\,\text{A} = 1.813\,\text{kA}$
 **Answer:** $1.8\,\text{kA}$, two significant figures like the data.
 **Reasonableness:** The required current is enormous: a thin wire would melt at once. The result shows how weak the Earth's magnetic field is, about $0.05\,\text{mT}$, compared with a tenth of a tesla for a laboratory magnet. A compass needle still turns, because it is a magnet and not a current-carrying wire.
+
+## fy7-4-L3-04
+**Given:** distance between the rails (length of the rod in the field) $l = 12\,\text{cm}$, mass of the rod $m = 45\,\text{g}$, vertical field, sliding friction constant; the points of the table $(I;\ a)$: $(4.0\,\text{A};\ 1.8\,\text{m/s}^2)$, $(6.0\,\text{A};\ 3.6\,\text{m/s}^2)$, $(8.0\,\text{A};\ 5.6\,\text{m/s}^2)$, $(10.0\,\text{A};\ 7.3\,\text{m/s}^2)$ and $(12.0\,\text{A};\ 9.3\,\text{m/s}^2)$; $g = 9.81\,\text{m/s}^2$
+**Find:** magnetic flux density $B$ in teslas (and in addition the coefficient of sliding friction $\mu$)
+**Principle:** The field is vertical, so the magnetic force $I l B$ is horizontal. The weight and the normal force cancel each other, so the normal force is $m g$ and the sliding friction $\mu m g$ opposes the motion. By Newton's second law $m a = I l B - \mu m g$, that is, $a = kI + b$: the acceleration is a linear function of the current. Friction makes the constant term negative, so the line does not pass through the origin: the acceleration of the moving rod is positive only when $I l B > \mu m g$.
+**Reading the graph:** The points lie on a rising line with points on both sides of it. The fitted line passes approximately through the points $(4.0\,\text{A};\ 1.78\,\text{m/s}^2)$ and $(12.0\,\text{A};\ 9.26\,\text{m/s}^2)$, and it crosses the vertical axis at $-1.96\,\text{m/s}^2$. The points are read from the line and chosen far apart from each other.
+**Formula:** $a = \dfrac{l B}{m} \cdot I - \mu g$, so the slope is $k = \dfrac{l B}{m}$, from which $B = \dfrac{k m}{l}$, and the constant term is $b = -\mu g$, from which $\mu = -\dfrac{b}{g}$
+**Conversions:** $m = 45\,\text{g} = 0.045\,\text{kg}$ and $l = 12\,\text{cm} = 0.12\,\text{m}$
+**Substitution:** $k = \dfrac{9.26\,\text{m/s}^2 - 1.78\,\text{m/s}^2}{12.0\,\text{A} - 4.0\,\text{A}} = 0.935\,\dfrac{\text{m/s}^2}{\text{A}}$, so $B = \dfrac{0.935\,\text{m/s}^2\text{/A} \cdot 0.045\,\text{kg}}{0.12\,\text{m}} = 0.351\,\text{T}$. In addition $\mu = \dfrac{1.96\,\text{m/s}^2}{9.81\,\text{m/s}^2} = 0.200$.
+**Answer:** $B = 0.35\,\text{T}$, two significant figures like the mass and the length; the coefficient of sliding friction is $\mu = 0.20$.
+**Reasonableness:** When $I = 8.0\,\text{A}$, the magnetic force is $0.336\,\text{N}$ and the friction $0.088\,\text{N}$, so $a = 0.248\,\text{N} : 0.045\,\text{kg} = 5.5\,\text{m/s}^2$, which matches the value in the table, $5.6\,\text{m/s}^2$.
+
+## fy7-4-L3-05
+**Given:** length of the upper wire $l = 0.50\,\text{m}$, mass $m = 3.0\,\text{g}$, distance between the wires $r = 1.0\,\text{cm}$, the same current $I$ in both; $g = 9.81\,\text{m/s}^2$, $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
+**Find:** a) the directions of the currents and the current $I$ in amperes; b) whether the floating is stable in the vertical direction
+**Principle:** The upper wire floats when the forces on it cancel each other: the weight points down, so the force of the field of the lower wire must point up, that is, the wires must repel each other. Repulsion requires currents in opposite directions, because currents in the same direction would attract the wires towards each other. The field of the lower wire is perpendicular to the upper wire, so the force is $F = I l B_1$, where $B_1 = \dfrac{\mu_0 I}{2\pi r}$.
+**Formula:** $I l B_1 = m g$, that is, $\dfrac{\mu_0 I^2 l}{2\pi r} = m g$, so $I = \sqrt{\dfrac{2\pi r m g}{\mu_0 l}}$
+**Conversions:** $m = 3.0\,\text{g} = 0.0030\,\text{kg}$ and $r = 1.0\,\text{cm} = 0.010\,\text{m}$
+**Substitution:** The denominator is $\mu_0 l = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 0.50\,\text{m} = 6.283 \cdot 10^{-7}\,\text{Vs/A}$. The numerator is $2\pi r m g = 2\pi \cdot 0.010\,\text{m} \cdot 0.0030\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 1.849 \cdot 10^{-3}\,\text{N}\cdot\text{m}$. So $I = \sqrt{\dfrac{1.849 \cdot 10^{-3}}{6.283 \cdot 10^{-7}}}\,\text{A} = \sqrt{2943}\,\text{A} = 54.25\,\text{A}$
+**Answer:** a) The currents flow in opposite directions, and $I = 54\,\text{A}$, two significant figures like the mass and the distance. b) The floating is stable in the vertical direction: if the upper wire rises, the distance $r$ increases and the force $F \propto 1 : r$ drops below the weight, so the weight pulls the wire back; if it sinks, the distance decreases, the force grows above the weight and pushes the wire back up. Sideways the arrangement is not stable: a wire displaced sideways could turn or tip over, so the result applies only to the vertical direction.
+**Reasonableness:** The field at the upper wire is $B_1 = 1.085 \cdot 10^{-3}\,\text{T}$ and the force is $54.25\,\text{A} \cdot 0.50\,\text{m} \cdot 1.085 \cdot 10^{-3}\,\text{T} = 0.0294\,\text{N}$, which equals the weight $0.0030\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 0.0294\,\text{N}$. A current of over $50\,\text{A}$ heats a thin wire, so it is switched on only for a short time.
