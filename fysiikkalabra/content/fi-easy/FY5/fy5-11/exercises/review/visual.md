@@ -1,15 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: b5faadaf9f917be6
+CONTENT-HASH: 9badd1d335eb025c
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
+
+## Fixed
+(none needed: the selkosuomi text was already short-sentenced, terms explained, and every number matched the Finnish)
 
 ## Polish
 - none.
 
 ## Checked
-- contact-5 (exit ticket, open-exercises-1280 and open-exercises-L2-1280 with opened solutions): fractions, units, boxed answers render, L2-01 and L2-03 show the edited wording, no overflow; decimal comma and units LaTeX in exercises.json and solutions.md.
-- check_layout fy5-11 --width 345 OK.
+- Opened fi-easy shots: open-exercises L2 parts and L3 parts and level 1 part 7 covering the new tasks (L2-05 table, L3-05 table, L1-08 solution).
+- Data tables render with captions and units, nothing clipped at the capture width; long calculations wrap in the aligned boxes and stay readable.
+- Calculation boxes render (known template note observed, no translation issue).
+- Shots predate the small wording edits listed under Fixed; layout is unaffected.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 (none in these tasks) · typography 5 · language 5 · accessibility 5

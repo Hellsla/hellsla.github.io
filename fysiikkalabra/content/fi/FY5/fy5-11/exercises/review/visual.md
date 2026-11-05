@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 4ec4dcbd9d4e4961
+CONTENT-HASH: b4146d32dcda0014
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] exercises.json L3-03 — the question asks for the direction, then "Anna vastaukseksi aika" — drop the direction or say only the time is entered.
-- [Minor] solutions.md L2-03 Järkevyys — "kumpaankin suuntaan edestakaisin" is hard to parse (for science: check the reasoning).
+(none)
 
 ## Checked
-- Round 2: open-exercises-L2-1280-1 and L3-1280-2 (L2-01 and L3-02 now set $A$, $B$ in maths; "tasaiseen seinään" reads correctly); source re-read for the other items. Rest unchanged since round 1.
+- Hash b4146d32dcda0014 at start and end (delta, text-only). Opened open-exercises-L2-1280-5 (L2-05: new task text with phone tone and t0, caption "Sovelluksen mittaama kaiun viive", table, Annettu, Periaate, Kaava chain all render). Re-read L1-08 Järkevyys (4,4 times) and L3-04 c) wording; consistent with the answers.
+- Calculation chains render in the new captures (template fix applied).
 
 ## Scores
-illustrations n/a (5) · typography 4 · Finnish 4 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

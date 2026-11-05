@@ -43,6 +43,26 @@
 **Vastaus:** $240\,\text{m}$ eli $2{,}4 \cdot 10^2\,\text{m}$, kaksi merkitsevää numeroa kuten viiveessä $1{,}4\,\text{s}$.
 **Järkevyys:** Ääni kulkee noin kolmanneksen kilometristä sekunnissa, joten $1{,}4\,\text{s}$:ssa noin $0{,}48\,\text{km}$; puolet siitä on noin $0{,}24\,\text{km}$. Järven yli vastarannalle se on uskottava matka.
 
+## fy5-11-L1-06
+**Kysytty:** miten ylöspäin suuntautuva pulssi palaa köyden kiinteästä päästä
+**Periaate:** Seinään sidottu pää ei pääse liikkumaan. Kun pulssi saapuu päähän, köysi yrittää nousta ylös. Seinä vastaa vetämällä köyttä alas. Tämä seinän voima synnyttää heijastuneen pulssin.
+**Mallivastaus:** Pulssi palaa alaspäin eli käännettynä. Seinä vetää köyden päätä alas. Siksi heijastunut pulssi lähtee takaisin vastakkaiseen suuntaan kuin tuleva. Pulssin nopeus ei muutu, koska se riippuu köydestä. Pulssi heijastuu lähes kokonaan, koska jäykkä kiinnitys ei vaimenna sitä. Väite, että pulssi palaa ylöspäin, kuvaisi vapaata päätä. Väite, että pulssi katoaa, ei pidä paikkaansa.
+
+## fy5-11-L1-07
+**Kysytty:** miten taajuuden kaksinkertaistaminen muuttaa aallon taipumista raon takana
+**Periaate:** Aallon nopeus pysyy samana. Yhtälön $v = f\lambda$ mukaan aallonpituus pienenee, kun taajuus kasvaa. Diffraktio eli aallon taipuminen on sitä voimakkaampaa, mitä kapeampi rako on aallonpituuteen verrattuna.
+**Mallivastaus:** Uusi aallonpituus on puolet entisestä eli $2{,}0\,\text{cm}$. Raon leveys aallonpituuteen verrattuna kasvaa suhteesta $\tfrac{3{,}0\,\text{cm}}{4{,}0\,\text{cm}} = 0{,}75$ suhteeseen $\tfrac{3{,}0\,\text{cm}}{2{,}0\,\text{cm}} = 1{,}5$. Rako on siis suhteessa leveämpi, ja taipuminen heikkenee. Taipuminen on kuitenkin yhä selvää, koska rako on vielä aallonpituuden kokoinen. Aallon energia ei vaikuta taipumisen voimakkuuteen. Myöskään raon leveys yksin ei ratkaise sitä. Ratkaisevaa on, kuinka leveä rako on aallonpituuteen verrattuna. Aalto kulkee raosta kummallakin taajuudella.
+
+## fy5-11-L1-08
+**Annettu:** pohjan syvyys $d = 36\,\text{m}$, äänen nopeus vedessä $v = 1500\,\text{m/s}$
+**Kysytty:** kaiun viive $t$ millisekunteina
+**Periaate:** Pulssi etenee tasaisella nopeudella pohjaan, heijastuu ja palaa takaisin. Viiveen aikana se kulkee siis matkan $2d$ (menomatka ja paluumatka).
+**Kaava:** $2d = v t$, josta $t = \dfrac{2d}{v}$
+**Muunnokset:** Tulos saadaan sekunteina. Lopuksi muutetaan millisekunteiksi: $1\,\text{s} = 1000\,\text{ms}$.
+**Sijoitus:** $t = \dfrac{2 \cdot 36\,\text{m}}{1500\,\text{m/s}} = \dfrac{72\,\text{m}}{1500\,\text{m/s}} = 0{,}048\,\text{s} = 0{,}048 \cdot 1000\,\text{ms} = 48\,\text{ms}$
+**Vastaus:** $48\,\text{ms}$, kaksi merkitsevää numeroa kuten syvyydessä $36\,\text{m}$.
+**Järkevyys:** Tarkistus: $1500\,\text{m/s} \cdot 0{,}048\,\text{s} = 72\,\text{m} = 2 \cdot 36\,\text{m}$. Ilmassa sama matka vaatisi $\tfrac{72\,\text{m}}{343\,\text{m/s}} \approx 0{,}21\,\text{s}$. Vedessä kaiku palaa siis $4{,}4$ kertaa nopeammin, koska ääni etenee vedessä $4{,}4$ kertaa nopeammin kuin ilmassa.
+
 ## fy5-11-L2-01
 **Annettu:** tulokulma $\alpha = 30^\circ$, kohtien $A$ ja $B$ etäisyys seinällä $d = 0{,}60\,\text{m}$, aallon nopeus $v = 0{,}40\,\text{m/s}$
 **Kysytty:** aika $\Delta t$, jonka rintama tarvitsee $A$:sta $B$:hen
@@ -83,6 +103,50 @@
 **Vastaus:** $380\,\text{Hz}$ eli $3{,}8 \cdot 10^2\,\text{Hz}$, kaksi merkitsevää numeroa kuten leveydessä $0{,}90\,\text{m}$.
 **Järkevyys:** Taajuus on puheäänen alueella. Siksi puheen aallonpituus on oviaukon suuruinen, ja puhe taipuu ovesta käytävään. Tätä matalammilla taajuuksilla aallonpituus on aukkoa pidempi ja taipuminen vielä voimakkaampaa.
 
+## fy5-11-L2-05
+**Annettu:** ensimmäinen mittaus $d_1 = 20{,}0\,\text{m}$, $t_1 = 0{,}157\,\text{s}$; viimeinen mittaus $d_4 = 80{,}0\,\text{m}$, $t_4 = 0{,}507\,\text{s}$; puhelimen äänentoistolla on tuntematon mutta vakio viive $t_0$ soittokäskyn ja äänen lähdön välillä, joten jokainen mitattu aika on liian pitkä saman verran
+**Kysytty:** äänen nopeus $v$
+**Periaate:** Ääni kulkee seinälle ja takaisin, matkan $2d$. Sovelluksen mittaama aika on tämän matkan kulkuaika ja tuntematon vakioviive $t_0$. Kun lasketaan kahden mittauksen aikojen erotus, sama viive poistuu. Jäljelle jää pelkkä lisämatka $2(d_4 - d_1)$, jonka ääni kulkee ajassa $t_4 - t_1$.
+**Kaava:** $t = \dfrac{2d}{v} + t_0$, joten $t_4 - t_1 = \dfrac{2(d_4 - d_1)}{v}$ ja $v = \dfrac{2(d_4 - d_1)}{t_4 - t_1}$
+**Muunnokset:** Ei tarvita: matkat ovat metreinä ja ajat sekunteina.
+**Sijoitus:**
+$$
+\begin{aligned}
+v &= \frac{2 \cdot (80{,}0 - 20{,}0)\,\text{m}}{(0{,}507 - 0{,}157)\,\text{s}} \\
+&= \frac{120\,\text{m}}{0{,}350\,\text{s}} \\
+&= 342{,}86\,\text{m/s}
+\end{aligned}
+$$
+**Vastaus:** $343\,\text{m/s}$, kolme merkitsevää numeroa kuten ajoissa.
+**Järkevyys:** Vakioviive on $t_0 = 0{,}157\,\text{s} - \tfrac{40{,}0\,\text{m}}{342{,}86\,\text{m/s}} \approx 0{,}040\,\text{s}$. Se on uskottava viive puhelimen äänentoistolle. Jos nopeus laskettaisiin yhdestä mittauksesta kaavalla $\tfrac{2d}{t}$, viimeisestä saataisiin $\tfrac{160\,\text{m}}{0{,}507\,\text{s}} \approx 316\,\text{m/s}$. Se on liian pieni, koska aika sisältää vakioviiveen. Välimittaus sopii malliin: $\tfrac{80{,}0\,\text{m}}{342{,}86\,\text{m/s}} + 0{,}040\,\text{s} = 0{,}273\,\text{s}$, kun mitattu aika on $0{,}274\,\text{s}$.
+
+## fy5-11-L2-06
+**Annettu:** taajuus $f = 12\,\text{Hz}$, nopeus $v = 0{,}216\,\text{m/s}$; rakoleveydet taulukossa, lähes suora keila raolla $b = 14{,}4\,\text{cm}$
+**Kysytty:** a) aallonpituus $\lambda$; b) suhde $\tfrac{b}{\lambda}$ siinä mittauksessa, jossa aalto jatkui lähes suorana; c) sääntö, milloin aalto taipuu
+**Periaate:** Aallonpituus saadaan yhtälöstä $v = f\lambda$. Diffraktion eli taipumisen voimakkuus riippuu siitä, kuinka leveä rako on aallonpituuteen verrattuna. Siksi taulukon rakoleveydet kannattaa jakaa aallonpituudella.
+**Kaava:** $\lambda = \dfrac{v}{f}$ ja suhde $\dfrac{b}{\lambda}$
+**Muunnokset:** $\lambda$ saadaan metreinä. Muutetaan se senttimetreiksi ($1\,\text{m} = 100\,\text{cm}$), jotta sitä voi verrata rakoihin.
+**Sijoitus:**
+$$
+\begin{aligned}
+\lambda &= \frac{0{,}216\,\text{m/s}}{12\,\text{Hz}} \\
+&= 0{,}018\,\text{m} = 1{,}8\,\text{cm} \\
+\frac{b}{\lambda} &= \frac{14{,}4\,\text{cm}}{1{,}8\,\text{cm}} = 8{,}0
+\end{aligned}
+$$
+**Vastaus:** a) $\lambda = 1{,}8\,\text{cm}$. b) Rako on $8{,}0$ kertaa aallonpituuden levyinen, kaksi merkitsevää numeroa kuten taajuudessa ja nopeudessa. c) Aalto taipuu voimakkaasti, kun $\tfrac{b}{\lambda}$ on enintään noin $2$. Aalto taipuu vähän, kun suhde on selvästi suurempi.
+**Järkevyys:** Muiden rakojen suhteet ovat $\tfrac{b}{\lambda} = 0{,}5$; $1{,}0$; $2{,}0$ ja $4{,}0$. Aalto leviää joka suuntaan, kun $\tfrac{b}{\lambda} \leq 1$. Se taipuu selvästi, kun suhde on $2{,}0$. Se taipuu vain vähän, kun suhde on $4{,}0$ tai suurempi. c) Suhteet $0{,}5$; $1{,}0$; $2{,}0$; $4{,}0$ ja $8{,}0$ vastaavat havaintoja ”joka suuntaan”, ”joka suuntaan”, ”leviää selvästi”, ”vähän taipumista” ja ”lähes suora keila”. Taulukon havainnot noudattavat siis sääntöä: mitä leveämpi rako on aallonpituuteen verrattuna, sitä vähemmän aalto taipuu.
+
+## fy5-11-L2-07
+**Annettu:** tulevan ja heijastuneen säteen välinen kulma $\varphi = 64^\circ$
+**Kysytty:** opiskelijan virhe ja oikea tulokulma $\alpha$
+**Periaate:** Opiskelija pitää tulevan ja heijastuneen säteen välistä kulmaa tulokulmana. Se on virhe. Tulokulma mitataan tulevan säteen ja normaalin välillä. Heijastuskulma mitataan heijastuneen säteen ja normaalin välillä. Normaali jakaa säteiden välisen kulman kahteen osaan, joten $\varphi = \alpha + \beta$. Heijastuslain mukaan $\beta = \alpha$.
+**Kaava:** $\varphi = \alpha + \beta = 2\alpha$, josta $\alpha = \dfrac{\varphi}{2}$
+**Muunnokset:** Ei tarvita: kulma on asteina.
+**Sijoitus:** $\alpha = \dfrac{64^\circ}{2} = 32^\circ$
+**Vastaus:** $32^\circ$, kaksi merkitsevää numeroa kuten annettu kulma $64^\circ$.
+**Järkevyys:** Tulokulma ja heijastuskulma ovat kumpikin $32^\circ$, joten niiden summa on $64^\circ$ kuten mitattu kulma. Opiskelijan $64^\circ$ antaisi säteiden väliseksi kulmaksi $128^\circ$.
+
 ## fy5-11-L3-01
 **Kysytty:** miksi matala ääni kuuluu nurkan taakse mutta korkea ei, perusteltuna diffraktiolla ja aallonpituuksilla
 **Periaate:** Diffraktio on voimakasta, kun aukon leveys on aallonpituuden suuruinen tai pienempi. Se on heikkoa, kun aukko on monta aallonpituutta leveä. Aallonpituus saadaan yhtälöstä $\lambda = \tfrac{v}{f}$ (luku *Aaltojen synty ja eteneminen*).
@@ -107,3 +171,55 @@
 **Sijoitus:** $t = \dfrac{3 \cdot 6{,}0\,\text{m}}{4{,}0\,\text{m/s}} = \dfrac{18\,\text{m}}{4{,}0\,\text{m/s}} = 4{,}5\,\text{s}$
 **Vastaus:** $4{,}5\,\text{s}$, kaksi merkitsevää numeroa kuten pituudessa ja nopeudessa. Lisäksi poikkeama osoittaa silloin ylöspäin: tolppa käänsi pulssin alaspäin, ja käsi käänsi sen takaisin ylöspäin.
 **Järkevyys:** Yhteen suuntaan pulssi kulkee köyden $1{,}5\,\text{s}$:ssa, joten kolme matkaa vie $4{,}5\,\text{s}$. Kahden kääntymisen jälkeen pulssi on taas samansuuntainen kuin alussa. Niin kahden peräkkäisen merkin vaihdon pitääkin käydä.
+
+## fy5-11-L3-04
+**Annettu:** viiveet taulukossa, mittauspisteiden väli $\Delta x = 20{,}0\,\text{m}$, äänen nopeus $v = 1480\,\text{m/s}$; pulssi kulkee pystysuoraan ja pohja on suora pisteiden välillä
+**Kysytty:** a) syvyys $d$ jokaisessa pisteessä; b) jyrkimmän välin kaltevuuskulma $\theta$ vaakatasoon nähden; c) perustelut
+**Periaate:** Pulssi kulkee pohjaan ja takaisin, joten viiveen aikana se kulkee matkan $2d$. Kahden peräkkäisen pisteen syvyyksien erotus $\Delta d$ ja pisteiden vaakaväli $\Delta x$ muodostavat suorakulmaisen kolmion. Sen kulma $\theta$ on pohjan kaltevuus. Jyrkin väli on se, jossa syvyyden muutos on suurin, koska väli $\Delta x$ on aina sama.
+**Kaava:** $d = \dfrac{v t}{2}$ ja $\tan\theta = \dfrac{\Delta d}{\Delta x}$, joten $\theta = \tan^{-1}\dfrac{\Delta d}{\Delta x}$
+**Muunnokset:** $1\,\text{ms} = 0{,}001\,\text{s}$, esimerkiksi $54\,\text{ms} = 0{,}054\,\text{s}$.
+**Sijoitus:** a) Syvyys on $d = \tfrac{1480\,\text{m/s} \cdot t}{2} = 740\,\text{m/s} \cdot t$. Syvyydet ovat
+$$
+\begin{aligned}
+d_{0} &= 740\,\text{m/s} \cdot 0{,}054\,\text{s} = 40{,}0\,\text{m} \\
+d_{20} &= 740\,\text{m/s} \cdot 0{,}060\,\text{s} = 44{,}4\,\text{m} \\
+d_{40} &= 740\,\text{m/s} \cdot 0{,}071\,\text{s} = 52{,}5\,\text{m} \\
+d_{60} &= 740\,\text{m/s} \cdot 0{,}090\,\text{s} = 66{,}6\,\text{m} \\
+d_{80} &= 740\,\text{m/s} \cdot 0{,}097\,\text{s} = 71{,}8\,\text{m} \\
+d_{100} &= 740\,\text{m/s} \cdot 0{,}085\,\text{s} = 62{,}9\,\text{m}
+\end{aligned}
+$$
+b) Syvyyden muutokset pisteiden välillä ovat $4{,}4\,\text{m}$; $8{,}1\,\text{m}$; $14{,}1\,\text{m}$; $5{,}2\,\text{m}$ ja $-8{,}9\,\text{m}$. Suurin muutos on pisteiden $x = 40\,\text{m}$ ja $x = 60\,\text{m}$ välillä:
+$$
+\begin{aligned}
+\Delta d &= 66{,}6\,\text{m} - 52{,}5\,\text{m} \\
+&= 14{,}06\,\text{m} \\
+\theta &= \tan^{-1}\frac{14{,}06\,\text{m}}{20{,}0\,\text{m}} \\
+&= \tan^{-1} 0{,}703 = 35{,}1^\circ
+\end{aligned}
+$$
+**Vastaus:** pohja on jyrkin välillä $x = 40\,\text{m}$ … $60\,\text{m}$. Sen kaltevuuskulma on $35^\circ$, kaksi merkitsevää numeroa kuten viiveiden erotus $90\,\text{ms} - 71\,\text{ms} = 19\,\text{ms}$. Syvin kohta on $x = 80\,\text{m}$, syvyys noin $72\,\text{m}$.
+**c) Perustelut:** Pulssi kulkee alas pohjaan ja takaisin pintaan. Mitattu viive vastaa siis kaksinkertaista syvyyttä. Siksi $d = \tfrac{vt}{2}$. Viivettä ei saa kertoa nopeudella sellaisenaan. Mittauspisteiden välistä tiedetään vain, että syvyys on päätepisteiden välillä, koska pohjan oletetaan olevan suora. Oletus suorasta pohjasta pettää eniten siellä, missä rinne muuttuu nopeasti. Jyrkässä rinteessä kynnys tai kuoppa voi jäädä pisteiden väliin. Tiheämmät mittaukset antavat tarkemman profiilin. Malli olettaa, että pulssi kulkee pystysuoraan alas ja kaiku palaa suoraan alta. Jyrkässä rinteessä oletus ei päde. Ensimmäinen kaiku palaa pohjan lähimmästä pisteestä eikä suoraan alta. Siksi malli aliarvioi syvyyden siinä kohdassa.
+**Järkevyys:** Muiden välien kulmat ovat $12{,}5^\circ$; $22{,}1^\circ$; $14{,}5^\circ$ ja $23{,}9^\circ$ (pohja nousee). Kaikki ovat alle $35^\circ$. Tarkistus: $\tan 35^\circ = 0{,}70$, ja $0{,}70 \cdot 20{,}0\,\text{m} = 14\,\text{m}$ vastaa syvyyden muutosta.
+
+## fy5-11-L3-05
+**Annettu:** vuoren leveys $b = 600\,\text{m}$, radioaaltojen nopeus $c = 3{,}00 \cdot 10^8\,\text{m/s}$, taajuudet $f_\text{AM} = 900\,\text{kHz}$, $f_\text{FM} = 100\,\text{MHz}$ ja $f_\text{tv} = 600\,\text{MHz}$
+**Kysytty:** a) aallonpituudet; b) suhde $\tfrac{b}{\lambda}$ FM-radiolle; c) perustelut taipumiselle
+**Periaate:** Aallonpituus saadaan yhtälöstä $c = f\lambda$, joka pätee kaikille aalloille. Aallon diffraktio eli taipuminen esteen reunalla on voimakasta, kun este on aallonpituuden kokoinen tai pienempi. Se on heikkoa, kun este on moninkertaisesti aallonpituutta leveämpi. Siksi vuoren leveyttä verrataan aallonpituuteen.
+**Kaava:** $\lambda = \dfrac{c}{f}$ ja suhde $\dfrac{b}{\lambda}$
+**Muunnokset:** $900\,\text{kHz} = 900 \cdot 10^3\,\text{Hz} = 9{,}00 \cdot 10^5\,\text{Hz}$; $100\,\text{MHz} = 1{,}00 \cdot 10^8\,\text{Hz}$; $600\,\text{MHz} = 6{,}00 \cdot 10^8\,\text{Hz}$.
+**Sijoitus:** a) Aallonpituudet ovat
+$$
+\begin{aligned}
+\lambda_\text{AM} &= \frac{3{,}00 \cdot 10^8\,\text{m/s}}{9{,}00 \cdot 10^5\,\text{Hz}} = 333\,\text{m} \\
+\lambda_\text{FM} &= \frac{3{,}00 \cdot 10^8\,\text{m/s}}{1{,}00 \cdot 10^8\,\text{Hz}} = 3{,}00\,\text{m} \\
+\lambda_\text{tv} &= \frac{3{,}00 \cdot 10^8\,\text{m/s}}{6{,}00 \cdot 10^8\,\text{Hz}} = 0{,}500\,\text{m}
+\end{aligned}
+$$
+b) FM-radiolle
+$$
+\frac{b}{\lambda_\text{FM}} = \frac{600\,\text{m}}{3{,}00\,\text{m}} = 200
+$$
+**Vastaus:** vuori on $2{,}0 \cdot 10^2$ kertaa FM-aallonpituuden levyinen, kaksi merkitsevää numeroa kuten vuoren leveydessä.
+**c) Perustelut:** AM-radion aallonpituus $333\,\text{m}$ on samaa kokoluokkaa kuin vuoren leveys, $\tfrac{b}{\lambda} = \tfrac{600\,\text{m}}{333\,\text{m}} = 1{,}8$. Siksi diffraktio on voimakasta ja AM-lähetys taipuu vuoren taakse laaksoon. FM-radion aallonpituus on vain $\tfrac{1}{200}$ vuoren leveydestä. Digi-tv:llä $\tfrac{b}{\lambda} = \tfrac{600\,\text{m}}{0{,}500\,\text{m}} = 1200$. Niiden diffraktio on heikkoa: aallot etenevät lähes suoraan, ja vuoren taakse jää radiovarjo. Näkyvän valon aallonpituus $550\,\text{nm} = 5{,}5 \cdot 10^{-7}\,\text{m}$ on vielä paljon lyhyempi, $\tfrac{b}{\lambda} \approx 1 \cdot 10^9$. Siksi valo etenee käytännössä suoraan eikä taivu vuoren taakse.
+**Järkevyys:** Mitä korkeampi taajuus, sitä lyhyempi aallonpituus ja sitä heikompi diffraktio: $333\,\text{m} > 3{,}00\,\text{m} > 0{,}500\,\text{m} > 5{,}5 \cdot 10^{-7}\,\text{m}$. Tarkistus: $333\,\text{m} \cdot 9{,}00 \cdot 10^5\,\text{Hz} = 3{,}00 \cdot 10^8\,\text{m/s}$.
