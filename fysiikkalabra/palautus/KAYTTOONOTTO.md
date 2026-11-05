@@ -1,5 +1,9 @@
 # Palautuskokeilu FY3–1: käyttöönotto-ohje
 
+> **Eduespoossa Apps Script on estetty (5.11.2026).** Tee lomake tämän ohjeen kohdan 1 mukaan ja tarkista
+> käyttöoikeudet (kohta 5), mutta arvioi paikallisella sivulla: [PAIKALLINEN-ARVIOINTI.md](PAIKALLINEN-ARVIOINTI.md).
+> Kohdat 2–4 (Apps Script) koskevat vain tilannetta, jossa kaupunki sallii Apps Scriptin.
+
 Tällä ohjeella opettaja ottaa käyttöön FY3–1-luvun palautuksen ja arvioinnin:
 Google Forms → Drive-palautuskansio → Google Sheets → Sheetsiin sidottu Apps Script.
 Kaikki tehdään **kaupungin hyväksymällä eduespoo-tilillä**. Älä käytä henkilökohtaista Google-tiliä opiskelijatietoihin.

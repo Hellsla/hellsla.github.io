@@ -6,6 +6,11 @@ arvioi tehtävän kerrallaan, opiskelija kerrallaan, nuolinäppäimillä. Sanall
 
 Tämä kansio ei kuulu julkaistuun sivustoon (`site/`).
 
+**Eduespoossa Apps Script on estetty (5.11.2026).** Arviointi tehdään siksi paikallisella sivulla
+[`arviointi-fy3-1.html`](arviointi-fy3-1.html): ohje [PAIKALLINEN-ARVIOINTI.md](PAIKALLINEN-ARVIOINTI.md). Sivu käyttää
+samaa tarkistus- ja arviointikoodia (Code.gs, Review.html) selaimessa, palautukset Drivesta ladattuna zipinä.
+Apps Script -versio jää valmiiksi siltä varalta, että kaupunki sallii sen.
+
 | Tiedosto | Sisältö |
 |---|---|
 | [KAYTTOONOTTO.md](KAYTTOONOTTO.md) | Forms-, Sheets- ja Apps Script -käyttöönotto, oikeudet, käyttöoikeuksien tarkistus, eduespoon asetukset, säilytysaika, omistajuus |
@@ -15,6 +20,8 @@ Tämä kansio ei kuulu julkaistuun sivustoon (`site/`).
 | `apps-script/Review.html` | arviointinäkymä |
 | `apps-script/Tehtavat.gs` | FY3–1:n tehtävänannot, **generoitu**: `python scripts/palautus_tasks.py` |
 | `apps-script/appsscript.json` | manifesti: aikavyöhyke, V8 ja kolme oikeutta |
+| `arviointi-fy3-1.html` | paikallinen arviointisivu, **generoitu** samalla komennolla (`palautus_tasks.py`) |
+| `paikallinen/local-backend.js` | paikallisen sivun korvikkeet Sheets-, Drive- ja google.script.run-palveluille, zipin luku, localStorage, CSV ja varmuuskopio |
 | `test/gas-mock.js` | testien korvikkeet Sheets-, Drive- ja google.script.run-palveluille |
 
 RuukkiLabran puolella: `templates/palautus.js` (painike *Lataa kaikki ratkaisut* ja tiedoston muodostus; ei pitkää ohjetta eikä

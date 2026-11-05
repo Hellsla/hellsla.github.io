@@ -380,6 +380,62 @@ with sync_playwright() as p:
     expect("an unanswered task says so", "jätti tehtävän tyhjäksi" in tp.inner_text("#gAnswer"), tp.inner_text("#gAnswer"))
     expect("no formulas were written to the sheets", not E("MOCK.formulas"), E("MOCK.formulas"))
     expect("no script errors in the grading view", not terr, terr)
+
+    # ---------------- the local grading page (eduespoo blocks Apps Script; teacher 2026-11-05) ----------------
+    import zipfile, time as _t
+    zpath = tmp / "palautukset.zip"
+    with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED) as z:
+        def put(name, text, when):
+            zi = zipfile.ZipInfo("Palauta vastaukset (File responses)/" + name, date_time=when); zi.compress_type = zipfile.ZIP_DEFLATED
+            z.writestr(zi, text)
+        put("fy3-1.ratkaisut - Aino Opiskelija.json", json.dumps(files["v1"]), (2026, 11, 5, 10, 0, 0))
+        put("fy3-1.ratkaisut (1) - Aino Opiskelija.json", json.dumps(files["v1"]), (2026, 11, 5, 10, 5, 0))
+        put("fy3-1.ratkaisut - Bertta Opiskelija.json", json.dumps(files["v1"]), (2026, 11, 5, 10, 10, 0))
+        put("fy3-1.ratkaisut (2) - Aino Opiskelija.json", json.dumps(files["v2"]), (2026, 11, 5, 11, 0, 0))
+        put("kuva - Cecilia Opiskelija.json", "<html><script>alert(1)</script></html>", (2026, 11, 5, 11, 30, 0))
+    page = ROOT / "palautus/arviointi-fy3-1.html"
+    lctx = b.new_context(accept_downloads=True, viewport={"width": 1400, "height": 900}, bypass_csp=True)   # the test itself evaluates scripts; the page keeps its CSP for the teacher
+    lp = lctx.new_page(); lerr = []; net = []
+    lp.on("pageerror", lambda e: lerr.append(str(e)))
+    lp.on("request", lambda r: net.append(r.url) if not r.url.startswith(("file:", "data:", "blob:")) else None)
+    lp.on("dialog", lambda d: d.accept())
+    lp.goto(page.as_uri())
+    lp.wait_for_selector("#localBar input[type=file]")
+    expect("local page: asks for the zip when empty", "zip" in lp.inner_text("#homeState"), lp.inner_text("#homeState"))
+    lp.set_input_files("#localBar input[type=file]", str(zpath))
+    lp.wait_for_function("document.querySelector('#localBar p[aria-live]').textContent.indexOf('Luettu') === 0")
+    msg = lp.inner_text("#localBar p[aria-live]")
+    expect("local page: reads the Drive zip and imports (name from the Forms file name)", "Luettu 5 tiedostoa" in msg and "hyväksyttyjä 2" in msg and "kaksoiskappaleita 1" in msg and "tarkistettavia 1" in msg and "virheellisiä 1" in msg, msg)
+    expect("local page: problems list with names and an accept button", "Bertta Opiskelija" in lp.inner_text("#problems") and lp.locator("#problems button").count() >= 2, lp.inner_text("#problems")[:300])
+    lp.evaluate("[...document.querySelectorAll('#problems tbody tr')].find((r) => r.cells[1].textContent === 'Bertta Opiskelija').querySelector('button').click()")
+    lp.wait_for_function("document.querySelector('#problems') && document.querySelector('#problems').innerText.indexOf('Hyväksy · peru') >= 0")
+    first = lp.locator("#tasks tbody tr").first.inner_text().split("\t")
+    expect("local page: accepted student joins the queue (Aino v2 + Bertta)", first[2] == "2", first)
+    lp.locator("#tasks tbody tr").first.click(); lp.wait_for_function("document.querySelector('#gAnswer .t')")
+    expect("local page: students in the order of their first accepted submission; picture and formula shown", lp.inner_text("#gEmail") == "Bertta Opiskelija" and "versio 1/1" in lp.inner_text("#gTime")
+           and lp.locator("#gAnswer img.shot").count() == 1 and lp.locator("#gAnswer img.math").count() == 1, (lp.inner_text("#gEmail"), lp.inner_text("#gTime")))
+    lp.evaluate("document.activeElement.blur()"); lp.keyboard.press("3"); lp.keyboard.press("ArrowDown")
+    lp.wait_for_function("document.getElementById('gPos').textContent === 'Opiskelija 2/2'")
+    lp.wait_for_function("!document.getElementById('points').disabled"); lp.keyboard.press("0"); lp.keyboard.press("ArrowUp")
+    lp.wait_for_function("document.getElementById('gPos').textContent === 'Opiskelija 1/2'")
+    lp.click("#back"); lp.wait_for_selector("#tasks tbody tr")
+    with lp.expect_download() as d: lp.click("text=Vie pisteet (CSV)")
+    csv = pathlib.Path(d.value.path()).read_text(encoding="utf-8-sig").splitlines()
+    expect("local page: points to CSV (name, task columns, total; 0 kept apart from empty)", csv[0].startswith("Opiskelija;Palautettu;Palautustunniste;Tehtävä 1-1;") and csv[1].startswith("Bertta Opiskelija;") and csv[1].split(";")[3] == "3"
+           and csv[2].startswith("Aino Opiskelija;") and csv[2].split(";")[3] == "0" and csv[2].split(";")[4] == "", csv[:3])
+    # reopen: points kept in this browser, files read again without duplicates
+    lp.reload(); lp.wait_for_selector("#tasks tbody tr")
+    first = lp.locator("#tasks tbody tr").first.inner_text().split("\t")
+    expect("local page: after reopening the points and imports are kept", first[2] == "2" and first[4] == "2", first)
+    lp.locator("#tasks tbody tr").first.click(); lp.wait_for_function("document.querySelector('#gAnswer .err, #gAnswer .t')")
+    expect("local page: without the zip it asks to choose it again", "zip" in lp.inner_text("#gAnswer"), lp.inner_text("#gAnswer"))
+    lp.click("#back"); lp.wait_for_selector("#tasks tbody tr")
+    lp.set_input_files("#localBar input[type=file]", str(zpath))
+    lp.wait_for_function("document.querySelector('#localBar p[aria-live]').textContent.indexOf('Luettu') === 0")
+    expect("local page: reading the same zip again adds nothing", "Uusia palautuksia 0" in lp.inner_text("#localBar p[aria-live]"), lp.inner_text("#localBar p[aria-live]"))
+    expect("local page: nothing loaded from the network", not net, net)
+    expect("local page: no script errors", not lerr, lerr)
+    lctx.close()
     b.close()
 srv.shutdown()
 print("all ok" if not fails else f"{fails} failure(s)")

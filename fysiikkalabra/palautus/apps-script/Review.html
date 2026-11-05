@@ -49,14 +49,15 @@
 <main>
   <section id="home">
     <div class="bar"><h1 id="title" class="grow">RuukkiLabra · arviointi</h1><button type="button" id="refresh">Päivitä</button></div>
+    <div id="localBar" hidden></div>
     <p class="muted" id="rule"></p>
     <p class="bar"><label><input type="checkbox" id="onlyOpen"> Vain arvioimattomat</label><span class="muted" id="students"></span></p>
     <p id="homeState" class="muted" aria-live="polite">Ladataan…</p>
     <table id="tasks" hidden><thead><tr><th>Tehtävä</th><th>Taso</th><th>Palautuksia</th><th>Joista tyhjiä</th><th>Arvioitu</th></tr></thead><tbody></tbody></table>
     <h2>Palautusten käsittelytila</h2>
-    <p class="muted">Hyväksytyt palautukset ovat arviointijonossa. Muut rivit eivät ole. Tarkistettavan voi hyväksyä tai hyväksytyn hylätä välilehden "RL Palautukset" sarakkeessa Opettajan päätös (Hyväksy / Hylkää), minkä jälkeen paina Päivitä.</p>
+    <p class="muted">Hyväksytyt palautukset ovat arviointijonossa. Muut rivit eivät ole. Tarkistettavan voi hyväksyä tai hyväksytyn hylätä rivin painikkeilla.</p>
     <p id="noProblems" class="muted" hidden>Ei virheellisiä, kaksoiskappaleita eikä tarkistettavia palautuksia.</p>
-    <table id="problems" hidden><thead><tr><th>Tila</th><th>Sähköposti</th><th>Palautusaika</th><th>Tunniste</th><th>Syy</th><th>Päätös</th></tr></thead><tbody></tbody></table>
+    <table id="problems" hidden><thead><tr><th>Tila</th><th>Opiskelija</th><th>Palautusaika</th><th>Tunniste</th><th>Syy</th><th>Päätös</th></tr></thead><tbody></tbody></table>
   </section>
 
   <section id="grade" hidden>
@@ -115,11 +116,18 @@
         tb.append(tr);
       });
       $('tasks').hidden = false;
-      $('homeState').textContent = ov.students ? '' : 'Ei vielä hyväksyttyjä palautuksia. Valitse taulukon valikosta RuukkiLabra → Tuo palautukset ja paina sitten Päivitä.';
+      $('homeState').textContent = ov.students ? '' : (window.RL_LOCAL ? 'Ei vielä hyväksyttyjä palautuksia. Valitse ylhäältä Drivesta ladattu palautuskansion zip-tiedosto.' : 'Ei vielä hyväksyttyjä palautuksia. Valitse taulukon valikosta RuukkiLabra → Tuo palautukset ja paina sitten Päivitä.');
       var pb = $('problems').querySelector('tbody'); pb.textContent = '';
       ov.problems.forEach(function (p) {
         var tr = el('tr');
-        tr.append(el('td', null, p.status), el('td', null, p.email), el('td', null, p.time), el('td', null, p.sub), el('td', null, p.reason), el('td', null, p.decision));
+        var dc = el('td');
+        tr.append(el('td', null, p.status), el('td', null, p.email), el('td', null, p.time), el('td', null, p.sub), el('td', null, p.reason), dc);
+        if (p.status === 'Tarkistettava' || p.status === 'Hyväksytty') {   // opettajan päätös: Hyväksy / Hylkää / peru
+          var want = p.decision ? '' : (p.status === 'Tarkistettava' ? 'Hyväksy' : 'Hylkää');
+          var b = el('button', null, p.decision ? p.decision + ' · peru' : want); b.type = 'button';
+          b.addEventListener('click', function () { b.disabled = true; call('rlSetDecision', { key: p.key, decision: want }).then(loadHome, function (e) { b.disabled = false; $('homeState').textContent = 'Päätöstä ei tallennettu: ' + errText(e); }); });
+          dc.append(b);
+        } else dc.textContent = p.decision;
         pb.append(tr);
       });
       $('problems').hidden = !ov.problems.length; $('noProblems').hidden = !!ov.problems.length;
@@ -279,6 +287,7 @@
     var p = parsePoints($('points').value);
     if (S.saving || !p.ok || p.value !== (c.version.score === null ? '' : c.version.score)) { e.preventDefault(); e.returnValue = ''; }
   });
+  window.rlReload = loadHome;   // paikallinen arviointisivu päivittää näkymän tiedostojen lukemisen jälkeen
   loadHome();
 })();
 </script>

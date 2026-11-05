@@ -25,6 +25,9 @@ var RL_CONFIG = {
     email: ['Sähköpostiosoite', 'Sähköposti', 'Email address', 'Email Address', 'E-postadress'],
     file: ['Palauta vastaukset']
   },
+  // Palauttajan tunniste: 'email' = Formsin vahvistettu sähköposti (Sheets-versio). Paikallinen arviointisivu
+  // (palautus/arviointi-fy3-1.html) käyttää 'name': Formsin tiedoston nimeen lisäämä palauttajan nimi.
+  IDENTITY: 'email',
   // Sallittu sähköpostin verkkotunnus, esim. 'edu.example.fi'. Tyhjä = ei tarkisteta (lomake rajaa vastaajat).
   EMAIL_DOMAIN: '',
   // Pisteet: kokonaisluku 0 … MAX_POINTS. Tyhjä = arvioimaton, 0 = annettu nolla pistettä.
@@ -274,7 +277,8 @@ function rlResponses_() {
     if (time && isNaN(time.getTime())) time = null;
     var ids = String(v[col.file] || '').match(/(?:[?&]id=|\/d\/)([-\w]{20,})/g) || [];
     ids = ids.map(function (s) { return s.replace(/^(?:[?&]id=|\/d\/)/, ''); });
-    var email = String(v[col.email] || '').trim().toLowerCase();
+    var email = String(v[col.email] || '').trim();
+    if (email.indexOf('@') >= 0) email = email.toLowerCase();   // paikallisessa arvioinnissa tunniste on Formsin nimi (RL_CONFIG.IDENTITY)
     rows.push({ row: r + 1, time: time, email: email, ids: ids,
       key: ids.length ? ids.join(',') : 'rivi:' + (time ? time.getTime() : 'x') + ':' + email + ':' + (r + 1) });
   }
@@ -296,8 +300,9 @@ function rlInFolder_(file) {
 function rlProcess_(resp) {
   var out = { status: RL_STATUS.BAD, reason: '', sub: '', answered: [], empty: [], size: '', sha: '' };
   if (!resp.time) { out.reason = 'palautusaika puuttuu'; return out; }
-  if (!resp.email || resp.email.indexOf('@') < 1) { out.reason = 'vahvistettu sähköpostiosoite puuttuu (ota sähköpostien kerääminen käyttöön lomakkeessa)'; return out; }
-  if (RL_CONFIG.EMAIL_DOMAIN && resp.email.slice(-RL_CONFIG.EMAIL_DOMAIN.length - 1) !== '@' + RL_CONFIG.EMAIL_DOMAIN.toLowerCase()) { out.reason = 'sähköposti ei ole koulun verkkotunnuksesta'; return out; }
+  if (RL_CONFIG.IDENTITY === 'name') { if (!resp.email) { out.reason = 'palauttajan nimi puuttuu tiedoston nimestä'; return out; } }
+  else if (!resp.email || resp.email.indexOf('@') < 1) { out.reason = 'vahvistettu sähköpostiosoite puuttuu (ota sähköpostien kerääminen käyttöön lomakkeessa)'; return out; }
+  if (RL_CONFIG.IDENTITY !== 'name' && RL_CONFIG.EMAIL_DOMAIN && resp.email.slice(-RL_CONFIG.EMAIL_DOMAIN.length - 1) !== '@' + RL_CONFIG.EMAIL_DOMAIN.toLowerCase()) { out.reason = 'sähköposti ei ole koulun verkkotunnuksesta'; return out; }
   if (resp.ids.length === 0) { out.reason = 'palautuksessa ei ole tiedostoa'; return out; }
   if (resp.ids.length > 1) { out.reason = 'palautuksessa on useita tiedostoja (sallittu yksi)'; return out; }
   var file;
@@ -389,11 +394,10 @@ function rlModel_() {
   var students = {}, problems = [];
   subs.forEach(function (r) {
     var email = rlText_(r[RL_C.email]), time = r[RL_C.time] instanceof Date ? r[RL_C.time] : null;
-    if (!rlAccepted_(r) || !time) {
-      if (r[RL_C.status] !== RL_STATUS.OK || rlText_(r[RL_C.decision]) === RL_DECISION.REJECT) problems.push({ status: r[RL_C.status], reason: rlText_(r[RL_C.reason]), email: email,
-        time: time ? rlFmt_(time) : '', decision: rlText_(r[RL_C.decision]), sub: rlText_(r[RL_C.sub]).slice(0, 8) });
-      return;
-    }
+    // käsittelytilan lista: kaikki muut kuin tavalliset hyväksytyt, myös ne, joista opettaja on tehnyt päätöksen (voi perua)
+    if (r[RL_C.status] !== RL_STATUS.OK || rlText_(r[RL_C.decision]) !== '') problems.push({ status: r[RL_C.status], reason: rlText_(r[RL_C.reason]), email: email,
+      time: time ? rlFmt_(time) : '', decision: rlText_(r[RL_C.decision]), sub: rlText_(r[RL_C.sub]).slice(0, 8), key: rlText_(r[RL_C.key]) });
+    if (!rlAccepted_(r) || !time) return;
     var s = students[email] || (students[email] = { email: email, versions: [] });
     s.versions.push({ fileId: rlText_(r[RL_C.file]).replace(/^.*[?&]id=/, ''), sub: rlText_(r[RL_C.sub]), timeMs: time.getTime(), time: rlFmt_(time),
       answered: rlText_(r[RL_C.answered]).split(',').filter(String), sha: rlText_(r[RL_C.sha]) });
@@ -469,4 +473,34 @@ function rlSaveScore(req) {
     SpreadsheetApp.flush();
     return { value: value, saved: rlFmt_(now) };
   } finally { lock.releaseLock(); }
+}
+
+// Opettajan päätös tarkistettavasta tai hyväksytystä palautuksesta arviointinäkymästä (sama kuin sarake Opettajan päätös).
+function rlSetDecision(req) {
+  var d = req && req.decision;
+  if (!req || typeof req.key !== 'string' || (d !== '' && d !== RL_DECISION.ACCEPT && d !== RL_DECISION.REJECT)) throw rlError_('Virheellinen päätös.');
+  var lock = rlLock_(10000);
+  try {
+    var sh = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(RL_CONFIG.SUBMISSIONS_SHEET);
+    var rows = sh ? rlRows_(sh, 1) : [];
+    for (var i = 0; i < rows.length; i++) if (rlText_(rows[i][0]) === req.key) {
+      sh.getRange(i + 2, RL_C.decision + 1, 1, 1).setValues([[d]]);
+      SpreadsheetApp.flush();
+      return { decision: d };
+    }
+    throw rlError_('Palautusta ei löydy.');
+  } finally { lock.releaseLock(); }
+}
+// Pisteet taulukkona (CSV, puolipiste, UTF-8 BOM): opiskelija, uusimman hyväksytyn version tunniste, tehtävät, yhteensä.
+// Kentät, jotka alkavat merkillä = + - @, saavat eteensä heittomerkin, jottei taulukko-ohjelma lue niitä kaavoiksi.
+function rlScoresCsv() {
+  var m = rlModel_(), tasks = RL_CHAPTER.tasks;
+  var q = function (v) { v = v === null || v === undefined ? '' : String(v); if (/^[=+\-@\t\r]/.test(v)) v = "'" + v; return /[;"\n\r]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; };
+  var lines = [['Opiskelija', 'Palautettu', 'Palautustunniste'].concat(tasks.map(function (t) { return 'Tehtävä ' + t.number; }), ['Yhteensä', 'Arvioitu']).map(q).join(';')];
+  m.students.forEach(function (s) {
+    var v = s.versions[s.versions.length - 1], sum = 0, n = 0;
+    var cells = tasks.map(function (t) { var p = rlScoreOf_(m, s.email, v.sub, t.id); if (p !== '') { sum += p; n++; } return p; });
+    lines.push([s.email, v.time, v.sub.slice(0, 8)].concat(cells, [sum, n + '/' + tasks.length]).map(q).join(';'));
+  });
+  return '\ufeff' + lines.join('\r\n') + '\r\n';
 }
