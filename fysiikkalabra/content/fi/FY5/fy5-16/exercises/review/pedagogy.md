@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 31a86204a28d249f
+CONTENT-HASH: d62b2b53d0757222
+
 ## Blocking
-(none)
+
 ## Polish
-- exercises.json L3-03: the model answer still mostly restates the lesson's Vastamelu paragraph (recall rather than new reasoning). Add a numeric step, e.g. a 0,1 ms delay gives a 3,6 degree phase error at 100 Hz and 72 degrees at 2000 Hz.
-- exercises.json L3-02: two steps, as demanding as L2-01 and L2-03; raise the Level 3 demand.
-- Coverage: no task on loudspeaker or microphone (e.g. 1 % efficiency at 50 W); only the tarkista check covers it.
+- fy5-16-L2-07 — the student's wrong value 1,0 h equals the lesson's 94 dB result (8 h : 8 = 1 h) and L3-04's 1,0 h table entry; harmless coincidence. Optional.
+- fy5-16-L2-06 Järkevyys — "Siksi tulos on positiivinen" is a weak sentence; harmless.
+- fy5-16-L3-04 b) and L3-05 b) both ask for a dose with protectors, as does the worked example; acceptable at level 3.
+
 ## Checked
-- Delta: L2-04 now states that the time for a 60 dB drop can be inferred from a shorter measured drop; this prepares the extrapolation and the answer 0,90 s is unchanged.
-- Solutions: the "alle 8 min" claim for L1-04 is corrected to "noin 4 min" (8 h : 2^7 = 3,75 min); the earplug-fit remark is a good addition.
-- L3-02 solution now splits the ratio into Muunnokset and the numbers into Sijoitus; the steps stay complete and readable.
-- L3-03 "enintään 1 ms" is correct for 1000 Hz and above; punctuation edits in Vastaus lines are fine.
-- Levels 5/4/3, none repeats the worked example; numbers unchanged and correct.
+- Round 5 change (solutions.md L2-07 only): Vastaus a) "aika jaetaan kahdella kahdeksan kertaa eli kaikkiaan luvulla 256" is correct (2^8 = 256) and clearer than the earlier exponent form; Finnish correct.
+- Järkevyys halving check: 8 h -> 1 h is three halvings, 60 min -> 1,875 min is five (60/32 = 1,875), together eight = n; arithmetic and the 32-fold comparison agree.
+- Answer 1.9 min, text, tolerance and the aligned block (480 min / 256 = 1,875 ≈ 1,9) unchanged and consistent; the shorter check is still followable step by step.
+- Rest of the set unchanged since the passed version.

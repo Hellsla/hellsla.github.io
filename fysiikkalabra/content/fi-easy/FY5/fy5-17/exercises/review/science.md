@@ -1,12 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 59a15962d4ce08b1
+CONTENT-HASH: 3309c347fe902beb
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+(none needed: the selkosuomi text already matched fi in every number and was natural)
 
 ## Polish
+(none)
 
 ## Checked
-- exercises.json: 12 texts; answer, unit, tolerance and figure fields identical to the Finnish; numbers and formulas identical.
-- solutions.md: all 12 solutions complete; every substitution and result identical to the Finnish; L3-02 correctly says "näitä pienempi".
-- Fixed: L2-03 Principle sentence ("Yhteen sekuntiin mahtuu enintään yksi sekunti jaettuna tällä ajalla pulsseja", word-order calque) → "Pulsseja voi lähettää sekunnissa enintään yksi sekunti jaettuna tällä ajalla."
-- Added explanations in task texts without changing data: L1-05 "mannerjalustalle eli matalalle merialueelle rannikon edustalla"; L2-03 "(kilohertsi tarkoittaa tuhatta pulssia sekunnissa)".
+- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) compared with content/fi: ids, levels, kinds, answers (3.87 cm, 1480 m/s, 42 km, 57 min), units, tolerances, correct flags, choices and feedback, data table cells and every number are identical (decimal comma in text and LaTeX as in fi, decimal point in table cells as in fi).
+- Re-derived: L2-05 d = 1.65, 4.54, 8.41 cm and 3.87 cm; L2-06 mean 1478.6 m/s; L2-07 134 km; L3-04 distances 84.0, 63.0, 49.6 km, y = 41.8 km; L3-05 57.1 min. All agree with fi.
+- solutions.md prose of the new tasks matches fi step by step; no Finnish left in en (grep); check_i18n.py fi-easy: 0 errors.
