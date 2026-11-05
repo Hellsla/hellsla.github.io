@@ -3,7 +3,6 @@
     {
       "id": "fy3-3-L1-01",
       "level": 1,
-      "core": true,
       "text": "The temperature of a room is $21\\,{}^\\circ\\text{C}$. What is the temperature in kelvins?",
       "answer": 294,
       "unit": "K",
@@ -83,6 +82,7 @@
     {
       "id": "fy3-3-L1-08",
       "level": 1,
+      "core": true,
       "text": "A gas is in a closed, rigid container. The container is heated. Which of the following quantities of the gas stays the same?",
       "kind": [
         "concept"

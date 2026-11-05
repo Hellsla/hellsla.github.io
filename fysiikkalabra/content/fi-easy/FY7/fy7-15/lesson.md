@@ -267,9 +267,9 @@ Ihanteellinen polarisaattori päästää läpi puolet polarisoimattoman valon in
 </svg>
 
 ### Kaksi polarisaattoria
-Toista polarisaattoria, jonka eteen tulee jo polarisoitunutta valoa, sanotaan **analysaattoriksi**. Jos analysaattorin läpäisysuunta on sama kuin valon polarisaatiosuunta, kaikki valo pääsee läpi. Kun analysaattoria kierretään, läpi tulevan valon intensiteetti pienenee.
+Toista polarisaattoria, johon tulee jo polarisoitunutta valoa, sanotaan **analysaattoriksi**. Jos analysaattorin läpäisysuunta on sama kuin valon polarisaatiosuunta, kaikki valo pääsee läpi. Kun analysaattoria kierretään, läpi tulevan valon intensiteetti pienenee.
 
-Kun läpäisysuunnat ovat kohtisuorassa toisiaan vastaan, polarisaattorit ovat ristissä. Silloin ihanteellisten kalvojen läpi ei pääse valoa lainkaan. Kahdella polarisaattorikalvolla voi siis tutkia, onko valo polarisoitunutta ja mihin suuntaan. Jos valo on polarisoitunutta, sen kirkkaus vaihtelee, kun kalvoa kierretään. Polarisoimattoman valon kirkkaus ei muutu, vaikka kalvoa kierretään.
+Kun läpäisysuunnat ovat kohtisuorassa toisiaan vastaan, polarisaattorit ovat ristissä. Silloin ihanteellisten kalvojen läpi ei pääse valoa lainkaan. Kahdella polarisaattorikalvolla voi siis tutkia, onko valo polarisoitunutta ja mihin suuntaan. Jos valo on polarisoitunutta, sen kirkkaus vaihtelee, kun kalvoa kierretään. Polarisoimattoman valon kirkkaus ei muutu, vaikka kalvoa kierretään. Jos ristissä olevien polarisaattorien väliin asetetaan vinoon kolmas kalvo, valoa pääsee taas läpi. Keskimmäisen kalvon jälkeen valolla on nimittäin komponentti eli osa myös viimeisen kalvon läpäisysuunnassa.
 
 <svg data-fig="sheets" viewBox="0 0 600 320" role="img" aria-label="Periaatekuva: kaksi paria pyöreitä polarisaattorikalvoja valopöydän päällä. Kalvojen viivoitus näyttää läpäisysuunnan. Vasemmalla kalvojen läpäisysuunnat ovat samat, ja kulma on 0 astetta. Päällekkäinen osa on vain vähän tummempi kuin yksi kalvo. Oikealla toisen kalvon läpäisysuunta on pystysuora ja toisen vaakasuora, ja kulma on 90 astetta. Päällekkäinen osa on lähes musta." style="max-width:100%;font-size:24px">
   <defs><clipPath id="fy715s-a"><circle cx="112" cy="132" r="72.5"/></clipPath><clipPath id="fy715s-b"><circle cx="190" cy="132" r="72.5"/></clipPath><clipPath id="fy715s-c"><circle cx="410" cy="132" r="72.5"/></clipPath><clipPath id="fy715s-d"><circle cx="488" cy="132" r="72.5"/></clipPath></defs>
@@ -627,7 +627,7 @@ I_2 &= \tfrac{1}{2} I_0 \cos^2\theta \\
 ## Yleinen virhekäsitys
 Moni ajattelee, että polarisaattori toimii kuin tumma lasi, joka himmentää kaikkea valoa saman verran. Polarisaattori kuitenkin valitsee värähtelysuunnan. Polarisoitunut valo voi päästä läpi lähes kokonaan tai ei lainkaan sen mukaan, mihin asentoon kalvo on käännetty.
 
-Toinen virhe on unohtaa, että polarisoimattoman valon intensiteetti puolittuu ensimmäisessä polarisaattorissa. Kalvon asento ei vaikuta tähän. Kalvon asennolla on merkitystä vasta polarisoituneelle valolle. Kulma mitataan polarisoituneen valon polarisaatiosuunnasta. Siksi Malusin lakia ei käytetä ensimmäiseen polarisaattoriin.
+Toinen virhe on unohtaa, että polarisoimattoman valon intensiteetti puolittuu ensimmäisessä polarisaattorissa. Kalvon asento ei vaikuta tähän. Kalvon asennolla on merkitystä vasta polarisoituneelle valolle. Kulma mitataan polarisoituneen valon polarisaatiosuunnasta. Siksi kulmalla ei ole väliä ensimmäisessä polarisaattorissa.
 
 Kolmas virhe on ajatella, että lisäkalvo voi vain vähentää läpi tulevaa valoa. Oletetaan, että kaksi polarisaattoria on ristissä. Kun niiden väliin laitetaan kolmas polarisaattori $45^\circ$:n kulmaan, läpi pääsee taas valoa. Keskimmäisen kalvon läpi tullut valo on polarisoitunut $45^\circ$:n kulmaan. Sillä on siksi komponentti myös viimeisen kalvon läpäisysuunnassa.
 

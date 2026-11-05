@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "contribution": "Valo on poikittaista aaltoa, joten se voidaan polarisoida. Ydinpolulla opiskelija havaitsee simulaatiolla, että polarisaattori puolittaa polarisoimattoman valon asennostaan riippumatta. Hän havaitsee myös, että toisen kalvon läpi tuleva valo riippuu kalvojen välisestä kulmasta ja sammuu, kun kalvot ovat ristissä. Esimerkkimittauksesta hän päättelee, että puhelimen näytön valo on polarisoitunutta. Hän selittää heijastuneen valon polarisaation avulla polaroidut aurinkolasit sekä näytöt ja 3D-lasit. Laskut ovat syventävä osa: Malusin laki $I = I_0 \\cos^2\\theta$, Brewsterin laki $\\tan\\alpha_\\text{B} = n_2 : n_1$, esimerkki, mittausaineiston sovitus ja niiden laskutehtävät. Kolmen polarisaattorin koe on valinnainen.",
+  "contribution": "Valo on poikittaista aaltoa, joten se voidaan polarisoida. Ydinpolulla opiskelija havaitsee simulaatiolla, että polarisaattori puolittaa polarisoimattoman valon asennostaan riippumatta. Hän havaitsee myös, että toisen kalvon läpi tuleva valo riippuu kalvojen välisestä kulmasta ja sammuu, kun kalvot ovat ristissä. Esimerkkimittauksesta hän päättelee, että puhelimen näytön valo on polarisoitunutta. Hän selittää heijastuneen valon polarisaation avulla polaroidut aurinkolasit sekä näytöt ja 3D-lasit. Laskut ovat syventävä osa: Malusin laki $I = I_0 \\cos^2\\theta$, Brewsterin laki $\\tan\\alpha_\\text{B} = n_2 : n_1$, esimerkki, mittausaineiston sovitus ja niiden laskutehtävät. Kolmen polarisaattorin koe on ydinpolulla. Siinä kolmas vino kalvo ristissä olevien välissä päästää taas valoa.",
   "learn": [
     "selittämään, mitä polarisaatio on ja miksi se osoittaa, että valo on poikittaista aaltoa.",
     "tutkimaan ja selittämään, miten yksi, kaksi tai kolme polarisaattoria muuttavat niiden läpi tulevaa valoa.",
@@ -122,14 +122,13 @@
         {
           "text": "Vähän valoa: noin kahdeksasosa lampun valosta tulee läpi.",
           "correct": true,
-          "feedback": "Mallin arvot tukevat tätä: $50{,}0\\,\\% \\cdot \\cos^2 45^\\circ \\cdot \\cos^2 45^\\circ = 12{,}5\\,\\%$. Kun keskimmäinen kalvo on samansuuntainen jommankumman ulomman kalvon kanssa, varjostin on taas pimeä."
+          "feedback": "Mallin arvot tukevat tätä. Kun keskimmäinen kalvo on kulmassa $45^\\circ$, läpi tulee $12{,}5\\,\\%$ lampun valosta eli kahdeksasosa. Keskimmäisen kalvon jälkeen valo on polarisoitunut kulmaan $45^\\circ$. Sillä on siksi komponentti viimeisen kalvon läpäisysuunnassa. Kun keskimmäinen kalvo on samansuuntainen jommankumman ulomman kalvon kanssa, varjostin on taas pimeä."
         },
         {
           "text": "Yhtä paljon valoa kuin ensimmäisen kalvon jälkeen, koska $45^\\circ$ on kalvojen puolivälissä.",
           "feedback": "Mallin arvot kumoavat tämän. Läpi tulee $12{,}5\\,\\%$ lampun valosta, vaikka ensimmäisen kalvon jälkeen sitä on $50{,}0\\,\\%$. Molemmat kalvot ovat kulmassa $45^\\circ$ siihen tulevan valon polarisaatioon nähden. Kumpikin päästää siksi läpi vain puolet saamastaan valosta."
         }
-      ],
-      "optional": true
+      ]
     },
     {
       "id": "simulaatio",
@@ -233,8 +232,7 @@
           "label": "I_3 (%)"
         }
       ],
-      "min": 3,
-      "optional": true
+      "min": 3
     },
     {
       "id": "mittaus",
@@ -253,12 +251,12 @@
             "feedback": "Oikein. Kun kalvoa kierretään, polarisoimattoman valon kirkkaus ei muutu. Tässä lukema kuitenkin putoaa $374\\,\\text{lx}$:sta $15\\,\\text{lx}$:iin. Kun kalvo on ristissä näytön polarisaation kanssa, näytön valoa ei juuri pääse läpi. Huoneen valo on enimmäkseen polarisoimatonta. Siitä pääsee läpi likimain sama osa joka asennossa, ja se jää lukemaan."
           },
           {
-            "text": "Näytön valo on polarisoimatonta. Kalvo vain himmentää sitä sitä enemmän, mitä pidemmälle kalvoa kierretään.",
+            "text": "Näytön valo on polarisoimatonta. Kalvo vain himmentää valoa sitä enemmän, mitä pidemmälle sitä kierretään.",
             "feedback": "Kun kalvoa kierretään, polarisoimattoman valon kirkkaus ei muutu. Kalvo päästää siitä läpi puolet joka asennossa. Tässä lukema putoaa $374\\,\\text{lx}$:sta $15\\,\\text{lx}$:iin, joten näytön valo on polarisoitunutta."
           },
           {
             "text": "Näytön valo on polarisoitunutta. Lukema $15\\,\\text{lx}$ kulmalla $90^\\circ$ on näytön valoa, joka pääsee ristissä olevan kalvon läpi.",
-            "feedback": "Näytön valo on polarisoitunutta. Kalvo on kuitenkin ristissä näytön polarisaation kanssa, joten näytön valoa ei juuri pääse läpi. Lukema $15\\,\\text{lx}$ on lähes kokonaan huoneen valoa. Se ei ole näytön polarisoitunutta valoa, ja se nostaa jokaista lukemaa saman verran."
+            "feedback": "Näytön valo on polarisoitunutta. Kalvo on kuitenkin ristissä näytön polarisaation kanssa. Ristissä oleva kalvo päästää näytön valoa läpi vain hyvin vähän. Lukema $15\\,\\text{lx}$ on lähes kokonaan huoneen valoa. Se ei ole näytön polarisoitunutta valoa, ja se nostaa jokaista lukemaa saman verran."
           }
         ]
       }
@@ -371,7 +369,8 @@
       "prompt": "Vertaa ennusteitasi teoriaan ja kokeen mallin arvoihin. Palaa sitten alun kysymykseen. Miksi polaroidut lasit sammuttavat järven kimalluksen, mutta tavalliset tummat lasit eivät? Miksi kimallus palaa, kun kalastaja kallistaa päätään?",
       "predictions": [
         "ennuste-yksi",
-        "ennuste-kierto"
+        "ennuste-kierto",
+        "ennuste-kolme"
       ],
       "optional": true
     },
@@ -381,7 +380,7 @@
       "type": "explain",
       "core": true,
       "title": "Sovella uuteen tilanteeseen: 3D-elokuvan lasit",
-      "prompt": "Eräässä 3D-elokuvateatterissa valkokankaalle heijastetaan samaan aikaan kaksi kuvaa. Vasemman silmän kuvan valo on polarisoitunut pystysuunnassa. Oikean silmän kuvan valo on polarisoitunut vaakasuunnassa. Katsojan lasien kummassakin linssissä on polarisaattorikalvo. Vastaa näihin kysymyksiin järjestyksessä. Mihin suuntaan kummankin linssin läpäisysuunnan pitää olla? Miksi kumpikin silmä näkee silloin vain oman kuvansa? Mitä katsoja näkee, jos hän kallistaa eli kääntää päätään sivulle $90^\\circ$? Mitä hän näkee, jos hän kallistaa päätään vain $45^\\circ$?",
+      "prompt": "Eräässä 3D-elokuvateatterissa valkokankaalle heijastetaan samaan aikaan kaksi kuvaa. Vasemman silmän kuvan valo on polarisoitunut pystysuunnassa. Oikean silmän kuvan valo on polarisoitunut vaakasuunnassa. Katsojan lasien kummassakin linssissä on polarisaattorikalvo. Vastaa näihin kysymyksiin järjestyksessä. Mihin suuntaan kummankin linssin läpäisysuunta pitää asettaa? Miksi kumpikin silmä näkee silloin vain oman kuvansa? Mitä katsoja näkee, jos hän kallistaa eli kääntää päätään sivulle $90^\\circ$? Mitä hän näkee, jos hän kallistaa päätään vain $45^\\circ$?",
       "hints": [
         "Mitä polarisaattori tekee valolle, joka on polarisoitunut sen läpäisysuuntaan? Entä valolle, joka on polarisoitunut kohtisuoraan sitä vastaan?",
         "Kun pää kallistuu, myös linssien läpäisysuunnat kallistuvat. Missä kulmassa ne ovat silloin kuvien polarisaatiosuuntiin?"
@@ -458,7 +457,7 @@
       "id": "harjoitukset",
       "stage": "sovella",
       "type": "exercises",
-      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä kaavaa. Tason 2 tehtävissä yhdistetään kaksi vaihetta tai ratkaistaan kaava toiselle suureelle. Taso 3 vaatii päättelyä uudessa tilanteessa."
+      "text": "Aloita tehtävistä, jotka on merkitty Ydintehtäväksi. Ne kuuluvat ydinpolkuun. Useimmat muut tehtävät ovat syventäviä. Niissä lasketaan Malusin ja Brewsterin lailla. Tason 1 tehtävissä käytetään yhtä kaavaa. Tason 2 tehtävissä yhdistetään kaksi vaihetta tai ratkaistaan kaava toiselle suureelle. Taso 3 vaatii päättelyä uudessa tilanteessa."
     },
     {
       "id": "check-1",

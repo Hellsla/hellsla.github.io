@@ -1,20 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: d1fdac06786f6ddd
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 885c14806ece5ea9
+Mode: full in the packet; scope by the teacher's ruling ("katselmoi vain muuttuneet osat"): the diff since the last PASS (`git diff f35980b22 -- content/fi-easy/FY6/fy6-12/exercises`) plus what the changed lines touch.
+Round 2 (follow-up: korjattujen käsitteiden yhdenmukaisuus)
 
 ## Blocking
 (none)
 
-## Fixed
-(none needed: the text already matched fi and was natural)
-
 ## Polish
-(none)
+- exercises.json:72 — "Tässä potentiaali on nolla negatiivisella levyllä" says "tässä", but the L1-06 stem shows no plates — optional: "Kun potentiaali on nolla negatiivisella levyllä ja x on etäisyys siitä, ..."; physics is right as it stands.
 
 ## Checked
-- Compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags, choices, feedback, data table cells and every number in exercises.json and solutions.md. All 8 new tasks (L1-06..08, L2-05..07, L3-04..05) and the older ones are identical; solutions.md has 895 numbers each, equal in order.
-- Decimal comma in prose and LaTeX as in fi; table cells keep the point exactly as in fi.
-- Re-derived L1-08 900 eV, L2-04 284 V, L2-05 30.1 V, L2-07 6.66e-27 kg (He+), L3-04 2.78 mm, L3-05 4.14e6 m/s; all agree with fi.
-- L1-06, L1-07, L2-06: exactly one correct option; distractor feedback keeps the same error type as fi.
-- check_i18n.py fi-easy: 0 errors.
+- Diff is five lines: `core: true` on L1-04, L1-06, L1-08, L2-03 and one feedback sentence in L1-06; no number, answer, unit, tolerance or correct flag changed.
+- L1-06 feedback: zero of potential at the negative plate, x measured from it, matches the fi change and the lesson's convention; sign agrees with the correct option.
+- Same core marks as fi.
+- Hash 885c14806ece5ea9 at start and end, equal to the packet's.

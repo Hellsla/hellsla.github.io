@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "contribution": "Light is a transverse wave, so it can be polarised. On the core path the student finds with the simulation that a polariser halves unpolarised light whatever its position and that the light through a second film depends on the angle between the films and vanishes when they are crossed, and from a sample measurement that the light of a phone display is polarised. The student explains polarised sunglasses, displays and 3D glasses with the polarisation of reflected light. The calculations are an extension: Malus's law $I = I_0 \\cos^2\\theta$, Brewster's law $\\tan\\alpha_\\text{B} = n_2 : n_1$, the worked example, the fit of the measured data and their numerical tasks; the experiment with three polarisers is optional.",
+  "contribution": "Light is a transverse wave, so it can be polarised. On the core path the student finds with the simulation that a polariser halves unpolarised light whatever its position and that the light through a second film depends on the angle between the films and vanishes when they are crossed, and from a sample measurement that the light of a phone display is polarised. The student explains polarised sunglasses, displays and 3D glasses with the polarisation of reflected light. The calculations are an extension: Malus's law $I = I_0 \\cos^2\\theta$, Brewster's law $\\tan\\alpha_\\text{B} = n_2 : n_1$, the worked example, the fit of the measured data and their numerical tasks. The experiment with three polarisers is on the core path: a slanted third film between crossed ones lets light through again.",
   "learn": [
     "explain what polarisation is and why it shows that light is a transverse wave.",
     "investigate and explain how one, two or three polarisers change the light that passes through.",
@@ -122,14 +122,13 @@
         {
           "text": "A little light: about an eighth of the light of the lamp passes through.",
           "correct": true,
-          "feedback": "The values of the model support this: $50.0\\,\\% \\cdot \\cos^2 45^\\circ \\cdot \\cos^2 45^\\circ = 12.5\\,\\%$. When the middle film is parallel to one of the outer ones, the screen is dark again."
+          "feedback": "The values of the model support this: when the middle film is at $45^\\circ$, $12.5\\,\\%$ of the light of the lamp, that is, an eighth, passes through. After the middle film the light is polarised at an angle of $45^\\circ$, so it has a component along the transmission axis of the last film. When the middle film is parallel to one of the outer ones, the screen is dark again."
         },
         {
           "text": "As much light as after the first film, because $45^\\circ$ is halfway between the films.",
           "feedback": "The values of the model refute this: $12.5\\,\\%$ of the light of the lamp passes through, whereas after the first film there is $50.0\\,\\%$. Each film whose transmission axis is at an angle of $45^\\circ$ to the polarisation of the incoming light lets through only half of what it receives."
         }
-      ],
-      "optional": true
+      ]
     },
     {
       "id": "simulaatio",
@@ -233,8 +232,7 @@
           "label": "I_3 (%)"
         }
       ],
-      "min": 3,
-      "optional": true
+      "min": 3
     },
     {
       "id": "mittaus",
@@ -258,7 +256,7 @@
           },
           {
             "text": "The light of the display is polarised, and the reading $15\\,\\text{lx}$ at $90^\\circ$ is light from the display that passes through the crossed film.",
-            "feedback": "The light of the display is polarised, but hardly any of it passes through a film crossed with its polarisation. The reading $15\\,\\text{lx}$ is almost entirely light from the room, which is not the polarised light of the display and raises every reading by the same amount."
+            "feedback": "The light of the display is polarised, but a film crossed with its polarisation lets through only very little of the display's light. The reading $15\\,\\text{lx}$ is almost entirely light from the room, which is not the polarised light of the display and raises every reading by the same amount."
           }
         ]
       }
@@ -371,7 +369,8 @@
       "prompt": "Compare your predictions with the theory and with the values of the model in the experiment. Then return to the opening question: why do polarised glasses put out the sparkle of the lake but ordinary dark glasses do not, and why does the sparkle return when the angler tilts their head?",
       "predictions": [
         "ennuste-yksi",
-        "ennuste-kierto"
+        "ennuste-kierto",
+        "ennuste-kolme"
       ],
       "optional": true
     },
@@ -458,7 +457,7 @@
       "id": "harjoitukset",
       "stage": "sovella",
       "type": "exercises",
-      "text": "Practise at three levels. In level 1 tasks one formula is applied, in level 2 tasks two steps are combined or a formula is solved for another quantity, and level 3 requires reasoning in a new situation."
+      "text": "Start with the exercises tagged Core: they belong to the core path. Most of the other exercises are extension calculations with Malus's and Brewster's laws. In level 1 tasks one formula is applied, in level 2 tasks two steps are combined or a formula is solved for another quantity, and level 3 requires reasoning in a new situation."
     },
     {
       "id": "check-1",
@@ -532,7 +531,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Finally, two quick questions. Answer first yourself and open the answer only afterwards."
+      "text": "Finally, two quick questions. Answer yourself first, and only then open the answer."
     }
   ]
 }

@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 08fde4c0b52b48cd
+CONTENT-HASH: 4124867e5d7571f6
 
 ## Blocking
 (none)
 
 ## Polish
-- "säteilyhaittoja" could get "eli haitallisia vaikutuksia" on first use.
+(none)
 
 ## Checked
-Follow-up delta (2c31ff041, NOTES §12): the exit-ticket answer is split into two short sentences ("…keskimääräiselle ihmiselle. Se ei kerro yhden ihmisen omaa riskiä."). It is plain, natural Finnish and the physics matches fi. Earlier: the caveat is consistent and the captions are plain.
+- batch delta review: scope was the diff only (teacher: "katselmoi vain muuttuneet osat"): meta.json term "efektiivinen annos" now "Sillä arvioidaan pienten annosten syöpäriskiä keskimääräiselle ihmiselle." Plain language is good: one short sentence, everyday words, no new term; it replaces the overstated "kuvaa koko kehon syöpäriskiä" and now agrees with lesson.md:300 ("keskimääräisen ihmisen riskiä, ei kenenkään oman riskin") and the glossary definition. Hash unchanged at start and end.

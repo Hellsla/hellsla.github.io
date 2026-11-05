@@ -3,7 +3,6 @@
     {
       "id": "fy3-1-L1-01",
       "level": 1,
-      "core": true,
       "text": "Kappaleen massa on $4{,}0\\,\\text{kg}$. Mikä on sen paino Maassa?",
       "answer": 39,
       "unit": "N",
@@ -76,6 +75,7 @@
     {
       "id": "fy3-1-L1-07",
       "level": 1,
+      "core": true,
       "text": "Kirja riippuu voimamittarissa Maan pinnalla. Minkä kahden kappaleen välisen vuorovaikutuksen voimakkuutta kirjan paino $G$ kuvaa?",
       "kind": [
         "concept"

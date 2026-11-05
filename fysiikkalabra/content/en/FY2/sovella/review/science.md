@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: bb512971bd3d5bba
+CONTENT-HASH: 58297e6f780ea8f5
 
 ## Blocking
 None.
 
 ## Polish
-Part b's answer field holds only the gas value (186200 t), as in the Finnish original; not a science issue.
+- The model reference for Source 1 has no web address, but criterion a1 lists one (verkko-osoite). Add the IPCC AR5 WGIII address, or say that a printed book chapter is findable without one, so that the model meets its own criterion.
 
 ## Checked
-- Compared with the Finnish original (passed at 8d72396766fb2769): same data tables, powers, capacity factors, emission factors (IPCC AR5 WGIII Annex III medians 820/490/230/11/48/12/24), season shares, points (a 3, b 3, c 4, d 3, e 5) and criterion tags/keys. No number, unit or accepted alternative changed.
-- Recomputed in one own script, all agree with answers.py and the English solutions: E1 = 14.016 GWh, N = 27.1 -> 28 (27 gives 378 GWh < 380); emissions 3.116e5 / 1.862e5 / 4.18e3 t, cuts 40 % / 99 %; winter wind 58.1 MW, city 54.5 MW, calm 7.0 MW (gap 73 MW); solar 9.6 GWh each, 40 parks 385 GWh, winter 7 MW; mix 252 + 88 + 40 GWh, biomass k = 0.11, 1.4e4 t, -95 %; peak 64.5 MW local, 15.5 MW import (55.5 MW without biomass); nuclear 473 GWh, 4.6e3 t; two biomass k = 0.54, 8.7e4 t, -72 %.
-- English wording keeps the physics: capacity factor defined, "life-cycle emission factor in g CO2-equivalent per kWh", biomass biogenic-CO2 convention and slow re-uptake, nothing called emission-free, energy vs power kept apart. LaTeX intact; decimal point used throughout; units and 2 s.f. reasons correct. Section headings kept in Finnish as the tool requires.
-- Scope: no FY3 physics. Hash bb512971bd3d5bba at start and end.
+- Re-review of the fixes. Hash 58297e6f780ea8f5 at the start and the end. The diff touches only the fy2-s2 solution; tasks.json and answers.py are unchanged.
+- Earlier Blocking 1 is resolved: Source 1 is now stated to be real (IPCC AR5 WGIII Annex III, 2014). Its reference is correct: Schlömer, S. et al. (2014), Annex III: Technology-specific cost and performance parameters, in *Climate Change 2014: Mitigation of Climate Change*, Contribution of WG III to AR5, Cambridge University Press. Only Source 2 (Esimerkkienergia Oy) is invented, and it is labelled invented in the introduction and in its reference, with placeholders for the year, the address and the date. Nothing invented is presented as real.
+- Earlier Blocking 2 is resolved: the quantity is now the life-cycle greenhouse-gas emission in CO2 equivalent, and the CO2-equivalent definition is correct. Source 2's claim is noted as CO2 only, and part d treats this as a near-same quantity, not the cause of the difference. This is correct for wind, whose non-CO2 share is small.
+- Facts: the onshore wind median is 11 g CO2-eq/kWh with range 7–56 (AR5 WGIII Table A.III.2). Both are correct and consistent with fy2-s1 and answers.py. The conversion 11 g/kWh = 11·10⁻⁶ t / 10⁻⁶ GWh = 11 t/GWh is correct.
+- The added second conclusion (not comparable because Source 2 states neither boundary nor year, so a life-cycle source on the same boundary is needed) is sound. It fits the conclusion criterion and "Hyväksytään myös".
+- The physics of the boundaries, lifetime and operational emissions is unchanged and correct. Points are unchanged: a 3, b 3, c 4, d 4 = 14, with the criteria adding up to each part's total. No FY3 physics.

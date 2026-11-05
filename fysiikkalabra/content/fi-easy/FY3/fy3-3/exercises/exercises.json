@@ -3,7 +3,6 @@
     {
       "id": "fy3-3-L1-01",
       "level": 1,
-      "core": true,
       "text": "Huoneen lämpötila on $21\\,{}^\\circ\\text{C}$. Mikä lämpötila on kelvineinä?",
       "answer": 294,
       "unit": "K",
@@ -83,6 +82,7 @@
     {
       "id": "fy3-3-L1-08",
       "level": 1,
+      "core": true,
       "text": "Suljetussa ja jäykässä astiassa on kaasua. Astiaa lämmitetään. Mikä seuraavista kaasun suureista pysyy samana?",
       "kind": [
         "concept"

@@ -3,7 +3,6 @@
     {
       "id": "fy1-1-L1-01",
       "level": 1,
-      "core": true,
       "text": "The diameter of a red blood cell is $7.5\\cdot10^{-6}\\,\\text{m}$. How many micrometres is that? One micrometre is $1\\,\\mu\\text{m} = 10^{-6}\\,\\text{m}$.",
       "answer": 7.5,
       "unit": "µm",
@@ -30,6 +29,7 @@
     {
       "id": "fy1-1-L1-04",
       "level": 1,
+      "core": true,
       "text": "The diameter of a lead atom is about $3.5\\cdot10^{-10}\\,\\text{m}$ and the diameter of its nucleus about $1.4\\cdot10^{-14}\\,\\text{m}$. How many times larger is the atom than its nucleus?",
       "answer": 25000,
       "unit": "times",

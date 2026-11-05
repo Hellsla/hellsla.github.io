@@ -3,7 +3,6 @@
     {
       "id": "fy1-1-L1-01",
       "level": 1,
-      "core": true,
       "text": "Punasolun halkaisija on $7{,}5\\cdot10^{-6}\\,\\text{m}$. Kuinka monta mikrometriä se on? Yksi mikrometri on $1\\,\\mu\\text{m} = 10^{-6}\\,\\text{m}$.",
       "answer": 7.5,
       "unit": "µm",
@@ -30,6 +29,7 @@
     {
       "id": "fy1-1-L1-04",
       "level": 1,
+      "core": true,
       "text": "Lyijyatomin halkaisija on noin $3{,}5\\cdot10^{-10}\\,\\text{m}$ ja sen ytimen halkaisija noin $1{,}4\\cdot10^{-14}\\,\\text{m}$. Kuinka monta kertaa atomi on ydintään suurempi?",
       "answer": 25000,
       "unit": "kertaa",

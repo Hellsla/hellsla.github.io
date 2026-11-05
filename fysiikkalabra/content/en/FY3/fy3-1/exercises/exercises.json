@@ -3,7 +3,6 @@
     {
       "id": "fy3-1-L1-01",
       "level": 1,
-      "core": true,
       "text": "The mass of an object is $4.0\\,\\text{kg}$. What is its weight on Earth?",
       "answer": 39,
       "unit": "N",
@@ -76,6 +75,7 @@
     {
       "id": "fy3-1-L1-07",
       "level": 1,
+      "core": true,
       "text": "A book hangs from a force meter on the surface of the Earth. The weight $G$ of the book describes the strength of the interaction between which two objects?",
       "kind": [
         "concept"

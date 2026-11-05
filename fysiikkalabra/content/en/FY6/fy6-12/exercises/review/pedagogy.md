@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 63fb0ff104381c6c
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: de8b276cdfca08dc
+Mode: delta. Scope: the diff since the PASS at 63fb0ff104381c6c only (teacher: "katselmoi vain muuttuneet osat"): L1-06 distractor feedback (exercises.json:72) and the new `"core": true` marks.
 
 ## Blocking
 (none)
 
-## Fixed
-(none needed: the text already matched fi and was natural)
-
 ## Polish
-(none)
+- content/en/FY6/fy6-12/exercises/exercises.json:72 — "…, $V = Ex$, when the zero of potential is at the negative plate…" reads as if the equation held only at certain moments, and the stem names no plates — "…, $V = Ex$ if the zero of potential is taken at the negative plate and $x$ is measured from it."
 
 ## Checked
-- Language is English; natural, correct physics English (potential energy, potential difference, retarding voltage, deflection plates).
-- Hints and distractor feedback in L1-06, L1-07, L2-06 name the misconception and point to the right idea, as in fi.
-- Multi-part tasks L2-05, L2-07, L3-04, L3-05 keep the a)-d) structure and the line saying which part goes in the answer box.
-- Answer-field strings of L1-06, L1-07, L2-06 equal the text of the correct choice.
+- The added condition matches fi line 72 in content and is correct physics English.
+- With zero at the negative plate the potential falls in the field direction, consistent with the correct choice and the model answer.
+- Core marks on L1-04, L1-06, L1-08, L2-03, the same ids as fi; they cover the slot's core skills.
+- Hash de8b276cdfca08dc at the start and the end.
