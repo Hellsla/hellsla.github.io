@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: f28649f7c45795b2
-Round: 1
+CONTENT-HASH: 112961aec0c7f838
+Round: 5
+Mode: delta
 
 ## Blocking
 - none
 
 ## Polish
-- solutions.md fy2-5-L2-08 (sanity line) — "bensiini on lähes $40\,\text{MJ}$ kilogrammaa kohti mutta vain pieni määrä" is wrong (43 is over 40) and the sentence is clumsy. Fix: "bensiinin lämpöarvo on suurin, yli $40\,\text{MJ/kg}$, mutta sen massa on pienin, joten sen energia jää pienimmäksi."
-- exercises.json fy2-5-L2-08 text — "Laske ... ja järjestä polttoaineet." duplicates the `prompt`; keep the last sentence as the question only, e.g. end the text at the data and let the prompt ask the order.
-- exercises.json fy2-5-L3-04/L3-05 and L1-06 (carried over) — L3-05 repeats the L3-04 idea (swap one for cost or emissions per energy); L1-06 correct option is the shortest, lengthen it.
-- docs/exercise-bank/FY2.md (carried over) — note the CO2 table is realised in fy2-8, not fy2-5.
+- solutions.md fy2-5-L3-04 Sijoitus — two "joten" in one sentence ("..., joten summa on ... = 13 300, joten E_hyöty = ..."). Fix: "..., eli summa on $6700 + 1300 + 5300 = 13\,300$, ja $E_\text{hyöty} = ...$".
+- Carried over: L3-04/L3-05 share the idea (swap one for cost or emissions per energy); L1-06 correct option is the shortest; L2-08 sanity line says "lähes 40 MJ/kg" for bensiini (43, should be "yli 40").
 
 ## Checked
-- New L2-08 (ordering): 64,5 / 75 / 104 / 120 MJ is the correct order; it differs from the mass order (bensiini, hiili, puu, turve), so ordering by mass or by H fails; the g and t conversions are the one lesson-prepared trap (L2-06 teaches t).
-- Level 2 fits: four E = Hm products with unit conversion, no hidden new idea; not a copy of the worked example (wood, 6 kg).
-- Solution has principle, conversion, four substitutions, order, comparison with the mass order; followable.
-- Rest of the set unchanged since the PASS (8/8/5); numbers of L2-05, L2-07, L3-05 verified earlier.
-- Phone view of the order widget not opened (tested by the inquiry checks).
+- Only change: L3-04 monthly sum split into three groups of four months: 2100+1900+1600+1100 = 6700, 600+250+200+250 = 1300, 600+1100+1600+2000 = 5300, total 13 300; all sums correct and equal the earlier 13 300 kWh.
+- The rest of the Sijoitus line (47 880 MJ, 3313 kg, 1237 kg, 4024 kg, 710 kg) is unchanged and the Vastaus and Järkevyys lines still agree.
+- The grouping makes the addition followable and shorter on a phone; the task and answer-box values are untouched.
+- Judged from the delta only; phone captures not opened.

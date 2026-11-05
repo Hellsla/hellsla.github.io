@@ -1,20 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 1612b61416342d9f
+CONTENT-HASH: a5e3a606c3d94d47
 Mode: full
-Round: 2
+Round: 3
 
 ## Blocking
 (none)
 
 ## Polish
-- content/fi/FY2/fy2-1/exercises/exercises.json:141 — L1-09 statement 3 feedback says "likimain eristetyn", while the task states the system is assumed to be isolated. "oletettu eristetty systeemi" would match the task.
-- solutions.md L3-04 c) and exercises.json L1-07 third option: the Polish items from the earlier round 3 (a constant total presented as caused by conservation; "Ympäristö kuuluu systeemiin") are still open. Not blocking.
+- content/fi/FY2/fy2-1/exercises/exercises.json:141 — L1-09 statement 3 feedback says "likimain eristetyn", while the task assumes the system is isolated. "oletettu eristetty systeemi" would match the task.
+- solutions.md L3-04 c) and exercises.json L1-07 third option: older Polish items (a constant total presented as caused by conservation; "Ympäristö kuuluu systeemiin") are still open. Not blocking.
 
 ## Checked
-- Hash 1612b61416342d9f at start and end of this round; the diff from 18b454cd1 to HEAD touches only L1-09 (exercises.json, solutions.md).
-- Round-1 blocking item fixed: statement 1 feedback now says "osa pallon mekaanisesta energiasta muuttui törmäyksessä ...", the right mechanism (kinetic energy at the floor, not potential energy).
-- Round-1 Polish fixed: statement 5 and its feedback now both say "pallossa, lattiassa ja ilmassa", the same as the model answer.
-- "ääneksi" removed from statement 4, its feedback and Periaate; thermal energy alone is consistent across all five statements and the solution.
-- Key recomputed from the model (isolated system, mechanical energy dissipated each bounce): 1 T, 2 F, 3 T, 4 F, 5 T; matches answer, true flags and Mallivastaus.
-- Each false statement is wrong for the reason its feedback gives; Mallivastaus "ei lattiaa korkeammalta saatua potentiaalienergiaa" is correct with the floor as the zero level.
-- Scope and notation: E_alussa = E_lopussa, E_p + E_k, no expressions; 1 m in SI notation. No number, so no answers.py line is needed.
+- Hash a5e3a606c3d94d47 at start and end. Between round 2 (9fd1b2088) and HEAD (442c889ba), the only content change is one line, solutions.md L2-05 Järkevyys.
+- L2-05 recomputed from the table: total 36,0 + 10,5 + 9,0 + 4,5 = 60,0 GJ, shares 60 / 17,5 / 15 / 7,5 %.
+- The split check 60 % + 17,5 % = 77,5 % and 15 % + 7,5 % = 22,5 %, together 100 %, is correct and has the same numbers as before.
+- Key 60,0 %, answers.py line and Vastaus unchanged and consistent.
+- L1-09 is unchanged since round 2 and still correct: key 1 T, 2 F, 3 T, 4 F, 5 T; mechanism "mekaaninen energia → lämpöenergia".
