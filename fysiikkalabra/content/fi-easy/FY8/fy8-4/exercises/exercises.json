@@ -282,7 +282,7 @@
     {
       "id": "fy8-4-L3-03",
       "level": 3,
-      "text": "Levossa oleva vetyatomi siirtyy energiatasolta $n = 3$ tasolle $n = 2$ ja lähettää fotonin. Vedyn energiatasot ovat $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$. Atomi saa rekyylin eli liikemäärän, joka on yhtä suuri kuin fotonin liikemäärä ja vastakkaissuuntainen. Kuinka suuri on atomin nopeus sen jälkeen, kun fotoni on lähtenyt? Vetyatomin massa on $1{,}67 \\cdot 10^{-27}\\,\\text{kg}$. Anna vastaus metreinä sekunnissa.",
+      "text": "Levossa oleva vetyatomi siirtyy energiatasolta $n = 3$ tasolle $n = 2$ ja lähettää fotonin. Vedyn energiatasot ovat $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$.\n\nAtomi saa rekyylin eli liikemäärän, joka on yhtä suuri kuin fotonin liikemäärä ja vastakkaissuuntainen.\n\nKuinka suuri on atomin nopeus sen jälkeen, kun fotoni on lähtenyt?\n\nVetyatomin massa on $1{,}67 \\cdot 10^{-27}\\,\\text{kg}$. Anna vastaus metreinä sekunnissa.",
       "answer": 0.604,
       "unit": "m/s",
       "tolerance": 0.02

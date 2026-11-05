@@ -107,7 +107,7 @@
     {
       "id": "fy8-6-L2-03",
       "level": 2,
-      "text": "A current of $20\\,\\text{mA}$ flows through a red LED, and the wavelength of its light is $630\\,\\text{nm}$. Assume that every electron passing through the LED creates one photon that gets out of the LED. Use the values $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^8\\,\\text{m/s}$ and $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$. How great is the light power of the LED? Give the answer in milliwatts.",
+      "text": "A current of $20\\,\\text{mA}$ flows through a red LED, and the wavelength of its light is $630\\,\\text{nm}$. Assume that every electron passing through the LED creates one photon that gets out of the LED.\n\nUse the values $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^8\\,\\text{m/s}$ and $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$.\n\nHow great is the light power of the LED? Give the answer in milliwatts.",
       "answer": 39.4,
       "unit": "mW",
       "tolerance": 0.02
@@ -115,7 +115,7 @@
     {
       "id": "fy8-6-L2-04",
       "level": 2,
-      "text": "A white LED contains a blue LED whose photons have the wavelength $450\\,\\text{nm}$. It is covered by a phosphor that absorbs a blue photon and emits by fluorescence a yellow photon whose wavelength is $560\\,\\text{nm}$. Use the values $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^8\\,\\text{m/s}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$. How much energy per photon is left in the phosphor as heat? Give the answer in electronvolts.",
+      "text": "A white LED contains a blue LED whose photons have the wavelength $450\\,\\text{nm}$. It is covered by a phosphor that absorbs a blue photon and emits by fluorescence a yellow photon whose wavelength is $560\\,\\text{nm}$.\n\nUse the values $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^8\\,\\text{m/s}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$.\n\nHow much energy per photon is left in the phosphor as heat? Give the answer in electronvolts.",
       "answer": 0.541,
       "unit": "eV",
       "tolerance": 0.02
@@ -285,7 +285,7 @@
     {
       "id": "fy8-6-L3-01",
       "level": 3,
-      "text": "A group measured the threshold voltages of four LEDs. Red LED: $\\lambda = 625\\,\\text{nm}$, $U_\\text{k} = 1.86\\,\\text{V}$. Yellow: $590\\,\\text{nm}$ and $1.97\\,\\text{V}$. Green: $520\\,\\text{nm}$ and $2.27\\,\\text{V}$. Blue: $465\\,\\text{nm}$ and $2.55\\,\\text{V}$. Use the values $c = 2.998 \\cdot 10^8\\,\\text{m/s}$ and $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$. Determine the Planck constant by fitting a line to the points $(f, U_\\text{k})$, for example with Graphical Analysis Pro. Give the answer in the unit $\\text{J}\\,\\text{s}$.",
+      "text": "A group measured the threshold voltages of four LEDs.\n\nRed LED: $\\lambda = 625\\,\\text{nm}$, $U_\\text{k} = 1.86\\,\\text{V}$. Yellow: $590\\,\\text{nm}$ and $1.97\\,\\text{V}$. Green: $520\\,\\text{nm}$ and $2.27\\,\\text{V}$. Blue: $465\\,\\text{nm}$ and $2.55\\,\\text{V}$.\n\nUse the values $c = 2.998 \\cdot 10^8\\,\\text{m/s}$ and $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$.\n\nDetermine the Planck constant by fitting a line to the points $(f, U_\\text{k})$, for example with Graphical Analysis Pro. Give the answer in the unit $\\text{J}\\,\\text{s}$.",
       "answer": 6.75e-34,
       "unit": "J s",
       "tolerance": 0.02
@@ -301,7 +301,7 @@
     {
       "id": "fy8-6-L3-03",
       "level": 3,
-      "text": "An ultraviolet LED with the wavelength $365\\,\\text{nm}$ is used to check fluorescent markings. A current of $20\\,\\text{mA}$ flows through the LED, and it emits ultraviolet radiation with the power $15\\,\\text{mW}$. Use the values $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^8\\,\\text{m/s}$ and $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$. What percentage of the electrons passing through the LED create a photon that gets out of the LED?",
+      "text": "An ultraviolet LED with the wavelength $365\\,\\text{nm}$ is used to check fluorescent markings. A current of $20\\,\\text{mA}$ flows through the LED, and it emits ultraviolet radiation with the power $15\\,\\text{mW}$.\n\nUse the values $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^8\\,\\text{m/s}$ and $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$.\n\nWhat percentage of the electrons passing through the LED create a photon that gets out of the LED?",
       "answer": 22.1,
       "unit": "%",
       "tolerance": 0.03

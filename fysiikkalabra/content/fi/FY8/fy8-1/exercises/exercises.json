@@ -249,7 +249,7 @@
     {
       "id": "fy8-1-L3-01",
       "level": 3,
-      "text": "Natriumpintaa, jonka irrotustyö on $2{,}28\\,\\text{eV}$, valaistaan ultraviolettisäteilyllä, jonka aallonpituus on $350\\,\\text{nm}$. Elektronin massa on $9{,}109 \\cdot 10^{-31}\\,\\text{kg}$. Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$. Kuinka suuri on nopeimpien irtoavien elektronien vauhti? Anna vastaus yksikössä $\\text{m/s}$.",
+      "text": "Natriumpintaa, jonka irrotustyö on $2{,}28\\,\\text{eV}$, valaistaan ultraviolettisäteilyllä, jonka aallonpituus on $350\\,\\text{nm}$.\n\nElektronin massa on $9{,}109 \\cdot 10^{-31}\\,\\text{kg}$. Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$.\n\nKuinka suuri on nopeimpien irtoavien elektronien vauhti? Anna vastaus yksikössä $\\text{m/s}$.",
       "answer": 666000.0,
       "unit": "m/s",
       "tolerance": 0.02

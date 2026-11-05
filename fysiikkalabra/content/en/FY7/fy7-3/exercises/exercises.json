@@ -215,7 +215,7 @@
         "experiment",
         "error"
       ],
-      "text": "A student measures the field inside a coil with a sensor that measures the component of the magnetic flux density in the direction of the sensor itself. She places the sensor at the centre of the coil, but the sensor is turned $60\\,{}^\\circ$ from the axis of the coil. The coil is long, and inside it the field is uniform and along the axis. Which of the following correctly describes how this affects the measurement result?",
+      "text": "A student measures the field inside a coil with a sensor that measures the component of the magnetic flux density in the direction of the sensor itself.\n\nShe places the sensor at the centre of the coil, but the sensor is turned $60\\,{}^\\circ$ from the axis of the coil. The coil is long, and inside it the field is uniform and along the axis.\n\nWhich of the following correctly describes how this affects the measurement result?",
       "answer": "The reading is too small, because the sensor measures only the component in its own direction and not the whole field.",
       "unit": "",
       "tolerance": 0.02,

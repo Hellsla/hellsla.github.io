@@ -81,7 +81,7 @@
     {
       "id": "fy6-7-L1-08",
       "level": 1,
-      "text": "Oppilas laskee, kuinka kauan $1{,}0\\,\\text{kWh}$ energiaa riittää pöytätuulettimelle, jonka teho on $40\\,\\text{W}$. Hänen ratkaisunsa on: ”Aika on energian ja tehon tulo, $t = E \\cdot P = 1{,}0 \\cdot 40 = 40$. Tuuletin toimii siis $40$ tuntia.” Etsi oppilaan virhe ja laske oikea aika tunteina.",
+      "text": "Oppilas laskee, kuinka kauan $1{,}0\\,\\text{kWh}$ energiaa riittää pöytätuulettimelle, jonka teho on $40\\,\\text{W}$.\n\nHänen ratkaisunsa on: ”Aika on energian ja tehon tulo, $t = E \\cdot P = 1{,}0 \\cdot 40 = 40$. Tuuletin toimii siis $40$ tuntia.”\n\nEtsi oppilaan virhe ja laske oikea aika tunteina.",
       "kind": [
         "error",
         "reasoning"

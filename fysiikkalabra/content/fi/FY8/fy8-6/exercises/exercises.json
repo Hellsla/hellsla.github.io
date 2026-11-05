@@ -107,7 +107,7 @@
     {
       "id": "fy8-6-L2-03",
       "level": 2,
-      "text": "Punaisen LEDin läpi kulkee virta $20\\,\\text{mA}$, ja sen valon aallonpituus on $630\\,\\text{nm}$. Oletetaan, että jokainen LEDin läpi kulkeva elektroni synnyttää yhden fotonin, joka pääsee ulos LEDistä. Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Kuinka suuri on LEDin valoteho? Anna vastaus milliwatteina.",
+      "text": "Punaisen LEDin läpi kulkee virta $20\\,\\text{mA}$, ja sen valon aallonpituus on $630\\,\\text{nm}$. Oletetaan, että jokainen LEDin läpi kulkeva elektroni synnyttää yhden fotonin, joka pääsee ulos LEDistä.\n\nKäytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$.\n\nKuinka suuri on LEDin valoteho? Anna vastaus milliwatteina.",
       "answer": 39.4,
       "unit": "mW",
       "tolerance": 0.02
@@ -115,7 +115,7 @@
     {
       "id": "fy8-6-L2-04",
       "level": 2,
-      "text": "Valkoisessa LEDissä on sininen LED, jonka fotonien aallonpituus on $450\\,\\text{nm}$. Sitä peittää loisteaine, joka absorboi sinisen fotonin ja säteilee fluoresenssina keltaisen fotonin, jonka aallonpituus on $560\\,\\text{nm}$. Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$. Kuinka paljon energiaa loisteaineeseen jää lämmöksi yhtä fotonia kohti? Anna vastaus elektronivoltteina.",
+      "text": "Valkoisessa LEDissä on sininen LED, jonka fotonien aallonpituus on $450\\,\\text{nm}$. Sitä peittää loisteaine, joka absorboi sinisen fotonin ja säteilee fluoresenssina keltaisen fotonin, jonka aallonpituus on $560\\,\\text{nm}$.\n\nKäytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$.\n\nKuinka paljon energiaa loisteaineeseen jää lämmöksi yhtä fotonia kohti? Anna vastaus elektronivoltteina.",
       "answer": 0.541,
       "unit": "eV",
       "tolerance": 0.02
@@ -285,7 +285,7 @@
     {
       "id": "fy8-6-L3-01",
       "level": 3,
-      "text": "Ryhmä mittasi neljän LEDin kynnysjännitteet. Punainen LED: $\\lambda = 625\\,\\text{nm}$, $U_\\text{k} = 1{,}86\\,\\text{V}$. Keltainen: $590\\,\\text{nm}$ ja $1{,}97\\,\\text{V}$. Vihreä: $520\\,\\text{nm}$ ja $2{,}27\\,\\text{V}$. Sininen: $465\\,\\text{nm}$ ja $2{,}55\\,\\text{V}$. Käytä arvoja $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Määritä Planckin vakio sovittamalla suora pisteisiin $(f, U_\\text{k})$ esimerkiksi Graphical Analysis Prolla. Anna vastaus yksikössä $\\text{J}\\,\\text{s}$.",
+      "text": "Ryhmä mittasi neljän LEDin kynnysjännitteet.\n\nPunainen LED: $\\lambda = 625\\,\\text{nm}$, $U_\\text{k} = 1{,}86\\,\\text{V}$. Keltainen: $590\\,\\text{nm}$ ja $1{,}97\\,\\text{V}$. Vihreä: $520\\,\\text{nm}$ ja $2{,}27\\,\\text{V}$. Sininen: $465\\,\\text{nm}$ ja $2{,}55\\,\\text{V}$.\n\nKäytä arvoja $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$.\n\nMääritä Planckin vakio sovittamalla suora pisteisiin $(f, U_\\text{k})$ esimerkiksi Graphical Analysis Prolla. Anna vastaus yksikössä $\\text{J}\\,\\text{s}$.",
       "answer": 6.75e-34,
       "unit": "J s",
       "tolerance": 0.02
@@ -301,7 +301,7 @@
     {
       "id": "fy8-6-L3-03",
       "level": 3,
-      "text": "Ultravioletti-LEDiä, jonka aallonpituus on $365\\,\\text{nm}$, käytetään fluoresoivien merkintöjen tarkistamiseen. LEDin läpi kulkee virta $20\\,\\text{mA}$, ja se säteilee ultraviolettisäteilyä teholla $15\\,\\text{mW}$. Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Kuinka monta prosenttia LEDin läpi kulkevista elektroneista synnyttää fotonin, joka pääsee ulos LEDistä?",
+      "text": "Ultravioletti-LEDiä, jonka aallonpituus on $365\\,\\text{nm}$, käytetään fluoresoivien merkintöjen tarkistamiseen. LEDin läpi kulkee virta $20\\,\\text{mA}$, ja se säteilee ultraviolettisäteilyä teholla $15\\,\\text{mW}$.\n\nKäytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$.\n\nKuinka monta prosenttia LEDin läpi kulkevista elektroneista synnyttää fotonin, joka pääsee ulos LEDistä?",
       "answer": 22.1,
       "unit": "%",
       "tolerance": 0.03

@@ -3,7 +3,7 @@
     {
       "id": "fy7-2-L1-01",
       "level": 1,
-      "text": "Tyhjiöputkessa kulkevan protonisuihkun protonien vauhti on $3{,}0 \\cdot 10^{5}\\,\\text{m/s}$. Putken ympärillä olevat kelat tuottavat magneettikentän, jonka magneettivuon tiheys on $0{,}25\\,\\text{T}$ ja joka on kohtisuorassa protonien nopeutta vastaan. Protonin varaus on $1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Kuinka suuri magneettinen voima yhteen protoniin vaikuttaa? Anna vastaus muodossa $\\ldots \\cdot 10^{-14}\\,\\text{N}$.",
+      "text": "Tyhjiöputkessa kulkevan protonisuihkun protonien vauhti on $3{,}0 \\cdot 10^{5}\\,\\text{m/s}$. Putken ympärillä olevat kelat tuottavat magneettikentän, jonka magneettivuon tiheys on $0{,}25\\,\\text{T}$ ja joka on kohtisuorassa protonien nopeutta vastaan.\n\nProtonin varaus on $1{,}602 \\cdot 10^{-19}\\,\\text{C}$.\n\nKuinka suuri magneettinen voima yhteen protoniin vaikuttaa? Anna vastaus muodossa $\\ldots \\cdot 10^{-14}\\,\\text{N}$.",
       "answer": 1.2,
       "unit": "10⁻¹⁴ N",
       "tolerance": 0.02

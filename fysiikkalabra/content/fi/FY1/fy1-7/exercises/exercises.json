@@ -232,7 +232,7 @@
   {
    "id": "fy1-7-L2-07",
    "level": 2,
-   "text": "Oppilas määritti metallikappaleen tiheyden vedensiirtomenetelmällä. Kappaleen massa on $107\\,\\text{g}$. Mittalasin lukema oli ennen upotusta $60\\,\\text{ml}$ ja upotuksen jälkeen $72\\,\\text{ml}$. Oppilas laski $\\rho = 107\\,\\text{g} : 72\\,\\text{cm}^3 = 1{,}5\\,\\text{g/cm}^3$ ja päätteli kappaleen olevan kevyttä muovia. Etsi oppilaan virhe ja laske oikea tiheys yksikössä $\\text{g/cm}^3$. Mikä aine kappale voi olla?",
+   "text": "Oppilas määritti metallikappaleen tiheyden vedensiirtomenetelmällä. Kappaleen massa on $107\\,\\text{g}$. Mittalasin lukema oli ennen upotusta $60\\,\\text{ml}$ ja upotuksen jälkeen $72\\,\\text{ml}$.\n\nOppilas laski $\\rho = 107\\,\\text{g} : 72\\,\\text{cm}^3 = 1{,}5\\,\\text{g/cm}^3$ ja päätteli kappaleen olevan kevyttä muovia.\n\nEtsi oppilaan virhe ja laske oikea tiheys yksikössä $\\text{g/cm}^3$. Mikä aine kappale voi olla?",
    "kind": [
     "error",
     "experiment"

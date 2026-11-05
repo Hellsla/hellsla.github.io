@@ -228,7 +228,7 @@
     {
       "id": "fy8-3-L3-02",
       "level": 3,
-      "text": "The helium ion $\\text{He}^+$ has only one electron, like the hydrogen atom, but the nucleus has two protons. The energy levels of the ion are $E_n = -\\tfrac{54.4\\,\\text{eV}}{n^2}$. A line is observed in the spectrum of a star that is produced in the transition of the ion from level $n = 4$ to level $n = 3$. Calculate the wavelength of the line in nanometres ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "text": "The helium ion $\\text{He}^+$ has only one electron, like the hydrogen atom, but the nucleus has two protons. The energy levels of the ion are $E_n = -\\tfrac{54.4\\,\\text{eV}}{n^2}$.\n\nA line is observed in the spectrum of a star that is produced in the transition of the ion from level $n = 4$ to level $n = 3$.\n\nCalculate the wavelength of the line in nanometres ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$).",
       "answer": 469,
       "unit": "nm",
       "tolerance": 0.02

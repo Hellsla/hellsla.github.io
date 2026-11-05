@@ -259,7 +259,7 @@
     {
       "id": "fy6-10-L3-02",
       "level": 3,
-      "text": "In a hydrogen atom, the electron and the proton attract each other with both an electric force and a gravitational force $F_\\text{g} = G\\,\\tfrac{m_\\text{e} m_\\text{p}}{r^2}$, where $G = 6.674 \\cdot 10^{-11}\\,\\tfrac{\\text{N} \\cdot \\text{m}^2}{\\text{kg}^2}$. The mass of the electron is $m_\\text{e} = 9.109 \\cdot 10^{-31}\\,\\text{kg}$ and that of the proton $m_\\text{p} = 1.673 \\cdot 10^{-27}\\,\\text{kg}$. How many times larger is the electric force than the gravitational force? Also explain why the answer does not depend on the distance.",
+      "text": "In a hydrogen atom, the electron and the proton attract each other with both an electric force and a gravitational force $F_\\text{g} = G\\,\\tfrac{m_\\text{e} m_\\text{p}}{r^2}$, where $G = 6.674 \\cdot 10^{-11}\\,\\tfrac{\\text{N} \\cdot \\text{m}^2}{\\text{kg}^2}$.\n\nThe mass of the electron is $m_\\text{e} = 9.109 \\cdot 10^{-31}\\,\\text{kg}$ and that of the proton $m_\\text{p} = 1.673 \\cdot 10^{-27}\\,\\text{kg}$.\n\nHow many times larger is the electric force than the gravitational force? Also explain why the answer does not depend on the distance.",
       "answer": 2.268e+39,
       "unit": "",
       "tolerance": 0.02

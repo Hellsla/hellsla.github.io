@@ -259,7 +259,7 @@
     {
       "id": "fy6-10-L3-02",
       "level": 3,
-      "text": "Vetyatomissa elektroni ja protoni vetävät toisiaan puoleensa sekä sähköisellä voimalla että gravitaatiovoimalla $F_\\text{g} = G\\,\\tfrac{m_\\text{e} m_\\text{p}}{r^2}$, missä $G = 6{,}674 \\cdot 10^{-11}\\,\\tfrac{\\text{N} \\cdot \\text{m}^2}{\\text{kg}^2}$. Elektronin massa on $m_\\text{e} = 9{,}109 \\cdot 10^{-31}\\,\\text{kg}$ ja protonin massa on $m_\\text{p} = 1{,}673 \\cdot 10^{-27}\\,\\text{kg}$. Kuinka monta kertaa suurempi sähköinen voima on kuin gravitaatiovoima? Selitä myös, miksi vastaus ei riipu etäisyydestä.",
+      "text": "Vetyatomissa elektroni ja protoni vetävät toisiaan puoleensa sekä sähköisellä voimalla että gravitaatiovoimalla $F_\\text{g} = G\\,\\tfrac{m_\\text{e} m_\\text{p}}{r^2}$, missä $G = 6{,}674 \\cdot 10^{-11}\\,\\tfrac{\\text{N} \\cdot \\text{m}^2}{\\text{kg}^2}$.\n\nElektronin massa on $m_\\text{e} = 9{,}109 \\cdot 10^{-31}\\,\\text{kg}$ ja protonin massa on $m_\\text{p} = 1{,}673 \\cdot 10^{-27}\\,\\text{kg}$.\n\nKuinka monta kertaa suurempi sähköinen voima on kuin gravitaatiovoima? Selitä myös, miksi vastaus ei riipu etäisyydestä.",
       "answer": 2.268e+39,
       "unit": "",
       "tolerance": 0.02

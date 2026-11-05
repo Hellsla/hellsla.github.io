@@ -282,7 +282,7 @@
     {
       "id": "fy8-4-L3-03",
       "level": 3,
-      "text": "A hydrogen atom at rest moves from the energy level $n = 3$ to the level $n = 2$ and emits a photon. The energy levels of hydrogen are $E_n = -\\tfrac{13.6\\,\\text{eV}}{n^2}$. The atom receives a momentum equal in magnitude to that of the photon and in the opposite direction, that is, a recoil. What is the speed of the atom after the photon has left? The mass of a hydrogen atom is $1.67 \\cdot 10^{-27}\\,\\text{kg}$. Give the answer in metres per second.",
+      "text": "A hydrogen atom at rest moves from the energy level $n = 3$ to the level $n = 2$ and emits a photon. The energy levels of hydrogen are $E_n = -\\tfrac{13.6\\,\\text{eV}}{n^2}$.\n\nThe atom receives a momentum equal in magnitude to that of the photon and in the opposite direction, that is, a recoil.\n\nWhat is the speed of the atom after the photon has left?\n\nThe mass of a hydrogen atom is $1.67 \\cdot 10^{-27}\\,\\text{kg}$. Give the answer in metres per second.",
       "answer": 0.604,
       "unit": "m/s",
       "tolerance": 0.02
