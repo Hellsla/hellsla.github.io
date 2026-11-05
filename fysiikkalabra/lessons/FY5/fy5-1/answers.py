@@ -22,4 +22,11 @@ a["fy5-1-L2-04"] = 50 / (0.25 * s(60))              # valve lever: F = M / (d si
 a["fy5-1-L3-01"] = 500 * 0.175 * c(45)              # pedal 45° below the horizontal, force straight down: r = d cos 45° → 61,9 Nm
 a["fy5-1-L3-02"] = (50 * 0.40) / 20                 # equal moments: r = F₁r₁ / F₂ = 1,0 m
 a["fy5-1-L3-03"] = 120 * 0.20 + 120 * 0.20          # cross wrench, two opposite hands both turning the same way: ΣM = 48 Nm
+# Added exercises (the multiple-choice tasks L1-06 and L1-07 have no number)
+a["fy5-1-L1-08"] = -(15 * 0.60)                     # clockwise is negative: M = −F r = −9,0 Nm
+a["fy5-1-L2-05"] = sum(F * r for r, F in [(0.10, 251), (0.15, 170), (0.20, 126), (0.30, 83), (0.40, 62)]) / 5   # mean of F r = 25,1 Nm → 25 Nm
+a["fy5-1-L2-06"] = 9.81 * (0.200 * 0.300 + 0.100 * 0.100 - 0.120 * 0.400 - 0.0500 * 0.200)   # ΣM = g (left − right) = 0,118 Nm counterclockwise
+a["fy5-1-L2-07"] = 90 * (0.270 - 0.030)             # arm measured from the nut's centre: 0,240 m → 21,6 Nm
+a["fy5-1-L3-04"] = (450 * 0.175 / 0.100) * 0.0900   # chain force F_k = F_p d / R = 787,5 N; rear-wheel moment F_k r = 70,9 Nm
+a["fy5-1-L3-05"] = 60.0 / (0.400 * s(65))           # wrench B: F = M / (d sin α) = 166 N (A needs 240 N, C 200 N; the limit is 170 N)
 print(json.dumps(a))

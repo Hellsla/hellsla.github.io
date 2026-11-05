@@ -1,22 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 76600eaf8a734c4e
+CONTENT-HASH: 46e452c734acb155
 
 ## Blocking
 
 ## Polish
+- exercises.json:272 (fy5-4-L3-04) — the wording says a_n "laskettiin nopeudesta ja radan muodosta", and part a) then asks for the radius from v and a_n, which is circular — write instead "kiihtyvyysanturin lukemasta on vähennetty painovoiman osuus" (carried over from the previous round, still optional).
+- solutions.md (L3-04 Järkevyys) — the energy check could name its source: "mekaanisen energian säilyminen: ½mv₁² = ½mv₂² + mg·2r" (carried over, optional).
 
 ## Checked
-- I recomputed all 12 answers in one script with my own formulas. They match exercises.json and answers.py: 5.0; 1.7534; 6.6667; 7.9057; 900; 1.1048; 4.7374; 6.012; 2.0636; 27.6193; 1.4067; 201.3566.
-- New L2-01 (cyclist at the bottom of a dip):
-  - N − mg = mv²/r gives N = 80 kg × (9.81 + 4.0) m/s² = 1105 N.
-  - The voimakuvio draws N longer than G (1104.8 vs 784.8), with a pointing up toward the centre.
-  - The reasonableness check is right: N ≈ 1.4 G, and v²/r ≈ 0.4 g.
-- L1-03 reasonableness check now separates the 6.7 N horizontal net force from the rope tension, √(6.7² + 4.9²) ≈ 8.3 N. Round 1 polish item fixed.
-- L3-02 now uses T only for the tension. The frequency comes from v = 2πr f, so the two meanings of T no longer clash.
-- Every voimakuvio has the centre on the right with `akselit 0`:
-  - Friction or tension and a point right, toward the centre, and x points right.
-  - The arrow lengths keep the ratios the text states: 1/10 of G in L3-01, 1/4 of G in L3-03, N = G on a level surface.
-- Every solution solves symbolically before substituting. The conversions are right (80 km/h to m/s, m/s to km/h with 3.6, N to kN).
-- Significant figures follow the limiting data (L1-02 to 3 figures, the rest to 2).
-- The tasks state their conditions: a level road and no air or rolling resistance in the road tasks, a smooth table in L3-02, and "oletetaan vaakasuora ympyrä" for the hammer.
-- Scope: rotation frequency is used, ω is not.
+- The diff since the last science review (commit 1847106e2 → HEAD) touches only solutions.md in fy5-4, 3 insertions and 1 deletion, all in L3-05.
+- L3-05: the old single display formula is split into $\dfrac{\tan\alpha+\mu_0}{1-\mu_0\tan\alpha} = \dfrac{v^2}{g\,r}$ followed by $v_\text{max} = \sqrt{g\,r\,\dfrac{\tan\alpha+\mu_0}{1-\mu_0\tan\alpha}}$. The maths is identical, and dropping the ⇒ loses nothing, because the second line follows directly by solving for v.
+- L3-05 numbers recomputed: tan 8,0° = 0,1405, g r = 1275,3 m²/s², fraction 0,5727, v_max = 27,03 m/s = 97,29 km/h; v₀ 48,2 and flat 81,3 km/h are unchanged.
+- Both display formulas are on their own paragraphs with blank lines, consistent with the other display math in the solution.
+- Nothing else in exercises.json, solutions.md or answers.py has changed, so the earlier PASS findings (L1-08, L2-05, L3-04 data consistency, MC options, scope, 8/7/5) still hold.
+- The content hash is 46e452c734acb155 at both the start and the end.
