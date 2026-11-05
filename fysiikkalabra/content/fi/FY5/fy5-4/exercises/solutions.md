@@ -273,7 +273,9 @@ $$\dfrac{\sin\alpha + \mu_0\cos\alpha}{\cos\alpha - \mu_0\sin\alpha} = \dfrac{v^
 
 Murtolauseke jaetaan osoittajasta ja nimittäjästä suureella $\cos\alpha$:
 
-$$\dfrac{\tan\alpha + \mu_0}{1 - \mu_0\tan\alpha} = \dfrac{v^2}{g\,r} \quad\Rightarrow\quad v_\text{max} = \sqrt{g\,r\,\dfrac{\tan\alpha + \mu_0}{1 - \mu_0\tan\alpha}}$$
+$$\dfrac{\tan\alpha + \mu_0}{1 - \mu_0\tan\alpha} = \dfrac{v^2}{g\,r}$$
+
+$$v_\text{max} = \sqrt{g\,r\,\dfrac{\tan\alpha + \mu_0}{1 - \mu_0\tan\alpha}}$$
 
 **Muunnokset:** $1\,\text{m/s} = 3{,}6\,\text{km/h}$, joten tulokset kerrotaan luvulla $3{,}6$.
 **Sijoitus:** Ensin $\tan\alpha = \tan 8{,}0\,{}^\circ = 0{,}1405$ ja $g\,r = 9{,}81\,\text{m/s}^2\cdot 130\,\text{m} = 1275{,}3\,\text{m}^2/\text{s}^2$.

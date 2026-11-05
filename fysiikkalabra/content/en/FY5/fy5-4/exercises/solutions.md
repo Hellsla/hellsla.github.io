@@ -273,7 +273,9 @@ $$\dfrac{\sin\alpha + \mu_0\cos\alpha}{\cos\alpha - \mu_0\sin\alpha} = \dfrac{v^
 
 The numerator and the denominator of the fraction are divided by $\cos\alpha$:
 
-$$\dfrac{\tan\alpha + \mu_0}{1 - \mu_0\tan\alpha} = \dfrac{v^2}{g\,r} \quad\Rightarrow\quad v_\text{max} = \sqrt{g\,r\,\dfrac{\tan\alpha + \mu_0}{1 - \mu_0\tan\alpha}}$$
+$$\dfrac{\tan\alpha + \mu_0}{1 - \mu_0\tan\alpha} = \dfrac{v^2}{g\,r}$$
+
+$$v_\text{max} = \sqrt{g\,r\,\dfrac{\tan\alpha + \mu_0}{1 - \mu_0\tan\alpha}}$$
 
 **Conversions:** $1\,\text{m/s} = 3.6\,\text{km/h}$, so the results are multiplied by $3.6$.
 **Substitution:** First $\tan\alpha = \tan 8.0\,{}^\circ = 0.1405$ and $g\,r = 9.81\,\text{m/s}^2\cdot 130\,\text{m} = 1275.3\,\text{m}^2/\text{s}^2$.
