@@ -1,13 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: b89c353d4dd880b3
+CONTENT-HASH: 4fccaba6f57f9329
 
 ## Blocking
 - none
+
+## Fixed
+- (fixed by coordinator) L2-06 solution: subscripts meas/model renamed obs/mod (defined in Find) to stop a 360 px overflow; reads fine, check_i18n en 0 fy5-15 errors.
+- (fixed) L2-07 b) and solution Find: "estimates the intensity to be too great" → "overestimates" (matches the Finnish "arvioi moninkertaiseksi" and reads naturally).
 
 ## Polish
 - none
 
 ## Checked
-- exercises.json and solutions.md against content/fi/FY5/fy5-15/exercises (PASS b85ecd549e58ccf6): all 124 numbers of exercises.json and 547 of solutions.md identical with decimal points; answers, units and tolerances unchanged (check_i18n en 0 errors).
-- Physics of every solution as in the Finnish: L1 2.0·10⁻³ W/m², 75 dB, 3.2·10⁻³ W/m², 2.5·10⁻⁴ W/m², 20 dB; L2 86 dB, 1.8 dB, 73 dB, 4 saws; L3 85 dB, 16 m, negative level → I ≈ 3.2·10⁻¹³ W/m² > 0.
-- Terms: sound intensity level, threshold of hearing, anechoic room, public address system, independent sources; symbols L_H, L_K kept as in the Finnish (subscripts are labels, defined in Given).
+- New exercises L1-06..08, L2-05..07, L3-04..05 in exercises.json and solutions.md against content/fi: ids, answers (answer strings, 120, 6.03, 4.0, 2.5, 320, 45), units, tolerances, kind lists, correct flags and choice order identical; data table cells and every number in solutions.md identical (decimal point in en, decimal comma in fi-easy).
+- Physics and wording of all solutions equal to the Finnish: 0 dB = I0, two dishwashers 67 dB, 120 dB, 6.03 dB per doubling, 3.96 dB hall excess, phone error 4.0 dB and factor 2.5 with saturation at 90 dB, 0.39 W and 315 m, 84.9 dB and 45 m.
+- check_i18n en: no fy5-15 errors (remaining errors are fy5-16, not this chapter).
+- Terms: sound intensity level, threshold of hearing/pain, point source, reverberant hall, calibrated meter; no Finnish left (subscripts ref, phone, meas, model, limit are English).

@@ -1,21 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 3fca34ecee93e95f
+CONTENT-HASH: d998e72d3f3e680e
 
 ## Blocking
 
 ## Polish
-- exercises.json L1-02, L1-03, L2-03, L3-03 (text) — "Käytä äänen nopeutena ilmassa 340 m/s." follows the question, but the question should be last — put it before: "... Äänen nopeus ilmassa on 340 m/s. Mikä on putken ilmapatsaan perustaajuus?" Same for L2-04 ("Lue tarvittavat tiedot kuvasta.") and L3-01 ("Pillin pituus ... eivät muutu.").
-- solutions.md L2-01 Kysytty/Kaava — $f_\text{2}-f_\text{1}$ reads as the 2nd and 1st natural frequency, which the lesson means by $f_2$, $f_1$ — use $f_\text{jälkeen}-f_\text{ennen}$.
-- L2-04 figure (capture L2-1280-4) — the pulley centre sits at about 1,22 m on the ruler, not at the stated 1,20 m; nodes are at 0,30 m intervals — align the ruler's 1,20 mark with the pulley centre.
-- solutions.md L2-02 Järkevyys — "vertaamalla kahta resonanssia ... pääkorjauksen virheestä" introduces a method the lesson does not teach — add "tässä luvussa pääkorjaus jätetään huomiotta" or drop it.
-- L3-02 Vastaus — "kolme merkitsevää numeroa, koska erotus ... on kolminumeroinen" is shaky significant-figure logic — "taajuudet on annettu kolmella numerolla".
+- fy5-13-L2-06 — answer 343 m/s also appears in fy5-11-L2-05; a different value for this task would help students who compare answers.
 
 ## Checked
-- Levels 5/4/3; none repeats the example (tuning by pressing); L2-01 tuning by tension is a different quantity.
-- Slot goals covered: string, open pipe, closed pipe, node spacing, overtones, resonance-tube measurement (LOPS experiment), consecutive resonances (L3).
-- Contexts recognisable: double bass, cello, guitar, organ, tuning-fork tube, jump rope.
-- Answers recomputed: 41,0; 515,2; 32,7; 0,70; 392; 5,38; 339,7; 33,3; 60,0; 131; 110; 0,500 all correct.
-- Solutions: principle explained, one step per line, sanity check with a second route.
-- L2-04 figure and its description give length, loop count and ruler without wavelength or speed.
-- Finnish: case after number+unit correct; terms match the glossary.
-- Phone: only 1280 px exercise captures exist; calculations fit; 360 px layout covered by the deterministic check.
+- Round 1 Polish items applied: L3-04 c) now "suhteen $f_1^2/F$ keskiarvoa"; L3-05 solution says "yläsävelet" not "sointiväri"; L1-07 distractor 3 feedback reworded; "pään korjaus" now consistently "pääkorjaus".
+- No Blocking items existed in round 1; the diff (wording only) changes no number, so L2-05 (95,96 Hz, 122,8 m/s), L2-06 (λ 67,0 cm, 343 m/s, e 0,45 cm), L3-04 (k 330,1, 199 Hz) and L3-05 (A open 330,9; B closed 330,7; mean 330,8 -> 331 m/s; swapped types 662/165 m/s) still match their solutions (L3-05 recomputed).
+- Simplifying assumption "pääkorjaus ohitetaan" in the lesson and L3-05 does not contradict L2-06, which explicitly measures the correction as an experiment and says so.
+- No overlap with fy5-1..12 tasks or answers; scope stays in seisova aalto / resonanssiputki; no "graph" kind, no figure in the new tasks.
+- Levels fit (L1 concept and error analysis, L2 data/experiment, L3 modelling and multi-step), coherent with the plan in docs/exercise-bank/FY5.md.

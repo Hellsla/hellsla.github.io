@@ -1,18 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 60e06419cfa4fd4f
+CONTENT-HASH: e722395ef4ea4e64
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- All 12 answers recomputed with my own formulas; all agree with exercises.json and answers.py (L1-02 stored 0,78 = 0,780 m within tolerance).
-- solutions.md L1-02 Järkevyys now gives the audible range in air correctly (about 2 cm to over 10 m).
-- L3-02 new Perustelu: one blow, two media, different speeds, steel first — correct and matches the task's question.
-- L2-02 sig-fig reason (counted 18 does not limit) correct; s⁻¹ unit rewrites consistent.
-- yt-kuvaaja: T = 0,40 s readable, description carries the same data and does not give v.
-- L2-03: frequency conserved across the air–water boundary; λ_v = 3,24 m.
-- L3-01: same crest, less-than-λ condition checked; crest vs. material displacement explained correctly.
-- L3-03: v = 11 m/s realistic, t = 40 s, 800 × 0,050 s check.
-- Every solution complete, symbolic first, rounding justified by the limiting datum.
+- Delta since 16626c2582880ebf: the only content change is one sentence in solutions.md:126 (L1-06 Mallivastaus) on the distractor "kohdat pysyvät paikallaan": every point of the spring moves back and forth along the spring about its equilibrium position. Physics correct and consistent with the option's feedback; round 2 polish resolved.
+- No answer, unit, tolerance or answers.py line changed; all 18 numeric answers as recomputed in round 2 (L2-07 340 m/s, L3-04 5,1 m, L3-05 4,9 s).
+- L1-06 still has exactly one correct option; every distractor is now addressed in the model answer.
+- No new errors; scope and notation unchanged.
 - Hash identical at start and end.
