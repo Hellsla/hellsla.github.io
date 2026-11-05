@@ -281,7 +281,7 @@
       "unit": "",
       "tolerance": 0.02,
       "data": {
-        "caption": "Pressure of the air in a sealed bottle (example data)",
+        "caption": "Air pressure, sealed bottle (example data)",
         "columns": [
           "$\\theta\\,({}^\\circ\\text{C})$",
           "$p\\,(\\text{kPa})$"
