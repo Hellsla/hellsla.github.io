@@ -241,8 +241,16 @@
     const copyBtn = ex.querySelector('.exp-copy'), expStatus = ex.querySelector('.exp-export-status');
     const n = [...document.querySelectorAll('.experiment')].indexOf(ex) + 1;   // Koe 1, Koe 2, … in page order
     const skey = 'ruukkilabra:' + pageId + ':koe' + n;
-    const saved = (() => { try { const v = JSON.parse(localStorage.getItem(skey)); return v && v.vary === vary && JSON.stringify(v.measure) === JSON.stringify(measure) && Array.isArray(v.rows) ? v.rows : null; } catch (e) { return null; } })();
-    const keep = (rs) => { try { if (rs.length) localStorage.setItem(skey, JSON.stringify({ vary, measure, rows: rs })); else localStorage.removeItem(skey); } catch (e) { /* private mode, blocked storage */ } };
+    let savedText = null; try { savedText = localStorage.getItem(skey); } catch (e) { savedText = null; }
+    const saved = (() => { try { const v = JSON.parse(savedText); return v && v.vary === vary && JSON.stringify(v.measure) === JSON.stringify(measure) && Array.isArray(v.rows) ? v.rows : null; } catch (e) { return null; } })();
+    // the table is written at once after every change (a closed tab keeps the last measurement), but only when it changed:
+    // a restored table is not written back (2026-11-05)
+    let kept;
+    const keep = (rs) => {
+      const text = rs.length ? JSON.stringify({ vary, measure, rows: rs }) : null;
+      if (text !== null && text === kept) return;
+      try { if (text) localStorage.setItem(skey, text); else localStorage.removeItem(skey); kept = text; } catch (e) { kept = undefined; /* private mode, blocked storage */ }
+    };
     let rows = [], armed = false;
     let words = {}; try { words = JSON.parse(ex.dataset.words || '{}'); } catch (e) { words = {}; }
     const say = (t) => { status.textContent = t; if (t.includes('$')) typeset(status); };
@@ -255,22 +263,27 @@
     };
     whenAdapter((A) => {
       const unit = (k) => (A && A.params && A.params[k] && A.params[k].unit ? A.params[k].unit : '');
-      const render = () => {
-        tbody.innerHTML = '';
-        rows.forEach((r) => {
-          const tr = document.createElement('tr');
-          const td = (x, u, k, raw) => (words[k] && String(x) in words[k] ? `<td data-plain="${attr(cell('', words[k][String(x)]))}" data-value="${attr(cell(x, words[k][String(x)]))}">${words[k][String(x)]}</td>`   // a select's value or a switch in words ("values" of the experiment)
-            : `<td data-plain="${fi(x)}${u ? ' ' + u : ''}" data-value="${attr(cell(raw === undefined ? x : raw, x))}">${fiTex(x, u)}</td>`);   // plain text for the notes, the bare number for the export
-          const shown = (x) => (typeof x === 'string' && !(words[vary] && x in words[vary]) && typeof window.__v === 'function' ? window.__v(x) : x);   // a body or material named in the page's language (sim "values")
-          tr.innerHTML = td(shown(r.vary), unit(vary), vary, r.vary) + measure.map((k) => td(r[k], unit(k), k)).join('');
-          tbody.appendChild(tr);
-        });
-        typeset(tbody);
+      const td = (x, u, k, raw) => (words[k] && String(x) in words[k] ? `<td data-plain="${attr(cell('', words[k][String(x)]))}" data-value="${attr(cell(x, words[k][String(x)]))}">${words[k][String(x)]}</td>`   // a select's value or a switch in words ("values" of the experiment)
+        : `<td data-plain="${fi(x)}${u ? ' ' + u : ''}" data-value="${attr(cell(raw === undefined ? x : raw, x))}">${fiTex(x, u)}</td>`);   // plain text for the notes, the bare number for the export
+      const shown = (x) => (typeof x === 'string' && !(words[vary] && x in words[vary]) && typeof window.__v === 'function' ? window.__v(x) : x);   // a body or material named in the page's language (sim "values")
+      const rowEl = (r) => { const tr = document.createElement('tr'); tr.innerHTML = td(shown(r.vary), unit(vary), vary, r.vary) + measure.map((k) => td(r[k], unit(k), k)).join(''); return tr; };
+      const changed = () => {
         if (copyBtn) copyBtn.disabled = !rows.length;
         if (expStatus) expStatus.textContent = '';
         keep(rows);
       };
-      if (saved && saved.length) { rows = saved; render(); announce(); }   // the measurements of an earlier visit
+      // the whole table (a restored visit, Nollaa); a new measurement adds and typesets its own row only (2026-11-05:
+      // the table used to be rebuilt and every formula in it typeset again after each measurement)
+      const render = () => {
+        tbody.textContent = '';
+        const all = document.createDocumentFragment();
+        rows.forEach((r) => all.appendChild(rowEl(r)));
+        tbody.appendChild(all);
+        typeset(tbody);
+        changed();
+      };
+      const append = (r) => { const tr = rowEl(r); tbody.appendChild(tr); typeset(tr); changed(); };
+      if (saved && saved.length) { rows = saved; kept = savedText; render(); announce(); }   // the measurements of an earlier visit, already stored as they are
       if (copyBtn) copyBtn.addEventListener('click', () => {
         const text = asTsv(tableRows(ex.querySelector('table.exp-table')));
         if (!text) return;
@@ -301,7 +314,7 @@
         const row = { vary: S[vary] };
         measure.forEach((k) => { row[k] = S[k]; });
         if (rows.length && rows[rows.length - 1].vary === row.vary) { say(msg('exp_same_value', { vary: varyName })); return; }
-        rows.push(row); render(); announce();
+        rows.push(row); append(row); announce();
         say(rows.length < min ? msg('exp_recorded_more', { n: rows.length, vary: varyName, left: min - rows.length }) : msg('exp_recorded_enough', { n: rows.length }));
       });
       reset.addEventListener('click', () => {

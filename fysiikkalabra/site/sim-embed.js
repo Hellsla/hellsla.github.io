@@ -15,6 +15,12 @@
      simulation too); words outside the dollars stay text in the page font. A p5 element's .html() with $…$ (the
      readout, a legend) renders its maths the same way, and is re-rendered only when its string changes.
    Tests run at 1280 px, where the container is wider than 600 px, so the canvas keeps its native size there.
+   - draws a static simulation only when something changes (2026-11-05, performance): a sim named in STATIC below has
+     no motion of its own; its picture follows its controls, the pointer and its own events. It is drawn after setup,
+     after any input, change, click, key or pointer event on it, a resize, a font load, a return into view and an
+     adapter call, for a few frames until the picture and simState stop changing (an eased value settles), never in a
+     60 fps loop. If it keeps changing for STATIC_MAX frames it is not static after all and loops as before.
+     ?simloop=1 (or window.flSimLoop = true before the page loads) keeps the old continuous loop, for comparison tests.
    - "Suurenna" (teacher 2026-11-03, "simulaatiot saa klikattua isoksi") shows the whole simulation card full screen
      (the Fullscreen API, or a fixed layer where it is missing, as on an iPhone); the canvas then fills the window
      (teacher 2026-11-03: no empty margins; the Käyttöohje and model boxes are hidden there), the controls stay beside it on a wide screen, and Esc or "Pienennä" brings it back.
@@ -51,7 +57,23 @@
 
   const MATH = { delimiters: [{ left: '$', right: '$', display: false }], throwOnError: false };
   let fontGen = 0;                             // bumped when a web font (KaTeX's) finishes loading: label sizes measured before it are stale
-  try { document.fonts.addEventListener('loadingdone', () => { fontGen++; }); document.fonts.ready.then(() => { fontGen++; }); } catch (e) { /* no FontFaceSet */ }
+  const onFont = new Set(), simWakers = new Set();   // the on-demand sims to draw again with new metrics, or after an adapter call
+  window.flSimWake = () => simWakers.forEach((f) => f());
+  const fontLoaded = () => { fontGen++; onFont.forEach((f) => f()); };
+  try { document.fonts.addEventListener('loadingdone', fontLoaded); document.fonts.ready.then(fontLoaded); } catch (e) { /* no FontFaceSet */ }
+  // the sims without motion of their own (2026-11-05): checked by scripts/test_sims.py, which fails a listed sim that
+  // changes while nothing happens or whose drawn result differs from the continuous loop's. Names: sims/<course>/<name>
+  // as "fy6/fy6-9"; FY3's <id>-sim.js as "fy3-4".
+  const STATIC = new Set([/*STATIC*/
+    'fy1/fy1-4', 'fy2/fy2-2', 'fy5/fy5-2', 'fy5/fy5-5', 'fy5/fy5-8', 'fy6/fy6-2', 'fy6/fy6-5', 'fy6/fy6-9', 'fy6/fy6-10', 'fy6/fy6-11', 'fy6/fy6-13', 'fy6/fy6-14',
+    'fy7/fy7-4', 'fy7/fy7-8', 'fy7/fy7-9', 'fy7/fy7-10', 'fy7/fy7-11', 'fy7/fy7-12', 'fy7/fy7-13', 'fy7/fy7-14', 'fy7/fy7-15', 'fy7/fy7-16', 'fy8/fy8-5', 'fy8/fy8-6', 'fy8/fy8-10',
+  /*END*/]);
+  const STATIC_MAX = 240;                      // frames of change after one event before a listed sim counts as animated
+  const loopAlways = (() => { try { return window.flSimLoop === true || /[?&]simloop=1\b/.test(location.search); } catch (e) { return false; } })();
+  const simName = (src) => {
+    const m = /sims\/([^/]+\/[^/]+)\/sim\.js(?:[?#]|$)/.exec(src || '') || /(?:^|\/)([^/]+)-sim\.js(?:[?#]|$)/.exec(src || '');
+    return m ? m[1] : '';
+  };
   const mixed = (el, str) => {                 // "Massa $m = 10$ kg": text nodes and KaTeX spans
     el.textContent = '';
     str.split(/(\$[^$]+\$)/).forEach((part) => {
@@ -78,6 +100,9 @@
 
   class Embedded extends Base {
     constructor(sketch, node) {
+      const script = document.currentScript;     // the sim's own <script> runs `new p5(...)`
+      const name = simName(script && script.src);
+      const onDemand = !loopAlways && !!name && STATIC.has(name);
       super((p) => {
         const createSelect = p.createSelect;     // an option labelled with one of the sim's values: shown translated, value kept
         p.createSelect = function (...a) {
@@ -128,18 +153,30 @@
           st.top = Math.max(0, Math.min(ly + fy * el.__h, ch - el.__h)).toFixed(1) + 'px';
           return p;
         };
-        const textWidth = p.textWidth, widths = new Map();
-        let meter = null;
+        // the widths of $…$ labels, measured once per text size and font state. A sim whose label carries a live value
+        // ("$t = 1{,}23\,\text{s}$") asks for a new string every frame, so the cache is bounded (least recently used out)
+        // and emptied when a font finishes loading, since every width measured before it is stale (2026-11-05).
+        const textWidth = p.textWidth, widths = new Map(), WIDTHS_MAX = 400;
+        let meter = null, widthsGen = fontGen;
         p.textWidth = function (str) {           // the width of a $…$ label as KaTeX draws it, in sketch units
           if (typeof str !== 'string' || !str.includes('$') || !window.katex) return textWidth.call(p, str);
-          const key = fontGen + '|' + p.textSize() + '|' + str;
-          if (!widths.has(key)) {
+          if (widthsGen !== fontGen) { widths.clear(); widthsGen = fontGen; }
+          const key = p.textSize() + '|' + str;
+          let w = widths.get(key);
+          if (w === undefined) {
             if (!meter) { meter = document.createElement('div'); meter.className = 'sim-tex'; meter.style.cssText = 'position:absolute;visibility:hidden;left:-9999px;top:0'; document.body.appendChild(meter); }
             meter.style.fontSize = p.textSize() + 'px'; mixed(meter, str);
-            widths.set(key, meter.getBoundingClientRect().width);
-          }
-          return widths.get(key);
+            w = meter.getBoundingClientRect().width;
+            if (widths.size >= WIDTHS_MAX) widths.delete(widths.keys().next().value);
+          } else widths.delete(key);             // re-inserted below: the most recently used last
+          widths.set(key, w);
+          return w;
         };
+        // read by scripts/test_sims.py: how the sim is drawn, and the label-width cache
+        window.flSimInfo = () => ({ name, onDemand: onDemand && !animated, animated, draws: p.__flDraws, looping: p.isLooping(),
+                                    widths: widths.size, widthsMax: WIDTHS_MAX });
+        window.flSimRedraw = () => p.redraw();
+        window.flSimTextWidth = (str, size) => { p.push(); if (size) p.textSize(size); const w = p.textWidth(str); p.pop(); return w; };
         const root = () => (p.canvas && p.canvas.parentElement) || document.getElementById('sim-root');
         const fit = () => {
           const el = root();
@@ -166,20 +203,76 @@
           if (simRoot && window.renderMathInElement) window.renderMathInElement(simRoot, MATH);   // labels and legends set once
           wrapCanvas();
           fit();
-          if ('ResizeObserver' in window) new ResizeObserver(fit).observe(root());
-          else window.addEventListener('resize', fit);
+          const resized = () => { fit(); wake(); };
+          if ('ResizeObserver' in window) new ResizeObserver(resized).observe(root());
+          else window.addEventListener('resize', resized);
           if ('IntersectionObserver' in window) {
             new IntersectionObserver((entries) => {
-              entries.forEach((en) => { if (en.isIntersecting) p.loop(); else p.noLoop(); });
+              entries.forEach((en) => { if (onDemand && !animated) { if (en.isIntersecting) wake(); } else if (en.isIntersecting) loop.call(p); else p.noLoop(); });
             }, { rootMargin: '120px 0px' }).observe(p.canvas);
           }
           if (reduced) p.frameRate(12);
           if (font && document.fonts && document.fonts.load) {
-            document.fonts.load('16px "' + font + '"').then(() => { p.textFont(font); }).catch(() => {});
+            document.fonts.load('16px "' + font + '"').then(() => { p.textFont(font); wake(); }).catch(() => {});
           }
+          if (onDemand) startOnDemand();
+        };
+        // on-demand drawing of a STATIC sim (header): p.redraw() in bursts that end when the picture and the state stop changing
+        let burst = 0, frame = 0, still = 0, lastSig = null, thumb = null, animated = false;
+        p.__flDraws = 0;                         // frames drawn, for scripts/test_sims.py
+        const loop = p.loop;
+        const signature = () => {
+          let st = '';
+          try { st = JSON.stringify(window.simState); } catch (e) { st = String(Math.random()); }
+          try {
+            if (!thumb) { thumb = document.createElement('canvas'); thumb.width = 48; thumb.height = 32; }
+            const t = thumb.getContext('2d', { willReadFrequently: true });
+            t.clearRect(0, 0, 48, 32); t.drawImage(p.canvas, 0, 0, 48, 32);
+            const d = t.getImageData(0, 0, 48, 32).data; let h = 0;
+            for (let i = 0; i < d.length; i++) h = (h * 31 + d[i]) | 0;
+            st += '|' + h + '|' + p.width + 'x' + p.height;
+          } catch (e) { /* a tainted or missing canvas: the state alone */ }
+          return st;
+        };
+        const tick = () => {
+          frame = 0;
+          if (animated) return;
+          p.redraw();
+          const sig = signature();
+          still = sig === lastSig ? still + 1 : 0; lastSig = sig;
+          burst++;
+          if (burst >= STATIC_MAX) { animated = true; onFont.delete(wake); simWakers.delete(wake); p.loop = loop; loop.call(p); return; }   // moving on its own: as before
+          if (burst < 3 || still < 2) frame = requestAnimationFrame(tick);
+          else burst = 0;
+        };
+        function wake() {
+          if (!onDemand || animated || !p.canvas) return;
+          still = 0; burst = Math.min(burst, 1);
+          if (!frame) frame = requestAnimationFrame(tick);
+        }
+        const startOnDemand = () => {
+          p.noLoop();
+          p.loop = () => wake();                 // the adapter's resume() and a sketch's own loop(): one more burst
+          onFont.add(wake); simWakers.add(wake);
+          const box = document.getElementById('sim') || root();
+          ['input', 'change', 'click', 'keydown', 'keyup'].forEach((t) => box.addEventListener(t, wake, true));
+          let over = false, held = false;
+          const near = (e) => {                  // p5 reads the pointer on the whole window: wake on it over the canvas, while a
+            const pt = e.changedTouches && e.changedTouches[0] ? e.changedTouches[0] : e;   // press that began there lasts, and once on leaving
+            const r = p.canvas.getBoundingClientRect();
+            const now = pt.clientX >= r.left && pt.clientX <= r.right && pt.clientY >= r.top && pt.clientY <= r.bottom;
+            if (/down|start/.test(e.type) && now) held = true;
+            if (now || over || held) wake();
+            if (/up|end|cancel/.test(e.type)) held = false;
+            over = now;
+          };
+          ['pointermove', 'pointerdown', 'pointerup', 'pointercancel', 'touchstart', 'touchmove', 'touchend', 'touchcancel'].forEach((t) => window.addEventListener(t, near, { passive: true }));
+          p.canvas.addEventListener('wheel', wake, { passive: true });
+          window.addEventListener('keydown', wake); window.addEventListener('keyup', wake);
+          wake();
         };
         if (draw) p.draw = () => {
-          used = 0;
+          used = 0; p.__flDraws++;
           p.push(); p.scale(s); draw(); p.pop();
           for (let i = used; i < labels.length; i++) labels[i].style.display = 'none';   // a label not drawn this frame
         };
@@ -242,16 +335,17 @@ window.simText = (el) => {
    paused off-screen. get(): defaults to window.simState. pause()/resume(): optional, the sketch's own noLoop()/loop(). */
 window.defineSimAdapter = (spec) => {
   const params = spec.params || {};
+  const wake = () => { if (window.flSimWake) window.flSimWake(); };   // a static sim drawn on demand (sim-embed.js above) settles after the call
   const fire = (el) => { el.dispatchEvent(new Event('input', { bubbles: true })); el.dispatchEvent(new Event('change', { bubbles: true })); };
   const el = (k) => { const p = params[k]; return p && (typeof p.input === 'string' ? document.querySelector(p.input) : p.input); };
   const adapter = {
     params,
     capabilities: { set: Object.keys(params), lock: true, reset: typeof spec.reset === 'function', pause: typeof spec.pause === 'function' },
     get() { if (spec.step) spec.step(); return (spec.get || (() => window.simState))(); },
-    set(values) { Object.entries(values).forEach(([k, v]) => { const e = el(k); if (!e) return; if (e.tagName === 'SELECT') e.value = String(v); else e.value = v; fire(e); }); if (spec.step) spec.step(); },
+    set(values) { Object.entries(values).forEach(([k, v]) => { const e = el(k); if (!e) return; if (e.tagName === 'SELECT') e.value = String(v); else e.value = v; fire(e); }); if (spec.step) spec.step(); wake(); },
     lock(k, on) { const e = el(k); if (!e) return; e.disabled = !!on; e.setAttribute('aria-disabled', on ? 'true' : 'false'); e.closest('label')?.classList.toggle('locked', !!on); },
-    reset() { Object.keys(params).forEach((k) => adapter.lock(k, false)); if (spec.reset) spec.reset(); if (spec.step) spec.step(); },
-    pause() { if (spec.pause) spec.pause(); }, resume() { if (spec.resume) spec.resume(); },
+    reset() { Object.keys(params).forEach((k) => adapter.lock(k, false)); if (spec.reset) spec.reset(); if (spec.step) spec.step(); wake(); },
+    pause() { if (spec.pause) spec.pause(); }, resume() { if (spec.resume) spec.resume(); wake(); },
   };
   window.simAdapter = adapter;
   return adapter;
