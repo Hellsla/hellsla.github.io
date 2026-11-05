@@ -1,13 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 0922a49110a59e88
+CONTENT-HASH: cc0ae5f5ee1c450b
 
 ## Blocking
 - none
 
+## Fixed
+- (fixed) L2-07 exercise text: "kalibroitu" explained in plain words ("mittariin, jonka lukemat on tarkistettu oikeiksi").
+- (fixed) L3-04 solution: "ilman vaimennus" → "ilman aiheuttama vaimennus" (unambiguous).
+
 ## Polish
-- (korjattu) L3-03:n itsearvioinnin viimeinen kohta oli epäkieliopillinen ("Tuulettimen kuulee siis vain herkimmillä kuulijoilla"); nyt "Siksi tuulettimen voivat kuulla vain herkimmät kuulijat herkimmillä taajuuksilla."
+- none
 
 ## Checked
-- 12 tehtävää tasoilla 5/4/3, samat tilanteet; pitkät tehtävänannot jaettu lyhyiksi virkkeiksi, kysymys omana virkkeenään; mitään oletusta ei pudotettu.
-- Jokaisessa ratkaisussa kaikki seitsemän vaihetta; L3-03:ssa mallivastaus ja itsearviointi.
-- Kaappaukset: open-exercises-1280 (contact-5).
+- 8 new exercises have the same levels, order, kind marks, parts a)-c) and answer-box instruction as the Finnish; every solution keeps Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness and the part c) justification text.
+- Choice feedback of L1-06 and L1-07 explains each wrong option as in the Finnish.
+- Plain Finnish: sentences split, causes joined with Siksi; the meaning of the Finnish is unchanged.

@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: b30fa233ef2dff5c
+CONTENT-HASH: 52fe102bfba8455b
+Mode: full
+Round: 1
 
 ## Blocking
+
+## Fixed
+- None needed: the translation text already matches the reviewed Finnish.
 
 ## Polish
 
 ## Checked
-- contact-5 #58–#60 (level 1 open with solutions, 1280 px): KaTeX renders, decimal points, aligned substitution chains, boxed answers, no overflow.
-- The exercise figure (fy5-9/kuvaaja-k, contact-1 #10, contact-5 #54) shows language-neutral LaTeX ticks with decimal points.
-- English: clear task instructions, British spelling, consistent terms (spring constant, period, acceleration of free fall).
-
-## Scores
-illustrations 4 · typography 4 · English 4 · accessibility 4
+- Screenshots of the new tasks (open-exercises 1280, L2, L3): choice lists, feedback boxes, data tables and solution boxes render without overflow or Finnish text.
+- Data-table headers and captions translated; units and decimal points in tables correct.
+- Formulas render (T = 2π√(m/k), T² = 4π²/k (m+m0)); no empty calculation boxes attributable to translation.

@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 31a86204a28d249f
+CONTENT-HASH: d62b2b53d0757222
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- L1-04 solution: "noin 4 min" (106 dB gives 3,8 min) and the condition that the protectors are well fitted, both now stated.
-- L3-03: "enintään 1 ms" is correct for 1000–3000 Hz.
-- L2-04: the added sentence (T found from a 30 dB decay without measuring the full 60 dB) is correct; this is the T30 method.
-- L3-02: the restructured solution is unchanged in physics. 12 m : 3,0 m = 4 is two doublings: 43 dB from one unit, 46 dB from both (exact 45,97).
-- Answers recomputed with exact energy summation, all agree: L1-01 2,0 h; L1-02 73 dB; L1-03 82 dB; L1-04 83 dB; L2-01 4,0 h; L2-02 150 %; L2-03 16 m; L2-04 0,90 s; L3-01 125 % (L_EX,8h ≈ 86 dB > 85); L3-02 46 dB; L3-03 3,4 m and 11–34 cm.
-- answers.py physics matches the task texts; model conditions stated in the tasks; solutions symbolic first, rounding justified.
+- Round-3 Polish resolved: L2-07 now uses 109 dB, so it no longer repeats the inquiry's 103 dB → 7,5 min. The coordinator confirmed that the inquiry has no 109, 1,875 or 1,9, and that the "109" hits in lesson.md are SVG path coordinates. In the exercise set, 109 dB occurs only in L2-07 (task and solution).
+- L2-07 recomputed: n = (109 − 85)/3 = 8; t_sall = 480 min / 256 = 1,875 min ≈ 1,9 min. The student's answer is 8 h : 8 = 1,0 h = 60 min exactly, so the earlier mismatch between 1,3 h and 80 min is gone.
+- answers.py round(t_allowed(109)·60, 1) = 1,9; exercises.json has 1.9 min with tolerance 0.02. An unrounded 1,875 is off by 1,3 % and is still accepted. Two significant figures fit the data.
+- Solution: the unknown is solved symbolically before substitution, the conversion 8 h = 480 min is right, and 2⁸ = 256 is right. a) names the error correctly: dividing by n instead of 2ⁿ.
+- Round-5 wording: Vastaus a) "jaetaan kahdella kahdeksan kertaa eli kaikkiaan luvulla 256" is right (2⁸ = 256). In the Järkevyys, 60 min / 1,875 min = 32 is exact; three halvings take 8 h to 1 h and five more take 60 min to 60/32 = 1,875 min, eight in all. Under t₀/n each extra step really shortens the time less. The inquiry's 7,5 min is no longer printed even as an intermediate value.
+- "opiskelija" is used throughout; the task text and the solution agree (24 dB, 8 steps, 1,0 h).
+- The rest of the set is unchanged since round 3: the other 15 numeric answers recomputed in round 3 still match answers.py and exercises.json.
+- The known eq-chain collapse on main is not counted as a finding.

@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 9df7eefc70484f70
+CONTENT-HASH: e63affccfd49f16d
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L1-03, L3-01, L3-03 pyytävät perustelua, mutta vastauskenttä ottaa vain arvon (kuten lähteessä).
+(none)
 
 ## Checked
-- Tasot 1–3 (5/4/3), tilanne ensin ja kysymys omana virkkeenään; "Anna vastaus …" jokaisessa numeerisessa tehtävässä.
-- Selkeä suomi: pitkät tehtävänannot pilkottu (L2-01, L3-01, L3-03) ilman että tietoa putoaa; käsitteet samat kuin oppitunnilla.
-- Kaikki ratkaisuvaiheet ja merkitsevien numeroiden perustelut mukana.
-- Avattu kaappari: open-exercises-1280-1 (taso 1, tehtävä 1 ratkaisu auki).
+- Lauseet lyhyitä ja sanasto tuttua; keskinormaali selitetään ("eli yhtä kaukana molemmista kaiuttimista"), matkaero määritellään ratkaisussa (kahden etäisyyden erotus).
+- Väärien vaihtoehtojen virhekäsitykset ja korjaava palaute säilyvät L1-06, L1-07 ja L2-06:ssa.
+- L3-04 ja L3-05: oletukset (yhtä suuret aallot, ei heijastuksia, esimerkkiaineisto) mukana, pitkät virkkeet pilkottu.
+- Merkitsevien numeroiden perustelut ja päättely säilyvät lähteen mukaisina.
