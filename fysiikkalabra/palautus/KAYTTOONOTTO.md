@@ -13,6 +13,18 @@ voi rajata asetuksia. Kirjaa poikkeamat tämän ohjeen loppuun.
 
 ---
 
+## 0. Mitä opiskelijalle kerrotaan
+
+RuukkiLabrassa on FY3–1:n Tehtävät-osion alussa vain painike **Lataa kaikki ratkaisut**. Sivulla ei ole pitkää
+ohjetta, joten kerro opiskelijoille itse (esim. lomakkeen kuvauksessa):
+
+- Kirjoita ratkaisut tehtävien *Kirjoita ratkaisu* -editoriin. Liitä kuvakaappaus editoriin näppäimillä Ctrl+V.
+  Rajaa kuvakaappaukseen vain tehtävään kuuluva sisältö.
+- Tiedostoon tulevat vain editoriin kirjoitetut ratkaisut (teksti, kaavat, kuvakaappaukset). Tarkista-kenttien
+  luvut ja valintatehtävien valinnat eivät tule mukaan, joten kirjoita vastaus ja valinta myös ratkaisuun.
+- Tiedostossa ei ole nimeä, sähköpostia eikä muiden lukujen ratkaisuja. Se tallentuu vain omalle laitteelle
+  (yleensä Lataukset-kansioon), ja se palautetaan tällä lomakkeella. Korjatun version voi palauttaa uudelleen.
+
 ## 1. Google Forms -lomake
 
 1. Kirjaudu eduespoo-tilille ja luo uusi lomake (Forms → Tyhjä lomake). Anna sille nimi, esim.

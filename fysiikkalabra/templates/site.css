@@ -481,11 +481,8 @@ form.check output[data-state=close]{color:#7a5a00;font-weight:600}form.check out
 .pad-note{margin:.3rem 0 0;font-size:var(--fs-ui);color:var(--ink-2)}
 .pad-save{margin:.3rem 0 0;font-size:var(--fs-ui);min-height:1.3em;color:var(--ink-2)}.pad-save[data-state=ok]{color:var(--accent-deep)}.pad-save[data-state=no]{color:#8a3b1a;font-weight:600}
 .pad-saved{margin:.4rem 0 0}.pad-saved>summary{font:600 var(--fs-ui) var(--sans);color:var(--accent-deep)}.pad-saved .pad-tools{margin-top:.3rem}
-/* Submission trial (palautus.js, FY3-1): the "Lataa ratkaisut" panel at the top of Tehtävät */
-.palautus{margin:0 0 1.5rem;padding:1rem 1.1rem;border:1px solid var(--accent-deep);border-radius:var(--inner-radius);background:var(--accent-soft);font-size:var(--fs-inner)}
-.palautus h3{margin:0 0 .5rem;font-size:var(--fs-task,19px)}.palautus p{margin:.4rem 0}.palautus-list{margin:.4rem 0 .8rem;padding-left:1.2rem}.palautus-list li{margin:.2rem 0}
-.palautus .palautus-btn{margin:.3rem 0}.palautus-done p{font-size:var(--fs-ui)}
-.pad-image-status:empty{display:none}
+/* Submission trial (palautus.js, FY3-1): "Lataa kaikki ratkaisut" at the top of Tehtävät */
+.palautus{margin:0 0 1.2rem}.palautus .palautus-btn{margin:0 0 .3rem}
 @media print{.palautus{display:none!important}}
 @media print{.pad-open,.pad-tools,.pad-note,.pad-save,.pad-saved,.pad .rich-text-editor-toolbar-root{display:none!important}}
 

@@ -382,7 +382,6 @@
           copyHtml(answer.answerHtml).then(() => { status.textContent = msg('pad_copied'); status.dataset.state = 'ok'; },
             () => { status.textContent = msg('pad_copy_failed'); status.dataset.state = 'no'; });
         });
-        li.dispatchEvent(new CustomEvent('fl:pad-ready', { bubbles: true, detail: { id: task.id, tools } }));   // palautus.js adds its image button
         setTimeout(() => root.querySelector('.rich-text-editor')?.focus(), 0);
       }, () => { made = false; status.textContent = msg('pad_failed'); status.dataset.state = 'no'; });
     });

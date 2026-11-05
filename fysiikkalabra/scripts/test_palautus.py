@@ -2,13 +2,14 @@
 
 End to end with made-up answers, in a browser:
   Student side, on the built Finnish FY3-1 page (templates/palautus.js):
-  - the "Lataa ratkaisut" panel at the top of Tehtävät with what the file holds, and only on the trial page
+  - only the button "Lataa kaikki ratkaisut" at the top of Tehtävät (no long instructions, no image button: a
+    screenshot is pasted with Ctrl+V; teacher 2026-11-05), and only on the trial page
   - the file fy3-1.ratkaisut.json: format and version, chapter, random submission id, every exercise once in page
     order, unanswered ones "empty"; text, formula (LaTeX + PNG) and a picture in their order in the right task; the
     last keystrokes of an open editor are in it; a solution of another chapter and any name or e-mail are not
   - the same solutions keep the submission id; a changed text, an added, replaced or removed picture give a new one
   - a failed save, a picture from the web, an SVG picture and a picture over the limit stop the download with a
-    message; a large picture added with "Lisää kuva" is made smaller and the student told so
+    message
   - the panel and an open editor fit at 360, 768 and 1280 px
   Teacher side, palautus/apps-script/ with palautus/test/gas-mock.js standing in for Sheets, Drive and google.script.run:
   - import: normal, duplicate (same file again), the same id from two students (both to be checked), a corrected
@@ -52,7 +53,6 @@ def png_bytes(w, h, rgb=(240, 200, 40)):
 tmp = ROOT / "preview" / "palautus-test"; tmp.mkdir(parents=True, exist_ok=True)
 small = tmp / "pieni.png"; small.write_bytes(png_bytes(40, 30))
 other = tmp / "toinen.png"; other.write_bytes(png_bytes(30, 40, (40, 90, 200)))
-huge = tmp / "suuri.png"; huge.write_bytes(png_bytes(3000, 1400))
 
 class Quiet(http.server.SimpleHTTPRequestHandler):
     def log_message(self, *a): pass
@@ -72,7 +72,16 @@ OPEN = "document.querySelectorAll('#exercises details.level').forEach((d) => { d
 def open_pad(pg, tid):
     pg.click(f'[id="{tid}"] .pad-open')
     pg.wait_for_selector(f'[id="{tid}"] .rich-text-editor')
-    pg.wait_for_selector(f'[id="{tid}"] .pad-image')
+
+
+def paste_png(pg, tid, path):
+    """A screenshot pasted with Ctrl+V: a paste event carrying a PNG file, as the clipboard gives it."""
+    pg.locator(f'[id="{tid}"] .rich-text-editor').click(); pg.keyboard.press("End")
+    pg.evaluate("""([tid, b64]) => { const bin = atob(b64), u = new Uint8Array(bin.length); for (let i = 0; i < bin.length; i++) u[i] = bin.charCodeAt(i);
+        const dt = new DataTransfer(); dt.items.add(new File([u], 'kuva.png', { type: 'image/png' }));
+        document.querySelector(`[id="${tid}"] .rich-text-editor`).dispatchEvent(new ClipboardEvent('paste', { clipboardData: dt, bubbles: true, cancelable: true })); }""",
+        [tid, base64.b64encode(path.read_bytes()).decode()])
+    pg.wait_for_timeout(300)
 
 
 def download(pg):
@@ -107,9 +116,9 @@ with sync_playwright() as p:
     pg.goto(BASE + "fy3-1.html"); pg.evaluate(OPEN)
     panel = pg.locator("#exercises .palautus")
     expect("the panel is at the top of Tehtävät", panel.count() == 1 and pg.evaluate("(() => { const p = document.querySelector('#exercises .palautus').previousElementSibling; return !!p && (p.matches('h2') || p.matches('.split-head')); })()"))
-    ptext = panel.inner_text()
-    for must in ["Lataa ratkaisut", "Rajaa kuvakaappaukseen vain tehtävään kuuluva sisältö.", "Tarkista-kenttiin", "eivät tule mukaan", "vain tälle laitteelle", "ei ole nimeäsi"]:
-        expect(f"the panel says {must!r}", must in ptext, ptext)
+    ptext = panel.inner_text().strip()
+    expect("only the button 'Lataa kaikki ratkaisut', no long instructions (teacher 2026-11-05)", ptext == "Lataa kaikki ratkaisut", ptext)
+    expect("no separate image button (Ctrl+V only)", pg.locator(".pad-image").count() == 0)
     tasks = pg.evaluate("[...document.querySelectorAll('#exercises li[id]')].filter((li) => li.querySelector(':scope > .task')).map((li) => li.id)")
     # another chapter's solution in the same store must stay out
     pg.evaluate("""() => new Promise((ok) => { const s = document.createElement('script'); s.src = 'padstore.js'; s.onload = ok; document.head.append(s); })""")
@@ -120,8 +129,7 @@ with sync_playwright() as p:
     pg.keyboard.type("Paino on "); pg.keyboard.press("Control+e"); pg.wait_for_timeout(300); pg.keyboard.type("G=mg"); pg.keyboard.press("Escape"); pg.wait_for_timeout(300)
     pg.keyboard.type(" eli")
     pg.keyboard.press("Enter"); pg.keyboard.type("toinen rivi")
-    with pg.expect_file_chooser() as fc: pg.click(f'[id="{t1}"] .pad-image')
-    fc.value.set_files(str(small)); pg.wait_for_timeout(300)
+    paste_png(pg, t1, small)
     pg.keyboard.type(" viimeinen")   # typed just before the download: must be in the file
     name, f1 = download(pg)
     files["v1"] = f1
@@ -144,15 +152,13 @@ with sync_playwright() as p:
     expect("the page says to return the file with Forms", "Palauta ladattu tiedosto opettajan Google Forms -lomakkeella." in pg.inner_text(".palautus-status"))
     _, f1b = download(pg)
     expect("the same solutions keep the submission id", f1b["submission_id"] == f1["submission_id"] and f1b["content_sha256"] == f1["content_sha256"])
-    expect("the panel tells it is the same version", "sama versio" in pg.inner_text(".palautus-done"))
     # a second task with a picture, then change text / replace / remove the picture
     open_pad(pg, t2)
     pg.locator(f'[id="{t2}"] .rich-text-editor').click(); pg.keyboard.type("F = 7,0 N")
     _, f2 = download(pg)
     expect("a changed answer gives a new submission id", f2["submission_id"] != f1["submission_id"])
     files["v2"] = f2
-    with pg.expect_file_chooser() as fc: pg.click(f'[id="{t2}"] .pad-image')
-    fc.value.set_files(str(small)); pg.wait_for_timeout(300)
+    paste_png(pg, t2, small)
     _, f3 = download(pg)
     expect("an added picture gives a new id", f3["submission_id"] != f2["submission_id"])
     expect("the picture is in the second task", [i["type"] for i in f3["answers"][3]["content"]] == ["text", "image"], f3["answers"][3]["content"])
@@ -166,14 +172,6 @@ with sync_playwright() as p:
     pg.locator(f'[id="{t2}"] .rich-text-editor').click(); pg.keyboard.type("!")
     _, f5 = download(pg)
     expect("a removed picture gives a new id", f5["submission_id"] != f4["submission_id"] and [i["type"] for i in f5["answers"][3]["content"]] == ["text"], f5["answers"][3]["content"])
-    # a large picture through "Lisää kuva" is made smaller, and the student is told
-    with pg.expect_file_chooser() as fc: pg.click(f'[id="{t2}"] .pad-image')
-    fc.value.set_files(str(huge)); pg.wait_for_timeout(1500)
-    note = pg.inner_text(f'[id="{t2}"] .pad-image-status')
-    expect("a large picture is made smaller and the student told so", "pienennettiin" in note, note)
-    _, f6 = download(pg)
-    big = [i for i in f6["answers"][3]["content"] if i["type"] == "image"]
-    expect("the smaller picture is in the file within the limits", big and max(big[0]["w"], big[0]["h"]) <= 2400 and len(base64.b64decode(big[0]["data"])) <= 2_000_000, big and (big[0]["w"], big[0]["h"]))
     # failed save: no download, a message
     pg.evaluate("() => { window.__put = window.flPadStore.put; window.flPadStore.put = () => Promise.reject(Object.assign(new Error('x'), { code: 'failed' })); }")
     pg.locator(f'[id="{t1}"] .rich-text-editor').click(); pg.keyboard.press("End"); pg.keyboard.type(" lisää")

@@ -5,17 +5,17 @@ Ensimmäinen koe tehdään **keksityillä vastauksilla**. Älä käytä oikeita 
 - opettajatilin (eduespoo), jolla lomake, kansio, taulukko ja skripti on tehty (KAYTTOONOTTO.md)
 - toisen opettajan tilin, jos mahdollista (jaettu arviointi)
 - kaksi opiskelijan testitiliä (A ja B), eduespoo-tunnukset
-- RuukkiLabran FY3–1-sivun, jossa on Lataa ratkaisut -painike (julkaistaan vasta, kun opettaja on yhdistänyt PR:n)
+- RuukkiLabran FY3–1-sivun, jossa on Lataa kaikki ratkaisut -painike (julkaistaan vasta, kun opettaja on yhdistänyt PR:n)
 
 Merkitse jokaiseen kohtaan ✓, ✗ tai havainto.
 
 ## 1. Opiskelija A lataa ratkaisut
-1. Avaa FY3–1 → Tehtävät. Paneeli *Palauta ratkaisut opettajalle (kokeilu)* näkyy tehtävien alussa.
-2. Kirjoita tehtävään 1-1 tekstiä, kaava (Ctrl+E) ja liitä kuvakaappaus (Ctrl+V). Lisää tehtävään 1-4 kuva
-   **Lisää kuva** -painikkeella.
-3. Kirjoita vielä muutama sana ja paina heti **Lataa ratkaisut**. Tiedosto `fy3-1.ratkaisut.json` latautuu, ja
+1. Avaa FY3–1 → Tehtävät. Painike **Lataa kaikki ratkaisut** näkyy tehtävien alussa.
+2. Kirjoita tehtävään 1-1 tekstiä, kaava (Ctrl+E) ja liitä kuvakaappaus (Ctrl+V). Liitä tehtävään 1-4 toinen
+   kuvakaappaus.
+3. Kirjoita vielä muutama sana ja paina heti **Lataa kaikki ratkaisut**. Tiedosto `fy3-1.ratkaisut.json` latautuu, ja
    sivu sanoo: *Palauta ladattu tiedosto opettajan Google Forms -lomakkeella.* Viimeisetkin sanat ovat mukana (kohta 4).
-4. Paina Lataa ratkaisut uudelleen muuttamatta mitään: *sama versio* ja sama tunnisteen alku.
+4. Lataa uudelleen muuttamatta mitään ja palauta molemmat tiedostot (kohta 2): tuonti tunnistaa saman version.
 
 ## 2. Palautus lomakkeella
 1. A avaa lomakkeen, kirjautuu eduespoo-tilillä ja palauttaa tiedoston. Lomake hyväksyy JSON-tiedoston.

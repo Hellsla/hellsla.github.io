@@ -24,7 +24,8 @@ RuukkiLabran `templates/palautus.js` tekee tiedoston opiskelijan selaimessa, ja 
 }
 ```
 
-- **Mukana on vain** luvun tehtävien *Kirjoita ratkaisu* -editorien sisältö, tälle laitteelle tallennettuna.
+- Opiskelija näkee vain painikkeen *Lataa kaikki ratkaisut* (ei pitkää ohjetta, opettaja 5.11.2026). Opettaja kertoo
+  opiskelijoille tarvittaessa itse, mitä tiedostossa on: **mukana on vain** luvun tehtävien *Kirjoita ratkaisu* -editorien sisältö, tälle laitteelle tallennettuna.
   Tarkista-kenttien luvut ja valintatehtävien valinnat eivät tule mukaan, koska niitä ei tallenneta. Ei nimeä,
   sähköpostia eikä muiden lukujen ratkaisuja.
 - `answers`: jokainen luvun tehtävä kerran sivun järjestyksessä. Tyhjä editori on `"empty"` ilman sisältöä.
@@ -52,8 +53,8 @@ RuukkiLabran `templates/palautus.js` tekee tiedoston opiskelijan selaimessa, ja 
 | kaava | 4000 merkkiä LaTeXia, kaavakuva 200 kt | |
 | osia | 400 / tehtävä | |
 
-Rajan ylitys näytetään opiskelijalle virheenä, eikä tiedostoa ladata. Kuvia ei pudoteta hiljaisesti. *Lisää kuva*
-pienentää yli 2400 px:n tai yli 2 Mt:n kuvan ja kertoo siitä.
+Rajan ylitys näytetään opiskelijalle virheenä painikkeen alla (mikä tehtävä ja mikä raja), eikä tiedostoa ladata.
+Kuvia ei pudoteta hiljaisesti. Kuvakaappaus liitetään editoriin Ctrl+V:llä; erillistä kuvapainiketta ei ole.
 
 ## Uusi versio
 Muutos, jota versio 1 ei ymmärrä, nostaa `version`-numeroa. Skripti hylkää tuntemattoman uudemman version

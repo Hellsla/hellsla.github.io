@@ -67,7 +67,7 @@ curriculum = json.loads((ROOT / "curriculum.json").read_text())
 if local_courses.validate(curriculum): sys.exit("\n".join(local_courses.validate(curriculum)))
 
 
-# Submission trial (teacher 2026-11-05): "Lataa ratkaisut" and the image button on these pages only (templates/palautus.js);
+# Submission trial (teacher 2026-11-05): "Lataa kaikki ratkaisut" on these pages only (templates/palautus.js);
 # the teacher's side is palautus/ (Google Forms + a Sheets-bound Apps Script), never part of the site.
 SUBMISSION_PAGES = {("fi", "fy3-1")}
 

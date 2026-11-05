@@ -1,6 +1,6 @@
 # Palautus- ja arviointikokeilu (FY3–1, suomi)
 
-Opettajan pyyntö 5.11.2026. Opiskelija tekee tehtävät RuukkiLabrassa, painaa **Lataa ratkaisut** ja palauttaa
+Opettajan pyyntö 5.11.2026. Opiskelija tekee tehtävät RuukkiLabrassa, painaa **Lataa kaikki ratkaisut** ja palauttaa
 tiedoston koulun Google Forms -lomakkeella. Opettaja tuo palautukset Sheetsiin sidotulla Apps Scriptillä ja
 arvioi tehtävän kerrallaan, opiskelija kerrallaan, nuolinäppäimillä. Sanallinen palaute annetaan Wilmassa.
 
@@ -17,13 +17,14 @@ Tämä kansio ei kuulu julkaistuun sivustoon (`site/`).
 | `apps-script/appsscript.json` | manifesti: aikavyöhyke, V8 ja kolme oikeutta |
 | `test/gas-mock.js` | testien korvikkeet Sheets-, Drive- ja google.script.run-palveluille |
 
-RuukkiLabran puolella: `templates/palautus.js` (paneeli, tiedoston muodostus, *Lisää kuva*), kaksi koukkua
-`templates/lesson.js`:ssä (`window.flPads.flush`, tapahtuma `fl:pad-ready`), `build.py`:n `SUBMISSION_PAGES` (vain
+RuukkiLabran puolella: `templates/palautus.js` (painike *Lataa kaikki ratkaisut* ja tiedoston muodostus; ei pitkää ohjetta eikä
+erillistä kuvapainiketta, kuvakaappaus liitetään editoriin Ctrl+V:llä, opettaja 5.11.2026), yksi koukku
+`templates/lesson.js`:ssä (`window.flPads.flush`), `build.py`:n `SUBMISSION_PAGES` (vain
 `fi`/`fy3-1`) ja tyylit `site.css`:ssä (`.palautus`). Muiden lukujen toiminta ei muutu.
 
 ## Testit
 `python scripts/test_palautus.py [site]` (CI:ssä) ja `python scripts/palautus_tasks.py --check`.
-Asetuksella `PALAUTUS_SHOTS=<kansio>` testi tallentaa kuvakaappaukset paneelista ja arviointinäkymästä.
+Asetuksella `PALAUTUS_SHOTS=<kansio>` testi tallentaa kuvakaappaukset painikkeesta ja arviointinäkymästä.
 
 **Testattu oikeasti:** opiskelijan vienti oikealla FY3–1-sivulla Chromiumissa. Apps Scriptin koodi (tuonti,
 tarkistus, kaksoiskappaleet, versiot, virheelliset ja haitalliset tiedostot, uudelleenajo, lukitus,

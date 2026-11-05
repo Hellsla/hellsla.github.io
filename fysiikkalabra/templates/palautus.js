@@ -1,5 +1,5 @@
 /* Submission trial (teacher 2026-11-05, "palautus- ja arviointikokeilu"; Finnish FY3-1 only, build.py SUBMISSION_PAGES).
-   "Lataa ratkaisut" writes one file, <chapter>.ratkaisut.json, from the solutions the student wrote in this chapter's
+   "Lataa kaikki ratkaisut" writes one file, <chapter>.ratkaisut.json, from the solutions the student wrote in this chapter's
    solution editors (lesson.js part 6, kept on this device by padstore.js). The student returns the file with the
    school's Google Forms form; the teacher's Apps Script (palautus/apps-script/) reads and grades it. Ruukkilabra
    itself sends nothing anywhere: the file is made in this browser and saved on this device.
@@ -11,7 +11,8 @@
    Every exercise of the chapter is in `answers`, in page order, an unanswered one as "empty" with no content, so the
    teacher can tell an unanswered task from a missing or broken file. Text keeps its line breaks ("\n"); a formula is
    its LaTeX (the formula image is redrawn as a PNG, `png`, for the teacher's view); a picture is PNG or JPEG data
-   (base64, no "data:" prefix). Items keep the order of the solution. No name, e-mail or other chapters.
+   (base64, no "data:" prefix), pasted into the editor with Ctrl+V (teacher 2026-11-05: no separate image button).
+   Items keep the order of the solution. No name, e-mail or other chapters.
    content_sha256 is the SHA-256 of the answers without the formula PNGs (JSON, UTF-8): the same solutions keep the
    same random submission_id (kept in localStorage ruukkilabra:palautus:<chapter>), any change gives a new one. */
 (() => {
@@ -83,7 +84,7 @@
       if (!m) throw fail(/^https?:/i.test(src) ? `${where}: ratkaisussa on verkkosivulta liitetty kuva, jota ei voi palauttaa. Poista se ja liitä kuvakaappaus.`
                                                : `${where}: ratkaisussa on kuva, jonka muoto ei kelpaa (vain PNG ja JPEG). Poista se ja liitä kuva uudelleen.`);
       const bytes = bytesOfB64(m[2]);
-      if (bytes > LIMITS.image) throw fail(`${where}: kuva on liian suuri (${(bytes / 1e6).toFixed(1).replace('.', ',')} Mt, enintään ${LIMITS.image / 1e6} Mt). Rajaa kuvakaappaus pienemmäksi tai lisää kuva Lisää kuva -painikkeella, joka pienentää sen.`);
+      if (bytes > LIMITS.image) throw fail(`${where}: kuva on liian suuri (${(bytes / 1e6).toFixed(1).replace('.', ',')} Mt, enintään ${LIMITS.image / 1e6} Mt). Rajaa kuvakaappaus pienemmäksi ja liitä se uudelleen.`);
       let size;
       try { size = await loadImage(url); } catch (e) { throw fail(`${where}: kuva on vioittunut. Poista se ja liitä kuva uudelleen.`); }
       if (size.naturalWidth > LIMITS.side || size.naturalHeight > LIMITS.side) throw fail(`${where}: kuva on liian suuri (yli ${LIMITS.side} pikseliä leveä tai korkea).`);
@@ -134,27 +135,19 @@
     return { text, id, same, sha, answers };
   };
 
-  // The panel at the top of Tehtävät
+  // Only the button at the top of Tehtävät (teacher 2026-11-05: "eikä pitkää ohjetta, pelkästään Lataa kaikki ratkaisut");
+  // a short line under it after the download, or the reason when it could not be made.
   const box = el('div', 'palautus');
-  box.setAttribute('role', 'region'); box.setAttribute('aria-labelledby', 'palautus-h');
-  const h = el('h3', 'palautus-h', 'Palauta ratkaisut opettajalle (kokeilu)'); h.id = 'palautus-h';
-  const intro = el('p', null, 'Tiedostoon tulevat tämän luvun tehtäviin Kirjoita ratkaisu -editorilla kirjoittamasi ratkaisut: teksti, kaavat ja kuvakaappaukset. Tarkista-kenttiin kirjoittamasi luvut ja valintatehtävien valinnat eivät tule mukaan, joten kirjoita vastauksesi ja valintasi perusteluineen myös ratkaisuun. Tehtävä, jonka editori on tyhjä, merkitään vastaamattomaksi.');
-  const list = el('ul', 'palautus-list');
-  ['Tiedostossa ei ole nimeäsi eikä sähköpostiosoitettasi, eikä muiden lukujen ratkaisuja. Opettaja näkee nimesi koulun lomakkeen kirjautumisesta.',
-   'Ladattu tiedosto tallentuu vain tälle laitteelle (yleensä Lataukset-kansioon). Ruukkilabra ei lähetä sitä minnekään.',
-   'Kuvakaappauksen voit liittää editoriin leikepöydältä (Ctrl+V) tai valita kuvatiedoston Lisää kuva -painikkeella. Rajaa kuvakaappaukseen vain tehtävään kuuluva sisältö.']
-    .forEach((t) => list.append(el('li', null, t)));
-  const btn = el('button', 'pad-btn palautus-btn', 'Lataa ratkaisut'); btn.type = 'button';
+  const btn = el('button', 'pad-btn palautus-btn', 'Lataa kaikki ratkaisut'); btn.type = 'button';
   const status = el('p', 'pad-status palautus-status'); status.setAttribute('aria-live', 'polite');
-  const done = el('div', 'palautus-done'); done.hidden = true;
-  box.append(h, intro, list, btn, status, done);
+  box.append(btn, status);
   const head = sec.querySelector(':scope > .split-head') || sec.querySelector(':scope > h2');   // lesson.js part 9 wraps the heading
   if (head) head.after(box); else sec.prepend(box);
 
   let busy = false;
   btn.addEventListener('click', async () => {
     if (busy) return;
-    busy = true; btn.disabled = true; done.hidden = true; say(status, 'Tallennetaan ja kootaan ratkaisuja…');
+    busy = true; btn.disabled = true; say(status, 'Tallennetaan ja kootaan ratkaisuja…');
     try {
       const r = await build();
       const a = document.createElement('a');
@@ -162,55 +155,10 @@
       a.download = `${CHAPTER}.ratkaisut.json`; document.body.append(a); a.click(); a.remove();
       setTimeout(() => URL.revokeObjectURL(a.href), 4000);
       remember({ sha: r.sha, id: r.id });
-      const answered = r.answers.filter((x) => x.status === 'answered').map((x) => numOf(document.getElementById(x.task)));
       say(status, 'Palauta ladattu tiedosto opettajan Google Forms -lomakkeella.', 'ok');
-      done.replaceChildren(
-        el('p', null, `Tiedosto ${CHAPTER}.ratkaisut.json: ratkaisu ${answered.length} tehtävään ${r.answers.length}:stä` + (answered.length ? ` (${answered.join(', ')})` : '') + '. Muut tehtävät ovat tiedostossa vastaamattomina.'),
-        el('p', null, `Palautustunniste ${r.id.slice(0, 8)} · ` + (r.same ? 'sama versio kuin edellisessä latauksessa.' : 'uusi versio.') + ' Jos muutat ratkaisuja, lataa ja palauta tiedosto uudelleen.'));
-      done.hidden = false;
     } catch (e) {
       say(status, e && e.user ? e.message : 'Tiedostoa ei voitu koota. Lataa sivu uudelleen ja yritä uudelleen.', 'no');
     } finally { busy = false; btn.disabled = false; }
   });
 
-  // "Lisää kuva" beside each editor's buttons: a PNG or JPEG file into the solution where the cursor is (or at its
-  // end). A picture over the limits is made smaller here and the student is told so; it is never dropped.
-  const shrink = async (file) => {
-    const url = await readAsDataUrl(file);
-    const img = await loadImage(url);
-    const big = Math.max(img.naturalWidth, img.naturalHeight);
-    if (big <= 2400 && file.size <= LIMITS.image) return { url, shrunk: false };
-    const k = Math.min(1, 2400 / big);
-    const c = document.createElement('canvas'); c.width = Math.round(img.naturalWidth * k); c.height = Math.round(img.naturalHeight * k);
-    const g = c.getContext('2d'); g.fillStyle = '#fff'; g.fillRect(0, 0, c.width, c.height); g.drawImage(img, 0, 0, c.width, c.height);
-    let out = c.toDataURL('image/png');
-    if (bytesOfB64(out.split(',')[1]) > LIMITS.image) out = c.toDataURL('image/jpeg', 0.85);
-    if (bytesOfB64(out.split(',')[1]) > LIMITS.image) throw fail('Kuva on liian suuri pienennettynäkin. Rajaa kuva pienemmäksi.');
-    return { url: out, shrunk: true };
-  };
-  sec.addEventListener('fl:pad-ready', (ev) => {
-    const tools = ev.detail && ev.detail.tools, li = ev.target;
-    if (!tools || tools.querySelector('.pad-image')) return;
-    const add = el('button', 'pad-btn pad-image', 'Lisää kuva'); add.type = 'button';
-    const input = document.createElement('input'); input.type = 'file'; input.accept = 'image/png,image/jpeg'; input.hidden = true;
-    const note = el('p', 'pad-status pad-image-status'); note.setAttribute('aria-live', 'polite');
-    tools.prepend(add); tools.append(input); tools.after(note);
-    add.addEventListener('click', () => input.click());
-    input.addEventListener('change', async () => {
-      const f = input.files && input.files[0]; input.value = '';
-      if (!f) return;
-      if (!/^image\/(png|jpeg)$/.test(f.type)) { say(note, 'Valitse PNG- tai JPEG-kuva.', 'no'); return; }
-      try {
-        const { url, shrunk } = await shrink(f);
-        const ed = li.querySelector('.pad .rich-text-editor');
-        if (!ed) throw fail('Avaa ensin editori.');
-        ed.focus();
-        const sel = window.getSelection();
-        if (!sel.rangeCount || !ed.contains(sel.getRangeAt(0).commonAncestorContainer)) { const r = document.createRange(); r.selectNodeContents(ed); r.collapse(false); sel.removeAllRanges(); sel.addRange(r); }
-        const img = document.createElement('img'); img.src = url;
-        document.execCommand('insertHTML', false, img.outerHTML);
-        say(note, shrunk ? 'Kuva lisättiin. Se pienennettiin palautusta varten.' : 'Kuva lisättiin.', 'ok');
-      } catch (e) { say(note, e && e.user ? e.message : 'Kuvaa ei voitu lisätä.', 'no'); }
-    });
-  });
 })();
