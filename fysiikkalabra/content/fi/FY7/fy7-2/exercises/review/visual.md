@@ -1,17 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 981a7d725fe69627
+CONTENT-HASH: 987e5aa22e0b9d99
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions.md — earlier note: other untouched inline formulas break; measured now, in the exercises only `m_\alpha = 6{,}645 \cdot 10^{-27}\,\text{kg}` (L3-03, at 360, 390 and 1280 px) and `m = 1{,}673 \cdot 10^{-27}\,\text{kg}` (L2-04, 360 px) — brace them the same way, `${m_\alpha = 6{,}645 \cdot 10^{-27}\,\text{kg}}$`. (`q = e = …`, `2e = …`, `1\,\text{u} = …` break in the lesson text, see review/visual.md.)
-- [Minor] solutions.md — long substitution chains (L1-01, L1-05, L2-02) shown as eq-chain rows still break inside a row at 360/390 px (by design of mathlayout.py); if the teacher's never-wrap rule covers chain rows too, split them at meaningful boundaries.
+- [Minor] solutions.md L2-01 Sijoitus — the connecting word between the v chain and the r display is not shown (the layout renders the display as its own block); the two blocks read as consecutive steps, so nothing is lost.
 
 ## Checked
-- Follow-up of the FAIL on L1-02 Annettu: `${|q| = e = …\,\text{C}}$` is now braced. `build.py fy7-2` (exercises from the working tree), then every inline .katex measured with getClientRects().length at 360, 390 and 1280 px, every level and solution open: the formula is ONE line at all three widths (also in fi, en and fi-easy). Captures opened: own element captures of the Annettu paragraph at 360, 390 and 1280 px (scratchpad caps/fi-fy7-2-*): `|q| = e = 1,602 · 10⁻¹⁹ C,` stays together with its comma; no clipping, no overflow.
-- `screenshot.py fy7-2 --if-stale`: fresh captures; diff of solutions.md read (only the braces changed).
-- Earlier: Delta: changed lines of L1-02 (Annettu, Kaava `|q|vB = \dfrac{mv^2}{r}`, `r = \dfrac{mv}{|q|B}` at 390 px, capture ex-390-0: fractions and bars read correctly) and the chapter-reference edits in L2-03 and L3-02 (plain italic text, no layout effect). Measured every inline formula of the built page at 360, 390 and 1280 px for line breaks; only the L1-02 Annettu line is new.
+- Delta: L2-01 solution Sijoitus, r as an aligned display (fraction row, \quad \cdot v row, = 0,06463 m = 6,463 cm row); rendered at 360 and 390 px from the built page with every solution open, and open-exercises-L2-1280-1 at laptop width.
+- Result: three rows with equals signs in one column, units upright with a thin space, nothing clipped, no horizontal overflow; the v chain above it is unchanged.
+- Only the line breaking of the formula changed; text, numbers and units unchanged (diff read). Deterministic layout checks 360/768/1280 clean per packet.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+
+## Follow-up (987e5aa22e0b9d99: four edits on top of the hash above)
+- Built `python scripts/build.py fy7-2 --exercises` and measured in Playwright (preview page, every exercise level and solution opened) at 360 and 390 px: every inline `.katex` of L1-02 Annettu and Kaava (and L2-03, L3-02 Periaate/Kaava) has `getClientRects().length == 1`. The grouped ${|q| = e = …\,\text{C}}$ is 213 px wide in a 274 px (360) / 304 px (390) column; $|q|vB = \dfrac{mv^2}{r}$ 118 px, $r = \dfrac{mv}{|q|B}$ 80 px. No horizontal overflow.
+- Opened the 360 px capture of the L1-02 solution: absolute-value bars, upright units, decimal comma and fraction all render cleanly; the chapter titles are italic as before.
+- No blocking issue.

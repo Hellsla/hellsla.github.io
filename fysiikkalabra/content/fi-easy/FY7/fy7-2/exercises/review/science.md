@@ -1,17 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: 208276c111678272
-
-Follow-up review of the fix commit 2c31ff041 (delta from 18dbe8d3089c1497). Change: solutions.md L1-02 Annettu, `${|q| = e = 1{,}602 \cdot 10^{-19}\,\text{C}}$` grouped so it does not break across lines.
+CONTENT-HASH: e317aca52d260b6d
 
 ## Blocking
 
 ## Polish
-- solutions.md L1-01, L1-03, L1-05, L2-01…L3-03 use $q$ in $qvB$, $qU$, $r = mv/(qB)$; correct because every particle there is positive, but "$|q| = q$, koska varaus on positiivinen" once would mirror L1-02.
+- solutions.md:110 L3-02: the period is independent of speed only while v ≪ c, the condition the brief gives for r = mv : (qB). Add it to the reasonableness check, e.g. "at high energies a cyclotron's frequency must be adjusted" (carried over; not blocking at this level, C/B-borderline).
 
 ## Checked
-- The braces only group the expression; content and physics unchanged. L1-02 $r = mv/(|q|B) = 7{,}581\,\text{mm} \to 7{,}6\,\text{mm}$ recomputed; proton comparison about 14 m.
-- All 12 answers recomputed earlier: 1,2 / 7,6 / 500 / 4,8 / 1,6 / 6,5 / 3400 / 200 / 2,0 / 4,0 / 22,9 / 1,41; agree with answers.py and exercises.json.
-- L2-01, L3-03: $v = \sqrt{2|q|U/m}$ before $r = mv/(|q|B)$; L3-03 $r \propto \sqrt{m/q}$, ratio $\sqrt2$.
-- L2-03 $E = U/d$, $v = E/B$; L2-04 $qvB = mg$, 2,0 mm/s; L3-01 spot separation 4,0 cm; L3-02 22,9 MHz, 44 ns.
-- Speeds at or below 1 % of c; every solution symbolic first; units and tolerances fit.
-- Hash same at start and end.
+- Full review triggered by commit c85fdffb: solutions.md:57–58 (L2-01) now shows r = m : (qB) · v as an aligned display, split over rows. It is algebraically the same as r = mv : (qB), the symbolic form stays in the Formula line, and the value is unchanged: 0,06463 m = 6,463 cm → 6,5 cm.
+- Recomputed all 12 answers in one script with my own models (L3-01 from r = √(2mU : q) : B, L3-03 from v = √(2qU : m) and r = mv : (qB)): 1,2015 / 7,581 / 500 / 4,806 / 1,602; 6,463 / 3449 / 200 / 2,049; 4,006 / 22,86 / 1,409. Each is within the tolerance of exercises.json and equals `python3 -I lessons/FY7/fy7-2/answers.py`.
+- answers.py computes the right physics on every line: qvB sin α, r = mv : (qB), v = E : B, E = U : d, qU = ½mv², qvB = mg, f = qB : (2πm), r ∝ √(m : q).
+- Rounding follows the limiting datum. L3-01's 4,0 cm is justified by the difference's 0,1 cm precision, and L2-01's 500 V is read as at least two figures.
+- The reasonableness magnitudes are right: v : c of 0,1 %, 0,17 % and 1,2 %; a proton radius of 14 m; 4,9·10⁸ at 10⁶ m/s; T ≈ 44 ns; 17 % heavier but an 8 % larger radius.
+- Every solution is complete and solves symbolically first. The notation matches the brief, and the scope is FY7 plus the FY6 prerequisites.
+- Hash at start and end: f8563eea6efa006f (unchanged).
+
+## Follow-up (e317aca52d260b6d: four edits on top of the hash above)
+- L1-02 Annettu: ${|q| = e = 1,602 \cdot 10^{-19}\,\text{C}}$ is the right elementary charge, written as a magnitude, so the electron's negative sign is no longer hidden. The outer braces only group; the content is unchanged.
+- L1-02 Kaava: $|q|vB = mv^2/r$, $r = mv/(|q|B)$ is the correct magnitude form and agrees with the lesson's own $|q|$ notation. Recomputed: $9,109\cdot10^{-31}\cdot2,0\cdot10^6 : (1,602\cdot10^{-19}\cdot1,5\cdot10^{-3}) = 7,581$ mm → 7,6 mm, unchanged; answers.py and exercises.json untouched.
+- L2-03 and L3-02 chapter references (*Homogeeninen sähkökenttä*, *Ympyrärata: jaksonaika ja ratanopeus*) match the current titles of fy6-11 and fy5-3 in this language; the physics around them is unchanged.
+- Polish (not from this diff): exercises.json L1-02 still gives the electron's charge without a sign; match the solution: "varaus $1{,}602…$" → "varauksen suuruus $1{,}602…$".
+- Hash at start and end: e317aca52d260b6d.
