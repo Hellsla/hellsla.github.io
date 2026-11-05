@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 618c4c0805f49cc0
+CONTENT-HASH: 4fccaba6f57f9329
 
 ## Blocking
 - none
 
 ## Fixed
+- (fixed by coordinator) L2-06 solution: subscripts meas/model renamed obs/mod (defined in Find) to stop a 360 px overflow; reads fine, check_i18n en 0 fy5-15 errors.
 - (fixed) L2-07 b) and solution Find: "estimates the intensity to be too great" → "overestimates" (matches the Finnish "arvioi moninkertaiseksi" and reads naturally).
 
 ## Polish

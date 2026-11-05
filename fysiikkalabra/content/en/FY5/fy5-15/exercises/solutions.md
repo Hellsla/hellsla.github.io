@@ -183,20 +183,20 @@ L &= 10\,\text{dB} \cdot \lg \dfrac{1.0\,\text{W/m}^2}{1.0 \cdot 10^{-12}\,\text
 
 ## fy5-15-L2-06
 **Given:** from the table $L(1.0\,\text{m}) = 86.0\,\text{dB}$ and $L(8.0\,\text{m}) = 71.9\,\text{dB}$; the distance increases by the factor $\dfrac{8.0\,\text{m}}{1.0\,\text{m}} = 8.0$
-**Find:** the difference between the measured level $L_\text{meas}$ and the prediction of the point source model $L_\text{model}$, $L_\text{meas} - L_\text{model}$, in decibels
+**Find:** the difference between the measured level $L_\text{obs}$ and the prediction of the point source model $L_\text{mod}$, $L_\text{obs} - L_\text{mod}$, in decibels
 **Principle:** If the sound travelled from a point source without reflections, the intensity would be inversely proportional to the square of the distance, and the difference in levels would depend only on the ratio of the distances. The prediction is calculated from the reading at $1.0\,\text{m}$ and compared with the measurement.
-**Formula:** $\Delta L = L_\text{meas} - L_\text{model}$, where the prediction is
+**Formula:** $\Delta L = L_\text{obs} - L_\text{mod}$, where the prediction is
 ```latex
-L_\text{model} = L_1 - 10\,\text{dB} \cdot \lg \left[\left(\dfrac{r_2}{r_1}\right)^{2}\right]
+L_\text{mod} = L_1 - 10\,\text{dB} \cdot \lg \left[\left(\dfrac{r_2}{r_1}\right)^{2}\right]
 ```
 **Conversions:** Not needed: the distances are in metres and the ratio has no unit.
 **Substitution:** the ratio of the distances is $8.0$, so
 ```latex
 \begin{aligned}
-L_\text{model} &= 86.0\,\text{dB} - 10\,\text{dB} \cdot \lg 64 \\
+L_\text{mod} &= 86.0\,\text{dB} - 10\,\text{dB} \cdot \lg 64 \\
 &= 86.0\,\text{dB} - 18.06\,\text{dB} \\
 &= 67.94\,\text{dB} \\
-L_\text{meas} - L_\text{model} &= 71.9\,\text{dB} - 67.94\,\text{dB} \\
+L_\text{obs} - L_\text{mod} &= 71.9\,\text{dB} - 67.94\,\text{dB} \\
 &= 3.96\,\text{dB}
 \end{aligned}
 ```
