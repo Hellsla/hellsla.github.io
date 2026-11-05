@@ -114,6 +114,37 @@
           "correct": true
         }
       ]
+    },
+    {
+      "id": "fy1-2-L1-09",
+      "level": 1,
+      "text": "Matka $s$ mitataan kilometreinä ja aika $t$ tunteina. Mikä seuraavista lausekkeista voi olla nopeus?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "$\\dfrac{12\\,\\text{km}}{3{,}0\\,\\text{h}}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "$12\\,\\text{km}\\cdot3{,}0\\,\\text{h}$",
+          "feedback": "Tulon yksikkö on $\\text{km}\\cdot\\text{h}$, eikä se ole pituus jaettuna ajalla. Nopeus kertoo, kuinka pitkä matka kuljetaan aikayksikössä, joten matka jaetaan ajalla eikä kerrota sillä."
+        },
+        {
+          "text": "$\\dfrac{3{,}0\\,\\text{h}}{12\\,\\text{km}}$",
+          "feedback": "Yksikkö on $\\text{h/km}$ eli aika matkaa kohti. Se on nopeuden käänteisluku: se kertoo, kuinka kauan yhden kilometrin kulkeminen kestää. Nopeudessa matka on osoittajassa ja aika nimittäjässä."
+        },
+        {
+          "text": "$\\dfrac{12\\,\\text{km}}{3{,}0\\,\\text{h}}$",
+          "feedback": "Oikein: yksikkö on $\\text{km/h}$, pituus jaettuna ajalla, ja se on nopeuden yksikkö. Lauseke voidaan muuntaa myös yksikköön $\\text{m/s}$.",
+          "correct": true
+        },
+        {
+          "text": "$\\dfrac{12\\,\\text{km}}{(3{,}0\\,\\text{h})^2}$",
+          "feedback": "Aika on nimittäjässä toiseen potenssiin, joten yksikkö on $\\text{km/h}^2$. Se on kiihtyvyyden tyyppinen yksikkö, ei nopeus: nopeuden nimittäjässä on aika vain ensimmäisessä potenssissa."
+        }
+      ]
     }
   ],
   "level2": [

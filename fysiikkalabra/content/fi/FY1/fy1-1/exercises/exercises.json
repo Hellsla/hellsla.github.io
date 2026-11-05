@@ -94,6 +94,37 @@
       "answer": 10000,
       "unit": "kertaa",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-1-L1-09",
+      "level": 1,
+      "text": "Kuun etäisyys Maasta on $3{,}84\\cdot10^{8}\\,\\text{m}$ ja Maan halkaisija $1{,}27\\cdot10^{7}\\,\\text{m}$. Mikä arvo on järkevä arvio Maan etäisyydelle Auringosta?",
+      "kind": [
+        "concept",
+        "model"
+      ],
+      "answer": "Noin $1{,}5\\cdot10^{11}\\,\\text{m}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Noin $1{,}5\\cdot10^{11}\\,\\text{m}$",
+          "correct": true,
+          "feedback": "Oikein: Aurinko on noin $400$ kertaa Kuuta kauempana, $3{,}84\\cdot10^{8}\\,\\text{m}\\cdot400\\approx1{,}5\\cdot10^{11}\\,\\text{m}$. Valo kulkee matkan noin kahdeksassa minuutissa."
+        },
+        {
+          "text": "Noin $1{,}5\\cdot10^{9}\\,\\text{m}$",
+          "feedback": "Tämä on lähes Auringon oma halkaisija, $1{,}4\\cdot10^{9}\\,\\text{m}$. Virheen taustalla on käsitys, että Aurinko on vain muutaman oman kokonsa päässä. Etäisyys on noin sata kertaa Auringon halkaisija."
+        },
+        {
+          "text": "Noin $1{,}5\\cdot10^{8}\\,\\text{m}$",
+          "feedback": "Tämä on alle puolet Kuun etäisyydestä, vaikka Aurinko on selvästi kauempana kuin Kuu. Luku $150$ miljoonaa on etäisyys kilometreinä, ja virhe syntyy, kun kilometriluku kirjoitetaan metreinä."
+        },
+        {
+          "text": "Noin $1{,}5\\cdot10^{13}\\,\\text{m}$",
+          "feedback": "Tämä on yli kolme kertaa kauempana kuin Neptunus, $4{,}5\\cdot10^{12}\\,\\text{m}$, joten se on jo Aurinkokunnan ulkoreunoilla. Virheen taustalla on käsitys, että Aurinko olisi kaukainen tähti; tähtien etäisyydet ovat suuruusluokkaa $10^{16}\\,\\text{m}$."
+        }
+      ]
     }
   ],
   "level2": [

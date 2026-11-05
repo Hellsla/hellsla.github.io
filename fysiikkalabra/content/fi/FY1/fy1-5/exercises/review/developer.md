@@ -1,9 +1,10 @@
 VERDICT: DONE
 
-Added 8 exercises (L1-06..08, L2-05..07, L3-04..05); the chapter now has 8/7/5 = 20. Existing tasks untouched.
+Mode add, round 1: one new level-2 task, fy1-5-L2-08, type 2 "Kuvaajan valinta" (docs/exercise-types.md). Existing tasks, ids and solutions untouched; the chapter now has 8/8/5 = 21.
 
-- exercises.json: L1-06 (MC, slope of a (t,s) line), L1-07 (area under a (t,v) line), L1-08 (speed with unit conversion), L2-05 (data: video-analysis table, fit and prediction), L2-06 (error: position vs distance), L2-07 (experiment: how far to time to get 2 % timing uncertainty), L3-04 (data: two-part motion, average speed), L3-05 (MC: can a (t,x) line be vertical).
-- solutions.md: complete solutions for all 8.
-- answers.py: 6 new answer lines (L1-07, L1-08, L2-05, L2-06, L2-07, L3-04); MC tasks need none.
+- exercises.json: L2-08. A walker stands at $6{,}0\,\text{m}$ from the start for $4{,}0\,\text{s}$, then walks back at $1{,}0\,\text{m/s}$; which graph is the (t, s) graph? Four `choices`, each a figure: A rising after 4 s (slope sign), B a (t, v) graph 0 then 1,0 m/s (v–t vs s–t), C correct (flat at 6 m, down to 0 at 10 s), D the distance walked from 0 (paikka vs matka). kind graph, concept; answer "Kuvaaja C".
+- solutions.md: Kysytty · Periaate · Mallivastaus · Kuvaajan lukeminen (check_solutions wants the graph step after Mallivastaus in a word task), with $\Delta t = 6{,}0\,\text{s}$ and slope $-1{,}0\,\text{m/s}$ shown.
+- answers.py: none (a choice task).
+- lessons/FY1/fy1-5/figures.py: new figures pick-back, pick-away, pick-distance, pick-vt (Axes, LaTeX labels, arrows) with REUSE notes; catalog rebuilt with figcat.
 
-Checks: lint 0 errors (2 length warnings), check_solutions ok, check_latex ok, check_lesson ok. No new word units. Not fixable here: the lesson.md:297 inline \dfrac warning.
+Checks: lint 0 errors, check_solutions ok. Not fixable here: lesson.md:297 inline \dfrac warning.

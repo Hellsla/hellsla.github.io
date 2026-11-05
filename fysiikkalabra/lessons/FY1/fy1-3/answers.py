@@ -38,7 +38,7 @@ a["fy1-3-L2-04"] = half([5.2, 5.6, 5.4, 5.3, 5.5]) / half([5.40, 5.43, 5.41, 5.4
 a["fy1-3-L3-01"] = -0.18 + 0.12                                    # reading = true − start delay + stop delay: error = −0,18 s + 0,12 s = −0,06 s
 a["fy1-3-L3-02"] = 0.5 / 250 * 1000                                # one sheet: 0,5 mm / 250 = 0,002 mm = 2,0 µm
 a["fy1-3-L3-03"] = mean([8.24, 8.27, 8.25, 8.29, 8.25]) - 8.00    # systematic error = mean − true = 8,26 cm − 8,00 cm = 0,26 cm
-# Exercise bank additions (teacher 2026-11-04): L1-06 is multiple choice (no number)
+# Exercise bank additions (teacher 2026-11-04): L1-06 is multiple choice (no number); L2-08 too
 w = [5.41, 5.47, 5.39, 5.44, 5.43]                                 # block width (cm): mean 5,428 cm, half-range 0,04 cm (one figure) -> mean to hundredths
 a["fy1-3-L1-07"] = round(mean(w), 2)                               # 27,14 cm / 5 = 5,428 cm -> 5,43 cm (± 0,04 cm)
 a["fy1-3-L1-08"] = round((1.0 / 2) / (0.01 / 2))                    # ruler 1,0 mm vs digital caliper 0,01 mm: uncertainties 0,5 mm and 0,005 mm, ratio 100
