@@ -167,22 +167,22 @@ Aallonpituudet ovat $\lambda_{125} = \dfrac{343\,\text{m/s}}{125\,\text{Hz}} = 2
 **Järkevyys:** Vaimennus kasvaa taajuuden mukana joka rivillä: $8{,}1 < 13{,}4 < 22{,}2 < 25{,}2\,\text{dB}$. Siksi tulos on positiivinen, ja ero on pienempi kuin suurin vaimennus $25{,}2\,\text{dB}$.
 
 ## fy5-16-L2-07
-**Annettu:** työpisteen taso $L = 103\,\text{dB}$; vertailu $L_0 = 85\,\text{dB}$ ja $t_0 = 8\,\text{h}$; opiskelijan tulos $1{,}3\,\text{h}$
+**Annettu:** työpisteen taso $L = 109\,\text{dB}$; vertailu $L_0 = 85\,\text{dB}$ ja $t_0 = 8\,\text{h}$; opiskelijan tulos $1{,}0\,\text{h}$
 **Kysytty:** a) mikä opiskelijan päättelyssä on väärin; b) oikea sallittu aika $t_\text{sall}$ minuutteina
 **Periaate:** Jokainen $3\,\text{dB}$ toiminta-arvon yli puolittaa sallitun ajan, joten aika jaetaan kahdella jokaista $3\,\text{dB}$:n askelta kohti. Askeleet kertautuvat: aika jaetaan luvulla $2^{\,n}$, ei luvulla $n$.
 **Kaava:** $n = \dfrac{L - L_0}{3\,\text{dB}}$ ja $t_\text{sall} = \dfrac{t_0}{2^{\,n}}$
 **Muunnokset:** $1\,\text{h} = 60\,\text{min}$.
 **Sijoitus:**
 $$\begin{aligned}
-n &= \frac{103\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} \\
-&= 6 \\
-t_\text{sall} &= \frac{8\,\text{h}}{2^{\,6}} \\
-&= \frac{8\,\text{h}}{64} \\
-&= 0{,}125\,\text{h} \\
-&= 7{,}5\,\text{min}
+n &= \frac{109\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} \\
+&= 8 \\
+t_\text{sall} &= \frac{8\,\text{h}}{2^{\,8}} \\
+&= \frac{480\,\text{min}}{256} \\
+&= 1{,}875\,\text{min} \\
+&\approx 1{,}9\,\text{min}
 \end{aligned}$$
-**Vastaus:** a) Opiskelija laski askelten määrän $n = 6$ oikein mutta jakoi ajan luvulla $6$. Jokainen askel puolittaa jäljellä olevan ajan, joten ajan pitää jakaa luvulla $2^{\,6} = 64$. b) Sallittu aika on $7{,}5\,\text{min}$.
-**Järkevyys:** Opiskelijan tulos $1{,}3\,\text{h}$ eli $80\,\text{min}$ on yli kymmenkertainen oikeaan nähden. Hänen tavallaan jokainen lisäaskel lyhentäisi aikaa yhä vähemmän, vaikka energia kasvaa joka askeleella samassa suhteessa. Tarkistus askel kerrallaan: $8\,\text{h} \to 4\,\text{h} \to 2\,\text{h} \to 1\,\text{h} \to 30\,\text{min} \to 15\,\text{min} \to 7{,}5\,\text{min}$ on kuusi puolitusta.
+**Vastaus:** a) Opiskelija laski askelten määrän $n = 8$ oikein mutta jakoi ajan luvulla $8$. Jokainen askel puolittaa jäljellä olevan ajan, joten ajan pitää jakaa luvulla $2^{\,8} = 256$. b) Sallittu aika on noin $1{,}9\,\text{min}$, eli vajaat kaksi minuuttia.
+**Järkevyys:** Opiskelijan tulos $1{,}0\,\text{h}$ eli $60\,\text{min}$ on $32$-kertainen oikeaan nähden. Hänen tavallaan jokainen lisäaskel lyhentäisi aikaa yhä vähemmän, vaikka energia kasvaa joka askeleella samassa suhteessa. Tarkistus askel kerrallaan: $8\,\text{h} \to 4\,\text{h} \to 2\,\text{h} \to 1\,\text{h} \to 30\,\text{min} \to 15\,\text{min} \to 7{,}5\,\text{min} \to 3{,}75\,\text{min} \to 1{,}875\,\text{min}$ on kahdeksan puolitusta.
 
 ## fy5-16-L3-04
 **Annettu:** sahaus $L_1 = 97\,\text{dB}$, $t_1 = 1{,}0\,\text{h}$; höyläys $L_2 = 91\,\text{dB}$, $t_2 = 2{,}0\,\text{h}$; kokoaminen $L_3 = 85\,\text{dB}$, $t_3 = 3{,}0\,\text{h}$; vertailu $L_0 = 85\,\text{dB}$ ja $t_0 = 8\,\text{h}$

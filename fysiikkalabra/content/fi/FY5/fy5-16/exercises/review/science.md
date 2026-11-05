@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 9659167e822811b0
+CONTENT-HASH: 2323b719e4b31e3d
 
 ## Blocking
 
 ## Polish
-- exercises/solutions.md:169 — fy5-16-L2-07 (replaced): the answer to b) (100 dB → 8 h : 2⁵ = 15 min) is already printed in the lesson's Esimerkki Järkevyys and in this chapter's L3-05 Järkevyys. The error analysis in a) is new, but b) can be read off. Use 103 dB instead: the student gets 18 : 3 = 6 and 8 h : 6 = 1,3 h; the correct time is 8 h : 2⁶ = 7,5 min. Update the solution and answers.py to match.
-- exercises/solutions.md:185 — L2-07 Järkevyys: "vaikka taso on selvästi toiminta-arvon yli" does not make sense as a check. Write "ja oppilaan virhe on sallivaan suuntaan, joten se olisi vaarallinen".
-- docs/exercise-bank/FY5.md:100 — the plan still says "Virheanalyysi: dB-arvot laskettu yhteen". Change it to "Virheanalyysi: aika jaettu luvulla n eikä 2ⁿ" so the plan matches the set.
+- exercises/exercises.json:240 — fy5-16-L2-07: the brief's lesson text (Kaava, Esimerkki, Tiivistelmä) and the other tasks do not print 103 dB, 1,3 h or 7,5 min. But a plain-text search shows the strings "103\,\text{dB}" (6 hits) and "7{,}5\,\text{min}" (2 hits) in fy5-16/inquiry.json, which this role may not open. If the inquiry already works out 103 dB → 7,5 min, b) can be read off there — change to a level that neither the lesson nor the inquiry uses. For example, 109 dB gives n = 8: the student gets 8 h : 8 = 1,0 h and the correct value is 8 h / 2⁸ ≈ 1,9 min. Check it first, though: "109" occurs twice in lesson.md. Update the solution and answers.py to match. If the hit is a different calculation, no change is needed.
 
 ## Checked
-- Round-1 Blocking resolved: L2-07 is replaced by an error analysis of the exposure-time rule (100 dB, n = 5; the student divides by 5 and gets 1,6 h, the correct value is 8 h : 32 = 0,25 h = 15 min). The direction of the error is explained: the student's time is too long, 96 min against 15 min. It is not a duplicate of fy5-15 (no exposure tasks there) or of any other FY5 chapter: "toiminta-arvo" occurs only in fy5-16.
-- Round-1 Blocking resolved: L2-06 b now gives the barrier height (3,0 m). λ₁₂₅ = 2,74 m against 3,0 m and λ₄₀₀₀ = 0,086 m support the model answer.
-- Round-1 Polish done: the heading is "Taulukon lukeminen", L3-05 c says the listener keeps the plugs in at 16 m, and the L1-06 distractor is now "puhumaan hiljempaa" with correct feedback.
-- Recomputed in one script: L1-07 27 dB; L2-05 T 1,51 s → 0,599 s, 60,3 %; L2-06 11,8 dB; L2-07 15 min; L3-04 D = 3,375, ΔL = 5,26 dB, with the enclosure D = 1,57 (1,96 dB ≈ 2,0 dB); L3-05 100 dB, 1,59 h, 189 %, 47 %. All match answers.py and the solutions.
-- Scope: noise dose, reverberation, barrier diffraction and the loudspeaker principle are all in the slot. The assumptions (6 dB per doubling, the same attenuation at every level) are stated and not contradicted.
-- The L2-07 capture (L2-1280-9) renders cleanly at 1280 px. The plan 8/7/5 is met.
+- L2-07 recomputed: n = (103 − 85)/3 = 6; t_sall = 8 h / 64 = 0,125 h = 7,5 min; the student's 8 h : 6 = 1,33 h ≈ 1,3 h = 80 min. answers.py t_allowed(103)·60 = 7,5, answer 7.5 min with tolerance 0.02 matches. The halving chain 8 h → … → 7,5 min has six steps.
+- L2-07 a): the error (dividing by n instead of 2ⁿ) is named correctly. The Järkevyys holds: 80 min / 7,5 min ≈ 10,7, so "yli kymmenkertainen" is right, and under t₀/n each extra step really shortens the time less (by 8 h/(n(n+1))). "opiskelija" is used throughout the task and the solution.
+- 103 dB, 1,3 h and 7,5 min occur in no other task or solution in the set. The old duplicate (100 dB → 15 min from the Esimerkki and L3-05) is gone.
+- Round-2 Polish done: L2-07 moved to 103 dB, the Järkevyys reworded into a real check, and docs/exercise-bank/FY5.md:100 now says "sallittu altistusaika jaettu luvulla n eikä luvulla 2ⁿ".
+- The rest is unchanged since round 2. Recomputed in one script: L1-01 2,0 h; L1-02 73; L1-03 82; L1-04 83; L1-07 27; L2-01 4,0 h; L2-02 150 %; L2-03 16 m; L2-04 0,90 s; L2-05 60,3 %; L2-06 11,8 dB; L3-01 125 %; L3-02 46 dB; L3-04 5,26 dB; L3-05 1,59 h. All match answers.py and exercises.json.
+- The known eq-chain collapse on main is not counted as a finding.

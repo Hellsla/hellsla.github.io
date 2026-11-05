@@ -237,8 +237,8 @@
         "error",
         "reasoning"
       ],
-      "text": "Konepajan työpisteessä melutaso on $103\\,\\text{dB}$. Opiskelija laskee sallitun päivittäisen altistusajan ylemmän toiminta-arvon ($8\\,\\text{h}$ tasolla $85\\,\\text{dB}$) perusteella näin: ”Taso ylittää toiminta-arvon $18\\,\\text{dB}$, ja jokainen $3\\,\\text{dB}$ lisää jakaa ajan: $18\\,\\text{dB} : 3\\,\\text{dB} = 6$, joten sallittu aika on $8\\,\\text{h} : 6 = 1{,}3\\,\\text{h}$.”\n\na) Selitä, mikä opiskelijan päättelyssä on väärin.\n\nb) Laske oikea sallittu altistusaika minuutteina.\n\nKirjoita b-kohdan tulos vastauslaatikkoon.",
-      "answer": 7.5,
+      "text": "Konepajan työpisteessä melutaso on $109\\,\\text{dB}$. Opiskelija laskee sallitun päivittäisen altistusajan ylemmän toiminta-arvon ($8\\,\\text{h}$ tasolla $85\\,\\text{dB}$) perusteella näin: ”Taso ylittää toiminta-arvon $24\\,\\text{dB}$, ja jokainen $3\\,\\text{dB}$ lisää jakaa ajan: $24\\,\\text{dB} : 3\\,\\text{dB} = 8$, joten sallittu aika on $8\\,\\text{h} : 8 = 1{,}0\\,\\text{h}$.”\n\na) Selitä, mikä opiskelijan päättelyssä on väärin.\n\nb) Laske oikea sallittu altistusaika minuutteina.\n\nKirjoita b-kohdan tulos vastauslaatikkoon.",
+      "answer": 1.9,
       "unit": "min",
       "tolerance": 0.02
     }
