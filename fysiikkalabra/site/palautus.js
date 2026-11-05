@@ -135,13 +135,16 @@
     return { text, id, same, sha, answers };
   };
 
-  // Only the button at the top of Tehtävät (teacher 2026-11-05: "eikä pitkää ohjetta, pelkästään Lataa kaikki ratkaisut");
-  // a short line under it after the download, or the reason when it could not be made.
+  // Only the button at the top of Tehtävät (teacher 2026-11-05: "eikä pitkää ohjetta, pelkästään Lataa kaikki ratkaisut"),
+  // in the heading row before "Avaa tehtävät teorian viereen" (teacher 2026-11-05); a short line under the row after the
+  // download, or the reason when it could not be made.
   const box = el('div', 'palautus');
   const btn = el('button', 'pad-btn palautus-btn', 'Lataa kaikki ratkaisut'); btn.type = 'button';
   const status = el('p', 'pad-status palautus-status'); status.setAttribute('aria-live', 'polite');
-  box.append(btn, status);
+  box.append(status);
   const head = sec.querySelector(':scope > .split-head') || sec.querySelector(':scope > h2');   // lesson.js part 9 wraps the heading
+  if (head && head.matches('.split-head')) { const t = head.querySelector(':scope > .split-toggle'); if (t) t.before(btn); else head.append(btn); }
+  else box.prepend(btn);
   if (head) head.after(box); else sec.prepend(box);
 
   let busy = false;

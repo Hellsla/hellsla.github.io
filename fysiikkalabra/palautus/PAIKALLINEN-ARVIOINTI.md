@@ -1,61 +1,85 @@
 # Arviointi ilman Apps Scriptiä: paikallinen arviointisivu
 
 Eduespoossa Apps Script on estetty (Google Admin: *you do not have access to this service*, 5.11.2026). Siksi
-arviointi tehdään tiedostolla **`arviointi-fy3-1.html`**, jonka opettaja avaa omalla koneellaan selaimessa
-(Chrome tai Edge). Sivu ei käytä verkkoa eikä Googlen tai Microsoftin palveluja. Se lukee Drivesta ladatut
-palautukset ja tallentaa pisteet vain tämän selaimen muistiin. Arviointinäkymä on sama kuin Apps Script -versiossa.
+arviointi tehdään erillisellä HTML-tiedostolla **`arviointi-fy3.html`**. Opettaja avaa sen omalla koneellaan
+selaimessa (Chrome tai Edge). Tiedosto ei kuulu RuukkiLabraan eikä julkiseen sivustoon. Sivu ei käytä verkkoa eikä
+Googlen tai Microsoftin palveluja. Se lukee Drivesta ladatut palautukset ja tallentaa pisteet vain tämän selaimen
+muistiin.
+
+Sivulla on koko FY3: kaikki 16 lukua opetusjärjestyksessä (sama kuin FY3-moduulisivulla), ja niiden tehtävät. Jokaisessa
+FY3-luvussa on Tehtävät-otsikon rivillä painike **Lataa kaikki ratkaisut**. Painike lataa luvun tiedoston
+`fy3-<n>.ratkaisut.json`.
 
 ## Käyttöönotto
 
-1. **Lomake** tehdään kuten KAYTTOONOTTO.md:n kohdassa 1, eduespoo-tilillä. Sheetsiin linkittämistä ja Apps Scriptiä
-   ei tarvita. Palautuskansio ja lomake vain nimetyille opettajille (KAYTTOONOTTO.md, kohta 5).
-2. **Lataa arviointisivu** kerran omalle koneelle: `fysiikkalabra/palautus/arviointi-fy3-1.html` (repossa, myös
+1. **Yksi Forms-lomake ryhmää kohti**, eduespoo-tilillä, kuten KAYTTOONOTTO.md:n kohdassa 1. Nimeä lomakkeet
+   ryhmittäin, esim. *FY3.1 palautukset* ja *FY3.2 palautukset*. Tiedostokysymys *Palauta vastaukset*, enintään 10 Mt.
+   Opiskelija palauttaa samalla lomakkeella jokaisen luvun erikseen, kun luku on tehty. Uusi palautus on uusi
+   lomakevastaus. Sheetsiin linkittämistä ja Apps Scriptiä ei tarvita. Palautuskansio ja lomakkeen vastaukset vain
+   nimetyille opettajille (KAYTTOONOTTO.md, kohta 5).
+2. **Tallenna arviointisivu** kerran omalle koneelle: `fysiikkalabra/palautus/arviointi-fy3.html` (repossa, myös
    projektin tiedostoissa). Avaa se kaksoisnapsauttamalla. Sivu toimii ilman verkkoa.
+3. **Lisää ryhmät** sivulla: kirjoita nimi (esim. FY3.1) ja paina **Lisää ryhmä**. Yksi ryhmä jokaista lomaketta kohti.
 
 ## Arviointi
 
-1. Drivessa: napsauta kansiota **Palauta vastaukset (File responses)** hiiren oikealla → **Lataa**. Drive tekee
-   zip-tiedoston (suurista kansioista useamman).
-2. Arviointisivulla: **Palautukset: Valitse tiedostot** → valitse zip (tai kaikki zipit kerralla).
-   Sivu tarkistaa tiedostot samoin kuin Apps Script -versio ja näyttää käsittelytilan: hyväksytty, kaksoiskappale,
-   tarkistettava (sama palautustunniste kahdella opiskelijalla), virheellinen (syy näkyy). Tarkistettavan voi
-   hyväksyä ja hyväksytyn hylätä rivin painikkeella.
-3. Valitse tehtävä ja arvioi kuten ennenkin: yksi opiskelija kerrallaan, ↓/↑, numeronäppäin antaa pisteet, Enter
-   tallentaa ja siirtyy. Pisteet 0–3, tyhjä = arvioimaton, 0 = annettu nolla.
-4. **Vie pisteet (CSV)** lataa tiedoston `fy3-1-pisteet.csv`: opiskelija, palautusaika, tunniste, pisteet
-   tehtävittäin, yhteensä. Avaa se Sheetsissä (Tiedosto → Tuo) tai Excelissä. Kaavoiksi tulkittavat merkit on suojattu.
-5. **Varmuuskopioi arviointi** lataa tuonnin tilan ja pisteet JSON-tiedostona. Säilytä se koulun Drivessa,
-   ei julkisesti. **Palauta varmuuskopio** tuo sen takaisin (esim. toisella koneella).
-6. Uusia palautuksia tullessa lataa kansio uudelleen ja valitse uusi zip: jo luetut ohitetaan, uudet lisätään.
-   Korjattu palautus on opiskelijan uusi versio, vanhan pisteet säilyvät vanhalla versiolla.
+1. Drivessa: napsauta ryhmän lomakkeen kansiota **<lomakkeen nimi> (File responses)** hiiren oikealla → **Lataa**.
+   Drive tekee zip-tiedoston (suurista kansioista useamman).
+2. Arviointisivulla: valitse **Ryhmä**, sitten **Ryhmän palautukset: Valitse tiedostot** → valitse zip (tai kaikki
+   zipit kerralla). Sivu tarkistaa tiedostot ja näyttää käsittelytilan: hyväksytty, kaksoiskappale, tarkistettava
+   (sama palautustunniste kahdella opiskelijalla), virheellinen (syy näkyy). Tarkistettavan voi hyväksyä ja hyväksytyn
+   hylätä rivin painikkeella.
+3. **Ryhmät pysyvät erillään.** Ryhmä muistaa, miltä lomakkeelta sen palautukset tulivat (zipin ylin kansio). Toisen
+   lomakkeen zipiä se ei lue, vaan kertoo, että valittu ryhmä on väärä. Jokaisella ryhmällä on omat opiskelijat, pisteet,
+   CSV ja varmuuskopio.
+4. **Tehtävät luvuittain**: jokainen luku on oma laatikkonsa, ja ne luvut, joista on palautuksia, ovat auki. Valitse
+   tehtävä ja arvioi sen kaikki palautukset peräkkäin: yksi opiskelija kerrallaan, ↓/↑, numeronäppäin antaa pisteet,
+   Enter tallentaa ja siirtyy. Pisteet 0–3, tyhjä = arvioimaton, 0 = annettu nolla. Jonossa ovat vain ne opiskelijat,
+   jotka ovat palauttaneet kyseisen luvun.
+5. **Pisteet luvuittain**: taulukossa ovat opiskelijan pisteet jokaisesta palautetusta luvusta (L1, L2, …) ja yhteensä.
+   Pienellä näkyy arvioitujen tehtävien määrä. Pisteet lasketaan opiskelijan uusimmasta hyväksytystä palautuksesta.
+6. **Vie pisteet (CSV)** lataa tiedoston `FY3-<ryhmä>-pisteet.csv`, jossa ovat opiskelija, pisteet luvuittain (tyhjä,
+   jos lukua ei ole palautettu), yhteensä, palautettujen lukujen määrä ja arvioitujen tehtävien määrä. Avaa se
+   Sheetsissä (Tiedosto → Tuo) tai Excelissä. Kaavoiksi tulkittavat merkit on suojattu.
+7. **Varmuuskopioi ryhmän arviointi** lataa ryhmän tuonnin tilan ja pisteet JSON-tiedostona. Säilytä se koulun
+   Drivessa, ei julkisesti. **Palauta varmuuskopio** tuo sen takaisin valittuun ryhmään (esim. toisella koneella).
+8. Kun uusia palautuksia tulee, lataa kansio uudelleen ja valitse uusi zip samaan ryhmään. Jo luetut ohitetaan ja uudet
+   lisätään. Korjattu palautus on opiskelijan uusi versio samasta luvusta, ja vanhan pisteet säilyvät vanhalla
+   versiolla.
 
-Palautustiedostoja ei säilytetä sivulla. Kun avaat sivun seuraavan kerran, pisteet ja tilat ovat tallessa, mutta
-vastausten näyttämistä varten valitse zip uudelleen.
+Sivu ei säilytä palautustiedostoja. Kun avaat sivun seuraavan kerran, ryhmät, pisteet ja tilat ovat tallessa, mutta
+vastausten näyttämistä varten valitse ryhmän zip uudelleen.
 
 ## Tunniste ja aika
 
 - **Opiskelija** tunnistetaan nimestä, jonka Forms lisää palautetun tiedoston nimeen:
-  `fy3-1.ratkaisut - Etunimi Sukunimi.json`. Nimi tulee opiskelijan kirjautuneesta eduespoo-tilistä.
+  `fy3-4.ratkaisut - Etunimi Sukunimi.json`. Nimi tulee opiskelijan kirjautuneesta eduespoo-tilistä.
   Vahvistettu sähköposti näkyy tarvittaessa lomakkeen vastauksissa.
+- **Luku** luetaan tiedoston sisällöstä, ei tiedoston nimestä.
 - **Palautusaika** on tiedoston aika Driven zipissä. Järjestys ei perustu opiskelijan tiedoston omaan aikaleimaan.
-- Molemmat on varmistettava ensimmäisessä kokeessa (alla).
+- Nimi, aika ja zipin kansiorakenne on varmistettava ensimmäisessä kokeessa (alla).
 
 ## Tietoturva
 
 - Zip sisältää opiskelijoiden töitä: pidä se koulun koneella ja poista Lataukset-kansiosta arvioinnin jälkeen.
-- Sivu tallentaa selaimen muistiin (localStorage) tuonnin tilan, opiskelijoiden nimet ja pisteet, ei vastauksia.
-  Käytä omaa, henkilökohtaista koulun konetta. Älä käytä yhteiskäyttöistä konetta. Kurssin jälkeen: **Tyhjennä arviointi**.
+- Sivu tallentaa selaimen muistiin (localStorage) ryhmittäin tuonnin tilan, opiskelijoiden nimet ja pisteet, ei
+  vastauksia. Käytä omaa, henkilökohtaista koulun konetta, älä yhteiskäyttöistä. Kurssin jälkeen: **Poista ryhmä ja
+  sen arviointi**.
 - Sivu ei lataa mitään verkosta (Content-Security-Policy estää sen), ei suorita palautuksista koodia eikä näytä
   niistä HTML:ää. Kuvina näytetään vain tarkistetut PNG- ja JPEG-kuvat.
 
 ## Varmistettava ensimmäisessä kokeessa (keksityillä vastauksilla)
 
-1. Kaksi opiskelijan testitiliä palauttavat tiedoston lomakkeella (ja toinen niistä toisen kerran).
-2. Lataa kansio zipinä, valitse se sivulla: näkyykö **oikea nimi** ja **järkevä palautusaika** (vertaa lomakkeen
-   vastauksiin)? Jos nimi puuttuu tai on väärä, kerro, niin korjaan nimen tunnistuksen.
-3. Arvioi muutama tehtävä, vie CSV ja avaa se Sheetsissä.
-4. Sulje ja avaa sivu, valitse zip uudelleen: pisteet tallessa, uusia rivejä 0.
-5. Opiskelijan testitili ei pääse palautuskansioon eikä lomakkeen vastauksiin.
+1. Kaksi opiskelijan testitiliä palauttavat lomakkeella kahden eri luvun tiedostot, ja toinen niistä palauttaa yhden
+   luvun toisen kerran.
+2. Lataa lomakkeen kansio zipinä ja valitse se sivulla. Tarkista, että **oikea nimi**, **oikea luku** ja **järkevä
+   palautusaika** näkyvät (vertaa lomakkeen vastauksiin). Jos nimi puuttuu tai jokin on väärin, kerro, niin korjaan
+   tunnistuksen.
+3. Tee toinen lomake toiselle ryhmälle ja kokeile sen zipiä ensin väärään ryhmään (sivun pitää kieltäytyä) ja sitten
+   oikeaan.
+4. Arvioi muutama tehtävä, katso Pisteet luvuittain, vie CSV ja avaa se Sheetsissä.
+5. Sulje ja avaa sivu ja valitse zip uudelleen. Pisteiden pitää olla tallessa, ja uusia rivejä pitää tulla 0.
+6. Opiskelijan testitili ei pääse palautuskansioon eikä lomakkeen vastauksiin.
 
-Sivu on testattu automaattisesti (`scripts/test_palautus.py`) itse tehdyllä zip-tiedostolla, jonka tiedostonimet
-ovat Formsin muotoa. Oikeaa Driven zipiä ei ole vielä testattu.
+Sivu on testattu automaattisesti (`scripts/test_palautus.py`) itse tehdyillä zip-tiedostoilla, joiden kansiot ja
+tiedostonimet ovat Formsin muotoa: kaksi ryhmää, kaksi lukua. Oikeaa Driven zipiä ei ole vielä testattu.

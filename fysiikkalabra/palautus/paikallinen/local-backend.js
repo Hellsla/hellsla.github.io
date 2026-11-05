@@ -1,13 +1,15 @@
 /* Paikallinen arviointisivu (Lauri 5.11.2026: eduespoossa Apps Script on estetty). Tämä tiedosto korvaa selaimessa ne
    Google-palvelut, joita Code.gs käyttää: palautustiedostot luetaan Drivesta ladatusta zip-tiedostosta (tai
    JSON-tiedostoista), ja välilehdet "RL Palautukset" ja "RL Pisteet" ovat tämän selaimen localStoragessa
-   (avain ruukkilabra:arviointi:<luku>) opettajan omalla koneella. Mitään ei lähetetä minnekään, eikä sivu lataa
+   ryhmittäin (avain ruukkilabra:arviointi:<opintojakso>:ryhma:<ryhmä>) opettajan omalla koneella. Jokaisella ryhmällä
+   on oma Forms-lomake ja siksi oma Drive-kansio; sivu muistaa, miltä lomakkeelta (zipin ylin kansio) ryhmän
+   palautukset tulivat, eikä lue toisen lomakkeen zipiä samaan ryhmään. Mitään ei lähetetä minnekään, eikä sivu lataa
    mitään verkosta (sivun Content-Security-Policy estää sen). Palauttajan tunniste on Formsin tiedoston nimeen
    lisäämä nimi: "<alkuperäinen nimi> - <Etunimi Sukunimi>.json". Palautusaika on tiedoston aika Driven zipissä.
-   Rakennetaan sivuksi palautus/arviointi-<luku>.html (scripts/palautus_tasks.py). */
+   Rakennetaan sivuksi palautus/arviointi-<opintojakso>.html (scripts/palautus_tasks.py). */
 (function () {
   'use strict';
-  var LOCAL = window.RL_LOCAL_STATE = { files: {}, entries: [], sheets: [] };
+  var LOCAL = window.RL_LOCAL_STATE = { files: {}, entries: [], sheets: [], forms: [], group: '' };
   var STORE = 'ruukkilabra:arviointi:';
 
   /* ---- Sheets: välilehdet muistissa; RL-välilehdet tallessa localStoragessa ---- */
@@ -44,17 +46,40 @@
   window.SpreadsheetApp = { getActiveSpreadsheet: function () { return ss; }, flush: function () {}, newDataValidation: dv };
   window.LockService = { getDocumentLock: function () { return { tryLock: function () { return true; }, releaseLock: function () {} }; } };
 
-  var key = function () { return STORE + (window.RL_CHAPTER ? RL_CHAPTER.id : 'luku'); };
+  var course = function () { return window.RL_COURSE ? RL_COURSE.id : 'kurssi'; };
+  var key = function (g) { return STORE + course() + ':ryhma:' + (g === undefined ? LOCAL.group : g); };
+  var listKey = function () { return STORE + course() + ':ryhmat'; }, chosenKey = function () { return STORE + course() + ':valittu'; };
+  function groups() {
+    try { var a = JSON.parse(localStorage.getItem(listKey()) || '[]'); return Array.isArray(a) ? a.filter(function (x) { return typeof x === 'string'; }) : []; } catch (e) { return []; }
+  }
+  function setGroups(a) { try { localStorage.setItem(listKey(), JSON.stringify(a)); return true; } catch (e) { return false; } }
   var reviver = function (k, v) { return v && typeof v === 'object' && v.__date ? new Date(v.__date) : v; };
   var replacer = function (k, v) { return this[k] instanceof Date ? { __date: this[k].toISOString() } : v; };
   function saveSheets() {
     var keep = LOCAL.sheets.filter(function (s) { return /^RL /.test(s.name); }).map(function (s) { return { name: s.name, data: s.data }; });
-    try { localStorage.setItem(key(), JSON.stringify({ format: 'ruukkilabra-arviointi', version: 1, sheets: keep }, replacer)); return true; } catch (e) { return false; }
+    if (!LOCAL.group) return false;
+    try { localStorage.setItem(key(), JSON.stringify({ format: 'ruukkilabra-arviointi', version: 1, course: course(), group: LOCAL.group, forms: LOCAL.forms, sheets: keep }, replacer)); return true; } catch (e) { return false; }
   }
   function loadSheets(text) {
     var st = JSON.parse(text, reviver);
     if (!st || st.format !== 'ruukkilabra-arviointi' || !Array.isArray(st.sheets)) throw new Error('format');
+    if (st.course && st.course !== course()) throw new Error('course');
     LOCAL.sheets = LOCAL.sheets.filter(function (s) { return !/^RL /.test(s.name); }).concat(st.sheets.map(function (s) { return new Sheet(s.name, s.data); }));
+    LOCAL.forms = Array.isArray(st.forms) ? st.forms.filter(function (x) { return typeof x === 'string'; }) : [];
+    return st;
+  }
+  // Ryhmän vaihto: edellisen ryhmän tiedostot ja tila pois muistista, uuden ryhmän tila localStoragesta.
+  function useGroup(g) {
+    LOCAL.group = g; LOCAL.sheets = []; LOCAL.files = {}; LOCAL.entries = []; LOCAL.forms = [];
+    RL_CONFIG.GROUP = g;
+    if (!g) return;
+    try { var saved = localStorage.getItem(key()); if (saved) loadSheets(saved); localStorage.setItem(chosenKey(), g); } catch (e) { /* aloitetaan tyhjästä */ }
+  }
+  // Zipin ylin kansio = lomakkeen palautuskansio "<lomakkeen nimi> (File responses)"
+  function formsOf(list) {
+    var out = [];
+    list.forEach(function (e) { var i = e.path.indexOf('/'); if (i > 0 && out.indexOf(e.path.slice(0, i)) < 0) out.push(e.path.slice(0, i)); });
+    return out;
   }
 
   /* ---- Drive: ladatut tiedostot muistissa, kaikki "palautuskansiossa" local ---- */
@@ -198,41 +223,95 @@
   }
   document.addEventListener('DOMContentLoaded', function () {
     RL_CONFIG.SUBMISSION_FOLDER_ID = 'local'; RL_CONFIG.IDENTITY = 'name';
-    try { var saved = localStorage.getItem(key()); if (saved) loadSheets(saved); } catch (e) { /* aloitetaan tyhjästä */ }
     var bar = document.getElementById('localBar'); bar.hidden = false; bar.className = 'panel';
-    var lab = el('label'), pick = el('input'); pick.type = 'file'; pick.multiple = true; pick.accept = '.zip,.json,application/zip,application/json';
-    lab.append(el('b', 'Palautukset: '), pick);
+    // ryhmä: jokaisella ryhmällä oma lomake, oma zip ja oma tallennettu arviointi
+    var gRow = el('p'); gRow.className = 'bar';
+    var gLab = el('label'), gSel = el('select'); gSel.id = 'group'; gLab.append(el('b', 'Ryhmä: '), gSel);
+    var gNew = el('input'); gNew.type = 'text'; gNew.id = 'newGroup'; gNew.placeholder = 'Uuden ryhmän nimi, esim. FY3.2'; gNew.maxLength = 40; gNew.setAttribute('aria-label', 'Uuden ryhmän nimi');
+    var gAdd = el('button', 'Lisää ryhmä'); gAdd.type = 'button'; gAdd.id = 'addGroup';
+    gRow.append(gLab, gNew, gAdd);
+    var lab = el('label'), pick = el('input'); pick.type = 'file'; pick.multiple = true; pick.accept = '.zip,.json,application/zip,application/json'; pick.id = 'pick';
+    lab.append(el('b', 'Ryhmän palautukset: '), pick);
     var row = el('p'); row.className = 'bar';
-    var csv = el('button', 'Vie pisteet (CSV)'), bak = el('button', 'Varmuuskopioi arviointi'), res = el('button', 'Palauta varmuuskopio'), clr = el('button', 'Tyhjennä arviointi');
+    var csv = el('button', 'Vie pisteet (CSV)'), bak = el('button', 'Varmuuskopioi ryhmän arviointi'), res = el('button', 'Palauta varmuuskopio'), clr = el('button', 'Poista ryhmä ja sen arviointi');
+    csv.id = 'csv'; bak.id = 'backup'; res.id = 'restore'; clr.id = 'clear';
     [csv, bak, res, clr].forEach(function (b) { b.type = 'button'; row.append(b); });
     var resFile = el('input'); resFile.type = 'file'; resFile.accept = '.json,application/json'; resFile.hidden = true;
-    var msg = el('p'); msg.className = 'muted'; msg.setAttribute('aria-live', 'polite');
-    var help = el('p', 'Valitse Drivesta ladattu palautuskansion zip-tiedosto (tai useampi, jos Drive jakoi latauksen). Tiedostot luetaan vain tähän selaimeen, eikä niitä tallenneta: valitse ne uudelleen, kun avaat sivun seuraavan kerran. Pisteet ja tuonnin tila säilyvät tässä selaimessa; vie ne CSV-tiedostona Sheetsiin ja ota varmuuskopio.');
+    var msg = el('p'); msg.className = 'muted'; msg.id = 'localMsg'; msg.setAttribute('aria-live', 'polite');
+    var help = el('p', 'Valitse ryhmä ja sitten Drivesta ladattu ryhmän lomakkeen palautuskansion zip-tiedosto (tai useampi, jos Drive jakoi latauksen). Tiedostot luetaan vain tähän selaimeen, eikä niitä tallenneta: valitse ne uudelleen, kun avaat sivun seuraavan kerran. Pisteet ja tuonnin tila säilyvät tässä selaimessa ryhmittäin; vie ne CSV-tiedostona Sheetsiin ja ota varmuuskopio.');
     help.className = 'muted';
-    bar.append(lab, help, row, resFile, msg);
+    bar.append(gRow, lab, help, row, resFile, msg);
+    var safe = function (g) { return g.replace(/[^0-9A-Za-zÅÄÖåäö._-]+/g, '_'); };
+    function fillGroups() {
+      var list = groups(); gSel.textContent = '';
+      if (!list.length) { var o = el('option', '(ei ryhmiä: lisää ryhmä)'); o.value = ''; gSel.append(o); }
+      list.forEach(function (g) { var o = el('option', g); o.value = g; gSel.append(o); });
+      gSel.value = LOCAL.group;
+      var none = !LOCAL.group;
+      pick.disabled = csv.disabled = bak.disabled = res.disabled = clr.disabled = none; gSel.disabled = !list.length;
+    }
+    function choose(g) { useGroup(g); fillGroups(); window.rlReload(); }
+    var start = '';
+    try { start = localStorage.getItem(chosenKey()) || ''; } catch (e) {}
+    if (groups().indexOf(start) < 0) start = groups()[0] || '';
+    useGroup(start); fillGroups(); window.rlReload();
+    if (!start) msg.textContent = 'Lisää ensin ryhmä (yksi jokaista Forms-lomaketta kohti).';
+    gSel.addEventListener('change', function () { choose(gSel.value); msg.textContent = 'Ryhmä ' + gSel.value + '. Valitse ryhmän zip-tiedosto, niin vastaukset näkyvät.'; });
+    gAdd.addEventListener('click', function () {
+      var g = gNew.value.trim().replace(/\s+/g, ' '), list = groups();
+      if (!g) { msg.textContent = 'Kirjoita ryhmän nimi.'; return; }
+      if (list.indexOf(g) >= 0) { msg.textContent = 'Ryhmä ' + g + ' on jo olemassa.'; return; }
+      list.push(g);
+      if (!setGroups(list)) { msg.textContent = 'Selain ei salli tallentamista (localStorage). Ryhmää ei lisätty.'; return; }
+      gNew.value = ''; choose(g); msg.textContent = 'Ryhmä ' + g + ' lisätty. Valitse ryhmän lomakkeen palautuskansion zip-tiedosto.';
+    });
+    gNew.addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); gAdd.click(); } });
     pick.addEventListener('change', function () {
-      if (!pick.files.length) return;
+      if (!pick.files.length || !LOCAL.group) return;
       msg.textContent = 'Luetaan…';
       readFiles(pick.files).then(function (list) {
+        pick.value = '';
+        var forms = formsOf(list), other = LOCAL.forms.length ? forms.filter(function (f) { return LOCAL.forms.indexOf(f) < 0; }) : [];
+        if (other.length) {   // toisen ryhmän lomake: ei lueta tähän ryhmään
+          msg.textContent = 'Zip-tiedosto on lomakkeelta "' + other[0] + '", mutta ryhmän ' + LOCAL.group + ' palautukset on luettu lomakkeelta "' + LOCAL.forms[0] + '". Mitään ei luettu. Valitse oikea ryhmä tai oikean lomakkeen zip.';
+          return;
+        }
+        forms.forEach(function (f) { if (LOCAL.forms.indexOf(f) < 0) LOCAL.forms.push(f); });
         addEntries(list);
         var r = rlImport_(); saveSheets();
         var c = r.counts;
-        msg.textContent = 'Luettu ' + list.length + ' tiedostoa. Uusia palautuksia ' + r.added + ' (hyväksyttyjä ' + c['Hyväksytty'] + ', kaksoiskappaleita ' + c['Kaksoiskappale'] + ', tarkistettavia ' + c['Tarkistettava'] + ', virheellisiä ' + c['Virheellinen'] + ').';
-        pick.value = ''; window.rlReload();
-      }, function (e) { msg.textContent = 'Tiedostoja ei voitu lukea: ' + (e && e.message || e); });
+        msg.textContent = 'Ryhmä ' + LOCAL.group + ': luettu ' + list.length + ' tiedostoa. Uusia palautuksia ' + r.added + ' (hyväksyttyjä ' + c['Hyväksytty'] + ', kaksoiskappaleita ' + c['Kaksoiskappale'] + ', tarkistettavia ' + c['Tarkistettava'] + ', virheellisiä ' + c['Virheellinen'] + ').';
+        window.rlReload();
+      }, function (e) { pick.value = ''; msg.textContent = 'Tiedostoja ei voitu lukea: ' + (e && e.message || e); });
     });
-    csv.addEventListener('click', function () { download(RL_CHAPTER.id + '-pisteet.csv', rlScoresCsv(), 'text/csv;charset=utf-8'); msg.textContent = 'Pisteet viety tiedostoon ' + RL_CHAPTER.id + '-pisteet.csv. Avaa se Sheetsissä (Tiedosto → Tuo).'; });
-    bak.addEventListener('click', function () { saveSheets(); download(RL_CHAPTER.id + '-arviointi-varmuuskopio.json', localStorage.getItem(key()) || '', 'application/json'); msg.textContent = 'Varmuuskopio ladattu. Säilytä se koulun Drivessa, ei julkisesti.'; });
+    csv.addEventListener('click', function () {
+      var name = course() + '-' + safe(LOCAL.group) + '-pisteet.csv';
+      download(name, rlScoresCsv(), 'text/csv;charset=utf-8'); msg.textContent = 'Pisteet viety tiedostoon ' + name + '. Avaa se Sheetsissä (Tiedosto → Tuo).';
+    });
+    bak.addEventListener('click', function () {
+      if (!saveSheets()) { msg.textContent = 'Selain ei salli tallentamista (localStorage).'; return; }
+      download(course() + '-' + safe(LOCAL.group) + '-arviointi-varmuuskopio.json', localStorage.getItem(key()) || '', 'application/json');
+      msg.textContent = 'Varmuuskopio ladattu. Säilytä se koulun Drivessa, ei julkisesti.';
+    });
     res.addEventListener('click', function () { resFile.click(); });
     resFile.addEventListener('change', function () {
       var f = resFile.files[0]; resFile.value = ''; if (!f) return;
-      f.text().then(function (t) { loadSheets(t); saveSheets(); msg.textContent = 'Varmuuskopio palautettu.'; window.rlReload(); }, function () {}).catch(function () { msg.textContent = 'Tiedosto ei ole arvioinnin varmuuskopio.'; });
+      f.text().then(function (t) {
+        var st;
+        try { st = JSON.parse(t); } catch (e) { st = null; }
+        if (st && st.group && st.group !== LOCAL.group && !window.confirm('Varmuuskopio on ryhmältä ' + st.group + '. Korvataanko ryhmän ' + LOCAL.group + ' arviointi sillä?')) return;
+        var before = LOCAL.sheets, forms = LOCAL.forms;
+        try { loadSheets(t); } catch (e) { LOCAL.sheets = before; LOCAL.forms = forms; msg.textContent = 'Tiedosto ei ole tämän opintojakson arvioinnin varmuuskopio.'; return; }
+        saveSheets(); msg.textContent = 'Varmuuskopio palautettu ryhmään ' + LOCAL.group + '.'; window.rlReload();
+      }, function () { msg.textContent = 'Tiedostoa ei voitu lukea.'; });
     });
     clr.addEventListener('click', function () {
-      if (!window.confirm('Poistetaanko tämän luvun tuonnit ja pisteet tästä selaimesta? Ota ensin varmuuskopio.')) return;
-      LOCAL.sheets = []; LOCAL.files = {}; LOCAL.entries = [];
+      if (!window.confirm('Poistetaanko ryhmä ' + LOCAL.group + ' sekä sen tuonnit ja pisteet tästä selaimesta? Ota ensin varmuuskopio.')) return;
+      var g = LOCAL.group;
       try { localStorage.removeItem(key()); } catch (e) {}
-      msg.textContent = 'Tyhjennetty.'; window.rlReload();
+      setGroups(groups().filter(function (x) { return x !== g; }));
+      choose(groups()[0] || '');
+      msg.textContent = 'Ryhmä ' + g + ' poistettu.';
     });
   });
 })();
