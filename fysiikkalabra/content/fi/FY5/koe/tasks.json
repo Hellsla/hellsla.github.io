@@ -1,0 +1,1173 @@
+{
+ "intro": "Koe kattaa koko moduulin: momentti ja tasapaino, tasainen ympyräliike, gravitaatio ja satelliitit, värähtelyt, aaltoliike sekä ääni ja melu. Käytä putoamiskiihtyvyytenä arvoa $g = 9{,}81\\,\\text{m/s}^2$, gravitaatiovakiona arvoa $\\gamma = 6{,}674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2}$ ja kuulokynnyksenä arvoa $I_0 = 1{,}0 \\cdot 10^{-12}\\,\\text{W/m}^2$. Pisteytyksessä sama virhe vähentää pisteitä vain kerran: jos jatkat väärällä välituloksella oikein, saat myöhemmistä vaiheista pisteet.",
+ "minutes": 120,
+ "max_points": 70,
+ "sections": [
+  {
+   "title": "Osa 1: Perusosaaminen",
+   "tasks": [
+    "fy5-k1"
+   ]
+  },
+  {
+   "title": "Osa 2: Perustehtävät",
+   "choose": 2,
+   "tasks": [
+    "fy5-k2",
+    "fy5-k3",
+    "fy5-k4",
+    "fy5-k5"
+   ]
+  },
+  {
+   "title": "Osa 3: Soveltavat tehtävät",
+   "choose": 1,
+   "tasks": [
+    "fy5-k6",
+    "fy5-k7"
+   ]
+  }
+ ],
+ "tasks": [
+  {
+   "id": "fy5-k1",
+   "title": "Monivalinnat",
+   "text": "Valitse jokaisessa kohdassa yksi vaihtoehto. Oikea vastaus on $2$ p, väärä tai puuttuva $0$ p.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "choice",
+     "points": 2,
+     "text": "Mutteria kiristetään kiintoavaimella. Voima kohdistetaan avaimeen kolmella tavalla: (1) $100\\,\\text{N}$ avaimen päähän kohtisuoraan avainta vastaan, (2) $150\\,\\text{N}$ avaimen keskikohtaan kohtisuoraan avainta vastaan ja (3) $120\\,\\text{N}$ avaimen päähän niin, että voiman ja avaimen välinen kulma on $30^\\circ$. Avaimen pää on $30\\,\\text{cm}$:n ja keskikohta $15\\,\\text{cm}$:n päässä mutterin keskipisteestä, ja kaikki voimat ovat avaimen kiertotasossa. Missä järjestyksessä voimien momentit $M_1$, $M_2$ ja $M_3$ mutterin keskipisteen suhteen ovat?",
+     "options": [
+      "$M_2 > M_3 > M_1$",
+      "$M_3 > M_1 > M_2$",
+      "$M_1 > M_2 > M_3$",
+      "$M_1 = M_3 > M_2$"
+     ],
+     "correct": 2,
+     "tag": "math"
+    },
+    {
+     "id": "b",
+     "kind": "choice",
+     "points": 2,
+     "text": "Tasapaksu lankku lepää vaakasuorana kahden pukin varassa, jotka ovat lankun päiden alla. Maalari seisoo lankulla lähempänä vasenta pukkia kuin oikeaa. Mikä pitää paikkansa?",
+     "options": [
+      "Vasemman pukin tukivoima on suurempi kuin oikean.",
+      "Oikean pukin tukivoima on suurempi, koska maalari on kauempana siitä.",
+      "Tukivoimat ovat yhtä suuret, koska lankku on tasapaksu.",
+      "Tukivoimien summa riippuu siitä, missä kohdassa maalari seisoo."
+     ],
+     "correct": 0,
+     "tag": "concept"
+    },
+    {
+     "id": "c",
+     "kind": "choice",
+     "points": 2,
+     "text": "Auto ajaa vaakasuoraa kaarretta vasemmalle tasaisella vauhdilla. Matkustaja tuntee painautuvansa oikeanpuoleista ovea vasten. Mikä selitys on fysikaalisesti oikea?",
+     "options": [
+      "Keskipakoisvoima työntää matkustajaa ulospäin, kohti ovea.",
+      "Matkustajaan vaikuttava kokonaisvoima on nolla, koska auton vauhti pysyy samana.",
+      "Kiihtyvyys osoittaa kaarteesta ulospäin, joten myös matkustaja kiihtyy ovea kohti.",
+      "Ovi työntää suoraan pyrkivää matkustajaa kohti kaarteen keskipistettä."
+     ],
+     "correct": 3,
+     "tag": "concept"
+    },
+    {
+     "id": "d",
+     "kind": "choice",
+     "points": 2,
+     "text": "Kaksi opiskelijaa, joiden kummankin massa on $60\\,\\text{kg}$, seisoo niin, että heidän painopisteidensä etäisyys on $1{,}0\\,\\text{m}$. Mikä on heidän välisensä gravitaatiovoiman suuruusluokka? Mallinna opiskelijat pistemäisinä kappaleina.",
+     "options": [
+      "$10^{-11}\\,\\text{N}$",
+      "$10^{-7}\\,\\text{N}$",
+      "$10^{-1}\\,\\text{N}$",
+      "$10^{3}\\,\\text{N}$"
+     ],
+     "correct": 1,
+     "tag": "math"
+    },
+    {
+     "id": "e",
+     "kind": "choice",
+     "points": 2,
+     "text": "Ylimmässä kuvaajassa on jousen päässä värähtelevän kappaleen paikka $x$ ajan $t$ funktiona. Mikä kuvaajista A–D esittää kappaleen nopeutta $v$ ajan $t$ funktiona? Kaikissa kuvaajissa positiivinen suunta on sama.",
+     "options": [
+      "kuvaaja A",
+      "kuvaaja B",
+      "kuvaaja C",
+      "kuvaaja D"
+     ],
+     "correct": 2,
+     "tag": "graph",
+     "figure": "fy5-koe/fy5-k1-osc"
+    },
+    {
+     "id": "f",
+     "kind": "choice",
+     "points": 2,
+     "text": "Kappale värähtelee jousen päässä vaakasuoralla kitkattomalla alustalla. Sen amplitudi kaksinkertaistetaan. Ilmanvastus on merkityksetön. Miten värähtelyn jaksonaika $T$ ja kappaleen suurin nopeus $v_\\text{max}$ muuttuvat?",
+     "options": [
+      "$T$ pysyy samana, $v_\\text{max}$ kaksinkertaistuu.",
+      "$T$ kaksinkertaistuu, $v_\\text{max}$ pysyy samana.",
+      "$T$ pysyy samana, $v_\\text{max}$ nelinkertaistuu.",
+      "$T$ kaksinkertaistuu, $v_\\text{max}$ kaksinkertaistuu."
+     ],
+     "correct": 0,
+     "tag": "concept"
+    },
+    {
+     "id": "g",
+     "kind": "choice",
+     "points": 2,
+     "text": "Kaiutin lähettää veden pinnan yläpuolella ääntä, jonka taajuus on $1000\\,\\text{Hz}$, ja osa äänestä etenee veteen. Äänen nopeus on ilmassa noin $340\\,\\text{m/s}$ ja vedessä noin $1500\\,\\text{m/s}$. Miten ääniaalto muuttuu, kun se siirtyy ilmasta veteen?",
+     "options": [
+      "Taajuus kasvaa, ja aallonpituus pysyy samana.",
+      "Taajuus ja aallonpituus pysyvät samoina.",
+      "Taajuus pysyy samana, ja aallonpituus lyhenee.",
+      "Taajuus pysyy samana, ja aallonpituus kasvaa."
+     ],
+     "correct": 3,
+     "tag": "concept"
+    },
+    {
+     "id": "h",
+     "kind": "choice",
+     "points": 2,
+     "text": "Kaksi kaiutinta lähettää samassa vaiheessa ääntä, jonka aallonpituus on $0{,}40\\,\\text{m}$. Piste P on $3{,}0\\,\\text{m}$:n päässä kaiuttimesta $\\text{S}_1$ ja $3{,}6\\,\\text{m}$:n päässä kaiuttimesta $\\text{S}_2$. Heijastukset ovat merkityksettömiä. Mitä pisteessä P kuuluu?",
+     "options": [
+      "Voimakas ääni, koska ääntä tulee kahdesta kaiuttimesta.",
+      "Heikko ääni, koska aallot kohtaavat vastakkaisissa vaiheissa.",
+      "Ääni, jonka taajuus on puolet kaiuttimien taajuudesta.",
+      "Voimakkuudeltaan vaihtelevaa ääntä eli huojuntaa, koska aallot summautuvat."
+     ],
+     "correct": 1,
+     "tag": "concept"
+    },
+    {
+     "id": "i",
+     "kind": "choice",
+     "points": 2,
+     "text": "Ambulanssi ajaa suoraa tietä tasaisella nopeudella sireeni päällä ja ohittaa tien vieressä seisovan kuulijan hetkellä $t = 0$. Katkoviiva on sireenin oma taajuus $f_0$. Mikä kuvaajista A–D esittää kuulijan kuulemaa taajuutta $f$ ajan $t$ funktiona? Tuulta ei ole.",
+     "options": [
+      "kuvaaja A",
+      "kuvaaja B",
+      "kuvaaja C",
+      "kuvaaja D"
+     ],
+     "correct": 1,
+     "tag": "graph",
+     "figure": "fy5-koe/fy5-k1-doppler"
+    },
+    {
+     "id": "j",
+     "kind": "choice",
+     "points": 2,
+     "text": "Ruohonleikkurin melutaso kuulijan kohdalla on $90\\,\\text{dB}$. Viereen tuodaan toinen samanlainen leikkuri, joka on yhtä kaukana kuulijasta. Kuinka suuri on melutaso kuulijan kohdalla, kun molemmat leikkurit käyvät?",
+     "options": [
+      "$180\\,\\text{dB}$",
+      "$90\\,\\text{dB}$",
+      "$93\\,\\text{dB}$",
+      "$100\\,\\text{dB}$"
+     ],
+     "correct": 2,
+     "tag": "math"
+    }
+   ],
+   "skills": [
+    "fy5-1",
+    "fy5-2",
+    "fy5-4",
+    "fy5-5",
+    "fy5-7",
+    "fy5-9",
+    "fy5-10",
+    "fy5-12",
+    "fy5-14",
+    "fy5-15"
+   ],
+   "links": {
+    "math": "fy5-1",
+    "concept": "fy5-4",
+    "graph": "fy5-9"
+   }
+  },
+  {
+   "id": "fy5-k2",
+   "title": "Hyppylauta",
+   "source": "example",
+   "source_note": "Laudan ja hyppääjän arvot on laadittu esimerkiksi.",
+   "figure": "fy5-koe/fy5-k2-board",
+   "text": "Uimahallin hyppylauta on tasapaksu ja $4{,}0\\,\\text{m}$ pitkä, ja sen massa on $40\\,\\text{kg}$. Laudan takapää A on kiinnitetty pultilla altaan reunaan. Lauta lepää tuen B varassa, joka on $1{,}2\\,\\text{m}$:n päässä takapäästä. Hyppääjä, jonka massa on $60\\,\\text{kg}$, seisoo paikallaan laudan kärjessä. Lauta on vaakasuora. Kohdissa a–c laudan taipuminen jätetään huomiotta.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "word",
+     "points": 4,
+     "text": "Piirrä laudan voimakuvio, kun hyppääjä seisoo kärjessä, ja nimeä voimat. Perustele momenttien avulla, mihin suuntaan pultin voima osoittaa.",
+     "criteria": [
+      {
+       "key": "fbd_forces",
+       "points": 1,
+       "detail": "Laudan paino, hyppääjän jalkojen lautaan kohdistama voima, tuen B tukivoima ja pultin voima; ei muita voimia."
+      },
+      {
+       "key": "fbd_representation",
+       "points": 1,
+       "detail": "Pultin voima lähtee laudan takapäästä, tukivoima kohdasta B, paino laudan keskeltä ja hyppääjän voima kärjestä."
+      },
+      {
+       "key": "fbd_directions",
+       "points": 1,
+       "detail": "Tukivoima osoittaa ylös, laudan paino ja hyppääjän voima alas."
+      },
+      {
+       "text": "Perustelee, että pultin voima osoittaa alas: tuen B suhteen laudan paino ja hyppääjän voima kiertävät lautaa samaan suuntaan, kärki alaspäin, joten pultin voiman on kierrettävä vastakkaiseen suuntaan.",
+       "tag": "concept",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 5,
+     "text": "Laske pultin voiman ja tuen B tukivoiman suuruudet.",
+     "answer": [
+      {
+       "name": "pultti",
+       "value": 1635,
+       "unit": "N",
+       "tolerance": 0.03
+      },
+      {
+       "name": "tuki",
+       "value": 2616,
+       "unit": "N",
+       "tolerance": 0.03
+      }
+     ],
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 2,
+       "detail": "Momenttiehto tuen B suhteen: $F_\\text{A} \\cdot 1{,}2\\,\\text{m} = G \\cdot 0{,}8\\,\\text{m} + F_\\text{h} \\cdot 2{,}8\\,\\text{m}$, missä laudan paino vaikuttaa sen keskeltä."
+      },
+      {
+       "key": "fbd_equations",
+       "points": 1,
+       "detail": "Pystysuunnassa $N - F_\\text{A} - G - F_\\text{h} = 0$."
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$F_\\text{A} \\approx 1{,}6\\,\\text{kN}$ ja $N \\approx 2{,}6\\,\\text{kN}$."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 3,
+     "text": "Hyppääjä kävelee laudan kärjestä takapäätä kohti. Miten pultin voima muuttuu? Kuinka kaukana takapäästä A hyppääjän on seistävä, jotta pultin voima on nolla?",
+     "answer": {
+      "value": 0.667,
+      "unit": "m",
+      "tolerance": 0.04
+     },
+     "criteria": [
+      {
+       "text": "Toteaa, että pultin voima pienenee, koska hyppääjän voiman varsi tuen B suhteen lyhenee; tuen kohdallakin laudan paino vaatii vielä pultin voiman.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Kun $F_\\text{A} = 0$, momenttiehto tuen B suhteen on $F_\\text{h} \\cdot x = G \\cdot 0{,}8\\,\\text{m}$, missä $x$ on hyppääjän etäisyys tuesta B takapään puolella."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$x \\approx 0{,}53\\,\\text{m}$, joten hyppääjä on noin $0{,}67\\,\\text{m}$:n päässä takapäästä."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "calc",
+     "points": 3,
+     "text": "Kun hyppääjä seisoo kärjessä, kärki on $9{,}0\\,\\text{cm}$ alempana kuin ilman häntä. Hyppääjä saa laudan kärjen värähtelemään pystysuunnassa niin, että hänen jalkansa eivät irtoa laudasta. Mallinna laudan kärki jouseksi, jonka massa on merkityksetön. Laske jousen jousivakio ja värähtelyn jaksonaika.",
+     "answer": [
+      {
+       "name": "k",
+       "value": 6540,
+       "unit": "N/m",
+       "tolerance": 0.03
+      },
+      {
+       "name": "T",
+       "value": 0.602,
+       "unit": "s",
+       "tolerance": 0.03
+      }
+     ],
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Tasapainoasemassa jousivoima on hyppääjän painon suuruinen: $k = \\tfrac{mg}{x}$; jaksonaika $T = 2\\pi\\sqrt{\\tfrac{m}{k}}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$k \\approx 6{,}5 \\cdot 10^3\\,\\text{N/m}$ ja $T \\approx 0{,}60\\,\\text{s}$."
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy5-1",
+    "fy5-2",
+    "fy5-8",
+    "fy5-9"
+   ],
+   "links": {
+    "concept": "fy5-2",
+    "communication": "fy5-2",
+    "math": "fy5-2"
+   }
+  },
+  {
+   "id": "fy5-k3",
+   "title": "Kuutiosatelliitti",
+   "source": "example",
+   "source_note": "Satelliitti ja sen rata on laadittu esimerkiksi; opiskelijoiden rakentamia kuutiosatelliitteja on laukaistu tällaisille radoille.",
+   "text": "Opiskelijoiden rakentama kuutiosatelliitti kiertää Maata lähes ympyrän muotoisella radalla $520\\,\\text{km}$:n korkeudella maanpinnasta. Satelliitin massa on $4{,}0\\,\\text{kg}$. Maan massa on $5{,}97 \\cdot 10^{24}\\,\\text{kg}$ ja säde $6371\\,\\text{km}$.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kuinka suuri gravitaatiovoima satelliittiin vaikuttaa radalla? Kuinka monta prosenttia se on satelliitin painosta maanpinnalla?",
+     "answer": [
+      {
+       "name": "F",
+       "value": 33.6,
+       "unit": "N",
+       "tolerance": 0.02
+      },
+      {
+       "name": "osuus",
+       "value": 85.5,
+       "unit": "%",
+       "tolerance": 0.02
+      }
+     ],
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Gravitaatiolaki $F = \\gamma\\tfrac{Mm}{r^2}$."
+      },
+      {
+       "text": "Ottaa etäisyydeksi radan säteen Maan keskipisteestä, $r = R + h = 6891\\,\\text{km}$, eikä korkeutta maanpinnasta.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$F \\approx 34\\,\\text{N}$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "Paino maanpinnalla on $mg \\approx 39{,}2\\,\\text{N}$, joten osuus on noin $85$–$86\\,\\%$."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 4,
+     "text": "Laske satelliitin ratanopeus ja kiertoaika.",
+     "answer": [
+      {
+       "name": "v",
+       "value": 7604,
+       "unit": "m/s",
+       "tolerance": 0.02
+      },
+      {
+       "name": "T",
+       "value": 94.9,
+       "unit": "min",
+       "tolerance": 0.02
+      }
+     ],
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 2,
+       "detail": "Gravitaatiovoima on satelliitin ainoa voima, ja se antaa normaalikiihtyvyyden: $\\gamma\\tfrac{Mm}{r^2} = m\\tfrac{v^2}{r}$, josta $v = \\sqrt{\\tfrac{\\gamma M}{r}}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$v \\approx 7{,}60\\,\\text{km/s}$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$T = \\tfrac{2\\pi r}{v} \\approx 5690\\,\\text{s} \\approx 95\\,\\text{min}$."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "word",
+     "points": 4,
+     "text": "Satelliitin sisällä oleva irrallinen kamera leijuu satelliitin suhteen paikallaan. Piirrä kameran voimakuvio ja merkitse sen viereen kameran nopeus ja kiihtyvyys. Selitä, miksi kamera leijuu, vaikka siihen vaikuttaa gravitaatiovoima.",
+     "criteria": [
+      {
+       "key": "fbd_forces",
+       "points": 1,
+       "detail": "Ainoa voima on Maan gravitaatiovoima; ei keskipakoisvoimaa eikä tukivoimaa."
+      },
+      {
+       "text": "Gravitaatiovoima ja kiihtyvyys osoittavat kohti Maan keskipistettä ja nopeus radan tangentin suuntaan, omina nuolinaan.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Kamera ja satelliitti saavat gravitaatiosta saman kiihtyvyyden kohti Maata: ne ovat vapaassa pudotuksessa.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Selittää, että siksi satelliitti ei kohdista kameraan tukivoimaa ja kamera pysyy satelliitin suhteen paikallaan; painottomuus ei tarkoita, että gravitaatio olisi kadonnut.",
+       "tag": "communication",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "calc",
+     "points": 3,
+     "text": "Radalla on hyvin harvaa ilmaa, joka jarruttaa satelliittia, ja rata madaltuu hitaasti. Kuinka suuri satelliitin ratanopeus on, kun se kiertää $400\\,\\text{km}$:n korkeudella? Vertaa b-kohdan nopeuteen ja selitä ero. Arvioi, milloin ympyräratamalli ei enää kuvaa satelliitin liikettä.",
+     "answer": {
+      "value": 7671,
+      "unit": "m/s",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$r = 6771\\,\\text{km}$ ja $v \\approx 7{,}67\\,\\text{km/s}$."
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Alemmalla radalla ratanopeus on suurempi, vaikka ilmanvastus jarruttaa, koska $v = \\sqrt{\\tfrac{\\gamma M}{r}}$ kasvaa säteen pienetessä."
+      },
+      {
+       "key": "assumptions",
+       "points": 1,
+       "detail": "Malli pätee, kun ilmanvastus muuttaa rataa kierroksen aikana vain vähän; alempana ilma on tiheämpää, jarrutus kasvaa ja rata madaltuu nopeasti, jolloin liike ei ole enää tasaista ympyräliikettä."
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy5-3",
+    "fy5-4",
+    "fy5-5",
+    "fy5-6"
+   ],
+   "links": {
+    "math": "fy5-6",
+    "transfer": "fy5-6",
+    "concept": "fy5-6",
+    "communication": "fy5-6"
+   }
+  },
+  {
+   "id": "fy5-k4",
+   "title": "Heilurimittaus",
+   "source": "example",
+   "source_note": "Mittaustulokset on laadittu esimerkiksi, eivätkä ne ole oikean mittauksen tuloksia.",
+   "text": "Opiskelija tutki, miten heilurin jaksonaika riippuu langan pituudesta. Hän ripusti metallipallon kevyeen lankaan ja mittasi langan pituuden $l$ kiinnityskohdasta pallon yläpintaan. Kullakin pituudella hän poikkeutti heiluria noin $5^\\circ$ ja mittasi sekuntikellolla ajan $t_{10}$, jossa heiluri teki kymmenen kokonaista jaksoa. Käsin tehdyn ajanoton epävarmuus on noin $0{,}2\\,\\text{s}$.\n\n| $l\\ (\\text{m})$ | $t_{10}\\ (\\text{s})$ |\n|---|---|\n| $0{,}300$ | $11{,}40$ |\n| $0{,}500$ | $14{,}43$ |\n| $0{,}700$ | $17{,}05$ |\n| $0{,}900$ | $19{,}22$ |\n| $1{,}100$ | $21{,}27$ |\n| $1{,}300$ | $23{,}02$ |",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 3,
+     "text": "Laske lyhimmän heilurin jaksonaika ja sen epävarmuus. Miksi kannattaa mitata kymmenen jakson aika eikä yhtä jaksoa?",
+     "answer": [
+      {
+       "name": "T",
+       "value": 1.14,
+       "unit": "s",
+       "tolerance": 0.01
+      },
+      {
+       "name": "epävarmuus",
+       "value": 0.02,
+       "unit": "s",
+       "tolerance": 0.05
+      }
+     ],
+     "criteria": [
+      {
+       "text": "$T = \\tfrac{t_{10}}{10} \\approx 1{,}14\\,\\text{s}$.",
+       "tag": "math",
+       "points": 1
+      },
+      {
+       "key": "uncertainty",
+       "points": 1,
+       "detail": "Ajanoton epävarmuus jakautuu kymmenelle jaksolle: $\\Delta T = 0{,}2\\,\\text{s} : 10 = 0{,}02\\,\\text{s}$."
+      },
+      {
+       "text": "Perustelee, että reaktioaika aiheuttaa saman epävarmuuden kellon käynnistykseen ja pysäytykseen mitattiinpa yksi tai kymmenen jaksoa, joten jaksonajan epävarmuus pienenee kymmenesosaan.",
+       "tag": "experiment",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "graph",
+     "points": 5,
+     "text": "Laske kunkin mittauksen $T^2$ ja piirrä $(l, T^2)$-kuvaaja. Sovita pisteisiin suora.",
+     "criteria": [
+      {
+       "text": "Laskee jaksonajat ja niiden neliöt, esimerkiksi $T^2 \\approx 1{,}30\\,\\text{s}^2$ lyhimmällä ja $5{,}30\\,\\text{s}^2$ pisimmällä heilurilla.",
+       "tag": "math",
+       "points": 1
+      },
+      {
+       "key": "graph_axes",
+       "points": 1
+      },
+      {
+       "key": "graph_points",
+       "points": 1
+      },
+      {
+       "key": "graph_fit",
+       "points": 2,
+       "detail": "Suora kulkee pisteiden joukon keskeltä, eikä pisteitä ole yhdistetty murtoviivaksi."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Määritä kuvaajan avulla putoamiskiihtyvyys.",
+     "answer": {
+      "value": 9.83,
+      "unit": "m/s^2",
+      "tolerance": 0.04
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$T^2 = \\tfrac{4\\pi^2}{g} \\cdot L$, joten suoran kulmakerroin on $\\tfrac{4\\pi^2}{g}$."
+      },
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "Esimerkiksi pisteistä $(0{,}10\\,\\text{m};\\ 0{,}49\\,\\text{s}^2)$ ja $(1{,}30\\,\\text{m};\\ 5{,}31\\,\\text{s}^2)$, kulmakerroin noin $4{,}0\\,\\text{s}^2/\\text{m}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$g \\approx 9{,}8\\,\\text{m/s}^2$."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "word",
+     "points": 3,
+     "text": "Heilurin pituus on kiinnityskohdan ja pallon keskipisteen välinen etäisyys. Selitä, miksi kuvaajan suora ei kulje origon kautta. Arvioi kuvaajan avulla pallon säde. Vaikuttaako tämä c-kohdan tulokseen?",
+     "criteria": [
+      {
+       "text": "Heilurin pituus on $L = l + r$, missä $r$ on pallon säde, joten $T^2 = \\tfrac{4\\pi^2}{g}\\,(l + r)$: suora on siirtynyt ylöspäin.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Arvioi säteeksi $1$–$3\\,\\text{cm}$, noin $2\\,\\text{cm}$: suora leikkaa $T^2$-akselin noin kohdassa $0{,}09\\,\\text{s}^2$, ja $0{,}09\\,\\text{s}^2 : 4{,}0\\,\\tfrac{\\text{s}^2}{\\text{m}} \\approx 0{,}02\\,\\text{m}$.",
+       "tag": "graph",
+       "points": 1
+      },
+      {
+       "text": "Toteaa, että vakiosuuruinen virhe pituudessa siirtää suoraa mutta ei muuta sen kulmakerrointa, joten kulmakertoimesta määritetty $g$ ei muutu.",
+       "tag": "experiment",
+       "points": 1
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy5-7",
+    "fy5-9",
+    "fy1-3",
+    "fy1-4"
+   ],
+   "links": {
+    "math": "fy5-9",
+    "experiment": "fy1-3",
+    "graph": "fy1-4",
+    "concept": "fy5-9"
+   }
+  },
+  {
+   "id": "fy5-k5",
+   "title": "Kantele",
+   "source": "example",
+   "source_note": "Kielen pituus ja taajuus on laadittu esimerkiksi; ne ovat kanteleelle tyypillisiä.",
+   "text": "Kanteleen kielet on kiinnitetty molemmista päistään. Erään kielen värähtelevä osa on $0{,}550\\,\\text{m}$ pitkä, ja kieli soi perustaajuudella $196\\,\\text{Hz}$. Äänen nopeus ilmassa on $343\\,\\text{m/s}$.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "word",
+     "points": 4,
+     "text": "Piirrä, miten kieli värähtelee perustaajuudella ja seuraavalla ominaistaajuudella. Merkitse kuvioihin solmut ja kuvut. Selitä aaltojen heijastumisen avulla, miksi kieli värähtelee vain tietyillä taajuuksilla.",
+     "criteria": [
+      {
+       "text": "Perustaajuudella kielellä on solmut päissä ja yksi kupu keskellä; seuraavalla ominaistaajuudella kaksi kupua ja solmu myös keskellä.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Solmut ja kuvut on merkitty ja nimetty kumpaankin kuvioon.",
+       "tag": "communication",
+       "points": 1
+      },
+      {
+       "text": "Kielessä etenevä aalto heijastuu kiinnitetyistä päistä, ja vastakkaisiin suuntiin etenevät aallot muodostavat seisovan aallon.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Seisova aalto syntyy vain, kun kielen päissä on solmut eli kielen pituus on puolen aallonpituuden monikerta, $L = n \\cdot \\tfrac{\\lambda}{2}$; vain näitä aallonpituuksia vastaavat taajuudet säilyvät.",
+       "tag": "communication",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kuinka suuri on aallon etenemisnopeus kielessä? Mitkä ovat kielen kaksi seuraavaa ominaistaajuutta?",
+     "answer": [
+      {
+       "name": "v",
+       "value": 215.6,
+       "unit": "m/s",
+       "tolerance": 0.02
+      },
+      {
+       "name": "f2",
+       "value": 392,
+       "unit": "Hz",
+       "tolerance": 0.02
+      },
+      {
+       "name": "f3",
+       "value": 588,
+       "unit": "Hz",
+       "tolerance": 0.02
+      }
+     ],
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Perustaajuudella $L = \\tfrac{\\lambda_1}{2}$, joten $\\lambda_1 = 1{,}10\\,\\text{m}$, ja $v = f_1 \\lambda_1$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$v \\approx 216\\,\\text{m/s}$."
+      },
+      {
+       "text": "Ominaistaajuudet ovat perustaajuuden monikertoja $f_n = n f_1$: $392\\,\\text{Hz}$ ja $588\\,\\text{Hz}$.",
+       "tag": "math",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 3,
+     "text": "Kuinka suuri on kielen perustaajuudella syntyvän ääniaallon aallonpituus ilmassa? Miksi se eroaa kielessä etenevän aallon aallonpituudesta?",
+     "answer": {
+      "value": 1.75,
+      "unit": "m",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$\\lambda = \\tfrac{v}{f} \\approx 1{,}75\\,\\text{m}$."
+      },
+      {
+       "text": "Ääni saa taajuutensa kielestä, joten taajuus on ilmassa sama kuin kielessä.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Aallonpituus on eri, koska aallon nopeus riippuu väliaineesta: ilmassa $343\\,\\text{m/s}$, kielessä noin $216\\,\\text{m/s}$.",
+       "tag": "communication",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kanteleen äänen intensiteettitaso on $1{,}0\\,\\text{m}$:n päässä soittimesta $62\\,\\text{dB}$. Laske taso $8{,}0\\,\\text{m}$:n päässä, kun kantele on pistemäinen lähde ja heijastuksia ei ole. Onko todellinen taso luokkahuoneessa suurempi vai pienempi kuin laskettu? Perustele.",
+     "answer": {
+      "value": 43.9,
+      "unit": "dB",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "text": "Intensiteetti on kääntäen verrannollinen etäisyyden neliöön: $\\tfrac{I_2}{I_1} = \\left(\\tfrac{1{,}0}{8{,}0}\\right)^2 = \\tfrac{1}{64}$.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$L_2 - L_1 = 10\\,\\text{dB} \\cdot \\lg\\tfrac{I_2}{I_1}$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$L_2 \\approx 44\\,\\text{dB}$."
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Luokassa seinät, katto ja lattia heijastavat ääntä kuulijalle, joten taso on suurempi kuin laskettu."
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy5-10",
+    "fy5-13",
+    "fy5-14",
+    "fy5-15"
+   ],
+   "links": {
+    "concept": "fy5-13",
+    "communication": "fy5-13",
+    "math": "fy5-13",
+    "transfer": "fy5-15"
+   }
+  },
+  {
+   "id": "fy5-k6",
+   "title": "Kaiku koulun seinästä",
+   "source": "example",
+   "source_note": "Mittaustulokset on laadittu esimerkiksi tällaisesta kaikumittauksesta, eivätkä ne ole oikean mittauksen tuloksia.",
+   "text": "Fysiikan ryhmä mittasi äänen nopeutta koulun pihalla. Opiskelija seisoi etäisyydellä $d$ koulun leveästä ja tasaisesta seinästä ja löi kaksi puukapulaa yhteen. Hänen vieressään oleva puhelin tallensi äänen, ja tallenteen kuvaajasta luettiin aika $t$ kapuloiden äänen ja seinästä palanneen kaiun välillä. Etäisyys mitattiin mittanauhalla. Ilman lämpötila oli $8{,}0\\,{}^\\circ\\text{C}$, eikä tuullut. Äänen nopeus ilmassa on $0\\,{}^\\circ\\text{C}$:ssa $331\\,\\text{m/s}$, ja se kasvaa noin $0{,}6\\,\\text{m/s}$ jokaista celsiusastetta kohti.\n\n| $d\\ (\\text{m})$ | $t\\ (\\text{s})$ |\n|---|---|\n| $15{,}0$ | $0{,}090$ |\n| $25{,}0$ | $0{,}148$ |\n| $35{,}0$ | $0{,}209$ |\n| $45{,}0$ | $0{,}267$ |\n| $55{,}0$ | $0{,}328$ |\n| $65{,}0$ | $0{,}386$ |",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 3,
+     "text": "Mikä matka ääni kulkee ajassa $t$? Laske äänen nopeus ensimmäisen mittauksen perusteella.",
+     "answer": {
+      "value": 333,
+      "unit": "m/s",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "text": "Ääni kulkee seinään ja takaisin eli matkan $2d$.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$v = \\tfrac{2d}{t}$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$v \\approx 333\\,\\text{m/s}$."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "graph",
+     "points": 5,
+     "text": "Piirrä mittaustuloksista kuvaaja, jonka kulmakerroin on äänen nopeus, ja sovita pisteisiin sopiva malli.",
+     "criteria": [
+      {
+       "text": "Valitsee akselit niin, että kulmakerroin on nopeus: vaaka-akselilla aika $t$ ja pystyakselilla äänen kulkema matka $2d$.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "graph_axes",
+       "points": 1
+      },
+      {
+       "key": "graph_points",
+       "points": 1
+      },
+      {
+       "key": "graph_fit",
+       "points": 2,
+       "detail": "Origon kautta kulkeva suora, koska nollamatkan kulkemiseen kuluu nolla aikaa."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Määritä äänen nopeus kuvaajan avulla. Vertaa tulosta äänen nopeuteen mittaushetken lämpötilassa.",
+     "answer": {
+      "value": 336,
+      "unit": "m/s",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "Esimerkiksi origo ja suoran piste $(0{,}40\\,\\text{s};\\ 134{,}5\\,\\text{m})$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$v \\approx 336\\,\\text{m/s}$."
+      },
+      {
+       "text": "Laskee nopeuden lämpötilassa $8{,}0\\,{}^\\circ\\text{C}$: $331\\,\\text{m/s} + 8{,}0 \\cdot 0{,}6\\,\\text{m/s} \\approx 336\\,\\text{m/s}$.",
+       "tag": "math",
+       "points": 1
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Tulokset ovat lähes samat: ero on alle $1\\,\\%$."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "calc",
+     "points": 4,
+     "text": "Etäisyyden epävarmuus on $0{,}1\\,\\text{m}$ ja ajan $t$ epävarmuus $0{,}002\\,\\text{s}$. Arvioi nopeuden suhteellinen epävarmuus lyhimmällä ja pisimmällä etäisyydellä. Kaiku heikkenee etäisyyden kasvaessa: kuinka monta desibeliä kaiun intensiteettitaso on pisimmällä etäisyydellä pienempi kuin lyhimmällä? Oleta, että seinä heijastaa äänen kokonaan ja kaiku heikkenee kuin pistemäisen lähteen ääni, joka on kulkenut matkan $2d$. Mitä tulokset kertovat sopivasta etäisyydestä?",
+     "answer": [
+      {
+       "name": "lyhin",
+       "value": 2.9,
+       "unit": "%",
+       "tolerance": 0.05
+      },
+      {
+       "name": "pisin",
+       "value": 0.67,
+       "unit": "%",
+       "tolerance": 0.05
+      },
+      {
+       "name": "taso",
+       "value": 12.7,
+       "unit": "dB",
+       "tolerance": 0.03
+      }
+     ],
+     "criteria": [
+      {
+       "key": "uncertainty",
+       "points": 2,
+       "detail": "Suhteelliset epävarmuudet lasketaan yhteen: lyhimmällä etäisyydellä noin $3\\,\\%$, pisimmällä noin $0{,}7\\,\\%$; suurin osuus on ajan epävarmuudella."
+      },
+      {
+       "text": "Intensiteetti on kääntäen verrannollinen matkan neliöön: $10\\,\\text{dB} \\cdot \\lg\\left(\\tfrac{130\\,\\text{m}}{30\\,\\text{m}}\\right)^2 \\approx 13\\,\\text{dB}$.",
+       "tag": "math",
+       "points": 1
+      },
+      {
+       "text": "Päättelee, että pitkä etäisyys pienentää suhteellista epävarmuutta, mutta heikkenevä kaiku erottuu huonommin taustamelusta, mikä rajoittaa etäisyyden kasvattamista.",
+       "tag": "experiment",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "e",
+     "kind": "word",
+     "points": 4,
+     "text": "Toinen ryhmä yritti mittausta $0{,}30\\,\\text{m}$ leveän lyhtypylvään edessä, mutta tallenteesta ei erottunut kaikua. Kapuloiden äänessä on taajuuksia noin $300$–$3000\\,\\text{Hz}$. Selitä aaltoliikkeen avulla, miksi pylväs ei antanut kaikua. Arvioi lopuksi, kuinka luotettava ensimmäisen ryhmän tulos on ja mikä sitä parantaisi.",
+     "criteria": [
+      {
+       "text": "Laskee aallonpituudet $\\lambda = \\tfrac{v}{f}$: noin $0{,}11$–$1{,}1\\,\\text{m}$, eli pylväs on matalimpien äänten aallonpituutta kapeampi ja korkeimpienkin vain noin kolmen aallonpituuden levyinen.",
+       "tag": "math",
+       "points": 1
+      },
+      {
+       "text": "Selittää molemmat tilanteet: pitkillä aallonpituuksilla ääni taipuu pylvään ympäri (diffraktio); lyhyillä aallonpituuksilla kapea, pyöreä pylväs heijastaa takaisin vain pienen osan äänestä ja hajottaa sen sivuille. Leveä seinä on monta aallonpituutta leveä ja heijastaa äänen heijastuslain mukaisesti takaisin.",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "key": "error_sources",
+       "points": 1,
+       "detail": "Tulos poikkeaa lämpötilan mukaisesta arvosta alle prosentin, mikä on epävarmuuden rajoissa; parannuksia ovat esimerkiksi toistot, pidemmät etäisyydet hiljaisessa paikassa, tuulen ja lämpötilan tarkistus tai kahden mikrofonin menetelmä."
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy5-11",
+    "fy5-14",
+    "fy5-15",
+    "fy5-17",
+    "fy1-3"
+   ],
+   "links": {
+    "concept": "fy5-11",
+    "math": "fy5-14",
+    "graph": "fy1-4",
+    "transfer": "fy5-14",
+    "experiment": "fy1-3",
+    "communication": "fy5-14"
+   }
+  },
+  {
+   "id": "fy5-k7",
+   "title": "Järjestyksenvalvoja konsertissa",
+   "source": "example",
+   "source_note": "Tilanne ja mittaustulokset on laadittu esimerkiksi. Ylempi toiminta-arvo $85\\,\\text{dB}$ on työmelua koskevasta valtioneuvoston asetuksesta (85/2006); asetuksen raja-arvo korvalla suojainten kanssa on $87\\,\\text{dB}$, joten tehtävän arvio on varovainen. Tulppien vaimennuksen $10\\,\\text{dB}$:n vähennys on tehtävän oletus; käytössä mitattu vaimennus jää yleisesti valmistajan arvoa pienemmäksi.",
+   "text": "Kesäfestivaalin järjestyksenvalvoja työskentelee lavan edessä $10\\,\\text{m}$:n päässä kaiutintornista. Hänen kohdallaan mitattu keskimääräinen melutaso on $103\\,\\text{dB}$, ja hänen vuoronsa lavan edessä kestää $4{,}0\\,\\text{h}$. Muun työpäivän hän on hiljaisessa paikassa, jonka melua ei tarvitse ottaa huomioon.\n\nMelutasot ovat A-painotettuja, ja niitä käsitellään äänen intensiteettitasoina. Työmelun ylempi toiminta-arvo on $85\\,\\text{dB}$: sen tasoista melua saa kuulla $8\\,\\text{h}$ päivässä, ja sallittu aika puolittuu jokaista $3\\,\\text{dB}$:n nousua kohti. Puolittuminen pätee jatkuvasti myös askelten osille, ja tehtävässä samaa sääntöä käytetään korvalle tulevaan tasoon kuulonsuojainten alla. Päivän melualtistuksen annos on $100\\,\\%$, kun se vastaa tasoa $85\\,\\text{dB}$ kahdeksan tunnin ajan.\n\nJärjestyksenvalvojalla on vaahtomuovitulpat, joiden vaimennus on valmistajan mukaan $22\\,\\text{dB}$. Oletetaan, että tulppien todellinen vaimennus käytössä on $10\\,\\text{dB}$ pienempi, koska tulppia ei usein aseteta korvakäytävään kunnolla.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 3,
+     "text": "Kuinka suuri on äänen intensiteetti järjestyksenvalvojan kohdalla? Kuinka moninkertainen se on tason $85\\,\\text{dB}$ intensiteettiin verrattuna?",
+     "answer": [
+      {
+       "name": "I",
+       "value": 0.02,
+       "unit": "W/m^2",
+       "tolerance": 0.03
+      },
+      {
+       "name": "suhde",
+       "value": 63,
+       "unit": "",
+       "tolerance": 0.03
+      }
+     ],
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$I = I_0 \\cdot 10^{\\,L/(10\\,\\text{dB})}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$I \\approx 2{,}0 \\cdot 10^{-2}\\,\\text{W/m}^2$."
+      },
+      {
+       "text": "Tasoero $18\\,\\text{dB}$ vastaa intensiteettien suhdetta $10^{1{,}8} \\approx 63$.",
+       "tag": "math",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kuinka kauan järjestyksenvalvoja saisi päivittäin olla lavan edessä ilman kuulonsuojaimia? Riittävätkö tulpat neljän tunnin vuoroon, kun otetaan huomioon niiden todellinen vaimennus?",
+     "answer": [
+      {
+       "name": "ilman",
+       "value": 7.5,
+       "unit": "min",
+       "tolerance": 0.03
+      },
+      {
+       "name": "tulpat",
+       "value": 2.0,
+       "unit": "h",
+       "tolerance": 0.03
+      }
+     ],
+     "criteria": [
+      {
+       "text": "Laskee $3\\,\\text{dB}$:n askelten määrän: $103\\,\\text{dB}$ on kuusi askelta toiminta-arvon yläpuolella, joten sallittu aika puolittuu kuusi kertaa.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$t = 8\\,\\text{h} : 2^6 = 0{,}125\\,\\text{h} = 7{,}5\\,\\text{min}$."
+      },
+      {
+       "text": "Todellinen vaimennus $12\\,\\text{dB}$ antaa korvalle tason $91\\,\\text{dB}$, jolla sallittu aika on $2{,}0\\,\\text{h}$.",
+       "tag": "math",
+       "points": 1
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Tulpat eivät riitä: neljän tunnin vuoro on kaksi kertaa sallittu aika."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Järjestäjä siirtää vartiopaikan $25\\,\\text{m}$:n päähän kaiutintornista. Kuinka suuri melutaso uudella paikalla on? Riittävätkö tulpat nyt neljän tunnin vuoroon? Pidä kaiutintornia pistemäisenä lähteenä ja jätä heijastukset huomiotta.",
+     "answer": {
+      "value": 95.0,
+      "unit": "dB",
+      "tolerance": 0.01
+     },
+     "criteria": [
+      {
+       "text": "Intensiteetti on kääntäen verrannollinen etäisyyden neliöön: taso pienenee $10\\,\\text{dB} \\cdot \\lg\\left(\\tfrac{25\\,\\text{m}}{10\\,\\text{m}}\\right)^2 \\approx 8\\,\\text{dB}$.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$L \\approx 95\\,\\text{dB}$."
+      },
+      {
+       "text": "Tulppien kanssa korvalle tulee $83\\,\\text{dB}$, jolla sallittu aika on noin $13\\,\\text{h}$; tai: neljän tunnin raja on $88\\,\\text{dB}$.",
+       "tag": "math",
+       "points": 1
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Tulpat riittävät, kun niitä pidetään koko vuoron ajan."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "calc",
+     "points": 4,
+     "text": "Uudellakin paikalla järjestyksenvalvoja ottaa tulpat pois $15$ minuutiksi joka tunti puhuakseen radiopuhelimeen. Kuinka monta prosenttia vuoron melualtistus on sallitusta annoksesta?",
+     "answer": {
+      "value": 150,
+      "unit": "%",
+      "tolerance": 0.04
+     },
+     "criteria": [
+      {
+       "text": "Laskee annoksen kunkin jakson altistusajan ja sen tason sallitun ajan suhteiden summana.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "Tasolla $95\\,\\text{dB}$ sallittu aika on noin $48\\,\\text{min}$, joten yksi tunti ilman tulppia antaa noin $126\\,\\%$."
+      },
+      {
+       "text": "Kolme tuntia tulppien kanssa antaa $3{,}0\\,\\text{h} : 12{,}7\\,\\text{h} \\approx 24\\,\\%$.",
+       "tag": "math",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "Annos on noin $150\\,\\%$ eli yli sallitun."
+      }
+     ]
+    },
+    {
+     "id": "e",
+     "kind": "calc",
+     "points": 5,
+     "text": "Järjestäjä harkitsee, että lavan eteen $10\\,\\text{m}$:n päähän hankitaan tulppien sijaan kupusuojaimet, joiden todellinen vaimennus on $25\\,\\text{dB}$ ja joiden läpi radiopuhelinta voi kuunnella. Laske kupusuojainten antama annos neljän tunnin vuorosta. Suosittele järjestäjälle ratkaisua laskujesi perusteella, ja arvioi, mitkä mallin oletukset rajoittavat arvion luotettavuutta.",
+     "answer": {
+      "value": 9.9,
+      "unit": "%",
+      "tolerance": 0.05
+     },
+     "criteria": [
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "Korvalle tulee $78\\,\\text{dB}$, sallittu aika on noin $40\\,\\text{h}$ ja annos noin $10\\,\\%$."
+      },
+      {
+       "key": "conclusion",
+       "points": 2,
+       "detail": "Suositus perustuu laskuihin: suojaimet, joita ei tarvitse ottaa pois, antavat pienimmän annoksen, koska d-kohdan mukaan lyhytkin tauko ilman suojaimia moninkertaistaa annoksen; etäisyys pienentää annosta lisää."
+      },
+      {
+       "key": "assumptions",
+       "points": 2,
+       "detail": "Ainakin kaksi rajoitusta perusteltuna: kaiutintorni ei ole pistemäinen lähde, joten taso pienenee etäisyyden kasvaessa hitaammin kuin mallissa; yleisö ja heijastukset lisäävät melua; taso vaihtelee kappaleiden mukaan; suojainten todellinen vaimennus ja ihmisten kuulon herkkyys vaihtelevat."
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy5-15",
+    "fy5-16"
+   ],
+   "links": {
+    "math": "fy5-15",
+    "transfer": "fy5-16",
+    "communication": "fy5-16"
+   }
+  }
+ ]
+}
