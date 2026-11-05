@@ -169,7 +169,7 @@ def source_slice(text, name):
             if isinstance(sub, ast.Name) and sub.id in defs and sub.id not in seen:
                 seen.add(sub.id); used.append(defs[sub.id]); todo.append(defs[sub.id])
     lines = text.splitlines()
-    parts = [ast.get_source_segment(text, node) or "" for node in sorted(set(used), key=lambda n: n.lineno)]
+    parts = [ast.get_source_segment(text, node) or "" for node in sorted(set(used), key=lambda n: (n.lineno, n.col_offset))]
     return "\n\n".join(parts + [f"FIGURES[{name!r}] = {ast.get_source_segment(text, entry)}"])
 
 
