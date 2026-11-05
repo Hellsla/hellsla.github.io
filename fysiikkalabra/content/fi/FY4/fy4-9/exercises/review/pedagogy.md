@@ -1,19 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: cd77831d711f3f85
+CONTENT-HASH: cd5b133c0f7ecf25
 
 ## Blocking
 
 ## Polish
-- exercises.json fy4-9-L3-01 — "Lasta istuu pulkassa" is ungrammatical Finnish — "Lapsi istuu pulkassa vaakasuoralla lumella, ja lapsen ja pulkan yhteinen massa on $24\,\text{kg}$."
-- exercises.json level 1 — all five tasks are one-step plug-ins and none requires a sign; add or turn one into a sign task (e.g. ball bounces, "laske liikemäärän muutos") so level 1 also practises the lesson's main difficulty; L2-03 avoids the sign by asking for the magnitude.
-- exercises.json — no exercise asks for an explanation or an error check (the lesson's "Etsi virhe" is optional); swapping L1-05 for a short qualitative "miksi polvien koukistaminen..." item would cover the thematic goal (urheilu, liikenne) in words.
-- solutions.md L2-01 — formula line derives $-mv_0$ but the answer is the magnitude; say "voima on negatiivinen eli liikettä vastaan, suuruus 6,0 kN" in the Vastaus line to match Järkevyys.
+- No new findings; round-1 Polish items not touched by the diff remain optional (L3-05 weight leniency within the 2 % tolerance; L2-06 and L3-04 c) share the "soft stop" idea).
 
 ## Checked
-- Three levels (5/4/3), rising demand: direct formulas, then two-step with unit conversion, then graph reading (trapezoid), design limit (L3-02) and comparison (L3-03).
-- None repeats the lesson example (tennis) or siirto (catcher); contexts are sport and traffic as the slot asks.
-- Solutions follow the Annettu-Kysytty-Periaate-Kaava-Sijoitus-Vastaus-Järkevyys form; principle explained, nothing skipped, significant figures justified.
-- L3-01 figure referenced by id; solution reads it step by step.
-- Answers consistent with solutions (5,1; 6,0; 4,86; 6,0; 150; 6,0 kN; 6,44 kN; 1,5; 25,65; 3,0; 57,6; 60).
+- Delta: L1-08 Järkevyys now says "noin 180-kertainen" (18 000 / 100 = 180), correct.
+- Delta: L2-07 solution now says seven trapezoids; the table has 8 rows, so 7 intervals of 10 ms: correct, and the sum 144,0 N and Δv = 2,88 m/s are unchanged.
+- No answers or numbers changed; the remaining round-1 checks stand.
 - Hash unchanged at end.
-- Typo fix only since review: exercises.json L3-01 "Lasta istuu pulkassa" → "Lapsi istuu pulkassa"; no other change (verified by git diff).

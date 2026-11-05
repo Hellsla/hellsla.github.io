@@ -1,14 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 9574d58379ec2094
+CONTENT-HASH: 4aef3c292c9d3e47
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+(none needed)
 
 ## Polish
-- [Minor] solutions L2-01, L2-02, L3-02: "kolmion ala" instead of "pinta-ala", and in L3-02 doubled parentheses "(...((t,v)-kuvaajan kolmion ala)" — use "pinta-ala" and rephrase.
-- [Minor] open-exercises-L3-1280-3: the L3-02 formula line wraps ("s = ½ v_0 Δt, joten Δt = 2s/v_0, ja F_ka Δt = m v_0, joten") with the final display box below; fine, but the chain could be split in two lines.
+(none)
 
 ## Checked
-- contact-3 (exercise sheets, stage-exercises, experiments); open-exercises-1280-1 (Level 1, exercise 1 with answer and solution); open-exercises-L3-1280-3 (L3-02 solution, L3-03 stem). All 12 exercise stems read in the source: decimal comma, plain short sentences, units in LaTeX, 'Vastaa yksikössä $\text{km/h}$' consistent. Solutions keep the Annettu/Kysytty/Periaate/Kaava/Muunnokset/Sijoitus/Vastaus/Järkevyys order; no overflow, no clipped labels.
-
-## Scores
-illustrations n/a (5) · typography 5 · Finnish 4 · accessibility 4
+- Re-review after L3-04 aligned-block change: 2ad = 2*5.1*55 = 561 m2/s2 (own row), sqrt(6.12^2 + 561) = sqrt(598.45) = 24.46, minus 6.12 = 18.34 m/s = 66.0 km/h; same maths as fi; rows are short enough for 360 px.
+- Screenshots fy4-11-open-exercises-L2-1280-5 (L2-05 stem, table and solution) and the L2/L3 captures of the new tasks: tables, units and LaTeX render without overflow; lengths of the translated stems do not break the layout.
+- LaTeX blocks (aligned) in the new solutions are identical in structure to fi; no raw Finnish or untranslated captions in fi-easy.
+- No exercise figures; table captions translated.

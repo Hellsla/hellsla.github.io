@@ -1,12 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 0dc06ac7bbe7c1fa
+CONTENT-HASH: 286231f4a979b6e5
 
 ## Blocking
 
 ## Polish
-- Kierroksen 1 Polish-kohdat (L2-03:n data sama kuin esimerkissä, L3-02:n vertailukehys, L1-03:n nopeus, g:n maininta, sanallinen tason 3 tehtävä) ovat edelleen voimassa; tämä kierros ei muuttanut niitä.
 
 ## Checked
-- Delta on pelkkä symbolinvaihto F_k -> F_ka solutions.md:n kolmessa ratkaisussa (L1-04, L2-03, L3-02) ja answers.py:n kommenteissa; luvut, yksiköt ja toleranssit ennallaan.
-- exercises.json ei sisällä symbolia; tehtävätekstit ja ratkaisut käyttävät nyt samaa symbolia kuin lukuteksti.
-- Ratkaisujen rakenne ja luettavuus 360 px:ssä ennallaan.
+- Delta only: fy4-11-L3-04 solution b). 2ad = 2 · 5,1 · 55 = 561 m²/s² is right; (6,12)² = 37,4; sqrt(598,4) = 24,46 m/s; 24,46 - 6,12 = 18,34 m/s = 66,0 km/h. Matches the answer.
+- The new first row names the quantity (2ad) and carries its unit, so a student can follow the step; the root row now reads simply and the result is unchanged.
+- Units consistent (m²/s² under the root, m/s result); Finnish text around it unchanged.
+- Capture L3-1280-6 shows the block rendered cleanly; no 360 px exercise captures are listed, layout 360 px check is ok per packet.
+- Earlier polish items were not in this delta and are not repeated.
+- Hash unchanged at end.
