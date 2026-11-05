@@ -87,8 +87,8 @@ tuonti merkitsee kaksoiskappaleet.
    - `HEADERS`: sarakeotsikot. Oletuksena ovat suomenkieliset *Aikaleima* ja *Sähköpostiosoite* ja englanninkieliset
      vastineet. Jos taulukossa on muu otsikko, lisää se listaan. Skripti kertoo virheilmoituksessa löytämänsä otsikot.
    - `EMAIL_DOMAIN`: halutessa koulun sähköpostien verkkotunnus. Tyhjä = ei tarkisteta.
-   - `MAX_POINTS`: pisteiden yläraja (oletus 3). **Pisteet ovat kokonaislukuja 0 … MAX_POINTS. Tyhjä = arvioimaton,
-     0 = annettu nolla pistettä.**
+   - `MAX_POINTS`: pisteiden yläraja tehtävää kohti (oletus 1). **Pisteet ovat 0 … MAX_POINTS, enintään kaksi
+     desimaalia (esim. 0,5). Tyhjä = arvioimaton, 0 = annettu nolla pistettä.**
 5. Tallenna (Ctrl+S). Palaa taulukkoon ja lataa sivu uudelleen. Valikkoriville tulee **RuukkiLabra**.
 6. Ensimmäisellä käytöllä Google pyytää hyväksymään oikeudet (alla). Jos kaupungin hallinta estää hyväksynnän,
    pyydä eduespoon ylläpidolta lupa tälle sisäiselle skriptille. **Älä kierrä estoa** julkaisemalla skriptiä,
@@ -130,9 +130,8 @@ sähköposteja lokeihin. Lähdekoodissa ei ole salaisuuksia.
     pistekenttä. Kuvan saa isoksi napsauttamalla. Kaavat näkyvät kuvina, ja *Näytä kaavat LaTeX-muotoisina*
     näyttää niiden LaTeX-koodin.
   - Siirtyminen: **↓ / ↑** tai painikkeet *↓ Seuraava* / *↑ Edellinen*. Pisteet tallennetaan ennen siirtymistä.
-    Jos tallennus epäonnistuu, siirtymistä ei tapahdu ja virhe näytetään. Kun kohdistin ei ole pistekentässä,
-    numeronäppäin antaa pisteet ja ↓ tallentaa ja siirtyy. Pistekentässä nuolet toimivat normaalisti, Enter
-    tallentaa ja siirtyy ja Esc poistuu kentästä.
+    Jos tallennus epäonnistuu, siirtymistä ei tapahdu ja virhe näytetään. → / ← antaa +1 / −1 p ja tallentaa heti.
+    Näppäimet ovat taulukossa PAIKALLINEN-ARVIOINTI.md:n kohdassa 5.
   - Oletuksena näytetään opiskelijan uusin hyväksytty versio. Vanhemman version saa valinnasta *Palautusversio*.
     Pisteet kuuluvat aina yhdelle versiolle, eikä vanhan version pisteitä siirretä uuteen.
   - **Vain arvioimattomat** näyttää ne opiskelijat, joiden uusimmalla versiolla ei ole pisteitä tässä tehtävässä.

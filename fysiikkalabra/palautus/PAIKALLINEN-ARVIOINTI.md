@@ -25,24 +25,38 @@ FY3-luvussa on Tehtävät-otsikon rivillä painike **Lataa kaikki ratkaisut**. P
 
 1. Drivessa: napsauta ryhmän lomakkeen kansiota **<lomakkeen nimi> (File responses)** hiiren oikealla → **Lataa**.
    Drive tekee zip-tiedoston (suurista kansioista useamman).
-2. Arviointisivulla: valitse **Ryhmä**, sitten **Ryhmän palautukset: Valitse tiedostot** → valitse zip (tai kaikki
+2. Arviointisivulla: valitse **Ryhmä**, sitten **Palautukset (zip)** → valitse zip (tai kaikki
    zipit kerralla). Sivu tarkistaa tiedostot ja näyttää käsittelytilan: hyväksytty, kaksoiskappale, tarkistettava
    (sama palautustunniste kahdella opiskelijalla), virheellinen (syy näkyy). Tarkistettavan voi hyväksyä ja hyväksytyn
    hylätä rivin painikkeella.
 3. **Ryhmät pysyvät erillään.** Ryhmä muistaa, miltä lomakkeelta sen palautukset tulivat (zipin ylin kansio). Toisen
    lomakkeen zipiä se ei lue, vaan kertoo, että valittu ryhmä on väärä. Jokaisella ryhmällä on omat opiskelijat, pisteet,
    CSV ja varmuuskopio.
-4. **Tehtävät luvuittain**: jokainen luku on oma laatikkonsa, ja ne luvut, joista on palautuksia, ovat auki. Valitse
-   tehtävä ja arvioi sen kaikki palautukset peräkkäin: yksi opiskelija kerrallaan, ↓/↑, numeronäppäin antaa pisteet,
-   Enter tallentaa ja siirtyy. Pisteet 0–3, tyhjä = arvioimaton, 0 = annettu nolla. Jonossa ovat vain ne opiskelijat,
-   jotka ovat palauttaneet kyseisen luvun.
-5. **Pisteet luvuittain**: taulukossa ovat opiskelijan pisteet jokaisesta palautetusta luvusta (L1, L2, …) ja yhteensä.
-   Pienellä näkyy arvioitujen tehtävien määrä. Pisteet lasketaan opiskelijan uusimmasta hyväksytystä palautuksesta.
-6. **Vie pisteet (CSV)** lataa tiedoston `FY3-<ryhmä>-pisteet.csv`, jossa ovat opiskelija, pisteet luvuittain (tyhjä,
-   jos lukua ei ole palautettu), yhteensä, palautettujen lukujen määrä ja arvioitujen tehtävien määrä. Avaa se
-   Sheetsissä (Tiedosto → Tuo) tai Excelissä. Kaavoiksi tulkittavat merkit on suojattu.
-7. **Varmuuskopioi ryhmän arviointi** lataa ryhmän tuonnin tilan ja pisteet JSON-tiedostona. Säilytä se koulun
-   Drivessa, ei julkisesti. **Palauta varmuuskopio** tuo sen takaisin valittuun ryhmään (esim. toisella koneella).
+4. **Kooste** (ylhäällä): opiskelijat aakkosjärjestyksessä ja sarakkeet **Tehty** (tehtäviä, joihin on ratkaisu / tehtäviä),
+   **Tarkistamatta** (tehtyjä ilman pisteitä) ja **Pisteet** (summa / enimmäispisteet). Valinnasta saa kaikki palautetut
+   luvut yhdessä tai yhden luvun. Sarakkeen otsikko järjestää taulukon (uusi napsautus kääntää järjestyksen). Luvut
+   lasketaan opiskelijan uusimmasta hyväksytystä palautuksesta.
+5. **Tehtävät**: jokainen luku on oma laatikkonsa, ja ne luvut, joista on palautuksia, ovat auki. Valitse tehtävä ja
+   arvioi sen kaikki palautukset peräkkäin. Jonossa ovat vain ne opiskelijat, jotka ovat palauttaneet kyseisen luvun.
+
+   | Näppäin | Toiminto |
+   |---|---|
+   | ↓ / ↑ | seuraava / edellinen opiskelija (pisteet tallentuvat ennen siirtymistä) |
+   | → / ← | +1 p / −1 p, rajat 0 ja 1, tallentuu heti; tyhjästä → antaa 1 ja ← antaa 0 |
+   | 0, 1 | pisteet suoraan, tallentuu heti |
+   | Backspace | tyhjä = arvioimaton |
+   | , | siirtyy pistekenttään desimaalia varten (esim. 0,5) |
+   | kentässä Enter, ↓, ↑ | tallentaa, siirtyy ja poistuu kentästä, jolloin nuolet toimivat taas |
+
+   Pisteet tehtävää kohti 0–1, enintään kaksi desimaalia (0,5 tai 0,25). Tyhjä = arvioimaton, 0 = annettu nolla.
+   Viimeisellä opiskelijalla ↓ tallentaa ja kertoo, että tehtävä on käyty läpi. Jos tallennus epäonnistuu, siirtymistä
+   ei tapahdu.
+6. **Vie pisteet (CSV)** lataa tiedoston `FY3-<ryhmä>-pisteet.csv`: opiskelija, pisteet luvuittain (tyhjä, jos lukua ei
+   ole palautettu), yhteensä, palautettujen lukujen määrä, Tehty ja Tarkistamatta. Desimaalierotin on pilkku. Avaa
+   tiedosto Sheetsissä (Tiedosto → Tuo) tai Excelissä. Kaavoiksi tulkittavat merkit on suojattu.
+7. **Varmuuskopio** lataa ryhmän tuonnin tilan ja pisteet JSON-tiedostona. Säilytä se koulun Drivessa, ei julkisesti.
+   **Palauta varmuuskopio** tuo sen takaisin valittuun ryhmään (esim. toisella koneella). **Poista ryhmä** poistaa
+   ryhmän ja sen arvioinnin tästä selaimesta.
 8. Kun uusia palautuksia tulee, lataa kansio uudelleen ja valitse uusi zip samaan ryhmään. Jo luetut ohitetaan ja uudet
    lisätään. Korjattu palautus on opiskelijan uusi versio samasta luvusta, ja vanhan pisteet säilyvät vanhalla
    versiolla.
@@ -63,8 +77,7 @@ vastausten näyttämistä varten valitse ryhmän zip uudelleen.
 
 - Zip sisältää opiskelijoiden töitä: pidä se koulun koneella ja poista Lataukset-kansiosta arvioinnin jälkeen.
 - Sivu tallentaa selaimen muistiin (localStorage) ryhmittäin tuonnin tilan, opiskelijoiden nimet ja pisteet, ei
-  vastauksia. Käytä omaa, henkilökohtaista koulun konetta, älä yhteiskäyttöistä. Kurssin jälkeen: **Poista ryhmä ja
-  sen arviointi**.
+  vastauksia. Käytä omaa, henkilökohtaista koulun konetta, älä yhteiskäyttöistä. Kurssin jälkeen: **Poista ryhmä**.
 - Sivu ei lataa mitään verkosta (Content-Security-Policy estää sen), ei suorita palautuksista koodia eikä näytä
   niistä HTML:ää. Kuvina näytetään vain tarkistetut PNG- ja JPEG-kuvat.
 
