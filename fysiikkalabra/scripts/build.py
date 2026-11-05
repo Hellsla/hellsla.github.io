@@ -972,7 +972,9 @@ def build_language(lang):
     school = next(iter(local.values()))["school"] if local else ""
     plan_rows = "".join(planned_row(p) for p in local_courses.planned(lang))
     home = (local_notes +
-        f'<section class="home-intro" aria-labelledby="h-intro"><h1 id="h-intro">{T("site.home_h1")}</h1>'
+        # beside the heading a small badge: the site is still being built (teacher 2026-11-05, "leima että työn alla")
+        f'<section class="home-intro" aria-labelledby="h-intro"><div class="intro-title"><h1 id="h-intro">{T("site.home_h1")}</h1>'
+        f'<p class="wip-badge" title="{esc(T("site.home_wip_title"))}">{T("site.home_wip")}</p></div>'
         f'<p class="lead">{T("site.home_sub")}</p>'
         # from 700 px the school's logo stands here, over the right column, so that both lists start level (teacher
         # 2026-11-04); the list's own heading (the same logo) is then visually hidden, site.css .intro-school

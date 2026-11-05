@@ -103,8 +103,8 @@ for lang in i18n.languages():
            and f'<meta name="description" content="{_h.escape(T("site.home_description"))}">' in home)
     expect(f"{lang}: no sample lesson and no call to action on the front page",
            not re.search(r'class="(featured[^"]*|actions|button|quiet-link)"', home), re.findall(r'class="(featured[^"]*|actions|button|quiet-link)"', home)[:3])
-    intro = re.search(r'<section class="home-intro"[^>]*><h1 id="h-intro">(.*?)</h1><p class="lead">(.*?)</p>(?:<img class="intro-school" [^>]+>)?</section>', home)
-    expect(f"{lang}: the heading and one line under it, then the module list",
+    intro = re.search(r'<section class="home-intro"[^>]*><div class="intro-title"><h1 id="h-intro">(.*?)</h1><p class="wip-badge" title="[^"]+">(?:[^<]+)</p></div><p class="lead">(.*?)</p>(?:<img class="intro-school" [^>]+>)?</section>', home)
+    expect(f"{lang}: the heading with its work-in-progress badge and one line under it, then the module list",
            bool(intro) and intro.group(1) == T("site.home_h1") and intro.group(2) == T("site.home_sub") and home.find('class="catalogue"') > intro.end())
     hdr = re.search(r'<header class="top">.*?</header>', home, re.S).group(0); ftr = re.search(r'<footer class="bottom">.*?</footer>', home, re.S).group(0)
     expect(f"{lang}: the header links Näin opiskelet and Lukuvinkit in that order, no Moduulit on the front page (teacher 2026-11-04)",
