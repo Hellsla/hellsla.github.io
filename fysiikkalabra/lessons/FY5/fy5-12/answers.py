@@ -29,4 +29,18 @@ a["fy5-12-L3-02"] = (n + 0.5) * l1            # Δs = 2,5 · 2,4 cm = 6,0 cm (ch
 assert all(abs(a["fy5-12-L3-02"] / (v / f) - round(a["fy5-12-L3-02"] / (v / f) - 0.5) - 0.5) > 0.05 for f in (11, 12, 13))
 s1h = math.hypot(16.0, 30.0)                  # harbour: gaps 16,0 m apart, boat 30,0 m out from one gap: s1 = 34,0 m
 a["fy5-12-L3-03"] = 2 * (s1h - 30.0)          # first nodal line (n = 0): Δs = λ/2 -> λ = 2 · 4,0 m = 8,0 m
+# Exercise bank additions (L1-06..08, L2-05..07, L3-04..05)
+# fy5-12-L1-06, L1-07, L2-06 are multiple choice (answered in words): superposition only adds the displacements, Δs = 0 on the central line, energy is redistributed
+a["fy5-12-L1-08"] = 340 / (2 * (5.30 - 4.45))   # Δs = 0,85 m, smallest f for destructive: λ = 2Δs = 1,70 m, f = v/λ = 200 Hz
+dx = (1.63 - 0.38) / 5                        # speakers 2,00 m apart, six consecutive weakest-sound points in 0,3...1,7 m: Δs = |d − 2x|, neighbouring minima Δx = λ/2 = 0,250 m
+a["fy5-12-L2-05"] = 340 / (2 * dx)            # f = v/(2Δx) = 340 m/s : 0,500 m = 680 Hz
+amax = (7.9 + 8.1 + 7.8) / 3                  # maxima of the amplitude table at Δs = 0, 2,0, 4,0 cm: mean 7,93 mm = 2A
+a["fy5-12-L2-07"] = round(amax / 2, 1)         # A = 3,97 mm -> 4,0 mm (λ = 2,0 cm is read from the maxima)
+a["fy5-12-L3-04"] = 340 / (340 / 170 / 2)         # Δs = λ/2 = 1,00 m at 170 Hz (N at 4,00 m); loud first when Δs = λ2: f2 = v/Δs = 340 Hz
+def dpath(y, L=4.00, d=1.00):                 # speakers at y = ±0,50 m, line L = 4,00 m away: Δs = s1 − s2
+    return math.hypot(L, y + d / 2) - math.hypot(L, y - d / 2)
+f1 = 340 / (2 * dpath(0.82))                  # first quiet point n = 0: Δs = λ/2 -> f = 852,6 Hz
+f2 = 340 / (2 * dpath(3.01) / 3)              # second quiet point n = 1: Δs = 3λ/2 -> f = 850,9 Hz (agrees within 1 %)
+assert abs(f1 - f2) / f1 < 0.01
+a["fy5-12-L3-05"] = round((f1 + f2) / 2, -1)  # two significant figures: 850 Hz
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

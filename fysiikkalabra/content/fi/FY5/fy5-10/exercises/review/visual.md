@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 60e06419cfa4fd4f
+CONTENT-HASH: e722395ef4ea4e64
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] exercises.json L3-01…L3-03 — calculation and "Perustele…" request in one long paragraph; optional line break.
-- [Minor] fy5-10/yt-kuvaaja — time tick 0 unlabelled; optional.
+(none)
 
 ## Checked
-- solutions.md source after the edits: `\text{s}^{-1}` replaces `\tfrac{1}{\text{s}}`, `\dfrac` in L1-01/L1-05, "muutama metri sekunnissa" in L2-02
-- open-exercises-1280-1 and L2-1280-1 re-read (layout unchanged); the exercise set contains no `$P$` heading or link text
+- Hash e722395ef4ea4e64 at start and end (delta, text-only). Re-read the changed L1-06 Mallivastaus: the added "kohdat pysyvät paikallaan" sentence matches the new option and its feedback; fluent, no contradiction.
+- Calculation chains render in the new captures (template fix applied).
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

@@ -39,6 +39,77 @@
       "answer": 3.0,
       "unit": "cm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-12-L1-06",
+      "level": 1,
+      "text": "Two identical pulses travel towards each other on a taut string, one above the string and the other below it. The pulses meet, overlap for a moment and are then apart again.\n\nWhich of the following correctly describes the pulses after they meet?",
+      "kind": [
+        "concept"
+      ],
+      "unit": "",
+      "tolerance": 0.02,
+      "answer": "The pulses continue unchanged through each other, because the displacements only add up at the moment they meet.",
+      "choices": [
+        {
+          "text": "The pulses bounce back from each other, because they meet in opposite directions and collide like objects.",
+          "feedback": "Waves do not collide like objects. During the meeting the displacements are added together, and after that each pulse continues in its original direction."
+        },
+        {
+          "text": "The pulses continue unchanged through each other, because the displacements only add up at the moment they meet.",
+          "feedback": "Correct: by the principle of superposition the displacements are added only where and when the pulses are at the same place. After the meeting each pulse is as it was.",
+          "correct": true
+        },
+        {
+          "text": "The pulses disappear completely, because the upward and downward displacements cancel each other for good.",
+          "feedback": "The cancellation is only momentary. When the pulses overlap, the string is straight for a moment, but the pulses reappear and continue on their way."
+        },
+        {
+          "text": "The pulses merge into one bigger pulse, because the string can carry only one pulse at a time.",
+          "feedback": "The string can carry two pulses at the same time: the displacements add up, and the pulses do not fuse permanently into one."
+        }
+      ]
+    },
+    {
+      "id": "fy5-12-L1-07",
+      "level": 1,
+      "text": "Two loudspeakers in phase play the same sine tone. A listener stands on the perpendicular bisector of the loudspeakers, that is, equally far from both loudspeakers.\n\nWhy does the listener hear a loud sound there at any frequency?",
+      "kind": [
+        "concept"
+      ],
+      "unit": "",
+      "tolerance": 0.02,
+      "answer": "The path difference is zero, so the waves always arrive crest with crest.",
+      "choices": [
+        {
+          "text": "The path difference is always exactly one wavelength, so the waves arrive in phase.",
+          "feedback": "On the perpendicular bisector the distance to each loudspeaker is the same, so the path difference is zero, not one wavelength."
+        },
+        {
+          "text": "The sounds do not meet on the perpendicular bisector, so each is heard separately at full strength.",
+          "feedback": "The sounds meet everywhere that both waves are present, and their displacements add up. The loud sound results from the superposition."
+        },
+        {
+          "text": "The path difference is zero, so the waves always arrive crest with crest.",
+          "feedback": "Correct: waves that have travelled equally far are in phase at the listener regardless of the frequency, and they reinforce each other.",
+          "correct": true
+        },
+        {
+          "text": "Sound travels faster in the middle, so the sounds from both loudspeakers arrive there first.",
+          "feedback": "The speed of sound is the same everywhere in the air. The loudness results from the path difference being zero, not from the speed of sound."
+        }
+      ]
+    },
+    {
+      "id": "fy5-12-L1-08",
+      "level": 1,
+      "text": "Two loudspeakers in phase play the same sine tone. At a certain listening point the distance to one loudspeaker is $5.30\\,\\text{m}$ and to the other $4.45\\,\\text{m}$. The speed of sound is $340\\,\\text{m/s}$.\n\nWhat is the lowest frequency at which the sound is weak at the listening point? Give the answer in hertz.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 200,
+      "unit": "Hz",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,6 +144,138 @@
       "answer": 1.5,
       "unit": "s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-12-L2-05",
+      "level": 2,
+      "text": "Two loudspeakers A and B in phase are $2.00\\,\\text{m}$ apart and play the same sine tone. The speed of sound is $340\\,\\text{m/s}$.\n\nA microphone was moved along the line segment between the loudspeakers over the range $x = 0.30\\,\\text{m}$ … $1.70\\,\\text{m}$, where $x$ is the distance from loudspeaker A. The distance of the microphone from loudspeaker B is $2.00\\,\\text{m} - x$. The table lists, in order, all the points of weakest sound observed in this range (example data).\n\nDetermine the frequency of the sound using all six points. Give the answer in hertz.",
+      "kind": [
+        "data"
+      ],
+      "answer": 680,
+      "unit": "Hz",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Points of weakest sound on the segment between the loudspeakers",
+        "columns": [
+          "Point of weakest sound",
+          "$x\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "1.",
+            "0.38"
+          ],
+          [
+            "2.",
+            "0.62"
+          ],
+          [
+            "3.",
+            "0.88"
+          ],
+          [
+            "4.",
+            "1.13"
+          ],
+          [
+            "5.",
+            "1.37"
+          ],
+          [
+            "6.",
+            "1.63"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-12-L2-06",
+      "level": 2,
+      "text": "A student writes: “When the sounds of two loudspeakers weaken each other on a nodal line, the energy of the sound waves is lost.”\n\nWhich of the following correctly fixes the claim?",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "unit": "",
+      "tolerance": 0.02,
+      "answer": "The energy is redistributed, because less of it goes to the nodal lines and more elsewhere.",
+      "choices": [
+        {
+          "text": "The claim is correct, because the total energy of the loudspeakers decreases when one wave cancels the other.",
+          "feedback": "The loudspeakers produce exactly as much energy as before. Interference only affects where the energy goes."
+        },
+        {
+          "text": "On nodal lines the energy turns into heat, because the waves rub against each other when they meet.",
+          "feedback": "Waves pass through each other and do not rub against each other. No more heat than usual is produced on nodal lines."
+        },
+        {
+          "text": "The energy is redistributed, because less of it goes to the nodal lines and more elsewhere.",
+          "feedback": "Correct: the total amount of energy is conserved. The interference pattern distributes the energy in space differently: little arrives on the nodal lines, and correspondingly more at the points of constructive interference.",
+          "correct": true
+        },
+        {
+          "text": "On nodal lines the energy moves to the other loudspeaker, because it amplifies that one's own sound.",
+          "feedback": "The loudspeakers do not receive energy from each other. Interference does not move energy back to the sources."
+        }
+      ]
+    },
+    {
+      "id": "fy5-12-L2-07",
+      "level": 2,
+      "text": "Two sources in a ripple tank vibrate in phase at the same frequency, and their waves are equally large. A small sensor measures the amplitude of the vibration of the water at points whose path differences from the sources are different (example data).\n\na) What is the wavelength?\n\nb) How large is the amplitude of the wave from one source alone?\n\nGive the result of part b) in millimetres.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 4.0,
+      "unit": "mm",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Amplitude of the vibration of the water by path difference",
+        "columns": [
+          "$\\Delta s\\,(\\text{cm})$",
+          "$A\\,(\\text{mm})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "7.9"
+          ],
+          [
+            "0.5",
+            "5.8"
+          ],
+          [
+            "1.0",
+            "0.3"
+          ],
+          [
+            "1.5",
+            "5.6"
+          ],
+          [
+            "2.0",
+            "8.1"
+          ],
+          [
+            "2.5",
+            "5.9"
+          ],
+          [
+            "3.0",
+            "0.2"
+          ],
+          [
+            "3.5",
+            "5.7"
+          ],
+          [
+            "4.0",
+            "7.8"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -99,6 +302,47 @@
       "answer": 8.0,
       "unit": "m",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-12-L3-04",
+      "level": 3,
+      "text": "A machine-room loudspeaker M plays a continuous sine tone with a frequency of $170\\,\\text{Hz}$. The speed of sound is $340\\,\\text{m/s}$, and the listener is $3.00\\,\\text{m}$ from loudspeaker M (example situation).\n\nAn attempt is made to damp the noise by adding a loudspeaker N, which receives the same signal and plays in phase with M. Loudspeaker N is placed farther from the listener than M, so that it is quiet at the listener at the smallest possible distance. Assume that the waves of both loudspeakers are equally large at the listener and that the sound is not reflected from anywhere.\n\na) How far from the listener is loudspeaker N?\n\nb) The frequency is raised from $170\\,\\text{Hz}$. What is the lowest frequency at which the sound at the listener is loud instead of quiet?\n\nc) Justify why such an arrangement is not suitable for damping noise and why noise-cancelling headphones work differently.\n\nGive the result of part b) in hertz.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 340,
+      "unit": "Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-12-L3-05",
+      "level": 3,
+      "text": "In a hall two loudspeakers in phase play the same sine tone. The loudspeakers are $1.00\\,\\text{m}$ apart, and the speed of sound is $340\\,\\text{m/s}$.\n\nA listener walks along a straight line that is parallel to the line through the loudspeakers and $4.00\\,\\text{m}$ from it. The position $y$ is measured from the point where the perpendicular bisector of the loudspeakers meets the line, so the loudspeakers are at $y = \\pm 0.50\\,\\text{m}$. The table gives the first two quiet points as $y$ increases from zero (example data). There are no other quiet points between them.\n\nAssume that the sound is not reflected from anywhere.\n\na) Calculate the frequency of the sound using the first quiet point.\n\nb) Justify why the first quiet point corresponds to $n = 0$ and the second to $n = 1$, and check the result using the second quiet point.\n\nGive the result of part a) in hertz.",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 850,
+      "unit": "Hz",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Quiet points on the walking line",
+        "columns": [
+          "Quiet point",
+          "$y\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "1.",
+            "0.82"
+          ],
+          [
+            "2.",
+            "3.01"
+          ]
+        ]
+      }
     }
   ]
 }

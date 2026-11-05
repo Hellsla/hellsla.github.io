@@ -26,4 +26,14 @@ a["fy5-9-L3-02"] = 2 * pi * math.sqrt((1200 + 80) / k32)  # T = 2π√(1280 kg /
 l33, dl33 = 0.994, 0.50e-3                                # clock pendulum 0,994 m lengthens by 0,50 mm in the summer heat
 ratio = math.sqrt((l33 + dl33) / l33)                     # T'/T = √(l'/l) = 1,0002515
 a["fy5-9-L3-03"] = 86400 * (1 - 1 / ratio)                # the clock counts 86 400 s / T' swings of T each: it loses 86 400 s (1 − T/T') = 21,73 s -> 22 s
+
+# Added batch (L1-06..08 are multiple choice, no number)
+a["fy5-9-L2-05"] = 4 * pi ** 2 / 4.04                     # (l, T²) line through the origin and (1,00 m; 4,04 s²): slope 4,04 s²/m, g = 4π²/slope = 9,772 m/s² -> 9,77 m/s²
+a["fy5-9-L2-06"] = 4 * pi ** 2 / 1.96                     # (m, T²) line through the origin and (0,500 kg; 0,98 s²): slope 1,96 s²/kg, k = 4π²/slope = 20,14 N/m -> 20,1 N/m
+T0_27 = 2 * pi * math.sqrt(1.000 / g)                     # pendulum 1,000 m: T0 = 2,0061 s
+a["fy5-9-L2-07"] = (21.5 / 10 / T0_27 - 1) * 100          # 60° start: T = 2,15 s, (T − T0)/T0 = 7,17 % -> 7,2 %
+slope34 = (0.504 - 0.033) / 0.300                         # fitted (m, T²) line through (0; 0,033 s²) and (0,300 kg; 0,504 s²): 1,570 s²/kg
+a["fy5-9-L3-04"] = 4 * pi ** 2 / slope34                  # k = 4π²/slope = 25,14 N/m -> 25,1 N/m (m0 = 0,033/1,570 = 0,0210 kg; k from 50 g alone 17,69 N/m, −29,6 %)
+l35, al35 = 1.20, math.radians(10.0)                      # pendulum 1,20 m released from 10,0°
+a["fy5-9-L3-05"] = math.sqrt(2 * g * l35 * (1 - math.cos(al35)))  # ½mv² = mgh, h = l(1 − cos α) = 0,01823 m: v = 0,5981 m/s -> 0,598 m/s (harmonic model l·α·√(g/l) = 0,5988 m/s, 0,13 % more)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))
