@@ -36,6 +36,13 @@ GAS = ROOT / "palautus/apps-script"
 fails = 0
 
 
+def go_back(pg):
+    """Back to the task list, waiting until the list is reloaded (the old rows stay visible meanwhile)."""
+    pg.click("#back")
+    pg.wait_for_function("!document.getElementById('home').hidden && document.getElementById('homeState').textContent !== 'Ladataan…'")
+    pg.wait_for_selector("#tasks tbody tr")
+
+
 def expect(name, ok, detail=""):
     global fails
     print(("ok   " if ok else "FAIL ") + name + ("" if ok else f"\n     {detail}"))
@@ -355,13 +362,13 @@ with sync_playwright() as p:
     tp.keyboard.press("Escape"); tp.click("#next"); tp.wait_for_function("document.getElementById('gPos').textContent === 'Opiskelija 3/3'")
     expect("the buttons move too", True)
     # B's file in task 1: v1 content; check student 2 is C (empty there? no: C has v1 = answered)
-    tp.click("#back"); tp.wait_for_selector("#tasks tbody tr")
+    go_back(tp)
     first = tp.locator("#tasks tbody tr").first.inner_text().split("\t")
     expect("graded count in the list", first[4] == "1", first)
     # "Vain arvioimattomat"
     tp.check("#onlyOpen"); tp.locator("#tasks tbody tr").first.click(); tp.wait_for_function("document.getElementById('gPos').textContent !== ''")
     expect("Vain arvioimattomat leaves out graded students", tp.inner_text("#gPos") == "Opiskelija 1/2" and tp.inner_text("#gEmail") != A, (tp.inner_text("#gPos"), tp.inner_text("#gEmail")))
-    tp.click("#back"); tp.wait_for_selector("#tasks tbody tr"); tp.uncheck("#onlyOpen")
+    go_back(tp); tp.uncheck("#onlyOpen")
     # older version keeps its own points; the latest is the default
     tp.locator("#tasks tbody tr").first.click(); tp.wait_for_function("!document.getElementById('points').disabled")
     tp.select_option("#gVer", "0"); tp.wait_for_function("document.getElementById('gTime').textContent.indexOf('versio 1/2') >= 0")
@@ -372,10 +379,10 @@ with sync_playwright() as p:
     expect("points are kept per version", sc.get((files["v1"]["submission_id"], tasks[0])) == 1 and sc.get((files["v2"]["submission_id"], tasks[0])) == 3, sc)
     # reorder the score sheet: points stay with their student and version
     E("() => { const d = MOCK.sheet('RL Pisteet').data; const head = d.shift(); d.reverse(); d.unshift(head); }")
-    tp.click("#back"); tp.wait_for_selector("#tasks tbody tr"); tp.locator("#tasks tbody tr").first.click(); tp.wait_for_function("!document.getElementById('points').disabled")
+    go_back(tp); tp.locator("#tasks tbody tr").first.click(); tp.wait_for_function("!document.getElementById('points').disabled")
     expect("after reordering the rows the latest version still shows its own points", tp.input_value("#points") == "3", tp.input_value("#points"))
     # an empty task
-    tp.click("#back"); tp.wait_for_selector("#tasks tbody tr"); tp.locator("#tasks tbody tr").nth(1).click()
+    go_back(tp); tp.locator("#tasks tbody tr").nth(1).click()
     tp.wait_for_function("document.querySelector('#gAnswer .empty, #gAnswer .t')")
     expect("an unanswered task says so", "jätti tehtävän tyhjäksi" in tp.inner_text("#gAnswer"), tp.inner_text("#gAnswer"))
     expect("no formulas were written to the sheets", not E("MOCK.formulas"), E("MOCK.formulas"))
@@ -418,7 +425,7 @@ with sync_playwright() as p:
     lp.wait_for_function("document.getElementById('gPos').textContent === 'Opiskelija 2/2'")
     lp.wait_for_function("!document.getElementById('points').disabled"); lp.keyboard.press("0"); lp.keyboard.press("ArrowUp")
     lp.wait_for_function("document.getElementById('gPos').textContent === 'Opiskelija 1/2'")
-    lp.click("#back"); lp.wait_for_selector("#tasks tbody tr")
+    go_back(lp)
     with lp.expect_download() as d: lp.click("text=Vie pisteet (CSV)")
     csv = pathlib.Path(d.value.path()).read_text(encoding="utf-8-sig").splitlines()
     expect("local page: points to CSV (name, task columns, total; 0 kept apart from empty)", csv[0].startswith("Opiskelija;Palautettu;Palautustunniste;Tehtävä 1-1;") and csv[1].startswith("Bertta Opiskelija;") and csv[1].split(";")[3] == "3"
@@ -429,7 +436,7 @@ with sync_playwright() as p:
     expect("local page: after reopening the points and imports are kept", first[2] == "2" and first[4] == "2", first)
     lp.locator("#tasks tbody tr").first.click(); lp.wait_for_function("document.querySelector('#gAnswer .err, #gAnswer .t')")
     expect("local page: without the zip it asks to choose it again", "zip" in lp.inner_text("#gAnswer"), lp.inner_text("#gAnswer"))
-    lp.click("#back"); lp.wait_for_selector("#tasks tbody tr")
+    go_back(lp)
     lp.set_input_files("#localBar input[type=file]", str(zpath))
     lp.wait_for_function("document.querySelector('#localBar p[aria-live]').textContent.indexOf('Luettu') === 0")
     expect("local page: reading the same zip again adds nothing", "Uusia palautuksia 0" in lp.inner_text("#localBar p[aria-live]"), lp.inner_text("#localBar p[aria-live]"))
