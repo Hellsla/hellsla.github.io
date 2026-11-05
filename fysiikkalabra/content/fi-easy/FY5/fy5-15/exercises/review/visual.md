@@ -1,16 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 0922a49110a59e88
+CONTENT-HASH: cc0ae5f5ee1c450b
 
 ## Blocking
 - none
 
+## Fixed
+- (fixed) L2-07 exercise text: "kalibroitu" explained in plain words ("mittariin, jonka lukemat on tarkistettu oikeiksi").
+- (fixed) L3-04 solution: "ilman vaimennus" → "ilman aiheuttama vaimennus" (unambiguous).
+
 ## Polish
-- none
+- Screenshots in review/shots predate the new tasks (levels 1-3 old ids shown); text-level check only for the 8 new exercises: data captions and column headers translated, maths identical to the Finnish ($L_\text{...}$ labels, units with thin space, decimal commas in text and points in table cells as in the Finnish).
 
 ## Checked
-- Kaappaukset: contact-5 (tasot 1–3 ratkaisut auki 1280 px:ssä).
-- Matemaattinen typografia kuten suomenkielisessä: desimaalipilkku {,}, yksiköt pystyssä, ketjut tasattu.
-- Selkokieli luontevaa, termit glossaarin mukaiset; check_layout --lang fi-easy --width 345 OK.
+- Captures opened: fy5-15-open-exercises-L2-1280-1.png (fi-easy): layout, boxed answers, Given/Find/Formula blocks, display maths render correctly.
+- Table cells keep decimal points as in the Finnish JSON; caption and column labels natural in fi-easy.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

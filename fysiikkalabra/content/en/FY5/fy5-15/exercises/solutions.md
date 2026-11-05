@@ -205,7 +205,7 @@ L_\text{meas} - L_\text{model} &= 71.9\,\text{dB} - 67.94\,\text{dB} \\
 
 ## fy5-15-L2-07
 **Given:** from the table the levels of the reference meter $50.0\,\text{dB}$, $60.0\,\text{dB}$, $70.0\,\text{dB}$ and $80.0\,\text{dB}$ and the readings of the phone $54.1\,\text{dB}$, $63.8\,\text{dB}$, $74.2\,\text{dB}$ and $83.9\,\text{dB}$; in addition $90.0\,\text{dB}$ and $88.6\,\text{dB}$
-**Find:** the factor $k = \dfrac{I_\text{phone}}{I_\text{ref}}$, that is, by what factor the phone estimates the intensity to be too great
+**Find:** the factor $k = \dfrac{I_\text{phone}}{I_\text{ref}}$, that is, by what factor the phone overestimates the intensity
 **Principle:** The error of the phone $\Delta L = L_\text{phone} - L_\text{ref}$ is almost the same at the four lowest levels, so it is a systematic error. The difference in levels depends only on the ratio of the intensities, so the ratio of the intensities can be obtained from the mean error.
 **Formula:** $\Delta L_\text{avg} = \dfrac{\Sigma \Delta L}{4}$ and $\Delta L_\text{avg} = 10\,\text{dB} \cdot \lg k$, so
 ```latex

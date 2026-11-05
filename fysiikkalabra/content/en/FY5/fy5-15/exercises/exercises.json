@@ -224,7 +224,7 @@
     {
       "id": "fy5-15-L2-07",
       "level": 2,
-      "text": "A student compares a phone sound level app with a calibrated sound level meter by measuring the same sound with both (example data). The readings are in the table.\n\na) Calculate the mean error of the phone at the four lowest levels, where the difference is steady.\n\nb) By what factor does the phone estimate the sound intensity to be too great at these levels? Enter the result of part b) as a number in the answer box.\n\nc) What suggests that the phone's microphone no longer works reliably at $90.0\\,\\text{dB}$?",
+      "text": "A student compares a phone sound level app with a calibrated sound level meter by measuring the same sound with both (example data). The readings are in the table.\n\na) Calculate the mean error of the phone at the four lowest levels, where the difference is steady.\n\nb) By what factor does the phone overestimate the sound intensity at these levels? Enter the result of part b) as a number in the answer box.\n\nc) What suggests that the phone's microphone no longer works reliably at $90.0\\,\\text{dB}$?",
       "kind": [
         "data",
         "experiment",

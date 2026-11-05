@@ -1,12 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: f2dee96a87e3c32d
+CONTENT-HASH: e262fda17cca6039
+Mode: full (translation review against the reviewed Finnish set)
+Round 2
 
 ## Blocking
 (none)
 
+## Fixed
+(none needed beyond the science report)
+
 ## Polish
-- Task texts equal the Finnish (short, situation then question); solutions are the simplified part. Acceptable.
+(none)
 
 ## Checked
-- Solutions in short sentences with all eight steps; written answers (L1-05, L3-03) with model answers.
-- Captures open-exercises-1280, -L2, -L3 and stage-exercises-390: solutions open in their cards.
+- Same structure as fi; the plain-language versions split long sentences (L1-06, L2-06, L3-04, L3-05) without removing any reasoning step or giving away an answer.
+- Feedback of every wrong choice still explains why it is wrong, as in fi.

@@ -43,7 +43,7 @@
     {
       "id": "fy5-14-L1-06",
       "level": 1,
-      "text": "Two tuning forks sound one after the other in air. One sound seems clearly higher than the other, but both seem equally loud. Which of the following is necessarily true of the higher sound?",
+      "text": "Two tuning forks sound one after the other in air. One sound seems clearly higher than the other, but both seem equally loud. Which of the following must be true of the higher sound?",
       "kind": [
         "concept"
       ],
@@ -53,10 +53,10 @@
       "choices": [
         {
           "text": "Its amplitude is greater, so the air pressure varies more strongly.",
-          "feedback": "Amplitude determines the loudness of a sound, not its pitch. In the task the sounds seem equally loud, so the amplitudes can be the same even though the pitch is different."
+          "feedback": "Amplitude determines the loudness of a sound, not its pitch. In the problem the sounds seem equally loud, so the amplitudes can be the same even though the pitch is different."
         },
         {
-          "text": "Its wavelength is longer, because a high sound travels faster in air.",
+          "text": "Its wavelength is longer, because a high-pitched sound travels faster in air.",
           "feedback": "The speed of sound in air does not depend on frequency. When the speed is the same, a higher frequency means a shorter wavelength $\\lambda = \\tfrac{v}{f}$, not a longer one."
         },
         {
@@ -73,7 +73,7 @@
     {
       "id": "fy5-14-L1-07",
       "level": 1,
-      "text": "An ambulance drives at a steady speed straight towards a listener at rest, and the siren sounds all the time at its own constant frequency. The air is calm. What does the listener hear of the pitch of the siren as the ambulance approaches?",
+      "text": "An ambulance drives at a steady speed straight towards a listener at rest, and the siren sounds all the time at its own constant frequency. The air is calm. How does the listener hear the pitch of the siren as the ambulance approaches?",
       "kind": [
         "concept"
       ],
@@ -83,7 +83,7 @@
       "choices": [
         {
           "text": "Higher and higher the closer the car is, because the distance to the listener keeps getting shorter.",
-          "feedback": "This is a common misconception. The frequency heard depends on the speed of the car, not on the distance. When the speed is constant, the frequency heard is also constant. As the car approaches, the loudness of the sound grows, not the pitch."
+          "feedback": "This is a common misconception. The frequency heard depends on the speed of the car, not on its distance. When the speed is constant, the frequency heard is also constant. As the car approaches, the loudness of the sound grows, not the pitch."
         },
         {
           "text": "Exactly the siren's own frequency, because the motion of the car changes only the loudness of the sound.",

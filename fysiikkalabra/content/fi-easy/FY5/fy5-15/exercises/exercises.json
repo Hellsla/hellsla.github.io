@@ -224,7 +224,7 @@
     {
       "id": "fy5-15-L2-07",
       "level": 2,
-      "text": "Opiskelija vertaa puhelimen äänitasosovellusta kalibroituun äänitasomittariin. Hän mittaa saman äänen kummallakin (esimerkkiaineisto). Lukemat ovat taulukossa.\n\na) Laske puhelimen keskimääräinen virhe neljällä pienimmällä tasolla, joilla ero on tasainen.\n\nb) Kuinka moninkertaiseksi puhelin arvioi äänen intensiteetin näillä tasoilla? Anna vastauslaatikkoon kohdan b) tulos lukuna.\n\nc) Mikä viittaa siihen, että puhelimen mikrofoni ei toimi enää kohdassa $90{,}0\\,\\text{dB}$ luotettavasti?",
+      "text": "Opiskelija vertaa puhelimen äänitasosovellusta kalibroituun äänitasomittariin eli mittariin, jonka lukemat on tarkistettu oikeiksi. Hän mittaa saman äänen kummallakin (esimerkkiaineisto). Lukemat ovat taulukossa.\n\na) Laske puhelimen keskimääräinen virhe neljällä pienimmällä tasolla, joilla ero on tasainen.\n\nb) Kuinka moninkertaiseksi puhelin arvioi äänen intensiteetin näillä tasoilla? Anna vastauslaatikkoon kohdan b) tulos lukuna.\n\nc) Mikä viittaa siihen, että puhelimen mikrofoni ei toimi enää kohdassa $90{,}0\\,\\text{dB}$ luotettavasti?",
       "kind": [
         "data",
         "experiment",

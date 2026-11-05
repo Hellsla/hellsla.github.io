@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: b89c353d4dd880b3
+CONTENT-HASH: 618c4c0805f49cc0
 
 ## Blocking
 - none
 
+## Fixed
+- (fixed) L2-07 b) and solution Find: "estimates the intensity to be too great" → "overestimates" (matches the Finnish "arvioi moninkertaiseksi" and reads naturally).
+
 ## Polish
-- none
+- Screenshots in review/shots predate the new tasks (levels 1-3 old ids shown); text-level check only for the 8 new exercises: data captions and column headers translated, maths identical to the Finnish ($L_\text{...}$ labels, units with thin space, decimal points).
 
 ## Checked
-- Captures opened: contact-5 (open-exercises 1280 px, levels 1, 2 and 3 with solutions open).
-- Mathematical typography: fractions, powers 10^{9.5}, lg, aligned chains, units upright with thin spaces; answers boxed; decimal points throughout.
-- English: natural textbook register, British spelling (metre, centre), no Finnish left except the defined subscripts H, K in L3-01.
-- check_layout --lang en --width 345 OK.
+- Captures opened: fy5-15-open-exercises-L2-1280-1.png (en): layout, boxed answers, Given/Find/Formula blocks, display maths render correctly.
+- Table cells keep decimal points as in the Finnish JSON; caption and column labels natural in en.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · English 5 · accessibility 4

@@ -114,7 +114,7 @@
 **Model answer:** The frequency of the higher sound is greater, so the air pressure varies more times per second. The amplitude does not have to be greater, because the sounds seem equally loud. The wavelength is not longer but shorter, because $\lambda = \tfrac{v}{f}$ and the speed $v$ is the same. The period is also shorter, because $T = \tfrac{1}{f}$.
 
 ## fy5-14-L1-07
-**Find:** what the listener hears of the pitch of the siren as the car approaches
+**Find:** what pitch of the siren the listener hears as the car approaches
 **Principle:** In front of an approaching source the wavefronts are bunched up, because the source moves after its own wavefronts. The wavelength is then shorter and the frequency heard $f = \tfrac{v}{\lambda}$ is greater than the frequency of the source. The frequency heard depends on the speed of the source, not on the distance.
 **Model answer:** The listener hears the sound of the siren at a constant frequency and higher than the siren's own frequency throughout the approach, because the speed of the car is constant and the wavefronts are bunched up in front of it. As the distance decreases, only the loudness of the sound grows. At the moment of passing, the frequency heard drops suddenly to below the siren's own frequency. The motion of the source does not slow down the sound: the speed of sound in air is the same.
 
