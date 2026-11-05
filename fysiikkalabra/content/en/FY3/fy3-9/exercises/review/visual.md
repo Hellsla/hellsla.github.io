@@ -1,17 +1,18 @@
 VERDICT: FAIL
-CONTENT-HASH: abcb9e023a03aec9
-Mode: delta
-Round: 1
+CONTENT-HASH: 63d133ef967c9f45
+Mode: full
+Round: 2
 
 ## Blocking
-- [Major] fy3-9-L2-08, figures pick-line/pick-boyle/pick-flat/pick-rising (en page) — the aria-label of all four graphs is Finnish ("Kuvaaja mittakaavassa: ilman paine p …") on the English page, while the other en figures have English labels — a screen-reader user of the English page gets the answer choices' graphs described in the wrong language — add English descriptions for the four pick-* figures in the figure catalogue (e.g. "Graph to scale: air pressure p as a function of volume V, V = 10–40 ml. Grid spacing 5 ml and 50 kPa. Falling curve: 100 kPa at 40 ml, 200 kPa at 20 ml, 400 kPa at 10 ml." and likewise for the others).
+- [Major] data-table captions in L2-05, L2-06, L3-04, L3-05 (390 px) — the caption is one unwrapped line wider than the phone, so the closing "(example data)" / "(esimerkkiaineisto)" label is cut off (measured caption widths against about 330 px of space: "Air pressure in vessel A and volume in vessel B (example data)" is 432 px wide, the longest 485 px). It is the label that marks the data as example data, so a reader may take it for a real measurement. The same defect was in my round-1 finding; the round-1 fix reached only L2-08, and the cause is the shared template, not the wording — let the caption wrap (white-space: normal on the data table caption in templates/CSS), which fixes every chapter at once; shortening each caption is the alternative. May wait only if the template fix is scheduled before publication.
 
 ## Polish
-- [Minor] L2-08 graphs — tick labels are small at 390 px (about 8 px effective); enlarge the font in the pick-* figures if the viewBox allows.
+- [Minor] L2-08 solution (fy3-13) / graph tick labels (fy3-9) — small items from round 1 (en-dash line break in "114.5–116.5 kPa"; small tick labels of the pick-* graphs at 390 px) remain optional.
 
 ## Checked
-- Own 390 px render (scratch script, built page preview/en/fy3-9.html, every solution open): L2-08 (four graph choices, answer, solution), L2-03, L2-04, L3-01..03 task texts. No stale shots/ in the packet; changed solutions.md text read in the open solution cards. Hash re-run at the end: unchanged.
-- Maths: KaTeX fractions, aligned substitutions, units upright with thin space, decimal point consistent.
+- Own 390 px renders of every exercise task with solutions open: en 9 and 13, contact sheets 0, 2 (fy3-9) and 0, 3 (fy3-13), L2-08 individually; caption widths of every data table in the four pages measured by script.
+- Round-1 Major fixed: the four pick-* graphs now have English aria-labels (read from the rebuilt page), and the L2-08 caption fits.
+- Maths (fractions, aligned substitutions, units upright, decimal point) clean in the opened tasks; no other blocking item seen. Sheets 1, 4, 5 of the full en sets were not opened.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 3
+illustrations 4 · typography 4 · Finnish (English) 4 · accessibility 4

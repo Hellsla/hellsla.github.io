@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: f80dc6a47f2a3b39
+CONTENT-HASH: 2652c350745c0908
 Mode: delta
 Round: 2
 
@@ -7,13 +7,13 @@ Round: 2
 (none)
 
 ## Fixed
-(none: no translation text needed changes)
+(none: no translation text needed changes; the English figure descriptions were added in a6ee2cdec)
 
 ## Polish
 - None.
 
 ## Checked
-- New task fy3-9-L2-08 (choose the p(V) graph for isothermal compression 40 ml/100 kPa to 10 ml) compared with the reviewed Finnish: same physics (Boyle's law, pV constant), numbers (200 kPa at 20 ml, 400 kPa at 10 ml, 300 kPa on the straight line), correct answer (B), figure ids and correct flag identical.
-- Solution: principle, symbolic p2 = p1V1/V2 before substitution, point list of graph B and reading of the graph match the Finnish.
-- Clear plain Finnish per NOTES.md section 12: short sentences, the isothermal term explained as vakiolämpötilassa tapahtuva, same physics.
-- check_i18n.py: nothing for fy3-9; build.py fy3-9 succeeds.
+- Option-figure descriptions pick-line/boyle/flat/rising in figures.json (fi-easy) checked against the graph code and the Finnish: A line (40;100)-(10;400) gives 300 kPa at 20 ml; B curve 100/200/400 kPa (pV = 4000); C horizontal 100 kPa; D rising line 25/50/100 kPa at 10/20/40 ml. Values, shapes, grid (5 ml, 50 kPa) and range identical to the Finnish.
+- Descriptions do not give away the answer beyond what the graph shows; they agree with the feedback and the solution.
+- Exercises L2-08 text, answer B, feedback and solution unchanged and correct.
+- check_i18n.py: nothing for fy3-9.

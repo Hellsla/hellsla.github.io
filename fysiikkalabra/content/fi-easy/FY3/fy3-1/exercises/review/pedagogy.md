@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 8260ef3820b99314
+CONTENT-HASH: 9505870d85e17af2
 Mode: translation
 Round: 2
 
@@ -14,3 +14,4 @@ Round: 2
 - Feedback of every option names its error and repairs it without restating a bare answer; the solution puts the diagram reasoning before the arrow comparison and computes G first.
 - Terms F, G, F_k are defined in the task text before use.
 - Reading level fits selkosuomi: short sentences, 'kohdistuvat eli osuvat' or 'luku, jolla lämpötila kerrotaan' glossed; same structure as the reviewed Finnish.
+- Option figure descriptions in figures.json are identity entries, identical to the Finnish and to figures.py (forces, directions, lengths per option); correct for a Finnish page.

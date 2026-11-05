@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 2ed55e71f88658da
+CONTENT-HASH: cf6d9ce17e1d805b
 Mode: translation
 Round: 2
 
@@ -15,3 +15,4 @@ Round: 2
 - Force-diagram checklist: object = body; Earth and hook interactions only; F_k named as the body's force on the meter, not drawn on the body; no motion-force; at rest so forces balance without Newton's laws (FY3 scope kept).
 - English is natural, decimal point used, no Finnish left.
 - check_i18n.py: no message for fy3-1; build.py fy3-1 succeeds.
+- Option figure descriptions in figures.json (pick-rest, pick-weight-only, pick-long-pull, pick-extra) compared with lessons/FY3/fy3-1/figures.py and the Finnish: English text matches the drawn forces (G down from the centre, F up from the top face, F_k down from the bottom face), the lengths (equal; F twice G; all three equal; only G) and the order of the options; no aria-label in Finnish left.

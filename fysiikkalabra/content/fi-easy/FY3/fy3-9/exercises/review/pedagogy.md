@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: f80dc6a47f2a3b39
+CONTENT-HASH: 2652c350745c0908
 Mode: delta
 Round: 2
 
@@ -7,13 +7,13 @@ Round: 2
 (none)
 
 ## Fixed
-(none: no translation text needed changes)
+(none: no translation text needed changes; the English figure descriptions were added in a6ee2cdec)
 
 ## Polish
 - None.
 
 ## Checked
-- fy3-9-L2-08 keeps the YO-skill form (graph and concept kinds, four graph choices with figures, one feedback per distractor naming its misconception) and the level of the Finnish.
-- The question does not give the answer away; the solution ends with how to read the graph, as in the Finnish.
-- Clear plain Finnish per NOTES.md section 12: short sentences, the isothermal term explained as vakiolämpötilassa tapahtuva, same physics.
-- check_i18n.py: nothing for fy3-9; build.py fy3-9 succeeds.
+- Descriptions of the four option graphs now exist in fi-easy and a screen-reader user gets the same data as the Finnish, without naming the correct option.
+- Shapes and key values (20 ml point separates A from B) are stated, so the figure stays needed and legible to answer.
+- fy3-9-L2-08 keeps the YO-skill form, one feedback per distractor; level unchanged.
+- check_i18n.py: nothing for fy3-9.

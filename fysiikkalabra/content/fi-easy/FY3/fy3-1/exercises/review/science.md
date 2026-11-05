@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 8260ef3820b99314
+CONTENT-HASH: 9505870d85e17af2
 Mode: translation
 Round: 2
 
@@ -15,3 +15,4 @@ Round: 2
 - Force-diagram checklist: object = body; Earth and hook interactions only; F_k named as the body's force on the meter, not drawn on the body; no motion-force; at rest so forces balance without Newton's laws (FY3 scope kept).
 - fi-easy follows NOTES.md 12: shorter sentences and a plain-words gloss added, physics unchanged; no term or number differs from Finnish.
 - check_i18n.py: no message for fy3-1; build.py fy3-1 succeeds.
+- Option figure descriptions in figures.json are identity entries, identical to the Finnish and to figures.py (forces, directions, lengths per option); correct for a Finnish page.
