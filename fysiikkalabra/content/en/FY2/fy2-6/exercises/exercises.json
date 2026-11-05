@@ -109,6 +109,36 @@
       "answer": 2800,
       "unit": "h",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-6-L1-09",
+      "level": 1,
+      "text": "A wind turbine has a rated power of $3.0\\,\\text{MW}$, and its average power over a year is $33\\,\\%$ of the rated power.\n\nThe electricity consumption of a detached house is $5000\\,\\text{kWh}$ per year.\n\nApproximately how many detached houses' annual consumption does the turbine produce in a year ($8760\\,\\text{h}$)? Choose the closest value.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": "about $2000$ houses",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "about $2$ houses",
+          "feedback": "This results when the turbine's annual energy in megawatt-hours, $8700\\,\\text{MWh}$, is divided by the house's consumption $5000$ without converting the units. A megawatt-hour is a thousand kilowatt-hours, so the number is a thousand times too small."
+        },
+        {
+          "text": "about $200$ houses",
+          "feedback": "This results when the share $33\\,\\%$ is misread as a tenth, about $3.3\\,\\%$. The share $33\\,\\%$ is $0.33$, so the average power is about a third of the rated power, not a thirtieth."
+        },
+        {
+          "text": "about $2000$ houses",
+          "feedback": "Correct: the average power is $0.33 \\cdot 3.0\\,\\text{MW} \\approx 1\\,\\text{MW} = 1000\\,\\text{kW}$, the annual energy is about $1000\\,\\text{kW} \\cdot 8760\\,\\text{h} \\approx 8.7 \\cdot 10^{6}\\,\\text{kWh}$, and $8.7 \\cdot 10^{6} : 5000 \\approx 1700$, which is of the order of $2000$.",
+          "correct": true
+        },
+        {
+          "text": "about $5000$ houses",
+          "feedback": "This results when the rated power $3.0\\,\\text{MW}$ is used instead of the average power $0.33 \\cdot 3.0\\,\\text{MW}$. Then the annual energy is about $2.6 \\cdot 10^{7}\\,\\text{kWh}$ and the number of houses is about $5000$. However, the turbine does not produce at its rated power all year because the wind does not blow all the time, so the annual energy is calculated with the average power."
+        }
+      ]
     }
   ],
   "level2": [

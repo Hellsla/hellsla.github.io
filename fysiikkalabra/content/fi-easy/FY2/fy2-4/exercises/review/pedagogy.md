@@ -1,19 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 7acfcc373fb1656b
+CONTENT-HASH: 68335d9fc09d02ad
 Mode: full
-Round: 1
+Round: 2
 
 ## Blocking
 (none)
 
 ## Fixed
-- (none) no text changes needed.
+- none needed for the new task fy2-4-L2-08.
 
 ## Polish
 - none
 
 ## Checked
-- Level, kind tags and structure of the 8 new exercises match the Finnish; choices keep the same distractors and feedback logic.
-- Wording is plain Finnish (selkosuomi) and keeps the Finnish task order (calculate, then compare, then justify).
-- Solutions keep the Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness structure.
-- Terms (efficiency, useful energy, losses, loss power) used consistently.
+- Task L2-08 (find the error, YO-skill form): situation first, question last; four lines with one real, common error; options map to lines plus "no error"; feedback repairs each wrong choice (names the likely confusion).
+- Same level, kind tags and choice order as the reviewed Finnish.
+- Natural Finnish; one action per sentence in the solution principle.
+- Solution follows Kysytty/Periaate/Mallivastaus; checks line by line, then reasonableness; followable by a student who missed it.
+- Not a repeat of the lesson's worked example; practises the slot's goal (efficiency as a ratio, at most 100 %).

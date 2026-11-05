@@ -69,6 +69,23 @@
 **Answer:** $2800\,\text{h}$, that is, $2.8 \cdot 10^{3}\,\text{h}$ (the calculated value $2750\,\text{h}$ rounded), two significant figures like the power $4.0\,\text{MW}$.
 **Reasonableness:** At its rated power for the whole year the turbine would produce $4.0\,\text{MW} \cdot 8760\,\text{h} = 35\,040\,\text{MWh} \approx 35\,\text{GWh}$, and $11 : 35 \approx 0.31$. The time $2750\,\text{h}$ is about $31\,\%$ of the $8760$ hours of a year, which fits a wind turbine that does not produce at its rated power all the time.
 
+## fy2-6-L1-09
+**Find:** approximately how many detached houses' annual consumption the wind turbine produces in a year, order of magnitude
+**Principle:** The turbine produces the energy $E = P_\text{avg}\, t$, and the average power of a wind turbine is the given share of the rated power. The number of houses is obtained by dividing the turbine's annual energy by the annual consumption of one house, when both are in the same unit.
+**Model answer:** The average power is
+$P_\text{avg} = 0.33 \cdot 3.0\,\text{MW}$,
+so $P_\text{avg} = 0.99\,\text{MW} = 990\,\text{kW}$.
+
+The annual energy is $E = 990\,\text{kW} \cdot 8760\,\text{h}$,
+so $E = 8.67 \cdot 10^{6}\,\text{kWh}$.
+
+The number of houses is $8.67 \cdot 10^{6}\,\text{kWh} : 5000\,\text{kWh}$,
+so about $1700$, and the closest option is $2000$ houses.
+
+Estimate with round numbers: the average power is about $1\,\text{MW}$, so the annual energy is about $1000\,\text{kW} \cdot 9000\,\text{h} = 9 \cdot 10^{6}\,\text{kWh}$, and $9 \cdot 10^{6} : 5000 \approx 2000$.
+
+Other options: $2$ houses results when megawatt-hours and kilowatt-hours are divided by each other without converting (a thousand times too small). $200$ houses results when the share $33\,\%$ is misread as a tenth. $5000$ houses results when the rated power is used instead of the average power: $3.0\,\text{MW} \cdot 8760\,\text{h} : 5000\,\text{kWh}$, which is about $5300$. This is wrong because the wind does not blow all the time, so the energy is calculated with the average power.
+
 ## fy2-6-L2-01
 **Given:** rated power $P_\text{nom} = 25\,\text{MW}$, average power $32\,\%$ of the rated power, time $t = 8760\,\text{h}$
 **Find:** the energy $E$ produced in a year, in gigawatt-hours

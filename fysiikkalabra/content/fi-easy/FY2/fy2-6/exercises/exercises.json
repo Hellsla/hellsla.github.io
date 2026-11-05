@@ -109,6 +109,36 @@
       "answer": 2800,
       "unit": "h",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-6-L1-09",
+      "level": 1,
+      "text": "Tuulivoimalan suurin teho eli nimellisteho on $3{,}0\\,\\text{MW}$. Vuoden aikana voimalan keskiteho on $33\\,\\%$ nimellistehosta.\n\nOmakotitalo kuluttaa sähköä $5000\\,\\text{kWh}$ vuodessa.\n\nNoin kuinka monen omakotitalon vuosikulutuksen voimala tuottaa vuodessa ($8760\\,\\text{h}$)? Valitse lähin arvo.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": "noin $2000$ taloa",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "noin $2$ taloa",
+          "feedback": "Näin käy, jos voimalan vuosienergia megawattitunteina, $8700\\,\\text{MWh}$, jaetaan talon kulutuksella $5000$ ilman yksikkömuunnosta. Megawattitunti on tuhat kilowattituntia. Siksi luku on tuhat kertaa liian pieni."
+        },
+        {
+          "text": "noin $200$ taloa",
+          "feedback": "Näin käy, jos osuus $33\\,\\%$ luetaan väärin kymmenesosaksi eli noin $3{,}3\\,\\%$:ksi. Osuus $33\\,\\%$ on $0{,}33$. Keskiteho on siis noin kolmasosa nimellistehosta, ei kolmaskymmenesosa."
+        },
+        {
+          "text": "noin $2000$ taloa",
+          "feedback": "Oikein: keskiteho on $0{,}33 \\cdot 3{,}0\\,\\text{MW} \\approx 1\\,\\text{MW} = 1000\\,\\text{kW}$. Vuosienergia on noin $1000\\,\\text{kW} \\cdot 8760\\,\\text{h} \\approx 8{,}7 \\cdot 10^{6}\\,\\text{kWh}$. Talojen määrä on $8{,}7 \\cdot 10^{6} : 5000 \\approx 1700$, ja se on suuruusluokaltaan $2000$.",
+          "correct": true
+        },
+        {
+          "text": "noin $5000$ taloa",
+          "feedback": "Näin käy, jos lasketaan nimellisteholla $3{,}0\\,\\text{MW}$ keskitehon $0{,}33 \\cdot 3{,}0\\,\\text{MW}$ sijaan. Silloin vuosienergia on noin $2{,}6 \\cdot 10^{7}\\,\\text{kWh}$ ja taloja tulee noin $5000$. Voimala ei kuitenkaan tuota nimellisteholla koko vuotta, koska tuuli ei puhalla koko ajan. Siksi vuosienergia lasketaan keskiteholla."
+        }
+      ]
     }
   ],
   "level2": [

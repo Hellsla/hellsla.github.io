@@ -1,19 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: cef7039ba3a4aa4f
+CONTENT-HASH: 094b25cee3a6cbf1
 Mode: full
-Round: 1
+Round: 2
 
 ## Blocking
 (none)
 
 ## Fixed
-- exercises.json L3-04: unit "kertaa" (Finnish left over) changed to "times", as in L2-05.
+- none needed for the new task fy2-4-L2-08.
 
 ## Polish
 - none
 
 ## Checked
-- Level, kind tags and structure of the 8 new exercises match the Finnish; choices keep the same distractors and feedback logic.
-- Wording is English; no Finnish left and keeps the Finnish task order (calculate, then compare, then justify).
-- Solutions keep the Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness structure.
-- Terms (efficiency, useful energy, losses, loss power) used consistently.
+- Task L2-08 (find the error, YO-skill form): situation first, question last; four lines with one real, common error; options map to lines plus "no error"; feedback repairs each wrong choice (names the likely confusion).
+- Same level, kind tags and choice order as the reviewed Finnish.
+- Natural English; no Finnish left.
+- Solution follows Kysytty/Periaate/Mallivastaus; checks line by line, then reasonableness; followable by a student who missed it.
+- Not a repeat of the lesson's worked example; practises the slot's goal (efficiency as a ratio, at most 100 %).
