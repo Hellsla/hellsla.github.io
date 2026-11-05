@@ -9,8 +9,13 @@ when the sim exposes label boxes (simState.labels = [{s, x0, y0, x1, y1}, ...] i
 leave the canvas (600×400, or 600 wide and taller when the sim stacks its panels on a narrow screen) or overlap
 another one. Sims without label boxes get the finiteness sweep only, with a
 note. The KaTeX labels sim-embed.js draws over the canvas (p.text of a $…$ string) are checked the same way from the
-page: each stays inside the canvas and none overlaps another. One line per sim; details only on failure."""
-import json, sys, pathlib, itertools
+page: each stays inside the canvas and none overlaps another.
+Drawing on demand (2026-11-05, templates/sim-embed.js STATIC): a listed sim must be drawn on demand, draw no frame while
+nothing happens, show after every control change what one more forced redraw would show (no stale picture or state), and
+reach the same simState and readouts as the old continuous loop (?simloop=1) over the same control changes; a sim not
+listed keeps its loop. The cache of label widths stays within its bound and gives the same width after an eviction.
+One line per sim; details only on failure."""
+import json, re, sys, pathlib, itertools
 from playwright.sync_api import sync_playwright
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from _browser import launch
 from courses import ROOT
@@ -59,6 +64,86 @@ SWEEP_JS = """async (combos) => {
   return {states, hasBoxes, hasTex, bad: [...new Set(bad)].slice(0, 8),
           controls: {ranges: ranges.map((r) => [+r.min, +r.max]), selects: selects.map((s) => s.options.length), checks: checks.length}};
 }"""
+
+
+STATIC = set(re.findall(r"'([^']+)'", re.search(r"/\*STATIC\*/(.*?)/\*END\*/", (OUT / "sim-embed.js").read_text(), re.S).group(1)))
+
+DEMAND_JS = """async (combos) => {
+  const root = document.getElementById('sim-root');
+  const ranges = [...root.querySelectorAll('input[type=range]')], selects = [...root.querySelectorAll('select')],
+        checks = [...root.querySelectorAll('input[type=checkbox]')];
+  const frames = () => new Promise((f) => requestAnimationFrame(() => requestAnimationFrame(f)));
+  const wait = (ms) => new Promise((f) => setTimeout(f, ms));
+  const fire = (el) => { el.dispatchEvent(new Event('input', {bubbles: true})); el.dispatchEvent(new Event('change', {bubbles: true})); };
+  const sig = () => JSON.stringify(window.simState) + '|' + window.simText(root);
+  const info0 = window.flSimInfo ? window.flSimInfo() : null;
+  const d0 = info0 ? info0.draws : 0; await wait(1000); const info1 = window.flSimInfo ? window.flSimInfo() : null;
+  const out = {info: info1, idleDraws: info1 ? info1.draws - d0 : -1, sigs: [], stale: []};
+  for (const c of combos) {
+    c.r.forEach((v, i) => { if (ranges[i]) { ranges[i].value = v; fire(ranges[i]); } });
+    c.s.forEach((v, i) => { if (selects[i]) { selects[i].selectedIndex = v; fire(selects[i]); } });
+    c.c.forEach((v, i) => { if (checks[i]) { checks[i].checked = !!v; fire(checks[i]); } });
+    await frames(); await frames(); await wait(120);
+    const a = sig(); window.flSimRedraw(); window.flSimRedraw(); const b = sig();
+    out.sigs.push(a); if (a !== b) out.stale.push(JSON.stringify(c));
+  }
+  return out;
+}"""
+
+WIDTHS_JS = """() => {
+  const w0 = window.flSimTextWidth('$v = 1{,}25\\,\\text{m/s}$', 17);
+  for (let i = 0; i < 1500; i++) window.flSimTextWidth('$t = ' + i + '{,}0\\,\\text{s}$', 17);
+  const info = window.flSimInfo(), w1 = window.flSimTextWidth('$v = 1{,}25\\,\\text{m/s}$', 17);
+  return {size: info.widths, max: info.widthsMax, w0, w1};
+}"""
+
+
+def drag(page):
+    """A press, a drag across the canvas and a release (a sim that moves a body or a probe with the pointer), then the
+    simState and readout once it has settled, and whether one more redraw would change them."""
+    box = page.evaluate("(() => { const c = document.querySelector('#sim-root canvas'); c.scrollIntoView({block: 'center'}); const r = c.getBoundingClientRect(); return [r.left, r.top, r.width, r.height]; })()")
+    x, y, w, h = box
+    page.mouse.move(x + w * 0.45, y + h * 0.5); page.mouse.down()
+    for i in range(1, 11): page.mouse.move(x + w * (0.45 + 0.02 * i), y + h * (0.5 - 0.01 * i)); page.wait_for_timeout(16)
+    page.mouse.up(); page.mouse.move(x + w + 40, y + h + 40); page.wait_for_timeout(300)
+    return page.evaluate("(() => { const s = () => JSON.stringify(window.simState) + '|' + window.simText('#sim-root'); const a = s(); window.flSimRedraw(); window.flSimRedraw(); return [a, a === s()]; })()")
+
+
+def on_demand(b, page_file, lid, translated):
+    """Returns (ok, note, bad) for the on-demand drawing and the width cache."""
+    bad = []
+    page = b.new_page(viewport={"width": 1280, "height": 900}); page.goto(page_file.as_uri())
+    page.evaluate("document.getElementById('sim') && document.getElementById('sim').scrollIntoView()"); ready(page); page.wait_for_timeout(500)
+    info = page.evaluate("window.flSimInfo ? window.flSimInfo() : null") or {}
+    listed = info.get("name") in STATIC
+    if not translated:
+        W = page.evaluate(WIDTHS_JS)
+        if W["size"] > W["max"]: bad.append(f"label width cache holds {W['size']} > {W['max']}")
+        if abs(W["w0"] - W["w1"]) > 0.01: bad.append(f"label width after eviction {W['w1']} != {W['w0']}")
+    if not listed:
+        page.close()
+        if info.get("onDemand"): bad.append("drawn on demand but not listed in STATIC")
+        return (not bad, "loops", bad)
+    probe = page.evaluate(SWEEP_JS, [{"r": [], "s": [], "c": []}])
+    cs = combos(probe["controls"], thin=True)[:24]
+    r = page.evaluate(DEMAND_JS, cs)
+    D = drag(page)
+    page.close()
+    if not info.get("onDemand"): bad.append(f"listed in STATIC but not drawn on demand ({info})")
+    if r["idleDraws"] > 1: bad.append(f"{r['idleDraws']} frames drawn in 1 s with nothing happening")
+    bad += [f"stale after {c}: a redraw changes simState or the readout" for c in r["stale"][:4]]
+    if not D[1]: bad.append("stale after a drag on the canvas: a redraw changes simState or the readout")
+    if not translated:
+        q = b.new_page(viewport={"width": 1280, "height": 900}); q.goto(page_file.as_uri() + "?simloop=1")
+        q.evaluate("document.getElementById('sim') && document.getElementById('sim').scrollIntoView()"); ready(q); q.wait_for_timeout(500)
+        r2 = q.evaluate(DEMAND_JS, cs)
+        D2 = drag(q)
+        q.close()
+        if D[0] != D2[0]: bad.append("a drag on the canvas ends in another state than with the continuous loop")
+        if (r2["info"] or {}).get("onDemand"): bad.append("?simloop=1 does not keep the continuous loop")
+        diff = [i for i, (x, y) in enumerate(zip(r["sigs"], r2["sigs"])) if x != y]
+        if diff or len(r["sigs"]) != len(r2["sigs"]): bad.append(f"differs from the continuous loop after {len(diff)} of {len(cs)} control changes, first {cs[diff[0]] if diff else ''}")
+    return (not bad, f"on demand: idle {r['idleDraws']} frames/s, {len(cs)} changes and a drag" + ("" if translated or bad else " = continuous loop"), bad)
 
 
 def ready(page):
@@ -130,7 +215,9 @@ with sync_playwright() as pw:
                     bad.append(f"{c['expr'][:160]} = {got} (expected {c['expected']})")
         page.close()
         sweep_ok, sweep_note, sweep_bad = sweep(b, page_file) if state is not None else (True, "", [])
-        ok = not errors and state is not None and not bad and sweep_ok
+        dem_ok, dem_note, dem_bad = on_demand(b, page_file, lid, translated) if state is not None else (True, "", [])
+        sweep_note += f", {dem_note}" if dem_note else ""; sweep_bad += dem_bad
+        ok = not errors and state is not None and not bad and sweep_ok and dem_ok
         fails += not ok
         print("PASS" if ok else "FAIL", f"{OUT.name}/{page_file.relative_to(OUT).with_suffix('').as_posix()}", "no simState (p5 not loaded?)" if state is None else ("assertions on the Finnish page" if translated else f"{len(checks)} assertions") + f", {sweep_note}")
         for line in errors[:3] + bad + sweep_bad: print("     " + line)

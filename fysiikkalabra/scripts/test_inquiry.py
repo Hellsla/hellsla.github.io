@@ -140,6 +140,28 @@ def page_form(pg, b, url, acts, page):
 
 
 
+def restore_checks(pg, url, lid, ex, loc, want):
+    """The table of an earlier visit (2026-11-05): another tab of the same page shows the same rows, typeset, and does not
+    write the unchanged table back to localStorage."""
+    eid = ex["id"]
+    store = pg.evaluate("() => { const o = {}; try { for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); o[k] = localStorage.getItem(k); } } catch (e) {} return o; }")
+    q = pg.context.browser.new_page(viewport={"width": 1280, "height": 900})   # a later visit on the same device: the same localStorage
+    q.add_init_script("((s) => { try { localStorage.clear(); for (const k in s) localStorage.setItem(k, s[k]); } catch (e) {} window.__flWrites = []; const set = Storage.prototype.setItem;"
+                      " Storage.prototype.setItem = function (k, v) { window.__flWrites.push(k); return set.call(this, k, v); }; })(" + json.dumps(store) + ")")
+    q.goto(url)
+    try: q.wait_for_function("window.simAdapter", timeout=4000)
+    except Exception: pass
+    q.wait_for_timeout(300)
+    qloc = q.locator(f"#{eid}")
+    got = qloc.locator(".exp-table tbody tr").all_text_contents()
+    n = q.evaluate("(id) => [...document.querySelectorAll('.experiment')].indexOf(document.querySelector('#' + id + ' .experiment')) + 1", eid)
+    writes = q.evaluate(f"window.__flWrites.filter((k) => k === 'ruukkilabra:{lid}:koe{n}').length")
+    check(f"{eid}: the stored measurements come back on a new visit, the same rows", got == want, f"{got} != {want}")
+    check(f"{eid}: a restored table is not written back to localStorage", writes == 0, f"{writes} writes")
+    check(f"{eid}: Kopioi taulukko is on for a restored table", qloc.locator(".exp-copy").is_enabled())
+    q.close()
+
+
 def export_checks(pg, lid, ex, loc):
     """The table's export after two measurements (teacher 2026-11-03; Lataa CSV dropped 2026-11-04): the copy button on, the rows kept in localStorage as
     ruukkilabra:<page>:koe<n>, plain headings (th[data-plain]), numbers with a decimal comma, the copy
@@ -258,6 +280,7 @@ def generic(lid):
                 return False
             check(f"{ex['id']}: simState gives {', '.join(keys)}", settle())
             loc.locator(".exp-record").click(); pg.wait_for_timeout(100)
+            loc.locator(".exp-table tbody tr").first.evaluate("(tr) => { tr.__flFirst = true; }")   # the row node must survive the next measurement
             # move the varied control to another value: a range to its max (or min when already there), a select to the next option
             pg.evaluate(f"""(k) => {{ const e = ({CONTROL})(k);
                 if (e.tagName === 'SELECT') e.selectedIndex = (e.selectedIndex + 1) % e.options.length;
@@ -270,7 +293,12 @@ def generic(lid):
                 if pr["reveal"]["after"] == ex["id"] and pr["reveal"].get("min", 1) <= 2:
                     loc2 = pg.locator(f"#{pr['id']}"); vis = [x.get_attribute("data-for") for x in loc2.locator(".feedback").all() if x.is_visible()]
                     check(f"{pr['id']}: revealed by {ex['id']}, with the feedback of the committed option", vis == [wrongs[pr["id"]]] and not loc2.locator(".pending").is_visible() and "Ei aivan" in loc2.locator("output").inner_text(), f"visible {vis}")
+            kept = loc.locator(".exp-table tbody tr").evaluate_all("(trs) => trs.length === 2 && trs[0].__flFirst === true && !trs[1].__flFirst")
+            check(f"{ex['id']}: a new measurement adds its own row, the earlier row is not rebuilt (2026-11-05)", kept)
+            typeset_ok = loc.locator(".exp-table tbody tr").nth(1).evaluate("(tr) => ![...tr.querySelectorAll('td')].some((td) => /\\$/.test(td.textContent))")
+            check(f"{ex['id']}: the new row's formulas are typeset", typeset_ok)
             export_checks(pg, lid, ex, loc)
+            restore_checks(pg, url, lid, ex, loc, rows.all_text_contents())
             loc.locator(".exp-reset").click(); pg.wait_for_timeout(150)
             unlocked = pg.evaluate(f"(ks) => ks.every((k) => !({CONTROL})(k).disabled)", ex["locked"])
             check(f"{ex['id']}: reset unlocks and clears", unlocked and rows.count() == 0)
