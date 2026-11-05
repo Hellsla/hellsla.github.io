@@ -314,6 +314,32 @@ if NPAGE and MBASE:
         expect(f"neural {NPAGE}: Mies reads the sentence again in the male voice", pg.evaluate("window.__bufs.length") > n0 and pg.evaluate("flSpeech.state().voice") == "male")
         pg.keyboard.press("Escape")
         expect(f"neural {NPAGE}: no script errors", not errs, errs[:3])
+        # 2026-11-05 (memory): a second visit takes the model from Cache Storage, whole, and still reads; a browser that
+        # reports under 8 GB of memory gets one worker on the CPU, not two
+        pg.add_init_script("Object.defineProperty(Navigator.prototype, 'deviceMemory', { get: () => 4, configurable: true }); window.flTtsWorkers = undefined;")
+        asked = []; pg.on("request", lambda r: asked.append(r.url) if r.url.endswith(".onnx") else None)
+        pg.reload(); pg.wait_for_timeout(400)
+        if not pg.evaluate("flSpeech.state().engine === 'neural'"):
+            pg.click(".ra-more"); pg.check(".ra-better input"); pg.keyboard.press("Escape")
+        pg.click(".ra-start")
+        st = {}
+        for _ in range(240):
+            st = pg.evaluate("flSpeech.state()")
+            if st["ep"] or st["failed"]: break
+            pg.wait_for_timeout(500)
+        expect(f"neural {NPAGE}: a second visit loads the model from Cache Storage (no .onnx fetched)", st.get("ep") == "wasm" and not asked, asked[:2])
+        cached = pg.evaluate("""async () => { const c = await caches.open('fl-tts-supertonic3-v1'); const out = {};
+          for (const k of await c.keys()) { const r = await c.match(k); out[k.url.split('/').pop()] = (await r.arrayBuffer()).byteLength; } return out; }""")
+        man = json.loads((mdir / "supertonic3-v1" / "manifest.json").read_text())["files"] if mdir and (mdir / "supertonic3-v1" / "manifest.json").is_file() else None
+        if man: expect(f"neural {NPAGE}: every cached model file is whole (manifest sizes)", all(cached.get(f) == n for f, n in man.items()), {f: (cached.get(f), n) for f, n in man.items() if cached.get(f) != n})
+        n0 = pg.evaluate("window.__bufs.length")
+        for _ in range(120):
+            if pg.evaluate("window.__bufs.length") > n0: break
+            pg.wait_for_timeout(500)
+        expect(f"neural {NPAGE}: the cached model reads the first sentence", pg.evaluate("window.__bufs.length") > n0)
+        pg.wait_for_timeout(3000)
+        expect(f"neural {NPAGE}: under 8 GB of memory one worker only", pg.evaluate("flSpeech.state().workers") == 1, pg.evaluate("flSpeech.state()"))
+        expect(f"neural {NPAGE}: no script errors on the second visit", not errs, errs[:3])
         b.close()
 srv.shutdown()
 print("FAIL" if fails else "PASS", f"({fails} failures)" if fails else "")

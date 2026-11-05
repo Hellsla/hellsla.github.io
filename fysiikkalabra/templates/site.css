@@ -32,10 +32,10 @@
   --sans:"Plus Jakarta Sans",system-ui,-apple-system,sans-serif;
   --mono:"JetBrains Mono",ui-monospace,"SF Mono",monospace;
   /* type scale: the size says how important the text is, not which component it is in */
-  --fs-title:clamp(2rem,1.55rem + 1.2vw,2.25rem);   /* lesson title, 32–36 px */
-  --fs-h2:1.5rem;        /* stage heading, 24 px */
-  --fs-h3:1.1875rem;     /* task heading, 19 px */
-  --fs-body:1.125rem;    /* reading text, instructions, answers, 18 px */
+  --fs-title:clamp(1.75rem,1.4rem + 1vw,2rem);   /* lesson title, 28–32 px (one step smaller, teacher 2026-11-05) */
+  --fs-h2:1.375rem;      /* stage heading, 22 px */
+  --fs-h3:1.125rem;      /* task heading, 18 px */
+  --fs-body:1.0625rem;   /* reading text, instructions, answers, 17 px (was 18, too large for the teacher 2026-11-05) */
   --fs-inner:1.0625rem;  /* inside a task: feedback, hints, solutions, 17 px */
   --fs-ui:.9375rem;      /* buttons and box summaries, 15 px */
   --fs-small:.875rem;    /* meta: counts, captions, table heads, notes, 14 px */
@@ -43,7 +43,7 @@
   --sim-fs:1.0625rem;--sim-lh:1.65;   /* the body and the simulations: p5 measures its text in a span on the body, and the sims' label tests rely on it */
   /* spacing and measure */
   --measure:38rem;--gap:2.5rem;   /* text column (about 70 characters) and the gutter between the text and margin tracks */
-  --stage-space:4.5rem;          /* above a stage */
+  --stage-space:2.75rem;         /* above a stage: 44 px (was 72 px, too long a gap for the teacher 2026-11-05) */
   --card-pad:1.25rem 1.5rem;--card-radius:16px;--inner-radius:10px;
   --sticky-top:4.5rem;           /* below the sticky stage bar */
   /* figure palette (NOTES.md §3): one meaning per colour across every lesson; text and patterns carry the same information */
@@ -52,7 +52,7 @@
   --fig-heat:#e8590c;--fig-hot:#c92a2a;--fig-hot-light:#ffd8cc;--fig-cold:#1971c2;--fig-cold-light:#d0e6fb;
   --fig-metal:#8a96a3;--fig-copper:#b8622d;--fig-ice:#a5d8ff;--fig-glass:#eef5f9;
 }
-@media (max-width:600px){:root{--card-pad:1rem 1rem;--stage-space:3.25rem}}
+@media (max-width:600px){:root{--card-pad:1rem 1rem;--stage-space:2.25rem}}
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;font:var(--sim-fs)/var(--sim-lh) var(--sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;
@@ -111,8 +111,8 @@ h2{font:700 var(--fs-h2)/var(--lh-head) var(--sans);letter-spacing:-.01em;margin
 h3{font:700 var(--fs-h3)/var(--lh-head) var(--sans);margin:1.6rem 0 .5rem}
 .eyebrow{display:inline-flex;align-items:center;gap:10px;font:600 var(--fs-small) var(--sans);color:var(--accent-deep);letter-spacing:.08em;text-transform:uppercase;margin:.4rem 0 .6rem}
 .eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
-.lead{font:400 1.2rem/1.5 var(--serif);color:var(--ink-2);max-width:36rem}
-blockquote{margin:1.4rem 0;padding:.9rem 1.2rem;border-left:4px solid var(--accent);background:var(--accent-soft);border-radius:0 12px 12px 0;font:400 1.1875rem/1.5 var(--serif)}
+.lead{font:400 1.125rem/1.5 var(--serif);color:var(--ink-2);max-width:36rem}
+blockquote{margin:1.4rem 0;padding:.9rem 1.2rem;border-left:4px solid var(--accent);background:var(--accent-soft);border-radius:0 12px 12px 0;font:400 1.125rem/1.5 var(--serif)}
 blockquote strong{font-weight:600;color:var(--accent-deep)}
 blockquote p{margin:0}
 li{margin:.4rem 0}
@@ -481,6 +481,9 @@ form.check output[data-state=close]{color:#7a5a00;font-weight:600}form.check out
 .pad-note{margin:.3rem 0 0;font-size:var(--fs-ui);color:var(--ink-2)}
 .pad-save{margin:.3rem 0 0;font-size:var(--fs-ui);min-height:1.3em;color:var(--ink-2)}.pad-save[data-state=ok]{color:var(--accent-deep)}.pad-save[data-state=no]{color:#8a3b1a;font-weight:600}
 .pad-saved{margin:.4rem 0 0}.pad-saved>summary{font:600 var(--fs-ui) var(--sans);color:var(--accent-deep)}.pad-saved .pad-tools{margin-top:.3rem}
+/* Submission trial (palautus.js, FY3-1): "Lataa kaikki ratkaisut" at the top of Tehtävät */
+.palautus{margin:0 0 1.2rem}.palautus .palautus-btn{margin:0 0 .3rem}.palautus:not(:has(.palautus-btn)):has(.palautus-status:empty){display:none}.split-head>.palautus-btn{margin:.6rem 0 0}
+@media print{.palautus,.palautus-btn{display:none!important}}
 @media print{.pad-open,.pad-tools,.pad-note,.pad-save,.pad-saved,.pad .rich-text-editor-toolbar-root{display:none!important}}
 
 /* print: the lesson as a handout. lesson.js opens every collapsed block while printing. */
@@ -593,8 +596,8 @@ h2.intro-h{margin:0 0 .45rem;font:700 var(--fs-small)/1.3 var(--sans);letter-spa
 .act-theory>h3.theory-h:first-child{margin-top:0}
 .act-theory h3.theory-h{margin-top:2.2rem}
 .act-theory h4{font:700 var(--fs-body)/1.35 var(--sans);margin:1.6rem 0 .4rem;color:var(--ink)}   /* a subheading inside a theory section (### in lesson.md) */
-.hook{font:400 1.125rem/1.6 var(--serif)}.hook>:first-child{margin-top:0}
-.question{font:500 1.1875rem/1.45 var(--serif);color:var(--ink);margin:1rem 0 0;padding-left:1rem;border-left:4px solid var(--accent)}
+.hook{font:400 var(--fs-body)/1.6 var(--serif)}.hook>:first-child{margin-top:0}
+.question{font:500 1.125rem/1.45 var(--serif);color:var(--ink);margin:1rem 0 0;padding-left:1rem;border-left:4px solid var(--accent)}
 p.task{margin:.3rem 0 .5rem}
 p.task.scenario,p.task.more{margin-bottom:.6rem}   /* a long task: the situation, then the question asked (inquiry.py split_prompt); the question and the parts a), b) in normal weight like the rest of the task (teacher 2026-11-04) */
 legend .scenario,legend .ask{display:block}legend .scenario{font-weight:400;margin-bottom:.6rem}

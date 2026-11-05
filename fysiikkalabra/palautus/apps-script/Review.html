@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<base target="_top">
+<meta charset="utf-8">
+<title>RuukkiLabra · arviointi</title>
+<!-- Arviointinäkymä (Code.gs openReview). Ei ulkoisia skriptejä, tyylejä, fontteja eikä kuvia: opiskelijan vastaus
+     rakennetaan DOM-elementteinä tekstinä (textContent), ja kuviksi kelpaavat vain tarkistetut PNG- ja JPEG-datat. -->
+<style>
+  :root { --ink:#1f2421; --ink2:#5b625d; --line:#d9d4c6; --soft:#ecf5ee; --accent:#14532d; --warn:#8a3b1a; --bg:#fbfaf6; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--ink); background: var(--bg); }
+  main { max-width: 1280px; margin: 0 auto; padding: 12px 20px 90px; }
+  h1 { font-size: 20px; margin: 0 0 4px; } h2 { font-size: 17px; margin: 18px 0 6px; }
+  button { font: 600 15px system-ui, sans-serif; min-height: 38px; padding: 0 14px; border: 1px solid var(--accent); border-radius: 999px; background: #fff; color: var(--accent); cursor: pointer; }
+  button:hover:not(:disabled) { background: var(--soft); } button:disabled { opacity: .45; cursor: default; }
+  table { border-collapse: collapse; width: 100%; background: #fff; }
+  th, td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-size: 14px; color: var(--ink2); }
+  tr.task-row { cursor: pointer; } tr.task-row:hover { background: var(--soft); }
+  .muted { color: var(--ink2); font-size: 14px; }
+  .bar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
+  .bar .grow { flex: 1; }
+  .head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; border-bottom: 2px solid var(--accent); padding-bottom: 6px; margin-bottom: 8px; }
+  .head .pos { font-weight: 700; font-size: 18px; white-space: nowrap; }
+  .who { font-weight: 600; }
+  .panel { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 12px 16px; margin: 10px 0; }
+  .statement img.fig { max-width: min(100%, 640px); display: block; margin: 8px 0; }
+  .statement table { width: auto; } .statement math { font-size: 1.1em; }
+  .answer { font-size: 17px; line-height: 1.65; overflow-wrap: anywhere; }
+  .answer .t { white-space: pre-wrap; }
+  .answer img.math { vertical-align: middle; }
+  .answer code.math { font: 14px ui-monospace, Menlo, Consolas, monospace; background: #f1eee5; padding: 1px 4px; border-radius: 4px; white-space: pre-wrap; }
+  .answer img.shot { display: block; max-width: 100%; height: auto; margin: 8px 0; border: 1px solid var(--line); cursor: zoom-in; }
+  .empty { color: var(--warn); font-weight: 600; }
+  .score { position: sticky; bottom: 0; background: var(--bg); border-top: 2px solid var(--accent); padding: 10px 0; margin-top: 12px; }
+  .score input { font: 700 20px system-ui, sans-serif; width: 5em; min-height: 40px; padding: 2px 8px; border: 2px solid #767676; border-radius: 8px; }
+  .score input:focus { outline: 3px solid #2f7d4f; border-color: #2f7d4f; }
+  .state { min-width: 14em; font-weight: 600; }
+  .state[data-s=ok] { color: var(--accent); } .state[data-s=no] { color: var(--warn); } .state[data-s=busy] { color: var(--ink2); }
+  .err { color: var(--warn); font-weight: 600; }
+  #zoom { position: fixed; inset: 0; background: rgba(0,0,0,.82); overflow: auto; display: none; z-index: 10; cursor: zoom-out; padding: 20px; }
+  #zoom img { display: block; margin: 0 auto; max-width: none; background: #fff; }
+  .tag { display: inline-block; font-size: 13px; padding: 0 8px; border-radius: 999px; background: #f1eee5; }
+  details.ans > summary { cursor: pointer; color: var(--accent); font-weight: 600; }
+  details.chapter { background: #fff; border: 1px solid var(--line); border-radius: 10px; margin: 8px 0; }
+  details.chapter > summary { cursor: pointer; padding: 8px 12px; font-weight: 700; }
+  details.chapter > summary .muted { font-weight: 400; }
+  details.chapter table { border-top: 1px solid var(--line); }
+  .wide { overflow-x: auto; }
+  #summary td.n, #summary th.n { text-align: right; white-space: nowrap; }
+  #summary td.n .muted { display: block; font-size: 12px; }
+  #problems td:nth-child(2) { white-space: nowrap; }
+</style>
+</head>
+<body>
+<main>
+  <section id="home">
+    <div class="bar"><h1 id="title" class="grow">RuukkiLabra · arviointi</h1><button type="button" id="refresh">Päivitä</button></div>
+    <div id="localBar" hidden></div>
+    <p class="muted" id="rule"></p>
+    <p class="bar"><label><input type="checkbox" id="onlyOpen"> Vain arvioimattomat</label><span class="muted" id="students"></span></p>
+    <p id="homeState" class="muted" aria-live="polite">Ladataan…</p>
+    <h2>Pisteet luvuittain</h2>
+    <p class="muted">Uusimman hyväksytyn palautuksen pisteet. Pienellä: arvioituja tehtäviä / luvun tehtäviä. Tyhjä = lukua ei ole palautettu.</p>
+    <p id="noSummary" class="muted">Ei vielä hyväksyttyjä palautuksia.</p>
+    <div class="wide"><table id="summary" hidden><thead></thead><tbody></tbody></table></div>
+    <h2>Tehtävät luvuittain</h2>
+    <div id="tasks" hidden></div>
+    <h2>Palautusten käsittelytila</h2>
+    <p class="muted">Hyväksytyt palautukset ovat arviointijonossa. Muut rivit eivät ole. Tarkistettavan voi hyväksyä tai hyväksytyn hylätä rivin painikkeilla.</p>
+    <p id="noProblems" class="muted" hidden>Ei virheellisiä, kaksoiskappaleita eikä tarkistettavia palautuksia.</p>
+    <table id="problems" hidden><thead><tr><th>Tila</th><th>Luku</th><th>Opiskelija</th><th>Palautusaika</th><th>Tunniste</th><th>Syy</th><th>Päätös</th></tr></thead><tbody></tbody></table>
+  </section>
+
+  <section id="grade" hidden>
+    <div class="bar"><button type="button" id="back">← Tehtävälista</button><span class="muted" id="filterNote"></span></div>
+    <div class="head"><h1 id="gTitle"></h1><span class="pos" id="gPos"></span></div>
+    <div class="who" id="gEmail"></div>
+    <div class="bar muted"><span id="gTime"></span><label id="gVerWrap" hidden>Palautusversio <select id="gVer"></select></label></div>
+    <div class="panel"><h2>Tehtävänanto</h2><div class="statement" id="gStatement"></div>
+      <details class="ans"><summary>Lyhyt mallivastaus</summary><div id="gModel"></div></details></div>
+    <div class="panel"><div class="bar"><h2 class="grow">Opiskelijan vastaus</h2><label class="muted"><input type="checkbox" id="showTex"> Näytä kaavat LaTeX-muotoisina</label></div>
+      <div class="answer" id="gAnswer" aria-live="polite"></div></div>
+    <div class="score">
+      <div class="bar">
+        <label for="points"><b>Pisteet</b> <span class="muted" id="range"></span></label>
+        <input id="points" type="text" inputmode="numeric" autocomplete="off" aria-describedby="range state">
+        <span class="state" id="state" aria-live="polite"></span>
+        <span class="grow"></span>
+        <button type="button" id="prev">↑ Edellinen</button><button type="button" id="next">↓ Seuraava</button>
+      </div>
+      <p class="muted" style="margin:6px 0 0">Kun kohdistin ei ole pistekentässä: numeronäppäin antaa pisteet, ↓ tallentaa ja siirtyy seuraavaan, ↑ edelliseen. Pistekentässä nuolinäppäimet toimivat normaalisti: Enter tallentaa ja siirtyy seuraavaan, Esc poistuu kentästä. Tyhjä kenttä = arvioimaton, 0 = nolla pistettä.</p>
+    </div>
+  </section>
+</main>
+<div id="zoom" role="dialog" aria-label="Suurennettu kuva"></div>
+<script>
+(function () {
+  'use strict';
+  var $ = function (id) { return document.getElementById(id); };
+  var S = { ov: null, task: null, chapter: null, entries: [], idx: 0, ver: 0, nav: false, saving: null, token: 0, cache: {}, onlyOpen: false, open: {} };
+  var call = function (name, arg) {
+    return new Promise(function (ok, no) {
+      var r = google.script.run.withSuccessHandler(ok).withFailureHandler(function (e) { no(e); });
+      r[name](arg);
+    });
+  };
+  var errText = function (e) { return (e && e.message ? e.message : String(e || '')).replace(/^(Exception|Error):\s*/, '') || 'tuntematon virhe'; };
+  var el = function (tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text !== undefined && text !== null) e.textContent = text; return e; };
+  var setState = function (text, s) { var n = $('state'); n.textContent = text; if (s) n.setAttribute('data-s', s); else n.removeAttribute('data-s'); };
+  var B64 = /^[A-Za-z0-9+\/]+={0,2}$/;
+  var max = function () { return S.ov ? S.ov.maxPoints : 0; };
+
+  /* ---- aloitusnäkymä ---- */
+  function loadHome() {
+    $('homeState').textContent = 'Ladataan…';
+    return call('rlOverview').then(function (ov) {
+      S.ov = ov;
+      $('title').textContent = 'RuukkiLabra · ' + ov.course + (ov.group ? ' · ryhmä ' + ov.group : '') + ' · arviointi';
+      $('rule').textContent = 'Pisteet ovat kokonaislukuja 0–' + ov.maxPoints + '. Tyhjä pistemäärä tarkoittaa arvioimatonta, 0 on annettu pistemäärä. Palautuksia = opiskelijat, joilla on luvusta hyväksytty palautus; arvioitu = uusimmalle versiolle annettu pistemäärä.';
+      $('students').textContent = 'Hyväksyttyjä palauttajia ' + ov.students + '.';
+      var box = $('tasks'); box.textContent = '';
+      ov.chapters.forEach(function (c) {
+        var scored = 0, all = 0;
+        c.tasks.forEach(function (t) { scored += t.scored; all += t.submissions; });
+        var d = el('details', 'chapter'); d.setAttribute('data-chapter', c.id);
+        d.open = S.open[c.id] !== undefined ? S.open[c.id] : c.submissions > 0;   // palautetut luvut auki
+        d.addEventListener('toggle', function () { S.open[c.id] = d.open; });
+        var sm = el('summary', null, 'Luku ' + c.number + ' · ' + c.title + ' ');
+        sm.append(el('span', 'muted', '· palautuksia ' + c.submissions + (c.submissions ? ' · arvioitu ' + scored + '/' + all : '')));
+        var tb = el('tbody'), table = el('table'), head = el('thead'), hr = el('tr');
+        ['Tehtävä', 'Taso', 'Palautuksia', 'Joista tyhjiä', 'Arvioitu'].forEach(function (h) { hr.append(el('th', null, h)); });
+        head.append(hr); table.append(head, tb);
+        c.tasks.forEach(function (t) {
+          var tr = el('tr', 'task-row'); tr.tabIndex = 0;
+          tr.append(el('td', null, 'Tehtävä ' + t.number), el('td', null, String(t.level)), el('td', null, String(t.submissions)), el('td', null, String(t.empty)), el('td', null, String(t.scored)));
+          tr.addEventListener('click', function () { openTask(t.id); });
+          tr.addEventListener('keydown', function (e) { if (e.key === 'Enter') openTask(t.id); });
+          tb.append(tr);
+        });
+        d.append(sm, table); box.append(d);
+      });
+      box.hidden = false;
+      renderSummary(ov);
+      $('homeState').textContent = ov.students ? '' : (window.RL_LOCAL ? 'Ei vielä hyväksyttyjä palautuksia. Valitse ylhäältä Drivesta ladattu palautuskansion zip-tiedosto.' : 'Ei vielä hyväksyttyjä palautuksia. Valitse taulukon valikosta RuukkiLabra → Tuo palautukset ja paina sitten Päivitä.');
+      var pb = $('problems').querySelector('tbody'); pb.textContent = '';
+      ov.problems.forEach(function (p) {
+        var tr = el('tr');
+        var dc = el('td');
+        tr.append(el('td', null, p.status), el('td', null, p.chapter), el('td', null, p.email), el('td', null, p.time), el('td', null, p.sub), el('td', null, p.reason), dc);
+        if (p.status === 'Tarkistettava' || p.status === 'Hyväksytty') {   // opettajan päätös: Hyväksy / Hylkää / peru
+          var want = p.decision ? '' : (p.status === 'Tarkistettava' ? 'Hyväksy' : 'Hylkää');
+          var b = el('button', null, p.decision ? p.decision + ' · peru' : want); b.type = 'button';
+          b.addEventListener('click', function () { b.disabled = true; call('rlSetDecision', { key: p.key, decision: want }).then(loadHome, function (e) { b.disabled = false; $('homeState').textContent = 'Päätöstä ei tallennettu: ' + errText(e); }); });
+          dc.append(b);
+        } else dc.textContent = p.decision;
+        pb.append(tr);
+      });
+      $('problems').hidden = !ov.problems.length; $('noProblems').hidden = !!ov.problems.length;
+    }, function (e) { $('homeState').textContent = 'Tietoja ei voitu ladata: ' + errText(e); $('homeState').className = 'err'; });
+  }
+  // Opiskelijan pisteet luvuittain ja yhteensä (vain luvut, joista on palautuksia)
+  function renderSummary(ov) {
+    var chs = ov.chapters.filter(function (c) { return c.submissions > 0; });
+    var head = $('summary').querySelector('thead'), body = $('summary').querySelector('tbody');
+    head.textContent = ''; body.textContent = '';
+    var hr = el('tr'); hr.append(el('th', null, 'Opiskelija'));
+    chs.forEach(function (c) { var th = el('th', 'n', 'L' + c.number); th.title = 'Luku ' + c.number + ' · ' + c.title + ' (enintään ' + c.tasks.length * ov.maxPoints + ' p)'; hr.append(th); });
+    hr.append(el('th', 'n', 'Yhteensä')); head.append(hr);
+    ov.summary.forEach(function (s) {
+      var tr = el('tr'); tr.append(el('td', null, s.email));
+      chs.forEach(function (c) {
+        var x = s.chapters[c.id], td = el('td', 'n');
+        if (x) { td.textContent = String(x.points); td.append(el('span', 'muted', x.scored + '/' + x.tasks)); }
+        tr.append(td);
+      });
+      var tt = el('td', 'n'); tt.append(el('b', null, String(s.total)), el('span', 'muted', s.scored + '/' + s.tasks)); tr.append(tt);
+      body.append(tr);
+    });
+    $('summary').hidden = !ov.summary.length; $('noSummary').hidden = !!ov.summary.length;
+  }
+  $('refresh').addEventListener('click', loadHome);
+  $('onlyOpen').addEventListener('change', function () { S.onlyOpen = $('onlyOpen').checked; });
+
+  /* ---- arviointi ---- */
+  function cur() { var e = S.entries[S.idx]; return e ? { entry: e, version: e.versions[S.ver] } : null; }
+  function scoreText(v) { return v === '' || v === null || v === undefined ? '' : String(v); }
+  function openTask(id) {
+    S.ov.chapters.forEach(function (c) { c.tasks.forEach(function (t) { if (t.id === id) { S.task = t; S.chapter = c; } }); });
+    $('home').hidden = true; $('grade').hidden = false;
+    $('gTitle').textContent = S.ov.course + ' · Luku ' + S.chapter.number + ' · Tehtävä ' + S.task.number;
+    $('gStatement').innerHTML = S.task.html;   // RuukkiLabran oma, generoitu tehtävänanto (Tehtavat.gs), ei opiskelijan dataa
+    $('gModel').innerHTML = S.task.answer;
+    $('range').textContent = '(kokonaisluku 0–' + max() + ', tyhjä = arvioimaton)';
+    $('gAnswer').textContent = 'Ladataan…'; $('gPos').textContent = ''; $('gEmail').textContent = ''; $('gTime').textContent = '';
+    setState('');
+    S.entries = []; lockUi(true);
+    call('rlQueue', id).then(function (q) {
+      S.entries = S.onlyOpen ? q.filter(function (e) { return scoreText(e.versions[e.versions.length - 1].score) === ''; }) : q;
+      $('filterNote').textContent = S.onlyOpen ? 'Vain arvioimattomat (' + S.entries.length + ' / ' + q.length + ' palauttajaa)' : '';
+      if (!S.entries.length) { $('gAnswer').textContent = S.onlyOpen ? 'Kaikki tämän tehtävän palautukset on arvioitu.' : 'Tästä luvusta ei ole hyväksyttyjä palautuksia.'; lockUi(false); $('points').disabled = true; return; }
+      show(0, null);
+    }, function (e) { $('gAnswer').textContent = ''; setState('Jonoa ei voitu ladata: ' + errText(e), 'no'); lockUi(false); });
+  }
+  function lockUi(on) { $('prev').disabled = $('next').disabled = on; $('points').disabled = on; $('gVer').disabled = on; }
+  function show(idx, ver) {
+    S.idx = idx; var e = S.entries[idx];
+    S.ver = ver === null || ver === undefined ? e.versions.length - 1 : ver;   // oletuksena uusin hyväksytty versio
+    var v = e.versions[S.ver];
+    $('gPos').textContent = 'Opiskelija ' + (idx + 1) + '/' + S.entries.length;
+    $('gEmail').textContent = e.email;
+    $('gTime').textContent = 'Palautettu ' + v.time + ' · versio ' + (S.ver + 1) + '/' + e.versions.length + (S.ver === e.versions.length - 1 ? ' (uusin)' : ' (vanhempi)') + ' · tunniste ' + v.sub.slice(0, 8);
+    var sel = $('gVer'); sel.textContent = '';
+    e.versions.forEach(function (x, i) { var o = el('option', null, (i + 1) + ': ' + x.time + (scoreText(x.score) !== '' ? ' · ' + x.score + ' p' : '')); o.value = String(i); sel.append(o); });
+    sel.value = String(S.ver); $('gVerWrap').hidden = e.versions.length < 2;
+    $('points').value = scoreText(v.score);
+    setState(scoreText(v.score) !== '' ? 'Tallennettu ✓' : 'Arvioimaton', scoreText(v.score) !== '' ? 'ok' : null);
+    $('prev').disabled = idx === 0; $('next').disabled = idx === S.entries.length - 1;
+    $('points').disabled = true; $('gVer').disabled = false;
+    var token = ++S.token;
+    $('gAnswer').textContent = 'Ladataan vastausta…';
+    fetchAnswer(e, v).then(function (a) {
+      if (token !== S.token) return;   // ehdittiin siirtyä toiseen opiskelijaan
+      renderAnswer(a); $('points').disabled = false;
+      if (S.focusAfter) { S.focusAfter = false; $('points').focus(); }   // Enterillä siirryttäessä kohdistin jää pistekenttään
+    }, function (err) {
+      if (token !== S.token) return;
+      $('gAnswer').textContent = ''; $('gAnswer').append(el('p', 'err', 'Vastausta ei voitu näyttää: ' + errText(err)));
+      $('points').disabled = false;
+      if (S.focusAfter) { S.focusAfter = false; $('points').focus(); }
+    });
+    var nx = S.entries[idx + 1]; if (nx) fetchAnswer(nx, nx.versions[nx.versions.length - 1]).catch(function () {});   // seuraava valmiiksi
+  }
+  function fetchAnswer(e, v) {
+    var k = v.fileId + '|' + S.task.id;
+    if (!S.cache[k]) S.cache[k] = call('rlAnswer', { email: e.email, fileId: v.fileId, sub: v.sub, task: S.task.id }).catch(function (err) { delete S.cache[k]; throw err; });
+    return S.cache[k];
+  }
+  function renderAnswer(a) {
+    var box = $('gAnswer'); box.textContent = '';
+    if (a.status === 'empty' || !a.content.length) { box.append(el('p', 'empty', 'Opiskelija jätti tehtävän tyhjäksi (ei ratkaisua editorissa).')); return; }
+    var tex = $('showTex').checked, p = el('div');
+    a.content.forEach(function (it) {
+      if (it.type === 'text') p.append(el('span', 't', it.text));
+      else if (it.type === 'math') {
+        if (!tex && typeof it.png === 'string' && B64.test(it.png)) {
+          var m = el('img', 'math'); m.alt = it.latex; m.title = it.latex; m.src = 'data:image/png;base64,' + it.png;
+          m.style.width = Math.round(it.w * 1.25) + 'px'; m.style.height = Math.round(it.h * 1.25) + 'px'; p.append(m);
+        } else p.append(el('code', 'math', it.latex));
+      } else if (it.type === 'image' && (it.mime === 'image/png' || it.mime === 'image/jpeg') && B64.test(it.data)) {
+        var i = el('img', 'shot'); i.alt = 'Opiskelijan kuva (' + it.w + ' × ' + it.h + ' px), suurenna napsauttamalla'; i.src = 'data:' + it.mime + ';base64,' + it.data;
+        i.addEventListener('click', function () { zoom(i.src); }); p.append(i);
+      }
+    });
+    box.append(p);
+  }
+  $('showTex').addEventListener('change', function () { var c = cur(); if (c) fetchAnswer(c.entry, c.version).then(function (a) { if (cur() && cur().version === c.version) renderAnswer(a); }); });
+  function zoom(src) {
+    var z = $('zoom'); z.textContent = ''; var i = el('img'); i.src = src; i.alt = 'Opiskelijan kuva täysikokoisena'; z.append(i); z.style.display = 'block';
+  }
+  $('zoom').addEventListener('click', function () { $('zoom').style.display = 'none'; });
+
+  // Pisteiden tallennus: pyyntö kantaa opiskelijan, palautusversion ja tehtävän, joten myöhässä tuleva vastaus ei voi
+  // osua väärään opiskelijaan. Yksi tallennus kerrallaan; kenttä on lukittuna tallennuksen ajan.
+  function parsePoints(s) {
+    s = s.trim();
+    if (s === '') return { ok: true, value: '' };
+    if (!/^\d+$/.test(s) || Number(s) > max()) return { ok: false };
+    return { ok: true, value: Number(s) };
+  }
+  function saveCurrent() {
+    var c = cur(); if (!c) return Promise.resolve(true);
+    var p = parsePoints($('points').value);
+    if (!p.ok) { setState('Pisteet: kokonaisluku 0–' + max() + ' tai tyhjä. Ei tallennettu.', 'no'); return Promise.resolve(false); }
+    if (p.value === (c.version.score === null || c.version.score === undefined ? '' : c.version.score)) return S.saving || Promise.resolve(true);
+    if (S.saving) return S.saving.then(function () { return saveCurrent(); });
+    var target = c.version, req = { email: c.entry.email, sub: target.sub, task: S.task.id, value: p.value };
+    setState('Tallennetaan…', 'busy'); $('points').disabled = true;
+    S.saving = call('rlSaveScore', req).then(function (r) {
+      target.score = r.value;
+      if (cur() && cur().version === target) setState(r.value === '' ? 'Tallennettu ✓ (arvioimaton)' : 'Tallennettu ✓', 'ok');
+      return true;
+    }, function (e) {
+      if (cur() && cur().version === target) setState('Tallennus epäonnistui: ' + errText(e) + ' Pisteitä ei tallennettu.', 'no');
+      return false;
+    }).then(function (ok) { S.saving = null; $('points').disabled = false; return ok; });
+    return S.saving;
+  }
+  function go(delta) {
+    if (S.nav || !cur()) return;
+    var to = S.idx + delta;
+    if (to < 0 || to >= S.entries.length) return;
+    S.nav = true; $('prev').disabled = $('next').disabled = true;
+    var keepFocus = document.activeElement === $('points');
+    saveCurrent().then(function (ok) {
+      S.nav = false;
+      if (!ok) { $('prev').disabled = S.idx === 0; $('next').disabled = S.idx === S.entries.length - 1; return; }   // virhe: pysytään paikallaan
+      S.focusAfter = keepFocus;
+      show(to, null);
+    });
+  }
+  $('prev').addEventListener('click', function () { go(-1); });
+  $('next').addEventListener('click', function () { go(1); });
+  $('points').addEventListener('change', function () { if (!S.nav) saveCurrent(); });
+  $('points').addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') { e.preventDefault(); go(1); if (S.idx === S.entries.length - 1) saveCurrent(); }
+    else if (e.key === 'Escape') { e.preventDefault(); e.stopPropagation(); $('points').blur(); }
+  });
+  $('gVer').addEventListener('change', function () {
+    var want = Number($('gVer').value);
+    if (S.nav) { $('gVer').value = String(S.ver); return; }
+    S.nav = true;
+    saveCurrent().then(function (ok) { S.nav = false; if (ok) show(S.idx, want); else $('gVer').value = String(S.ver); });
+  });
+  document.addEventListener('keydown', function (e) {
+    if ($('zoom').style.display === 'block') { if (e.key === 'Escape') $('zoom').style.display = 'none'; return; }
+    if ($('grade').hidden) return;
+    var t = e.target, tag = t && t.tagName;
+    if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT' || (t && t.isContentEditable)) return;   // muokkauskentässä nuolet toimivat normaalisti
+    if (e.key === 'ArrowDown') { e.preventDefault(); go(1); }
+    else if (e.key === 'ArrowUp') { e.preventDefault(); go(-1); }
+    else if (/^[0-9]$/.test(e.key) && !e.ctrlKey && !e.metaKey && !e.altKey && !$('points').disabled) { e.preventDefault(); $('points').value = e.key; setState('Tallentamatta: ↓ tai Enter tallentaa', 'busy'); }   // numero suoraan pisteiksi
+    else if ((e.key === 'Backspace' || e.key === 'Delete') && !$('points').disabled) { e.preventDefault(); $('points').value = ''; setState('Tallentamatta: ↓ tai Enter tallentaa', 'busy'); }
+    else if (e.key === 'Enter' && tag !== 'BUTTON' && tag !== 'A' && tag !== 'TR' && !$('points').disabled) { e.preventDefault(); go(1); if (S.idx === S.entries.length - 1) saveCurrent(); }
+  });
+  $('back').addEventListener('click', function () {
+    if (S.nav) return;
+    S.nav = true;
+    saveCurrent().then(function (ok) { S.nav = false; if (!ok) return; S.token++; $('grade').hidden = true; $('home').hidden = false; loadHome(); });
+  });
+  window.addEventListener('beforeunload', function (e) {
+    var c = cur(); if (!c || $('grade').hidden) return;
+    var p = parsePoints($('points').value);
+    if (S.saving || !p.ok || p.value !== (c.version.score === null ? '' : c.version.score)) { e.preventDefault(); e.returnValue = ''; }
+  });
+  window.rlReload = loadHome;   // paikallinen arviointisivu päivittää näkymän tiedostojen lukemisen jälkeen
+  loadHome();
+})();
+</script>
+</body>
+</html>
