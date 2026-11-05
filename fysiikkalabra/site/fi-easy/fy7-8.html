@@ -172,8 +172,8 @@
 <h4>Kierrosten lukumäärä määrää jännitteen</h4>
 <p>Sama muuttuva magneettivuo kulkee kummankin käämin jokaisen kierroksen läpi. Siksi jokaiseen kierrokseen indusoituu yhtä suuri jännite. Käämin jännite on sen kierrosten jännitteiden summa. Jännite on siis verrannollinen kierrosten lukumäärään.</p>
 <p>Ideaalisessa muuntajassa ensiöjännitteen ja toisiojännitteen suhde on sama kuin käämien kierrosten lukumäärien suhde. Tätä suhdetta sanotaan <strong>muuntosuhteeksi</strong>. Jos toisiokäämissä on enemmän kierroksia kuin ensiökäämissä, muuntaja nostaa jännitettä. Jos toisiokäämissä on vähemmän kierroksia, muuntaja laskee jännitettä.</p>
-<h4>Muuntaja toimii vain vaihtovirralla</h4>
-<p>Oletetaan, että ensiökäämi kytketään akkuun. Silloin käämissä kulkee tasavirta, ja rautasydämen magneettikenttä on vakio. Vakiosuuruinen magneettivuo ei indusoi jännitettä. Toisiokäämin jännite on siis nolla. Jännitepulssi syntyy vain hetkellä, jolloin virta kytketään tai katkaistaan, koska silloin vuo muuttuu.</p>
+<h4>Muuntaja tarvitsee muuttuvan magneettivuon</h4>
+<p>Toisiokäämiin syntyy jännite vain, kun sen läpi kulkeva magneettivuo muuttuu. Oletetaan, että ensiökäämi kytketään akkuun. Silloin käämissä kulkee vakiosuuruinen tasavirta, ja rautasydämen magneettikenttä on vakio. Vakiosuuruinen magneettivuo ei indusoi jännitettä. Toisiokäämin jännite on siis nolla. Jännitepulssi syntyy vain hetkellä, jolloin virta kytketään tai katkaistaan, koska silloin vuo muuttuu.</p>
 <p>Tämän vuoksi sähköverkossa käytetään vaihtovirtaa. Luvussa <em>Generaattori ja vaihtovirta</em> generaattori tuottaa vaihtojännitettä. Muuntajilla jännite voidaan muuttaa aina sopivan suuruiseksi.</p>
 <h4>Teho säilyy, virta muuttuu</h4>
 <p>Ideaalinen muuntaja ei kuluta energiaa. Siksi ensiökäämiin tuleva teho on yhtä suuri kuin toisiokäämistä lähtevä teho. Teho on jännitteen ja virran tulo. Kun muuntaja nostaa jännitteen kymmenkertaiseksi, virta pienenee kymmenesosaan.</p>
@@ -227,7 +227,7 @@
 <figure class="unit-photo"><img src="../pics/fy7/transformer-750kv.webp" alt="Iso vaalea muuntaja nurmella. Taustalla on sähköaseman rakenteita ja johtoja." width="1600" height="1200" loading="lazy" decoding="async"><figcaption>Muuntaja, jonka suurempi jännite on $750\,\text{kV}$. Johdoissa häviää tehoa $P = RI^2$. Kun jännite on suuri, johdoissa kulkee pieni virta. Silloin johdoissa häviää vähän tehoa. <span class="photo-credit">Kuva: Novoklimov, CC0 1.0</span></figcaption></figure>
 
 <h4>Jännite lasketaan vaiheittain</h4>
-<p>Sähköasemilla muuntajat laskevat jännitteen alueverkon $110\,\text{kV}$:iin ja jakeluverkon $20\,\text{kV}$:iin. Asuinalueen muuntamo laskee sen kotien $230\,\text{V}$:iin. Suurjännitettä ei tuoda koteihin. Sen eristäminen vaatii pitkiä eristimiä ja suuria etäisyyksiä, ja kosketus olisi hengenvaarallinen (luku <em>Sähköturvallisuus</em>).</p>
+<p>Sähköasemilla muuntajat laskevat jännitteen alueverkon $110\,\text{kV}$:iin ja jakeluverkon $20\,\text{kV}$:iin. Asuinalueen muuntamo laskee sen kotien $230\,\text{V}$:iin. Suurjännitettä ei tuoda koteihin. Sen eristäminen vaatii pitkiä eristimiä ja suuria etäisyyksiä, ja kosketus olisi hengenvaarallinen (luku <em>Sähköturvallisuus kotona ja työssä</em>).</p>
 <p>Puhelimen laturi laskee jännitteen vielä noin $5\,\text{V}$:iin. Nykyaikainen laturi muuttaa verkkojännitteen ensin hyvin suuritaajuiseksi. Silloin muuntaja voi olla pieni. Lopuksi laturi tasasuuntaa jännitteen. Laturin muuntajan käämit eivät kosketa toisiaan. Puhelin ei siis ole johtavassa yhteydessä sähköverkkoon.</p>
 <h3 class="theory-h">Muuntaja ja siirtohäviö</h3>
 <p>Ideaalisen muuntajan jännitteet ja virrat riippuvat käämien kierrosten lukumääristä:</p>
@@ -455,5 +455,5 @@ d.addEventListener('toggle',function(){if(d.open)open(d);});d.flMathOpen=functio
 renderMathInElement(root,O);flGlueMath(root);};
 window.addEventListener('beforeprint',function(){document.querySelectorAll('details[data-fl-math="wait"]').forEach(function(d){d.flMathOpen();});});</script>
 <script src="../vendor/katex/contrib/auto-render.min.js" onload="flMath(document.body)"></script>
-<script src="../lesson.js?v=b2070446"></script><script src="../readaloud.js?v=2217d3b9"></script><script src="../inquiry.js?v=ed5ba151"></script>
+<script src="../lesson.js?v=b2070446"></script><script src="../readaloud.js?v=2217d3b9"></script><script src="../inquiry.js?v=f79c6034"></script>
 </body></html>
