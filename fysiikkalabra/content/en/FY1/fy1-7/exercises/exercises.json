@@ -232,7 +232,7 @@
     {
       "id": "fy1-7-L2-07",
       "level": 2,
-      "text": "A student determined the density of a metal object by the water displacement method. The mass of the object is $107\\,\\text{g}$. The reading of the measuring cylinder was $60\\,\\text{ml}$ before the object was lowered in and $72\\,\\text{ml}$ afterwards. The student calculated $\\rho = 107\\,\\text{g} : 72\\,\\text{cm}^3 = 1.5\\,\\text{g/cm}^3$ and concluded that the object was light plastic. Find the student’s error and calculate the correct density in $\\text{g/cm}^3$. Which substance could the object be?",
+      "text": "A student determined the density of a metal object by the water displacement method. The mass of the object is $107\\,\\text{g}$. The reading of the measuring cylinder was $60\\,\\text{ml}$ before the object was lowered in and $72\\,\\text{ml}$ afterwards.\n\nThe student calculated $\\rho = 107\\,\\text{g} : 72\\,\\text{cm}^3 = 1.5\\,\\text{g/cm}^3$ and concluded that the object was light plastic.\n\nFind the student’s error and calculate the correct density in $\\text{g/cm}^3$. Which substance could the object be?",
       "kind": [
         "error",
         "experiment"

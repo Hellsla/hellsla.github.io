@@ -249,7 +249,7 @@
     {
       "id": "fy8-1-L3-01",
       "level": 3,
-      "text": "A sodium surface with a work function of $2.28\\,\\text{eV}$ is illuminated with ultraviolet radiation of wavelength $350\\,\\text{nm}$. The mass of the electron is $9.109 \\cdot 10^{-31}\\,\\text{kg}$. Use the values $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^8\\,\\text{m/s}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$. What is the speed of the fastest released electrons? Give the answer in the unit $\\text{m/s}$.",
+      "text": "A sodium surface with a work function of $2.28\\,\\text{eV}$ is illuminated with ultraviolet radiation of wavelength $350\\,\\text{nm}$.\n\nThe mass of the electron is $9.109 \\cdot 10^{-31}\\,\\text{kg}$. Use the values $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^8\\,\\text{m/s}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$.\n\nWhat is the speed of the fastest released electrons? Give the answer in the unit $\\text{m/s}$.",
       "answer": 666000.0,
       "unit": "m/s",
       "tolerance": 0.02

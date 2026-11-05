@@ -132,7 +132,7 @@
     {
       "id": "fy8-16-L2-03",
       "level": 2,
-      "text": "Kosmisen taustasäteilyn tyypillinen aallonpituus on nyt $1{,}06\\,\\text{mm}$. Säteilyn vapautumisen jälkeen maailmankaikkeuden laajeneminen on venyttänyt kaikki sen aallonpituudet noin $1100$-kertaisiksi. Kuinka suuri oli tyypillisen fotonin energia silloin, kun säteily vapautui? Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$. Anna vastaus elektronivoltteina.",
+      "text": "Kosmisen taustasäteilyn tyypillinen aallonpituus on nyt $1{,}06\\,\\text{mm}$. Säteilyn vapautumisen jälkeen maailmankaikkeuden laajeneminen on venyttänyt kaikki sen aallonpituudet noin $1100$-kertaisiksi.\n\nKuinka suuri oli tyypillisen fotonin energia silloin, kun säteily vapautui?\n\nKäytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$. Anna vastaus elektronivoltteina.",
       "answer": 1.287,
       "unit": "eV",
       "tolerance": 0.02
@@ -265,7 +265,7 @@
     {
       "id": "fy8-16-L3-03",
       "level": 3,
-      "text": "Galaksin spektrissä näkyy vedyn kolme absorptioviivaa aallonpituuksilla $447{,}2\\,\\text{nm}$, $500{,}9\\,\\text{nm}$ ja $676{,}2\\,\\text{nm}$. Laboratoriossa vedyn viivojen aallonpituudet ovat $434{,}0\\,\\text{nm}$, $486{,}1\\,\\text{nm}$ ja $656{,}3\\,\\text{nm}$. Päättele, mikä galaksin viiva vastaa mitäkin laboratorion viivaa. Laske sitten galaksin etäisyys. Hubblen vakio on $H_0 = 70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$ ja valon nopeus $c = 2{,}998 \\cdot 10^{5}\\,\\text{km/s}$. Anna vastaus megaparsekeina.",
+      "text": "Galaksin spektrissä näkyy vedyn kolme absorptioviivaa aallonpituuksilla $447{,}2\\,\\text{nm}$, $500{,}9\\,\\text{nm}$ ja $676{,}2\\,\\text{nm}$. Laboratoriossa vedyn viivojen aallonpituudet ovat $434{,}0\\,\\text{nm}$, $486{,}1\\,\\text{nm}$ ja $656{,}3\\,\\text{nm}$.\n\nPäättele, mikä galaksin viiva vastaa mitäkin laboratorion viivaa. Laske sitten galaksin etäisyys.\n\nHubblen vakio on $H_0 = 70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$ ja valon nopeus $c = 2{,}998 \\cdot 10^{5}\\,\\text{km/s}$. Anna vastaus megaparsekeina.",
       "answer": 129.9,
       "unit": "Mpc",
       "tolerance": 0.02

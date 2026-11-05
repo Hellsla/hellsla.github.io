@@ -261,7 +261,7 @@
     {
       "id": "fy8-8-L3-02",
       "level": 3,
-      "text": "Kuvitteellisen ytimen energiatasot ovat $0$ (perustila), $0{,}40\\,\\text{MeV}$ ja $1{,}00\\,\\text{MeV}$. Ydin on aluksi ylimmällä tasolla, ja se voi palata perustilaan suoraan tai välitason kautta. Mikä on lyhin aallonpituus, joka ytimen gammaspektrissä voi näkyä? Vastaa pikometreinä ($1\\,\\text{MeV} = 10^{6}\\,\\text{eV}$, $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "text": "Kuvitteellisen ytimen energiatasot ovat $0$ (perustila), $0{,}40\\,\\text{MeV}$ ja $1{,}00\\,\\text{MeV}$.\n\nYdin on aluksi ylimmällä tasolla, ja se voi palata perustilaan suoraan tai välitason kautta.\n\nMikä on lyhin aallonpituus, joka ytimen gammaspektrissä voi näkyä? Vastaa pikometreinä ($1\\,\\text{MeV} = 10^{6}\\,\\text{eV}$, $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).",
       "answer": 1.24,
       "unit": "pm",
       "tolerance": 0.02

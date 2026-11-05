@@ -3,7 +3,7 @@
     {
       "id": "fy7-2-L1-01",
       "level": 1,
-      "text": "The protons in a proton beam travelling in a vacuum tube have a speed of $3.0 \\cdot 10^{5}\\,\\text{m/s}$. Coils around the tube produce a magnetic field whose magnetic flux density is $0.25\\,\\text{T}$ and which is perpendicular to the velocity of the protons. The charge of a proton is $1.602 \\cdot 10^{-19}\\,\\text{C}$. How great is the magnetic force on one proton? Give the answer in the form $\\ldots \\cdot 10^{-14}\\,\\text{N}$.",
+      "text": "The protons in a proton beam travelling in a vacuum tube have a speed of $3.0 \\cdot 10^{5}\\,\\text{m/s}$. Coils around the tube produce a magnetic field whose magnetic flux density is $0.25\\,\\text{T}$ and which is perpendicular to the velocity of the protons.\n\nThe charge of a proton is $1.602 \\cdot 10^{-19}\\,\\text{C}$.\n\nHow great is the magnetic force on one proton? Give the answer in the form $\\ldots \\cdot 10^{-14}\\,\\text{N}$.",
       "answer": 1.2,
       "unit": "10⁻¹⁴ N",
       "tolerance": 0.02

@@ -117,7 +117,7 @@
     {
       "id": "fy3-10-L2-01",
       "level": 2,
-      "text": "Ensihoitoauton happipullon painemittari on rikki. Pullon tilavuus on $10{,}0\\,\\textsf{l}$, ja punnitsemalla selviää, että pullossa on $2{,}40\\,\\text{kg}$ happea. Autotallissa lämpötila on $15\\,{}^\\circ\\text{C}$. Mikä on hapen paine pullossa baareina ($1\\,\\text{bar}$ = $100\\,\\text{kPa}$)? Hapen moolimassa on $32{,}0\\,\\text{g/mol}$. Käytä arvoa $R = 8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$ ja oleta, että happi noudattaa ideaalikaasun tilanyhtälöä.",
+      "text": "Ensihoitoauton happipullon painemittari on rikki. Pullon tilavuus on $10{,}0\\,\\textsf{l}$, ja punnitsemalla selviää, että pullossa on $2{,}40\\,\\text{kg}$ happea. Autotallissa lämpötila on $15\\,{}^\\circ\\text{C}$.\n\nMikä on hapen paine pullossa baareina ($1\\,\\text{bar}$ = $100\\,\\text{kPa}$)?\n\nHapen moolimassa on $32{,}0\\,\\text{g/mol}$. Käytä arvoa $R = 8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$ ja oleta, että happi noudattaa ideaalikaasun tilanyhtälöä.",
       "answer": 180,
       "unit": "bar",
       "tolerance": 0.02

@@ -215,7 +215,7 @@
         "experiment",
         "error"
       ],
-      "text": "Opiskelija mittaa käämin sisäkenttää anturilla. Anturi mittaa magneettivuon tiheyden komponentin anturin omassa suunnassa. Hän asettaa anturin käämin keskelle, mutta anturi on kääntynyt $60\\,{}^\\circ$ käämin akseliin nähden. Käämi on pitkä. Sen sisällä kenttä on homogeeninen ja akselin suuntainen. Mikä seuraavista kuvaa oikein, miten tämä vaikuttaa mittaustulokseen?",
+      "text": "Opiskelija mittaa käämin sisäkenttää anturilla. Anturi mittaa magneettivuon tiheyden komponentin anturin omassa suunnassa.\n\nHän asettaa anturin käämin keskelle, mutta anturi on kääntynyt $60\\,{}^\\circ$ käämin akseliin nähden. Käämi on pitkä. Sen sisällä kenttä on homogeeninen ja akselin suuntainen.\n\nMikä seuraavista kuvaa oikein, miten tämä vaikuttaa mittaustulokseen?",
       "answer": "Lukema on liian pieni, koska anturi mittaa vain oman suuntansa komponentin eikä koko kenttää.",
       "unit": "",
       "tolerance": 0.02,

@@ -229,7 +229,7 @@
     {
       "id": "fy3-15-L3-02",
       "level": 3,
-      "text": "A wind farm produces $36.0\\,\\text{GWh}$ of electricity in a year ($1\\,\\text{GWh} = 3.60 \\cdot 10^{12}\\,\\text{J}$). If the same electricity were produced with hard coal in a condensing power plant with an efficiency of 0.380 and where the heat of combustion of coal is $25.0\\,\\text{MJ/kg}$, how many kilotonnes of coal ($1\\,\\text{kt} = 10^{6}\\,\\text{kg}$) would be burned in a year? Also explain why the efficiency of a wind farm cannot be compared with the efficiency of a coal power plant as directly as those of two condensing power plants.",
+      "text": "A wind farm produces $36.0\\,\\text{GWh}$ of electricity in a year ($1\\,\\text{GWh} = 3.60 \\cdot 10^{12}\\,\\text{J}$).\n\nIf the same electricity were produced with hard coal in a condensing power plant with an efficiency of 0.380 and where the heat of combustion of coal is $25.0\\,\\text{MJ/kg}$, how many kilotonnes of coal ($1\\,\\text{kt} = 10^{6}\\,\\text{kg}$) would be burned in a year?\n\nAlso explain why the efficiency of a wind farm cannot be compared with the efficiency of a coal power plant as directly as those of two condensing power plants.",
       "answer": 13.6,
       "unit": "kt",
       "tolerance": 0.02

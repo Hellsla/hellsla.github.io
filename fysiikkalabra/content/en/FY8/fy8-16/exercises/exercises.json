@@ -132,7 +132,7 @@
     {
       "id": "fy8-16-L2-03",
       "level": 2,
-      "text": "The typical wavelength of the cosmic background radiation is now $1.06\\,\\text{mm}$. After the release of the radiation, the expansion of the universe has stretched all its wavelengths by a factor of about $1100$. What was the energy of a typical photon when the radiation was released? Use the values $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$. Give the answer in electronvolts.",
+      "text": "The typical wavelength of the cosmic background radiation is now $1.06\\,\\text{mm}$. After the release of the radiation, the expansion of the universe has stretched all its wavelengths by a factor of about $1100$.\n\nWhat was the energy of a typical photon when the radiation was released?\n\nUse the values $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$. Give the answer in electronvolts.",
       "answer": 1.287,
       "unit": "eV",
       "tolerance": 0.02
@@ -265,7 +265,7 @@
     {
       "id": "fy8-16-L3-03",
       "level": 3,
-      "text": "The spectrum of a galaxy shows three absorption lines of hydrogen at wavelengths $447.2\\,\\text{nm}$, $500.9\\,\\text{nm}$ and $676.2\\,\\text{nm}$. In the laboratory the wavelengths of the hydrogen lines are $434.0\\,\\text{nm}$, $486.1\\,\\text{nm}$ and $656.3\\,\\text{nm}$. Work out which line of the galaxy corresponds to which laboratory line, and calculate the distance of the galaxy. The Hubble constant is $H_0 = 70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$ and the speed of light $c = 2.998 \\cdot 10^{5}\\,\\text{km/s}$. Give the answer in megaparsecs.",
+      "text": "The spectrum of a galaxy shows three absorption lines of hydrogen at wavelengths $447.2\\,\\text{nm}$, $500.9\\,\\text{nm}$ and $676.2\\,\\text{nm}$. In the laboratory the wavelengths of the hydrogen lines are $434.0\\,\\text{nm}$, $486.1\\,\\text{nm}$ and $656.3\\,\\text{nm}$.\n\nWork out which line of the galaxy corresponds to which laboratory line, and calculate the distance of the galaxy.\n\nThe Hubble constant is $H_0 = 70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$ and the speed of light $c = 2.998 \\cdot 10^{5}\\,\\text{km/s}$. Give the answer in megaparsecs.",
       "answer": 129.9,
       "unit": "Mpc",
       "tolerance": 0.02

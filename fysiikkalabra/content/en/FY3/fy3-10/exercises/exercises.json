@@ -117,7 +117,7 @@
     {
       "id": "fy3-10-L2-01",
       "level": 2,
-      "text": "The pressure gauge of the oxygen cylinder of an ambulance is broken. The volume of the cylinder is $10.0\\,\\textsf{l}$, and weighing shows that the cylinder contains $2.40\\,\\text{kg}$ of oxygen. The temperature in the garage is $15\\,{}^\\circ\\text{C}$. What is the pressure of the oxygen in the cylinder in bars ($1\\,\\text{bar}$ = $100\\,\\text{kPa}$)? The molar mass of oxygen is $32.0\\,\\text{g/mol}$. Use the value $R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$ and assume that oxygen obeys the equation of state of an ideal gas.",
+      "text": "The pressure gauge of the oxygen cylinder of an ambulance is broken. The volume of the cylinder is $10.0\\,\\textsf{l}$, and weighing shows that the cylinder contains $2.40\\,\\text{kg}$ of oxygen. The temperature in the garage is $15\\,{}^\\circ\\text{C}$.\n\nWhat is the pressure of the oxygen in the cylinder in bars ($1\\,\\text{bar}$ = $100\\,\\text{kPa}$)?\n\nThe molar mass of oxygen is $32.0\\,\\text{g/mol}$. Use the value $R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$ and assume that oxygen obeys the equation of state of an ideal gas.",
       "answer": 180,
       "unit": "bar",
       "tolerance": 0.02
