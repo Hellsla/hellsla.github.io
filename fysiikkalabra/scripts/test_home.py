@@ -83,7 +83,7 @@ for lang in i18n.languages():
         mod = (out / f"{code}.html").read_text()
         hrefs = [h for h in re.findall(r'<li class="live[^"]*">.*?<a href="([^"]+)"', mod) if "kasitteet.html" not in h]   # the card links: below
         expect(f"{lang} {code}: the module page links {done} lessons, each published (two clicks)",
-               len([h for h in hrefs if not h.endswith("-sovella.html")]) == done and all((out / h).is_file() for h in hrefs), hrefs)
+               len([h for h in hrefs if not h.endswith(("-sovella.html", "-koe.html"))]) == done and all((out / h).is_file() for h in hrefs), hrefs)
         cards = re.findall(r'<li class="live ch-card">(.*?)</li>', mod, re.S)   # chapter cards (teacher 2026-11-03, "Ruukkikortit")
         expect(f"{lang} {code}: every published chapter is a card with one link, its opening illustration and its Miksi question",
                len(cards) == done and all(len(re.findall(r"<a ", c)) == 1 and 'class="ch-img"><svg aria-hidden="true"' in c and 'class="ch-why"' in c for c in cards),
