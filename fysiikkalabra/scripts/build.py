@@ -548,8 +548,8 @@ def course_text(code, mod):
 def chapter_nav(out, modules, built_ids, practice_built, exam_built=()):
     """Edellinen luku / Seuraava luku under every lesson and Sovella page of this language (teacher 2026-10-29). The
     order is the module's lesson order in curriculum.json (the teaching order: FY3 is not numeric), only published
-    pages are linked, the first chapter leads back to the module page, the last to Sovella itsenäisesti when it is
-    published (else the module page), and the Sovella page back to the last chapter. Links stay in this language's
+    pages are linked, the first chapter leads back to the module page, the last to the Esimerkkikoe and then
+    Haastetehtävät (Sovella) when published (else the module page), each back to the one before. Links stay in this language's
     folder, so the language is kept; new chapters join the sequence when they are published."""
     if only:                                       # a preview links the lessons a full build would publish, and itself
         built_ids = built_ids | {f.name for f in courses.lessons(lang=T.lang) if review_status(f)["state"] != "draft"}
@@ -558,8 +558,8 @@ def chapter_nav(out, modules, built_ids, practice_built, exam_built=()):
                 f'<span class="dir">{direction}</span><span class="name">{esc(name)}</span></a>')
     for code, mod in modules:
         seq = [(l["id"] + ".html", l["title"]) for l in mod.get("lessons", []) if l["id"] in built_ids]
+        if code in exam_built: seq.append((practice.page_name(code + practice.EXAM), T("exam.title")))     # teacher 2026-11-05: koe, then Haastetehtävät
         if code in practice_built: seq.append((practice.page_name(code), T("practice.title")))
-        if code in exam_built: seq.append((practice.page_name(code + practice.EXAM), T("exam.title")))
         course = (f"{code}.html", T("lesson.chapter_course", course=code))
         for i, (name, _) in enumerate(seq):
             f = out / name
@@ -863,11 +863,11 @@ def build_language(lang):
                 f'<p class="lead">{esc(T("site.module_question." + code))}</p>'
                 f'<p class="mod-status">{main_label}{(" · " + extra_label) if extra_label else ""}</p>'
                 + f'<h2>{T("site.course_lessons")}</h2>{items}<div class="mod-more">'
-                + (f'<section><h2>{T("practice.title")}</h2><p>{T("practice.course_lead")}</p><ul class="lessons practice-link"><li class="live">'
-                   f'<a href="{practice.page_name(code)}">{T("practice.title")}</a> <span class="count">{practice_built[code]}</span></li></ul></section>' if code in practice_built else "")
+                + concept_cards.module_section(code, T, lang, chapter_titles(code, built_ids))   # Kertauspakkasi: the student's deck of the module (teacher 2026-11-03); order deck, exam, Haastetehtävät (teacher 2026-11-05)
                 + (f'<section><h2>{T("exam.title")}</h2><p>{T("exam.course_lead")}</p><ul class="lessons practice-link"><li class="live">'
                    f'<a href="{practice.page_name(code + practice.EXAM)}">{T("exam.title")}</a> <span class="count">{exam_built[code]}</span></li></ul></section>' if code in exam_built else "")
-                + concept_cards.module_section(code, T, lang, chapter_titles(code, built_ids))   # Kertauspakkasi: the student's deck of the module (teacher 2026-11-03)
+                + (f'<section><h2>{T("practice.title")}</h2><p>{T("practice.course_lead")}</p><ul class="lessons practice-link"><li class="live">'
+                   f'<a href="{practice.page_name(code)}">{T("practice.title")}</a> <span class="count">{practice_built[code]}</span></li></ul></section>' if code in practice_built else "")
                 + (f'<section><h2>{T("site.course_goals")}</h2><details class="goals"><summary>{T.count("site.course_goals_show", len(mod.get("tavoitteet", [])))}</summary>'
                    f'<p>{T("site.course_goals_lead")}</p><ul>{goals}</ul></details></section>' if goals else "") + "</div>")
         desc = T("site.course_description", code=code, title=mod["title"], done=done, n=len(slots))

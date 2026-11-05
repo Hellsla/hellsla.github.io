@@ -22,8 +22,8 @@ for out in [root] + sorted(p for p in root.iterdir() if p.is_dir() and (p / "ind
     for code, mod in cur.items():
         if code.startswith("_"): continue
         seq = [l["id"] + ".html" for l in mod.get("lessons", []) if (out / f"{l['id']}.html").is_file()]
-        if (out / f"{code}-sovella.html").is_file(): seq.append(f"{code}-sovella.html")
         if (out / f"{code}-koe.html").is_file(): seq.append(f"{code}-koe.html")
+        if (out / f"{code}-sovella.html").is_file(): seq.append(f"{code}-sovella.html")
         for i, name in enumerate(seq):
             html = (out / name).read_text(); pages += 1
             navs = NAV.findall(html)
