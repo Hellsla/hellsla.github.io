@@ -1,20 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 492ee88e14080d3d
+CONTENT-HASH: c5582c2049dad6c5
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+(none needed: the plain Finnish already matched fi and was clear)
 
 ## Polish
-- exercises.json fy8-6-L3-02 — the "steepest and shallowest line" uncertainty method and "epävarmuusjana" are not taught in the lesson text; the prompt explains the method, so it is solvable, but S2 students meet new terms. Add one plain sentence: "Epävarmuusjana näyttää, kuinka paljon mittaus voi heittää."
-- exercises.json fy8-6-L2-04 — "loisteaine", "fluoresenssi" appear without a gloss in the task. Add "(aine, joka muuttaa valon värin)".
-- exercises.json fy8-6-L3-03 — "pääsee ulos LEDistä" is a modelling assumption the student has not met; say once that some photons stay inside the LED.
-- solutions.md L1-05 / L2-02 — "kolme merkitsevää numeroa kuten ..." is correct but heavy for S2; consider "pyöristetään kolmeen numeroon, koska lähtötiedoissa on kolme".
-- L2-02 gives h from one LED while the lesson says never to use one LED; the task says "tästä yhdestä LEDistä", acceptable, but add a one-line check that the result is off by ~5 % (6,30 vs 6,63) and why.
+- solutions.md L2-06 Answer, last sentence: "suoran jatkeen jäljelle jäävä ero poistuu kulmakertoimesta" is unclear (as in fi); reword in fi and fi-easy together.
+- L1-06 uses johtavuusvyö / valenssivyö without a one-line gloss; the lesson explains them, so acceptable.
 
 ## Checked
-- 12 tasks: 5 + 4 + 3 across levels 1–3; L1 one formula, L2 two steps, L3 data fit, uncertainty, efficiency.
-- None repeats the worked example (example uses two fitted points; L1-05 gives k directly, L3-01 fits four points).
-- Situation first, question last, everyday contexts (wavelength, UV marker, white LED); data complete.
-- Every solution has given, asked, principle, formula, conversions, substitution, answer with significant figures, sanity check.
-- Unit conversions (nm to m, eV to J, Hz exponent) are explicit; the common error values (4,17e-15, 6,7e-20) have repair feedback.
-- L3-01 relies on Graphical Analysis output (m, b) shown in the solution: followable.
-- Finnish: case after number+unit correct; terms match the glossary.
+- Level structure, task order, solution staging (Find/Principle/Formula/Substitution/Answer/Reasonableness) and the multi-part demands of L2-05..07 and L3-04..05 are identical to the reviewed fi.
+- Task text is natural and unambiguous; the final "write in the box" line names quantity and unit in every multi-part task.
+- No Finnish left in en (grep for äöå and common Finnish words).
+- fi-easy: short sentences, one idea each, terms (kynnysjännite, energia-aukko) as in the glossary.
+- Misconception feedback of L1-06 and the error analysis of L2-06 keep the same pedagogical point as fi.

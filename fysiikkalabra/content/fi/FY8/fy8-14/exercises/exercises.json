@@ -39,6 +39,56 @@
       "answer": 32,
       "unit": "kBq",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-14-L1-06",
+      "level": 1,
+      "text": "PET-kuvauksessa potilaalle annetaan merkkiainetta, jossa on positroneja lähettävä nuklidi, esimerkiksi fluori-$18$. Miksi juuri positronin lähettäminen sopii kuvaukseen, jossa lähteen paikka halutaan selvittää kehon ulkopuolelta?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Positroni annihiloituu kahdeksi vastakkaiseksi fotoniksi, joiden yhdistävä jana kulkee lähteen kautta.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Positroni kulkee kudoksen läpi ulos asti, joten ilmaisin havaitsee sen suoraan juuri lähteen kohdalta.",
+          "feedback": "Positroni on varattu hiukkanen ja pysähtyy kudoksessa jo millimetrien matkalla. Ilmaisin ei havaitse positronia itseään vaan vasta sen annihilaatiossa syntyneet fotonit."
+        },
+        {
+          "text": "Positroni on sähkövaraukseton, joten se ei sirota kudoksessa ja sen suora reitti näkyy kuvassa selvästi.",
+          "feedback": "Positronilla on positiivinen varaus, joten se ionisoi ja pysähtyy kudoksessa nopeasti. Sähkövaraukseton hiukkanen olisi esimerkiksi fotoni tai neutroni, eikä ilmaisin näe positronin reittiä."
+        },
+        {
+          "text": "Positroni synnyttää jarruttuessaan röntgensäteilyä, jonka energia kertoo, kuinka syvällä kasvain on.",
+          "feedback": "Positronin jarrutussäteily ei kerro kasvaimen syvyyttä. Paikan antaa annihilaatiofotonien suunta, ei niiden energia: se on aina $511\\,\\text{keV}$."
+        },
+        {
+          "text": "Positroni annihiloituu kahdeksi vastakkaiseksi fotoniksi, joiden yhdistävä jana kulkee lähteen kautta.",
+          "correct": true,
+          "feedback": "Oikein: annihilaatiossa syntyy kaksi samanenergista fotonia vastakkaisiin suuntiin. Kun ilmaisin havaitsee ne yhtä aikaa, lähde on niiden yhdistävällä janalla, ja monen janan leikkauskohta paljastaa merkkiaineen paikan."
+        }
+      ]
+    },
+    {
+      "id": "fy8-14-L1-07",
+      "level": 1,
+      "text": "Röntgenhoitaja huomaa, että keuhkokuva on hyvin kohinainen ja pieni keuhkomuutos ei erotu siitä. Hän ehdottaa: ”Annos kannattaa aina pitää mahdollisimman pienenä, joten pienennetään sitä vielä lisää.”\n\nOnko ehdotus säteilysuojelun kannalta järkevä? Perustele lyhyesti.",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "Ei ole. Kun annos on liian pieni, kuva jää kohinaiseksi eikä siitä näe sitä, mitä etsittiin. Tutkimus joudutaan uusimaan, ja potilas saa kaksi annosta yhden sijasta. Optimointi tarkoittaa pienintä annosta, jolla kuva vastaa kysymykseen.",
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-14-L1-08",
+      "level": 1,
+      "text": "Röntgenputkessa elektronit kiihdytetään jännitteellä $80\\,\\text{kV}$, ja ne jarruttavat anodissa. Yksittäinen elektroni voi luovuttaa yhdelle röntgenfotonille enintään koko liike-energiansa. Kuinka suuri energia röntgenfotonilla on enintään? Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Anna vastaus jouleina.",
+      "answer": 1.3e-14,
+      "unit": "J",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,6 +123,96 @@
       "answer": 10,
       "unit": "µSv",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-14-L2-05",
+      "level": 2,
+      "text": "Taulukossa on esimerkkiaineisto potilaan vuoden aikana saamista kuvantamistutkimuksista. Efektiiviset annokset ovat tyypillisten tutkimusten suuruusluokkaa. Luonnon säteilyn keskimääräinen vuosiannos Suomessa on $5{,}1\\,\\text{mSv}$ (STUK-A263, 2020).\n\nKuinka monta prosenttia luonnon säteilyn vuosiannoksesta on se efektiivinen kokonaisannos, jonka potilas sai kaikista taulukon tutkimuksista yhteensä?",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 44,
+      "unit": "%",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Potilaan tutkimukset vuoden aikana (esimerkkiaineisto)",
+        "columns": [
+          "Tutkimus",
+          "$H_\\text{E}\\,(\\text{mSv})$",
+          "Kertoja"
+        ],
+        "rows": [
+          [
+            "Hammaskuva",
+            "0.010",
+            "3"
+          ],
+          [
+            "Keuhkokuva",
+            "0.10",
+            "2"
+          ],
+          [
+            "Pään TT",
+            "2.0",
+            "1"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-14-L2-06",
+      "level": 2,
+      "text": "Merkkiaineen aktiivisuutta potilaan elimistössä seurattiin ruiskutuksen jälkeen. Taulukko on esimerkkiaineisto. Merkkiaineen radioaktiivisen hajoamisen puoliintumisaika on $6{,}01\\,\\text{h}$.\n\na) Päättele taulukosta, kuinka monessa tunnissa aktiivisuus potilaassa puolittuu. Vertaa tulosta puoliintumisaikaan $6{,}01\\,\\text{h}$ ja selitä ero.\n\nb) Kuinka monta prosenttia mitattu aktiivisuus hetkellä $12{,}0\\,\\text{h}$ on siitä aktiivisuudesta, joka olisi jäljellä, jos aktiivisuus pienenisi pelkän radioaktiivisen hajoamisen takia?\n\nKirjoita b-kohdan tulos vastauslaatikkoon.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 51,
+      "unit": "%",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Merkkiaineen aktiivisuus potilaassa (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{h})$",
+          "$A\\,(\\text{MBq})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "500"
+          ],
+          [
+            "2.0",
+            "355"
+          ],
+          [
+            "4.0",
+            "252"
+          ],
+          [
+            "8.0",
+            "123"
+          ],
+          [
+            "12.0",
+            "64"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-14-L2-07",
+      "level": 2,
+      "text": "PET-ruiskun lyijysuoja mitoitetaan niin, että suojan läpi pääsee enintään $1{,}0\\,\\%$ ruiskun $511\\,\\text{keV}$:n fotoneista. Lyijyn puoliintumispaksuus on $140\\,\\text{keV}$:n fotoneille $0{,}26\\,\\text{mm}$ ja $511\\,\\text{keV}$:n fotoneille $3{,}9\\,\\text{mm}$.\n\nOppilaan ratkaisu: ”Läpi päästettävä osuus on $0{,}010$, joten $\\left(\\tfrac{1}{2}\\right)^{n} = 0{,}010$ ja $n = \\dfrac{\\ln 0{,}010}{\\ln 0{,}5} = 6{,}64$. Paksuus on $d = n \\cdot d_{1/2} = 6{,}64 \\cdot 0{,}26\\,\\text{mm} = 1{,}7\\,\\text{mm}$.”\n\nEtsi oppilaan virhe ja laske lyijysuojan oikea paksuus millimetreinä.",
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "answer": 26,
+      "unit": "mm",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -99,6 +239,101 @@
       "answer": 17,
       "unit": "mm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-14-L3-04",
+      "level": 3,
+      "text": "PET-TT-tutkimuksessa potilaalle ruiskutetaan FDG-merkkiainetta, jonka fluori-$18$ hajoaa odotusaikana ennen kuvausta. Taulukossa ovat tutkimuksen tiedot (esimerkkiaineisto). Kuvauksen alussa potilaassa on oltava aktiivisuutta vähintään taulukon arvo potilaan massaa kohti. Oletetaan, että aktiivisuus pienenee odotusaikana vain hajoamalla. Annoskerroin koskee ruiskutettua aktiivisuutta.\n\na) Laske potilaan efektiivinen kokonaisannos, kun PET-osan ja TT-osan annokset lasketaan yhteen. Käytä pienintä ruiskutettavaa aktiivisuutta, jolla kuvaus onnistuu.\n\nb) Vertaa kokonaisannosta luonnon säteilyn vuosiannokseen $5{,}1\\,\\text{mSv}$ ja perustele, milloin tällainen tutkimus on oikeutettu.\n\nKirjoita a-kohdan tulos vastauslaatikkoon.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 10,
+      "unit": "mSv",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "PET-TT-tutkimuksen tiedot (esimerkkiaineisto)",
+        "columns": [
+          "Suure",
+          "Arvo",
+          "Yksikkö"
+        ],
+        "rows": [
+          [
+            "Potilaan massa",
+            "75",
+            "$\\text{kg}$"
+          ],
+          [
+            "Aktiivisuus kuvauksessa",
+            "2.0",
+            "$\\text{MBq/kg}$"
+          ],
+          [
+            "Odotusaika",
+            "60",
+            "$\\text{min}$"
+          ],
+          [
+            "Puoliintumisaika",
+            "110",
+            "$\\text{min}$"
+          ],
+          [
+            "Annoskerroin",
+            "0.019",
+            "$\\text{mSv/MBq}$"
+          ],
+          [
+            "TT-osan annos",
+            "6.0",
+            "$\\text{mSv}$"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-14-L3-05",
+      "level": 3,
+      "text": "Teollisuuden paksuusmittarissa amerikium-$241$:n $60\\,\\text{keV}$:n gammasäteily kulkee alumiinilevyn läpi ilmaisimeen. Mittari kalibroidaan mittaamalla ilmaisimen laskentataajuus $R$ tunnetuilla levyn paksuuksilla $d$; taustasäteily on vähennetty. Taulukko on esimerkkiaineisto. Tuntemattoman levyn kohdalla laskentataajuus on $402\\,\\tfrac{1}{\\text{s}}$.\n\na) Laske taulukosta peräkkäisten mittausten laskentataajuuksien suhteet $R_{n+1} : R_n$. Mitä ne kertovat vaimenemisesta?\n\nb) Määritä alumiinin puoliintumispaksuus tälle säteilylle kalibrointiaineistosta.\n\nc) Laske tuntemattoman levyn paksuus millimetreinä.\n\nKirjoita c-kohdan tulos vastauslaatikkoon.",
+      "kind": [
+        "data",
+        "experiment",
+        "model"
+      ],
+      "answer": 12,
+      "unit": "mm",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Alumiinilevyn paksuuden kalibrointi (esimerkkiaineisto)",
+        "columns": [
+          "$d\\,(\\text{mm})$",
+          "$R\\,(\\tfrac{1}{\\text{s}})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "1006"
+          ],
+          [
+            "5.0",
+            "689"
+          ],
+          [
+            "10.0",
+            "468"
+          ],
+          [
+            "15.0",
+            "327"
+          ],
+          [
+            "20.0",
+            "221"
+          ]
+        ]
+      }
     }
   ]
 }

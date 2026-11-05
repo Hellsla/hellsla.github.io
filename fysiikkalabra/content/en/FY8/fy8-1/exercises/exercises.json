@@ -39,6 +39,59 @@
       "answer": 0.69,
       "unit": "eV",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-1-L1-06",
+      "level": 1,
+      "text": "Violet light hits a sodium surface, and electrons are released from the surface. The frequency of the light is kept the same, but the brightness, that is the intensity, of the light is doubled. What happens?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "More electrons are released, but their maximum kinetic energy stays the same, because the energy of one photon does not change.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "More electrons are released, but their maximum kinetic energy stays the same, because the energy of one photon does not change.",
+          "correct": true,
+          "feedback": "Correct: brighter light brings more photons per second to the surface, and each photon can release one electron, so more electrons are released. The energy $hf$ of one photon depends only on the frequency, so the maximum kinetic energy $E_\\text{k,max} = hf - W$ does not change."
+        },
+        {
+          "text": "More electrons are released and their maximum kinetic energy increases, because an electron receives energy from all the photons of the light.",
+          "feedback": "This is a mistake of the wave model. One electron absorbs one photon at a time and does not collect energy from other photons, so the amount of light does not increase its kinetic energy. The maximum kinetic energy increases only if the frequency increases."
+        },
+        {
+          "text": "The number of electrons stays the same, but the maximum kinetic energy increases, because the amplitude and energy of the light waves increase.",
+          "feedback": "In the photoelectric effect the more photons hit the surface, the more electrons are released, so the number grows. The idea of the wave model that a larger amplitude would give the electron more kinetic energy does not agree with observations."
+        },
+        {
+          "text": "Both the number of electrons and the maximum kinetic energy stay the same, because the release depends only on the work function.",
+          "feedback": "The work function decides whether any electrons are released at all, but not how many. When more photons arrive, the number of electrons they release also grows, even though the energy of each one stays the same."
+        }
+      ]
+    },
+    {
+      "id": "fy8-1-L1-07",
+      "level": 1,
+      "text": "The work function of potassium is $2.30\\,\\text{eV}$. Use the values $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^8\\,\\text{m/s}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$.\n\na) Calculate the threshold frequency $f_0$ of potassium.\n\nb) Calculate the wavelength $\\lambda_0$ corresponding to the threshold frequency and use it to decide whether red light of wavelength $650\\,\\text{nm}$ releases electrons from potassium.\n\nEnter in the box the threshold frequency of part a) in hertz.",
+      "kind": [
+        "data"
+      ],
+      "answer": 556000000000000.0,
+      "unit": "Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-1-L1-08",
+      "level": 1,
+      "text": "The work function of sodium is $2.28\\,\\text{eV}$. A dim ultraviolet lamp whose light has a wavelength of $365\\,\\text{nm}$ releases electrons from a sodium surface immediately when the lamp is switched on. The photon energy at this wavelength is $3.40\\,\\text{eV}$. A bright red lamp whose light has a wavelength of $650\\,\\text{nm}$ and a photon energy of $1.91\\,\\text{eV}$ releases no electrons at all, even if it is kept on for a long time.\n\nUse the photon model to explain why the dim ultraviolet lamp releases electrons immediately but the bright red lamp releases none.",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "An electron is released when it absorbs one photon whose energy is at least equal to the work function. The energy of an ultraviolet photon, $3.40\\,\\text{eV}$, is greater than the work function $2.28\\,\\text{eV}$, so even one photon releases an electron immediately, even if few photons arrive. The energy of a photon of red light, $1.91\\,\\text{eV}$, is smaller than the work function, so no single photon is enough on its own, and energy does not accumulate from several photons. So a large number of photons, that is brightness, does not help.",
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,6 +126,123 @@
       "answer": 2.28,
       "unit": "eV",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-1-L2-05",
+      "level": 2,
+      "text": "In a photoelectric experiment the stopping voltage $U_\\text{s}$, that is the smallest reverse voltage that stops all the released electrons, is measured at different wavelengths. The table is example data, and the measurement uncertainty of the voltage is about $\\pm 0.02\\,\\text{V}$. The maximum kinetic energy is $E_\\text{k,max} = eU_\\text{s}$, where $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$. The speed of light is $c = 2.998 \\cdot 10^8\\,\\text{m/s}$.\n\na) Calculate the frequencies $f = \\tfrac{c}{\\lambda}$ and draw the graph $U_\\text{s}(f)$ on paper.\n\nb) Fit a straight line to the points and read its slope $k$ from two points chosen on the line, not from two measurement points. Calculate the Planck constant $h = ek$.\n\nc) Read the threshold frequency $f_0$ from the line and deduce the work function of the metal.\n\nEnter in the box the Planck constant of part b) in the unit $\\text{J}\\,\\text{s}$.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 6.7e-34,
+      "unit": "J s",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Stopping voltage at different wavelengths (example data)",
+        "columns": [
+          "$\\lambda\\,(\\text{nm})$",
+          "$U_\\text{s}\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "365",
+            "1.12"
+          ],
+          [
+            "405",
+            "0.75"
+          ],
+          [
+            "436",
+            "0.55"
+          ],
+          [
+            "470",
+            "0.32"
+          ],
+          [
+            "505",
+            "0.17"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-1-L2-06",
+      "level": 2,
+      "text": "Light of different frequencies hits the surfaces of two metals, A and B, and the maximum kinetic energy $E_\\text{k,max}$ of the released electrons is measured. The table is example data. Draw $E_\\text{k,max}(f)$ for both metals in the same graph on paper.\n\na) At each frequency, calculate the difference $E_\\text{k,A} - E_\\text{k,B}$ and its mean $D$.\n\nb) Which metal, A or B, has the greater work function? Calculate by how many electronvolts it is greater than the work function of the other metal. Use the photoelectric equation.\n\nc) Explain why the lines in the graph are parallel.\n\nEnter in the box the difference of the work functions of part b) in electronvolts.",
+      "kind": [
+        "data",
+        "graph",
+        "reasoning"
+      ],
+      "answer": 0.9,
+      "unit": "eV",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Maximum kinetic energy for two metals (example data)",
+        "columns": [
+          "$f\\,(10^{14}\\,\\text{Hz})$",
+          "$E_\\text{k,A}\\,(\\text{eV})$",
+          "$E_\\text{k,B}\\,(\\text{eV})$"
+        ],
+        "rows": [
+          [
+            "8.0",
+            "1.01",
+            "0.12"
+          ],
+          [
+            "9.0",
+            "1.43",
+            "0.52"
+          ],
+          [
+            "10.0",
+            "1.83",
+            "0.93"
+          ],
+          [
+            "11.0",
+            "2.26",
+            "1.35"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-1-L2-07",
+      "level": 2,
+      "text": "A student measures the maximum kinetic energy $E_\\text{k,max}$ of the electrons released from a metal at three frequencies (example data). She draws a line through the points and says: “The line crosses the vertical axis at $-2.1\\,\\text{eV}$, so the threshold frequency of the metal is $-2.1\\,\\text{eV}$.”\n\na) What is the error in the student's reasoning? What does the intersection of the line and the vertical axis tell, and where is the threshold frequency read?\n\nb) Calculate the slope of the line using the first and the last point. Use it to calculate the threshold frequency $f_0$ and the work function $W$ of the metal.\n\nEnter in the box the work function of part b) in electronvolts.",
+      "kind": [
+        "data",
+        "error"
+      ],
+      "answer": 2.14,
+      "unit": "eV",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Maximum kinetic energy at different frequencies (example data)",
+        "columns": [
+          "$f\\,(10^{14}\\,\\text{Hz})$",
+          "$E_\\text{k,max}\\,(\\text{eV})$"
+        ],
+        "rows": [
+          [
+            "6.5",
+            "0.55"
+          ],
+          [
+            "8.0",
+            "1.17"
+          ],
+          [
+            "9.5",
+            "1.79"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -99,6 +269,122 @@
       "answer": 550000000000000.0,
       "unit": "Hz",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-1-L3-04",
+      "level": 3,
+      "text": "The cathode of a photocell is illuminated with light of wavelength $400\\,\\text{nm}$. The power of the light is first $P_1 = 1.0\\,\\text{mW}$ and then $P_2 = 2.0\\,\\text{mW}$. The table is example data: it gives the current $I_1$ and $I_2$ of the cell as a function of the voltage $U$. A negative voltage slows the electrons on their way from the cathode to the anode, and a large positive voltage collects all the released electrons, so that the current reaches its saturation value. Use the values $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^8\\,\\text{m/s}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$.\n\na) Read the stopping voltage $U_\\text{s}$ from the table and calculate the work function $W$ of the cathode.\n\nb) Calculate how many photons hit the cathode per second at the power $P_1$ and how many electrons per second correspond to the saturation current $I_1$. Use these to calculate what fraction of the photons releases an electron (the quantum efficiency).\n\nc) Calculate the quantum efficiency also at the power $P_2$ and explain why the stopping voltage stays the same even though the saturation current doubles.\n\nEnter in the box the quantum efficiency of part b) as a percentage.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 0.093,
+      "unit": "%",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Current of a photocell at two light powers (example data)",
+        "columns": [
+          "$U\\,(\\text{V})$",
+          "$I_1\\,(\\mu\\text{A})$",
+          "$I_2\\,(\\mu\\text{A})$"
+        ],
+        "rows": [
+          [
+            "-1.00",
+            "0.00",
+            "0.00"
+          ],
+          [
+            "-0.80",
+            "0.00",
+            "0.00"
+          ],
+          [
+            "-0.70",
+            "0.01",
+            "0.02"
+          ],
+          [
+            "-0.60",
+            "0.03",
+            "0.06"
+          ],
+          [
+            "-0.40",
+            "0.09",
+            "0.18"
+          ],
+          [
+            "-0.20",
+            "0.16",
+            "0.32"
+          ],
+          [
+            "0.00",
+            "0.22",
+            "0.44"
+          ],
+          [
+            "0.50",
+            "0.27",
+            "0.54"
+          ],
+          [
+            "1.00",
+            "0.29",
+            "0.58"
+          ],
+          [
+            "2.00",
+            "0.30",
+            "0.60"
+          ],
+          [
+            "4.00",
+            "0.30",
+            "0.60"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-1-L3-05",
+      "level": 3,
+      "text": "The cathode of a photocell is potassium, whose work function is $2.30\\,\\text{eV}$. The cathode is illuminated by three LED sources at the same time (table, example data). Assume that for every thousand photons hitting the cathode whose energy is enough to release an electron, on average one electron is released, and that so large a positive voltage is connected to the cell that all the released electrons end up at the anode. Use the values $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^8\\,\\text{m/s}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$.\n\na) Calculate the photon energy of each source in electronvolts and deduce which sources release electrons.\n\nb) Calculate the current of the cell when all three sources are on.\n\nc) Calculate the stopping voltage in this situation and explain why the large power of the red source affects neither the current nor the stopping voltage.\n\nEnter in the box the current of the cell of part b) in microamperes.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 1.8,
+      "unit": "µA",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "LED sources illuminating the cathode (example data)",
+        "columns": [
+          "Source",
+          "$\\lambda\\,(\\text{nm})$",
+          "$P\\,(\\text{mW})$"
+        ],
+        "rows": [
+          [
+            "A, blue",
+            "470",
+            "4.0"
+          ],
+          [
+            "B, red",
+            "620",
+            "8.0"
+          ],
+          [
+            "C, ultraviolet",
+            "365",
+            "1.0"
+          ]
+        ]
+      }
     }
   ]
 }

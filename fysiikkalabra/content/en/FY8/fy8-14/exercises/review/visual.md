@@ -1,17 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: b4b13e41518dddf9
+CONTENT-HASH: ffb8eb18af41c6ab
+Mode: delta
+Round: 1
 
 ## Blocking
 (none)
 
+## Fixed
+(none)
+
 ## Polish
-- [Minor] L3-02 — put the 30 keV assumption first, drop the contradictory 20 keV.
-- [Minor] L2-02 — photon rate as words in the task but $\tfrac{1}{\text{s}}$ in the solution; align.
-- [Minor] L1-01 solution exponent 6,8 cm / 3,4 cm renders small; write the ratio first.
+- [Minor] None beyond the carried findings of the earlier exercises.
 
 ## Checked
-- Set unchanged since the previous PASS (same hash); earlier captures and findings carried.
-- Hash at start and end: b4b13e41518dddf9.
+- Screenshots of the new tasks (L1-06 and L3-04/L3-05 area) opened: tables render with units in upright type, formulas in the solutions are not clipped, choices and feedback panels read at 1280 px.
+- LaTeX uses the decimal point (5.1\,\text{mSv}, 0.010) consistently in tasks, tables and solutions.
+- Table headers and captions are translated; no Finnish remains.
+- Hash at start and end: ffb8eb18af41c6ab.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish n/a · accessibility 4
+illustrations n/a · typography 4 · accessibility 4

@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: c4e7b71ee927ba5d
+CONTENT-HASH: 86b73387a7a9c485
 
 ## Blocking
 (none)
 
 ## Polish
-- Level 1 is mostly one counting skill; L1-01 repeats the Delta++ step (carried).
-- No level 2 task decides whether a reaction is possible (carried).
-- No quark-level beta decay or mediator task (carried).
+- Part c) of L3-04 and L3-05 asks for an explanation while the answer box takes only b); the text says so.
 
 ## Checked
-- Delta: L2-03 Sijoitus: h·(c/X) instead of (h·c)/X — same value, intermediate results and answers unchanged, so the arithmetic and the student's path (Kaava hc/λ, then Sijoitus) still agree; the fraction now shows c/X as the quantity being divided, which is arguably clearer for tracing the units.
-- Opened own 360 px captures (?ratkaisut=1) of every changed solution step (scratchpad shots-fx/): the Sijoitus now wraps as 'h · [fraction c/X] = result' on two to four short rows, nothing clipped, no page scroll; same fraction-over-line form as the other solutions.
-- Levels, tasks and answers untouched by the commit; earlier PASS stands.
+- Level counts match fi (8, 7, 5).
+- Selkosuomi: sentences are short (long fi sentences in L2-05, L3-04 and L3-05 split into two or three), common words, terms explained; science content and numbers equal to fi.
+- Distractor feedback of L1-06, L1-07 and L2-07 keeps the content of fi and says why each option is wrong.
+- Fixed: Q explained in L2-07 (see science.md).

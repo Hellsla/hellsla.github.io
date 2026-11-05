@@ -1,13 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: eb06fbdf6f8f7a75
+CONTENT-HASH: 90c5f28699ad31ea
+Mode: translation
+Round: 1
 
 ## Blocking
 (none)
 
+## Fixed
+- (none needed) selkosuomi already applied: short sentences, no long clauses; terms (punasiirtymä, taustasäteily, pimeä aine) explained as in fi.
+
 ## Polish
-- L3-03 — two steps in one paragraph; an a)/b) split would help weaker readers (carried).
+- Part c) of L3-04 and L3-05 b) are open reasoning prompts with only the final number in the answer field; same as fi, kept.
 
 ## Checked
-- Delta: L1-05 and L2-03 Sijoitus (three formulas): h·(c/X) instead of (h·c)/X — same value, intermediate results and answers unchanged, so the arithmetic and the student's path (Kaava hc/λ, then Sijoitus) still agree; the fraction now shows c/X as the quantity being divided, which is arguably clearer for tracing the units.
-- Opened own 360 px captures (?ratkaisut=1) of every changed solution step (scratchpad shots-fx/): the Sijoitus now wraps as 'h · [fraction c/X] = result' on two to four short rows, nothing clipped, no page scroll; same fraction-over-line form as the other solutions.
-- Levels, tasks and answers untouched by the commit; earlier PASS stands.
+- Level order and exercise count match fi (L1 8, L2 7, L3 5 in total with the new ones).
+- Feedback of every wrong choice in L1-06, L1-08 and L2-07 names the misconception and does not leak the answer, as in fi.
+- Finnish is plain and consistent: short sentences, common words, 'kertolasku antaa yksikön ...' explained, no English left.
+- Error-analysis tasks (L2-06, L2-07) keep the student's quote and ask for the same two parts as fi.
+- Solutions keep the fi structure (Annettu/Kysytty/Periaate/Kaava/Muunnokset/Sijoitus/Vastaus/Järkevyys).

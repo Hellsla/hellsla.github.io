@@ -1,15 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 492ee88e14080d3d
+CONTENT-HASH: c5582c2049dad6c5
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+(none needed: the plain Finnish already matched fi and was clear)
 
 ## Polish
-- exercises.json L2-03 / L3-03 — stored answers 39.4 mW and 22.1 % carry three figures while solutions.md rounds to "noin 39 mW" and "noin 22 %" (two, from 20 mA and 15 mW); tolerance 2–3 % accepts both, so harmless — unchanged from the passed Finnish source.
+- solutions.md L2-06 Answer, last sentence: "suoran jatkeen jäljelle jäävä ero poistuu kulmakertoimesta" is unclear (as in fi); reword in fi and fi-easy together.
+- L1-06 uses johtavuusvyö / valenssivyö without a one-line gloss; the lesson explains them, so acceptable.
 
 ## Checked
-- All numbers, answers, units and tolerances identical to the passed Finnish source; only wording changed.
-- Recomputed in one script with own formulas: L1 3,124e-19 J; 2,362 eV; 4,612e14 Hz; 873,2 nm; 6,568e-34 J s. L2 2,638 V; 6,304e-34 J s; 39,36 mW; 0,541 eV. L3 least-squares k = 4,212e-15 V s, b = −0,164 V, h = 6,748e-34 J s; Δh = 2,403e-35 J s; 22,08 %. All agree with answers.py and solutions.
-- Principles in simplified wording stay correct: eU = work by the field; photon energy ≈ E_g; one electron gives at most one photon; fluorescence energy difference to heat (positive, ≈ one fifth).
-- L2-01 and L2-02 state that measured U_k is ≈ 0,1 V below hf/e, so the single-LED h is low (−4,9 %) and the slope method is preferred — consistent with the lesson.
-- L3-02: half the range of slopes, h = (6,6 ± 0,2)·10⁻³⁴ J s contains the accepted value.
-- Every solution solves symbolically before substitution; conversions (nm→m, mA→A, J↔eV) correct; reasonableness checks are real (1240 V nm estimates, infrared beyond 700 nm, efficiency < 100 %).
+- All 20 exercises compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags, choices, data cells and every number in texts, feedback and solutions.md are identical (decimal point in en JSON and LaTeX; comma in fi-easy as in fi).
+- The 8 new tasks (L1-06..08, L2-05..07, L3-04..05) read in full: physics statements, hints and part lists match fi.
+- L1-06: one correct option; distractor feedback (heating, infrared turning red, casing) matches fi.
+- Answers kept as in fi (539 nm, 6.24, 1.86 V, 3.65 %, 0.0625 eV, 6.74e-34 J s, 486 nm); no formula changed.
+- check_i18n.py fi-easy: 0 errors.

@@ -22,4 +22,15 @@ a["fy8-2-L3-01"] = h * c / ((0 - (-3.40)) * e) * 1e9       # Balmer limit: from 
 a["fy8-2-L3-02"] = h * c / (15.0e-6 * e) * 1000    # CO2 band 15,0 µm: ΔE = hc/λ = 1,3243e-20 J = 0,08267 eV = 82,7 meV
 E_in = h * c / (365e-9 * e)                        # cascade: UV photon 365 nm gives 3,3973 eV
 a["fy8-2-L3-03"] = h * c / ((E_in - 1.20) * e) * 1e9       # first photon 1,20 eV, second ΔE = 2,1973 eV -> λ = 564,3 nm -> 564 nm
+# Exercise-bank additions: level 1 (concept tasks have text answers, no number)
+# Level 2
+a["fy8-2-L2-05"] = h * c / (546.3e-9 * e)          # mercury lamp, green line 546,3 nm: E = hc/λ = 3,6362e-19 J = 2,2698 eV -> 2,27 eV
+a["fy8-2-L2-06"] = -3.40 + h * c / (486.0e-9 * e)  # Sun, dark line C 486,0 nm absorbed from n = 2 (-3,40 eV): E_y = -3,40 + 2,5514 = -0,8486 eV -> -0,85 eV
+k, b0 = 12.0095, 299.65                            # spectroscope calibration: least-squares line through the four mercury lines, λ = k x + b
+a["fy8-2-L2-07"] = k * 16.4 + b0                   # reading x = 16,4 mm: λ = 12,01 · 16,4 + 299,65 = 496,6 nm -> 497 nm
+# Level 3
+E3 = h * c / (318e-9 * e)                          # model atom, line A 318 nm: E3 = 3,8994 eV (highest level)
+EB = h * c / (443e-9 * e)                          # line B 443 nm: E3 - E1 = 2,7991 eV
+a["fy8-2-L3-04"] = h * c / ((E3 - EB) * e) * 1e9   # missing line = E1 = E3 - (E3 - E1) = 1,1003 eV, λ = hc/E1 = 1127 nm -> 1130 nm
+a["fy8-2-L3-05"] = (1 - 405 / 520) * 100           # dye B: heat share = 1 - λ_abs/λ_fl = 1 - 405/520 = 0,2212 -> 22,1 % (A 18,9 %, C 15,1 %)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

@@ -1,17 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: c4e7b71ee927ba5d
+CONTENT-HASH: 86b73387a7a9c485
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L3-01 solution — formula block ragged (carried).
-- [Minor] L3-01 problem — list the three reactions on separate lines (carried).
+- [Minor] Solutions L2-06 Sijoitus is one long paragraph of seven cases, as in fi; readable but dense.
 
 ## Checked
-- Own Playwright captures at 360 px, ?ratkaisut=1, details opened: every changed formula in fi (L2-03 Sijoitus) plus the en and fi-easy counterparts (contact sheets sheet-fi/en/fi-easy.png in scratchpad shots-fx/).
-- Result: h · \dfrac{c}{X} wraps after 'h ·' into a 2–4 row block, fraction bar intact, units upright with thin spaces, decimal comma; document scrollWidth = 360 = viewport, no clipped KaTeX.
-- LaTeX valid, no red KaTeX; hash at start and end the same.
-
-## Scores
-illustrations n/a · typography 5 · Finnish 5 · accessibility 4
+- Opened capture fy8-15-open-exercises-L2-1280-6.png (fi-easy L2-05 solution): maths and Finnish labels render, no raw LaTeX, no overflow.
+- Table captions and headers are Finnish ("Nro", "Yhdistelmä", "Hiukkanen", "Kvarkit"); decimals in tables use a point as in fi.
+- Edited text only (L2-07), no layout change.

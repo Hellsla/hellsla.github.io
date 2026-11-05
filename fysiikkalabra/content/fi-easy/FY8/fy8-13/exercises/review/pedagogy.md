@@ -1,17 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 774a8c852b1e5169
+CONTENT-HASH: aea99f1fb4c1726f
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
+## Fixed
+(none needed)
+
 ## Polish
-- L2-03, L3-01 — kysymys ei ole viimeinen lause (kantaan jäänyt).
-- L3-01 — "annos tavalla A miinus annos tavalla B ... etumerkin kanssa" on raskas selkeälle suomelle (kantaan jäänyt).
-- solutions L1-04 Järkevyys — "nelinkertaistuu eli kaksinkertaistuu kahdesti" on sekava; "kasvaa nelinkertaiseksi: se kaksinkertaistuu kaksi kertaa" (kantaan jäänyt).
-- solutions L2-04 — Kaava-rivin $\log_2$ ei kuulu lukuun (kantaan jäänyt).
+(none)
 
 ## Checked
-- Delta: L2-04 Järkevyys and L3-01 Kaava only; values and answers unchanged (the h·(c/X) regrouping in the other chapters does not occur here). L2-04 Järkevyys: the chain of five halvings is followed by "(yksikkönä µSv/h)"; unit stated once, the chain reads cleaner and the meaning is unchanged. L3-01: \tfrac in the bracket only changes size.
-- Opened own 360 px captures (?ratkaisut=1) of every changed solution step (scratchpad shots-fx/): the Järkevyys chain and the Kaava bracket fit the column, nothing clipped, no page scroll.
-- Järkevyys wraps over four short lines at 360 px; the chain stays readable, the unit parenthetical is clear.
-- Levels, tasks and answers untouched by the commit; earlier PASS stands.
+- The teaching content of the 8 new exercises matches fi: same task structure (parts a-d, "answer box takes part ..." line), same kinds, same model answers (L2-07 error explanation, L3-04 c winter/heating season, L3-05 d scattering and shorter working time), same reasonableness checks.
+- Language level: selkosuomi: short sentences, terms explained in place (radon, taustasäteily, kosminen säteily, savupiippuilmiö); decimal comma kept.
+- Feedback in L1-06 explains why each wrong option fails, not only that it does.
+- Terms introduced in the tasks (example data, reference level, remediation, half-value thickness) are used as in fi and the lesson.

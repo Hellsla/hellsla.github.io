@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: f6123a0838802040
+CONTENT-HASH: 55a1c542063de95f
 
 ## Blocking
 
 ## Polish
-- exercises/review/packet-science.md (tooling) — the exercise brief block is empty for the English lesson (the brief extractor looks for the Finnish section names Kaava/Esimerkki); the set was judged against the lesson as given in the lesson packet. Fix the packet script for translated headings.
+- exercises/solutions.md fy8-2-L1-07 (Model answer) — the parenthesis "(this reason is required: merely stating “the states are different” is not enough)" is a grader note inside the model answer; it mirrors the Finnish, so left as is.
+- exercises/solutions.md fy8-2-L3-04 (Reasonableness) — "mirror-image level system" is mirrored from the Finnish; understandable, no change needed.
 
 ## Checked
-- Recomputed all 12 answers in one script with my own formulas: 2.4701 eV, 433.57 nm, 4.5701e14 Hz, 1.89 eV, 655.60 nm, 486.27 nm, 670.27 nm, 121.57 nm, 2.1053 eV, 364.70 nm, 82.666 meV, 564.34 nm; all match exercises.json and answers.py.
-- Answers, units and tolerances identical to the fi source; numbers in every solution identical to the fi source.
-- Every solution: given/find/principle/formula/conversions/substitution/answer/reasonableness, unknown solved symbolically before substitution, eV→J conversion shown.
-- Rounding: 3 s.f. justified by the limiting datum (L1-04 and L2-03 by the hundredths of the level energies / 10.2 eV).
-- L2-02: smallest difference 1.85 eV of {1.85, 2.15, 4.00} gives the longest line; three lines for three states right.
-- L3-01: series limit from E = 0, 364.7 nm, just below 380 nm; ionisation boundary stated.
-- L3-02: vibrational quantisation, exact-match absorption; the improved reasonableness check (30× wavelength → 1/30 energy, vibrational transition = infrared, absorbs ground IR) is correct.
-- L3-03: cascade by energy conservation with no heat assumed in the task; 1.20 eV photon at 1030 nm is IR as stated.
-- Notation E_u, E_l, h, c, 1 eV value same as the lesson's Formula section; all inside FY8 scope (levels given as data).
+- Structural scripted diff against content/fi: same ids, kinds, answers, units, tolerances, correct flags, choice order, table captions, columns and every table cell for all 8 new tasks (L1-06..08, L2-05..07, L3-04..05); no differences.
+- Every number in the task texts, choices, feedback and solutions equals the Finnish after decimal-comma normalisation; the only token-order difference is L1-08 (wording of the same two energies), same values.
+- Decimal point used in en JSON and LaTeX; no decimal comma left; no Finnish words left in en (grep of exercises.json and solutions.md).
+- Recomputed new answers: L2-05 2.27 eV (mercury 435.8/546.1/577.0 match), L2-06 -0.85 eV (E_n = -13.6/16, n = 4; line E 527.1 nm unidentified), L2-07 497 nm (fit 12.01 nm/mm, 299.6 nm), L3-04 1127 nm (levels 1.10, 2.40, 3.90 eV), L3-05 22.1 % (dye B; D gives 477 nm).
+- L1-06 and L1-08: exactly one correct choice, feedback names the actual misconception; L1-08 direction of transition (absorb vs emit) correct.
+- check_i18n.py en: 0 errors.

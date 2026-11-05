@@ -39,6 +39,79 @@
       "answer": 656,
       "unit": "nm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-2-L1-06",
+      "level": 1,
+      "text": "Oppilas katsoo spektroskoopilla valonlähdettä ja näkee jatkuvan värikaistan, jonka päällä on useita kapeita tummia viivoja. Mikä seuraavista selittää tämän spektrin?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Valo on kulkenut viileämmän kaasun läpi, ja sen atomit ovat absorboineet fotonit, joiden energia on tilojen erotus.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Lähde on hehkuva ohut kaasu, jonka atomit lähettävät fotoneja vain tietyillä energioilla ja jättävät muut aallonpituudet tummiksi.",
+          "feedback": "Hehkuva ohut kaasu antaa emissiospektrin: tummalla pohjalla on erillisiä kirkkaita viivoja. Tässä tilanteessa on päinvastoin, sillä pohja on kirkas ja viivat ovat tummia."
+        },
+        {
+          "text": "Lähde on kuuma kiinteä kappale, jonka atomien energiatilat ovat kvantittuneet ja tuottavat siksi kapeita tummia viivoja.",
+          "feedback": "Kuuman kiinteän kappaleen atomit vuorovaikuttavat toistensa kanssa, ja kappale lähettää jatkuvan spektrin ilman tummia viivoja. Viivaspektri syntyy vain erillisistä atomeista eli ohuesta kaasusta."
+        },
+        {
+          "text": "Valo on kulkenut viileämmän kaasun läpi, ja sen atomit ovat absorboineet fotonit, joiden energia on tilojen erotus.",
+          "correct": true,
+          "feedback": "Oikein: jatkuvalla taustalla olevat tummat viivat ovat absorptiospektri. Kaasun atomit ottavat valosta vain ne fotonit, joiden energia on täsmälleen jonkin energiatilaparin erotus, ja nämä aallonpituudet jäävät tummiksi viivoiksi. Kaasun täytyy olla taustalla olevaa lähdettä viileämpi."
+        },
+        {
+          "text": "Kaasu on muuttanut osan valosta lämmöksi yhtä paljon kaikilla aallonpituuksilla, ja siksi koko spektri on himmentynyt tasaisesti.",
+          "feedback": "Tasainen himmeneminen ei tekisi kapeita viivoja. Viivat syntyvät vain niillä aallonpituuksilla, joiden fotonien energia vastaa atomin kahden energiatilan erotusta; muut aallonpituudet kulkevat kaasun läpi."
+        }
+      ]
+    },
+    {
+      "id": "fy8-2-L1-07",
+      "level": 1,
+      "text": "Eri alkuaineiden kaasupurkausputkien spektreissä viivat ovat eri aallonpituuksilla. Selitä lyhyesti kahdella tai kolmella virkkeellä, miksi jokaisella alkuaineella on omat viivansa ja mistä atomien energiatilojen erilaisuus johtuu. Käytä sanoja energiatila, fotoni ja energioiden erotus.",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "Atomin energiatilat ovat kvantittuneet, ja jokaisen alkuaineen atomeilla on omat energiatilansa, koska ytimen varaus ja elektronien määrä ovat erilaiset. Atomi lähettää fotonin siirtyessään ylemmästä tilasta alempaan, ja fotonin energia on tilojen energioiden erotus. Kun erotukset ovat eri alkuaineilla erilaiset, myös fotonien aallonpituudet ja siis viivat ovat erilaiset.",
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-2-L1-08",
+      "level": 1,
+      "text": "Oppilas ratkaisi tehtävän näin: ”Vetyatomi siirtyy tilasta $n = 2$, jonka energia on $E_2 = -3{,}40\\,\\text{eV}$, tilaan $n = 3$, jonka energia on $E_3 = -1{,}51\\,\\text{eV}$. Fotonin energia on tilojen erotus $E_3 - E_2 = -1{,}51\\,\\text{eV} - (-3{,}40\\,\\text{eV}) = 1{,}89\\,\\text{eV}$, joten atomi lähettää fotonin, jonka energia on $1{,}89\\,\\text{eV}$.” Lukuarvo on oikein, mutta johtopäätös ei ole. Mikä oppilaan päättelyssä on virhe?",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "answer": "Siirtymässä ylemmälle tilalle atomin energia kasvaa, joten atomi absorboi fotonin eikä lähetä sitä.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Fotonin energia on tilojen energioiden summa eikä erotus, joten oikea tulos olisi negatiivinen.",
+          "feedback": "Fotonin energia on aina kahden tilan erotus, koska energia säilyy siirtymässä. Summalla ei ole fysikaalista merkitystä, ja fotonin energia on positiivinen."
+        },
+        {
+          "text": "Tilojen erotus on vielä jaettava Planckin vakiolla, ennen kuin se on fotonin energia, joten yksikkö on väärä.",
+          "feedback": "Tilojen energioiden erotus on suoraan fotonin energia $hf$. Planckin vakiota tarvitaan vasta, kun energiasta lasketaan taajuus tai aallonpituus, eikä erotusta jaeta sillä."
+        },
+        {
+          "text": "Siirtymässä ylemmälle tilalle atomin energia kasvaa, joten atomi absorboi fotonin eikä lähetä sitä.",
+          "correct": true,
+          "feedback": "Oikein: tila $n = 3$ on ylempi kuin tila $n = 2$. Atomi voi nousta ylemmälle tilalle vain ottamalla vastaan fotonin, jonka energia on tilojen erotus $1{,}89\\,\\text{eV}$. Lähettäminen vaatisi siirtymän ylemmästä alempaan."
+        },
+        {
+          "text": "Näkyvän valon fotonin energia on yli $3\\,\\text{eV}$, joten näin pieni energiaero ei voi tuottaa valoa.",
+          "feedback": "Näkyvän valon fotonien energiat ovat noin $1{,}7$–$3{,}3\\,\\text{eV}$, joten $1{,}89\\,\\text{eV}$ on näkyvää punaista valoa. Virhe ei ole suuruusluokassa vaan siirtymän suunnassa."
+        }
+      ]
     }
   ],
   "level2": [
@@ -73,6 +146,145 @@
       "answer": 2.11,
       "unit": "eV",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-2-L2-05",
+      "level": 2,
+      "text": "Tuntemattoman kaasupurkauslampun spektristä mitattiin spektroskoopilla kolme kirkasta viivaa: $435{,}7\\,\\text{nm}$ (violetti), $546{,}3\\,\\text{nm}$ (vihreä) ja $577{,}2\\,\\text{nm}$ (keltainen). Taulukossa on neljän alkuaineen kirkkaimpien emissioviivojen aallonpituudet (esimerkkiaineisto).\n\na) Mikä alkuaine lampussa on? Perustele vertaamalla kaikkia kolmea viivaa taulukkoon.\n\nb) Kuinka suuri on lampun vihreän viivan fotonin energia? Anna vastaus elektronivoltteina.\n\nVastauslaatikkoon tulee kohdan b) tulos.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 2.27,
+      "unit": "eV",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Alkuaineiden emissioviivat, esimerkkiaineisto",
+        "columns": [
+          "Alkuaine",
+          "$\\lambda_1\\,(\\text{nm})$",
+          "$\\lambda_2\\,(\\text{nm})$",
+          "$\\lambda_3\\,(\\text{nm})$",
+          "$\\lambda_4\\,(\\text{nm})$"
+        ],
+        "rows": [
+          [
+            "Vety",
+            "410.2",
+            "434.0",
+            "486.1",
+            "656.3"
+          ],
+          [
+            "Helium",
+            "447.1",
+            "501.6",
+            "587.6",
+            "667.8"
+          ],
+          [
+            "Natrium",
+            "498.3",
+            "568.8",
+            "589.0",
+            "616.1"
+          ],
+          [
+            "Elohopea",
+            "404.7",
+            "435.8",
+            "546.1",
+            "577.0"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-2-L2-06",
+      "level": 2,
+      "text": "Auringon spektristä, jossa on kirkkaalla jatkuvalla taustalla tummia viivoja, mitattiin seitsemän tummaa viivaa (esimerkkiaineisto). Vertailuna ovat alkuaineiden viivojen aallonpituudet: vety $434{,}0\\,\\text{nm}$, $486{,}1\\,\\text{nm}$ ja $656{,}3\\,\\text{nm}$, kalsium (kalsiumioni) $393{,}4\\,\\text{nm}$, magnesium $518{,}4\\,\\text{nm}$ ja natrium $589{,}0\\,\\text{nm}$.\n\na) Mitkä viivat A–G voi tunnistaa ja mitä alkuaineita Auringon ilmakehässä siis on? Miksi viivat ovat tummia? Mikä viivoista jää tunnistamatta?\n\nb) Vedyn viivat syntyvät, kun atomi nousee tilasta $n = 2$, jonka energia on $-3{,}40\\,\\text{eV}$, ylemmälle tilalle. Mikä on sen tilan energia, jolle atomi nousee absorboidessaan viivan C fotonin? Anna vastaus elektronivoltteina.\n\nVastauslaatikkoon tulee kohdan b) tulos.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": -0.85,
+      "unit": "eV",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Auringon absorptiospektrin tummat viivat, esimerkkiaineisto",
+        "columns": [
+          "Viiva",
+          "$\\lambda\\,(\\text{nm})$"
+        ],
+        "rows": [
+          [
+            "A",
+            "393.5"
+          ],
+          [
+            "B",
+            "434.1"
+          ],
+          [
+            "C",
+            "486.0"
+          ],
+          [
+            "D",
+            "518.3"
+          ],
+          [
+            "E",
+            "527.1"
+          ],
+          [
+            "F",
+            "589.1"
+          ],
+          [
+            "G",
+            "656.4"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-2-L2-07",
+      "level": 2,
+      "text": "Oppilas tutkii spektroskoopilla kahta valonlähdettä: hehkulamppua ja elohopeakaasupurkausputkea. Spektroskoopin okulaarin asteikon lukema $x$ on millimetreinä.\n\na) Millaisen spektrin oppilas näkee kummastakin lähteestä ja miten ne erottaa toisistaan?\n\nb) Asteikko kalibroidaan elohopeaputken tunnetuilla viivoilla (taulukko, esimerkkiaineisto). Toisessa putkessa on tuntematon kaasu, ja sen sinivihreän viivan kohdalla lukema on $x = 16{,}4\\,\\text{mm}$. Piirrä kalibrointikuvaaja $(x, \\lambda)$, sovita siihen suora ja määritä viivan aallonpituus nanometreinä.\n\nVastauslaatikkoon tulee kohdan b) tulos.",
+      "kind": [
+        "experiment",
+        "data",
+        "graph"
+      ],
+      "answer": 497,
+      "unit": "nm",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Elohopean viivat ja asteikon lukemat, esimerkkiaineisto",
+        "columns": [
+          "$\\lambda\\,(\\text{nm})$",
+          "$x\\,(\\text{mm})$"
+        ],
+        "rows": [
+          [
+            "404.7",
+            "8.7"
+          ],
+          [
+            "435.8",
+            "11.4"
+          ],
+          [
+            "546.1",
+            "20.5"
+          ],
+          [
+            "577.0",
+            "23.1"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -99,6 +311,86 @@
       "answer": 564,
       "unit": "nm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-2-L3-04",
+      "level": 3,
+      "text": "Malliatomissa on perustila ja kolme viritystilaa, ja kaikki kuusi siirtymää tilojen välillä ovat mahdollisia. Kuuma kaasu, jossa on tällaisia atomeja, lähettää kuutta viivaa. Niistä viisi mitattiin (taulukko, esimerkkiaineisto). Kuudes viiva syntyy alimmalta viritystilalta perustilaan. Se on viivoista aallonpituudeltaan pisin ja niin kaukana infrapunassa, ettei ilmaisin havaitse sitä.\n\na) Laske mitattujen viivojen fotonien energiat elektronivoltteina.\n\nb) Päättele viritystilojen energiat perustilan yläpuolella ja piirrä atomin energiatasokaavio, johon merkitset, mikä viiva on mikin siirtymä.\n\nc) Mikä on kuudennen viivan aallonpituus? Perustele päättelysi.\n\nVastauslaatikkoon tulee kohdan c) tulos nanometreinä.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 1130,
+      "unit": "nm",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Malliatomin mitatut emissioviivat, esimerkkiaineisto",
+        "columns": [
+          "Viiva",
+          "$\\lambda\\,(\\text{nm})$"
+        ],
+        "rows": [
+          [
+            "A",
+            "318"
+          ],
+          [
+            "B",
+            "443"
+          ],
+          [
+            "C",
+            "517"
+          ],
+          [
+            "D",
+            "827"
+          ],
+          [
+            "E",
+            "954"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-2-L3-05",
+      "level": 3,
+      "text": "Kolmea fluoresoivaa väriainetta valaistaan lyhytaaltoisella valolla, ja mitataan, minkä aallonpituuden valoa kukin väriaine säteilee (esimerkkiaineisto). Oletetaan, että jokaista absorboitua fotonia kohti väriaine lähettää yhden fluoresenssifotonin ja että energia, joka ei lähde fotonina, muuttuu lämmöksi.\n\na) Laske kunkin väriaineen absorboiman ja lähettämän fotonin energiat elektronivoltteina.\n\nb) Missä väriaineessa lämmöksi muuttuva osuus on suurin, ja kuinka monta prosenttia absorboidun fotonin energiasta se on?\n\nc) Selitä, miksi fluoresenssivalon aallonpituus on pidempi kuin absorboidun valon ja minne puuttuva energia joutuu.\n\nd) Neljäs väriaine D absorboi aallonpituuden $400\\,\\text{nm}$ valoa, ja jokaista absorboitua fotonia kohti $0{,}50\\,\\text{eV}$ muuttuu lämmöksi. Mikä on sen fluoresenssivalon aallonpituus nanometreinä?\n\nVastauslaatikkoon tulee kohdan b) osuus prosentteina.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 22.1,
+      "unit": "%",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Väriaineiden valaistus ja fluoresenssi, esimerkkiaineisto",
+        "columns": [
+          "Väriaine",
+          "$\\lambda_\\text{abs}\\,(\\text{nm})$",
+          "$\\lambda_\\text{fl}\\,(\\text{nm})$"
+        ],
+        "rows": [
+          [
+            "A",
+            "365",
+            "450"
+          ],
+          [
+            "B",
+            "405",
+            "520"
+          ],
+          [
+            "C",
+            "450",
+            "530"
+          ]
+        ]
+      }
     }
   ]
 }

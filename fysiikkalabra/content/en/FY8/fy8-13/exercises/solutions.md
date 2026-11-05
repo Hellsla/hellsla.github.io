@@ -117,3 +117,83 @@
 **Substitution:** $H_\text{E} = 0.12 \cdot 20 \cdot 0.10\,\text{mGy} + 1 \cdot 0.50\,\text{mGy} = 0.24\,\text{mSv} + 0.50\,\text{mSv} = 0.74\,\text{mSv}$
 **Answer:** $0.74\,\text{mSv}$, two significant figures like the doses $0.10\,\text{mGy}$ and $0.50\,\text{mGy}$.
 **Reasonableness:** The absorbed dose from alpha radiation is a fifth of that from gamma radiation, but once weighted its share is almost half of the share of gamma, because $0.12 \cdot 20 = 2.4$. If the factor of the lungs were forgotten, the share of alpha would wrongly come out as $2.0\,\text{mSv}$.
+
+## fy8-13-L1-06
+**Asked:** which statement correctly describes the difference between the absorbed dose (gray) and the effective dose (sievert)
+**Principle:** The absorbed dose $D = \tfrac{E}{m}$ only tells how much energy is absorbed per unit mass. In the equivalent dose it is multiplied by the radiation weighting factor $w_\text{R}$ and in the effective dose also by the tissue weighting factors $w_\text{T}$, so the sievert describes the health risk of radiation.
+**Model answer:** The correct statement is the one according to which the gray tells the energy absorbed in tissue per unit mass and the sievert also takes into account the type of radiation and the sensitivity of the tissue. The units $\text{Gy}$ and $\text{Sv}$ both have the form $\tfrac{\text{J}}{\text{kg}}$, but the quantities are not the same: an absorbed dose of $0.30\,\text{mGy}$ from alpha radiation gives an equivalent dose of $6.0\,\text{mSv}$. The statement that the gray concerns only gamma radiation and the sievert only alpha radiation is wrong, because neither is limited to one type of radiation. The statement that the units describe the source is wrong, because the decay rate of a source is measured in becquerels. The statement that the quantities are the same is wrong, because the type of radiation affects the sieverts.
+
+## fy8-13-L1-07
+**Given:** equivalent dose of the liver $H_\text{liver} = 2.0\,\text{mSv}$ and weighting factor $w_\text{liver} = 0.04$, equivalent dose of the stomach $H_\text{stomach} = 1.0\,\text{mSv}$ and weighting factor $w_\text{stomach} = 0.12$
+**Asked:** the effective dose $H_\text{E}$ in millisieverts
+**Principle:** The effective dose is obtained by multiplying the equivalent dose of each irradiated tissue by its weighting factor and adding the products together. The other tissues receive no dose, so they add nothing to the sum.
+**Formula:** $H_\text{E} = w_\text{liver} H_\text{liver} + w_\text{stomach} H_\text{stomach}$
+**Conversions:** Not needed: when the equivalent doses are in millisieverts, the effective dose comes out in millisieverts, because the weighting factors are pure numbers.
+**Substitution:** $H_\text{E} = 0.04 \cdot 2.0\,\text{mSv} + 0.12 \cdot 1.0\,\text{mSv} = 0.080\,\text{mSv} + 0.12\,\text{mSv} = 0.20\,\text{mSv}$
+**Answer:** $0.20\,\text{mSv}$, two significant figures like the doses $2.0\,\text{mSv}$ and $1.0\,\text{mSv}$.
+**Reasonableness:** The sum of the weighting factors is only $0.04 + 0.12 = 0.16$, so the effective dose is smaller than the equivalent dose of either organ ($2.0\,\text{mSv}$ and $1.0\,\text{mSv}$). It describes the risk to the whole body, even though only two organs are irradiated.
+
+## fy8-13-L1-08
+**Given:** effective dose of the examination $H_1 = 0.10\,\text{mSv}$, average annual dose of a Finn $H_\text{avg} = 5.9\,\text{mSv}$
+**Asked:** the share of the dose of the examination in the average annual dose as a percentage
+**Principle:** The share is obtained by dividing the dose of the examination by the annual dose and expressing the ratio as a percentage. The doses are in the same unit, so the ratio is a pure number.
+**Formula:** $\text{share} = \dfrac{H_1}{H_\text{avg}} \cdot 100\,\%$
+**Conversions:** Not needed: both doses are in millisieverts.
+**Substitution:** $\text{share} = \dfrac{0.10\,\text{mSv}}{5.9\,\text{mSv}} \cdot 100\,\% = 0.016949 \cdot 100\,\% = 1.6949\,\%$
+**Answer:** $1.7\,\%$, two significant figures like the annual dose $5.9\,\text{mSv}$.
+**Reasonableness:** The annual dose is $5.9 : 0.10 \approx 59$ times the dose of the examination, so the examination is about $\tfrac{1}{59} \approx 0.017$, or $1.7\,\%$, of the annual dose. One examination therefore hardly increases the annual dose.
+
+## fy8-13-L2-05
+**Given:** annual effective doses in the table: radon $4.0\,\text{mSv}$, other natural radiation $1.1\,\text{mSv}$, medical use $0.8\,\text{mSv}$
+**Asked:** a) the sum of the doses $H_\text{tot}$, b) the share of radon in the total dose as a percentage
+**Principle:** Effective doses from different sources are added together, because they describe the same risk to the whole body. The share of radon is its dose divided by the total dose.
+**Formula:** $H_\text{tot} = H_1 + H_2 + H_3$ and $\text{share} = \dfrac{H_\text{radon}}{H_\text{tot}} \cdot 100\,\%$
+**Conversions:** Not needed: all doses are in millisieverts.
+**Substitution:** a) $H_\text{tot} = 4.0\,\text{mSv} + 1.1\,\text{mSv} + 0.8\,\text{mSv} = 5.9\,\text{mSv}$; b) $\text{share} = \dfrac{4.0\,\text{mSv}}{5.9\,\text{mSv}} \cdot 100\,\% = 67.8\,\%$
+**Answer:** $68\,\%$, two significant figures like the doses. The sum $5.9\,\text{mSv}$ agrees with the average in STUK-A263 (2020).
+**Reasonableness:** The radon dose $4.0\,\text{mSv}$ is slightly more than two thirds of the sum, because two thirds would be $\tfrac{2}{3} \cdot 5.9\,\text{mSv} = 3.9\,\text{mSv}$. The other sources together are $1.1 + 0.8 = 1.9\,\text{mSv}$, less than a third.
+
+## fy8-13-L2-06
+**Given:** distances and dose rates from the table: $r = 0.50\,\text{m}$; $1.00\,\text{m}$; $1.50\,\text{m}$ and $2.00\,\text{m}$ and $\dot{H} = 410$; $98.0$; $44.0$ and $26.0\,\mu\text{Sv/h}$; new distance $r = 3.0\,\text{m}$
+**Asked:** a) the products $\dot{H} r^2$, b) whether the measurement obeys the inverse-square law, c) the dose rate $\dot{H}$ at a distance of $3.0\,\text{m}$
+**Principle:** If $\dot{H}_2 = \dot{H}_1 \left(\tfrac{r_1}{r_2}\right)^2$, then $\dot{H}_1 r_1^2 = \dot{H}_2 r_2^2$, so the product $\dot{H} r^2$ is the same at all distances. The measurements have small random variation, so the products are approximately equal.
+**Reading the table:** The products are calculated for each row of the table. If the product increased or decreased systematically with distance, the law would not hold.
+**Formula:** $k = \dot{H} r^2$ and $\dot{H}(r) = \dfrac{k_\text{avg}}{r^2}$
+**Conversions:** Not needed: the distances are in metres and the dose rates in the unit $\mu\text{Sv/h}$.
+**Substitution:** a) $k_1 = 410\,\mu\text{Sv/h} \cdot (0.50\,\text{m})^2 = 102.5\,\mu\text{Sv} \cdot \text{m}^2/\text{h}$, $k_2 = 98.0\,\mu\text{Sv/h} \cdot (1.00\,\text{m})^2 = 98.0\,\mu\text{Sv} \cdot \text{m}^2/\text{h}$, $k_3 = 44.0\,\mu\text{Sv/h} \cdot (1.50\,\text{m})^2 = 99.0\,\mu\text{Sv} \cdot \text{m}^2/\text{h}$ and $k_4 = 26.0\,\mu\text{Sv/h} \cdot (2.00\,\text{m})^2 = 104.0\,\mu\text{Sv} \cdot \text{m}^2/\text{h}$; b) the products are $98$–$104$ and show no trend: they vary by about $\pm 3\,\%$ around the mean, so the measurement obeys the inverse-square law; c) the sum of the products is $102.5 + 98.0 + 99.0 + 104.0 = 403.5$, so $k_\text{avg} = \dfrac{403.5}{4} = 100.875\,\mu\text{Sv} \cdot \text{m}^2/\text{h}$ and $\dot{H} = \dfrac{100.875\,\mu\text{Sv} \cdot \text{m}^2/\text{h}}{(3.0\,\text{m})^2} = 11.208\,\mu\text{Sv/h}$
+**Answer:** $11\,\mu\text{Sv/h}$ (more precisely $11.2\,\mu\text{Sv/h}$), two significant figures like the distance $3.0\,\text{m}$.
+**Reasonableness:** According to the inverse-square law, from a distance of $2.00\,\text{m}$ to $3.0\,\text{m}$ the dose rate decreases by the factor $\left(\tfrac{2.00}{3.0}\right)^2 = 0.444$, so $26.0\,\mu\text{Sv/h} \cdot 0.444 = 11.6\,\mu\text{Sv/h}$ (based on the outermost measurement alone; the mean method gives a slightly smaller value). The result $11.2\,\mu\text{Sv/h}$ is close to it and smaller than any measured value, as it should be at a greater distance.
+
+## fy8-13-L2-07
+**Given:** mass of the liver $m = 1.8\,\text{kg}$, absorbed energy $E = 0.63\,\text{mJ}$, weighting factor of alpha radiation $w_\text{R} = 20$
+**Asked:** a) the student's error, b) the equivalent dose of the liver $H_\text{T}$ in millisieverts
+**Principle:** The student's absorbed dose $0.35\,\text{mGy}$ is correct, but for the equivalent dose it must be multiplied by the radiation weighting factor. At the same absorbed dose, alpha radiation damages cells $20$ times more than gamma radiation.
+**Formula:** $D = \dfrac{E}{m}$ and $H_\text{T} = w_\text{R} D$
+**Conversions:** $E = 0.63\,\text{mJ} = 0.63 \cdot 0.001\,\text{J} = 0.00063\,\text{J}$; $1\,\tfrac{\text{J}}{\text{kg}} = 1\,\text{Gy} = 1000\,\text{mGy}$.
+**Substitution:** $D = \dfrac{0.00063\,\text{J}}{1.8\,\text{kg}} = 0.00035\,\text{Gy} = 0.35\,\text{mGy}$ and $H_\text{T} = 20 \cdot 0.35\,\text{mGy} = 7.0\,\text{mSv}$
+**Answer:** $7.0\,\text{mSv}$, two significant figures like the energy $0.63\,\text{mJ}$ and the mass $1.8\,\text{kg}$.
+**Model answer on part a):** Gray and sievert are not the same thing, even though both have the form $\tfrac{\text{J}}{\text{kg}}$. The gray measures absorbed energy per unit mass, and the sievert takes into account the type of radiation. The weighting factor of alpha radiation is $20$, so the student should have multiplied the dose by $20$. Their answer $0.35\,\text{mSv}$ is $20$ times too small.
+**Reasonableness:** The equivalent dose $7.0\,\text{mSv}$ is $20$ times the absorbed dose $0.35\,\text{mGy}$, as it should be for alpha radiation. From gamma radiation the same absorbed dose would give only $0.35\,\text{mSv}$.
+
+## fy8-13-L3-04
+**Given:** average concentration $c_\text{avg,Finland} = 94\,\tfrac{\text{Bq}}{\text{m}^3}$ and the resulting dose $H_\text{avg} = 4.0\,\text{mSv}$ per year; the resident's time at home $80\,\%$ of the average; reference level $300\,\tfrac{\text{Bq}}{\text{m}^3}$; measured concentrations winter $380$, spring $260$, summer $140$ and autumn $300\,\tfrac{\text{Bq}}{\text{m}^3}$; target dose $2.0\,\text{mSv}$
+**Asked:** a) the mean concentration of the year, b) the radon dose, c) an explanation and a comparison with the reference level, d) the highest permitted mean concentration after remediation
+**Principle:** The periods are of equal length, so the mean concentration of the year is their average. By assumption the radon dose is directly proportional to the concentration and to the time at home, so the dose is obtained by multiplying the average dose of Finns by the ratio of the concentrations and the ratio of the times. In part d) the same equation is solved for the concentration.
+**Formula:** $c_\text{avg} = \dfrac{c_1 + c_2 + c_3 + c_4}{4}$, $H = H_\text{avg} \dfrac{c}{c_\text{avg,Finland}} \cdot f$ and $c = \dfrac{H}{H_\text{avg} f} c_\text{avg,Finland}$, where $f = 0.80$ is the ratio of the times at home
+**Conversions:** Not needed: the concentrations are in the same unit and the doses in millisieverts; $80\,\% = 0.80$.
+**Substitution:** a) The sum of the concentrations is $380 + 260 + 140 + 300 = 1080\,\tfrac{\text{Bq}}{\text{m}^3}$, so $c_\text{avg} = \dfrac{1080\,\tfrac{\text{Bq}}{\text{m}^3}}{4} = 270\,\tfrac{\text{Bq}}{\text{m}^3}$; b) $H = 4.0\,\text{mSv} \cdot \dfrac{270\,\tfrac{\text{Bq}}{\text{m}^3}}{94\,\tfrac{\text{Bq}}{\text{m}^3}} \cdot 0.80 = 4.0\,\text{mSv} \cdot 2.8723 \cdot 0.80 = 9.19\,\text{mSv}$; d) $c = \dfrac{2.0\,\text{mSv}}{4.0\,\text{mSv} \cdot 0.80} \cdot 94\,\tfrac{\text{Bq}}{\text{m}^3} = 0.625 \cdot 94\,\tfrac{\text{Bq}}{\text{m}^3} = 58.75\,\tfrac{\text{Bq}}{\text{m}^3}$
+**Answer:** $59\,\tfrac{\text{Bq}}{\text{m}^3}$, two significant figures like the target dose $2.0\,\text{mSv}$. The dose in part b) is about $9.2\,\text{mSv}$.
+**Model answer on part c):** The radon concentration is highest in winter, because warm indoor air rises and draws radon from the ground (the chimney effect) and the windows are closed. In this model the dose is determined by the mean concentration of the year, $270\,\tfrac{\text{Bq}}{\text{m}^3}$, so a dose calculated from the winter value $380\,\tfrac{\text{Bq}}{\text{m}^3}$ would be $\tfrac{380}{270} = 1.4$ times as large, or about $40\,\%$ too large. The official measurement is nevertheless made in the heating season, for at least two months, and the result is used as an estimate of the annual mean: it is slightly high but on the safe side. Here the mean concentration of the heating season (autumn, winter and spring) is $(300 + 380 + 260) : 3 \approx 313\,\tfrac{\text{Bq}}{\text{m}^3}$, that is, above the reference level $300\,\tfrac{\text{Bq}}{\text{m}^3}$, so radon remediation would be recommended. The mean concentration of the year, $270\,\tfrac{\text{Bq}}{\text{m}^3}$, is nevertheless below the reference level; it is still about three times the average of Finnish dwellings.
+**Reasonableness:** Check: $4.0\,\text{mSv} \cdot \dfrac{58.75}{94} \cdot 0.80 = 4.0\,\text{mSv} \cdot 0.625 \cdot 0.80 = 2.0\,\text{mSv}$. The concentration must decrease by about $78\,\%$ (from $270$ to $58.75$), which is a large change but one that radon remediation can achieve.
+
+## fy8-13-L3-05
+**Given:** dose rate at a distance of $1.0\,\text{m}$ behind a concrete wall from the table (at thicknesses $0$, $4.0$, $8.0$ and $12.0\,\text{cm}$: $240$, $121$, $60.5$ and $29.8\,\mu\text{Sv/h}$), distance of the workstation $r_2 = 2.0\,\text{m}$, thickness of the wall $d = 10\,\text{cm}$, dose limit $H = 25\,\mu\text{Sv}$
+**Asked:** a) the half-value thickness of concrete $d_{1/2}$, b) the dose rate at the workstation, c) the longest working time $t$ in hours, d) one assumption that may make the working time too long
+**Principle:** Concrete halves the dose rate at every half-value thickness, and distance reduces it according to the inverse-square law. The two effects are independent, so their factors are multiplied. The dose rate at the workstation is constant, so the permitted time is the dose limit divided by the dose rate.
+**Reading the table:** In the table $240 \to 121 \to 60.5 \to 29.8\,\mu\text{Sv/h}$: the dose rate halves every time the thickness increases by $4.0\,\text{cm}$ ($240 : 2 = 120 \approx 121$, $121 : 2 \approx 60.5$ and $60.5 : 2 \approx 30 \approx 29.8$). Therefore $d_{1/2} \approx 4.0\,\text{cm}$.
+**Formula:** $\dot{H} = \dot{H}_1 \left(\dfrac{r_1}{r_2}\right)^2 \left(\dfrac{1}{2}\right)^{d/d_{1/2}}$ and $H = \dot{H} t$, so $t = \dfrac{H}{\dot{H}}$
+**Conversions:** Not needed: the thickness and the half-value thickness are in centimetres, the distances in metres and the dose in microsieverts.
+**Substitution:** b) $\dot{H} = 240\,\mu\text{Sv/h} \cdot \left(\dfrac{1.0\,\text{m}}{2.0\,\text{m}}\right)^2 \cdot \left(\dfrac{1}{2}\right)^{10\,\text{cm}/4.0\,\text{cm}} = 60\,\mu\text{Sv/h} \cdot 0.1768 = 10.61\,\mu\text{Sv/h}$; c) $t = \dfrac{25\,\mu\text{Sv}}{10.61\,\mu\text{Sv/h}} = 2.357\,\text{h}$
+**Answer:** $2.4\,\text{h}$, two significant figures like the dose limit $25\,\mu\text{Sv}$ and the thickness of the wall $10\,\text{cm}$. The dose rate in part b) is about $11\,\mu\text{Sv/h}$.
+**Model answer on part d):** The formula assumes that the photons hitting the concrete are either absorbed or pass through with the same proportion. In reality some of the gamma radiation scatters in the wall and the surroundings, and the scattered radiation can raise the dose rate at the workstation above the calculated value. The point-source assumption and the reading of the half-value thickness from the table are also approximate. Therefore the working time should be chosen shorter than the calculated one, for example half of it, and the dose should be monitored with a dosimeter.
+**Reasonableness:** Behind the wall at a distance of $1.0\,\text{m}$ the dose rate would be $240 \cdot \left(\tfrac{1}{2}\right)^{2.5} = 42.4\,\mu\text{Sv/h}$, which lies between the table values $60.5$ and $29.8\,\mu\text{Sv/h}$, just as $10\,\text{cm}$ lies between the thicknesses $8.0\,\text{cm}$ and $12.0\,\text{cm}$. The distance $2.0\,\text{m}$ reduces it to a quarter, that is, to $10.6\,\mu\text{Sv/h}$, and $2.4\,\text{h} \cdot 10.6\,\mu\text{Sv/h} \approx 25\,\mu\text{Sv}$.

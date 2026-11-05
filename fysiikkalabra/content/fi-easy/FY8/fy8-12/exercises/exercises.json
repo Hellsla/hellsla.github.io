@@ -39,6 +39,74 @@
       "answer": 98.4,
       "unit": "nm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-12-L1-06",
+      "level": 1,
+      "text": "Alfa- ja beetasäteilyn läpäisykykyä verrataan GM-putkella. Mikä seuraavista suojista pysäyttää alfasäteilyn mutta päästää osan beetasäteilystä läpi? Miksi?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Paperiarkki, koska alfahiukkanen ionisoi tiheästi ja pysähtyy ohueen kerrokseen, mutta beetahiukkanen ionisoi harvemmin.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Alumiinilevy, koska kevyt alumiini pysäyttää raskaan alfahiukkasen mutta ei beetahiukkasta, jonka massa on hyvin pieni.",
+          "feedback": "Muutaman millimetrin alumiinilevy pysäyttää molemmat. Beetahiukkanen on kevyt, mutta se menettää energiansa ionisoimalla. Muutaman millimetrin alumiinikerros riittää sen pysäyttämiseen."
+        },
+        {
+          "text": "Paperiarkki, koska alfahiukkanen ionisoi tiheästi ja pysähtyy ohueen kerrokseen, mutta beetahiukkanen ionisoi harvemmin.",
+          "correct": true,
+          "feedback": "Oikein. Alfahiukkanen luovuttaa energiansa lyhyellä matkalla, joten ohut paperiarkki pysäyttää sen. Beetahiukkanen ionisoi harvemmin, joten sen kantama eli matka, jonka se kulkee, on pidempi. Osa beetahiukkasista läpäisee paperin."
+        },
+        {
+          "text": "Lyijylevy, koska tiheä lyijy pysäyttää hitaat hiukkaset mutta päästää beetahiukkaset läpi, koska ne etenevät lähes valonnopeudella.",
+          "feedback": "Lyijylevy pysäyttää sekä alfa- että beetahiukkaset. Suuri nopeus ei estä hiukkasta ionisoimasta ja menettämästä energiaansa. Myös beetahiukkasella on kantama."
+        },
+        {
+          "text": "Betoniseinä, koska betoni hylkii positiivisesti varautunutta alfahiukkasta mutta ei negatiivisesti varautunutta beetahiukkasta.",
+          "feedback": "Pysäyttäminen ei perustu hylkimiseen. Hiukkaset menettävät energiansa, kun ne ionisoivat ainetta. Paksu betoniseinä pysäyttää sekä alfa- että beetahiukkaset."
+        }
+      ]
+    },
+    {
+      "id": "fy8-12-L1-07",
+      "level": 1,
+      "text": "Opiskelija mittaa gammalähteen säteilyä GM-mittarilla $45\\,\\text{s}$:n ajan ja saa $1215$ pulssia. Taustasäteily on mitattu aiemmin. Se aiheuttaa mittarissa $90$ pulssia minuutissa. Kuinka monta pulssia minuutissa lähteen säteily aiheuttaa? Anna vastaus yksikössä $\\tfrac{1}{\\text{min}}$.",
+      "answer": 1530,
+      "unit": "1/min",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-12-L1-08",
+      "level": 1,
+      "text": "Alfasäteilijää sisältävä esine on ihon ulkopuolella melko vaaraton. Alfasäteilijän nieleminen tai hengittäminen on kuitenkin vaarallista. Mikä selittää eron?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Ulkopuolella iho pysäyttää hiukkaset, mutta sisällä alfahiukkanen luovuttaa energiansa muutaman solun matkalle ionisoimalla.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Elimistön sisällä solujen sähkökenttä kiihdyttää alfahiukkaset nopeammiksi kuin ilmassa, ja siksi ne läpäisevät kudoksen helposti.",
+          "feedback": "Solujen sähkökenttä ei kiihdytä alfahiukkasia. Alfahiukkanen menettää energiaansa kudoksessa ionisoimalla ja pysähtyy muutaman solun matkalla. Se ei siis läpäise kudosta."
+        },
+        {
+          "text": "Ulkopuolella iho pysäyttää hiukkaset, mutta sisällä alfahiukkanen luovuttaa energiansa muutaman solun matkalle ionisoimalla.",
+          "correct": true,
+          "feedback": "Oikein. Alfahiukkasen kantama on muutaman senttimetrin ilmassa ja vain kymmeniä mikrometrejä kudoksessa. Ulkopuolella se ei yllä elävään kudokseen. Sisällä kaikki energia menee lähimmille soluille."
+        },
+        {
+          "text": "Ulkopuolella alfahiukkaset ovat sähköisesti neutraaleja, mutta elimistön vesi antaa niille varauksen, jolloin ne alkavat ionisoida.",
+          "feedback": "Alfahiukkanen on aina varauksellinen, ja se ionisoi jo ilmassa. Ero johtuu kantamasta. Iho pysäyttää hiukkaset ennen elävää kudosta, mutta sisällä ne ovat jo kudoksessa."
+        },
+        {
+          "text": "Elimistön sisällä alfasäteily muuttuu gammasäteilyksi, joka läpäisee kudoksen ja ionisoi solut tehokkaammin kuin alfahiukkaset.",
+          "feedback": "Alfasäteily ei muutu kudoksessa gammasäteilyksi. Gammasäteily läpäisee kudoksen helpommin ja luovuttaa energiaansa harvemmin. Vaara johtuu juuri alfahiukkasten tiheästä ionisaatiosta."
+        }
+      ]
     }
   ],
   "level2": [
@@ -73,6 +141,143 @@
       "answer": 70.9,
       "unit": "mm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-12-L2-05",
+      "level": 2,
+      "text": "Heikon gammalähteen säteilyä laskettiin GM-mittarilla kymmenen kertaa peräkkäin $10\\,\\text{s}$:n jaksoissa. Etäisyys oli joka kerta sama (taulukko, esimerkkiaineisto). Pulssien lukumäärän $N$ satunnaisvaihtelun suuruusluokka on $\\sqrt{N}$.\n\na) Laske pulssimäärän keskiarvo $10\\,\\text{s}$:n jaksoa kohti.\n\nb) Laske $\\sqrt{N}$ keskiarvon avulla. Vertaa sitä siihen, miten taulukon lukemat vaihtelevat keskiarvon ympärillä.\n\nc) Laske kaikkien kymmenen jakson pulssien kokonaismäärä $N_\\text{kok}$. Laske sen suhteellinen epävarmuus $\\tfrac{\\sqrt{N_\\text{kok}}}{N_\\text{kok}}$ prosentteina.\n\nVastaa laatikkoon kohdan c) suhteellinen epävarmuus prosentteina.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 4.5,
+      "unit": "%",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "GM-mittarin pulssimäärä $10\\,\\text{s}$:n jaksoissa (esimerkkiaineisto)",
+        "columns": [
+          "Jakso",
+          "Pulssit"
+        ],
+        "rows": [
+          [
+            "1",
+            "52"
+          ],
+          [
+            "2",
+            "45"
+          ],
+          [
+            "3",
+            "49"
+          ],
+          [
+            "4",
+            "57"
+          ],
+          [
+            "5",
+            "44"
+          ],
+          [
+            "6",
+            "48"
+          ],
+          [
+            "7",
+            "51"
+          ],
+          [
+            "8",
+            "42"
+          ],
+          [
+            "9",
+            "50"
+          ],
+          [
+            "10",
+            "46"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-12-L2-06",
+      "level": 2,
+      "text": "Opiskelija tutkii, kuinka hyvin lyijy vaimentaa cesium-137:n gammasäteilyä. Hän asettaa lähteen ja GM-putken väliin lyijylevyjä ja laskee pulssit $60\\,\\text{s}$:n ajan (taulukko, esimerkkiaineisto). Taustasäteily on $50$ pulssia $60\\,\\text{s}$:ssa.\n\na) Vähennä taustasäteily ja laske nettopulssimäärät. Nettopulssimäärä on pulssimäärä, josta tausta on vähennetty.\n\nb) Piirrä paperille nettopulssimäärä lyijyn paksuuden funktiona. Lue kuvaajasta paksuus, jolla nettopulssimäärä on puolittunut alkuperäisestä.\n\nc) Laske puoliintumispaksuus jokaisesta mittauksesta paksuuksilla $3$–$15\\,\\text{mm}$ kaavalla $d_{1/2} = \\dfrac{d \\cdot \\ln 2}{\\ln \\tfrac{N_0 - N_\\text{t}}{N - N_\\text{t}}}$. Ota niiden keskiarvo. Tässä $N_0$ on pulssimäärä ilman lyijyä, $N$ on pulssimäärä lyijyn takana ja $N_\\text{t}$ on taustasäteilyn pulssimäärä.\n\nVastaa laatikkoon kohdan c) keskiarvo millimetreinä.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 5.5,
+      "unit": "mm",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "GM-mittarin pulssit $60\\,\\text{s}$:ssa lyijyn takana (esimerkkiaineisto)",
+        "columns": [
+          "$d\\,(\\text{mm})$",
+          "Pulssit"
+        ],
+        "rows": [
+          [
+            "0",
+            "1850"
+          ],
+          [
+            "3",
+            "1290"
+          ],
+          [
+            "6",
+            "890"
+          ],
+          [
+            "9",
+            "640"
+          ],
+          [
+            "12",
+            "440"
+          ],
+          [
+            "15",
+            "315"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-12-L2-07",
+      "level": 2,
+      "text": "Opiskelijalla on tuntematon radioaktiivinen lähde. Se lähettää joko beeta- tai gammasäteilyä. Käytössä on GM-mittari, paperiarkki, $3\\,\\text{mm}$:n alumiinilevy ja $2\\,\\text{cm}$:n lyijylevy. Millä mittauksella lajin voi erottaa luotettavimmin?",
+      "kind": [
+        "experiment",
+        "concept"
+      ],
+      "answer": "Verrataan nettopulssimäärää $3\\,\\text{mm}$:n alumiinilevyn kanssa ja ilman sitä: jos se putoaa lähes nollaan, lähde on beeta, koska beetahiukkasella on kantama.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Verrataan nettopulssimäärää $3\\,\\text{mm}$:n alumiinilevyn kanssa ja ilman sitä: jos se putoaa lähes nollaan, lähde on beeta, koska beetahiukkasella on kantama.",
+          "correct": true,
+          "feedback": "Oikein. Beetahiukkasilla on kantama, joten muutaman millimetrin alumiini pysäyttää ne. Gammasäteily vaimenisi alumiinissa vain vähän, koska sen puoliintumispaksuus on kymmeniä millimetrejä."
+        },
+        {
+          "text": "Verrataan nettopulssimäärää paperiarkin kanssa ja ilman sitä: jos se putoaa, lähde on beeta, koska paperi pysäyttää beetahiukkaset mutta päästää gammafotonit läpi.",
+          "feedback": "Paperiarkki pysäyttää alfahiukkaset, mutta beetahiukkaset läpäisevät sen. Pulssimäärä ei siis putoa paperin takana, vaikka lähde olisi beeta. Mittaus ei erota lajeja."
+        },
+        {
+          "text": "Mitataan pulssit $2\\,\\text{cm}$:n lyijylevyn takana: lyijy pysäyttää gammasäteilyn kokonaan mutta päästää beetahiukkaset läpi, joten jäljelle jäävä säteily on beetaa.",
+          "feedback": "Lyijy pysäyttää beetahiukkaset helposti. Gammasäteily taas ei pysähdy koskaan kokonaan. Se vaimenee vähitellen puoliintumispaksuuden kerroksissa. Päättely on siis väärin päin."
+        },
+        {
+          "text": "Verrataan pulssien korkeutta: GM-putken pulssi on beetahiukkasella pienempi ja gammafotonilla suurempi, joten pulssin korkeus kertoo lajin.",
+          "feedback": "GM-putken pulssi on joka tapauksessa saman kokoinen, koska elektronivyöry ei riipu säteilylajista. Putki laskee tapahtumat mutta ei erota säteilylajeja."
+        }
+      ]
     }
   ],
   "level3": [
@@ -99,6 +304,100 @@
       "answer": 1.24,
       "unit": "· 10⁶",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-12-L3-04",
+      "level": 3,
+      "text": "Laboratorion cesium-137-lähteen ($662\\,\\text{keV}$:n gammasäteily) ja GM-putken väliin asetetaan levyjä. Levyt on tehty tuntemattomasta aineesta. Taulukossa on pulssit $60\\,\\text{s}$:n ajalta eri kokonaispaksuuksilla (esimerkkiaineisto). Taustasäteily on $40$ pulssia $60\\,\\text{s}$:ssa.\n\nCesium-137:n gammasäteilyn puoliintumispaksuuksia: lyijy $5{,}5\\,\\text{mm}$, rauta $12\\,\\text{mm}$, alumiini $34\\,\\text{mm}$, betoni $39\\,\\text{mm}$ ja vesi $81\\,\\text{mm}$.\n\na) Vähennä taustasäteily. Perustele nettopulssimääristä, että säteily vaimenee kuten gammasäteily eikä kuten beetasäteily.\n\nb) Laske puoliintumispaksuus jokaisesta mittauksesta paksuuksilla $6$–$30\\,\\text{mm}$ ja ota niiden keskiarvo. Päättele taulukon avulla, mistä aineesta levyt ovat.\n\nc) Kuinka paksu levy tarvittaisiin pudottamaan nettopulssimäärä yhteen prosenttiin alkuperäisestä?\n\nd) Perustele, miksi paksuimman levyn mittaus on suhteellisesti epävarmin. Kerro, miten sitä voi parantaa.\n\nVastaa laatikkoon kohdan b) puoliintumispaksuuden keskiarvo millimetreinä.",
+      "kind": [
+        "data",
+        "reasoning",
+        "model"
+      ],
+      "answer": 12.0,
+      "unit": "mm",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "GM-mittarin pulssit $60\\,\\text{s}$:ssa levyjen takana (esimerkkiaineisto)",
+        "columns": [
+          "$d\\,(\\text{mm})$",
+          "Pulssit"
+        ],
+        "rows": [
+          [
+            "0",
+            "2640"
+          ],
+          [
+            "6",
+            "1895"
+          ],
+          [
+            "12",
+            "1330"
+          ],
+          [
+            "18",
+            "950"
+          ],
+          [
+            "24",
+            "685"
+          ],
+          [
+            "30",
+            "495"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-12-L3-05",
+      "level": 3,
+      "text": "Cesium-137-lähde on lyijysäiliössä. Säiliön seinä on $8{,}0\\,\\text{mm}$ paksu. GM-putki on säiliön ulkopuolella. Se vastaanottaa osuuden $1{,}5\\,\\%$ lähteestä kaikkiin suuntiin lähtevästä säteilystä (geometrinen hyötysuhde). Opiskelija laski pulssit viiden peräkkäisen $60\\,\\text{s}$:n jakson ajan lähteen kanssa. Hän laski pulssit myös viiden jakson ajan ilman lähdettä (taulukko, esimerkkiaineisto).\n\nOleta yksinkertaisuuden vuoksi seuraavaa. Jokainen hajoaminen lähettää yhden gammafotonin. Jokainen putkeen osuva fotoni tuottaa pulssin. Lyijyn puoliintumispaksuus on $5{,}5\\,\\text{mm}$ (kapea säde).\n\na) Laske lähteen aiheuttama nettopulssitaajuus $R$ yksikössä $\\tfrac{1}{\\text{s}}$.\n\nb) Kuinka suuri osuus lähteestä lähtevistä fotoneista läpäisee säiliön seinän?\n\nc) Laske lähteen aktiivisuus $A$ kilobecquereleina.\n\nd) Onko todellinen aktiivisuus suurempi vai pienempi kuin kohdassa c)? Perustele kahdella tehdyllä oletuksella.\n\nVastaa laatikkoon kohdan c) aktiivisuus kilobecquereleina.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 3.0,
+      "unit": "kBq",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "GM-mittarin pulssit $60\\,\\text{s}$:n jaksoissa (esimerkkiaineisto)",
+        "columns": [
+          "Jakso",
+          "Lähde",
+          "Tausta"
+        ],
+        "rows": [
+          [
+            "1",
+            "1010",
+            "24"
+          ],
+          [
+            "2",
+            "987",
+            "29"
+          ],
+          [
+            "3",
+            "1032",
+            "22"
+          ],
+          [
+            "4",
+            "1001",
+            "27"
+          ],
+          [
+            "5",
+            "1020",
+            "28"
+          ]
+        ]
+      }
     }
   ]
 }

@@ -1,20 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 272945607465e323
+CONTENT-HASH: abd49d96b1b5b3bc
+Mode: delta
 
 ## Blocking
 (none)
 
 ## Polish
-- exercises.json fy8-3-L2-01 and L2-02 — answers (434 nm for 5→2; 410 nm ↔ n = 6) are printed in the lesson and appear in experiment 1's table, so they are recall; use a new line (e.g. 7→2, 397 nm) for one of them.
-- exercises.json L1-03, L1-05, L2-04, L2-03, L3-02 — constants are in parentheses inside the question sentence; put the data first and the question last as its own sentence ("Käytä arvoja … Kuinka suuri on …?").
-- exercises.json L3-03 — asks a yes/no and a number; only the number is graded. Phrase as one question or keep "Riittääkö…" as a first sentence and the numeric as the last.
-- solutions.md L1-02 "Tulos pyöristetään yhteen desimaaliin kuten arvo 13,6 eV" — add "12,75 → 12,8" so the rounding of the 5 is visible to an S2 reader.
-- solutions.md Periaate lines are one to three short sentences and explain rather than name; L3-01 Periaate is long (assumption + path counting): split into two bullets-as-sentences.
+- None new. (Same optional items as the Finnish report on L1-07, L1-08, L3-04 apply to the shared task design.)
 
 ## Checked
-- Levels 5/4/3 as the rubric; L1 one formula, L2 combines levels and wavelength or a graph, L3 new situations (electron impact, He+, photon chain).
-- Every solution keeps all eight headings (Annettu … Järkevyys); no step skipped relative to the source.
-- Numerics recomputed: -0,85; 12,75; 2,55; 1,51; 457 THz; 434 nm; n = 6; 620 nm; 1,9 eV; 3 lines; 469 nm; 6,8 eV.
-- L2-03 figure description (levels −8,0/−5,0/−3,0/−2,0 eV, 1 eV grid) gives data, not the answer; solution has "Kuvaajan lukeminen".
-- Finnish plain and correct: "virittyneet atomit", "Anna vastaus etumerkkeineen", case after unit ("12,5 eV:n").
-- New terms in tasks (kvantittunut, tasopari) are explained in the lesson or in the task itself.
+- Delta (41862d574): answers.py now fits with hand-written _polyfit1; L2-05 gives slope -3,289e15 Hz, E_ion 13,6025 eV (same as the numpy value, answer 13,6 eV, tolerance 0,03). No numpy import remains in the path.
+- check_solutions.py fy8-3 ok; answers_shown.py: all 4374 shown answers agree. All 19 numeric json answers within their 2 % tolerance of the code values (L1-07 121,57, L1-08 2,55, L2-06 3, L2-07 13,056, L3-04 365,3, L3-05 97,25).
+- Nothing else in the set changed since the PASS; counts 8/7/5 unchanged.

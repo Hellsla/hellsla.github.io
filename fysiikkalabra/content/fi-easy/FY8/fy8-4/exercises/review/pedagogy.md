@@ -1,12 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 3368be04849a1804
+CONTENT-HASH: 606a681d63f9ae65
+Mode: delta
+Round: 1
 
 ## Blocking
 
+## Fixed
+- exercises.json (L3-04 e) and solutions.md (L3-04 Vastaus): "kulkee tunnetusti" was hard to read in plain Finnish; now "kulkee vain toisen raon kautta ja sen voi tietää".
+
 ## Polish
-1. solutions.md:89 (fy8-4-L2-04, Järkevyys) — "Tällainen valo on silmälle näkymättömän heikkoa" pitää paikkansa vain tavallisessa valaistuksessa (pimeään tottunut silmä erottaa noin tuhat fotonia sekunnissa); sama huomio tiederaportissa. Parempi: "Tällainen valo on niin heikkoa, ettei sitä tavallisessa valaistuksessa näe."
 
 ## Checked
-- Muutos (L2-04, Järkevyys): yhdyssana "miljoonasosamiljardisosa" on korvattu S2-lukijalle helpolla virkkeellä "Teho on äärimmäisen pieni, yli satatuhatta kertaa pienempi kuin yksi miljardisosa wattia." Kielioppi oikein, vertailu pitää (10⁻⁹ W / 8,67·10⁻¹⁵ W ≈ 1,2·10⁵), edellisen kierroksen hiomisehdotus 1 on hoidettu.
-- Ratkaisun rakenne säilyy: Annettu–Kysytty–Periaate–Kaava–Muunnokset–Sijoitus–Vastaus–Järkevyys, ja tarkistus toisin päin on yhä riippumaton laskusta.
-- Muuta ei muuttunut; hash 3368be04849a1804 alussa ja lopussa sama.
+- Same task structure as fi: situation first, question as its own sentence, answer-box instruction last.
+- Choice feedback explains why each wrong option fails; correct feedback confirms the reason.
+- Selkosuomi: short sentences, common words; each wrong-option feedback is split into short sentences.
+- Solutions can be followed step by step; principle explained in each.
+- Level 1 tasks 06..08, level 2 tasks 05..07 and level 3 tasks 04..05 keep the Finnish level and kind tags.

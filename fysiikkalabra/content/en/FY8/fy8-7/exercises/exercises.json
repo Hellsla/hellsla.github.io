@@ -39,6 +39,74 @@
       "answer": 1.5,
       "unit": "mW",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-7-L1-06",
+      "level": 1,
+      "text": "An excited atom can emit a photon in two ways: spontaneously or by stimulated emission. What distinguishes stimulated emission from spontaneous emission?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "In stimulated emission the new photon leaves in the same direction and in the same phase as the photon that caused it; in spontaneous emission the direction is random.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "In spontaneous emission the atom first absorbs a photon and then emits it again; in stimulated emission the atom emits a photon without any external cause.",
+          "feedback": "It is the other way round: in spontaneous emission the atom emits a photon on its own, without anything hitting it. In stimulated emission the emission of the photon is triggered by a photon hitting the atom."
+        },
+        {
+          "text": "In stimulated emission the atom rises to a higher level and in spontaneous emission it drops to a lower one, so the energy of the atom changes in opposite directions.",
+          "feedback": "In both events an excited atom drops from the upper level to the lower and emits a photon, so the energy of the atom decreases in both. Rising to the upper level is absorption."
+        },
+        {
+          "text": "In stimulated emission the new photon leaves in the same direction and in the same phase as the photon that caused it; in spontaneous emission the direction is random.",
+          "feedback": "Correct: in stimulated emission the incoming photon makes the atom emit a photon with the same energy, direction and phase. In spontaneous emission the atom emits the photon on its own and the direction is random.",
+          "correct": true
+        },
+        {
+          "text": "The energy of the photon produced in stimulated emission is greater than in spontaneous emission, because the energy of the incoming photon is added to it.",
+          "feedback": "The energy of the photon produced is the difference of the levels $E_2 - E_1$ in both cases. The incoming photon does not give its energy to the new photon but continues on its way as it is."
+        }
+      ]
+    },
+    {
+      "id": "fy8-7-L1-07",
+      "level": 1,
+      "text": "The power of a green laser pointer is $5.0\\,\\text{mW}$ and the wavelength of the light is $532\\,\\text{nm}$. How many photons per second does the pointer emit ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$)?",
+      "answer": 1.34e+16,
+      "unit": "1/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-7-L1-08",
+      "level": 1,
+      "text": "A laser medium has two laser levels, the upper one $E_2$ and the lower one $E_1$. What does population inversion mean?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "There are more atoms on the upper laser level than on the lower, so more stimulated emissions than absorptions take place.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Almost all the atoms of the laser medium are on the lower level, so every incoming photon is absorbed and no stimulated emission occurs.",
+          "feedback": "This is the ordinary state without pumping, not an inversion. Then the light is attenuated, because absorption wins over stimulated emission. In an inversion the situation is the opposite."
+        },
+        {
+          "text": "There are more atoms on the upper laser level than on the lower, so more stimulated emissions than absorptions take place.",
+          "feedback": "Correct: when $N_2 > N_1$, an incoming photon hits an excited atom more often than an atom in the ground state. Then more photons are produced than are absorbed, and the light is amplified.",
+          "correct": true
+        },
+        {
+          "text": "The atoms emit photons equally in all directions, so the light does not become directed anywhere and its intensity stays constant.",
+          "feedback": "This describes spontaneous emission, where the directions are random. Population inversion concerns how the atoms are distributed among the levels, not the directions of photons, and it makes the amplification of light possible."
+        },
+        {
+          "text": "The lower laser level has a higher energy than the upper, so the atoms drop upwards on their own and emit photons.",
+          "feedback": "An atom cannot drop upwards. The upper level is by definition the higher one, and an inversion only means that more atoms have been pumped to it than are on the lower level."
+        }
+      ]
     }
   ],
   "level2": [
@@ -73,6 +141,120 @@
       "answer": 5.0,
       "unit": "MW",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-7-L2-05",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "Example data: the diameter $d$ of quantum dots made of the same semiconductor has been measured with an electron microscope, and the wavelength $\\lambda$ of the light they emit with a spectrometer. The table has the results for five dots.\n\nAssume that the energy of the photon is equal to the energy gap of the dot.\n\na) Calculate the energy of the photon of each dot in electronvolts ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$).\n\nb) On the basis of the table, deduce how the energy gap depends on the size of the dot. Is the energy gap directly proportional to the size of the dot?\n\nc) How much greater is the energy gap of the smallest dot than that of the largest dot?\n\nEnter the result of part c) in the answer box.",
+      "answer": 0.54,
+      "unit": "eV",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Size of quantum dots and wavelength of light",
+        "columns": [
+          "$d\\,(\\text{nm})$",
+          "$\\lambda\\,(\\text{nm})$"
+        ],
+        "rows": [
+          [
+            "2.0",
+            "486"
+          ],
+          [
+            "3.0",
+            "529"
+          ],
+          [
+            "4.0",
+            "573"
+          ],
+          [
+            "5.0",
+            "601"
+          ],
+          [
+            "6.0",
+            "617"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-7-L2-06",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "Example data: the data of the laser diodes of a research laboratory are in the table. Each diode emits one wavelength.\n\na) Calculate the number of photons emitted per second by each diode ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$).\n\nb) Arrange the diodes in order of photon flux from the greatest to the smallest and explain why the order is different from the order of the powers.\n\nc) How many times greater is the photon flux of the diode with the greatest photon flux than that of the diode with the smallest photon flux?\n\nEnter the result of part c) in the answer box.",
+      "answer": 1.3,
+      "unit": "",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Wavelength and power of laser diodes",
+        "columns": [
+          "Diode",
+          "$\\lambda\\,(\\text{nm})$",
+          "$P\\,(\\text{mW})$"
+        ],
+        "rows": [
+          [
+            "A",
+            "405",
+            "10"
+          ],
+          [
+            "B",
+            "520",
+            "6.0"
+          ],
+          [
+            "C",
+            "650",
+            "5.0"
+          ],
+          [
+            "D",
+            "980",
+            "4.0"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-7-L2-07",
+      "level": 2,
+      "text": "A student claims: “After stimulated emission in a laser there are two photons, although before there was only one. So the laser increases the energy of the light out of nothing.” What is wrong in the student’s reasoning?",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "answer": "The energy of the new photon comes from the excited atom, which drops to a lower level, so energy is not created out of nothing but is transferred from the atom to the light.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "In stimulated emission the incoming photon splits into two photons, each with half of the original energy, so no energy is added.",
+          "feedback": "The incoming photon does not split. Both photons have the full energy $E_2 - E_1$, so the total energy of the photons is doubled, and the extra energy comes from the atom."
+        },
+        {
+          "text": "The total energy of the two photons is greater, but the mirrors attenuate the light so much that the energy coming out of the laser is always smaller.",
+          "feedback": "The mirrors are not the explanation for the increase of energy: the error is already in thinking that energy is created out of nothing. The source of the energy is the excitation of the atoms, and the energy coming out of the laser is at most the amount of the energy pumped in."
+        },
+        {
+          "text": "The number of photons cannot increase, because light is wave motion and does not consist of photons, so the claim about two photons is only imagination.",
+          "feedback": "The interaction of light with matter is quantised, and the number of photons can increase: in stimulated emission a new photon is produced. The error is not in the increase of the number of photons but in where the energy comes from."
+        },
+        {
+          "text": "The energy of the new photon comes from the excited atom, which drops to a lower level, so energy is not created out of nothing but is transferred from the atom to the light.",
+          "feedback": "Correct: there are more photons, but their energy comes from the atoms excited by pumping. The energy of the atom decreases by exactly the energy of the new photon, so the total energy is conserved.",
+          "correct": true
+        }
+      ]
     }
   ],
   "level3": [
@@ -99,6 +281,69 @@
       "answer": 92200.0,
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-7-L3-04",
+      "level": 3,
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "text": "Example data: a fibre laser is pumped with laser diodes whose light has the wavelength $976\\,\\text{nm}$ and whose total power is $20.0\\,\\text{W}$. The laser emits light with the wavelength $1070\\,\\text{nm}$ and its output power is $15.0\\,\\text{W}$.\n\nAssume that all the pump light is absorbed in the medium and that the part of the pump energy that does not leave as laser light turns into heat.\n\nThe quantum efficiency $\\eta_\\text{q}$ is defined as the ratio of the number of laser photons to the number of pump photons in the same time ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$).\n\na) Calculate the numbers of pump photons and laser photons per second.\n\nb) Calculate the quantum efficiency as a percentage.\n\nc) Calculate the thermal power turning into heat in the medium per second and the part of it that is produced because the energy of a laser photon is smaller than that of a pump photon.\n\nd) Using the calculated numbers, justify why the energy efficiency of the laser is smaller than the quantum efficiency.\n\nEnter the result of part b) in the answer box.",
+      "answer": 82.2,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-7-L3-05",
+      "level": 3,
+      "kind": [
+        "data",
+        "graph",
+        "experiment",
+        "model"
+      ],
+      "text": "Example data: a neodymium laser is pumped with a laser diode whose light has the wavelength $808\\,\\text{nm}$. The laser emits light with the wavelength $1064\\,\\text{nm}$. The table has the output power $P_\\text{L}$ of the laser when the pump power $P_\\text{p}$ has been set to different values ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$).\n\na) Draw a graph of the measurement points with $P_\\text{p}$ on the horizontal axis and $P_\\text{L}$ on the vertical axis, and fit a straight line to the points where $P_\\text{p} \\ge 30\\,\\text{mW}$ (the first two points are below the threshold). Determine the intersection of the line with the horizontal axis, that is, the threshold power.\n\nb) Determine the slope $\\dfrac{\\Delta P_\\text{L}}{\\Delta P_\\text{p}}$ of the line.\n\nc) How many laser photons are produced above the threshold for each additional pump photon? Calculate it using the slope and the wavelengths.\n\nd) Explain why the laser does not give significant light at pump powers below the threshold power, although there is pumping.\n\nEnter the result of part c) in the answer box.",
+      "answer": 0.524,
+      "unit": "",
+      "tolerance": 0.06,
+      "data": {
+        "caption": "Output power of the laser as a function of pump power",
+        "columns": [
+          "$P_\\text{p}\\,(\\text{mW})$",
+          "$P_\\text{L}\\,(\\text{mW})$"
+        ],
+        "rows": [
+          [
+            "10",
+            "0.0"
+          ],
+          [
+            "20",
+            "0.1"
+          ],
+          [
+            "30",
+            "2.1"
+          ],
+          [
+            "40",
+            "6.1"
+          ],
+          [
+            "50",
+            "10.0"
+          ],
+          [
+            "60",
+            "13.9"
+          ],
+          [
+            "70",
+            "18.1"
+          ]
+        ]
+      }
     }
   ]
 }

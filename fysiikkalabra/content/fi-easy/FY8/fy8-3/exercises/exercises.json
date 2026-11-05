@@ -39,6 +39,55 @@
       "answer": 457,
       "unit": "THz",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-3-L1-06",
+      "level": 1,
+      "text": "Vetyatomin energiatasot ovat $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$. Tarkastellaan neljää siirtymää: $5 \\to 4$, $3 \\to 2$, $2 \\to 1$ ja $4 \\to 1$. Lukupari kertoo lähtötason ja päätason. Mikä siirtymä lähettää fotonin, jonka aallonpituus on lyhin?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "$4 \\to 1$, koska energiaero on suurin, ja suuri fotonin energia tarkoittaa lyhyttä aallonpituutta.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "$5 \\to 4$, koska lähtötaso on korkein, ja mitä ylempää elektroni tulee, sitä suurempi on energiaero.",
+          "feedback": "Fotonin energia on tasojen energioiden erotus. Lähtötason korkeus ei ratkaise. Ylhäällä tasot ovat tiheässä lähellä nollaa. Siksi erotus $E_5 - E_4$ on vain noin $0{,}31\\,\\text{eV}$ ja aallonpituus on pitkä, noin $4000\\,\\text{nm}$."
+        },
+        {
+          "text": "$3 \\to 2$, koska se tuottaa näkyvää valoa, ja näkyvä valo on aallonpituudeltaan kaikkein lyhintä.",
+          "feedback": "Näkyvä valo ei ole lyhytaaltoisinta. Ultraviolettisäteilyn aallonpituus on lyhyempi kuin näkyvän valon. Siirtymän $3 \\to 2$ fotonin energia on vain noin $1{,}89\\,\\text{eV}$ ja aallonpituus $656\\,\\text{nm}$. Perustilaan päättyvät siirtymät ovat ultraviolettia."
+        },
+        {
+          "text": "$4 \\to 1$, koska energiaero on suurin, ja suuri fotonin energia tarkoittaa lyhyttä aallonpituutta.",
+          "feedback": "Oikein. Fotonin energia on tasojen erotus, ja aallonpituus on kääntäen verrannollinen energiaan. Erotus $E_4 - E_1 = 12{,}75\\,\\text{eV}$ on neljästä suurin. Siksi aallonpituus $97{,}3\\,\\text{nm}$ on lyhin.",
+          "correct": true
+        },
+        {
+          "text": "$2 \\to 1$, koska perustilaan päättyvä siirtymä on aina suurin hyppy ja antaa suurimman energian.",
+          "feedback": "Perustilaan päättyviä siirtymiä on monta. Niistä suurin energiaero tulee korkeammalta lähtötasolta. Erotus $E_2 - E_1 = 10{,}2\\,\\text{eV}$ on pienempi kuin $E_4 - E_1 = 12{,}75\\,\\text{eV}$. Siksi $2 \\to 1$ antaa pidemmän aallonpituuden."
+        }
+      ]
+    },
+    {
+      "id": "fy8-3-L1-07",
+      "level": 1,
+      "text": "Vetyatomin siirtymät, jotka päättyvät perustilaan $n = 1$, muodostavat Lymanin sarjan. Vetyatomin energiatasot ovat $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$. Laske sarjan pisin aallonpituus nanometreinä ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "answer": 122,
+      "unit": "nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-3-L1-08",
+      "level": 1,
+      "text": "Vetyatomin energiatasot ovat $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$. Vetyatomi on tasolla $n = 2$. Se absorboi fotonin ja virittyy tasolle $n = 4$. Kuinka suuri on absorboituneen fotonin energia elektronivoltteina?",
+      "answer": 2.55,
+      "unit": "eV",
+      "tolerance": 0.02,
+      "kind": [
+        "data"
+      ]
     }
   ],
   "level2": [
@@ -74,6 +123,97 @@
       "answer": 1.9,
       "unit": "eV",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy8-3-L2-05",
+      "level": 2,
+      "text": "Taulukossa on neljä vedyn Balmerin sarjan viivaa. Jokainen viiva syntyy siirtymässä tasolta $n$ tasolle $2$. Aallonpituuksien epävarmuus on $\\pm 0{,}5\\,\\text{nm}$. Merkitään vedyn ionisaatioenergiaa perustilasta $E_\\text{ion}$. Silloin $E_n = -\\tfrac{E_\\text{ion}}{n^2}$ ja fotonin taajuudelle pätee $f = \\tfrac{E_n - E_2}{h}$.\n\na) Laske viivojen taajuudet $f = \\tfrac{c}{\\lambda}$. Piirrä pisteistä kuvaaja, jossa $f$ on $\\tfrac{1}{n^2}$:n funktio. Sovita pisteisiin suora.\n\nb) Määritä sovitetun suoran kulmakerroin. Päättele sen avulla ionisaatioenergia $E_\\text{ion}$ elektronivoltteina. Perustele, miksi pisteiden pitäisi asettua suoralle.\n\nVastaa laatikkoon kohdan b) tulos elektronivoltteina ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 13.6,
+      "unit": "eV",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Vedyn Balmerin viivat (esimerkkiaineisto)",
+        "columns": [
+          "$n$",
+          "$\\lambda\\,(\\text{nm})$"
+        ],
+        "rows": [
+          [
+            "3",
+            "656.7"
+          ],
+          [
+            "4",
+            "486.1"
+          ],
+          [
+            "5",
+            "434.5"
+          ],
+          [
+            "6",
+            "410.2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-3-L2-06",
+      "level": 2,
+      "text": "Kuvassa on kuvitteellisen atomin energiatasokaavio. Atomi on perustilassa $E_1$. Atomiin lähetetään viisi fotonia, joilla on eri aallonpituus. Taulukossa on fotonien aallonpituudet. Atomi absorboi fotonin vain, jos fotonin energia vastaa perustilan ja jonkin ylemmän tason energioiden erotusta ($\\pm 0{,}05\\,\\text{eV}$). Kuinka monta taulukon fotonia atomi absorboi?\n\nLaske fotonien energiat ja vertaa niitä kaaviosta luettuihin energiaeroihin. Vastaa laatikkoon absorboituvien fotonien lukumäärä ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "figure": "fy8-3/levels-task",
+      "kind": [
+        "data",
+        "graph",
+        "reasoning"
+      ],
+      "answer": 3,
+      "unit": "",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Atomiin lähetetyt fotonit (esimerkkiaineisto)",
+        "columns": [
+          "Fotoni",
+          "$\\lambda\\,(\\text{nm})$"
+        ],
+        "rows": [
+          [
+            "A",
+            "300"
+          ],
+          [
+            "B",
+            "413"
+          ],
+          [
+            "C",
+            "500"
+          ],
+          [
+            "D",
+            "207"
+          ],
+          [
+            "E",
+            "248"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-3-L2-07",
+      "level": 2,
+      "text": "Oppilas ratkaisee tehtävän: ”Vetyatomin elektroni siirtyy tasolta $n = 5$ perustilaan. Radalla $n = 5$ elektroni on $5^2 = 25$ kertaa kauempana ytimestä kuin perustilassa. Siksi syntyvän fotonin energia on $25$ kertaa perustilan ionisaatioenergia $13{,}6\\,\\text{eV}$ eli $340\\,\\text{eV}$.” Vetyatomin energiatasot ovat $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$.\n\na) Selitä, mikä oppilaan päättelyssä on virheellistä.\n\nb) Laske fotonin energia oikein.\n\nVastaa laatikkoon kohdan b) tulos elektronivoltteina.",
+      "kind": [
+        "error"
+      ],
+      "answer": 13.1,
+      "unit": "eV",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -100,6 +240,82 @@
       "answer": 6.8,
       "unit": "eV",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-3-L3-04",
+      "level": 3,
+      "text": "Kaukaisen kaasupilven spektristä mitattiin kolme emissioviivaa. Pilvessä on vain vetyatomeja, joiden energiatasot ovat $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$. Kaikki kolme viivaa syntyvät siirtymissä, jotka päättyvät samalle tasolle. Jokaisella viivalla on kuitenkin eri lähtötaso. Aallonpituuksien epävarmuus on $\\pm 1\\,\\text{nm}$ ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).\n\na) Laske viivojen fotonien energiat. Päättele, mille tasolle $n$ siirtymät päättyvät, ja perustele, miksi muut tasot eivät käy. Selvitä myös jokaisen viivan lähtötaso.\n\nb) Kuinka suuri taajuus fotonilla vähintään on oltava, jotta se ionisoi atomin eli irrottaa elektronin siitä tasosta, jolle siirtymät päättyvät? Missä spektrin osassa on tätä taajuutta vastaava aallonpituus?\n\nVastaa laatikkoon kohdan b) taajuus terahertseinä.",
+      "kind": [
+        "data",
+        "reasoning",
+        "model"
+      ],
+      "answer": 365,
+      "unit": "THz",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Pilven emissioviivat (esimerkkiaineisto)",
+        "columns": [
+          "Viiva",
+          "$\\lambda\\,(\\text{nm})$"
+        ],
+        "rows": [
+          [
+            "I",
+            "1876"
+          ],
+          [
+            "II",
+            "1282"
+          ],
+          [
+            "III",
+            "1094"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-3-L3-05",
+      "level": 3,
+      "text": "Perustilassa olevaa vetykaasua valaistaan yksivärisellä ultraviolettivalolla. Jokainen atomi absorboi yhden fotonin ja virittyy samalle ylemmälle tasolle. Sieltä se palaa perustilaan ja lähettää fotoneja joko suoraan tai välitasojen kautta. Vetyatomin energiatasot ovat $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$. Taulukossa on kaasun lähettämän valon viivat. Lähteen oma valo on suodatettu pois ennen mittausta. Aallonpituuksien epävarmuus on enintään $1\\,\\text{nm}$ ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).\n\na) Laske viivojen fotonien energiat. Tunnista kunkin viivan lähtö- ja päätaso.\n\nb) Päättele, mille tasolle atomit virittyivät. Perustele, miksi viritystaso ei voi olla ylempi.\n\nc) Laske ultraviolettilähteen aallonpituus nanometreinä.\n\nVastaa laatikkoon kohdan c) tulos.",
+      "kind": [
+        "data",
+        "reasoning",
+        "model"
+      ],
+      "answer": 97.3,
+      "unit": "nm",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Kaasun emissioviivat (esimerkkiaineisto)",
+        "columns": [
+          "Viiva",
+          "$\\lambda\\,(\\text{nm})$"
+        ],
+        "rows": [
+          [
+            "a",
+            "102.6"
+          ],
+          [
+            "b",
+            "121.6"
+          ],
+          [
+            "c",
+            "486.1"
+          ],
+          [
+            "d",
+            "656.3"
+          ],
+          [
+            "e",
+            "1875"
+          ]
+        ]
+      }
     }
   ]
 }

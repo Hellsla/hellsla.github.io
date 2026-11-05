@@ -23,4 +23,22 @@ t = 2.28 * e / (1.0e-6 * 1.0e-20)                          # wave model: W = I A
 a["fy8-1-L3-02"] = t / 86400                               # in days: 422,8 d -> 420 d (two significant figures)
 slope = (1.84 - 0.60) / (1.00e15 - 7.0e14)                 # line through (7,0e14 Hz, 0,60 eV) and (1,00e15 Hz, 1,84 eV): 4,133e-15 eV/Hz (= h/e)
 a["fy8-1-L3-03"] = 7.0e14 - 0.60 / slope                    # E_k,max = 0 at f0 = f1 − E_k1/slope = 5,548e14 Hz -> 5,5e14 Hz
+# Added exercises (exercise bank P1)
+a["fy8-1-L1-07"] = 2.30 * e / h                            # potassium W = 2,30 eV: f0 = W/h = 5,561e14 Hz -> 5,56e14 Hz (λ0 = c/f0 = 539 nm)
+lam = [365e-9, 405e-9, 436e-9, 470e-9, 505e-9]; Us = [1.12, 0.75, 0.55, 0.32, 0.17]   # example data: stopping voltage against wavelength
+fs = [c / l for l in lam]; fm = sum(fs) / 5; Um = sum(Us) / 5
+k = sum((x - fm) * (y - Um) for x, y in zip(fs, Us)) / sum((x - fm) ** 2 for x in fs)   # least-squares slope 4,195e-15 V/Hz
+a["fy8-1-L2-05"] = e * k                                   # h = e k = 6,72e-34 J s -> 6,7e-34 J s (intercept -2,338 V: W = 2,34 eV, f0 = 5,57e14 Hz)
+EA = [1.01, 1.43, 1.83, 2.26]; EB = [0.12, 0.52, 0.93, 1.35]
+a["fy8-1-L2-06"] = sum(x - y for x, y in zip(EA, EB)) / 4  # two metals: differences 0,89; 0,91; 0,90; 0,91 -> mean 0,9025 eV -> 0,90 eV (W_B − W_A)
+k7 = (1.79 - 0.55) / (9.5e14 - 6.5e14)                     # slope 4,133e-15 eV/Hz from the first and last point
+f07 = 6.5e14 - 0.55 / k7                                   # f0 = 5,169e14 Hz
+a["fy8-1-L2-07"] = k7 * f07                                # W = k f0 = 2,137 eV -> 2,14 eV (= minus the intercept of the line)
+Ep = h * c / 400e-9                                        # 400 nm photon: 4,966e-19 J = 3,100 eV
+N1 = 1.0e-3 / Ep; ne1 = 0.30e-6 / e                        # photons per s 2,014e15; electrons per s from I_sat = 0,30 µA: 1,873e12
+a["fy8-1-L3-04"] = ne1 / N1 * 100                          # quantum yield 9,30e-4 = 0,0930 % -> 0,093 % (W = 3,100 eV − 0,80 eV = 2,30 eV)
+def current_uA(l, P):                                      # 0,10 % of the photons release an electron if hf >= W = 2,30 eV
+    E = h * c / l
+    return P / E * 1e-3 * e * 1e6 if E >= 2.30 * e else 0.0
+a["fy8-1-L3-05"] = current_uA(470e-9, 4.0e-3) + current_uA(620e-9, 8.0e-3) + current_uA(365e-9, 1.0e-3)   # 1,516 + 0 + 0,294 = 1,810 µA -> 1,8 µA
 print(json.dumps({k: (round(v, 8) if abs(v) >= 1e-3 else float(f"{v:.6g}")) for k, v in a.items()}))

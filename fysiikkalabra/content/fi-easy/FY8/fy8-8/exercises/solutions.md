@@ -48,6 +48,31 @@
 **Vastaus:** $10$. Tulos on neutronien tarkka lukumäärä. Tytärydin on happi-18 ${}^{18}_{8}\text{O}$.
 **Järkevyys:** Emoytimessä on $18 - 9 = 9$ neutronia. Protonin muuttuminen neutroniksi lisää niitä yhdellä: $9 + 1 = 10$. Yhtälö ${}^{18}_{9}\text{F} \to {}^{18}_{8}\text{O} + {}^{0}_{+1}\text{e} + \nu$ täsmää: $18 = 18 + 0$ ja $9 = 8 + 1$.
 
+## fy8-8-L1-06
+**Kysytty:** mikä hajoaminen kasvattaa järjestyslukua $Z$ yhdellä ja jättää massaluvun $A$ ennalleen
+**Periaate:** Hajoamisyhtälössä massaluku ja varausluku säilyvät. Järjestysluku kasvaa yhdellä vain, kun ytimen neutroni muuttuu protoniksi. Nukleonien määrä pysyy silloin samana. Käydään hajoamistavat läpi. Alfahajoaminen muuttaa $Z$:aa ja $A$:ta ($Z - 2$, $A - 4$). Beeta plus -hajoaminen pienentää $Z$:aa. Gammahajoaminen ei muuta kumpaakaan.
+**Mallivastaus:** Oikea vaihtoehto on beeta miinus -hajoaminen. Siinä ytimen neutroni muuttuu protoniksi ja elektroni lähtee pois. Silloin $Z' = Z + 1$ ja $A' = A$. Varausluku säilyy, kun elektronin varausluku $-1$ lasketaan mukaan. Esimerkiksi ${}^{14}_{6}\text{C} \to {}^{14}_{7}\text{N} + {}^{0}_{-1}\text{e} + \bar{\nu}$ täsmää, koska $14 = 14 + 0$ ja $6 = 7 - 1$. Beeta plus -hajoamisessa protoni muuttuu neutroniksi, joten järjestysluku pienenee yhdellä. Alfahajoaminen pienentää järjestyslukua kahdella ja massalukua neljällä. Gammahajoamisessa ytimestä lähtee vain energiaa, joten kumpikaan luku ei muutu.
+
+## fy8-8-L1-07
+**Annettu:** emoydin ${}^{226}_{88}\text{Ra}$, alfahajoaminen; alfahiukkanen on ${}^{4}_{2}\text{He}$
+**Kysytty:** tytärytimen neutroniluku $N'$
+**Periaate:** Hajoamisyhtälössä massaluku ja varausluku säilyvät. Alfahiukkanen vie ytimestä kaksi protonia ja kaksi neutronia. Tytärytimen $A'$ ja $Z'$ saadaan säilymislaeista. Neutroniluku on niiden erotus $A' - Z'$.
+**Kaava:** $A = A' + 4$ ja $Z = Z' + 2$, joten $A' = A - 4$, $Z' = Z - 2$ ja $N' = A' - Z'$
+**Muunnokset:** Ei tarvita, koska luvut ovat kappalemääriä.
+**Sijoitus:** $A' = 226 - 4 = 222$, $Z' = 88 - 2 = 86$ ja $N' = 222 - 86 = 136$
+**Vastaus:** $136$. Tulos on neutronien tarkka lukumäärä. Tytärydin on radon-222 ${}^{222}_{86}\text{Rn}$.
+**Järkevyys:** Emoytimessä on $226 - 88 = 138$ neutronia. Alfahiukkanen vie niistä kaksi: $138 - 2 = 136$. Yhtälö ${}^{226}_{88}\text{Ra} \to {}^{222}_{86}\text{Rn} + {}^{4}_{2}\text{He}$ täsmää: $226 = 222 + 4$ ja $88 = 86 + 2$.
+
+## fy8-8-L1-08
+**Annettu:** emoydin ${}^{60}_{27}\text{Co}$, beeta miinus -hajoaminen viritystilaiseen nikkeli-60-ytimeen, joka lähettää gammafotonin
+**Kysytty:** protonien määrä $Z$ ytimessä gammafotonin lähdön jälkeen ja perustelu sille, miksi gammafotoni ei muuta nukleonien määrää
+**Periaate:** Beeta miinus -hajoamisessa neutroni muuttuu protoniksi. Silloin $Z$ kasvaa yhdellä ja $A$ pysyy samana. Gammahajoamisessa ydin siirtyy ylemmältä energiatasolta alemmalle ja lähettää fotonin. Fotoni vie vain energiaa.
+**Kaava:** beeta miinus: $Z' = Z + 1$ ja $A' = A$; gammahajoaminen: ${}^{A}_{Z}\text{X}^{\ast} \to {}^{A}_{Z}\text{X} + \gamma$, joten $Z'' = Z'$
+**Muunnokset:** Ei tarvita, koska luvut ovat kappalemääriä.
+**Sijoitus:** $Z' = 27 + 1 = 28$ ja gammahajoamisen jälkeen $Z'' = 28$. Neutroneja on $N'' = 60 - 28 = 32$.
+**Vastaus:** $28$. Tulos on protonien tarkka lukumäärä. Ydin on nikkeli-60 ${}^{60}_{28}\text{Ni}$. Perustelu: gammafotonilla ei ole massalukua eikä varausta, joten $A$ ja $Z$ ovat yhtälön molemmilla puolilla samat. Ydin siirtyy vain alemmalle energiatasolle. Yksikään protoni tai neutroni ei lähde.
+**Järkevyys:** Hajoamisyhtälöt täsmäävät: ${}^{60}_{27}\text{Co} \to {}^{60}_{28}\text{Ni}^{\ast} + {}^{0}_{-1}\text{e} + \bar{\nu}$ ($60 = 60 + 0$ ja $27 = 28 - 1$) ja ${}^{60}_{28}\text{Ni}^{\ast} \to {}^{60}_{28}\text{Ni} + \gamma$. Alkuaine vaihtuu vain beetahajoamisessa, jossa koboltista tulee nikkeliä. Gammafotonin lähtö ei vaihda sitä.
+
 ## fy8-8-L2-01
 **Annettu:** nikkeli-60:n tasot $E_\text{y} = 2505{,}8\,\text{keV}$ ja $E_\text{a} = 1332{,}5\,\text{keV}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{keV} = 1000\,\text{eV}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** gammafotonin aallonpituus $\lambda$ pikometreinä
@@ -88,6 +113,37 @@
 **Vastaus:** $138$. Tulos on neutronien tarkka lukumäärä. Ydin on torium-228 ${}^{228}_{90}\text{Th}$.
 **Järkevyys:** Ketju on ${}^{232}_{90}\text{Th} \to {}^{228}_{88}\text{Ra} \to {}^{228}_{89}\text{Ac} \to {}^{228}_{90}\text{Th}$. Lopussa ydin on taas torium, mutta neutroneja on neljä vähemmän kuin alussa ($142 - 4 = 138$). Alfahajoaminen vei kaksi neutronia, ja kumpikin beetahajoaminen muutti yhden neutronin protoniksi.
 
+## fy8-8-L2-05
+**Annettu:** taulukon kuuden ytimen luvut $Z$, $N$ ennen hajoamista ja $Z'$, $N'$ sen jälkeen
+**Kysytty:** kunkin rivin hajoamistapa ja beeta miinus -hajoamisten lukumäärä
+**Periaate:** Verrataan lukuja ennen ja jälkeen. Alfahajoamisessa $Z$ ja $N$ pienenevät kumpikin kahdella. Beeta miinus -hajoamisessa neutroni muuttuu protoniksi: $Z$ kasvaa yhdellä ja $N$ pienenee yhdellä. Beeta plus -hajoamisessa protoni muuttuu neutroniksi: $Z$ pienenee yhdellä ja $N$ kasvaa yhdellä. Gammahajoamisessa kumpikaan ei muutu.
+**Kaava:** beeta miinus: $Z' = Z + 1$ ja $N' = N - 1$; muut hajoamistavat vastaavasti edellä
+**Muunnokset:** Ei tarvita, koska luvut ovat kappalemääriä.
+**Sijoitus:** Ra-226: $88 \to 86$ ja $138 \to 136$, alfahajoaminen. Pb-210: $82 \to 83$ ja $128 \to 127$, beeta miinus. Na-22: $11 \to 10$ ja $11 \to 12$, beeta plus. I-131: $53 \to 54$ ja $78 \to 77$, beeta miinus. Ba-137 (viritetty): $56 \to 56$ ja $81 \to 81$, gammahajoaminen. Sr-90: $38 \to 39$ ja $52 \to 51$, beeta miinus.
+**Vastaus:** $3$. Beeta miinus -hajoamisia ovat lyijy-210, jodi-131 ja strontium-90. Tulos on rivien tarkka lukumäärä.
+**Järkevyys:** Jokaisella rivillä nukleonien määrä pysyy samana tai pienenee neljällä. Alfahajoamisessa $Z + N = 226 \to 222$. Muissa riveissä summa ei muutu ($82 + 128 = 83 + 127 = 210$). Beetahajoamisissa massaluku säilyy, kuten pitää.
+
+## fy8-8-L2-06
+**Annettu:** oppilaan yhtälö ${}^{241}_{95}\text{Am} \to {}^{237}_{94}\text{Np} + {}^{4}_{2}\text{He}$ ja perustelu ”järjestysluku pienenee yhdellä”
+**Kysytty:** virhe, oikea hajoamisyhtälö ja tytärytimen neutroniluku $N'$
+**Periaate:** Hajoamisyhtälössä sekä massaluku että varausluku säilyvät. Kummankin summa on siis sama nuolen molemmilla puolilla. Alfahiukkanen ${}^{4}_{2}\text{He}$ vie ytimestä kaksi protonia, vaikka se on yksi hiukkanen.
+**Kaava:** $A = A' + 4$ ja $Z = Z' + 2$, joten $Z' = Z - 2$ ja $N' = A' - Z'$
+**Muunnokset:** Ei tarvita, koska luvut ovat kappalemääriä.
+**Sijoitus:** Oppilaan yhtälössä massaluvut täsmäävät, $241 = 237 + 4$. Varausluvut eivät täsmää: $95 \neq 94 + 2 = 96$. Oikein $Z' = 95 - 2 = 93$ ja $N' = 237 - 93 = 144$.
+**Vastaus:** $144$. Tulos on neutronien tarkka lukumäärä. Virhe on järjestysluvussa. Se pienenee kahdella, koska alfahiukkasessa on kaksi protonia. Oikea yhtälö on ${}^{241}_{95}\text{Am} \to {}^{237}_{93}\text{Np} + {}^{4}_{2}\text{He}$, ja tytärydin on neptunium.
+**Järkevyys:** Oikea yhtälö täsmää: $241 = 237 + 4$ ja $95 = 93 + 2$. Emoytimessä oli $241 - 95 = 146$ neutronia, ja alfahiukkanen vei kaksi: $146 - 2 = 144$. Alfahiukkanen on yksi hiukkanen, mutta siinä on neljä nukleonia. Siksi sekä $A$ että $Z$ pienenevät enemmän kuin yhdellä.
+
+## fy8-8-L2-07
+**Annettu:** kalibrointipisteet (kanava, energia): $(98;\ 59{,}54\,\text{keV})$, $(1104;\ 661{,}7\,\text{keV})$, $(1961;\ 1173{,}2\,\text{keV})$ ja $(2227;\ 1332{,}5\,\text{keV})$; tuntemattoman piikin kanava $1531$
+**Kysytty:** tuntemattoman piikin energia $E_\gamma$ kiloelektronivoltteina
+**Periaate:** Kanavanumero on verrannollinen fotonin energiaan. Pisteet asettuvat siksi suoralle $E_\gamma = k \cdot K + b$, missä $K$ on kanavanumero. Mittauksissa on pientä satunnaisvaihtelua. Siksi suora sovitetaan kaikkiin pisteisiin, eikä yhdistetä vain kahta pistettä.
+**Kuvaajan lukeminen:** Vaaka-akselille piirretään kanavanumero $K$ välille $0 \dots 2500$ ja pystyakselille energia $E_\gamma$ välille $0 \dots 1500\,\text{keV}$. Neljä pistettä osuu lähes suoralle, ja suora kulkee lähellä origoa. Pisteet poikkeavat suorasta alle $1\,\text{keV}$. Suoran kulmakerroin on noin $0{,}598\,\text{keV}$ kanavaa kohti. Suora leikkaa pystyakselin lähellä arvoa $1{,}2\,\text{keV}$. Kanavalta $1531$ nostetaan pystysuora viiva suoralle ja luetaan energia pystyakselilta.
+**Kaava:** $E_\gamma = k \cdot K + b$, missä $k \approx 0{,}598\,\text{keV}$ kanavaa kohti ja $b \approx 1{,}2\,\text{keV}$
+**Muunnokset:** Ei tarvita, koska energia luetaan suoraan kiloelektronivoltteina.
+**Sijoitus:** $E_\gamma = 0{,}598 \cdot 1531\,\text{keV} + 1{,}2\,\text{keV} = 915{,}5\,\text{keV} + 1{,}2\,\text{keV} = 916{,}7\,\text{keV}$. Tarkemmin kaikkien neljän pisteen pienimmän neliösumman suora antaa $916{,}4\,\text{keV}$.
+**Vastaus:** $916\,\text{keV}$. Vastauksessa on kolme merkitsevää numeroa, koska kalibrointi ja suoran lukeminen eivät anna enempää. Suoralta luettu arvo on $915 \dots 920\,\text{keV}$ piirtotarkkuuden mukaan. Perustelu: sovitettu suora käyttää kaikkia mittauksia ja tasoittaa satunnaisvaihtelun. Kahden pisteen läpi vedetty suora siirtyisi, jos jommankumman pisteen mittaus olisi vähän pielessä.
+**Järkevyys:** Tulos $916\,\text{keV}$ on Cs-137:n viivan $661{,}7\,\text{keV}$ ja Co-60:n viivan $1173{,}2\,\text{keV}$ välissä. Kanava $1531$ on myös kanavien $1104$ ja $1961$ välissä. Interpolointi on luotettavaa, koska piste on kalibrointipisteiden välissä eikä niiden ulkopuolella.
+
 ## fy8-8-L3-01
 **Annettu:** alkuydin ${}^{232}_{90}\text{Th}$, loppuydin ${}^{208}_{82}\text{Pb}$
 Sarjassa on vain alfa- ja beeta miinus -hajoamisia.
@@ -118,3 +174,29 @@ Sarjassa on vain alfa- ja beeta miinus -hajoamisia.
 **Sijoitus:** $Z_\text{väli} = 86 + 2 = 88$ ja $Z_\text{X} = 88 - 1 = 87$
 **Vastaus:** $87$. Tulos on tarkka kokonaisluku. Järjestysluku $87$ on frankium. Massaluku on $222 + 4 = 226$, joten X on ${}^{226}_{87}\text{Fr}$.
 **Järkevyys:** Eteenpäin laskettuna ${}^{226}_{87}\text{Fr} \to {}^{226}_{88}\text{Ra} \to {}^{222}_{86}\text{Rn}$ täsmää. Massaluku pienenee vain alfahajoamisessa, ja varausluvut ovat $87 + 1 = 88$ ja $88 - 2 = 86$. Välivaihe radium-226 hajoaa uraanisarjassakin radoniksi.
+
+## fy8-8-L3-04
+**Annettu:** sarjan jäsenet $(A;\ Z)$: Rn-222 $(222;\ 86)$, Po-218 $(218;\ 84)$, Pb-214 $(214;\ 82)$, Bi-214 $(214;\ 83)$, Po-214 $(214;\ 84)$, Pb-210 $(210;\ 82)$ ja lopuksi pysyvä Pb-206 $(206;\ 82)$
+Sarjassa on vain alfa- ja beeta miinus -hajoamisia.
+**Kysytty:** hajoamistavat taulukon siirtymissä, hajoamisten määrät Pb-210:stä Pb-206:een ja beeta miinus -hajoamisten kokonaismäärä $n_\beta$ Rn-222:sta Pb-206:een
+**Periaate:** Massaluku muuttuu vain alfahajoamisessa, neljä kussakin. Järjestysluku pienenee alfahajoamisessa kahdella ja kasvaa beeta miinus -hajoamisessa yhdellä. Siirtymän tyyppi nähdään siis lukujen $A$ ja $Z$ muutoksesta. Pitkän ketjun hajoamisten määrät saadaan alku- ja loppuytimen luvuista.
+**Kaava:** $A_\text{alku} - A_\text{loppu} = 4 n_\alpha$ ja $Z_\text{loppu} = Z_\text{alku} - 2 n_\alpha + n_\beta$, joten $n_\beta = Z_\text{loppu} - Z_\text{alku} + 2 n_\alpha$
+**Muunnokset:** Ei tarvita, koska luvut ovat kappalemääriä.
+**Sijoitus:** a) Rn-222 $\to$ Po-218: $A$ pienenee neljällä ja $Z$ kahdella, alfahajoaminen. Po-218 $\to$ Pb-214: $218 - 4 = 214$ ja $84 - 2 = 82$, alfahajoaminen. Pb-214 $\to$ Bi-214 ja Bi-214 $\to$ Po-214: $A$ pysyy samana ja $Z$ kasvaa $82 \to 83 \to 84$, kaksi beeta miinus -hajoamista. Po-214 $\to$ Pb-210: $214 - 4 = 210$ ja $84 - 2 = 82$, alfahajoaminen. Taulukossa on siis $3$ alfa- ja $2$ beeta miinus -hajoamista.
+b) Pb-210 $\to$ Pb-206: $n_\alpha = \dfrac{210 - 206}{4} = 1$. Järjestysluku on alussa ja lopussa $82$, joten $82 = 82 - 2 \cdot 1 + n_\beta$ ja $n_\beta = 2$.
+c) Koko sarjassa $n_\alpha = \dfrac{222 - 206}{4} = 4$ ja $n_\beta = 82 - 86 + 2 \cdot 4 = 4$. Taulukon ja b-kohdan laskusta: alfahajoamisia $3 + 1 = 4$ ja beeta miinus -hajoamisia $2 + 2 = 4$.
+d) Neljä alfahajoamista pienentäisi järjestyslukua $4 \cdot 2 = 8$ ja veisi sen arvoon $86 - 8 = 78$. Lyijyn järjestysluku on $82$. Järjestyslukua täytyy siis nostaa $82 - 78 = 4$ beeta miinus -hajoamisella.
+**Vastaus:** $4$. Beeta miinus -hajoamisten määrä on tarkka kokonaisluku. Alfahajoamisia on myös $4$, yhteensä $8$ hajoamista. Pelkät alfahajoamiset veisivät järjestysluvun arvoon $78$, joten neljä beeta miinus -hajoamista tarvitaan.
+**Järkevyys:** Tarkistus: massaluku $222 - 4 \cdot 4 = 206$ ja järjestysluku $86 - 2 \cdot 4 + 4 = 82$ täsmäävät. Sarjan lopussa ${}^{210}_{82}\text{Pb} \to {}^{210}_{83}\text{Bi} \to {}^{210}_{84}\text{Po} \to {}^{206}_{82}\text{Pb}$ on kaksi beetahajoamista ja yksi alfahajoaminen.
+
+## fy8-8-L3-05
+**Annettu:** mitatut viivat $351{,}2$, $468{,}9$, $681{,}3$, $820{,}5$ ja $1501{,}4\,\text{keV}$; kolme viritystasoa; ydin aluksi ylimmällä tasolla; alin viritystaso $351{,}2\,\text{keV}$; $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{keV} = 1000\,\text{eV}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
+**Kysytty:** puuttuvan gammaviivan energia $E_\text{p}$ ja aallonpituus $\lambda$ pikometreinä
+**Periaate:** Gammafotonin energia on kahden tason erotus. Kolmella viritystasolla ja perustilalla on kuusi mahdollista siirtymää. Niistä viisi näkyy taulukossa. Suurin energia on siirtymä ylimmältä tasolta perustilaan. Jokaisen viivan täytyy olla kahden tason erotus. Alimman tason $351{,}2\,\text{keV}$ avulla jäljelle jäävät tasot ratkeavat yksikäsitteisesti. Puuttuva siirtymä on se, jota taulukossa ei ole.
+**Kaava:** $E_\gamma = E_\text{y} - E_\text{a}$ ja $\lambda = \dfrac{hc}{E_\gamma}$
+**Muunnokset:** $E_\text{p} = 1150{,}2\,\text{keV} = 1150{,}2 \cdot 1000 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 1{,}8427 \cdot 10^{-13}\,\text{J}$. Lopuksi $1\,\text{m} = 10^{12}\,\text{pm}$.
+**Sijoitus:** a) Suurimman viivan mukaan ylin taso on $E_3 = 1501{,}4\,\text{keV}$. Alin viritystaso on $E_1 = 351{,}2\,\text{keV}$, ja se on myös taulukon pienin viiva (siirtymä perustilaan). Kolmas taso saadaan viivasta $820{,}5\,\text{keV}$, jos se on siirtymä perustilaan: $E_2 = 820{,}5\,\text{keV}$. Tarkistus tasojen erotuksilla: $E_2 - E_1 = 820{,}5 - 351{,}2 = 469{,}3$, ja se on viiva $468{,}9\,\text{keV}$. Lisäksi $E_3 - E_2 = 1501{,}4 - 820{,}5 = 680{,}9$, ja se on viiva $681{,}3\,\text{keV}$. Kaikki viisi viivaa selittyvät, kun mittausepävarmuus on alle $0{,}5\,\text{keV}$. Muu järjestys ei toimi. Jos toinen taso olisi $681{,}3\,\text{keV}$, siirtymä $E_2 - E_1 = 330{,}1\,\text{keV}$ puuttuisi taulukosta ja viiva $468{,}9\,\text{keV}$ jäisi selittämättä.
+b) Puuttuva siirtymä on ylimmältä tasolta alimmalle viritystasolle: $E_\text{p} = E_3 - E_1 = 1501{,}4 - 351{,}2 = 1150{,}2\,\text{keV}$.
+c) $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$ ja $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1{,}8427 \cdot 10^{-13}\,\text{J}} = 1{,}0780 \cdot 10^{-12}\,\text{m} = 1{,}0780\,\text{pm}$
+**Vastaus:** $1{,}08\,\text{pm}$. Vastauksessa on kolme merkitsevää numeroa. Tasot ovat perustilan yläpuolella $351{,}2$, $820{,}5$ ja $1501{,}4\,\text{keV}$. Puuttuvan viivan energia on $1150{,}2\,\text{keV}$.
+**Järkevyys:** Puuttuva energia $1150{,}2\,\text{keV}$ on pienempi kuin suurin viiva $1501{,}4\,\text{keV}$ ja suurempi kuin viiva $820{,}5\,\text{keV}$. Siksi aallonpituus on pidempi kuin suurimman viivan $0{,}83\,\text{pm}$ ja lyhyempi kuin viivan $820{,}5\,\text{keV}$ aallonpituus $1{,}51\,\text{pm}$. Tulos $1{,}08\,\text{pm}$ on näiden välissä.
