@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 0fdbd005b7711e68
+CONTENT-HASH: 8b572d40e2c95165
 
 Round 2
 
@@ -16,3 +16,8 @@ Round 2
 - Järkevyys of L1-07 corrected to "8,5-kertainen" (0,4264 mT / 0,05 mT = 8,5).
 - New tasks recomputed; counts 8/7/5; levels fit; MC distractors are real misconceptions with repairing feedback; no copy of the neon example.
 - Screenshots not opened; phone fit relied on the passed 360 px layout check.
+
+## Follow-up (8b572d40e2c95165: four solutions.md edits on top of the hash above)
+- L1-02: the charge as a magnitude ($|q| = e$) and $|q|$ in the formula follow the lesson's sign convention instead of silently dropping the minus sign; answer and level unchanged.
+- L2-03 and L3-02: the references now name chapters the student can find (*Homogeeninen sähkökenttä*, *Ympyrärata: jaksonaika ja ratanopeus*).
+- No blocking issue; main's notes above stand.

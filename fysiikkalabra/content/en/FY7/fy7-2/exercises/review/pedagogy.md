@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 324d90f20f63e9e6
+CONTENT-HASH: 58ca1c36704e1ad3
 Mode: full
 Round: 1
 
@@ -18,3 +18,8 @@ Round: 1
 - Solutions keep Given-Find-Principle-Formula-Conversions-Substitution-Answer-Reasonableness and the model answers for L1-06 and L2-07 contain the same points as the Finnish.
 - Terms consistent with the lesson: magnetic flux density, velocity selector, mass spectrometer, centripetal force, period.
 - check_i18n.py en: 0 errors.
+
+## Follow-up (58ca1c36704e1ad3: four solutions.md edits on top of the hash above)
+- L1-02: the charge as a magnitude ($|q| = e$) and $|q|$ in the formula follow the lesson's sign convention instead of silently dropping the minus sign; answer and level unchanged.
+- L2-03 and L3-02: the references now name chapters the student can find (*Uniform electric field*, *Moving in a circle: period and speed*).
+- No blocking issue; main's notes above stand.
