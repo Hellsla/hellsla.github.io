@@ -1,13 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 3610a94dab924019
+CONTENT-HASH: c5e955f0b193c0c7
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+(none needed)
 
 ## Polish
-- [Minor] L3-02 solution, Sijoitus — the longest formula; fits at 340 px but with little margin.
+(none)
 
 ## Checked
-- open-exercises 1280 part 1, L2 part 2, L3 part 3 and the matching exercise statements and solutions in the source for all 12 exercises. Short sentences, kaava/sijoitus in the standard order, decimal comma, units upright with thin space, "Ydintehtävä" chips, significant-figure notes present. No exercise figures. check_layout 340: OK.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+- Screenshots of the new tasks opened (fi-easy: L2-1280-8 (L2-06 solution, 800 ns)): maths renders, units and decimal commas correct, no overflow, no clipped text, no Finnish in en.
+- Data tables of L2-05, L2-06, L3-04, L3-05 have translated captions and headers (Measurement/Fibre/Power; Mittaus/Kuitu/Teho) and unchanged cells.
+- Display units (°, ns, km, mm) are the same as in fi.

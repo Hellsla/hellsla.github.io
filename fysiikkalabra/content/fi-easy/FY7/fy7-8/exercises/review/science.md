@@ -1,16 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 7cdf98adf7c64098
+CONTENT-HASH: a57d3a1e79b21477
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
+## Fixed
+- solutions.md L3-04 Järkevyys: "sen neliö 3,3: 4,959 MW : 1,500 MW = 3,3" is now "sen neliö 3,3. Näin on: ...". No number changed.
+- solutions.md L3-05 Periaate: "saadaan tästä derivoimalla" is now "saadaan tästä etsimällä funktion huippu derivoimalla" so the step is explained.
+
 ## Polish
-- solutions.md L3-03 Järkevyys — 331 MW at 400 kV gives 828 A, not 826 A (826 A comes from the unrounded 330,6 MW). This is the same as in the Finnish version and does not affect the result.
+- "lukuvirhe" and "derivoimalla" stay as in fi; a Finnish teacher can explain them.
 
 ## Checked
-- All 12 answers recomputed independently and with answers.py; every one matches exercises.json.
-- Task data and answers are identical to the Finnish set: the numbers in every text and solution section match.
-- L2-04: the fitted curve through (5,0 A; 20 W) gives R = 0,80 Ω. The point check at 2,5 A (5,0 W) is right, and figures.json keeps the numbers of the alt text.
-- L3-01: the transformer keeps P, and the line current comes from 400 kV. The check without a transformer (450 MW > P) is right.
-- L3-02 and L3-03: R ≤ 0,010 U²/P = 4,0 Ω; P ∝ U² gives 3,31.
-- Significant figures and the reasonableness checks are correct (sauna stoves, more than 10⁶ A at 230 V, 4 % at 110 kV).
+- All 8 new ids exist with the same level, kind, answer, tolerance, units and correct flags as fi; L1-06 has one correct choice, the same as fi, and the model answer equals its text.
+- Every data-table cell and every number in exercises.json and solutions.md is identical to fi (automatic number comparison: no difference); decimal comma in LaTeX, point in table JSON as in fi.
+- Recomputed: 486 kierrosta, 87,7 %, 0,20 A, 210 kW, 90 %, 1,515 milj. euroa, 54,35 kW; all match.
+- Wrong-choice feedback in L1-06 is correct physics and explains the error.
+- check_i18n fi-easy: 0 errors.

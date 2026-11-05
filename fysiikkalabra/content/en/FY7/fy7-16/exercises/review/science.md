@@ -1,16 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: aad4f155a9a516b9
+CONTENT-HASH: ca2d15078f51d8b6
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+- L3-04 text: "Your induction hob operates..." changed to "An induction hob operates..." (fi has no 'your'; generic task voice).
 
 ## Polish
+(none)
 
 ## Checked
-- All 12 answers recomputed independently and agree with exercises.json and answers.py: 9.0 dB, 6.02 dB, 1.6 kW, 0.60 µWb, 72 %, 3.52 V, 150 km, 5.24 min, 2.46 kWh, 10 amplifiers, 1.596 kW, 0.441 ms.
-- Every number in exercises.json and solutions.md is the same as in the passed fi set (scripted diff).
-- L1-03: P = RI² stated for the effective current; L3-02: own field of the eddy current neglected and stated, so the result is an upper limit, said in the check.
-- L2-03: Q = cmΔT with "the water stays liquid" stated; 85 % share given in the task.
-- L3-01: sections rounded up (10.55 → 11), amplifiers = sections − 1, reasoning correct.
-- L3-03: splice decibels added before solving L; t = nL/c for a pulse along the axis.
-- Notation (A = aL, A = 10 dB · lg(P0 : P), e0 = N · 2πf · Φ0) matches the lesson; unknowns solved symbolically; significant figures justified by the limiting datum.
-- Note for the orchestrator (not a finding): the packet's "Exercise brief" is empty for en — review_packet.py looks for the Finnish section names (Kaava, Esimerkki ...) in the en lesson.
+- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) and all older ones compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags, choices, data table cells and every number in texts and feedback are identical (decimal point in en; decimal comma in fi-easy as in fi).
+- solutions.md of the new tasks read against fi: every number, formula and result the same (0.5036 mW, 15.05 km, 12.86 mm, 0.2003 dB/km, 1 %, 13.28 mm, 42.43 kHz; powers 2.59/2.07/1.29 kW).
+- L1-06: exactly one correct option; distractor feedback names the same misconception as fi.
+- No Finnish left (grep).
+- check_i18n.py en: no errors for fy7-16 (en run shows 1 pre-existing error in fy7-13/exercises/solutions.md, outside this task).

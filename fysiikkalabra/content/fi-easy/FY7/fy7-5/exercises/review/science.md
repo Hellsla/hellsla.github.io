@@ -1,16 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: c63d60a9030d2421
+CONTENT-HASH: 84c105908df6ddd4
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+- content/fi-easy/FY7/fy7-5/exercises/exercises.json — L2-05 — explained the hard word "itseisarvo" in the question ("luvun suuruus ilman plus- tai miinusmerkkiä").
 
 ## Polish
+(none)
 
 ## Checked
-- All 12 answers recomputed with my own formulas: 5,04→5,0 mWb; 3,0 V; 0,20 V; 0,36 mWb; 0,50 m/s; 48 mV; 2,0 V; 0,30 A; 75 mV; 4,23→4,2 mV; 50 µT; 0,060 mWb. They match exercises.json, answers.py and the Finnish set.
-- L2-02 figure fy7-5/flux-task (0→4,0 mWb in 0,20 s, flat to 0,50 s, →0 at 0,60 s): the steepest part gives 2,0 V; the solution reads the graph correctly.
-- L2-04: ΔΦ = Blv·Δt gives NBlv, and it checks against BA over l/v.
-- L3-01: only the vertical component gives a force along the axle; v × B_h is vertical. Correct reasoning, and the data sources are cited.
-- L3-02: a half turn gives ΔΦ = 2BA. The solution names the wrong BA result (100 µT).
-- L3-03: the area under the triangular pulse = N Φ, and the first pulse ends with the magnet at the centre. Correct model.
-- Conditions stated in each task (perpendicular field, uniform change, small rail resistance). Unit conversions (cm², mWb, ms, km/h) are right.
-- Sig-fig reasons name the limiting data. The reasonableness checks are real checks (reverse substitution, Φ/A ≈ 0,4 T and 0,3 T).
+- Structural diff against content/fi: same ids, keys, answers, units, tolerances, correct flags, choice order, data-table cells for all 8 new tasks (L1-06..08, L2-05..07, L3-04..05); every number in text, feedback and solutions matches fi (script check, decimal separators normalised).
+- Re-derived the answers from the data: L1-07 2.25 -> 2.3 V, L1-08 0.060 T, L2-05 1.45 V (steepest interval 0.40-0.50 s), L2-06 slope 30 mV/(m/s) -> 0.15 T, L3-04 a = 1.64 -> 1.6 m/s2 and s = 1.18 m, L3-05 0.0778 and 0.0787 -> 0.078 mWb.
+- L2-07 and L1-06: correct choice and feedback say the same as fi (v parallel to B gives zero force; no change of flux means zero voltage).
+- Formulas, LaTeX and units in solutions.md identical to fi; only prose translated. check_i18n fi-easy: 0 errors.

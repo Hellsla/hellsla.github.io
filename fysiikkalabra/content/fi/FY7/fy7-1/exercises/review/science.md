@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: aca1e5e86a2b06fb
+CONTENT-HASH: 1362402d4e28bc6a
+Round: 2
+
+Round 2: both round-1 Blocking items are fixed. L1-06 Mallivastaus now says "niissä ei ole alkeisalueita, jotka magneetin kenttä voisi järjestää". This matches the option feedback. L3-05 now says "etelänapa on kompassia kohti". With the S pole facing the compass from the east, the field at the compass points into that pole, which is east. That is correct. Two round-1 Polish items were also taken up. L1-08 now uses Oulu 53 µT, 76°, the same as the L3-04 table. L2-05 has tolerance 0.04, so 15 µT (3,4 % off 14,5) is now accepted.
 
 ## Blocking
 
 ## Polish
-- solutions.md:103 (L3-03): the rounding is justified "kuten kentissä 53 µT ja 55 µT", but the inclination limits the precision. With 82,5° ± 0,5°, cos I gives a ratio of 1,88–2,14. Fix: say that the steep inclination 82,5° limits the precision, so the answer is "noin 2".
-- solutions.md:78 (L2-04): the same kind of issue. The 10° angle limits the result (9,5°–10,5° gives 9,3–10,4), so "noin 10" is the honest precision. Fix: name the 10° angle as the limiting datum, or keep 9,8 and say why.
+- exercises.json L1-08: this is still the sin twin of L1-02 and L2-03. The plan's level-1 compass task, tan θ = B_m : B_h with a new magnet and distance, is still missing. Also, with Oulu now 53 µT and 76° as in L3-04, L1-08 only gives the other component of an L3-04 row. — Consider the plan's tan θ task.
+- L3-04 repeats L3-03's conclusion (smaller B_h in the north, so the compass is worse). — Acceptable. Optionally ask for the angle error that a 5 µT disturbance causes in Helsinki and in Utsjoki.
 
 ## Checked
-- I recomputed all nine numeric answers in one script with my own formulas: 6,0·10⁴; 13,7; 50,0; 60,8°; 49,7; 53,4; 9,82; −11; 2,03. They agree with answers.py and solutions.md. Every rounded answer falls inside its tolerance (L1-02: 14 against 13,7 is a 2,2 % difference, inside 3 %).
-- L2-03 now uses B_v = 52 µT, which gives B = 53,4 µT and B_h ≈ 12 µT. These match WMM2025 for Rovaniemi.
-- L3-03: Helsinki 53 µT and 74°, Longyearbyen 55 µT and 82,5°. These agree with WMM2025 to the stated rounding. The reason the compass works worse there (only the horizontal component turns it) is correct.
-- L3-01: beside the middle of a magnet whose N pole points north, the field points south. 14 − 25 = −11 µT, so the needle reverses. The sign convention is stated.
-- L2-02: B_z < 0 is consistent with a field pointing down when the phone lies flat. The horizontal part is 13 µT, which is realistic.
-- L2-04: the condition that the fields are perpendicular is stated, so B_h cancels. The answer is the ratio tan 60° : tan 10°, and the wrong ratio of 6 is discussed.
-- L1-04 and L1-05 word answers: the poles at the cut and the needle pointing away from the N pole are correct.
-- L3-02: hard steel keeps the alignment. The Curie wording now reads "riittävän kuumaksi (… noin 770 °C)", as round 1 asked.
-- Notation is the lesson's: B_h, B_m, B_v, I, θ from north, and tan θ = B_east : B_north. Every numeric solution solves symbolically before substituting.
+- I recomputed the new answers in one script: 51,43; 14,50; 70,72; 64,98; 61,61; 16,16. They match answers.py, which now uses 53 µT, and exercises.json.
+- L1-08: B_v = 53 · sin 76° = 51,4 µT and B_h = 12,8 µT, and the solution's Pythagoras check gives 53 µT. "51 µT, kaksi merkitsevää numeroa" is right.
+- L2-05 b) now uses 8,0 cm and 16 cm: 45,8 µT and 6,23 µT, a ratio of 7,35 ≈ 7,3, close to 2³ = 8. The new Kysytty, Sijoitus, Vastaus and Järkevyys agree with the changed task text.
+- L3-05: a) gives 5,3…6,3·10⁴ µT·cm³ with the averaging explained, and b) gives r₀ = 16,2 cm (16 cm). The rest is unchanged and still correct: the N pole toward the compass gives a field to the south, and the needle reverses for r < r₀.
+- L1-06 and L1-07: only the correct option moved. The texts and feedback are unchanged, each has exactly one correct option, and every distractor is really wrong.
+- There are 8/7/5 tasks. Each new numeric solution is solved symbolically before substitution.

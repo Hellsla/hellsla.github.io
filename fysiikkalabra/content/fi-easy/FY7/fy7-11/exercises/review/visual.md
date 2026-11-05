@@ -1,14 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 458df872a2e45b5e
+CONTENT-HASH: 1e20d2a076721b94
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
+## Fixed
+(none needed: the plain Finnish already matched fi in every number and was clear)
+
 ## Polish
-- [Minor] L3-01 solution — the long Sijoitus chain breaks into alternating text fragments and small boxes ("Violetti:", "α2 = 27,52°,"); give red and violet one aligned display block each (shared with the other languages).
+(none)
 
 ## Checked
-- open-exercises-1280-1 (L1), L2-1280-3 (prism solution and the flint-lasi figure with decimal-comma axis labels 1,65 / 1,64 / 1,63, units, distinct markers, no answer drawn), L3 via contact sheet, open-tarkista-1280-1. Instructions read in full: each says what to do and in which unit ("Anna vastaus kilometreinä sekunnissa"); solutions keep given, asked, principle, formula, substitution, answer, reasonableness in order with `$\ldots$` quantities and thin-spaced units; case after numbers correct (`$25{,}0^\circ$:n`, `$17^\circ$:n`). No clipping or overflow.
-
-## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+- Reviewed the exercise captures of the new tasks (open-exercises L1, L2, L3 shots): choices, feedback boxes, data tables and solution blocks render without overflow.
+- Maths set as LaTeX in every number and unit; en uses the decimal point and fi-easy the decimal comma ({,}) in maths, as in fi; table cells keep the fi form.
+- Subscripts: en uses r (red), fi-easy keeps p (punainen) like fi; consistent through text, tables and solutions.
+- Table headers and captions translated; no stray Finnish in en, no English in fi-easy.
+- Display blocks in solutions are the same as fi (formula parity checked by check_i18n).

@@ -117,3 +117,84 @@
 **Sijoitus:** $E = (420\,\text{lx} - 16\,\text{lx}) \cdot \cos^2 60{,}0^\circ + 16\,\text{lx} = 404\,\text{lx} \cdot 0{,}250 + 16\,\text{lx} = 117\,\text{lx}$
 **Vastaus:** $117\,\text{lx}$. Vastauksessa on kolme merkitsevää numeroa, kuten lukemassa $420\,\text{lx}$.
 **Järkevyys:** Ilman taustavaloa tulos olisi $420\,\text{lx} \cdot 0{,}250 = 105\,\text{lx}$. Taustavalon osuus ei muutu, kun kalvoa kierretään. Lukeman pitää siis olla vähän suurempi, kuten tuloksessa. Tulos on myös suurimman lukeman ja taustavalon välissä, kuten pitääkin.
+
+## fy7-15-L1-06
+**Kysytty:** miksi polaroidut aurinkolasit vähentävät erityisesti vedenpinnasta heijastuvaa häikäisyä.
+**Periaate:** Eristeen, kuten veden, pinnasta heijastunut valo on osittain polarisoitunutta pinnan suuntaan. Vedenpinnan häikäisy on siis polarisoitunutta vaakasuuntaan. Polarisaattori päästää läpi vain sähkökentän läpäisysuuntaisen osan. Se absorboi eli imee itseensä osan, joka on kohtisuorassa siihen nähden. Läpäisysuunta tarkoittaa sähkökentän värähtelysuuntaa. Se ei tarkoita valon etenemissuuntaa.
+**Mallivastaus:** Vedenpinnasta heijastunut valo on osittain polarisoitunutta vaakasuuntaan. Lasien kalvon läpäisysuunta on pystysuora. Kalvo absorboi siksi vaakasuuntaisen värähtelyn ja päästää läpi vain pystysuuntaisen. Näin häikäisy vaimenee paljon enemmän kuin muu valo. Jos kalvo olisi kallistettu, se päästäisi vaakasuuntaista valoa läpi. Siksi lasien suuntaus on tärkeä. Pelkkä tummennus ei erottaisi häikäisyä muusta valosta. Läpäisysuunta ei myöskään rajoita valon etenemissuuntaa.
+
+## fy7-15-L1-07
+**Annettu:** polarisoituneen valon intensiteetti $I_0 = 300\,\text{W/m}^2$, polarisaatiosuunnan ja läpäisysuunnan välinen kulma $\theta = 55{,}0^\circ$
+**Kysytty:** valon intensiteetti $I$ kalvon jälkeen yksikössä $\text{W/m}^2$
+**Periaate:** Kalvoon tulee polarisoitunutta valoa, joten käytetään Malusin lakia. Läpi pääsee vain sähkökentän läpäisysuuntainen osa $E_0 \cos\theta$. Intensiteetti on verrannollinen amplitudin neliöön.
+**Kaava:** $I = I_0 \cos^2\theta$
+**Muunnokset:** Niitä ei tarvita: intensiteetti pysyy yksikössä $\text{W/m}^2$, ja kulma on asteina.
+**Sijoitus:** $I = 300\,\text{W/m}^2 \cdot \cos^2 55{,}0^\circ = 300\,\text{W/m}^2 \cdot 0{,}3290 = 98{,}70\,\text{W/m}^2$
+**Vastaus:** $98{,}7\,\text{W/m}^2$. Vastauksessa on kolme merkitsevää numeroa, kuten kulmassa $55{,}0^\circ$.
+**Järkevyys:** Kulma $55^\circ$ on suurempi kuin $45^\circ$. Kulmalla $45^\circ$ läpi pääsisi puolet eli $150\,\text{W/m}^2$. Kulma $55^\circ$ on pienempi kuin $60^\circ$. Kulmalla $60^\circ$ läpi pääsisi neljännes eli $75\,\text{W/m}^2$. Tulos $98{,}7\,\text{W/m}^2$ on näiden välissä. Se on noin kolmannes tulevasta valosta.
+
+## fy7-15-L1-08
+**Annettu:** ilman taitekerroin $n_1 = 1{,}00$, kvartsilasin taitekerroin $n_2 = 1{,}46$
+**Kysytty:** Brewsterin kulma $\alpha_\text{B}$ asteina
+**Periaate:** Heijastunut valo on täysin polarisoitunutta, kun tulokulma on Brewsterin kulma. Silloin heijastunut ja taittunut säde ovat kohtisuorassa toisiaan vastaan. Valo tulee ilmasta ja heijastuu ilmaan, joten $n_1$ on ilman taitekerroin ja $n_2$ on kvartsilasin taitekerroin.
+**Kaava:** $\tan\alpha_\text{B} = \dfrac{n_2}{n_1}$, josta $\alpha_\text{B} = \tan^{-1}\dfrac{n_2}{n_1}$
+**Muunnokset:** Niitä ei tarvita: taitekertoimilla ei ole yksikköä, ja kulma saadaan asteina.
+**Sijoitus:** $\alpha_\text{B} = \tan^{-1}\dfrac{1{,}46}{1{,}00} = \tan^{-1} 1{,}46 = 55{,}59^\circ$
+**Vastaus:** $55{,}6^\circ$. Vastauksessa on kolme merkitsevää numeroa, kuten taitekertoimissa.
+**Järkevyys:** Kvartsilasin taitekerroin on suurempi kuin veden $1{,}33$ ja pienempi kuin akryylin $1{,}49$. Kulman pitää siis olla veden kulman $53{,}1^\circ$ ja akryylin kulman $56{,}1^\circ$ välissä, kuten tuloksessa. Tarkistus: $\tan 55{,}59^\circ = 1{,}46$.
+
+## fy7-15-L2-05
+**Annettu:** taulukon mittauspisteet $(\theta;\ E)$ kymmenellä kulmalla. Suurin lukema on $322\,\text{lx}$ kulmalla $0^\circ$ ja pienin $7\,\text{lx}$ kulmalla $90^\circ$.
+**Kysytty:** lukema $E_0$, jonka pelkkä näytön polarisoitunut valo antaa, kun läpäisysuunta on näytön polarisaation suuntainen, yksikössä $\text{lx}$
+**Periaate:** Näytön valo on polarisoitunutta. Malusin lain mukaan sen osuus lukemasta on $E_0 \cos^2\theta$. Taustavalo lisää jokaiseen lukemaan saman verran $E_\text{t}$. Lukema on siis $E = E_0 \cos^2\theta + E_\text{t}$. Kun $E$ piirretään $\cos^2\theta$:n funktiona, pisteet ovat suoralla. Suoran kulmakerroin on $E_0$ ja vakiotermi on $E_\text{t}$.
+**Kuvaajan lukeminen:** Pisteet ovat nousevalla suoralla. Suoran molemmin puolin on pisteitä. Kulmat $0^\circ$, $30^\circ$, $60^\circ$ ja $90^\circ$ antavat arvot $\cos^2\theta = 1$, $0{,}75$, $0{,}25$ ja $0$. Sovitettu suora kulkee likimain pisteiden $(0;\ 7\,\text{lx})$ ja $(1;\ 321\,\text{lx})$ kautta. Vakiotermi $7\,\text{lx}$ on taustavalo. Arvot luetaan suoralta, ei yksittäisistä mittauspisteistä.
+**Kaava:** $E_0 = \dfrac{\Delta E}{\Delta (\cos^2\theta)} = \dfrac{E_2 - E_1}{x_2 - x_1}$, missä $x = \cos^2\theta$
+**Muunnokset:** Niitä ei tarvita: lukemat ovat luksiyksikössä, ja $\cos^2\theta$ on yksikötön luku.
+**Sijoitus:** $E_0 = \dfrac{321\,\text{lx} - 7\,\text{lx}}{1 - 0} = 314\,\text{lx}$
+**Vastaus:** $314\,\text{lx}$. Vastauksessa on kolme merkitsevää numeroa, kuten lukemissa. Silmämääräinen sovitus vaihtelee, joten noin $309\text{–}319\,\text{lx}$ on hyvä vastaus.
+**Järkevyys:** Kulmalla $0^\circ$ lukema on $314\,\text{lx} + 7\,\text{lx} = 321\,\text{lx}$. Se vastaa taulukon arvoa $322\,\text{lx}$. Kulmalla $60^\circ$ suora antaa $314 \cdot 0{,}25 + 7 = 85{,}5\,\text{lx}$. Se vastaa taulukon arvoa $88\,\text{lx}$. Oikeissa mittauksissa pisteet eivät yleensä ole täsmälleen samalla suoralla, koska mittauksissa on epävarmuutta. Jos taustavaloa ei vähennettäisi, vastaukseksi tulisi suurin lukema $322\,\text{lx}$. Se jää hyväksytyn välin ulkopuolelle.
+
+## fy7-15-L2-06
+**Annettu:** taulukon mittauspisteet $(\theta;\ I : I_0)$, esimerkiksi $(45^\circ;\ 0{,}51)$ ja $(60^\circ;\ 0{,}26)$; kysytty suhde $I : I_0 = 0{,}40$
+**Kysytty:** kulma $\theta$ asteina, jolla intensiteetti on $40\,\%$ tulevan valon intensiteetistä
+**Periaate:** Polarisoituneesta valosta läpi tuleva osuus noudattaa Malusin lakia $I : I_0 = \cos^2\theta$. Mittauspisteiden kautta piirretään tasainen käyrä, koska pisteissä on hajontaa. Hajonta johtuu mittausepävarmuudesta. Kulma luetaan käyrältä kohdasta, jossa suhde on $0{,}40$. Tulos tarkistetaan laskemalla Malusin lain avulla.
+**Kuvaajan lukeminen:** Käyrä laskee kulmasta $45^\circ$ kulmaan $60^\circ$. Kulmalla $45^\circ$ suhde on noin $0{,}51$ ja kulmalla $60^\circ$ noin $0{,}26$. Vaaka-akselin suuntainen viiva kohdasta $0{,}40$ leikkaa käyrän kulman $51^\circ$ kohdalla. Käyrä on näiden pisteiden välillä lähes suora.
+**Kaava:** $\cos^2\theta = \dfrac{I}{I_0}$, josta $\theta = \cos^{-1}\sqrt{\dfrac{I}{I_0}}$
+**Muunnokset:** Niitä ei tarvita: osuus $40\,\% = 0{,}40$ on suhdeluku, ja kulma saadaan asteina.
+**Sijoitus:** $\theta = \cos^{-1}\sqrt{0{,}40} = \cos^{-1} 0{,}6325 = 50{,}77^\circ$
+**Vastaus:** $50{,}8^\circ$. Vastauksessa on kolme merkitsevää numeroa, kuten mittauspisteiden kulmissa. Käyrältä luettu noin $51^\circ$ on hyvä vastaus.
+**Järkevyys:** Kulmalla $45^\circ$ osuus on $0{,}50$ ja kulmalla $60^\circ$ se on $0{,}25$. Osuuden $0{,}40$ pitää siis olla näiden kulmien välissä, lähempänä kulmaa $45^\circ$. Tulos $50{,}8^\circ$ on näiden välissä. Tarkistus: $\cos^2 50{,}8^\circ = 0{,}40$.
+
+## fy7-15-L2-07
+**Annettu:** ilman taitekerroin $1{,}00$ ja etanolin taitekerroin $1{,}36$, valo tulee ilmasta; opiskelijan tulos $36{,}3^\circ$
+**Kysytty:** Brewsterin kulma $\alpha_\text{B}$ asteina ja opiskelijan kulman $36{,}3^\circ$ merkitys
+**Periaate:** Brewsterin laissa $\tan\alpha_\text{B} = n_2 : n_1$ osoittajassa on sen aineen taitekerroin, johon valo taittuu. Nimittäjässä on sen aineen taitekerroin, josta valo tulee. Tässä valo tulee ilmasta etanoliin. Siksi $n_1$ on ilman ja $n_2$ on etanolin taitekerroin. Opiskelija vaihtoi taitekertoimet keskenään ja laski suhteen $n_1 : n_2$.
+**Kaava:** $\tan\alpha_\text{B} = \dfrac{n_2}{n_1}$, josta $\alpha_\text{B} = \tan^{-1}\dfrac{n_2}{n_1}$
+**Muunnokset:** Niitä ei tarvita: taitekertoimilla ei ole yksikköä, ja kulma saadaan asteina.
+**Sijoitus:** $\alpha_\text{B} = \tan^{-1}\dfrac{1{,}36}{1{,}00} = \tan^{-1} 1{,}36 = 53{,}67^\circ$
+**Vastaus:** $53{,}7^\circ$. Vastauksessa on kolme merkitsevää numeroa, kuten taitekertoimissa.
+**Järkevyys:** Kun $n_2 > n_1$, on $\tan\alpha_\text{B} > 1$. Brewsterin kulman pitää siis olla yli $45^\circ$. Opiskelijan kulma $36{,}3^\circ$ on alle $45^\circ$. Se ei voi olla Brewsterin kulma valolle, joka tulee ilmasta tiheämpään aineeseen. Opiskelijan kulma on $90^\circ - 53{,}67^\circ = 36{,}33^\circ$ eli taitekulma etanolissa. Brewsterin kulmassa heijastunut ja taittunut säde ovat kohtisuorassa toisiaan vastaan. Sama kulma on myös Brewsterin kulma valolle, joka tulee etanolin sisältä ilmaan, koska silloin $\tan\alpha_\text{B} = 1{,}00 : 1{,}36$.
+**Mallivastaus:** Virhe oli taitekertoimien järjestys Brewsterin laissa. Opiskelijan laskema kulma $36{,}3^\circ$ ei ole tulokulma vaan taitekulma etanolissa, kun tulokulma on oikea Brewsterin kulma $53{,}7^\circ$. Se olisi Brewsterin kulma vasta valolle, joka tulee etanolin sisältä ilmaan.
+
+## fy7-15-L3-04
+**Annettu:** polarisoimattoman valon intensiteetti $I_0 = 960\,\text{W/m}^2$, kolme ihanteellista polarisaattoria. Ensimmäisen ja viimeisen läpäisysuunnat ovat kohtisuorassa. Keskimmäinen on kulmassa $\theta$ ensimmäiseen nähden. Taulukon mittauspisteet $(\theta;\ I_3)$.
+**Kysytty:** kuinka monta prosenttia $I_0$:sta pääsee läpi suurimmillaan, osuus $I_3 : I_0$ yksikössä $\%$; lisäksi suurimman intensiteetin kulma ja perustelu sille, miksi kolmas polarisaattori päästää valoa läpi
+**Periaate:** Ensimmäinen polarisaattori puolittaa polarisoimattoman valon. Sen jälkeen valo on polarisoitunutta, joten keskimmäiseen ja viimeiseen käytetään Malusin lakia. Keskimmäinen on kulmassa $\theta$ ensimmäiseen nähden. Se on siis kulmassa $90^\circ - \theta$ viimeiseen nähden, koska ensimmäinen ja viimeinen ovat kohtisuorassa.
+**Kuvaajan lukeminen:** Taulukon suurin lukema $114\,\text{W/m}^2$ on kulmalla $45^\circ$. Lukemat kulmilla $15^\circ$ ja $75^\circ$ ovat $32\,\text{W/m}^2$ ja $28\,\text{W/m}^2$. Ne ovat likimain yhtä suuret. Lukemat kulmilla $0^\circ$ ja $90^\circ$ ovat lähes nollia.
+**Kaava:** $I_1 = \tfrac{1}{2} I_0$, $I_2 = I_1 \cos^2\theta$ ja $I_3 = I_2 \cos^2(90^\circ - \theta) = I_2 \sin^2\theta$, josta $I_3 = \tfrac{1}{2} I_0 \cos^2\theta \sin^2\theta = \tfrac{1}{8} I_0 \sin^2 2\theta$. Suurin arvo saadaan, kun $\sin 2\theta = 1$ eli $\theta = 45^\circ$. Silloin $\dfrac{I_3}{I_0} = \dfrac{1}{8}$.
+**Muunnokset:** Niitä ei tarvita: kulmat ovat asteina. Osuus muunnetaan prosenteiksi kertomalla luvulla $100$.
+**Sijoitus:** $I_3 = \tfrac{1}{2} \cdot 960\,\text{W/m}^2 \cdot \cos^2 45^\circ \cdot \sin^2 45^\circ = 480\,\text{W/m}^2 \cdot 0{,}500 \cdot 0{,}500 = 120\,\text{W/m}^2$ ja $\dfrac{I_3}{I_0} = \dfrac{120\,\text{W/m}^2}{960\,\text{W/m}^2} = 0{,}125 = 12{,}5\,\%$
+**Vastaus:** $12{,}5\,\%$ eli $120\,\text{W/m}^2$. Tulos on tarkka, koska ihanteellisesta mallista seuraa täsmälleen $\tfrac{1}{8} = 0{,}125$. Intensiteetti on suurin kulmalla $45^\circ$. Kulmilla $15^\circ$ ja $75^\circ$ lauseke antaa saman arvon $30\,\text{W/m}^2$, koska $\sin 2\theta$ on sama kulmilla $\theta$ ja $90^\circ - \theta$.
+**Järkevyys:** Taulukon suurin lukema $114\,\text{W/m}^2$ on lähellä laskettua arvoa $120\,\text{W/m}^2$. Kulmalla $15^\circ$ laskettu arvo $30\,\text{W/m}^2$ vastaa taulukon lukemaa $32\,\text{W/m}^2$. Lukemat poikkeavat lasketuista muutaman $\text{W/m}^2$ molempiin suuntiin. Esimerkiksi kulmalla $60^\circ$ lukema $93\,\text{W/m}^2$ on yli lasketun arvon $90\,\text{W/m}^2$. Se johtuu mittausepävarmuudesta. Osuus $12{,}5\,\%$ on alle $50\,\%$, jotka ensimmäinen polarisaattori päästää läpi, kuten pitääkin.
+**Mallivastaus (kohta c):** Ensimmäisen jälkeen valo on polarisoitunutta kohtisuoraan viimeisen läpäisysuuntaan nähden. Viimeinen sulkisi sen. Keskimmäinen päästää läpi vain oman läpäisysuuntansa suuntaisen osan. Sen jälkeen valo on polarisoitunutta keskimmäisen läpäisysuuntaan. Silloin valolla on osa myös viimeisen läpäisysuunnassa, ja osa valosta pääsee läpi. Polarisaattori ei vain himmennä valoa. Läpi tulleen valon polarisaatiosuunta on aina polarisaattorin läpäisysuunta, ja osa valosta absorboituu.
+
+## fy7-15-L3-05
+**Annettu:** häikäisyn intensiteetti $I_0 = 40\,\text{W/m}^2$, veden taitekerroin $n_2 = 1{,}33$, ilman taitekerroin $n_1 = 1{,}00$, tulokulma on Brewsterin kulma, lasien läpäisysuunta on $\varphi = 25{,}0^\circ$ pystysuunnasta, tavallisen lasin läpäisykerroin $30\,\%$
+**Kysytty:** Auringon korkeus horisontin yläpuolella; häikäisyn intensiteetti $I$ polaroitujen lasien jälkeen yksikössä $\text{W/m}^2$; lasien vertailu
+**Periaate:** Valo tulee ilmasta veteen. Siksi $n_1$ on ilman ja $n_2$ on veden taitekerroin, ja Brewsterin kulma on $\alpha_\text{B} = \tan^{-1}(n_2 : n_1)$. Kulma mitataan pinnan normaalista. Auringon korkeus vaakasuorasta pinnasta on siis $90^\circ - \alpha_\text{B}$. Brewsterin kulmassa heijastunut valo on täysin polarisoitunutta pinnan suuntaan eli vaakasuuntaan. Siihen käytetään Malusin lakia. Läpäisysuunta on $25{,}0^\circ$ pystysuunnasta. Sen ja vaakasuoran polarisaatiosuunnan välinen kulma on siksi $\theta = 90^\circ - 25{,}0^\circ$.
+**Kaava:** $\alpha_\text{B} = \tan^{-1}\dfrac{n_2}{n_1}$, korkeus $h = 90^\circ - \alpha_\text{B}$, kulma $\theta = 90^\circ - \varphi$ ja $I = I_0 \cos^2\theta$
+**Muunnokset:** Niitä ei tarvita: kulmat ovat asteina, ja intensiteetti pysyy yksikössä $\text{W/m}^2$. Osuus $30\,\% = 0{,}30$.
+**Sijoitus:** $\alpha_\text{B} = \tan^{-1}\dfrac{1{,}33}{1{,}00} = 53{,}06^\circ$, joten $h = 90^\circ - 53{,}06^\circ = 36{,}94^\circ$. Kulma on $\theta = 90^\circ - 25{,}0^\circ = 65{,}0^\circ$, ja $I = 40\,\text{W/m}^2 \cdot \cos^2 65{,}0^\circ = 40\,\text{W/m}^2 \cdot 0{,}1786 = 7{,}144\,\text{W/m}^2$. Tavallinen lasi päästäisi läpi $0{,}30 \cdot 40\,\text{W/m}^2 = 12\,\text{W/m}^2$.
+**Vastaus:** $7{,}1\,\text{W/m}^2$. Vastauksessa on kaksi merkitsevää numeroa, kuten häikäisyn intensiteetissä $40\,\text{W/m}^2$. Auringon korkeus on $36{,}9^\circ$. Polaroidut lasit vähentävät häikäisyä enemmän, koska niiden läpi pääsee $7{,}1\,\text{W/m}^2$ ja tavallisen lasin läpi $12\,\text{W/m}^2$.
+**Järkevyys:** Jos pää olisi suorassa, kulma olisi $90^\circ$ ja häikäisy sammuisi kokonaan. Pienikin kallistus päästää siis vähän valoa läpi. Tulos $7{,}1\,\text{W/m}^2$ on alle viidesosa alkuperäisestä $40\,\text{W/m}^2$. Polaroitu lasi on parempi, kun $\cos^2\theta < 0{,}30$ eli $\theta > 56{,}8^\circ$. Tässä $\theta = 65{,}0^\circ$ täyttää ehdon.
+**Mallivastaus:** Polaroidut lasit vähentävät häikäisyä enemmän. Häikäisy on täysin vaakasuuntaan polarisoitunutta, ja kalvo absorboi sen, kun läpäisysuunta on lähes pystysuora. Tavallinen lasi vaimentaa häikäisyä ja muuta valoa yhtä paljon. Kun kallistus on yli $33{,}2^\circ$, tavallinen lasi olisi parempi. Polaroidut lasit puolittavat polarisoimattoman valon intensiteetin. Tavallinen lasi päästää läpi $30\,\%$. Muun valon osalta tavallinen lasi siis himmentää enemmän.

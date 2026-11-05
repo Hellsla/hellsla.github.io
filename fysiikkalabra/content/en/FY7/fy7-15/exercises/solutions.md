@@ -117,3 +117,84 @@
 **Substitution:** $E = (420\,\text{lx} - 16\,\text{lx}) \cdot \cos^2 60.0^\circ + 16\,\text{lx} = 404\,\text{lx} \cdot 0.250 + 16\,\text{lx} = 117\,\text{lx}$
 **Answer:** $117\,\text{lx}$, three significant figures like the reading $420\,\text{lx}$.
 **Reasonableness:** Without the background light the result would be $420\,\text{lx} \cdot 0.250 = 105\,\text{lx}$. The share of the background light does not change as the film is turned, so the reading must be slightly larger, as in the result. The result lies between the largest reading and the background light, as it should.
+
+## fy7-15-L1-06
+**Find:** why polarised sunglasses reduce especially the glare reflected from the surface of water.
+**Principle:** Light reflected from the surface of a dielectric such as water is partially polarised along the surface, so the glare from the surface of the water is polarised in the horizontal direction. A polariser lets through only the component of the electric field along its transmission axis and absorbs the component perpendicular to it. The transmission axis means the direction of oscillation of the electric field, not the direction in which the light travels.
+**Model answer:** Light reflected from the surface of water is partially polarised in the horizontal direction. The transmission axis of the film in the glasses is vertical, so the film absorbs the horizontal oscillation and lets through only the vertical one. In this way the glare is dimmed much more than other light. If the film were tilted, it would let horizontally polarised light through, which is why the orientation of the glasses matters. Mere tinting would not separate glare from other light, and the transmission axis does not limit the direction in which the light travels.
+
+## fy7-15-L1-07
+**Given:** intensity of the polarised light $I_0 = 300\,\text{W/m}^2$, angle between the polarisation direction and the transmission axis $\theta = 55.0^\circ$
+**Find:** intensity $I$ of the light after the film, in $\text{W/m}^2$
+**Principle:** Polarised light arrives at the film, so Malus's law applies. Only the component of the electric field along the transmission axis, $E_0 \cos\theta$, passes through, and the intensity is proportional to the square of the amplitude.
+**Formula:** $I = I_0 \cos^2\theta$
+**Conversions:** Not needed: the intensity stays in $\text{W/m}^2$, and the angle is in degrees.
+**Substitution:** $I = 300\,\text{W/m}^2 \cdot \cos^2 55.0^\circ = 300\,\text{W/m}^2 \cdot 0.3290 = 98.70\,\text{W/m}^2$
+**Answer:** $98.7\,\text{W/m}^2$, three significant figures like the angle $55.0^\circ$.
+**Reasonableness:** The angle $55^\circ$ is larger than $45^\circ$, at which half would pass through, that is $150\,\text{W/m}^2$, and smaller than $60^\circ$, at which a quarter would pass through, that is $75\,\text{W/m}^2$. The result $98.7\,\text{W/m}^2$ lies between these, about a third of the incident light.
+
+## fy7-15-L1-08
+**Given:** refractive index of air $n_1 = 1.00$, refractive index of quartz glass $n_2 = 1.46$
+**Find:** Brewster's angle $\alpha_\text{B}$ in degrees
+**Principle:** Reflected light is completely polarised when the angle of incidence is Brewster's angle, at which the reflected and the refracted ray are perpendicular to each other. The light comes from air and is reflected back into air, so $n_1$ is the refractive index of air and $n_2$ that of quartz glass.
+**Formula:** $\tan\alpha_\text{B} = \dfrac{n_2}{n_1}$, so $\alpha_\text{B} = \tan^{-1}\dfrac{n_2}{n_1}$
+**Conversions:** Not needed: the refractive indices are numbers without units, and the angle comes out in degrees.
+**Substitution:** $\alpha_\text{B} = \tan^{-1}\dfrac{1.46}{1.00} = \tan^{-1} 1.46 = 55.59^\circ$
+**Answer:** $55.6^\circ$, three significant figures like the refractive indices.
+**Reasonableness:** The refractive index of quartz glass is larger than that of water, $1.33$, and smaller than that of acrylic, $1.49$, so the angle must lie between the $53.1^\circ$ of water and the $56.1^\circ$ of acrylic, as in the result. Check: $\tan 55.59^\circ = 1.46$.
+
+## fy7-15-L2-05
+**Given:** the measured points $(\theta;\ E)$ of the table at ten angles, of which the largest reading is $322\,\text{lx}$ at $0^\circ$ and the smallest $7\,\text{lx}$ at $90^\circ$
+**Find:** the reading $E_0$ that the polarised light of the display alone gives when the transmission axis is aligned with the polarisation of the display, in $\text{lx}$
+**Principle:** The light of the display is polarised, so according to Malus's law its share of the reading is $E_0 \cos^2\theta$. The background light adds the same amount $E_\text{b}$ to every reading, so the reading is $E = E_0 \cos^2\theta + E_\text{b}$. When $E$ is plotted as a function of $\cos^2\theta$, the points lie on a straight line whose slope is $E_0$ and whose constant term is $E_\text{b}$.
+**Reading the graph:** The points lie on a rising line with points on both sides of it. The angles $0^\circ$, $30^\circ$, $60^\circ$ and $90^\circ$ give the values $\cos^2\theta = 1$, $0.75$, $0.25$ and $0$. The fitted line passes approximately through the points $(0;\ 7\,\text{lx})$ and $(1;\ 321\,\text{lx})$. The constant term $7\,\text{lx}$ is the background light, and the values are read from the line, not from individual measured points.
+**Formula:** $E_0 = \dfrac{\Delta E}{\Delta (\cos^2\theta)} = \dfrac{E_2 - E_1}{x_2 - x_1}$, where $x = \cos^2\theta$
+**Conversions:** Not needed: the readings are in lux, and $\cos^2\theta$ is a number without units.
+**Substitution:** $E_0 = \dfrac{321\,\text{lx} - 7\,\text{lx}}{1 - 0} = 314\,\text{lx}$
+**Answer:** $314\,\text{lx}$, three significant figures like the readings. A fit by eye varies, so about $309\text{–}319\,\text{lx}$ is a good answer.
+**Reasonableness:** At $0^\circ$ the reading is $314\,\text{lx} + 7\,\text{lx} = 321\,\text{lx}$, which agrees with the value $322\,\text{lx}$ of the table. At $60^\circ$ the line gives $314 \cdot 0.25 + 7 = 85.5\,\text{lx}$, which agrees with the value $88\,\text{lx}$ of the table. In real series of measurements the points do not usually lie exactly on one line because of measurement uncertainty. If the background light were not subtracted, the answer would be the largest reading $322\,\text{lx}$, which lies outside the accepted range.
+
+## fy7-15-L2-06
+**Given:** the measured points $(\theta;\ I : I_0)$ of the table, for example $(45^\circ;\ 0.51)$ and $(60^\circ;\ 0.26)$; the ratio asked about is $I : I_0 = 0.40$
+**Find:** the angle $\theta$ in degrees at which the intensity is $40\,\%$ of the intensity of the incident light
+**Principle:** The share of polarised light that passes through follows Malus's law, $I : I_0 = \cos^2\theta$. A smooth curve is drawn through the measured points, because the points have scatter caused by measurement uncertainty. The angle is read from the curve where the ratio is $0.40$, and the result is checked by calculating with Malus's law.
+**Reading the graph:** The curve falls from the angle $45^\circ$, where the ratio is about $0.51$, to the angle $60^\circ$, where it is about $0.26$. A line parallel to the horizontal axis from $0.40$ meets the curve at the angle $51^\circ$, because the curve is almost straight between these points.
+**Formula:** $\cos^2\theta = \dfrac{I}{I_0}$, so $\theta = \cos^{-1}\sqrt{\dfrac{I}{I_0}}$
+**Conversions:** Not needed: the share $40\,\% = 0.40$ is a ratio, and the angle comes out in degrees.
+**Substitution:** $\theta = \cos^{-1}\sqrt{0.40} = \cos^{-1} 0.6325 = 50.77^\circ$
+**Answer:** $50.8^\circ$, three significant figures like the angles of the measured points. About $51^\circ$ read from the curve is a good answer.
+**Reasonableness:** At $45^\circ$ the share is $0.50$ and at $60^\circ$ it is $0.25$, so the share $0.40$ must lie between these, closer to $45^\circ$. The result $50.8^\circ$ lies between them. Check: $\cos^2 50.8^\circ = 0.40$.
+
+## fy7-15-L2-07
+**Given:** refractive index of air $1.00$ and of ethanol $1.36$, the light comes from air; the student's result $36.3^\circ$
+**Find:** Brewster's angle $\alpha_\text{B}$ in degrees and the meaning of the student's angle $36.3^\circ$
+**Principle:** In Brewster's law $\tan\alpha_\text{B} = n_2 : n_1$ the numerator is the refractive index of the substance into which the light is refracted, and the denominator is that of the substance from which the light comes. Here the light goes from air into ethanol, so $n_1$ is the refractive index of air and $n_2$ that of ethanol. The student swapped the refractive indices and calculated the ratio $n_1 : n_2$.
+**Formula:** $\tan\alpha_\text{B} = \dfrac{n_2}{n_1}$, so $\alpha_\text{B} = \tan^{-1}\dfrac{n_2}{n_1}$
+**Conversions:** Not needed: the refractive indices are numbers without units, and the angle comes out in degrees.
+**Substitution:** $\alpha_\text{B} = \tan^{-1}\dfrac{1.36}{1.00} = \tan^{-1} 1.36 = 53.67^\circ$
+**Answer:** $53.7^\circ$, three significant figures like the refractive indices.
+**Reasonableness:** When $n_2 > n_1$, $\tan\alpha_\text{B} > 1$, so Brewster's angle must be more than $45^\circ$. The student's $36.3^\circ$ is less than $45^\circ$, so it cannot be Brewster's angle for light arriving from air into a denser substance. The student's angle is $90^\circ - 53.67^\circ = 36.33^\circ$, which is the angle of refraction in ethanol: at Brewster's angle the reflected and the refracted ray are perpendicular to each other. The same angle is also Brewster's angle for light arriving from inside the ethanol into air, because then $\tan\alpha_\text{B} = 1.00 : 1.36$.
+**Model answer:** The error was the order of the refractive indices in Brewster's law. The angle $36.3^\circ$ that the student calculated is not an angle of incidence but the angle of refraction in ethanol when the angle of incidence is the correct Brewster's angle $53.7^\circ$. It would be Brewster's angle only for light arriving from inside the ethanol into air.
+
+## fy7-15-L3-04
+**Given:** intensity of unpolarised light $I_0 = 960\,\text{W/m}^2$, three ideal polarisers, of which the transmission axes of the first and the last are perpendicular and the middle one is at an angle $\theta$ to the first; the measured points $(\theta;\ I_3)$ of the table
+**Find:** what percentage of $I_0$ passes through at most, the ratio $I_3 : I_0$ in $\%$; also the angle of the greatest intensity and the justification for the effect of the third polariser
+**Principle:** The first polariser halves the unpolarised light. After that the light is polarised, so Malus's law applies to the middle and the last polariser. The middle one is at an angle $\theta$ to the first and therefore at an angle $90^\circ - \theta$ to the last, because the first and the last are perpendicular.
+**Reading the graph:** The greatest reading of the table, $114\,\text{W/m}^2$, is at the angle $45^\circ$. The readings at the angles $15^\circ$ and $75^\circ$ are $32\,\text{W/m}^2$ and $28\,\text{W/m}^2$, so approximately equal, and the readings at the angles $0^\circ$ and $90^\circ$ are almost zero.
+**Formula:** $I_1 = \tfrac{1}{2} I_0$, $I_2 = I_1 \cos^2\theta$ and $I_3 = I_2 \cos^2(90^\circ - \theta) = I_2 \sin^2\theta$, so $I_3 = \tfrac{1}{2} I_0 \cos^2\theta \sin^2\theta = \tfrac{1}{8} I_0 \sin^2 2\theta$. The greatest value is obtained when $\sin 2\theta = 1$, that is $\theta = 45^\circ$, and then $\dfrac{I_3}{I_0} = \dfrac{1}{8}$.
+**Conversions:** Not needed: the angles are in degrees, and the share is converted to a percentage by multiplying by $100$.
+**Substitution:** $I_3 = \tfrac{1}{2} \cdot 960\,\text{W/m}^2 \cdot \cos^2 45^\circ \cdot \sin^2 45^\circ = 480\,\text{W/m}^2 \cdot 0.500 \cdot 0.500 = 120\,\text{W/m}^2$ and $\dfrac{I_3}{I_0} = \dfrac{120\,\text{W/m}^2}{960\,\text{W/m}^2} = 0.125 = 12.5\,\%$
+**Answer:** $12.5\,\%$, that is $120\,\text{W/m}^2$. The result is exact, because the ideal model gives exactly $\tfrac{1}{8} = 0.125$. The intensity is greatest at the angle $45^\circ$. At the angles $15^\circ$ and $75^\circ$ the expression gives the same value, $30\,\text{W/m}^2$, because $\sin 2\theta$ is the same at the angles $\theta$ and $90^\circ - \theta$.
+**Reasonableness:** The greatest reading of the table, $114\,\text{W/m}^2$, is close to the calculated $120\,\text{W/m}^2$, and the calculated $30\,\text{W/m}^2$ at $15^\circ$ agrees with the reading $32\,\text{W/m}^2$ of the table. The readings differ from the calculated ones by a few $\text{W/m}^2$ in both directions (at $60^\circ$ the reading $93\,\text{W/m}^2$ is above the calculated $90\,\text{W/m}^2$), which is measurement uncertainty. The share $12.5\,\%$ is below the $50\,\%$ that the first polariser lets through, as it should be.
+**Model answer (part c):** After the first one the light is polarised perpendicular to the transmission axis of the last one, so the last one would block it. The middle one lets through only the component along its own transmission axis, so after it the light is polarised along that direction. The light then has a component also along the transmission axis of the last one, and part of it passes through. A polariser does not merely dim the light: the polarisation direction of the light that has passed through is always the transmission axis of the polariser, and part of the light is absorbed.
+
+## fy7-15-L3-05
+**Given:** intensity of the glare $I_0 = 40\,\text{W/m}^2$, refractive index of water $n_2 = 1.33$, refractive index of air $n_1 = 1.00$, the angle of incidence is Brewster's angle, the transmission axis of the glasses is $\varphi = 25.0^\circ$ from the vertical, transmittance of an ordinary lens $30\,\%$
+**Find:** the height of the Sun above the horizon; the intensity $I$ of the glare after the polarised glasses, in $\text{W/m}^2$; a comparison of the lenses
+**Principle:** The light goes from air into water, so $n_1$ is the refractive index of air and $n_2$ that of water, and Brewster's angle is $\alpha_\text{B} = \tan^{-1}(n_2 : n_1)$. The angle is measured from the normal of the surface, so the height of the Sun from the horizontal surface is $90^\circ - \alpha_\text{B}$. At Brewster's angle the reflected light is completely polarised along the surface, that is, horizontally. Malus's law applies to it: when the transmission axis is $25.0^\circ$ from the vertical, the angle between it and the horizontal polarisation direction is $\theta = 90^\circ - 25.0^\circ$.
+**Formula:** $\alpha_\text{B} = \tan^{-1}\dfrac{n_2}{n_1}$, height $h = 90^\circ - \alpha_\text{B}$, angle $\theta = 90^\circ - \varphi$ and $I = I_0 \cos^2\theta$
+**Conversions:** Not needed: the angles are in degrees, and the intensity stays in $\text{W/m}^2$. The share $30\,\% = 0.30$.
+**Substitution:** $\alpha_\text{B} = \tan^{-1}\dfrac{1.33}{1.00} = 53.06^\circ$, so $h = 90^\circ - 53.06^\circ = 36.94^\circ$. The angle is $\theta = 90^\circ - 25.0^\circ = 65.0^\circ$, and $I = 40\,\text{W/m}^2 \cdot \cos^2 65.0^\circ = 40\,\text{W/m}^2 \cdot 0.1786 = 7.144\,\text{W/m}^2$. An ordinary lens would let through $0.30 \cdot 40\,\text{W/m}^2 = 12\,\text{W/m}^2$.
+**Answer:** $7.1\,\text{W/m}^2$, two significant figures like the intensity of the glare $40\,\text{W/m}^2$. The Sun is at a height of $36.9^\circ$. Polarised glasses reduce glare more, because $7.1\,\text{W/m}^2$ passes through them and $12\,\text{W/m}^2$ through an ordinary lens.
+**Reasonableness:** If the head were upright, the angle would be $90^\circ$ and the glare would be extinguished completely, so even a small tilt lets a little light through, and $7.1\,\text{W/m}^2$ is less than a fifth of the original $40\,\text{W/m}^2$. The polarised lens is better when $\cos^2\theta < 0.30$, that is $\theta > 56.8^\circ$, and here $\theta = 65.0^\circ$ meets the condition.
+**Model answer:** Polarised glasses reduce glare more, because the glare is completely polarised in the horizontal direction and the film absorbs it when the transmission axis is almost vertical. An ordinary lens dims glare and other light equally. If the tilt is more than $33.2^\circ$, the ordinary lens would be better. Polarised glasses halve the intensity of unpolarised light, whereas an ordinary lens lets through $30\,\%$, so for other light the ordinary lens dims more.

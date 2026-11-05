@@ -1,16 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 29c50a8511d2f29a
+CONTENT-HASH: acf7bdc90ae62d05
+Mode: full
+Round: 1
 
 ## Blocking
-- (none)
+
+## Fixed
+- None needed: no translation text had to be changed.
 
 ## Polish
-- (none)
+- exercises.json L1-08 - unit "kertaa" for a dimensionless ratio is acceptable; the answer is 310 (314 rounded to two significant figures) in both languages and the Finnish.
 
 ## Checked
-- Recomputed all 12 answers with my own formulas: L1 80 µT, 3,02 mT, 10 µT, 0,100 mT, 1,005 mT; L2 3,98 A, 8,57 cm, 2,50 mT (N = 198,9), 80 µT; L3 2,02 A, 15,0 km (N = 4775), 4,0 cm. All agree with exercises.json within tolerance.
-- Every solution keeps all eight steps (Annettu … Järkevyys, 12/12, same as fi); every number identical to the fi version.
-- Conditions kept in the simplified text: long straight wire, other conductors ignored (L1-03, L1-04), long coil (L1-02, L1-05, L2-01, L3-02 "Oleta käämi pitkäksi"), single layer with wire thickness ignored (L2-03), wire field perpendicular to B_h (L3-01).
-- Superposition directions: L2-04 opposite currents add at the midpoint; L3-03 parallel currents cancel between, nearer the weaker current.
-- Finite-coil caveats correct: L2-03 l = 5d (factor 0,98), L3-02 l = 1,6d (factor 0,848, "noin 85 %", more wire needed).
-- Rounding reasons name the limiting data; symbolic solve before substitution everywhere.
+- Scripted comparison of exercises.json against content/fi: ids, levels, kinds, answers, units (except the translated unit word of L1-08), tolerances, correct flags, data table cells and every number in text and feedback are identical for all 12 exercises, including the 8 new ones (L1-06..08, L2-05..07, L3-04..05).
+- Choice sets of L1-06 and L2-07 match the Finnish: same option order, the same single correct option, the same feedback physics (right-hand rule, anticlockwise from above; B cos 60 deg = 0.50 B).
+- Answers recomputed: 4.7 mT, 310, 1.26 uVs/(Am), 54 uT (and 320 uT in part d), 16 uT, 5.3 mT; L3-05 chain N = 318, l = 0.175 m, R = 2.60 ohm, I = 2.31 A all agree with the Finnish.
+- solutions.md numbers, formulas and LaTeX equal the Finnish (decimal comma as in fi); principles and reasonableness checks keep the Finnish physics.
+- Terms are explained in plain words (linearisointi, kierrostiheys, homogeeninen).
+- python3 scripts/check_i18n.py fi-easy: 0 errors (formula parity with fi).

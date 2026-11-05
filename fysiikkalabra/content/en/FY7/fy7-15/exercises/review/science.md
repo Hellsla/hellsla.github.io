@@ -1,13 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: c2760d9bfb0ce891
+CONTENT-HASH: cde76ff1bfd14f4a
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+- exercises.json L1-06: the `answer` string was still the Finnish sentence while the choices were English, so the answer would never match the correct option; replaced it with the English text of the correct choice (the same string).
+- exercises.json L2-07 and L3-05: gendered "She writes" / "his head" (fi has the neutral "Hän" and no gender) changed to "The student writes" / "their head".
 
 ## Polish
+(none)
 
 ## Checked
-- Translation fidelity against the passed fi exercise set: exercises.json has the same ids, answers, units and tolerances, and the task texts and solutions.md carry the same numbers (decimal point only).
-- One script recomputed every answer with my own formulas: L1 320 / 150 / 9.358 W/m², 56.13°, 67.55°; L2 264.07 W/m², 60.0°, 1.5697, 33.69°; L3 75.0 W/m², 36.94° (below the critical angle 48.75°), 117 lx. All agree with answers.py and exercises.json.
-- Models and conditions: halving only for unpolarised light, Malus for polarised light with ideal films, Brewster with n₁ the medium of incidence and reflection (L3-02 from water, with the critical-angle condition stated); L3-03 states the constant background, ideal film and reading ∝ intensity.
-- Solutions are complete (given, find, principle, formula solved first, conversions, substitution, answer with significant figures, a real reasonableness check such as the Snell check in L1-04 and L2-04 and the reversibility check in L3-02).
-- English wording of the physics is correct throughout (transmission axis, direction of polarisation, angle from the normal, Brewster's angle).
+- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) and the older ones compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags, choices, feedback numbers, data table cells and every number in texts and solutions.md are identical (decimal point in en, comma in fi-easy as in fi).
+- Re-derived: L1-07 98.70 W/m2, L1-08 55.59 deg, L2-05 314 lx (line through 7 and 321 lx), L2-06 50.77 deg, L2-07 53.67 deg (36.33 deg is the refraction angle), L3-04 12.5 % (120 W/m2), L3-05 h = 36.94 deg, I = 7.144 W/m2, tint breakeven theta 56.8 deg (tilt 33.2 deg). All agree with fi.
+- L1-06: one correct option, distractor feedback explains the same error as fi; no Finnish left in the English text (grep).
+- Wording: natural English; terms consistent with the glossary (transmission axis / läpäisysuunta, Brewster's angle, analyser).
+- check_i18n.py en: 0 errors.

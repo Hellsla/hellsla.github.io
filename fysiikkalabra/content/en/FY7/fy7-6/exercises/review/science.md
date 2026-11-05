@@ -1,15 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 5d735ce13b92c2f3
+CONTENT-HASH: 3e8591f7a1a46170
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+(none: no translation text needed changing)
 
 ## Polish
-- exercises.json:56 (L2-02) — "the magnetic flux through the coil" is read in the solution as the flux through one turn; "through each turn" would remove the ambiguity (same in fi).
-- exercises/review/packet-science.md:53 — the "Exercise brief" block is empty in the en packet (the generator looks for Finnish section names); a review_packet.py fix, not the exercise set.
+(none)
 
 ## Checked
-- Numeric answers, units and tolerances identical to fi; the three word answers (L1-02, L1-05, L3-02) translate the Finnish ones faithfully.
-- Recomputed in one script: L1 0.39 N, 100.8→1.0·10² kJ, 74 mW; L2 29 mW, 0.20 A, 0.151→0.15 m/s, 4.17→4.2 MW; L3 0.0727→0.073 K, 0.60 N (Fv = RI² = 1.8 W).
-- Models: steady speed ⇒ F = mg (first law), P = Fv, Q = ΔEp − Ek, no heat loss and no change of state stated in L3-01; Lenz directions in L1-02 and L2-02 correct.
-- L3-02 (Waltenhofen pendulum) and L1-05 (hob) model answers name the mechanism: eddy currents, Lenz braking, closed loops cut by the slits, glass an insulator.
-- Solutions complete with symbolic solving, conversions, sig. figs and real reasonableness checks.
+- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05): ids, level, kind, answer, unit, tolerance, correct flags, choice order and every data table cell identical to fi (programmatic comparison of all non-string fields; every number in every string compared after normalising decimal separators: 0 differences).
+- Formulas and LaTeX in exercises.json and solutions.md match fi; recomputed 6.0 V, 27 mW (7.32 s, 0.1366 m/s), 0.35 mWb, 2.7 m/s^2 (v_r 0.74 m/s, k 0.663), 0.15 W (k 1.201 W/mm^2): all agree with the fi answers.
+- Physics wording faithful: Lenz opposes the change in flux, not the field; N/S pole directions in L1-06 and L2-06 as in fi; eddy-current braking explained as in fi.
+- English: natural, no Finnish left (grep for ä/ö in exercises.json and solutions.md: none); decimal point in JSON and LaTeX.
+- python3 scripts/check_i18n.py en: 0 errors.

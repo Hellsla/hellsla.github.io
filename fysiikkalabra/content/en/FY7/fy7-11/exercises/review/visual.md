@@ -1,15 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 7ae87cbc6cfd7f44
+CONTENT-HASH: 07439b13533f3ae8
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
+## Fixed
+- exercises.json L2-05 c) — "Justify with ... why a prism spectrometer is better made of" reworded to "Use the refractive indices in the table to explain why ...".
+- exercises.json L3-04 c) — "tell whether" changed to "say whether". No numbers touched.
+
 ## Polish
-- [Minor] solutions.md L3-01 — the Substitution chain is still split into text fragments and small boxes ("α4 = 34.84°. Violet:", "α2 = 27.52°,"); one aligned block each for red and violet would read better.
+(none)
 
 ## Checked
-- open-exercises-L2-1280-1 (fibre), L2-1280-3 (prism, flint graph start), L3-1280-1, L3-1280-2 (red/violet substitution chains, reasonableness), contact-2.
-- Round-1 blocker fixed: red is `n_\text{r}` / `\alpha_\text{r}` / `\delta_\text{r}` everywhere, violet `v`; no `\text{p}` remains in exercises. Units, `\cdot`, colon division, thin spaces correct; no Finnish visible.
-
-## Scores
-illustrations 5 · typography 4 · Finnish (English prose) 4 · accessibility 4
+- Reviewed the exercise captures of the new tasks (open-exercises L1, L2, L3 shots): choices, feedback boxes, data tables and solution blocks render without overflow.
+- Maths set as LaTeX in every number and unit; en uses the decimal point and fi-easy the decimal comma ({,}) in maths, as in fi; table cells keep the fi form.
+- Subscripts: en uses r (red), fi-easy keeps p (punainen) like fi; consistent through text, tables and solutions.
+- Table headers and captions translated; no stray Finnish in en, no English in fi-easy.
+- Display blocks in solutions are the same as fi (formula parity checked by check_i18n).

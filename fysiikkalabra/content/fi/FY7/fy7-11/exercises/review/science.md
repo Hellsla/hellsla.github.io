@@ -1,20 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 6125beade01a1c5a
+CONTENT-HASH: 1ce25266ae253843
+
+Round 2 (the round-1 verdict was PASS): The developer applied three round-1 polish items. L2-07 now gives the reading accuracy as ±0,002 (0,15 % in v), labels 1,5167 as a manufacturer's table value and tightens its tolerance to 0,003. L3-04 now says 42,3°. L3-05 now says A_max = 64,98°, notes the 0,02° margin and has the missing verb. L1-06 has new distractor wording and its options are in a new order.
 
 ## Blocking
 
 ## Polish
-- solutions.md fy7-11-L1-03 Järkevyys: it says 1,516 lies "between red (1,5143) and blue (1,5224), where green should be". For crown glass, green (about 530 nm) is about 1,519, between yellow 1,5167 and blue. 1,516 lies between red and yellow. It agrees within the angles' ±0,05° (Δn ≈ ±0,003), and the task does not say the glass is crown. Say "about 1,52, close to the table's crown-glass values; the difference fits the measuring accuracy of the angles".
-- solutions.md fy7-11-L3-02: it compares with the red edge at 42,3°. With the task's own n = 1,332, the maximum is 42,2° (at α ≈ 59,5°). The conclusion holds either way. Optionally say "about 42°".
-- exercises.json fy7-11-L2-03 / figure flint-points: the figure's description gives no n values, so a screen-reader user cannot read n(450 nm). Optionally add "at 450 nm n ≈ 1,639" to the description, or flag this to the visual reviewer.
+- exercises.json fy7-11-L1-08 (carried over): the plan (Taso 1) asks for "taitekulma kahdelle värille", but L1-08 is a θ − h task. — Update the plan line or note the swap.
+- exercises.json fy7-11-L2-06 vs L3-03 (carried over): both compute θ = 4β − 2α for red and violet light. L3-03's level 3 rests on its different α per colour. — Note this in the plan.
 
 ## Checked
-- Recomputed all 12 answers independently in one script: L1 35,107° / 196 078 km/s / 1,5161 / 37,0° / 42,0°; L2 265,0 ns / 34,983° / 183 072 km/s / 15,646°; L3 0,9659° / 30,703° / 1,6650°. All agree with answers.py and exercises.json.
-- Round-1 Blocking fixed: L2-01 states the v = c : n assumption in the task, and its Periaate names the group-velocity simplification.
-- L1-01 and L3-02 now use n = 1,332. L3-03 uses the lesson-table values 1,3315 / 1,3431; its intermediates 42,296° / 40,632° are right, and 1,664° is given as ≈ 1,7°.
-- L1-05 and L1-03 data are physically consistent (sin 55° : sin 38° = 1,331).
-- L2-02: the ray leaves the second face (n sin α₃ = 0,871, α₄ = 60,6°), as the Järkevyys says.
-- L2-03: the curve is the F2 fit, n(450) = 1,6387 (SCHOTT 1,6388), readable as 1,639. The ±0,1 % reading uncertainty is within tolerance.
-- L2-04: violet extremal ray at α = 58,8° for n = 1,343 (θ_max 40,65°); the red top at 17,2° is right.
-- L3-01: δ_p = 29,84°, δ_v = 30,80°, and the single-surface spread is 0,31° (the solution says "noin 0,3°").
-- Notation (α₁…α₄, A, δ, θ = 4β − 2α), symbolic-first solving, conversions and the reasons for rounding are consistent with the lesson.
+- One script recomputed the new answers with my own formulas, and they agree with answers.py: 264,7 nm; 12,3°; 0,7646°; 42,29° (violet 40,63°); 197 889 km/s and 395,8 nm; 1,40002; Δδ 7,417° (A = 60°: 3,909°).
+- L3-05: A_max is 64,977° for violet and 66,573° for red, and n_v sin α₃ at 65° is 1,0005.
+- L2-07: the tolerance 0,003 accepts readings n ≈ 1,512–1,520, which matches a ±0,002 reading.
+- L1-06: exactly one option is correct, and each distractor's feedback is right. The frequency is unchanged in glass, red light is slower than c in glass and still refracts, and glass does not dye the light.
+- Every Vastaus value of the new tasks lies inside its tolerance.
+- The hash was the same at the start and at the end.
