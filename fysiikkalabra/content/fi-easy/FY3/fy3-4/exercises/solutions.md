@@ -203,3 +203,17 @@ $$\begin{aligned} F_4 &= 171{,}675\,\text{kPa} \cdot 5{,}0\,\text{m}^2 \\ &= 858
 c) Osille 2 ja 3 saadaan samalla tavalla $367{,}9\,\text{kN}$ ja $613{,}1\,\text{kN}$. Summa on $122{,}6\,\text{kN} + 367{,}9\,\text{kN} + 613{,}1\,\text{kN} + 858{,}4\,\text{kN} = 1962\,\text{kN}$. Tarkistus koko kaistalle: $98{,}1\,\text{kPa} \cdot 20{,}0\,\text{m}^2 = 1962\,\text{kN}$. d) Voimien suhde on $F_4 : F_1 = 858{,}4\,\text{kN} : 122{,}6\,\text{kN} = 7{,}0$.
 **Vastaus:** $F_4 = 858\,\text{kN}$. Vastauksessa on kolme merkitsevää numeroa, koska syvyydet $15{,}0\,\text{m}$ ja $20{,}0\,\text{m}$ on annettu kolmella numerolla. Kaistan leveys on tasan yksi metri. Alimpaan osaan kohdistuu seitsenkertainen voima ylimpään verrattuna ($F_1 = 123\,\text{kN}$), koska paine kasvaa syvyyden mukana. Siksi muuri tehdään alaosastaan paksummaksi. Alaosan on kestettävä paljon suurempi voima kuin yläosan.
 **Järkevyys:** Osien voimat kasvavat tasaisin askelin suhteessa $1 : 3 : 5 : 7$ ($122{,}6 \cdot 3 \approx 367{,}9$, $122{,}6 \cdot 5 \approx 613{,}1$, $122{,}6 \cdot 7 \approx 858{,}4$). Se sopii lineaarisesti kasvavaan paineeseen.
+
+## fy3-4-L1-09
+**Annettu:** syvyys $h = 1{,}0\,\text{km}$, veden tiheys $\rho = 1000\,\text{kg/m}^3$ (vakio), $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** hydrostaattisen paineen $\rho g h$ suuruusluokka yksikössä $\text{Pa}$
+**Periaate:** Hydrostaattinen paine riippuu syvyydestä ja tiheydestä, $\Delta p = \rho g h$. Suuruusluokka on lähin kymmenpotenssi. Riittää siis laskea paine karkeasti ja katsoa, mihin kymmenpotenssiin se on lähinnä.
+**Mallivastaus:** Muunnetaan syvyys metreiksi:
+
+$h = 1{,}0\,\text{km} = 1000\,\text{m}$
+
+Lasketaan paine:
+
+$$\begin{aligned} \Delta p &= 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 1000\,\text{m} \\ &= 9{,}81 \cdot 10^{6}\,\text{Pa} \end{aligned}$$
+
+Luku $9{,}81 \cdot 10^{6}$ on lähempänä arvoa $10^{7}$ kuin arvoa $10^{6}$, joten suuruusluokka on $10^{7}\,\text{Pa}$. Vastaus $10^{5}\,\text{Pa}$ on ilmanpaineen suuruusluokka eikä ota syvyyttä huomioon. Vastaus $10^{6}\,\text{Pa}$ vastaa syvyyttä $100\,\text{m}$ ja vastaus $10^{8}\,\text{Pa}$ syvyyttä $10\,\text{km}$. Arvio: vedessä paine kasvaa noin $10\,\text{kPa}$ metriä kohti, joten $1000\,\text{m}$ antaa $10^{7}\,\text{Pa}$.

@@ -110,6 +110,37 @@
           "feedback": "Wrong: the hydrostatic pressure grows in direct proportion to the depth, not with its square. The graph $(h, p)$ is a straight line."
         }
       ]
+    },
+    {
+      "id": "fy3-4-L1-09",
+      "level": 1,
+      "text": "A research submarine descends into the sea to a depth of $1.0\\,\\text{km}$. The density of water is $1000\\,\\text{kg/m}^3$ and it is assumed constant.\n\nWhich of the following is closest in order of magnitude to the hydrostatic pressure at this depth?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "$10^{7}\\,\\text{Pa}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "$10^{5}\\,\\text{Pa}$",
+          "feedback": "This is the order of magnitude of atmospheric pressure, and it corresponds to a column of water of only about $10\\,\\text{m}$. Pressure grows with depth, and $1.0\\,\\text{km}$ is a hundred times deeper than $10\\,\\text{m}$."
+        },
+        {
+          "text": "$10^{6}\\,\\text{Pa}$",
+          "feedback": "This corresponds to a depth of about $100\\,\\text{m}$, that is, the kilometre has been converted into metres ten times too small. The depth $1.0\\,\\text{km}$ is $1000\\,\\text{m}$, so the pressure is ten times greater."
+        },
+        {
+          "text": "$10^{7}\\,\\text{Pa}$",
+          "correct": true,
+          "feedback": "Correct: $\\rho g h \\approx 1000 \\cdot 9.81 \\cdot 1000\\,\\text{Pa}$, that is, $\\rho g h \\approx 9.8 \\cdot 10^{6}\\,\\text{Pa}$. It is closest to the power of ten $10^{7}$."
+        },
+        {
+          "text": "$10^{8}\\,\\text{Pa}$",
+          "feedback": "This corresponds to a depth of about $10\\,\\text{km}$. Pressure grows in direct proportion to depth, so ten times the depth would give ten times the pressure. The given depth is only $1.0\\,\\text{km}$."
+        }
+      ]
     }
   ],
   "level2": [

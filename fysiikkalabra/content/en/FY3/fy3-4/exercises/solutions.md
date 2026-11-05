@@ -203,3 +203,17 @@ $$\begin{aligned} F_4 &= 171.675\,\text{kPa} \cdot 5.0\,\text{m}^2 \\ &= 858.375
 c) In the same way, parts 2 and 3 give $367.9\,\text{kN}$ and $613.1\,\text{kN}$. The sum is $122.6\,\text{kN} + 367.9\,\text{kN} + 613.1\,\text{kN} + 858.4\,\text{kN} = 1962\,\text{kN}$. Check for the whole strip: $98.1\,\text{kPa} \cdot 20.0\,\text{m}^2 = 1962\,\text{kN}$. d) The ratio of the forces is $F_4 : F_1 = 858.4\,\text{kN} : 122.6\,\text{kN} = 7.0$.
 **Answer:** $F_4 = 858\,\text{kN}$, three significant figures, because the depths $15.0\,\text{m}$ and $20.0\,\text{m}$ are given to three figures and the width of the strip is exactly one metre. The force on the bottom part is seven times the force on the top part ($F_1 = 123\,\text{kN}$), because the pressure grows with depth. That is why the wall is made thicker at the bottom: the lower part has to withstand a much greater force than the upper part.
 **Reasonableness:** The forces on the parts grow in equal steps in the ratio $1 : 3 : 5 : 7$ ($122.6 \cdot 3 \approx 367.9$, $122.6 \cdot 5 \approx 613.1$, $122.6 \cdot 7 \approx 858.4$), which fits a linearly growing pressure.
+
+## fy3-4-L1-09
+**Given:** depth $h = 1.0\,\text{km}$, density of water $\rho = 1000\,\text{kg/m}^3$ (constant), $g = 9.81\,\text{m/s}^2$
+**Find:** the order of magnitude of the hydrostatic pressure $\rho g h$ in the unit $\text{Pa}$
+**Principle:** Hydrostatic pressure depends on the depth and the density, $\Delta p = \rho g h$. The order of magnitude is the nearest power of ten, so it is enough to calculate the pressure roughly and see which power of ten it is closest to.
+**Model answer:** Convert the depth into metres:
+
+$h = 1.0\,\text{km} = 1000\,\text{m}$
+
+Calculate the pressure:
+
+$$\begin{aligned} \Delta p &= 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 1000\,\text{m} \\ &= 9.81 \cdot 10^{6}\,\text{Pa} \end{aligned}$$
+
+The number $9.81 \cdot 10^{6}$ is closer to $10^{7}$ than to $10^{6}$, so the order of magnitude is $10^{7}\,\text{Pa}$. The answer $10^{5}\,\text{Pa}$ is the order of magnitude of atmospheric pressure and does not take the depth into account. The answer $10^{6}\,\text{Pa}$ corresponds to the depth $100\,\text{m}$ and the answer $10^{8}\,\text{Pa}$ to the depth $10\,\text{km}$. Estimate: in water the pressure grows by about $10\,\text{kPa}$ per metre, so $1000\,\text{m}$ gives $10^{7}\,\text{Pa}$.

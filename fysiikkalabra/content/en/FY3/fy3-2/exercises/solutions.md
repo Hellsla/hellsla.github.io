@@ -204,3 +204,16 @@ $$\begin{aligned} W &= 0.5 \cdot 10.0\,\text{N} \cdot 0.100\,\text{m} \\ &= 0.50
 $$\begin{aligned} G &= 450\,\text{kg} \cdot 9.81\,\dfrac{\text{m}}{\text{s}^2} \\ &= 4414.5\,\text{N} \\ P &= 4414.5\,\text{N} \cdot 0.815\,\dfrac{\text{m}}{\text{s}} = 3598\,\text{W} \\ &= 3.598\,\text{kW} \\ P t &= 3598\,\text{W} \cdot 8.0\,\text{s} \\ &= 28\,780\,\text{J} \\ m g h &= 4414.5\,\text{N} \cdot 6.5\,\text{m} \\ &= 28\,690\,\text{J} \end{aligned}$$
 **Answer:** $3.6\,\text{kW}$, two significant figures like the mass and the height measurements. Justifications: a) the height grows steadily, so the velocity is approximately constant, $v \approx 0.82\,\text{m/s}$; b) as the lesson says, at constant velocity the lifting force is equal to the weight, as in the derivation of the formula $W = m g h$; d) the works are $28.8\,\text{kJ}$ and $28.7\,\text{kJ}$, that is, they differ by less than one percent.
 **Reasonableness:** Rough estimate: the weight is about $4400\,\text{N}$ and the velocity about $0.8\,\text{m/s}$, so the power is about $3500\,\text{W}$. The comparison d) is consistent: the work $P t$ given by the fitted line and the work $m g h$ calculated from the point of the table differ by less than one percent. A power of a few kilowatts is believable for the lifting motor of a construction crane when only the lifting work is taken into account.
+
+## fy3-2-L2-08
+**Find:** how many times $W_1$ the work is when the rubber band is stretched to $20\,\text{cm}$ counting from the start, and why
+**Principle:** The force grows steadily from zero, so the work is not the product $F s$ but the area of the $(s,F)$ graph. The area is a triangle whose base is the stretch $s$ and whose height is the greatest value of the force $F$, so the work is $W = \dfrac{1}{2} F s$.
+**Model answer:** Stretch to $10\,\text{cm}$:
+
+$W_1 = \dfrac{1}{2} \cdot 20\,\text{N} \cdot 0.10\,\text{m} = 1.0\,\text{J}$
+
+Stretch to $20\,\text{cm}$:
+
+$W_2 = \dfrac{1}{2} \cdot 40\,\text{N} \cdot 0.20\,\text{m} = 4.0\,\text{J}$
+
+The ratio is $4.0\,\text{J} : 1.0\,\text{J} = 4$, so the work is $4\,W_1$. The reason is that both the base and the height double, so the area of the triangle becomes four times as great. The answer $2\,W_1$ takes only the distance into account, although the force also doubles. The answer $3\,W_1$ is only the work of the second $10\,\text{cm}$ part: $30\,\text{N} \cdot 0.10\,\text{m} = 3.0\,\text{J}$. The work asked for starts from the beginning of the stretch, so it also includes the first part, $1.0\,\text{J}$.

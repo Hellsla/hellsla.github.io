@@ -204,3 +204,16 @@ $$\begin{aligned} W &= 0{,}5 \cdot 10{,}0\,\text{N} \cdot 0{,}100\,\text{m} \\ &
 $$\begin{aligned} G &= 450\,\text{kg} \cdot 9{,}81\,\dfrac{\text{m}}{\text{s}^2} \\ &= 4414{,}5\,\text{N} \\ P &= 4414{,}5\,\text{N} \cdot 0{,}815\,\dfrac{\text{m}}{\text{s}} = 3598\,\text{W} \\ &= 3{,}598\,\text{kW} \\ P t &= 3598\,\text{W} \cdot 8{,}0\,\text{s} \\ &= 28\,780\,\text{J} \\ m g h &= 4414{,}5\,\text{N} \cdot 6{,}5\,\text{m} \\ &= 28\,690\,\text{J} \end{aligned}$$
 **Vastaus:** $3{,}6\,\text{kW}$. Vastauksessa on kaksi merkitsevää numeroa, kuten massassa ja korkeusmittauksissa. Perustelut: a) korkeus kasvaa tasaisesti, joten nopeus on likimain vakio, $v \approx 0{,}82\,\text{m/s}$; b) oppitunnin mukaan tasaisella nopeudella nostovoima on yhtä suuri kuin paino, kuten kaavan $W = m g h$ johdossa; d) työt ovat $28{,}8\,\text{kJ}$ ja $28{,}7\,\text{kJ}$, eli ne eroavat alle prosentin.
 **Järkevyys:** Karkea arvio: paino on noin $4400\,\text{N}$ ja nopeus noin $0{,}8\,\text{m/s}$, joten teho on noin $3500\,\text{W}$. Vertailu d) on johdonmukainen. Sovitetun suoran antama työ $P t$ ja taulukon pisteestä laskettu $m g h$ eroavat alle prosentin. Kilowattien teho on uskottava rakennusnosturin nostomoottorille, kun otetaan huomioon vain nostotyö.
+
+## fy3-2-L2-08
+**Kysytty:** kuinka monta kertaa $W_1$ on työ, kun kuminauha venytetään $20\,\text{cm}$:iin alusta lukien, ja miksi
+**Periaate:** Voima kasvaa tasaisesti nollasta. Siksi työ ei ole tulo $F s$ vaan $(s,F)$-kuvaajan pinta-ala. Ala on kolmio, jonka kanta on venytys $s$ ja korkeus voiman suurin arvo $F$. Työ on siis $W = \dfrac{1}{2} F s$.
+**Mallivastaus:** Venytys $10\,\text{cm}$:iin:
+
+$W_1 = \dfrac{1}{2} \cdot 20\,\text{N} \cdot 0{,}10\,\text{m} = 1{,}0\,\text{J}$
+
+Venytys $20\,\text{cm}$:iin:
+
+$W_2 = \dfrac{1}{2} \cdot 40\,\text{N} \cdot 0{,}20\,\text{m} = 4{,}0\,\text{J}$
+
+Suhde on $4{,}0\,\text{J} : 1{,}0\,\text{J} = 4$, joten työ on $4\,W_1$. Syy on, että sekä kanta että korkeus kaksinkertaistuvat. Silloin kolmion ala nelinkertaistuu. Vastaus $2\,W_1$ ottaa huomioon vain matkan, vaikka myös voima kaksinkertaistuu. Vastaus $3\,W_1$ on vain toisen $10\,\text{cm}$:n osan työ: $30\,\text{N} \cdot 0{,}10\,\text{m} = 3{,}0\,\text{J}$. Kysytty työ alkaa venytyksen alusta. Siksi siihen kuuluu myös ensimmäinen osa $1{,}0\,\text{J}$.
