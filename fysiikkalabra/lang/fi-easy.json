@@ -2458,10 +2458,10 @@
     }
   },
   "practice": {
-    "title": "Sovella itsenäisesti",
+    "title": "Haastetehtävät",
     "eyebrow": "{{code}} · moduulin lopuksi",
-    "page_title": "{{code}} · Sovella itsenäisesti",
-    "description": "{{code}} {{title}}: itsenäisesti ratkaistavat tehtävät, mallivastaukset ja pisteytysohjeet itsearviointiin.",
+    "page_title": "{{code}} · Haastetehtävät",
+    "description": "{{code}} {{title}}: vaikeampia tehtäviä, mallivastaukset ja pisteytysohjeet. Voit arvioida oman ratkaisusi.",
     "lead": "Näissä tehtävissä kukaan ei kerro, mitä kaavaa käytetään. Päätä itse, mitkä ilmiöt ja mallit kuuluvat tilanteeseen. Ratkaise tehtävä paperille. Perustele ratkaisusi niin kuin ylioppilaskokeessa.",
     "howto": "Ratkaise tehtävä ensin itse paperille tai tietokoneelle. Saat käyttää laskinta, taulukkokirjaa ja kuvaajaohjelmaa. Kirjoita näkyviin perustelut, kaavat, sijoitukset ja vastaukset yksiköineen.",
     "points": "{{n}} p",
@@ -2483,7 +2483,7 @@
     "also": "Hyväksytään myös",
     "practise_more": "Harjoittele lisää:",
     "practise_link": "{{competency}}, luku {{chapter}}",
-    "course_lead": "Moduulin lopuksi voit kokeilla, osaatko käyttää oppimaasi itse niin kuin ylioppilaskokeessa. Mallivastaukset ja pisteytysohjeet aukeavat, kun olet ratkaissut tehtävän itse.",
+    "course_lead": "Vaikeampia tehtäviä, joissa käytät monta asiaa yhdessä. Ne ovat samanlaisia kuin esimerkkikokeen osan 3 tehtävät. Mallivastaukset ja pisteytysohjeet aukeavat, kun olet ratkaissut tehtävän itse.",
     "course_count": "{{tasks}} · {{points}}",
     "kind_own": "oma työ",
     "step_names": {
@@ -3000,7 +3000,7 @@
   "mixer": {
     "title": "YO-sekoitin",
     "description": "Kaikki sivuston ylioppilaskokeen kaltaiset tehtävät samalla sivulla. Voit valita moduulin, taidon tai tehtävän tyypin tai arpoa kolme tehtävää.",
-    "lead": "Tällä sivulla ovat kaikki sivuston ylioppilaskokeen kaltaiset tehtävät. Ne ovat moduulien Sovella itsenäisesti -osioista ja kertauskurssin tunneilta. Jokaisessa tehtävässä lukee, minkä lukujen taitoja tarvitset.",
+    "lead": "Tällä sivulla ovat kaikki sivuston ylioppilaskokeen kaltaiset tehtävät. Ne ovat moduulien haastetehtävistä ja kertauskurssin tunneilta. Jokaisessa tehtävässä lukee, minkä lukujen taitoja tarvitset.",
     "howto": "Valitse moduuli, taito tai tehtävän tyyppi. Voit myös arpoa kolme tehtävää. Ratkaise tehtävä ensin itse. Avaa sitten tehtävän sivulla mallivastaus ja pisteet.",
     "filter_label": "Valitse tehtäviä",
     "search": "Etsi tehtävää",
@@ -3028,7 +3028,7 @@
     "minutes": "Varaa aikaa noin {{minutes}} minuuttia.",
     "howto": "Kirjoita ratkaisut paperille tai tietokoneelle. Saat käyttää laskinta, taulukkokirjaa ja kuvaajaohjelmaa. Avaa mallivastaus vasta, kun koko koe on valmis.",
     "correct": "Oikea vastaus: {{option}}",
-    "course_lead": "Kurssin lopuksi voit tehdä esimerkkikokeen. Mallivastaukset ja pisteytysohjeet avautuvat kokeen jälkeen.",
+    "course_lead": "Tee esimerkkikoe kurssin lopuksi niin kuin oikea koe. Aikaa on 120 minuuttia. Mallivastaukset ja pisteytysohjeet aukeavat kokeen jälkeen.",
     "course_count": "{{max}} p, kolme osaa",
     "total_title": "Kokeen pisteet",
     "total_note": "Sivu laskee monivalintojen pisteet, kun avaat mallivastauksen. Muut pisteet arvioit itse. Valinnaisista osista lasketaan parhaat tehtävät.",

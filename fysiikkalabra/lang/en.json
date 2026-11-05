@@ -2458,9 +2458,9 @@
     }
   },
   "practice": {
-    "title": "Apply independently",
+    "title": "Challenge tasks",
     "eyebrow": "{{code}} · at the end of the module",
-    "page_title": "{{code}} · Apply independently",
+    "page_title": "{{code}} · Challenge tasks",
     "description": "{{code}} {{title}}: exercises to solve independently, model answers and marking guides for self-assessment.",
     "lead": "In these tasks nobody tells you which formula to use. Decide yourself which phenomena and models belong to the situation, solve the task on paper and justify your solution, as in the matriculation examination.",
     "howto": "Solve the task yourself first, on paper or on a computer. You may use a calculator, a data booklet and graphing software. Write out your reasoning, formulas, substitutions and answers with units.",
@@ -2483,7 +2483,7 @@
     "also": "Also accepted",
     "practise_more": "Practise more:",
     "practise_link": "{{competency}}, chapter {{chapter}}",
-    "course_lead": "At the end of the module you can try whether you can apply what you have learned independently, in the style of the matriculation examination. The model answers and marking guides open after your own solution.",
+    "course_lead": "Extended application tasks, like the tasks in Part 3 of the example exam. They are not real exam tasks. The model answers and marking guides open after your own solution.",
     "course_count": "{{tasks}} · {{points}}",
     "kind_own": "own work",
     "step_names": {
@@ -3000,7 +3000,7 @@
   "mixer": {
     "title": "Exam task mixer",
     "description": "Every exam-style task of the site in one place: filter by module, competency or task type, or pick three at random.",
-    "lead": "Here are all the exam-style tasks of the site, from the modules' Apply independently sections and the lessons of the review course. Each task shows which chapters' skills it uses.",
+    "lead": "Here are all the exam-style tasks of the site, from the modules' challenge tasks and the lessons of the review course. Each task shows which chapters' skills it uses.",
     "howto": "Choose a module, a competency or a task type, or pick three tasks at random as for an exam. Solve a task yourself first, then open the model answer and the scoring on its page.",
     "filter_label": "Filter the tasks",
     "search": "Search for a task",
@@ -3028,7 +3028,7 @@
     "minutes": "Allow about {{minutes}} minutes.",
     "howto": "Write your solutions on paper or a computer. You may use a calculator, a data booklet and graphing software. Open the model answers only when the whole exam is done.",
     "correct": "Correct answer: {{option}}",
-    "course_lead": "At the end of the module you can take the example exam like a real course exam. The model answers and marking guides open after the exam.",
+    "course_lead": "Take the example exam at the end of the course like a real course exam: you have 120 minutes, and it has multiple-choice items and tasks to choose from. The model answers and marking guides open after the exam.",
     "course_count": "{{max}} p, three parts",
     "total_title": "Exam score",
     "total_note": "The page scores the multiple-choice items when you open their model answer. The other points are your own assessment. In the optional parts the best tasks count under the rules.",
