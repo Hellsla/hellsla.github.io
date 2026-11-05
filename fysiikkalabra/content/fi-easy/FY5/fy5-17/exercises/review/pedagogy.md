@@ -1,13 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 59a15962d4ce08b1
+CONTENT-HASH: 3309c347fe902beb
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+(none needed: the selkosuomi text already matched fi in every number and was natural)
 
 ## Polish
-- [Minor] L3 texts are the Finnish unchanged; they are clear but level-3 reading load stays high (intended for the level).
+(none)
 
 ## Checked
-- Levels 1–3 (5 + 4 + 3), core marks, situation-first and question-last kept; "Anna vastaus …" kept in every task.
-- Solutions: sentences split ("…. Kulkuaikana se kulkee siis …"), no step or justification dropped.
-- Unfamiliar words explained in L1-05 (mannerjalusta) and L2-03 (kilohertsi as pulses per second).
-- Captures: open-exercises-L2-1280-4.
+- Same tasks, same structure and the same hints as fi: no hint or answer added or removed; L1-06..08 and L2-07 feedback explains why each wrong option is wrong.
+- Language level: short sentences, common words, terms (varjoalue, vaimentuminen, A-kuvaus, kaiku) explained as in the reviewed Finnish; one idea per sentence.
+- Solutions keep the full step structure and the model answers/justifications of L1-06..08, L2-07, L3-04 c and L3-05 b.

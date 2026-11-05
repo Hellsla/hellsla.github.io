@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: b89c353d4dd880b3
+CONTENT-HASH: 4fccaba6f57f9329
 
 ## Blocking
 - none
 
+## Fixed
+- (fixed by coordinator) L2-06 solution: subscripts meas/model renamed obs/mod (defined in Find) to stop a 360 px overflow; reads fine, check_i18n en 0 fy5-15 errors.
+- (fixed) L2-07 b) and solution Find: "estimates the intensity to be too great" → "overestimates" (matches the Finnish "arvioi moninkertaiseksi" and reads naturally).
+
 ## Polish
-- (fixed) L3-03 quotation marks ”…” → “…”.
-- solutions L3-01 keeps the Finnish subscripts H (shouts) and K (PA system); they are defined in the text, so acceptable.
+- none
 
 ## Checked
-- 12 exercises, levels 1–3 (5/4/3), same order, core marks and situations as the Finnish; every solution has Given, Find, Principle, Formula, Conversions, Substitution, Answer, Reasonableness; L3-03 has the model answer and the self-assessment list.
-- Questions end with the question as their own sentence; instructions ("Give the answer in W/m²") clear.
-- Captures opened: contact-5 (levels 1–3 with answers and solutions open at 1280 px).
+- 8 new exercises have the same levels, order, kind marks, parts a)-c) and answer-box instruction as the Finnish; every solution keeps Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness and the part c) justification text.
+- Choice feedback of L1-06 and L1-07 explains each wrong option as in the Finnish.
+- Natural textbook English; questions end with the question as own sentence.

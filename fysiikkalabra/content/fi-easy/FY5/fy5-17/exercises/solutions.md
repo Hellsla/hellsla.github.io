@@ -118,3 +118,67 @@
 **Sijoitus:** $\lambda_2 = 200\,\text{km} \cdot \sqrt{\dfrac{10\,\text{m}}{4000\,\text{m}}} = 200\,\text{km} \cdot 0{,}050 = 10{,}0\,\text{km}$
 **Vastaus:** $10\,\text{km}$, kaksi merkitsevää numeroa kuten syvyydessä $10\,\text{m}$.
 **Järkevyys:** Valtamerellä nopeus on $\sqrt{9{,}81 \cdot 4000}\,\text{m/s} = 198\,\text{m/s}$. Jaksonaika on siis $200\,000\,\text{m} : 198\,\text{m/s} \approx 1010\,\text{s}$ eli noin $17\,\text{min}$. Rannikolla nopeus on $9{,}9\,\text{m/s}$, ja $9{,}9\,\text{m/s} \cdot 1010\,\text{s} \approx 10\,\text{km}$. Aallonpituus on yhä paljon suurempi kuin syvyys, joten kaava pätee.
+
+## fy5-17-L1-06
+**Kysytty:** mitä Maan sisäosista päätellään siitä, että vastakkaisella puolella havaitaan P-aalto mutta ei S-aaltoa
+**Periaate:** Poikittainen S-aalto tarvitsee väliaineen, joka vastustaa muodon muuttumista. Sellainen on kiinteä aine. Neste ei vastusta muodon muuttumista, joten S-aalto ei etene nesteessä. Pitkittäinen P-aalto etenee myös nesteessä.
+**Mallivastaus:** Maan ulkoydin on nestettä. Neste välittää pitkittäisen P-aallon mutta ei poikittaista S-aaltoa. Siksi S-aalloille jää varjoalue ja P-aaltoja havaitaan silti. Jos ulkoydin olisi kiinteää, se välittäisi molemmat aallot. S-aallon hitaus ei selitä sitä, että S-aaltoa ei havaita, koska hitaampi aalto saapuu vain myöhemmin. Poikittaisuus ei myöskään kuluta S-aallon energiaa loppuun. S-aalto etenee pitkiä matkoja kiinteässä kalliossa.
+
+## fy5-17-L1-07
+**Kysytty:** mikä on geelin tehtävä ultraäänitutkimuksessa
+**Periaate:** Osa pulssista heijastuu jokaiselta rajapinnalta. Heijastuvan osuuden suuruus riippuu siitä, kuinka erilaisia rajapinnan aineet ovat. Ilman ja ihon rajapinnalta heijastuu lähes koko pulssi. Geelin ja ihon rajapinnalta heijastuu vain pieni osa.
+**Mallivastaus:** Geeli poistaa ihon ja anturin väliltä ilman. Ilma heijastaisi lähes koko pulssin takaisin jo iholta. Geelin kanssa lähes koko pulssi pääsee kudokseen. Pulssi tuottaa kaikuja kudosten rajapinnoilta, ja kuva muodostetaan niistä. Geeli ei muuta pulssin taajuutta eikä vaimenna kaikuja. Sen ainoa tehtävä on auttaa pulssia pääsemään kudokseen.
+
+## fy5-17-L1-08
+**Kysytty:** miksi suurinta mahdollista taajuutta ei käytetä aina ultraäänikuvauksessa
+**Periaate:** Taajuus ja aallonpituus liittyvät yhtälöllä $v = f\lambda$. Suuri taajuus antaa siis lyhyen aallonpituuden ja tarkan kuvan. Kudos kuitenkin vaimentaa suuritaajuista ultraääntä nopeasti.
+**Mallivastaus:** Suuri taajuus vaimenee kudoksessa nopeasti. Pulssi ei yletä syvälle, ja syvältä tulevat kaiut olisivat liian heikkoja. Siksi syvälle kuvataan pienemmällä taajuudella, vaikka kuva on silloin karkeampi. Taajuus ei muuta äänen nopeutta kudoksessa, eikä suuri taajuus anna pitkää aallonpituutta. Heijastuvan osuuden määrää rajapinnan kahden aineen ero, ei taajuus.
+
+## fy5-17-L2-05
+**Annettu:** kaikupiikkien hetket $t_1 = 21{,}4\,\mu\text{s}$, $t_2 = 58{,}9\,\mu\text{s}$ ja $t_3 = 109{,}2\,\mu\text{s}$, äänen nopeus kudoksessa $v = 1540\,\text{m/s}$
+**Kysytty:** a) rajapintojen syvyydet $d_1$, $d_2$ ja $d_3$; b) piikkejä 2 ja 3 vastaavien rajapintojen välisen kerroksen paksuus $\Delta d$ senttimetreinä
+**Periaate:** Jokainen piikki on kaiku yhdestä rajapinnasta. Pulssi kulkee rajapintaan ja takaisin. Siksi jokaisen rajapinnan syvyys on nopeus kertaa piikin hetki jaettuna kahdella. Kerroksen paksuus on kahden syvyyden erotus. Sen saa siis myös piikkien hetkien erotuksesta.
+**Taulukon lukeminen:** Taulukon hetket ovat aika pulssin lähettämisestä. Kerroksen yläpinnan kaiku on piikki 2 ja alapinnan kaiku on piikki 3. Kerroksessa kulunut aika on siis $t_3 - t_2 = 109{,}2\,\mu\text{s} - 58{,}9\,\mu\text{s} = 50{,}3\,\mu\text{s}$.
+**Kaava:** $d = \dfrac{v t}{2}$ ja $\Delta d = d_3 - d_2 = \dfrac{v\,(t_3 - t_2)}{2}$
+**Muunnokset:** $50{,}3\,\mu\text{s} = 50{,}3 \cdot 10^{-6}\,\text{s}$; lopuksi $1\,\text{m} = 100\,\text{cm}$.
+**Sijoitus:** a) $d_1 = 1540\,\text{m/s} \cdot 21{,}4 \cdot 10^{-6}\,\text{s} : 2 = 1{,}65\,\text{cm}$, $d_2 = 4{,}54\,\text{cm}$ ja $d_3 = 8{,}41\,\text{cm}$. b) $\Delta d = \dfrac{1540\,\text{m/s} \cdot 50{,}3 \cdot 10^{-6}\,\text{s}}{2} = 0{,}038\,73\,\text{m} = 3{,}873\,\text{cm}$
+**Vastaus:** $3{,}87\,\text{cm}$, kolme merkitsevää numeroa kuten piikkien hetkissä.
+**Järkevyys:** Syvyyksien erotus $8{,}41\,\text{cm} - 4{,}54\,\text{cm} = 3{,}87\,\text{cm}$ on sama kuin suoraan aikaerosta laskettu paksuus. Kerroksessa kaiku kulkee edestakaisin $2 \cdot 3{,}87\,\text{cm} = 7{,}7\,\text{cm}$. Ajaksi tulee $7{,}7\,\text{cm} : 1540\,\text{m/s} \approx 50\,\mu\text{s}$, kuten mitattiin.
+
+## fy5-17-L2-06
+**Annettu:** etäisyydet $L = 20{,}0$; $30{,}0$; $40{,}0$ ja $50{,}0\,\text{cm}$ sekä kaiun paluuajat $t = 270$; $407$; $540$ ja $677\,\mu\text{s}$
+**Kysytty:** äänen nopeuden keskiarvo $v_\text{ka}$ vedessä metreinä sekunnissa
+**Periaate:** Pulssi kulkee anturista levylle ja takaisin. Kulkuaikana se kulkee siis matkan $2L$ tasaisella nopeudella. Jokaisesta mittauksesta saadaan oma nopeus. Mittausten satunnaista vaihtelua tasataan ottamalla niiden keskiarvo.
+**Kaava:** $2L = v t$, joten $v = \dfrac{2L}{t}$ ja $v_\text{ka} = \dfrac{v_1 + v_2 + v_3 + v_4}{4}$
+**Muunnokset:** $L = 0{,}200$; $0{,}300$; $0{,}400$ ja $0{,}500\,\text{m}$; $t = 270 \cdot 10^{-6}\,\text{s}$ jne.
+**Sijoitus:** $v_1 = \dfrac{2 \cdot 0{,}200\,\text{m}}{270 \cdot 10^{-6}\,\text{s}} = 1481\,\text{m/s}$, $v_2 = 1474\,\text{m/s}$, $v_3 = 1481\,\text{m/s}$ ja $v_4 = 1477\,\text{m/s}$. Summa on $5914\,\text{m/s}$, joten $v_\text{ka} = 5914\,\text{m/s} : 4 = 1478{,}6\,\text{m/s}$.
+**Vastaus:** $1480\,\text{m/s}$, kolme merkitsevää numeroa kuten kulkuajoissa. Yksittäiset nopeudet poikkeavat keskiarvosta enintään $0{,}5\,\%$.
+**Järkevyys:** Luvun mukaan ääni etenee vedessä noin $1400\text{–}1500\,\text{m/s}$, ja tulos on tällä välillä. Pitkä etäisyys ja pitkä aika kasvavat samassa suhteessa. Siksi nopeus pysyy likimain samana kaikilla riveillä, kuten tasaisella nopeudella pitääkin.
+
+## fy5-17-L2-07
+**Kysytty:** mikä virhe opiskelijan ratkaisussa on
+**Periaate:** Kumpikin aalto kulkee saman matkan $d$ tasaisella nopeudella. Saapumisaikojen ero on S- ja P-aallon kulkuaikojen erotus: $\Delta t = \dfrac{d}{v_\text{S}} - \dfrac{d}{v_\text{P}}$. Pelkkä tulo $v_\text{P}\,\Delta t$ olisi matka, jonka P-aalto kulkisi ajassa $\Delta t$. Se ei ole järistyksen etäisyys.
+**Mallivastaus:** Aikaero $\Delta t$ ei ole P-aallon kulkuaika vaan kulkuaikojen erotus, joten $d \neq v_\text{P}\,\Delta t$. P-aalto on ehtinyt kulkea koko matkan, ennen kuin $\Delta t$ alkaa. Oikea tulos on $d = \dfrac{6{,}0 \cdot 3{,}5}{6{,}0 - 3{,}5} \cdot 16{,}0\,\text{km} = 134\,\text{km}$. Tarkistus: P-aallon kulkuaika on $134\,\text{km} : 6{,}0\,\text{km/s} = 22{,}4\,\text{s}$ ja S-aallon $134\,\text{km} : 3{,}5\,\text{km/s} = 38{,}4\,\text{s}$. Erotus on $16{,}0\,\text{s}$. Kahdella jakaminen kuuluisi kaikuun eikä yksisuuntaiseen aaltoon. S-aallon nopeuden käyttö antaisi yhtä väärän tuloksen $56\,\text{km}$. Yksiköt ovat ratkaisussa kunnossa.
+
+## fy5-17-L3-04
+**Annettu:** asemat A$(0, 0)$, B$(120, 0)$ ja C$(60, 90)$ kilometreinä; $\Delta t_\text{A} = 10{,}0\,\text{s}$, $\Delta t_\text{B} = 7{,}5\,\text{s}$, $\Delta t_\text{C} = 5{,}9\,\text{s}$; $v_\text{P} = 6{,}0\,\text{km/s}$, $v_\text{S} = 3{,}5\,\text{km/s}$
+**Kysytty:** järistyksen $y$-koordinaatti kilometreinä
+**Periaate:** Jokaisen aseman aikaerosta saadaan etäisyys järistykseen. Järistys on siis ympyrällä, jonka keskipiste on asema. Kahden ympyrän leikkauspisteitä on kaksi. Kolmannen aseman ympyrä valitsee niistä oikean.
+**Kaava:** $d = \dfrac{v_\text{P} v_\text{S}}{v_\text{P} - v_\text{S}}\,\Delta t$. Asemien A ja B ympyröiden yhtälöt ovat $x^2 + y^2 = d_\text{A}^2$ ja $(x - 120)^2 + y^2 = d_\text{B}^2$. Avataan toinen yhtälö: $(x - 120)^2 = x^2 - 240x + 14\,400$. Kun ensimmäinen yhtälö vähennetään toisesta, $x^2$ ja $y^2$ supistuvat ja jää $240x = d_\text{A}^2 - d_\text{B}^2 + 120^2$. Siis $x = \dfrac{d_\text{A}^2 - d_\text{B}^2 + 120^2}{240}$ ja $y = \pm\sqrt{d_\text{A}^2 - x^2}$.
+**Muunnokset:** Nopeudet ovat yksikössä km/s ja ajat sekunteina, joten etäisyydet tulevat kilometreinä. Kerroin on $\dfrac{6{,}0 \cdot 3{,}5}{2{,}5}\,\text{km/s} = 8{,}4\,\text{km/s}$.
+**Sijoitus:** a) $d_\text{A} = 8{,}4\,\text{km/s} \cdot 10{,}0\,\text{s} = 84{,}0\,\text{km}$, $d_\text{B} = 8{,}4\,\text{km/s} \cdot 7{,}5\,\text{s} = 63{,}0\,\text{km}$ ja $d_\text{C} = 8{,}4\,\text{km/s} \cdot 5{,}9\,\text{s} = 49{,}6\,\text{km}$. b) $x = \dfrac{7056 - 3969 + 14\,400}{240}\,\text{km} = 72{,}9\,\text{km}$ ja $y = \pm\sqrt{7056 - 5309}\,\text{km} = \pm 41{,}8\,\text{km}$. Mahdolliset paikat ovat $(72{,}9;\ 41{,}8)$ ja $(72{,}9;\ -41{,}8)$. Etäisyys asemalle C on ensimmäisestä $\sqrt{(72{,}9 - 60)^2 + (41{,}8 - 90)^2}\,\text{km} = 49{,}9\,\text{km}$ ja toisesta $\sqrt{12{,}9^2 + 131{,}8^2}\,\text{km} = 132{,}4\,\text{km}$. Mitattu $49{,}6\,\text{km}$ sopii ensimmäiseen.
+**Vastaus:** $y = 42\,\text{km}$ (pohjoiseen asemista A ja B), kaksi merkitsevää numeroa kuten nopeuksissa $6{,}0\,\text{km/s}$ ja $3{,}5\,\text{km/s}$. Järistys on pisteessä $(73;\ 42)\,\text{km}$.
+**Järkevyys:** Tarkistetaan etäisyys asemalle A: $\sqrt{72{,}9^2 + 41{,}8^2}\,\text{km} = 84{,}0\,\text{km}$ ja asemalle B: $\sqrt{47{,}1^2 + 41{,}8^2}\,\text{km} = 63{,}0\,\text{km}$, kuten mitattiin. Asemalta C ennustettu aikaero olisi $49{,}9\,\text{km} : 8{,}4\,\text{km/s} = 5{,}9\,\text{s}$ eli sama kuin mitattu. Toisessa paikassa se olisi $132{,}4\,\text{km} : 8{,}4\,\text{km/s} = 15{,}8\,\text{s}$.
+**Perustelu c-kohtaan:** Yhden aseman aikaero kertoo vain etäisyyden. Järistys voi olla missä tahansa pisteessä aseman ympärillä olevalla ympyrällä. Kaksi ympyrää leikkaa yleensä kahdessa pisteessä. Pisteet ovat toistensa peilikuvia asemia yhdistävän suoran suhteen. Kahden aseman tiedoilla ei voi valita niiden välillä. Kolmannen aseman ympyrä kulkee vain toisen pisteen kautta, joten kolme asemaa riittää.
+
+## fy5-17-L3-05
+**Annettu:** osuudet $s_1 = 300\,\text{km}$, $s_2 = 100\,\text{km}$, $s_3 = 20\,\text{km}$; syvyydet $h_1 = 4000\,\text{m}$, $h_2 = 1000\,\text{m}$, $h_3 = 50\,\text{m}$; $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** koko matkan kulkuaika $t$ minuutteina
+**Periaate:** Syvyys on jokaisella osuudella vakio, ja aallonpituus on paljon syvyyttä suurempi. Nopeus on siis osuudella vakio, ja $v = \sqrt{g h}$. Kulkuaika on osuuden pituus jaettuna sen nopeudella. Koko matkan aika on osuuksien aikojen summa.
+**Taulukon lukeminen:** Taulukosta luetaan jokaisen osuuden pituus $s$ ja syvyys $h$. Syvyys määrää nopeuden ja pituus kulkuajan.
+**Kaava:** $v = \sqrt{g h}$, $t_i = \dfrac{s_i}{v_i}$ ja $t = t_1 + t_2 + t_3$
+**Muunnokset:** $s_1 = 300\,000\,\text{m}$, $s_2 = 100\,000\,\text{m}$ ja $s_3 = 20\,000\,\text{m}$; lopuksi $1\,\text{min} = 60\,\text{s}$.
+**Sijoitus:** Nopeudet ovat $v_1 = \sqrt{9{,}81 \cdot 4000}\,\text{m/s} = 198{,}1\,\text{m/s}$, $v_2 = 99{,}05\,\text{m/s}$ ja $v_3 = 22{,}15\,\text{m/s}$. Kulkuajat ovat $t_1 = 300\,000\,\text{m} : 198{,}1\,\text{m/s} = 1514\,\text{s}$, $t_2 = 1010\,\text{s}$ ja $t_3 = 903\,\text{s}$. Summa on $3427\,\text{s}$, joten $t = 3427\,\text{s} : 60\,\text{s/min} = 57{,}1\,\text{min}$.
+**Vastaus:** $57\,\text{min}$, kaksi merkitsevää numeroa kuten syvyyksissä ja osuuksien pituuksissa.
+**Järkevyys:** Koko matka on $420\,\text{km}$, joten keskinopeus on $420\,000\,\text{m} : 3427\,\text{s} = 123\,\text{m/s}$. Se on pienimmän ($22\,\text{m/s}$) ja suurimman ($198\,\text{m/s}$) nopeuden välissä. Se on lähempänä suuria nopeuksia, koska pisin osuus on syvää vettä.
+**Perustelu b-kohtaan:** Osuus 3 on $15$ kertaa lyhyempi kuin osuus 1. Nopeus siellä on vain $22{,}15\,\text{m/s}$, eli noin $9$ kertaa pienempi kuin $198{,}1\,\text{m/s}$. Kulkuaika $903\,\text{s}$ on siksi $903\,\text{s} : 1514\,\text{s} = 0{,}60$ eli yli puolet osuuden 1 ajasta. Kaava käy viimeisellä osuudella, koska aallonpituus on yli $10\,\text{km}$. Se on paljon suurempi kuin syvyys $50\,\text{m}$.

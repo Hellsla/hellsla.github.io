@@ -39,6 +39,77 @@
       "answer": 392.0,
       "unit": "Hz",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-13-L1-06",
+      "level": 1,
+      "text": "Kitaran kieleen on syntynyt seisova aalto. Mikä seuraavista kuvaa kielen kupua oikein?",
+      "kind": [
+        "concept"
+      ],
+      "unit": "",
+      "tolerance": 0.02,
+      "answer": "Kohta, jossa kieli värähtelee suurimmalla amplitudilla, koska aallot ovat siinä aina samassa vaiheessa.",
+      "choices": [
+        {
+          "text": "Kohta, jossa kieli pysyy aina paikallaan, koska vastakkaisiin suuntiin etenevät aallot kumoavat siinä toisensa.",
+          "feedback": "Tämä kuvaa solmua, ei kupua. Solmussa vastakkaisiin suuntiin etenevät aallot ovat joka hetki vastakkaisissa vaiheissa ja poikkeama on nolla."
+        },
+        {
+          "text": "Kohta, jossa kieli värähtelee suurimmalla amplitudilla, koska aallot ovat siinä aina samassa vaiheessa.",
+          "feedback": "Oikein: kuvussa vastakkaisiin suuntiin etenevät aallot ovat joka hetki samassa vaiheessa ja vahvistavat toisiaan, joten amplitudi on suurin. Kupu on kahden solmun puolivälissä.",
+          "correct": true
+        },
+        {
+          "text": "Kohta, johon aaltohuippu etenee kielessä, koska seisova aalto kuljettaa huippuja kielen päästä toiseen.",
+          "feedback": "Seisovassa aallossa aaltohuippu ei etene. Kupu on kielen kiinteä kohta, jossa kieli värähtelee ylös ja alas, ja huiput pysyvät samoissa paikoissa."
+        },
+        {
+          "text": "Kohta, jossa kieli on kiinnitetty, koska kiinnityskohdassa kieli liikkuu eniten ja heijastaa aallon takaisin.",
+          "feedback": "Kiinnityskohdassa kieli ei pääse liikkumaan, joten siinä on solmu. Heijastus syntyy juuri siksi, että kiinnityskohta pysyy paikallaan."
+        }
+      ]
+    },
+    {
+      "id": "fy5-13-L1-07",
+      "level": 1,
+      "text": "Toisesta päästä suljetun putken perustaajuus on $150\\,\\text{Hz}$. Mikä seuraavista on myös putken ominaistaajuus?",
+      "kind": [
+        "concept"
+      ],
+      "unit": "",
+      "tolerance": 0.02,
+      "answer": "$450\\,\\text{Hz}$, koska ominaistaajuudet ovat perustaajuuden parittomia monikertoja.",
+      "choices": [
+        {
+          "text": "$300\\,\\text{Hz}$, koska ominaistaajuudet ovat perustaajuuden kaikkia kokonaislukukertoja kuten kielellä.",
+          "feedback": "Näin on kahdesta päästä kiinnitetyllä kielellä ja molemmista päistä avoimella putkella. Suljetussa putkessa on solmu ja kupu päissään, joten $2 f_1$ ei ole ominaistaajuus."
+        },
+        {
+          "text": "$450\\,\\text{Hz}$, koska ominaistaajuudet ovat perustaajuuden parittomia monikertoja.",
+          "feedback": "Oikein: suljetun putken pituus on pariton määrä aallonpituuden neljänneksiä, joten ominaistaajuudet ovat $f_1$, $3 f_1$, $5 f_1$ ja niin edelleen. Tässä $3 f_1 = 450\\,\\text{Hz}$.",
+          "correct": true
+        },
+        {
+          "text": "$600\\,\\text{Hz}$, koska suljetun putken ominaistaajuudet ovat perustaajuuden neljän monikertoja.",
+          "feedback": "Neljä kuuluu kaavaan $f_1 = \\tfrac{v}{4L}$, mutta kerroin $n$ on pariton, koska ominaistaajuudet ovat $f_n = n f_1$. Luku $600\\,\\text{Hz} = 4 f_1$ ei ole sellainen."
+        },
+        {
+          "text": "$75\\,\\text{Hz}$, koska alempia ominaistaajuuksia saadaan jakamalla perustaajuus kokonaisluvulla.",
+          "feedback": "Perustaajuus on alin ominaistaajuus, joten sitä alempaa ominaistaajuutta ei ole. Muut ominaistaajuudet ovat perustaajuutta suurempia."
+        }
+      ]
+    },
+    {
+      "id": "fy5-13-L1-08",
+      "level": 1,
+      "text": "Opiskelija ratkaisee tehtävää: ”Kitaran kielen värähtelevä osa on $0{,}60\\,\\text{m}$ pitkä ja aallon nopeus kielessä on $120\\,\\text{m/s}$. Mikä on kielen perustaajuus?” Hän kirjoittaa: ”Perustaajuudella kielelle mahtuu yksi aallonpituus, joten $\\lambda = L = 0{,}60\\,\\text{m}$ ja siksi $f = 200\\,\\text{Hz}$.” Kieli on kiinni kummastakin päästä.\n\na) Mikä virhe opiskelijan päättelyssä on?\n\nb) Laske kielen perustaajuus oikein.\n\nVastauslaatikkoon tulee b)-kohdan tulos.",
+      "kind": [
+        "error"
+      ],
+      "answer": 100.0,
+      "unit": "Hz",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +145,109 @@
       "answer": 60.0,
       "unit": "m/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-13-L2-05",
+      "level": 2,
+      "text": "Kitaran kielen värähtelevä osa on $0{,}640\\,\\text{m}$ pitkä, ja kieli on kiinni kummastakin päästä. Täryttäjällä etsitään taajuudet, joilla kieli resonoi, ja jokaisella resonanssilla lasketaan kielessä näkyvien kupujen lukumäärä $n$. Taulukossa ovat mittaustulokset (esimerkkiaineisto).\n\nMääritä aineistosta aallon nopeus kielessä. Laske ensin jokaiselle riville $\\tfrac{f}{n}$ ja ota niiden keskiarvo $f_{1,\\text{ka}}$.",
+      "kind": [
+        "data"
+      ],
+      "answer": 123,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Kielen resonanssitaajuudet (esimerkkiaineisto)",
+        "columns": [
+          "$n$",
+          "$f\\,(\\text{Hz})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "96.0"
+          ],
+          [
+            "2",
+            "191.0"
+          ],
+          [
+            "3",
+            "289.0"
+          ],
+          [
+            "4",
+            "383.0"
+          ],
+          [
+            "5",
+            "481.0"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-13-L2-06",
+      "level": 2,
+      "text": "Äänen nopeutta mitataan resonanssiputkella. Pystysuoran putken alaosassa on vettä, ja putken suun yllä soi äänirauta, jonka taajuus on $512\\,\\text{Hz}$. Kun vedenpintaa lasketaan, ääni voimistuu kolmessa kohdassa. Veden pinta toimii putken suljettuna päänä. Taulukossa on ilmapatsaan pituus $L$ veden pinnasta putken suulle kussakin kohdassa (esimerkkiaineisto).\n\na) Määritä äänen nopeus ilmassa. Käytä ensimmäisen ja kolmannen resonanssin pituuksien erotusta, jolloin putken pääkorjausta ei tarvita.\n\nb) Laske, kuinka paljon ensimmäinen pituus poikkeaa neljänneksestä aallonpituutta, ja selitä poikkeaman syy.\n\nVastauslaatikkoon tulee a)-kohdan tulos.",
+      "kind": [
+        "experiment",
+        "data"
+      ],
+      "answer": 343,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Resonanssit äänirauta $512\\,\\text{Hz}$ (esimerkkiaineisto)",
+        "columns": [
+          "Resonanssi",
+          "$L\\,(\\text{cm})$"
+        ],
+        "rows": [
+          [
+            "1.",
+            "16.3"
+          ],
+          [
+            "2.",
+            "49.9"
+          ],
+          [
+            "3.",
+            "83.3"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-13-L2-07",
+      "level": 2,
+      "text": "Kitaristi painaa kielen sormellaan otelautaa vasten, ja kielen sävel nousee. Kielen kireys ei muutu painettaessa. Mikä seuraavista selittää sävelkorkeuden nousun?",
+      "kind": [
+        "concept"
+      ],
+      "unit": "",
+      "tolerance": 0.02,
+      "answer": "Värähtelevä osa lyhenee, joten aallonpituus pienenee ja taajuus kasvaa, kun aallon nopeus ei muutu.",
+      "choices": [
+        {
+          "text": "Aallon nopeus kielessä kasvaa, koska lyhyemmässä kielessä aalto pääsee etenemään nopeammin.",
+          "feedback": "Aallon nopeus kielessä riippuu kielen kireydestä ja paksuudesta, ei pituudesta. Kireys ja paksuus eivät muutu, joten nopeus pysyy samana."
+        },
+        {
+          "text": "Aallonpituus pysyy samana, koska se riippuu vain aallon nopeudesta, ja taajuus kasvaa lyhyemmän kielen vuoksi.",
+          "feedback": "Perustaajuudella $\\lambda = 2L$, joten aallonpituus lyhenee kielen mukana. Jos aallonpituus pysyisi samana ja nopeus pysyisi samana, taajuuskaan ei muuttuisi."
+        },
+        {
+          "text": "Värähtelevä osa lyhenee, joten aallonpituus pienenee ja taajuus kasvaa, kun aallon nopeus ei muutu.",
+          "feedback": "Oikein: perustaajuudella $\\lambda = 2L$ ja $v = f\\lambda$. Kun $L$ pienenee ja $v$ pysyy samana, $\\lambda$ pienenee ja $f = \\tfrac{v}{2L}$ kasvaa.",
+          "correct": true
+        },
+        {
+          "text": "Kielen amplitudi kasvaa lyhennettäessä, joten aalto etenee nopeammin ja taajuus kasvaa.",
+          "feedback": "Amplitudi ei määrää aallon nopeutta eikä taajuutta. Aallon nopeus riippuu kielestä, ja taajuus määräytyy nopeudesta ja värähtelevän osan pituudesta."
+        }
+      ]
     }
   ],
   "level3": [
@@ -100,6 +274,80 @@
       "answer": 0.5,
       "unit": "m",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-13-L3-04",
+      "level": 3,
+      "text": "Kitaran kielen värähtelevä osa on kaikissa mittauksissa $0{,}650\\,\\text{m}$ pitkä, ja kieli on kiinni kummastakin päästä. Kielen jännitysvoimaa $F$ muutetaan virityskoneistolla, ja kielen perustaajuus $f_1$ mitataan jokaisella jännitysvoimalla. Taulukossa ovat mittaustulokset (esimerkkiaineisto).\n\nTutkitaan, onko perustaajuus verrannollinen jännitysvoiman neliöjuureen, $f_1 \\propto \\sqrt{F}$, vai itse jännitysvoimaan, $f_1 \\propto F$.\n\na) Laske jokaiselle mittaukselle suhteet $\\tfrac{f_1}{F}$ ja $\\tfrac{f_1^2}{F}$. Kumpi suhde pysyy mittausepävarmuuden rajoissa vakiona?\n\nb) Päättele a)-kohdan perusteella, kuinka moninkertaiseksi perustaajuus muuttuu, kun jännitysvoima nelinkertaistetaan.\n\nc) Ennusta perustaajuus, kun jännitysvoima on $120\\,\\text{N}$. Käytä vakiona suhteen $\\tfrac{f_1^2}{F}$ keskiarvoa ja arvioi ennusteen luotettavuutta.\n\nVastauslaatikkoon tulee c)-kohdan tulos.",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 199,
+      "unit": "Hz",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Kielen perustaajuus eri jännitysvoimilla (esimerkkiaineisto)",
+        "columns": [
+          "$F\\,(\\text{N})$",
+          "$f_1\\,(\\text{Hz})$"
+        ],
+        "rows": [
+          [
+            "20.0",
+            "81.0"
+          ],
+          [
+            "40.0",
+            "115.5"
+          ],
+          [
+            "60.0",
+            "140.0"
+          ],
+          [
+            "80.0",
+            "163.0"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-13-L3-05",
+      "level": 3,
+      "text": "Kylmässä varastohallissa tutkitaan kahta samanpituista, $0{,}800\\,\\text{m}$:n pituista putkea A ja B. Toinen on avoin molemmista päistä ja toinen suljettu toisesta päästä, mutta merkinnät ovat kadonneet. Putken suun lähellä soi kaiutin, jonka taajuutta nostetaan, ja kolme alinta resonanssitaajuutta mitataan. Putken pääkorjaus jätetään huomiotta. Äänen nopeus ei ole hallissa $340\\,\\text{m/s}$, koska ilma on kylmää. Taulukossa ovat mittaustulokset (esimerkkiaineisto).\n\na) Päättele taajuuksien suhteista, kumpi putki on avoin ja kumpi suljettu.\n\nb) Laske äänen nopeus ilmassa kummankin putken tuloksista ja anna lopputuloksena niiden keskiarvo.\n\nc) Selitä, miksi putket kuulostavat erilaisilta, vaikka ne ovat yhtä pitkiä.\n\nVastauslaatikkoon tulee b)-kohdan keskiarvo.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 331,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Putkien resonanssitaajuudet (esimerkkiaineisto)",
+        "columns": [
+          "Resonanssi",
+          "$f_\\text{A}\\,(\\text{Hz})$",
+          "$f_\\text{B}\\,(\\text{Hz})$"
+        ],
+        "rows": [
+          [
+            "1.",
+            "207",
+            "103"
+          ],
+          [
+            "2.",
+            "413",
+            "311"
+          ],
+          [
+            "3.",
+            "621",
+            "517"
+          ]
+        ]
+      }
     }
   ]
 }
