@@ -3,6 +3,7 @@
     {
       "id": "fy6-2-L1-01",
       "level": 1,
+      "core": true,
       "text": "Auton akun jännite mitataan yleismittarilla alueella $20\\,\\text{V}$, ja näyttö näyttää $12{,}46\\,\\text{V}$. Tällä alueella resoluutio on $0{,}01\\,\\text{V}$. Käyttöohjeen mukaan virheraja on $\\pm(0{,}5\\,\\% + 2\\ \\text{numeroa})$. Kuinka suuri on lukeman virheraja? Anna vastaus voltteina.",
       "answer": 0.0823,
       "unit": "V",
@@ -43,6 +44,7 @@
     {
       "id": "fy6-2-L1-06",
       "level": 1,
+      "core": true,
       "text": "Haluat mitata yleismittarilla lampun läpi kulkevan virran. Piirissä on paristo ja lamppu. Miten virtamittari kytketään?",
       "kind": [
         "concept"
@@ -137,6 +139,7 @@
     {
       "id": "fy6-2-L2-04",
       "level": 2,
+      "core": true,
       "text": "Opiskelija haluaa mitata lampun jännitteen. Hän kytkee jännitemittarin vahingossa sarjaan lampun kanssa. Piirissä on vain $9{,}0\\,\\text{V}$:n paristo, lamppu ja mittari. Jännitemittarin resistanssi on hyvin suuri lampun resistanssiin verrattuna. Lamppu sammuu. Mitä jännitemittari näyttää? Anna vastaus voltteina.",
       "answer": 9.0,
       "unit": "V",
@@ -145,6 +148,7 @@
     {
       "id": "fy6-2-L2-05",
       "level": 2,
+      "core": true,
       "kind": [
         "data",
         "reasoning"

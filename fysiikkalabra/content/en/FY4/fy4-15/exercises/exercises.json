@@ -3,6 +3,7 @@
     {
       "id": "fy4-15-L1-01",
       "level": 1,
+      "core": true,
       "text": "The head of a hydropower plant is $15.0\\,\\text{m}$, and $120\\,\\text{m}^3$ of water flows through the turbines every second. The efficiency of the plant is $0.900$. What is the electric power of the plant?",
       "answer": 15.8922,
       "unit": "MW",
@@ -43,6 +44,7 @@
     {
       "id": "fy4-15-L1-06",
       "level": 1,
+      "core": true,
       "text": "Two hydropower plants have the same flow rate and the same efficiency, but the head of one is twice that of the other. The power of the plant with the double head is twice as large. Which of the following explains this?",
       "kind": [
         "concept"
@@ -115,6 +117,7 @@
     {
       "id": "fy4-15-L2-04",
       "level": 2,
+      "core": true,
       "text": "A small hydropower plant has a head of $9.50\\,\\text{m}$, a flow rate of $3.20\\,\\text{m}^3\\text{/s}$ and an efficiency of $0.800$. How much electric energy does the plant produce in a day ($24.0\\,\\text{h}$), when the flow rate stays the same? Give the answer in megawatt-hours.",
       "answer": 5.725901,
       "unit": "MWh",
@@ -214,6 +217,7 @@
     {
       "id": "fy4-15-L2-07",
       "level": 2,
+      "core": true,
       "text": "A student calculated the electric power of a wind turbine and got a strangely small result. Here is the student's solution.\n\n“The diameter of the rotor is $60\\,\\text{m}$, the wind speed $7.0\\,\\text{m/s}$, the density of air $1.25\\,\\text{kg/m}^3$ and the efficiency $0.40$. The area is $A = \\pi r^2 = 2827\\,\\text{m}^2$ and the power $P = \\tfrac{1}{2}\\eta\\rho A v = 0.5 \\cdot 0.40 \\cdot 1.25 \\cdot 2827 \\cdot 7.0 = 4948\\,\\text{W} \\approx 4.9\\,\\text{kW}$.”\n\nExplain what the error in the student's formula is, and calculate the correct electric power of the turbine. The answer field takes the correct power in kilowatts.",
       "kind": [
         "error"

@@ -1,11 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: fa0a4b9e422acb7e
+CONTENT-HASH: 813e39295d5df5d4
+
+Scope (teacher's ruling "katselmoi vain muuttuneet osat"): `git diff e7fb0232a -- content/*/FY6/sovella` plus what the changed sentence touches. This translation did not exist at e7fb0232a. Its diff since its last PASS (24b2a3b87) is one sentence, the fy6-s4 d **Principle/Periaate** in solutions.md, the same change as in fi. The packet's full mode was narrowed to that scope.
 
 ## Blocking
 None.
 
 ## Polish
-Fixed in earlier pass: none needed. Structural headings Hyväksytään myös / Yleisiä virheitä are parser keywords and stay Finnish in source.
+- s4 d: "the battery that charges it". The "it" could name the capacitor, since the previous sentence's subject is now the plates and the field.
 
 ## Checked
-Same four tasks, 16 parts, all criteria and solution sections as in Finnish; nothing dropped. Natural textbook English; task-intro and source notes read well. Figure alt texts and the cable subscript (R_c, now also in the circuit figure) match the text.
+- **Alignment:** the Principle now matches the corrected en fy6-13 (charges $+Q$/$-Q$, energy in the field). The solution no longer reinforces the "charged capacitor is charged as a whole" misconception that the lesson addresses.
+- **Structure:** one idea per sentence, and it still leads into the d answer (danger, safe discharge, current). The rubric and points are unchanged, and practice.py check is OK.
+- **Hash:** the same at the start and at the end.

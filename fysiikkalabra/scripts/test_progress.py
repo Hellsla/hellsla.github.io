@@ -79,6 +79,8 @@ with sync_playwright() as pw:
                 expect(f"{tag}: Ennusta is not done before every prediction is given", n < 2 or "#ennusta" not in pg.evaluate(DONE), pg.evaluate(DONE))
                 pg.evaluate("[...document.querySelectorAll('#ennusta fieldset.choice:not(details.opt *)')].slice(-1).forEach(fs => { fs.querySelector('input[type=radio]').checked = true; fs.querySelector('button.commit').click(); })")
                 pg.evaluate("document.querySelectorAll('#exercises li.core form.check').forEach(f => { f.querySelector('input').value = '1'; f.requestSubmit(); })")
+                # a core exercise can be a multiple choice (core path by skill, 2026-11-05): commit it with Vastaa
+                pg.evaluate("document.querySelectorAll('#exercises li.core fieldset.choice').forEach(fs => { fs.querySelector('input[type=radio]').checked = true; fs.querySelector('button.commit').click(); })")
                 pg.wait_for_timeout(150)
                 done = pg.evaluate(DONE)
                 expect(f"{tag}: Ennusta and Tehtävät are done once their required answers are checked", "#ennusta" in done and "#exercises" in done, done)

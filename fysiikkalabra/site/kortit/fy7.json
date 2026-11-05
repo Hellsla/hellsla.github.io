@@ -39,8 +39,8 @@
    "aihe": "fy7-magnetismi",
    "kasite": "Lorentzin voima",
    "maaritelma": "Magneettikentän liikkuvaan varaukseen kohdistama voima.",
-   "kaava": "F = qvB\\sin\\alpha",
-   "kaava_puhe": "F on q kertaa v kertaa B kertaa sini alfa"
+   "kaava": "F = |q|vB\\sin\\alpha",
+   "kaava_puhe": "F on q:n itseisarvo kertaa v kertaa B kertaa sini alfa"
   },
   {
    "id": "fy7-virtajohtimen-voima",

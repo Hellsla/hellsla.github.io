@@ -3,6 +3,7 @@
     {
       "id": "fy4-9-L1-01",
       "level": 1,
+      "core": true,
       "text": "Jääkiekon massa on $0{,}17\\,\\text{kg}$. Kiekko liukuu jäällä nopeudella $30\\,\\text{m/s}$. Kuinka suuri on kiekon liikemäärä?",
       "answer": 5.1,
       "unit": "kg·m/s",
@@ -43,6 +44,7 @@
     {
       "id": "fy4-9-L1-06",
       "level": 1,
+      "core": true,
       "kind": [
         "concept"
       ],
@@ -113,6 +115,7 @@
     {
       "id": "fy4-9-L2-03",
       "level": 2,
+      "core": true,
       "text": "Pallon massa on $60\\,\\text{g}$. Pallo heitetään vaakasuoraan seinään. Se osuu seinään nopeudella $14\\,\\text{m/s}$ ja kimpoaa suoraan takaisin nopeudella $11\\,\\text{m/s}$. Kuinka suuren impulssin seinä antaa pallolle? Ilmoita impulssin suuruus.",
       "answer": 1.5,
       "unit": "N·s",
@@ -208,6 +211,7 @@
     {
       "id": "fy4-9-L2-07",
       "level": 2,
+      "core": true,
       "kind": [
         "data",
         "graph"

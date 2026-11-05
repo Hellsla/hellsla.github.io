@@ -27,6 +27,7 @@
     {
       "id": "fy6-12-L1-04",
       "level": 1,
+      "core": true,
       "text": "Varaus $4{,}0\\,\\mu\\text{C}$ siirtyy sähkökentässä kohdasta $A$ kohtaan $B$. Kohdan $A$ potentiaali on $60\\,\\text{V}$ ja kohdan $B$ potentiaali on $15\\,\\text{V}$. Kuinka suuren työn sähkökenttä tekee varaukseen? Vastaa millijouleina.",
       "answer": 0.18,
       "unit": "mJ",
@@ -44,6 +45,7 @@
     {
       "id": "fy6-12-L1-06",
       "level": 1,
+      "core": true,
       "text": "Tasaisessa sähkökentässä on kaksi pientä kappaletta. Toisen varaus on $+q$ ja toisen $-q$. Kumpikin siirtyy saman matkan kentän suuntaan. Mitä niiden sähköiselle potentiaalienergialle tapahtuu?",
       "kind": [
         "concept"
@@ -67,7 +69,7 @@
         },
         {
           "text": "Kummankin varauksen potentiaalienergia pysyy samana, koska varaukset siirtyvät saman matkan samassa tasaisessa kentässä.",
-          "feedback": "Kenttä on tasainen, mutta potentiaali ei ole sama kaikkialla. Se muuttuu tasaisesti matkan mukana, $V = Ex$. Kun varaus siirtyy kentän suuntaan, potentiaali sen kohdalla muuttuu. Silloin myös potentiaalienergia $qV$ muuttuu."
+          "feedback": "Kenttä on tasainen, mutta potentiaali ei ole sama kaikkialla. Se muuttuu tasaisesti matkan mukana, $V = Ex$. Tässä potentiaali on nolla negatiivisella levyllä, ja $x$ on etäisyys siitä. Kun varaus siirtyy kentän suuntaan, potentiaali sen kohdalla muuttuu. Silloin myös potentiaalienergia $qV$ muuttuu."
         }
       ]
     },
@@ -104,6 +106,7 @@
     {
       "id": "fy6-12-L1-08",
       "level": 1,
+      "core": true,
       "text": "Kaksinkertaisesti positiivinen ioni, jonka varaus on $+2e$, lähtee levosta ja kulkee $450\\,\\text{V}$:n potentiaalieron läpi. Kuinka suuri liike-energia ionilla on lopuksi? Ioniin vaikuttaa vain sähköinen voima. Vastaa elektronivoltteina.",
       "kind": [
         "reasoning"
@@ -133,6 +136,7 @@
     {
       "id": "fy6-12-L2-03",
       "level": 2,
+      "core": true,
       "text": "Alfahiukkasen varaus on $+2e$ ja massa on $6{,}645 \\cdot 10^{-27}\\,\\text{kg}$. Alfahiukkanen lähtee levosta ja kulkee $2{,}0\\,\\text{kV}$:n potentiaalieron läpi. Kuinka suuri on sen nopeus? Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Vastaa metreinä sekunnissa.",
       "answer": 439166.0,
       "unit": "m/s",

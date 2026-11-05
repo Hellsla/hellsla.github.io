@@ -11,6 +11,7 @@
     {
       "id": "fy7-16-L1-02",
       "level": 1,
+      "core": true,
       "text": "Valon teho kuidun alussa on $2{,}0\\,\\text{mW}$ ja lopussa $0{,}50\\,\\text{mW}$. Kuinka suuri on kuidun vaimennus desibeleinä?",
       "answer": 6.0206,
       "unit": "dB",
@@ -43,6 +44,7 @@
     {
       "id": "fy7-16-L1-06",
       "level": 1,
+      "core": true,
       "text": "Induktioliedessä kattilan pohja lämpenee, mutta kelan päällä oleva lasilevy ei lämpene itsestään, vaikka kelan magneettikenttä kulkee sen läpi. Mikä seuraavista selittää tämän parhaiten?",
       "kind": [
         "concept"
@@ -99,6 +101,7 @@
     {
       "id": "fy7-16-L2-02",
       "level": 2,
+      "core": true,
       "text": "Kuituyhteyden lähetin syöttää kuituun tehon $1{,}0\\,\\text{mW}$, ja vastaanotin tunnistaa pulssit, kun teho on vähintään $1{,}0\\,\\mu\\text{W}$. Kuidun vaimennuskerroin on $0{,}20\\,\\text{dB/km}$. Kuinka pitkä yhteys voi enintään olla ilman vahvistinta? Liitosten vaimennusta ei oteta huomioon.",
       "answer": 150.0,
       "unit": "km",
@@ -123,6 +126,7 @@
     {
       "id": "fy7-16-L2-05",
       "level": 2,
+      "core": true,
       "text": "Langattoman laturin hyötysuhde mitattiin eri etäisyyksillä laturin ja puhelimen vastaanotinkäämin välillä. Mittaukset ovat esimerkkiaineistoa.\n\nPiirrä kuvaaja, jossa hyötysuhde on pystyakselilla ja etäisyys vaaka-akselilla, ja yhdistä pisteet sujuvalla käyrällä. Määritä etäisyys, jolla hyötysuhde laskee arvoon $50\\,\\%$. Voit lukea arvon kuvaajasta tai interpoloida lineaarisesti kahden mittauspisteen välillä.\n\nKirjoita vastauslaatikkoon etäisyys millimetreinä.",
       "kind": [
         "data",

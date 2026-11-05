@@ -3,6 +3,7 @@
     {
       "id": "fy7-9-L1-01",
       "level": 1,
+      "core": true,
       "text": "FM-radiokanava lähettää taajuudella $94{,}0\\,\\text{MHz}$. Kuinka suuri on radioaallon aallonpituus? Radioaallon nopeus ilmassa on $c = 3{,}00 \\cdot 10^{8}\\,\\text{m/s}$.",
       "answer": 3.1915,
       "unit": "m",
@@ -43,6 +44,7 @@
     {
       "id": "fy7-9-L1-06",
       "level": 1,
+      "core": true,
       "text": "Radioaallot ja valo ovat sähkömagneettisia aaltoja. Tyhjiössä etenevässä sähkömagneettisessa aallossa on sähkökenttä $\\overline{E}$ ja magneettikenttä $\\overline{B}$. Mikä seuraavista kuvaa aallon rakennetta oikein?",
       "kind": [
         "concept"
@@ -91,6 +93,7 @@
     {
       "id": "fy7-9-L2-01",
       "level": 2,
+      "core": true,
       "text": "Puulämmitteisen pizzauunin holvin sisäpinnan lämpötila on $450\\,{}^\\circ\\text{C}$. Millä aallonpituudella holvin lähettämän säteilyn spektrin huippu on, kun holvi oletetaan mustaksi kappaleeksi? Anna vastaus mikrometreinä.",
       "answer": 4.0075,
       "unit": "µm",
@@ -124,6 +127,7 @@
     {
       "id": "fy7-9-L2-05",
       "level": 2,
+      "core": true,
       "text": "Spektrometrillä mitattiin kolmen valonlähteen säteilyn spektrin huipun aallonpituus (esimerkkiaineisto). Kaikkien kolmen lähteen oletetaan säteilevän kuin musta kappale.\n\na) Laske lähteiden pintalämpötilat.\n\nb) Mikä lähteistä on kuumin? Kuuluuko spektrin huippu näkyvän valon alueelle ($380\\,\\text{nm}$–$750\\,\\text{nm}$) jonkin lähteen kohdalla? Perustele tuloksilla.\n\nKirjoita vastauslaatikkoon a-kohdasta hehkulangan lämpötila kelvineinä.",
       "kind": [
         "data"

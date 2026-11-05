@@ -1,18 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 4cf9afbd4be15c5e
+CONTENT-HASH: 9915b25c3d7b3277
+
+Scope: this is a re-review of the diff `git diff cc317598e -- content/fi-easy/FY7/fy7-15` (lesson.md and inquiry.json). The rest of the lesson was reviewed in full at a46a26471bbb008d and passed.
 
 ## Blocking
 
 ## Polish
-- meta.json key_concepts "Brewsterin laki" — tan α_B = n₂ : n₁ does not say which medium is n₁ (incident and reflected side) or n₂, or that α_B is measured from the normal. lesson.md:522–532 defines all of them. Optionally add "valo tulee aineesta n₁ aineeseen n₂" if the word limit allows.
-- meta.json key_concepts "Malusin laki" — "polarisoitunut valo" could be "lineaarisesti polarisoitunut valo", the term the "polarisaatio" entry introduces. The wording matches lesson.md:460, so this is C.
+- content/fi-easy/FY7/fy7-15/inquiry.json:18 (hook) — "Kimallus sammuu lähes kokonaan" holds only near the Brewster angle. It is a C simplification and can stay.
+- Scope: the course note still says "qualitative with Brewster's law". It should record the teacher's decision that Brewster's law is now syventävä.
 
 ## Checked
-- Re-review limited to the new key_concepts box. The rest passed earlier and is unchanged.
-- polarisaatio: transverse wave, and in linear polarisation E oscillates in a fixed direction. Right.
-- polarisaattori: it passes the E component along the transmission axis, and an ideal polariser passes half of unpolarised intensity. The ideal-polariser condition is stated.
-- Malusin laki: I = I₀ cos²θ, with an ideal polariser and θ between the polarisation direction and the transmission axis. Right, and consistent with :456–460.
-- Brewsterin laki: the box says "eristeen pinnasta", which matches the metal caveat at :370, and the reflected light is fully polarised. Right.
-- Polaroid sunglasses: a vertical transmission axis blocks glare that is mostly horizontally polarised. Right.
-- check_i18n.py fi-easy: 0 errors. Box at 390 px renders cleanly with no overflow.
-- The hash was the same at the start and at the end.
+- Ydinajatus, Kaksi polarisaattoria: the new sentences say that light passes again through an oblique third film, because of the component ("komponentti eli osa") along the last film's axis. This is correct. The analyser is now defined as the polariser that receives already polarised light ("johon tulee jo polarisoitunutta valoa"), which is correct.
+- ennuste-kolme correct feedback: 12,5 % is one eighth, it is called a model value, and the component explanation is correct.
+- ennuste-kolme and koe-2 are now core. koe-2 locks n, θ₁ and θ₃ and varies only θ₂, and pohdi includes ennuste-kolme.
+- Yleinen virhekäsitys: "kulmalla ei ole väliä ensimmäisessä polarisaattorissa" is correct for unpolarised light.
+- mittaus distractor feedback: "Ristissä oleva kalvo päästää läpi vain hyvin vähän" is correct.
+- The siirto-3d prompt and the exercises intro were reworded. The physics is unchanged, and the intro agrees with the core flags of the exercises.
+- The changes mean the same as in fi.
+- The hash was the same at the start and at the end of the review.

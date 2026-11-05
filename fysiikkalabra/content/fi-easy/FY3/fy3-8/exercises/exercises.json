@@ -3,6 +3,7 @@
     {
       "id": "fy3-8-L1-01",
       "level": 1,
+      "core": true,
       "text": "Omakotitalon räystäällä on $6{,}0\\,\\text{m}$ pitkä räystäskouru. Se on tehty pinnoitetusta teräksestä ($\\alpha = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$). Kesähelteellä aurinko lämmittää kourun aamun $15\\,{}^\\circ\\text{C}$:sta iltapäivän $55\\,{}^\\circ\\text{C}$:seen. Kuinka paljon kouru pitenee? Anna vastaus millimetreinä.",
       "answer": 2.9,
       "unit": "mm",
@@ -73,6 +74,7 @@
     {
       "id": "fy3-8-L1-07",
       "level": 1,
+      "core": true,
       "kind": [
         "concept"
       ],
@@ -124,6 +126,7 @@
     {
       "id": "fy3-8-L2-02",
       "level": 2,
+      "core": true,
       "text": "Teräksisen kahvakuulan tilavuus on $2{,}0\\,\\text{dm}^3$. Kuula on ollut pakkasyön autotallissa $-22\\,{}^\\circ\\text{C}$:ssa. Se tuodaan sisälle, jossa se lämpenee $20\\,{}^\\circ\\text{C}$:seen. Teräksen pituuden lämpötilakerroin on $\\alpha = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$. Kuinka monta kuutiosenttimetriä kahvakuulan tilavuus kasvaa? Vihje: kiinteällä aineella $\\gamma \\approx 3\\alpha$.",
       "answer": 3.0,
       "unit": "cm³",
@@ -194,6 +197,7 @@
     {
       "id": "fy3-8-L2-06",
       "level": 2,
+      "core": true,
       "kind": [
         "data",
         "experiment"

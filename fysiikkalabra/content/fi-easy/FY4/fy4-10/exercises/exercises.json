@@ -11,6 +11,7 @@
     {
       "id": "fy4-10-L1-02",
       "level": 1,
+      "core": true,
       "text": "Ilmatyynyradalla $0{,}50\\,\\text{kg}$:n vaunu liikkuu nopeudella $0{,}80\\,\\text{m/s}$. Se törmää levossa olevaan $0{,}30\\,\\text{kg}$:n vaunuun. Vaunut jäävät kiinni toisiinsa. Kitka jätetään huomiotta. Millä nopeudella vaunut jatkavat yhdessä?",
       "answer": 0.5,
       "unit": "m/s",
@@ -43,6 +44,7 @@
     {
       "id": "fy4-10-L1-06",
       "level": 1,
+      "core": true,
       "text": "Kaksi ilmatyynyradan vaunua törmää ja jää kiinni toisiinsa. Ulkoiset voimat ovat törmäyksen aikana niin pieniä, ettei niillä ole merkitystä. Mikä väite tästä täysin kimmottomasta törmäyksestä on oikein?",
       "kind": [
         "concept"
@@ -97,6 +99,7 @@
     {
       "id": "fy4-10-L2-01",
       "level": 2,
+      "core": true,
       "text": "Ilmakivääristä ammutaan $0{,}50\\,\\text{g}$:n luoti nopeudella $180\\,\\text{m/s}$. Kiväärin massa on $3{,}2\\,\\text{kg}$. Kivääri on ennen laukausta levossa, ja ampuja tukee sitä kevyesti. Ampujan tuki jätetään huomiotta, koska laukaus kestää vain hetken. Millä nopeudella kivääri lähtee liikkumaan taaksepäin?",
       "answer": 0.028125,
       "unit": "m/s",
@@ -129,6 +132,7 @@
     {
       "id": "fy4-10-L2-05",
       "level": 2,
+      "core": true,
       "text": "Ilmatyynyradalla vaunu A ($m_\\text{A} = 0{,}50\\,\\text{kg}$) liikkuu oikealle ja törmää vaunuun B ($m_\\text{B} = 0{,}30\\,\\text{kg}$), joka on levossa. Törmäys tehtiin kolmella eri tavalla, ja nopeudet mitattiin videoanalyysillä. Oikealle on positiivinen suunta, kitka jätetään huomiotta ja aineisto on esimerkkiaineisto.\n\na) Laske kokonaisliikemäärä ennen törmäystä ja sen jälkeen jokaisessa kokeessa. Säilyykö liikemäärä mittaustarkkuuden rajoissa?\n\nb) Laske kokeiden 1 ja 2 liike-energia ennen törmäystä ja sen jälkeen. Luokittele törmäykset kimmoisiksi, täysin kimmottomiksi tai osittain kimmoisiksi.\n\nc) Laske kokeessa 3, kuinka suuri osuus alkuperäisestä liike-energiasta on jäljellä. Luokittele törmäys.\n\nVastauslaatikkoon tulee osan c) osuus prosentteina.",
       "kind": [
         "data",

@@ -11,6 +11,7 @@
     {
       "id": "fy4-6-L1-02",
       "level": 1,
+      "core": true,
       "text": "A sled of mass $30\\,\\text{kg}$ slides on horizontal snow. The coefficient of kinetic friction between the sled and the snow is $0.12$. Draw the free-body diagram of the sled. How large is the friction force of the snow on the sled?",
       "answer": 35.0,
       "unit": "N",
@@ -46,6 +47,7 @@
     {
       "id": "fy4-6-L1-06",
       "level": 1,
+      "core": true,
       "text": "A box is at rest on a horizontal floor. It is pushed horizontally with a force of $20\\,\\text{N}$, but it does not move.\n\nThe greatest possible value of the static friction between the box and the floor is $60\\,\\text{N}$. Which statement about the static friction $F_{\\mu 0}$ exerted by the floor on the box is correct?",
       "kind": [
         "concept"
@@ -121,6 +123,7 @@
     {
       "id": "fy4-6-L2-01",
       "level": 2,
+      "core": true,
       "text": "A sled starts from rest and slides down a hill with an angle of inclination of $12^\\circ$, and reaches a velocity of $3.0\\,\\text{m/s}$ in $4.0\\,\\text{s}$. The acceleration is constant. How large is the coefficient of kinetic friction between the sled and the snow? Air drag is ignored.",
       "answer": 0.13,
       "unit": "",
@@ -157,6 +160,7 @@
     {
       "id": "fy4-6-L2-05",
       "level": 2,
+      "core": true,
       "kind": [
         "data",
         "graph"

@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: a607d4202d595e70
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 708656d835e962ab
+Mode: delta
 
 ## Blocking
 (none)
 
-## Fixed
-(none needed)
-
 ## Polish
-(none)
+- exercises.json core marks — there is still no shielding task in the core path. — Optionally also mark L1-05 as core.
+- solutions.md:59 (L2-01) — the long clause in the middle (left as is). — Split into two sentences.
 
 ## Checked
-- The teaching content of the 8 new exercises matches fi: same task structure (parts a-d, "answer box takes part ..." line), same kinds, same model answers (L2-07 error explanation, L3-04 c winter/heating season, L3-05 d scattering and shorter working time), same reasonableness checks.
-- Language level: English: natural, no Finnish left, decimal point in JSON and LaTeX (also {,} removed in solutions.md).
-- Feedback in L1-06 explains why each wrong option fails, not only that it does.
-- Terms introduced in the tasks (example data, reference level, remediation, half-value thickness) are used as in fi and the lesson.
+- Core is now L1-06, L1-07, L2-02, L2-05, the same as fi. The w_T calculation is now in the core path.
+- :104, :134 and :149 read naturally and say the same thing.
+- Hash 708656d835e962ab at start and end.

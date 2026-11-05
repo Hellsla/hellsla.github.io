@@ -3,6 +3,7 @@
     {
       "id": "fy5-1-L1-01",
       "level": 1,
+      "core": true,
       "text": "A nut is being tightened with a spanner. The hand acts on the handle at a distance of $0.25\\,\\text{m}$ from the centre of the nut with a force of $150\\,\\text{N}$ perpendicular to the handle. What is the moment of the force about the axis of the nut?",
       "answer": 37.5,
       "unit": "Nm",
@@ -44,6 +45,7 @@
     {
       "id": "fy5-1-L1-06",
       "level": 1,
+      "core": true,
       "text": "The handle of a door is usually as far from the hinges as possible. Which of the following justifies this correctly?",
       "kind": [
         "concept"
@@ -113,6 +115,7 @@
     {
       "id": "fy5-1-L2-01",
       "level": 2,
+      "core": true,
       "text": "A door is opened by pulling a string tied to the handle. The handle is $0.75\\,\\text{m}$ from the hinges, and the tension of the string is $40\\,\\text{N}$. The string makes an angle of $35^\\circ$ with the plane of the door. What is the moment of the string's force about the hinges?",
       "answer": 17.2,
       "unit": "Nm",
@@ -186,6 +189,7 @@
     {
       "id": "fy5-1-L2-06",
       "level": 2,
+      "core": true,
       "text": "The centre of a light metre stick is fixed to an axis, and the stick is horizontal. Weights hang from the stick on the left and right of the axis. The table gives the masses of the weights and their distances from the axis (example data). The mass of the stick itself is ignored. Use the value $g = 9.81\\,\\text{m/s}^2$.\n\na) Calculate the net moment of the weights (the gravitational forces on the hanging masses) about the axis, when an anticlockwise moment is positive.\n\nb) In which direction does the stick start to turn?\n\nThe answer box takes the result of part a).",
       "kind": [
         "data"

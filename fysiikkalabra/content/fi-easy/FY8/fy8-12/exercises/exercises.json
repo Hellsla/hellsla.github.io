@@ -3,6 +3,7 @@
     {
       "id": "fy8-12-L1-01",
       "level": 1,
+      "core": true,
       "text": "Koboltti-60 lähettää gammasäteilyä, jonka keskimääräiselle energialle $1{,}25\\,\\text{MeV}$ lyijyn puoliintumispaksuus on $10{,}4\\,\\text{mm}$. Kuinka monta prosenttia gammasäteilystä läpäisee $25{,}0\\,\\text{mm}$:n paksuisen lyijylevyn? Oleta, että säde on kapea.",
       "answer": 18.9,
       "unit": "%",
@@ -43,6 +44,7 @@
     {
       "id": "fy8-12-L1-06",
       "level": 1,
+      "core": true,
       "text": "Alfa- ja beetasäteilyn läpäisykykyä verrataan GM-putkella. Mikä seuraavista suojista pysäyttää alfasäteilyn mutta päästää osan beetasäteilystä läpi? Miksi?",
       "kind": [
         "concept"
@@ -121,6 +123,7 @@
     {
       "id": "fy8-12-L2-02",
       "level": 2,
+      "core": true,
       "text": "Cesium-137-lähteen gammasäteily kulkee ensin $10\\,\\text{mm}$:n lyijylevyn ja sitten $20\\,\\text{cm}$:n betoniseinän läpi. Lyijyn puoliintumispaksuus on $5{,}5\\,\\text{mm}$ ja betonin $3{,}9\\,\\text{cm}$. Kuinka monta prosenttia gammasäteilystä läpäisee molemmat esteet? Oleta, että säde on kapea.",
       "answer": 0.81,
       "unit": "%",
@@ -206,6 +209,7 @@
     {
       "id": "fy8-12-L2-06",
       "level": 2,
+      "core": true,
       "text": "Opiskelija tutkii, kuinka hyvin lyijy vaimentaa cesium-137:n gammasäteilyä. Hän asettaa lähteen ja GM-putken väliin lyijylevyjä ja laskee pulssit $60\\,\\text{s}$:n ajan (taulukko, esimerkkiaineisto). Taustasäteily on $50$ pulssia $60\\,\\text{s}$:ssa.\n\na) Vähennä taustasäteily ja laske nettopulssimäärät. Nettopulssimäärä on pulssimäärä, josta tausta on vähennetty.\n\nb) Piirrä paperille nettopulssimäärä lyijyn paksuuden funktiona. Lue kuvaajasta paksuus, jolla nettopulssimäärä on puolittunut alkuperäisestä.\n\nc) Laske puoliintumispaksuus jokaisesta mittauksesta paksuuksilla $3$–$15\\,\\text{mm}$ kaavalla $d_{1/2} = \\dfrac{d \\cdot \\ln 2}{\\ln \\tfrac{N_0 - N_\\text{t}}{N - N_\\text{t}}}$. Ota niiden keskiarvo. Tässä $N_0$ on pulssimäärä ilman lyijyä, $N$ on pulssimäärä lyijyn takana ja $N_\\text{t}$ on taustasäteilyn pulssimäärä.\n\nVastaa laatikkoon kohdan c) keskiarvo millimetreinä.",
       "kind": [
         "data",

@@ -43,6 +43,7 @@
     {
       "id": "fy4-11-L1-06",
       "level": 1,
+      "core": true,
       "text": "A driver drives at a constant speed of $20\\,\\text{m/s}$. Because of fatigue, their reaction time increases from $1.0\\,\\text{s}$ to $2.0\\,\\text{s}$. The speed and the deceleration of the car in braking stay the same. Which statement about the stopping distance is correct?",
       "kind": [
         "concept"
@@ -116,6 +117,7 @@
     {
       "id": "fy4-11-L2-01",
       "level": 2,
+      "core": true,
       "text": "A car is driving at $90\\,\\text{km/h}$. The driver's reaction time is $1.5\\,\\text{s}$, and the deceleration of the car in braking is $7.5\\,\\text{m/s}^2$. How long is the stopping distance?",
       "answer": 79.16666666666666,
       "unit": "m",
@@ -124,6 +126,7 @@
     {
       "id": "fy4-11-L2-02",
       "level": 2,
+      "core": true,
       "text": "A car is driving on a snowy horizontal road at $100\\,\\text{km/h}$. The coefficient of friction between the tyres and the snow is $0.30$. How long is the braking distance when the car brakes as hard as the grip allows? Air resistance is neglected.",
       "answer": 131.09156273727572,
       "unit": "m",
@@ -148,6 +151,7 @@
     {
       "id": "fy4-11-L2-05",
       "level": 2,
+      "core": true,
       "text": "On a test track the braking distance $s_\\text{b}$ of a passenger car was measured at different initial speeds $v_0$. The car braked with a constant deceleration until it stopped on a horizontal dry road. The table shows example data.\n\nCalculate the squares of the speeds and draw the $(v_0^2, s_\\text{b})$ graph. Fit a straight line through the origin to the points and use its slope to determine the deceleration of the car.",
       "kind": [
         "data",

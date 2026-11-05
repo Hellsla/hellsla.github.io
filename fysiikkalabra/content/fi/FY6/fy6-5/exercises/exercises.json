@@ -3,6 +3,7 @@
     {
       "id": "fy6-5-L1-01",
       "level": 1,
+      "core": true,
       "text": "Polkupyörän valojen johdotuksessa on haarautumispiste. Siihen tulee kaksi johdinta, joiden virrat ovat $2{,}4\\,\\text{A}$ ja $0{,}6\\,\\text{A}$. Pisteestä lähtee kaksi johdinta, ja toisessa niistä virta on $1{,}8\\,\\text{A}$. Kuinka suuri virta kulkee toisessa lähtevässä johtimessa?",
       "answer": 1.2,
       "unit": "A",
@@ -11,6 +12,7 @@
     {
       "id": "fy6-5-L1-02",
       "level": 1,
+      "core": true,
       "text": "Sarjaan kytketyt kaksi vastusta on liitetty jännitelähteeseen, jonka jännite on $12{,}0\\,\\text{V}$. Ensimmäisen vastuksen jännite on $4{,}5\\,\\text{V}$. Kuinka suuri on toisen vastuksen jännite?",
       "answer": 7.5,
       "unit": "V",
@@ -44,6 +46,7 @@
     {
       "id": "fy6-5-L1-06",
       "level": 1,
+      "core": true,
       "text": "Haarautumispisteeseen tulevien virtojen summa on yhtä suuri kuin siitä lähtevien virtojen summa. Mikä seuraavista selittää tämän oikein?",
       "kind": [
         "concept"
@@ -184,6 +187,7 @@
     {
       "id": "fy6-5-L2-06",
       "level": 2,
+      "core": true,
       "text": "Esimerkkiaineisto: sarjapiirissä on jännitelähde ja kolme vastusta. Kohta $A$ on lähteen plusnapa, ja virta kulkee sieltä vastuksen $R_1$ kautta kohtaan $B$, johtimen kautta kohtaan $C$, vastuksen $R_2$ kautta kohtaan $D$ ja vastuksen $R_3$ kautta lähteen miinusnapaan $E$.\n\nMiinusnapa on nollakohta. Jännitemittarilla mitatut potentiaalit ovat taulukossa, ja virtamittari näyttää $0{,}12\\,\\text{A}$.\n\na) Selitä, miksi kohdilla $B$ ja $C$ on sama potentiaali.\n\nb) Laske vastuksen $R_2$ resistanssi.\n\nVastauslaatikkoon tulee kohdan b) tulos.",
       "kind": [
         "data"

@@ -7,7 +7,7 @@
     "explain the induced voltage of a moving rod using the magnetic force on the electrons."
   ],
   "prior": [
-    "A magnetic field exerts a force $F = qvB$ on a moving charged particle when the velocity is perpendicular to the field (chapter *Charged particle in electric and magnetic fields*)",
+    "A magnetic field exerts a force $F = |q|vB$ on a moving charged particle when the velocity is perpendicular to the field (chapter *Charged particle in electric and magnetic fields*)",
     "A current-carrying wire and a coil produce a magnetic field around them (chapter *Magnetic field of a wire and a coil*)"
   ],
   "activities": [
@@ -26,17 +26,17 @@
       "prompt": "An electron is at rest in a uniform magnetic field whose magnetic flux density is $0.50\\,\\text{T}$. What force does the field exert on the electron?",
       "choices": [
         {
-          "text": "No force, because the magnetic force $F = qvB$ is zero when the velocity is zero.",
+          "text": "No force, because the magnetic force $F = |q|vB$ is zero when the velocity is zero.",
           "correct": true,
           "feedback": "Correct. A magnetic field acts only on a moving charge (chapter *Charged particle in electric and magnetic fields*). Today this explains why the electrons of a metal rod moving in a field shift to one end of the rod, but the electrons of a rod at rest do not."
         },
         {
           "text": "A force along the field, because the electron in a field is like a compass needle.",
-          "feedback": "A compass needle is a magnetic dipole, but the field acts on an electron only when it moves: $F = qvB$, and at zero velocity the force is zero (chapter *Charged particle in electric and magnetic fields*)."
+          "feedback": "A compass needle is a magnetic dipole, but the field acts on an electron only when it moves: $F = |q|vB$, and at zero velocity the force is zero (chapter *Charged particle in electric and magnetic fields*)."
         },
         {
           "text": "A force perpendicular to the field, whose magnitude depends on the field.",
-          "feedback": "The force is perpendicular to the field only when the charge moves, and its magnitude is $F = qvB$. No force acts on an electron at rest (chapter *Charged particle in electric and magnetic fields*)."
+          "feedback": "The force is perpendicular to the field only when the charge moves, and its magnitude is $F = |q|vB$. No force acts on an electron at rest (chapter *Charged particle in electric and magnetic fields*)."
         }
       ],
       "optional": true

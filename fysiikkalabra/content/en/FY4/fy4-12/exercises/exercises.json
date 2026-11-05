@@ -3,6 +3,7 @@
     {
       "id": "fy4-12-L1-01",
       "level": 1,
+      "core": true,
       "text": "Two carts move on the same straight track. The position of cart A is $x_\\text{A} = 4.0\\,\\text{m} + 2.0\\,\\text{m/s} \\cdot t$ and the position of cart B is $x_\\text{B} = 24\\,\\text{m} - 3.0\\,\\text{m/s} \\cdot t$. When do the carts meet?",
       "answer": 4.0,
       "unit": "s",
@@ -27,6 +28,7 @@
     {
       "id": "fy4-12-L1-04",
       "level": 1,
+      "core": true,
       "text": "The graph shows the positions of two carts as functions of time. Read from the graph when the carts meet.",
       "figure": "fy4-12/kaksi-karrya",
       "answer": 5.0,
@@ -44,6 +46,7 @@
     {
       "id": "fy4-12-L1-06",
       "level": 1,
+      "core": true,
       "text": "The $(t,v)$ graphs describing the velocities of two cars are drawn in the same coordinate system. The cars drive along the same straight road in the same direction, and the graphs intersect at the moment $t = 4.0\\,\\text{s}$. What does the intersection point tell?",
       "kind": [
         "concept"
@@ -213,6 +216,7 @@
     {
       "id": "fy4-12-L2-07",
       "level": 2,
+      "core": true,
       "text": "Two carts start from the same place in the same direction at the moment $t = 0$. The table gives their velocities (sample data in which the measurement error has been left out). Cart A moves uniformly and cart B accelerates uniformly.\n\nDraw the $(t,v)$ graphs in the same coordinate system and deduce from the graphs when the distance between the carts is at its greatest. How large is the distance then?",
       "kind": [
         "data",

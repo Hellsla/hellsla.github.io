@@ -3,6 +3,7 @@
     {
       "id": "fy3-7-L1-01",
       "level": 1,
+      "core": true,
       "text": "Mökkireissulla kylmälaukussa on $1{,}20\\,\\text{kg}$ jääpaloja, joiden lämpötila on $0\\,{}^\\circ\\text{C}$. Matkan aikana jääpalat sulavat kokonaan $0\\,{}^\\circ\\text{C}$:n lämpöiseksi vedeksi. Kuinka suuren lämpömäärän jää ottaa vastaan sulaessaan? Anna vastaus kilojouleina.",
       "answer": 401,
       "unit": "kJ",
@@ -44,6 +45,7 @@
     {
       "id": "fy3-7-L1-06",
       "level": 1,
+      "core": true,
       "text": "Jäälohkoa lämmitetään tasaisesti sen sulamispisteessä, ja lohko sulaa. Mitä jään ja sulamisveden seoksen lämpötilalle tapahtuu, kun jäätä on vielä jäljellä?",
       "kind": [
         "concept"
@@ -122,6 +124,7 @@
     {
       "id": "fy3-7-L2-02",
       "level": 2,
+      "core": true,
       "text": "Pakastimesta otetaan $750\\,\\text{g}$ jäätä, jonka lämpötila on $-18\\,{}^\\circ\\text{C}$. Kuinka suuri lämpömäärä tarvitaan, jotta jää lämpenisi $0\\,{}^\\circ\\text{C}$:seen ja sulaisi kokonaan $0\\,{}^\\circ\\text{C}$:n lämpöiseksi vedeksi? Jään ominaislämpökapasiteetti on $2100\\,\\text{J/(kg}\\cdot\\text{K)}$. Anna vastaus kilojouleina.",
       "answer": 280,
       "unit": "kJ",
@@ -146,6 +149,7 @@
     {
       "id": "fy3-7-L2-05",
       "level": 2,
+      "core": true,
       "kind": [
         "data",
         "experiment"

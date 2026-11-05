@@ -11,6 +11,7 @@
     {
       "id": "fy5-11-L1-02",
       "level": 1,
+      "core": true,
       "text": "A wave coming from the sea hits the flat wall of a quay. The angle between the incoming ray and the surface of the wall is $20^\\circ$. What is the angle of incidence of the wave?",
       "answer": 70,
       "unit": "°",
@@ -43,6 +44,7 @@
     {
       "id": "fy5-11-L1-06",
       "level": 1,
+      "core": true,
       "kind": [
         "concept"
       ],
@@ -73,6 +75,7 @@
     {
       "id": "fy5-11-L1-07",
       "level": 1,
+      "core": true,
       "kind": [
         "concept"
       ],
@@ -223,6 +226,7 @@
     {
       "id": "fy5-11-L2-07",
       "level": 2,
+      "core": true,
       "kind": [
         "error"
       ],

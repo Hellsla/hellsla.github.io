@@ -40,6 +40,7 @@ QUESTION_TYPES = ("choice", "numeric", "explain")
 FIGURE_TYPES = ("hook", "text", "choice", "numeric", "explain", "interpret")   # may carry "figure": "<id>" (scripts/figcat.py)
 FBD_TAGS = ("identify", "select", "error", "draw", "equations")   # "fbd": the force-diagram skill a task practises (docs/force-diagrams.md)
 ID_RE = re.compile(r"^[a-z][a-z0-9-]{1,40}$")
+CORE_TYPES = ("choice", "experiment", "interpret", "numeric", "explain")   # may carry "core": true: a task of the lesson marked Ydintehtävä, like a core exercise (teacher 2026-11-05)
 OPTIONAL_TYPES = ("hook", "text", "choice", "experiment", "interpret", "numeric", "explain", "reflect", "theory", "exit")   # may carry "optional": true
 SOURCES = ("measured", "statistics", "simulated", "model", "example")   # statistics and example: teacher's FY2 rule 2026-10-28 (real sourced data / invented data said so)      # interpret "source"; its badge is lang "inquiry.source_<source>"
 RESERVED_IDS = {"sim", "sim-root", "exercises", "exit", "teoria", "herata", "ennusta", "tutki", "selita", "sovella", "tarkista"}   # ids the page already uses
@@ -193,6 +194,8 @@ def validate(folder, inquiry, lesson_md):
                 for _, msg in (figcat.check_refs(json.dumps({"figure": x["figure"]})) if isinstance(x["figure"], str) else [(0, "an id such as \"fy1-4/scatter\"")]): E(f"{where}.figure: {msg}")
         if "optional" in a and (not isinstance(a["optional"], bool) or (a["optional"] and t not in OPTIONAL_TYPES)):
             errs.append(f"{path}.optional: true or false, and only on {', '.join(OPTIONAL_TYPES)} (the simulation and the exercises are never folded away)")
+        if "core" in a and (not isinstance(a["core"], bool) or (a["core"] and (t not in CORE_TYPES or a.get("optional")))):
+            errs.append(f"{path}.core: true or false, only on {', '.join(CORE_TYPES)} and never with optional (a core task is on the core path)")
         if "fold" in a and (not isinstance(a["fold"], str) or not a["fold"].strip() or len(a["fold"]) > 24 or t not in OPTIONAL_TYPES or a.get("optional")):
             errs.append(f"{path}.fold: a short tag (at most 24 characters) for a required part kept closed until it is opened, only on {', '.join(OPTIONAL_TYPES)} and not with optional")
         if "fbd" in a and a["fbd"] not in FBD_TAGS: errs.append(f"{path}.fbd: one of {', '.join(FBD_TAGS)} (docs/force-diagrams.md)")
@@ -650,6 +653,8 @@ def render(folder, inquiry, parts, md):
     def act(a):
         t, aid = a["type"], a["id"]
         head = f'<h3>{esc(a["title"])}</h3>' if a.get("title") else ""
+        if a.get("core") and not a.get("optional"):   # a task of the lesson on the core path, tagged like a core exercise (teacher 2026-11-05)
+            head = f'<p class="act-core"><span class="ex-core">{T("lesson.core_exercise")}</span></p>' + head
         if t == "hook": content = f'<div class="hook">{md(a["text"])}{fig_of(a)}</div>' + (f'<p class="question">{inline(md, a["question"])}</p>' if a.get("question") else "")
         elif t == "text": content = md(a["text"]) + fig_of(a)
         elif t == "choice": content = choice_html(a, md, lid, aid)

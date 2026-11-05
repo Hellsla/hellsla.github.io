@@ -19,6 +19,7 @@
     {
       "id": "fy6-15-L1-03",
       "level": 1,
+      "core": true,
       "text": "A person touches the live frame of a faulty device with wet hands. The touch voltage is $230\\,\\text{V}$, and the resistance of the whole current path is $2.3\\,\\text{k}\\Omega$. How large a current flows through the body? Answer in milliamperes.",
       "answer": 100.0,
       "unit": "mA",
@@ -43,6 +44,7 @@
     {
       "id": "fy6-15-L1-06",
       "level": 1,
+      "core": true,
       "text": "The metal frame of a washing machine is connected to the ground with a protective earth conductor. Which statement about the purpose of protective earthing is correct?",
       "kind": [
         "concept"
@@ -113,6 +115,7 @@
     {
       "id": "fy6-15-L2-01",
       "level": 2,
+      "core": true,
       "text": "A kitchen socket circuit is protected by a $16\\,\\text{A}$ fuse, and the mains voltage is $230\\,\\text{V}$. A kettle ($2000\\,\\text{W}$) and a microwave oven with an input power of $1200\\,\\text{W}$ are on in the circuit. How much more power can still be connected to the circuit before the rated current of the fuse is exceeded?",
       "answer": 480.0,
       "unit": "W",
@@ -223,6 +226,7 @@
     {
       "id": "fy6-15-L2-07",
       "level": 2,
+      "core": true,
       "text": "A student writes: “The fuse of my circuit is $16\\,\\text{A}$, so it protects me from electric shock. If I touch the live frame of a faulty device, the fuse cuts off the current immediately.”\n\nThe touch voltage is $230\\,\\text{V}$, and the resistance of the current path of a wet person is $2.00\\,\\text{k}\\Omega$.\n\na) What is the error in the student's claim? Name the device that cuts off the small current flowing through a person.\n\nb) Calculate the current through the body in milliamperes.\n\nWrite the result of part b) in the answer box.",
       "kind": [
         "error"

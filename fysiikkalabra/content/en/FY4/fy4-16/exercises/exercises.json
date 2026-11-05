@@ -3,6 +3,7 @@
     {
       "id": "fy4-16-L1-01",
       "level": 1,
+      "core": true,
       "text": "A lift starts upwards from the ground floor and accelerates at $0.80\\,\\text{m/s}^2$. A person of mass $70.0\\,\\text{kg}$ stands in the lift. Draw the free-body diagram of the person. How large is the normal force of the floor on the person?",
       "answer": 742.7,
       "unit": "N",
@@ -47,6 +48,7 @@
     {
       "id": "fy4-16-L1-06",
       "level": 1,
+      "core": true,
       "text": "A person stands on a bathroom scale in a lift that is moving upwards and slowing down to stop at the top floor. The scale measures the normal force. How does the reading of the scale compare with the reading when the lift is at rest?",
       "kind": [
         "concept"
@@ -130,6 +132,7 @@
     {
       "id": "fy4-16-L2-02",
       "level": 2,
+      "core": true,
       "text": "A sled starts from rest at the top of a straight slope. The slope is $18.0\\,\\text{m}$ long and at an angle of $12.0^\\circ$ to the horizontal, and at the foot of the slope the speed of the sled is $5.10\\,\\text{m/s}$. Air resistance is ignored. How large is the coefficient of kinetic friction between the sled and the snow?",
       "answer": 0.137262,
       "unit": "",
@@ -139,6 +142,7 @@
     {
       "id": "fy4-16-L2-03",
       "level": 2,
+      "core": true,
       "text": "A skydiver whose mass with equipment is $80.0\\,\\text{kg}$ falls at a speed of $52.0\\,\\text{m/s}$ and opens the parachute. While falling $145\\,\\text{m}$, the skydiver's speed decreases to $6.0\\,\\text{m/s}$. Draw the free-body diagram of the skydiver. How much mechanical energy is changed into other forms of energy over this distance?",
       "answer": 220.516,
       "unit": "kJ",

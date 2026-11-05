@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "contribution": "Valo on poikittaista aaltoa, joten se voidaan polarisoida: polarisaattori puolittaa polarisoimattoman valon ja polarisoituneeseen valoon pätee Malusin laki $I = I_0 \\cos^2\\theta$; eristeestä heijastunut valo on osittain polarisoitunutta ja Brewsterin kulmassa $\\tan\\alpha_\\text{B} = n_2 : n_1$ täysin. Simulaatiolla opiskelija havaitsee puolittumisen ja $\\cos^2$-riippuvuuden sekä valinnaisesti kolmen polarisaattorin yllätyksen; esimerkkimittaus puhelimen näytöllä antaa suoran $\\cos^2\\theta$:n funktiona. Sovelluksina polaroidut aurinkolasit, nestekidenäytöt ja 3D-lasit.",
+  "contribution": "Valo on poikittaista aaltoa, joten se voidaan polarisoida. Ydinpolulla opiskelija havaitsee simulaatiolla, että polarisaattori puolittaa polarisoimattoman valon asennostaan riippumatta ja että toisen kalvon läpi tuleva valo riippuu kalvojen välisestä kulmasta ja sammuu kalvojen ollessa ristissä, sekä esimerkkimittauksesta, että puhelimen näytön valo on polarisoitunutta. Hän selittää heijastuneen valon polarisaation avulla polaroidut aurinkolasit sekä näytöt ja 3D-lasit. Laskut ovat syventävä osa: Malusin laki $I = I_0 \\cos^2\\theta$, Brewsterin laki $\\tan\\alpha_\\text{B} = n_2 : n_1$, esimerkki, mittausaineiston sovitus ja niiden laskutehtävät. Kolmen polarisaattorin koe on ydinpolulla: kolmas vino kalvo ristissä olevien välissä päästää taas valoa.",
   "learn": [
     "selittämään, mitä polarisaatio on ja miksi se osoittaa valon poikittaiseksi aalloksi.",
-    "laskemaan polarisaattorien läpi tulevan valon intensiteetin Malusin lailla.",
-    "laskemaan Brewsterin kulman ja selittämään, miksi polaroidut lasit vähentävät häikäisyä."
+    "tutkimaan ja selittämään, miten yksi, kaksi tai kolme polarisaattoria muuttavat läpi tulevaa valoa.",
+    "selittämään heijastuneen valon polarisaation avulla, miksi polaroidut lasit vähentävät häikäisyä ja miten näytöt ja 3D-lasit toimivat."
   ],
   "prior": [
     "Valo on sähkömagneettista aaltoa, jonka sähkökenttä värähtelee kohtisuorassa etenemissuuntaa vastaan (luku *Sähkömagneettinen säteily ja mustan kappaleen spektri*)",
@@ -122,14 +122,13 @@
         {
           "text": "Vähän valoa: noin kahdeksasosa lampun valosta tulee läpi.",
           "correct": true,
-          "feedback": "Mallin arvot tukevat tätä: $50{,}0\\,\\% \\cdot \\cos^2 45^\\circ \\cdot \\cos^2 45^\\circ = 12{,}5\\,\\%$. Kun keskimmäinen kalvo on samansuuntainen jommankumman ulomman kanssa, varjostin on taas pimeä."
+          "feedback": "Mallin arvot tukevat tätä: kun keskimmäinen kalvo on $45^\\circ$:ssa, läpi tulee $12{,}5\\,\\%$ lampun valosta eli kahdeksasosa. Keskimmäisen kalvon jälkeen valo on polarisoitunut $45^\\circ$:n kulmaan, joten sillä on komponentti viimeisen kalvon läpäisysuunnassa. Kun keskimmäinen kalvo on samansuuntainen jommankumman ulomman kanssa, varjostin on taas pimeä."
         },
         {
           "text": "Yhtä paljon valoa kuin ensimmäisen kalvon jälkeen, koska $45^\\circ$ on kalvojen puolivälissä.",
           "feedback": "Mallin arvot kumoavat tämän: läpi tulee $12{,}5\\,\\%$ lampun valosta, kun ensimmäisen kalvon jälkeen sitä on $50{,}0\\,\\%$. Kumpikin kalvo, jonka läpäisysuunta on $45^\\circ$:n kulmassa tulevan valon polarisaatioon, päästää läpi vain puolet saamastaan."
         }
-      ],
-      "optional": true
+      ]
     },
     {
       "id": "simulaatio",
@@ -185,34 +184,7 @@
           "label": "I_3 (%)"
         }
       ],
-      "min": 3,
-      "question": {
-        "type": "numeric",
-        "prompt": "Kuinka monta prosenttia lampun valon intensiteetistä $I_0$ pääsee analysaattorin läpi, kun $\\theta_3 = 30^\\circ$? Laske tulos Malusin lailla ja vertaa simulaation lukemaan.",
-        "answer": 37.5,
-        "unit": "%",
-        "tolerance": 0.02,
-        "hints": [
-          "Kuinka suuri osa lampun valosta tulee analysaattoriin, ja onko se polarisoitunutta?",
-          "Analysaattoriin tulee $I_1 = 50{,}0\\,\\%$ polarisoitunutta valoa, ja siihen sovelletaan Malusin lakia $I_3 = I_1 \\cos^2\\theta$.",
-          "$I_3 = 50{,}0\\,\\% \\cdot \\cos^2 30^\\circ$, ja $\\cos 30^\\circ \\approx 0{,}866$."
-        ],
-        "mistakes": [
-          {
-            "value": 75.0,
-            "feedback": "Unohdit, että ensimmäinen polarisaattori päästää läpi vain puolet lampun polarisoimattomasta valosta. Analysaattoriin tulee $I_1 = 50{,}0\\,\\%$."
-          },
-          {
-            "value": 43.3,
-            "feedback": "Käytit kulman kosinia. Intensiteetti on verrannollinen sähkökentän amplitudin neliöön, joten Malusin laissa on $\\cos^2\\theta$."
-          },
-          {
-            "value": 33.3,
-            "feedback": "Oletit, että intensiteetti pienenee tasaisesti kulman mukana. Malusin lain mukaan läpi pääsee osa $\\cos^2\\theta$ analysaattoriin tulevasta valosta."
-          }
-        ],
-        "solution": "**Annettu:** polarisoimattoman valon intensiteetti $I_0$ ($100\\,\\%$), polarisaattorin $\\text{P}_1$ läpäisysuunta $\\theta_1 = 0^\\circ$, analysaattorin $\\text{P}_3$ läpäisysuunta $\\theta_3 = 30^\\circ$; simulaation lukema $I_1 = 50{,}0\\,\\%$\n\n**Kysytty:** analysaattorin läpi tulevan valon intensiteetti $I_3$ prosentteina intensiteetistä $I_0$\n\n**Periaate:** Ensimmäinen polarisaattori päästää läpi puolet polarisoimattomasta valosta, ja valo on sen jälkeen polarisoitunut pystysuunnassa. Analysaattoriin tulee siis polarisoitunutta valoa kulmassa $\\theta = \\theta_3 - \\theta_1 = 30^\\circ$ läpäisysuuntaan nähden, joten siihen sovelletaan Malusin lakia.\n\n**Kaava:** $I_1 = \\tfrac{1}{2} I_0$ ja $I_3 = I_1 \\cos^2\\theta$, josta $I_3 = \\tfrac{1}{2} I_0 \\cos^2\\theta$\n\n**Muunnokset:** Ei tarvita: intensiteetit ovat prosentteina intensiteetistä $I_0$, ja kulma on asteina.\n\n**Sijoitus:** $I_3 = 50{,}0\\,\\% \\cdot \\cos^2 30^\\circ = 50{,}0\\,\\% \\cdot 0{,}750 = 37{,}5\\,\\%$\n\n**Vastaus:** $37{,}5\\,\\%$, kolme merkitsevää numeroa kuten simulaation lukema $50{,}0\\,\\%$.\n\n**Järkevyys:** Kulma $30^\\circ$ on pienempi kuin $45^\\circ$, joten analysaattori päästää läpi yli puolet saamastaan valosta: $37{,}5\\,\\%$ on enemmän kuin $25\\,\\%$ ja vähemmän kuin $50\\,\\%$. Sama luku näkyy simulaation lukemassa, kun $\\theta_3 = 30^\\circ$."
-      }
+      "min": 3
     },
     {
       "id": "koe-2",
@@ -260,8 +232,7 @@
           "label": "I_3 (%)"
         }
       ],
-      "min": 3,
-      "optional": true
+      "min": 3
     },
     {
       "id": "mittaus",
@@ -269,8 +240,102 @@
       "type": "interpret",
       "title": "Mittaus: puhelimen näyttö ja polarisaattori",
       "source": "example",
+      "text": "Ryhmä tutki polarisaattorikalvolla, onko puhelimen näytön valo polarisoitunutta. Näyttö oli valkoisena pöydällä, sen päällä polarisaattorikalvo astelevyllä ja kalvon päällä Vernierin valoanturi. Ryhmä kiersi kalvoa $15^\\circ$:n välein ja kirjasi anturin lukeman eli valaistusvoimakkuuden $E$. Kulma $\\theta$ on mitattu siitä asennosta, jossa lukema oli suurin. Anturiin osui näytön valon lisäksi myös huoneen valoa.\n\n| $\\theta$ (°) | $E$ (lx) |\n| --- | --- |\n| $0$ | $374$ |\n| $15$ | $354$ |\n| $30$ | $283$ |\n| $45$ | $197$ |\n| $60$ | $102$ |\n| $75$ | $40$ |\n| $90$ | $15$ |",
+      "question": {
+        "type": "choice",
+        "prompt": "Mitä mittaus kertoo puhelimen näytön valosta? Miksi lukema ei laske nollaan, kun kalvoa on kierretty $90^\\circ$?",
+        "choices": [
+          {
+            "text": "Näytön valo on polarisoitunutta, koska lukema muuttuu kalvoa kierrettäessä, ja lukema kulmalla $90^\\circ$ on huoneen valoa.",
+            "correct": true,
+            "feedback": "Oikein. Polarisoimattoman valon kirkkaus ei muutu kalvoa kierrettäessä, mutta tässä lukema putoaa $374\\,\\text{lx}$:sta $15\\,\\text{lx}$:iin. Kun kalvo on ristissä näytön polarisaation kanssa, näytön valoa ei juuri pääse läpi. Huoneen valo on enimmäkseen polarisoimatonta, joten siitä pääsee läpi likimain sama osa joka asennossa, ja se jää lukemaan."
+          },
+          {
+            "text": "Näytön valo on polarisoimatonta, ja kalvo vain himmentää sitä sitä enemmän, mitä pidemmälle kalvoa kierretään.",
+            "feedback": "Polarisoimattoman valon kirkkaus ei muutu, kun kalvoa kierretään: kalvo päästää siitä läpi puolet joka asennossa. Koska lukema putoaa $374\\,\\text{lx}$:sta $15\\,\\text{lx}$:iin, näytön valo on polarisoitunutta."
+          },
+          {
+            "text": "Näytön valo on polarisoitunutta, ja lukema $15\\,\\text{lx}$ kulmalla $90^\\circ$ on näytön valoa, joka pääsee ristissä olevan kalvon läpi.",
+            "feedback": "Näytön valo on polarisoitunutta, mutta sen polarisaation kanssa ristissä oleva kalvo päästää näytön valoa läpi vain hyvin vähän. Lukema $15\\,\\text{lx}$ on lähes kokonaan huoneen valoa, joka ei ole näytön polarisoitunutta valoa ja nostaa jokaista lukemaa saman verran."
+          }
+        ]
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: kalvojen kulma ja intensiteetti",
+      "after": [
+        "koe-1"
+      ],
+      "prompt": "Kirjoita taulukkosi perusteella: kuinka suuri osa lampun valosta pääsee ensimmäisen kalvon läpi? Miten analysaattorin läpi tuleva intensiteetti riippuu kalvojen välisestä kulmasta? Pieneneekö se tasaisesti kulman mukana?",
+      "model": "Ensimmäisen kalvon läpi pääsi aina $I_1 = 50{,}0\\,\\%$ lampun valosta, koska lampun valo on polarisoimatonta. Analysaattorin läpi tuli $50{,}0\\,\\%$ kulmalla $0^\\circ$, $37{,}5\\,\\%$ kulmalla $30^\\circ$, $12{,}5\\,\\%$ kulmalla $60^\\circ$ ja $0\\,\\%$ kulmalla $90^\\circ$. Kun kalvojen läpäisysuunnat olivat samat, kaikki ensimmäisen kalvon läpi tullut valo pääsi myös analysaattorin läpi, ja kun kalvot olivat ristissä, valoa ei tullut lainkaan. Intensiteetti ei pienentynyt tasaisesti: ensimmäisellä $30^\\circ$:lla se pieneni vain neljänneksen, mutta viimeisellä $30^\\circ$:lla kaiken loput. Arvot ovat mallin laskemia.",
+      "criteria": [
+        "Kerroin, että ensimmäinen kalvo päästää läpi puolet polarisoimattomasta valosta.",
+        "Kerroin, että ristissä olevien kalvojen läpi ei tule valoa.",
+        "Totesin taulukon arvoilla, että intensiteetti pienenee aluksi hitaasti ja sitten nopeammin.",
+        "Kerroin, että samansuuntaisten kalvojen läpi pääsee kaikki ensimmäisen kalvon läpi tullut valo."
+      ],
+      "core": true
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus"
+      ]
+    },
+    {
+      "id": "teoria-kaava",
+      "stage": "selita",
+      "type": "theory",
+      "title": "Syventävä: Malusin ja Brewsterin laki",
+      "sections": [
+        "Kaava"
+      ],
+      "optional": true
+    },
+    {
+      "id": "malus-koe",
+      "stage": "selita",
+      "type": "numeric",
+      "title": "Syventävä: kokeen 1 tulos Malusin lailla",
+      "prompt": "Palaa kokeen 1 taulukkoon. Kuinka monta prosenttia lampun valon intensiteetistä $I_0$ pääsee analysaattorin läpi, kun $\\theta_3 = 30^\\circ$? Laske tulos Malusin lailla ja vertaa simulaation lukemaan.",
+      "answer": 37.5,
+      "unit": "%",
+      "tolerance": 0.02,
+      "hints": [
+        "Kuinka suuri osa lampun valosta tulee analysaattoriin, ja onko se polarisoitunutta?",
+        "Analysaattoriin tulee $I_1 = 50{,}0\\,\\%$ polarisoitunutta valoa, ja siihen sovelletaan Malusin lakia $I_3 = I_1 \\cos^2\\theta$.",
+        "$I_3 = 50{,}0\\,\\% \\cdot \\cos^2 30^\\circ$, ja $\\cos 30^\\circ \\approx 0{,}866$."
+      ],
+      "mistakes": [
+        {
+          "value": 75.0,
+          "feedback": "Unohdit, että ensimmäinen polarisaattori päästää läpi vain puolet lampun polarisoimattomasta valosta. Analysaattoriin tulee $I_1 = 50{,}0\\,\\%$."
+        },
+        {
+          "value": 43.3,
+          "feedback": "Käytit kulman kosinia. Intensiteetti on verrannollinen sähkökentän amplitudin neliöön, joten Malusin laissa on $\\cos^2\\theta$."
+        },
+        {
+          "value": 33.3,
+          "feedback": "Oletit, että intensiteetti pienenee tasaisesti kulman mukana. Malusin lain mukaan läpi pääsee osa $\\cos^2\\theta$ analysaattoriin tulevasta valosta."
+        }
+      ],
+      "solution": "**Annettu:** polarisoimattoman valon intensiteetti $I_0$ ($100\\,\\%$), polarisaattorin $\\text{P}_1$ läpäisysuunta $\\theta_1 = 0^\\circ$, analysaattorin $\\text{P}_3$ läpäisysuunta $\\theta_3 = 30^\\circ$; simulaation lukema $I_1 = 50{,}0\\,\\%$\n\n**Kysytty:** analysaattorin läpi tulevan valon intensiteetti $I_3$ prosentteina intensiteetistä $I_0$\n\n**Periaate:** Ensimmäinen polarisaattori päästää läpi puolet polarisoimattomasta valosta, ja valo on sen jälkeen polarisoitunut pystysuunnassa. Analysaattoriin tulee siis polarisoitunutta valoa kulmassa $\\theta = \\theta_3 - \\theta_1 = 30^\\circ$ läpäisysuuntaan nähden, joten siihen sovelletaan Malusin lakia.\n\n**Kaava:** $I_1 = \\tfrac{1}{2} I_0$ ja $I_3 = I_1 \\cos^2\\theta$, josta $I_3 = \\tfrac{1}{2} I_0 \\cos^2\\theta$\n\n**Muunnokset:** Ei tarvita: intensiteetit ovat prosentteina intensiteetistä $I_0$, ja kulma on asteina.\n\n**Sijoitus:** $I_3 = 50{,}0\\,\\% \\cdot \\cos^2 30^\\circ = 50{,}0\\,\\% \\cdot 0{,}750 = 37{,}5\\,\\%$\n\n**Vastaus:** $37{,}5\\,\\%$, kolme merkitsevää numeroa kuten simulaation lukema $50{,}0\\,\\%$.\n\n**Järkevyys:** Kulma $30^\\circ$ on pienempi kuin $45^\\circ$, joten analysaattori päästää läpi yli puolet saamastaan valosta: $37{,}5\\,\\%$ on enemmän kuin $25\\,\\%$ ja vähemmän kuin $50\\,\\%$. Sama luku näkyy simulaation lukemassa, kun $\\theta_3 = 30^\\circ$.",
+      "optional": true
+    },
+    {
+      "id": "sovitus",
+      "stage": "selita",
+      "type": "interpret",
+      "title": "Syventävä: Malusin laki mittausaineistossa",
+      "source": "example",
       "figure": "fy7-15/fit",
-      "text": "Ryhmä tutki Malusin lakia puhelimen näytöllä, jonka valo on polarisoitunutta. Näyttö oli valkoisena pöydällä, sen päällä polarisaattorikalvo astelevyllä ja kalvon päällä Vernierin valoanturi. Ryhmä kiersi kalvoa $15^\\circ$:n välein ja kirjasi anturin lukeman eli valaistusvoimakkuuden $E$. Kulma $\\theta$ on mitattu siitä asennosta, jossa lukema oli suurin.\n\n| $\\theta$ (°) | $E$ (lx) |\n| --- | --- |\n| $0$ | $374$ |\n| $15$ | $354$ |\n| $30$ | $283$ |\n| $45$ | $197$ |\n| $60$ | $102$ |\n| $75$ | $40$ |\n| $90$ | $15$ |\n\nRyhmä piirsi Vernier Graphical Analysis -ohjelmalla kuvaajan, jossa pystyakselilla on $E$ ja vaaka-akselilla $\\cos^2\\theta$. Ohjelma sovitti pisteisiin suoran $E = A \\cos^2\\theta + B$ ja ilmoitti kulmakertoimen $A$ epävarmuudeksi $\\Delta A = 2{,}4\\,\\text{lx}$ ja vakiotermin $B = 14{,}6\\,\\text{lx}$. Todellisissa mittaussarjoissa mittauspisteet eivät yleensä sijaitse täsmälleen samalla suoralla mittausepävarmuuden vuoksi.",
+      "text": "Palaa Tutki-vaiheen mittaukseen puhelimen näytöllä. Malusin lain mukaan näytön polarisoituneesta valosta pääsee kalvon läpi osa $\\cos^2\\theta$, joten lukemien pitäisi asettua suoralle, kun ne piirretään $\\cos^2\\theta$:n funktiona.\n\nRyhmä piirsi Vernier Graphical Analysis -ohjelmalla kuvaajan, jossa pystyakselilla on $E$ ja vaaka-akselilla $\\cos^2\\theta$. Ohjelma sovitti pisteisiin suoran $E = A \\cos^2\\theta + B$ ja ilmoitti kulmakertoimen $A$ epävarmuudeksi $\\Delta A = 2{,}4\\,\\text{lx}$ ja vakiotermin $B = 14{,}6\\,\\text{lx}$. Todellisissa mittaussarjoissa mittauspisteet eivät yleensä sijaitse täsmälleen samalla suoralla mittausepävarmuuden vuoksi.",
       "question": {
         "type": "numeric",
         "prompt": "Kuinka suuren lukeman näytön polarisoitunut valo antaisi yksinään, ilman huoneen taustavaloa, kun kalvon läpäisysuunta on näytön polarisaation suuntainen? Vastaa luksiyksikössä.",
@@ -293,33 +358,8 @@
           }
         ],
         "solution": "**Annettu:** ohjelman sovittama suora $E = A \\cos^2\\theta + B$ kuvaajassa, kulmakertoimen epävarmuus $\\Delta A = 2{,}4\\,\\text{lx}$ ja vakiotermi $B = 14{,}6\\,\\text{lx}$; mittauspisteet kuvaajassa\n\n**Kysytty:** valaistusvoimakkuus $E_\\text{p}$, jonka näytön polarisoitunut valo yksinään antaa, kun kalvo on näytön polarisaation suuntainen, luksiyksikössä\n\n**Periaate:** Malusin lain mukaan näytön polarisoituneesta valosta pääsee kalvon läpi osa $\\cos^2\\theta$, joten sen antama lukema on $E_\\text{p} \\cos^2\\theta$. Huoneen taustavalo $E_\\text{t}$ ei ole näytön polarisoitunutta valoa, ja se lisää jokaiseen lukemaan saman verran. Lukema on siis $E = E_\\text{p} \\cos^2\\theta + E_\\text{t}$, eli $\\cos^2\\theta$:n funktiona suora, jonka kulmakerroin on $E_\\text{p}$ ja vakiotermi $E_\\text{t}$. Kulmakerroin luetaan sovitetusta suorasta, koska suora ottaa huomioon kaikki mittaukset.\n\n**Kuvaajan lukeminen:** Sovitettu suora kulkee likimain pisteiden $(0;\\ 15\\,\\text{lx})$ ja $(1{,}0;\\ 375\\,\\text{lx})$ kautta, joten kulmakerroin on noin $(375\\,\\text{lx} - 15\\,\\text{lx}) : 1{,}0 = 360\\,\\text{lx}$. Ohjelman laskema tarkka arvo on $A = 360{,}7\\,\\text{lx}$.\n\n**Kaava:** $E = E_\\text{p} \\cos^2\\theta + E_\\text{t}$ ja $E = A \\cos^2\\theta + B$, josta $E_\\text{p} = A$\n\n**Muunnokset:** Ei tarvita: $\\cos^2\\theta$ on yksikötön, joten kulmakertoimen yksikkö on sama kuin lukeman, $\\text{lx}$.\n\n**Sijoitus:** $E_\\text{p} = A = 360{,}7\\,\\text{lx}$\n\n**Vastaus:** $E_\\text{p} \\approx 361\\,\\text{lx}$, kolme merkitsevää numeroa, koska kulmakertoimen epävarmuus $2{,}4\\,\\text{lx}$ on ykkösten suuruinen: $E_\\text{p} = (361 \\pm 2)\\,\\text{lx}$.\n\n**Järkevyys:** Pisteet asettuvat hyvin suoralle, joten valo noudattaa Malusin lakia. Lukema kulmalla $0^\\circ$ on $374\\,\\text{lx}$, ja siitä on vähennettävä taustavalo noin $15\\,\\text{lx}$, jolloin saadaan noin $360\\,\\text{lx}$, kuten kulmakertoimesta. Kun kalvo on ristissä näytön polarisaation kanssa, lukema $15\\,\\text{lx}$ on lähes sama kuin vakiotermi, joten se on taustavaloa."
-      }
-    },
-    {
-      "id": "johtopaatos",
-      "stage": "tutki",
-      "type": "explain",
-      "title": "Johtopäätös: kalvojen kulma ja intensiteetti",
-      "after": [
-        "koe-1"
-      ],
-      "prompt": "Kirjoita taulukkosi perusteella: kuinka suuri osa lampun valosta pääsee ensimmäisen kalvon läpi? Miten analysaattorin läpi tuleva intensiteetti riippuu kalvojen välisestä kulmasta? Pieneneekö se tasaisesti kulman mukana?",
-      "model": "Ensimmäisen kalvon läpi pääsi aina $I_1 = 50{,}0\\,\\%$ lampun valosta, koska lampun valo on polarisoimatonta. Analysaattorin läpi tuli $50{,}0\\,\\%$ kulmalla $0^\\circ$, $37{,}5\\,\\%$ kulmalla $30^\\circ$, $12{,}5\\,\\%$ kulmalla $60^\\circ$ ja $0\\,\\%$ kulmalla $90^\\circ$. Intensiteetti ei pienentynyt tasaisesti: ensimmäisellä $30^\\circ$:lla se pieneni vain neljänneksen, mutta viimeisellä $30^\\circ$:lla kaiken loput. Suhde $I_3 : I_1$ oli joka rivillä sama kuin lukema $\\cos^2\\theta$: $0{,}750$ kulmalla $30^\\circ$ ja $0{,}250$ kulmalla $60^\\circ$. Siis $I_3 = I_1 \\cos^2\\theta$. Arvot ovat mallin laskemia.",
-      "criteria": [
-        "Kerroin, että ensimmäinen kalvo päästää läpi puolet polarisoimattomasta valosta.",
-        "Kerroin, että ristissä olevien kalvojen läpi ei tule valoa.",
-        "Totesin taulukon arvoilla, että intensiteetti pienenee aluksi hitaasti ja sitten nopeammin.",
-        "Yhdistin suhteen $I_3 : I_1$ lukemaan $\\cos^2\\theta$."
-      ]
-    },
-    {
-      "id": "teoria-osa",
-      "stage": "selita",
-      "type": "theory",
-      "sections": [
-        "Ydinajatus",
-        "Kaava"
-      ]
+      },
+      "optional": true
     },
     {
       "id": "pohdi",
@@ -329,9 +369,29 @@
       "prompt": "Vertaa ennusteitasi teoriaan ja kokeen mallin arvoihin. Palaa sitten alun kysymykseen: miksi polaroidut lasit sammuttavat järven kimalluksen mutta tavalliset tummat lasit eivät, ja miksi kimallus palaa, kun kalastaja kallistaa päätään?",
       "predictions": [
         "ennuste-yksi",
-        "ennuste-kierto"
+        "ennuste-kierto",
+        "ennuste-kolme"
       ],
       "optional": true
+    },
+    {
+      "id": "siirto-3d",
+      "stage": "sovella",
+      "type": "explain",
+      "core": true,
+      "title": "Sovella uuteen tilanteeseen: 3D-elokuvan lasit",
+      "prompt": "Eräässä 3D-elokuvateatterissa valkokankaalle projisoidaan yhtä aikaa kaksi kuvaa. Vasemman silmän kuvan valo on polarisoitunut pystysuunnassa ja oikean silmän kuvan valo vaakasuunnassa. Katsojan lasien kummassakin linssissä on polarisaattorikalvo. Mihin suuntaan kummankin linssin läpäisysuunta pitää asettaa, ja miksi kumpikin silmä näkee silloin vain oman kuvansa? Mitä katsoja näkee, jos hän kallistaa päätään sivulle $90^\\circ$? Entä jos hän kallistaa sitä vain $45^\\circ$?",
+      "hints": [
+        "Mitä polarisaattori tekee valolle, joka on polarisoitunut sen läpäisysuuntaan, ja valolle, joka on polarisoitunut kohtisuoraan sitä vastaan?",
+        "Kun pää kallistuu, myös linssien läpäisysuunnat kallistuvat. Missä kulmassa ne ovat silloin kuvien polarisaatiosuuntiin?"
+      ],
+      "model": "Vasemman linssin läpäisysuunnan pitää olla pystysuora ja oikean vaakasuora. Vasen linssi päästää läpi vasemman silmän kuvan pystysuuntaisen värähtelyn. Oikean silmän kuvan vaakasuuntainen värähtely on ristissä vasemman linssin läpäisysuunnan kanssa, joten se ei pääse läpi. Oikealle linssille käy päinvastoin, joten kumpikin silmä näkee vain oman kuvansa. Kun katsoja kallistaa päätään $90^\\circ$, linssien läpäisysuunnat vaihtuvat: vasen silmä näkee oikean silmän kuvan ja oikea silmä vasemman, joten kolmiulotteinen vaikutelma menee sekaisin. Kun päätä kallistetaan $45^\\circ$, kummankin linssin läpäisysuunta on $45^\\circ$:n kulmassa kumpaankin polarisaatiosuuntaan. Silloin kummastakin kuvasta pääsee kummankin linssin läpi yhtä paljon valoa, ja kumpikin silmä näkee molemmat kuvat päällekkäin. Siksi monissa teattereissa käytetään ympyräpolarisaatiota, joka ei häiriinny pään kallistamisesta.",
+      "criteria": [
+        "Kerron, että vasemman linssin läpäisysuunta on pystysuora ja oikean vaakasuora.",
+        "Selitän, että toisen silmän kuvan valo on ristissä linssin läpäisysuunnan kanssa eikä pääse läpi.",
+        "Kerron, että $90^\\circ$:n kallistus vaihtaa silmien kuvat keskenään.",
+        "Selitän, että $45^\\circ$:n kallistuksella kummastakin kuvasta pääsee kumpaankin silmään valoa, joten kuvat näkyvät päällekkäin."
+      ]
     },
     {
       "id": "esimerkki",
@@ -339,13 +399,15 @@
       "type": "theory",
       "sections": [
         "Esimerkki"
-      ]
+      ],
+      "title": "Syventävä: esimerkki Malusin laista",
+      "optional": true
     },
     {
       "id": "virhe",
       "stage": "sovella",
       "type": "choice",
-      "title": "Etsi virhe",
+      "title": "Syventävä: etsi virhe",
       "prompt": "Lampun polarisoimattoman valon intensiteetti on $200\\,\\text{W/m}^2$. Valo kulkee kahden polarisaattorin läpi, ja niiden läpäisysuuntien välinen kulma on $60^\\circ$. Opiskelija kirjoittaa: ”Malusin lain mukaan $I = I_0 \\cos^2 60^\\circ = 200\\,\\text{W/m}^2 \\cdot 0{,}25 = 50\\,\\text{W/m}^2$.” Missä on virhe?",
       "choices": [
         {
@@ -368,7 +430,7 @@
       "id": "siirto",
       "stage": "sovella",
       "type": "numeric",
-      "title": "Sovella uuteen tilanteeseen: kuvaaja järven rannalla",
+      "title": "Syventävä: kuvaaja järven rannalla",
       "prompt": "Luontokuvaaja haluaa kuvata järven pohjan kiviä, mutta vedenpinnasta heijastuva taivaan valo häiritsee. Hänellä on polarisaatiosuodatin, joka poistaa heijastuksen parhaiten, kun heijastunut valo on täysin polarisoitunutta. Kamera on $1{,}60\\,\\text{m}$:n korkeudella tyynen vedenpinnan yläpuolella. Veden taitekerroin on $1{,}33$ ja ilman $1{,}00$. Kuinka kaukana kamerasta vaakasuunnassa on se vedenpinnan kohta, josta heijastunut valo tulee kameraan täysin polarisoituneena? Vastaa metreinä.",
       "answer": 2.128,
       "unit": "m",
@@ -388,13 +450,14 @@
           "feedback": "Käytit sinifunktiota. Kameran korkeus ja vaakasuora etäisyys ovat suorakulmaisen kolmion kateetit, joten $d = h \\tan\\alpha_\\text{B}$."
         }
       ],
-      "solution": "**Annettu:** kameran korkeus vedenpinnasta $h = 1{,}60\\,\\text{m}$, veden taitekerroin $n_2 = 1{,}33$, ilman taitekerroin $n_1 = 1{,}00$, tyyni vedenpinta\n\n**Kysytty:** vaakasuora etäisyys $d$ kamerasta siihen vedenpinnan kohtaan, josta heijastunut valo tulee kameraan Brewsterin kulmassa, metreinä\n\n**Periaate:** Polarisaatiosuodatin poistaa heijastuksen parhaiten, kun heijastunut valo on täysin polarisoitunutta, eli kun valo heijastuu Brewsterin kulmassa $\\tan\\alpha_\\text{B} = n_2 : n_1$. Kameraan tuleva heijastunut säde muodostaa pystysuoran normaalin kanssa kulman $\\alpha_\\text{B}$. Säde, kameran alla oleva pystysuora jana $h$ ja vedenpinnan jana $d$ muodostavat suorakulmaisen kolmion, jossa $\\tan\\alpha_\\text{B} = d : h$.\n\n**Kaava:** $\\tan\\alpha_\\text{B} = \\dfrac{n_2}{n_1}$ ja $\\tan\\alpha_\\text{B} = \\dfrac{d}{h}$, josta $d = h \\tan\\alpha_\\text{B} = \\dfrac{h n_2}{n_1}$\n\n**Muunnokset:** Ei tarvita: korkeus on metreinä, ja taitekertoimet ovat yksiköttömiä.\n\n**Sijoitus:** $d = \\dfrac{1{,}60\\,\\text{m} \\cdot 1{,}33}{1{,}00} = 2{,}128\\,\\text{m}$\n\n**Vastaus:** $2{,}13\\,\\text{m}$, kolme merkitsevää numeroa kuten korkeus $1{,}60\\,\\text{m}$ ja taitekerroin $1{,}33$.\n\n**Järkevyys:** Brewsterin kulma on $\\tan^{-1} 1{,}33 = 53{,}1^\\circ$, siis yli $45^\\circ$, joten kohdan on oltava kauempana kuin kameran korkeus $1{,}60\\,\\text{m}$, kuten tuloksessa. Kamera katsoo vedenpintaa $90^\\circ - 53{,}1^\\circ = 36{,}9^\\circ$:n kulmassa vaakatason alapuolelle, mikä on luonteva kuvauskulma."
+      "solution": "**Annettu:** kameran korkeus vedenpinnasta $h = 1{,}60\\,\\text{m}$, veden taitekerroin $n_2 = 1{,}33$, ilman taitekerroin $n_1 = 1{,}00$, tyyni vedenpinta\n\n**Kysytty:** vaakasuora etäisyys $d$ kamerasta siihen vedenpinnan kohtaan, josta heijastunut valo tulee kameraan Brewsterin kulmassa, metreinä\n\n**Periaate:** Polarisaatiosuodatin poistaa heijastuksen parhaiten, kun heijastunut valo on täysin polarisoitunutta, eli kun valo heijastuu Brewsterin kulmassa $\\tan\\alpha_\\text{B} = n_2 : n_1$. Kameraan tuleva heijastunut säde muodostaa pystysuoran normaalin kanssa kulman $\\alpha_\\text{B}$. Säde, kameran alla oleva pystysuora jana $h$ ja vedenpinnan jana $d$ muodostavat suorakulmaisen kolmion, jossa $\\tan\\alpha_\\text{B} = d : h$.\n\n**Kaava:** $\\tan\\alpha_\\text{B} = \\dfrac{n_2}{n_1}$ ja $\\tan\\alpha_\\text{B} = \\dfrac{d}{h}$, josta $d = h \\tan\\alpha_\\text{B} = \\dfrac{h n_2}{n_1}$\n\n**Muunnokset:** Ei tarvita: korkeus on metreinä, ja taitekertoimet ovat yksiköttömiä.\n\n**Sijoitus:** $d = \\dfrac{1{,}60\\,\\text{m} \\cdot 1{,}33}{1{,}00} = 2{,}128\\,\\text{m}$\n\n**Vastaus:** $2{,}13\\,\\text{m}$, kolme merkitsevää numeroa kuten korkeus $1{,}60\\,\\text{m}$ ja taitekerroin $1{,}33$.\n\n**Järkevyys:** Brewsterin kulma on $\\tan^{-1} 1{,}33 = 53{,}1^\\circ$, siis yli $45^\\circ$, joten kohdan on oltava kauempana kuin kameran korkeus $1{,}60\\,\\text{m}$, kuten tuloksessa. Kamera katsoo vedenpintaa $90^\\circ - 53{,}1^\\circ = 36{,}9^\\circ$:n kulmassa vaakatason alapuolelle, mikä on luonteva kuvauskulma.",
+      "optional": true
     },
     {
       "id": "harjoitukset",
       "stage": "sovella",
       "type": "exercises",
-      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä sovelletaan yhtä kaavaa, tason 2 tehtävissä yhdistetään kaksi vaihetta tai ratkaistaan kaava toiselle suureelle, ja taso 3 vaatii päättelyä uudessa tilanteessa."
+      "text": "Aloita tehtävistä, jotka on merkitty Ydintehtäväksi: ne kuuluvat ydinpolkuun. Useimmat muut tehtävät ovat syventäviä Malusin ja Brewsterin lain laskuja. Tason 1 tehtävissä sovelletaan yhtä kaavaa, tason 2 tehtävissä yhdistetään kaksi vaihetta tai ratkaistaan kaava toiselle suureelle, ja taso 3 vaatii päättelyä uudessa tilanteessa."
     },
     {
       "id": "check-1",
@@ -419,10 +482,25 @@
       ]
     },
     {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "2. Selitä: polaroidut aurinkolasit",
+      "prompt": "Selitä, miksi polaroidut aurinkolasit vähentävät järven pinnasta heijastuvaa häikäisyä paljon enemmän kuin tavalliset yhtä tummat aurinkolasit. Selitä myös, miksi häikäisy palaa, kun lasien käyttäjä kallistaa päätään $90^\\circ$.",
+      "model": "Kun polarisoimaton auringonvalo heijastuu vedenpinnasta, pinnan suuntainen värähtely heijastuu voimakkaimmin, joten häikäisy on osittain polarisoitunutta vaakasuunnassa. Polaroitujen lasien polarisaattorikalvon läpäisysuunta on pystysuora, joten kalvo absorboi häikäisyn vaakasuuntaisen värähtelyn, ja häikäisy himmenee paljon. Muu valo on enimmäkseen polarisoimatonta ja himmenee vain noin puoleen. Tavallinen tumma lasi himmentää kaikkea valoa samassa suhteessa, joten häikäisy jää yhtä kirkkaaksi muuhun näkymään verrattuna. Kun päätä kallistetaan $90^\\circ$, kalvon läpäisysuunta kääntyy vaakasuoraksi, ja häikäisyn vaakasuuntainen värähtely pääsee läpi.",
+      "criteria": [
+        "Kerron, että vedenpinnasta heijastunut valo on osittain polarisoitunutta vaakasuunnassa.",
+        "Kerron, että polaroitujen lasien läpäisysuunta on pystysuora, joten ne absorboivat vaakasuuntaisen värähtelyn.",
+        "Erotan polarisaattorin tummasta lasista: tumma lasi himmentää kaikkea valoa samassa suhteessa.",
+        "Selitän, että pään kallistaminen kääntää läpäisysuunnan vaakasuoraksi."
+      ],
+      "core": true
+    },
+    {
       "id": "tarkistus-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Laske: laservalo polarisaattorin läpi",
+      "title": "Syventävä: laske laservalon teho",
       "prompt": "Laserosoittimen säde on polarisoitunutta, ja sen teho on $5{,}00\\,\\text{mW}$. Säde kulkee polarisaattorin läpi, jonka läpäisysuunta on $50{,}0^\\circ$:n kulmassa säteen polarisaatiosuuntaan nähden. Kuinka suuri on säteen teho polarisaattorin jälkeen? Vastaa milliwatteina.",
       "answer": 2.0659,
       "unit": "mW",
@@ -446,21 +524,7 @@
           "feedback": "Käytit kulmaa $40^\\circ$. Malusin laissa $\\theta$ on polarisaatiosuunnan ja läpäisysuunnan välinen kulma, tässä $50{,}0^\\circ$."
         }
       ],
-      "solution": "**Annettu:** polarisoituneen lasersäteen teho $P_0 = 5{,}00\\,\\text{mW}$, säteen polarisaatiosuunnan ja polarisaattorin läpäisysuunnan välinen kulma $\\theta = 50{,}0^\\circ$\n\n**Kysytty:** polarisaattorin läpi tulevan säteen teho $P$ milliwatteina\n\n**Periaate:** Laservalo on jo polarisoitunutta, joten sitä ei puoliteta, vaan siihen sovelletaan suoraan Malusin lakia. Säteen poikkipinta-ala ei muutu polarisaattorissa, joten teho muuttuu samassa suhteessa kuin intensiteetti.\n\n**Kaava:** $I = I_0 \\cos^2\\theta$, joten tehoille $P = P_0 \\cos^2\\theta$\n\n**Muunnokset:** Ei tarvita: teho pysyy milliwatteina, ja kulma on asteina.\n\n**Sijoitus:** $P = 5{,}00\\,\\text{mW} \\cdot \\cos^2 50{,}0^\\circ = 5{,}00\\,\\text{mW} \\cdot 0{,}4132 = 2{,}066\\,\\text{mW}$\n\n**Vastaus:** $2{,}07\\,\\text{mW}$, kolme merkitsevää numeroa kuten teho $5{,}00\\,\\text{mW}$ ja kulma $50{,}0^\\circ$.\n\n**Järkevyys:** Kulma $50^\\circ$ on vähän yli $45^\\circ$, joten läpi pitää päästä vähän alle puolet tehosta eli vähän alle $2{,}5\\,\\text{mW}$, kuten tuloksessa."
-    },
-    {
-      "id": "tarkistus-3",
-      "stage": "tarkista",
-      "type": "explain",
-      "title": "3. Selitä: polaroidut aurinkolasit",
-      "prompt": "Selitä, miksi polaroidut aurinkolasit vähentävät järven pinnasta heijastuvaa häikäisyä paljon enemmän kuin tavalliset yhtä tummat aurinkolasit. Selitä myös, miksi häikäisy palaa, kun lasien käyttäjä kallistaa päätään $90^\\circ$.",
-      "model": "Kun polarisoimaton auringonvalo heijastuu vedenpinnasta, pinnan suuntainen värähtely heijastuu voimakkaimmin, joten häikäisy on osittain polarisoitunutta vaakasuunnassa. Polaroitujen lasien polarisaattorikalvon läpäisysuunta on pystysuora, joten kalvo absorboi häikäisyn vaakasuuntaisen värähtelyn, ja häikäisy himmenee paljon. Muu valo on enimmäkseen polarisoimatonta ja himmenee vain noin puoleen. Tavallinen tumma lasi himmentää kaikkea valoa samassa suhteessa, joten häikäisy jää yhtä kirkkaaksi muuhun näkymään verrattuna. Kun päätä kallistetaan $90^\\circ$, kalvon läpäisysuunta kääntyy vaakasuoraksi, ja häikäisyn vaakasuuntainen värähtely pääsee läpi.",
-      "criteria": [
-        "Kerron, että vedenpinnasta heijastunut valo on osittain polarisoitunutta vaakasuunnassa.",
-        "Kerron, että polaroitujen lasien läpäisysuunta on pystysuora, joten ne absorboivat vaakasuuntaisen värähtelyn.",
-        "Erotan polarisaattorin tummasta lasista: tumma lasi himmentää kaikkea valoa samassa suhteessa.",
-        "Selitän, että pään kallistaminen kääntää läpäisysuunnan vaakasuoraksi."
-      ],
+      "solution": "**Annettu:** polarisoituneen lasersäteen teho $P_0 = 5{,}00\\,\\text{mW}$, säteen polarisaatiosuunnan ja polarisaattorin läpäisysuunnan välinen kulma $\\theta = 50{,}0^\\circ$\n\n**Kysytty:** polarisaattorin läpi tulevan säteen teho $P$ milliwatteina\n\n**Periaate:** Laservalo on jo polarisoitunutta, joten sitä ei puoliteta, vaan siihen sovelletaan suoraan Malusin lakia. Säteen poikkipinta-ala ei muutu polarisaattorissa, joten teho muuttuu samassa suhteessa kuin intensiteetti.\n\n**Kaava:** $I = I_0 \\cos^2\\theta$, joten tehoille $P = P_0 \\cos^2\\theta$\n\n**Muunnokset:** Ei tarvita: teho pysyy milliwatteina, ja kulma on asteina.\n\n**Sijoitus:** $P = 5{,}00\\,\\text{mW} \\cdot \\cos^2 50{,}0^\\circ = 5{,}00\\,\\text{mW} \\cdot 0{,}4132 = 2{,}066\\,\\text{mW}$\n\n**Vastaus:** $2{,}07\\,\\text{mW}$, kolme merkitsevää numeroa kuten teho $5{,}00\\,\\text{mW}$ ja kulma $50{,}0^\\circ$.\n\n**Järkevyys:** Kulma $50^\\circ$ on vähän yli $45^\\circ$, joten läpi pitää päästä vähän alle puolet tehosta eli vähän alle $2{,}5\\,\\text{mW}$, kuten tuloksessa.",
       "optional": true
     },
     {

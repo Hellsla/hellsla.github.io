@@ -3,6 +3,7 @@
     {
       "id": "fy7-12-L1-01",
       "level": 1,
+      "core": true,
       "text": "A lamp at the bottom of a swimming pool sends light towards the water surface. The refractive index of water is $1.33$ and that of air $1.00$. What is the critical angle at the boundary between water and air?",
       "answer": 48.7535,
       "unit": "°",
@@ -43,6 +44,7 @@
     {
       "id": "fy7-12-L1-06",
       "level": 1,
+      "core": true,
       "text": "A ray of light travels in a transparent substance towards its boundary with another transparent substance. In which situation is the ray totally internally reflected?",
       "kind": [
         "concept"
@@ -91,6 +93,7 @@
     {
       "id": "fy7-12-L2-01",
       "level": 2,
+      "core": true,
       "text": "The refractive index of the core of an optical fibre is $1.47$, and the critical angle at the boundary between the core and the cladding is $82.0^\\circ$. What is the refractive index of the cladding?",
       "answer": 1.4557,
       "unit": "",
@@ -225,6 +228,7 @@
     {
       "id": "fy7-12-L2-07",
       "level": 2,
+      "core": true,
       "kind": [
         "error",
         "reasoning"

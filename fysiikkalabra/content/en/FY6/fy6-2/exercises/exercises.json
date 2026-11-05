@@ -3,6 +3,7 @@
     {
       "id": "fy6-2-L1-01",
       "level": 1,
+      "core": true,
       "text": "The voltage of a car battery is measured with a multimeter on the range $20\\,\\text{V}$, and the display shows $12.46\\,\\text{V}$. On this range the resolution is $0.01\\,\\text{V}$, and according to the manual the error limit is $\\pm(0.5\\,\\% + 2\\ \\text{digits})$. How large is the error limit of the reading? Give the answer in volts.",
       "answer": 0.0823,
       "unit": "V",
@@ -43,6 +44,7 @@
     {
       "id": "fy6-2-L1-06",
       "level": 1,
+      "core": true,
       "text": "You want to measure with a multimeter the current passing through a lamp. The circuit has a battery and a lamp. How is the ammeter connected?",
       "kind": [
         "concept"
@@ -137,6 +139,7 @@
     {
       "id": "fy6-2-L2-04",
       "level": 2,
+      "core": true,
       "text": "A student wants to measure the voltage of a lamp, but by mistake connects the voltmeter in series with the lamp in a circuit that has only a $9.0\\,\\text{V}$ battery, a lamp and the meter. The resistance of the voltmeter is very large compared with the resistance of the lamp. The lamp goes out. What does the voltmeter show? Give the answer in volts.",
       "answer": 9.0,
       "unit": "V",
@@ -145,6 +148,7 @@
     {
       "id": "fy6-2-L2-05",
       "level": 2,
+      "core": true,
       "kind": [
         "data",
         "reasoning"

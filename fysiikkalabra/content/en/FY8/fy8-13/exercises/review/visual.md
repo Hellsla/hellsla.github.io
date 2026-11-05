@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: a607d4202d595e70
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 708656d835e962ab
+ROUND: delta
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] solutions.md:59 — a long sentence runs over four lines at 1280 px.
 
 ## Checked
-- Opened the en captures of the new tasks (fy8-13-open-exercises-L2-*, L3-*, 1280-*). Data tables render with headings and units as maths, answer box with unit, solution blocks (Annettu/Given ... Reasonableness) laid out like fi.
-- No raw LaTeX, no plain-text symbols, no Finnish in the en captures; fi-easy shows decimal comma in tables and texts.
-- Table cells in JSON keep decimal point as in fi (the page localises them).
+- Captures re-taken with screenshot.py --if-stale (stamp matches the current hash).
+- open-exercises-1280-7: the L1-07 Reasonableness has the new wording, wraps cleanly and has no red KaTeX.
+- The L1-07 Core chip follows the same rendering as fi (stamp is current). The one-word changes at :104 and :149 do not affect the layout.
 
 ## Scores
-illustrations n/a - typography 5 - language 5 - accessibility 5
+illustrations n/a · typography 4 · English 5 · accessibility 4

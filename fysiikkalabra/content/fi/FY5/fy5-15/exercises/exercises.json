@@ -11,6 +11,7 @@
     {
       "id": "fy5-15-L1-02",
       "level": 1,
+      "core": true,
       "text": "Pölynimurin äänen intensiteetti on imurin käyttäjän korvan kohdalla $3{,}2 \\cdot 10^{-5}\\,\\text{W/m}^2$. Mikä on intensiteettitaso? Anna vastaus desibeleinä.",
       "answer": 75,
       "unit": "dB",
@@ -43,6 +44,7 @@
     {
       "id": "fy5-15-L1-06",
       "level": 1,
+      "core": true,
       "text": "Mitä tarkoittaa, että äänen intensiteettitaso on $0\\,\\text{dB}$?",
       "kind": [
         "concept"
@@ -73,6 +75,7 @@
     {
       "id": "fy5-15-L1-07",
       "level": 1,
+      "core": true,
       "text": "Opiskelija laskee, että kaksi samanlaista astianpesukonetta, joista kumpikin tuottaa yksinään $64\\,\\text{dB}$, tuottavat yhdessä $128\\,\\text{dB}$. Mikä on opiskelijan laskussa virhe?",
       "kind": [
         "error",
@@ -114,6 +117,7 @@
     {
       "id": "fy5-15-L2-01",
       "level": 2,
+      "core": true,
       "text": "Kannettava kaiutin tuottaa äänitehon $0{,}050\\,\\text{W}$. Mikä on intensiteettitaso $3{,}0\\,\\text{m}$:n päässä kaiuttimesta, kun ääni leviää tasaisesti joka suuntaan eikä heijastu? Anna vastaus desibeleinä.",
       "answer": 86,
       "unit": "dB",
@@ -146,6 +150,7 @@
     {
       "id": "fy5-15-L2-05",
       "level": 2,
+      "core": true,
       "text": "Avoimella pellolla mitattiin pienen kaiuttimen äänen intensiteettitasoa eri etäisyyksillä kaiuttimesta (esimerkkiaineisto). Mittarin lukemat ovat taulukossa.\n\na) Kuinka monta desibeliä taso laski keskimäärin, kun etäisyys kaksinkertaistui? Laske tason kokonaismuutos etäisyyksien $1{,}0\\,\\text{m}$ ja $16\\,\\text{m}$ välillä ja jaa se etäisyyden kaksinkertaistumisten määrällä.\n\nb) Vertaa tulosta pistemäisen lähteen mallin ennusteeseen. Anna vastauslaatikkoon kohdan a) tulos desibeleinä.",
       "kind": [
         "data",

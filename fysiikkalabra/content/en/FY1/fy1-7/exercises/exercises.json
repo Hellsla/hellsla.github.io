@@ -3,6 +3,7 @@
     {
       "id": "fy1-7-L1-01",
       "level": 1,
+      "core": true,
       "text": "A grey metal ingot is weighed at a recycling point. Its mass is $340\\,\\text{g}$ and its volume is $30.0\\,\\text{cm}^3$. What is the density of the substance of the ingot? Give your answer in $\\text{g/cm}^3$.",
       "answer": 11.3,
       "unit": "g/cm³",
@@ -11,6 +12,7 @@
     {
       "id": "fy1-7-L1-02",
       "level": 1,
+      "core": true,
       "text": "The volume of an aluminium plate is $35.0\\,\\text{cm}^3$, and the density of aluminium is $2.70\\,\\text{g/cm}^3$. What is the mass of the plate? Give your answer in grams.",
       "answer": 94.5,
       "unit": "g",
@@ -149,6 +151,7 @@
     {
       "id": "fy1-7-L2-05",
       "level": 2,
+      "core": true,
       "text": "Objects of different sizes were made of a uniform metal, and the volume and mass of each were measured. Draw a $(V,m)$ graph of the measurement points and fit a straight line through the origin to the points. What is the density of the substance in $\\text{g/cm}^3$? Which substance is it? Use the table from the lesson.",
       "kind": [
         "data",
@@ -232,6 +235,7 @@
     {
       "id": "fy1-7-L2-07",
       "level": 2,
+      "core": true,
       "text": "A student determined the density of a metal object by the water displacement method. The mass of the object is $107\\,\\text{g}$. The reading of the measuring cylinder was $60\\,\\text{ml}$ before the object was lowered in and $72\\,\\text{ml}$ afterwards.\n\nThe student calculated $\\rho = 107\\,\\text{g} : 72\\,\\text{cm}^3 = 1.5\\,\\text{g/cm}^3$ and concluded that the object was light plastic.\n\nFind the student’s error and calculate the correct density in $\\text{g/cm}^3$. Which substance could the object be?",
       "kind": [
         "error",

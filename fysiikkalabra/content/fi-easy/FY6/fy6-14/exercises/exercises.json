@@ -11,6 +11,7 @@
     {
       "id": "fy6-14-L1-02",
       "level": 1,
+      "core": true,
       "text": "Valkoinen LED kytketään $5{,}0\\,\\text{V}$:n USB-virtalähteeseen etuvastuksen kautta. LEDin jännite on $3{,}1\\,\\text{V}$, ja sen virraksi halutaan $20\\,\\text{mA}$. Kuinka suuri etuvastus tarvitaan? Vastaa ohmeina.",
       "answer": 95.0,
       "unit": "Ω",
@@ -44,6 +45,7 @@
     {
       "id": "fy6-14-L1-06",
       "level": 1,
+      "core": true,
       "text": "Pariston jännite on $9{,}0\\,\\text{V}$. Pariston plusnapa on kytketty diodin kautta vastukseen. Vastus on kytketty pariston miinusnapaan. Diodin symbolin kolmio osoittaa kohti vastusta.\n\nMitä piirissä tapahtuu?",
       "kind": [
         "concept"
@@ -133,6 +135,7 @@
     {
       "id": "fy6-14-L2-03",
       "level": 2,
+      "core": true,
       "text": "Omakotitalon katolla olevan aurinkopaneelin pinta-ala on $1{,}6\\,\\text{m}^2$. Kun valon voimakkuus on $800\\,\\text{W/m}^2$, paneeli antaa sähkötehon $260\\,\\text{W}$. Mikä on paneelin hyötysuhde? Vastaa prosentteina.",
       "answer": 20.3125,
       "unit": "%",
@@ -182,6 +185,7 @@
     {
       "id": "fy6-14-L2-06",
       "level": 2,
+      "core": true,
       "text": "Pienen aurinkokennon jännite ja virta mitattiin samassa valaistuksessa eri kuormitusvastuksilla (esimerkkiaineisto). Kuormitusvastus on vastus, joka on kytketty kennon napoihin.\n\nLaske kennon teho jokaisella kuormitusvastuksella. Kuinka suuri on kennon suurin mitattu teho? Vastaa milliwatteina.",
       "kind": [
         "data"

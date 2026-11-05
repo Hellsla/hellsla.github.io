@@ -19,6 +19,7 @@
     {
       "id": "fy6-11-L1-03",
       "level": 1,
+      "core": true,
       "text": "Kahden yhdensuuntaisen metallilevyn välinen jännite on $600\\,\\text{V}$, ja levyjen etäisyys on $0{,}040\\,\\text{m}$. Kuinka suuri on sähkökentän voimakkuus levyjen välissä?",
       "answer": 15000.0,
       "unit": "V/m",
@@ -74,6 +75,7 @@
     {
       "id": "fy6-11-L1-07",
       "level": 1,
+      "core": true,
       "text": "Kahden pystysuoran levyn välissä on homogeeninen sähkökenttä, joka osoittaa oikealle. Levyjen väliin tulee negatiivisesti varautunut pölyhiukkanen. Mihin suuntaan hiukkaseen kohdistuva sähköinen voima osoittaa?",
       "kind": [
         "concept"
@@ -114,6 +116,7 @@
     {
       "id": "fy6-11-L2-01",
       "level": 2,
+      "core": true,
       "text": "Kahden yhdensuuntaisen levyn välinen jännite on $4{,}5\\,\\text{kV}$, ja levyjen etäisyys on $9{,}0\\,\\text{mm}$. Levyjen väliin tuodaan pieni pallo, jonka varaus on $4{,}0\\,\\text{nC}$. Kuinka suuri sähköinen voima palloon kohdistuu? Vastaa millinewtoneina.",
       "answer": 2.0,
       "unit": "mN",
@@ -203,6 +206,7 @@
     {
       "id": "fy6-11-L2-07",
       "level": 2,
+      "core": true,
       "kind": [
         "data",
         "experiment"

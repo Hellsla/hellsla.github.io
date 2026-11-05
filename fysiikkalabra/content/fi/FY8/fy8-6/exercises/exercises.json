@@ -35,6 +35,7 @@
     {
       "id": "fy8-6-L1-05",
       "level": 1,
+      "core": true,
       "text": "Opiskelija sovitti LEDien kynnysjännitteisiin taajuuden funktiona suoran, jonka kulmakerroin on $k = 4{,}10 \\cdot 10^{-15}\\,\\text{V}\\,\\text{s}$. Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Minkä arvon opiskelija sai Planckin vakiolle? Anna vastaus yksikössä $\\text{J}\\,\\text{s}$.",
       "answer": 6.57e-34,
       "unit": "J s",
@@ -43,6 +44,7 @@
     {
       "id": "fy8-6-L1-06",
       "level": 1,
+      "core": true,
       "text": "Punaista LEDiä kytketään vähitellen kasvavaan jännitteeseen. Alle $1{,}5\\,\\text{V}$:n jännitteellä LED ei hohda lainkaan, mutta noin $1{,}8\\,\\text{V}$:n jälkeen se syttyy. Mikä selittää, että LED syttyy vasta kynnysjännitteellä?",
       "kind": [
         "concept"
@@ -73,6 +75,7 @@
     {
       "id": "fy8-6-L1-07",
       "level": 1,
+      "core": true,
       "text": "Vihreän LEDin kynnysjännite on $2{,}30\\,\\text{V}$. Oletetaan, että kynnysjännitteellä elektronin jännitelähteeltä saama energia on täsmälleen yhden fotonin energia, $eU_\\text{k} = \\tfrac{hc}{\\lambda}$.\n\nKäytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$.\n\nMikä on LEDin valon aallonpituus? Anna vastaus nanometreinä.",
       "answer": 539,
       "unit": "nm",
@@ -123,6 +126,7 @@
     {
       "id": "fy8-6-L2-05",
       "level": 2,
+      "core": true,
       "text": "Punaisen LEDin virta–jännite-ominaiskäyrä mitattiin kytkemällä LED sarjaan suojavastuksen kanssa ja kasvattamalla jännitettä vähitellen. Taulukko on esimerkkiaineisto. Kuvaajassa $(U, I)$ virta on aluksi lähes nolla ja kasvaa sitten lähes suoraviivaisesti.\n\nKäytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$.\n\na) Piirrä paperille kuvaaja $I(U)$ ja päättele, mitkä pisteet kuuluvat lineaariseen osaan.\n\nb) Sovita lineaariseen osaan suora ja jatka sitä jänniteakselille, jolla $I = 0$. Lue kynnysjännite $U_\\text{k}$.\n\nc) LEDin huippuaallonpituus on $650\\,\\text{nm}$. Laske jännite $\\tfrac{hc}{e\\lambda}$ ja vertaa sitä mitattuun kynnysjännitteeseen.\n\nVastaa laatikkoon kohdan b) kynnysjännite voltteina.",
       "kind": [
         "data",

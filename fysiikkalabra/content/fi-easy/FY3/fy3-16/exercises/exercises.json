@@ -3,6 +3,7 @@
     {
       "id": "fy3-16-L1-01",
       "level": 1,
+      "core": true,
       "text": "Saunan kiukaassa on $20\\,\\text{kg}$ kiviä. Kivien ominaislämpökapasiteetti on $800\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$. Kivet lämpenevät $20\\,{}^\\circ\\text{C}$:sta $300\\,{}^\\circ\\text{C}$:seen. Kuinka suuri lämpömäärä kiviin siirtyy? Anna vastaus megajouleina.",
       "answer": 4.5,
       "unit": "MJ",
@@ -73,6 +74,7 @@
     {
       "id": "fy3-16-L1-07",
       "level": 1,
+      "core": true,
       "text": "Kylmälaukun seinän läpi johtuu ulkoa koko ajan lämpöä jääpussiin. Silti laukun sisälämpötila pysyy $0\\,{}^\\circ\\text{C}$:ssa, kunnes jää on sulanut. Mikä seuraavista selittää tämän?",
       "kind": [
         "concept"
@@ -113,6 +115,7 @@
     {
       "id": "fy3-16-L2-01",
       "level": 2,
+      "core": true,
       "text": "Kylmälaukun seinien yhteispinta-ala on $0{,}50\\,\\text{m}^2$ ja U-arvo $2{,}0\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$. Ulkona on $25\\,{}^\\circ\\text{C}$. Jääpussin lämpötila pysyy $0\\,{}^\\circ\\text{C}$:ssa niin kauan kuin jäätä on. Kuinka suuri jääpussin massan pitää olla, jotta jäätä riittää 6,0 tunniksi? Oleta, että laukussa on vain jäätä.",
       "answer": 1.6,
       "unit": "kg",
@@ -182,6 +185,7 @@
     {
       "id": "fy3-16-L2-06",
       "level": 2,
+      "core": true,
       "text": "Taulukossa on esimerkkiaineisto omakotitalon lämmitysenergiasta $E$ kuukaudessa ja kuukauden keskilämpötilasta ulkona $T_\\text{ulko}$. Oleta nämä asiat. Lämmitysenergia on yhtä suuri kuin rakenteiden läpi poistuva energia. Sisälämpötila on joka kuukausi sama. Kuukaudessa on $720\\,\\text{h}$.\n\na) Piirrä pisteistä $(T_\\text{ulko}, E)$ kuvaaja ja sovita siihen suora.\n\nb) Määritä suoran kulmakertoimesta talon lämpöhäviökerroin $UA$ yksikössä W/K, kun teho on $P = UA\\Delta T$.\n\nc) Missä ulkolämpötilassa suora leikkaa vaaka-akselin, ja mitä se kertoo talosta?\n\nAnna vastauslaatikkoon kohdan b) tulos.",
       "kind": [
         "data",

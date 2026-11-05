@@ -11,6 +11,7 @@
     {
       "id": "fy7-13-L1-02",
       "level": 1,
+      "core": true,
       "text": "Punaisen laserin valo, jonka aallonpituus on $650\\,\\text{nm}$, osuu kohtisuoraan hilaan, jonka hilavakio on $2{,}00\\,\\mu\\text{m}$. Kuinka suuressa kulmassa keskimaksimin suunnasta on ensimmäisen kertaluvun maksimi?",
       "answer": 18.9656,
       "unit": "°",
@@ -43,6 +44,7 @@
     {
       "id": "fy7-13-L1-06",
       "level": 1,
+      "core": true,
       "text": "Laserin valo kulkee kapean raon läpi ja muodostaa varjostimelle diffraktiokuvion. Mitä kuvion leveydelle tapahtuu, kun rakoa kavennetaan?",
       "kind": [
         "concept"
@@ -105,6 +107,7 @@
     {
       "id": "fy7-13-L2-02",
       "level": 2,
+      "core": true,
       "text": "Punaisen laserin valo, jonka aallonpituus on $650\\,\\text{nm}$, osuu kohtisuoraan hilaan, jossa on $100$ viivaa millimetrillä. Varjostin on $2{,}50\\,\\text{m}$:n päässä hilasta kohtisuorassa sädettä vastaan. Kuinka kaukana keskimaksimista ensimmäisen kertaluvun maksimi on varjostimella? Anna vastaus senttimetreinä.",
       "answer": 16.2844,
       "unit": "cm",
@@ -129,6 +132,7 @@
     {
       "id": "fy7-13-L2-05",
       "level": 2,
+      "core": true,
       "text": "Opiskelija määrittää punaisen laserin aallonpituuden hilalla, jonka viivatiheys on $100$ viivaa millimetrillä. Hila ja varjostin ovat kohtisuorassa sädettä vastaan, ja varjostin on $L = 1{,}00\\,\\text{m}$:n päässä hilasta.\n\nHän mittaa mittanauhalla kertaluvun $k$ maksimin etäisyyden $x_k$ keskimaksimista; mittaustulokset ovat taulukossa.\n\na) Laske jokaiselle maksimille kulma $\\theta_k$ ja sen sini $\\sin\\theta_k$. Piirrä pisteet $(k, \\sin\\theta_k)$ ja sovita niihin origon kautta kulkeva suora.\n\nb) Laske suoran kulmakertoimesta laserin aallonpituus $\\lambda$ nanometreinä.\n\nKohdan b) tulos kirjoitetaan vastauslaatikkoon.",
       "kind": [
         "data",

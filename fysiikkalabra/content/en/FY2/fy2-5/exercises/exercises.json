@@ -3,6 +3,7 @@
     {
       "id": "fy2-5-L1-01",
       "level": 1,
+      "core": true,
       "text": "At a petrol station, $2.0\\,\\text{kg}$ of petrol was bought for a chainsaw. The heat of combustion of petrol is $43\\,\\tfrac{\\text{MJ}}{\\text{kg}}$. How much energy is released when the petrol burns? Give the answer in megajoules.",
       "answer": 86,
       "unit": "MJ",
@@ -44,6 +45,7 @@
     {
       "id": "fy2-5-L1-06",
       "level": 1,
+      "core": true,
       "text": "The heat of combustion of petrol is $43\\,\\tfrac{\\text{MJ}}{\\text{kg}}$. What does this mean?",
       "kind": [
         "concept"
@@ -114,6 +116,7 @@
     {
       "id": "fy2-5-L2-03",
       "level": 2,
+      "core": true,
       "text": "In the pellet burner of a detached house, $40\\,\\text{kg}$ of wood pellets with a heat of combustion of $17\\,\\tfrac{\\text{MJ}}{\\text{kg}}$ are burnt. The efficiency of the boiler is $85\\,\\%$. How much useful energy is obtained from the pellets to heat the house? Give the answer in megajoules.",
       "answer": 580,
       "unit": "MJ",
@@ -130,6 +133,7 @@
     {
       "id": "fy2-5-L2-05",
       "level": 2,
+      "core": true,
       "text": "The table gives example data on the effective heat of combustion of firewood at different moisture contents. Heating a sauna requires an energy of $200\\,\\text{MJ}$ released from firewood.\n\nUsing the heats of combustion in the table, calculate the mass of wood needed when the moisture content is $20\\,\\%$ and when it is $40\\,\\%$. How many kilograms more moist ($40\\,\\%$) wood is needed than air-dried ($20\\,\\%$) wood? Give the answer in kilograms.",
       "kind": [
         "data",

@@ -3,6 +3,7 @@
     {
       "id": "fy7-11-L1-01",
       "level": 1,
+      "core": true,
       "text": "Punainen valo tulee ilmasta tyynen järven pintaan tulokulmassa $50{,}0^\\circ$. Veden taitekerroin punaiselle valolle on $1{,}332$. Kuinka suuri on taitekulma vedessä?",
       "answer": 35.1072,
       "unit": "°",
@@ -43,6 +44,7 @@
     {
       "id": "fy7-11-L1-06",
       "level": 1,
+      "core": true,
       "text": "Valkoinen valo tulee ilmasta lasiprismaan, ja violetti osa taittuu enemmän kuin punainen osa. Mikä väite selittää eron oikein?",
       "kind": [
         "concept"
@@ -102,6 +104,7 @@
     {
       "id": "fy7-11-L2-02",
       "level": 2,
+      "core": true,
       "text": "Lasiprisman huippukulma on $60{,}0^\\circ$, ja lasin taitekerroin keltaiselle valolle on $1{,}52$. Keltainen säde tulee prisman ensimmäiseen pintaan ilmasta tulokulmassa $40{,}0^\\circ$. Kuinka suuressa tulokulmassa säde osuu lasin sisältä prisman toiseen pintaan?",
       "answer": 34.983,
       "unit": "°",
@@ -164,6 +167,7 @@
     {
       "id": "fy7-11-L2-06",
       "level": 2,
+      "core": true,
       "text": "Opiskelija päättelee: ”Punainen taittuu vähiten, joten se kääntyy pisarassa vähiten ja poikkeaa pienimpään kulmaan vastapisteen suunnasta. Siksi punainen on sateenkaaren sisäreunalla.”\n\nVeden taitekerroin on punaiselle valolle $1{,}3315$ ja violetille $1{,}3431$. Valo tulee pisaran pintaan tulokulmassa $59{,}0^\\circ$, heijastuu kerran pisaran takapinnasta ja lähtee pisarasta.\n\na) Laske kummankin värin kulma $\\theta$ vastapisteen suunnasta.\n\nb) Mikä opiskelijan päättelyssä on oikein ja mikä väärin? Perustele a)-kohdan tuloksilla.\n\nAnna vastauskenttään punaisen valon kulma $\\theta$ asteina.",
       "kind": [
         "error",

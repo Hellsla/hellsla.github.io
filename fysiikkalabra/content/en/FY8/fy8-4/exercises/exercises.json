@@ -3,6 +3,7 @@
     {
       "id": "fy8-4-L1-01",
       "level": 1,
+      "core": true,
       "text": "A green laser pointer emits light of wavelength $532\\,\\text{nm}$. What is the momentum of one photon? Give the answer in units of $10^{-27}\\,\\text{kg}\\cdot\\text{m/s}$.",
       "answer": 1.25,
       "unit": "10⁻²⁷ kg·m/s",
@@ -35,6 +36,7 @@
     {
       "id": "fy8-4-L1-05",
       "level": 1,
+      "core": true,
       "text": "A laser of power $1.0\\,\\text{mW}$ emits photons, each of energy $3.14 \\cdot 10^{-19}\\,\\text{J}$. How many photons does the laser emit per second? Give the answer in units of $10^{15}\\,\\tfrac{1}{\\text{s}}$.",
       "answer": 3.18,
       "unit": "10¹⁵ 1/s",
@@ -43,6 +45,7 @@
     {
       "id": "fy8-4-L1-06",
       "level": 1,
+      "core": true,
       "text": "In a double-slit experiment the light of a laser is dimmed so that the photons arrive at the slits one at a time. When thousands of hits have accumulated, a stripe pattern has formed on the screen. Which explanation fits the observation?",
       "kind": [
         "concept"
@@ -211,6 +214,7 @@
     {
       "id": "fy8-4-L2-06",
       "level": 2,
+      "core": true,
       "text": "Example data: X-rays of wavelength $\\lambda = 71.10\\,\\text{pm}$ scatter from graphite. The table gives the wavelength $\\lambda'$ of the scattered radiation at different scattering angles $\\theta$.\n\na) For each angle, calculate the change in wavelength $\\Delta\\lambda = \\lambda' - \\lambda$ and the quantity $1 - \\cos\\theta$.\n\nb) Draw a graph from the measurement points with $1 - \\cos\\theta$ on the horizontal axis and $\\Delta\\lambda$ on the vertical axis, and fit a straight line to the points. Determine the slope of the line and state what it expresses.\n\nc) What is the change in wavelength when the photon scatters straight back ($\\theta = 180\\,{}^\\circ$)? Use the fitted line.\n\nGive the result of part c) in the answer box in picometres.",
       "kind": [
         "data",

@@ -3,6 +3,7 @@
     {
       "id": "fy3-2-L1-01",
       "level": 1,
+      "core": true,
       "text": "A moped is pushed in the direction of motion with an $80\\,\\text{N}$ force over a distance of 25 metres. How much work does the pushing force do?",
       "answer": 2.0,
       "unit": "kJ",
@@ -44,6 +45,7 @@
     {
       "id": "fy3-2-L1-06",
       "level": 1,
+      "core": true,
       "text": "A student carries a backpack along a horizontal corridor at a steady speed. The force supporting the weight of the backpack points upwards. Why does this force do no work?",
       "kind": [
         "concept"
@@ -138,6 +140,7 @@
     {
       "id": "fy3-2-L2-04",
       "level": 2,
+      "core": true,
       "text": "A cart is pushed by a force in the direction of motion. The force is first $10\\,\\text{N}$ over the distance $0\\text{–}2.0\\,\\text{m}$. After that the force increases steadily from $10\\,\\text{N}$ to $30\\,\\text{N}$ over the distance $2.0\\text{–}6.0\\,\\text{m}$. Calculate the total work done by the force as the area under the $(s, F)$ graph.",
       "answer": 100,
       "unit": "J",
@@ -186,6 +189,7 @@
     {
       "id": "fy3-2-L2-06",
       "level": 2,
+      "core": true,
       "text": "A student measures the work and power while climbing a staircase. The student's mass is $62\\,\\text{kg}$. The staircase has 18 steps, each with a height of $0.17\\,\\text{m}$. The student climbs the stairs three times at as steady a pace as possible, and timing gives the climbing times in the table (example data set).\n\nAssume that only lifting the student's weight to the height of the staircase requires work. Calculate the student's average power during the climb using the average of the climbing times.",
       "kind": [
         "experiment",

@@ -3,6 +3,7 @@
     {
       "id": "fy8-10-L1-01",
       "level": 1,
+      "core": true,
       "text": "The mass of a carbon-12 atom is exactly $12.000000\\,\\text{u}$. The mass of a hydrogen atom is $m_\\text{H} = 1.007825\\,\\text{u}$ and that of a neutron $m_\\text{n} = 1.008665\\,\\text{u}$. What is the mass defect of the carbon-12 nucleus ${}^{12}_{6}\\text{C}$? Give the answer in atomic mass units.",
       "answer": 0.09894,
       "unit": "u",
@@ -84,6 +85,7 @@
     {
       "id": "fy8-10-L1-08",
       "level": 1,
+      "core": true,
       "text": "The binding energy per nucleon $\\tfrac{E_\\text{B}}{A}$ is greatest for the nuclei of iron-56 and nickel-62. What does this tell us?",
       "kind": [
         "concept",
@@ -125,6 +127,7 @@
     {
       "id": "fy8-10-L2-02",
       "level": 2,
+      "core": true,
       "text": "Radium-226 decays by alpha decay: ${}^{226}_{88}\\text{Ra} \\to {}^{222}_{86}\\text{Rn} + {}^{4}_{2}\\text{He}$. The atomic masses are $m({}^{226}\\text{Ra}) = 226.025410\\,\\text{u}$, $m({}^{222}\\text{Rn}) = 222.017578\\,\\text{u}$ and $m({}^{4}\\text{He}) = 4.002603\\,\\text{u}$. How much energy is released in the decay? Use $1\\,\\text{u} = 931.5\\,\\tfrac{\\text{MeV}}{c^2}$. Give the answer in megaelectronvolts.",
       "answer": 4.871,
       "unit": "MeV",
@@ -149,6 +152,7 @@
     {
       "id": "fy8-10-L2-05",
       "level": 2,
+      "core": true,
       "text": "The table gives the atomic masses of eight nuclides. Use the mass of the hydrogen atom $m_\\text{H} = 1.007825\\,\\text{u}$, the mass of the neutron $m_\\text{n} = 1.008665\\,\\text{u}$ and the conversion $1\\,\\text{u} = 931.5\\,\\tfrac{\\text{MeV}}{c^2}$. You may use a spreadsheet.\n\na) Calculate the mass defect, the binding energy and the binding energy per nucleon of each nuclide. Order the nuclides by binding energy per nucleon from smallest to largest.\n\nb) Which of the nuclides is more tightly bound than all the others, and what is its binding energy per nucleon? The answer box takes the value of part b) in megaelectronvolts.",
       "kind": [
         "data",

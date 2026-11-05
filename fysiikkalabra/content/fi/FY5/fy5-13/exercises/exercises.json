@@ -3,6 +3,7 @@
     {
       "id": "fy5-13-L1-01",
       "level": 1,
+      "core": true,
       "text": "Kontrabasson matalimman kielen värähtelevä osa on $1{,}05\\,\\text{m}$ pitkä, ja aalto etenee kielessä nopeudella $86{,}1\\,\\text{m/s}$. Kieli on kiinni kummastakin päästä. Mikä on kielen perustaajuus?",
       "answer": 41.0,
       "unit": "Hz",
@@ -43,6 +44,7 @@
     {
       "id": "fy5-13-L1-06",
       "level": 1,
+      "core": true,
       "text": "Kitaran kieleen on syntynyt seisova aalto. Mikä seuraavista kuvaa kielen kupua oikein?",
       "kind": [
         "concept"
@@ -73,6 +75,7 @@
     {
       "id": "fy5-13-L1-07",
       "level": 1,
+      "core": true,
       "text": "Toisesta päästä suljetun putken perustaajuus on $150\\,\\text{Hz}$. Mikä seuraavista on myös putken ominaistaajuus?",
       "kind": [
         "concept"
@@ -189,6 +192,7 @@
     {
       "id": "fy5-13-L2-06",
       "level": 2,
+      "core": true,
       "text": "Äänen nopeutta mitataan resonanssiputkella. Pystysuoran putken alaosassa on vettä, ja putken suun yllä soi äänirauta, jonka taajuus on $512\\,\\text{Hz}$. Kun vedenpintaa lasketaan, ääni voimistuu kolmessa kohdassa. Veden pinta toimii putken suljettuna päänä. Taulukossa on ilmapatsaan pituus $L$ veden pinnasta putken suulle kussakin kohdassa (esimerkkiaineisto).\n\na) Määritä äänen nopeus ilmassa. Käytä ensimmäisen ja kolmannen resonanssin pituuksien erotusta, jolloin putken pääkorjausta ei tarvita.\n\nb) Laske, kuinka paljon ensimmäinen pituus poikkeaa neljänneksestä aallonpituutta, ja selitä poikkeaman syy.\n\nVastauslaatikkoon tulee a)-kohdan tulos.",
       "kind": [
         "experiment",

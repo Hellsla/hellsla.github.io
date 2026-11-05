@@ -27,6 +27,7 @@
     {
       "id": "fy7-10-L1-04",
       "level": 1,
+      "core": true,
       "text": "A ray of light arrives from the air at window glass at an angle of incidence of $60.0^\\circ$. The refractive index of air is $1.00$ and that of the glass $1.52$. What is the angle of refraction?",
       "answer": 34.733,
       "unit": "°",
@@ -43,6 +44,7 @@
     {
       "id": "fy7-10-L1-06",
       "level": 1,
+      "core": true,
       "text": "A ray of light arrives obliquely from the air at the surface of a glass plate and continues in the glass. Which of the following correctly describes how the ray behaves at the boundary and why?",
       "kind": [
         "concept"
@@ -105,6 +107,7 @@
     {
       "id": "fy7-10-L2-02",
       "level": 2,
+      "core": true,
       "text": "A student directs a laser beam from the air into a piece of plastic. The angle of incidence is $40.0^\\circ$ and the angle of refraction $25.4^\\circ$. The refractive index of air is $1.00$. At what speed does light travel in the plastic? Give the answer in the form $\\ldots \\cdot 10^{8}\\,\\text{m/s}$, that is, write the coefficient as the answer.",
       "answer": 2.0019,
       "unit": "· 10⁸ m/s",
@@ -130,6 +133,7 @@
     {
       "id": "fy7-10-L2-05",
       "level": 2,
+      "core": true,
       "text": "A group of students studied the refraction of light from air into a semicircular glass block and measured the angle of incidence $\\alpha_1$ and the angle of refraction $\\alpha_2$ with a protractor. The reading accuracy is $\\pm 0.5^\\circ$. The measurements are example data.\n\nCalculate $\\sin\\alpha_1$ and $\\sin\\alpha_2$ for each measurement point and draw a graph with $\\sin\\alpha_1$ on the vertical axis and $\\sin\\alpha_2$ on the horizontal axis. Fit a straight line through the origin to the points: the line passes through the origin, because at an angle of incidence of $0^\\circ$ the angle of refraction is also $0^\\circ$.\n\nWhat is the slope of the line? Use it to deduce the refractive index of the glass when the refractive index of air is $1.00$. Write the refractive index of the glass in the answer box.",
       "kind": [
         "data",

@@ -3,6 +3,7 @@
     {
       "id": "fy5-17-L1-01",
       "level": 1,
+      "core": true,
       "text": "In monitoring a pregnancy an ultrasound machine sends a pulse from the skin of the abdomen. The echo reflected from the surface of the fetus's head returns to the probe after $91.0\\,\\mu\\text{s}$. Sound travels in tissue at a speed of $1540\\,\\text{m/s}$. How deep below the surface of the skin is the head of the fetus? Give the answer in centimetres.",
       "answer": 7.01,
       "unit": "cm",
@@ -103,6 +104,7 @@
     {
       "id": "fy5-17-L1-08",
       "level": 1,
+      "core": true,
       "text": "In ultrasound imaging, the smallest detail that can be distinguished is smaller the higher the frequency of the pulse. Even so, structures deep down are often imaged with a lower frequency. Why is the highest possible frequency not always used?",
       "kind": [
         "concept"
@@ -135,6 +137,7 @@
     {
       "id": "fy5-17-L2-01",
       "level": 2,
+      "core": true,
       "text": "The graph shows the seismogram of a seismograph station from an earthquake. The time is counted from the start of the recording, not from the moment of the earthquake. The speed of the P wave is $7.0\\,\\text{km/s}$ and that of the S wave $4.0\\,\\text{km/s}$. How far from the station did the earthquake occur? Give the answer in kilometres.",
       "answer": 168,
       "unit": "km",
@@ -168,6 +171,7 @@
     {
       "id": "fy5-17-L2-05",
       "level": 2,
+      "core": true,
       "kind": [
         "data"
       ],

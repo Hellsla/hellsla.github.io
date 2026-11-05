@@ -3,6 +3,7 @@
     {
       "id": "fy1-6-L1-01",
       "level": 1,
+      "core": true,
       "text": "A ball is released from rest, and air resistance is ignored. What is the speed of the ball when $3.0\\,\\text{s}$ have passed since the start of the fall?",
       "answer": 29.43,
       "unit": "m/s",
@@ -43,6 +44,7 @@
     {
       "id": "fy1-6-L1-06",
       "level": 1,
+      "core": true,
       "text": "An astronaut drops a hammer and a feather from rest at the same time from the same height on the surface of the Moon. The Moon has no atmosphere. What happens?",
       "kind": [
         "concept"
@@ -116,6 +118,7 @@
     {
       "id": "fy1-6-L2-01",
       "level": 2,
+      "core": true,
       "text": "A ball is released from rest and hits the ground at a speed of $12.0\\,\\text{m/s}$. Air resistance is ignored. How long did the ball fall?",
       "answer": 1.223242,
       "unit": "s",
@@ -149,6 +152,7 @@
     {
       "id": "fy1-6-L2-05",
       "level": 2,
+      "core": true,
       "text": "In a light gate measurement the speed $v$ of a small object was measured at different moments $t$ from the start of the fall, when the object was released from rest. Draw the $(t, v)$ graph from the measurement points, fit a straight line to the points and determine its slope. What is the acceleration of free fall $g$ according to the measurement? Compare the result with the table value $9.81\\,\\text{m/s}^2$.",
       "kind": [
         "data",

@@ -43,6 +43,7 @@
     {
       "id": "fy8-13-L1-06",
       "level": 1,
+      "core": true,
       "text": "Absorboitunut annos mitataan yksiköllä gray ($\\text{Gy}$) ja efektiivinen annos yksiköllä sievert ($\\text{Sv}$). Kumpikin yksikkö voidaan kirjoittaa muodossa $\\tfrac{\\text{J}}{\\text{kg}}$. Mikä väite kuvaa näiden annosten eroa oikein?",
       "kind": [
         "concept"
@@ -73,6 +74,7 @@
     {
       "id": "fy8-13-L1-07",
       "level": 1,
+      "core": true,
       "text": "Vatsan alueen röntgentutkimuksessa maksa saa ekvivalenttiannoksen $2{,}0\\,\\text{mSv}$ ja mahalaukku $1{,}0\\,\\text{mSv}$ (esimerkkiarvot). Muut kudokset eivät saa merkittävää annosta.\n\nMaksan kudoksen painotuskerroin on $0{,}04$ ja mahalaukun $0{,}12$. Kuinka suuri on potilaan efektiivinen annos? Anna vastaus millisieverteinä.",
       "answer": 0.2,
       "unit": "mSv",
@@ -99,6 +101,7 @@
     {
       "id": "fy8-13-L2-02",
       "level": 2,
+      "core": true,
       "text": "Gammasäteilylähteen annosnopeus on $1{,}0\\,\\text{m}$:n etäisyydellä $150\\,\\mu\\text{Sv/h}$. Huoltoasentaja työskentelee $2{,}5\\,\\text{m}$:n päässä lähteestä. Kuinka kauan hän voi työskennellä, ennen kuin annos on $100\\,\\mu\\text{Sv}$? Anna vastaus tunteina.",
       "answer": 4.2,
       "unit": "h",
@@ -123,6 +126,7 @@
     {
       "id": "fy8-13-L2-05",
       "level": 2,
+      "core": true,
       "text": "Taulukossa on suomalaisen keskimääräinen efektiivinen vuosiannos lähteittäin. Aineisto on esimerkkiaineisto, joka perustuu STUK-A263:n (2020) keskimääräiseen vuosiannokseen $5{,}9\\,\\text{mSv}$. Muuhun luonnon säteilyyn kuuluvat maaperän ja rakennusaineiden säteily, kosminen säteily ja kehon omat radioaktiiviset aineet.\n\na) Laske lähteiden annosten summa.\n\nb) Kuinka monta prosenttia kokonaisannoksesta tulee sisäilman radonista? Anna vastaus prosentteina.\n\nVastauslaatikkoon tulee kohdan b) tulos.",
       "kind": [
         "data"

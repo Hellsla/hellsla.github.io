@@ -21,6 +21,7 @@
     {
       "id": "fy4-13-L1-03",
       "level": 1,
+      "core": true,
       "text": "Kärry, jonka massa on $1{,}0\\,\\text{kg}$, on kitkattomalla pöydällä. Siihen sidottu kevyt ja venymätön lanka kulkee pöydän reunalla olevan kevyen ja kitkattoman väkipyörän yli, ja langan päässä roikkuu punnus, jonka massa on $0{,}40\\,\\text{kg}$. Ilmanvastus jätetään huomiotta.\n\nPiirrä kummankin kappaleen voimakuvio. Kuinka suuri on langan jännitysvoima, kun kappaleet liikkuvat?",
       "answer": 2.8,
       "unit": "N",
@@ -48,6 +49,7 @@
     {
       "id": "fy4-13-L1-06",
       "level": 1,
+      "core": true,
       "text": "Kärry on kitkattomalla pöydällä ja sidottu langalla väkipyörän yli punnukseen. Punnus laskee ja kärry kiihtyy. Lanka ja väkipyörä ovat kevyet, ja ilmanvastus jätetään huomiotta. Miten langan jännitysvoima $T$ ja punnuksen paino $G_2$ suhtautuvat toisiinsa?",
       "kind": [
         "concept"
@@ -129,6 +131,7 @@
     {
       "id": "fy4-13-L2-02",
       "level": 2,
+      "core": true,
       "text": "Kevyen ja venymättömän langan päissä roikkuu väkipyörän yli kappaleet, joiden massat ovat $0{,}50\\,\\text{kg}$ ja $1{,}0\\,\\text{kg}$. Väkipyörä on kevyt ja kitkaton, ja ilmanvastus jätetään huomiotta. Kappaleet päästetään liikkeelle. Piirrä kummankin kappaleen voimakuvio. Kuinka suuri on langan jännitysvoima?",
       "answer": 6.5,
       "unit": "N",
@@ -156,6 +159,7 @@
     {
       "id": "fy4-13-L2-05",
       "level": 2,
+      "core": true,
       "text": "Atwoodin koneessa kevyen ja venymättömän langan päissä on väkipyörän yli kaksi punnusta, joiden yhteenlaskettu massa on aina $M = 0{,}500\\,\\text{kg}$. Väkipyörä on kevyt ja kitkaton. Punnusten massaero $\\Delta m = m_2 - m_1$ muutetaan siirtämällä pieniä massoja punnukselta toiselle, ja jokaisella massaerolla mitataan raskaamman punnuksen kiihtyvyys $a$. Taulukossa on esimerkkiaineisto mittauksista.\n\na) Johda kummankin punnuksen liikeyhtälöstä kaava, jolla $a$ lasketaan massaerosta $\\Delta m$.\n\nb) Piirrä $(\\Delta m, a)$-kuvaaja ja sovita siihen suora, joka kulkee origon kautta. Määritä putoamiskiihtyvyys $g$ suoran kulmakertoimesta.\n\nVastauslaatikkoon tulee kohdan b) putoamiskiihtyvyys.",
       "kind": [
         "data",

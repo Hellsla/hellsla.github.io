@@ -3,6 +3,7 @@
   {
    "id": "fy5-1-L1-01",
    "level": 1,
+   "core": true,
    "text": "Mutteria kiristetään kiintoavaimella. Käsi vaikuttaa varteen $0{,}25\\,\\text{m}$:n etäisyydellä mutterin keskeltä $150\\,\\text{N}$:n voimalla, joka on kohtisuorassa vartta vastaan. Kuinka suuri on voiman momentti mutterin akselin suhteen?",
    "answer": 37.5,
    "unit": "Nm",
@@ -44,6 +45,7 @@
   {
    "id": "fy5-1-L1-06",
    "level": 1,
+   "core": true,
    "text": "Oven kahva on yleensä mahdollisimman kaukana saranoista. Mikä seuraavista perustelee tämän oikein?",
    "kind": [
     "concept"
@@ -113,6 +115,7 @@
   {
    "id": "fy5-1-L2-01",
    "level": 2,
+   "core": true,
    "text": "Ovi avataan vetämällä kahvaan sidottua narua. Kahva on $0{,}75\\,\\text{m}$:n päässä saranoista, ja narun jännitysvoima on $40\\,\\text{N}$. Naru on $35^\\circ$:n kulmassa oven tasoon nähden. Kuinka suuri on narun voiman momentti saranoiden suhteen?",
    "answer": 17.2,
    "unit": "Nm",
@@ -186,6 +189,7 @@
   {
    "id": "fy5-1-L2-06",
    "level": 2,
+   "core": true,
    "text": "Kevyen mittakepin keskikohta on kiinnitetty akseliin, ja keppi on vaakasuorassa. Kepistä riippuu punnuksia akselin vasemmalla ja oikealla puolella. Taulukossa ovat punnusten massat ja etäisyydet akselista (esimerkkiaineisto). Kepin oma massa jätetään huomiotta. Käytä arvoa $g = 9{,}81\\,\\text{m/s}^2$.\n\na) Laske punnusten painojen kokonaismomentti akselin suhteen, kun vastapäivään kiertävä momentti on positiivinen.\n\nb) Mihin suuntaan keppi alkaa kiertyä?\n\nVastauslaatikkoon tulee kohdan a) tulos.",
    "kind": [
     "data"

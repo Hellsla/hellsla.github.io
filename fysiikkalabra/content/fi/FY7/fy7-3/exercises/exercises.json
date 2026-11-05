@@ -3,6 +3,7 @@
     {
       "id": "fy7-3-L1-01",
       "level": 1,
+      "core": true,
       "text": "Pitkässä suorassa johtimessa kulkee virta $12\\,\\text{A}$. Kuinka suuri on magneettivuon tiheys $3{,}0\\,\\text{cm}$:n etäisyydellä johtimesta? Anna vastaus mikrotesloina.",
       "answer": 80,
       "unit": "µT",
@@ -11,6 +12,7 @@
     {
       "id": "fy7-3-L1-02",
       "level": 1,
+      "core": true,
       "text": "Käämissä on $500$ kierrosta, ja sen pituus on $25\\,\\text{cm}$. Käämissä kulkee virta $1{,}2\\,\\text{A}$. Kuinka suuri on magneettivuon tiheys käämin keskellä? Käämi on pitkä paksuuteensa verrattuna. Anna vastaus millitesloina.",
       "answer": 3.0,
       "unit": "mT",
@@ -43,6 +45,7 @@
     {
       "id": "fy7-3-L1-06",
       "level": 1,
+      "core": true,
       "text": "Pystysuorassa pitkässä johtimessa kulkee virta ylöspäin. Mikä seuraavista kuvaa oikein johtimen magneettikentän suunnan ylhäältä katsottuna ja sen, miten suunta muuttuu, kun virran suunta käännetään?",
       "kind": [
         "concept"
@@ -129,6 +132,7 @@
     {
       "id": "fy7-3-L2-05",
       "level": 2,
+      "core": true,
       "kind": [
         "data",
         "graph"

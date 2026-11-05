@@ -275,7 +275,7 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 
 ### d)
 **Kysytty:** onko kondensaattorissa vaaraa pariston irrottamisen jälkeen, miten se puretaan turvallisesti ja kuinka suuri virta kulkisi kehon läpi
-**Periaate:** Kondensaattori varastoi varauksen ja energian levyilleen eikä sen jännite katoa, kun lataava paristo irrotetaan. Vaara riippuu varastoituneesta energiasta ja jännitteestä, ei paristosta. Virran suuruus kehon läpi saadaan jännitteestä ja resistanssista.
+**Periaate:** Kondensaattorin levyillä on varaukset $+Q$ ja $-Q$, ja energia on varastoitunut levyjen väliseen sähkökenttään. Jännite ei katoa, kun lataava paristo irrotetaan. Vaara riippuu varastoituneesta energiasta ja jännitteestä, ei paristosta. Virran suuruus kehon läpi saadaan jännitteestä ja resistanssista.
 **Mallivastaus:** *Vaara.* Kondensaattori on pariston irrottamisen jälkeen edelleen $300\,\text{V}$:ssa, ja siinä on noin $15\,\text{J}$. Laite ei saa jännitettä pienestä paristosta, vaan kondensaattorista, joka voi purkautua korjaajan kehon kautta.
 
 *Virta.* Jos kehon resistanssi on $1{,}0\,\text{k}\Omega$, virta olisi aluksi $I = \dfrac{U}{R} = \dfrac{300\,\text{V}}{1{,}0 \cdot 10^{3}\,\Omega} = 0{,}30\,\text{A}$. Se on moninkertainen verrattuna muutamaan kymmeneen milliampeeriin, jotka voivat jo olla vaarallisia. Virta pienenee kondensaattorin purkautuessa, mutta alun virta riittää vaaralliseen sähköiskuun.

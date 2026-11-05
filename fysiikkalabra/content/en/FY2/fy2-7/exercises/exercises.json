@@ -3,6 +3,7 @@
     {
       "id": "fy2-7-L1-01",
       "level": 1,
+      "core": true,
       "text": "A power plant feeds $500\\,\\text{MWh}$ of electrical energy into the electricity grid in a day. In the grid, $4.0\\,\\%$ of the sent energy is lost. How much energy arrives? Give your answer in megawatt-hours.",
       "answer": 480,
       "unit": "MWh",
@@ -44,6 +45,7 @@
     {
       "id": "fy2-7-L1-06",
       "level": 1,
+      "core": true,
       "text": "Why is electrical energy transmitted at a high voltage in the national grid?",
       "kind": [
         "concept"
@@ -92,6 +94,7 @@
     {
       "id": "fy2-7-L2-01",
       "level": 2,
+      "core": true,
       "text": "In a poorly insulated district heating network, $20\\,\\%$ of the energy sent into the network is lost, and $600\\,\\text{MWh}$ reaches the customers in a week. How much energy is lost in the network in a week? Give your answer in megawatt-hours.",
       "answer": 150,
       "unit": "MWh",
@@ -203,6 +206,7 @@
     {
       "id": "fy2-7-L2-07",
       "level": 2,
+      "core": true,
       "text": "A student writes: “Electricity travels along the wire at the speed of light, so no losses occur in the transmission of electricity.” Which of the following corrects the claim?",
       "kind": [
         "error",
