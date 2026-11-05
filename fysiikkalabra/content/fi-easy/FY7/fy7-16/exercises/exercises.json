@@ -39,6 +39,52 @@
       "answer": 72.0,
       "unit": "%",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-16-L1-06",
+      "level": 1,
+      "text": "Induktioliedessä kattilan pohja lämpenee, mutta kelan päällä oleva lasilevy ei lämpene itsestään, vaikka kelan magneettikenttä kulkee sen läpi. Mikä seuraavista selittää tämän parhaiten?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Lasi ei johda sähköä, joten siihen ei synny pyörrevirtoja, jotka lämmittäisivät sitä.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Lasi estää magneettikentän kulun, joten kela ei saa aikaan muuttuvaa vuota lasilevyn kohdalle.",
+          "feedback": "Lasi ei estä magneettikentän kulkua. Kenttä menee lasin läpi ja saa aikaan pyörrevirtoja kattilan pohjassa. Syy on se, että lasissa ei voi kulkea sähkövirtaa."
+        },
+        {
+          "text": "Lasin sulamislämpötila on niin korkea, että pyörrevirrat eivät saa sen lämpötilaa nousemaan.",
+          "feedback": "Sulamislämpötila ei ratkaise sitä, syntyykö lasiin pyörrevirtoja. Jos lasissa kulkisi virta, se lämpenisi. Ratkaisevaa on, että lasi ei johda sähköä."
+        },
+        {
+          "text": "Lasi ei johda sähköä, joten siihen ei synny pyörrevirtoja, jotka lämmittäisivät sitä.",
+          "correct": true,
+          "feedback": "Oikein. Muuttuva vuo saa lasiin jännitteen, mutta sähköä johtamattomassa aineessa jännite ei saa aikaan virtaa. Ilman pyörrevirtoja sähköenergia ei muutu sisäenergiaksi, joten kattilan pohja lämpenee eikä lasi."
+        },
+        {
+          "text": "Lasissa syntyvät pyörrevirrat kumoavat Lenzin lain mukaan toisensa, joten lämmitystä ei tapahdu.",
+          "feedback": "Lenzin laki ei kumoa pyörrevirtoja. Se kertoo niiden suunnan: ne vastustavat vuon muutosta. Lasissa ei synny virtoja lainkaan, koska se ei johda sähköä."
+        }
+      ]
+    },
+    {
+      "id": "fy7-16-L1-07",
+      "level": 1,
+      "text": "Kuidun alkuun syötetään teho $4{,}0\\,\\text{mW}$. Kuidun vaimennuskerroin on $0{,}20\\,\\text{dB/km}$ ja pituus $45\\,\\text{km}$. Kuinka suuri teho on kuidun lopussa? Vastaa milliwatteina.",
+      "answer": 0.5036,
+      "unit": "mW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-16-L1-08",
+      "level": 1,
+      "text": "Kuidun vaimennuskerroin on $0{,}20\\,\\text{dB/km}$. Kuinka pitkän matkan kuluessa valon teho kuidussa puolittuu?",
+      "answer": 15.0515,
+      "unit": "km",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,6 +119,105 @@
       "answer": 2.4638,
       "unit": "kWh",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-16-L2-05",
+      "level": 2,
+      "text": "Langattoman laturin hyötysuhde mitattiin eri etäisyyksillä laturin ja puhelimen vastaanotinkäämin välillä. Mittaukset ovat esimerkkiaineistoa.\n\nPiirrä kuvaaja, jossa hyötysuhde on pystyakselilla ja etäisyys vaaka-akselilla. Yhdistä pisteet sujuvalla käyrällä. Määritä etäisyys, jolla hyötysuhde laskee arvoon $50\\,\\%$. Voit lukea arvon kuvaajasta. Voit myös laskea arvon kahden mittauspisteen väliltä suoran avulla (lineaarinen interpolointi).\n\nKirjoita vastauslaatikkoon etäisyys millimetreinä.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 12.857,
+      "unit": "mm",
+      "tolerance": 0.07,
+      "data": {
+        "caption": "Langattoman laturin hyötysuhde etäisyyden funktiona (esimerkkiaineisto)",
+        "columns": [
+          "$d\\,(\\text{mm})$",
+          "$\\eta\\,(\\%)$"
+        ],
+        "rows": [
+          [
+            "3",
+            "81"
+          ],
+          [
+            "6",
+            "73"
+          ],
+          [
+            "10",
+            "58"
+          ],
+          [
+            "15",
+            "44"
+          ],
+          [
+            "20",
+            "31"
+          ],
+          [
+            "25",
+            "22"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-16-L2-06",
+      "level": 2,
+      "text": "Kuidun vaimennusta tutkittiin mittaamalla, kuinka suuri teho tuli läpi eri pituisista kuidun osista. Kuidun alkuun syötettiin joka mittauksessa teho $P_0 = 800\\,\\mu\\text{W}$. Mittaukset ovat esimerkkiaineistoa.\n\nLaske jokaiselle pituudelle vaimennus $A = 10\\,\\text{dB} \\cdot \\lg \\dfrac{P_0}{P}$. Piirrä kuvaaja, jossa $A$ on pystyakselilla ja pituus $L$ vaaka-akselilla. Sovita pisteisiin suora, joka kulkee origon kautta. Suora kulkee origon kautta, koska nollan pituisella kuidulla ei ole vaimennusta. Suoran kulmakerroin on kuidun vaimennuskerroin.\n\nKirjoita vastauslaatikkoon vaimennuskerroin yksikössä $\\text{dB/km}$.",
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "answer": 0.2003,
+      "unit": "dB/km",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Kuidun läpi tullut teho (esimerkkiaineisto)",
+        "columns": [
+          "$L\\,(\\text{km})$",
+          "$P\\,(\\mu\\text{W})$"
+        ],
+        "rows": [
+          [
+            "10",
+            "488"
+          ],
+          [
+            "20",
+            "327"
+          ],
+          [
+            "30",
+            "196"
+          ],
+          [
+            "40",
+            "129"
+          ],
+          [
+            "50",
+            "79.1"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-16-L2-07",
+      "level": 2,
+      "text": "Opiskelija ratkaisee tehtävän: ”Kuidun vaimennus on $20\\,\\text{dB}$. Desibelit ovat kuin prosentteja, joten teho pienenee $20\\,\\%$ ja perille saapuu $80\\,\\%$ lähetetystä tehosta.”\n\na) Selitä, mikä opiskelijan päättelyssä on virheellistä.\n\nb) Kuinka monta prosenttia lähetetystä tehosta saapuu perille, kun vaimennus on $20\\,\\text{dB}$?\n\nKirjoita vastauslaatikkoon b-kohdan tulos.",
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "answer": 1.0,
+      "unit": "%",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -99,6 +244,82 @@
       "answer": 0.441,
       "unit": "ms",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-16-L3-04",
+      "level": 3,
+      "text": "Langattoman laturin vastaanotinkäämissä on $N = 15$ kierrosta, ja laturin taajuus on $f = 130\\,\\text{kHz}$. Eri etäisyyksillä $d$ laturista mitattiin käämiin indusoituvan jännitteen huippuarvo $e_0$. Mittaukset ovat esimerkkiaineistoa.\n\nPuhelin alkaa ladata, kun jännitteen huippuarvo on vähintään $1{,}0\\,\\text{V}$. Valmistaja harkitsee, että laturin taajuus laskettaisiin arvoon $100\\,\\text{kHz}$. Vuo pysyisi silloin jokaisella etäisyydellä samana.\n\na) Laske yhden kierroksen läpi kulkevan vuon huippuarvo $\\Phi_0$ mikroweebereinä jokaiselle taulukon etäisyydelle.\n\nb) Laske vuon huippuarvo, jolla jännite on juuri $1{,}0\\,\\text{V}$ taajuudella $100\\,\\text{kHz}$. Määritä lineaarisella interpoloinnilla (suoran avulla kahden mittauspisteen väliltä) suurin etäisyys, jolla lataus vielä toimii uudella taajuudella.\n\nc) Perustele, miksi toimintaetäisyys lyhenee, vaikka laturin kenttä ei muutu. Ehdota yksi muutos vastaanotinkäämiin, jolla etäisyys saataisiin takaisin.\n\nKirjoita vastauslaatikkoon b-kohdan etäisyys millimetreinä.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 13.275,
+      "unit": "mm",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Käämin jännite etäisyyden funktiona (esimerkkiaineisto)",
+        "columns": [
+          "$d\\,(\\text{mm})$",
+          "$e_0\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "4",
+            "4.62"
+          ],
+          [
+            "8",
+            "2.71"
+          ],
+          [
+            "12",
+            "1.52"
+          ],
+          [
+            "16",
+            "0.83"
+          ],
+          [
+            "20",
+            "0.47"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-16-L3-05",
+      "level": 3,
+      "text": "Induktioliesi toimii taajuudella $f = 30\\,\\text{kHz}$. Kela synnyttää kattilan pohjan kohdalle homogeenisen magneettikentän, joka on kohtisuorassa pohjaa vastaan ja vaihtelee sinimuotoisesti. Magneettivuon tiheyden huippuarvo on $B_0 = 3{,}0\\,\\text{mT}$.\n\nOletetaan, että pohjan pyörrevirrat voidaan kuvata yhtenä silmukkana, jonka säde on $r = 9{,}0\\,\\text{cm}$. Pyörrevirran oma magneettikenttä jätetään huomiotta. Kolmen kattilan pohjan silmukan resistanssit ovat taulukossa.\n\na) Laske kunkin kattilan pohjan lämpenemisen keskimääräinen teho.\n\nb) Millä taajuudella kela saisi kattilan C pohjan lämpenemään samalla teholla kuin kattilan A pohja lämpenee taajuudella $30\\,\\text{kHz}$? Vuon tiheyden huippuarvo pysyy samana. Perustele, miten teho riippuu taajuudesta.\n\nc) Mainitse yksi syy, miksi todellisen kattilan pohja lämpenee eri teholla kuin malli antaa.\n\nKirjoita vastauslaatikkoon b-kohdan taajuus kilohertseinä.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 42.4264,
+      "unit": "kHz",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Kattilan pohjan silmukan resistanssi (esimerkkiaineisto)",
+        "columns": [
+          "Kattila",
+          "$R\\,(\\Omega)$"
+        ],
+        "rows": [
+          [
+            "A",
+            "0.040"
+          ],
+          [
+            "B",
+            "0.050"
+          ],
+          [
+            "C",
+            "0.080"
+          ]
+        ]
+      }
     }
   ]
 }

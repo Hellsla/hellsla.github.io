@@ -1,16 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: aad4f155a9a516b9
+CONTENT-HASH: ca2d15078f51d8b6
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
+## Fixed
+- L3-04 text: "Your induction hob operates..." changed to "An induction hob operates..." (fi has no 'your'; generic task voice).
+
 ## Polish
-- [Minor] solutions L3-02, Formula line — four relations in one running sentence ("$\Phi_0 = ..., e_0 = ..., U = ... \text{ and } P = ...$") is dense; splitting the chain onto separate lines would read better.
-- [Minor] L3-01 answer unit "amplifiers" is plain text in the answer field; acceptable as a word, not a quantity.
+(none)
 
 ## Checked
-- open-exercises level 1 (part 1), level 2 (part 2), level 3 (part 3) at 1280 px, with solutions open; exit ticket (open-exit-1280); exercise text read in full.
-- Solution cards, substitution chains and answer boxes sit inside their cards with no clipping; all quantities are LaTeX; \cdot and colon division used correctly.
+- Captures fy7-16-open-exercises-1280-*, -L2-1280-*, -L3-1280-* of the new tasks opened (L1-08, L2-05, L3-05 in detail): headings, formula blocks, data tables and answer boxes render as in fi; no overflow.
+- Decimal separator and units consistent in text, tables and formulas (en: point; fi-easy: comma in text and LaTeX as in fi).
+- Table captions and column headers translated; symbols and units unchanged.
+- The edits after the captures change words only (no formula or layout), so the captures still apply.
 
 ## Scores
-illustrations n/a (5) · typography 5 · Finnish (English prose) 4 · accessibility 4
+illustrations 4 · typography 5 · English 5 · accessibility 5

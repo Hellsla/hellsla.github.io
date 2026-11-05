@@ -1,15 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 968de40c134cc998
+CONTENT-HASH: faa096de17dcf301
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
+## Fixed
+- solutions.md fy7-7-L1-04 Answer — a stray "; the reading ..." clause after the boxed value; now two sentences ("25 Hz. The reading ..."), as fi-easy already had.
+
 ## Polish
-- [Minor] solutions.md L1-04 — the answer line after the boxed value starts with "; the reading $1500$ revolutions per minute is exact…" (leading semicolon visible in the solution; same in fi) — start with a capital letter and a full sentence.
-- [Minor] solutions.md L2-03, Reasonableness — long sentence ("If the rms value had been substituted … the frequency would have come out too small, 6.4 Hz, and the rms value of the voltage would have been below 12 V") ends in a clause that adds little — optional trim.
+- [Minor] solutions.md L3-04 Substitution — "c = −0.107 V. b)" runs the next part label into the equation line (same in fi); put a) b) c) on separate lines in a later pass.
 
 ## Checked
-- contact-5/6 (open-exercises L1, L2, L3 at 1280, every solution open), including the L2-02 graph with axes e (V), t (ms), grid and units; units in the answer fields (V, A, Hz, kW, T, %, W) are all English/SI; solution chains render as aligned rows with fractions; number format is decimal point throughout.
+- fy7-7-open-exercises-L2-1280-8 and L3-1280-5 (en): data tables, units, answer field with unit, boxed result and solution blocks render without clipping at phone width.
+- Fractions and units in the L2-06 and L3-04 solutions are aligned and readable; decimal separator is correct for the language.
+- The L1 and L3 captures open the new tasks with every solution section visible.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 (English) · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 (English) · accessibility 4

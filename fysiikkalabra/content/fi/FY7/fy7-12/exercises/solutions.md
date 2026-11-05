@@ -117,3 +117,79 @@
 **Sijoitus:** $\alpha_2 = \sin^{-1}\dfrac{1{,}50 \cdot \sin 60^\circ}{1{,}33} = \sin^{-1}\dfrac{1{,}299}{1{,}33} = \sin^{-1} 0{,}9767 = 77{,}61^\circ$
 **Vastaus:** $77{,}6^\circ$, kolme merkitsevää numeroa kuten taitekertoimet.
 **Järkevyys:** Valo tulee suuremman taitekertoimen aineesta, joten se taittuu normaalista poispäin: taitekulma on suurempi kuin tulokulma $60^\circ$, kuten tuloksessa. Tulokulma on lähellä rajakulmaa $62{,}46^\circ$, joten taitekulma on lähellä $90^\circ$:ta. Tämä selittää, miksi paljaan kuidun pintaan tarttuva vesi päästää valoa ulos.
+
+## fy7-12-L1-06
+**Kysytty:** missä tilanteessa rajapintaan osuva valonsäde kokonaisheijastuu.
+**Periaate:** Kokonaisheijastuminen vaatii kaksi asiaa. Valon täytyy tulla suuremman taitekertoimen aineesta pienempään, koska vain silloin rajakulma on olemassa: $\sin\alpha_\text{r} = n_2 : n_1$ on pienempi kuin $1$ vain, kun $n_1 > n_2$. Lisäksi tulokulman täytyy olla suurempi kuin rajakulma, koska silloin taittumislaki ei anna taitekulmaa ja taittunutta sädettä ei ole.
+**Mallivastaus:** Säde kokonaisheijastuu, kun valo tulee suuremman taitekertoimen aineesta pienempään ja tulokulma ylittää rajakulman. Jos valo tulee pienemmän taitekertoimen aineesta suurempaan, se taittuu normaalia kohti kaikilla tulokulmilla, eikä kokonaisheijastumista tapahdu. Pieni tulokulma ei riitä, koska silloin valo menee pääosin rajapinnan läpi. Ilmasta aineeseen tuleva valo ei myöskään kokonaisheijastu, vaikka tulokulma olisi suuri, eikä ilmiö tarvitse peilipintaa.
+
+## fy7-12-L1-07
+**Annettu:** akryylin taitekerroin $n_1 = 1{,}49$, veden taitekerroin $n_2 = 1{,}33$
+**Kysytty:** akryylin ja veden rajapinnan rajakulma $\alpha_\text{r}$ asteina
+**Periaate:** Valo tulee akryylistä veteen eli suuremman taitekertoimen aineesta pienemmän, joten rajakulma on olemassa. Rajakulmassa taitekulma on $90^\circ$, joten taittumislaista $n_1 \sin\alpha_\text{r} = n_2 \sin 90^\circ$ saadaan rajakulman sini.
+**Kaava:** $\sin\alpha_\text{r} = \dfrac{n_2}{n_1}$, josta $\alpha_\text{r} = \sin^{-1}\dfrac{n_2}{n_1}$
+**Muunnokset:** Ei tarvita: taitekertoimet ovat yksiköttömiä lukuja, ja kulma saadaan asteina.
+**Sijoitus:** $\alpha_\text{r} = \sin^{-1}\dfrac{1{,}33}{1{,}49} = \sin^{-1} 0{,}8926 = 63{,}20^\circ$
+**Vastaus:** $63{,}2^\circ$, kolme merkitsevää numeroa kuten taitekertoimet.
+**Järkevyys:** Akryylin ja veden taitekertoimet ovat melko lähellä toisiaan, joten rajakulman pitää olla suuri. Lasin ja veden rajakulma on $61{,}0^\circ$ ($1{,}52$ ja $1{,}33$), ja akryylin ja veden taitekertoimien suhde $1{,}49 : 1{,}33$ on vielä lähempänä ykköstä, joten rajakulman pitää olla vielä suurempi, kuten tuloksessa. Tarkistus: $1{,}49 \cdot \sin 63{,}20^\circ = 1{,}33$.
+
+## fy7-12-L1-08
+**Annettu:** lasin taitekerroin $n = 1{,}45$, aika $t = 0{,}500\,\text{ms}$, valon nopeus tyhjiössä $c = 3{,}00 \cdot 10^8\,\text{m/s}$
+**Kysytty:** pulssin kulkema matka $s$ kilometreinä
+**Periaate:** Lasissa valo etenee tasaisella nopeudella $v = c : n$. Pulssi kulkee kuidun akselin suuntaisesti, joten sen matka on nopeus kerrottuna ajalla.
+**Kaava:** $v = \dfrac{c}{n}$ ja $s = v t$, josta $s = \dfrac{c t}{n}$
+**Muunnokset:** $t = 0{,}500\,\text{ms} = 0{,}500 \cdot 10^{-3}\,\text{s}$. Lopuksi $1\,\text{km} = 1000\,\text{m}$.
+**Sijoitus:** $s = \dfrac{3{,}00 \cdot 10^8\,\text{m/s} \cdot 0{,}500 \cdot 10^{-3}\,\text{s}}{1{,}45} = 1{,}034 \cdot 10^5\,\text{m} = 103{,}4\,\text{km}$
+**Vastaus:** $103\,\text{km}$, kolme merkitsevää numeroa kuten taitekerroin $1{,}45$, aika $0{,}500\,\text{ms}$ ja valon nopeus.
+**Järkevyys:** Tyhjiössä valo kulkisi $0{,}500\,\text{ms}$:ssa $150\,\text{km}$. Lasissa valo on hitaampaa ja kulkee tässä ajassa vain osan siitä: $150\,\text{km} : 1{,}45 = 103\,\text{km}$.
+
+## fy7-12-L2-05
+**Annettu:** taulukon rajakulmat $41{,}8^\circ$, $42{,}6^\circ$, $41{,}5^\circ$, $42{,}3^\circ$ ja $42{,}0^\circ$; ilman taitekerroin $n_2 = 1{,}00$; taulukkoarvot: akryyli $1{,}49$ ja polystyreeni $1{,}59$
+**Kysytty:** muovin taitekerroin $n$ rajakulman keskiarvosta, sen hajonta ja muovin tunnistus
+**Periaate:** Valo tulee muovista ilmaan eli suuremman taitekertoimen aineesta pienemmän, joten rajakulmassa $n \sin\alpha_\text{r} = n_2 \sin 90^\circ$. Toistetun mittauksen tulos on keskiarvo, ja puolet vaihteluvälistä on yksinkertainen arvio mittaussarjan hajonnasta. Hajonta kertoo, millä välillä taitekertoimen arvo on todennäköisesti.
+**Kaava:** $\sin\alpha_\text{r} = \dfrac{n_2}{n}$, josta $n = \dfrac{n_2}{\sin\alpha_\text{r}}$
+**Muunnokset:** Ei tarvita: kulmat ovat asteina, ja taitekerroin on yksikötön.
+**Sijoitus:** Mittausten summa on $41{,}8^\circ + 42{,}6^\circ + 41{,}5^\circ + 42{,}3^\circ + 42{,}0^\circ = 210{,}2^\circ$, joten keskiarvo on $\alpha_\text{r} = 210{,}2^\circ : 5 = 42{,}04^\circ$, joten $n = \dfrac{1{,}00}{\sin 42{,}04^\circ} = \dfrac{1{,}00}{0{,}6696} = 1{,}493$. Hajonta on $\tfrac{1}{2} \cdot (42{,}6^\circ - 41{,}5^\circ) = 0{,}55^\circ$. Ääriarvoja vastaavat taitekertoimet ovat $n = 1{,}00 : \sin 42{,}6^\circ = 1{,}477$ ja $n = 1{,}00 : \sin 41{,}5^\circ = 1{,}509$.
+**Vastaus:** $n \approx 1{,}49$, kolme merkitsevää numeroa kuten rajakulmat. Taitekerroin on todennäköisesti välillä $1{,}48\ldots 1{,}51$. Akryylin arvo $1{,}49$ kuuluu tälle välille, mutta polystyreenin $1{,}59$ ei, joten pala on todennäköisesti akryylia.
+**Järkevyys:** Tarkistus: $1{,}493 \cdot \sin 42{,}04^\circ = 1{,}00$. Tulos on veden ($1{,}33$) ja timantin ($2{,}42$) taitekertoimien välissä, kuten muovilta voi odottaa. Polystyreenin arvoa $1{,}59$ vastaisi rajakulma $\sin^{-1}(1{,}00 : 1{,}59) = 39{,}0^\circ$, joka on selvästi pienempi kuin kaikki mitatut kulmat.
+
+## fy7-12-L2-06
+**Annettu:** taulukon intensiteetit $I$ ajan $t$ funktiona, ytimen taitekerroin $n = 1{,}48$, kuidun pituus $s = 10{,}0\,\text{km}$, valon nopeus tyhjiössä $c = 3{,}00 \cdot 10^8\,\text{m/s}$
+**Kysytty:** pulssin leveys $\Delta t$ nanosekunteina
+**Periaate:** Perille tuleva pulssi on leveämpi kuin lähetetty, koska kuidussa etenevät eri reittejä: akselin suuntainen säde kulkee lyhimmän reitin ja siksakkia etenevät säteet pidemmän, joten ne saapuvat myöhemmin. Leveys luetaan taulukosta annetun määritelmän mukaan ja akselin suuntaisen valon kulkuaika lasketaan kaavalla $t = n s : c$.
+**Taulukon lukeminen:** Intensiteetti on vähintään $50\,\%$ ensimmäisen kerran rivillä $t = 49{,}4\,\mu\text{s}$ ($52\,\%$) ja viimeisen kerran rivillä $t = 50{,}2\,\mu\text{s}$ ($63\,\%$). Viereiset rivit ($0\,\%$ ja $21\,\%$) jäävät rajan alle. Leveys on rivien aikojen erotus.
+**Kaava:** $\Delta t = t_\text{loppu} - t_\text{alku}$ ja akselin suuntaiselle valolle $t_0 = \dfrac{n s}{c}$
+**Muunnokset:** $s = 10{,}0\,\text{km} = 1{,}00 \cdot 10^4\,\text{m}$. Lopuksi $1\,\mu\text{s} = 1000\,\text{ns}$.
+**Sijoitus:** a) $\Delta t = 50{,}2\,\mu\text{s} - 49{,}4\,\mu\text{s} = 0{,}8\,\mu\text{s} = 800\,\text{ns}$. b) $t_0 = \dfrac{1{,}48 \cdot 1{,}00 \cdot 10^4\,\text{m}}{3{,}00 \cdot 10^8\,\text{m/s}} = 4{,}933 \cdot 10^{-5}\,\text{s} = 49{,}33\,\mu\text{s}$
+**Vastaus:** $800\,\text{ns}$ eli $0{,}8\,\mu\text{s}$; tarkkuutta rajoittaa taulukon aikaväli $0{,}2\,\mu\text{s}$. Akselin suuntaisen valon kulkuaika $49{,}33\,\mu\text{s}$ vastaa taulukkoa: pulssi alkaa saapua hetkien $49{,}2\,\mu\text{s}$ ($0\,\%$) ja $49{,}4\,\mu\text{s}$ ($52\,\%$) välillä. Aiemmin valoa ei voi tulla, koska akselin suuntainen reitti on lyhin. Pulssi on lähetettyä leveämpi, koska siksakkia etenevän valon matka on pidempi ja se saapuu myöhemmin.
+**Järkevyys:** Pulssin leveys on $0{,}8\,\mu\text{s} : 49{,}33\,\mu\text{s} = 1{,}6\,\%$ kulkuajasta. Se on uskottava, koska ytimen ja kuoren taitekertoimien ero on pieni ja siksakkia etenevän valon matka on vain muutaman prosentin pidempi kuin akselin suuntaisen.
+
+## fy7-12-L2-07
+**Annettu:** ilman taitekerroin $n_1 = 1{,}00$, lasin taitekerroin $n_2 = 1{,}50$, tulokulma $\alpha_1 = 70^\circ$
+**Kysytty:** a) virhe opiskelijan päättelyssä, b) taitekulma $\alpha_2$ lasissa asteina
+**Periaate:** a) Rajakulma on olemassa vain, kun valo tulee suuremman taitekertoimen aineesta pienempään. Tässä valo tulee ilmasta lasiin eli pienemmästä suurempaan, joten rajakulmaa ei ole eikä kokonaisheijastumista tapahdu. Opiskelija käänsi taitekertoimien suhteen väärin päin: kun kaava $\sin\alpha_\text{r} = n_2 : n_1$ kirjoitetaan oikein tähän tilanteeseen, sen arvo olisi $1{,}50 : 1{,}00 = 1{,}50$, ja sini ei voi olla yli $1$. b) Valo taittuu normaalia kohti, ja taitekulma saadaan taittumislaista.
+**Kaava:** $n_1 \sin\alpha_1 = n_2 \sin\alpha_2$, josta $\alpha_2 = \sin^{-1}\dfrac{n_1 \sin\alpha_1}{n_2}$
+**Muunnokset:** Ei tarvita: taitekertoimet ovat yksiköttömiä, ja kulmat ovat asteina.
+**Sijoitus:** $\alpha_2 = \sin^{-1}\dfrac{1{,}00 \cdot \sin 70^\circ}{1{,}50} = \sin^{-1}\dfrac{0{,}9397}{1{,}50} = \sin^{-1} 0{,}6265 = 38{,}79^\circ$
+**Vastaus:** $38{,}8^\circ$, kolme merkitsevää numeroa kuten taitekertoimet. Valo siis taittuu lasiin eikä kokonaisheijastu, vaikka tulokulma on suuri.
+**Järkevyys:** Valo tulee pienemmän taitekertoimen aineesta, joten sen pitää taittua normaalia kohti: taitekulma $38{,}8^\circ$ on pienempi kuin tulokulma $70^\circ$. Tarkistus: $1{,}50 \cdot \sin 38{,}79^\circ = 0{,}9397 = 1{,}00 \cdot \sin 70^\circ$.
+
+## fy7-12-L3-04
+**Annettu:** ilman taitekerroin $n_0 = 1{,}00$; kuidun A taitekertoimet $n_1 = 1{,}48$ ja $n_2 = 1{,}46$, kuidun B $n_1 = 1{,}50$ ja $n_2 = 1{,}47$, kuidun C $n_1 = 1{,}46$ ja $n_2 = 1{,}45$
+**Kysytty:** vastaanottokulma $\theta_\text{max}$ kuiduille B, A ja C asteina sekä vertailu suhteella $\dfrac{n_1}{n_2} - 1$
+**Periaate:** Ytimessä etenevä säde pysyy kuidussa, kun se kokonaisheijastuu ytimen ja kuoren rajapinnassa eli osuu siihen vähintään rajakulmassa $\alpha_\text{r}$, jolle $\sin\alpha_\text{r} = n_2 : n_1$. Säde kulkee rajapintaa pitkin kulmassa $\varphi = 90^\circ - \alpha_\text{r}$ akseliin nähden, joten suurin sallittu kulma akseliin nähden on $\varphi_\text{max} = 90^\circ - \alpha_\text{r}$. Päätypinnalla säde taittuu ilmasta ytimeen, ja sitä suurempi tulokulma $\theta$ voi olla, mitä suurempi $\varphi$ saa olla.
+**Kaava:** $\sin\alpha_\text{r} = \dfrac{n_2}{n_1}$, $\varphi_\text{max} = 90^\circ - \alpha_\text{r}$ ja $n_0 \sin\theta_\text{max} = n_1 \sin\varphi_\text{max}$, josta $\theta_\text{max} = \sin^{-1}\left(n_1 \cos\alpha_\text{r}\right) = \sin^{-1}\sqrt{n_1^2 - n_2^2}$
+**Muunnokset:** Ei tarvita: taitekertoimet ovat yksiköttömiä, ja kulmat ovat asteina.
+**Sijoitus:** Kuidulle B $\alpha_\text{r} = \sin^{-1}\dfrac{1{,}47}{1{,}50} = 78{,}52^\circ$, $\varphi_\text{max} = 90^\circ - 78{,}52^\circ = 11{,}48^\circ$ ja $\sin\theta_\text{max} = 1{,}50 \cdot \sin 11{,}48^\circ = 0{,}2985$, joten $\theta_\text{max} = 17{,}37^\circ$. Kuiduille A ja C lyhyemmällä kaavalla: $\theta_\text{max} = \sin^{-1}\sqrt{1{,}48^2 - 1{,}46^2} = \sin^{-1} 0{,}2425 = 14{,}03^\circ$ ja $\theta_\text{max} = \sin^{-1}\sqrt{1{,}46^2 - 1{,}45^2} = \sin^{-1} 0{,}1706 = 9{,}82^\circ$. Viiveluvut ovat A: $\dfrac{1{,}48}{1{,}46} - 1 = 0{,}0137$, B: $\dfrac{1{,}50}{1{,}47} - 1 = 0{,}0204$ ja C: $\dfrac{1{,}46}{1{,}45} - 1 = 0{,}0069$.
+**Vastaus:** kuidun B vastaanottokulma on $17{,}4^\circ$, kolme merkitsevää numeroa kuten taitekertoimet. Taitekertoimien erotus $n_1 - n_2 = 0{,}03$ on yhden merkitsevän numeron luku, joten tulos on herkkä taitekertoimien pyöristykselle. Kuiduille A ja C vastaanottokulmat ovat $14{,}0^\circ$ ja $9{,}8^\circ$. Kuidulla B taitekertoimien ero on suurin, ja siksi sekä vastaanottokulma että viiveluku ($2{,}0\,\%$) ovat suurimmat: kuitu ottaa vastaan eniten valoa, mutta pulssi leviää eniten. Kuidulla C molemmat ovat pienimmät.
+**Järkevyys:** Tarkistus kuidulle B: kun ytimessä säde on kulmassa $11{,}48^\circ$ akseliin nähden, se osuu rajapintaan kulmassa $78{,}52^\circ$ eli juuri rajakulmassa, ja $1{,}50 \cdot \sin 11{,}48^\circ = 0{,}2985 = 1{,}00 \cdot \sin 17{,}37^\circ$. Vastaanottokulmat ovat pieniä, koska taitekertoimet ovat lähes yhtä suuret. Kuidulla B viive on $2{,}0\,\%$ ja kuidulla C vain $0{,}69\,\%$, eli noin kolmasosa.
+
+## fy7-12-L3-05
+**Annettu:** ytimen halkaisija $2a = 1{,}0\,\text{mm}$ eli ytimen säde $a = 0{,}50\,\text{mm}$, ytimen taitekerroin $n_1 = 1{,}49$, kuoren taitekerroin $n_2 = 1{,}40$; taulukon teho taivutussäteen $R$ funktiona ($5{,}0\,\text{mm}$: $31\,\%$, $10{,}0\,\text{mm}$: $62\,\%$, $15{,}0\,\text{mm}$: $88\,\%$, $20{,}0\,\text{mm}$: $96\,\%$, $30{,}0\,\text{mm}$: $98\,\%$, $50{,}0\,\text{mm}$: $99\,\%$)
+**Kysytty:** pienin taivutussäde $R_\text{min}$ millimetreinä, jolla vaarallisinkin säde vielä kokonaisheijastuu
+**Periaate:** Mutkaan tuleva akselin suuntainen säde jatkaa suoraan ja osuu ulkoreunan rajapintaan. Mutkan keskipisteestä $\text{O}$ mitattuna ulkoreunan säde on $R + a$ ja sisäreunan vierestä kulkevan säteen etäisyys keskipisteestä on $R - a$. Säde on kohtisuorassa mutkan alkukohdan sädettä vastaan, joten keskipisteestä säteen reitille piirretty kohtisuora on pituudeltaan $R - a$. Suorakulmaisessa kolmiossa, jonka hypotenuusa on ulkoreunan säde $R + a$, tulokulman $\alpha$ sini on $\sin\alpha = (R - a) : (R + a)$. Tämä on pienin kaikista tulokulmista, koska muiden säteiden reitit ovat kauempana keskipisteestä, joten sisäreunan vierestä kulkeva säde vuotaa ulos ensimmäisenä. Kokonaisheijastukseen vaaditaan $\alpha \ge \alpha_\text{r}$, jolle $\sin\alpha_\text{r} = n_2 : n_1$.
+**Kaava:** raja-arvolla $\dfrac{R - a}{R + a} = \dfrac{n_2}{n_1}$, josta $n_1 (R - a) = n_2 (R + a)$ ja $R_\text{min} = a\,\dfrac{n_1 + n_2}{n_1 - n_2}$
+**Muunnokset:** Ei tarvita: $R_\text{min}$ saadaan samassa yksikössä kuin $a$, millimetreinä.
+**Sijoitus:** $R_\text{min} = 0{,}50\,\text{mm} \cdot \dfrac{1{,}49 + 1{,}40}{1{,}49 - 1{,}40} = 0{,}50\,\text{mm} \cdot \dfrac{2{,}89}{0{,}09} = 0{,}50\,\text{mm} \cdot 32{,}11 = 16{,}06\,\text{mm}$
+**Vastaus:** $16\,\text{mm}$ ($16{,}1\,\text{mm}$). Tarkkuutta rajoittaa taitekertoimien erotus $n_1 - n_2 = 0{,}09$. Tätä jyrkemmässä mutkassa osa valosta vuotaa kuoreen.
+**Järkevyys:** Tarkistus: kun $R = 16{,}06\,\text{mm}$, suhde $(R - a) : (R + a)$ on $15{,}56 : 16{,}56 = 0{,}9396$. Samoin $1{,}40 : 1{,}49 = 0{,}9396$, joten tulokulma on juuri rajakulma $\sin^{-1} 0{,}9396 = 70{,}0^\circ$. Taulukko sopii tulokseen: säteillä $20{,}0\,\text{mm}$ ja suuremmilla teho on vähintään $96\,\%$, mutta säteillä $15{,}0\,\text{mm}$ ja $5{,}0\,\text{mm}$ se on vain $88\,\%$ ja $31\,\%$. Teho ei putoa nollaan täsmälleen kohdassa $R_\text{min}$, koska sen alapuolella vuotaa ensin vain sisäreunan vierestä kulkeva ohut osa valosta ja vuotava osuus kasvaa vähitellen säteen pienentyessä. Vinosti kulkevat säteet vuotavat jo hieman suuremmilla säteillä.

@@ -39,6 +39,58 @@
       "answer": 1.2649,
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-14-L1-06",
+      "level": 1,
+      "text": "A soap film is in air, and light arrives at normal incidence on the film. At which surface does the reflected wave get inverted, that is, get a shift of half a wavelength, and why?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Only at the upper surface, because the light is reflected there from a material with a greater refractive index.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "At both surfaces, because there is exactly the same material, namely air, on both sides of the film.",
+          "feedback": "The material on both sides of the film is the same, but inversion depends on the refractive indices at the interface. Only a surface at which the refractive index increases inverts the wave, and the two surfaces are of different kinds."
+        },
+        {
+          "text": "Only at the lower surface, because the light is reflected there from a material with a smaller refractive index.",
+          "feedback": "The other way round: from the film into air (1.33 → 1.00) the light is reflected from a material with a smaller refractive index, and then the wave is not inverted. The reflection at the lower surface keeps its phase."
+        },
+        {
+          "text": "Only at the upper surface, because the light is reflected there from a material with a greater refractive index.",
+          "correct": true,
+          "feedback": "Correct: from air into the film (1.00 → 1.33) the light is reflected from a material with a greater refractive index, and then the wave is inverted. That is why the reflection at the upper surface gets a shift of half a wavelength."
+        },
+        {
+          "text": "At neither surface, because light arriving at normal incidence is reflected straight back.",
+          "feedback": "Normal incidence does not prevent inversion. A reflection always inverts the wave when the light arrives at an interface with a material of greater refractive index, regardless of the direction of incidence."
+        }
+      ]
+    },
+    {
+      "id": "fy7-14-L1-07",
+      "level": 1,
+      "text": "On the surface of water ($n = 1.33$) there is an oil film whose refractive index is $1.47$. Light arrives from air at normal incidence on the film. How thick is the thinnest oil film that reflects light of wavelength $570\\,\\text{nm}$ most strongly?",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 96.9388,
+      "unit": "nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-14-L1-08",
+      "level": 1,
+      "text": "A soap film ($n = 1.33$) is $300\\,\\text{nm}$ thick, and light arrives at normal incidence on the film. The wavelength of green laser light in air is $532\\,\\text{nm}$. How many wavelengths $\\lambda$ fit into the path difference between the waves reflected from the two surfaces of the film?",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 1.5,
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,6 +125,114 @@
       "answer": 59.7826,
       "unit": "nm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-14-L2-05",
+      "level": 2,
+      "text": "The table gives example data: the thickness $d$ of a thin soap film and the wavelength $\\lambda$ of visible light that is reflected most strongly, at five points. The film is in air, light arrives at normal incidence, and at all points the same order $k$ is reflected most strongly.\n\na) Draw a graph in which the wavelength $\\lambda$ is a function of the thickness $d$, and fit a line to the points. Deduce the order $k$ and justify why the other possible order does not work.\n\nb) Determine the refractive index $n$ of the film from the slope of the line.\n\nThe answer box takes the refractive index of part b).",
+      "kind": [
+        "data",
+        "graph",
+        "model"
+      ],
+      "answer": 1.315,
+      "unit": "",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Wavelength reflected most strongly as a function of the thickness of a soap film (example data)",
+        "columns": [
+          "$d\\,(\\text{nm})$",
+          "$\\lambda\\,(\\text{nm})$"
+        ],
+        "rows": [
+          [
+            "90",
+            "483"
+          ],
+          [
+            "100",
+            "534"
+          ],
+          [
+            "110",
+            "584"
+          ],
+          [
+            "120",
+            "640"
+          ],
+          [
+            "130",
+            "693"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-14-L2-06",
+      "level": 2,
+      "text": "A student studied a soap film ($n = 1.33$) whose thickness is $250\\,\\text{nm}$ at one point and which has air on both sides. White light arrives at normal incidence on the film.\n\nThe student's solution: “The path difference is $2nd = 2 \\cdot 1.33 \\cdot 250\\,\\text{nm} = 665\\,\\text{nm}$. It is one whole wavelength of red light, so the waves of red light are in phase and reinforce each other. The film looks red at this point.”\n\na) What is the error in the student's reasoning?\n\nb) Which wavelength of visible light ($400$–$700\\,\\text{nm}$) is really reflected most strongly at this point?\n\nThe answer box takes the wavelength of part b).",
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "answer": 443.3333,
+      "unit": "nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-14-L2-07",
+      "level": 2,
+      "text": "The table gives example data: the glass ($n = 1.52$) of a camera lens has an $\\text{MgF}_2$ coating ($n = 1.38$), and the table gives the share $R$ of the light arriving at normal incidence that is reflected from the lens at different wavelengths.\n\nThe coating is the thinnest possible ($k = 0$), and it is designed to weaken the reflection as much as possible at one wavelength.\n\na) Draw a graph in which the reflected share $R$ is a function of the wavelength $\\lambda$, and deduce from the table for which wavelength the coating is designed. How thick is the coating?\n\nb) Using the shape of the graph, explain why the coated lens looks purple.\n\nThe answer box takes the thickness of the coating in part a).",
+      "kind": [
+        "data",
+        "graph",
+        "concept"
+      ],
+      "answer": 97.8261,
+      "unit": "nm",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Reflection of a coated lens as a function of wavelength (example data)",
+        "columns": [
+          "$\\lambda\\,(\\text{nm})$",
+          "$R\\,(\\%)$"
+        ],
+        "rows": [
+          [
+            "420",
+            "1.84"
+          ],
+          [
+            "460",
+            "1.48"
+          ],
+          [
+            "500",
+            "1.31"
+          ],
+          [
+            "540",
+            "1.26"
+          ],
+          [
+            "580",
+            "1.30"
+          ],
+          [
+            "620",
+            "1.39"
+          ],
+          [
+            "660",
+            "1.50"
+          ],
+          [
+            "700",
+            "1.64"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -99,6 +259,73 @@
       "answer": 592.1053,
       "unit": "nm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-14-L3-04",
+      "level": 3,
+      "text": "Oil has got onto the surface of water and forms a thin film. The refractive indices are $1.00$ for air, $1.47$ for oil and $1.33$ for water. White light arrives at normal incidence on the film. At one point the thickness of the film is $450\\,\\text{nm}$.\n\na) Deduce which of the surfaces inverts the reflected wave, and calculate which wavelengths of visible light ($400$–$700\\,\\text{nm}$) are reflected most strongly at this point. What colour is the point?\n\nb) The film thins as the oil spreads. How thin has the film become when the wavelength reflected most strongly in part a) is reflected most weakly for the first time (destructive interference, $2nd = k\\lambda$)?\n\nc) Explain why the film looks dark and almost colourless at a point where its thickness is much smaller than the wavelength of visible light.\n\nThe answer box takes the thickness of part b).",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 360.0,
+      "unit": "nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-14-L3-05",
+      "level": 3,
+      "text": "Two identical glass plates ($n = 1.52$) are placed on top of each other so that they touch along one edge. A thin foil is placed between the plates at the other edge, and an air wedge ($n = 1.00$) is left between the plates.\n\nThe wedge is lit from above at normal incidence with the light of a sodium lamp, whose wavelength is $589\\,\\text{nm}$. Seen from above, evenly spaced dark fringes appear. Consider only the light reflected from the two surfaces of the air layer.\n\nThe table gives the distance $x$ of the dark fringes from the line of contact (example data). The fringe $k = 0$ is the line of contact. The foil is at a distance $L = 80\\,\\text{mm}$ from the line of contact.\n\na) Deduce which of the surfaces of the air layer inverts the reflected wave, and justify why the line of contact is dark.\n\nb) Draw a graph in which the distance $x$ of the fringe is a function of the order (the ordinal number of the fringe) $k$, and fit a line to the points. Determine the fringe spacing $\\Delta x$. By how much does the thickness of the air layer increase from one fringe to the next?\n\nc) How thick is the foil? Give your answer in micrometres.\n\nThe answer box takes the thickness of part c).",
+      "kind": [
+        "data",
+        "graph",
+        "experiment",
+        "model"
+      ],
+      "answer": 12.423,
+      "unit": "µm",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Positions of the dark fringes in the air wedge (example data)",
+        "columns": [
+          "$k$",
+          "$x\\,(\\text{mm})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "1.9"
+          ],
+          [
+            "2",
+            "3.9"
+          ],
+          [
+            "3",
+            "5.7"
+          ],
+          [
+            "4",
+            "7.7"
+          ],
+          [
+            "5",
+            "9.5"
+          ],
+          [
+            "6",
+            "11.5"
+          ],
+          [
+            "7",
+            "13.3"
+          ],
+          [
+            "8",
+            "15.2"
+          ]
+        ]
+      }
     }
   ]
 }

@@ -1,15 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 708af1408f91eb5f
+CONTENT-HASH: 8dfbc174c1098756
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
+## Fixed
+(none needed)
+
 ## Polish
-- exercises.json:46 (L2-01) — same structure as the worked example (polarisoimaton, kaksi polarisaattoria, yksi kulma: 900 W/m2 ja 40 astetta vs 840 W/m2 ja 35 astetta); copyable. Consider a different given.
-- exercises.json:46-50 — L1-04 and L1-05 differ only in the refractive index; one could have an everyday context.
+(none)
 
 ## Checked
-- Levels 5/4/3 match; L3 needs new reasoning; every task has situation first, question last as its own sentence (L2-02 included).
-- Solutions in Annettu/Kysytty/Periaate/Kaava/Muunnokset/Sijoitus/Vastaus/Järkevyys form; principle explained in easy Finnish, new words glossed (absorboi eli imee itseensä).
-- Case forms after number+unit correct (30,0 astetta:n, 1,60 m:n); glossary terms consistent.
-- Hash unchanged at end.
+- Task structure matches fi: situation first, then the question as its own sentence; multi-part tasks a), b), c) keep the same order and the final line naming which result goes in the answer box.
+- L2-07 error task keeps the student's wrong step and the request to explain what 36.3 deg really is; L3-04/L3-05 keep the justify/explain parts; nothing is given away in the English/plain wording.
+- Solutions keep Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness and the model answers for the explanation parts.
+- Plain Finnish: sentences are short, one idea each, terms explained at first use (absorboi eli imee itseensä), no long subordinate chains.

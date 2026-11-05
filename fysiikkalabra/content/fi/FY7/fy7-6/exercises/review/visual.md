@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 3e3c0eeec4dee222
+CONTENT-HASH: d5bc25b33d24fba8
+ROUND: 2
 
 ## Blocking
-(none)
+(none) Round 1 had none; the round-2 changes (L1 "120-kertaiseksi" reworded, L2-05/L2-07 part c) moved into Vastaus, range written $0{,}102\ldots0{,}108$, L3-05 eddy-current data replaced with 1,21/0,76/0,31/0,073 W) render correctly and the new answer 0,15 W matches the solution (k = 1,201 W/mm², P = 0,147 W; ratio 8,2).
 
 ## Polish
-- [Minor] L3-01 solution, Kaava (open-exercises-L3-1280-1) — the nested fraction $\dfrac{n\left(mgh - \tfrac{mv^2}{2}\right)}{cm_\text{p}}$ makes the inner fraction tiny (about 7 px) — write $\tfrac{1}{2}mv^2$ inside, as the earlier line of the solution does.
-- [Minor] L1-03 Vastaus (open-exercises-1280-3) — the answer box shows "$1{,}0 \cdot 10^2\,\text{kJ}$" and the next line "eli noin $100\,\text{kJ}$" — consistent, but the second line may be dropped, since the two repeat each other.
-- [Minor] L3-02 Mallivastaus (open-exercises-L3-1280-3) — one long paragraph of about ten lines; split it into "ehjä levy" and "kampalevy" if the item is edited again.
+- [Minor] exercises.json L2-06 — the student's quotation is still set with German-style „…”; Finnish uses ”…” at both ends (as fy7-7 L2-07, fy7-8 L2-07).
+- [Minor] solutions.md L3-05 Vastaus — the d) answer "noin 8,2-kertainen" is fine, but the hyphenated "8,2-kertainen" can break after the comma-number; write "noin $8{,}2$ kertaa suurempi".
 
 ## Checked
-- Opened open-exercises-1280-1 (L1-01) and -3 (L1-03, L1-04), open-exercises-L2-1280-2 (L2-01, L2-02) and open-exercises-L3-1280-1 (L3-01) and -3 (L3-02, L3-03).
-- Read all 12 tasks and solutions in the packet text. Quantities are LaTeX with case endings after the maths ("$40\,\text{g}$:n"), and the Sijoitus chains are aligned rows. There are no figures in the set.
-- Boxes keep solutions inside their cards at 1280; no 390 px exercise captures exist beyond stage-exercises-390 (not opened), so the phone view rests on check_layout.
+- 1280 px: L3 parts 5 and 7 (L3-04 magneetti putkessa, L3-05 levyt) with the new data table and answer; L2 changes read from the diff.
+- Table, answer box, aligned rows, choice feedback: no clipping, overflow or red source. No 360/390 px exercise captures; relies on green check_layout 360 px.
+- Hash at start: d5bc25b33d24fba8.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations n/a · typography 4 · Finnish 5 · accessibility 4

@@ -1,14 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: b23d6b7a8c4b3f3f
+CONTENT-HASH: f9042958b6e46deb
+Mode: full
+Round: 1
 
 ## Blocking
 
+## Fixed
+- None needed.
+
 ## Polish
-- [Minor] fy7-4-L2-02 graph — the earlier Polish item (mark the data as illustrative; violet points are the momentum colour) is unchanged by this diff and still open.
+- None.
 
 ## Checked
-- fy7-4-fig-13-390 (parallel wires, headings changed): "same direction" and "opposite directions" fit on one line above each panel at 390 px, nothing clipped, labels, arrows and attract/repel captions intact.
-- The diff touches only these figure labels, so the exercise layout captures are unaffected.
+- Opened content/en/FY7/fy7-4/review/shots/fy7-4-open-exercises-1280-5.png (L1 end, en) and fy7-4-open-exercises-L2-1280-6.png, fy7-4-open-exercises-L3-1280-5.png: task text, data tables (L2-05, L3-04), answer box with unit, and open solutions render without clipping; LaTeX renders correctly.
+- Tables: captions and column heads are short and fit; no horizontal overflow at this width.
+- Decimal separator: decimal point everywhere; no Finnish left in the English page.
+- The hash was the same at the start and the end (no edits).
 
 ## Scores
-illustrations 4 · typography 4 · Finnish (English prose) 4 · accessibility 4
+illustrations 4 · typography 4 · language 4 · accessibility 4

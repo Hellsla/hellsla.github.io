@@ -1,15 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 7cdf98adf7c64098
+CONTENT-HASH: a57d3a1e79b21477
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
+## Fixed
+(none needed: layout of the new tasks was already clean)
+
 ## Polish
-- [Minor] solutions L2-03 (capture L2-1280-4) — three decimals chain 0,009917 → 0,9917 % → 0,99 % is clear; optionally drop the middle line.
+- [Minor] L1-06 choice order differs from the page order after answering (shuffled by the page); not a translation matter.
 
 ## Checked
-- open-exercises-1280-1, L2-1280-4 (graph task fy7-8/loss-current: axes with units, five distinct data points vs dashed extrapolated fit, readable ticks) and open-exit-1280; solution blocks aligned, units upright with thin space.
-- Task texts read in full: wording clear, no mechanical phrasing.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+- Captures fy7-8-open-exercises-1280-6, L2-1280-6, L3-1280-6 opened: table caption fits, tables aligned, units (kierrosta, kW, %) shown, fractions and V/kierros units render correctly.
+- Feedback blocks (red/green) readable; no English left.
+- Decimal comma in text and tables.

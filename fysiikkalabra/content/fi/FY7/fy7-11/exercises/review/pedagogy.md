@@ -1,17 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 6125beade01a1c5a
+CONTENT-HASH: 1ce25266ae253843
+
+Round 2
 
 ## Blocking
 
 ## Polish
-- fy7-11-L3-02 asks a second question (inside or outside the red edge) that the numeric field cannot take; make it one question or a closing sentence the solution answers (it does).
-- fy7-11-L1-04: alpha_4 = 52,0 deg is inconsistent with any glass at n about 1,52 (gives about 54 deg); use alpha_4 = 54,0 deg and delta = 39,0 deg.
-- fy7-11-L1-02 and lesson tarkistus-2 test the same skill (v = c : n); change one.
-- fy7-11-L2-03: reading to 0,001 on a 0,002 grid; the 2 percent tolerance covers it, the solution could say so.
+- exercises.json:fy7-11-L3-04 — six rows by two lines of computation is long; four rows would do (carried over).
+- exercises.json:fy7-11-L2-01 (49 words) and L3-03 (50 words) — existing tasks with a lead paragraph over the ~45 limit; split the situation from the data sentence when next touched.
+- solutions.md:fy7-11-L2-05 Periaate — "Tehtävässä on yksi lasilevyn pinta, kuten prisman ensimmäinen pinta" is slightly awkward; "Tehtävän pinta vastaa prisman ensimmäistä pintaa" reads better.
 
 ## Checked
-- Counts 5 / 4 / 3 match the levels; none repeats the example.
-- L3 combines prism geometry or the rainbow in new contexts; L2-01 (fibre, assumption now stated) and L2-04 recognisable.
-- All 12 solutions have the seven steps, principle explained, sanity check; L1-05 now shows the full turn sum.
-- Figure flint-points gives the needed value without the answer.
-- Finnish and case after number+unit correct.
+- All three round-1 Blocking items resolved: L3-05 split into three paragraphs (13/12/32 words), L2-07 situation and constants split, L2-06 quotation separated from the data.
+- L2-07: tolerance 0,003 now needs n read to about ±0,002 (v 197 889 km/s for n = 1,516); solution's ±0,002 reading uncertainty (0,15 %) is consistent.
+- L3-05 recomputed: A_max 64,98° (violet) and 66,57° (red); at 65,0° n sin α3 = 1,0005 > 1; Δδ 7,42° at 64,0°, 3,91° at 60,0°; solution now names the 0,02° margin.
+- L3-04 solution: water 42,3° and solution 33,3° recomputed from n = 1,3315 and 1,400, correct.
+- L1-06 shortened, correct option moved and no longer the longest; every distractor keeps repairing feedback.
+- Levels, plan coverage, no duplicates and Finnish unchanged; captures show no clipping.

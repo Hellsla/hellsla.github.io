@@ -1,18 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 3e3c0eeec4dee222
+CONTENT-HASH: d5bc25b33d24fba8
+ROUND: 2
 
 ## Blocking
 
 ## Polish
-- exercises/solutions.md:79 (fy7-6-L2-04 Järkevyys) — "pyörrevirtajarrun voimakin pienenee", said of a train slowing from 250 km/h, applies the F ∝ v model outside its range. Real rail eddy-current brakes are past their critical speed there, and their force does not fall as the train slows. — Drop the clause, and keep "teho on verrannollinen vauhtiin, kun voima pysyy samana".
-- exercises/exercises.json:56 (fy7-6-L2-02) — "käämin läpi kulkeva magneettivuo" could be read as the flux through the whole coil. fy7-5 uses "yhden kierroksen läpi". — Write "yhden kierroksen läpi kulkeva magneettivuo".
+- exercises.json:124 (L2-02, an existing task): still "käämin läpi kulkeva magneettivuo". Fix: "yhden kierroksen läpi", as in L1-08 and L2-07 now.
+- solutions.md L2-05 c): "voima on molemmissa sama, mutta vauhti on pienempi, joten jarruttaa voimakkaammin samalla vauhdilla" uses F ∝ v (or at least F increasing with v), but the task does not state that. Fix: add "kun jarruttava voima kasvaa vauhdin mukana".
 
 ## Checked
-- I recomputed the 9 numeric answers independently in one script, and all agree. answers.py agrees with the recomputation.
-- L1-01 and L2-03: at constant speed F = mg; vt = mg/k = 0,15 m/s.
-- L1-03 and L3-01: energy conservation on level track and in a vertical tube. L3-01 states no heat loss and no change of state; ΔT = 0,073 K.
-- L1-04, L2-01, L2-04: P = Fv = mgv. L2-01 is cross-checked with Q/t.
-- L2-02: e = NΔΦ/Δt = 3,0 V and I = 0,20 A. Self-induction is ignored, which fits the scope.
-- L3-03: F = (Bl)²v/R = 0,60 N, and the power balance Fv = RI² = 1,8 W is right.
-- L1-02, L1-05, L3-02 word answers: Lenz direction (S face repels), the hob (glass is an insulator), the slotted Waltenhofen plate. All are correct.
-- Units, conversions and 2 s.f. reasons correct; notation matches the lesson.
+- All round-1 Polish items are done. L2-04: the out-of-range clause was dropped. L1-08 and L2-07 now say "yhden kierroksen" flux. L2-07 says "keskimääräinen induktiojännite" in the text and in the Periaate. L3-04 c) now asks for the (t, v) graph.
+- L3-05 new data (1,00/0,80/0,50/0,25 mm): the sheets are now below the skin depth (about 0,7 mm at 50 Hz, borderline at 1,00 mm), and the task states the thin-sheet condition. P/d² = 1,21; 1,19; 1,24; 1,17, so k = 1,201 W/mm² and P(0,35 mm) = 0,147 W → 0,15 W, within tolerance. d) now compares with 0,35 mm: (1,0/0,35)² = 8,2, which is right.
+- L2-05: t̄ = 7,32 s, P = 26,8 mW; F:v = 1,44 against 0,78 N·s/m. The 3,3 s difference is far above the ±0,3 s spread.
+- L3-04: the new explanation of the 6 % gap (the curvature of a central difference) is right. The exact model gives 2,79 against a tangent of 2,61 m/s².
+- L2-07: e·Δt has a mean of 0,1046 V·s, so ΔΦ = 0,349 mWb. c) is answered in the solution.
+- L1-06 and L1-07: the options were reordered and shortened. Exactly one option is correct, the distractors are still wrong, and the feedback is unchanged and right.
+- I recomputed all new answers in one script, and they agree with answers.py: L1-08 6,0 V; L2-05 26,8 mW; L2-07 0,349 mWb; L3-04 2,65 m/s²; L3-05 0,147 W.
+- Hash unchanged at start and end.

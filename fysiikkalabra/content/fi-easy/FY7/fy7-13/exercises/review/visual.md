@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: d9d37bab6a393027
+CONTENT-HASH: 24f527adb3299ded
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] solutions: none worth changing; wording and maths layout consistent with the lesson.
+(none)
 
 ## Checked
-- open-exercises-1280-1 and -4 (L1 solutions open); exercises and solutions text read in full; check_layout 340 px OK. Inputs, units and solution cards intact; no figures in the set.
+- Captures fy7-13-open-exercises-L2-1280-6 (L2-05 table, answer box, solution card) and the other new-task captures: Finnish decimal comma in text and table, units nm/µm, buttons and solution card intact.
+- No clipped text; tables readable; no English left.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 4

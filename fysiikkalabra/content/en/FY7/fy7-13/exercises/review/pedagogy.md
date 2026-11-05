@@ -1,19 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 3cba9a702fcdaee9
+CONTENT-HASH: 89f77d1ef5cc0755
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+- Wording of the L2-07 distractor feedback and the L3-05 solution principle made clear (see science.md); no change in content.
 
 ## Polish
-- exercises/solutions.md fy7-13-L3-02 Principle — "The maximum is half of the separation of the dots from the hole." is garbled — "The distance x of a maximum from the hole is half of the separation of the two dots."
-- exercises.json level 1-3 — every task is a calculation; a short qualitative or reasoning task at level 2 (e.g. which colour/which grating gives the larger angle, no numbers) would test the concept the lesson's misconception box targets; L3-01 covers it partly.
-- exercises.json fy7-13-L3-01 — asks two questions in one text (wavelength, then what it tells); put the second as its own final sentence or make the answer field's question the last sentence only.
-- solutions.md fy7-13-L2-01 — the formula line says k < d/lambda, but the lesson states k lambda < d; same thing, but use the lesson's form.
+(none)
 
 ## Checked
-- Counts 5/4/3 and ids match the course; level 1 single formula, level 2 combines grating equation with tan, level 3 reasoning (overlap of orders, CD calibration, calibrating an unknown grating).
-- None repeats the worked example (300 lines/mm, 2.00 m, 79.2 cm).
-- Situation first, question last; data complete; no trap beyond "separation = 2x", which the lesson's measuring section prepares.
-- Solutions have Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness; principles explained, units converted explicitly.
-- Numbers rechecked: L1-01 3.33 um, L1-02 18.97, L2-01 7 dots, L2-03 595.5, L3-01 466.7 nm, L3-02 1.6 um, L3-03 532.6 nm.
-- Significant figures stated and justified; reasonableness checks catch the typical slips (forgotten order, tan for sin).
-- English reads naturally; no Finnish visible; captures at 1280 px show nothing clipped.
+- Level counts 8/7/5 and ids equal to fi; kinds equal.
+- Situation first, question last kept in all 8 new tasks; multi-part tasks a), b), c) and "result of part ... in the answer box" sentence preserved.
+- L2-06 error-analysis task keeps the quoted student solution and the "correct result in the denominator" hint.
+- L1-06 and L2-07 feedback names the misconception for every wrong option, as in fi.
+- English natural and at the level of the existing en lesson set; terms (grating spacing, line density, order, maximum) consistent with the earlier exercises.
+- Solutions keep the structure Given / Find / Principle / Formula / Conversions / Substitution / Answer / Reasonableness.

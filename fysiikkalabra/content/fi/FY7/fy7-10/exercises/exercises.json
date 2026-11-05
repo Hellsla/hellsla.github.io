@@ -39,6 +39,58 @@
       "answer": 58.7495,
       "unit": "°",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-10-L1-06",
+      "level": 1,
+      "text": "Valonsäde tulee ilmasta vinosti lasilevyn pintaan ja jatkaa lasissa. Mikä seuraavista kuvaa oikein, miten säde käyttäytyy rajapinnassa ja miksi?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Säde taittuu kohti normaalia, koska valo etenee lasissa hitaammin kuin ilmassa.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Säde taittuu poispäin normaalista, koska valo etenee lasissa nopeammin kuin ilmassa.",
+          "feedback": "Valo etenee lasissa hitaammin kuin ilmassa, koska lasin taitekerroin on suurempi kuin $1$. Poispäin normaalista säde taittuisi vain siirryttäessä optisesti harvempaan aineeseen, esimerkiksi lasista ilmaan."
+        },
+        {
+          "text": "Säde jatkaa suoraan samaan suuntaan, koska valon taajuus ei muutu rajapinnassa.",
+          "feedback": "Taajuus todella pysyy samana, mutta suunta muuttuu, koska nopeus ja aallonpituus muuttuvat. Vinosti rajapintaan tuleva valo taittuu aina, kun aineiden taitekertoimet ovat eri suuret."
+        },
+        {
+          "text": "Säde taittuu kohti normaalia, koska valo etenee lasissa hitaammin kuin ilmassa.",
+          "correct": true,
+          "feedback": "Oikein: lasi on optisesti tiheämpää kuin ilma, joten valon nopeus pienenee rajapinnassa. Aaltorintamat kääntyvät niin, että säde taittuu kohti normaalia, ja taitekulma on pienempi kuin tulokulma."
+        },
+        {
+          "text": "Säde taittuu kohti normaalia, koska valon taajuus kasvaa siirryttäessä lasiin.",
+          "feedback": "Suunta on oikein, mutta syy on väärä. Taajuus ei muutu rajapinnassa, vaan valon nopeus ja aallonpituus pienenevät, ja juuri nopeuden muutos kääntää aaltorintamia."
+        }
+      ]
+    },
+    {
+      "id": "fy7-10-L1-07",
+      "level": 1,
+      "text": "Punaisen laserin valon aallonpituus ilmassa on $633\\,\\text{nm}$. Valo siirtyy ilmasta ikkunalasiin, jonka taitekerroin on $1{,}52$. Valon taajuus ei muutu rajapinnassa, ja ilman taitekertoimena käytetään arvoa $1{,}00$. Kuinka suuri on valon aallonpituus lasissa? Anna vastaus nanometreinä.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 416.4474,
+      "unit": "nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-10-L1-08",
+      "level": 1,
+      "text": "Valonsäde tulee etanolista timanttiin tulokulmassa $50{,}0^\\circ$. Etanolin taitekerroin on $1{,}36$ ja timantin $2{,}42$. Kuinka suuri on taitekulma timantissa?",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 25.4996,
+      "unit": "°",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +126,77 @@
       "answer": 1.5321,
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-10-L2-05",
+      "level": 2,
+      "text": "Opiskelijaryhmä tutki valon taittumista ilmasta lasiseen puolisylinteriin ja mittasi tulokulman $\\alpha_1$ ja taitekulman $\\alpha_2$ kulmanmittarilla. Lukematarkkuus on $\\pm 0{,}5^\\circ$. Mittaukset ovat esimerkkiaineistoa.\n\nLaske jokaiselle mittauspisteelle $\\sin\\alpha_1$ ja $\\sin\\alpha_2$ ja piirrä kuvaaja, jossa $\\sin\\alpha_1$ on pystyakselilla ja $\\sin\\alpha_2$ vaaka-akselilla. Sovita pisteisiin origon kautta kulkeva suora: suora kulkee origon kautta, koska tulokulmalla $0^\\circ$ myös taitekulma on $0^\\circ$.\n\nMikä on suoran kulmakerroin? Päättele sen avulla lasin taitekerroin, kun ilman taitekerroin on $1{,}00$. Kirjoita vastauslaatikkoon lasin taitekerroin.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 1.4985,
+      "unit": "",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Valon taittuminen ilmasta lasiin (esimerkkiaineisto)",
+        "columns": [
+          "$\\alpha_1\\,({}^\\circ)$",
+          "$\\alpha_2\\,({}^\\circ)$"
+        ],
+        "rows": [
+          [
+            "10.0",
+            "6.5"
+          ],
+          [
+            "20.0",
+            "13.5"
+          ],
+          [
+            "30.0",
+            "19.0"
+          ],
+          [
+            "40.0",
+            "25.5"
+          ],
+          [
+            "50.0",
+            "30.5"
+          ],
+          [
+            "60.0",
+            "36.0"
+          ],
+          [
+            "70.0",
+            "38.5"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-10-L2-06",
+      "level": 2,
+      "text": "Opiskelija ratkaisi tehtävän näin: ”Valo tulee ilmasta veteen tulokulmassa $50{,}0^\\circ$. Veden taitekerroin on $1{,}33$ ja ilman $1{,}00$. Valo taittuu kohti normaalia, joten taitekulma on tulokulmaa pienempi. Jaan tulokulman taitekertoimella: $\\alpha_2 = 50{,}0^\\circ : 1{,}33 = 37{,}6^\\circ$.”\n\nSelitä, mikä opiskelijan ratkaisussa on väärin, ja laske oikea taitekulma. Kirjoita vastauslaatikkoon oikea taitekulma.",
+      "kind": [
+        "error"
+      ],
+      "answer": 35.1678,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-10-L2-07",
+      "level": 2,
+      "text": "Opiskelija mittasi laserilla valon taittumista ilmasta akryylilevyyn. Tulokulma oli $45{,}0^\\circ$ ja taitekulma $28{,}0^\\circ$. Kummankin kulman lukemisen epävarmuus on kulmanmittarilla $\\pm 0{,}5^\\circ$. Mittaukset ovat esimerkkiaineistoa.\n\nLaske ensin akryylin taitekerroin $n$ mitatuilla kulmilla ja sen jälkeen pienin ja suurin taitekerroin, jotka sopivat kulmien epävarmuusrajoihin. Ilman taitekerroin on $1{,}00$. Arvioi taitekertoimen epävarmuus $\\Delta n$ pienimmän ja suurimman arvon erotuksen puolikkaana. Kirjoita vastauslaatikkoon epävarmuus $\\Delta n$.",
+      "kind": [
+        "experiment"
+      ],
+      "answer": 0.0379,
+      "unit": "",
+      "tolerance": 0.03
     }
   ],
   "level3": [
@@ -99,6 +222,56 @@
       "text": "Valo etenee aineessa A nopeudella $2{,}25 \\cdot 10^{8}\\,\\text{m/s}$ ja aineessa B nopeudella $1{,}97 \\cdot 10^{8}\\,\\text{m/s}$. Valonsäde tulee aineesta A aineeseen B tulokulmassa $40{,}0^\\circ$. Kuinka suuri on taitekulma?",
       "answer": 34.2494,
       "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-10-L3-04",
+      "level": 3,
+      "text": "Altaan pohjalla on pieni esine $d = 60{,}0\\,\\text{cm}$:n syvyydellä vedenpinnasta. Opiskelija katsoo esinettä ilmasta eri kulmista $\\alpha_2$ pinnan normaaliin nähden ja mittaa kunkin katselukulman kohdalla näennäisen syvyyden $h'$ eli syvyyden, jossa esine näyttää olevan. Mittaukset ovat esimerkkiaineistoa.\n\nSilmään tuleva säde ja esineestä pinnan samaan pisteeseen kulkeva säde ovat samassa pystytasossa.\n\nOletetaan, että esine näyttää olevan suoraan todellisen paikkansa yläpuolella.\n\nPinnan piste on vaakasuunnassa etäisyydellä $x$ esineen kohdalta. Vedessä säteen ja normaalin välinen kulma on $\\alpha_1$, ja näennäiseen paikkaan piirretty jatke muodostaa normaalin kanssa kulman $\\alpha_2$.\n\na) Piirrä tilanteesta kuva. Johda näistä tiedoista yhtälö, josta $\\alpha_1$ voidaan laskea, ja laske $\\alpha_1$ jokaiselle taulukon riville.\n\nb) Laske taitekerroin $n$ jokaiselle riville Snellin laista, kun ilman taitekerroin on $1{,}00$. Määritä veden taitekerroin näiden neljän arvon keskiarvona. Summa kannattaa laskea erikseen.\n\nc) Perustele, miksi näennäinen syvyys on todellista syvyyttä pienempi ja miksi se pienenee katselukulman kasvaessa.\n\nKirjoita vastauslaatikkoon b-kohdan tulos eli veden taitekerroin.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 1.3301,
+      "unit": "",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Esineen näennäinen syvyys eri katselukulmilla (esimerkkiaineisto)",
+        "columns": [
+          "$\\alpha_2\\,({}^\\circ)$",
+          "$h'\\,(\\text{cm})$"
+        ],
+        "rows": [
+          [
+            "10.0",
+            "44.9"
+          ],
+          [
+            "20.0",
+            "43.8"
+          ],
+          [
+            "30.0",
+            "42.0"
+          ],
+          [
+            "40.0",
+            "39.6"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-10-L3-05",
+      "level": 3,
+      "text": "Vaakasuora lasilevy, jonka paksuus on $6{,}0\\,\\text{mm}$ ja taitekerroin $1{,}52$, on vesikerroksen päällä. Vesikerroksen paksuus on $20{,}0\\,\\text{mm}$ ja veden taitekerroin $1{,}33$.\n\nLaserin säde tulee ilmasta lasilevyn yläpintaan tulokulmassa $55{,}0^\\circ$. Ilman taitekerroin on $1{,}00$, ja kaikki rajapinnat ovat vaakasuoria.\n\na) Laske taitekulma lasissa.\n\nb) Laske säteen ja normaalin välinen kulma vedessä. Perustele, miksi se olisi sama, vaikka lasilevyä ei olisi.\n\nc) Kuinka suuren vaakasuuntaisen matkan säde etenee kulkiessaan lasilevyn ja vesikerroksen läpi vesikerroksen alapinnalle? Kirjoita vastauslaatikkoon c-kohdan tulos millimetreinä.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 19.4742,
+      "unit": "mm",
       "tolerance": 0.02
     }
   ]
