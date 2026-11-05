@@ -1,16 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: ffa203d1e90b934b
-Mode: delta
-Round: 2
+CONTENT-HASH: 6caedbf0fb375664
+Mode: delta (exercises, fi-easy), round 1. Changed: new task L2-08, situation/question paragraph splits, solutions.md for L2-08.
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] solutions.md:197 L3-04 c) — pitkä inline-kaava nousee omaksi laatikokseen, ja "joten" jää yksin riville sen alle; kirjoita c) kuten a): "c) Jään lämpeneminen on" + display-rivit, ja "joten" seuraavan laatikon eteen tai pudota se.
+- [Minor] fy3-14-L2-08 task text — situation, data and the instruction are one paragraph of about 40 words, unlike the other tasks — split before the sentence that asks ("Decide which…" / "Päättele…").
+- [Minor] fy3-14-L2-08 — the sentence begins with a number and unit ("$0.080\,\text{kg}$ of ice…"); reword to start with a word ("Ice of $0.080\,\text{kg}$…").
 
 ## Checked
-- review/shots/fy3-14-open-exercises-L3-1280-7.png (fi-easy, otettu commitin 6018cf733 jälkeen): "Ensin … = 4,45, joten" yhdellä rivillä; s_1-, s_2- ja s_2'-ketjut yksi =-askel riviä kohden, murtoviivat, desimaalipilkku ja yksiköt siistit, ei ylivuotoa eikä punaista lähdettä. Vastaus ja Järkevyys ennallaan.
-- 360 px: tehtävistä ei ole 360 px kaappauksia; deterministinen layout 360 px -tarkistus on ok, ja levein uusi rivi on noin 25 merkkiä.
+- Rendered preview/fi-easy/fy3-14.html at 390 px with my own script (scratch trvis3x): fy3-14-L2-08 (five true/false statements with feedback) and the split task L1-01, in default and answered/opened state.
+- The new L2-08 card opened in full: task text, options or statements, feedback blocks, Vastaus/Answer and model solution; formulas, units, fractions and the units with \cdot render as KaTeX, no red source, no clipping or horizontal overflow.
+- The paragraph splits read as situation, then data, then the question; nothing sideways when feedback opens.
+- Plain language holds: short sentences, terms explained where needed (e.g. "eli ei muutu", "massavirta eli kuinka monta kilogrammaa…"); case endings after the maths are correct ("$0\,{}^\circ\text{C}$:seen", "$2{,}00\,\textsf{l}$:n"). Decimal comma used throughout.
+- Figure and graph tasks were not changed by the diff; contact sheets are not used in this exercises-only delta.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 5
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4
