@@ -299,6 +299,7 @@ def plain_label(s):
         t = re.sub(r"\\([A-Za-z]+)", lambda m: "\\" + m.group(1) if m.group(1) in ("text", "mathrm", "operatorname", "overline", "mathbf")
                    else _PLAIN_SYM.get(m.group(1), "\x00" if m.group(1) in ("quad", "qquad") else m.group(1)), t)
         t = re.sub(r"\\[,;:! ]", "\x00", t)
+        t = re.sub(r"\\([%#&$])", r"\1", t)   # \% -> % ("kasvaimen kautta (\%)", fy8-14 2026-11-04)
         t = re.sub(r"\\(text|mathrm)\{([^{}]*)\}", lambda m: "\\" + m.group(1) + "{" + m.group(2).replace(" ", "\x00") + "}", t)   # words keep their spaces
         t = t.replace(" ", "")
         for _ in range(3): t = re.sub(r"\\(?:text|mathrm|operatorname|overline|mathbf)\{([^{}]*)\}", r"\1", t)

@@ -36,6 +36,7 @@ only = set(args)   # none: every page; CI on a pull request passes the pages scr
 OUT = ROOT / "site" if "--site" in sys.argv else ROOT / "preview" if (ROOT / "preview" / "index.html").exists() else ROOT / "site"   # --site: the published pages (CI)
 
 JS = """() => {
+  if (window.flFitMath) window.flFitMath();   // lesson.js: a too-wide inline formula gets its own scrolling line (kx-wide)
   const out = [], V = (e) => e.checkVisibility();
   const el = document.scrollingElement, vw = document.documentElement.clientWidth;
   if (el.scrollWidth > el.clientWidth + 1) out.push({what: 'page', over: el.scrollWidth - el.clientWidth, text: ''});
@@ -49,7 +50,7 @@ JS = """() => {
   for (const e of document.querySelectorAll('main .katex-error'))   // a formula KaTeX could not parse (as split into rows, too)
     out.push({what: 'formula', over: 0, text: 'KaTeX error: ' + (e.getAttribute('title') || e.textContent).slice(0, 90)});
   for (const k of document.querySelectorAll('main .katex')) {
-    if (!k.checkVisibility() || k.closest('.katex-display, table, svg, #sim-root')) continue;
+    if (!k.checkVisibility() || k.closest('.katex-display, .eq-chain, table, svg, #sim-root')) continue;   // a calculation in rows (.eq-chain) scrolls sideways as a whole
     const box = k.closest('p, li, .steps, .stage') || k.parentElement;
     const over = Math.round(k.getBoundingClientRect().right - (k.closest('.kc-card') ? box.getBoundingClientRect().right : Math.min(box.getBoundingClientRect().right, vw)));   // a concept card's own box is the limit
     if (over > 1) { const ann = k.querySelector('annotation'); out.push({what: 'formula', over, text: 'inline, cannot wrap: ' + (ann ? ann.textContent.slice(0, 70) : '')}); }
@@ -72,9 +73,13 @@ JS = """() => {
     const box = t.parentElement;
     if (t.scrollWidth > box.clientWidth + 1) out.push({what: 'table', over: t.scrollWidth - box.clientWidth, text: t.innerText.slice(0, 60)});
   }
+  for (const c of document.querySelectorAll('main .eq-chain')) {   // regression 2026-11-04: rows of a calculation collapsed to 0 px (kx-wide inside the grid)
+    if (!c.checkVisibility()) continue;
+    for (const k of c.querySelectorAll('.katex')) if (k.getBoundingClientRect().width < 4) { out.push({what: 'formula', over: 0, text: 'calculation row collapsed: ' + ((k.querySelector('annotation') || {}).textContent || '').slice(0, 60)}); break; }
+  }
   for (const s of document.querySelectorAll('main svg')) {
     const r = s.getBoundingClientRect();
-    if (!r.width) continue;
+    if (!r.width || s.closest('.kx-wide, .eq-chain')) continue;   // a root sign inside a wide formula's own scrolling line (lesson.js kx-wide) scrolls with it
     const card = s.closest('.kc-card'), lim = card ? card.getBoundingClientRect().right : vw;   // a concept card's own box is the limit
     if (r.right > lim + 1) out.push({what: 'svg', over: Math.round(r.right - lim), text: s.getAttribute('aria-label') || ''});
     const T = [...s.querySelectorAll('text'), ...s.querySelectorAll('foreignObject')].map((t) => ({t: t.textContent.trim().slice(0, 40), b: (t.querySelector('.katex, div') || t).getBoundingClientRect()})).filter((x) => x.t);
@@ -139,9 +144,9 @@ OPEN = {
   "closed": "() => true",
   "hints": """() => { for (const g of document.querySelectorAll('.hints, .numeric, .activity, details.level > ol > li')) {
       const h = g.querySelector('details.hint'); if (h) h.open = true; const s = g.querySelector(':scope details.solution, :scope > details.solution'); if (s) s.open = true; }
-    document.querySelectorAll('details.fold, details.level').forEach((d) => { d.open = true; }); return true; }""",
+    document.querySelectorAll('details.fold, details.level').forEach((d) => { d.open = true; }); if (window.flFitMath) window.flFitMath(); return true; }""",
   "open": """() => { document.querySelectorAll('details').forEach((d) => { d.open = true; });
-    document.querySelectorAll('main [hidden]').forEach((e) => { if (!e.closest('#sim-root')) e.hidden = false; }); return true; }""",
+    document.querySelectorAll('main [hidden]').forEach((e) => { if (!e.closest('#sim-root')) e.hidden = false; }); if (window.flFitMath) window.flFitMath(); return true; }""",
 }
 
 # a stage heading after its link is followed: below the sticky navigation and near the top of the window

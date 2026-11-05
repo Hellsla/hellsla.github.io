@@ -540,13 +540,17 @@
     const W = document.documentElement.clientWidth;
     ks.forEach(k => {
       if (!k.offsetParent) return;
-      const box = k.parentElement.closest('p,li,td,th,dd,dt,div,summary,figcaption,blockquote,label');
+      let box = k.parentElement.closest('p,li,td,th,dd,dt,div,summary,figcaption,blockquote,label,.steps,.stage');
+      while (box && box.parentElement && getComputedStyle(box).display === 'inline-block') box = box.parentElement;   // an inline-block box grows with the formula (fy5-15 answer)
       const r = k.getBoundingClientRect();
-      if (r.right > W - 1 || (box && r.width > box.clientWidth + 1)) k.classList.add('kx-wide');
+      const right = Math.min(W, box ? box.getBoundingClientRect().right : W);
+      if (r.right > right + 1 || (box && r.width > box.clientWidth + 1)) k.classList.add('kx-wide');
     });
   }
   let t; const later = () => { clearTimeout(t); t = setTimeout(() => fit(), 150); };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', () => fit()); else fit();
   window.addEventListener('load', () => fit()); window.addEventListener('resize', later);
-  document.addEventListener('toggle', e => fit(e.target), true);
+  document.addEventListener('toggle', e => { fit(e.target); later(); }, true);   // later: maths auto-rendered on open
+  new MutationObserver(later).observe(document.body, {subtree: true, attributes: true, attributeFilter: ['hidden']});   // a solution unlocked (try-first) or revealed
+  window.flFitMath = fit;
 })();
