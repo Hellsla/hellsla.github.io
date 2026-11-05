@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 3e63fa3729828f29
-Round: 2
+CONTENT-HASH: d15c8d91aa20aab0
+Round: 3
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] L1-09 Muunnokset — "$1\,000\,000 : 1000\,\text{kJ}$" reads as a division of a number by a quantity; "$1\,000\,000\,\text{J} : 1000\,\text{J/kJ}$" or "$\dfrac{1\,000\,000\,\text{J}}{1000\,\text{J/kJ}}$" is unambiguous. The result is correct.
-- [Minor] L1-09 Kaava line — "1 kJ = 1000 J ja 1 MJ = 1000 kJ" is a conversion rule, not a formula; fine as set.
+- [Minor] L1-09 Muunnokset (carried from round 2) — "$1\,000\,000 : 1000\,\text{kJ}$" reads as a number divided by a quantity; "$1\,000\,000\,\text{J} : 1000\,\text{J/kJ}$" is unambiguous. The result is correct.
 
 ## Checked
-- From captures (fresh, 21:06): fy2-2-open-exercises-1280-9 (the new L1-09: Kaava, Muunnokset aligned at =, Sijoitus, Vastaus, Järkevyys); all units upright with thin spaces, decimal format and "1 000 000" grouping consistent, no clipping.
-- From my own Playwright render at 390 px (preview/fy2-2.html): the new L1-09 text and four choices (1 000 000 kJ, 1000 kJ, 1000 J, 1000 GJ set as maths) fit; no overflow, document width 390.
-- Round-1 items: the new task is a unit-prefix conversion (one correct choice, three distractors with feedback), set cleanly; the earlier kW/h item no longer applies.
-- From the diff only: choice feedback wording.
+- Delta is one word: the L1-09 solution step label "Vastaus" is now "Mallivastaus". From my own Playwright render at 390 px (after rebuilding preview/fy2-2.html with build.py, solution opened): the label shows as "MALLIVASTAUS" in the same small-caps step style as Kaava, Muunnokset and Sijoitus; text and units unchanged and unclipped, document width 390.
+- Not from a capture: the packet's 1280 px captures were not opened this round.
+- Rest of the set unchanged since the round-2 PASS.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4

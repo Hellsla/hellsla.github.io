@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: aef545aa7fbe257b
+CONTENT-HASH: eb6030c5ebb1f4dc
 
 ## Blocking
 (none)
@@ -13,3 +13,4 @@ CONTENT-HASH: aef545aa7fbe257b
 - solutions.md L1-09: all seven steps and all formulas/numbers equal the Finnish; reasonableness check (1000 kJ x 1000 = 1 000 000 J) is valid.
 - Number format: decimal comma as in Finnish; term meanings kept (kilo, mega, giga explained). No scope breach (prefixes are FY1 content applied to energy).
 - check_i18n.py: nothing for fy2-2; build.py fy2-2 succeeds. No fixes were needed.
+- Round 2 (label only): the step label of the L1-09 solution is now 'Mallivastaus' instead of the plain answer label; the text, numbers, formulas and answer are unchanged, so the earlier findings stand. check_i18n.py shows nothing for fy2-2.

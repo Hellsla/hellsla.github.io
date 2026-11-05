@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: e5cc6a8e63669d52
+CONTENT-HASH: cd0c4b4ece89b6db
 
 ## Blocking
 (none)
@@ -13,3 +13,4 @@ CONTENT-HASH: e5cc6a8e63669d52
 - solutions.md L1-09: all seven steps and all formulas/numbers equal the Finnish; reasonableness check (1000 kJ x 1000 = 1 000 000 J) is valid.
 - Number format: decimal point, no Finnish left. No scope breach (prefixes are FY1 content applied to energy).
 - check_i18n.py: nothing for fy2-2; build.py fy2-2 succeeds. No fixes were needed.
+- Round 2 (label only): the step label of the L1-09 solution is now 'Model answer' instead of the plain answer label; the text, numbers, formulas and answer are unchanged, so the earlier findings stand. check_i18n.py shows nothing for fy2-2.

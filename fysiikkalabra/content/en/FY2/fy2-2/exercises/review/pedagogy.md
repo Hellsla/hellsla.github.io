@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: e5cc6a8e63669d52
+CONTENT-HASH: cd0c4b4ece89b6db
 
 ## Blocking
 (none)
@@ -12,3 +12,4 @@ CONTENT-HASH: e5cc6a8e63669d52
 - Solution can be followed step by step (principle, formula, conversion, substitution, answer, reasonableness) and equals the Finnish in structure and numbers.
 - Language: natural English, short clear sentences, 'a million'/'a billion' for miljoona/miljardi. Same difficulty and no step dropped.
 - Phone use: short text and four short choices; nothing long to clip at 360 px.
+- Round 2 (label only): the step label of the L1-09 solution is now 'Model answer' instead of the plain answer label; the text, numbers, formulas and answer are unchanged, so the earlier findings stand. check_i18n.py shows nothing for fy2-2.
