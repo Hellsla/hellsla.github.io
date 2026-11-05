@@ -540,7 +540,8 @@
     const W = document.documentElement.clientWidth;
     ks.forEach(k => {
       if (!k.offsetParent) return;
-      const box = k.parentElement.closest('p,li,td,th,dd,dt,div,summary,figcaption,blockquote,label,.steps,.stage');
+      let box = k.parentElement.closest('p,li,td,th,dd,dt,div,summary,figcaption,blockquote,label,.steps,.stage');
+      while (box && box.parentElement && getComputedStyle(box).display === 'inline-block') box = box.parentElement;   // an inline-block box grows with the formula (fy5-15 answer)
       const r = k.getBoundingClientRect();
       const right = Math.min(W, box ? box.getBoundingClientRect().right : W);
       if (r.right > right + 1 || (box && r.width > box.clientWidth + 1)) k.classList.add('kx-wide');
