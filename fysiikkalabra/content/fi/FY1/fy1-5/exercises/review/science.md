@@ -1,20 +1,16 @@
-VERDICT: FAIL
-CONTENT-HASH: 14f290f6e62807dd
+VERDICT: PASS
+CONTENT-HASH: 18f2780582100755
 
 ## Blocking
-- content/fi/FY1/fy1-5/exercises/solutions.md:203–204, exercises.json:219 (fy1-5-L2-08) — **B, internal consistency.** The lesson says "Tässä luvussa kappale liikkuu yhteen suuntaan, joten nopeus on positiivinen" and never teaches negative velocity. The solution gives "−1,0 m/s, ja miinusmerkki kertoo…", and its Periaate and option A's feedback say "kulmakertoimen etumerkki kertoo suunnan". This contradicts the lesson. The task can be solved without the sign. — Fix: remove the −1,0 m/s sentence and the two "etumerkki" clauses, and keep "paikka pienenee → suora laskee". Otherwise state the condition explicitly, which would also mean changing the lesson sentence.
 
 ## Polish
-- exercises.json:224 (option B) — pick-vt shows +1,0 m/s on the way back, which is the wrong sign under the solution's own convention. This is harmless once the sign is dropped.
-- lessons/FY1/fy1-5/figures.py:124 (pick-distance) — The caption and axis say "paikka s", but feedback D (exercises.json:235) calls the graph a distance graph. Consider "kuvaaja esittää kuljettua matkaa, vaikka akselilla on s".
+- lessons/FY1/fy1-5/figures.py (pick_distance) and exercises.json (L2-08, option D feedback); solutions.md (L2-08 Mallivastaus) — These label the distance walked as "Δs". The lesson defines Δs = s − s₀, and on the way back that is 0 − 6,0 m = −6,0 m, not +6,0 m. Δs equals the distance walked only when the walker moves away from the start. The option is a distractor and stays wrong either way, so nothing here is blocking. — Label the axis "matka (m)" and write "kuljettu matka" without the symbol Δs, or name the condition.
+- solutions.md (L2-08 Periaate) — The sentence "kulmakerroin Δs : Δt on nopeus … Nopeus (vauhti) on suoran jyrkkyys" mixes slope and speed. A downward line has a slope whose size is the speed. Optional: write "suoran jyrkkyys kertoo vauhdin".
 
 ## Checked
-- All 19 numeric answers were recomputed with my own formulas in one script and agree with answers.py. L2-05 least squares gives 18,04 m, L3-01 3419,8 vrk, L3-02 41,58 h.
-- L2-08: arrival at 4,0 s + 6,0 m / 1,0 m/s = 10 s. Only C matches, and A, B and D are wrong for the reasons their feedback gives.
-- L2-08 figure captions match the plotted points and do not give the answer away.
-- L1-03 / line-read: (8 s; 20 m) gives 2,5 m/s, and 150 m gives 60 s.
-- L3-04: slopes 3,0 and 1,0 m/s, average speed 40 m / 30 s.
-- L3-05: the vertical-line reasoning and the scale (3,0 cm rise, 0,10 cm run) are correct.
-- L2-07: 0,2 s / t ≤ 2 % gives t ≥ 10 s and s ≥ 8,0 m, and the hand-timing value follows the guardrail.
-- The L2-05 fit wording and extrapolation caveat follow the guardrails.
-- Voyager and constant values match the scope notes, and the notation matches the lesson.
+- Round 1 Blocking item is resolved. The −1,0 m/s value and the "etumerkki kertoo suunnan" wording are gone from the solution and from option A. The reasoning is now "paikka pienenee → suora laskee", which agrees with the lesson's positive-velocity convention.
+- Option B (pick-vt at +1,0 m/s) is now consistent, because no sign convention is used. Its feedback is correct.
+- L2-08 still has exactly one correct option. C runs from 6,0 m, stays level until 4,0 s and then falls to (10 s; 0 m), consistent with 6,0 m / 1,0 m/s = 6,0 s.
+- I recomputed all 19 numeric answers with my own formulas in one script, and they match answers.py. L2-05 gives 18,04 m, L3-01 gives 3419,8 vrk, L3-02 gives 41,58 h and L3-04 gives 1,33 m/s.
+- The figure captions for pick-away, pick-back and pick-distance match the plotted points, and none gives the answer away.
+- The rest of the set is unchanged from round 1: physics, rounding, guardrail wording and notation are all correct.

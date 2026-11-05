@@ -1,16 +1,16 @@
-VERDICT: FAIL
-CONTENT-HASH: b04a13ce486ff667
+VERDICT: PASS
+CONTENT-HASH: f7cdc3d203132d99
 
 ## Blocking
-- [Major] L2-08 (7-16) task text (live render at 390 and 1280 px; open-exercises-L2-1280-*) — the four bullets "- Kappale A: …" are not rendered as a list: they run together in one paragraph ("… 50 cm³ - Kappale B: massa …"), so the data are hard to read and the dashes look like minus signs between values — it is the data the whole task rests on — fix: the exercise text renderer does not turn `\n- ` into a list; either support lists in exercise `text` or write the data as a small table / four short lines (separate paragraphs, e.g. "Kappale A: massa …" each after `\n\n`).
-- [Major] solutions.md L2-08, Mallivastaus — the four `\dfrac{m}{V}` lines (ρ_A … ρ_D) are stacked with no line spacing: numerators touch the denominator above ("50 cm³" struck through by the next fraction, 360 g over 400 cm³ cramped) at 390 and 1280 px — clearly poor readability — fix: put each ρ in its own paragraph/row (blank line between) or use inline `\tfrac`, keeping the unit with the number.
 
 ## Polish
-- [Minor] solutions.md L2-08 — the closing sentences (order, mass vs density, significant figures) are one dense block after the fractions; split after "B, D, A, C."
-- [Minor] L2-08 Annettu — "0,36 kg, 0,40 dm³" without "B:" mixes the symbols with plain labels; "B: m = …, V = …" like A.
+- [Minor] L2-08 — "Kappale B: massa 0,36 kg, tilavuus 0,40 dm³" lines are separate paragraphs, so the data block has wide spacing; acceptable, a table would be tighter (optional).
+- [Minor] Solution L2-08 — closing paragraph after "B, D, A, C." is still a dense block of three sentences; optional split.
 
 ## Checked
-- Hash at start and end b04a13ce486ff667. Delta: opened open-exercises-L3 captures for layout survival and my own live renders of L2-08 at 390 and 1280 px (ordering task, answer card, solution card); paragraph splits of L2-07 and L3-04 are clean. Ordering select rows are usable at 390 px.
+- Round 2; hash f7cdc3d203132d99 at start and end. Round 1 Majors fixed: live renders of 7-16 at 390 and 1280 px and open-exercises-L2-1280-10 show the data as four separate paragraphs, the Annettu line with indexed symbols (m_A, V_A …), conversions one per row and each ρ on its own row with the colon and a legible unit fraction, no overlap.
+- Ordering selects usable at 390 px; answer line and solution card without clipping or overflow.
+- Older exercises were not re-opened (unchanged since earlier PASS apart from paragraph splits, which render cleanly).
 
 ## Scores
-illustrations 4 · typography 2 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

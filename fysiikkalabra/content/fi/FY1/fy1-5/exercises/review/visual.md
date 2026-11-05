@@ -1,15 +1,16 @@
-VERDICT: FAIL
-CONTENT-HASH: 14f290f6e62807dd
+VERDICT: PASS
+CONTENT-HASH: 18f2780582100755
 
 ## Blocking
-- [Major] L2-08 (5-16), choice with figures, after a wrong answer (open-exercises-L2-1280-9; reproduced live at 390 and 1280 px) — the feedback `div.feedback` sits below a `label` that has `height:100%` in the `fieldset.choice.figures` grid, so it overflows the list item: at 1280 px it hides under the next card and the Vastaa button (only "paluumatkalla." peeks out) and its KaTeX ("6,0 m") is drawn large over graph C/A; at 390 px it is drawn over the next figure. The student cannot read why the choice is wrong, and the card shows a tall empty green box. Fix in the template (templates css, `fieldset.choice.figures`): make `li` a flex column as `.models` already does (`li{display:flex;flex-direction:column}`, `.feedback{margin-left:0}`) and drop `height:100%` on the label, so the feedback follows its card in the same cell. This is the only chapter whose task uses figure choices.
 
 ## Polish
-- [Minor] Graphs A–D — the y ticks 2…12 are shown but the option graphs have no marked point at 6 m, 4 s, 10 s; acceptable, optional.
+- [Minor] L2-08 (5-16) — after a wrong answer the chosen card keeps the green "selected" tint while the line below says "Ei aivan"; a neutral selection tint would avoid reading as correct (template, optional).
+- [Minor] L2-08 option graphs — no marked tick at 6 m or at 4 s / 10 s; the grid suffices, optional.
 
 ## Checked
-- Hash at start and end 14f290f6e62807dd. Opened open-exercises-L2-1280-8, -9, -10 (the new task, its solution card, "Kuvaajan lukeminen"), plus own live renders of L2-08 at 390 and 1280 px, unanswered and after a wrong answer.
-- The four new figures (pick-away, -back, -distance, -vt): consistent axes and strokes, units on axes, A–D readable at 390 px; B is clearly a (t, v) graph. Solution text: maths, decimal comma, units correct. Paragraph splits in other tasks render cleanly.
+- Round 2; hash 18f2780582100755 at start and end. Round 1 Major (feedback of a figure choice overflowing under the next card and Vastaa) is fixed: live renders of 5-16 at 390 and 1280 px after a wrong answer, and open-exercises-L2-1280-9, show the feedback inside its own grid cell, fully readable, no overlap.
+- Opened the four option figures (A–D): consistent axes, units, strokes; B clearly a (t, v) graph. Solution card and "Kuvaajan lukeminen" read cleanly; maths and units in LaTeX.
+- Not every older capture of the full exercise set was re-opened (earlier rounds passed them; only L2-08 and the paragraph splits changed).
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 3
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

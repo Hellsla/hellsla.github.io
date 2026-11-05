@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: b0168537939bf78a
+CONTENT-HASH: b978a0408e18213b
 
 ## Blocking
 
 ## Polish
-- [Minor] L3-05 task text — carried: the pupil's quotation is run into the paragraph; set it as its own paragraph with ” ”.
+- [Minor] L3-05 task — carried: the pupil's quotation is run into the paragraph; set it as its own paragraph with ” ”.
 - [Minor] L1-08, L2-06 Vastaus — carried: "Eli 10⁴; …" reads awkwardly after the answer chip.
-- [Minor] L2-05, L2-07 data tables — left-aligned, narrow, decimals not aligned (known shared-component item).
+- [Minor] L2-05, L2-07 tables — left-aligned, narrow, decimals not aligned (known shared-component item).
 
 ## Checked
-- Round 1 delta (new YO-skill task L1-09, paragraph splits in L2-05, L2-07, L3-04, L3-05, solutions.md).
-- open-exercises-1280-8 and -9: L1-09 task, four whole-row choices, wrong-choice feedback, answer chip, Kysytty/Periaate/Mallivastaus; the light-travel check fraction 1,5·10^11 m : 3,0·10^8 m/s renders cleanly, nothing clipped.
-- open-exercises-L2-1280-5 and -7: L2-05 now reads situation, set-up, question as separate paragraphs, table below; layout survived.
-- open-exercises-L3-1280-5: L3-04 Vastaus and the split L3-05 task (situation, pupil's solution, instruction, question) read well.
+- Round 2 delta (L1-09 rewritten as an eclipse-ratio task; feedback and solutions.md).
+- open-exercises-1280-8: L1-09 task now two paragraphs (situation with three values, rule, question), values with units in LaTeX.
+- open-exercises-1280-9: choice feedback, answer chip, Annettu/Kysytty/Periaate/Mallivastaus (400 ratio fraction, d_A subscript) and Järkevyys light-time chain render cleanly, nothing clipped.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4
