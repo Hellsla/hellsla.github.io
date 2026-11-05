@@ -1,19 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: dddd0748a061d540
+CONTENT-HASH: aef545aa7fbe257b
 Mode: delta
-Round: 2
+Round: 1
 
 ## Blocking
 (none)
 
-## Fixed
-- (none needed)
-
 ## Polish
-- (none)
+- [Minor] new-task wording and layout: none found in the new task; the added L1-09 reads cleanly at 390 px.
+- [Minor] fy2-2-L1-06 solution — the line `0.0033 GJ = 0.0033 · 1000 MJ = 3.3 MJ` ends at x=394, 4 px past the 390 px viewport (page scroll width 399); I could not see a cut in the card capture, where it wraps inside the card — check the source of that inline formula and let it break after `=`.
+- [Minor] 1280 px captures of the exercises exist (previous round); I did not repeat them. Exercise captures at 390 px did not exist, so these were rendered by me.
 
 ## Checked
-- Screenshots of the new tasks (open-exercises L1-L3, 1280 px) viewed: data tables render with caption, aligned columns and upright units; nothing clipped.
-- Math typography in the new solutions: spacing, thin spaces before units, \cdot and colon division, subscripts, fractions are identical to the Finnish; decimals with a comma consistently.
-- Answer boxes show the right unit (km, kg, kertaa); no stray Finnish/English strings in captures.
-- Round 2 (figure change only): in the L1-05 figure "tikapuut-kohteet" (capture open-exercises-1280-4, fresh, stamp dddd0748a061d540) the caption "jokainen väli on 10-kertainen" now sits clearly below the scale labels 1 J … 1 TJ, with no contact, and fully inside the figure frame (the figure is 330 units high, the caption baseline is at 313). The scale, the three marked points (AA battery, tea water, lightning) and all labels are unchanged; no text, number or task changed.
+- Own Playwright render at 390 px from preview/fi-easy/fy2-2.html (chromium, every details and every choice answered): new L1-09 (unit prefixes, four options, feedback and solution) card at 390 px (own render); L3-05 card opened at 390 px; L3-04 split paragraph checked by DOM metrics only.
+- DOM metrics for every KaTeX display, table and svg in #exercises at 390 px: page scroll width, boxes wider than their container.
+- Solutions.md diff and the new task text read as text (editorial): the new task and its feedback are consistent in wording, units are LaTeX with thin space.
+- Not opened: the 1280 px captures from the packet (same as the previous PASS), the lesson itself.
+
+## Scores
+illustrations n/a · typography 4 · Finnish 4 · accessibility 4
