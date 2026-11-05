@@ -227,6 +227,41 @@
       "answer": 23,
       "unit": "°C",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-6-L2-08",
+      "level": 2,
+      "text": "Esimerkkiaineisto: uunista otettu $3{,}0\\,\\text{kg}$:n rautalevy jäähtyy lämpötilasta $220\\,{}^\\circ\\text{C}$ lämpötilaan $40\\,{}^\\circ\\text{C}$. Raudan ominaislämpökapasiteetti on $450\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$. Oppilas selvittää, kuinka paljon energiaa levyn ja ympäristön välillä siirtyy ja mihin suuntaan.\n\nRivi 1: $\\Delta T = 40\\,{}^\\circ\\text{C} - 220\\,{}^\\circ\\text{C}$, eli $\\Delta T = -180\\,\\text{K}$.\n\nRivi 2: $Q = c m \\Delta T$.\n\nRivi 3: $Q = 450 \\cdot 3{,}0 \\cdot (-180)$, eli $Q = -243\\,000\\,\\text{J}$.\n\nRivi 4: lämpömäärä ei voi olla negatiivinen, joten levyyn siirtyy $243\\,\\text{kJ}$.\n\nMikä rivi on väärin? Jos laskussa ei ole virhettä, valitse viimeinen vaihtoehto.",
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "answer": "Rivi 4: tuloksen tulkinta",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Rivi 1: lämpötilan muutoksen laskeminen",
+          "feedback": "Rivi 1 on oikein. $\\Delta T$ on loppulämpötila miinus alkulämpötila, ja jäähtyessä se on negatiivinen. Lämpötilan muutos on sama kelvineinä ja celsiusasteina, joten lukua $273$ ei lisätä. Jos pitää riviä virheellisenä, ajattelee, että muutos pitää muuntaa kelvineiksi lisäämällä $273$."
+        },
+        {
+          "text": "Rivi 2: lämpömäärän kaava",
+          "feedback": "Rivi 2 on oikein. Kun olomuoto ei muutu, $Q = c m \\Delta T$ kuvaa sekä lämpenemistä että jäähtymistä. Jäähtymiselle ei ole omaa kaavaa, vaan merkki tulee $\\Delta T$:sta. Jos pitää riviä virheellisenä, ajattelee, että jäähtymiseen tarvitaan eri kaava."
+        },
+        {
+          "text": "Rivi 3: sijoitus ja laskutoimitus",
+          "feedback": "Rivi 3 on oikein: $450 \\cdot 3{,}0 = 1350$ ja $1350 \\cdot (-180) = -243\\,000$. Perusyksiköillä tulos on jouleina. Jos pitää riviä virheellisenä, ajattelee, että miinusmerkki on laskuvirhe, koska lämpömäärän pitäisi aina olla positiivinen."
+        },
+        {
+          "text": "Rivi 4: tuloksen tulkinta",
+          "correct": true,
+          "feedback": "Oikein, tämä rivi on väärin: negatiivinen $Q$ on mahdollinen. Jäähtyessä $Q$ on negatiivinen, ja merkki kertoo suunnan. Levy luovuttaa eli antaa ympäristöön $243\\,\\text{kJ}$, eikä se vastaanota energiaa. Itseisarvon ottaminen hukkaa tiedon energian suunnasta."
+        },
+        {
+          "text": "Laskussa ei ole virhettä",
+          "feedback": "Laskussa on virhe rivillä 4. Levy jäähtyy, joten sen sisäenergia pienenee ja energiaa siirtyy levyltä ympäristöön. Rivit 1–3 ovat oikein, mutta rivi 4 kääntää energian suunnan väärin päin."
+        }
+      ]
     }
   ],
   "level3": [
