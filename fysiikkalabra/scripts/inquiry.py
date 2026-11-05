@@ -1,7 +1,7 @@
 """Inquiry-based lesson structure: validation and rendering of content/<lang>/<course>/<id>/inquiry.json (format version 1).
 
-A lesson with inquiry.json is rendered as stages — Pohdinta → Ennusta → Tutki → Teoriatiivistelmä → Sovella →
-Tarkista osaamisesi — each holding activities; stages may repeat, be omitted, or hold the lesson's existing
+A lesson with inquiry.json is rendered as stages — Pohdinta → Ennusta → Tutki → Teoria → Harjoittele →
+Tarkista osaamisesi (Teoria and Harjoittele were Teoriatiivistelmä and Sovella until 2026-11-05) — each holding activities; stages may repeat, be omitted, or hold the lesson's existing
 parts (theory sections of lesson.md, the simulation, the exit ticket). The exit ticket opens Tarkista osaamisesi,
 before its checks, with no link of its own in the navigation (teacher 2026-11-04: one step fewer). The exercises always
 come last, in their own section "Tehtävät". A lesson without the file renders in the classic layout. See
@@ -44,6 +44,25 @@ CORE_TYPES = ("choice", "experiment", "interpret", "numeric", "explain")   # may
 OPTIONAL_TYPES = ("hook", "text", "choice", "experiment", "interpret", "numeric", "explain", "reflect", "theory", "exit")   # may carry "optional": true
 SOURCES = ("measured", "statistics", "simulated", "model", "example")   # statistics and example: teacher's FY2 rule 2026-10-28 (real sourced data / invented data said so)      # interpret "source"; its badge is lang "inquiry.source_<source>"
 RESERVED_IDS = {"sim", "sim-root", "exercises", "exit", "teoria", "herata", "ennusta", "tutki", "selita", "sovella", "tarkista"}   # ids the page already uses
+
+
+# The stages Teoriatiivistelmä and Sovella were renamed Teoria and Harjoittele (teacher 2026-11-05: the theory stage holds
+# more than a summary, and Sovella holds a worked example and practice). The texts written before name them the old way
+# ("Palaute avautuu, kun olet lukenut Teoriatiivistelmän kohdan …"); the page shows the new names, so the reviewed
+# content (and its hash) stays as it is. New text names the stages Teoria / Harjoittele (Theory / Practice) directly.
+_BACK = str.maketrans("äöÄÖ", "aoAO")             # tiivistelmä takes front-vowel endings, teoria back-vowel ones
+def _teoria(m):                                   # Teoriatiivistelmä(n) → Teoria(n); a place case → Teoria-osassa, not "teoriassa" (= in theory)
+    end = m.group(2)
+    return m.group(1) + "eoria" + (end if end in ("", "n") else "-osa" + end.translate(_BACK))
+OLD_STAGE_TERMS = ((re.compile(r"\b([Tt])eoriatiivistelmä(\w*)"), _teoria),
+                   (re.compile(r"\b([Tt])heory summary\b"), lambda m: m.group(1) + "heory"),
+                   (re.compile(r'(<a href="#sovella">)(?:Sovella|Apply)(</a>)'), lambda m: m.group(1) + T("inquiry.stage_sovella") + m.group(2)))
+
+
+def current_stage_names(html):
+    """The page's html with the old stage names of the texts replaced by the current ones (Teoriatiivistelmän → Teorian)."""
+    for rx, new in OLD_STAGE_TERMS: html = rx.sub(new, html)
+    return html
 
 
 def heading(title):
@@ -690,7 +709,8 @@ def render(folder, inquiry, parts, md):
             inner = (f'<details class="fold" data-fold="{sid}"><summary><span class="fold-title">{T("inquiry.fold_title")}</span> '
                      f'<span class="fold-status" data-n="{k}">{T("inquiry.fold_question_one" if k == 1 else "inquiry.fold_question_many", n=k)}</span></summary>'
                      f'<div class="fold-body">{inner}</div></details>')
-        body.append(f'<section class="stage" id="{sid}" data-stage="{sid}"><h2><span class="stage-no" aria-hidden="true">{n}</span>{title}</h2>{inner}</section>')
+        lead = f'<p class="stage-lead">{T(f"inquiry.lead_{sid}")}</p>' if T.has(f"inquiry.lead_{sid}") else ""   # what the stage is for (teacher 2026-11-05)
+        body.append(f'<section class="stage" id="{sid}" data-stage="{sid}"><h2><span class="stage-no" aria-hidden="true">{n}</span>{title}</h2>{lead}{inner}</section>')
         toc.append(toc_link(sid, n, title))
     if parts.get("cards"):                             # "Kertaa luvun käsitteet" after the exit ticket (scripts/concept_cards.py)
         body.append(parts["cards"]); toc.append(parts.get("cards_nav", ""))
@@ -700,7 +720,7 @@ def render(folder, inquiry, parts, md):
         body.append(f'<section class="stage stage-practice" id="exercises" data-stage="exercises"><h2>{exercises_title()}</h2>'
                     f'<div class="activity act-exercises" id="{esc(aid)}" data-type="exercises">{text}{parts["exercises"]}</div></section>')
         toc.append(f'<a href="#exercises" class="toc-end"><span class="toc-label">{exercises_title()}</span></a>')
-    return "\n".join(body), "".join(toc)
+    return current_stage_names("\n".join(body)), "".join(toc)
 
 
 if __name__ == "__main__":
