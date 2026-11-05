@@ -200,8 +200,10 @@ s_2 &= 12{,}0\,\text{m} \cdot 1{,}8^2 \\
 **Sijoitus:** a) Reaktioaika on $t_\text{r} = 1{,}2\,\text{s}$ ja hidastuvuus $a = \dfrac{1}{2 \cdot 0{,}098\,\text{s}^2/\text{m}} = 5{,}1\,\text{m/s}^2$. b) Lasketaan ensin tulo $a\,t_\text{r} = 5{,}1\,\text{m/s}^2 \cdot 1{,}2\,\text{s} = 6{,}12\,\text{m/s}$ ja sitten
 ```latex
 \begin{aligned}
+2a\,d &= 2 \cdot 5{,}1\,\text{m/s}^2 \cdot 55\,\text{m} \\
+&= 561\,\text{m}^2/\text{s}^2 \\
 v_\text{max} &= -6{,}12\,\text{m/s} \\
-&\quad + \sqrt{(6{,}12\,\text{m/s})^2 + 2 \cdot 5{,}1\,\text{m/s}^2 \cdot 55\,\text{m}} \\
+&\quad + \sqrt{(6{,}12\,\text{m/s})^2 + 561\,\text{m}^2/\text{s}^2} \\
 &= -6{,}12\,\text{m/s} + 24{,}46\,\text{m/s} \\
 &= 18{,}34\,\text{m/s} \\
 &= 66{,}0\,\text{km/h}
