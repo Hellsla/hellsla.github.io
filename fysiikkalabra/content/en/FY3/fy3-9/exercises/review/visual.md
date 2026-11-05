@@ -1,21 +1,17 @@
-VERDICT: PASS
-CONTENT-HASH: 503e26d6c082c1a1
-Mode: full
+VERDICT: FAIL
+CONTENT-HASH: abcb9e023a03aec9
+Mode: delta
 Round: 1
 
 ## Blocking
-(none)
-
-## Fixed
-(none: no translation text needed changes)
+- [Major] fy3-9-L2-08, figures pick-line/pick-boyle/pick-flat/pick-rising (en page) — the aria-label of all four graphs is Finnish ("Kuvaaja mittakaavassa: ilman paine p …") on the English page, while the other en figures have English labels — a screen-reader user of the English page gets the answer choices' graphs described in the wrong language — add English descriptions for the four pick-* figures in the figure catalogue (e.g. "Graph to scale: air pressure p as a function of volume V, V = 10–40 ml. Grid spacing 5 ml and 50 kPa. Falling curve: 100 kPa at 40 ml, 200 kPa at 20 ml, 400 kPa at 10 ml." and likewise for the others).
 
 ## Polish
-- None.
+- [Minor] L2-08 graphs — tick labels are small at 390 px (about 8 px effective); enlarge the font in the pick-* figures if the viewBox allows.
 
 ## Checked
-- Captures fy3-9-open-exercises-L2-1280-6 (L2-05 with table, en) and L3-1280-4 (en solution chain) opened; typography, units as inline maths, data table and solution display blocks render correctly in English.
-- Number formatting in rendered maths and tables matches the language convention; no Finnish or English left over; no overflow seen.
-- Pure translation text change: no figures altered.
+- Own 390 px render (scratch script, built page preview/en/fy3-9.html, every solution open): L2-08 (four graph choices, answer, solution), L2-03, L2-04, L3-01..03 task texts. No stale shots/ in the packet; changed solutions.md text read in the open solution cards. Hash re-run at the end: unchanged.
+- Maths: KaTeX fractions, aligned substitutions, units upright with thin space, decimal point consistent.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 3

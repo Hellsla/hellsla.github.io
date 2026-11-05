@@ -1,22 +1,17 @@
-VERDICT: PASS
-CONTENT-HASH: fcc0d449c338b7d3
-Mode: full
+VERDICT: FAIL
+CONTENT-HASH: 2b92f583c1086679
+Mode: delta
 Round: 1
 
 ## Blocking
-(none)
-
-## Fixed
-- (none)
+- [Major] fy3-13-L2-08 data table caption (390 px) — "Pressure of the air in a sealed bottle (example d…" is clipped at the right edge, so the label that marks the data as example data is not readable — the reader may take it for a real measurement — shorten the caption ("Air pressure in a sealed bottle, example data" still long: use "Bottle pressure (example data)") or let the caption wrap.
 
 ## Polish
-- [Minor] solutions.md L2-05 etc. — colon as division sign in prose maths — slightly unusual to read — optional change to a division sign (formula parity with fi must be kept).
+- [Minor] L2-08 solution — the interval "114.5–116.5 kPa" breaks across lines at the en dash; use a non-breaking form.
 
 ## Checked
-- fy3-13-open-exercises-1280-8.png: L1-07 solution and L1-08 task render; English wraps cleanly, math boxes intact, wrong-answer feedback shown in a callout.
-- fy3-13-open-exercises-L3-1280-9.png: L3-05 solution (English) renders; fractions, units and the answer box are intact, no overflow at 1280 px.
-- Data tables of L2-05..07, L3-04..05 have translated captions and column headers; cell values are identical to fi.
-- No Finnish text visible in en captures; fi-easy shows Finnish decimal commas in prose and solutions.
+- Own 390 px render (scratch script, built page preview/en/fy3-13.html, every solution open): L2-08 (table, choices, answer, solution). No stale shots/ in the packet; changed solutions.md text read in the open solution cards. Hash re-run at the end: unchanged.
+- Maths: KaTeX fractions, aligned substitutions, units upright with thin space, decimal point consistent.
 
 ## Scores
-illustrations n/a · typography good · layout good · language good
+illustrations 4 · typography 4 · Finnish 4 · accessibility 3

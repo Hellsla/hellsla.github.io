@@ -1,22 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 38b3c624adaef8c4
-Mode: full
+CONTENT-HASH: fc8e9463ff0d07a5
+Mode: delta
 Round: 1
 
 ## Blocking
 (none)
 
-## Fixed
-- (none)
-
 ## Polish
-- [Minor] solutions.md L2-05 etc. — colon as division sign in prose maths — slightly unusual to read — optional change to a division sign (formula parity with fi must be kept).
+- [Minor] L2-08 data table caption — "(esimerkkiaineisto)" just fits at 390 px; shorten the caption for margin.
+- [Minor] L2-08 solution — the interval "114,5–116,5 kPa" breaks across lines at the dash.
 
 ## Checked
-- fy3-13-open-exercises-1280-8.png: L1-07 solution and L1-08 task render; text wraps cleanly, math boxes intact, wrong-answer feedback shown in a callout.
-- fy3-13-open-exercises-L3-1280-9.png: L3-05 solution (plain Finnish (selkosuomi)) renders; fractions, units and the answer box are intact, no overflow at 1280 px.
-- Data tables of L2-05..07, L3-04..05 have translated captions and column headers; cell values are identical to fi.
-- No Finnish text visible in en captures; fi-easy shows Finnish decimal commas in prose and solutions.
+- Own 390 px render (scratch script, built page preview/fi-easy/fy3-13.html, every solution open): L2-08 (table, choices, answer, solution). No stale shots/ in the packet; changed solutions.md text read in the open solution cards. Hash re-run at the end: unchanged.
+- Maths: KaTeX fractions, aligned substitutions, units upright with thin space, decimal comma consistent.
 
 ## Scores
-illustrations n/a · typography good · layout good · language good
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

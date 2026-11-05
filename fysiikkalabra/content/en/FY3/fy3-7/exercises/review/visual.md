@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 570add1f37f67fc1
-Mode: full
+CONTENT-HASH: d87d16983757f141
+Mode: delta
 Round: 1
 
 ## Blocking
 (none)
 
-## Fixed
-- L2-07 table column header T_k changed to T_b so it matches the task text and the solution (seen in the open-exercises capture).
-
 ## Polish
-- none
+- [Minor] L2-08 — the task text ends "…put the batches in order" and the prompt repeats it; drop the sentence from the text.
 
 ## Checked
-- open-exercises-L2-1280-5, L2-1280-9 (L2-06 solution, L2-07 task and table), L3-1280-6, L3-1280-8: tables with units in headers, fractions and aligned substitutions render cleanly, answer boxes show the right units (K, kJ, g).
+- Own 390 px render (scratch script, built page preview/en/fy3-7.html, every solution open): L2-08 (task, order widget, answer, solution), L3-01, L3-02, L3-03 task texts. No stale shots/ in the packet; changed solutions.md text read in the open solution cards. Hash re-run at the end: unchanged.
+- Maths: KaTeX fractions, aligned substitutions, units upright with thin space, decimal point consistent.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish (English) 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

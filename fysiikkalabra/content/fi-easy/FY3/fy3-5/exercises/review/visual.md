@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: ec256559ecba9230
+CONTENT-HASH: b9b137c60b60a64a
+Mode: delta
+Round: 1
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L2-06 solution — in Substitution, "b)" is left at the end of a line before the equation block; same in the Finnish layout, optional break before b).
+(none)
 
 ## Checked
-- Captures opened (fi-easy): open-exercises L2 (cycle task L2-05 solution, L2-06 error task), L3 (L3-04 table and solution, L3-05 table and solution), fy3-5-open-exercises-L2-1280-8 / L3 shots.
-- Tables show the decimal comma, units upright, captions translated; formulas render, answer boxes and unit fields present.
+- New task fy3-5-L1-09 at 390 px (fi-easy), own render of preview/fi-easy/fy3-5.html: task text, every option and its feedback open, solution card open; page and card have no horizontal overflow (scrollWidth equals width).
+- Delta covers only the new task and its solution; surrounding exercises were not changed.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish (Selkeä suomi) 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4
