@@ -220,6 +220,16 @@ a 0
 **Kysytty:** kokonaisvoiman suuruus $\Sigma F$ yksikössä $\text{N}$
 **Periaate:** Kokonaisvoima on voimien vektorisumma. Voimat ovat samalla suoralla, joten summa lasketaan vaakasuunnan komponenteista, kun $x$ osoittaa työntämisen suuntaan. Pystysuunnassa kokonaisvoima on nolla.
 **Voimakuvio:** Kaappi suorakulmiona, $x$ työntämisen suuntaan ja $y$ ylös. Kaksi työntövoimaa $\overline{F}_1$ ja $\overline{F}_2$ eteenpäin, kitkavoima $\overline{F}_\mu$ taaksepäin sekä paino $\overline{G}$ alas ja tukivoima $\overline{N}$ ylös yhtä pitkinä. Kitkavoima on pidempi kuin kumpikaan työntövoima mutta lyhyempi kuin niiden summa.
+```voimakuvio
+pinta 0
+G 600
+N 600
+F_1 120 0 työntö
+F_2 85 0 työntö
+F_mu 150 vasen
+a oikea
+akselit 0
+```
 **Kaava:** $\Sigma F_x = F_1 + F_2 - F_\mu$
 **Muunnokset:** Kaikki voimat ovat newtoneina, joten muunnoksia ei tarvita.
 **Sijoitus:** $\Sigma F_x = 120\,\text{N} + 85\,\text{N} - 150\,\text{N} = 55\,\text{N}$
@@ -236,6 +246,14 @@ a 0
 **Kysytty:** kulman $\alpha$ keskiarvo $\alpha_\text{ka}$ yksikössä $^\circ$
 **Periaate:** Rengas on levossa, joten Newtonin toisen lain mukaan siihen vaikuttavien voimien summa on nolla sekä vaaka- että pystysuunnassa. Köysi B on vino, joten sen voima jaetaan komponentteihin.
 **Voimakuvio:** Rengas suorakulmiona, $x$ oikealle ja $y$ ylös. Köyden A jännitysvoima $\overline{F}_\text{A}$ vasemmalle ja köyden C jännitysvoima $\overline{F}_\text{C}$ alas. Köyden B voima $\overline{F}_\text{B}$ lähtee vinosti ylös oikealle kulmassa $\alpha$, ja sen komponentit $F_\text{B}\cos\alpha$ ja $F_\text{B}\sin\alpha$ piirretään katkoviivoin. Komponentit ovat yhtä pitkät kuin $F_\text{A}$ ja $F_\text{C}$. Renkaan painoa ei piirretä, koska tehtävässä se jätetään huomiotta.
+```voimakuvio
+F_A 3,0 vasen
+F_C 2,5 alas
+F_B 3,9 39,8
+a 0
+akselit 0
+komponentit F_B
+```
 **Kuvaajan lukeminen:** Taulukosta luetaan kunkin mittauksen voimat $F_\text{A}$ ja $F_\text{C}$. Vertailuun otetaan myös anturin B lukema.
 **Kaava:** $x$: $F_\text{B}\cos\alpha - F_\text{A} = 0$ ja $y$: $F_\text{B}\sin\alpha - F_\text{C} = 0$, joten $\alpha = \arctan\dfrac{F_\text{C}}{F_\text{A}}$
 **Muunnokset:** Voimat ovat newtoneina ja kulma lasketaan asteina, joten muunnoksia ei tarvita; laskin on asteikolla DEG.
@@ -275,6 +293,14 @@ a vasen
 **Kysytty:** voimien $\overline{F}_1$ ja $\overline{F}_2$ summan suuruus $\Sigma F$ yksikössä $\text{N}$, kun $\varphi = 60\,{}^\circ$
 **Periaate:** a) Rengas on levossa, joten Newtonin toisen lain mukaan voimien $\overline{F}_1$, $\overline{F}_2$ ja $\overline{F}_3$ summa on nolla. Siksi anturin 3 voima on yhtä suuri ja vastakkaissuuntainen kuin voimien $\overline{F}_1$ ja $\overline{F}_2$ summa, ja sen lukema kertoo summan suuruuden. b) Vinojen voimien summa lasketaan komponenteittain.
 **Voimakuvio:** Rengas suorakulmiona, $x$ voiman $\overline{F}_1$ suuntaan. Voima $\overline{F}_1$ lähtee suoraan $x$-akselin suuntaan ja voima $\overline{F}_2$ kulmassa $60\,{}^\circ$ ylöspäin. Voima $\overline{F}_3$ lähtee vastakkaiseen suuntaan kuin niiden summa. Komponentit $F_{2x}$ ja $F_{2y}$ piirretään katkoviivoin.
+```voimakuvio
+F_1 6,0 0
+F_2 8,0 60
+F_3 12,2 214,7
+a 0
+akselit 0
+komponentit F_2
+```
 **Kuvaajan lukeminen:** Taulukosta luetaan rivi $\varphi = 60\,{}^\circ$: $F_3 = 12{,}3\,\text{N}$.
 **Kaava:** $\Sigma F_x = F_1 + F_2\cos\varphi$ ja $\Sigma F_y = F_2\sin\varphi$, joten $\Sigma F = \sqrt{(\Sigma F_x)^2 + (\Sigma F_y)^2}$
 **Muunnokset:** Voimat ovat newtoneina ja kulma asteina, joten muunnoksia ei tarvita.
