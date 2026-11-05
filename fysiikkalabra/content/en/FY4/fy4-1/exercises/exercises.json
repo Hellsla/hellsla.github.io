@@ -11,6 +11,7 @@
     {
       "id": "fy4-1-L1-02",
       "level": 1,
+      "core": true,
       "text": "A cart on the $x$-axis is first at the position $12\\,\\text{m}$ and then moves to the position $-5.0\\,\\text{m}$. What is the displacement of the cart? Give the answer with its sign.",
       "answer": -17,
       "unit": "m",
@@ -73,6 +74,7 @@
     {
       "id": "fy4-1-L1-07",
       "level": 1,
+      "core": true,
       "text": "A walker walks $40\\,\\text{m}$ east along a straight road, turns around and walks the same $40\\,\\text{m}$ back to the starting point. East has been chosen as the positive direction. Which statement about the whole walk is correct?",
       "kind": [
         "concept"
@@ -152,6 +154,7 @@
     {
       "id": "fy4-1-L2-03",
       "level": 2,
+      "core": true,
       "text": "At the moment $t = 2.0\\,\\text{s}$ a cart is at the position $18\\,\\text{m}$ and at the moment $t = 7.0\\,\\text{s}$ at the position $3.0\\,\\text{m}$. The cart moves uniformly. Calculate the velocity of the cart with its sign.",
       "answer": -3.0,
       "unit": "m/s",
@@ -168,6 +171,7 @@
     {
       "id": "fy4-1-L2-05",
       "level": 2,
+      "core": true,
       "text": "The motion of a cart was followed with video analysis. The table gives the position of the cart at different moments (example data). The motion of the cart is uniform.\n\nDraw the $(t, x)$ graph from the data and fit a straight line through the points. Use the line to determine the velocity $v$ of the cart. Also give the initial position $x_0$ and write the position of the cart as a function of time.\n\nWrite the velocity in the answer box.",
       "kind": [
         "data",

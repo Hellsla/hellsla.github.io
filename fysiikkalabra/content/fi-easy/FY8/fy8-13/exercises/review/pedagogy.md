@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: aea99f1fb4c1726f
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 83c2a5ec2edf0391
+Mode: delta
 
 ## Blocking
 (none)
 
-## Fixed
-(none needed)
-
 ## Polish
-(none)
+- exercises.json core marks — there is still no shielding task in the core path. — Optionally also mark L1-05 as core.
+- solutions.md:59 (L2-01 Järkevyys) — it does not say why the share is 4 % (left as is). — "Kilpirauhasen painotuskerroin on vain 0,04."
 
 ## Checked
-- The teaching content of the 8 new exercises matches fi: same task structure (parts a-d, "answer box takes part ..." line), same kinds, same model answers (L2-07 error explanation, L3-04 c winter/heating season, L3-05 d scattering and shorter working time), same reasonableness checks.
-- Language level: selkosuomi: short sentences, terms explained in place (radon, taustasäteily, kosminen säteily, savupiippuilmiö); decimal comma kept.
-- Feedback in L1-06 explains why each wrong option fails, not only that it does.
-- Terms introduced in the tasks (example data, reference level, remediation, half-value thickness) are used as in fi and the lesson.
+- The new :134 sentence is short and readable in selko.
+- Core is now L1-06, L1-07, L2-02, L2-05, the same as fi.
+- Hash 83c2a5ec2edf0391 at start and end.

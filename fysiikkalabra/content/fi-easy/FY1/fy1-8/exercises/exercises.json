@@ -3,6 +3,7 @@
     {
       "id": "fy1-8-L1-01",
       "level": 1,
+      "core": true,
       "text": "Pallo vierii rinnettä alas. Oppilas mittaa sen kulkuajaksi käsikellolla $4{,}0\\,\\text{s}$. Ajanoton epävarmuus on $\\Delta t = 0{,}2\\,\\text{s}$. Kuinka suuri on ajan suhteellinen epävarmuus $\\varepsilon$ prosentteina?",
       "answer": 5.0,
       "unit": "%",
@@ -73,6 +74,7 @@
     {
       "id": "fy1-8-L1-07",
       "level": 1,
+      "core": true,
       "text": "Oppilaat haluavat tutkia heiluria koulun fysiikan tunnilla yksinkertaisella kokeella. Mikä seuraavista on hyvä tutkimuskysymys?",
       "kind": [
         "concept"
@@ -135,6 +137,7 @@
     {
       "id": "fy1-8-L2-01",
       "level": 2,
+      "core": true,
       "text": "Leluauton ajoaikaa mitataan viisi kertaa. Tulokset ovat $7{,}8\\,\\text{s}$, $8{,}2\\,\\text{s}$, $7{,}9\\,\\text{s}$, $8{,}1\\,\\text{s}$ ja $8{,}0\\,\\text{s}$. Epävarmuuden yksinkertainen ja varovainen arvio on puolet vaihteluvälistä. Kuinka suuri on tuloksen suhteellinen epävarmuus prosentteina?",
       "answer": 2.5,
       "unit": "%",
@@ -214,6 +217,7 @@
     {
       "id": "fy1-8-L2-06",
       "level": 2,
+      "core": true,
       "text": "Oppilas tutkii, vaikuttaako kärryn massa siihen, kuinka nopeasti kärry vierii rampin alas. Hänen suunnitelmansa on: ”Päästän kevyen kärryn loivaa ramppia alas ja raskaan kärryn jyrkkää ramppia alas ja vertaan aikoja.” Mikä muutos korjaa suunnitelman?",
       "kind": [
         "error",

@@ -43,6 +43,7 @@
     {
       "id": "fy5-2-L1-06",
       "level": 1,
+      "core": true,
       "text": "Kevyen tangon vasempaan päähän vaikuttaa pystysuora $10\\,\\text{N}$:n voima ylöspäin. Oikeaan päähän vaikuttaa pystysuora $10\\,\\text{N}$:n voima alaspäin. Tanko on aluksi levossa, eikä sitä ole tuettu mistään. Tangon painoa ei oteta huomioon.\n\nMitä tangolle tapahtuu?",
       "kind": [
         "concept"
@@ -91,6 +92,7 @@
     {
       "id": "fy5-2-L2-01",
       "level": 2,
+      "core": true,
       "text": "Tasa-aineisen lankun pituus on $4{,}00\\,\\text{m}$ ja massa $25{,}0\\,\\text{kg}$. Lankku on vaakasuorassa kahden tuen varassa. Tuet ovat $0{,}50\\,\\text{m}$:n ja $3{,}00\\,\\text{m}$:n päässä lankun vasemmasta päästä. Kuinka suuri on vasemman tuen tukivoima?",
       "answer": 98.1,
       "unit": "N",
@@ -107,6 +109,7 @@
     {
       "id": "fy5-2-L2-03",
       "level": 2,
+      "core": true,
       "text": "Tasa-aineisen kirjahyllyn syvyys on $0{,}400\\,\\text{m}$ ja korkeus $1{,}80\\,\\text{m}$. Sen painopiste on keskellä. Hyllyä kallistetaan eteenpäin niin, että se nojaa vain etureunaansa. Kuinka suuri on kallistuskulma pystysuoraan nähden, kun hylly on kaatumisen rajalla? Silloin hylly kaatuisi itsestään, jos kulma kasvaisi vielä. Vastaa asteina.",
       "answer": 12.5,
       "unit": "°",
@@ -124,6 +127,7 @@
     {
       "id": "fy5-2-L2-05",
       "level": 2,
+      "core": true,
       "text": "Tasa-aineisen lankun pituus on $3{,}00\\,\\text{m}$ ja massa $10{,}0\\,\\text{kg}$. Lankku on vaakasuorassa kahden voima-anturin varassa. Anturit ovat lankun päissä. Lankulla seisova henkilö siirtyy askel kerrallaan kohti oikeaa päätä. Taulukossa on vasemman anturin lukema $N_1$ henkilön paikan $x$ mukaan. Paikka $x$ mitataan lankun vasemmasta päästä. Aineisto on esimerkkiaineistoa.\n\na) Piirrä mittauspisteistä $(x, N_1)$-kuvaaja. Sovita pisteisiin suora ja määritä sen kulmakerroin. Laske kulmakertoimesta henkilön massa.\n\nb) Selitä momenttiehdon avulla, miksi pisteet ovat samalla suoralla.\n\nVastauslaatikkoon tulee a)-kohdan henkilön massa kilogrammoina.",
       "kind": [
         "data",

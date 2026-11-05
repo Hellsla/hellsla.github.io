@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: c245c1fc5b1be4ba
+CONTENT-HASH: d81523ca9a2b0c13
+Mode: full in the packet; scope by the teacher's ruling ("katselmoi vain muuttuneet osat"): the diff since the last PASS (`git diff 54b95f708 -- content/fi-easy/FY7/fy7-5/lesson.md content/fi-easy/FY7/fy7-5/inquiry.json`) plus what the changed lines touch. The exercise set is reviewed apart.
 
 ## Blocking
+(none)
 
 ## Polish
-- meta.json:34 — The induktiojännite entry says "käämin päiden välille", which leaves out the moving rod (e = vBl in the lesson and the glossary). This is a fair simplification for the box. Optional fix: "käämin tai liikkuvan johtimen päiden välille".
+- lesson.md:198 — caption ends "Jännite lataa lampun", but the voltage charges the torch's energy store (akku tai kondensaattori), not the bulb; fi says "lataa lampun energiavaraston" — "Jännite lataa lampun akun." or as in fi.
 
 ## Checked
-- Round-2 delta: meta.json key_concepts. The rest of the lesson is as passed.
-- magneettivuo: the round-1 B is fixed. It now says "riippuu kentästä, silmukan pinta-alasta ja silmukan asennosta kenttään nähden". This agrees with the lesson's flux figure and the glossary (Φ = BA only when a homogeneous field is perpendicular to the surface), and it does not claim Φ = BA in general.
-- induktio, induktiolaki: still correct. The law is stated qualitatively, consistent with e = −N ΔΦ/Δt, and claims no false proportionality.
-- induktiojännite: drives current only in a closed circuit. Correct.
-- Rendering at 390 px (own Playwright capture of #kasitteet): the box is 358 px wide with a 16 px gutter, scrollWidth is 390, and nothing overflows. Screenshot captures are current (stamp reused).
-- The hash was identical at the start and at the end.
+- inquiry.json prior and warm-up: F = qvB now F = |q|vB — right for the magnitude (electron q < 0), matches fi and fy7-2.
+- Warm-up still has exactly one correct option; distractor feedback still says why each is wrong.
+- Chapter references renamed to *Varatun hiukkasen liike sähkö- ja magneettikentässä* and *Homogeeninen sähkökenttä* (lesson.md:362), the current titles.
+- lesson.md:362 F_m = evB consistent with |q|vB for an electron; E = vB and e = vBl unchanged.
+- Hash d81523ca9a2b0c13 at start and end, equal to the packet's.

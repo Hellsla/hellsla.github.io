@@ -11,6 +11,7 @@
     {
       "id": "fy4-6-L1-02",
       "level": 1,
+      "core": true,
       "text": "Pulkka, jonka massa on $30\\,\\text{kg}$, liukuu vaakasuoralla lumella. Pulkan ja lumen välinen liikekitkakerroin on $0{,}12$. Piirrä pulkan voimakuvio. Kuinka suuri on lumen kitkavoima pulkkaan?",
       "answer": 35.0,
       "unit": "N",
@@ -46,6 +47,7 @@
     {
       "id": "fy4-6-L1-06",
       "level": 1,
+      "core": true,
       "text": "Laatikko on levossa vaakasuoralla lattialla. Sitä työnnetään vaakasuoraan $20\\,\\text{N}$:n voimalla, mutta se ei liiku.\n\nLaatikon ja lattian välisen lepokitkan suurin mahdollinen arvo on $60\\,\\text{N}$. Mikä väite lattian laatikkoon kohdistamasta lepokitkasta $F_{\\mu 0}$ on oikea?",
       "kind": [
         "concept"
@@ -121,6 +123,7 @@
     {
       "id": "fy4-6-L2-01",
       "level": 2,
+      "core": true,
       "text": "Pulkka lähtee levossa liukumaan $12^\\circ$:n kaltevuuskulman mäessä ja saavuttaa $4{,}0\\,\\text{s}$:ssa nopeuden $3{,}0\\,\\text{m/s}$. Kiihtyvyys on vakio. Kuinka suuri on pulkan ja lumen välinen liikekitkakerroin? Ilmanvastus jätetään huomiotta.",
       "answer": 0.13,
       "unit": "",
@@ -157,6 +160,7 @@
     {
       "id": "fy4-6-L2-05",
       "level": 2,
+      "core": true,
       "kind": [
         "data",
         "graph"

@@ -11,6 +11,7 @@
     {
       "id": "fy8-15-L1-02",
       "level": 1,
+      "core": true,
       "text": "The antiproton $\\bar{p}$ is made of the antiquarks $\\bar{u}\\,\\bar{u}\\,\\bar{d}$. Calculate its charge as a multiple of the elementary charge $e$. Quark charges: $u$ ($+\\tfrac{2}{3}e$), $d$ and $s$ ($-\\tfrac{1}{3}e$); the charge of an antiquark is opposite.",
       "answer": -1,
       "unit": "e",
@@ -43,6 +44,7 @@
     {
       "id": "fy8-15-L1-06",
       "level": 1,
+      "core": true,
       "text": "The photon is the mediator particle of which fundamental interaction?",
       "kind": [
         "concept"
@@ -197,6 +199,7 @@
     {
       "id": "fy8-15-L2-06",
       "level": 2,
+      "core": true,
       "kind": [
         "data",
         "reasoning"
@@ -246,6 +249,7 @@
     {
       "id": "fy8-15-L2-07",
       "level": 2,
+      "core": true,
       "text": "A student claims: “A free neutron is stable, because it is an elementary particle.”\n\nWhat is wrong in the claim?",
       "kind": [
         "error",

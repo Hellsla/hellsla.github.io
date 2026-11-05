@@ -541,7 +541,7 @@
   },
   {
     "term": "kasvihuoneilmiö",
-    "definition": "Ilmiö, jossa ilmakehän kasvihuonekaasut, kuten vesihöyry ja hiilidioksidi, imevät maanpinnan lämpösäteilyä ja säteilevät osan takaisin alas. Se nostaa maanpinnan keskilämpötilan noin −18 °C:sta noin +15 °C:een.",
+    "definition": "Ilmiö, jossa ilmakehän kasvihuonekaasut, kuten vesihöyry ja hiilidioksidi, imevät maanpinnan lämpösäteilyä ja säteilevät osan takaisin alas. Se nostaa maanpinnan keskilämpötilaa: yksinkertainen säteilytasapainomalli antaa ilman sitä noin $-18\\,{}^\\circ\\text{C}$:n efektiivisen säteilylämpötilan, kun havaittu keskilämpötila on noin $+15\\,{}^\\circ\\text{C}$.",
     "lessons": [
       "fy2-8",
       "fy3-12"
@@ -3559,7 +3559,7 @@
   },
   {
     "term": "magneettinen voima",
-    "definition": "Voima, jolla magneettikenttä vaikuttaa liikkuvaan varattuun hiukkaseen tai virtajohtimeen. Hiukkaseen vaikuttavan voiman suuruus on F = qvB sin α, ja se on kohtisuorassa sekä nopeutta että kenttää vastaan, joten se kääntää liikettä muuttamatta vauhtia.",
+    "definition": "Voima, jolla magneettikenttä vaikuttaa liikkuvaan varattuun hiukkaseen tai virtajohtimeen. Hiukkaseen vaikuttavan voiman suuruus on $F = |q|vB\\sin\\alpha$, ja se on kohtisuorassa sekä nopeutta että kenttää vastaan, joten se kääntää liikettä muuttamatta vauhtia.",
     "lessons": [
       "fy7-2"
     ],
@@ -3571,7 +3571,7 @@
   },
   {
     "term": "ympyrärata",
-    "definition": "Ympyrän muotoinen rata. Kohtisuorassa homogeenista magneettikenttää vastaan liikkuva varattu hiukkanen kiertää ympyrärataa, jonka säde on r = mv/(qB), koska magneettinen voima toimii keskeisvoimana.",
+    "definition": "Ympyrän muotoinen rata. Kohtisuorassa homogeenista magneettikenttää vastaan liikkuva varattu hiukkanen kiertää ympyrärataa, jonka säde on $r = mv : (|q|B)$, koska magneettinen voima toimii keskeisvoimana.",
     "lessons": [
       "fy7-2"
     ],
@@ -5446,7 +5446,7 @@
   },
   {
     "term": "efektiivinen annos",
-    "definition": "Säteilyannos, jossa absorboitunut annos on painotettu säteilylajin ja säteilytettyjen kudosten herkkyyden mukaan. Se kuvaa pienten annosten pitkän aikavälin syöpäriskiä koko keholle. Yksikkö on sievert $\\text{Sv}$.",
+    "definition": "Säteilyannos, jossa absorboitunut annos on painotettu säteilylajin ja säteilytettyjen kudosten herkkyyden mukaan. Sillä arvioidaan pienten annosten pitkän aikavälin syöpäriskiä keskimääräiselle ihmiselle, ei yksittäisen ihmisen riskiä. Yksikkö on sievert $\\text{Sv}$.",
     "lessons": [
       "fy8-13"
     ],

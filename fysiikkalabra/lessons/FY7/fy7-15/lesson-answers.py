@@ -52,6 +52,4 @@ a["check-P"] = 5.00 * c2(50.0)                      # 2,066 mW -> 2,07 mW
 a["check-cos"] = 5.00 * cos(radians(50.0))          # mistake: cos, 3,214 mW
 a["check-half"] = 5.00 / 2 * c2(50.0)               # mistake: halved although the laser is polarised, 1,033 mW
 a["check-comp"] = 5.00 * c2(40.0)                   # mistake: the complement 40°, 2,934 mW
-# exit ticket: glass n = 1,50 against air
-a["exit-brew"] = a["brew-glass"]                    # 56,3°
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

@@ -1,10 +1,10 @@
 [
   {
-    "q": "Lasin taitekerroin on $1{,}50$. Millä tulokulmalla ilmasta lasin pintaan tulevan valon heijastus on täysin polarisoitunutta?",
-    "a": "Brewsterin laista $\\tan\\alpha_\\text{B} = 1{,}50 : 1{,}00 = 1{,}50$, joten $\\alpha_\\text{B} = 56{,}3^\\circ$. Tässä kulmassa heijastunut ja taittunut säde ovat kohtisuorassa toisiaan vastaan."
+    "q": "Kaksi polarisaattorikalvoa on ristissä, joten niiden läpi ei tule valoa. Niiden väliin työnnetään kolmas kalvo, jonka läpäisysuunta on $45^\\circ$:n kulmassa kumpaankin. Miksi valoa alkaa taas tulla läpi?",
+    "a": "Ensimmäisen kalvon jälkeen valo on polarisoitunut sen läpäisysuuntaan. Keskimmäinen kalvo päästää siitä läpi osan, ja sen jälkeen valo on polarisoitunut $45^\\circ$:n kulmaan. Tällä värähtelyllä on komponentti myös viimeisen kalvon läpäisysuunnassa, joten osa valosta pääsee viimeisenkin kalvon läpi. Ilman keskimmäistä kalvoa viimeiseen kalvoon tuleva värähtely on kohtisuorassa sen läpäisysuuntaa vastaan, eikä valoa pääse läpi."
   },
   {
     "q": "Puhelimen näyttö näkyy kirkkaana polaroitujen aurinkolasien läpi, mutta kun puhelinta kääntää $90^\\circ$, näyttö muuttuu lähes mustaksi. Miksi?",
-    "a": "Näytön pinnassa on polarisaattorikalvo, joten näytön valo on polarisoitunutta. Kun näytön polarisaatiosuunta on lasien läpäisysuunnan suuntainen, valo pääsee läpi. Kun puhelinta käännetään $90^\\circ$, suunnat ovat ristissä, ja Malusin lain mukaan läpi pääsee $\\cos^2 90^\\circ = 0$ eli lähes ei mitään."
+    "a": "Näytön pinnassa on polarisaattorikalvo, joten näytön valo on polarisoitunutta. Kun näytön polarisaatiosuunta on lasien läpäisysuunnan suuntainen, valo pääsee läpi. Kun puhelinta käännetään $90^\\circ$, suunnat ovat ristissä, ja ristissä olevien polarisaattorien läpi ei pääse juuri lainkaan valoa."
   }
 ]

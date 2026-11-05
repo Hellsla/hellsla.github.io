@@ -11,6 +11,7 @@
     {
       "id": "fy6-4-L1-02",
       "level": 1,
+      "core": true,
       "text": "Vastukset $40\\,\\Omega$ ja $60\\,\\Omega$ kytketään rinnan. Kuinka suuri on kytkennän kokonaisresistanssi?",
       "answer": 24,
       "unit": "Ω",
@@ -73,6 +74,7 @@
     {
       "id": "fy6-4-L1-07",
       "level": 1,
+      "core": true,
       "text": "Ideaaliseen paristoon (sen jännite ei laske, vaikka virta kasvaa) on kytketty kaksi samanlaista lamppua rinnan. Sitten paristoon kytketään vielä kolmas samanlainen lamppu rinnan kahden ensimmäisen kanssa. Mitä tapahtuu kytkennän kokonaisresistanssille ja paristosta lähtevälle virralle?",
       "kind": [
         "concept"
@@ -113,6 +115,7 @@
     {
       "id": "fy6-4-L2-01",
       "level": 2,
+      "core": true,
       "text": "Vastukset $1{,}2\\,\\text{k}\\Omega$ ja $680\\,\\Omega$ kytketään sarjaan $9{,}0\\,\\text{V}$:n paristoon. Kuinka suuri virta piirissä kulkee? Anna vastaus milliampeereina.",
       "answer": 4.8,
       "unit": "mA",
@@ -186,6 +189,7 @@
     {
       "id": "fy6-4-L2-06",
       "level": 2,
+      "core": true,
       "kind": [
         "data",
         "error"

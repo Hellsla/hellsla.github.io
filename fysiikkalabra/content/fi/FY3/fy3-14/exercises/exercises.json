@@ -3,6 +3,7 @@
     {
       "id": "fy3-14-L1-01",
       "level": 1,
+      "core": true,
       "text": "Mehujuomaan pudotetaan $0{,}050\\,\\text{kg}$:n jääpala, jonka lämpötila on $0\\,{}^\\circ\\text{C}$. Jää sulaa kokonaan vedeksi, jonka lämpötila on $0\\,{}^\\circ\\text{C}$. Kuinka suuren lämpömäärän jää ottaa itseensä sulaessaan? Anna vastaus kilojouleina.",
       "answer": 17,
       "unit": "kJ",
@@ -85,6 +86,7 @@
     {
       "id": "fy3-14-L1-08",
       "level": 1,
+      "core": true,
       "text": "Eristettyyn astiaan, jossa on vettä, lisätään pakastimesta otettua jäätä. Halutaan tietää, sulaako kaikki jää. Mitä vertailua tässä käytetään ensimmäisenä?",
       "kind": [
         "concept",
@@ -118,6 +120,7 @@
     {
       "id": "fy3-14-L2-01",
       "level": 2,
+      "core": true,
       "text": "Kalorimetrissä on $0{,}35\\,\\text{kg}$ vettä, jonka lämpötila on $30\\,{}^\\circ\\text{C}$. Veteen pudotetaan $0{,}060\\,\\text{kg}$ jäätä, jonka lämpötila on $0\\,{}^\\circ\\text{C}$. Mikä on kalorimetrin sisällön lämpötila, kun lämpötasapaino on saavutettu ja kaikki jää on sulanut? Oleta, ettei lämpöä siirry kalorimetriin eikä ympäristöön.",
       "answer": 14,
       "unit": "°C",
@@ -196,6 +199,7 @@
     {
       "id": "fy3-14-L2-06",
       "level": 2,
+      "core": true,
       "text": "Eristetyssä astiassa on $0{,}30\\,\\text{kg}$ vettä, jonka lämpötila on $20\\,{}^\\circ\\text{C}$. Veteen lisätään $0{,}15\\,\\text{kg}$ jäätä, jonka lämpötila on $-15\\,{}^\\circ\\text{C}$. Opiskelija ratkaisee, kuinka paljon jäätä sulaa, ja kirjoittaa:\n\n”Vesi luovuttaa jäähtyessään $0\\,{}^\\circ\\text{C}$:seen lämmön $Q_\\text{v} = 25\\,140\\,\\text{J}$. Koko jään sulattaminen vaatisi lämmön $50\\,100\\,\\text{J}$, joten kaikki jää ei sula. Sulaneen jään massa on $m = \\dfrac{25\\,140\\,\\text{J}}{334\\,000\\,\\tfrac{\\text{J}}{\\text{kg}}} = 75\\,\\text{g}$.”\n\na) Mikä virhe laskussa on? Tarkista myös, että opiskelijan päätelmä ”kaikki jää ei sula” pitää paikkansa.\n\nb) Laske sulaneen jään massa oikein. Anna b)-kohdan tulos grammoina vastauslaatikkoon.",
       "kind": [
         "error",

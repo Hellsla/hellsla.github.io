@@ -19,6 +19,7 @@
     {
       "id": "fy7-6-L1-03",
       "level": 1,
+      "core": true,
       "text": "An eddy-current brake slows a $450\\,\\text{kg}$ roller-coaster car on a horizontal track from a speed of $22\\,\\text{m/s}$ to a speed of $6.0\\,\\text{m/s}$. Other resistances are ignored. How much energy is converted into internal energy of the copper plates of the brake? Give your answer in kilojoules.",
       "answer": 100,
       "unit": "kJ",
@@ -73,6 +74,7 @@
     {
       "id": "fy7-6-L1-07",
       "level": 1,
+      "core": true,
       "text": "A neodymium magnet is dropped vertically first in an aluminium tube and then in a similar plastic tube. The magnet falls clearly more slowly in the aluminium tube than in the plastic tube. What explains the difference?",
       "kind": [
         "concept"
@@ -113,6 +115,7 @@
     {
       "id": "fy7-6-L2-01",
       "level": 2,
+      "core": true,
       "text": "A magnet of mass $20\\,\\text{g}$ is dropped into a vertical copper tube $1.50\\,\\text{m}$ long. It emerges from the lower end of the tube after $10\\,\\text{s}$ and falls at a steady speed for almost the whole distance. At what rate does the internal energy of the tube increase during the fall? Give your answer in milliwatts.",
       "answer": 29,
       "unit": "mW",
@@ -192,6 +195,7 @@
     {
       "id": "fy7-6-L2-06",
       "level": 2,
+      "core": true,
       "text": "A student writes in an exam:\n\n“A north pole of a bar magnet approaches a copper ring, and the magnetic flux through the ring increases. The induced current tries to increase this change in flux, so a south pole appears on the side of the ring facing the magnet. The ring attracts the magnet, and the magnet accelerates towards the ring.”\n\na) What is the error in the reasoning, and which pole really appears on the side of the ring facing the magnet?\n\nb) Why would the student’s rule violate conservation of energy?",
       "kind": [
         "error"

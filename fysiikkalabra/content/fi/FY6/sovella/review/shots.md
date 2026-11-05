@@ -1,6 +1,6 @@
 # Screenshots of FY6-sovella (preview/FY6-sovella.html)
 
-Captured for: b1e8c35e57ad6a01 page 53491c464d113759 (review/shots/stamp.txt). Open the contact sheets first, then only the captures your questions need (Read tool). Cost ≈ width·height/750 tokens each.
+Captured for: a34f3aab0e6c03cc page ea9d294b33d61f8e (review/shots/stamp.txt). Open the contact sheets first, then only the captures your questions need (Read tool). Cost ≈ width·height/750 tokens each.
 
 | file | shows | px | ≈ tokens |
 |---|---|---|---|
@@ -58,7 +58,7 @@ Captured for: b1e8c35e57ad6a01 page 53491c464d113759 (review/shots/stamp.txt). O
 | review/shots/FY6-sovella-page-390-39.png | #40 the whole page at 390 px, every box open (teacher's notes included) (part 39/42) | 366×1408 | 687 |
 | review/shots/FY6-sovella-page-390-40.png | #41 the whole page at 390 px, every box open (teacher's notes included) (part 40/42) | 366×1408 | 687 |
 | review/shots/FY6-sovella-page-390-41.png | #42 the whole page at 390 px, every box open (teacher's notes included) (part 41/42) | 366×1408 | 687 |
-| review/shots/FY6-sovella-page-390-42.png | #43 the whole page at 390 px, every box open (teacher's notes included) (part 42/42) | 366×522 | 254 |
+| review/shots/FY6-sovella-page-390-42.png | #43 the whole page at 390 px, every box open (teacher's notes included) (part 42/42) | 366×737 | 359 |
 | review/shots/FY6-sovella-fig-1-390.png | #44 figure 1 in “1Taskulampun paristo 15 pistettä”: Kytkentäkaavio, ei mittakaavassa: pariston mittaus. Vasemmalla on tutkittava paristo, plus | 331×182 | 80 |
 | review/shots/FY6-sovella-fig-2-390.png | #45 figure 2 in “1Taskulampun paristo 15 pistettä”:  | 28×28 | 1 |
 | review/shots/FY6-sovella-fig-3-390.png | #46 figure 3 in “Mallivastaus”: Kuvaaja: pariston napajännite U voltteina virran I funktiona ampeereina. Kuusi mustaa pist | 305×202 | 82 |
@@ -86,7 +86,7 @@ Captured for: b1e8c35e57ad6a01 page 53491c464d113759 (review/shots/stamp.txt). O
 | review/shots/FY6-sovella-stage-fy6-s1-390-9.png | #68 inquiry stage Taskulampun paristo 15 pistettä (part 9/12) | 366×1408 | 687 |
 | review/shots/FY6-sovella-stage-fy6-s1-390-10.png | #69 inquiry stage Taskulampun paristo 15 pistettä (part 10/12) | 366×1408 | 687 |
 | review/shots/FY6-sovella-stage-fy6-s1-390-11.png | #70 inquiry stage Taskulampun paristo 15 pistettä (part 11/12) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s1-390-12.png | #71 inquiry stage Taskulampun paristo 15 pistettä (part 12/12) | 366×249 | 121 |
+| review/shots/FY6-sovella-stage-fy6-s1-390-12.png | #71 inquiry stage Taskulampun paristo 15 pistettä (part 12/12) | 366×346 | 168 |
 | review/shots/FY6-sovella-stage-fy6-s2-390-1.png | #72 inquiry stage Mökin pihavalot 15 pistettä (part 1/11) | 366×1408 | 687 |
 | review/shots/FY6-sovella-stage-fy6-s2-390-2.png | #73 inquiry stage Mökin pihavalot 15 pistettä (part 2/11) | 366×1408 | 687 |
 | review/shots/FY6-sovella-stage-fy6-s2-390-3.png | #74 inquiry stage Mökin pihavalot 15 pistettä (part 3/11) | 366×1408 | 687 |
@@ -97,7 +97,7 @@ Captured for: b1e8c35e57ad6a01 page 53491c464d113759 (review/shots/stamp.txt). O
 | review/shots/FY6-sovella-stage-fy6-s2-390-8.png | #79 inquiry stage Mökin pihavalot 15 pistettä (part 8/11) | 366×1408 | 687 |
 | review/shots/FY6-sovella-stage-fy6-s2-390-9.png | #80 inquiry stage Mökin pihavalot 15 pistettä (part 9/11) | 366×1408 | 687 |
 | review/shots/FY6-sovella-stage-fy6-s2-390-10.png | #81 inquiry stage Mökin pihavalot 15 pistettä (part 10/11) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s2-390-11.png | #82 inquiry stage Mökin pihavalot 15 pistettä (part 11/11) | 366×1077 | 525 |
+| review/shots/FY6-sovella-stage-fy6-s2-390-11.png | #82 inquiry stage Mökin pihavalot 15 pistettä (part 11/11) | 366×1171 | 571 |
 | review/shots/FY6-sovella-stage-fy6-s3-390-1.png | #83 inquiry stage Ruiskumaalaus 16 pistettä (part 1/10) | 366×1408 | 687 |
 | review/shots/FY6-sovella-stage-fy6-s3-390-2.png | #84 inquiry stage Ruiskumaalaus 16 pistettä (part 2/10) | 366×1408 | 687 |
 | review/shots/FY6-sovella-stage-fy6-s3-390-3.png | #85 inquiry stage Ruiskumaalaus 16 pistettä (part 3/10) | 366×1408 | 687 |
@@ -107,7 +107,7 @@ Captured for: b1e8c35e57ad6a01 page 53491c464d113759 (review/shots/stamp.txt). O
 | review/shots/FY6-sovella-stage-fy6-s3-390-7.png | #89 inquiry stage Ruiskumaalaus 16 pistettä (part 7/10) | 366×1408 | 687 |
 | review/shots/FY6-sovella-stage-fy6-s3-390-8.png | #90 inquiry stage Ruiskumaalaus 16 pistettä (part 8/10) | 366×1408 | 687 |
 | review/shots/FY6-sovella-stage-fy6-s3-390-9.png | #91 inquiry stage Ruiskumaalaus 16 pistettä (part 9/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s3-390-10.png | #92 inquiry stage Ruiskumaalaus 16 pistettä (part 10/10) | 366×1026 | 500 |
+| review/shots/FY6-sovella-stage-fy6-s3-390-10.png | #92 inquiry stage Ruiskumaalaus 16 pistettä (part 10/10) | 366×1019 | 497 |
 | review/shots/FY6-sovella-stage-fy6-s4-390-1.png | #93 inquiry stage Kameran salama 14 pistettä (part 1/10) | 366×1408 | 687 |
 | review/shots/FY6-sovella-stage-fy6-s4-390-2.png | #94 inquiry stage Kameran salama 14 pistettä (part 2/10) | 366×1408 | 687 |
 | review/shots/FY6-sovella-stage-fy6-s4-390-3.png | #95 inquiry stage Kameran salama 14 pistettä (part 3/10) | 366×1408 | 687 |
@@ -117,7 +117,7 @@ Captured for: b1e8c35e57ad6a01 page 53491c464d113759 (review/shots/stamp.txt). O
 | review/shots/FY6-sovella-stage-fy6-s4-390-7.png | #99 inquiry stage Kameran salama 14 pistettä (part 7/10) | 366×1408 | 687 |
 | review/shots/FY6-sovella-stage-fy6-s4-390-8.png | #100 inquiry stage Kameran salama 14 pistettä (part 8/10) | 366×1408 | 687 |
 | review/shots/FY6-sovella-stage-fy6-s4-390-9.png | #101 inquiry stage Kameran salama 14 pistettä (part 9/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s4-390-10.png | #102 inquiry stage Kameran salama 14 pistettä (part 10/10) | 366×279 | 136 |
+| review/shots/FY6-sovella-stage-fy6-s4-390-10.png | #102 inquiry stage Kameran salama 14 pistettä (part 10/10) | 366×311 | 151 |
 | review/shots/FY6-sovella-top-1280.png | #103 first screen at 1280 px | 1280×900 | 1536 |
 | review/shots/FY6-sovella-page-1280-1.png | #104 the whole page at 1280 px, every box open (teacher's notes included) (part 1/32) | 1160×1408 | 2177 |
 | review/shots/FY6-sovella-page-1280-2.png | #105 the whole page at 1280 px, every box open (teacher's notes included) (part 2/32) | 1160×1408 | 2177 |
@@ -150,4 +150,4 @@ Captured for: b1e8c35e57ad6a01 page 53491c464d113759 (review/shots/stamp.txt). O
 | review/shots/FY6-sovella-page-1280-29.png | #132 the whole page at 1280 px, every box open (teacher's notes included) (part 29/32) | 1160×1408 | 2177 |
 | review/shots/FY6-sovella-page-1280-30.png | #133 the whole page at 1280 px, every box open (teacher's notes included) (part 30/32) | 1160×1408 | 2177 |
 | review/shots/FY6-sovella-page-1280-31.png | #134 the whole page at 1280 px, every box open (teacher's notes included) (part 31/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-32.png | #135 the whole page at 1280 px, every box open (teacher's notes included) (part 32/32) | 1160×18 | 27 |
+| review/shots/FY6-sovella-page-1280-32.png | #135 the whole page at 1280 px, every box open (teacher's notes included) (part 32/32) | 1160×260 | 402 |

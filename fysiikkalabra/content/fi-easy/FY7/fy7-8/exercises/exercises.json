@@ -3,6 +3,7 @@
     {
       "id": "fy7-8-L1-01",
       "level": 1,
+      "core": true,
       "text": "Ovikellon muuntajan ensiökäämissä on $1200$ kierrosta ja toisiokäämissä $60$ kierrosta. Ensiökäämi kytketään verkkojännitteeseen $230\\,\\text{V}$. Kuinka suuri on toisiojännite? Muuntaja oletetaan ideaaliseksi.",
       "answer": 11.5,
       "unit": "V",
@@ -43,6 +44,7 @@
     {
       "id": "fy7-8-L1-06",
       "level": 1,
+      "core": true,
       "text": "Ideaalinen muuntaja kytketään paristoon. Paristo antaa tasajännitettä. Kun ensiökäämin virta on tasaantunut vakioksi, toisiokäämin jännitteeksi mitataan nolla. Mikä on syynä?",
       "kind": [
         "concept"
@@ -73,6 +75,7 @@
     {
       "id": "fy7-8-L1-07",
       "level": 1,
+      "core": true,
       "text": "Voimalaitos siirtää tehon johtoa pitkin. Johdossa muuttuu lämmöksi teho $840\\,\\text{kW}$. Siirtojännite nostetaan kaksinkertaiseksi. Siirrettävä teho ja johdon resistanssi pysyvät samoina. Kuinka suuri häviöteho on nyt? Anna vastaus kilowatteina.",
       "kind": [
         "reasoning"
@@ -97,6 +100,7 @@
     {
       "id": "fy7-8-L2-01",
       "level": 2,
+      "core": true,
       "text": "Vesivoimala siirtää tehon $50\\,\\text{MW}$ jännitteellä $110\\,\\text{kV}$ sähköasemalle. Johtimien yhteinen resistanssi on $4{,}0\\,\\Omega$. Kuinka suuri teho johdossa muuttuu lämmöksi? Anna vastaus kilowatteina.",
       "answer": 826.4463,
       "unit": "kW",

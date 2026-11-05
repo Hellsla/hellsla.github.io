@@ -3,6 +3,7 @@
     {
       "id": "fy3-13-L1-01",
       "level": 1,
+      "core": true,
       "text": "Suljetussa jäykässä astiassa olevan kaasun paine noudattaa mittausalueella suoraa $p = 98{,}0\\,\\text{kPa} + 0{,}360\\,\\tfrac{\\text{kPa}}{{}^\\circ\\text{C}} \\cdot \\theta$, missä $\\theta$ on lämpötila celsiusasteina. Missä lämpötilassa suora antaa paineeksi nollan? Vastaa celsiusasteina.",
       "answer": -272,
       "unit": "°C",
@@ -81,6 +82,7 @@
     {
       "id": "fy3-13-L1-08",
       "level": 1,
+      "core": true,
       "text": "Kaasun paine mitattiin lämpötila-alueella $20\\ldots 100\\,{}^\\circ\\text{C}$ ja pisteisiin sovitettua suoraa jatkettiin kohtaan $p = 0$. Mitä ekstrapolointi tarkoittaa tässä?",
       "kind": [
         "concept",
@@ -122,6 +124,7 @@
     {
       "id": "fy3-13-L2-02",
       "level": 2,
+      "core": true,
       "text": "Kaasun paineen mittauspisteiden kautta voidaan piirtää kaksi ääriviivaa: $p = 100\\,\\text{kPa} + 0{,}380\\,\\tfrac{\\text{kPa}}{{}^\\circ\\text{C}} \\cdot \\theta$ ja $p = 102\\,\\text{kPa} + 0{,}350\\,\\tfrac{\\text{kPa}}{{}^\\circ\\text{C}} \\cdot \\theta$. Laske kummankin viivan nollapaineen lämpötila ja niiden avulla absoluuttisen nollapisteen epävarmuus $\\Delta\\theta_0$.",
       "answer": 14,
       "unit": "°C",
@@ -146,6 +149,7 @@
     {
       "id": "fy3-13-L2-05",
       "level": 2,
+      "core": true,
       "kind": [
         "data"
       ],

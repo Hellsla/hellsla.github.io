@@ -3,6 +3,7 @@
     {
       "id": "fy6-3-L1-01",
       "level": 1,
+      "core": true,
       "text": "A kettle is connected to a voltage of $230\\,\\text{V}$, and a current of $8.7\\,\\text{A}$ flows through its heating element. What is the resistance of the heating element?",
       "answer": 26,
       "unit": "Ω",
@@ -27,6 +28,7 @@
     {
       "id": "fy6-3-L1-04",
       "level": 1,
+      "core": true,
       "text": "A conductor of a copper cable has a length of $25\\,\\text{m}$ and a cross-sectional area of $2.5\\,\\text{mm}^2$. The resistivity of copper is $1.7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m}$. What is the resistance of the conductor? Answer in ohms.",
       "answer": 0.17,
       "unit": "Ω",
@@ -43,6 +45,7 @@
     {
       "id": "fy6-3-L1-06",
       "level": 1,
+      "core": true,
       "text": "The characteristic curve of a component, with the current $I$ on the horizontal axis and the voltage $U$ on the vertical axis, is a straight line through the origin. What can be concluded from this?",
       "kind": [
         "concept"
@@ -149,6 +152,7 @@
     {
       "id": "fy6-3-L2-05",
       "level": 2,
+      "core": true,
       "text": "A student measured the voltage across a resistor and the current through it (example data). The voltage was set to values from $1.0\\,\\text{V}$ to $8.0\\,\\text{V}$, and the current was measured with a multimeter whose error limit is about $\\pm 0.5\\,\\text{mA}$.\n\na) Draw a fitted line through the origin to the measurement points in a graph with the current $I$ on the horizontal axis and the voltage $U$ on the vertical axis, and read the resistance $R$ of the resistor from the slope of the line.\n\nb) Estimate the uncertainty $\\Delta R$ of the resistance from the scatter of the points.\n\nThe answer box takes the resistance $R$ of part a in ohms.",
       "kind": [
         "data",

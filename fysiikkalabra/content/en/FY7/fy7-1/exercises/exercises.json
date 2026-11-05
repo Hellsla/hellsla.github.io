@@ -19,6 +19,7 @@
     {
       "id": "fy7-1-L1-03",
       "level": 1,
+      "core": true,
       "text": "At a compass the horizontal component of the Earth's magnetic field is $14\\,\\mu\\text{T}$ towards the north and the field of a magnet on the table is $48\\,\\mu\\text{T}$ towards the east. What is the horizontal total field in microtesla?",
       "answer": 50.0,
       "unit": "µT",
@@ -43,6 +44,7 @@
     {
       "id": "fy7-1-L1-06",
       "level": 1,
+      "core": true,
       "text": "A magnet attracts an iron nail but not an aluminium can or a copper coin. Which of the following explains the difference?",
       "kind": [
         "concept"
@@ -116,6 +118,7 @@
     {
       "id": "fy7-1-L2-01",
       "level": 2,
+      "core": true,
       "text": "The field of a magnet at a compass is $25\\,\\mu\\text{T}$ towards the east, and the horizontal component of the Earth's magnetic field is $14\\,\\mu\\text{T}$ towards the north. Through how many degrees does the compass needle turn from north towards east?",
       "answer": 60.8,
       "unit": "°",
@@ -148,6 +151,7 @@
     {
       "id": "fy7-1-L2-05",
       "level": 2,
+      "core": true,
       "text": "A compass is on the axis of a bar magnet, east of the magnet, and the field of the magnet points east at the compass. The horizontal component of the Earth's magnetic field is $14\\,\\mu\\text{T}$ towards the north. The table gives the angle through which the compass needle turns from north when the distance of the compass from the magnet is $r$ (example data).\n\na) Calculate the magnetic flux density $B_\\text{m}$ of the magnet at a distance of $12\\,\\text{cm}$.\n\nb) Calculate $B_\\text{m}$ also at distances of $8.0\\,\\text{cm}$ and $16\\,\\text{cm}$. Is the field inversely proportional to the distance? Justify by comparing how the field changes when the distance doubles.\n\nEnter the result of part a) in microtesla in the answer field.",
       "kind": [
         "data"

@@ -11,6 +11,7 @@
     {
       "id": "fy7-16-L1-02",
       "level": 1,
+      "core": true,
       "text": "The power of light is $2.0\\,\\text{mW}$ at the start of a fibre and $0.50\\,\\text{mW}$ at the end. What is the attenuation of the fibre in decibels?",
       "answer": 6.0206,
       "unit": "dB",
@@ -43,6 +44,7 @@
     {
       "id": "fy7-16-L1-06",
       "level": 1,
+      "core": true,
       "text": "On an induction hob the base of the pan heats up, but the glass plate above the coil does not heat up by itself, even though the magnetic field of the coil passes through it. Which of the following explains this best?",
       "kind": [
         "concept"
@@ -99,6 +101,7 @@
     {
       "id": "fy7-16-L2-02",
       "level": 2,
+      "core": true,
       "text": "The transmitter of a fibre link feeds a power of $1.0\\,\\text{mW}$ into the fibre, and the receiver detects the pulses when the power is at least $1.0\\,\\mu\\text{W}$. The attenuation coefficient of the fibre is $0.20\\,\\text{dB/km}$. What is the greatest possible length of the link without an amplifier? Ignore the attenuation of the splices.",
       "answer": 150.0,
       "unit": "km",
@@ -123,6 +126,7 @@
     {
       "id": "fy7-16-L2-05",
       "level": 2,
+      "core": true,
       "text": "The efficiency of a wireless charger was measured at different distances between the charger and the receiver coil of a phone. The measurements are example data.\n\nDraw a graph with the efficiency on the vertical axis and the distance on the horizontal axis, and join the points with a smooth curve. Determine the distance at which the efficiency falls to $50\\,\\%$. You can read the value from the graph or interpolate linearly between two measurement points.\n\nWrite the distance in millimetres in the answer box.",
       "kind": [
         "data",

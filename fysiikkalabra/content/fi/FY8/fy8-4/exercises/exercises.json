@@ -3,6 +3,7 @@
     {
       "id": "fy8-4-L1-01",
       "level": 1,
+      "core": true,
       "text": "Vihreä laserosoitin lähettää valoa, jonka aallonpituus on $532\\,\\text{nm}$. Kuinka suuri on yhden fotonin liikemäärä? Anna vastaus yksikössä $10^{-27}\\,\\text{kg}\\cdot\\text{m/s}$.",
       "answer": 1.25,
       "unit": "10⁻²⁷ kg·m/s",
@@ -35,6 +36,7 @@
     {
       "id": "fy8-4-L1-05",
       "level": 1,
+      "core": true,
       "text": "Laser, jonka teho on $1{,}0\\,\\text{mW}$, lähettää fotoneja, joista kunkin energia on $3{,}14 \\cdot 10^{-19}\\,\\text{J}$. Kuinka monta fotonia laser lähettää sekunnissa? Anna vastaus yksikössä $10^{15}\\,\\tfrac{1}{\\text{s}}$.",
       "answer": 3.18,
       "unit": "10¹⁵ 1/s",
@@ -43,6 +45,7 @@
     {
       "id": "fy8-4-L1-06",
       "level": 1,
+      "core": true,
       "text": "Kaksoisrakokokeessa laserin valo himmennetään niin, että fotonit saapuvat rakoihin yksi kerrallaan. Kun osumia on kertynyt tuhansia, varjostimelle on syntynyt raitakuvio. Mikä selitys sopii havaintoon?",
       "kind": [
         "concept"
@@ -211,6 +214,7 @@
     {
       "id": "fy8-4-L2-06",
       "level": 2,
+      "core": true,
       "text": "Esimerkkiaineisto: röntgensäteilyä, jonka aallonpituus on $\\lambda = 71{,}10\\,\\text{pm}$, siroaa grafiitista. Taulukossa on sironneen säteilyn aallonpituus $\\lambda'$ eri sirontakulmilla $\\theta$.\n\na) Laske kullekin kulmalle aallonpituuden muutos $\\Delta\\lambda = \\lambda' - \\lambda$ ja luku $1 - \\cos\\theta$.\n\nb) Piirrä mittauspisteistä kuvaaja, jonka vaaka-akselilla on $1 - \\cos\\theta$ ja pystyakselilla $\\Delta\\lambda$, ja sovita pisteisiin suora. Määritä suoran kulmakerroin ja kerro, mitä se ilmaisee.\n\nc) Kuinka suuri on aallonpituuden muutos, kun fotoni sironnee suoraan takaisin ($\\theta = 180\\,{}^\\circ$)? Käytä sovitettua suoraa.\n\nAnna c)-kohdan tulos vastauslaatikkoon pikometreinä.",
       "kind": [
         "data",

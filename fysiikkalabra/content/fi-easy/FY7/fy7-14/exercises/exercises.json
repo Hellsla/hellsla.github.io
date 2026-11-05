@@ -27,6 +27,7 @@
     {
       "id": "fy7-14-L1-04",
       "level": 1,
+      "core": true,
       "text": "Saippuakalvon taitekerroin on $1{,}33$, ja sen molemmin puolin on ilmaa. Valo tulee kohtisuoraan kalvoon. Kuinka paksu on ohuin kalvo, joka heijastaa aallonpituuden $600\\,\\text{nm}$ valoa voimakkaimmin?",
       "answer": 112.782,
       "unit": "nm",
@@ -43,6 +44,7 @@
     {
       "id": "fy7-14-L1-06",
       "level": 1,
+      "core": true,
       "text": "Saippuakalvo on ilmassa, ja valo tulee kohtisuoraan kalvoon. Millä pinnalla heijastuva aalto kääntyy eli saa puolen aallonpituuden siirtymän? Miksi?",
       "kind": [
         "concept"
@@ -97,6 +99,7 @@
     {
       "id": "fy7-14-L2-01",
       "level": 2,
+      "core": true,
       "text": "Saippuakalvon ($n = 1{,}33$) paksuus on eräässä kohdassa $240\\,\\text{nm}$, ja sen molemmin puolin on ilmaa. Valkoinen valo tulee kohtisuoraan kalvoon. Mikä näkyvän valon ($400$–$700\\,\\text{nm}$) aallonpituus puuttuu heijastuneesta valosta?",
       "answer": 638.4,
       "unit": "nm",
@@ -183,6 +186,7 @@
     {
       "id": "fy7-14-L2-07",
       "level": 2,
+      "core": true,
       "text": "Taulukossa on esimerkkiaineisto. Kameran linssin lasin ($n = 1{,}52$) pinnalla on $\\text{MgF}_2$-pinnoite ($n = 1{,}38$). Taulukossa on osuus $R$ valosta, joka heijastuu linssistä, kun valo tulee kohtisuoraan. Osuus on annettu eri aallonpituuksilla.\n\nPinnoite on ohuin mahdollinen ($k = 0$). Se on mitoitettu heikentämään heijastusta mahdollisimman paljon yhdellä aallonpituudella.\n\na) Piirrä kuvaaja, jossa heijastuva osuus $R$ on aallonpituuden $\\lambda$ funktio. Päättele taulukosta, mille aallonpituudelle pinnoite on mitoitettu. Kuinka paksu pinnoite on?\n\nb) Selitä kuvaajan muodon perusteella, miksi pinnoitettu linssi näyttää purppuraiselta.\n\nVastauslaatikkoon tulee a-kohdan pinnoitteen paksuus.",
       "kind": [
         "data",

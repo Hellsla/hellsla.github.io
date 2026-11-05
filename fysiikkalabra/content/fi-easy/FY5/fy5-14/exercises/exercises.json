@@ -35,6 +35,7 @@
     {
       "id": "fy5-14-L1-05",
       "level": 1,
+      "core": true,
       "text": "Luokittele äänet infraääneksi, ihmisen kuultavaksi ääneksi tai ultraääneksi: a) ukkosen jyrinän matalin osa $12\\,\\text{Hz}$, b) viritysääni $440\\,\\text{Hz}$, c) koiranpilli $35\\,\\text{kHz}$, d) ultraäänikuvauksen ääni $2{,}5\\,\\text{MHz}$. Perustele rajojen avulla.",
       "answer": "a) infraääni; b) kuultava ääni; c) ultraääni; d) ultraääni",
       "unit": "",
@@ -73,6 +74,7 @@
     {
       "id": "fy5-14-L1-07",
       "level": 1,
+      "core": true,
       "text": "Ambulanssi ajaa tasaisella nopeudella suoraan kohti paikallaan seisovaa kuulijaa. Sireeni soi koko ajan samalla omalla taajuudellaan. Ilma on tyyntä. Millaisena kuulija kuulee sireenin äänenkorkeuden ambulanssin lähestyessä?",
       "kind": [
         "concept"
@@ -129,6 +131,7 @@
     {
       "id": "fy5-14-L2-03",
       "level": 2,
+      "core": true,
       "text": "Autoilija ajaa nopeudella $90{,}0\\,\\text{km/h}$ suoraan kohti risteystä, jossa paikallaan oleva hälytyssireeni soi taajuudella $650\\,\\text{Hz}$. Minkä taajuuden autoilija kuulee? Ilma on tyyntä, ja äänen nopeus on $340\\,\\text{m/s}$.",
       "answer": 698,
       "unit": "Hz",
@@ -181,6 +184,7 @@
     {
       "id": "fy5-14-L2-06",
       "level": 2,
+      "core": true,
       "text": "Huilu ja viulu soittavat saman sävelen. Mikrofoni nauhoitti äänet. Äänten FFT-spektreistä luettiin piikkien taajuudet ja suhteelliset korkeudet (esimerkkiaineisto). FFT-spektri näyttää, mitä taajuuksia äänessä on.\n\na) Mikä on soitetun sävelen perustaajuus?\n\nb) Kumpi soittimista kuulostaa kirkkaammalta ja miksi? Anna vastauslaatikkoon kohdan a) tulos hertseinä.",
       "kind": [
         "data",

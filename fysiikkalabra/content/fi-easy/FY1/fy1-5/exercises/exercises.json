@@ -3,6 +3,7 @@
     {
       "id": "fy1-5-L1-01",
       "level": 1,
+      "core": true,
       "text": "Pyöräilijä ajaa tasaisesti nopeudella $5{,}5\\,\\text{m/s}$. Kuinka pitkän matkan hän kulkee 20 sekunnissa?",
       "answer": 110,
       "unit": "m",
@@ -19,6 +20,7 @@
     {
       "id": "fy1-5-L1-03",
       "level": 1,
+      "core": true,
       "text": "Kuvaajassa on kävelijän paikka ajan funktiona. Kävelijä liikkuu tasaisesti samaan suuntaan myös kuvaajan ulkopuolella. Kuinka monta sekuntia kuluu lähdöstä siihen, kun hän on kulkenut $150\\,\\text{m}$?",
       "figure": "fy1-5/line-read",
       "answer": 60,
@@ -130,6 +132,7 @@
     {
       "id": "fy1-5-L2-05",
       "level": 2,
+      "core": true,
       "text": "Kävelijän liike kuvattiin videolle. Videoanalyysillä mitattiin kävelijän paikka $s$ lähtömerkistä ajan $t$ funktiona. Kävelijä liikkuu tasaisesti. Pisteet eivät ole tarkasti suoralla, koska mittauksessa on epävarmuutta.\n\nPiirrä pisteistä kuvaaja ja sovita pisteisiin suora. Määritä suoran kulmakertoimesta kävelijän nopeus. Ennusta sen avulla kävelijän paikka hetkellä $12\\,\\text{s}$. Kuinka monta metriä lähtömerkistä hän silloin on? Perustele, miksi ennuste on mallin arvo eikä mittaus.",
       "kind": [
         "data",
@@ -176,6 +179,7 @@
     {
       "id": "fy1-5-L2-06",
       "level": 2,
+      "core": true,
       "text": "Kärry liikkuu tasaisesti radalla. Alussa se on kohdassa $s_0 = 8{,}0\\,\\text{m}$. Hetkellä $2{,}0\\,\\text{s}$ se on kohdassa $11\\,\\text{m}$. Oppilas päättelee: ”Kun aika kolminkertaistuu $6{,}0\\,\\text{s}$:iin, paikka kolminkertaistuu. Siksi kärry on silloin kohdassa $33\\,\\text{m}$.” Etsi oppilaan virhe. Laske kärryn oikea paikka hetkellä $6{,}0\\,\\text{s}$.",
       "kind": [
         "error",

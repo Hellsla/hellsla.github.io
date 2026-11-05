@@ -56,7 +56,7 @@
 **Muunnokset:** $E = 0{,}60\,\text{mJ} = 0{,}60 \cdot 0{,}001\,\text{J} = 0{,}00060\,\text{J}$ ja $m = 20\,\text{g} = 20 \cdot 0{,}001\,\text{kg} = 0{,}020\,\text{kg}$. Painotettuna $1\,\tfrac{\text{J}}{\text{kg}}$ on $1\,\text{Sv}$.
 **Sijoitus:** $H_\text{E} = 0{,}04 \cdot 1 \cdot \dfrac{0{,}00060\,\text{J}}{0{,}020\,\text{kg}} = 0{,}04 \cdot 0{,}030\,\text{Sv} = 0{,}0012\,\text{Sv} = 1{,}2\,\text{mSv}$
 **Vastaus:** $1{,}2\,\text{mSv}$. Vastauksessa on kaksi merkitsevää numeroa, kuten energiassa $0{,}60\,\text{mJ}$ ja massassa $20\,\text{g}$.
-**Järkevyys:** Kilpirauhasen oma annos $30\,\text{mSv}$ on suuri. Säteilytetään kuitenkin vain pientä ja melko vähän herkkää elintä. Siksi koko kehon riskiä kuvaava efektiivinen annos on vain $4\,\%$ siitä.
+**Järkevyys:** Kilpirauhasen oma annos $30\,\text{mSv}$ on suuri. Säteilytetään kuitenkin vain pientä ja melko vähän herkkää elintä. Siksi efektiivinen annos on vain $4\,\%$ siitä.
 
 ## fy8-13-L2-02
 **Annettu:** annosnopeus $\dot{H}_1 = 150\,\mu\text{Sv/h}$ etäisyydellä $r_1 = 1{,}0\,\text{m}$, työpisteen etäisyys $r_2 = 2{,}5\,\text{m}$, sallittu annos $H = 100\,\mu\text{Sv}$
@@ -101,7 +101,7 @@
 ## fy8-13-L3-02
 **Annettu:** kodin radonpitoisuus $400\,\tfrac{\text{Bq}}{\text{m}^3}$, keskimääräinen pitoisuus $94\,\tfrac{\text{Bq}}{\text{m}^3}$ ja siitä aiheutuva annos $4{,}0\,\text{mSv}$ vuodessa, muut lähteet $1{,}9\,\text{mSv}$ vuodessa
 **Kysytty:** asukkaan efektiivinen vuosiannos $H$ kaikista lähteistä millisieverteinä
-**Periaate:** Eri lähteiden efektiiviset annokset voidaan laskea yhteen, koska ne kuvaavat samaa koko kehon riskiä. Oletuksen mukaan radonannos on suoraan verrannollinen pitoisuuteen. Muut lähteet antavat keskimääräisen annoksen.
+**Periaate:** Eri lähteiden efektiiviset annokset voidaan laskea yhteen, koska niillä arvioidaan samaa asiaa: keskimääräisen ihmisen syöpäriskiä. Oletuksen mukaan radonannos on suoraan verrannollinen pitoisuuteen. Muut lähteet antavat keskimääräisen annoksen.
 **Kaava:** $H_\text{radon} = H_\text{ka} \dfrac{c}{c_\text{ka}}$ ja $H = H_\text{radon} + H_\text{muut}$, joten $H = H_\text{ka} \dfrac{c}{c_\text{ka}} + H_\text{muut}$
 **Muunnokset:** Ei tarvita. Pitoisuudet ovat samassa yksikössä ja annokset millisieverteinä.
 **Sijoitus:** $H = 4{,}0\,\text{mSv} \cdot \dfrac{400\,\tfrac{\text{Bq}}{\text{m}^3}}{94\,\tfrac{\text{Bq}}{\text{m}^3}} + 1{,}9\,\text{mSv} = 17{,}021\,\text{mSv} + 1{,}9\,\text{mSv} = 18{,}921\,\text{mSv}$
@@ -131,7 +131,7 @@
 **Muunnokset:** Ei tarvita. Ekvivalenttiannokset ovat millisieverteinä, ja painotuskertoimet ovat paljaita lukuja. Siksi efektiivinen annos tulee millisieverteinä.
 **Sijoitus:** $H_\text{E} = 0{,}04 \cdot 2{,}0\,\text{mSv} + 0{,}12 \cdot 1{,}0\,\text{mSv} = 0{,}080\,\text{mSv} + 0{,}12\,\text{mSv} = 0{,}20\,\text{mSv}$
 **Vastaus:** $0{,}20\,\text{mSv}$. Vastauksessa on kaksi merkitsevää numeroa, kuten annoksissa $2{,}0\,\text{mSv}$ ja $1{,}0\,\text{mSv}$.
-**Järkevyys:** Painotuskertoimien summa on vain $0{,}04 + 0{,}12 = 0{,}16$. Siksi efektiivinen annos on pienempi kuin kummankaan elimen ekvivalenttiannos ($2{,}0\,\text{mSv}$ ja $1{,}0\,\text{mSv}$). Se kuvaa koko kehon riskiä, vaikka vain kaksi elintä säteilytetään.
+**Järkevyys:** Painotuskertoimien summa on vain $0{,}04 + 0{,}12 = 0{,}16$. Siksi efektiivinen annos on pienempi kuin kummankaan elimen ekvivalenttiannos ($2{,}0\,\text{mSv}$ ja $1{,}0\,\text{mSv}$). Sillä arvioidaan keskimääräisen ihmisen pitkän aikavälin syöpäriskiä, vaikka vain kaksi elintä säteilytetään.
 
 ## fy8-13-L1-08
 **Annettu:** kuvauksen efektiivinen annos $H_1 = 0{,}10\,\text{mSv}$, suomalaisen keskimääräinen vuosiannos $H_\text{ka} = 5{,}9\,\text{mSv}$
@@ -146,7 +146,7 @@
 ## fy8-13-L2-05
 **Annettu:** taulukon efektiiviset vuosiannokset: radon $4{,}0\,\text{mSv}$, muu luonnon säteily $1{,}1\,\text{mSv}$, lääketieteellinen käyttö $0{,}8\,\text{mSv}$
 **Kysytty:** a) annosten summa $H_\text{yht}$, b) radonin osuus kokonaisannoksesta prosentteina
-**Periaate:** Efektiiviset annokset eri lähteistä lasketaan yhteen. Ne kuvaavat samaa koko kehon riskiä. Radonin osuus on sen annos jaettuna kokonaisannoksella.
+**Periaate:** Efektiiviset annokset eri lähteistä lasketaan yhteen. Niillä arvioidaan samaa asiaa: keskimääräisen ihmisen syöpäriskiä. Radonin osuus on sen annos jaettuna kokonaisannoksella.
 **Kaava:** $H_\text{yht} = H_1 + H_2 + H_3$ ja $\text{osuus} = \dfrac{H_\text{radon}}{H_\text{yht}} \cdot 100\,\%$
 **Muunnokset:** Ei tarvita. Kaikki annokset ovat millisieverteinä.
 **Sijoitus:** a) $H_\text{yht} = 4{,}0\,\text{mSv} + 1{,}1\,\text{mSv} + 0{,}8\,\text{mSv} = 5{,}9\,\text{mSv}$; b) $\text{osuus} = \dfrac{4{,}0\,\text{mSv}}{5{,}9\,\text{mSv}} \cdot 100\,\% = 67{,}8\,\%$

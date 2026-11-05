@@ -27,6 +27,7 @@
     {
       "id": "fy8-11-L1-04",
       "level": 1,
+      "core": true,
       "text": "Kahden deuteriumytimen fuusiossa syntyy helium-3-ydin ja neutroni: ${}^{2}_{1}\\text{H} + {}^{2}_{1}\\text{H} \\rightarrow {}^{3}_{2}\\text{He} + {}^{1}_{0}\\text{n}$. Atomimassat ovat: deuterium $2{,}0141018\\,\\text{u}$, helium-3 $3{,}0160293\\,\\text{u}$ ja neutroni $1{,}0086649\\,\\text{u}$. Kuinka paljon energiaa reaktiossa vapautuu? Anna vastaus megaelektronivoltteina.",
       "answer": 3.27,
       "unit": "MeV",
@@ -43,6 +44,7 @@
     {
       "id": "fy8-11-L1-06",
       "level": 1,
+      "core": true,
       "text": "Ydinreaktorissa polttoainesauvojen välissä on hidastinta, esimerkiksi vettä. Mikä on hidastimen tehtävä?",
       "kind": [
         "concept"
@@ -145,6 +147,7 @@
     {
       "id": "fy8-11-L2-05",
       "level": 2,
+      "core": true,
       "text": "Reaktorin käynnistyskokeessa neutronien määrä ketjussa mitattiin viidessä peräkkäisessä sukupolvessa (taulukko, esimerkkiaineisto). Oleta, että kasvukerroin $k$ pysyy koko ajan samana.\n\na) Määritä kasvukerroin $k$ taulukon ensimmäisen ja viimeisen arvon avulla. Onko reaktori alikriittinen, kriittinen vai ylikriittinen?\n\nb) Kuinka monta neutronia ketjussa olisi sukupolvessa $50$, jos kasvukerroin pysyisi samana?\n\nVastauslaatikkoon tulee kohdan b) tulos.",
       "kind": [
         "data",
@@ -236,6 +239,7 @@
     {
       "id": "fy8-11-L2-07",
       "level": 2,
+      "core": true,
       "text": "Oppilas kirjoittaa: ”Uraani-235-ydin kaappaa neutronin ja jakautuu. Ennen reaktiota nukleoneja on $236$ ja reaktion jälkeen $236$, joten tuotteiden massa on sama kuin lähtöaineiden massa. Siksi fissiossa ei vapaudu energiaa.” Fissio kuitenkin vapauttaa energiaa. Mikä oppilaan päättelyssä on virhe?",
       "kind": [
         "error",

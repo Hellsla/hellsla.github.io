@@ -19,6 +19,7 @@
     {
       "id": "fy6-9-L1-03",
       "level": 1,
+      "core": true,
       "text": "The nominal voltage of an electric-bike battery is $36\\,\\text{V}$ and its capacity is $13\\,\\text{Ah}$. How much energy is stored in the fully charged battery? Answer in watt-hours.",
       "answer": 468,
       "unit": "Wh",
@@ -44,6 +45,7 @@
     {
       "id": "fy6-9-L1-06",
       "level": 1,
+      "core": true,
       "text": "Two batteries have been charged full. The capacity of one is larger in ampere-hours, but its energy can still be smaller. Why can the energies of batteries not be compared on the basis of ampere-hours alone?",
       "kind": [
         "concept"
@@ -114,6 +116,7 @@
     {
       "id": "fy6-9-L2-01",
       "level": 2,
+      "core": true,
       "text": "The source voltage of a motorcycle battery is $12.4\\,\\text{V}$ and its internal resistance is $40\\,\\text{m}\\Omega$. The battery is charged with a charger whose voltage is $14.4\\,\\text{V}$, and the resistance of the charger and wires is $0.36\\,\\Omega$. How large is the charging current?",
       "answer": 5.0,
       "unit": "A",
@@ -190,6 +193,7 @@
     {
       "id": "fy6-9-L2-06",
       "level": 2,
+      "core": true,
       "kind": [
         "error"
       ],

@@ -3,6 +3,7 @@
     {
       "id": "fy8-14-L1-01",
       "level": 1,
+      "core": true,
       "text": "An X-ray beam passes through a $6.8\\,\\text{cm}$ thick layer of soft tissue. The half-value thickness of soft tissue for this radiation is $3.4\\,\\text{cm}$. What percentage of the radiation gets through the tissue?",
       "answer": 25,
       "unit": "%",
@@ -43,6 +44,7 @@
     {
       "id": "fy8-14-L1-06",
       "level": 1,
+      "core": true,
       "text": "In a PET scan the patient is given a tracer containing a positron-emitting nuclide, for example fluorine-$18$. Why is emitting a positron suited to imaging in which the position of the source is to be found from outside the body?",
       "kind": [
         "concept"
@@ -119,6 +121,7 @@
     {
       "id": "fy8-14-L2-04",
       "level": 2,
+      "core": true,
       "text": "Right after the tracer is injected, the dose rate of the radiation from a PET patient is $30\\,\\mu\\text{Sv/h}$ at a distance of $1.0\\,\\text{m}$. A nurse helps the patient for $5.0\\,\\text{min}$ at a distance of $0.50\\,\\text{m}$. How large a dose does the nurse receive? Assume that the patient can be treated as a point source and that the dose rate stays constant during this time. Give the answer in microsieverts.",
       "answer": 10,
       "unit": "µSv",
@@ -205,6 +208,7 @@
     {
       "id": "fy8-14-L2-07",
       "level": 2,
+      "core": true,
       "text": "The lead shield of a PET syringe is dimensioned so that at most $1.0\\,\\%$ of the $511\\,\\text{keV}$ photons of the syringe get through the shield. The half-value thickness of lead is $0.26\\,\\text{mm}$ for $140\\,\\text{keV}$ photons and $3.9\\,\\text{mm}$ for $511\\,\\text{keV}$ photons.\n\nThe student's solution: “The share to be let through is $0.010$, so $\\left(\\tfrac{1}{2}\\right)^{n} = 0.010$ and $n = \\dfrac{\\ln 0.010}{\\ln 0.5} = 6.64$. The thickness is $d = n \\cdot d_{1/2} = 6.64 \\cdot 0.26\\,\\text{mm} = 1.7\\,\\text{mm}$.”\n\nFind the student's error and calculate the correct thickness of the lead shield in millimetres.",
       "kind": [
         "error",

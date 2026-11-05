@@ -3,6 +3,7 @@
     {
       "id": "fy7-3-L1-01",
       "level": 1,
+      "core": true,
       "text": "A current of $12\\,\\text{A}$ flows in a long straight wire. How great is the magnetic flux density at a distance of $3.0\\,\\text{cm}$ from the wire? Give the answer in microtesla.",
       "answer": 80,
       "unit": "µT",
@@ -11,6 +12,7 @@
     {
       "id": "fy7-3-L1-02",
       "level": 1,
+      "core": true,
       "text": "A coil has $500$ turns, and its length is $25\\,\\text{cm}$. A current of $1.2\\,\\text{A}$ flows in the coil. How great is the magnetic flux density at the centre of the coil? The coil is long compared with its width. Give the answer in millitesla.",
       "answer": 3.0,
       "unit": "mT",
@@ -43,6 +45,7 @@
     {
       "id": "fy7-3-L1-06",
       "level": 1,
+      "core": true,
       "text": "A current flows upwards in a long vertical wire. Which of the following correctly describes the direction of the magnetic field of the wire seen from above, and how the direction changes when the direction of the current is reversed?",
       "kind": [
         "concept"
@@ -129,6 +132,7 @@
     {
       "id": "fy7-3-L2-05",
       "level": 2,
+      "core": true,
       "kind": [
         "data",
         "graph"

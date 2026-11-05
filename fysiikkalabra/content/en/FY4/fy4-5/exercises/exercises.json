@@ -3,6 +3,7 @@
     {
       "id": "fy4-5-L1-01",
       "level": 1,
+      "core": true,
       "text": "A lamp of mass $1.5\\,\\text{kg}$ hangs at rest from a vertical cord. Draw the free-body diagram of the lamp and calculate the tension in the cord.",
       "answer": 14.7,
       "unit": "N",
@@ -39,6 +40,7 @@
     {
       "id": "fy4-5-L1-05",
       "level": 1,
+      "core": true,
       "text": "A box is pulled with a rope whose tension is $250\\,\\text{N}$ and which makes an angle of $40^\\circ$ with the horizontal. Draw the force of the rope and, with dashed lines, its components. How large is the horizontal component of the tension?",
       "answer": 190,
       "unit": "N",
@@ -47,6 +49,7 @@
     {
       "id": "fy4-5-L1-06",
       "level": 1,
+      "core": true,
       "text": "A box slides to the right on a horizontal floor and slows down because of friction from the floor. Air drag is ignored. Which forces are drawn in the free-body diagram of the box?",
       "kind": [
         "concept"
@@ -123,6 +126,7 @@
     {
       "id": "fy4-5-L2-01",
       "level": 2,
+      "core": true,
       "text": "A sled of mass $15\\,\\text{kg}$ is pulled on horizontal snow by a rope that makes an angle of $30^\\circ$ with the horizontal. The tension in the rope is $60\\,\\text{N}$, and the sled moves at constant velocity. Draw the free-body diagram of the sled in your notebook before you open the solution. How large is the friction force from the snow?",
       "answer": 52,
       "unit": "N",

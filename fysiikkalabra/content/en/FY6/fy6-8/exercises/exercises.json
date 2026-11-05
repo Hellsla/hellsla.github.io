@@ -3,6 +3,7 @@
     {
       "id": "fy6-8-L1-01",
       "level": 1,
+      "core": true,
       "text": "The source voltage of a battery is $1.58\\,\\text{V}$ and its internal resistance $0.25\\,\\Omega$. A current of $0.80\\,\\text{A}$ is drawn from the battery. What is the terminal voltage of the battery?",
       "answer": 1.38,
       "unit": "V",
@@ -74,6 +75,7 @@
     {
       "id": "fy6-8-L1-07",
       "level": 1,
+      "core": true,
       "text": "The terminals of a battery are connected with a short, thick wire whose resistance is almost zero (a short circuit). What happens then?",
       "kind": [
         "concept"
@@ -138,6 +140,7 @@
     {
       "id": "fy6-8-L2-04",
       "level": 2,
+      "core": true,
       "text": "Two batteries are connected in series, and their load is a resistor of $2.4\\,\\Omega$. The source voltage of each battery is $1.5\\,\\text{V}$ and its internal resistance $0.30\\,\\Omega$. What current flows through the resistor?",
       "answer": 1.0,
       "unit": "A",
@@ -146,6 +149,7 @@
     {
       "id": "fy6-8-L2-05",
       "level": 2,
+      "core": true,
       "text": "The terminal voltage of a battery was measured at six different load currents (example data). Draw the $(I, U)$ graph from the measured points and fit a straight line to the points. The points are not exactly on a line, because every measurement has a small uncertainty.\n\na) Read the source voltage of the battery from the line.\n\nb) Determine the internal resistance of the battery from the slope of the line and estimate how much the slope can vary when the line is fitted in different ways.\n\nThe answer box takes the result of part b).",
       "kind": [
         "data",

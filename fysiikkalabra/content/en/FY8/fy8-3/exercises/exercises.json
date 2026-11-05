@@ -11,6 +11,7 @@
     {
       "id": "fy8-3-L1-02",
       "level": 1,
+      "core": true,
       "text": "The energy levels of the hydrogen atom are $E_n = -\\tfrac{13.6\\,\\text{eV}}{n^2}$. The electron of a hydrogen atom moves from level $n = 4$ to the ground state $n = 1$. What is the energy of the photon produced, in electron volts?",
       "answer": 12.8,
       "unit": "eV",
@@ -43,6 +44,7 @@
     {
       "id": "fy8-3-L1-06",
       "level": 1,
+      "core": true,
       "text": "The energy levels of the hydrogen atom are $E_n = -\\tfrac{13.6\\,\\text{eV}}{n^2}$. Consider four transitions $5 \\to 4$, $3 \\to 2$, $2 \\to 1$ and $4 \\to 1$, where the pair of numbers gives the initial level and the final level. Which transition emits the photon with the shortest wavelength?",
       "kind": [
         "concept"
@@ -94,6 +96,7 @@
     {
       "id": "fy8-3-L2-01",
       "level": 2,
+      "core": true,
       "text": "The energy levels of the hydrogen atom are $E_n = -\\tfrac{13.6\\,\\text{eV}}{n^2}$. The electron of a hydrogen atom moves from level $n = 5$ to level $n = 2$. Calculate the wavelength of the light produced in nanometres ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$).",
       "answer": 434,
       "unit": "nm",
@@ -164,6 +167,7 @@
     {
       "id": "fy8-3-L2-06",
       "level": 2,
+      "core": true,
       "text": "The figure shows the energy-level diagram of an imaginary atom. The atom is in the ground state $E_1$. Photons of five different wavelengths are sent to the atom, and the table gives their wavelengths. The atom absorbs a photon only if the energy of the photon corresponds to the difference between some level above the ground state and the ground state ($\\pm 0.05\\,\\text{eV}$). How many of the photons in the table does the atom absorb?\n\nCalculate the energies of the photons and compare them with the energy differences read from the diagram. Enter in the box the number of photons absorbed ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$).",
       "figure": "fy8-3/levels-task",
       "kind": [

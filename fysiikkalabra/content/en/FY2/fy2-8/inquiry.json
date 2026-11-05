@@ -370,6 +370,7 @@
       "id": "perustele",
       "stage": "sovella",
       "type": "explain",
+      "core": true,
       "title": "Justify: how does the city produce its electricity?",
       "prompt": "The city replaces its old coal power plant and will in future produce $100\\,\\text{GWh}$ of electricity a year. The options are a natural gas power plant, a wind farm, a nuclear power plant or a plant that runs on biomass. Choose one and write a justification in the following order:\n\n1. **Claim:** which option do you choose?\n2. **Evidence:** calculate the yearly emissions for the way you chose and compare them with one other option. Also mention at least two other criteria for comparison (for example land use, waste, safety, dependence on the weather).\n3. **Physics reason:** why is the chosen way better or worse for the climate?\n4. **Counterargument:** what is the strongest argument against your choice, and how do you answer it?\n5. **Limitation:** what did you leave out (for example price), and why could it matter?",
       "pair": "Swap justifications with a partner. Can you find each of the five parts in your partner's text? What was the strongest argument, and would it change your own choice?",

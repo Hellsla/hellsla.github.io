@@ -3,6 +3,7 @@
     {
       "id": "fy2-6-L1-01",
       "level": 1,
+      "core": true,
       "text": "The average power of a wind turbine over a week ($168\\,\\text{h}$) is $2.5\\,\\text{MW}$. How much electricity does it produce in a week? Give the answer in megawatt-hours.",
       "answer": 420,
       "unit": "MWh",
@@ -74,6 +75,7 @@
     {
       "id": "fy2-6-L1-07",
       "level": 1,
+      "core": true,
       "text": "In an electricity grid, production and consumption must be equal at every moment. What is meant by regulating power?",
       "kind": [
         "concept"
@@ -113,6 +115,7 @@
     {
       "id": "fy2-6-L2-01",
       "level": 2,
+      "core": true,
       "text": "An example wind farm has a rated power of $25\\,\\text{MW}$, and its average power over the year is $32\\,\\%$ of the rated power. How much electricity does the farm produce in a year, when a year has $8760\\,\\text{h}$? Give the answer in gigawatt-hours.",
       "answer": 70,
       "unit": "GWh",
@@ -187,6 +190,7 @@
     {
       "id": "fy2-6-L2-06",
       "level": 2,
+      "core": true,
       "kind": [
         "data",
         "error"

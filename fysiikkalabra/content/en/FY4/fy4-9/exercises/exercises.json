@@ -3,6 +3,7 @@
     {
       "id": "fy4-9-L1-01",
       "level": 1,
+      "core": true,
       "text": "A hockey puck of mass $0.17\\,\\text{kg}$ slides on the ice at $30\\,\\text{m/s}$. How large is the momentum of the puck?",
       "answer": 5.1,
       "unit": "kg·m/s",
@@ -43,6 +44,7 @@
     {
       "id": "fy4-9-L1-06",
       "level": 1,
+      "core": true,
       "kind": [
         "concept"
       ],
@@ -113,6 +115,7 @@
     {
       "id": "fy4-9-L2-03",
       "level": 2,
+      "core": true,
       "text": "A ball of mass $60\\,\\text{g}$ is thrown horizontally at a wall. The ball hits the wall at $14\\,\\text{m/s}$ and rebounds straight back at $11\\,\\text{m/s}$. How large an impulse does the wall give the ball? Give the magnitude of the impulse.",
       "answer": 1.5,
       "unit": "N·s",
@@ -208,6 +211,7 @@
     {
       "id": "fy4-9-L2-07",
       "level": 2,
+      "core": true,
       "kind": [
         "data",
         "graph"

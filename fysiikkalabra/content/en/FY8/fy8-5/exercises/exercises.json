@@ -3,6 +3,7 @@
     {
       "id": "fy8-5-L1-01",
       "level": 1,
+      "core": true,
       "text": "In heavy elements the electrons are in shells farther and farther out. What is the greatest number of electrons that fit in the shell $n = 5$?",
       "answer": 50,
       "unit": "electrons",
@@ -116,6 +117,7 @@
     {
       "id": "fy8-5-L2-01",
       "level": 2,
+      "core": true,
       "text": "The electron of a hydrogen atom moves from the $3\\text{p}$ orbital to the $1\\text{s}$ orbital, and the atom emits a photon. What is the wavelength of the photon? Give the answer in nanometres.",
       "answer": 103,
       "unit": "nm",
@@ -193,6 +195,7 @@
     {
       "id": "fy8-5-L2-06",
       "level": 2,
+      "core": true,
       "text": "The figure shows the first three standing waves of a string fixed at both ends. Example data: the length of the string is $L = 0.80\\,\\text{m}$ and the speed of the wave in the string is $v = 64\\,\\text{m/s}$.\n\na) What is the wavelength $\\lambda$ of each state in the figure?\n\nb) Calculate the frequency $f$ of each state.\n\nc) Using the frequencies you calculated, justify why a state with more nodes corresponds to a higher frequency, and say what this tells about the states of the electron in an atom.\n\nEnter in the answer box the result of part b) for the state that has two nodes.",
       "kind": [
         "graph",
@@ -206,6 +209,7 @@
     {
       "id": "fy8-5-L2-07",
       "level": 2,
+      "core": true,
       "text": "A student looks at a picture of the $1\\text{s}$ orbital of a hydrogen atom, in which the boundary is the $90\\,\\%$ boundary, and reasons: “The boundary is a wall. The electron always stays inside the boundary, so not a single measurement lands outside it.” In a simulation, however, $205$ of $2000$ measurements land outside the boundary. What is the error in the student’s reasoning?",
       "kind": [
         "error",

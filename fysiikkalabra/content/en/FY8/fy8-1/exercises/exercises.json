@@ -27,6 +27,7 @@
     {
       "id": "fy8-1-L1-04",
       "level": 1,
+      "core": true,
       "text": "Water and surfaces are disinfected with UV-C lamps whose radiation has a wavelength of $254\\,\\text{nm}$. Use the values $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^8\\,\\text{m/s}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$. What is the energy of one photon? Give the answer in electronvolts.",
       "answer": 4.88,
       "unit": "eV",
@@ -84,6 +85,7 @@
     {
       "id": "fy8-1-L1-08",
       "level": 1,
+      "core": true,
       "text": "The work function of sodium is $2.28\\,\\text{eV}$. A dim ultraviolet lamp whose light has a wavelength of $365\\,\\text{nm}$ releases electrons from a sodium surface immediately when the lamp is switched on. The photon energy at this wavelength is $3.40\\,\\text{eV}$. A bright red lamp whose light has a wavelength of $650\\,\\text{nm}$ and a photon energy of $1.91\\,\\text{eV}$ releases no electrons at all, even if it is kept on for a long time.\n\nUse the photon model to explain why the dim ultraviolet lamp releases electrons immediately but the bright red lamp releases none.",
       "kind": [
         "concept",
@@ -98,6 +100,7 @@
     {
       "id": "fy8-1-L2-01",
       "level": 2,
+      "core": true,
       "text": "The work function of caesium is $2.14\\,\\text{eV}$. Use the values $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^8\\,\\text{m/s}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$. What is the longest wavelength of light that still releases electrons from caesium? Give the answer in nanometres.",
       "answer": 579,
       "unit": "nm",
@@ -130,6 +133,7 @@
     {
       "id": "fy8-1-L2-05",
       "level": 2,
+      "core": true,
       "text": "In a photoelectric experiment the stopping voltage $U_\\text{s}$, that is the smallest reverse voltage that stops all the released electrons, is measured at different wavelengths. The table is example data, and the measurement uncertainty of the voltage is about $\\pm 0.02\\,\\text{V}$. The maximum kinetic energy is $E_\\text{k,max} = eU_\\text{s}$, where $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$. The speed of light is $c = 2.998 \\cdot 10^8\\,\\text{m/s}$.\n\na) Calculate the frequencies $f = \\tfrac{c}{\\lambda}$ and draw the graph $U_\\text{s}(f)$ on paper.\n\nb) Fit a straight line to the points and read its slope $k$ from two points chosen on the line, not from two measurement points. Calculate the Planck constant $h = ek$.\n\nc) Read the threshold frequency $f_0$ from the line and deduce the work function of the metal.\n\nEnter in the box the Planck constant of part b) in the unit $\\text{J}\\,\\text{s}$.",
       "kind": [
         "data",

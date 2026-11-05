@@ -1,12 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: ae78867bcf7d5485
+CONTENT-HASH: 6dec24abd3d540b2
+Scope: the diff since my last PASS (base 0e2116304, hash ae78867bcf7d5485), not a full review: the packet says full (reason: meta goals changed), but the teacher ruled "katselmoi vain muuttuneet osat". The only change is meta.json goal 2 (Täsmennys); plain-language quality of the changed sentence checked.
 
 ## Blocking
 (none)
 
 ## Polish
-- The new learning goal uses *kvanttitila* at the top of the page, before the lesson explains it (lesson: "Kvanttitila on atomin sallittu seisova aalto…"). A goal may name a term it will teach, so this is not blocking. The sentence is long, though, and "orbitaalin elektronin" is hard for an S2 reader. Suggested: "tulkitsemaan, että orbitaali on elektronin kvanttitila. Sen kuva on alue, jonka sisällä elektroni havaitaan valitulla todennäköisyydellä."
-- The lesson explains "kvanttitila" in the next sentence; optionally add "eli tila, jossa elektroni voi olla".
+(none)
 
 ## Checked
-Follow-up delta (2c31ff041, NOTES §12): the goal now matches the lesson's definition and fi, and the physics is unchanged. Earlier: the orbital is defined as a state/standing wave, the summary and misconception are consistent, and the STM caption is plain.
+- meta.json:6 matches fi word for word and agrees with fi-easy lesson.md:279–280 ("Orbitaali kuvaa elektronin kvanttitilaa… Piirretty alue on vain havainnollistus").
+- Plain language: the goal is a teacher-facing curriculum clarification (a semicolon list, same form as fi and as before), not shown on the page (build.py uses only the first goal as a fallback description), so it need not be split into selkosuomi sentences; the term kvanttitila is explained in the lesson itself.
+- Hash unchanged at start and end.

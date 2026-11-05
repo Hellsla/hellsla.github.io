@@ -19,6 +19,7 @@
     {
       "id": "fy7-1-L1-03",
       "level": 1,
+      "core": true,
       "text": "Kompassin kohdalla Maan magneettikentän vaakakomponentti on $14\\,\\mu\\text{T}$ pohjoiseen. Pöydällä olevan magneetin kenttä on $48\\,\\mu\\text{T}$ itään. Kuinka suuri on vaakasuora kokonaiskenttä mikrotesloina?",
       "answer": 50.0,
       "unit": "µT",
@@ -43,6 +44,7 @@
     {
       "id": "fy7-1-L1-06",
       "level": 1,
+      "core": true,
       "text": "Magneetti vetää puoleensa rautanaulaa, mutta ei alumiinitölkkiä eikä kuparikolikkoa. Mikä seuraavista selittää eron?",
       "kind": [
         "concept"
@@ -116,6 +118,7 @@
     {
       "id": "fy7-1-L2-01",
       "level": 2,
+      "core": true,
       "text": "Pöydällä olevan magneetin kenttä kompassin kohdalla on $25\\,\\mu\\text{T}$ itään. Maan magneettikentän vaakakomponentti on $14\\,\\mu\\text{T}$ pohjoiseen. Kuinka monta astetta pohjoisesta itään kompassin neula kääntyy?",
       "answer": 60.8,
       "unit": "°",
@@ -148,6 +151,7 @@
     {
       "id": "fy7-1-L2-05",
       "level": 2,
+      "core": true,
       "text": "Kompassi on sauvamagneetin akselilla magneetin itäpuolella. Magneetin kenttä osoittaa kompassin kohdalla itään. Maan magneettikentän vaakakomponentti on $14\\,\\mu\\text{T}$ pohjoiseen. Taulukossa on kompassin neulan kääntymiskulma pohjoisesta, kun kompassin etäisyys magneetista on $r$ (esimerkkiaineisto).\n\na) Laske magneetin magneettivuon tiheys $B_\\text{m}$ etäisyydellä $12\\,\\text{cm}$.\n\nb) Laske $B_\\text{m}$ myös etäisyyksillä $8{,}0\\,\\text{cm}$ ja $16\\,\\text{cm}$. Onko kenttä kääntäen verrannollinen etäisyyteen? Perustele vertaamalla, miten kenttä muuttuu, kun etäisyys kaksinkertaistuu.\n\nKirjoita vastauskenttään kohdan a) tulos mikrotesloina.",
       "kind": [
         "data"

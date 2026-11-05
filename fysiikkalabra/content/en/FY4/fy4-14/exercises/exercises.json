@@ -3,6 +3,7 @@
     {
       "id": "fy4-14-L1-01",
       "level": 1,
+      "core": true,
       "text": "A skydiver whose mass with equipment is $75.0\\,\\text{kg}$ falls belly down at terminal velocity. Draw the free-body diagram of the skydiver. What is the air resistance?",
       "answer": 735.75,
       "unit": "N",
@@ -30,6 +31,7 @@
     {
       "id": "fy4-14-L1-04",
       "level": 1,
+      "core": true,
       "text": "A football whose mass is $0.450\\,\\text{kg}$ has been kicked straight upward, and it is still rising. At one moment the air resistance is $1.20\\,\\text{N}$. Draw the free-body diagram of the ball. What is the net force acting on the ball at this moment?",
       "answer": 5.6145,
       "unit": "N",
@@ -78,6 +80,7 @@
     {
       "id": "fy4-14-L1-07",
       "level": 1,
+      "core": true,
       "text": "Two balls of the same size and shape are dropped from a great height in air. One is filled with sand and the other is empty. Which ball reaches the greater terminal velocity?",
       "kind": [
         "concept"
@@ -158,6 +161,7 @@
     {
       "id": "fy4-14-L2-05",
       "level": 2,
+      "core": true,
       "text": "The mass of a foam ball is $20.0\\,\\text{g}$. The ball is dropped from rest, and its speed is measured from a video. The table is example data.\n\nDetermine the acceleration of the ball at the moment $t = 0.60\\,\\text{s}$ as the slope from the table points $t = 0.40\\,\\text{s}$ and $t = 0.80\\,\\text{s}$. What is the air resistance acting on the ball at this moment?",
       "kind": [
         "data",

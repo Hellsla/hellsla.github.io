@@ -11,6 +11,7 @@
     {
       "id": "fy7-13-L1-02",
       "level": 1,
+      "core": true,
       "text": "Light from a red laser, with a wavelength of $650\\,\\text{nm}$, hits perpendicularly a grating whose grating spacing is $2.00\\,\\mu\\text{m}$. At what angle from the direction of the central maximum is the first-order maximum?",
       "answer": 18.9656,
       "unit": "°",
@@ -43,6 +44,7 @@
     {
       "id": "fy7-13-L1-06",
       "level": 1,
+      "core": true,
       "text": "Light from a laser passes through a narrow slit and forms a diffraction pattern on a screen. What happens to the width of the pattern when the slit is made narrower?",
       "kind": [
         "concept"
@@ -105,6 +107,7 @@
     {
       "id": "fy7-13-L2-02",
       "level": 2,
+      "core": true,
       "text": "Light from a red laser, with a wavelength of $650\\,\\text{nm}$, hits perpendicularly a grating with $100$ lines per millimetre. The screen is $2.50\\,\\text{m}$ from the grating, perpendicular to the beam. How far from the central maximum is the first-order maximum on the screen? Give the answer in centimetres.",
       "answer": 16.2844,
       "unit": "cm",
@@ -129,6 +132,7 @@
     {
       "id": "fy7-13-L2-05",
       "level": 2,
+      "core": true,
       "text": "A student determines the wavelength of a red laser with a grating whose line density is $100$ lines per millimetre. The grating and the screen are perpendicular to the beam, and the screen is $L = 1.00\\,\\text{m}$ from the grating.\n\nThe student measures with a tape measure the distance $x_k$ of the order-$k$ maximum from the central maximum; the measurement results are in the table.\n\na) For each maximum, calculate the angle $\\theta_k$ and its sine $\\sin\\theta_k$. Plot the points $(k, \\sin\\theta_k)$ and fit a straight line through the origin to them.\n\nb) From the slope of the line, calculate the wavelength $\\lambda$ of the laser in nanometres.\n\nThe result of part b) is written in the answer box.",
       "kind": [
         "data",

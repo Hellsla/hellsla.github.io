@@ -11,6 +11,7 @@
     {
       "id": "fy4-10-L1-02",
       "level": 1,
+      "core": true,
       "text": "On an air track a $0.50\\,\\text{kg}$ cart moves at $0.80\\,\\text{m/s}$ and collides with a $0.30\\,\\text{kg}$ cart at rest. The carts stick together. Friction is neglected. At what velocity do the carts move on together?",
       "answer": 0.5,
       "unit": "m/s",
@@ -43,6 +44,7 @@
     {
       "id": "fy4-10-L1-06",
       "level": 1,
+      "core": true,
       "text": "Two air-track carts collide and stick together. External forces are negligible during the collision. Which statement about this perfectly inelastic collision is correct?",
       "kind": [
         "concept"
@@ -97,6 +99,7 @@
     {
       "id": "fy4-10-L2-01",
       "level": 2,
+      "core": true,
       "text": "A $0.50\\,\\text{g}$ bullet is fired from an air rifle at $180\\,\\text{m/s}$. The mass of the rifle is $3.2\\,\\text{kg}$, and before the shot it is at rest, lightly supported by the shooter. The support of the shooter is neglected for the short time of the shot. At what velocity does the rifle start to move backwards?",
       "answer": 0.028125,
       "unit": "m/s",
@@ -129,6 +132,7 @@
     {
       "id": "fy4-10-L2-05",
       "level": 2,
+      "core": true,
       "text": "On an air track cart A ($m_\\text{A} = 0.50\\,\\text{kg}$) moves to the right and collides with cart B ($m_\\text{B} = 0.30\\,\\text{kg}$) at rest. The collision was carried out in three different ways, and the velocities were measured with video analysis. Right is the positive direction, friction is neglected and the data is example data.\n\na) Calculate the total momentum before and after in each experiment. Is momentum conserved within the measurement accuracy?\n\nb) Calculate the kinetic energy before and after in experiments 1 and 2 and classify the collisions as elastic, perfectly inelastic or partially elastic.\n\nc) Calculate the fraction of the original kinetic energy that remains in experiment 3 and classify the collision.\n\nThe answer box takes the fraction of part c) as a percentage.",
       "kind": [
         "data",

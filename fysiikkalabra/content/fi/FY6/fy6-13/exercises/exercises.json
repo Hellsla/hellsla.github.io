@@ -27,6 +27,7 @@
     {
       "id": "fy6-13-L1-04",
       "level": 1,
+      "core": true,
       "text": "Levykondensaattorin levyjen pinta-ala on $0{,}025\\,\\text{m}^2$, ja levyjen välissä on ilmaa $1{,}0\\,\\text{mm}$:n paksuudelta. Mikä on kondensaattorin kapasitanssi? Vastaa pikofaradeina.",
       "answer": 221.35,
       "unit": "pF",
@@ -74,6 +75,7 @@
     {
       "id": "fy6-13-L1-07",
       "level": 1,
+      "core": true,
       "text": "Ladatun ilmaeristeisen levykondensaattorin lähde irrotetaan. Sen jälkeen levyjen väliin työnnetään eristelevy, joka täyttää koko välin. Mitä kondensaattorin jännitteelle tapahtuu?",
       "kind": [
         "concept"
@@ -117,6 +119,7 @@
     {
       "id": "fy6-13-L2-01",
       "level": 2,
+      "core": true,
       "text": "Kondensaattorin levyjen välissä on $0{,}020\\,\\text{mm}$:n paksuinen paperikerros, jonka läpilyöntilujuus on $16\\,\\text{MV/m}$. Kuinka suuri jännite kondensaattoriin voidaan enintään kytkeä ilman läpilyöntiä?",
       "answer": 320,
       "unit": "V",
@@ -133,6 +136,7 @@
     {
       "id": "fy6-13-L2-03",
       "level": 2,
+      "core": true,
       "text": "Sydäniskurin kondensaattoriin varastoidaan ennen iskua energiaa $200\\,\\text{J}$, kun sen jännite on $2{,}0\\,\\text{kV}$. Mikä on kondensaattorin kapasitanssi? Vastaa mikrofaradeina.",
       "answer": 100,
       "unit": "µF",
@@ -195,6 +199,7 @@
     {
       "id": "fy6-13-L2-06",
       "level": 2,
+      "core": true,
       "text": "Kondensaattori ladataan vastuksen kautta $9{,}0\\,\\text{V}$:n paristolla, ja sen jännite mitataan sekunnin välein (esimerkkiaineisto). Tutki taulukkoa tai piirrä pisteistä kuvaaja. Millä aikavälillä latausvirta on suurin?",
       "kind": [
         "graph",

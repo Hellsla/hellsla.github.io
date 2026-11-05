@@ -76,3 +76,61 @@ Points are given not for the production method chosen but for how the choice is 
 - Wind power, solar power or nuclear power is called emission-free, even though their life-cycle emission factors are also $11\text{–}48\,\text{g/kWh}$.
 - Nuclear power is considered completely non-adjustable or hydropower unlimited: the power of a nuclear plant can be reduced, and the energy of hydropower depends on rainfall.
 - In part e only an opinion is given, without a calculation, or the winter peak is left undiscussed.
+
+## fy2-s2
+
+The sources and the question are the student's own, so the answers differ. Below is the structure of a model answer and one example. The question of the example is the greenhouse gas emission of wind power per unit of electricity produced. Source 1 is real: Annex III of Working Group III of the Fifth Assessment Report of the IPCC (AR5, 2014), whose median of life-cycle emissions is also used in task fy2-s1. Source 2 is an invented example of a common type of publication, an energy company's web page, and it does not exist.
+
+### a)
+**Find:** the question, the references of the two sources and the author, publisher and purpose of each
+**Principle:** From the reference the reader can find the publication themselves. The author and the publisher tell who is responsible for the figure, and the purpose tells why the publication was made. The purpose does not make the figure wrong, but it can affect which figures the publication chooses and how it presents them. Therefore a source is not rejected because of its publisher; instead its purpose is taken into account in the interpretation.
+**Model answer:** *Structure.* The question in one sentence. For each source the reference, the author or publisher, the type of publication and its purpose, and one or two sentences on how the purpose may show in the figures.
+
+*Example.* My question is how large the greenhouse gas emission of wind power is per unit of electricity produced.
+
+References:
+
+- Source 1: Schlömer, S. et al. (2014). Annex III: Technology-specific cost and performance parameters. In *Climate Change 2014: Mitigation of Climate Change. Contribution of Working Group III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change*. Cambridge University Press. Accessed (date of reading).
+- Source 2 (invented example): Esimerkkienergia Oy. Tuulivoima – puhdasta sähköä [Wind power – clean electricity]. Web page, updated (year). (web address). Accessed (date of reading).
+
+Source 1 is an annex of an assessment report of the Intergovernmental Panel on Climate Change, the IPCC, which collects the emissions of production methods from many studies. Its authors are researchers, and its purpose is to collect research findings as a basis for decision-making. The report gives a range and a median and does not recommend any production method.
+
+Source 2 is the web page of an energy company on which the company presents its wind farms. Its purpose is to inform customers about the company's production and to market it. Therefore the page tells about the advantages of wind power and does not necessarily tell how the figure has been calculated.
+
+### b)
+**Find:** the time of publication of the sources, the period of the data, and the figures with their quantities and units in the same unit
+**Principle:** The time of publication and the period of the data are different things: a new publication can use old data. Production methods and their equipment change, so figures from different years can differ for that reason alone. Figures can be compared only when they are the same quantity and in the same unit. The units of an emission factor are converted into each other by converting both the mass prefix and the energy prefix.
+**Model answer:** *Structure.* For each source the year of publication and the years of the data, the figure with its quantity and unit and, if needed, the conversion to the same unit.
+
+*Example.* Source 1 was published in 2014, and it collects studies published before that. Source 2 was updated last year, but it does not say which year the figure is from. Source 1 gives the median of the life-cycle greenhouse gas emissions of onshore wind power as $11\,\tfrac{\text{g}}{\text{kWh}}$ in carbon dioxide equivalent. The quantity is thus the combined effect of all greenhouse gases converted into an amount of carbon dioxide. Source 2 says that wind power produces electricity without carbon dioxide emissions, so its figure is $0\,\tfrac{\text{g}}{\text{kWh}}$, and it concerns carbon dioxide only. If one source gave the emission in the unit $\tfrac{\text{t}}{\text{GWh}}$, the conversion would be $11\,\tfrac{\text{g}}{\text{kWh}} = \tfrac{11 \cdot 10^{-6}\,\text{t}}{10^{-6}\,\text{GWh}} = 11\,\tfrac{\text{t}}{\text{GWh}}$, so the number stays the same.
+
+### c)
+**Find:** the system boundary, assumptions and uncertainty of each source
+**Principle:** The system boundary tells what the figure includes. Electricity is only part of all energy, because energy is also used for heating, transport and industry. Operational emissions are produced when the power plant produces energy. Life-cycle emissions also include the construction of the plant, the supply of fuel, maintenance and decommissioning. Therefore a production method that has no operational emissions can still cause life-cycle emissions. Assumptions such as the plant type, the region and the capacity factor change the figure, and the uncertainty shows as a range.
+**Model answer:** *Structure.* For each source: electricity or total energy, operational or life-cycle emission (or the corresponding boundary for another question), the most important assumptions and the uncertainty. If the source does not tell something, this is stated.
+
+*Example.* Both sources concern electricity. Source 1 calculates life-cycle emissions, so the manufacture, construction and decommissioning of the plants are included. Source 2 means operational emissions: a rotating wind turbine burns nothing. Source 1 assumes the capacity factors and plant lifetimes obtained from its studies, and the result depends on them: a longer lifetime spreads the construction emissions over a larger amount of energy. Besides the median, source 1 gives the range of the studies, $7\text{–}56\,\tfrac{\text{g}}{\text{kWh}}$ for onshore wind power, so its uncertainty is visible. Source 2 does not give the uncertainty, but the operational emission is zero by definition.
+
+### d)
+**Find:** the comparability of the sources and a justified conclusion
+**Principle:** Figures are comparable when they are the same quantity in the same unit, from the same period or at least from a period in which the matter has not had time to change, and with the same system boundary and the same key assumptions. If one of these differs, the difference can explain the difference between the figures. The conclusion distinguishes what the sources say from what can be inferred from them.
+**Model answer:** *Structure.* Comparability item by item, an explanation of the difference between the figures and a conclusion that answers the question or justifies why the sources are not enough for it.
+
+*Example.* The figures are in the same unit, and both concern electricity. The quantity is almost the same: source 1 counts all greenhouse gases in carbon dioxide equivalent and source 2 only carbon dioxide. The figures are still not directly comparable, because the system boundary is different: source 1 gives the life-cycle emission and source 2 the operational emission. The difference between $11\,\tfrac{\text{g}}{\text{kWh}}$ and $0\,\tfrac{\text{g}}{\text{kWh}}$ is explained by this, and neither source is wrong. My conclusion is that wind power has no operational carbon dioxide emissions and that its life-cycle greenhouse gas emission is about $11\,\tfrac{\text{g}}{\text{kWh}}$ in carbon dioxide equivalent according to source 1. When comparing production methods I use life-cycle emissions, because in them all production methods are calculated with the same boundary. The claim that wind power is emission-free holds only for the time of operation.
+
+Another equally good conclusion would be, for example, this: the sources are not comparable, because source 2 states neither its boundary nor its year, and an answer requires a source that gives the life-cycle emission with the same boundary as source 1.
+
+### Hyväksytään myös
+- Any energy production question that is answered with a number, and any two publications with different publishers. The points come from the assessment, not from the choice of sources.
+- A justified conclusion that the figures are not comparable, for example because one concerns electricity and the other all energy, or because the data are from different decades. In that case part d tells what kind of source would be needed for a comparison.
+- A conclusion that the sources are comparable and support each other, when it has been justified item by item.
+- Different conclusions from the same sources, when they have been justified with the information in the sources and do not claim more than the sources support.
+
+### Yleisiä virheitä
+- The source is a search engine results page, an AI answer or the front page of a website on which the figure cannot be found. The reference lacks the publisher, the year or the date of reading.
+- The sources have the same publisher, for example two pages of the same company, or a news item that only repeats the figure of the other source.
+- A source is rejected on the basis of its publisher alone, for example because it is a company page, even though its figure may be correct within its own boundary.
+- The time of publication and the period of the data are confused.
+- Figures are compared in different units, or in the conversion only the mass prefix or only the energy prefix is converted.
+- Electricity and total energy, or operational and life-cycle emissions, are compared with each other without noticing the difference in the boundary.
+- The conclusion chooses one of the sources as correct without justification, or it claims more on the basis of the sources than they say.

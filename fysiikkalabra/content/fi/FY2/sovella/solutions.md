@@ -76,3 +76,61 @@ Pisteitä ei anneta valitusta tuotantotavasta vaan siitä, miten valinta on peru
 - Tuulivoimaa, aurinkovoimaa tai ydinvoimaa kutsutaan päästöttömäksi, vaikka niidenkin elinkaaren päästökerroin on $11\text{–}48\,\text{g/kWh}$.
 - Ydinvoimaa pidetään täysin säätämättömänä tai vesivoimaa rajattomana: ydinvoimalan tehoa voi laskea, ja vesivoiman energia riippuu sateista.
 - e-kohdassa esitetään vain mielipide ilman laskelmaa tai jätetään talven huippu käsittelemättä.
+
+## fy2-s2
+
+Lähteet ja kysymys ovat opiskelijan omia, joten vastaukset ovat erilaisia. Alla on mallivastauksen rakenne ja yksi esimerkki. Esimerkin kysymys on tuulivoiman kasvihuonekaasupäästö tuotettua sähköä kohti. Lähde 1 on todellinen: IPCC:n viidennen arviointiraportin (AR5, 2014) työryhmän III liite III, jonka elinkaaripäästöjen mediaania käytetään myös tehtävässä fy2-s1. Lähde 2 on keksitty esimerkki tavallisesta julkaisutyypistä, energiayhtiön verkkosivusta, eikä sitä ole olemassa.
+
+### a)
+**Kysytty:** kysymys, kahden lähteen lähdemerkinnät sekä kummankin tekijä, julkaisija ja tarkoitus
+**Periaate:** Lähdemerkinnästä lukija löytää julkaisun itse. Tekijä ja julkaisija kertovat, kuka luvusta vastaa, ja tarkoitus kertoo, miksi julkaisu on tehty. Tarkoitus ei tee luvusta väärää, mutta se voi vaikuttaa siihen, mitkä luvut julkaisu valitsee ja miten se ne esittää. Siksi lähdettä ei hylätä julkaisijan takia, vaan sen tarkoitus otetaan huomioon tulkinnassa.
+**Mallivastaus:** *Rakenne.* Kysymys yhdellä virkkeellä. Kummastakin lähteestä lähdemerkintä, tekijä tai julkaisija, julkaisutyyppi ja tarkoitus sekä yksi tai kaksi virkettä siitä, miten tarkoitus voi näkyä luvuissa.
+
+*Esimerkki.* Kysymykseni on, kuinka suuri on tuulivoiman kasvihuonekaasupäästö tuotettua sähköä kohti.
+
+Lähdemerkinnät:
+
+- Lähde 1: Schlömer, S. ym. (2014). Annex III: Technology-specific cost and performance parameters. Teoksessa *Climate Change 2014: Mitigation of Climate Change. Contribution of Working Group III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change*. Cambridge University Press. Luettu (lukupäivä).
+- Lähde 2 (keksitty esimerkki): Esimerkkienergia Oy. Tuulivoima – puhdasta sähköä. Verkkosivu, päivitetty (vuosi). (verkko-osoite). Luettu (lukupäivä).
+
+Lähde 1 on hallitustenvälisen ilmastopaneelin IPCC:n arviointiraportin liite, jossa on koottu tuotantotapojen päästöjä monista tutkimuksista. Sen tekijät ovat tutkijoita, ja sen tarkoitus on koota tutkimustieto päätöksenteon pohjaksi. Raportti esittää vaihteluvälin ja mediaanin eikä suosittele mitään tuotantotapaa.
+
+Lähde 2 on energiayhtiön verkkosivu, jolla yhtiö esittelee tuulipuistojaan. Sen tarkoitus on kertoa asiakkaille yhtiön tuotannosta ja markkinoida sitä. Siksi sivu kertoo tuulivoiman eduista eikä välttämättä kerro, miten luku on laskettu.
+
+### b)
+**Kysytty:** lähteiden julkaisuaika, aineiston ajanjakso sekä luvut suureineen ja yksiköineen samassa yksikössä
+**Periaate:** Julkaisuaika ja aineiston ajanjakso ovat eri asioita: uusi julkaisu voi käyttää vanhaa aineistoa. Tuotantotavat ja niiden laitteet muuttuvat, joten eri vuosien luvut voivat erota jo siksi. Lukuja voi verrata vain, kun ne ovat samaa suuretta ja samassa yksikössä. Päästökertoimen yksiköt muunnetaan toisikseen, kun sekä massan että energian etuliitteet muunnetaan.
+**Mallivastaus:** *Rakenne.* Kummastakin lähteestä julkaisuvuosi ja aineiston vuodet, luku suureineen ja yksiköineen ja tarvittaessa muunnos samaan yksikköön.
+
+*Esimerkki.* Lähde 1 on julkaistu vuonna 2014, ja se kokoaa sitä ennen julkaistuja tutkimuksia. Lähde 2 on päivitetty viime vuonna, mutta se ei kerro, miltä vuodelta luku on. Lähde 1 ilmoittaa maatuulivoiman elinkaaren kasvihuonekaasupäästöjen mediaaniksi $11\,\tfrac{\text{g}}{\text{kWh}}$ hiilidioksidiekvivalenttina. Suure on siis kaikkien kasvihuonekaasujen yhteisvaikutus muunnettuna hiilidioksidin määräksi. Lähde 2 sanoo, että tuulivoima tuottaa sähköä ilman hiilidioksidipäästöjä, eli sen luku on $0\,\tfrac{\text{g}}{\text{kWh}}$, ja se koskee vain hiilidioksidia. Jos toinen lähde ilmoittaisi päästön yksikössä $\tfrac{\text{t}}{\text{GWh}}$, muunnos olisi $11\,\tfrac{\text{g}}{\text{kWh}} = \tfrac{11 \cdot 10^{-6}\,\text{t}}{10^{-6}\,\text{GWh}} = 11\,\tfrac{\text{t}}{\text{GWh}}$, eli luku pysyy samana.
+
+### c)
+**Kysytty:** kummankin lähteen tarkasteluraja, oletukset ja epävarmuus
+**Periaate:** Tarkasteluraja kertoo, mitä luku sisältää. Sähkö on vain osa kaikesta energiasta, sillä energiaa käytetään myös lämmitykseen, liikenteeseen ja teollisuuteen. Käytönaikaiset päästöt syntyvät, kun voimala tuottaa energiaa. Elinkaaren päästöihin lasketaan lisäksi voimalan rakentaminen, polttoaineen hankinta, huolto ja purkaminen. Siksi tuotantotapa, jolla ei ole käytönaikaisia päästöjä, voi silti aiheuttaa elinkaaren päästöjä. Oletukset, kuten laitostyyppi, alue ja käyttöaste, muuttavat lukua, ja epävarmuus näkyy vaihteluvälinä.
+**Mallivastaus:** *Rakenne.* Kummastakin lähteestä: sähkö vai kokonaisenergia, käytönaikainen vai elinkaaren päästö (tai muun kysymyksen vastaava rajaus), tärkeimmät oletukset ja epävarmuus. Jos lähde ei kerro jotakin, se todetaan.
+
+*Esimerkki.* Molemmat lähteet koskevat sähköä. Lähde 1 laskee elinkaaren päästöt, eli siinä ovat mukana voimaloiden valmistus, rakentaminen ja purkaminen. Lähde 2 tarkoittaa käytönaikaisia päästöjä: pyörivä tuulivoimala ei polta mitään. Lähde 1 olettaa tutkimuksistaan saadut käyttöasteet ja voimaloiden käyttöiät, ja tulos riippuu niistä: pidempi käyttöikä jakaa rakentamisen päästöt suuremmalle energiamäärälle. Lähde 1 ilmoittaa mediaanin lisäksi tutkimusten vaihteluvälin, maatuulivoimalle $7\text{–}56\,\tfrac{\text{g}}{\text{kWh}}$, joten sen epävarmuus näkyy. Lähde 2 ei kerro epävarmuutta, mutta käytönaikainen päästö on nolla jo määritelmän mukaan.
+
+### d)
+**Kysytty:** lähteiden vertailukelpoisuus ja perusteltu johtopäätös
+**Periaate:** Luvut ovat vertailukelpoisia, kun ne ovat samaa suuretta samassa yksikössä, samalta ajanjaksolta tai ainakin ajanjaksolta, jolla asia ei ole ehtinyt muuttua, ja samalla tarkastelurajalla ja samoilla keskeisillä oletuksilla. Jos jokin näistä eroaa, ero voi selittää lukujen eron. Johtopäätös erottaa sen, mitä lähteet sanovat, siitä, mitä niistä voi päätellä.
+**Mallivastaus:** *Rakenne.* Vertailukelpoisuus kohta kohdalta, lukujen eron selitys ja johtopäätös, joka vastaa kysymykseen tai perustelee, miksi lähteet eivät riitä siihen.
+
+*Esimerkki.* Luvut ovat samassa yksikössä, ja molemmat koskevat sähköä. Suure on lähes sama: lähde 1 laskee kaikki kasvihuonekaasut hiilidioksidiekvivalenttina ja lähde 2 vain hiilidioksidin. Luvut eivät silti ole suoraan vertailukelpoisia, koska tarkasteluraja on eri: lähde 1 antaa elinkaaren päästön ja lähde 2 käytönaikaisen. Ero $11\,\tfrac{\text{g}}{\text{kWh}}$ ja $0\,\tfrac{\text{g}}{\text{kWh}}$ selittyy tällä, eikä kumpikaan lähde ole väärässä. Johtopäätökseni on, että tuulivoimalla ei ole käytönaikaisia hiilidioksidipäästöjä ja että sen elinkaaren kasvihuonekaasupäästö on lähteen 1 mukaan noin $11\,\tfrac{\text{g}}{\text{kWh}}$ hiilidioksidiekvivalenttina. Tuotantotapoja vertaillessa käytän elinkaaren päästöjä, koska niissä kaikki tuotantotavat lasketaan samalla rajauksella. Väite, että tuulivoima on päästötöntä, pitää paikkansa vain käytön aikana.
+
+Toinen yhtä hyvä johtopäätös olisi esimerkiksi tämä: lähteet eivät ole vertailukelpoisia, koska lähde 2 ei kerro rajaustaan eikä vuottaan, ja vastaukseen tarvitaan lähde, joka ilmoittaa elinkaaren päästön samalla rajauksella kuin lähde 1.
+
+### Hyväksytään myös
+- Mikä tahansa energiantuotannon kysymys, johon vastataan luvulla, ja mitkä tahansa kaksi julkaisua, joilla on eri julkaisija. Pisteet tulevat arvioinnista, ei lähteiden valinnasta.
+- Perusteltu johtopäätös, että luvut eivät ole vertailukelpoisia, esimerkiksi koska toinen koskee sähköä ja toinen kaikkea energiaa tai koska aineistot ovat eri vuosikymmeniltä. Silloin d-kohdassa kerrotaan, millainen lähde tarvittaisiin vertailuun.
+- Johtopäätös, että lähteet ovat vertailukelpoisia ja tukevat toisiaan, kun se on perusteltu kohta kohdalta.
+- Eri johtopäätökset samoista lähteistä, kun ne on perusteltu lähteiden tiedoilla eivätkä väitä enempää kuin lähteet tukevat.
+
+### Yleisiä virheitä
+- Lähteenä on hakukoneen tulossivu, tekoälyn vastaus tai sivuston etusivu, josta lukua ei löydy. Lähdemerkinnästä puuttuu julkaisija, vuosi tai lukupäivä.
+- Lähteellä on sama julkaisija, esimerkiksi saman yhtiön kaksi sivua tai uutinen, joka vain toistaa toisen lähteen luvun.
+- Lähde hylätään pelkän julkaisijan perusteella, esimerkiksi koska se on yrityksen sivu, vaikka sen luku voi pitää paikkansa omalla rajauksellaan.
+- Julkaisuaika ja aineiston ajanjakso sekoitetaan.
+- Lukuja verrataan eri yksiköissä, tai muunnoksessa muunnetaan vain massan tai vain energian etuliite.
+- Sähköä ja kokonaisenergiaa tai käytönaikaisia ja elinkaaren päästöjä verrataan keskenään huomaamatta rajauksen eroa.
+- Johtopäätös valitsee lähteistä toisen oikeaksi perustelematta, tai se väittää lähteiden perusteella enemmän kuin niissä sanotaan.

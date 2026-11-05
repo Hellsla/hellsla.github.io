@@ -3,6 +3,7 @@
     {
       "id": "fy4-8-L1-01",
       "level": 1,
+      "core": true,
       "text": "A stone is dropped from rest from a bridge $12.0\\,\\text{m}$ above the water. Air resistance is ignored. At what speed does the stone hit the water?",
       "answer": 15.344054,
       "unit": "m/s",
@@ -35,6 +36,7 @@
     {
       "id": "fy4-8-L1-05",
       "level": 1,
+      "core": true,
       "text": "The mechanical energy of a skier is $12.4\\,\\text{kJ}$ at the top of a hill and $9.8\\,\\text{kJ}$ at the bottom. How much work do friction and air resistance together do on the skier during the descent? Give the work with its sign.",
       "answer": -2.6,
       "unit": "kJ",
@@ -43,6 +45,7 @@
     {
       "id": "fy4-8-L1-06",
       "level": 1,
+      "core": true,
       "text": "Two children slide down slides from rest. One slide is steep and short, the other gentle and long, but the starting height of both is the same. The children have equal masses, and friction and air resistance are ignored. What can be concluded about the children’s speeds at the bottom of the slide?",
       "kind": [
         "concept"
@@ -192,6 +195,7 @@
     {
       "id": "fy4-8-L2-06",
       "level": 2,
+      "core": true,
       "text": "A mini roller coaster car with its passengers has a mass of $420\\,\\text{kg}$. The height $h$ and speed $v$ of the car were measured at four points of the track, and $s$ is the track distance from point A. The table is example data. The zero level is the ground.\n\na) Calculate the mechanical energy of the car at points A, B, C and D in kilojoules.\n\nb) How much work do the resistive forces do on the car in total between points A and D?\n\nc) Between which points is the average resistive force greatest? Justify by calculating.\n\nThe answer field takes the result of part b) in kilojoules.",
       "kind": [
         "data",

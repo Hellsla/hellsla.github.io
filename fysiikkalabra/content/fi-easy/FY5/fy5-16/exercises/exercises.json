@@ -3,6 +3,7 @@
     {
       "id": "fy5-16-L1-01",
       "level": 1,
+      "core": true,
       "text": "Rakennustyömaalla iskuporakoneen melutaso käyttäjän korvalla on $91\\,\\text{dB}$. Kuinka monta tuntia päivässä hän saa käyttää konetta ilman kuulonsuojaimia? Vertailukohtana on ylempi toiminta-arvo, $8\\,\\text{h}$ tasolla $85\\,\\text{dB}$. Vastaa tunteina.",
       "answer": 2.0,
       "unit": "h",
@@ -43,6 +44,7 @@
     {
       "id": "fy5-16-L1-06",
       "level": 1,
+      "core": true,
       "text": "Koulun luokassa puhe kuulostaa sotkuiselta, koska jälkikaiunta-aika on liian pitkä. Jälkikaiunta-aika kertoo, kuinka kauan ääni jää kaikumaan huoneeseen. Mikä toimenpide lyhentäisi luokan jälkikaiunta-aikaa?",
       "kind": [
         "concept"
@@ -113,6 +115,7 @@
     {
       "id": "fy5-16-L2-01",
       "level": 2,
+      "core": true,
       "text": "Tehdashallissa on kaksi samanlaista konetta. Kumpikin tuottaa yksin käydessään työntekijän kohdalle tason $85\\,\\text{dB}$. Kuinka monta tuntia päivässä työntekijä saa olla hallissa ilman kuulonsuojaimia, kun molemmat koneet ovat käynnissä? Vertailukohtana on ylempi toiminta-arvo. Vastaa tunteina.",
       "answer": 4.0,
       "unit": "h",
@@ -191,6 +194,7 @@
     {
       "id": "fy5-16-L2-06",
       "level": 2,
+      "core": true,
       "kind": [
         "data",
         "reasoning"

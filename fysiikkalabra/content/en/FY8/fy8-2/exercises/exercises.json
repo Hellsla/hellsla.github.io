@@ -3,6 +3,7 @@
     {
       "id": "fy8-2-L1-01",
       "level": 1,
+      "core": true,
       "text": "The spectrum of a helium gas tube has a green line at the wavelength $502\\,\\text{nm}$. What is the difference between the energies of the helium atom's states in the transition that produces this line? Give the answer in electronvolts.",
       "answer": 2.47,
       "unit": "eV",
@@ -43,6 +44,7 @@
     {
       "id": "fy8-2-L1-06",
       "level": 1,
+      "core": true,
       "text": "A student looks at a light source with a spectroscope and sees a continuous band of colour with several narrow dark lines on it. Which of the following explains this spectrum?",
       "kind": [
         "concept"
@@ -118,6 +120,7 @@
     {
       "id": "fy8-2-L2-01",
       "level": 2,
+      "core": true,
       "text": "A hydrogen atom moves from the state $n = 4$, whose energy is $-0.85\\,\\text{eV}$, to the state $n = 2$, whose energy is $-3.40\\,\\text{eV}$. What is the wavelength of the photon produced? Give the answer in nanometres.",
       "answer": 486,
       "unit": "nm",
@@ -150,6 +153,7 @@
     {
       "id": "fy8-2-L2-05",
       "level": 2,
+      "core": true,
       "text": "Three bright lines were measured with a spectroscope from the spectrum of an unknown gas discharge lamp: $435.7\\,\\text{nm}$ (violet), $546.3\\,\\text{nm}$ (green) and $577.2\\,\\text{nm}$ (yellow). The table gives the wavelengths of the brightest emission lines of four elements (example data).\n\na) Which element is in the lamp? Justify your answer by comparing all three lines with the table.\n\nb) What is the energy of the photon of the green line of the lamp? Give the answer in electronvolts.\n\nThe answer box takes the result of part b).",
       "kind": [
         "data",

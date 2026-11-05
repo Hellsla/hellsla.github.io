@@ -3,6 +3,7 @@
     {
       "id": "fy5-9-L1-01",
       "level": 1,
+      "core": true,
       "text": "Kappaleen massa on $0{,}80\\,\\text{kg}$. Se värähtelee jousen varassa kitkattomalla vaakasuoralla alustalla. Jousen jousivakio on $50\\,\\text{N/m}$. Kuinka suuri on värähtelyn jaksonaika?",
       "answer": 0.794767,
       "unit": "s",
@@ -43,6 +44,7 @@
     {
       "id": "fy5-9-L1-06",
       "level": 1,
+      "core": true,
       "text": "Matemaattisen heilurin pituus ja pienet heilahdukset pidetään samoina. Heilurin kuula vaihdetaan samankokoiseen, kaksi kertaa raskaampaan kuulaan. Ilmanvastus jätetään huomiotta. Mitä heilurin jaksonaikaan tapahtuu?",
       "kind": [
         "concept"
@@ -135,6 +137,7 @@
     {
       "id": "fy5-9-L2-01",
       "level": 2,
+      "core": true,
       "text": "Tiedekeskuksen heilurin halutaan tekevän yhden täyden heilahduksen eli jakson tasan $1{,}50\\,\\text{s}$:ssa. Heilahdukset ovat pieniä, ja ilmanvastus jätetään huomiotta. Kuinka pitkä heilurin pitää olla?",
       "answer": 0.559103,
       "unit": "m",
@@ -250,6 +253,7 @@
     {
       "id": "fy5-9-L2-07",
       "level": 2,
+      "core": true,
       "text": "Opiskelija mittaa $1{,}000\\,\\text{m}$ pitkän heilurin jaksonaikaa eri lähtökulmista $\\alpha_0$ (esimerkkiaineisto). Hän ottaa käsin ajan kymmenelle jaksolle, $t_{10}$. Ajanoton epävarmuus on noin $0{,}2\\,\\text{s}$. Ilmanvastus jätetään huomiotta.\n\nKaava $T = 2\\pi\\sqrt{l/g}$ pätee pienillä heilahduksilla.\n\na) Kuinka monta prosenttia mitattu jaksonaika on kaavan antamaa jaksonaikaa suurempi, kun lähtökulma on $60\\,{}^\\circ$?\n\nb) Millä lähtökulmilla ero kaavaan on selvästi suurempi kuin ajanoton epävarmuus? Perustele kymmenen jakson ajoilla.\n\nVastaa laatikkoon kohdan a) tulos prosentteina.",
       "kind": [
         "data",

@@ -3,6 +3,7 @@
     {
       "id": "fy8-10-L1-01",
       "level": 1,
+      "core": true,
       "text": "Hiili-12-atomin massa on tasan $12{,}000000\\,\\text{u}$. Vetyatomin massa on $m_\\text{H} = 1{,}007825\\,\\text{u}$ ja neutronin $m_\\text{n} = 1{,}008665\\,\\text{u}$. Kuinka suuri on hiili-12-ytimen ${}^{12}_{6}\\text{C}$ massavaje? Anna vastaus atomimassayksikköinä.",
       "answer": 0.09894,
       "unit": "u",
@@ -84,6 +85,7 @@
     {
       "id": "fy8-10-L1-08",
       "level": 1,
+      "core": true,
       "text": "Sidosenergia nukleonia kohti $\\tfrac{E_\\text{B}}{A}$ on suurin rauta-56:n ja nikkeli-62:n ytimillä. Mitä tämä kertoo?",
       "kind": [
         "concept",
@@ -125,6 +127,7 @@
     {
       "id": "fy8-10-L2-02",
       "level": 2,
+      "core": true,
       "text": "Radium-226 hajoaa alfahajoamisella: ${}^{226}_{88}\\text{Ra} \\to {}^{222}_{86}\\text{Rn} + {}^{4}_{2}\\text{He}$. Atomimassat ovat $m({}^{226}\\text{Ra}) = 226{,}025410\\,\\text{u}$, $m({}^{222}\\text{Rn}) = 222{,}017578\\,\\text{u}$ ja $m({}^{4}\\text{He}) = 4{,}002603\\,\\text{u}$. Kuinka suuri energia hajoamisessa vapautuu? Käytä $1\\,\\text{u} = 931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$. Anna vastaus megaelektronivoltteina.",
       "answer": 4.871,
       "unit": "MeV",
@@ -149,6 +152,7 @@
     {
       "id": "fy8-10-L2-05",
       "level": 2,
+      "core": true,
       "text": "Taulukossa on kahdeksan nuklidin atomimassat. Käytä vetyatomin massaa $m_\\text{H} = 1{,}007825\\,\\text{u}$, neutronin massaa $m_\\text{n} = 1{,}008665\\,\\text{u}$ ja muuntoa $1\\,\\text{u} = 931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$. Voit käyttää taulukkolaskentaa.\n\na) Laske jokaisen nuklidin massavaje, sidosenergia ja sidosenergia nukleonia kohti. Järjestä nuklidit sidosenergian nukleonia kohti mukaan pienimmästä suurimpaan.\n\nb) Mikä nuklideista on tiiviimmin sidottu kuin kaikki muut, ja kuinka suuri on sen sidosenergia nukleonia kohti? Vastauslaatikkoon tulee b-kohdan arvo megaelektronivoltteina.",
       "kind": [
         "data",

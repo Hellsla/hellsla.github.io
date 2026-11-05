@@ -19,6 +19,7 @@
     {
       "id": "fy8-8-L1-03",
       "level": 1,
+      "core": true,
       "text": "Hiili-14 ${}^{14}_{6}\\text{C}$ hajoaa beeta miinus -hajoamisella. Mikä on syntyvän tytärytimen järjestysluku?",
       "answer": 7,
       "unit": "",
@@ -43,6 +44,7 @@
     {
       "id": "fy8-8-L1-06",
       "level": 1,
+      "core": true,
       "text": "Radioaktiivinen ydin voi hajota usealla tavalla. Mikä seuraavista hajoamisista kasvattaa ytimen järjestyslukua $Z$ yhdellä? Massaluku $A$ pysyy samana.",
       "kind": [
         "concept"
@@ -106,6 +108,7 @@
     {
       "id": "fy8-8-L2-02",
       "level": 2,
+      "core": true,
       "text": "Uraanisarjan vismutti-214 ${}^{214}_{83}\\text{Bi}$ hajoaa beeta miinus -hajoamisella. Syntyvä ydin hajoaa heti alfahajoamisella. Mikä on näiden kahden hajoamisen jälkeen syntyvän ytimen järjestysluku?",
       "answer": 82,
       "unit": "",
@@ -208,6 +211,7 @@
     {
       "id": "fy8-8-L2-07",
       "level": 2,
+      "core": true,
       "text": "Gammaspektrometri jakaa ilmaisimen pulssit kanaviin pulssin korkeuden mukaan. Siksi sen kanavanumero on verrannollinen fotonin energiaan. Energia-asteikko saadaan kalibroimalla laite lähteillä, joiden gammaviivojen energiat tunnetaan. Taulukossa on neljän viivan piikin kohdan kanavanumero (esimerkkiaineisto, energiat NNDC NuDat 3). Tuntemattoman lähteen piikki osuu kanavalle $1531$.\n\na) Piirrä kuvaaja, jossa $E_\\gamma$ on kanavanumeron funktiona. Sovita pisteisiin suora.\n\nb) Lue suoralta tuntemattoman piikin energia $E_\\gamma$ kiloelektronivoltteina.\n\nc) Selitä, miksi suoran sovittaminen on parempi kuin kahden pisteen yhdistäminen.\n\nKirjoita b-kohdan tulos vastauskenttään.",
       "kind": [
         "experiment",

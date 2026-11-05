@@ -3,6 +3,7 @@
     {
       "id": "fy2-6-L1-01",
       "level": 1,
+      "core": true,
       "text": "Tuulivoimalan keskiteho on viikon ($168\\,\\text{h}$) aikana $2{,}5\\,\\text{MW}$. Kuinka paljon sähköä se tuottaa viikossa? Anna vastaus megawattitunteina.",
       "answer": 420,
       "unit": "MWh",
@@ -74,6 +75,7 @@
     {
       "id": "fy2-6-L1-07",
       "level": 1,
+      "core": true,
       "text": "Sähköverkossa tuotannon ja kulutuksen on oltava yhtä suuret joka hetki. Mitä säätövoimalla tarkoitetaan?",
       "kind": [
         "concept"
@@ -113,6 +115,7 @@
     {
       "id": "fy2-6-L2-01",
       "level": 2,
+      "core": true,
       "text": "Esimerkkinä olevan tuulipuiston nimellisteho on $25\\,\\text{MW}$, ja sen keskiteho vuoden aikana on $32\\,\\%$ nimellistehosta. Kuinka paljon sähköä puisto tuottaa vuodessa, kun vuodessa on $8760\\,\\text{h}$? Anna vastaus gigawattitunteina.",
       "answer": 70,
       "unit": "GWh",
@@ -187,6 +190,7 @@
     {
       "id": "fy2-6-L2-06",
       "level": 2,
+      "core": true,
       "kind": [
         "data",
         "error"

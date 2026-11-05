@@ -1,13 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 8c4a1518d4ca3b47
+CONTENT-HASH: 45ac0575dbe6b9c7
+Scope: the diff since my last PASS (base 0e2116304, hash 8c4a1518d4ca3b47), not a full review: the packet says full (reason: meta goals changed), but the teacher ruled "katselmoi vain muuttuneet osat". The only change is meta.json goal 2 (Täsmennys); judged against the lesson text it describes.
 
 ## Blocking
 (none)
 
 ## Polish
-- The new learning goal "tulkitsemaan orbitaalin elektronin kvanttitilaksi ja sen kuvan alueeksi…" is hard to parse: "orbitaalin elektronin" reads as one genitive chain. Suggested: "tulkitsemaan, että orbitaali on elektronin kvanttitila ja sen kuva on alue, jonka sisällä elektroni havaitaan valitulla todennäköisyydellä."
-- The heading says "Orbitaali kuvaa elektronin kvanttitilaa", yet every figure shows the 90 % region. The sentence "Piirretty alue on havainnollistus, ei määritelmä" carries this well; keep it.
-- The STM photo has no link to the paragraph before it. One clause linking it to seeing atoms would help.
+(none)
 
 ## Checked
-Follow-up delta (2c31ff041): the learning goal now matches the lesson's definition (orbital = state; region = its picture), so the goals and the theory are consistent. Earlier: the summary, misconception and the Tarkista question "Mitä pallo esittää?" are consistent.
+- meta.json:6 "orbitaali elektronin kvanttitilana ja sen kuva alueena, jossa todennäköisyys ylittää kynnysarvon" now matches lesson.md:273–274 ("Orbitaali kuvaa elektronin kvanttitilaa… Piirretty alue on havainnollistus, ei orbitaalin määritelmä") and Tiivistelmä lesson.md:1442; the old wording equated the orbital with the region, which the lesson itself rejects.
+- The goal still fits the slot (LOPS FY8 kvanttitilat, aaltomekaaninen malli); no new content beyond what the lesson teaches; Finnish correct.
+- The Täsmennys goal is not shown on the page (build.py uses only the first goal as a fallback description), so no student-facing change.
+- Hash unchanged at start and end.

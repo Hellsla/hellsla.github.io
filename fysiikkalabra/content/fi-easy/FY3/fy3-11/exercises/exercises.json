@@ -27,6 +27,7 @@
     {
       "id": "fy3-11-L1-04",
       "level": 1,
+      "core": true,
       "text": "Pienen kaasumoottorin sylinterissä on kaasua. Kaasua lämmitetään, ja kaasu työntää mäntää eteenpäin. Kuvaajassa on kaasun paine $p$ tilavuuden $V$ funktiona laajenemisen aikana. Kuinka suuren työn kaasu tekee laajetessaan? Lue tarvittavat arvot kuvaajasta. Anna vastaus jouleina.",
       "figure": "fy3-11/pv-isobaari",
       "answer": 750,
@@ -44,6 +45,7 @@
     {
       "id": "fy3-11-L1-06",
       "level": 1,
+      "core": true,
       "text": "Kaasu laajenee sylinterissä vakiopaineessa. $(V, p)$-koordinaatistossa laajeneminen näkyy vaakasuorana janana. Mikä seuraavista kertoo oikein, miten kaasun tekemä työ nähdään koordinaatistosta?",
       "kind": [
         "concept"
@@ -117,6 +119,7 @@
     {
       "id": "fy3-11-L2-01",
       "level": 2,
+      "core": true,
       "text": "Lauhdevoimalaitos polttaa puuhaketta ja turvetta. Laitos tuottaa vuorokauden aikana sähköä $3\\,830\\,\\text{MWh}$. Samana aikana kattilassa palaneen polttoaineen energia on $33{,}6\\,\\text{TJ}$ ($1\\,\\text{TJ} = 10^{12}\\,\\text{J}$). Mikä on laitoksen hyötysuhde? Anna vastaus prosentteina.",
       "answer": 41.0,
       "unit": "%",
@@ -185,6 +188,7 @@
     {
       "id": "fy3-11-L2-06",
       "level": 2,
+      "core": true,
       "text": "Oppilas väittää: ”Kun lämpövoimakoneen kitka ja muut häviöt saadaan poistettua, kone voi muuttaa kaiken saamansa lämmön työksi, koska energia säilyy.” Mikä väitteessä on virheellistä?",
       "kind": [
         "error",

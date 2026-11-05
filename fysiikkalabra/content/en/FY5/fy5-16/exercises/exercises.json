@@ -3,6 +3,7 @@
     {
       "id": "fy5-16-L1-01",
       "level": 1,
+      "core": true,
       "text": "On a building site the noise level of a hammer drill at the user's ear is $91\\,\\text{dB}$. For how many hours a day may the user use the tool without hearing protectors, when the reference is the upper action value, $8\\,\\text{h}$ at a level of $85\\,\\text{dB}$? Answer in hours.",
       "answer": 2.0,
       "unit": "h",
@@ -43,6 +44,7 @@
     {
       "id": "fy5-16-L1-06",
       "level": 1,
+      "core": true,
       "text": "In a school classroom speech sounds muddled because the reverberation time is too long. Which measure would shorten the reverberation time of the classroom?",
       "kind": [
         "concept"
@@ -113,6 +115,7 @@
     {
       "id": "fy5-16-L2-01",
       "level": 2,
+      "core": true,
       "text": "A factory hall has two identical machines. Each alone produces a level of $85\\,\\text{dB}$ at the worker's position. For how many hours a day may the worker stay in the hall without hearing protectors when both machines are running? The reference is the upper action value. Answer in hours.",
       "answer": 4.0,
       "unit": "h",
@@ -191,6 +194,7 @@
     {
       "id": "fy5-16-L2-06",
       "level": 2,
+      "core": true,
       "kind": [
         "data",
         "reasoning"

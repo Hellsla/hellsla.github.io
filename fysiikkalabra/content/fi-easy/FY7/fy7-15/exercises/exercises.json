@@ -3,6 +3,7 @@
     {
       "id": "fy7-15-L1-01",
       "level": 1,
+      "core": true,
       "text": "Auringonvalo on polarisoimatonta. Sen intensiteetti on $640\\,\\text{W/m}^2$, kun se tulee ihanteelliseen polarisaattoriin. Kuinka suuri on valon intensiteetti polarisaattorin jälkeen?",
       "answer": 320.0,
       "unit": "W/m²",
@@ -43,6 +44,7 @@
     {
       "id": "fy7-15-L1-06",
       "level": 1,
+      "core": true,
       "text": "Polaroiduissa aurinkolaseissa on polarisaattorikalvo. Kalvon läpäisysuunta on pystysuora. Miksi lasit vähentävät erityisesti vedenpinnasta heijastuvaa häikäisyä?",
       "kind": [
         "concept"
@@ -91,6 +93,7 @@
     {
       "id": "fy7-15-L2-01",
       "level": 2,
+      "core": false,
       "text": "Polarisoimattoman valon intensiteetti on $900\\,\\text{W/m}^2$. Valo kulkee kahden ihanteellisen polarisaattorin läpi. Polarisaattorien läpäisysuuntien välinen kulma on $40{,}0^\\circ$. Kuinka suuri on valon intensiteetti toisen polarisaattorin jälkeen?",
       "answer": 264.0708,
       "unit": "W/m²",
@@ -99,6 +102,7 @@
     {
       "id": "fy7-15-L2-02",
       "level": 2,
+      "core": false,
       "text": "Polarisoitunut valo tulee ihanteelliseen analysaattoriin. Analysaattorin läpi pääsee $25{,}0\\,\\%$ siihen tulevan valon intensiteetistä. Kuinka suuri on valon polarisaatiosuunnan ja analysaattorin läpäisysuunnan välinen kulma?",
       "answer": 60.0,
       "unit": "°",

@@ -3,6 +3,7 @@
     {
       "id": "fy3-6-L1-01",
       "level": 1,
+      "core": true,
       "text": "Kahvinkeittimen säiliöön kaadetaan $1{,}8\\,\\text{kg}$ vettä, jonka lämpötila on $12\\,{}^\\circ\\text{C}$. Keitin lämmittää veden $96\\,{}^\\circ\\text{C}$:seen. Kuinka suuri lämpömäärä veteen siirtyy? Anna vastaus megajouleina.",
       "answer": 0.63,
       "unit": "MJ",
@@ -43,6 +44,7 @@
     {
       "id": "fy3-6-L1-06",
       "level": 1,
+      "core": true,
       "text": "Rannalla auringonvalo antaa $1{,}0\\,\\text{kg}$:lle vettä ja $1{,}0\\,\\text{kg}$:lle kuivaa hiekkaa saman lämpömäärän. Hiekka lämpenee selvästi enemmän kuin vesi. Mikä tämän selittää?",
       "kind": [
         "concept"
@@ -91,6 +93,7 @@
     {
       "id": "fy3-6-L2-01",
       "level": 2,
+      "core": true,
       "text": "Teemukiin kaadetaan $160\\,\\text{g}$ vettä, jonka lämpötila on $95\\,{}^\\circ\\text{C}$. Tee on liian kuumaa juotavaksi, joten joukkoon lisätään $40\\,\\text{g}$ kylmää vettä, jonka lämpötila on $8{,}0\\,{}^\\circ\\text{C}$. Mikä on veden lämpötila sekoittamisen jälkeen? Oleta, ettei lämpöä siirry mukiin eikä ilmaan.",
       "answer": 78,
       "unit": "°C",
@@ -124,6 +127,7 @@
     {
       "id": "fy3-6-L2-05",
       "level": 2,
+      "core": true,
       "text": "Kalorimetrissä lämmitetään sähkövastuksella $0{,}50\\,\\text{kg}$ tuntematonta nestettä tasaisella $100\\,\\text{W}$:n teholla. Lämpötila mitataan minuutin välein, ja tulokset ovat taulukossa (esimerkkiaineisto). Oleta, että kaikki vastuksen energia siirtyy nesteeseen.\n\na) Vedä lämpötila-aikakuvaajaan suora pisteiden lomaan. Se kulkee likimain pisteiden $(0\\,\\text{s};\\ 20{,}0\\,{}^\\circ\\text{C})$ ja $(300\\,\\text{s};\\ 34{,}5\\,{}^\\circ\\text{C})$ kautta. Laske suoran kulmakertoimen avulla nesteen ominaislämpökapasiteetti.\n\nb) Mikä neste on kyseessä? Perustele taulukon $c$-arvoilla.\n\nc) Nimeä yksi tapa pienentää lämpöhäviöitä tällaisessa kokeessa ja perustele, miksi se parantaa tulosta.\n\nAnna a)-kohdan tulos vastauslaatikkoon.",
       "kind": [
         "data",

@@ -43,6 +43,7 @@
     {
       "id": "fy8-13-L1-06",
       "level": 1,
+      "core": true,
       "text": "Absorbed dose is measured in the unit gray ($\\text{Gy}$) and effective dose in the unit sievert ($\\text{Sv}$). Both units can be written in the form $\\tfrac{\\text{J}}{\\text{kg}}$. Which statement describes the difference between these doses correctly?",
       "kind": [
         "concept"
@@ -73,6 +74,7 @@
     {
       "id": "fy8-13-L1-07",
       "level": 1,
+      "core": true,
       "text": "In an X-ray examination of the abdomen the liver receives an equivalent dose of $2.0\\,\\text{mSv}$ and the stomach $1.0\\,\\text{mSv}$ (example values). The other tissues receive no significant dose.\n\nThe tissue weighting factor of the liver is $0.04$ and that of the stomach $0.12$. How large is the patient's effective dose? Give the answer in millisieverts.",
       "answer": 0.2,
       "unit": "mSv",
@@ -99,6 +101,7 @@
     {
       "id": "fy8-13-L2-02",
       "level": 2,
+      "core": true,
       "text": "The dose rate of a gamma source is $150\\,\\mu\\text{Sv/h}$ at a distance of $1.0\\,\\text{m}$. A maintenance technician works $2.5\\,\\text{m}$ from the source. How long can they work before the dose is $100\\,\\mu\\text{Sv}$? Give the answer in hours.",
       "answer": 4.2,
       "unit": "h",
@@ -123,6 +126,7 @@
     {
       "id": "fy8-13-L2-05",
       "level": 2,
+      "core": true,
       "text": "The table shows the average annual effective dose of a Finn by source. The data is example data based on the average annual dose of $5.9\\,\\text{mSv}$ in STUK-A263 (2020). Other natural radiation includes radiation from the ground and building materials, cosmic radiation and the radioactive substances of the body.\n\na) Calculate the sum of the doses of the sources.\n\nb) What percentage of the total dose comes from indoor radon? Give the answer as a percentage.\n\nThe answer box takes the result of part b).",
       "kind": [
         "data"

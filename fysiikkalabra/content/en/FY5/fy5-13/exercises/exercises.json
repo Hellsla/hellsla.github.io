@@ -3,6 +3,7 @@
     {
       "id": "fy5-13-L1-01",
       "level": 1,
+      "core": true,
       "text": "The vibrating part of the lowest string of a double bass is $1.05\\,\\text{m}$ long, and a wave travels in the string at the speed $86.1\\,\\text{m/s}$. The string is fixed at both ends. What is the fundamental frequency of the string?",
       "answer": 41.0,
       "unit": "Hz",
@@ -43,6 +44,7 @@
     {
       "id": "fy5-13-L1-06",
       "level": 1,
+      "core": true,
       "text": "A standing wave has formed in a guitar string. Which of the following describes an antinode of the string correctly?",
       "kind": [
         "concept"
@@ -73,6 +75,7 @@
     {
       "id": "fy5-13-L1-07",
       "level": 1,
+      "core": true,
       "text": "The fundamental frequency of a tube closed at one end is $150\\,\\text{Hz}$. Which of the following is also a natural frequency of the tube?",
       "kind": [
         "concept"
@@ -189,6 +192,7 @@
     {
       "id": "fy5-13-L2-06",
       "level": 2,
+      "core": true,
       "text": "The speed of sound is measured with a resonance tube. The lower part of a vertical tube contains water, and a tuning fork with the frequency $512\\,\\text{Hz}$ sounds above the mouth of the tube. When the water level is lowered, the sound is amplified at three points. The water surface acts as the closed end of the tube. The table shows the length $L$ of the air column from the water surface to the mouth of the tube at each point (example data).\n\na) Determine the speed of sound in air. Use the difference between the lengths of the first and the third resonance, in which case the end correction of the tube is not needed.\n\nb) Calculate how much the first length deviates from a quarter of a wavelength, and explain the cause of the deviation.\n\nThe answer box takes the result of part a).",
       "kind": [
         "experiment",

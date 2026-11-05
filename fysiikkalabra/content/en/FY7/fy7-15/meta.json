@@ -4,7 +4,7 @@
   "title": "Polarisation of light",
   "goals": [
     "LOPS FY7: polarisation of light, qualitatively",
-    "Clarification: polarisation in a polariser and on reflection from an insulator, Brewster's law"
+    "Clarification: polarisation in a polariser and on reflection from an insulator; Malus's law and Brewster's law as an extension"
   ],
   "prerequisites": [
     "fy7-10"

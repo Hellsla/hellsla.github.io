@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 2bb592b2d865407e
-Round 2: full review of the exercise set after the round-1 fixes (commit e6301a0ac).
+CONTENT-HASH: e733db822fea11fb
+Mode: full in the packet; scope by the teacher's ruling ("katselmoi vain muuttuneet osat"): the diff since the last PASS (`git diff d6007a53c -- content/fi/FY6/fy6-12/exercises`) plus what the changed lines touch.
+Round 3 (follow-up: korjattujen käsitteiden yhdenmukaisuus)
 
 ## Blocking
+(none)
 
 ## Polish
-- docs/exercise-bank/FY6.md fy6-12 Taso 2 — the planned V(x) graph task for two situations was replaced by the ion-mass data task L2-07. Update the plan line.
+- exercises.json:72 — the L1-06 stem names only "homogeeninen sähkökenttä", no plates, so the feedback's "negatiivisella levyllä" refers to plates the task never shows — optional: "kun potentiaalin nollakohta on kentän synnyttävällä negatiivisella levyllä"; physics is right as it stands.
 
 ## Checked
-- Hash 2bb592b2d865407e at start and end. Diff since 048b5f229 read in full.
-- Round-1 Blocking 1 (L2-06, B) fixed: distractor feedback now says "levosta lähtevä positiivinen varaus kiihtyy / liikkuu kohti pienempää potentiaalia"; the model answer says a positive charge reaches higher potential only "jos sillä on liike-energiaa tai ulkoinen voima tekee työtä". No force-equals-velocity picture remains; consistent with L3-03.
-- Round-1 Blocking 2 (L2-05) fixed: the solution fits the origin line by least squares, Σx² = 55,0 cm², ΣxV = 275,7 V·cm, k = 5,013 V/cm, E = 501 V/m, U = 30,1 V (recomputed: 30,08 V); the task allows least squares or one point read from the line; origin justified by the zero at the negative plate; answer 30.1 in exercises.json and answers.py.
-- Round-1 Polish fixed: L2-07 6,66·10⁻²⁷ kg with three figures; He⁺ named; "Taulukon tulkinta" in L2-05 and L3-05; L3-04 c 1,4·10¹⁴.
-- L1-06, L1-07, L2-06 after reordering: exactly one correct option, `answer` equals it, distractor feedback right.
-- answers.py re-run: all 17 numeric answers agree with exercises.json.
-- Scope (uniform field, E_p = qV, W = qU, eV), levels and notation unchanged; no duplicates.
+- Diff is five lines: `core: true` on L1-04, L1-06, L1-08, L2-03 and one feedback sentence in L1-06; no number, answer, unit, tolerance or correct flag changed.
+- L1-06 feedback: V = Ex with zero at the negative plate and x measured from it matches the lesson Kaava and Tiivistelmä word for word in content; sign is right (V grows from − to +, falls in the field direction), consistent with the correct option's "potentiaali laskee kentän suuntaan".
+- Same convention as solutions.md:65, :115, :147 (V = Ex from the negative plate).
+- Core marks are science-neutral; the four tasks use only lesson formulas (W = qU, |q|U = ½mv², eV).
+- Hash e733db822fea11fb at start and end, equal to the packet's.

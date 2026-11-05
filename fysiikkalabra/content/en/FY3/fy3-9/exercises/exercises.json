@@ -3,6 +3,7 @@
     {
       "id": "fy3-9-L1-01",
       "level": 1,
+      "core": true,
       "text": "A disposable syringe contains $30.0\\,\\text{ml}$ of air at a pressure of $101\\,\\text{kPa}$. The tip of the syringe is closed with a finger, and the plunger is pulled out slowly until the volume of the air is $45.0\\,\\text{ml}$. The temperature of the air stays the same, and no air enters or leaves the syringe. What is the air pressure in the syringe now?",
       "answer": 67.3,
       "unit": "kPa",
@@ -82,6 +83,7 @@
     {
       "id": "fy3-9-L1-08",
       "level": 1,
+      "core": true,
       "kind": [
         "concept"
       ],
@@ -130,6 +132,7 @@
     {
       "id": "fy3-9-L2-03",
       "level": 2,
+      "core": true,
       "text": "In a physics lesson the tip of a disposable syringe was connected to a pressure gauge, and the plunger of the syringe was moved slowly so that the temperature of the air stayed the same.\n\nThe measured volumes $V$ (ml) were 10.0; 12.5; 15.0; 20.0; 25.0 and 30.0, and the corresponding pressures $p$ (kPa) were 203; 159; 134; 99; 81 and 66.\n\nCalculate a column $1/V$ in the table, plot $p$ as a function of $1/V$ and fit a straight line through the origin to the points. The slope of the line is $pV$. Give it in joules.",
       "answer": 2.0,
       "unit": "J",
@@ -146,6 +149,7 @@
     {
       "id": "fy3-9-L2-05",
       "level": 2,
+      "core": true,
       "kind": [
         "data"
       ],
