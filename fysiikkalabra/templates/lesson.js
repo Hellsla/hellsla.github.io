@@ -533,14 +533,15 @@
    than its text column (a long calculation on a 360 px phone) is moved onto its own line and scrolls sideways,
    like display maths, instead of overflowing the page. Re-checked on resize and when a <details> opens. */
 (function () {
-  const SKIP = '.katex-display,svg,.sim-tex-layer,.fig-tex,#sim-root';
+  const SKIP = '.katex-display,.eq-chain,svg,.sim-tex-layer,.fig-tex,#sim-root';
   function fit(root) {
     const ks = [...(root || document).querySelectorAll('.katex')].filter(k => !k.closest(SKIP));
     ks.forEach(k => k.classList.remove('kx-wide'));
     const W = document.documentElement.clientWidth;
     ks.forEach(k => {
       if (!k.offsetParent) return;
-      const box = k.parentElement.closest('p,li,td,th,dd,dt,div,summary,figcaption,blockquote,label,.steps,.stage');
+      let box = k.parentElement.closest('p,li,td,th,dd,dt,div,summary,figcaption,blockquote,label,.steps,.stage');
+      while (box && box.parentElement && getComputedStyle(box).display === 'inline-block') box = box.parentElement;   // an inline-block box grows with the formula (fy5-15 answer)
       const r = k.getBoundingClientRect();
       const right = Math.min(W, box ? box.getBoundingClientRect().right : W);
       if (r.right > right + 1 || (box && r.width > box.clientWidth + 1)) k.classList.add('kx-wide');
