@@ -491,7 +491,12 @@ def link_languages():
                 return (f'<details class="lang-menu"><summary><span class="visually-hidden">{esc(here("site.language"))}: </span>'
                         f'<span class="lang-current">{esc(here("format.language_name"))}</span></summary>'
                         f'<ul class="lang-list" aria-label="{esc(here("site.language_choose"))}">{"".join(items)}</ul></details>')
-            f.write_text(re.sub(r"<!--fl-languages:([\w.-]+)-->", control, f.read_text()))
+            html = re.sub(r"<!--fl-languages:([\w.-]+)-->", control, f.read_text())
+            if lang != i18n.SOURCE:   # a link in the text to a page only the source language has (FY10's investigations from FY9): that page
+                src = OUTS[i18n.SOURCE]
+                html = re.sub(r'\bhref="([\w.-]+\.html)([#?][^"]*)?"', lambda m: m.group(0) if (OUTS[lang] / m.group(1)).is_file() or not (src / m.group(1)).is_file()
+                              else f'href="{os.path.relpath(src / m.group(1), OUTS[lang]).replace(os.sep, "/")}{m.group(2) or ""}"', html)
+            f.write_text(html)
 
 
 def chapter_card(html):
