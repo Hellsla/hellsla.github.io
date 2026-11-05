@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: a0b2e7a7c4453baf
+CONTENT-HASH: 7ee331f058551765
 
 ## Blocking
 
 ## Polish
-- [Minor] exercises.json — answer units "m/s²" are plain text in the unit field beside the input (readable); answer chips and solutions use LaTeX.
-- [Minor] solutions L3-02 — "v_1"/"v_2" stand alone on their row (layout by design).
+- [Minor] none of substance; the round-1 Polish notes were taken up or need no change.
 
 ## Checked
-- Round 2: open-exercises-L3-1280-2 (L3-02 with the new "Älä pyöristä välituloksia ennen vähennystä" sentence: bold question block reads clearly, solution intact); round-1 captures of levels 1–3 and stage-exercises-390 still apply
-- all quantities LaTeX with case endings, \cdot, colon division, consistent solution structure
+- Round 2 delta against hash 7ee331f058551765: contact-7/8 (#73–#91): L1-06 MC, L2-05 Periaate, L2-06 Sijoitus (row C 3,96 km/s, table now 3.96), L2-07, L3-04 Vastaus, L3-05 Annettu; all inside cards, formulas set correctly.
+- Script scan of the new tasks: no plain-text quantities, no ×/÷.
+- No 360 px exercise capture in the packet; the 360 px layout check is ok.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

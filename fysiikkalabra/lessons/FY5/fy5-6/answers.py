@@ -25,4 +25,19 @@ a["fy5-6-L3-01"] = (r_mars - 3.390e6) / 1e3                        # height abov
 dv = math.sqrt(gam * M_E / (R_E + 398e3)) - math.sqrt(gam * M_E / (R_E + 400e3))
 a["fy5-6-L3-02"] = dv                                              # ISS sinks 400 -> 398 km: v grows by 1,13 m/s
 a["fy5-6-L3-03"] = 2 * math.pi * math.sqrt(R_E ** 3 / (gam * M_E)) / 60   # weightless on the equator: v² / R = γM/R², T = 2π sqrt(R³/γM) = 5062 s = 84,4 min
+# Exercise bank additions (teacher 2026-11-04): L1-06 is multiple choice (no number)
+a["fy5-6-L1-07"] = math.sqrt(gam * 1.90e27 / 4.22e8) / 1e3         # Io, M_Jupiter = 1,90·10²⁷ kg, r = 4,22·10⁸ m: v = sqrt(γM/r) = 17 335 m/s -> 17,3 km/s
+a["fy5-6-L1-08"] = 2 * math.pi * 1.496e11 / (365.25 * 86400) / 1e3   # Earth round the Sun: v = 2πr/T = 29 786 m/s -> 29,79 km/s
+moons = [(4.217e8, 1.769), (6.711e8, 3.551), (1.070e9, 7.155), (1.883e9, 16.69)]   # table of L2-05: r (m), T (d)
+k = sum(r ** 3 / (T * 86400) ** 2 for r, T in moons) / 4           # mean of r³/T² = 3,2094·10¹⁵ m³/s²
+a["fy5-6-L2-05"] = 4 * math.pi ** 2 * k / gam / 1e27               # M = 4π²/γ · r³/T² = 1,898·10²⁷ kg -> 1,90·10²⁷ kg
+a["fy5-6-L2-06"] = math.sqrt(gam * M_E / (R_E + 1200e3)) / 1e3     # table of L2-06: row B (h = 1200 km) should be 7,254 km/s -> 7,25 km/s (listed 7,52)
+a["fy5-6-L2-07"] = math.sqrt(gam * M_E / (R_E + 800e3)) / 1e3      # mass cancels: h = 800 km, r = 7171 km, v = 7454 m/s -> 7,45 km/s
+planets = [(6.0e9, 3.29), (10.5e9, 7.57), (27.0e9, 31.4)]          # table of L3-04 without planet d (T halved): r (m), T (d)
+k3 = sum(r ** 3 / (T * 86400) ** 2 for r, T in planets) / 3        # mean r³/T² = 2,685·10¹⁸ m³/s²
+a["fy5-6-L3-04"] = 4 * math.pi ** 2 * k3 / gam / 1e30              # M = 4π²/γ · r³/T² = 1,588·10³⁰ kg -> 1,59·10³⁰ kg
+gm = gam * M_E
+TA = 2 * math.pi * math.sqrt((R_E + 400e3) ** 3 / gm)              # satellite A at 400 km: 5546,0 s
+TB = 2 * math.pi * math.sqrt((R_E + 1000e3) ** 3 / gm)             # satellite B at 1000 km: 6299,3 s
+a["fy5-6-L3-05"] = TA * TB / (TB - TA) / 3600                      # t/T_A − t/T_B = 1: t = 46 379 s = 12,88 h -> 12,9 h
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

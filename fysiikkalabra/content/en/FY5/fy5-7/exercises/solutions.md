@@ -49,6 +49,26 @@
 **Answer:** $16\,\text{cm}$, two significant figures as in the amplitude $4.0\,\text{cm}$.
 **Reasonableness:** The distance between the extreme positions is $2A = 8.0\,\text{cm}$, and during a period the weight travels it twice, up and down: $2 \cdot 8.0\,\text{cm} = 16\,\text{cm}$. The displacement of the weight during a period is, however, zero, because it returns to its starting place.
 
+## fy5-7-L1-06
+**Find:** which weight makes more oscillations per second, when the period of one and the frequency of the other is known.
+**Principle:** The number of oscillations per second is the frequency. The period and the frequency are reciprocals of each other, $f = \tfrac{1}{T}$, so they are different quantities in different units, and their numerical values cannot be compared directly. For the comparison, the frequency is calculated for both.
+**Model answer:** The frequency of the weight whose period is $0.25\,\text{s}$ is $\tfrac{1}{0.25\,\text{s}} = 4.0\,\text{Hz}$. It is greater than the frequency of the other weight, $3.0\,\text{Hz}$, so weight A, whose period is known, makes four oscillations per second and weight B three. Comparing the numerical values directly ($3.0$ is greater than $0.25$) is a mistake, because they are different quantities. The conclusion that a longer period means faster oscillation is also wrong: a longer period means fewer oscillations. As periods the comparison would be $0.25\,\text{s}$ and $\tfrac{1}{3.0}\,\text{s} = 0.33\,\text{s}$, and the shorter period belongs to the faster oscillator.
+
+## fy5-7-L1-07
+**Given:** frequency $f = 1.6\,\text{Hz}$, number of oscillations $n = 40$
+**Find:** the time $t$ taken by $40$ full oscillations in seconds
+**Principle:** One oscillation lasts the period $T = \tfrac{1}{f}$. The oscillations are identical, so $n$ oscillations last $n$ times the period.
+**Formula:** $t = n T$, and since $T = \tfrac{1}{f}$, $t = \dfrac{n}{f}$
+**Conversions:** None needed: $1\,\text{Hz} = 1\,\tfrac{1}{\text{s}}$, so the time is obtained in seconds.
+**Substitution:** $t = \dfrac{40}{1.6\,\tfrac{1}{\text{s}}} = 25\,\text{s}$
+**Answer:** $25\,\text{s}$, two significant figures as in the frequency $1.6\,\text{Hz}$; the number of oscillations $40$ is counted exactly.
+**Reasonableness:** The period is $\tfrac{1}{1.6\,\text{Hz}} = 0.625\,\text{s}$, and $40 \cdot 0.625\,\text{s} = 25\,\text{s}$. Another check: there are $1.6$ oscillations in a second, so in $25\,\text{s}$ there are $1.6 \cdot 25 = 40$.
+
+## fy5-7-L1-08
+**Find:** how the period changes when the frequency doubles, and where the student’s claim is wrong.
+**Principle:** The frequency and the period are reciprocals of each other, $f = \tfrac{1}{T}$. When the frequency grows, less time is left for one oscillation, so the period decreases in the same ratio. The student treated the quantities as proportional, although one is the reciprocal of the other.
+**Model answer:** If the frequency doubles, for example from $2.0\,\text{Hz}$ to $4.0\,\text{Hz}$, the period is halved from $0.50\,\text{s}$ to $0.25\,\text{s}$, because $T = \tfrac{1}{f}$. The student’s claim is wrong: faster oscillation means a greater frequency but a shorter period. The period cannot be considered a fixed property, because it changes with the frequency. Nor does it grow because there are more oscillations, since the period is the duration of one oscillation and not the total time of all of them.
+
 ## fy5-7-L2-01
 **Given:** a graph of the displacement $x$ of a cart as a function of time $t$ according to the sine model, time $t = 0.10\,\text{s}$
 **Find:** the displacement $x$ of the cart from the equilibrium position in centimetres at the moment $t$
@@ -90,6 +110,38 @@
 **Answer:** $7.50\,\text{cm}$, three significant figures as in the difference of the distances $15.0\,\text{cm}$.
 **Reasonableness:** The equilibrium position is at the distance $\tfrac{32.0\,\text{cm} + 47.0\,\text{cm}}{2} = 39.5\,\text{cm}$. From it to each extreme position is $7.50\,\text{cm}$: $39.5\,\text{cm} - 7.50\,\text{cm} = 32.0\,\text{cm}$ and $39.5\,\text{cm} + 7.50\,\text{cm} = 47.0\,\text{cm}$, as measured.
 
+## fy5-7-L2-05
+**Given:** times of six successive peaks in the table: the first $t_1 = 0.42\,\text{s}$ and the sixth $t_6 = 3.47\,\text{s}$
+**Find:** the frequency $f$ of the oscillation in hertz
+**Principle:** The interval between two successive peaks is one period, because at a peak the object is at the same position and the phase of the motion is the same. Between the first and the sixth peak there are five periods, not six. Using the whole measurement series spreads the reading uncertainty over several periods, and the frequency is obtained as the reciprocal of the period.
+**Reading the table:** The time of the first peak $0.42\,\text{s}$ and the time of the sixth peak $3.47\,\text{s}$ are read from the table; between them there are five intervals between peaks.
+**Formula:** $T = \dfrac{t_6 - t_1}{5}$ and $f = \dfrac{1}{T}$
+**Conversions:** None needed: the times are in seconds, so the frequency is obtained in hertz.
+**Substitution:** $T = \dfrac{3.47\,\text{s} - 0.42\,\text{s}}{5} = \dfrac{3.05\,\text{s}}{5} = 0.61\,\text{s}$, so $f = \dfrac{1}{0.61\,\text{s}} = 1.639\,\text{Hz}$
+**Answer:** $1.64\,\text{Hz}$, three significant figures as in the times of the table.
+**Reasonableness:** The intervals between successive peaks are $0.62\,\text{s}$, $0.59\,\text{s}$, $0.62\,\text{s}$, $0.60\,\text{s}$ and $0.62\,\text{s}$, all close to $0.61\,\text{s}$. If one divided by six, the period would be $0.51\,\text{s}$, which is clearly shorter than any interval in the table.
+
+## fy5-7-L2-06
+**Given:** five measurements for the time of $10$ swings: $15.2\,\text{s}$, $14.8\,\text{s}$, $15.4\,\text{s}$, $15.0\,\text{s}$ and $15.1\,\text{s}$
+**Find:** the period $T$ of the pendulum in seconds (part a); in addition the estimate of the uncertainty and the explanation (part b)
+**Principle:** The measurement results vary randomly, so their mean $t_{\text{avg}}$ is calculated. It is the time of ten swings, and the period is the duration of one swing, that is, a tenth of it.
+**Formula:** $t_{\text{avg}} = \dfrac{\text{sum of the times}}{5}$ and $T = \dfrac{t_{\text{avg}}}{10}$
+**Conversions:** None needed: all times are in seconds.
+**Substitution:** The sum of the times is $75.5\,\text{s}$, so $t_{\text{avg}} = \dfrac{75.5\,\text{s}}{5} = 15.1\,\text{s}$ and $T = \dfrac{15.1\,\text{s}}{10} = 1.51\,\text{s}$
+**Answer:** a) $1.51\,\text{s}$, three significant figures as in the measured times. Part b): the range of the measurements is $15.4\,\text{s} - 14.8\,\text{s} = 0.6\,\text{s}$, so the estimate of the uncertainty is half of it, $0.3\,\text{s}$ for ten swings. For the period it is $\tfrac{0.3\,\text{s}}{10} = 0.03\,\text{s}$, that is, $T \approx 1.51\,\text{s} \pm 0.03\,\text{s}$. In timing by hand the error is of the same order of magnitude regardless of the number of swings, but the time of ten swings is divided by ten, so the error in the period decreases to a tenth. If one swing were timed, the same $0.3\,\text{s}$ would be almost a fifth of the period.
+**Reasonableness:** The period $1.51\,\text{s}$ is close to each single measurement divided by ten ($1.48\,\text{s}$ … $1.54\,\text{s}$), and the usual period of a pendulum is a few seconds or less, so the result is believable.
+
+## fy5-7-L2-07
+**Given:** passes of the equilibrium position at the moments $0.00\,\text{s}$ (up), $0.37\,\text{s}$ (down), $0.75\,\text{s}$ (up), $1.12\,\text{s}$ (down) and $1.49\,\text{s}$ (up); the student’s result $T = 0.37\,\text{s}$
+**Find:** the student’s mistake and the correct frequency $f$ in hertz
+**Principle:** The period is the time after which the object is at the same position and moving in the same direction. In successive passes the direction changes (in the table alternately up and down), so the interval between them is only half a period. A full period is measured between passes in the same direction.
+**Reading the table:** Only the passes going up are chosen from the table, at the moments $0.00\,\text{s}$, $0.75\,\text{s}$ and $1.49\,\text{s}$; between the first and the last there are two full periods.
+**Formula:** $T = \dfrac{t_5 - t_1}{2}$ and $f = \dfrac{1}{T}$
+**Conversions:** None needed: the times are in seconds.
+**Substitution:** The passes going up are at the moments $t_1 = 0.00\,\text{s}$, $t_3 = 0.75\,\text{s}$ and $t_5 = 1.49\,\text{s}$, and between them there are two periods. $T = \dfrac{1.49\,\text{s} - 0.00\,\text{s}}{2} = 0.745\,\text{s}$ and $f = \dfrac{1}{0.745\,\text{s}} = 1.342\,\text{Hz}$
+**Answer:** $1.34\,\text{Hz}$, three significant figures as in the times of the table. The student used half a period as the period, so the student’s frequency was double.
+**Reasonableness:** The intervals between successive passes are $0.37\,\text{s}$, $0.38\,\text{s}$, $0.37\,\text{s}$ and $0.37\,\text{s}$, all about half of $0.745\,\text{s}$. The correct period is thus twice the student’s number, and the correct frequency is approximately half of the student’s frequency $2.7\,\text{Hz}$.
+
 ## fy5-7-L3-01
 **Given:** period $T = 1.2\,\text{s}$, timing starts at a pass through the equilibrium position going up, the height asked about $x = \tfrac{A}{2}$
 **Find:** the time $t$ after which the weight is for the first time at the height $\tfrac{A}{2}$
@@ -119,3 +171,24 @@
 **Substitution:** $\dfrac{k}{m} = \dfrac{0.90\,\text{s}}{0.60\,\text{s}} = 1.5 = \dfrac{3}{2}$, so $k = 3$ and $t = 3 \cdot 0.60\,\text{s} = 1.80\,\text{s}$
 **Answer:** $1.8\,\text{s}$, two significant figures as in the periods $0.60\,\text{s}$ and $0.90\,\text{s}$.
 **Reasonableness:** In the time $1.8\,\text{s}$ the first makes $\tfrac{1.8}{0.60} = 3$ and the second $\tfrac{1.8}{0.90} = 2$ full oscillations, so both are again in the starting state. It does not happen earlier: at $0.90\,\text{s}$ the first has made only one and a half oscillations and passes the equilibrium position going down.
+
+## fy5-7-L3-04
+**Given:** times of the R peaks in the table: at rest beat 6, that is, the end of the sixth beat interval, $t_{\text{rest}} = 4.96\,\text{s}$, and after exercise $t_{\text{exercise}} = 2.77\,\text{s}$, both counted from beat 0, that is, from the time $0\,\text{s}$; number of beat intervals $n = 6$
+**Find:** the increase $p$ of the pulse (frequency) in percent from rest to exercise
+**Principle:** The beats repeat approximately evenly, so they are treated as periodic motion: the beat interval is the period $T$ and the pulse is the frequency $f = \tfrac{1}{T}$ in beats per unit of time. The period is determined from all six intervals, because then the variation of single intervals averages out. The increase of the pulse is the difference of the frequencies relative to the frequency at rest.
+**Formula:** $T = \dfrac{t_6}{6}$, $f = \dfrac{1}{T}$ and $p = \dfrac{f_{\text{exercise}} - f_{\text{rest}}}{f_{\text{rest}}} \cdot 100\,\%$
+**Conversions:** Pulse per minute: $1\,\text{Hz} = 60\,\tfrac{1}{\text{min}}$. In the calculation of the percentage the units cancel.
+**Substitution:** At rest $T_{\text{rest}} = \dfrac{4.96\,\text{s}}{6} = 0.8267\,\text{s}$ and $f_{\text{rest}} = \dfrac{1}{0.8267\,\text{s}} = 1.210\,\text{Hz} = 72.6\,\tfrac{1}{\text{min}}$. After exercise $T_{\text{exercise}} = \dfrac{2.77\,\text{s}}{6} = 0.4617\,\text{s}$ and $f_{\text{exercise}} = \dfrac{1}{0.4617\,\text{s}} = 2.166\,\text{Hz} = 130\,\tfrac{1}{\text{min}}$. The increase is $p = \dfrac{2.166\,\text{Hz} - 1.210\,\text{Hz}}{1.210\,\text{Hz}} \cdot 100\,\% = 79.06\,\%$.
+**Answer:** $79\,\%$, two significant figures. The explanation for part c): a single interval varies ($0.81\,\text{s}$ … $0.85\,\text{s}$ at rest), but the total time of six intervals divided by six evens out the variation, and the timing error is shared among six intervals.
+**Reasonableness:** The resting pulse $72.6\,\tfrac{1}{\text{min}}$ is a usual resting pulse of an adult, and $130\,\tfrac{1}{\text{min}}$ is believable right after exercise. The beat interval became shorter from about $0.83\,\text{s}$ to $0.46\,\text{s}$, that is, the interval is about $0.56$ times the earlier, and $\tfrac{1}{0.56} = 1.79$ corresponds to an increase of $79\,\%$.
+
+## fy5-7-L3-05
+**Given:** the $(t, d)$ values of the table: the greatest distance $46.0\,\text{cm}$ at the time $0.4\,\text{s}$, the smallest $34.0\,\text{cm}$ at the time $1.2\,\text{s}$; the distance is $40.1\,\text{cm}$ at the times $0$ and $1.6\,\text{s}$; the time of the prediction $t = 5.0\,\text{s}$
+**Find:** the distance $d$ at the time $5.0\,\text{s}$ in centimetres
+**Principle:** The oscillation is assumed sinusoidal and undamped, and the measurement starts at a pass of the equilibrium position as the distance increases, so the model is $d = D + A \sin\left(\tfrac{2\pi t}{T}\right)$ without a phase term. The parameters are read from the table, and the model predicts a future value.
+**Reading the table:** The distance returns to its initial value $40.1\,\text{cm}$ and starts to increase again at the time $1.6\,\text{s}$, so one oscillation lasts $T = 1.6\,\text{s}$.
+**Formula:** $D = \dfrac{d_{\max} + d_{\min}}{2}$, $A = \dfrac{d_{\max} - d_{\min}}{2}$ and $d = D + A \sin\left(\dfrac{2\pi t}{T}\right)$
+**Conversions:** None needed: the distances are in centimetres and the times in seconds. The calculator is in radian mode.
+**Substitution:** $D = \dfrac{46.0\,\text{cm} + 34.0\,\text{cm}}{2} = 40.0\,\text{cm}$ and $A = \dfrac{46.0\,\text{cm} - 34.0\,\text{cm}}{2} = 6.0\,\text{cm}$. At the time $5.0\,\text{s}$ the argument of the sine is $19.63$, and $d = 40.0\,\text{cm} + 6.0\,\text{cm} \cdot \sin 19.63 = 40.0\,\text{cm} + 6.0\,\text{cm} \cdot 0.7071 = 44.24\,\text{cm}$
+**Answer:** $44\,\text{cm}$, two significant figures, because the period $1.6\,\text{s}$ was read from the table at $0.2\,\text{s}$ intervals and the prediction is extrapolation. For $D$ both $40.0\,\text{cm}$ and $40.1\,\text{cm}$ are acceptable.
+**Reasonableness:** The time $5.0\,\text{s}$ is $3.125$ periods, that is, three full periods and $45\,{}^\circ$, and $\sin 45\,{}^\circ = 0.7071$. Part c): the prediction extends more than two periods ($3.4\,\text{s}$) beyond the measured range, so the error of the period accumulates: with the period $1.62\,\text{s}$ the prediction would be $43.1\,\text{cm}$.

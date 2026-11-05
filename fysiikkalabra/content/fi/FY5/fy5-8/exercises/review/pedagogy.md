@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 226834e3f8ddfdfe
+CONTENT-HASH: 44dcfc0bfd9ecb00
 
 ## Blocking
 (none)
 
 ## Polish
-1. L1-04 and L2-04 both still use k = 60 N/m, L1-01 and L1-03 both use the gym, and L2-01 has no situation — vary A's slope in L2-04 and give L2-01 a context.
-2. Coverage — apart from L3-03, no exercise asks for the direction of the spring force or the third-law pair; the alt texts of ex-suora and ex-kaksi name a gridline point (0,10 m; 6 N) that fixes k by one division.
+- exercises.json L1-08 — still reads two points of a line like L1-04; shares figure ex-kaksi with L2-04. Consider asking which spring is stiffer.
+- figures.py ex-kaksi description still cites the point (0,10 m; 2,5 N); consistent with the line (25 N/m), but the solution now reads (0,08; 2,0) and (0,12; 3,0): fine.
+- exercises.json L2-05 answer unit/format 24,4 vs solution "24 also OK" — consistent, tolerance 0,03 now rejects the 23,4 N/m error.
 
 ## Checked
-- Round 1 fixes confirmed: L2-04 now reads "Määritä ensin ... Kuinka paljon ...?" with the question last; L3-01 solution states F₂ − F₁ = k(x₂ − x₁) = kΔx before 4kΔx = Δm g.
-- L1-04 and L2-04 solution phrasing ("k_A on kuvaajan kulmakerroin") is clear; the L1-04 "Vastaus" wording is still slightly awkward but understandable.
-- Levels 5/4/3 per the rubric; none repeats the fisherman example.
-- Answers recomputed and match; solutions follow the full step order with named slips.
-- L3-03 force diagram consistent with the solution; Finnish cases correct.
+- Rewritten MC L1-06: one correct option, distractors misconception-based, order changed.
+- L1-08 solution points (0,08 m; 2,0 N) and (0,12 m; 3,0 N) lie on the 25 N/m line and on the figure's grid.
+- L2-05 fit derivation added (24,4 from fit through origin); tolerance tightened.
+- L3-04 now speaks of work done and notes hysteresis (upper bound for recoverable energy); 0,255 J unchanged.
+- Counts 8/7/5; all answers recomputed and match.

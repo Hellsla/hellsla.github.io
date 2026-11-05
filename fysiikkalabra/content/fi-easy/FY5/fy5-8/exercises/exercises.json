@@ -40,6 +40,78 @@
       "answer": 0.15,
       "unit": "m",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-8-L1-06",
+      "level": 1,
+      "text": "Jousta venyttävä voima on suoraan verrannollinen jousen venymään: $F_\\text{v} = kx$. Milloin tämä lauseke kuvaa jousta hyvin?",
+      "kind": [
+        "concept"
+      ],
+      "unit": "",
+      "tolerance": 0.02,
+      "answer": "Kun jousta ei venytetä liian pitkälle, koska liian suurella venymällä voima ei enää kasva tasaisesti.",
+      "choices": [
+        {
+          "text": "Vain jos jousi on vaakasuorassa, koska pystysuoran jousen oma paino sotkee verrannollisuuden.",
+          "feedback": "Jousen omaa massaa ei oteta huomioon. Verrannollisuus pätee myös pystysuoralle jouselle: punnuksen paino $mg$ on juuri se voima, joka venyttää jousta, ja siitä jousivakio mitataan."
+        },
+        {
+          "text": "Aina, koska jousivakio on vakio ja voima on siksi verrannollinen venymään kaikilla venymillä.",
+          "feedback": "Jousivakio on vakio vain jousen toiminta-alueella. Jos venymä on liian suuri, $(x, F_\\text{v})$-kuvaaja taipuu pois suoralta. Silloin jousi ei välttämättä palaa enää entiseen pituuteensa."
+        },
+        {
+          "text": "Vain jos jousta puristetaan eikä venytetä, koska venytettäessä voima on aina pienempi.",
+          "feedback": "Harmoninen voima pätee yhtä hyvin venytetylle kuin puristetulle jouselle. Voiman suuruus on molemmissa tapauksissa $k|x|$, ja vain suunta vaihtuu."
+        },
+        {
+          "text": "Kun jousta ei venytetä liian pitkälle, koska liian suurella venymällä voima ei enää kasva tasaisesti.",
+          "correct": true,
+          "feedback": "Oikein. Harmoninen voima on malli, joka pätee pienillä venymillä. Kun jousta venytetään liikaa, jousen aine alkaa venyä eri tavalla tai jää pysyvästi vääntyneeksi. Silloin mittauspisteet eivät ole enää samalla suoralla."
+        }
+      ]
+    },
+    {
+      "id": "fy5-8-L1-07",
+      "level": 1,
+      "text": "Jousen venymä kaksinkertaistetaan, esimerkiksi $2{,}0\\,\\text{cm}$:stä $4{,}0\\,\\text{cm}$:iin. Mitä jousen potentiaalienergialle $E_\\text{p}$ tapahtuu?",
+      "kind": [
+        "concept"
+      ],
+      "unit": "",
+      "tolerance": 0.02,
+      "answer": "Se nelinkertaistuu, koska energia on verrannollinen venymän toiseen potenssiin.",
+      "choices": [
+        {
+          "text": "Se kaksinkertaistuu, koska venyttävä voima kaksinkertaistuu ja energia on verrannollinen voimaan.",
+          "feedback": "Voima kaksinkertaistuu, mutta jousta venytetään myös kaksi kertaa pidemmälle. Siksi työ eli energia kasvaa enemmän kuin voima."
+        },
+        {
+          "text": "Se pysyy samana, koska jousivakio ja jousen lepopituus eivät muutu venyttäessä.",
+          "feedback": "Jousivakio pysyy samana, mutta $E_\\text{p} = \\tfrac{1}{2}kx^2$ riippuu myös venymästä $x$. Siksi energia muuttuu."
+        },
+        {
+          "text": "Se nelinkertaistuu, koska energia on verrannollinen venymän toiseen potenssiin.",
+          "correct": true,
+          "feedback": "Oikein. Kolmion kanta ja korkeus kaksinkertaistuvat, joten pinta-ala eli energia kasvaa nelinkertaiseksi: $\\tfrac{1}{2}k(2x)^2 = 4\\cdot\\tfrac{1}{2}kx^2$."
+        },
+        {
+          "text": "Se kasvaa $\\sqrt{2}$-kertaiseksi, koska energia on verrannollinen venymän neliöjuureen.",
+          "feedback": "Kaavassa venymä on toisessa potenssissa, ei neliöjuuressa. Neliöjuuri pienentäisi kasvua, mutta oikeasti energia kasvaa nopeammin kuin venymä."
+        }
+      ]
+    },
+    {
+      "id": "fy5-8-L1-08",
+      "level": 1,
+      "text": "Kuvaajassa on kahden jousen, A:n ja B:n, venymä ja jousta venyttävä voima. Lue kuvaajasta jousen B suoran (katkoviiva) kaksi pistettä. Kuinka suuri on jousen B jousivakio?",
+      "kind": [
+        "graph"
+      ],
+      "figure": "fy5-8/ex-kaksi",
+      "answer": 25.0,
+      "unit": "N/m",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -75,6 +147,72 @@
       "answer": 0.192,
       "unit": "J",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy5-8-L2-05",
+      "level": 2,
+      "text": "Oppilaat mittasivat jousen jousivakion. He ripustivat jouseen punnuksia ja mittasivat jousen venymän. Taulukossa on esimerkkiaineisto mittauksesta; $g = 9{,}81\\,\\text{m/s}^2$.\n\na) Mitkä mittauspisteet ovat lineaarisella alueella? Siellä jousta venyttävä voima on suoraan verrannollinen venymään.\n\nb) Piirrä $(x, F_\\text{v})$-kuvaaja. Sovita lineaarisen alueen pisteisiin suora, joka kulkee origon kautta. Kuinka suuri on jousen jousivakio?\n\nAnna kohdan b) tulos vastauslaatikkoon.",
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "data": {
+        "caption": "Jousen venymä punnuksen massan funktiona (esimerkkiaineisto)",
+        "columns": [
+          "$m\\,(\\text{g})$",
+          "$x\\,(\\text{cm})$"
+        ],
+        "rows": [
+          [
+            "100",
+            "4.1"
+          ],
+          [
+            "200",
+            "7.9"
+          ],
+          [
+            "300",
+            "12.1"
+          ],
+          [
+            "400",
+            "16.1"
+          ],
+          [
+            "500",
+            "22.0"
+          ]
+        ]
+      },
+      "answer": 24.4,
+      "unit": "N/m",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy5-8-L2-06",
+      "level": 2,
+      "text": "Opiskelija mittaa jousen jousivakion. Jousen pituus on ilman kuormaa $12{,}0\\,\\text{cm}$. Jouseen ripustetaan $0{,}200\\,\\text{kg}$:n punnus. Silloin jousen pituus on levossa $20{,}0\\,\\text{cm}$. Jousen massa jätetään huomiotta; $g = 9{,}81\\,\\text{m/s}^2$.\n\nOpiskelija laskee: ”Jousta venyttää punnuksen paino $0{,}200\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2 = 1{,}962\\,\\text{N}$ ja jousen pituus on $0{,}200\\,\\text{m}$, joten $k = \\dfrac{F_\\text{v}}{x} = \\dfrac{1{,}962\\,\\text{N}}{0{,}200\\,\\text{m}} = 9{,}81\\,\\text{N/m}$.”\n\nMikä opiskelijan laskussa on virhe? Laske oikea jousivakio ja anna se vastauslaatikkoon.",
+      "kind": [
+        "error",
+        "data"
+      ],
+      "answer": 24.525,
+      "unit": "N/m",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy5-8-L2-07",
+      "level": 2,
+      "text": "Kaksi jousta venytetään kumpikin levossa samalla voimalla $12\\,\\text{N}$. Jousen 1 jousivakio on $80\\,\\text{N/m}$ ja jousen 2 jousivakio $240\\,\\text{N/m}$. Opiskelija väittää: ”Jäykempään jouseen varastoituu enemmän energiaa, koska se on jäykempi.”\n\na) Laske kummankin jousen venymä.\n\nb) Laske kummankin jousen potentiaalienergia.\n\nc) Kuinka paljon enemmän jousen potentiaalienergiaa on pehmeämmässä jousessa kuin jäykemmässä? Anna kohdan c) tulos vastauslaatikkoon.",
+      "kind": [
+        "reasoning",
+        "error"
+      ],
+      "answer": 0.6,
+      "unit": "J",
+      "tolerance": 0.03
     }
   ],
   "level3": [
@@ -102,6 +240,83 @@
       "answer": 3.2,
       "unit": "N",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-8-L3-04",
+      "level": 3,
+      "text": "Kuminauhan venymistä tutkittiin. Nauhaan ripustettiin eri suuruisia voimia ja mitattiin nauhan venymä. Taulukossa on esimerkkiaineisto. Voima $F_\\text{v}$ on nauhaa venyttävä voima. Kuvaajan piste $(0;\\ 0)$ kuuluu mittaukseen.\n\na) Laske osamäärä $\\dfrac{F_\\text{v}}{x}$ jokaiselle muulle mittauspisteelle kuin origolle. Perustele sen avulla, voidaanko kuminauhaa kuvata harmonisella voimalla $F_\\text{v} = kx$ ja yhdellä jousivakiolla.\n\nb) Arvioi nauhaa venyttävän voiman tekemä työ, kun venymä on $12\\,\\text{cm}$. Laske $(x, F_\\text{v})$-kuvaajan ja $x$-akselin väliin jäävä pinta-ala. Jaa ala mittauspisteiden välisiin puolisuunnikkaisiin. Puolisuunnikkaan pinta-ala on välin leveys kertaa välin päiden voimien keskiarvo.\n\nc) Vertaa tulosta energiaan, jonka saisit kaavalla $E_\\text{p} = \\tfrac{1}{2}kx^2$, kun $k$ lasketaan ensimmäisestä mittauspisteestä.\n\nAnna kohdan b) tulos vastauslaatikkoon.",
+      "kind": [
+        "data",
+        "graph",
+        "model",
+        "reasoning"
+      ],
+      "data": {
+        "caption": "Kuminauhan venyttäminen (esimerkkiaineisto)",
+        "columns": [
+          "$x\\,(\\text{cm})$",
+          "$F_\\text{v}\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "3.0",
+            "1.5"
+          ],
+          [
+            "6.0",
+            "2.2"
+          ],
+          [
+            "9.0",
+            "2.8"
+          ],
+          [
+            "12.0",
+            "4.0"
+          ]
+        ]
+      },
+      "answer": 0.255,
+      "unit": "J",
+      "tolerance": 0.04
+    },
+    {
+      "id": "fy5-8-L3-05",
+      "level": 3,
+      "text": "Jousipyssyn jänteen vetovoimaa mitattiin voimamittarilla. Jänne vedettiin lepoasennostaan eri matkoille. Taulukossa on esimerkkiaineisto. Pyssyn jousen oletetaan noudattavan harmonista voimaa $F_\\text{v} = kx$ koko mitatulla alueella.\n\nSen jälkeen pyssystä ammuttiin vaakasuoraan nuoli, jonka massa on $25\\,\\text{g}$. Jänne oli vedetty $50\\,\\text{cm}$. Nopeusmittari näytti nuolen lähtönopeudeksi $47{,}0\\,\\text{m/s}$.\n\na) Määritä jousivakio mittauspisteisiin sovitetusta suorasta. Laske sen avulla pyssyyn varastoitunut energia vedetyssä asennossa.\n\nb) Laske nuolen liike-energia lähdössä.\n\nc) Kuinka monta prosenttia varastoituneesta energiasta muuttui nuolen liike-energiaksi? Mihin loppu energia todennäköisesti meni?\n\nAnna kohdan c) prosenttiosuus vastauslaatikkoon.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "data": {
+        "caption": "Jänteen vetovoima vetomatkan funktiona (esimerkkiaineisto)",
+        "columns": [
+          "$x\\,(\\text{cm})$",
+          "$F_\\text{v}\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "20",
+            "59"
+          ],
+          [
+            "30",
+            "92"
+          ],
+          [
+            "40",
+            "121"
+          ],
+          [
+            "50",
+            "151"
+          ]
+        ]
+      },
+      "answer": 73.0,
+      "unit": "%",
+      "tolerance": 0.05
     }
   ]
 }

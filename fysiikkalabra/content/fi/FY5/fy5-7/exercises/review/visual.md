@@ -1,13 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 35f0502795996779
+CONTENT-HASH: 24a052823c292853
 
 ## Blocking
 
 ## Polish
-- [Minor] L1-03 figure — gridlines every 0,5 cm without a label at 2,5; the solution explains the half-cm line, so usable.
+- [Minor] none.
 
 ## Checked
-- Round 3 (delta): solutions.md L2-01 Vastaus and Järkevyys read from source; the wording "tasapainoaseman positiivisella puolella" and "ääriasemassa hetkellä T/4" is fluent, the chain layout is unchanged, and no figure or layout changed. Round-2 captures of the L2-01 task, graph and solution still apply.
+- Round 3 delta against hash 24a052823c292853: L3-05 Järkevyys wording ('yli kaksi jaksoa (3,4 s)', quantity in LaTeX) and the restored L1-02/L2-04 answer fields; text-only; earlier captures of the chapter remain valid, layout checks ok.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

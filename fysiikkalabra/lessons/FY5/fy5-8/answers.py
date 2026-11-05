@@ -26,4 +26,16 @@ a["fy5-8-L3-01"] = 300 * g / 4 / 0.030 / 1000             # car suspension: the 
 h = 0.5 * 200 * 0.030 ** 2 / (0.050 * g)                  # jumping toy: 1/2 k x² = m g h -> h = k x² / (2 m g) = 0,1835 m
 a["fy5-8-L3-02"] = h
 a["fy5-8-L3-03"] = (30 + 50) * 0.040                      # two springs: both forces towards equilibrium, (k1 + k2) x = 3,2 N
+# Exercise-bank additions
+a["fy5-8-L1-08"] = (3.0 - 2.0) / (0.12 - 0.08)           # graph ex-kaksi: spring B through grid points (0,08 m; 2,0 N) and (0,12 m; 3,0 N), 25 N/m
+xs = [0.041, 0.079, 0.121, 0.161]                         # L2-05: linear points 100..400 g (example data), x in m
+Fs = [m * g / 1000 for m in (100, 200, 300, 400)]
+a["fy5-8-L2-05"] = sum(F * x for F, x in zip(Fs, xs)) / sum(x * x for x in xs)   # least squares through origin, 24,4 N/m
+a["fy5-8-L2-06"] = 0.200 * g / (0.200 - 0.120)            # x = L - L0 = 0,080 m: k = m g / x = 24,5 N/m
+E1 = 0.5 * 12 * (12 / 80); E2 = 0.5 * 12 * (12 / 240)     # E_p = 1/2 F_v x: 0,90 J and 0,30 J
+a["fy5-8-L2-07"] = E1 - E2                                # 0,60 J
+Fr = [0, 1.5, 2.2, 2.8, 4.0]                              # L3-04: rubber band, steps of 0,030 m
+a["fy5-8-L3-04"] = sum(0.030 * (Fr[i] + Fr[i + 1]) / 2 for i in range(4))   # trapezoids 0,255 J (Hooke from first point: 0,36 J)
+kb = 151 / 0.50                                           # L3-05: bow, fitted line through (0,50 m, 151 N), 302 N/m
+a["fy5-8-L3-05"] = 100 * (0.5 * 0.025 * 47.0 ** 2) / (0.5 * kb * 0.50 ** 2)   # efficiency E_k / E_p = 73,1 %
 print(json.dumps(a))

@@ -1,5 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: a8c5431fe775228e
+CONTENT-HASH: 6f1b1aee65125d07
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
@@ -8,9 +10,8 @@ CONTENT-HASH: a8c5431fe775228e
 (none)
 
 ## Checked
-- Captures opened: contact-5 (#49–#60: Level 1, 2 and 3 opened, solutions, task figures fy5-7 L1-03 and L2-01 graphs).
-- Task figures in English (axes x (cm), t (s), decimal points 0.6, 1.2, 0.5 …); aria descriptions from figures.json in English.
-- Solutions: aligned chains, \cdot, upright units with thin space, answer boxes; no overflow at 1280 px.
+- Opened captures fy5-7-open-exercises-1280-6.png, fy5-7-open-exercises-L3-1280-4.png (en) and fy5-7-open-exercises-L2-1280-6.png (fi-easy): text, formulas, tables and answer boxes render without overflow or clipping; en text fits the layout.
+- Data table headers (Peak/Beat, t_rest, t_exercise; Huippu, Lyönti, t_lepo, t_rasitus) render with subscripts correctly.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish (English) 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

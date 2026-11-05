@@ -39,6 +39,97 @@
       "answer": 4.0,
       "unit": "µN",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-5-L1-06",
+      "level": 1,
+      "text": "The Earth pulls the Moon with a gravitational force. How large a force does the Moon exert on the Earth?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "With an equally large force, because the forces are the action and reaction of the same interaction.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "With an equally large force, because the forces are the action and reaction of the same interaction.",
+          "correct": true,
+          "feedback": "Correct: gravitation is an interaction between bodies, so the forces are equal in magnitude and opposite in direction. The difference in the masses shows up only in the accelerations."
+        },
+        {
+          "text": "With a much smaller force, because the force depends only on the mass of the attracting body.",
+          "feedback": "The force depends on the masses of both bodies, on the product $m_1 m_2$, not only on the mass of the attracting body."
+        },
+        {
+          "text": "With a larger force, because a moving body pulls harder than a body at rest.",
+          "feedback": "The gravitational force does not depend on the motion of the body, but on the masses and the distance between the centres."
+        },
+        {
+          "text": "Not at all, because only a body larger than the Earth can pull another body.",
+          "feedback": "All bodies attract each other, the lighter one the heavier one too. Even the Earth accelerates because of the pull of the Moon, although the acceleration is very small."
+        }
+      ]
+    },
+    {
+      "id": "fy5-5-L1-07",
+      "level": 1,
+      "text": "The gravitational force between two bodies is $F$. Then the mass of one body doubles and the distance between the centres of the bodies doubles. What is the new gravitational force?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The force is $\\tfrac{F}{2}$, because the mass doubles the force and the distance reduces it to a quarter.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The force is $F$, because the changes in the mass and in the distance cancel each other exactly.",
+          "feedback": "The changes do not cancel each other, because the mass is in the first power in the formula and the distance in the second."
+        },
+        {
+          "text": "The force is $\\tfrac{F}{2}$, because the mass doubles the force and the distance reduces it to a quarter.",
+          "correct": true,
+          "feedback": "Correct: the factor is $\\tfrac{2}{2^2} = \\tfrac{1}{2}$, because the force is directly proportional to the mass and inversely proportional to the square of the distance."
+        },
+        {
+          "text": "The force is $\\tfrac{F}{4}$, because the distance reduces the force to a quarter and the mass has no effect on it.",
+          "feedback": "Doubling the distance reduces the force to a quarter, but doubling the mass doubles it, and that was ignored."
+        },
+        {
+          "text": "The force is $2F$, because the force is directly proportional to the mass and the distance has no effect on it.",
+          "feedback": "The mass doubles the force, but doubling the distance reduces it, and that was ignored."
+        }
+      ]
+    },
+    {
+      "id": "fy5-5-L1-08",
+      "level": 1,
+      "text": "A student calculates the gravitational force on a satellite. The satellite is at a height of $400\\,\\text{km}$ above the Earth's surface.\n\nThe student substitutes the distance $r = 400\\,\\text{km}$ into Newton's law of gravitation and gets a force that is a multiple of the correct value. What is the student's error?",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "answer": "The student measures the distance from the surface, although it must be the distance from the centre of the Earth.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The student uses the law in space, although it holds only on the Earth's surface and near it.",
+          "feedback": "The law of gravitation holds everywhere, also in space. Gravitation weakens as the distance grows but does not end."
+        },
+        {
+          "text": "The student leaves out dividing the force by two, although both the Earth and the satellite attract each other.",
+          "feedback": "The whole force $F$ acts on each body, and it is equally large for both. The force is not divided in two."
+        },
+        {
+          "text": "The student gives the distance in kilometres, although the distance in the law must be given as multiples of the Earth's radius.",
+          "feedback": "The distance must be given in the SI unit, metres. The formula does not require the Earth's radius as a unit."
+        },
+        {
+          "text": "The student measures the distance from the surface, although it must be the distance from the centre of the Earth.",
+          "correct": true,
+          "feedback": "Correct: a spherically symmetric Earth attracts as if its mass were at its centre, so $r = R + h \\approx 6800\\,\\text{km}$. With a small $r$ the force becomes far too large."
+        }
+      ]
     }
   ],
   "level2": [
@@ -73,6 +164,119 @@
       "answer": 0.344,
       "unit": "%",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-5-L2-05",
+      "level": 2,
+      "text": "The table gives the masses and mean radii of three gas giant planets (source: NASA Planetary Fact Sheet). Interpret the radius as the surface of the planet and assume the planets are spherically symmetric.\n\na) Calculate the gravitational field strength on the surface of each planet.\n\nb) How many times as great is the surface field of Neptune as the surface field of Uranus?\n\nc) The mass of Saturn is more than five times the mass of Neptune, but its surface field is still almost the same. Explain why.\n\nWrite the result of part b in the answer box.",
+      "kind": [
+        "data"
+      ],
+      "answer": 1.25,
+      "unit": "",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Data of the planets (NASA)",
+        "columns": [
+          "Planet",
+          "$M\\,(10^{24}\\,\\text{kg})$",
+          "$R\\,(\\text{km})$"
+        ],
+        "rows": [
+          [
+            "Saturn",
+            "568",
+            "58232"
+          ],
+          [
+            "Uranus",
+            "86.8",
+            "25362"
+          ],
+          [
+            "Neptune",
+            "102",
+            "24622"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-5-L2-06",
+      "level": 2,
+      "text": "In a Cavendish-type experiment, the gravitational force $F$ between a large sphere ($M = 1.50\\,\\text{kg}$) and a small sphere ($m = 20.0\\,\\text{g}$) is measured as a function of the distance $r$ between their centres. The table gives example data.\n\na) Calculate the value of the gravitational constant $\\gamma$ from each measurement and calculate the mean of the values.\n\nb) Compare the mean with the known value $6.674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2}$ and state what shape the graph of $F$ against $\\tfrac{1}{r^2}$ should have.\n\nWrite the mean of part a in the answer box in the unit $10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2}$.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 6.72,
+      "unit": "10⁻¹¹ N·m²/kg²",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Force (example data)",
+        "columns": [
+          "$r\\,(\\text{cm})$",
+          "$F\\,(\\text{nN})$"
+        ],
+        "rows": [
+          [
+            "4.0",
+            "1.29"
+          ],
+          [
+            "5.0",
+            "0.80"
+          ],
+          [
+            "6.0",
+            "0.56"
+          ],
+          [
+            "8.0",
+            "0.31"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-5-L2-07",
+      "level": 2,
+      "text": "The table gives the gravitational field strength $g$ of the Earth at different heights $h$ above the Earth's surface (example data). The radius of the Earth is $R = 6378\\,\\text{km}$.\n\na) For each row calculate the product $g\\,(R + h)^2$ in the unit $\\text{m}^3/\\text{s}^2$ and calculate the mean of the products.\n\nb) According to the law of gravitation, which quantity does the product correspond to, and what does its staying approximately constant show?\n\nWrite the mean of part a in the answer box in the unit $10^{14}\\,\\text{m}^3/\\text{s}^2$.",
+      "kind": [
+        "data"
+      ],
+      "answer": 3.99,
+      "unit": "10¹⁴ m³/s²",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Field (example data)",
+        "columns": [
+          "$h\\,(\\text{km})$",
+          "$g\\,(\\text{m/s}^2)$"
+        ],
+        "rows": [
+          [
+            "0",
+            "9.81"
+          ],
+          [
+            "400",
+            "8.69"
+          ],
+          [
+            "1000",
+            "7.33"
+          ],
+          [
+            "2000",
+            "5.68"
+          ],
+          [
+            "3000",
+            "4.53"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -98,6 +302,52 @@
       "text": "Which pulls the Earth harder, the Sun or the Moon, and how many times as hard?\n\nThe mass of the Sun is $1.99 \\cdot 10^{30}\\,\\text{kg}$ and the distance of its centre from the Earth's centre $1.50 \\cdot 10^{8}\\,\\text{km}$. The mass of the Moon is $7.35 \\cdot 10^{22}\\,\\text{kg}$ and its distance $3.84 \\cdot 10^{5}\\,\\text{km}$.\n\nGive the ratio of the force exerted on the Earth by the Sun to the force exerted on it by the Moon.",
       "answer": 177,
       "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-5-L3-04",
+      "level": 3,
+      "text": "Henry Cavendish determined the gravitational constant in 1798 and used it to calculate the mass and the mean density of the Earth. Repeat the calculation with modern values. On the Earth's surface the gravitational field strength is $g = 9.81\\,\\text{m/s}^2$ and the mean radius of the Earth is $6371\\,\\text{km}$. Model the Earth as a spherically symmetric sphere and ignore its rotation.\n\na) Calculate the mass of the Earth.\n\nb) Calculate the mean density of the Earth.\n\nc) The table gives the densities of the most common rocks in the Earth's crust. Can the Earth consist entirely of such rocks? Justify your answer with the mean density you calculated and conclude what it tells about the interior of the Earth.\n\nWrite the result of part b in the answer box.",
+      "kind": [
+        "data",
+        "reasoning",
+        "model"
+      ],
+      "answer": 5510,
+      "unit": "kg/m³",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Densities (example data)",
+        "columns": [
+          "Rock",
+          "$\\rho\\,(\\text{kg/m}^3)$"
+        ],
+        "rows": [
+          [
+            "Granite",
+            "2700"
+          ],
+          [
+            "Basalt",
+            "3000"
+          ],
+          [
+            "Sandstone",
+            "2400"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-5-L3-05",
+      "level": 3,
+      "text": "The Earth rotates about its axis in the time $T = 24.0\\,\\text{h}$. A person standing at the equator then moves along a circular path whose radius is the radius of the Earth, $R = 6378\\,\\text{km}$. Model the person as a point mass and the Earth as a sphere. Assume that the gravitational field strength of the Earth is $g = 9.81\\,\\text{m/s}^2$ both at the equator and at the pole. The mass of the person is $62.0\\,\\text{kg}$, and the reading of the scale is the magnitude of the support force of the scale.\n\na) Calculate the person's centripetal acceleration due to the rotation and the reading of the scale in newtons at the equator.\n\nb) How large would the reading of the scale at the equator be if the Earth rotated about its axis once in $6.0\\,\\text{h}$? Give the answer in newtons.\n\nc) Explain in words why the scale shows less at the equator than at the pole, although the gravitational force is by assumption equally large.\n\nWrite the result of part b in the answer box.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 575,
+      "unit": "N",
       "tolerance": 0.02
     }
   ]
