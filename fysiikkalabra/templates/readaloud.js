@@ -370,15 +370,19 @@
         for (;;) { const { done, value } = await reader.read(); if (done) break; parts.push(value); n += value.length; step(value.length); }
         buf = new Uint8Array(n); let o = 0; for (const p of parts) { buf.set(p, o); o += p.length; }
       } else { buf = new Uint8Array(await r.arrayBuffer()); step(buf.length); }
-      if (cache) { try { await cache.put(url, new Response(buf.slice())); } catch (e) { /* storage full: next time it is fetched again */ } }
+      // new Response(buf) keeps its own copy of the bytes, so no slice() first (one copy of the file fewer, 2026-11-05)
+      if (cache) { try { await cache.put(url, new Response(buf)); } catch (e) { /* storage full: next time it is fetched again */ } }
       return buf.buffer;
     }
-    async function sessions(bufs, eps) {
+    async function sessions(bufs, eps) {   // a failed attempt releases the sessions it had created (2026-11-05)
       const out = {};
-      for (const m of ['duration_predictor', 'text_encoder', 'vector_estimator', 'vocoder'])
-        out[m] = await ort.InferenceSession.create(new Uint8Array(bufs[m + '.onnx']), { executionProviders: eps, graphOptimizationLevel: 'all' });
+      try {
+        for (const m of ['duration_predictor', 'text_encoder', 'vector_estimator', 'vocoder'])
+          out[m] = await ort.InferenceSession.create(new Uint8Array(bufs[m + '.onnx']), { executionProviders: eps, graphOptimizationLevel: 'all' });
+      } catch (e) { await release(out); throw e; }
       return out;
     }
+    async function release(ss) { for (const k in ss || {}) { try { await ss[k].release(); } catch (e) { /* already gone */ } } }
     async function synth(text, lang, voice, speed, steps) {
       const T = ort.Tensor, ids = prep(text, lang), n = ids.length;
       const SR = cfg.ae.sample_rate, CS = cfg.ae.base_chunk_size * cfg.ttl.chunk_compress_factor, C = cfg.ttl.latent_dim * cfg.ttl.chunk_compress_factor;
@@ -427,9 +431,9 @@
           if (adapter) {
             S = await sessions(bufs, ['webgpu']);
             const t = await synth('Testi.', 'fi', 0, 1.05, 2);
-            if (sound(t.pcm)) ep = 'webgpu'; else S = null;
+            if (sound(t.pcm)) ep = 'webgpu'; else { await release(S); S = null; }   // silent on this GPU: free its sessions before the CPU's
           }
-        } catch (e) { S = null; }
+        } catch (e) { await release(S); S = null; }
       }
       if (!S) S = await sessions(bufs, ['wasm']);
       post({ type: 'ready', ep });
@@ -487,7 +491,10 @@
         this.ep = ep; this.pool.push(first);
         // On the CPU one worker is slower than speech on many laptops: a second worker synthesises the next sentence
         // at the same time (each worker is single-threaded, as GitHub Pages cannot enable threads).
-        if (ep === 'wasm' && (navigator.hardwareConcurrency || 2) >= 4 && window.flTtsWorkers !== 1) {
+        // The second worker holds a whole copy of the model (250–400 MB more, measured 2026-11-05), so it starts only
+        // where the browser reports at least 8 GB of memory, or does not report it (navigator.deviceMemory is Chrome's).
+        const mem = navigator.deviceMemory;
+        if (ep === 'wasm' && (navigator.hardwareConcurrency || 2) >= 4 && window.flTtsWorkers !== 1 && (typeof mem !== 'number' || mem >= 8)) {
           const second = this.spawn(false);
           second.ready.then(() => { this.pool.push(second); this.pump(); }, () => {});
         }
