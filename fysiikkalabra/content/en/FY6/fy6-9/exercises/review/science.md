@@ -1,13 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: e8043868a5f65f62
+CONTENT-HASH: 0452eedc42d7c0be
+Mode: full (translation review against the reviewed Finnish set; 8 new exercises L1-06..08, L2-05..07, L3-04..05)
+Round 2
 
 ## Blocking
 (none)
 
+## Fixed
+(none needed: the text already matched the Finnish in every number and was natural)
+
 ## Polish
-- (Minor) Fixed during review: the primary/disposable battery terminology is now one term ('disposable battery', with 'primary battery' given once in brackets), consistent in lesson, summary and exit ticket; fy6-8 uses neither term.
+(none)
 
 ## Checked
-- Numbers and units compared token by token against the Finnish (exercise numbers, units, formulas and all 12 solutions): identical multisets, decimal point used; subscripts U_ch, W_batt, Q_cap, R_tot match the Finnish U_lat, W_akku, Q_kap, R_kok.
-- Every solution has all steps (Given, Find, Principle, Formula, Conversions, Substitution, Answer, Reasonableness) as in the Finnish: 97 labelled fields each.
-- Physics terms: source voltage (emf), terminal voltage, internal resistance, capacity in Ah, efficiency: correct.
+- Parity script over the whole exercises.json against fi: same keys, ids, kind lists, correct flags, choice order, units, tolerances, answers (numeric ones equal), table rows and columns, counts of $; every number equals the Finnish (decimal point used in the JSON and tables).
+- All 8 new solutions in solutions.md read against fi: same steps (Given, Find, Principle, Formula, Conversions, Substitution, Answer, Reasonableness), same numbers (9.3225 Wh, 1.5 Wh, 0.40 ohm, 77.45 %, 7.125 h and the rest).
+- Terms: terminal voltage, source voltage, internal resistance, charge-discharge efficiency, charge level: correct; no Finnish left.
+- check_i18n en: 0 errors.

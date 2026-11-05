@@ -39,6 +39,77 @@
       "answer": 900.0,
       "unit": "m/s²",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-4-L1-06",
+      "level": 1,
+      "text": "A car turns left at a steady speed, and a passenger sitting on the back seat is pressed against the right-hand door. It feels to the passenger as if something were pushing him outwards. What explains this correctly?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The passenger's body tends to keep going straight, and the door pushes him inwards into the bend.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "A centrifugal force pointing outwards acts on the passenger and presses him against the door.",
+          "feedback": "There is no centrifugal force: no object pulls or pushes the passenger outwards. The force from the door points inwards."
+        },
+        {
+          "text": "The passenger's body tends to keep going straight, and the door pushes him inwards into the bend.",
+          "correct": true,
+          "feedback": "Correct: the body would continue straight, so the door pushes the passenger inwards and forces him into the bend. This force from the door is felt as being pressed outwards."
+        },
+        {
+          "text": "No sideways force acts on the passenger in the bend, because the speed of the car stays the same.",
+          "feedback": "The speed stays the same, but the direction of the velocity changes. A change of direction is acceleration, so a sideways force is needed."
+        },
+        {
+          "text": "The friction of the seat pushes the passenger outwards, because friction opposes the motion of the passenger.",
+          "feedback": "Friction opposes sliding relative to the seat. The passenger would tend to slide outwards, so friction points inwards."
+        }
+      ]
+    },
+    {
+      "id": "fy5-4-L1-07",
+      "level": 1,
+      "text": "A cyclist rides round a circular bend at a steady speed. In which direction does the acceleration of the cyclist point?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Towards the centre, because the direction of the velocity keeps turning inwards.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "In the direction of motion, because the cyclist keeps moving forward along the path.",
+          "feedback": "An acceleration in the direction of motion would change the speed. Here the speed stays the same, and only the direction of the velocity changes."
+        },
+        {
+          "text": "Away from the centre of the path, because the cyclist feels being pushed outwards.",
+          "feedback": "The feeling of being pushed outwards arises because the body tends to keep going straight. The acceleration still does not point outwards."
+        },
+        {
+          "text": "Towards the centre, because the direction of the velocity keeps turning inwards.",
+          "correct": true,
+          "feedback": "Correct: the change of the velocity points to the inside of the bend, so the centripetal acceleration points towards the centre."
+        },
+        {
+          "text": "There is no acceleration, because the speed of the cyclist stays the same throughout the bend.",
+          "feedback": "Acceleration tells how the velocity changes, and velocity is a vector. When the direction changes, the velocity changes, even if the speed stays the same."
+        }
+      ]
+    },
+    {
+      "id": "fy5-4-L1-08",
+      "level": 1,
+      "text": "A motorcycle goes round a circular bend at a steady speed, and its centripetal acceleration is $1.0\\,\\text{m/s}^2$. The rider goes round the same bend again at three times the speed. How large is the centripetal acceleration then?",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 9.0,
+      "unit": "m/s²",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -75,6 +146,96 @@
       "answer": 2.0636,
       "unit": "kN",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-4-L2-05",
+      "level": 2,
+      "text": "Students study how the tension of a string depends on the speed of circular motion. A small rubber stopper moves in a circle at the end of a string on a smooth horizontal table, and the radius of the circle is kept constant, $0.80\\,\\text{m}$. The force $F$ of the string is measured with a force meter, and the tangential speed $v$ is calculated from the time of one revolution. The data are sample data.\n\nDraw the $(v^2, F)$ graph and fit a straight line through the origin to it. Read the slope from the line and use it to calculate the mass of the stopper. The tabletop is smooth and the string is horizontal, so the tension is the only horizontal force.\n\nThe answer box takes the mass of the stopper in grams.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 24.98,
+      "unit": "g",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Force of the string (sample data)",
+        "columns": [
+          "$v\\,(\\text{m/s})$",
+          "$F\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "3.0",
+            "0.28"
+          ],
+          [
+            "4.0",
+            "0.50"
+          ],
+          [
+            "5.0",
+            "0.78"
+          ],
+          [
+            "6.0",
+            "1.13"
+          ],
+          [
+            "7.0",
+            "1.53"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-4-L2-06",
+      "level": 2,
+      "text": "On a wet test track a driver drives a car round a circle and increases the speed until the car starts to slide. In different trials the radius $r$ of the circle varies, and the greatest tangential speed $v$ reached without sliding is measured. The data are sample data.\n\nThe track is horizontal, and air resistance is neglected. For each row, calculate the coefficient of static friction $\\mu_0$ with which the car only just stays on the track, and determine their mean.\n\nThe answer box takes the mean of the friction coefficient.",
+      "kind": [
+        "data"
+      ],
+      "answer": 0.5477,
+      "unit": "",
+      "tolerance": 0.03,
+      "fbd": "equations",
+      "data": {
+        "caption": "Driving without sliding (sample data)",
+        "columns": [
+          "$r\\,(\\text{m})$",
+          "$v\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "20",
+            "10.4"
+          ],
+          [
+            "30",
+            "12.6"
+          ],
+          [
+            "40",
+            "14.8"
+          ],
+          [
+            "50",
+            "16.3"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-4-L2-07",
+      "level": 2,
+      "text": "A student solved the problem: “A car of mass $850\\,\\text{kg}$ goes through a horizontal bend at a steady speed of $18\\,\\text{m/s}$. The radius of the bend is $75\\,\\text{m}$. How large a friction force must the road exert on the car?”\n\nThe student's solution: “Friction towards the centre of the bend and a centrifugal force outwards act on the car. The centrifugal force is $m\\tfrac{v^2}{r} = 3672\\,\\text{N}$. The net force must point towards the centre and be $m\\tfrac{v^2}{r}$, so the friction must be the net force plus the centrifugal force: $F_\\mu = 3672\\,\\text{N} + 3672\\,\\text{N} = 7344\\,\\text{N}$.”\n\na) Explain what the error in the student's solution is.\n\nb) Calculate the correct friction force.\n\nThe answer box takes the result of part b) in kilonewtons.",
+      "kind": [
+        "error"
+      ],
+      "answer": 3.672,
+      "unit": "kN",
+      "tolerance": 0.02,
+      "fbd": "error"
     }
   ],
   "level3": [
@@ -102,6 +263,52 @@
       "text": "A road designer dimensions a horizontal bend for a speed of $80\\,\\text{km/h}$. For safety, the friction of the road should not have to give the car a sideways force greater than $0.25$ times the weight of the car, so that the grip is enough also on a wet road. Air resistance and rolling resistance are neglected. How large must the radius of the bend be at least?",
       "answer": 201.3566,
       "unit": "m",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy5-4-L3-04",
+      "level": 3,
+      "text": "A roller-coaster car goes through a vertical circular loop. The speedometer of the car measured the tangential speed $v$ at the lowest and the highest point of the loop, and the centripetal acceleration $a_\\text{n}$ was calculated from the speed and the shape of the track (table, sample data). The mass of the passenger is $60.0\\,\\text{kg}$. Air resistance and rolling resistance are neglected.\n\na) Calculate the radius of the loop from each row and their mean.\n\nb) Draw the force diagram of the passenger at the lowest and the highest point. Calculate the support force of the car on the passenger at both points. How many times as large as the weight of the passenger is the support force at the bottom?\n\nc) What is the smallest speed at the top at which the passenger still stays in contact with the car, when the radius is the mean from part a)? Is the speed in the table enough?\n\nThe answer box takes the support force at the top from part b).",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 257.4,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations",
+      "data": {
+        "caption": "Measurements of the loop (sample data)",
+        "columns": [
+          "Point",
+          "$v\\,(\\text{m/s})$",
+          "$a_\\text{n}\\,(\\text{m/s}^2)$"
+        ],
+        "rows": [
+          [
+            "bottom",
+            "27.2",
+            "53.2"
+          ],
+          [
+            "top",
+            "14.0",
+            "14.1"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-4-L3-05",
+      "level": 3,
+      "text": "The track of a motorway ramp bend is a horizontal circle of radius $130\\,\\text{m}$. The road is banked towards the inner edge of the bend at an angle of $8.0\\,{}^\\circ$ from the horizontal. The coefficient of static friction between the tyres and the wet road is $0.40$. Air resistance and rolling resistance are neglected.\n\na) Draw the force diagram of the car and calculate the speed $v_0$ at which the car can go round the bend completely without friction. Give it in $\\text{km/h}$.\n\nb) Calculate the greatest speed at which the car can go round the bend without sliding when friction is taken into account. Compare it with the speed that the same coefficient of friction would allow in a horizontal bend of the same radius.\n\nc) Justify in your own words why a banked bend helps.\n\nThe answer box takes the greatest speed from part b) in $\\text{km/h}$.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 97.29,
+      "unit": "km/h",
       "tolerance": 0.02,
       "fbd": "equations"
     }

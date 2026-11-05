@@ -118,3 +118,67 @@
 **Substitution:** $\lambda_2 = 200\,\text{km} \cdot \sqrt{\dfrac{10\,\text{m}}{4000\,\text{m}}} = 200\,\text{km} \cdot 0.050 = 10.0\,\text{km}$
 **Answer:** $10\,\text{km}$, two significant figures like the depth $10\,\text{m}$.
 **Reasonableness:** In the ocean the speed is $\sqrt{9.81 \cdot 4000}\,\text{m/s} = 198\,\text{m/s}$, so the period is $200\,000\,\text{m} : 198\,\text{m/s} \approx 1010\,\text{s}$, or about $17\,\text{min}$. At the coast the speed is $9.9\,\text{m/s}$, and $9.9\,\text{m/s} \cdot 1010\,\text{s} \approx 10\,\text{km}$. The wavelength is still much greater than the depth, so the formula holds.
+
+## fy5-17-L1-06
+**Find:** what is concluded about the interior of the Earth from the fact that a P wave but no S wave is detected on the opposite side
+**Principle:** A transverse S wave needs a medium that resists a change of shape, that is, a solid. A liquid does not resist a change of shape, so the S wave does not travel in a liquid. A longitudinal P wave also travels in a liquid.
+**Model answer:** The Earth’s outer core is liquid: a liquid transmits the longitudinal P wave but not the transverse S wave, so a shadow zone is left for S waves and P waves are still detected. If the outer core were solid, it would transmit both waves. The slowness of the S wave does not explain its absence, because a slower wave only arrives later. The transverse nature of the S wave does not use up its energy either: an S wave travels long distances in solid rock.
+
+## fy5-17-L1-07
+**Find:** what the purpose of the gel is in an ultrasound examination
+**Principle:** Part of the pulse is reflected from every boundary, and the size of the reflected fraction depends on how different the substances at the boundary are. Almost the whole pulse is reflected from the boundary between air and skin, and only a small part from the boundary between gel and skin.
+**Model answer:** The gel removes the air between the skin and the probe, which would reflect almost the whole pulse back already from the skin. With the gel, almost the whole pulse gets into the tissue and produces echoes from the boundaries of the tissues, from which the image is formed. The gel does not change the frequency of the pulse or attenuate the echoes; its only purpose is to improve the passage of the pulse into the tissue.
+
+## fy5-17-L1-08
+**Find:** why the highest possible frequency is not always used in ultrasound imaging
+**Principle:** The frequency and the wavelength are related by the equation $v = f\lambda$, so a high frequency gives a short wavelength and an accurate image. However, tissue attenuates high-frequency ultrasound quickly.
+**Model answer:** A high frequency is attenuated quickly in tissue, so the pulse does not reach deep and the echoes from deep down would be too weak. That is why deep structures are imaged with a lower frequency, even though the image is then coarser. The frequency does not change the speed of sound in tissue, and a high frequency does not give a long wavelength. The reflected fraction is determined by the difference between the two substances at the boundary, not by the frequency.
+
+## fy5-17-L2-05
+**Given:** the moments of the echo peaks $t_1 = 21.4\,\mu\text{s}$, $t_2 = 58.9\,\mu\text{s}$ and $t_3 = 109.2\,\mu\text{s}$, speed of sound in tissue $v = 1540\,\text{m/s}$
+**Find:** a) the depths of the boundaries $d_1$, $d_2$ and $d_3$; b) the thickness $\Delta d$ of the layer between the boundaries corresponding to peaks 2 and 3, in centimetres
+**Principle:** Each peak is an echo from one boundary, and the pulse travels to the boundary and back. So the depth of each boundary is the speed times the moment of the peak divided by two. The thickness of the layer is the difference of two depths, so it is also obtained from the difference of the moments of the peaks.
+**Reading the table:** The moments of the peaks in the table are the time from the sending of the pulse. The echo from the upper surface of the layer is peak 2 and the echo from the lower surface is peak 3, so the time spent in the layer is $t_3 - t_2 = 109.2\,\mu\text{s} - 58.9\,\mu\text{s} = 50.3\,\mu\text{s}$.
+**Formula:** $d = \dfrac{v t}{2}$ and $\Delta d = d_3 - d_2 = \dfrac{v\,(t_3 - t_2)}{2}$
+**Conversions:** $50.3\,\mu\text{s} = 50.3 \cdot 10^{-6}\,\text{s}$; finally $1\,\text{m} = 100\,\text{cm}$.
+**Substitution:** a) $d_1 = 1540\,\text{m/s} \cdot 21.4 \cdot 10^{-6}\,\text{s} : 2 = 1.65\,\text{cm}$, $d_2 = 4.54\,\text{cm}$ and $d_3 = 8.41\,\text{cm}$. b) $\Delta d = \dfrac{1540\,\text{m/s} \cdot 50.3 \cdot 10^{-6}\,\text{s}}{2} = 0.038\,73\,\text{m} = 3.873\,\text{cm}$
+**Answer:** $3.87\,\text{cm}$, three significant figures like the moments of the peaks.
+**Reasonableness:** The difference of the depths $8.41\,\text{cm} - 4.54\,\text{cm} = 3.87\,\text{cm}$ is the same as the thickness calculated directly from the time difference. In the layer the echo covers the round trip of $2 \cdot 3.87\,\text{cm} = 7.7\,\text{cm}$, and $7.7\,\text{cm} : 1540\,\text{m/s} \approx 50\,\mu\text{s}$, as measured.
+
+## fy5-17-L2-06
+**Given:** distances $L = 20.0$; $30.0$; $40.0$ and $50.0\,\text{cm}$ and return times of the echo $t = 270$; $407$; $540$ and $677\,\mu\text{s}$
+**Find:** the mean of the speed of sound $v_\text{mean}$ in water in metres per second
+**Principle:** The pulse travels from the probe to the plate and back, so during the travel time it covers a distance $2L$ at a constant speed. Each measurement gives its own speed, and the random variation of the measurements is evened out by taking their mean.
+**Formula:** $2L = v t$, so $v = \dfrac{2L}{t}$ and $v_\text{mean} = \dfrac{v_1 + v_2 + v_3 + v_4}{4}$
+**Conversions:** $L = 0.200$; $0.300$; $0.400$ and $0.500\,\text{m}$; $t = 270 \cdot 10^{-6}\,\text{s}$ etc.
+**Substitution:** $v_1 = \dfrac{2 \cdot 0.200\,\text{m}}{270 \cdot 10^{-6}\,\text{s}} = 1481\,\text{m/s}$, $v_2 = 1474\,\text{m/s}$, $v_3 = 1481\,\text{m/s}$ and $v_4 = 1477\,\text{m/s}$. The sum is $5914\,\text{m/s}$, so $v_\text{mean} = 5914\,\text{m/s} : 4 = 1478.6\,\text{m/s}$.
+**Answer:** $1480\,\text{m/s}$, three significant figures like the travel times. The individual speeds differ from the mean by at most $0.5\,\%$.
+**Reasonableness:** According to the chapter, sound travels in water at about $1400\text{–}1500\,\text{m/s}$, and the result is in this range. A long distance and a long time grow in the same proportion, so the speed stays approximately the same on every row, as it should at a constant speed.
+
+## fy5-17-L2-07
+**Find:** what the error is in the student’s solution
+**Principle:** Each wave covers the same distance $d$ at a constant speed, and the difference in arrival times is the difference of the travel times of the S wave and the P wave: $\Delta t = \dfrac{d}{v_\text{S}} - \dfrac{d}{v_\text{P}}$. The product $v_\text{P}\,\Delta t$ alone would be the distance the P wave would cover in the time $\Delta t$, and that is not the distance of the earthquake.
+**Model answer:** The time difference $\Delta t$ is not the travel time of the P wave but the difference of the travel times, so $d \neq v_\text{P}\,\Delta t$. The P wave has already covered the whole distance before $\Delta t$ begins. The correct result is $d = \dfrac{6.0 \cdot 3.5}{6.0 - 3.5} \cdot 16.0\,\text{km} = 134\,\text{km}$. Check: the travel time of the P wave is $134\,\text{km} : 6.0\,\text{km/s} = 22.4\,\text{s}$, that of the S wave $134\,\text{km} : 3.5\,\text{km/s} = 38.4\,\text{s}$, and the difference is $16.0\,\text{s}$. Dividing by two would belong to an echo and not to a one-way wave, using the speed of the S wave would give the equally wrong result $56\,\text{km}$, and the units are fine in the solution.
+
+## fy5-17-L3-04
+**Given:** stations A$(0, 0)$, B$(120, 0)$ and C$(60, 90)$ in kilometres; $\Delta t_\text{A} = 10.0\,\text{s}$, $\Delta t_\text{B} = 7.5\,\text{s}$, $\Delta t_\text{C} = 5.9\,\text{s}$; $v_\text{P} = 6.0\,\text{km/s}$, $v_\text{S} = 3.5\,\text{km/s}$
+**Find:** the $y$-coordinate of the earthquake in kilometres
+**Principle:** The time difference at each station gives the distance to the earthquake, so the earthquake is on a circle centred at the station. Two circles have two points of intersection, and the circle of the third station chooses the correct one of them.
+**Formula:** $d = \dfrac{v_\text{P} v_\text{S}}{v_\text{P} - v_\text{S}}\,\Delta t$. The equations of the circles of stations A and B are $x^2 + y^2 = d_\text{A}^2$ and $(x - 120)^2 + y^2 = d_\text{B}^2$. Expand the second equation: $(x - 120)^2 = x^2 - 240x + 14\,400$. When the first equation is subtracted from the second, $x^2$ and $y^2$ cancel and what remains is $240x = d_\text{A}^2 - d_\text{B}^2 + 120^2$, so $x = \dfrac{d_\text{A}^2 - d_\text{B}^2 + 120^2}{240}$ and $y = \pm\sqrt{d_\text{A}^2 - x^2}$.
+**Conversions:** The speeds are in km/s and the times in seconds, so the distances come out in kilometres. The factor is $\dfrac{6.0 \cdot 3.5}{2.5}\,\text{km/s} = 8.4\,\text{km/s}$.
+**Substitution:** a) $d_\text{A} = 8.4\,\text{km/s} \cdot 10.0\,\text{s} = 84.0\,\text{km}$, $d_\text{B} = 8.4\,\text{km/s} \cdot 7.5\,\text{s} = 63.0\,\text{km}$ and $d_\text{C} = 8.4\,\text{km/s} \cdot 5.9\,\text{s} = 49.6\,\text{km}$. b) $x = \dfrac{7056 - 3969 + 14\,400}{240}\,\text{km} = 72.9\,\text{km}$ and $y = \pm\sqrt{7056 - 5309}\,\text{km} = \pm 41.8\,\text{km}$. The possible locations are $(72.9;\ 41.8)$ and $(72.9;\ -41.8)$. The distance to station C from the first is $\sqrt{(72.9 - 60)^2 + (41.8 - 90)^2}\,\text{km} = 49.9\,\text{km}$ and from the second $\sqrt{12.9^2 + 131.8^2}\,\text{km} = 132.4\,\text{km}$. The measured $49.6\,\text{km}$ fits the first.
+**Answer:** $y = 42\,\text{km}$ (north of stations A and B), two significant figures like the speeds $6.0\,\text{km/s}$ and $3.5\,\text{km/s}$. The earthquake is at the point $(73;\ 42)\,\text{km}$.
+**Reasonableness:** Check the distance to station A: $\sqrt{72.9^2 + 41.8^2}\,\text{km} = 84.0\,\text{km}$ and to station B: $\sqrt{47.1^2 + 41.8^2}\,\text{km} = 63.0\,\text{km}$, as measured. The time difference predicted for station C would be $49.9\,\text{km} : 8.4\,\text{km/s} = 5.9\,\text{s}$, the same as measured. At the other location it would be $132.4\,\text{km} : 8.4\,\text{km/s} = 15.8\,\text{s}$.
+**Justification for part c:** The time difference at one station gives only the distance, so the earthquake can be at any point on the circle around the station. Two circles usually intersect at two points, which are mirror images of each other with respect to the line joining the stations, and the data of two stations cannot be used to choose between them. The circle of the third station passes through only one of the points, so three stations are enough.
+
+## fy5-17-L3-05
+**Given:** sections $s_1 = 300\,\text{km}$, $s_2 = 100\,\text{km}$, $s_3 = 20\,\text{km}$; depths $h_1 = 4000\,\text{m}$, $h_2 = 1000\,\text{m}$, $h_3 = 50\,\text{m}$; $g = 9.81\,\text{m/s}^2$
+**Find:** the travel time $t$ over the whole distance in minutes
+**Principle:** The depth is constant in each section and the wavelength is much greater than the depth, so the speed is constant in the section and $v = \sqrt{g h}$. The travel time is the length of the section divided by its speed, and the time over the whole distance is the sum of the times of the sections.
+**Reading the table:** From the table we read the length $s$ and the depth $h$ of each section; the depth determines the speed and the length the travel time.
+**Formula:** $v = \sqrt{g h}$, $t_i = \dfrac{s_i}{v_i}$ and $t = t_1 + t_2 + t_3$
+**Conversions:** $s_1 = 300\,000\,\text{m}$, $s_2 = 100\,000\,\text{m}$ and $s_3 = 20\,000\,\text{m}$; finally $1\,\text{min} = 60\,\text{s}$.
+**Substitution:** The speeds are $v_1 = \sqrt{9.81 \cdot 4000}\,\text{m/s} = 198.1\,\text{m/s}$, $v_2 = 99.05\,\text{m/s}$ and $v_3 = 22.15\,\text{m/s}$. The travel times are $t_1 = 300\,000\,\text{m} : 198.1\,\text{m/s} = 1514\,\text{s}$, $t_2 = 1010\,\text{s}$ and $t_3 = 903\,\text{s}$. The sum is $3427\,\text{s}$, so $t = 3427\,\text{s} : 60\,\text{s/min} = 57.1\,\text{min}$.
+**Answer:** $57\,\text{min}$, two significant figures like the depths and the lengths of the sections.
+**Reasonableness:** The whole distance is $420\,\text{km}$, so the mean speed is $420\,000\,\text{m} : 3427\,\text{s} = 123\,\text{m/s}$. It is between the lowest ($22\,\text{m/s}$) and the highest ($198\,\text{m/s}$) speed and closer to the high speeds, because the longest section is deep water.
+**Justification for part b:** Section 3 is $15$ times shorter than section 1, but the speed there is only $22.15\,\text{m/s}$, about $9$ times smaller than $198.1\,\text{m/s}$. The travel time $903\,\text{s}$ is therefore $903\,\text{s} : 1514\,\text{s} = 0.60$, more than half of the time of section 1. The formula applies in the last section, because the wavelength is over $10\,\text{km}$, much greater than the depth $50\,\text{m}$.

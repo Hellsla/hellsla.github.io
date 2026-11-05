@@ -1,17 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: dea7638a4df59c7e
-
-Delta: only figures.json changed (label "v" to "E", the RCD figure's description).
+CONTENT-HASH: 282ae4ae23e015dd
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
+## Fixed
+(none needed: the English matched fi in every number and was natural)
+
 ## Polish
-- (none)
+(none)
 
 ## Checked
-- fy6-15-fig-11-390 (en): $I_\text{E}$ upright, legible, clear of the arrow and the equation $I_\text{L} - I_\text{N} = I_\text{E}$; fig-7: $I_\text{E}$ clear of the wire.
-- The exercise captures from the earlier pass show the layout unchanged; the changed description read in the diff, consistent with the figure.
+- Captures opened: en exercise level 2 and 3 at 1280 px and the 390 px stage; data tables, solution boxes and answer units render, nothing clipped.
+- No Finnish left in en (grep). Text is natural English.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish (English) 5 · accessibility 4
+illustrations 4 · typography 5 · language 5 · accessibility 4

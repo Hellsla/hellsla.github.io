@@ -1,14 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: cca8005f5904026c
+CONTENT-HASH: d1fdac06786f6ddd
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
+## Fixed
+(none needed: the text already matched fi and was natural)
+
 ## Polish
-- solutions.md L1-05 Vastaus/Answer: 50 V and 200 V read off a grid have one significant figure formally, so "two significant figures" because the positions have two is a loose rationale; the value 150 eV is right and the sentence is harmless. Optional: "reading the line at grid crossings adds no extra uncertainty".
+(none)
 
 ## Checked
-- Delta (solutions.md L1-05 Answer): the earlier "result is exact" is removed and replaced by a significant-figure statement; the overstatement is resolved.
-- All 12 answers recomputed in one script and equal answers.py: 3.845e-17 J; 0.36 uJ; 8.01e-16 J; 0.18 mJ; 150 eV; -75 eV; -120 eV; 4.392e5 m/s; 284.3 V; 6.80e6 m/s; 42.86; 4.34 mm.
-- 200 V - 50 V = 150 V from the figure (V = 50 V/cm * x, 250 V at 5.0 cm) is consistent; no physics or number changed.
-- Numbers, LaTeX and tolerances identical to the Finnish reference.
+- Compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags, choices, feedback, data table cells and every number in exercises.json and solutions.md. All 8 new tasks (L1-06..08, L2-05..07, L3-04..05) and the older ones are identical; solutions.md has 895 numbers each, equal in order.
+- Decimal comma in prose and LaTeX as in fi; table cells keep the point exactly as in fi.
+- Re-derived L1-08 900 eV, L2-04 284 V, L2-05 30.1 V, L2-07 6.66e-27 kg (He+), L3-04 2.78 mm, L3-05 4.14e6 m/s; all agree with fi.
+- L1-06, L1-07, L2-06: exactly one correct option; distractor feedback keeps the same error type as fi.
+- check_i18n.py fi-easy: 0 errors.

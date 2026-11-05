@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 16920a23dbfb2683
+CONTENT-HASH: 4e821e3ca31d2886
+ROUND: 2
 
 ## Blocking
 
 ## Polish
+- solutions.md:190 (L3-05 Vastaus) — the new rounding reason, which is my round-1 wording, says "kahden lähes yhtä suuren resistanssin erotus". That is inaccurate, because 2,76 Ω and 2,00 Ω differ by 38 %. The real reason is that the subtraction keeps two decimals of the three-figure values: $R_{80} - R_{20} = 2{,}76\,\Omega - 2{,}00\,\Omega = 0{,}76\,\Omega$, which has two significant figures. Write "kaksi merkitsevää numeroa, koska erotuksessa $2{,}76\,\Omega - 2{,}00\,\Omega = 0{,}76\,\Omega$ jää kaksi merkitsevää numeroa".
+- exercises.json L3-04 (C at 1,0 V: 0,1 mA) — a visible power LED hardly conducts at 1,0 V. The data are labelled as example data, so this is acceptable. A value of 0,0 mA at 1,0 V would be more realistic, and a) and the solution would then start C from 1,5 V.
 
 ## Checked
-- Round-1 blocking fixed: L2-04 Järkevyys now "vähän yli simulaation ohuimman langan (0,10 mm²)", consistent with 0,126 mm².
-- Round-1 polish applied: answers.py slope comment 5,47 Ω/m; L3-03 names the mechanism (largest resistance per length at the thinnest point).
-- Recomputed all 12 answers from the task text with own formulas: 26,4→26 Ω; 3,3 V; 10 A; 0,17 Ω; 2,5 kΩ; 0,375→0,38 A; 1,0 V : 0,15 A = 6,7 Ω (model 0,149 A); 1,7 mm²; 7,96→8,0 Ω; 3,2 Ω; 1,09→1,1 µΩ·m; 3,0 A — all agree with exercises.json and answers.py.
-- L2-02: lamp-curve figure drawn from the lesson's lamp model on a 0,05 A / 0,5 V grid; 0,15 A readable at 1,0 V; description does not give the answer.
-- L3-01: constant volume, l doubles and A halves → 4R; reasoning stated.
-- L3-02: R : l per point 5,49 / 5,43 / 5,56 / 5,43 Ω/m; least-squares slope through origin 5,47 Ω/m; origin justified by R ∝ l; guardrail fit sentence used.
-- L3-03: cold-filament current 12× running current, consistent with the lesson model (1,0 Ω cold, 12 Ω at 3,0 V).
-- Ohm's-law condition (constant temperature) stated in L2-01; L1-01/L1-03 use R = U : I at the operating point.
-- Conversions mm² ↔ m², mA, kΩ right; unknowns solved symbolically first; significant figures justified by limiting data.
+- Hash 4e821e3ca31d2886 at start and end. Counts 8/7/5.
+- Round-1 Blocking resolved. L3-04 now includes C at 1,0 V : 0,1 mA = 10 kΩ, and the Vastaus says "10 kΩ:sta 31 Ω:iin". L3-05 no longer cites 0,362 A as two significant figures.
+- Round-1 Polish resolved: L2-05 justifies 150 Ω by ΔR ≈ 2 Ω and uses the words "pisteiden hajonnasta saatu arvio"; the L2-06 "Resistanssien suhteen" typo is fixed; the self-contradiction in the last sentence of L1-06 is fixed; L3-04 now says "teholedi", so 98 mA at 3,0 V is realistic.
+- I recomputed every answer from answers.py in one script, with my own formulas for the new tasks: L1-08 0,30 A; L2-05 slope of the least-squares fit through the origin 149,97 → 150 Ω; L2-06 1,976 → 2,0; L2-07 4,934 → 4,9 Ω, and the new claim "fit through the origin gives 4,9 Ω" holds (4,926 Ω); L3-04 600 Ω and the ratio 600 : 26,3 = 23; L3-05 38,1 %.
+- L1-06 and L1-07, with reworded distractors: there is still exactly one correct option, and resistivity and resistance are kept apart.
+- L1-08: the added rule "R ∝ l, joten I ∝ 1 : l" holds at constant voltage and temperature, and the task states both.

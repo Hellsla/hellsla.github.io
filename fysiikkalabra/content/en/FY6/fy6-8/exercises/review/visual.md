@@ -1,17 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 610986ab3133ce95
-
+CONTENT-HASH: e3892115020441e6
+Mode: full (translation review against the reviewed Finnish set)
+Round 2
 ## Blocking
 (none)
+
+## Fixed
+(none needed)
 
 ## Polish
 (none)
 
 ## Checked
-- open-exercises captures (contact sheets 5-6): task text, answer box with unit, Check button, opened solution; maths renders, headings Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness in English.
-- ex-graph and check-graph: axes with units, decimal point on the ticks (0.5, 1.0, 1.5), dashed extension, no Finnish.
-- No overflow at 390 or 1280 px.
+- open-exercises captures (levels 1-3, new tasks L2-05..07, L3-04..05 opened): task text, table headers and captions, answer box with unit, solution headings and maths render in the right language; no overflow or clipped text.
+- Data tables identical to fi (same columns, same cells); labels like U_A, U_B and U_new / U_aged (U_uusi / U_ikä in fi-easy) read correctly.
+- Subscripts R_j and I_k come from the Finnish formulas (formula parity with fi required), left as is.
+- Delta (boxed value at the start of the Vastaus/Answer line): the added value is correct (matches solution and exercises.json within tolerance, unit and decimal point right, LaTeX number+unit) and the line is short and reads well; no layout change beyond one short sentence.
 
 ## Scores
-illustrations 4 · typography 4 · English 5 · accessibility 4
-- Re-review after the concept-review commit: ex L1-05 points relabelled as model points (text, solution, figure description), napajännite explanation conditioned on current being drawn, matching the Finnish; no numbers changed; captures retaken.
+illustrations 4 · typography 4 · language 5 · accessibility 4

@@ -1,12 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 778b291ab487f1ac
+CONTENT-HASH: b258729aa462d5af
+Mode: full (translation review against the reviewed Finnish set)
+Round 2
 
 ## Blocking
 (none)
 
+## Fixed
+(none needed)
+
 ## Polish
-- [Minor] solutions.md L3-02 — "1 Hz = 1 1/s" is copied from the Finnish (formulas must match); could read s^-1 in both.
+(none)
 
 ## Checked
-- exercises.json and solutions.md compared with the Finnish: all 12 numbers, answers (5.0, 1.7534, 6.6667, 7.9057, 900, 1.1048, 4.7374, 6.012, 2.0636, 27.6193, 1.4067, 201.3566), units and tolerances identical; decimal point used in text.
-- "Centripetal acceleration" and "net force" used correctly; no centrifugal force; every solution has given, find, principle, formula, conversions, substitution, answer, reasonableness; force-diagram blocks identical.
+- Re-review after one change: in the fy5-4-L3-05 solution one display formula was split into two display formulas. The three display formulas now match content/fi exactly (same maths, same order, same connecting sentence translated).
+- All exercises still match content/fi in ids, levels, kinds, answers, units, tolerances, data and numbers; check_i18n.py en: 0 errors for fy5-4.
+- Role (science) findings from the earlier PASS are unaffected; the split only shortens line width at 360 px.

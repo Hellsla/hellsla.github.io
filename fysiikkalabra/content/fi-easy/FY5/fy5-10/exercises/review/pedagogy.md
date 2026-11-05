@@ -1,12 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: c151092fba01b963
+CONTENT-HASH: 183d240a2cb1f209
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+- L1-07 distractor feedback (option 3): ungrammatical "Aallonpituuden ei määrää pelkkä naru. Narun määräämä on nopeus." changed to "Aallonpituutta ei määrää pelkkä naru. Naru määrää nopeuden."
 
 ## Polish
-- solutions.md — "Yksiköt menevät näin:" on puhekielinen; "Yksiköt:" riittäisi.
+(none)
 
 ## Checked
-- Tasot 1 (5), 2 (4), 3 (3) ja ydintehtävät kuten suomenkielisessä; kysymys on aina oma lauseensa.
-- Ratkaisuissa vastauksen merkitsevät numerot perustellaan kokonaisilla virkkeillä ("Vastauksessa on kaksi merkitsevää numeroa, koska …"), mikä tukee selkokielistä lukijaa.
-- contact-5 (#49–#60): tehtävät ja avatut ratkaisut tasoilla 1–3.
+- Same sequence of Find/Principle/Model answer/Substitution/Answer/Reasonableness in solutions as fi; hints, error-analysis task (L2-06) and justification prompts preserved.
+- Language level: selkosuomi: short sentences, terms explained (pulssi, väliaine), consistent with fi.

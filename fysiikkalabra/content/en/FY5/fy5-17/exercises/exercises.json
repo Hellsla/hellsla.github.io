@@ -39,6 +39,96 @@
       "answer": 22,
       "unit": "m/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-17-L1-06",
+      "level": 1,
+      "text": "After an earthquake, stations on the opposite side of the Earth detect the P wave but not the S wave. What can be concluded from this about the interior of the Earth?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The Earth’s outer core is liquid: a liquid transmits the longitudinal P wave but not the transverse S wave.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The Earth’s outer core is solid, and a solid reflects S waves back but lets P waves through.",
+          "feedback": "A solid does not reflect the S wave away but transmits it: an S wave travels in a solid, because the layers pull a layer that has moved sideways back. It is precisely in a liquid that the S wave does not travel."
+        },
+        {
+          "text": "The S wave is slower than the P wave, so it does not have time to reach the other side of the Earth before the measurement ends.",
+          "feedback": "A slower wave only arrives later, and its absence cannot be explained by that. The S wave does travel through the crust and the mantle, but the outer core stops it."
+        },
+        {
+          "text": "The Earth’s outer core is liquid: a liquid transmits the longitudinal P wave but not the transverse S wave.",
+          "feedback": "Correct: a transverse wave needs a medium that resists a change of shape, and a liquid does not resist it. The P wave travels in a liquid too, so a shadow zone is left for S waves and P waves are still detected.",
+          "correct": true
+        },
+        {
+          "text": "The S wave is transverse, so its energy is used up near the centre of the Earth, but the P wave’s is not.",
+          "feedback": "Being transverse does not use up the energy of a wave. The S wave travels long distances in solid rock, and the direction of the oscillation does not affect it; what matters is whether the medium transmits a transverse wave."
+        }
+      ]
+    },
+    {
+      "id": "fy5-17-L1-07",
+      "level": 1,
+      "text": "In an ultrasound examination, gel is spread between the probe and the skin. What is the purpose of the gel?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The gel removes the air between the skin and the probe, which would reflect almost the whole pulse back.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The gel makes the skin a smooth mirror surface, so the pulse is reflected back from the skin more accurately.",
+          "feedback": "In the examination we want the opposite: the pulse should get through the skin and be reflected only from the boundaries of the tissues. The image is made by the echoes returning from deeper."
+        },
+        {
+          "text": "The gel removes the air between the skin and the probe, which would reflect almost the whole pulse back.",
+          "feedback": "Correct: almost the whole pulse is reflected from the boundary between air and skin, so a layer of air would stop it. Only a small part is reflected from the boundary between gel and skin, so the pulse gets into the tissue.",
+          "correct": true
+        },
+        {
+          "text": "The gel increases the frequency of the pulse, so the wavelength becomes shorter and the image becomes more accurate.",
+          "feedback": "The frequency is determined by the probe, not the gel. The medium does not change the frequency of the pulse that was sent; the gel only removes the reflecting layer of air."
+        },
+        {
+          "text": "The gel attenuates the echoes from deep tissues so that they do not mix with the echoes near the surface.",
+          "feedback": "Attenuating the echoes would make the image worse. We want every boundary to be visible, and the purpose of the gel is, on the contrary, to let the pulse into the tissue and not weaken it."
+        }
+      ]
+    },
+    {
+      "id": "fy5-17-L1-08",
+      "level": 1,
+      "text": "In ultrasound imaging, the smallest detail that can be distinguished is smaller the higher the frequency of the pulse. Even so, structures deep down are often imaged with a lower frequency. Why is the highest possible frequency not always used?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "A high frequency is attenuated quickly in tissue, so the echoes from deep down would be too weak.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "A high frequency slows sound down in tissue, so the echo would return from deep down too late for the image.",
+          "feedback": "The speed of sound is determined by the medium, not the frequency: in tissue a pulse travels at approximately $1540\\,\\text{m/s}$ at all the frequencies used in imaging. So the echo is not late because of the frequency."
+        },
+        {
+          "text": "A high frequency gives a long wavelength, so small details would be blurred in the image.",
+          "feedback": "The equation $v = f\\lambda$ implies the opposite: at the same speed, a high frequency gives a short wavelength and an accurate image. So accuracy is not the problem but the advantage of a high frequency."
+        },
+        {
+          "text": "A high frequency is reflected entirely from the surface of the skin, so the pulse would not get into the tissue at all.",
+          "feedback": "The reflected fraction is determined by the difference between the two substances at the boundary, not by the frequency of the pulse. With gel the pulse gets through the skin at a high frequency too."
+        },
+        {
+          "text": "A high frequency is attenuated quickly in tissue, so the echoes from deep down would be too weak.",
+          "feedback": "Correct: tissue attenuates high-frequency ultrasound quickly, so the pulse does not reach deep and the echoes weaken. Deep structures are imaged with a lower frequency, even though the image is then coarser.",
+          "correct": true
+        }
+      ]
     }
   ],
   "level2": [
@@ -74,6 +164,106 @@
       "answer": 20,
       "unit": "s",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy5-17-L2-05",
+      "level": 2,
+      "kind": [
+        "data"
+      ],
+      "text": "An ultrasound machine draws an A-scan in which three echo peaks correspond to three tissue boundaries. The table gives the moments of the peaks counted from the sending of the pulse (example data). Sound travels in tissue at a speed of $1540\\,\\text{m/s}$.\n\na) Calculate the depth of each boundary.\n\nb) How thick is the layer of tissue bounded by the boundaries corresponding to peaks 2 and 3? Give the answer in centimetres.\n\nThe answer box takes the thickness of the layer in part b).",
+      "answer": 3.87,
+      "unit": "cm",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Echo peaks of the A-scan (example data)",
+        "columns": [
+          "Peak",
+          "$t\\,(\\mu\\text{s})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "21.4"
+          ],
+          [
+            "2",
+            "58.9"
+          ],
+          [
+            "3",
+            "109.2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-17-L2-06",
+      "level": 2,
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "text": "Students measure the speed of sound in water with ultrasound. A probe attached to the wall of a water tank sends a pulse towards a metal plate that is in the water at a distance $L$ from the probe, and measures the return time $t$ of the echo. The position of the plate is changed four times (example data).\n\nCalculate the speed of sound from each measurement and give the mean of the speeds $v_\\text{mean}$. Give the answer in metres per second.",
+      "answer": 1480,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Distance of the plate and return time of the echo in water (example data)",
+        "columns": [
+          "$L\\,(\\text{cm})$",
+          "$t\\,(\\mu\\text{s})$"
+        ],
+        "rows": [
+          [
+            "20.0",
+            "270"
+          ],
+          [
+            "30.0",
+            "407"
+          ],
+          [
+            "40.0",
+            "540"
+          ],
+          [
+            "50.0",
+            "677"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-17-L2-07",
+      "level": 2,
+      "text": "A student solves the exercise: “At a seismograph station the S wave arrived $16.0\\,\\text{s}$ after the P wave. The speed of the P wave is $6.0\\,\\text{km/s}$ and that of the S wave $3.5\\,\\text{km/s}$. How far away did the earthquake occur?”\n\nThe student’s solution: $d = v_\\text{P}\\,\\Delta t = 6.0\\,\\text{km/s} \\cdot 16.0\\,\\text{s} = 96\\,\\text{km}$.\n\nThe result is wrong. What is the error in the solution?",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "answer": "The time difference $\\Delta t$ is not the travel time of the P wave but the difference of the travel times, so $d \\neq v_\\text{P}\\,\\Delta t$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The distance covered by the wave should be divided by two, because the wave travels from the earthquake to the station and back.",
+          "feedback": "An earthquake wave travels in only one direction, from the earthquake to the station. Dividing by two belongs to an echo that returns to the source, and it would make the result even smaller."
+        },
+        {
+          "text": "The calculation should use the speed of the S wave, because the time difference is measured up to the moment the S wave arrives.",
+          "feedback": "The time difference is not the travel time of the S wave, so the result would be $3.5\\,\\text{km/s} \\cdot 16.0\\,\\text{s} = 56\\,\\text{km}$, which is just as wrong. The time difference is the difference of two travel times."
+        },
+        {
+          "text": "The seconds should be converted to hours, because the speed is given in kilometres and not in metres per second.",
+          "feedback": "The speed is in the unit $\\text{km/s}$ and the time in seconds, so the seconds cancel and the result is directly in kilometres. The units have been handled correctly in the solution."
+        },
+        {
+          "text": "The time difference $\\Delta t$ is not the travel time of the P wave but the difference of the travel times, so $d \\neq v_\\text{P}\\,\\Delta t$.",
+          "feedback": "Correct: the P wave had already been travelling before the time $\\Delta t$ starts to be measured. The correct distance is obtained from the formula $d = \\dfrac{v_\\text{P} v_\\text{S}}{v_\\text{P} - v_\\text{S}}\\,\\Delta t$, and it is $134\\,\\text{km}$.",
+          "correct": true
+        }
+      ]
     }
   ],
   "level3": [
@@ -100,6 +290,82 @@
       "answer": 10,
       "unit": "km",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-17-L3-04",
+      "level": 3,
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "text": "Three seismograph stations record the same earthquake. The positions of the stations are given as coordinates in which the $x$-axis points east and the $y$-axis north (unit $\\text{km}$). At each station the difference $\\Delta t$ between the arrival times of the S wave and the P wave has been measured (example data).\n\nAssume that the waves travel in straight lines at constant speeds $v_\\text{P} = 6.0\\,\\text{km/s}$ and $v_\\text{S} = 3.5\\,\\text{km/s}$ and that the earthquake is in the same plane as the stations.\n\na) Calculate the distance of the earthquake from each station.\n\nb) Solve the coordinates of the location of the earthquake from the distances of stations A and B. Station C decides which of the two possible locations is the correct one.\n\nc) Justify why two stations are not enough for locating the earthquake.\n\nThe answer box takes the $y$-coordinate of the earthquake in part b), in kilometres.",
+      "answer": 42,
+      "unit": "km",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Stations and time differences (example data)",
+        "columns": [
+          "Station",
+          "$(x,\\,y)\\,(\\text{km})$",
+          "$\\Delta t\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "A",
+            "(0, 0)",
+            "10.0"
+          ],
+          [
+            "B",
+            "(120, 0)",
+            "7.5"
+          ],
+          [
+            "C",
+            "(60, 90)",
+            "5.9"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-17-L3-05",
+      "level": 3,
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "text": "An earthquake on the seabed produces a tsunami that travels straight to the coast over three sections. The table gives the lengths of the sections and the depths of the water (example data). Assume that the depth is constant in each section, that the wavelength is about $200\\,\\text{km}$ in the ocean in all sections and more than $10\\,\\text{km}$ at the coast too, and that the speed of the wave follows the formula $v = \\sqrt{g h}$.\n\na) Calculate the travel time of the tsunami in each section and over the whole distance.\n\nb) Compare the travel times of sections 1 and 3 and explain why the shortest section nevertheless takes more than half of the time of section 1. Also justify why the formula is applicable in the last section.\n\nThe answer box takes the travel time over the whole distance in part a), in minutes.",
+      "answer": 57,
+      "unit": "min",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Route of the tsunami (example data)",
+        "columns": [
+          "Section",
+          "$s\\,(\\text{km})$",
+          "$h\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "300",
+            "4000"
+          ],
+          [
+            "2",
+            "100",
+            "1000"
+          ],
+          [
+            "3",
+            "20",
+            "50"
+          ]
+        ]
+      }
     }
   ]
 }

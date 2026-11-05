@@ -561,7 +561,7 @@ h2.intro-h{margin:0 0 .45rem;font:700 var(--fs-small)/1.3 var(--sans);letter-spa
 .hook{font:400 1.125rem/1.6 var(--serif)}.hook>:first-child{margin-top:0}
 .question{font:500 1.1875rem/1.45 var(--serif);color:var(--ink);margin:1rem 0 0;padding-left:1rem;border-left:4px solid var(--accent)}
 p.task{margin:.3rem 0 .5rem}
-p.task.scenario,p.task.more{margin-bottom:.6rem}p.task.ask,legend .ask{font-weight:600}   /* a long task: the situation, then the question asked (inquiry.py split_prompt) */
+p.task.scenario,p.task.more{margin-bottom:.6rem}   /* a long task: the situation, then the question asked (inquiry.py split_prompt); the question and the parts a), b) in normal weight like the rest of the task (teacher 2026-11-04) */
 legend .scenario,legend .ask{display:block}legend .scenario{font-weight:400;margin-bottom:.6rem}
 
 /* choices: the card is the frame, so the fieldset itself is plain */
@@ -922,7 +922,7 @@ dialog.zoom-dlg::backdrop{background:rgba(14,17,22,.78)}
 .kc-formula{display:block}
 .kc-more,.kc-all{font:600 var(--fs-ui) var(--sans);margin:.9rem 0 0}
 .kc-row{display:grid;gap:.9rem;margin:0 0 .5rem}
-@media (min-width:36rem){.kc-pair .kc-row{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:36rem){.kc-pair .kc-row{grid-template-columns:repeat(2,minmax(0,1fr))}.kc-pair .kc-back .kc-formula .katex{font-size:1em}}   /* two cards side by side: a constant with its unit (fy5-5 gamma) at the text size fits the half-width card from 576 px up */
 .kc-pair-foot{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1rem;margin:.2rem 0 0}
 .kc-left{margin:0;font-size:var(--fs-small);color:var(--ink-2)}.kc-left:empty{display:none}
 .kc-restart{font:600 var(--fs-ui) var(--sans);min-height:40px;padding:0 .85rem;border-radius:999px;cursor:pointer;border:1px solid var(--accent-deep);background:var(--surface);color:var(--accent-deep)}
@@ -930,7 +930,7 @@ dialog.zoom-dlg::backdrop{background:rgba(14,17,22,.78)}
 .kc-card.is-new{animation:kc-in .35s ease-out}
 @keyframes kc-in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
 .kc-card{perspective:1400px;min-width:0}
-.kc-inner{display:grid;height:100%;transition:transform .45s cubic-bezier(.3,.7,.3,1);transform-style:preserve-3d}
+.kc-inner{display:grid;grid-template-columns:minmax(0,1fr);height:100%;transition:transform .45s cubic-bezier(.3,.7,.3,1);transform-style:preserve-3d}
 .kc-card.is-flipped .kc-inner{transform:rotateY(180deg)}
 .kc-face,.kc-back{grid-area:1/1;backface-visibility:hidden;-webkit-backface-visibility:hidden;min-height:11.5rem;box-sizing:border-box;
   border:1px solid var(--line);border-radius:var(--card-radius);background:var(--surface);box-shadow:0 1px 2px rgba(20,23,30,.05),0 6px 18px rgba(20,23,30,.06)}

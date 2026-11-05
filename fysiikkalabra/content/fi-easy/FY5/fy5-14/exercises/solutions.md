@@ -107,3 +107,80 @@
 **Kysytty:** sävelen perustaajuus, spektristä puuttuvat harmonisen sarjan jäsenet ja niiden merkitys klarinetin ilmapatsaalle
 **Periaate:** Soittimen spektrin piikit ovat ilmapatsaan ominaistaajuuksilla. Perustaajuus on alin ominaistaajuus. Molemmista päistä avoimessa putkessa ominaistaajuudet ovat kaikki perustaajuuden monikerrat $n f_1$. Toisesta päästä suljetussa putkessa niitä ovat vain parittomat monikerrat. Suljetussa päässä on nimittäin aina solmu ja avoimessa päässä kupu (luku *Seisova aalto: solmut, kuvut ja ominaistaajuudet*).
 **Mallivastaus:** Alin piikki on $147\,\text{Hz}$, ja muut ovat sen kerrannaisia: $441\,\text{Hz} = 3 \cdot 147\,\text{Hz}$, $735\,\text{Hz} = 5 \cdot 147\,\text{Hz}$ ja $1029\,\text{Hz} = 7 \cdot 147\,\text{Hz}$. Perustaajuus on siis $147\,\text{Hz}$. Harmonisen sarjan parilliset jäsenet $294\,\text{Hz}$, $588\,\text{Hz}$ ja $882\,\text{Hz}$ puuttuvat lähes kokonaan. Vain parittomat monikerrat ovat toisesta päästä suljetun putken ominaistaajuuksia. Klarinetin ilmapatsas värähtelee siis kuin putki, jonka toinen pää on suljettu. Suukappaleen pää, jossa ruoko on, toimii suljettuna päänä, jossa on ilman liikkeen solmu. Kellon pää toimii avoimena päänä, jossa on kupu. Puuttuvat yläsävelet antavat klarinetille sen tumman sointivärin.
+
+## fy5-14-L1-06
+**Kysytty:** mikä korkeammasta äänestä on pakostakin totta
+**Periaate:** Taajuus määrää äänenkorkeuden. Mitä enemmän paineen värähdyksiä sekunnissa on, sitä korkeammalta ääni kuulostaa. Voimakkuus riippuu amplitudista. Äänen nopeus ilmassa on kaikille taajuuksille sama.
+**Mallivastaus:** Korkeamman äänen taajuus on suurempi, joten ilman paine vaihtelee useammin sekunnissa. Amplitudin ei tarvitse olla suurempi, koska äänet kuulostavat yhtä voimakkailta. Aallonpituus ei ole pidempi vaan lyhyempi, koska $\lambda = \tfrac{v}{f}$ ja nopeus $v$ on sama. Jaksonaika on myös lyhyempi, koska $T = \tfrac{1}{f}$.
+
+## fy5-14-L1-07
+**Kysytty:** mitä kuulija kuulee sireenin äänenkorkeudelle auton lähestyessä
+**Periaate:** Lähde liikkuu aaltorintamien perässä. Siksi rintamat ovat lähestyvän lähteen edessä tiheässä. Aallonpituus on silloin lyhyempi, ja kuultu taajuus $f = \tfrac{v}{\lambda}$ on suurempi kuin lähteen oma taajuus. Kuultu taajuus riippuu lähteen nopeudesta, ei etäisyydestä.
+**Mallivastaus:** Kuulija kuulee sireenin äänen koko lähestymisen ajan samana ja sireenin omaa taajuutta korkeampana. Auton nopeus on nimittäin vakio, ja aaltorintamat ovat sen edessä tiheässä. Kun etäisyys pienenee, vain äänen voimakkuus kasvaa. Kun auto ohittaa kuulijan, kuultu taajuus laskee äkkiä sireenin omaa taajuutta matalammaksi. Lähteen liike ei hidasta ääntä: äänen nopeus ilmassa on sama.
+
+## fy5-14-L1-08
+**Annettu:** äänirautojen taajuudet $f_1 = 392\,\text{Hz}$ ja $f_2 = 398\,\text{Hz}$
+**Kysytty:** huojunnan jaksonaika $T_\text{h}$ sekunteina
+**Periaate:** Voimakkaita hetkiä on sekunnissa yhtä monta kuin taajuuksien erotus. Kahden peräkkäisen voimakkaan hetken väli on huojuntataajuuden käänteisluku.
+**Kaava:** $f_\text{h} = |f_1 - f_2|$ ja $T_\text{h} = \dfrac{1}{f_\text{h}}$
+**Muunnokset:** Ei tarvita. Taajuudet ovat hertseinä, joten jaksonaika tulee sekunteina.
+**Sijoitus:** $f_\text{h} = |392\,\text{Hz} - 398\,\text{Hz}| = 6\,\text{Hz}$, joten $T_\text{h} = \dfrac{1}{6\,\text{Hz}} = 0{,}1667\,\text{s}$
+**Vastaus:** $0{,}167\,\text{s}$, kolme merkitsevää numeroa. Äänirautojen taajuudet otetaan tarkkoina.
+**Järkevyys:** Kuusi huojuntajaksoa kestää yhteensä $6 \cdot 0{,}1667\,\text{s} = 1{,}00\,\text{s}$. Se sopii taajuuteen $6\,\text{Hz}$. Taajuusero on alle $10\,\text{Hz}$, joten huojunta kuuluu selvästi.
+
+## fy5-14-L2-05
+**Annettu:** torven taajuus paikallaan $f_0 = 392\,\text{Hz}$, neljä mitattua taajuutta $431\,\text{Hz}$, $429\,\text{Hz}$, $432\,\text{Hz}$ ja $430\,\text{Hz}$, äänen nopeus $v = 340\,\text{m/s}$
+**Kysytty:** auton nopeus $v_\text{s}$
+**Periaate:** Auto eli äänilähde lähestyy paikallaan olevaa kuulijaa. Siksi käytetään liikkuvan lähteen Dopplerin kaavaa miinusmerkillä. Mittaukset vaihtelevat hieman, joten käytetään niiden keskiarvoa $f_\text{ka}$. Kaavasta ratkaistaan lähteen nopeus.
+**Aineiston käsittely:** Taulukon neljän taajuuden summa on $431 + 429 + 432 + 430 = 1722$ hertsiä. Keskiarvo on siis $f_\text{ka} = \dfrac{1722\,\text{Hz}}{4} = 430{,}5\,\text{Hz}$.
+**Kaava:** $f_\text{ka} = f_0 \cdot \dfrac{v}{v - v_\text{s}}$, josta $v - v_\text{s} = \dfrac{f_0 v}{f_\text{ka}}$ ja $v_\text{s} = v \left(1 - \dfrac{f_0}{f_\text{ka}}\right)$
+**Muunnokset:** Ei tarvita. Taajuudet ovat hertseinä, ja niiden suhteesta yksikkö supistuu.
+**Sijoitus:** $v_\text{s} = 340\,\text{m/s} \cdot \left(1 - \dfrac{392\,\text{Hz}}{430{,}5\,\text{Hz}}\right) = 340\,\text{m/s} \cdot 0{,}08943 = 30{,}41\,\text{m/s}$
+**Vastaus:** $30{,}4\,\text{m/s}$, kolme merkitsevää numeroa kuten taajuuksissa.
+**Järkevyys:** $30{,}4\,\text{m/s}$ on noin $109\,\text{km/h}$, mikä on suunnilleen maantienopeus. Takaisinlaskenta: $\dfrac{392\,\text{Hz}}{1 - 30{,}41/340} = 430{,}5\,\text{Hz}$ on mitattu keskiarvo. Yksittäiset mittaukset antavat nopeuksiksi $29{,}3$–$31{,}5\,\text{m/s}$. Vaihtelu on siis noin $1\,\text{m/s}$.
+
+## fy5-14-L2-06
+**Annettu:** huilun ja viulun spektrien piikit taajuuksilla $262\,\text{Hz}$, $524\,\text{Hz}$, $785\,\text{Hz}$, $1047\,\text{Hz}$ ja $1309\,\text{Hz}$ sekä niiden suhteelliset korkeudet taulukossa
+**Kysytty:** perustaajuus $f_1$ sekä se, kumpi soitin kuulostaa kirkkaammalta
+**Periaate:** Soittimen osasävelet muodostavat harmonisen sarjan $f_n = n f_1$. Perustaajuus on sarjan alin taajuus ja piikkien väli. Se ei välttämättä ole voimakkain piikki. Sointiväri riippuu yläsävelten voimakkuudesta. Kirkkaassa äänessä yläsävelet ovat voimakkaita.
+**Aineiston käsittely:** Alin piikki on $262\,\text{Hz}$ molemmissa spektreissä. Muut piikit ovat sen monikertoja: $\dfrac{524}{2} = 262$, $\dfrac{785}{3} \approx 262$, $\dfrac{1047}{4} \approx 262$ ja $\dfrac{1309}{5} \approx 262$. Viulun voimakkain piikki on toinen harmoninen $524\,\text{Hz}$, mutta se ei ole perustaajuus.
+**Kaava:** $f_n = n f_1$, joten $f_1 = \dfrac{f_n}{n}$
+**Muunnokset:** Ei tarvita. Kaikki taajuudet ovat hertseinä.
+**Sijoitus:** $f_1 = \dfrac{1309\,\text{Hz}}{5} = 261{,}8\,\text{Hz}$
+**Vastaus:** $262\,\text{Hz}$, kolme merkitsevää numeroa kuten taulukossa. Viulu kuulostaa kirkkaammalta, koska sen yläsävelet ovat voimakkaita. Jo kolmannen piikin korkeus on $0{,}80$, kun huilulla se on vain $0{,}08$. Huilun ääni on lähes puhdas perussävel, ja sen sointi on pehmeä.
+**Järkevyys:** Monikerrat $2 \cdot 262\,\text{Hz} = 524\,\text{Hz}$ ja $5 \cdot 262\,\text{Hz} = 1310\,\text{Hz}$ vastaavat taulukon piikkejä. Pienet erot johtuvat siitä, että FFT lukee taajuudet noin hertsin tarkkuudella. Taajuus $262\,\text{Hz}$ on keski-C. Se sopii molemmille soittimille.
+
+## fy5-14-L2-07
+**Annettu:** auton nopeus $v_\text{s} = 30{,}0\,\text{m/s}$, torven taajuus $f_0 = 500\,\text{Hz}$, äänen nopeus $v = 340\,\text{m/s}$, opiskelijan tulos $544\,\text{Hz}$
+**Kysytty:** opiskelijan virhe ja oikea kuultu taajuus $f$
+**Periaate:** Opiskelija käytti kaavaa, joka koskee liikkuvaa kuulijaa. Tässä kuulija on paikallaan ja äänilähde eli auto liikkuu. Siksi pätee liikkuvan lähteen kaava. Lähteen liike lyhentää aallonpituutta lähteen edessä ($\lambda = (v - v_\text{s}) T_0$). Kuulijan liike ei muuta aallonpituutta. Auto lähestyy, joten merkki valitaan niin, että $f > f_0$.
+**Kaava:** $f = f_0 \cdot \dfrac{v}{v - v_\text{s}}$
+**Muunnokset:** Ei tarvita. Nopeudet ovat jo yksikössä m/s.
+**Sijoitus:**
+$\begin{aligned} f &= 500\,\text{Hz} \cdot \dfrac{340\,\text{m/s}}{(340 - 30{,}0)\,\text{m/s}} \\ &= 500\,\text{Hz} \cdot \dfrac{340}{310{,}0} \\ &= 548{,}4\,\text{Hz} \end{aligned}$
+**Vastaus:** $548\,\text{Hz}$, kolme merkitsevää numeroa kuten lähtötiedoissa. Opiskelijan arvo $544\,\text{Hz}$ on noin $4\,\text{Hz}$ liian pieni.
+**Järkevyys:** Taajuus nousee, koska auto lähestyy: $548\,\text{Hz} > 500\,\text{Hz}$. Arvio pienelle nopeudelle on $f_0 \cdot \tfrac{v_\text{s}}{v} = 500\,\text{Hz} \cdot \tfrac{30{,}0}{340} \approx 44\,\text{Hz}$. Se on lähellä todellista nousua $48\,\text{Hz}$. Todellinen nousu on hieman suurempi, koska nimittäjässä on $v - v_\text{s}$.
+
+## fy5-14-L3-04
+**Annettu:** anturin taajuus $f_0 = 4{,}00\,\text{MHz} = 4{,}00 \cdot 10^6\,\text{Hz}$, äänen nopeus kudoksessa $v = 1540\,\text{m/s}$, taajuuden muutokset $\Delta f$ taulukossa, veri virtaa suoraan kohti anturia
+**Kysytty:** veren suurin mitattu virtausnopeus $v_\text{v}$
+**Periaate:** Anturi on paikallaan, ja punasolu liikkuu kohti sitä nopeudella $v_\text{v}$. Punasolu on ensin liikkuva kuulija, joka lähestyy lähdettä. Se kuulee taajuuden $f_1 = f_0 \cdot \tfrac{v + v_\text{v}}{v}$. Solu heijastaa saman taajuuden takaisin. Silloin se on liikkuva lähde, joka lähestyy paikallaan olevaa anturia. Anturi vastaanottaa taajuuden $f = f_1 \cdot \tfrac{v}{v - v_\text{v}}$. Doppler-siirtymä tulee siis kahdesti, ja siksi muutos on lähes kaksinkertainen yhteen siirtymään verrattuna. Suurin virtausnopeus vastaa suurinta taajuuden muutosta.
+**Aineiston käsittely:** Taulukon suurin muutos on $\Delta f = 2{,}47\,\text{kHz}$ hetkellä $t = 0{,}20\,\text{s}$.
+**Kaava:** $f = f_0 \cdot \dfrac{v + v_\text{v}}{v - v_\text{v}}$, josta $\Delta f = f - f_0 = f_0 \cdot \dfrac{2 v_\text{v}}{v - v_\text{v}}$ ja $v_\text{v} = \dfrac{v \, \Delta f}{2 f_0 + \Delta f}$
+**Muunnokset:** $\Delta f = 2{,}47\,\text{kHz} = 2470\,\text{Hz}$ ja $f_0 = 4{,}00\,\text{MHz} = 4\,000\,000\,\text{Hz}$.
+**Sijoitus:** Nimittäjä on $2 f_0 + \Delta f = 8\,000\,000\,\text{Hz} + 2470\,\text{Hz} = 8\,002\,470\,\text{Hz}$.
+$\begin{aligned} v_\text{v} &= \dfrac{1540\,\text{m/s} \cdot 2470\,\text{Hz}}{8\,002\,470\,\text{Hz}} \\ &= 0{,}4753\,\text{m/s} \end{aligned}$
+**Vastaus:** $0{,}475\,\text{m/s}$, kolme merkitsevää numeroa kuten taajuuden muutoksessa.
+**Järkevyys:** Nopeus on paljon pienempi kuin äänen nopeus. Siksi $v_\text{v} \approx \tfrac{v \, \Delta f}{2 f_0} = 0{,}4755\,\text{m/s}$, ja tämä poikkeaa tuloksesta alle $0{,}1\,\%$. Yhden siirtymän tulos olisi $\tfrac{v \, \Delta f}{f_0} \approx 0{,}95\,\text{m/s}$, eli kaksinkertainen. Alle metrin sekunnissa oleva huippunopeus on uskottava verisuonessa.
+
+## fy5-14-L3-05
+**Annettu:** kielen pituus $L = 0{,}650\,\text{m}$, spektrien piikit taajuuksilla $196\,\text{Hz}$, $392\,\text{Hz}$, $588\,\text{Hz}$, $784\,\text{Hz}$, $980\,\text{Hz}$ ja $1176\,\text{Hz}$ sekä niiden suhteelliset amplitudit taulukossa
+**Kysytty:** perustaajuus $f_1$, puuttuvat harmoniset, aallon nopeus kielessä $v$ ja sointivärin ero
+**Periaate:** Molemmista päistä kiinnitetyn kielen ominaistaajuudet ovat $f_n = n f_1$. Perustaajuudella kielessä on yksi kupu, joten $L = \tfrac{\lambda_1}{2}$ ja $v = \lambda_1 f_1$. Parillisilla harmonisilla on kielen keskellä solmu. Näpäytys solmussa ei saa niitä värähtelemään.
+**Aineiston käsittely:** Alin piikki on $196\,\text{Hz}$. Muut piikit ovat sen monikertoja: $\dfrac{392}{196} = 2$, $\dfrac{588}{196} = 3$, $\dfrac{784}{196} = 4$, $\dfrac{980}{196} = 5$ ja $\dfrac{1176}{196} = 6$. Keskeltä näpätyssä spektrissä parillisten harmonisten ($n = 2$, $4$, $6$) amplitudit ovat enintään $0{,}02$.
+**Kaava:** $L = \dfrac{\lambda_1}{2}$, joten $\lambda_1 = 2L$, ja $v = \lambda_1 f_1$, josta $v = 2 L f_1$
+**Muunnokset:** Ei tarvita. Pituus on metreinä ja taajuus hertseinä.
+**Sijoitus:**
+$\begin{aligned} v &= 2 \cdot 0{,}650\,\text{m} \cdot 196\,\text{Hz} \\ &= 254{,}8\,\text{m/s} \end{aligned}$
+**Vastaus:** a) $196\,\text{Hz}$. Keskeltä näpäytettäessä puuttuvat parilliset harmoniset $392\,\text{Hz}$, $784\,\text{Hz}$ ja $1176\,\text{Hz}$. b) $255\,\text{m/s}$, kolme merkitsevää numeroa kuten pituudessa ja taajuudessa. c) Parillisilla harmonisilla on kielen keskellä solmu. Solmukohta ei lähde värähtelemään, joten ne puuttuvat. Parittomilla on keskellä kupu, joten ne syntyvät. Keskeltä näpätty ääni on lähes puhdas perussävel ja pehmeä. Sillan lähellä kaikki harmoniset syntyvät. Esimerkiksi kolmannen amplitudi on $0{,}30$ ja kuudennen $0{,}09$. Runsaat yläsävelet tekevät äänestä kirkkaan. Korkeus on sama, koska perustaajuus on molemmissa $196\,\text{Hz}$.
+**Järkevyys:** Aallonpituus on $\lambda_1 = 2 \cdot 0{,}650\,\text{m} = 1{,}30\,\text{m}$, ja $1{,}30\,\text{m} \cdot 196\,\text{Hz} \approx 255\,\text{m/s}$. Se on tavallinen suuruus kitaran kielelle. Taajuus $196\,\text{Hz}$ on sävel G3 eli kitaran kolmas kieli. Keskeltä näpäytettäessä parittomien amplitudit pienenevät suunnilleen kuten $\tfrac{1}{n^2}$: $\tfrac{1}{9} = 0{,}11$ ja $\tfrac{1}{25} = 0{,}04$, kuten taulukossa.

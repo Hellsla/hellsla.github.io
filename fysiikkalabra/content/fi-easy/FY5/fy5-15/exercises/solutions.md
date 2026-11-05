@@ -135,3 +135,147 @@ Intensiteetti on positiivinen, noin kolmasosa kuulokynnyksestä. Aina kun intens
 - sanon, että intensiteetti on aina positiivinen ja että negatiivinen taso tarkoittaa intensiteettiä, joka on pienempi kuin kuulokynnys $I_0$
 - lasken tai arvioin intensiteetin tasosta $-5\,\text{dB}$ potenssina $10^{-0{,}5}$
 - sanon, että kuulokynnys riippuu ihmisestä ja taajuudesta. Siksi tuulettimen voivat kuulla vain herkimmät kuulijat herkimmillä taajuuksilla.
+
+
+## fy5-15-L1-06
+**Kysytty:** mitä intensiteettitaso $0\,\text{dB}$ tarkoittaa
+**Periaate:** Intensiteettitaso on $L = 10\,\text{dB} \cdot \lg \dfrac{I}{I_0}$. Se vertaa intensiteettiä kuulokynnykseen $I_0$. Taso on nolla, kun logaritmin sisällä on luku $1$.
+**Mallivastaus:** Oikea vaihtoehto on se, jonka mukaan intensiteetti on $I_0$, koska silloin $\lg(I/I_0) = \lg 1 = 0$. Taso $0\,\text{dB}$ on siis kuulokynnys. Se on heikoin ääni, jonka kuulija vielä juuri havaitsee. Se ei ole hiljaisuus. Vaihtoehto, jonka mukaan ääntä ei ole, on väärin. Nollan logaritmia ei ole olemassa, eikä intensiteetti $I = 0$ anna mitään tasoa. Vaihtoehto kipukynnyksestä on väärin. Kipukynnys on moninkertainen kuulokynnykseen verrattuna, eli se on asteikon yläpäässä. Vaihtoehto, jonka mukaan nolla on asteikon alaraja, on väärin. Heikommilla äänillä osamäärä $I/I_0$ on pienempi kuin $1$, ja taso on negatiivinen.
+
+## fy5-15-L1-07
+**Kysytty:** mikä on virhe laskussa, jossa kahden $64\,\text{dB}$:n koneen yhteistasoksi saadaan $128\,\text{dB}$
+**Periaate:** Toisistaan riippumattomien äänilähteiden intensiteetit lasketaan yhteen. Yhteistaso lasketaan summaintensiteetistä. Desibelit ovat logaritminen asteikko, joten niitä ei voi laskea yhteen.
+**Mallivastaus:** Virhe on se, että opiskelija laskee desibelit yhteen. Kaksi samanlaista konetta kaksinkertaistaa intensiteetin. Kaksinkertainen intensiteetti lisää tasoa vain $10\,\text{dB} \cdot \lg 2 \approx 3{,}0\,\text{dB}$. Siksi yhteistaso on noin $67\,\text{dB}$. Väite, että kumpikin kone lisäisi kolme desibeliä ja taso olisi $70\,\text{dB}$, on väärin. Kolmen desibelin lisäys tulee koko yhteistasoon vain kerran. Väite keskiarvosta $64\,\text{dB}$ on väärin, koska toinen kone lisää ääntä. Väite kymmenkertaisesta intensiteetistä ja tasosta $74\,\text{dB}$ on väärin, koska kaksi konetta antaa vain kaksinkertaisen intensiteetin. Lisäys $10\,\text{dB}$ vaatisi kymmenen konetta.
+
+## fy5-15-L1-08
+**Annettu:** kipukynnyksen intensiteetti $I = 1{,}0\,\text{W/m}^2$ ja kuulokynnys $I_0 = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2$
+**Kysytty:** intensiteettitaso $L$ desibeleinä
+**Periaate:** Intensiteettitaso saadaan vertaamalla intensiteettiä kuulokynnykseen $I_0$ logaritmisella asteikolla.
+**Kaava:** $L = 10\,\text{dB} \cdot \lg \dfrac{I}{I_0}$
+**Muunnokset:** Niitä ei tarvita. Kumpikin intensiteetti on yksikössä $\text{W/m}^2$, joten yksiköt supistuvat osamäärässä.
+**Sijoitus:** osamäärä on $I/I_0 = 10^{12}$, joten
+```latex
+\begin{aligned}
+L &= 10\,\text{dB} \cdot \lg \dfrac{1{,}0\,\text{W/m}^2}{1{,}0 \cdot 10^{-12}\,\text{W/m}^2} \\
+&= 10\,\text{dB} \cdot \lg 10^{12} \\
+&= 120\,\text{dB}
+\end{aligned}
+```
+**Vastaus:** $120\,\text{dB}$. Vastauksessa on kaksi merkitsevää numeroa kuten kipukynnyksessä $1{,}0\,\text{W/m}^2$.
+**Järkevyys:** Intensiteettien suhde on $10^{12}$. Jokainen kymmenkertaistuminen lisää tasoa $10\,\text{dB}$, joten $12 \cdot 10\,\text{dB} = 120\,\text{dB}$. Tämä sopii yleiseen tietoon: $120\,\text{dB}$ on suihkukoneen lähellä oleva taso, ja se sattuu korvaan.
+
+## fy5-15-L2-05
+**Annettu:** taulukosta etäisyydet $1{,}0\,\text{m}$, $2{,}0\,\text{m}$, $4{,}0\,\text{m}$, $8{,}0\,\text{m}$ ja $16\,\text{m}$ sekä tasot $84{,}2\,\text{dB}$, $78{,}1\,\text{dB}$, $72{,}3\,\text{dB}$, $66{,}2\,\text{dB}$ ja $60{,}1\,\text{dB}$
+**Kysytty:** tason keskimääräinen lasku $\Delta L_1$ yhtä etäisyyden kaksinkertaistumista kohti desibeleinä
+**Periaate:** Jokainen mittauspiste on edellisen kaksinkertainen. Etäisyydet ovat $1{,}0\,\text{m} \to 2{,}0\,\text{m} \to 4{,}0\,\text{m} \to 8{,}0\,\text{m} \to 16\,\text{m}$, joten kaksinkertaistumisia on $n = 4$. Keskimääräinen lasku saadaan jakamalla tason kokonaismuutos luvulla $n$.
+**Kaava:** $\Delta L_1 = \dfrac{L(1{,}0\,\text{m}) - L(16\,\text{m})}{n}$
+**Muunnokset:** Niitä ei tarvita. Tasot ovat desibeleinä, ja $n$ on paljas luku.
+**Sijoitus:** kaksinkertaistumisia on $n = 4$, joten
+```latex
+\begin{aligned}
+\Delta L_1 &= \dfrac{84{,}2\,\text{dB} - 60{,}1\,\text{dB}}{4} \\
+&= \dfrac{24{,}1\,\text{dB}}{4} \\
+&= 6{,}025\,\text{dB}
+\end{aligned}
+```
+**Vastaus:** $6{,}03\,\text{dB}$. Vastauksessa on kolme merkitsevää numeroa kuten mittarin lukemissa. Jako luvulla $4$ on tarkka.
+**Järkevyys:** Pistemäisen lähteen malli ennustaa, että kaksinkertainen etäisyys pienentää intensiteetin neljäsosaan. Silloin taso laskee $10\,\text{dB} \cdot \lg 4 = 6{,}02\,\text{dB}$. Mitattu keskimääräinen lasku $6{,}03\,\text{dB}$ on käytännössä sama. Yksittäiset laskut $6{,}1\,\text{dB}$, $5{,}8\,\text{dB}$, $6{,}1\,\text{dB}$ ja $6{,}1\,\text{dB}$ vaihtelevat vain mittausvirheen verran. Avoin kenttä toimii siis pistemäisen lähteen mallina.
+
+## fy5-15-L2-06
+**Annettu:** taulukosta $L(1{,}0\,\text{m}) = 86{,}0\,\text{dB}$ ja $L(8{,}0\,\text{m}) = 71{,}9\,\text{dB}$. Etäisyys kasvaa kertoimella $\dfrac{8{,}0\,\text{m}}{1{,}0\,\text{m}} = 8{,}0$.
+**Kysytty:** mitatun tason $L_\text{mit}$ ja pistemäisen lähteen mallin ennusteen $L_\text{malli}$ erotus $L_\text{mit} - L_\text{malli}$ desibeleinä
+**Periaate:** Jos ääni etenisi pistemäisestä lähteestä ilman heijastuksia, intensiteetti olisi kääntäen verrannollinen etäisyyden neliöön. Silloin tasojen erotus riippuisi vain etäisyyksien suhteesta. Ennuste lasketaan $1{,}0\,\text{m}$:n lukemasta, ja sitä verrataan mittaukseen.
+**Kaava:** $\Delta L = L_\text{mit} - L_\text{malli}$, missä ennuste on
+```latex
+L_\text{malli} = L_1 - 10\,\text{dB} \cdot \lg \left[\left(\dfrac{r_2}{r_1}\right)^{2}\right]
+```
+**Muunnokset:** Niitä ei tarvita. Etäisyydet ovat metreinä, ja suhde on yksikötön.
+**Sijoitus:** etäisyyksien suhde on $8{,}0$, joten
+```latex
+\begin{aligned}
+L_\text{malli} &= 86{,}0\,\text{dB} - 10\,\text{dB} \cdot \lg 64 \\
+&= 86{,}0\,\text{dB} - 18{,}06\,\text{dB} \\
+&= 67{,}94\,\text{dB} \\
+L_\text{mit} - L_\text{malli} &= 71{,}9\,\text{dB} - 67{,}94\,\text{dB} \\
+&= 3{,}96\,\text{dB}
+\end{aligned}
+```
+**Vastaus:** $4{,}0\,\text{dB}$. Vastauksessa on kaksi merkitsevää numeroa, koska lukemat on annettu kymmenesosadesibelin tarkkuudella ja ennuste on pyöristetty. Kohdan a) ennuste on noin $67{,}9\,\text{dB}$.
+**Järkevyys:** Taso $3{,}96\,\text{dB}$ suurempi tarkoittaa, että mitattu intensiteetti on noin $10^{0{,}396} = 2{,}5$-kertainen malliin verrattuna. Selitys: salin seinät, katto ja lattia heijastavat ääntä. Kuuntelupaikkaan tulee siis suoran äänen lisäksi heijastunutta ääntä. Suora ääni heikkenee etäisyyden mukana, mutta heijastunut ääni ei läheskään yhtä paljon. Siksi ero kasvaa kauempana. Mitatut laskut $5{,}9\,\text{dB}$, $5{,}1\,\text{dB}$ ja $3{,}1\,\text{dB}$ jäävät pienemmiksi kuin pistemäisen lähteen $6{,}0\,\text{dB}$.
+
+## fy5-15-L2-07
+**Annettu:** taulukosta vertailumittarin tasot $50{,}0\,\text{dB}$, $60{,}0\,\text{dB}$, $70{,}0\,\text{dB}$ ja $80{,}0\,\text{dB}$ sekä puhelimen lukemat $54{,}1\,\text{dB}$, $63{,}8\,\text{dB}$, $74{,}2\,\text{dB}$ ja $83{,}9\,\text{dB}$. Lisäksi $90{,}0\,\text{dB}$ ja $88{,}6\,\text{dB}$.
+**Kysytty:** kerroin $k = \dfrac{I_\text{puh}}{I_\text{ref}}$ eli kuinka moninkertaiseksi puhelin arvioi intensiteetin
+**Periaate:** Puhelimen virhe $\Delta L = L_\text{puh} - L_\text{ref}$ on neljällä pienimmällä tasolla lähes sama. Se on siis systemaattinen virhe eli aina samansuuntainen virhe. Tasojen erotus riippuu vain intensiteettien suhteesta. Siksi keskimääräisestä virheestä saadaan intensiteettien suhde.
+**Kaava:** $\Delta L_\text{ka} = \dfrac{\Sigma \Delta L}{4}$ ja $\Delta L_\text{ka} = 10\,\text{dB} \cdot \lg k$, joten
+```latex
+k = 10^{\,\Delta L_\text{ka}/(10\,\text{dB})}
+```
+**Muunnokset:** Niitä ei tarvita. Kaikki tasot ovat desibeleinä, ja suhde $k$ on yksikötön.
+**Sijoitus:** Virheet ovat $4{,}1\,\text{dB}$, $3{,}8\,\text{dB}$, $4{,}2\,\text{dB}$ ja $3{,}9\,\text{dB}$. Niiden summa on $16{,}0\,\text{dB}$, joten
+```latex
+\begin{aligned}
+\Delta L_\text{ka} &= \dfrac{16{,}0\,\text{dB}}{4} \\
+&= 4{,}0\,\text{dB} \\
+k &= 10^{\,4{,}0\,\text{dB}/(10\,\text{dB})} \\
+&= 2{,}51
+\end{aligned}
+```
+**Vastaus:** $2{,}5$. Vastauksessa on kaksi merkitsevää numeroa kuten keskimääräisessä virheessä $4{,}0\,\text{dB}$. Puhelin näyttää tason keskimäärin $4{,}0\,\text{dB}$ liian suureksi. Se arvioi intensiteetin noin $2{,}5$-kertaiseksi. Kohdan c) tulos: tasolla $90{,}0\,\text{dB}$ virheen odottaisi olevan $+4\,\text{dB}$. Puhelin näyttää kuitenkin $1{,}4\,\text{dB}$ liian vähän, joten lukema ei seuraa muita. Mikrofoni todennäköisesti kyllästyy eli ylikuormittuu kovalla äänellä.
+**Järkevyys:** Kolme desibeliä vastaisi kaksinkertaista intensiteettiä. Viisi desibeliä vastaisi intensiteettiä $10^{0{,}5} = 3{,}2$-kertaiseksi. Siksi $4{,}0\,\text{dB}$ antaa luvun $2$ ja $3{,}2$ väliltä, ja $2{,}5$ on sellainen. Systemaattinen virhe korjataan vähentämällä lukemista noin $4\,\text{dB}$. Korjaus pätee kuitenkin vain mitatulla alueella $50\,\text{dB}$–$80\,\text{dB}$.
+
+## fy5-15-L3-04
+**Annettu:** taulukosta etäisyydet $5{,}0\,\text{m}$, $10{,}0\,\text{m}$, $20{,}0\,\text{m}$ ja $40{,}0\,\text{m}$ sekä tasot $91{,}1\,\text{dB}$, $84{,}8\,\text{dB}$, $79{,}3\,\text{dB}$ ja $72{,}6\,\text{dB}$. Raja-arvo on $L_\text{raja} = 55\,\text{dB}$ ja kuulokynnys $I_0 = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2$. Lähde on pistemäinen, ääni leviää tasaisesti, eikä heijastuksia tai vaimenemista ole.
+**Kysytty:** a) kaiuttimen ääniteho $P$ ja b) etäisyys $r$, jolla taso on $55\,\text{dB}$, metreinä
+**Periaate:** Jokaisesta lukemasta lasketaan intensiteetti tasoyhtälöllä. Pistemäiselle lähteelle $I = \dfrac{P}{4\pi r^2}$ antaa tehon $P = I \cdot 4\pi r^2$. Lukemissa on mittausvirhettä, joten teho on kaikkien arvojen keskiarvo. Kun teho tunnetaan, sama kaava ratkaistaan etäisyydelle, jolla intensiteetti vastaa rajatasoa.
+**Kaava:** $r = \sqrt{\dfrac{P}{4\pi I_\text{raja}}}$, missä teho ja intensiteetit lasketaan näin:
+```latex
+\begin{aligned}
+&I = I_0 \cdot 10^{\,L/(10\,\text{dB})} \\
+&P = I \cdot 4\pi r^2
+\end{aligned}
+```
+**Muunnokset:** Niitä ei tarvita. Etäisyydet ovat metreinä ja intensiteetit yksikössä $\text{W/m}^2$.
+**Sijoitus:** Lukemista saadaan intensiteetit $1{,}288 \cdot 10^{-3}\,\text{W/m}^2$, $3{,}020 \cdot 10^{-4}\,\text{W/m}^2$, $8{,}51 \cdot 10^{-5}\,\text{W/m}^2$ ja $1{,}820 \cdot 10^{-5}\,\text{W/m}^2$. Tehot ovat $0{,}4047\,\text{W}$, $0{,}3795\,\text{W}$, $0{,}4278\,\text{W}$ ja $0{,}3659\,\text{W}$. Tehojen summa on $1{,}578\,\text{W}$, joten keskiarvo on $P = 0{,}3945\,\text{W}$. Rajatason intensiteetti on $I_\text{raja} = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2 \cdot 10^{5{,}5} = 3{,}162 \cdot 10^{-7}\,\text{W/m}^2$, ja
+```latex
+\begin{aligned}
+r &= \sqrt{\dfrac{0{,}3945\,\text{W}}{4\pi \cdot 3{,}162 \cdot 10^{-7}\,\text{W/m}^2}} \\
+&= \sqrt{9{,}93 \cdot 10^{4}\,\text{m}^2} \\
+&= 315\,\text{m} \approx 3{,}2 \cdot 10^{2}\,\text{m}
+\end{aligned}
+```
+**Vastaus:** Kohdan b) tulos on $3{,}2 \cdot 10^{2}\,\text{m}$. Vastauksessa on kaksi merkitsevää numeroa, koska raja-arvo $55\,\text{dB}$ on annettu täysinä desibeleinä. Muutos $\pm 0{,}5\,\text{dB}$ muuttaa etäisyyttä välillä $297\,\text{m}$–$334\,\text{m}$. Kohdan a) ääniteho on noin $0{,}39\,\text{W}$.
+**Järkevyys:** Taso laskee $6{,}0\,\text{dB}$ jokaisella etäisyyden kaksinkertaistumisella. Tasosta $72{,}6\,\text{dB}$ kohdassa $40\,\text{m}$ tasoon $55\,\text{dB}$ on noin $17{,}6\,\text{dB}$. Se on noin $2{,}9$ kaksinkertaistumista, joten etäisyys on noin $40\,\text{m} \cdot 2^{2{,}9} \approx 300\,\text{m}$. Se sopii tulokseen $3{,}2 \cdot 10^{2}\,\text{m}$. **Perustelu (kohta c):** Yksittäinen lukema sisältää mittausvirhettä. Tehoarviot vaihtelevat välillä $0{,}366\,\text{W}$–$0{,}428\,\text{W}$, joten keskiarvo tasoittaa virheen. Pitkällä matkalla ilman aiheuttama vaimennus, maan ja kasvillisuuden vaimennus, tuuli, lämpötilakerrokset ja rakennusten heijastukset voivat poiketa mallista, koska malli ei sisällä niitä. Todellinen taso voi olla pienempi tai suurempi kuin malli ennustaa. Ilman ja maan vaimennus pienentää sitä yleensä, ja heijastukset suurentavat sitä. Siksi tulos $3{,}2 \cdot 10^{2}\,\text{m}$ on arvio.
+
+## fy5-15-L3-05
+**Annettu:** kitaravahvistimen teho $P_1 = 0{,}20\,\text{W}$, rumpusetin taso $L_2 = 90\,\text{dB}$ etäisyydellä $r_2 = 2{,}0\,\text{m}$, kuuntelijan etäisyys $r = 8{,}0\,\text{m}$, tavoitetaso $L_\text{raja} = 70\,\text{dB}$ ja $I_0 = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2$. Lähteet ovat samassa paikassa, riippumattomia ja pistemäisiä.
+**Kysytty:** a) yhteistaso $L$ etäisyydellä $8{,}0\,\text{m}$ ja b) etäisyys $r_\text{raja}$, jolla yhteistaso on $70\,\text{dB}$, metreinä
+**Periaate:** Lähteet ovat toisistaan riippumattomia, joten niiden intensiteetit lasketaan yhteen. Vahvistimen intensiteetti saadaan tehosta kaavalla $I = \dfrac{P}{4\pi r^2}$. Rumpujen intensiteetti saadaan tasosta tasoyhtälöllä ja etäisyyden kaksinkertaistumisen vaikutuksella. Molemmat intensiteetit pienenevät kuten $\dfrac{1}{r^2}$, joten myös summaintensiteetti pienenee niin. Etäisyys saadaan suhteesta.
+**Kaava:** $r_\text{raja} = r \sqrt{\dfrac{I}{I_\text{raja}}}$, missä summaintensiteetti ja taso lasketaan näin:
+```latex
+\begin{aligned}
+&I = I_1 + I_2 \\
+&L = 10\,\text{dB} \cdot \lg \dfrac{I}{I_0}
+\end{aligned}
+```
+**Muunnokset:** Niitä ei tarvita. Etäisyydet ovat metreinä ja tasot desibeleinä.
+**Sijoitus:** Vahvistin: $I_1 = \dfrac{0{,}20\,\text{W}}{4\pi \cdot (8{,}0\,\text{m})^2} = 2{,}487 \cdot 10^{-4}\,\text{W/m}^2$. Rummut: tasosta $90\,\text{dB}$ lähellä saadaan $I = 10^{-12}\,\text{W/m}^2 \cdot 10^{9} = 1{,}0 \cdot 10^{-3}\,\text{W/m}^2$ etäisyydellä $2{,}0\,\text{m}$. Etäisyydellä $8{,}0\,\text{m}$ intensiteetti on $\left(\dfrac{2{,}0}{8{,}0}\right)^2 = \dfrac{1}{16}$ siitä, eli $I_2 = 6{,}25 \cdot 10^{-5}\,\text{W/m}^2$. Siten
+```latex
+\begin{aligned}
+I &= 2{,}487 \cdot 10^{-4}\,\text{W/m}^2 \\
+&\quad + 6{,}25 \cdot 10^{-5}\,\text{W/m}^2 \\
+&= 3{,}112 \cdot 10^{-4}\,\text{W/m}^2 \\
+L &= 10\,\text{dB} \cdot \lg \dfrac{3{,}112 \cdot 10^{-4}}{10^{-12}} \\
+&= 84{,}93\,\text{dB}
+\end{aligned}
+```
+Tasoa $70\,\text{dB}$ vastaa $I_\text{raja} = 10^{-12}\,\text{W/m}^2 \cdot 10^{7} = 1{,}0 \cdot 10^{-5}\,\text{W/m}^2$, joten
+```latex
+\begin{aligned}
+r_\text{raja} &= 8{,}0\,\text{m} \cdot \sqrt{\dfrac{3{,}112 \cdot 10^{-4}}{1{,}0 \cdot 10^{-5}}} \\
+&= 8{,}0\,\text{m} \cdot 5{,}579 \\
+&= 44{,}6\,\text{m}
+\end{aligned}
+```
+**Vastaus:** Kohdan b) tulos on $45\,\text{m}$. Vastauksessa on kaksi merkitsevää numeroa kuten tehossa $0{,}20\,\text{W}$ ja etäisyydessä $8{,}0\,\text{m}$. Kohdan a) yhteistaso on noin $85\,\text{dB}$.
+**Järkevyys:** Taso laskee yhteistasosta $84{,}9\,\text{dB}$ tasoon $70\,\text{dB}$, eli $14{,}9\,\text{dB}$. Se on noin $2{,}5$ etäisyyden kaksinkertaistumista ($6{,}0\,\text{dB}$ kutakin kohti), ja $8{,}0\,\text{m} \cdot 2^{2{,}5} \approx 45\,\text{m}$. Yhteistaso on suurempi kuin kumpikaan lähde yksin ($84{,}0\,\text{dB}$ ja $78{,}0\,\text{dB}$), mutta pienempi kuin niiden desibelien summa. **Perustelu (kohta c):** Kuulon intensiteettialue on valtava. Kuulokynnyksestä kipukynnykseen intensiteetti kasvaa kertoimella $10^{12}$. Logaritminen asteikko pakkaa tämän alueen lukuihin $0\,\text{dB}$–$120\,\text{dB}$. Kuulo erottaa likimain suhteellisia eroja. Siksi sama intensiteetin kerroin, esimerkiksi kaksinkertaistuminen, tuntuu suunnilleen samalta muutokselta (noin $3\,\text{dB}$) hiljaisella ja kovalla äänellä.

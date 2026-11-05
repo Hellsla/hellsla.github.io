@@ -1,11 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 703bd8e4249a7eb0
+CONTENT-HASH: 51eea64f715b2cd3
+Mode: full
+Round: 1
 
 ## Blocking
+
+## Fixed
+- None needed: the translation text already matches the reviewed Finnish.
 
 ## Polish
 
 ## Checked
-- Tilanne ensin, kysymys viimeisenä omana virkkeenään; pitkät tehtävätekstit pilkottu lyhyiksi lauseiksi, "on lisättävä" → "pitää lisätä" kaltaiset helpotukset.
-- Ratkaisut yhtä täydellisiä kuin suomenkieliset (annettu, kysytty, periaate, kaava, muunnokset, sijoitus, vastaus perusteluineen, järkevyys).
-- Kaappaukset: contact-5 #57–#60 (taso 1 avattuna).
+- Selkosuomi: short sentences; long Finnish sentences split (e.g. L1-06 text, L2-06, L3-04, L3-05 c).
+- Terms explained where new: hitaus, silmämääräinen sovitus; other course terms kept as in the lesson.
+- Feedback of all choices keeps the misconception targeting of the Finnish.
+- Task structure, steps and the answer-box sentence match the Finnish.

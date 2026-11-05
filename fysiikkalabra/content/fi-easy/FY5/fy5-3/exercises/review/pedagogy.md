@@ -1,10 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 2af20781c0fa9e86
+CONTENT-HASH: f83462eeec7a31b4
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
+
 ## Blocking
 (none)
+
+## Fixed
+- solutions.md L1-07: redundant sentence about significant figures removed (reads cleaner, same content).
+
 ## Polish
-- [Minor] none beyond what the Finnish reviews noted (teaching structure is unchanged).
+(none)
+
 ## Checked
-- exercises.json and solutions.md: every stage, prediction, hint, feedback, rubric and model answer is kept; the learning path, activity order and workload equal the Finnish version.
-- Plain Finnish: short sentences, terms explained at first use, nothing dropped relative to the Finnish version.
-- Captures opened: sim-390, open-exercises-1280-5.
+- L1-06 choices: one correct option, three distractors with feedback naming the misconception (velocity towards the centre, outward force, fixed direction), same as fi.
+- Task order, levels, "answer box takes part b)" instructions and the part a)/b)/c) structure match fi; hints and model answers present in solutions.md.
+- Language level: plain Finnish (selkosuomi): short sentences, terms explained (kierrosaika, pyörimistaajuus, ratanopeus), numbers with decimal comma in text and {,} in LaTeX as in fi.
+- Solutions keep the Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness layout of fi.

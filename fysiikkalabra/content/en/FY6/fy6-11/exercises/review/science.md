@@ -1,16 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: dc685bf962f617f6
+CONTENT-HASH: 9dbe67314c91de71
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
+## Fixed
+- solutions.md L2-06 Reasonableness: "because he divided" changed to "because the student divided" (fi: Hän; en avoids the gendered pronoun for the student).
+
 ## Polish
-- solutions.md L1-05 (Annettu, Järkevyys/Reasonableness): the graph points are called measurement points though the task gives only a graph; fine for the exercise (data is a plain graph), optionally "datapiste" / "data point".
+- solutions.md L3-04 Principle: "one step" for the elementary charge is a slightly vague term (also in fi); "one elementary charge" would read more naturally.
 
 ## Checked
-- Full check, focus on diff. All 12 answers recomputed in one script: 4.0e4 N/C; 100 uN; 1.5e4 V/m; 70 mV; 3.0e4 N/C; 2.0 mN; 15 kV; 20.39; 0.45 mN; 337.5 V; 4194 km/s; 23.06 nC. All equal answers.py and the solutions.
-- Diff L1-05: the line is now said to be fitted through the origin because F = qE gives no force on an uncharged ball in a uniform field. That is a physical reason (guardrail: origin fit needs one) and correct; the sentence the diff removed ("since the line goes through the origin ...") was backwards causality.
-- L1-05 slope read from the fitted line (4.0 nC; 120 uN), not a raw point; the raw point is only a reasonableness check (91 uN : 3.0 nC = 3.03e4). Figure's line 30 uN/nC agrees.
-- Conditions stated: homogeneous field, small test charge, plates far from edges (L2-04), vacuum for the electron (L3-02, v = 1.4 % of c).
-- L3-01 sign/direction (negative drop, positive plate above), L3-03 tan(alpha) = qE : mg correct.
-- Numbers, LaTeX, units and tolerances identical to the Finnish reference; only wording differs.
+- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) and the older ones compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags and data cells identical; every number in texts, choices, feedback and solutions.md (945 numbers each) equal to fi, decimal point used in en.
+- Re-derived L1-08 7.5 mm, L2-05 400 V mean, L2-06 0.12 mN, L2-07 2.98e4 V/m, L3-04 e = 1.60e-19 C, L3-05 y = 1.67 mm and the doubled-voltage hit; all agree with fi.
+- No Finnish left in exercises.json or solutions.md (grep).
+- L1-06/L1-07: one correct option each; distractor feedback addresses the named misconception as in fi.

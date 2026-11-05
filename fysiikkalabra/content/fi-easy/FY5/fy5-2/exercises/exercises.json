@@ -39,6 +39,52 @@
       "answer": 0.6,
       "unit": "m",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-2-L1-06",
+      "level": 1,
+      "text": "Kevyen tangon vasempaan päähän vaikuttaa pystysuora $10\\,\\text{N}$:n voima ylöspäin. Oikeaan päähän vaikuttaa pystysuora $10\\,\\text{N}$:n voima alaspäin. Tanko on aluksi levossa, eikä sitä ole tuettu mistään. Tangon painoa ei oteta huomioon.\n\nMitä tangolle tapahtuu?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Tanko alkaa kiertyä, koska voimien momentit kiertävät sitä samaan suuntaan.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Tanko pysyy levossa, koska voimien summa on nolla ja se riittää tasapainoon.",
+          "feedback": "Voimien summa nolla kertoo vain sen, ettei tangon painopiste lähde liikkumaan. Kiertymisen estää vasta momenttiehto. Se ei täyty tässä, koska voimat eivät ole samalla suoralla."
+        },
+        {
+          "text": "Tanko lähtee liikkumaan ylöspäin, koska ylöspäin vetävä voima on vasemmassa päässä.",
+          "feedback": "Voimat ovat yhtä suuret ja vastakkaiset, joten voimien summa on nolla. Silloin tangon painopisteen liike ei muutu. Voiman vaikutuspiste ei ratkaise liikettä eteenpäin vaan kiertymistä."
+        },
+        {
+          "text": "Tanko alkaa kiertyä, koska voimien momentit kiertävät sitä samaan suuntaan.",
+          "correct": true,
+          "feedback": "Oikein: tasapainoon tarvitaan kaksi ehtoa. Voimien summa on nolla, ja momenttien summa on nolla. Tässä ensimmäinen ehto täyttyy, mutta voimat vaikuttavat eri suorilla. Tangon keskipisteen suhteen molemmat momentit kiertävät tankoa samaan suuntaan. Niiden summa ei ole nolla, joten tanko kiertyy."
+        },
+        {
+          "text": "Tanko pysyy levossa, koska yhtä suuret voimat tuottavat yhtä suuret vastakkaiset momentit.",
+          "feedback": "Yhtä suuret voimat eivät vielä tarkoita yhtä suuria vastakkaisia momentteja. Tangon keskipisteen suhteen kumpikin voima kiertää tankoa samaan suuntaan. Momentit siis lisäävät toisiaan eivätkä kumoa toisiaan."
+        }
+      ]
+    },
+    {
+      "id": "fy5-2-L1-07",
+      "level": 1,
+      "text": "Kevyt keinulauta on tuettu keskeltä. Laudan painoa ei oteta huomioon. Laudan toisella puolella istuu $28\\,\\text{kg}$:n lapsi $1{,}4\\,\\text{m}$:n päässä tukipisteestä. Kuinka kaukana tukipisteestä toisella puolella $40\\,\\text{kg}$:n lapsen on istuttava, jotta lauta pysyy vaakasuorassa?",
+      "answer": 0.98,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-2-L1-08",
+      "level": 1,
+      "text": "Tasa-aineisen lankun pituus on $2{,}4\\,\\text{m}$ ja massa $6{,}0\\,\\text{kg}$. Lankun oikeaan päähän asetetaan $3{,}0\\,\\text{kg}$:n säkki. Kuinka kaukana lankun vasemmasta päästä lankun ja säkin yhteinen painopiste on?",
+      "answer": 1.6,
+      "unit": "m",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +120,95 @@
       "answer": 450,
       "unit": "N",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-2-L2-05",
+      "level": 2,
+      "text": "Tasa-aineisen lankun pituus on $3{,}00\\,\\text{m}$ ja massa $10{,}0\\,\\text{kg}$. Lankku on vaakasuorassa kahden voima-anturin varassa. Anturit ovat lankun päissä. Lankulla seisova henkilö siirtyy askel kerrallaan kohti oikeaa päätä. Taulukossa on vasemman anturin lukema $N_1$ henkilön paikan $x$ mukaan. Paikka $x$ mitataan lankun vasemmasta päästä. Aineisto on esimerkkiaineistoa.\n\na) Piirrä mittauspisteistä $(x, N_1)$-kuvaaja. Sovita pisteisiin suora ja määritä sen kulmakerroin. Laske kulmakertoimesta henkilön massa.\n\nb) Selitä momenttiehdon avulla, miksi pisteet ovat samalla suoralla.\n\nVastauslaatikkoon tulee a)-kohdan henkilön massa kilogrammoina.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 62,
+      "unit": "kg",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Vasemman anturin lukema henkilön paikan mukaan (esimerkkiaineisto)",
+        "columns": [
+          "$x\\,(\\text{m})$",
+          "$N_1\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "0.50",
+            "558"
+          ],
+          [
+            "1.00",
+            "452"
+          ],
+          [
+            "1.50",
+            "355"
+          ],
+          [
+            "2.00",
+            "250"
+          ],
+          [
+            "2.50",
+            "153"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-2-L2-06",
+      "level": 2,
+      "text": "Penkin pituus on $2{,}40\\,\\text{m}$ ja massa $14{,}0\\,\\text{kg}$. Penkin painopiste on keskellä. Penkin jalat ovat $0{,}20\\,\\text{m}$:n ja $2{,}20\\,\\text{m}$:n päässä penkin vasemmasta päästä. Jalat tukevat penkkiä pystysuoraan ylöspäin. Penkillä istuu $72{,}0\\,\\text{kg}$:n henkilö $0{,}60\\,\\text{m}$:n päässä vasemmasta päästä.\n\nOpiskelija laskee oikean jalan tukivoiman $N_2$ näin: ”Valitsen momenttipisteeksi vasemman jalan, jolloin sen tukivoima jää pois. Henkilön voima on $F_\\text{h} = 706{,}3\\,\\text{N}$, ja sen varsi on $r_\\text{h} = 0{,}40\\,\\text{m}$. Oikean jalan varsi on $r_2 = 2{,}00\\,\\text{m}$. Momenttiehto on $N_2 r_2 = F_\\text{h} r_\\text{h}$, josta $N_2 = 141{,}3\\,\\text{N}$.”\n\na) Mikä voima opiskelijalta unohtui? Perustele, miksi sen momentti ei ole nolla valitun momenttipisteen suhteen.\n\nb) Laske oikean jalan tukivoima oikein.\n\nVastauslaatikkoon tulee b)-kohdan tulos.",
+      "kind": [
+        "error"
+      ],
+      "answer": 210,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-2-L2-07",
+      "level": 2,
+      "text": "Tasa-aineisen metrimitan ($100{,}0\\,\\text{cm}$) massa määritettiin kokeella. Mitan painopiste on kohdassa $50{,}0\\,\\text{cm}$. Mitan $5{,}0\\,\\text{cm}$:n kohtaan ripustettiin punnus. Mitta tuettiin terävälle tuelle siitä kohdasta $x$, jossa se pysyi vaakasuorassa. Koe toistettiin eri punnuksilla. Aineisto on esimerkkiaineistoa.\n\na) Laske jokaisesta mittauksesta mitan massa $M$. Laske sitten tulosten keskiarvo.\n\nb) Miksi koe kannattaa tehdä usealla eri punnuksella eikä vain yhdellä?\n\nVastauslaatikkoon tulee a)-kohdan keskiarvo grammoina.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 110,
+      "unit": "g",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Tukikohta, jossa metrimitta pysyy vaakasuorassa (esimerkkiaineisto)",
+        "columns": [
+          "$m\\,(\\text{g})$",
+          "$x\\,(\\text{cm})$"
+        ],
+        "rows": [
+          [
+            "50.0",
+            "35.8"
+          ],
+          [
+            "100.0",
+            "28.7"
+          ],
+          [
+            "150.0",
+            "24.0"
+          ],
+          [
+            "200.0",
+            "21.1"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -101,6 +236,68 @@
       "answer": 1.21,
       "unit": "m",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-2-L3-04",
+      "level": 3,
+      "text": "Tasa-aineisen tikkaiden pituus on $5{,}00\\,\\text{m}$ ja massa $12{,}0\\,\\text{kg}$. Tikkaat nojaavat yläpäästään sileää pystysuoraa seinää vasten ja alapäästään vaakasuoraa lattiaa vasten. Tikkaat muodostavat lattian kanssa kulman $65{,}0\\,{}^\\circ$. Seinä on sileä, joten seinän voima on vaakasuora. Lattian ja tikkaiden välinen lepokitkakerroin on $\\mu = 0{,}40$.\n\nTikkaita kiipeää $75{,}0\\,\\text{kg}$:n henkilö. Hänen painonsa vaikuttaa tikkaiden suoralla sillä kohdalla, jossa hän on.\n\na) Piirrä tikkaiden voimakuvio, kun henkilö on tikkaiden keskikohdalla. Nimeä voimat.\n\nb) Kuinka pitkän matkan $s$ alapäästä tikkaita pitkin henkilö voi kiivetä, ennen kuin tikkaat alkavat liukua?\n\nc) Perustele sanallisesti, miksi liukumisen vaara kasvaa henkilön noustessa ylemmäs.\n\nVastauslaatikkoon tulee b)-kohdan tulos.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 4.6,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-2-L3-05",
+      "level": 3,
+      "text": "Tuolin etu- ja takajalkojen väli on $0{,}40\\,\\text{m}$ ja tuolin massa on $8{,}00\\,\\text{kg}$. Tuolin painopiste on jalkojen puolivälissä. Tuolilla istuu $72{,}0\\,\\text{kg}$:n henkilö. Hän kurkottaa eteenpäin kallistamalla ylävartaloaan. Taulukossa on henkilön painopisteen vaakaetäisyys $x_\\text{h}$ takajaloista. Etäisyys on annettu ylävartalon kallistuskulman $\\theta$ mukaan. Henkilön jalat eivät ylety lattiaan, joten koko hänen painonsa on tuolin varassa. Aineisto on esimerkkiaineistoa. Jalat eivät liu'u, ja tuoli voi kaatua vain etujalkojensa varaan.\n\na) Laske, kuinka kaukana takajaloista henkilön painopiste saa enintään olla, jotta tuoli ei kaadu.\n\nb) Määritä taulukosta lineaarisella interpoloinnilla kallistuskulma, jolla tuoli alkaa kaatua.\n\nc) Selitä sanallisesti, miksi kurkottelu kaataa tuolin. Keksi yksi muutos, joka sallisi pidemmän kurkottelun.\n\nVastauslaatikkoon tulee b)-kohdan kulma asteina.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 53,
+      "unit": "°",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Henkilön painopisteen paikka kallistuksen mukaan (esimerkkiaineisto)",
+        "columns": [
+          "$\\theta\\,({}^\\circ)$",
+          "$x_\\text{h}\\,(\\text{cm})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "20.0"
+          ],
+          [
+            "10",
+            "25.1"
+          ],
+          [
+            "20",
+            "29.4"
+          ],
+          [
+            "30",
+            "34.2"
+          ],
+          [
+            "40",
+            "38.1"
+          ],
+          [
+            "50",
+            "41.3"
+          ],
+          [
+            "60",
+            "44.4"
+          ]
+        ]
+      }
     }
   ]
 }
