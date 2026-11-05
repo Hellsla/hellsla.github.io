@@ -3,6 +3,7 @@
     {
       "id": "fy1-1-L1-01",
       "level": 1,
+      "core": true,
       "text": "Punasolun halkaisija on $7{,}5\\cdot10^{-6}\\,\\text{m}$. Kuinka monta mikrometriä se on? Yksi mikrometri on $1\\,\\mu\\text{m} = 10^{-6}\\,\\text{m}$.",
       "answer": 7.5,
       "unit": "µm",
@@ -11,6 +12,7 @@
     {
       "id": "fy1-1-L1-02",
       "level": 1,
+      "core": true,
       "text": "Kuvassa on koon $d$ kymmenpotenssiakseli, jolle on merkitty vetyatomi ja muurahainen. Montako suuruusluokkaa niiden koon välillä on?",
       "figure": "fy1-1/scale-marks",
       "answer": 8,
@@ -98,6 +100,7 @@
     {
       "id": "fy1-1-L2-01",
       "level": 2,
+      "core": true,
       "text": "Linnunradan halkaisija on noin $1{,}0\\cdot10^{5}$ valovuotta, ja yksi valovuosi on $9{,}46\\cdot10^{15}\\,\\text{m}$. Havaittavan maailmankaikkeuden halkaisija on noin $8{,}8\\cdot10^{26}\\,\\text{m}$. Kuinka monta Linnunradan halkaisijaa mahtuisi rivissä havaittavan maailmankaikkeuden halkaisijalle? Anna vastaus tuhansina.",
       "answer": 930.2,
       "unit": "tuhatta",
@@ -183,6 +186,7 @@
     {
       "id": "fy1-1-L2-06",
       "level": 2,
+      "core": true,
       "text": "Taulukossa on neljän kohteen halkaisija $d = a\\cdot10^{n}\\,\\text{m}$ kymmenpotenssimuodossa. Määritä kunkin kohteen suuruusluokka ja laske, montako suuruusluokkaa on ihmisen ja Linnunradan välillä. Perustele, miksi Linnunradan suuruusluokka ei ole $10^{20}$, vaikka sen eksponentti on $20$.",
       "kind": [
         "data",

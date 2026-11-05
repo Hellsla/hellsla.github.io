@@ -3,6 +3,7 @@
     {
       "id": "fy7-2-L1-01",
       "level": 1,
+      "core": true,
       "text": "The protons in a proton beam travelling in a vacuum tube have a speed of $3.0 \\cdot 10^{5}\\,\\text{m/s}$. Coils around the tube produce a magnetic field whose magnetic flux density is $0.25\\,\\text{T}$ and which is perpendicular to the velocity of the protons. The charge of a proton is $1.602 \\cdot 10^{-19}\\,\\text{C}$. How great is the magnetic force on one proton? Give the answer in the form $\\ldots \\cdot 10^{-14}\\,\\text{N}$.",
       "answer": 1.2,
       "unit": "10⁻¹⁴ N",
@@ -43,6 +44,7 @@
     {
       "id": "fy7-2-L1-06",
       "level": 1,
+      "core": true,
       "text": "A proton flies in a vacuum perpendicular to a uniform magnetic field. What happens to the kinetic energy of the proton as it travels in the field?",
       "kind": [
         "concept"
@@ -91,6 +93,7 @@
     {
       "id": "fy7-2-L2-01",
       "level": 2,
+      "core": true,
       "text": "A proton of mass $1.673 \\cdot 10^{-27}\\,\\text{kg}$ and charge $1.602 \\cdot 10^{-19}\\,\\text{C}$ is accelerated from rest by a voltage of $500\\,\\text{V}$. After that it flies perpendicular to a magnetic field whose magnetic flux density is $0.050\\,\\text{T}$. How large is the radius of the circular path of the proton? Give the answer in centimetres.",
       "answer": 6.5,
       "unit": "cm",
@@ -160,6 +163,7 @@
     {
       "id": "fy7-2-L2-06",
       "level": 2,
+      "core": true,
       "text": "Ions of an ion beam resembling magnesium hit the detector of a mass spectrometer at three points A, B and C (an example data set). All the ions have the same charge $e$, they have passed through a velocity selector at the same speed and they travel a semicircle in the same magnetic field, so the distance of the point of impact from the slit is the diameter of the path, $d = 2r$. The mass of the ion at point A is known, $24.0\\,\\text{u}$. The table gives the distance of each point of impact from the slit and the number of hits $N$ collected at the detector, which is proportional to the share of the isotope in the ion source.\n\na) Deduce the masses of the ions at points of impact B and C in atomic mass units.\n\nb) Calculate what percentage of the ions hit point A.\n\nGive in the answer field the result of part b) as a percentage.",
       "kind": [
         "data",

@@ -3,6 +3,7 @@
     {
       "id": "fy6-8-L1-01",
       "level": 1,
+      "core": true,
       "text": "Pariston lähdejännite on $1{,}58\\,\\text{V}$ ja sisäinen resistanssi $0{,}25\\,\\Omega$. Paristosta otetaan virta $0{,}80\\,\\text{A}$. Kuinka suuri on pariston napajännite?",
       "answer": 1.38,
       "unit": "V",
@@ -74,6 +75,7 @@
     {
       "id": "fy6-8-L1-07",
       "level": 1,
+      "core": true,
       "text": "Pariston navat yhdistetään lyhyellä paksulla johtimella, jonka resistanssi on lähes nolla (oikosulku). Mitä silloin tapahtuu?",
       "kind": [
         "concept"
@@ -138,6 +140,7 @@
     {
       "id": "fy6-8-L2-04",
       "level": 2,
+      "core": true,
       "text": "Kaksi paristoa on kytketty sarjaan, ja niiden kuormana on vastus $2{,}4\\,\\Omega$. Kummankin pariston lähdejännite on $1{,}5\\,\\text{V}$ ja sisäinen resistanssi $0{,}30\\,\\Omega$. Kuinka suuri virta kulkee vastuksen läpi?",
       "answer": 1.0,
       "unit": "A",
@@ -146,6 +149,7 @@
     {
       "id": "fy6-8-L2-05",
       "level": 2,
+      "core": true,
       "text": "Pariston napajännite mitattiin kuudella eri kuormitusvirralla (esimerkkiaineisto). Piirrä mittauspisteistä $(I, U)$-kuvaaja ja sovita pisteisiin suora. Pisteet eivät ole täsmälleen suoralla, koska jokaisessa mittauksessa on pieni epävarmuus.\n\na) Lue suoralta pariston lähdejännite.\n\nb) Määritä suoran kulmakertoimesta pariston sisäinen resistanssi. Arvioi myös, kuinka paljon kulmakerroin voi vaihdella, kun suora sovitetaan eri tavoin.\n\nVastauslaatikkoon tulee b)-kohdan tulos.",
       "kind": [
         "data",

@@ -3,6 +3,7 @@
     {
       "id": "fy2-3-L1-01",
       "level": 1,
+      "core": true,
       "text": "A kettle transforms $1.80 \\cdot 10^{5}\\,\\text{J}$ of electrical energy in $90.0\\,\\text{s}$. Calculate the power of the kettle.",
       "answer": 2000,
       "unit": "W",
@@ -117,6 +118,7 @@
     {
       "id": "fy2-3-L2-01",
       "level": 2,
+      "core": true,
       "text": "The power of an electric sauna heater is $6.0\\,\\text{kW}$, and it is on for $150\\,\\text{min}$. The price of electricity is $20\\,\\text{c/kWh}$, that is $0.20\\,\\text{€/kWh}$. How much does heating the sauna cost? Give the answer in euros.",
       "answer": 3.0,
       "unit": "€",
@@ -149,6 +151,7 @@
     {
       "id": "fy2-3-L2-05",
       "level": 2,
+      "core": true,
       "text": "The table shows the power of household appliances and their average daily operating time. Calculate the total electrical energy the appliances consume in a day in kilowatt-hours. Which appliance consumes the most energy even though it does not have the greatest power?",
       "kind": [
         "data",
@@ -207,6 +210,7 @@
     {
       "id": "fy2-3-L2-07",
       "level": 2,
+      "core": true,
       "text": "In an experiment the reading $E$ of an electricity meter was taken in kilowatt-hours at $10\\,\\text{min}$ intervals while only one heater was on. Draw a graph from the measurement points, fit a line to the points and determine the power of the heater from its slope. Give the answer in watts. Why does the line pass through the origin, and what does its slope tell you?",
       "kind": [
         "data",

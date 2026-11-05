@@ -3,6 +3,7 @@
     {
       "id": "fy2-1-L1-01",
       "level": 1,
+      "core": true,
       "text": "Kivi on levossa korkealla kalliolla, ja sen potentiaalienergia on $50\\,\\text{J}$. Kivi putoaa maahan, jonka tasolla potentiaalienergia on nolla. Ilmanvastus jätetään huomiotta. Kuinka suuri on kiven liike-energia juuri ennen maahan osumista?",
       "answer": 50.0,
       "unit": "J",
@@ -104,6 +105,7 @@
     {
       "id": "fy2-1-L1-08",
       "level": 1,
+      "core": true,
       "text": "Puhelinta ladataan laturilla pistorasiasta. Laturi tuntuu kädessä lämpimältä. Kuvaa energian muuttuminen ketjuna. Aloita siitä, kun energiaa tulee johtoa pitkin pistorasiasta. Lopeta siihen, kun energia on akussa. Perustele energian säilymislain avulla, miksi laturi lämpenee.",
       "kind": [
         "reasoning"
@@ -117,6 +119,7 @@
     {
       "id": "fy2-1-L2-01",
       "level": 2,
+      "core": true,
       "text": "Sähköpotkulauta lähtee liikkeelle. Sen akusta vapautuu kemiallista energiaa $3{,}00\\,\\text{kJ}$. Potkulauta ja kuljettaja saavat siitä liike-energiaa $2150\\,\\text{J}$. Muu energia muuttuu akussa, moottorissa ja renkaissa lämpöenergiaksi. Kuinka monta joulea energiaa muuttuu lämpöenergiaksi?",
       "answer": 850.0,
       "unit": "J",
@@ -186,6 +189,7 @@
     {
       "id": "fy2-1-L2-06",
       "level": 2,
+      "core": true,
       "text": "Keksijä esittelee vesilaitteen. Hän väittää, että laite toimii ikuisesti ilman ulkopuolista energiaa.\n\nYläaltaasta putoava vesi pyörittää generaattoria. Vesi menettää potentiaalienergiaa $100\\,\\text{J}$ yhdellä kierroksella. Generaattori muuttaa koko tämän energian sähköenergiaksi. Pumppu käyttää siitä $80\\,\\text{J}$ ja nostaa veden takaisin yläaltaaseen. Loput sähköenergiasta menee lamppuun.\n\nKuinka monta joulea energiaa laite luo tyhjästä yhdellä kierroksella, jos väite pitää paikkansa? Selitä, mikä energiaperiaate rikkoutuu.",
       "kind": [
         "error",

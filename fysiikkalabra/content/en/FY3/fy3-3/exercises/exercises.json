@@ -3,6 +3,7 @@
     {
       "id": "fy3-3-L1-01",
       "level": 1,
+      "core": true,
       "text": "The temperature of a room is $21\\,{}^\\circ\\text{C}$. What is the temperature in kelvins?",
       "answer": 294,
       "unit": "K",
@@ -43,6 +44,7 @@
     {
       "id": "fy3-3-L1-06",
       "level": 1,
+      "core": true,
       "text": "A gas is in a sealed cylinder with a movable piston. The gas is chosen as the thermodynamic system. The gas can be heated and compressed, but no matter can leave the cylinder and no more can enter. Which of the following describes this system correctly?",
       "kind": [
         "concept"
@@ -121,6 +123,7 @@
     {
       "id": "fy3-3-L2-02",
       "level": 2,
+      "core": true,
       "text": "In a closed rigid container the pressure of a gas is $90.0\\,\\text{kPa}$ at $0\\,{}^\\circ\\text{C}$ and $123\\,\\text{kPa}$ at $100\\,{}^\\circ\\text{C}$. Assume that the pressure depends linearly on the temperature. What is the pressure at $35\\,{}^\\circ\\text{C}$?",
       "answer": 102,
       "unit": "kPa",
@@ -138,6 +141,7 @@
     {
       "id": "fy3-3-L2-04",
       "level": 2,
+      "core": true,
       "text": "The temperature of the night side of the Moon is $-173\\,{}^\\circ\\text{C}$ and of the day side $127\\,{}^\\circ\\text{C}$. How many times greater is the temperature in kelvins of the day side than the temperature in kelvins of the night side?",
       "answer": 4.0,
       "unit": "times",

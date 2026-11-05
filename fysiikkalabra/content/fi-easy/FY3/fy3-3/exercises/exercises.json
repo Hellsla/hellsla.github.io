@@ -3,6 +3,7 @@
     {
       "id": "fy3-3-L1-01",
       "level": 1,
+      "core": true,
       "text": "Huoneen lämpötila on $21\\,{}^\\circ\\text{C}$. Mikä lämpötila on kelvineinä?",
       "answer": 294,
       "unit": "K",
@@ -43,6 +44,7 @@
     {
       "id": "fy3-3-L1-06",
       "level": 1,
+      "core": true,
       "text": "Kaasu on tiiviissä sylinterissä, jonka mäntä liikkuu. Kaasu valitaan termodynaamiseksi systeemiksi. Kaasua voi lämmittää ja puristaa. Ainetta ei pääse sylinteristä ulos eikä sinne tule lisää. Mikä seuraavista kuvaa tätä systeemiä oikein?",
       "kind": [
         "concept"
@@ -121,6 +123,7 @@
     {
       "id": "fy3-3-L2-02",
       "level": 2,
+      "core": true,
       "text": "Astia on suljettu ja jäykkä. Astiassa kaasun paine on $90{,}0\\,\\text{kPa}$ lämpötilassa $0\\,{}^\\circ\\text{C}$. Lämpötilassa $100\\,{}^\\circ\\text{C}$ paine on $123\\,\\text{kPa}$. Oleta, että paine riippuu lämpötilasta lineaarisesti. Mikä on paine lämpötilassa $35\\,{}^\\circ\\text{C}$?",
       "answer": 102,
       "unit": "kPa",
@@ -138,6 +141,7 @@
     {
       "id": "fy3-3-L2-04",
       "level": 2,
+      "core": true,
       "text": "Kuun yöpuolen lämpötila on $-173\\,{}^\\circ\\text{C}$. Päiväpuolen lämpötila on $127\\,{}^\\circ\\text{C}$. Laske molemmat lämpötilat kelvineinä. Kuinka monta kertaa suurempi päiväpuolen kelvinlämpötila on kuin yöpuolen kelvinlämpötila?",
       "answer": 4.0,
       "unit": "kertaa",

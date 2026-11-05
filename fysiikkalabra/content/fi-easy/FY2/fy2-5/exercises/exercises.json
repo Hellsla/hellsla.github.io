@@ -3,6 +3,7 @@
     {
       "id": "fy2-5-L1-01",
       "level": 1,
+      "core": true,
       "text": "Moottorisahaan ostettiin huoltoasemalta $2{,}0\\,\\text{kg}$ bensiiniä. Bensiinin lämpöarvo on $43\\,\\tfrac{\\text{MJ}}{\\text{kg}}$. Kuinka paljon energiaa bensiinin palaessa vapautuu? Anna vastaus megajouleina.",
       "answer": 86,
       "unit": "MJ",
@@ -44,6 +45,7 @@
     {
       "id": "fy2-5-L1-06",
       "level": 1,
+      "core": true,
       "text": "Bensiinin lämpöarvo on $43\\,\\tfrac{\\text{MJ}}{\\text{kg}}$. Mitä tämä tarkoittaa?",
       "kind": [
         "concept"
@@ -114,6 +116,7 @@
     {
       "id": "fy2-5-L2-03",
       "level": 2,
+      "core": true,
       "text": "Omakotitalon pelletinpolttimessa poltetaan $40\\,\\text{kg}$ puupellettejä, joiden lämpöarvo on $17\\,\\tfrac{\\text{MJ}}{\\text{kg}}$. Kattilan hyötysuhde on $85\\,\\%$. Kuinka paljon pelleteistä saadaan talon lämmitykseen hyötyenergiaa? Anna vastaus megajouleina.",
       "answer": 580,
       "unit": "MJ",
@@ -130,6 +133,7 @@
     {
       "id": "fy2-5-L2-05",
       "level": 2,
+      "core": true,
       "text": "Taulukossa on esimerkkiaineisto polttopuun tehollisesta lämpöarvosta eri kosteuksilla. Tehollinen lämpöarvo on se energia, joka puusta oikeasti saadaan lämmitykseen. Saunan lämmitykseen tarvitaan polttopuusta energiaa $200\\,\\text{MJ}$.\n\nLaske taulukon lämpöarvoilla tarvittava puun massa, kun kosteus on $20\\,\\%$ ja kun se on $40\\,\\%$. Kuinka monta kilogrammaa enemmän kosteaa ($40\\,\\%$) puuta tarvitaan kuin ilmakuivaa ($20\\,\\%$) puuta? Anna vastaus kilogrammoina.",
       "kind": [
         "data",

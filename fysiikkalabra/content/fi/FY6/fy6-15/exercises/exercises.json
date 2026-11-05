@@ -19,6 +19,7 @@
     {
       "id": "fy6-15-L1-03",
       "level": 1,
+      "core": true,
       "text": "Ihminen koskettaa märin käsin vioittuneen laitteen jännitteistä runkoa. Kosketusjännite on $230\\,\\text{V}$, ja koko virtatien resistanssi on $2{,}3\\,\\text{k}\\Omega$. Kuinka suuri virta kulkee kehon läpi? Vastaa milliampeereina.",
       "answer": 100.0,
       "unit": "mA",
@@ -43,6 +44,7 @@
     {
       "id": "fy6-15-L1-06",
       "level": 1,
+      "core": true,
       "text": "Pesukoneen metallirunko on liitetty suojamaadoitusjohtimella maahan. Mikä väite suojamaadoituksen tehtävästä on oikein?",
       "kind": [
         "concept"
@@ -113,6 +115,7 @@
     {
       "id": "fy6-15-L2-01",
       "level": 2,
+      "core": true,
       "text": "Keittiön pistorasiaryhmä on suojattu $16\\,\\text{A}$:n sulakkeella, ja verkkojännite on $230\\,\\text{V}$. Ryhmässä ovat päällä vedenkeitin ($2000\\,\\text{W}$) ja mikroaaltouuni, jonka ottoteho on $1200\\,\\text{W}$. Kuinka suuren tehon ryhmään voi vielä kytkeä, ennen kuin sulakkeen nimellisvirta ylittyy?",
       "answer": 480.0,
       "unit": "W",
@@ -223,6 +226,7 @@
     {
       "id": "fy6-15-L2-07",
       "level": 2,
+      "core": true,
       "text": "Opiskelija kirjoittaa: \"Ryhmäjohtoni sulake on $16\\,\\text{A}$, joten se suojaa minua sähköiskulta. Jos kosketan vioittuneen laitteen jännitteistä runkoa, sulake katkaisee virran heti.\"\n\nKosketusjännite on $230\\,\\text{V}$, ja märän ihmisen virtatien resistanssi on $2{,}00\\,\\text{k}\\Omega$.\n\na) Mikä opiskelijan väitteessä on virhe? Nimeä laite, joka katkaisee ihmisen läpi kulkevan pienen virran.\n\nb) Laske kehon läpi kulkeva virta milliampeereina.\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
       "kind": [
         "error"

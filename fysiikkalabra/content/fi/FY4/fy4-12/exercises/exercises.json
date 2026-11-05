@@ -3,6 +3,7 @@
     {
       "id": "fy4-12-L1-01",
       "level": 1,
+      "core": true,
       "text": "Kaksi kärryä liikkuu samalla suoralla radalla. Kärryn A paikka on $x_\\text{A} = 4{,}0\\,\\text{m} + 2{,}0\\,\\text{m/s} \\cdot t$ ja kärryn B paikka on $x_\\text{B} = 24\\,\\text{m} - 3{,}0\\,\\text{m/s} \\cdot t$. Milloin kärryt kohtaavat?",
       "answer": 4.0,
       "unit": "s",
@@ -27,6 +28,7 @@
     {
       "id": "fy4-12-L1-04",
       "level": 1,
+      "core": true,
       "text": "Kuvaajassa on kahden kärryn paikat ajan funktiona. Lue kuvaajasta, milloin kärryt kohtaavat.",
       "figure": "fy4-12/kaksi-karrya",
       "answer": 5.0,
@@ -44,6 +46,7 @@
     {
       "id": "fy4-12-L1-06",
       "level": 1,
+      "core": true,
       "text": "Kahden auton nopeuksia kuvaavat $(t,v)$-kuvaajat on piirretty samaan koordinaatistoon. Autot ajavat samaa suoraa tietä samaan suuntaan, ja kuvaajat leikkaavat hetkellä $t = 4{,}0\\,\\text{s}$. Mitä leikkauspiste kertoo?",
       "kind": [
         "concept"
@@ -213,6 +216,7 @@
     {
       "id": "fy4-12-L2-07",
       "level": 2,
+      "core": true,
       "text": "Kaksi kärryä lähtee samasta paikasta samaan suuntaan hetkellä $t = 0$. Taulukossa on niiden nopeudet (esimerkkiaineisto, jossa mittausvirhe on jätetty pois). Kärry A liikkuu tasaisesti ja kärry B kiihtyy tasaisesti.\n\nPiirrä $(t,v)$-kuvaajat samaan koordinaatistoon ja päättele kuvaajista, milloin kärryjen välimatka on suurimmillaan. Kuinka suuri välimatka silloin on?",
       "kind": [
         "data",

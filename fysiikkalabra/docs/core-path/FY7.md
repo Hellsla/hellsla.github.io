@@ -1,0 +1,24 @@
+# FY7: ydinpolun valinta
+
+Jokaisen luvun ydintehtävät on valittu luvun oppimistavoitteiden perusteella tason 1 ja 2 olemassa olevista harjoituksista, neljä tehtävää luvussa. Ydinpolussa on yleensä kaksi laskua, jotka vastaavat luvun laskutavoitetta, ja yksi tai kaksi muuta tehtävää: käsitetehtävä, virheen etsiminen, perustelu, kuvaajan piirtäminen tai lukeminen tai aineiston käsittely. Tason 1 käsitetehtävä aloittaa ydinpolun lähes joka luvussa, koska jokaisessa luvussa on selittämistavoite. Kokeelliset ja graafiset tehtävät on valittu niihin lukuihin, joiden tavoitteissa on määrittäminen mittaustuloksista tai kuvaajan kulmakertoimesta. Oppitunnin tehtäviin ei ole lisätty merkintöjä, koska jokaisen luvun oppitunnilla on jo kokeet ja johtopäätös ja valitut harjoitukset kattavat kuvaajat.
+
+| Luku | Ydintehtävät | Taidot | Perustelu tavoitteiden kannalta |
+|---|---|---|---|
+| fy7-1 | L1-03, L1-06, L2-01, L2-05 | lasku, sanallinen, lasku, tutkimus | Kenttien summa ja neulan kääntymiskulma lasketaan, alkeisalueilla selitetään, miksi magneetti vetää vain rautaa, ja aineistosta tutkitaan, miten kenttä heikkenee etäisyyden kasvaessa. |
+| fy7-2 | L1-01, L1-06, L2-01, L2-06 | lasku, sanallinen, lasku, sanallinen/tutkimus | Lasketaan magneettinen voima ja ympyräradan säde, selitetään, miksi liike-energia ei muutu, ja massaspektrometrin aineistosta päätellään ionien massat. |
+| fy7-3 | L1-01, L1-02, L1-06, L2-05 | lasku, lasku, sanallinen, kuvaaja/tutkimus | Lasketaan johtimen ja käämin kenttä, kentän suunta päätellään oikean käden säännöllä, ja mittauspisteisiin sovitetusta suorasta määritetään permeabiliteetti. |
+| fy7-4 | L1-01, L1-06, L2-01, L2-07 | lasku, sanallinen, lasku, kuvaaja/tutkimus | Lasketaan johtimeen ja rinnakkaisiin johtimiin kohdistuva voima, voiman suunta päätellään, ja kaiuttimen puhekelan mittauksista piirretään kuvaaja. |
+| fy7-5 | L1-02, L1-06, L2-02, L2-07 | lasku, sanallinen, lasku, sanallinen | Induktiojännite lasketaan induktiolailla ja vuon kuvaajan kulmakertoimesta, selitetään, miksi pelkkä vuo ei synnytä jännitettä, ja liikkuvan tangon virheellisestä ratkaisusta etsitään virhe. |
+| fy7-6 | L1-03, L1-07, L2-01, L2-06 | lasku, sanallinen, lasku, sanallinen | Lasketaan, kuinka paljon energiaa pyörrevirrat muuttavat sisäenergiaksi, selitetään alumiiniputken jarrutus pyörrevirroilla, ja virheellisestä vastauksesta korjataan Lenzin lain suuntapäättely. |
+| fy7-7 | L1-01, L1-06, L2-02, L2-07 | lasku, sanallinen, lasku, sanallinen | Lasketaan generaattorin huippujännite, luetaan huippuarvo ja jaksonaika jännitteen kuvaajasta, selitetään tehollisarvon merkitys, ja tehollisarvon ja tehon laskusta etsitään virhe. |
+| fy7-8 | L1-01, L1-06, L1-07, L2-01 | lasku, sanallinen, sanallinen, lasku | Lasketaan muuntajan jännite ja siirtojohdon häviöteho, selitetään, miksi muuntaja ei toimi tasavirralla, ja päätellään, miten jännitteen nosto pienentää häviöitä. |
+| fy7-9 | L1-01, L1-06, L2-01, L2-05 | lasku, sanallinen, lasku, tutkimus | Lasketaan aallonpituus ja spektrin huippu, selitetään sähkömagneettisen aallon rakenne, ja spektrometrin aineistosta päätellään lähteiden lämpötilat ja se, mikä lähde on kuumin. |
+| fy7-10 | L1-04, L1-06, L2-02, L2-05 | lasku, sanallinen, lasku, kuvaaja/tutkimus | Lasketaan taitekulma ja valon nopeus aineessa, selitetään taittuminen rajapinnassa, ja mitatuista kulmista määritetään taitekerroin kuvaajan kulmakertoimena. |
+| fy7-11 | L1-01, L1-06, L2-02, L2-06 | lasku, sanallinen, lasku, sanallinen | Lasketaan värin taitekulma ja säteen kulku prismassa, selitetään, miksi violetti taittuu eniten, ja virheellisestä päättelystä selvitetään, miksi punainen on sateenkaaren ulkoreunalla. |
+| fy7-12 | L1-01, L1-06, L2-01, L2-07 | lasku, sanallinen, lasku, sanallinen | Lasketaan rajakulma ja kuidun kuoren taitekerroin, selitetään, milloin valo kokonaisheijastuu, ja virheellisestä ratkaisusta päätellään, ettei ilmasta lasiin tuleva valo voi kokonaisheijastua. |
+| fy7-13 | L1-02, L1-06, L2-02, L2-05 | lasku, sanallinen, lasku, kuvaaja/tutkimus | Hilayhtälöllä lasketaan maksimien suunta ja paikka, selitetään raon kaventamisen vaikutus diffraktioon, ja varjostimelta mitatuista etäisyyksistä määritetään laserin aallonpituus. |
+| fy7-14 | L1-04, L1-06, L2-01, L2-07 | lasku, sanallinen, lasku, kuvaaja/sanallinen/tutkimus | Lasketaan kalvon paksuus ja heijastuksesta puuttuva aallonpituus, selitetään, millä pinnalla aalto kääntyy, ja heijastuksenestopinnoitteen toiminta tulkitaan itse piirretystä kuvaajasta. |
+| fy7-15 | – | – | Katso fy7-15:n oma muutos (polarisaation perus- ja syventävä polku). |
+| fy7-16 | L1-02, L1-06, L2-02, L2-05 | lasku, sanallinen, lasku, kuvaaja/tutkimus | Lasketaan kuidun vaimennus ja suurin yhteyspituus, selitetään, miksi induktioliesi lämmittää kattilaa mutta ei lasia, ja kuvaajasta arvioidaan, miksi langaton lataus heikkenee etäisyyden kasvaessa. |
+
+Oppitunnin tehtäviä ei ole merkitty ydintehtäviksi missään luvussa.

@@ -3,6 +3,7 @@
     {
       "id": "fy7-2-L1-01",
       "level": 1,
+      "core": true,
       "text": "Tyhjiöputkessa kulkee protonisuihku. Protonien vauhti on $3{,}0 \\cdot 10^{5}\\,\\text{m/s}$. Putken ympärillä olevat kelat tuottavat magneettikentän, jonka magneettivuon tiheys on $0{,}25\\,\\text{T}$. Kenttä on kohtisuorassa protonien nopeutta vastaan. Protonin varaus on $1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Kuinka suuri magneettinen voima vaikuttaa yhteen protoniin? Anna vastaus muodossa $\\ldots \\cdot 10^{-14}\\,\\text{N}$.",
       "answer": 1.2,
       "unit": "10⁻¹⁴ N",
@@ -43,6 +44,7 @@
     {
       "id": "fy7-2-L1-06",
       "level": 1,
+      "core": true,
       "text": "Protoni lentää tyhjiössä kohtisuoraan tasaista magneettikenttää vastaan. Mitä protonin liike-energialle tapahtuu, kun se kulkee kentässä? (Liike-energia on liikkeessä olevan kappaleen energia.)",
       "kind": [
         "concept"
@@ -91,6 +93,7 @@
     {
       "id": "fy7-2-L2-01",
       "level": 2,
+      "core": true,
       "text": "Protoni kiihdytetään levosta jännitteellä $500\\,\\text{V}$. Protonin massa on $1{,}673 \\cdot 10^{-27}\\,\\text{kg}$ ja varaus $1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Sen jälkeen protoni lentää kohtisuoraan magneettikenttään, jonka magneettivuon tiheys on $0{,}050\\,\\text{T}$. Kuinka suuri on protonin ympyräradan säde? Anna vastaus senttimetreinä.",
       "answer": 6.5,
       "unit": "cm",
@@ -160,6 +163,7 @@
     {
       "id": "fy7-2-L2-06",
       "level": 2,
+      "core": true,
       "text": "Massaspektrometrin ilmaisimelle osuu ioneja kolmeen kohtaan A, B ja C (esimerkkiaineisto). Ionit ovat magnesiumin ioneja. Kaikilla ioneilla on sama varaus $e$. Ne ovat kulkeneet nopeusvalitsimen läpi samalla vauhdilla. Ne kulkevat samassa magneettikentässä puoliympyrän. Siksi osumakohdan etäisyys raosta on radan halkaisija $d = 2r$. Kohdan A ionin massa tunnetaan: $24{,}0\\,\\text{u}$. Taulukossa on osumakohtien etäisyys raosta ja ilmaisimeen kertynyt osumien lukumäärä $N$. Osumien lukumäärä on verrannollinen siihen, kuinka suuri osuus isotoopilla on ionilähteessä.\n\na) Päättele osumakohtien B ja C ionien massat atomimassayksikköinä.\n\nb) Laske, kuinka monta prosenttia ioneista osui kohtaan A.\n\nAnna vastauskenttään kohdan b) tulos prosentteina.",
       "kind": [
         "data",

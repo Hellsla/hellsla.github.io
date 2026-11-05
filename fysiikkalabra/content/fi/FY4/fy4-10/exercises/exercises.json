@@ -11,6 +11,7 @@
   {
    "id": "fy4-10-L1-02",
    "level": 1,
+   "core": true,
    "text": "Ilmatyynyradalla $0{,}50\\,\\text{kg}$:n vaunu liikkuu nopeudella $0{,}80\\,\\text{m/s}$ ja törmää levossa olevaan $0{,}30\\,\\text{kg}$:n vaunuun. Vaunut jäävät kiinni toisiinsa. Kitka jätetään huomiotta. Millä nopeudella vaunut jatkavat yhdessä?",
    "answer": 0.5,
    "unit": "m/s",
@@ -43,6 +44,7 @@
   {
    "id": "fy4-10-L1-06",
    "level": 1,
+   "core": true,
    "text": "Kaksi ilmatyynyradan vaunua törmää ja jää kiinni toisiinsa. Ulkoiset voimat ovat törmäyksen aikana merkityksettömiä. Mikä väite tästä täysin kimmottomasta törmäyksestä on oikein?",
    "kind": [
     "concept"
@@ -97,6 +99,7 @@
   {
    "id": "fy4-10-L2-01",
    "level": 2,
+   "core": true,
    "text": "Ilmakivääristä ammutaan $0{,}50\\,\\text{g}$:n luoti nopeudella $180\\,\\text{m/s}$. Kiväärin massa on $3{,}2\\,\\text{kg}$, ja se on ennen laukausta levossa ampujan kevyesti tukemana. Ampujan tuki jätetään huomiotta laukauksen lyhyen ajan. Millä nopeudella kivääri lähtee liikkumaan taaksepäin?",
    "answer": 0.028125,
    "unit": "m/s",
@@ -129,6 +132,7 @@
   {
    "id": "fy4-10-L2-05",
    "level": 2,
+   "core": true,
    "text": "Ilmatyynyradalla vaunu A ($m_\\text{A} = 0{,}50\\,\\text{kg}$) liikkuu oikealle ja törmää levossa olevaan vaunuun B ($m_\\text{B} = 0{,}30\\,\\text{kg}$). Törmäys toteutettiin kolmella eri tavalla, ja nopeudet mitattiin videoanalyysillä. Oikealle on positiivinen suunta, kitka jätetään huomiotta ja aineisto on esimerkkiaineisto.\n\na) Laske kokonaisliikemäärä ennen ja jälkeen jokaisessa kokeessa. Säilyykö liikemäärä mittaustarkkuuden rajoissa?\n\nb) Laske kokeiden 1 ja 2 liike-energia ennen ja jälkeen ja luokittele törmäykset kimmoisiksi, täysin kimmottomiksi tai osittain kimmoisiksi.\n\nc) Laske kokeessa 3 jäljellä oleva osuus alkuperäisestä liike-energiasta ja luokittele törmäys.\n\nVastauslaatikkoon tulee osan c) osuus prosentteina.",
    "kind": [
     "data",

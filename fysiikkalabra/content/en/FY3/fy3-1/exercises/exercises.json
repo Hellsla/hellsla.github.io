@@ -3,6 +3,7 @@
     {
       "id": "fy3-1-L1-01",
       "level": 1,
+      "core": true,
       "text": "The mass of an object is $4.0\\,\\text{kg}$. What is its weight on Earth?",
       "answer": 39,
       "unit": "N",
@@ -44,6 +45,7 @@
     {
       "id": "fy3-1-L1-06",
       "level": 1,
+      "core": true,
       "text": "An astronaut travels from the Earth to the Moon. Which statement about his mass and weight is correct?",
       "kind": [
         "concept"
@@ -130,6 +132,7 @@
     {
       "id": "fy3-1-L2-03",
       "level": 2,
+      "core": true,
       "text": "The mass of an astronaut with equipment is $145\\,\\text{kg}$. By how much is his weight on the Moon ($g = 1.62\\,\\text{m/s}^2$) smaller than on Earth ($g = 9.81\\,\\text{m/s}^2$)?",
       "answer": 1190,
       "unit": "N",
@@ -146,6 +149,7 @@
     {
       "id": "fy3-1-L2-05",
       "level": 2,
+      "core": true,
       "kind": [
         "data",
         "experiment"

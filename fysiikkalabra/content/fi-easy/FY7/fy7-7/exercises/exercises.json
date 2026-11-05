@@ -3,6 +3,7 @@
     {
       "id": "fy7-7-L1-01",
       "level": 1,
+      "core": true,
       "text": "Koulun generaattorimallin käämissä on $300$ kierrosta, ja sen pinta-ala on $0{,}0030\\,\\text{m}^2$. Käämi pyörii homogeenisessa magneettikentässä $0{,}15\\,\\text{T}$. Pyörimistaajuus on $10\\,\\text{Hz}$. Kuinka suuri on käämiin syntyvän jännitteen huippuarvo?",
       "answer": 8.4823,
       "unit": "V",
@@ -43,6 +44,7 @@
     {
       "id": "fy7-7-L1-06",
       "level": 1,
+      "core": true,
       "text": "Kodin pistorasian jännitteestä sanotaan, että se on $230\\,\\text{V}$. Mikä väite tästä jännitteestä on oikein?",
       "kind": [
         "concept"
@@ -99,6 +101,7 @@
     {
       "id": "fy7-7-L2-02",
       "level": 2,
+      "core": true,
       "text": "Kuvaajassa on pienen generaattorin jännite ajan funktiona. Generaattorin käämissä on $200$ kierrosta, ja sen pinta-ala on $30\\,\\text{cm}^2$. Käämi pyörii homogeenisessa magneettikentässä. Lue kuvaajasta jännitteen huippuarvo ja jaksonaika. Kuinka suuri on magneettivuon tiheys?",
       "figure": "fy7-7/trace",
       "answer": 0.127324,
@@ -229,6 +232,7 @@
     {
       "id": "fy7-7-L2-07",
       "level": 2,
+      "core": true,
       "text": "Oppilas ratkaisi tehtävän seuraavasti: ”Hehkulampun teho on $60\\,\\text{W}$, ja se on kytketty verkkojännitteeseen $230\\,\\text{V}$. Jännite on huippuarvo, joten tehollinen arvo on $230\\,\\text{V} : \\sqrt{2} = 163\\,\\text{V}$. Virta on $I = P : U = 60\\,\\text{W} : 163\\,\\text{V} = 0{,}37\\,\\text{A}$.”\n\na) Etsi oppilaan ratkaisun virhe ja perustele, miksi se on virhe.\n\nb) Laske lampun virran tehollinen arvo oikein.\n\nVastauskenttään kirjataan b-kohdan tulos.",
       "kind": [
         "error"

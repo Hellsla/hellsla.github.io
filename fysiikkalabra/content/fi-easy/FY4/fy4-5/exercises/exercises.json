@@ -3,6 +3,7 @@
     {
       "id": "fy4-5-L1-01",
       "level": 1,
+      "core": true,
       "text": "Lampun massa on $1{,}5\\,\\text{kg}$. Lamppu roikkuu paikallaan pystysuoran johdon varassa. Piirrä lampun voimakuvio. Laske johdon jännitysvoima.",
       "answer": 14.7,
       "unit": "N",
@@ -39,6 +40,7 @@
     {
       "id": "fy4-5-L1-05",
       "level": 1,
+      "core": true,
       "text": "Laatikkoa vedetään köydellä. Köyden jännitysvoima on $250\\,\\text{N}$, ja köysi on $40^\\circ$:n kulmassa vaakatasoon nähden. Piirrä köyden voima ja katkoviivoin sen komponentit. Kuinka suuri on jännitysvoiman vaakakomponentti?",
       "answer": 190,
       "unit": "N",
@@ -47,6 +49,7 @@
     {
       "id": "fy4-5-L1-06",
       "level": 1,
+      "core": true,
       "text": "Laatikko liukuu oikealle vaakasuoralla lattialla. Lattian kitka hidastaa laatikkoa. Ilmanvastusta ei oteta huomioon. Mitkä voimat piirretään laatikon voimakuvioon?",
       "kind": [
         "concept"
@@ -123,6 +126,7 @@
     {
       "id": "fy4-5-L2-01",
       "level": 2,
+      "core": true,
       "text": "Pulkan massa on $15\\,\\text{kg}$. Sitä vedetään vaakasuoralla lumella narulla, joka on $30^\\circ$:n kulmassa vaakatasoon nähden. Narun jännitysvoima on $60\\,\\text{N}$, ja pulkka liikkuu tasaisella nopeudella. Piirrä pulkan voimakuvio vihkoon ennen kuin avaat ratkaisun. Kuinka suuri on lumen kitkavoima?",
       "answer": 52,
       "unit": "N",

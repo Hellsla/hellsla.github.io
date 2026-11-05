@@ -3,6 +3,7 @@
     {
       "id": "fy1-1-L1-01",
       "level": 1,
+      "core": true,
       "text": "The diameter of a red blood cell is $7.5\\cdot10^{-6}\\,\\text{m}$. How many micrometres is that? One micrometre is $1\\,\\mu\\text{m} = 10^{-6}\\,\\text{m}$.",
       "answer": 7.5,
       "unit": "µm",
@@ -11,6 +12,7 @@
     {
       "id": "fy1-1-L1-02",
       "level": 1,
+      "core": true,
       "text": "The figure shows an axis of powers of ten for the size $d$, with a hydrogen atom and an ant marked on it. How many orders of magnitude are there between their sizes?",
       "figure": "fy1-1/scale-marks",
       "answer": 8,
@@ -98,6 +100,7 @@
     {
       "id": "fy1-1-L2-01",
       "level": 2,
+      "core": true,
       "text": "The diameter of the Milky Way is about $1.0\\cdot10^{5}$ light-years, and one light-year is $9.46\\cdot10^{15}\\,\\text{m}$. The diameter of the observable universe is about $8.8\\cdot10^{26}\\,\\text{m}$. How many Milky Way diameters would fit in a row across the diameter of the observable universe? Give the answer in thousands.",
       "answer": 930.2,
       "unit": "thousand",
@@ -183,6 +186,7 @@
     {
       "id": "fy1-1-L2-06",
       "level": 2,
+      "core": true,
       "text": "The table gives the diameter $d = a\\cdot10^{n}\\,\\text{m}$ of four objects in powers-of-ten form. Determine the order of magnitude of each object and calculate how many orders of magnitude there are between a human and the Milky Way. Justify why the order of magnitude of the Milky Way is not $10^{20}$ although its exponent is $20$.",
       "kind": [
         "data",

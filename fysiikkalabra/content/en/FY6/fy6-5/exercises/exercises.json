@@ -3,6 +3,7 @@
     {
       "id": "fy6-5-L1-01",
       "level": 1,
+      "core": true,
       "text": "The wiring of a bicycle's lights has a junction. Two wires arrive at it, with currents $2.4\\,\\text{A}$ and $0.6\\,\\text{A}$. Two wires leave the junction, and the current in one of them is $1.8\\,\\text{A}$. How large is the current in the other wire leaving?",
       "answer": 1.2,
       "unit": "A",
@@ -11,6 +12,7 @@
     {
       "id": "fy6-5-L1-02",
       "level": 1,
+      "core": true,
       "text": "Two resistors connected in series are attached to a voltage source whose voltage is $12.0\\,\\text{V}$. The voltage of the first resistor is $4.5\\,\\text{V}$. How large is the voltage of the second resistor?",
       "answer": 7.5,
       "unit": "V",
@@ -44,6 +46,7 @@
     {
       "id": "fy6-5-L1-06",
       "level": 1,
+      "core": true,
       "text": "The sum of the currents arriving at a junction is equal to the sum of the currents leaving it. Which of the following explains this correctly?",
       "kind": [
         "concept"
@@ -184,6 +187,7 @@
     {
       "id": "fy6-5-L2-06",
       "level": 2,
+      "core": true,
       "text": "Sample data: a series circuit has a voltage source and three resistors. The point $A$ is the positive terminal of the source, and the current flows from there through the resistor $R_1$ to the point $B$, through a wire to the point $C$, through the resistor $R_2$ to the point $D$ and through the resistor $R_3$ to the negative terminal $E$ of the source.\n\nThe negative terminal is the zero point. The potentials measured with a voltmeter are in the table, and the ammeter shows $0.12\\,\\text{A}$.\n\na) Explain why the points $B$ and $C$ have the same potential.\n\nb) Calculate the resistance of the resistor $R_2$.\n\nThe answer box takes the result of part b).",
       "kind": [
         "data"

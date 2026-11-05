@@ -19,6 +19,7 @@
     {
       "id": "fy6-11-L1-03",
       "level": 1,
+      "core": true,
       "text": "The voltage between two parallel metal plates is $600\\,\\text{V}$, and the distance of the plates is $0.040\\,\\text{m}$. How large is the electric field strength between the plates?",
       "answer": 15000.0,
       "unit": "V/m",
@@ -74,6 +75,7 @@
     {
       "id": "fy6-11-L1-07",
       "level": 1,
+      "core": true,
       "text": "There is a uniform electric field pointing to the right between two vertical plates. A negatively charged dust particle comes between the plates. In which direction does the electric force on the particle point?",
       "kind": [
         "concept"
@@ -114,6 +116,7 @@
     {
       "id": "fy6-11-L2-01",
       "level": 2,
+      "core": true,
       "text": "The voltage between two parallel plates is $4.5\\,\\text{kV}$, and the distance of the plates is $9.0\\,\\text{mm}$. A small ball whose charge is $4.0\\,\\text{nC}$ is brought between the plates. How large is the electric force on the ball? Answer in millinewtons.",
       "answer": 2.0,
       "unit": "mN",
@@ -203,6 +206,7 @@
     {
       "id": "fy6-11-L2-07",
       "level": 2,
+      "core": true,
       "text": "A student wants to find out whether the field between the plates is uniform.\n\nThe distance of the wide plates is $2.0\\,\\text{cm}$, the voltage is $600\\,\\text{V}$, and the edges of the plates are $10\\,\\text{cm}$ from the centre.\n\nA test charge $q = 2.0\\,\\text{nC}$ is taken to the midpoint between the plates, and the force $F$ on it is measured along a line parallel to the plates at different distances $x$ from the centre. The measurements in the table are example data.\n\na) Calculate the electric field strength $E = F : q$ at each measurement point.\n\nb) The field is considered uniform at the points where $E$ differs from the value at the centre by less than $3\\,\\%$. Which points are these, and how does the field behave elsewhere? Calculate the deviations.\n\nc) Calculate first the sum of the forces at the uniform points and then the mean of their electric field strengths. Compare the result with the value $U : d$.\n\nGive the mean from part c) in the unit $\\text{V/m}$ in the answer box.",
       "kind": [
         "data",

@@ -1,0 +1,18 @@
+# FY2: ydinpolun valinta
+
+Jokaisen luvun ydinharjoituksiksi on valittu neljä tason 1 ja 2 tehtävää luvun oppimistavoitteiden perusteella. Yleensä mukana on kaksi laskua luvun keskeisestä kaavasta sekä kaksi muuta tehtävää: käsitetehtävä, sanallinen perustelu, virheen etsiminen, kuvaaja tai aineiston käsittely. FY2:n tavoitteissa on lähes joka luvussa jokin selitettävä tai perusteltava asia, kuten energian säilyminen, korkea siirtojännite tai voimaloiden luokittelu, joten jokaisessa luvussa on vähintään yksi sanallinen ydintehtävä. Kuvaajia FY2:n tavoitteet eivät juuri vaadi, joten kuvaaja on ydinpolulla vain tehoa käsittelevässä luvussa. Kaikki tehtävät ovat valmiita tehtäviä, eikä niiden sisältöä ole muutettu. Mikään luku ei jää pelkkien laskujen varaan.
+
+| Luku | Ydintehtävät | Taidot | Perustelu tavoitteiden kannalta |
+|---|---|---|---|
+| fy2-1 | L1-01, L1-08, L2-01, L2-06 | lasku, sanallinen, lasku, sanallinen | Tuntematon energia lasketaan säilymislaista, laturitehtävässä nimetään energialajit ketjuna ja perustellaan lämpeneminen, ja ikiliikkujan virheen etsiminen näyttää, että energia muuttuu eikä häviä. |
+| fy2-2 | L1-01, L1-06, L2-03, L2-06 | lasku, sanallinen, lasku, sanallinen | Energia ilmoitetaan jouleina ja etuliitteillä, käsitetehtävässä verrataan eri yksiköissä annettuja energioita, lamppulasku seuraa energiaketjun loppuun, jossa kaikki on lämpöä, ja virheen etsiminen korjaa eri etuliitteiden yhteenlaskun. |
+| fy2-3 | L1-01, L2-01, L2-05, L2-07 | lasku, lasku, sanallinen/tutkimus, kuvaaja/tutkimus | Teho lasketaan kaavalla $P = E : t$ ja sähkön hinta kilowattitunneista, laitetaulukosta perustellaan, miksi suurin kulutus ei tule suurimman tehon laitteesta, ja mittarin lukemista piirretään kuvaaja, jonka kulmakertoimesta saadaan teho. |
+| fy2-4 | L1-01, L1-06, L2-01, L2-06 | lasku, sanallinen, lasku, tutkimus | Hyötysuhde lasketaan energioista ja tehoista, käsitetehtävä perustelee, miksi yli $100\,\%$:n hyötysuhde on mahdoton, ja moottorin mittausaineistosta määritetään hyötysuhde. Energiavirtakuvion lukemista ei ole tasoilla 1–2, vaan vain tason 3 tehtävässä L3-03. |
+| fy2-5 | L1-01, L1-06, L2-03, L2-05 | lasku, sanallinen, lasku, sanallinen/tutkimus | Energia lasketaan lämpöarvosta ja massasta, käsitetehtävä selittää lämpöarvon merkityksen, pellettilasku erottaa vapautuneen energian hyötyenergiasta hyötysuhteen avulla, ja polttopuuaineistosta verrataan kostean ja kuivan puun energiaa (ruoan energiasisältö käsitellään oppitunnin tehtävässä *ruoka*). |
+| fy2-6 | L1-01, L1-07, L2-01, L2-06 | lasku, sanallinen, lasku, sanallinen/tutkimus | Viikko- ja vuosienergia lasketaan kaavalla $E = P \cdot t$, käsitetehtävä selittää säätövoiman, ja tuulipuistojen aineistosta korjataan väite, joka sekoittaa tuotetun energian ja nimellistehon käytön. |
+| fy2-7 | L1-01, L1-06, L2-01, L2-07 | lasku, sanallinen, lasku, sanallinen | Perille tuleva ja häviävä energia lasketaan häviöprosentista, käsitetehtävä perustelee korkean siirtojännitteen, ja virheen etsiminen selittää, että siirrossa osa sähköenergiasta muuttuu johtimissa lämmöksi. |
+| fy2-8 | L1-01, L1-06, L2-02, L2-05 | lasku, sanallinen, lasku, tutkimus | Päästö lasketaan päästökertoimesta ja energiasta ja tuotantotapoja verrataan, käsitetehtävä kuvaa kasvihuoneilmiön, ja Mauna Loan mittauksista mallinnetaan hiilidioksidipitoisuuden kasvu. |
+
+## Merkityt oppitunnin tehtävät
+
+- fy2-8 *perustele* (explain, Perustele: miten kaupunki tuottaa sähkönsä?): opiskelija valitsee kaupungin sähköntuotantotavan ja perustelee valinnan useilla vertailuperusteilla. Tavoitetta perustella valinta usean perusteen avulla ei kata yksikään ydinharjoitus, joten tämä oppitunnin tehtävä merkitään ydintehtäväksi.

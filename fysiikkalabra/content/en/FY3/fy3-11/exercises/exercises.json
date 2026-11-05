@@ -27,6 +27,7 @@
     {
       "id": "fy3-11-L1-04",
       "level": 1,
+      "core": true,
       "text": "The gas in the cylinder of a small gas engine is heated, and the gas pushes a piston forward. The graph shows the pressure $p$ of the gas as a function of the volume $V$ during the expansion. How much work does the gas do as it expands? Read the values you need from the graph. Give the answer in joules.",
       "figure": "fy3-11/pv-isobaari",
       "answer": 750,
@@ -44,6 +45,7 @@
     {
       "id": "fy3-11-L1-06",
       "level": 1,
+      "core": true,
       "text": "A gas expands in a cylinder at constant pressure, and in the $(V, p)$ coordinate system the expansion appears as a horizontal line segment. Which of the following correctly tells how the work done by the gas can be seen in the coordinate system?",
       "kind": [
         "concept"
@@ -117,6 +119,7 @@
     {
       "id": "fy3-11-L2-01",
       "level": 2,
+      "core": true,
       "text": "A condensing power plant that burns wood chips and peat produces $3\\,830\\,\\text{MWh}$ of electricity in a day. In the same time the energy of the fuel burnt in the boiler is $33.6\\,\\text{TJ}$ ($1\\,\\text{TJ} = 10^{12}\\,\\text{J}$). What is the efficiency of the plant? Give the answer as a percentage.",
       "answer": 41.0,
       "unit": "%",
@@ -185,6 +188,7 @@
     {
       "id": "fy3-11-L2-06",
       "level": 2,
+      "core": true,
       "text": "A student claims: “When the friction and other losses of a heat engine are removed, the engine can turn all the heat it receives into work, because energy is conserved.” What is wrong in the claim?",
       "kind": [
         "error",

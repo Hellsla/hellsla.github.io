@@ -19,6 +19,7 @@
     {
       "id": "fy6-9-L1-03",
       "level": 1,
+      "core": true,
       "text": "Sähköpyörän akun nimellisjännite on $36\\,\\text{V}$ ja kapasiteetti $13\\,\\text{Ah}$. Kuinka paljon energiaa täyteen ladattuun akkuun on varastoitunut? Vastaa wattitunteina.",
       "answer": 468,
       "unit": "Wh",
@@ -44,6 +45,7 @@
     {
       "id": "fy6-9-L1-06",
       "level": 1,
+      "core": true,
       "text": "Kaksi akkua on ladattu täyteen. Toisen kapasiteetti on suurempi ampeeritunteina. Sen energia voi silti olla pienempi. Miksi akkujen energioita ei voi vertailla pelkkien ampeerituntien perusteella?",
       "kind": [
         "concept"
@@ -114,6 +116,7 @@
     {
       "id": "fy6-9-L2-01",
       "level": 2,
+      "core": true,
       "text": "Moottoripyörän akun lähdejännite on $12{,}4\\,\\text{V}$ ja sisäinen resistanssi $40\\,\\text{m}\\Omega$. Akkua ladataan laturilla, jonka jännite on $14{,}4\\,\\text{V}$. Laturin ja johtojen resistanssi on $0{,}36\\,\\Omega$. Kuinka suuri on latausvirta?",
       "answer": 5.0,
       "unit": "A",
@@ -190,6 +193,7 @@
     {
       "id": "fy6-9-L2-06",
       "level": 2,
+      "core": true,
       "kind": [
         "error"
       ],

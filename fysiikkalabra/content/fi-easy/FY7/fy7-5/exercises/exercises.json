@@ -11,6 +11,7 @@
     {
       "id": "fy7-5-L1-02",
       "level": 1,
+      "core": true,
       "text": "Käämissä on $400$ kierrosta. Magneetti työnnetään käämiin. Yhden kierroksen läpi kulkeva magneettivuo kasvaa tasaisesti $1{,}5\\,\\text{mWb}$ ajassa $0{,}20\\,\\text{s}$. Kuinka suuri induktiojännite käämiin syntyy?",
       "answer": 3.0,
       "unit": "V",
@@ -43,6 +44,7 @@
     {
       "id": "fy7-5-L1-06",
       "level": 1,
+      "core": true,
       "kind": [
         "concept"
       ],
@@ -99,6 +101,7 @@
     {
       "id": "fy7-5-L2-02",
       "level": 2,
+      "core": true,
       "text": "Käämissä on $50$ kierrosta. Kuvaajassa on yhden kierroksen läpi kulkeva magneettivuo $\\Phi$ ajan $t$ funktiona. Kuinka suuri on käämin induktiojännitteen suurin itseisarvo aikavälillä $0$–$0{,}70\\,\\text{s}$? Lue tarvittavat arvot kuvaajasta.",
       "figure": "fy7-5/flux-task",
       "answer": 2.0,
@@ -218,6 +221,7 @@
     {
       "id": "fy7-5-L2-07",
       "level": 2,
+      "core": true,
       "kind": [
         "error",
         "concept"

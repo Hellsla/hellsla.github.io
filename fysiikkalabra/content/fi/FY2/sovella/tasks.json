@@ -1,5 +1,5 @@
 {
-  "intro": "Yksi laaja tehtävä kokoaa moduulin energian, tehon ja energiantuotannon ympäristövaikutusten taidot. Päätät itse, mitä aineiston tietoja ja mitä malleja tarvitset, ja kirjoitat lopuksi perustellun suosituksen. Oikeaa tuotantotapaa ei ole valmiiksi päätetty: pisteet tulevat perusteluista.",
+  "intro": "Kaksi laajaa tehtävää kokoaa moduulin energian, tehon ja energiantuotannon ympäristövaikutusten taidot. Ensimmäisessä päätät itse, mitä aineiston tietoja ja mitä malleja tarvitset, ja kirjoitat perustellun suosituksen. Toisessa hankit itse kaksi julkaisua samasta energiantuotannon kysymyksestä ja arvioit, voiko niiden lukuja verrata. Kummassakaan oikeaa vastausta ei ole valmiiksi päätetty: pisteet tulevat perusteluista.",
   "tasks": [
     {
       "id": "fy2-s1",
@@ -161,6 +161,127 @@
         "graph": "fy2-6",
         "communication": "fy2-8"
       }
+    },
+    {
+      "id": "fy2-s2",
+      "title": "Kaksi lähdettä samasta energiakysymyksestä",
+      "text": "Energiantuotannosta julkaistaan paljon lukuja, ja kaksi julkaisua voi antaa samaan kysymykseen hyvin erilaisen vastauksen. Ero ei aina tarkoita, että toinen olisi väärässä: julkaisut voivat laskea eri asiaa, eri vuodelta tai eri rajauksella. Tässä tehtävässä selvität, mistä kahden julkaisun ero johtuu.\n\n**Valitse kysymys.** Valitse yksi energiantuotannon kysymys, johon vastataan luvulla. Esimerkiksi:\n\n- Kuinka suuret ovat jonkin tuotantotavan, esimerkiksi tuulivoiman, ydinvoiman, maakaasun tai turpeen, hiilidioksidipäästöt tuotettua energiaa kohti?\n- Kuinka suuri osa Suomen sähköstä tai kaikesta energiasta tuotetaan uusiutuvilla energialähteillä?\n- Kuinka suuri on jonkin tuotantotavan käyttöaste tai vuosituotanto Suomessa?\n\nVoit valita myös oman kysymyksen, kunhan siihen vastataan luvulla ja siitä löytyy kaksi julkaisua.\n\n**Hanki kaksi julkaisua.** Etsi itse kaksi julkaisua, jotka vastaavat samaan kysymykseen ja joilla on eri julkaisija. Julkaisijat voivat olla esimerkiksi tilastoviranomainen, tutkimuslaitos, kansainvälinen järjestö, ministeriö, energia-alan yritys tai sen etujärjestö, ympäristöjärjestö tai tiedotusväline. Kirjaa kummastakin lähdemerkintä: tekijä tai julkaisija, otsikko, julkaisuvuosi, verkko-osoite ja päivä, jolloin luit julkaisun.\n\n**Vastauspohja.** Täytä taulukko kummastakin lähteestä ja kirjoita sen jälkeen kohtien a)–d) vastaukset.\n\n| Arvioitava asia | Lähde 1 | Lähde 2 |\n|---|---|---|\n| Lähdemerkintä | | |\n| Tekijä, julkaisija ja tarkoitus | | |\n| Julkaisuaika ja aineiston ajanjakso | | |\n| Luku, suure ja yksikkö | | |\n| Tarkasteluraja | | |\n| Oletukset ja epävarmuudet | | |",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 3,
+          "text": "Esitä kysymyksesi ja kummankin lähteen lähdemerkintä. Kerro kummastakin lähteestä, kuka sen on tehnyt ja julkaissut ja mihin tarkoitukseen. Arvioi, miten tarkoitus voi näkyä siinä, mitä lukuja julkaisu esittää ja miten se ne esittää.",
+          "criteria": [
+            {
+              "text": "Molemmista lähteistä on lähdemerkintä, josta julkaisun voi löytää: tekijä tai julkaisija, otsikko, julkaisuvuosi, verkko-osoite ja lukupäivä.",
+              "tag": "communication",
+              "points": 1
+            },
+            {
+              "text": "Lähteillä on eri julkaisija, ja ne vastaavat samaan kysymykseen, johon vastataan luvulla.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "text": "Kummankin lähteen tarkoitus on nimetty (esimerkiksi tilasto, tutkimus, tiedote, mainos tai kannanotto), ja sen mahdollinen vaikutus lukujen valintaan tai esitystapaan on arvioitu. Lähdettä ei hylätä pelkän julkaisijan perusteella.",
+              "tag": "communication",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 3,
+          "text": "Vertaa lähteiden julkaisuaikaa ja sitä, miltä ajanjaksolta niiden aineisto on. Kirjoita kummankin lähteen luku suureineen ja yksiköineen. Jos yksiköt ovat erilaiset, muunna luvut samaan yksikköön.",
+          "criteria": [
+            {
+              "text": "Kummankin lähteen julkaisuaika ja aineiston ajanjakso on kerrottu, ja niiden ero on otettu huomioon. Jos ajanjaksoa ei kerrota, se todetaan.",
+              "tag": "communication",
+              "points": 1
+            },
+            {
+              "text": "Kummankin lähteen luku on kirjoitettu oikein suureineen ja yksiköineen.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "text": "Luvut on muunnettu samaan yksikköön oikein, tai on perusteltu, että yksiköt ovat jo samat tai että lukuja ei voi muuntaa toisikseen.",
+              "tag": "math",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 4,
+          "text": "Selvitä kummankin lähteen tarkasteluraja. Koskeeko luku sähköä vai kaikkea energiaa? Koskevatko päästöt vain käytön aikaa vai koko elinkaarta? Mitä muita oletuksia luvussa on, ja kuinka epävarma se on?",
+          "criteria": [
+            {
+              "text": "Kummastakin lähteestä on kerrottu, koskeeko luku sähköä vai kokonaisenergiaa, tai että lähde ei sitä kerro.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Päästölukujen kohdalla on kerrottu, ovatko ne käytönaikaisia vai elinkaaren päästöjä. Muissa kysymyksissä on kerrottu vastaava rajaus, esimerkiksi mitkä tuotantotavat lasketaan uusiutuviksi tai koskeeko luku nimellistehoa vai tuotettua energiaa.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Esimerkiksi tarkasteltu maa tai alue, laitostyyppi, sähkön ja lämmön yhteistuotannon jakotapa tai ajanjakson sääolot, ja oletuksen vaikutus lukuun on kerrottu."
+            },
+            {
+              "text": "Luvun epävarmuus on arvioitu: lähteen ilmoittama vaihteluväli, pyöristys tai se, että lähde ei kerro epävarmuutta.",
+              "tag": "experiment",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 4,
+          "text": "Arvioi, ovatko lähteiden luvut vertailukelpoisia. Kirjoita perusteltu johtopäätös: mitä lähteiden perusteella voi sanoa vastaukseksi kysymykseesi, ja mistä mahdollinen ero johtuu? Johtopäätös voi olla myös se, että lukuja ei voi verrata.",
+          "criteria": [
+            {
+              "text": "Vertailukelpoisuus on arvioitu kohta kohdalta: ajanjakso, suure ja yksikkö, tarkasteluraja ja oletukset.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "text": "Lukujen ero on selitetty a)–c)-kohtien havainnoilla, tai on perusteltu, miksi ero jää selittämättä.",
+              "tag": "communication",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Johtopäätös vastaa valittuun kysymykseen tai perustelee, miksi lähteet eivät riitä vastaukseen. Perusteltu toteamus, että luvut eivät ole vertailukelpoisia, on hyväksyttävä johtopäätös."
+            },
+            {
+              "text": "Johtopäätös erottaa lähteen esittämän luvun ja oman tulkinnan, eikä se väitä enempää kuin lähteet tukevat.",
+              "tag": "communication",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "communication": "fy2-8",
+        "transfer": "fy2-8",
+        "math": "fy2-2",
+        "concept": "fy2-6",
+        "experiment": "fy1-3"
+      },
+      "skills": [
+        "fy2-6",
+        "fy2-8",
+        "fy1-3"
+      ]
     }
   ]
 }

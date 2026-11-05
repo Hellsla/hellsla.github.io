@@ -11,6 +11,7 @@
     {
       "id": "fy6-10-L1-02",
       "level": 1,
+      "core": true,
       "text": "Kahden pienen pallon varaukset ovat $+15\\,\\text{nC}$ ja $+25\\,\\text{nC}$, ja pallojen keskipisteiden etäisyys on $4{,}0\\,\\text{cm}$. Kuinka suuri on pallojen välinen sähköinen voima? Vastaa millinewtoneina.",
       "answer": 2.107,
       "unit": "mN",
@@ -27,6 +28,7 @@
     {
       "id": "fy6-10-L1-04",
       "level": 1,
+      "core": true,
       "text": "Kahden samanlaisen metallipallon varaukset ovat $+12\\,\\text{nC}$ ja $-4{,}0\\,\\text{nC}$. Pallot kosketetaan toisiinsa ja erotetaan. Kuinka suuri on kummankin pallon varaus kosketuksen jälkeen? Vastaa nanocoulombeina.",
       "answer": 4.0,
       "unit": "nC",
@@ -43,6 +45,7 @@
     {
       "id": "fy6-10-L1-06",
       "level": 1,
+      "core": true,
       "text": "Neutraali muovisauva ja neutraali villakangas hierotaan toisiaan vasten. Sauva varautuu negatiiviseksi. Mikä väite kappaleiden varauksista hieromisen jälkeen on oikein?",
       "kind": [
         "concept"
@@ -145,6 +148,7 @@
     {
       "id": "fy6-10-L2-05",
       "level": 2,
+      "core": true,
       "text": "Torsiovaaka on laite, jolla mitataan hyvin pieniä voimia. Sillä mitataan voimaa $F$ kahden pienen pallon välillä. Pallojen varaukset ovat yhtä suuret. Voima mitataan keskipisteiden etäisyyden $r$ funktiona. Mittaustulokset ovat taulukossa (esimerkkiaineisto).\n\na) Laske jokaiselle etäisyydelle $1 : r^2$. Piirrä pisteet $(1 : r^2,\\, F)$ koordinaatistoon. Perustele kuvaajasta, että voima on kääntäen verrannollinen etäisyyden neliöön.\n\nb) Sovita pisteisiin suora, joka kulkee origon kautta. Määritä suoran kulmakertoimesta kummankin pallon varaus $q$. Coulombin lain vakio on $k = 8{,}988 \\cdot 10^{9}\\,\\tfrac{\\text{N} \\cdot \\text{m}^2}{\\text{C}^2}$. Vastaa nanocoulombeina.\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
       "kind": [
         "data",

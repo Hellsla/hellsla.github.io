@@ -27,6 +27,7 @@
     {
       "id": "fy6-13-L1-04",
       "level": 1,
+      "core": true,
       "text": "The area of the plates of a parallel-plate capacitor is $0.025\\,\\text{m}^2$, and there is a layer of air $1.0\\,\\text{mm}$ thick between the plates. What is the capacitance of the capacitor? Give the answer in picofarads.",
       "answer": 221.35,
       "unit": "pF",
@@ -74,6 +75,7 @@
     {
       "id": "fy6-13-L1-07",
       "level": 1,
+      "core": true,
       "text": "The source is disconnected from a charged parallel-plate capacitor with air between the plates. After that a plate of dielectric that fills the whole space is pushed between the plates. What happens to the voltage of the capacitor?",
       "kind": [
         "concept"
@@ -117,6 +119,7 @@
     {
       "id": "fy6-13-L2-01",
       "level": 2,
+      "core": true,
       "text": "Between the plates of a capacitor there is a layer of paper $0.020\\,\\text{mm}$ thick, whose dielectric strength is $16\\,\\text{MV/m}$. What is the greatest voltage that can be connected to the capacitor without a breakdown?",
       "answer": 320,
       "unit": "V",
@@ -133,6 +136,7 @@
     {
       "id": "fy6-13-L2-03",
       "level": 2,
+      "core": true,
       "text": "Energy of $200\\,\\text{J}$ is stored in the capacitor of a defibrillator before the shock, when its voltage is $2.0\\,\\text{kV}$. What is the capacitance of the capacitor? Give the answer in microfarads.",
       "answer": 100,
       "unit": "µF",
@@ -195,6 +199,7 @@
     {
       "id": "fy6-13-L2-06",
       "level": 2,
+      "core": true,
       "text": "A capacitor is charged through a resistor with a $9.0\\,\\text{V}$ battery, and its voltage is measured at intervals of one second (example data). Study the table or draw a graph of the points. During which time interval is the charging current the greatest?",
       "kind": [
         "graph",

@@ -3,6 +3,7 @@
     {
       "id": "fy3-15-L1-01",
       "level": 1,
+      "core": true,
       "text": "Vesivoimalaitoksen turbiini muuttaa veden liike-energiasta mekaaniseksi energiaksi $92{,}0\\,\\%$. Generaattori muuttaa turbiinin akselin energiasta sähköksi $98{,}0\\,\\%$. Mikä on koko laitoksen hyötysuhde? Anna vastaus prosentteina.",
       "answer": 90.2,
       "unit": "%",
@@ -44,6 +45,7 @@
     {
       "id": "fy3-15-L1-06",
       "level": 1,
+      "core": true,
       "text": "Lauhdevoimalaitos ja yhteistuotantolaitos polttavat saman määrän samaa polttoainetta. Yhteistuotantolaitoksen kokonaishyötysuhde on silti selvästi suurempi. Mikä tämän selittää?",
       "kind": [
         "concept"
@@ -98,6 +100,7 @@
     {
       "id": "fy3-15-L2-01",
       "level": 2,
+      "core": true,
       "text": "Turvetta polttavan lauhdevoimalaitoksen polttoaineteho on $300\\,\\text{MW}$. Kattilan hyötysuhde on 0,880, höyrykierron (turbiini ja lauhdutin) 0,420 ja generaattorin 0,980. Kuinka suuri on laitoksen sähköteho? Anna vastaus megawatteina.",
       "answer": 109,
       "unit": "MW",
@@ -171,6 +174,7 @@
     {
       "id": "fy3-15-L2-06",
       "level": 2,
+      "core": true,
       "text": "Taulukossa on kolmen voimalaitoksen polttoaine- tai reaktoriteho $P_0$ ja sähköteho $P_\\text{s}$ (esimerkkiaineisto). Kaikki laitokset ovat lauhdevoimalaitoksia. Loput energiasta siirtyy hukkalämpönä ympäristöön.\n\na) Laske kunkin laitoksen hyötysuhde.\n\nb) Laske kunkin laitoksen hukkalämmön teho $P_\\text{h}$.\n\nc) Onko heikoimman hyötysuhteen laitoksella myös suurin hukkalämmön teho? Perustele.\n\nKirjoita b)-kohdassa suurimman hukkalämmön teho vastauslaatikkoon megawatteina.",
       "kind": [
         "data",

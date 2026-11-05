@@ -3,6 +3,7 @@
     {
       "id": "fy3-7-L1-01",
       "level": 1,
+      "core": true,
       "text": "On a trip to the cottage, a cool bag contains $1.20\\,\\text{kg}$ of ice cubes at $0\\,{}^\\circ\\text{C}$. During the journey the ice cubes melt completely into water at $0\\,{}^\\circ\\text{C}$. What quantity of heat does the ice absorb as it melts? Give your answer in kilojoules.",
       "answer": 401,
       "unit": "kJ",
@@ -44,6 +45,7 @@
     {
       "id": "fy3-7-L1-06",
       "level": 1,
+      "core": true,
       "text": "A block of ice is heated steadily at its melting point, and the block melts. What happens to the temperature of the mixture of ice and meltwater while there is still ice left?",
       "kind": [
         "concept"
@@ -122,6 +124,7 @@
     {
       "id": "fy3-7-L2-02",
       "level": 2,
+      "core": true,
       "text": "$750\\,\\text{g}$ of ice at $-18\\,{}^\\circ\\text{C}$ is taken out of the freezer. What quantity of heat is needed to warm the ice to $0\\,{}^\\circ\\text{C}$ and melt it completely into water at $0\\,{}^\\circ\\text{C}$? The specific heat capacity of ice is $2100\\,\\text{J/(kg}\\cdot\\text{K)}$. Give your answer in kilojoules.",
       "answer": 280,
       "unit": "kJ",
@@ -146,6 +149,7 @@
     {
       "id": "fy3-7-L2-05",
       "level": 2,
+      "core": true,
       "kind": [
         "data",
         "experiment"

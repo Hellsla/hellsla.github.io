@@ -11,6 +11,7 @@
     {
       "id": "fy6-10-L1-02",
       "level": 1,
+      "core": true,
       "text": "The charges of two small spheres are $+15\\,\\text{nC}$ and $+25\\,\\text{nC}$, and the distance between the centres of the spheres is $4.0\\,\\text{cm}$. How large is the electric force between the spheres? Give the answer in millinewtons.",
       "answer": 2.107,
       "unit": "mN",
@@ -27,6 +28,7 @@
     {
       "id": "fy6-10-L1-04",
       "level": 1,
+      "core": true,
       "text": "The charges of two identical metal spheres are $+12\\,\\text{nC}$ and $-4.0\\,\\text{nC}$. The spheres are touched together and separated. How large is the charge of each sphere after the contact? Give the answer in nanocoulombs.",
       "answer": 4.0,
       "unit": "nC",
@@ -43,6 +45,7 @@
     {
       "id": "fy6-10-L1-06",
       "level": 1,
+      "core": true,
       "text": "A neutral plastic rod and a neutral woollen cloth are rubbed against each other, and the rod becomes negatively charged. Which statement about the charges of the objects after the rubbing is correct?",
       "kind": [
         "concept"
@@ -145,6 +148,7 @@
     {
       "id": "fy6-10-L2-05",
       "level": 2,
+      "core": true,
       "text": "A torsion balance is used to measure the force $F$ between two small spheres with equal charges as a function of the distance $r$ between their centres. The measurement results are in the table (example data).\n\na) For each distance, calculate $1 : r^2$ and plot the points $(1 : r^2,\\, F)$ on a coordinate grid. Justify from the graph that the force is inversely proportional to the square of the distance.\n\nb) Fit a straight line through the origin to the points and determine the charge $q$ of each sphere from its slope. The constant of Coulomb's law is $k = 8.988 \\cdot 10^{9}\\,\\tfrac{\\text{N} \\cdot \\text{m}^2}{\\text{C}^2}$. Give the answer in nanocoulombs.\n\nWrite the result of part b) in the answer box.",
       "kind": [
         "data",

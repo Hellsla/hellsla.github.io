@@ -43,6 +43,7 @@
     {
       "id": "fy6-16-L1-06",
       "level": 1,
+      "core": true,
       "text": "When choosing a charging station, the power of the station in kilowatts ($\\text{kW}$) and the size of the battery of the car in kilowatt-hours ($\\text{kWh}$) are compared. What do these two numbers tell?",
       "kind": [
         "concept"
@@ -81,6 +82,7 @@
     {
       "id": "fy6-16-L1-08",
       "level": 1,
+      "core": true,
       "text": "The combined resistance of the conductors of a charging cable is $0.25\\,\\Omega$ and the charging current is $16\\,\\text{A}$. How much power is converted into internal energy in the cable, that is, heats the cable? Answer in watts.",
       "answer": 64.0,
       "unit": "W",
@@ -100,6 +102,7 @@
     {
       "id": "fy6-16-L2-02",
       "level": 2,
+      "core": true,
       "text": "A single-phase charging station draws a current of $16\\,\\text{A}$ at a voltage of $230\\,\\text{V}$. The energy of the battery of the car is $60\\,\\text{kWh}$, and it is charged from a charge level of $20\\,\\%$ to $80\\,\\%$. The efficiency of charging is $90\\,\\%$, and the power stays constant the whole time. How long does charging take? Answer in hours.",
       "answer": 10.869565,
       "unit": "h",
@@ -124,6 +127,7 @@
     {
       "id": "fy6-16-L2-05",
       "level": 2,
+      "core": true,
       "text": "The table shows the electric power of a detached house hour by hour in the evening before the charging station is installed (example data).\n\nThe main fuses of the house are $3 \\cdot 25\\,\\text{A}$, and the loads of the house are divided equally between the three phases. The family is planning a three-phase charging station that draws an equal current from each phase conductor. The phase voltage is $230\\,\\text{V}$. Assume that the power of the house stays at the value in the table for each hour.\n\na) What is the peak power of the house, and at what time does it occur?\n\nb) How large may the charging power of the station be during the peak so that the current of the main fuses is not exceeded?\n\nc) Using the table, justify when the station can use a power of $11\\,\\text{kW}$ without load management.\n\nThe answer field takes the result of part b) in kilowatts.",
       "kind": [
         "data",

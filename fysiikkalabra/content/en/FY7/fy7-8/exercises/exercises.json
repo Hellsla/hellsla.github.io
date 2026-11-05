@@ -3,6 +3,7 @@
     {
       "id": "fy7-8-L1-01",
       "level": 1,
+      "core": true,
       "text": "The primary coil of a doorbell transformer has $1200$ turns and the secondary coil $60$ turns. The primary coil is connected to the mains voltage $230\\,\\text{V}$. How large is the secondary voltage? Assume the transformer to be ideal.",
       "answer": 11.5,
       "unit": "V",
@@ -43,6 +44,7 @@
     {
       "id": "fy7-8-L1-06",
       "level": 1,
+      "core": true,
       "text": "An ideal transformer is connected to a battery that gives a direct voltage. When the current in the primary coil has settled to a constant value, the voltage of the secondary coil is measured to be zero. What is the reason?",
       "kind": [
         "concept"
@@ -73,6 +75,7 @@
     {
       "id": "fy7-8-L1-07",
       "level": 1,
+      "core": true,
       "text": "A power plant transmits power along a line, and a power of $840\\,\\text{kW}$ becomes internal energy in the line. The transmission voltage is doubled, and the transmitted power and the resistance of the line stay the same. How large is the power loss now? Give the answer in kilowatts.",
       "kind": [
         "reasoning"
@@ -97,6 +100,7 @@
     {
       "id": "fy7-8-L2-01",
       "level": 2,
+      "core": true,
       "text": "A hydroelectric power plant transmits a power of $50\\,\\text{MW}$ at a voltage of $110\\,\\text{kV}$ to a substation. The total resistance of the conductors is $4.0\\,\\Omega$. How large a power becomes internal energy in the line? Give the answer in kilowatts.",
       "answer": 826.4463,
       "unit": "kW",

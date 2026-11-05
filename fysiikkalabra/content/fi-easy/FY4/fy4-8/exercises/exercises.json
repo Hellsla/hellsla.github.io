@@ -3,6 +3,7 @@
     {
       "id": "fy4-8-L1-01",
       "level": 1,
+      "core": true,
       "text": "Kivi pudotetaan levosta sillalta, joka on $12{,}0\\,\\text{m}$ vedenpinnan yläpuolella. Ilmanvastus jätetään huomiotta. Millä nopeudella kivi osuu veteen?",
       "answer": 15.344054,
       "unit": "m/s",
@@ -35,6 +36,7 @@
     {
       "id": "fy4-8-L1-05",
       "level": 1,
+      "core": true,
       "text": "Hiihtäjän mekaaninen energia on mäen päällä $12{,}4\\,\\text{kJ}$ ja mäen alla $9{,}8\\,\\text{kJ}$. Kuinka suuren työn kitka ja ilmanvastus tekevät yhteensä hiihtäjään laskun aikana? Ilmoita työ etumerkkeineen.",
       "answer": -2.6,
       "unit": "kJ",
@@ -43,6 +45,7 @@
     {
       "id": "fy4-8-L1-06",
       "level": 1,
+      "core": true,
       "text": "Kaksi lasta laskee levosta liukumäkeä alas. Toisen liukumäki on jyrkkä ja lyhyt. Toisen liukumäki on loiva ja pitkä. Molempien lähtökorkeus on sama. Lasten massat ovat yhtä suuret. Kitka ja ilmanvastus jätetään huomiotta. Mitä lasten nopeuksista liukumäen alapäässä voi päätellä?",
       "kind": [
         "concept"
@@ -192,6 +195,7 @@
     {
       "id": "fy4-8-L2-06",
       "level": 2,
+      "core": true,
       "text": "Pienoisvuoristoradan vaunun massa matkustajineen on $420\\,\\text{kg}$. Vaunun korkeus $h$ ja nopeus $v$ mitattiin radan neljässä kohdassa. Ratamatka kohdasta A on $s$. Taulukko on esimerkkiaineisto. Nollataso on maanpinta.\n\na) Laske vaunun mekaaninen energia kohdissa A, B, C ja D kilojouleina.\n\nb) Kuinka suuren työn vastusvoimat tekevät vaunuun kohtien A ja D välillä yhteensä?\n\nc) Millä kohtien välillä keskimääräinen vastusvoima on suurin? Perustele laskemalla.\n\nVastauskenttään tulee kohdan b) tulos kilojouleina.",
       "kind": [
         "data",

@@ -21,6 +21,7 @@
     {
       "id": "fy4-13-L1-03",
       "level": 1,
+      "core": true,
       "text": "A cart of mass $1.0\\,\\text{kg}$ is on a frictionless table. A light, inextensible string tied to it passes over a light, frictionless pulley at the edge of the table, and a mass of $0.40\\,\\text{kg}$ hangs from the end of the string. Air resistance is neglected.\n\nDraw the free-body diagram of each body. What is the tension in the string when the bodies are moving?",
       "answer": 2.8,
       "unit": "N",
@@ -48,6 +49,7 @@
     {
       "id": "fy4-13-L1-06",
       "level": 1,
+      "core": true,
       "text": "A cart is on a frictionless table and is tied by a string over a pulley to a hanging mass. The mass descends and the cart accelerates. The string and the pulley are light, and air resistance is neglected. How are the tension $T$ in the string and the weight $G_2$ of the hanging mass related?",
       "kind": [
         "concept"
@@ -129,6 +131,7 @@
     {
       "id": "fy4-13-L2-02",
       "level": 2,
+      "core": true,
       "text": "Bodies of masses $0.50\\,\\text{kg}$ and $1.0\\,\\text{kg}$ hang at the ends of a light, inextensible string over a pulley. The pulley is light and frictionless, and air resistance is neglected. The bodies are released. Draw the free-body diagram of each body. What is the tension in the string?",
       "answer": 6.5,
       "unit": "N",
@@ -156,6 +159,7 @@
     {
       "id": "fy4-13-L2-05",
       "level": 2,
+      "core": true,
       "text": "In an Atwood machine, two masses hang at the ends of a light, inextensible string over a pulley, and their total mass is always $M = 0.500\\,\\text{kg}$. The pulley is light and frictionless. The mass difference $\\Delta m = m_2 - m_1$ is changed by moving small masses from one mass to the other, and for each mass difference the acceleration $a$ of the heavier mass is measured. The table shows example data of the measurements.\n\na) From the equations of motion of the two masses, derive a formula for calculating $a$ from the mass difference $\\Delta m$.\n\nb) Draw the $(\\Delta m, a)$ graph and fit a straight line through the origin to it. Determine the acceleration of free fall $g$ from the slope of the line.\n\nThe answer box takes the acceleration of free fall from part b).",
       "kind": [
         "data",

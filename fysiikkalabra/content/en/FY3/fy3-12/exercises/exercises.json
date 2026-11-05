@@ -3,6 +3,7 @@
     {
       "id": "fy3-12-L1-01",
       "level": 1,
+      "core": true,
       "text": "The roof of a log cabin has an area of $45\\,\\text{m}^2$ and a U-value of $0.24\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. It is $22\\,{}^\\circ\\text{C}$ in the cabin and $-18\\,{}^\\circ\\text{C}$ outdoors. How large is the thermal power conducted out through the roof?",
       "answer": 432,
       "unit": "W",
@@ -44,6 +45,7 @@
     {
       "id": "fy3-12-L1-06",
       "level": 1,
+      "core": true,
       "text": "You sit in front of a campfire on a windless evening, and your face feels warm even though the air between the campfire and your face is cool. How does heat mainly transfer from the campfire to your face?",
       "kind": [
         "concept"
@@ -136,6 +138,7 @@
     {
       "id": "fy3-12-L2-01",
       "level": 2,
+      "core": true,
       "text": "The walls of a summer cabin have an area of $70\\,\\text{m}^2$ and a U-value of $0.50\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. The roof has an area of $50.0\\,\\text{m}^2$ and a U-value of $0.30\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. Heat conducted through other structures is ignored. On a winter weekend the cabin is heated by electric radiators with a total power of $2.0\\,\\text{kW}$. What is the lowest outdoor temperature at which the radiators can keep the cabin at $20\\,{}^\\circ\\text{C}$?",
       "answer": -20,
       "unit": "°C",
@@ -226,6 +229,7 @@
     {
       "id": "fy3-12-L2-07",
       "level": 2,
+      "core": true,
       "text": "Students investigate the insulating ability of a wall panel. The area of the panel is $0.50\\,\\text{m}^2$. The inner side of the panel is heated with an electric resistor that keeps the temperatures constant, and the power $P$ conducted through the panel is measured at different temperature differences $\\Delta T$ (example data).\n\na) Plot the points in a $(\\Delta T, P)$ coordinate system and fit a straight line through the origin to them. Justify why the line should pass through the origin. The line passes approximately through the point $(50.0\\,\\text{K};\\ 8.75\\,\\text{W})$. Determine the U-value of the panel from the slope of the line.\n\nb) What does the placement of the points on a line tell you about the dependence between the power and the temperature difference? Why did the temperatures have to stay constant during the measurement?\n\nEnter the U-value of part a) in the answer box.",
       "kind": [
         "data",

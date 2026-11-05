@@ -3,6 +3,7 @@
     {
       "id": "fy2-8-L1-01",
       "level": 1,
+      "core": true,
       "text": "An example household uses $3000\\,\\text{kWh}$ of electricity a year. The electricity is produced with hydropower, whose life-cycle emission factor is $24\\,\\text{g/kWh}$. How much carbon dioxide equivalent is produced per year by the household's electricity use? Give the answer in kilograms.",
       "answer": 72,
       "unit": "kg",
@@ -44,6 +45,7 @@
     {
       "id": "fy2-8-L1-06",
       "level": 1,
+      "core": true,
       "text": "Which of the following best describes the natural greenhouse effect?",
       "kind": [
         "concept"
@@ -122,6 +124,7 @@
     {
       "id": "fy2-8-L2-02",
       "level": 2,
+      "core": true,
       "text": "An example household uses $3600\\,\\text{kWh}$ of electricity a year. The electricity was first produced with coal ($820\\,\\text{g/kWh}$), but the household switches to buying wind electricity ($12\\,\\text{g/kWh}$). By how many tonnes of carbon dioxide equivalent do the yearly emissions decrease? Give the answer in tonnes.",
       "answer": 2.9,
       "unit": "t",
@@ -146,6 +149,7 @@
     {
       "id": "fy2-8-L2-05",
       "level": 2,
+      "core": true,
       "text": "The table shows the carbon dioxide concentration $c$ of the atmosphere in different years (yearly averages of the NOAA Mauna Loa measuring station, rounded to whole ppm values). Assume that the concentration grows steadily between the years $2005$ and $2020$, that is, the model is a straight line. By how many ppm does the concentration grow per year on average according to this model? Give the answer in the unit ppm/a.",
       "kind": [
         "data"

@@ -3,6 +3,7 @@
     {
       "id": "fy3-8-L1-01",
       "level": 1,
+      "core": true,
       "text": "A detached house has a $6.0\\,\\text{m}$ long gutter made of coated steel ($\\alpha = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$). On a summer day the sun heats the gutter from $15\\,{}^\\circ\\text{C}$ in the morning to $55\\,{}^\\circ\\text{C}$ in the afternoon. By how much does the gutter get longer? Give the answer in millimetres.",
       "answer": 2.9,
       "unit": "mm",
@@ -73,6 +74,7 @@
     {
       "id": "fy3-8-L1-07",
       "level": 1,
+      "core": true,
       "kind": [
         "concept"
       ],
@@ -124,6 +126,7 @@
     {
       "id": "fy3-8-L2-02",
       "level": 2,
+      "core": true,
       "text": "A steel kettlebell with a volume of $2.0\\,\\text{dm}^3$ has been in a garage at $-22\\,{}^\\circ\\text{C}$ on a frosty night. It is brought inside, where it warms to $20\\,{}^\\circ\\text{C}$. The coefficient of linear expansion of steel is $\\alpha = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$. By how many cubic centimetres does the volume of the kettlebell grow? Hint: for a solid $\\gamma \\approx 3\\alpha$.",
       "answer": 3.0,
       "unit": "cm³",
@@ -194,6 +197,7 @@
     {
       "id": "fy3-8-L2-06",
       "level": 2,
+      "core": true,
       "kind": [
         "data",
         "experiment"

@@ -3,6 +3,7 @@
     {
       "id": "fy7-4-L1-01",
       "level": 1,
+      "core": true,
       "text": "Laboratoriossa suora johdin on kohtisuorassa homogeenista magneettikenttää vastaan. Kentässä on $0{,}40\\,\\text{m}$ johdinta, johtimen virta on $12\\,\\text{A}$ ja magneettivuon tiheys on $0{,}050\\,\\text{T}$. Kuinka suuri voima johtimeen kohdistuu?",
       "answer": 0.24,
       "unit": "N",
@@ -43,6 +44,7 @@
     {
       "id": "fy7-4-L1-06",
       "level": 1,
+      "core": true,
       "text": "Vaakasuora suora johdin on magneettikentässä, joka osoittaa vaakasuoraan pohjoiseen. Johtimessa kulkee virta vaakasuoraan itään. Mihin suuntaan magneettikenttä työntää johdinta?",
       "kind": [
         "concept"
@@ -97,6 +99,7 @@
     {
       "id": "fy7-4-L2-01",
       "level": 2,
+      "core": true,
       "text": "Laboratoriossa kaksi rinnakkaista johdinta kulkee $0{,}80\\,\\text{m}$:n matkan $5{,}0\\,\\text{mm}$:n etäisyydellä toisistaan. Kummassakin johtimessa kulkee $10\\,\\text{A}$:n virta samaan suuntaan. Kuinka suuri voima johtimeen kohdistuu toisen johtimen magneettikentässä? Anna vastaus millinewtoneina.",
       "answer": 3.2,
       "unit": "mN",
@@ -182,6 +185,7 @@
     {
       "id": "fy7-4-L2-07",
       "level": 2,
+      "core": true,
       "text": "Kaiuttimen puhekelan voimaa mitattiin, kun kela oli magneetin raossa. Raossa säteittäisen magneettikentän magneettivuon tiheys on $1{,}1\\,\\text{T}$, ja kenttä on joka kohdassa kohtisuorassa kelan johdinta vastaan. Kelan virtaa $I$ muutettiin, ja kelaan kohdistuva voima $F$ mitattiin voima-anturilla (esimerkkiaineisto). Piirrä mittauspisteistä kuvaaja ja sovita pisteisiin origon kautta kulkeva suora. Määritä suoran kulmakertoimesta kelan johtimen kokonaispituus $l$.",
       "kind": [
         "data",

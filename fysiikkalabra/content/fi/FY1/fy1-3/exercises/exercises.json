@@ -3,6 +3,7 @@
     {
       "id": "fy1-3-L1-01",
       "level": 1,
+      "core": true,
       "text": "Oppilas mittaa pienen kuulan putoamisajan neljä kertaa ja saa tulokset $0{,}52\\,\\text{s}$, $0{,}48\\,\\text{s}$, $0{,}55\\,\\text{s}$ ja $0{,}49\\,\\text{s}$. Mikä on mittaussarjan keskiarvo?",
       "answer": 0.51,
       "unit": "s",
@@ -44,6 +45,7 @@
     {
       "id": "fy1-3-L1-06",
       "level": 1,
+      "core": true,
       "text": "Mikä seuraavista tilanteista on esimerkki systemaattisesta virheestä?",
       "kind": [
         "concept"
@@ -98,6 +100,7 @@
     {
       "id": "fy1-3-L2-01",
       "level": 2,
+      "core": true,
       "text": "Kuulan vierimisaika mitataan kuusi kertaa: $1{,}84\\,\\text{s}$, $1{,}91\\,\\text{s}$, $1{,}78\\,\\text{s}$, $1{,}88\\,\\text{s}$, $1{,}96\\,\\text{s}$ ja $1{,}82\\,\\text{s}$. Satunnaisvirheen arvioksi otetaan vaihteluvälin puolikas. Kuinka monta prosenttia se on keskiarvosta?",
       "answer": 4.83,
       "unit": "%",
@@ -183,6 +186,7 @@
     {
       "id": "fy1-3-L2-06",
       "level": 2,
+      "core": true,
       "text": "Kaksi ryhmää mittasi saman vesimäärän, jonka tilavuus tunnetaan tarkasti: $50{,}0\\,\\text{ml}$. Tulokset ovat taulukossa. Laske ryhmän A tulosten keskiarvon poikkeama tunnetusta arvosta etumerkkeineen. Kumpi mittaussarja on toistettavampi ja kumpi lähempänä oikeaa arvoa? Perustele vaihteluvälin puolikkailla ja keskiarvoilla.",
       "kind": [
         "data",

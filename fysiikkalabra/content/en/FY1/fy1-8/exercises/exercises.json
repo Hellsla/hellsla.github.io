@@ -3,6 +3,7 @@
     {
       "id": "fy1-8-L1-01",
       "level": 1,
+      "core": true,
       "text": "A ball rolls down a slope, and a student measures its travel time with a hand stopwatch as $4.0\\,\\text{s}$. The timing uncertainty is $\\Delta t = 0.2\\,\\text{s}$. What is the relative uncertainty $\\varepsilon$ of the time as a percentage?",
       "answer": 5.0,
       "unit": "%",
@@ -73,6 +74,7 @@
     {
       "id": "fy1-8-L1-07",
       "level": 1,
+      "core": true,
       "text": "Students want to investigate a pendulum in a school physics lesson with a simple experiment. Which of the following is a good research question?",
       "kind": [
         "concept"
@@ -135,6 +137,7 @@
     {
       "id": "fy1-8-L2-01",
       "level": 2,
+      "core": true,
       "text": "The travel time of a toy car is measured five times, and the results are $7.8\\,\\text{s}$, $8.2\\,\\text{s}$, $7.9\\,\\text{s}$, $8.1\\,\\text{s}$ and $8.0\\,\\text{s}$. Half of the range is taken as a simple and cautious estimate of the uncertainty. What is the relative uncertainty of the result as a percentage?",
       "answer": 2.5,
       "unit": "%",
@@ -214,6 +217,7 @@
     {
       "id": "fy1-8-L2-06",
       "level": 2,
+      "core": true,
       "text": "A student investigates whether the mass of a cart affects how fast the cart rolls down a ramp. His plan is: “I let a light cart roll down a gentle ramp and a heavy cart down a steep ramp and compare the times.” Which change fixes the plan?",
       "kind": [
         "error",

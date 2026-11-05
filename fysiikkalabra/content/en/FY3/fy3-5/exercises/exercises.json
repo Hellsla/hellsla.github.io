@@ -3,6 +3,7 @@
     {
       "id": "fy3-5-L1-01",
       "level": 1,
+      "core": true,
       "text": "Bread dough is kneaded by hand. While kneading, the hands do $450\\,\\text{J}$ of work on the dough, and a quantity of heat of $120\\,\\text{J}$ is transferred from the warm hands to the dough. The dough is the system. By how much does the internal energy of the dough change?",
       "answer": 570,
       "unit": "J",
@@ -43,6 +44,7 @@
     {
       "id": "fy3-5-L1-06",
       "level": 1,
+      "core": true,
       "text": "A coffee cup and a big pot are both full of water, and the temperature of the water in both is $60\\,{}^\\circ\\text{C}$. The pot holds ten times as much water as the cup. Which statement about the internal energy of the waters is correct?",
       "kind": [
         "concept"
@@ -122,6 +124,7 @@
     {
       "id": "fy3-5-L2-02",
       "level": 2,
+      "core": true,
       "text": "The heating element of a kettle transfers energy to the water as heat at a steady power of $2.0\\,\\text{kW}$ for 90 seconds. At the same time, a quantity of heat of $20\\,\\text{kJ}$ is transferred from the water through the casing of the kettle to the surroundings. By how much does the internal energy of the water increase? Give the answer in kilojoules.",
       "answer": 160,
       "unit": "kJ",
@@ -188,6 +191,7 @@
     {
       "id": "fy3-5-L2-06",
       "level": 2,
+      "core": true,
       "text": "A student solved a problem and got the result $\\Delta U = 40\\,\\text{J}$. The problem: the air in the cylinder of a bicycle pump is compressed, so that the piston does $30\\,\\text{J}$ of work on the air, and at the same time a quantity of heat of $10\\,\\text{J}$ is transferred from the air through the walls of the cylinder to the surroundings. The student's solution: “Work is done on the air, so $W = +30\\,\\text{J}$. The quantity of heat is $10\\,\\text{J}$, so $Q = 10\\,\\text{J}$. So $\\Delta U = Q + W = 10\\,\\text{J} + 30\\,\\text{J} = 40\\,\\text{J}$.”\n\na) What is the error in the student's solution?\n\nb) Calculate the change in the internal energy of the air correctly.\n\nThe answer box takes the result of part b) with its sign.",
       "kind": [
         "error"
