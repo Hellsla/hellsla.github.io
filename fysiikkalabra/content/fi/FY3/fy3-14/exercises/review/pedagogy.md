@@ -1,15 +1,13 @@
-VERDICT: FAIL
-CONTENT-HASH: 501fa6aaa0208bbd
+VERDICT: PASS
+CONTENT-HASH: c85d98ce6115a0a2
 
 ## Blocking
-- exercises.json:119 fy3-14-L1-09 — level 1 is "one formula or one step of reasoning" (CLAUDE.md "Exercise levels"), but this task needs two calculations ($Q_\text{v}$ and $Q_\text{j}$), a comparison and a conclusion about what remains; that is level 2, and the level-1 set is already about 9 tasks — move it to level 2 (id fy3-14-L2-08, in the level2 list, and rename its heading in solutions.md) or cut it to one step (give $Q_\text{v}$ and $Q_\text{j}$ in the task and ask only which statements follow).
+- none
 
 ## Polish
-- Statements 1 and 3 state both heats and statement 4 states the conclusion, so the comparison and the answer are shown to the student; drop the numbers from statements 1 and 3 (e.g. "Vesi voi luovuttaa enemmän lämpöä kuin jään sulattaminen vaatii.").
-- Only the false statement 2 gives a "koska" reason, a mild form cue; give a true statement a reason too.
-- The task is close to the lesson's misconception example (0,30 kg water, 0,10 kg ice, 25,1 and 33,4 kJ); change the structure (e.g. ice at −5 °C or all ice melting) if it stays in the set.
+- fy3-14-L2-08 — statements 1 and 3 still state both heats and statement 4 the conclusion, so the comparison is shown; the false statement 2 alone carries a "koska"; the structure is close to the lesson's misconception example. All three optional (round 1, unchanged).
 
 ## Checked
-- Numbers verified: 18,9 kJ, 26,7 kJ, 56 g melted, 24 g left. Statement 5 catches the chapter's "keskiarvo" and statement 2 the "massojen vertailu" idea; each feedback gives its reason.
-- Solution: both Q's, comparison, then each statement in turn. Within fy3-14.
-- Text only: no 390 px capture; the longest chain (Q_v with units, about 230 px by estimate) fits 300 px.
+- Round 2. Round-1 Blocking resolved: the task is now fy3-14-L2-08 (level 2; two heats, a comparison, a conclusion) in the level2 list, no id clash, and solutions.md has the matching heading and no L1-09. Level-1 count is 8, level 2 is 8.
+- Content otherwise unchanged and verified in round 1 (18,9 kJ, 26,7 kJ, 56 g, 24 g).
+- Render: the solution in the fresh 1280 px capture (L2 part 12) reads in order and the Q_v line fits; text only for the 390 px width (about 270 px by estimate).

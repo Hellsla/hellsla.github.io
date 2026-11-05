@@ -1,18 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: 07ff0780b71756eb
+VERDICT: PASS
+CONTENT-HASH: 23beb0210afaa772
+ROUND: 2
 
 ## Blocking
-- [Major] fy3-5-L1-09, feedback of statement 1 (390 px render) — the display chain `\Delta U = Q + W = 0 + 60\,\text{J} = 60\,\text{J}` is wider than the 300 px box: the end is cut at "= 60" and the unit J is out of sight (reachable only by sideways scrolling) — a result without its unit, and the lesson's own chain-width rule is broken — split into two lines: `\Delta U = Q + W` and `= 0 + 60\,\text{J} = 60\,\text{J}`, or write `\Delta U = 0 + 60\,\text{J} = 60\,\text{J}`.
+(none) Round-1 Major fixed: the L1-09 feedback for statement 1 is now two short pieces, "ΔU = Q + W, eli ΔU = 0 + 60 J = 60 J", and fits the 390 px box with the unit visible.
 
 ## Polish
-- [Minor] fy3-5-L1-09 — statements 1 and 2 are the true ones and 3-5 the false ones in a block; the order is not a giveaway, but mixing (T, F, T, F, F) would remove the pattern.
-- [Minor] fy3-5-L1-09 feedback 2 — "Ilmaa voi kuumentaa tekemällä siihen työtä, kuten pyöräpumpun mäntä tekee" reads loosely; "kuten pyöräpumppua käytettäessä".
-- [Minor] Model answer chain (`\Delta U = Q + W = 0 + 60\,\text{J} = 60\,\text{J}`) fits at 390 px in the solution; no change.
+- [Minor] L1-09 — statements 1-2 true, 3-5 false in a block; mixing the order would remove the pattern (not blocking).
+- [Minor] L1-09 feedback 2 — "kuten pyöräpumpun mäntä tekee" reads loosely; "kuten pyöräpumpussa".
 
 ## Checked
-- Own render at 390 px with Playwright (preview/fy3-5.html), L1-09 with solution open and every feedback revealed (all five statements answered correctly; feedback unhidden), read in four tiles: task text, five statements with Tosi/Epätosi controls, feedback boxes, Vastaus/answer block, Annettu/Kysytty/Periaate/Mallivastaus.
-- From text only: distractors catch the chapter's warned mistake (heat stored in a body, Q confused with W, "no heat means no change"); within what fy3-5 teaches; ΔU = Q + W signs fine. Quantities carry LaTeX units. Paragraph splits of the other changed tasks read correctly in the diff (not rendered).
-- No horizontal page overflow (scrollWidth 390).
+- Renders (own Playwright, 390 px, preview/fy3-5.html): L1-09 with answers given, all feedback unhidden, solution open, read in tiles; the fixed feedback, other four feedbacks, model answer chain. No katex element exceeds the box; page scrollWidth 390.
+- Text only: the rest of the chapter was not re-rendered; the packet is a full-mode packet, but the exercise content outside L1-09 was PASS earlier and the diff is the round-1 fix.
 
 ## Scores
-illustrations 5 · typography 3 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

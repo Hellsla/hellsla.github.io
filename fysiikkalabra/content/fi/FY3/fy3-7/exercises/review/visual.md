@@ -1,18 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: 81ec0d4c8cbaa96e
+VERDICT: PASS
+CONTENT-HASH: d0e4b45564aa64a8
+ROUND: 2
 
 ## Blocking
-- [Major] fy3-7-L2-08, Mallivastaus (390 px render) — the Teekannu and Kattila chains `Q = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 1{,}0\,\text{kg} \cdot 20\,\text{K} = 83\,800\,\text{J} \approx 84\,\text{kJ}` (and the Kattila one) run past the box: they stop at "= 83 8" and "= 20", so the results and units are not visible — the solution's key numbers are unreadable on a phone and the chain-width rule is broken — break each at "=" onto a second line, or give the result on its own line after the substitution.
-- [Major] fy3-7-L2-08, task text — the four items are listed Teekannu, Jääpussi, Kattila, Kiehuva vesi, which is exactly the correct ascending order (the select widget is shuffled, the text is not) — the answer is identifiable by form — list them in another order (for example Kattila, Kiehuva vesi, Teekannu, Jääpussi) and change the "Oikea sija" data and model answer accordingly if they depend on the text order.
+(none) Both round-1 Majors fixed: (1) the Mallivastaus chains are broken at "=" ("... = 1,0 kg · 20 K, eli Q = 83 800 J ≈ 84 kJ") and every result with its unit is visible at 390 px; (2) the task lists the items as Kattila, Kiehuva vesi, Teekannu, Jääpussi, which is neither the answer order nor the mass order, so the form no longer gives the answer away (the select widget stays shuffled).
 
 ## Polish
-- [Minor] Model answer: "Jään sulaminen vaatii vähemmän kuin kattilallisen lämmittäminen ... joten olomuodon muutos ei aina ole suurin menoerä" is fine; the final "Arvio:" sentence is long, could be split after "paljon".
-- [Minor] The order select shows "Sija" with 1-4; the feedback "Oikea sija: 2" is clear; no change.
+- [Minor] Mallivastaus last "Arvio" sentence is long; split after "paljon".
+- [Minor] Periaate now names c, s and r in a list-like sentence; fine, optional comma tidy.
 
 ## Checked
-- Own render at 390 px (preview/fy3-7.html), L2-08 with all four ranks set correctly, "Vastaa" pressed, hidden parts unhidden, solution open; read in four tiles: task rows, four selects with "Oikea sija", saved-answer, Kysytty/Periaate/Mallivastaus.
-- The task's fractions of units (`\tfrac{kJ}{kg}`) render well in prose; no overflow of the page (scrollWidth 390).
-- From text only: other changed tasks (paragraph splits), distractor logic (mass-order and phase-change-biggest misconceptions are addressed in the solution).
+- Renders (own Playwright, 390 px, preview/fy3-7.html): L2-08 with all ranks set, answers shown, solution open, read in tiles: task rows, four selects with "Oikea sija", Periaate, Mallivastaus. No katex overflow; scrollWidth 390.
+- Text only: the other exercises of the set (full-mode packet); nothing outside L2-08 re-rendered.
 
 ## Scores
-illustrations 5 · typography 3 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: ea1ce6ceaffe60d0
+CONTENT-HASH: f348009c527c1f49
+
+Round 2 (after 6bbde30c5). The only change in fy3-2: the correct choice's feedback in L2-08 now reads "Oikein: työ nelinkertaistuu.", so it no longer gives away the reason stage. It is physically right.
 
 ## Blocking
 
 ## Polish
-- exercises/exercises.json:235 (L2-08) — a real rubber band is not linear (and shows hysteresis); the task marks the values as "Esimerkkiarvot" and states "voima kasvaa tasaisesti", so the model is stated (C). Optional: "Oletetaan, että voima kasvaa tasaisesti venytyksen mukana."
+- exercises/exercises.json:235 (L2-08) — round 1 carried over and still optional: a real rubber band is not linear, but the task marks its values as example values and states that the force grows evenly (C).
 
 ## Checked
-- L2-08 recomputed: $W_1 = \tfrac12 \cdot 20 \cdot 0{,}10 = 1{,}0\,\text{J}$, $W_2 = \tfrac12 \cdot 40 \cdot 0{,}20 = 4{,}0\,\text{J}$, ratio 4; second 10 cm: $30\,\text{N} \cdot 0{,}10\,\text{m} = 3{,}0\,\text{J} = 3W_1$.
-- Exactly one correct choice ($4W_1$) and one correct reason (triangle, both base and height double); $2W_1$ and reason 1 catch the lesson's warned mistake ($W = Fs$ for a varying force); reasons 2 and 4 are true but non-explaining, and their feedback says so.
-- Correct reason not identifiable by length or hedging (lengths similar); it is the only one naming both doublings, which is content, not form.
-- Within fy3-2 (graph area, triangle) as the brief's Esimerkki teaches; symbols $W$, $F$, $s$ as in the lesson.
-- Inline chains at 390 px (Playwright on preview, opened): $W_1$/$W_2$ lines 264 px, wrap to two lines inside the 330 px column; fits.
-- Rest of the set unchanged since PASS; hash same at start and end.
+- L2-08 recomputed again: W₁ = 1,0 J, W₂ = 4,0 J, ratio 4; the second 10 cm needs 3,0 J = 3W₁. The answer is unchanged.
+- Exactly one correct choice and one correct reason; the reason stage still carries the explanation (triangle, base and height both double).
+- Inline chains at 390 px (Playwright on the rebuilt preview, 23:15, solution and feedback opened): longest 264 px, wrapping inside the 330 px column; fits.
+- Everything else is from the regenerated packet text; the rest of the set is unchanged.
+- The hash is the same at the start and the end.

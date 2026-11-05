@@ -1,21 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 07ff0780b71756eb
-Round: 1 (YO-skill task)
+CONTENT-HASH: 23beb0210afaa772
+Round: 2
 
-Scope: the new task L1-09 (true/false statements, added 2026-11-05). The other 20 tasks and answers.py are unchanged since the round-2 PASS (`git show HEAD`).
+Round 2 checks commit 6bbde30c5 against my round-1 report (L1-09). The rest of the set is unchanged.
 
 ## Blocking
 - none
 
 ## Polish
-- solutions.md L1-09 Periaate, "Eristetyssä sylinterissä $Q = 0$". The glossary's *eristetty systeemi* also excludes work, but here $W = 60\,\text{J}$. Fix: write "Lämpöeristetyssä sylinterissä", as the task text does.
+- none
 
 ## Checked
-- I recomputed ΔU = Q + W = 0 + 60 J = 60 J with my own script. Statements 1 and 2 are true and 3–5 false, and the answer string matches the flags.
-- The conditions are stated in the task. There is no heat exchange with the surroundings, and the air stays a gas, so a rise in U means a rise in T. The air is the system, and the work is done on it, so W > 0. The cylinder does not move, so ΔU = Q + W holds as written.
-- The distractors catch the lesson's own warned mistakes. Statement 5 ("enemmän lämpöä") is the "heat is stored" mistake, statement 4 is "only heating changes U", and statement 3 confuses W with Q. Every feedback is correct and agrees with the glossary.
-- The correct statements cannot be spotted by form. True and false statements are of similar length, and none is hedged.
-- The task stays within fy3-5 (the first law and its signs).
-- Inline formulas: the longest is $\Delta U = Q + W = 0 + 60\,\text{J} = 60\,\text{J}$, about 200 px, so it fits 300 px.
-- Renders: I viewed review/shots/fy3-5-open-exercises-1280-9.png, taken after the commit. Statements 3–5 and the solution render cleanly. I judged statements 1–2 and all the feedback from the text only, and I checked no 390 px render of the solution.
+- The round-1 Polish item is resolved. The Periaate now says "Lämpöeristetyssä sylinterissä $Q = 0$", as the task text does, so it no longer clashes with the glossary's *eristetty systeemi*.
+- The formula was reflowed in two places, and the physics is unchanged. The option-1 feedback now reads "$\Delta U = Q + W$, eli $\Delta U = 0 + 60\,\text{J} = 60\,\text{J}$", and the Mallivastaus now has an aligned two-line block. ΔU = 60 J recomputed. Statements 1–2 are true and 3–5 false. The answer string is unchanged.
+- The round-1 checks still hold: the conditions are stated (no heat exchange, the air stays a gas), the distractors catch the lesson's warned mistakes, and no correct statement can be spotted by form.
+- Renders vs text: I judged this round from the diff text only. The aligned block is about 200 px wide per line by construction, so it fits a phone.
 - The hash was the same at the start and at the end.
