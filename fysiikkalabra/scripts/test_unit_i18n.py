@@ -29,6 +29,14 @@ for f in ("curriculum.json", "competencies.json", "glossary.json", "local-course
 for d in ("scripts", "templates", "content", "lessons", "lang", "assets", "tests", "kortit", "tips", "news"):
     if (SRC / d).is_dir(): shutil.copytree(SRC / d, T / d, ignore=shutil.ignore_patterns("__pycache__", "packet-*", "shots*"))
 (T / "docs").mkdir(exist_ok=True); shutil.copy(SRC / "docs/visual-baseline.tsv", T / "docs")
+# The copy starts from the state before FY9 was translated: only this unit has an en version, and FY9 is not yet in
+# content/en/local-courses.json (the test adds it); the fi-easy versions wait for their course the same way.
+for lang in ("en", "fi-easy"):
+    for u in (T / "content" / lang / "units").glob("fy9-*"):
+        if lang == "en" and u.name != UNIT: shutil.rmtree(u)
+    lcp = T / "content" / lang / "local-courses.json"
+    if lcp.is_file():
+        lc0 = json.loads(lcp.read_text()); lc0.pop("FY9", None); lcp.write_text(json.dumps(lc0, ensure_ascii=False, indent=2))
 ENV = {**os.environ, "FYSIIKKALABRA_ROOT": str(T)}
 EN = T / "content/en/units" / UNIT; KIT = T / "kit"
 
@@ -64,7 +72,7 @@ import units
 h_en = units.content_hash(UNIT, "en")
 expect("the translation has a hash of its own; the source's is unchanged", h_en and h_en != fi_hash and run("units.py", "hash", UNIT)[1].strip() == fi_hash, (h_en, fi_hash))
 code, out = run("build.py")
-expect("an unreviewed translation is not published", code == 0 and not (T / f"site/en/{UNIT}.html").exists() and 'class="lang-menu"' not in (T / f"site/{UNIT}.html").read_text(), out[-600:])
+expect("an unreviewed translation is not published", code == 0 and not (T / f"site/en/{UNIT}.html").exists() and f'href="en/{UNIT}.html"' not in (T / f"site/{UNIT}.html").read_text(), out[-600:])   # the language menu may link the en course page's note
 fy14 = [u for c in json.loads((SRC / "local-courses.json").read_text())["FY14"]["chapters"] for u in c["units"] if (SRC / f"site/en/{u['id']}.html").is_file()]
 expect("FY14's units build as the committed site", fy14 and all((T / f"site/en/{u['id']}.html").read_text() == (SRC / f"site/en/{u['id']}.html").read_text() for u in fy14), [u["id"] for u in fy14])
 

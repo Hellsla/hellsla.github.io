@@ -70,7 +70,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$q = 0{,}080\\,\\text{m} \\cdot \\sqrt{\\dfrac{4{,}93 \\cdot 10^{-4}\\,\\text{N}}{8{,}988 \\cdot 10^{9}\\,\\text{N}\\cdot\\text{m}^2/\\text{C}^2}} \\approx 1{,}87 \\cdot 10^{-8}\\,\\text{C}$ ja $n = \\tfrac{q}{e} \\approx 1{,}2 \\cdot 10^{11}$"
+              "detail": "$F_\\text{s} = 4{,}93 \\cdot 10^{-4}\\,\\text{N}$ ja $k = 8{,}988 \\cdot 10^{9}\\,\\text{N}\\cdot\\text{m}^2/\\text{C}^2$, joten $q = 0{,}080\\,\\text{m} \\cdot \\sqrt{F_\\text{s}/k} \\approx 1{,}87 \\cdot 10^{-8}\\,\\text{C}$ ja $n = \\tfrac{q}{e} \\approx 1{,}2 \\cdot 10^{11}$"
             },
             {
               "key": "units_precision",

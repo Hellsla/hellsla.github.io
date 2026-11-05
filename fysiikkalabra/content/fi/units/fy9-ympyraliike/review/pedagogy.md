@@ -1,5 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 678dc353273487b6
+CONTENT-HASH: cc10e5fca522a7b1
+
+## Delta review (2026-11-04, previous hash 678dc353273487b6)
+The only change is that the "Maa" label in the tilanteet figure moved 28 px to the right (figures.py, and the redrawn SVG in unit.md). `git diff HEAD` shows nothing else. The tasks, rubrics, points (95), hints and feedback are unchanged. The figure still means the same thing for the student: the satellite panel, with the Earth labelled. Still PASS.
 
 Round 2 (delta review of round 1 fixes; round 1 hash fc0aa5da26550049). Pedagogy review of fy9-ympyraliike.
 

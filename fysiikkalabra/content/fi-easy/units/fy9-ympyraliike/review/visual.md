@@ -1,5 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: ca70b3b450bf3201
+CONTENT-HASH: c6971c6b158dd450
+
+## Delta review
+
+Only change since the PASS at ca70b3b450bf3201: figure "tilanteet", "Maa" label x 300 -> 328 (git diff confirms nothing else in content/fi-easy or lessons/units/fy9-ympyraliike). Rebuilt (build.py) and checked in Playwright at 360 and 1280 px with all details open: the label sits right of the a-label and above the end of the Earth arc, fully inside the viewBox (rendered 262-294 of 328 px at 360; 489-549 of 608 px at 1280), no overlap; no horizontal scroll (360/360, 1280/1280), 0 katex-error, no page errors. check_layout.py --width 360 and --width 1280: OK for preview/fi-easy/fy9-ympyraliike. No new findings.
+
+## Earlier review
 
 Visual & editorial review, round 2, of the fi-easy translation of fy9-ympyraliike. Preview rebuilt with
 `python3 scripts/build.py fy9-ympyraliike` (preview/fi-easy/fy9-ympyraliike.html) and checked in Playwright

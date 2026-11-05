@@ -310,7 +310,7 @@ Kun kappale on levossa, momenttiehto pätee minkä tahansa pisteen suhteen. Siks
   <line x1="150" y1="572" x2="150" y2="611" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
   <path d="M150,628 L142,610 L158,610 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="115.5" y="620" width="29" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#c92a2a">$\overline{F}$</div></foreignObject>
-  <foreignObject x="280.5" y="634" width="39" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#6b7480">$\text{Maa}$</div></foreignObject>
+  <foreignObject x="308.5" y="634" width="39" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#6b7480">$\text{Maa}$</div></foreignObject>
 </svg>
 
 ### Tasainen ympyräliike

@@ -1,5 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: ca70b3b450bf3201
+CONTENT-HASH: c6971c6b158dd450
+
+## Delta review
+
+Only change since the PASS at ca70b3b450bf3201: figure "tilanteet", the "Maa" label moved right (x 300 -> 328), matching the fi source. No text, rubric, point, activity or plan changed; the label still names the Earth arc in the satellite panel, so the meaning for the student is the same and slightly clearer (no longer near the a-vector). No new findings.
+
+## Earlier review
 
 Pedagogy review, round 2, of the Selkeä suomi translation (NOTES.md §12) of fy9-ympyraliike.
 

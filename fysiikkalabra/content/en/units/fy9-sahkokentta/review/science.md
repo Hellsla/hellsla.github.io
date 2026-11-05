@@ -1,5 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 51ef54c541fe6381
+CONTENT-HASH: 78c57d65fbb8f279
+
+## Delta review (2026-11-04)
+Only change since round 3 (`git diff HEAD`, the only modified file under content/en/units/fy9-sahkokentta and nothing under lessons/units/fy9-sahkokentta): sovella/tasks.json s1 b) rubric `calculation` detail, where the long inline $q = 0.080\,\text{m}\cdot\sqrt{\dfrac{4.93\cdot10^{-4}\,\text{N}}{8.988\cdot10^{9}\,\ldots}}$ is split into $F_\text{s} = 4.93\cdot10^{-4}\,\text{N}$ and $k = 8.988\cdot10^{9}\,\text{N·m}^2/\text{C}^2$, so $q = 0.080\,\text{m}\cdot\sqrt{F_\text{s}/k} \approx 1.87\cdot10^{-8}\,\text{C}$. It mirrors the fi source line exactly (check_i18n en: 0 errors). Recomputed: 0.080·sqrt(4.93e-4/8.988e9) = 1.874·10⁻⁸ C, n = q/e = 1.17·10¹¹ ≈ 1.2·10¹¹; same values, units and model as before. practice.py check: en 6 tasks, 95 points. No new findings.
 
 Science review, round 3, of the en translation of fy9-sahkokentta (source content/fi/units/fy9-sahkokentta/, passed). 2026-11-04.
 

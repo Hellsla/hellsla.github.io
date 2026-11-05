@@ -1,5 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: ca70b3b450bf3201
+CONTENT-HASH: c6971c6b158dd450
+
+## Delta review
+
+Only change since the PASS at ca70b3b450bf3201 (git diff HEAD, content/fi-easy and lessons/units/fy9-ympyraliike): figure "tilanteet", the "Maa" label moved right (f.tex x 300 -> 328; foreignObject x 280.5 -> 308.5), now identical to the fi source. No formula, number, vector, answer or point changed; the physics of the three force diagrams (lankku, nyppylä, satelliitti) is unchanged. Earlier findings still apply. No new findings.
+
+## Earlier review
 
 Science review, round 2, of the Selkeä suomi translation (fi-easy) of fy9-ympyraliike against the reviewed Finnish
 source. Checks rerun: `check_i18n.py` (fi-easy: 0 errors); every `$…$` formula of unit.md (88), teacher.md (16) and

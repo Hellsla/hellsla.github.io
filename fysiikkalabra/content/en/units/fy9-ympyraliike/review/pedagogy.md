@@ -1,5 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 83e12053f0efcc73
+CONTENT-HASH: cc71cb661f7317ac
+
+## Delta review (2026-11-04)
+
+The only change since the previous PASS: in figure "tilanteet" the "Earth" label moved right (x 300 -> 328) so it no longer overlaps the ā label (`git diff HEAD` shows only this, in unit.md and the matching lessons figures.py). The text, tasks, rubric points and their meaning are unchanged. The label now reads clearly and still names the Earth arc, which helps students read the satellite panel. Verdict stays PASS.
+
+## Earlier report
 
 Pedagogy review of the English translation of fy9-ympyraliike, round 3 (source PASS at 678dc353273487b6). Reviewer 2026-11-04.
 

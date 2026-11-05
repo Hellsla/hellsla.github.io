@@ -1,5 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 83e12053f0efcc73
+CONTENT-HASH: cc71cb661f7317ac
+
+## Delta review (2026-11-04)
+
+The only change since the previous PASS: in figure "tilanteet" the "Earth" label moved right (foreignObject x 270 -> 298, box 298-358 × 634-658). The ā label sits at 243.5-272.5 × 612-636, so the two no longer overlap, and the label stays inside the 380-wide viewBox, right of the end of the Earth arc. `git diff HEAD` shows nothing else changed. Rebuilt with scripts/build.py and checked in Playwright at 360 and 1280 px with all details open: the label is clear, readable and not clipped. check_layout.py at --width 360 and --width 1280: OK for preview/en/fy9-ympyraliike, no FAIL. Verdict stays PASS.
+
+## Earlier report
 
 Visual and editorial review of the English translation of fy9-ympyraliike, round 3 (source PASS at 678dc353273487b6). Reviewer 2026-11-04.
 
