@@ -1,0 +1,10 @@
+[
+  {
+    "q": "The length of a pendulum is made four times as long. By what factor does its period change when the swings are small?",
+    "a": "$T = 2\\pi\\sqrt{\\tfrac{l}{g}}$, so the period is proportional to the square root of the length. The factor is $\\sqrt{4} = 2$: the period doubles."
+  },
+  {
+    "q": "How long is the wavelength of a $680\\,\\text{Hz}$ sound in air when the speed of sound is $340\\,\\text{m/s}$?",
+    "a": "$\\lambda = \\tfrac{v}{f} = \\tfrac{340\\,\\text{m/s}}{680\\,\\text{Hz}} = 0.50\\,\\text{m}$."
+  }
+]

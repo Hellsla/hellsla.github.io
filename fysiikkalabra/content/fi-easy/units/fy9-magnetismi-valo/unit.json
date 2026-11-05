@@ -1,0 +1,36 @@
+{
+  "id": "fy9-magnetismi-valo",
+  "course": "FY9",
+  "chapter": 5,
+  "order": 3,
+  "title": "Magnetismi, induktio ja valo",
+  "description": "Kerrataan FY7-moduulin asiat: magneettikenttä, varatun hiukkasen liike sähkö- ja magneettikentässä, virtajohtimen ja käämin kenttä, voima virtajohtimeen, induktio ja Lenzin laki, generaattori, vaihtovirta ja muuntaja, sähkömagneettinen säteily sekä valon heijastuminen, taittuminen, dispersio, kokonaisheijastuminen, interferenssi, hila, ohut kalvo ja polarisaatio. Lisäksi ratkaistaan ylioppilaskokeen tyylisiä tehtäviä.",
+  "kind": "review",
+  "minutes": 75,
+  "subjects": [
+    "physics"
+  ],
+  "sources": [],
+  "key_concepts": [
+    {
+      "term": "magneettikenttä",
+      "explain": "Alue magneetin tai sähkövirran ympärillä. Magneettikenttä kohdistaa voiman liikkuvaan varaukseen ja virtajohtimeen."
+    },
+    {
+      "term": "magneettivuo",
+      "explain": "Kertoo, kuinka paljon magneettikenttää kulkee pinnan läpi: $\\Phi = BA$. Kun vuo muuttuu, syntyy jännite."
+    },
+    {
+      "term": "induktio",
+      "explain": "Ilmiö, jossa muuttuva magneettivuo synnyttää jännitteen. Generaattori ja muuntaja toimivat induktion avulla."
+    },
+    {
+      "term": "muuntaja",
+      "explain": "Laite, joka nostaa tai laskee vaihtojännitettä. Kierrosten suhde kertoo jännitteiden suhteen."
+    },
+    {
+      "term": "taitekerroin",
+      "explain": "Kertoo, kuinka paljon valo hidastuu aineessa: $n = \\frac{c}{v}$. Taitekerroin määrää, kuinka paljon valo taittuu."
+    }
+  ]
+}

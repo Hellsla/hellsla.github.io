@@ -1,0 +1,725 @@
+{
+  "intro": "Six tasks on experimental work: two experiment plans, assessing a report, measurement data as a graph, a calculation task with uncertainties and a task that combines modules.",
+  "tasks": [
+    {
+      "id": "fy9-kokeellisuus-s1",
+      "title": "Grip of indoor sports shoes",
+      "text": "A floorball club wants to know whether a new indoor shoe grips the hall floor better than the old model. The coach gives you one shoe of each model and a piece of the same floor material as in the hall (a board, $1.2\\,\\text{m} \\cdot 0.30\\,\\text{m}$). You also have a spring balance (range $0\\text{–}20\\,\\text{N}$, scale division $0.2\\,\\text{N}$), a set of masses, a kitchen scale (resolution $1\\,\\text{g}$), a tape measure and a phone whose inclinometer has a resolution of $0.1^\\circ$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 6,
+          "text": "Plan an experiment to compare the grip of the shoes. Say what you measure and with which instrument, how the measurement is done, what you keep constant and how many measurements you make.",
+          "criteria": [
+            {
+              "text": "Chooses the coefficient of static friction as the measure of grip and justifies why the coefficient and not just the force: the shoes have different weights.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Describes the measurement so that it can be repeated: the board is tilted slowly until the shoe starts to slide, and the angle is read, or the shoe is pulled along the horizontal board with the spring balance and the reading is taken just before it starts to move.",
+              "tag": "experiment",
+              "points": 2
+            },
+            {
+              "text": "Names the things kept constant: the same board and the same spot on it, a clean and dry surface, the same mass inside the shoe and the same way of tilting or pulling.",
+              "tag": "experiment",
+              "points": 2
+            },
+            {
+              "text": "Repeats the measurement several times with each shoe, for example five times in turn.",
+              "tag": "experiment",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 3,
+          "text": "How do you calculate the result from your measurements, and how do you show that the difference between the shoes is real and not variation in the measurements?",
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "When tilting, $\\mu_0 = \\tan\\alpha_0$; when pulling, $\\mu_0 = \\tfrac{F}{mg}$, with the mass of the shoe and the mass weighed."
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "For each shoe, the mean and the error estimate as half the range."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The difference is probably real if the uncertainty intervals do not overlap; if they do, the difference cannot be shown."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 3,
+          "text": "Name two significant sources of error and say how you reduce the effect of each.",
+          "criteria": [
+            {
+              "key": "error_sources",
+              "points": 2,
+              "detail": "Two real sources of error and the effect of each, for example: fast tilting or a jerky pull gives too large a reading; dust or moisture changes the friction; the reading of the spring balance fluctuates as the motion begins."
+            },
+            {
+              "text": "Gives a way to reduce each source of error, for example slow and steady tilting, wiping the surface before every measurement, measuring the shoes in turn and zeroing the balance.",
+              "tag": "experiment",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy1-8",
+        "fy4-6",
+        "fy1-3"
+      ],
+      "links": {
+        "concept": "fy4-6",
+        "experiment": "fy1-8",
+        "math": "fy4-6",
+        "communication": "fy1-8"
+      }
+    },
+    {
+      "id": "fy9-kokeellisuus-s2",
+      "title": "Heating rapeseed oil",
+      "text": "A home economics teacher claims that rapeseed oil heats up faster than water with the same power, because the specific heat capacity of oil is smaller. You have an insulated vacuum flask with a lid, an electric heating resistor with a power of $50\\,\\text{W}$, a digital thermometer (resolution $0.1\\,{}^\\circ\\text{C}$), a balance (resolution $0.1\\,\\text{g}$), a stopwatch, a stirrer, rapeseed oil and water.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 5,
+          "text": "Plan an experiment to determine the specific heat capacity of rapeseed oil. Say what you measure and how, and what you keep constant.",
+          "criteria": [
+            {
+              "text": "Weighs the oil on the balance, for example about $200\\,\\text{g}$, and records the power of the resistor.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "Measures the temperature at regular intervals, for example every $30\\,\\text{s}$, stirring all the time, and records the times and temperatures in a table.",
+              "tag": "experiment",
+              "points": 2
+            },
+            {
+              "text": "Keeps the conditions constant: the same container and lid, an initial temperature close to room temperature, steady stirring and a temperature rise of at most about $20\\,{}^\\circ\\text{C}$.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "Makes the same measurement with water, so that the claim can be compared and the effect of the container's own heat capacity can be estimated.",
+              "tag": "experiment",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 3,
+          "text": "How is the specific heat capacity determined from a graph of the measurements?",
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "A straight line is fitted to the initial part of the $(t, T)$ graph, where the points lie on a line, and its slope $k = \\tfrac{\\Delta T}{\\Delta t}$ is read."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$P\\,\\Delta t = cm\\,\\Delta T$, so $c = \\tfrac{P}{mk}$."
+            },
+            {
+              "text": "Justifies why the initial part is used: when the oil becomes warmer than its surroundings, the heat losses grow and the graph curves.",
+              "tag": "experiment",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "According to a data book, the specific heat capacity of rapeseed oil is about $2.0\\,\\text{kJ/(kg}\\cdot\\text{K)}$. Estimate how long it takes to heat a $200\\,\\text{g}$ batch of oil by $20\\,{}^\\circ\\text{C}$ when no heat is lost.",
+          "answer": {
+            "value": 160,
+            "unit": "s",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$P t = cm\\,\\Delta T$, from which $t = \\tfrac{cm\\,\\Delta T}{P}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Mass in kilograms and kilojoules in joules."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$t \\approx 160\\,\\text{s}$, or about $2.7\\,\\text{min}$, two significant figures."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Heat is lost to the surroundings during the experiment. Does the specific heat capacity come out too large or too small? Justify your answer and say how the effect is reduced.",
+          "criteria": [
+            {
+              "key": "error_sources",
+              "points": 2,
+              "detail": "The losses are a systematic error: part of the energy from the resistor does not heat the oil, so the temperature rises more slowly, the slope is too small and $c = \\tfrac{P}{mk}$ too large."
+            },
+            {
+              "text": "A way to reduce the effect: a lid and insulation, a short measurement and using only the initial part of the graph, or alternatively an initial temperature a few degrees below room temperature and a line fitted to the whole measurement; the effect of the container and the losses can also be found with the same measurement using water.",
+              "tag": "experiment",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy3-6",
+        "fy1-8",
+        "fy1-4"
+      ],
+      "links": {
+        "experiment": "fy1-8",
+        "graph": "fy1-4",
+        "math": "fy3-6"
+      }
+    },
+    {
+      "id": "fy9-kokeellisuus-s3",
+      "title": "Report on a drop experiment",
+      "source": "example",
+      "source_note": "The report and its measurement results are an invented example.",
+      "text": "From a student pair's report:\n\n> **Research question:** How large is the free-fall acceleration?\n>\n> **Hypothesis:** The free-fall acceleration is $9.81\\,\\text{m/s}^2$.\n>\n> **Method:** We dropped a tennis ball from the school balcony. The height was measured with a tape measure, and it was $3.0\\,\\text{m}$. One of us dropped the ball, and the other timed it with a phone stopwatch. We repeated this three times.\n>\n> **Results:** $t_1 = 0.82\\,\\text{s}$, $t_2 = 0.75\\,\\text{s}$ and $t_3 = 0.79\\,\\text{s}$. The mean is $\\bar{t} = 0.7867\\,\\text{s}$. With the formula $g = \\tfrac{2h}{t^2}$ we got $g = 9.6955\\,\\text{m/s}^2$.\n>\n> **Conclusion:** The result is almost $9.81\\,\\text{m/s}^2$, so the hypothesis was proved correct. The small difference is due to air resistance.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 6,
+          "text": "Assess the report. Present at least four shortcomings and justify why each weakens the result or the conclusion.",
+          "criteria": [
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "The result lacks an uncertainty, and it has too many digits: $9.6955$ claims a precision that the measurement does not support."
+            },
+            {
+              "text": "The reaction time of timing by hand, about $0.1\\,\\text{s}$, is a large part of the fall time of about $0.8\\,\\text{s}$, and when the person dropping and the person timing are different people, the starting moment is uncertain. Three repetitions from one height are not enough.",
+              "tag": "experiment",
+              "points": 2
+            },
+            {
+              "key": "error_sources",
+              "points": 1,
+              "detail": "The claim about air resistance is unjustified: the difference from $9.81\\,\\text{m/s}^2$ is smaller than the timing uncertainty, so the measurement cannot show an effect of air resistance."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "A measurement cannot prove a hypothesis; it can only support it within its uncertainty."
+            },
+            {
+              "text": "The method does not say from where to where the height was measured (from the bottom of the ball to the floor) or to what precision, so the experiment cannot be repeated exactly.",
+              "tag": "communication",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Determine the free-fall acceleration and its uncertainty from the report's measurements with the extreme-value method.",
+          "answer": [
+            {
+              "name": "g",
+              "value": 9.7,
+              "unit": "m/s²",
+              "tolerance": 0.02
+            },
+            {
+              "name": "dg",
+              "value": 0.87,
+              "unit": "m/s²",
+              "tolerance": 0.1
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The ball starts from rest: $h = \\tfrac{1}{2}gt^2$, from which $g = \\tfrac{2h}{t^2}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$g_\\text{max}$ with the shortest time $0.75\\,\\text{s}$ and $g_\\text{min}$ with the longest time $0.82\\,\\text{s}$."
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "$\\Delta g = \\tfrac{g_\\text{max} - g_\\text{min}}{2} \\approx 0.9\\,\\text{m/s}^2$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$g = (9.7 \\pm 0.9)\\,\\text{m/s}^2$: the result is rounded to the same decimal place as the error estimate."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 3,
+          "text": "Suggest an improved method using ordinary school equipment. Also say how the result is calculated.",
+          "criteria": [
+            {
+              "text": "Timing without reaction time: the drop is filmed with a phone in front of a tape measure and the time is read from the frames, or light gates are used.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "Several drop heights, with repetitions at each.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "graph_fit",
+              "points": 1,
+              "detail": "A line through the origin is fitted to the $(t^2, h)$ graph, and its slope is $\\tfrac{g}{2}$; or a $(t, v)$ graph is drawn from the video, and its slope is $g$."
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy1-8",
+        "fy1-3",
+        "fy4-2",
+        "fy1-6"
+      ],
+      "links": {
+        "experiment": "fy1-8",
+        "communication": "fy1-8",
+        "math": "fy4-2",
+        "graph": "fy1-4"
+      }
+    },
+    {
+      "id": "fy9-kokeellisuus-s4",
+      "title": "Length and period of a pendulum",
+      "source": "simulated",
+      "source_note": "The data have been calculated from the pendulum model, with small random variation added as in a measurement. They are not the result of a real measurement.",
+      "text": "A group measured the period of a pendulum with six string lengths. The pendulum was a steel ball on the end of a thin string, and the starting angle was about $5^\\circ$ in all measurements. The length $l$ was measured with a tape measure from the point where the string is fixed to the top of the ball. For each length, the time $t_{10}$ of ten swings was measured three times, and the table gives their mean.\n\n| $l\\ (\\text{m})$ | $t_{10}\\ (\\text{s})$ |\n|---|---|\n| $0.250$ | $10.55$ |\n| $0.400$ | $13.04$ |\n| $0.550$ | $15.23$ |\n| $0.700$ | $17.06$ |\n| $0.850$ | $18.81$ |\n| $1.000$ | $20.28$ |",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 5,
+          "text": "Draw a graph of the measurements from which the free-fall acceleration can be determined, and fit a straight line to the points.",
+          "criteria": [
+            {
+              "text": "Chooses the quantities $l$ and $T^2$ and justifies the choice: the pendulum model $T^2 = \\tfrac{4\\pi^2}{g}\\, l$ is the equation of a straight line.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$T = t_{10} : 10$ and $T^2$ for each row, for example $l = 0.250\\,\\text{m}$: $T^2 = 1.113\\,\\text{s}^2$."
+            },
+            {
+              "key": "graph_axes",
+              "points": 1
+            },
+            {
+              "key": "graph_points",
+              "points": 1
+            },
+            {
+              "key": "graph_fit",
+              "points": 1,
+              "detail": "The line runs among the points and is not forced through the origin."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Determine the free-fall acceleration from the graph.",
+          "answer": {
+            "value": 9.84,
+            "unit": "m/s²",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The slope is read from two points of the line far apart: $k \\approx 4.0\\,\\text{s}^2/\\text{m}$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$k = \\tfrac{4\\pi^2}{g}$, from which $g = \\tfrac{4\\pi^2}{k}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$g \\approx 9.8\\,\\text{m/s}^2$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "The line does not pass through the origin. Explain what causes the constant term, and use the graph to determine the diameter of the ball.",
+          "answer": {
+            "value": 5.0,
+            "unit": "cm",
+            "tolerance": 0.2
+          },
+          "criteria": [
+            {
+              "text": "Explains the constant term: the length of the pendulum is from the fixing point to the centre of the ball, so each measured length lacks the radius $r$ of the ball, and the model is $T^2 = \\tfrac{4\\pi^2}{g}(l + r)$.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The constant term is read where the line cuts the vertical axis: $b \\approx 0.10\\,\\text{s}^2$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$b = kr$, so $r = \\tfrac{b}{k}$, or the extension of the line cuts the horizontal axis at $l = -r$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$r \\approx 2.5\\,\\text{cm}$ and diameter $d \\approx 5\\,\\text{cm}$."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Assess how the error in measuring the length affected the result of part b and how it would have affected it if $g$ had been calculated from each row separately. Is the result consistent with the value $9.81\\,\\text{m/s}^2$?",
+          "criteria": [
+            {
+              "key": "error_sources",
+              "points": 1,
+              "detail": "A systematic error in the length shifts the line but does not change the slope, so $g$ in part b is not distorted."
+            },
+            {
+              "text": "A row-by-row $g = \\tfrac{4\\pi^2 l}{T^2}$ would be too small on every row and most so with a short string: $l = 0.250\\,\\text{m}$ gives about $8.9\\,\\text{m/s}^2$.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The uncertainty in reading the slope is about $\\pm 0.1\\,\\text{s}^2/\\text{m}$, so $g = (9.8 \\pm 0.3)\\,\\text{m/s}^2$, and the value $9.81\\,\\text{m/s}^2$ is within the interval."
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy5-9",
+        "fy1-4",
+        "fy1-3"
+      ],
+      "links": {
+        "transfer": "fy5-9",
+        "math": "fy5-9",
+        "graph": "fy1-4",
+        "experiment": "fy1-3",
+        "communication": "fy1-8"
+      }
+    },
+    {
+      "id": "fy9-kokeellisuus-s5",
+      "title": "Density of a beach stone",
+      "source": "example",
+      "source_note": "The measurement results are an invented example; the densities of the rock types are typical table values.",
+      "text": "In a geology club a student wants to identify a stone she found on the beach by its density. She weighs the stone on a digital balance with a resolution of $0.1\\,\\text{g}$ and gets $187.4\\,\\text{g}$. Then she lowers the stone into a $250\\,\\text{m}\\textsf{l}$ measuring cylinder whose scale division is $2\\,\\text{m}\\textsf{l}$. The water level rises from the reading $120\\,\\text{m}\\textsf{l}$ to the reading $190\\,\\text{m}\\textsf{l}$. She estimates the uncertainty of each reading as half a scale division and the uncertainty of the balance reading as $0.1\\,\\text{g}$.\n\nAccording to a data book, the density of granite is typically $2600\\text{–}2800\\,\\text{kg/m}^3$ and that of basalt $2800\\text{–}3000\\,\\text{kg/m}^3$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "Calculate the density of the stone.",
+          "answer": {
+            "value": 2680,
+            "unit": "kg/m³",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\rho = \\tfrac{m}{V}$, where $V = V_2 - V_1$ is the volume of water displaced by the stone."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$V = 70\\,\\text{m}\\textsf{l} = 70\\,\\text{cm}^3$ and $\\rho = 2.677\\,\\text{g/cm}^3$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$1\\,\\text{g/cm}^3 = 1000\\,\\text{kg/m}^3$, so $\\rho \\approx 2680\\,\\text{kg/m}^3$."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Determine the uncertainty of the density with the extreme-value method.",
+          "answer": {
+            "value": 78,
+            "unit": "kg/m³",
+            "tolerance": 0.1
+          },
+          "criteria": [
+            {
+              "text": "The uncertainty of the volume is the sum of the uncertainties of the two readings: $\\Delta V = 2 \\cdot 1\\,\\text{m}\\textsf{l} = 2\\,\\text{m}\\textsf{l}$.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Largest density with the largest mass and the smallest volume: $\\rho_\\text{max} = \\tfrac{187.5\\,\\text{g}}{68\\,\\text{cm}^3}$ and $\\rho_\\text{min} = \\tfrac{187.3\\,\\text{g}}{72\\,\\text{cm}^3}$."
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "$\\Delta\\rho = \\tfrac{\\rho_\\text{max} - \\rho_\\text{min}}{2} \\approx 80\\,\\text{kg/m}^3$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\rho = (2680 \\pm 80)\\,\\text{kg/m}^3$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 2,
+          "text": "Can the stone be identified as granite or basalt by its density?",
+          "criteria": [
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The interval $2600\\text{–}2760\\,\\text{kg/m}^3$ is in the range of granite, and the lower limit of basalt, $2800\\,\\text{kg/m}^3$, is outside the interval, so the result supports granite."
+            },
+            {
+              "text": "States that density alone does not prove the rock type: the ranges in the table are typical values, and other rock types can have the same density.",
+              "tag": "communication",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Which measurement limits the precision of the result more, the mass or the volume? Suggest how the result could be made more precise.",
+          "criteria": [
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Relative uncertainties: mass $0.1 : 187.4 \\approx 0.05\\,\\%$ and volume $2 : 70 \\approx 3\\,\\%$, so the volume is the limit."
+            },
+            {
+              "text": "Suggests a way to reduce the uncertainty of the volume and assesses its real precision: a narrower measuring cylinder with a smaller scale division, or an overflow can whose water is weighed (the weighing is precise, but the water left in the can and the spout brings an uncertainty of about $0.5\\,\\text{cm}^3$). Air bubbles are removed from the surface of the stone.",
+              "tag": "experiment",
+              "points": 2
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy1-7",
+        "fy1-3"
+      ],
+      "links": {
+        "math": "fy1-7",
+        "experiment": "fy1-3",
+        "communication": "fy1-8"
+      }
+    },
+    {
+      "id": "fy9-kokeellisuus-s6",
+      "title": "Braking distance of a bicycle",
+      "source": "simulated",
+      "source_note": "The data have been calculated from the model of constant deceleration, with small random variation added as in a measurement. They are not the result of a real measurement.",
+      "text": "In a road safety project, students investigated the braking distance of a bicycle on dry asphalt. The cyclist rode up to the start line at a steady speed shown by a phone app and braked at the line with both brakes so that the wheels did not lock. The braking distance $s$ was measured with a tape measure from the line to the stopping point. The road was horizontal, and there was no wind.\n\n| $v\\ (\\text{km/h})$ | $s\\ (\\text{m})$ |\n|---|---|\n| $10$ | $1.0$ |\n| $15$ | $2.0$ |\n| $20$ | $3.8$ |\n| $25$ | $5.6$ |\n| $30$ | $8.5$ |",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 3,
+          "text": "The students assume that the deceleration is the same in every braking. What does the assumption predict about the relationship between the braking distance and the speed, and with what kind of graph can the assumption be tested?",
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "In uniformly decelerated motion $v^2 = 2as$, so $s = \\tfrac{v^2}{2a}$."
+            },
+            {
+              "text": "Prediction: doubling the speed quadruples the braking distance.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "text": "Test: the $(v^2, s)$ graph is a straight line through the origin if the assumption holds.",
+              "tag": "graph",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "graph",
+          "points": 5,
+          "text": "Draw a graph with which you test the assumption, and determine the deceleration of the bicycle from it.",
+          "answer": {
+            "value": 4.2,
+            "unit": "m/s²",
+            "tolerance": 0.05
+          },
+          "criteria": [
+            {
+              "key": "graph_axes",
+              "points": 1,
+              "detail": "$v^2$ in $\\text{m}^2/\\text{s}^2$ on the horizontal axis, $s$ in $\\text{m}$ on the vertical axis."
+            },
+            {
+              "key": "graph_points",
+              "points": 1,
+              "detail": "The speeds have been converted to $\\text{m/s}$ before squaring."
+            },
+            {
+              "key": "graph_fit",
+              "points": 1,
+              "detail": "The points are close to a straight line through the origin, so the assumption is supported; the line passes through the origin because at zero speed the braking distance is zero."
+            },
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Slope $k \\approx 0.12\\,\\text{s}^2/\\text{m}$ from a distant point of the line."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$k = \\tfrac{1}{2a}$, so $a = \\tfrac{1}{2k} \\approx 4.2\\,\\text{m/s}^2$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "How large must the coefficient of static friction between the tyres and the asphalt be at least for such braking to be possible? Air resistance is not taken into account.",
+          "answer": {
+            "value": 0.42,
+            "unit": "",
+            "tolerance": 0.05
+          },
+          "criteria": [
+            {
+              "text": "Justifies that the bicycle is slowed by the friction force of the road on the tyres and that the wheels do not slip, so this is static friction: $F_{\\mu 0} \\le \\mu_0 N$, where $N = mg$.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$ma = F_{\\mu 0} \\le \\mu_0 mg$, so $\\mu_0 \\ge \\tfrac{a}{g}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\mu_0 \\ge 0.42$, without a unit."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 4,
+          "text": "It later turned out that the app showed the speed $5\\,\\%$ higher than the true speed in every run. By how many per cent does the deceleration of part b differ from the true value, and in which direction? Does the conclusion that the deceleration is constant change?",
+          "answer": {
+            "value": 10,
+            "unit": "%",
+            "tolerance": 0.05
+          },
+          "criteria": [
+            {
+              "text": "Identifies the error as systematic: every speed has been multiplied by the same number $1.05$.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$v_\\text{app}^2 = 1.05^2\\, v^2$, so the slope is $1.05^2$ times too small and $a = \\tfrac{1}{2k}$ is $1.05^2$ times too large."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$1.05^2 = 1.1025$: the deceleration is about $10\\,\\%$ too large, the true value about $3.8\\,\\text{m/s}^2$."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Every $v^2$ changes in the same proportion, so the points stay on a straight line and the conclusion about constant deceleration does not change."
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy4-11",
+        "fy4-6",
+        "fy1-4",
+        "fy1-3"
+      ],
+      "links": {
+        "math": "fy4-11",
+        "transfer": "fy4-11",
+        "graph": "fy1-4",
+        "concept": "fy4-6",
+        "experiment": "fy1-3",
+        "communication": "fy1-8"
+      }
+    }
+  ]
+}

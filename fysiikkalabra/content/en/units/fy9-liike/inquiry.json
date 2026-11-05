@@ -1,0 +1,497 @@
+{
+  "version": 1,
+  "contribution": "The review lesson brings together FY1's uniform motion and FY4's position, displacement, velocity, acceleration, uniformly accelerated motion and comparison of two bodies into one model of graphs (slope downwards, area upwards) and practises matriculation-exam-style problems on them: reading and drawing graphs, signs and directions, the meeting condition, fitting measurement data and the reliability of results.",
+  "learn": [
+    "solve problems on uniform and uniformly accelerated motion, substituting the units",
+    "draw and interpret $(t,x)$ and $(t,v)$ graphs from measurement data",
+    "assess the motions of two bodies and the reliability of measurement results with reasons"
+  ],
+  "prior": [
+    "Displacement is the change in position, and its sign gives the direction (chapter *Position, velocity and uniform motion as graphs*)",
+    "In uniform motion $x = x_0 + vt$, and the slope of the $(t,x)$ graph is the velocity (chapter *Uniform motion: speed, position and graphs*)",
+    "Acceleration is the change in velocity per unit of time, and the area of the $(t,v)$ graph is the displacement (chapter *Acceleration and uniformly accelerated motion*)",
+    "Two bodies meet when their positions are equal at the same moment (chapter *Comparing the motions of two bodies*)",
+    "A straight line is fitted to measured points, and the slope is read from the line (chapter *Graphing and fitting a straight line*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "A tram leaves a stop, accelerates, runs at a steady speed for a while and brakes to the next stop. A passenger recorded the tram's velocity over the whole interval with a phone app. The app shows only the velocity as a function of time: the graph has seconds and metres per second, but not a single metre. In the matriculation exam a graph like this may be the only data of a problem.",
+      "question": "How can you work out the distance between the stops from the velocity graph alone?"
+    },
+    {
+      "id": "lt-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting level 1: a horizontal line",
+      "prompt": "From $4\\,\\text{s}$ to $6\\,\\text{s}$ the $(t,x)$ graph of a cart is a horizontal line at the height $x = 8\\,\\text{m}$. What does the cart do during this time?",
+      "choices": [
+        {
+          "text": "It stands still at $x = 8\\,\\text{m}$.",
+          "correct": true,
+          "feedback": "Correct. The position stays the same, so $\\Delta x = 0$ and the velocity $v = \\Delta x : \\Delta t = 0$. If needed, review in the chapter *Position, velocity and uniform motion as graphs*."
+        },
+        {
+          "text": "It moves at a constant velocity along a horizontal track.",
+          "feedback": "A $(t,x)$ graph is not a picture of the track. A horizontal line means that the position does not change, so the velocity is zero. Review in the chapter *Position, velocity and uniform motion as graphs*."
+        },
+        {
+          "text": "It moves at the velocity $8\\,\\text{m} : 2\\,\\text{s} = 4\\,\\text{m/s}$.",
+          "feedback": "Velocity is the *change* in position per unit of time, not the position divided by the time. The change in position is zero, so the velocity is zero too. Review in the chapter *Position, velocity and uniform motion as graphs*."
+        }
+      ]
+    },
+    {
+      "id": "lt-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting level 2: a lap of the track",
+      "prompt": "A runner runs one lap of a $400\\,\\text{m}$ track and stops at the starting line after $80\\,\\text{s}$. Which statement is correct?",
+      "choices": [
+        {
+          "text": "The displacement is $400\\,\\text{m}$, because the runner went round the whole track, and the average velocity is $5.0\\,\\text{m/s}$.",
+          "feedback": "$400\\,\\text{m}$ is the distance travelled. The displacement is the final position minus the initial position, and the runner ends up at the starting point. Review in the chapter *Position, velocity and uniform motion as graphs*."
+        },
+        {
+          "text": "The displacement is $-400\\,\\text{m}$, because at the end the runner turns back towards the start.",
+          "feedback": "The displacement depends only on the initial and final positions, not on the route. They are the same, so the displacement is zero. Review in the chapter *Position, velocity and uniform motion as graphs*."
+        },
+        {
+          "text": "The distance is $400\\,\\text{m}$, but the displacement and the average velocity are zero.",
+          "correct": true,
+          "feedback": "Correct. The final position is the same as the initial position, so $\\Delta x = 0$ and the average velocity $\\Delta x : \\Delta t = 0$. The distance $400\\,\\text{m}$ is the length of the route. If needed, review in the chapter *Position, velocity and uniform motion as graphs*."
+        }
+      ]
+    },
+    {
+      "id": "lt-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting level 3: twice the time",
+      "prompt": "At $t = 0$ a bus is at the position $200\\,\\text{m}$ and moves uniformly at $15\\,\\text{m/s}$. At $10\\,\\text{s}$ it is at the position $350\\,\\text{m}$. Where is it at $20\\,\\text{s}$?",
+      "choices": [
+        {
+          "text": "$700\\,\\text{m}$, because the position doubles with the time.",
+          "feedback": "The position would double only if the bus started from the origin. What doubles is the distance travelled: $150\\,\\text{m}$ becomes $300\\,\\text{m}$. Review in the chapter *Uniform motion: speed, position and graphs*."
+        },
+        {
+          "text": "$500\\,\\text{m}$, because the distance grows by $150\\,\\text{m}$ every $10\\,\\text{s}$.",
+          "correct": true,
+          "feedback": "Correct. $x = x_0 + vt = 200\\,\\text{m} + 15\\,\\text{m/s} \\cdot 20\\,\\text{s} = 500\\,\\text{m}$. The position is not proportional to the time when $x_0 \\neq 0$. If needed, review in the chapter *Uniform motion: speed, position and graphs*."
+        },
+        {
+          "text": "$300\\,\\text{m}$, because velocity times time is $15\\,\\text{m/s} \\cdot 20\\,\\text{s}$.",
+          "feedback": "$300\\,\\text{m}$ is the distance travelled. The position is found by adding it to the initial position $200\\,\\text{m}$. Review in the chapter *Uniform motion: speed, position and graphs*."
+        }
+      ]
+    },
+    {
+      "id": "lt-4",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting level 4: a negative acceleration",
+      "prompt": "A car moves in the negative direction of the $x$ axis, and its acceleration is $-2.0\\,\\text{m/s}^2$. What happens to the car's speed?",
+      "choices": [
+        {
+          "text": "The speed increases, because $a$ and $v$ point in the same direction.",
+          "correct": true,
+          "feedback": "Correct. Both point in the negative direction, so the speed grows by $2.0\\,\\text{m/s}$ every second. If needed, review in the chapter *Acceleration and uniformly accelerated motion*."
+        },
+        {
+          "text": "The speed decreases, because the acceleration is negative.",
+          "feedback": "The sign gives the direction. Here the velocity and the acceleration point in the same direction, so the speed increases. Review in the chapter *Acceleration and uniformly accelerated motion*."
+        },
+        {
+          "text": "The speed stays the same, because the directions cancel each other out.",
+          "feedback": "The acceleration is not zero, so the velocity changes by $2.0\\,\\text{m/s}$ every second. An acceleration in the same direction increases the speed. Review in the chapter *Acceleration and uniformly accelerated motion*."
+        }
+      ]
+    },
+    {
+      "id": "lt-5",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting level 5: the highest point",
+      "prompt": "A ball is thrown straight up, and air resistance is neglected. What is the ball's acceleration at the highest point, where it is at rest for an instant?",
+      "choices": [
+        {
+          "text": "Zero, because the ball's velocity is zero at the highest point.",
+          "feedback": "The velocity is zero only for an instant. Just before the highest point the ball moves up and just after it down, so the velocity changes all the time. Review in the chapter *Acceleration and uniformly accelerated motion*."
+        },
+        {
+          "text": "$9.81\\,\\text{m/s}^2$ upwards, because the ball has just been rising.",
+          "feedback": "While rising the ball slows down, so the acceleration is opposite to the velocity, that is, downwards. It stays the same during the whole flight. Review in the chapter *Acceleration and uniformly accelerated motion*."
+        },
+        {
+          "text": "$9.81\\,\\text{m/s}^2$ downwards, as during the whole flight.",
+          "correct": true,
+          "feedback": "Correct. Gravity acts all the time, so the acceleration is $g = 9.81\\,\\text{m/s}^2$ downwards at the highest point too. If needed, review in the chapter *Acceleration and uniformly accelerated motion*."
+        }
+      ]
+    },
+    {
+      "id": "lt-6",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting level 6: the area",
+      "prompt": "What does the area between the $(t,v)$ graph and the time axis tell you about the motion of a body?",
+      "choices": [
+        {
+          "text": "The body's acceleration during this time interval.",
+          "feedback": "The acceleration is the slope of the $(t,v)$ graph. The area is velocity times time, so it is in metres: the displacement. Review in the chapter *Acceleration and uniformly accelerated motion*."
+        },
+        {
+          "text": "The body's position at the end of the time interval.",
+          "feedback": "The area tells you how much the position *changes*. The final position is the initial position plus this displacement. Review in the chapter *Acceleration and uniformly accelerated motion*."
+        },
+        {
+          "text": "The body's average velocity during this time interval.",
+          "feedback": "The average velocity is found when the area, that is, the displacement, is divided by the time. The area itself is the displacement. Review in the chapter *Acceleration and uniformly accelerated motion*."
+        },
+        {
+          "text": "The body's displacement during this time interval.",
+          "correct": true,
+          "feedback": "Correct. Velocity times time is in metres, and the area adds these products up. The area below the time axis is a negative displacement. If needed, review in the chapter *Acceleration and uniformly accelerated motion*."
+        }
+      ]
+    },
+    {
+      "id": "aineisto",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "A tram between stops",
+      "source": "example",
+      "source_note": "The graph is an invented example whose numbers correspond to the usual acceleration and speed of a tram in a city.",
+      "text": "The graph shows the tram's velocity from one stop to the next. Read the moments and velocities you need from the graph, work out the distance between the stops from them and answer below. The model answer also gives the accelerations and the average velocity.\n\n<svg viewBox=\"0 0 440 360\" role=\"img\" aria-label=\"Graph to scale: the tram's velocity v as a function of time t from one stop to the next. The grid spacing is 10 s and 2 m/s. The velocity grows uniformly from zero to 10 m/s by 10 s, stays at 10 metres per second until 40 s and falls uniformly to zero at 60 s.\" style=\"max-width:100%;font-size:21px\">\n  <line x1=\"109.5\" y1=\"300\" x2=\"109.5\" y2=\"52\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"154.5\" y1=\"300\" x2=\"154.5\" y2=\"52\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"200\" y1=\"300\" x2=\"200\" y2=\"52\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"245.5\" y1=\"300\" x2=\"245.5\" y2=\"52\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"290.5\" y1=\"300\" x2=\"290.5\" y2=\"52\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"336\" y1=\"300\" x2=\"336\" y2=\"52\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"64\" y1=\"258.5\" x2=\"336\" y2=\"258.5\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"64\" y1=\"217.5\" x2=\"336\" y2=\"217.5\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"64\" y1=\"176\" x2=\"336\" y2=\"176\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"64\" y1=\"134.5\" x2=\"336\" y2=\"134.5\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"64\" y1=\"93.5\" x2=\"336\" y2=\"93.5\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"64\" y1=\"52\" x2=\"336\" y2=\"52\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"63\" y1=\"300\" x2=\"350\" y2=\"300\" stroke=\"#1f2933\" stroke-width=\"2.5\" stroke-linecap=\"butt\"/>\n  <path d=\"M362,300 L349,306 L349,294 Z\" fill=\"#1f2933\" stroke-linejoin=\"round\"/>\n  <line x1=\"64\" y1=\"301\" x2=\"64\" y2=\"38\" stroke=\"#1f2933\" stroke-width=\"2.5\" stroke-linecap=\"butt\"/>\n  <path d=\"M64,26 L70,39 L58,39 Z\" fill=\"#1f2933\" stroke-linejoin=\"round\"/>\n  <line x1=\"109.5\" y1=\"300\" x2=\"109.5\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <line x1=\"154.5\" y1=\"300\" x2=\"154.5\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"139.5\" y=\"311.5\" width=\"30\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:21px\">$20$</div></foreignObject>\n  <line x1=\"200\" y1=\"300\" x2=\"200\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <line x1=\"245.5\" y1=\"300\" x2=\"245.5\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"230.5\" y=\"311.5\" width=\"30\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:21px\">$40$</div></foreignObject>\n  <line x1=\"290.5\" y1=\"300\" x2=\"290.5\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <line x1=\"336\" y1=\"300\" x2=\"336\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"321\" y=\"311.5\" width=\"30\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:21px\">$60$</div></foreignObject>\n  <line x1=\"57\" y1=\"258.5\" x2=\"64\" y2=\"258.5\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"33\" y=\"246\" width=\"19\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$2$</div></foreignObject>\n  <line x1=\"57\" y1=\"217.5\" x2=\"64\" y2=\"217.5\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"33\" y=\"205\" width=\"19\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$4$</div></foreignObject>\n  <line x1=\"57\" y1=\"176\" x2=\"64\" y2=\"176\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"33\" y=\"163.5\" width=\"19\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$6$</div></foreignObject>\n  <line x1=\"57\" y1=\"134.5\" x2=\"64\" y2=\"134.5\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"33\" y=\"122\" width=\"19\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$8$</div></foreignObject>\n  <line x1=\"57\" y1=\"93.5\" x2=\"64\" y2=\"93.5\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"22\" y=\"81\" width=\"30\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$10$</div></foreignObject>\n  <line x1=\"57\" y1=\"52\" x2=\"64\" y2=\"52\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"22\" y=\"39.5\" width=\"30\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$12$</div></foreignObject>\n  <foreignObject x=\"35\" y=\"307.5\" width=\"19\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$0$</div></foreignObject>\n  <foreignObject x=\"368\" y=\"287.5\" width=\"55\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px\">$t\\ (\\text{s})$</div></foreignObject>\n  <foreignObject x=\"54\" y=\"-2.5\" width=\"77\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px\">$v\\ (\\text{m/s})$</div></foreignObject>\n  <polyline points=\"64,300 109.5,93.5 245.5,93.5 336,300\" fill=\"none\" stroke=\"#1971c2\" stroke-width=\"3.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n  <circle cx=\"64\" cy=\"300\" r=\"6.5\" fill=\"#1971c2\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n  <circle cx=\"109.5\" cy=\"93.5\" r=\"6.5\" fill=\"#1971c2\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n  <circle cx=\"245.5\" cy=\"93.5\" r=\"6.5\" fill=\"#1971c2\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n  <circle cx=\"336\" cy=\"300\" r=\"6.5\" fill=\"#1971c2\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n</svg>",
+      "question": {
+        "type": "numeric",
+        "prompt": "How long is the distance between the stops? Answer in metres.",
+        "answer": 450,
+        "unit": "m",
+        "tolerance": 0.03,
+        "hints": [
+          "Velocity times time is distance. Which region of the graph is velocity times time?",
+          "Divide the region under the graph into three parts: a triangle, a rectangle and a triangle.",
+          "Accelerating: $\\tfrac{1}{2} \\cdot 10\\,\\text{s} \\cdot 10\\,\\text{m/s}$; steady part: $30\\,\\text{s} \\cdot 10\\,\\text{m/s}$; braking: $\\tfrac{1}{2} \\cdot 20\\,\\text{s} \\cdot 10\\,\\text{m/s}$."
+        ],
+        "mistakes": [
+          {
+            "value": 600,
+            "feedback": "You multiplied the greatest velocity by the whole time. The tram moves at $10\\,\\text{m/s}$ for only part of the time: while accelerating and braking the velocity is smaller, and their region is a triangle."
+          },
+          {
+            "value": 300,
+            "feedback": "You included only the stage of constant velocity. The tram also moves while accelerating and braking: add the areas of the triangles."
+          },
+          {
+            "value": 0.75,
+            "feedback": "You divided the velocity by the time. That gives the acceleration. Distance is velocity *times* time, that is, the area under the graph."
+          }
+        ],
+        "solution": "**Given:** from the graph: the velocity grows uniformly from zero to $v = 10\\,\\text{m/s}$ by $t_1 = 10\\,\\text{s}$, stays there until $t_2 = 40\\,\\text{s}$ and falls uniformly to zero at $t_3 = 60\\,\\text{s}$\n\n**Find:** the distance between the stops $\\Delta x$ in metres\n\n**Principle:** The tram moves in the same direction all the time, so the distance is the same as the displacement. The displacement is the area between the $(t,v)$ graph and the time axis, because velocity times time is the distance travelled (chapter *Acceleration and uniformly accelerated motion*).\n\n**Reading the graph:** The corners of the graph are at the grid crossings $(0\\,\\text{s};\\ 0)$, $(10\\,\\text{s};\\ 10\\,\\text{m/s})$, $(40\\,\\text{s};\\ 10\\,\\text{m/s})$ and $(60\\,\\text{s};\\ 0)$. The region divides into a triangle, a rectangle and a triangle.\n\n**Formula:** $\\Delta x = \\tfrac{1}{2}\\,v\\,t_1 + v\\,(t_2 - t_1) + \\tfrac{1}{2}\\,v\\,(t_3 - t_2)$\n\n**Conversions:** The velocity is in $\\text{m/s}$ and the time in seconds, so the area comes out directly in metres. No conversions are needed.\n\n**Substitution:** $\\Delta x = \\tfrac{1}{2} \\cdot 10\\,\\text{m/s} \\cdot 10\\,\\text{s} + 10\\,\\text{m/s} \\cdot 30\\,\\text{s} + \\tfrac{1}{2} \\cdot 10\\,\\text{m/s} \\cdot 20\\,\\text{s} = 50\\,\\text{m} + 300\\,\\text{m} + 100\\,\\text{m} = 450\\,\\text{m}$\n\n**Answer:** $450\\,\\text{m}$, two significant figures ($4.5 \\cdot 10^{2}\\,\\text{m}$), because the velocity $10\\,\\text{m/s}$ and the times read from the graph are known to about two figures.\n\n**Reasonableness:** The acceleration is $10\\,\\text{m/s} : 10\\,\\text{s} = 1.0\\,\\text{m/s}^2$ while accelerating and $-10\\,\\text{m/s} : 20\\,\\text{s} = -0.50\\,\\text{m/s}^2$ while braking, usual values for a tram. The average velocity $450\\,\\text{m} : 60\\,\\text{s} = 7.5\\,\\text{m/s} \\approx 27\\,\\text{km/h}$ is smaller than the greatest velocity $10\\,\\text{m/s}$, as it must be, and a distance of about half a kilometre between stops is usual in a city."
+      }
+    },
+    {
+      "id": "teoriatiivistelma",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava",
+        "Virheet",
+        "Kertaa"
+      ]
+    },
+    {
+      "id": "keskinopeus",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the mistake: average speed",
+      "prompt": "A cyclist rides $10\\,\\text{km}$ uphill at $20\\,\\text{km/h}$ and comes back down the same distance at $60\\,\\text{km/h}$. A student calculated the average speed: “$(20\\,\\text{km/h} + 60\\,\\text{km/h}) : 2 = 40\\,\\text{km/h}$.” What is wrong in the solution?",
+      "choices": [
+        {
+          "text": "The average speed is the distance divided by the time: $20\\,\\text{km} : \\tfrac{2}{3}\\,\\text{h} = 30\\,\\text{km/h}$.",
+          "correct": true,
+          "feedback": "Correct. The uphill takes $10\\,\\text{km} : 20\\,\\text{km/h} = 0.50\\,\\text{h}$ and the downhill $10\\,\\text{km} : 60\\,\\text{km/h} \\approx 0.17\\,\\text{h}$, in total $\\tfrac{2}{3}\\,\\text{h}$. The slower speed is ridden for longer, so it weighs more."
+        },
+        {
+          "text": "Nothing: the mean of the speeds is the right way to calculate the average speed on a round trip too.",
+          "feedback": "The mean of the speeds would do only if each speed were ridden for equally *long*. The uphill takes three times as long as the downhill."
+        },
+        {
+          "text": "The average velocity is zero, because in the end the cyclist returns to the same starting point.",
+          "feedback": "The average velocity, the displacement divided by the time, is zero here, but the question is about the average speed, which is calculated from the distance travelled: $20\\,\\text{km} : \\tfrac{2}{3}\\,\\text{h} = 30\\,\\text{km/h}$."
+        }
+      ]
+    },
+    {
+      "id": "rata",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Choose the graph: a cart on a track",
+      "prompt": "A cart is pushed up a sloping track. It slows down, stops for an instant and rolls back down. The acceleration is the same all the time, and up is the positive direction. What does the cart's $(t,v)$ graph look like?",
+      "choices": [
+        {
+          "text": "Shaped like the letter V: first a falling, then a rising line.",
+          "feedback": "This is the graph of the speed, not of the velocity. The sign of the velocity changes at the moment of turning, so the line continues in the same direction below the time axis."
+        },
+        {
+          "text": "A falling straight line that continues below the time axis.",
+          "correct": true,
+          "feedback": "Correct. A constant acceleration gives a straight line with a negative slope. The velocity is zero at the moment of turning and negative after it, because the cart moves down."
+        },
+        {
+          "text": "A falling straight line that stops at zero and continues horizontally.",
+          "feedback": "The cart is at rest for only an instant. The acceleration does not change at the moment of turning, so the velocity keeps decreasing and becomes negative."
+        },
+        {
+          "text": "A curve bending upwards, like the position graph of accelerated motion.",
+          "feedback": "When the acceleration is constant, the velocity changes by the same amount every second: the $(t,v)$ graph is a straight line. The curved one is the $(t,x)$ graph."
+        }
+      ]
+    },
+    {
+      "id": "tangentti",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Read the tangent",
+      "figure": "fy4-2/ex-tangent",
+      "prompt": "The graph shows the position of a cart accelerating from rest and the tangent drawn at the point of the curve at $4.0\\,\\text{s}$. What is the cart's velocity at $4.0\\,\\text{s}$?",
+      "choices": [
+        {
+          "text": "$2.0\\,\\text{m/s}$, because $8.0\\,\\text{m} : 4.0\\,\\text{s} = 2.0\\,\\text{m/s}$",
+          "feedback": "This is the average velocity over $0$–$4.0\\,\\text{s}$, because you calculated it from the origin to the point of the curve. The instantaneous velocity is the slope of the tangent."
+        },
+        {
+          "text": "$4.0\\,\\text{m/s}$, the slope of the tangent $16\\,\\text{m} : 4.0\\,\\text{s}$",
+          "correct": true,
+          "feedback": "Correct. The tangent passes through the points $(2.0\\,\\text{s};\\ 0)$ and $(6.0\\,\\text{s};\\ 16\\,\\text{m})$: $v = 16\\,\\text{m} : 4.0\\,\\text{s} = 4.0\\,\\text{m/s}$. For a body accelerating from rest the velocity is twice the average velocity."
+        },
+        {
+          "text": "$8.0\\,\\text{m/s}$, because the point of the curve is at the height $8.0\\,\\text{m}$",
+          "feedback": "The height of the curve is the position, not the velocity. The velocity is the steepness of the tangent: the change in position divided by the change in time along the tangent."
+        }
+      ]
+    },
+    {
+      "id": "edella",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Which one is ahead?",
+      "prompt": "Two cyclists ride along the same straight road in the negative direction of the $x$ axis. In their $(t,x)$ graphs, cyclist A's line is above cyclist B's line all the time. Which statement is correct?",
+      "choices": [
+        {
+          "text": "A is ahead, because the upper line means the one ahead.",
+          "feedback": "The upper line means a greater position coordinate. When moving in the negative direction, the one ahead is the one with the smaller position coordinate. Review in the chapter *Comparing the motions of two bodies*."
+        },
+        {
+          "text": "B is ahead, because its position coordinate is smaller.",
+          "correct": true,
+          "feedback": "Correct. In the graph the upper line means a greater position coordinate. When riding in the negative direction, the smaller position coordinate is ahead, that is, B. If needed, review in the chapter *Comparing the motions of two bodies*."
+        },
+        {
+          "text": "Neither is ahead, because the lines do not cross.",
+          "feedback": "A crossing point would be a meeting. The gap between the lines gives the distance between the cyclists, and B's smaller position coordinate means here that B is ahead. Review in the chapter *Comparing the motions of two bodies*."
+        }
+      ]
+    },
+    {
+      "id": "potkulauta",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "The kick scooter",
+      "figure": "fy4-2/ex-tv",
+      "prompt": "The graph shows the velocity of a kick scooter. How far does the scooter travel during the time shown in the graph? Answer in metres.",
+      "answer": 22.5,
+      "unit": "m",
+      "tolerance": 0.03,
+      "hints": [
+        "Which region of the graph corresponds to the distance travelled?",
+        "The region is a trapezium: you can divide it into a rectangle and a triangle or calculate it with the average velocity.",
+        "$\\Delta x = \\dfrac{2.0\\,\\text{m/s} + 7.0\\,\\text{m/s}}{2} \\cdot 5.0\\,\\text{s}$"
+      ],
+      "mistakes": [
+        {
+          "value": 35,
+          "feedback": "You multiplied the final velocity by the whole time. The velocity grew gradually, so the average velocity is the mean of the initial and final velocities."
+        },
+        {
+          "value": 12.5,
+          "feedback": "You calculated only the triangle, whose height is the increase in velocity. Add the rectangle of the initial velocity, $2.0\\,\\text{m/s} \\cdot 5.0\\,\\text{s}$."
+        },
+        {
+          "value": 1,
+          "feedback": "You calculated the slope, that is, the acceleration. The distance is the area under the graph."
+        }
+      ],
+      "solution": "**Given:** from the graph, the initial velocity $v_0 = 2.0\\,\\text{m/s}$, the final velocity $v = 7.0\\,\\text{m/s}$, the time $t = 5.0\\,\\text{s}$; the velocity grows uniformly\n\n**Find:** the distance travelled $\\Delta x$ in metres\n\n**Principle:** The scooter moves in one direction, so the distance is the displacement, and the displacement is the area under the $(t,v)$ graph (chapter *Acceleration and uniformly accelerated motion*). The velocity grows uniformly, so the region is a trapezium.\n\n**Reading the graph:** The line starts at the point $(0;\\ 2.0\\,\\text{m/s})$ and ends at the point $(5.0\\,\\text{s};\\ 7.0\\,\\text{m/s})$.\n\n**Formula:** $\\Delta x = \\dfrac{v_0 + v}{2}\\,t$\n\n**Conversions:** The velocities are in $\\text{m/s}$ and the time in seconds, so no conversions are needed.\n\n**Substitution:** $\\Delta x = \\dfrac{2.0\\,\\text{m/s} + 7.0\\,\\text{m/s}}{2} \\cdot 5.0\\,\\text{s} = 4.5\\,\\text{m/s} \\cdot 5.0\\,\\text{s} = 22.5\\,\\text{m}$\n\n**Answer:** $23\\,\\text{m}$, two significant figures like the velocities and the time read from the graph.\n\n**Reasonableness:** The result lies between the rectangles $2.0\\,\\text{m/s} \\cdot 5.0\\,\\text{s} = 10\\,\\text{m}$ and $7.0\\,\\text{m/s} \\cdot 5.0\\,\\text{s} = 35\\,\\text{m}$, as it must. By dividing: the rectangle $10\\,\\text{m}$ and the triangle $\\tfrac{1}{2} \\cdot 5.0\\,\\text{m/s} \\cdot 5.0\\,\\text{s} = 12.5\\,\\text{m}$, in total the same $22.5\\,\\text{m}$."
+    },
+    {
+      "id": "jarrutus",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "A moose on the road",
+      "prompt": "A car is driving on a country road at $72\\,\\text{km/h}$ when the driver notices a moose on the road. The reaction time is $0.80\\,\\text{s}$, and after it the car brakes uniformly to a stop with a deceleration of $6.5\\,\\text{m/s}^2$. How far does the car travel from the moment the driver notices the moose until it stops? Answer in metres.",
+      "answer": 46.77,
+      "unit": "m",
+      "tolerance": 0.03,
+      "hints": [
+        "Draw the $(t,v)$ graph: first a horizontal part for the reaction time, then a falling straight line to zero.",
+        "The braking time is $t_\\text{b} = v_0 : a$, and each distance is the area of its own part.",
+        "$v_0 = 20\\,\\text{m/s}$, $t_\\text{b} = 20\\,\\text{m/s} : 6.5\\,\\text{m/s}^2 \\approx 3.08\\,\\text{s}$."
+      ],
+      "mistakes": [
+        {
+          "value": 30.77,
+          "feedback": "This is the braking distance alone. During the reaction time the car still travels at full speed: add $20\\,\\text{m/s} \\cdot 0.80\\,\\text{s}$."
+        },
+        {
+          "value": 77.54,
+          "feedback": "You calculated the braking distance as the rectangle $v_0\\,t_\\text{b}$. While braking the velocity falls uniformly, so the region is a triangle: take half."
+        },
+        {
+          "value": 16,
+          "feedback": "This is only the reaction distance. Add the braking distance, during which the velocity falls to zero."
+        }
+      ],
+      "solution": "**Given:** velocity $v_0 = 72\\,\\text{km/h}$, reaction time $t_\\text{r} = 0.80\\,\\text{s}$, deceleration $a = 6.5\\,\\text{m/s}^2$\n\n**Find:** the stopping distance $s$ in metres\n\n**Principle:** During the reaction time the car moves uniformly, and after it the velocity falls uniformly to zero (chapters *Position, velocity and uniform motion as graphs* and *Acceleration and uniformly accelerated motion*). The distance of each stage is a region of the $(t,v)$ graph: a rectangle and a triangle.\n\n**Formula:** $v = v_0 - a\\,t_\\text{b} = 0$, so $t_\\text{b} = \\dfrac{v_0}{a}$, and $s = v_0\\,t_\\text{r} + \\tfrac{1}{2}\\,v_0\\,t_\\text{b} = v_0\\,t_\\text{r} + \\dfrac{v_0^2}{2a}$\n\n**Conversions:** $72\\,\\text{km/h} = \\dfrac{72 \\cdot 1000\\,\\text{m}}{3600\\,\\text{s}} = 20\\,\\text{m/s}$\n\n**Substitution:** $s = 20\\,\\text{m/s} \\cdot 0.80\\,\\text{s} + \\dfrac{(20\\,\\text{m/s})^2}{2 \\cdot 6.5\\,\\text{m/s}^2} = 16\\,\\text{m} + 30.77\\,\\text{m} = 46.77\\,\\text{m}$\n\n**Answer:** $47\\,\\text{m}$, two significant figures like the reaction time $0.80\\,\\text{s}$ and the deceleration $6.5\\,\\text{m/s}^2$.\n\n**Reasonableness:** Braking lasts $20\\,\\text{m/s} : 6.5\\,\\text{m/s}^2 \\approx 3.1\\,\\text{s}$ at an average velocity of $10\\,\\text{m/s}$, that is, about $31\\,\\text{m}$. The reaction distance is a third of the whole distance, so attentiveness matters a great deal. A stopping distance of a few tens of metres is usual at country-road speed on a dry road."
+    },
+    {
+      "id": "koira",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "The dog and the jogger",
+      "prompt": "A jogger runs along a straight path at a constant velocity of $3.0\\,\\text{m/s}$. When the jogger is $24\\,\\text{m}$ ahead of a dog, the dog, which has been standing still, sets off after the jogger and accelerates uniformly at $1.5\\,\\text{m/s}^2$. After how many seconds does the dog catch up with the jogger?",
+      "answer": 8.0,
+      "unit": "s",
+      "tolerance": 0.03,
+      "hints": [
+        "Choose the origin at the dog's starting point and write the position of each as a function of time.",
+        "Dog: $x_\\text{D} = \\tfrac{1}{2}\\,a\\,t^2$. Jogger: $x_\\text{J} = 24\\,\\text{m} + 3.0\\,\\text{m/s} \\cdot t$. Catching up: $x_\\text{D} = x_\\text{J}$.",
+        "$0.75\\,t^2 - 3.0\\,t - 24 = 0$ (with the units left out); choose the positive root."
+      ],
+      "mistakes": [
+        {
+          "value": 2.0,
+          "feedback": "This is the moment when the velocities are equal. Then the distance between them is at its greatest. When catching up, it is the positions that are equal."
+        },
+        {
+          "value": 4.0,
+          "feedback": "You left out the jogger's head start of $24\\,\\text{m}$. The jogger's position is $24\\,\\text{m} + vt$."
+        },
+        {
+          "value": 5.12,
+          "feedback": "You forgot the factor $\\tfrac{1}{2}$ in the dog's position: the position of a body accelerating from rest is $\\tfrac{1}{2}\\,a\\,t^2$."
+        }
+      ],
+      "solution": "**Given:** the jogger's velocity $v = 3.0\\,\\text{m/s}$ and head start $x_0 = 24\\,\\text{m}$; the dog starts from rest with the acceleration $a = 1.5\\,\\text{m/s}^2$\n\n**Find:** the moment of catching up $t$ in seconds\n\n**Principle:** When the dog catches up with the jogger, they are at the same position at the same moment: $x_\\text{D}(t) = x_\\text{J}(t)$ (chapter *Comparing the motions of two bodies*). The origin is at the dog's starting point and the positive direction is the direction of running. The dog's motion is uniformly accelerated, the jogger's uniform.\n\n**Formula:** $\\tfrac{1}{2}\\,a\\,t^2 = x_0 + v\\,t$, that is, $\\tfrac{1}{2}\\,a\\,t^2 - v\\,t - x_0 = 0$, whose positive root is $t = \\dfrac{v + \\sqrt{v^2 + 2\\,a\\,x_0}}{a}$\n\n**Conversions:** All quantities are in SI units. Both terms under the square root are in $\\text{m}^2/\\text{s}^2$, so no conversions are needed.\n\n**Substitution:** Under the root $v^2 + 2\\,a\\,x_0 = (3.0\\,\\text{m/s})^2 + 2 \\cdot 1.5\\,\\text{m/s}^2 \\cdot 24\\,\\text{m} = 81\\,\\text{m}^2/\\text{s}^2$, and its square root is $9.0\\,\\text{m/s}$. So $t = \\dfrac{3.0\\,\\text{m/s} + 9.0\\,\\text{m/s}}{1.5\\,\\text{m/s}^2} = 8.0\\,\\text{s}$\n\n**Answer:** $8.0\\,\\text{s}$, two significant figures like the velocity $3.0\\,\\text{m/s}$ and the acceleration $1.5\\,\\text{m/s}^2$. The other root, $-4.0\\,\\text{s}$, is before the start, so it is rejected.\n\n**Reasonableness:** The dog's position is $\\tfrac{1}{2} \\cdot 1.5\\,\\text{m/s}^2 \\cdot (8.0\\,\\text{s})^2 = 48\\,\\text{m}$ and the jogger's $24\\,\\text{m} + 3.0\\,\\text{m/s} \\cdot 8.0\\,\\text{s} = 48\\,\\text{m}$: the same position. The dog's velocity is then $12\\,\\text{m/s}$, four times the jogger's, so the dog is faster when it catches up, as it must be."
+    },
+    {
+      "id": "pesapallo",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "The pesäpallo pitch",
+      "prompt": "In pesäpallo (Finnish baseball) the pitcher throws the ball vertically upwards at $8.0\\,\\text{m/s}$. Air resistance is neglected, and up is the positive direction. What is the ball's velocity $1.0\\,\\text{s}$ after the pitch? Give the answer with its sign in $\\text{m/s}$.",
+      "answer": -1.81,
+      "unit": "m/s",
+      "tolerance": 0.03,
+      "hints": [
+        "The acceleration is $g$ downwards during the whole flight. What is its sign when up is positive?",
+        "$v = v_0 + a\\,t$, where $a = -9.81\\,\\text{m/s}^2$.",
+        "The ball reaches its highest point at $8.0\\,\\text{m/s} : 9.81\\,\\text{m/s}^2 \\approx 0.82\\,\\text{s}$. In which direction does it move at $1.0\\,\\text{s}$?"
+      ],
+      "mistakes": [
+        {
+          "value": 1.81,
+          "feedback": "The magnitude is right, but the ball has already passed its highest point and is moving downwards. The sign of the velocity is then negative."
+        },
+        {
+          "value": 17.81,
+          "feedback": "You added the effect of the acceleration of free fall. The acceleration is downwards, that is, negative, so the velocity decreases: $v = v_0 - g\\,t$."
+        },
+        {
+          "value": -9.81,
+          "feedback": "You forgot the initial velocity. The velocity at time $t$ is the initial velocity plus the change: $v = v_0 + a\\,t$."
+        }
+      ],
+      "solution": "**Given:** initial velocity $v_0 = 8.0\\,\\text{m/s}$ upwards, time $t = 1.0\\,\\text{s}$, acceleration $a = -g = -9.81\\,\\text{m/s}^2$ (up positive)\n\n**Find:** the velocity $v$ with its sign at time $t$\n\n**Principle:** When air resistance is neglected, the ball's acceleration is $g$ downwards during the whole flight, at the highest point too. The motion is uniformly accelerated, and the sign of the velocity gives the direction (chapter *Acceleration and uniformly accelerated motion*).\n\n**Formula:** $v = v_0 + a\\,t = v_0 - g\\,t$\n\n**Conversions:** The quantities are in SI units, so no conversions are needed.\n\n**Substitution:** $v = 8.0\\,\\text{m/s} - 9.81\\,\\text{m/s}^2 \\cdot 1.0\\,\\text{s} = 8.0\\,\\text{m/s} - 9.81\\,\\text{m/s} = -1.81\\,\\text{m/s}$\n\n**Answer:** $v \\approx -1.8\\,\\text{m/s}$, that is, the ball moves downwards at a speed of $1.8\\,\\text{m/s}$. Two significant figures like the initial velocity $8.0\\,\\text{m/s}$ and the time $1.0\\,\\text{s}$.\n\n**Reasonableness:** The ball is at its highest point at $8.0\\,\\text{m/s} : 9.81\\,\\text{m/s}^2 \\approx 0.82\\,\\text{s}$, so at $1.0\\,\\text{s}$ it is already coming down and the negative sign is right. The $0.18\\,\\text{s}$ after the highest point gives the speed $9.81\\,\\text{m/s}^2 \\cdot 0.18\\,\\text{s} \\approx 1.8\\,\\text{m/s}$: the same result."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "Two carts move on the same track. Their $(t,x)$ graphs cross at $3.0\\,\\text{s}$. Which statement is correct?",
+      "choices": [
+        {
+          "text": "The carts have the same velocity at $3.0\\,\\text{s}$.",
+          "feedback": "The velocity is the slope of the $(t,x)$ graph. At the crossing point the lines usually have different steepness, so the velocities are different. What is the same is the positions. Review in the chapter *Comparing the motions of two bodies*."
+        },
+        {
+          "text": "The carts collide, because their tracks cross.",
+          "feedback": "A $(t,x)$ graph is not a picture of the track. The crossing point tells you that the carts are at the same position at the same moment, that is, they meet or pass each other. Review in the chapter *Position, velocity and uniform motion as graphs*."
+        },
+        {
+          "text": "The carts are at the same place at $3.0\\,\\text{s}$.",
+          "correct": true,
+          "feedback": "Correct. In the graph the upper line means a greater position coordinate. At the moment of meeting the bodies' graphs cross: the positions are equal."
+        }
+      ],
+      "practice": "Review meeting in the chapter [*Comparing the motions of two bodies*](fy4-12.html) and reading a $(t,x)$ graph in the chapter [*Position, velocity and uniform motion as graphs*](fy4-1.html)."
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculation",
+      "prompt": "A lift starts from rest and accelerates uniformly for $2.0\\,\\text{s}$ to $1.6\\,\\text{m/s}$, travels at this velocity for $8.0\\,\\text{s}$ and then decelerates uniformly for $2.0\\,\\text{s}$ to a stop. How many metres does the lift rise?",
+      "answer": 16.0,
+      "unit": "m",
+      "tolerance": 0.02,
+      "hints": [
+        "Sketch the $(t,v)$ graph. Which region of it is the height risen?",
+        "The region is two triangles and a rectangle.",
+        "$\\tfrac{1}{2} \\cdot 1.6\\,\\text{m/s} \\cdot 2.0\\,\\text{s} + 1.6\\,\\text{m/s} \\cdot 8.0\\,\\text{s} + \\tfrac{1}{2} \\cdot 1.6\\,\\text{m/s} \\cdot 2.0\\,\\text{s}$"
+      ],
+      "mistakes": [
+        {
+          "value": 19.2,
+          "feedback": "You multiplied the velocity $1.6\\,\\text{m/s}$ by the whole time $12\\,\\text{s}$. While accelerating and decelerating the velocity is smaller: their region is a triangle."
+        },
+        {
+          "value": 12.8,
+          "feedback": "You included only the steady stage. The lift also moves while it accelerates and decelerates."
+        },
+        {
+          "value": 14.4,
+          "feedback": "You forgot the second triangle. The lift rises $1.6\\,\\text{m}$ both while accelerating and while decelerating."
+        }
+      ],
+      "practice": "Review displacement as the area of the $(t,v)$ graph in the chapter [*Acceleration and uniformly accelerated motion*](fy4-2.html).",
+      "solution": "**Given:** acceleration for $t_1 = 2.0\\,\\text{s}$ to $v = 1.6\\,\\text{m/s}$, steady stage $t_2 = 8.0\\,\\text{s}$, deceleration $t_3 = 2.0\\,\\text{s}$\n\n**Find:** the lift's displacement $\\Delta x$ in metres\n\n**Principle:** The displacement is the area between the $(t,v)$ graph and the time axis. The region of a uniformly changing velocity is a triangle and that of a constant velocity a rectangle (chapter *Acceleration and uniformly accelerated motion*).\n\n**Formula:** $\\Delta x = \\tfrac{1}{2}\\,v\\,t_1 + v\\,t_2 + \\tfrac{1}{2}\\,v\\,t_3$\n\n**Conversions:** The velocity is in $\\text{m/s}$ and the times in seconds, so no conversions are needed.\n\n**Substitution:** $\\Delta x = \\tfrac{1}{2} \\cdot 1.6\\,\\text{m/s} \\cdot 2.0\\,\\text{s} + 1.6\\,\\text{m/s} \\cdot 8.0\\,\\text{s} + \\tfrac{1}{2} \\cdot 1.6\\,\\text{m/s} \\cdot 2.0\\,\\text{s} = 1.6\\,\\text{m} + 12.8\\,\\text{m} + 1.6\\,\\text{m} = 16.0\\,\\text{m}$\n\n**Answer:** $16\\,\\text{m}$, two significant figures like the velocity $1.6\\,\\text{m/s}$ and the times.\n\n**Reasonableness:** The average velocity is $16\\,\\text{m} : 12\\,\\text{s} \\approx 1.3\\,\\text{m/s}$, a little below the greatest velocity, because the lift travels at full speed for most of the time. $16\\,\\text{m}$ is about five floors, which suits the lift of a block of flats."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain",
+      "prompt": "When the traffic lights turn green, a car starts from rest and accelerates uniformly. At the same moment a moped passes it at a constant velocity. A student draws the $(t,v)$ graph of each and says: “The lines cross at $4\\,\\text{s}$, so that is when the car catches up with the moped.” Assess the claim. Explain what the crossing point tells you and how the moment of catching up can be worked out from the graph.",
+      "criteria": [
+        "The answer says that at the crossing point of the $(t,v)$ graphs the velocities are equal, not the positions.",
+        "The answer says that before the crossing point the moped is faster, so its lead grows and is at its greatest at the moment of crossing.",
+        "The answer says that the displacement is the area of the $(t,v)$ graph, so the car catches up with the moped when the areas under the graphs are equal.",
+        "The answer concludes that catching up happens only later, here at $8\\,\\text{s}$, when the car's velocity is twice the moped's."
+      ],
+      "model": "The claim is wrong. At the crossing point of the $(t,v)$ graphs the car and the moped have the same velocity, but they are not at the same position. Before $4\\,\\text{s}$ the moped is faster, so it covers more ground and its lead grows. The lead is therefore at its greatest exactly at the moment of crossing. After that the car is faster and starts to close the gap. The displacement is the area between the $(t,v)$ graph and the time axis, so the car catches up with the moped when the area of the car's triangle equals the area of the moped's rectangle. When the car starts from rest, this happens at twice the time, at $8\\,\\text{s}$, when the car's velocity is twice the moped's velocity. The meeting can be seen directly only in the $(t,x)$ graph, as the crossing point of the lines.",
+      "practice": "Review overtaking and the greatest distance in the chapter [*Comparing the motions of two bodies*](fy4-12.html)."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer by yourself first and only then open the answer."
+    }
+  ]
+}

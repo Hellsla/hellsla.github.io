@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Kirja on levossa pöydällä. Mikä voima on kirjan painon vastavoima Newtonin kolmannen lain mukaan? Onko se pöydän tukivoima?",
+    "a": "Painon vastavoima on voima, jolla kirja vetää Maata ylöspäin. Paino on Maan ja kirjan vuorovaikutus. Siksi vastavoima vaikuttaa Maahan. Pöydän tukivoima ei ole painon vastavoima, vaikka se on yhtä suuri ja vastakkainen. Tukivoima vaikuttaa samaan kappaleeseen eli kirjaan. Se on yhtä suuri kuin paino vain siksi, että kirja on levossa (ensimmäinen laki). Tukivoiman vastavoima on voima, jolla kirja painaa pöytää alaspäin."
+  },
+  {
+    "q": "Laatikko ($10{,}0\\,\\text{kg}$) on levossa rinteellä. Rinteen kaltevuuskulma on $30^\\circ$. Kuinka suuri on rinteen tukivoima?",
+    "a": "Pintaa vastaan kohtisuorassa vaikuttavat vain paino ja tukivoima. Siksi $N = mg\\cos\\alpha = 10{,}0\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot \\cos 30^\\circ \\approx 85{,}0\\,\\text{N}$. Tukivoima on pienempi kuin paino $98{,}1\\,\\text{N}$."
+  }
+]

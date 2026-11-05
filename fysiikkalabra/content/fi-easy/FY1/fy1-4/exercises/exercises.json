@@ -127,7 +127,7 @@
     {
       "id": "fy1-4-L2-02",
       "level": 2,
-      "text": "Kuvaajassa on tasaisesti liikkuvan kärryn kulkema matka $s$ ajan $t$ funktiona kuudessa mittauksessa. Sovita pisteisiin silmämääräisesti suora. Piirrä pisteet ruutupaperille tai aseta viivoitin kuvan päälle. Arvioi suoran avulla, kuinka pitkän matkan kärry on kulkenut hetkellä $t = 8{,}0\\,\\text{s}$. Oleta, että liike jatkuu samanlaisena. Anna vastaus metreinä.",
+      "text": "Kuvaajassa on tasaisesti liikkuvan kärryn kulkema matka $s$ ajan $t$ funktiona kuudessa mittauksessa.\n\nSovita pisteisiin silmämääräisesti suora. Piirrä pisteet ruutupaperille tai aseta viivoitin kuvan päälle. Arvioi suoran avulla, kuinka pitkän matkan kärry on kulkenut hetkellä $t = 8{,}0\\,\\text{s}$. Oleta, että liike jatkuu samanlaisena. Anna vastaus metreinä.",
       "figure": "fy1-4/scatter-points",
       "answer": 3.9,
       "unit": "m",

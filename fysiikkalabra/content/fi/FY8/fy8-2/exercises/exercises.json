@@ -87,7 +87,7 @@
     {
       "id": "fy8-2-L1-08",
       "level": 1,
-      "text": "Oppilas ratkaisi tehtävän näin: ”Vetyatomi siirtyy tilasta $n = 2$, jonka energia on $E_2 = -3{,}40\\,\\text{eV}$, tilaan $n = 3$, jonka energia on $E_3 = -1{,}51\\,\\text{eV}$. Fotonin energia on tilojen erotus $E_3 - E_2 = -1{,}51\\,\\text{eV} - (-3{,}40\\,\\text{eV}) = 1{,}89\\,\\text{eV}$, joten atomi lähettää fotonin, jonka energia on $1{,}89\\,\\text{eV}$.” Lukuarvo on oikein, mutta johtopäätös ei ole. Mikä oppilaan päättelyssä on virhe?",
+      "text": "Oppilas ratkaisi tehtävän näin: ”Vetyatomi siirtyy tilasta $n = 2$, jonka energia on $E_2 = -3{,}40\\,\\text{eV}$, tilaan $n = 3$, jonka energia on $E_3 = -1{,}51\\,\\text{eV}$. Fotonin energia on tilojen erotus $E_3 - E_2 = -1{,}51\\,\\text{eV} - (-3{,}40\\,\\text{eV}) = 1{,}89\\,\\text{eV}$, joten atomi lähettää fotonin, jonka energia on $1{,}89\\,\\text{eV}$.”\n\nLukuarvo on oikein, mutta johtopäätös ei ole. Mikä oppilaan päättelyssä on virhe?",
       "kind": [
         "error",
         "concept"

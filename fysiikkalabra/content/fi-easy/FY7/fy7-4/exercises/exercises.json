@@ -186,7 +186,7 @@
       "id": "fy7-4-L2-07",
       "level": 2,
       "core": true,
-      "text": "Kaiuttimen puhekelan voimaa mitattiin, kun kela oli magneetin raossa. Raossa säteittäisen magneettikentän magneettivuon tiheys on $1{,}1\\,\\text{T}$. Kenttä on joka kohdassa kohtisuorassa kelan johdinta vastaan. Kelan virtaa $I$ muutettiin, ja kelaan kohdistuva voima $F$ mitattiin voima-anturilla (esimerkkiaineisto). Piirrä mittauspisteistä kuvaaja ja sovita pisteisiin origon kautta kulkeva suora. Määritä suoran kulmakertoimesta kelan johtimen kokonaispituus $l$.",
+      "text": "Kaiuttimen puhekelan voimaa mitattiin, kun kela oli magneetin raossa. Raossa säteittäisen magneettikentän magneettivuon tiheys on $1{,}1\\,\\text{T}$. Kenttä on joka kohdassa kohtisuorassa kelan johdinta vastaan.\n\nKelan virtaa $I$ muutettiin, ja kelaan kohdistuva voima $F$ mitattiin voima-anturilla (esimerkkiaineisto).\n\nPiirrä mittauspisteistä kuvaaja ja sovita pisteisiin origon kautta kulkeva suora. Määritä suoran kulmakertoimesta kelan johtimen kokonaispituus $l$.",
       "kind": [
         "data",
         "graph"

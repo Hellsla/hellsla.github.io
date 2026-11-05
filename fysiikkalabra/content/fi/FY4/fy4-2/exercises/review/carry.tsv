@@ -1,4 +1,7 @@
 date	reviewer	from	to	base	categories
-2026-11-05	science	2aa6de8631579e57	0e0d175d29029adc	91d40df8ebf0	core-mark
-2026-11-05	pedagogy	2aa6de8631579e57	0e0d175d29029adc	91d40df8ebf0	core-mark
-2026-11-05	visual	2aa6de8631579e57	0e0d175d29029adc	91d40df8ebf0	core-mark
+2026-11-05	science	2aa6de8631579e57	2a999685386759fb	91d40df8ebf0	paragraphs
+2026-11-05	pedagogy	2aa6de8631579e57	2a999685386759fb	91d40df8ebf0	paragraphs
+2026-11-05	visual	2aa6de8631579e57	2a999685386759fb	91d40df8ebf0	paragraphs
+2026-11-05	science	2aa6de8631579e57	50bd1d57c918305e	91d40df8ebf0	core-mark,paragraphs
+2026-11-05	pedagogy	2aa6de8631579e57	50bd1d57c918305e	91d40df8ebf0	core-mark,paragraphs
+2026-11-05	visual	2aa6de8631579e57	50bd1d57c918305e	91d40df8ebf0	core-mark,paragraphs

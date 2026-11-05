@@ -301,7 +301,7 @@
     {
       "id": "fy1-8-L3-02",
       "level": 3,
-      "text": "Hot water cools in a cup. The temperature is $80.0\\,{}^\\circ\\text{C}$ at $t = 0\\,\\text{min}$, $68.0\\,{}^\\circ\\text{C}$ at $5.0\\,\\text{min}$, $52.0\\,{}^\\circ\\text{C}$ at $15.0\\,\\text{min}$ and $47.0\\,{}^\\circ\\text{C}$ at $20.0\\,\\text{min}$. The student's hypothesis is that the temperature falls steadily. How much greater is the rate of temperature fall during the first five minutes than during the last five minutes? Answer in K/min.",
+      "text": "Hot water cools in a cup. The temperature is $80.0\\,{}^\\circ\\text{C}$ at $t = 0\\,\\text{min}$, $68.0\\,{}^\\circ\\text{C}$ at $5.0\\,\\text{min}$, $52.0\\,{}^\\circ\\text{C}$ at $15.0\\,\\text{min}$ and $47.0\\,{}^\\circ\\text{C}$ at $20.0\\,\\text{min}$.\n\nThe student's hypothesis is that the temperature falls steadily.\n\nHow much greater is the rate of temperature fall during the first five minutes than during the last five minutes? Answer in K/min.",
       "answer": 1.4,
       "unit": "K/min",
       "tolerance": 0.02

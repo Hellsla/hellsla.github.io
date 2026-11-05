@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Elektroni lentää magneettikentän suuntaisesti. Kuinka suuri magneettinen voima siihen vaikuttaa?",
+    "a": "Voimaa ei ole lainkaan. $F = qvB\\sin\\alpha$. Kun elektroni liikkuu kentän suuntaisesti, $\\alpha = 0^\\circ$. Silloin $\\sin 0^\\circ = 0$ ja $F = 0$."
+  },
+  {
+    "q": "Valon nopeus timantissa on $1{,}24 \\cdot 10^{8}\\,\\text{m/s}$. Kuinka suuri on timantin taitekerroin?",
+    "a": "$n = \\tfrac{c}{v} = \\tfrac{3{,}00 \\cdot 10^{8}\\,\\text{m/s}}{1{,}24 \\cdot 10^{8}\\,\\text{m/s}} \\approx 2{,}42$."
+  }
+]

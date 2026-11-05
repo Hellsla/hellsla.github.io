@@ -1,0 +1,508 @@
+{
+  "version": 1,
+  "contribution": "Kertaustunti kokoaa FY5-moduulin asiat yhdeksi menetelmäksi. Asiat ovat momentti, kappaleen tasapaino, tasainen ympyräliike (kierrosaika, ratanopeus, normaalikiihtyvyys ja liikeyhtälö), gravitaatiolaki ja satelliittien ympyräradat. Menetelmä on: ensin voimakuvio, sitten tasapainoehdot tai liikeyhtälö kohti keskipistettä. Tunnilla harjoitellaan ylioppilaskokeen tyyppisiä tehtäviä: voiman varren ja momenttipisteen valinta, keskeisvoiman tunnistaminen, satelliitin rata, keskeisvoimamittauksen linearisointi ja sovitus, vipukokeen arviointi sekä silmukkaradan yhdistäminen FY4-moduulin energiaperiaatteeseen.",
+  "learn": [
+    "ratkaisemaan tasapaino-, ympyräliike- ja satelliittitehtäviä voimakuvion ja Newtonin toisen lain avulla",
+    "piirtämään ja tulkitsemaan keskeisvoimamittauksen kuvaajan ja sovituksen",
+    "arvioimaan perustellen väitteitä ja mittauksia, jotka koskevat momenttia, keskeisvoimaa ja painottomuutta"
+  ],
+  "prior": [
+    "Voiman momentti on $M = Fr$. Siinä $r$ on voiman varsi (luku *Momentti: voiman kiertävä vaikutus*)",
+    "Kun kappale on levossa, $\\Sigma\\overline{F} = \\overline{0}$ ja $\\Sigma M = 0$ (luku *Kappaleen tasapaino: voimat ja momentit*)",
+    "Ratanopeus on $v = \\tfrac{2\\pi r}{T}$. Nopeus on radan tangentin suuntainen (luku *Ympyrärata: jaksonaika ja ratanopeus*)",
+    "Tasaisessa ympyräliikkeessä kokonaisvoima osoittaa keskipisteeseen: $\\Sigma F = m\\tfrac{v^2}{r}$ (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*)",
+    "Gravitaatiovoima on $F = \\gamma\\tfrac{m_1 m_2}{r^2}$ (luku *Kappaleiden välinen gravitaatiovoima*)",
+    "Satelliitin ratanopeus on $v = \\sqrt{\\tfrac{\\gamma M}{r}}$. Radan säde on $r = R + h$ (luku *Satelliitit ja planeetat ympyräradalla*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Omakotitalon päätyseinässä eli talon kapeassa seinässä on lautasantenni. Antenni on suunnattu matalalle etelän taivaalle, kohti televisiosatelliittia. Asentaja suuntasi antennin kerran. Sen jälkeen antennia ei ole tarvinnut kääntää. Satelliitti kuitenkin kiertää Maata päiväntasaajan yläpuolella. Sen nopeus on noin $3\\,\\text{km/s}$. Kokeessa tällainen tilanne voi olla tehtävän alku. Tilanne ja luvut annetaan, mutta lakia ei anneta.",
+      "question": "Miksi satelliitti näyttää pysyvän paikallaan, kun sitä katsotaan antennista? Mikä määrää, kuinka kaukana Maasta satelliitin on kierrettävä?"
+    },
+    {
+      "id": "lt-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Lähtötaso 1: voiman varsi",
+      "prompt": "Pyörän mutteria avataan kiintoavaimella. Käsi vetää avaimen vartta $0{,}30\\,\\text{m}$:n päässä mutterin keskeltä. Voima on kuitenkin vinossa varteen nähden. Mitä tarvitaan voiman momentin laskemiseen voiman suuruuden lisäksi?",
+      "choices": [
+        {
+          "text": "Etäisyys $0{,}30\\,\\text{m}$ sellaisenaan, koska käsi on siinä kohdassa.",
+          "feedback": "Etäisyys vaikutuskohtaan eli kohtaan, jossa voima vaikuttaa, riittää vain silloin, kun voima on kohtisuorassa vartta vastaan. Vinon voiman momentin määrää voiman varsi. Se on lyhyempi kuin $0{,}30\\,\\text{m}$. Kertaa luvussa *Momentti: voiman kiertävä vaikutus*."
+        },
+        {
+          "text": "Akselin kohtisuora etäisyys voiman vaikutussuorasta eli voiman varsi.",
+          "feedback": "Oikein. Varsi on $r = d\\sin\\alpha$. Siksi vino veto antaa pienemmän momentin kuin yhtä suuri kohtisuora veto. Kertaa tarvittaessa luvussa *Momentti: voiman kiertävä vaikutus*.",
+          "correct": true
+        },
+        {
+          "text": "Avaimen koko pituus, koska pidempi avain antaa aina suuremman voiman.",
+          "feedback": "Pitkä avain ei lisää käden voimaa. Kun ote on kauempana akselista, voiman varsi on pidempi. Momentti on voima kertaa varsi. Kertaa luvussa *Momentti: voiman kiertävä vaikutus*."
+        }
+      ]
+    },
+    {
+      "id": "lt-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Lähtötaso 2: kaksi tukea",
+      "prompt": "Tasa-aineinen lankku on kahden maalauspukin päällä. Tasa-aineinen tarkoittaa, että lankku on joka kohdasta samanlainen. Pukki 1 on $0{,}5\\,\\text{m}$:n päässä lankun keskikohdasta. Pukki 2 on $1{,}5\\,\\text{m}$:n päässä keskikohdasta. Kumpi pukki kantaa suuremman osan lankun painosta?",
+      "choices": [
+        {
+          "text": "Pukki 2, koska sen etäisyys painopisteestä on suurempi.",
+          "feedback": "Pidempi etäisyys ei tarkoita suurempaa voimaa. Momenttiehto painopisteen suhteen on $N_1 \\cdot 0{,}5\\,\\text{m} = N_2 \\cdot 1{,}5\\,\\text{m}$. Siksi $N_2$ on pienempi. Kertaa luvussa *Kappaleen tasapaino: voimat ja momentit*."
+        },
+        {
+          "text": "Kumpikin kantaa puolet, koska lankku on tasa-aineinen.",
+          "feedback": "Kumpikin tuki kantaa puolet painosta vain silloin, kun tuet ovat yhtä kaukana painopisteestä. Tässä etäisyydet ovat erisuuret. Siksi myös tukivoimat ovat erisuuret. Kertaa luvussa *Kappaleen tasapaino: voimat ja momentit*."
+        },
+        {
+          "text": "Pukki 1, koska se on lähempänä lankun painopistettä.",
+          "feedback": "Oikein. Momenttiehto painopisteen suhteen on $N_1 \\cdot 0{,}5\\,\\text{m} = N_2 \\cdot 1{,}5\\,\\text{m}$. Siksi pukki 1 kantaa kolme kertaa niin paljon kuin pukki 2. Se kantaa siis $75\\,\\%$ painosta. Kertaa tarvittaessa luvussa *Kappaleen tasapaino: voimat ja momentit*.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "lt-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Lähtötaso 3: kaksi kohtaa samalla levyllä",
+      "prompt": "Levysoittimen levy pyörii tasaisesti. Levyllä on kaksi tarraa. Tarra A on $5\\,\\text{cm}$:n päässä keskiöstä eli levyn keskipisteestä. Tarra B on $15\\,\\text{cm}$:n päässä keskiöstä. Miten tarrojen kierrosajat ja ratanopeudet eroavat toisistaan?",
+      "choices": [
+        {
+          "text": "Kierrosajat ovat samat. B:n ratanopeus on kolminkertainen.",
+          "feedback": "Oikein. Levy on jäykkä, joten kierrosaika $T$ on sama. Ratanopeus $v = \\tfrac{2\\pi r}{T}$ on suoraan verrannollinen säteeseen: kun säde on kolminkertainen, myös ratanopeus on kolminkertainen. Kertaa tarvittaessa luvussa *Ympyrärata: jaksonaika ja ratanopeus*.",
+          "correct": true
+        },
+        {
+          "text": "Ratanopeudet ovat samat, mutta B:n kierrosaika on kolminkertainen.",
+          "feedback": "Levy on jäykkä. Siksi levyn jokainen kohta tekee kierroksen samassa ajassa. B kulkee samassa ajassa kolme kertaa pidemmän kehän eli ympyrän reunan. Siksi B:n ratanopeus on kolminkertainen. Kertaa luvussa *Ympyrärata: jaksonaika ja ratanopeus*."
+        },
+        {
+          "text": "Kierrosajat ja ratanopeudet ovat samat, koska levy pyörii tasaisesti.",
+          "feedback": "Tasainen pyöriminen tarkoittaa, että vauhti ei muutu ajan kuluessa. Eri säteillä vauhdit ovat silti erisuuret. B kulkee yhdellä kierroksella pidemmän matkan samassa ajassa. Kertaa luvussa *Ympyrärata: jaksonaika ja ratanopeus*."
+        }
+      ]
+    },
+    {
+      "id": "lt-4",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Lähtötaso 4: auto kaarteessa",
+      "prompt": "Auto ajaa vaakasuoran tien kaarteessa. Vauhti on tasainen. Ilmanvastusta ja vierimisvastusta ei oteta huomioon. Mikä vaakasuora voima autoon vaikuttaa?",
+      "choices": [
+        {
+          "text": "Keskipakoisvoima ulospäin ja yhtä suuri kitka sisäänpäin.",
+          "feedback": "Jos vaakasuorat voimat kumoaisivat toisensa, auto jatkaisi suoraan. Kumota tarkoittaa, että voimien summa on nolla. Keskipakoisvoimaa ei ole: mikään kappale ei vedä autoa ulospäin. Kertaa luvussa *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*."
+        },
+        {
+          "text": "Moottorin voima eteenpäin radan tangentin suuntaan.",
+          "feedback": "Vauhti ei muutu, eikä vastuksia ole. Siksi tangentin suuntaista kokonaisvoimaa ei tarvita. Suunnan muutos vaatii voiman, joka osoittaa kaarteen keskipisteeseen. Kertaa luvussa *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*."
+        },
+        {
+          "text": "Tien kitka renkaisiin kaarteen keskipisteen suuntaan.",
+          "feedback": "Oikein. Kitka on ainoa vaakasuora voima, joten se on kokonaisvoima: $F_\\mu = m\\tfrac{v^2}{r}$. Liukkaalla tiellä lepokitka ei riitä. Silloin auto kulkee suoremmin kuin tie kaartaa. Kertaa tarvittaessa luvussa *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "lt-5",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Lähtötaso 5: gravitaatio kauempana",
+      "prompt": "Luotain on avaruuteen lähetetty mittalaite. Luotaimen paino Maan pinnalla on $800\\,\\text{N}$. Luotain nousee $6371\\,\\text{km}$:n korkeudelle. Silloin sen etäisyys Maan keskipisteestä on kaksi Maan sädettä. Kuinka suuri Maan gravitaatiovoima luotaimeen silloin vaikuttaa?",
+      "choices": [
+        {
+          "text": "Noin $400\\,\\text{N}$, koska etäisyys keskipisteestä kaksinkertaistuu.",
+          "feedback": "Gravitaatiovoima on kääntäen verrannollinen etäisyyden *neliöön*, ei etäisyyteen. Kääntäen verrannollinen tarkoittaa, että kun toinen kasvaa kaksinkertaiseksi, toinen pienenee puoleen. Kaksinkertainen etäisyys antaa neljäsosan voimasta. Kertaa luvussa *Kappaleiden välinen gravitaatiovoima*."
+        },
+        {
+          "text": "Noin $200\\,\\text{N}$, koska voima pienenee etäisyyden neliön mukaan.",
+          "feedback": "Oikein. $F = \\gamma\\tfrac{Mm}{r^2}$. Kun etäisyys on kaksinkertainen, voima on $\\tfrac14 \\cdot 800\\,\\text{N} = 200\\,\\text{N}$. Kertaa tarvittaessa luvussa *Kappaleiden välinen gravitaatiovoima*.",
+          "correct": true
+        },
+        {
+          "text": "Nolla, koska luotain on jo avaruudessa ilmakehän yläpuolella.",
+          "feedback": "Gravitaatio ei lopu ilmakehän rajalla. Se heikkenee etäisyyden neliön mukaan, mutta se ei koskaan muutu nollaksi. Kertaa luvussa *Kappaleiden välinen gravitaatiovoima*."
+        }
+      ]
+    },
+    {
+      "id": "lt-6",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Lähtötaso 6: painottomuus",
+      "prompt": "Avaruusasema kiertää Maata noin $400\\,\\text{km}$:n korkeudella. Astronautti leijuu aseman sisällä. Mikä selitys on fysiikan kannalta oikea?",
+      "choices": [
+        {
+          "text": "Asemalla ei ole painovoimaa, koska asema on niin kaukana Maasta.",
+          "feedback": "$400\\,\\text{km}$ on vähän verrattuna Maan säteeseen $6371\\,\\text{km}$. Siksi gravitaatio on siellä lähes yhtä voimakas kuin maanpinnalla. Ilman gravitaatiota asema ei pysyisi radallaan. Kertaa luvussa *Satelliitit ja planeetat ympyräradalla*."
+        },
+        {
+          "text": "Keskipakoisvoima kumoaa gravitaation, joten kokonaisvoima on nolla.",
+          "feedback": "Jos kokonaisvoima olisi nolla, asema jatkaisi suoraan. Se ei kiertäisi Maata. Gravitaatiovoima on kokonaisvoima, joka asemaan vaikuttaa. Kertaa luvussa *Satelliitit ja planeetat ympyräradalla*."
+        },
+        {
+          "text": "Asema ja astronautti putoavat vapaasti yhdessä, joten tukivoima on nolla.",
+          "feedback": "Oikein. Gravitaatio vaikuttaa koko ajan. Se antaa asemalle ja astronautille saman kiihtyvyyden kohti Maata. Siksi lattia ei paina astronauttia. Astronautin paino on silti lähes $90\\,\\%$ maanpinnan arvosta. Kertaa tarvittaessa luvussa *Satelliitit ja planeetat ympyräradalla*.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "aineisto",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Kolme satelliittia samalla käyrällä",
+      "source": "model",
+      "source_note": "Käyrä on luvun *Satelliitit ja planeetat ympyräradalla* kuvaaja. Se on laskettu kaavasta $v = \\sqrt{\\tfrac{\\gamma M}{r}}$. Pisteet on laskettu satelliittien todellisista kiertoajoista.",
+      "figure": "fy5-6/vr",
+      "text": "Kuvaajassa on satelliitin ratanopeus $v$ radan säteen $r$ funktiona. Satelliitti kiertää Maata ympyrärataa. Säde on mitattu Maan keskipisteestä. Vaaka-akselin yksikkö on $1000\\,\\text{km}$. Käyrälle on merkitty kolme satelliittia: avaruusasema ISS, GPS-satelliitti ja geostationaarinen satelliitti. Geostationaarinen satelliitti pysyy aina saman paikan yläpuolella. Mieti ensin, miksi käyrä laskee. Miksi kauempana kiertävä satelliitti liikkuu hitaammin, vaikka sen rata on pidempi? Vastaa sitten alla GPS-satelliitin kiertoajalla.",
+      "question": {
+        "type": "numeric",
+        "prompt": "Lue kuvaajasta GPS-satelliitin radan säde ja ratanopeus. Kuinka pitkä on GPS-satelliitin kiertoaika? Vastaa tunteina.",
+        "answer": 11.98,
+        "unit": "h",
+        "tolerance": 0.07,
+        "hints": [
+          "Etsi GPS-piste. Lue sen kohdalta vaaka-akselilta säde $r$ ja pystyakselilta ratanopeus $v$. Huomaa akselien yksiköt $1000\\,\\text{km}$ ja $\\text{km/s}$.",
+          "Yhdellä kierroksella satelliitti kulkee ympyrän kehän $2\\pi r$. Sen ratanopeus on $v$. Siksi $T = \\tfrac{2\\pi r}{v}$.",
+          "$T = \\dfrac{2\\pi \\cdot 26{,}6 \\cdot 10^{6}\\,\\text{m}}{3{,}9 \\cdot 10^{3}\\,\\text{m/s}}$. Muunna lopuksi tunneiksi: $1\\,\\text{h} = 3600\\,\\text{s}$."
+        ],
+        "mistakes": [
+          {
+            "value": 43120,
+            "feedback": "Tämä on kiertoaika sekunteina. Muunna tunneiksi: $1\\,\\text{h} = 3600\\,\\text{s}$."
+          },
+          {
+            "value": 43.12,
+            "feedback": "Sijoitit säteen tuhansina kilometreinä ja nopeuden kilometreinä sekunnissa. Siksi tulos on tuhansina sekunteina. Muunna ensin $r$ metreiksi ja $v$ yksikköön $\\text{m/s}$."
+          },
+          {
+            "value": 1.91,
+            "feedback": "Jaoit säteen nopeudella. Kierroksella kuljettu matka on ympyrän kehä $2\\pi r$, ei säde."
+          }
+        ],
+        "solution": "**Annettu:** kuvaajasta GPS-satelliitin radan säde $r \\approx 26{,}6 \\cdot 1000\\,\\text{km}$ ja ratanopeus $v \\approx 3{,}87\\,\\text{km/s}$\n\n**Kysytty:** kiertoaika $T$ tunteina\n\n**Periaate:** Satelliitti on tasaisessa ympyräliikkeessä. Maan gravitaatio on ainoa voima. Se kääntää nopeuden suuntaa, mutta se ei muuta vauhtia. Yhdellä kierroksella satelliitti kulkee ympyrän kehän $2\\pi r$. Vauhti $v$ on koko ajan sama (luvut *Ympyrärata: jaksonaika ja ratanopeus* ja *Satelliitit ja planeetat ympyräradalla*).\n\n**Kuvaajan lukeminen:** GPS-piste on vaaka-akselilla vähän lukeman $25$ oikealla puolella, noin kohdassa $26{,}6$. Pystyakselilla se on vähän alle $4$, noin kohdassa $3{,}87$. Säde on siis noin $26\\,600\\,\\text{km}$, ja ratanopeus on noin $3{,}87\\,\\text{km/s}$.\n\n**Kaava:** $v = \\dfrac{2\\pi r}{T}$, joten $T = \\dfrac{2\\pi r}{v}$\n\n**Muunnokset:** $r = 26{,}6 \\cdot 1000\\,\\text{km} = 26{,}6 \\cdot 10^{6}\\,\\text{m}$ ja $v = 3{,}87\\,\\text{km/s} = 3{,}87 \\cdot 1000\\,\\text{m/s} = 3870\\,\\text{m/s}$. Lopuksi $1\\,\\text{h} = 3600\\,\\text{s}$.\n\n**Sijoitus:** $T = \\dfrac{2\\pi \\cdot 26{,}6 \\cdot 10^{6}\\,\\text{m}}{3870\\,\\text{m/s}} = 43\\,190\\,\\text{s} = \\dfrac{43\\,190}{3600}\\,\\text{h} = 12{,}0\\,\\text{h}$\n\n**Vastaus:** $T \\approx 12\\,\\text{h}$. Tuloksessa on kaksi merkitsevää numeroa, koska kuvaajasta luetut arvot ovat noin kahden numeron tarkkuudella.\n\n**Järkevyys:** GPS-satelliitin todellinen kiertoaika on $11\\,\\text{h}\\;58\\,\\text{min}$ eli noin puoli vuorokautta. Lukema on siis oikea. ISS kiertää Maan noin puolessatoista tunnissa. Geostationaarinen satelliitti kiertää noin vuorokaudessa. Tulos on näiden välissä, kuten säteiden perusteella pitää olla. Kauempana rata on pidempi ja vauhti pienempi. Siksi kiertoaika kasvaa nopeasti."
+      }
+    },
+    {
+      "id": "teoriatiivistelma",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava",
+        "Virheet",
+        "Kertaa"
+      ]
+    },
+    {
+      "id": "virhe-momentti",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe: arkun kansi",
+      "prompt": "Puuarkun kansi kääntyy saranoiden ympäri. Saranat ovat kannen takareunassa. Kannen syvyys saranoista etureunaan on $0{,}50\\,\\text{m}$. Kantta nostetaan etureunasta $30\\,\\text{N}$:n voimalla. Voima on $40^\\circ$:n kulmassa kanteen nähden. Opiskelija laski voiman momentin saranoiden suhteen näin: $M = Fd = 30\\,\\text{N} \\cdot 0{,}50\\,\\text{m} = 15\\,\\text{Nm}$. Mikä ratkaisussa on väärin?",
+      "choices": [
+        {
+          "text": "Varsi on $d\\cos 40^\\circ$, joten momentti on noin $11\\,\\text{Nm}$.",
+          "feedback": "Kulma on voiman ja kannen välinen. Momentin antaa voiman komponentti eli osa, joka on kohtisuorassa kantta vastaan: $F\\sin 40^\\circ$. Kannen suuntainen komponentti $F\\cos 40^\\circ$ kulkee saranan kautta. Se ei kierrä kantta. Kertaa luvussa *Momentti: voiman kiertävä vaikutus*."
+        },
+        {
+          "text": "Varsi on $d\\sin 40^\\circ$, joten momentti on noin $9{,}6\\,\\text{Nm}$.",
+          "feedback": "Oikein. Voima ei ole kohtisuorassa kantta vastaan. Siksi varsi on lyhyempi kuin $0{,}50\\,\\text{m}$: $r = 0{,}50\\,\\text{m} \\cdot \\sin 40^\\circ \\approx 0{,}32\\,\\text{m}$ ja $M = 30\\,\\text{N} \\cdot 0{,}32\\,\\text{m} \\approx 9{,}6\\,\\text{Nm}$.",
+          "correct": true
+        },
+        {
+          "text": "Momentin yksikkö on joule, koska se on newton kertaa metri.",
+          "feedback": "Momentin yksikkö on $\\text{Nm}$. Työssä matka on voiman suuntainen. Momentissa varsi on kohtisuorassa voimaa vastaan. Siksi yksiköt pidetään erillään. Kertaa luvussa *Momentti: voiman kiertävä vaikutus*."
+        },
+        {
+          "text": "Kannen oma paino pitää laskea mukaan nostovoiman momenttiin.",
+          "feedback": "Kannen painolla on oma momenttinsa. Tehtävässä kysytään kuitenkin nostovoiman momenttia. Virhe on voiman varressa. Kertaa luvussa *Momentti: voiman kiertävä vaikutus*."
+        }
+      ]
+    },
+    {
+      "id": "lue-kuvaaja",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Lue kuvaaja: normaalikiihtyvyys",
+      "figure": "fy5-4/kuvaaja",
+      "prompt": "Kuvaajassa on normaalikiihtyvyys ratanopeuden funktiona. Kuvaajassa on kaksi radan sädettä: $50\\,\\text{m}$ ja $100\\,\\text{m}$. Mikä väite on kuvaajan perusteella totta?",
+      "choices": [
+        {
+          "text": "Kun säde kaksinkertaistuu ja nopeus pysyy samana, kiihtyvyys kaksinkertaistuu.",
+          "feedback": "Kuvaajassa säteen $100\\,\\text{m}$ käyrä on *alempana*. Kaksinkertainen säde puolittaa kiihtyvyyden, koska $a_\\text{n} = \\tfrac{v^2}{r}$. Kertaa luvussa *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*."
+        },
+        {
+          "text": "Kiihtyvyys on suoraan verrannollinen nopeuteen, koska käyrät alkavat origosta.",
+          "feedback": "Käyrä kulkee origon kautta, mutta se ei ole suora. Käyrät jyrkkenevät, kun nopeus kasvaa. Suoraan verrannollisuus näkyisi suorana. Kiihtyvyys on verrannollinen nopeuden neliöön. Kertaa luvussa *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*."
+        },
+        {
+          "text": "Kun nopeus kaksinkertaistuu ja säde pysyy samana, kiihtyvyys nelinkertaistuu.",
+          "feedback": "Oikein. Säteellä $50\\,\\text{m}$ kiihtyvyys on noin $2{,}0\\,\\text{m/s}^2$, kun nopeus on $10\\,\\text{m/s}$. Kun nopeus on $20\\,\\text{m/s}$, kiihtyvyys on noin $8{,}0\\,\\text{m/s}^2$. Näin kaava $a_\\text{n} = \\tfrac{v^2}{r}$ ennustaa.",
+          "correct": true
+        },
+        {
+          "text": "Nopeudella $30\\,\\text{m/s}$ kiihtyvyys on molemmilla säteillä sama.",
+          "feedback": "Käyrät erkanevat eli menevät kauemmas toisistaan, kun nopeus kasvaa. Nopeudella $30\\,\\text{m/s}$ kiihtyvyydet ovat $18\\,\\text{m/s}^2$ ja $9\\,\\text{m/s}^2$. Kertaa luvussa *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*."
+        }
+      ]
+    },
+    {
+      "id": "maalari",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Väite: maalari lankulla",
+      "prompt": "Lankku on kahden pukin päällä. Maalari kävelee lankulla vasemman pukin kohdalta kohti oikeaa pukkia. Lankku pysyy levossa. Mikä väite pukkien tukivoimista on totta, kun maalari kävelee?",
+      "choices": [
+        {
+          "text": "Molemmat tukivoimat pysyvät samoina, koska paino ei muutu.",
+          "feedback": "Painojen summa pysyy samana. Siksi myös tukivoimien summa pysyy samana. Voimien jako pukkien kesken kuitenkin muuttuu. Pukki, joka on lähempänä maalaria, kantaa enemmän. Jaon määrää momenttiehto. Kertaa luvussa *Kappaleen tasapaino: voimat ja momentit*."
+        },
+        {
+          "text": "Oikea tukivoima kasvaa, mutta vasen tukivoima ei muutu.",
+          "feedback": "Silloin tukivoimien summa kasvaisi, vaikka painot pysyvät samoina. Voimien summa ei olisi nolla. Kun oikea tukivoima kasvaa, vasemman tukivoiman on pienennyttävä yhtä paljon. Kertaa luvussa *Kappaleen tasapaino: voimat ja momentit*."
+        },
+        {
+          "text": "Tukivoimien summa kasvaa, kun maalari lähestyy oikeaa pukkia.",
+          "feedback": "Voimien summa on koko ajan nolla. Siksi tukivoimien summa on aina yhtä suuri kuin painojen summa. Maalarin paikka muuttaa vain sitä, miten voimat jakautuvat. Kertaa luvussa *Kappaleen tasapaino: voimat ja momentit*."
+        },
+        {
+          "text": "Oikea tukivoima kasvaa ja vasen pienenee. Summa pysyy samana.",
+          "feedback": "Oikein. Lankku ei etene, joten $N_1 + N_2 = G_\\text{lankku} + G_\\text{maalari}$ pysyy samana. Momenttiehto vasemman pukin suhteen näyttää, että $N_2$ kasvaa. Se kasvaa, koska maalarin painon varsi kasvaa.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "satelliitin-voimat",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Mikä voimakuvio: satelliitti",
+      "prompt": "Satelliitti kiertää Maata ympyrärataa. Mikä sanallinen kuvaus satelliitin voimakuviosta on oikein?",
+      "choices": [
+        {
+          "text": "Gravitaatiovoima kohti Maan keskipistettä ja yhtä suuri keskipakoisvoima ulospäin.",
+          "feedback": "Keskipakoisvoimaa ei ole, eikä sitä piirretä. Jos voimat kumoaisivat toisensa, satelliitti jatkaisi suoraan radan tangentin suuntaan. Kertaa luvussa *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*."
+        },
+        {
+          "text": "Vain gravitaatiovoima kohti Maan keskipistettä. Nopeus merkitään erikseen.",
+          "feedback": "Oikein. Gravitaatio on ainoa voima. Siksi se on kokonaisvoima. Se osoittaa keskipisteeseen ja antaa normaalikiihtyvyyden $\\tfrac{v^2}{r}$. Nopeus merkitään omana nuolenaan kappaleen viereen. Nopeutta ei merkitä voimaksi.",
+          "correct": true
+        },
+        {
+          "text": "Gravitaatiovoima kohti Maata ja liikkeen suuntainen voima, joka pitää vauhdin.",
+          "feedback": "Vauhti säilyy eli pysyy samana ilman voimaa. Ympyräradalla gravitaatio on kohtisuorassa nopeutta vastaan. Siksi se ei muuta vauhtia. Se kääntää nopeuden suuntaa. Kertaa luvussa *Satelliitit ja planeetat ympyräradalla*."
+        },
+        {
+          "text": "Ei yhtään voimaa, koska satelliitti on avaruudessa painottomassa tilassa.",
+          "feedback": "Painottomuus tarkoittaa, että tukivoima on nolla. Se ei tarkoita, että gravitaatio puuttuu. Ilman voimaa satelliitti jatkaisi suoraan. Kertaa luvussa *Satelliitit ja planeetat ympyräradalla*."
+        }
+      ]
+    },
+    {
+      "id": "poljin",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Polkimen momentti",
+      "prompt": "Pyöräilijä seisoo polkimen päällä. Hän painaa poljinta $520\\,\\text{N}$:n voimalla suoraan alaspäin. Kampi on tanko, joka yhdistää polkimen keskiön akseliin. Kammen pituus keskiön akselista polkimen akseliin on $0{,}170\\,\\text{m}$. Kampi osoittaa eteenpäin. Se on $35^\\circ$ vaakatason yläpuolella. Kuinka suuri on voiman momentti keskiön akselin suhteen?",
+      "answer": 72.41,
+      "unit": "Nm",
+      "tolerance": 0.03,
+      "hints": [
+        "Voiman varsi on keskiön akselin kohtisuora etäisyys voiman vaikutussuorasta. Piirrä kampi. Piirrä myös pystysuora viiva polkimen kautta.",
+        "Pystysuora vaikutussuora on akselista yhtä kaukana kuin kammen pää vaakasuunnassa. Tämä etäisyys on $r = d\\cos 35^\\circ$.",
+        "$M = 520\\,\\text{N} \\cdot 0{,}170\\,\\text{m} \\cdot \\cos 35^\\circ$"
+      ],
+      "mistakes": [
+        {
+          "value": 88.4,
+          "feedback": "Kerroit voiman kammen pituudella. Voima on vinossa kampeen nähden. Siksi varsi on lyhyempi kuin $0{,}170\\,\\text{m}$."
+        },
+        {
+          "value": 50.7,
+          "feedback": "Käytit kulman $35^\\circ$ siniä. Kulma on kammen ja *vaakatason* välinen. Pystysuoran voiman varsi on kammen pään vaakasuora etäisyys akselista $d\\cos 35^\\circ$."
+        }
+      ],
+      "solution": "**Annettu:** voima $F = 520\\,\\text{N}$ suoraan alas, kammen pituus $d = 0{,}170\\,\\text{m}$, kampi $35^\\circ$ vaakatason yläpuolella\n\n**Kysytty:** voiman momentti $M$ keskiön akselin suhteen\n\n**Periaate:** Kampi voi vain kiertyä keskiön akselin ympäri. Siksi voiman kiertävän vaikutuksen kertoo momentti $M = Fr$. Varsi $r$ on akselin kohtisuora etäisyys voiman pystysuorasta vaikutussuorasta. Voiman ja kammen jatkeen välinen kulma on $\\alpha = 90^\\circ + 35^\\circ = 125^\\circ$. Siksi $r = d\\sin 125^\\circ = d\\cos 35^\\circ$ (luku *Momentti: voiman kiertävä vaikutus*).\n\n**Kaava:** $M = Fr$ ja $r = d\\cos 35^\\circ$, joten $M = Fd\\cos 35^\\circ$\n\n**Muunnokset:** Ei tarvita. Voima on newtoneina ja pituus metreinä. Siksi momentti saadaan newtonmetreinä.\n\n**Sijoitus:** $M = 520\\,\\text{N} \\cdot 0{,}170\\,\\text{m} \\cdot \\cos 35^\\circ = 88{,}4\\,\\text{Nm} \\cdot 0{,}8192 = 72{,}41\\,\\text{Nm}$\n\n**Vastaus:** $M \\approx 72\\,\\text{Nm}$. Tuloksessa on kaksi merkitsevää numeroa, kuten kulmassa $35^\\circ$.\n\n**Järkevyys:** Kun kampi on vaakasuorassa, varsi on koko $0{,}170\\,\\text{m}$. Silloin momentti on suurin, $88\\,\\text{Nm}$. Kun kampi on pystyssä, varsi on nolla. Tulos on näiden välissä. Kulmalla $35^\\circ$ varsi on vielä yli $80\\,\\%$ kammen pituudesta."
+    },
+    {
+      "id": "lumilapio",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Lumilapio vaakasuorassa",
+      "prompt": "Lumilapiolla nostetaan $4{,}0\\,\\text{kg}$ lunta. Lapio pidetään hetken paikallaan vaakasuorassa. Takakäsi on varren päässä. Etukäsi tukee vartta $0{,}45\\,\\text{m}$:n päässä takakädestä. Lumen painopiste on $1{,}30\\,\\text{m}$:n päässä takakädestä. Lapion massa on $1{,}5\\,\\text{kg}$. Lapion painopiste on $0{,}90\\,\\text{m}$:n päässä takakädestä. Kädet vaikuttavat lapioon pystysuoraan. Kuinka suurella voimalla etukäsi tukee lapiota?",
+      "answer": 142.8,
+      "unit": "N",
+      "tolerance": 0.03,
+      "hints": [
+        "Valitse momenttipisteeksi takakäsi. Silloin takakäden voimaa ei tarvitse tuntea, koska se ei ole momenttiehdossa.",
+        "Etukäden voima kiertää lapiota yhteen suuntaan. Lumen ja lapion painot kiertävät sitä toiseen suuntaan: $F_\\text{e} \\cdot 0{,}45\\,\\text{m} = m_\\text{lumi} g \\cdot 1{,}30\\,\\text{m} + m_\\text{lapio} g \\cdot 0{,}90\\,\\text{m}$.",
+        "$F_\\text{e} \\cdot 0{,}45\\,\\text{m} = (4{,}0\\,\\text{kg} \\cdot 1{,}30\\,\\text{m} + 1{,}5\\,\\text{kg} \\cdot 0{,}90\\,\\text{m}) \\cdot 9{,}81\\,\\text{m/s}^2$. Ratkaise tästä $F_\\text{e}$."
+      ],
+      "mistakes": [
+        {
+          "value": 113.4,
+          "feedback": "Unohdit lapion oman painon. Sekin kiertää lapiota takakäden ympäri. Sen varsi on $0{,}90\\,\\text{m}$."
+        },
+        {
+          "value": 88.8,
+          "feedback": "Tämä on takakäden voima, joka osoittaa alaspäin. Etukäden voima on sitä suurempi. Etukäsi kannattelee sekä painot että takakäden painalluksen."
+        },
+        {
+          "value": 53.96,
+          "feedback": "Tämä on lumen ja lapion yhteinen paino. Etukäsi on lähellä takakättä. Siksi etukäden voima on paljon suurempi kuin paino. Käytä momenttiehtoa."
+        }
+      ],
+      "solution": "**Annettu:** lumi $m_\\text{lumi} = 4{,}0\\,\\text{kg}$ etäisyydellä $1{,}30\\,\\text{m}$, lapio $m_\\text{lapio} = 1{,}5\\,\\text{kg}$ etäisyydellä $0{,}90\\,\\text{m}$ ja etukäsi etäisyydellä $0{,}45\\,\\text{m}$, kaikki takakädestä mitattuna; lapio on levossa vaakasuorassa; $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** etukäden voima $F_\\text{e}$\n\n**Periaate:** Lapio on levossa, joten se on tasapainossa. Voimien summa on nolla, ja momenttien summa on nolla. Valitaan momenttipisteeksi takakäsi. Silloin takakäden tuntematon voima ei ole momenttiehdossa. Voimat ovat pystysuoria ja varsi on vaakasuora. Siksi voimien varret ovat etäisyydet takakädestä (luku *Kappaleen tasapaino: voimat ja momentit*).\n\n**Kaava:** $F_\\text{e} \\cdot 0{,}45\\,\\text{m} - m_\\text{lumi} g \\cdot 1{,}30\\,\\text{m} - m_\\text{lapio} g \\cdot 0{,}90\\,\\text{m} = 0$, joten $F_\\text{e} = \\dfrac{(m_\\text{lumi} \\cdot 1{,}30\\,\\text{m} + m_\\text{lapio} \\cdot 0{,}90\\,\\text{m})\\,g}{0{,}45\\,\\text{m}}$\n\n**Muunnokset:** Ei tarvita. Massat ovat kilogrammoina ja etäisyydet metreinä.\n\n**Sijoitus:** Painojen momenttien summa takakäden suhteen on $(4{,}0\\,\\text{kg} \\cdot 1{,}30\\,\\text{m} + 1{,}5\\,\\text{kg} \\cdot 0{,}90\\,\\text{m}) \\cdot 9{,}81\\,\\text{m/s}^2 = 6{,}55\\,\\text{kg} \\cdot \\text{m} \\cdot 9{,}81\\,\\text{m/s}^2 = 64{,}26\\,\\text{N} \\cdot \\text{m}$. Siksi $F_\\text{e} = \\dfrac{64{,}26\\,\\text{N} \\cdot \\text{m}}{0{,}45\\,\\text{m}} = 142{,}8\\,\\text{N}$\n\n**Vastaus:** $F_\\text{e} \\approx 140\\,\\text{N}$. Tuloksessa on kaksi merkitsevää numeroa, kuten massassa $4{,}0\\,\\text{kg}$ ja etäisyydessä $0{,}45\\,\\text{m}$.\n\n**Järkevyys:** Lumen ja lapion paino on vain $5{,}5\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\approx 54\\,\\text{N}$. Etukäden varsi on lyhyt, joten etukäden voima on lähes kolminkertainen painoon verrattuna. Takakäden on painettava alas voimalla $143\\,\\text{N} - 54\\,\\text{N} \\approx 89\\,\\text{N}$. Siksi lapion pitäminen vaakasuorassa tuntuu raskaalta. Kädet kannattaa pitää kaukana toisistaan."
+    },
+    {
+      "id": "puhelin",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Puhelin liikenneympyrässä",
+      "prompt": "Puhelin on auton kojelaudalla liukuestematon päällä. Liukuestematto on matto, joka estää liukumista. Puhelimen ja maton välinen lepokitkakerroin on $0{,}40$. Auto ajaa vaakasuorassa liikenneympyrässä tasaisella vauhdilla. Puhelin kulkee ympyrää, jonka säde on $15\\,\\text{m}$. Millä suurimmalla nopeudella auto voi ajaa niin, että puhelin ei lähde liukumaan? Vastaa kilometreinä tunnissa.",
+      "answer": 27.62,
+      "unit": "km/h",
+      "tolerance": 0.03,
+      "hints": [
+        "Mikä voima pitää puhelimen ympyräradalla auton mukana? Mihin suuntaan voima osoittaa?",
+        "Lepokitka on ainoa vaakasuora voima, joka vaikuttaa puhelimeen: $F_{\\mu 0} = m\\tfrac{v^2}{r}$. Lepokitka voi olla enintään $\\mu_0 N = \\mu_0 mg$.",
+        "$v = \\sqrt{\\mu_0 g r}$. Muunna lopuksi: $1\\,\\text{m/s} = 3{,}6\\,\\text{km/h}$."
+      ],
+      "mistakes": [
+        {
+          "value": 7.67,
+          "feedback": "Tämä on nopeus metreinä sekunnissa. Muunna: $1\\,\\text{m/s} = 3{,}6\\,\\text{km/h}$."
+        },
+        {
+          "value": 58.86,
+          "feedback": "Laskit nopeuden neliön $\\mu_0 g r$ yksikössä $\\text{m}^2/\\text{s}^2$. Ota neliöjuuri. Muunna sitten kilometreiksi tunnissa."
+        },
+        {
+          "value": 39.06,
+          "feedback": "Käytit ympyrän halkaisijaa. Liikeyhtälössä $m\\tfrac{v^2}{r}$ on radan säde $15\\,\\text{m}$."
+        }
+      ],
+      "solution": "**Annettu:** lepokitkakerroin $\\mu_0 = 0{,}40$, radan säde $r = 15\\,\\text{m}$, rata on vaakasuora ja vauhti tasainen, $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** suurin nopeus $v$, jolla puhelin ei liu'u, kilometreinä tunnissa\n\n**Periaate:** Puhelin kulkee auton mukana tasaisessa ympyräliikkeessä. Siksi puhelimeen vaikuttavien voimien summa osoittaa radan keskipisteeseen. Pystysuunnassa paino ja tukivoima kumoavat toisensa: $N = mg$. Vaakasuunnassa ainoa voima on maton lepokitka. Siksi lepokitka on keskeisvoima. Lepokitka voi olla enintään $\\mu_0 N$. Suurimmalla nopeudella se on juuri näin suuri (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*).\n\n**Kaava:** $\\mu_0 mg = m\\dfrac{v^2}{r}$. Massa supistuu eli häviää yhtälöstä, ja $v = \\sqrt{\\mu_0 g r}$\n\n**Muunnokset:** Nopeus saadaan yksikössä $\\text{m/s}$. Se muunnetaan sijoittamalla $1\\,\\text{m} = 0{,}001\\,\\text{km}$ ja $1\\,\\text{s} = \\tfrac{1}{3600}\\,\\text{h}$. Silloin $1\\,\\text{m/s} = 3{,}6\\,\\text{km/h}$.\n\n**Sijoitus:** $v = \\sqrt{0{,}40 \\cdot 9{,}81\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot 15\\,\\text{m}} = \\sqrt{58{,}86\\,\\tfrac{\\text{m}^2}{\\text{s}^2}} = 7{,}672\\,\\text{m/s} = 7{,}672 \\cdot 3{,}6\\,\\text{km/h} = 27{,}6\\,\\text{km/h}$\n\n**Vastaus:** $v \\approx 28\\,\\text{km/h}$. Tuloksessa on kaksi merkitsevää numeroa, kuten kitkakertoimessa $0{,}40$ ja säteessä $15\\,\\text{m}$.\n\n**Järkevyys:** Liikenneympyrässä ajetaan yleensä $20\\text{–}30\\,\\text{km/h}$. Puhelin pysyy siis matolla juuri ja juuri. Normaalikiihtyvyys on silloin $\\mu_0 g \\approx 3{,}9\\,\\text{m/s}^2$. Massa supistui. Siksi raskas ja kevyt puhelin lähtevät liukumaan samalla nopeudella."
+    },
+    {
+      "id": "tiedesatelliitti",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Tiedesatelliitin kiertoaika",
+      "prompt": "Satelliitti tutkii ilmakehää. Se kiertää Maata ympyrärataa $690\\,\\text{km}$:n korkeudella. Maan massa on $5{,}97 \\cdot 10^{24}\\,\\text{kg}$, ja Maan säde on $6371\\,\\text{km}$. Kuinka pitkä on satelliitin kiertoaika? Vastaa minuutteina.",
+      "answer": 98.43,
+      "unit": "min",
+      "tolerance": 0.02,
+      "hints": [
+        "Radan säde mitataan Maan keskipisteestä: $r = R + h$.",
+        "Gravitaatiovoima on ainoa voima, joka vaikuttaa satelliittiin: $\\gamma\\tfrac{Mm}{r^2} = m\\tfrac{v^2}{r}$. Siksi $v = \\sqrt{\\tfrac{\\gamma M}{r}}$.",
+        "Kiertoaika on $T = \\tfrac{2\\pi r}{v}$. Muunna lopuksi: $1\\,\\text{min} = 60\\,\\text{s}$."
+      ],
+      "mistakes": [
+        {
+          "value": 3.007,
+          "feedback": "Sijoitit radan säteeksi korkeuden $690\\,\\text{km}$. Säde mitataan Maan keskipisteestä: $r = R + h = 7061\\,\\text{km}$."
+        },
+        {
+          "value": 5906,
+          "feedback": "Tämä on kiertoaika sekunteina. Muunna minuuteiksi: $1\\,\\text{min} = 60\\,\\text{s}$."
+        },
+        {
+          "value": 1.64,
+          "feedback": "Tämä on kiertoaika tunteina. Tehtävässä kysytään minuutteja."
+        }
+      ],
+      "solution": "**Annettu:** korkeus $h = 690\\,\\text{km}$, Maan massa $M = 5{,}97 \\cdot 10^{24}\\,\\text{kg}$, säde $R = 6371\\,\\text{km}$, $\\gamma = 6{,}674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2}$\n\n**Kysytty:** kiertoaika $T$ minuutteina\n\n**Periaate:** Satelliittiin vaikuttaa vain Maan gravitaatiovoima. Siksi gravitaatiovoima on kokonaisvoima. Se antaa satelliitille ympyräradalla normaalikiihtyvyyden $\\tfrac{v^2}{r}$. Radan säde mitataan Maan keskipisteestä. Yhdellä kierroksella satelliitti kulkee kehän $2\\pi r$ (luku *Satelliitit ja planeetat ympyräradalla*).\n\n**Kaava:** $\\gamma\\dfrac{Mm}{r^2} = m\\dfrac{v^2}{r}$, joten $v = \\sqrt{\\dfrac{\\gamma M}{r}}$ ja $T = \\dfrac{2\\pi r}{v}$. Tässä $r = R + h$\n\n**Muunnokset:** $r = 6371\\,\\text{km} + 690\\,\\text{km} = 7061\\,\\text{km} = 7061 \\cdot 1000\\,\\text{m} = 7{,}061 \\cdot 10^{6}\\,\\text{m}$. Lopuksi $1\\,\\text{min} = 60\\,\\text{s}$.\n\n**Sijoitus:** $v = \\sqrt{\\dfrac{6{,}674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2} \\cdot 5{,}97 \\cdot 10^{24}\\,\\text{kg}}{7{,}061 \\cdot 10^{6}\\,\\text{m}}} = 7512\\,\\text{m/s}$ ja $T = \\dfrac{2\\pi \\cdot 7{,}061 \\cdot 10^{6}\\,\\text{m}}{7512\\,\\text{m/s}} = 5906\\,\\text{s} = \\dfrac{5906}{60}\\,\\text{min} = 98{,}4\\,\\text{min}$\n\n**Vastaus:** $T \\approx 98{,}4\\,\\text{min}$. Tuloksessa on kolme merkitsevää numeroa, kuten Maan massassa $5{,}97 \\cdot 10^{24}\\,\\text{kg}$.\n\n**Järkevyys:** ISS:n kiertoaika on noin $93\\,\\text{min}$. Tämän satelliitin kiertoaika on vähän pidempi, koska rata on vähän korkeammalla. Ratanopeus $7{,}5\\,\\text{km/s}$ on vähän pienempi kuin maanpinnan tasolla laskettu noin $7{,}9\\,\\text{km/s}$. Näin pitää olla, kun satelliitti on kauempana."
+    },
+    {
+      "id": "lisaa",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Tunnin lopussa on ylioppilaskokeen tyylisiä tehtäviä. Kirjoita ratkaisu vihkoon tai koneelle samalla tavalla kuin kokeessa. Piirrä ensin voimakuvio. Kirjoita sitten tasapainoehdot tai liikeyhtälö. Arvioi ratkaisusi vasta sen jälkeen mallivastauksen ja pisteytyksen avulla."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Lapsi keinuu. Keinun alimmassa kohdassa lapsi liikkuu vaakasuoraan. Keinun ketjut vetävät lasta. Kuinka suuri on ketjujen voima verrattuna lapsen painoon?",
+      "choices": [
+        {
+          "text": "Yhtä suuri kuin paino, koska lapsi ei liiku pystysuunnassa.",
+          "feedback": "Pystysuuntainen nopeus on hetken nolla, mutta kiihtyvyys ei ole nolla. Nopeuden suunta kääntyy. Kiihtyvyys osoittaa ylös radan keskipisteeseen. Kertaa luvussa *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*."
+        },
+        {
+          "text": "Pienempi kuin paino, koska keskipakoisvoima vetää lasta alaspäin.",
+          "feedback": "Keskipakoisvoimaa ei ole. Ketjujen voima ja paino ovat ainoat voimat. Niiden summan on osoitettava keskipisteeseen eli ylös. Siksi ketjujen voima on suurempi kuin paino. Kertaa luvussa *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*."
+        },
+        {
+          "text": "Suurempi kuin paino, koska kokonaisvoima osoittaa ylös keskipisteeseen.",
+          "feedback": "Oikein. Alimmassa kohdassa radan keskipiste on ylhäällä, siinä kohdassa, josta keinu riippuu. Liikeyhtälö on $F - G = m\\tfrac{v^2}{r}$. Siksi ketjujen voima on $F > G$. Kertaa tarvittaessa luvussa *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*.",
+          "correct": true
+        }
+      ],
+      "practice": "Kertaa liikeyhtälö keskipisteen suuntaan luvussa [*Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*](fy5-4.html). Samassa luvussa ovat myös nyppylän ja notkon voimat. Nyppylä on tien kohouma, ja notko on tien kuoppa."
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Laskeminen",
+      "prompt": "Kottikärryissä on multaa. Kärryjen ja mullan massa on yhteensä $75\\,\\text{kg}$. Niiden yhteinen painopiste on vaakasuunnassa $0{,}40\\,\\text{m}$:n päässä pyörän akselista. Kahvat ovat vaakasuunnassa $1{,}25\\,\\text{m}$:n päässä akselista. Kärryjen kahvoja nostetaan pystysuoraan. Tukijalat juuri irtoavat maasta, ja kärryt pysyvät paikallaan. Kuinka suuri nostovoima tarvitaan?",
+      "answer": 235.4,
+      "unit": "N",
+      "tolerance": 0.03,
+      "hints": [
+        "Kun jalat irtoavat maasta, kärryihin vaikuttaa kolme voimaa: paino, pyörän tukivoima ja nostovoima. Minkä pisteen suhteen momentit kannattaa laskea?",
+        "Pyörän akselin suhteen tukivoiman varsi on nolla: $F \\cdot 1{,}25\\,\\text{m} = mg \\cdot 0{,}40\\,\\text{m}$.",
+        "$F = \\dfrac{75\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot 0{,}40\\,\\text{m}}{1{,}25\\,\\text{m}}$"
+      ],
+      "mistakes": [
+        {
+          "value": 735.75,
+          "feedback": "Tämä on koko kuorman paino. Pyörä kantaa suurimman osan painosta, koska painopiste on lähellä akselia."
+        },
+        {
+          "value": 500.3,
+          "feedback": "Tämä on pyörän tukivoima. Nostovoima on painon ja tukivoiman erotus."
+        },
+        {
+          "value": 2299,
+          "feedback": "Varret ovat väärin päin. Nostovoiman varsi $1{,}25\\,\\text{m}$ on pidempi kuin painon varsi. Siksi nostovoima on pienempi kuin paino."
+        }
+      ],
+      "practice": "Kertaa momenttipisteen valinta ja tasapainoehdot luvussa [*Kappaleen tasapaino: voimat ja momentit*](fy5-2.html). Kertaa voiman varsi luvussa [*Momentti: voiman kiertävä vaikutus*](fy5-1.html).",
+      "solution": "**Annettu:** massa $m = 75\\,\\text{kg}$, painopisteen vaakasuora etäisyys akselista $0{,}40\\,\\text{m}$, kahvojen vaakasuora etäisyys akselista $1{,}25\\,\\text{m}$, $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** pystysuora nostovoima $F$\n\n**Periaate:** Kärryt ovat levossa, joten ne ovat tasapainossa. Jalat eivät enää kosketa maata. Kärryihin vaikuttaa kolme voimaa: paino painopisteessä, pyörän tukivoima akselin kohdalla ja nostovoima kahvoissa. Valitaan momenttipisteeksi pyörän akseli. Silloin tuntemattoman tukivoiman varsi on nolla. Voimat ovat pystysuoria. Siksi varret ovat vaakasuorat etäisyydet akselista (luku *Kappaleen tasapaino: voimat ja momentit*).\n\n**Kaava:** $F \\cdot 1{,}25\\,\\text{m} - mg \\cdot 0{,}40\\,\\text{m} = 0$, joten $F = \\dfrac{mg \\cdot 0{,}40\\,\\text{m}}{1{,}25\\,\\text{m}}$\n\n**Muunnokset:** Ei tarvita. Massa on kilogrammoina ja etäisyydet metreinä.\n\n**Sijoitus:** $F = \\dfrac{75\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot 0{,}40\\,\\text{m}}{1{,}25\\,\\text{m}} = \\dfrac{294{,}3\\,\\text{Nm}}{1{,}25\\,\\text{m}} = 235{,}4\\,\\text{N}$\n\n**Vastaus:** $F \\approx 240\\,\\text{N}$. Tuloksessa on kaksi merkitsevää numeroa, kuten massassa $75\\,\\text{kg}$ ja etäisyydessä $0{,}40\\,\\text{m}$.\n\n**Järkevyys:** Paino on $736\\,\\text{N}$. Nostovoima on siitä $\\tfrac{0{,}40}{1{,}25} = 32\\,\\%$, kuten momenttiehto vaatii. Pyörä kantaa loput $500\\,\\text{N}$. Siksi kuorma kannattaa laittaa lähelle pyörää."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä",
+      "prompt": "Kaksi satelliittia kiertää Maata ympyrärataa samalla korkeudella. Toisen massa on $100\\,\\text{kg}$ ja toisen $3000\\,\\text{kg}$. Raskaampaan satelliittiin vaikuttaa $30$-kertainen gravitaatiovoima. Selitä Newtonin toisen lain ja gravitaatiolain avulla, miksi satelliittien ratanopeudet ovat silti yhtä suuret. Kerro myös, miten ratanopeus muuttuu, jos satelliitti siirretään kauemmas Maasta.",
+      "criteria": [
+        "Vastaus toteaa, että gravitaatiovoima on satelliitin ainoa voima. Siksi se on kokonaisvoima, joka osoittaa Maan keskipisteeseen.",
+        "Vastaus kirjoittaa liikeyhtälön $\\gamma\\tfrac{Mm}{r^2} = m\\tfrac{v^2}{r}$.",
+        "Vastaus perustelee, että satelliitin massa supistuu. Siksi $v = \\sqrt{\\tfrac{\\gamma M}{r}}$ ei riipu massasta: suurempi massa tarvitsee suuremman voiman, jotta se kääntyy.",
+        "Vastaus toteaa, että kauempana ratanopeus on pienempi, koska $v$ on kääntäen verrannollinen säteen neliöjuureen."
+      ],
+      "model": "Valitaan kappaleeksi satelliitti. Siihen vaikuttaa vain Maan gravitaatiovoima $F = \\gamma\\tfrac{Mm}{r^2}$, joka osoittaa Maan keskipisteeseen. Gravitaatiovoima on siis kokonaisvoima. Tasaisessa ympyräliikkeessä Newtonin toisen lain mukaan $\\gamma\\tfrac{Mm}{r^2} = m\\tfrac{v^2}{r}$. Raskaampaan satelliittiin vaikuttaa $30$-kertainen voima. Sen kääntämiseen ympyräradalle tarvitaan kuitenkin myös $30$-kertainen voima. Tarvittava voima $m\\tfrac{v^2}{r}$ on nimittäin verrannollinen massaan. Massa $m$ supistuu yhtälöstä. Ratanopeudeksi jää $v = \\sqrt{\\tfrac{\\gamma M}{r}}$. Se riippuu vain Maan massasta ja radan säteestä. Jos satelliitti siirretään kauemmas, $r$ kasvaa ja ratanopeus pienenee. Esimerkiksi nelinkertaisella säteellä ratanopeus on puolet. Tulos pätee, kun satelliitti on paljon kevyempi kuin Maa ja rata on ympyrä.",
+      "practice": "Kertaa ratanopeuden johtaminen ja massan supistuminen luvussa [*Satelliitit ja planeetat ympyräradalla*](fy5-6.html). Kertaa gravitaatiolaki luvussa [*Kappaleiden välinen gravitaatiovoima*](fy5-5.html)."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi on kaksi nopeaa kysymystä. Vastaa ensin itse. Avaa vastaus vasta sitten."
+    }
+  ]
+}

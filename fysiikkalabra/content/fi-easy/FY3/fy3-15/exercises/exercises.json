@@ -233,7 +233,7 @@
     {
       "id": "fy3-15-L3-02",
       "level": 3,
-      "text": "Tuulipuisto tuottaa vuodessa sähköä $36{,}0\\,\\text{GWh}$ ($1\\,\\text{GWh} = 3{,}60 \\cdot 10^{12}\\,\\text{J}$). Ajatellaan, että sama sähkö tuotettaisiin kivihiilellä lauhdevoimalaitoksessa. Laitoksen hyötysuhde on 0,380, ja hiilen lämpöarvo on $25{,}0\\,\\text{MJ/kg}$. Kuinka monta kilotonnia hiiltä ($1\\,\\text{kt} = 10^{6}\\,\\text{kg}$) vuodessa poltettaisiin? Selitä myös, miksi tuulipuiston hyötysuhdetta ei voi verrata hiilivoimalaitoksen hyötysuhteeseen yhtä suoraan kuin kahden lauhdevoimalaitoksen hyötysuhteita.",
+      "text": "Tuulipuisto tuottaa vuodessa sähköä $36{,}0\\,\\text{GWh}$ ($1\\,\\text{GWh} = 3{,}60 \\cdot 10^{12}\\,\\text{J}$).\n\nAjatellaan, että sama sähkö tuotettaisiin kivihiilellä lauhdevoimalaitoksessa. Laitoksen hyötysuhde on 0,380, ja hiilen lämpöarvo on $25{,}0\\,\\text{MJ/kg}$. Kuinka monta kilotonnia hiiltä ($1\\,\\text{kt} = 10^{6}\\,\\text{kg}$) vuodessa poltettaisiin?\n\nSelitä myös, miksi tuulipuiston hyötysuhdetta ei voi verrata hiilivoimalaitoksen hyötysuhteeseen yhtä suoraan kuin kahden lauhdevoimalaitoksen hyötysuhteita.",
       "answer": 13.6,
       "unit": "kt",
       "tolerance": 0.02

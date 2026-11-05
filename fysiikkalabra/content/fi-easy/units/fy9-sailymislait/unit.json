@@ -1,0 +1,36 @@
+{
+  "id": "fy9-sailymislait",
+  "course": "FY9",
+  "chapter": 3,
+  "order": 3,
+  "title": "Mekaaninen energia ja liikemäärä",
+  "description": "Kerrataan FY4-moduulin tärkeimmät asiat: liike- ja potentiaalienergia, mekaanisen energian säilyminen, energiaperiaate, vesi- ja tuulivoima, liikemäärä ja impulssi, liikemäärän säilyminen törmäyksissä sekä liikenneturvallisuus. Lopuksi ratkaistaan ylioppilaskokeen tyylisiä tehtäviä.",
+  "kind": "review",
+  "minutes": 75,
+  "subjects": [
+    "physics"
+  ],
+  "sources": [],
+  "key_concepts": [
+    {
+      "term": "mekaaninen energia",
+      "explain": "Liike-energia ja potentiaalienergia yhteensä. Se säilyy, kun vain paino tekee työtä."
+    },
+    {
+      "term": "energiaperiaate",
+      "explain": "Muiden voimien kuin painon työ muuttaa mekaanista energiaa. Esimerkiksi kitkan työ on negatiivinen ja pienentää sitä."
+    },
+    {
+      "term": "liikemäärä",
+      "explain": "Massa kertaa nopeus, $p = mv$. Liikemäärällä on suunta. Törmäyksessä kokonaisliikemäärä säilyy eli pysyy samana."
+    },
+    {
+      "term": "impulssi",
+      "explain": "Voima kertaa aika, jonka voima vaikuttaa. Kokonaisvoiman impulssi on yhtä suuri kuin liikemäärän muutos."
+    },
+    {
+      "term": "kimmoisa törmäys",
+      "explain": "Törmäys, jossa myös liike-energia säilyy. Jos kappaleet jäävät kiinni toisiinsa, törmäys on täysin kimmoton."
+    }
+  ]
+}

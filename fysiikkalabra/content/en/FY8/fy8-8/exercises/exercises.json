@@ -265,7 +265,7 @@
     {
       "id": "fy8-8-L3-02",
       "level": 3,
-      "text": "The energy levels of an imaginary nucleus are $0$ (ground state), $0.40\\,\\text{MeV}$ and $1.00\\,\\text{MeV}$. The nucleus is at first on the top level, and it can return to the ground state directly or through the intermediate level. What is the shortest wavelength that can appear in the gamma spectrum of the nucleus? Give the answer in picometres ($1\\,\\text{MeV} = 10^{6}\\,\\text{eV}$, $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "text": "The energy levels of an imaginary nucleus are $0$ (ground state), $0.40\\,\\text{MeV}$ and $1.00\\,\\text{MeV}$.\n\nThe nucleus is at first on the top level, and it can return to the ground state directly or through the intermediate level.\n\nWhat is the shortest wavelength that can appear in the gamma spectrum of the nucleus? Give the answer in picometres ($1\\,\\text{MeV} = 10^{6}\\,\\text{eV}$, $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$).",
       "answer": 1.24,
       "unit": "pm",
       "tolerance": 0.02

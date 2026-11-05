@@ -1,0 +1,789 @@
+{
+  "intro": "Tässä on kuusi ylioppilaskokeen tyylistä tehtävää. Ne kokoavat tunnin asiat: mekaanisen energian ja liikemäärän. Ratkaise tehtävät samalla tavalla kuin kokeessa. Perustele, minkä säilymislain valitset ja miksi laki pätee tilanteessa. Ratkaise kysytty suure kaavasta ennen kuin sijoitat luvut. Arvioi lopuksi, onko tulos järkevä. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
+  "tasks": [
+    {
+      "id": "fy9-sailymislait-s1",
+      "title": "Vaijeriliuku järven yli",
+      "source": "example",
+      "source_note": "Liuku ja sen luvut ovat keksitty esimerkki.",
+      "skills": [
+        "fy4-8",
+        "fy4-7",
+        "fy4-9"
+      ],
+      "text": "Laskettelukeskuksessa on kesällä vaijeriliuku. Laskija kiinnitetään valjaisiin, ja hän liukuu järven yli vaunun varassa. Vaunu kulkee vaijeria pitkin pyörillä. Lähtöpaikka on $36{,}0\\,\\text{m}$ korkeammalla kuin liu'un loppupää. Vaijerin pituus on $410\\,\\text{m}$. Laskija lähtee levosta. Loppupäässä jousijarru pysäyttää vaunun.\n\n- laskijan, valjaiden ja vaunun massa yhteensä $82{,}0\\,\\text{kg}$\n- nopeus juuri ennen jarrua (vaunun GPS-mittari) $15{,}0\\,\\text{m/s}$\n- jarrutus kestää $1{,}6\\,\\text{s}$, ja vaijeri on loppupäässä vaakasuora",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kuinka suuri laskijan nopeus olisi loppupäässä, jos ilmanvastusta ja vaunun pyörien vastusta ei olisi?",
+          "answer": {
+            "value": 26.58,
+            "unit": "m/s",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Mekaaninen energia säilyy: $mgh = \\tfrac12 mv^2$, joten $v = \\sqrt{2gh}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$v = \\sqrt{2 \\cdot 9{,}81\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot 36{,}0\\,\\text{m}}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v \\approx 26{,}6\\,\\text{m/s}$ kolmella merkitsevällä numerolla"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 5,
+          "text": "Kuinka suuren työn ilmanvastus ja pyörien vastus tekevät laskun aikana? Kuinka suuri on vastusvoimien keskimääräinen suuruus vaijerin suunnassa?",
+          "answer": [
+            {
+              "name": "W",
+              "value": 19.73,
+              "unit": "kJ",
+              "tolerance": 0.02
+            },
+            {
+              "name": "F",
+              "value": 48.13,
+              "unit": "N",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "text": "Perustelee energiaperiaatteella: vastusvoimien työ on negatiivinen ja yhtä suuri kuin mekaanisen energian muutos.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$W_\\text{muut} = \\tfrac12 mv^2 - mgh$ ja $F = |W_\\text{muut}| : s$"
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "$\\tfrac12 mv^2 = 9225\\,\\text{J}$, $mgh \\approx 28\\,960\\,\\text{J}$, joten $W_\\text{muut} \\approx -19{,}7\\,\\text{kJ}$ ja $F \\approx 48{,}1\\,\\text{N}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Työ kilojouleina ja voima newtoneina kolmella merkitsevällä numerolla; työn etumerkki on negatiivinen"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Jarru pysäyttää vaunun, ja vaunu pysäyttää samalla laskijan ja valjaat. Kuinka suuri keskimääräinen vaakasuora voima jarrusta kohdistuu vaunuun? Vertaa voimaa laskijan, valjaiden ja vaunun yhteiseen painoon.",
+          "answer": {
+            "value": 768.8,
+            "unit": "N",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Impulssiperiaate: $F_\\text{ka}\\,\\Delta t = |\\Delta p| = mv$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$F_\\text{ka} = \\dfrac{82{,}0\\,\\text{kg} \\cdot 15{,}0\\,\\text{m/s}}{1{,}6\\,\\text{s}} \\approx 769\\,\\text{N}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$F_\\text{ka} \\approx 770\\,\\text{N}$ kahdella merkitsevällä numerolla kuten aika $1{,}6\\,\\text{s}$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Voima on lähes yhtä suuri kuin paino $mg \\approx 804\\,\\text{N}$. Se tuntuu selvänä mutta turvallisena tönäisynä."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Liu'un valvoja sanoo: ”Kevyet laskijat tulevat perille hitaammin, koska painovoima vetää heitä heikommin.” Arvioi väite.",
+          "criteria": [
+            {
+              "text": "Perustelee, että ilman vastusvoimia massa supistuu pois energiayhtälöstä. Siksi loppunopeus $\\sqrt{2gh}$ ei riipu massasta.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Perustelee, että vastusvoimien työ vähentää kevyemmän laskijan mekaanista energiaa suhteessa enemmän, koska ilmanvastus ei ole verrannollinen massaan.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Havainto voi pitää paikkansa, mutta perustelu on väärä: syy on ilmanvastus, ei heikompi painovoima."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy4-8",
+        "concept": "fy4-7",
+        "transfer": "fy4-8",
+        "communication": "fy4-8"
+      }
+    },
+    {
+      "id": "fy9-sailymislait-s2",
+      "title": "Curlingkiven lyönti",
+      "source": "example",
+      "source_note": "Heiton luvut ovat keksitty esimerkki. Curlingkiven massa ja kitkakertoimen suuruusluokka eli likimääräinen koko vastaavat todellista lajia.",
+      "skills": [
+        "fy4-8",
+        "fy4-10",
+        "fy4-6"
+      ],
+      "text": "Curlingissa liu'utetaan graniittista kiveä jäätä pitkin. Pelaaja päästää kiven irti nopeudella $2{,}40\\,\\text{m/s}$. Kivi liukuu suoraan $27{,}0\\,\\text{m}$. Sitten se osuu keskeltä vastustajan kiveen, joka on levossa. Juuri ennen osumaa kiven nopeus on $0{,}62\\,\\text{m/s}$. Videolta nähdään, että heitetty kivi jatkaa heti törmäyksen jälkeen samaan suuntaan nopeudella $0{,}05\\,\\text{m/s}$.\n\n- kummankin kiven massa $19{,}0\\,\\text{kg}$\n- kiviä ei harjata, ja jää on koko matkalla samanlaista",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka suuri on kiven ja jään välinen kitkakerroin?",
+          "answer": {
+            "value": 0.01015,
+            "unit": "",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Energiaperiaate: $\\tfrac12 mv_0^2 - \\mu mg s = \\tfrac12 mv_1^2$, joten $\\mu = \\dfrac{v_0^2 - v_1^2}{2gs}$"
+            },
+            {
+              "text": "Perustelee, että kitkavoima $\\mu mg$ on vakio ja tekee negatiivisen työn $-\\mu mgs$, koska tukivoima on yhtä suuri kuin paino.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\mu = \\dfrac{(2{,}40\\,\\text{m/s})^2 - (0{,}62\\,\\text{m/s})^2}{2 \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot 27{,}0\\,\\text{m}}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\mu \\approx 0{,}010$, kaksi merkitsevää numeroa kuten nopeudessa $0{,}62\\,\\text{m/s}$; kitkakertoimella ei ole yksikköä"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 5,
+          "text": "Kuinka suuri on osuman saaneen kiven nopeus heti törmäyksen jälkeen? Onko törmäys kimmoisa?",
+          "answer": {
+            "value": 0.57,
+            "unit": "m/s",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Perustelee liikemäärän säilymisen: kitkan impulssi on lyhyen törmäyksen aikana niin pieni, ettei sillä ole merkitystä.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$m v_1 = m v_1' + m v_2'$, joten $v_2' = v_1 - v_1'$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$v_2' = 0{,}62\\,\\text{m/s} - 0{,}05\\,\\text{m/s} = 0{,}57\\,\\text{m/s}$"
+            },
+            {
+              "text": "Vertaa liike-energioita: jälkeen $\\approx 3{,}11\\,\\text{J}$, ennen $\\approx 3{,}65\\,\\text{J}$. Noin $85\\,\\%$ säilyy, joten törmäys on lähes kimmoisa mutta ei täysin kimmoisa.",
+              "tag": "math",
+              "points": 2
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kuinka pitkän matkan osuman saanut kivi liukuu ennen kuin se pysähtyy?",
+          "answer": {
+            "value": 1.632,
+            "unit": "m",
+            "tolerance": 0.04
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\tfrac12 m v_2'^2 = \\mu mg s$, joten $s = \\dfrac{v_2'^2}{2\\mu g}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$s = \\dfrac{(0{,}57\\,\\text{m/s})^2}{2 \\cdot 0{,}01015 \\cdot 9{,}81\\,\\text{m/s}^2} \\approx 1{,}6\\,\\text{m}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$s \\approx 1{,}6\\,\\text{m}$ kahdella merkitsevällä numerolla"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Pelaajat harjaavat usein jäätä liukuvan kiven edestä. Silloin kitkakerroin pienenee. Selitä energian avulla, miksi kivi silloin liukuu pidemmälle, vaikka harjat eivät koske kiveen.",
+          "criteria": [
+            {
+              "text": "Selittää, että kiven liike-energia muuttuu sisäenergiaksi kitkan tekemän negatiivisen työn $-\\mu mg s$ kautta. Pienempi $\\mu$ tarkoittaa pienempää työtä metriä kohti.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Sama liike-energia riittää pidemmälle matkalle. Harjaus ei lisää kiven energiaa, vaan se pienentää kitkan työtä metriä kohti."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy4-8",
+        "concept": "fy4-10",
+        "communication": "fy4-8"
+      }
+    },
+    {
+      "id": "fy9-sailymislait-s3",
+      "title": "Jarrutuskoe märällä asfaltilla",
+      "source": "example",
+      "source_note": "Aineisto on keksitty esimerkki. Luvut on laskettu mallista, jossa reaktioaika ja hidastuvuus ovat vakioita, ja niihin on lisätty samanlaista vaihtelua kuin oikeissa mittauksissa.",
+      "skills": [
+        "fy4-11",
+        "fy1-4",
+        "fy4-6"
+      ],
+      "text": "Ajokoulussa on rata, jolla harjoitellaan liukkaalla kelillä ajamista. Radalla tutkittiin pysähtymismatkaa märällä asfaltilla. Sama kuljettaja ajoi samalla autolla suoraa ja vaakasuoraa rataa tasaisella nopeudella $v_0$. Kun valo syttyi, kuljettaja jarrutti niin lujaa kuin pystyi. Matka valon syttymisestä auton pysähtymiseen mitattiin mittapyörällä $0{,}5\\,\\text{m}$:n tarkkuudella.\n\n| $v_0\\ (\\text{km/h})$ | $s_\\text{p}\\ (\\text{m})$ |\n|---|---|\n| $30$ | $12{,}5$ |\n| $40$ | $20{,}0$ |\n| $50$ | $27{,}5$ |\n| $60$ | $36{,}5$ |\n| $70$ | $46{,}5$ |\n| $80$ | $58{,}5$ |\n| $90$ | $72{,}0$ |",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 4,
+          "text": "Esitä pysähtymismatka kuvaajana lähtönopeuden funktiona. Perustele, miksi pisteisiin ei sovi suora.",
+          "criteria": [
+            {
+              "key": "graph_axes",
+              "points": 1,
+              "detail": "Vaaka-akselilla on $v_0$ yksikköineen, pystyakselilla $s_\\text{p}\\ (\\text{m})$."
+            },
+            {
+              "key": "graph_points",
+              "points": 1
+            },
+            {
+              "text": "Perustelee kuvaajan kaarevuudella ja fysiikalla: jarrutusmatka kasvaa nopeuden neliössä, joten pysähtymismatka kasvaa nopeammin kuin nopeus.",
+              "tag": "graph",
+              "points": 2
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "graph",
+          "points": 5,
+          "text": "Muodosta aineistosta suure, jonka kuvaaja lähtönopeuden funktiona on suora, kun kuljettajan reaktioaika ja auton hidastuvuus pysyvät samoina. Esitä suure kuvaajana. Sovita pisteisiin suora.",
+          "criteria": [
+            {
+              "text": "Perustelee linearisoinnin: kun $s_\\text{p} = v_0 t_\\text{r} + \\dfrac{v_0^2}{2a}$ jaetaan nopeudella, saadaan $\\dfrac{s_\\text{p}}{v_0} = t_\\text{r} + \\dfrac{1}{2a}\\,v_0$. Tämä on suoran yhtälö.",
+              "tag": "transfer",
+              "points": 2
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Nopeudet yksikössä $\\text{m/s}$ sijoittamalla ja suure $s_\\text{p} : v_0$ sekunteina jokaiselle mittaukselle."
+            },
+            {
+              "key": "graph_fit",
+              "points": 2,
+              "detail": "Pisteisiin on sovitettu yksi suora, joka kulkee pisteiden lomitse eli niiden välistä; vaaka-akselilla $v_0\\ (\\text{m/s})$, pystyakselilla $s_\\text{p} / v_0\\ (\\text{s})$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 6,
+          "text": "Määritä kuvaajasta kuljettajan reaktioaika ja auton hidastuvuus.",
+          "answer": [
+            {
+              "name": "tr",
+              "value": 0.86,
+              "unit": "s",
+              "tolerance": 0.08
+            },
+            {
+              "name": "a",
+              "value": 6.25,
+              "unit": "m/s²",
+              "tolerance": 0.06
+            }
+          ],
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 2,
+              "detail": "Kulmakerroin lasketaan kahdesta suoran pisteestä, jotka ovat kaukana toisistaan, esimerkiksi $(10\\,\\text{m/s};\\ 1{,}66\\,\\text{s})$ ja $(25\\,\\text{m/s};\\ 2{,}86\\,\\text{s})$: $k \\approx 0{,}080\\,\\text{s}^2\\text{/m}$; vakiotermi noin $0{,}86\\,\\text{s}$."
+            },
+            {
+              "text": "Tulkitsee suoran: vakiotermi on reaktioaika $t_\\text{r}$, ja kulmakerroin on $\\dfrac{1}{2a}$.",
+              "tag": "graph",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$a = \\dfrac{1}{2k}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 2,
+              "detail": "$t_\\text{r} \\approx 0{,}86\\,\\text{s}$ ja $a \\approx 6{,}3\\,\\text{m/s}^2$; tulokset $0{,}80$–$0{,}93\\,\\text{s}$ ja $5{,}9$–$6{,}6\\,\\text{m/s}^2$ hyväksytään."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 5,
+          "text": "Kuinka suuri on renkaiden ja märän asfaltin välinen kitkakerroin? Arvioi mallin avulla pysähtymismatka nopeudesta $100\\,\\text{km/h}$ samalla tiellä. Arvioi myös, kuinka luotettava arvio on.",
+          "answer": [
+            {
+              "name": "mu",
+              "value": 0.637,
+              "unit": "",
+              "tolerance": 0.06
+            },
+            {
+              "name": "s",
+              "value": 85.6,
+              "unit": "m",
+              "tolerance": 0.05
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Vaakasuoralla tiellä lukkojarrutuksen rajalla $\\mu mg = ma$, joten $\\mu = a : g$; $s_\\text{p} = v_0 t_\\text{r} + \\dfrac{v_0^2}{2a}$."
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "$\\mu \\approx 6{,}25 : 9{,}81 \\approx 0{,}64$; $100\\,\\text{km/h} = 27{,}8\\,\\text{m/s}$, joten $s_\\text{p} \\approx 23{,}9\\,\\text{m} + 61{,}7\\,\\text{m} \\approx 86\\,\\text{m}$."
+            },
+            {
+              "key": "assumptions",
+              "points": 2,
+              "detail": "Arvio on ekstrapolointi eli arvio mitatun alueen ulkopuolelta, $10\\,\\text{km/h}$ mitatun alueen yli. Se pätee, jos hidastuvuus pysyy samana myös suurella nopeudella ja kuljettaja reagoi samoin. Esimerkiksi vesiliirto voi kuitenkin pienentää kitkaa."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy1-4",
+        "transfer": "fy4-11",
+        "math": "fy4-11"
+      }
+    },
+    {
+      "id": "fy9-sailymislait-s4",
+      "title": "Joen voimala vai tuulipuisto",
+      "source": "example",
+      "source_note": "Kunta, joki ja voimaloiden luvut ovat keksittyjä esimerkkejä.",
+      "skills": [
+        "fy4-15",
+        "fy4-7",
+        "fy2-1"
+      ],
+      "text": "Kunnan valtuusto pohtii kahta vaihtoehtoa: uudistetaanko vanha jokivoimala vai rakennetaanko uusi tuulipuisto. Valtuutetut ovat esittäneet kolme väitettä.\n\n1. ”Kun tuulen nopeus kasvaa $6\\,\\text{m/s}$:sta $9\\,\\text{m/s}$:iin, tuulivoimalan teho kasvaa $50\\,\\%$.”\n2. ”Vesivoimala on lähes ikiliikkuja: se tuottaa sähköä vuodesta toiseen kuluttamatta mitään, koska sama vesi virtaa joessa aina.”\n3. ”Padon korottaminen $9\\,\\text{m}$:stä $12\\,\\text{m}$:iin lisäisi tehoa yhtä paljon kuin se, että virtaama kasvaisi kolmanneksella.”\n\nJokivoimalan läpi virtaa keskimäärin $120\\,\\text{m}^3\\text{/s}$. Putouskorkeus on nyt $9{,}0\\,\\text{m}$ ja hyötysuhde $90\\,\\%$. Tuulivoimaloiden tiedoista tiedetään, että ne eivät vielä käy nimellisteholla, kun tuulen nopeus on $9\\,\\text{m/s}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 5,
+          "text": "Arvioi väite 1. Selitä, mistä tuulivoimalan teho riippuu ja miksi.",
+          "criteria": [
+            {
+              "text": "Selittää, että tuulen liike-energia ilmakilogrammaa kohti on verrannollinen nopeuden neliöön. Roottorin läpi sekunnissa virtaava ilmamäärä on verrannollinen nopeuteen. Siksi teho on verrannollinen kuutioon $v^3$.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\left(\\tfrac{9}{6}\\right)^3 \\approx 3{,}4$, eli teho kasvaa noin $240\\,\\%$, ei $50\\,\\%$."
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Hyötysuhde oletetaan samaksi. Nimellistehon yläpuolella tehoa rajoitetaan, ja silloin kuutiolaki ei päde."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Väite on väärä: se olettaa, että teho on verrannollinen nopeuteen."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 5,
+          "text": "Arvioi väite 2. Selitä vesivoimalan energiaketju: mistä veden energia on peräisin, ja miksi kaikki energia ei muutu sähköksi.",
+          "criteria": [
+            {
+              "text": "Kuvaa ketjun: veden potentiaalienergia muuttuu putkessa liike-energiaksi. Turbiini ja generaattori muuttavat sen sähköksi.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "text": "Selittää, että veden potentiaalienergia on peräisin auringosta: vesi haihtuu, nousee ilmaan ja sataa ylemmäs. Voimala ei siis luo energiaa.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "text": "Nimeää häviöt: putken ja turbiinin kitka, generaattorin lämpeneminen ja alaveden liike-energia, joka jää jäljelle. Siksi hyötysuhde on alle $100\\,\\%$.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Väite on väärä: voimala muuntaa energiaa eikä ole ikiliikkuja, vaikka sen ”polttoaine” uusiutuu."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 5,
+          "text": "Arvioi väite 3. Laske voimalan nykyinen sähköteho.",
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$P = \\eta \\rho Q g h$: teho on verrannollinen sekä virtaamaan että putouskorkeuteen."
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "Nyt $P \\approx 0{,}90 \\cdot 1000\\,\\tfrac{\\text{kg}}{\\text{m}^3} \\cdot 120\\,\\tfrac{\\text{m}^3}{\\text{s}} \\cdot 9{,}81\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot 9{,}0\\,\\text{m} \\approx 9{,}5\\,\\text{MW}$; korkeudella $12\\,\\text{m}$ noin $12{,}7\\,\\text{MW}$."
+            },
+            {
+              "text": "Perustelee, että $12 : 9 = \\tfrac43$. Korotus kasvattaa siis tehoa kolmanneksella, saman verran kuin kolmanneksen suurempi virtaama.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Väite on oikein, kun hyötysuhde pysyy samana eikä padon takana oleva vesi vaikuta virtaamaan."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy4-15",
+        "math": "fy4-15",
+        "transfer": "fy2-1",
+        "communication": "fy4-15"
+      }
+    },
+    {
+      "id": "fy9-sailymislait-s5",
+      "title": "Katoaako liikemäärä?",
+      "source": "example",
+      "source_note": "Raportti ja mittaukset ovat keksitty esimerkki.",
+      "skills": [
+        "fy4-10",
+        "fy1-3",
+        "fy1-8"
+      ],
+      "text": "Opiskelijaryhmä tutki kimmotonta törmäystä tavallisella radalla, jolla kärryt liikkuvat. Kärry A ($m_\\text{A} = 0{,}520\\,\\text{kg}$) työnnettiin liikkeelle. Se törmäsi kärryyn B ($m_\\text{B} = 0{,}480\\,\\text{kg}$), joka oli levossa. Kärryjen päissä oli tarranauha, joten kärryt jäivät kiinni toisiinsa. Ryhmä kuvasi törmäyksen videolle. Videoanalyysillä ryhmä määritti kaksi nopeutta. Kärryn A nopeus $v_\\text{A}$ määritettiin viimeisen $0{,}20\\,\\text{m}$:n matkalta ennen törmäystä. Kärryjen yhteinen nopeus $v'$ määritettiin matkalta $0{,}40$–$0{,}80\\,\\text{m}$ törmäyskohdan jälkeen.\n\n| Koe | $v_\\text{A}\\ (\\text{m/s})$ | $v'\\ (\\text{m/s})$ |\n|---|---|---|\n| 1 | $0{,}452$ | $0{,}207$ |\n| 2 | $0{,}622$ | $0{,}303$ |\n| 3 | $0{,}781$ | $0{,}391$ |\n| 4 | $0{,}901$ | $0{,}455$ |\n\nRyhmän johtopäätös: ”Kokonaisliikemäärä pieneni kaikissa kokeissa. Kimmottomassa törmäyksessä liikemäärä ei siis säily, koska osa siitä muuttuu lämmöksi ja ääneksi.”",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka monta prosenttia kokonaisliikemäärä muuttui kokeessa 2?",
+          "answer": {
+            "value": -6.32,
+            "unit": "%",
+            "tolerance": 0.05
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$p = m_\\text{A} v_\\text{A}$ ennen ja $p' = (m_\\text{A} + m_\\text{B})\\,v'$ jälkeen; suhteellinen muutos on $\\dfrac{p' - p}{p}$"
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "$p \\approx 0{,}323\\,\\text{kg} \\cdot \\text{m/s}$ ja $p' = 0{,}303\\,\\text{kg} \\cdot \\text{m/s}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Muutos on noin $-6{,}3\\,\\%$, eli liikemäärä pieneni noin $6\\,\\%$."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 5,
+          "text": "Arvioi ryhmän johtopäätös. Mistä mittausten ero todennäköisesti johtuu?",
+          "criteria": [
+            {
+              "text": "Toteaa, että lämmöksi ja ääneksi muuttuu liike-energiaa, ei liikemäärää. Liikemäärä ei ole energian laji.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "error_sources",
+              "points": 2,
+              "detail": "Yhteinen nopeus mitattiin vasta $0{,}40$–$0{,}80\\,\\text{m}$ törmäyksen jälkeen. Silloin vierimisvastus oli jo ehtinyt hidastaa kärryjä. Vierimisvastus on ulkoinen voima, joka muuttaa liikemäärää."
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Ero on systemaattinen eli aina samaan suuntaan: liikemäärä pieneni joka kerta. Suhteellinen ero on suurin hitaimmassa kokeessa ($-12\\,\\%$) ja pienin nopeimmassa ($-3\\,\\%$). Näin voi odottaa, kun vastusvoima on vakiosuuruinen."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Aineisto ei osoita, että liikemäärä ei säily. Aineisto sopii säilymislakiin, kun ulkoisen voiman vaikutus otetaan huomioon."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 6,
+          "text": "Suunnittele, miten koetta parannetaan niin, että sillä voi testata luotettavasti liikemäärän säilymistä.",
+          "criteria": [
+            {
+              "text": "Nopeudet mitataan juuri ennen törmäystä ja heti sen jälkeen, esimerkiksi valoporteilla tai videosta lyhyeltä matkalta. Toinen tapa on ekstrapoloida nopeus $(t, v)$-kuvaajasta törmäyshetkeen.",
+              "tag": "experiment",
+              "points": 2
+            },
+            {
+              "text": "Vierimisvastuksen vaikutus pienennetään tai mitataan. Esimerkiksi käytetään ilmatyynyrataa, tai rata kallistetaan niin, että kärry liikkuu tasaisella nopeudella.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Mittaus toistetaan monta kertaa. Nopeuden ja massan epävarmuudesta arvioidaan, kuinka suuri liikemäärien ero on vielä mittaustarkkuuden rajoissa."
+            },
+            {
+              "text": "Mittauksia tehdään eri massoilla ja nopeuksilla, ja liikemääriä verrataan. Lisäksi lasketaan liike-energian muutos, ja sitä verrataan teoreettiseen osuuteen $\\tfrac{m_\\text{B}}{m_\\text{A} + m_\\text{B}}$.",
+              "tag": "experiment",
+              "points": 2
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy4-10",
+        "concept": "fy4-10",
+        "experiment": "fy1-8",
+        "communication": "fy1-3"
+      }
+    },
+    {
+      "id": "fy9-sailymislait-s6",
+      "title": "Paalutuskone ja lämpenevä paalu",
+      "source": "example",
+      "source_note": "Paalutuskoneen luvut ovat keksitty esimerkki. Teräksen ominaislämpökapasiteetti on taulukkoarvo.",
+      "skills": [
+        "fy4-10",
+        "fy4-8",
+        "fy3-6",
+        "fy4-7"
+      ],
+      "text": "Rakennustyömaalla teräspaaluja lyödään maahan paalutuskoneella. Kone nostaa raskaan järkäleen paalun yläpään yläpuolelle. Sitten kone päästää järkäleen putoamaan vapaasti. Järkäle osuu paalun päähän eikä kimpoa. Paalu ja järkäle liikkuvat yhdessä alaspäin, kunnes maa pysäyttää ne.\n\n- järkäleen massa $3500\\,\\text{kg}$, paalun massa $1100\\,\\text{kg}$\n- pudotuskorkeus $0{,}60\\,\\text{m}$\n- paalu painuu yhdellä lyönnillä $18\\,\\text{mm}$ syvemmälle\n- paalun yläpäässä lämpenee lyönneissä noin $30\\,\\text{kg}$ terästä; teräksen ominaislämpökapasiteetti $460\\,\\text{J/(kg} \\cdot \\text{K)}$",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kuinka suuri on järkäleen nopeus juuri ennen kuin se osuu paaluun?",
+          "answer": {
+            "value": 3.431,
+            "unit": "m/s",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$Mgh = \\tfrac12 Mv^2$, joten $v = \\sqrt{2gh}$; näin lyhyellä pudotuksella ilmanvastus on pieni."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$v = \\sqrt{2 \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot 0{,}60\\,\\text{m}}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v \\approx 3{,}4\\,\\text{m/s}$ kahdella merkitsevällä numerolla kuten korkeus $0{,}60\\,\\text{m}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka suuri on järkäleen ja paalun yhteinen nopeus heti törmäyksen jälkeen? Kuinka paljon liike-energiaa muuttuu törmäyksessä muiksi energiamuodoiksi?",
+          "answer": [
+            {
+              "name": "v",
+              "value": 2.611,
+              "unit": "m/s",
+              "tolerance": 0.02
+            },
+            {
+              "name": "E",
+              "value": 4926,
+              "unit": "J",
+              "tolerance": 0.03
+            }
+          ],
+          "criteria": [
+            {
+              "text": "Perustelee liikemäärän säilymisen: törmäys on niin lyhyt, että maan voiman ja painon impulssi on sen aikana pieni.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$Mv = (M + m)\\,v'$ ja $E_\\text{h} = \\tfrac12 Mv^2 - \\tfrac12 (M + m)\\,v'^2$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$v' \\approx 2{,}61\\,\\text{m/s}$; $20\\,601\\,\\text{J} - 15\\,675\\,\\text{J} \\approx 4{,}9\\,\\text{kJ}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v' \\approx 2{,}6\\,\\text{m/s}$ ja $E_\\text{h} \\approx 4{,}9\\,\\text{kJ}$ kahdella merkitsevällä numerolla"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka suuren keskimääräisen voiman maa kohdistaa paaluun, kun paalu painuu syvemmälle?",
+          "answer": {
+            "value": 915.9,
+            "unit": "kN",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Energiaperiaate liikkeelle törmäyksen jälkeen: $\\tfrac12 (M + m)\\,v'^2 + (M + m)\\,g s - F s = 0$"
+            },
+            {
+              "text": "Ottaa huomioon, että myös järkäleen ja paalun potentiaalienergia pienenee, kun paalu painuu.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$F = \\dfrac{15\\,675\\,\\text{J}}{0{,}018\\,\\text{m}} + 4600\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\approx 916\\,\\text{kN}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$F \\approx 0{,}92\\,\\text{MN}$ kahdella merkitsevällä numerolla kuten matka $18\\,\\text{mm}$"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 4,
+          "text": "Oletetaan, että $40\\,\\%$ törmäyksessä muuttuneesta energiasta jää paalun yläpään teräkseen sisäenergiaksi. Oletetaan myös, että yläpää ei ehdi luovuttaa lämpöä ympäristöön. Kuinka paljon yläpää lämpenee $50$ lyönnin aikana? Arvioi, miten oletukset vaikuttavat tulokseen.",
+          "answer": {
+            "value": 7.14,
+            "unit": "K",
+            "tolerance": 0.04
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\Delta U = cm\\Delta T$, missä $\\Delta U = 50 \\cdot 0{,}40 \\cdot E_\\text{h}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\Delta T = \\dfrac{50 \\cdot 0{,}40 \\cdot 4926\\,\\text{J}}{460\\,\\tfrac{\\text{J}}{\\text{kg} \\cdot \\text{K}} \\cdot 30\\,\\text{kg}} \\approx 7{,}1\\,\\text{K}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\Delta T \\approx 7\\,\\text{K}$, yksi tai kaksi merkitsevää numeroa, koska osuus $40\\,\\%$ ja massa $30\\,\\text{kg}$ ovat arvioita"
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Todellinen lämpeneminen on pienempi. Teräs luovuttaa lämpöä ilmaan ja paalun alempiin osiin lyöntien välillä. Lisäksi osa energiasta muuttuu ääneksi ja järkäleen energiaksi."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy4-10",
+        "concept": "fy4-10",
+        "transfer": "fy4-8"
+      }
+    }
+  ]
+}

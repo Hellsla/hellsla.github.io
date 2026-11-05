@@ -1,5 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 29b45f18108766eb
+CONTENT-HASH: 9c10b36b9630971c
+
+## Delta review
+Delta review, 2026-11-04 (previous PASS hash 29b45f18108766eb). `git diff HEAD -- content/fi/units/fy9-sahkokentta lessons/units/fy9-sahkokentta` shows one changed line: `sovella/tasks.json`, s1 b rubric criterion `calculation` (1 p). The long formula with the fraction inside the square root is now three formulas: $F_\text{s} = 4{,}93 \cdot 10^{-4}\,\text{N}$ ja $k = 8{,}988 \cdot 10^{9}\,\text{N}\cdot\text{m}^2/\text{C}^2$, joten $q = 0{,}080\,\text{m} \cdot \sqrt{F_\text{s}/k} \approx 1{,}87 \cdot 10^{-8}\,\text{C}$ ja $n \approx 1{,}2 \cdot 10^{11}$. Nothing else changed in the unit.
+- Physics unchanged: the same values and the same Coulomb-law solution $q = r\sqrt{F_\text{s}/k}$ that the preceding criterion asks for. I recomputed: 0,080 · √(4,93·10⁻⁴ / 8,988·10⁹) = 1,874·10⁻⁸ C, and q/e = 1,17·10¹¹ ≈ 1,2·10¹¹. Units are right ($\text{N}\cdot\text{m}^2/\text{C}^2$). The criterion still gives 1 p.
+
+## Previous review
 
 Round 2 (delta review of round 1 fixes; round 1 hash 63bd93568ec525b8). Science review of fy9-sahkokentta, 2026-11-04.
 

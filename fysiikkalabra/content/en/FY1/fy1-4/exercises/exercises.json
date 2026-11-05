@@ -127,7 +127,7 @@
     {
       "id": "fy1-4-L2-02",
       "level": 2,
-      "text": "The graph shows the distance $s$ travelled by a trolley moving steadily as a function of time $t$ in six measurements. Fit a straight line to the points by eye (plot the points on squared paper or lay a ruler over the figure) and use it to estimate how far the trolley has travelled at the moment $t = 8.0\\,\\text{s}$, when the motion continues in the same way. Give the answer in metres.",
+      "text": "The graph shows the distance $s$ travelled by a trolley moving steadily as a function of time $t$ in six measurements.\n\nFit a straight line to the points by eye (plot the points on squared paper or lay a ruler over the figure) and use it to estimate how far the trolley has travelled at the moment $t = 8.0\\,\\text{s}$, when the motion continues in the same way. Give the answer in metres.",
       "figure": "fy1-4/scatter-points",
       "answer": 3.9,
       "unit": "m",

@@ -273,7 +273,7 @@
     {
       "id": "fy8-7-L3-02",
       "level": 3,
-      "text": "Vihreässä laserosoittimessa infrapunalaserdiodin valo ($808\\,\\text{nm}$, teho $1{,}0\\,\\text{W}$) pumppaa kidettä. Kide lähettää laservaloa, jonka aallonpituus on $1064\\,\\text{nm}$. Toinen kide yhdistää aina kaksi $1064\\,\\text{nm}$:n fotonia yhdeksi $532\\,\\text{nm}$:n fotoniksi. Kuinka monta vihreää fotonia laserosoitin voi enintään lähettää sekunnissa, kun jokainen pumppausfotoni tuottaa enintään yhden $1064\\,\\text{nm}$:n fotonin ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$)?",
+      "text": "Vihreässä laserosoittimessa infrapunalaserdiodin valo ($808\\,\\text{nm}$, teho $1{,}0\\,\\text{W}$) pumppaa kidettä. Kide lähettää laservaloa, jonka aallonpituus on $1064\\,\\text{nm}$.\n\nToinen kide yhdistää aina kaksi $1064\\,\\text{nm}$:n fotonia yhdeksi $532\\,\\text{nm}$:n fotoniksi.\n\nKuinka monta vihreää fotonia laserosoitin voi enintään lähettää sekunnissa, kun jokainen pumppausfotoni tuottaa enintään yhden $1064\\,\\text{nm}$:n fotonin ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$)?",
       "answer": 2.03e+18,
       "unit": "kpl",
       "tolerance": 0.02

@@ -44,9 +44,9 @@ SUB = "" if LANG == courses.SOURCE_LANG else f"{LANG}/"
 
 def target(pid):
     """(kind, review folder, content hashes) of a page id: a lesson, an investigation, a TVT guide, <COURSE>-sovella or a
-    course unit (scripts/units.py: captured in the language it is written in)."""
+    course unit (scripts/units.py: captured in the language it is written in, or its translation with --lang)."""
     import guides, investigations, practice, reviews, units
-    ul = units.lang_of(pid)
+    ul = LANG if LANG != courses.SOURCE_LANG and pid in units.ids(LANG) else units.lang_of(pid)   # a unit's translation with --lang
     if ul:
         global SUB
         SUB = "" if ul == courses.SOURCE_LANG else f"{ul}/"

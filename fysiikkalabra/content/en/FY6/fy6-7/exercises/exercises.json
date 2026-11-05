@@ -83,7 +83,7 @@
     {
       "id": "fy6-7-L1-08",
       "level": 1,
-      "text": "A student calculates how long $1.0\\,\\text{kWh}$ of energy lasts a table fan whose power is $40\\,\\text{W}$. The student's solution is: “The time is the product of energy and power, $t = E \\cdot P = 1.0 \\cdot 40 = 40$. So the fan runs for $40$ hours.” Find the student's error and calculate the correct time in hours.",
+      "text": "A student calculates how long $1.0\\,\\text{kWh}$ of energy lasts a table fan whose power is $40\\,\\text{W}$.\n\nThe student's solution is: “The time is the product of energy and power, $t = E \\cdot P = 1.0 \\cdot 40 = 40$. So the fan runs for $40$ hours.”\n\nFind the student's error and calculate the correct time in hours.",
       "kind": [
         "error",
         "reasoning"

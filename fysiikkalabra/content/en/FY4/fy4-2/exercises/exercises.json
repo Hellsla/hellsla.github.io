@@ -298,7 +298,7 @@
     {
       "id": "fy4-2-L3-03",
       "level": 3,
-      "text": "A ball is thrown straight up, and its height $y$ is measured as a function of time by video analysis. The quadratic polynomial fitted to the measured points is $y = -4.86\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot t^2 + 3.10\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot t + 1.20\\,\\text{m}$, with the upward direction positive. What is the ball's velocity at $t = 0.500\\,\\text{s}$? Give the answer with its sign.",
+      "text": "A ball is thrown straight up, and its height $y$ is measured as a function of time by video analysis. The quadratic polynomial fitted to the measured points is $y = -4.86\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot t^2 + 3.10\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot t + 1.20\\,\\text{m}$, with the upward direction positive.\n\nWhat is the ball's velocity at $t = 0.500\\,\\text{s}$? Give the answer with its sign.",
       "answer": -1.7600000000000002,
       "unit": "m/s",
       "tolerance": 0.02

@@ -301,7 +301,7 @@
     {
       "id": "fy1-8-L3-02",
       "level": 3,
-      "text": "Kuuma vesi jäähtyy kupissa. Lämpötila on $80{,}0\\,{}^\\circ\\text{C}$ kohdassa $t = 0\\,\\text{min}$, $68{,}0\\,{}^\\circ\\text{C}$ kohdassa $5{,}0\\,\\text{min}$, $52{,}0\\,{}^\\circ\\text{C}$ kohdassa $15{,}0\\,\\text{min}$ ja $47{,}0\\,{}^\\circ\\text{C}$ kohdassa $20{,}0\\,\\text{min}$. Oppilaan hypoteesi on, että lämpötila laskee tasaisesti. Laske lämpötilan laskunopeus ensimmäisen viiden minuutin aikana ja viimeisen viiden minuutin aikana. Kuinka paljon suurempi ensimmäinen laskunopeus on? Vastaa yksikössä K/min.",
+      "text": "Kuuma vesi jäähtyy kupissa. Lämpötila on $80{,}0\\,{}^\\circ\\text{C}$ kohdassa $t = 0\\,\\text{min}$, $68{,}0\\,{}^\\circ\\text{C}$ kohdassa $5{,}0\\,\\text{min}$, $52{,}0\\,{}^\\circ\\text{C}$ kohdassa $15{,}0\\,\\text{min}$ ja $47{,}0\\,{}^\\circ\\text{C}$ kohdassa $20{,}0\\,\\text{min}$.\n\nOppilaan hypoteesi on, että lämpötila laskee tasaisesti.\n\nLaske lämpötilan laskunopeus ensimmäisen viiden minuutin aikana ja viimeisen viiden minuutin aikana. Kuinka paljon suurempi ensimmäinen laskunopeus on? Vastaa yksikössä K/min.",
       "answer": 1.4,
       "unit": "K/min",
       "tolerance": 0.02

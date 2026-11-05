@@ -1,0 +1,482 @@
+{
+  "version": 1,
+  "contribution": "Kertaustunti kokoaa yhteen FY5-moduulin asiat: värähtelyn suureet, jousen voiman ja energian, jousivärähtelijän ja heilurin jaksonajat, aaltojen etenemisen, heijastumisen ja diffraktion, interferenssin, seisovat aallot, äänen, Dopplerin ilmiön, intensiteettitason, melun sekä kaiut ja maanjäristysaallot. Niistä muodostuu yksi malli: värähtely etenee aaltona. Tunnilla harjoitellaan ylioppilaskokeen tyyppisiä tehtäviä: kuvaajan lukeminen, väliaineen ja lähteen erottaminen, logaritminen taso, Dopplerin etumerkit, heilurin linearisoitu aineisto, raportin arviointi ja FY4:n energiaperiaatteen yhdistäminen jousen energiaan.",
+  "learn": [
+    "ratkaisemaan värähtely-, aalto- ja äänitehtäviä niin, että valitset sopivan mallin",
+    "piirtämään ja tulkitsemaan eli selittämään värähtelyn ja aaltojen kuvaajia",
+    "arvioimaan aaltoja ja ääntä koskevia väitteitä ja mittauksia ja perustelemaan arviosi"
+  ],
+  "prior": [
+    "Taajuus on jaksonajan käänteisluku, $f = \\tfrac{1}{T}$ (luku *Värähtelyn suureet: jaksonaika, taajuus ja amplitudi*)",
+    "Jousen ja heilurin jaksonaika riippuu värähtelijän ominaisuuksista (luku *Jousivärähtelijä ja heiluri*)",
+    "Aallon nopeus on $v = f\\lambda$, ja lähde määrää taajuuden (luku *Aaltojen synty ja eteneminen*)",
+    "Matkaero ratkaisee, vahvistavatko aallot toisiaan vai heikentävätkö ne toisiaan (luku *Aaltojen yhteisvaikutus: superpositio ja interferenssi*)",
+    "Äänen voimakkuus ilmoitetaan intensiteettitasona desibeleinä (luku *Intensiteetti ja desibeliasteikko*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Uimahallissa uinninvalvoja puhaltaa pilliin. Vihellyksen taajuus on $3{,}0\\,\\text{kHz}$. Yksi uimari on juuri sukeltanut altaan pohjalle. Hän kuulee vihellyksen veden alla. Äänen nopeus on hallin lämpimässä ilmassa noin $350\\,\\text{m/s}$ ja vedessä noin $1500\\,\\text{m/s}$. Kokeessa tällainen tilanne voi olla tehtävän alku: luvut on annettu, mutta kaavaa ei ole annettu.",
+      "question": "Kuuleeko sukeltaja vihellyksen eri korkeudelta kuin pinnalla? Kuinka pitkä on äänen aallonpituus ilmassa ja vedessä?"
+    },
+    {
+      "id": "lt-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Lähtötaso 1: raskaampi keinuja",
+      "prompt": "Pihakeinussa istuu ensin lapsi, jonka massa on $20\\,\\text{kg}$. Sitten keinussa istuu lapsi, jonka massa on $40\\,\\text{kg}$. Keinun ketjut ovat yhtä pitkät, ja heilahdukset ovat pieniä. Miten keinun jaksonaika muuttuu?",
+      "choices": [
+        {
+          "text": "Se kasvaa, koska raskaampaa lasta on vaikeampi kiihdyttää.",
+          "feedback": "Raskaampaa lasta on vaikeampi kiihdyttää. Häneen vaikuttaa kuitenkin myös kaksinkertainen paino. Kiihtyvyys pysyy samana, joten jaksonaika $T = 2\\pi\\sqrt{\\tfrac{l}{g}}$ ei riipu massasta. Kertaa luvussa *Jousivärähtelijä ja heiluri*."
+        },
+        {
+          "text": "Se lyhenee, koska raskaampaan lapseen vaikuttaa suurempi paino.",
+          "feedback": "Suurempi paino kiihdyttää myös suurempaa massaa. Siksi kiihtyvyys on sama kuin kevyemmällä lapsella. Jaksonaika riippuu vain pituudesta ja putoamiskiihtyvyydestä. Kertaa luvussa *Jousivärähtelijä ja heiluri*."
+        },
+        {
+          "text": "Se pysyy lähes samana, koska heilurin jaksonaika ei riipu massasta.",
+          "feedback": "Oikein. Kun heilahdukset ovat pieniä, $T = 2\\pi\\sqrt{\\tfrac{l}{g}}$. Massa ei ole lausekkeessa. Pieni ero voi syntyä vain, jos lapsen painopiste on eri korkeudella, koska silloin heilurin pituus muuttuu. Kertaa tarvittaessa luvussa *Jousivärähtelijä ja heiluri*.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "lt-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Lähtötaso 2: kaksinkertainen amplitudi",
+      "prompt": "Punnus värähtelee jousen varassa. Toisella kerralla punnus vedetään kaksi kertaa niin kauas tasapainoasemasta, ja sitten se päästetään irti. Kitkaa ei ole. Miten jaksonaika ja värähtelyn energia muuttuvat?",
+      "choices": [
+        {
+          "text": "Jaksonaika pysyy samana, ja värähtelyn energia nelinkertaistuu.",
+          "feedback": "Oikein. Jaksonaika $T = 2\\pi\\sqrt{\\tfrac{m}{k}}$ ei riipu amplitudista. Värähtelyn energia on $\\tfrac12 kA^2$, joten kerroin on $2^2 = 4$. Kertaa tarvittaessa luvussa *Jousivoima ja jousen energia*.",
+          "correct": true
+        },
+        {
+          "text": "Jaksonaika kaksinkertaistuu, koska matka on kaksi kertaa pidempi.",
+          "feedback": "Matka kaksinkertaistuu. Myös jousen voima ja kiihtyvyys kaksinkertaistuvat, joten punnus liikkuu nopeammin. Jaksonaika $T = 2\\pi\\sqrt{\\tfrac{m}{k}}$ ei riipu amplitudista. Kertaa luvussa *Jousivärähtelijä ja heiluri*."
+        },
+        {
+          "text": "Jaksonaika pysyy samana, ja energia kaksinkertaistuu kuten venymäkin.",
+          "feedback": "Jaksonaika pysyy samana. Energia riippuu kuitenkin amplitudin neliöstä, $E = \\tfrac12 kA^2$. Kaksinkertainen amplitudi antaa nelinkertaisen energian. Kertaa luvussa *Jousivoima ja jousen energia*."
+        }
+      ]
+    },
+    {
+      "id": "lt-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Lähtötaso 3: ääni ilmasta veteen",
+      "prompt": "Ääni siirtyy ilmasta veteen. Vedessä ääni etenee nopeammin. Mikä äänen suure säilyy eli pysyy samana?",
+      "choices": [
+        {
+          "text": "Aallonpituus, koska aalto on sama molemmissa aineissa.",
+          "feedback": "Aallonpituus muuttuu, koska $\\lambda = \\tfrac{v}{f}$ ja nopeus kasvaa. Vedessä aallonpituus on pidempi kuin ilmassa. Kertaa luvussa *Aaltojen synty ja eteneminen*."
+        },
+        {
+          "text": "Taajuus, koska sen määrää lähteen värähtely eikä väliaine.",
+          "feedback": "Oikein. Rajapinnalla eli ilman ja veden rajalla jokainen ilman tihentymä synnyttää vedessä yhden tihentymän. Siksi taajuus säilyy. Nopeus kasvaa, joten aallonpituus kasvaa samassa suhteessa. Kertaa tarvittaessa luvussa *Aaltojen synty ja eteneminen*.",
+          "correct": true
+        },
+        {
+          "text": "Nopeus, koska ääni etenee aina nopeudella noin $340\\,\\text{m/s}$.",
+          "feedback": "Äänen nopeus riippuu väliaineesta eli aineesta, jossa ääni kulkee. Ilmassa nopeus on noin $340\\,\\text{m/s}$ ja vedessä noin $1500\\,\\text{m/s}$. Kun väliaine vaihtuu, taajuus säilyy. Kertaa luvussa *Aaltojen synty ja eteneminen*."
+        }
+      ]
+    },
+    {
+      "id": "lt-4",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Lähtötaso 4: kaksi kaiutinta",
+      "prompt": "Kaksi kaiutinta soittaa samaa sävelaaltoa samassa vaiheessa eli täsmälleen samaan tahtiin. Kuulija seisoo kohdassa, joka on toisesta kaiuttimesta puolen aallonpituuden verran kauempana kuin toisesta. Mitä kuulija kuulee?",
+      "choices": [
+        {
+          "text": "Voimakkaan äänen, koska kaksi kaiutinta soittaa yhtä aikaa.",
+          "feedback": "Kahdesta kaiuttimesta tulee kaksi aaltoa. Ne voivat kuitenkin kumota eli poistaa toisensa. Kun matkaero on puoli aallonpituutta, harja kohtaa pohjan, ja interferenssi on heikentävä. Kertaa luvussa *Aaltojen yhteisvaikutus: superpositio ja interferenssi*."
+        },
+        {
+          "text": "Tavallisen äänen, koska aallot kulkevat toistensa läpi.",
+          "feedback": "Aallot kulkevat toistensa läpi. Samassa kohdassa niiden poikkeamat kuitenkin lasketaan yhteen. Tässä kohdassa aallot kumoavat toisensa lähes kokonaan. Kertaa luvussa *Aaltojen yhteisvaikutus: superpositio ja interferenssi*."
+        },
+        {
+          "text": "Heikon äänen, koska siinä kohdassa harja kohtaa pohjan.",
+          "feedback": "Oikein. Matkaero on $\\Delta s = \\tfrac12\\lambda$. Se täyttää heikentävän interferenssin ehdon $\\Delta s = \\left(n + \\tfrac12\\right)\\lambda$, kun $n = 0$. Kertaa tarvittaessa luvussa *Aaltojen yhteisvaikutus: superpositio ja interferenssi*.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "lt-5",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Lähtötaso 5: kaksi ruohonleikkuria",
+      "prompt": "Yksi ruohonleikkuri antaa kuulijan kohdalla intensiteettitason $80\\,\\text{dB}$. Toinen samanlainen leikkuri käynnistetään yhtä kauas kuulijasta. Kuinka suuri on yhteinen taso?",
+      "choices": [
+        {
+          "text": "Noin $83\\,\\text{dB}$, koska intensiteetti kaksinkertaistuu.",
+          "feedback": "Oikein. Intensiteetit lasketaan yhteen, ja $L_2 - L_1 = 10\\,\\text{dB} \\cdot \\lg 2 \\approx 3{,}0\\,\\text{dB}$. Kertaa tarvittaessa luvussa *Intensiteetti ja desibeliasteikko*.",
+          "correct": true
+        },
+        {
+          "text": "$160\\,\\text{dB}$, koska kaksi yhtä voimakasta lähdettä tuplaa tason.",
+          "feedback": "Desibelejä ei lasketa yhteen. Intensiteetit lasketaan yhteen. Kaksinkertainen intensiteetti nostaa tasoa $10\\,\\text{dB} \\cdot \\lg 2 \\approx 3\\,\\text{dB}$. Kertaa luvussa *Intensiteetti ja desibeliasteikko*."
+        },
+        {
+          "text": "Edelleen $80\\,\\text{dB}$, koska leikkurit ovat yhtä voimakkaita.",
+          "feedback": "Kaksi lähdettä tuo kuulijalle kaksinkertaisen tehon pinta-alaa kohti. Siksi intensiteetti kaksinkertaistuu, ja taso nousee noin $3\\,\\text{dB}$. Kertaa luvussa *Intensiteetti ja desibeliasteikko*."
+        }
+      ]
+    },
+    {
+      "id": "lt-6",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Lähtötaso 6: ambulanssi ohittaa",
+      "prompt": "Ambulanssi ajaa tasaisella nopeudella suoraan kohti kuulijaa, joka seisoo kadun vieressä. Ambulanssi ohittaa kuulijan ja loittonee eli menee kauemmas. Miten kuultu sireenin korkeus muuttuu?",
+      "choices": [
+        {
+          "text": "Korkeus nousee koko ajan, kun ambulanssi tulee lähemmäs.",
+          "feedback": "Lähestyvän lähteen ääni on korkeampi kuin sireenin oma ääni. Tasaisella nopeudella korkeus kuitenkin pysyy samana: se riippuu nopeudesta, ei etäisyydestä. Kun ambulanssi lähestyy, voimakkuus kasvaa. Kertaa luvussa *Ääni aaltona: korkeus, sointiväri ja Dopplerin ilmiö*."
+        },
+        {
+          "text": "Korkeus on koko ajan yhtä korkea, ja se laskee ohitushetkellä.",
+          "feedback": "Oikein. Kun lähde lähestyy, $f = f_0 \\cdot \\tfrac{v}{v - v_\\text{s}}$. Kun lähde loittonee, $f = f_0 \\cdot \\tfrac{v}{v + v_\\text{s}}$. Kumpikin on vakio eli ei muutu. Korkeus laskee ohitushetkellä. Kertaa tarvittaessa luvussa *Ääni aaltona: korkeus, sointiväri ja Dopplerin ilmiö*.",
+          "correct": true
+        },
+        {
+          "text": "Korkeus pysyy samana, koska sireeni soi samalla taajuudella.",
+          "feedback": "Sireeni soi samalla taajuudella. Lähestyvän lähteen edessä aaltorintamat kuitenkin tiivistyvät eli tulevat lähemmäs toisiaan, ja lähteen takana ne harvenevat. Siksi kuultu taajuus on suurempi, kun lähde lähestyy, ja pienempi, kun lähde loittonee. Kertaa luvussa *Ääni aaltona: korkeus, sointiväri ja Dopplerin ilmiö*."
+        }
+      ]
+    },
+    {
+      "id": "aineisto",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Kaksi pahviputkea",
+      "source": "example",
+      "source_note": "Keksitty esimerkki: taajuudet on laskettu putkien ominaistaajuuksista äänen nopeudella $343\\,\\text{m/s}$. Niihin on lisätty vaihtelua, joka on samanlaista kuin mittauksissa. Putken päätä ei ole korjattu.",
+      "text": "Fysiikan tunnilla tutkittiin kahta samanlaista pahviputkea. Kummankin putken pituus on $0{,}600\\,\\text{m}$. Toinen putki seisoi niin, että sen toinen pää oli tiiviisti pöytää vasten. Toista putkea pidettiin ilmassa, ja sen molemmat päät olivat auki. Kumpaakin putkea naputettiin. Puhelimen taajuusanalyysisovellus näytti äänen spektrissä neljä selvää piikkiä. Luokan lämpötila oli $20\\,{}^\\circ\\text{C}$.\n\n| Piikki | A: $f\\ (\\text{Hz})$ | B: $f\\ (\\text{Hz})$ |\n|---|---|---|\n| 1 | $284$ | $142$ |\n| 2 | $573$ | $430$ |\n| 3 | $857$ | $713$ |\n| 4 | $1146$ | $1001$ |\n\nTee näin:\n\n1. Laske taajuuksien suhteet. Päättele niistä, kumpi putki seisoi pöytää vasten.\n2. Määritä äänen nopeus kummankin putken mittauksista.\n3. Vastaa alla putken B luvulla. Mallivastauksessa verrataan molempia putkia.",
+      "question": {
+        "type": "numeric",
+        "prompt": "Kuinka suuri äänen nopeus saadaan putken B taajuuksista?",
+        "answer": 342.6,
+        "unit": "m/s",
+        "tolerance": 0.02,
+        "hints": [
+          "Mitä taajuussuhteita putkessa B on? Jaa jokainen taajuus pienimmällä taajuudella.",
+          "Suhteet ovat noin $1 : 3 : 5 : 7$. Siksi putki on toisesta päästä suljettu: $f_n = n \\cdot \\tfrac{v}{4L}$, kun $n = 1, 3, 5, 7$.",
+          "$v = 4L \\cdot \\tfrac{f_n}{n}$. Laske $\\tfrac{f_n}{n}$ jokaisesta piikistä. Käytä sitten niiden keskiarvoa."
+        ],
+        "mistakes": [
+          {
+            "value": 170.4,
+            "feedback": "Käytit avoimen putken mallia $v = 2Lf_1$. Putken B taajuudet ovat perustaajuuden parittomia monikertoja, joten putki on suljettu. Solmusta kupuun on $\\tfrac{\\lambda}{4}$, ja $v = 4Lf_1$."
+          },
+          {
+            "value": 85.2,
+            "feedback": "Käytit aallonpituutena putken pituutta. Kun putki on toisesta päästä suljettu, perustaajuuden aallonpituus on $4L$."
+          }
+        ],
+        "solution": "**Annettu:** putken pituus $L = 0{,}600\\,\\text{m}$; putken B piikit $142\\,\\text{Hz}$, $430\\,\\text{Hz}$, $713\\,\\text{Hz}$ ja $1001\\,\\text{Hz}$; putken A piikit $284\\,\\text{Hz}$, $573\\,\\text{Hz}$, $857\\,\\text{Hz}$ ja $1146\\,\\text{Hz}$\n\n**Kysytty:** äänen nopeus $v$ putken B mittauksista yksikössä $\\text{m/s}$\n\n**Periaate:** Putken ilmaan syntyy seisova aalto vain ominaistaajuuksilla. Putken B taajuuksien suhteet ovat $1 : 3{,}0 : 5{,}0 : 7{,}0$. Siis mukana ovat vain perustaajuuden parittomat monikerrat. Siksi putki B seisoi pöytää vasten. Suljetussa päässä on siirtymän solmu ja avoimessa päässä kupu. Siksi putken pituus on pariton määrä aallonpituuden neljänneksiä (luku *Seisova aalto: solmut, kuvut ja ominaistaajuudet*). Jokainen piikki antaa perustaajuudelle arvion $\\tfrac{f_n}{n}$. Arvioiden keskiarvo pienentää satunnaisen vaihtelun vaikutusta.\n\n**Kaava:** $f_n = n \\cdot \\dfrac{v}{4L}$, kun $n = 1, 3, 5, 7$, joten $v = 4L \\cdot \\dfrac{f_n}{n}$\n\n**Muunnokset:** Suureet ovat perusyksiköissä, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $\\tfrac{f_n}{n}$ on $142\\,\\text{Hz}$, $430\\,\\text{Hz} : 3 = 143{,}3\\,\\text{Hz}$, $713\\,\\text{Hz} : 5 = 142{,}6\\,\\text{Hz}$ ja $1001\\,\\text{Hz} : 7 = 143{,}0\\,\\text{Hz}$. Keskiarvo on $142{,}7\\,\\text{Hz}$. Siten $v = 4 \\cdot 0{,}600\\,\\text{m} \\cdot 142{,}7\\,\\tfrac{1}{\\text{s}} = 342{,}6\\,\\text{m/s}$\n\n**Vastaus:** $v \\approx 343\\,\\text{m/s}$. Vastauksessa on kolme merkitsevää numeroa kuten putken pituudessa $0{,}600\\,\\text{m}$ ja taajuuksissa.\n\n**Järkevyys:** Putken A taajuuksien suhteet ovat $1 : 2 : 3 : 4$. Siksi putki A oli avoin, ja $f_n = n \\cdot \\tfrac{v}{2L}$. Sen keskiarvo $\\tfrac{f_n}{n} = 285{,}7\\,\\text{Hz}$ antaa $v = 2 \\cdot 0{,}600\\,\\text{m} \\cdot 285{,}7\\,\\tfrac{1}{\\text{s}} \\approx 343\\,\\text{m/s}$. Tulos on sama. Suljetun putken perustaajuus $142\\,\\text{Hz}$ on puolet avoimen putken taajuudesta $284\\,\\text{Hz}$, kuten mallin mukaan pitää. Lisäksi $343\\,\\text{m/s}$ on äänen nopeus ilmassa, jonka lämpötila on $20\\,{}^\\circ\\text{C}$."
+      }
+    },
+    {
+      "id": "teoriatiivistelma",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava",
+        "Virheet",
+        "Kertaa"
+      ]
+    },
+    {
+      "id": "virhe-kaiku",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe: kaikuluotain",
+      "prompt": "Kalastaja katsoo veneen kaikuluotainta. Kaikuluotain lähettää ultraäänipulssin, ja pulssi palaa pohjasta takaisin $24\\,\\text{ms}$ lähettämisen jälkeen. Äänen nopeus järvivedessä on $1480\\,\\text{m/s}$. Opiskelija laski syvyyden: ”$d = vt = 1480\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot 0{,}024\\,\\text{s} = 35{,}5\\,\\text{m}$.” Mikä ratkaisussa on väärin?",
+      "choices": [
+        {
+          "text": "Laskussa piti käyttää äänen nopeutta ilmassa, $340\\,\\text{m/s}$.",
+          "feedback": "Pulssi kulkee vedessä anturista pohjaan ja takaisin. Siksi nopeus on veden nopeus $1480\\,\\text{m/s}$. Virhe on se, että kulkuaika sisältää sekä menon että paluun. Kertaa luvussa *Soveltava luku: ultraäänikuvaus ja maanjäristysaallot*."
+        },
+        {
+          "text": "Pulssi kulkee syvyyden kahdesti, joten tulos pitää puolittaa.",
+          "feedback": "Oikein. Kulkuaika sisältää menon ja paluun, joten $d = \\tfrac{vt}{2} = \\tfrac{1480\\,\\text{m/s} \\cdot 0{,}024\\,\\text{s}}{2} \\approx 18\\,\\text{m}$.",
+          "correct": true
+        },
+        {
+          "text": "Ultraäänen taajuus puuttuu, joten syvyyttä ei voi laskea.",
+          "feedback": "Taajuus vaikuttaa aallonpituuteen ja siksi kuvan tarkkuuteen. Taajuus ei vaikuta äänen nopeuteen. Syvyys saadaan nopeudesta ja kulkuajasta: $d = \\tfrac{vt}{2}$. Kertaa luvussa *Soveltava luku: ultraäänikuvaus ja maanjäristysaallot*."
+        }
+      ]
+    },
+    {
+      "id": "lue-kuvaaja",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Lue kuvaaja: narun yksi kohta",
+      "figure": "fy5-10/yt-kuvaaja",
+      "prompt": "Narussa etenee aalto. Kuvaajassa on narun yhden kohdan poikkeama ajan funktiona. Aalto etenee narussa nopeudella $3{,}0\\,\\text{m/s}$. Mikä väite on oikein?",
+      "choices": [
+        {
+          "text": "Aallonpituus on $0{,}40\\,\\text{m}$, koska huippujen väli on $0{,}40$.",
+          "feedback": "Vaaka-akselilla on aika. Siksi huippujen väli $0{,}40\\,\\text{s}$ on jaksonaika eikä aallonpituus. Aallonpituus saadaan nopeudesta: $\\lambda = vT = 1{,}2\\,\\text{m}$. Kertaa luvussa *Aaltojen synty ja eteneminen*."
+        },
+        {
+          "text": "Jaksonaika on $0{,}20\\,\\text{s}$, koska käyrä leikkaa akselin niin usein.",
+          "feedback": "Peräkkäiset akselin leikkaukset ovat puolen jakson päässä toisistaan. Niissä kohta liikkuu vastakkaisiin suuntiin. Jaksonaika on kahden sellaisen leikkauksen väli, joissa käyrä nousee ylöspäin: $0{,}40\\,\\text{s}$. Kertaa luvussa *Värähtelyn suureet: jaksonaika, taajuus ja amplitudi*."
+        },
+        {
+          "text": "Taajuus on $2{,}5\\,\\text{Hz}$, ja aallonpituus on $1{,}2\\,\\text{m}$.",
+          "feedback": "Oikein. Käyrä nousee akselin läpi $0{,}40\\,\\text{s}$:n välein, joten $T = 0{,}40\\,\\text{s}$ ja $f = \\tfrac{1}{T} = 2{,}5\\,\\text{Hz}$. Aallonpituus on $\\lambda = \\tfrac{v}{f} = \\tfrac{3{,}0\\,\\text{m/s}}{2{,}5\\,\\text{Hz}} = 1{,}2\\,\\text{m}$.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "bassot",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Perusteltu väite: musiikki kulman takaa",
+      "prompt": "Naapurissa on pihajuhlat. Talon kulman taakse kuuluu lähinnä bassorummun jytke, vaikka musiikissa on myös korkeita ääniä. Äänen nopeus on $340\\,\\text{m/s}$. Mikä selitys on oikein?",
+      "choices": [
+        {
+          "text": "Matalat äänet etenevät ilmassa nopeammin kuin korkeat äänet.",
+          "feedback": "Ilmassa äänen nopeus ei käytännössä riipu taajuudesta. Ero syntyy aallonpituudesta. Matalan äänen aallonpituus on monta metriä, ja ääni taipuu kulman taakse. Kertaa luvussa *Aalto kohtaa esteen tai raon*."
+        },
+        {
+          "text": "Matalan äänen aallonpituus on pitkä, joten ääni taipuu kulman taakse.",
+          "feedback": "Oikein. Esimerkiksi $60\\,\\text{Hz}$:n äänen aallonpituus on $\\tfrac{340\\,\\text{m/s}}{60\\,\\text{Hz}} \\approx 5{,}7\\,\\text{m}$. $8\\,\\text{kHz}$:n äänen aallonpituus on vain noin $4\\,\\text{cm}$. Diffraktio eli aallon taipuminen on voimakasta, kun este tai aukko on aallonpituuden suuruusluokkaa tai pienempi. Kertaa tarvittaessa luvussa *Aalto kohtaa esteen tai raon*.",
+          "correct": true
+        },
+        {
+          "text": "Bassorumpu on aina musiikin voimakkain soitin, joten se kuuluu kauas.",
+          "feedback": "Voimakkuus ei selitä, miksi juuri matalat äänet kiertävät kulman. Korkeat äänet etenevät lähes suoraan. $60\\,\\text{Hz}$:n äänen aallonpituus on kuitenkin noin $5{,}7\\,\\text{m}$. Se on samaa kokoa kuin rakennukset, joten ääni taipuu. Kertaa luvussa *Aalto kohtaa esteen tai raon*."
+        }
+      ]
+    },
+    {
+      "id": "kaksi-konetta",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Perusteltu väite: kaksi konetta",
+      "prompt": "Työmaalla on kone, joka antaa työntekijän korvalla tason $88\\,\\text{dB}$. Silloin sallittu altistusaika on $4\\,\\text{h}$ päivässä. Altistusaika on aika, jonka ihminen saa olla melussa. Viereen käynnistetään toinen samanlainen kone yhtä kauas työntekijästä. Mikä väite on oikein?",
+      "choices": [
+        {
+          "text": "Taso nousee $176\\,\\text{dB}$:iin, joten työmaalla ei saa olla.",
+          "feedback": "Desibelejä ei lasketa yhteen. Kaksi samanlaista konetta kaksinkertaistaa intensiteetin. Se nostaa tasoa vain noin $3\\,\\text{dB}$, eli taso on $91\\,\\text{dB}$. Kertaa luvussa *Intensiteetti ja desibeliasteikko*."
+        },
+        {
+          "text": "Taso nousee noin $94\\,\\text{dB}$:iin, ja sallittu aika on $1\\,\\text{h}$.",
+          "feedback": "Noin $6\\,\\text{dB}$:n muutos syntyy, kun etäisyys pistemäisestä lähteestä puolittuu. Toinen kone kaksinkertaistaa intensiteetin, ja taso nousee $3\\,\\text{dB}$. Siksi sallittu aika on $2\\,\\text{h}$. Kertaa luvussa *Melu, akustiikka ja äänentoisto*."
+        },
+        {
+          "text": "Taso nousee noin $91\\,\\text{dB}$:iin, ja sallittu aika on $2\\,\\text{h}$.",
+          "feedback": "Oikein. Kaksinkertainen intensiteetti nostaa tasoa noin $3\\,\\text{dB}$. Jokainen $3\\,\\text{dB}$:n nousu puolittaa sallitun ajan: $4\\,\\text{h} : 2 = 2\\,\\text{h}$. Kertaa tarvittaessa luvussa *Melu, akustiikka ja äänentoisto*.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "jousitus",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Auton jousitus",
+      "prompt": "Henkilöauton kori lepää neljän jousen varassa. Korin massa on $1200\\,\\text{kg}$. Kuljettaja, jonka massa on $90\\,\\text{kg}$, istuu autoon. Silloin kori painuu $8{,}0\\,\\text{mm}$ alemmas. Testiä varten iskunvaimentimet irrotetaan, ja koria painetaan kerran alas. Oletetaan, että jousten voima on harmoninen ja että renkaat eivät jousta. Millä taajuudella kori värähtelee, kun kuljettaja istuu kyydissä?",
+      "answer": 1.472,
+      "unit": "Hz",
+      "tolerance": 0.02,
+      "hints": [
+        "Mistä saat jousten yhteisen jousivakion? Mikä lisävoima painoi koria $8{,}0\\,\\text{mm}$ alemmas?",
+        "Kuljettajan paino $mg$ puristaa jousia lisää, joten $k = \\tfrac{mg}{x}$. Värähtelevä massa on kori ja kuljettaja yhdessä.",
+        "$f = \\tfrac{1}{T}$, missä $T = 2\\pi\\sqrt{\\tfrac{m_\\text{kori} + m}{k}}$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.6793,
+          "feedback": "Tämä on jaksonaika sekunteina. Tehtävässä kysytään taajuutta $f = \\tfrac{1}{T}$."
+        },
+        {
+          "value": 5.573,
+          "feedback": "Käytit värähtelevänä massana vain kuljettajaa. Jouset värähdyttävät koko koria ja kuljettajaa, eli massa on $1290\\,\\text{kg}$."
+        },
+        {
+          "value": 9.249,
+          "feedback": "Unohdit kertoimen $2\\pi$: $T = 2\\pi\\sqrt{\\tfrac{m}{k}}$ ja $f = \\tfrac{1}{T}$."
+        }
+      ],
+      "solution": "**Annettu:** korin massa $m_\\text{kori} = 1200\\,\\text{kg}$, kuljettajan massa $m = 90\\,\\text{kg}$, lisäpainuma $x = 8{,}0\\,\\text{mm}$, $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** korin värähtelyn taajuus $f$ yksikössä $\\text{Hz}$\n\n**Periaate:** Neljä jousta kantaa koria yhdessä. Ne toimivat kuin yksi jousi, jonka jousivakio on $k$. Kun kori on taas levossa, kuljettajan paino on jousten lisävoima. Harmonisessa jousessa lisävoima on verrannollinen lisäpainumaan (luku *Jousivoima ja jousen energia*). Kun koria painetaan ja se päästetään irti, koriin ja kuljettajaan vaikuttavat paino ja jousten harmoninen voima. Paino vain siirtää tasapainoasemaa. Siksi kori ja kuljettaja värähtelevät jaksonajalla $T = 2\\pi\\sqrt{\\tfrac{m}{k}}$ (luku *Jousivärähtelijä ja heiluri*).\n\n**Kaava:** $mg = kx$, joten $k = \\dfrac{mg}{x}$, ja $f = \\dfrac{1}{T} = \\dfrac{1}{2\\pi}\\sqrt{\\dfrac{k}{m_\\text{kori} + m}}$\n\n**Muunnokset:** $8{,}0\\,\\text{mm} = 8{,}0 \\cdot 0{,}001\\,\\text{m} = 0{,}0080\\,\\text{m}$\n\n**Sijoitus:** $k = \\dfrac{90\\,\\text{kg} \\cdot 9{,}81\\,\\tfrac{\\text{m}}{\\text{s}^2}}{0{,}0080\\,\\text{m}} = 110\\,363\\,\\text{N/m}$, joten $f = \\dfrac{1}{2\\pi}\\sqrt{\\dfrac{110\\,363\\,\\tfrac{\\text{N}}{\\text{m}}}{1290\\,\\text{kg}}} = \\dfrac{1}{2\\pi} \\cdot 9{,}249\\,\\tfrac{1}{\\text{s}} = 1{,}472\\,\\text{Hz}$\n\n**Vastaus:** $f \\approx 1{,}5\\,\\text{Hz}$. Vastauksessa on kaksi merkitsevää numeroa kuten painumassa $8{,}0\\,\\text{mm}$.\n\n**Järkevyys:** Jaksonaika on $T = \\tfrac{1}{f} \\approx 0{,}68\\,\\text{s}$. Kori liikkuu ylös ja alas vähän yli kerran sekunnissa. Auto keinuu samalla tavalla kuopan jälkeen. Jos koko massa $1290\\,\\text{kg}$ painaisi jousia, painuma olisi $\\tfrac{1290 \\cdot 9{,}81\\,\\text{N}}{110\\,363\\,\\text{N/m}} \\approx 0{,}11\\,\\text{m}$. Se on autolle tavallinen jousen liike."
+    },
+    {
+      "id": "poiju",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Moottoriveneen aallot",
+      "prompt": "Moottorivene synnyttää aaltoja. Aallot saapuvat poijuun, joka on ankkuroitu laiturin viereen. Poiju nousee ja laskee. $8$ täyttä värähdystä kestää $14{,}4\\,\\text{s}$. Laiturilta arvioidaan, että peräkkäisten aallonharjojen väli on $3{,}1\\,\\text{m}$. Kuinka suurella nopeudella aallot etenevät?",
+      "answer": 1.722,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "hints": [
+        "Mitä poijun värähtely kertoo aallosta: jaksonajan vai aallonpituuden?",
+        "Poiju värähtelee samaan tahtiin kuin aalto. Siksi aallon jaksonaika on $T = \\tfrac{14{,}4\\,\\text{s}}{8}$.",
+        "Aalto etenee yhden aallonpituuden yhden jaksonajan aikana: $v = \\tfrac{\\lambda}{T}$."
+      ],
+      "mistakes": [
+        {
+          "value": 5.58,
+          "feedback": "Kerroit aallonpituuden jaksonajalla. Aalto etenee yhden aallonpituuden yhden jaksonajan aikana, joten $v = \\tfrac{\\lambda}{T}$."
+        },
+        {
+          "value": 0.2153,
+          "feedback": "Jaoit aallonpituuden kahdeksan värähdyksen kestolla. Aalto kulkee yhden aallonpituuden yhden värähdyksen aikana, $T = 1{,}8\\,\\text{s}$."
+        }
+      ],
+      "solution": "**Annettu:** värähdysten määrä $n = 8$, niiden kesto $t_n = 14{,}4\\,\\text{s}$, harjojen väli eli aallonpituus $\\lambda = 3{,}1\\,\\text{m}$\n\n**Kysytty:** aaltojen etenemisnopeus $v$ yksikössä $\\text{m/s}$\n\n**Periaate:** Poiju on väliaineen kohta, joka värähtelee samaan tahtiin kuin aalto. Siksi poijun jaksonaika on aallon jaksonaika (luku *Värähtelyn suureet: jaksonaika, taajuus ja amplitudi*). Jaksonaika saadaan tarkimmin, kun mitataan usean värähdyksen kesto. Yhden jaksonajan aikana aalto etenee yhden aallonpituuden. Siksi käytetään aaltoliikkeen perusyhtälöä (luku *Aaltojen synty ja eteneminen*).\n\n**Kaava:** $T = \\dfrac{t_n}{n}$ ja $v = \\dfrac{\\lambda}{T} = \\dfrac{n\\lambda}{t_n}$\n\n**Muunnokset:** Suureet ovat perusyksiköissä, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $T = \\dfrac{14{,}4\\,\\text{s}}{8} = 1{,}8\\,\\text{s}$, joten $v = \\dfrac{3{,}1\\,\\text{m}}{1{,}8\\,\\text{s}} = 1{,}722\\,\\text{m/s}$\n\n**Vastaus:** $v \\approx 1{,}7\\,\\text{m/s}$. Vastauksessa on kaksi merkitsevää numeroa kuten aallonpituudessa $3{,}1\\,\\text{m}$.\n\n**Järkevyys:** Aalto etenee noin $6\\,\\text{km/h}$. Se on reipas kävelyvauhti, ja se sopii vesiaalloille, joiden pituus on muutama metri. Taajuus on $f = \\tfrac{1}{1{,}8\\,\\text{s}} \\approx 0{,}56\\,\\text{Hz}$, ja $f\\lambda = 0{,}556\\,\\text{Hz} \\cdot 3{,}1\\,\\text{m} \\approx 1{,}7\\,\\text{m/s}$. Tulos on sama."
+    },
+    {
+      "id": "juna",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Juna ohittaa laiturin",
+      "prompt": "Matkustaja seisoo laiturilla. Juna ajaa ohi ja antaa äänimerkin. Kun juna lähestyy, matkustaja kuulee äänimerkin taajuudella $562\\,\\text{Hz}$. Kun juna on ohittanut hänet, hän kuulee taajuuden $478\\,\\text{Hz}$. Juna ajaa tasaisella nopeudella, ilma on tyyni, ja äänen nopeus on $340\\,\\text{m/s}$. Kuinka suuri on junan nopeus?",
+      "answer": 27.46,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "hints": [
+        "Kumpaankin kuultuun taajuuteen liittyy sama tuntematon äänimerkin taajuus $f_0$. Miten saat sen pois yhtälöistä?",
+        "Kun juna lähestyy, $f_1 = f_0 \\cdot \\tfrac{v}{v - v_\\text{s}}$. Kun juna loittonee, $f_2 = f_0 \\cdot \\tfrac{v}{v + v_\\text{s}}$. Jaa yhtälöt puolittain eli vasen puoli vasemmalla ja oikea puoli oikealla.",
+        "$\\tfrac{f_1}{f_2} = \\tfrac{v + v_\\text{s}}{v - v_\\text{s}}$, josta saadaan $v_\\text{s} = v \\cdot \\tfrac{f_1 - f_2}{f_1 + f_2}$."
+      ],
+      "mistakes": [
+        {
+          "value": 50.82,
+          "feedback": "Jaoit taajuuksien erotuksen yhdellä kuulluista taajuuksista. Kumpikin taajuus poikkeaa äänimerkin omasta taajuudesta. Siksi erotus syntyy kahdesta muutoksesta: $v_\\text{s} = v \\cdot \\tfrac{f_1 - f_2}{f_1 + f_2}$."
+        },
+        {
+          "value": 54.92,
+          "feedback": "Pidit koko erotusta yhtenä Dopplerin muutoksena. Erotus syntyy kahdesta muutoksesta, jotka ovat lähes yhtä suuria. Taajuus nousee, kun juna lähestyy, ja laskee, kun juna loittonee."
+        },
+        {
+          "value": 98.86,
+          "feedback": "Tämä on nopeus yksikössä $\\text{km/h}$. Vastaa metreinä sekunnissa."
+        }
+      ],
+      "solution": "**Annettu:** taajuus, joka kuullaan junan lähestyessä, $f_1 = 562\\,\\text{Hz}$, taajuus, joka kuullaan junan loitotessa, $f_2 = 478\\,\\text{Hz}$, äänen nopeus $v = 340\\,\\text{m/s}$; kuulija on paikallaan\n\n**Kysytty:** junan nopeus $v_\\text{s}$ yksikössä $\\text{m/s}$\n\n**Periaate:** Lähde liikkuu, ja kuulija on paikallaan. Lähteen edessä aallonpituus lyhenee, ja lähteen takana se pitenee. Siksi käytetään liikkuvan lähteen Dopplerin kaavaa. Lähestyessä kaavassa on miinusmerkki ja loitotessa plusmerkki (luku *Ääni aaltona: korkeus, sointiväri ja Dopplerin ilmiö*). Äänimerkin omaa taajuutta $f_0$ ei tunneta. Se on kuitenkin molemmissa yhtälöissä sama. Siksi se supistuu pois, kun yhtälöt jaetaan puolittain.\n\n**Kaava:** $f_1 = f_0 \\cdot \\dfrac{v}{v - v_\\text{s}}$ ja $f_2 = f_0 \\cdot \\dfrac{v}{v + v_\\text{s}}$, joten $\\dfrac{f_1}{f_2} = \\dfrac{v + v_\\text{s}}{v - v_\\text{s}}$. Siitä saadaan $f_1 v - f_1 v_\\text{s} = f_2 v + f_2 v_\\text{s}$ ja $v_\\text{s} = v \\cdot \\dfrac{f_1 - f_2}{f_1 + f_2}$\n\n**Muunnokset:** Suureet ovat perusyksiköissä, joten muunnoksia ei tarvita. Lopuksi nopeutta verrataan yksikössä $\\text{km/h}$.\n\n**Sijoitus:** $v_\\text{s} = 340\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot \\dfrac{562\\,\\text{Hz} - 478\\,\\text{Hz}}{562\\,\\text{Hz} + 478\\,\\text{Hz}} = 340\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot \\dfrac{84\\,\\text{Hz}}{1040\\,\\text{Hz}} = 27{,}46\\,\\text{m/s}$\n\n**Vastaus:** $v_\\text{s} \\approx 27\\,\\text{m/s}$. Vastauksessa on kaksi merkitsevää numeroa, koska tulos riippuu taajuuksien erotuksesta $84\\,\\text{Hz}$.\n\n**Järkevyys:** $27{,}46\\,\\text{m/s} = 27{,}46 \\cdot \\tfrac{3600\\,\\text{s/h}}{1000\\,\\text{m/km}} \\approx 99\\,\\text{km/h}$. Se on tavallinen junan nopeus aseman lähellä. Äänimerkin oma taajuus on $f_0 = f_1 \\cdot \\tfrac{v - v_\\text{s}}{v} = 562\\,\\text{Hz} \\cdot \\tfrac{312{,}5}{340} \\approx 517\\,\\text{Hz}$. Se on kuultujen taajuuksien välissä, kuten pitää."
+    },
+    {
+      "id": "konsertti",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Ulkoilmakonsertin kaiutin",
+      "prompt": "Ulkoilmakonsertissa mitataan intensiteettitaso $104\\,\\text{dB}$. Mittauskohta on $20\\,\\text{m}$:n päässä kaiutintornista. Oletetaan, että torni on pistemäinen lähde, joka säteilee ääntä tasaisesti joka suuntaan. Ääni ei heijastu eikä vaimene eli heikkene ilmassa. Kuinka kaukana tornista taso on laskenut $85\\,\\text{dB}$:iin?",
+      "answer": 178.3,
+      "unit": "m",
+      "tolerance": 0.03,
+      "hints": [
+        "Kuinka moninkertainen intensiteetti on $20\\,\\text{m}$:n päässä kuin kysytyssä kohdassa?",
+        "$L_1 - L_2 = 10\\,\\text{dB} \\cdot \\lg \\tfrac{I_1}{I_2}$, joten $\\tfrac{I_1}{I_2} = 10^{1{,}9}$.",
+        "Pistemäiselle lähteelle $I = \\tfrac{P}{4\\pi r^2}$. Siksi $\\tfrac{I_1}{I_2} = \\tfrac{r_2^2}{r_1^2}$ ja $r_2 = r_1\\sqrt{\\tfrac{I_1}{I_2}}$."
+      ],
+      "mistakes": [
+        {
+          "value": 1589,
+          "feedback": "Oletit, että intensiteetti on kääntäen verrannollinen etäisyyteen. Se on kääntäen verrannollinen etäisyyden neliöön. Siksi etäisyyksien suhde on intensiteettien suhteen neliöjuuri."
+        },
+        {
+          "value": 24.47,
+          "feedback": "Laskit desibelilukemien suhteen. Taso on logaritminen. Laske ensin intensiteettien suhde $10^{1{,}9} \\approx 79$ ja sitten etäisyys."
+        }
+      ],
+      "solution": "**Annettu:** etäisyys $r_1 = 20\\,\\text{m}$, taso siellä $L_1 = 104\\,\\text{dB}$, taso kysytyssä kohdassa $L_2 = 85\\,\\text{dB}$; pistemäinen lähde, ei heijastuksia eikä vaimenemista\n\n**Kysytty:** etäisyys $r_2$ yksikössä $\\text{m}$\n\n**Periaate:** Tasojen erotus riippuu vain intensiteettien suhteesta, koska kuulokynnys $I_0$ supistuu pois (luku *Intensiteetti ja desibeliasteikko*). Pistemäisen lähteen teho jakautuu pallon pinnalle $4\\pi r^2$. Siksi intensiteetti on kääntäen verrannollinen etäisyyden neliöön.\n\n**Kaava:** $L_1 - L_2 = 10\\,\\text{dB} \\cdot \\lg \\dfrac{I_1}{I_2}$ ja $\\dfrac{I_1}{I_2} = \\dfrac{r_2^2}{r_1^2}$, joten $r_2 = r_1 \\sqrt{10^{\\,(L_1 - L_2)/(10\\,\\text{dB})}}$\n\n**Muunnokset:** Suureet ovat valmiiksi samoissa yksiköissä, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $\\dfrac{L_1 - L_2}{10\\,\\text{dB}} = \\dfrac{19\\,\\text{dB}}{10\\,\\text{dB}} = 1{,}9$, joten $\\dfrac{I_1}{I_2} = 10^{1{,}9} = 79{,}43$ ja $r_2 = 20\\,\\text{m} \\cdot \\sqrt{79{,}43} = 20\\,\\text{m} \\cdot 8{,}913 = 178{,}3\\,\\text{m}$\n\n**Vastaus:** $r_2 \\approx 180\\,\\text{m}$. Vastauksessa on kaksi merkitsevää numeroa kuten etäisyydessä $20\\,\\text{m}$.\n\n**Järkevyys:** Kun etäisyys kaksinkertaistuu, taso laskee noin $6\\,\\text{dB}$. Pudotus $19\\,\\text{dB}$ on noin kolme kaksinkertaistumista, $2^3 \\cdot 20\\,\\text{m} = 160\\,\\text{m}$, ja vähän enemmän. Siksi $180\\,\\text{m}$ on oikeaa suuruusluokkaa. Todellisuudessa maa ja rakennukset heijastavat ääntä, ja ilma vaimentaa sitä. Siksi tulos on vain arvio."
+    },
+    {
+      "id": "lisaa",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Tunnin lopussa on ylioppilaskokeen tyylisiä tehtäviä. Kirjoita ratkaisu vihkoon tai koneelle kuten kokeessa. Arvioi ratkaisu vasta sen jälkeen mallivastauksen ja pisteytyksen avulla."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Kaksi kaiutinta on vierekkäin. Ne soittavat samassa vaiheessa sävelaaltoa, jonka taajuus on $200\\,\\text{Hz}$. Kuulijan etäisyys toisesta kaiuttimesta on $3{,}40\\,\\text{m}$ ja toisesta $4{,}25\\,\\text{m}$. Äänen nopeus on $340\\,\\text{m/s}$. Mikä väite on oikein?",
+      "choices": [
+        {
+          "text": "Kuulija on vahvistavan interferenssin kohdassa, koska matkaero on alle metrin pituinen.",
+          "feedback": "Matkaeron koko ei ratkaise. Ratkaisevaa on matkaeron suhde aallonpituuteen. Matkaero $0{,}85\\,\\text{m}$ on puolet aallonpituudesta $\\tfrac{340\\,\\text{m/s}}{200\\,\\text{Hz}} = 1{,}70\\,\\text{m}$. Siksi harja kohtaa pohjan. Kertaa luvussa *Aaltojen yhteisvaikutus: superpositio ja interferenssi*."
+        },
+        {
+          "text": "Interferenssiä ei synny, koska kuulija on eri etäisyyksillä kaiuttimista.",
+          "feedback": "Interferenssi syntyy juuri siksi, että matkat ovat eri pitkiä. Kauempaa tuleva aalto on jäljessä matkaeron verran. Matkaero $\\tfrac{\\lambda}{2}$ antaa heikentävän interferenssin. Kertaa luvussa *Aaltojen yhteisvaikutus: superpositio ja interferenssi*."
+        },
+        {
+          "text": "Kuulija on heikentävän interferenssin kohdassa: matkaero on $\\tfrac{\\lambda}{2}$.",
+          "feedback": "Oikein. $\\lambda = \\tfrac{340\\,\\text{m/s}}{200\\,\\text{Hz}} = 1{,}70\\,\\text{m}$ ja $\\Delta s = 4{,}25\\,\\text{m} - 3{,}40\\,\\text{m} = 0{,}85\\,\\text{m} = \\tfrac{\\lambda}{2}$. Kertaa tarvittaessa luvussa *Aaltojen yhteisvaikutus: superpositio ja interferenssi*.",
+          "correct": true
+        }
+      ],
+      "practice": "Kertaa matkaero ja interferenssin ehdot luvussa [*Aaltojen yhteisvaikutus: superpositio ja interferenssi*](fy5-12.html). Kertaa aallonpituus luvussa [*Aaltojen synty ja eteneminen*](fy5-10.html)."
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Laskeminen",
+      "prompt": "Pohjois-Suomessa on seismografiasema, joka mittaa maanjäristyksiä. Asema rekisteröi eli tallentaa maanjäristyksen. Järistyksen S-aalto saapuu $14{,}2\\,\\text{s}$ P-aallon jälkeen. P-aallon nopeus kallioperässä on $6{,}0\\,\\text{km/s}$ ja S-aallon nopeus $3{,}5\\,\\text{km/s}$. Kuinka kaukana asemasta järistys tapahtui?",
+      "answer": 119.3,
+      "unit": "km",
+      "tolerance": 0.02,
+      "hints": [
+        "Aallot kulkevat saman matkan $d$ eri nopeuksilla. Mitä saapumisaikojen ero kertoo?",
+        "$\\Delta t = \\tfrac{d}{v_\\text{S}} - \\tfrac{d}{v_\\text{P}}$",
+        "$d = \\dfrac{v_\\text{P} v_\\text{S}}{v_\\text{P} - v_\\text{S}}\\,\\Delta t$"
+      ],
+      "mistakes": [
+        {
+          "value": 85.2,
+          "feedback": "Kerroit aikaeron P-aallon nopeudella. Aikaero on kulkuaikojen erotus. Se ei ole P-aallon kulkuaika."
+        },
+        {
+          "value": 49.7,
+          "feedback": "Kerroit aikaeron S-aallon nopeudella. Aikaero on kulkuaikojen erotus. Se ei ole S-aallon kulkuaika."
+        },
+        {
+          "value": 35.5,
+          "feedback": "Kerroit aikaeron nopeuksien erotuksella. Ratkaise $d$ yhtälöstä $\\Delta t = \\tfrac{d}{v_\\text{S}} - \\tfrac{d}{v_\\text{P}}$."
+        }
+      ],
+      "practice": "Kertaa maanjäristysaallot ja etäisyyden laskeminen aikaerosta luvussa [*Soveltava luku: ultraäänikuvaus ja maanjäristysaallot*](fy5-17.html).",
+      "solution": "**Annettu:** saapumisaikojen ero $\\Delta t = 14{,}2\\,\\text{s}$, P-aallon nopeus $v_\\text{P} = 6{,}0\\,\\text{km/s}$, S-aallon nopeus $v_\\text{S} = 3{,}5\\,\\text{km/s}$\n\n**Kysytty:** etäisyys $d$ järistyksen alkukohdasta yksikössä $\\text{km}$\n\n**Periaate:** P-aalto ja S-aalto lähtevät samalla hetkellä. Ne kulkevat saman matkan tasaisilla nopeuksilla, oletettavasti samaa reittiä. Hitaampi S-aalto jää sitä enemmän jälkeen, mitä pidempi matka on. Siksi aikaero on kulkuaikojen erotus (luku *Soveltava luku: ultraäänikuvaus ja maanjäristysaallot*).\n\n**Kaava:** $\\Delta t = \\dfrac{d}{v_\\text{S}} - \\dfrac{d}{v_\\text{P}} = d \\cdot \\dfrac{v_\\text{P} - v_\\text{S}}{v_\\text{P} v_\\text{S}}$, joten $d = \\dfrac{v_\\text{P} v_\\text{S}}{v_\\text{P} - v_\\text{S}}\\,\\Delta t$\n\n**Muunnokset:** Nopeudet ovat yksikössä $\\text{km/s}$ ja aika sekunteina. Siksi etäisyys saadaan suoraan kilometreinä.\n\n**Sijoitus:** $d = \\dfrac{6{,}0\\,\\tfrac{\\text{km}}{\\text{s}} \\cdot 3{,}5\\,\\tfrac{\\text{km}}{\\text{s}}}{6{,}0\\,\\tfrac{\\text{km}}{\\text{s}} - 3{,}5\\,\\tfrac{\\text{km}}{\\text{s}}} \\cdot 14{,}2\\,\\text{s} = 8{,}4\\,\\tfrac{\\text{km}}{\\text{s}} \\cdot 14{,}2\\,\\text{s} = 119{,}3\\,\\text{km}$\n\n**Vastaus:** $d \\approx 120\\,\\text{km}$. Vastauksessa on kaksi merkitsevää numeroa kuten nopeuksissa $6{,}0\\,\\text{km/s}$ ja $3{,}5\\,\\text{km/s}$.\n\n**Järkevyys:** P-aalto kulkee matkan ajassa $119{,}3\\,\\text{km} : 6{,}0\\,\\text{km/s} \\approx 19{,}9\\,\\text{s}$. S-aalto kulkee sen ajassa $119{,}3\\,\\text{km} : 3{,}5\\,\\text{km/s} \\approx 34{,}1\\,\\text{s}$. Ero on $14{,}2\\,\\text{s}$, kuten mitattiin. Jokainen sekunti aikaeroa vastaa noin $8\\,\\text{km}$:ä."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä",
+      "prompt": "Laboratoriossa on kaksi punnusta. Toinen punnus värähtelee jousen varassa, ja toinen heiluu langan varassa. Kummassakin punnus vaihdetaan punnukseen, joka on kaksi kertaa raskaampi. Heilahdukset pidetään pieninä. Toisen jaksonaika kasvaa, ja toisen jaksonaika ei muutu. Selitä voimien ja Newtonin toisen lain avulla, kumman jaksonaika kasvaa ja miksi.",
+      "criteria": [
+        "Vastaus toteaa, että jousivärähtelijän jaksonaika kasvaa ($T = 2\\pi\\sqrt{\\tfrac{m}{k}}$) ja heilurin jaksonaika pysyy samana ($T = 2\\pi\\sqrt{\\tfrac{l}{g}}$).",
+        "Vastaus perustelee, että jousen voima $F = -kx$ riippuu vain poikkeamasta eikä massasta. Siksi kaksinkertainen massa saa samassa kohdassa puolet pienemmän kiihtyvyyden.",
+        "Vastaus perustelee, että heilurissa palauttava voima on painon radan suuntainen komponentti eli osa. Se kaksinkertaistuu massan mukana, joten kiihtyvyys pysyy samana.",
+        "Vastaus päättelee, että pienempi kiihtyvyys samoissa kohdissa tarkoittaa hitaampaa liikettä ja pidempää jaksonaikaa. Vastaus mainitsee, että heilurin kaava pätee pienillä heilahduksilla."
+      ],
+      "model": "Jousivärähtelijän jaksonaika kasvaa, mutta heilurin jaksonaika ei kasva. Jousen voima $F = -kx$ riippuu vain jousesta ja poikkeamasta. Se ei riipu punnuksen massasta. Kun massa kaksinkertaistuu, sama voima antaa samassa kohdassa vain puolet kiihtyvyydestä. Tämä seuraa Newtonin toisesta laista $a = \\tfrac{F}{m}$. Punnus liikkuu hitaammin, ja jaksonaika kasvaa: $T = 2\\pi\\sqrt{\\tfrac{m}{k}}$ kasvaa kertoimella $\\sqrt{2} \\approx 1{,}4$. Heilurissa punnusta palauttaa eli vetää takaisin painon radan suuntainen komponentti $mg\\sin\\alpha$. Se kaksinkertaistuu massan mukana. Kiihtyvyys $g\\sin\\alpha$ pysyy siis samana kuten vapaassa pudotuksessa. Siksi heilurin jaksonaika $T = 2\\pi\\sqrt{\\tfrac{l}{g}}$ ei riipu massasta. Kaava $T = 2\\pi\\sqrt{\\tfrac{l}{g}}$ pätee pienillä heilahduksilla. Silloin heilurin palauttava voima on harmoninen.",
+      "practice": "Kertaa jaksonajat luvussa [*Jousivärähtelijä ja heiluri*](fy5-9.html). Kertaa jousen voima luvussa [*Jousivoima ja jousen energia*](fy5-8.html)."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi on kaksi nopeaa kysymystä. Vastaa ensin itse. Avaa vastaus vasta sitten."
+    }
+  ]
+}

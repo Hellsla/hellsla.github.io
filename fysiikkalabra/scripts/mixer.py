@@ -27,14 +27,16 @@ def _entry(task, href, where, own_module, fw):
 
 def items(lang, T, course_codes, unit_pub):
     """[entry] of every published task: the modules' Sovella sets (course_codes: the courses whose set this build
-    published) and the review units' task sets (unit_pub: {unit id: language} of the published units)."""
+    published) and the review units' task sets (unit_pub: {unit id: languages that published it}). A unit's tasks are
+    listed in this language only where the unit is published in it, as a module's Sovella set is (teacher 2026-11-04):
+    never another language's tasks."""
     fw = practice.framework(); out = []
     for code in course_codes:
         for n, t in enumerate(practice.load(code, lang)["tasks"], 1):   # n: the task's number on its page (practice.number)
             if t.get("kind") == "own": continue
             out.append(_entry(t, f"{practice.page_name(code)}#{t['id']}", f"{code} · {T('practice.title')} · {T('practice.task_n', n=practice.number(n))}", code, fw))
-    for uid, ul in unit_pub.items():
-        if ul != lang or not units.has_tasks(uid, lang): continue
+    for uid, ls in unit_pub.items():
+        if lang not in ls or not units.has_tasks(uid, lang): continue
         d = units.load(uid, lang)
         for n, t in enumerate(practice.load(units.task_key(uid), lang)["tasks"], 1):
             if t.get("kind") == "own": continue

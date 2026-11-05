@@ -1,0 +1,482 @@
+{
+  "version": 1,
+  "contribution": "The review lesson brings together the quantities of oscillation, the spring force and spring energy, the periods of the mass–spring oscillator and the pendulum, how waves travel, reflection and diffraction, interference, standing waves, sound, the Doppler effect, intensity level, noise, echoes and earthquake waves from module FY5 into one model of an oscillation that travels as a wave, and practises matriculation-exam-type problems on them: reading a graph, telling the medium from the source, the logarithmic level, the signs in the Doppler formulas, linearised pendulum data, assessing a report and combining the work–energy principle of FY4 with spring energy.",
+  "learn": [
+    "solve oscillation, wave and sound problems by choosing a suitable model",
+    "draw and interpret graphs of oscillation and wave data",
+    "assess claims and measurements about waves and sound with justification"
+  ],
+  "prior": [
+    "Frequency is the reciprocal of the period, $f = \\tfrac{1}{T}$ (chapter *Describing oscillation: period, frequency and amplitude*)",
+    "The period of a spring and of a pendulum depends on the properties of the oscillator (chapter *The mass–spring oscillator and the pendulum*)",
+    "The speed of a wave is $v = f\\lambda$, and the source determines the frequency (chapter *How waves form and travel*)",
+    "The path difference decides whether waves reinforce or weaken each other (chapter *When waves combine: superposition and interference*)",
+    "The loudness of a sound is given as an intensity level in decibels (chapter *Intensity and the decibel scale*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "At a swimming pool the lifeguard blows a whistle whose frequency is $3.0\\,\\text{kHz}$. One of the swimmers has just dived to the bottom of the pool and hears the whistle under water. The speed of sound is about $350\\,\\text{m/s}$ in the warm air of the hall and about $1500\\,\\text{m/s}$ in water. In the exam a situation like this can be the start of a problem: the numbers are given, but the formula is not.",
+      "question": "Does the diver hear the whistle at a different pitch than at the surface, and how long is the wavelength of the sound in air and in water?"
+    },
+    {
+      "id": "lt-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting level 1: a heavier swinger",
+      "prompt": "First a $20\\,\\text{kg}$ child and then a $40\\,\\text{kg}$ child sits on a garden swing. The chains of the swing are equally long, and the swings are small. How does the period of the swing change?",
+      "choices": [
+        {
+          "text": "It grows, because a heavier child is harder to accelerate.",
+          "feedback": "A heavier child is harder to accelerate, but twice the weight also acts on them. The acceleration stays the same, so the period $T = 2\\pi\\sqrt{\\tfrac{l}{g}}$ does not depend on the mass. Review in the chapter *The mass–spring oscillator and the pendulum*."
+        },
+        {
+          "text": "It becomes shorter, because a greater weight acts on the heavier child.",
+          "feedback": "The greater weight also accelerates a greater mass, so the acceleration is the same as for the lighter child. The period depends only on the length and the acceleration of free fall. Review in the chapter *The mass–spring oscillator and the pendulum*."
+        },
+        {
+          "text": "It stays almost the same, because the period of a pendulum does not depend on the mass.",
+          "feedback": "Correct. For small swings $T = 2\\pi\\sqrt{\\tfrac{l}{g}}$, and the mass does not appear in the expression. A small difference can arise only if the child's centre of gravity is at a different height, because that changes the length of the pendulum. Review if needed in the chapter *The mass–spring oscillator and the pendulum*.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "lt-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting level 2: twice the amplitude",
+      "prompt": "A mass oscillating on a spring is pulled the second time twice as far from the equilibrium position before it is released. There is no friction. How do the period and the energy of the oscillation change?",
+      "choices": [
+        {
+          "text": "The period stays the same, and the energy of the oscillation becomes four times as large.",
+          "feedback": "Correct. The period $T = 2\\pi\\sqrt{\\tfrac{m}{k}}$ does not depend on the amplitude, and the energy of the oscillation is $\\tfrac12 kA^2$, so the factor is $2^2 = 4$. Review if needed in the chapter *Spring force and spring energy*.",
+          "correct": true
+        },
+        {
+          "text": "The period doubles, because the distance is twice as long.",
+          "feedback": "The distance doubles, but so do the spring force and the acceleration, so the mass moves faster. The period $T = 2\\pi\\sqrt{\\tfrac{m}{k}}$ does not depend on the amplitude. Review in the chapter *The mass–spring oscillator and the pendulum*."
+        },
+        {
+          "text": "The period stays the same, and the energy doubles like the extension.",
+          "feedback": "The period stays the same, but the energy depends on the square of the amplitude, $E = \\tfrac12 kA^2$. Twice the amplitude gives four times the energy. Review in the chapter *Spring force and spring energy*."
+        }
+      ]
+    },
+    {
+      "id": "lt-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting level 3: sound from air into water",
+      "prompt": "Sound passes from air into water, where it travels faster. Which quantity of the sound stays the same?",
+      "choices": [
+        {
+          "text": "The wavelength, because the wave is the same in both media.",
+          "feedback": "The wavelength changes, because $\\lambda = \\tfrac{v}{f}$ and the speed grows. In water the wavelength is longer than in air. Review in the chapter *How waves form and travel*."
+        },
+        {
+          "text": "The frequency, because it is determined by the oscillation of the source, not by the medium.",
+          "feedback": "Correct. At the boundary each compression in the air creates one compression in the water, so the frequency stays the same. The speed grows, so the wavelength grows in the same ratio. Review if needed in the chapter *How waves form and travel*.",
+          "correct": true
+        },
+        {
+          "text": "The speed, because sound always travels at about $340\\,\\text{m/s}$.",
+          "feedback": "The speed of sound depends on the medium: in air it is about $340\\,\\text{m/s}$ and in water about $1500\\,\\text{m/s}$. When the medium changes, the frequency stays the same. Review in the chapter *How waves form and travel*."
+        }
+      ]
+    },
+    {
+      "id": "lt-4",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting level 4: two loudspeakers",
+      "prompt": "Two loudspeakers play the same pure tone in phase. A listener stands at a point that is half a wavelength farther from one loudspeaker than from the other. What does the listener hear?",
+      "choices": [
+        {
+          "text": "A loud sound, because two loudspeakers play at the same time.",
+          "feedback": "Two waves come from the two loudspeakers, but they can cancel each other. With a path difference of half a wavelength a crest meets a trough, and the interference is destructive. Review in the chapter *When waves combine: superposition and interference*."
+        },
+        {
+          "text": "An ordinary sound, because the waves pass through each other.",
+          "feedback": "The waves pass through each other, but at the same point their displacements are added. At this point they cancel each other almost completely. Review in the chapter *When waves combine: superposition and interference*."
+        },
+        {
+          "text": "A weak sound, because there a crest meets a trough.",
+          "feedback": "Correct. The path difference $\\Delta s = \\tfrac12\\lambda$ satisfies the condition for destructive interference $\\Delta s = \\left(n + \\tfrac12\\right)\\lambda$ with $n = 0$. Review if needed in the chapter *When waves combine: superposition and interference*.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "lt-5",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting level 5: two lawnmowers",
+      "prompt": "One lawnmower gives an intensity level of $80\\,\\text{dB}$ at the listener. A second identical mower is started at the same distance. How large is the combined level?",
+      "choices": [
+        {
+          "text": "About $83\\,\\text{dB}$, because the intensity doubles.",
+          "feedback": "Correct. The intensities are added, and $L_2 - L_1 = 10\\,\\text{dB} \\cdot \\lg 2 \\approx 3.0\\,\\text{dB}$. Review if needed in the chapter *Intensity and the decibel scale*.",
+          "correct": true
+        },
+        {
+          "text": "$160\\,\\text{dB}$, because two equally loud sources double the level.",
+          "feedback": "Decibels are not added. The intensities are added, and twice the intensity raises the level by $10\\,\\text{dB} \\cdot \\lg 2 \\approx 3\\,\\text{dB}$. Review in the chapter *Intensity and the decibel scale*."
+        },
+        {
+          "text": "Still $80\\,\\text{dB}$, because the mowers are equally loud.",
+          "feedback": "Two sources bring the listener twice the power per unit area, so the intensity doubles and the level rises by about $3\\,\\text{dB}$. Review in the chapter *Intensity and the decibel scale*."
+        }
+      ]
+    },
+    {
+      "id": "lt-6",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting level 6: an ambulance passes",
+      "prompt": "An ambulance drives at a constant speed straight towards a listener standing at the roadside, passes them and moves away. How does the heard pitch of the siren change?",
+      "choices": [
+        {
+          "text": "The pitch rises all the time as the ambulance comes closer.",
+          "feedback": "The sound of an approaching source is higher than the siren's own, but at a constant speed the pitch stays the same: it depends on the speed, not on the distance. What grows as it approaches is the loudness. Review in the chapter *Sound as a wave: pitch, timbre and the Doppler effect*."
+        },
+        {
+          "text": "The pitch is steadily high and drops at the moment of passing.",
+          "feedback": "Correct. While approaching $f = f_0 \\cdot \\tfrac{v}{v - v_\\text{s}}$ and while moving away $f = f_0 \\cdot \\tfrac{v}{v + v_\\text{s}}$, and both are constant. The pitch drops at the moment of passing. Review if needed in the chapter *Sound as a wave: pitch, timbre and the Doppler effect*.",
+          "correct": true
+        },
+        {
+          "text": "The pitch stays the same, because the siren sounds at the same frequency.",
+          "feedback": "The siren sounds at the same frequency, but in front of an approaching source the wavefronts crowd together and behind it they spread out. That is why the heard frequency is higher while approaching and lower while moving away. Review in the chapter *Sound as a wave: pitch, timbre and the Doppler effect*."
+        }
+      ]
+    },
+    {
+      "id": "aineisto",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Two cardboard tubes",
+      "source": "example",
+      "source_note": "An invented example: the frequencies have been calculated from the natural frequencies of the tubes with the speed of sound $343\\,\\text{m/s}$, and variation like that of measurements has been added. No end correction has been made.",
+      "text": "In a physics lesson two identical cardboard tubes of length $0.600\\,\\text{m}$ were studied. One tube stood with one end tightly against the table, the other was held in the air so that both its ends were open. Each tube was tapped, and a frequency analysis app on a phone showed four clear peaks in the spectrum of the sound. The temperature of the classroom was $20\\,{}^\\circ\\text{C}$.\n\n| Peak | A: $f\\ (\\text{Hz})$ | B: $f\\ (\\text{Hz})$ |\n|---|---|---|\n| 1 | $284$ | $142$ |\n| 2 | $573$ | $430$ |\n| 3 | $857$ | $713$ |\n| 4 | $1146$ | $1001$ |\n\nFrom the ratios of the frequencies, work out which tube stood against the table, and determine the speed of sound from the measurements of each tube. Answer below with the value from tube B. The model answer compares both tubes.",
+      "question": {
+        "type": "numeric",
+        "prompt": "What speed of sound do the frequencies of tube B give?",
+        "answer": 342.6,
+        "unit": "m/s",
+        "tolerance": 0.02,
+        "hints": [
+          "What frequency ratios does tube B have? Divide each frequency by the smallest one.",
+          "The ratios are about $1 : 3 : 5 : 7$, so the tube is closed at one end: $f_n = n \\cdot \\tfrac{v}{4L}$ with $n = 1, 3, 5, 7$.",
+          "$v = 4L \\cdot \\tfrac{f_n}{n}$. Calculate $\\tfrac{f_n}{n}$ from each peak and use their mean."
+        ],
+        "mistakes": [
+          {
+            "value": 170.4,
+            "feedback": "You used the model of an open tube, $v = 2Lf_1$. The frequencies of tube B are odd multiples of the fundamental frequency, so it is closed: from a node to an antinode is $\\tfrac{\\lambda}{4}$, and $v = 4Lf_1$."
+          },
+          {
+            "value": 85.2,
+            "feedback": "You used the length of the tube as the wavelength. In a tube closed at one end the wavelength of the fundamental is $4L$."
+          }
+        ],
+        "solution": "**Given:** length of the tube $L = 0.600\\,\\text{m}$; peaks of tube B $142\\,\\text{Hz}$, $430\\,\\text{Hz}$, $713\\,\\text{Hz}$ and $1001\\,\\text{Hz}$; peaks of tube A $284\\,\\text{Hz}$, $573\\,\\text{Hz}$, $857\\,\\text{Hz}$ and $1146\\,\\text{Hz}$\n\n**Find:** the speed of sound $v$ from the measurements of tube B in $\\text{m/s}$\n\n**Principle:** A standing wave forms in the air of the tube only at the natural frequencies. The frequencies of tube B are in the ratio $1 : 3.0 : 5.0 : 7.0$, so only the odd multiples of the fundamental frequency are present. That is why tube B stood against the table: at the closed end there is a displacement node and at the open end an antinode, so the length of the tube is an odd number of quarter wavelengths (chapter *Standing waves: nodes, antinodes and natural frequencies*). Each peak gives an estimate $\\tfrac{f_n}{n}$ of the fundamental frequency, and their mean reduces the effect of the random variation in the readings.\n\n**Formula:** $f_n = n \\cdot \\dfrac{v}{4L}$ with $n = 1, 3, 5, 7$, so $v = 4L \\cdot \\dfrac{f_n}{n}$\n\n**Conversions:** The quantities are in base units, so no conversions are needed.\n\n**Substitution:** $\\tfrac{f_n}{n}$ is $142\\,\\text{Hz}$, $430\\,\\text{Hz} : 3 = 143.3\\,\\text{Hz}$, $713\\,\\text{Hz} : 5 = 142.6\\,\\text{Hz}$ and $1001\\,\\text{Hz} : 7 = 143.0\\,\\text{Hz}$, mean $142.7\\,\\text{Hz}$. So $v = 4 \\cdot 0.600\\,\\text{m} \\cdot 142.7\\,\\tfrac{1}{\\text{s}} = 342.6\\,\\text{m/s}$\n\n**Answer:** $v \\approx 343\\,\\text{m/s}$, three significant figures like the length of the tube $0.600\\,\\text{m}$ and the frequencies.\n\n**Reasonableness:** The frequencies of tube A are in the ratio $1 : 2 : 3 : 4$, so it was open, and $f_n = n \\cdot \\tfrac{v}{2L}$. Its mean $\\tfrac{f_n}{n} = 285.7\\,\\text{Hz}$ gives $v = 2 \\cdot 0.600\\,\\text{m} \\cdot 285.7\\,\\tfrac{1}{\\text{s}} \\approx 343\\,\\text{m/s}$, the same result. The fundamental frequency $142\\,\\text{Hz}$ of the closed tube is half the $284\\,\\text{Hz}$ of the open tube, as the model says it should be, and $343\\,\\text{m/s}$ is the speed of sound in air at $20\\,{}^\\circ\\text{C}$."
+      }
+    },
+    {
+      "id": "teoriatiivistelma",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava",
+        "Virheet",
+        "Kertaa"
+      ]
+    },
+    {
+      "id": "virhe-kaiku",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the mistake: the echo sounder",
+      "prompt": "An angler reads from the boat's echo sounder that the ultrasound pulse reflected from the bottom arrives back $24\\,\\text{ms}$ after it was sent. The speed of sound in lake water is $1480\\,\\text{m/s}$. A student calculated the depth: \"$d = vt = 1480\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot 0.024\\,\\text{s} = 35.5\\,\\text{m}$.\" What is wrong in the solution?",
+      "choices": [
+        {
+          "text": "The calculation should have used the speed of sound in air, $340\\,\\text{m/s}$.",
+          "feedback": "The pulse travels in water from the sensor to the bottom and back, so the speed is that of water, $1480\\,\\text{m/s}$. The mistake is that the travel time includes both the way down and the way back. Review in the chapter *Applied chapter: ultrasound imaging and earthquake waves*."
+        },
+        {
+          "text": "The pulse travels the depth twice, so the result must be halved.",
+          "feedback": "Correct. The travel time is there and back, so $d = \\tfrac{vt}{2} = \\tfrac{1480\\,\\text{m/s} \\cdot 0.024\\,\\text{s}}{2} \\approx 18\\,\\text{m}$.",
+          "correct": true
+        },
+        {
+          "text": "The frequency of the ultrasound is missing, so the depth cannot be calculated.",
+          "feedback": "The frequency affects the wavelength and so the sharpness of the image, but not the speed of sound. The depth follows from the speed and the travel time: $d = \\tfrac{vt}{2}$. Review in the chapter *Applied chapter: ultrasound imaging and earthquake waves*."
+        }
+      ]
+    },
+    {
+      "id": "lue-kuvaaja",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Read the graph: one point of a rope",
+      "figure": "fy5-10/yt-kuvaaja",
+      "prompt": "The graph shows the displacement of one point of a wave travelling along a rope as a function of time. The wave travels along the rope at $3.0\\,\\text{m/s}$. Which statement is correct?",
+      "choices": [
+        {
+          "text": "The wavelength is $0.40\\,\\text{m}$, because the distance between the peaks is $0.40$.",
+          "feedback": "The horizontal axis shows time, so the interval $0.40\\,\\text{s}$ between the peaks is the period, not the wavelength. The wavelength follows from the speed: $\\lambda = vT = 1.2\\,\\text{m}$. Review in the chapter *How waves form and travel*."
+        },
+        {
+          "text": "The period is $0.20\\,\\text{s}$, because the curve crosses the axis that often.",
+          "feedback": "Successive crossings of the axis are half a period apart, because the point moves in opposite directions at them. The period is the interval between two upward crossings, $0.40\\,\\text{s}$. Review in the chapter *Describing oscillation: period, frequency and amplitude*."
+        },
+        {
+          "text": "The frequency is $2.5\\,\\text{Hz}$, and the wavelength is $1.2\\,\\text{m}$.",
+          "feedback": "Correct. The curve rises through the axis every $0.40\\,\\text{s}$, so $T = 0.40\\,\\text{s}$ and $f = \\tfrac{1}{T} = 2.5\\,\\text{Hz}$. The wavelength is $\\lambda = \\tfrac{v}{f} = \\tfrac{3.0\\,\\text{m/s}}{2.5\\,\\text{Hz}} = 1.2\\,\\text{m}$.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "bassot",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Justified claim: music from round the corner",
+      "prompt": "From the neighbours' garden party mainly the thump of the bass drum can be heard round the corner of the house, although the music also has high sounds. The speed of sound is $340\\,\\text{m/s}$. Which explanation is correct?",
+      "choices": [
+        {
+          "text": "Low sounds travel faster in air than high sounds.",
+          "feedback": "In air the speed of sound practically does not depend on the frequency. The difference comes from the wavelength: the wavelength of a low sound is metres, and it bends round the corner. Review in the chapter *A wave meets an obstacle or a gap*."
+        },
+        {
+          "text": "The wavelength of a low sound is long, so it bends round the corner.",
+          "feedback": "Correct. For example, the wavelength of a $60\\,\\text{Hz}$ sound is $\\tfrac{340\\,\\text{m/s}}{60\\,\\text{Hz}} \\approx 5.7\\,\\text{m}$, but that of an $8\\,\\text{kHz}$ sound only about $4\\,\\text{cm}$. Diffraction is strong when the obstacle or opening is of the order of the wavelength or smaller. Review if needed in the chapter *A wave meets an obstacle or a gap*.",
+          "correct": true
+        },
+        {
+          "text": "The bass drum is always the loudest instrument in the music, so it carries far.",
+          "feedback": "Loudness does not explain why it is the low sounds that go round the corner. High sounds travel almost straight, but the wavelength of a $60\\,\\text{Hz}$ sound, about $5.7\\,\\text{m}$, is on the scale of buildings, so it bends. Review in the chapter *A wave meets an obstacle or a gap*."
+        }
+      ]
+    },
+    {
+      "id": "kaksi-konetta",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Justified claim: two machines",
+      "prompt": "On a building site one machine gives a level of $88\\,\\text{dB}$ at a worker's ear, and the permitted daily exposure time is then $4\\,\\text{h}$. A second identical machine is started next to it, at the same distance from the worker. Which statement is correct?",
+      "choices": [
+        {
+          "text": "The level rises to $176\\,\\text{dB}$, so no one may stay on the site.",
+          "feedback": "Decibels are not added. Two identical machines double the intensity, which raises the level by only about $3\\,\\text{dB}$, to $91\\,\\text{dB}$. Review in the chapter *Intensity and the decibel scale*."
+        },
+        {
+          "text": "The level rises to about $94\\,\\text{dB}$, and the permitted time is $1\\,\\text{h}$.",
+          "feedback": "A change of about $6\\,\\text{dB}$ happens when the distance from a point source is halved. The second machine doubles the intensity, and the level rises by $3\\,\\text{dB}$, so the permitted time is $2\\,\\text{h}$. Review in the chapter *Noise, acoustics and sound reproduction*."
+        },
+        {
+          "text": "The level rises to about $91\\,\\text{dB}$, and the permitted time is $2\\,\\text{h}$.",
+          "feedback": "Correct. Twice the intensity raises the level by about $3\\,\\text{dB}$, and each rise of $3\\,\\text{dB}$ halves the permitted time: $4\\,\\text{h} : 2 = 2\\,\\text{h}$. Review if needed in the chapter *Noise, acoustics and sound reproduction*.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "jousitus",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Car suspension",
+      "prompt": "The body of a car ($1200\\,\\text{kg}$) rests on four springs. When a $90\\,\\text{kg}$ driver gets into the car, the body sinks $8.0\\,\\text{mm}$ lower. For a test the shock absorbers are removed, and the body is pushed down once. Assume that the force of the springs is harmonic and that the tyres do not give. At what frequency does the body oscillate with the driver on board?",
+      "answer": 1.472,
+      "unit": "Hz",
+      "tolerance": 0.02,
+      "hints": [
+        "Where do you get the combined spring constant of the springs? What extra force pushed the body down by $8.0\\,\\text{mm}$?",
+        "The driver's weight $mg$ compresses the springs further, so $k = \\tfrac{mg}{x}$. The oscillating mass is the body and the driver together.",
+        "$f = \\tfrac{1}{T}$, where $T = 2\\pi\\sqrt{\\tfrac{m_\\text{body} + m}{k}}$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.6793,
+          "feedback": "This is the period in seconds. The question asks for the frequency $f = \\tfrac{1}{T}$."
+        },
+        {
+          "value": 5.573,
+          "feedback": "You used only the driver as the oscillating mass. The springs make the whole body and the driver oscillate, $1290\\,\\text{kg}$."
+        },
+        {
+          "value": 9.249,
+          "feedback": "You forgot the factor $2\\pi$: $T = 2\\pi\\sqrt{\\tfrac{m}{k}}$ and $f = \\tfrac{1}{T}$."
+        }
+      ],
+      "solution": "**Given:** mass of the body $m_\\text{body} = 1200\\,\\text{kg}$, mass of the driver $m = 90\\,\\text{kg}$, extra compression $x = 8.0\\,\\text{mm}$, $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the frequency $f$ of the oscillation of the body in $\\text{Hz}$\n\n**Principle:** The four springs carry the body together like one spring with spring constant $k$. When the body is at rest again, the driver's weight is the extra force on the springs, and in a harmonic spring the extra force is proportional to the extra compression (chapter *Spring force and spring energy*). When the body is pushed down and released, the weight and the harmonic force of the springs act on the body and the driver. The weight only shifts the equilibrium position, so the body and the driver oscillate with the period $T = 2\\pi\\sqrt{\\tfrac{m}{k}}$ (chapter *The mass–spring oscillator and the pendulum*).\n\n**Formula:** $mg = kx$, so $k = \\dfrac{mg}{x}$, and $f = \\dfrac{1}{T} = \\dfrac{1}{2\\pi}\\sqrt{\\dfrac{k}{m_\\text{body} + m}}$\n\n**Conversions:** $8.0\\,\\text{mm} = 8.0 \\cdot 0.001\\,\\text{m} = 0.0080\\,\\text{m}$\n\n**Substitution:** $k = \\dfrac{90\\,\\text{kg} \\cdot 9.81\\,\\tfrac{\\text{m}}{\\text{s}^2}}{0.0080\\,\\text{m}} = 110\\,363\\,\\text{N/m}$, so $f = \\dfrac{1}{2\\pi}\\sqrt{\\dfrac{110\\,363\\,\\tfrac{\\text{N}}{\\text{m}}}{1290\\,\\text{kg}}} = \\dfrac{1}{2\\pi} \\cdot 9.249\\,\\tfrac{1}{\\text{s}} = 1.472\\,\\text{Hz}$\n\n**Answer:** $f \\approx 1.5\\,\\text{Hz}$, two significant figures like the compression $8.0\\,\\text{mm}$.\n\n**Reasonableness:** The period is $T = \\tfrac{1}{f} \\approx 0.68\\,\\text{s}$: the body bobs up and down a little more than once a second, which matches the way a car rocks after a pothole. If the whole $1290\\,\\text{kg}$ pressed on the springs, the compression would be $\\tfrac{1290 \\cdot 9.81\\,\\text{N}}{110\\,363\\,\\text{N/m}} \\approx 0.11\\,\\text{m}$, which is an ordinary spring travel for a car."
+    },
+    {
+      "id": "poiju",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Waves from a motorboat",
+      "prompt": "Waves made by a motorboat reach a buoy anchored next to a jetty. The buoy rises and falls so that $8$ full oscillations take $14.4\\,\\text{s}$. From the jetty the distance between successive wave crests is estimated to be $3.1\\,\\text{m}$. At what speed do the waves travel?",
+      "answer": 1.722,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "hints": [
+        "What does the oscillation of the buoy tell you about the wave: the period or the wavelength?",
+        "The buoy oscillates in step with the wave, so the period of the wave is $T = \\tfrac{14.4\\,\\text{s}}{8}$.",
+        "A wave travels one wavelength in one period: $v = \\tfrac{\\lambda}{T}$."
+      ],
+      "mistakes": [
+        {
+          "value": 5.58,
+          "feedback": "You multiplied the wavelength by the period. A wave travels one wavelength in one period, so $v = \\tfrac{\\lambda}{T}$."
+        },
+        {
+          "value": 0.2153,
+          "feedback": "You divided the wavelength by the duration of eight oscillations. One wavelength is travelled during one oscillation, $T = 1.8\\,\\text{s}$."
+        }
+      ],
+      "solution": "**Given:** number of oscillations $n = 8$, their duration $t_n = 14.4\\,\\text{s}$, distance between crests, that is the wavelength, $\\lambda = 3.1\\,\\text{m}$\n\n**Find:** the speed $v$ of the waves in $\\text{m/s}$\n\n**Principle:** The buoy is a point of the medium that oscillates in step with the wave, so its period is the period of the wave (chapter *Describing oscillation: period, frequency and amplitude*). The period is found most accurately from the duration of several oscillations. In one period the wave travels one wavelength, so the wave equation is used (chapter *How waves form and travel*).\n\n**Formula:** $T = \\dfrac{t_n}{n}$ and $v = \\dfrac{\\lambda}{T} = \\dfrac{n\\lambda}{t_n}$\n\n**Conversions:** The quantities are in base units, so no conversions are needed.\n\n**Substitution:** $T = \\dfrac{14.4\\,\\text{s}}{8} = 1.8\\,\\text{s}$, so $v = \\dfrac{3.1\\,\\text{m}}{1.8\\,\\text{s}} = 1.722\\,\\text{m/s}$\n\n**Answer:** $v \\approx 1.7\\,\\text{m/s}$, two significant figures like the wavelength $3.1\\,\\text{m}$.\n\n**Reasonableness:** The wave travels about $6\\,\\text{km/h}$, a brisk walking pace, which suits water waves a few metres long. The frequency is $f = \\tfrac{1}{1.8\\,\\text{s}} \\approx 0.56\\,\\text{Hz}$, and $f\\lambda = 0.556\\,\\text{Hz} \\cdot 3.1\\,\\text{m} \\approx 1.7\\,\\text{m/s}$, the same result."
+    },
+    {
+      "id": "juna",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "A train passes the platform",
+      "prompt": "A passenger standing on a platform hears the horn of a passing train at the frequency $562\\,\\text{Hz}$ while the train approaches and at the frequency $478\\,\\text{Hz}$ after the train has passed. The train runs at a constant speed, the air is still, and the speed of sound is $340\\,\\text{m/s}$. What is the speed of the train?",
+      "answer": 27.46,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "hints": [
+        "Both heard frequencies involve the same unknown frequency $f_0$ of the horn. How can you remove it from the equations?",
+        "While approaching $f_1 = f_0 \\cdot \\tfrac{v}{v - v_\\text{s}}$ and while moving away $f_2 = f_0 \\cdot \\tfrac{v}{v + v_\\text{s}}$. Divide one equation by the other.",
+        "$\\tfrac{f_1}{f_2} = \\tfrac{v + v_\\text{s}}{v - v_\\text{s}}$, which gives $v_\\text{s} = v \\cdot \\tfrac{f_1 - f_2}{f_1 + f_2}$."
+      ],
+      "mistakes": [
+        {
+          "value": 50.82,
+          "feedback": "You divided the difference of the frequencies by one of the heard frequencies. Each frequency differs from the horn's own frequency, so the difference comes from two changes: $v_\\text{s} = v \\cdot \\tfrac{f_1 - f_2}{f_1 + f_2}$."
+        },
+        {
+          "value": 54.92,
+          "feedback": "You treated the whole difference as one Doppler shift. The difference comes from two shifts of almost equal size, upwards while approaching and downwards while moving away."
+        },
+        {
+          "value": 98.86,
+          "feedback": "This is the speed in the unit $\\text{km/h}$. Answer in metres per second."
+        }
+      ],
+      "solution": "**Given:** frequency heard while approaching $f_1 = 562\\,\\text{Hz}$, heard while moving away $f_2 = 478\\,\\text{Hz}$, speed of sound $v = 340\\,\\text{m/s}$; the listener is at rest\n\n**Find:** the speed of the train $v_\\text{s}$ in $\\text{m/s}$\n\n**Principle:** The source moves and the listener is at rest, so in front of the source the wavelength becomes shorter and behind it longer: the Doppler formula for a moving source is used, with the minus sign while approaching and the plus sign while moving away (chapter *Sound as a wave: pitch, timbre and the Doppler effect*). The horn's own frequency $f_0$ is not known, but it is the same in both, so it cancels when one equation is divided by the other.\n\n**Formula:** $f_1 = f_0 \\cdot \\dfrac{v}{v - v_\\text{s}}$ and $f_2 = f_0 \\cdot \\dfrac{v}{v + v_\\text{s}}$, so $\\dfrac{f_1}{f_2} = \\dfrac{v + v_\\text{s}}{v - v_\\text{s}}$, which gives $f_1 v - f_1 v_\\text{s} = f_2 v + f_2 v_\\text{s}$ and $v_\\text{s} = v \\cdot \\dfrac{f_1 - f_2}{f_1 + f_2}$\n\n**Conversions:** The quantities are in base units, so no conversions are needed; finally the speed is compared in the unit $\\text{km/h}$.\n\n**Substitution:** $v_\\text{s} = 340\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot \\dfrac{562\\,\\text{Hz} - 478\\,\\text{Hz}}{562\\,\\text{Hz} + 478\\,\\text{Hz}} = 340\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot \\dfrac{84\\,\\text{Hz}}{1040\\,\\text{Hz}} = 27.46\\,\\text{m/s}$\n\n**Answer:** $v_\\text{s} \\approx 27\\,\\text{m/s}$, two significant figures, because the result depends on the difference of the frequencies $84\\,\\text{Hz}$.\n\n**Reasonableness:** $27.46\\,\\text{m/s} = 27.46 \\cdot \\tfrac{3600\\,\\text{s/h}}{1000\\,\\text{m/km}} \\approx 99\\,\\text{km/h}$, an ordinary speed for a train near a station. The horn's own frequency is $f_0 = f_1 \\cdot \\tfrac{v - v_\\text{s}}{v} = 562\\,\\text{Hz} \\cdot \\tfrac{312.5}{340} \\approx 517\\,\\text{Hz}$, and it lies between the heard frequencies, as it should."
+    },
+    {
+      "id": "konsertti",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Loudspeaker at an open-air concert",
+      "prompt": "At an open-air concert an intensity level of $104\\,\\text{dB}$ is measured $20\\,\\text{m}$ from the loudspeaker tower. Assume that the tower is a point source that radiates evenly in all directions and that the sound is neither reflected nor absorbed in the air. How far from the tower has the level dropped to $85\\,\\text{dB}$?",
+      "answer": 178.3,
+      "unit": "m",
+      "tolerance": 0.03,
+      "hints": [
+        "How many times greater is the intensity $20\\,\\text{m}$ away than at the point asked about?",
+        "$L_1 - L_2 = 10\\,\\text{dB} \\cdot \\lg \\tfrac{I_1}{I_2}$, so $\\tfrac{I_1}{I_2} = 10^{1.9}$.",
+        "For a point source $I = \\tfrac{P}{4\\pi r^2}$, so $\\tfrac{I_1}{I_2} = \\tfrac{r_2^2}{r_1^2}$ and $r_2 = r_1\\sqrt{\\tfrac{I_1}{I_2}}$."
+      ],
+      "mistakes": [
+        {
+          "value": 1589,
+          "feedback": "You assumed the intensity to be inversely proportional to the distance. It is inversely proportional to the square of the distance, so the ratio of the distances is the square root of the ratio of the intensities."
+        },
+        {
+          "value": 24.47,
+          "feedback": "You calculated the ratio of the decibel readings. The level is logarithmic: first the ratio of the intensities $10^{1.9} \\approx 79$, then the distance."
+        }
+      ],
+      "solution": "**Given:** distance $r_1 = 20\\,\\text{m}$, the level there $L_1 = 104\\,\\text{dB}$, at the point asked about $L_2 = 85\\,\\text{dB}$; a point source without reflections or absorption\n\n**Find:** the distance $r_2$ in $\\text{m}$\n\n**Principle:** The difference of the levels depends only on the ratio of the intensities, because the threshold of hearing $I_0$ cancels out (chapter *Intensity and the decibel scale*). The power of a point source spreads over the surface of a sphere $4\\pi r^2$, so the intensity is inversely proportional to the square of the distance.\n\n**Formula:** $L_1 - L_2 = 10\\,\\text{dB} \\cdot \\lg \\dfrac{I_1}{I_2}$ and $\\dfrac{I_1}{I_2} = \\dfrac{r_2^2}{r_1^2}$, so $r_2 = r_1 \\sqrt{10^{\\,(L_1 - L_2)/(10\\,\\text{dB})}}$\n\n**Conversions:** The quantities are already in the same units, so no conversions are needed.\n\n**Substitution:** $\\dfrac{L_1 - L_2}{10\\,\\text{dB}} = \\dfrac{19\\,\\text{dB}}{10\\,\\text{dB}} = 1.9$, so $\\dfrac{I_1}{I_2} = 10^{1.9} = 79.43$ and $r_2 = 20\\,\\text{m} \\cdot \\sqrt{79.43} = 20\\,\\text{m} \\cdot 8.913 = 178.3\\,\\text{m}$\n\n**Answer:** $r_2 \\approx 180\\,\\text{m}$, two significant figures like the distance $20\\,\\text{m}$.\n\n**Reasonableness:** Doubling the distance lowers the level by about $6\\,\\text{dB}$. A drop of $19\\,\\text{dB}$ corresponds to about three doublings, $2^3 \\cdot 20\\,\\text{m} = 160\\,\\text{m}$, and a little more, so $180\\,\\text{m}$ is of the right order of magnitude. In reality the ground and buildings reflect sound and the air absorbs it, so the result is only an estimate."
+    },
+    {
+      "id": "lisaa",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "At the end of the lesson come the matriculation-exam-style problems. Write your solution in your notebook or on the computer as in the exam, and only then assess it with the model answer and the marking scheme."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "Two loudspeakers side by side play a $200\\,\\text{Hz}$ pure tone in phase. The listener is $3.40\\,\\text{m}$ from one loudspeaker and $4.25\\,\\text{m}$ from the other. The speed of sound is $340\\,\\text{m/s}$. Which statement is correct?",
+      "choices": [
+        {
+          "text": "The listener is at a point of constructive interference, because the path difference is less than a metre.",
+          "feedback": "What matters is not the size of the path difference but its ratio to the wavelength. The path difference $0.85\\,\\text{m}$ is half the wavelength $\\tfrac{340\\,\\text{m/s}}{200\\,\\text{Hz}} = 1.70\\,\\text{m}$, so a crest meets a trough. Review in the chapter *When waves combine: superposition and interference*."
+        },
+        {
+          "text": "There is no interference, because the listener is at different distances from the loudspeakers.",
+          "feedback": "Interference arises precisely because the paths are of different lengths: the wave from farther away lags behind by the path difference. A path difference of $\\tfrac{\\lambda}{2}$ gives destructive interference. Review in the chapter *When waves combine: superposition and interference*."
+        },
+        {
+          "text": "The listener is at a point of destructive interference: the path difference is $\\tfrac{\\lambda}{2}$.",
+          "feedback": "Correct. $\\lambda = \\tfrac{340\\,\\text{m/s}}{200\\,\\text{Hz}} = 1.70\\,\\text{m}$ and $\\Delta s = 4.25\\,\\text{m} - 3.40\\,\\text{m} = 0.85\\,\\text{m} = \\tfrac{\\lambda}{2}$. Review if needed in the chapter *When waves combine: superposition and interference*.",
+          "correct": true
+        }
+      ],
+      "practice": "Review the path difference and the conditions for interference in the chapter [*When waves combine: superposition and interference*](fy5-12.html) and the wavelength in the chapter [*How waves form and travel*](fy5-10.html)."
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculation",
+      "prompt": "A seismograph station in northern Finland records an earthquake whose S wave arrives $14.2\\,\\text{s}$ after the P wave. The speed of the P wave in the bedrock is $6.0\\,\\text{km/s}$ and that of the S wave $3.5\\,\\text{km/s}$. How far from the station did the earthquake happen?",
+      "answer": 119.3,
+      "unit": "km",
+      "tolerance": 0.02,
+      "hints": [
+        "The waves travel the same distance $d$ at different speeds. What does the difference in arrival times tell you?",
+        "$\\Delta t = \\tfrac{d}{v_\\text{S}} - \\tfrac{d}{v_\\text{P}}$",
+        "$d = \\dfrac{v_\\text{P} v_\\text{S}}{v_\\text{P} - v_\\text{S}}\\,\\Delta t$"
+      ],
+      "mistakes": [
+        {
+          "value": 85.2,
+          "feedback": "You multiplied the time difference by the speed of the P wave. The time difference is the difference of the travel times, not the travel time of the P wave."
+        },
+        {
+          "value": 49.7,
+          "feedback": "You multiplied the time difference by the speed of the S wave. The time difference is the difference of the travel times, not the travel time of the S wave."
+        },
+        {
+          "value": 35.5,
+          "feedback": "You multiplied the time difference by the difference of the speeds. Solve for $d$ in the equation $\\Delta t = \\tfrac{d}{v_\\text{S}} - \\tfrac{d}{v_\\text{P}}$."
+        }
+      ],
+      "practice": "Review earthquake waves and the distance from a time difference in the chapter [*Applied chapter: ultrasound imaging and earthquake waves*](fy5-17.html).",
+      "solution": "**Given:** difference in arrival times $\\Delta t = 14.2\\,\\text{s}$, speed of the P wave $v_\\text{P} = 6.0\\,\\text{km/s}$, speed of the S wave $v_\\text{S} = 3.5\\,\\text{km/s}$\n\n**Find:** the distance $d$ from the source of the earthquake in $\\text{km}$\n\n**Principle:** The P and S waves leave at the same moment and travel the same distance at constant speeds, presumably along the same route. The slower S wave falls behind the more, the longer the distance, so the time difference is the difference of the travel times (chapter *Applied chapter: ultrasound imaging and earthquake waves*).\n\n**Formula:** $\\Delta t = \\dfrac{d}{v_\\text{S}} - \\dfrac{d}{v_\\text{P}} = d \\cdot \\dfrac{v_\\text{P} - v_\\text{S}}{v_\\text{P} v_\\text{S}}$, so $d = \\dfrac{v_\\text{P} v_\\text{S}}{v_\\text{P} - v_\\text{S}}\\,\\Delta t$\n\n**Conversions:** The speeds are in the unit $\\text{km/s}$ and the time in seconds, so the distance comes out directly in kilometres.\n\n**Substitution:** $d = \\dfrac{6.0\\,\\tfrac{\\text{km}}{\\text{s}} \\cdot 3.5\\,\\tfrac{\\text{km}}{\\text{s}}}{6.0\\,\\tfrac{\\text{km}}{\\text{s}} - 3.5\\,\\tfrac{\\text{km}}{\\text{s}}} \\cdot 14.2\\,\\text{s} = 8.4\\,\\tfrac{\\text{km}}{\\text{s}} \\cdot 14.2\\,\\text{s} = 119.3\\,\\text{km}$\n\n**Answer:** $d \\approx 120\\,\\text{km}$, two significant figures like the speeds $6.0\\,\\text{km/s}$ and $3.5\\,\\text{km/s}$.\n\n**Reasonableness:** The P wave travels the distance in $119.3\\,\\text{km} : 6.0\\,\\text{km/s} \\approx 19.9\\,\\text{s}$ and the S wave in $119.3\\,\\text{km} : 3.5\\,\\text{km/s} \\approx 34.1\\,\\text{s}$; the difference is $14.2\\,\\text{s}$, as measured. Each second of time difference corresponds to about $8\\,\\text{km}$."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain",
+      "prompt": "In a laboratory there is a mass oscillating on a spring and a mass swinging on a string. In each, the mass is replaced by one twice as heavy, and the swings are kept small. The period of one grows, the period of the other does not change. Explain with forces and Newton's second law whose period grows and why.",
+      "criteria": [
+        "The answer states that the period of the mass–spring oscillator grows ($T = 2\\pi\\sqrt{\\tfrac{m}{k}}$) and the period of the pendulum stays the same ($T = 2\\pi\\sqrt{\\tfrac{l}{g}}$).",
+        "The answer justifies that the spring force $F = -kx$ depends only on the displacement, not on the mass, so twice the mass gets half the acceleration at the same point.",
+        "The answer justifies that in a pendulum the restoring force is the component of the weight along the path, which doubles with the mass, so the acceleration stays the same.",
+        "The answer concludes that a smaller acceleration at the same points means slower motion and a longer period, and mentions that the pendulum formula holds for small swings."
+      ],
+      "model": "The period of the mass–spring oscillator grows, that of the pendulum does not. The spring force $F = -kx$ depends only on the spring and the displacement, not on the mass of the weight. When the mass doubles, the same force gives, by Newton's second law $a = \\tfrac{F}{m}$, only half the acceleration at the same point. The mass moves more slowly, and the period grows: $T = 2\\pi\\sqrt{\\tfrac{m}{k}}$ grows by the factor $\\sqrt{2} \\approx 1.4$. In a pendulum the mass is pulled back by the component of the weight along the path, $mg\\sin\\alpha$. It doubles with the mass, so the acceleration $g\\sin\\alpha$ stays the same, as in free fall. That is why the period of the pendulum $T = 2\\pi\\sqrt{\\tfrac{l}{g}}$ does not depend on the mass. The formula $T = 2\\pi\\sqrt{\\tfrac{l}{g}}$ holds for small swings, for which the restoring force of the pendulum is harmonic.",
+      "practice": "Review the periods in the chapter [*The mass–spring oscillator and the pendulum*](fy5-9.html) and the spring force in the chapter [*Spring force and spring energy*](fy5-8.html)."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer them yourself first, and only then open the answer."
+    }
+  ]
+}

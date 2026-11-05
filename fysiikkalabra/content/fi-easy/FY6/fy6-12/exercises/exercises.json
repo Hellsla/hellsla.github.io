@@ -268,7 +268,7 @@
     {
       "id": "fy6-12-L3-01",
       "level": 3,
-      "text": "Elektroni kulkee kohdan $A$ kautta nopeudella $2{,}0 \\cdot 10^{6}\\,\\text{m/s}$. Kohdan $A$ potentiaali on $40\\,\\text{V}$. Elektroni jatkaa kohtaan $B$, jonka potentiaali on $160\\,\\text{V}$. Siihen vaikuttaa vain sähköinen voima. Kuinka suuri on elektronin nopeus kohdassa $B$? Elektronin massa on $9{,}109 \\cdot 10^{-31}\\,\\text{kg}$. Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$.",
+      "text": "Elektroni kulkee kohdan $A$ kautta nopeudella $2{,}0 \\cdot 10^{6}\\,\\text{m/s}$. Kohdan $A$ potentiaali on $40\\,\\text{V}$. Elektroni jatkaa kohtaan $B$, jonka potentiaali on $160\\,\\text{V}$. Siihen vaikuttaa vain sähköinen voima.\n\nKuinka suuri on elektronin nopeus kohdassa $B$?\n\nElektronin massa on $9{,}109 \\cdot 10^{-31}\\,\\text{kg}$. Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$.",
       "answer": 6797710.0,
       "unit": "m/s",
       "tolerance": 0.02
@@ -284,7 +284,7 @@
     {
       "id": "fy6-12-L3-03",
       "level": 3,
-      "text": "Kahden yhdensuuntaisen levyn väli on $2{,}0\\,\\text{cm}$, ja niiden välinen jännite on $600\\,\\text{V}$. Protoni lähtee negatiivisen levyn reiästä kohti positiivista levyä nopeudella $3{,}0 \\cdot 10^{5}\\,\\text{m/s}$. Kuinka lähelle positiivista levyä protoni pääsee, ennen kuin se pysähtyy ja kääntyy takaisin? Protonin massa on $1{,}673 \\cdot 10^{-27}\\,\\text{kg}$. Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Vastaa millimetreinä.",
+      "text": "Kahden yhdensuuntaisen levyn väli on $2{,}0\\,\\text{cm}$, ja niiden välinen jännite on $600\\,\\text{V}$. Protoni lähtee negatiivisen levyn reiästä kohti positiivista levyä nopeudella $3{,}0 \\cdot 10^{5}\\,\\text{m/s}$.\n\nKuinka lähelle positiivista levyä protoni pääsee, ennen kuin se pysähtyy ja kääntyy takaisin?\n\nProtonin massa on $1{,}673 \\cdot 10^{-27}\\,\\text{kg}$. Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Vastaa millimetreinä.",
       "answer": 4.33521,
       "unit": "mm",
       "tolerance": 0.02

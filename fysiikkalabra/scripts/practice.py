@@ -61,6 +61,19 @@ def set_slug(code): return code[len(UNIT_PREFIX):] if is_unit(code) else courses
 def framework(): return json.loads((ROOT / "competencies.json").read_text())
 
 
+def source(code):
+    """The language a task set is written in: Finnish, or a course unit's own language (scripts/units.py lang_of, FY14:
+    English); a set in any other language is a translation of it (teacher 2026-11-04, FY9 in en and fi-easy)."""
+    if not is_unit(code): return i18n.SOURCE
+    import units
+    return units.lang_of(set_slug(code)) or i18n.SOURCE
+
+
+def figure_texts_file(code, lang):
+    """A translation's figures.json: in the Sovella folder, for a unit in the unit's folder (one file with its figures)."""
+    return (folder(code, lang).parent if is_unit(code) else folder(code, lang)) / "figures.json"
+
+
 def courses_with(lang=i18n.SOURCE):
     """The courses that have module-end tasks in this language."""
     return [c for c in courses.codes() if (folder(c, lang) / "tasks.json").is_file()]
@@ -136,22 +149,26 @@ def answers(code):
     except (ValueError, IndexError): return None, "answers.py must print one JSON object {\"<task>-<part>\": value}"
 
 
+MISSING = []                            # the Finnish texts the last figures() call drew without a translation
+
+
 def figures(code, lang=i18n.SOURCE, write=True):
     """Put each figure of figures.py into solutions.md in place of its <svg data-fig="name"> block. True when up to date."""
     import figlib
     f = code_folder(code) / "figures.py"
     if not f.is_file(): return True
     sys.path.insert(0, str(ROOT / "scripts"))
-    if lang != i18n.SOURCE:
-        tr = folder(code, lang) / "figures.json"
-        figlib.set_language(json.loads(tr.read_text()) if tr.is_file() else {}, i18n.T(lang)("format.decimal"))
     spec = importlib.util.spec_from_file_location(f"figures_{code.replace('/', '_')}", f); mod = importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
+    if lang != source(code):                             # after the import: a figures.py may set its own language there
+        tr = figure_texts_file(code, lang)
+        figlib.set_language(json.loads(tr.read_text()) if tr.is_file() else {}, i18n.T(lang)("format.decimal"))
     sol = folder(code, lang) / "solutions.md"; text = sol.read_text(); new = text
     for name, fn in mod.FIGURES.items():
         pat = re.compile(r'<svg\b[^>]*\bdata-fig="' + re.escape(name) + r'"[^>]*>.*?</svg>', re.S)
         svg = fn()
         if 'data-fig=' not in svg: svg = svg.replace("<svg ", f'<svg data-fig="{name}" ', 1)
         new = pat.sub(lambda m: svg, new, count=1)
+    MISSING[:] = figlib.MISSING if lang != source(code) else []
     figlib.set_language({}, ",")
     if write and new != text: sol.write_text(new)
     return new == text
@@ -246,7 +263,8 @@ def check(code, lang=i18n.SOURCE, seen=None):
             elif not (ROOT / "content" / i18n.SOURCE / courses.course_of(lid) / lid / "meta.json").is_file(): W(f"links.{tag}: lesson {lid} has no folder yet")
     extra_sols = set(sols) - {t.get("id") for t in tasks}
     if extra_sols: E(f"solutions.md has blocks for unknown tasks {sorted(extra_sols)}")
-    if lang == i18n.SOURCE:
+    src = source(code)
+    if lang == src:
         got, err = answers(code)
         if err: E(err)
         else:
@@ -263,9 +281,13 @@ def check(code, lang=i18n.SOURCE, seen=None):
         except Exception as e: E(f"figures.py: {e}")
     else:                                                  # a translation: the same tasks, points, criteria and links
         from check_i18n import formulas
-        terrs = []; _same(load(code), data, "tasks.json", terrs)
+        terrs = []; _same(load(code, src), data, "tasks.json", terrs)
         errs += [f"{where}/{e}" for e in terrs]
-        fs = solution_blocks((folder(code) / "solutions.md").read_text())
+        try:
+            if not figures(code, lang, write=False): E(f"solutions.md figures differ from figures.py in {lang} (python scripts/practice.py figures {code} --lang {lang})")
+            if MISSING: E(f"{figure_texts_file(code, lang).relative_to(ROOT)} has no translation for: " + "; ".join(MISSING)[:400])
+        except Exception as e: E(f"figures.py: {e}")
+        fs = solution_blocks((folder(code, src) / "solutions.md").read_text())
         for tid, b in fs.items():
             o = sols.get(tid)
             if o is None: E(f"solutions.md: no `## {tid}`"); continue
@@ -462,7 +484,7 @@ if __name__ == "__main__":
         for lg in i18n.languages():
             for code in courses_with(lg) + unit_sets(lg):
                 if rest and code != rest[0]: continue
-                e = check(code, lg, seen if lg == i18n.SOURCE else None); errs += e
+                e = check(code, lg, seen if lg == source(code) else None); errs += e
                 print(("FAIL " if e else "OK   ") + f"{lg}/{code}: {len(load(code, lg)['tasks'])} tasks, {sum(total(t) for t in load(code, lg)['tasks'])} points")
         for e in errs: print("  " + e)
         sys.exit(1 if errs else 0)

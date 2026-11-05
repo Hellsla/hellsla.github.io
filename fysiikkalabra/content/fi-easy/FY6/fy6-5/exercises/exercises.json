@@ -241,7 +241,7 @@
     {
       "id": "fy6-5-L3-01",
       "level": 3,
-      "text": "Kolme vastusta on kytketty sarjaan jännitelähteeseen tässä järjestyksessä: $R_1 = 30\\,\\Omega$, $R_2 = 50\\,\\Omega$ ja $R_3 = 40\\,\\Omega$. Lähteen jännite on $12\\,\\text{V}$. Plusnapa on kytketty vastukseen $R_1$ ja miinusnapa vastukseen $R_3$. Nollakohdaksi valitaan vastusten $R_1$ ja $R_2$ välinen johdin. Mikä on lähteen miinusnavan potentiaali? Anna vastaus etumerkkeineen.",
+      "text": "Kolme vastusta on kytketty sarjaan jännitelähteeseen tässä järjestyksessä: $R_1 = 30\\,\\Omega$, $R_2 = 50\\,\\Omega$ ja $R_3 = 40\\,\\Omega$. Lähteen jännite on $12\\,\\text{V}$. Plusnapa on kytketty vastukseen $R_1$ ja miinusnapa vastukseen $R_3$.\n\nNollakohdaksi valitaan vastusten $R_1$ ja $R_2$ välinen johdin.\n\nMikä on lähteen miinusnavan potentiaali? Anna vastaus etumerkkeineen.",
       "answer": -9.0,
       "unit": "V",
       "tolerance": 0.02

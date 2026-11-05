@@ -1,0 +1,36 @@
+{
+  "id": "fy9-kaasut",
+  "course": "FY9",
+  "chapter": 2,
+  "order": 3,
+  "title": "Paine, kaasut ja lämpövoimakone",
+  "description": "Kerrataan FY3-moduulin aiheita. Aiheet ovat paine ja hydrostaattinen paine, Boylen laki ja kaasujen tilanmuutokset, ideaalikaasun tilanyhtälö, absoluuttisen nollapisteen määrittäminen sekä kaasun työ, lämpövoimakone ja voimalaitoksen hyötysuhde. Lopuksi ratkaistaan ylioppilaskokeen tyylisiä tehtäviä.",
+  "kind": "review",
+  "minutes": 75,
+  "subjects": [
+    "physics"
+  ],
+  "sources": [],
+  "key_concepts": [
+    {
+      "term": "ylipaine",
+      "explain": "Kertoo, kuinka paljon paine on ilmanpainetta suurempi. Painemittari näyttää yleensä ylipaineen, ei koko painetta."
+    },
+    {
+      "term": "tilanyhtälö",
+      "explain": "Kaasun yhtälö $pV = nRT$. Siihen sijoitetaan aina kokonaispaine ja lämpötila kelvineinä."
+    },
+    {
+      "term": "kelvin",
+      "explain": "Lämpötilan yksikkö. Kelvinasteikko alkaa absoluuttisesta nollapisteestä. Kelvinlämpötila on $T = \\theta + 273{,}15\\,\\text{K}$."
+    },
+    {
+      "term": "absoluuttinen nollapiste",
+      "explain": "Alin mahdollinen lämpötila, $0\\,\\text{K}$ eli noin $-273\\,{}^\\circ\\text{C}$. Kokeessa se saadaan jatkamalla mittaussuoraa nollaan."
+    },
+    {
+      "term": "lämpövoimakone",
+      "explain": "Kone, joka muuttaa osan lämmöstä työksi. Loput lämmöstä se luovuttaa aina kylmempään ympäristöön."
+    }
+  ]
+}

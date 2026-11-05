@@ -186,7 +186,7 @@
       "id": "fy7-4-L2-07",
       "level": 2,
       "core": true,
-      "text": "The force on the voice coil of a loudspeaker was measured with the coil in the gap of a magnet. In the gap the magnetic flux density of the radial magnetic field is $1.1\\,\\text{T}$, and the field is perpendicular to the wire of the coil everywhere. The current $I$ in the coil was varied, and the force $F$ on the coil was measured with a force sensor (example data). Draw a graph of the data points and fit a straight line through the origin to the points. Determine from the slope of the line the total length $l$ of the wire in the coil.",
+      "text": "The force on the voice coil of a loudspeaker was measured with the coil in the gap of a magnet. In the gap the magnetic flux density of the radial magnetic field is $1.1\\,\\text{T}$, and the field is perpendicular to the wire of the coil everywhere.\n\nThe current $I$ in the coil was varied, and the force $F$ on the coil was measured with a force sensor (example data).\n\nDraw a graph of the data points and fit a straight line through the origin to the points. Determine from the slope of the line the total length $l$ of the wire in the coil.",
       "kind": [
         "data",
         "graph"

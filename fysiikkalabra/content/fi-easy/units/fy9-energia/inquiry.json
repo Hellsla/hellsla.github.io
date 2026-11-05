@@ -1,0 +1,501 @@
+{
+  "version": 1,
+  "contribution": "Kertaustunnilla kootaan yhteen FY2-moduulin asiat: energian säilyminen, teho, kilowattitunti, hyötysuhde, lämpöarvo ja tuotantotapojen vertailu. Mukana ovat myös FY3:n työ ja voimalaitoksen energiaketju. Niistä tehdään yksi malli, ja tunnilla harjoitellaan ylioppilaskokeen tyyppisiä tehtäviä: energiavirtakuviot, hyötysuhteiden kertominen, tehon ja energian erottaminen, yksikkömuunnokset sijoittamalla, aineiston kuvaaja ja tuotantotapojen perusteltu vertailu.",
+  "learn": [
+    "ratkaisemaan energia-, teho- ja hyötysuhdetehtäviä niin, että sijoitat myös yksiköt",
+    "piirtämään ja tulkitsemaan energiavirtakuvioita, energiaketjuja ja kulutusaineiston kuvaajia",
+    "arvioimaan energiantuotantotapoja ja väitteitä ja perustelemaan arviosi"
+  ],
+  "prior": [
+    "Energia säilyy: se muuttuu ja siirtyy, mutta se ei katoa (luku *Energialajit ja energian säilyminen*)",
+    "Teho on energia aikaa kohti, ja $1\\,\\text{kWh} = 3{,}6\\,\\text{MJ}$ (luku *Teho*)",
+    "Hyötysuhde kertoo, kuinka suuri osa otetusta energiasta on hyötyenergiaa (luku *Hyötysuhde*)",
+    "Polttoaineesta vapautuu energiaa $E = Hm$ (luku *Polttoaineet ja lämpöarvo*)",
+    "Voimalaitoksen vaiheiden hyötysuhteet kerrotaan keskenään (luku *Energiantuotanto ja voimalaitosten hyötysuhde*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Sähköauton akkuun mahtuu $40\\,\\text{kWh}$ energiaa. Kymmenen litraa bensiiniä painaa noin $7{,}5\\,\\text{kg}$. Bensiinin lämpöarvo on noin $43\\,\\text{MJ/kg}$. Kotona autoa ladataan tavallisesta pistorasiasta, ja latausteho on $2{,}3\\,\\text{kW}$. Pikalaturin teho on $100\\,\\text{kW}$. Ylioppilaskokeessa tehtävä voi alkaa tällaisella tilanteella. Luvut annetaan, mutta kaavoja ei anneta.",
+      "question": "Kumpaan mahtuu enemmän energiaa, täyteen akkuun vai kymmeneen litraan bensiiniä? Miksi lataus kotona silti kestää koko yön?"
+    },
+    {
+      "id": "lt-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Lähtötaso 1: pulkka pysähtyy",
+      "prompt": "Pulkka laskee mäen alas. Lopuksi se pysähtyy tasaiselle lumelle. Mitä pulkan potentiaalienergialle on lopulta tapahtunut?",
+      "choices": [
+        {
+          "text": "Se on muuttunut lumen, jalasten ja ilman lämpöenergiaksi.",
+          "feedback": "Oikein. Kitka ja ilmanvastus muuttavat mekaanista energiaa lämpöenergiaksi. Kokonaisenergia säilyy eli pysyy samana. Kertaa tarvittaessa luvussa *Energialajit ja energian säilyminen*.",
+          "correct": true
+        },
+        {
+          "text": "Se on kulunut loppuun, koska pulkka ei enää liiku.",
+          "feedback": "Energia ei kulu loppuun eikä katoa. Kitka on muuttanut liike-energian lämpöenergiaksi. Lämpöenergia hajaantuu eli leviää lumeen ja ilmaan. Kertaa luvussa *Energialajit ja energian säilyminen*."
+        },
+        {
+          "text": "Se on pulkassa yhä potentiaalienergiana.",
+          "feedback": "Pulkka on nyt alempana kuin lähtiessä. Siksi sen potentiaalienergia on pienempi. Ero on muuttunut ensin liike-energiaksi ja sitten lämpöenergiaksi. Kertaa luvussa *Energialajit ja energian säilyminen*."
+        }
+      ]
+    },
+    {
+      "id": "lt-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Lähtötaso 2: teho vai energia",
+      "prompt": "Hiustenkuivaimen teho on $1800\\,\\text{W}$. Se on päällä $10\\,\\text{min}$ päivässä. Jääkaapin keskiteho on $40\\,\\text{W}$, ja se on päällä koko vuorokauden. Kumpi käyttää vuorokaudessa enemmän sähköenergiaa?",
+      "choices": [
+        {
+          "text": "Hiustenkuivain, koska sen teho on paljon suurempi.",
+          "feedback": "Teho kertoo vain, kuinka nopeasti energiaa muuntuu. Energia on teho kertaa aika. Kuivain käyttää $1{,}8\\,\\text{kW} \\cdot \\tfrac{1}{6}\\,\\text{h} = 0{,}30\\,\\text{kWh}$ ja jääkaappi $0{,}040\\,\\text{kW} \\cdot 24\\,\\text{h} \\approx 0{,}96\\,\\text{kWh}$. Kertaa luvussa *Teho*."
+        },
+        {
+          "text": "Jääkaappi, koska se on päällä paljon pidempään.",
+          "feedback": "Oikein. Jääkaappi käyttää noin $0{,}96\\,\\text{kWh}$ ja kuivain $0{,}30\\,\\text{kWh}$. Pieni teho pitkän ajan voi muuntaa enemmän energiaa kuin suuri teho lyhyen hetken. Kertaa tarvittaessa luvussa *Teho*.",
+          "correct": true
+        },
+        {
+          "text": "Yhtä paljon, koska kumpikin on kytketty samaan sähköverkkoon.",
+          "feedback": "Sama verkko ei tarkoita samaa energiaa. Energia riippuu laitteen tehosta ja käyttöajasta: $E = P\\,t$. Näillä laitteilla teho ja käyttöaika ovat hyvin erilaiset. Kertaa luvussa *Teho*."
+        }
+      ]
+    },
+    {
+      "id": "lt-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Lähtötaso 3: kilowattitunti",
+      "prompt": "Kuinka monta joulea on yksi kilowattitunti?",
+      "choices": [
+        {
+          "text": "$3{,}6 \\cdot 10^{3}\\,\\text{J}$",
+          "feedback": "Tunti on $3600\\,\\text{s}$, mutta kilowatti on $1000\\,\\text{W}$. Sijoita molemmat: $1\\,\\text{kWh} = 1000\\,\\text{W} \\cdot 3600\\,\\text{s}$. Kertaa luvussa *Teho*."
+        },
+        {
+          "text": "$1{,}0 \\cdot 10^{3}\\,\\text{J}$",
+          "feedback": "Etuliite kilo tarkoittaa tuhatta. Kilowattitunnissa on kuitenkin myös tunti. Watti on joule sekunnissa, joten aika pitää muuttaa sekunneiksi: $1\\,\\text{kWh} = 1000\\,\\text{W} \\cdot 3600\\,\\text{s}$. Kertaa luvussa *Teho*."
+        },
+        {
+          "text": "$3{,}6 \\cdot 10^{6}\\,\\text{J}$",
+          "feedback": "Oikein. $1\\,\\text{kWh} = 1000\\,\\text{W} \\cdot 3600\\,\\text{s} = 3\\,600\\,000\\,\\text{J} = 3{,}6\\,\\text{MJ}$. Kertaa tarvittaessa luvussa *Teho*.",
+          "correct": true
+        },
+        {
+          "text": "$6{,}0 \\cdot 10^{4}\\,\\text{J}$",
+          "feedback": "Tunnissa on $60$ minuuttia, mutta watti on joule *sekunnissa*. Sijoita tunti sekunteina: $1\\,\\text{kWh} = 1000\\,\\text{W} \\cdot 3600\\,\\text{s}$. Kertaa luvussa *Teho*."
+        }
+      ]
+    },
+    {
+      "id": "lt-4",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Lähtötaso 4: kolme vaihetta",
+      "prompt": "Energia kulkee kolmen vaiheen läpi peräkkäin. Jokaisen vaiheen hyötysuhde on $90\\,\\%$. Mikä on koko ketjun hyötysuhde?",
+      "choices": [
+        {
+          "text": "$70\\,\\%$, koska jokainen vaihe hukkaa $10\\,\\%$.",
+          "feedback": "Toinen vaihe hukkaa $10\\,\\%$ siitä energiasta, jonka se saa. Se ei hukkaa $10\\,\\%$ alkuperäisestä energiasta. Siksi hyötysuhteet kerrotaan: $0{,}90 \\cdot 0{,}90 \\cdot 0{,}90 \\approx 0{,}73$. Kertaa luvussa *Energiantuotanto ja voimalaitosten hyötysuhde*."
+        },
+        {
+          "text": "$90\\,\\%$, koska vaiheet ovat samanlaisia.",
+          "feedback": "Jokainen vaihe ottaa edellisen vaiheen hyötyenergian. Se hukkaa siitäkin osan. Siksi ketju on aina heikompi kuin yksi vaihe. Kertaa luvussa *Energiantuotanto ja voimalaitosten hyötysuhde*."
+        },
+        {
+          "text": "noin $73\\,\\%$, koska hyötysuhteet kerrotaan.",
+          "feedback": "Oikein. $0{,}90 \\cdot 0{,}90 \\cdot 0{,}90 = 0{,}729 \\approx 73\\,\\%$. Kertaa tarvittaessa luvussa *Energiantuotanto ja voimalaitosten hyötysuhde*.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "lt-5",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Lähtötaso 5: puu ja bensiini",
+      "prompt": "Ilmakuivan polttopuun lämpöarvo on $15\\,\\text{MJ/kg}$. Bensiinin lämpöarvo on $43\\,\\text{MJ/kg}$. Kumpi vapauttaa palaessaan enemmän energiaa: $2{,}0\\,\\text{kg}$ puuta vai $1{,}0\\,\\text{kg}$ bensiiniä?",
+      "choices": [
+        {
+          "text": "Puu, koska sen massa on kaksi kertaa suurempi.",
+          "feedback": "Massa on kaksinkertainen, mutta lämpöarvo on alle puolet. Vapautuva energia on $E = Hm$. Puusta vapautuu $30\\,\\text{MJ}$ ja bensiinistä $43\\,\\text{MJ}$. Kertaa luvussa *Polttoaineet ja lämpöarvo*."
+        },
+        {
+          "text": "Bensiini, koska sillä $Hm$ on suurempi.",
+          "feedback": "Oikein. Puusta vapautuu $15\\,\\tfrac{\\text{MJ}}{\\text{kg}} \\cdot 2{,}0\\,\\text{kg} = 30\\,\\text{MJ}$ ja bensiinistä $43\\,\\text{MJ}$. Kertaa tarvittaessa luvussa *Polttoaineet ja lämpöarvo*.",
+          "correct": true
+        },
+        {
+          "text": "Yhtä paljon, koska molemmat palavat kokonaan.",
+          "feedback": "Vaikka molemmat palavat kokonaan, energiat eivät ole yhtä suuria. Energia riippuu sekä lämpöarvosta että massasta: $E = Hm$. Kertaa luvussa *Polttoaineet ja lämpöarvo*."
+        }
+      ]
+    },
+    {
+      "id": "lt-6",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Lähtötaso 6: tuulivoimalan vuosi",
+      "prompt": "Tuulivoimalan nimellisteho on $5{,}0\\,\\text{MW}$. Nimellisteho on suurin teho, jolla voimala toimii. Vuodessa on $8760\\,\\text{h}$. Mikä väite voimalan vuoden tuotannosta on oikein?",
+      "choices": [
+        {
+          "text": "Se on $5{,}0\\,\\text{MW} \\cdot 8760\\,\\text{h} \\approx 44\\,\\text{GWh}$.",
+          "feedback": "Näin paljon voimala tuottaisi, jos se toimisi nimellisteholla koko vuoden. Tuuli kuitenkin vaihtelee. Siksi keskiteho on pienempi kuin nimellisteho. Kertaa luvussa *Energiantuotantotavat ja niiden vertailu*."
+        },
+        {
+          "text": "Se on selvästi alle $44\\,\\text{GWh}$, koska tuuli vaihtelee.",
+          "feedback": "Oikein. Nimellisteho on suurin teho. Vuoden energia on keskiteho kertaa $8760\\,\\text{h}$. Keskiteho on paljon pienempi kuin nimellisteho. Kertaa tarvittaessa luvussa *Energiantuotantotavat ja niiden vertailu*.",
+          "correct": true
+        },
+        {
+          "text": "Se on yli $44\\,\\text{GWh}$, koska kovalla tuulella teho kasvaa.",
+          "feedback": "Nimellisteho on suurin teho, jolla voimala toimii. Kovalla tuulella tehoa rajoitetaan eli sitä ei päästetä kasvamaan. Siksi vuoden energia ei voi olla suurempi kuin $5{,}0\\,\\text{MW} \\cdot 8760\\,\\text{h}$. Kertaa luvussa *Energiantuotantotavat ja niiden vertailu*."
+        }
+      ]
+    },
+    {
+      "id": "aineisto",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Lauhdevoimalan energiaketju",
+      "source": "example",
+      "text": "Lauhdevoimala tuottaa vain sähköä. Pylväskuvaajassa on esimerkkilaitoksen teho energiaketjun eri vaiheissa. $P_0$ on polttoaineteho. $P_1$ on teho kattilan jälkeen, $P_2$ teho höyrykierron jälkeen ja $P_3$ sähköteho generaattorin ja muuntajan jälkeen. Toimi näin: 1) Lue tehot kuvaajasta. 2) Laske jokaisen vaiheen hyötysuhde. 3) Vastaa alla höyrykierron hyötysuhteella. Mallivastauksessa ovat myös muiden vaiheiden hyötysuhteet. Siinä tarkistetaan myös, että niiden tulo on koko laitoksen hyötysuhde.\n\n<svg viewBox=\"0 0 400 346\" role=\"img\" aria-label=\"Pylväskuvaaja mittakaavassa: lauhdevoimalaitoksen teho energiaketjun vaiheissa. Pylväiden korkeudet ovat P_0 = 400 MW (polttoaine), P_1 = 350 MW (kattilan jälkeen), P_2 = 150 MW (höyrykierron jälkeen) ja P_3 = 140 MW (generaattorin ja muuntajan jälkeen eli sähkö). Ruudukon viivojen väli on 50 MW.\" style=\"max-width:100%;font-size:21px\">\n  <line x1=\"76\" y1=\"270\" x2=\"390\" y2=\"270\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"76\" y1=\"243.5\" x2=\"390\" y2=\"243.5\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"76\" y1=\"217.5\" x2=\"390\" y2=\"217.5\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"76\" y1=\"191\" x2=\"390\" y2=\"191\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"76\" y1=\"165\" x2=\"390\" y2=\"165\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"76\" y1=\"138.5\" x2=\"390\" y2=\"138.5\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"76\" y1=\"112.5\" x2=\"390\" y2=\"112.5\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"76\" y1=\"86\" x2=\"390\" y2=\"86\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"76\" y1=\"60\" x2=\"390\" y2=\"60\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"75\" y1=\"296\" x2=\"404\" y2=\"296\" stroke=\"#1f2933\" stroke-width=\"2.5\" stroke-linecap=\"butt\"/>\n  <path d=\"M416,296 L403,302 L403,290 Z\" fill=\"#1f2933\" stroke-linejoin=\"round\"/>\n  <line x1=\"76\" y1=\"297\" x2=\"76\" y2=\"46\" stroke=\"#1f2933\" stroke-width=\"2.5\" stroke-linecap=\"butt\"/>\n  <path d=\"M76,34 L82,47 L70,47 Z\" fill=\"#1f2933\" stroke-linejoin=\"round\"/>\n  <line x1=\"69\" y1=\"270\" x2=\"76\" y2=\"270\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <line x1=\"69\" y1=\"243.5\" x2=\"76\" y2=\"243.5\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"23\" y=\"231\" width=\"41\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$100$</div></foreignObject>\n  <line x1=\"69\" y1=\"217.5\" x2=\"76\" y2=\"217.5\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <line x1=\"69\" y1=\"191\" x2=\"76\" y2=\"191\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"23\" y=\"178.5\" width=\"41\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$200$</div></foreignObject>\n  <line x1=\"69\" y1=\"165\" x2=\"76\" y2=\"165\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <line x1=\"69\" y1=\"138.5\" x2=\"76\" y2=\"138.5\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"23\" y=\"126\" width=\"41\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$300$</div></foreignObject>\n  <line x1=\"69\" y1=\"112.5\" x2=\"76\" y2=\"112.5\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <line x1=\"69\" y1=\"86\" x2=\"76\" y2=\"86\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"23\" y=\"73.5\" width=\"41\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$400$</div></foreignObject>\n  <line x1=\"69\" y1=\"60\" x2=\"76\" y2=\"60\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"47\" y=\"303.5\" width=\"19\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$0$</div></foreignObject>\n  <foreignObject x=\"66\" y=\"5.5\" width=\"66\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px\">$P\\ (\\text{MW})$</div></foreignObject>\n  <rect x=\"90\" y=\"86\" width=\"50\" height=\"210\" fill=\"#f1dfb5\" stroke=\"#1f2933\" stroke-width=\"2\"/>\n  <foreignObject x=\"100\" y=\"307.5\" width=\"30\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:21px\">$P_0$</div></foreignObject>\n  <rect x=\"168.5\" y=\"112.5\" width=\"50\" height=\"183.5\" fill=\"#f1dfb5\" stroke=\"#1f2933\" stroke-width=\"2\"/>\n  <foreignObject x=\"179\" y=\"307.5\" width=\"30\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:21px\">$P_1$</div></foreignObject>\n  <rect x=\"247\" y=\"217.5\" width=\"50\" height=\"78.5\" fill=\"#f1dfb5\" stroke=\"#1f2933\" stroke-width=\"2\"/>\n  <foreignObject x=\"257\" y=\"307.5\" width=\"30\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:21px\">$P_2$</div></foreignObject>\n  <rect x=\"325.5\" y=\"222.5\" width=\"50\" height=\"73.5\" fill=\"#b2f2bb\" stroke=\"#1f2933\" stroke-width=\"2\"/>\n  <foreignObject x=\"336\" y=\"307.5\" width=\"30\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:21px\">$P_3$</div></foreignObject>\n</svg>",
+      "question": {
+        "type": "numeric",
+        "prompt": "Kuinka suuri on höyrykierron hyötysuhde $\\eta_2$? Toisin sanoen: kuinka monta prosenttia höyrykiertoon tulevasta tehosta tulee siitä ulos? Vastaa prosentteina.",
+        "answer": 42.86,
+        "unit": "%",
+        "tolerance": 0.03,
+        "hints": [
+          "Vaiheen hyötysuhteen nimittäjässä on vaiheeseen *tuleva* teho. Nimittäjässä ei ole polttoainetehoa.",
+          "Höyrykiertoon tulee kattilan jälkeinen teho $P_1$. Siitä lähtee teho $P_2$.",
+          "$\\eta_2 = \\dfrac{P_2}{P_1} = \\dfrac{150\\,\\text{MW}}{350\\,\\text{MW}}$."
+        ],
+        "mistakes": [
+          {
+            "value": 37.5,
+            "feedback": "Jaoit polttoaineteholla $P_0$. Vaiheen hyötysuhteessa nimittäjä on vaiheeseen tuleva teho $P_1$."
+          },
+          {
+            "value": 35,
+            "feedback": "Tämä on koko laitoksen hyötysuhde $P_3 : P_0$. Höyrykierron hyötysuhde on $P_2 : P_1$."
+          },
+          {
+            "value": 57.14,
+            "feedback": "Tämä on höyrykierron häviöiden osuus $(P_1 - P_2) : P_1$. Hyötysuhde on ulos tulevan tehon osuus."
+          }
+        ],
+        "solution": "**Annettu:** kuvaajasta $P_0 = 400\\,\\text{MW}$, $P_1 = 350\\,\\text{MW}$, $P_2 = 150\\,\\text{MW}$ ja $P_3 = 140\\,\\text{MW}$; ruudukon viivojen väli on $50\\,\\text{MW}$\n\n**Kysytty:** höyrykierron hyötysuhde $\\eta_2$ prosentteina\n\n**Periaate:** Vaiheen hyötysuhde kertoo, kuinka suuri osa vaiheeseen tulevasta tehosta tulee siitä ulos. Höyrykiertoon tulee kattilan antama teho $P_1$, ja siitä lähtee teho $P_2$. Energia säilyy. Siksi erotus $P_1 - P_2$ siirtyy lauhduttimessa lämpönä ympäristöön. Lauhdutin on laite, jossa höyry jäähtyy takaisin vedeksi.\n\n**Kuvaajan lukeminen:** Pylväiden yläreunat ovat ruudukon viivoilla. $P_1$ on seitsemännellä viivalla ($7 \\cdot 50\\,\\text{MW} = 350\\,\\text{MW}$) ja $P_2$ kolmannella viivalla ($150\\,\\text{MW}$).\n\n**Kaava:** $\\eta_2 = \\dfrac{P_2}{P_1}$\n\n**Muunnokset:** Molemmat tehot ovat megawatteina. Siksi yksikkö supistuu, eikä muunnoksia tarvita. Suhdeluku muutetaan prosenteiksi kertomalla se luvulla $100\\,\\%$.\n\n**Sijoitus:** $\\eta_2 = \\dfrac{150\\,\\text{MW}}{350\\,\\text{MW}} = 0{,}4286 = 42{,}86\\,\\%$\n\n**Vastaus:** $43\\,\\%$. Vastauksessa on kaksi merkitsevää numeroa, koska tehot luetaan kuvaajasta noin $5\\,\\text{MW}$:n tarkkuudella.\n\n**Järkevyys:** Muiden vaiheiden hyötysuhteet ovat $\\eta_1 = 350 : 400 = 0{,}875$ ja $\\eta_3 = 140 : 150 \\approx 0{,}933$. Tulo $0{,}875 \\cdot 0{,}4286 \\cdot 0{,}933 = 0{,}350$ on sama kuin $P_3 : P_0 = 140 : 400 = 0{,}35$. Höyrykierto on heikoin vaihe. Näin kuuluukin olla lämpövoimakoneessa: osa lämmöstä täytyy luovuttaa eli antaa kylmempään ympäristöön."
+      }
+    },
+    {
+      "id": "teoriatiivistelma",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava",
+        "Virheet",
+        "Kertaa"
+      ]
+    },
+    {
+      "id": "virhe-kwh",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe: lämpöpatteri",
+      "prompt": "Opiskelija laski, kuinka paljon energiaa $2{,}0\\,\\text{kW}$:n lämpöpatteri käyttää $30\\,\\text{min}$:ssa. Hän kirjoitti: ”$E = P\\,t = 2{,}0\\,\\text{kW} \\cdot 30\\,\\text{min} = 60\\,\\text{kWh}$.” Mikä ratkaisussa on väärin?",
+      "choices": [
+        {
+          "text": "Kaava on väärä: energia on teho jaettuna ajalla.",
+          "feedback": "Teho on energia jaettuna ajalla, $P = \\Delta E : \\Delta t$. Siksi energia on teho kertaa aika. Kaava on siis oikein. Virhe on yksikössä: minuutit pitää muuttaa tunneiksi."
+        },
+        {
+          "text": "Kilowattitunti on tehon yksikkö, joten vastaus on $60\\,\\text{kW}$.",
+          "feedback": "Kilowattitunti on energian yksikkö, ja tehtävässä kysytään energiaa. Virhe on ajassa: $30\\,\\text{min} = 0{,}50\\,\\text{h}$. Siksi oikea energia on $1{,}0\\,\\text{kWh}$."
+        },
+        {
+          "text": "Aikaa ei ole muutettu tunneiksi. Oikea vastaus on $E = 1{,}0\\,\\text{kWh}$.",
+          "feedback": "Oikein. Tehon ja ajan tulo on kilowattitunteja vain silloin, kun aika on tunteina. $30\\,\\text{min} = 0{,}50\\,\\text{h}$, joten $E = 2{,}0\\,\\text{kW} \\cdot 0{,}50\\,\\text{h} = 1{,}0\\,\\text{kWh}$.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "kuvio",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Lue energiavirtakuvio",
+      "figure": "fy2-4/grid",
+      "prompt": "Kuvan energiavirtakuvio on piirretty ruutupaperille mittakaavassa. Nuolen paksuus kertoo energian määrän. Mikä on sähkömoottorin hyötysuhde?",
+      "choices": [
+        {
+          "text": "$33\\,\\%$",
+          "feedback": "Vertasit hyötynuolta häviönuoleen, $2 : 6$. Hyötysuhteen nimittäjässä on otettu energia. Se on tulevan nuolen paksuus, $8$ ruutua."
+        },
+        {
+          "text": "$60\\,\\%$",
+          "feedback": "Luit hyötyenergian ($60\\,\\text{J}$) prosentteina. Hyötysuhde on kahden energian suhde: $60\\,\\text{J} : 240\\,\\text{J} = 0{,}25$."
+        },
+        {
+          "text": "$25\\,\\%$",
+          "feedback": "Oikein. Hyötynuolen paksuus on $2$ ruutua ja tulevan nuolen $8$ ruutua. Siksi $\\eta = 2 : 8 = 0{,}25$. Liike-energiaa on siis $0{,}25 \\cdot 240\\,\\text{J} = 60\\,\\text{J}$.",
+          "correct": true
+        },
+        {
+          "text": "$75\\,\\%$",
+          "feedback": "Tämä on häviöiden osuus, $6 : 8$. Hyötysuhde on hyötynuolen osuus tulevasta nuolesta. Hyötynuoli on tässä liike-energia."
+        }
+      ]
+    },
+    {
+      "id": "yhteistuotanto",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Perusteltu väite: lämpöpumppu",
+      "prompt": "Ilmalämpöpumppu ottaa sähköverkosta sähkötehoa $1{,}0\\,\\text{kW}$. Se antaa huoneeseen lämpötehoa $3{,}5\\,\\text{kW}$. Mikä väite on perusteltu?",
+      "choices": [
+        {
+          "text": "Pumpun hyötysuhde on $350\\,\\%$, joten se tuottaa osan energiasta tyhjästä.",
+          "feedback": "Energiaa ei synny tyhjästä. Pumppu siirtää huoneeseen ulkoilman lämpöä, noin $2{,}5\\,\\text{kW}$. Sähkö tuo loput $1{,}0\\,\\text{kW}$. Siksi lukua $3{,}5$ ei kutsuta hyötysuhteeksi. Sen nimi on lämpökerroin."
+        },
+        {
+          "text": "Pumppu siirtää ulkoilman lämpöä sisälle. Siksi lämpöteho voi olla suurempi kuin sähköteho.",
+          "feedback": "Oikein. Huoneeseen tulee sähkön $1{,}0\\,\\text{kW}$ ja ulkoilmasta siirretty $2{,}5\\,\\text{kW}$, yhteensä $3{,}5\\,\\text{kW}$. Energia säilyy, kun lasketaan mukaan kaikki energia, joka tulee pumppuun.",
+          "correct": true
+        },
+        {
+          "text": "Luvut ovat väärin, koska antoteho ei voi olla suurempi kuin ottoteho.",
+          "feedback": "Antoteho ei voi olla suurempi kuin *kaikki* otettu teho. Pumppu ottaa sähkön lisäksi lämpöä ulkoilmasta. Siksi sähköteho ei ole pumpun koko ottoteho."
+        }
+      ]
+    },
+    {
+      "id": "lataus",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Teho ja energia latauksessa",
+      "prompt": "Sähköpyörän akkuun mahtuu $0{,}60\\,\\text{kWh}$:n energia. Tyhjä akku ladataan täyteen kaksi kertaa. Ensimmäisellä kerralla käytetään tavallista laturia, jonka teho on $120\\,\\text{W}$. Toisella kerralla käytetään pikalaturia, jonka teho on $600\\,\\text{W}$. Kummassakin latauksessa hyötysuhde on sama. Mikä väite on oikein?",
+      "choices": [
+        {
+          "text": "Pikalaturi siirtää akkuun enemmän energiaa, koska sen teho on suurempi.",
+          "feedback": "Täyteen akkuun mahtuu aina sama $0{,}60\\,\\text{kWh}$. Latausteho ei muuta sitä. Teho kertoo vain, kuinka nopeasti energia siirtyy."
+        },
+        {
+          "text": "Energiaa siirtyy yhtä paljon, mutta pikalaturilla aikaa kuluu vähemmän.",
+          "feedback": "Oikein. Energia on sama, ja aika on $t = E : P$. Tavallisella laturilla aika on $600\\,\\text{Wh} : 120\\,\\text{W} = 5{,}0\\,\\text{h}$ ja pikalaturilla $1{,}0\\,\\text{h}$, jos teho pysyy samana koko latauksen ajan. Todellisuudessa lataus hidastuu, kun akku alkaa olla täynnä.",
+          "correct": true
+        },
+        {
+          "text": "Tavallinen laturi siirtää enemmän energiaa, koska lataus kestää pidempään.",
+          "feedback": "Pitkä aika ja pieni teho antavat saman energian kuin lyhyt aika ja suuri teho: $E = P\\,t$. Akkuun mahtuu kummallakin kerralla sama $0{,}60\\,\\text{kWh}$."
+        }
+      ]
+    },
+    {
+      "id": "sauna",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sähkökiuas",
+      "prompt": "Sähkökiukaan teho on $8{,}0\\,\\text{kW}$. Kiuas lämmittää saunaa $1{,}5\\,\\text{h}$. Kuinka paljon sähköenergiaa kiuas käyttää? Vastaa megajouleina.",
+      "answer": 43.2,
+      "unit": "MJ",
+      "tolerance": 0.02,
+      "hints": [
+        "Kiukaan teho pysyy samana koko ajan. Siksi energia on teho kertaa aika.",
+        "Kun kerrot kilowatit tunneilla, saat kilowattitunteja. Muunna ne megajouleiksi sijoittamalla $1\\,\\text{kWh} = 1000\\,\\text{W} \\cdot 3600\\,\\text{s}$.",
+        "$E = 8{,}0\\,\\text{kW} \\cdot 1{,}5\\,\\text{h} = 12\\,\\text{kWh} = 12 \\cdot 3{,}6\\,\\text{MJ}$."
+      ],
+      "mistakes": [
+        {
+          "value": 12,
+          "feedback": "Tämä on energia kilowattitunteina. Muunna se megajouleiksi: $1\\,\\text{kWh} = 3{,}6\\,\\text{MJ}$."
+        },
+        {
+          "value": 0.72,
+          "feedback": "Muutit ajan $90$ minuutiksi, mutta käytit minuutteja kuin ne olisivat sekunteja. Watti on joule sekunnissa: $1{,}5\\,\\text{h} = 1{,}5 \\cdot 3600\\,\\text{s} = 5400\\,\\text{s}$."
+        },
+        {
+          "value": 3.33,
+          "feedback": "Jaoit kilowattitunnit luvulla $3{,}6$. Yksi kilowattitunti on $3{,}6\\,\\text{MJ}$. Siksi kilowattitunnit pitää kertoa luvulla $3{,}6$."
+        }
+      ],
+      "solution": "**Annettu:** teho $P = 8{,}0\\,\\text{kW}$, aika $t = 1{,}5\\,\\text{h}$\n\n**Kysytty:** sähköenergia $E$ megajouleina\n\n**Periaate:** Kiuas muuntaa sähköenergiaa, ja sen teho pysyy samana. Siksi muuntunut energia on teho kertaa aika (luku *Teho*).\n\n**Kaava:** $P = \\dfrac{E}{t}$, joten $E = P\\,t$\n\n**Muunnokset:** Teho muutetaan watteiksi ja aika sekunneiksi: $8{,}0\\,\\text{kW} = 8{,}0 \\cdot 1000\\,\\text{W} = 8000\\,\\text{W}$ ja $1{,}5\\,\\text{h} = 1{,}5 \\cdot 3600\\,\\text{s} = 5400\\,\\text{s}$. Joulet muutetaan megajouleiksi: $1\\,\\text{J} = 10^{-6}\\,\\text{MJ}$.\n\n**Sijoitus:** $E = 8000\\,\\text{W} \\cdot 5400\\,\\text{s} = 43\\,200\\,000\\,\\text{J} = 43{,}2\\,\\text{MJ}$\n\n**Vastaus:** $43\\,\\text{MJ}$. Vastauksessa on kaksi merkitsevää numeroa, kuten tehossa $8{,}0\\,\\text{kW}$ ja ajassa $1{,}5\\,\\text{h}$.\n\n**Järkevyys:** Kilowattitunteina $E = 8{,}0\\,\\text{kW} \\cdot 1{,}5\\,\\text{h} = 12\\,\\text{kWh}$, ja $12 \\cdot 3{,}6\\,\\text{MJ} = 43{,}2\\,\\text{MJ}$. Tulos on sama. Jos sähkö maksaa esimerkiksi $20\\,\\text{snt/kWh}$, saunan lämmitys maksaa noin $2{,}4\\,\\text{€}$. Se on tavallinen suuruusluokka eli tavallinen koko."
+    },
+    {
+      "id": "sahkoauto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Polttoaineesta pyöriin",
+      "prompt": "Sähköauton moottori antaa maantiellä mekaanista tehoa $15\\,\\text{kW}$. Sähkö tuotetaan lauhdevoimalassa, jonka hyötysuhde on $38\\,\\%$. Sähköverkon siirron hyötysuhde on $96\\,\\%$. Latauksen ja akun hyötysuhde on $90\\,\\%$, ja moottorin hyötysuhde on $90\\,\\%$. Kuinka suuri polttoaineteho voimalassa tarvitaan, jotta auto voi jatkaa ajamista näin? Vastaa kilowatteina.",
+      "answer": 50.76,
+      "unit": "kW",
+      "tolerance": 0.03,
+      "hints": [
+        "Jokaisen vaiheen hyötyteho on seuraavan vaiheen ottama teho. Mikä on koko ketjun hyötysuhde?",
+        "Ketjun hyötysuhde saadaan, kun vaiheiden hyötysuhteet kerrotaan: $\\eta = \\eta_1\\,\\eta_2\\,\\eta_3\\,\\eta_4$.",
+        "$P_0 = \\dfrac{P_\\text{a}}{\\eta} = \\dfrac{15\\,\\text{kW}}{0{,}38 \\cdot 0{,}96 \\cdot 0{,}90 \\cdot 0{,}90}$."
+      ],
+      "mistakes": [
+        {
+          "value": 107.1,
+          "feedback": "Laskit häviöprosentit yhteen ($62 + 4 + 10 + 10 = 86\\,\\%$). Jokainen vaihe hukkaa osan siitä, mitä se saa. Siksi hyötysuhteet kerrotaan."
+        },
+        {
+          "value": 4.43,
+          "feedback": "Kerroit moottorin tehon hyötysuhteella. Voimala tarvitsee *enemmän* tehoa kuin moottori antaa. Jaa siis ketjun hyötysuhteella."
+        },
+        {
+          "value": 39.47,
+          "feedback": "Otit huomioon vain voimalan hyötysuhteen. Myös siirto, lataus ja moottori hukkaavat osan tehosta."
+        }
+      ],
+      "solution": "**Annettu:** moottorin antama teho $P_\\text{a} = 15\\,\\text{kW}$; hyötysuhteet $\\eta_1 = 38\\,\\%$ (voimala), $\\eta_2 = 96\\,\\%$ (siirto), $\\eta_3 = 90\\,\\%$ (lataus ja akku) ja $\\eta_4 = 90\\,\\%$ (moottori)\n\n**Kysytty:** voimalan polttoaineteho $P_0$ kilowatteina\n\n**Periaate:** Vaiheet ovat peräkkäin. Jokaisen vaiheen hyötyteho on seuraavan vaiheen ottama teho. Siksi koko ketjun hyötysuhde on vaiheiden hyötysuhteiden tulo. Otettu teho saadaan, kun hyötyteho jaetaan ketjun hyötysuhteella (luku *Energiantuotanto ja voimalaitosten hyötysuhde*).\n\n**Kaava:** $\\eta = \\eta_1\\,\\eta_2\\,\\eta_3\\,\\eta_4 = \\dfrac{P_\\text{a}}{P_0}$, joten $P_0 = \\dfrac{P_\\text{a}}{\\eta_1\\,\\eta_2\\,\\eta_3\\,\\eta_4}$\n\n**Muunnokset:** Prosentit muutetaan desimaaliluvuiksi: $38\\,\\% = 0{,}38$, $96\\,\\% = 0{,}96$ ja $90\\,\\% = 0{,}90$. Teho voi olla kilowatteina, koska vastaus kysytään kilowatteina.\n\n**Sijoitus:** $P_0 = \\dfrac{15\\,\\text{kW}}{0{,}38 \\cdot 0{,}96 \\cdot 0{,}90 \\cdot 0{,}90} = \\dfrac{15\\,\\text{kW}}{0{,}2955} = 50{,}76\\,\\text{kW}$\n\n**Vastaus:** $51\\,\\text{kW}$. Vastauksessa on kaksi merkitsevää numeroa, kuten tehossa $15\\,\\text{kW}$ ja hyötysuhteissa.\n\n**Järkevyys:** Ketjun hyötysuhde $0{,}30$ on pienempi kuin heikoimman vaiheen hyötysuhde $0{,}38$. Näin kertolaskussa pitää olla. Polttoainetehoa tarvitaan noin kolme kertaa niin paljon kuin moottorin teho. Tarkistus $0{,}2955 \\cdot 50{,}76\\,\\text{kW} = 15{,}0\\,\\text{kW}$ täsmää eli antaa saman tuloksen."
+    },
+    {
+      "id": "pelletti",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Pellettikattila",
+      "prompt": "Omakotitalon lämmitykseen tarvitaan vuodessa $15\\,000\\,\\text{kWh}$ lämpöä. Pellettikattilan hyötysuhde on $85\\,\\%$. Puupelletin lämpöarvo on $17\\,\\text{MJ/kg}$. Kuinka monta tonnia pellettiä poltetaan vuodessa? Vastaa tonneina.",
+      "answer": 3.737,
+      "unit": "t",
+      "tolerance": 0.03,
+      "hints": [
+        "Kattilan täytyy saada pelleteistä enemmän energiaa kuin taloon tulee lämpöä. Kuinka paljon enemmän?",
+        "Polttoaineen energia on $E_\\text{o} = E_\\text{a} : \\eta$. Pelletin massa saadaan lämpöarvon avulla: $E_\\text{o} = Hm$.",
+        "Muunna $E_\\text{o}$ megajouleiksi sijoittamalla $1\\,\\text{kWh} = 3{,}6\\,\\text{MJ}$. Jaa sitten lämpöarvolla."
+      ],
+      "mistakes": [
+        {
+          "value": 2.7,
+          "feedback": "Kerroit lämmöntarpeen hyötysuhteella. Kattila ottaa pelleteistä *enemmän* energiaa kuin se antaa. Jaa siis hyötysuhteella."
+        },
+        {
+          "value": 3.176,
+          "feedback": "Unohdit hyötysuhteen. Kattilassa on häviöitä. Siksi polttoainetta tarvitaan enemmän kuin pelkkä lämmöntarve on."
+        },
+        {
+          "value": 1.038,
+          "feedback": "Jaoit kilowattitunnit suoraan lämpöarvolla, jonka yksikkö on $\\text{MJ/kg}$. Muunna ensin: $1\\,\\text{kWh} = 3{,}6\\,\\text{MJ}$."
+        }
+      ],
+      "solution": "**Annettu:** lämmöntarve eli kattilan antama energia $E_\\text{a} = 15\\,000\\,\\text{kWh}$, hyötysuhde $\\eta = 85\\,\\%$, lämpöarvo $H = 17\\,\\text{MJ/kg}$\n\n**Kysytty:** poltetun pelletin massa $m$ tonneina\n\n**Periaate:** Kattilan hyötysuhde kertoo, kuinka suuri osa pelletistä vapautuneesta energiasta tulee taloon lämpönä. Vapautunut energia on lämpöarvo kertaa massa, koska lämpöarvo on energia yhtä kilogrammaa kohti (luvut *Hyötysuhde* ja *Polttoaineet ja lämpöarvo*).\n\n**Kaava:** $\\eta = \\dfrac{E_\\text{a}}{E_\\text{o}}$ ja $E_\\text{o} = Hm$, joten $m = \\dfrac{E_\\text{a}}{\\eta H}$\n\n**Muunnokset:** $15\\,000\\,\\text{kWh} = 15\\,000 \\cdot 3{,}6\\,\\text{MJ} = 54\\,000\\,\\text{MJ}$ ja $85\\,\\% = 0{,}85$. Lopuksi $1\\,\\text{kg} = 0{,}001\\,\\text{t}$.\n\n**Sijoitus:** $m = \\dfrac{54\\,000\\,\\text{MJ}}{0{,}85 \\cdot 17\\,\\tfrac{\\text{MJ}}{\\text{kg}}} = 3737\\,\\text{kg} = 3{,}737\\,\\text{t}$\n\n**Vastaus:** $3{,}7\\,\\text{t}$. Vastauksessa on kaksi merkitsevää numeroa, kuten hyötysuhteessa $85\\,\\%$ ja lämpöarvossa $17\\,\\text{MJ/kg}$.\n\n**Järkevyys:** Jos häviöitä ei olisi, pellettiä tarvittaisiin $54\\,000\\,\\text{MJ} : 17\\,\\tfrac{\\text{MJ}}{\\text{kg}} \\approx 3200\\,\\text{kg}$. Häviöiden takia pellettiä tarvitaan vähän enemmän, ja niin pitää olla. Muutama tonni pellettiä vuodessa on tavallinen määrä omakotitalolle."
+    },
+    {
+      "id": "hissi",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Tavarahissi",
+      "prompt": "Tavarahissi nostaa $800\\,\\text{kg}$:n kuorman $24\\,\\text{m}$ ylös $30\\,\\text{s}$:ssa. Nopeus pysyy koko ajan samana. Hissin moottorin ja koneiston hyötysuhde on $75\\,\\%$. Kuinka suuren sähkötehon moottori ottaa? Vastaa kilowatteina.",
+      "answer": 8.371,
+      "unit": "kW",
+      "tolerance": 0.02,
+      "hints": [
+        "Hissi tekee työtä, kun se nostaa kuormaa. Mikä on nostotyö? Kuinka suuri teho siitä seuraa?",
+        "Nostotyö on $W = mgh$ ja hyötyteho $P_\\text{a} = W : t$.",
+        "Moottorin ottama teho on $P_\\text{o} = P_\\text{a} : \\eta$."
+      ],
+      "mistakes": [
+        {
+          "value": 6.278,
+          "feedback": "Tämä on hyötyteho, joka käytetään nostamiseen. Moottori ottaa enemmän tehoa, koska osa tehosta muuttuu lämmöksi: $P_\\text{o} = P_\\text{a} : \\eta$."
+        },
+        {
+          "value": 4.709,
+          "feedback": "Kerroit hyötytehon hyötysuhteella. Moottorin ottama teho on suurempi kuin hyötyteho. Jaa siis hyötysuhteella."
+        },
+        {
+          "value": 188.4,
+          "feedback": "Tämä on nostotyö kilojouleina. Teho on työ jaettuna ajalla $30\\,\\text{s}$."
+        }
+      ],
+      "solution": "**Annettu:** massa $m = 800\\,\\text{kg}$, nostokorkeus $h = 24\\,\\text{m}$, aika $t = 30\\,\\text{s}$, hyötysuhde $\\eta = 75\\,\\%$, $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** moottorin ottama teho $P_\\text{o}$ kilowatteina\n\n**Periaate:** Kuorma nousee tasaisella nopeudella. Siksi nostovoima on yhtä suuri kuin kuorman paino $mg$, ja nostotyö on $mgh$ (luku *Työ ja energia*). Hyötyteho on työ jaettuna ajalla. Moottorin ottamasta tehosta vain osa $\\eta$ tulee hyödyksi.\n\n**Kaava:** $P_\\text{a} = \\dfrac{mgh}{t}$ ja $\\eta = \\dfrac{P_\\text{a}}{P_\\text{o}}$, joten $P_\\text{o} = \\dfrac{mgh}{\\eta\\,t}$\n\n**Muunnokset:** $75\\,\\% = 0{,}75$ ja lopuksi $1\\,\\text{W} = 0{,}001\\,\\text{kW}$. Muut suureet ovat valmiiksi perusyksiköissä.\n\n**Sijoitus:** $P_\\text{o} = \\dfrac{800\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot 24\\,\\text{m}}{0{,}75 \\cdot 30\\,\\text{s}} = \\dfrac{188\\,352\\,\\text{J}}{22{,}5\\,\\text{s}} = 8371\\,\\text{W} = 8{,}371\\,\\text{kW}$\n\n**Vastaus:** $8{,}4\\,\\text{kW}$. Vastauksessa on kaksi merkitsevää numeroa, kuten korkeudessa $24\\,\\text{m}$, ajassa $30\\,\\text{s}$ ja hyötysuhteessa $75\\,\\%$.\n\n**Järkevyys:** Hyötyteho on $188\\,352\\,\\text{J} : 30\\,\\text{s} \\approx 6{,}3\\,\\text{kW}$. Moottori ottaa neljä kolmasosaa siitä, noin $8{,}4\\,\\text{kW}$. Teho on suunnilleen yhtä suuri kuin sähkökiukaan teho. Se sopii tavarahissin moottorille."
+    },
+    {
+      "id": "lisaa",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Tunnin lopussa on ylioppilaskokeen tyylisiä tehtäviä. Kirjoita ratkaisu vihkoon tai koneelle samalla tavalla kuin kokeessa. Arvioi ratkaisusi vasta sen jälkeen mallivastauksen ja pisteytyksen avulla."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Lauhdevoimalan sähköteho on $600\\,\\text{MW}$. Sen hyötysuhde on $40\\,\\%$. Mikä väite on oikein?",
+      "choices": [
+        {
+          "text": "Polttoaineteho on $1500\\,\\text{MW}$, ja $900\\,\\text{MW}$ siirtyy lämpönä ympäristöön.",
+          "feedback": "Oikein. $P_0 = 600\\,\\text{MW} : 0{,}40 = 1500\\,\\text{MW}$. Energia säilyy, joten $1500\\,\\text{MW} - 600\\,\\text{MW} = 900\\,\\text{MW}$ on hukkalämpöä.",
+          "correct": true
+        },
+        {
+          "text": "Voimala tuottaa $600\\,\\text{MW}$ energiaa tunnissa, ja häviöt ovat $240\\,\\text{MW}$.",
+          "feedback": "Megawatti on tehon yksikkö, ei energian yksikkö. Tunnissa voimala tuottaa $600\\,\\text{MWh}$. Häviöt lasketaan otetusta tehosta: $0{,}60 \\cdot 1500\\,\\text{MW} = 900\\,\\text{MW}$. Kertaa luvussa *Hyötysuhde*."
+        },
+        {
+          "text": "Polttoaineteho on $1000\\,\\text{MW}$, koska häviöt ovat $40\\,\\%$ sähkötehosta.",
+          "feedback": "Hyötysuhde ja häviöt lasketaan otetusta tehosta, ei annetusta tehosta. $P_0 = P_\\text{a} : \\eta = 600\\,\\text{MW} : 0{,}40 = 1500\\,\\text{MW}$. Kertaa luvussa *Energiantuotanto ja voimalaitosten hyötysuhde*."
+        }
+      ],
+      "practice": "Kertaa hyötysuhteen nimittäjä luvussa [*Hyötysuhde*](fy2-4.html) ja voimalan energiaketju luvussa [*Energiantuotanto ja voimalaitosten hyötysuhde*](fy3-15.html)."
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Laskeminen",
+      "prompt": "Puhelimen akkuun mahtuu $15\\,\\text{Wh}$ energiaa. Laturin ja akun yhteinen hyötysuhde on $80\\,\\%$. Tyhjä akku ladataan täyteen. Kuinka paljon sähköenergiaa otetaan silloin sähköverkosta? Vastaa kilojouleina.",
+      "answer": 67.5,
+      "unit": "kJ",
+      "tolerance": 0.02,
+      "hints": [
+        "Akkuun tuleva energia on hyötyenergiaa. Kumpi on suurempi: verkosta otettu energia vai akkuun tuleva energia?",
+        "$E_\\text{o} = E_\\text{a} : \\eta$. Wattitunti muunnetaan sijoittamalla $1\\,\\text{Wh} = 1\\,\\text{W} \\cdot 3600\\,\\text{s}$.",
+        "$E_\\text{o} = 15\\,\\text{Wh} : 0{,}80 = 18{,}75\\,\\text{Wh}$."
+      ],
+      "mistakes": [
+        {
+          "value": 54,
+          "feedback": "Tämä on akkuun tuleva energia kilojouleina. Verkosta otetaan enemmän, koska latauksessa osa energiasta muuttuu lämmöksi. Jaa siis hyötysuhteella."
+        },
+        {
+          "value": 43.2,
+          "feedback": "Kerroit hyötysuhteella. Otettu energia on suurempi kuin hyötyenergia: $E_\\text{o} = E_\\text{a} : \\eta$."
+        },
+        {
+          "value": 18.75,
+          "feedback": "Tämä on otettu energia wattitunteina. Muunna se kilojouleiksi: $1\\,\\text{Wh} = 3600\\,\\text{J}$."
+        }
+      ],
+      "practice": "Kertaa wattitunnin muunnos luvussa [*Teho*](fy2-3.html) ja otettu energia luvussa [*Hyötysuhde*](fy2-4.html).",
+      "solution": "**Annettu:** akkuun tuleva energia $E_\\text{a} = 15\\,\\text{Wh}$, hyötysuhde $\\eta = 80\\,\\%$\n\n**Kysytty:** verkosta otettu energia $E_\\text{o}$ kilojouleina\n\n**Periaate:** Hyötysuhde kertoo, kuinka suuri osa verkosta otetusta energiasta varastoituu akkuun. Energia säilyy. Loput energiasta muuttuu laturissa ja akussa lämmöksi. Siksi verkosta otetaan enemmän energiaa kuin akkuun mahtuu.\n\n**Kaava:** $\\eta = \\dfrac{E_\\text{a}}{E_\\text{o}}$, joten $E_\\text{o} = \\dfrac{E_\\text{a}}{\\eta}$\n\n**Muunnokset:** $15\\,\\text{Wh} = 15 \\cdot 1\\,\\text{W} \\cdot 3600\\,\\text{s} = 54\\,000\\,\\text{J}$ ja $80\\,\\% = 0{,}80$. Lopuksi $1\\,\\text{J} = 0{,}001\\,\\text{kJ}$.\n\n**Sijoitus:** $E_\\text{o} = \\dfrac{54\\,000\\,\\text{J}}{0{,}80} = 67\\,500\\,\\text{J} = 67{,}5\\,\\text{kJ}$\n\n**Vastaus:** $68\\,\\text{kJ}$. Vastauksessa on kaksi merkitsevää numeroa, kuten energiassa $15\\,\\text{Wh}$ ja hyötysuhteessa $80\\,\\%$.\n\n**Järkevyys:** Otettu energia on neljäsosan suurempi kuin akkuun tuleva energia: $1 : 0{,}80 = 1{,}25$. Lämmöksi muuttuu $67{,}5\\,\\text{kJ} - 54\\,\\text{kJ} = 13{,}5\\,\\text{kJ}$. Sen huomaa siitä, että laturi lämpenee. Määrä on pieni: alle $0{,}02\\,\\text{kWh}$."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä",
+      "prompt": "Kaupungin yhteistuotantovoimala tuottaa sekä sähköä että kaukolämpöä. Kaukolämpö on kuumaa vettä, joka lämmittää taloja. Voimalan kokonaishyötysuhde on $88\\,\\%$ ja sähköhyötysuhde $30\\,\\%$. Valtuutettu sanoo: ”Lauhdevoimalan hyötysuhde on vain $40\\,\\%$, joten yhteistuotanto on yli kaksi kertaa parempi tapa tuottaa sähköä.” Arvioi väite. Selitä, mistä hyötysuhteiden ero johtuu. Selitä myös, miksi lukuja ei voi verrata suoraan.",
+      "criteria": [
+        "Vastaus kertoo, että kokonaishyötysuhteessa hyödyksi lasketaan sekä sähkö että kaukolämpö. Lauhdevoimalassa hyödyksi lasketaan vain sähkö.",
+        "Vastaus kertoo, että lauhdevoimalassa lauhduttimen lämpö menee hukkaan. Yhteistuotannossa sillä lämmitetään kaukolämpövettä.",
+        "Vastaus vertaa sähköhyötysuhteita: yhteistuotannon $30\\,\\%$ on jopa pienempi kuin lauhdevoimalan $40\\,\\%$.",
+        "Vastaus perustelee, että sähkö on arvokkaampaa kuin kaukolämpö. Siksi väite ”kaksi kertaa parempi” ei pidä paikkaansa sähkön kohdalla."
+      ],
+      "model": "Väite ei pidä paikkaansa. Yhteistuotannon $88\\,\\%$ on kokonaishyötysuhde. Siinä hyödyksi lasketaan sekä sähkö ($30\\,\\%$ polttoainetehosta) että kaukolämpö ($58\\,\\%$). Lauhdevoimalan $40\\,\\%$ on pelkkä sähköhyötysuhde. Ero johtuu lauhduttimen lämmöstä. Lauhdevoimalassa lämpö siirtyy mereen tai järveen hukkalämpönä. Yhteistuotannossa sillä lämmitetään kaukolämpövettä. Samasta polttoaineesta yhteistuotanto tuottaa sähköä jopa vähemmän, koska höyry lauhdutetaan eli muutetaan vedeksi korkeammassa lämpötilassa. Sähkö ja lämpö eivät myöskään ole yhtä arvokkaita. Sähköllä voi tehdä mitä tahansa, ja sitä voi siirtää kauas. Kaukolämpö sopii vain lämmitykseen lähellä voimalaa. Yhteistuotanto on siis tehokas tapa tuottaa sähköä *ja* lämpöä, kun lämpöä tarvitaan. Se ei kuitenkaan ole kaksi kertaa parempi sähkön tuottaja.",
+      "practice": "Kertaa yhteistuotanto ja kokonaishyötysuhde luvussa [*Energiantuotanto ja voimalaitosten hyötysuhde*](fy3-15.html)."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi on kaksi nopeaa kysymystä. Vastaa ensin itse. Avaa vastaus vasta sen jälkeen."
+    }
+  ]
+}

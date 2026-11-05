@@ -1,0 +1,14 @@
+{
+  "id": "fy9-lampo",
+  "course": "FY9",
+  "chapter": 2,
+  "order": 2,
+  "title": "Heat and changes of state",
+  "description": "A review of temperature, internal energy, quantity of heat, changes of state, thermal balance in a mixture of ice and water, thermal expansion, heat transfer and the energy balance from module FY3, with matriculation-exam-style problems on them.",
+  "kind": "review",
+  "minutes": 75,
+  "subjects": [
+    "physics"
+  ],
+  "sources": []
+}

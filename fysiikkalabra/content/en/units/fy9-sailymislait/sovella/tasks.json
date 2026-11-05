@@ -1,0 +1,789 @@
+{
+  "intro": "Six exam-style problems bring together the lesson's mechanical energy and momentum. Solve them as in the exam: justify which conservation law you choose and why it holds in the situation, solve for the unknown quantity before substituting the numbers, and assess whether the result is reasonable. Open the model answer and the marking scheme only when your solution is ready.",
+  "tasks": [
+    {
+      "id": "fy9-sailymislait-s1",
+      "title": "A zip line across a lake",
+      "source": "example",
+      "source_note": "The zip line and its numbers are an invented example.",
+      "skills": [
+        "fy4-8",
+        "fy4-7",
+        "fy4-9"
+      ],
+      "text": "A summer activity at a ski resort is a zip line, on which a rider fastened in a harness glides across a lake hanging from a trolley that runs on wheels. The start is $36.0\\,\\text{m}$ higher than the end of the line, and the cable is $410\\,\\text{m}$ long. The rider starts from rest. At the end a spring brake stops the trolley.\n\n- mass of the rider, the harness and the trolley together $82.0\\,\\text{kg}$\n- speed just before the brake (the trolley's GPS meter) $15.0\\,\\text{m/s}$\n- braking lasts $1.6\\,\\text{s}$, and the cable is horizontal at the end",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "What would the rider's speed be at the end if there were no air resistance and no resistance from the trolley's wheels?",
+          "answer": {
+            "value": 26.58,
+            "unit": "m/s",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Mechanical energy is conserved: $mgh = \\tfrac12 mv^2$, so $v = \\sqrt{2gh}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$v = \\sqrt{2 \\cdot 9.81\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot 36.0\\,\\text{m}}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v \\approx 26.6\\,\\text{m/s}$ to three significant figures"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 5,
+          "text": "How much work do air resistance and the wheel resistance do during the ride? What is the average magnitude of the resistive forces along the cable?",
+          "answer": [
+            {
+              "name": "W",
+              "value": 19.73,
+              "unit": "kJ",
+              "tolerance": 0.02
+            },
+            {
+              "name": "F",
+              "value": 48.13,
+              "unit": "N",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "text": "Justifies with the work–energy principle: the work done by the resistive forces is negative and equal to the change in mechanical energy.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$W_\\text{other} = \\tfrac12 mv^2 - mgh$ and $F = |W_\\text{other}| : s$"
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "$\\tfrac12 mv^2 = 9225\\,\\text{J}$, $mgh \\approx 28\\,960\\,\\text{J}$, so $W_\\text{other} \\approx -19.7\\,\\text{kJ}$ and $F \\approx 48.1\\,\\text{N}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "The work in kilojoules and the force in newtons to three significant figures; the sign of the work negative"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "What is the average horizontal force of the brake on the trolley, when the trolley also stops the rider and the harness? Compare the force with the combined weight of the rider, the harness and the trolley.",
+          "answer": {
+            "value": 768.8,
+            "unit": "N",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Impulse–momentum principle: $F_\\text{avg}\\,\\Delta t = |\\Delta p| = mv$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$F_\\text{avg} = \\dfrac{82.0\\,\\text{kg} \\cdot 15.0\\,\\text{m/s}}{1.6\\,\\text{s}} \\approx 769\\,\\text{N}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$F_\\text{avg} \\approx 770\\,\\text{N}$ to two significant figures like the time $1.6\\,\\text{s}$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "The force is almost as large as the weight $mg \\approx 804\\,\\text{N}$, which feels like a clear but safe jolt."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "The zip-line attendant says: “Light riders arrive more slowly, because gravity pulls them less strongly.” Assess the claim.",
+          "criteria": [
+            {
+              "text": "Justifies that without resistive forces the mass cancels out of the energy equation, so the final speed $\\sqrt{2gh}$ does not depend on the mass.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Justifies that the work done by the resistive forces reduces the mechanical energy of a lighter rider relatively more, because air resistance is not proportional to the mass.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The observation may be true, but the reasoning is wrong: the cause is air resistance, not weaker gravity."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy4-8",
+        "concept": "fy4-7",
+        "transfer": "fy4-8",
+        "communication": "fy4-8"
+      }
+    },
+    {
+      "id": "fy9-sailymislait-s2",
+      "title": "A curling throw",
+      "source": "example",
+      "source_note": "The numbers of the throw are an invented example. The mass of a curling stone and the order of magnitude of the coefficient of friction match the real sport.",
+      "skills": [
+        "fy4-8",
+        "fy4-10",
+        "fy4-6"
+      ],
+      "text": "In curling a granite stone is slid along the ice. A player releases the stone at $2.40\\,\\text{m/s}$. The stone slides straight for $27.0\\,\\text{m}$ and hits an opponent's stone at rest head-on. Just before the impact its speed is $0.62\\,\\text{m/s}$. A video shows that just after the collision the thrown stone continues in the same direction at $0.05\\,\\text{m/s}$.\n\n- mass of each stone $19.0\\,\\text{kg}$\n- the stones are not swept, and the ice is the same along the whole distance",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "What is the coefficient of friction between the stone and the ice?",
+          "answer": {
+            "value": 0.01015,
+            "unit": "",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Work–energy principle: $\\tfrac12 mv_0^2 - \\mu mg s = \\tfrac12 mv_1^2$, so $\\mu = \\dfrac{v_0^2 - v_1^2}{2gs}$"
+            },
+            {
+              "text": "Justifies that the friction force $\\mu mg$ is constant and does the negative work $-\\mu mgs$, because the normal force equals the weight.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\mu = \\dfrac{(2.40\\,\\text{m/s})^2 - (0.62\\,\\text{m/s})^2}{2 \\cdot 9.81\\,\\text{m/s}^2 \\cdot 27.0\\,\\text{m}}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\mu \\approx 0.010$, two significant figures like the speed $0.62\\,\\text{m/s}$; the coefficient of friction has no unit"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 5,
+          "text": "What is the speed of the struck stone just after the collision? Is the collision elastic?",
+          "answer": {
+            "value": 0.57,
+            "unit": "m/s",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Justifies conservation of momentum: the impulse of friction is negligible during the short collision.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$m v_1 = m v_1' + m v_2'$, so $v_2' = v_1 - v_1'$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$v_2' = 0.62\\,\\text{m/s} - 0.05\\,\\text{m/s} = 0.57\\,\\text{m/s}$"
+            },
+            {
+              "text": "Compares the kinetic energies: after $\\approx 3.11\\,\\text{J}$, before $\\approx 3.65\\,\\text{J}$, so about $85\\,\\%$ is conserved, and the collision is nearly but not perfectly elastic.",
+              "tag": "math",
+              "points": 2
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "How far does the struck stone slide before it stops?",
+          "answer": {
+            "value": 1.632,
+            "unit": "m",
+            "tolerance": 0.04
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\tfrac12 m v_2'^2 = \\mu mg s$, so $s = \\dfrac{v_2'^2}{2\\mu g}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$s = \\dfrac{(0.57\\,\\text{m/s})^2}{2 \\cdot 0.01015 \\cdot 9.81\\,\\text{m/s}^2} \\approx 1.6\\,\\text{m}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$s \\approx 1.6\\,\\text{m}$ to two significant figures"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Players often sweep the ice in front of a sliding stone, which reduces the coefficient of friction. Explain with energy why the stone then slides further, even though the brooms do not touch the stone.",
+          "criteria": [
+            {
+              "text": "Explains that the kinetic energy of the stone is transformed into internal energy through the negative work $-\\mu mg s$ done by friction, and a smaller $\\mu$ means less work per metre.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The same kinetic energy lasts for a longer distance; sweeping does not add energy to the stone but reduces the work done by friction per metre."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy4-8",
+        "concept": "fy4-10",
+        "communication": "fy4-8"
+      }
+    },
+    {
+      "id": "fy9-sailymislait-s3",
+      "title": "A braking test on wet asphalt",
+      "source": "example",
+      "source_note": "The data are an invented example: the numbers were calculated from a model in which the reaction time and the deceleration are constant, and variation like that of real measurements was added to them.",
+      "skills": [
+        "fy4-11",
+        "fy1-4",
+        "fy4-6"
+      ],
+      "text": "On the skid track of a driving school the stopping distance on wet asphalt was studied. The same driver drove the same car along a straight, horizontal track at a constant speed $v_0$. A light came on, and the driver braked as hard as possible. The distance from the light coming on to the car stopping was measured with a measuring wheel to the nearest $0.5\\,\\text{m}$.\n\n| $v_0\\ (\\text{km/h})$ | $s_\\text{p}\\ (\\text{m})$ |\n|---|---|\n| $30$ | $12.5$ |\n| $40$ | $20.0$ |\n| $50$ | $27.5$ |\n| $60$ | $36.5$ |\n| $70$ | $46.5$ |\n| $80$ | $58.5$ |\n| $90$ | $72.0$ |",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 4,
+          "text": "Present the stopping distance as a function of the initial speed in a graph. Justify why a straight line does not fit the points.",
+          "criteria": [
+            {
+              "key": "graph_axes",
+              "points": 1,
+              "detail": "$v_0$ with its unit on the horizontal axis, $s_\\text{p}\\ (\\text{m})$ on the vertical axis."
+            },
+            {
+              "key": "graph_points",
+              "points": 1
+            },
+            {
+              "text": "Justifies with the curvature of the graph and with physics: the braking distance grows with the square of the speed, so the stopping distance grows faster than the speed.",
+              "tag": "graph",
+              "points": 2
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "graph",
+          "points": 5,
+          "text": "From the data, form a quantity whose graph against the initial speed is a straight line when the driver's reaction time and the car's deceleration stay the same. Present it in a graph and fit a straight line to the points.",
+          "criteria": [
+            {
+              "text": "Justifies the linearisation: dividing $s_\\text{p} = v_0 t_\\text{r} + \\dfrac{v_0^2}{2a}$ by the speed gives $\\dfrac{s_\\text{p}}{v_0} = t_\\text{r} + \\dfrac{1}{2a}\\,v_0$, which is a straight line.",
+              "tag": "transfer",
+              "points": 2
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "The speeds in the unit $\\text{m/s}$ by substitution, and the quantity $s_\\text{p} : v_0$ in seconds for each measurement."
+            },
+            {
+              "key": "graph_fit",
+              "points": 2,
+              "detail": "One straight line is fitted to the points, passing between them; $v_0\\ (\\text{m/s})$ on the horizontal axis, $s_\\text{p} / v_0\\ (\\text{s})$ on the vertical axis."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 6,
+          "text": "Determine the driver's reaction time and the car's deceleration from the graph.",
+          "answer": [
+            {
+              "name": "tr",
+              "value": 0.86,
+              "unit": "s",
+              "tolerance": 0.08
+            },
+            {
+              "name": "a",
+              "value": 6.25,
+              "unit": "m/s²",
+              "tolerance": 0.06
+            }
+          ],
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 2,
+              "detail": "The slope from two points of the line far apart, for example $(10\\,\\text{m/s};\\ 1.66\\,\\text{s})$ and $(25\\,\\text{m/s};\\ 2.86\\,\\text{s})$: $k \\approx 0.080\\,\\text{s}^2\\text{/m}$; intercept about $0.86\\,\\text{s}$."
+            },
+            {
+              "text": "Interprets the line: the intercept is the reaction time $t_\\text{r}$ and the slope is $\\dfrac{1}{2a}$.",
+              "tag": "graph",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$a = \\dfrac{1}{2k}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 2,
+              "detail": "$t_\\text{r} \\approx 0.86\\,\\text{s}$ and $a \\approx 6.3\\,\\text{m/s}^2$; results of $0.80$–$0.93\\,\\text{s}$ and $5.9$–$6.6\\,\\text{m/s}^2$ are accepted."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 5,
+          "text": "What is the coefficient of friction between the tyres and the wet asphalt? Use the model to estimate the stopping distance from $100\\,\\text{km/h}$ on the same road, and assess how reliable the estimate is.",
+          "answer": [
+            {
+              "name": "mu",
+              "value": 0.637,
+              "unit": "",
+              "tolerance": 0.06
+            },
+            {
+              "name": "s",
+              "value": 85.6,
+              "unit": "m",
+              "tolerance": 0.05
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "On a horizontal road at the limit of locking the wheels $\\mu mg = ma$, so $\\mu = a : g$; $s_\\text{p} = v_0 t_\\text{r} + \\dfrac{v_0^2}{2a}$."
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "$\\mu \\approx 6.25 : 9.81 \\approx 0.64$; $100\\,\\text{km/h} = 27.8\\,\\text{m/s}$, so $s_\\text{p} \\approx 23.9\\,\\text{m} + 61.7\\,\\text{m} \\approx 86\\,\\text{m}$."
+            },
+            {
+              "key": "assumptions",
+              "points": 2,
+              "detail": "The estimate is an extrapolation $10\\,\\text{km/h}$ beyond the measured range; it holds if the deceleration stays the same even at a high speed and the driver reacts in the same way, but aquaplaning, for example, can reduce the friction."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy1-4",
+        "transfer": "fy4-11",
+        "math": "fy4-11"
+      }
+    },
+    {
+      "id": "fy9-sailymislait-s4",
+      "title": "River power plant or wind farm",
+      "source": "example",
+      "source_note": "The municipality, the river and the numbers of the power plants are invented examples.",
+      "skills": [
+        "fy4-15",
+        "fy4-7",
+        "fy2-1"
+      ],
+      "text": "The municipal council is considering whether to renovate an old river power plant or to build a new wind farm. Councillors have made three claims.\n\n1. “When the wind speed increases from $6\\,\\text{m/s}$ to $9\\,\\text{m/s}$, the power of a wind turbine increases by $50\\,\\%$.”\n2. “A hydropower plant is almost a perpetual motion machine: it produces electricity year after year without consuming anything, because the same water always flows in the river.”\n3. “Raising the dam from $9\\,\\text{m}$ to $12\\,\\text{m}$ would increase the power as much as increasing the flow rate by a third.”\n\nOn average $120\\,\\text{m}^3\\text{/s}$ flows through the river power plant, the head is now $9.0\\,\\text{m}$ and the efficiency $90\\,\\%$. The data for the wind turbines show that they do not yet run at their rated power at a wind speed of $9\\,\\text{m/s}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 5,
+          "text": "Assess claim 1. Explain what the power of a wind turbine depends on and why.",
+          "criteria": [
+            {
+              "text": "Explains that the kinetic energy of the wind per kilogram of air is proportional to the square of the speed and the amount of air flowing through the rotor per second to the speed, so the power is proportional to the cube $v^3$.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\left(\\tfrac{9}{6}\\right)^3 \\approx 3.4$, so the power increases by about $240\\,\\%$, not $50\\,\\%$."
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "The efficiency is assumed to stay the same, and above the rated power the power is limited, so the cube law does not hold."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The claim is wrong: it assumes the power is proportional to the speed."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 5,
+          "text": "Assess claim 2. Explain the energy chain of a hydropower plant: where the energy of the water comes from and why not all of it is converted into electricity.",
+          "criteria": [
+            {
+              "text": "Describes the chain: the potential energy of the water is transformed into kinetic energy in the penstock, and the turbine and the generator convert it into electricity.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "text": "Explains that the potential energy of the water comes from the Sun: evaporated water rises into the air and falls as rain at a higher level, so the plant does not create energy.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "text": "Names the losses: friction in the penstock and the turbine, the heating of the generator and the kinetic energy remaining in the tailwater, so the efficiency is below $100\\,\\%$.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The claim is wrong: the plant converts energy and is not a perpetual motion machine, even though its “fuel” is renewed."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 5,
+          "text": "Assess claim 3 and calculate the present electric power of the plant.",
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$P = \\eta \\rho Q g h$: the power is proportional both to the flow rate and to the head."
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "Now $P \\approx 0.90 \\cdot 1000\\,\\tfrac{\\text{kg}}{\\text{m}^3} \\cdot 120\\,\\tfrac{\\text{m}^3}{\\text{s}} \\cdot 9.81\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot 9.0\\,\\text{m} \\approx 9.5\\,\\text{MW}$; with a head of $12\\,\\text{m}$ about $12.7\\,\\text{MW}$."
+            },
+            {
+              "text": "Justifies that $12 : 9 = \\tfrac43$, so raising the dam increases the power by a third, as much as a flow rate a third larger.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The claim is correct, provided the efficiency stays the same and the water behind the dam does not affect the flow rate."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy4-15",
+        "math": "fy4-15",
+        "transfer": "fy2-1",
+        "communication": "fy4-15"
+      }
+    },
+    {
+      "id": "fy9-sailymislait-s5",
+      "title": "Does momentum disappear?",
+      "source": "example",
+      "source_note": "The report and the measurements are an invented example.",
+      "skills": [
+        "fy4-10",
+        "fy1-3",
+        "fy1-8"
+      ],
+      "text": "A group of students studied an inelastic collision on an ordinary dynamics trolley track. Trolley A ($m_\\text{A} = 0.520\\,\\text{kg}$) was pushed into motion, and it collided with trolley B ($m_\\text{B} = 0.480\\,\\text{kg}$), which was at rest. The ends of the trolleys had hook-and-loop strips, so they stuck together. The group filmed the collision and used video analysis to find the velocity $v_\\text{A}$ of trolley A over the last $0.20\\,\\text{m}$ before the collision and the common velocity $v'$ of the trolleys over the distance $0.40$–$0.80\\,\\text{m}$ after the point of collision.\n\n| Test | $v_\\text{A}\\ (\\text{m/s})$ | $v'\\ (\\text{m/s})$ |\n|---|---|---|\n| 1 | $0.452$ | $0.207$ |\n| 2 | $0.622$ | $0.303$ |\n| 3 | $0.781$ | $0.391$ |\n| 4 | $0.901$ | $0.455$ |\n\nThe group's conclusion: “The total momentum decreased in every test. So in an inelastic collision momentum is not conserved, because part of it is turned into heat and sound.”",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "By what percentage did the total momentum change in test 2?",
+          "answer": {
+            "value": -6.32,
+            "unit": "%",
+            "tolerance": 0.05
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$p = m_\\text{A} v_\\text{A}$ before and $p' = (m_\\text{A} + m_\\text{B})\\,v'$ after; relative change $\\dfrac{p' - p}{p}$"
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "$p \\approx 0.323\\,\\text{kg} \\cdot \\text{m/s}$ and $p' = 0.303\\,\\text{kg} \\cdot \\text{m/s}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Change about $-6.3\\,\\%$, so the momentum decreased by about $6\\,\\%$."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 5,
+          "text": "Assess the group's conclusion. What is the difference between the measurements most likely due to?",
+          "criteria": [
+            {
+              "text": "States that kinetic energy, not momentum, is turned into heat and sound: momentum is not a form of energy.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "error_sources",
+              "points": 2,
+              "detail": "The common velocity was measured only $0.40$–$0.80\\,\\text{m}$ after the collision, when rolling resistance had already had time to slow the trolleys down; rolling resistance is an external force that changes the momentum."
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "The difference is systematic: the momentum decreased every time, and the relative difference is largest in the slowest test ($-12\\,\\%$) and smallest in the fastest ($-3\\,\\%$), as expected from a resistive force of constant magnitude."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The data do not show that momentum is not conserved; they agree with the conservation law when the effect of the external force is taken into account."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 6,
+          "text": "Plan how to improve the experiment so that it can test conservation of momentum reliably.",
+          "criteria": [
+            {
+              "text": "The velocities are measured just before and just after the collision, for example with light gates or from a video over a short distance, or the velocity is extrapolated from a $(t, v)$ graph to the moment of collision.",
+              "tag": "experiment",
+              "points": 2
+            },
+            {
+              "text": "The effect of rolling resistance is reduced or measured: for example an air track, or the track is tilted so that a trolley moves at a constant speed.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Several repeats are made, and the uncertainty of the velocity and the mass is used to estimate how large a difference in the momenta is still within the measurement precision."
+            },
+            {
+              "text": "Measurements are made with different masses and velocities and the momenta are compared; in addition the change in kinetic energy is calculated and compared with the theoretical share $\\tfrac{m_\\text{B}}{m_\\text{A} + m_\\text{B}}$.",
+              "tag": "experiment",
+              "points": 2
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy4-10",
+        "concept": "fy4-10",
+        "experiment": "fy1-8",
+        "communication": "fy1-3"
+      }
+    },
+    {
+      "id": "fy9-sailymislait-s6",
+      "title": "A pile driver and a warming pile",
+      "source": "example",
+      "source_note": "The numbers of the pile driver are an invented example. The specific heat capacity of steel is a table value.",
+      "skills": [
+        "fy4-10",
+        "fy4-8",
+        "fy3-6",
+        "fy4-7"
+      ],
+      "text": "On a building site steel piles are driven into the ground with a pile driver. The machine lifts a ram above the top of the pile and lets it fall freely. The ram hits the head of the pile and does not bounce, but the pile and the ram move down together until the ground stops them.\n\n- mass of the ram $3500\\,\\text{kg}$, mass of the pile $1100\\,\\text{kg}$\n- drop height $0.60\\,\\text{m}$\n- the pile sinks $18\\,\\text{mm}$ deeper with one blow\n- mass of the steel at the top of the pile that warms up in the blows about $30\\,\\text{kg}$; specific heat capacity of steel $460\\,\\text{J/(kg} \\cdot \\text{K)}$",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "What is the speed of the ram just before it hits the pile?",
+          "answer": {
+            "value": 3.431,
+            "unit": "m/s",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$Mgh = \\tfrac12 Mv^2$, so $v = \\sqrt{2gh}$; air resistance is small for such a short drop."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$v = \\sqrt{2 \\cdot 9.81\\,\\text{m/s}^2 \\cdot 0.60\\,\\text{m}}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v \\approx 3.4\\,\\text{m/s}$ to two significant figures like the height $0.60\\,\\text{m}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "What is the common velocity of the ram and the pile just after the collision? How much kinetic energy is transformed into other forms of energy in the collision?",
+          "answer": [
+            {
+              "name": "v",
+              "value": 2.611,
+              "unit": "m/s",
+              "tolerance": 0.02
+            },
+            {
+              "name": "E",
+              "value": 4926,
+              "unit": "J",
+              "tolerance": 0.03
+            }
+          ],
+          "criteria": [
+            {
+              "text": "Justifies conservation of momentum: the collision is so short that the impulse of the force from the ground and of the weight is small during it.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$Mv = (M + m)\\,v'$ and $E_\\text{loss} = \\tfrac12 Mv^2 - \\tfrac12 (M + m)\\,v'^2$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$v' \\approx 2.61\\,\\text{m/s}$; $20\\,601\\,\\text{J} - 15\\,675\\,\\text{J} \\approx 4.9\\,\\text{kJ}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v' \\approx 2.6\\,\\text{m/s}$ and $E_\\text{loss} \\approx 4.9\\,\\text{kJ}$ to two significant figures"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "What average force does the ground exert on the pile as the pile sinks deeper?",
+          "answer": {
+            "value": 915.9,
+            "unit": "kN",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The work–energy principle for the motion after the collision: $\\tfrac12 (M + m)\\,v'^2 + (M + m)\\,g s - F s = 0$"
+            },
+            {
+              "text": "Takes into account that the potential energy of the ram and the pile also decreases as the pile sinks.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$F = \\dfrac{15\\,675\\,\\text{J}}{0.018\\,\\text{m}} + 4600\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\approx 916\\,\\text{kN}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$F \\approx 0.92\\,\\text{MN}$ to two significant figures like the distance $18\\,\\text{mm}$"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 4,
+          "text": "Assume that $40\\,\\%$ of the energy transformed in the collision stays in the steel at the top of the pile as internal energy. By how much does the top of the pile warm up during $50$ blows if it has no time to give off heat to the surroundings? Assess how the assumptions affect the result.",
+          "answer": {
+            "value": 7.14,
+            "unit": "K",
+            "tolerance": 0.04
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\Delta U = cm\\Delta T$, where $\\Delta U = 50 \\cdot 0.40 \\cdot E_\\text{loss}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\Delta T = \\dfrac{50 \\cdot 0.40 \\cdot 4926\\,\\text{J}}{460\\,\\tfrac{\\text{J}}{\\text{kg} \\cdot \\text{K}} \\cdot 30\\,\\text{kg}} \\approx 7.1\\,\\text{K}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\Delta T \\approx 7\\,\\text{K}$, one or two significant figures, because the share $40\\,\\%$ and the mass $30\\,\\text{kg}$ are estimates"
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "The real warming is smaller, because the steel gives off heat to the air and to the lower parts of the pile between the blows; part of the energy goes into sound and into the ram."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy4-10",
+        "concept": "fy4-10",
+        "transfer": "fy4-8"
+      }
+    }
+  ]
+}
