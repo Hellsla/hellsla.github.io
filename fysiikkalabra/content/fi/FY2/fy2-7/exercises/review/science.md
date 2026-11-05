@@ -1,21 +1,20 @@
-VERDICT: PASS
-CONTENT-HASH: 72f39e958439a660
+VERDICT: FAIL
+CONTENT-HASH: 9e1eb93be5d4c588
 
-Round 2 (round 1: FAIL, 2 Blocking).
+Round 1 (new YO-skill task L2-08 added, teacher 2026-11-05; the rest of the set was PASS in round 2 and is unchanged).
 
 ## Blocking
+- exercises.json:261 (L2-08, choice "Yhtä paljon molemmissa", feedback) — A, an invalid inference: "Tässä sekä osuudet että lähtevät energiat ovat eri suuria, joten tulokset eroavat." Different shares and different input energies do not imply different losses (e.g. 3 % of 900 MWh = 9 % of 300 MWh = 27 MWh). This contradicts the very point of the task, that the product decides. — Replace the second sentence with the numbers: "Tässä häviöt ovat $0{,}040 \cdot 1000\,\text{MWh} = 40\,\text{MWh}$ ja $0{,}090 \cdot 300\,\text{MWh} = 27\,\text{MWh}$, joten ne eroavat."
 
 ## Polish
-- solutions.md L3-05 Sijoitus (aligned block) — the losses are named $H_1 … H_4$, a symbol the lesson does not use. Write $E_{\text{häviö},1}$ … or say once "$H_i$ = jakson häviöenergia".
-- solutions.md L3-05 Vastaus — "häviö kasvaa virtaa nopeammin, joten osuus kasvaa" holds at a roughly constant line voltage. Add "kun jännite pysyy samana" (C as it stands, so not blocking).
-- exercises.json L2-07 — the distractor "Sähkö kulkee johdossa hitaasti…" is half true, because electrons drift slowly (it is the energy that travels fast). The feedback rightly rejects the reasoning. Optional: say "energia siirtyy nopeasti" in the correct option and the model answer.
+- exercises.json:281 (L2-08, reason "valon nopeudella", feedback) — "Sähkö kulkee todella nopeasti" repeats the half-truth noted in round 2 for L2-07: the electrons drift slowly, the energy (the field) travels fast, close to but below the speed of light in a cable. Write "Energia siirtyy johdoissa todella nopeasti, …".
+- solutions.md L2-08 Mallivastaus — the sentence "Häviävä energia muuttuu lämmöksi ympäristöön, ei katoa" is right but not asked; keep or drop.
 
 ## Checked
-- Round-1 Blocking 1 (L3-05 c, causality): resolved. The model answer now says that the loss grows faster than the current, so it grows faster than the input. The task text gives the hint "kaksinkertainen virta → nelinkertainen häviöteho", so c) is fair.
-- Round-1 Blocking 2 (L2-05 b): resolved. The explanation now quotes the data, 75 → 49 MWh against 820 → 430 MWh, which is true (the shares are 9,15/8,95/9,84/11,4 %).
-- Round-1 Polish, all done: L2-05 now has 9,62 % with three significant figures, properly justified; L2-06 states the same line and the same 100 MW, and its added "virta puolittuu" is right at constant power; the L3-05 data now follow loss ∝ I² (share/P = 0,00083 for every period); the plan records why the omitted items were left out.
-- Recomputed L3-05 independently: E = 1016 MWh, loss 42,09 MWh, p = 4,14 % → 4,1 %; the evening share is 43 %; the plain mean is 3,7 %; the answer key is 4,1 (within tolerance).
-- Recomputed all new answers in one script (L1-07 4,8; L1-08 72; L2-05 9,62; L2-06 0,0625; L3-04 6,59; L3-05 4,14). All agree with answers.py and exercises.json.
-- L1-06: reordering the choices left exactly one correct option, and every feedback is unchanged and right. L2-07: exactly one correct option after the rewording, and every distractor is wrong.
-- Scope: still no P = RI² law, only the data-derived factor 4 given as a hint (C). Nothing from FY3.
+- L2-08 recomputed: electricity 0,040 · 1000 MWh = 40 MWh, district heat 0,090 · 300 MWh = 27 MWh; the electricity grid loses more. "yli kolminkertainen" is right (1000 : 300 = 3,3).
+- L2-08: exactly one correct choice and exactly one correct reason; answer equals the correct choice text. Every other choice and reason is really wrong, and their feedback is right apart from the Blocking item.
+- L2-08 data: 4 % and 9 % match the lesson's Energiateollisuus 2024 figures; the situation is marked "Esimerkkitilanteessa". Scope: only $E_\text{häviö} = p\,E_\text{lähtö}$, the lesson's model; $p$ is the symbol already used in L1-07, L2-05, L3-05.
+- Two-stage form (type 1) fits docs/exercise-types.md: wrong reasons carry the common misconception (percentage alone), a true-but-irrelevant idea (length) and the speed-of-light misconception.
+- Recomputed every numeric answer by running answers.py and comparing with exercises.json in one script: all 18 within tolerance; unchanged since round 2.
+- Round-2 report stands for L1-01 … L3-05; the diff touches only L2-08 and an answers.py comment.
 - The hash was unchanged at the start and at the end.

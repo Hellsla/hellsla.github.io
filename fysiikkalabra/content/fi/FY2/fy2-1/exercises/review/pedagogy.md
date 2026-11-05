@@ -1,18 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 59c94115b15b2cf7
-Round: 3
+CONTENT-HASH: dc9ac2fa1d6708f1
+Round: 1
 
 ## Blocking
 (none)
 
 ## Polish
-- exercises.json L3-05 text — "vaiheen loppu energia" is two words; write "vaiheen jäljelle jäävä energia" (or "loppuenergia"). Invented data are still not marked "esimerkkiluvut" as in L2-05, L2-07, L3-04: add "Esimerkkiluvuilla:" to the table intro.
-- solutions.md L3-04 c) Vastaus — "lisää energiaa saman verran kuin fossiilinen vähenee" reads as if total energy grows; say "tuottaa saman verran energiaa kuin fossiilinen tuotti". One clause saying 70 PJ is the limit at the data's precision would remove the tension with "vähintään".
-- L3-04 and L3-05 solutions are over the length guide; if trimmed, move the c) reasoning of L3-04 into Periaate/Järkevyys.
+- exercises.json L1-09 statements 1, 4 and the solution — "ääneksi" introduces sound as an energy form the lesson's list (potentiaali-, liike-, lämpö-, kemiallinen, säteily-, sähkö-, ydinenergia) does not have; drop "ja ääneksi" or the Level 1 student is left asking where sound belongs in the sum.
+- solutions.md L1-09 Mallivastaus — "ei potentiaalienergiaa pudotuskorkeuden verran" is hard to parse; write "pallolla ei ole enää liike-energiaa eikä lattiaa korkeammalta saatua potentiaalienergiaa".
+- L1-09 has five statements where the type allows 3–6; fine for Level 1, but statement 4 repeats statement 3 inverted. If trimmed, keep 4 (it targets the real misconception "lämpö ei ole mukana summassa").
 
 ## Checked
-- Round-2 Blocking resolved: the reflection remark was removed from the task text and from Periaate; a), b), c), the model and the conservation check 0,14 + 4,86 = 5,00 MJ now agree (heat = all the rest of each stage).
-- Diff since round 2 is that one sentence only; levels (8/7/5), plan, no duplicates and the earlier L1-07, L2-05..07, L3-04 fixes stay as passed in round 2.
-- L3-05 solution is followable: principle, formula, per-stage substitution, sum, share, conservation check, sanity check.
-- Recomputed 4,86 MJ, 86 %, 2,8 %, 39,2 %, 218 GJ.
+- New task L1-09 (type 8, statements): 2 true / 3 false, both values present; each feedback names the reason, and the false ones name the misconception (energia kuluu loppuun; lämpö jätetty summasta pois).
+- Fits the slot (energian säilyminen, kitka, lämpöenergia), does not repeat the skateboard example or L1-03/L1-05, needs only Kaava, Virhekäsitys and Tiivistelmä.
+- Situation first, the instruction last as its own sentence; the isolated system is stated so statements 3 and 4 are decidable.
+- Solution has Kysytty, Periaate, Mallivastaus and says which statements are true and why; followable.
+- Levels 9/7/5 meet the minimums (5/4/3); the earlier tasks were PASS in round 3 and are untouched.
 - Hash unchanged at start and end.

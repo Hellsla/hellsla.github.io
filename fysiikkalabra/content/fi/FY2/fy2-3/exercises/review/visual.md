@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 82920b176561defd
+CONTENT-HASH: 2d22792f6d7cc426
+Round: 1
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] L3-05 solution Sijoitus (L3-1280-6) — the inline "\dfrac{47,0}{119,0}" inside running text spreads the line spacing, and the Kaava line "säästö = (E − E_uusi) · yksikköhinta" breaks before "yksikköhinta"; put the share and the saving formula on their own lines.
-- [Minor] L3-04 table — "10400", "10600" without a thousands space while the solution writes "10 400"; make them the same.
-- [Minor] L2-07 — graph task without a drawn graph in the model solution; a small figure of points and fitted line would help.
-- [Minor] Captures only at 1280 px; the new tables were not seen at 390 px.
+- [Minor] L2-08 feedback "Teho puolittuu"/"nelinkertaiseksi" — "teho riippuu ajasta suoraan käänteisesti" is awkward; write "teho on kääntäen verrannollinen aikaan, ei sen neliöön".
+- [Minor] L2-08 text — "Toisella kerralla kiuas muuntaa saman energian $6{,}0\,\text{kWh}$ vain puolessa ajasta eli ajassa $1{,}5\,\text{h}$" is fine, but the three clauses could be split into situation and question paragraphs as in the other long tasks. Optional.
 
 ## Checked
-- open-exercises-1280-6/7 (L1-06 and L1-07 MC, L1-08 start), L2-1280-5/6/7 (L2-05 table, L2-06, L2-07 table), L3-1280-4/5/6/7 (L3-04 table and solution, L3-05 table and solution).
-- Solutions: labelled blocks, thin-space units, decimal comma, chains aligned, Vastaus boxes; no overflow; answers match answers.py.
+- Captures opened: fy2-3-open-exercises-L2-1280-8 and -9 (L2-08 as task 3-16: text, choices, feedback, Mallivastaus with the three chains); content/fi/FY2/fy2-3/review/shots/, newer than the content.
+- Own render (Playwright): L2-08 at 390 px (E, t and kWh set as maths, choices as whole rows, no overflow), L3-04 and L3-05 at 390 px (paragraph breaks fine; the wide tables scroll by design).
+- Diff only: answers.py comment, solutions.md beyond the capture.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

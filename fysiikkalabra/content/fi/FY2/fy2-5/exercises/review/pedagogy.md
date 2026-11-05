@@ -1,21 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: fa39dc3b4232eb3a
-Round: 4
+CONTENT-HASH: f28649f7c45795b2
+Round: 1
 
 ## Blocking
 - none
 
 ## Polish
-- exercises.json fy2-5-L3-05 vs L3-04 (carried over) — both level-3 tasks use the same numbers and idea (pellets 85 %, oil 90 %, wood 70 %); L3-05 adds the wood boiler and the ageing case. Fix if edited again: swap one for heating energy per fuel cost or per emission.
-- fy2-5-L1-06 (carried over) — correct option D is the shortest and the only one without an extra clause. Fix: lengthen it to about 100 characters, e.g. "Yhdestä kilogrammasta bensiiniä vapautuu palaessa energiaa $43\,\text{MJ}$, ja kahdesta kaksinkertainen määrä."
-- fy2-5-L3-04 and L3-05 — keep the word "esimerkkiaineisto" in both task texts (L3-05 has it).
-- docs/exercise-bank/FY2.md — the L2 "lämpöarvot ja CO2-päästökertoimet" table is not realised in fy2-5 (emissions belong to fy2-8); note it in the plan.
+- solutions.md fy2-5-L2-08 (sanity line) — "bensiini on lähes $40\,\text{MJ}$ kilogrammaa kohti mutta vain pieni määrä" is wrong (43 is over 40) and the sentence is clumsy. Fix: "bensiinin lämpöarvo on suurin, yli $40\,\text{MJ/kg}$, mutta sen massa on pienin, joten sen energia jää pienimmäksi."
+- exercises.json fy2-5-L2-08 text — "Laske ... ja järjestä polttoaineet." duplicates the `prompt`; keep the last sentence as the question only, e.g. end the text at the data and let the prompt ask the order.
+- exercises.json fy2-5-L3-04/L3-05 and L1-06 (carried over) — L3-05 repeats the L3-04 idea (swap one for cost or emissions per energy); L1-06 correct option is the shortest, lengthen it.
+- docs/exercise-bank/FY2.md (carried over) — note the CO2 table is realised in fy2-8, not fy2-5.
 
 ## Checked
-- Round 3 -> 4 change (only solutions.md, L3-05 "Vastaus:" line, now "vastauslaatikkoon kohdan b) tulos $940\,\text{kg}$."): 940 kg is part b)'s result (3428,6 - 2491,3 = 937,2 kg -> 940 kg, two significant figures) and equals the answer-box value 940 (tolerance 0,01); wording is clear and consistent with a)-d) below it. Mode: delta.
-- Round 2 fix, L3-05: b) now says "Käytä a)-kohdan pyöristämättömiä massoja"; exact difference 3428,6 - 2491,3 = 937,2 kg, solution 938 kg, answer 940 kg with tolerance 0,01 (930,6-949,4) accepts both; closed.
-- L3-05 c) 2824 kg (0,85:0,75 = 1,13 check), d) oil 43:15 = 2,9 reasoning correct; answer lines a-d separate.
-- Round 1 items (L1-06 distractors, L3-05 answer split, correct option not B) remain fixed.
-- L2-05, L2-06, L2-07 numbers verified earlier (5,6 kg; unit-slip error analysis; 18,4 kW); levels fit.
-- L3-04 and L3-05 are multi-part modelling with explanation, YO style; level 3 fits.
-- Set is coherent: 8/7/5 tasks, no duplicates of old tasks, solutions have principle, formula, substitution, answer, sanity check.
+- New L2-08 (ordering): 64,5 / 75 / 104 / 120 MJ is the correct order; it differs from the mass order (bensiini, hiili, puu, turve), so ordering by mass or by H fails; the g and t conversions are the one lesson-prepared trap (L2-06 teaches t).
+- Level 2 fits: four E = Hm products with unit conversion, no hidden new idea; not a copy of the worked example (wood, 6 kg).
+- Solution has principle, conversion, four substitutions, order, comparison with the mass order; followable.
+- Rest of the set unchanged since the PASS (8/8/5); numbers of L2-05, L2-07, L3-05 verified earlier.
+- Phone view of the order widget not opened (tested by the inquiry checks).

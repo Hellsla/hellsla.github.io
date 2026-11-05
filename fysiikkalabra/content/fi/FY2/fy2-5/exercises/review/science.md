@@ -1,19 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: fa39dc3b4232eb3a
-Round: 4
+CONTENT-HASH: f28649f7c45795b2
+Round: 1
 
-Round 3 had no Blocking items. Only change since round 3: the L3-05 "Vastaus:" line states the answer-box value (`git show HEAD`).
+New since the last PASS (commit 18b454cd1): the ordering task fy2-5-L2-08 in exercises.json and solutions.md. Mode: full. Every numeric answer was recomputed again.
 
 ## Blocking
 
 ## Polish
-- content/fi/FY2/fy2-5/exercises/exercises.json:60 (L1-06, second distractor) — "riippumatta määrästä" makes no sense in the sentence (carried over). Drop the phrase.
-- L3-04 and L3-05 — both still follow the same chain (m = E/(ηH), then η falls), and the plan's level 3 asks for "polttoainemäärä ja päästöt" (carried over). Add an emissions part (factor × fuel energy) to one of them when the set is next edited.
+- content/fi/FY2/fy2-5/exercises/solutions.md:205 (L2-08 Arvio) — "bensiini on lähes $40\,\text{MJ}$ kilogrammaa kohti" is wrong, because 43 is more than 40. Write "yli $40\,\text{MJ}$" or "noin $43\,\text{MJ}$".
+- solutions.md:203 and exercises.json:275 (L2-08) — "$104\,\text{MJ}$" has three significant figures, but the data (26 MJ/kg and 4,0 kg) have two. Ranking alone does not need rounding. Still, "noin $100\,\text{MJ}$", or a note that unrounded values are kept for the ranking, would match the other solutions.
+- exercises.json:60 (L1-06, second distractor) — "riippumatta määrästä" makes no sense in the sentence (carried over).
+- L3-04 and L3-05 — both still follow the same chain m = E/(ηH). Level 3 in the plan asks for emissions too (carried over).
 
 ## Checked
-- Round 3 -> 4 change (only solutions.md, L3-05 "Vastaus:" line, now "vastauslaatikkoon kohdan b) tulos $940\,\text{kg}$."): 940 kg is part b)'s result (3428,6 - 2491,3 = 937,2 kg -> 940 kg, two significant figures) and equals the answer-box value 940 (tolerance 0,01); wording is clear and consistent with a)-d) below it. Mode: full.
-- L3-05 recomputed: wood 3428,6 kg, pellets 2491,3 kg, difference 937,2 kg. That is 0,3 % from 940, inside 0,01. The 3-figure a) values (3430 − 2490 = 940) also pass. The 2-figure values (3400 − 2500 = 900, −4,3 %) fail, as they should now that b) says to use unrounded masses.
-- L3-05 solution: the Sijoitus difference 3429 − 2491 = 938 kg, the Vastaus 940 kg and answer 940 agree. The b) instruction does not conflict with the 2-figure rounding in the a) Vastaus.
-- L3-05 c), d) and Järkevyys are unchanged and still correct: 2824 kg, +330 kg, 1,13 = 0,85 : 0,75, and 43 : 15 = 2,9.
-- Round-2 checks still stand for the unchanged tasks (L1-07 15,0 kg; L1-08 40,0 kWh; L2-05 5,63 kg; L2-07 18,4 kW; L3-04 3313 kg). Each MC has exactly one correct option, and no solution names an option by its position.
-- FY2 scope: no c·m·ΔT, and one efficiency per chain.
+- L2-08 recomputed. The energies are 64,5, 75, 104 and 120 MJ, so the `order` list (bensiini, polttopuu, kivihiili, jyrsinturve) is correctly smallest to largest. The gaps between neighbours are at least 10 MJ, so no tie depends on rounding.
+- L2-08 conversions are right (1500 g = 1,5 kg; 0,0040 t = 4,0 kg). The claim that ranking by mass swaps wood and coal is true (by mass the order is 1,5 < 4,0 < 5,0 < 12). The claim that ranking by H gives a different order is also true (by H it is the full reverse).
+- L2-08 `prompt` names the quantity (E) and the direction (pienimmästä suurimpaan), as docs/exercise-types.md type 9 requires. The solution explains the order with E = Hm, the lesson's notation.
+- The heating values in L2-08 are the lesson table's values (43, 15, 26, 10 MJ/kg).
+- answers.py vs exercises.json: one python run over all 18 numeric answers. Every one is within its tolerance, and the largest deviation is L2-07, 18,42 vs 18 (+2,3 %, tolerance 0,03). L1-06 and L2-06 each have exactly one correct option.
+- answers.py has no line for L2-08. That is correct, because the task is non-numeric.
+- FY2 scope: there is no c·m·ΔT, and each chain has only one efficiency. The food tasks keep energiasisältö e apart from lämpöarvo H, as the guardrail requires.

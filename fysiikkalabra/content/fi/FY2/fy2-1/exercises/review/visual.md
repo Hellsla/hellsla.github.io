@@ -1,20 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 59c94115b15b2cf7
-Round: 3
+CONTENT-HASH: dc9ac2fa1d6708f1
+Round: 1
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] L3-05 text (L3-1280-6) — the whole second paragraph, now including the model sentence "Mallissa oletetaan ... lämpöenergiaksi", is bold and a), b), c) run together in one block (the "\n\n" and parts do not render as separate lines). Fix: render a), b), c) as separate lines or a list; keep the assumption in plain text and bold only the question. Same in L3-04.
-- [Minor] L3-04 c) Vastaus (L3-1280-6) — a), b), c) run on in one paragraph with a parenthetical; split into lines.
-- [Minor] Kaava of L3-04 — "ehto c)" block breaks before "<"; set on one line or use a colon for the division.
-- [Minor] Tables (L3-04, L3-05, L2-07; L3-1280-7) — headers "E_tulo (MJ)" and "E_ulos (MJ)" are left-aligned over right-aligned numbers; no 360/390 px capture of the new tables exists.
+- [Minor] L1-09 text — "metrin korkeudelta" gives the height as a word, not as maths; "$1\,\text{m}$:n korkeudelta" would follow the 2026-11-01 rule. It is a spoken quantity, not a value to compute with, and the lint accepts it, so Minor.
+- [Minor] L1-09 statement 5 — "sen alun potentiaalienergia on ympäristössä lämpöenergiana" is slightly loose; "se energia, joka pallolla oli alussa potentiaalienergiana, on nyt lämpöenergiana ympäristössä" reads more clearly.
 
 ## Checked
-- Opened fy2-1-open-exercises-L3-1280-6 (L3-04 Vastaus and Järkevyys, L3-05 text) and L3-1280-7 (L3-05 table, Annettu to Sijoitus). The new wording shows; no clipping or overflow, units upright with thin space, decimal comma, chains aligned at =.
-- Round-2 Blocking-free state holds: delta is one sentence in the L3-05 text and Periaate; the layout survived.
-- Not re-opened: other captures unchanged since round 2.
+- Captures opened: fy2-1-open-exercises-1280-8 and -9 (L1-09 statements 1-5, Vastaa, opened answer and Mallivastaus), the page's captures were newer than the content (20:44 vs 20:30). Path: content/fi/FY2/fy2-1/review/shots/.
+- Own render (Playwright, preview/fy2-1.html): L1-09 at 390 px (statements and Tosi/Epätosi rows fit, no overflow, document width 390), L3-01 and L3-03 at 390 px (new paragraph breaks and a), b) as separate lines render well).
+- Diff only (not opened): L1-03 and L2 inventor-task paragraph breaks, solutions.md L1-09 text (seen rendered in the -9 capture).
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4

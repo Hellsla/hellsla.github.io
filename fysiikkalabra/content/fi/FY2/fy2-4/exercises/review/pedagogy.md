@@ -1,17 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: f04f800bbdb5c377
-Round: 2
+CONTENT-HASH: 7cbf518ecd23380a
+Round: 1
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- exercises.json fy2-4-L3-05 — the task has three answers (30 %, 6,9 kWh, 1,4 €) but one answer key (6,9 kWh); fine for the checker, but the task text could say which value is entered in the box ("anna vastaus kilowattitunteina" does).
-- solutions.md L3-05 — the block label "Kuvaajan lukeminen" is used for reading a table; "Taulukon lukeminen" is clearer for a student.
-- L2-05 now has a 7 % halogen lamp; the Järkevyys remark "eniten valoa antaa loistelamppu (3,6 W)" is true and a good point, keep.
+- exercises.json L2-08 option 1 feedback — "Jos muunnoksen luulee virheelliseksi, sekoittaa minuutin ja sekunnin suhteen" is clumsy; write "Virheeksi valitsemalla sekoittaisi minuutin ja sekunnin suhteen, esimerkiksi luulisi minuutissa olevan 100 s."
+- exercises.json L2-08 text — the task is long on a phone; separate the student's four rows with the question after them (as now) is right, but "Mikä rivi on väärin?" could read "Mikä oppilaan laskun rivi on väärin?" so the question stands on its own.
+- exercises.json L2-08 option 5 feedback — "Rivit 1–3 ovat oikein" gives away the structure only after the choice, which is fine; no change needed except to drop "mikä on mahdotonta" (hyötysuhde yli 100 % ei ole mahdollinen ilman ulkoista energiaa; "ei ole mahdollista" is enough).
 
 ## Checked
-- Round-1 Blocking resolved: L3-05 now has a second stage that models the whole table: P = E/t = 540 J : 60 s = 9,0 W on every row, 3,0 h · 365 = 1095 h, 9,855 kWh a year, heat share 1510/2160 = 0,699, 6,89 kWh, 1,38 €; the student's 70 % is explained as the right number for the heat part. It is clearly level 3 and now different from L2-06.
-- Round-1 Polish done: L2-06 now asks for the efficiency of every non-zero row, the solution uses the rows, Vastaus says "noin 79 %"; "70 % on häviöiden osuus" is stated; L2-05, L2-06, L3-05 data marked as example measurements; L3-04 question set on its own paragraph.
-- Recomputed: L2-05 5/7/20/30 %, ratio 0,30/0,070 = 4,3 (answer key 4,3), 2,7 W : 0,070 = 39 W; L2-06 rows 0,80/0,79/0,80/0,792; L3-04 192 MJ = 53,3 kWh, 3,1, 15,3 and 13,3 kWh.
-- No duplicates, levels fit, plan kept.
+- New task L2-08 (type 4, error finding): four rows, exactly one wrong (row 4, ratio inverted), "Laskussa ei ole virhettä" last; the three correct rows are correct (2500 W, 240 s, 600 kJ, 240 kJ) and each option's feedback checks its own row.
+- The error is a real, common one (E_o : E_a), the 167 % is a trap-free hint a student can notice but is not given in the question.
+- Fits the slot (hyötysuhde, E = P t, units) at Level 2; unit conversions and energy conservation are rehearsed without a new technique.
+- Solution: Periaate lists the checks; Mallivastaus goes row by row and ends with the sanity check 60 % + 40 % = 100 %; followable.
+- Levels 8/8/5 meet the minimums; earlier tasks unchanged.
+- Hash unchanged at start and end.

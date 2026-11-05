@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 72f39e958439a660
-Round: 2
+CONTENT-HASH: 9e1eb93be5d4c588
+Round: 1
 
 ## Blocking
 
 ## Polish
-- [Minor] L3-05, Järkevyys (L3-1280-8) — the inline "$0{,}041 \cdot 1016\,\text{MWh} \approx 42\,\text{MWh}$" breaks after the "·" at 1280 px; rewrite as a short separate sentence or let the chain rows handle it.
-- [Minor] all data tables (L2-05, L2-06, L3-04, L3-05) — numeric column headers sit left of their right-aligned numbers — right-align numeric headers.
+- [Minor] fy2-7-L2-08 (7-16) Mallivastaus at 390 px — "$E_\text{häviö} = 0{,}040 \cdot 1000\,\text{MWh} = 40\,\text{MWh}$" and the district-heating line are wider than the column (338 and 328 against 304 px) and scroll sideways, so "40 MWh" and "27 MWh" are cut off on the phone — put each on a "**Sijoitus:**" line (set as rows by the build) or shorten the subscript.
 
 ## Checked
-- Round 1 Blocking (paragraph break lost in L2-05, L2-06, L3-04, L3-05): resolved; a)/b)/c) are own bold paragraphs, the box instruction ("Anna vastaus prosentteina", "megawattitunteina") sits in the part it belongs to.
-- Round 1 Polish (L3-05 Sijoitus eight calculations in prose): resolved, E and H rows are one aligned block.
-- L2-1280-6, -8 (L2-05 table and solution, L2-06 solution, L2-07 text, ”…” quotes now Finnish), L3-1280-4, -5, -7, -8 (L3-04, L3-05).
-- Revealed answers match the boxes (checked in the built page for all new numeric tasks).
-- 1280 px only (no 360 px exercise capture; layout checks clean).
+- Rendered live (Playwright, preview/fy2-7.html; no review/shots for this hash): 7-16 at 390 and 1280 px, closed and with a wrong answer committed (feedback, reason block) and Mallivastaus open. Stem is three short paragraphs; options and four reasons are whole rows; hierarchy fine; no page overflow at 360/390.
+- From the diff only: Finnish of the feedbacks and the model answer (fluent, one voice, no AI phrasing), solutions.md.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

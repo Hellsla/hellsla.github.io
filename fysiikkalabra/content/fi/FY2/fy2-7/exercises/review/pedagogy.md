@@ -1,19 +1,18 @@
-VERDICT: PASS
-CONTENT-HASH: 72f39e958439a660
-Round: 2
+VERDICT: FAIL
+CONTENT-HASH: 9e1eb93be5d4c588
+Round: 1
 
 ## Blocking
-- none
+- exercises.json fy2-7-L2-08 `reasons` — the correct reason is the longest (135 characters against 78/111/65) and the only hedged one ("voi menettää"), while the wrong ones use "aina" or are short; a student can pick it by form, which defeats the two-stage reasoning check (same cue was Blocking in fy2-7-L2-07). Fix: shorten the correct reason to about 95 characters ("Häviö on osuus lähtevästä energiasta, ja sähköverkkoon lähtee paljon enemmän energiaa kuin kaukolämpöverkkoon.") and lengthen the first to about 95 ("Kaukolämpöverkon häviöprosentti on suurempi, joten sen häviö on suurempi kuin sähköverkon.").
 
 ## Polish
-- exercises.json fy2-7-L2-07 — length cue is gone (91/86/92/89, correct D), but the correct option is still the only one naming the mechanism ("virta lämmittää johdinta"); give A and C each a mechanism-sounding clause so the choice rests on physics.
-- fy2-7-L1-06 — three of four options are 91 characters and the correct one is C; fine, but note correct is C/D in the two MCs; vary in later edits.
-- fy2-7-L1-03 vs L1-07 — efficiency from out/in and loss share from out/in are the same step; acceptable at level 1.
-- fy2-7-L3-05 — hint "kun virta kaksinkertaistuu, häviöteho nelinkertaistuu" hands over the model; consider moving it to the solution or keeping it, since the data (p proportional to P) can be read from the table.
+- fy2-7-L2-08 reasons — "Sähköenergia siirtyy valon nopeudella" echoes the plan's own misconception and is good; the third reason ("pitkät voimalinjat") is plausible but could state "kaukolämpöputket ovat lyhyitä" to make it equal in strength.
+- fy2-7-L2-08 first-stage feedback — "Yhtä paljon" feedback is a bit abstract; add "$4{,}0\,\% \cdot 1000$ ja $9{,}0\,\% \cdot 300$ eivät ole sama luku".
+- Carried over: L2-07 mechanism cue; L1-03 vs L1-07 same step; L3-05 hint gives the model.
 
 ## Checked
-- Round 1: L2-07 Blocking resolved (no longest-option cue); L2-06 solution now explains the quartering (virta puolittuu, häviö neljäsosa); plan notes record the dropped heat-pump model.
-- Numbers verified: L2-05 9,62 % (April 11,4 % max), L2-06 0,0625 MW, L3-04 6,0 MWh at house and 6,6 MWh at plant, L3-05 1016 MWh in, 42,09 MWh lost, 4,1 %, evening period largest (18,15 MWh).
-- L3-05 table is consistent with the hint (p rises in proportion to load: 1,5/3,5/4,2/5,5 for 18/42/50/66 MW).
-- Level 2 tasks L2-05..07 and level 3 L3-04, L3-05 fit; L3-04 is modelling with a choice, comparison and the plant-versus-house reasoning.
-- Solutions have principle, formula, substitution, sanity check; no new task repeats the worked example.
+- New L2-08 numbers: 0,040 * 1000 = 40 MWh, 0,090 * 300 = 27 MWh; sähköverkko loses more though its percentage is less than half.
+- Level 2 fits; it tests exactly the lesson's rule (häviöprosentti kerrotaan lähtevästä energiasta); the misconception "bigger percent, bigger loss" is the real one.
+- Answer options are in different positions (B first stage, B second); first-stage options have equal-ish length.
+- Solution has principle, both calculations, comparison, and states the energy does not vanish.
+- Rest of the set unchanged since the PASS.
