@@ -149,7 +149,10 @@ main.home h2{font:600 clamp(1.5rem,1.3rem + .6vw,1.75rem)/1.2 var(--serif);lette
 main.home{max-width:none}
 main.home+footer.bottom{margin-top:1.4rem}   /* 1.75rem left the Finnish page 2 px over 1440 x 900 (2026-11-04) */
 .home-intro{padding:clamp(.6rem,2vw,1.6rem) 0 clamp(1rem,2.2vw,1.6rem)}
-.home-intro h1{font:500 clamp(2rem,1.55rem + 1.9vw,3rem)/1.08 var(--serif);letter-spacing:-.025em;margin:0 0 .45rem;color:var(--ink)}
+.intro-title{display:flex;flex-wrap:wrap;align-items:center;gap:.35rem .8rem;margin:0 0 .45rem}
+.home-intro h1{font:500 clamp(2rem,1.55rem + 1.9vw,3rem)/1.08 var(--serif);letter-spacing:-.025em;margin:0;color:var(--ink)}
+/* the work-in-progress badge beside the heading (teacher 2026-11-05): a quiet copper outline pill, text 5:1 on the cream */
+.wip-badge{margin:0;padding:.2rem .65rem;border:1.5px solid var(--copper);border-radius:999px;font:700 .75rem/1.2 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--copper-ink);white-space:nowrap;cursor:help}
 .home-intro .lead{font:400 clamp(1.0625rem,1rem + .25vw,1.1875rem)/1.45 var(--sans);color:var(--ink-2);max-width:none;margin:0;hyphens:manual}
 @media (min-width:64rem){.home-intro .lead{white-space:nowrap}}
 .mod-cols{display:grid;grid-template-columns:minmax(0,1fr);gap:1.4rem 2.5rem;align-items:start}
@@ -165,12 +168,12 @@ main.home+footer.bottom{margin-top:1.4rem}   /* 1.75rem left the Finnish page 2 
 .intro-school{display:none;height:32px;width:auto;max-width:100%}
 @media (min-width:700px){
   .home-intro{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(1.25rem,3vw,2.5rem)}
-  .home-intro>h1,.home-intro>.lead{grid-column:1/-1}
+  .home-intro>.intro-title,.home-intro>.lead{grid-column:1/-1}
   .intro-school{display:block;grid-column:2;margin:.9rem 0 0}
   .mod-side>.mod-school:first-child{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;margin:0}}
 @media (min-width:1200px){
-  .home-intro>h1{grid-column:1/-1;white-space:nowrap}
-  .home-intro>.lead{grid-column:1}
+  .home-intro>.intro-title{grid-column:1/-1}.home-intro h1{white-space:nowrap}
+  .home-intro>.lead{grid-column:1;white-space:normal;text-wrap:balance}   /* wraps in its column rather than running under the school logo */
   .intro-school{grid-column:2;grid-row:2;align-self:end;margin:0}}
 .mod-row{display:flex;align-items:center;gap:.8rem;min-height:56px;padding:.45rem .6rem;color:var(--ink);text-decoration:none;border-radius:8px}
 .mod-icon{display:block;width:40px;height:40px;flex:none}
