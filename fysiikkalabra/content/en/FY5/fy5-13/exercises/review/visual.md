@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 777ce47a22b6a090
+CONTENT-HASH: 173579a1f8da8734
 
 ## Blocking
 (none)
 
+## Fixed
+(none: the text on the captures needed no change)
+
 ## Polish
-(none)
+- Data tables keep the decimal point in cells (96.0, 16.3), as the Finnish JSON does; correct for en.
 
 ## Checked
-- contact-5 opened: open-exercises-1280 (level 1 with every solution open), open-exercises-L2-1280 (#56–#60), the task figure with ruler 0.20–1.20 and x (m).
-- Solutions render: fractions, thin-space units, decimal points, aligned substitution chains, answer boxes.
-- L3-01 subscripts f_o and f_c upright (\text{o}, \text{c}).
-- English wording reads as a British textbook (centimetres, metres per second, tuning fork, organ pipe).
-
-## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+- Captures fy5-13-open-exercises-1280-*, -L2-1280-*, -L3-1280-* (retaken after the translation) opened for the new tasks 13-6 (antinode), 13-14 (resonance tube table) and the L3 tasks: the multiple-choice feedback, tables with captions and units, the answer box with m/s or Hz, and the solutions render without clipping or red source.
+- Fractions, subscripts (f_A, f_B, f_{1,av}), thin-space units and the aligned substitution chains render cleanly; no Finnish visible.

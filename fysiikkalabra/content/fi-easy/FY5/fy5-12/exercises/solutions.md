@@ -112,3 +112,70 @@
 **Sijoitus:** $s_1 = \sqrt{(16{,}0\,\text{m})^2 + (30{,}0\,\text{m})^2} = \sqrt{1156\,\text{m}^2} = 34{,}0\,\text{m}$, $\lambda = 2 \cdot (34{,}0\,\text{m} - 30{,}0\,\text{m}) = 2 \cdot 4{,}0\,\text{m} = 8{,}0\,\text{m}$
 **Vastaus:** $8{,}0\,\text{m}$. Vastauksessa on kaksi merkitsevää numeroa. Matkaero $4{,}0\,\text{m}$ on kahden etäisyyden erotus. Etäisyydet on annettu kolmella merkitsevällä numerolla, mutta erotuksella on kaksi merkitsevää numeroa.
 **Järkevyys:** Tarkistus: matkaero $4{,}0\,\text{m}$ on puolet aallonpituudesta $8{,}0\,\text{m}$, joten harja kohtaa pohjan. Matkaero on pienempi kuin aukkojen väli $16{,}0\,\text{m}$, kuten pitää. Muutaman metrin aallonpituus on tavallinen tuulen nostamille aalloille.
+
+## fy5-12-L1-06
+**Kysytty:** mitä kahdelle vastakkaiselle pulssille tapahtuu kohtaamisen jälkeen
+**Periaate:** Superpositioperiaatteen mukaan narun poikkeama on samassa kohdassa olevien pulssien poikkeamien summa. Poikkeamat lasketaan yhteen vain niin kauan kuin pulssit ovat päällekkäin. Siksi summaus ei muuta itse pulsseja.
+**Mallivastaus:** Pulssit kulkevat toistensa läpi ja jatkavat muuttumattomina. Kun ne ovat päällekkäin, ylös ja alas suuntautuvat poikkeamat summautuvat. Silloin naru on hetken suora. Se ei kuitenkaan tarkoita, että pulssit olisivat kadonneet: naru liikkuu edelleen, ja pulssit tulevat uudelleen näkyviin. Pulssit eivät kimpoa takaisin kuin törmäävät kappaleet. Ne eivät myöskään yhdy pysyvästi, koska poikkeamat summautuvat vain kohtaamishetkellä.
+
+## fy5-12-L1-07
+**Kysytty:** miksi keskinormaalilla kuuluu voimakas ääni millä tahansa taajuudella
+**Periaate:** Kun kaksi lähdettä on samassa vaiheessa, aaltojen yhteisvaikutuksen ratkaisee matkaero $\Delta s = |s_1 - s_2|$. Matkaero on kahden etäisyyden erotus. Keskinormaalin jokainen piste on yhtä kaukana molemmista kaiuttimista.
+**Mallivastaus:** Keskinormaalilla etäisyydet ovat yhtä suuret, joten matkaero on $\Delta s = 0$. Kumpikin aalto on kulkenut yhtä pitkän matkan. Siksi aallot saapuvat kuulijalle samassa vaiheessa, harja harjan kanssa, ja vahvistavat toisiaan. Ehto $\Delta s = n\lambda$ toteutuu luvulla $n = 0$ aallonpituudesta riippumatta. Siksi vahvistus ei riipu taajuudesta. Äänen nopeus on kaikkialla sama.
+
+## fy5-12-L1-08
+**Annettu:** etäisyydet $s_1 = 5{,}30\,\text{m}$ ja $s_2 = 4{,}45\,\text{m}$, äänen nopeus $v = 340\,\text{m/s}$, kaiuttimet samassa vaiheessa
+**Kysytty:** pienin taajuus $f$ hertseinä, jolla ääni pisteessä on heikko
+**Periaate:** Heikko ääni syntyy heikentävässä interferenssissä, $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$. Matkaero on pisteessä aina sama. Pienin taajuus tarkoittaa suurinta aallonpituutta, eli lukua $n = 0$. Silloin $\Delta s = \tfrac{1}{2}\lambda$. Taajuus saadaan yhtälöstä $v = f\lambda$.
+**Kaava:** $\Delta s = s_1 - s_2$, $\lambda = 2\Delta s$ ja $f = \dfrac{v}{\lambda}$, josta $f = \dfrac{v}{2\Delta s}$
+**Muunnokset:** Ei tarvita: etäisyydet ovat metreinä ja nopeus yksikössä $\text{m/s}$.
+**Sijoitus:** $\Delta s = 5{,}30\,\text{m} - 4{,}45\,\text{m} = 0{,}85\,\text{m}$, $f = \dfrac{340\,\text{m/s}}{2 \cdot 0{,}85\,\text{m}} = 200\,\text{Hz}$
+**Vastaus:** $200\,\text{Hz}$. Vastauksessa on kaksi merkitsevää numeroa, koska matkaero $0{,}85\,\text{m}$ on etäisyyksien erotus ja siinä on kaksi merkitsevää numeroa.
+**Järkevyys:** Taajuudella $200\,\text{Hz}$ aallonpituus on $\tfrac{340\,\text{m/s}}{200\,\text{Hz}} = 1{,}70\,\text{m}$. Suhde $\tfrac{0{,}85\,\text{m}}{1{,}70\,\text{m}} = 0{,}5$ on puolikas. Taajuudella $400\,\text{Hz}$ aallonpituus on $0{,}85\,\text{m}$ ja suhde on $1$. Siellä ääni olisi voimakas. Seuraava heikko ääni on taajuudella $600\,\text{Hz}$, jolloin suhde on $1{,}5$.
+
+## fy5-12-L2-05
+**Annettu:** kaiuttimien väli $d = 2{,}00\,\text{m}$, äänen nopeus $v = 340\,\text{m/s}$, heikoimman äänen kohtien paikat taulukosta (mikrofoni liikkui välillä $0{,}30\,\text{m}$ … $1{,}70\,\text{m}$): ensimmäinen $x_1 = 0{,}38\,\text{m}$ ja kuudes $x_6 = 1{,}63\,\text{m}$
+**Kysytty:** äänen taajuus $f$ hertseinä
+**Periaate:** Kaiuttimien välillä pisteen etäisyydet kaiuttimiin ovat $x$ ja $d - x$. Matkaero on siis $\Delta s = |d - 2x|$. Heikoimman äänen kohdassa interferenssi on heikentävä, $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$. Vierekkäisten kohtien matkaerot eroavat yhdellä aallonpituudella. Kun $x$ muuttuu määrän $\Delta x$, matkaero muuttuu määrän $2\Delta x$. Siksi vierekkäisten kohtien väli on $\Delta x = \tfrac{\lambda}{2}$. Sama $\lambda/2$-väli on seisovan aallon solmujen välillä (luku Seisova aalto). Kohdat ovat äänen minimejä eivätkä täyttä hiljaisuutta. Yhden kaiuttimen lähellä aaltojen voimakkuudet ovat erilaiset, eivätkä ne kumoa toisiaan kokonaan.
+**Kaava:** $\Delta x = \dfrac{x_6 - x_1}{5}$, $\lambda = 2\Delta x$ ja $f = \dfrac{v}{\lambda}$, josta $f = \dfrac{v}{2\Delta x}$
+**Muunnokset:** Ei tarvita: paikat ovat metreinä ja nopeus yksikössä $\text{m/s}$.
+**Sijoitus:** Taulukossa on kaikki kohdat valitulta väliltä peräkkäin. Ensimmäisen ja kuudennen kohdan välillä on siis viisi väliä, joten $\Delta x = \dfrac{1{,}63\,\text{m} - 0{,}38\,\text{m}}{5} = 0{,}250\,\text{m}$ ja $f = \dfrac{340\,\text{m/s}}{2 \cdot 0{,}250\,\text{m}} = 680\,\text{Hz}$
+**Vastaus:** $680\,\text{Hz}$. Vastauksessa on kolme merkitsevää numeroa kuten paikoissa ja äänen nopeudessa. Viiden välin keskiarvo pienentää yksittäisten lukemien virhettä.
+**Järkevyys:** Aallonpituus on $\tfrac{340\,\text{m/s}}{680\,\text{Hz}} = 0{,}500\,\text{m}$. Kohdassa $x = 0{,}38\,\text{m}$ matkaero on $2{,}00\,\text{m} - 0{,}76\,\text{m} = 1{,}24\,\text{m}$. Se on $2{,}48$ aallonpituutta eli lähes $2{,}5\lambda$, kuten heikentävässä interferenssissä. Kohdat ovat myös symmetriset janan keskipisteen $1{,}00\,\text{m}$ suhteen: $0{,}38\,\text{m} + 1{,}63\,\text{m} \approx 2{,}00\,\text{m}$.
+
+## fy5-12-L2-06
+**Kysytty:** miten opiskelijan väite energian häviämisestä solmuviivalla oikaistaan
+**Periaate:** Heikentävässä interferenssissä aallot kumoavat toistensa poikkeamat tietyissä kohdissa. Kaiuttimet kuitenkin lähettävät energiaa koko ajan yhtä paljon. Siksi energian kokonaismäärän täytyy säilyä.
+**Mallivastaus:** Väite on väärä. Solmuviivoilla poikkeamat kumoavat toisensa, joten sinne kulkeutuu hyvin vähän energiaa. Energia ei kuitenkaan häviä. Interferenssikuvio jakaa sen tilaan eri tavalla: vahvistavan interferenssin kohtiin energiaa kulkeutuu vastaavasti enemmän. Energia ei muutu lämmöksi solmuviivoilla eikä siirry takaisin kaiuttimiin. Aallot kulkevat toistensa läpi, ja kaiuttimien teho pysyy samana.
+
+## fy5-12-L2-07
+**Annettu:** amplitudit taulukosta matkaeron mukaan; lähteiden aallot ovat yhtä suuret
+**Kysytty:** a) aallonpituus $\lambda$ senttimetreinä ja b) yhden lähteen aallon amplitudi $A$ millimetreinä
+**Periaate:** Samassa vaiheessa olevien lähteiden aallot vahvistavat toisiaan, kun $\Delta s = n\lambda$. Summa-aallon amplitudi on silloin $2A$. Heikentävässä interferenssissä $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$ yhtä suurten aaltojen amplitudi on nolla. Siksi taulukon suurimmat amplitudit, kohdissa $\Delta s = 0{,}0\,\text{cm}$, $2{,}0\,\text{cm}$ ja $4{,}0\,\text{cm}$, ovat kaksi kertaa yhden aallon amplitudi. Pienimmät amplitudit, kohdissa $1{,}0\,\text{cm}$ ja $3{,}0\,\text{cm}$, ovat lähellä nollaa.
+**Kaava:** a) vierekkäisten maksimien matkaeroja erottaa $\lambda$; b) $A_\text{max} = 2A$, josta $A = \dfrac{A_\text{max}}{2}$
+**Muunnokset:** Ei tarvita: matkaerot ovat senttimetreinä ja amplitudit millimetreinä, kuten tehtävä pyytää.
+**Sijoitus:** a) $\lambda = 2{,}0\,\text{cm} - 0{,}0\,\text{cm} = 2{,}0\,\text{cm}$. Sama väli on maksimien $2{,}0\,\text{cm}$ ja $4{,}0\,\text{cm}$ välillä. b) Maksimien summa on $7{,}9\,\text{mm} + 8{,}1\,\text{mm} + 7{,}8\,\text{mm} = 23{,}8\,\text{mm}$. Niiden keskiarvo on $A_\text{max,ka} = \dfrac{23{,}8\,\text{mm}}{3} = 7{,}93\,\text{mm}$, joten $A = \dfrac{7{,}93\,\text{mm}}{2} = 3{,}97\,\text{mm}$
+**Vastaus:** b) $4{,}0\,\text{mm}$. Vastauksessa on kaksi merkitsevää numeroa kuten amplitudeissa $7{,}9\,\text{mm}$ ja $8{,}1\,\text{mm}$. a) Aallonpituus on $2{,}0\,\text{cm}$.
+**Järkevyys:** Minimit $0{,}3\,\text{mm}$ ja $0{,}2\,\text{mm}$ ovat lähellä nollaa, kuten yhtä suurilla aalloilla heikentävässä interferenssissä pitää. Pieni jäännös johtuu mittausvirheestä. Väliarvot ovat suurimman ja pienimmän välillä: kohdassa $\Delta s = 0{,}5\,\text{cm}$ amplitudi $5{,}8\,\text{mm}$ on suurimman $7{,}9\,\text{mm}$ ja pienimmän $0{,}3\,\text{mm}$ välissä.
+
+## fy5-12-L3-04
+**Annettu:** taajuus $f = 170\,\text{Hz}$, äänen nopeus $v = 340\,\text{m/s}$, kaiuttimen M etäisyys kuulijasta $s_\text{M} = 3{,}00\,\text{m}$, kaiuttimet samassa vaiheessa ja aallot kuulijalla yhtä suuret
+**Kysytty:** a) kaiuttimen N etäisyys $s_\text{N}$ kuulijasta metreinä, b) pienin taajuus $f_2 > 170\,\text{Hz}$, jolla kuulijan kohdalla on voimakas ääni, hertseinä, c) perustelu
+**Periaate:** Hiljaisuus tarkoittaa heikentävää interferenssiä, $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$. Pienin etäisyys saadaan pienimmällä luvulla $n = 0$. Kaiuttimien paikat pysyvät samoina, joten matkaero $\Delta s$ pysyy samana. Kun taajuus muuttuu, aallonpituus muuttuu. Voimakas ääni syntyy vahvistavassa interferenssissä, $\Delta s = n\lambda$ luvulla $n = 1, 2, \ldots$.
+**Kaava:** $\lambda = \dfrac{v}{f}$, $\Delta s = \tfrac{1}{2}\lambda$ ja $s_\text{N} = s_\text{M} + \Delta s$; uudella taajuudella $\Delta s = \lambda_2$, josta $f_2 = \dfrac{v}{\Delta s}$
+**Muunnokset:** Ei tarvita: etäisyydet ovat metreinä ja nopeus yksikössä $\text{m/s}$.
+**Sijoitus:** a) $\lambda = \dfrac{340\,\text{m/s}}{170\,\text{Hz}} = 2{,}00\,\text{m}$, $\Delta s = \dfrac{2{,}00\,\text{m}}{2} = 1{,}00\,\text{m}$ ja $s_\text{N} = 3{,}00\,\text{m} + 1{,}00\,\text{m} = 4{,}00\,\text{m}$. b) Voimakas ääni syntyy ensimmäisenä, kun $\Delta s = \lambda_2$. Silloin $f_2 = \dfrac{340\,\text{m/s}}{1{,}00\,\text{m}} = 340\,\text{Hz}$.
+**Vastaus:** b) $340\,\text{Hz}$. Vastauksessa on kolme merkitsevää numeroa kuten äänen nopeudessa. a) Kaiutin N on $4{,}00\,\text{m}$:n päässä.
+**Mallivastaus:** c) Matkaero $1{,}00\,\text{m}$ on puolikas aallonpituus vain taajuudella $170\,\text{Hz}$ ja taajuuksilla, jotka ovat sen parittomia monikertoja, kuten $510\,\text{Hz}$. Taajuudella $340\,\text{Hz}$ ääni on voimakas. Järjestely siis vaimentaa vain tiettyjä taajuuksia ja vain tietyssä kohdassa. Melussa on kuitenkin monta taajuutta, ja kuulija liikkuu. Vastamelukuulokkeissa mikrofoni mittaa melun. Kaiutin tuottaa korvan viereen aallon, joka on käännetty vastakkaiseen vaiheeseen. Silloin matkaero on lähes nolla ja vaihe-ero on puoli jaksoa kaikilla taajuuksilla. Aallot heikentävät toisiaan kuulijan korvan kohdalla.
+**Järkevyys:** Tarkistus: taajuudella $340\,\text{Hz}$ aallonpituus on $1{,}00\,\text{m}$ ja $\tfrac{\Delta s}{\lambda} = \tfrac{1{,}00\,\text{m}}{1{,}00\,\text{m}} = 1$, joten ääni on voimakas. Taajuudella $170\,\text{Hz}$ suhde on $0{,}5$ ja ääni on hiljainen. Näiden välissä suhde kasvaa tasaisesti puolesta ykköseen.
+
+## fy5-12-L3-05
+**Annettu:** kaiuttimien väli $d = 1{,}00\,\text{m}$, viivan etäisyys kaiuttimista $L = 4{,}00\,\text{m}$, kaiuttimet kohdissa $y = \pm 0{,}50\,\text{m}$, hiljaiset kohdat taulukosta $y_1 = 0{,}82\,\text{m}$ ja $y_2 = 3{,}01\,\text{m}$, $v = 340\,\text{m/s}$
+**Kysytty:** äänen taajuus $f$ hertseinä
+**Periaate:** Kuulijan etäisyydet kaiuttimiin saadaan Pythagoraan lauseella. Niiden erotus on matkaero. Hiljaisissa kohdissa interferenssi on heikentävä, $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$. Keskinormaalilla $y = 0$ matkaero on nolla ja ääni on voimakas. Kun $y$ kasvaa, matkaero kasvaa tasaisesti. Siksi ensimmäinen hiljainen kohta vastaa lukua $n = 0$ ja seuraava lukua $n = 1$.
+**Kaava:** $s_1 = \sqrt{L^2 + (y + 0{,}50\,\text{m})^2}$ ja $s_2 = \sqrt{L^2 + (y - 0{,}50\,\text{m})^2}$, $\Delta s = s_1 - s_2$, $\lambda = 2\Delta s$ ja $f = \dfrac{v}{\lambda}$
+**Muunnokset:** Ei tarvita: kaikki pituudet ovat metreinä.
+**Sijoitus:** Kohdassa $y_1 = 0{,}82\,\text{m}$: $s_1 = \sqrt{(4{,}00\,\text{m})^2 + (1{,}32\,\text{m})^2} = 4{,}212\,\text{m}$ ja $s_2 = \sqrt{(4{,}00\,\text{m})^2 + (0{,}32\,\text{m})^2} = 4{,}013\,\text{m}$, joten $\Delta s = 4{,}212\,\text{m} - 4{,}013\,\text{m} = 0{,}199\,\text{m}$, $\lambda = 2 \cdot 0{,}199\,\text{m} = 0{,}399\,\text{m}$ ja $f = \dfrac{340\,\text{m/s}}{0{,}399\,\text{m}} = 852{,}6\,\text{Hz}$. Tarkistus kohdassa $y_2 = 3{,}01\,\text{m}$: $s_1 = 5{,}322\,\text{m}$, $s_2 = 4{,}722\,\text{m}$ ja $\Delta s = 0{,}599\,\text{m} = \tfrac{3}{2}\lambda$, joten $\lambda = 0{,}400\,\text{m}$ ja $f = \dfrac{340\,\text{m/s}}{0{,}400\,\text{m}} = 850{,}9\,\text{Hz}$.
+**Vastaus:** $8{,}5 \cdot 10^{2}\,\text{Hz}$ eli $850\,\text{Hz}$. Vastauksessa on kaksi merkitsevää numeroa: kaksi arviota $853\,\text{Hz}$ ja $851\,\text{Hz}$ eroavat alle prosentin. Matkaero on kahden lähes yhtä suuren etäisyyden erotus, joten sen tarkkuus on huonompi kuin etäisyyksien.
+**Mallivastaus:** b) Keskinormaalilla $y = 0$ matkaero on nolla ja ääni on voimakas. Kun $y$ kasvaa, matkaero kasvaa nollasta. Ensimmäinen heikentävän interferenssin ehto, jonka se saavuttaa, on $\Delta s = \tfrac{1}{2}\lambda$, siis $n = 0$. Seuraava hiljainen kohta vaatii matkaeroksi $\tfrac{3}{2}\lambda$, siis $n = 1$. Niiden välissä on voimakkaan äänen kohta $\Delta s = \lambda$. Toinen kohta antaa matkaeron $0{,}599\,\text{m}$. Se on kolme kertaa ensimmäinen matkaero $0{,}199\,\text{m}$ ($\tfrac{0{,}599}{0{,}199} = 3{,}0$), kuten luvuilla $\tfrac{3}{2}\lambda$ ja $\tfrac{1}{2}\lambda$ pitää. Jos kohta $y_1$ olisi ollut $n = 1$, suhde olisi ollut $\tfrac{5}{3}$ eikä $3$.
+**Järkevyys:** Aallonpituus $0{,}400\,\text{m}$ on selvästi pienempi kuin kaiuttimien väli $1{,}00\,\text{m}$. Siksi matkaero voi saavuttaa arvon $\tfrac{3}{2}\lambda = 0{,}60\,\text{m} < d$, ja hiljaisia kohtia on ainakin kaksi. Arvio $\Delta s \approx \dfrac{dy}{L} = \dfrac{1{,}00\,\text{m} \cdot 0{,}82\,\text{m}}{4{,}00\,\text{m}} = 0{,}205\,\text{m}$ on lähellä tarkkaa arvoa $0{,}199\,\text{m}$.

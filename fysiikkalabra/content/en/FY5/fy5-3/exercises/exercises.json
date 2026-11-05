@@ -39,6 +39,52 @@
       "answer": 7680,
       "unit": "m/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-3-L1-06",
+      "level": 1,
+      "text": "A small body moves along a circular path at a constant speed. Which of the following statements about the direction of the velocity of the body is correct?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The velocity is along the tangent of the path, because the body moves in the direction of the path at every moment.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The velocity points towards the centre, because the body is continually turning towards the centre of the circle.",
+          "feedback": "The body does not move towards the centre but stays at the same distance from it all the time. It is the net force acting on the body that points towards the centre, not the velocity."
+        },
+        {
+          "text": "The velocity points away from the centre, because a force pushing outwards acts on the body.",
+          "feedback": "No force pushes the body outwards. If the string broke, the body would continue straight in the direction of its velocity at that moment and would not fly away from the centre."
+        },
+        {
+          "text": "The velocity is along the tangent of the path, because the body moves in the direction of the path at every moment.",
+          "feedback": "Correct: the velocity is always in the direction of the motion, and on a circular path it is perpendicular to the radius, that is, along the tangent of the path. The direction turns as the body goes round, so the velocity changes even though the speed stays the same.",
+          "correct": true
+        },
+        {
+          "text": "The direction of the velocity stays fixed, because in uniform motion the direction also stays the same.",
+          "feedback": "Here uniform means only that the speed stays the same. Velocity is a vector, and its direction keeps turning as the body goes round the path."
+        }
+      ]
+    },
+    {
+      "id": "fy5-3-L1-07",
+      "level": 1,
+      "text": "The crankshaft of a car engine rotates at the rotation frequency $3000\\,\\tfrac{1}{\\text{min}}$. How long does one revolution take? Give the answer in seconds.",
+      "answer": 0.02,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-3-L1-08",
+      "level": 1,
+      "text": "The tip of the minute hand of a wall clock is $12\\,\\text{cm}$ from the axis of the hand. The hand makes one revolution in an hour. What is the speed of the tip of the hand? Give the answer in mm/s.",
+      "answer": 0.21,
+      "unit": "mm/s",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,6 +119,95 @@
       "answer": 25,
       "unit": "m/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-3-L2-05",
+      "level": 2,
+      "text": "The period of a roundabout is to be determined accurately. A student measures with a clock five times the time $t_{10}$ that ten consecutive revolutions take (example data). A seat at the edge of the roundabout is $2.1\\,\\text{m}$ from the axis.\n\na) Calculate the period $T$ from the mean of the measurements and explain why many revolutions are measured at once.\n\nb) Calculate the speed $v$ of the seat.\n\nThe answer box takes the result of part b).",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 3.2,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Times for ten revolutions (example data)",
+        "columns": [
+          "$n$",
+          "$t_{10}\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "41.2"
+          ],
+          [
+            "2",
+            "40.6"
+          ],
+          [
+            "3",
+            "41.8"
+          ],
+          [
+            "4",
+            "40.9"
+          ],
+          [
+            "5",
+            "41.5"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-3-L2-06",
+      "level": 2,
+      "text": "The table gives the approximate radii $r$ of the orbits of three satellites orbiting the Earth, measured from the centre of the Earth, and their periods $T$ (example data, rounded values). Assume that the orbits are circles.\n\na) Calculate the speed of each satellite in km/s.\n\nb) What does the data tell about the connection between the size of the orbit and the speed: is a satellite farther away faster or slower?\n\nThe answer box takes the speed of the geostationary satellite from part a).",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 3.07,
+      "unit": "km/s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Orbits of satellites (example data)",
+        "columns": [
+          "Orbit",
+          "$r\\,(10^{6}\\,\\text{m})$",
+          "$T\\,(\\text{min})$"
+        ],
+        "rows": [
+          [
+            "Low",
+            "6.92",
+            "95.5"
+          ],
+          [
+            "Navigation",
+            "26.56",
+            "717.9"
+          ],
+          [
+            "Geostat.",
+            "42.16",
+            "1436"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-3-L2-07",
+      "level": 2,
+      "text": "A student calculates the speed of the rim of a car tyre. The diameter of the tyre is $64\\,\\text{cm}$ and it rotates at the rotation frequency $8.0\\,\\tfrac{1}{\\text{s}}$.\n\nThe solution of the student: “I substitute into the formula $v = 2\\pi r f$ the values $0.64\\,\\text{m}$ and $8.0\\,\\tfrac{1}{\\text{s}}$, which gives $v = 32\\,\\text{m/s}$.”\n\na) Find the mistake of the student and explain how it affects the result.\n\nb) Calculate the correct speed of the rim of the tyre.\n\nThe answer box takes the result of part b).",
+      "kind": [
+        "error"
+      ],
+      "answer": 16,
+      "unit": "m/s",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -98,6 +233,52 @@
       "text": "The radius of the front sprocket of a bicycle is $10.0\\,\\text{cm}$ and the radius of the rear sprocket $4.0\\,\\text{cm}$. The chain moves at the same speed on the rim of both sprockets. The rear sprocket and the rear wheel turn together, and the radius of the rear wheel is $0.34\\,\\text{m}$.\n\nThe cyclist pedals so that the front sprocket rotates at the rotation frequency $1.0\\,\\tfrac{1}{\\text{s}}$.\n\nWhat is the speed of the bicycle when the tyre does not slip against the ground? Give the answer in km/h.",
       "answer": 19,
       "unit": "km/h",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-3-L3-04",
+      "level": 3,
+      "text": "Rockets are often launched eastwards from near the equator, because the rotation of the Earth gives them extra speed. The table gives the latitude $\\varphi$ of three launch sites (rounded values).\n\nModel the Earth as a sphere of radius $R = 6371\\,\\text{km}$ that makes one revolution in the period $T = 86\\,164\\,\\text{s}$. A place at latitude $\\varphi$ goes round the axis of the Earth along a circle of radius $r = R\\cos\\varphi$.\n\na) Calculate the speeds of the launch sites due to the rotation of the Earth.\n\nb) By how many metres per second greater a speed does Kourou give to a rocket launched eastwards than Plesetsk?\n\nc) What percentage of the speed in low orbit, $7.7\\,\\text{km/s}$, is the speed obtained from Kourou? Explain why the speeds of the places differ although all of them make a revolution in the same time.\n\nThe answer box takes the result of part b).",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 250,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Latitudes of launch sites",
+        "columns": [
+          "Launch site",
+          "$\\varphi\\,({}^\\circ)$"
+        ],
+        "rows": [
+          [
+            "Kourou",
+            "5.2"
+          ],
+          [
+            "Cape Canaveral",
+            "28.5"
+          ],
+          [
+            "Plesetsk",
+            "62.7"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-3-L3-05",
+      "level": 3,
+      "text": "When a CD is played, it rotates so that the reading laser moves along the groove at the constant speed $v = 1.2\\,\\text{m/s}$. The groove is a tight spiral that starts at the distance $r_1 = 25\\,\\text{mm}$ from the centre of the disc and ends at the distance $r_2 = 58\\,\\text{mm}$. The spacing between adjacent turns of the groove is $1.6\\,\\mu\\text{m}$ (example data, typical values).\n\na) Calculate the rotation frequency of the disc in $\\tfrac{1}{\\text{min}}$ at the start and at the end of the groove.\n\nb) Assume that the radius of the groove grows steadily from turn to turn, so that the length of the groove is the number of turns times the circumference of the circle of the mean radius $r_{\\text{av}}$. Calculate the number of turns of the groove, the length of the groove and the playing time of the disc in minutes.\n\nc) Explain why the rotation frequency of the disc must decrease during playing.\n\nThe answer box takes the playing time from part b).",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 75,
+      "unit": "min",
       "tolerance": 0.02
     }
   ]

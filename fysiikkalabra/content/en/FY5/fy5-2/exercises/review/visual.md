@@ -1,16 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: 817dcbb4b47b4418
+CONTENT-HASH: 7375d57f4d506db5
+Mode: full
+Round: 1
 
 ## Blocking
 (none)
+
+## Fixed
+- L3-04: "acts on the ladder line" -> "acts along the ladder" (calque of Finnish "suoralla").
+- solutions L2-05: plank subscripts m_L, G_L -> m_p, G_p (as in all other plank solutions; L is also the length).
+- solutions L2-07: reasonableness sentence split into readable clauses (same formulas).
 
 ## Polish
 - None.
 
 ## Checked
-- Captures opened: contact-5 (level 1 and 2 solutions), contact-6 (level 2 end, level 3, shelf and sign figures), fy5-2-open-exercises-1280-*.
-- Formulas, units and decimal points render correctly; figure labels English ("front edge", "cable", "sign", "rod").
-- Delta: exercises/ unchanged since 20d2cb7 (git diff); the hash changed only because figures.json gained the seesaw figure words (keinu-voimat, en: subscript c); the figures used by the exercises (hylly, kyltti) and their words are untouched, and the new subscript key 'l' is used only by the seesaw diagram. Verdict stands.
+- Captures opened: fy5-2-open-exercises-L2-1280-5, L2-1280-8, L3-1280-6 (en) and L3-1280-4 (fi-easy); formulas, units and decimal marks render correctly, tables and captions fit.
+- Data table captions translated; table cells numerically identical to fi.
+- No new figures in the new tasks beyond the Finnish; no Finnish text visible in en.
 
 ## Scores
-illustrations 5 · typography 5 · English 5 · accessibility 4
+illustrations 5 · typography 5 · language 5 · accessibility 4

@@ -1,12 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: b30fa233ef2dff5c
+CONTENT-HASH: 52fe102bfba8455b
+Mode: full
+Round: 1
 
 ## Blocking
+
+## Fixed
+- None needed: the translation text already matches the reviewed Finnish.
 
 ## Polish
 
 ## Checked
-- Each task keeps the situation first and the question last as its own sentence; contexts (toy, bookcase pendulum, science centre, air track, Mars, car, pendulum clock) translated naturally.
-- Solutions follow Given / Find / Principle / Formula / Conversions / Substitution / Answer / Reasonableness, symbols first, with significant-figure reasons, as in Finnish.
-- L3-03 wording made unambiguous (spring season vs spring).
-- Captures: contact-5 (#58–#60), open-exercises-1280 series via contact sheet.
+- Concept tasks L1-06..08: each wrong choice keeps its targeted misconception and its feedback explains why it fails, as in Finnish.
+- Data tasks L2-05..07 and L3-04: task text keeps the stepwise instructions (calculate, plot, fit, read slope) and the answer-box sentence.
+- L3-05: parts a) to c) and the box instruction unchanged; solution keeps the three ideas.
+- Reading level suits the course; terms (simple pendulum, spring constant, starting angle) used consistently with the lesson.

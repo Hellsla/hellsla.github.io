@@ -1,13 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: f2dee96a87e3c32d
+CONTENT-HASH: e262fda17cca6039
+Mode: full (translation review against the reviewed Finnish set)
+Round 2
 
 ## Blocking
 (none)
+
+## Fixed
+(none needed: the plain Finnish already matched fi in every number, flag and choice, with short sentences)
 
 ## Polish
 (none)
 
 ## Checked
-- exercises.json and solutions.md against the Finnish: all twelve tasks, answers, units and tolerances identical; every number identical by script.
-- Recomputed: 340.59 m/s, 7.556 mm, 588 Hz, 397.46 Hz; 259 Hz, 3.70 m, 697.79 Hz, 23.07 m/s; 27.82 m/s, 444 Hz, clarinet odd harmonics of 147 Hz.
-- Split solution sentences keep every reason (sign choice, unit conversions, significant-figure reasons, reasonableness).
+- Compared by script with fi: ids, answers, units, tolerances, correct flags, choice order and every table cell of the 8 new tasks identical; decimal comma in text and solutions, point in tables as in fi.
+- Solution formulas identical to fi in all new tasks; check_i18n fi-easy shows no fy5-14 errors.
+- Sentences short; terms explained where needed (huojunta period in L1-08, FFT spectrum in L2-06, Doppler shift twice in L3-04); language matches the fi-easy style of the other chapters.
