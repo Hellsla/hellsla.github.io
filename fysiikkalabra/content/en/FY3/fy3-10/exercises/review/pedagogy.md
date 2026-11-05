@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: c8e4ec033bea480a
+CONTENT-HASH: cbc54e44b941aaac
 Mode: full (translation review against the reviewed Finnish set, teacher procedure 2026-10-28)
-Round 1
+Round 2
 
 ## Blocking
 (none)
 
-## Fixed
-- (none needed)
-
 ## Polish
-- L2-05 / L3-04 text: long multi-part tasks, as in fi; the 'answer box takes part b)' sentence keeps the focus clear.
+(none)
 
 ## Checked
-- Hints, steps and feedback of the new tasks keep the same scaffolding as fi (wrong-choice feedback names the misconception; error-finding L1-08 intact).
-- Natural English, same register as the rest of the set; formulas and symbols as in fi.
-- Answer-box instruction sentences present in L2-05, L2-06, L3-04, L3-05 as in fi.
-- check_i18n.py en: 0 errors.
+- fy3-10-L2-08 (en): same task structure and scaffolding as fi; each distractor feedback names its misconception and does not give the answer away before the choice.
+- Language: natural English, decimal point, same register as the rest of the set .
+- Workload and level fit L2; solution is learnable (staged, with a reasonableness check).

@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 182fdd9803837d67
+CONTENT-HASH: 73e42d2dc825c95e
+Mode: full (translation review against the reviewed Finnish set, teacher procedure 2026-10-28)
+Round 2
 
 ## Blocking
 (none)
 
-## Fixed
-- none needed
-
 ## Polish
-- None.
+(none)
 
 ## Checked
-- Same levels, task order, choices, feedback logic and staged solutions as the Finnish; nothing added or dropped. Exactly one correct option in L1-06, L1-07 and L2-06; wrong options keep their reason-why feedback.
-- English is natural and at the right level; sentence length and wording of the multi-part L3-04 and L3-05 tasks match the Finnish, including the "write the result of part b)" instruction.
-- Data tasks keep the "example data" framing, captions and column headers.
+- fy3-11-L2-08 (en): same task structure and scaffolding as fi; each distractor feedback names its misconception and does not give the answer away before the choice.
+- Language: natural English, decimal point, same register as the rest of the set .
+- Workload and level fit L2; solution is learnable (staged, with a reasonableness check).

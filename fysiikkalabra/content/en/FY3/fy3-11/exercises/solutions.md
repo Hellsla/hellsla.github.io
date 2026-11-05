@@ -241,3 +241,14 @@ c) The share that became work is $\tfrac{W_\text{g}}{Q} = \tfrac{300\,\text{J}}{
 **Answer:** b) $\Delta U = 0.74\,\text{kJ}$, two significant figures, because the power $260\,\text{W}$ and the time $4.0\,\text{s}$ are given with two figures. This number goes in the answer box.
 **Justification c):** About $29\,\%$ of the heat became work, and the remaining about $71\,\%$ stayed as the internal energy of the air, so the air warmed up. This fits air: for a diatomic gas at constant pressure the share of the work is about $\tfrac{2}{7} \approx 29\,\%$ of the heat received. A single expansion is not a heat engine, because an engine repeats its work cycle after cycle. To bring the piston back to the start, the air has to be cooled and compressed, and in the cooling heat is transferred to the colder surroundings. The work share $29\,\%$ of one expansion is therefore not the efficiency of a cycle: that is $\eta = W/Q_1$, where the work is $W = Q_1 - Q_2$.
 **Reasonableness:** The change in internal energy is positive and smaller than the heat, $0 < 740\,\text{J} < 1040\,\text{J}$, as it should be when a gas expands and receives heat. Energy balance: $740\,\text{J} + 300\,\text{J} = 1040\,\text{J}$. The speed of the piston, $3.0\,\text{cm/s}$, is slow, so the motion of a lightly moving piston is calm.
+
+## fy3-11-L2-08
+**Find:** which engine has the greater efficiency $\eta$ and why.
+**Principle:** The efficiency of a heat engine is the fraction of the heat taken from the hot source that becomes work in a cycle, $\eta = W/Q_1$. So the efficiency depends on both the work and the absorbed heat, not on only one of them.
+**Model answer:** The efficiency of engine B is greater, because the same work is obtained from a smaller absorbed heat. Let us calculate both fractions:
+
+Engine A: $\eta_\text{A} = \dfrac{120\,\text{kJ}}{400\,\text{kJ}} = 0.30$
+
+Engine B: $\eta_\text{B} = \dfrac{120\,\text{kJ}}{300\,\text{kJ}} = 0.40$
+
+The engines do the same work, but that does not make the efficiency the same: the extra $100\,\text{kJ}$ of heat taken by engine A is not converted into work but passes to the colder surroundings ($Q_2 = Q_1 - W$, that is, $280\,\text{kJ}$ and $180\,\text{kJ}$). The size of the absorbed heat alone does not decide either, and the comparison needs the fraction $W/Q_1$. The result is reasonable: both efficiencies stay below $100\,\%$, as they must for a heat engine.
