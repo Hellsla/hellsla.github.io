@@ -1,0 +1,1189 @@
+{
+ "intro": "Koe kattaa koko moduulin: tasavirtapiirit ja mittaukset, Ohmin laki, vastusten kytkennät ja Kirchhoffin lait, sähköteho ja sähköenergia, lähdejännite ja akut, Coulombin laki, homogeeninen sähkökenttä ja potentiaali, kondensaattori, diodi ja LED sekä sähköturvallisuus. Käytä tarvittaessa arvoja $g = 9{,}81\\,\\text{m/s}^2$, alkeisvaraus $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$ ja Coulombin lain vakio $k = 8{,}99 \\cdot 10^{9}\\,\\text{N} \\cdot \\text{m}^2/\\text{C}^2$. Jännitelähteiden sisäinen resistanssi on merkityksetön, ellei tehtävässä toisin sanota. Pisteytyksessä sama virhe vähentää pisteitä vain kerran: jos jatkat väärällä välituloksella oikein, saat myöhemmistä vaiheista pisteet.",
+ "minutes": 120,
+ "max_points": 70,
+ "sections": [
+  {
+   "title": "Osa 1: Perusosaaminen",
+   "tasks": [
+    "fy6-k1"
+   ]
+  },
+  {
+   "title": "Osa 2: Perustehtävät",
+   "choose": 2,
+   "tasks": [
+    "fy6-k2",
+    "fy6-k3",
+    "fy6-k4",
+    "fy6-k5"
+   ]
+  },
+  {
+   "title": "Osa 3: Soveltavat tehtävät",
+   "choose": 1,
+   "tasks": [
+    "fy6-k6",
+    "fy6-k7"
+   ]
+  }
+ ],
+ "tasks": [
+  {
+   "id": "fy6-k1",
+   "title": "Monivalinnat",
+   "text": "Valitse jokaisessa kohdassa yksi vaihtoehto. Oikea vastaus on $2$ p, väärä tai puuttuva $0$ p.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "choice",
+     "points": 2,
+     "text": "Paristo, lamppu ja kaksi virtamittaria on kytketty sarjaan samaan silmukkaan. Mittari $\\text{A}_1$ on pariston plusnavan ja lampun välissä, ja mittari $\\text{A}_2$ on lampun ja pariston miinusnavan välissä. Mittari $\\text{A}_1$ näyttää $0{,}30\\,\\text{A}$. Mitä mittari $\\text{A}_2$ näyttää?",
+     "options": [
+      "$0\\,\\text{A}$",
+      "noin $0{,}15\\,\\text{A}$",
+      "$0{,}30\\,\\text{A}$",
+      "enemmän kuin $0{,}30\\,\\text{A}$"
+     ],
+     "correct": 2,
+     "tag": "concept"
+    },
+    {
+     "id": "b",
+     "kind": "choice",
+     "points": 2,
+     "text": "Opiskelija haluaa mitata lampun virran, mutta kytkee virtamittarin vahingossa lampun napoihin eli rinnan lampun kanssa. Mitä tapahtuu?",
+     "options": [
+      "Lamppu sammuu, ja mittarin läpi kulkee suuri virta.",
+      "Mittari näyttää lampun virran oikein, mutta lukema on epätarkka.",
+      "Mittari näyttää nollaa, eikä lampun kirkkaus muutu lainkaan.",
+      "Lamppu palaa entistä kirkkaammin, koska virta kasvaa."
+     ],
+     "correct": 0,
+     "tag": "experiment"
+    },
+    {
+     "id": "c",
+     "kind": "choice",
+     "points": 2,
+     "text": "Käytössä on samanlaisia vastuksia, joiden resistanssi on $R$. Kytkennässä I kaksi vastusta on sarjassa. Kytkennässä II kaksi vastusta on rinnan. Kytkennässä III yhden vastuksen kanssa on sarjassa kahden rinnakkaisen vastuksen ryhmä. Missä järjestyksessä kytkentöjen kokonaisresistanssit ovat pienimmästä suurimpaan?",
+     "options": [
+      "I, II, III",
+      "II, III, I",
+      "II, I, III",
+      "III, II, I"
+     ],
+     "correct": 1,
+     "tag": "concept"
+    },
+    {
+     "id": "d",
+     "kind": "choice",
+     "points": 2,
+     "text": "Kuvan piirissä lamput ovat samanlaisia, ja niiden resistanssi oletetaan vakioksi. Pariston sisäinen resistanssi on merkityksetön. Kytkin K on aluksi auki. Miten lamppujen $L_1$ ja $L_2$ kirkkaus muuttuu, kun kytkin suljetaan?",
+     "options": [
+      "$L_1$ ei muutu, ja $L_2$ himmenee.",
+      "Kumpikaan lamppu ei muutu.",
+      "$L_1$ himmenee, ja $L_2$ kirkastuu.",
+      "$L_1$ kirkastuu, ja $L_2$ himmenee."
+     ],
+     "correct": 3,
+     "tag": "concept",
+     "figure": "fy6-koe/fy6-k1-switch"
+    },
+    {
+     "id": "e",
+     "kind": "choice",
+     "points": 2,
+     "text": "Vedenkeittimen teho on $2{,}0\\,\\text{kW}$, ja vesi kiehuu $3{,}0$ minuutissa. LED-lampun teho on $8{,}0\\,\\text{W}$, ja se palaa illalla $5{,}0$ tuntia. Mikä pitää paikkansa?",
+     "options": [
+      "Keitin käyttää noin $2{,}5$ kertaa niin paljon energiaa kuin lamppu.",
+      "Lamppu käyttää enemmän energiaa, koska se on päällä kauemmin.",
+      "Keitin käyttää noin $250$ kertaa niin paljon energiaa kuin lamppu.",
+      "Keitin käyttää energiaa $6{,}0\\,\\text{kWh}$, enemmän kuin lamppu."
+     ],
+     "correct": 0,
+     "tag": "math"
+    },
+    {
+     "id": "f",
+     "kind": "choice",
+     "points": 2,
+     "text": "Kuvaajassa on pariston napajännite $U$ paristosta otetun virran $I$ funktiona. Mikä väite pitää paikkansa?",
+     "options": [
+      "Pariston lähdejännite on $1{,}20\\,\\text{V}$.",
+      "Pariston sisäinen resistanssi on $0{,}40\\,\\Omega$.",
+      "Pariston sisäinen resistanssi on $1{,}2\\,\\Omega$.",
+      "Oikosulkuvirta on $1{,}0\\,\\text{A}$, koska kuvaaja päättyy siihen."
+     ],
+     "correct": 1,
+     "tag": "graph",
+     "figure": "fy6-koe/fy6-k1-battery"
+    },
+    {
+     "id": "g",
+     "kind": "choice",
+     "points": 2,
+     "text": "Pienen pallon A varaus on $+3q$ ja pienen pallon B varaus $+q$. Pallot ovat etäisyydellä $r$ toisistaan. Merkitään pallon B palloon A kohdistaman sähköisen voiman suuruutta $F_\\text{A}$ ja pallon A palloon B kohdistaman voiman suuruutta $F_\\text{B}$. Pallojen etäisyys kaksinkertaistetaan. Mikä pitää paikkansa?",
+     "options": [
+      "$F_\\text{A} = 3F_\\text{B}$, ja kumpikin voima pienenee neljäsosaan.",
+      "$F_\\text{A} = F_\\text{B}$, ja kumpikin voima puolittuu.",
+      "$F_\\text{B} = 3F_\\text{A}$, ja kumpikin voima pienenee neljäsosaan.",
+      "$F_\\text{A} = F_\\text{B}$, ja kumpikin voima pienenee neljäsosaan."
+     ],
+     "correct": 3,
+     "tag": "concept"
+    },
+    {
+     "id": "h",
+     "kind": "choice",
+     "points": 2,
+     "text": "Elektroni lähtee levosta tyhjiössä negatiiviselta levyltä ja kiihtyy kahden yhdensuuntaisen levyn välisessä homogeenisessa kentässä positiiviselle levylle. Levyjen välinen jännite pidetään samana, mutta levyjen etäisyys kaksinkertaistetaan. Miten kentän voimakkuus ja elektronin nopeus positiivisella levyllä muuttuvat?",
+     "options": [
+      "Kenttä puolittuu, ja loppunopeus pysyy samana.",
+      "Kenttä puolittuu, ja loppunopeus puolittuu.",
+      "Kenttä pysyy samana, ja loppunopeus kasvaa.",
+      "Kenttä ja loppunopeus pysyvät samoina."
+     ],
+     "correct": 0,
+     "tag": "concept"
+    },
+    {
+     "id": "i",
+     "kind": "choice",
+     "points": 2,
+     "text": "Aluksi varaamaton kondensaattori ladataan paristolla vastuksen kautta. Mikä kuvaajista A–D esittää piirissä kulkevaa virtaa $I$ ajan $t$ funktiona latauksen aikana?",
+     "options": [
+      "kuvaaja A",
+      "kuvaaja B",
+      "kuvaaja C",
+      "kuvaaja D"
+     ],
+     "correct": 2,
+     "tag": "graph",
+     "figure": "fy6-koe/fy6-k1-charging"
+    },
+    {
+     "id": "j",
+     "kind": "choice",
+     "points": 2,
+     "text": "Kodin ryhmäjohto on suojattu $10\\,\\text{A}$:n sulakkeella, ja verkkojännite on $230\\,\\text{V}$. Ryhmän laitteet ovat rinnan, ja niiden tehot ovat ottotehoja verkosta. Missä tapauksessa samaan aikaan päällä olevat laitteet ylikuormittavat ryhmän eli niiden yhteinen virta on suurempi kuin sulakkeen nimellisvirta?",
+     "options": [
+      "kolme $700\\,\\text{W}$:n lämpöpatteria",
+      "pölynimuri $1600\\,\\text{W}$ ja televisio $150\\,\\text{W}$",
+      "mikroaaltouuni $1000\\,\\text{W}$, jääkaappi $150\\,\\text{W}$ ja kahvinkeitin $1000\\,\\text{W}$",
+      "vedenkeitin $2200\\,\\text{W}$ ja leivänpaahdin $900\\,\\text{W}$"
+     ],
+     "correct": 3,
+     "tag": "math"
+    }
+   ],
+   "skills": [
+    "fy6-1",
+    "fy6-2",
+    "fy6-4",
+    "fy6-5",
+    "fy6-7",
+    "fy6-8",
+    "fy6-10",
+    "fy6-11",
+    "fy6-12",
+    "fy6-13",
+    "fy6-15"
+   ],
+   "links": {
+    "concept": "fy6-5",
+    "experiment": "fy6-2",
+    "math": "fy6-7",
+    "graph": "fy6-8"
+   }
+  },
+  {
+   "id": "fy6-k2",
+   "title": "Vastus ja hehkulamppu",
+   "source": "example",
+   "source_note": "Mittaustulokset on laadittu esimerkiksi, eivätkä ne ole oikean mittauksen tuloksia.",
+   "text": "Opiskelija mittasi vastuksen ja pienen hehkulampun ominaiskäyrät. Hän kytki komponentin vuorotellen säädettävään jännitelähteeseen ja mittasi komponentin jännitteen $U$ jännitemittarilla ja virran virtamittarilla. Taulukossa ovat vastuksen virta $I_R$ ja lampun virta $I_\\text{L}$ samoilla jännitteillä.\n\n| $U\\ (\\text{V})$ | $I_R\\ (\\text{mA})$ | $I_\\text{L}\\ (\\text{mA})$ |\n|---|---|---|\n| $0$ | $0$ | $0$ |\n| $0{,}50$ | $28$ | $76$ |\n| $1{,}0$ | $55$ | $112$ |\n| $2{,}0$ | $112$ | $165$ |\n| $3{,}0$ | $166$ | $204$ |\n| $4{,}0$ | $223$ | $241$ |\n| $5{,}0$ | $277$ | $270$ |\n| $6{,}0$ | $334$ | $300$ |",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "graph",
+     "points": 4,
+     "text": "Piirrä molempien komponenttien mittaustuloksista $(I, U)$-kuvaajat samaan koordinaatistoon, virta vaaka-akselille. Sovita kumpaankin pistejoukkoon sopiva malli.",
+     "criteria": [
+      {
+       "key": "graph_axes",
+       "points": 1
+      },
+      {
+       "key": "graph_points",
+       "points": 1,
+       "detail": "Vastuksen ja lampun pisteet erottuvat toisistaan, esimerkiksi eri merkkeinä tai väreinä."
+      },
+      {
+       "key": "graph_fit",
+       "points": 2,
+       "detail": "Vastuksen pisteisiin on sovitettu origon kautta kulkeva suora ja lampun pisteisiin origosta alkava, ylöspäin kaartuva sileä käyrä."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 3,
+     "text": "Määritä vastuksen resistanssi kuvaajasta.",
+     "answer": {
+      "value": 18.0,
+      "unit": "Ω",
+      "tolerance": 0.04
+     },
+     "criteria": [
+      {
+       "key": "graph_read",
+       "points": 2,
+       "detail": "Kulmakerroin luetaan suoralta, esimerkiksi pisteistä $(0;\\ 0)$ ja $(300\\,\\text{mA};\\ 5{,}4\\,\\text{V})$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "Milliampeerit on muunnettu ampeereiksi; $R \\approx 18\\,\\Omega$."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Laske lampun resistanssi, kun sen jännite on $1{,}0\\,\\text{V}$, ja kun se on $6{,}0\\,\\text{V}$. Selitä, miksi resistanssi muuttuu.",
+     "answer": [
+      {
+       "name": "cold",
+       "value": 8.9,
+       "unit": "Ω",
+       "tolerance": 0.02
+      },
+      {
+       "name": "hot",
+       "value": 20.0,
+       "unit": "Ω",
+       "tolerance": 0.02
+      }
+     ],
+     "criteria": [
+      {
+       "text": "Laskee resistanssin jännitteen ja virran suhteena $R = U : I$, ei käyrän jyrkkyydestä.",
+       "tag": "math",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$1{,}0\\,\\text{V}$:ssa $R \\approx 8{,}9\\,\\Omega$ ja $6{,}0\\,\\text{V}$:ssa $R \\approx 20\\,\\Omega$."
+      },
+      {
+       "text": "Selittää, että suurempi virta kuumentaa hehkulangan, ja metallin resistanssi kasvaa lämpötilan noustessa, koska atomien voimakkaampi lämpöliike vaikeuttaa elektronien kulkua.",
+       "tag": "concept",
+       "points": 2
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "calc",
+     "points": 4,
+     "text": "Lamppu ja vastus kytketään sarjaan, ja sarjaankytkentä liitetään $6{,}0\\,\\text{V}$:n jännitelähteeseen. Määritä kuvaajien avulla piirissä kulkeva virta ja lampun jännite.",
+     "answer": [
+      {
+       "name": "I",
+       "value": 0.189,
+       "unit": "A",
+       "tolerance": 0.05
+      },
+      {
+       "name": "U",
+       "value": 2.6,
+       "unit": "V",
+       "tolerance": 0.08
+      }
+     ],
+     "criteria": [
+      {
+       "text": "Perustelee, että sarjaankytkennässä sama virta kulkee molempien läpi ja jännitteet summautuvat Kirchhoffin jännitelain mukaan: $U_R + U_\\text{L} = 6{,}0\\,\\text{V}$.",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "text": "Etsii kuvaajista virran, jolla jännitteiden summa on $6{,}0\\,\\text{V}$, esimerkiksi kokeilemalla eri virtoja tai piirtämällä summakäyrän.",
+       "tag": "graph",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$I \\approx 0{,}19\\,\\text{A}$ ja $U_\\text{L} \\approx 2{,}6\\,\\text{V}$."
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy6-3",
+    "fy6-4",
+    "fy6-5"
+   ],
+   "links": {
+    "graph": "fy6-3",
+    "math": "fy6-3",
+    "concept": "fy6-4"
+   }
+  },
+  {
+   "id": "fy6-k3",
+   "title": "LED-merkkivalo",
+   "source": "example",
+   "text": "Opiskelija rakentaa laitteeseen merkkivalon. Jännitelähteenä on USB-liitäntä, jonka jännite on $5{,}0\\,\\text{V}$. Punaisen LEDin jännite on valmistajan mukaan $2{,}0\\,\\text{V}$, kun sen virta on $10\\text{–}20\\,\\text{mA}$. LEDin virraksi halutaan $15\\,\\text{mA}$, ja LED ja etuvastus kytketään sarjaan.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kuinka suuri etuvastus tarvitaan? Opiskelijalla on vain $220\\,\\Omega$:n vastuksia. Kuinka suuri virta LEDin läpi kulkee, kun hän käyttää sellaista?",
+     "answer": [
+      {
+       "name": "R",
+       "value": 200,
+       "unit": "Ω",
+       "tolerance": 0.02
+      },
+      {
+       "name": "I",
+       "value": 0.0136,
+       "unit": "A",
+       "tolerance": 0.03
+      }
+     ],
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 2,
+       "detail": "Kirchhoffin jännitelaki $U = U_R + U_\\text{D}$ ja Ohmin laki $U_R = RI$, joten $R = \\tfrac{U - U_\\text{D}}{I}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$R = 200\\,\\Omega$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$220\\,\\Omega$:n vastuksella $I \\approx 13{,}6\\,\\text{mA}$."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 4,
+     "text": "Opiskelija tarkistaa virran mittaamalla $220\\,\\Omega$:n etuvastuksen jännitteen yleismittarilla. Lukema on $2{,}98\\,\\text{V}$ alueella $20\\,\\text{V}$, jonka resoluutio on $0{,}01\\,\\text{V}$ ja virheraja $\\pm(0{,}5\\,\\% + 2\\ \\text{numeroa})$. Vastuksen resistanssin toleranssi on $\\pm 5\\,\\%$. Käytä mittarin virherajaa ja vastuksen toleranssia epävarmuuksina. Määritä LEDin virta ja sen epävarmuus. Kumpi epävarmuus vaikuttaa tulokseen enemmän?",
+     "answer": {
+      "value": 0.01355,
+      "unit": "A",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$I = \\tfrac{U_R}{R} \\approx 13{,}5\\,\\text{mA}$."
+      },
+      {
+       "text": "Laskee mittarin virherajan: $\\Delta U \\approx 0{,}035\\,\\text{V}$ eli noin $1{,}2\\,\\%$.",
+       "tag": "experiment",
+       "points": 1
+      },
+      {
+       "key": "uncertainty",
+       "points": 1,
+       "detail": "Suhteelliset epävarmuudet lasketaan yhteen, noin $6\\,\\%$, joten $I = (13{,}5 \\pm 0{,}8)\\,\\text{mA}$. Myös ääriarvomenetelmä hyväksytään."
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Vastuksen toleranssi $5\\,\\%$ vaikuttaa selvästi enemmän kuin mittarin noin $1\\,\\%$."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "figure": "fy6-koe/fy6-k3-circuits",
+     "text": "Opiskelija tarvitsee kaksi samanlaista punaista merkkivaloa ja vertaa kahta kytkentää (kuva). Kytkennässä 1 kummallakin LEDillä on oma $220\\,\\Omega$:n etuvastus, ja haarat ovat rinnan. Kytkennässä 2 LEDit ja $68\\,\\Omega$:n vastus ovat sarjassa. Laske kummassakin kytkennässä lähteestä otettava virta, lähteen antama teho ja se osuus tehosta, joka siirtyy LEDeihin.",
+     "answer": [
+      {
+       "name": "P1",
+       "value": 0.136,
+       "unit": "W",
+       "tolerance": 0.03
+      },
+      {
+       "name": "P2",
+       "value": 0.0735,
+       "unit": "W",
+       "tolerance": 0.03
+      }
+     ],
+     "criteria": [
+      {
+       "text": "Kytkennässä 1 haarojen virrat summautuvat Kirchhoffin virtalain mukaan, $I = 2 \\cdot 13{,}6\\,\\text{mA} \\approx 27\\,\\text{mA}$. Kytkennässä 2 sama virta $\\tfrac{5{,}0\\,\\text{V} - 4{,}0\\,\\text{V}}{68\\,\\Omega} \\approx 14{,}7\\,\\text{mA}$ kulkee kaikkien osien läpi.",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "Lähteen teho $P = UI$: noin $136\\,\\text{mW}$ ja $74\\,\\text{mW}$."
+      },
+      {
+       "text": "LEDien osuus tehosta on kytkennässä 1 noin $40\\,\\%$ ja kytkennässä 2 noin $80\\,\\%$.",
+       "tag": "math",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "word",
+     "points": 3,
+     "text": "LEDien jännite vaihtelee yksilöittäin: kunkin LEDin jännite voi olla $1{,}9\\text{–}2{,}1\\,\\text{V}$. Arvioi, kuinka paljon tämä voi muuttaa LEDien virtaa kummassakin kytkennässä. Kumpaa kytkentää suosittelet? Perustele.",
+     "criteria": [
+      {
+       "text": "Kytkennässä 2 vastuksen jännite on $0{,}8\\text{–}1{,}2\\,\\text{V}$, joten virta on noin $12\\text{–}18\\,\\text{mA}$.",
+       "tag": "math",
+       "points": 1
+      },
+      {
+       "text": "Kytkennässä 1 vastuksen jännite on $2{,}9\\text{–}3{,}1\\,\\text{V}$, joten virta on noin $13{,}2\\text{–}14{,}1\\,\\text{mA}$.",
+       "tag": "math",
+       "points": 1
+      },
+      {
+       "text": "Perusteltu suositus: kytkentä 2 säästää energiaa, mutta kytkennässä 1 virta ja kirkkaus vaihtelevat vähemmän, koska suurempi osa jännitteestä jää vastukselle. Kumpi tahansa hyväksytään, kun valinta perustellaan.",
+       "tag": "communication",
+       "points": 1
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy6-14",
+    "fy6-2",
+    "fy6-5",
+    "fy6-6"
+   ],
+   "links": {
+    "math": "fy6-14",
+    "experiment": "fy6-2",
+    "communication": "fy6-14",
+    "concept": "fy6-5"
+   }
+  },
+  {
+   "id": "fy6-k4",
+   "title": "Ionimoottori",
+   "source": "example",
+   "source_note": "Arvot ovat samaa suuruusluokkaa kuin avaruusluotainten ionimoottoreissa; tilannetta on yksinkertaistettu.",
+   "text": "Avaruusluotaimen ionimoottorissa ksenonatomeista tehdään positiivisia ioneja $\\text{Xe}^+$, joiden varaus on $+e$. Ionit kiihdytetään kahden metalliverkon eli hilan välissä, ja ne lentävät avaruuteen nopeana suihkuna. Hilojen välinen jännite on $1{,}10\\,\\text{kV}$, ja hilojen etäisyys on $0{,}80\\,\\text{mm}$. Ionit tulevat ensimmäiselle hilalle lähes levossa, eikä toisen hilan jälkeen niihin vaikuta sähköistä voimaa. Ksenonionin massa on $2{,}18 \\cdot 10^{-25}\\,\\text{kg}$, ja ionisuihkun sähkövirta on $1{,}76\\,\\text{A}$. Oletetaan, että hilojen välinen sähkökenttä on homogeeninen.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kumpi hila on positiivinen? Kuinka suuri on sähkökentän voimakkuus hilojen välissä, ja kuinka suuri sähköinen voima ioniin vaikuttaa?",
+     "answer": [
+      {
+       "name": "E",
+       "value": 1375000,
+       "unit": "V/m",
+       "tolerance": 0.03
+      },
+      {
+       "name": "F",
+       "value": 2.2e-13,
+       "unit": "N",
+       "tolerance": 0.03
+      }
+     ],
+     "criteria": [
+      {
+       "text": "Perustelee, että positiivinen ioni kiihtyy kentän suuntaan ja kenttä osoittaa positiivisesta negatiiviseen, joten ensimmäinen hila on positiivinen.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$E = \\tfrac{U}{d}$ ja $F = eE$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$0{,}80\\,\\text{mm} = 8{,}0 \\cdot 10^{-4}\\,\\text{m}$; $E \\approx 1{,}4 \\cdot 10^{6}\\,\\text{V/m}$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$F \\approx 2{,}2 \\cdot 10^{-13}\\,\\text{N}$."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kuinka suurella nopeudella ionit lähtevät moottorista? Miksi hilojen etäisyys ei vaikuta tulokseen?",
+     "answer": {
+      "value": 40200,
+      "unit": "m/s",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 2,
+       "detail": "Sähköinen voima tekee ioniin työn $eU$, joka muuttuu liike-energiaksi: $eU = \\tfrac{1}{2}mv^2$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$1{,}10\\,\\text{kV} = 1100\\,\\text{V}$; $v \\approx 4{,}0 \\cdot 10^{4}\\,\\text{m/s}$."
+      },
+      {
+       "text": "Selittää, että suuremmalla etäisyydellä kenttä ja voima pienenevät samassa suhteessa kuin matka kasvaa, joten työ $Fd = eU$ ei muutu.",
+       "tag": "concept",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kuinka monta ionia moottorista lähtee sekunnissa? Kuinka paljon ksenonia moottori käyttää vuorokaudessa?",
+     "answer": [
+      {
+       "name": "N",
+       "value": 1.1e+19,
+       "unit": "1/s",
+       "tolerance": 0.02
+      },
+      {
+       "name": "m",
+       "value": 0.207,
+       "unit": "kg",
+       "tolerance": 0.03
+      }
+     ],
+     "criteria": [
+      {
+       "text": "Perustelee, että virta on sekunnissa kulkeva varaus, joten sekunnissa lähtee $N = \\tfrac{I}{e}$ ionia.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$N \\approx 1{,}1 \\cdot 10^{19}$ ionia sekunnissa."
+      },
+      {
+       "text": "Laskee vuorokauden massan $N \\cdot m \\cdot 86\\,400\\,\\text{s}$.",
+       "tag": "math",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "Noin $0{,}21\\,\\text{kg}$ vuorokaudessa."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "calc",
+     "points": 3,
+     "text": "Kuinka suuri sähköteho tarvitaan ionien kiihdyttämiseen? Näytä, että ionien sekunnissa saama liike-energia on yhtä suuri.",
+     "answer": {
+      "value": 1936,
+      "unit": "W",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$P = UI$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$P \\approx 1{,}9\\,\\text{kW}$."
+      },
+      {
+       "text": "Laskee ionien liike-energian sekunnissa $N \\cdot \\tfrac{1}{2}mv^2 \\approx 1{,}9\\,\\text{kJ}$ ja toteaa sen samaksi, koska jokainen ioni saa energian $eU$.",
+       "tag": "communication",
+       "points": 1
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy6-11",
+    "fy6-12",
+    "fy6-1",
+    "fy6-6"
+   ],
+   "links": {
+    "concept": "fy6-11",
+    "math": "fy6-12",
+    "transfer": "fy6-1",
+    "communication": "fy6-12"
+   }
+  },
+  {
+   "id": "fy6-k5",
+   "title": "Polkupyörän seisontavalo",
+   "source": "example",
+   "source_note": "Kondensaattorin ja valon arvot on laadittu esimerkiksi; ne ovat tyypillisiä seisontavaloille.",
+   "text": "Polkupyörän takavalossa on seisontavalo, joka palaa vielä, kun pyörä on pysähtynyt liikennevaloihin. Ajon aikana napadynamon jännite tasasuunnataan diodeilla, ja se lataa kondensaattorin, jonka kapasitanssi on $0{,}47\\,\\text{F}$, jännitteeseen $4{,}5\\,\\text{V}$. Valmistajan mukaan kondensaattorin suurin sallittu jännite on $5{,}5\\,\\text{V}$. Kun pyörä pysähtyy, punainen LED saa energiansa kondensaattorista. Oletetaan, että valo ottaa kondensaattorista vakiotehon $15\\,\\text{mW}$, kunnes kondensaattorin jännite on laskenut $2{,}0\\,\\text{V}$:iin ja valo sammuu.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 3,
+     "text": "Kuinka suuri on kondensaattorin varaus, ja kuinka paljon energiaa siihen on varastoitunut, kun pyörä pysähtyy?",
+     "answer": [
+      {
+       "name": "Q",
+       "value": 2.115,
+       "unit": "C",
+       "tolerance": 0.02
+      },
+      {
+       "name": "W",
+       "value": 4.76,
+       "unit": "J",
+       "tolerance": 0.02
+      }
+     ],
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$Q = CU$ ja $W = \\tfrac{1}{2}CU^2$ tai $W = \\tfrac{1}{2}QU$."
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$Q \\approx 2{,}1\\,\\text{C}$ ja $W \\approx 4{,}8\\,\\text{J}$."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kuinka paljon energiaa seisontavalo saa kondensaattorista, ja kuinka kauan se palaa?",
+     "answer": {
+      "value": 255,
+      "unit": "s",
+      "tolerance": 0.04
+     },
+     "criteria": [
+      {
+       "text": "Ottaa huomioon, että valo käyttää vain jännitteiden $4{,}5\\,\\text{V}$ ja $2{,}0\\,\\text{V}$ välisen energian, koska kondensaattoriin jää sammumishetkellä energiaa $\\tfrac{1}{2}CU_2^2$.",
+       "tag": "transfer",
+       "points": 2
+      },
+      {
+       "text": "Laskee käytettävissä olevan energian, noin $3{,}8\\,\\text{J}$, ja ajan $t = \\tfrac{W}{P}$.",
+       "tag": "math",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$t \\approx 250\\,\\text{s}$ eli noin $4\\,\\text{min}$."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kuinka suuri virta kondensaattorista kulkee, kun seisontavalo syttyy, ja juuri ennen kuin se sammuu? Selitä tämän avulla, miksi kondensaattorin jännite laskee lopussa nopeammin kuin alussa.",
+     "answer": [
+      {
+       "name": "start",
+       "value": 0.00333,
+       "unit": "A",
+       "tolerance": 0.02
+      },
+      {
+       "name": "end",
+       "value": 0.0075,
+       "unit": "A",
+       "tolerance": 0.02
+      }
+     ],
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$P = UI$, joten $I = \\tfrac{P}{U}$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "Alussa $I \\approx 3{,}3\\,\\text{mA}$ ja lopussa $I \\approx 7{,}5\\,\\text{mA}$."
+      },
+      {
+       "text": "Selittää, että suurempi virta vie kondensaattorista enemmän varausta sekunnissa ja jännite $U = \\tfrac{Q}{C}$ pienenee varauksen mukana, joten jännite laskee lopussa yli kaksi kertaa niin nopeasti kuin alussa.",
+       "tag": "concept",
+       "points": 2
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "calc",
+     "points": 4,
+     "text": "Valmistaja haluaa pidentää paloaikaa. Vaihtoehdossa 1 sama kondensaattori ladataan $5{,}5\\,\\text{V}$:iin. Vaihtoehdossa 2 käytetään $1{,}0\\,\\text{F}$:n kondensaattoria, joka ladataan edelleen $4{,}5\\,\\text{V}$:iin. Laske paloaika kummassakin vaihtoehdossa ja arvioi, kumpi vaihtoehto on parempi.",
+     "answer": [
+      {
+       "name": "t1",
+       "value": 411,
+       "unit": "s",
+       "tolerance": 0.03
+      },
+      {
+       "name": "t2",
+       "value": 542,
+       "unit": "s",
+       "tolerance": 0.03
+      }
+     ],
+     "criteria": [
+      {
+       "key": "calculation",
+       "points": 2,
+       "detail": "Vaihtoehto 1: käytettävissä noin $6{,}2\\,\\text{J}$, paloaika noin $410\\,\\text{s}$; vaihtoehto 2: noin $8{,}1\\,\\text{J}$, paloaika noin $540\\,\\text{s}$."
+      },
+      {
+       "text": "Perustelee tulokset: energia on verrannollinen kapasitanssiin ja jännitteen neliöön, ja kumpikin vaihtoehto käyttää energian $2{,}0\\,\\text{V}$:iin asti.",
+       "tag": "math",
+       "points": 1
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Vaihtoehto 2 on parempi: paloaika on pidempi, eikä kondensaattoria ladata suurimpaan sallittuun jännitteeseensä, jonka ylittyminen dynamon jännitteen vaihdellessa voisi vaurioittaa kondensaattoria."
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy6-13",
+    "fy6-6",
+    "fy6-14"
+   ],
+   "links": {
+    "math": "fy6-13",
+    "transfer": "fy6-13",
+    "concept": "fy6-13",
+    "communication": "fy6-13"
+   }
+  },
+  {
+   "id": "fy6-k6",
+   "title": "Coulombin laki vaa'alla",
+   "source": "example",
+   "source_note": "Mittaustulokset on laadittu esimerkiksi tällaisesta mittauksesta, eivätkä ne ole oikean mittauksen tuloksia.",
+   "figure": "fy6-koe/fy6-k6-setup",
+   "text": "Opiskelija tutki kahden varatun pallon välistä sähköistä voimaa. Kaksi samanlaista metallipinnoitettua palloa, joiden säde on $1{,}0\\,\\text{cm}$, varattiin samanmerkkisiksi koskettamalla niitä samaan varattuun kappaleeseen ja sitten toisiinsa, joten niiden varaukset olivat yhtä suuret. Alempi pallo oli pitkän eristetangon päässä digitaalivaa'an päällä, ja vaaka nollattiin. Ylempi pallo oli kiinni eristetangossa, ja se tuotiin suoraan alemman pallon yläpuolelle (kuva). Opiskelija mittasi pallojen keskipisteiden etäisyyden $r$ viivoittimella $\\pm 1\\,\\text{mm}$:n tarkkuudella ja luki vaa'an lukeman $m$. Vaa'an resoluutio on $0{,}001\\,\\text{g}$.\n\n| $r\\ (\\text{cm})$ | $m\\ (\\text{g})$ |\n|---|---|\n| $3{,}0$ | $0{,}558$ |\n| $4{,}0$ | $0{,}339$ |\n| $5{,}0$ | $0{,}228$ |\n| $6{,}0$ | $0{,}160$ |\n| $8{,}0$ | $0{,}090$ |\n| $10{,}0$ | $0{,}057$ |\n| $12{,}0$ | $0{,}041$ |",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 3,
+     "text": "Miksi vaa'an lukema kasvaa, kun ylempi pallo tuodaan alemman yläpuolelle? Kuinka suuri sähköinen voima alempaan palloon vaikuttaa, kun $r = 5{,}0\\,\\text{cm}$?",
+     "answer": {
+      "value": 0.002237,
+      "unit": "N",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "text": "Selittää, että samanmerkkiset varaukset hylkivät toisiaan, joten alempaan palloon kohdistuu sähköinen voima alaspäin ja vaaka tukee painon lisäksi tätä voimaa.",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$F = mg \\approx 2{,}2\\,\\text{mN}$."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "graph",
+     "points": 5,
+     "text": "Tutki sopivan kuvaajan avulla, miten sähköinen voima riippuu pallojen etäisyydestä.",
+     "criteria": [
+      {
+       "text": "Valitsee muuttujat, joilla riippuvuus on suora: voima $F$ suureen $\\tfrac{1}{r^2}$ funktiona. Myös muu perusteltu suoraksi oikaiseva valinta hyväksytään.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "graph_axes",
+       "points": 1
+      },
+      {
+       "key": "graph_points",
+       "points": 1
+      },
+      {
+       "key": "graph_fit",
+       "points": 1,
+       "detail": "Origon kautta kulkeva suora sopii pisteisiin $r \\ge 5\\,\\text{cm}$; kaksi lyhimmän etäisyyden pistettä jäävät suoran alapuolelle. Opiskelijan oma perusteltu sovitus hyväksytään."
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Voima on kääntäen verrannollinen etäisyyden neliöön, kun $r$ on vähintään noin $5\\,\\text{cm}$; lähempänä voima on mallin ennustetta pienempi."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Määritä kuvaajan avulla pallojen varaus.",
+     "answer": {
+      "value": 2.5e-08,
+      "unit": "C",
+      "tolerance": 0.05
+     },
+     "criteria": [
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "Kulmakerroin $\\approx 5{,}6 \\cdot 10^{-6}\\,\\text{N} \\cdot \\text{m}^2$, esimerkiksi suoran pisteestä $(400\\,\\text{m}^{-2};\\ 2{,}24\\,\\text{mN})$."
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Coulombin lain $F = \\tfrac{kq^2}{r^2}$ mukaan kulmakerroin on $kq^2$."
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$q \\approx 25\\,\\text{nC}$."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "word",
+     "points": 4,
+     "text": "Arvioi, kuinka paljon etäisyyden mittauksen epävarmuus $\\pm 1\\,\\text{mm}$ ja vaa'an resoluutio vaikuttavat voimaan lyhimmällä ja pisimmällä etäisyydellä. Mitkä mittaukset ovat luotettavimpia?",
+     "criteria": [
+      {
+       "text": "Perustelee, että $F \\propto \\tfrac{1}{r^2}$, joten etäisyyden suhteellinen epävarmuus kaksinkertaistuu voimassa.",
+       "tag": "math",
+       "points": 1
+      },
+      {
+       "key": "uncertainty",
+       "points": 1,
+       "detail": "Etäisyyden vaikutus voimaan on $3{,}0\\,\\text{cm}$:ssä noin $7\\,\\%$ ja $12\\,\\text{cm}$:ssä noin $2\\,\\%$."
+      },
+      {
+       "text": "Vaa'an resoluutio $0{,}001\\,\\text{g}$ on $3{,}0\\,\\text{cm}$:ssä alle $0{,}2\\,\\%$ mutta $12\\,\\text{cm}$:ssä noin $2\\,\\%$ lukemasta.",
+       "tag": "experiment",
+       "points": 1
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Etäisyydet noin $5\\text{–}12\\,\\text{cm}$ ovat luotettavimpia, kokonaisepävarmuus noin $4\\,\\%$; lyhimmillä etäisyyksillä etäisyyden epävarmuus kasvattaa suhteellista epävarmuutta. Myös perusteltu rajaus $6\\text{–}10\\,\\text{cm}$ hyväksytään."
+      }
+     ]
+    },
+    {
+     "id": "e",
+     "kind": "word",
+     "points": 4,
+     "text": "Vertaa lyhimmällä etäisyydellä mitattua voimaa b-kohdan suoran ennusteeseen. Laske ero prosentteina, ja arvioi, voiko se johtua mittausepävarmuudesta. Jos ero on merkittävä, selitä se fysikaalisesti. Arvioi, millä ehdolla Coulombin lakia voi käyttää tämän kokeen palloihin.",
+     "criteria": [
+      {
+       "text": "Laskee eron, noin $12\\,\\%$ tai oman sovituksen mukaisen arvon, ja toteaa sen suuremmaksi kuin etäisyyden epävarmuuden vaikutus, noin $7\\,\\%$.",
+       "tag": "math",
+       "points": 1
+      },
+      {
+       "text": "Selittää, että pallot ovat johteita: samanmerkkiset varaukset hylkivät toisiaan pallojen kauimmaisille puolille, joten varausten etäisyys on suurempi kuin $r$ ja voima pienempi.",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "key": "assumptions",
+       "points": 1,
+       "detail": "Coulombin laki pätee pistevarauksille ja tasaisesti varatuille palloille; tässä kokeessa se kelpaa, kun $r$ on monta kertaa pallon säde, noin $r \\ge 5\\,\\text{cm}$."
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy6-10",
+    "fy6-2"
+   ],
+   "links": {
+    "concept": "fy6-10",
+    "transfer": "fy6-10",
+    "graph": "fy6-10",
+    "math": "fy6-10",
+    "experiment": "fy6-2",
+    "communication": "fy6-10"
+   }
+  },
+  {
+   "id": "fy6-k7",
+   "title": "Kotiakusto",
+   "source": "example",
+   "source_note": "Kennojen arvot ovat tyypillisiä litiumrautafosfaattikennoille; talon kulutus ja kaapelin resistanssi on laadittu esimerkiksi.",
+   "text": "Omakotitalossa on aurinkopaneelit ja kotiakusto, johon päivällä tuotettu sähköenergia varastoidaan iltaa varten. Akustossa on $16$ litiumrautafosfaattikennoa sarjassa. Kunkin kennon nimellisjännite on $3{,}20\\,\\text{V}$, kapasiteetti $200\\,\\text{Ah}$ ja sisäinen resistanssi $0{,}50\\,\\text{m}\\Omega$. Akusto on kytketty vaihtosuuntaajaan kaapelilla, jonka johtimien ja liitosten yhteinen resistanssi on $4{,}0\\,\\text{m}\\Omega$, ja kaapeli on suojattu $125\\,\\text{A}$:n sulakkeella. Vaihtosuuntaaja muuttaa akuston tasajännitteen kodin $230\\,\\text{V}$:n verkkojännitteeksi, ja sen hyötysuhde on $95\\,\\%$.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 3,
+     "text": "Kuinka suuri on akuston nimellisjännite? Kuinka paljon energiaa täyteen ladattuun akustoon on varastoitunut?",
+     "answer": [
+      {
+       "name": "U",
+       "value": 51.2,
+       "unit": "V",
+       "tolerance": 0.01
+      },
+      {
+       "name": "W",
+       "value": 10.24,
+       "unit": "kWh",
+       "tolerance": 0.02
+      }
+     ],
+     "criteria": [
+      {
+       "text": "Perustelee, että sarjaan kytkettyjen kennojen jännitteet summautuvat, mutta akuston kapasiteetti on yhden kennon kapasiteetti $200\\,\\text{Ah}$.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$W = UQ$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$U = 51{,}2\\,\\text{V}$ ja $W \\approx 10\\,\\text{kWh}$."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 4,
+     "text": "Talo käyttää illalla kuuden tunnin ajan keskimäärin $1{,}2\\,\\text{kW}$:n tehon. Akustosta saa käyttää enintään $90\\,\\%$ sen energiasta, jotta kennot eivät vaurioidu. Kuinka paljon energiaa akustosta tarvitaan illan aikana? Riittääkö täyteen ladattu akusto?",
+     "answer": {
+      "value": 7.58,
+      "unit": "kWh",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "text": "Laskee talon käyttämän energian $1{,}2\\,\\text{kW} \\cdot 6{,}0\\,\\text{h} = 7{,}2\\,\\text{kWh}$.",
+       "tag": "math",
+       "points": 1
+      },
+      {
+       "text": "Ottaa huomioon vaihtosuuntaajan hyötysuhteen: akustosta tarvitaan $\\tfrac{7{,}2\\,\\text{kWh}}{0{,}95} \\approx 7{,}6\\,\\text{kWh}$.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "text": "Laskee käytettävissä olevan energian $0{,}90 \\cdot 10{,}24\\,\\text{kWh} \\approx 9{,}2\\,\\text{kWh}$.",
+       "tag": "math",
+       "points": 1
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Akusto riittää, ja varaa jää noin $1{,}6\\,\\text{kWh}$."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Hetkellisesti vaihtosuuntaaja ottaa akustosta tehon $5{,}0\\,\\text{kW}$. Arvioi akuston virta nimellisjännitteen avulla. Kuinka suuri teho muuttuu tällöin lämmöksi akuston sisäisessä resistanssissa ja kaapelissa yhteensä?",
+     "answer": [
+      {
+       "name": "I",
+       "value": 97.7,
+       "unit": "A",
+       "tolerance": 0.03
+      },
+      {
+       "name": "P",
+       "value": 114,
+       "unit": "W",
+       "tolerance": 0.06
+      }
+     ],
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$I = \\tfrac{P}{U}$ ja lämpöteho $P_\\text{h} = RI^2$."
+      },
+      {
+       "text": "Laskee akuston sisäisen resistanssin $16 \\cdot 0{,}50\\,\\text{m}\\Omega = 8{,}0\\,\\text{m}\\Omega$, joka on sarjassa kaapelin kanssa.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$I \\approx 98\\,\\text{A}$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$P_\\text{h} \\approx 110\\,\\text{W}$ eli noin $2\\,\\%$ siirrettävästä tehosta."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "calc",
+     "points": 4,
+     "text": "Asentajalta putoaa jakoavain niin, että se koskettaa yhtä aikaa akuston omia napoja ja oikosulkee ne ennen sulaketta. Arvioi oikosulkuvirta. Mitä vaaraa oikosulusta on? Tasajännitteen suojajänniteraja on $120\\,\\text{V}$. Onko akuston napojen koskettaminen paljain käsin vaarallista? Perustele.",
+     "answer": {
+      "value": 6400,
+      "unit": "A",
+      "tolerance": 0.05
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$I_\\text{k} = \\tfrac{E}{R_\\text{s}}$, koska jakoavaimen resistanssi on hyvin pieni."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$I_\\text{k} \\approx 6\\,\\text{kA}$."
+      },
+      {
+       "text": "Oikosulkuvirta kuumentaa jakoavaimen ja kennot hyvin nopeasti: valokaaren, palovammojen ja tulipalon vaara. Siksi sulake on aivan akuston navan vieressä ja työkalut on eristetty.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Akuston jännite, noin $51\\,\\text{V}$, on alle $120\\,\\text{V}$:n, joten kosketus kuivissa oloissa ei tavallisesti aiheuta vaarallista kehon virtaa: vaara on oikosulkuvirta, ei kosketusjännite.",
+       "tag": "transfer",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "e",
+     "kind": "calc",
+     "points": 5,
+     "text": "Samat $16$ kennoa voidaan kytkeä myös $12{,}8\\,\\text{V}$:n akustoksi, jossa on neljä rinnakkaista ryhmää ja kussakin ryhmässä neljä kennoa sarjassa. Arvioi nimellisjännitteen avulla, kuten c-kohdassa, tämän akuston virta sekä kaapelissa ja akuston sisäisessä resistanssissa lämmöksi muuttuvat tehot, kun vaihtosuuntaaja ottaa samaa kaapelia pitkin tehon $5{,}0\\,\\text{kW}$. Arvioi tulosten perusteella, kumpi kytkentä on parempi ja mikä rajoittaa akuston jännitteen nostamista vielä suuremmaksi.",
+     "answer": [
+      {
+       "name": "I",
+       "value": 391,
+       "unit": "A",
+       "tolerance": 0.02
+      },
+      {
+       "name": "Pk",
+       "value": 610,
+       "unit": "W",
+       "tolerance": 0.04
+      },
+      {
+       "name": "Ps",
+       "value": 76,
+       "unit": "W",
+       "tolerance": 0.04
+      }
+     ],
+     "criteria": [
+      {
+       "text": "Laskee virran $\\tfrac{5{,}0\\,\\text{kW}}{12{,}8\\,\\text{V}} \\approx 390\\,\\text{A}$, nelinkertaisen, ja toteaa sen ylittävän sulakkeen nimellisvirran $125\\,\\text{A}$.",
+       "tag": "math",
+       "points": 1
+      },
+      {
+       "text": "Kaapelin lämpöteho $RI^2$ kasvaa $16$-kertaiseksi, noin $610\\,\\text{W}$:iin.",
+       "tag": "math",
+       "points": 1
+      },
+      {
+       "text": "Akuston sisäinen resistanssi on $\\tfrac{4 \\cdot 0{,}50\\,\\text{m}\\Omega}{4} = 0{,}50\\,\\text{m}\\Omega$, joten akuston lämpöteho pysyy samana, noin $76\\,\\text{W}$.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "$51{,}2\\,\\text{V}$:n akusto on parempi: pienempi virta, pienemmät häviöt ja ohuempi kaapeli samalla teholla."
+      },
+      {
+       "text": "Jännitteen noustessa yli $120\\,\\text{V}$:n tasajännitteen kosketus muuttuu vaaralliseksi, joten tarvitaan parempi eristys ja suojaus.",
+       "tag": "concept",
+       "points": 1
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy6-8",
+    "fy6-9",
+    "fy6-6",
+    "fy6-15",
+    "fy6-16"
+   ],
+   "links": {
+    "concept": "fy6-8",
+    "math": "fy6-9",
+    "transfer": "fy6-6",
+    "communication": "fy6-16"
+   }
+  }
+ ]
+}
