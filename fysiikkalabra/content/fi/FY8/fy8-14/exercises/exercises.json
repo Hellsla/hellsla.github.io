@@ -3,6 +3,7 @@
     {
       "id": "fy8-14-L1-01",
       "level": 1,
+      "core": true,
       "text": "Röntgensäde kulkee $6{,}8\\,\\text{cm}$ paksun pehmytkudoskerroksen läpi. Pehmytkudoksen puoliintumispaksuus tälle säteilylle on $3{,}4\\,\\text{cm}$. Kuinka monta prosenttia säteilystä pääsee kudoksen läpi?",
       "answer": 25,
       "unit": "%",
@@ -43,6 +44,7 @@
     {
       "id": "fy8-14-L1-06",
       "level": 1,
+      "core": true,
       "text": "PET-kuvauksessa potilaalle annetaan merkkiainetta, jossa on positroneja lähettävä nuklidi, esimerkiksi fluori-$18$. Miksi juuri positronin lähettäminen sopii kuvaukseen, jossa lähteen paikka halutaan selvittää kehon ulkopuolelta?",
       "kind": [
         "concept"
@@ -119,6 +121,7 @@
     {
       "id": "fy8-14-L2-04",
       "level": 2,
+      "core": true,
       "text": "PET-potilaasta lähtevän säteilyn annosnopeus on heti merkkiaineen ruiskutuksen jälkeen $1{,}0\\,\\text{m}$:n etäisyydellä $30\\,\\mu\\text{Sv/h}$. Hoitaja auttaa potilasta $5{,}0\\,\\text{min}$ ajan $0{,}50\\,\\text{m}$:n etäisyydellä. Kuinka suuren annoksen hoitaja saa? Oletetaan, että potilasta voi pitää pistemäisenä lähteenä ja että annosnopeus pysyy tämän ajan vakiona. Anna vastaus mikrosieverteinä.",
       "answer": 10,
       "unit": "µSv",
@@ -205,6 +208,7 @@
     {
       "id": "fy8-14-L2-07",
       "level": 2,
+      "core": true,
       "text": "PET-ruiskun lyijysuoja mitoitetaan niin, että suojan läpi pääsee enintään $1{,}0\\,\\%$ ruiskun $511\\,\\text{keV}$:n fotoneista. Lyijyn puoliintumispaksuus on $140\\,\\text{keV}$:n fotoneille $0{,}26\\,\\text{mm}$ ja $511\\,\\text{keV}$:n fotoneille $3{,}9\\,\\text{mm}$.\n\nOppilaan ratkaisu: ”Läpi päästettävä osuus on $0{,}010$, joten $\\left(\\tfrac{1}{2}\\right)^{n} = 0{,}010$ ja $n = \\dfrac{\\ln 0{,}010}{\\ln 0{,}5} = 6{,}64$. Paksuus on $d = n \\cdot d_{1/2} = 6{,}64 \\cdot 0{,}26\\,\\text{mm} = 1{,}7\\,\\text{mm}$.”\n\nEtsi oppilaan virhe ja laske lyijysuojan oikea paksuus millimetreinä.",
       "kind": [
         "error",

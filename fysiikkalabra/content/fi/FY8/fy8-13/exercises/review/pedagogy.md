@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: eab7c7c57617b167
-Round: 3
+CONTENT-HASH: cb268624c3e2bab5
+Round: 5 (delta)
 
 ## Blocking
 
 ## Polish
-- fy8-13-L3-04 d) — the $94\,\text{Bq/m}^3 \to 4{,}0\,\text{mSv}$ proportionality is still the anchor of L2-03, L3-02 and L3-04; consider using the reference level $300$ as the anchor in d) so the three tasks differ.
-- fy8-13-L3-04 c) — the task text does not say which seasons make up the heating season; the model answer names them (syksy, talvi, kevät), so add "(syksy, talvi ja kevät)" to the question or accept the unstated assumption.
+- exercises.json core marks — the core path still has no shielding task (half-value thickness: L1-05, L2-04), though the täsmennys names "suojalla". — Optionally also mark L1-05 as core.
+- solutions.md:59 (L2-01 Järkevyys) — a 35-word sentence with the clause in the middle (left as is). — Split it after "4 % siitä".
 
 ## Checked
-- Round 2 Blocking resolved: solutions.md L3-04 c) now gives $(300 + 380 + 260) : 3 \approx 313$ Bq/m³ from the table, above the reference level 300; wording consistent with the 270 annual mean and the 380/270 = 1,4 comparison.
-- L2-05 row label is now "Muu luonnon säteily"; its content is listed in the task text, so the table row no longer wraps; 4,0 + 1,1 + 0,8 = 5,9 and 4,0/5,9 = 68 % still agree with the stored answer.
-- L2-05 plan item "ihmisen vaikutettavissa" remains out of scope at level 2; acceptable.
-- Round 2 Polish on L2-05 applied; no other exercise text changed in the round-3 commit (diff checked), so earlier levels, kinds and solutions are unchanged.
-- Level fit (5/4/3), no duplicates and complete solutions as in rounds 1 and 2.
+- Core is now L1-06, L1-07, L2-02, L2-05. L1-07 brings the w_T effective-dose calculation into the core path, which resolves half of the round 4 item. L1-02 (w_R alone) is now extra practice, which suits it.
+- :134 now uses the same wording as the other three places. "samaa asiaa" at :104 and :149 is clearer for a student.
+- Levels, counts (8/7/5) and answers unchanged.
+- Hash cb268624c3e2bab5 at start and end.

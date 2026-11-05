@@ -3,6 +3,7 @@
     {
       "id": "fy8-2-L1-01",
       "level": 1,
+      "core": true,
       "text": "Heliumkaasuputken spektrissä on vihreä viiva aallonpituudella $502\\,\\text{nm}$. Kuinka suuri on niiden heliumatomin energiatilojen erotus, joiden välinen siirtymä tuottaa tämän viivan? Anna vastaus elektronivoltteina.",
       "answer": 2.47,
       "unit": "eV",
@@ -43,6 +44,7 @@
     {
       "id": "fy8-2-L1-06",
       "level": 1,
+      "core": true,
       "text": "Oppilas katsoo spektroskoopilla valonlähdettä ja näkee jatkuvan värikaistan, jonka päällä on useita kapeita tummia viivoja. Mikä seuraavista selittää tämän spektrin?",
       "kind": [
         "concept"
@@ -118,6 +120,7 @@
     {
       "id": "fy8-2-L2-01",
       "level": 2,
+      "core": true,
       "text": "Vetyatomi siirtyy tilasta $n = 4$, jonka energia on $-0{,}85\\,\\text{eV}$, tilaan $n = 2$, jonka energia on $-3{,}40\\,\\text{eV}$. Mikä on syntyvän fotonin aallonpituus? Anna vastaus nanometreinä.",
       "answer": 486,
       "unit": "nm",
@@ -150,6 +153,7 @@
     {
       "id": "fy8-2-L2-05",
       "level": 2,
+      "core": true,
       "text": "Tuntemattoman kaasupurkauslampun spektristä mitattiin spektroskoopilla kolme kirkasta viivaa: $435{,}7\\,\\text{nm}$ (violetti), $546{,}3\\,\\text{nm}$ (vihreä) ja $577{,}2\\,\\text{nm}$ (keltainen). Taulukossa on neljän alkuaineen kirkkaimpien emissioviivojen aallonpituudet (esimerkkiaineisto).\n\na) Mikä alkuaine lampussa on? Perustele vertaamalla kaikkia kolmea viivaa taulukkoon.\n\nb) Kuinka suuri on lampun vihreän viivan fotonin energia? Anna vastaus elektronivoltteina.\n\nVastauslaatikkoon tulee kohdan b) tulos.",
       "kind": [
         "data",

@@ -3,6 +3,7 @@
     {
       "id": "fy5-10-L1-01",
       "level": 1,
+      "core": true,
       "text": "Pitkän kierrejousen päätä heilutetaan sivuttain, ja jousessa etenee poikittainen aalto, jonka taajuus on $4{,}0\\,\\text{Hz}$ ja aallonpituus $0{,}75\\,\\text{m}$. Kuinka suuri on aallon nopeus?",
       "answer": 3.0,
       "unit": "m/s",
@@ -43,6 +44,7 @@
     {
       "id": "fy5-10-L1-06",
       "level": 1,
+      "core": true,
       "text": "Kierrejousta voi saada värähtelemään kahdella tavalla: sen päätä voi työntää edestakaisin jousen suunnassa tai heiluttaa sivuttain. Mikä väite pitkittäisestä aallosta on oikein?",
       "kind": [
         "concept"
@@ -113,6 +115,7 @@
     {
       "id": "fy5-10-L2-01",
       "level": 2,
+      "core": true,
       "text": "Kuvaajassa on kireän narun yhden kohdan poikkeama ajan funktiona. Narun päätä heilutetaan tasaisesti. Narun valokuvasta on mitattu, että peräkkäisten harjojen väli on $1{,}0\\,\\text{m}$. Lue tarvittava arvo kuvaajasta. Kuinka suuri on aallon nopeus?",
       "figure": "fy5-10/yt-kuvaaja",
       "answer": 2.5,
@@ -191,6 +194,7 @@
     {
       "id": "fy5-10-L2-06",
       "level": 2,
+      "core": true,
       "text": "Opiskelija tutkii kireässä narussa etenevää aaltoa. Narun yhden kohdan $(t, y)$-kuvaajassa peräkkäisten huippujen väli on $0{,}50\\,\\text{s}$. Narun valokuvassa eli $(x, y)$-kuvaajassa peräkkäisten harjojen väli on $1{,}5\\,\\text{m}$.\n\nOpiskelija ratkaisee: ”Huippujen väli on aallonpituus, eli $\\lambda = 0{,}50\\,\\text{m}$. Harjojen väli on jaksonaika, eli $T = 1{,}5\\,\\text{s}$. Siis $v = \\lambda/T = 0{,}33\\,\\text{m/s}$.”\n\nMikä opiskelijan ratkaisussa on virheellistä? Laske aallon oikea nopeus.",
       "kind": [
         "error"

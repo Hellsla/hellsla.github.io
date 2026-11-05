@@ -1,7 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: aea99f1fb4c1726f
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 83c2a5ec2edf0391
+ROUND: delta
 
 ## Blocking
 (none)
@@ -10,9 +9,9 @@ Round 1
 (none)
 
 ## Checked
-- Opened the fi-easy captures of the new tasks (fy8-13-open-exercises-L2-*, L3-*, 1280-*). Data tables render with headings and units as maths, answer box with unit, solution blocks (Annettu/Given ... Reasonableness) laid out like fi.
-- No raw LaTeX, no plain-text symbols, no Finnish in the en captures; fi-easy shows decimal comma in tables and texts.
-- Table cells in JSON keep decimal point as in fi (the page localises them).
+- Captures re-taken with screenshot.py --if-stale (stamp matches the current hash).
+- open-exercises-1280-7: the L1-07 Järkevyys has the new wording, wraps cleanly and has no red KaTeX.
+- The core chip moved to L1-07, the same as fi (stamp is current).
 
 ## Scores
-illustrations n/a - typography 5 - language 5 - accessibility 5
+illustrations n/a · typography 4 · Finnish 5 · accessibility 4

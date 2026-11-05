@@ -3,6 +3,7 @@
     {
       "id": "fy5-4-L1-01",
       "level": 1,
+      "core": true,
       "text": "A car drives round the bend of a motorway slip road at a steady speed of $20\\,\\text{m/s}$. The radius of the bend is $80\\,\\text{m}$. How large is the centripetal acceleration of the car?",
       "answer": 5.0,
       "unit": "m/s²",
@@ -43,6 +44,7 @@
     {
       "id": "fy5-4-L1-06",
       "level": 1,
+      "core": true,
       "text": "A car turns left at a steady speed, and a passenger sitting on the back seat is pressed against the right-hand door. It feels to the passenger as if something were pushing him outwards. What explains this correctly?",
       "kind": [
         "concept"
@@ -116,6 +118,7 @@
     {
       "id": "fy5-4-L2-01",
       "level": 2,
+      "core": true,
       "text": "A cyclist rides through the bottom of a dip in an underpass at a steady speed of $8.0\\,\\text{m/s}$. The combined mass of the cyclist and the bicycle is $80\\,\\text{kg}$, and at the bottom of the dip the radius of the arc of the road is $16\\,\\text{m}$. Air resistance and rolling resistance are neglected. How large is the support force of the road on the bicycle at the bottom of the dip? Give the answer in kilonewtons.",
       "answer": 1.1048,
       "unit": "kN",
@@ -228,6 +231,7 @@
     {
       "id": "fy5-4-L2-07",
       "level": 2,
+      "core": true,
       "text": "A student solved the problem: “A car of mass $850\\,\\text{kg}$ goes through a horizontal bend at a steady speed of $18\\,\\text{m/s}$. The radius of the bend is $75\\,\\text{m}$. How large a friction force must the road exert on the car?”\n\nThe student's solution: “Friction towards the centre of the bend and a centrifugal force outwards act on the car. The centrifugal force is $m\\tfrac{v^2}{r} = 3672\\,\\text{N}$. The net force must point towards the centre and be $m\\tfrac{v^2}{r}$, so the friction must be the net force plus the centrifugal force: $F_\\mu = 3672\\,\\text{N} + 3672\\,\\text{N} = 7344\\,\\text{N}$.”\n\na) Explain what the error in the student's solution is.\n\nb) Calculate the correct friction force.\n\nThe answer box takes the result of part b) in kilonewtons.",
       "kind": [
         "error"

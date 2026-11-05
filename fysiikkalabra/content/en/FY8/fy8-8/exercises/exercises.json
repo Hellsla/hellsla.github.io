@@ -19,6 +19,7 @@
     {
       "id": "fy8-8-L1-03",
       "level": 1,
+      "core": true,
       "text": "Carbon-14 ${}^{14}_{6}\\text{C}$ decays by beta minus decay. What is the atomic number of the daughter nucleus that is formed?",
       "answer": 7,
       "unit": "",
@@ -43,6 +44,7 @@
     {
       "id": "fy8-8-L1-06",
       "level": 1,
+      "core": true,
       "text": "A radioactive nucleus can decay in several ways. Which of the following decays increases the atomic number $Z$ of the nucleus by one and leaves the mass number $A$ unchanged?",
       "kind": [
         "concept"
@@ -106,6 +108,7 @@
     {
       "id": "fy8-8-L2-02",
       "level": 2,
+      "core": true,
       "text": "Bismuth-214 ${}^{214}_{83}\\text{Bi}$ of the uranium series decays by beta minus decay, and the nucleus that is formed immediately decays by alpha decay. What is the atomic number of the nucleus formed after these two decays?",
       "answer": 82,
       "unit": "",
@@ -208,6 +211,7 @@
     {
       "id": "fy8-8-L2-07",
       "level": 2,
+      "core": true,
       "text": "A gamma spectrometer sorts the pulses of the detector into channels according to the height of the pulse, so its channel number is proportional to the energy of the photon. The energy scale is obtained by calibrating the device with sources whose gamma line energies are known. The table gives the channel number of the peak for four lines (example data, energies NNDC NuDat 3). The peak of an unknown source falls on channel $1531$.\n\na) Draw a graph in which $E_\\gamma$ is a function of the channel number, and fit a straight line to the points.\n\nb) Read from the line the energy $E_\\gamma$ of the unknown peak in kiloelectronvolts.\n\nc) Explain why fitting a straight line is better than joining two points.\n\nThe result of part b) is entered in the answer field.",
       "kind": [
         "experiment",

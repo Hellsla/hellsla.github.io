@@ -19,6 +19,7 @@
     {
       "id": "fy8-7-L1-03",
       "level": 1,
+      "core": true,
       "text": "The energy difference of the levels of the laser transition of a ruby laser is $1.79\\,\\text{eV}$. Calculate the wavelength of the laser light in nanometres ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$).",
       "answer": 693,
       "unit": "nm",
@@ -43,6 +44,7 @@
     {
       "id": "fy8-7-L1-06",
       "level": 1,
+      "core": true,
       "text": "An excited atom can emit a photon in two ways: spontaneously or by stimulated emission. What distinguishes stimulated emission from spontaneous emission?",
       "kind": [
         "concept"
@@ -121,6 +123,7 @@
     {
       "id": "fy8-7-L2-02",
       "level": 2,
+      "core": true,
       "text": "The wavelength of a red laser pointer is $650\\,\\text{nm}$ and that of a violet one $405\\,\\text{nm}$. The power of both is $5.0\\,\\text{mW}$. How many times more photons per second does the red laser pointer emit than the violet one?",
       "answer": 1.6,
       "unit": "",
@@ -145,6 +148,7 @@
     {
       "id": "fy8-7-L2-05",
       "level": 2,
+      "core": true,
       "kind": [
         "data",
         "reasoning"

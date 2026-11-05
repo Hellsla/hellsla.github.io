@@ -56,7 +56,7 @@
 **Conversions:** $E = 0.60\,\text{mJ} = 0.60 \cdot 0.001\,\text{J} = 0.00060\,\text{J}$ and $m = 20\,\text{g} = 20 \cdot 0.001\,\text{kg} = 0.020\,\text{kg}$; $1\,\tfrac{\text{J}}{\text{kg}}$ is $1\,\text{Sv}$ when weighted.
 **Substitution:** $H_\text{E} = 0.04 \cdot 1 \cdot \dfrac{0.00060\,\text{J}}{0.020\,\text{kg}} = 0.04 \cdot 0.030\,\text{Sv} = 0.0012\,\text{Sv} = 1.2\,\text{mSv}$
 **Answer:** $1.2\,\text{mSv}$, two significant figures like the energy $0.60\,\text{mJ}$ and the mass $20\,\text{g}$.
-**Reasonableness:** The thyroid's own dose of $30\,\text{mSv}$ is large, but because only a small and fairly insensitive organ is irradiated, the effective dose, which describes the risk to the whole body, is only $4\,\%$ of it.
+**Reasonableness:** The thyroid's own dose of $30\,\text{mSv}$ is large, but because only a small and fairly insensitive organ is irradiated, the effective dose, which estimates the long-term cancer risk to the whole body for an average person, is only $4\,\%$ of it.
 
 ## fy8-13-L2-02
 **Given:** dose rate $\dot{H}_1 = 150\,\mu\text{Sv/h}$ at distance $r_1 = 1.0\,\text{m}$, distance of the workplace $r_2 = 2.5\,\text{m}$, permitted dose $H = 100\,\mu\text{Sv}$
@@ -101,7 +101,7 @@
 ## fy8-13-L3-02
 **Given:** radon concentration of the home $400\,\tfrac{\text{Bq}}{\text{m}^3}$, average concentration $94\,\tfrac{\text{Bq}}{\text{m}^3}$ and the resulting dose $4.0\,\text{mSv}$ per year, other sources $1.9\,\text{mSv}$ per year
 **Asked:** the resident's annual effective dose $H$ from all sources in millisieverts
-**Principle:** Effective doses from different sources can be added together, because they describe the same risk to the whole body. The radon dose is by assumption directly proportional to the concentration, and the other sources give the average dose.
+**Principle:** Effective doses from different sources can be added together, because they estimate the same thing: the long-term cancer risk to the whole body for an average person. The radon dose is by assumption directly proportional to the concentration, and the other sources give the average dose.
 **Formula:** $H_\text{radon} = H_\text{avg} \dfrac{c}{c_\text{avg}}$ and $H = H_\text{radon} + H_\text{other}$, so $H = H_\text{avg} \dfrac{c}{c_\text{avg}} + H_\text{other}$
 **Conversions:** Not needed: the concentrations are in the same unit and the doses in millisieverts.
 **Substitution:** $H = 4.0\,\text{mSv} \cdot \dfrac{400\,\tfrac{\text{Bq}}{\text{m}^3}}{94\,\tfrac{\text{Bq}}{\text{m}^3}} + 1.9\,\text{mSv} = 17.021\,\text{mSv} + 1.9\,\text{mSv} = 18.921\,\text{mSv}$
@@ -131,7 +131,7 @@
 **Conversions:** Not needed: when the equivalent doses are in millisieverts, the effective dose comes out in millisieverts, because the weighting factors are pure numbers.
 **Substitution:** $H_\text{E} = 0.04 \cdot 2.0\,\text{mSv} + 0.12 \cdot 1.0\,\text{mSv} = 0.080\,\text{mSv} + 0.12\,\text{mSv} = 0.20\,\text{mSv}$
 **Answer:** $0.20\,\text{mSv}$, two significant figures like the doses $2.0\,\text{mSv}$ and $1.0\,\text{mSv}$.
-**Reasonableness:** The sum of the weighting factors is only $0.04 + 0.12 = 0.16$, so the effective dose is smaller than the equivalent dose of either organ ($2.0\,\text{mSv}$ and $1.0\,\text{mSv}$). It describes the risk to the whole body, even though only two organs are irradiated.
+**Reasonableness:** The sum of the weighting factors is only $0.04 + 0.12 = 0.16$, so the effective dose is smaller than the equivalent dose of either organ ($2.0\,\text{mSv}$ and $1.0\,\text{mSv}$). It estimates the long-term cancer risk to the whole body for an average person, even though only two organs are irradiated.
 
 ## fy8-13-L1-08
 **Given:** effective dose of the examination $H_1 = 0.10\,\text{mSv}$, average annual dose of a Finn $H_\text{avg} = 5.9\,\text{mSv}$
@@ -146,7 +146,7 @@
 ## fy8-13-L2-05
 **Given:** annual effective doses in the table: radon $4.0\,\text{mSv}$, other natural radiation $1.1\,\text{mSv}$, medical use $0.8\,\text{mSv}$
 **Asked:** a) the sum of the doses $H_\text{tot}$, b) the share of radon in the total dose as a percentage
-**Principle:** Effective doses from different sources are added together, because they describe the same risk to the whole body. The share of radon is its dose divided by the total dose.
+**Principle:** Effective doses from different sources are added together, because they estimate the same thing: the long-term cancer risk to the whole body for an average person. The share of radon is its dose divided by the total dose.
 **Formula:** $H_\text{tot} = H_1 + H_2 + H_3$ and $\text{share} = \dfrac{H_\text{radon}}{H_\text{tot}} \cdot 100\,\%$
 **Conversions:** Not needed: all doses are in millisieverts.
 **Substitution:** a) $H_\text{tot} = 4.0\,\text{mSv} + 1.1\,\text{mSv} + 0.8\,\text{mSv} = 5.9\,\text{mSv}$; b) $\text{share} = \dfrac{4.0\,\text{mSv}}{5.9\,\text{mSv}} \cdot 100\,\% = 67.8\,\%$

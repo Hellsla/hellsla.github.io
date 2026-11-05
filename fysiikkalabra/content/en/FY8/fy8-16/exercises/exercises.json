@@ -3,6 +3,7 @@
     {
       "id": "fy8-16-L1-01",
       "level": 1,
+      "core": true,
       "text": "The wavelength of the blue-green $\\text{H}\\beta$ line of hydrogen in the laboratory is $486.1\\,\\text{nm}$. In the spectrum of a galaxy the same line appears at a wavelength of $492.4\\,\\text{nm}$. What is the redshift $z$ of the galaxy?",
       "answer": 0.01296,
       "unit": "",
@@ -84,6 +85,7 @@
     {
       "id": "fy8-16-L1-08",
       "level": 1,
+      "core": true,
       "text": "The cosmic background radiation arrives almost uniformly from every direction. What explains its origin?",
       "kind": [
         "concept"
@@ -124,6 +126,7 @@
     {
       "id": "fy8-16-L2-02",
       "level": 2,
+      "core": true,
       "text": "The value of the Hubble constant obtained from the Planck satellite's measurements of the background radiation is $H_0 = 67.4\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$. Estimate the age of the universe, assuming that the speed of the expansion has stayed the same. Use $1\\,\\text{Mpc} = 3.086 \\cdot 10^{19}\\,\\text{km}$ and $1\\,\\text{a} = 3.156 \\cdot 10^{7}\\,\\text{s}$. Give the answer in the unit $10^{9}\\,\\text{a}$, that is, in billions of years.",
       "answer": 14.51,
       "unit": "10⁹ a",
@@ -148,6 +151,7 @@
     {
       "id": "fy8-16-L2-05",
       "level": 2,
+      "core": true,
       "text": "Sample data: an astronomer has measured the distance $d$ and the recession speed $v$ of nine galaxies. The results are in the table.\n\na) Draw the $(d, v)$ graph and fit a straight line through the origin to the points. Read the Hubble constant $H_0$ from the slope of the line. Give the answer in the unit $\\tfrac{\\text{km/s}}{\\text{Mpc}}$.\n\nb) The points are not exactly on the line. Which point deviates most from the line in relative terms, and what can the deviation be due to?\n\nEnter the result of part a) in the answer field.",
       "kind": [
         "data",

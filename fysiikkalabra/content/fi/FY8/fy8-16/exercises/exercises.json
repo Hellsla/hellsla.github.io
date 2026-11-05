@@ -3,6 +3,7 @@
     {
       "id": "fy8-16-L1-01",
       "level": 1,
+      "core": true,
       "text": "Vedyn sinivihreän $\\text{H}\\beta$-viivan aallonpituus laboratoriossa on $486{,}1\\,\\text{nm}$. Erään galaksin spektrissä sama viiva näkyy aallonpituudella $492{,}4\\,\\text{nm}$. Kuinka suuri on galaksin punasiirtymä $z$?",
       "answer": 0.01296,
       "unit": "",
@@ -84,6 +85,7 @@
     {
       "id": "fy8-16-L1-08",
       "level": 1,
+      "core": true,
       "text": "Kosmista taustasäteilyä tulee lähes tasaisena joka suunnasta. Mikä selittää sen alkuperän?",
       "kind": [
         "concept"
@@ -124,6 +126,7 @@
     {
       "id": "fy8-16-L2-02",
       "level": 2,
+      "core": true,
       "text": "Planck-satelliitin taustasäteilymittauksista (Planck Collaboration 2018) saatu Hubblen vakion arvo on $H_0 = 67{,}4\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$. Arvioi maailmankaikkeuden ikä olettaen, että laajenemisnopeus on pysynyt samana. Käytä $1\\,\\text{Mpc} = 3{,}086 \\cdot 10^{19}\\,\\text{km}$ ja $1\\,\\text{a} = 3{,}156 \\cdot 10^{7}\\,\\text{s}$. Anna vastaus yksikössä $10^{9}\\,\\text{a}$ eli miljardeina vuosina.",
       "answer": 14.51,
       "unit": "10⁹ a",
@@ -148,6 +151,7 @@
     {
       "id": "fy8-16-L2-05",
       "level": 2,
+      "core": true,
       "text": "Esimerkkiaineisto: tähtitieteilijä on mitannut yhdeksän galaksin etäisyyden $d$ ja etääntymisnopeuden $v$. Tulokset ovat taulukossa.\n\na) Piirrä $(d, v)$-kuvaaja ja sovita pisteisiin origon kautta kulkeva suora. Lue Hubblen vakio $H_0$ suoran kulmakertoimesta. Anna vastaus yksikössä $\\tfrac{\\text{km/s}}{\\text{Mpc}}$.\n\nb) Pisteet eivät ole täsmälleen suoralla. Mikä piste poikkeaa suorasta suhteellisesti eniten, ja mistä poikkeama voi johtua?\n\nAnna a)-kohdan tulos vastauskenttään.",
       "kind": [
         "data",

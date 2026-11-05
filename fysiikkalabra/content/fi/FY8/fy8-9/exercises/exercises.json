@@ -3,6 +3,7 @@
     {
       "id": "fy8-9-L1-01",
       "level": 1,
+      "core": true,
       "text": "Isotooppikuvausta varten valmistetun teknetium-$99\\text{m}$-valmisteen aktiivisuus on $740\\,\\text{MBq}$. Teknetium-$99\\text{m}$:n puoliintumisaika on $6{,}01\\,\\text{h}$. Kuinka suuri valmisteen aktiivisuus on $18{,}0\\,\\text{h}$ myöhemmin? Anna vastaus megabecquereleinä.",
       "answer": 92.8,
       "unit": "MBq",
@@ -43,6 +44,7 @@
     {
       "id": "fy8-9-L1-06",
       "level": 1,
+      "core": true,
       "text": "Näytteen isotoopin puoliintumisaika on $4{,}0\\,\\text{h}$. Näytettä on säilytetty $8{,}0\\,\\text{h}$. Mikä seuraavista väitteistä näytteen hajoamattomista ytimistä on oikein?",
       "kind": [
         "concept"
@@ -99,6 +101,7 @@
     {
       "id": "fy8-9-L2-02",
       "level": 2,
+      "core": true,
       "text": "Vanhan savuilmaisimen säteilylähteessä on amerikium-241:tä, ja lähteen aktiivisuus on $37\\,\\text{kBq}$. Amerikium-241:n puoliintumisaika on $433\\,\\text{a}$. Kuinka monta amerikiumydintä lähteessä on? Käytä $1\\,\\text{a} = 365{,}25\\,\\text{d}$. Anna vastaus yksikössä $10^{14}$.",
       "answer": 7.3,
       "unit": "· 10¹⁴",
@@ -123,6 +126,7 @@
     {
       "id": "fy8-9-L2-05",
       "level": 2,
+      "core": true,
       "kind": [
         "data"
       ],

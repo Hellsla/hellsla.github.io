@@ -3,6 +3,7 @@
     {
       "id": "fy8-9-L1-01",
       "level": 1,
+      "core": true,
       "text": "For isotope imaging, a technetium-$99\\text{m}$ preparation is made whose activity is $740\\,\\text{MBq}$. The half-life of technetium-$99\\text{m}$ is $6.01\\,\\text{h}$. What is the activity of the preparation $18.0\\,\\text{h}$ later? Give the answer in megabecquerels.",
       "answer": 92.8,
       "unit": "MBq",
@@ -43,6 +44,7 @@
     {
       "id": "fy8-9-L1-06",
       "level": 1,
+      "core": true,
       "text": "The half-life of an isotope in a sample is $4.0\\,\\text{h}$. The sample has been stored for $8.0\\,\\text{h}$. Which of the following statements about the undecayed nuclei of the sample is correct?",
       "kind": [
         "concept"
@@ -99,6 +101,7 @@
     {
       "id": "fy8-9-L2-02",
       "level": 2,
+      "core": true,
       "text": "The radiation source of an old smoke detector contains americium-241, and the activity of the source is $37\\,\\text{kBq}$. The half-life of americium-241 is $433\\,\\text{a}$. How many americium nuclei are there in the source? Use $1\\,\\text{a} = 365.25\\,\\text{d}$. Give the answer in the unit $10^{14}$.",
       "answer": 7.3,
       "unit": "· 10¹⁴",
@@ -123,6 +126,7 @@
     {
       "id": "fy8-9-L2-05",
       "level": 2,
+      "core": true,
       "kind": [
         "data"
       ],

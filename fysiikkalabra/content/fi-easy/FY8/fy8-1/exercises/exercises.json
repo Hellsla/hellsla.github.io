@@ -27,6 +27,7 @@
     {
       "id": "fy8-1-L1-04",
       "level": 1,
+      "core": true,
       "text": "Vettä ja pintoja puhdistetaan UV-C-lampuilla. Niiden säteilyn aallonpituus on $254\\,\\text{nm}$. Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$. Kuinka suuri on yhden fotonin energia? Anna vastaus elektronivoltteina.",
       "answer": 4.88,
       "unit": "eV",
@@ -84,6 +85,7 @@
     {
       "id": "fy8-1-L1-08",
       "level": 1,
+      "core": true,
       "text": "Natriumin irrotustyö on $2{,}28\\,\\text{eV}$. Himmeä ultraviolettilamppu irrottaa natriumpinnasta elektroneja heti, kun lamppu sytytetään. Lampun valon aallonpituus on $365\\,\\text{nm}$. Fotonin energia on tällä aallonpituudella $3{,}40\\,\\text{eV}$. Kirkas punainen lamppu ei irrota elektroneja lainkaan, vaikka se olisi päällä pitkään. Sen valon aallonpituus on $650\\,\\text{nm}$ ja fotonin energia $1{,}91\\,\\text{eV}$.\n\nSelitä fotonimallin avulla, miksi himmeä ultraviolettilamppu irrottaa elektroneja heti, mutta kirkas punainen lamppu ei irrota yhtään.",
       "kind": [
         "concept",
@@ -98,6 +100,7 @@
     {
       "id": "fy8-1-L2-01",
       "level": 2,
+      "core": true,
       "text": "Cesiumin irrotustyö on $2{,}14\\,\\text{eV}$. Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$. Mikä on pisin aallonpituus, jolla valo vielä irrottaa elektroneja cesiumista? Anna vastaus nanometreinä.",
       "answer": 579,
       "unit": "nm",
@@ -130,6 +133,7 @@
     {
       "id": "fy8-1-L2-05",
       "level": 2,
+      "core": true,
       "text": "Valosähköisessä kokeessa mitataan estojännite $U_\\text{s}$ eri aallonpituuksilla. Estojännite on pienin vastajännite, joka pysäyttää kaikki irtoavat elektronit. Taulukko on esimerkkiaineisto. Jännitteen mittausepävarmuus on noin $\\pm 0{,}02\\,\\text{V}$. Suurin liike-energia on $E_\\text{k,max} = eU_\\text{s}$, missä $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Valon nopeus on $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$.\n\na) Laske taajuudet $f = \\tfrac{c}{\\lambda}$ ja piirrä paperille kuvaaja $U_\\text{s}(f)$.\n\nb) Sovita pisteisiin suora. Lue suoran kulmakerroin $k$ kahdesta suoralta valitusta pisteestä, ei kahdesta mittauspisteestä. Laske Planckin vakio $h = ek$.\n\nc) Lue suoralta rajataajuus $f_0$ ja päättele metallin irrotustyö.\n\nVastaa laatikkoon kohdan b) Planckin vakio yksikössä $\\text{J}\\,\\text{s}$.",
       "kind": [
         "data",

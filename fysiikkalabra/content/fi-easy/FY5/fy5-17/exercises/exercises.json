@@ -3,6 +3,7 @@
     {
       "id": "fy5-17-L1-01",
       "level": 1,
+      "core": true,
       "text": "Raskauden seurannassa ultraäänilaite lähettää pulssin vatsan iholta. Sikiön pään pinnalta heijastunut kaiku palaa anturiin $91{,}0\\,\\mu\\text{s}$:n kuluttua. Ääni etenee kudoksessa nopeudella $1540\\,\\text{m/s}$. Kuinka syvällä ihon pinnasta sikiön pää on? Anna vastaus senttimetreinä.",
       "answer": 7.01,
       "unit": "cm",
@@ -103,6 +104,7 @@
     {
       "id": "fy5-17-L1-08",
       "level": 1,
+      "core": true,
       "text": "Ultraäänikuvauksessa pienin erottuva yksityiskohta on sitä pienempi, mitä suurempi pulssin taajuus on. Silti syvällä olevaa rakennetta kuvataan usein pienemmällä taajuudella. Miksi suurinta mahdollista taajuutta ei käytetä aina?",
       "kind": [
         "concept"
@@ -135,6 +137,7 @@
     {
       "id": "fy5-17-L2-01",
       "level": 2,
+      "core": true,
       "text": "Kuvaajassa on seismografiaseman seismogrammi maanjäristyksestä. Aika on laskettu tallennuksen alusta, ei järistyksen hetkestä. P-aallon nopeus on $7{,}0\\,\\text{km/s}$ ja S-aallon $4{,}0\\,\\text{km/s}$. Kuinka kaukana asemasta järistys tapahtui? Anna vastaus kilometreinä.",
       "answer": 168,
       "unit": "km",
@@ -168,6 +171,7 @@
     {
       "id": "fy5-17-L2-05",
       "level": 2,
+      "core": true,
       "kind": [
         "data"
       ],

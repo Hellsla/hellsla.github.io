@@ -3,6 +3,7 @@
     {
       "id": "fy5-9-L1-01",
       "level": 1,
+      "core": true,
       "text": "A body of mass $0.80\\,\\text{kg}$ oscillates on a spring on a frictionless horizontal surface. The spring constant of the spring is $50\\,\\text{N/m}$. What is the period of the oscillation?",
       "answer": 0.794767,
       "unit": "s",
@@ -43,6 +44,7 @@
     {
       "id": "fy5-9-L1-06",
       "level": 1,
+      "core": true,
       "text": "The length and the small swings of a simple pendulum are kept the same, but the bob of the pendulum is replaced with a bob of the same size that is twice as heavy. Air resistance is neglected. What happens to the period of the pendulum?",
       "kind": [
         "concept"
@@ -135,6 +137,7 @@
     {
       "id": "fy5-9-L2-01",
       "level": 2,
+      "core": true,
       "text": "A pendulum in a science centre is to make one full swing, that is, one cycle, in exactly $1.50\\,\\text{s}$. The swings are small, and air resistance is neglected. How long must the pendulum be?",
       "answer": 0.559103,
       "unit": "m",
@@ -250,6 +253,7 @@
     {
       "id": "fy5-9-L2-07",
       "level": 2,
+      "core": true,
       "text": "A student measures the period of a pendulum $1.000\\,\\text{m}$ long from different starting angles $\\alpha_0$ (sample data). He times ten cycles by hand, $t_{10}$, and the uncertainty of the timing is about $0.2\\,\\text{s}$. Air resistance is neglected.\n\nThe formula $T = 2\\pi\\sqrt{l/g}$ holds for small swings.\n\na) By how many percent is the measured period greater than the period given by the formula when the starting angle is $60\\,{}^\\circ$?\n\nb) At which starting angles is the difference from the formula clearly greater than the uncertainty of the timing? Justify using the times of ten cycles.\n\nWrite the result of part a) in percent in the box.",
       "kind": [
         "data",

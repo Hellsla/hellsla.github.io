@@ -27,6 +27,7 @@
     {
       "id": "fy8-11-L1-04",
       "level": 1,
+      "core": true,
       "text": "In the fusion of two deuterium nuclei, a helium-3 nucleus and a neutron are formed: ${}^{2}_{1}\\text{H} + {}^{2}_{1}\\text{H} \\rightarrow {}^{3}_{2}\\text{He} + {}^{1}_{0}\\text{n}$. The atomic masses are: deuterium $2.0141018\\,\\text{u}$, helium-3 $3.0160293\\,\\text{u}$ and neutron $1.0086649\\,\\text{u}$. How much energy is released in the reaction? Give the answer in megaelectronvolts.",
       "answer": 3.27,
       "unit": "MeV",
@@ -43,6 +44,7 @@
     {
       "id": "fy8-11-L1-06",
       "level": 1,
+      "core": true,
       "text": "In a nuclear reactor there is a moderator, for example water, between the fuel rods. What is the job of the moderator?",
       "kind": [
         "concept"
@@ -145,6 +147,7 @@
     {
       "id": "fy8-11-L2-05",
       "level": 2,
+      "core": true,
       "text": "In a reactor start-up test, the number of neutrons in the chain was measured in five successive generations (table, example data). Assume that the multiplication factor $k$ stays the same all the time.\n\na) Determine the multiplication factor $k$ using the first and last values of the table. Is the reactor subcritical, critical or supercritical?\n\nb) How many neutrons would there be in the chain in generation $50$ if the multiplication factor stayed the same?\n\nThe answer box takes the result of part b).",
       "kind": [
         "data",
@@ -236,6 +239,7 @@
     {
       "id": "fy8-11-L2-07",
       "level": 2,
+      "core": true,
       "text": "A student writes: “A uranium-235 nucleus captures a neutron and splits. Before the reaction there are $236$ nucleons and after the reaction $236$, so the mass of the products is the same as the mass of the starting materials. Therefore no energy is released in fission.” Fission does, however, release energy. What is the error in the student's reasoning?",
       "kind": [
         "error",

@@ -35,6 +35,7 @@
     {
       "id": "fy8-6-L1-05",
       "level": 1,
+      "core": true,
       "text": "A student fitted to the threshold voltages of LEDs as a function of frequency a line whose slope is $k = 4.10 \\cdot 10^{-15}\\,\\text{V}\\,\\text{s}$. The elementary charge is $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$. What value did the student get for the Planck constant? Give the answer in the unit $\\text{J}\\,\\text{s}$.",
       "answer": 6.57e-34,
       "unit": "J s",
@@ -43,6 +44,7 @@
     {
       "id": "fy8-6-L1-06",
       "level": 1,
+      "core": true,
       "text": "A red LED is connected to a gradually increasing voltage. Below $1.5\\,\\text{V}$ the LED does not glow at all, but after about $1.8\\,\\text{V}$ it lights up. What explains why the LED lights up only at the threshold voltage?",
       "kind": [
         "concept"
@@ -73,6 +75,7 @@
     {
       "id": "fy8-6-L1-07",
       "level": 1,
+      "core": true,
       "text": "The threshold voltage of a green LED is $2.30\\,\\text{V}$. Assume that at the threshold voltage the energy that an electron receives from the voltage source is exactly the energy of one photon, $eU_\\text{k} = \\tfrac{hc}{\\lambda}$.\n\nUse the values $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^8\\,\\text{m/s}$ and $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$.\n\nWhat is the wavelength of the light of the LED? Give the answer in nanometres.",
       "answer": 539,
       "unit": "nm",
@@ -123,6 +126,7 @@
     {
       "id": "fy8-6-L2-05",
       "level": 2,
+      "core": true,
       "text": "The current–voltage characteristic of a red LED was measured by connecting the LED in series with a protective resistor and gradually increasing the voltage. The table is sample data. In the graph $(U, I)$ the current is at first almost zero and then increases almost linearly.\n\nUse the values $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^8\\,\\text{m/s}$ and $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$.\n\na) Draw the graph $I(U)$ on paper and decide which points belong to the linear part.\n\nb) Fit a line to the linear part and extend it to the voltage axis, where $I = 0$. Read the threshold voltage $U_\\text{k}$.\n\nc) The peak wavelength of the LED is $650\\,\\text{nm}$. Calculate the voltage $\\tfrac{hc}{e\\lambda}$ and compare it with the measured threshold voltage.\n\nWrite in the box the threshold voltage of part b) in volts.",
       "kind": [
         "data",

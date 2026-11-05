@@ -3,6 +3,7 @@
     {
       "id": "fy8-5-L1-01",
       "level": 1,
+      "core": true,
       "text": "Raskaissa alkuaineissa elektroneja on yhä kauempana olevilla kuorilla. Kuinka monta elektronia mahtuu enintään kuorelle $n = 5$?",
       "answer": 50,
       "unit": "kpl",
@@ -116,6 +117,7 @@
     {
       "id": "fy8-5-L2-01",
       "level": 2,
+      "core": true,
       "text": "Vetyatomin elektroni siirtyy $3\\text{p}$-orbitaalilta $1\\text{s}$-orbitaalille, ja atomi lähettää fotonin. Mikä on fotonin aallonpituus? Anna vastaus nanometreinä.",
       "answer": 103,
       "unit": "nm",
@@ -193,6 +195,7 @@
     {
       "id": "fy8-5-L2-06",
       "level": 2,
+      "core": true,
       "text": "Kuvassa on molemmista päistä kiinnitetyn kielen kolme ensimmäistä seisovaa aaltoa. Esimerkkiaineisto: kielen pituus on $L = 0{,}80\\,\\text{m}$ ja aallon nopeus kielessä $v = 64\\,\\text{m/s}$.\n\na) Mikä on kunkin kuvan tilan aallonpituus $\\lambda$?\n\nb) Laske kunkin tilan taajuus $f$.\n\nc) Perustele laskemiesi taajuuksien avulla, miksi tila, jossa on enemmän solmuja, vastaa suurempaa taajuutta, ja kerro, mitä tämä kertoo atomin elektronin tiloista.\n\nAnna b)-kohdan tulos vastauslaatikkoon sen tilan osalta, jossa on kaksi solmua.",
       "kind": [
         "graph",
@@ -206,6 +209,7 @@
     {
       "id": "fy8-5-L2-07",
       "level": 2,
+      "core": true,
       "text": "Oppilas katsoo vetyatomin $1\\text{s}$-orbitaalin kuvaa, jonka raja on $90\\,\\%$:n raja, ja päättelee: ”Raja on seinä. Elektroni pysyy aina rajan sisällä, joten yksikään mittaus ei osu sen ulkopuolelle.” Simulaatiossa $2000$:sta mittauksesta kuitenkin $205$ osuu rajan ulkopuolelle. Mikä on oppilaan päättelyn virhe?",
       "kind": [
         "error",

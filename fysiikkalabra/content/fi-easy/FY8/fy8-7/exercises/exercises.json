@@ -19,6 +19,7 @@
     {
       "id": "fy8-7-L1-03",
       "level": 1,
+      "core": true,
       "text": "Rubiinilaserin lasersiirtymässä tasojen energiaero on $1{,}79\\,\\text{eV}$. Laske laservalon aallonpituus nanometreinä ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).",
       "answer": 693,
       "unit": "nm",
@@ -43,6 +44,7 @@
     {
       "id": "fy8-7-L1-06",
       "level": 1,
+      "core": true,
       "text": "Viritetty atomi on atomi, jolla on ylimääräistä energiaa. Se voi lähettää fotonin kahdella tavalla: spontaanisti tai stimuloidusti. Mikä erottaa stimuloidun emission spontaanista emissiosta?",
       "kind": [
         "concept"
@@ -121,6 +123,7 @@
     {
       "id": "fy8-7-L2-02",
       "level": 2,
+      "core": true,
       "text": "Punaisen laserosoittimen aallonpituus on $650\\,\\text{nm}$ ja violetin $405\\,\\text{nm}$. Molempien teho on $5{,}0\\,\\text{mW}$. Kuinka monta kertaa enemmän fotoneja punainen laserosoitin lähettää sekunnissa kuin violetti?",
       "answer": 1.6,
       "unit": "",
@@ -145,6 +148,7 @@
     {
       "id": "fy8-7-L2-05",
       "level": 2,
+      "core": true,
       "kind": [
         "data",
         "reasoning"

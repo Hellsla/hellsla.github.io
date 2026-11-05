@@ -11,6 +11,7 @@
     {
       "id": "fy8-3-L1-02",
       "level": 1,
+      "core": true,
       "text": "Vetyatomin energiatasot ovat $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$. Vetyatomin elektroni siirtyy tasolta $n = 4$ perustilaan $n = 1$. Kuinka suuri on syntyvän fotonin energia elektronivoltteina?",
       "answer": 12.8,
       "unit": "eV",
@@ -43,6 +44,7 @@
     {
       "id": "fy8-3-L1-06",
       "level": 1,
+      "core": true,
       "text": "Vetyatomin energiatasot ovat $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$. Tarkastellaan neljää siirtymää: $5 \\to 4$, $3 \\to 2$, $2 \\to 1$ ja $4 \\to 1$. Lukupari kertoo lähtötason ja päätason. Mikä siirtymä lähettää fotonin, jonka aallonpituus on lyhin?",
       "kind": [
         "concept"
@@ -94,6 +96,7 @@
     {
       "id": "fy8-3-L2-01",
       "level": 2,
+      "core": true,
       "text": "Vetyatomin energiatasot ovat $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$. Vetyatomin elektroni siirtyy tasolta $n = 5$ tasolle $n = 2$. Laske syntyvän valon aallonpituus nanometreinä ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).",
       "answer": 434,
       "unit": "nm",
@@ -164,6 +167,7 @@
     {
       "id": "fy8-3-L2-06",
       "level": 2,
+      "core": true,
       "text": "Kuvassa on kuvitteellisen atomin energiatasokaavio. Atomi on perustilassa $E_1$. Atomiin lähetetään viisi fotonia, joilla on eri aallonpituus. Taulukossa on fotonien aallonpituudet. Atomi absorboi fotonin vain, jos fotonin energia vastaa perustilan ja jonkin ylemmän tason energioiden erotusta ($\\pm 0{,}05\\,\\text{eV}$). Kuinka monta taulukon fotonia atomi absorboi?\n\nLaske fotonien energiat ja vertaa niitä kaaviosta luettuihin energiaeroihin. Vastaa laatikkoon absorboituvien fotonien lukumäärä ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).",
       "figure": "fy8-3/levels-task",
       "kind": [
