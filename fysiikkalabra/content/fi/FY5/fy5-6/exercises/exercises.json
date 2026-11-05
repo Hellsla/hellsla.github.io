@@ -39,6 +39,52 @@
       "answer": 1.63,
       "unit": "km/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-6-L1-06",
+      "level": 1,
+      "text": "Astronautti leijuu avaruusasemalla, joka kiertää Maata $400\\,\\text{km}$:n korkeudella. Mikä seuraavista selittää leijumisen?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Astronautti ja asema putoavat vapaasti samalla kiihtyvyydellä, joten tukivoimaa ei ole.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Maan gravitaatio on $400\\,\\text{km}$:n korkeudella niin heikko, että astronauttiin ei vaikuta juuri lainkaan voimaa.",
+          "feedback": "Gravitaatio ei ole heikentynyt kovin paljon: etäisyys Maan keskipisteestä kasvaa vain noin $6\\,\\%$, joten gravitaatiovoima on edelleen noin $88\\,\\%$ maanpinnan arvosta. Astronautti leijuu, vaikka voima vaikuttaa."
+        },
+        {
+          "text": "Gravitaatiovoima ja asemaa ulospäin vetävä keskipakovoima ovat yhtä suuret ja kumoavat toisensa.",
+          "feedback": "Voimat eivät kumoa toisiaan. Satelliittiin vaikuttaa vain gravitaatiovoima, ja se on ympyräliikkeen kokonaisvoima, joka kääntää nopeuden suuntaa kohti Maata. Jos kokonaisvoima olisi nolla, kappale jatkaisi suoraviivaisesti."
+        },
+        {
+          "text": "Astronautti ja asema putoavat vapaasti samalla kiihtyvyydellä, joten tukivoimaa ei ole.",
+          "correct": true,
+          "feedback": "Oikein: sekä asema että astronautti liikkuvat vain gravitaation varassa samalla kiihtyvyydellä. Asema ei työnnä astronauttia mihinkään, joten tukivoima on nolla ja astronautti on painoton, vaikka gravitaatiovoima vaikuttaa häneen."
+        },
+        {
+          "text": "Asema liikkuu niin nopeasti, että sen vauhti pitää astronautin ilmassa eikä gravitaatio vaikuta häneen.",
+          "feedback": "Gravitaatio vaikuttaa astronauttiin koko ajan. Suuri vauhti ei kumoa gravitaatiota vaan estää putoamasta Maahan: kappale putoaa kohti Maata, mutta sivuttaisvauhdin vuoksi Maan pinta kaartuu pois sen alta."
+        }
+      ]
+    },
+    {
+      "id": "fy5-6-L1-07",
+      "level": 1,
+      "text": "Jupiterin kuu Io kiertää Jupiteria lähes ympyrärataa, jonka säde on $4{,}22 \\cdot 10^{5}\\,\\text{km}$. Jupiterin massa on $1{,}90 \\cdot 10^{27}\\,\\text{kg}$. Laske Ion ratanopeus. Anna vastaus kilometreinä sekunnissa.",
+      "answer": 17.3,
+      "unit": "km/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-6-L1-08",
+      "level": 1,
+      "text": "Maa kiertää Aurinkoa lähes ympyrärataa, jonka säde on $1{,}496 \\cdot 10^{8}\\,\\text{km}$ ja kiertoaika $365{,}25\\,\\text{d}$. Laske Maan ratanopeus. Anna vastaus kilometreinä sekunnissa.",
+      "answer": 29.79,
+      "unit": "km/s",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,6 +119,102 @@
       "answer": 650,
       "unit": "N",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-6-L2-05",
+      "level": 2,
+      "text": "Taulukossa on Jupiterin neljän suurimman kuun ratasäde $r$ ja kiertoaika $T$ (esimerkkiaineisto, pyöristetty todellisista arvoista). Kuut kiertävät Jupiteria lähes ympyräratoja.\n\nYmpyräradan mallista seuraa $T^2 = \\dfrac{4\\pi^2}{\\gamma M} r^3$, missä $M$ on Jupiterin massa. Laske jokaiselle kuulle suhde $\\dfrac{r^3}{T^2}$ SI-yksiköissä ja totea, että suhde on lähes sama.\n\nMääritä Jupiterin massa suhteiden keskiarvosta. Anna vastaus yksikössä $10^{27}\\,\\text{kg}$.",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 1.90,
+      "unit": "10²⁷ kg",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Jupiterin kuiden ratasäde ja kiertoaika",
+        "columns": [
+          "Kuu",
+          "$r\\,(10^{3}\\,\\text{km})$",
+          "$T\\,(\\text{d})$"
+        ],
+        "rows": [
+          [
+            "Io",
+            "421.7",
+            "1.769"
+          ],
+          [
+            "Europa",
+            "671.1",
+            "3.551"
+          ],
+          [
+            "Ganymedes",
+            "1070",
+            "7.155"
+          ],
+          [
+            "Callisto",
+            "1883",
+            "16.69"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-6-L2-06",
+      "level": 2,
+      "text": "Taulukossa on neljän Maata kiertävän satelliitin korkeus maanpinnasta $h$ ja ratanopeus $v$ (esimerkkiaineisto). Radat ovat lähes ympyröitä. Yksi nopeuksista on kirjattu taulukkoon väärin.\n\nMaan massa on $5{,}97 \\cdot 10^{24}\\,\\text{kg}$ ja säde $6371\\,\\text{km}$. Laske kullekin satelliitille ympyräradan nopeus ja etsi virheellinen arvo.\n\nMikä on virheellisen nopeuden oikea arvo? Anna vastaus kilometreinä sekunnissa.",
+      "kind": [
+        "data",
+        "error"
+      ],
+      "answer": 7.25,
+      "unit": "km/s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Satelliittien korkeus ja ratanopeus",
+        "columns": [
+          "Satelliitti",
+          "$h\\,(\\text{km})$",
+          "$v\\,(\\text{km/s})$"
+        ],
+        "rows": [
+          [
+            "A",
+            "400",
+            "7.67"
+          ],
+          [
+            "B",
+            "1200",
+            "7.52"
+          ],
+          [
+            "C",
+            "19100",
+            "3.96"
+          ],
+          [
+            "D",
+            "35786",
+            "3.07"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-6-L2-07",
+      "level": 2,
+      "text": "Kaksi satelliittia, joiden massat ovat $500\\,\\text{kg}$ ja $2000\\,\\text{kg}$, viedään kumpikin ympyräradalle $800\\,\\text{km}$:n korkeudelle Maan pinnasta. Oppilas päättelee: ”Raskaampaan satelliittiin vaikuttaa nelinkertainen gravitaatiovoima, joten se kiertää nopeammin.”\n\nMaan massa on $5{,}97 \\cdot 10^{24}\\,\\text{kg}$ ja säde $6371\\,\\text{km}$.\n\na) Laske kumpaankin satelliittiin vaikuttava gravitaatiovoima.\n\nb) Laske raskaamman satelliitin ratanopeus.\n\nc) Selitä, missä oppilaan päättelyssä on virhe.\n\nVastauskenttään tulee kohdan b) tulos kilometreinä sekunnissa.",
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "answer": 7.45,
+      "unit": "km/s",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -98,6 +240,61 @@
       "text": "Maa pyörähtää akselinsa ympäri kerran vuorokaudessa. Kuinka lyhyt Maan pyörähdysajan pitäisi olla, jotta päiväntasaajalla seisova ihminen olisi painoton? Maan massa on $5{,}97 \\cdot 10^{24}\\,\\text{kg}$ ja säde $6371\\,\\text{km}$, ja Maan muoto oletetaan pallon muotoiseksi. Anna vastaus minuutteina.",
       "answer": 84.4,
       "unit": "min",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-6-L3-04",
+      "level": 3,
+      "text": "Taulukossa on kaukaisen tähden neljän planeetan ratasäde $r$ ja kiertoaika $T$ (esimerkkiaineisto). Planeetat kiertävät tähteä lähes ympyräradoilla, ja tähden massa on paljon suurempi kuin planeettojen massat. Tähden massaa ei tunneta.\n\nYmpyräradan mallista seuraa $T^2 = \\dfrac{4\\pi^2}{\\gamma M} r^3$, missä $M$ on tähden massa. Yhden planeetan kiertoaika on mitattu virheellisesti.\n\na) Laske jokaiselle planeetalle suhde $\\dfrac{r^3}{T^2}$ SI-yksiköissä. Päättele, minkä planeetan arvo on virheellinen, ja perustele, miksi se jätetään pois.\n\nb) Määritä tähden massa kolmen muun planeetan suhteiden keskiarvosta. Anna vastaus yksikössä $10^{30}\\,\\text{kg}$.\n\nc) Päättele, mikä virheellisen planeetan kiertoajan pitäisi olla, ja ehdota, millainen mittausvirhe voi selittää poikkeaman.\n\nVastauskenttään tulee kohdan b) tulos.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 1.59,
+      "unit": "10³⁰ kg",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Tähden planeettojen ratasäde ja kiertoaika",
+        "columns": [
+          "Planeetta",
+          "$r\\,(10^{9}\\,\\text{m})$",
+          "$T\\,(\\text{d})$"
+        ],
+        "rows": [
+          [
+            "b",
+            "6.0",
+            "3.29"
+          ],
+          [
+            "c",
+            "10.5",
+            "7.57"
+          ],
+          [
+            "d",
+            "17.0",
+            "7.82"
+          ],
+          [
+            "e",
+            "27.0",
+            "31.4"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-6-L3-05",
+      "level": 3,
+      "text": "Kaksi satelliittia, A ja B, kiertää Maata samassa tasossa ja samaan suuntaan lähes ympyräradoilla. Satelliitin A korkeus maanpinnasta on $400\\,\\text{km}$ ja satelliitin B $1000\\,\\text{km}$. Oletetaan, että ilmakehä ei jarruta satelliitteja ja että niiden massat ovat paljon pienempiä kuin Maan massa $5{,}97 \\cdot 10^{24}\\,\\text{kg}$. Maan säde on $6371\\,\\text{km}$.\n\nTietyllä hetkellä satelliitit ovat Maan keskipisteen kanssa samalla suoralla ja samalla puolella Maata.\n\na) Laske kummankin satelliitin kiertoaika.\n\nb) Kuinka kauan kuluu, ennen kuin satelliitit ovat ensimmäisen kerran uudelleen samalla suoralla Maan keskipisteen kanssa samalla puolella? Anna vastaus tunteina. Älä pyöristä välituloksia.\n\nc) Satelliittien massoja ei annettu. Perustele, miksi niitä ei tarvita.\n\nVastauskenttään tulee kohdan b) tulos.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 12.9,
+      "unit": "h",
       "tolerance": 0.02
     }
   ]

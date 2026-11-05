@@ -1,21 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: bf91c53f5e3e3250
+CONTENT-HASH: fe1b8f9cccc55b9a
 
 ## Blocking
 
 ## Polish
-- L3-01 — the task could say "Maan ja Kuun välillä", because a second equal-force point exists beyond the Moon. The trip "Maasta kohti Kuuta" and the solution's "Maan ja Kuun välissä" already rule it out. Optional.
+- solutions.md (L3-05 Vastaus) — the answer is stored as 575 N with three significant figures, but T_b = 6,0 h has only two, so the text also accepts 570 N; the 2 % tolerance covers both. — Optional: give "6,00 h" in the task.
 
 ## Checked
-- The round-1 blocking item is fixed: L1-02 Periaate now says the point-mass model is the task's assumption and the result is only an order-of-magnitude estimate.
-- Round-1 polish is fixed: L1-02 says 250 g, L2-04 says "lentokorkeudellakaan", and L1-03 and L1-04 store 3.70 and 3.80. L1-05 Järkevyys ("alle kolmasosaan") and L2-01 ("samanmassaisen") still read correctly.
-- I recomputed all 12 answers in one script with my own formulas: 0,401 µN, 2,50 N, 3,70 m/s², 3,80 kN, 4,0 µN, 37,9 kg, 0,8154, 15 488 km, 0,3440 %, 3,456·10⁵ km, 19,6 m/s², 177,4. They match exercises.json, and answers.py gives the same output.
-- The models fit the situations:
-  - point masses are stated where they are used;
-  - spherical symmetry with r measured from the centre;
-  - γ and M cancel correctly in the ratio tasks.
-- Every unknown is solved symbolically before substitution.
-- The reasonableness checks are real checks (lead sphere 9 cm, 2h/R, √81 = 9, 390²).
-- Data are realistic, and the significant figures follow the limiting datum.
-- Notation matches the lesson (γ, R, G = mg). Scope is inside FY5; L3-02 uses sphere volume, which Level 3 allows.
-- The 2 % tolerances fit the data.
+- The hash is the same at the start and the end (fe1b8f9cccc55b9a).
+- Delta since round 2 (780ee5441798b468): only solutions.md line 234 (L3-05 Periaate) changed, where "keskipistä" became "keskipistettä" 4 times. No number, formula, symbol or unit changed.
+- exercises.json and answers.py are unchanged, so every answer from round 2 still holds (20/20; L3-05 is 574,8 N).
+- No "keskipistä" is left in solutions.md.

@@ -40,6 +40,78 @@
       "answer": 0.15,
       "unit": "m",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-8-L1-06",
+      "level": 1,
+      "text": "The force stretching a spring is directly proportional to the extension of the spring, $F_\\text{v} = kx$. When does this expression describe a spring well?",
+      "kind": [
+        "concept"
+      ],
+      "unit": "",
+      "tolerance": 0.02,
+      "answer": "When the spring is not stretched too far, because at too large an extension the force no longer grows steadily.",
+      "choices": [
+        {
+          "text": "Only if the spring is horizontal, because the weight of a vertical spring itself spoils the proportionality.",
+          "feedback": "The mass of the spring itself is neglected, and the proportionality holds for a vertical spring too: the weight $mg$ of the mass is exactly the force stretching the spring, from which the spring constant is measured."
+        },
+        {
+          "text": "Always, because the spring constant is a constant and so the force is proportional to the extension at all extensions.",
+          "feedback": "The spring constant is constant only in the working range of the spring. At too large an extension the $(x, F_\\text{v})$ graph bends away from the line, and the spring may no longer return to its rest length."
+        },
+        {
+          "text": "Only if the spring is compressed and not stretched, because when stretched the force is always smaller.",
+          "feedback": "The harmonic force holds equally well for a stretched and a compressed spring: the magnitude of the force is $k|x|$ in both cases, and only the direction changes."
+        },
+        {
+          "text": "When the spring is not stretched too far, because at too large an extension the force no longer grows steadily.",
+          "correct": true,
+          "feedback": "Correct. The harmonic force is a model that holds for small extensions. When the spring is stretched too much, the material of the spring begins to stretch in a different way or stays permanently deformed, and the line of the measurement points no longer continues."
+        }
+      ]
+    },
+    {
+      "id": "fy5-8-L1-07",
+      "level": 1,
+      "text": "The extension of a spring is doubled, for example from $2.0\\,\\text{cm}$ to $4.0\\,\\text{cm}$. What happens to the elastic potential energy $E_\\text{p}$ of the spring?",
+      "kind": [
+        "concept"
+      ],
+      "unit": "",
+      "tolerance": 0.02,
+      "answer": "It becomes four times as large, because the energy is proportional to the second power of the extension.",
+      "choices": [
+        {
+          "text": "It doubles, because the stretching force doubles and the energy is proportional to the force.",
+          "feedback": "The force doubles, but the stretching is also done over a distance twice as long. So the work, that is the energy, grows more than the force."
+        },
+        {
+          "text": "It stays the same, because the spring constant and the rest length of the spring do not change when stretching.",
+          "feedback": "The spring constant stays the same, but $E_\\text{p} = \\tfrac{1}{2}kx^2$ also depends on the extension $x$, so the energy changes."
+        },
+        {
+          "text": "It becomes four times as large, because the energy is proportional to the second power of the extension.",
+          "correct": true,
+          "feedback": "Correct. The base and the height of the triangle double, so the area, that is the energy, becomes four times as large: $\\tfrac{1}{2}k(2x)^2 = 4\\cdot\\tfrac{1}{2}kx^2$."
+        },
+        {
+          "text": "It grows by a factor of $\\sqrt{2}$, because the energy is proportional to the square root of the extension.",
+          "feedback": "In the formula the extension is raised to the second power, not under a square root. A square root would make the growth slower, when in reality the energy grows faster than the extension."
+        }
+      ]
+    },
+    {
+      "id": "fy5-8-L1-08",
+      "level": 1,
+      "text": "The graph shows the extension and the stretching force of two springs A and B. Read two points of the line of spring B (dashed line) from the graph. What is the spring constant of spring B?",
+      "kind": [
+        "graph"
+      ],
+      "figure": "fy5-8/ex-kaksi",
+      "answer": 25.0,
+      "unit": "N/m",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -75,6 +147,72 @@
       "answer": 0.192,
       "unit": "J",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy5-8-L2-05",
+      "level": 2,
+      "text": "Students determined the spring constant of a spring by hanging masses on it and measuring the extension of the spring. The table shows example data from the measurement; $g = 9.81\\,\\text{m/s}^2$.\n\na) Which measurement points are in the linear range, where the force stretching the spring is directly proportional to the extension?\n\nb) Draw the $(x, F_\\text{v})$ graph and fit to the points of the linear range a line through the origin. What is the spring constant of the spring?\n\nGive the result of part b) in the answer box.",
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "data": {
+        "caption": "Extension of a spring as a function of the mass (example data)",
+        "columns": [
+          "$m\\,(\\text{g})$",
+          "$x\\,(\\text{cm})$"
+        ],
+        "rows": [
+          [
+            "100",
+            "4.1"
+          ],
+          [
+            "200",
+            "7.9"
+          ],
+          [
+            "300",
+            "12.1"
+          ],
+          [
+            "400",
+            "16.1"
+          ],
+          [
+            "500",
+            "22.0"
+          ]
+        ]
+      },
+      "answer": 24.4,
+      "unit": "N/m",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy5-8-L2-06",
+      "level": 2,
+      "text": "A student measures the spring constant of a spring. The length of the spring without a load is $12.0\\,\\text{cm}$. When a mass of $0.200\\,\\text{kg}$ is hung on the spring, the length of the spring at rest is $20.0\\,\\text{cm}$. The mass of the spring is neglected; $g = 9.81\\,\\text{m/s}^2$.\n\nThe student calculates: “The spring is stretched by the weight of the mass $0.200\\,\\text{kg}\\cdot 9.81\\,\\text{m/s}^2 = 1.962\\,\\text{N}$ and the length of the spring is $0.200\\,\\text{m}$, so $k = \\dfrac{F_\\text{v}}{x} = \\dfrac{1.962\\,\\text{N}}{0.200\\,\\text{m}} = 9.81\\,\\text{N/m}$.”\n\nWhat is the error in the student's calculation? Calculate the correct spring constant and give it in the answer box.",
+      "kind": [
+        "error",
+        "data"
+      ],
+      "answer": 24.525,
+      "unit": "N/m",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy5-8-L2-07",
+      "level": 2,
+      "text": "Two springs are each stretched at rest by the same stretching force $12\\,\\text{N}$. The spring constant of spring 1 is $80\\,\\text{N/m}$ and that of spring 2 is $240\\,\\text{N/m}$. A student claims: “More energy is stored in the stiffer spring, because it is stiffer.”\n\na) Calculate the extension of each spring.\n\nb) Calculate the elastic potential energy of each spring.\n\nc) How much more elastic potential energy is there in the softer spring than in the stiffer one? Give the result of part c) in the answer box.",
+      "kind": [
+        "reasoning",
+        "error"
+      ],
+      "answer": 0.6,
+      "unit": "J",
+      "tolerance": 0.03
     }
   ],
   "level3": [
@@ -102,6 +240,83 @@
       "answer": 3.2,
       "unit": "N",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-8-L3-04",
+      "level": 3,
+      "text": "The stretching of a rubber band was investigated by hanging forces of different sizes on it and measuring the extension of the band. The table shows example data; the force $F_\\text{v}$ is the force stretching the band, and the point $(0;\\ 0)$ of the graph belongs to the measurement.\n\na) Calculate the quotient $\\dfrac{F_\\text{v}}{x}$ for every measurement point other than the origin and use it to justify whether the rubber band can be described by the harmonic force $F_\\text{v} = kx$ and a single spring constant.\n\nb) Estimate the work done by the force stretching the band over the extension $12\\,\\text{cm}$ by calculating the area between the $(x, F_\\text{v})$ graph and the $x$ axis. Divide the area into trapezoids between the measurement points: the area of a trapezoid is the width of the interval times the mean of the forces at the ends of the interval.\n\nc) Compare the result with the energy you would get from the formula $E_\\text{p} = \\tfrac{1}{2}kx^2$ when $k$ is calculated from the first measurement point.\n\nGive the result of part b) in the answer box.",
+      "kind": [
+        "data",
+        "graph",
+        "model",
+        "reasoning"
+      ],
+      "data": {
+        "caption": "Stretching of a rubber band (example data)",
+        "columns": [
+          "$x\\,(\\text{cm})$",
+          "$F_\\text{v}\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "3.0",
+            "1.5"
+          ],
+          [
+            "6.0",
+            "2.2"
+          ],
+          [
+            "9.0",
+            "2.8"
+          ],
+          [
+            "12.0",
+            "4.0"
+          ]
+        ]
+      },
+      "answer": 0.255,
+      "unit": "J",
+      "tolerance": 0.04
+    },
+    {
+      "id": "fy5-8-L3-05",
+      "level": 3,
+      "text": "The pull force of the string of a crossbow was measured with a force meter when the string was pulled from its rest position to different distances. The table shows example data. The spring of the crossbow is assumed to follow the harmonic force $F_\\text{v} = kx$ over the whole measured range.\n\nAfter that an arrow of mass $25\\,\\text{g}$ was shot horizontally from the crossbow with the string pulled back $50\\,\\text{cm}$. A speed meter showed the launch speed of the arrow to be $47.0\\,\\text{m/s}$.\n\na) Determine the spring constant from a line fitted to the measurement points and use it to calculate the energy stored in the crossbow in the pulled position.\n\nb) Calculate the kinetic energy of the arrow at launch.\n\nc) What percentage of the stored energy changed into the kinetic energy of the arrow? Where did the rest of the energy probably go?\n\nGive the percentage of part c) in the answer box.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "data": {
+        "caption": "Pull force of the string as a function of the draw distance (example data)",
+        "columns": [
+          "$x\\,(\\text{cm})$",
+          "$F_\\text{v}\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "20",
+            "59"
+          ],
+          [
+            "30",
+            "92"
+          ],
+          [
+            "40",
+            "121"
+          ],
+          [
+            "50",
+            "151"
+          ]
+        ]
+      },
+      "answer": 73.0,
+      "unit": "%",
+      "tolerance": 0.05
     }
   ]
 }

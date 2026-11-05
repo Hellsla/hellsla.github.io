@@ -1,16 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: a0b2e7a7c4453baf
+CONTENT-HASH: 7ee331f058551765
 
 ## Blocking
 
 ## Polish
-- exercises/solutions.md (fy5-6-L3-02, Järkevyys) — the new check only says that 0,015 % "sopii" for a 0,03 % change in the radius. Adding "eli puolet suhteellisesta säteen muutoksesta, koska $v \propto 1/\sqrt{r}$" would make it a quantitative check without derivatives.
+- solutions.md (L3-04 Vastaus) — "säde 6,0·10⁹ m ... on pyöristetty tarkasta arvosta" is not known for invented example data. — Write 6.00 in the table, or say only that the periods and the averaging justify three figures.
+- Methods repeat: L1-08 uses the same method as L1-04, and L1-07 the same as L1-01 and L1-05. The plan's level-3 item on ISS weightlessness is covered only by the MC L1-06. Optional, carried over from round 1.
 
 ## Checked
-- One script recomputed all 12 answers again from the task text with my own formulas, and all agree with exercises.json and answers.py: 7,44; 12,0 h; 0,224 m/s²; 1,02; 1,63 km/s; 9570 km; 3,36; 1,68 km/s; 650 N; 17 040 km; 1,13 m/s; 84,4 min.
-- Round 1 polish done: L3-02 now tells the student not to round before subtracting, and the solution says why. L2-04 writes 6,5·10² N, which makes the two significant figures unambiguous.
-- L3-01's wording change and its reasonableness check now say "kiertoradan säde r = 20 400 km", which matches r = 2,0427·10⁷ m. The physics is unchanged.
-- The new L3-02 reasonableness numbers are right: 2/6771 is 0,030 % and 1,133/7671 is 0,015 %, and the sign explanation (drag lowers the orbit, so v grows) is right.
-- answers.py computes the right physics for each line.
-- The solutions are complete, solve symbolically first and convert units correctly. The rounding is justified by the limiting datum and the 2 % tolerances fit the data.
-- Data are realistic, and the notation matches the brief (γ, r = R + h, $a_\text{n}$, no ω), within the FY5 scope.
+- The hash is the same at the start and the end (7ee331f058551765).
+- Round-1 blocking item is fixed. L3-04 c) now gives a cause that halves the measured period: two dips per orbit read as transits (also the passage behind the star), or two planets' transits mixed up. Either one gives an observed 7,82 d ≈ ½ · 15,66 d, which is right.
+- The new L3-04 reasoning is right. From c to d, r grows by 62 % (10,5 → 17,0) but T only by 3,3 % (7,57 → 7,82), although T ∝ r^1,5 needs a factor of 2,06.
+- L2-05: the answer is now 1.90, matching the solution. I recomputed 1,898·10²⁷ kg.
+- L2-06: row C is now 3.96, matching my 3,9551 km/s. The solution says 3,96, so only row B (7,52 against 7,254) is wrong, and the answer 7,25 is unchanged.
+- L1-06 model answer: the added "keskipakovoima ei ole voima ... inertiaalikoordinaatistossa" is right and agrees with the option feedback.
+- L2-05 Periaate now links the result to v = √(γM/r) and v = 2πr/T. This is right.
+- L3-05 typo is fixed, and L2-07 quotes are now typographic. No numbers changed in either.
+- All other answers are unchanged, and my round-1 recomputation still holds (19/19 numeric answers within tolerance).
+- The fy5-5 duplicate of L3-03 is gone: fy5-5-L3-05 b) now asks for a scale reading.

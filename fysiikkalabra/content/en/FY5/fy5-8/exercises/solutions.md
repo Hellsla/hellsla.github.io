@@ -129,3 +129,133 @@ akselit 0
 **Substitution:** $|\Sigma F| = \left(30\,\tfrac{\text{N}}{\text{m}} + 50\,\tfrac{\text{N}}{\text{m}}\right)\cdot 0.040\,\text{m} = 80\,\tfrac{\text{N}}{\text{m}}\cdot 0.040\,\text{m} = 3.2\,\text{N}$
 **Answer:** $3.2\,\text{N}$ to the left, towards the equilibrium position, two significant figures like the displacement $4.0\,\text{cm}$.
 **Reasonableness:** Each spring alone would give $1.2\,\text{N}$ and $2.0\,\text{N}$, and the forces have the same direction, so the sum $3.2\,\text{N}$ is larger than either. The net force is harmonic like the force of a single $80\,\text{N/m}$ spring; the mass was not needed.
+
+## fy5-8-L1-06
+**Find:** when the proportionality $F_\text{v} = kx$ describes a spring well.
+**Principle:** The harmonic force is a model that holds when the spring is not stretched too much. Then the $(x, F_\text{v})$ graph is a line through the origin, and its slope is the spring constant. At too large an extension the material of the spring begins to stretch in a different way or stays permanently deformed, and the graph bends away from the line.
+**Model answer:** The expression describes a spring well only when the spring is not stretched too far, because otherwise the force no longer grows steadily with the extension. The position of the spring does not matter: the spring constant of a vertical spring is measured exactly by using the weight of a mass. The expression holds equally well for a stretched and a compressed spring, and the spring constant is constant only in the working range of the spring.
+
+## fy5-8-L1-07
+**Find:** how the elastic potential energy of a spring changes when the extension is doubled.
+**Principle:** The elastic potential energy of a spring is the area of the triangle of the $(x, F_\text{v})$ graph, $E_\text{p} = \tfrac{1}{2}kx^2$. The extension is raised to the second power in the formula, so the energy is proportional to the square of the extension.
+**Model answer:** The energy becomes four times as large, because it is proportional to the second power of the extension: $\tfrac{1}{2}k(2x)^2 = 4\cdot\tfrac{1}{2}kx^2$. In the graph the base and the height of the triangle both double, so its area becomes four times as large. The force doubles, but the stretching is also done over a distance twice as long, and so the energy grows more than the force. It does not stay the same, because the formula depends on the extension, and it does not grow only by the square root, because the extension is raised to the power two and not one half.
+
+## fy5-8-L1-08
+**Given:** the line of spring B (dashed line) of the graph, $F_\text{v}$ as a function of the extension $x$
+**Find:** the spring constant $k_\text{B}$ of spring B in $\text{N/m}$
+**Principle:** The stretching force is directly proportional to the extension, $F_\text{v} = kx$, so the graph is a line through the origin, and its slope is the spring constant.
+**Reading the graph:** The line of spring B is the gentler dashed line. It passes through the grid points $(0.08\,\text{m};\ 2.0\,\text{N})$ and $(0.12\,\text{m};\ 3.0\,\text{N})$, where the line crosses a whole newton and a grid line of the extension. These two points are chosen because they can be read accurately.
+**Formula:** $k_\text{B} = \dfrac{\Delta F_\text{v}}{\Delta x}$
+**Conversions:** The values of the graph are in newtons and metres, so no conversions are needed.
+**Substitution:** $k_\text{B} = \dfrac{3.0\,\text{N} - 2.0\,\text{N}}{0.12\,\text{m} - 0.08\,\text{m}} = \dfrac{1.0\,\text{N}}{0.04\,\text{m}} = 25\,\text{N/m}$
+**Answer:** $25\,\text{N/m}$, two significant figures, to which the grid values of the graph can be read.
+**Reasonableness:** The line of spring B is gentler than that of spring A, so its spring constant must be smaller. A check from the grid point $(0.04\,\text{m};\ 1.0\,\text{N})$ through the origin:
+```latex
+k_\text{B} = \dfrac{1.0\,\text{N}}{0.04\,\text{m}} = 25\,\text{N/m}
+```
+
+## fy5-8-L2-05
+**Given:** masses $m = 100\,\text{g} \ldots 500\,\text{g}$ and extensions $x = 4.1\,\text{cm} \ldots 22.0\,\text{cm}$ from the table; $g = 9.81\,\text{m/s}^2$
+**Find:** a) the measurement points of the linear range, b) the spring constant $k$ in $\text{N/m}$
+**Principle:** A mass hanging at rest pulls the spring with the force $F_\text{v} = mg$. When the spring follows the harmonic force, the $(x, F_\text{v})$ points are on a line through the origin and its slope is the spring constant. The measurement points are usually not exactly on the same line because of measurement uncertainty, so the slope is read from a fitted line, not from two measurement points.
+**Reading the graph:** The forces are $F_\text{v} = 0.98\,\text{N};\ 1.96\,\text{N};\ 2.94\,\text{N};\ 3.92\,\text{N};\ 4.91\,\text{N}$. The quotient $\tfrac{F_\text{v}}{x}$ is about $24\,\text{N/m}$ ($23.9\ldots 24.8\,\text{N/m}$) in the first four points, but at the point $500\,\text{g}$ only
+```latex
+\dfrac{4.91\,\text{N}}{0.220\,\text{m}} = 22.3\,\text{N/m}
+```
+The point is below the line, because the spring has been stretched beyond the linear range. The point is left out of the fit but not removed from the measurement. A line through the origin fitted by hand to the first four points (or a calculator fit through the origin) gives the slope $24.4\,\text{N/m}$; the line passes, for example, through the points $(0.050\,\text{m};\ 1.22\,\text{N})$ and $(0.100\,\text{m};\ 2.44\,\text{N})$.
+**Formula:** $k = \dfrac{\Delta F_\text{v}}{\Delta x}$
+**Conversions:** $F_\text{v} = mg$, for example $300\,\text{g} = 0.300\,\text{kg}$; extension $x = 12.1\,\text{cm} = 0.121\,\text{m}$.
+**Substitution:** $k = \dfrac{2.44\,\text{N} - 1.22\,\text{N}}{0.100\,\text{m} - 0.050\,\text{m}} = \dfrac{1.22\,\text{N}}{0.050\,\text{m}} = 24.4\,\text{N/m}$
+**Answer:** a) the points $100\,\text{g}$–$400\,\text{g}$ are in the linear range, the point $500\,\text{g}$ is not. b) $24.4\,\text{N/m}$, three significant figures like the forces $F_\text{v}$; the scatter of the measurement points around the line is, however, about $\pm 2\,\%$, so the result $24\,\text{N/m}$ is also acceptable.
+**Reasonableness:** The single point $300\,\text{g}$ gives
+```latex
+\dfrac{2.943\,\text{N}}{0.121\,\text{m}} = 24.3\,\text{N/m}
+```
+close to the value of the fitted line. The order of magnitude is usual for a laboratory spring: a mass of $100\,\text{g}$ stretches the spring about $4\,\text{cm}$.
+
+## fy5-8-L2-06
+**Given:** rest length $L_0 = 12.0\,\text{cm}$, length of the loaded spring $L = 20.0\,\text{cm}$, mass $m = 0.200\,\text{kg}$; $g = 9.81\,\text{m/s}^2$
+**Find:** the student's error and the correct spring constant $k$ in $\text{N/m}$
+**Principle:** In the expression $F_\text{v} = kx$ the quantity $x$ is the extension of the spring from its rest length, not the whole length of the spring. A mass hanging at rest pulls the spring with the force $F_\text{v} = mg$, and the spring has then become longer than its rest length.
+**Formula:** $x = L - L_0$ and $F_\text{v} = mg = kx$, so $k = \dfrac{mg}{L - L_0}$
+**Conversions:** $L - L_0 = 20.0\,\text{cm} - 12.0\,\text{cm} = 8.0\,\text{cm} = 8.0 \cdot 0.01\,\text{m} = 0.080\,\text{m}$
+**Substitution:** $k = \dfrac{0.200\,\text{kg}\cdot 9.81\,\text{m/s}^2}{0.080\,\text{m}} = \dfrac{1.962\,\text{N}}{0.080\,\text{m}} = 24.525\,\text{N/m}$
+**Answer:** The student used the whole length of the spring $0.200\,\text{m}$ as the extension and not the extension $0.080\,\text{m}$. The correct spring constant is $25\,\text{N/m}$ (more precisely $24.525\,\text{N/m}$), two significant figures like the extension $8.0\,\text{cm}$.
+**Reasonableness:** With the correct spring constant the force at the extension $0.080\,\text{m}$ is $24.525\,\tfrac{\text{N}}{\text{m}}\cdot 0.080\,\text{m} = 1.962\,\text{N}$, which is the weight of the mass. The student's $9.81\,\text{N/m}$ would predict for this force the extension $0.200\,\text{m}$, but the spring stretched only $0.080\,\text{m}$, so the student's value is too small.
+
+## fy5-8-L2-07
+**Given:** stretching force $F_\text{v} = 12\,\text{N}$ for both, $k_1 = 80\,\text{N/m}$, $k_2 = 240\,\text{N/m}$
+**Find:** a) the extensions $x_1$ and $x_2$, b) the energies $E_1$ and $E_2$ and c) the energy difference $\Delta E = E_1 - E_2$ in $\text{J}$
+**Principle:** The force stretching a spring is $F_\text{v} = kx$, so the extension is $x = \tfrac{F_\text{v}}{k}$. The elastic potential energy of a spring is the area of the triangle of the $(x, F_\text{v})$ graph, $E_\text{p} = \tfrac{1}{2}kx^2$. With the same force the soft spring stretches more, so the base of its triangle is longer and its area larger.
+**Formula:** $x = \dfrac{F_\text{v}}{k}$, $E_\text{p} = \tfrac{1}{2}kx^2 = \tfrac{1}{2}F_\text{v}x$ and $\Delta E = E_1 - E_2$
+**Conversions:** The quantities are in SI units, so no conversions are needed.
+**Substitution:** The extensions are $x_1 = \dfrac{12\,\text{N}}{80\,\text{N/m}} = 0.15\,\text{m}$ and $x_2 = \dfrac{12\,\text{N}}{240\,\text{N/m}} = 0.050\,\text{m}$. The energies are $E_1 = \tfrac{1}{2}\cdot 12\,\text{N}\cdot 0.15\,\text{m} = 0.90\,\text{J}$ and $E_2 = \tfrac{1}{2}\cdot 12\,\text{N}\cdot 0.050\,\text{m} = 0.30\,\text{J}$. The difference is $\Delta E = 0.90\,\text{J} - 0.30\,\text{J} = 0.60\,\text{J}$.
+**Answer:** The softer spring has $0.60\,\text{J}$ more energy, two significant figures like the force $12\,\text{N}$. The student is wrong: with the same force the energy is larger in the soft spring.
+**Reasonableness:** The energy $\tfrac{1}{2}F_\text{v}x$ grows with the extension, and the soft spring stretches three times as far as the stiff one ($0.15\,\text{m} : 0.050\,\text{m} = 3$), so the energy is three times as large: $0.90\,\text{J} : 0.30\,\text{J} = 3$. The student's reasoning would be correct if the springs were given the same extension and not the same force.
+
+## fy5-8-L3-04
+**Given:** extensions $x$ and forces $F_\text{v}$ from the table, start of the measurement $(0;\ 0)$, step $\Delta x = 3.0\,\text{cm} = 0.030\,\text{m}$
+**Find:** a) whether $\tfrac{F_\text{v}}{x}$ is constant, b) the work $W$ done by the stretching force over the extension $12\,\text{cm}$ in $\text{J}$, c) a comparison with the formula $\tfrac{1}{2}kx^2$
+**Principle:** According to the harmonic force $F_\text{v} = kx$ the quotient $\tfrac{F_\text{v}}{x} = k$ would be constant. The work done by the force stretching the band is the area between the $(x, F_\text{v})$ graph and the $x$ axis, and it can be calculated also when the graph is not a line. A rubber band does not return all of the work (hysteresis), so the area is an upper limit for the recoverable energy of the band. The area is divided into trapezoids.
+**Reading the graph:** The quotients $\tfrac{F_\text{v}}{x}$ at the extensions $3.0$, $6.0$, $9.0$ and $12.0\,\text{cm}$ are $50\,\text{N/m}$, $37\,\text{N/m}$, $31\,\text{N/m}$ and $33\,\text{N/m}$. They are not constant: the largest and the smallest differ by more than $40\,\%$, which is much more than measurement uncertainty would explain. A rubber band does not follow the harmonic force, and it has no single spring constant.
+**Formula:** $W_i = \Delta x\cdot\dfrac{F_{i} + F_{i+1}}{2}$ and $W = \sum W_i$
+**Conversions:** $\Delta x = 3.0\,\text{cm} = 3.0 \cdot 0.01\,\text{m} = 0.030\,\text{m}$
+**Substitution:** $W_1 = 0.030\,\text{m}\cdot\tfrac{0 + 1.5}{2}\,\text{N} = 0.0225\,\text{J}$, and all the trapezoids are
+```latex
+\begin{aligned}
+W_2 &= 0.030\,\text{m}\cdot\tfrac{1.5 + 2.2}{2}\,\text{N} = 0.0555\,\text{J} \\
+W_3 &= 0.030\,\text{m}\cdot\tfrac{2.2 + 2.8}{2}\,\text{N} = 0.0750\,\text{J} \\
+W_4 &= 0.030\,\text{m}\cdot\tfrac{2.8 + 4.0}{2}\,\text{N} = 0.1020\,\text{J}
+\end{aligned}
+```
+The sum is
+```latex
+\begin{aligned}
+W &= (0.0225 + 0.0555 \\
+&\quad + 0.0750 + 0.1020)\,\text{J} \\
+&= 0.255\,\text{J}
+\end{aligned}
+```
+In part c) the spring constant of the first point is $k = 50\,\text{N/m}$, and the formula gives
+```latex
+\begin{aligned}
+E_\text{p} &= \tfrac{1}{2}kx^2 \\
+&= \tfrac{1}{2}\cdot 50\,\tfrac{\text{N}}{\text{m}}\cdot(0.12\,\text{m})^2 \\
+&= 0.36\,\text{J}
+\end{aligned}
+```
+**Answer:** $0.26\,\text{J}$, two significant figures like the forces $F_\text{v}$. The formula $\tfrac{1}{2}kx^2$ with the spring constant of the first point would give $0.36\,\text{J}$, about $41\,\%$ too much, because the rubber band is stiffer at the start than later.
+**Reasonableness:** The mean force is
+```latex
+\dfrac{0.255\,\text{J}}{0.12\,\text{m}} = 2.1\,\text{N}
+```
+about half of the final force $4.0\,\text{N}$, as the area under the graph should be.
+
+## fy5-8-L3-05
+**Given:** draw distance $x$ and pull force $F_\text{v}$ from the table (last point $0.50\,\text{m}$, $151\,\text{N}$), mass of the arrow $m = 25\,\text{g}$, launch speed $v = 47.0\,\text{m/s}$
+**Find:** a) the spring constant $k$ and the stored energy $E_\text{p}$, b) the kinetic energy $E_\text{k}$ of the arrow and c) the efficiency $\eta = \tfrac{E_\text{k}}{E_\text{p}}$ as a percentage
+**Principle:** A crossbow follows the harmonic force over the measured range, so its spring constant is the slope of the fitted line of the $(x, F_\text{v})$ graph and the stored energy is the area of the triangle $\tfrac{1}{2}kx^2$. The arrow starts from rest, so its kinetic energy at launch is $\tfrac{1}{2}mv^2$. If energy were conserved, it should equal the stored energy; the difference is a loss.
+**Reading the graph:** The points are close to a line through the origin that passes through the point $(0.50\,\text{m};\ 151\,\text{N})$. The quotients $\tfrac{F_\text{v}}{x}$ are $295$, $307$, $303$ and $302\,\text{N/m}$, so they are approximately constant and the harmonic force is acceptable. The slope is read from two points of the fitted line: the origin and the point $(0.50\,\text{m};\ 151\,\text{N})$.
+**Formula:** $k = \dfrac{F_\text{v}}{x}$, $E_\text{p} = \tfrac{1}{2}kx^2$, $E_\text{k} = \tfrac{1}{2}mv^2$ and $\eta = \dfrac{E_\text{k}}{E_\text{p}}$
+**Conversions:** $x = 50\,\text{cm} = 50 \cdot 0.01\,\text{m} = 0.50\,\text{m}$ and $m = 25\,\text{g} = 25 \cdot 0.001\,\text{kg} = 0.025\,\text{kg}$
+**Substitution:** $k = \dfrac{151\,\text{N}}{0.50\,\text{m}} = 302\,\text{N/m}$, and the energy is
+```latex
+\begin{aligned}
+E_\text{p} &= \tfrac{1}{2}\cdot 302\,\tfrac{\text{N}}{\text{m}}\cdot(0.50\,\text{m})^2 \\
+&= 37.75\,\text{J}
+\end{aligned}
+```
+The kinetic energy of the arrow and the efficiency are
+```latex
+\begin{aligned}
+E_\text{k} &= \tfrac{1}{2}\cdot 0.025\,\text{kg}\cdot(47.0\,\text{m/s})^2 \\
+&= 27.61\,\text{J} \\
+\eta &= \frac{27.61\,\text{J}}{37.75\,\text{J}} = 0.731
+\end{aligned}
+```
+**Answer:** $73\,\%$ of the stored energy changed into the kinetic energy of the arrow, two significant figures like the mass of the arrow $25\,\text{g}$. The rest, about $27\,\%$ or about $10\,\text{J}$, probably went into the kinetic energy of the spring and the string, vibration, sound and heat: the spring and the string move themselves and finally stop. The answer is based on the assumption that the graph is a line over the whole draw distance.
+**Reasonableness:** The efficiency is below $100\,\%$, as it must be, and an efficiency above $70\,\%$ is usual for real crossbows. The speed is checked the other way round: if all of the $37.75\,\text{J}$ went to the arrow, its speed would be
+```latex
+v = \sqrt{\dfrac{2\cdot 37.75\,\text{J}}{0.025\,\text{kg}}} = 55.0\,\text{m/s}
+```
+a little more than the measured $47.0\,\text{m/s}$.

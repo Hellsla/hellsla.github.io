@@ -1,16 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 67bf7bd61f137639
+CONTENT-HASH: fda0effb37e4eadc
+Mode: full (translation review against the reviewed Finnish set)
+Round 2
 
 ## Blocking
 (none)
+
+## Fixed
+- exercises.json L1-06 and L1-07: the `answer` field still held the Finnish text of the correct option; replaced with the exact English text of the correct choice (en answer must be the correct option's text).
 
 ## Polish
 (none)
 
 ## Checked
-- contact-5 (#55–#60) and contact-6 (#61–#69): opened exercises and solutions of levels 1–3, figures ex-suora and ex-kaksi with decimal points, L3-03 free-body diagram.
-- Maths: \cdot for products, fractions and units in LaTeX, aligned substitution chains, answer boxes.
-- No overflow at 345 px (check_layout).
+- Captures fy5-8-open-exercises-1280-8 (L1-08) and the open-exercises L2/L3 shots opened for en: axis labels, units, table headers and captions are translated and use decimal points where needed; no clipped or Finnish text in the figure.
+- Maths in the text is LaTeX with units in \text{}; decimal separators match the language.
+- Data tables of L2-05, L3-04, L3-05 have the same columns and cells as fi.
 
 ## Scores
-illustrations 5 · typography 5 · English 5 · accessibility 4
+illustrations 5 · typography 5 · language 5 · accessibility 5

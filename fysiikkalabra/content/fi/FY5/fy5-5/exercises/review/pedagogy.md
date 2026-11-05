@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: bf91c53f5e3e3250
+CONTENT-HASH: fe1b8f9cccc55b9a
 
 ## Blocking
 (none)
 
 ## Polish
-- exercises.json — all 12 are numeric; no task practises equal forces and unequal accelerations (Newton III). Replace L1-05 with e.g. "Mikä on Maan ja omenan kiihtyvyyksien suhde?" (open from round 1).
-- exercises.json L1-01 — still near the lesson's 70 kg / 60 kg example; change the context.
-- solutions.md L1-02 Periaate — "alukset ovat yhtä pitkiä kuin niiden etäisyys" is loose; write "alusten pituus on samaa luokkaa kuin etäisyys".
+- exercises.json L2-06, L2-07 — still tagged "graph" without a graph or figure; drop the tag or add the 1/r² plot.
+- exercises.json L1-08 and L2-03 — both test r = R + h; vary one context if either is replaced later.
 
 ## Checked
-- Round 2: fixed and now fine: L1-02 point-mass wording and the 250 g comparison, L2-01 "samanmassaisen", L1-01 Järkevyys ("0,04 mg:n massaisen hiukkasen painoa").
-- Levels 5/4/3 per rubric; L3 requires reasoning; none repeats the worked example.
-- Situation first, question last; data sufficient, no trap.
-- All 12 answers match the solutions; solutions follow the full step structure with real sanity checks.
-- Finnish: case after number+unit correct; glossary terms consistent.
-- Phone: exercise captures not clipped, long calculations wrap.
+- Round-3 delta: solutions.md L3-05 Periaate now reads "keskipistettä" (four places); nothing else changed, no new problem.
+- Round-2 state holds: L3-05 b) is the 6,0 h scale reading (575 N), no duplicate of fy5-6-L3-03.
+- Rewritten MC L1-06..08 still one correct option, misconception-based distractors.
+- Counts 8/7/5; answers match the solutions.
