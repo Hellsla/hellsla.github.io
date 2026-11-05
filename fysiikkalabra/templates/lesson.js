@@ -274,6 +274,8 @@
   document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') flushAll(); });
   window.addEventListener('pagehide', flushAll);
   window.addEventListener('beforeunload', (e) => { if (unsaved()) { flushAll(); e.preventDefault(); e.returnValue = ''; } });   // a change still on its way asks before leaving
+  // for the submission trial (palautus.js, FY3-1 only): write every open editor now; rejects when a write failed
+  window.flPads = { flush: () => flushAll().then(() => { if (unsaved()) { const e = new Error('unsaved'); e.code = 'unsaved'; throw e; } }) };
   // "Tallennetut ratkaisut": a backup file of every saved solution, bringing one back, and deleting all (one panel
   // per open editor; all act on the whole store of this device).
   const backupPanel = (status) => {
@@ -380,6 +382,7 @@
           copyHtml(answer.answerHtml).then(() => { status.textContent = msg('pad_copied'); status.dataset.state = 'ok'; },
             () => { status.textContent = msg('pad_copy_failed'); status.dataset.state = 'no'; });
         });
+        li.dispatchEvent(new CustomEvent('fl:pad-ready', { bubbles: true, detail: { id: task.id, tools } }));   // palautus.js adds its image button
         setTimeout(() => root.querySelector('.rich-text-editor')?.focus(), 0);
       }, () => { made = false; status.textContent = msg('pad_failed'); status.dataset.state = 'no'; });
     });
