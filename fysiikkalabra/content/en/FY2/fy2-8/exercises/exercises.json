@@ -258,6 +258,76 @@
           "feedback": "The unit $\\text{g/kWh} \\cdot \\text{kWh}$ gives grams, not milligrams. The result $1640\\,\\text{g}$ is $1.6\\,\\text{kg}$."
         }
       ]
+    },
+    {
+      "id": "fy2-8-L2-08",
+      "level": 2,
+      "text": "The table shows the yearly electricity production $E$ of an example power plant and its yearly life-cycle emission $m$ in carbon dioxide equivalents (example data, not statistics). The uncertainty of the emission value of each year is $\\Delta m = 10\\,\\text{kt}$. Which of the following conclusions does the data in the table support?",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": "The emission decreased from the year $2020$ to the year $2024$, because the difference $100\\,\\text{kt}$ is much larger than the uncertainty $10\\,\\text{kt}$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Production and emission of an example power plant (example data)",
+        "columns": [
+          "$t\\,(\\text{a})$",
+          "$E\\,(\\text{GWh})$",
+          "$m\\,(\\text{kt})$"
+        ],
+        "rows": [
+          [
+            "2020",
+            "1000",
+            "520"
+          ],
+          [
+            "2021",
+            "1020",
+            "515"
+          ],
+          [
+            "2022",
+            "1010",
+            "470"
+          ],
+          [
+            "2023",
+            "1030",
+            "468"
+          ],
+          [
+            "2024",
+            "1000",
+            "420"
+          ]
+        ]
+      },
+      "choices": [
+        {
+          "text": "The emission decreased already from the year $2020$ to the year $2021$, because the difference $5\\,\\text{kt}$ is larger than the uncertainty $10\\,\\text{kt}$.",
+          "feedback": "Wrong comparison with the uncertainty. The difference $520\\,\\text{kt} - 515\\,\\text{kt} = 5\\,\\text{kt}$ is smaller, not larger, than the uncertainty $10\\,\\text{kt}$, so it can come from mere variation in measurement and calculation. A decrease cannot be shown from this pair."
+        },
+        {
+          "text": "The table proves that the emission decreased because the plant switched from coal to biomass; the difference is larger than the uncertainty.",
+          "feedback": "Over-interpreting the cause. The table has only the production and the emission, and no information about the fuel. The data show that the emission decreased, but not why: more efficient equipment or some other change would be just as good a cause."
+        },
+        {
+          "text": "The emission decreased from the year $2020$ to the year $2024$, because the difference $100\\,\\text{kt}$ is much larger than the uncertainty $10\\,\\text{kt}$.",
+          "feedback": "Correct: the difference of the emissions of the years $2020$ and $2024$ is $520\\,\\text{kt} - 420\\,\\text{kt} = 100\\,\\text{kt}$, ten times the uncertainty $10\\,\\text{kt}$. The uncertainty ranges of the values, $510$–$530\\,\\text{kt}$ and $410$–$430\\,\\text{kt}$, do not overlap. So the decrease is probably real, even though the small differences between single years would stay within the uncertainty.",
+          "correct": true
+        },
+        {
+          "text": "The emission in the year $2034$ is only $170\\,\\text{kt}$, because the decrease continues at the same rate as in the years $2020$–$2024$.",
+          "feedback": "Extrapolating too far. The data cover only five years, and the prediction would reach ten years beyond them. The development of the emissions can change, for example if the way the plant produces or is used changes, so this trend does not justify such a long prediction."
+        },
+        {
+          "text": "The emission did not change between the years $2020$ and $2024$, because the electricity production was the same in both years, $1000\\,\\text{GWh}$.",
+          "feedback": "Reading the wrong column. The number $1000\\,\\text{GWh}$ belongs to the column $E$, which tells the energy produced. The emission is in the column $m$, and there the value decreased from $520\\,\\text{kt}$ to $420\\,\\text{kt}$. The same production and a smaller emission mean a smaller emission per energy produced."
+        }
+      ]
     }
   ],
   "level3": [

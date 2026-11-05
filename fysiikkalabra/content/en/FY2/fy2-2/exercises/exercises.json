@@ -94,6 +94,36 @@
       "answer": 350,
       "unit": "MJ",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-2-L1-09",
+      "level": 1,
+      "text": "The thermal energy of a pellet boiler is $1\\,\\text{MJ}$. Which of the following values is equal to $1\\,\\text{MJ}$?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "$1000\\,\\text{kJ}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "$1000\\,\\text{J}$",
+          "feedback": "This is one kilojoule, not a megajoule. Kilo means a thousand, but mega means a million, so $1\\,\\text{MJ} = 1\\,000\\,000\\,\\text{J}$."
+        },
+        {
+          "text": "$1\\,000\\,000\\,\\text{kJ}$",
+          "feedback": "Here a factor of a million has been added to kilojoules, which are already a thousand times larger. This value is $1\\,\\text{GJ}$. A megajoule is a thousand kilojoules."
+        },
+        {
+          "text": "$1000\\,\\text{kJ}$",
+          "feedback": "Correct: kilo means a thousand and mega a million, so $1\\,\\text{MJ} = 1\\,000\\,000\\,\\text{J} = 1000\\,\\text{kJ}$.",
+          "correct": true
+        },
+        {
+          "text": "$1000\\,\\text{GJ}$",
+          "feedback": "Here the direction of the prefixes has been reversed: giga is greater than mega, so a gigajoule is a thousand megajoules. This value is $1000\\,\\text{GJ} = 1\\,000\\,000\\,\\text{MJ}$."
+        }
+      ]
     }
   ],
   "level2": [

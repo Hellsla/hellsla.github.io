@@ -1,25 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: d84745408ad2e7e1
-Mode: full
-Round: 1
+CONTENT-HASH: 753ff998604d8f0a
+Mode: delta (new task fy2-8-L2-08 only)
+Round: 2
 
 ## Blocking
 - none
+
+## Fixed
+- exercises.json L2-08 stem: the added sentence defined life-cycle emission as emission over the plant's whole lifetime, which contradicts "vuosittainen" and the Finnish; now "Elinkaaripäästö sisältää kaikki päästöt polttoaineen hankinnasta sähköntuotantoon asti."
 
 ## Polish
 - none
 
 ## Checked
-- Translation keeps the pedagogy of the reviewed Finnish: L1-06/07 distractors and feedback each name the misconception (reflection, total absorption, atmosphere as energy source; weather vs climate by period length), L2-07 error-analysis feedback explains why each wrong option fails, L3-04 c and L3-05 d keep the reasoning prompts and the "what the emission factor does not tell" question.
-- Solutions keep the same structure and number of lines as the Finnish (Given, Find, Principle, Formula, Conversions, Substitution, Answer, Reasonableness, Conclusion); a) to d) parts in the same order.
-- Example data marked as examples ("example data, not statistics"; "The statements are examples, not measurement results") as in the Finnish; real data named NOAA Mauna Loa.
-- Reading level: plain Finnish (selkosuomi) sentences are short and split where the Finnish had long ones; no new jargon added.
-- No edits needed.
-
-## Follow-up (2026-11-04, teacher's edit of L1-06: exercises.json:69, solutions.md:125)
-- **Blocking** exercises.json:69 and solutions.md:125 (L1-06): the physics term is dropped: "antaa Maan lämpötilaksi vain noin −18 °C". The fi-easy lesson teaches the bold term **efektiivinen säteilylämpötila**, and NOTES §12.2 says the glossary/lesson term stays and is never replaced. A student who learnt the term does not see it here, and "Maan lämpötila" suggests the old, now-corrected idea. Fix: "Yksinkertainen säteilytasapainomalli antaa Maan efektiiviseksi säteilylämpötilaksi noin $-18\,{}^\circ\text{C}$." in both places (drop "vain").
-- Otherwise good S2 form: short connected sentences, "Ero on noin 33 K, ja se näyttää, miksi …" is clear and natural (§12.5); 33 K right.
-- Scope: only these two sentences; the rest of this report stands from the earlier round.
-
-## Follow-up 2 (2026-11-04, fix re-check)
-- Fix applied in both places: the lesson's term "efektiivinen säteilylämpötila" is back (NOTES §12.2), and "vain" is gone. The Blocking item above is resolved. The sentences are still short and natural S2 Finnish.
+- fy2-8-L2-08 (exercises.json and solutions.md) against the reviewed Finnish: same table (5 rows, E and m), uncertainty 10 kt, correct option (2020 to 2024, 100 kt = 10 x 10 kt), exactly one correct flag, same five choices in the same order, tolerance and kinds equal.
+- Recomputed: 520 - 420 = 100 kt; 520 - 515 = 5 kt < 10 kt; intervals 510-530 and 410-430 kt do not overlap (2020/2021 intervals 510-530 and 505-525 do); slope -25 kt/a x 10 a from 420 gives 170 kt for 2034; 1000 GWh in both years sits in column E.
+- Each distractor still has one error and feedback that names it (wrong uncertainty comparison, unsupported cause, extrapolation, wrong column); no feedback gives a false number.
+- Solutions section keeps Find / Principle / Model answer as in fi; numbers equal.
+- NOTES.md §12: short sentences, one idea each, same terms as fi (epävarmuus, epävarmuusväli); the added sentence "Aineisto tukee päätelmää, kun taulukon luvut riittävät sen perusteluksi" explains the stem without hinting the answer.
+- check_i18n.py: nothing for fy2-8; build.py fy2-8 succeeds.

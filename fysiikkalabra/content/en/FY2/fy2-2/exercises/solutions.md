@@ -144,6 +144,16 @@
 **Answer:** $350\,\text{MJ}$, two significant figures as in the given value $0.35\,\text{GJ}$.
 **Reasonableness:** The megajoule is a smaller unit than the gigajoule, so the number must grow. The result is the energy of about $350 : 32 \approx 11$ litres of petrol, when a litre contains $32\,\text{MJ}$.
 
+## fy2-2-L1-09
+**Given:** energy $1\,\text{MJ}$
+**Find:** which of the four values is equal to $1\,\text{MJ}$.
+**Principle:** A prefix is a factor, and the energy stays the same when the way of writing it changes. Kilo means a thousand, mega a million and giga a billion, so each of these is a thousand times the previous one.
+**Formula:** $1\,\text{kJ} = 1000\,\text{J}$ and $1\,\text{MJ} = 1000\,\text{kJ}$
+**Conversions:** The megajoule is converted to kilojoules: $1\,\text{MJ} = 1\,000\,000\,\text{J} = 1\,000\,000 : 1000\,\text{kJ}$.
+**Substitution:** $1\,\text{MJ} = 1000\,\text{kJ}$
+**Answer:** The correct answer is $1000\,\text{kJ}$. The value $1000\,\text{J}$ is only $1\,\text{kJ}$, the value $1\,000\,000\,\text{kJ}$ is $1\,\text{GJ}$, and the value $1000\,\text{GJ}$ is a million times too large.
+**Reasonableness:** The megajoule is a larger unit than the kilojoule, so the same energy is a greater number in kilojoules. Check: $1000\,\text{kJ} \cdot 1000 = 1\,000\,000\,\text{J}$.
+
 ## fy2-2-L2-05
 **Given:** foods of the table: porridge $250\,\text{g}$ ($300\,\text{kJ}$ per hundred grams), banana $120\,\text{g}$ ($400\,\text{kJ}$) and orange juice $200\,\text{g}$ ($190\,\text{kJ}$); energy used in walking $220\,\text{kJ}$ per kilometre
 **Find:** energy of the breakfast $E$ in megajoules and the corresponding walking distance $s$ in kilometres

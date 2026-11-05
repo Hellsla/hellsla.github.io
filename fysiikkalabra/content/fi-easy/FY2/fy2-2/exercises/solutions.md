@@ -144,6 +144,16 @@
 **Vastaus:** $350\,\text{MJ}$. Vastauksessa on kaksi merkitsevää numeroa, kuten annetussa arvossa $0{,}35\,\text{GJ}$.
 **Järkevyys:** Megajoule on pienempi yksikkö kuin gigajoule. Lukuarvon on siis kasvettava. Tulos on noin $350 : 32 \approx 11$ bensiinilitran energia, kun litrassa on $32\,\text{MJ}$.
 
+## fy2-2-L1-09
+**Annettu:** energia $1\,\text{MJ}$
+**Kysytty:** mikä neljästä arvosta on yhtä suuri kuin $1\,\text{MJ}$.
+**Periaate:** Etuliite on kerroin. Energia pysyy samana, kun sen ilmoitustapa vaihtuu. Kilo tarkoittaa tuhatta, mega miljoonaa ja giga miljardia. Jokainen niistä on siis tuhat kertaa edellistä suurempi.
+**Kaava:** $1\,\text{kJ} = 1000\,\text{J}$ ja $1\,\text{MJ} = 1000\,\text{kJ}$
+**Muunnokset:** Megajoule muutetaan kilojouleiksi: $1\,\text{MJ} = 1\,000\,000\,\text{J} = 1\,000\,000 : 1000\,\text{kJ}$.
+**Sijoitus:** $1\,\text{MJ} = 1000\,\text{kJ}$
+**Vastaus:** Oikea vastaus on $1000\,\text{kJ}$. Arvo $1000\,\text{J}$ on vain $1\,\text{kJ}$. Arvo $1\,000\,000\,\text{kJ}$ on $1\,\text{GJ}$. Arvo $1000\,\text{GJ}$ on miljoona kertaa liian suuri.
+**Järkevyys:** Megajoule on suurempi yksikkö kuin kilojoule. Sama energia on siis kilojouleina suurempi luku. Tarkistus: $1000\,\text{kJ} \cdot 1000 = 1\,000\,000\,\text{J}$.
+
 ## fy2-2-L2-05
 **Annettu:** taulukon ruoat: kaurapuuro $250\,\text{g}$ ($300\,\text{kJ}$ sadassa grammassa), banaani $120\,\text{g}$ ($400\,\text{kJ}$) ja appelsiinimehu $200\,\text{g}$ ($190\,\text{kJ}$); kävelyn kulutus $220\,\text{kJ}$ kilometriä kohti
 **Kysytty:** aamupalan energia $E$ megajouleina ja sitä vastaava kävelymatka $s$ kilometreinä
