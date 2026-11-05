@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: fc675ddba93a47b0
+CONTENT-HASH: e6fd55e011a5217c
 
 ## Blocking
 (none)
@@ -8,7 +8,6 @@ CONTENT-HASH: fc675ddba93a47b0
 - none
 
 ## Checked
-- All 8 new tasks read in en against the Finnish: no steps, hints, sub-questions (a/b/c) or feedback lost; answer-box sentences kept.
-- Text is natural English; instructions, signs and "answer box" sentences are clear.
-- Terms consistent with the existing tasks of the set and the lesson (internal energy, heat, work, first law).
-- Solutions keep the Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness structure and all steps.
+- New task fy3-5-L1-09 read in en against the Finnish: nothing lost (text, all answer options or statements, every feedback, all solution steps and the estimate/reasoning sentences).
+- Language is natural English with the decimal point; the task is as clear and answerable as the Finnish.
+- Feedback of each wrong option names its misconception, as in the Finnish; the solution keeps the Given/Find/Principle/Model answer structure.

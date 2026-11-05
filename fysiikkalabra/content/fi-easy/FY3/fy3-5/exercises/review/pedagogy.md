@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: ec256559ecba9230
+CONTENT-HASH: b9b137c60b60a64a
 
 ## Blocking
 (none)
@@ -8,7 +8,6 @@ CONTENT-HASH: ec256559ecba9230
 - none
 
 ## Checked
-- All 8 new tasks read in fi-easy against the Finnish: no steps, hints, sub-questions (a/b/c) or feedback lost; answer-box sentences kept.
-- Text is plain Finnish: short sentences, one idea each; long Finnish sentences were split; terms (systeemi, sisäenergia, ensimmäinen pääsääntö) kept as in the lesson.
-- Terms consistent with the existing tasks of the set and the lesson (internal energy, heat, work, first law).
-- Solutions keep the Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness structure and all steps.
+- New task fy3-5-L1-09 read in fi-easy against the Finnish: nothing lost (text, all answer options or statements, every feedback, all solution steps and the estimate/reasoning sentences).
+- Language is clear Finnish per NOTES.md §12 (shorter sentences, same physics, terms unchanged); the task is as clear and answerable as the Finnish.
+- Feedback of each wrong option names its misconception, as in the Finnish; the solution keeps the Given/Find/Principle/Model answer structure.

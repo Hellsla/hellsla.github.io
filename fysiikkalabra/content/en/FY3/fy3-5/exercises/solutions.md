@@ -190,3 +190,13 @@
 **Substitution:** a) $P = \dfrac{239\,900\,\text{J}}{120\,\text{s}} = 1999\,\text{W} \approx 2.00\,\text{kW}$. b) $Q_\text{out} = 239.9\,\text{kJ} - 205.1\,\text{kJ} = 34.8\,\text{kJ}$ and the share is $\dfrac{34.8\,\text{kJ}}{239.9\,\text{kJ}} \cdot 100\,\% = 14.5\,\%$
 **Answer:** $Q_\text{out} = 34.8\,\text{kJ}$ (part b), three significant figures, like the values of the table, that is, about $14.5\,\%$ of the energy of the heating element. Part a): the mean power is $P = 2.00\,\text{kW}$. Part c): The missing energy has not disappeared: it has been transferred as heat through the wall of the kettle to the surrounding air and the table, whose internal energy has increased by the same amount. The first law holds when the net heat $Q = E_\text{v} - Q_\text{out}$ is used for the water. The accumulated loss $E_\text{v} - \Delta U$ grows on every row of the table: $8.1$, $16.3$, $26.1$ and $34.8\,\text{kJ}$, because the warm water gives off heat to the surroundings all the time.
 **Reasonableness:** The loss is smaller than the energy of the heating element ($34.8\,\text{kJ} < 239.9\,\text{kJ}$), so the internal energy of the water still increases, as in the table. Balance: $205.1\,\text{kJ} + 34.8\,\text{kJ} = 239.9\,\text{kJ}$. In the measurement the power is $2.00\,\text{kW}$ and the loss is on average about $0.29\,\text{kW}$ all the time, which is about $15\,\%$ of the power, that is, a clearly measurable part.
+
+## fy3-5-L1-09
+**Given:** work $W = 60\,\text{J}$ (the surroundings do work on the air), no heat is transferred, that is $Q = 0$, the air stays a gas
+**Find:** which of the five statements are true and which are false
+**Principle:** The change in internal energy is the sum of the heat transferred to the system and the work done on it, $\Delta U = Q + W$. In a thermally insulated cylinder $Q = 0$, and the work done on the air is positive, because the surroundings do work on the system.
+**Model answer:** Let us calculate the change in internal energy:
+
+$$\begin{aligned} \Delta U &= Q + W \\ &= 0 + 60\,\text{J} = 60\,\text{J} \end{aligned}$$
+
+Statement 1 is true, because the internal energy increases by $60\,\text{J}$. Statement 2 is true, because the air stays a gas and the increase in its internal energy raises the temperature. Statement 3 is false: $60\,\text{J}$ is work, and the heat is zero. Statement 4 is false, because work changes the internal energy even when no heat is transferred. Statement 5 is false, because heat is a transfer of energy and there is no heat in the air: the air has gained internal energy.

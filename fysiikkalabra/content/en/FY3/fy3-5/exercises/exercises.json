@@ -109,6 +109,45 @@
       "answer": 36,
       "unit": "kJ",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-5-L1-09",
+      "level": 1,
+      "text": "The air in a thermally insulated cylinder is compressed quickly by pushing a piston. The piston does work $60\\,\\text{J}$ on the air. Because of the insulation, no heat is transferred between the air and the surroundings, and the air stays a gas (example values). The air is the system.\n\nReason out which statements about the compression are true and which are false.",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "1 true, 2 true, 3 false, 4 false, 5 false",
+      "unit": "",
+      "tolerance": 0.02,
+      "statements": [
+        {
+          "text": "The internal energy of the air increases by $60\\,\\text{J}$.",
+          "true": true,
+          "feedback": "Correct: $\\Delta U = Q + W$, that is $\\Delta U = 0 + 60\\,\\text{J} = 60\\,\\text{J}$. No heat is transferred, so all of the work stays in the air as internal energy."
+        },
+        {
+          "text": "The temperature of the air rises even though no heat is transferred.",
+          "true": true,
+          "feedback": "Correct: the internal energy increases and the air stays a gas, so the temperature rises. Air can be heated by doing work on it, as the piston of a bicycle pump does."
+        },
+        {
+          "text": "A quantity of heat $60\\,\\text{J}$ is transferred to the air.",
+          "true": false,
+          "feedback": "Wrong: because of the insulation $Q = 0$. The number $60\\,\\text{J}$ is the work $W$ done by the piston, not heat. Work and heat are different ways of transferring energy."
+        },
+        {
+          "text": "The internal energy of the air does not change, because no heat is transferred.",
+          "true": false,
+          "feedback": "Wrong: both heat and work change the internal energy, $\\Delta U = Q + W$. Even though $Q = 0$, the work $W = 60\\,\\text{J}$ increases the internal energy."
+        },
+        {
+          "text": "After the compression there is more heat in the air than before.",
+          "true": false,
+          "feedback": "Wrong: heat is the transfer of energy, and no heat is stored in the air. The extra energy is internal energy, and it came in as work."
+        }
+      ]
     }
   ],
   "level2": [

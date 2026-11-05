@@ -1,17 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: fae7e906736b7f05
-Mode: translation delta
-Round: 1
+CONTENT-HASH: 79c6b33c4e73d6f3
 
 ## Blocking
 (none)
 
-## Fixed
-- exercises.json L3-04 data cells and solutions.md line 178: "lowest of winter" / "highest of summer" changed to "winter minimum" / "summer maximum" (natural English; numbers unchanged).
-
 ## Polish
-- None.
+- none
 
 ## Checked
-- Choices and feedback keep the Finnish distractor logic and do not leak the answer in the question text.
-- Prose is natural English; no Finnish left in en. fi-easy uses short sentences and explains terms (kapillaariputki, kaasun/nesteen hiukkaset).
+- New task fy3-8-L2-08 read in en against the Finnish: nothing lost (text, all answer options or statements, every feedback, all solution steps and the estimate/reasoning sentences).
+- Language is natural English with the decimal point; the task is as clear and answerable as the Finnish.
+- Feedback of each wrong option names its misconception, as in the Finnish; the solution keeps the Given/Find/Principle/Model answer structure.
