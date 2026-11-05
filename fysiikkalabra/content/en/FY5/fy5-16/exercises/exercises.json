@@ -56,7 +56,7 @@
           "feedback": "Wrong: hard and smooth surfaces reflect sound almost completely, so the sound circulates in the room longer and the reverberation time gets longer."
         },
         {
-          "text": "The speaker is asked to talk more quietly, so the sound has time to die away faster.",
+          "text": "The person speaking is asked to talk more quietly, so the sound has time to die away faster.",
           "feedback": "Wrong: the reverberation time is the time in which the level falls by $60\\,\\text{dB}$, and it does not depend on the initial level of the sound. It is determined by the surfaces of the room."
         },
         {
@@ -313,7 +313,7 @@
         "model",
         "reasoning"
       ],
-      "text": "At an outdoor festival one loudspeaker stack produces a level of $112\\,\\text{dB}$ at a distance of $2.0\\,\\text{m}$. Treat the stack as a point source in an open space without reflections: the level falls by $6\\,\\text{dB}$ every time the distance doubles. A listener stands still at a distance of $8.0\\,\\text{m}$.\n\nThe listener has foam earplugs that do not fit tightly: their attenuation is in practice only $8\\,\\text{dB}$ at all levels.\n\na) What is the noise level at the listener's position without earplugs?\n\nb) For how many hours may the listener stay there with the earplugs, when the reference is the upper action value ($8\\,\\text{h}$ at a level of $85\\,\\text{dB}$)?\n\nc) The concert lasts $3.0\\,\\text{h}$. What percentage is the dose of the reference dose, and is it enough for the listener to move to a distance of $16\\,\\text{m}$ and keep the earplugs in there? Justify by calculation.\n\nWrite the result of part b) in the answer box.",
+      "text": "At an outdoor festival one loudspeaker stack produces a level of $112\\,\\text{dB}$ at a distance of $2.0\\,\\text{m}$. Treat the stack as a point source in an open space without reflections: the level falls by $6\\,\\text{dB}$ every time the distance doubles. A listener stands still at a distance of $8.0\\,\\text{m}$.\n\nThe listener has foam earplugs that do not fit tightly: their attenuation is in practice only $8\\,\\text{dB}$ at all levels.\n\na) What is the noise level at the listener's position without earplugs?\n\nb) For how many hours may the listener stay there with the earplugs, when the reference is the upper action value ($8\\,\\text{h}$ at a level of $85\\,\\text{dB}$)?\n\nc) The concert lasts $3.0\\,\\text{h}$. What percentage of the reference dose is the dose, and is it enough for the listener to move to a distance of $16\\,\\text{m}$ and keep the earplugs in there? Justify by calculation.\n\nWrite the result of part b) in the answer box.",
       "answer": 1.6,
       "unit": "h",
       "tolerance": 0.03
