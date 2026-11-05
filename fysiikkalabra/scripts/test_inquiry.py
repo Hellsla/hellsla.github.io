@@ -105,11 +105,9 @@ def page_form(pg, b, url, acts, page):
     for sid, t in inquiry.STAGES:
         here = [a for a in acts if a["stage"] == sid and a["type"] != "exercises"]
         if here: want += [inquiry.NAV.get(sid, t)]          # the exit ticket has no link of its own: it opens Tarkista osaamisesi (teacher 2026-11-04)
-    if pg.evaluate("!!document.getElementById('kertaa-kasitteet')"):   # the chapter's concept cards come after the exit ticket (teacher 2026-11-03)
-        lang = "en" if pg.evaluate("document.documentElement.lang") == "en" else "fi"
-        want.append(json.loads((ROOT / f"lang/{lang}.json").read_text())["cards"]["nav"])
     want.append(inquiry.EXERCISES_TITLE)
-    check("nav names the stages, the concept cards and the exercises (no separate exit ticket link)", toc == want, f"{toc} != {want}")
+    check("nav names the stages and the exercises (no link of their own for the exit ticket or the concept cards)", toc == want, f"{toc} != {want}")
+    check("the concept cards close Harjoittele (teacher 2026-11-05)", pg.evaluate("(() => { const k = document.getElementById('kertaa-kasitteet'); if (!k) return true; const s = k.closest('section.stage'); return !!s && (s.id === 'sovella' || !document.getElementById('sovella')) && s.lastElementChild === k; })()"))
     check("the exit ticket opens Tarkista osaamisesi, before its checks", pg.evaluate("(() => { const x = document.getElementById('exit'); if (!x) return true; const a = x.closest('.activity'), s = x.closest('#tarkista'); return !!s && s.querySelector('.activity') === a; })()"))
     order = pg.evaluate("[...document.querySelectorAll('article > section, article > .intro')].map((e) => e.id || e.className)")
     order = [o for o in order if o != "credits"]          # the photo credits (build.photo_credits) follow as the page's colophon
@@ -188,7 +186,7 @@ def generic(lid):
     toc = re.search(r'<nav class="toc"[^>]*>(.*?)</nav>', page, re.S)
     links = re.findall(r'href="#([^"]+)"', toc.group(1)) if toc else []
     shown = [s for s, _ in inquiry.STAGES if any(a["stage"] == s and a["type"] != "exercises" for a in acts)]
-    shown += (["kertaa-kasitteet"] if 'id="kertaa-kasitteet"' in page else []) + ["exercises"]
+    shown += ["exercises"]
     check("navigation lists every stage in order and each link has a target", links == shown and all(f'id="{x}"' in page for x in links), f"nav {links}, stages {shown}")
     for aid, seed, spec in choice_items(acts):
         want = inquiry.choice_order(spec["choices"], lid, seed)
@@ -378,7 +376,7 @@ tk = page_html[page_html.index('<section class="stage" id="tarkista"'):]
 check("the exit ticket opens Tarkista osaamisesi, with no nav link of its own", tk.index('id="exit"') < tk.index('</section>') and tk.index('id="exit"') < tk.index('class="activity act-choice')
       and '<a href="#exit"' not in page_html)
 check("the exercises come last, after Tarkista osaamisesi", page_html.index('id="exit"') < page_html.index('<section class="stage stage-practice" id="exercises"') and page_html.count('id="exercises"') == 1
-      and re.search(r'<a href="#tarkista"[^>]*>(?:(?!</a>).)*</a>(?:<a href="#kertaa-kasitteet"[^>]*>(?:(?!</a>).)*</a>)?<a href="#exercises"[^>]*>(?:(?!</a>).)*Tehtävät(?:(?!</a>).)*</a></nav>', page_html) is not None)
+      and re.search(r'<a href="#tarkista"[^>]*>(?:(?!</a>).)*</a><a href="#exercises"[^>]*>(?:(?!</a>).)*Tehtävät(?:(?!</a>).)*</a></nav>', page_html) is not None)
 check("Ennusta is a closed box", re.search(r'<section class="stage" id="ennusta"[^>]*><h2>.*?</h2><details class="fold" data-fold="ennusta">', page_html) is not None)
 check("no old names on the page", not any(x in page_html for x in ("Herätä kiinnostus", "Lähtölippu", ">Selitä<")))
 check("exercises and exit ticket kept (8/7/5, 1 item)", page_html.count('class="level"') == 3 and page_html.count("<li>$(s, F)$-kuvaajassa") == 1 and '<span class="count">8 tehtävää' in page_html and '<span class="count">7 tehtävää' in page_html and '<span class="count">5 tehtävää' in page_html)
