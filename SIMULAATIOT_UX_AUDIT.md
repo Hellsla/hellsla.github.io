@@ -68,3 +68,7 @@ Tällä tavalla ylläpito helpottuu ja ulkoasu pysyy aidosti yhtenäisenä uusis
 - `FY03_ideaalikaasulaki` ja `FY03_Avogadro` jätettiin ennalleen: niiden säädinrakenne (`.control`-lohkot) eroaa muista, ja teeman `button{font:inherit}` olisi muuttanut nappien kokoa. Ne ja loput FY03-tiedostot (`Moolitilavuus`, `ideaali_ja_reaalikaasu`, `jaahdytyskone`, `jaakaappi`, `lampovoimakone`, `faasikaavio`) siirretään teemaan yksi kerrallaan, kun niiden ulkoasu tarkistetaan samalla menetelmällä.
 - `fy05/`-simulaatioiden "yhteinen ulkoasu" -lohko on kopioitu 18 tiedostoon 14 eri versiona, joten sitä ei voi irrottaa mekaanisesti; teeman `panel`-moodi on kirjoitettu sen pohjalta, ja tiedostot voi siirtää siihen yksitellen.
 - Google Fonts -pyynnöt eivät koske FY-simulaatioita (ne käyttävät system-ui-fonttia). Ainoa poikkeus `FY04_voimakuviot` käyttää nyt itse isännöityjä fontteja (`fonts/fonts.css`). Muut Google Fonts -lataukset ovat koulun brändisivuilla (ahjo, kiviruukki, diplomipolut), eivät simulaatioissa.
+
+## Tilanne 2026-11-05
+
+- `FY03_Moolitilavuus` käyttää nyt teematiedostoa (värit, fonttiperhe, tausta tokeneina). Sen koko ruudun asettelu ja ohjaimet jätettiin ennalleen, koska 16:9-kehys muuttaisi ulkoasua. Lasketut tyylit tarkistettiin ennen ja jälkeen leveyksillä 1280 ja 390: ei muutoksia. Jäljellä: `ideaali_ja_reaalikaasu`, `jaahdytyskone`, `jaakaappi`, `lampovoimakone`, `faasikaavio`.
