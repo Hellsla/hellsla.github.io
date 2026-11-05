@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 709d7df0039b5be6
-Round: 2
+CONTENT-HASH: 9b65aff5f585da33
+Round: 3
 
 ## Blocking
 (none)
@@ -9,9 +9,8 @@ Round: 2
 (none)
 
 ## Checked
-- Round 1 -> 2 change (only solutions.md, L3-05 "Answer:" line, now "in the answer box, the result of part b), $940\,\text{kg}$."): 940 kg is part b)'s result and the box value 940; wording matches the Finnish and reads fine. Mode: delta.
-- Task order, levels, demands (draw graph, read slope, explain, justify) and solution steps equal the Finnish for all 16 tasks.
-- Part tasks a)-d) in L3-04/L3-05 and the line "enter the result of part b) in the answer box" kept.
-- Solutions keep the Finnish order (Given, Find, Principle, Formula, Conversions, Substitution, Answer, Reasonableness).
-- Language level: English; no Finnish left.
-- check_i18n.py en: 0 errors. No edits needed.
+- New order task L2-08: text gives the four data lines, the prompt names quantity and direction (smallest to greatest), four items; as in the Finnish.
+- Conversions g and t to kg are needed and shown in the solution; the order differs from the mass order, so the task needs the calculation.
+- Solution keeps Find, Principle, Model answer; explains why the order differs from mass order and gives an estimate check.
+- English reads naturally; fuel names (petrol, firewood, coal, milled peat) match the other tasks.
+- Duplicate "put in order" sentence (text and prompt) avoided as in the fi-easy wording; the other 16 tasks unchanged.

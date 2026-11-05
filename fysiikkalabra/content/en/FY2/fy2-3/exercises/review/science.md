@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: e321927e96884da9
+CONTENT-HASH: 563ece0a62c60f6f
 
 ## Blocking
 (none)
 
 ## Fixed
-- exercises.json L1-06 feedback — "power tells the quotient of the transformed energy and time" reworded to "power is the energy transformed divided by the time taken" (clearer English, same meaning).
+(none needed)
 
 ## Polish
 (none)
 
 ## Checked
-- New tasks L1-06..08, L2-05..07, L3-04..05 compared with the Finnish: ids, answers (30 kW, 1.96 kWh, 3.0 kWh, 1800 W, 2.8 GWh, 43 EUR), units, tolerances, correct flags, choices and feedback, all data table cells match; decimal point in JSON and LaTeX.
-- Solutions: every number, conversion and substitution identical to fi (3.6 MJ / 120 s, 1960 Wh, 90 min = 1.5 h, 5/6 h, differences 200..800 MW, 47.0/119.0 = 0.395, 346 kWh, 43.2 EUR, 14 a).
-- No Finnish left in en; no formula differences (check_i18n en: 0 errors).
+- New task L2-08 (YO-skill form 6, prediction of a change) compared with the Finnish: same data (E = 6.0 kWh, t = 3.0 h and 1.5 h), same four choices, same correct one (power doubles), same tolerance and kind; decimal point in text and LaTeX.
+- Recomputed: P1 = 6.0/3.0 = 2.0 kW, P2 = 6.0/1.5 = 4.0 kW, ratio 2.0; each wrong option's feedback is physically right (P ~ 1/t, not halved, not constant, not x4).
+- Solution identical in numbers and reasoning to fi; natural English, no Finnish left; check_i18n clean, build succeeds.

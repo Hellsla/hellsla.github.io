@@ -193,3 +193,13 @@ b) About $940\,\text{kg}$ more wood than pellets is used, two significant figure
 c) The consumption of pellets rises at efficiency $0.75$ to $2800\,\text{kg}$, that is $330\,\text{kg}$ more: when the efficiency drops, part of the energy released goes to losses and more fuel is needed for the same useful energy.
 d) The least oil is used, because its heat of combustion is more than twice that of wood and pellets ($43 : 15 = 2.9$), while the efficiencies are of the same order of magnitude ($0.90$ and $0.70$); the heat of combustion determines the order of magnitude of the mass.
 **Reasonableness:** An estimate without losses: wood $36\,000 : 15 = 2400\,\text{kg}$ and pellets $36\,000 : 17 = 2120\,\text{kg}$. The efficiencies increase these to $2400 : 0.70 = 3430\,\text{kg}$ and $2120 : 0.85 = 2490\,\text{kg}$, which agrees with the result. The mass for the pellet boiler grows by a factor of $2824\,\text{kg} : 2491\,\text{kg} = 1.13$, and $0.85 : 0.75 = 1.13$, as it should.
+
+## fy2-5-L2-08
+**Find:** the order of the fuels by the energy $E$ released, from smallest to greatest
+**Principle:** The energy released from each fuel is $E = Hm$ when the mass is in kilograms. The order is not the same as the order of the masses or of the heats of combustion, because both affect the energy.
+**Model answer:** First convert the masses to kilograms: $1500\,\text{g} = 1.5\,\text{kg}$ and $0.0040\,\text{t} = 4.0\,\text{kg}$. Then calculate the energies:
+Petrol: $E = 43\,\tfrac{\text{MJ}}{\text{kg}} \cdot 1.5\,\text{kg} = 64.5\,\text{MJ}$
+Firewood: $E = 15\,\tfrac{\text{MJ}}{\text{kg}} \cdot 5.0\,\text{kg} = 75\,\text{MJ}$
+Coal: $E = 26\,\tfrac{\text{MJ}}{\text{kg}} \cdot 4.0\,\text{kg} = 104\,\text{MJ}$
+Milled peat: $E = 10\,\tfrac{\text{MJ}}{\text{kg}} \cdot 12\,\text{kg} = 120\,\text{MJ}$
+From smallest to greatest: petrol, firewood, coal, milled peat. By mass the order would be petrol ($1.5\,\text{kg}$), coal ($4.0\,\text{kg}$), firewood ($5.0\,\text{kg}$), milled peat ($12\,\text{kg}$), so firewood and coal swap places: the greater heat of combustion of coal makes up for its smaller mass. Estimate: petrol has more than $40\,\text{MJ}$ per kilogram but only a small amount, so its energy is the smallest, which agrees.

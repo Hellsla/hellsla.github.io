@@ -248,6 +248,33 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy2-5-L2-08",
+      "level": 2,
+      "text": "Four fuels are burned separately. The heat of combustion $H$ and the mass $m$ burned are given for each.\n\nPetrol: $H = 43\\,\\tfrac{\\text{MJ}}{\\text{kg}}$, $m = 1500\\,\\text{g}$.\n\nFirewood: $H = 15\\,\\tfrac{\\text{MJ}}{\\text{kg}}$, $m = 5.0\\,\\text{kg}$.\n\nCoal: $H = 26\\,\\tfrac{\\text{MJ}}{\\text{kg}}$, $m = 0.0040\\,\\text{t}$.\n\nMilled peat: $H = 10\\,\\tfrac{\\text{MJ}}{\\text{kg}}$, $m = 12\\,\\text{kg}$.\n\nCalculate the energy $E = Hm$ released by each fuel and put the fuels in order.",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "prompt": "Put the fuels in order of the energy $E$ released, from smallest to greatest.",
+      "order": [
+        {
+          "text": "Petrol"
+        },
+        {
+          "text": "Firewood"
+        },
+        {
+          "text": "Coal"
+        },
+        {
+          "text": "Milled peat"
+        }
+      ],
+      "answer": "Petrol (about $65\\,\\text{MJ}$), firewood ($75\\,\\text{MJ}$), coal ($104\\,\\text{MJ}$), milled peat ($120\\,\\text{MJ}$).",
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level3": [
