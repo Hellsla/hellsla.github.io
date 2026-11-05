@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 8ae898b29f00c580
+CONTENT-HASH: 2c9fdf155f72e6a3
 
 ## Blocking
 (none)
@@ -14,3 +14,5 @@ CONTENT-HASH: 8ae898b29f00c580
 - solutions.md L1-09: Principle E_initial = E_final for an isolated system, all energy forms incl. thermal; model answer 1, 3, 5 true and 2, 4 false, same as fi. No numbers, so no answers.py line needed.
 - No decimal comma/point issue (only "1 m"); no formulas added or lost.
 - check_i18n.py shows nothing for fy2-1; build.py fy2-1 succeeds. No translation edits were needed.
+- Round 2 (commit 442c889ba): L2-05 Reasonableness sum check now split into 60 % + 17.5 % = 77.5 %, 15 % + 7.5 % = 22.5 %, total 100 %. Recomputed from 36.0/10.5/9.0/4.5 GJ of 60.0 GJ: 60, 17.5, 15, 7.5 %; correct, same as fi.
+- Round 2: check_i18n.py shows nothing for fy2-1; build.py fy2-1 succeeds; hash unchanged at start and end of round.

@@ -1,20 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 094b25cee3a6cbf1
+CONTENT-HASH: eddb481aa99052bc
 Mode: full
-Round: 2
+Round: 3
 
 ## Blocking
 (none)
 
 ## Fixed
-- none needed for the new task fy2-4-L2-08.
+- none needed.
 
 ## Polish
 - none
 
 ## Checked
-- Task L2-08 (find the error, YO-skill form): situation first, question last; four lines with one real, common error; options map to lines plus "no error"; feedback repairs each wrong choice (names the likely confusion).
-- Same level, kind tags and choice order as the reviewed Finnish.
-- Natural English; no Finnish left.
-- Solution follows Kysytty/Periaate/Mallivastaus; checks line by line, then reasonableness; followable by a student who missed it.
-- Not a repeat of the lesson's worked example; practises the slot's goal (efficiency as a ratio, at most 100 %).
+- L2-08 after the split of the formula chain: correct-option feedback now reads eta = E_a : E_o, then eta = 360 kJ : 600 kJ = 0.60, then 60 % (joined by 'that is'/'which is' or 'eli'); solutions.md Rivi/Line 2 split likewise. Same numbers, formulas and correct option as the reviewed Finnish.
+- Recomputed: E_o = 2500 W * 240 s = 600 kJ, E_h = 240 kJ, eta = 0.60, 240/600 = 0.40, 60 % + 40 % = 100 %.
+- check_i18n.py shows nothing for fy2-4; build.py fy2-4 succeeds. Hash taken at start and end: unchanged.
+- Shorter inline formulas read better at 390 px; the step order is kept and no step is lost.
+- Wording stays natural English.

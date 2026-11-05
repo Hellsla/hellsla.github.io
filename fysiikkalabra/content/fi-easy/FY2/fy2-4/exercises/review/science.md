@@ -1,21 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 68335d9fc09d02ad
+CONTENT-HASH: 52cd5fdc12763c25
 Mode: full
-Round: 2
+Round: 3
 
 ## Blocking
 (none)
 
 ## Fixed
-- none needed for the new task fy2-4-L2-08.
+- none needed.
 
 ## Polish
 - none
 
 ## Checked
-- Scripted comparison with fi over all 20 exercises: ids, order, answers, units, tolerances, level/core/kind and correct flags equal.
-- L2-08: numbers and formulas equal fi (Finnish decimal comma kept); NOTES.md section 12 followed: terms kept (hyötysuhde, hyötyenergia, häviöenergia), added "Tarkista rivit yksi kerrallaan", shorter sentences in feedback and solution, no step dropped.
-- Recomputed L2-08: E_o = 2500 W * 240 s = 600 kJ; E_h = 240 kJ; eta = 360/600 = 0.60 (line 4 swapped, 167 % > 100 %); 240/600 = 0.40, 60 % + 40 % = 100 %. Line 4 is the only wrong line; each distractor's feedback is true.
-- Physics same as the reviewed Finnish: steady-power E = P t, conservation, eta = E_a/E_o <= 100 %; within FY2 scope.
-- solutions.md L2-08 equals fi in content, steps and numbers.
-- check_i18n.py shows nothing for fy2-4; build.py fy2-4 succeeds.
+- L2-08 after the split of the formula chain: correct-option feedback now reads eta = E_a : E_o, then eta = 360 kJ : 600 kJ = 0.60, then 60 % (joined by 'that is'/'which is' or 'eli'); solutions.md Rivi/Line 2 split likewise. Same numbers, formulas and correct option as the reviewed Finnish.
+- Recomputed: E_o = 2500 W * 240 s = 600 kJ, E_h = 240 kJ, eta = 0.60, 240/600 = 0.40, 60 % + 40 % = 100 %.
+- check_i18n.py shows nothing for fy2-4; build.py fy2-4 succeeds. Hash taken at start and end: unchanged.
+- Physics unchanged: steady-power E = P t, conservation, eta <= 100 %.

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 8ae898b29f00c580
+CONTENT-HASH: 2c9fdf155f72e6a3
 
 ## Blocking
 (none)
@@ -12,3 +12,4 @@ CONTENT-HASH: 8ae898b29f00c580
 - Wording is natural for the language and uses the glossary terms for mechanical, thermal, potential and kinetic energy.
 - Model answer in solutions.md explains each true and false statement, as in fi.
 - fi-easy (NOTES.md §12): short sentences with one idea each; the task adds one plain sentence explaining that an isolated system does not exchange energy with its surroundings; no physics added or lost.
+- Round 2: the split L2-05 sum check is shorter, reads in steps joined by the connecting words, and keeps the numbers of fi; no pedagogy issue.
