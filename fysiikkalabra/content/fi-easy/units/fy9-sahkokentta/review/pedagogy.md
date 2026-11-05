@@ -1,5 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: b3d2c2bde898a57e
+CONTENT-HASH: 5d7c37ca8b9e6324
+
+## Delta review
+
+Delta review (2026-11-05). `git diff dcad1b122 -- content/fi-easy/units/fy9-sahkokentta lessons/units/fy9-sahkokentta` shows one change only: sovella/tasks.json s1 b, rubric criterion `calculation` (1 p). The long inline formula q = 0,080 m·sqrt(4,93·10^-4 N / 8,988·10^9 N·m²/C²) is now split into $F_\text{s} = 4{,}93 \cdot 10^{-4}\,\text{N}$ ja $k = 8{,}988 \cdot 10^{9}\,\text{N}\cdot\text{m}^2/\text{C}^2$, joten $q = 0{,}080\,\text{m} \cdot \sqrt{F_\text{s}/k} \approx 1{,}87 \cdot 10^{-8}\,\text{C}$ ja $n = q/e \approx 1{,}2 \cdot 10^{11}$. The text is identical to the Finnish source's criterion (check_i18n fi-easy 0 errors; the S2 formula-keeping rule holds).
+
+Pedagogy: the split shows the substitution in the order a student writes it (given values, then the solved formula), which matches criterion 1 and makes the rubric easier to apply; the criterion still requires numbers with units and the correct result, so its meaning and its 1 p are unchanged. Language (ja … , joten …) is plain Selkeä suomi. No new issue.
+
+## Earlier review (still valid)
 
 Pedagogy review of the Selkeä suomi (S2) translation of fy9-sahkokentta against NOTES.md §12.
 

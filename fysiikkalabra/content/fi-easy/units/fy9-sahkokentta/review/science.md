@@ -1,5 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: b3d2c2bde898a57e
+CONTENT-HASH: 5d7c37ca8b9e6324
+
+## Delta review
+
+Delta review (2026-11-05). `git diff dcad1b122 -- content/fi-easy/units/fy9-sahkokentta lessons/units/fy9-sahkokentta` shows one change only: sovella/tasks.json s1 b, rubric criterion `calculation` (1 p). The long inline formula q = 0,080 m·sqrt(4,93·10^-4 N / 8,988·10^9 N·m²/C²) is now split into $F_\text{s} = 4{,}93 \cdot 10^{-4}\,\text{N}$ ja $k = 8{,}988 \cdot 10^{9}\,\text{N}\cdot\text{m}^2/\text{C}^2$, joten $q = 0{,}080\,\text{m} \cdot \sqrt{F_\text{s}/k} \approx 1{,}87 \cdot 10^{-8}\,\text{C}$ ja $n = q/e \approx 1{,}2 \cdot 10^{11}$. The text is identical to the Finnish source's criterion (check_i18n fi-easy 0 errors; the S2 formula-keeping rule holds).
+
+Science: recomputed q = 0,080·sqrt(4,93e-4/8,988e9) = 1,874·10^-8 C, n = 1,17·10^11; values, units and the result are unchanged. F_s is the unit's own symbol for the electric force (same as in criterion 1, $q = r\sqrt{F_\text{s}/k}$), so the split names the given values and keeps the physics. Points (1 p, part b 4 p, task total) unchanged; practice.py check and units.py check OK. No new issue.
+
+## Earlier review (still valid)
 
 Science review of the Selkeä suomi translation of fy9-sahkokentta (source content/fi/units/fy9-sahkokentta/, passed).
 

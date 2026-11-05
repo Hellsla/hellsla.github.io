@@ -1,5 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: b3d2c2bde898a57e
+CONTENT-HASH: 5d7c37ca8b9e6324
+
+## Delta review
+
+Delta review (2026-11-05). `git diff dcad1b122 -- content/fi-easy/units/fy9-sahkokentta lessons/units/fy9-sahkokentta` shows one change only: sovella/tasks.json s1 b, rubric criterion `calculation` (1 p). The long inline formula q = 0,080 m·sqrt(4,93·10^-4 N / 8,988·10^9 N·m²/C²) is now split into $F_\text{s} = 4{,}93 \cdot 10^{-4}\,\text{N}$ ja $k = 8{,}988 \cdot 10^{9}\,\text{N}\cdot\text{m}^2/\text{C}^2$, joten $q = 0{,}080\,\text{m} \cdot \sqrt{F_\text{s}/k} \approx 1{,}87 \cdot 10^{-8}\,\text{C}$ ja $n = q/e \approx 1{,}2 \cdot 10^{11}$. The text is identical to the Finnish source's criterion (check_i18n fi-easy 0 errors; the S2 formula-keeping rule holds).
+
+Visual: rebuilt the preview and checked it in Playwright (scripts/_browser) at 360 and 1280 px with every details open and window.flFitMath run as on the page. No page errors, no KaTeX errors, page scrollWidth = viewport at both widths. At 1280 px the criterion is two lines with nothing cut. At 360 px F_s and k wrap onto their own lines; the q formula is 319 px in a 278 px box, so lesson.js gives it its own horizontally scrolling line (kx-wide). That is the site's supported way and check_layout accepts it: `check_layout.py fy9-sahkokentta --width 360` and `--width 1280` both print OK for preview/fi-easy. Polish (not blocking, should be done in the Finnish source first, because S2 has to keep every Finnish formula): splitting the q formula after $\sqrt{F_\text{s}/k}$ into a second formula $q \approx 1{,}87 \cdot 10^{-8}\,\text{C}$ would remove the scroll at 360 px. I tried that in fi-easy alone, and check_i18n flagged it (formula lost from Finnish), so I reverted it. Content is as committed.
+
+## Earlier review (still valid)
 
 Visual & editorial review of the Selkeä suomi translation of fy9-sahkokentta. Preview built with
 `python3 scripts/build.py fy9-sahkokentta` → preview/fi-easy/fy9-sahkokentta.html, checked in Playwright
