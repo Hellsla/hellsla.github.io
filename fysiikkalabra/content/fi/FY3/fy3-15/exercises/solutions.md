@@ -74,30 +74,6 @@
 **Vastaus:** $12{,}0\,\text{GWh}$, kolme merkitsevää numeroa. Teho $500\,\text{MW}$ on annettu kolmella numerolla, ja vuorokausi on täsmälleen $24\,\text{h}$.
 **Järkevyys:** Arvio: $500\,\text{MW} \cdot 24\,\text{h} \approx 500 \cdot 24\,\text{MWh} = 12\,000\,\text{MWh}$, joka on $12\,\text{GWh}$. Yksi tunti antaisi $0{,}5\,\text{GWh}$, ja vuorokaudessa on 24 tuntia, joten luku on oikeaa kokoluokkaa. Sama energia on $12{,}0 \cdot 3{,}6 \cdot 10^{12}\,\text{J} \approx 4{,}3 \cdot 10^{13}\,\text{J}$.
 
-## fy3-15-L1-09
-**Annettu:** polttoaineteho $P_0 = 1200\,\text{MW}$, vesivirta $12\,\tfrac{\text{m}^3}{\text{s}}$, veden lämpötila $8\,{}^\circ\text{C} \to 18\,{}^\circ\text{C}$, $\rho = 1000\,\tfrac{\text{kg}}{\text{m}^3}$ ja $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
-**Kysytty:** lauhduttimesta veteen siirtyvän lämpötehon $P_\text{L}$ suuruusluokka
-**Periaate:** Veteen siirtyvä lämpöteho on $P_\text{L} = c\,q_m\,\Delta T$, missä $q_m$ on massavirta (kg/s) ja $\Delta T$ veden lämpötilan nousu lauhduttimessa. Suuruusluokka riittää, joten arvot voi pyöristää, mutta tiheys on käytettävä ja $\Delta T$ on lämpötilojen erotus kelvineinä.
-**Mallivastaus:** Massavirta:
-
-$q_m = \rho\,\dfrac{V}{t}$
-
-$q_m = 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 12\,\tfrac{\text{m}^3}{\text{s}} = 12\,000\,\tfrac{\text{kg}}{\text{s}}$
-
-Lämpötilan nousu:
-
-$\Delta T = 18\,{}^\circ\text{C} - 8\,{}^\circ\text{C} = 10\,\text{K}$
-
-Lämpöteho:
-
-$P_\text{L} = c\,q_m\,\Delta T$
-
-$P_\text{L} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 12\,000\,\tfrac{\text{kg}}{\text{s}} \cdot 10\,\text{K}$
-
-$P_\text{L} = 5{,}0 \cdot 10^8\,\text{W} = 500\,\text{MW}$
-
-Lähin vaihtoehto on $500\,\text{MW}$. Järkevyys: tulos on noin $42\,\%$ polttoaineteholla $1200\,\text{MW}$, mikä sopii siihen, että lauhduttimen kautta siirtyy suuri osa polttoaineen energiasta. Muut vaihtoehdot syntyvät virheistä: $0{,}5\,\text{MW}$ kun tiheys jää käyttämättä, $50\,\text{MW}$ kun kuutiometri luetaan sadaksi kilogrammaksi ja $15\,000\,\text{MW}$ kun nousuna käytetään loppulämpötilaa kelvineinä.
-
 ## fy3-15-L2-01
 **Annettu:** polttoaineteho $P_0 = 300\,\text{MW}$, kattilan hyötysuhde $\eta_1 = 0{,}880$, höyrykierron $\eta_2 = 0{,}420$ ja generaattorin $\eta_3 = 0{,}980$
 **Kysytty:** laitoksen sähköteho $P_3$ megawatteina
@@ -167,6 +143,30 @@ Lähin vaihtoehto on $500\,\text{MW}$. Järkevyys: tulos on noin $42\,\%$ poltto
 **Sijoitus:** $\eta = 0{,}920 \cdot 0{,}410 \cdot 0{,}970 = 0{,}3659 = 36{,}6\,\%$
 **Vastaus:** $36{,}6\,\%$, kolme merkitsevää numeroa kuten annetuissa hyötysuhteissa.
 **Järkevyys:** Oppilaan virhe: hyötysuhteiden summa $230\,\%$ olisi yli $100\,\%$, mikä on mahdotonta, koska laitos ei voi tuottaa enemmän sähköä kuin polttoaineessa on energiaa. Jokainen vaihe pienentää jäljellä olevaa tehoa, joten hyötysuhteet kerrotaan eikä lasketa yhteen. Tulo $0{,}366$ on pienempi kuin heikoin vaihe $0{,}410$, kuten pitääkin, kun kaikki tekijät ovat alle 1. Arvio: $0{,}9 \cdot 0{,}4 \cdot 1{,}0 = 0{,}36$. Hukkalämpöä on $100\,\% - 36{,}6\,\% = 63{,}4\,\%$ polttoaineteholle.
+
+## fy3-15-L2-08
+**Annettu:** polttoaineteho $P_0 = 1200\,\text{MW}$, vesivirta $12\,\tfrac{\text{m}^3}{\text{s}}$, veden lämpötila $8\,{}^\circ\text{C} \to 18\,{}^\circ\text{C}$, $\rho = 1000\,\tfrac{\text{kg}}{\text{m}^3}$ ja $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
+**Kysytty:** lauhduttimesta veteen siirtyvän lämpötehon $P_\text{L}$ suuruusluokka
+**Periaate:** Veteen siirtyvä lämpöteho on $P_\text{L} = c\,q_m\,\Delta T$, missä $q_m$ on massavirta ($\text{kg/s}$) ja $\Delta T$ veden lämpötilan nousu lauhduttimessa. Suuruusluokka riittää, joten arvot voi pyöristää, mutta tiheys on käytettävä ja $\Delta T$ on lämpötilojen erotus kelvineinä.
+**Mallivastaus:** Massavirta:
+
+$q_m = \rho\,\dfrac{V}{t}$
+
+$q_m = 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 12\,\tfrac{\text{m}^3}{\text{s}} = 12\,000\,\tfrac{\text{kg}}{\text{s}}$
+
+Lämpötilan nousu:
+
+$\Delta T = 18\,{}^\circ\text{C} - 8\,{}^\circ\text{C} = 10\,\text{K}$
+
+Lämpöteho:
+
+$P_\text{L} = c\,q_m\,\Delta T$
+
+$P_\text{L} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 12\,000\,\tfrac{\text{kg}}{\text{s}} \cdot 10\,\text{K}$
+
+$P_\text{L} \approx 5{,}0 \cdot 10^8\,\text{W} = 500\,\text{MW}$
+
+Lähin vaihtoehto on $500\,\text{MW}$. Järkevyys: tulos on noin $42\,\%$ polttoaineteosta $1200\,\text{MW}$, mikä sopii siihen, että lauhduttimen kautta siirtyy suuri osa polttoaineen energiasta. Muut vaihtoehdot syntyvät virheistä: $0{,}5\,\text{MW}$ kun tiheys jää käyttämättä, $50\,\text{MW}$ kun kuutiometri luetaan sadaksi kilogrammaksi ja $15\,000\,\text{MW}$ kun nousuna käytetään loppulämpötilaa kelvineinä.
 
 ## fy3-15-L3-01
 **Annettu:** $P_0 = 600\,\text{MW}$. Pelkkä sähkö: $P_\text{s,0} = 240\,\text{MW}$. Täysi yhteistuotanto: $P_\text{s,täysi} = 180\,\text{MW}$ ja $P_\text{k,täysi} = 348\,\text{MW}$. Nyt kaukolämpöteho on $P_\text{k} = 200\,\text{MW}$.

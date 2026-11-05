@@ -254,7 +254,7 @@
         {
           "text": "Työ on $4\\,W_1$.",
           "correct": true,
-          "feedback": "Oikein: työ on voimakuvaajan kolmion pinta-ala. Sekä matka että suurin voima kaksinkertaistuvat, joten ala on $2 \\cdot 2 = 4$-kertainen."
+          "feedback": "Oikein: työ nelinkertaistuu."
         }
       ],
       "reason_prompt": "Mikä perustelu selittää vastauksesi?",

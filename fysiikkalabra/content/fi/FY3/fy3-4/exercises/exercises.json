@@ -134,7 +134,7 @@
         {
           "text": "$10^{7}\\,\\text{Pa}$",
           "correct": true,
-          "feedback": "Oikein: $\\rho g h \\approx 1000 \\cdot 9{,}81 \\cdot 1000\\,\\text{Pa} \\approx 9{,}8 \\cdot 10^{6}\\,\\text{Pa}$, mikä on lähinnä kymmenpotenssia $10^{7}$."
+          "feedback": "Oikein: $\\rho g h \\approx 1000 \\cdot 9{,}81 \\cdot 1000\\,\\text{Pa}$, eli $\\rho g h \\approx 9{,}8 \\cdot 10^{6}\\,\\text{Pa}$. Se on lähinnä kymmenpotenssia $10^{7}$."
         },
         {
           "text": "$10^{8}\\,\\text{Pa}$",

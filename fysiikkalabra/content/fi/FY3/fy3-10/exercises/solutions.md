@@ -92,9 +92,9 @@
 ## fy3-10-L2-08
 **Kysytty:** mikä oppilaan laskun riveistä on väärin.
 **Periaate:** Tilanyhtälö $pV = nRT$ vaatii perusyksiköt: paine pascaleina, tilavuus kuutiometreinä ja lämpötila kelvineinä. Kun tulos on kelvineinä, celsiusasteet saadaan vähentämällä $273$, koska celsiuslämpötilaan lisätään $273$ kelvineiksi muutettaessa. Laskun voi tarkistaa rivi riviltä: yksikkömuunnokset, yhtälön ratkaisu, sijoitus ja lopuksi muunnos celsiusasteiksi.
-**Mallivastaus:** Rivi 1: $100\,\text{kPa} = 100\,000\,\text{Pa}$ ja $2{,}0\,\textsf{l} = 0{,}0020\,\text{m}^3$ ovat oikein.
+**Mallivastaus:** Rivi 1: $100\,\text{kPa} = 100\,000\,\text{Pa}$ ja $2{,}00\,\textsf{l} = 0{,}00200\,\text{m}^3$ ovat oikein.
 Rivi 2: $T = \dfrac{pV}{nR}$ on oikein.
-Rivi 3: osoittaja $100\,000 \cdot 0{,}0020 = 200$ ja nimittäjä $0{,}0800 \cdot 8{,}31 = 0{,}665$, joten $T = 200 : 0{,}665 \approx 301\,\text{K}$ on oikein.
+Rivi 3: osoittaja $100\,000 \cdot 0{,}00200 = 200$ ja nimittäjä $0{,}0800 \cdot 8{,}31 = 0{,}665$, joten $T = 200 : 0{,}665 \approx 301\,\text{K}$ on oikein.
 Rivi 4 on väärin, koska $273$ on lisätty eikä vähennetty. Oikein $\theta = 301 - 273 = 28\,{}^\circ\text{C}$.
 Tarkistus: $574\,{}^\circ\text{C}$ olisi kuuma uuni, mutta $28\,{}^\circ\text{C}$ sopii huoneenlämpöiselle ilmalle. Oikea vastaus on rivi 4.
 

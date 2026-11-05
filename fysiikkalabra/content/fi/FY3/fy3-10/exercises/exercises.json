@@ -294,7 +294,7 @@
     {
       "id": "fy3-10-L2-08",
       "level": 2,
-      "text": "Esimerkkiaineisto: jäykässä, suljetussa $2{,}0\\,\\textsf{l}$:n pullossa on $0{,}0800\\,\\text{mol}$ ilmaa, ja kaasun paine on $100\\,\\text{kPa}$. Oppilas laskee kaasun lämpötilan celsiusasteina.\n\nRivi 1: $p = 100\\,000\\,\\text{Pa}$ ja $V = 0{,}0020\\,\\text{m}^3$.\n\nRivi 2: $pV = nRT$, joten $T = \\dfrac{pV}{nR}$.\n\nRivi 3: $T = \\dfrac{100\\,000 \\cdot 0{,}0020}{0{,}0800 \\cdot 8{,}31}\\,\\text{K}$, eli $T \\approx 301\\,\\text{K}$.\n\nRivi 4: $\\theta = 301 + 273 = 574\\,{}^\\circ\\text{C}$.\n\nMikä rivi on väärin? Jos laskussa ei ole virhettä, valitse viimeinen vaihtoehto.",
+      "text": "Esimerkkiaineisto: jäykässä, suljetussa $2{,}00\\,\\textsf{l}$:n pullossa on $0{,}0800\\,\\text{mol}$ ilmaa, ja kaasun paine on $100\\,\\text{kPa}$. Oppilas laskee kaasun lämpötilan celsiusasteina.\n\nRivi 1: $p = 100\\,000\\,\\text{Pa}$ ja $V = 0{,}00200\\,\\text{m}^3$.\n\nRivi 2: $pV = nRT$, joten $T = \\dfrac{pV}{nR}$.\n\nRivi 3: $T = \\dfrac{100\\,000 \\cdot 0{,}00200}{0{,}0800 \\cdot 8{,}31}\\,\\text{K}$, eli $T \\approx 301\\,\\text{K}$.\n\nRivi 4: $\\theta = 301 + 273 = 574\\,{}^\\circ\\text{C}$.\n\nMikä rivi on väärin? Jos laskussa ei ole virhettä, valitse viimeinen vaihtoehto.",
       "kind": [
         "error",
         "reasoning"
@@ -305,7 +305,7 @@
       "choices": [
         {
           "text": "Rivi 1: paineen ja tilavuuden muunnokset",
-          "feedback": "Rivi 1 on oikein: $100\\,\\text{kPa} = 100\\,000\\,\\text{Pa}$ ja $2{,}0\\,\\textsf{l} = 2{,}0\\,\\text{dm}^3 = 0{,}0020\\,\\text{m}^3$. Jos rivin luulee virheelliseksi, sekoittaa litran ja kuutiometrin (kuutiometrissä on $1000\\,\\textsf{l}$)."
+          "feedback": "Rivi 1 on oikein: $100\\,\\text{kPa} = 100\\,000\\,\\text{Pa}$ ja $2{,}00\\,\\textsf{l} = 2{,}00\\,\\text{dm}^3 = 0{,}00200\\,\\text{m}^3$. Jos rivin luulee virheelliseksi, sekoittaa litran ja kuutiometrin (kuutiometrissä on $1000\\,\\textsf{l}$)."
         },
         {
           "text": "Rivi 2: tilanyhtälön ratkaiseminen",

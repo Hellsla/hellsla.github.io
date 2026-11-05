@@ -125,7 +125,7 @@
         {
           "text": "Ilman sisäenergia kasvaa $60\\,\\text{J}$.",
           "true": true,
-          "feedback": "Oikein: $\\Delta U = Q + W = 0 + 60\\,\\text{J} = 60\\,\\text{J}$. Lämpöä ei siirry, joten koko työ jää ilman sisäenergiaksi."
+          "feedback": "Oikein: $\\Delta U = Q + W$, eli $\\Delta U = 0 + 60\\,\\text{J} = 60\\,\\text{J}$. Lämpöä ei siirry, joten koko työ jää ilman sisäenergiaksi."
         },
         {
           "text": "Ilman lämpötila nousee, vaikka lämpöä ei siirry.",

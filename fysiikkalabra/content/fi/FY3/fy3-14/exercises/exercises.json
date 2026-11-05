@@ -114,45 +114,6 @@
           "feedback": "Ominaislämpökapasiteetti kertoo lämpenemisestä, ei sulamisesta. Sulaminen vaatii sulamislämmön, ja ratkaisevaa on, riittääkö veden luovuttama lämpö."
         }
       ]
-    },
-    {
-      "id": "fy3-14-L1-09",
-      "level": 1,
-      "text": "Eristetyssä astiassa on $0{,}25\\,\\text{kg}$ vettä, jonka lämpötila on $18\\,{}^\\circ\\text{C}$. Veteen lisätään $0{,}080\\,\\text{kg}$ jäätä, jonka lämpötila on $0\\,{}^\\circ\\text{C}$ (esimerkkiarvot). Käytä arvoja $c_\\text{v} = 4190\\,\\text{J/(kg}\\cdot\\text{K)}$ ja $s = 334\\,\\text{kJ/kg}$. Päättele, mitkä väitteet lopputilanteesta ovat tosia ja mitkä epätosia.",
-      "kind": [
-        "concept",
-        "reasoning"
-      ],
-      "answer": "1 tosi, 2 epätosi, 3 tosi, 4 tosi, 5 epätosi",
-      "unit": "",
-      "tolerance": 0.02,
-      "statements": [
-        {
-          "text": "Vesi voi luovuttaa jäähtyessään $0\\,{}^\\circ\\text{C}$:seen noin $19\\,\\text{kJ}$.",
-          "true": true,
-          "feedback": "Oikein: veden luovuttama lämpö on $Q_\\text{v} = c_\\text{v} m_\\text{v} T_\\text{v}$, eli $Q_\\text{v} \\approx 18\\,900\\,\\text{J} \\approx 19\\,\\text{kJ}$. Veden lämpötila laskee $18\\,\\text{K}$."
-        },
-        {
-          "text": "Kaikki jää sulaa, koska vettä on enemmän kuin jäätä ($0{,}25\\,\\text{kg} > 0{,}080\\,\\text{kg}$).",
-          "true": false,
-          "feedback": "Väärin: massojen vertailu ei ratkaise, koska sulaminen riippuu energiasta. Jään sulattaminen vaatii $26{,}7\\,\\text{kJ}$, mutta vesi voi luovuttaa vain $18{,}9\\,\\text{kJ}$, joten jäätä jää jäljelle."
-        },
-        {
-          "text": "Kaiken jään sulattaminen vaatii noin $27\\,\\text{kJ}$.",
-          "true": true,
-          "feedback": "Oikein: jää on jo $0\\,{}^\\circ\\text{C}$:ssa, joten tarvitaan vain sulamislämpö $Q_\\text{j} = s\\,m_\\text{j}$, eli $Q_\\text{j} \\approx 26\\,700\\,\\text{J} \\approx 27\\,\\text{kJ}$."
-        },
-        {
-          "text": "Lopputilassa astiassa on sekä jäätä että vettä, ja lämpötila on $0\\,{}^\\circ\\text{C}$.",
-          "true": true,
-          "feedback": "Oikein: koska $Q_\\text{v} < Q_\\text{j}$, jäästä sulaa vain osa, noin $56\\,\\text{g}$. Niin kauan kuin jäätä ja vettä on yhtä aikaa, lämpötila on $0\\,{}^\\circ\\text{C}$."
-        },
-        {
-          "text": "Lopputilan lämpötila on alkulämpötilojen keskiarvo, $9\\,{}^\\circ\\text{C}$.",
-          "true": false,
-          "feedback": "Väärin: keskiarvo unohtaa sulamislämmön. Veden luovuttama lämpö kuluu jään sulattamiseen, eikä lämpötila voi nousta yli $0\\,{}^\\circ\\text{C}$:n, kun jäätä on vielä jäljellä."
-        }
-      ]
     }
   ],
   "level2": [
@@ -277,6 +238,45 @@
         {
           "text": "Veden ominaislämpökapasiteetti on suurempi kuin jään, joten vesi luovuttaa liian vähän lämpöä.",
           "feedback": "Ominaislämpökapasiteettien ero on mukana laskussa, eikä se aiheuta virhettä: vesi luovuttaa juuri sen lämmön, jonka $c_\\text{v} m_\\text{v} \\Delta T$ antaa. Virhe syntyy siitä, että jään massa tai lämpötila poikkeaa oletetusta."
+        }
+      ]
+    },
+    {
+      "id": "fy3-14-L2-08",
+      "level": 2,
+      "text": "Eristetyssä astiassa on $0{,}25\\,\\text{kg}$ vettä, jonka lämpötila on $18\\,{}^\\circ\\text{C}$. Veteen lisätään $0{,}080\\,\\text{kg}$ jäätä, jonka lämpötila on $0\\,{}^\\circ\\text{C}$ (esimerkkiarvot). Käytä arvoja $c_\\text{v} = 4190\\,\\text{J/(kg}\\cdot\\text{K)}$ ja $s = 334\\,\\text{kJ/kg}$. Päättele, mitkä väitteet lopputilanteesta ovat tosia ja mitkä epätosia.",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "1 tosi, 2 epätosi, 3 tosi, 4 tosi, 5 epätosi",
+      "unit": "",
+      "tolerance": 0.02,
+      "statements": [
+        {
+          "text": "Vesi voi luovuttaa jäähtyessään $0\\,{}^\\circ\\text{C}$:seen noin $19\\,\\text{kJ}$.",
+          "true": true,
+          "feedback": "Oikein: veden luovuttama lämpö on $Q_\\text{v} = c_\\text{v} m_\\text{v} T_\\text{v}$, eli $Q_\\text{v} \\approx 18\\,855\\,\\text{J} \\approx 19\\,\\text{kJ}$. Veden lämpötila laskee $18\\,\\text{K}$."
+        },
+        {
+          "text": "Kaikki jää sulaa, koska vettä on enemmän kuin jäätä ($0{,}25\\,\\text{kg} > 0{,}080\\,\\text{kg}$).",
+          "true": false,
+          "feedback": "Väärin: massojen vertailu ei ratkaise, koska sulaminen riippuu energiasta. Jään sulattaminen vaatii $26{,}7\\,\\text{kJ}$, mutta vesi voi luovuttaa vain $18{,}9\\,\\text{kJ}$, joten jäätä jää jäljelle."
+        },
+        {
+          "text": "Kaiken jään sulattaminen vaatii noin $27\\,\\text{kJ}$.",
+          "true": true,
+          "feedback": "Oikein: jää on jo $0\\,{}^\\circ\\text{C}$:ssa, joten tarvitaan vain sulamislämpö $Q_\\text{j} = s\\,m_\\text{j}$, eli $Q_\\text{j} \\approx 26\\,720\\,\\text{J} \\approx 27\\,\\text{kJ}$."
+        },
+        {
+          "text": "Lopputilassa astiassa on sekä jäätä että vettä, ja lämpötila on $0\\,{}^\\circ\\text{C}$.",
+          "true": true,
+          "feedback": "Oikein: koska $Q_\\text{v} < Q_\\text{j}$, jäästä sulaa vain osa, noin $56\\,\\text{g}$. Niin kauan kuin jäätä ja vettä on yhtä aikaa, lämpötila on $0\\,{}^\\circ\\text{C}$."
+        },
+        {
+          "text": "Lopputilan lämpötila on alkulämpötilojen keskiarvo, $9\\,{}^\\circ\\text{C}$.",
+          "true": false,
+          "feedback": "Väärin: keskiarvo unohtaa sulamislämmön, eikä massoilla painotettu keskiarvokaan (vettä $0{,}25\\,\\text{kg}$, jäätä $0{,}080\\,\\text{kg}$, tulos noin $14\\,{}^\\circ\\text{C}$) auta. Veden luovuttama lämpö kuluu jään sulattamiseen, eikä lämpötila voi nousta yli $0\\,{}^\\circ\\text{C}$:n, kun jäätä on vielä jäljellä."
         }
       ]
     }

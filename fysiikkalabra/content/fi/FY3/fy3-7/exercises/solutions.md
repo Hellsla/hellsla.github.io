@@ -91,13 +91,15 @@
 
 ## fy3-7-L2-08
 **Kysytty:** erien järjestys tarvittavan lämpömäärän $Q$ mukaan pienimmästä suurimpaan
-**Periaate:** Lämpenemiseen tarvitaan $Q = cm\Delta T$, sulamiseen $Q = sm$ ja höyrystymiseen $Q = rm$. Olomuodon muutoksessa lämpötila ei muutu, mutta energiaa kuluu silti paljon. Järjestys ei ole sama kuin massan järjestys eikä sen mukaan, onko olomuoto muuttunut, koska tulokseen vaikuttavat massa, lämpötilan muutos ja olomuodon muutoksen kerroin.
+**Periaate:** Lämpenemiseen tarvitaan $Q = cm\Delta T$, sulamiseen $Q = sm$ ja höyrystymiseen $Q = rm$. Olomuodon muutoksessa lämpötila ei muutu, mutta energiaa kuluu silti paljon. Järjestys ei ole sama kuin massan järjestys eikä sen mukaan, onko olomuoto muuttunut, koska tulokseen vaikuttavat massa, lämpötilan muutos sekä ominaislämpökapasiteetti $c$, ominaissulamislämpö $s$ tai ominaishöyrystymislämpö $r$.
 **Mallivastaus:** Lasketaan jokaisen erän lämpömäärä:
-Teekannu: $Q = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 1{,}0\,\text{kg} \cdot 20\,\text{K} = 83\,800\,\text{J} \approx 84\,\text{kJ}$
+Teekannu: $Q = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 1{,}0\,\text{kg} \cdot 20\,\text{K}$,
+eli $Q = 83\,800\,\text{J} \approx 84\,\text{kJ}$
 Jääpussi: $Q = 334\,\tfrac{\text{kJ}}{\text{kg}} \cdot 0{,}50\,\text{kg} = 167\,\text{kJ}$
-Kattila: $Q = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}60\,\text{kg} \cdot 80\,\text{K} = 201\,000\,\text{J} \approx 201\,\text{kJ}$
+Kattila: $Q = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}60\,\text{kg} \cdot 80\,\text{K}$,
+eli $Q = 201\,120\,\text{J} \approx 201\,\text{kJ}$
 Kiehuva vesi: $Q = 2260\,\tfrac{\text{kJ}}{\text{kg}} \cdot 0{,}10\,\text{kg} = 226\,\text{kJ}$
-Pienimmästä suurimpaan: teekannu, jääpussi, kattila, kiehuva vesi. Massan mukaan järjestys olisi täsmälleen päinvastainen (kiehuva vesi $0{,}10\,\text{kg}$ on kevyin ja teekannu $1{,}0\,\text{kg}$ painavin), joten massa ei ratkaise. Jään sulaminen vaatii vähemmän kuin kattilallisen lämmittäminen kiehumispisteeseen, joten olomuodon muutos ei aina ole suurin menoerä. Arvio: höyrystämiseen tarvitaan pienelläkin massalla paljon, koska $r$ on suuri, ja siksi vain $0{,}10\,\text{kg}$ riittää ohittamaan kaikki muut erät.
+Pienimmästä suurimpaan: teekannu, jääpussi, kattila, kiehuva vesi. Massan mukaan järjestys olisi teekannu $1{,}0\,\text{kg}$, kattila $0{,}60\,\text{kg}$, jääpussi $0{,}50\,\text{kg}$, kiehuva vesi $0{,}10\,\text{kg}$ eli lähes päinvastainen (jääpussi ja kattila vaihtavat paikkaa), joten massa ei ratkaise. Jään sulaminen vaatii vähemmän kuin kattilallisen lämmittäminen kiehumispisteeseen, joten olomuodon muutos ei aina ole suurin menoerä. Arvio: höyrystämiseen tarvitaan pienelläkin massalla paljon, koska $r$ on suuri, ja siksi vain $0{,}10\,\text{kg}$ riittää ohittamaan kaikki muut erät.
 
 ## fy3-7-L3-01
 **Annettu:** mehu (veden $c$) $m_1 = 0{,}35\,\text{kg}$, $T_1 = 25\,{}^\circ\text{C}$; jää $m_2 = 60\,\text{g}$, $T_0 = 0\,{}^\circ\text{C}$; ei lämpöhäviöitä; taulukosta $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ja $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$

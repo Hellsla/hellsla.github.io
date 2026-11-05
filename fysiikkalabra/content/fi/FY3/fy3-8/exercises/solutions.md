@@ -97,7 +97,7 @@ $\dfrac{\Delta L_\text{B}}{\Delta L_\text{A}} = \dfrac{\alpha L_\text{B} \Delta 
 Alkupituuksien suhde on $L_\text{B} : L_\text{A} = 2{,}0\,\text{m} : 4{,}0\,\text{m} = 0{,}5$.
 Lämpötilan muutosten suhde on $\Delta T_\text{B} : \Delta T_\text{A} = 30\,\text{K} : 10\,\text{K} = 3$.
 Siis $\Delta L_\text{B} : \Delta L_\text{A} = 0{,}5 \cdot 3 = 1{,}5$, eli pituuden muutos kasvaa $1{,}5$-kertaiseksi.
-Arvio: jos kerroin on noin $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$, sauva A pitenee noin $0{,}5\,\text{mm}$ ja sauva B noin $0{,}7\,\text{mm}$. Lyhyempi sauva pitenee enemmän, koska sen lämpötila nousee kolminkertaisesti. Kolminkertainen muutos jäisi saamatta vain, jos sauvat olisivat yhtä pitkiä.
+Arvio: jos kerroin on noin $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$, sauva A pitenee noin $0{,}5\,\text{mm}$ ja sauva B noin $0{,}7\,\text{mm}$. Lyhyempi sauva pitenee enemmän, koska sen lämpötila nousee kolminkertaisesti, vaikka sen alkupituus on vain puolet. Kolminkertainen muutos saataisiin vain, jos sauvat olisivat yhtä pitkiä.
 
 ## fy3-8-L3-01
 **Annettu:** teräksinen hammaspyörä, reiän halkaisija $d_0 = 75{,}000\,\text{mm}$ lämpötilassa $T_0 = 20\,{}^\circ\text{C}$, akselin halkaisija $d = 75{,}090\,\text{mm}$, $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ (tehtävässä annettu)

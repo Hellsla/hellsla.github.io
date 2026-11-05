@@ -214,6 +214,6 @@ $h = 1{,}0\,\text{km} = 1000\,\text{m}$
 
 Lasketaan paine:
 
-$\Delta p = 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 1000\,\text{m} = 9{,}81 \cdot 10^{6}\,\text{Pa}$
+$$\begin{aligned} \Delta p &= 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 1000\,\text{m} \\ &= 9{,}81 \cdot 10^{6}\,\text{Pa} \end{aligned}$$
 
 Luku $9{,}81 \cdot 10^{6}$ on lähempänä arvoa $10^{7}$ kuin arvoa $10^{6}$, joten suuruusluokka on $10^{7}\,\text{Pa}$. Vastaus $10^{5}\,\text{Pa}$ on ilmanpaineen suuruusluokka eikä ota syvyyttä huomioon. Vastaus $10^{6}\,\text{Pa}$ vastaa syvyyttä $100\,\text{m}$ ja vastaus $10^{8}\,\text{Pa}$ syvyyttä $10\,\text{km}$. Arvio: vedessä paine kasvaa noin $10\,\text{kPa}$ metriä kohti, joten $1000\,\text{m}$ antaa $10^{7}\,\text{Pa}$.
