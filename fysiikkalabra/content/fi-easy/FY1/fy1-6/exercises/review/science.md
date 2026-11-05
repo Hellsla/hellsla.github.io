@@ -1,18 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 0565d8e3dabbf1c2
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 9efa159d933410d1
+Mode: full (translation review against the reviewed Finnish set; new task fy1-6-L2-08)
+Round 2
 
 ## Blocking
 (none)
 
 ## Fixed
-(none needed: the text already matched fi)
+(none needed)
 
 ## Polish
 (none)
 
 ## Checked
-- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) and the older ones compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags, choice order, data table cells and every number in texts, choices and feedback are identical (decimal comma in fi, point in en where applicable). solutions.md carries 642 numeric tokens in both, same multiset as fi.
-- Physics conditions kept: no air resistance, Moon without atmosphere, light-gate model, intercept as start offset, quotient v/t too small because of the clock offset.
-- check_i18n.py fi-easy: 0 errors.
+- fy1-6-L2-08 compared with content/fi: same masses (4.0 and 1.0 kg), t = 2.0 s, v = 19.6 m/s, tolerance, four choices in the same order with the same correct one (19.6), four reasons with the same correct one; wrong values 4.9, 9.8 and 78 m/s unchanged.
+- Recomputed: v = g t = 9.81 * 2.0 = 19.62 -> 19.6 m/s, independent of mass; 4.9 (v/4), 9.8 (g read as speed) and 78 (4 times) are all wrong, so exactly one correct choice and one correct reason.
+- Physics kept: vacuum, no air resistance, start from rest, g the same for all masses (pull and inertia cancel); rounding to 2 significant figures justified by t = 2.0 s.
+- Easy Finnish per NOTES.md §12: short sentences, one idea each, 'kumoavat toisensa eli poistavat toisensa' glosses the key verb, the reason 2.0 s has two significant figures is stated; same physics and numbers as fi.
+- Other tasks unchanged since the previous round; check_i18n.py shows nothing for fy1-6, build.py fy1-6 succeeds.

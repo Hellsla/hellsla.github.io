@@ -1,7 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 532c2315508a91a1
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 84ecd62508877a77
+Mode: full (translation review against the reviewed Finnish set; new task fy1-6-L2-08)
+Round 2
 
 ## Blocking
 (none)
@@ -13,6 +13,7 @@ Round 1
 (none)
 
 ## Checked
-- Register is natural English, no Finnish left, decimal point in JSON and LaTeX.
-- Distractor feedback in L1-06 and L1-07 names the same misconception as fi (heavier falls faster, no air means no fall, slope read as speed or distance); the correct-answer feedback explains why.
-- Task wording keeps the same steps and questions as fi (draw, fit, determine, explain); no hint added or removed; solutions.md prose follows the fi structure (Given, Find, Principle, Formula, Reasonableness).
+- fy1-6-L2-08 keeps the Finnish form: situation first, question last as its own sentence; two-stage (answer, then reason) with the same reason_prompt, no hint added or removed.
+- Each wrong choice and wrong reason has feedback naming its own misconception (mass-proportional speed, g read as speed, heavier pulled harder, lighter easier to start); the correct ones explain why.
+- Solution follows Find, Principle, Model answer; the principle is explained, not just named, and a student can follow it.
+- English is natural, decimal point in text, choices and solution; no Finnish left.

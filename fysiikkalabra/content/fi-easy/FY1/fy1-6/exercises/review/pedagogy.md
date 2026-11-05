@@ -1,7 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 0565d8e3dabbf1c2
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 9efa159d933410d1
+Mode: full (translation review against the reviewed Finnish set; new task fy1-6-L2-08)
+Round 2
 
 ## Blocking
 (none)
@@ -13,6 +13,7 @@ Round 1
 (none)
 
 ## Checked
-- Register is clear plain Finnish (selkosuomi): short sentences, common words, terms explained.
-- Distractor feedback in L1-06 and L1-07 names the same misconception as fi (heavier falls faster, no air means no fall, slope read as speed or distance); the correct-answer feedback explains why.
-- Task wording keeps the same steps and questions as fi (draw, fit, determine, explain); no hint added or removed; solutions.md prose follows the fi structure (Given, Find, Principle, Formula, Reasonableness).
+- fy1-6-L2-08 keeps the Finnish form: situation first, question last as its own sentence; two-stage (answer, then reason) with the same reason_prompt, no hint added or removed.
+- Each wrong choice and wrong reason has feedback naming its own misconception (mass-proportional speed, g read as speed, heavier pulled harder, lighter easier to start); the correct ones explain why.
+- Solution follows Find, Principle, Model answer; the principle is explained, not just named, and a student can follow it.
+- Easy Finnish per NOTES.md §12: short sentences, one idea each, 'kumoavat toisensa eli poistavat toisensa' glosses the key verb, the reason 2.0 s has two significant figures is stated; same physics and numbers as fi.

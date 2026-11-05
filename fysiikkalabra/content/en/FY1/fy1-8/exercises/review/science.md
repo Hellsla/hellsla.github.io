@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: ba38d4161484034d
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 59df1664b8ed5631
 
 ## Blocking
 (none)
-
-## Fixed
-(none needed)
 
 ## Polish
 (none)
 
 ## Checked
-- 8 new exercises (L1-06..08, L2-05..07, L3-04..05) and the older ones compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags, number of choices, data rows identical.
-- Every number in texts, choices, feedback and captions equals fi (natural English, no Finnish left (grep), decimal point in JSON and LaTeX); solutions.md has 468 numbers, same multiset as fi.
-- Re-derived: L2-05 100 %, L3-04 3.75, L2-07 0.30 m/s (3.3 = 1/v), L3-05 10 min; all agree with fi.
-- Variable terms (independent/dependent/controlled) used correctly in English; no maths changed.
-- check_i18n.py en: 0 errors.
+- New task fy1-8-L1-09 (true/false, five statements) compared with reviewed fi: id, level, kind, answer string (1 T, 2 F, 3 F, 4 T, 5 F), unit, tolerance and every statement's true flag identical.
+- Numbers identical to fi: masses 0, 50, 100 g and uncertainty 0.2 s (decimal point).
+- Physics unchanged: fair test (one changed, one measured, rest controlled), repeat for spread, a difference below the uncertainty cannot be demonstrated but does not prove no effect, a refuted hypothesis is still a result.
+- Feedback of all five statements keeps fi's diagnostic point (resolution is not uncertainty; failed investigation is one with no conclusion).
+- solutions.md L1-09 matches fi statement by statement; principle and model answer give the same verdicts.
+- Earlier tasks unchanged (carried from the previous passed review).
+- check_i18n.py: nothing for fy1-8; build.py fy1-8 succeeds.

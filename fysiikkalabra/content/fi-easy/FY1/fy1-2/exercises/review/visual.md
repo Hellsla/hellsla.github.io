@@ -1,21 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: ff0ee70a054e8dcb
-Mode: full (translation review against the reviewed Finnish set)
+CONTENT-HASH: 1376c48c80de3eac
+Mode: delta (new YO-skill task and re-split task stems)
 Round 1
 
 ## Blocking
-(none)
-
-## Fixed
 (none)
 
 ## Polish
 (none)
 
 ## Checked
-- Captures of the new tasks at 1280 px with solutions open (L2 part 3, L3 part 5/6 and neighbours): numbers and units are set as maths in the same typeface as the formulas; tables (L2-05, L2-06, L3-05) have headers and translated units and do not overflow; pendulum unit derivation and substitution blocks render in fi-easy without clipping.
-- No untranslated strings or Finnish/English mix in the rendered tasks; the decimal comma is used consistently.
-- Figures are unchanged from fi (alt texts not part of this change).
+- Captures in review/shots opened at full size: the new task L1-09 (units of a speed expression, 4 options with fractions; capture open-exercises-1280-8 and -9), in fi-easy.
+- The new task renders in the house layout: numbers and units as maths, options as whole rows, feedback opens inside the card, solution block (Find/Principle/Model answer) without clipping or overflow.
+- Opened: fy1-2 L3-04 and L3-05 stems (open-exercises-L3-1280-4 and -5); both split into situation, assumptions and question with clean spacing and the table intact. Judged from the diff only: the L2 tap-task stem.
+- Language: the new text is natural, plain Finnish with decimal comma, 'alle 0,2 s:n' style endings and glossary-consistent terms.
+- No figures in the changed part; figures unchanged.
 
 ## Scores
-illustrations 4 · typography 4 · language 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4
