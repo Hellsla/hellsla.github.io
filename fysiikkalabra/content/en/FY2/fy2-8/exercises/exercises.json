@@ -66,7 +66,7 @@
         },
         {
           "text": "Greenhouse gases let the Sun's radiation through but slow down the escape of the ground's thermal radiation.",
-          "feedback": "Correct: the ground is warmed by the Sun's radiation and emits thermal radiation, whose escape greenhouse gases slow down. That is why the mean temperature is about $+15\\,{}^\\circ\\text{C}$ and not about $-18\\,{}^\\circ\\text{C}$.",
+          "feedback": "Correct: the ground is warmed by the Sun's radiation and emits thermal radiation, whose escape greenhouse gases slow down. That is why the mean surface temperature is about $+15\\,{}^\\circ\\text{C}$, while a simple radiative balance model gives an effective radiating temperature of about $-18\\,{}^\\circ\\text{C}$.",
           "correct": true
         }
       ]

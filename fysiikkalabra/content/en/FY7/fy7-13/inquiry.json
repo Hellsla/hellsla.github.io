@@ -7,7 +7,7 @@
     "determine the wavelength of a laser from the grating and distances measured on the screen."
   ],
   "prior": [
-    "The waves from two sources oscillating in the same phase reinforce each other when the path difference is a whole number of wavelengths (chapter *Interference of waves*)",
+    "The waves from two sources oscillating in the same phase reinforce each other when the path difference is a whole number of wavelengths (chapter *When waves combine: superposition and interference*)",
     "Light is electromagnetic wave motion, and the wavelength of visible light is $400$–$700\\,\\text{nm}$ (chapter *Electromagnetic radiation and the black-body spectrum*)",
     "In a prism violet light is refracted most, because the refractive index of glass is largest for it (chapter *Dispersion: the prism and the rainbow*)"
   ],
@@ -37,7 +37,7 @@
         {
           "text": "The waves weaken each other, because they arrive in opposite phases.",
           "correct": true,
-          "feedback": "Correct. The path difference $1.5\\lambda$ is half a wavelength more than a whole number, so the crest of one wave meets the trough of the other (chapter *Interference of waves*). Today the same condition explains the bright and dark places of light."
+          "feedback": "Correct. The path difference $1.5\\lambda$ is half a wavelength more than a whole number, so the crest of one wave meets the trough of the other (chapter *When waves combine: superposition and interference*). Today the same condition explains the bright and dark places of light."
         }
       ],
       "optional": true

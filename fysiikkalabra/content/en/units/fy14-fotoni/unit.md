@@ -74,7 +74,7 @@
 
 Fotoni is the open physics teaching laboratory of the University of Helsinki. Its material bank describes the stations below. Your teacher chooses with Fotoni which ones your group does, and the equipment on the day can differ a little from the instructions: always check with the instructor.
 
-<figure class="unit-photo logo"><img src="units/fy14/pics/fotoni-logo.png" alt="The Fotoni logo: the word FOTONI in large black letters over an orange wave, with the text Fysiikan avoin opetuslaboratorio below." width="1200" height="468" loading="lazy"><figcaption>Fotoni is the open physics teaching laboratory of the University of Helsinki, where upper-secondary groups can do modern-physics experiments. <span class="photo-credit">Logo: Fotoni, University of Helsinki</span></figcaption></figure>
+<figure class="unit-photo logo"><img src="units/fy14/pics/fotoni-logo.png" alt="The Fotoni logo: the word FOTONI in large black letters over an orange wave, with the text Fysiikan avoin opetuslaboratorio below." width="1200" height="468" loading="lazy"><figcaption>At Fotoni, upper-secondary groups do modern-physics experiments themselves. <span class="photo-credit">Logo: Fotoni, University of Helsinki</span></figcaption></figure>
 
 ### Photoelectric effect: Planck's constant
 

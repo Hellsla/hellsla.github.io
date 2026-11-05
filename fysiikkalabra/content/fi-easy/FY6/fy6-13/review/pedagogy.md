@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: d292f41b1275bb3a
+CONTENT-HASH: fda82020fb029110
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] The Finnish `learn` goals and the Käsite explanations are the same length as the source; sentences are short (about 16 words on average against 25 in the source), which is the intent.
+- "jossa on resistanssia": "jossa on vastuksia" is easier.
 
 ## Checked
-- Same structure as the Finnish: all stages and activities (hook, review, 2 predictions, sim, 5 experiments, conclusion, theory, reflect, example, find-the-error, transfer, exercises, 3 checks, exit ticket), 7 worked-example steps, summary; nothing dropped or added.
-- Plain Finnish, not a copy: one idea per sentence, new terms explained on first use (eriste, homogeeninen, verrannollinen, polarisoituu, läpilyöntilujuus, kapasitanssi), `key_concepts` has 5 clear entries; goals keep the lowercase -maan/-mään form, prior items end with (luku *...*).
-- Hints, common-mistake feedback and model answers keep their roles; Teoriatiivistelmä, Sovella and exit ticket intact.
+Follow-up delta (2c31ff041, NOTES §12): the earlier polish is fixed. *Vakiojännitelähde* is now explained in the sentence where it first appears ("eli lähteestä, jonka jännite pysyy samana"), and it appears nowhere else. The Etsi virhe feedback says the same in plain words and is split into short sentences. The physics matches fi.

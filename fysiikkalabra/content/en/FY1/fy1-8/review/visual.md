@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 5531934c2a089ad5
+CONTENT-HASH: cd46f235b9a9ee5c
 
 ## Blocking
 (none)
@@ -8,4 +8,4 @@ CONTENT-HASH: 5531934c2a089ad5
 (none)
 
 ## Checked
-batch delta review: built page opened in Chromium at 360, 768 and 1280 px, photo (LIGO laser room; chapter-ref rename) captured with its surrounding text and caption; image loads (WebP), no horizontal overflow, floats right beside text at 1280 and stands in the column at 360/768, caption short and factual, credit under the caption, credits list at page end, alt text describes the picture; fig-1 captures and the unchanged figures not affected.
+- batch delta review: opened the captures of the changed passages (theory-1280 / example-390), source diff read; no figure changed; text-only edits render cleanly, no clipping, no horizontal overflow, no inline formula wrapped.

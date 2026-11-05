@@ -1,7 +1,7 @@
 [
   {
     "q": "The noise level rises from $85\\,\\text{dB}$ to $95\\,\\text{dB}$. How many times greater is the intensity, and in how long does the same dose build up as in $8\\,\\text{h}$ at a level of $85\\,\\text{dB}$?",
-    "a": "A rise of $10\\,\\text{dB}$ corresponds to ten times the intensity (chapter *Loudness of sound*). The same energy builds up in a tenth of the time: $480\\,\\text{min} : 10 = 48\\,\\text{min}$. The rule of thumb $t_\\text{perm} = t_0 / 2^{\\,n}$ gives the same: $n = 10/3$ and $t_\\text{perm} \\approx 48\\,\\text{min}$."
+    "a": "A rise of $10\\,\\text{dB}$ corresponds to ten times the intensity (chapter *Intensity and the decibel scale*). The same energy builds up in a tenth of the time: $480\\,\\text{min} : 10 = 48\\,\\text{min}$. The rule of thumb $t_\\text{perm} = t_0 / 2^{\\,n}$ gives the same: $n = 10/3$ and $t_\\text{perm} \\approx 48\\,\\text{min}$."
   },
   {
     "q": "After a concert the ears ring, but by morning the ringing has gone. Does that mean that hearing was not damaged?",

@@ -1,21 +1,29 @@
 VERDICT: PASS
-CONTENT-HASH: cbab112da685283e
+CONTENT-HASH: 4b1233005b94d34d
+
+Follow-up review of the fix commit 2c31ff041 (delta from 4d3ca50f138fdce2, whose full review is kept below). Changes: ennuste-1's correct-option feedback and tarkistus-3 criterion 2 now give $-18\,{}^\circ\text{C}$ as the effective radiating temperature of a simple radiative-balance model beside the surface mean $+15\,{}^\circ\text{C}$.
 
 ## Blocking
-(none)
+
+None.
 
 ## Polish
-- lesson.md Ydinajatus / inquiry check-c2 — the correct option's feedback cites 230 g/kWh right after "polton hiilidioksidi on ilmassa vuosikymmeniä"; the 230 excludes that CO2 (the table note says so). Add "ilman polton hiilidioksidia" to the feedback.
-- lesson.md table note — gas 490 is the combined-cycle median; say so (a condition, minor).
-- inquiry.json koe-1 values — "420: nykyinen määrä" and the CO2 424 ppm in the text differ; the sim's model box explains the rounding, so add "pyöristetty" to the value label too.
-- lesson.md "CO2-ekv." — GWP time horizon (100 a) unstated; fine at this level.
-- Figure: nuclear/wind bars drawn at 5.5 px (12.5 g/kWh) vs 5.28; "noin 70-kertainen" holds.
+
+1. inquiry.json:71 (ennuste-1 last distractor, "yhdessä ne nostavat lämpötilaa … noin $33\,\text{K}$") and :410 (tarkistus-1, "se nostaa lämpötilaa noin $33\,\text{K}$"): "ero, noin $33\,\text{K}$, havainnollistaa …" would give one wording everywhere (C).
+2. lesson.md Ydinajatus — "ilman sitä merien vesi olisi jäässä" after the caveat; "olisi todennäköisesti jäässä" keeps it consistent (C).
 
 ## Checked
-- CO2 424 ppm: WMO Greenhouse Gas Bulletin No. 21 (2025), 2024 global mean 423.9 ppm; 280 ppm preindustrial fine; "alle puoli promillea" true (0,42 ‰).
-- Table equals IPCC AR5 WG3 Annex III medians (820, 490, 230, 41/48, 24, 12, 11/12); ranges explained correctly.
-- Sim: 420 ppm rounded level stated; settled values -18/14/16/17 °C consistent with 14+3·log2(1,5)=15,75 and AR6 ECS 3 (2,5-4); start +15; labelled illustration, not a calculation.
-- Experiment koe-1 isolates co2; Teq keys exist in simState; 0 ppm caveat (no water vapour) stated.
-- All predictions, feedbacks, numerics (820 kg, 49 000 t, 15,9 kg, 43 kg, 2,352 t, 58 kg, ratios 41 and 68) recomputed OK.
-- Biomass, transport (8x distance), checks and exit ticket consistent with theory.
-- Rebalanced option texts (koe-1 first option, virhe correct option) verified: same physics, numbers unchanged (43 kg, 41x).
+
+- Earlier blocking item resolved: inquiry.json:63 now reads as proposed; physically right ($T_\text{eff} \approx 255\,\text{K}$, $288 - 255 = 33\,\text{K}$, not a prediction of the no-greenhouse surface).
+- tarkistus-3 criterion 2 now asks only what the model answer (:501) states ("säteilytasapainomallin antamassa noin $-18\,{}^\circ\text{C}$:ssa").
+- Consistency: grep of "-18" in lesson.md and inquiry.json — Ydinajatus (:136), misconception (:328), Tiivistelmä (:331), sim model box (:112), koe-1 (:154), ennuste-1, tarkistus-3 — all use the model wording; no counterfactual surface-temperature claim remains in the lesson.
+- Mechanism: shortwave largely transmitted, thermal IR absorbed and re-emitted, N₂/O₂ nearly transparent; CO₂ $280 \to 424\,\text{ppm}$ (WMO 2025), "alle puoli promillea" — right.
+- Combustion C + O₂ → CO₂, hydrogen → water; biomass carbon timing and IPCC's zero-combustion convention — right.
+- AR5 WG III Annex III medians (820, 490, 230, 41–48, 24, 12, 11–12 g/kWh) correct; $820:12 \approx 68$.
+- Recomputed: example $2{,}352\,\text{t}$ (wind $58\,\text{kg}$, ×41); virhe $43\,\text{kg}$; siirto $49\,000\,\text{t}$ (mistakes $0{,}049$, $4{,}9\cdot10^{10}$); tarkistus-2 $15{,}9\,\text{kg}$ (mistakes $13{,}2$, $15\,900$); perustele $1200$ vs $49\,000\,\text{t}$; exit $120\,\text{g}$, ×70. All agree with lesson-answers.py.
+- Each choice has exactly one correct option; photo captions right.
+- Hash same at start and end.
+
+## Shared issues
+
+- Outside this hash: exercises/solutions.md:125 ("nostaa … arvosta noin $-18\,{}^\circ\text{C}$ arvoon noin $+15\,{}^\circ\text{C}$") and exercises.json:69 keep the older wording; align them when the exercise set is next edited.

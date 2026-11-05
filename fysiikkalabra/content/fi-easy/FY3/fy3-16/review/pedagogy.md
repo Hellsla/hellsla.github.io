@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 3bed236abcdd3c6b
+CONTENT-HASH: 02a46dce04663f3e
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- "Jää ja sulamisvesi ovat silloin samassa lämpötilassa": adding "eli lämpötasapainossa" would let the physics word reappear (rule 2). Optional.
 
 ## Checked
-batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.
+Follow-up delta (2c31ff041, NOTES §12): "Mallissa oletetaan, että laukun sisälämpötila on 0 °C niin kauan kuin jäätä on." is a short, clear sentence, and the next sentence still follows from it. The physics matches fi. Earlier: the added sentences are short, and 0,80 m² is in LaTeX.

@@ -1,15 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: d292f41b1275bb3a
+CONTENT-HASH: fda82020fb029110
+
+Follow-up review of the fix commit 2c31ff041 (delta from ac40aeea284452d7). Changes: lesson.md:333 glosses "vakiojännitelähteestä eli lähteestä, jonka jännite pysyy samana"; inquiry.json:471 Etsi virhe feedback now starts "Kun tyhjä kondensaattori ladataan lähteellä, jonka jännite pysyy samana, lähde antaa energian $QU$."
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-- Compared lesson.md, inquiry.json, exit-ticket.json with the passed Finnish chapter by script: every number, unit, formula and LaTeX block is identical (decimal comma and `$…$` kept, terms explained on first use); no key missing or extra in inquiry.json, exit-ticket.json.
-- Formulas C = Q/U, C = ε0 εr A/d, U_max = E_max d, W = ½QU = ½CU², table of εr and E_max (air, teflon, paper, glass), connected/disconnected table, worked example (6,75 J, 6,75 kW, 7 stages) all unchanged in meaning; the conditions of the plate formula and the factor ½ (half of QU becomes internal energy) are kept.
-- Predictions: the correct option and every feedback keep the Finnish physics and model values (11 -> 44 µJ; 89 nC; 1,0 -> 0,18 kV). Experiments: initial, locked, vary, measure keys unchanged; explain models and criteria match.
-- figures.json: descriptions and the few figure words keep the meaning; no physics in the figure changed.
-- sims.fy6-13 labels keep every placeholder, unit and symbol.
+- Both changes are physically right: the half holds for an empty capacitor and an ideal constant-voltage source, independent of $R$; the gloss defines the term correctly.
+- Consistency: grep of "puolet"/"$QU$" — lesson.md:333 ("ei yleinen laki"), siirto hints, mistakes and solution (:490–507) and the Etsi virhe feedback say the same.
+- Total charge: theory, misconception and Tiivistelmä agree ($+Q$, $-Q$, total zero, energy in the field).
+- Dielectric table and reasons; polarisation mechanism checked.
+- Plate formula conditions stated; $U_\text{max} = E_\text{max}d$, paper 160 V.
+- Worked example: $W = 6{,}75\,\text{J}$, $P = 6{,}75\,\text{kW}$, $Q = 0{,}045\,\text{C}$, 3,4 s at 2 W.
+- Sim numbers: $C = 88{,}5\,\text{pF}$; 44/89 nC, 11/44 µJ; glass 0,18 kV, 7,9 µJ; breakdown above 3 kV/mm; lesson-answers.py agrees.
+- Kertaus 150 kV/m, Etsi virhe 0,034 J, transfer 190 µJ (mistakes 381, 0, 42,3), TV 12 J, exit 1,2 mC.
+- Each choice has exactly one correct option; captions correct.
+- Hash same at start and end.

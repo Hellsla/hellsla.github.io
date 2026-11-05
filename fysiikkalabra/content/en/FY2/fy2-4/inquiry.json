@@ -9,7 +9,7 @@
   "prior": [
     "Energy is neither created nor destroyed. It changes form, and part of it often becomes heat (chapter *Forms of energy and conservation of energy*)",
     "The unit of energy is the joule, and when energy is transformed, part of it ends up as heat (chapter *Energy transformations and the joule*)",
-    "Power tells how fast energy is transferred, the unit is the watt, and at constant power energy is power multiplied by time (chapter *Power P = ΔE/Δt*)"
+    "Power tells how fast energy is transferred, the unit is the watt, and at constant power energy is power multiplied by time (chapter *Power: $P = \\Delta E/\\Delta t$*)"
   ],
   "activities": [
     {
@@ -28,20 +28,20 @@
       "choices": [
         {
           "text": "$70\\,\\text{J}$",
-          "feedback": "You added the power and the time. Power and time are different quantities and cannot be added. Energy is power multiplied by time, $E = P \\cdot t$ (chapter *Power P = ΔE/Δt*)."
+          "feedback": "You added the power and the time. Power and time are different quantities and cannot be added. Energy is power multiplied by time, $E = P \\cdot t$ (chapter *Power: $P = \\Delta E/\\Delta t$*)."
         },
         {
           "text": "$1200\\,\\text{J}$",
           "correct": true,
-          "feedback": "Correct. Power tells how fast energy is transferred, so at constant power energy is power multiplied by time: $40\\,\\text{W} \\cdot 30\\,\\text{s} = 1200\\,\\text{J}$ (chapter *Power P = ΔE/Δt*)."
+          "feedback": "Correct. Power tells how fast energy is transferred, so at constant power energy is power multiplied by time: $40\\,\\text{W} \\cdot 30\\,\\text{s} = 1200\\,\\text{J}$ (chapter *Power: $P = \\Delta E/\\Delta t$*)."
         },
         {
           "text": "$1.3\\,\\text{J}$",
-          "feedback": "You divided the power by the time ($40 : 30$). Then the unit would be $\\text{W} : \\text{s}$, not joule, so the result is not energy. Power is already energy divided by time, so energy is found by multiplying power by time (chapter *Power P = ΔE/Δt*)."
+          "feedback": "You divided the power by the time ($40 : 30$). Then the unit would be $\\text{W} : \\text{s}$, not joule, so the result is not energy. Power is already energy divided by time, so energy is found by multiplying power by time (chapter *Power: $P = \\Delta E/\\Delta t$*)."
         },
         {
           "text": "$0.75\\,\\text{J}$",
-          "feedback": "You divided the time by the power ($30 : 40$). A watt is a joule per second, so energy is found by multiplying power by time: $E = P \\cdot t$ (chapter *Power P = ΔE/Δt*)."
+          "feedback": "You divided the time by the power ($30 : 40$). A watt is a joule per second, so energy is found by multiplying power by time: $E = P \\cdot t$ (chapter *Power: $P = \\Delta E/\\Delta t$*)."
         }
       ]
     },

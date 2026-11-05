@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 324d90f20f63e9e6
+CONTENT-HASH: 58ca1c36704e1ad3
 Mode: full
 Round: 1
 
@@ -17,3 +17,10 @@ Round: 1
 - L1-06 and L2-07 choices: only the correct flag is on the same option as in Finnish; each distractor feedback names the misconception correctly.
 - No Finnish left in exercises.json or solutions.md (grep for ä, ö and Finnish unit words).
 - check_i18n.py en: 0 errors.
+
+## Follow-up (58ca1c36704e1ad3: four solutions.md edits on top of the hash above)
+- L1-02 Annettu: ${|q| = e = 1.602 \cdot 10^{-19}\,\text{C}}$ is the right elementary charge, given as a magnitude, so the electron's negative sign is no longer hidden. The outer braces only group.
+- L1-02 Kaava: $|q|vB = mv^2/r$, $r = mv/(|q|B)$ is the correct magnitude form, matching the lesson's $|q|$ notation. Recomputed $r = 7.581$ mm → 7.6 mm, unchanged; answers.py and exercises.json untouched.
+- L2-03 and L3-02 chapter references (*Uniform electric field*, *Moving in a circle: period and speed*) match the current titles of fy6-11 and fy5-3; the physics is unchanged.
+- Polish (not from this diff): exercises.json L1-02 still gives the electron's charge without a sign; match the solution: "charge $1.602…$" → "charge of magnitude $1.602…$".
+- Hash at start and end: 58ca1c36704e1ad3.

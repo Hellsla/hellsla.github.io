@@ -1,8 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: f4c25dfd29e9d304
+CONTENT-HASH: ae78867bcf7d5485
+
 ## Blocking
+(none)
 
 ## Polish
+- The new learning goal uses *kvanttitila* at the top of the page, before the lesson explains it (lesson: "Kvanttitila on atomin sallittu seisova aalto…"). A goal may name a term it will teach, so this is not blocking. The sentence is long, though, and "orbitaalin elektronin" is hard for an S2 reader. Suggested: "tulkitsemaan, että orbitaali on elektronin kvanttitila. Sen kuva on alue, jonka sisällä elektroni havaitaan valitulla todennäköisyydellä."
+- The lesson explains "kvanttitila" in the next sentence; optionally add "eli tila, jossa elektroni voi olla".
 
 ## Checked
-batch delta review: added meta.json key_concepts ("Luvun tärkeät käsitteet") read against lesson.md: each term is one the lesson bolds and uses, each explanation matches the lesson's own definition (often word for word), is physically correct and short S2 Finnish; nothing disclosed beyond the lesson.
+Follow-up delta (2c31ff041, NOTES §12): the goal now matches the lesson's definition and fi, and the physics is unchanged. Earlier: the orbital is defined as a state/standing wave, the summary and misconception are consistent, and the STM caption is plain.

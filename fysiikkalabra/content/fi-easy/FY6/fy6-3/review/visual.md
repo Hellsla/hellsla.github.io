@@ -1,11 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: b99940abb9adfb36
+CONTENT-HASH: 07e87142e01fa3c8
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy6-3-theory-1280-1: the filament photo sits beside the Ohmin laki heading, away from the Mistä resistanssi tulee paragraph the caption explains. Acceptable.
+- [Minor] whole page (pre-existing, outside this delta) — other inline formulas still break at 390 px, e.g. `0{,}5\,\text{V} : 0{,}050\,\text{A} = 10\,\Omega`; templates/lesson.html glues only pieces of at most 14 characters, so a longer formula can break (teacher's rule: never) — brace each as one group `${...}$`, as done in fy7-2 L1-02, or show it as a display row.
 
 ## Checked
-batch delta review: opened fy6-3-theory-1280 captures holding the new unit-photo (floats right, 20 rem wide, no clipping or overflow, figure beside it intact, credit line present, alt text and caption natural Finnish, any quantity in the caption set as LaTeX with its unit) plus the surrounding figures and formulas.
+- delta review of 2c31ff041: misconception paragraph ("Ohmin lakia noudattavan vastuksen", $R = U : I$); diff read. `screenshot.py fy6-3 --lang fi-easy --if-stale` (fresh captures).
+- Own 390 px element captures of each changed block opened (scratchpad caps/fi-easy-fy6-3-*-390.png): text wraps cleanly, KaTeX renders, no clipping, no horizontal scroll. Measured every inline .katex (getClientRects().length) at 360, 390 and 1280 px, all boxes open and all feedback shown, after `build.py fy6-3`: no formula in a changed passage breaks onto two lines.
+- Earlier: batch delta review: opened the captures of the changed passages (theory-1280 / example-390), source diff read; no figure changed; text-only edits render cleanly, no clipping, no horizontal overflow, no inline formula wrapped.
+
+## Scores
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

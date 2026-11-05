@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: af7b905bc1b0ad37
+CONTENT-HASH: 020d1124a0777895
 
 ## Blocking
+(none)
 
 ## Polish
-- Hahmot ja kellot pitelevät kädet ovat kömpelöitä (käsi tulee kellon takaa); kevyt hahmojen viimeistely nostaisi tasoa FY3:n kuviin.
-- Lähtö- ja maaliviivat ovat lämpötilan punaista; muste katkoviivana riittäisi.
+- Kaava section says hand-timing uncertainty is about 0,2 s, but group B's table uses half-range 0,10-0,15 s and the check item 0,15 s; one sentence ("tässä arvioidaan puolella vaihteluvälistä, joten arvo vaihtelee") would avoid the apparent mismatch.
+- Opening photo (LIGO scientists in a clean room) is decorative for a toy-car lesson; either tie the caption to "mittaus voi näyttää oletuksen vääräksi" or drop it.
+- exit-ticket.json question 2 answer is long (five items plus reasoning); a model answer of two sentences is easier to self-check.
+- tarkistus-3 model answer gives v = 0,42 ± 0,02 m/s while the table gives about ±0,01; use one value.
 
 ## Checked
-batch delta review: uusi tekstitön avauskuva (data-fig="hero") Miksi-kysymyksen alla, kaappaukset 1200 ja 360 px sekä SVG. Leluauto radalla mittanauhan vieressä, lähtö- ja maaliviivat, kaksi ryhmää omine sekuntikelloineen, joiden viisarit ovat eri kohdissa: kysymyksen tilanne. Luettava 360 px:ssä. Aria-label vastaa kuvaa, ei tekstiä, värit figuuripaletista.
+Path hook, ennuste, pöytäkirja, graph, fair-test, theory, reflect, example, transfer, own design, checks and exit ticket follows the stage order; the prediction can be refuted by the table; wrong-option feedback repairs (A's 20 % uncertainty); example staged one step per block with a sensibility check; numeric tasks have misconception-based mistakes; calculations (4 s, 1,68 m, 2,4 m, 14 m, 2 %) verified; workload fits one lesson as extras are optional; Finnish reads correctly. Simulation absent by design: data table and graph are the investigation. Photos and figure bodies not opened; judged from alt text and captions.

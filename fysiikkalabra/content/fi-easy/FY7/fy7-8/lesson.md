@@ -146,8 +146,8 @@ Sama muuttuva magneettivuo kulkee kummankin käämin jokaisen kierroksen läpi. 
 
 Ideaalisessa muuntajassa ensiöjännitteen ja toisiojännitteen suhde on sama kuin käämien kierrosten lukumäärien suhde. Tätä suhdetta sanotaan **muuntosuhteeksi**. Jos toisiokäämissä on enemmän kierroksia kuin ensiökäämissä, muuntaja nostaa jännitettä. Jos toisiokäämissä on vähemmän kierroksia, muuntaja laskee jännitettä.
 
-### Muuntaja toimii vain vaihtovirralla
-Oletetaan, että ensiökäämi kytketään akkuun. Silloin käämissä kulkee tasavirta, ja rautasydämen magneettikenttä on vakio. Vakiosuuruinen magneettivuo ei indusoi jännitettä. Toisiokäämin jännite on siis nolla. Jännitepulssi syntyy vain hetkellä, jolloin virta kytketään tai katkaistaan, koska silloin vuo muuttuu.
+### Muuntaja tarvitsee muuttuvan magneettivuon
+Toisiokäämiin syntyy jännite vain, kun sen läpi kulkeva magneettivuo muuttuu. Oletetaan, että ensiökäämi kytketään akkuun. Silloin käämissä kulkee vakiosuuruinen tasavirta, ja rautasydämen magneettikenttä on vakio. Vakiosuuruinen magneettivuo ei indusoi jännitettä. Toisiokäämin jännite on siis nolla. Jännitepulssi syntyy vain hetkellä, jolloin virta kytketään tai katkaistaan, koska silloin vuo muuttuu.
 
 Tämän vuoksi sähköverkossa käytetään vaihtovirtaa. Luvussa *Generaattori ja vaihtovirta* generaattori tuottaa vaihtojännitettä. Muuntajilla jännite voidaan muuttaa aina sopivan suuruiseksi.
 
@@ -209,7 +209,7 @@ Saman tehon voi siirtää suurella jännitteellä ja pienellä virralla. Kun jä
 <figure class="unit-photo"><img src="pics/fy7/transformer-750kv.webp" alt="Iso vaalea muuntaja nurmella. Taustalla on sähköaseman rakenteita ja johtoja."><figcaption>Muuntaja, jonka suurempi jännite on $750\,\text{kV}$. Johdoissa häviää tehoa $P = RI^2$. Kun jännite on suuri, johdoissa kulkee pieni virta. Silloin johdoissa häviää vähän tehoa.</figcaption></figure>
 
 ### Jännite lasketaan vaiheittain
-Sähköasemilla muuntajat laskevat jännitteen alueverkon $110\,\text{kV}$:iin ja jakeluverkon $20\,\text{kV}$:iin. Asuinalueen muuntamo laskee sen kotien $230\,\text{V}$:iin. Suurjännitettä ei tuoda koteihin. Sen eristäminen vaatii pitkiä eristimiä ja suuria etäisyyksiä, ja kosketus olisi hengenvaarallinen (luku *Sähköturvallisuus*).
+Sähköasemilla muuntajat laskevat jännitteen alueverkon $110\,\text{kV}$:iin ja jakeluverkon $20\,\text{kV}$:iin. Asuinalueen muuntamo laskee sen kotien $230\,\text{V}$:iin. Suurjännitettä ei tuoda koteihin. Sen eristäminen vaatii pitkiä eristimiä ja suuria etäisyyksiä, ja kosketus olisi hengenvaarallinen (luku *Sähköturvallisuus kotona ja työssä*).
 
 Puhelimen laturi laskee jännitteen vielä noin $5\,\text{V}$:iin. Nykyaikainen laturi muuttaa verkkojännitteen ensin hyvin suuritaajuiseksi. Silloin muuntaja voi olla pieni. Lopuksi laturi tasasuuntaa jännitteen. Laturin muuntajan käämit eivät kosketa toisiaan. Puhelin ei siis ole johtavassa yhteydessä sähköverkkoon.
 

@@ -127,7 +127,7 @@ Hearing damage arises in the cochlea of the inner ear. There the hair cells chan
 
 ### Dose: level and time
 
-The dose that harms hearing builds up in the same way as energy: what matters is how much energy the sound brings to the ear during the whole exposure. In the chapter *Loudness of sound* we learned that a rise of $3\,\text{dB}$ in the intensity level corresponds to roughly a doubling of the intensity. When the intensity doubles, twice as much energy reaches the ear every second, so the same dose is reached in half the time. That is why a noise level only a few decibels higher can shorten the safe time many times over.
+The dose that harms hearing builds up in the same way as energy: what matters is how much energy the sound brings to the ear during the whole exposure. In the chapter *Intensity and the decibel scale* we learned that a rise of $3\,\text{dB}$ in the intensity level corresponds to roughly a doubling of the intensity. When the intensity doubles, twice as much energy reaches the ear every second, so the same dose is reached in half the time. That is why a noise level only a few decibels higher can shorten the safe time many times over.
 
 ### Noise at work in law
 
@@ -199,7 +199,7 @@ where $L$ is the noise level at the ear (dB), $L_0 = 85\,\text{dB}$ is the upper
   <foreignObject x="296" y="79.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$+3\,\text{dB} \;\Rightarrow\; t : 2$</div></foreignObject>
 </svg>
 
-The formula is an estimate, not a guarantee: people's hearing withstands noise in different ways, and exposure should be kept clearly below the limit. The noise level at the ear is obtained with the rules of the chapter *Loudness of sound*: two equally strong sources raise the level by about $3\,\text{dB}$, and doubling the distance from a point source lowers the level in an open space by about $6\,\text{dB}$. A hearing protector lowers the level reaching the ear by its attenuation, when it is well fitted.
+The formula is an estimate, not a guarantee: people's hearing withstands noise in different ways, and exposure should be kept clearly below the limit. The noise level at the ear is obtained with the rules of the chapter *Intensity and the decibel scale*: two equally strong sources raise the level by about $3\,\text{dB}$, and doubling the distance from a point source lowers the level in an open space by about $6\,\text{dB}$. A hearing protector lowers the level reaching the ear by its attenuation, when it is well fitted.
 
 ## Noise control {Melun torjunta}
 

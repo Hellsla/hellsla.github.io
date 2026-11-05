@@ -1,16 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: d102e61c8ec2ad48
+CONTENT-HASH: bb96c17a45e037f6
+
+Follow-up review of the fix commit 2c31ff041 (delta from 5473a624fb5e15a2, whose full review is kept below). Change: inquiry.json:471, Find the error option "The factor ½ is unnecessary" feedback.
 
 ## Blocking
-(none)
+
+None.
 
 ## Polish
-(none)
+- Lesson: the half "is transferred to the surroundings as heat"; in a real circuit a little also leaves as radiation (C).
+- Worked example: $6.75\,\text{J}$ could keep three figures; "two significant figures" follows from $t = 1.0\,\text{ms}$ only for the power.
 
 ## Checked
-- Compared lesson.md, inquiry.json, exit-ticket.json with the passed Finnish chapter by script: every number, unit, formula and LaTeX block is identical (decimal point and English terms (dielectric, dielectric strength, relative permittivity, capacitance) used consistently); no key missing or extra in inquiry.json, exit-ticket.json.
-- Formulas C = Q/U, C = ε0 εr A/d, U_max = E_max d, W = ½QU = ½CU², table of εr and E_max (air, teflon, paper, glass), connected/disconnected table, worked example (6,75 J, 6,75 kW, 7 stages) all unchanged in meaning; the conditions of the plate formula and the factor ½ (half of QU becomes internal energy) are kept.
-- Predictions: the correct option and every feedback keep the Finnish physics and model values (11 -> 44 µJ; 89 nC; 1,0 -> 0,18 kV). Experiments: initial, locked, vary, measure keys unchanged; explain models and criteria match.
-- figures.json: descriptions and the few figure words keep the meaning; no physics in the figure changed.
-- sims.fy6-13 labels keep every placeholder, unit and symbol.
-- The experiment select `values` (ilma/teflon/paperi/lasi -> air/Teflon/paper/glass; kytketty/irrotettu -> connected/disconnected) and `names` are complete in all five experiments; I recorded a measurement in the preview and the table row reads "air", the selects list air, Teflon, paper, glass and connected, disconnected. No Finnish in en tables or selects (grep of en content for ä/ö: none).
+- Earlier blocking item resolved: "When an empty capacitor is charged from a constant-voltage source, the source delivers the energy $QU$, but only half of it is stored …" — correct (half dissipated for any series $R$) and matches the Formula section (:333, "initially uncharged … constant-voltage source … not a general law for every way of charging").
+- Consistency: grep of "half"/"$QU$" — lesson.md:333, transfer hints/mistakes/solution (:490–507) and this feedback state the same model.
+- Total charge zero ($+Q$, $-Q$) in Key idea and misconception, consistent with Summary.
+- Recomputed: $C = 88.5\,\text{pF}$; prediction 1 $44 \to 89\,\text{nC}$, $11 \to 44\,\mu\text{J}$; glass $0.179\,\text{kV}$, $7.9\,\mu\text{J}$; breakdown $3.0\,\text{kV}$; worked example $6.75\,\text{J}$, $6750\,\text{W}$, $0.045\,\text{C}$, $\ge 3.4\,\text{s}$; paper $160\,\text{V}$; retrieval $150\,\text{kV/m}$; error item $0.034\,\text{J}$; transfer $190\,\mu\text{J}$ (mistakes 381, 0, 42.3); check 3 $12\,\text{J}$; exit $1.2\,\text{mC}$. All agree with lesson-answers.py.
+- Dielectric mechanism and table: correct. Every choice has exactly one correct option.
+- sim.js implements $C = \varepsilon_0\varepsilon_\text{r}A/d$, connected/disconnected and breakdown as the model box says; photos correct.
+- Hash at start and end: bb96c17a45e037f6.

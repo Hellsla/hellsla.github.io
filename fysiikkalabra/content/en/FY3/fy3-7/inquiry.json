@@ -6,7 +6,7 @@
     "calculate the quantity of heat needed for melting and vaporisation."
   ],
   "prior": [
-    "The quantity of heat $Q = cm\\Delta T$ and the specific heat capacity of water, $4190\\,\\text{J/(kg}\\cdot\\text{K)}$ (chapter *Heating and cooling of a substance*)",
+    "The quantity of heat $Q = cm\\Delta T$ and the specific heat capacity of water, $4190\\,\\text{J/(kg}\\cdot\\text{K)}$ (chapter *Heating and cooling of matter: $Q = cm\\Delta T$*)",
     "Power tells you how fast energy is transferred: $Q = Pt$ (chapter *Work and energy*)"
   ],
   "activities": [

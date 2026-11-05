@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: d99ff1e1eb28233e
+CONTENT-HASH: f2c08e3126eb44f3
 
 ## Blocking
-(none)
 
 ## Polish
-- none
 
 ## Checked
-- batch delta review: key_concepts, reworded sentences, photo captions, objective-form and level-policy edits, chapter-reference titles judged against the guardrails and the lesson text; restyled figure lines are styling only.
+batch delta review: Ydinajatus rewording ("Fysiikan väitteitä arvioidaan havaintojen ja mittausten avulla", methods reported so others can check results and often repeat the measurements) replaces the overstated "väite pätee vasta, kun..." and "kuka tahansa voi toistaa"; correct, and consistent with the falsifiability sentence that follows.

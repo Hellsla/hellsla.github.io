@@ -7,8 +7,8 @@
     "calculate the momentum of a photon and the number of photons of light per second."
   ],
   "prior": [
-    "Two waves strengthen or weaken each other depending on the path difference between them (chapter *Interference of waves*)",
-    "The energy of a photon is $E = hf = \\tfrac{hc}{\\lambda}$, and one photon can release at most one electron from a metal (chapter *Photoelectric effect and the photon*)",
+    "Two waves strengthen or weaken each other depending on the path difference between them (chapter *When waves combine: superposition and interference*)",
+    "The energy of a photon is $E = hf = \\tfrac{hc}{\\lambda}$, and one photon can release at most one electron from a metal (chapter *The photoelectric effect and the photon*)",
     "When an atom moves to a lower energy level, it emits a photon whose energy is the difference between the levels (chapter *Energy levels of the hydrogen atom and the Bohr model*)"
   ],
   "activities": [
@@ -28,12 +28,12 @@
       "choices": [
         {
           "text": "The maximum kinetic energy of the released electrons doubles, because the plate receives more energy.",
-          "feedback": "The maximum kinetic energy depends on the energy $hf$ of one photon, not on the amount of light (chapter *Photoelectric effect and the photon*). The same wavelength means the same photon energy, so each electron receives as much energy as before."
+          "feedback": "The maximum kinetic energy depends on the energy $hf$ of one photon, not on the amount of light (chapter *The photoelectric effect and the photon*). The same wavelength means the same photon energy, so each electron receives as much energy as before."
         },
         {
           "text": "About twice as many electrons are released per second, but their maximum kinetic energy stays the same.",
           "correct": true,
-          "feedback": "Correct. Double the intensity means double the number of photons per second, and one photon releases at most one electron. The photon energy $hf$ does not change (chapter *Photoelectric effect and the photon*). In this lesson, we look at how photons behave when there are very few of them."
+          "feedback": "Correct. Double the intensity means double the number of photons per second, and one photon releases at most one electron. The photon energy $hf$ does not change (chapter *The photoelectric effect and the photon*). In this lesson, we look at how photons behave when there are very few of them."
         },
         {
           "text": "The energy of each photon doubles, so the electrons are released faster.",

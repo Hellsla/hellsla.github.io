@@ -122,7 +122,7 @@
 ## fy2-8-L1-06
 **Kysytty:** mikä väite kuvaa luonnollista kasvihuoneilmiötä.
 **Periaate:** Auringon säteily kulkee suurelta osin ilmakehän läpi ja lämmittää maanpinnan. Lämmin maanpinta lähettää lämpösäteilyä. Kasvihuonekaasut hidastavat sen pääsyä avaruuteen. Ilmakehä ei tuota energiaa itse. Se ei myöskään imaise kaikkea Auringon säteilyä eikä heijasta suurinta osaa siitä pois.
-**Mallivastaus:** Oikea vaihtoehto on se, jonka mukaan kasvihuonekaasut päästävät Auringon säteilyn läpi mutta hidastavat maanpinnan lämpösäteilyn poistumista. Ilmiö nostaa maapallon keskilämpötilan noin arvosta $-18\,{}^\circ\text{C}$ arvoon $+15\,{}^\circ\text{C}$. Siksi se on elämälle välttämätön. Ongelma on se, että ilmiö voimistuu, kun ilmakehään tulee lisää hiilidioksidia ja metaania.
+**Mallivastaus:** Oikea vaihtoehto on se, jonka mukaan kasvihuonekaasut päästävät Auringon säteilyn läpi mutta hidastavat maanpinnan lämpösäteilyn poistumista. Maanpinnan keskilämpötila on noin $+15\,{}^\circ\text{C}$. Yksinkertainen säteilytasapainomalli antaa Maan efektiiviseksi säteilylämpötilaksi noin $-18\,{}^\circ\text{C}$. Ero on noin $33\,\text{K}$, ja se näyttää, miksi ilmiö on elämälle välttämätön. Ongelma on se, että ilmiö voimistuu, kun ilmakehään tulee lisää hiilidioksidia ja metaania.
 ## fy2-8-L1-07
 **Kysytty:** mikä väite koskee ilmastoa eikä säätä.
 **Periaate:** Sää on ilmakehän tila tietyssä paikassa tiettynä hetkenä tai lyhyenä aikana. Ilmasto on sään pitkän ajan keskiarvo ja vaihtelu alueella. Aikaa on yleensä vähintään kolmekymmentä vuotta.

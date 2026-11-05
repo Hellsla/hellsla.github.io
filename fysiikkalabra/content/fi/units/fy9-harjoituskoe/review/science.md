@@ -1,31 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 8fe07a88b6155df4
+CONTENT-HASH: b5fa2bd9f63bc042
 
-Delta (goal wording, previous PASS hash 34569735919c8d54): the only change is inquiry.json learn[1], now "valitsemaan omaan osaamiseesi parhaiten sopivat tehtävät." No physics content changed; the goal is factually neutral and still matches the optional Osa II/III choice. objectives.py and units.py check pass. Verdict unchanged.
-
-Round 2 (delta review of round 1 fixes; round 1 hash 1e35148179fc1f8f). Judged against docs/FY9_PLAN.md "Lesson 16: the mock exam".
-
-## Round 1 Blocking findings: verified fixed
-1. s9 b) Järkevyys (solutions.md line 597) now reads "Kallioperän lämpötila nousee Suomessa tyypillisesti noin 15–20 astetta kilometriä kohti, ja tulos on tällä välillä." It no longer cites the tiedote. The built page shows the same text.
-2. teacher.md, Tukea tarvitsevat: now 70 p. Recomputed 20 + 2·15 + 20 = 70.
-
-## Round 1 Polish: verified
-3. s3 Yleisiä virheitä: 261 K instead of 12 K, about 20-fold (261/12 = 21,8). Correct.
-4. s5 c): "Valaisimen vieressä altaan pohjalla oleva sukeltaja" adds the missing condition.
-5. teacher.md, 75-min lessons: five sessions; every session now fits and covers 4 Osa II + 2 Osa III tasks.
-6. s1 d) answer.value 3,12: left as it is (optional). Accepted.
-7. s10 e): √2 ≈ 1,41 without the spring mass, and √(0,620 : 0,320) = 1,392 with it. Data ratio 0,990/0,713 = 1,388. Model check: T(0,300) = 0,711 s and T(0,600) = 0,990 s with k = 25,0 N/m and m_eff = 20,5 g. Consistent.
-
-## Fixed by the reviewer in this round
-- s10 e) Mallivastaus said "d-kohdan jousen massan vaikutus", but the spring mass is found in c) (d) is the static spring constant). Changed to "c-kohdan". This was a new small error from the round 1 fix.
-
-## Rechecked
-- answers.py output unchanged from round 1 (s1 5,30 MJ … s10 k = 25,0 N/m, m_eff 20,5 g, static k 24,9 N/m). s10 slope 4π²/k = 1,578 s²/kg matches the graph label 1,58, and the intercept 0,032 s² gives 0,032/1,579 = 0,020 kg.
-- s8 d) is reworded ("c-kohdan kuvaajasta valitsemasi mallin"). The s8 d)/e) solutions still use the kv² model chosen in c), so the physics is unchanged.
-- Build of fy9-harjoituskoe: OK.
+Delta review of the editorial correction 57b67249 in unit.md "Kokeen ohjeet": (1) "Harjoituskoe on rakennettu kuten fysiikan ylioppilaskoe" → "Harjoituskoe noudattaa fysiikan ylioppilaskokeen yleistä rakennetta"; (2) a new paragraph after "Osan I pisteet": the ten 2-point items are this mock exam's choice, and the real exam's Osa I item count, scoring and formats may differ. Nothing else changed.
 
 ## Blocking
-(none)
+
+None.
 
 ## Polish
-(none new)
+
+None.
+
+## Checked
+
+- Exam facts: the edit removes an overclaim (that the mock is built exactly like the YTL exam) and makes no new factual claim about the YTL exam. The retained structure (11 tasks in three parts, 7 answered, 20 + 4 · 15 + 2 · 20 = 120 p) matches the YTL physics exam's general structure; the 10 × 2 p split of Osa I is now correctly labelled as the mock's own design.
+- Internal consistency: the table (Osa I 20 p, 10 items), the item list 8 + 6 + 6 = 20 p, the 120 p total and teacher.md still agree; 1 + 7 + 3 = 11 tasks.
+- No task, solution, number or answers.py changed; the round-2 recomputation stands.

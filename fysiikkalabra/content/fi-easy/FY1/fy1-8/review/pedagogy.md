@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: d99ff1e1eb28233e
+CONTENT-HASH: f2c08e3126eb44f3
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- "Fysiikan väitteitä arvioidaan havaintojen ja mittausten avulla": "arvioidaan" is abstract; "tutkitaan ja testataan" is easier. Optional.
 
 ## Checked
-batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.
+batch delta review (fi-easy, NOTES 12): intro rewritten in short whole sentences and now matches the Finnish; physics unchanged; 'tutkimus' defined in the sentence.

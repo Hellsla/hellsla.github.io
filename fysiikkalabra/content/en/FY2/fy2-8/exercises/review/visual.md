@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: b8d6bdb7c47a6094
+CONTENT-HASH: bfa242d0bb3d6d72
 Mode: full
 Round: 1
 
@@ -16,3 +16,8 @@ Round: 1
 
 ## Scores
 illustrations 4 · typography 4 · Finnish (English) 4 · accessibility 4
+
+## Follow-up (2026-11-04, teacher's edit of L1-06: exercises.json:69, solutions.md:125)
+- Own Playwright check of the built preview, L1-06 answered (option 0) and the solution open: every inline formula of the two sentences ($+15\,{}^\circ\text{C}$, $-18\,{}^\circ\text{C}$, $33\,\text{K}$) lies on one line (one line box per `.katex-html`) at 390 px and at 360 px; scrollWidth = viewport width; no raw `$`. Captures retaken (`screenshot.py fy2-8 --lang <lang>`, 1280 px) and an own 390 px capture of L1-06 opened.
+- Typography consistent with the lesson (thin space before units, upright C and K). English natural; "while" marks the contrast clearly.
+- Scope: only these two sentences; the rest of this report stands from the earlier round.

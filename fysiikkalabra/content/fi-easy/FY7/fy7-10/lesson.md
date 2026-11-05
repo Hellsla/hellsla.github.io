@@ -81,7 +81,7 @@ Kulmat mitataan aina rajapinnan **normaalista**. Normaali on suora, joka on koht
 </svg>
 
 ### Heijastuslaki
-Valo heijastuu samalla tavalla kuin mekaaniset aallot luvussa *Aaltojen heijastuminen ja diffraktio*. Heijastuskulma on yhtä suuri kuin tulokulma. Tuleva säde, heijastunut säde ja normaali ovat samassa tasossa.
+Valo heijastuu samalla tavalla kuin mekaaniset aallot luvussa *Aalto kohtaa esteen tai raon*. Heijastuskulma on yhtä suuri kuin tulokulma. Tuleva säde, heijastunut säde ja normaali ovat samassa tasossa.
 
 Sileä pinta on esimerkiksi peili tai tyyni vedenpinta. Se heijastaa yhdensuuntaiset säteet yhdensuuntaisina, joten pinnasta näkyy kuva. Karhea pinta on esimerkiksi paperi. Siinä normaali osoittaa joka kohdassa eri suuntaan. Siksi pinta heijastaa valoa kaikkiin suuntiin, ja paperin näkee mistä suunnasta tahansa. Heijastuslaki pätee silloinkin jokaisessa pinnan pienessä kohdassa.
 

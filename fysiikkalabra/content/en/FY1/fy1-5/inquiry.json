@@ -7,8 +7,8 @@
     "explain when the distance is directly proportional to time and when the position is."
   ],
   "prior": [
-    "A straight line is fitted to measurement points, and its slope tells you how much $y$ changes when $x$ increases by one (chapter *Graphs and fitting a straight line*)",
-    "In the equation of a straight line, the constant term is where the line crosses the $y$-axis (chapter *Graphs and fitting a straight line*)"
+    "A straight line is fitted to measurement points, and its slope tells you how much $y$ changes when $x$ increases by one (chapter *Graphing and fitting a straight line*)",
+    "In the equation of a straight line, the constant term is where the line crosses the $y$-axis (chapter *Graphing and fitting a straight line*)"
   ],
   "activities": [
     {
@@ -27,16 +27,16 @@
       "choices": [
         {
           "text": "The point where the line crosses the $s$-axis.",
-          "feedback": "That is the starting point of the line, not the slope (chapter *Graphs and fitting a straight line*). The slope tells you how steep the line is: by how many units $s$ changes when $t$ increases by one."
+          "feedback": "That is the starting point of the line, not the slope (chapter *Graphing and fitting a straight line*). The slope tells you how steep the line is: by how many units $s$ changes when $t$ increases by one."
         },
         {
           "text": "How much the position changes per unit of time.",
           "correct": true,
-          "feedback": "Correct. The slope is $\\Delta s : \\Delta t$ (chapter *Graphs and fitting a straight line*). In motion it is the speed, and you apply it today."
+          "feedback": "Correct. The slope is $\\Delta s : \\Delta t$ (chapter *Graphing and fitting a straight line*). In motion it is the speed, and you apply it today."
         },
         {
           "text": "How long the line is.",
-          "feedback": "The length of the line does not matter, because the line continues in both directions. The slope is the ratio of two changes, $\\Delta s : \\Delta t$ (chapter *Graphs and fitting a straight line*)."
+          "feedback": "The length of the line does not matter, because the line continues in both directions. The slope is the ratio of two changes, $\\Delta s : \\Delta t$ (chapter *Graphing and fitting a straight line*)."
         }
       ],
       "optional": true

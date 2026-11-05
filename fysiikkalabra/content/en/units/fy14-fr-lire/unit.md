@@ -225,7 +225,7 @@ read it without a dictionary and without a translation app.
 
 ## Why you understand more than you think
 
-You already know thousands of French words without having studied them. English took a very large number of words
+You can already recognise many French words, especially through English, Swedish and international scientific vocabulary. English took a very large number of words
 from French and Latin, Swedish took many from French too (*trottoar* from *<span lang="fr">trottoir</span>*, *paraply* from *<span lang="fr">parapluie</span>*,
 *byrå* from *<span lang="fr">bureau</span>*), and Finnish took international words through Swedish (*insinööri* from Swedish *ingenjör*,
 which comes from French *<span lang="fr">ingénieur</span>*). Science uses the same international words everywhere: *<span lang="fr">plasma</span>*,

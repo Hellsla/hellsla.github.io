@@ -74,14 +74,14 @@
 ## Ydinajatus
 
 ### Sähkökenttä kiihdyttää
-Luvussa *Homogeeninen sähkökenttä, potentiaali ja potentiaalienergia* todettiin, että sähkökentässä varattuun hiukkaseen vaikuttaa sähköinen voima $F_\text{s} = qE$. Positiiviseen hiukkaseen voima osoittaa kentän $\overline{E}$ suuntaan, negatiiviseen vastakkaiseen suuntaan. Kun hiukkanen kulkee jännitteen $U$ yli, kenttä tekee siihen työn $W = qU$, ja työ kasvattaa hiukkasen liike-energiaa. Levosta lähtevälle hiukkaselle pätee siis
+Luvussa *Homogeeninen sähkökenttä* todettiin, että sähkökentässä varattuun hiukkaseen vaikuttaa sähköinen voima $\overline{F}_\text{s} = q\overline{E}$, missä $q$ on hiukkasen varaus etumerkkeineen. Positiiviseen hiukkaseen voima osoittaa kentän $\overline{E}$ suuntaan, negatiiviseen vastakkaiseen suuntaan. Voiman suuruus riippuu vain varauksen suuruudesta $|q|$, ei sen etumerkistä. Kun hiukkanen kulkee kiihdyttävän jännitteen $U$ yli, kenttä tekee siihen työn $W = |q|U$ (luku *Potentiaalienergia ja potentiaali sähkökentässä*), ja työ kasvattaa hiukkasen liike-energiaa. Levosta lähtevälle hiukkaselle pätee siis
 ```latex
 \begin{aligned}
-F_\text{s} &= qE \\
-qU &= \tfrac{1}{2} m v^2
+F_\text{s} &= |q|E \\
+|q|U &= \tfrac{1}{2} m v^2
 \end{aligned}
 ```
-missä $q$ on hiukkasen varaus (C), $E$ sähkökentän voimakkuus (V/m), $U$ jännite (V), $m$ massa (kg) ja $v$ vauhti (m/s). Sähkökentällä varattu hiukkanen saadaan liikkeelle ja sen vauhtia kasvatettua.
+missä $|q|$ on hiukkasen varauksen suuruus (C), $E$ sähkökentän voimakkuus (V/m), $U$ kiihdyttävän jännitteen suuruus (V), $m$ massa (kg) ja $v$ vauhti (m/s). Positiivisella hiukkasella, kuten protonilla, $|q| = q$. Sähkökentällä varattu hiukkanen saadaan liikkeelle ja sen vauhtia kasvatettua.
 
 ### Magneettikenttä kääntää liikkuvaa varausta
 Magneettikenttä $\overline{B}$ (luku *Magneetit, magneettinen dipoli ja magneettikenttä*) ei vaikuta levossa olevaan varaukseen. Liikkuvaan varattuun hiukkaseen se vaikuttaa **magneettisella voimalla**, joka on kohtisuorassa sekä hiukkasen nopeutta $\overline{v}$ että kenttää $\overline{B}$ vastaan. Voiman suunnan positiiviselle varaukselle antaa **oikean käden sääntö**: ojenna oikea käsi niin, että peukalo osoittaa nopeuden suuntaan ja muut sormet kentän suuntaan; kämmen työntää silloin voiman suuntaan. Negatiiviseen varaukseen voima vaikuttaa vastakkaiseen suuntaan. Kun hiukkanen liikkuu kentän suuntaisesti, voima on nolla.
@@ -165,7 +165,7 @@ Magneettikenttä $\overline{B}$ (luku *Magneetit, magneettinen dipoli ja magneet
 <figure class="unit-photo"><img src="pics/fy7/aurora-levi.webp" alt="Leveä vihreä revontulivyö tähtitaivaalla Levitunturin yllä. Alhaalla on kivikkoinen tunturinrinne ja muutamia mäntyjä."><figcaption>Revontulet Levin yllä Kittilässä. Auringosta tulevat varatut hiukkaset kiertävät Maan magneettikentän kenttäviivojen ympäri ja kulkevat niitä pitkin napa-alueille. Yläilmakehässä ne törmäävät happi- ja typpiatomeihin, jotka lähettävät valoa.</figcaption></figure>
 
 ### Voima ei muuta vauhtia: rata on ympyrä
-Koska magneettinen voima on joka hetki kohtisuorassa nopeutta vastaan, se ei tee työtä. Hiukkasen liike-energia ja vauhti pysyvät samoina; vain liikkeen suunta muuttuu. Kun hiukkanen liikkuu kohtisuorassa homogeenista kenttää vastaan, voima on koko ajan yhtä suuri ja osoittaa kohti samaa pistettä. Hiukkanen on silloin tasaisessa ympyräliikkeessä, ja magneettinen voima toimii sen keskeisvoimana (luku *Tasainen ympyräliike ja normaalikiihtyvyys*).
+Koska magneettinen voima on joka hetki kohtisuorassa nopeutta vastaan, se ei tee työtä. Hiukkasen liike-energia ja vauhti pysyvät samoina; vain liikkeen suunta muuttuu. Kun hiukkanen liikkuu kohtisuorassa homogeenista kenttää vastaan, voima on koko ajan yhtä suuri ja osoittaa kohti samaa pistettä. Hiukkanen on silloin tasaisessa ympyräliikkeessä, ja magneettinen voima toimii sen keskeisvoimana (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*).
 
 Esimerkiksi protoniin, joka lentää vauhdilla $1{,}0 \cdot 10^{6}\,\text{m/s}$ kohtisuoraan $0{,}20\,\text{T}$:n kenttää vastaan, vaikuttaa voima $3{,}2 \cdot 10^{-14}\,\text{N}$, ja se kiertää ympyrää, jonka säde on noin $5{,}2\,\text{cm}$. Protonin paino $1{,}6 \cdot 10^{-26}\,\text{N}$ on noin $10^{12}$ kertaa pienempi, joten painovoima jätetään hiukkasten liikkeessä huomiotta.
 
@@ -257,18 +257,18 @@ Esimerkiksi protoniin, joka lentää vauhdilla $1{,}0 \cdot 10^{6}\,\text{m/s}$ 
 ## Kaava: Magneettinen voima ja ympyrärata
 Magneettikentässä liikkuvaan varattuun hiukkaseen vaikuttavan magneettisen voiman suuruus on
 ```latex
-F_\text{m} = q v B \sin\alpha
+F_\text{m} = |q| v B \sin\alpha
 ```
-missä $q$ on hiukkasen varauksen suuruus (C), $v$ hiukkasen vauhti (m/s), $B$ magneettivuon tiheys (T) ja $\alpha$ nopeuden ja kentän välinen kulma. Kun nopeus on kohtisuorassa kenttää vastaan, $\sin 90^\circ = 1$ ja voima on suurin, $F_\text{m} = qvB$. Kentän suuntaisesti liikkuvaan hiukkaseen ei vaikuta voimaa, koska $\sin 0^\circ = 0$. Teslan määritelmästä seuraa, että $1\,\text{C} \cdot 1\,\tfrac{\text{m}}{\text{s}} \cdot 1\,\text{T} = 1\,\text{N}$.
+missä $|q|$ on hiukkasen varauksen suuruus (C), $v$ hiukkasen vauhti (m/s), $B$ magneettivuon tiheys (T) ja $\alpha$ nopeuden ja kentän välinen kulma. Kun nopeus on kohtisuorassa kenttää vastaan, $\sin 90^\circ = 1$ ja voima on suurin, $F_\text{m} = |q|vB$. Kentän suuntaisesti liikkuvaan hiukkaseen ei vaikuta voimaa, koska $\sin 0^\circ = 0$. Teslan määritelmästä seuraa, että $1\,\text{C} \cdot 1\,\tfrac{\text{m}}{\text{s}} \cdot 1\,\text{T} = 1\,\text{N}$.
 
-Kun hiukkanen liikkuu kohtisuorassa homogeenista magneettikenttää vastaan, magneettinen voima on ympyräliikkeen keskeisvoima. Newtonin toisen lain mukaan $qvB = \tfrac{mv^2}{r}$, ja ratkaisemalla saadaan radan säde:
+Kun hiukkanen liikkuu kohtisuorassa homogeenista magneettikenttää vastaan, magneettinen voima on ympyräliikkeen keskeisvoima. Newtonin toisen lain mukaan $|q|vB = \tfrac{mv^2}{r}$, ja ratkaisemalla saadaan radan säde:
 ```latex
 \begin{aligned}
-q v B &= \frac{m v^2}{r} \\
-r &= \frac{m v}{q B}
+|q| v B &= \frac{m v^2}{r} \\
+r &= \frac{m v}{|q| B}
 \end{aligned}
 ```
-missä $r$ on ympyräradan säde (m) ja $m$ hiukkasen massa (kg). Säde on suoraan verrannollinen hiukkasen massaan ja vauhtiin ja kääntäen verrannollinen varaukseen ja kenttään. Raskas tai nopea hiukkanen kaartuu loivasti, voimakas kenttä taivuttaa radan tiukalle. Kaava pätee, kun vauhti on pieni valon nopeuteen verrattuna. Alla oleva kuvaaja näyttää säteen $r$; simulaation ilmaisimella osumakohdan etäisyys raosta on halkaisija $d = 2r$.
+missä $r$ on ympyräradan säde (m) ja $m$ hiukkasen massa (kg). Säde on suoraan verrannollinen hiukkasen massaan ja vauhtiin ja kääntäen verrannollinen varauksen suuruuteen ja kenttään. Raskas tai nopea hiukkanen kaartuu loivasti, voimakas kenttä taivuttaa radan tiukalle. Kaava pätee, kun vauhti on pieni valon nopeuteen verrattuna. Alla oleva kuvaaja näyttää säteen $r$; simulaation ilmaisimella osumakohdan etäisyys raosta on halkaisija $d = 2r$.
 
 <svg data-fig="r-graph" viewBox="0 0 600 340" role="img" aria-label="Kuvaaja mittakaavassa: ympyräradan säde r senttimetreinä hiukkasen vauhdin v funktiona, kun magneettikenttä on 0,20 teslaa. Protonin suora nousee origosta arvoon 10,4 cm vauhdilla 2,0 miljoonaa metriä sekunnissa, deuteronin suora kaksi kertaa jyrkemmin arvoon 20,9 cm. Säde on suoraan verrannollinen vauhtiin ja massaan. Kuvaaja näyttää säteen r, ei halkaisijaa 2r." style="max-width:100%;font-size:24px">
   <line x1="178" y1="286" x2="178" y2="52" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -316,10 +316,10 @@ missä $r$ on ympyräradan säde (m) ja $m$ hiukkasen massa (kg). Säde on suora
 ## Nopeusvalitsin ja massaspektrometri
 
 ### Nopeusvalitsin
-Nopeusvalitsimessa hiukkaset kulkevat kahden levyn välistä, missä on sekä sähkökenttä että sitä vastaan kohtisuora magneettikenttä. Kentät on suunnattu niin, että sähköinen voima $qE$ ja magneettinen voima $qvB$ ovat vastakkaissuuntaiset. Suoraan valitsimen läpi kulkee vain hiukkanen, johon voimat vaikuttavat yhtä suurina:
+Nopeusvalitsimessa hiukkaset kulkevat kahden levyn välistä, missä on sekä sähkökenttä että sitä vastaan kohtisuora magneettikenttä. Kentät on suunnattu niin, että sähköinen voima $|q|E$ ja magneettinen voima $|q|vB$ ovat vastakkaissuuntaiset. Suoraan valitsimen läpi kulkee vain hiukkanen, johon voimat vaikuttavat yhtä suurina:
 ```latex
 \begin{aligned}
-qE &= qvB \\
+|q|E &= |q|vB \\
 v &= \frac{E}{B}
 \end{aligned}
 ```
@@ -328,7 +328,7 @@ missä $E$ on levyjen välisen sähkökentän voimakkuus (V/m) ja $B$ magneettiv
 ### Massaspektrometri
 Massaspektrometrissä nopeusvalitsimesta tulevat ionit, joiden vauhti on siis tiedossa, ohjataan raon kautta toiseen magneettikenttään $B_2$. Siellä ne kulkevat puoliympyrän ja osuvat ilmaisimeen, joka on raon vieressä. Osumakohdan etäisyys raosta on radan halkaisija $2r$. Säteen kaavasta ratkaistaan ionin massa:
 ```latex
-m = \frac{q B_2 r}{v}
+m = \frac{|q| B_2 r}{v}
 ```
 Samalla vauhdilla ja varauksella radan säde on suoraan verrannollinen massaan, joten raskaammat ionit osuvat kauemmas. Näin erotetaan saman alkuaineen isotoopit, jotka eroavat toisistaan vain massaltaan: radiohiiliajoituksessa hiili-14-ionit erotetaan ja lasketaan erikseen hiili-12-ioneista. Massaspektrometrillä tunnistetaan myös esimerkiksi dopingaineita ja ympäristömyrkkyjä.
 
@@ -404,18 +404,18 @@ Samalla vauhdilla ja varauksella radan säde on suoraan verrannollinen massaan, 
 </svg>
 
 ## Hiukkaskiihdytin
-Hiukkaskiihdyttimessä tarvitaan molempia kenttiä. Koska magneettinen voima ei tee työtä, vain sähkökenttä voi kasvattaa hiukkasen energiaa: aina kun hiukkanen kulkee kiihdytysvälin jännitteen $U$ yli, sen liike-energia kasvaa $qU$:n verran. Magneetit puolestaan taivuttavat ja kohdistavat hiukkassuihkua. Rengaskiihdyttimessä sama hiukkanen kulkee saman kiihdytysvälin läpi yhä uudelleen. Kun vauhti kasvaa, magneettikenttää vahvistetaan, jotta radan säde $r = mv : (qB)$ pysyy samana ja hiukkaset pysyvät renkaassa.
+Hiukkaskiihdyttimessä tarvitaan molempia kenttiä. Koska magneettinen voima ei tee työtä, vain sähkökenttä voi kasvattaa hiukkasen energiaa: aina kun hiukkanen kulkee kiihdytysvälin jännitteen $U$ yli, sen liike-energia kasvaa $|q|U$:n verran. Magneetit puolestaan taivuttavat ja kohdistavat hiukkassuihkua. Rengaskiihdyttimessä sama hiukkanen kulkee saman kiihdytysvälin läpi yhä uudelleen. Kun vauhti kasvaa, magneettikenttää vahvistetaan, jotta radan säde $r = mv : (|q|B)$ pysyy samana ja hiukkaset pysyvät renkaassa.
 
 <figure class="unit-photo"><img src="pics/fy7/berkeley-cyclotron.webp" alt="Mustavalkoinen valokuva vuodelta 1939: kaksi miestä seisoo suuren syklotronin sähkömagneetin ja tyhjiökammion vieressä hallissa."><figcaption>Berkeleyn 60 tuuman syklotroni vuonna 1939. Valtava sähkömagneetti taivuttaa hiukkaset ympyräradalle, ja sähkökenttä kiihdyttää niitä joka kierroksella.</figcaption></figure>
 
-Euroopan hiukkasfysiikan tutkimuskeskuksen CERNin LHC-kiihdyttimen rengas on $26{,}7\,\text{km}$ pitkä. Sen $1232$ suprajohtavaa taivutusmagneettia tuottavat enimmillään noin $8{,}3\,\text{T}$:n kentän, ja protonien energia on vuodesta 2022 ollut $6{,}8\,\text{TeV}$ eli noin $1{,}1 \cdot 10^{-6}\,\text{J}$ protonia kohti (CERN 2017, *LHC the guide*; CERN 2022). Protonit kulkevat lähes valon nopeudella, joten kaava $r = mv : (qB)$ ei niille enää sellaisenaan päde, mutta periaate on sama: mitä suurempi energia, sitä voimakkaampi kenttä tai sitä suurempi rengas tarvitaan.
+Euroopan hiukkasfysiikan tutkimuskeskuksen CERNin LHC-kiihdyttimen rengas on $26{,}7\,\text{km}$ pitkä. Sen $1232$ suprajohtavaa taivutusmagneettia tuottavat enimmillään noin $8{,}3\,\text{T}$:n kentän, ja protonien energia on vuodesta 2022 ollut $6{,}8\,\text{TeV}$ eli noin $1{,}1 \cdot 10^{-6}\,\text{J}$ protonia kohti (CERN 2017, *LHC the guide*; CERN 2022). Protonit kulkevat lähes valon nopeudella, joten kaava $r = mv : (|q|B)$ ei niille enää sellaisenaan päde, mutta periaate on sama: mitä suurempi energia, sitä voimakkaampi kenttä tai sitä suurempi rengas tarvitaan.
 
 ## Esimerkki
 Massaspektrometrin nopeusvalitsimessa sähkökentän voimakkuus on $6{,}00 \cdot 10^{4}\,\text{V/m}$ ja magneettivuon tiheys $0{,}200\,\text{T}$. Valitsimen läpi suoraan kulkeneet neonionit, joiden varaus on $q = e = 1{,}602 \cdot 10^{-19}\,\text{C}$, tulevat raon kautta magneettikenttään, jonka magneettivuon tiheys on $0{,}500\,\text{T}$. Ionit kaartuvat puoliympyrän ja osuvat ilmaisimeen $24{,}9\,\text{cm}$:n päähän raosta. Mikä on ionin massa kilogrammoina ja atomimassayksikköinä ($1\,\text{u} = 1{,}661 \cdot 10^{-27}\,\text{kg}$)?
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Valitsimessa $E = 6{,}00 \cdot 10^{4}\,\text{V/m}$ ja $B_1 = 0{,}200\,\text{T}$, taivutuskentässä $B_2 = 0{,}500\,\text{T}$, osumakohdan etäisyys raosta $d = 24{,}9\,\text{cm}$ ja ionin varaus $q = 1{,}602 \cdot 10^{-19}\,\text{C}$. Kysytään ionin massaa $m$.
+**Tunnetut ja kysytty.** Valitsimessa $E = 6{,}00 \cdot 10^{4}\,\text{V/m}$ ja $B_1 = 0{,}200\,\text{T}$, taivutuskentässä $B_2 = 0{,}500\,\text{T}$, osumakohdan etäisyys raosta $d = 24{,}9\,\text{cm}$ ja ionin varaus $q = 1{,}602 \cdot 10^{-19}\,\text{C}$, joka on positiivinen, joten $|q| = q$. Kysytään ionin massaa $m$.
 
 <!-- vaihe -->
 
@@ -458,7 +458,7 @@ Atomimassayksikköinä $m = 3{,}324 \cdot 10^{-26}\,\text{kg} : (1{,}661 \cdot 1
 
 <!-- vaihe -->
 
-**Järkevyys.** Neon-20-atomin massa on taulukon mukaan $19{,}99\,\text{u}$, joten ionit ovat neon-20:tä; protonin massaan verrattuna ioni on noin $20$ kertaa raskaampi, kuten pitääkin. Neonissa on myös isotooppia neon-22: sen ionit osuisivat $27{,}4\,\text{cm}$:n päähän eli noin $2{,}5\,\text{cm}$ kauemmas, sillä samalla vauhdilla säde kasvaa massan mukana. Vauhti $3{,}00 \cdot 10^{5}\,\text{m/s}$ on noin $0{,}1\,\%$ valon nopeudesta, joten kaava $r = mv : (qB)$ pätee hyvin.
+**Järkevyys.** Neon-20-atomin massa on taulukon mukaan $19{,}99\,\text{u}$, joten ionit ovat neon-20:tä; protonin massaan verrattuna ioni on noin $20$ kertaa raskaampi, kuten pitääkin. Neonissa on myös isotooppia neon-22: sen ionit osuisivat $27{,}4\,\text{cm}$:n päähän eli noin $2{,}5\,\text{cm}$ kauemmas, sillä samalla vauhdilla säde kasvaa massan mukana. Vauhti $3{,}00 \cdot 10^{5}\,\text{m/s}$ on noin $0{,}1\,\%$ valon nopeudesta, joten kaava $r = mv : (|q|B)$ pätee hyvin.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että magneettikenttä vetää varattua hiukkasta kentän suuntaan tai napaa kohti, kuten magneetti vetää rautanaulaa, ja että kenttä kiihdyttää hiukkasta. Magneettinen voima on kuitenkin aina kohtisuorassa sekä nopeutta että kenttää vastaan. Siksi se ei tee työtä eikä muuta hiukkasen vauhtia: se vain kääntää liikkeen suuntaa. Hiukkasen vauhtia voi kasvattaa vain sähkökenttä, ja siksi kiihdyttimissä on sekä sähkökenttiä että magneetteja.
@@ -466,8 +466,8 @@ Moni ajattelee, että magneettikenttä vetää varattua hiukkasta kentän suunta
 Toinen virhe on unohtaa varauksen merkki. Oikean käden sääntö antaa voiman suunnan positiiviselle varaukselle, ja negatiiviseen varaukseen voima vaikuttaa vastakkaiseen suuntaan. Elektroni, joka lentää samalla vauhdilla samaan kenttään kuin protoni, kaartuu siis vastakkaiseen suuntaan, ja sen rata on noin $1840$ kertaa pienempi, koska sen massa on niin paljon pienempi.
 
 ## Tiivistelmä
-- Sähkökenttä kiihdyttää varattua hiukkasta: voima on $F_\text{s} = qE$, ja jännitteen $U$ yli kulkiessaan hiukkanen saa liike-energiaa $qU$.
-- Magneettinen voima $F_\text{m} = qvB \sin\alpha$ vaikuttaa vain liikkuvaan varaukseen. Se on kohtisuorassa sekä nopeutta että kenttää vastaan; suunta positiiviselle varaukselle oikean käden säännöllä, negatiiviselle vastakkainen.
-- Magneettinen voima ei muuta vauhtia. Kohtisuorassa homogeenista kenttää vastaan liikkuva hiukkanen kiertää ympyrää, jonka säde on $r = mv : (qB)$.
+- Sähkökenttä kiihdyttää varattua hiukkasta: voima on $\overline{F}_\text{s} = q\overline{E}$ ja sen suuruus $F_\text{s} = |q|E$, missä $q$ on varaus etumerkkeineen. Levosta lähtenyt hiukkanen saa kiihdyttävän jännitteen $U$ yli kulkiessaan liike-energian $E_\text{k} = |q|U$.
+- Magneettinen voima $F_\text{m} = |q|vB \sin\alpha$ vaikuttaa vain liikkuvaan varaukseen. Se on kohtisuorassa sekä nopeutta että kenttää vastaan; suunta positiiviselle varaukselle oikean käden säännöllä, negatiiviselle vastakkainen.
+- Magneettinen voima ei muuta vauhtia. Kohtisuorassa homogeenista kenttää vastaan liikkuva hiukkanen kiertää ympyrää, jonka säde on $r = mv : (|q|B)$.
 - Nopeusvalitsimesta pääsee suoraan läpi vain vauhti $v = E : B$. Massaspektrometri erottaa samalla vauhdilla liikkuvat ionit massan mukaan, koska säde on verrannollinen massaan.
 - Hiukkaskiihdyttimessä sähkökentät kasvattavat hiukkasten energiaa ja magneetit ohjaavat niiden rataa.

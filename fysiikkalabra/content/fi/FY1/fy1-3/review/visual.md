@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: f2b3e3d9e9d6bfb5
+CONTENT-HASH: bf819a37c4fc8d14
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- [Minor] Ydinajatus — three consecutive sentences begin with "Se" and "Se kuvaa mittaustulokseen liittyvää epävarmuutta" nearly repeats its subject — fix: "Se on arvio siitä, kuinka suuri mittausvirhe voi olla; se ei yleensä tarkoita ehdotonta suurinta mahdollista poikkeamaa oikeasta arvosta."
 
 ## Checked
-- batch delta review: opened fy1-3-1280-0.png and fy1-3-360-0.png (photo floated or inline in the column, no clipping or horizontal overflow, credit line present); alt text and caption read against the picture and the neighbouring paragraph; no number with a unit in the new caption or alt text.
+- batch delta review: Ydinajatus (mittausepävarmuus, three new sentences); built page and scripts/screenshot.py fy1-3 (captures current), changed passages opened at 390 px (h-390-0): clean wrapping, KaTeX renders, no inline formula wraps, no clipping, no horizontal scroll. Diff read; the rest of the lesson unchanged.

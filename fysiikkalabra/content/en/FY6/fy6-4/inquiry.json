@@ -9,7 +9,7 @@
   "prior": [
     "The voltage, current and resistance of a resistor are linked by Ohm's law $U = RI$ (chapter *Resistance and Ohm's law*)",
     "An ammeter is connected in series and a voltmeter in parallel with the component being measured (chapter *Measurements in an electric circuit*)",
-    "The agreed direction of the current is from the positive terminal of the battery to the negative terminal (chapter *Electric circuit, current and voltage*)"
+    "The agreed direction of the current is from the positive terminal of the battery to the negative terminal (chapter *Circuit, electric current and voltage*)"
   ],
   "activities": [
     {

@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: f9577732fa867a8e
+CONTENT-HASH: bb595c37bb767855
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- "impulssiperiaate" and "liikemäärän säilyminen" are only named; for S2 add "(niitä ei harjoitella tässä luvussa)" so the student does not look for them.
 
 ## Checked
-batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.
+batch delta review (fi-easy, NOTES 12): "moduuli" changed to "luku"; third tool added in two short sentences with a chapter reference; level instruction unchanged otherwise.

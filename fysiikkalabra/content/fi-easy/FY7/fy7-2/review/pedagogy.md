@@ -1,10 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: a469a9bacd07229e
+CONTENT-HASH: 95e436a1b8ea1958
 
 ## Blocking
+(none)
 
 ## Polish
-- Laatikossa on sekaisin "nopeus" (nopeusvalitsin) ja "vauhti" (massaspektrometri); runko tekee saman erottelun, joten pidetään, mutta opettaja voi harkita yhtenäistämistä.
+- The workload is at the top of one lesson. Mark ennuste-3 with koe-2, or Etsi virhe, optional if a shorter hour is wanted.
+- In meta.json key_concepts, nopeusvalitsin says "joiden nopeus on tietty", but the lesson says "vauhti". Use one word.
+- Ydinajatus opens straight into its first subsection. One lead sentence would help a phone reader.
 
 ## Checked
-batch delta review: meta.json key_concepts diff in context of the lesson text; Lisäys "Kun vauhti ja varaus ovat samat" korjaa aiemman liian yleisen väitteen ja vastaa tarkasti sitä, mitä kappaleen kaava ja massaspektrometrikuva näyttävät.
+Follow-up delta (2c31ff041, NOTES §12): the calc note now writes |q|vB and |q|E, matching fi and the lesson, and its sentences stay short. Earlier full review: difficult words are explained, the physics is identical to fi, and the calculations were recomputed.

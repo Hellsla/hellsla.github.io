@@ -55,7 +55,7 @@
 ## Key idea
 Everyday heat phenomena, such as heating a sauna, a cool bag staying cold and cooling an engine, are solved with the same principle: energy bookkeeping. Energy is conserved, so every joule needs a source and a destination. The source is a power, which means energy per second, or another object that gives out heat. There are two destinations. The energy raises the temperature, $Q = cm\Delta T$, or it changes the state of matter, $Q = sm$ or $Q = rm$. During a change of state the temperature does not change. When ice melts or water boils, all the energy goes into the change, and the temperature rises only after the change is over.
 
-A power $P = UA\Delta T$ flows into the cool bag through its walls, even though the insulation is good. As long as there is ice left, all this energy melts ice and the inside stays at $0\,{}^\circ\text{C}$. Melting takes a lot of energy: melting one kilogram of ice takes $334\,\text{kJ}$, the same as heating the same amount of water by 80 kelvins. When the ice has melted, the same power starts to raise the temperature of the water, and the drinks warm up. This is why it is worth putting ice in the bag and not just cold water.
+A power $P = UA\Delta T$ flows into the cool bag through its walls, even though the insulation is good. As long as there is ice left, this energy melts ice. When the ice and the meltwater are in thermal equilibrium with each other, the temperature of the ice–water mixture stays at about $0\,{}^\circ\text{C}$. Elsewhere in the cool bag the temperature can be higher. Melting takes a lot of energy: melting one kilogram of ice takes $334\,\text{kJ}$, the same as heating the same amount of water by 80 kelvins. When the ice has melted, the same power starts to raise the temperature of the water, and the drinks warm up. This is why it is worth putting ice in the bag and not just cold water.
 
 <svg viewBox="0 0 600 340" role="img" aria-label="Illustration of a cool bag and of energy needed. On the left is a cross-section of the cool bag: it is 28 °C outside, inside there is an ice pack and drink bottles at 0 °C, and a heat power P flows in through the walls, shown by two arrows of equal size. On the right are bars at the same scale for a mass of one kilogram: melting the ice takes 334 kJ, heating water by 10 K takes 42 kJ and by 80 K takes 335 kJ, so melting takes as much energy as warming by 80 kelvins." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy316a-heat" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient><linearGradient id="fy316a-heatv" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#e8590c"/><stop offset="1" stop-color="#ffc078"/></linearGradient><linearGradient id="fy316a-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
@@ -108,7 +108,7 @@ The power conducted through a building part, such as the wall of a cool bag, is
 ```latex
 P = U A \Delta T
 ```
-where $U$ is the U-value (W/(m²·K)), $A$ is the total area of the walls (m²) and $\Delta T$ is the difference between the outside and inside temperatures (K). As long as there is ice in the bag, the inside temperature is $0\,{}^\circ\text{C}$ and $\Delta T$ is the outside temperature in degrees Celsius. Then all the energy coming through the wall melts ice, $UA\Delta T\,t = sm$, and the time the ice lasts is
+where $U$ is the U-value (W/(m²·K)), $A$ is the total area of the walls (m²) and $\Delta T$ is the difference between the outside and inside temperatures (K). In the model, the inside of the bag is taken to be at $0\,{}^\circ\text{C}$ as long as there is ice, so $\Delta T$ is the outside temperature in degrees Celsius. Then all the energy coming through the wall melts ice, $UA\Delta T\,t = sm$, and the time the ice lasts is
 ```latex
 t = \frac{s\,m}{U A \Delta T}
 ```
@@ -201,7 +201,7 @@ The problem goes like this:
 5. Check the units and the order of magnitude.
 
 ## Worked example
-On a trip, a cool bag contains a $1.0\,\text{kg}$ ice pack at $0\,{}^\circ\text{C}$ and $0.50\,\text{kg}$ of drinks in bottles at $20\,{}^\circ\text{C}$. The total area of the walls of the bag is 0.80 m² and the U-value is $1.5\,\text{W/(m}^2\text{}\cdot\text{K)}$, and it is $28\,{}^\circ\text{C}$ outside. Assume that the drinks cool to $0\,{}^\circ\text{C}$ at once, melting ice, and that the inside stays at $0\,{}^\circ\text{C}$ until the ice has melted. How long does the ice last? The specific heat capacity of the drinks is the value for water.
+On a trip, a cool bag contains a $1.0\,\text{kg}$ ice pack at $0\,{}^\circ\text{C}$ and $0.50\,\text{kg}$ of drinks in bottles at $20\,{}^\circ\text{C}$. The total area of the walls of the bag is $0.80\,\text{m}^2$ and the U-value is $1.5\,\text{W/(m}^2\text{}\cdot\text{K)}$, and it is $28\,{}^\circ\text{C}$ outside. Assume that the drinks cool to $0\,{}^\circ\text{C}$ at once, melting ice, and that the inside stays at $0\,{}^\circ\text{C}$ until the ice has melted. How long does the ice last? The specific heat capacity of the drinks is the value for water.
 
 <!-- vaihe -->
 

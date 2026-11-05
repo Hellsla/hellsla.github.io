@@ -55,7 +55,7 @@
 ## Ydinajatus
 Arjen lämpöilmiöt, kuten saunan lämmitys, kylmälaukun jäähtyminen ja moottorin jäähdytys, ratkeavat samalla periaatteella: energiakirjanpidolla. Energia säilyy, joten jokaiselle joulelle on löydyttävä lähde ja kohde. Lähteenä on teho eli energia sekunnissa tai toinen kappale, joka luovuttaa lämpöä. Kohteita on kaksi: energia nostaa lämpötilaa, $Q = cm\Delta T$, tai se muuttaa olomuotoa, $Q = sm$ tai $Q = rm$. Olomuodon muutoksen aikana lämpötila ei muutu: kun jää sulaa tai vesi kiehuu, kaikki energia kuluu muutokseen, ja lämpötila nousee vasta, kun muutos on loppu.
 
-Kylmälaukun seinien läpi johtuu sisään teho $P = UA\Delta T$, vaikka eriste on hyvä. Niin kauan kuin jäätä on jäljellä, kaikki tämä energia sulattaa jäätä ja sisällä pysyy $0\,{}^\circ\text{C}$. Sulattaminen vaatii paljon energiaa: yhden kilogramman jään sulattaminen vaatii $334\,\text{kJ}$, yhtä paljon kuin saman vesimäärän lämmittäminen 80 kelvinillä. Kun jää on sulanut, sama teho alkaa nostaa veden lämpötilaa ja juomat lämpenevät. Siksi laukkuun kannattaa laittaa jäätä eikä vain kylmää vettä.
+Kylmälaukun seinien läpi johtuu sisään teho $P = UA\Delta T$, vaikka eriste on hyvä. Niin kauan kuin jäätä on jäljellä, tämä energia sulattaa jäätä. Kun jää ja sulamisvesi ovat keskenään lämpötasapainossa, jää-vesiseoksen lämpötila pysyy noin $0\,{}^\circ\text{C}$:ssa. Kylmälaukun muissa kohdissa lämpötila voi olla korkeampi. Sulattaminen vaatii paljon energiaa: yhden kilogramman jään sulattaminen vaatii $334\,\text{kJ}$, yhtä paljon kuin saman vesimäärän lämmittäminen 80 kelvinillä. Kun jää on sulanut, sama teho alkaa nostaa veden lämpötilaa ja juomat lämpenevät. Siksi laukkuun kannattaa laittaa jäätä eikä vain kylmää vettä.
 
 <svg viewBox="0 0 600 340" role="img" aria-label="Kuva kylmälaukusta ja energiankulutuksesta. Vasemmalla kylmälaukun poikkileikkaus: ulkona on 28 °C, sisällä jääpussi ja juomapulloja 0 °C:ssa, ja seinien läpi virtaa sisään lämpöteho P kahdella yhtä suurella nuolella. Oikealla pylväät samassa mittakaavassa yhdelle kilogramman massalle: jään sulattaminen vaatii 334 kJ, veden lämmittäminen 10 K:lla 42 kJ ja 80 K:lla 335 kJ, joten sulaminen vie yhtä paljon energiaa kuin 80 kelvinin lämpeneminen." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy316a-heat" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient><linearGradient id="fy316a-heatv" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#e8590c"/><stop offset="1" stop-color="#ffc078"/></linearGradient><linearGradient id="fy316a-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
@@ -108,7 +108,7 @@ Rakennusosan, kuten kylmälaukun seinän, läpi johtuva teho on
 ```latex
 P = U A \Delta T
 ```
-missä $U$ on U-arvo (W/(m²·K)), $A$ seinien yhteispinta-ala (m²) ja $\Delta T$ ulko- ja sisälämpötilan erotus (K). Niin kauan kuin laukussa on jäätä, sisälämpötila on $0\,{}^\circ\text{C}$ ja $\Delta T$ on ulkolämpötila celsiusasteina. Silloin kaikki seinän läpi tuleva energia sulattaa jäätä, $UA\Delta T\,t = sm$, ja jään kestoaika on
+missä $U$ on U-arvo (W/(m²·K)), $A$ seinien yhteispinta-ala (m²) ja $\Delta T$ ulko- ja sisälämpötilan erotus (K). Mallissa oletetaan, että laukun sisälämpötila on $0\,{}^\circ\text{C}$ niin kauan kuin jäätä on, jolloin $\Delta T$ on ulkolämpötila celsiusasteina. Silloin kaikki seinän läpi tuleva energia sulattaa jäätä, $UA\Delta T\,t = sm$, ja jään kestoaika on
 ```latex
 t = \frac{s\,m}{U A \Delta T}
 ```
@@ -201,7 +201,7 @@ Tehtävä etenee näin:
 5. Tarkista yksiköt ja suuruusluokka.
 
 ## Esimerkki
-Retkellä kylmälaukussa on $1{,}0\,\text{kg}$:n jääpussi, jonka lämpötila on $0\,{}^\circ\text{C}$, ja pulloissa $0{,}50\,\text{kg}$ juomaa, jonka lämpötila on $20\,{}^\circ\text{C}$. Laukun seinien yhteispinta-ala on 0,80 m² ja U-arvo $1{,}5\,\text{W/(m}^2\text{}\cdot\text{K)}$, ja ulkona on $28\,{}^\circ\text{C}$. Oletetaan, että juomat jäähtyvät heti $0\,{}^\circ\text{C}$:seen sulattaen jäätä ja että sisällä pysyy $0\,{}^\circ\text{C}$, kunnes jää on sulanut. Kuinka kauan jäätä riittää? Juomien ominaislämpökapasiteetti on veden arvo.
+Retkellä kylmälaukussa on $1{,}0\,\text{kg}$:n jääpussi, jonka lämpötila on $0\,{}^\circ\text{C}$, ja pulloissa $0{,}50\,\text{kg}$ juomaa, jonka lämpötila on $20\,{}^\circ\text{C}$. Laukun seinien yhteispinta-ala on $0{,}80\,\text{m}^2$ ja U-arvo $1{,}5\,\text{W/(m}^2\text{}\cdot\text{K)}$, ja ulkona on $28\,{}^\circ\text{C}$. Oletetaan, että juomat jäähtyvät heti $0\,{}^\circ\text{C}$:seen sulattaen jäätä ja että sisällä pysyy $0\,{}^\circ\text{C}$, kunnes jää on sulanut. Kuinka kauan jäätä riittää? Juomien ominaislämpökapasiteetti on veden arvo.
 
 <!-- vaihe -->
 
