@@ -1,0 +1,1113 @@
+{
+ "intro": "Koe kattaa koko moduulin: voima vuorovaikutuksen mittana ja työ, termodynaaminen systeemi ja lämpötila, paine ja hydrostaattinen paine, sisäenergia ja lämpömäärä, aineen lämpeneminen ja olomuodon muutokset, lämpölaajeneminen, kaasujen tilanmuutokset ja ideaalikaasun tilanyhtälö, lämpövoimakoneet ja energiantuotanto sekä lämmön siirtyminen ja ilmastonmuutos. Tehtävissä annetaan niiden tarvitsemat vakiot ja ainearvot. Pisteytyksessä sama virhe vähentää pisteitä vain kerran: jos jatkat väärällä välituloksella oikein, saat myöhemmistä vaiheista pisteet.",
+ "minutes": 120,
+ "max_points": 70,
+ "sections": [
+  {
+   "title": "Osa 1: Perusosaaminen",
+   "tasks": [
+    "fy3-k1"
+   ]
+  },
+  {
+   "title": "Osa 2: Perustehtävät",
+   "choose": 2,
+   "tasks": [
+    "fy3-k2",
+    "fy3-k3",
+    "fy3-k4",
+    "fy3-k5"
+   ]
+  },
+  {
+   "title": "Osa 3: Soveltavat tehtävät",
+   "choose": 1,
+   "tasks": [
+    "fy3-k6",
+    "fy3-k7"
+   ]
+  }
+ ],
+ "tasks": [
+  {
+   "id": "fy3-k1",
+   "title": "Monivalinnat",
+   "text": "Valitse jokaisessa kohdassa yksi vaihtoehto. Oikea vastaus on $2$ p, väärä tai puuttuva $0$ p.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "choice",
+     "points": 2,
+     "text": "Kuuhun viedään mittalaite, jonka massa on $2{,}50\\,\\text{kg}$. Kuun pinnalla putoamiskiihtyvyys on $1{,}62\\,\\text{m/s}^2$. Kuinka suuri on laitteen paino Kuussa?",
+     "options": [
+      "$2{,}50\\,\\text{kg}$",
+      "$4{,}05\\,\\text{N}$",
+      "$1{,}54\\,\\text{N}$",
+      "$24{,}5\\,\\text{N}$"
+     ],
+     "correct": 1,
+     "tag": "concept"
+    },
+    {
+     "id": "b",
+     "kind": "choice",
+     "points": 2,
+     "text": "Laatikkoa työnnetään lattiaa pitkin. Kuvaajassa on työntövoima $F$ laatikon kulkeman matkan $s$ funktiona. Voima on koko ajan liikkeen suuntainen. Kuinka suuren työn työntäjä tekee $5{,}0\\,\\text{m}$:n matkalla?",
+     "options": [
+      "$100\\,\\text{J}$",
+      "$120\\,\\text{J}$",
+      "$160\\,\\text{J}$",
+      "$200\\,\\text{J}$"
+     ],
+     "correct": 2,
+     "tag": "graph",
+     "figure": "fy3-koe/fy3-k1-work"
+    },
+    {
+     "id": "c",
+     "kind": "choice",
+     "points": 2,
+     "text": "Metallinen ja puinen lusikka ovat olleet yön samassa laatikossa huoneenlämmössä. Kun ne otetaan käteen, metallilusikka tuntuu kylmemmältä. Mikä selitys on oikea?",
+     "options": [
+      "Metallilusikka on jäähtynyt yön aikana kylmemmäksi kuin puulusikka.",
+      "Metallissa on enemmän kylmää, joka siirtyy siitä käteen kosketuksessa.",
+      "Metallin ominaislämpökapasiteetti on suurempi kuin puun, joten se tuntuu kylmältä.",
+      "Metalli johtaa lämpöä kädestä pois nopeammin kuin puu."
+     ],
+     "correct": 3,
+     "tag": "concept"
+    },
+    {
+     "id": "d",
+     "kind": "choice",
+     "points": 2,
+     "text": "Kuinka syvällä järven pinnan alla veden aiheuttama hydrostaattinen paine on yhtä suuri kuin normaali ilmanpaine $101\\,\\text{kPa}$?",
+     "options": [
+      "noin $1\\,\\text{m}$:n syvyydessä",
+      "noin $10\\,\\text{m}$:n syvyydessä",
+      "noin $100\\,\\text{m}$:n syvyydessä",
+      "noin $1\\,\\text{km}$:n syvyydessä"
+     ],
+     "correct": 1,
+     "tag": "math"
+    },
+    {
+     "id": "e",
+     "kind": "choice",
+     "points": 2,
+     "text": "Sylinterissä olevaa ilmaa puristetaan männällä niin nopeasti, ettei lämpöä ehdi siirtyä ilmaan eikä ilmasta pois. Mikä pitää paikkansa?",
+     "options": [
+      "Ilman sisäenergia kasvaa, koska ilmaan tehdään työtä.",
+      "Ilman sisäenergia ei muutu, koska lämpöä ei siirry.",
+      "Ilman lämpötila ei muutu, koska ilmaa ei lämmitetä.",
+      "Ilman sisäenergia pienenee, koska sen tilavuus pienenee."
+     ],
+     "correct": 0,
+     "tag": "concept"
+    },
+    {
+     "id": "f",
+     "kind": "choice",
+     "points": 2,
+     "text": "Alumiini-, kupari- ja lyijykappaleen massa on sama, ja jokainen saa saman lämpömäärän. Aineiden ominaislämpökapasiteetit ovat alumiini $900$, kupari $385$ ja lyijy $130$, kaikki yksikössä $\\tfrac{\\text{J}}{\\text{kg} \\cdot \\text{K}}$. Missä järjestyksessä kappaleiden lämpötilan muutokset ovat pienimmästä suurimpaan?",
+     "options": [
+      "lyijy, kupari, alumiini",
+      "Kaikkien lämpötila muuttuu yhtä paljon.",
+      "Järjestystä ei voi päätellä tietämättä kappaleiden tilavuuksia.",
+      "alumiini, kupari, lyijy"
+     ],
+     "correct": 3,
+     "tag": "math"
+    },
+    {
+     "id": "g",
+     "kind": "choice",
+     "points": 2,
+     "text": "Astiassa on jäätä, jonka lämpötila on $-20\\,{}^\\circ\\text{C}$. Sitä lämmitetään tasaisella teholla, ja lämpötila mitataan. Kuvaajassa on lämpötila $T$ ajan $t$ funktiona. Miksi vaakasuora osa lämpötilassa $100\\,{}^\\circ\\text{C}$ on paljon pidempi kuin vaakasuora osa lämpötilassa $0\\,{}^\\circ\\text{C}$?",
+     "options": [
+      "Höyrystyminen vaatii massaa kohti paljon enemmän energiaa kuin sulaminen.",
+      "Veden ominaislämpökapasiteetti on suurempi kuin jään ominaislämpökapasiteetti.",
+      "Vettä on kiehumisvaiheessa suurempi massa kuin jäätä oli sulamisvaiheessa.",
+      "Kiehuvan veden lämpötila ei voi nousta, koska kuumentimen teho pienenee kiehumisen aikana."
+     ],
+     "correct": 0,
+     "tag": "graph",
+     "figure": "fy3-koe/fy3-k1-heating"
+    },
+    {
+     "id": "h",
+     "kind": "choice",
+     "points": 2,
+     "text": "Metallilevyssä on pyöreä reikä. Levyä lämmitetään tasaisesti. Mitä reiälle tapahtuu?",
+     "options": [
+      "Reikä pienenee, koska metalli laajenee reiän sisään.",
+      "Reikä suurenee samassa suhteessa kuin levyn muut mitat.",
+      "Reikä pysyy samankokoisena, koska reiässä ei ole metallia.",
+      "Reikä venyy soikeaksi."
+     ],
+     "correct": 1,
+     "tag": "concept"
+    },
+    {
+     "id": "i",
+     "kind": "choice",
+     "points": 2,
+     "text": "Suljetussa jäykässä terässäiliössä on kaasua. Kaasun lämpötila nousee $20\\,{}^\\circ\\text{C}$:sta $40\\,{}^\\circ\\text{C}$:een. Miten kaasun paine muuttuu?",
+     "options": [
+      "Paine kaksinkertaistuu.",
+      "Paine pysyy samana, koska säiliön tilavuus ei muutu.",
+      "Paine kasvaa noin $7\\,\\%$.",
+      "Paine kasvaa noin $20\\,\\%$."
+     ],
+     "correct": 2,
+     "tag": "math"
+    },
+    {
+     "id": "j",
+     "kind": "choice",
+     "points": 2,
+     "text": "Ilmakehän hiilidioksidipitoisuus kasvaa. Mikä kuvaa parhaiten, miksi maapallon keskilämpötila silloin nousee?",
+     "options": [
+      "Hiilidioksidi päästää Auringon säteilyä läpi aiempaa enemmän, joten Maa saa Auringosta enemmän energiaa.",
+      "Hiilidioksidi vapauttaa lämpöä reagoidessaan ilmakehän muiden kaasujen kanssa, mikä lämmittää ilmaa.",
+      "Hiilidioksidi ohentaa otsonikerrosta, joten Auringon ultraviolettisäteilyä pääsee maanpinnalle aiempaa enemmän.",
+      "Ilmakehä päästää Maan lämpösäteilystä avaruuteen pienemmän osan, ja Maa lämpenee, kunnes tasapaino palautuu."
+     ],
+     "correct": 3,
+     "tag": "concept"
+    }
+   ],
+   "skills": [
+    "fy3-1",
+    "fy3-2",
+    "fy3-3",
+    "fy3-4",
+    "fy3-5",
+    "fy3-6",
+    "fy3-7",
+    "fy3-8",
+    "fy3-10",
+    "fy3-12"
+   ],
+   "links": {
+    "concept": "fy3-5",
+    "graph": "fy3-2",
+    "math": "fy3-6"
+   }
+  },
+  {
+   "id": "fy3-k2",
+   "title": "Ilmapatsas lasiputkessa",
+   "source": "example",
+   "source_note": "Mittaustulokset on laadittu esimerkiksi, eivätkä ne ole oikean mittauksen tuloksia.",
+   "text": "Kapean lasiputken alapää on suljettu. Putkessa on ilmaa, jonka yläpuolella on lyhyt öljytulppa. Tulppa pääsee liikkumaan putkessa vapaasti, ja putken yläpää on auki. Putki on pystyssä vesihauteessa. Opiskelijat lämmittivät haudetta ja lukivat putken vierellä olevasta viivaimesta ilmapatsaan pituuden $L$ putken suljetusta päästä tulpan alareunaan. Kunkin pituuden lukeman epävarmuus on $0{,}5\\,\\text{mm}$.\n\n| $\\theta\\ ({}^\\circ\\text{C})$ | $L\\ (\\text{mm})$ |\n|---|---|\n| $5$ | $59{,}0$ |\n| $20$ | $62{,}5$ |\n| $35$ | $65{,}5$ |\n| $50$ | $68{,}5$ |\n| $65$ | $72{,}0$ |\n| $80$ | $75{,}0$ |",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "graph",
+     "points": 5,
+     "text": "Piirrä mittaustuloksista $(\\theta, L)$-kuvaaja, jonka vaaka-akseli ulottuu lämpötilaan $-300\\,{}^\\circ\\text{C}$. Sovita pisteisiin suora ja jatka sitä kohti matalampia lämpötiloja.",
+     "criteria": [
+      {
+       "key": "graph_axes",
+       "points": 1,
+       "detail": "Vaaka-akseli ulottuu vähintään lämpötilaan $-300\\,{}^\\circ\\text{C}$, ja pystyakseli alkaa nollasta."
+      },
+      {
+       "key": "graph_points",
+       "points": 1
+      },
+      {
+       "key": "graph_fit",
+       "points": 2,
+       "detail": "Suora kulkee pisteiden joukon keskeltä koko mittausalueella."
+      },
+      {
+       "text": "Suora on jatkettu näkyvästi mittausalueen ulkopuolelle pituuteen nolla asti.",
+       "tag": "graph",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 4,
+     "text": "Määritä mittausten perusteella absoluuttisen nollapisteen lämpötila celsiusasteina.",
+     "answer": {
+      "value": -273,
+      "unit": "°C",
+      "tolerance": 0.05
+     },
+     "criteria": [
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "Kulmakerroin luetaan suoralta kahdesta kaukana toisistaan olevasta pisteestä, tai suoran ja vaaka-akselin leikkauskohta luetaan jatketulta suoralta."
+      },
+      {
+       "text": "Käyttää ehtoa, että absoluuttisessa nollapisteessä ilmapatsaan pituus olisi nolla: $\\theta_0 = -\\tfrac{L(0)}{k}$.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$\\theta_0 \\approx -270\\,{}^\\circ\\text{C}$, kahdella tai kolmella merkitsevällä numerolla."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "word",
+     "points": 3,
+     "text": "Miksi ilmapatsaan pituus kasvaa tasaisesti lämpötilan kasvaessa? Mitä oletetaan, kun suoraa jatketaan pituuteen nolla asti?",
+     "criteria": [
+      {
+       "text": "Toteaa, että tulppa liikkuu vapaasti, joten ilman paine pysyy vakiona (ulkoilman paine ja tulpan pieni lisäpaine).",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Putken poikkipinta-ala on vakio, joten tilavuus $V = AL$ on verrannollinen pituuteen, ja vakiopaineessa ideaalikaasun tilavuus on verrannollinen absoluuttiseen lämpötilaan.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "assumptions",
+       "points": 1,
+       "detail": "Jatkaminen olettaa, että ilma käyttäytyy ideaalikaasun tavoin myös kaukana mittausalueen ulkopuolella. Todellisuudessa ilma nesteytyy ennen kuin tilavuus pienenisi nollaan."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "calc",
+     "points": 3,
+     "text": "Toinen ryhmä teki saman mittauksen, mutta heidän viivaimensa nollakohta oli $2{,}0\\,\\text{mm}$ putken suljetun pään alapuolella. Jokainen heidän lukemansa oli siksi $2{,}0\\,\\text{mm}$ todellista pituutta suurempi, mutta muuten heidän mittauksensa olivat samat. Minkä tuloksen he saivat absoluuttiselle nollapisteelle? Millainen virhe heidän mittauksessaan oli?",
+     "answer": {
+      "value": -282,
+      "unit": "°C",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "text": "Toteaa, että suoran kulmakerroin ei muutu mutta pituus lämpötilassa $0\\,{}^\\circ\\text{C}$ kasvaa $2{,}0\\,\\text{mm}$.",
+       "tag": "graph",
+       "points": 1
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$\\theta_0 = -\\tfrac{60{,}0\\,\\text{mm}}{0{,}2125\\,\\text{mm}/{}^\\circ\\text{C}} \\approx -282\\,{}^\\circ\\text{C}$."
+      },
+      {
+       "text": "Nimeää virheen systemaattiseksi ja toteaa, että jo $2\\,\\text{mm}$:n siirtymä muuttaa tulosta noin $10\\,{}^\\circ\\text{C}$, koska suora jatketaan kauas mittausalueen ulkopuolelle.",
+       "tag": "experiment",
+       "points": 1
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy3-13",
+    "fy3-9",
+    "fy3-3"
+   ],
+   "links": {
+    "graph": "fy3-13",
+    "transfer": "fy3-13",
+    "math": "fy3-13",
+    "concept": "fy3-9",
+    "experiment": "fy3-13"
+   }
+  },
+  {
+   "id": "fy3-k3",
+   "title": "Mäntä ja punnus",
+   "source": "example",
+   "text": "Pystysuoran sylinterin sisällä on ilmaa kevyesti liikkuvan männän alla. Männän päällä on punnus. Männän ja punnuksen yhteismassa on $12{,}0\\,\\text{kg}$, ja männän pinta-ala on $40{,}0\\,\\text{cm}^2$. Ulkoilman paine on $101\\,\\text{kPa}$. Aluksi ilman lämpötila on $20{,}0\\,{}^\\circ\\text{C}$, ja ilmapatsaan korkeus männän alla on $25{,}0\\,\\text{cm}$. Sylinteri lasketaan kuumaan vesihauteeseen, ja ilma lämpenee hitaasti lämpötilaan $80{,}0\\,{}^\\circ\\text{C}$. Kitka on merkityksetön. Käytä arvoja $g = 9{,}81\\,\\text{m/s}^2$ ja $R = 8{,}314\\,\\tfrac{\\text{J}}{\\text{mol} \\cdot \\text{K}}$.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 5,
+     "text": "Ilman paine on ulkoilman paineen ja männän ja punnuksen painon aiheuttaman paineen summa. Laske ilman paine ja ainemäärä.",
+     "answer": [
+      {
+       "name": "p",
+       "value": 130.4,
+       "unit": "kPa",
+       "tolerance": 0.01
+      },
+      {
+       "name": "n",
+       "value": 0.0535,
+       "unit": "mol",
+       "tolerance": 0.02
+      }
+     ],
+     "criteria": [
+      {
+       "text": "Laskee painon $G = mg$ ja sen aiheuttaman paineen $\\tfrac{G}{A} \\approx 29{,}4\\,\\text{kPa}$, ja lisää siihen ulkoilman paineen.",
+       "tag": "math",
+       "points": 2
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$pV = nRT$ ratkaistuna muotoon $n = \\tfrac{pV}{RT}$, kun $V = Ah$."
+      },
+      {
+       "key": "units_precision",
+       "points": 2,
+       "detail": "$40{,}0\\,\\text{cm}^2 = 4{,}00 \\cdot 10^{-3}\\,\\text{m}^2$ ja $T$ kelvineinä; $p \\approx 130\\,\\text{kPa}$ ja $n \\approx 0{,}0535\\,\\text{mol}$."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kuinka paljon mäntä nousee?",
+     "answer": {
+      "value": 5.12,
+      "unit": "cm",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "text": "Toteaa, että paine pysyy vakiona, koska männän ja punnuksen paino ja ulkoilman paine eivät muutu.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$\\tfrac{V_1}{T_1} = \\tfrac{V_2}{T_2}$ ja $V = Ah$, joten $h_2 = h_1 \\cdot \\tfrac{T_2}{T_1}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "Lämpötilat kelvineinä; $h_2 \\approx 30{,}1\\,\\text{cm}$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "Mäntä nousee noin $5{,}1\\,\\text{cm}$."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 3,
+     "text": "Kuinka suuren työn ilma tekee mäntää nostaessaan?",
+     "answer": {
+      "value": 26.7,
+      "unit": "J",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$W = Fs$, kun $F = pA$ ja $s = \\Delta h$, eli $W = p\\,\\Delta V$."
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$W \\approx 27\\,\\text{J}$."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "calc",
+     "points": 3,
+     "text": "Ilma sai vesihauteesta lämpöä $93\\,\\text{J}$. Kuinka paljon ilman sisäenergia kasvoi? Selitä, miksi se kasvoi vähemmän kuin ilma sai lämpöä.",
+     "answer": {
+      "value": 66,
+      "unit": "J",
+      "tolerance": 0.04
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$\\Delta U = Q - W$, kun $W$ on ilman tekemä työ."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$\\Delta U \\approx 66\\,\\text{J}$."
+      },
+      {
+       "text": "Selittää, että osa saadusta energiasta siirtyi työnä ympäristöön: ilma nosti mäntää ja punnusta ja työnsi ulkoilmaa, ja vain loput kasvatti ilman sisäenergiaa ja lämpötilaa.",
+       "tag": "communication",
+       "points": 1
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy3-1",
+    "fy3-4",
+    "fy3-9",
+    "fy3-10",
+    "fy3-11",
+    "fy3-5"
+   ],
+   "links": {
+    "math": "fy3-10",
+    "concept": "fy3-9",
+    "communication": "fy3-11"
+   }
+  },
+  {
+   "id": "fy3-k4",
+   "title": "Lumesta juomavettä",
+   "source": "example",
+   "source_note": "Tilanne ja punnitustulokset on laadittu esimerkiksi; ainevakiot ovat tavallisia taulukkoarvoja.",
+   "text": "Talviretkellä juomavesi tehdään lumesta. Retkeilijä panee kattilaan $1{,}20\\,\\text{kg}$ lunta, jonka lämpötila on $-8{,}0\\,{}^\\circ\\text{C}$, ja lämmittää sitä retkikeittimellä, kunnes vesi kiehuu lämpötilassa $100\\,{}^\\circ\\text{C}$. Hän punnitsee keittimen kaasusäiliön ennen lämmitystä ja sen jälkeen. Lukemat ovat $352\\,\\text{g}$ ja $310\\,\\text{g}$. Jään ominaislämpökapasiteetti on $2{,}09\\,\\tfrac{\\text{kJ}}{\\text{kg} \\cdot \\text{K}}$, jään ominaissulamislämpö $333\\,\\tfrac{\\text{kJ}}{\\text{kg}}$, veden ominaislämpökapasiteetti $4{,}19\\,\\tfrac{\\text{kJ}}{\\text{kg} \\cdot \\text{K}}$ ja kaasun lämpöarvo $46\\,\\tfrac{\\text{MJ}}{\\text{kg}}$.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 5,
+     "text": "Kuinka paljon energiaa lumi ja siitä syntyvä vesi saavat, kun lumi lämmitetään kiehuvaksi vedeksi?",
+     "answer": {
+      "value": 922,
+      "unit": "kJ",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "text": "Tunnistaa kolme vaihetta: lumi lämpenee $0\\,{}^\\circ\\text{C}$:een, lumi sulaa ja vesi lämpenee $100\\,{}^\\circ\\text{C}$:een.",
+       "tag": "transfer",
+       "points": 2
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$Q = c_\\text{j}m\\,\\Delta T_1 + sm + c_\\text{v}m\\,\\Delta T_2$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$20\\,\\text{kJ} + 400\\,\\text{kJ} + 503\\,\\text{kJ}$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$Q \\approx 920\\,\\text{kJ}$."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 4,
+     "text": "Laske keittimen hyötysuhde.",
+     "answer": {
+      "value": 47.7,
+      "unit": "%",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$\\eta = \\tfrac{Q}{E}$, kun $E = mH$ on palaneen kaasun energia."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "Kaasua paloi $42\\,\\text{g}$, ja sen energia on $E \\approx 1{,}93\\,\\text{MJ}$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$\\eta \\approx 48\\,\\%$."
+      },
+      {
+       "key": "reasonableness",
+       "points": 1,
+       "detail": "Loput energiasta lämmitti kattilaa ja ympäröivää ilmaa; pakkasessa ja tuulessa häviöt ovat suuria."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 3,
+     "text": "Vaa'an lukeman epävarmuus on $1\\,\\text{g}$. Arvioi b-kohdan hyötysuhteen epävarmuus.",
+     "answer": [
+      {
+       "name": "min",
+       "value": 45.6,
+       "unit": "%",
+       "tolerance": 0.02
+      },
+      {
+       "name": "max",
+       "value": 50.1,
+       "unit": "%",
+       "tolerance": 0.02
+      }
+     ],
+     "criteria": [
+      {
+       "key": "uncertainty",
+       "points": 2,
+       "detail": "Palaneen kaasun massan epävarmuus on kahden lukeman epävarmuuksien summa $2\\,\\text{g}$, joten massa on $40$–$44\\,\\text{g}$ ja hyötysuhde noin $46$–$50\\,\\%$."
+      },
+      {
+       "text": "Ilmoittaa tuloksen muodossa $\\eta \\approx (48 \\pm 2)\\,\\%$.",
+       "tag": "math",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "word",
+     "points": 3,
+     "text": "Selitä, miksi lumen syöminen janoon on talviretkellä huono ajatus. Arvioi myös, kuinka paljon energiaa elimistö kuluttaa, kun se lämmittää ja sulattaa $0{,}50\\,\\text{kg}$ lunta ja lämmittää syntyneen veden ruumiinlämpöön $37\\,{}^\\circ\\text{C}$. Lumen lämpötila on $-8{,}0\\,{}^\\circ\\text{C}$.",
+     "criteria": [
+      {
+       "text": "Elimistö joutuu antamaan energian, joka lämmittää lumen, sulattaa sen ja lämmittää veden ruumiinlämpöön.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Sulaminen vaatii näistä eniten energiaa, vaikka lumen lämpötila ei sen aikana muutu.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Arvioi energian: noin $250\\,\\text{kJ}$, ja toteaa, että keho jäähtyy ja kuluttaa energiaa, jota se tarvitsee pakkasessa lämpimänä pysymiseen.",
+       "tag": "communication",
+       "points": 1
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy3-6",
+    "fy3-7",
+    "fy3-14",
+    "fy3-15"
+   ],
+   "links": {
+    "transfer": "fy3-7",
+    "math": "fy3-6",
+    "experiment": "fy3-13",
+    "concept": "fy3-7",
+    "communication": "fy3-7"
+   }
+  },
+  {
+   "id": "fy3-k5",
+   "title": "Kaukolämpöputki",
+   "source": "example",
+   "source_note": "Verkon mitat ja paineet on laadittu esimerkiksi; veden tiheys ja kiehumispaine ovat taulukkoarvoja.",
+   "text": "Kaukolämpöverkon menoputkessa virtaa talvella vettä, jonka lämpötila on $115\\,{}^\\circ\\text{C}$. Teräsputki asennettiin, kun sen lämpötila oli $10\\,{}^\\circ\\text{C}$. Teräksen pituuden lämpötilakerroin on $\\alpha = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$. Pumppaamolla putkessa olevan veden kokonaispaine (absoluuttinen paine) on $650\\,\\text{kPa}$. Lämpötilassa $115\\,{}^\\circ\\text{C}$ veden tiheys on $947\\,\\text{kg/m}^3$, ja vesi alkaa kiehua, jos sen kokonaispaine laskee alle $169\\,\\text{kPa}$. Käytä arvoa $g = 9{,}81\\,\\text{m/s}^2$.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 4,
+     "text": "Putken suoran osuuden pituus on asennettaessa $120\\,\\text{m}$. Kuinka paljon osuus pitenee, kun siinä alkaa virrata $115$-asteista vettä?",
+     "answer": {
+      "value": 15.1,
+      "unit": "cm",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$\\Delta L = \\alpha L_0 \\Delta T$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$\\Delta T = 105\\,\\text{K}$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$\\Delta L \\approx 0{,}15\\,\\text{m} = 15\\,\\text{cm}$."
+      },
+      {
+       "key": "reasonableness",
+       "points": 1,
+       "detail": "Suhteellinen muutos on noin $0{,}1\\,\\%$, mikä on metallille tavallinen."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "word",
+     "points": 3,
+     "text": "Putkilinjaan tehdään säännöllisin välein U:n muotoisia mutkia. Selitä, miksi.",
+     "criteria": [
+      {
+       "text": "Putki pitenee lämmetessä ja lyhenee jäähtyessä, esimerkiksi kun veden lämpötila vaihtelee vuodenaikojen mukaan.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Mutka joustaa, joten pituuden muutos ei siirry putken kiinnityksiin.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Jos putki olisi kiinnitetty jäykästi suoraksi, lämpölaajeneminen synnyttäisi suuret voimat, jotka voisivat taivuttaa putken tai rikkoa sen kiinnitykset tai liitokset.",
+       "tag": "communication",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Verkko ulottuu mäelle, jonka kohdalla putki on $35\\,\\text{m}$ pumppaamoa ylempänä. Kuinka suuri on veden paine siellä, kun vesi on levossa?",
+     "answer": {
+      "value": 325,
+      "unit": "kPa",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "text": "Toteaa, että paine pienenee ylöspäin mentäessä hydrostaattisen paineen verran: $p = p_1 - \\rho g h$.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$\\rho g h \\approx 325\\,\\text{kPa}$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$p \\approx 325\\,\\text{kPa}$."
+      },
+      {
+       "key": "reasonableness",
+       "points": 1,
+       "detail": "Paine on yhä selvästi suurempi kuin $169\\,\\text{kPa}$, joten vesi ei kiehu."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kuinka paljon pumppaamoa ylempänä putki voi enintään kulkea, ettei vesi ala kiehua? Onko todellinen raja korkeampi vai matalampi, kun vesi virtaa? Perustele.",
+     "answer": {
+      "value": 51.8,
+      "unit": "m",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$p_1 - \\rho g h = 169\\,\\text{kPa}$, joten $h = \\tfrac{p_1 - 169\\,\\text{kPa}}{\\rho g}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$h \\approx 52\\,\\text{m}$."
+      },
+      {
+       "key": "assumptions",
+       "points": 1,
+       "detail": "Virtaus menettää painetta putken kitkaan, joten paine on mäellä vielä pienempi ja todellinen raja on matalampi; siksi verkossa pidetään varmuusmarginaali."
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy3-8",
+    "fy3-4",
+    "fy3-7"
+   ],
+   "links": {
+    "math": "fy3-8",
+    "concept": "fy3-8",
+    "communication": "fy3-8",
+    "transfer": "fy3-4"
+   }
+  },
+  {
+   "id": "fy3-k6",
+   "title": "Jään sulamislämpö",
+   "source": "example",
+   "source_note": "Mittaustulokset on laadittu esimerkiksi tällaisesta mittauksesta, eivätkä ne ole oikean mittauksen tuloksia.",
+   "text": "Opiskelijat määrittivät jään ominaissulamislämmön. Styroksiastiassa oli $0{,}400\\,\\text{kg}$ murskattua jäätä ja $0{,}100\\,\\text{kg}$ vettä, ja seoksen lämpötila oli $0\\,{}^\\circ\\text{C}$. Hetkellä $t = 0$ astiaan upotettu sähkövastus kytkettiin päälle. Seosta sekoitettiin koko ajan, ja sen lämpötila $T$ luettiin minuutin välein. Huoneen lämpötila oli $21\\,{}^\\circ\\text{C}$. Veden ominaislämpökapasiteetti on $4{,}19\\,\\tfrac{\\text{kJ}}{\\text{kg} \\cdot \\text{K}}$.\n\n| $t\\ (\\text{min})$ | $T\\ ({}^\\circ\\text{C})$ |\n|---|---|\n| $0$ | $0{,}1$ |\n| $1$ | $0{,}1$ |\n| $2$ | $0{,}2$ |\n| $3$ | $0{,}2$ |\n| $4$ | $0{,}2$ |\n| $5$ | $0{,}3$ |\n| $6$ | $0{,}3$ |\n| $7$ | $0{,}6$ |\n| $8$ | $3{,}4$ |\n| $9$ | $11{,}2$ |\n| $10$ | $19{,}1$ |\n| $11$ | $27{,}3$ |\n| $12$ | $35{,}0$ |\n| $13$ | $42{,}9$ |",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "word",
+     "points": 3,
+     "text": "Miksi lämpötila pysyy ensimmäiset seitsemän minuuttia lähes vakiona, vaikka vastus on päällä? Miksi lämpötila alkaa sen jälkeen nousta?",
+     "criteria": [
+      {
+       "text": "Alussa vastuksen antama energia kuluu jään sulamiseen, ja jään ja veden seos pysyy sulamispisteessä.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Sulamisessa energia kasvattaa molekyylien välistä vuorovaikutusenergiaa irrottamalla molekyylejä jään säännöllisestä rakenteesta; lämpötila, joka kuvaa hiukkasten keskimääräistä liike-energiaa, ei muutu.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Kun kaikki jää on sulanut, energia lämmittää vettä, ja lämpötila alkaa nousta.",
+       "tag": "communication",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "graph",
+     "points": 5,
+     "text": "Piirrä mittaustuloksista $(t, T)$-kuvaaja. Määritä kuvaajasta hetki, jolloin jää on sulanut kokonaan.",
+     "criteria": [
+      {
+       "key": "graph_axes",
+       "points": 1
+      },
+      {
+       "key": "graph_points",
+       "points": 1
+      },
+      {
+       "key": "graph_fit",
+       "points": 2,
+       "detail": "Alun pisteisiin ($0$–$6\\,\\text{min}$) on sovitettu vaakasuora suora ja pelkän veden lämpenemisen pisteisiin ($8$–$13$ tai $9$–$13\\,\\text{min}$) nouseva suora; siirtymävaiheen piste $7\\,\\text{min}$ ei kuulu kumpaankaan."
+      },
+      {
+       "text": "Lukee suorien leikkauskohdasta hetken $t \\approx 7{,}6\\,\\text{min}$.",
+       "tag": "graph",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Määritä, kuinka suurella teholla vastus luovuttaa energiaa veteen.",
+     "answer": {
+      "value": 277,
+      "unit": "W",
+      "tolerance": 0.05
+     },
+     "criteria": [
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "Nousevan suoran kulmakerroin noin $7{,}9\\,\\tfrac{{}^\\circ\\text{C}}{\\text{min}}$ kahdesta kaukana toisistaan olevasta suoran pisteestä."
+      },
+      {
+       "text": "Käyttää koko vesimäärää $0{,}500\\,\\text{kg}$ ja yhteyttä $P = \\tfrac{Q}{t} = cm\\,\\tfrac{\\Delta T}{\\Delta t}$.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "Minuutit muutetaan sekunneiksi."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$P \\approx 280\\,\\text{W}$."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "calc",
+     "points": 4,
+     "text": "Määritä jään ominaissulamislämpö.",
+     "answer": {
+      "value": 316,
+      "unit": "kJ/kg",
+      "tolerance": 0.06
+     },
+     "criteria": [
+      {
+       "text": "Jään sulattamiseen kulunut energia on $Q = P\\,\\Delta t$, kun $\\Delta t$ on b-kohdassa luettu sulamisaika.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$Q = sm$, joten $s = \\tfrac{P\\,\\Delta t}{m_\\text{jää}}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$\\Delta t \\approx 7{,}6\\,\\text{min} \\approx 457\\,\\text{s}$ ja $m_\\text{jää} = 0{,}400\\,\\text{kg}$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$s \\approx 320\\,\\tfrac{\\text{kJ}}{\\text{kg}}$."
+      }
+     ]
+    },
+    {
+     "id": "e",
+     "kind": "word",
+     "points": 4,
+     "text": "Taulukkokirjan mukaan jään ominaissulamislämpö on $333\\,\\tfrac{\\text{kJ}}{\\text{kg}}$. Arvioi mittauksen luotettavuutta. Mitkä tekijät selittävät eron, ja kumpaan suuntaan kukin vaikuttaa?",
+     "criteria": [
+      {
+       "text": "Laskee eron: tulos on noin $5\\,\\%$ taulukkoarvoa pienempi.",
+       "tag": "math",
+       "points": 1
+      },
+      {
+       "key": "error_sources",
+       "points": 2,
+       "detail": "Esimerkiksi: sulamisen aikana $0\\,{}^\\circ\\text{C}$:n seos sai lämpöä myös huoneilmasta, joten sulamiseen kului enemmän energiaa kuin $P\\,\\Delta t$, ja tulos jää liian pieneksi. Lämpenemisvaiheessa osa energiasta lämmitti astiaa ja vastusta ja yli $21\\,{}^\\circ\\text{C}$:n vesi luovutti lämpöä huoneeseen, joten kulmakertoimesta saatu teho on todellista pienempi, ja tulos jää liian pieneksi. Jos jäässä oli sulamisvettä, sulanut jäämäärä oli pienempi kuin punnittu, ja tulos jää liian pieneksi."
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Virhelähteet pienentävät tulosta samaan suuntaan, mikä sopii havaittuun eroon. Mittaus on hyvä määritys muutaman prosentin tarkkuudella; sitä parantaisi esimerkiksi astian kansi, alkulämpötila yhtä paljon huoneen lämpötilan ala- ja yläpuolella tai jään kuivaaminen."
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy3-7",
+    "fy3-14",
+    "fy3-6",
+    "fy3-13"
+   ],
+   "links": {
+    "concept": "fy3-7",
+    "communication": "fy3-7",
+    "graph": "fy3-14",
+    "transfer": "fy3-14",
+    "math": "fy3-6",
+    "experiment": "fy3-13"
+   }
+  },
+  {
+   "id": "fy3-k7",
+   "title": "Vanhan omakotitalon lämmitys",
+   "source": "example",
+   "source_note": "Talon tiedot on laadittu esimerkiksi. Hiilidioksidin päästökertoimet ovat IPCC:n oletusarvoja (IPCC 2006 Guidelines for National Greenhouse Gas Inventories).",
+   "text": "Vanhassa omakotitalossa pidetään sisällä lämpötila $21\\,{}^\\circ\\text{C}$. Lämmityskausi kestää vuodessa noin $5100\\,\\text{h}$, ja ulkolämpötilan keskiarvo on silloin $+1{,}0\\,{}^\\circ\\text{C}$. Taulukossa ovat talon rakennusosien pinta-alat $A$ ja U-arvot $U$. Ilmanvaihdon ja lämpimän käyttöveden lämmittämiseen kuluu lisäksi $8{,}0\\,\\text{MWh}$ lämpöä vuodessa.\n\n| rakennusosa | $A\\ (\\text{m}^2)$ | $U\\ \\big(\\tfrac{\\text{W}}{\\text{m}^2 \\cdot \\text{K}}\\big)$ |\n|---|---|---|\n| ulkoseinät | $140$ | $0{,}40$ |\n| yläpohja | $100$ | $0{,}25$ |\n| ikkunat | $20$ | $2{,}0$ |",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kuinka suuri lämpöteho johtuu rakennusosien läpi ulos lämmityskauden keskimääräisissä oloissa? Minkä rakennusosan kautta lämpöä johtuu eniten?",
+     "answer": {
+      "value": 2420,
+      "unit": "W",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$P = (U_1A_1 + U_2A_2 + U_3A_3)\\,\\Delta T$, kun $\\Delta T = 20\\,\\text{K}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$UA$-arvot $56$, $25$ ja $40\\,\\tfrac{\\text{W}}{\\text{K}}$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$P \\approx 2{,}4\\,\\text{kW}$."
+      },
+      {
+       "text": "Eniten lämpöä johtuu ulkoseinien kautta, mutta ikkunoiden kautta lähes yhtä paljon, vaikka niiden pinta-ala on vain seitsemäsosa seinien alasta: niiden U-arvo on viisinkertainen.",
+       "tag": "communication",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 5,
+     "text": "Kuinka paljon lämpöä talo tarvitsee vuodessa? Kuinka paljon sähköä lämmitys kuluttaa, jos lämpö tuotetaan maalämpöpumpulla, jonka lämpökerroin on $3{,}0$? Entä jos talo lämmitetään suoraan sähkövastuksilla?",
+     "answer": [
+      {
+       "name": "Q",
+       "value": 20.3,
+       "unit": "MWh",
+       "tolerance": 0.02
+      },
+      {
+       "name": "E",
+       "value": 6.78,
+       "unit": "MWh",
+       "tolerance": 0.02
+      }
+     ],
+     "criteria": [
+      {
+       "text": "Rakenteiden läpi johtuva energia on $E = Pt \\approx 12{,}3\\,\\text{MWh}$, ja siihen lisätään ilmanvaihdon ja käyttöveden $8{,}0\\,\\text{MWh}$.",
+       "tag": "math",
+       "points": 2
+      },
+      {
+       "text": "Lämpöpumpun sähkö on $E_\\text{s} = \\tfrac{Q}{\\varepsilon} \\approx 6{,}8\\,\\text{MWh}$.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "text": "Suorassa sähkölämmityksessä sähköä kuluu yhtä paljon kuin lämpöä tarvitaan, noin $20\\,\\text{MWh}$.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "Yksiköt $\\text{W} \\cdot \\text{h}$ muunnetaan megawattitunneiksi."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "word",
+     "points": 3,
+     "text": "Talon asukas ihmettelee, miten lämpöpumppu voi antaa taloon kolme kertaa niin paljon lämpöä kuin se kuluttaa sähköä. Eikö tämä riko energian säilymistä? Selitä.",
+     "criteria": [
+      {
+       "text": "Lämpöpumppu ei tuota lämpöä sähköstä vaan siirtää sitä kylmästä maaperästä lämpimään taloon.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Energia säilyy: taloon annettu lämpö on maasta otetun lämmön ja pumpun käyttämän sähköenergian summa, $Q_\\text{sisälle} = Q_\\text{maa} + E_\\text{s}$.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Lämpökerroin ei siis ole hyötysuhde, joten se voi olla yli yksi.",
+       "tag": "communication",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "calc",
+     "points": 4,
+     "text": "Talon omistaja harkitsee ikkunoiden vaihtamista uusiin, joiden U-arvo on $0{,}90\\,\\tfrac{\\text{W}}{\\text{m}^2 \\cdot \\text{K}}$. Vaihto maksaa $9000$ euroa. Talossa on maalämpöpumppu, ja sähkö maksaa $0{,}15$ euroa kilowattitunnilta. Kuinka paljon sähköä ja rahaa vaihto säästää vuodessa? Kannattaako vaihto pelkän energiansäästön vuoksi?",
+     "answer": [
+      {
+       "name": "E",
+       "value": 748,
+       "unit": "kWh",
+       "tolerance": 0.03
+      },
+      {
+       "name": "eur",
+       "value": 112,
+       "unit": "€",
+       "tolerance": 0.03
+      }
+     ],
+     "criteria": [
+      {
+       "text": "Johtumisteho pienenee $20\\,\\text{m}^2 \\cdot 1{,}1\\,\\tfrac{\\text{W}}{\\text{m}^2 \\cdot \\text{K}} \\cdot 20\\,\\text{K} = 440\\,\\text{W}$, mikä on vuodessa noin $2{,}2\\,\\text{MWh}$ lämpöä.",
+       "tag": "math",
+       "points": 1
+      },
+      {
+       "text": "Jakaa säästyvän lämmön lämpökertoimella: sähköä säästyy noin $750\\,\\text{kWh}$ eli noin $110$ euroa vuodessa.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "conclusion",
+       "points": 2,
+       "detail": "Vaihto maksaisi itsensä takaisin noin $80$ vuodessa, mikä on pidempi kuin ikkunoiden käyttöikä. Pelkkä energiansäästö ei riitä perusteeksi lämpöpumpputalossa; suoralla sähkölämmityksellä säästö olisi kolminkertainen, ja vaihto voi kannattaa myös vedon, kosteuden tai kunnon vuoksi."
+      }
+     ]
+    },
+    {
+     "id": "e",
+     "kind": "calc",
+     "points": 4,
+     "text": "Naapuri väittää: ”Jos lämpöpumpun sähkö tuotetaan kivihiilellä lauhdevoimalaitoksessa, öljykattila olisi ilmastolle parempi.” Lauhdevoimalaitoksen hyötysuhde on $40\\,\\%$ ja öljykattilan $90\\,\\%$. Kivihiilen palaessa vapautuu hiilidioksidia $94{,}6\\,\\text{g}$ ja kevyen polttoöljyn palaessa $74{,}1\\,\\text{g}$ jokaista polttoaineen energian megajoulea kohti. Vertaa vaihtoehtojen hiilidioksidipäästöjä yhtä talon saamaa lämmön megawattituntia kohti ja arvioi väitettä.",
+     "answer": [
+      {
+       "name": "pumppu",
+       "value": 284,
+       "unit": "kg",
+       "tolerance": 0.03
+      },
+      {
+       "name": "oljy",
+       "value": 296,
+       "unit": "kg",
+       "tolerance": 0.03
+      }
+     ],
+     "criteria": [
+      {
+       "text": "Lämpöpumppu tarvitsee $\\tfrac{1}{3{,}0}\\,\\text{MWh}$ sähköä, ja sen tuottamiseen kuluu polttoainetta $\\tfrac{0{,}333\\,\\text{MWh}}{0{,}40} \\approx 0{,}83\\,\\text{MWh} = 3000\\,\\text{MJ}$; öljykattila tarvitsee $\\tfrac{1{,}0\\,\\text{MWh}}{0{,}90} \\approx 1{,}1\\,\\text{MWh} = 4000\\,\\text{MJ}$.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "Päästöt noin $284\\,\\text{kg}$ ja $296\\,\\text{kg}$ hiilidioksidia."
+      },
+      {
+       "key": "conclusion",
+       "points": 2,
+       "detail": "Väite ei pidä: pahimmassakin tapauksessa lämpöpumpun päästöt ovat suunnilleen samat kuin öljykattilan. Suomessa suurin osa sähköstä tuotetaan ydin-, vesi- ja tuulivoimalla, joten todellisuudessa lämpöpumpun päästöt ovat paljon pienemmät."
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy3-12",
+    "fy3-11",
+    "fy3-15"
+   ],
+   "links": {
+    "math": "fy3-12",
+    "communication": "fy3-12",
+    "transfer": "fy3-15",
+    "concept": "fy3-11"
+   }
+  }
+ ]
+}
