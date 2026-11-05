@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 1fd82ba49312a3cf
+CONTENT-HASH: 1716666517002d89
 
 ## Blocking
 (none)
 
 ## Polish
-- exit-ticket.json Q1 — round-1 polish not taken: glass 1,50 and 56,3° are still stated in the Brewster paragraph, so Q1 tests lookup. Use another medium (e.g. akryyli 1,49) if cheap.
-- inquiry.json "pohdi" / "tarkistus-3" (optional) — the opening glare question is still only closed in optional items; consider making "pohdi" required.
+- lesson.md "## Kaava: Malusin laki ja Brewsterin laki" — the page title comes from inquiry ("Syventävä: …"); consider labelling the source heading too so other renderings keep the label (carried from round 1, optional).
 
 ## Checked
-- Delta: "mittaus" no longer states A in the text; the fit figure (capture #7, 332 px) shows axes 0–400 lx and 0–1,0 with the line from about 15 to 375 lx, so the slope can be read off by the student; the solution's two-point reading matches and tolerance 2 % accepts 360 ± 7. The mistakes (374, 14,6) are real and each feedback repairs it.
-- Solution "Annettu" now names only DeltaA and B; consistent with the new prompt.
-- lesson.md "Järkevyys": 282/840 is about one third, correct and clearer; virhekäsitys sentence "lisäkalvo voi vain vähentää läpi tulevaa valoa" fixes the earlier misreading.
-- Round-1 polish for ennuste-yksi gloss not re-judged beyond the diff (outside delta).
-- Hash unchanged at end.
+- Delta vs cc317598e: round-1 Blocking 1 resolved — "harjoitukset" intro now says Ydintehtävä tasks are the core path and most others are syventäviä Malusin ja Brewsterin lain laskuja.
+- Round-1 Blocking 2 resolved — ennuste-kolme and koe-2 are now core; learn 2 ("yksi, kaksi tai kolme"), Tiivistelmä and exit Q1 now agree with the path; Ydinajatus "Kaksi polarisaattoria" gained a qualitative sentence on the third film (component along the last axis).
+- ennuste-kolme feedback no longer contains the cos² product; all options cite the model value 12,5 % and a component explanation, so the core path stays free of Malus.
+- Required reveal of ennuste-kolme points at koe-2, now non-optional (rule in docs/inquiry.md satisfied); pohdi now also lists ennuste-kolme.
+- Yleinen virhekäsitys: "Siksi kulmalla ei ole merkitystä ensimmäisessä polarisaattorissa" removes the core-path Malus reference.
+- Extension items (teoria-kaava, malus-koe, sovitus, esimerkki, virhe, siirto, tarkistus-2) unchanged: optional, titled "Syventävä: …", still available.
+- Workload with koe-2 on core: one more short guided experiment; still one lesson.
+- Deterministic checks all ok (inquiry 80 passed); hash unchanged at end.

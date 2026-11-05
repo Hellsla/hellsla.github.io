@@ -20,5 +20,138 @@
       "discuss and write about science in English and get by in everyday situations in French"
     ],
     "overview": "The course has about 16 teaching sessions: 8 physics, 5 French and 3 project sessions. The Fotoni lab visit is separate from these sessions. ★ marks optional extra material: it is not required for completing the course."
+  },
+  "FY9": {
+    "title": "Physics Matriculation Examination Review",
+    "subtitle": "Review, connect and practise for the exam.",
+    "school": "Kiviruukki upper secondary school",
+    "description": "The course reviews the key phenomena, laws and skills of modules FY1–FY8 and practises the task types of the matriculation examination. Every review lesson starts with a starting-level test and ends with original tasks in the style of the matriculation examination, with a model answer and a scoring guide for self-assessment. Each task says which chapter's skills it uses, so you can go straight back to the original chapter to review a weak spot.",
+    "goals": [
+      "recognise the phenomena in a task and choose a suitable physical model for them",
+      "write a complete solution with reasoning, units and a check that the result makes sense",
+      "draw and interpret graphs from measurement data",
+      "plan an experiment and assess how reliable the measurements are",
+      "combine ideas from different modules in a new situation",
+      "assess your own skills and review your weak spots"
+    ],
+    "overview": "The course has 16 lessons. The first lesson introduces the exam and answering technique, lessons 2–15 review the modules in the order of the exam's contents, and the last lesson is a practice exam.",
+    "chapters": [
+      {
+        "title": "The Exam and Experimental Work",
+        "question": "What does a good answer in the physics matriculation examination contain?",
+        "units": [
+          {
+            "id": "fy9-koe",
+            "title": "The matriculation examination and answering technique"
+          },
+          {
+            "id": "fy9-mittaaminen",
+            "title": "Measuring, uncertainty and graphs"
+          },
+          {
+            "id": "fy9-kokeellisuus",
+            "title": "Experimental work and its evaluation"
+          }
+        ]
+      },
+      {
+        "title": "Energy and Heat",
+        "question": "Where does energy go, and how is its amount calculated?",
+        "units": [
+          {
+            "id": "fy9-energia",
+            "title": "Energy, power and efficiency"
+          },
+          {
+            "id": "fy9-lampo",
+            "title": "Heat and changes of state"
+          },
+          {
+            "id": "fy9-kaasut",
+            "title": "Pressure, gases and the heat engine"
+          }
+        ]
+      },
+      {
+        "title": "Motion and Interaction",
+        "question": "How do forces determine how an object moves?",
+        "units": [
+          {
+            "id": "fy9-liike",
+            "title": "Motion as graphs"
+          },
+          {
+            "id": "fy9-voimat",
+            "title": "Newton's laws and the free-body diagram"
+          },
+          {
+            "id": "fy9-sailymislait",
+            "title": "Mechanical energy and momentum"
+          },
+          {
+            "id": "fy9-ympyraliike",
+            "title": "Equilibrium, circular motion and gravitation"
+          }
+        ]
+      },
+      {
+        "title": "Oscillations and Waves",
+        "question": "What do a pendulum, sound and water waves have in common?",
+        "units": [
+          {
+            "id": "fy9-aallot",
+            "title": "Oscillations, waves and sound"
+          }
+        ]
+      },
+      {
+        "title": "Electricity and Magnetism",
+        "question": "How are electric charges, currents and fields connected?",
+        "units": [
+          {
+            "id": "fy9-tasavirta",
+            "title": "Direct-current circuits and electrical energy"
+          },
+          {
+            "id": "fy9-sahkokentta",
+            "title": "The electric field and the capacitor"
+          },
+          {
+            "id": "fy9-magnetismi-valo",
+            "title": "Magnetism, induction and light"
+          }
+        ]
+      },
+      {
+        "title": "Modern Physics",
+        "question": "Why do light and matter sometimes behave as particles and sometimes as waves?",
+        "units": [
+          {
+            "id": "fy9-moderni",
+            "title": "Quantum phenomena, the nucleus and radiation"
+          }
+        ]
+      },
+      {
+        "title": "Practice Exam",
+        "question": "How do I divide my time and choose tasks in the exam?",
+        "units": [
+          {
+            "id": "fy9-harjoituskoe",
+            "title": "Practice exam"
+          }
+        ]
+      }
+    ],
+    "prepare": [
+      {
+        "id": "fy1-3",
+        "why": "measurement uncertainty and stating a result, which every calculation task uses"
+      },
+      {
+        "id": "fy1-4",
+        "why": "drawing a graph and fitting a line, the basis of the exam's data tasks"
+      }
+    ]
   }
 }

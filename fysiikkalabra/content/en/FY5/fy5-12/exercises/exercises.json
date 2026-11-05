@@ -11,6 +11,7 @@
     {
       "id": "fy5-12-L1-02",
       "level": 1,
+      "core": true,
       "text": "Two pulses meet on a string. One displaces the string by at most $3.0\\,\\text{cm}$ upwards, the other by $1.2\\,\\text{cm}$ downwards. What is the displacement of the string at the point where the centres of the pulses are on top of each other? Upwards is the positive direction. Give the answer with its sign in centimetres.",
       "answer": 1.8,
       "unit": "cm",
@@ -43,6 +44,7 @@
     {
       "id": "fy5-12-L1-06",
       "level": 1,
+      "core": true,
       "text": "Two identical pulses travel towards each other on a taut string, one above the string and the other below it. The pulses meet, overlap for a moment and are then apart again.\n\nWhich of the following correctly describes the pulses after they meet?",
       "kind": [
         "concept"
@@ -116,6 +118,7 @@
     {
       "id": "fy5-12-L2-01",
       "level": 2,
+      "core": true,
       "text": "Two loudspeakers A and B in phase are $1.20\\,\\text{m}$ apart.\n\nA listener stands $1.60\\,\\text{m}$ from loudspeaker B directly in front of it, so that the line between the listener and loudspeaker B is perpendicular to the line between the loudspeakers.\n\nWhat is the greatest wavelength at which it is quiet at the listener's position? Give the answer in metres.",
       "answer": 0.8,
       "unit": "m",
@@ -192,6 +195,7 @@
     {
       "id": "fy5-12-L2-06",
       "level": 2,
+      "core": true,
       "text": "A student writes: “When the sounds of two loudspeakers weaken each other on a nodal line, the energy of the sound waves is lost.”\n\nWhich of the following correctly fixes the claim?",
       "kind": [
         "error",

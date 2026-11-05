@@ -3,6 +3,7 @@
     {
       "id": "fy3-14-L1-01",
       "level": 1,
+      "core": true,
       "text": "A $0.050\\,\\text{kg}$ piece of ice at $0\\,{}^\\circ\\text{C}$ is dropped into a fruit drink. The ice melts completely into water at $0\\,{}^\\circ\\text{C}$. How much heat does the ice take in as it melts? Give the answer in kilojoules.",
       "answer": 17,
       "unit": "kJ",
@@ -85,6 +86,7 @@
     {
       "id": "fy3-14-L1-08",
       "level": 1,
+      "core": true,
       "text": "Ice taken from the freezer is added to water in an insulated container. We want to know whether all the ice melts. Which comparison is made first?",
       "kind": [
         "concept",
@@ -118,6 +120,7 @@
     {
       "id": "fy3-14-L2-01",
       "level": 2,
+      "core": true,
       "text": "A calorimeter contains $0.35\\,\\text{kg}$ of water at $30\\,{}^\\circ\\text{C}$. $0.060\\,\\text{kg}$ of ice at $0\\,{}^\\circ\\text{C}$ is dropped into the water. What is the temperature of the contents of the calorimeter when thermal equilibrium has been reached and all the ice has melted? Assume that no heat is transferred to the calorimeter or the surroundings.",
       "answer": 14,
       "unit": "°C",
@@ -196,6 +199,7 @@
     {
       "id": "fy3-14-L2-06",
       "level": 2,
+      "core": true,
       "text": "An insulated container holds $0.30\\,\\text{kg}$ of water at $20\\,{}^\\circ\\text{C}$. $0.15\\,\\text{kg}$ of ice at $-15\\,{}^\\circ\\text{C}$ is added to the water. A student works out how much ice melts and writes:\n\n“As the water cools to $0\\,{}^\\circ\\text{C}$ it gives out the heat $Q_\\text{w} = 25\\,140\\,\\text{J}$. Melting all the ice would need the heat $50\\,100\\,\\text{J}$, so not all the ice melts. The mass of the ice that melts is $m = \\dfrac{25\\,140\\,\\text{J}}{334\\,000\\,\\tfrac{\\text{J}}{\\text{kg}}} = 75\\,\\text{g}$.”\n\na) What is the error in the calculation? Also check that the student’s conclusion “not all the ice melts” is correct.\n\nb) Calculate the mass of the melted ice correctly. Enter the result of part b) in grams in the answer box.",
       "kind": [
         "error",

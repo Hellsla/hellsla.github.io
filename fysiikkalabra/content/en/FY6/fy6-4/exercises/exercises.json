@@ -11,6 +11,7 @@
     {
       "id": "fy6-4-L1-02",
       "level": 1,
+      "core": true,
       "text": "Resistors $40\\,\\Omega$ and $60\\,\\Omega$ are connected in parallel. How large is the total resistance of the connection?",
       "answer": 24,
       "unit": "Ω",
@@ -73,6 +74,7 @@
     {
       "id": "fy6-4-L1-07",
       "level": 1,
+      "core": true,
       "text": "Two identical lamps are connected in parallel to an ideal battery. A third identical lamp is then connected in parallel with the first two. What happens to the total resistance of the connection and to the current leaving the battery?",
       "kind": [
         "concept"
@@ -113,6 +115,7 @@
     {
       "id": "fy6-4-L2-01",
       "level": 2,
+      "core": true,
       "text": "Resistors $1.2\\,\\text{k}\\Omega$ and $680\\,\\Omega$ are connected in series to a $9.0\\,\\text{V}$ battery. How large a current passes through the circuit? Give the answer in milliamperes.",
       "answer": 4.8,
       "unit": "mA",
@@ -186,6 +189,7 @@
     {
       "id": "fy6-4-L2-06",
       "level": 2,
+      "core": true,
       "kind": [
         "data",
         "error"

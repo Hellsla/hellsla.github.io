@@ -44,6 +44,7 @@
     {
       "id": "fy3-1-L1-06",
       "level": 1,
+      "core": true,
       "text": "Astronautti matkustaa Maasta Kuuhun. Mikä väite hänen massastaan ja painostaan on oikein?",
       "kind": [
         "concept"
@@ -74,6 +75,7 @@
     {
       "id": "fy3-1-L1-07",
       "level": 1,
+      "core": true,
       "text": "Kirja riippuu voimamittarissa Maan pinnalla. Minkä kahden kappaleen välisen vuorovaikutuksen voimakkuutta kirjan paino $G$ kuvaa?",
       "kind": [
         "concept"
@@ -130,6 +132,7 @@
     {
       "id": "fy3-1-L2-03",
       "level": 2,
+      "core": true,
       "text": "Astronautin massa varusteineen on $145\\,\\text{kg}$. Kuinka paljon pienempi hänen painonsa on Kuussa ($g = 1{,}62\\,\\text{m/s}^2$) kuin Maassa ($g = 9{,}81\\,\\text{m/s}^2$)?",
       "answer": 1190,
       "unit": "N",
@@ -146,6 +149,7 @@
     {
       "id": "fy3-1-L2-05",
       "level": 2,
+      "core": true,
       "kind": [
         "data",
         "experiment"

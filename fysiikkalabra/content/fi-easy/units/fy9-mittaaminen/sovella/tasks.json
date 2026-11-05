@@ -1,0 +1,819 @@
+{
+  "intro": "Tässä on kuusi ylioppilaskokeen tyylistä tehtävää. Niissä tarvitaan mittaamisen, epävarmuuden ja kuvaajien taitoja. Päätä itse, miten aineisto kannattaa esittää ja mitä kuvaajasta luetaan. Perustele tuloksen tarkkuus. Viimeinen tehtävä yhdistää mittaamisen kaasujen tilanyhtälöön.",
+  "tasks": [
+    {
+      "id": "fy9-mittaaminen-s1",
+      "title": "Käsiajanotto urheilupäivänä",
+      "source": "example",
+      "source_note": "Keksitty esimerkkiaineisto: luvut on laskettu mallista. Niihin on lisätty pientä satunnaista vaihtelua, kuten oikeassa mittauksessa.",
+      "text": "Koulun urheilupäivänä juostaan $100\\,\\text{m}$. Matka on mitattu mittapyörällä. Matkan epävarmuudeksi arvioidaan $0{,}3\\,\\text{m}$. Maalissa on kolme ajanottajaa. Kukin käynnistää sekuntikellonsa, kun hän näkee lähettäjän lipun laskevan. Hän pysäyttää kellon, kun juoksija ylittää maaliviivan. Kellot näyttävät sadasosasekunnit.\n\n| Juoksija | $t_1\\ (\\text{s})$ | $t_2\\ (\\text{s})$ | $t_3\\ (\\text{s})$ |\n|---|---|---|---|\n| Liisa | $13{,}52$ | $13{,}90$ | $13{,}71$ |\n| Mira | $13{,}80$ | $14{,}12$ | $13{,}96$ |",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Laske Liisan keskinopeus yksiköissä $\\text{m/s}$ ja $\\text{km/h}$. Perustele tuloksen tarkkuus: käytä apuna sitä, kuinka paljon kellojen lukemat eroavat toisistaan.",
+          "answer": [
+            {
+              "name": "ms",
+              "value": 7.29,
+              "unit": "m/s",
+              "tolerance": 0.02
+            },
+            {
+              "name": "kmh",
+              "value": 26.3,
+              "unit": "km/h",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Ajaksi otetaan kolmen kellon keskiarvo $13{,}71\\,\\text{s}$, ja $v = \\tfrac{s}{t}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$v = 7{,}29\\,\\text{m/s}$. Muunnos tehdään sijoittamalla $1\\,\\text{km} = 1000\\,\\text{m}$ ja $1\\,\\text{h} = 3600\\,\\text{s}$. Tulos on $26{,}3\\,\\text{km/h}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Kolme merkitsevää numeroa, koska kellojen lukemat eroavat toisistaan kymmenesosasekunteja. Perustelu on kirjoitettu näkyviin."
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Esimerkiksi: noin $26\\,\\text{km/h}$ on reipas sprinttivauhti lukiolaiselle. Se on selvästi vähemmän kuin huippujuoksijan noin $36\\,\\text{km/h}$."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Arvioi Liisan keskinopeuden epävarmuus. Käytä ajan ja matkan epävarmuuksia. Ilmoita nopeus epävarmuuksineen.",
+          "answer": {
+            "value": 0.12,
+            "unit": "m/s",
+            "tolerance": 0.2
+          },
+          "criteria": [
+            {
+              "key": "uncertainty",
+              "points": 2,
+              "detail": "Ajan epävarmuus on vaihteluvälin puolikas $\\Delta t = 0{,}19\\,\\text{s}$, ja matkan epävarmuus on $0{,}3\\,\\text{m}$. Lasketaan suurin ja pienin mahdollinen nopeus (tai suhteellisten epävarmuuksien summa, noin $1{,}7\\,\\%$)."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\Delta v \\approx 0{,}12\\,\\text{m/s}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v = (7{,}29 \\pm 0{,}12)\\,\\text{m/s}$. Epävarmuudessa on kaksi numeroa, koska sen ensimmäinen numero on $1$. Nopeus pyöristetään samaan desimaaliin."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 3,
+          "text": "Mira juoksi samassa lähdössä. Voidaanko näillä mittauksilla osoittaa, että Liisa oli nopeampi? Perustele.",
+          "criteria": [
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Miran aika on $(13{,}96 \\pm 0{,}16)\\,\\text{s}$ ja Liisan $(13{,}71 \\pm 0{,}19)\\,\\text{s}$."
+            },
+            {
+              "text": "Välit $13{,}52$–$13{,}90\\,\\text{s}$ ja $13{,}80$–$14{,}12\\,\\text{s}$ menevät päällekkäin eli osittain samalle alueelle.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Näillä mittauksilla ei voida osoittaa eroa. Päällekkäisyys ei kuitenkaan todista, että ajat olisivat yhtä suuret."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Arvioi, millainen systemaattinen virhe tässä ajanotossa on. Miten se vaikuttaa a-kohdan nopeuteen? Miksi kolmen kellon keskiarvo ei poista virhettä?",
+          "criteria": [
+            {
+              "key": "error_sources",
+              "points": 1,
+              "detail": "Ajanottaja reagoi lähtömerkkiin myöhässä, reaktioajan verran. Maalissa ajanottaja näkee juoksijan tulevan ja pysäyttää kellon melkein oikeaan aikaan."
+            },
+            {
+              "text": "Siksi mitattu aika on lyhyempi kuin todellinen aika, ja laskettu nopeus on suurempi kuin todellinen nopeus.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Virhe on jokaisessa kellossa samaan suuntaan. Siksi keskiarvo ei poista sitä. Virheen poistaa esimerkiksi sähköinen ajanotto, joka on kytketty lähtölaitteeseen."
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy1-2",
+        "fy1-3",
+        "fy1-5"
+      ],
+      "links": {
+        "math": "fy1-2",
+        "experiment": "fy1-3",
+        "communication": "fy1-3"
+      }
+    },
+    {
+      "id": "fy9-mittaaminen-s2",
+      "title": "Kopiopaperin paksuus ja tiheys",
+      "source": "example",
+      "source_note": "Keksitty esimerkkiaineisto: luvut on laskettu mallista. Niihin on lisätty pientä satunnaista vaihtelua, kuten oikeassa mittauksessa.",
+      "text": "Kopiopaperipaketin kyljessä lukee: $500$ arkkia, koko A4 eli $210\\,\\text{mm} \\cdot 297\\,\\text{mm}$, neliömassa $80\\,\\text{g/m}^2$. Neliömassa tarkoittaa, että yhden neliömetrin kokoinen arkki painaisi $80\\,\\text{g}$.\n\nOpiskelija mittaa paketin paperipinon korkeuden viivaimella. Korkeus on $51\\,\\text{mm}$. Viivaimen pienin asteikkoväli on $1\\,\\text{mm}$. Pinon reunat eivät ole aivan tasaiset. Lisäksi pino painuu hieman kokoon, kun viivainta painetaan sitä vasten. Siksi opiskelija arvioi korkeuden epävarmuudeksi $1\\,\\text{mm}$. Paperit painavat ilman kääreitä keittiövaa'alla $2{,}49\\,\\text{kg}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Laske yhden arkin paksuus mikrometreinä epävarmuuksineen.",
+          "answer": {
+            "value": 102,
+            "unit": "µm",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$d = \\tfrac{h}{N}$ ja $\\Delta d = \\tfrac{\\Delta h}{N}$, kun $N = 500$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Muunnos sijoittamalla: $1\\,\\text{mm} = 1000\\,\\mu\\text{m}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$d = 0{,}102\\,\\text{mm} = 102\\,\\mu\\text{m}$ ja $\\Delta d = 2\\,\\mu\\text{m}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$d = (102 \\pm 2)\\,\\mu\\text{m}$. Epävarmuudessa on yksi numero, ja tulos on samalla tarkkuudella."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Tarkista punnituksen avulla, onko paketin neliömassa oikein.",
+          "answer": {
+            "value": 79.8,
+            "unit": "g/m²",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Neliömassa on paperien massa jaettuna kaikkien arkkien yhteisellä pinta-alalla $N \\cdot ab$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Pituudet metreinä sijoittamalla: $210\\,\\text{mm} = 210 \\cdot 0{,}001\\,\\text{m} = 0{,}210\\,\\text{m}$. Massa grammoina."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Yhteinen pinta-ala on $31{,}2\\,\\text{m}^2$, ja neliömassa on $79{,}8\\,\\text{g/m}^2$."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Ero merkintään $80\\,\\text{g/m}^2$ on alle prosentti. Siksi merkintä on oikein vaa'an tarkkuudella."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Laske paperin tiheys. Vertaa sitä veden tiheyteen.",
+          "answer": {
+            "value": 780,
+            "unit": "kg/m³",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Yhden neliömetrin arkin massa on neliömassa, ja sen tilavuus on $1\\,\\text{m}^2 \\cdot d$. Siksi $\\rho = \\tfrac{\\sigma}{d}$ (tai koko pinolle $\\rho = \\tfrac{M}{N a b d}$)."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$79{,}8\\,\\text{g/m}^2 = 0{,}0798\\,\\text{kg/m}^2$ ja $102\\,\\mu\\text{m} = 1{,}02 \\cdot 10^{-4}\\,\\text{m}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\rho \\approx 783\\,\\text{kg/m}^3$. Se on noin $0{,}78$ kertaa veden tiheys."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Vastaus kahdella merkitsevällä numerolla, $780\\,\\text{kg/m}^3$, koska pinon korkeudessa $51\\,\\text{mm}$ on kaksi numeroa."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Opiskelijan pari ehdottaa, että yhden arkin paksuus mitattaisiin suoraan samalla viivaimella. Arvioi ehdotusta. Selitä myös, miksi pinon korkeuden epävarmuus on suurempi kuin puolet viivaimen pienimmästä asteikkovälistä.",
+          "criteria": [
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Yhdelle arkille viivain näyttäisi $0$ tai $1\\,\\text{mm}$. Lukeman epävarmuus $0{,}5\\,\\text{mm}$ on noin viisi kertaa niin suuri kuin paksuus."
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Kun mitataan pino, saman suuruinen lukeman epävarmuus jakautuu $500$ arkille."
+            },
+            {
+              "key": "error_sources",
+              "points": 1,
+              "detail": "Pinon painuminen ja epätasaiset reunat lisäävät epävarmuutta. Siksi asteikkoväli ei yksin kerro mittauksen epävarmuutta."
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy1-2",
+        "fy1-3",
+        "fy1-7"
+      ],
+      "links": {
+        "math": "fy1-2",
+        "experiment": "fy1-3",
+        "communication": "fy1-7"
+      }
+    },
+    {
+      "id": "fy9-mittaaminen-s3",
+      "title": "Tuntematon neste",
+      "source": "example",
+      "source_note": "Keksitty esimerkkiaineisto: luvut on laskettu mallista. Niihin on lisätty pientä satunnaista vaihtelua, kuten oikeassa mittauksessa.",
+      "text": "Laboratoriossa on pullo, jossa on kirkasta nestettä. Pullon etiketti on irronnut. Neste on luultavasti vettä, etanolia tai ruokaöljyä. Opiskelija kaataa nestettä $100\\,\\text{ml}$:n mittalasiin, jonka asteikkoväli on $2\\,\\text{ml}$. Jokaisen lisäyksen jälkeen hän punnitsee mittalasin ja nesteen yhdessä. Hän arvioi tilavuuden lukeman epävarmuudeksi $1\\,\\text{ml}$. Vaa'an resoluutio on $0{,}1\\,\\text{g}$. Tyhjää mittalasia hän ei punninnut.\n\n| $V\\ (\\text{ml})$ | $m\\ (\\text{g})$ |\n|---|---|\n| $20$ | $137{,}6$ |\n| $30$ | $145{,}7$ |\n| $40$ | $155{,}7$ |\n| $50$ | $163{,}9$ |\n| $60$ | $183{,}4$ |\n| $70$ | $183{,}0$ |\n| $80$ | $191{,}8$ |\n| $90$ | $202{,}0$ |\n| $100$ | $210{,}3$ |\n\nMuistiinpanoissa rivin $60\\,\\text{ml}$ kohdalla lukee: ”lukema kirjattu jälkikäteen muistista”.\n\nTaulukkokirjan tiheyksiä: vesi $1{,}00\\,\\text{g/cm}^3$, ruokaöljy $0{,}92\\,\\text{g/cm}^3$ ja etanoli $0{,}79\\,\\text{g/cm}^3$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 3,
+          "text": "Esitä mittaustulokset kuvaajana. Kuvaajasta pitää voida määrittää myös suoran vakiotermi.",
+          "criteria": [
+            {
+              "key": "graph_axes",
+              "points": 1,
+              "detail": "Vaaka-akselilla on $V\\ (\\text{ml})$ ja pystyakselilla $m\\ (\\text{g})$, ja asteikko on tasavälinen. Pystyakseli voi alkaa esimerkiksi $100\\,\\text{g}$:sta, kun se on merkitty."
+            },
+            {
+              "key": "graph_points",
+              "points": 1,
+              "detail": "Kaikki yhdeksän pistettä ovat oikeilla paikoillaan. Rivin $60\\,\\text{ml}$ piste erottuu muista."
+            },
+            {
+              "text": "Vaaka-akseli ulottuu nollaan asti, jotta suoraa voi jatkaa pystyakselille. Pisteet täyttävät suurimman osan kuvaajasta.",
+              "tag": "graph",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "graph",
+          "points": 3,
+          "text": "Sovita pisteisiin malli. Päätä, miten käsittelet rivin $60\\,\\text{ml}$, ja perustele päätöksesi.",
+          "criteria": [
+            {
+              "key": "graph_fit",
+              "points": 1,
+              "detail": "Yksi suora pisteiden lomaan eli väliin, ei murtoviivaa. Suoraa ei pakoteta origon kautta, koska vaaka punnitsee myös mittalasin."
+            },
+            {
+              "text": "Rivin $60\\,\\text{ml}$ piste on noin $10\\,\\text{g}$ suoran yläpuolella. Muistiinpano antaa sille syyn. Siksi piste jätetään pois sovituksesta.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Poisjättö ja sen syy kirjoitetaan muistiin. Pistettä ei poisteta vain siksi, että se on erilainen kuin muut."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Määritä suoran kulmakerroin ja vakiotermi yksiköineen. Mitä kumpikin kertoo?",
+          "answer": [
+            {
+              "name": "rho",
+              "value": 0.919,
+              "unit": "g/cm³",
+              "tolerance": 0.03
+            },
+            {
+              "name": "m0",
+              "value": 118.6,
+              "unit": "g",
+              "tolerance": 0.01
+            }
+          ],
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Kaksi suoran pistettä, jotka ovat kaukana toisistaan, esimerkiksi $(20\\,\\text{ml};\\ 137{,}0\\,\\text{g})$ ja $(100\\,\\text{ml};\\ 210{,}5\\,\\text{g})$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$k \\approx 0{,}919\\,\\text{g/ml}$ ja $b \\approx 118{,}6\\,\\text{g}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Kulmakertoimen yksikkö on $\\text{g/ml} = \\text{g/cm}^3$ ja vakiotermin yksikkö $\\text{g}$."
+            },
+            {
+              "text": "Kulmakerroin on nesteen tiheys, ja vakiotermi on tyhjän mittalasin massa.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 4,
+          "text": "Arvioi tiheyden epävarmuus. Päättele, mikä neste on.",
+          "criteria": [
+            {
+              "key": "uncertainty",
+              "points": 2,
+              "detail": "Jyrkin ja loivin suora, jotka kulkevat epävarmuusjanojen kautta: noin $0{,}932$ ja $0{,}908\\,\\text{g/cm}^3$. Siksi $\\Delta\\rho \\approx 0{,}012\\,\\text{g/cm}^3$ (silmällä arvioiden $0{,}01$–$0{,}02\\,\\text{g/cm}^3$)."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\rho = (0{,}919 \\pm 0{,}012)\\,\\text{g/cm}^3$."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Ruokaöljyn tiheys on välillä, mutta veden ja etanolin tiheys ei ole. Tulos sopii ruokaöljyyn. Myös muilla nesteillä voi kuitenkin olla sama tiheys."
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "calc",
+          "points": 3,
+          "text": "Opiskelija haluaa arvioida tuloksen avulla, kuinka paljon $1{,}50\\,\\text{l}$ tätä nestettä painaa. Laske massa. Arvioi myös, onko perusteltua käyttää tulosta näin kaukana mitatun alueen ulkopuolella.",
+          "answer": {
+            "value": 1.38,
+            "unit": "kg",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$m = \\rho V$ ilman mittalasin massaa: $0{,}919\\,\\text{g/cm}^3 \\cdot 1500\\,\\text{cm}^3 \\approx 1380\\,\\text{g}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$1{,}50\\,\\text{l} = 1500\\,\\text{cm}^3$, ja vastaus on $1{,}38\\,\\text{kg}$."
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Tiheys on aineen ominaisuus. Siksi $m = \\rho V$ pätee myös suuremmalle määrälle samassa lämpötilassa. Mittalasin suoraa ei sen sijaan voisi jatkaa yli $100\\,\\text{ml}$:n."
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy1-3",
+        "fy1-4",
+        "fy1-7"
+      ],
+      "links": {
+        "graph": "fy1-4",
+        "experiment": "fy1-3",
+        "communication": "fy1-4",
+        "math": "fy1-7",
+        "concept": "fy1-7",
+        "transfer": "fy1-7"
+      }
+    },
+    {
+      "id": "fy9-mittaaminen-s4",
+      "title": "Keittiövaa'an tarkistus",
+      "source": "example",
+      "source_note": "Keksitty esimerkkiaineisto: luvut on laskettu mallista. Niihin on lisätty pientä satunnaista vaihtelua, kuten oikeassa mittauksessa.",
+      "text": "Opiskelija epäilee, että hänen kotinsa keittiövaaka ei ole tarkka. Hän tarkistaa sen koulun kalibroiduilla punnuksilla. Kalibroidun punnuksen massa tunnetaan tarkasti. Tyhjänä vaaka näyttää $0\\,\\text{g}$. Vaa'an näyttö näyttää kokonaiset grammat. Jokainen punnus punnitaan kolme kertaa.\n\n| Punnus $(\\text{g})$ | Lukemat $(\\text{g})$ |\n|---|---|\n| $100{,}0$ | $102$, $101$, $102$ |\n| $200{,}0$ | $204$, $204$, $205$ |\n| $500{,}0$ | $510$, $511$, $510$ |\n| $1000{,}0$ | $1020$, $1021$, $1020$ |",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 4,
+          "text": "Mitä virhelajeja aineistossa näkyy? Perustele aineiston luvuilla.",
+          "criteria": [
+            {
+              "key": "error_sources",
+              "points": 1,
+              "detail": "Systemaattinen virhe: jokainen lukema on suurempi kuin punnuksen massa, eikä toisto muuta sitä."
+            },
+            {
+              "text": "Virhe kasvaa, kun massa kasvaa. Se on noin $2\\,\\%$ jokaisella punnuksella ($2$, $4$, $10$ ja $20\\,\\text{g}$). Tyhjän vaa'an lukema on kuitenkin oikein.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Toistojen satunnainen vaihtelu on enintään $1\\,\\text{g}$. Se on yhtä suuri kuin näytön resoluutio."
+            },
+            {
+              "text": "Karkeaa virhettä ei ole. Mikään lukema ei ole selvästi erilainen kuin saman punnuksen muut lukemat.",
+              "tag": "experiment",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 4,
+          "text": "Ystävä sanoo: ”Vaaka näyttää grammat. Kun se näyttää jauhoille $765\\,\\text{g}$, jauhoja on siis $(765 \\pm 0{,}5)\\,\\text{g}$.” Arvioi väite. Anna parempi arvio jauhojen massasta.",
+          "criteria": [
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Resoluutio ei ole epävarmuus. Se ei kerro systemaattisesta virheestä eikä toistojen vaihtelusta."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Korjattu massa on $765\\,\\text{g} : 1{,}02 \\approx 750\\,\\text{g}$."
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Epävarmuus on muutamia grammoja, esimerkiksi $\\pm 2\\,\\text{g}$. Syy: toistot vaihtelevat noin $1\\,\\text{g}$, ja korjauskerroin tunnetaan vain suunnilleen."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Väite on väärä. Jauhoja on noin $(750 \\pm 2)\\,\\text{g}$, ei $(765 \\pm 0{,}5)\\,\\text{g}$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 4,
+          "text": "Kuvaajan vaaka-akselilla on punnuksen massa ja pystyakselilla lukemien keskiarvo. Kuvaile, miltä kuvaaja näyttää. Selitä, miten kuvaajasta näkee, millainen virhe on. Miksi punnitusten toistaminen ei korjaa virhettä?",
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Pisteet ovat suoralla, joka kulkee origon kautta. Suoran kulmakerroin on noin $1{,}02$ eikä $1$."
+            },
+            {
+              "text": "Kun vakiotermi on nolla, nollakohta on oikein. Kun kulmakerroin on eri kuin $1$, virhe on suhteellinen.",
+              "tag": "graph",
+              "points": 1
+            },
+            {
+              "key": "error_sources",
+              "points": 1,
+              "detail": "Toistot pienentävät satunnaisvirheen vaikutusta keskiarvossa. Systemaattinen virhe toistuu kuitenkin joka kerta samanlaisena."
+            },
+            {
+              "text": "Virhe korjataan niin, että lukemat jaetaan kulmakertoimella $1{,}02$, tai vaaka kalibroidaan.",
+              "tag": "experiment",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy1-3",
+        "fy1-4"
+      ],
+      "links": {
+        "experiment": "fy1-3",
+        "math": "fy1-3",
+        "communication": "fy1-3",
+        "graph": "fy1-4"
+      }
+    },
+    {
+      "id": "fy9-mittaaminen-s5",
+      "title": "Leluauton nopeus videolta",
+      "source": "example",
+      "source_note": "Keksitty esimerkkiaineisto: luvut on laskettu mallista. Niihin on lisätty pientä satunnaista vaihtelua, kuten oikeassa mittauksessa.",
+      "text": "Ryhmä kuvasi puhelimella leluautoa. Auto kulki suoraan tasaisella lattialla. Lattiaan oli teipattu mittanauha. Videoanalyysiohjelmaan asetettiin mittakaavaksi mittanauhan $1{,}00\\,\\text{m}$:n väli. Auton etupää merkittiin kuviin puolen sekunnin välein. Ajanotto alkoi, kun auto oli jo liikkeessä.\n\n| $t\\ (\\text{s})$ | $x\\ (\\text{m})$ |\n|---|---|\n| $0{,}0$ | $0{,}35$ |\n| $0{,}5$ | $0{,}61$ |\n| $1{,}0$ | $0{,}83$ |\n| $1{,}5$ | $1{,}32$ |\n| $2{,}0$ | $1{,}30$ |\n| $2{,}5$ | $1{,}57$ |\n| $3{,}0$ | $1{,}78$ |\n\nOte ryhmän raportista:\n\n> Yhdistimme pisteet kuvaajassa viivalla. Poistimme pisteen $t = 1{,}5\\,\\text{s}$, koska se ei osunut muiden kanssa samalle viivalle. Laskimme nopeuden kahdesta viimeisestä pisteestä: $(1{,}78\\,\\text{m} - 1{,}57\\,\\text{m}) : 0{,}5\\,\\text{s} = 0{,}42\\,\\text{m/s}$. Koska tulos tuntui pieneltä, sovitimme vielä origon kautta kulkevan suoran, jonka kulmakerroin oli $0{,}6341\\,\\text{m/s}$. Johtopäätös: leluauton nopeus on $0{,}6341\\,\\text{m/s}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 5,
+          "text": "Arvioi raportin menetelmää ja johtopäätöstä. Nimeä ainakin neljä puutetta. Kerro, miksi kukin puute heikentää tulosta.",
+          "criteria": [
+            {
+              "key": "graph_fit",
+              "points": 1,
+              "detail": "Murtoviiva seuraa myös mittausvirheitä, eikä se ole malli. Pisteisiin sovitetaan yksi suora."
+            },
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Nopeus laskettiin kahdesta vierekkäisestä mittauspisteestä. Siksi kummankin pisteen virhe vaikuttaa paljon."
+            },
+            {
+              "text": "Suora pakotettiin kulkemaan origon kautta, vaikka auto oli ajanoton alussa noin $0{,}35\\,\\text{m}$:n kohdalla. Siksi kulmakerroin on liian suuri.",
+              "tag": "graph",
+              "points": 1
+            },
+            {
+              "text": "Piste poistettiin vain siksi, että se oli erilainen kuin muut. Syy olisi pitänyt tarkistaa videolta ja kirjoittaa muistiin.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Tuloksessa on liikaa numeroita eikä epävarmuutta. Lisäksi tulos valittiin sen mukaan, mikä tuntui sopivalta."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "graph",
+          "points": 5,
+          "text": "Määritä aineistosta leluauton nopeus epävarmuuksineen. Perustele, miten käsittelet pisteen $t = 1{,}5\\,\\text{s}$.",
+          "answer": {
+            "value": 0.477,
+            "unit": "m/s",
+            "tolerance": 0.04
+          },
+          "criteria": [
+            {
+              "key": "graph_axes",
+              "points": 1,
+              "detail": "Vaaka-akselilla on $t\\ (\\text{s})$ ja pystyakselilla $x\\ (\\text{m})$, ja asteikot ovat tasavälisiä."
+            },
+            {
+              "key": "graph_fit",
+              "points": 1,
+              "detail": "Suora, jolla on vakiotermi. Piste $1{,}5\\,\\text{s}$ tarkistetaan videolta. Jos se on merkitty väärään kohtaan, se jätetään pois, ja syy kirjoitetaan muistiin."
+            },
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Kulmakerroin lasketaan kahdesta suoran pisteestä, jotka ovat kaukana toisistaan: noin $0{,}477\\,\\text{m/s}$. Vakiotermi $0{,}36\\,\\text{m}$ on auton paikka hetkellä $t = 0$."
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Jyrkin ja loivin suora, esimerkiksi kun janat ovat $\\pm 0{,}03\\,\\text{m}$: noin $0{,}492$ ja $0{,}464\\,\\text{m/s}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v = (0{,}477 \\pm 0{,}014)\\,\\text{m/s}$ tai $(0{,}48 \\pm 0{,}02)\\,\\text{m/s}$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 4,
+          "text": "Ryhmä haluaa parantaa mittausta. Ehdota kaksi parannusta. Toisen parannuksen pitää koskea mahdollista systemaattista virhettä. Perustele parannukset.",
+          "criteria": [
+            {
+              "key": "error_sources",
+              "points": 1,
+              "detail": "Mittakaavan virhe: mittanauha voi olla eri etäisyydellä kamerasta kuin auto, tai kamera voi katsoa vinosti. Silloin kaikki paikat ovat väärin samassa suhteessa."
+            },
+            {
+              "text": "Systemaattisen virheen voi tarkistaa niin, että videolta mitataan jokin tunnettu pituus auton kulkulinjalta. Kamera asetetaan kohtisuoraan liikettä vastaan.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Pidempi matka, tiheämmin merkityt pisteet ja toistetut ajot pienentävät kulmakertoimen epävarmuutta."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Kummallekin parannukselle on perustelu: miten se muuttaa tulosta tai tuloksen epävarmuutta."
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy1-3",
+        "fy1-4",
+        "fy1-5",
+        "fy1-8"
+      ],
+      "links": {
+        "graph": "fy1-4",
+        "experiment": "fy1-8",
+        "math": "fy1-3",
+        "communication": "fy1-8"
+      }
+    },
+    {
+      "id": "fy9-mittaaminen-s6",
+      "title": "Ilma ruiskussa",
+      "source": "example",
+      "source_note": "Keksitty esimerkkiaineisto: luvut on laskettu mallista. Niihin on lisätty pientä satunnaista vaihtelua, kuten oikeassa mittauksessa.",
+      "text": "Opiskelija tutkii, miten ilman paine riippuu tilavuudesta. Hän liittää $60\\,\\text{ml}$:n ruiskun lyhyellä letkulla paineanturiin. Sitten hän painaa mäntää hitaasti sisään. Ilma ei pääse vuotamaan ulos. Laboratorion lämpötila on $22\\,{}^\\circ\\text{C}$. Tilavuus luetaan ruiskun asteikolta. Letkun ja anturin sisällä on pieni ilmatila $V_0$, joka ei näy lukemassa.\n\n| $V\\ (\\text{ml})$ | $p\\ (\\text{kPa})$ |\n|---|---|\n| $12$ | $189{,}1$ |\n| $14$ | $164{,}5$ |\n| $16$ | $146{,}6$ |\n| $18$ | $131{,}9$ |\n| $20$ | $119{,}2$ |\n| $22$ | $109{,}6$ |\n| $24$ | $101{,}2$ |\n| $26$ | $93{,}5$ |\n| $28$ | $87{,}6$ |\n| $30$ | $81{,}8$ |",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 3,
+          "text": "Opiskelija väittää, että ilman paine on kääntäen verrannollinen ruiskun lukemaan $V$. Testaa väite aineiston avulla.",
+          "criteria": [
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Tulo $pV$ on $2269\\,\\text{kPa} \\cdot \\text{ml}$, kun lukema on $12\\,\\text{ml}$, ja $2454\\,\\text{kPa} \\cdot \\text{ml}$, kun lukema on $30\\,\\text{ml}$."
+            },
+            {
+              "text": "Tulo kasvaa jokaisella rivillä samaan suuntaan, yhteensä noin $8\\,\\%$. Siksi kasvu on systemaattista eikä satunnaista vaihtelua.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Väite ei päde ruiskun lukemaan. Syy voi olla letkun ilmatila, joka ei ole mukana lukemassa."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "graph",
+          "points": 5,
+          "text": "Esitä aineisto kuvaajana, jossa riippuvuus on suora. Sovita pisteisiin suora.",
+          "criteria": [
+            {
+              "key": "graph_axes",
+              "points": 1,
+              "detail": "Esimerkiksi vaaka-akselilla $\\tfrac{1}{p}\\ (\\tfrac{1}{\\text{MPa}})$ ja pystyakselilla $V\\ (\\text{ml})$. Pystyakseli ulottuu negatiiviselle puolelle."
+            },
+            {
+              "key": "graph_points",
+              "points": 1,
+              "detail": "Paineen käänteisluku on laskettu oikein jokaiselle riville."
+            },
+            {
+              "text": "Valinta on perusteltu: kun lämpötila ja ilman määrä pysyvät samoina, $p(V + V_0)$ on vakio. Siksi $V = \\tfrac{C}{p} - V_0$.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "graph_fit",
+              "points": 1,
+              "detail": "Yksi suora pisteiden lomaan eli väliin."
+            },
+            {
+              "text": "Suoraa on jatkettu pystyakselille asti.",
+              "tag": "graph",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 5,
+          "text": "Määritä kuvaajasta letkun ja anturin ilmatilavuus $V_0$. Määritä myös ilman ainemäärä.",
+          "answer": [
+            {
+              "name": "V0",
+              "value": 1.8,
+              "unit": "ml",
+              "tolerance": 0.15
+            },
+            {
+              "name": "n",
+              "value": 0.00106,
+              "unit": "mol",
+              "tolerance": 0.05
+            }
+          ],
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Vakiotermi on noin $-1{,}8\\,\\text{ml}$, ja kulmakerroin on noin $2{,}61\\,\\text{MPa} \\cdot \\text{ml}$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Kulmakerroin on $C = p(V + V_0) = nRT$, joten $n = \\tfrac{C}{RT}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$1\\,\\text{MPa} \\cdot \\text{ml} = 10^{6}\\,\\text{Pa} \\cdot 10^{-6}\\,\\text{m}^3 = 1\\,\\text{J}$ ja $T = 295{,}15\\,\\text{K}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$V_0 \\approx 1{,}8\\,\\text{ml}$ ja $n \\approx 1{,}06 \\cdot 10^{-3}\\,\\text{mol}$."
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Esimerkiksi: $26\\,\\text{ml}$ ilmaa normaalipaineessa on noin tuhannesosa moolista. Syy: mooli kaasua vie tilaa noin $24\\,\\text{l}$."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 4,
+          "text": "Arvioi, mitä oletuksia tulos tarvitsee. Miten tulos muuttuisi, jos oletukset eivät pitäisi paikkaansa?",
+          "criteria": [
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Lämpötila pysyy samana, koska mäntää painetaan hitaasti. Nopeassa puristuksessa työ lämmittää ilmaa. Silloin paine on hetken suurempi, eikä $pV$ pysy vakiona."
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Ilmaa ei vuoda. Vuoto pienentäisi ainemäärää kesken mittauksen, ja tulo $p(V + V_0)$ pienenisi."
+            },
+            {
+              "key": "error_sources",
+              "points": 1,
+              "detail": "Ilman $V_0$:aa tulo $pV$ näyttää kasvavan, kun tilavuus kasvaa. Silloin ainemäärä ja paineen ja tilavuuden riippuvuus tulkittaisiin väärin."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Kun $V_0$ lisätään, $p(V + V_0)$ on melkein vakio, noin $2600\\,\\text{kPa} \\cdot \\text{ml}$. Siksi aineisto sopii yhteen mallin kanssa."
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy1-3",
+        "fy1-4",
+        "fy3-9",
+        "fy3-10"
+      ],
+      "links": {
+        "math": "fy3-10",
+        "experiment": "fy1-3",
+        "communication": "fy3-9",
+        "graph": "fy1-4",
+        "concept": "fy3-9",
+        "transfer": "fy3-10"
+      }
+    }
+  ]
+}

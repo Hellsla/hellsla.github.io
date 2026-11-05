@@ -3,6 +3,7 @@
     {
       "id": "fy7-15-L1-01",
       "level": 1,
+      "core": true,
       "text": "Sunlight is unpolarised. Its intensity is $640\\,\\text{W/m}^2$ when it arrives at an ideal polariser. What is the intensity of the light after the polariser?",
       "answer": 320.0,
       "unit": "W/m²",
@@ -43,6 +44,7 @@
     {
       "id": "fy7-15-L1-06",
       "level": 1,
+      "core": true,
       "text": "Polarised sunglasses have a polariser film with a vertical transmission axis. Why do they reduce especially the glare reflected from the surface of water?",
       "kind": [
         "concept"
@@ -91,6 +93,7 @@
     {
       "id": "fy7-15-L2-01",
       "level": 2,
+      "core": false,
       "text": "The intensity of unpolarised light is $900\\,\\text{W/m}^2$. The light passes through two ideal polarisers, and the angle between the transmission axes of the polarisers is $40.0^\\circ$. What is the intensity of the light after the second polariser?",
       "answer": 264.0708,
       "unit": "W/m²",
@@ -99,6 +102,7 @@
     {
       "id": "fy7-15-L2-02",
       "level": 2,
+      "core": false,
       "text": "Polarised light arrives at an ideal analyser. What is the angle between the direction of polarisation of the light and the transmission axis of the analyser when $25.0\\,\\%$ of the intensity of the light arriving at it passes through the analyser?",
       "answer": 60.0,
       "unit": "°",

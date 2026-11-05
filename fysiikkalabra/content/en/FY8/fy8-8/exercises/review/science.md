@@ -1,11 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: c4a1809b541e08ee
+CONTENT-HASH: bd05ae74ce1f9dca
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+(none needed: the text already matched fi in every number and was natural)
 
 ## Polish
+(none)
 
 ## Checked
-- Round 3: only the L2-03 Reasonableness line changed ("For this gamma line the difference between the levels of the nucleus is hundreds of thousands of times greater than the differences between the levels of the electrons of an atom"). Correct: ratio 661,7 keV / 2,2545 eV = 2,935·10⁵ recomputed; the claim is now restricted to this line, so it no longer overgeneralises from the keV range.
-- exercises.json answers (143, 218, 7, 20.8, 10, 1.06, 82, 293000, 138, 4, 1.24, 87) unchanged and equal to the Finnish set; all twelve recomputed with own formulas in this run.
-- Solutions' numbers match the Finnish source (only the decimal separator differs).
+- Compared en with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags, choices, data cells and every number in texts, feedback and solutions.md are identical (decimal point in en JSON/LaTeX where fi has comma; both files have identical key sets).
+- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) read in full; physics statements (beta minus n->p, beta plus p->n, alpha -4/-2, gamma no change of A and Z; Z'/N' rows; Am-241 -> Np-237 correction; Rn-222 to Pb-206: 4 alpha and 4 beta minus; levels in L3-05) agree with the Finnish.
+- No formula or number differs from fi, so nothing to report as Blocking.
+- check_i18n.py en: 0 errors.

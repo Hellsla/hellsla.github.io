@@ -1,11 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 4cf9afbd4be15c5e
+CONTENT-HASH: 9915b25c3d7b3277
 
 ## Blocking
+(none)
 
 ## Polish
-- key_concepts "Brewsterin laki" — n1 and n2 are not defined and "Brewsterin kulmassa" is circular. Better: "Kun valo tulee eristeen pinnalle kulmassa $\alpha_\text{B}$, heijastunut valo on täysin polarisoitunutta pinnan suuntaan. Tällöin $\tan\alpha_\text{B} = n_2 : n_1$, missä $n_1$ on aine, josta valo tulee." Length limit of 25 words may need trimming.
-- "polarisaattori" — "puolet intensiteetistä" holds for an ideal polarizer and unpolarised light: stated, good.
+(none)
 
 ## Checked
-Box at 390 px fits, readable. Malus (ideal polarizer, θ defined), polaroid glasses (vertical transmission axis, glare horizontal) correct and consistent with lesson. Hash unchanged at end.
+- Delta vs cc317598e: round-1 Blocking 1 resolved — the intro now reads "Aloita tehtävistä, jotka on merkitty Ydintehtäväksi. Ne kuuluvat ydinpolkuun. Useimmat muut tehtävät ovat syventäviä. Niissä lasketaan Malusin ja Brewsterin lailla." Short sentences, plain.
+- Round-1 Blocking 2 resolved — ennuste-kolme and koe-2 are core; goal 2, Tiivistelmä and exit Q1 agree; "Kaksi polarisaattoria" gained two short sentences on the third film with "komponentti eli osa" glossed.
+- ennuste-kolme feedback uses the model value 12,5 % and plain-language component reasoning, no cos² product.
+- Polish taken: "johon tulee", "himmentää valoa sitä enemmän, mitä pidemmälle sitä kierretään", "Siksi kulmalla ei ole väliä ensimmäisessä polarisaattorissa", "Mihin suuntaan … läpäisysuunta pitää asettaa?".
+- Structure and flags match fi; extension items optional and titled "Syventävä: …".
+- check_lesson.py not run for fi-easy (packet); hash unchanged at end.

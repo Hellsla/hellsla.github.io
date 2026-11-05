@@ -1,0 +1,10 @@
+[
+  {
+    "q": "What is the kinetic energy of a $1500\\,\\text{kg}$ car when its speed is $72\\,\\text{km/h}$?",
+    "a": "$72\\,\\text{km/h} = 72 \\cdot \\dfrac{1000\\,\\text{m}}{3600\\,\\text{s}} = 20\\,\\text{m/s}$, so $E_\\text{k} = \\tfrac12 \\cdot 1500\\,\\text{kg} \\cdot \\left(20\\,\\tfrac{\\text{m}}{\\text{s}}\\right)^2 = 300\\,000\\,\\text{J} = 0.30\\,\\text{MJ}$."
+  },
+  {
+    "q": "A $2.0\\,\\text{kg}$ trolley moves at $3.0\\,\\text{m/s}$ and sticks to a $1.0\\,\\text{kg}$ trolley at rest. What is the common speed of the trolleys?",
+    "a": "Momentum is conserved: $2.0\\,\\text{kg} \\cdot 3.0\\,\\tfrac{\\text{m}}{\\text{s}} = (2.0\\,\\text{kg} + 1.0\\,\\text{kg})\\,v'$, so $v' = \\dfrac{6.0\\,\\text{kg} \\cdot \\text{m/s}}{3.0\\,\\text{kg}} = 2.0\\,\\text{m/s}$. The kinetic energy decreases from $9.0\\,\\text{J}$ to $6.0\\,\\text{J}$."
+  }
+]

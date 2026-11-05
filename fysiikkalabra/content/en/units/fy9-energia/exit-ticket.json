@@ -1,0 +1,10 @@
+[
+  {
+    "q": "How many kilowatt-hours are $250\\,\\text{MJ}$?",
+    "a": "$1\\,\\text{kWh} = 1000\\,\\text{W} \\cdot 3600\\,\\text{s} = 3.6\\,\\text{MJ}$, so $250\\,\\text{MJ} = \\dfrac{250}{3.6}\\,\\text{kWh} \\approx 69.4\\,\\text{kWh} \\approx 69\\,\\text{kWh}$."
+  },
+  {
+    "q": "In an energy flow diagram a $10\\,\\text{mm}$ wide arrow enters a device and a useful arrow $3\\,\\text{mm}$ wide leaves it. How wide is the loss arrow, and what is the efficiency?",
+    "a": "Energy is conserved, so the outgoing arrows are together as wide as the incoming one: the loss arrow is $10\\,\\text{mm} - 3\\,\\text{mm} = 7\\,\\text{mm}$. The efficiency is $3\\,\\text{mm} : 10\\,\\text{mm} = 0.30 = 30\\,\\%$."
+  }
+]

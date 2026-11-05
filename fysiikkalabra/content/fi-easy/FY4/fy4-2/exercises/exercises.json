@@ -3,6 +3,7 @@
     {
       "id": "fy4-2-L1-01",
       "level": 1,
+      "core": true,
       "text": "Auto lähtee liikennevaloista levosta ja saavuttaa nopeuden $25\\,\\text{m/s}$ ajassa $8{,}0\\,\\text{s}$. Kiihtyvyys on tasainen. Mikä on auton kiihtyvyys?",
       "answer": 3.125,
       "unit": "m/s²",
@@ -44,6 +45,7 @@
     {
       "id": "fy4-2-L1-06",
       "level": 1,
+      "core": true,
       "text": "Auto ajaa itään ja jarruttaa tasaisesti, kunnes se pysähtyy. Mihin suuntaan auton kiihtyvyys osoittaa jarrutuksen aikana?",
       "kind": [
         "concept"
@@ -74,6 +76,7 @@
     {
       "id": "fy4-2-L1-07",
       "level": 1,
+      "core": true,
       "text": "Kuvaaja esittää potkulaudan nopeuden ajan funktiona hetkestä $0$ hetkeen $5{,}0\\,\\text{s}$. Potkulauta liikkuu koko ajan samaan suuntaan. Kuinka pitkän matkan potkulauta kulkee tänä aikana?",
       "kind": [
         "graph"
@@ -118,6 +121,7 @@
     {
       "id": "fy4-2-L2-01",
       "level": 2,
+      "core": true,
       "text": "Auto ajaa nopeudella $72\\,\\text{km/h}$ ja jarruttaa tasaisesti. Se pysähtyy ajassa $4{,}0\\,\\text{s}$. Kuinka pitkän matkan auto kulkee jarrutuksen aikana?",
       "answer": 40,
       "unit": "m",
@@ -294,7 +298,7 @@
     {
       "id": "fy4-2-L3-03",
       "level": 3,
-      "text": "Pallo heitetään suoraan ylöspäin, ja sen korkeus $y$ mitataan ajan funktiona videoanalyysilla. Mittauspisteisiin sovitettu toisen asteen polynomi on $y = -4{,}86\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot t^2 + 3{,}10\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot t + 1{,}20\\,\\text{m}$, kun suunta ylöspäin on positiivinen. Mikä on pallon nopeus hetkellä $t = 0{,}500\\,\\text{s}$? Anna vastaus etumerkkeineen.",
+      "text": "Pallo heitetään suoraan ylöspäin, ja sen korkeus $y$ mitataan ajan funktiona videoanalyysilla. Mittauspisteisiin sovitettu toisen asteen polynomi on $y = -4{,}86\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot t^2 + 3{,}10\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot t + 1{,}20\\,\\text{m}$, kun suunta ylöspäin on positiivinen.\n\nMikä on pallon nopeus hetkellä $t = 0{,}500\\,\\text{s}$? Anna vastaus etumerkkeineen.",
       "answer": -1.7600000000000002,
       "unit": "m/s",
       "tolerance": 0.02

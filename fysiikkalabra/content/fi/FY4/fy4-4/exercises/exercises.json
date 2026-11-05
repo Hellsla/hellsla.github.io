@@ -3,6 +3,7 @@
     {
       "id": "fy4-4-L1-01",
       "level": 1,
+      "core": true,
       "text": "Leikkiautoon, jonka massa on $2{,}5\\,\\text{kg}$, vaikuttaa vaakasuora kokonaisvoima $6{,}0\\,\\text{N}$. Kuinka suuri on leikkiauton kiihtyvyys?",
       "answer": 2.4,
       "unit": "m/s²",
@@ -27,6 +28,7 @@
     {
       "id": "fy4-4-L1-04",
       "level": 1,
+      "core": true,
       "text": "Laatikkoa, jonka massa on $12\\,\\text{kg}$, vedetään vaakasuoralla lattialla vaakasuoraan suuntaan $38\\,\\text{N}$:n voimalla. Lattian kitkavoima laatikkoon on $20\\,\\text{N}$. Piirrä laatikon voimakuvio. Kuinka suuri on laatikon kiihtyvyys?",
       "answer": 1.5,
       "unit": "m/s²",
@@ -45,6 +47,7 @@
     {
       "id": "fy4-4-L1-06",
       "level": 1,
+      "core": true,
       "text": "Hissi nousee ylöspäin ja hidastuu pysähtyäkseen. Positiivinen suunta on ylös. Mikä väite hissiin vaikuttavasta kokonaisvoimasta $\\Sigma\\overline{F}$ on oikein?",
       "kind": [
         "concept"
@@ -116,6 +119,7 @@
     {
       "id": "fy4-4-L2-03",
       "level": 2,
+      "core": true,
       "text": "Nosturi laskee $120\\,\\text{kg}$:n kuormaa alaspäin nopeudella $2{,}0\\,\\text{m/s}$. Juuri ennen maata kuorma hidastuu tasaisesti ja pysähtyy $2{,}0\\,\\text{s}$:ssa. Kuinka suuri on köyden jännitysvoima hidastumisen aikana?",
       "answer": 1297,
       "unit": "N",

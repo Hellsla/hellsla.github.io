@@ -27,6 +27,7 @@
     {
       "id": "fy6-12-L1-04",
       "level": 1,
+      "core": true,
       "text": "Varaus $4{,}0\\,\\mu\\text{C}$ siirtyy sähkökentässä kohdasta $A$, jonka potentiaali on $60\\,\\text{V}$, kohtaan $B$, jonka potentiaali on $15\\,\\text{V}$. Kuinka suuren työn sähkökenttä tekee varaukseen? Vastaa millijouleina.",
       "answer": 0.18,
       "unit": "mJ",
@@ -44,6 +45,7 @@
     {
       "id": "fy6-12-L1-06",
       "level": 1,
+      "core": true,
       "text": "Homogeenisessa sähkökentässä on kaksi pientä kappaletta: toisen varaus on $+q$ ja toisen $-q$. Kumpikin siirtyy saman matkan kentän suuntaan. Mitä niiden sähköiselle potentiaalienergialle tapahtuu?",
       "kind": [
         "concept"
@@ -67,7 +69,7 @@
         },
         {
           "text": "Kummankin varauksen potentiaalienergia pysyy samana, koska varaukset siirtyvät saman matkan samassa homogeenisessa kentässä.",
-          "feedback": "Kenttä on homogeeninen, mutta potentiaali ei ole sama kaikkialla: se muuttuu tasaisesti matkan funktiona, $V = Ex$. Kun varaus siirtyy kentän suuntaan, sen kohdan potentiaali muuttuu ja potentiaalienergia $qV$ muuttuu sen mukana."
+          "feedback": "Kenttä on homogeeninen, mutta potentiaali ei ole sama kaikkialla: se muuttuu tasaisesti matkan funktiona, $V = Ex$, kun potentiaalin nollakohta on negatiivisella levyllä ja $x$ on etäisyys siitä. Kun varaus siirtyy kentän suuntaan, sen kohdan potentiaali muuttuu ja potentiaalienergia $qV$ muuttuu sen mukana."
         }
       ]
     },
@@ -104,6 +106,7 @@
     {
       "id": "fy6-12-L1-08",
       "level": 1,
+      "core": true,
       "text": "Kaksinkertaisesti positiivinen ioni, jonka varaus on $+2e$, lähtee levosta ja kulkee $450\\,\\text{V}$:n potentiaalieron läpi. Kuinka suuri liike-energia ionilla on lopuksi? Vain sähköinen voima vaikuttaa ioniin. Vastaa elektronivoltteina.",
       "kind": [
         "reasoning"
@@ -133,6 +136,7 @@
     {
       "id": "fy6-12-L2-03",
       "level": 2,
+      "core": true,
       "text": "Alfahiukkasen varaus on $+2e$ ja massa $6{,}645 \\cdot 10^{-27}\\,\\text{kg}$. Alfahiukkanen lähtee levosta ja kulkee $2{,}0\\,\\text{kV}$:n potentiaalieron läpi. Kuinka suuri on sen nopeus? Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Vastaa metreinä sekunnissa.",
       "answer": 439166.0,
       "unit": "m/s",
@@ -264,7 +268,7 @@
     {
       "id": "fy6-12-L3-01",
       "level": 3,
-      "text": "Elektroni kulkee kohdan $A$ kautta nopeudella $2{,}0 \\cdot 10^{6}\\,\\text{m/s}$. Kohdan $A$ potentiaali on $40\\,\\text{V}$. Elektroni jatkaa kohtaan $B$, jonka potentiaali on $160\\,\\text{V}$, ja siihen vaikuttaa vain sähköinen voima. Kuinka suuri on elektronin nopeus kohdassa $B$? Elektronin massa on $9{,}109 \\cdot 10^{-31}\\,\\text{kg}$. Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$.",
+      "text": "Elektroni kulkee kohdan $A$ kautta nopeudella $2{,}0 \\cdot 10^{6}\\,\\text{m/s}$. Kohdan $A$ potentiaali on $40\\,\\text{V}$. Elektroni jatkaa kohtaan $B$, jonka potentiaali on $160\\,\\text{V}$, ja siihen vaikuttaa vain sähköinen voima.\n\nKuinka suuri on elektronin nopeus kohdassa $B$?\n\nElektronin massa on $9{,}109 \\cdot 10^{-31}\\,\\text{kg}$. Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$.",
       "answer": 6797710.0,
       "unit": "m/s",
       "tolerance": 0.02
@@ -280,7 +284,7 @@
     {
       "id": "fy6-12-L3-03",
       "level": 3,
-      "text": "Kahden yhdensuuntaisen levyn väli on $2{,}0\\,\\text{cm}$, ja niiden välinen jännite on $600\\,\\text{V}$. Protoni lähtee negatiivisen levyn reiästä kohti positiivista levyä nopeudella $3{,}0 \\cdot 10^{5}\\,\\text{m/s}$. Kuinka lähelle positiivista levyä protoni pääsee, ennen kuin se kääntyy takaisin? Protonin massa on $1{,}673 \\cdot 10^{-27}\\,\\text{kg}$. Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Vastaa millimetreinä.",
+      "text": "Kahden yhdensuuntaisen levyn väli on $2{,}0\\,\\text{cm}$, ja niiden välinen jännite on $600\\,\\text{V}$. Protoni lähtee negatiivisen levyn reiästä kohti positiivista levyä nopeudella $3{,}0 \\cdot 10^{5}\\,\\text{m/s}$.\n\nKuinka lähelle positiivista levyä protoni pääsee, ennen kuin se kääntyy takaisin?\n\nProtonin massa on $1{,}673 \\cdot 10^{-27}\\,\\text{kg}$. Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Vastaa millimetreinä.",
       "answer": 4.33521,
       "unit": "mm",
       "tolerance": 0.02

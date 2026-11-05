@@ -3,6 +3,7 @@
     {
       "id": "fy2-4-L1-01",
       "level": 1,
+      "core": true,
       "text": "An electric motor takes electrical energy of $400\\,\\text{J}$ and gives $340\\,\\text{J}$ of kinetic energy. What is the efficiency of the motor? Give the answer as a percentage.",
       "answer": 85,
       "unit": "%",
@@ -43,6 +44,7 @@
     {
       "id": "fy2-4-L1-06",
       "level": 1,
+      "core": true,
       "text": "An inventor claims to have built a device with an efficiency of $120\\,\\%$. What can be said about the claim?",
       "kind": [
         "concept"
@@ -97,6 +99,7 @@
     {
       "id": "fy2-4-L2-01",
       "level": 2,
+      "core": true,
       "text": "An electric motor takes a power of $1.0\\,\\text{kW}$ from the electricity grid, and its efficiency is $80\\,\\%$. The motor runs for $2.0\\,\\text{min}$. How much kinetic energy does the motor give? Give the answer in kilojoules.",
       "answer": 96,
       "unit": "kJ",
@@ -171,6 +174,7 @@
     {
       "id": "fy2-4-L2-06",
       "level": 2,
+      "core": true,
       "text": "In an example measurement, the running of an electric motor was followed for $40\\,\\text{s}$. An electricity meter showed the electrical energy $E_\\text{o}$ taken by the motor and a sensor the kinetic energy $E_\\text{a}$ given by the motor, while the motor runs steadily. Calculate the efficiency from each row that is not zero and, based on them, determine the efficiency of the motor as a percentage.",
       "kind": [
         "data",

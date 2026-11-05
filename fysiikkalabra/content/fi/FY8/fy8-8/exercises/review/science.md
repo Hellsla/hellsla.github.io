@@ -1,16 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 89df6326aca699a5
-
+CONTENT-HASH: 36ac7c9b588458f9
 ## Blocking
 
 ## Polish
-- solutions.md L1-04 Vastaus — rounds to three figures while 59,54 keV has four; "20,83 pm" would follow the limiting datum (the line says both are right, so not an error).
-- solutions.md L2-03 Järkevyys — "Ytimen tasojen erot ovat satojatuhansia kertoja suurempia kuin atomin elektronien tasojen erot": true for outer-electron (visible) transitions, not inner shells (keV); "kuin näkyvän valon fotonien energiat" says what the brief says.
+- exercises/exercises.json:211 and solutions.md:139 (fy8-8-L2-07) — "kanavanumero on verrannollinen fotonin energiaan" but the fit is E = kK + b with b ≈ 1,2 keV; proportional means b = 0. Write "riippuu lineaarisesti" (the answer is unaffected: a fit through the origin gives 916,2 keV).
+- exercises/exercises.json fy8-8-L3-05 data — the cascade 351,2 + 468,9 + 681,3 = 1501,4 keV closes exactly, while 820,5 differs by 0,4 keV from 351,2 + 468,9 = 820,1. The solution covers it ("alle 0,5 keV"), but changing the 820,5 line to 820,1 (or 468,9/681,3 to 469,3/680,9) makes the level scheme close; the answer 1150,2 keV stays.
+- exercises/exercises.json:87 (fy8-8-L1-08) — Ni-60* from Co-60 normally de-excites by two gammas in cascade (1173 and 1332 keV, cf. L2-01): "lähettämällä gammafotoneja" or "yhden tai useamman gammafotonin" avoids contradicting L2-01.
+- exercises/exercises.json:77 (fy8-8-L1-07) — kind "concept" on a pure count; it is also close to L1-02/L1-05 (daughter numbers after one decay). Optional: ask for the decay equation as the plan says ("hajoamisyhtälö: alfa ja beeta").
+- fy8-8-L3-04 — same method as L3-01 (n_α from ΔA, n_β from ΔZ), and its table repeats L2-02's Bi-214 → Po-214 → Pb-210; acceptable since a)/b)/d) add the table reading and reasoning the plan asks for.
 
 ## Checked
-- Round 2 blocking fixed: L2-01 Järkevyys now attributes the 0,1 keV to rounding of the levels (exact 1173,24 keV) and the recoil to ≈ 0,01 keV (recomputed E²/(2Mc²) = 0,0123 keV); aallonpituus unchanged at three figures (1,0568 vs 1,0569 pm).
-- One-call recompute with own formulas: 143, 218, 7, 20,83 pm, 10, 1,057 pm, 82, 2,935·10⁵ (→ 2,93·10⁵ correct), 138, 4, 1,240 pm, 87 — all match answers.py and exercises.json within tolerance; 1332,5 keV → 0,931 pm right.
-- Joule conversions L1-04, L2-01 (1,8796·10⁻¹³ J), L3-02 (1,602·10⁻¹³ J) correct.
-- Real decay modes: Rn-222 → Po-218, C-14 → N-14, F-18 β⁺ → O-18, Bi-214 → Po-214 → Pb-210, Th-232 → Ra-228 → Ac-228 → Th-228, Fr-226 → Ra-226 → Rn-222; Th series 6 α + 4 β⁻.
-- Conservation of A and Z stated with the e/positron charge numbers; antineutrino/neutrino included as in the brief.
-- Solutions symbolic first; exact counts stated plainly; reasonableness checks are real checks; notation matches the brief.
+- All 20 answers recomputed independently; all agree with answers.py and the keys (L2-07 fit k = 0,5978 keV/kanava, b = 1,199 keV, 916,4 keV, residuals < 0,6 keV; L3-05 1150,2 keV → 1,078 pm).
+- L2-05: each row's (Z, N) → (Z′, N′) matches the nuclide's main decay (Ra-226 α, Pb-210 β⁻, Na-22 β⁺, I-131 β⁻, Ba-137m γ, Sr-90 β⁻); 3 β⁻ correct.
+- L2-06: student's equation fails charge (95 ≠ 96); correct Np-237 with Z = 93, N = 144.
+- L3-04: transitions α, α, β⁻, β⁻, α; Pb-210 → Pb-206 needs 1 α + 2 β⁻ (real chain via Bi-210, Po-210); total 4 α, 4 β⁻; d) argument (Z → 78) right.
+- L3-05: level scheme 351,2 / 820 / 1501,4 keV is the only one that explains all five lines; alternative ordering correctly rejected.
+- L1-06: exactly one correct option; distractor feedback correct (β⁺ lowers Z, α −2/−4, γ none).
+- Notation as in the brief (^A_Z X, ⁰₋₁e, ν̄, E_y − E_a); tolerances fit.
+- New tasks follow docs/exercise-bank/FY8.md (nuclide-table and calibration data at level 2, error analysis, decay series and level scheme at level 3).
+- Hash identical at start and end.

@@ -370,6 +370,7 @@
       "id": "perustele",
       "stage": "sovella",
       "type": "explain",
+      "core": true,
       "title": "Perustele: miten kaupunki tuottaa sähkönsä?",
       "prompt": "Kaupunki korvaa vanhan kivihiilivoimalansa. Jatkossa se tuottaa $100\\,\\text{GWh}$ sähköä vuodessa. Vaihtoehtoja ovat maakaasuvoimala, tuulivoimala-alue, ydinvoimala tai biomassalla toimiva voimala. Valitse yksi vaihtoehto ja kirjoita perustelu tässä järjestyksessä:\n\n1. **Väite:** minkä vaihtoehdon valitset?\n2. **Tieto:** laske vuosittaiset päästöt valitsemallesi tavalle ja vertaa ne yhteen toiseen vaihtoehtoon. Mainitse lisäksi vähintään kaksi muuta vertailuperustetta (esimerkiksi maankäyttö, jäte, turvallisuus, säästä riippuvuus).\n3. **Fysiikan peruste:** miksi valittu tapa on ilmaston kannalta parempi tai huonompi?\n4. **Vastaväite:** mikä on vahvin peruste valintaasi vastaan, ja miten vastaat siihen?\n5. **Rajaus:** mitä et ottanut huomioon (esimerkiksi hinta), ja miksi sillä voisi olla väliä?",
       "pair": "Vaihtakaa perustelut parin kanssa. Löytyykö parin tekstistä jokainen viidestä osasta? Mikä oli vahvin peruste? Muuttaisiko se omaa valintaasi?",

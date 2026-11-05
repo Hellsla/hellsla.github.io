@@ -1,14 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 2154b64dd2c82968
+CONTENT-HASH: dac3457805b63750
 
 ## Blocking
-(none)
+- None. Lead-length rule: no new task lead is over ~45 words in one paragraph (longest L3-05: 65 words, already in 2 paragraphs; L3-04 39 words in 2).
 
 ## Polish
-- exercises.json fy8-12 Level 1 — L1-01, L1-03, L1-04 are near-copies of one attenuation calculation (carried); an inverse form in one would vary the level.
-- fy8-12-L2-01 — only background subtraction and a minute-to-second conversion (carried); acceptable.
+- fy8-12-L2-05 b): the table's spread (standard deviation about 4,4) is clearly smaller than √48,4 = 7,0, so "vertaa" is answered by "pienempi"; the solution's wording "noin 2√N" is a stretch. Use data with a spread near 7 (e.g. 41, 55, 48, 60, 39 ...).
+- fy8-12-L2-06 b) and c) both give the half-value thickness; say that c) is the more accurate and compare it with b).
+- fy8-12-L2-06 and L3-04 are very similar (Cs-137, 60 s counts, same formula); L3-04 differs through material identification and the 1 % target, which is enough, but vary the layout (e.g. a different background).
+- fy8-12-L3-05 d): the third assumption (narrow beam) pushes the other way (scattering raises the transmitted share); mention it in the solution.
+- fy8-12-L2-07: the right option is the longest of four; shorten it or lengthen the others.
 
 ## Checked
-- Delta: L1-05 Sijoitus: h·(c/X) instead of (h·c)/X — same value, intermediate results and answers unchanged, so the arithmetic and the student's path (Kaava hc/λ, then Sijoitus) still agree; the fraction now shows c/X as the quantity being divided, which is arguably clearer for tracing the units.
-- Opened own 360 px captures (?ratkaisut=1) of every changed solution step (scratchpad shots-fx/): the Sijoitus now wraps as 'h · [fraction c/X] = result' on two to four short rows, nothing clipped, no page scroll; same fraction-over-line form as the other solutions.
-- Levels, tasks and answers untouched by the commit; earlier PASS stands.
+- Recomputed: L1-07 1530 1/min; L2-05 484, 48,4, 4,5 %; L2-06 mean 5,50 mm; L3-04 11,99 mm (iron), 79,6 mm; L3-05 16,4 1/s, 0,365, 3,0 kBq.
+- L2-07 is a real experiment design (Al plate separates beta from gamma) and the distractors are real misconceptions.
+- L1-08 and L1-06 distractor feedback repairs the misconception.
+- Every new solution has principle, conversions, substitution and sanity check.
+- Levels fit the plan in docs/exercise-bank/FY8.md; no exact duplicate.
+- Screenshots: only 1280 px captures in the packet; not opened.

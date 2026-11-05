@@ -19,6 +19,7 @@
     {
       "id": "fy7-6-L1-03",
       "level": 1,
+      "core": true,
       "text": "Pyörrevirtajarru hidastaa $450\\,\\text{kg}$:n vuoristoratavaunua vaakasuoralla radalla vauhdista $22\\,\\text{m/s}$ vauhtiin $6{,}0\\,\\text{m/s}$. Muut vastukset jätetään huomiotta. Kuinka paljon energiaa jarrun kuparilevyjen sisäenergiaksi muuttuu? Anna vastaus kilojouleina.",
       "answer": 100,
       "unit": "kJ",
@@ -73,6 +74,7 @@
     {
       "id": "fy7-6-L1-07",
       "level": 1,
+      "core": true,
       "text": "Neodyymimagneetti pudotetaan pystysuorassa ensin alumiiniputkessa ja sitten samanlaisessa muoviputkessa. Magneetti putoaa alumiiniputkessa selvästi hitaammin kuin muoviputkessa. Mikä selittää eron?",
       "kind": [
         "concept"
@@ -113,6 +115,7 @@
     {
       "id": "fy7-6-L2-01",
       "level": 2,
+      "core": true,
       "text": "Magneetti, jonka massa on $20\\,\\text{g}$, pudotetaan $1{,}50\\,\\text{m}$:n pituiseen pystysuoraan kupariputkeen. Se tulee putken alapäästä ulos $10\\,\\text{s}$:n kuluttua ja putoaa lähes koko matkan tasaisella vauhdilla. Kuinka suurella teholla putken sisäenergia kasvaa putoamisen aikana? Anna vastaus milliwatteina.",
       "answer": 29,
       "unit": "mW",
@@ -192,6 +195,7 @@
     {
       "id": "fy7-6-L2-06",
       "level": 2,
+      "core": true,
       "text": "Opiskelija kirjoittaa vastauksensa kokeeseen:\n\n”Sauvamagneetin N-napa lähestyy kuparirengasta, ja renkaan läpi kulkeva magneettivuo kasvaa. Induktiovirta pyrkii kasvattamaan tätä vuon muutosta, joten renkaan magneetin puoleiselle sivulle syntyy S-napa. Rengas vetää magneettia puoleensa, ja magneetti kiihtyy kohti rengasta.”\n\na) Mikä virhe päättelyssä on, ja kumpi napa renkaan magneetin puoleiselle sivulle oikeasti syntyy?\n\nb) Miksi opiskelijan sääntö rikkoisi energian säilymisen?",
       "kind": [
         "error"

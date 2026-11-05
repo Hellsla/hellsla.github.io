@@ -27,6 +27,7 @@
     {
       "id": "fy7-14-L1-04",
       "level": 1,
+      "core": true,
       "text": "The refractive index of a soap film is $1.33$, and there is air on both sides of it. Light arrives at normal incidence on the film. How thick is the thinnest film that reflects light of wavelength $600\\,\\text{nm}$ most strongly?",
       "answer": 112.782,
       "unit": "nm",
@@ -43,6 +44,7 @@
     {
       "id": "fy7-14-L1-06",
       "level": 1,
+      "core": true,
       "text": "A soap film is in air, and light arrives at normal incidence on the film. At which surface does the reflected wave get inverted, that is, get a shift of half a wavelength, and why?",
       "kind": [
         "concept"
@@ -97,6 +99,7 @@
     {
       "id": "fy7-14-L2-01",
       "level": 2,
+      "core": true,
       "text": "The thickness of a soap film ($n = 1.33$) is $240\\,\\text{nm}$ at one point, and there is air on both sides of it. White light arrives at normal incidence on the film. Which wavelength of visible light ($400$–$700\\,\\text{nm}$) is missing from the reflected light?",
       "answer": 638.4,
       "unit": "nm",
@@ -183,6 +186,7 @@
     {
       "id": "fy7-14-L2-07",
       "level": 2,
+      "core": true,
       "text": "The table gives example data: the glass ($n = 1.52$) of a camera lens has an $\\text{MgF}_2$ coating ($n = 1.38$), and the table gives the share $R$ of the light arriving at normal incidence that is reflected from the lens at different wavelengths.\n\nThe coating is the thinnest possible ($k = 0$), and it is designed to weaken the reflection as much as possible at one wavelength.\n\na) Draw a graph in which the reflected share $R$ is a function of the wavelength $\\lambda$, and deduce from the table for which wavelength the coating is designed. How thick is the coating?\n\nb) Using the shape of the graph, explain why the coated lens looks purple.\n\nThe answer box takes the thickness of the coating in part a).",
       "kind": [
         "data",

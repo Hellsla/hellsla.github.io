@@ -275,7 +275,7 @@ The scale of the vertical axis starts at $3.6\,\text{V}$ so that the small decre
 
 ### d)
 **Find:** whether there is any danger in the capacitor after the battery is removed, how it is discharged safely and how large a current would flow through the body
-**Principle:** A capacitor stores charge and energy on its plates, and its voltage does not disappear when the battery that charges it is removed. The danger depends on the stored energy and the voltage, not on the battery. The size of the current through the body is obtained from the voltage and the resistance.
+**Principle:** The plates of a capacitor carry the charges $+Q$ and $-Q$, and the energy is stored in the electric field between the plates. The voltage does not disappear when the battery that charges it is removed. The danger depends on the stored energy and the voltage, not on the battery. The size of the current through the body is obtained from the voltage and the resistance.
 **Model answer:** *Danger.* After the battery is removed, the capacitor is still at $300\,\text{V}$ and holds about $15\,\text{J}$. The device does not get its voltage from the small battery but from the capacitor, which can discharge through the body of the repairer.
 
 *Current.* If the resistance of the body is $1.0\,\text{k}\Omega$, the initial current would be $I = \dfrac{U}{R} = \dfrac{300\,\text{V}}{1.0 \cdot 10^{3}\,\Omega} = 0.30\,\text{A}$. This is many times the few tens of milliamperes that can already be dangerous. The current decreases as the capacitor discharges, but the initial current is enough for a dangerous electric shock.

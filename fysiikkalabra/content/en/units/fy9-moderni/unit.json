@@ -1,0 +1,14 @@
+{
+  "id": "fy9-moderni",
+  "course": "FY9",
+  "chapter": 6,
+  "order": 1,
+  "title": "Quantum phenomena, the nucleus and radiation",
+  "description": "A review of module FY8: the photoelectric effect and the photon, spectra and energy levels, the hydrogen atom, wave–particle duality and orbitals, the LED and the laser, the atomic nucleus and radioactive decay, the decay law, mass defect and binding energy, fission and fusion, ionising radiation, radiation dose and radiation safety, uses of radiation, the Standard Model and the evolution of the universe, with matriculation-exam-style problems on them.",
+  "kind": "review",
+  "minutes": 75,
+  "subjects": [
+    "physics"
+  ],
+  "sources": []
+}

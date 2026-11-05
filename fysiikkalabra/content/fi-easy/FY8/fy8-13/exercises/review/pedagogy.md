@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 774a8c852b1e5169
+CONTENT-HASH: 83c2a5ec2edf0391
+Mode: delta
 
 ## Blocking
 (none)
 
 ## Polish
-- L2-03, L3-01 — kysymys ei ole viimeinen lause (kantaan jäänyt).
-- L3-01 — "annos tavalla A miinus annos tavalla B ... etumerkin kanssa" on raskas selkeälle suomelle (kantaan jäänyt).
-- solutions L1-04 Järkevyys — "nelinkertaistuu eli kaksinkertaistuu kahdesti" on sekava; "kasvaa nelinkertaiseksi: se kaksinkertaistuu kaksi kertaa" (kantaan jäänyt).
-- solutions L2-04 — Kaava-rivin $\log_2$ ei kuulu lukuun (kantaan jäänyt).
+- exercises.json core marks — there is still no shielding task in the core path. — Optionally also mark L1-05 as core.
+- solutions.md:59 (L2-01 Järkevyys) — it does not say why the share is 4 % (left as is). — "Kilpirauhasen painotuskerroin on vain 0,04."
 
 ## Checked
-- Delta: L2-04 Järkevyys and L3-01 Kaava only; values and answers unchanged (the h·(c/X) regrouping in the other chapters does not occur here). L2-04 Järkevyys: the chain of five halvings is followed by "(yksikkönä µSv/h)"; unit stated once, the chain reads cleaner and the meaning is unchanged. L3-01: \tfrac in the bracket only changes size.
-- Opened own 360 px captures (?ratkaisut=1) of every changed solution step (scratchpad shots-fx/): the Järkevyys chain and the Kaava bracket fit the column, nothing clipped, no page scroll.
-- Järkevyys wraps over four short lines at 360 px; the chain stays readable, the unit parenthetical is clear.
-- Levels, tasks and answers untouched by the commit; earlier PASS stands.
+- The new :134 sentence is short and readable in selko.
+- Core is now L1-06, L1-07, L2-02, L2-05, the same as fi.
+- Hash 83c2a5ec2edf0391 at start and end.

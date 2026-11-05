@@ -3,6 +3,7 @@
   {
    "id": "fy2-7-L1-01",
    "level": 1,
+   "core": true,
    "text": "Voimalaitos syöttää sähköverkkoon vuorokaudessa $500\\,\\text{MWh}$ sähköenergiaa. Verkossa häviää $4{,}0\\,\\%$ lähtevästä energiasta. Kuinka paljon energiaa tulee perille? Anna vastaus megawattitunteina.",
    "answer": 480,
    "unit": "MWh",
@@ -44,6 +45,7 @@
   {
    "id": "fy2-7-L1-06",
    "level": 1,
+   "core": true,
    "text": "Miksi sähköenergia siirretään kantaverkossa korkealla jännitteellä?",
    "kind": [
     "concept"
@@ -92,6 +94,7 @@
   {
    "id": "fy2-7-L2-01",
    "level": 2,
+   "core": true,
    "text": "Huonosti eristetyssä kaukolämpöverkossa häviää $20\\,\\%$ verkkoon lähtevästä energiasta, ja asiakkaille asti tulee viikossa $600\\,\\text{MWh}$. Kuinka paljon energiaa verkossa häviää viikossa? Anna vastaus megawattitunteina.",
    "answer": 150,
    "unit": "MWh",
@@ -203,6 +206,7 @@
   {
    "id": "fy2-7-L2-07",
    "level": 2,
+   "core": true,
    "text": "Oppilas kirjoittaa: ”Sähkö kulkee johtoa pitkin valon nopeudella, joten sähkön siirrossa ei synny häviöitä.” Mikä seuraavista korjaa väitteen oikein?",
    "kind": [
     "error",

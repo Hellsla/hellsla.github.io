@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 2bb592b2d865407e
+CONTENT-HASH: e733db822fea11fb
 
-Round 2. Round 1 had no Blocking items; the changed tasks are consistent.
+Delta: one feedback sentence in 12-6 (L1-06, choice 4) and core marks on 12-4, 12-6, 12-8, 12-11.
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] 12-13 (L2-05) answer chip — shows "U ≈ 30 V" (with the symbol) while the answer box expects 30,1 V; make the Vastaus line start with "$30\,\text{V}$" so the chip is a plain value, and keep "(laatikkoon 30,1 V)" afterwards.
-- [Minor] 12-13 Sijoitus — "275,7 V·cm" is set with `\cdot`, which reads as a product dot; use `\text{V} \cdot \text{cm}` with thin spaces consistent with the other units (minor).
-- [Minor] 12-19 (L3-04) Kaava (carried over) — six formulas in one paragraph separated by semicolons; set as two or three rows.
-- [Minor] 12-13 (carried over) — a plotting task with no reference plot; a small (x, V) figure with the line through the origin would help (optional).
+- [Minor] exercises.json L1-06 choice 4 feedback — "kun potentiaalin nollakohta on negatiivisella levyllä" refers to a plate the task never mentions (it speaks only of "homogeeninen sähkökenttä"); e.g. "…$V = Ex$, kun kenttä on kahden levyn välissä, potentiaalin nollakohta on negatiivisella levyllä ja $x$ on etäisyys siitä."
+- [Minor] (carried over) 12-13 answer chip "U ≈ 30 V" vs box 30,1 V; 12-13 "275,7 V·cm"; 12-19 six formulas in one paragraph; 12-13 no reference plot.
 
 ## Checked
-- Resolved: 12-14 quotation now ”…”; 12-15 Vastaus "6,66 · 10⁻²⁷ kg" (three significant figures, consistent) and He⁺ named; 12-19 c) "1,4 · 10¹⁴ kertaa suurempi".
-- Opened open-exercises-L2-1280-5 and -6 (12-12 end; 12-13 task, chip, least-squares chain), L2-9 (12-15 data, Sijoitus, Vastaus) and L3-6 (12-19 chains, Vastaus c)): sums verified (Σx² = 55,0; ΣxV = 275,7; k = 5,013 V/cm; masses sum 33,30), boxes and text fine, nothing clipped. Chips of all 8 new tasks match exercises.json (30,1 and 6,66 · 10⁻²⁷ kg as answers). No 360 px exercise capture exists.
+- Own captures of preview/fy6-12.html, 12-6 with choice 4 committed (feedback shown) at 360, 390 and 1280 px: the new sentence sits inside the task card under its option, $V = Ex$, $x$ and $qV$ render on one line each, no overflow (page width = viewport), Vastaa and the model answer follow in order.
+- Core marks: the "Ydintehtävä" chip renders beside the task number on 12-6 (capture), and the built page carries it on exactly 12-4, 12-6, 12-8 and 12-11 (four `.ex-core`).
+- Screenshots refreshed (`screenshot.py fy6-12 --if-stale`); deterministic checks in the packet clean.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

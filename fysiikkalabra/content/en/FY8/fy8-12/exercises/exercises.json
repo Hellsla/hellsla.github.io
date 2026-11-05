@@ -3,6 +3,7 @@
     {
       "id": "fy8-12-L1-01",
       "level": 1,
+      "core": true,
       "text": "Cobalt-60 emits gamma radiation, for whose mean energy $1.25\\,\\text{MeV}$ the half-value thickness of lead is $10.4\\,\\text{mm}$. What percentage of the gamma radiation passes through a lead plate with a thickness of $25.0\\,\\text{mm}$? Assume a narrow beam.",
       "answer": 18.9,
       "unit": "%",
@@ -39,6 +40,75 @@
       "answer": 98.4,
       "unit": "nm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-12-L1-06",
+      "level": 1,
+      "core": true,
+      "text": "The penetrating power of alpha and beta radiation is compared with a GM tube. Which of the following shields stops alpha radiation but lets some of the beta radiation through, and why?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Paper sheet, because an alpha particle ionises densely and stops in a thin layer, but a beta particle ionises less densely.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Aluminium plate, because light aluminium stops the heavy alpha particle but not the beta particle, whose mass is very small.",
+          "feedback": "A few millimetres of aluminium plate stops both. A beta particle is light, but it loses its energy by ionising, and a layer of a few millimetres of aluminium is enough to stop it."
+        },
+        {
+          "text": "Paper sheet, because an alpha particle ionises densely and stops in a thin layer, but a beta particle ionises less densely.",
+          "correct": true,
+          "feedback": "Correct: an alpha particle gives up its energy over a short distance, so a thin sheet of paper stops it. A beta particle ionises less densely, so its range is longer and some of it passes through the paper."
+        },
+        {
+          "text": "Lead plate, because dense lead stops slow particles but lets beta particles through, since they travel at almost the speed of light.",
+          "feedback": "A lead plate stops both alpha and beta particles. A high speed does not prevent a particle from ionising and losing its energy; a beta particle has a range too."
+        },
+        {
+          "text": "Concrete wall, because concrete repels the positively charged alpha particle but not the negatively charged beta particle.",
+          "feedback": "Stopping is not based on repulsion. Particles lose their energy by ionising matter, and a thick concrete wall stops both alpha and beta particles."
+        }
+      ]
+    },
+    {
+      "id": "fy8-12-L1-07",
+      "level": 1,
+      "text": "A student measures the radiation of a gamma source with a GM counter for $45\\,\\text{s}$ and gets $1215$ pulses. The background radiation has been measured earlier, and it causes $90$ pulses per minute in the counter. How many pulses per minute does the radiation of the source cause? Give the answer in the unit $\\tfrac{1}{\\text{min}}$.",
+      "answer": 1530,
+      "unit": "1/min",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-12-L1-08",
+      "level": 1,
+      "text": "An object containing an alpha emitter is fairly harmless outside the skin, but swallowing or breathing in an alpha emitter is dangerous. What explains the difference?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Outside, the skin stops the particles, but inside, an alpha particle gives up its energy over the distance of a few cells by ionising.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Inside the body the electric field of the cells accelerates the alpha particles to higher speeds than in air, and so they pass through tissue easily.",
+          "feedback": "The electric field of the cells does not accelerate alpha particles. An alpha particle loses its energy in tissue by ionising and stops within a few cells, so it does not pass through tissue."
+        },
+        {
+          "text": "Outside, the skin stops the particles, but inside, an alpha particle gives up its energy over the distance of a few cells by ionising.",
+          "correct": true,
+          "feedback": "Correct: the range of an alpha particle is a few centimetres in air and only tens of micrometres in tissue. Outside, it does not reach living tissue, but inside, all the energy is concentrated in the nearest cells."
+        },
+        {
+          "text": "Outside, alpha particles are electrically neutral, but the water in the body gives them a charge, and then they start to ionise.",
+          "feedback": "An alpha particle is always charged, and it ionises already in air. The difference is due to the range: the skin stops the particles before living tissue, but inside they are already in the tissue."
+        },
+        {
+          "text": "Inside the body alpha radiation turns into gamma radiation, which passes through tissue and ionises the cells more effectively than alpha particles.",
+          "feedback": "Alpha radiation does not turn into gamma radiation in tissue. Gamma radiation passes through tissue more easily and gives up its energy less densely, so the danger is caused precisely by the dense ionisation of alpha particles."
+        }
+      ]
     }
   ],
   "level2": [
@@ -53,6 +123,7 @@
     {
       "id": "fy8-12-L2-02",
       "level": 2,
+      "core": true,
       "text": "The gamma radiation of a caesium-137 source passes first through a $10\\,\\text{mm}$ lead plate and then through a $20\\,\\text{cm}$ concrete wall. The half-value thickness of lead is $5.5\\,\\text{mm}$ and that of concrete $3.9\\,\\text{cm}$. What percentage of the gamma radiation passes through both? Assume a narrow beam.",
       "answer": 0.81,
       "unit": "%",
@@ -73,6 +144,144 @@
       "answer": 70.9,
       "unit": "mm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-12-L2-05",
+      "level": 2,
+      "text": "The radiation of a weak gamma source was counted with a GM counter ten times in a row in periods of $10\\,\\text{s}$ at the same distance (table, example data). The order of magnitude of the random variation of the number of pulses $N$ is $\\sqrt{N}$.\n\na) Calculate the mean pulse count per $10\\,\\text{s}$ period.\n\nb) Calculate $\\sqrt{N}$ using the mean and compare it with how the readings in the table vary around the mean.\n\nc) Calculate the total number of pulses of all ten periods $N_\\text{tot}$ and its relative uncertainty $\\tfrac{\\sqrt{N_\\text{tot}}}{N_\\text{tot}}$ as a percentage.\n\nEnter in the box the relative uncertainty of part c) as a percentage.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 4.5,
+      "unit": "%",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Pulse count of a GM counter in $10\\,\\text{s}$ periods (example data)",
+        "columns": [
+          "Period",
+          "Pulses"
+        ],
+        "rows": [
+          [
+            "1",
+            "52"
+          ],
+          [
+            "2",
+            "45"
+          ],
+          [
+            "3",
+            "49"
+          ],
+          [
+            "4",
+            "57"
+          ],
+          [
+            "5",
+            "44"
+          ],
+          [
+            "6",
+            "48"
+          ],
+          [
+            "7",
+            "51"
+          ],
+          [
+            "8",
+            "42"
+          ],
+          [
+            "9",
+            "50"
+          ],
+          [
+            "10",
+            "46"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-12-L2-06",
+      "level": 2,
+      "core": true,
+      "text": "A student studies the ability of lead to attenuate the gamma radiation of caesium-137. She places lead plates between the source and a GM tube and counts the pulses for $60\\,\\text{s}$ (table, example data). The background radiation is $50$ pulses in $60\\,\\text{s}$.\n\na) Subtract the background radiation and calculate the net pulse counts.\n\nb) Draw on paper the net pulse count as a function of the thickness of lead and read from the graph the thickness at which the net pulse count has halved from the original.\n\nc) Calculate the half-value thickness from each measurement with thicknesses $3$–$15\\,\\text{mm}$ using the formula $d_{1/2} = \\dfrac{d \\cdot \\ln 2}{\\ln \\tfrac{N_0 - N_\\text{t}}{N - N_\\text{t}}}$ and take their mean. Here $N_0$ is the pulse count without lead, $N$ the pulse count behind the lead and $N_\\text{t}$ the pulse count of the background radiation.\n\nEnter in the box the mean of part c) in millimetres.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 5.5,
+      "unit": "mm",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Pulses of a GM counter in $60\\,\\text{s}$ behind lead (example data)",
+        "columns": [
+          "$d\\,(\\text{mm})$",
+          "Pulses"
+        ],
+        "rows": [
+          [
+            "0",
+            "1850"
+          ],
+          [
+            "3",
+            "1290"
+          ],
+          [
+            "6",
+            "890"
+          ],
+          [
+            "9",
+            "640"
+          ],
+          [
+            "12",
+            "440"
+          ],
+          [
+            "15",
+            "315"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-12-L2-07",
+      "level": 2,
+      "text": "A student has an unknown radioactive source that emits either beta or gamma radiation. Available are a GM counter, a sheet of paper, a $3\\,\\text{mm}$ aluminium plate and a $2\\,\\text{cm}$ lead plate. With which measurement can the type be told apart most reliably?",
+      "kind": [
+        "experiment",
+        "concept"
+      ],
+      "answer": "Compare the net pulse count with and without the $3\\,\\text{mm}$ aluminium plate: if it drops almost to zero, the source is beta, because a beta particle has a range.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Compare the net pulse count with and without the $3\\,\\text{mm}$ aluminium plate: if it drops almost to zero, the source is beta, because a beta particle has a range.",
+          "correct": true,
+          "feedback": "Correct: beta particles have a range, so a few millimetres of aluminium stops them. Gamma radiation would be attenuated only a little in aluminium, because its half-value thickness is tens of millimetres."
+        },
+        {
+          "text": "Compare the net pulse count with and without the sheet of paper: if it drops, the source is beta, because paper stops beta particles but lets gamma photons through.",
+          "feedback": "A sheet of paper stops alpha particles, but beta particles pass through it. So the pulse count does not drop behind the paper even if the source is beta, and the measurement does not distinguish the types."
+        },
+        {
+          "text": "Measure the pulses behind the $2\\,\\text{cm}$ lead plate: lead stops gamma radiation completely but lets beta particles through, so the remaining radiation is beta.",
+          "feedback": "Lead stops beta particles easily. Gamma radiation, on the other hand, is never stopped completely but is attenuated gradually in layers of one half-value thickness, so the reasoning is the wrong way round."
+        },
+        {
+          "text": "Compare the height of the pulses: the pulse of a GM tube is smaller for a beta particle and larger for a gamma photon, so the height of the pulse tells the type.",
+          "feedback": "The pulse of a GM tube is the same size in every case, because the electron avalanche does not depend on the type of radiation. The tube counts events but does not distinguish types of radiation."
+        }
+      ]
     }
   ],
   "level3": [
@@ -99,6 +308,100 @@
       "answer": 1.24,
       "unit": "· 10⁶",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-12-L3-04",
+      "level": 3,
+      "text": "Plates made of an unknown material are placed between a laboratory caesium-137 source ($662\\,\\text{keV}$ gamma radiation) and a GM tube. The table gives the pulses over $60\\,\\text{s}$ at different total thicknesses (example data). The background radiation is $40$ pulses in $60\\,\\text{s}$.\n\nHalf-value thicknesses for the gamma radiation of caesium-137: lead $5.5\\,\\text{mm}$, iron $12\\,\\text{mm}$, aluminium $34\\,\\text{mm}$, concrete $39\\,\\text{mm}$ and water $81\\,\\text{mm}$.\n\na) Subtract the background radiation and justify from the net pulse counts that the radiation is attenuated like gamma radiation and not like beta radiation.\n\nb) Calculate the half-value thickness from each measurement with thicknesses $6$–$30\\,\\text{mm}$ and take their mean. Deduce with the help of the table what the plates are made of.\n\nc) How thick a plate would be needed to drop the net pulse count to one per cent of the original?\n\nd) Justify why the measurement of the thickest plate is relatively the most uncertain and how it can be improved.\n\nEnter in the box the mean half-value thickness of part b) in millimetres.",
+      "kind": [
+        "data",
+        "reasoning",
+        "model"
+      ],
+      "answer": 12.0,
+      "unit": "mm",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Pulses of a GM counter in $60\\,\\text{s}$ behind the plates (example data)",
+        "columns": [
+          "$d\\,(\\text{mm})$",
+          "Pulses"
+        ],
+        "rows": [
+          [
+            "0",
+            "2640"
+          ],
+          [
+            "6",
+            "1895"
+          ],
+          [
+            "12",
+            "1330"
+          ],
+          [
+            "18",
+            "950"
+          ],
+          [
+            "24",
+            "685"
+          ],
+          [
+            "30",
+            "495"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-12-L3-05",
+      "level": 3,
+      "text": "A caesium-137 source is in a lead container whose wall is $8.0\\,\\text{mm}$ thick. A GM tube is outside the container, and it receives a fraction of $1.5\\,\\%$ of the radiation leaving the source in all directions (geometric efficiency). A student counted the pulses over five consecutive $60\\,\\text{s}$ periods with the source and over five periods without the source (table, example data).\n\nAssume, for simplicity, that every decay emits one gamma photon, that every photon hitting the tube produces a pulse and that the half-value thickness of lead is $5.5\\,\\text{mm}$ (narrow beam).\n\na) Calculate the net pulse rate $R$ caused by the source in the unit $\\tfrac{1}{\\text{s}}$.\n\nb) What fraction of the photons leaving the source passes through the wall of the container?\n\nc) Calculate the activity $A$ of the source in kilobecquerels.\n\nd) Is the true activity greater or smaller than in part c)? Justify with two of the assumptions made.\n\nEnter in the box the activity of part c) in kilobecquerels.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 3.0,
+      "unit": "kBq",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Pulses of a GM counter in $60\\,\\text{s}$ periods (example data)",
+        "columns": [
+          "Period",
+          "Source",
+          "Background"
+        ],
+        "rows": [
+          [
+            "1",
+            "1010",
+            "24"
+          ],
+          [
+            "2",
+            "987",
+            "29"
+          ],
+          [
+            "3",
+            "1032",
+            "22"
+          ],
+          [
+            "4",
+            "1001",
+            "27"
+          ],
+          [
+            "5",
+            "1020",
+            "28"
+          ]
+        ]
+      }
     }
   ]
 }

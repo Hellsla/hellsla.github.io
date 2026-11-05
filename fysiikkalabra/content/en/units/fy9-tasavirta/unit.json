@@ -1,0 +1,14 @@
+{
+  "id": "fy9-tasavirta",
+  "course": "FY9",
+  "chapter": 5,
+  "order": 1,
+  "title": "Direct-current circuits and electrical energy",
+  "description": "A review of the FY6 module's electric circuit, current and voltage, measurements, resistance and Ohm's law, series and parallel connections, Kirchhoff's laws and potential, electric power and Joule's law, electrical energy at home, emf and internal resistance, and batteries and charging, with matriculation-exam-style problems on them.",
+  "kind": "review",
+  "minutes": 75,
+  "subjects": [
+    "physics"
+  ],
+  "sources": []
+}

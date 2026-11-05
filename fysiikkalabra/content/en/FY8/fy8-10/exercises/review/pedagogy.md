@@ -1,17 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 00f71cce9b5857cd
+CONTENT-HASH: 6afc032326200d35
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
+## Fixed
+- exercises.json L2-05, L2-06, L3-04, L3-05 `text` — the translation held a literal backslash-n (`\\n\\n`) where fi has real line breaks, so the task text showed `\n\n` on the page (visible in open-exercises-L2-1280-5 and L3-1280-4 captures) and the a)/b)/c) parts ran together; replaced with real newlines (the same line breaks as fi).
+
 ## Polish
-- Level 3 (L3-01): the task is the same Q calculation as the transfer task with the sign reversed; it is "reasoning" only through the sign. Acceptable, but a task asking the student to judge which of two reactions releases energy would test the binding-energy-curve goal more.
-- L2-01 follows the worked example step for step (different nucleus); fine as practice, but it is not a new situation.
-- The exercise brief in the packet is empty (the lesson excerpt came through as blank), so I judged "no repeat of the example" from the lesson text I had; the set repeats nothing except L2-01's method.
-- Exercises have no misconception-specific feedback; solutions carry the principle and reasonableness instead, which works for a student who failed the task. No conceptual item on "binding energy is stored energy"; the lesson's checks cover it.
+(none)
 
 ## Checked
-- Hash: 00f71cce9b5857cd at start and end (translation's own).
-- Counts 5/4/3 match the course; answers recomputed (e.g. L3-02 23.85, L1-05 2.388e-3, L3-03 2.8e-12).
-- Solutions follow principle, formula, conversion, substitution, answer, reasonableness; each can be followed step by step.
-- Captures opened: open-exercises-1280-1, open-exercises-L3-1280-1.
+- Task wording, parts a)/b)/c)/d) and the answer-box sentence ("The answer box takes the result of part c) in the unit …") match fi in structure and meaning; no hint added or lost.
+- Choice feedback in L1-06, L1-08, L2-07 keeps fi's misconception-specific explanations in natural English.
+- Solutions keep the Given / Asked / Principle / Formula / Conversions / Substitution / Answer / Reasonableness order of fi.
+- Level, kind and tolerance values equal fi for all 20 tasks.

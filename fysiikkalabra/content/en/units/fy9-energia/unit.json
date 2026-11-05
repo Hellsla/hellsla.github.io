@@ -1,0 +1,14 @@
+{
+  "id": "fy9-energia",
+  "course": "FY9",
+  "chapter": 2,
+  "order": 1,
+  "title": "Energy, power and efficiency",
+  "description": "A review of the FY2 module's conservation of energy, power, the kilowatt-hour, efficiency, heat of combustion and energy production, and of the energy chain of a power plant, with matriculation-exam-style problems on them.",
+  "kind": "review",
+  "minutes": 75,
+  "subjects": [
+    "physics"
+  ],
+  "sources": []
+}

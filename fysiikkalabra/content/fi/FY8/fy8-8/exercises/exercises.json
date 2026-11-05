@@ -19,6 +19,7 @@
     {
       "id": "fy8-8-L1-03",
       "level": 1,
+      "core": true,
       "text": "Hiili-14 ${}^{14}_{6}\\text{C}$ hajoaa beeta miinus -hajoamisella. Mikä on syntyvän tytärytimen järjestysluku?",
       "answer": 7,
       "unit": "",
@@ -39,6 +40,60 @@
       "answer": 10,
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-8-L1-06",
+      "level": 1,
+      "core": true,
+      "text": "Radioaktiivinen ydin voi hajota usealla tavalla. Mikä seuraavista hajoamisista kasvattaa ytimen järjestyslukua $Z$ yhdellä ja jättää massaluvun $A$ ennalleen?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Beeta miinus -hajoaminen, koska ytimessä neutroni muuttuu protoniksi ja elektroni lähtee pois",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Beeta miinus -hajoaminen, koska ytimessä neutroni muuttuu protoniksi ja elektroni lähtee pois",
+          "correct": true,
+          "feedback": "Oikein: neutronin muuttuessa protoniksi protonien määrä kasvaa yhdellä, ja nukleonien kokonaismäärä pysyy samana. Varausluku säilyy, kun elektronin varausluku $-1$ lasketaan mukaan: esimerkiksi ${}^{14}_{6}\\text{C} \\to {}^{14}_{7}\\text{N} + {}^{0}_{-1}\\text{e} + \\bar{\\nu}$."
+        },
+        {
+          "text": "Beeta plus -hajoaminen, koska ytimessä protoni muuttuu neutroniksi ja positroni lähtee pois",
+          "feedback": "Tässä hajoamisessa protoni muuttuu neutroniksi, joten järjestysluku pienenee yhdellä eikä kasva. Massaluku pysyy ennallaan, mutta suunta on väärä: ${}^{18}_{9}\\text{F} \\to {}^{18}_{8}\\text{O} + {}^{0}_{+1}\\text{e} + \\nu$."
+        },
+        {
+          "text": "Alfahajoaminen, koska ytimestä lähtee kaksi protonia ja kaksi neutronia yhtenä kokonaisuutena",
+          "feedback": "Alfahiukkanen vie ytimestä kaksi protonia ja kaksi neutronia, joten järjestysluku pienenee kahdella ja massaluku neljällä. Kumpikaan ei sovi kysyttyyn muutokseen."
+        },
+        {
+          "text": "Gammahajoaminen, koska ytimestä lähtee gammafotoni ja ydin siirtyy alemmalle energiatasolle",
+          "feedback": "Gammafotoni vie vain energiaa. Protonien ja neutronien määrät eivät muutu, joten sekä järjestysluku että massaluku pysyvät ennallaan."
+        }
+      ]
+    },
+    {
+      "id": "fy8-8-L1-07",
+      "level": 1,
+      "text": "Radium-226 ${}^{226}_{88}\\text{Ra}$ hajoaa alfahajoamisella. Kuinka monta neutronia syntyvässä tytärytimessä on?",
+      "kind": [
+        "concept"
+      ],
+      "answer": 136,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-8-L1-08",
+      "level": 1,
+      "text": "Koboltti-60 ${}^{60}_{27}\\text{Co}$ hajoaa beeta miinus -hajoamisella viritystilaiseen nikkeli-60-ytimeen, joka purkaa viritysenergiansa lähettämällä gammafotonin.\n\na) Kuinka monta protonia on ytimessä gammafotonin lähdön jälkeen?\n\nb) Perustele lyhyesti, miksi gammafotonin lähtö ei muuta ytimen protonien eikä neutronien määrää.\n\nA-kohdan tulos kirjoitetaan vastauskenttään.",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": 28,
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -53,6 +108,7 @@
     {
       "id": "fy8-8-L2-02",
       "level": 2,
+      "core": true,
       "text": "Uraanisarjan vismutti-214 ${}^{214}_{83}\\text{Bi}$ hajoaa beeta miinus -hajoamisella, ja syntyvä ydin hajoaa heti alfahajoamisella. Mikä on näiden kahden hajoamisen jälkeen syntyvän ytimen järjestysluku?",
       "answer": 82,
       "unit": "",
@@ -73,6 +129,128 @@
       "answer": 138,
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-8-L2-05",
+      "level": 2,
+      "text": "Taulukossa on kuuden radioaktiivisen ytimen protoniluku $Z$ ja neutroniluku $N$ ennen hajoamista sekä tytärytimen luvut $Z'$ ja $N'$ hajoamisen jälkeen. Luvut ovat ytimien pääasiallisista hajoamistavoista (NNDC NuDat 3).\n\na) Päättele jokaisen rivin hajoamistapa: alfa-, beeta miinus -, beeta plus - tai gammahajoaminen.\n\nb) Laske, kuinka monessa riveistä ydin hajoaa beeta miinus -hajoamisella.\n\nB-kohdan tulos kirjoitetaan vastauskenttään.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 3,
+      "unit": "",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Ytimen protoni- ja neutroniluvut ennen hajoamista ($Z$, $N$) ja sen jälkeen ($Z'$, $N'$)",
+        "columns": [
+          "Ydin",
+          "$Z$",
+          "$N$",
+          "$Z'$",
+          "$N'$"
+        ],
+        "rows": [
+          [
+            "Ra-226",
+            "88",
+            "138",
+            "86",
+            "136"
+          ],
+          [
+            "Pb-210",
+            "82",
+            "128",
+            "83",
+            "127"
+          ],
+          [
+            "Na-22",
+            "11",
+            "11",
+            "10",
+            "12"
+          ],
+          [
+            "I-131",
+            "53",
+            "78",
+            "54",
+            "77"
+          ],
+          [
+            "Ba-137 (viritetty)",
+            "56",
+            "81",
+            "56",
+            "81"
+          ],
+          [
+            "Sr-90",
+            "38",
+            "52",
+            "39",
+            "51"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-8-L2-06",
+      "level": 2,
+      "text": "Oppilas kirjoitti americium-241:n alfahajoamisen yhtälöksi ${}^{241}_{95}\\text{Am} \\to {}^{237}_{94}\\text{Np} + {}^{4}_{2}\\text{He}$ ja perusteli: ”Alfahiukkanen on yksi hiukkanen, joten järjestysluku pienenee yhdellä.”\n\na) Etsi oppilaan virhe tarkistamalla, säilyvätkö massaluku ja varausluku yhtälössä.\n\nb) Kirjoita oikea hajoamisyhtälö ja laske, kuinka monta neutronia tytärytimessä on.\n\nB-kohdan neutronien määrä kirjoitetaan vastauskenttään.",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "answer": 144,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-8-L2-07",
+      "level": 2,
+      "core": true,
+      "text": "Gammaspektrometri jakaa ilmaisimen pulssit kanaviin pulssin korkeuden mukaan, joten sen kanavanumero on verrannollinen fotonin energiaan. Energia-asteikko saadaan kalibroimalla laite lähteillä, joiden gammaviivojen energiat tunnetaan. Taulukossa on neljän viivan piikin kohdan kanavanumero (esimerkkiaineisto, energiat NNDC NuDat 3). Tuntemattoman lähteen piikki osuu kanavalle $1531$.\n\na) Piirrä kuvaaja, jossa $E_\\gamma$ on kanavanumeron funktiona, ja sovita pisteisiin suora.\n\nb) Lue suoralta tuntemattoman piikin energia $E_\\gamma$ kiloelektronivoltteina.\n\nc) Selitä, miksi suoran sovittaminen on parempi kuin kahden pisteen yhdistäminen.\n\nB-kohdan tulos kirjoitetaan vastauskenttään.",
+      "kind": [
+        "experiment",
+        "data",
+        "graph"
+      ],
+      "answer": 916,
+      "unit": "keV",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Gammaspektrometrin kalibrointi: piikin kanava ja viivan energia",
+        "columns": [
+          "Lähde",
+          "Kanava",
+          "$E_\\gamma\\,(\\text{keV})$"
+        ],
+        "rows": [
+          [
+            "Am-241",
+            "98",
+            "59.54"
+          ],
+          [
+            "Cs-137",
+            "1104",
+            "661.7"
+          ],
+          [
+            "Co-60",
+            "1961",
+            "1173.2"
+          ],
+          [
+            "Co-60",
+            "2227",
+            "1332.5"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -87,7 +265,7 @@
     {
       "id": "fy8-8-L3-02",
       "level": 3,
-      "text": "Kuvitteellisen ytimen energiatasot ovat $0$ (perustila), $0{,}40\\,\\text{MeV}$ ja $1{,}00\\,\\text{MeV}$. Ydin on aluksi ylimmällä tasolla, ja se voi palata perustilaan suoraan tai välitason kautta. Mikä on lyhin aallonpituus, joka ytimen gammaspektrissä voi näkyä? Vastaa pikometreinä ($1\\,\\text{MeV} = 10^{6}\\,\\text{eV}$, $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "text": "Kuvitteellisen ytimen energiatasot ovat $0$ (perustila), $0{,}40\\,\\text{MeV}$ ja $1{,}00\\,\\text{MeV}$.\n\nYdin on aluksi ylimmällä tasolla, ja se voi palata perustilaan suoraan tai välitason kautta.\n\nMikä on lyhin aallonpituus, joka ytimen gammaspektrissä voi näkyä? Vastaa pikometreinä ($1\\,\\text{MeV} = 10^{6}\\,\\text{eV}$, $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).",
       "answer": 1.24,
       "unit": "pm",
       "tolerance": 0.02
@@ -99,6 +277,106 @@
       "answer": 87,
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-8-L3-04",
+      "level": 3,
+      "text": "Radon-222 ${}^{222}_{86}\\text{Rn}$ on uraanisarjan jäsen, ja sarja päättyy pysyvään lyijy-206:een ${}^{206}_{82}\\text{Pb}$. Taulukossa on sarjan jäseniä järjestyksessä, ja jokainen ydin on edellisen tytärydin (NNDC NuDat 3). Sarjassa on vain alfa- ja beeta miinus -hajoamisia.\n\na) Päättele taulukosta jokaisen siirtymän hajoamistapa.\n\nb) Pb-210:n ja Pb-206:n välistä puuttuvat ytimet. Laske, montako alfa- ja montako beeta miinus -hajoamista niiden välillä on.\n\nc) Laske, montako beeta miinus -hajoamista on koko sarjassa Rn-222:sta Pb-206:een. Tarkista tulos laskemalla alfahajoamisten määrä massaluvun muutoksesta ja sijoittamalla se järjestysluvun muutokseen.\n\nd) Perustele, miksi pelkät alfahajoamiset eivät voisi viedä radonista lyijy-206:een.\n\nC-kohdan beeta miinus -hajoamisten määrä kirjoitetaan vastauskenttään.",
+      "kind": [
+        "data",
+        "reasoning",
+        "model"
+      ],
+      "answer": 4,
+      "unit": "",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Uraanisarjan jäseniä järjestyksessä",
+        "columns": [
+          "Ydin",
+          "$A$",
+          "$Z$"
+        ],
+        "rows": [
+          [
+            "Rn-222",
+            "222",
+            "86"
+          ],
+          [
+            "Po-218",
+            "218",
+            "84"
+          ],
+          [
+            "Pb-214",
+            "214",
+            "82"
+          ],
+          [
+            "Bi-214",
+            "214",
+            "83"
+          ],
+          [
+            "Po-214",
+            "214",
+            "84"
+          ],
+          [
+            "Pb-210",
+            "210",
+            "82"
+          ],
+          [
+            "Pb-206 (pysyvä)",
+            "206",
+            "82"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-8-L3-05",
+      "level": 3,
+      "text": "Kuvitteellisen ytimen gammaspektristä mitattiin viisi viivaa (esimerkkiaineisto). Ytimellä on perustilan lisäksi kolme viritystasoa, ja ydin on aluksi ylimmällä tasolla. Toisessa kokeessa alimman viritystason energiaksi saatiin $351{,}2\\,\\text{keV}$ perustilan yläpuolella. Kuudes mahdollinen siirtymä ei näy taulukossa.\n\na) Päättele taulukosta ytimen kaikki energiatasot ja piirrä tasokaavio siirtymineen. Perustele päättelysi tasojen erotuksilla.\n\nb) Laske puuttuvan gammaviivan energia.\n\nc) Laske puuttuvan viivan aallonpituus pikometreinä ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{keV} = 1000\\,\\text{eV}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).\n\nC-kohdan tulos kirjoitetaan vastauskenttään.",
+      "kind": [
+        "data",
+        "reasoning",
+        "model"
+      ],
+      "answer": 1.08,
+      "unit": "pm",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Mitatut gammaviivat",
+        "columns": [
+          "Viiva",
+          "$E_\\gamma\\,(\\text{keV})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "351.2"
+          ],
+          [
+            "2",
+            "468.9"
+          ],
+          [
+            "3",
+            "681.3"
+          ],
+          [
+            "4",
+            "820.5"
+          ],
+          [
+            "5",
+            "1501.4"
+          ]
+        ]
+      }
     }
   ]
 }

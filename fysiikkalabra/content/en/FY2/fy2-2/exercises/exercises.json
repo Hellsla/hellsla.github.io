@@ -3,6 +3,7 @@
     {
       "id": "fy2-2-L1-01",
       "level": 1,
+      "core": true,
       "text": "The battery of a smartphone stores energy of $54\\,\\text{kJ}$. Give the energy in joules.",
       "answer": 54000,
       "unit": "J",
@@ -44,6 +45,7 @@
     {
       "id": "fy2-2-L1-06",
       "level": 1,
+      "core": true,
       "text": "The energy of four foods is given in different units. Which of them contains the most energy?",
       "kind": [
         "concept"
@@ -114,6 +116,7 @@
     {
       "id": "fy2-2-L2-03",
       "level": 2,
+      "core": true,
       "text": "An LED lamp receives electrical energy of $6.0\\,\\text{kJ}$. It turns $1.5\\,\\text{kJ}$ of it into light, and the rest turns into thermal energy in the lamp. The light hits the walls and surfaces of the room and is absorbed by them. How much energy has finally turned into thermal energy in the room? Give the answer in kilojoules.",
       "answer": 6.0,
       "unit": "kJ",
@@ -166,6 +169,7 @@
     {
       "id": "fy2-2-L2-06",
       "level": 2,
+      "core": true,
       "text": "A student adds up the energy of breakfast, lunch and a snack: breakfast $0.85\\,\\text{MJ}$, lunch $1200\\,\\text{kJ}$ and snack $450\\,\\text{kJ}$. They write: “$0.85 + 1200 + 450 = 1650.85\\,\\text{kJ}$.” Find the error and calculate the correct total energy in megajoules. Explain why the student’s result cannot be correct.",
       "kind": [
         "error"

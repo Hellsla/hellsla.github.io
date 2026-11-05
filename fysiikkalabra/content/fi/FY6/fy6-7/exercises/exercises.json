@@ -3,6 +3,7 @@
     {
       "id": "fy6-7-L1-01",
       "level": 1,
+      "core": true,
       "text": "Kannettavan tietokoneen teho on $45\\,\\text{W}$. Tietokonetta käytetään $4{,}0\\,\\text{h}$. Kuinka paljon sähköenergiaa se käyttää? Vastaa kilowattitunteina.",
       "answer": 0.18,
       "unit": "kWh",
@@ -43,6 +44,7 @@
     {
       "id": "fy6-7-L1-06",
       "level": 1,
+      "core": true,
       "text": "Sähkölaskussa sähköenergia ilmoitetaan kilowattitunteina ($\\text{kWh}$). Mitä suuretta kilowattitunti mittaa?",
       "kind": [
         "concept"
@@ -81,7 +83,7 @@
     {
       "id": "fy6-7-L1-08",
       "level": 1,
-      "text": "Oppilas laskee, kuinka kauan $1{,}0\\,\\text{kWh}$ energiaa riittää pöytätuulettimelle, jonka teho on $40\\,\\text{W}$. Hänen ratkaisunsa on: ”Aika on energian ja tehon tulo, $t = E \\cdot P = 1{,}0 \\cdot 40 = 40$. Tuuletin toimii siis $40$ tuntia.” Etsi oppilaan virhe ja laske oikea aika tunteina.",
+      "text": "Oppilas laskee, kuinka kauan $1{,}0\\,\\text{kWh}$ energiaa riittää pöytätuulettimelle, jonka teho on $40\\,\\text{W}$.\n\nHänen ratkaisunsa on: ”Aika on energian ja tehon tulo, $t = E \\cdot P = 1{,}0 \\cdot 40 = 40$. Tuuletin toimii siis $40$ tuntia.”\n\nEtsi oppilaan virhe ja laske oikea aika tunteina.",
       "kind": [
         "error",
         "reasoning"
@@ -128,6 +130,7 @@
     {
       "id": "fy6-7-L2-05",
       "level": 2,
+      "core": true,
       "text": "Kotitalouden laitteiden käyttö on koottu taulukkoon (esimerkkiaineisto). Teho on laitteen teho käytön aikana ja aika käyttöaika vuorokaudessa.\n\na) Laske kunkin laitteen energia vuorokaudessa kilowattitunteina ja selvitä, mikä laite käyttää eniten energiaa.\n\nb) Laske laitteiden yhteinen energia vuodessa ($365$ vuorokautta) kilowattitunteina.\n\nc) Valitse yksi laite, jonka energiaa kannattaa pienentää, ja perustele valinta.\n\nVastauskenttään tulee kohdan b) tulos.",
       "kind": [
         "data",
@@ -175,6 +178,7 @@
     {
       "id": "fy6-7-L2-06",
       "level": 2,
+      "core": true,
       "text": "Perheen sähkömittarin lukemat kirjattiin joka aamu kello 8 viikon ajan (esimerkkiaineisto). Sähkö maksaa siirtoineen $16\\,\\text{snt/kWh}$.\n\na) Laske mittarin lukemien avulla energia kunkin vuorokauden aikana sekä viikon aikana käytetty energia ja keskimääräinen energia vuorokaudessa.\n\nb) Laske kodin sähkötehon keskiarvo viikon aikana watteina.\n\nc) Laske viikon sähkön hinta ilman perusmaksuja.\n\nVastauskenttään tulee kohdan b) tulos.",
       "kind": [
         "data"

@@ -1,17 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 1b0ae72e68f858d4
+CONTENT-HASH: 979a1f51c50d7c78
+Mode: delta
+Round: 1
 
 ## Blocking
 (none)
 
+## Fixed
+(none)
+
 ## Polish
-- [Minor] L3-02 — put the 30 keV assumption first, drop the contradictory 20 keV.
-- [Minor] L2-02 — photon rate as words in the task but $\tfrac{1}{\text{s}}$ in the solution; align.
-- [Minor] L1-01 solution exponent 6,8 cm / 3,4 cm renders small; write the ratio first.
+- [Minor] None beyond the carried findings of the earlier exercises.
 
 ## Checked
-- Set unchanged since the previous PASS (same hash); earlier captures and findings carried.
-- Hash at start and end: 1b0ae72e68f858d4.
+- Screenshot of L3-04 opened: table with decimal comma and upright units, solution sections (Annettu, Kysytty, Periaate, Kaava, Sijoitus) read well and nothing is clipped.
+- Decimal comma {,} in all LaTeX, as in the Finnish; units with a thin space.
+- Table headers and captions are in Finnish (fi-easy), no English left.
+- Hash at start and end: 979a1f51c50d7c78.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 4 · accessibility 4
+illustrations n/a · typography 4 · Finnish 5 · accessibility 4

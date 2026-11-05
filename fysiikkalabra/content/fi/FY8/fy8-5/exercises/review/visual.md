@@ -1,20 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 1c8a634f4609ffc4
-
+CONTENT-HASH: 60d9e9328cf45092
+Round: 3
 ## Blocking
-(none)
+(none) Round 1 Blocking resolved: the L2-05 (5-13) class ranges now read "0,00–0,05" … "0,25–0,30" with a decimal comma in all six rows, matching the task text and solution.
 
 ## Polish
-- [Minor] exercises.json L1-02 — the line breaks between "$2\text{s}$" and "-elektroni" ("2s / -elektroni") — bind them, e.g. rephrase to "$2\text{s}$-tilan elektroni" or keep the suffix in the same inline unit.
-- [Minor] solutions.md L3-01 Muunnokset — "$1\,\text{J} = \tfrac{1}{1{,}602 \cdot 10^{-19}}\,\text{eV}$" is set small inline and hard to read; give it as its own chain or write $1\,\text{J} = 1 : (1{,}602 \cdot 10^{-19})\,\text{eV}$.
-- [Minor] solutions.md L2-01 vs L3-01 — $hc$ is $1{,}9865 \cdot 10^{-25}$ here but $1{,}98647 \cdot 10^{-25}$ in the lesson example; harmless as an intermediate value, but one precision across the chapter would read more consistently.
+- [Minor] solutions.md L3-05 Annettu — the long constants line wraps between constants at 1280 px (no longer inside "h ="); acceptable.
+- [Minor] solutions.md L2-06 (5-14) Vastaus — the answer box value (120 Hz) is stated first, then a)–c); fine, but "kaksi merkitsevää numeroa" could sit after b) where the 120 Hz appears.
+- [Minor] exercises.json L2-06 (5-14) — the figure labels "0 solmua / 1 solmu / 2 solmua" already give the a)-count away; harmless now that a) asks only for λ.
 
 ## Checked
-- Exercise set has no figures; all judgement from captures (1280 px; the 360 px layout comes from check_layout, no phone capture of the exercises exists).
-- Opened: open-exercises-1280-1, -2, -4 (level 1: tasks 1, 2, 4, 5, solutions open); open-exercises-L2-1280-1, -3 (tasks 1, 2, 3); open-exercises-L3-1280-1, -4 (tasks 1, 3).
-- Read all of exercises.json and solutions.md: quantities with units are inline LaTeX, case endings after maths correct ("$90\,\%$:n"), colon for division ($8000 : 20$), decimal comma, \cdot, aligned chains split into rows with = in one column, opened solutions stay inside their cards.
-- Task texts read as situation then question; one instructional voice; Annettu/Kysytty/Periaate/Kaava/Muunnokset/Sijoitus/Vastaus/Järkevyys order kept.
-- Not opened: L1-1280-3, -5; L2-1280-2, -4, -5; L3-1280-2, -3.
+- Round 1 Polish carried: L2-05 Vastaus now split into a)/b)/c) lines (opened open-exercises-L2-1280-5, -6: table with comma, solution readable).
+- Opened at 1280 px: open-exercises-L2-1280-7 (5-14 changed task text, figure fy8-5/string, node labels, answer box Hz), open-exercises-L3-1280-8 (L3-05 with NIST source line, constants).
+- Read the diff against 8041d06bb: MC option order changed, L2-06 now asks λ and f for all three states (40/80/120 Hz recomputed, match), spectrum and L3-05 task texts split into paragraphs, L3-05 source (NIST) added. All numbers match answers.
+- No 360 px exercise capture exists; layout check at 360 px is clean per packet.
+- Delta (boxed value added to the Vastaus first line of L2-05): 72,3 % is correct (72,25 % in the solution and exercises.json within tolerance), LaTeX number+unit and decimal comma right; the line is short and reads well.
 
 ## Scores
-illustrations n/a (5) · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

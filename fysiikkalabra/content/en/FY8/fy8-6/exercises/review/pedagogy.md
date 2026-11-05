@@ -1,13 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: ab442a1660bb0c08
+CONTENT-HASH: 77bc3f44f036f2d7
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
+
 ## Blocking
 (none)
+
+## Fixed
+- solutions.md L2-06 Answer: reworded "the electrons need, in addition to the threshold, voltage to increase the current" to "need extra voltage, on top of the threshold, to make the current larger" (clearer English; numbers unchanged).
+
 ## Polish
-- solutions.md Reasonableness lines — division written with a colon (`1240 eV nm : 605 nm`); use `/` or `\dfrac{}`.
-- exercises.json fy8-6-L3-02 — demand is level 2 (one subtraction, one multiplication); add a step, e.g. let the student find both bounding slopes.
-- Set lacks a (U, I) to U_k task and a spectra comparison task; L3-03 repeats L2-03; swap one.
-- solutions.md L1-04 — red photons "about 1.8 eV"; lesson uses about 1.9 eV.
-- solutions.md L3-01 — add a manual two-point check before the fit values.
+- solutions.md Reasonableness lines and L2-05 hint: division written with a colon as in fi (`(6.568 - 6.626) : 6.626`); formula parity with fi, so left; consider `/` in all languages.
+- solutions.md L2-06 Answer, last sentence: "the remaining difference of the extension of the line disappears from the slope" is a literal rendering of the fi and hard to follow; reword in fi and en together.
+
 ## Checked
-- Delta: no change since the approved version; hash identical at start and end.
-- Levels 5/4/3, answers correct, solutions staged with principles.
+- Level structure, task order, solution staging (Find/Principle/Formula/Substitution/Answer/Reasonableness) and the multi-part demands of L2-05..07 and L3-04..05 are identical to the reviewed fi.
+- Task text is natural and unambiguous; the final "write in the box" line names quantity and unit in every multi-part task.
+- No Finnish left in en (grep for äöå and common Finnish words).
+- fi-easy: short sentences, one idea each, terms (kynnysjännite, energia-aukko) as in the glossary.
+- Misconception feedback of L1-06 and the error analysis of L2-06 keep the same pedagogical point as fi.

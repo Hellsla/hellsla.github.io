@@ -1,0 +1,1459 @@
+{
+  "intro": "Parts II and III of the practice exam: choose four problems from Part II and two from Part III. Solve them on your own first, and then assess your answers with the model answer and the marking scheme.",
+  "tasks": [
+    {
+      "id": "fy9-harjoituskoe-s1",
+      "title": "Part II: Sauna stove and steam",
+      "source": "example",
+      "source_note": "The numbers have been chosen to be realistic, but they are not a measurement.",
+      "text": "The sauna of a summer cottage has an electric stove with a power of $6.0\\,\\text{kW}$. The stove holds $25\\,\\text{kg}$ of sauna stones, whose specific heat capacity is $0.80\\,\\tfrac{\\text{kJ}}{\\text{kg} \\cdot \\text{K}}$. The stove is on for $50\\,\\text{min}$ before bathing, and during that time the temperature of the stones rises from $15\\,{}^\\circ\\text{C}$ to $280\\,{}^\\circ\\text{C}$.\n\nDuring bathing ten ladlefuls, in total $1.2\\,\\text{l}$ of water at $18\\,{}^\\circ\\text{C}$, are thrown onto the stove. The water evaporates completely on the hot stones. Assume that the steam is at $100\\,{}^\\circ\\text{C}$ when it forms and that all the energy needed for the evaporation comes from the stones. The specific heat capacity of water is $4.19\\,\\tfrac{\\text{kJ}}{\\text{kg} \\cdot \\text{K}}$ and its specific latent heat of vaporisation is $2260\\,\\tfrac{\\text{kJ}}{\\text{kg}}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "How much energy is stored in the stones during the preheating?",
+          "answer": {
+            "value": 5.3,
+            "unit": "MJ",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$Q = cm\\Delta T$; the phase does not change."
+            },
+            {
+              "key": "calculation",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$Q \\approx 5.3\\,\\text{MJ}$, two significant figures like the specific heat capacity."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "What fraction of the electrical energy the stove uses during the preheating is in the stones at the end?",
+          "answer": {
+            "value": 29.4,
+            "unit": "%",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$E = Pt$ and the fraction $\\tfrac{Q}{E}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$t = 50 \\cdot 60\\,\\text{s}$; $E = 18\\,\\text{MJ} = 5.0\\,\\text{kWh}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "The fraction is about $29\\,\\%$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 3,
+          "text": "Having seen the result of part b, a neighbour says: “So the efficiency of the stove is only about $30\\,\\%$, which means it is a poor appliance.” Assess the claim.",
+          "criteria": [
+            {
+              "text": "In an electric resistor practically all the electrical energy becomes internal energy; besides the stones, the air, the benches and the walls warm up.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Efficiency depends on what is counted as useful: in heating a sauna, the warming of the air and the walls is also useful."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The claim does not hold: $29\\,\\%$ is the fraction stored in the stones, not the efficiency of the stove. The only waste is what leaks out through the walls and the ventilation."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 3,
+          "text": "How much energy is transferred from the stones to the water when all ten ladlefuls evaporate?",
+          "answer": {
+            "value": 3.12,
+            "unit": "MJ",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "The energy covers both the heating of the water to $100\\,{}^\\circ\\text{C}$ and the evaporation: $Q = cm\\Delta T + rm$.",
+              "tag": "transfer",
+              "points": 2
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$1.2\\,\\text{l}$ of water is $1.2\\,\\text{kg}$; $Q \\approx 3.1\\,\\text{MJ}$."
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "word",
+          "points": 3,
+          "text": "After water is thrown on the stove, the skin feels as if it were burning, even though the air temperature in the sauna hardly rises. Explain this.",
+          "criteria": [
+            {
+              "text": "The steam condenses into water on the cooler skin, whose temperature is about $35$–$40\\,{}^\\circ\\text{C}$.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Condensation releases energy equal to the latent heat of vaporisation, and it is transferred to the skin.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The skin receives a lot of energy in a short time, although the air temperature hardly changes, so it feels as if it were burning."
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy3-6",
+        "fy3-7",
+        "fy2-4",
+        "fy6-7"
+      ],
+      "links": {
+        "math": "fy3-6",
+        "concept": "fy3-7",
+        "transfer": "fy3-7",
+        "communication": "fy2-4"
+      }
+    },
+    {
+      "id": "fy9-harjoituskoe-s2",
+      "title": "Part II: A box on a trailer",
+      "source": "example",
+      "source_note": "The numbers have been chosen to be realistic, but they are not a measurement.",
+      "text": "A car pulls a trailer on a country road at a speed of $80\\,\\text{km/h}$. On the horizontal bed of the trailer there is a wooden toolbox that has not been tied down. The coefficient of static friction between the box and the bed is $0.45$. The driver has to brake uniformly to a stop. Air resistance is neglected in the motion of the box.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 4,
+          "text": "Draw the free-body diagram of the box during the braking, when the box stays at rest relative to the bed. Name the forces and justify their directions.",
+          "criteria": [
+            {
+              "key": "fbd_object",
+              "points": 1,
+              "detail": "The body is the box, and the forces are drawn on it."
+            },
+            {
+              "key": "fbd_forces",
+              "points": 1,
+              "detail": "Weight $\\overline{G}$, normal force $\\overline{N}$ and static friction $\\overline{F}_{\\mu 0}$; no forward “force of motion”."
+            },
+            {
+              "key": "fbd_directions",
+              "points": 1,
+              "detail": "Static friction points backwards, because the box slows down together with the trailer."
+            },
+            {
+              "key": "fbd_representation",
+              "points": 1,
+              "detail": "Weight and normal force of equal length; the backward acceleration marked separately."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "What is the greatest deceleration the trailer may have so that the box does not start to slide on the bed?",
+          "answer": {
+            "value": 4.41,
+            "unit": "m/s²",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 2,
+              "detail": "$F_{\\mu 0} = ma$ and $F_{\\mu 0} \\le \\mu_0 N = \\mu_0 mg$, so $a_\\text{max} = \\mu_0 g$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$a_\\text{max} \\approx 4.4\\,\\text{m/s}^2$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "What is the shortest braking distance for which the box stays at rest throughout the braking?",
+          "answer": {
+            "value": 55.9,
+            "unit": "m",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Uniformly decelerated motion: $v_0^2 = 2as$, so $s = \\dfrac{v_0^2}{2a}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$80\\,\\text{km/h} = \\tfrac{80}{3.6}\\,\\text{m/s} = 22.2\\,\\text{m/s}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "About $56\\,\\text{m}$; dry asphalt would allow the car a clearly shorter braking distance."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 4,
+          "text": "The driver suggests loading more tools into the box so that it would be heavier and stay in place better. Assess the suggestion on the basis of physics.",
+          "criteria": [
+            {
+              "text": "The maximum static friction $\\mu_0 mg$ increases with the mass, but the force $ma$ needed to slow the box down increases in the same proportion.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The mass cancels: $a_\\text{max} = \\mu_0 g$ does not depend on the mass, so extra weight does not help."
+            },
+            {
+              "text": "Suggests a method that works: the box is tied down, or a non-slip mat that increases the coefficient of friction is put on the bed.",
+              "tag": "transfer",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy4-5",
+        "fy4-6",
+        "fy4-2",
+        "fy4-4"
+      ],
+      "links": {
+        "concept": "fy4-5",
+        "communication": "fy4-5",
+        "math": "fy4-2",
+        "transfer": "fy4-6"
+      }
+    },
+    {
+      "id": "fy9-harjoituskoe-s3",
+      "title": "Part II: An organ in a cold church",
+      "source": "example",
+      "source_note": "The speeds of sound are table values for dry air; the other numbers have been chosen to be realistic.",
+      "text": "One pipe of a church organ is a metal tube open at both ends. The sounding length of the pipe is $1.31\\,\\text{m}$. In winter the church is heated only for services, and on weekdays the indoor temperature is $8\\,{}^\\circ\\text{C}$. The organist notices that the organ then sounds lower than in a warm church.\n\n| Air temperature | Speed of sound in air |\n|---|---|\n| $0\\,{}^\\circ\\text{C}$ | $331.3\\,\\text{m/s}$ |\n| $8\\,{}^\\circ\\text{C}$ | $336.1\\,\\text{m/s}$ |\n| $20\\,{}^\\circ\\text{C}$ | $343.2\\,\\text{m/s}$ |\n\nThe coefficient of linear thermal expansion of the metal of the pipe is $2.3 \\cdot 10^{-5}\\,\\tfrac{1}{\\text{K}}$. The effect of the ends of the pipe on the length of the standing wave is neglected.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "What is the fundamental frequency of the pipe when the air temperature in the church is $20\\,{}^\\circ\\text{C}$?",
+          "answer": {
+            "value": 131.0,
+            "unit": "Hz",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "An open pipe has an antinode at both ends, so in the fundamental mode the length of the pipe is half a wavelength.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$f_1 = \\dfrac{v}{2L}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$f_1 \\approx 131\\,\\text{Hz}$."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "What is the fundamental frequency at the church temperature of $8\\,{}^\\circ\\text{C}$, and by what percentage has it changed?",
+          "answer": {
+            "value": 128.3,
+            "unit": "Hz",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "The length of the pipe stays (almost) the same, so the frequency changes in the same proportion as the speed of sound.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "$f_1 \\approx 128\\,\\text{Hz}$; the change is about $-2.1\\,\\%$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "By how much does the length of the pipe change when the church cools from $20\\,{}^\\circ\\text{C}$ to $8\\,{}^\\circ\\text{C}$? Compare the effect of this change on the frequency with the change in part b.",
+          "answer": {
+            "value": 0.36,
+            "unit": "mm",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\Delta L = \\alpha L_0 \\Delta T$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$|\\Delta L| \\approx 0.36\\,\\text{mm}$, a relative change of $0.028\\,\\%$."
+            },
+            {
+              "text": "The shortening pipe would raise the frequency by only about $0.03\\,\\%$, while the cooling of the air lowers it by about $2\\,\\%$.",
+              "tag": "communication",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The organ sounds lower because of the air, not because the metal contracts."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 4,
+          "text": "The organ builder closes the upper end of another pipe of the same length with a stopper. How does the note of the stopped pipe differ from that of the open pipe? Justify your answer with the standing wave.",
+          "criteria": [
+            {
+              "text": "At the closed end there is a node and at the open end an antinode, so in the fundamental mode the length is a quarter of a wavelength.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$f_1 = \\dfrac{v}{4L} \\approx 65.5\\,\\text{Hz}$, half the frequency of the open pipe: the note is an octave lower."
+            },
+            {
+              "text": "In a stopped pipe only the odd multiples $3f_1, 5f_1, \\ldots$ arise.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "That is why the timbre is also different from that of an open pipe."
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy5-13",
+        "fy5-14",
+        "fy3-8"
+      ],
+      "links": {
+        "concept": "fy5-13",
+        "math": "fy3-8",
+        "transfer": "fy5-14",
+        "communication": "fy3-8"
+      }
+    },
+    {
+      "id": "fy9-harjoituskoe-s4",
+      "title": "Part II: An extension cord on a reel",
+      "source": "example",
+      "source_note": "The numbers have been chosen to be realistic, but they are not a measurement.",
+      "text": "At a summer party, electricity is taken to a barbecue shelter in the yard with a $25.0\\,\\text{m}$ extension cord whose conductors are copper with a cross-sectional area of $1.5\\,\\text{mm}^2$. The current flows to the appliance along one conductor and returns along the other. An electric grill ($1.6\\,\\text{kW}$) and a kettle ($1.8\\,\\text{kW}$) are connected to the cord; their powers are given at a voltage of $230\\,\\text{V}$. The voltage of the socket is $230\\,\\text{V}$.\n\nThe resistivity of copper is $1.68 \\cdot 10^{-8}\\,\\Omega \\cdot \\text{m}$. Calculate with the rms values of the mains voltage and current as with direct current, and assume that the resistances of the appliances do not change.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "What is the resistance of the extension cord?",
+          "answer": {
+            "value": 0.56,
+            "unit": "Ω",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "The current flows through two conductors, so the total length of the conductor is $50.0\\,\\text{m}$.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$R = \\rho \\dfrac{l}{A}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$1.5\\,\\text{mm}^2 = 1.5 \\cdot 10^{-6}\\,\\text{m}^2$; $R \\approx 0.56\\,\\Omega$."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "What is the current in the cord when both appliances are on?",
+          "answer": {
+            "value": 14.27,
+            "unit": "A",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The resistances of the appliances $R = \\tfrac{U^2}{P}$, in parallel, and the resistance of the cord in series."
+            },
+            {
+              "key": "calculation",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$I \\approx 14\\,\\text{A}$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "How much power is converted into heat in the extension cord?",
+          "answer": {
+            "value": 114.0,
+            "unit": "W",
+            "tolerance": 0.08
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$P = RI^2$"
+            },
+            {
+              "key": "calculation",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$P \\approx 110\\,\\text{W}$."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 3,
+          "text": "How large would the power converted into heat be if the cross-sectional area of the conductors of the cord were $2.5\\,\\text{mm}^2$?",
+          "answer": {
+            "value": 70.4,
+            "unit": "W",
+            "tolerance": 0.08
+          },
+          "criteria": [
+            {
+              "text": "The resistance is inversely proportional to the cross-sectional area: $R \\approx 0.34\\,\\Omega$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$P \\approx 70\\,\\text{W}$."
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "word",
+          "points": 3,
+          "text": "The extension cord was not unwound from its reel, and during the party the reel became clearly warm. Explain why a cord on a reel heats up more than one that is spread out, and why this is dangerous.",
+          "criteria": [
+            {
+              "text": "The heating power is the same, but on the reel the turns of the cord heat each other and the heat cannot be transferred to the surroundings.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "The temperature rises until as much heat is transferred away as is produced; the resistance of copper increases as it warms.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The insulation may melt and cause a short circuit or a fire, so the reel is unwound before a large load is connected."
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy6-3",
+        "fy6-4",
+        "fy6-6",
+        "fy6-15"
+      ],
+      "links": {
+        "transfer": "fy6-3",
+        "math": "fy6-6",
+        "concept": "fy6-15",
+        "communication": "fy6-15"
+      }
+    },
+    {
+      "id": "fy9-harjoituskoe-s5",
+      "title": "Part II: A light at the bottom of a swimming pool",
+      "source": "example",
+      "source_note": "The numbers have been chosen to be realistic, but they are not a measurement.",
+      "text": "At the bottom of the diving pool of a swimming hall there is a light whose round glass window has a diameter of $25.0\\,\\text{cm}$. The centre of the window is at a depth of $2.40\\,\\text{m}$. Inside the light there is air at normal atmospheric pressure. When the lights of the hall are switched off in the evening, a bright round area is seen on the water surface above the light, and outside it the surface is dark. The refractive index of water is $1.33$ and its density $1000\\,\\tfrac{\\text{kg}}{\\text{m}^3}$, and the water surface is calm.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "What is the critical angle of the boundary between water and air?",
+          "answer": {
+            "value": 48.75,
+            "unit": "°",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$n_1 \\sin\\alpha_\\text{r} = n_2 \\sin 90^\\circ$, so $\\sin\\alpha_\\text{r} = \\tfrac{n_2}{n_1}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\alpha_\\text{r} \\approx 48.8^\\circ$."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "What is the radius of the bright area on the water surface? Treat the light as a point source.",
+          "answer": {
+            "value": 2.74,
+            "unit": "m",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "At the edge of the bright area the ray meets the surface at the critical angle; rays at larger angles of incidence are totally reflected.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$r = h \\tan\\alpha_\\text{r}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$r \\approx 2.74\\,\\text{m}$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 3,
+          "text": "A diver at the bottom of the pool next to the light looks at the water surface outside the bright area. What does she see, and why?",
+          "criteria": [
+            {
+              "text": "Light that meets the surface at an angle of incidence greater than the critical angle is reflected totally back into the water (total internal reflection).",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The surface looks like a mirror: the diver sees the bottom and the walls of the pool in it, not the ceiling of the hall."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 3,
+          "text": "How much greater is the force that the water of the pool and the atmospheric pressure together exert on the window than the force of the air inside the light?",
+          "answer": {
+            "value": 1156.0,
+            "unit": "N",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The atmospheric pressure acts on both sides, so the net force comes from the hydrostatic pressure: $F = \\rho g h A$."
+            },
+            {
+              "key": "calculation",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$A = \\pi\\left(\\tfrac{d}{2}\\right)^2$; $F \\approx 1.16\\,\\text{kN}$."
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "word",
+          "points": 2,
+          "text": "Seen from the edge of the pool, the light seems to be nearer the surface than at a depth of $2.40\\,\\text{m}$. Explain why.",
+          "criteria": [
+            {
+              "text": "The rays from the light are refracted away from the normal of the surface as they pass from water into air.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The eye extends the refracted rays straight backwards, and they seem to come from a shallower point."
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy7-10",
+        "fy7-12",
+        "fy3-4"
+      ],
+      "links": {
+        "math": "fy7-12",
+        "concept": "fy7-12",
+        "communication": "fy7-10"
+      }
+    },
+    {
+      "id": "fy9-harjoituskoe-s6",
+      "title": "Part II: A dugout canoe raised from a lake bed",
+      "source": "example",
+      "source_note": "The carbon-14 activity of living wood and the half-life are literature values; the measurement of the canoe is invented.",
+      "text": "Divers found on the bottom of a lake a wooden canoe hollowed out of a single tree trunk. The carbon-14 activity of a sample taken from the canoe was measured as $0.198\\,\\tfrac{\\text{Bq}}{\\text{g}}$, that is $0.198$ decays per second per gram of carbon. The uncertainty of the measurement is $\\pm 0.004\\,\\tfrac{\\text{Bq}}{\\text{g}}$.\n\nIn living wood the carbon-14 activity is $0.226\\,\\tfrac{\\text{Bq}}{\\text{g}}$, because a tree continuously takes in new carbon dioxide from the air. When the tree is felled, no new carbon-14 comes in. The half-life of carbon-14 is $5730$ years.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 3,
+          "text": "Carbon-14 undergoes beta decay. Write the equation of the decay and explain what happens in the nucleus.",
+          "criteria": [
+            {
+              "text": "$^{14}_{6}\\text{C} \\to {}^{14}_{7}\\text{N} + {}^{\\phantom{-}0}_{-1}\\text{e} + \\overline{\\nu}_\\text{e}$; the daughter nucleus is nitrogen.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "The mass number and the charge number are conserved: $14 = 14 + 0$ and $6 = 7 - 1$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "text": "In the nucleus a neutron changes into a proton, and the nucleus emits an electron and an antineutrino.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "How old is the canoe?",
+          "answer": {
+            "value": 1093.0,
+            "unit": "a",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$A = A_0 \\left(\\tfrac{1}{2}\\right)^{t/T_{1/2}}$"
+            },
+            {
+              "text": "Solves for the time with a logarithm: $t = T_{1/2} \\cdot \\dfrac{\\ln(A_0 / A)}{\\ln 2}$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$t \\approx 1.09 \\cdot 10^3$ years."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Estimate how large an uncertainty in the age results from the measurement uncertainty of the activity.",
+          "answer": {
+            "value": 167.0,
+            "unit": "a",
+            "tolerance": 0.06
+          },
+          "criteria": [
+            {
+              "key": "uncertainty",
+              "points": 2,
+              "detail": "The age is calculated with the extreme values $0.194$ and $0.202\\,\\tfrac{\\text{Bq}}{\\text{g}}$: about $930$ and $1260$ years."
+            },
+            {
+              "key": "calculation",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Age $(1.09 \\pm 0.17) \\cdot 10^3$ years; the uncertainty to one or two significant figures."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 4,
+          "text": "A museum researcher says that the same method is not suitable for dating wood that is $200\\,000$ years old, nor wood from a tree felled ten years ago. Justify why.",
+          "criteria": [
+            {
+              "text": "In $200\\,000$ years about $35$ half-lives pass, and only about $3 \\cdot 10^{-11}$ of the original nuclei remain: the activity cannot be distinguished from the background radiation.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "text": "In ten years the activity decreases by only about $0.1\\,\\%$, which is much less than the measurement uncertainty of $2\\,\\%$.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The method works when the age is from hundreds of years to a few tens of thousands of years."
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy8-8",
+        "fy8-9",
+        "fy1-3"
+      ],
+      "links": {
+        "concept": "fy8-8",
+        "math": "fy8-9",
+        "experiment": "fy1-3",
+        "communication": "fy8-9"
+      }
+    },
+    {
+      "id": "fy9-harjoituskoe-s7",
+      "title": "Part II: The temperature of a squash ball",
+      "source": "example",
+      "source_note": "The numbers have been chosen to be realistic, but they are not a measurement.",
+      "text": "Squash players hit the ball before a match to warm it up, because a cold ball bounces poorly. A student wants to find out experimentally how the temperature of the ball affects its bounce height. Available are a squash ball, a water bath whose temperature can be adjusted, a freezer, an infrared thermometer, a tape measure, a phone camera, a stand and paper towels.\n\nIn a preliminary test a ball at room temperature was dropped from rest from a height of $1.50\\,\\text{m}$ onto a concrete floor, and it bounced to a height of $0.36\\,\\text{m}$. The heights were measured from the bottom of the ball.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 6,
+          "text": "Plan the experiment. State the research question, the variables and the quantities kept constant, how the temperature of the ball is set and measured, how the bounce height is measured and how the results are processed.",
+          "criteria": [
+            {
+              "text": "Research question and variables: the temperature is the independent variable and the bounce height (or the ratio $\\tfrac{h_2}{h_1}$) the dependent one.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "Kept constant: the drop height, the same ball, the same surface and a drop from rest.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "The temperature is set in the bath or the freezer, the ball is dried and its surface temperature is measured just before the drop, because the ball cools or warms quickly.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "The bounce height is read from a video against the tape measure, with the camera at the level of the bounce height.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "At least five temperatures over a wide range, for example $0$–$50\\,{}^\\circ\\text{C}$, with repeats at each.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The results are presented as a graph of bounce height as a function of temperature, and the conclusion is drawn from the shape of the graph."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "What percentage of the mechanical energy of the ball is converted into other forms of energy in the bounce of the preliminary test?",
+          "answer": {
+            "value": 76.0,
+            "unit": "%",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "At the highest points the ball is momentarily at rest: $E = mgh$, so the fraction is $1 - \\tfrac{h_2}{h_1}$; the mass cancels."
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Air resistance is small over a short distance."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "About $76\\,\\%$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "What is the speed of the ball just after the bounce in the preliminary test?",
+          "answer": {
+            "value": 2.66,
+            "unit": "m/s",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\tfrac{1}{2}mv^2 = mgh_2$, so $v = \\sqrt{2gh_2}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v \\approx 2.7\\,\\text{m/s}$, two significant figures."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "The video is filmed at $30$ frames per second. Estimate how precisely the bounce height can be read from the video, and give two ways to improve the measurement.",
+          "criteria": [
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "At the highest point the ball moves slowly: only a few millimetres between frames, so the peak is found to a precision of about $1\\,\\text{cm}$."
+            },
+            {
+              "key": "error_sources",
+              "points": 1,
+              "detail": "Parallax error: if the camera is not at the level of the peak, the reading is wrong."
+            },
+            {
+              "text": "Improvements: the camera at the height of the peak and further away, the tape measure behind the ball, several repeats and a mean.",
+              "tag": "experiment",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy1-8",
+        "fy4-8",
+        "fy1-3"
+      ],
+      "links": {
+        "experiment": "fy1-8",
+        "communication": "fy1-8",
+        "math": "fy4-8",
+        "transfer": "fy4-8"
+      }
+    },
+    {
+      "id": "fy9-harjoituskoe-s8",
+      "title": "Part III: Falling coffee filters",
+      "source": "example",
+      "source_note": "The data contain measurement-like scatter, but they are not a measurement.",
+      "text": "A group studied how air resistance depends on speed. Stacks of nested coffee filter papers were dropped from rest from a height of $2.5\\,\\text{m}$, and the fall was filmed. According to the video analysis, the stack reached a constant speed before the last metre, and the constant speed was determined during the last metre. The mass of one filter paper is $1.20\\,\\text{g}$. The shape of the stack does not change when filters are added.\n\n| Filters in the stack $N$ | Constant speed $v\\ (\\text{m/s})$ |\n|---|---|\n| $1$ | $1.06$ |\n| $2$ | $1.45$ |\n| $3$ | $1.84$ |\n| $4$ | $2.08$ |\n| $5$ | $2.39$ |\n| $6$ | $2.54$ |\n\nTwo models were proposed in the group. Aino: “Air resistance is directly proportional to the speed.” Eetu: “Air resistance is directly proportional to the square of the speed.”",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 4,
+          "text": "Explain with a free-body diagram why the stack of filters finally falls at a constant speed.",
+          "criteria": [
+            {
+              "key": "fbd_forces",
+              "points": 1,
+              "detail": "The forces on the stack are the weight $\\overline{G}$ down and the air resistance $\\overline{F}_\\text{v}$ up."
+            },
+            {
+              "text": "At first the speed and the air resistance are small, so the net force and the acceleration point down and the speed increases.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "The air resistance increases as the speed increases, until it is equal to the weight.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Then the net force is zero, the acceleration is zero and the speed stays constant (Newton's first law)."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 2,
+          "text": "What is the air resistance when a stack of four filters falls at constant speed?",
+          "answer": {
+            "value": 47.1,
+            "unit": "mN",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "At constant speed $F_\\text{v} = G = Nmg$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$F_\\text{v} \\approx 47.1\\,\\text{mN}$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "graph",
+          "points": 7,
+          "text": "Draw a graph of the data from which you can conclude which model describes the measurements better. Justify your choice.",
+          "criteria": [
+            {
+              "text": "Calculates for each stack the air resistance $F_\\text{v} = Nmg$ and the square of the speed $v^2$.",
+              "tag": "graph",
+              "points": 1
+            },
+            {
+              "key": "graph_axes",
+              "points": 1,
+              "detail": "$F_\\text{v}$ on the vertical axis, $v^2$ (or $v$) on the horizontal axis, units."
+            },
+            {
+              "key": "graph_points",
+              "points": 1
+            },
+            {
+              "key": "graph_fit",
+              "points": 1,
+              "detail": "A line through the origin, because the air resistance is zero at rest."
+            },
+            {
+              "text": "Compares the models: the $(v, F_\\text{v})$ points curve upwards, and a line fitted to them crosses the speed axis at about $0.8\\,\\text{m/s}$; the $(v^2, F_\\text{v})$ points lie on a line through the origin.",
+              "tag": "graph",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Eetu's model describes the measurements better."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 4,
+          "text": "Determine from the graph of part c the proportionality constant $k$ of the model you chose.",
+          "answer": {
+            "value": 0.0107,
+            "unit": "kg/m",
+            "tolerance": 0.04
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 2,
+              "detail": "The slope is read from the line at two points far apart."
+            },
+            {
+              "key": "calculation",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$k \\approx 0.0107\\,\\tfrac{\\text{kg}}{\\text{m}}$, that is $\\tfrac{\\text{N} \\cdot \\text{s}^2}{\\text{m}^2}$."
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "calc",
+          "points": 3,
+          "text": "Predict the constant speed of the stack when it has ten filters. Assess how reliable the prediction is in the same experimental setup.",
+          "answer": {
+            "value": 3.32,
+            "unit": "m/s",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$v = \\sqrt{\\tfrac{10mg}{k}} \\approx 3.3\\,\\text{m/s}$."
+            },
+            {
+              "text": "The prediction is an extrapolation outside the measured range ($v \\le 2.54\\,\\text{m/s}$).",
+              "tag": "graph",
+              "points": 1
+            },
+            {
+              "text": "A heavier stack needs a longer distance to reach its terminal speed, so a drop of $2.5\\,\\text{m}$ may not be enough.",
+              "tag": "experiment",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy4-14",
+        "fy4-5",
+        "fy1-4"
+      ],
+      "links": {
+        "concept": "fy4-14",
+        "graph": "fy1-4",
+        "math": "fy4-14",
+        "experiment": "fy1-4",
+        "communication": "fy4-5"
+      }
+    },
+    {
+      "id": "fy9-harjoituskoe-s9",
+      "title": "Part III: A deep geothermal well",
+      "source": "example",
+      "source_note": "The press release, the company and the measurements are invented; the rise of the bedrock temperature with depth is of a magnitude typical of Finland.",
+      "text": "The energy company of a city is planning a deep geothermal heating plant. An extract from the company's press release:\n\n> Inside the Earth there is a huge store of heat. The heat of the bedrock comes largely from the radioactive decay of uranium, thorium and potassium-40 in the rock. The pair of wells to be drilled will be $6.0$ kilometres deep, and at the bottom of the well the temperature of the rock is over $120\\,{}^\\circ\\text{C}$. Water is pumped down one well, it heats up in the rock and rises up the other well. The plant will deliver $10\\,\\text{MW}$ of heating power to the district heating network.\n\nThe temperature of the rock was measured at different depths in the company's test well:\n\n| Depth $z\\ (\\text{km})$ | Temperature $T\\ ({}^\\circ\\text{C})$ |\n|---|---|\n| $0.5$ | $15.4$ |\n| $1.0$ | $23.3$ |\n| $1.5$ | $32.5$ |\n| $2.0$ | $41.3$ |\n| $2.5$ | $49.2$ |\n| $3.0$ | $58.0$ |\n\nAccording to the plan, $30.0\\,\\text{kg}$ of water per second is pumped into the well. The water returns from the district heating network at $40\\,{}^\\circ\\text{C}$ and rises from the other well at $90\\,{}^\\circ\\text{C}$. The water stays liquid in the well because of the high pressure.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 6,
+          "text": "Present the measurements as a graph and fit a model to them.",
+          "criteria": [
+            {
+              "key": "graph_axes",
+              "points": 1,
+              "detail": "Depth $z$ (km) on the horizontal axis, temperature $T$ (°C) on the vertical axis."
+            },
+            {
+              "key": "graph_points",
+              "points": 1
+            },
+            {
+              "key": "graph_fit",
+              "points": 2,
+              "detail": "The points lie almost on a line; the fitted line does not pass through the origin, because the temperature at the ground surface is not zero."
+            },
+            {
+              "text": "The line is extended on the graph as a dashed line to a depth of $6.0\\,\\text{km}$ and marked as an extrapolation.",
+              "tag": "graph",
+              "points": 1
+            },
+            {
+              "text": "The equation of the fit and the meaning of its constants (ground surface temperature about $7\\,{}^\\circ\\text{C}$) are stated.",
+              "tag": "communication",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Determine by how many degrees the temperature of the rock rises per kilometre.",
+          "answer": {
+            "value": 17.1,
+            "unit": "°C/km",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 2,
+              "detail": "The slope is read from the fitted line at two points far apart."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "About $17.1\\,\\tfrac{{}^\\circ\\text{C}}{\\text{km}}$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "Estimate with the model the temperature of the rock at a depth of $6.0\\,\\text{km}$.",
+          "answer": {
+            "value": 109.4,
+            "unit": "°C",
+            "tolerance": 0.04
+          },
+          "criteria": [
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$T = 6.7\\,{}^\\circ\\text{C} + 17.1\\,\\tfrac{{}^\\circ\\text{C}}{\\text{km}} \\cdot 6.0\\,\\text{km}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "About $110\\,{}^\\circ\\text{C}$."
+            },
+            {
+              "text": "States that the estimate assumes the temperature rises at the same rate also in the unmeasured range $3$–$6\\,\\text{km}$.",
+              "tag": "graph",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 3,
+          "text": "How much heating power does the plant deliver to the district heating network with the planned water flow?",
+          "answer": {
+            "value": 6.29,
+            "unit": "MW",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Every second $30.0\\,\\text{kg}$ of water warms by $50\\,\\text{K}$, so the power is $P = \\tfrac{Q}{t} = c \\cdot \\tfrac{m}{t} \\cdot \\Delta T$.",
+              "tag": "transfer",
+              "points": 2
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$P \\approx 6.29\\,\\text{MW}$."
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "word",
+          "points": 3,
+          "text": "Assess the claims of the press release about the temperature at the bottom of the well and the heating power of the plant on the basis of the measurements and your calculations.",
+          "criteria": [
+            {
+              "text": "Temperature: about $110\\,{}^\\circ\\text{C}$ according to the model, so “over $120\\,{}^\\circ\\text{C}$” would require the temperature to rise faster deeper down than in the test well.",
+              "tag": "communication",
+              "points": 1
+            },
+            {
+              "text": "Power: $10\\,\\text{MW}$ would require, with the same temperature rise, a water flow of about $48\\,\\text{kg/s}$ or a larger temperature difference.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Neither claim follows from the given data; the claims are too optimistic unless there is other information from deeper down."
+            }
+          ]
+        },
+        {
+          "id": "f",
+          "kind": "word",
+          "points": 2,
+          "text": "According to the press release, the heat of the bedrock comes from radioactive decay. Explain how decay heats the rock.",
+          "criteria": [
+            {
+              "text": "Decay releases energy, which is the kinetic energy of particles and radiation.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "The particles and the gamma radiation give their energy to the surrounding rock, whose internal energy and temperature increase.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy1-4",
+        "fy3-6",
+        "fy8-8",
+        "fy2-6"
+      ],
+      "links": {
+        "graph": "fy1-4",
+        "math": "fy1-4",
+        "transfer": "fy3-6",
+        "communication": "fy2-6",
+        "concept": "fy8-8"
+      }
+    },
+    {
+      "id": "fy9-harjoituskoe-s10",
+      "title": "Part III: A spring and its own mass",
+      "source": "example",
+      "source_note": "The data contain measurement-like scatter, but they are not a measurement.",
+      "text": "Students hung a coil spring on a stand and attached masses to its lower end. With each mass the spring was set oscillating vertically with a small amplitude, and the duration $t_{10}$ of ten oscillations was measured. The mass of the spring itself is $61\\,\\text{g}$.\n\n| Mass $m\\ (\\text{kg})$ | $t_{10}\\ (\\text{s})$ |\n|---|---|\n| $0.100$ | $4.37$ |\n| $0.200$ | $5.86$ |\n| $0.300$ | $7.13$ |\n| $0.400$ | $8.19$ |\n| $0.500$ | $9.03$ |\n| $0.600$ | $9.90$ |\n\nThey also measured that when a $0.300\\,\\text{kg}$ mass is hung on the spring, the spring at rest is $11.8\\,\\text{cm}$ longer than without the mass.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 7,
+          "text": "From the data, draw a graph whose points lie on a straight line, and fit a line to them. Justify why you chose these quantities for the axes.",
+          "criteria": [
+            {
+              "text": "Chooses $m$ and $T^2$ for the axes and justifies the choice with the period of a mass–spring oscillator $T = 2\\pi\\sqrt{\\tfrac{m}{k}}$, from which $T^2$ is proportional to the mass.",
+              "tag": "transfer",
+              "points": 2
+            },
+            {
+              "text": "Calculates the periods $T = \\tfrac{t_{10}}{10}$ and their squares.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "graph_axes",
+              "points": 1
+            },
+            {
+              "key": "graph_points",
+              "points": 1
+            },
+            {
+              "key": "graph_fit",
+              "points": 2,
+              "detail": "The line is not forced through the origin, and it crosses the vertical axis slightly above the origin."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Determine the spring constant of the spring from the graph.",
+          "answer": {
+            "value": 25.0,
+            "unit": "N/m",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The slope $\\tfrac{\\Delta(T^2)}{\\Delta m}$ is read from the line."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The slope is $\\tfrac{4\\pi^2}{k}$, so $k = \\tfrac{4\\pi^2}{\\text{slope}}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$k \\approx 25.0\\,\\tfrac{\\text{N}}{\\text{m}}$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "The line does not pass through the origin. Explain the reason for this, and determine from the graph how large a part of the spring's own mass oscillates as if it moved with the mass.",
+          "answer": {
+            "value": 20.5,
+            "unit": "g",
+            "tolerance": 0.06
+          },
+          "criteria": [
+            {
+              "text": "The spring itself also moves: its lower end moves with the mass and its upper end stays still, so the oscillating mass is $m + m_\\text{j}$.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The line crosses the mass axis at $-m_\\text{j}$, that is $m_\\text{j} = \\tfrac{b}{\\text{slope}}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "$m_\\text{j} \\approx 21\\,\\text{g}$, about a third of the mass of the spring, $61\\,\\text{g}$."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 3,
+          "text": "Determine the spring constant from the extension measurement and compare it with the result of part b.",
+          "answer": {
+            "value": 24.9,
+            "unit": "N/m",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "At rest the spring force is equal to the weight: $kx = mg$, so $k = \\tfrac{mg}{x}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$k \\approx 24.9\\,\\tfrac{\\text{N}}{\\text{m}}$."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The results differ by only about $0.3\\,\\%$, so the methods support each other."
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "word",
+          "points": 2,
+          "text": "A student claims that the period doubles when the mass is doubled. Assess the claim on the basis of the data.",
+          "criteria": [
+            {
+              "text": "In the data, when the mass is doubled ($0.300\\,\\text{kg} \\to 0.600\\,\\text{kg}$), the period increases only $0.713\\,\\text{s} \\to 0.990\\,\\text{s}$, that is by a factor of about $1.39$.",
+              "tag": "graph",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The claim is wrong: the period increases with the square root of the mass, by a factor of about $\\sqrt{2} \\approx 1.41$."
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy5-9",
+        "fy5-8",
+        "fy1-4"
+      ],
+      "links": {
+        "transfer": "fy5-9",
+        "math": "fy5-9",
+        "graph": "fy1-4",
+        "concept": "fy5-8",
+        "communication": "fy5-8"
+      }
+    }
+  ]
+}

@@ -1,20 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 63fb0ff104381c6c
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: de8b276cdfca08dc
+Mode: full in the packet; scope by the teacher's ruling ("katselmoi vain muuttuneet osat"): the diff since the last PASS (`git diff f35980b22 -- content/en/FY6/fy6-12/exercises`) plus what the changed lines touch.
+Round 2 (follow-up: korjattujen käsitteiden yhdenmukaisuus)
 
 ## Blocking
 (none)
 
-## Fixed
-(none needed: the text already matched fi and was natural)
-
 ## Polish
-(none)
+- exercises.json:72 — the L1-06 stem names no plates, so "at the negative plate" refers to plates the task never shows — optional: "at the negative plate that produces the field"; physics is right as it stands.
 
 ## Checked
-- Compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags, choices, feedback, data table cells and every number in exercises.json and solutions.md. All 8 new tasks (L1-06..08, L2-05..07, L3-04..05) and the older ones are identical; solutions.md has 895 numbers each, equal in order.
-- Decimal point in en JSON and LaTeX; no {,} or decimal commas left; no Finnish characters left in en.
-- Re-derived L1-08 900 eV, L2-04 284 V, L2-05 30.1 V, L2-07 6.66e-27 kg (He+), L3-04 2.78 mm, L3-05 4.14e6 m/s; all agree with fi.
-- L1-06, L1-07, L2-06: exactly one correct option; distractor feedback keeps the same error type as fi.
-- check_i18n.py en: 0 errors.
+- Diff is five lines: `core: true` on L1-04, L1-06, L1-08, L2-03 and one feedback sentence in L1-06; no number, answer, unit, tolerance or correct flag changed.
+- L1-06 feedback: "V = Ex, when the zero of potential is at the negative plate and x is the distance from it" matches the fi change and the lesson's convention; sign agrees with the correct option.
+- Same core marks as fi (L1-04, L1-06, L1-08, L2-03).
+- Hash de8b276cdfca08dc at start and end, equal to the packet's.

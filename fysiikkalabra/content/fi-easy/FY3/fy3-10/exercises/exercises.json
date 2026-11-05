@@ -3,6 +3,7 @@
     {
       "id": "fy3-10-L1-01",
       "level": 1,
+      "core": true,
       "text": "Jääkaapin sisätilan tilavuus on $0{,}250\\,\\text{m}^3$. Ovi on ollut kiinni pitkään. Silloin kaapissa olevan ilman lämpötila on $278\\,\\text{K}$ ja paine $1{,}01 \\cdot 10^5\\,\\text{Pa}$. Kuinka monta moolia ilmaa jääkaapissa on? Käytä arvoa $R = 8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$.",
       "answer": 10.9,
       "unit": "mol",
@@ -43,6 +44,7 @@
     {
       "id": "fy3-10-L1-06",
       "level": 1,
+      "core": true,
       "text": "Mitä ainemäärä $n$ kuvaa ideaalikaasun tilanyhtälössä $pV = nRT$?",
       "kind": [
         "concept"
@@ -117,7 +119,8 @@
     {
       "id": "fy3-10-L2-01",
       "level": 2,
-      "text": "Ensihoitoauton happipullon painemittari on rikki. Pullon tilavuus on $10{,}0\\,\\textsf{l}$. Punnitsemalla selviää, että pullossa on $2{,}40\\,\\text{kg}$ happea. Autotallissa lämpötila on $15\\,{}^\\circ\\text{C}$. Mikä on hapen paine pullossa baareina ($1\\,\\text{bar}$ = $100\\,\\text{kPa}$)? Hapen moolimassa on $32{,}0\\,\\text{g/mol}$. Käytä arvoa $R = 8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$. Oleta, että happi noudattaa ideaalikaasun tilanyhtälöä.",
+      "core": true,
+      "text": "Ensihoitoauton happipullon painemittari on rikki. Pullon tilavuus on $10{,}0\\,\\textsf{l}$. Punnitsemalla selviää, että pullossa on $2{,}40\\,\\text{kg}$ happea. Autotallissa lämpötila on $15\\,{}^\\circ\\text{C}$.\n\nMikä on hapen paine pullossa baareina ($1\\,\\text{bar}$ = $100\\,\\text{kPa}$)?\n\nHapen moolimassa on $32{,}0\\,\\text{g/mol}$. Käytä arvoa $R = 8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$. Oleta, että happi noudattaa ideaalikaasun tilanyhtälöä.",
       "answer": 180,
       "unit": "bar",
       "tolerance": 0.02
@@ -150,6 +153,7 @@
     {
       "id": "fy3-10-L2-05",
       "level": 2,
+      "core": true,
       "text": "Autoilija epäilee, että henkilöauton rengas vuotaa. Hän mittaa renkaan ilman kokonaispaineen ennen ajoa ja heti pitkän ajon jälkeen (esimerkkiaineisto). Kokonaispaine on koko paine, myös ilmanpaine mukaan lukien. Renkaan tilavuus pysyy samana.\n\na) Laske, kuinka suuri paine renkaassa olisi ajon jälkeen, jos ilmaa ei olisi vuotanut.\n\nb) Kuinka monta prosenttia renkaan alkuperäisestä ilmamäärästä on vuotanut? Perustele tilanyhtälöllä, miksi pelkkä paineen mittaus ei riitä vuodon toteamiseen.\n\nVastauslaatikkoon tulee b-kohdan tulos.",
       "kind": [
         "data",

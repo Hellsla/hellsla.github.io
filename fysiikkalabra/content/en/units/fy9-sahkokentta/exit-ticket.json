@@ -1,0 +1,10 @@
+[
+  {
+    "q": "An electron starts from rest and travels through a potential difference of $500\\,\\text{V}$. How large is its kinetic energy in electronvolts and in joules?",
+    "a": "The field does the work $eU$, so $E_\\text{k} = 500\\,\\text{eV} = 500 \\cdot 1.602 \\cdot 10^{-19}\\,\\text{J} \\approx 8.0 \\cdot 10^{-17}\\,\\text{J}$. The electron moves towards the higher potential, and its potential energy decreases by the same amount."
+  },
+  {
+    "q": "The voltage of a capacitor connected to a source is doubled. By what factor do its charge and energy change?",
+    "a": "The capacitance does not change, so $Q = CU$ doubles and $W = \\tfrac12 CU^2$ becomes four times as large, because the energy is proportional to the square of the voltage."
+  }
+]

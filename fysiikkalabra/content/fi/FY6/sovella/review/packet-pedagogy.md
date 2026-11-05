@@ -1,6 +1,6 @@
 # Sovella itsenäisesti FY6 (fi): pedagogy packet
 
-Course: FY6 Sähkö, 2 op. Content hash now: b1e8c35e57ad6a01 (python scripts/practice.py hash FY6). Reports: science=stale, pedagogy=stale, visual=stale
+Course: FY6 Sähkö, 2 op. Content hash now: a34f3aab0e6c03cc (python scripts/practice.py hash FY6). Reports: science=stale, pedagogy=stale, visual=stale
 
 ## Scope
 Central contents: jännite ja sähkövirta tasavirtapiireissä; resistanssi ja Ohmin laki; sähköteho ja Joulen laki; vastusten kytkennät ja Kirchhoffin lait; akut ja akun latauspiiri; Coulombin laki ja homogeeninen sähkökenttä; potentiaalienergia ja potentiaali homogeenisessa sähkökentässä; kondensaattori ja kondensaattorin energia; puolijohteet, diodi ja LED komponentteina virtapiirissä; sähköturvallisuus: sulake, suojausluokitus ja läpilyöntilujuus
@@ -46,7 +46,7 @@ practice.py check: OK
 {"fy6-s1-fit-slope": -1.1943, "fy6-s1-fit-icpt": 4.598, "fy6-s1-slope": -1.2, "fy6-s1-b-E": 4.6, "fy6-s1-b-Rs": 1.2, "fy6-s1-Ik": 3.833, "fy6-s1-c-P": 2.0, "fy6-s1-c-I": 0.5, "fy6-s1-c-Pbatt": 0.3, "fy6-s1-c-osuus": 13.04, "fy6-s1-c-U": 4.0, "fy6-s1-d-dRs": 0.08, "fy6-s1-d-maxres": 0.02, "fy6-s2-RA": 6.0, "fy6-s2-RB": 12.0, "fy6-s2-Rp": 4.0, "fy6-s2-Rtot": 4.8, "fy6-s2-a": 2.5, "fy6-s2-a-UL": 10.0, "fy6-s2-b": 16.667, "fy6-s2-b-PB": 8.333, "fy6-s2-b-Pc": 5.0, "fy6-s2-b-Pbatt": 30.0, "fy6-s2-b-eff": 0.8333, "fy6-s2-c-I": 1.7647, "fy6-s2-c-UA": 10.5882, "fy6-s2-c-PA": 18.685, "fy6-s2-c-Pc": 2.491, "fy6-s2-c-Ucable": 1.412, "fy6-s2-c-Ucable0": 2.0, "fy6-s2-RC": 4.0, "fy6-s2-d-Rp": 2.0, "fy6-s2-d": 4.2857, "fy6-s2-d-UL": 8.571, "fy6-s2-d-PC": 18.367, "fy6-s2-d-Pc": 14.694, "fy6-s3-a-E": 300000, "fy6-s3-a": 1.8e-07, "fy6-s3-a-G": 3.924e-09, "fy6-s3-a-ratio": 45.87, "fy6-s3-a-Eair": 0.1, "fy6-s3-a-acc": 450.0, "fy6-s3-b": 13.416, "fy6-s3-b-W": 3.6e-08, "fy6-s3-b-Wg": 7.848e-10, "fy6-s3-c-Ek": 5e-09, "fy6-s3-c-share": 0.1389, "fy6-s3-c-rest": 3.1e-08, "fy6-s3-d": 3.2356799999999993e-09, "fy6-s3-d-vsF": 0.018, "fy6-s3-d-vsG": 0.825, "fy6-s4-a": 14.85, "fy6-s4-b": 6.864, "fy6-s4-b-Eb": 7.986, "fy6-s4-b-share": 0.4622, "fy6-s4-c": 26.4, "fy6-s4-c-dQ": 26.4, "fy6-s4-c-P": 6864.0, "fy6-s4-Qa": 0.099, "fy6-s4-d-I": 0.3, "fy6-s4-d-Ires": 30.0}
 
 ## Your job
-Judge the files below as the pedagogy reviewer (.claude/agents/pedagogy-reviewer.md, "Sovella itsenäisesti"). Write content/fi/FY6/sovella/review/pedagogy.md: line 1 `VERDICT: PASS|FAIL`, line 2 `CONTENT-HASH: b1e8c35e57ad6a01`, then Blocking, Polish, Checked (under 400 words).
+Judge the files below as the pedagogy reviewer (.claude/agents/pedagogy-reviewer.md, "Sovella itsenäisesti"). Write content/fi/FY6/sovella/review/pedagogy.md: line 1 `VERDICT: PASS|FAIL`, line 2 `CONTENT-HASH: a34f3aab0e6c03cc`, then Blocking, Polish, Checked (under 400 words).
 
 ## content/fi/FY6/sovella/tasks.json
 ```
@@ -833,7 +833,7 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 
 ### d)
 **Kysytty:** onko kondensaattorissa vaaraa pariston irrottamisen jälkeen, miten se puretaan turvallisesti ja kuinka suuri virta kulkisi kehon läpi
-**Periaate:** Kondensaattori varastoi varauksen ja energian levyilleen eikä sen jännite katoa, kun lataava paristo irrotetaan. Vaara riippuu varastoituneesta energiasta ja jännitteestä, ei paristosta. Virran suuruus kehon läpi saadaan jännitteestä ja resistanssista.
+**Periaate:** Kondensaattorin levyillä on varaukset $+Q$ ja $-Q$, ja energia on varastoitunut levyjen väliseen sähkökenttään. Jännite ei katoa, kun lataava paristo irrotetaan. Vaara riippuu varastoituneesta energiasta ja jännitteestä, ei paristosta. Virran suuruus kehon läpi saadaan jännitteestä ja resistanssista.
 **Mallivastaus:** *Vaara.* Kondensaattori on pariston irrottamisen jälkeen edelleen $300\,\text{V}$:ssa, ja siinä on noin $15\,\text{J}$. Laite ei saa jännitettä pienestä paristosta, vaan kondensaattorista, joka voi purkautua korjaajan kehon kautta.
 
 *Virta.* Jos kehon resistanssi on $1{,}0\,\text{k}\Omega$, virta olisi aluksi $I = \dfrac{U}{R} = \dfrac{300\,\text{V}}{1{,}0 \cdot 10^{3}\,\Omega} = 0{,}30\,\text{A}$. Se on moninkertainen verrattuna muutamaan kymmeneen milliampeeriin, jotka voivat jo olla vaarallisia. Virta pienenee kondensaattorin purkautuessa, mutta alun virta riittää vaaralliseen sähköiskuun.

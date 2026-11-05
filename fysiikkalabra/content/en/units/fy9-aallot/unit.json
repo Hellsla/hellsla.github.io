@@ -1,0 +1,14 @@
+{
+  "id": "fy9-aallot",
+  "course": "FY9",
+  "chapter": 4,
+  "order": 1,
+  "title": "Oscillation, waves and sound",
+  "description": "A review of module FY5: the quantities of oscillation, spring force and spring energy, the mass–spring oscillator and the pendulum, how waves travel, reflection and diffraction, interference, standing waves, sound and the Doppler effect, intensity and decibels, noise, ultrasound and earthquake waves, with matriculation-exam-style problems on them.",
+  "kind": "review",
+  "minutes": 75,
+  "subjects": [
+    "physics"
+  ],
+  "sources": []
+}

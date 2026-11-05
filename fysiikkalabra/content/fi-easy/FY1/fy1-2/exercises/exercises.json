@@ -3,6 +3,7 @@
     {
       "id": "fy1-2-L1-01",
       "level": 1,
+      "core": true,
       "text": "Ihmisen hiuksen paksuus on $82\\,\\mu\\text{m}$. Ilmoita paksuus millimetreinä.",
       "answer": 0.082,
       "unit": "mm",
@@ -19,6 +20,7 @@
     {
       "id": "fy1-2-L1-03",
       "level": 1,
+      "core": true,
       "text": "Pöydän pituus on $1{,}85\\,\\text{m}$ ja leveys $0{,}92\\,\\text{m}$. Laske pöydän pinta-ala niin monella merkitsevällä numerolla kuin mittaustulokset oikeuttavat.",
       "answer": 1.7,
       "unit": "m²",
@@ -118,6 +120,7 @@
     {
       "id": "fy1-2-L2-01",
       "level": 2,
+      "core": true,
       "text": "Tietokoneen prosessorin kellotaajuus on $3{,}2\\,\\text{GHz}$ eli 3,2 miljardia jaksoa sekunnissa. Käytä arvoja $1\\,\\text{GHz} = 10^{9}\\,\\text{Hz}$ ja $1\\,\\text{Hz} = 1/\\text{s}$. Kuinka monta kellojaksoa prosessori ehtii suorittaa $5{,}0\\,\\text{ms}$:ssa?",
       "answer": 16000000,
       "unit": "kpl",
@@ -233,6 +236,7 @@
     {
       "id": "fy1-2-L2-07",
       "level": 2,
+      "core": true,
       "text": "Vesihana täyttää ämpäriä tasaisella virtaamalla $q = 0{,}20\\,\\textsf{l}/\\text{s}$. Oppilas laskee, kauanko $12\\,\\textsf{l}$:n ämpärin täyttäminen kestää.\n\nOppilaan ratkaisu on: ”Aika on virtaaman ja tilavuuden tulo, $t = qV = 0{,}20\\,\\textsf{l}/\\text{s}\\cdot12\\,\\textsf{l} = 2{,}4$.” Hän päättelee, että ämpäri täyttyy $2{,}4$ sekunnissa.\n\nTarkista oppilaan laskun yksiköt. Selitä, mistä yksikkötarkastelu paljastaa virheen. Laske sitten oikea aika minuutteina.",
       "kind": [
         "error",

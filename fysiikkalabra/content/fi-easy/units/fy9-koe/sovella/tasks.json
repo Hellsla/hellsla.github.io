@@ -1,0 +1,531 @@
+{
+  "intro": "Neljä esimerkkitehtävää näyttää kokeen tehtävätyypit: laskutehtävän, kuvaajan piirtämisen aineistosta, selitystehtävän ja kokeen suunnittelun. Ratkaise ensin itse. Arvioi sitten vastauksesi mallivastauksen ja pisteytysohjeen avulla.",
+  "tasks": [
+    {
+      "id": "fy9-koe-s1",
+      "title": "Pyörällä vaaralle",
+      "source": "example",
+      "source_note": "Luvut on valittu todenmukaisiksi, mutta ne eivät ole oikea mittaus.",
+      "text": "Pyöräilijä ajaa tietä ylös vaaran laelle. Vaara on korkea mäki. Pyöräilijän ja pyörän yhteinen massa on $82{,}0\\,\\text{kg}$. Tien pituus on $1{,}20\\,\\text{km}$. Tien matkalla korkeus nousee $45{,}0\\,\\text{m}$. Pyöräilijän urheilukellon mukaan nousu kestää $4\\,\\text{min}\\ 30\\,\\text{s}$. Nopeus pysyy koko nousun ajan suunnilleen samana. Ilmanvastus ja renkaiden vierimisvastus vastustavat liikettä. Niiden yhteinen voima on keskimäärin $18\\,\\text{N}$. Lihasten hyötysuhde on noin $22\\,\\%$. Niin suuri osa ravinnon energiasta muuttuu työksi, joka pyörittää polkimia.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kuinka paljon pyöräilijän ja pyörän potentiaalienergia kasvaa nousun aikana?",
+          "answer": {
+            "value": 36198.9,
+            "unit": "J",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\Delta E_\\text{p} = mgh$, nollataso on tien alapäässä."
+            },
+            {
+              "key": "calculation",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\Delta E_\\text{p} \\approx 36{,}2\\,\\text{kJ}$, kolme merkitsevää numeroa."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 2,
+          "text": "Kuinka suuri keskimääräinen teho tarvitaan, jotta pyöräilijä ja pyörä nousevat vaaralle? Ota huomioon vain nostaminen.",
+          "answer": {
+            "value": 134.07,
+            "unit": "W",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$P = \\dfrac{\\Delta E_\\text{p}}{t}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Aika sekunteina on $t = 270\\,\\text{s}$; $P \\approx 134\\,\\text{W}$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka suuri mekaaninen teho pyöräilijän on tuotettava nousun aikana keskimäärin?",
+          "answer": {
+            "value": 214.07,
+            "unit": "W",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Lihasten työ kattaa potentiaalienergian kasvun ja vastusvoimien työn. Liike-energia ei muutu, koska nopeus on vakio.",
+              "tag": "transfer",
+              "points": 2
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Vastusvoimien työ on $W_\\text{v} = F_\\text{v} s = 21{,}6\\,\\text{kJ}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$P \\approx 210\\,\\text{W}$, kaksi merkitsevää numeroa kuten voimassa $18\\,\\text{N}$."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kuinka paljon ravinnon energiaa nousuun kuluu? Vastaa kilojouleina.",
+          "answer": {
+            "value": 262.72,
+            "unit": "kJ",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\eta = \\dfrac{W}{E}$, josta $E = \\dfrac{W}{\\eta}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Ravinnon energia on suurempi kuin mekaaninen työ, koska hyötysuhde on alle yksi."
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "word",
+          "points": 3,
+          "text": "Pyöräilijän kaveri sanoo: \"Nousun jälkeen voit syödä suklaalevyn, koska nousu kuluttaa sen energian.\" Pakkauksen mukaan levyn energia on $2200\\,\\text{kJ}$. Arvioi väitettä.",
+          "criteria": [
+            {
+              "text": "Vastaus vertaa lukuja: nousu kuluttaa noin $12\\,\\%$ levyn energiasta. Levyn energia riittää siis noin kahdeksaan nousuun.",
+              "tag": "communication",
+              "points": 1
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Mallin oletukset ovat vakionopeus, keskimääräinen vastusvoima ja lihasten hyötysuhde. Lepoaineenvaihduntaa ei ole laskettu mukaan."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Väite ei pidä paikkaansa: yksi nousu kuluttaa vain pienen osan levyn energiasta."
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy4-8",
+        "fy2-3",
+        "fy2-4"
+      ],
+      "links": {
+        "math": "fy4-8",
+        "transfer": "fy4-8",
+        "communication": "fy2-4"
+      }
+    },
+    {
+      "id": "fy9-koe-s2",
+      "title": "Heiluri ja putoamiskiihtyvyys",
+      "source": "example",
+      "source_note": "Aineistossa on vaihtelua kuin oikeassa mittauksessa, mutta se ei ole oikea mittaus.",
+      "text": "Opiskelijat ripustavat ohueen lankaan punnuksen, joka on pallon muotoinen. He mittaavat langan pituuden $L$ mittanauhalla. Pituus mitataan ripustuspisteestä punnuksen yläpintaan. Punnusta vedetään vain vähän sivuun. Sitten sekuntikellolla mitataan, kuinka kauan kymmenen heilahdusjaksoa kestää. Tämä aika on $t_{10}$. Mittaus tehdään kuudella langan pituudella.\n\n| $L\\ (\\text{m})$ | $t_{10}\\ (\\text{s})$ |\n|---|---|\n| $0{,}200$ | $9{,}33$ |\n| $0{,}350$ | $12{,}08$ |\n| $0{,}500$ | $14{,}42$ |\n| $0{,}650$ | $16{,}41$ |\n| $0{,}800$ | $18{,}08$ |\n| $0{,}950$ | $19{,}72$ |",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 2,
+          "text": "Miksi opiskelijat mittaavat kymmenen heilahdusjakson keston eivätkä yhden jakson kestoa?",
+          "criteria": [
+            {
+              "key": "error_sources",
+              "points": 1,
+              "detail": "Kun aika otetaan käsin, kello käynnistyy ja pysähtyy noin $0{,}2\\,\\text{s}$ liian myöhään tai liian aikaisin. Se on suuri osa yhden jakson ajasta."
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Sama ajanoton epävarmuus jakautuu kymmenelle jaksolle. Siksi jaksonajan suhteellinen epävarmuus on kymmenesosa."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "graph",
+          "points": 5,
+          "text": "Piirrä aineistosta kuvaaja, jonka pisteet asettuvat suoralle. Sovita kuvaajaan suora.",
+          "criteria": [
+            {
+              "text": "Valitsee akseleille suureet $L$ ja $T^2$. Perustelee valinnan heilurin jaksonajan lausekkeella $T = 2\\pi\\sqrt{\\tfrac{l}{g}}$.",
+              "tag": "transfer",
+              "points": 2
+            },
+            {
+              "key": "graph_axes",
+              "points": 1
+            },
+            {
+              "key": "graph_points",
+              "points": 1,
+              "detail": "Jaksonajat on laskettu $T = \\tfrac{t_{10}}{10}$ ja korotettu toiseen potenssiin."
+            },
+            {
+              "key": "graph_fit",
+              "points": 1,
+              "detail": "Pisteisiin on sovitettu suora. Suoraa ei ole pakotettu kulkemaan origon kautta."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 5,
+          "text": "Määritä kuvaajasta putoamiskiihtyvyys.",
+          "answer": {
+            "value": 9.81,
+            "unit": "m/s²",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Kulmakerroin on luettu suoralta kahdesta pisteestä, jotka ovat kaukana toisistaan: $k \\approx 4{,}03\\,\\tfrac{\\text{s}^2}{\\text{m}}$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$k = \\dfrac{4\\pi^2}{g}$, josta $g = \\dfrac{4\\pi^2}{k}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$g \\approx 9{,}8\\,\\text{m/s}^2$ tai $9{,}81\\,\\text{m/s}^2$. Yksikkö on johdettu kulmakertoimen yksiköstä."
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Tulosta verrataan arvoon $9{,}81\\,\\text{m/s}^2$."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 4,
+          "text": "Sovitettu suora ei kulje origon kautta. Selitä, mistä tämä johtuu. Arvioi, vaikuttaako se c-kohdan tulokseen.",
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Suora leikkaa $L$-akselin noin kohdassa $L \\approx -1{,}5\\,\\text{cm}$. Pystyakselilla suora kulkee noin arvon $0{,}06\\,\\text{s}^2$ kautta."
+            },
+            {
+              "key": "error_sources",
+              "points": 2,
+              "detail": "Heilurin pituus on ripustuspisteestä punnuksen keskipisteeseen. $L$ on kuitenkin mitattu punnuksen yläpintaan. Siksi jokainen pituus on punnuksen säteen verran liian lyhyt. Virhe on systemaattinen."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Virhe on joka mittauksessa yhtä suuri. Se siirtää suoraa, mutta ei muuta kulmakerrointa. Siksi kulmakertoimesta laskettu $g$ on luotettava. Yksittäisistä pisteistä laskettu $g$ olisi liian pieni."
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy1-4",
+        "fy1-3",
+        "fy5-9"
+      ],
+      "links": {
+        "experiment": "fy1-3",
+        "graph": "fy1-4",
+        "transfer": "fy5-9",
+        "math": "fy5-9",
+        "communication": "fy1-4"
+      }
+    },
+    {
+      "id": "fy9-koe-s3",
+      "title": "Termospullo",
+      "source": "example",
+      "source_note": "Luvut on valittu todenmukaisiksi, mutta ne eivät ole oikea mittaus.",
+      "text": "Termospullossa on kaksi lasiseinää sisäkkäin. Seinien välistä on poistettu ilma. Seinien pinnat, jotka ovat toisiaan kohti, on hopeoitu. Ne ovat kuin peili. Pullon suulla on korkki. Retkeilijä kaataa pulloon aamulla $0{,}50\\,\\text{kg}$ teetä. Teen lämpötila on $85{,}0\\,{}^\\circ\\text{C}$. Retkeilijä sulkee korkin. Kuuden tunnin kuluttua kello $13.00$ teen lämpötila on $70{,}0\\,{}^\\circ\\text{C}$. Ulkoilman lämpötila on koko ajan noin $20\\,{}^\\circ\\text{C}$. Teen ominaislämpökapasiteetti on sama kuin veden, $4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 5,
+          "text": "Selitä, miten termospullon rakenne hidastaa teen jäähtymistä. Käsittele jokaista tapaa, jolla lämpö voi siirtyä.",
+          "criteria": [
+            {
+              "text": "Johtuminen: tyhjiössä ei ole hiukkasia. Siksi mikään ei siirrä energiaa törmäyksillä seinästä toiseen.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Konvektio: tyhjiössä ei ole ilmaa, joka virtaisi ja kuljettaisi energiaa.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Lämpösäteily: peilipinta heijastaa takaisin suurimman osan lämpösäteilystä, joka tulee teen puolelta.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Korkki estää höyryn ja lämpimän ilman virtauksen pullon suulta. Korkki estää myös haihtumisen, joka sitoisi energiaa.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Teestä siirtyy silti nettona energiaa ympäristöön, mutta hitaasti. Energiaa siirtyy esimerkiksi pullon suun kautta ja kohdasta, jossa seinät yhtyvät."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 3,
+          "text": "Retkeilijä huomaa, että tee jäähtyy iltapäivällä hitaammin kuin aamulla. Selitä havainto.",
+          "criteria": [
+            {
+              "text": "Lämpöteho, joka siirtyy teestä ympäristöön, kasvaa, kun teen ja ympäristön lämpötilaero kasvaa.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Kun tee jäähtyy, lämpötilaero pienenee. Siksi lämpöteho pienenee, ja tee jäähtyy hitaammin."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "Laske keskimääräinen lämpöteho, jolla energiaa siirtyy teestä ympäristöön kuuden tunnin aikana.",
+          "answer": {
+            "value": 1.455,
+            "unit": "W",
+            "tolerance": 0.04
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$Q = cm\\Delta T$ ja $P = \\dfrac{Q}{t}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$t = 6{,}0 \\cdot 3600\\,\\text{s}$; $P \\approx 1{,}5\\,\\text{W}$, kaksi merkitsevää numeroa."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Pitääkö termospullo myös jääveden kylmänä? Perustele.",
+          "criteria": [
+            {
+              "text": "Samat rakenteet hidastavat energian siirtymistä kumpaankin suuntaan. Nyt energiaa siirtyy nettona lämpimästä ympäristöstä kylmään veteen.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Vertailu on reilu, kun lämpötilaero on suunnilleen yhtä suuri. Lisäksi jään sulaminen sitoo energiaa. Siksi vesi pysyy $0\\,{}^\\circ\\text{C}$:ssa niin kauan kuin jäätä on."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Kyllä: termospullo pitää myös kylmän juoman kylmänä."
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy3-12",
+        "fy3-6",
+        "fy3-7"
+      ],
+      "links": {
+        "concept": "fy3-12",
+        "communication": "fy3-12",
+        "math": "fy3-6",
+        "transfer": "fy3-7"
+      }
+    },
+    {
+      "id": "fy9-koe-s4",
+      "title": "Vedenkeittimen hyötysuhde",
+      "source": "example",
+      "source_note": "B-kohdan mittaustulos on valittu todenmukaiseksi, mutta se ei ole oikea mittaus.",
+      "text": "Opiskelijaryhmä haluaa selvittää, riippuuko vedenkeittimen hyötysuhde siitä, kuinka paljon vettä keittimessä lämmitetään. Ryhmällä on vedenkeitin, jonka teho on $2{,}0\\,\\text{kW}$. Ryhmällä on myös digitaalinen lämpömittari, keittiövaaka, sekuntikello, vesijohtovettä ja energiamittari. Energiamittari kytketään pistorasian ja keittimen väliin. Se näyttää kulutetun sähköenergian $0{,}001\\,\\text{kWh}$:n tarkkuudella. Keittimen hyödyksi lasketaan vain veden lämpeneminen.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 5,
+          "text": "Suunnittele koe, jolla ryhmä voi selvittää asian.",
+          "criteria": [
+            {
+              "text": "Muutettava suure on veden massa. Esimerkiksi mitataan viisi eri vesimäärää keittimen pienimmästä merkistä suurimpaan.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "Vakiona pidetään sama keitin, sama alku- ja loppulämpötila ja kansi kiinni. Keitin jäähdytetään huoneenlämpöön mittausten välillä.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "Veden massa mitataan vaa'alla, alku- ja loppulämpötila lämpömittarilla ja kulutettu sähköenergia energiamittarilla.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "Jokainen mittaus toistetaan, esimerkiksi kolme kertaa. Tuloksista lasketaan keskiarvo.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "Suunnitelma etenee vaihe vaiheelta niin selvästi, että toinen ryhmä voisi toistaa sen.",
+              "tag": "communication",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Yhdessä mittauksessa keittimessä on $0{,}500\\,\\text{kg}$ vettä. Vesi lämpenee $15{,}0\\,{}^\\circ\\text{C}$:sta $95{,}0\\,{}^\\circ\\text{C}$:een. Energiamittari näyttää $0{,}054\\,\\text{kWh}$. Laske keittimen hyötysuhde.",
+          "answer": {
+            "value": 86.2,
+            "unit": "%",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\eta = \\dfrac{Q}{E}$, jossa $Q = cm\\Delta T$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$E = 0{,}054 \\cdot 3{,}6 \\cdot 10^{6}\\,\\text{J} = 194\\,400\\,\\text{J}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\eta \\approx 86\\,\\%$, kaksi merkitsevää numeroa kuten lukemassa $0{,}054\\,\\text{kWh}$."
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Hyötysuhde on alle $100\\,\\%$. Loput energiasta lämmittää keitintä ja ympäristöä."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 4,
+          "text": "Arvioi, mitkä asiat voivat aiheuttaa virheitä kokeessa. Kerro, miten niiden vaikutusta voi pienentää.",
+          "criteria": [
+            {
+              "key": "error_sources",
+              "points": 2,
+              "detail": "Esimerkiksi vettä haihtuu lämmityksen aikana, keitin on lämmin edellisestä mittauksesta ja lämpömittari mittaa vain yhdestä kohdasta."
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Energiamittari näyttää lukeman $0{,}001\\,\\text{kWh}$:n tarkkuudella. Se on noin $2\\,\\%$ lukemasta $0{,}054\\,\\text{kWh}$. Pienillä vesimäärillä osuus on vielä suurempi."
+            },
+            {
+              "text": "Ehdottaa keinoja: kansi pidetään kiinni, keitin jäähdytetään, vesi sekoitetaan ennen lukemaa ja mittaukset toistetaan.",
+              "tag": "experiment",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Miten ryhmä esittää tulokset? Millainen tulos osoittaisi, että hyötysuhde riippuu vesimäärästä?",
+          "criteria": [
+            {
+              "key": "graph_axes",
+              "points": 1,
+              "detail": "$(m, \\eta)$-kuvaaja: vaaka-akselilla veden massa $m\\ (\\text{kg})$ ja pystyakselilla hyötysuhde $\\eta\\ (\\%)$."
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Riippuvuus on osoitettu vain, jos hyötysuhde muuttuu selvästi enemmän kuin toistojen tulokset vaihtelevat."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Esimerkiksi hyötysuhde kasvaa, kun vesimäärä kasvaa. Syy on se, että keittimen rungon lämmittämiseen kuluva energia on silloin pienempi osa kokonaisuudesta."
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy1-8",
+        "fy3-6",
+        "fy2-4"
+      ],
+      "links": {
+        "experiment": "fy1-8",
+        "communication": "fy1-8",
+        "math": "fy3-6",
+        "graph": "fy1-4"
+      }
+    }
+  ]
+}

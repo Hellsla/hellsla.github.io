@@ -3,6 +3,7 @@
     {
       "id": "fy3-5-L1-01",
       "level": 1,
+      "core": true,
       "text": "Pullataikinaa vaivataan käsin. Vaivatessa kädet tekevät taikinaan työn $450\\,\\text{J}$. Lämpimistä käsistä siirtyy taikinaan lämpömäärä $120\\,\\text{J}$. Taikina on systeemi. Kuinka paljon taikinan sisäenergia muuttuu?",
       "answer": 570,
       "unit": "J",
@@ -43,6 +44,7 @@
     {
       "id": "fy3-5-L1-06",
       "level": 1,
+      "core": true,
       "text": "Kahvikuppi ja iso kattila ovat täynnä vettä. Veden lämpötila on kummassakin $60\\,{}^\\circ\\text{C}$. Kattilassa on kymmenen kertaa enemmän vettä kuin kupissa. Mikä väite vesien sisäenergiasta on oikein?",
       "kind": [
         "concept"
@@ -122,6 +124,7 @@
     {
       "id": "fy3-5-L2-02",
       "level": 2,
+      "core": true,
       "text": "Vedenkeittimen vastus siirtää veteen energiaa lämpönä. Teho on tasainen $2{,}0\\,\\text{kW}$, ja aika on 90 sekuntia. Samaan aikaan vedestä siirtyy keittimen kuoren kautta ympäristöön lämpömäärä $20\\,\\text{kJ}$. Kuinka paljon veden sisäenergia kasvaa? Anna vastaus kilojouleina.",
       "answer": 160,
       "unit": "kJ",
@@ -188,6 +191,7 @@
     {
       "id": "fy3-5-L2-06",
       "level": 2,
+      "core": true,
       "text": "Oppilas ratkaisi tehtävän ja sai tuloksen $\\Delta U = 40\\,\\text{J}$. Tehtävä: pyöräpumpun sylinterissä olevaa ilmaa puristetaan. Mäntä tekee ilmaan työn $30\\,\\text{J}$. Samalla ilmasta siirtyy sylinterin seinien kautta ympäristöön lämpömäärä $10\\,\\text{J}$. Oppilaan ratkaisu: ”Ilmaan tehdään työ, joten $W = +30\\,\\text{J}$. Lämpömäärä on $10\\,\\text{J}$, joten $Q = 10\\,\\text{J}$. Siis $\\Delta U = Q + W = 10\\,\\text{J} + 30\\,\\text{J} = 40\\,\\text{J}$.”\n\na) Mikä virhe oppilaan ratkaisussa on?\n\nb) Laske ilman sisäenergian muutos oikein.\n\nVastauslaatikkoon tulee kohdan b) tulos etumerkkeineen.",
       "kind": [
         "error"

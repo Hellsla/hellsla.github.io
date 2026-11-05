@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Name three things that are most often missing from a matriculation exam answer to a “plan an experiment” task.",
+    "a": "For example: what is kept constant, with which instrument and to what precision each quantity is measured, and how the result is calculated from a graph (what is on the axes and what the slope means). Often the number of repetitions is also missing, as is what the largest source of error is and how it is reduced."
+  },
+  {
+    "q": "Why is the period of a pendulum measured from ten swings and not from one?",
+    "a": "The uncertainty of timing by hand, about $0.1\\text{–}0.2\\,\\text{s}$, is almost the same in a short and a long measurement. When it is divided over ten periods, the relative uncertainty of the period drops to about a tenth."
+  },
+  {
+    "q": "One measurement that differs from the others has been left out of a report. When is leaving it out acceptable?",
+    "a": "Only if the cause of the deviation is found, for example the watch was started late or the swings were miscounted, and leaving it out is justified and recorded in the report. A result is not removed merely because it differs from the others; a clearly deviating measurement is checked and repeated if necessary."
+  }
+]

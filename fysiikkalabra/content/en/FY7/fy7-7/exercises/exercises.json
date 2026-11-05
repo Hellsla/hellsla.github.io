@@ -3,6 +3,7 @@
     {
       "id": "fy7-7-L1-01",
       "level": 1,
+      "core": true,
       "text": "The coil of a school generator model has $300$ turns, and its area is $0.0030\\,\\text{m}^2$. The coil rotates in a uniform magnetic field of $0.15\\,\\text{T}$ at a rotation frequency of $10\\,\\text{Hz}$. How large is the peak value of the voltage induced in the coil?",
       "answer": 8.4823,
       "unit": "V",
@@ -43,6 +44,7 @@
     {
       "id": "fy7-7-L1-06",
       "level": 1,
+      "core": true,
       "text": "People say that the voltage of a household socket is $230\\,\\text{V}$. Which statement about this voltage is correct?",
       "kind": [
         "concept"
@@ -99,6 +101,7 @@
     {
       "id": "fy7-7-L2-02",
       "level": 2,
+      "core": true,
       "text": "The graph shows the voltage of a small generator as a function of time. The coil of the generator has $200$ turns, its area is $30\\,\\text{cm}^2$, and it rotates in a uniform magnetic field. Read the peak value and the period of the voltage from the graph. How large is the magnetic flux density?",
       "figure": "fy7-7/trace",
       "answer": 0.127324,
@@ -229,6 +232,7 @@
     {
       "id": "fy7-7-L2-07",
       "level": 2,
+      "core": true,
       "text": "A student solved a problem as follows: “The power of an incandescent bulb is $60\\,\\text{W}$, and it is connected to the mains voltage $230\\,\\text{V}$. The voltage is a peak value, so the rms value is $230\\,\\text{V} : \\sqrt{2} = 163\\,\\text{V}$. The current is $I = P : U = 60\\,\\text{W} : 163\\,\\text{V} = 0.37\\,\\text{A}$.”\n\na) Find the error in the student’s solution and explain why it is an error.\n\nb) Calculate the rms value of the current of the bulb correctly.\n\nThe result of part b is entered in the answer field.",
       "kind": [
         "error"

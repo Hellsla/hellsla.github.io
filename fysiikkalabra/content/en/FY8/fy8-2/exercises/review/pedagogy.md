@@ -1,21 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: f6123a0838802040
+CONTENT-HASH: 55a1c542063de95f
 
 ## Blocking
 
 ## Polish
-- exercises.json fy8-2-L1-01 — same task as the worked example (neon 640 nm) with helium 502 nm, and again tarkistus-2 (mercury 546 nm) — keep one, or turn L1-01 into reading the line from a table.
-- exercises.json fy8-2-L1-03 — frequency of 656 nm light practises c = f·lambda only, not energy states — fine as warm-up, but consider "energy and frequency of the photon".
-- exercises.json fy8-2-L3-02 — "vibrational states" appear in the lesson only in the optional greenhouse box, not in the exercise brief — the task explains it itself, so solvable; mark the optional dependence or add a one-line gloss.
-- exercises.json fy8-2-L3-03 — "emits an infrared photon ... then a second photon" next to the lesson's fluorescence (heat, one photon) can confuse; the "no heat" assumption is stated, good — add "(a model)" to the task.
-- solutions.md L1-02 Reasonableness — "the same as the blue-violet line of hydrogen" is a hint to the lesson table, harmless but unneeded.
+- exercises.json fy8-2-L2-05 / L2-06 — the a) parts ask for a justification that the answer box does not check; the solution covers it fully, so fine, but the a) wording "Justify your answer by comparing all three lines" is good and should stay.
+- exercises.json fy8-2-L3-04 — long task with three open parts; solvable, and the sentence order (setup, then what is missing) is clear in English.
 
 ## Checked
-- Counts 5/4/3 match the rubric; levels rise: direct use, two-step/unit conversion, reasoning (series limit, two-photon cascade).
-- Situation first, question last as its own sentence; data complete, no trap the lesson did not prepare.
-- Answers re-computed: 2.47 eV, 434 nm, 4.57e14 Hz, 1.89 eV, 656, 486, 670, 122, 2.11 eV, 365, 82.7 meV, 564 nm all correct and consistent with tolerances.
-- Solutions follow Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness; the principle is explained, no step skipped.
-- L2-02 (longest line = smallest difference) and L3-01 (series limit) demand real reasoning.
-- L3 captures at 1280 px legible; long calculations wrap cleanly.
-- English natural; units and decimal points consistent.
-- Hash unchanged at end.
+- Translation keeps the Finnish structure: situation first, parts a)–d), last sentence tells which part the answer box takes.
+- L1-06 distractors are the natural misconceptions (emission vs absorption, hot solid, even dimming); feedback explains why each is wrong in plain English.
+- L1-08 error-finding task: numerical value declared correct, so the student must find the direction error; feedback of all four choices is accurate.
+- L1-07 asks for 2-3 sentences and the three key words; the model answer uses all three.
+- L2-07 gives a measurable graph task (table, unit of the reading, what to draw and fit); L3-05 d) states all data needed.
+- English is natural, short sentences, terms (energy state, photon, absorption spectrum) match the glossary.
+- Solutions follow Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness.

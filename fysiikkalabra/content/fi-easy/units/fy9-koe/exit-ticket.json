@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Miksi välituloksia ei pyöristetä samaan tarkkuuteen kuin lopputulosta?",
+    "a": "Jokainen pyöristys muuttaa tulosta vähän. Muutokset kasvavat seuraavissa vaiheissa. Kun välitulokset pidetään tarkkoina ja vain lopputulos pyöristetään, lopputuloksen viimeinen merkitsevä numero on luotettava."
+  },
+  {
+    "q": "Teit kuvaajan kuvaajaohjelmalla. Liitit vastaukseen kuvakaappauksen. Mitä sinun pitää vielä kirjoittaa tekstinä?",
+    "a": "Kirjoita, mitä suureita akseleilla on ja mikä malli pisteisiin sovitettiin ja miksi. Kerro myös, mitä sovitteen kerroin tarkoittaa fysiikassa ja mitä siitä seuraa. Esimerkiksi $k = \\tfrac{\\Delta x}{\\Delta t}$ on kärryn nopeus. Kirjoita lopuksi vastaus yksikköineen ja oikealla tarkkuudella."
+  }
+]

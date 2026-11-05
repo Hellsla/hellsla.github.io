@@ -39,6 +39,54 @@
       "answer": 8.0,
       "unit": "µSv/h",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-13-L1-06",
+      "level": 1,
+      "core": true,
+      "text": "Absorboitunut annos mitataan yksiköllä gray ($\\text{Gy}$). Efektiivinen annos mitataan yksiköllä sievert ($\\text{Sv}$). Kumpikin yksikkö voidaan kirjoittaa muodossa $\\tfrac{\\text{J}}{\\text{kg}}$. Mikä väite kuvaa näiden annosten eroa oikein?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Gray mittaa absorboitunutta energiaa massaa kohti. Sievert painottaa sitä säteilylajin ja kudoksen mukaan.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Gray kertoo lähteen hajoamisnopeuden ja sievert lähteen säteilemän energian. Siksi kumpikin kuvaa lähdettä.",
+          "feedback": "Molemmat annokset kuvaavat säteilyn kohdetta, eivät lähdettä. Lähteen aktiivisuus eli hajoamisnopeus mitataan becquereleinä. Gray ja sievert kertovat, kuinka paljon energiaa kudokseen absorboituu massaa kohti."
+        },
+        {
+          "text": "Gray ja sievert ovat sama suure. Molemmat ovat joulea kilogrammaa kohti, eikä säteilylaji vaikuta annokseen.",
+          "feedback": "Yksiköt ovat samaa muotoa, mutta suureet eivät ole samat. Sama absorboitunut annos antaa alfasäteilystä $20$-kertaisen ekvivalenttiannoksen gammasäteilyyn verrattuna. Siksi annoksen yksiköllä on oma nimensä sievert."
+        },
+        {
+          "text": "Gray mittaa absorboitunutta energiaa massaa kohti. Sievert painottaa sitä säteilylajin ja kudoksen mukaan.",
+          "correct": true,
+          "feedback": "Oikein. Absorboitunut annos $D = \\tfrac{E}{m}$ on fysikaalinen suure. Ekvivalenttiannoksessa se kerrotaan säteilyn painotuskertoimella $w_\\text{R}$. Efektiivisessä annoksessa se kerrotaan vielä kudoksen painotuskertoimella $w_\\text{T}$. Siksi sievert kuvaa terveysriskiä."
+        },
+        {
+          "text": "Gray kuvaa vain gammasäteilyä ja sievert vain alfasäteilyä, koska säteilylajit absorboituvat eri tavalla.",
+          "feedback": "Kumpikaan yksikkö ei rajoitu yhteen säteilylajiin. Absorboitunut annos voidaan laskea mille tahansa ionisoivalle säteilylle. Ekvivalenttiannoksessa ja efektiivisessä annoksessa säteilylaji otetaan huomioon painotuskertoimella $w_\\text{R}$."
+        }
+      ]
+    },
+    {
+      "id": "fy8-13-L1-07",
+      "level": 1,
+      "core": true,
+      "text": "Vatsan röntgentutkimuksessa maksa saa ekvivalenttiannoksen $2{,}0\\,\\text{mSv}$ ja mahalaukku $1{,}0\\,\\text{mSv}$ (esimerkkiarvot). Muut kudokset eivät saa merkittävää annosta.\n\nMaksan kudoksen painotuskerroin on $0{,}04$ ja mahalaukun $0{,}12$. Kuinka suuri on potilaan efektiivinen annos? Anna vastaus millisieverteinä.",
+      "answer": 0.2,
+      "unit": "mSv",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-13-L1-08",
+      "level": 1,
+      "text": "Rintakehän röntgenkuvauksen efektiivinen annos on noin $0{,}10\\,\\text{mSv}$ (esimerkkiarvo). Suomalaisen keskimääräinen efektiivinen annos on $5{,}9\\,\\text{mSv}$ vuodessa (STUK-A263, 2020).\n\nKuinka monta prosenttia keskimääräisestä vuosiannoksesta yhden kuvauksen annos on? Anna vastaus prosentteina.",
+      "answer": 1.7,
+      "unit": "%",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -53,6 +101,7 @@
     {
       "id": "fy8-13-L2-02",
       "level": 2,
+      "core": true,
       "text": "Gammasäteilyn lähteen annosnopeus on $1{,}0\\,\\text{m}$:n etäisyydellä $150\\,\\mu\\text{Sv/h}$. Huoltoasentaja työskentelee $2{,}5\\,\\text{m}$:n päässä lähteestä. Kuinka kauan hän voi työskennellä, ennen kuin hänen annoksensa on $100\\,\\mu\\text{Sv}$? Anna vastaus tunteina.",
       "answer": 4.2,
       "unit": "h",
@@ -72,6 +121,87 @@
       "text": "Gammasäteilyn annosnopeus on työpisteessä $96\\,\\mu\\text{Sv/h}$. Se halutaan pienentää lyijysuojalla arvoon $3{,}0\\,\\mu\\text{Sv/h}$. Lyijyn puoliintumispaksuus tälle säteilylle on $6{,}0\\,\\text{mm}$. Kuinka paksu lyijysuoja tarvitaan? Anna vastaus millimetreinä.",
       "answer": 30,
       "unit": "mm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-13-L2-05",
+      "level": 2,
+      "core": true,
+      "text": "Taulukossa on suomalaisen keskimääräinen efektiivinen vuosiannos lähteittäin. Aineisto on esimerkkiaineisto. Se perustuu STUK-A263:n (2020) keskimääräiseen vuosiannokseen $5{,}9\\,\\text{mSv}$. Radon on maaperästä tuleva radioaktiivinen kaasu. Muuhun luonnon säteilyyn kuuluvat maaperän ja rakennusaineiden säteily, kosminen säteily eli avaruudesta tuleva säteily ja kehon omat radioaktiiviset aineet.\n\na) Laske lähteiden annosten summa.\n\nb) Kuinka monta prosenttia kokonaisannoksesta tulee sisäilman radonista? Anna vastaus prosentteina.\n\nVastauslaatikkoon tulee kohdan b) tulos.",
+      "kind": [
+        "data"
+      ],
+      "answer": 68,
+      "unit": "%",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Suomalaisen keskimääräinen efektiivinen vuosiannos lähteittäin (esimerkkiaineisto)",
+        "columns": [
+          "Lähde",
+          "$H_\\text{E}\\,(\\text{mSv})$"
+        ],
+        "rows": [
+          [
+            "Sisäilman radon",
+            "4.0"
+          ],
+          [
+            "Muu luonnon säteily",
+            "1.1"
+          ],
+          [
+            "Lääketieteellinen käyttö",
+            "0.8"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-13-L2-06",
+      "level": 2,
+      "text": "Ryhmä mittasi pienen gammasäteilylähteen annosnopeuden eri etäisyyksillä. Taustasäteily on vähennetty tuloksista (taulukko, esimerkkiaineisto). Taustasäteily on säteilyä, jota on aina ympärillä ilman tutkittavaa lähdettä.\n\nHalutaan tutkia, noudattaako annosnopeus etäisyyden neliölakia:\n\n$\\dot{H}_2 = \\dot{H}_1 \\left(\\dfrac{r_1}{r_2}\\right)^2$\n\na) Laske jokaiselle etäisyydelle tulo $\\dot{H} r^2$.\n\nb) Mitä tulolle pitäisi tapahtua, jos etäisyyden neliölaki pätee? Päättele, noudattaako mittaus lakia.\n\nc) Ennusta annosnopeus $3{,}0\\,\\text{m}$:n etäisyydellä. Käytä neljän tulon keskiarvoa $k_\\text{ka}$. Anna vastaus yksikössä $\\mu\\text{Sv/h}$.\n\nVastauslaatikkoon tulee kohdan c) tulos keskiarvomenetelmällä.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 11.2,
+      "unit": "µSv/h",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Annosnopeus eri etäisyyksillä lähteestä (esimerkkiaineisto)",
+        "columns": [
+          "$r\\,(\\text{m})$",
+          "$\\dot{H}\\,(\\mu\\text{Sv/h})$"
+        ],
+        "rows": [
+          [
+            "0.50",
+            "410"
+          ],
+          [
+            "1.00",
+            "98.0"
+          ],
+          [
+            "1.50",
+            "44.0"
+          ],
+          [
+            "2.00",
+            "26.0"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-13-L2-07",
+      "level": 2,
+      "text": "Alfasäteilevää ainetta on kertynyt työntekijän maksaan. Maksan massa on $1{,}8\\,\\text{kg}$. Maksa absorboi alfasäteilystä vuodessa energian $0{,}63\\,\\text{mJ}$. Kysytään maksan ekvivalenttiannosta.\n\nOppilaan ratkaisu: $D = \\dfrac{0{,}63\\,\\text{mJ}}{1{,}8\\,\\text{kg}} = 0{,}35\\,\\text{mGy}$. Gray ja sievert ovat sama asia, joten ekvivalenttiannos on $0{,}35\\,\\text{mSv}$.\n\na) Mikä oppilaan päättelyssä on virheellistä? Selitä.\n\nb) Laske maksan oikea ekvivalenttiannos. Alfasäteilyn painotuskerroin on $20$. Anna vastaus millisieverteinä.\n\nVastauslaatikkoon tulee kohdan b) tulos.",
+      "kind": [
+        "error"
+      ],
+      "answer": 7.0,
+      "unit": "mSv",
       "tolerance": 0.02
     }
   ],
@@ -99,6 +229,81 @@
       "answer": 0.74,
       "unit": "mSv",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-13-L3-04",
+      "level": 3,
+      "text": "Omakotitalon asukas mittautti sisäilman radonpitoisuuden. Pitoisuus mitattiin neljässä kolmen kuukauden jaksossa vuoden ympäri (taulukko, esimerkkiaineisto).\n\nSuomalaisten asuntojen keskimääräinen radonpitoisuus $94\\,\\tfrac{\\text{Bq}}{\\text{m}^3}$ aiheuttaa keskimäärin $4{,}0\\,\\text{mSv}$ efektiivisen annoksen vuodessa (STUK-A263, 2020). Oleta, että radonannos on suoraan verrannollinen pitoisuuteen. Oleta myös, että asukas on kotona $80\\,\\%$ siitä ajasta, jonka suomalainen keskimäärin on kotona. Asuntojen radonin viitearvo on $300\\,\\tfrac{\\text{Bq}}{\\text{m}^3}$.\n\na) Laske vuoden keskipitoisuus.\n\nb) Laske asukkaan radonista saama efektiivinen vuosiannos.\n\nc) Selitä, miksi talvella mitattu pitoisuus yliarvioi vuosiannoksen. Selitä myös, miksi virallinen radonmittaus tehdään silti lämmityskaudella. Ylittääkö vuoden keskipitoisuus viitearvon?\n\nd) Asukas haluaa pienentää radonannoksensa radonkorjauksella enintään arvoon $2{,}0\\,\\text{mSv}$ vuodessa. Kuinka suuri vuoden keskipitoisuus saa korjauksen jälkeen enintään olla? Anna vastaus yksikössä $\\tfrac{\\text{Bq}}{\\text{m}^3}$.\n\nVastauslaatikkoon tulee kohdan d) tulos.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 59,
+      "unit": "Bq/m³",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Radonpitoisuus asunnon sisäilmassa (esimerkkiaineisto)",
+        "columns": [
+          "Jakso",
+          "$c\\,(\\tfrac{\\text{Bq}}{\\text{m}^3})$"
+        ],
+        "rows": [
+          [
+            "Talvi",
+            "380"
+          ],
+          [
+            "Kevät",
+            "260"
+          ],
+          [
+            "Kesä",
+            "140"
+          ],
+          [
+            "Syksy",
+            "300"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-13-L3-05",
+      "level": 3,
+      "text": "Teollisuuslaitoksessa käytetään gammasäteilylähdettä. Betoniseinän paksuuden vaikutus mitattiin annosnopeudelle $1{,}0\\,\\text{m}$:n etäisyydellä lähteestä (taulukko, esimerkkiaineisto).\n\nHuoltotyöntekijän työpiste on seinän takana $2{,}0\\,\\text{m}$:n etäisyydellä lähteestä. Seinän paksuus on $10\\,\\text{cm}$. Työntekijän annos saa vuoron aikana olla enintään $25\\,\\mu\\text{Sv}$ (esimerkkiarvo). Oleta, että lähde on pistemäinen. Oleta myös, että betonin vaimennus noudattaa puoliintumispaksuuden lakia.\n\na) Arvioi betonin puoliintumispaksuus taulukosta.\n\nb) Laske annosnopeus työpisteessä.\n\nc) Kuinka kauan työntekijä saa työskennellä vuoron aikana? Anna vastaus tunteina.\n\nd) Mainitse yksi oletus, joka voi tehdä lasketusta työajasta liian pitkän. Kerro, miten työaika kannattaa siksi valita.\n\nVastauslaatikkoon tulee kohdan c) tulos.",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 2.4,
+      "unit": "h",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Annosnopeus $1{,}0\\,\\text{m}$:n etäisyydellä betoniseinän takana (esimerkkiaineisto)",
+        "columns": [
+          "$d\\,(\\text{cm})$",
+          "$\\dot{H}\\,(\\mu\\text{Sv/h})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "240"
+          ],
+          [
+            "4.0",
+            "121"
+          ],
+          [
+            "8.0",
+            "60.5"
+          ],
+          [
+            "12.0",
+            "29.8"
+          ]
+        ]
+      }
     }
   ]
 }

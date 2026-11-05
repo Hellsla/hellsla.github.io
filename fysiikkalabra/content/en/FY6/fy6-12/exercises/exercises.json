@@ -27,6 +27,7 @@
     {
       "id": "fy6-12-L1-04",
       "level": 1,
+      "core": true,
       "text": "A charge of $4.0\\,\\mu\\text{C}$ moves in an electric field from point $A$, whose potential is $60\\,\\text{V}$, to point $B$, whose potential is $15\\,\\text{V}$. How much work does the electric field do on the charge? Answer in millijoules.",
       "answer": 0.18,
       "unit": "mJ",
@@ -44,6 +45,7 @@
     {
       "id": "fy6-12-L1-06",
       "level": 1,
+      "core": true,
       "text": "Two small bodies are in a uniform electric field: the charge of one is $+q$ and that of the other $-q$. Each moves the same distance in the direction of the field. What happens to their electric potential energy?",
       "kind": [
         "concept"
@@ -67,7 +69,7 @@
         },
         {
           "text": "The potential energy of both charges stays the same, because the charges move the same distance in the same uniform field.",
-          "feedback": "The field is uniform, but the potential is not the same everywhere: it changes steadily with distance, $V = Ex$. When a charge moves in the direction of the field, the potential at its location changes and the potential energy $qV$ changes with it."
+          "feedback": "The field is uniform, but the potential is not the same everywhere: it changes steadily with distance, $V = Ex$, when the zero of potential is at the negative plate and $x$ is the distance from it. When a charge moves in the direction of the field, the potential at its location changes and the potential energy $qV$ changes with it."
         }
       ]
     },
@@ -104,6 +106,7 @@
     {
       "id": "fy6-12-L1-08",
       "level": 1,
+      "core": true,
       "text": "A doubly charged positive ion, whose charge is $+2e$, starts from rest and travels through a potential difference of $450\\,\\text{V}$. What is the final kinetic energy of the ion? Only the electric force acts on the ion. Answer in electronvolts.",
       "kind": [
         "reasoning"
@@ -133,6 +136,7 @@
     {
       "id": "fy6-12-L2-03",
       "level": 2,
+      "core": true,
       "text": "The charge of an alpha particle is $+2e$ and its mass is $6.645 \\cdot 10^{-27}\\,\\text{kg}$. The alpha particle starts from rest and travels through a potential difference of $2.0\\,\\text{kV}$. What is its speed? The elementary charge is $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$. Answer in metres per second.",
       "answer": 439166.0,
       "unit": "m/s",
@@ -264,7 +268,7 @@
     {
       "id": "fy6-12-L3-01",
       "level": 3,
-      "text": "An electron passes point $A$ at a speed of $2.0 \\cdot 10^{6}\\,\\text{m/s}$. The potential of point $A$ is $40\\,\\text{V}$. The electron continues to point $B$, whose potential is $160\\,\\text{V}$, and only the electric force acts on it. What is the speed of the electron at point $B$? The mass of the electron is $9.109 \\cdot 10^{-31}\\,\\text{kg}$. The elementary charge is $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$.",
+      "text": "An electron passes point $A$ at a speed of $2.0 \\cdot 10^{6}\\,\\text{m/s}$. The potential of point $A$ is $40\\,\\text{V}$. The electron continues to point $B$, whose potential is $160\\,\\text{V}$, and only the electric force acts on it.\n\nWhat is the speed of the electron at point $B$?\n\nThe mass of the electron is $9.109 \\cdot 10^{-31}\\,\\text{kg}$. The elementary charge is $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$.",
       "answer": 6797710.0,
       "unit": "m/s",
       "tolerance": 0.02
@@ -280,7 +284,7 @@
     {
       "id": "fy6-12-L3-03",
       "level": 3,
-      "text": "The separation of two parallel plates is $2.0\\,\\text{cm}$, and the voltage between them is $600\\,\\text{V}$. A proton starts from a hole in the negative plate toward the positive plate at a speed of $3.0 \\cdot 10^{5}\\,\\text{m/s}$. How close to the positive plate does the proton get before it turns back? The mass of the proton is $1.673 \\cdot 10^{-27}\\,\\text{kg}$. The elementary charge is $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$. Answer in millimetres.",
+      "text": "The separation of two parallel plates is $2.0\\,\\text{cm}$, and the voltage between them is $600\\,\\text{V}$. A proton starts from a hole in the negative plate toward the positive plate at a speed of $3.0 \\cdot 10^{5}\\,\\text{m/s}$.\n\nHow close to the positive plate does the proton get before it turns back?\n\nThe mass of the proton is $1.673 \\cdot 10^{-27}\\,\\text{kg}$. The elementary charge is $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$. Answer in millimetres.",
       "answer": 4.33521,
       "unit": "mm",
       "tolerance": 0.02

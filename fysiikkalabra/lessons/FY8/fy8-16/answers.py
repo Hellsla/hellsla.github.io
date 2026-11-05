@@ -28,4 +28,14 @@ a["fy8-16-L3-01"] = 100 * (2 * n_) / (n_ + p_)         # helium mass fraction 2/
 a["fy8-16-L3-02"] = (3 * 4.002603 - 12.000000) * 931.5   # 3 He-4 -> C-12: 0,007809 u, Q = 7,274 MeV
 z3 = (676.2 - 656.3) / 656.3                           # the longest line is Hα: Δλ = 19,9 nm, z = 0,030322 (Hβ 500,9 and Hγ 447,2 agree)
 a["fy8-16-L3-03"] = C_KMS * z3 / 70                    # v = 9091 km/s, d = 129,9 Mpc -> 1,3 · 10² Mpc
+# Exercise-bank additions (L1-06, L1-08 and L2-07 are multiple choice without a number; the others below)
+a["fy8-16-L1-07"] = 12800 / 185                         # d = 185 Mpc, v = 12 800 km/s: H0 = 69,19 -> 69,2 km/s/Mpc
+d5 = [28, 45, 63, 88, 112, 135, 166, 194, 238]          # example data: nine galaxies, distance in Mpc
+v5 = [2260, 2990, 4260, 6140, 7460, 9380, 11190, 13310, 16350]   # speed in km/s
+a["fy8-16-L2-05"] = sum(x * y for x, y in zip(d5, v5)) / sum(x * x for x in d5)   # least squares through origin: 11 439 330 / 167 127 = 68,45
+z6 = (505.5 - 486.1) / 486.1                            # Hβ 505,5 nm: z = 0,03991 (the student multiplied v by H0 instead of dividing)
+a["fy8-16-L2-06"] = C_KMS * z6 / 70                     # v = 11 965 km/s, d = 170,9 Mpc -> 171 Mpc
+# L3-04: example data, rotation curve; at r = 30 kpc observed 213 km/s, visible-matter model 113 km/s
+a["fy8-16-L3-04"] = 213 / 113                           # ratio 1,885 (observed +2,9 % and model -38,9 % between 10 and 30 kpc)
+a["fy8-16-L3-05"] = 2.725 * (486.4 / 121.6)             # Lyman-alpha 121,6 -> 486,4 nm: stretch 4,000 (z = 3,000), T = 4 * 2,725 K = 10,9 K
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

@@ -3,6 +3,7 @@
     {
       "id": "fy1-2-L1-01",
       "level": 1,
+      "core": true,
       "text": "The thickness of a human hair is $82\\,\\mu\\text{m}$. Give the thickness in millimetres.",
       "answer": 0.082,
       "unit": "mm",
@@ -19,6 +20,7 @@
     {
       "id": "fy1-2-L1-03",
       "level": 1,
+      "core": true,
       "text": "The length of a table is $1.85\\,\\text{m}$ and its width $0.92\\,\\text{m}$. Calculate the area of the table to as many significant figures as the measurement results justify.",
       "answer": 1.7,
       "unit": "m²",
@@ -118,6 +120,7 @@
     {
       "id": "fy1-2-L2-01",
       "level": 2,
+      "core": true,
       "text": "The clock frequency of a computer processor is $3.2\\,\\text{GHz}$, that is 3.2 billion cycles per second. Use the values $1\\,\\text{GHz} = 10^{9}\\,\\text{Hz}$ and $1\\,\\text{Hz} = 1/\\text{s}$. How many clock cycles can the processor perform in $5.0\\,\\text{ms}$?",
       "answer": 16000000,
       "unit": "cycles",
@@ -233,6 +236,7 @@
     {
       "id": "fy1-2-L2-07",
       "level": 2,
+      "core": true,
       "text": "A tap fills a bucket at a steady flow rate $q = 0.20\\,\\textsf{l}/\\text{s}$. A student calculates how long it takes to fill a $12\\,\\textsf{l}$ bucket.\n\nThe student's solution is: “The time is the product of the flow rate and the volume, $t = qV = 0.20\\,\\textsf{l}/\\text{s}\\cdot12\\,\\textsf{l} = 2.4$.” The student concludes that the bucket fills in $2.4$ seconds.\n\nCheck the units of the student's calculation and explain what a unit check reveals about the error. Then calculate the correct time in minutes.",
       "kind": [
         "error",

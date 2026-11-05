@@ -3,6 +3,7 @@
     {
       "id": "fy7-12-L1-01",
       "level": 1,
+      "core": true,
       "text": "Uima-altaan pohjalla oleva lamppu lähettää valoa vedenpintaa kohti. Veden taitekerroin on $1{,}33$ ja ilman $1{,}00$. Kuinka suuri on veden ja ilman rajapinnan rajakulma?",
       "answer": 48.7535,
       "unit": "°",
@@ -43,6 +44,7 @@
     {
       "id": "fy7-12-L1-06",
       "level": 1,
+      "core": true,
       "text": "Valonsäde etenee läpinäkyvässä aineessa kohti sen ja toisen läpinäkyvän aineen rajapintaa. Missä tilanteessa säde kokonaisheijastuu?",
       "kind": [
         "concept"
@@ -91,6 +93,7 @@
     {
       "id": "fy7-12-L2-01",
       "level": 2,
+      "core": true,
       "text": "Valokuidun ytimen taitekerroin on $1{,}47$, ja ytimen ja kuoren rajapinnan rajakulma on $82{,}0^\\circ$. Kuinka suuri on kuoren taitekerroin?",
       "answer": 1.4557,
       "unit": "",
@@ -225,6 +228,7 @@
     {
       "id": "fy7-12-L2-07",
       "level": 2,
+      "core": true,
       "kind": [
         "error",
         "reasoning"

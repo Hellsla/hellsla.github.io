@@ -3,6 +3,7 @@
     {
       "id": "fy4-16-L1-01",
       "level": 1,
+      "core": true,
       "text": "Hissi lähtee pohjakerroksesta ylöspäin ja kiihtyy $0{,}80\\,\\text{m/s}^2$. Hississä seisoo ihminen. Hänen massansa on $70{,}0\\,\\text{kg}$. Piirrä ihmisen voimakuvio. Kuinka suuri on lattian tukivoima ihmiseen?",
       "answer": 742.7,
       "unit": "N",
@@ -47,6 +48,7 @@
     {
       "id": "fy4-16-L1-06",
       "level": 1,
+      "core": true,
       "text": "Ihminen seisoo kylpyhuoneen vaa'alla hississä. Hissi liikkuu ylöspäin ja hidastaa vauhtiaan, kunnes se pysähtyy ylimpään kerrokseen. Vaaka mittaa tukivoimaa. Miten vaa'an lukema on verrattuna lukemaan, kun hissi on paikallaan?",
       "kind": [
         "concept"
@@ -130,6 +132,7 @@
     {
       "id": "fy4-16-L2-02",
       "level": 2,
+      "core": true,
       "text": "Pulkka lähtee levosta suoran rinteen ylimmästä kohdasta. Rinne on $18{,}0\\,\\text{m}$ pitkä ja $12{,}0^\\circ$:n kulmassa vaakatasoon nähden. Rinteen juurella pulkan nopeus on $5{,}10\\,\\text{m/s}$. Ilmanvastus jätetään huomiotta. Kuinka suuri on pulkan ja lumen välinen liikekitkakerroin?",
       "answer": 0.137262,
       "unit": "",
@@ -139,6 +142,7 @@
     {
       "id": "fy4-16-L2-03",
       "level": 2,
+      "core": true,
       "text": "Laskuvarjohyppääjän massa varusteineen on $80{,}0\\,\\text{kg}$. Hän putoaa nopeudella $52{,}0\\,\\text{m/s}$ ja avaa varjonsa. Kun hän putoaa $145\\,\\text{m}$, hänen nopeutensa pienenee $6{,}0\\,\\text{m/s}$:iin. Piirrä hyppääjän voimakuvio. Kuinka paljon mekaanista energiaa muuttuu tällä matkalla muiksi energiamuodoiksi?",
       "answer": 220.516,
       "unit": "kJ",

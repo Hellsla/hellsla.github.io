@@ -1,0 +1,10 @@
+[
+  {
+    "q": "The work $200\\,\\text{J}$ is done on a gas, and at the same time $50\\,\\text{J}$ of heat flows from it to the surroundings. How much does the internal energy of the gas change?",
+    "a": "$\\Delta U = Q + W = -50\\,\\text{J} + 200\\,\\text{J} = 150\\,\\text{J}$: the internal energy grows by $150\\,\\text{J}$. Work done on the system is positive and heat leaving the system is negative."
+  },
+  {
+    "q": "A steel measuring tape has been calibrated at $20\\,{}^\\circ\\text{C}$. It is used to measure a board in a frost of $-15\\,{}^\\circ\\text{C}$. Does the tape show too large or too small a length?",
+    "a": "Too large. Wood shrinks along the grain much less than steel, so the board's own change is small. In the frost the steel tape shortens, so the intervals of its scale are shorter than at calibration, and more of the scale fits along the length of the board. For example, over a distance of $10\\,\\text{m}$ the difference is $12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 10\\,\\text{m} \\cdot 35\\,\\text{K} \\approx 4\\,\\text{mm}$."
+  }
+]

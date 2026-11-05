@@ -3,6 +3,7 @@
     {
       "id": "fy6-1-L1-01",
       "level": 1,
+      "core": true,
       "text": "A charge of $45\\,\\text{C}$ passes through the filament of a lamp in $30\\,\\text{s}$. How large is the electric current through the lamp?",
       "answer": 1.5,
       "unit": "A",
@@ -19,6 +20,7 @@
     {
       "id": "fy6-1-L1-03",
       "level": 1,
+      "core": true,
       "text": "A battery transfers $54\\,\\text{J}$ of energy to a charge of $6.0\\,\\text{C}$ that passes through it. How large is the voltage of the battery?",
       "answer": 9.0,
       "unit": "V",
@@ -73,6 +75,7 @@
     {
       "id": "fy6-1-L1-07",
       "level": 1,
+      "core": true,
       "text": "Imagine a circuit diagram in which a battery, a switch and a lamp are drawn in one loop. The switch is drawn open, that is, the lever is lifted off the contact. What happens in the circuit?",
       "kind": [
         "concept"
@@ -207,6 +210,7 @@
     {
       "id": "fy6-1-L2-07",
       "level": 2,
+      "core": true,
       "text": "A student wants to show experimentally that current is not used up in a lamp. She measures the current at points of the same circuit before the lamp and after the lamp. The table contains example data from five measurements. The resolution of the ammeter, that is its smallest display step, is $0.01\\,\\text{A}$.\n\na) Describe how the ammeter is connected into the circuit and how the measurement is made so that the current is measured at both points.\n\nb) Calculate the average of the current before the lamp and after the lamp. Write the sums first.\n\nc) Do the measurements support the claim that current is used up in the lamp? Justify.",
       "kind": [
         "data",

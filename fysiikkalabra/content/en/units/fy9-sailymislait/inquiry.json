@@ -1,0 +1,490 @@
+{
+  "version": 1,
+  "contribution": "The review lesson brings together kinetic and potential energy, conservation of mechanical energy and the work–energy principle, the power of hydro and wind power stations, momentum and impulse, conservation of momentum in one-dimensional collisions, and stopping distance and safety equipment from module FY4 into one model of two conservation laws, and practises exam-style problems on them: choosing the law to suit the situation, signs, telling energy and momentum apart, a linearised graph of braking data, assessing a report and a heating problem that combines modules.",
+  "learn": [
+    "solve energy, impulse and collision problems by choosing the right conservation law",
+    "draw and interpret graphs of braking and collision data",
+    "assess claims and measurements about the conservation of momentum and energy with justification"
+  ],
+  "prior": [
+    "Kinetic energy is $\\tfrac12 mv^2$ and potential energy $mgh$ (chapter *Kinetic energy, potential energy and mechanical energy*)",
+    "The work done by forces other than the weight changes the mechanical energy (chapter *Conservation of mechanical energy and the work–energy principle*)",
+    "The impulse of the net force equals the change in momentum (chapter *Momentum and impulse*)",
+    "The total momentum is conserved when the impulse of the external forces is small (chapter *Conservation of momentum and one-dimensional collisions*)",
+    "The stopping distance is the reaction distance plus the braking distance (chapter *Road safety: braking, seat belts and airbags*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "In a railway yard a shunting locomotive pushes a $32\\,\\text{t}$ goods wagon into motion and brakes. The wagon rolls freely at $1.6\\,\\text{m/s}$ and collides with an identical wagon standing still. The coupling locks, and the wagons move on together. Nobody brakes, and the rolling resistance of the rails is very small during the collision. In the exam a situation like this can be the start of a problem: the numbers are given, but the law is not.",
+      "question": "How fast do the wagons move on together, and do they have as much kinetic energy together as the rolling wagon had before the collision?"
+    },
+    {
+      "id": "lt-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting point 1: the speed doubles",
+      "prompt": "A car accelerates from $40\\,\\text{km/h}$ to $80\\,\\text{km/h}$. By what factor does the kinetic energy of the car increase?",
+      "choices": [
+        {
+          "text": "By a factor of two, because the speed doubles.",
+          "feedback": "Kinetic energy is not proportional to the speed but to its square, $E_\\text{k} = \\tfrac12 mv^2$. Twice the speed gives a factor of $2^2 = 4$. Review this in the chapter *Kinetic energy, potential energy and mechanical energy*."
+        },
+        {
+          "text": "By a factor of four, because the speed is squared.",
+          "feedback": "Correct. $E_\\text{k} = \\tfrac12 mv^2$, so the factor is $\\left(\\tfrac{80}{40}\\right)^2 = 4$. That is why the braking distance also becomes four times as long. Review this if needed in the chapter *Kinetic energy, potential energy and mechanical energy*.",
+          "correct": true
+        },
+        {
+          "text": "It does not change, because the mass of the car stays the same.",
+          "feedback": "The mass stays the same, but the kinetic energy also depends on the speed, $E_\\text{k} = \\tfrac12 mv^2$, and even on its square. Review this in the chapter *Kinetic energy, potential energy and mechanical energy*."
+        }
+      ]
+    },
+    {
+      "id": "lt-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting point 2: a steep and a gentle slide",
+      "prompt": "Two frictionless slides start at the same height and end at the same level. One is steep and short, the other gentle and long. A child starts from rest on each. On which slide is the child's speed greater at the bottom?",
+      "choices": [
+        {
+          "text": "On the steep one, because the acceleration is greater there.",
+          "feedback": "On the steep slide the acceleration is greater, but on the gentle one it acts over a longer distance. Energy decides: without friction $mgh = \\tfrac12 mv^2$, so $v = \\sqrt{2gh}$ depends only on the height. Review this in the chapter *Conservation of mechanical energy and the work–energy principle*."
+        },
+        {
+          "text": "On the gentle one, because the acceleration lasts longer there.",
+          "feedback": "A longer time does not give a greater speed, because the acceleration is smaller on the gentle slide. Without friction the mechanical energy is conserved, and the speed depends only on the difference in height. Review this in the chapter *Conservation of mechanical energy and the work–energy principle*."
+        },
+        {
+          "text": "The same, because only the difference in height matters.",
+          "feedback": "Correct. The normal force does no work, so the mechanical energy is conserved and $v = \\sqrt{2gh}$ on both slides. Review this if needed in the chapter *Conservation of mechanical energy and the work–energy principle*.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "lt-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting point 3: friction on the way down",
+      "prompt": "A sledge slides down a hill from rest, and at the foot of the hill its speed is less than $\\sqrt{2gh}$. Which statement about friction and energy is correct?",
+      "choices": [
+        {
+          "text": "Friction does negative work, and mechanical energy is transformed into internal energy.",
+          "feedback": "Correct. By the work–energy principle $mgh + W_\\text{other} = \\tfrac12 mv^2$, and the work done by friction $W_\\text{other}$ is negative. The total energy is conserved when the internal energy of the snow, the runners and the air is included. Review this if needed in the chapter *Conservation of mechanical energy and the work–energy principle*.",
+          "correct": true
+        },
+        {
+          "text": "Friction consumes energy, so the total energy decreases during the descent.",
+          "feedback": "The total energy is always conserved. Friction transforms mechanical energy into internal energy: the snow, the runners and the air warm up slightly. Review this in the chapter *Conservation of mechanical energy and the work–energy principle*."
+        },
+        {
+          "text": "Friction reduces the potential energy, so the hill is effectively lower.",
+          "feedback": "The change in potential energy depends only on the difference in height, $mgh$, and friction does not change it. Friction does negative work, which reduces the kinetic energy. Review this in the chapter *Conservation of mechanical energy and the work–energy principle*."
+        }
+      ]
+    },
+    {
+      "id": "lt-4",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting point 4: mat or floor",
+      "prompt": "A gymnast jumps down from an apparatus, once onto a thick mat and once onto a hard floor. Both times she hits the surface at the same speed and stops. Why does the mat protect her?",
+      "choices": [
+        {
+          "text": "The mat reduces the change in the gymnast's momentum as she stops.",
+          "feedback": "The change in momentum is the same both times: the momentum changes from $mv$ to zero. The mat makes the stopping time longer, so the same change is produced by a smaller average force. Review this in the chapter *Momentum and impulse*."
+        },
+        {
+          "text": "The mat makes the stopping time longer, so the average force is smaller.",
+          "feedback": "Correct. By the impulse–momentum principle $F_\\text{avg}\\,\\Delta t = |\\Delta p|$, and $|\\Delta p|$ is the same. A longer $\\Delta t$ means a smaller average force. Review this if needed in the chapter *Momentum and impulse*.",
+          "correct": true
+        },
+        {
+          "text": "The mat absorbs the kinetic energy, so there is no impulse.",
+          "feedback": "Stopping always requires an impulse of magnitude $|\\Delta p| = mv$. The mat transforms the kinetic energy into internal energy, but the protective effect comes from the longer stopping time and therefore the smaller force. Review this in the chapter *Momentum and impulse*."
+        }
+      ]
+    },
+    {
+      "id": "lt-5",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting point 5: a body check on the ice",
+      "prompt": "Two ice hockey players collide and stick together. The friction of the ice is negligible during the collision. What is conserved in the collision?",
+      "choices": [
+        {
+          "text": "Both the total momentum and the kinetic energy.",
+          "feedback": "Kinetic energy is conserved only in an elastic collision. When the players stick together, the collision is perfectly inelastic, and part of the kinetic energy is transformed into internal energy. Review this in the chapter *Conservation of momentum and one-dimensional collisions*."
+        },
+        {
+          "text": "The kinetic energy, but not the total momentum.",
+          "feedback": "Exactly the other way round. The forces between the players are internal and opposite, so the total momentum is conserved. Kinetic energy is transformed into internal energy. Review this in the chapter *Conservation of momentum and one-dimensional collisions*."
+        },
+        {
+          "text": "The total momentum, but not the kinetic energy.",
+          "feedback": "Correct. The impulse of the external forces is small, so momentum is conserved, but in a perfectly inelastic collision the largest possible share of the kinetic energy is transformed into other forms of energy. Review this if needed in the chapter *Conservation of momentum and one-dimensional collisions*.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "lt-6",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting point 6: the power of a wind turbine",
+      "prompt": "The wind speed increases from $5\\,\\text{m/s}$ to $10\\,\\text{m/s}$, and the efficiency of the turbine stays the same. The turbine is not yet running at its rated power. By what factor does its power increase?",
+      "choices": [
+        {
+          "text": "By a factor of two, because the wind speed doubles.",
+          "feedback": "At twice the speed, twice the amount of air flows through the rotor every second, and each kilogram has four times the kinetic energy. The power increases by a factor of $2 \\cdot 4 = 8$. Review this in the chapter *Hydro and wind power as energy converters*."
+        },
+        {
+          "text": "By a factor of four, because kinetic energy depends on the square of the speed.",
+          "feedback": "The kinetic energy per kilogram becomes four times as large, but twice the amount of air also flows through every second. That is why $P = \\tfrac12\\eta\\rho Av^3$, and the factor is $2^3 = 8$. Review this in the chapter *Hydro and wind power as energy converters*."
+        },
+        {
+          "text": "By a factor of eight, because the power depends on the cube of the speed.",
+          "feedback": "Correct. $P = \\tfrac12\\eta\\rho Av^3$, so the factor is $2^3 = 8$. Above the rated power the power is limited, and the formula no longer holds. Review this if needed in the chapter *Hydro and wind power as energy converters*.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "aineisto",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Three collisions on an air track",
+      "source": "example",
+      "source_note": "An invented example of measurements on a school air track: the numbers were calculated from conservation of momentum, and variation like that of real measurements was added to them.",
+      "text": "On an air track glider A ($m_\\text{A} = 0.300\\,\\text{kg}$) collides with glider B ($m_\\text{B} = 0.200\\,\\text{kg}$), which is at rest. Light gates measure the velocities just before and just after the collision. On three occasions there is a different buffer between the gliders: a spring, hard rubber and a hook-and-loop strip that holds the gliders together. All velocities are in the same direction.\n\n| Collision | $v_\\text{A}\\ (\\text{m/s})$ | $v_\\text{A}'\\ (\\text{m/s})$ | $v_\\text{B}'\\ (\\text{m/s})$ |\n|---|---|---|---|\n| spring buffer | $0.520$ | $0.098$ | $0.620$ |\n| rubber buffer | $0.600$ | $0.213$ | $0.580$ |\n| hook-and-loop strip | $0.480$ | $0.284$ | $0.284$ |\n\nFor each collision, calculate the total momentum and the total kinetic energy of the gliders before and after. Answer below with the number for the hook-and-loop collision. The model answer compares all three collisions.",
+      "question": {
+        "type": "numeric",
+        "prompt": "What percentage of the gliders' kinetic energy was transformed into other forms of energy in the hook-and-loop collision? Answer in per cent.",
+        "answer": 41.66,
+        "unit": "%",
+        "tolerance": 0.03,
+        "hints": [
+          "Calculate the kinetic energy before the collision, when only glider A moves, and after it, when both gliders move together.",
+          "After the collision the moving mass is $m_\\text{A} + m_\\text{B} = 0.500\\,\\text{kg}$.",
+          "$E_\\text{k} = \\tfrac12 \\cdot 0.300\\,\\text{kg} \\cdot (0.480\\,\\tfrac{\\text{m}}{\\text{s}})^2$ before and $\\tfrac12 \\cdot 0.500\\,\\text{kg} \\cdot (0.284\\,\\tfrac{\\text{m}}{\\text{s}})^2$ after."
+        ],
+        "mistakes": [
+          {
+            "value": 58.34,
+            "feedback": "This is the share of the kinetic energy that remained. The question asks for the share that was transformed: $100\\,\\% - 58.3\\,\\%$."
+          },
+          {
+            "value": 1.39,
+            "feedback": "You compared momenta. Momentum is conserved almost exactly; the question is about the kinetic energy $\\tfrac12 mv^2$."
+          },
+          {
+            "value": 65.0,
+            "feedback": "You calculated the kinetic energy after the collision for glider A only. The gliders move together, so the mass is $0.500\\,\\text{kg}$."
+          }
+        ],
+        "solution": "**Given:** $m_\\text{A} = 0.300\\,\\text{kg}$, $m_\\text{B} = 0.200\\,\\text{kg}$; in the hook-and-loop collision $v_\\text{A} = 0.480\\,\\text{m/s}$, B at rest, and afterwards the common velocity $v' = 0.284\\,\\text{m/s}$\n\n**Find:** the share of the kinetic energy transformed into other forms of energy, in per cent\n\n**Principle:** The gliders stick together, so the collision is perfectly inelastic. Momentum is conserved, because on the air track the external forces cancel each other, but kinetic energy is transformed into internal energy of the strip and the gliders and into sound. The transformed share is the decrease in kinetic energy divided by the original kinetic energy.\n\n**Formula:** $E_\\text{k} = \\tfrac12 m_\\text{A} v_\\text{A}^2$, $E_\\text{k}' = \\tfrac12 (m_\\text{A} + m_\\text{B})\\,v'^2$ and the share $\\dfrac{E_\\text{k} - E_\\text{k}'}{E_\\text{k}}$\n\n**Conversions:** All quantities are in base units, so no conversions are needed. The ratio is turned into per cent by multiplying by $100\\,\\%$.\n\n**Substitution:** $E_\\text{k} = \\tfrac12 \\cdot 0.300\\,\\text{kg} \\cdot \\left(0.480\\,\\tfrac{\\text{m}}{\\text{s}}\\right)^2 = 0.03456\\,\\text{J}$ and $E_\\text{k}' = \\tfrac12 \\cdot 0.500\\,\\text{kg} \\cdot \\left(0.284\\,\\tfrac{\\text{m}}{\\text{s}}\\right)^2 = 0.02016\\,\\text{J}$. The share is $\\dfrac{0.03456\\,\\text{J} - 0.02016\\,\\text{J}}{0.03456\\,\\text{J}} = 0.4166 = 41.7\\,\\%$\n\n**Answer:** about $42\\,\\%$, two significant figures, because the difference of two nearly equal energies magnifies the uncertainty in the third digit of the velocities.\n\n**Reasonableness:** In a perfectly inelastic collision with a body at rest the share of kinetic energy transformed is $\\dfrac{m_\\text{B}}{m_\\text{A} + m_\\text{B}} = \\dfrac{0.200}{0.500} = 40\\,\\%$, so the result is as expected. Momentum was conserved: $0.144\\,\\text{kg} \\cdot \\text{m/s}$ before and $0.142\\,\\text{kg} \\cdot \\text{m/s}$ after. With the spring buffer only about $2\\,\\%$ of the kinetic energy was transformed (almost elastic), with the rubber buffer about $25\\,\\%$, and momentum was conserved in all three to within about $2\\,\\%$."
+      }
+    },
+    {
+      "id": "teoriatiivistelma",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava",
+        "Virheet",
+        "Kertaa"
+      ]
+    },
+    {
+      "id": "virhe-kimpoaminen",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the mistake: a ball bounces off a wall",
+      "prompt": "A student calculated the change in momentum of a $0.20\\,\\text{kg}$ ball that hits a wall at $5.0\\,\\text{m/s}$ and bounces straight back at $4.0\\,\\text{m/s}$: “$\\Delta p = 0.20\\,\\text{kg} \\cdot 4.0\\,\\tfrac{\\text{m}}{\\text{s}} - 0.20\\,\\text{kg} \\cdot 5.0\\,\\tfrac{\\text{m}}{\\text{s}} = -0.20\\,\\text{kg} \\cdot \\text{m/s}$.” What is wrong in the solution?",
+      "choices": [
+        {
+          "text": "The momentum does not change at all, because the mass of the ball stays the same the whole time.",
+          "feedback": "The momentum $p = mv$ changes when the velocity changes, and a mere change of direction also changes the velocity. The mistake is in the sign: the velocity of the ball bouncing back is $-4.0\\,\\text{m/s}$."
+        },
+        {
+          "text": "The velocity of the ball bouncing back is $-4.0\\,\\text{m/s}$, not $+4.0\\,\\text{m/s}$.",
+          "feedback": "Correct. When the direction towards the wall is positive, $\\Delta p = 0.20\\,\\text{kg} \\cdot (-4.0\\,\\tfrac{\\text{m}}{\\text{s}}) - 0.20\\,\\text{kg} \\cdot 5.0\\,\\tfrac{\\text{m}}{\\text{s}} = -1.8\\,\\text{kg} \\cdot \\text{m/s}$. The impulse the wall exerts on the ball is equal to it.",
+          "correct": true
+        },
+        {
+          "text": "The speeds should have been added without the mass: $\\Delta p = 9.0\\,\\text{m/s}$.",
+          "feedback": "The change in momentum needs the mass, and its unit is $\\text{kg} \\cdot \\text{m/s}$. The magnitude of the change in velocity is indeed $9.0\\,\\text{m/s}$ when the signs are taken into account, so $|\\Delta p| = 0.20\\,\\text{kg} \\cdot 9.0\\,\\text{m/s}$."
+        }
+      ]
+    },
+    {
+      "id": "puskurit",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Read the graph: a hard and a soft buffer",
+      "figure": "fy4-9/pysaytys",
+      "prompt": "In the graph the same $1.0\\,\\text{kg}$ trolley stops from the same speed, once against a hard and once against a soft buffer. Read the largest forces and the durations of the collisions from the graph. Which statement is correct?",
+      "choices": [
+        {
+          "text": "The largest force of the hard buffer is about four times as large, so its impulse is also four times as large.",
+          "feedback": "You read the largest forces correctly ($80\\,\\text{N}$ and $20\\,\\text{N}$), but the impulse is the area between the curve and the time axis, not the largest force. The hard collision lasts only about a quarter of the time, so the areas are equal: the change in the trolley's momentum is the same. Review this in the chapter *Momentum and impulse*."
+        },
+        {
+          "text": "The largest force of the hard buffer is about four times as large, and the collision lasts about a quarter of the time.",
+          "feedback": "Correct. From the graph you read about $80\\,\\text{N}$ and $0.04\\,\\text{s}$, and $20\\,\\text{N}$ and $0.16\\,\\text{s}$. The trolley stops from the same speed, so $|\\Delta p| = mv$ and the impulses are the same. The soft buffer spreads the same impulse over four times the time, so the force is a quarter.",
+          "correct": true
+        },
+        {
+          "text": "The collision with the soft buffer lasts about four times as long, so its impulse is larger.",
+          "feedback": "You read the durations correctly ($0.16\\,\\text{s}$ and $0.04\\,\\text{s}$), but a longer time does not increase the impulse when the force is smaller at the same time. The areas are equal: both times the impulse is the same as the change in the trolley's momentum. Review this in the chapter *Momentum and impulse*."
+        }
+      ]
+    },
+    {
+      "id": "luistelijat",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Justified claim: skaters push off",
+      "prompt": "Two skaters stand at rest on the ice and push each other. The adult's mass is $80\\,\\text{kg}$ and the child's $40\\,\\text{kg}$. Which statement is correct just after the push?",
+      "choices": [
+        {
+          "text": "The child gets twice the speed and twice the kinetic energy of the adult.",
+          "feedback": "Correct. The total momentum is zero and stays zero, so the momenta are equal and opposite: $80v_\\text{a} = 40v_\\text{c}$. With the same momentum the kinetic energy $\\tfrac{p^2}{2m}$ of the lighter one is twice as large.",
+          "correct": true
+        },
+        {
+          "text": "Both get the same kinetic energy, because the pushing forces are equal.",
+          "feedback": "The forces are equal and act for the same time, so the momenta are equal. The lighter one moves faster and covers a longer distance during the push, so more work is done on it: the child's kinetic energy is twice as large."
+        },
+        {
+          "text": "The total momentum increases, because each skater starts moving in their own direction.",
+          "feedback": "Momentum is a vector. The skaters move in opposite directions, and their momenta cancel each other, so the total momentum stays zero. Only the kinetic energy increases, and it comes from the energy of the muscles."
+        }
+      ]
+    },
+    {
+      "id": "marka-tie",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Justified claim: a wet road",
+      "prompt": "The speed of a car is $80\\,\\text{km/h}$, and the driver's reaction time is the same as on a dry road. On the wet road the deceleration is half of that on the dry road. Which statement about the stopping distance is correct?",
+      "choices": [
+        {
+          "text": "The stopping distance doubles, because the deceleration is halved.",
+          "feedback": "Only the braking distance $\\tfrac{v_0^2}{2a}$ doubles. The reaction distance $v_0 t_\\text{r}$ does not depend on the road, so the stopping distance increases by less than a factor of two."
+        },
+        {
+          "text": "The stopping distance becomes four times as long, because the braking distance depends on a square.",
+          "feedback": "The braking distance depends on the square of the speed, but it is inversely proportional to the deceleration: half the deceleration gives twice the braking distance. The reaction distance stays the same."
+        },
+        {
+          "text": "The braking distance doubles, but the stopping distance increases by less.",
+          "feedback": "Correct. $s_\\text{p} = v_0 t_\\text{r} + \\tfrac{v_0^2}{2a}$. When $a$ is halved, the second term doubles, but the reaction distance stays the same. For example, $t_\\text{r} = 1.0\\,\\text{s}$ and $a = 8.0\\,\\text{m/s}^2$ give $22\\,\\text{m} + 31\\,\\text{m} = 53\\,\\text{m}$, and on the wet road $22\\,\\text{m} + 62\\,\\text{m} = 84\\,\\text{m}$.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "pyoraily",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "A cyclist going downhill",
+      "prompt": "A cyclist starts from the top of a hill at $3.0\\,\\text{m/s}$ and freewheels $22\\,\\text{m}$ lower down without pedalling. The cyclist and the bicycle have a total mass of $85\\,\\text{kg}$. Air resistance and rolling resistance together do $-11\\,\\text{kJ}$ of work during the descent. What is the speed at the bottom of the hill?",
+      "answer": 13.48,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "hints": [
+        "Which forces do work? The work done by the weight is the change in potential energy; the work done by the other forces is calculated separately.",
+        "The work–energy principle: $\\tfrac12 mv_1^2 + mgh + W_\\text{other} = \\tfrac12 mv_2^2$, when the zero level is at the bottom of the hill.",
+        "$v_2 = \\sqrt{v_1^2 + 2gh + \\dfrac{2W_\\text{other}}{m}}$, and $W_\\text{other} = -11\\,000\\,\\text{J}$."
+      ],
+      "mistakes": [
+        {
+          "value": 20.99,
+          "feedback": "You left out the work done by the resistive forces. It is negative and reduces the mechanical energy: $W_\\text{other} = -11\\,000\\,\\text{J}$."
+        },
+        {
+          "value": 26.45,
+          "feedback": "You added the work done by the resistive forces. The resistive forces point against the motion, so their work is negative and reduces the speed."
+        },
+        {
+          "value": 181.8,
+          "feedback": "This is $v_2^2$ in the unit $\\text{m}^2\\text{/s}^2$. Take the square root as well."
+        }
+      ],
+      "solution": "**Given:** $v_1 = 3.0\\,\\text{m/s}$, difference in height $h = 22\\,\\text{m}$, $m = 85\\,\\text{kg}$, work done by the resistive forces $W_\\text{other} = -11\\,\\text{kJ}$, $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the speed $v_2$ at the bottom of the hill\n\n**Principle:** The weight does work, which is taken into account as the change in potential energy. The normal force is perpendicular to the motion and does no work. Air resistance and rolling resistance are other forces whose work is known, so the work–energy principle is used (chapter *Conservation of mechanical energy and the work–energy principle*). The zero level is chosen at the bottom of the hill.\n\n**Formula:** $\\tfrac12 mv_1^2 + mgh + W_\\text{other} = \\tfrac12 mv_2^2$, so $v_2 = \\sqrt{v_1^2 + 2gh + \\dfrac{2W_\\text{other}}{m}}$\n\n**Conversions:** $-11\\,\\text{kJ} = -11 \\cdot 1000\\,\\text{J} = -11\\,000\\,\\text{J}$\n\n**Substitution:** $v_2^2 = \\left(3.0\\,\\tfrac{\\text{m}}{\\text{s}}\\right)^2 + 2 \\cdot 9.81\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot 22\\,\\text{m} + \\dfrac{2 \\cdot (-11\\,000\\,\\text{J})}{85\\,\\text{kg}} = 9.0\\,\\tfrac{\\text{m}^2}{\\text{s}^2} + 431.6\\,\\tfrac{\\text{m}^2}{\\text{s}^2} - 258.8\\,\\tfrac{\\text{m}^2}{\\text{s}^2} = 181.8\\,\\tfrac{\\text{m}^2}{\\text{s}^2}$, so $v_2 = \\sqrt{181.8}\\,\\text{m/s} = 13.48\\,\\text{m/s}$\n\n**Answer:** $v_2 \\approx 13\\,\\text{m/s}$, or about $49\\,\\text{km/h}$, two significant figures like the height $22\\,\\text{m}$ and the work $11\\,\\text{kJ}$.\n\n**Reasonableness:** Without the resistive forces the speed would be $\\sqrt{440.6}\\,\\text{m/s} \\approx 21\\,\\text{m/s}$. Here the resistive forces take more than half of the potential energy $mgh \\approx 18.3\\,\\text{kJ}$ released in the descent, which fits a high speed, since air resistance grows quickly."
+    },
+    {
+      "id": "pienvesivoimala",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "A small hydropower plant",
+      "prompt": "$45\\,\\text{m}^3$ of water flows through the turbines of a small river hydropower plant every second, and the head is $8.5\\,\\text{m}$. The efficiency of the plant is $88\\,\\%$. What is the electric power of the plant? Answer in megawatts.",
+      "answer": 3.302,
+      "unit": "MW",
+      "tolerance": 0.02,
+      "hints": [
+        "How much potential energy does the water flowing through the turbines lose every second?",
+        "The mass of water flowing in one second is $\\rho Q$, and its potential energy is $\\rho Q g h$ every second.",
+        "$P = \\eta \\rho Q g h = 0.88 \\cdot 1000\\,\\tfrac{\\text{kg}}{\\text{m}^3} \\cdot 45\\,\\tfrac{\\text{m}^3}{\\text{s}} \\cdot 9.81\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot 8.5\\,\\text{m}$."
+      ],
+      "mistakes": [
+        {
+          "value": 3.752,
+          "feedback": "This is the power the water brings. The electric power of the plant is only part of it: multiply by the efficiency $0.88$."
+        },
+        {
+          "value": 4.264,
+          "feedback": "You divided by the efficiency. The plant gives less electricity than the water brings energy, so multiply by the efficiency."
+        },
+        {
+          "value": 0.3366,
+          "feedback": "You forgot the acceleration of free fall $g$. The potential energy is $mgh$, not $mh$."
+        }
+      ],
+      "solution": "**Given:** flow rate $Q = 45\\,\\text{m}^3\\text{/s}$, head $h = 8.5\\,\\text{m}$, efficiency $\\eta = 88\\,\\%$, density of water $\\rho = 1000\\,\\text{kg/m}^3$, $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the electric power $P$ in megawatts\n\n**Principle:** Over the head the water loses potential energy, and the plant converts the share $\\eta$ of it into electricity. Power is energy per second: the mass flowing in one second is $\\rho Q$ (chapter *Hydro and wind power as energy converters*). The kinetic energy of the water in the headwater and the tailwater is assumed to be small.\n\n**Formula:** $P = \\eta \\rho Q g h$\n\n**Conversions:** $88\\,\\% = 0.88$ and finally $1\\,\\text{W} = 10^{-6}\\,\\text{MW}$. The other quantities are in base units.\n\n**Substitution:** $P = 0.88 \\cdot 1000\\,\\tfrac{\\text{kg}}{\\text{m}^3} \\cdot 45\\,\\tfrac{\\text{m}^3}{\\text{s}} \\cdot 9.81\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot 8.5\\,\\text{m} = 3\\,302\\,000\\,\\text{W} = 3.302\\,\\text{MW}$\n\n**Answer:** $P \\approx 3.3\\,\\text{MW}$, two significant figures like the flow rate $45\\,\\text{m}^3\\text{/s}$ and the head $8.5\\,\\text{m}$.\n\n**Reasonableness:** One cubic metre of water loses $1000\\,\\text{kg} \\cdot 9.81\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot 8.5\\,\\text{m} \\approx 83\\,\\text{kJ}$ in the fall. With $45$ cubic metres flowing every second, the power of the water is about $3.8\\,\\text{MW}$, and $88\\,\\%$ of it is $3.3\\,\\text{MW}$. A few megawatts is a typical power for a small hydropower plant."
+    },
+    {
+      "id": "turvavyo",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "A seat belt in a crash",
+      "prompt": "A car hits an obstacle at $40\\,\\text{km/h}$. A $70\\,\\text{kg}$ passenger wearing a seat belt stops together with the crumpling front of the car in $0.12\\,\\text{s}$. What is the average net force on the passenger? Answer in kilonewtons.",
+      "answer": 6.481,
+      "unit": "kN",
+      "tolerance": 0.02,
+      "hints": [
+        "What is the change in the passenger's momentum when the passenger stops?",
+        "The impulse–momentum principle: $F_\\text{avg}\\,\\Delta t = |\\Delta p| = mv$. First convert the speed into the unit $\\text{m/s}$.",
+        "$40\\,\\text{km/h} = 40 \\cdot \\dfrac{1000\\,\\text{m}}{3600\\,\\text{s}} \\approx 11.1\\,\\text{m/s}$."
+      ],
+      "mistakes": [
+        {
+          "value": 23.33,
+          "feedback": "You substituted the speed in the unit $\\text{km/h}$. Convert it first: $40\\,\\text{km/h} \\approx 11.1\\,\\text{m/s}$."
+        },
+        {
+          "value": 0.7778,
+          "feedback": "This is the change in momentum in the unit $\\text{kN} \\cdot \\text{s}$. The force is obtained by dividing it by the stopping time $0.12\\,\\text{s}$."
+        },
+        {
+          "value": 64.81,
+          "feedback": "You used the time $0.012\\,\\text{s}$. The stopping time is $0.12\\,\\text{s}$."
+        }
+      ],
+      "solution": "**Given:** $m = 70\\,\\text{kg}$, impact speed $v = 40\\,\\text{km/h}$, final speed $0$, stopping time $\\Delta t = 0.12\\,\\text{s}$\n\n**Find:** the average net force $F_\\text{avg}$ on the passenger in kilonewtons\n\n**Principle:** The passenger's momentum changes from $mv$ to zero, and by the impulse–momentum principle the change equals the impulse of the net force. The average force is the change in momentum divided by the stopping time (chapter *Momentum and impulse*).\n\n**Formula:** $F_\\text{avg}\\,\\Delta t = |\\Delta p| = mv$, so $F_\\text{avg} = \\dfrac{mv}{\\Delta t}$\n\n**Conversions:** $40\\,\\text{km/h} = 40 \\cdot \\dfrac{1000\\,\\text{m}}{3600\\,\\text{s}} = 11.11\\,\\text{m/s}$ and finally $1\\,\\text{N} = 0.001\\,\\text{kN}$\n\n**Substitution:** $F_\\text{avg} = \\dfrac{70\\,\\text{kg} \\cdot 11.11\\,\\tfrac{\\text{m}}{\\text{s}}}{0.12\\,\\text{s}} = \\dfrac{777.8\\,\\text{kg} \\cdot \\text{m/s}}{0.12\\,\\text{s}} = 6481\\,\\text{N} = 6.481\\,\\text{kN}$\n\n**Answer:** $F_\\text{avg} \\approx 6.5\\,\\text{kN}$, two significant figures like the time $0.12\\,\\text{s}$ and the speed $40\\,\\text{km/h}$.\n\n**Reasonableness:** The force is about $6481\\,\\text{N} : (70\\,\\text{kg} \\cdot 9.81\\,\\tfrac{\\text{m}}{\\text{s}^2}) \\approx 9.4$ times the passenger's weight. Without a belt the passenger would stop against the dashboard in hundredths of a second, and the force would be about ten times as large."
+    },
+    {
+      "id": "taklaus",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "A body check from opposite directions",
+      "prompt": "Ice hockey player A ($92\\,\\text{kg}$) skates east at $6.0\\,\\text{m/s}$, and player B ($78\\,\\text{kg}$) west at $4.5\\,\\text{m/s}$. They collide and stick together. What is their common velocity just after the collision?",
+      "answer": 1.182,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "hints": [
+        "Choose a positive direction. What is the sign of B's velocity?",
+        "In a perfectly inelastic collision $m_\\text{A} v_\\text{A} + m_\\text{B} v_\\text{B} = (m_\\text{A} + m_\\text{B})\\,v'$.",
+        "When east is positive, $v_\\text{B} = -4.5\\,\\text{m/s}$."
+      ],
+      "mistakes": [
+        {
+          "value": 5.312,
+          "feedback": "You added the momenta without signs. The players move in opposite directions, so B's velocity is negative."
+        },
+        {
+          "value": 0.75,
+          "feedback": "You calculated the average of the velocities. The players' masses are different, so conservation of momentum is needed."
+        },
+        {
+          "value": 2.185,
+          "feedback": "You divided by A's mass only. After the collision both move together, so divide by the total mass $170\\,\\text{kg}$."
+        }
+      ],
+      "solution": "**Given:** $m_\\text{A} = 92\\,\\text{kg}$, $v_\\text{A} = 6.0\\,\\text{m/s}$ east, $m_\\text{B} = 78\\,\\text{kg}$, $v_\\text{B} = 4.5\\,\\text{m/s}$ west; the players stick together\n\n**Find:** the common velocity $v'$, with its direction, just after the collision\n\n**Principle:** The forces between the players are internal. The friction of the ice is small and the collision is short, so the impulse of the external forces is negligible and the total momentum is conserved. The players move on together, so the collision is perfectly inelastic (chapter *Conservation of momentum and one-dimensional collisions*). East is chosen as the positive direction, so $v_\\text{B} = -4.5\\,\\text{m/s}$.\n\n**Formula:** $m_\\text{A} v_\\text{A} + m_\\text{B} v_\\text{B} = (m_\\text{A} + m_\\text{B})\\,v'$, so $v' = \\dfrac{m_\\text{A} v_\\text{A} + m_\\text{B} v_\\text{B}}{m_\\text{A} + m_\\text{B}}$\n\n**Conversions:** All quantities are in base units, so no conversions are needed.\n\n**Substitution:** $v' = \\dfrac{92\\,\\text{kg} \\cdot 6.0\\,\\tfrac{\\text{m}}{\\text{s}} + 78\\,\\text{kg} \\cdot \\left(-4.5\\,\\tfrac{\\text{m}}{\\text{s}}\\right)}{92\\,\\text{kg} + 78\\,\\text{kg}} = \\dfrac{552\\,\\text{kg} \\cdot \\tfrac{\\text{m}}{\\text{s}} - 351\\,\\text{kg} \\cdot \\tfrac{\\text{m}}{\\text{s}}}{170\\,\\text{kg}} = 1.182\\,\\text{m/s}$\n\n**Answer:** $v' \\approx 1.2\\,\\text{m/s}$ east, two significant figures like the velocities $6.0\\,\\text{m/s}$ and $4.5\\,\\text{m/s}$.\n\n**Reasonableness:** The velocity is positive, because A's momentum $552\\,\\text{kg} \\cdot \\text{m/s}$ is larger than B's $351\\,\\text{kg} \\cdot \\text{m/s}$. The kinetic energy decreases from $2446\\,\\text{J}$ to about $119\\,\\text{J}$, as it should in a perfectly inelastic collision: most of it is transformed into internal energy."
+    },
+    {
+      "id": "lisaa",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "At the end of the lesson there are exam-style problems. Write your solution in your notebook or on the computer as in the exam, and only then assess it with the model answer and the marking scheme."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "A bullet is fired into a wooden block hanging on a string and stays in it. The block with the bullet swings upwards. Which statement is correct?",
+      "choices": [
+        {
+          "text": "Mechanical energy is conserved throughout the whole event, because there is no friction.",
+          "feedback": "When the bullet stops in the wood, a large part of the kinetic energy is transformed into internal energy: the collision is perfectly inelastic. Mechanical energy is conserved only in the swing. Review this in the chapter *Conservation of momentum and one-dimensional collisions*."
+        },
+        {
+          "text": "In the collision momentum is conserved, in the swing mechanical energy.",
+          "feedback": "Correct. The collision is so short that the external forces have no time to change the momentum. In the swing the force of the string is perpendicular to the motion, so only the weight does work, and the mechanical energy is conserved. See the chapter *Conservation of mechanical energy and the work–energy principle* for why the force of the string does no work.",
+          "correct": true
+        },
+        {
+          "text": "Momentum is also conserved in the swing, because the block and the bullet stay together.",
+          "feedback": "In the swing the weight and the force of the string change the velocity of the block, so its momentum decreases to zero by the highest point. Momentum is conserved only in the short collision. Review this in the chapter *Momentum and impulse*."
+        }
+      ],
+      "practice": "Review the types of collision in the chapter [*Conservation of momentum and one-dimensional collisions*](fy4-10.html) and conservation of mechanical energy in the chapter [*Conservation of mechanical energy and the work–energy principle*](fy4-8.html)."
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculation",
+      "prompt": "A child ($25\\,\\text{kg}$) slides down a playground slide from rest. The top of the slide is $3.2\\,\\text{m}$ higher than the bottom, and at the bottom the child's speed is $5.4\\,\\text{m/s}$. What percentage of the mechanical energy was transformed into internal energy during the slide?",
+      "answer": 53.56,
+      "unit": "%",
+      "tolerance": 0.02,
+      "hints": [
+        "What is the child's mechanical energy at the top and at the bottom, when the zero level is at the bottom of the slide?",
+        "At the top $E_\\text{p} = mgh$ and $E_\\text{k} = 0$, at the bottom $E_\\text{k} = \\tfrac12 mv^2$ and $E_\\text{p} = 0$.",
+        "The share is $\\dfrac{mgh - \\tfrac12 mv^2}{mgh}$."
+      ],
+      "mistakes": [
+        {
+          "value": 46.44,
+          "feedback": "This is the share of the mechanical energy that remained as kinetic energy. The question asks for the share transformed into internal energy."
+        },
+        {
+          "value": 7.11,
+          "feedback": "You forgot the factor $\\tfrac12$ in the expression for kinetic energy: $E_\\text{k} = \\tfrac12 mv^2$."
+        }
+      ],
+      "practice": "Review the work–energy principle in the chapter [*Conservation of mechanical energy and the work–energy principle*](fy4-8.html) and the zero level in the chapter [*Kinetic energy, potential energy and mechanical energy*](fy4-7.html).",
+      "solution": "**Given:** $m = 25\\,\\text{kg}$, difference in height $h = 3.2\\,\\text{m}$, initial speed $0$, final speed $v = 5.4\\,\\text{m/s}$, $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the share of the mechanical energy transformed into internal energy, in per cent\n\n**Principle:** The total energy is conserved. Friction and air resistance do negative work, so the mechanical energy decreases by exactly the amount transformed into internal energy (chapter *Conservation of mechanical energy and the work–energy principle*). The zero level is chosen at the bottom of the slide.\n\n**Formula:** $E_\\text{mech,1} = mgh$, $E_\\text{mech,2} = \\tfrac12 mv^2$ and the share $\\dfrac{mgh - \\tfrac12 mv^2}{mgh}$\n\n**Conversions:** All quantities are in base units. The ratio is turned into per cent by multiplying by $100\\,\\%$.\n\n**Substitution:** $mgh = 25\\,\\text{kg} \\cdot 9.81\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot 3.2\\,\\text{m} = 784.8\\,\\text{J}$ and $\\tfrac12 mv^2 = \\tfrac12 \\cdot 25\\,\\text{kg} \\cdot \\left(5.4\\,\\tfrac{\\text{m}}{\\text{s}}\\right)^2 = 364.5\\,\\text{J}$. The share is $\\dfrac{784.8\\,\\text{J} - 364.5\\,\\text{J}}{784.8\\,\\text{J}} = 0.5356 = 53.6\\,\\%$\n\n**Answer:** about $54\\,\\%$, two significant figures like the height $3.2\\,\\text{m}$ and the speed $5.4\\,\\text{m/s}$.\n\n**Reasonableness:** Without friction the speed would be $\\sqrt{2gh} \\approx 7.9\\,\\text{m/s}$; the measured $5.4\\,\\text{m/s}$ is smaller, as it should be with friction. A plastic slide and clothes rub a lot, so about half of the energy can be transformed into internal energy."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain",
+      "prompt": "Two identical cars collide head-on, each at $50\\,\\text{km/h}$. In a second test an identical car hits a stationary concrete wall at the same speed. Which is more dangerous for the driver? Justify your answer with momentum, impulse and energy.",
+      "criteria": [
+        "The answer uses conservation of momentum to justify that in a symmetric head-on collision the total momentum is zero, so the cars stop where they are.",
+        "The answer states that in both tests the driver's momentum changes from $mv$ to zero, so the impulse is the same.",
+        "The answer justifies that the stopping time is the same, because both cars crumple in the same way, so the average force is the same.",
+        "The answer compares the energies: in both tests the kinetic energy $\\tfrac12 mv^2$ of one car is transformed into internal energy and deformation of its own front, so the situations are equally dangerous."
+      ],
+      "model": "The situations are equally dangerous for the driver. In the head-on collision the momenta of the cars are equal and opposite, so the total momentum is zero. It is conserved in the collision, so the cars stop where they are, just as if each had driven into a wall. In both tests the driver's momentum changes from $mv$ to zero, so the impulse on the driver is the same. Both cars crumple in the same way, so the stopping time and therefore the average force $F_\\text{avg} = mv : \\Delta t$ are the same. The energy also adds up: in the head-on collision the kinetic energy of two cars is transformed into internal energy, but it is absorbed by two fronts, each taking its own car's $\\tfrac12 mv^2$. More dangerous would be a collision with a heavier or faster car, or a collision in which your own front crumples over a shorter distance, because that shortens the stopping time.",
+      "practice": "Review impulse and average force in the chapter [*Momentum and impulse*](fy4-9.html) and collisions in the chapter [*Conservation of momentum and one-dimensional collisions*](fy4-10.html)."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer them yourself first, and only then open the answer."
+    }
+  ]
+}

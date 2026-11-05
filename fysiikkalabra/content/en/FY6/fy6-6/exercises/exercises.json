@@ -11,6 +11,7 @@
     {
       "id": "fy6-6-L1-02",
       "level": 1,
+      "core": true,
       "text": "The resistance of a resistor is $47\\,\\Omega$, and a current of $0.20\\,\\text{A}$ flows through it. How large a power is transformed into internal energy in the resistor?",
       "answer": 1.88,
       "unit": "W",
@@ -44,6 +45,7 @@
     {
       "id": "fy6-6-L1-06",
       "level": 1,
+      "core": true,
       "text": "Two resistors with different resistances are connected in series to a voltage source. In which resistor is more electrical energy transformed into internal energy?",
       "kind": [
         "concept"
@@ -106,6 +108,7 @@
     {
       "id": "fy6-6-L2-02",
       "level": 2,
+      "core": true,
       "text": "The resistors $R_1 = 10\\,\\Omega$ and $R_2 = 20\\,\\Omega$ are connected in series to a $12\\,\\text{V}$ voltage source. The resistances of the source and the wires are ignored. How large is the power of the resistor $R_2$?",
       "answer": 3.2,
       "unit": "W",
@@ -130,6 +133,7 @@
     {
       "id": "fy6-6-L2-05",
       "level": 2,
+      "core": true,
       "text": "A resistor was in air at a temperature of $22.0\\,{}^\\circ\\text{C}$. Different voltages were connected to the resistor, and at each voltage we waited until the temperature $T$ of the surface of the resistor no longer changed. The table gives the voltage $U$, the current $I$ and the steady temperature $T$.\n\na) Calculate the power $P = UI$ for each measurement and draw a graph in which the rise in temperature $\\Delta T = T - 22.0\\,{}^\\circ\\text{C}$ is a function of the power $P$. Fit a straight line to the points.\n\nb) By how many kelvins does the surface of the resistor warm up per one watt?\n\nc) Explain why the temperature levels off and does not rise without limit.\n\nEnter the result of part b) in the box.",
       "kind": [
         "data",

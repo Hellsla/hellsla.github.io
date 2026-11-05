@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: a2a994439def034f
+CONTENT-HASH: b2a560c9fc804fdc
 
 ## Blocking
 
 ## Polish
-- exercises/solutions.md:109 (L3-02, Järkevyys) — "ei voi absorboida näkyvää valoa tästä tilasta" is vaguer than the intended point; write "tässä siirtymässä" as the en version does.
+- exercises/solutions.md fy8-2-L3-04 (Järkevyys) — "Peilikuvatasot" is a rather difficult word for selkosuomi; the Finnish source has a similar term, so left unchanged.
 
 ## Checked
-- Recomputed all 12 answers in one script with my own formulas: 2,4701 eV, 433,57 nm, 4,5701·10¹⁴ Hz, 1,89 eV, 655,60 nm, 486,27 nm, 670,27 nm, 121,57 nm, 2,1053 eV, 364,70 nm, 82,666 meV, 564,34 nm; all match exercises.json and answers.py.
-- Answers, units, tolerances and every number in the solutions identical to the fi source.
-- Split sentences in the task texts keep every datum and assumption (L2-02 three lines, L3-03 "ei energiaa lämmöksi").
-- Every solution complete, unknown solved symbolically first, eV↔J conversions shown, 3 s.f. justified by the limiting datum.
-- L3-01 series limit from E = 0; L3-02 vibrational transition = infrared; L3-03 cascade by energy conservation, 1,20 eV photon ≈ 1030 nm IR.
-- Notation E_y, E_a, h, c and the eV value match the brief's Kaava section; within FY8 scope.
+- Scripted diff against content/fi: same ids, kinds, answers, units, tolerances, correct flags, choices, table captions, columns and every table cell for all 8 new tasks; no differences.
+- Every number in task texts, choice feedback and solutions equals the Finnish (decimal comma normalised, token lists equal for all 20 solution sections).
+- Decimal comma in text and LaTeX (1{,}51 style) throughout; JSON table cells keep the decimal point exactly as in fi.
+- Split sentences keep every datum and assumption (L2-05 all three lines compared, L3-04 sixth line longest and undetected, L3-05 one photon per absorbed photon and rest to heat).
+- Recomputed new answers: 2,27 eV; -0,85 eV; 497 nm; 1127 nm (1130 within tolerance); 22,1 % (D: 477 nm); all match.
+- L1-06/L1-08: one correct choice each; the absorb-vs-emit reasoning is stated correctly.
+- The earlier Polish about "tässä siirtymässä" no longer applies (L3-02 text checked).
+- check_i18n.py fi-easy: 0 errors.

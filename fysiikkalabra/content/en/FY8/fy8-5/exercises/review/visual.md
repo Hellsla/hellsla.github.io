@@ -1,15 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 3fa2c76f56f19e19
+CONTENT-HASH: 4ee5450452140e8b
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
+## Fixed
+(none)
+
 ## Polish
-- [Minor] exercises.json (7 numeric answers, e.g. the L1-1 field) — the answer unit reads "kpl", a Finnish abbreviation, in the English page; "pcs" would read naturally (the same "kpl" is in 54 English answer fields project-wide, so name the implication rather than fix it here).
+(none)
 
 ## Checked
-- open-exercises-1280 L1 part 1 (task, answer field, solution card), L2 part 2, L3 part 2; the solution cards' principle, substitution, answer and reasonableness blocks, aligned rows and fractions.
-- Plain-quantity scan of exercises.json and solutions.md: none found. No exercise figures exist.
-
-## Scores
-illustrations n/a (5) · typography 5 · Finnish (English prose) 4 · accessibility 4
+- Screenshots of the exercises and solutions (L2 and L3 sets) opened: no clipped text, units set upright with a thin space, decimal point in all maths and tables, fractions legible.
+- Tables (L2-05, L3-04, L3-05): captions and headers translated, the symbols are maths, numbers right.
+- L2-06 figure fy8-5/string is referenced by id and the text refers to nodes consistently.
+- Solutions render with the same blocks as fi; no mixed decimal comma in en.
+- check_i18n.py en: 0 errors.

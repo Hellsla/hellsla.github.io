@@ -1,0 +1,490 @@
+{
+  "version": 1,
+  "contribution": "The review lesson brings together the FY6 module's electric circuit, current and voltage, measurements, resistance and Ohm's law, series and parallel connections, Kirchhoff's laws and potential, electric power and Joule's law, electrical energy at home, and emf, internal resistance and the charging of batteries into one model of the direct-current circuit, and practises matriculation-exam-type problems on them: solving a mixed circuit, how power is shared, the error limit of a meter, the (I, U) graph of a battery and fitting a line to it, comparing the energy of batteries, and combining the heat of FY3 with electric heating.",
+  "learn": [
+    "solve the currents, voltages and powers of direct-current circuits by choosing a suitable model",
+    "draw and interpret graphs of measurement data of a battery and a wire",
+    "assess claims about electrical energy, batteries and electrical measurements with reasons"
+  ],
+  "prior": [
+    "Electric current is the motion of charge, and current is not used up in a component (chapter *Electric circuit, current and voltage*)",
+    "Resistance is the ratio of voltage to current, $R = \\tfrac{U}{I}$ (chapter *Resistance and Ohm's law*)",
+    "In a series connection the current is the same, in a parallel connection the voltage (chapter *Resistors in series and in parallel*)",
+    "Electric power is $P = UI$ and energy $E = Pt$ (chapter *Electric power and the heating of a resistor*)",
+    "The terminal voltage of a battery decreases when the current increases (chapter *Electromotive force and internal resistance*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "The electricity of a summer cottage comes from a battery whose voltage is $12\\,\\text{V}$ and capacity $100\\,\\text{Ah}$. A solar panel fully charges the battery during the day. In the evening LED lights with a total power of $6.0\\,\\text{W}$ and a cool box with a power of $48\\,\\text{W}$ are connected to the battery. In the exam a situation like this can be the start of a problem: the numbers are given, but the formula is not.",
+      "question": "How large a current is drawn from the battery, and for how many hours does a full battery last when both devices are on?"
+    },
+    {
+      "id": "lt-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting level 1: the current between the lamps",
+      "prompt": "Two identical lamps are connected in series to a battery. An ammeter between the battery and the first lamp shows $0.20\\,\\text{A}$. What does a second ammeter between the lamps show?",
+      "choices": [
+        {
+          "text": "$0.10\\,\\text{A}$, because the first lamp uses half of the current.",
+          "feedback": "A lamp does not use current: it transforms electrical energy into light and internal energy. The same charge that enters the lamp leaves it, so in an unbranched circuit the current is $0.20\\,\\text{A}$ at every point. Review the chapter *Electric circuit, current and voltage*."
+        },
+        {
+          "text": "$0.20\\,\\text{A}$, because in an unbranched circuit the current is the same at every point.",
+          "feedback": "Correct. Charge does not disappear in a lamp, so both meters show $0.20\\,\\text{A}$. What decreases in the lamps is the potential, not the current. If needed, review the chapter *Kirchhoff's laws and potential in a circuit*.",
+          "correct": true
+        },
+        {
+          "text": "$0.40\\,\\text{A}$, because two lamps need twice the current.",
+          "feedback": "The second lamp adds to the resistance of the circuit, so the current is smaller than in a circuit with one lamp, not larger. In series the same current passes through both lamps: $0.20\\,\\text{A}$. Review the chapter *Resistors in series and in parallel*."
+        }
+      ]
+    },
+    {
+      "id": "lt-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting level 2: a voltmeter in series",
+      "prompt": "A student sets a multimeter to a voltage range and by mistake connects it in series with a lamp to a $4.5\\,\\text{V}$ battery. What happens?",
+      "choices": [
+        {
+          "text": "The lamp lights normally, and the meter shows the voltage across the lamp.",
+          "feedback": "The resistance of a voltmeter is very large, so in series it reduces the current almost to zero. The lamp does not light, and almost the whole voltage of the battery is across the meter. Review the chapter *Measurements in an electric circuit*."
+        },
+        {
+          "text": "The fuse of the meter blows, because a large current passes through the meter.",
+          "feedback": "A large current arises if an ammeter is wrongly connected in parallel, because the resistance of an ammeter is very small. The large resistance of a voltmeter stops the current. Review the chapter *Measurements in an electric circuit*."
+        },
+        {
+          "text": "The lamp does not light, and the meter shows almost the voltage of the battery.",
+          "feedback": "Correct. The resistance of a voltmeter is very large, so the current is almost zero. There is no voltage across the lamp, and the meter shows almost $4.5\\,\\text{V}$. If needed, review the chapter *Measurements in an electric circuit*.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "lt-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting level 3: a filament lamp at half the voltage",
+      "prompt": "A current of $0.50\\,\\text{A}$ passes through a filament lamp when the voltage across it is $6.0\\,\\text{V}$. How large a current passes through the lamp at a voltage of $3.0\\,\\text{V}$?",
+      "choices": [
+        {
+          "text": "More than $0.25\\,\\text{A}$, because the resistance of a cooler filament is smaller.",
+          "feedback": "Correct. At $6.0\\,\\text{V}$ the resistance of the lamp is $\\tfrac{6.0\\,\\text{V}}{0.50\\,\\text{A}} = 12\\,\\Omega$. At half the voltage the filament is cooler and its resistance smaller, so the current is more than half. If needed, review the chapter *Resistance and Ohm's law*.",
+          "correct": true
+        },
+        {
+          "text": "Exactly $0.25\\,\\text{A}$, because the current is proportional to the voltage.",
+          "feedback": "Ohm's law holds for a metal at constant temperature. With a smaller current the filament of the lamp is cooler, so its resistance is less than $12\\,\\Omega$, and the current stays above $0.25\\,\\text{A}$. Review the chapter *Resistance and Ohm's law*."
+        },
+        {
+          "text": "Less than $0.25\\,\\text{A}$, because the resistance increases when the voltage decreases.",
+          "feedback": "The resistance of a lamp increases when the filament heats up, that is, with a larger current. At a smaller voltage the filament is cooler and its resistance smaller, so the current is more than $0.25\\,\\text{A}$. Review the chapter *Resistance and Ohm's law*."
+        }
+      ]
+    },
+    {
+      "id": "lt-4",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting level 4: a third resistor in parallel",
+      "prompt": "Two resistors are connected in parallel to a battery. A third resistor is connected in parallel with them. How does the current supplied by the battery change when the terminal voltage stays almost the same?",
+      "choices": [
+        {
+          "text": "It decreases, because the added resistor increases the resistance of the circuit.",
+          "feedback": "A resistor added in series would increase the resistance, but one added in parallel opens a new path. The total resistance decreases, and the current increases. Review the chapter *Resistors in series and in parallel*."
+        },
+        {
+          "text": "It stays the same, because a battery always supplies the same current.",
+          "feedback": "A battery maintains an almost constant voltage, and the current is set by the resistance of the circuit. The new branch takes its own current, and the currents of the branches add up. Review the chapter *Electromotive force and internal resistance*."
+        },
+        {
+          "text": "It increases, because the new branch takes its own current at the same voltage.",
+          "feedback": "Correct. The voltage across every branch is the same, so the currents of the old branches do not change, and the current of the new branch is added to them. The total resistance decreases. If needed, review the chapter *Kirchhoff's laws and potential in a circuit*.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "lt-5",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting level 5: which resistor heats up more",
+      "prompt": "Resistors of $10\\,\\Omega$ and $20\\,\\Omega$ are connected in parallel to a $9.0\\,\\text{V}$ voltage source. In which resistor is more electrical energy transformed into internal energy?",
+      "choices": [
+        {
+          "text": "In the $20\\,\\Omega$ resistor, because a larger resistance always heats up more.",
+          "feedback": "That is true in a series connection, where the current is the same. In parallel the voltage across both is the same, so the power $\\tfrac{U^2}{R}$ is larger for the smaller resistance: $8.1\\,\\text{W}$ and $4.05\\,\\text{W}$. Review the chapter *Electric power and the heating of a resistor*."
+        },
+        {
+          "text": "In the $10\\,\\Omega$ resistor, because the same voltage gives it a larger current.",
+          "feedback": "Correct. $P = \\tfrac{U^2}{R}$, so the power of the $10\\,\\Omega$ resistor is $\\tfrac{(9.0\\,\\text{V})^2}{10\\,\\Omega} = 8.1\\,\\text{W}$ and that of the $20\\,\\Omega$ resistor $4.05\\,\\text{W}$. If needed, review the chapter *Electric power and the heating of a resistor*.",
+          "correct": true
+        },
+        {
+          "text": "Equally much in both, because the voltage across them is the same.",
+          "feedback": "The same voltage does not mean the same power: a larger current passes through the smaller resistance, so its power $P = UI$ is larger. Review the chapter *Electric power and the heating of a resistor*."
+        }
+      ]
+    },
+    {
+      "id": "lt-6",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting level 6: the headlights dim",
+      "prompt": "The headlights of a car are on while the engine is being started. For a moment the starter motor draws a current of over $100\\,\\text{A}$ from the battery, and the headlights dim. Why?",
+      "choices": [
+        {
+          "text": "There is a voltage drop across the internal resistance of the battery, so the terminal voltage falls.",
+          "feedback": "Correct. $U = E - R_\\text{s} I$: when the current is large, $R_\\text{s} I$ grows and the terminal voltage falls, so the power of the lights $\\tfrac{U^2}{R}$ decreases. If needed, review the chapter *Electromotive force and internal resistance*.",
+          "correct": true
+        },
+        {
+          "text": "The starter motor takes part of the current, because the current of the battery is shared between the devices.",
+          "feedback": "A battery has no fixed amount of current in store. The lights are in parallel with the motor, and their current is set by the voltage across them. The voltage falls because there is a voltage drop across the internal resistance of the battery. Review the chapter *Electromotive force and internal resistance*."
+        },
+        {
+          "text": "The emf of the battery falls permanently, because the large current discharges the battery in an instant.",
+          "feedback": "The emf stays almost the same, and the lights brighten again as soon as the motor stops. The momentary dimming is caused by the voltage drop $R_\\text{s} I$ across the internal resistance. Review the chapter *Electromotive force and internal resistance*."
+        }
+      ]
+    },
+    {
+      "id": "aineisto",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "The unidentified wire",
+      "source": "example",
+      "source_note": "The values are invented, and variation like that of real measurements has been added to them.",
+      "text": "In a physics lesson the resistance of an unidentified metal wire was measured with a multimeter at different lengths. The diameter of the wire was measured with a micrometer screw gauge, and it was $0.30\\,\\text{mm}$. The leads of the meter were attached to the wire with crocodile clips, and the length $l$ was measured between the clips.\n\n| $l\\ (\\text{m})$ | $R\\ (\\Omega)$ |\n|---|---|\n| $0.20$ | $1.73$ |\n| $0.40$ | $3.10$ |\n| $0.60$ | $4.55$ |\n| $0.80$ | $5.98$ |\n| $1.00$ | $7.36$ |\n\nWork out the resistivity of the wire from the data and identify the material with a table of resistivities. Think also about why the resistance does not seem to approach zero when the length approaches zero. Answer below with the value of the resistivity.",
+      "question": {
+        "type": "numeric",
+        "prompt": "What is the resistivity of the wire?",
+        "answer": 0.5,
+        "unit": "µΩ·m",
+        "tolerance": 0.03,
+        "hints": [
+          "What in the data is proportional to the length: the resistance itself or its change?",
+          "When the length increases by $0.20\\,\\text{m}$, the resistance increases by about $1.41\\,\\Omega$. The slope $\\tfrac{\\Delta R}{\\Delta l}$ is $\\tfrac{\\rho}{A}$.",
+          "$\\rho = A \\cdot \\tfrac{\\Delta R}{\\Delta l}$, where $A = \\pi r^2$ and $r = 0.15\\,\\text{mm}$."
+        ],
+        "mistakes": [
+          {
+            "value": 1.999,
+            "feedback": "You used the diameter as the radius, which made the cross-sectional area four times too large. The radius is $0.15\\,\\text{mm}$."
+          },
+          {
+            "value": 0.5203,
+            "feedback": "You calculated the resistivity from a single point as the ratio $\\tfrac{R}{l}$, which includes the resistance of the measuring leads. Use the slope $\\tfrac{\\Delta R}{\\Delta l}$."
+          }
+        ],
+        "solution": "**Given:** diameter of the wire $d = 0.30\\,\\text{mm}$; lengths $0.20$–$1.00\\,\\text{m}$ and resistances $1.73$–$7.36\\,\\Omega$ in the table\n\n**Find:** the resistivity $\\rho$ of the wire in the unit $\\mu\\Omega\\cdot\\text{m}$\n\n**Principle:** The resistance of a wire of uniform thickness is directly proportional to its length, $R = \\rho\\,\\tfrac{l}{A}$ (chapter *Resistance and Ohm's law*). The leads of the meter and the connections add the same resistance to every reading, so the data fit a straight line $R = \\tfrac{\\rho}{A}\\,l + R_0$. The resistivity is obtained from the slope of the line, which the constant term $R_0$ does not affect.\n\n**Formula:** $\\dfrac{\\Delta R}{\\Delta l} = \\dfrac{\\rho}{A}$, so $\\rho = A \\cdot \\dfrac{\\Delta R}{\\Delta l}$, where $A = \\pi r^2 = \\pi \\left(\\dfrac{d}{2}\\right)^2$\n\n**Conversions:** $0.15\\,\\text{mm} = 0.15 \\cdot 10^{-3}\\,\\text{m}$ and finally $1\\,\\Omega\\cdot\\text{m} = 10^{6}\\,\\mu\\Omega\\cdot\\text{m}$\n\n**Substitution:** The slope of the line fitted to the points is $7.07\\,\\Omega/\\text{m}$, and the constant term is $0.30\\,\\Omega$. $A = \\pi \\cdot (0.15 \\cdot 10^{-3}\\,\\text{m})^2 = 7.069 \\cdot 10^{-8}\\,\\text{m}^2$, so $\\rho = 7.069 \\cdot 10^{-8}\\,\\text{m}^2 \\cdot 7.07\\,\\tfrac{\\Omega}{\\text{m}} = 4.998 \\cdot 10^{-7}\\,\\Omega\\cdot\\text{m} = 0.4998\\,\\mu\\Omega\\cdot\\text{m}$\n\n**Answer:** $\\rho \\approx 0.50\\,\\mu\\Omega\\cdot\\text{m} = 5.0 \\cdot 10^{-7}\\,\\Omega\\cdot\\text{m}$, two significant figures like the diameter $0.30\\,\\text{mm}$. The wire is constantan. When the length approaches zero, the resistance approaches $0.30\\,\\Omega$: this is the resistance of the measuring leads and of the crocodile-clip connections, which is included in every reading.\n\n**Reasonableness:** From the end points $\\tfrac{7.36\\,\\Omega - 1.73\\,\\Omega}{1.00\\,\\text{m} - 0.20\\,\\text{m}} = 7.04\\,\\Omega/\\text{m}$, which gives the same result $0.50\\,\\mu\\Omega\\cdot\\text{m}$. Iron ($0.10\\,\\mu\\Omega\\cdot\\text{m}$) and nichrome ($1.1\\,\\mu\\Omega\\cdot\\text{m}$) have clearly different values, so the identification is reliable. If the resistivity were calculated from a single point without correcting for the leads, the result would be about $22\\,\\%$ too large for a short wire."
+      }
+    },
+    {
+      "id": "teoriatiivistelma",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava",
+        "Virheet",
+        "Kertaa"
+      ]
+    },
+    {
+      "id": "virhe-teho",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the mistake: the power of a series resistor",
+      "prompt": "Resistors $R_1 = 15\\,\\Omega$ and $R_2 = 30\\,\\Omega$ are connected in series to a $9.0\\,\\text{V}$ voltage source. A student calculated the power of the resistor $R_2$: “$P_2 = \\tfrac{U^2}{R_2} = \\tfrac{(9.0\\,\\text{V})^2}{30\\,\\Omega} = 2.7\\,\\text{W}$.” What is wrong in the solution?",
+      "choices": [
+        {
+          "text": "Only part of the source voltage, $6.0\\,\\text{V}$, is across the resistor $R_2$.",
+          "feedback": "Correct. The current is $I = \\tfrac{9.0\\,\\text{V}}{45\\,\\Omega} = 0.20\\,\\text{A}$, so $U_2 = R_2 I = 6.0\\,\\text{V}$ and $P_2 = \\tfrac{(6.0\\,\\text{V})^2}{30\\,\\Omega} = 1.2\\,\\text{W}$.",
+          "correct": true
+        },
+        {
+          "text": "In a series connection the power is calculated from the form $RI^2$, not from the form $\\tfrac{U^2}{R}$.",
+          "feedback": "Both forms work when the quantities of this particular resistor are substituted in them. The mistake is using the source voltage: $U_2 = 6.0\\,\\text{V}$ gives the same $1.2\\,\\text{W}$ as $R_2 I^2$. Review the chapter *Electric power and the heating of a resistor*."
+        },
+        {
+          "text": "The solution is correct, because the whole voltage is also across the resistor $R_2$.",
+          "feedback": "In series the source voltage is shared between the resistors, $U = U_1 + U_2$. The voltage across the resistor $R_2$ is $6.0\\,\\text{V}$ and across the resistor $R_1$ $3.0\\,\\text{V}$. Review the chapter *Kirchhoff's laws and potential in a circuit*."
+        }
+      ]
+    },
+    {
+      "id": "lue-kuvaaja",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Read the graph: the characteristic curve of a filament lamp",
+      "figure": "fy6-3/lamp-curve",
+      "prompt": "The graph shows the voltage of a filament lamp as a function of the current. At a voltage of $3.0\\,\\text{V}$ the current is $0.25\\,\\text{A}$. Read the other values you need from the graph. Which statement is correct?",
+      "choices": [
+        {
+          "text": "The lamp obeys Ohm's law, because its characteristic curve starts at the origin.",
+          "feedback": "Every characteristic curve starts at the origin, because without a voltage no current flows. A curve that obeys Ohm's law is a straight line, but this one bends. Review the chapter *Resistance and Ohm's law*."
+        },
+        {
+          "text": "The resistance is the slope of the tangent, so at $3.0\\,\\text{V}$ it is more than $12\\,\\Omega$.",
+          "feedback": "At each point the resistance is the ratio $U : I$, that is, the slope of the line drawn from the origin to the point, not the slope of the tangent. At a voltage of $3.0\\,\\text{V}$ it is $12\\,\\Omega$. Review the chapter *Resistance and Ohm's law*."
+        },
+        {
+          "text": "The resistance is $12\\,\\Omega$ at $3.0\\,\\text{V}$ and smaller at $1.0\\,\\text{V}$.",
+          "feedback": "Correct. $\\tfrac{3.0\\,\\text{V}}{0.25\\,\\text{A}} = 12\\,\\Omega$ and $\\tfrac{1.0\\,\\text{V}}{0.15\\,\\text{A}} \\approx 6.7\\,\\Omega$. A larger current heats the filament, and the resistance of a hot filament is larger.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "akkuvertailu",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "A justified claim: which holds more energy",
+      "prompt": "In a shop the battery of an electric scooter ($36\\,\\text{V}$, $7.8\\,\\text{Ah}$) is compared with a power bank ($3.7\\,\\text{V}$, $26\\,800\\,\\text{mAh}$). The salesperson says that the power bank holds more energy, because it has over three times as many milliampere-hours. Which assessment of the claim is correct?",
+      "choices": [
+        {
+          "text": "The claim is correct, because the milliampere-hours tell the energy of the battery.",
+          "feedback": "The milliampere-hour is a unit of charge, not of energy. The energy is $W = UQ$, so the voltage matters as much as the capacity. Review the chapter *Batteries and the charging circuit*."
+        },
+        {
+          "text": "The claim is wrong: the scooter battery holds $281\\,\\text{Wh}$, the power bank $99\\,\\text{Wh}$.",
+          "feedback": "Correct. $W = UQ$: $36\\,\\text{V} \\cdot 7.8\\,\\text{Ah} \\approx 281\\,\\text{Wh}$ and $3.7\\,\\text{V} \\cdot 26.8\\,\\text{Ah} \\approx 99\\,\\text{Wh}$. The scooter battery holds almost three times as much energy.",
+          "correct": true
+        },
+        {
+          "text": "The claim cannot be assessed, because the internal resistances of the batteries are not known.",
+          "feedback": "The internal resistance affects the terminal voltage under load, but the rated voltage and the capacity are enough to estimate the stored energy: $W = UQ$. Review the chapter *Batteries and the charging circuit*."
+        }
+      ]
+    },
+    {
+      "id": "kaksi-vastusta",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Which connection heats more",
+      "prompt": "Two identical $6.0\\,\\Omega$ heating resistors are connected to the $12\\,\\text{V}$ battery of a boat either in series or in parallel. The terminal voltage of the battery stays at almost $12\\,\\text{V}$. Which statement about the total power of the connections is correct?",
+      "choices": [
+        {
+          "text": "The series connection heats more, because its resistance is larger.",
+          "feedback": "A larger total resistance reduces the current. In series $R = 12\\,\\Omega$ and $P = \\tfrac{U^2}{R} = 12\\,\\text{W}$, in parallel $R = 3.0\\,\\Omega$ and $P = 48\\,\\text{W}$. Review the chapter *Electric power and the heating of a resistor*."
+        },
+        {
+          "text": "The connections heat equally much, because the resistors are the same.",
+          "feedback": "The voltages across the same resistors are different: in series $6.0\\,\\text{V}$ across each, in parallel $12\\,\\text{V}$. The power is proportional to the square of the voltage. Review the chapter *Resistors in series and in parallel*."
+        },
+        {
+          "text": "The parallel connection heats four times as much as the series connection.",
+          "feedback": "Correct. In parallel the voltage across each is $12\\,\\text{V}$, so $P = 2 \\cdot \\tfrac{(12\\,\\text{V})^2}{6.0\\,\\Omega} = 48\\,\\text{W}$. In series $P = \\tfrac{(12\\,\\text{V})^2}{12\\,\\Omega} = 12\\,\\text{W}$.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "kaynnistys",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "A car battery on a frosty morning",
+      "prompt": "The terminal voltage of a car battery is $12.6\\,\\text{V}$ when no current is drawn from it. During starting the starter motor draws $150\\,\\text{A}$ from the battery, and the terminal voltage of the battery falls to $10.2\\,\\text{V}$. What is the internal resistance of the battery?",
+      "answer": 16.0,
+      "unit": "mΩ",
+      "tolerance": 0.02,
+      "hints": [
+        "What does the terminal voltage tell you when no current is drawn from the battery?",
+        "Without a current the terminal voltage is the emf $E$. Under load $U = E - R_\\text{s} I$.",
+        "$R_\\text{s} = \\tfrac{E - U}{I}$. Finally convert the ohms into milliohms."
+      ],
+      "mistakes": [
+        {
+          "value": 68.0,
+          "feedback": "You calculated the ratio $\\tfrac{U}{I}$, which is the resistance of the starter motor. The internal resistance is obtained from the voltage drop $E - U$."
+        },
+        {
+          "value": 84.0,
+          "feedback": "You divided the emf by the current, which gave the resistance of the whole circuit $R + R_\\text{s}$. Only $E - U = 2.4\\,\\text{V}$ is across the internal resistance."
+        },
+        {
+          "value": 0.016,
+          "feedback": "The result is in ohms. The question asks for milliohms: $1\\,\\Omega = 1000\\,\\text{m}\\Omega$."
+        }
+      ],
+      "solution": "**Given:** terminal voltage without a current $12.6\\,\\text{V}$, terminal voltage during starting $U = 10.2\\,\\text{V}$, current $I = 150\\,\\text{A}$\n\n**Find:** the internal resistance $R_\\text{s}$ of the battery in the unit $\\text{m}\\Omega$\n\n**Principle:** The battery is described by a model in which an ideal source is in series with an internal resistance (chapter *Electromotive force and internal resistance*). Without a current there is no voltage drop across the internal resistance, so the terminal voltage is the emf $E = 12.6\\,\\text{V}$. When a current is drawn from the battery, the potential falls by $R_\\text{s} I$ across the internal resistance, and the terminal voltage decreases.\n\n**Formula:** $U = E - R_\\text{s} I$, so $R_\\text{s} = \\dfrac{E - U}{I}$\n\n**Conversions:** Finally $1\\,\\Omega = 1000\\,\\text{m}\\Omega$.\n\n**Substitution:** $R_\\text{s} = \\dfrac{12.6\\,\\text{V} - 10.2\\,\\text{V}}{150\\,\\text{A}} = \\dfrac{2.4\\,\\text{V}}{150\\,\\text{A}} = 0.016\\,\\Omega = 16\\,\\text{m}\\Omega$\n\n**Answer:** $R_\\text{s} \\approx 16\\,\\text{m}\\Omega$, two significant figures, because the difference of the voltages $2.4\\,\\text{V}$ is known to two figures.\n\n**Reasonableness:** The resistance of the starter motor is $\\tfrac{10.2\\,\\text{V}}{150\\,\\text{A}} = 68\\,\\text{m}\\Omega$, about four times as large, so most of the voltage is across the motor, as it should be. The short-circuit current would be $\\tfrac{12.6\\,\\text{V}}{0.016\\,\\Omega} \\approx 790\\,\\text{A}$, a usual order of magnitude for a car battery. A cold battery supplies less current, because its internal resistance increases."
+    },
+    {
+      "id": "sekakytkenta",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "A mixed circuit on a circuit board",
+      "prompt": "A circuit board has a $24\\,\\text{V}$ voltage source. From its positive terminal the current first passes through the resistor $R_1 = 12\\,\\Omega$ and then divides into two parallel branches containing the resistors $R_2 = 30\\,\\Omega$ and $R_3 = 20\\,\\Omega$. The branches join and return to the negative terminal of the source. How large a current passes through the resistor $R_2$?",
+      "answer": 0.4,
+      "unit": "A",
+      "tolerance": 0.02,
+      "hints": [
+        "First replace the parallel resistors with one resistor. What is the resistance of the whole circuit?",
+        "$R_{23} = \\tfrac{R_2 R_3}{R_2 + R_3} = 12\\,\\Omega$ and $R = R_1 + R_{23} = 24\\,\\Omega$, so the current of the source is $1.0\\,\\text{A}$.",
+        "The voltage across the parallel part is $U_{23} = R_{23} I$, and $I_2 = \\tfrac{U_{23}}{R_2}$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.8,
+          "feedback": "You divided the source voltage by the resistance $R_2$. Only $12\\,\\text{V}$ is across the parallel part, because $12\\,\\text{V}$ is across the resistor $R_1$."
+        },
+        {
+          "value": 0.5,
+          "feedback": "You divided the current equally between the branches. The voltage across the branches is the same, so a larger current flows into the branch with the smaller resistance."
+        },
+        {
+          "value": 0.6,
+          "feedback": "This is the current of the resistor $R_3 = 20\\,\\Omega$. The current of the resistor $R_2 = 30\\,\\Omega$ is $\\tfrac{12\\,\\text{V}}{30\\,\\Omega}$."
+        }
+      ],
+      "solution": "**Given:** source voltage $U = 24\\,\\text{V}$, $R_1 = 12\\,\\Omega$ in series with the parallel resistors $R_2 = 30\\,\\Omega$ and $R_3 = 20\\,\\Omega$\n\n**Find:** the current $I_2$ through the resistor $R_2$\n\n**Principle:** A mixed circuit is solved from the inside out (chapter *Resistors in series and in parallel*): the parallel resistors are replaced with one resistor, and $R_1$, which is in series with it, is added. The current of the source passes through $R_1$ and through the parallel part. By the voltage law the source voltage is shared between the resistor $R_1$ and the parallel part, and the voltage across the parallel branches is the same (chapter *Kirchhoff's laws and potential in a circuit*).\n\n**Formula:** $R_{23} = \\dfrac{R_2 R_3}{R_2 + R_3}$, $I = \\dfrac{U}{R_1 + R_{23}}$, $U_{23} = R_{23} I$ and $I_2 = \\dfrac{U_{23}}{R_2}$\n\n**Conversions:** The quantities are in base units, so no conversions are needed.\n\n**Substitution:** $R_{23} = \\dfrac{30\\,\\Omega \\cdot 20\\,\\Omega}{30\\,\\Omega + 20\\,\\Omega} = 12\\,\\Omega$, $I = \\dfrac{24\\,\\text{V}}{12\\,\\Omega + 12\\,\\Omega} = 1.0\\,\\text{A}$, $U_{23} = 12\\,\\Omega \\cdot 1.0\\,\\text{A} = 12\\,\\text{V}$ and $I_2 = \\dfrac{12\\,\\text{V}}{30\\,\\Omega} = 0.40\\,\\text{A}$\n\n**Answer:** $I_2 = 0.40\\,\\text{A}$, two significant figures like the resistances.\n\n**Reasonableness:** The current of the resistor $R_3$ is $\\tfrac{12\\,\\text{V}}{20\\,\\Omega} = 0.60\\,\\text{A}$, and $0.40\\,\\text{A} + 0.60\\,\\text{A} = 1.0\\,\\text{A}$ is the current of the source, as the current law requires. The larger resistance gets the smaller branch current, and the voltages $12\\,\\text{V} + 12\\,\\text{V}$ add up to the $24\\,\\text{V}$ of the source."
+    },
+    {
+      "id": "paahdin",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "The heating wire of a toaster",
+      "prompt": "The power of a toaster is $850\\,\\text{W}$ at a voltage of $230\\,\\text{V}$. Its heating wire is nichrome, whose resistivity is $1.1 \\cdot 10^{-6}\\,\\Omega\\cdot\\text{m}$, and the diameter of the wire is $0.40\\,\\text{mm}$. Assume that the resistivity does not change when the wire heats up. How long is the wire?",
+      "answer": 7.11,
+      "unit": "m",
+      "tolerance": 0.02,
+      "hints": [
+        "What is the resistance of the wire when the power and the voltage are known?",
+        "$P = \\tfrac{U^2}{R}$, so $R = \\tfrac{U^2}{P} \\approx 62.2\\,\\Omega$.",
+        "$R = \\rho\\,\\tfrac{l}{A}$, so $l = \\tfrac{RA}{\\rho}$, where $A = \\pi r^2$ and $r = 0.20\\,\\text{mm}$."
+      ],
+      "mistakes": [
+        {
+          "value": 28.44,
+          "feedback": "You used the diameter as the radius, which made the cross-sectional area four times too large. The radius is $0.20\\,\\text{mm}$."
+        },
+        {
+          "value": 460.0,
+          "feedback": "You used the resistivity of copper. The heating wire is nichrome, whose resistivity is $1.1 \\cdot 10^{-6}\\,\\Omega\\cdot\\text{m}$."
+        },
+        {
+          "value": 0.0309,
+          "feedback": "You calculated the resistance as $\\tfrac{U}{P}$. The power is $P = \\tfrac{U^2}{R}$, so $R = \\tfrac{U^2}{P}$."
+        }
+      ],
+      "solution": "**Given:** power $P = 850\\,\\text{W}$, voltage $U = 230\\,\\text{V}$, resistivity $\\rho = 1.1 \\cdot 10^{-6}\\,\\Omega\\cdot\\text{m}$, diameter $d = 0.40\\,\\text{mm}$\n\n**Find:** the length $l$ of the wire\n\n**Principle:** The wire of the toaster is a resistor in which electrical energy is transformed into internal energy at the power $P = \\tfrac{U^2}{R}$ (chapter *Electric power and the heating of a resistor*), so the ratings give the resistance of the wire. The resistance of a wire of uniform thickness depends on its length, cross-sectional area and material (chapter *Resistance and Ohm's law*).\n\n**Formula:** $R = \\dfrac{U^2}{P}$ and $R = \\rho\\,\\dfrac{l}{A}$, so $l = \\dfrac{RA}{\\rho} = \\dfrac{U^2 \\pi r^2}{P \\rho}$\n\n**Conversions:** $r = \\tfrac{d}{2} = 0.20\\,\\text{mm} = 0.20 \\cdot 10^{-3}\\,\\text{m}$\n\n**Substitution:** $R = \\dfrac{(230\\,\\text{V})^2}{850\\,\\text{W}} = 62.24\\,\\Omega$, $A = \\pi \\cdot (0.20 \\cdot 10^{-3}\\,\\text{m})^2 = 1.257 \\cdot 10^{-7}\\,\\text{m}^2$ and $l = \\dfrac{62.24\\,\\Omega \\cdot 1.257 \\cdot 10^{-7}\\,\\text{m}^2}{1.1 \\cdot 10^{-6}\\,\\Omega\\cdot\\text{m}} = 7.11\\,\\text{m}$\n\n**Answer:** $l \\approx 7.1\\,\\text{m}$, two significant figures like the resistivity and the diameter.\n\n**Reasonableness:** A seven-metre wire fits in a toaster when it is wound in zigzags on both sides of the bread slots. The resistivity of hot nichrome is slightly larger than at room temperature, so the real wire is a little shorter. A copper wire would have to be hundreds of metres long, which explains why heating wires are made of nichrome."
+    },
+    {
+      "id": "keitin",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "The kettle on the electricity bill",
+      "prompt": "A family boils water with a $2.2\\,\\text{kW}$ kettle three times a day, and one boiling takes $4.0\\,\\text{min}$. The electrical energy and its transmission cost $15.8\\,\\text{c/kWh}$ in total. How much does using the kettle cost over $30$ days?",
+      "answer": 2.086,
+      "unit": "€",
+      "tolerance": 0.02,
+      "hints": [
+        "For how many hours is the kettle on in $30$ days?",
+        "There are $90$ boilings, so the time is $90 \\cdot 4.0\\,\\text{min} = 360\\,\\text{min} = 6.0\\,\\text{h}$. The energy is $E = Pt$ in kilowatt-hours.",
+        "The cost is $aE$, where $a = 0.158\\,\\text{€/kWh}$."
+      ],
+      "mistakes": [
+        {
+          "value": 125.1,
+          "feedback": "You multiplied the power by minutes. First convert the time into hours: $360\\,\\text{min} = 6.0\\,\\text{h}$."
+        },
+        {
+          "value": 0.6952,
+          "feedback": "You counted only one boiling a day. There are $3 \\cdot 30 = 90$ boilings."
+        },
+        {
+          "value": 208.6,
+          "feedback": "You used the price as euros per kilowatt-hour. $15.8\\,\\text{c/kWh} = 0.158\\,\\text{€/kWh}$."
+        }
+      ],
+      "solution": "**Given:** power $P = 2.2\\,\\text{kW}$, $3$ boilings a day, one boiling $4.0\\,\\text{min}$, $30$ days, price $a = 15.8\\,\\text{c/kWh}$\n\n**Find:** the cost $K$ of the use in euros\n\n**Principle:** The power of the kettle is constant, so the energy it uses is the power times the time of use (chapter *Electrical energy at home*). When the power is in kilowatts and the time in hours, the energy is obtained in kilowatt-hours, with which the cost is calculated. The fixed charges do not depend on the use of the kettle, so they do not belong in the calculation.\n\n**Formula:** $E = Pt$ and $K = aE$\n\n**Conversions:** $t = 3 \\cdot 30 \\cdot 4.0\\,\\text{min} = 360\\,\\text{min} = 360 \\cdot \\tfrac{1}{60}\\,\\text{h} = 6.0\\,\\text{h}$ and $a = 15.8 \\cdot 0.01\\,\\text{€/kWh} = 0.158\\,\\text{€/kWh}$\n\n**Substitution:** $E = 2.2\\,\\text{kW} \\cdot 6.0\\,\\text{h} = 13.2\\,\\text{kWh}$ and $K = 0.158\\,\\tfrac{\\text{€}}{\\text{kWh}} \\cdot 13.2\\,\\text{kWh} = 2.09\\,\\text{€}$\n\n**Answer:** $K \\approx 2.1\\,\\text{€}$, two significant figures like the power $2.2\\,\\text{kW}$ and the boiling time $4.0\\,\\text{min}$.\n\n**Reasonableness:** The kettle is one of the highest-power devices in the home but not one of the largest energy consumers: the month's $13\\,\\text{kWh}$ is only a few per cent of the consumption of an ordinary flat, because the kettle is on for only $12\\,\\text{min}$ a day."
+    },
+    {
+      "id": "lisaa",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "At the end of the lesson there are matriculation-exam-style problems. Write your solution in your notebook or on the computer as in the exam, and only then assess it with the model answer and the marking scheme."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "The potential of the negative terminal of a voltage source ($12\\,\\text{V}$) is $0\\,\\text{V}$. From the positive terminal the current passes through the resistor $R_1 = 20\\,\\Omega$ and then through the resistor $R_2 = 40\\,\\Omega$ back to the negative terminal. What is the potential of the point between the resistors?",
+      "choices": [
+        {
+          "text": "$4.0\\,\\text{V}$, because the voltage across the resistor $R_1$ is $4.0\\,\\text{V}$.",
+          "feedback": "$4.0\\,\\text{V}$ is the voltage across the resistor $R_1$, that is, the fall in potential across it. The potential of the point is the $12\\,\\text{V}$ of the positive terminal minus this fall, $8.0\\,\\text{V}$. Review the chapter *Kirchhoff's laws and potential in a circuit*."
+        },
+        {
+          "text": "$6.0\\,\\text{V}$, because the point is halfway between the two resistors.",
+          "feedback": "The voltage is shared in the ratio of the resistances, not equally. The current is $\\tfrac{12\\,\\text{V}}{60\\,\\Omega} = 0.20\\,\\text{A}$, so the voltage across $R_1$ is $4.0\\,\\text{V}$ and across $R_2$ $8.0\\,\\text{V}$. Review the chapter *Resistors in series and in parallel*."
+        },
+        {
+          "text": "$8.0\\,\\text{V}$, because the potential falls across the resistor $R_1$.",
+          "feedback": "Correct. $I = \\tfrac{12\\,\\text{V}}{60\\,\\Omega} = 0.20\\,\\text{A}$, and across the resistor $R_1$ the potential falls by $R_1 I = 4.0\\,\\text{V}$: $12\\,\\text{V} - 4.0\\,\\text{V} = 8.0\\,\\text{V}$. This is also the voltage across the resistor $R_2$. If needed, review the chapter *Kirchhoff's laws and potential in a circuit*.",
+          "correct": true
+        }
+      ],
+      "practice": "Review potential and the voltage law in the chapter [*Kirchhoff's laws and potential in a circuit*](fy6-5.html) and the series connection in the chapter [*Resistors in series and in parallel*](fy6-4.html)."
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculation",
+      "prompt": "When $0.30\\,\\text{A}$ is drawn from a torch battery, its terminal voltage is $4.40\\,\\text{V}$; when $0.80\\,\\text{A}$ is drawn, it is $4.10\\,\\text{V}$. What is the emf of the battery?",
+      "answer": 4.58,
+      "unit": "V",
+      "tolerance": 0.02,
+      "hints": [
+        "Both measurements satisfy the same equation $U = E - R_\\text{s} I$. How many unknowns are there?",
+        "When one equation is subtracted from the other, $E$ cancels out: $R_\\text{s} = -\\tfrac{\\Delta U}{\\Delta I}$.",
+        "$R_\\text{s} = \\tfrac{4.40\\,\\text{V} - 4.10\\,\\text{V}}{0.80\\,\\text{A} - 0.30\\,\\text{A}} = 0.60\\,\\Omega$, and $E = U + R_\\text{s} I$."
+      ],
+      "mistakes": [
+        {
+          "value": 4.4,
+          "feedback": "This is the terminal voltage at a current of $0.30\\,\\text{A}$. The emf is the terminal voltage without a current, so it is larger."
+        },
+        {
+          "value": 4.25,
+          "feedback": "You calculated the mean of the terminal voltages. The emf is the value of the line $U = E - R_\\text{s} I$ when $I = 0$."
+        },
+        {
+          "value": 0.6,
+          "feedback": "This is the internal resistance in ohms. The emf is $E = U + R_\\text{s} I$."
+        }
+      ],
+      "practice": "Review terminal voltage and internal resistance in the chapter [*Electromotive force and internal resistance*](fy6-8.html).",
+      "solution": "**Given:** $I_1 = 0.30\\,\\text{A}$ and $U_1 = 4.40\\,\\text{V}$, $I_2 = 0.80\\,\\text{A}$ and $U_2 = 4.10\\,\\text{V}$\n\n**Find:** the emf $E$ of the battery\n\n**Principle:** The battery is described by a source whose emf $E$ and internal resistance $R_\\text{s}$ stay constant (chapter *Electromotive force and internal resistance*). The terminal voltage is smaller by the voltage drop across the internal resistance, so each measurement gives an equation with the same two unknowns. Subtracting one equation from the other gives first $R_\\text{s}$ and then $E$.\n\n**Formula:** $U_1 = E - R_\\text{s} I_1$ and $U_2 = E - R_\\text{s} I_2$, so $R_\\text{s} = \\dfrac{U_1 - U_2}{I_2 - I_1}$ and $E = U_1 + R_\\text{s} I_1$\n\n**Conversions:** The quantities are in base units, so no conversions are needed.\n\n**Substitution:** $R_\\text{s} = \\dfrac{4.40\\,\\text{V} - 4.10\\,\\text{V}}{0.80\\,\\text{A} - 0.30\\,\\text{A}} = \\dfrac{0.30\\,\\text{V}}{0.50\\,\\text{A}} = 0.60\\,\\Omega$ and $E = 4.40\\,\\text{V} + 0.60\\,\\Omega \\cdot 0.30\\,\\text{A} = 4.58\\,\\text{V}$\n\n**Answer:** $E \\approx 4.58\\,\\text{V}$, three significant figures like the terminal voltages: the correction $0.18\\,\\text{V}$ is added to a voltage known to the nearest hundredth.\n\n**Reasonableness:** The second measurement gives the same: $4.10\\,\\text{V} + 0.60\\,\\Omega \\cdot 0.80\\,\\text{A} = 4.58\\,\\text{V}$. The emf of three AA batteries in series is about $4.5$–$4.8\\,\\text{V}$, and the emf is larger than either terminal voltage, as it should be."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain",
+      "prompt": "Two filament lamps rated $230\\,\\text{V}$, $40\\,\\text{W}$ and $230\\,\\text{V}$, $100\\,\\text{W}$ are connected in series to a voltage of $230\\,\\text{V}$. Which lamp shines more brightly? Explain with the resistances, the current and the power.",
+      "criteria": [
+        "The answer works out the resistances $R = \\tfrac{U^2}{P}$ from the ratings: about $1320\\,\\Omega$ for the $40\\,\\text{W}$ lamp and about $530\\,\\Omega$ for the $100\\,\\text{W}$ lamp, so the lamp with the smaller power rating has the larger resistance.",
+        "The answer justifies that in a series connection the same current passes through both lamps.",
+        "The answer concludes from the power $P = RI^2$ that the $40\\,\\text{W}$ lamp, with the larger resistance, gets the larger power and shines more brightly.",
+        "The answer states either that both lamps shine more dimly than at their rated power, because only part of the voltage is across each, or that the numbers are estimates, because the resistance of a cooler filament is smaller; either one is enough."
+      ],
+      "model": "The ratings give the power at the rated voltage, so the resistances are $R = \\tfrac{U^2}{P}$: for the $40\\,\\text{W}$ lamp $\\tfrac{(230\\,\\text{V})^2}{40\\,\\text{W}} \\approx 1320\\,\\Omega$ and for the $100\\,\\text{W}$ lamp about $530\\,\\Omega$. In a series connection the same current passes through both, about $\\tfrac{230\\,\\text{V}}{1850\\,\\Omega} \\approx 0.12\\,\\text{A}$. The power is $P = RI^2$, so the lamp with the larger resistance gets the larger power: the $40\\,\\text{W}$ lamp about $20\\,\\text{W}$ and the $100\\,\\text{W}$ lamp about $8\\,\\text{W}$. That is why the $40\\,\\text{W}$ lamp shines more brightly, although both shine more dimly than at their rated power, because only part of the voltage is across each. The numbers are estimates: the temperature of a more dimly shining filament is lower, so its resistance is smaller than at the rated power.",
+      "practice": "Review power in a series connection in the chapter [*Electric power and the heating of a resistor*](fy6-6.html) and the resistance of a filament lamp in the chapter [*Resistance and Ohm's law*](fy6-3.html)."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer them yourself first, and only then open the answer."
+    }
+  ]
+}

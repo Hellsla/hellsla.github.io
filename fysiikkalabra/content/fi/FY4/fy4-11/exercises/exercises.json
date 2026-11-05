@@ -43,6 +43,7 @@
     {
       "id": "fy4-11-L1-06",
       "level": 1,
+      "core": true,
       "text": "Kuljettaja ajaa tasaisella nopeudella $20\\,\\text{m/s}$. Väsymyksen vuoksi hänen reaktioaikansa pitenee $1{,}0\\,\\text{s}$:sta $2{,}0\\,\\text{s}$:iin. Nopeus ja auton hidastuvuus jarrutuksessa pysyvät samoina. Mikä väite pysähtymismatkasta on oikein?",
       "kind": [
         "concept"
@@ -116,6 +117,7 @@
     {
       "id": "fy4-11-L2-01",
       "level": 2,
+      "core": true,
       "text": "Auto ajaa nopeudella $90\\,\\text{km/h}$. Kuljettajan reaktioaika on $1{,}5\\,\\text{s}$, ja auton hidastuvuus jarrutuksessa on $7{,}5\\,\\text{m/s}^2$. Kuinka pitkä on pysähtymismatka?",
       "answer": 79.16666666666666,
       "unit": "m",
@@ -124,6 +126,7 @@
     {
       "id": "fy4-11-L2-02",
       "level": 2,
+      "core": true,
       "text": "Auto ajaa lumisella vaakasuoralla tiellä nopeudella $100\\,\\text{km/h}$. Renkaiden ja lumen välinen kitkakerroin on $0{,}30$. Kuinka pitkä on jarrutusmatka, kun auto jarruttaa niin lujaa kuin pito sallii? Ilmanvastus jätetään huomiotta.",
       "answer": 131.09156273727572,
       "unit": "m",
@@ -148,6 +151,7 @@
     {
       "id": "fy4-11-L2-05",
       "level": 2,
+      "core": true,
       "text": "Koeradalla mitattiin henkilöauton jarrutusmatka $s_\\text{j}$ eri alkunopeuksilla $v_0$. Auto jarrutti vakiohidastuvuudella pysähtymiseen asti vaakasuoralla kuivalla tiellä. Taulukossa on esimerkkiaineisto.\n\nLaske nopeuksien neliöt ja piirrä $(v_0^2, s_\\text{j})$-kuvaaja. Sovita pisteisiin origon kautta kulkeva suora ja määritä sen kulmakertoimen avulla auton hidastuvuus.",
       "kind": [
         "data",

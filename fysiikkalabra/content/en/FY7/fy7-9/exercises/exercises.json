@@ -3,6 +3,7 @@
     {
       "id": "fy7-9-L1-01",
       "level": 1,
+      "core": true,
       "text": "An FM radio channel transmits at the frequency $94.0\\,\\text{MHz}$. What is the wavelength of the radio wave? The speed of a radio wave in air is $c = 3.00 \\cdot 10^{8}\\,\\text{m/s}$.",
       "answer": 3.1915,
       "unit": "m",
@@ -43,6 +44,7 @@
     {
       "id": "fy7-9-L1-06",
       "level": 1,
+      "core": true,
       "text": "Radio waves and light are electromagnetic waves. An electromagnetic wave travelling in a vacuum has an electric field $\\overline{E}$ and a magnetic field $\\overline{B}$. Which of the following describes the structure of the wave correctly?",
       "kind": [
         "concept"
@@ -91,6 +93,7 @@
     {
       "id": "fy7-9-L2-01",
       "level": 2,
+      "core": true,
       "text": "The temperature of the inner surface of the vault of a wood-fired pizza oven is $450\\,{}^\\circ\\text{C}$. At what wavelength is the peak of the spectrum of the radiation emitted by the vault, when the vault is assumed to be a black body? Give the answer in micrometres.",
       "answer": 4.0075,
       "unit": "µm",
@@ -124,6 +127,7 @@
     {
       "id": "fy7-9-L2-05",
       "level": 2,
+      "core": true,
       "text": "The wavelength of the peak of the spectrum of the radiation from three light sources was measured with a spectrometer (example data). All three sources are assumed to radiate like a black body.\n\na) Calculate the surface temperatures of the sources.\n\nb) Which of the sources is the hottest? Does the peak of the spectrum fall in the region of visible light ($380\\,\\text{nm}$–$750\\,\\text{nm}$) for any source? Justify with your results.\n\nWrite in the answer box the temperature of the filament from part a, in kelvins.",
       "kind": [
         "data"

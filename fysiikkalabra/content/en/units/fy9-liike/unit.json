@@ -1,0 +1,14 @@
+{
+  "id": "fy9-liike",
+  "course": "FY9",
+  "chapter": 3,
+  "order": 1,
+  "title": "Motion as graphs",
+  "description": "A review of position, displacement, velocity and acceleration, uniform and uniformly accelerated motion, the slope and area of a graph and the comparison of two bodies' motions from modules FY1 and FY4, with matriculation-exam-style problems on them.",
+  "kind": "review",
+  "minutes": 75,
+  "subjects": [
+    "physics"
+  ],
+  "sources": []
+}

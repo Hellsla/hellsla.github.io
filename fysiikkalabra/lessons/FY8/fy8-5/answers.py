@@ -25,4 +25,15 @@ n_up = math.sqrt(13.6 / (13.6 - Eph))                     # E_n = -13,6 + 12,744
 a["fy8-5-L3-01"] = round(n_up) ** 2                       # orbitals in shell 4: 16
 a["fy8-5-L3-02"] = 2 + 2 + 6 + 2 + 3                      # 1s2 2s2 2p6 3s2 3p3 (3p half full): 15 electrons
 a["fy8-5-L3-03"] = (0.90 - 0.053) * 5000                  # 2s: inside the 90 % region but outside the node sphere (5,3 %): 4235
+# Exercise-bank additions (L1-06, L1-07 and L2-07 are multiple choice without a number; the others below)
+a["fy8-5-L1-08"] = 2 * 7                                  # 4f: 7 orbitals, 2 electrons each = 14
+a["fy8-5-L2-05"] = (118 + 171) / 400 * 100                # example data: 289 of 400 inside 0,10 nm = 72,25 % (0,15 nm: 368/400 = 92 %)
+a["fy8-5-L2-06"] = 64 / (2 * 0.80 / 3)                    # string, 2 nodes -> 3 antinodes: lambda = 2L/3 = 0,5333 m, f = v/lambda = 120 Hz
+lam = [657.1, 485.4, 433.5, 410.6]                        # example data: Balmer-type lines, nm
+Ef = [h * c / (l * 1e-9) / e for l in lam]                # photon energies: 1,887 / 2,555 / 2,860 / 3,020 eV
+n_lines = [math.sqrt(1 / (0.25 - x / 13.6)) for x in Ef]  # n = 3,00 / 4,01 / 5,02 / 5,98 -> 3, 4, 5, 6
+xs = [1 / 4 - 1 / round(n) ** 2 for n in n_lines]         # horizontal axis 1/4 - 1/n^2
+mx, my = sum(xs) / 4, sum(Ef) / 4
+a["fy8-5-L3-04"] = sum((x - mx) * (y - my) for x, y in zip(xs, Ef)) / sum((x - mx) ** 2 for x in xs)   # least-squares slope 13,62 eV (answer 13,6)
+a["fy8-5-L3-05"] = h * c / (2.10 * e) * 1e9               # Na 3s -> 3p, 2,10 eV = 3,3642e-19 J: lambda = 590,5 nm (ionisation limit 5,14 eV: 241,2 nm)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

@@ -1,17 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 848b3b84e36daf0e
+CONTENT-HASH: 16344269b7035d57
+Round: 2
 
 ## Blocking
 
 ## Polish
+- fy8-10-L3-04 / plan: the plan asks for Q three ways (masses, binding energies, read from the graph) and for a `fy8-10/kayra-points` graph-reading task at level 2. Neither the graph reading nor the graph task is in the set (carried over). Add a graph-reading part, or record the deviation in docs/exercise-bank/FY8.md.
+- exercises.json:235 fy8-10-L2-07: the distractor feedback "Sähköinen hylkiminen vaikuttaa vain siihen, kuinka vaikeasti fuusio käynnistyy" is right about the barrier. Proton repulsion does lower E_B/A of heavy nuclei, though, so "vain" overstates it. Optional fix: "Sähköinen hylkiminen määrää, kuinka vaikeasti fuusio käynnistyy; energiatase riippuu siitä, kasvaako sidosenergia".
+- solutions.md:166 fy8-10-L3-04 b): "massat … ovat suoria mittaustuloksia" is fine. Adding "sidosenergiat on laskettu samoista massoista" would make clear why b) cannot be more accurate than a).
 
 ## Checked
-- Round-1 blocker, solutions.md:8 (L1-01): the answer is now 0,098940 u, "kuusi desimaalia kuten annetuissa massoissa". This is a correct reason (a subtraction keeps the data's decimals). exercises.json 0.09894 is the same value.
-- Round-1 polish: L1-03 now gives 7,570 MeV with the 931,5 reason, and the answers.py L2-03 comment now says 2,04479e-11 J. Both fixed.
-- All 12 answers recomputed in one script with my own formulas, and all match answers.py: 0,098940 u; 127,62 MeV; 7,5702 MeV; 8,988e13 J; 2,3875e-3 u; 8,7904 MeV; 4,8708 MeV; 2,04479e-11 J; 3,6817e14 kg; 20,578 MeV; 23,848 MeV; 2,797e-12 kg.
-- The L2-03 check, 2,045e-11 J / 1,602e-19 = 127,7 MeV, is consistent with the 931,5 route (127,6 MeV).
-- L3-01: He-3 E_B is 7,72 MeV, 2,57 MeV per nucleon. The ratio 20,58/28,3 = 73 % is right.
-- L3-02: the mass route gives 23,847 MeV.
-- L2-04: 4,26e9 kg/s.
-- The electron bookkeeping is right in every alpha decay and in He-4 → He-3 + n.
-- No new error was introduced. Scope, units and tolerance are fine.
+- Hash 16344269b7035d57 at the start and at the end.
+- Round 1 Blocking A (L2-07, "Fe-56 suurin"): resolved. The stem, the correct option, the feedback and the model answer now say "huipulla nikkeli-62:n kanssa" or "lähes yhtä tiiviisti". This is consistent with L2-05 (Ni-62 8,7946 MeV) and L1-08.
+- Round 1 Blocking B (L2-07, "ei yhdistämällä"): resolved. The text now says "rautaytimiä toisiinsa tai halkaisemalla niitä". The model answer cites Fe-56 + He-4 → Ni-60, Q = 6,3 MeV, which I recomputed as 6,29 MeV.
+- L2-07 options: exactly one correct, and every distractor is really wrong with correct feedback (Fe-56 has 26 p and 30 n).
+- Round 1 Polish resolved: the L1-08 feedback now corrects "kevyimpiä"; the L3-04 rounding is "enintään noin 0,2 MeV"; L3-05 d) states that the whole hydrogen is assumed available; the L2-07 distractors no longer repeat L1-08.
+- L1-06 reordered: one correct option, and `answer` matches.
+- Recomputed: L1-07 0,511 MeV; L2-05 order He < U < C < Ne < Ba < Sn < Ca < Ni, Ni-62 8,795 MeV; L2-06 31,99 / 30,46 MeV; L3-04 Q 173,29 / 173,28 MeV, 7,11·10¹⁰ J; L3-05 3,51·10¹⁸ kg, 0,712 %, 4,93·10²⁰ kg, 3,5 %. All match.

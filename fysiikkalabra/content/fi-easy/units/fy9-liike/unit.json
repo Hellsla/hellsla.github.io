@@ -1,0 +1,36 @@
+{
+  "id": "fy9-liike",
+  "course": "FY9",
+  "chapter": 3,
+  "order": 1,
+  "title": "Liike kuvaajina",
+  "description": "Kerrataan FY1- ja FY4-moduulien liike: paikka, siirtymä, nopeus ja kiihtyvyys, tasainen ja tasaisesti kiihtyvä liike, kuvaajan kulmakerroin ja pinta-ala sekä kahden kappaleen liikkeiden vertailu, ja ratkaistaan niistä ylioppilaskokeen tyylisiä tehtäviä.",
+  "kind": "review",
+  "minutes": 75,
+  "subjects": [
+    "physics"
+  ],
+  "sources": [],
+  "key_concepts": [
+    {
+      "term": "siirtymä",
+      "explain": "Paikan muutos: loppupaikka miinus alkupaikka. Etumerkki kertoo suunnan. Jos kappale palaa lähtöpaikkaan, siirtymä on nolla."
+    },
+    {
+      "term": "kiihtyvyys",
+      "explain": "Kertoo, kuinka nopeasti nopeus muuttuu: $a = \\frac{\\Delta v}{\\Delta t}$. Jos $a$ ja $v$ ovat samansuuntaiset, vauhti kasvaa."
+    },
+    {
+      "term": "kulmakerroin",
+      "explain": "Kertoo, kuinka jyrkkä suora on. $(t,x)$-kuvaajan kulmakerroin on nopeus ja $(t,v)$-kuvaajan kulmakerroin kiihtyvyys."
+    },
+    {
+      "term": "pinta-ala",
+      "explain": "Kuvaajan ja aika-akselin väliin jäävän alueen koko. $(t,v)$-kuvaajan pinta-ala on siirtymä."
+    },
+    {
+      "term": "kohtaaminen",
+      "explain": "Kaksi kappaletta ovat samassa paikassa samalla hetkellä: $x_\\text{A}(t) = x_\\text{B}(t)$. $(t,x)$-kuvaajassa se on viivojen leikkauspiste."
+    }
+  ]
+}

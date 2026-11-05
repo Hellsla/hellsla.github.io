@@ -3,6 +3,7 @@
     {
       "id": "fy3-6-L1-01",
       "level": 1,
+      "core": true,
       "text": "$1.8\\,\\text{kg}$ of water at a temperature of $12\\,{}^\\circ\\text{C}$ is poured into the tank of a coffee maker. The coffee maker heats the water to $96\\,{}^\\circ\\text{C}$. How large is the quantity of heat transferred to the water? Give the answer in megajoules.",
       "answer": 0.63,
       "unit": "MJ",
@@ -43,6 +44,7 @@
     {
       "id": "fy3-6-L1-06",
       "level": 1,
+      "core": true,
       "text": "At the beach, sunlight gives $1.0\\,\\text{kg}$ of water and $1.0\\,\\text{kg}$ of dry sand the same quantity of heat. The sand warms clearly more than the water. What explains this?",
       "kind": [
         "concept"
@@ -91,6 +93,7 @@
     {
       "id": "fy3-6-L2-01",
       "level": 2,
+      "core": true,
       "text": "$160\\,\\text{g}$ of water at a temperature of $95\\,{}^\\circ\\text{C}$ is poured into a mug. The tea is too hot to drink, so $40\\,\\text{g}$ of cold water at a temperature of $8.0\\,{}^\\circ\\text{C}$ is added. What is the temperature of the water after mixing? Assume that no heat is transferred to the mug or the air.",
       "answer": 78,
       "unit": "°C",
@@ -124,6 +127,7 @@
     {
       "id": "fy3-6-L2-05",
       "level": 2,
+      "core": true,
       "text": "In a calorimeter, $0.50\\,\\text{kg}$ of an unknown liquid is heated with an electric resistor at a constant power of $100\\,\\text{W}$. The temperature is measured at one-minute intervals, and the results are in the table (example data). Assume that all the energy of the resistor is transferred to the liquid.\n\na) In the temperature–time graph, draw a straight line that fits the points. The line passes approximately through the points $(0\\,\\text{s};\\ 20.0\\,{}^\\circ\\text{C})$ and $(300\\,\\text{s};\\ 34.5\\,{}^\\circ\\text{C})$. Use the slope of the line to calculate the specific heat capacity of the liquid.\n\nb) Which liquid is it? Justify your answer with the $c$ values of the table.\n\nc) Name one way to reduce heat losses in an experiment like this and justify why it improves the result.\n\nGive the result of part a) in the answer box.",
       "kind": [
         "data",

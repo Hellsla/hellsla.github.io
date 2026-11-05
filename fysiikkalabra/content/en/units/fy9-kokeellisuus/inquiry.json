@@ -1,0 +1,510 @@
+{
+  "version": 1,
+  "contribution": "Brings the investigation skills of FY1 and the experiments of FY3–FY5 together into the experimental question types of the matriculation exam: an experiment plan with its equipment, variables and a result calculated from a graph, choosing a measuring instrument and its resolution, repetitions, recognising a systematic error from the constant term of a graph, and assessing a report.",
+  "learn": [
+    "plan an experiment in which the variables are controlled and the result is calculated from a graph",
+    "identify sources of error and a systematic error from a graph",
+    "assess the shortcomings of an investigation report and write a justified conclusion"
+  ],
+  "prior": [
+    "A measurement result is given as a mean and an error estimate, and errors are gross, random or systematic (chapter *Measuring and the reliability of a measurement*)",
+    "A straight line is fitted to the measurement points, and its slope is read from two points of the line (chapter *Graphing and fitting a straight line*)",
+    "An investigation has a research question, a hypothesis, an independent, a dependent and controlled variables, and a report (chapter *Your own experimental investigation: planning, carrying out and reporting*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "A matriculation exam question reads: *Plan an experiment to determine the spring constant of a spring. You have a spring, a stand, five $50\\,\\text{g}$ masses and a metre rule.* Aino writes a one-line answer: “I hang a mass on the spring, measure the extension and calculate the spring constant as the quotient of the force and the extension.” The physics is correct, but the answer gets only a fraction of the points.",
+      "question": "What is missing from Aino's answer so that someone else could carry out the experiment from it and trust the result?"
+    },
+    {
+      "id": "ennusta-toisto",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Repetition",
+      "prompt": "A group measures the time a trolley takes to run down an inclined track five times and calculates the mean. What does the mean of five repetitions improve compared with a single measurement?",
+      "choices": [
+        {
+          "text": "The effect of random error on the mean becomes smaller, but the systematic error does not.",
+          "feedback": "Correct. Repetitions make the spread visible, and in the mean the effect of random errors is damped. A systematic error is the same in every result, so it is found by comparing with a known value or with another measuring method. This is covered in the chapter *Measuring and the reliability of a measurement*.",
+          "correct": true
+        },
+        {
+          "text": "Both the random and the systematic error become smaller, because the errors cancel each other.",
+          "feedback": "Only random errors are sometimes too large and sometimes too small and partly cancel each other. A systematic error, for example a wrongly measured track length, shifts every result in the same direction, and the mean does not remove it. Review the kinds of error in the chapter *Measuring and the reliability of a measurement*."
+        },
+        {
+          "text": "The spread of the individual measurements becomes smaller, so every new result is more precise.",
+          "feedback": "The spread of the individual results does not decrease with repetition: the fifth measurement is as imprecise as the first. Repetition reduces the effect of random error on the mean. Review this in the chapter *Measuring and the reliability of a measurement*."
+        },
+        {
+          "text": "The mean removes all errors, so its uncertainty is zero.",
+          "feedback": "The mean also has an uncertainty, although it is smaller than that of a single result, and the mean does not remove a systematic error. Review the mean and the error estimate in the chapter *Measuring and the reliability of a measurement*."
+        }
+      ]
+    },
+    {
+      "id": "ennusta-resoluutio",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Resolution and uncertainty",
+      "prompt": "A phone stopwatch shows the time to a hundredth of a second. A student starts and stops the watch by hand as a ball passes marks on the floor. What is the most sensible estimate of the uncertainty of the time?",
+      "choices": [
+        {
+          "text": "$0.01\\,\\text{s}$, because it is the smallest step the watch shows",
+          "feedback": "$0.01\\,\\text{s}$ is the resolution of the watch. On its own it does not give the uncertainty, because the watch is started and stopped by a person whose reaction time varies much more. Review resolution and uncertainty in the chapter *Measuring and the reliability of a measurement*."
+        },
+        {
+          "text": "$0.005\\,\\text{s}$, that is, half of the smallest step of the watch",
+          "feedback": "Half a scale division is the reading uncertainty only when reading is the only source of error. Here the measuring method, timing by hand, brings a much larger uncertainty. Review this in the chapter *Measuring and the reliability of a measurement*."
+        },
+        {
+          "text": "zero, because a digital watch makes no reading error",
+          "feedback": "A digital display only removes the error of reading a scale. The timing error comes from when the button is pressed. Review the sources of error in the chapter *Measuring and the reliability of a measurement*."
+        },
+        {
+          "text": "of the order of tenths of a second, because the reaction time varies",
+          "feedback": "Correct. The uncertainty of a hand-timed interval is set by the reaction time, which varies from one measurement to the next by tenths of a second. That is why the measured time must be long, so that the relative uncertainty stays small. This is covered in the chapter *Measuring and the reliability of a measurement*.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "ennusta-muuttujat",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "A fair test",
+      "prompt": "A student investigates how the period of a pendulum depends on the length of the string. Which set-up is a fair test?",
+      "choices": [
+        {
+          "text": "The length and the mass of the bob are changed at the same time, to get more information.",
+          "feedback": "When two variables change at the same time, the cause of the change in the period cannot be inferred. In an experiment one variable is changed at a time. Review variables in the chapter *Your own experimental investigation: planning, carrying out and reporting*."
+        },
+        {
+          "text": "The length is changed, and each time a larger starting angle is chosen so that the swing can be seen.",
+          "feedback": "The starting angle is another variable. At small angles it hardly affects the period, but at large angles it does, so it is kept the same and small. Review the pendulum model and its conditions in the chapter *The mass–spring oscillator and the pendulum*."
+        },
+        {
+          "text": "The length is changed, the period is measured, and the bob and a small starting angle are kept the same.",
+          "feedback": "Correct. The independent variable is the length, the dependent variable is the period, and everything else is controlled. Then the change in the period is caused by the length. This is covered in the chapter *Your own experimental investigation: planning, carrying out and reporting*.",
+          "correct": true
+        },
+        {
+          "text": "A different bob is chosen for each length, because the mass does not affect the result anyway.",
+          "feedback": "An experiment must not assume what has not yet been shown. If the bob changes, any effect of the mass gets mixed up with the effect of the length. Review controlled variables in the chapter *Your own experimental investigation: planning, carrying out and reporting*."
+        }
+      ]
+    },
+    {
+      "id": "ennusta-leikkaus",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "The line does not pass through the origin",
+      "prompt": "A student measures the mass of water for different volumes. She pours water into a beaker and weighs the beaker with the water. The $(V, m)$ graph is a straight line that cuts the vertical axis at $85\\,\\text{g}$, although the mass at zero volume should be zero. What can be concluded from this?",
+      "choices": [
+        {
+          "text": "Water does not follow the model, so the density cannot be calculated from the measurements at all.",
+          "feedback": "The points lie on a straight line, so the mass increases steadily with the volume and the model fits. The shift affects all points equally, so the slope, that is, the density, is still usable. Review the meaning of the constant term in the chapter *Graphing and fitting a straight line*."
+        },
+        {
+          "text": "The line has been drawn wrongly, and it is forced through the origin, which makes the error disappear.",
+          "feedback": "Forcing the line through the origin does not remove the error but changes the slope wrongly. The line is fitted to the points, and the constant term is interpreted. Review fitting a straight line in the chapter *Graphing and fitting a straight line*."
+        },
+        {
+          "text": "Every weighing includes the mass of the beaker: a systematic error.",
+          "feedback": "Correct. The beaker adds the same mass to every weighing, so the line has shifted but its slope has not changed. The density can therefore be obtained reliably from the slope. This is covered in the chapters *Graphing and fitting a straight line* and *Density: $m = \\rho V$*.",
+          "correct": true
+        },
+        {
+          "text": "The random error was large, so the measurements are repeated and the mean is calculated again.",
+          "feedback": "A random error would scatter the points on both sides of the line. Here all the points have shifted in the same direction, which is the hallmark of a systematic error, and repetition does not remove it. Review the kinds of error in the chapter *Measuring and the reliability of a measurement*."
+        }
+      ]
+    },
+    {
+      "id": "ennusta-kulmakerroin",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Reading the slope",
+      "prompt": "A straight line has been fitted to the measurement points, and the quantity sought is its slope. How is the slope determined most reliably?",
+      "choices": [
+        {
+          "text": "from two adjacent measurement points, because they are real measurement results",
+          "feedback": "Between adjacent points the change is small, so the random error of either point changes the result a lot. The line uses all the points. Review reading the slope in the chapter *Graphing and fitting a straight line*."
+        },
+        {
+          "text": "from the first and the last measurement point, even if the line does not pass through them",
+          "feedback": "Then the result depends on only two measurements and their errors, and the fitted line is not used at all. Review this in the chapter *Graphing and fitting a straight line*."
+        },
+        {
+          "text": "from two points of the fitted line that are far apart",
+          "feedback": "Correct. The fitted line runs through the middle of the set of points, and a slope read from points of the line far apart is precise, because the changes $\\Delta x$ and $\\Delta y$ are large. This is covered in the chapter *Graphing and fitting a straight line*.",
+          "correct": true
+        },
+        {
+          "text": "by dividing the $y$ value of the last measurement point by its $x$ value",
+          "feedback": "The quotient $y : x$ is the slope only if the line passes through the origin. If the line has a constant term, the result is wrong. Review the equation of a line $y = kx + b$ in the chapter *Graphing and fitting a straight line*."
+        }
+      ]
+    },
+    {
+      "id": "ennusta-johtopaatos",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Conclusion",
+      "prompt": "The group's hypothesis was that the free-fall acceleration is $9.81\\,\\text{m/s}^2$. The measurement gave the result $g = (9.7 \\pm 0.3)\\,\\text{m/s}^2$. Which conclusion is correct?",
+      "choices": [
+        {
+          "text": "The hypothesis has been proved correct, because the value is within the uncertainty interval.",
+          "feedback": "A measurement cannot prove a hypothesis: other values also fit within the uncertainty interval, and the interval is only an estimate. The result supports the hypothesis. Review how to word a conclusion in the chapter *Your own experimental investigation: planning, carrying out and reporting*."
+        },
+        {
+          "text": "The hypothesis is wrong, because the result is not exactly $9.81\\,\\text{m/s}^2$.",
+          "feedback": "Every measurement result has an uncertainty, so exactly the same value cannot be expected. The result is compared with the hypothesis taking the uncertainty into account. Review this in the chapter *Your own experimental investigation: planning, carrying out and reporting*."
+        },
+        {
+          "text": "No conclusion can be drawn, because the uncertainty of the result is greater than zero.",
+          "feedback": "Uncertainty belongs to every measurement, and it does not prevent a conclusion. It tells how strong the conclusion is. Review this in the chapters *Your own experimental investigation: planning, carrying out and reporting* and *Measuring and the reliability of a measurement*."
+        },
+        {
+          "text": "The result supports the hypothesis but does not prove it: the difference is smaller than the uncertainty.",
+          "feedback": "Correct. The difference $0.1\\,\\text{m/s}^2$ is smaller than the uncertainty $0.3\\,\\text{m/s}^2$, so the measurement is consistent with the hypothesis. This is covered in the chapter *Your own experimental investigation: planning, carrying out and reporting*.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "aineisto",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "The group's spring measurement",
+      "source": "example",
+      "text": "A group checked whether the spring constant $25\\,\\text{N/m}$ stated by the spring's manufacturer is correct. The spring was hung from a stand, and a vertical ruler was fixed next to it. With no masses, the lower end of the spring was at the $1.0\\,\\text{cm}$ mark of the ruler. The group hung masses on the spring, read the position of the lower end from the ruler and recorded the reading as the extension $x$. From each row they calculated the spring constant $k = F : x$.\n\n| $m\\ (\\text{g})$ | $F = mg\\ (\\text{N})$ | $x\\ (\\text{cm})$ | $k = F : x\\ (\\text{N/m})$ |\n|---|---|---|---|\n| $50$ | $0.491$ | $2.99$ | $16.4$ |\n| $100$ | $0.981$ | $4.90$ | $20.0$ |\n| $150$ | $1.472$ | $6.90$ | $21.3$ |\n| $200$ | $1.962$ | $6.85$ | $28.6$ |\n| $250$ | $2.453$ | $10.79$ | $22.7$ |\n\nThe group's conclusion: “The mean of the five results is $21.8\\,\\text{N/m}$. The manufacturer's $25\\,\\text{N/m}$ is therefore wrong.”",
+      "question": {
+        "type": "explain",
+        "prompt": "Assess the group's conclusion. Find two different errors in the data, say how each one is recognised, and suggest how the spring constant should be determined.",
+        "criteria": [
+          "The answer says that the reading $6.85\\,\\text{cm}$ on the $200\\,\\text{g}$ row is smaller than with a lighter mass, so it has probably been recorded wrongly, for example instead of $8.85\\,\\text{cm}$ (a gross error).",
+          "The answer says that the deviating reading is checked and measured again and not deleted without explanation.",
+          "The answer says that the initial reading $1.0\\,\\text{cm}$ was not subtracted from the readings, so every extension is too large and every $k$ too small (a systematic error); this shows in the way $k$ grows as the mass grows.",
+          "The answer says that the mean cannot be used for the comparison, because both errors are included, so the conclusion that the manufacturer is wrong is not justified.",
+          "The answer suggests an $(F, x)$ graph from whose slope the spring constant is calculated, and repetitions with each mass."
+        ],
+        "model": "*Gross error.* On the $200\\,\\text{g}$ row the reading $6.85\\,\\text{cm}$ is smaller than on the $150\\,\\text{g}$ row, although a heavier mass stretches the spring more. The result $28.6\\,\\text{N/m}$ clearly differs from the others. The reading was probably $8.85\\,\\text{cm}$, which would fit between the rows. The reading is checked and measured again; it is not deleted merely because it deviates, and the reason is recorded.\n\n*Systematic error.* The extension is the difference between the reading and the initial reading, but the group did not subtract the initial reading $1.0\\,\\text{cm}$. Every extension is therefore $1.0\\,\\text{cm}$ too large and every $k$ too small. The error can be recognised from the way $k$ grows with the mass ($16.4 \\to 22.7\\,\\text{N/m}$): the same $1.0\\,\\text{cm}$ is a larger part of the reading when the extension is small.\n\n*Conclusion.* The mean $21.8\\,\\text{N/m}$ contains both errors, so the manufacturer's value cannot be rejected on its basis. The spring constant is better determined by drawing an $(F, x)$ graph: the slope of the line is $\\tfrac{1}{k}$, and the error in the initial reading shifts the line but does not change the slope. From these measurements the slope gives $k \\approx 25\\,\\text{N/m}$ when the faulty row is left out with a stated reason. In addition, each reading is measured three times, so that a deviation stands out at once."
+      }
+    },
+    {
+      "id": "kertaus-teoria",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava",
+        "Yleisiä virheitä",
+        "Kertaa tarvittaessa"
+      ]
+    },
+    {
+      "id": "valine",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Choosing a measuring instrument",
+      "prompt": "The diameter of a copper wire is about $0.5\\,\\text{mm}$. With which measuring method is the relative uncertainty of the diameter smallest?",
+      "choices": [
+        {
+          "text": "With a micrometer screw gauge whose resolution is $0.01\\,\\text{mm}$, at five points",
+          "feedback": "Correct. The reading uncertainty is about $0.01\\,\\text{mm}$, or about $2\\,\\%$ of the diameter, and five measuring points show whether the thickness varies. An instrument is chosen so that its resolution and uncertainty are small compared with the quantity measured.",
+          "correct": true
+        },
+        {
+          "text": "With a ruler whose smallest scale division is $1\\,\\text{mm}$, straight across the wire",
+          "feedback": "The reading uncertainty is about $0.5\\,\\text{mm}$, as large as the whole diameter: the relative uncertainty is about $100\\,\\%$. The scale division of the instrument must be much smaller than the quantity measured."
+        },
+        {
+          "text": "By winding $20$ turns around a pencil and measuring the width of the layer with a ruler",
+          "feedback": "This is a good method if no more precise instrument is available: $20$ diameters make about $10\\,\\text{mm}$, and the reading uncertainty $0.5\\,\\text{mm}$ is about $5\\,\\%$ of that. A micrometer screw gauge still reaches a clearly smaller relative uncertainty."
+        },
+        {
+          "text": "With vernier callipers whose resolution is $0.05\\,\\text{mm}$, at one point",
+          "feedback": "The uncertainty is at least of the order of the resolution, about $0.05\\,\\text{mm}$, or $10\\,\\%$ of the diameter. A single measurement also does not reveal whether the wire is equally thick everywhere."
+        }
+      ]
+    },
+    {
+      "id": "suunnitelma-virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the flaw in the plan",
+      "prompt": "A student plans an experiment to investigate how the bounce height of a rubber ball depends on the drop height. Which item of the plan is inadequate?",
+      "choices": [
+        {
+          "text": "The drop height is varied from $0.50\\,\\text{m}$ to $2.0\\,\\text{m}$ in five evenly spaced values.",
+          "feedback": "This item is fine: five evenly spaced values over a wide range are enough to show whether the dependence is linear."
+        },
+        {
+          "text": "The bounce height is read from a tape measure on the wall from a video, frame by frame.",
+          "feedback": "This item is fine: the video freezes the highest point of the ball, which is hard to see by eye. The camera must be at the height of the ball so that the reading is not distorted."
+        },
+        {
+          "text": "At each drop height the ball is dropped only once, because repetition does not change the result.",
+          "feedback": "Correct, this is the flaw. The bounce height varies from one drop to the next, and the spread shows only through repetition. The mean of three or more repetitions damps the random error, and the spread gives an error estimate.",
+          "correct": true
+        },
+        {
+          "text": "The same ball, the same spot on the floor and the same room temperature are kept throughout the experiment.",
+          "feedback": "This item is fine: the ball, the surface and the temperature affect the bounce, so they are controlled variables."
+        }
+      ]
+    },
+    {
+      "id": "linearisointi",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Which graph?",
+      "prompt": "Different masses $m$ are hung on a spring, and the period $T$ of each oscillation is measured. The period of a mass on a spring is $T = 2\\pi\\sqrt{\\tfrac{m}{k}}$. From which graph is the spring constant $k$ obtained using the slope of a straight line?",
+      "choices": [
+        {
+          "text": "from the $(m, T^2)$ graph, whose slope is $\\tfrac{4\\pi^2}{k}$",
+          "feedback": "Correct. Squaring gives $T^2 = \\tfrac{4\\pi^2}{k}\\, m$, which is a straight line when $T^2$ is on the vertical axis and $m$ on the horizontal axis. From the slope $a$ one gets $k = \\tfrac{4\\pi^2}{a}$. Review the period in the chapter *The mass–spring oscillator and the pendulum*.",
+          "correct": true
+        },
+        {
+          "text": "from the $(m, T)$ graph, whose slope is $k$",
+          "feedback": "$T$ is proportional to the square root of the mass, so the $(m, T)$ points lie on a curve and not on a straight line. The formula becomes the equation of a line when it is squared. Review this in the chapter *Graphing and fitting a straight line*."
+        },
+        {
+          "text": "from the $(T, m)$ graph, whose slope is $2\\pi k$",
+          "feedback": "Swapping the axes does not straighten the graph: $m$ is proportional to the square of the period, so the points lie on a parabola. Moreover, the factor $2\\pi k$ does not follow from the formula. Review this in the chapter *The mass–spring oscillator and the pendulum*."
+        },
+        {
+          "text": "from the $(m, \\sqrt{T})$ graph, whose slope is $\\tfrac{k}{4\\pi^2}$",
+          "feedback": "The square root goes in the wrong direction: $\\sqrt{T}$ is proportional to the fourth root of the mass. A straight line is obtained when the period is squared. Review this in the chapter *Graphing and fitting a straight line*."
+        }
+      ]
+    },
+    {
+      "id": "lampomittari",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Zero error",
+      "prompt": "In ice water a thermometer shows $1.5\\,{}^\\circ\\text{C}$ instead of $0.0\\,{}^\\circ\\text{C}$, and the error is the same over the whole measuring range. The thermometer is used to read the temperature of water before and after heating, and the specific heat capacity is calculated from $c = \\tfrac{Q}{m\\,\\Delta T}$. How does the error of the thermometer affect the result $c$?",
+      "choices": [
+        {
+          "text": "$c$ comes out too small, because every reading is $1.5\\,{}^\\circ\\text{C}$ too high.",
+          "feedback": "Both readings are $1.5\\,{}^\\circ\\text{C}$ too high, so their difference $\\Delta T$ is correct. The formula needs only the change in temperature."
+        },
+        {
+          "text": "Hardly at all, because the same shift is in both readings and cancels in the difference.",
+          "feedback": "Correct. A zero error shifts both readings by the same amount, so the temperature change $\\Delta T$ is correct. The error needs to be corrected only if the temperature itself is needed, for example an absolute temperature.",
+          "correct": true
+        },
+        {
+          "text": "$c$ comes out too large, because the thermometer reads too warm and the heating looks weaker.",
+          "feedback": "A reading that is too high does not make the warming smaller: the initial and final readings shift by the same amount, and the difference stays the same."
+        },
+        {
+          "text": "The result is useless, because a systematic error cannot be corrected afterwards.",
+          "feedback": "A systematic error of known size can be corrected by subtracting it from the readings, and in a difference it cancels by itself."
+        }
+      ]
+    },
+    {
+      "id": "jaksonaika",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Repeated timing",
+      "prompt": "A student measures the time a trolley takes on an inclined track five times: $5.62\\,\\text{s}$, $5.81\\,\\text{s}$, $5.55\\,\\text{s}$, $5.74\\,\\text{s}$ and $5.68\\,\\text{s}$. Calculate the relative uncertainty of the time when the error estimate is half the range. Give the answer as a percentage.",
+      "answer": 2.29,
+      "unit": "%",
+      "tolerance": 0.05,
+      "hints": [
+        "First calculate the mean time.",
+        "The error estimate is $\\Delta t = \\tfrac{t_\\text{max} - t_\\text{min}}{2}$.",
+        "$\\varepsilon = \\tfrac{\\Delta t}{\\bar{t}} \\cdot 100\\,\\%$, where $\\Delta t = 0.13\\,\\text{s}$."
+      ],
+      "mistakes": [
+        {
+          "value": 4.58,
+          "feedback": "You used the whole range $0.26\\,\\text{s}$. The error estimate is half the range."
+        },
+        {
+          "value": 0.13,
+          "feedback": "This is the error estimate $\\Delta t$ of the time in seconds. The relative uncertainty is $\\Delta t$ divided by the mean."
+        },
+        {
+          "value": 0.0229,
+          "feedback": "This is the relative uncertainty as a decimal number. As a percentage it is a hundred times larger."
+        }
+      ],
+      "solution": "**Given:** five run times $5.62\\,\\text{s}$, $5.81\\,\\text{s}$, $5.55\\,\\text{s}$, $5.74\\,\\text{s}$ and $5.68\\,\\text{s}$\n\n**Find:** the relative uncertainty $\\varepsilon$ of the time as a percentage\n\n**Principle:** The best estimate of repeated results is the mean, and in this course the spread is estimated as half the range. The relative uncertainty tells how large the error estimate is compared with the result.\n\n**Formula:** $\\bar{t} = \\dfrac{t_1 + \\dots + t_5}{5}$, $\\Delta t = \\dfrac{t_\\text{max} - t_\\text{min}}{2}$ and $\\varepsilon = \\dfrac{\\Delta t}{\\bar{t}} \\cdot 100\\,\\%$\n\n**Conversions:** None needed, all times are in seconds.\n\n**Substitution:** the times add up to $28.40\\,\\text{s}$, so $\\bar{t} = \\dfrac{28.40\\,\\text{s}}{5} = 5.68\\,\\text{s}$; $\\Delta t = \\dfrac{5.81\\,\\text{s} - 5.55\\,\\text{s}}{2} = 0.13\\,\\text{s}$ and $\\varepsilon = \\dfrac{0.13\\,\\text{s}}{5.68\\,\\text{s}} \\cdot 100\\,\\% = 2.29\\,\\%$\n\n**Answer:** $\\varepsilon \\approx 2.3\\,\\%$, two significant figures as in the error estimate $0.13\\,\\text{s}$. The result is $t = (5.68 \\pm 0.13)\\,\\text{s}$.\n\n**Reasonableness:** The times vary by about a tenth of a second on both sides of the mean, which fits timing by hand. An error of a tenth in a time of about six seconds is a few per cent."
+    },
+    {
+      "id": "kulmakerroin-g",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Spring constant from a graph",
+      "prompt": "The straight line fitted to an $(m, T^2)$ graph drawn from the oscillation of a mass on a spring passes through the points $(0.10\\,\\text{kg};\\ 0.20\\,\\text{s}^2)$ and $(0.50\\,\\text{kg};\\ 0.84\\,\\text{s}^2)$. Determine the spring constant. Give the answer in $\\text{N/m}$.",
+      "answer": 24.67,
+      "unit": "N/m",
+      "tolerance": 0.03,
+      "hints": [
+        "What does the slope of the line mean when the formula for the period is written in the form $T^2 = \\tfrac{4\\pi^2}{k}\\, m$?",
+        "First calculate the slope $a = \\tfrac{\\Delta (T^2)}{\\Delta m}$ from two points of the line.",
+        "$a = 1.6\\,\\text{s}^2/\\text{kg}$, so $k = \\tfrac{4\\pi^2}{a}$."
+      ],
+      "mistakes": [
+        {
+          "value": 1.6,
+          "feedback": "This is the slope of the line. It is not the spring constant but $\\tfrac{4\\pi^2}{k}$, so $k = \\tfrac{4\\pi^2}{a}$."
+        },
+        {
+          "value": 0.0405,
+          "feedback": "You calculated $\\tfrac{a}{4\\pi^2}$, which is $\\tfrac{1}{k}$. The slope is $\\tfrac{4\\pi^2}{k}$, so $k = \\tfrac{4\\pi^2}{a}$."
+        }
+      ],
+      "solution": "**Given:** the points $(0.10\\,\\text{kg};\\ 0.20\\,\\text{s}^2)$ and $(0.50\\,\\text{kg};\\ 0.84\\,\\text{s}^2)$ of the fitted line\n\n**Find:** the spring constant $k$ in $\\text{N/m}$\n\n**Principle:** The period of a mass on a spring is $T = 2\\pi\\sqrt{\\tfrac{m}{k}}$. Squaring the equation gives $T^2 = \\tfrac{4\\pi^2}{k}\\, m$: the $(m, T^2)$ graph is a straight line whose slope is $\\tfrac{4\\pi^2}{k}$. The slope is read from two points of the line far apart, so all measurement points affect the result. The line does not pass exactly through the origin, because the spring's own mass also oscillates, but that does not change the slope.\n\n**Formula:** $a = \\dfrac{\\Delta (T^2)}{\\Delta m}$ and $a = \\dfrac{4\\pi^2}{k}$, from which $k = \\dfrac{4\\pi^2}{a}$\n\n**Conversions:** None needed: the mass is in kilograms and $T^2$ in $\\text{s}^2$, so $k$ comes out in $\\text{kg/s}^2 = \\text{N/m}$.\n\n**Substitution:** $a = \\dfrac{0.84\\,\\text{s}^2 - 0.20\\,\\text{s}^2}{0.50\\,\\text{kg} - 0.10\\,\\text{kg}} = \\dfrac{0.64\\,\\text{s}^2}{0.40\\,\\text{kg}} = 1.6\\,\\text{s}^2/\\text{kg}$ and $k = \\dfrac{4\\pi^2}{1.6\\,\\text{s}^2/\\text{kg}} = 24.67\\,\\text{N/m}$\n\n**Answer:** $k \\approx 25\\,\\text{N/m}$, two significant figures, because the differences $0.64\\,\\text{s}^2$ and $0.40\\,\\text{kg}$ are known to two figures.\n\n**Reasonableness:** Units: $\\tfrac{1}{\\text{s}^2/\\text{kg}} = \\text{kg/s}^2 = \\text{N/m}$. Check: with a $0.50\\,\\text{kg}$ mass $T = 2\\pi\\sqrt{0.50\\,\\text{kg} : 24.7\\,\\text{N/m}} \\approx 0.89\\,\\text{s}$ and $T^2 \\approx 0.80\\,\\text{s}^2$, which is close to the value on the line; the small difference is the effect of the spring's own mass."
+    },
+    {
+      "id": "nollapiste",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "The zero of pressure",
+      "prompt": "The pressure of the air in a closed glass bottle was measured in a water bath at different temperatures. The points $(20.0\\,{}^\\circ\\text{C};\\ 108.7\\,\\text{kPa})$ and $(80.0\\,{}^\\circ\\text{C};\\ 130.8\\,\\text{kPa})$ were read from the line fitted to the data. Use the line to determine the temperature at which the pressure would be zero. Give the answer in degrees Celsius.",
+      "answer": -275.1,
+      "unit": "°C",
+      "tolerance": 0.01,
+      "hints": [
+        "Write the equation of the line in the form $p = p_0 + k\\theta$ and calculate the slope $k$ from two points of the line.",
+        "Solve for the constant term $p_0$ from either point: $p_0 = p - k\\theta$.",
+        "The pressure is zero when $p_0 + k\\theta_0 = 0$, that is, $\\theta_0 = -\\tfrac{p_0}{k}$."
+      ],
+      "mistakes": [
+        {
+          "value": -295.1,
+          "feedback": "You divided the pressure $108.7\\,\\text{kPa}$ of a measurement point by the slope. What has to be divided is the pressure at $0\\,{}^\\circ\\text{C}$, that is, the constant term $p_0$: $\\theta_0 = -\\tfrac{p_0}{k}$."
+        },
+        {
+          "value": -355.1,
+          "feedback": "You divided the pressure $130.8\\,\\text{kPa}$ of a measurement point by the slope. What has to be divided is the pressure at $0\\,{}^\\circ\\text{C}$, that is, the constant term $p_0$: $\\theta_0 = -\\tfrac{p_0}{k}$."
+        },
+        {
+          "value": 275.1,
+          "feedback": "The sign is missing. The pressure decreases on cooling, so zero pressure is well below $0\\,{}^\\circ\\text{C}$."
+        }
+      ],
+      "solution": "**Given:** the points $(20.0\\,{}^\\circ\\text{C};\\ 108.7\\,\\text{kPa})$ and $(80.0\\,{}^\\circ\\text{C};\\ 130.8\\,\\text{kPa})$ of the line; the volume of the bottle does not change\n\n**Find:** the temperature $\\theta_0$ at which the pressure would be zero, in degrees Celsius\n\n**Principle:** In a rigid closed container, the pressure of a dilute gas is a linear function of temperature over the measuring range, $p = p_0 + k\\theta$. The line is extended, or extrapolated, outside the measuring range to zero pressure. The extension is long, so the result is only an estimate: a real gas would condense before reaching zero pressure.\n\n**Formula:** $k = \\dfrac{p_2 - p_1}{\\theta_2 - \\theta_1}$, $p_0 = p_1 - k\\theta_1$ and $p_0 + k\\theta_0 = 0$, from which $\\theta_0 = -\\dfrac{p_0}{k}$\n\n**Conversions:** None needed: a temperature change is the same in degrees Celsius and in kelvins, and the temperature asked for is in degrees Celsius.\n\n**Substitution:** $k = \\dfrac{130.8\\,\\text{kPa} - 108.7\\,\\text{kPa}}{80.0\\,{}^\\circ\\text{C} - 20.0\\,{}^\\circ\\text{C}} = \\dfrac{22.1\\,\\text{kPa}}{60.0\\,{}^\\circ\\text{C}} = 0.3683\\,\\text{kPa}/{}^\\circ\\text{C}$, $p_0 = 108.7\\,\\text{kPa} - 0.3683\\,\\text{kPa}/{}^\\circ\\text{C} \\cdot 20.0\\,{}^\\circ\\text{C} = 101.33\\,\\text{kPa}$ and $\\theta_0 = -\\dfrac{101.33\\,\\text{kPa}}{0.3683\\,\\text{kPa}/{}^\\circ\\text{C}} = -275.1\\,{}^\\circ\\text{C}$\n\n**Answer:** $\\theta_0 \\approx -275\\,{}^\\circ\\text{C}$. Three significant figures, because the pressure difference $22.1\\,\\text{kPa}$ is known to three figures; because of the long extrapolation the uncertainty is still several degrees.\n\n**Reasonableness:** The result is close to absolute zero, $-273.15\\,{}^\\circ\\text{C}$. Check: $101.33\\,\\text{kPa} + 0.3683\\,\\text{kPa}/{}^\\circ\\text{C} \\cdot (-275.1\\,{}^\\circ\\text{C}) \\approx 0\\,\\text{kPa}$."
+    },
+    {
+      "id": "mittausmatka",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "A long enough measurement",
+      "prompt": "A student measures her walking speed in the school corridor. She walks at about $1.4\\,\\text{m/s}$, and the uncertainty of a hand-timed interval is $0.2\\,\\text{s}$. The relative uncertainty of the time must be at most $2\\,\\%$. How long must the measured distance be at least? Give the answer in metres.",
+      "answer": 14,
+      "unit": "m",
+      "tolerance": 0.05,
+      "hints": [
+        "The uncertainty of the timing stays the same whether you time a short or a long interval. How long must the time be so that $0.2\\,\\text{s}$ is at most $2\\,\\%$ of it?",
+        "$t_\\text{min} = \\tfrac{\\Delta t}{\\varepsilon_\\text{max}}$, where $\\varepsilon_\\text{max} = 0.02$.",
+        "The distance comes from the model of uniform motion $s = vt$."
+      ],
+      "mistakes": [
+        {
+          "value": 10,
+          "feedback": "This is the shortest time in seconds. The distance is obtained by multiplying the time by the speed."
+        },
+        {
+          "value": 0.14,
+          "feedback": "You used the percentage $2$ instead of the decimal number $0.02$: $2\\,\\% = 0.02$."
+        },
+        {
+          "value": 0.28,
+          "feedback": "This is the distance the walker covers during the uncertainty of the timing. The time must be so long that $0.2\\,\\text{s}$ is at most $2\\,\\%$ of it."
+        }
+      ],
+      "solution": "**Given:** speed $v = 1.4\\,\\text{m/s}$, uncertainty of the time $\\Delta t = 0.2\\,\\text{s}$, largest allowed relative uncertainty $\\varepsilon_\\text{max} = 2\\,\\%$\n\n**Find:** the shortest measured distance $s_\\text{min}$ in metres\n\n**Principle:** The uncertainty of timing by hand comes from the reaction time, and it is almost the same in a short and a long measurement. The relative uncertainty $\\tfrac{\\Delta t}{t}$ therefore decreases as the measured time increases. The walker moves at an almost constant speed, so the model of uniform motion $s = vt$ gives the distance from the time.\n\n**Formula:** $\\varepsilon = \\dfrac{\\Delta t}{t} \\le \\varepsilon_\\text{max}$, so $t_\\text{min} = \\dfrac{\\Delta t}{\\varepsilon_\\text{max}}$ and $s_\\text{min} = v\\,t_\\text{min} = \\dfrac{v\\,\\Delta t}{\\varepsilon_\\text{max}}$\n\n**Conversions:** $\\varepsilon_\\text{max} = 2\\,\\% = 0.02$; the other quantities are in base units.\n\n**Substitution:** $t_\\text{min} = \\dfrac{0.2\\,\\text{s}}{0.02} = 10\\,\\text{s}$ and $s_\\text{min} = 1.4\\,\\text{m/s} \\cdot 10\\,\\text{s} = 14\\,\\text{m}$\n\n**Answer:** $s_\\text{min} \\approx 14\\,\\text{m}$, two significant figures as in the speed $1.4\\,\\text{m/s}$; the uncertainty $0.2\\,\\text{s}$ is only an estimate, so in practice a round distance is chosen, for example $15\\,\\text{m}$.\n\n**Reasonableness:** Walking $14\\,\\text{m}$ takes about $10\\,\\text{s}$, and $0.2\\,\\text{s}$ is $2\\,\\%$ of that. Over a distance of three metres the uncertainty would be about $9\\,\\%$."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Six tasks in the style of the matriculation exam: two experiment plans, assessing a report, processing measurement data as a graph, a calculation task and a task that combines modules. Write your answer yourself first and then assess it with the marking scheme."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "A group weighs a mass known to be $100.0\\,\\text{g}$ five times, and all results are between $101.6\\text{–}101.9\\,\\text{g}$. What do the results tell about the balance?",
+      "choices": [
+        {
+          "text": "The measurement is repeatable but not accurate: the balance has a systematic error.",
+          "feedback": "Correct. The results are close to each other, but all are about $1.7\\,\\text{g}$ too large. The error is corrected by subtracting it from the readings or by zeroing the balance. This is covered in the chapter *Measuring and the reliability of a measurement*.",
+          "correct": true
+        },
+        {
+          "text": "The measurement is both repeatable and accurate, because the spread of the results is small.",
+          "feedback": "A small spread only tells about repeatability. Accuracy is assessed by comparing the mean with the known value, and the difference is about $1.7\\,\\text{g}$. Review repeatability and accuracy in the chapter *Measuring and the reliability of a measurement*."
+        },
+        {
+          "text": "The balance has a large random error, which becomes smaller with more repetitions.",
+          "feedback": "A random error would show as a large spread, but the results are tightly together. They are all too large, which is the hallmark of a systematic error. Review the kinds of error in the chapter *Measuring and the reliability of a measurement*."
+        },
+        {
+          "text": "One of the results is a gross error that must be removed before calculating the mean.",
+          "feedback": "No result differs from the others, so there is no gross error. All the results have shifted by the same amount. Review this in the chapter *Measuring and the reliability of a measurement*."
+        }
+      ],
+      "practice": "Review the kinds of error and repeatability and accuracy in the chapter [*Measuring and the reliability of a measurement*](fy1-3.html)."
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculation",
+      "prompt": "The mass of a metal cube is $63.5\\,\\text{g}$, and its uncertainty is very small. The edge of the cube was measured with vernier callipers as $a = (2.00 \\pm 0.02)\\,\\text{cm}$. Estimate the uncertainty $\\Delta\\rho$ of the density by calculating the density with the extreme values of the edge. Give the answer in $\\text{g/cm}^3$.",
+      "answer": 0.24,
+      "unit": "g/cm³",
+      "tolerance": 0.2,
+      "hints": [
+        "The volume of a cube is $V = a^3$, so $\\rho = \\tfrac{m}{a^3}$.",
+        "Calculate $\\rho$ with the edges $1.98\\,\\text{cm}$ and $2.02\\,\\text{cm}$. Which one gives the larger density?",
+        "$\\Delta\\rho = \\tfrac{\\rho_\\text{max} - \\rho_\\text{min}}{2}$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.08,
+          "feedback": "You took the relative uncertainty $1\\,\\%$ of the edge as the relative uncertainty of the density. The edge is cubed in the formula, so the relative uncertainty of the density is about three times as large."
+        },
+        {
+          "value": 0.48,
+          "feedback": "This is the whole interval $\\rho_\\text{max} - \\rho_\\text{min}$. The uncertainty is half of it."
+        }
+      ],
+      "solution": "**Given:** $m = 63.5\\,\\text{g}$, edge $a = (2.00 \\pm 0.02)\\,\\text{cm}$\n\n**Find:** the uncertainty $\\Delta\\rho$ of the density in $\\text{g/cm}^3$\n\n**Principle:** The volume of a cube is $a^3$, so the density is $\\rho = \\tfrac{m}{a^3}$. The uncertainty is estimated with the extreme-value method: the density is calculated with the smallest and the largest value of the edge, and the uncertainty is half the difference. The smaller edge gives the larger density.\n\n**Formula:** $\\rho = \\dfrac{m}{a^3}$ and $\\Delta\\rho = \\dfrac{\\rho_\\text{max} - \\rho_\\text{min}}{2}$\n\n**Conversions:** None needed when the mass is in grams and the edge in centimetres: the density comes out in $\\text{g/cm}^3$.\n\n**Substitution:** $\\rho_\\text{max} = \\dfrac{63.5\\,\\text{g}}{(1.98\\,\\text{cm})^3} = 8.18\\,\\text{g/cm}^3$, $\\rho_\\text{min} = \\dfrac{63.5\\,\\text{g}}{(2.02\\,\\text{cm})^3} = 7.70\\,\\text{g/cm}^3$ and $\\Delta\\rho = \\dfrac{8.18\\,\\text{g/cm}^3 - 7.70\\,\\text{g/cm}^3}{2} = 0.24\\,\\text{g/cm}^3$\n\n**Answer:** $\\Delta\\rho \\approx 0.2\\,\\text{g/cm}^3$, one significant figure, as is usual for an error estimate. With the edge $2.00\\,\\text{cm}$ one gets $\\rho = 7.94\\,\\text{g/cm}^3$, so $\\rho = (7.9 \\pm 0.2)\\,\\text{g/cm}^3$.\n\n**Reasonableness:** The relative uncertainty of the edge is $1\\,\\%$, and cubing triples it to about $3\\,\\%$: $0.03 \\cdot 7.94\\,\\text{g/cm}^3 \\approx 0.24\\,\\text{g/cm}^3$. A density of $7.9\\,\\text{g/cm}^3$ fits iron.",
+      "practice": "Review density in the chapter [*Density: $m = \\rho V$*](fy1-7.html) and the error estimate in the chapter [*Measuring and the reliability of a measurement*](fy1-3.html)."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Justify",
+      "prompt": "Explain why the spring constant is best determined from the slope of an $(F, x)$ graph rather than by calculating a separate $k = F : x$ from each measurement and taking their mean.",
+      "criteria": [
+        "The answer says that the slope uses all the points at the same time, so the random error of a single point has less effect.",
+        "The answer says that an error that is the same in every reading (for example the zero of the ruler) shifts the line but does not change the slope.",
+        "The answer says that the graph shows whether the model fits (the points lie on a line) and whether there is a clearly deviating point among them."
+      ],
+      "model": "When $k$ is calculated separately from each measurement, the error of each reading goes straight into the result. If the extension has been read $1\\,\\text{cm}$ too large every time, every $k$ is too small, and the mean does not correct it. In a graph the same error shifts the whole line, but the slope does not change, so $k$ comes out right, and the error shows as the constant term. The line is fitted among all the points, so the random error of a single point has less effect. In addition, the graph shows at once whether the points lie on a line, that is, whether the model fits, and whether a deviating point that needs checking stands out.",
+      "practice": "Review fitting a straight line and the constant term in the chapter [*Graphing and fitting a straight line*](fy1-4.html)."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, three quick questions. Answer yourself first and only then open the answer."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "fy9-mittaaminen",
+  "course": "FY9",
+  "chapter": 1,
+  "order": 2,
+  "title": "Mittaaminen, epävarmuus ja kuvaajat",
+  "description": "Kerrataan suureet ja yksiköt, mittausepävarmuus ja merkitsevät numerot sekä mittausaineiston kuvaaja, suoran sovitus, linearisointi ja kulmakertoimen tulkinta ylioppilaskokeen tehtävien tapaan.",
+  "kind": "review",
+  "minutes": 75,
+  "subjects": [
+    "physics"
+  ],
+  "sources": [],
+  "key_concepts": [
+    {
+      "term": "mittausepävarmuus",
+      "explain": "Kertoo, kuinka paljon tulos voi erota oikeasta arvosta. Tulos kirjoitetaan muodossa $\\bar{x} \\pm \\Delta x$."
+    },
+    {
+      "term": "systemaattinen virhe",
+      "explain": "Virhe, joka siirtää jokaista tulosta samaan suuntaan. Toistaminen ja keskiarvo eivät poista sitä."
+    },
+    {
+      "term": "suoran sovitus",
+      "explain": "Mittauspisteiden väliin piirretään yksi suora, joka kulkee mahdollisimman läheltä kaikkia pisteitä. Pisteitä ei yhdistetä viivalla."
+    },
+    {
+      "term": "kulmakerroin",
+      "explain": "Kertoo, kuinka jyrkästi suora nousee: $k = \\frac{\\Delta y}{\\Delta x}$. Se luetaan suoralta kahdesta kaukana olevasta pisteestä."
+    },
+    {
+      "term": "ekstrapolointi",
+      "explain": "Suoran jatkaminen mitatun alueen ulkopuolelle. Tulos on vain arvio, koska mallia ei ole testattu siellä."
+    }
+  ]
+}

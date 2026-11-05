@@ -3,6 +3,7 @@
     {
       "id": "fy6-7-L1-01",
       "level": 1,
+      "core": true,
       "text": "The power of a laptop is $45\\,\\text{W}$. The computer is used for $4.0\\,\\text{h}$. How much electrical energy does it use? Answer in kilowatt-hours.",
       "answer": 0.18,
       "unit": "kWh",
@@ -43,6 +44,7 @@
     {
       "id": "fy6-7-L1-06",
       "level": 1,
+      "core": true,
       "text": "On an electricity bill, electrical energy is given in kilowatt-hours ($\\text{kWh}$). Which quantity does the kilowatt-hour measure?",
       "kind": [
         "concept"
@@ -81,7 +83,7 @@
     {
       "id": "fy6-7-L1-08",
       "level": 1,
-      "text": "A student calculates how long $1.0\\,\\text{kWh}$ of energy lasts a table fan whose power is $40\\,\\text{W}$. The student's solution is: “The time is the product of energy and power, $t = E \\cdot P = 1.0 \\cdot 40 = 40$. So the fan runs for $40$ hours.” Find the student's error and calculate the correct time in hours.",
+      "text": "A student calculates how long $1.0\\,\\text{kWh}$ of energy lasts a table fan whose power is $40\\,\\text{W}$.\n\nThe student's solution is: “The time is the product of energy and power, $t = E \\cdot P = 1.0 \\cdot 40 = 40$. So the fan runs for $40$ hours.”\n\nFind the student's error and calculate the correct time in hours.",
       "kind": [
         "error",
         "reasoning"
@@ -128,6 +130,7 @@
     {
       "id": "fy6-7-L2-05",
       "level": 2,
+      "core": true,
       "text": "The use of household appliances is collected in a table (example data). The power is the power of the device while in use and the time is the time of use per day.\n\na) Calculate the energy of each appliance per day in kilowatt-hours and find out which appliance uses the most energy.\n\nb) Calculate the combined energy of the appliances in a year ($365$ days) in kilowatt-hours.\n\nc) Choose one appliance whose energy is worth reducing, and justify the choice.\n\nThe answer field takes the result of part b).",
       "kind": [
         "data",
@@ -175,6 +178,7 @@
     {
       "id": "fy6-7-L2-06",
       "level": 2,
+      "core": true,
       "text": "The readings of a family's electricity meter were recorded every morning at 8 o'clock for a week (example data). Electricity costs $16\\,\\text{c/kWh}$ including transmission.\n\na) Using the meter readings, calculate the energy during each day, the energy used during the week and the average energy per day.\n\nb) Calculate the average electrical power of the home over the week in watts.\n\nc) Calculate the price of the week's electricity without basic charges.\n\nThe answer field takes the result of part b).",
       "kind": [
         "data"

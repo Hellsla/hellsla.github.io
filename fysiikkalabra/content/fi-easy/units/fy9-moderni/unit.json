@@ -1,0 +1,36 @@
+{
+  "id": "fy9-moderni",
+  "course": "FY9",
+  "chapter": 6,
+  "order": 1,
+  "title": "Kvantti-ilmiöt, ydin ja säteily",
+  "description": "Kerrataan FY8-moduulin asiat: valosähköinen ilmiö ja fotoni, spektrit ja energiatasot, vetyatomi, aalto-hiukkasdualismi ja orbitaalit, LED ja laser, atomiydin ja radioaktiivinen hajoaminen, hajoamislaki, massavaje ja sidosenergia, fissio ja fuusio, ionisoiva säteily, säteilyannos ja säteilyturvallisuus, säteilyn käyttö, standardimalli sekä maailmankaikkeuden kehitys. Lisäksi ratkaistaan ylioppilaskokeen tyylisiä tehtäviä.",
+  "kind": "review",
+  "minutes": 75,
+  "subjects": [
+    "physics"
+  ],
+  "sources": [],
+  "key_concepts": [
+    {
+      "term": "fotoni",
+      "explain": "Valon pienin energiapaketti. Yhden fotonin energia on $E = hf$, ja se riippuu vain valon taajuudesta."
+    },
+    {
+      "term": "energiatila",
+      "explain": "Atomilla tai ytimellä on vain tietyt sallitut energiat. Siirtymässä tilasta toiseen syntyy tai katoaa fotoni, jonka energia on tilojen erotus."
+    },
+    {
+      "term": "puoliintumisaika",
+      "explain": "Aika, jossa puolet radioaktiivisista ytimistä hajoaa. Jokainen puoliintumisaika puolittaa sen määrän, joka on vielä jäljellä."
+    },
+    {
+      "term": "sidosenergia",
+      "explain": "Energia, joka tarvitaan ytimen hajottamiseen nukleoneiksi. Kun sidosenergia nukleonia kohti kasvaa reaktiossa, energiaa vapautuu."
+    },
+    {
+      "term": "ionisoiva säteily",
+      "explain": "Säteily, jonka yksi hiukkanen tai fotoni voi irrottaa elektronin atomista. Se voi vaurioittaa soluja ja DNA:ta."
+    }
+  ]
+}

@@ -11,6 +11,7 @@
     {
       "id": "fy5-11-L1-02",
       "level": 1,
+      "core": true,
       "text": "Merestä tuleva aalto osuu laiturin tasaiseen seinään. Tulevan säteen ja seinän pinnan välinen kulma on $20^\\circ$. Mikä on aallon tulokulma?",
       "answer": 70,
       "unit": "°",
@@ -43,6 +44,7 @@
     {
       "id": "fy5-11-L1-06",
       "level": 1,
+      "core": true,
       "kind": [
         "concept"
       ],
@@ -73,6 +75,7 @@
     {
       "id": "fy5-11-L1-07",
       "level": 1,
+      "core": true,
       "kind": [
         "concept"
       ],
@@ -223,6 +226,7 @@
     {
       "id": "fy5-11-L2-07",
       "level": 2,
+      "core": true,
       "kind": [
         "error"
       ],

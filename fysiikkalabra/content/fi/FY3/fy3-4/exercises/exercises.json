@@ -3,6 +3,7 @@
     {
       "id": "fy3-4-L1-01",
       "level": 1,
+      "core": true,
       "text": "Hiihtäjän paino on $720\\,\\text{N}$. Se jakautuu tasaisesti suksien pohjille, joiden yhteinen pinta-ala on $0{,}30\\,\\text{m}^2$. Kuinka suuri paine suksista kohdistuu lumeen?",
       "answer": 2400,
       "unit": "Pa",
@@ -43,6 +44,7 @@
     {
       "id": "fy3-4-L1-06",
       "level": 1,
+      "core": true,
       "text": "Naula menee puuhun kärki edellä, kun sitä painetaan peukalolla, mutta kanta edellä se ei mene. Peukalon voima on kummassakin tapauksessa yhtä suuri. Mikä selittää eron?",
       "kind": [
         "concept"
@@ -122,6 +124,7 @@
     {
       "id": "fy3-4-L2-02",
       "level": 2,
+      "core": true,
       "text": "Talo saa vetensä vesitornista. Kun hanat ovat kiinni, painemittari näyttää kellarin hanan kohdalla ylipaineen $350\\,\\text{kPa}$. Kuinka korkealla tornin vedenpinta on hanan yläpuolella? Veden tiheys on $1000\\,\\text{kg/m}^3$.",
       "answer": 35.7,
       "unit": "m",
@@ -147,6 +150,7 @@
     {
       "id": "fy3-4-L2-05",
       "level": 2,
+      "core": true,
       "kind": [
         "data"
       ],

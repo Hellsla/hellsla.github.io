@@ -3,6 +3,7 @@
     {
       "id": "fy5-3-L1-01",
       "level": 1,
+      "core": true,
       "text": "Leikkikentän karusellin reunalla seisoo lapsi. Hän kiertää ympyrärataa, jonka säde on $2{,}5\\,\\text{m}$. Karuselli tekee yhden kierroksen ajassa $6{,}0\\,\\text{s}$. Kuinka suuri on lapsen ratanopeus?",
       "answer": 2.6,
       "unit": "m/s",
@@ -43,6 +44,7 @@
     {
       "id": "fy5-3-L1-06",
       "level": 1,
+      "core": true,
       "text": "Pieni kappale kiertää ympyrärataa tasaisella vauhdilla. Mikä väite kappaleen nopeuden suunnasta on oikein?",
       "kind": [
         "concept"
@@ -91,6 +93,7 @@
     {
       "id": "fy5-3-L2-01",
       "level": 2,
+      "core": true,
       "text": "Levysoittimella soitetaan singlelevyä, joka pyörii $45$ kierrosta minuutissa. Levyn reuna on etäisyydellä $8{,}5\\,\\text{cm}$ levyn keskipisteestä. Kuinka suuri on levyn reunan ratanopeus?",
       "answer": 0.4,
       "unit": "m/s",
@@ -123,6 +126,7 @@
     {
       "id": "fy5-3-L2-05",
       "level": 2,
+      "core": true,
       "text": "Karusellin kierrosaika halutaan määrittää tarkasti. Oppilas mittaa kellolla viisi kertaa ajan $t_{10}$. Se on aika, joka kuluu kymmeneen peräkkäiseen kierrokseen (esimerkkiaineisto). Karusellin reunalla oleva istuin on etäisyydellä $2{,}1\\,\\text{m}$ akselista.\n\na) Laske kierrosaika $T$ mittausten keskiarvosta. Perustele, miksi mitataan monta kierrosta kerralla.\n\nb) Laske istuimen ratanopeus $v$.\n\nVastauslaatikkoon tulee kohdan b) tulos.",
       "kind": [
         "data",

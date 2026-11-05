@@ -1,0 +1,36 @@
+{
+  "id": "fy9-sahkokentta",
+  "course": "FY9",
+  "chapter": 5,
+  "order": 2,
+  "title": "Sähkökenttä ja kondensaattori",
+  "description": "Kerrataan FY6-moduulin asiat: sähkövaraus ja Coulombin laki, homogeeninen sähkökenttä, sähköinen potentiaalienergia ja potentiaali, kondensaattori ja sen energia, diodi, LED ja aurinkokenno sekä sähköturvallisuus ja kodin sähköjärjestelmä. Niistä ratkaistaan ylioppilaskokeen tyylisiä tehtäviä.",
+  "kind": "review",
+  "minutes": 75,
+  "subjects": [
+    "physics"
+  ],
+  "sources": [],
+  "key_concepts": [
+    {
+      "term": "sähkökenttä",
+      "explain": "Varauksen ympärillä oleva alue, jossa toiseen varaukseen vaikuttaa voima $\\overline{F} = q\\overline{E}$. Positiiviseen varaukseen voima osoittaa kentän suuntaan."
+    },
+    {
+      "term": "homogeeninen sähkökenttä",
+      "explain": "Kenttä, joka on joka kohdassa yhtä voimakas ja samansuuntainen. Sellainen on laajojen yhdensuuntaisten levyjen välissä: $E = \\tfrac{U}{d}$."
+    },
+    {
+      "term": "potentiaali",
+      "explain": "Kertoo varauksen potentiaalienergian yhtä varausyksikköä kohti, $E_\\text{p} = qV$. Kahden kohdan potentiaalien erotus on niiden välinen jännite."
+    },
+    {
+      "term": "kapasitanssi",
+      "explain": "Kertoo, kuinka paljon varausta kondensaattoriin mahtuu yhtä volttia kohti: $C = \\tfrac{Q}{U}$. Yksikkö on faradi $\\text{F}$."
+    },
+    {
+      "term": "läpilyöntilujuus",
+      "explain": "Suurin sähkökenttä, jonka eriste kestää. Jos kenttä on suurempi, eriste alkaa johtaa, ja syntyy kipinä. Ilmalle se on noin $3\\,\\text{MV/m}$."
+    }
+  ]
+}

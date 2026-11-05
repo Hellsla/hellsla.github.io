@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 5ed5af187d8f9cb2
+CONTENT-HASH: c0821c73c198f4f9
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L3-01 solution Formula block ragged (carried).
-- [Minor] L3-01 problem — three reactions run into the sentence (carried).
+- [Minor] L3-05 solution, part a) — the line "s: 1 - 1 = 0" breaks inside the expression at phone/narrow widths (as in fi).
+- [Minor] L3-05 data table — the "Quarks" header is centred over left-aligned cells (shared with fi).
 
 ## Checked
-- Own Playwright captures at 360 px, ?ratkaisut=1, details opened: every changed formula in fi (L2-03 Sijoitus) plus the en and fi-easy counterparts (contact sheets sheet-fi/en/fi-easy.png in scratchpad shots-fx/).
-- Result: h · \dfrac{c}{X} wraps after 'h ·' into a 2–4 row block, fraction bar intact, units upright with thin spaces, decimal point; document scrollWidth = 360 = viewport, no clipped KaTeX.
-- LaTeX valid, no red KaTeX; hash at start and end the same.
-
-## Scores
-illustrations n/a · typography 5 · English 5 · accessibility 4
+- Opened captures fy8-15-open-exercises-L2-1280-5.png (L2-05) and fy8-15-open-exercises-L3-1280-7.png (L3-05) of en: tables, maths, units and the answer box render; no raw LaTeX, no overflow.
+- Table captions and column headers are translated ("No.", "Combination", "Particle", "Quarks").
+- Decimal point in all numbers; units upright with thin spaces.

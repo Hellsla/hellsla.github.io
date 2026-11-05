@@ -1,5 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 678dc353273487b6
+CONTENT-HASH: cc10e5fca522a7b1
+
+## Delta review (2026-11-04, previous hash 678dc353273487b6)
+- Change: in figure tilanteet, "Maa" moved from x=300 to x=328 (figures.py and the inlined SVG in unit.md). `git diff HEAD` shows no other change.
+- The figure was captured from the preview at 360 and 1280 (2x, all details open). "Maa" is grey and sits above the right end of the Earth arc. It is clear of $\overline{a}$; a bounding-box test found no overlap with any other label. It also stays inside the figure.
+- `check_layout.py fy9-ympyraliike`: OK at 360 and at 1280, for fi, en and fi-easy.
+- The page has 0 `.katex-error` and no console errors, and scrollWidth equals the viewport.
+
+Still PASS.
 
 Round 2 (delta review of round 1 fixes; round 1 hash fc0aa5da26550049). Visual and editorial review of fy9-ympyraliike.
 

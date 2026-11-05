@@ -11,6 +11,7 @@
     {
       "id": "fy4-1-L1-02",
       "level": 1,
+      "core": true,
       "text": "Kärry on $x$-akselilla ensin paikassa $12\\,\\text{m}$. Sitten se liikkuu paikkaan $-5{,}0\\,\\text{m}$. Mikä on kärryn siirtymä? Anna vastaus etumerkkeineen.",
       "answer": -17,
       "unit": "m",
@@ -73,6 +74,7 @@
     {
       "id": "fy4-1-L1-07",
       "level": 1,
+      "core": true,
       "text": "Kävelijä kulkee suoraa tietä $40\\,\\text{m}$ itään. Sitten hän kääntyy ja kävelee saman $40\\,\\text{m}$ takaisin lähtöpaikkaansa. Itä on valittu positiiviseksi suunnaksi. Mikä väite koko kävelystä on oikein?",
       "kind": [
         "concept"
@@ -152,6 +154,7 @@
     {
       "id": "fy4-1-L2-03",
       "level": 2,
+      "core": true,
       "text": "Kärry on hetkellä $t = 2{,}0\\,\\text{s}$ paikassa $18\\,\\text{m}$. Hetkellä $t = 7{,}0\\,\\text{s}$ se on paikassa $3{,}0\\,\\text{m}$. Kärry liikkuu tasaisesti. Laske kärryn nopeus etumerkkeineen.",
       "answer": -3.0,
       "unit": "m/s",
@@ -168,6 +171,7 @@
     {
       "id": "fy4-1-L2-05",
       "level": 2,
+      "core": true,
       "text": "Kärryn liikettä seurattiin videoanalyysillä. Taulukossa on kärryn paikka eri hetkinä (esimerkkiaineisto). Kärryn liike on tasaista.\n\nPiirrä aineistosta $(t, x)$-kuvaaja ja sovita pisteiden läpi suora. Määritä suoran avulla kärryn nopeus $v$. Kerro lisäksi alkupaikka $x_0$ ja kirjoita kärryn paikka ajan funktiona.\n\nKirjoita vastauslaatikkoon nopeus.",
       "kind": [
         "data",

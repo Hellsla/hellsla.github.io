@@ -3,6 +3,7 @@
     {
       "id": "fy7-4-L1-01",
       "level": 1,
+      "core": true,
       "text": "In a laboratory a straight wire is perpendicular to a uniform magnetic field. There is $0.40\\,\\text{m}$ of wire in the field, the current in the wire is $12\\,\\text{A}$ and the magnetic flux density is $0.050\\,\\text{T}$. How large is the force on the wire?",
       "answer": 0.24,
       "unit": "N",
@@ -43,6 +44,7 @@
     {
       "id": "fy7-4-L1-06",
       "level": 1,
+      "core": true,
       "text": "A horizontal straight wire is in a magnetic field that points horizontally north. The current in the wire flows horizontally east. In which direction does the magnetic field push the wire?",
       "kind": [
         "concept"
@@ -97,6 +99,7 @@
     {
       "id": "fy7-4-L2-01",
       "level": 2,
+      "core": true,
       "text": "In a laboratory two parallel wires run side by side for $0.80\\,\\text{m}$ at a distance of $5.0\\,\\text{mm}$ from each other. A current of $10\\,\\text{A}$ flows in the same direction in both wires. How large is the force on a wire in the magnetic field of the other wire? Give the answer in millinewtons.",
       "answer": 3.2,
       "unit": "mN",
@@ -182,7 +185,8 @@
     {
       "id": "fy7-4-L2-07",
       "level": 2,
-      "text": "The force on the voice coil of a loudspeaker was measured with the coil in the gap of a magnet. In the gap the magnetic flux density of the radial magnetic field is $1.1\\,\\text{T}$, and the field is perpendicular to the wire of the coil everywhere. The current $I$ in the coil was varied, and the force $F$ on the coil was measured with a force sensor (example data). Draw a graph of the data points and fit a straight line through the origin to the points. Determine from the slope of the line the total length $l$ of the wire in the coil.",
+      "core": true,
+      "text": "The force on the voice coil of a loudspeaker was measured with the coil in the gap of a magnet. In the gap the magnetic flux density of the radial magnetic field is $1.1\\,\\text{T}$, and the field is perpendicular to the wire of the coil everywhere.\n\nThe current $I$ in the coil was varied, and the force $F$ on the coil was measured with a force sensor (example data).\n\nDraw a graph of the data points and fit a straight line through the origin to the points. Determine from the slope of the line the total length $l$ of the wire in the coil.",
       "kind": [
         "data",
         "graph"

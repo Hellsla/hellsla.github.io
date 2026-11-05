@@ -1,0 +1,36 @@
+{
+  "id": "fy9-tasavirta",
+  "course": "FY9",
+  "chapter": 5,
+  "order": 1,
+  "title": "Tasavirtapiirit ja sähköenergia",
+  "description": "Kerrataan FY6-moduulin tärkeimmät asiat: virtapiiri, sähkövirta ja jännite, mittaukset, resistanssi ja Ohmin laki, sarja- ja rinnankytkennät, Kirchhoffin lait ja potentiaali, sähköteho ja Joulen laki, sähköenergia kotona, lähdejännite ja sisäinen resistanssi sekä akut ja lataus. Lopuksi ratkaistaan ylioppilaskokeen tyylisiä tehtäviä.",
+  "kind": "review",
+  "minutes": 75,
+  "subjects": [
+    "physics"
+  ],
+  "sources": [],
+  "key_concepts": [
+    {
+      "term": "rinnankytkentä",
+      "explain": "Komponentit on kytketty eri haaroihin. Jokaisen haaran yli on sama jännite, ja haarojen virrat lasketaan yhteen."
+    },
+    {
+      "term": "sarjaankytkentä",
+      "explain": "Komponentit on kytketty peräkkäin samaan reittiin. Niiden läpi kulkee sama virta, ja lähteen jännite jakautuu niille."
+    },
+    {
+      "term": "teho",
+      "explain": "Kertoo, kuinka nopeasti energia muuttuu toiseen muotoon. Sähkölaitteen teho on $P = UI$, ja yksikkö on watti."
+    },
+    {
+      "term": "napajännite",
+      "explain": "Pariston tai akun napojen välinen jännite. Kun paristosta otetaan virtaa, napajännite on pienempi kuin lähdejännite."
+    },
+    {
+      "term": "sisäinen resistanssi",
+      "explain": "Pariston tai akun oma resistanssi. Kun virta kulkee sen läpi, osa jännitteestä häviää pariston sisällä."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Ylioppilaskokeessa on tehtävä ”suunnittele koe”. Nimeä kolme asiaa, jotka puuttuvat vastauksesta useimmin.",
+    "a": "Esimerkiksi: mitä pidetään vakiona, millä välineellä ja millä tarkkuudella kukin suure mitataan ja miten tulos lasketaan kuvaajasta (mitä akseleilla on ja mitä kulmakerroin tarkoittaa). Usein puuttuu myös toistojen määrä. Usein puuttuu myös se, mikä on suurin virhelähde ja miten sitä pienennetään."
+  },
+  {
+    "q": "Miksi heilurin jaksonaika mitataan kymmenestä heilahduksesta eikä yhdestä?",
+    "a": "Kun aika otetaan käsin, epävarmuus on noin $0{,}1\\text{–}0{,}2\\,\\text{s}$. Se on lähes sama lyhyessä ja pitkässä mittauksessa. Kun epävarmuus jaetaan kymmenelle jaksolle, jaksonajan suhteellinen epävarmuus pienenee noin kymmenesosaan."
+  },
+  {
+    "q": "Raportista on jätetty pois yksi mittaus, joka poikkeaa muista. Milloin on hyväksyttävää jättää se pois?",
+    "a": "Vain silloin, kun poikkeaman syy löytyy. Esimerkiksi kello käynnistettiin myöhässä tai heilahdukset laskettiin väärin. Lisäksi poisjättö pitää perustella ja kirjata raporttiin. Tulosta ei poisteta vain siksi, että se poikkeaa muista. Selvästi poikkeava mittaus tarkistetaan ja tarvittaessa toistetaan."
+  }
+]

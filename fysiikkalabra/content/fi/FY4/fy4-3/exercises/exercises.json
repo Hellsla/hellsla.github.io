@@ -27,6 +27,7 @@
     {
       "id": "fy4-3-L1-04",
       "level": 1,
+      "core": true,
       "text": "Auto ajaa suoralla tiellä tasaisella nopeudella. Tie työntää auton vetäviä renkaita eteenpäin $620\\,\\text{N}$:n voimalla, ja ilmanvastus autoon on $380\\,\\text{N}$. Lisäksi autoon vaikuttaa taaksepäin vierimisvastus. Kuinka suuri on vierimisvastus?",
       "answer": 240,
       "unit": "N",
@@ -43,6 +44,7 @@
     {
       "id": "fy4-3-L1-06",
       "level": 1,
+      "core": true,
       "text": "Jääkiekko liukuu suoraan tasaisella nopeudella hyvin liukkaalla jäällä. Kitka ja ilmanvastus voidaan jättää huomiotta. Mikä väite kiekkoon vaikuttavista voimista on oikein?",
       "kind": [
         "concept"
@@ -140,6 +142,7 @@
     {
       "id": "fy4-3-L2-04",
       "level": 2,
+      "core": true,
       "text": "Hissikorin paino on $5{,}8\\,\\text{kN}$, ja korissa on matkustajia, joiden massa on yhteensä $320\\,\\text{kg}$. Hissi nousee tasaisella nopeudella. Kuinka suuri on kaapelin jännitysvoima koriin? Vastaa kilonewtoneina.",
       "answer": 8.9,
       "unit": "kN",
@@ -240,6 +243,7 @@
     {
       "id": "fy4-3-L2-07",
       "level": 2,
+      "core": true,
       "text": "Oppilas perustelee: \"Kun nyrkki osuu seinään, seinä työntää nyrkkiä takaisin yhtä suurella voimalla. Voimat ovat vastakkaiset ja yhtä suuret, joten ne kumoavat toisensa eikä nyrkin liike muutu.\"\n\nMikä virhe oppilaan päättelyssä on?",
       "kind": [
         "concept"

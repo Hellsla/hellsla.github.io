@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Two $10\\,\\Omega$ resistors are connected in parallel. What is their total resistance?",
+    "a": "$\\tfrac{1}{R} = \\tfrac{1}{10\\,\\Omega} + \\tfrac{1}{10\\,\\Omega} = \\tfrac{2}{10\\,\\Omega}$, so $R = 5.0\\,\\Omega$: half the resistance of one resistor."
+  },
+  {
+    "q": "How many kilowatt-hours does a $1500\\,\\text{W}$ heater use in $4.0$ hours?",
+    "a": "$E = Pt = 1.5\\,\\text{kW} \\cdot 4.0\\,\\text{h} = 6.0\\,\\text{kWh}$."
+  }
+]

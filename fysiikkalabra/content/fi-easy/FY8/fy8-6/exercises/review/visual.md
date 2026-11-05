@@ -1,17 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 492ee88e14080d3d
+CONTENT-HASH: c5582c2049dad6c5
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
+## Fixed
+(none needed: the plain Finnish already matched fi and was clear)
+
 ## Polish
-- [Minor] solutions.md L2-03, L3-03 "Sijoitus" — two long inline expressions with several equalities joined by "ja" in one line wrap awkwardly at 390 px — put each quantity in its own display block as L1-02 does.
-- [Minor] exercises.json L3-01 — the text asks for a fit "esimerkiksi Graphical Analysis Prolla" but gives no hint that frequencies must be computed first; solution mentions it — add "Laske ensin taajuudet".
+- [Minor] L2-05 hint box and Reasonableness lines: colon division (`2.30 V - 27.3 : 61.5`) renders as a stray colon; same in fi, fix in all languages together.
 
 ## Checked
-- stage-exercises-390 (intro and level folds at 390 px).
-- open-exercises-1280-2 (L1-02 solution, full structure), open-exercises-L3-1280-2 (L3-01 ending, L3-02 start); text of all 12 tasks and solutions read for notation: every number with unit is LaTeX, decimal comma, \cdot, colon for division.
-- No inline figures in the set; the one task figure (ryhma) was seen in the lesson capture fig-13.
+- Opened captures under content/fi-easy/FY8/fy8-6/review/shots/ for L3-04 (fi-easy): tables, decimal separators, units and LaTeX render correctly, no overflow or clipped text.
+- Table captions and column headers are translated.
+- Answer chips show the same values as fi.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

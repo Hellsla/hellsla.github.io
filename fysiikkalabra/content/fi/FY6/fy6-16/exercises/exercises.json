@@ -43,6 +43,7 @@
     {
       "id": "fy6-16-L1-06",
       "level": 1,
+      "core": true,
       "text": "Latausasemaa valitessa vertaillaan aseman tehoa kilowatteina ($\\text{kW}$) ja auton akun kokoa kilowattitunteina ($\\text{kWh}$). Mitä nämä kaksi lukua kertovat?",
       "kind": [
         "concept"
@@ -81,6 +82,7 @@
     {
       "id": "fy6-16-L1-08",
       "level": 1,
+      "core": true,
       "text": "Latauskaapelin johtimien yhteenlaskettu resistanssi on $0{,}25\\,\\Omega$ ja latausvirta $16\\,\\text{A}$. Kuinka suuri teho muuttuu kaapelissa sisäenergiaksi eli lämmittää kaapelia? Vastaa watteina.",
       "answer": 64.0,
       "unit": "W",
@@ -100,6 +102,7 @@
     {
       "id": "fy6-16-L2-02",
       "level": 2,
+      "core": true,
       "text": "Yksivaiheinen latausasema ottaa virran $16\\,\\text{A}$ jännitteellä $230\\,\\text{V}$. Auton akun energia on $60\\,\\text{kWh}$, ja se ladataan varaustasosta $20\\,\\%$ tasoon $80\\,\\%$. Latauksen hyötysuhde on $90\\,\\%$, ja teho pysyy koko ajan vakiona. Kuinka kauan lataus kestää? Vastaa tunteina.",
       "answer": 10.869565,
       "unit": "h",
@@ -124,6 +127,7 @@
     {
       "id": "fy6-16-L2-05",
       "level": 2,
+      "core": true,
       "text": "Taulukossa on omakotitalon sähköteho tunneittain illalla ennen latausasemaa (esimerkkiaineisto).\n\nTalon pääsulakkeet ovat $3 \\cdot 25\\,\\text{A}$, ja talon kuormat jakautuvat tasan kolmelle vaiheelle. Perhe suunnittelee kolmivaiheista latausasemaa, joka ottaa jokaisesta vaihejohtimesta yhtä suuren virran. Vaihejännite on $230\\,\\text{V}$. Oletetaan, että talon teho pysyy kunkin tunnin ajan taulukon arvossa.\n\na) Mikä on talon huipputeho ja mihin aikaan se esiintyy?\n\nb) Kuinka suuri latausteho asemalla saa olla huipputehon aikana, jotta pääsulakkeiden virta ei ylity?\n\nc) Perustele taulukon avulla, milloin asema voi käyttää $11\\,\\text{kW}$:n tehoa ilman kuormanhallintaa.\n\nVastauskenttään tulee kohdan b) tulos kilowatteina.",
       "kind": [
         "data",

@@ -11,6 +11,7 @@
     {
       "id": "fy5-12-L1-02",
       "level": 1,
+      "core": true,
       "text": "Narussa kohtaa kaksi pulssia. Toinen poikkeaa enimmillään $3{,}0\\,\\text{cm}$ ylöspäin, toinen $1{,}2\\,\\text{cm}$ alaspäin. Mikä on narun poikkeama siinä kohdassa, jossa pulssien keskikohdat ovat päällekkäin? Ylöspäin on positiivinen suunta. Anna vastaus etumerkkeineen senttimetreinä.",
       "answer": 1.8,
       "unit": "cm",
@@ -43,6 +44,7 @@
     {
       "id": "fy5-12-L1-06",
       "level": 1,
+      "core": true,
       "text": "Jännitetyssä narussa kulkee kaksi samanlaista pulssia toisiaan kohti, toinen narun yläpuolella ja toinen alapuolella. Pulssit kohtaavat, menevät hetkeksi päällekkäin ja ovat sitten taas erillään.\n\nMikä seuraavista kuvaa pulssien tilannetta kohtaamisen jälkeen oikein?",
       "kind": [
         "concept"
@@ -116,6 +118,7 @@
     {
       "id": "fy5-12-L2-01",
       "level": 2,
+      "core": true,
       "text": "Kaksi samassa vaiheessa olevaa kaiutinta A ja B on $1{,}20\\,\\text{m}$:n päässä toisistaan.\n\nKuulija seisoo $1{,}60\\,\\text{m}$:n päässä kaiuttimesta B suoraan sen edessä, niin että kuulijan ja kaiuttimen B välinen suora on kohtisuorassa kaiuttimien väliseen suoraan nähden.\n\nMikä on suurin aallonpituus, jolla kuulijan kohdalla on hiljaista? Anna vastaus metreinä.",
       "answer": 0.8,
       "unit": "m",
@@ -192,6 +195,7 @@
     {
       "id": "fy5-12-L2-06",
       "level": 2,
+      "core": true,
       "text": "Opiskelija kirjoittaa: ”Kun kahden kaiuttimen äänet heikentävät toisiaan solmuviivalla, ääniaaltojen energia häviää.”\n\nMikä seuraavista oikaisee väitteen oikein?",
       "kind": [
         "error",

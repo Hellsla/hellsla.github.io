@@ -11,6 +11,7 @@
     {
       "id": "fy6-6-L1-02",
       "level": 1,
+      "core": true,
       "text": "Vastuksen resistanssi on $47\\,\\Omega$, ja sen läpi kulkee virta $0{,}20\\,\\text{A}$. Kuinka suuri teho vastuksessa muuttuu sisäenergiaksi?",
       "answer": 1.88,
       "unit": "W",
@@ -44,6 +45,7 @@
     {
       "id": "fy6-6-L1-06",
       "level": 1,
+      "core": true,
       "text": "Kaksi vastusta, joiden resistanssit ovat eri suuret, on kytketty sarjaan jännitelähteeseen. Kummassa vastuksessa sähköenergiaa muuttuu enemmän sisäenergiaksi?",
       "kind": [
         "concept"
@@ -106,6 +108,7 @@
     {
       "id": "fy6-6-L2-02",
       "level": 2,
+      "core": true,
       "text": "Vastukset $R_1 = 10\\,\\Omega$ ja $R_2 = 20\\,\\Omega$ on kytketty sarjaan $12\\,\\text{V}$:n jännitelähteeseen. Lähteen ja johtimien resistanssit jätetään huomiotta. Kuinka suuri on vastuksen $R_2$ teho?",
       "answer": 3.2,
       "unit": "W",
@@ -130,6 +133,7 @@
     {
       "id": "fy6-6-L2-05",
       "level": 2,
+      "core": true,
       "text": "Vastus oli ilmassa, jonka lämpötila oli $22{,}0\\,{}^\\circ\\text{C}$. Vastukseen kytkettiin eri jännitteitä, ja kullakin jännitteellä odotettiin, kunnes vastuksen pinnan lämpötila $T$ ei enää muuttunut. Taulukossa on jännite $U$, virta $I$ ja vakiintunut lämpötila $T$.\n\na) Laske teho $P = UI$ jokaiselle mittaukselle ja piirrä kuvaaja, jossa lämpötilan nousu $\\Delta T = T - 22{,}0\\,{}^\\circ\\text{C}$ on tehon $P$ funktio. Sovita pisteisiin suora.\n\nb) Kuinka monta kelviniä vastuksen pinta lämpenee yhtä wattia kohti?\n\nc) Selitä, miksi lämpötila vakiintuu eikä nouse loputtomiin.\n\nVastaa laatikkoon kohdan b) tulos.",
       "kind": [
         "data",

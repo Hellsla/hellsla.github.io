@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 159351b1b850546d
+CONTENT-HASH: d81523ca9a2b0c13
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-batch delta review: opened shake-flashlight (assets/pics/fy7) and compared with alt and caption (alt matches what is visible, caption physically correct, plain Finnish, units in LaTeX where present); rendered preview/fi-easy/fy7-5.html with playwright: figure.unit-photo floats right at 1280 px (x 744–1064, credit line shown, no clipping), stacks full width at 390 px, no horizontal overflow.
+- batch delta review: Pohjatiedot item, the Kertaus choice (all three feedbacks shown) and the Liikkuvan johtimen paragraph captured at 360 and 390 px: $F = |q|vB$ renders on one line in each place, no red KaTeX, nothing clipped; chapter references match the fi-easy titles; check_layout 360 OK.

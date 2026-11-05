@@ -3,6 +3,7 @@
     {
       "id": "fy6-3-L1-01",
       "level": 1,
+      "core": true,
       "text": "Vedenkeitin on kytketty $230\\,\\text{V}$:n jännitteeseen. Sen lämmitysvastuksen läpi kulkee $8{,}7\\,\\text{A}$:n virta. Mikä on lämmitysvastuksen resistanssi?",
       "answer": 26,
       "unit": "Ω",
@@ -27,6 +28,7 @@
     {
       "id": "fy6-3-L1-04",
       "level": 1,
+      "core": true,
       "text": "Kuparisen sähköjohdon johtimen pituus on $25\\,\\text{m}$ ja poikkipinta-ala $2{,}5\\,\\text{mm}^2$. Kuparin resistiivisyys on $1{,}7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m}$. Mikä on johtimen resistanssi? Vastaa ohmeina.",
       "answer": 0.17,
       "unit": "Ω",
@@ -43,6 +45,7 @@
     {
       "id": "fy6-3-L1-06",
       "level": 1,
+      "core": true,
       "text": "Komponentin ominaiskäyrä on origon kautta kulkeva suora. Ominaiskäyrä on kuvaaja, joka näyttää komponentin virran ja jännitteen yhteyden. Virta $I$ on vaaka-akselilla ja jännite $U$ pystyakselilla. Mitä tästä voi päätellä?",
       "kind": [
         "concept"
@@ -149,6 +152,7 @@
     {
       "id": "fy6-3-L2-05",
       "level": 2,
+      "core": true,
       "text": "Opiskelija mittasi vastuksen jännitteen ja virran (esimerkkiaineisto). Jännite säädettiin arvoihin $1{,}0\\,\\text{V}$–$8{,}0\\,\\text{V}$. Virta mitattiin yleismittarilla (mittarilla, joka mittaa mm. virtaa). Yleismittarin virheraja eli suurin mittausvirhe on noin $\\pm 0{,}5\\,\\text{mA}$.\n\na) Piirrä mittauspisteisiin sovitussuora, joka kulkee origon kautta. Sovitussuora on suora, joka kulkee pisteiden joukon keskeltä. Kuvaajassa virta $I$ on vaaka-akselilla ja jännite $U$ pystyakselilla. Lue vastuksen resistanssi $R$ suoran kulmakertoimesta.\n\nb) Arvioi resistanssin epävarmuus $\\Delta R$ pisteiden hajonnan perusteella.\n\nVastauskenttään kirjoitetaan a-kohdan resistanssi $R$ ohmeina.",
       "kind": [
         "data",

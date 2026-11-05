@@ -3,6 +3,7 @@
     {
       "id": "fy3-16-L1-01",
       "level": 1,
+      "core": true,
       "text": "A sauna stove contains $20\\,\\text{kg}$ of stones with a specific heat capacity of $800\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$. The stones warm from $20\\,{}^\\circ\\text{C}$ to $300\\,{}^\\circ\\text{C}$. How large a quantity of heat is transferred to the stones? Give your answer in megajoules.",
       "answer": 4.5,
       "unit": "MJ",
@@ -73,6 +74,7 @@
     {
       "id": "fy3-16-L1-07",
       "level": 1,
+      "core": true,
       "text": "Heat is conducted through the wall of a cool bag from outside into the ice pack all the time. Still, the temperature inside the bag stays at $0\\,{}^\\circ\\text{C}$ until the ice has melted. Which of the following explains this?",
       "kind": [
         "concept"
@@ -113,6 +115,7 @@
     {
       "id": "fy3-16-L2-01",
       "level": 2,
+      "core": true,
       "text": "The total area of the walls of a cool bag is $0.50\\,\\text{m}^2$ and the U-value is $2.0\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$. It is $25\\,{}^\\circ\\text{C}$ outside, and the temperature of the ice pack stays at $0\\,{}^\\circ\\text{C}$ as long as there is ice. How large must the mass of the ice pack be for the ice to last for 6.0 hours? Assume that the bag contains only ice.",
       "answer": 1.6,
       "unit": "kg",
@@ -182,6 +185,7 @@
     {
       "id": "fy3-16-L2-06",
       "level": 2,
+      "core": true,
       "text": "The table gives sample data on the heating energy $E$ used per month by a detached house and the mean outdoor temperature of the month, $T_\\text{out}$. Assume that the heating energy equals the energy lost through the structures, that the indoor temperature is the same every month, and that a month has $720\\,\\text{h}$.\n\na) Draw a graph of the points $(T_\\text{out}, E)$ and fit a straight line to it.\n\nb) From the slope of the line, determine the heat loss coefficient $UA$ of the house in W/K, when the power is $P = UA\\Delta T$.\n\nc) At what outdoor temperature does the line cross the horizontal axis, and what does it tell you about the house?\n\nGive the result of part b) in the answer box.",
       "kind": [
         "data",

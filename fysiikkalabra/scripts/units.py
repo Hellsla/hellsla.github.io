@@ -5,7 +5,7 @@ and is published only in that language's folder of the site (site/en/ for Englis
 language lists the units and links to them there.
 
   python scripts/units.py check              validate every unit (CI)
-  python scripts/units.py hash <id>          the content hash a reviewer puts in its report
+  python scripts/units.py hash <id> [--lang <lang>]   the content hash a reviewer puts in its report
   python scripts/units.py status             reviewed | draft of every unit
   python scripts/units.py figures <id> [--check]   lessons/units/<id>/figures.py into unit.md
 
@@ -38,6 +38,15 @@ The content hash covers the four texts, figures.py, the simulation folder and ev
 to (units/<course>/data/…, units/<course>/pics/…), so a changed data file or photograph needs a new review like
 changed text. build.py publishes site/<lang>/<id>.html when all three reviews PASS for the current hash (preview
 otherwise), and the course page lists it under its chapter.
+
+Translations (teacher 2026-11-04, "tunnit pitää olla en ja selkosuomi"): a course with "translations" in
+local-courses.json (FY9: en, fi-easy) has its units translated with translate_kit.py into content/<lang>/units/<id>/,
+the same files with the texts translated and a figures.json for the figure texts (figures in the language's decimal
+sign; fi-easy adds key_concepts to unit.json). lang_of(id) is the source language, translations(id) the others;
+check_i18n.py checks a translation against the source (data, answers, formulas, sections, the task set), the hash
+and the three reviews are the translation's own (hash <id> --lang <lang>; its review/ in its folder). A reviewed translation is
+published at site/<lang>/<id>.html once content/<lang>/local-courses.json has the course; the versions of a unit
+link to each other, and a course page links the source language's version of a unit not yet published in its own.
 """
 import hashlib, importlib.util, json, re, sys, pathlib, html as _h
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
@@ -58,7 +67,7 @@ def asset_source(ref): return ROOT / "assets" / ref     # units/fy14/data/x.json
 
 
 def languages():
-    """The languages that have units (a course's units are written in one language)."""
+    """The languages that have units: a course's language (the source of its units) and its translations."""
     return [l for l in i18n.languages() if (ROOT / "content" / l / DIR).is_dir()]
 
 
@@ -71,9 +80,27 @@ def ids(lang):
 def load(uid, lang): return json.loads((folder(uid, lang) / "unit.json").read_text())
 
 
+def holders(uid): return [l for l in languages() if (folder(uid, l) / "unit.json").is_file()]
+
+
 def lang_of(uid):
-    """The language a unit is written in (the one folder that holds it), or None."""
-    return next((l for l in languages() if (folder(uid, l) / "unit.json").is_file()), None)
+    """The language a unit is written in: its course's language (local-courses.json), the source its translations are
+    made from; a folder of another language is a translation (translations()). None when no folder holds it."""
+    have = holders(uid)
+    if not have: return None
+    import local_courses
+    src = local_courses.load().get(load(uid, have[0]).get("course"), {}).get("language")
+    return src if src in have else have[0]
+
+
+def translations(uid):
+    """The languages that hold a translation of the unit (content/<lang>/units/<id>/ beside its source), teacher
+    2026-11-04: FY9 in English and Selkeä suomi, translated with translate_kit.py and reviewed per language."""
+    src = lang_of(uid)
+    return [l for l in holders(uid) if l != src]
+
+
+def is_translation(uid, lang): return lang != lang_of(uid)
 
 
 def all_units():
@@ -157,7 +184,8 @@ def check(uid, lang):
     c = reg.get(d.get("course"))
     if not c: errs.append(f"{where}: course {d.get('course')!r} is not in local-courses.json")
     else:
-        if c.get("language") != lang: errs.append(f"{where}: course {d['course']} is written in {c.get('language')!r}, the unit in {lang!r}")
+        if lang != c.get("language") and lang not in c.get("translations", []):
+            errs.append(f"{where}: course {d['course']} is written in {c.get('language')!r} (translations: {c.get('translations', [])}), the unit in {lang!r}")
         chs = c.get("chapters", [])
         if not (isinstance(d.get("chapter"), int) and 1 <= d["chapter"] <= len(chs)): errs.append(f"{where}: chapter {d.get('chapter')!r} is not a chapter of {d['course']} (1–{len(chs)})")
         elif uid not in [x["id"] for x in chs[d["chapter"] - 1].get("units", [])]: errs.append(f"{where}: chapter {d['chapter']} of {d['course']} does not list this unit")
@@ -200,20 +228,39 @@ def check(uid, lang):
     return errs
 
 
-def figures(uid, lang, write=True):
-    """Fill every <svg data-fig="name"> of unit.md from figures.py; True when it was up to date (or there is none)."""
-    src = code_folder(uid) / "figures.py"
-    if not src.is_file() or not (folder(uid, lang) / "unit.md").is_file(): return True   # a missing unit.md is check()'s error
+def draw(uid, lang):
+    """(unit.md as it is, unit.md with every <svg data-fig="name"> filled from figures.py, the Finnish texts drawn
+    without a translation). A translation draws in its language: the texts of its figures.json and the language's
+    decimal sign (figlib.set_language, as figures.py --lang does for a lesson); figures.py is the same for every language."""
+    import figlib
+    src = code_folder(uid) / "figures.py"; md = folder(uid, lang) / "unit.md"
+    if not src.is_file() or not md.is_file(): return None, None, []   # a missing unit.md is check()'s error
     spec = importlib.util.spec_from_file_location("figures", src)
     mod = importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
-    md = folder(uid, lang) / "unit.md"; text = md.read_text(); new = text
-    for name, fn in mod.FIGURES.items():
-        pat = re.compile(r'<svg\b[^>]*\bdata-fig="' + re.escape(name) + r'"[^>]*>.*?</svg>', re.S)
-        if not pat.search(new): print(f"no <svg data-fig=\"{name}\"> in unit.md"); continue
-        svg = fn()
-        if "data-fig=" not in svg: svg = svg.replace("<svg ", f'<svg data-fig="{name}" ', 1)
-        new = pat.sub(lambda m: svg, new, count=1)
-    if write and new != text: md.write_text(new)
+    tr = is_translation(uid, lang)
+    if tr:                                               # after the import: a figures.py may set its own language there
+        f = folder(uid, lang) / "figures.json"
+        figlib.set_language(json.loads(f.read_text()) if f.is_file() else {}, i18n.T(lang)("format.decimal"))
+    text = md.read_text(); new = text
+    try:
+        for name, fn in mod.FIGURES.items():
+            pat = re.compile(r'<svg\b[^>]*\bdata-fig="' + re.escape(name) + r'"[^>]*>.*?</svg>', re.S)
+            if not pat.search(new): print(f"no <svg data-fig=\"{name}\"> in unit.md"); continue
+            svg = fn()
+            if "data-fig=" not in svg: svg = svg.replace("<svg ", f'<svg data-fig="{name}" ', 1)
+            new = pat.sub(lambda m: svg, new, count=1)
+        missing = list(figlib.MISSING) if tr else []
+    finally:
+        if tr: figlib.set_language({}, ",")
+    return text, new, missing
+
+
+def figures(uid, lang, write=True):
+    """Fill every <svg data-fig="name"> of unit.md from figures.py, in the unit's language; True when it was up to date
+    (or there is none)."""
+    text, new, _ = draw(uid, lang)
+    if text is None: return True
+    if write and new != text: (folder(uid, lang) / "unit.md").write_text(new)
     return new == text
 
 
@@ -273,7 +320,7 @@ if __name__ == "__main__":
         print("\n".join(errs) or f"{len(all_units())} unit(s) ok"); sys.exit(1 if errs else 0)
     if cmd == "hash": u = sys.argv[2]; print(content_hash(u, lang_arg or lang_of(u)))
     if cmd == "status":
-        for l, u in all_units(): print(l, u, status(u, l))
+        for l, u in all_units(): print(l, u, "(translation)" if is_translation(u, l) else "", status(u, l))
     if cmd == "figures":
         u = sys.argv[2]; ok = figures(u, lang_arg or lang_of(u), write="--check" not in sys.argv)
         print("figures up to date" if ok else ("figures differ" if "--check" in sys.argv else "figures written")); sys.exit(0 if ok or "--check" not in sys.argv else 1)

@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: ce4894037b176ada
+CONTENT-HASH: bdb8a5d35a3da719
 
 ## Blocking
+(none)
 
 ## Polish
-
+(none)
 
 ## Checked
-batch delta review: opened the image file(s) (shake-flashlight) and rendered unit-photo with caption at 1280 px (float right, 320 px wide, inside column, no clipping) and 390 px (stacked, no horizontal overflow); alt text matches what is visible, caption physically sound and tied to the chapter, Finnish natural, number+unit in LaTeX.
+- batch delta review: Pohjatiedot item, the Kertaus choice (all three feedbacks shown) and the Liikkuvan johtimen paragraph captured at 360 and 390 px: $F = |q|vB$ renders on one line in each place, no red KaTeX, nothing clipped; the references *Varatun hiukkasen liike sähkö- ja magneettikentässä* and *Homogeeninen sähkökenttä* match those chapters' titles; check_layout 360 OK.

@@ -35,9 +35,58 @@
     {
       "id": "fy8-6-L1-05",
       "level": 1,
+      "core": true,
       "text": "Opiskelija sovitti LEDien kynnysjännitteisiin taajuuden funktiona suoran, jonka kulmakerroin on $k = 4{,}10 \\cdot 10^{-15}\\,\\text{V}\\,\\text{s}$. Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Minkä arvon opiskelija sai Planckin vakiolle? Anna vastaus yksikössä $\\text{J}\\,\\text{s}$.",
       "answer": 6.57e-34,
       "unit": "J s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-6-L1-06",
+      "level": 1,
+      "core": true,
+      "text": "Punaista LEDiä kytketään vähitellen kasvavaan jännitteeseen. Alle $1{,}5\\,\\text{V}$:n jännitteellä LED ei hohda lainkaan, mutta noin $1{,}8\\,\\text{V}$:n jälkeen se syttyy. Mikä selittää, että LED syttyy vasta kynnysjännitteellä?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Fotoni voi syntyä vasta, kun elektronin saama energia $eU$ on likimain fotonin energian $hf$ suuruinen.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Valo syntyy kuumenemalla: LED alkaa hehkua vasta, kun jännite $U$ on lämmittänyt puolijohteen riittävän kuumaksi.",
+          "feedback": "Lämpeneminen ei ole syy. LEDin valo ei ole hehkuvan kappaleen valoa vaan syntyy, kun elektroni putoaa johtavuusvyöstä valenssivyön aukkoon ja luovuttaa energiansa fotonina. Fotoni voi syntyä vasta, kun elektronin energia $eU$ riittää."
+        },
+        {
+          "text": "Fotoneja syntyy jo pienellä jännitteellä $U$, mutta ne ovat infrapunaa, ja jännitteen kasvaessa niiden taajuus nousee punaiseksi.",
+          "feedback": "Tämä on yleinen virhekäsitys. Fotonin energian määrää puolijohteen energia-aukko, ei jännite, joten saman LEDin valon väri ei muutu jännitettä säätämällä. Jännitteen kasvattaminen kynnyksen jälkeen lisää virtaa ja siis fotonien määrää."
+        },
+        {
+          "text": "Fotoni voi syntyä vasta, kun elektronin saama energia $eU$ on likimain fotonin energian $hf$ suuruinen.",
+          "correct": true,
+          "feedback": "Oikein: yhden fotonin energia on likimain $hf$, ja se tulee yhdeltä elektronilta. Jos energia $eU$ on pienempi, fotonia ei synny. Kynnysjännitteellä $eU_\\text{k} \\approx hf$, ja sen jälkeen virta ja valon määrä kasvavat jyrkästi."
+        },
+        {
+          "text": "Fotonit syntyvät jo pienellä jännitteellä $U$, mutta LEDin kuori absorboi ne, kunnes virta on tarpeeksi suuri.",
+          "feedback": "Kuori ei absorboi valoa tällä tavoin. Alle kynnysjännitteen elektronit eivät saa tarpeeksi energiaa, joten fotoneja ei synny lainkaan. Kynnysjännite on fotonin syntymisen ehto, ei kuoren ominaisuus."
+        }
+      ]
+    },
+    {
+      "id": "fy8-6-L1-07",
+      "level": 1,
+      "core": true,
+      "text": "Vihreän LEDin kynnysjännite on $2{,}30\\,\\text{V}$. Oletetaan, että kynnysjännitteellä elektronin jännitelähteeltä saama energia on täsmälleen yhden fotonin energia, $eU_\\text{k} = \\tfrac{hc}{\\lambda}$.\n\nKäytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$.\n\nMikä on LEDin valon aallonpituus? Anna vastaus nanometreinä.",
+      "answer": 539,
+      "unit": "nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-6-L1-08",
+      "level": 1,
+      "text": "Merkkivalona toimivan LEDin läpi kulkee virta $10{,}0\\,\\text{mA}$. Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Kuinka monta elektronia kulkee LEDin läpi sekunnissa? Anna vastaus muodossa $x \\cdot 10^{16}\\,\\tfrac{1}{\\text{s}}$ ja kirjoita laatikkoon luku $x$.",
+      "answer": 6.24,
+      "unit": "10¹⁶ 1/s",
       "tolerance": 0.02
     }
   ],
@@ -61,7 +110,7 @@
     {
       "id": "fy8-6-L2-03",
       "level": 2,
-      "text": "Punaisen LEDin läpi kulkee virta $20\\,\\text{mA}$, ja sen valon aallonpituus on $630\\,\\text{nm}$. Oletetaan, että jokainen LEDin läpi kulkeva elektroni synnyttää yhden fotonin, joka pääsee ulos LEDistä. Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Kuinka suuri on LEDin valoteho? Anna vastaus milliwatteina.",
+      "text": "Punaisen LEDin läpi kulkee virta $20\\,\\text{mA}$, ja sen valon aallonpituus on $630\\,\\text{nm}$. Oletetaan, että jokainen LEDin läpi kulkeva elektroni synnyttää yhden fotonin, joka pääsee ulos LEDistä.\n\nKäytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$.\n\nKuinka suuri on LEDin valoteho? Anna vastaus milliwatteina.",
       "answer": 39.4,
       "unit": "mW",
       "tolerance": 0.02
@@ -69,17 +118,178 @@
     {
       "id": "fy8-6-L2-04",
       "level": 2,
-      "text": "Valkoisessa LEDissä on sininen LED, jonka fotonien aallonpituus on $450\\,\\text{nm}$. Sitä peittää loisteaine, joka absorboi sinisen fotonin ja säteilee fluoresenssina keltaisen fotonin, jonka aallonpituus on $560\\,\\text{nm}$. Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$. Kuinka paljon energiaa loisteaineeseen jää lämmöksi yhtä fotonia kohti? Anna vastaus elektronivoltteina.",
+      "text": "Valkoisessa LEDissä on sininen LED, jonka fotonien aallonpituus on $450\\,\\text{nm}$. Sitä peittää loisteaine, joka absorboi sinisen fotonin ja säteilee fluoresenssina keltaisen fotonin, jonka aallonpituus on $560\\,\\text{nm}$.\n\nKäytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$.\n\nKuinka paljon energiaa loisteaineeseen jää lämmöksi yhtä fotonia kohti? Anna vastaus elektronivoltteina.",
       "answer": 0.541,
       "unit": "eV",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-6-L2-05",
+      "level": 2,
+      "core": true,
+      "text": "Punaisen LEDin virta–jännite-ominaiskäyrä mitattiin kytkemällä LED sarjaan suojavastuksen kanssa ja kasvattamalla jännitettä vähitellen. Taulukko on esimerkkiaineisto. Kuvaajassa $(U, I)$ virta on aluksi lähes nolla ja kasvaa sitten lähes suoraviivaisesti.\n\nKäytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$.\n\na) Piirrä paperille kuvaaja $I(U)$ ja päättele, mitkä pisteet kuuluvat lineaariseen osaan.\n\nb) Sovita lineaariseen osaan suora ja jatka sitä jänniteakselille, jolla $I = 0$. Lue kynnysjännite $U_\\text{k}$.\n\nc) LEDin huippuaallonpituus on $650\\,\\text{nm}$. Laske jännite $\\tfrac{hc}{e\\lambda}$ ja vertaa sitä mitattuun kynnysjännitteeseen.\n\nVastaa laatikkoon kohdan b) kynnysjännite voltteina.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 1.86,
+      "unit": "V",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Punaisen LEDin virta jännitteen funktiona (esimerkkiaineisto)",
+        "columns": [
+          "$U\\,(\\text{V})$",
+          "$I\\,(\\text{mA})$"
+        ],
+        "rows": [
+          [
+            "0.50",
+            "0.0"
+          ],
+          [
+            "1.00",
+            "0.0"
+          ],
+          [
+            "1.50",
+            "0.0"
+          ],
+          [
+            "1.70",
+            "0.1"
+          ],
+          [
+            "1.80",
+            "0.6"
+          ],
+          [
+            "1.90",
+            "2.6"
+          ],
+          [
+            "2.00",
+            "8.8"
+          ],
+          [
+            "2.10",
+            "15.0"
+          ],
+          [
+            "2.20",
+            "20.9"
+          ],
+          [
+            "2.30",
+            "27.3"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-6-L2-06",
+      "level": 2,
+      "text": "Ryhmä mittasi punaisen LEDin, jonka huippuaallonpituus on $630\\,\\text{nm}$, virta–jännite-ominaiskäyrän.\n\nKolme opiskelijaa luki siitä kynnysjännitteen eri tavoin (taulukko, esimerkkiaineisto). Aino luki kynnysjännitteeksi jännitteen, jolla virta on $0{,}1\\,\\text{mA}$, Eero sovitti kuvaajan suoraan osaan suoran ja jatkoi sen jänniteakselille, ja Salla luki jännitteen, jolla virta on $10\\,\\text{mA}$.\n\nOletetaan $eU_\\text{k} = \\tfrac{hc}{\\lambda}$. Käytä arvoja $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$ sekä Planckin vakion hyväksyttyä arvoa $6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$.\n\na) Laske jokaisen opiskelijan kynnysjännitteestä Planckin vakio $h = \\tfrac{eU_\\text{k}\\lambda}{c}$.\n\nb) Mitkä lukutavoista ovat virheellisiä ja miksi? Selitä, miksi Ainon lukema on liian pieni ja Sallan liian suuri.\n\nc) Laske, kuinka monta prosenttia Sallan antama Planckin vakio poikkeaa hyväksytystä arvosta.\n\nVastaa laatikkoon kohdan c) poikkeama prosentteina.",
+      "kind": [
+        "data",
+        "error"
+      ],
+      "answer": 3.65,
+      "unit": "%",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Kynnysjännite eri lukutavoilla (esimerkkiaineisto)",
+        "columns": [
+          "Opiskelija",
+          "$U_\\text{k}\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "Aino",
+            "1.74"
+          ],
+          [
+            "Eero",
+            "1.88"
+          ],
+          [
+            "Salla",
+            "2.04"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-6-L2-07",
+      "level": 2,
+      "text": "Punaisen LEDin spektri mitattiin spektrometrillä. Taulukossa on suhteellinen intensiteetti $I_\\text{rel}$ eri aallonpituuksilla, ja suurin intensiteetti on merkitty arvoksi $1{,}00$ (esimerkkiaineisto).\n\nKäytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$.\n\na) Piirrä spektri paperille ja lue huipun aallonpituus $\\lambda_\\text{p}$. Miksi LEDin aallonpituudeksi ilmoitetaan huipun aallonpituus eikä silmällä arvioitu väri?\n\nb) Lue spektrin leveys aallonpituuksien erotuksena niiden kahden kohdan välillä, joissa intensiteetti on puolet maksimista. Vertaa tulosta laserdiodin spektrin leveyteen, noin $1\\,\\text{nm}$.\n\nc) Laske fotonien energioiden erotus $\\Delta E$ näissä kahdessa kohdassa ja selitä sen avulla, miksi LED ei ole yksivärinen.\n\nVastaa laatikkoon kohdan c) energioiden erotus elektronivoltteina.",
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "answer": 0.0625,
+      "unit": "eV",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Punaisen LEDin spektri (esimerkkiaineisto)",
+        "columns": [
+          "$\\lambda\\,(\\text{nm})$",
+          "$I_\\text{rel}$"
+        ],
+        "rows": [
+          [
+            "605",
+            "0.01"
+          ],
+          [
+            "610",
+            "0.06"
+          ],
+          [
+            "615",
+            "0.21"
+          ],
+          [
+            "620",
+            "0.50"
+          ],
+          [
+            "625",
+            "0.84"
+          ],
+          [
+            "630",
+            "1.00"
+          ],
+          [
+            "635",
+            "0.86"
+          ],
+          [
+            "640",
+            "0.50"
+          ],
+          [
+            "645",
+            "0.22"
+          ],
+          [
+            "650",
+            "0.06"
+          ],
+          [
+            "655",
+            "0.01"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
     {
       "id": "fy8-6-L3-01",
       "level": 3,
-      "text": "Ryhmä mittasi neljän LEDin kynnysjännitteet. Punainen LED: $\\lambda = 625\\,\\text{nm}$, $U_\\text{k} = 1{,}86\\,\\text{V}$. Keltainen: $590\\,\\text{nm}$ ja $1{,}97\\,\\text{V}$. Vihreä: $520\\,\\text{nm}$ ja $2{,}27\\,\\text{V}$. Sininen: $465\\,\\text{nm}$ ja $2{,}55\\,\\text{V}$. Käytä arvoja $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Määritä Planckin vakio sovittamalla suora pisteisiin $(f, U_\\text{k})$ esimerkiksi Graphical Analysis Prolla. Anna vastaus yksikössä $\\text{J}\\,\\text{s}$.",
+      "text": "Ryhmä mittasi neljän LEDin kynnysjännitteet.\n\nPunainen LED: $\\lambda = 625\\,\\text{nm}$, $U_\\text{k} = 1{,}86\\,\\text{V}$. Keltainen: $590\\,\\text{nm}$ ja $1{,}97\\,\\text{V}$. Vihreä: $520\\,\\text{nm}$ ja $2{,}27\\,\\text{V}$. Sininen: $465\\,\\text{nm}$ ja $2{,}55\\,\\text{V}$.\n\nKäytä arvoja $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$.\n\nMääritä Planckin vakio sovittamalla suora pisteisiin $(f, U_\\text{k})$ esimerkiksi Graphical Analysis Prolla. Anna vastaus yksikössä $\\text{J}\\,\\text{s}$.",
       "answer": 6.75e-34,
       "unit": "J s",
       "tolerance": 0.02
@@ -95,10 +305,71 @@
     {
       "id": "fy8-6-L3-03",
       "level": 3,
-      "text": "Ultravioletti-LEDiä, jonka aallonpituus on $365\\,\\text{nm}$, käytetään fluoresoivien merkintöjen tarkistamiseen. LEDin läpi kulkee virta $20\\,\\text{mA}$, ja se säteilee ultraviolettisäteilyä teholla $15\\,\\text{mW}$. Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Kuinka monta prosenttia LEDin läpi kulkevista elektroneista synnyttää fotonin, joka pääsee ulos LEDistä?",
+      "text": "Ultravioletti-LEDiä, jonka aallonpituus on $365\\,\\text{nm}$, käytetään fluoresoivien merkintöjen tarkistamiseen. LEDin läpi kulkee virta $20\\,\\text{mA}$, ja se säteilee ultraviolettisäteilyä teholla $15\\,\\text{mW}$.\n\nKäytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$.\n\nKuinka monta prosenttia LEDin läpi kulkevista elektroneista synnyttää fotonin, joka pääsee ulos LEDistä?",
       "answer": 22.1,
       "unit": "%",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy8-6-L3-04",
+      "level": 3,
+      "text": "Ryhmä mittasi viiden LEDin kynnysjännitteet virta–jännite-kuvaajan suoran jatkeena (taulukko, esimerkkiaineisto).\n\nJännitemittarin nollapiste oli pielessä: kun mittarin navat oikosuljettiin, mittari näytti $+0{,}05\\,\\text{V}$, joten kaikki mitatut jännitteet ovat $0{,}05\\,\\text{V}$ liian suuria.\n\nKäytä arvoja $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$ sekä Planckin vakion hyväksyttyä arvoa $6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$.\n\na) Laske taajuudet $f = \\tfrac{c}{\\lambda}$ ja sovita mitattuihin pisteisiin $(f, U_\\text{mitattu})$ suora esimerkiksi Graphical Analysis Prolla. Kirjaa kulmakerroin ja pystyakselin leikkauskohta.\n\nb) Korjaa jännitteet vähentämällä nollapistevirhe ja sovita suora uudelleen. Mikä suoran tunnusluvuista muuttuu ja mikä ei?\n\nc) Laske Planckin vakio suoran kulmakertoimesta ja sen poikkeama hyväksytystä arvosta prosentteina.\n\nd) Laske Planckin vakio myös pelkästä punaisen LEDin kynnysjännitteestä kaavalla $h = \\tfrac{eU_\\text{k}\\lambda}{c}$ ennen korjausta ja korjauksen jälkeen. Perustele tulostesi avulla, miksi Planckin vakio kannattaa määrittää suoran kulmakertoimesta eikä yhdestä LEDistä.\n\nVastaa laatikkoon kohdan c) suoran kulmakertoimesta saatu Planckin vakio yksikössä $\\text{J}\\,\\text{s}$.",
+      "kind": [
+        "data",
+        "graph",
+        "error",
+        "reasoning"
+      ],
+      "answer": 6.74e-34,
+      "unit": "J s",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "LEDien kynnysjännitteet mittarin nollapistevirheellä (esimerkkiaineisto)",
+        "columns": [
+          "Väri",
+          "$\\lambda\\,(\\text{nm})$",
+          "$U_\\text{mitattu}\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "punainen",
+            "630",
+            "1.93"
+          ],
+          [
+            "oranssi",
+            "590",
+            "2.08"
+          ],
+          [
+            "keltainen",
+            "570",
+            "2.15"
+          ],
+          [
+            "vihreä",
+            "525",
+            "2.36"
+          ],
+          [
+            "sininen",
+            "465",
+            "2.64"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-6-L3-05",
+      "level": 3,
+      "text": "Luokan LEDeillä tekemä mittaus antoi kynnysjännitteen ja taajuuden väliselle suoralle $U_\\text{k} = kf + b$ kulmakertoimen $k = 4{,}15 \\cdot 10^{-15}\\,\\text{V}\\,\\text{s}$ ja leikkauskohdan $b = -0{,}10\\,\\text{V}$ (esimerkkiaineisto).\n\nTuntemattoman LEDin kynnysjännitteeksi mitattiin samalla menetelmällä $U_\\text{k} = 2{,}46\\,\\text{V}$ ja jännitteen mittausepävarmuudeksi $\\pm 0{,}05\\,\\text{V}$. Spektrometri näytti LEDin spektrin huipun kohdassa $483\\,\\text{nm}$.\n\nKäytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$.\n\na) Laske tuntemattoman LEDin valon taajuus ja aallonpituus kalibrointisuoran avulla.\n\nb) Laske aallonpituus myös yhtälöstä $eU_\\text{k} = \\tfrac{hc}{\\lambda}$ ja vertaa molempia spektrometrin tulokseen. Kumpi menetelmä on parempi ja miksi?\n\nc) Arvioi kohdan a) aallonpituuden epävarmuus, kun jännite voi olla $0{,}05\\,\\text{V}$ pielessä.\n\nVastaa laatikkoon kohdan a) aallonpituus nanometreinä.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 486,
+      "unit": "nm",
+      "tolerance": 0.02
     }
   ]
 }

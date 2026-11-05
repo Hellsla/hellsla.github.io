@@ -3,6 +3,7 @@
     {
       "id": "fy6-1-L1-01",
       "level": 1,
+      "core": true,
       "text": "Lampun hehkulangan läpi kulkee varaus $45\\,\\text{C}$ ajassa $30\\,\\text{s}$. Kuinka suuri sähkövirta lampun läpi kulkee?",
       "answer": 1.5,
       "unit": "A",
@@ -19,6 +20,7 @@
     {
       "id": "fy6-1-L1-03",
       "level": 1,
+      "core": true,
       "text": "Paristo siirtää energian $54\\,\\text{J}$ varaukselle $6{,}0\\,\\text{C}$, joka kulkee sen läpi. Kuinka suuri on pariston jännite?",
       "answer": 9.0,
       "unit": "V",
@@ -73,6 +75,7 @@
     {
       "id": "fy6-1-L1-07",
       "level": 1,
+      "core": true,
       "text": "Kuvittele kytkentäkaavio, jossa paristo, kytkin ja lamppu on piirretty yhteen silmukkaan. Kytkin on piirretty avoimeksi eli vipu on irti. Mitä piirissä tapahtuu?",
       "kind": [
         "concept"
@@ -207,6 +210,7 @@
     {
       "id": "fy6-1-L2-07",
       "level": 2,
+      "core": true,
       "text": "Oppilas haluaa osoittaa kokeella, että virta ei kulu lampussa. Hän mittaa virran saman piirin kohdista ennen lamppua ja lampun jälkeen. Taulukossa on esimerkkitiedot viidestä mittauksesta. Ampeerimittarin resoluutio eli pienin näyttöaskel on $0{,}01\\,\\text{A}$.\n\na) Kerro, miten ampeerimittari kytketään piiriin. Kerro myös, miten mittaus tehdään, jotta virta saadaan mitattua molemmista kohdista.\n\nb) Laske virran keskiarvo ennen lamppua ja lampun jälkeen. Kirjoita ensin summat.\n\nc) Tukevatko mittaukset sitä, että virta kuluu lampussa? Perustele.",
       "kind": [
         "data",

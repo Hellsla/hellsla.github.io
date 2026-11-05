@@ -3,6 +3,7 @@
     {
       "id": "fy8-10-L1-01",
       "level": 1,
+      "core": true,
       "text": "Hiili-12-atomin massa on tasan $12{,}000000\\,\\text{u}$. Vetyatomin massa on $m_\\text{H} = 1{,}007825\\,\\text{u}$ ja neutronin $m_\\text{n} = 1{,}008665\\,\\text{u}$. Kuinka suuri on hiili-12-ytimen ${}^{12}_{6}\\text{C}$ massavaje? Anna vastaus atomimassayksikköinä.",
       "answer": 0.09894,
       "unit": "u",
@@ -39,6 +40,79 @@
       "answer": 2.388,
       "unit": "10⁻³ u",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-10-L1-06",
+      "level": 1,
+      "text": "Mitä ytimen sidosenergia $E_\\text{B}$ tarkoittaa?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Energia, joka tarvitaan ytimen hajottamiseen erillisiksi nukleoneiksi ja joka vapautui ytimen syntyessä.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Energia, joka on varastoituna ytimeen ja joka vapautuu, kun ydin hajotetaan erillisiksi nukleoneiksi.",
+          "feedback": "Tämä on väärinpäin: ytimen hajottaminen vaatii energiaa eikä vapauta sitä. Energia vapautui jo silloin, kun nukleonit sitoutuivat ytimeksi."
+        },
+        {
+          "text": "Energia, joka tarvitaan ytimen hajottamiseen erillisiksi nukleoneiksi ja joka vapautui ytimen syntyessä.",
+          "correct": true,
+          "feedback": "Oikein: ydin on vakaampi ja kevyempi kuin erilliset nukleonit. Massavajetta $\\Delta m$ vastaava energia $\\Delta m\\,c^2$ vapautui ytimen syntyessä, ja sama energia täytyy antaa takaisin, jotta nukleonit saadaan erilleen."
+        },
+        {
+          "text": "Ytimen nukleonien yhteenlaskettu liike-energia, joka estää ydintä hajoamasta erillisiksi nukleoneiksi.",
+          "feedback": "Sidosenergia ei ole liike-energiaa. Se on se energia, joka vapautui nukleonien sitoutuessa, ja sitä vastaa massavaje: ydin on kevyempi kuin erilliset nukleonit."
+        },
+        {
+          "text": "Ytimen ja sitä ympäröivien elektronien välisen sähköisen vetovoiman energia, joka pitää atomin koossa.",
+          "feedback": "Se on atomin elektronien sidosenergiaa, joka on vedyllä vain $13{,}6\\,\\text{eV}$, kun ytimen sidosenergia on miljoonia elektronivoltteja. Ytimen sidosenergia koskee protonien ja neutronien sitoutumista toisiinsa."
+        }
+      ]
+    },
+    {
+      "id": "fy8-10-L1-07",
+      "level": 1,
+      "text": "Elektronin massa on $5{,}486 \\cdot 10^{-4}\\,\\text{u}$. Kuinka suurta energiaa tämä massa vastaa? Käytä $1\\,\\text{u} = 931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$. Anna vastaus megaelektronivoltteina.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 0.511,
+      "unit": "MeV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-10-L1-08",
+      "level": 1,
+      "core": true,
+      "text": "Sidosenergia nukleonia kohti $\\tfrac{E_\\text{B}}{A}$ on suurin rauta-56:n ja nikkeli-62:n ytimillä. Mitä tämä kertoo?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "Nukleonit ovat näissä ytimissä keskimäärin tiiviimmin sidottuja kuin muissa, joten ytimet ovat erityisen pysyviä.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Näillä ytimillä on suurin koko ytimen sidosenergia $E_\\text{B}$ kaikista ytimistä, myös uraanin ytimestä, koska ne ovat tiiviisti sidottuja.",
+          "feedback": "Koko ytimen sidosenergia kasvaa nukleonien määrän mukana, joten esimerkiksi uraani-238:lla se on noin $1800\\,\\text{MeV}$ ja rauta-56:lla vain noin $490\\,\\text{MeV}$. Huippu koskee sidosenergiaa nukleonia kohti."
+        },
+        {
+          "text": "Näihin ytimiin on varastoitunut eniten energiaa, joten ne vapauttavat eniten energiaa hajotessaan osiinsa.",
+          "feedback": "Sidosenergia ei ole varastoitua energiaa. Ytimen hajottaminen vaatii energiaa, ja suurin vaatimus nukleonia kohti on juuri näillä ytimillä, joten ne ovat pysyviä eivätkä vapauta energiaa."
+        },
+        {
+          "text": "Nukleonit ovat näissä ytimissä keskimäärin tiiviimmin sidottuja kuin muissa, joten ytimet ovat erityisen pysyviä.",
+          "correct": true,
+          "feedback": "Oikein: suuri $\\tfrac{E_\\text{B}}{A}$ tarkoittaa, että yhden nukleonin irrottamiseen tarvitaan keskimäärin paljon energiaa. Rauta ja nikkeli ovat siksi kuvaajan huipulla, ja niiden ytimet ovat erityisen pysyviä."
+        },
+        {
+          "text": "Näissä ytimissä massavaje nukleonia kohti on pienin, joten ne ovat kevyimpiä kaikista mahdollisista ytimistä.",
+          "feedback": "Massavajetta vastaa sidosenergia, joten suurin sidosenergia nukleonia kohti tarkoittaa suurinta massavajetta nukleonia kohti, ei pienintä. Ytimen massa ei myöskään kerro sidoksesta, koska raskaammilla ytimillä on enemmän nukleoneja."
+        }
+      ]
     }
   ],
   "level2": [
@@ -53,6 +127,7 @@
     {
       "id": "fy8-10-L2-02",
       "level": 2,
+      "core": true,
       "text": "Radium-226 hajoaa alfahajoamisella: ${}^{226}_{88}\\text{Ra} \\to {}^{222}_{86}\\text{Rn} + {}^{4}_{2}\\text{He}$. Atomimassat ovat $m({}^{226}\\text{Ra}) = 226{,}025410\\,\\text{u}$, $m({}^{222}\\text{Rn}) = 222{,}017578\\,\\text{u}$ ja $m({}^{4}\\text{He}) = 4{,}002603\\,\\text{u}$. Kuinka suuri energia hajoamisessa vapautuu? Käytä $1\\,\\text{u} = 931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$. Anna vastaus megaelektronivoltteina.",
       "answer": 4.871,
       "unit": "MeV",
@@ -73,6 +148,121 @@
       "answer": 3.68,
       "unit": "10¹⁴ kg",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-10-L2-05",
+      "level": 2,
+      "core": true,
+      "text": "Taulukossa on kahdeksan nuklidin atomimassat. Käytä vetyatomin massaa $m_\\text{H} = 1{,}007825\\,\\text{u}$, neutronin massaa $m_\\text{n} = 1{,}008665\\,\\text{u}$ ja muuntoa $1\\,\\text{u} = 931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$. Voit käyttää taulukkolaskentaa.\n\na) Laske jokaisen nuklidin massavaje, sidosenergia ja sidosenergia nukleonia kohti. Järjestä nuklidit sidosenergian nukleonia kohti mukaan pienimmästä suurimpaan.\n\nb) Mikä nuklideista on tiiviimmin sidottu kuin kaikki muut, ja kuinka suuri on sen sidosenergia nukleonia kohti? Vastauslaatikkoon tulee b-kohdan arvo megaelektronivoltteina.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 8.795,
+      "unit": "MeV",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Atomimassat $m$ (AME2020, pyöristetty kuuteen desimaaliin)",
+        "columns": [
+          "Nuklidi",
+          "$Z$",
+          "$A$",
+          "$m\\,(\\text{u})$"
+        ],
+        "rows": [
+          [
+            "${}^{4}\\text{He}$",
+            "2",
+            "4",
+            "4.002603"
+          ],
+          [
+            "${}^{12}\\text{C}$",
+            "6",
+            "12",
+            "12.000000"
+          ],
+          [
+            "${}^{20}\\text{Ne}$",
+            "10",
+            "20",
+            "19.992440"
+          ],
+          [
+            "${}^{40}\\text{Ca}$",
+            "20",
+            "40",
+            "39.962591"
+          ],
+          [
+            "${}^{62}\\text{Ni}$",
+            "28",
+            "62",
+            "61.928345"
+          ],
+          [
+            "${}^{120}\\text{Sn}$",
+            "50",
+            "120",
+            "119.902202"
+          ],
+          [
+            "${}^{138}\\text{Ba}$",
+            "56",
+            "138",
+            "137.905247"
+          ],
+          [
+            "${}^{238}\\text{U}$",
+            "92",
+            "238",
+            "238.050788"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-10-L2-06",
+      "level": 2,
+      "text": "Opiskelija laski litium-6-ytimen ${}^{6}_{3}\\text{Li}$ sidosenergian. Hän käytti protonin massana $m_\\text{p} = 1{,}007276\\,\\text{u}$, neutronin massana $m_\\text{n} = 1{,}008665\\,\\text{u}$ ja litium-6-atomin massana $m({}^{6}\\text{Li}) = 6{,}015123\\,\\text{u}$.\n\nHänen laskunsa: $\\Delta m = 3 \\cdot 1{,}007276\\,\\text{u} + 3 \\cdot 1{,}008665\\,\\text{u} - 6{,}015123\\,\\text{u} = 0{,}032700\\,\\text{u}$, joten $E_\\text{B} = 0{,}032700 \\cdot 931{,}5\\,\\text{MeV} = 30{,}46\\,\\text{MeV}$.\n\na) Mikä laskussa on virhe? Perustele.\n\nb) Laske sidosenergia oikein käyttämällä vetyatomin massaa $m_\\text{H} = 1{,}007825\\,\\text{u}$ ja muuntoa $1\\,\\text{u} = 931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$. Vastauslaatikkoon tulee b-kohdan tulos megaelektronivoltteina.",
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "answer": 31.99,
+      "unit": "MeV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-10-L2-07",
+      "level": 2,
+      "text": "Rauta-56 on sidosenergiakäyrän huipulla nikkeli-62:n kanssa, noin $8{,}8\\,\\text{MeV}$ nukleonia kohti. Miksi energiaa ei saada yhdistämällä rautaytimiä toisiinsa tai halkaisemalla niitä?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "Syntyvissä ytimissä nukleonit olisivat keskimäärin löyhemmin sidottuja, joten sidosenergia pienenisi ja reaktio vaatisi energiaa.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Rautaytimillä sähköinen hylkiminen on niin voimakasta, että ne eivät pääse tarpeeksi lähelle toisiaan, joten mikään reaktio ei onnistu.",
+          "feedback": "Sähköinen hylkiminen vaikuttaa vain siihen, kuinka vaikeasti fuusio käynnistyy, ei siihen, vapautuuko reaktiossa energiaa. Halkaisemisessa ytimien ei tarvitse lähestyä toisiaan lainkaan. Ratkaisevaa on, kasvaako sidosenergia reaktiossa."
+        },
+        {
+          "text": "Rauta on kemiallisesti niin pysyvä aine, että sen atomiytimet eivät voi osallistua minkäänlaisiin ydinreaktioihin.",
+          "feedback": "Kemiallinen pysyvyys koskee elektroneja ja atomien välisiä sidoksia, ei ytimiä. Raudan ytimiä voidaan muuttaa ydinreaktioissa, mutta se vaatisi energiaa, ei vapauttaisi sitä."
+        },
+        {
+          "text": "Raudan ytimessä on yhtä monta protonia ja neutronia, joten nukleonit eivät voi järjestyä uudelleen vapauttaen energiaa.",
+          "feedback": "Rauta-56:ssa on $26$ protonia ja $30$ neutronia, joten väite ei pidä paikkaansa. Energian vapautuminen ei myöskään riipu protonien ja neutronien lukumäärien yhtäsuuruudesta vaan siitä, kasvaako sidosenergia reaktiossa."
+        },
+        {
+          "text": "Syntyvissä ytimissä nukleonit olisivat keskimäärin löyhemmin sidottuja, joten sidosenergia pienenisi ja reaktio vaatisi energiaa.",
+          "correct": true,
+          "feedback": "Oikein: energiaa vapautuu vain, jos syntyvien ytimien sidosenergia on yhteensä suurempi kuin alkuperäisten. Huipun molemmin puolin $\\tfrac{E_\\text{B}}{A}$ on pienempi, joten rautaytimien yhdistäminen tai halkaiseminen veisi nukleonit kohti löyhempää sidosta ja vaatisi energiaa. Muiden ytimien kanssa reaktio voi silti vapauttaa energiaa."
+        }
+      ]
     }
   ],
   "level3": [
@@ -98,6 +288,59 @@
       "text": "Kattilassa on $1{,}00\\,\\text{kg}$ vettä, joka jäähtyy lämpötilasta $80{,}0\\,{}^\\circ\\text{C}$ lämpötilaan $20{,}0\\,{}^\\circ\\text{C}$. Veden ominaislämpökapasiteetti on $4{,}19\\,\\tfrac{\\text{kJ}}{\\text{kg} \\cdot \\text{K}}$ ja valon nopeus $2{,}998 \\cdot 10^{8}\\,\\text{m/s}$. Kuinka paljon veden massa pienenee jäähtyessä? Anna vastaus yksikössä $10^{-12}\\,\\text{kg}$.",
       "answer": 2.8,
       "unit": "10⁻¹² kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-10-L3-04",
+      "level": 3,
+      "text": "Kun neutroni osuu uraani-235-ytimeen, ydin voi haljeta kahdeksi kevyemmäksi ytimeksi. Yksi mahdollinen reaktio on ${}^{1}_{0}\\text{n} + {}^{235}_{92}\\text{U} \\to {}^{141}_{56}\\text{Ba} + {}^{92}_{36}\\text{Kr} + 3\\,{}^{1}_{0}\\text{n}$. Taulukossa on nuklidien atomimassat ja sidosenergiat nukleonia kohti.\n\nKäytä neutronin massaa $m_\\text{n} = 1{,}008665\\,\\text{u}$ sekä arvoja $1\\,\\text{u} = 931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$, $1\\,\\text{u} = 1{,}66054 \\cdot 10^{-27}\\,\\text{kg}$ ja $1\\,\\text{MeV} = 1{,}602177 \\cdot 10^{-13}\\,\\text{J}$.\n\na) Laske reaktioenergia $Q$ atomimassoista.\n\nb) Laske $Q$ myös taulukon sidosenergioista nukleonia kohti. Kumpi menetelmä on tarkempi? Perustele lyhyesti, miksi tulokset eroavat hieman.\n\nc) Uraani-235-näytteen massa on $1{,}00\\,\\text{g}$, ja kaikki sen ytimet halkeavat edellä kuvatulla tavalla. Kuinka paljon energiaa vapautuu? Perustele, miksi tulos on järkevä. Vastauslaatikkoon tulee c-kohdan tulos yksikössä $10^{10}\\,\\text{J}$.",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 7.11,
+      "unit": "10¹⁰ J",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Atomimassat $m$ ja sidosenergia nukleonia kohti (AME2020)",
+        "columns": [
+          "Nuklidi",
+          "$A$",
+          "$m\\,(\\text{u})$",
+          "$\\tfrac{E_\\text{B}}{A}\\,(\\text{MeV})$"
+        ],
+        "rows": [
+          [
+            "${}^{141}\\text{Ba}$",
+            "141",
+            "140.914411",
+            "8.326"
+          ],
+          [
+            "${}^{92}\\text{Kr}$",
+            "92",
+            "91.926156",
+            "8.513"
+          ],
+          [
+            "${}^{235}\\text{U}$",
+            "235",
+            "235.043930",
+            "7.591"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-10-L3-05",
+      "level": 3,
+      "text": "Tähden säteilyteho on $L = 1{,}0 \\cdot 10^{28}\\,\\text{W}$ (esimerkkiaineisto, tähti ei ole oikea). Oletetaan, että teho pysyy samana ja että energia syntyy reaktiossa, jossa neljä vetyatomia ${}^{1}\\text{H}$ muuttuu yhdeksi helium-4-atomiksi ${}^{4}\\text{He}$; neutriinojen viemä energia jätetään huomiotta.\n\nKäytä atomimassoja $m_\\text{H} = 1{,}007825\\,\\text{u}$ ja $m({}^{4}\\text{He}) = 4{,}002603\\,\\text{u}$ sekä arvoja $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$ ja vuosi $= 365{,}25 \\cdot 24 \\cdot 3600\\,\\text{s}$.\n\na) Kuinka paljon tähden massa pienenee vuodessa säteilyn vuoksi?\n\nb) Kuinka suuri osuus vetyatomien massasta muuttuu energiaksi reaktiossa?\n\nc) Kuinka paljon vetyä täytyy muuttua heliumiksi vuodessa? Vastauslaatikkoon tulee c-kohdan tulos yksikössä $10^{20}\\,\\text{kg}$.\n\nd) Tähden massa on $2{,}0 \\cdot 10^{31}\\,\\text{kg}$, ja siitä $70\\,\\%$ on vetyä. Kuinka suuri osa vedystä kuluu miljardissa vuodessa? Onko vakiotehon oletus tällä aikavälillä kohtuullinen? Perustele.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 4.9,
+      "unit": "10²⁰ kg",
       "tolerance": 0.02
     }
   ]

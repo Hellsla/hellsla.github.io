@@ -3,6 +3,7 @@
     {
       "id": "fy3-4-L1-01",
       "level": 1,
+      "core": true,
       "text": "A skier's weight is $720\\,\\text{N}$. It is spread evenly over the bases of the skis, whose total area is $0.30\\,\\text{m}^2$. How large is the pressure that the skis exert on the snow?",
       "answer": 2400,
       "unit": "Pa",
@@ -43,6 +44,7 @@
     {
       "id": "fy3-4-L1-06",
       "level": 1,
+      "core": true,
       "text": "A nail goes into wood point first when it is pressed with a thumb, but not head first. The force of the thumb is equally large in both cases. What explains the difference?",
       "kind": [
         "concept"
@@ -122,6 +124,7 @@
     {
       "id": "fy3-4-L2-02",
       "level": 2,
+      "core": true,
       "text": "A house gets its water from a water tower. When the taps are closed, a pressure gauge at the tap in the cellar shows a gauge pressure of $350\\,\\text{kPa}$. How high above the tap is the water surface in the tower? The density of water is $1000\\,\\text{kg/m}^3$.",
       "answer": 35.7,
       "unit": "m",
@@ -147,6 +150,7 @@
     {
       "id": "fy3-4-L2-05",
       "level": 2,
+      "core": true,
       "kind": [
         "data"
       ],

@@ -48,6 +48,26 @@
 **Answer:** $6$. The result is an exact whole number.
 **Reasonableness:** The nucleus has $4 \cdot 3 = 12$ quarks, of which the number of $d$ quarks is $2 \cdot 1 + 2 \cdot 2 = 6$, and $6 + 6 = 12$. The charge is $6 \cdot \tfrac{2}{3}e - 6 \cdot \tfrac{1}{3}e = +2e$, as it must be for a nucleus of two protons.
 
+## fy8-15-L1-06
+**Asked:** which fundamental interaction the photon is the mediator particle of.
+**Principle:** Each fundamental interaction has its own mediator particles: the photon mediates the electromagnetic interaction, the gluon the strong interaction, and the $W$ and $Z$ bosons the weak interaction. The mediator of gravity, the graviton, is hypothetical.
+**Model answer:** The photon mediates the electromagnetic interaction, which acts between electrically charged particles. The strong interaction binds quarks together, but its mediator is the gluon. The weak interaction changes the type of a quark, for example the $d$ quark of a neutron into a $u$ quark, through a $W^-$ boson. No electric force acts on a neutron, because its total charge is zero. Gravity is not part of the Standard Model, and its mediator is not the photon.
+
+## fy8-15-L1-07
+**Asked:** which property of the positron holds, when it is the antiparticle of the electron.
+**Principle:** An antiparticle has the same mass as the particle, but its charge and lepton number are opposite. So the electron and the positron differ only in these numbers, not in mass.
+**Model answer:** The mass of the positron is the same as that of the electron, but its charge is $+e$ and its lepton number $-1$, whereas for the electron they are $-e$ and $+1$. The positron is not lighter, because the mass of an antiparticle is always the same as that of the particle. Its charge is neither the same as that of the electron nor zero: the charge of a single particle does not cancel, but the charges cancel each other only in the joint system of the electron and the positron.
+
+## fy8-15-L1-08
+**Given:** $K^+ = u\,\bar{s}$; $q_u = +\tfrac{2}{3}e$, $q_s = -\tfrac{1}{3}e$
+**Asked:** the charge $q$ of the kaon as a multiple of the elementary charge $e$
+**Principle:** The charge of a meson is the sum of the charges of the quark and the antiquark. The charge of an antiquark is opposite to that of the corresponding quark, so the charge of $\bar{s}$ is $+\tfrac{1}{3}e$.
+**Formula:** $q = q_u + q_{\bar{s}}$, so $q = q_u - q_s$
+**Conversions:** Not needed, because the charges are given as multiples of the elementary charge $e$.
+**Substitution:** $q = \tfrac{2}{3}e - \left(-\tfrac{1}{3}e\right) = \tfrac{2}{3}e + \tfrac{1}{3}e = +1\,e$
+**Answer:** $+1\,e$. The result is exact because the charges of the quarks are exact fractions.
+**Reasonableness:** The notation $K^+$ of the kaon tells the charge $+e$, and it agrees. The kaon is a meson, so the fractional parts of the charges of the quark and the antiquark complete each other into a whole number, as for every hadron.
+
 ## fy8-15-L2-01
 **Given:** nucleus ${}^{12}_{6}\text{C}$: atomic number $Z = 6$, mass number $A = 12$; proton $uud$, neutron $udd$
 **Asked:** the number of $d$ quarks $N_d$
@@ -88,6 +108,39 @@
 **Answer:** $1.23\,\%$, three significant figures like the masses of the quarks.
 **Reasonableness:** The masses of the quarks are a few $\tfrac{\text{MeV}}{c^2}$ and that of the neutron almost $1000\,\tfrac{\text{MeV}}{c^2}$, so the share is of the order of one percent. The remaining about $99\,\%$ of the mass of the neutron is the energy of the strong interaction that binds the quarks.
 
+## fy8-15-L2-05
+**Given:** seven combinations from the table: (1) $u\,u\,d$, (2) $u\,d$, (3) $d\,\bar{s}$, (4) $u\,u\,\bar{d}$, (5) $\bar{u}\,\bar{u}\,\bar{d}$, (6) $s\,s\,s$, (7) $u\,\bar{s}$; $q_u = +\tfrac{2}{3}e$, $q_d = q_s = -\tfrac{1}{3}e$
+**Asked:** the number $N$ of the combinations that can be hadrons
+**Principle:** The charge and the baryon number of a hadron are integers. The charge is the sum of the charges of the parts, and the baryon number is calculated from the numbers of quarks and antiquarks. A combination in which either number is a fraction is not a hadron.
+**Formula:** $q = \sum q_i$ and $B = \dfrac{n_\text{q} - n_{\bar{\text{q}}}}{3}$; a hadron when both $q$ and $B$ are integers
+**Conversions:** Not needed, because the charges are multiples of the elementary charge $e$ and the numbers are counts.
+**Substitution:**
+(1) $q = \tfrac{2}{3}e + \tfrac{2}{3}e - \tfrac{1}{3}e = 1\,e$ and $B = \tfrac{3-0}{3} = 1$: yes
+(2) $q = \tfrac{2}{3}e - \tfrac{1}{3}e = \tfrac{1}{3}e$ and $B = \tfrac{2-0}{3} = \tfrac{2}{3}$: no
+(3) $q = -\tfrac{1}{3}e + \tfrac{1}{3}e = 0$ and $B = \tfrac{1-1}{3} = 0$: yes
+(4) $q = \tfrac{2}{3}e + \tfrac{2}{3}e + \tfrac{1}{3}e = \tfrac{5}{3}e$ and $B = \tfrac{2-1}{3} = \tfrac{1}{3}$: no
+(5) $q = -\tfrac{2}{3}e - \tfrac{2}{3}e + \tfrac{1}{3}e = -1\,e$ and $B = \tfrac{0-3}{3} = -1$: yes
+(6) $q = -\tfrac{1}{3}e - \tfrac{1}{3}e - \tfrac{1}{3}e = -1\,e$ and $B = \tfrac{3-0}{3} = 1$: yes
+(7) $q = \tfrac{2}{3}e + \tfrac{1}{3}e = 1\,e$ and $B = \tfrac{1-1}{3} = 0$: yes
+The number of yes rows is $N = 5$.
+**Answer:** $5$ combinations (rows 1, 3, 5, 6 and 7). The result is an exact whole number.
+**Reasonableness:** The yes rows are known particles: the proton (1), the kaon $K^0$ (3), the antiproton (5), the omega baryon (6) and the kaon $K^+$ (7). Rows 2 and 4 are not hadrons, because their charge and baryon number are fractions, and $5 + 2 = 7$ rows.
+
+## fy8-15-L2-06
+**Given:** seven reactions from the table; $\nu$: $L = +1$, $\bar{\nu}$: $L = -1$; the numbers of the other particles from the table of the chapter
+**Asked:** the number $N$ of the reactions in which a conservation law is violated
+**Principle:** Charge, baryon number and lepton number are conserved in all observed reactions. A reaction is forbidden if one of the numbers is different at the start and at the end. The numbers are calculated separately on each side of the reaction.
+**Formula:** $q_\text{initial} = q_\text{final}$, $B_\text{initial} = B_\text{final}$ and $L_\text{initial} = L_\text{final}$
+**Conversions:** Not needed, because the numbers have no units.
+**Substitution:** (1) $L$: $0 = 0 + 1 - 1$, allowed. (2) all numbers $0$ on both sides, allowed. (3) $L$: $0 \ne 0 + 1$, forbidden. (4) $q$: $+1 - 1 = 0$, $B$: $1 = 1$ and $L$: $0 + 1 = 0 + 1$, allowed. (5) $q$: $+1 + 0 = 1 \ne 2$, forbidden. (6) $q$: $-1 = -1$ and $L$: $0 = 1 - 1$, allowed. (7) $B$: $1 + 1 = 2 \ne 0$, forbidden. The number of forbidden reactions is $N = 3$.
+**Answer:** $3$ reactions (3, 5 and 7). The result is an exact whole number.
+**Reasonableness:** Each forbidden reaction violates a different law: reaction 3 the lepton number, reaction 5 the charge and reaction 7 the baryon number. There are $7 - 3 = 4$ allowed ones. Reaction 1 is the beta decay of the neutron and reaction 2 the annihilation of a proton and an antiproton, which are known.
+
+## fy8-15-L2-07
+**Asked:** what is wrong in the student’s claim “a free neutron is stable, because it is an elementary particle”.
+**Principle:** An elementary particle has no parts, but the neutron is made of three quarks $u\,d\,d$. A particle can decay if charge, baryon number and lepton number are conserved and the mass of the particles produced is smaller.
+**Model answer:** The mistake is the starting assumption: the neutron is not an elementary particle but is made of quarks, and in the weak interaction its $d$ quark can turn into a $u$ quark. The neutron decays by the reaction $n \to p + e^- + \bar{\nu}_e$, and the energy released is $(939.565 - 938.272 - 0.511)\,\text{MeV} = 0.782\,\text{MeV}$. Some elementary particles do decay (the muon). Decay is decided by the conservation laws and $Q > 0$; the $d$ quark of the neutron can turn into a $u$ quark. The conservation of energy does not prevent the decay of the neutron, and the existence of an antiparticle does not affect it.
+
 ## fy8-15-L3-01
 **Given:** $\Omega^- = s\,s\,s$, $m_\Omega = 1672.45\,\tfrac{\text{MeV}}{c^2}$; $\Lambda^0 = u\,d\,s$, $m_\Lambda = 1115.683\,\tfrac{\text{MeV}}{c^2}$; $\Sigma^0 = u\,d\,s$, $m_\Sigma = 1192.642\,\tfrac{\text{MeV}}{c^2}$; $K^- = s\,\bar{u}$, $m_K = 493.677\,\tfrac{\text{MeV}}{c^2}$; $\pi^0$ an uncharged meson, $m_\pi = 134.977\,\tfrac{\text{MeV}}{c^2}$
 **Asked:** the possible reaction and the energy $Q$ released in it, in megaelectronvolts
@@ -117,3 +170,29 @@
 **Substitution:** $L_X = -1 + 0 - 0 = -1$; in the same way $q_X = 0 + 1 - 0 = +1$ and $B_X = 0 + 1 - 1 = 0$
 **Answer:** $L_X = -1$. The result is an exact whole number. The particle with $q = +1$, $B = 0$ and $L = -1$ is an antilepton, that is the positron $e^+$: $\bar{\nu}_e + p \to n + e^+$.
 **Reasonableness:** The reaction is like beta plus decay: a proton turns into a neutron and a positron is produced. The experiment of Cowan and Reines observed precisely the $511\,\text{keV}$ photons produced in the annihilation of the positron and the capture of the neutron.
+
+## fy8-15-L3-04
+**Given:** photon energies from the table $0.662$; $1.173$; $1.332$; $1.461$ and $2.615\,\text{MeV}$; rest energy $m_e c^2 = 0.511\,\text{MeV}$ for both the electron and the positron
+**Asked:** a) the photons that can produce a pair; b) the kinetic energy $E_k$ of the electron in megaelectronvolts from the photon with the greatest energy; c) the energy of the annihilation photons and why it does not depend on the original photon
+**Principle:** In pair production the rest energies of the particles are made from the energy of the photon, so the energy of the photon must be at least $2\,m_e c^2$. The excess energy is the kinetic energy of the particles, and energy is conserved. The kinetic energy of the nucleus is ignored, and by the assumption of the task the kinetic energy is shared equally between the electron and the positron.
+**Formula:** threshold $E_\text{min} = 2\,m_e c^2$; conservation of energy $E_\gamma = 2\,m_e c^2 + 2\,E_k$, so $E_k = \dfrac{E_\gamma - 2\,m_e c^2}{2}$
+**Conversions:** Not needed: all the energies are already in megaelectronvolts.
+**Substitution:** a) $E_\text{min} = 2 \cdot 0.511\,\text{MeV} = 1.022\,\text{MeV}$. The photons $1.173$, $1.332$, $1.461$ and $2.615\,\text{MeV}$ exceed the threshold, but $0.662\,\text{MeV}$ does not. b) $E_k = \dfrac{2.615\,\text{MeV} - 1.022\,\text{MeV}}{2} = \dfrac{1.593\,\text{MeV}}{2} = 0.7965\,\text{MeV} \approx 0.797\,\text{MeV}$. c) In annihilation the positron and the electron at rest turn into two photons. The total momentum is zero, so the photons fly in opposite directions and have equal energy. Each gets half of the energy $2\,m_e c^2$, so $E_\gamma = m_e c^2 = 0.511\,\text{MeV}$.
+**Answer:** $0.797\,\text{MeV}$; the subtraction $2.615 - 1.022$ is given to the precision of a thousandth. Four photons can produce a pair: $1.173$, $1.332$, $1.461$ and $2.615\,\text{MeV}$. The annihilation photons have the energy $0.511\,\text{MeV}$, and it does not depend on the original photon, because the whole energy of particles at rest is their rest energy: the kinetic energy has already been used up in slowing down.
+**Reasonableness:** The kinetic energy and the rest energies together: $2 \cdot 0.7965 + 1.022 = 2.615$, so the energy agrees with the photon. The kinetic energy is about $61\,\%$ of the energy of the photon, since $1.593 : 2.615 = 0.609$, and it grows as the energy of the photon grows. A photon below the threshold ($0.662\,\text{MeV} < 1.022\,\text{MeV}$) is not enough for the rest energies.
+
+## fy8-15-L3-05
+**Given:** from the table $\pi^-$: $d\,\bar{u}$, $p$: $u\,u\,d$, $\Lambda^0$: $u\,d\,s$, $K^0$: $d\,\bar{s}$, $m_{K} = 497.611\,\tfrac{\text{MeV}}{c^2}$, $m_\pi = 139.570\,\tfrac{\text{MeV}}{c^2}$ ($\pi^+$ and $\pi^-$ have equal masses)
+**Asked:** a) checking the conservation laws and the net number of each quark type; b) the energy $Q$ released in the decay $K^0 \to \pi^+ + \pi^-$ in megaelectronvolts; c) an explanation of the tracks in the picture
+**Principle:** A reaction is possible when charge and baryon number are conserved and the net number of each quark type is the same at the start and at the end (an antiquark reduces the net number by one). The energy released in a decay is the difference of the masses multiplied by $c^2$, because the masses are in the unit $\tfrac{\text{MeV}}{c^2}$.
+**Formula:** $Q = (m_K - m_{\pi^+} - m_{\pi^-})\,c^2$, so $Q = (m_K - 2\,m_\pi)\,c^2$
+**Conversions:** Not needed: $c^2$ cancels, and the energy comes out in megaelectronvolts.
+**Substitution:**
+a) Charge: at the start $-1 + 1 = 0$ and at the end $0 + 0 = 0$
+Baryon number: at the start $0 + 1 = 1$ and at the end $1 + 0 = 1$
+Net numbers of quarks at the start: $u$: $-1 + 2 = 1$, $d$: $1 + 1 = 2$, $s$: $0$
+Net numbers of quarks at the end: $u$: $1 + 0 = 1$, $d$: $1 + 1 = 2$, $s$: $1 - 1 = 0$, so all agree
+b) $Q = (497.611 - 2 \cdot 139.570)\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = (497.611 - 279.140)\,\text{MeV} = 218.471\,\text{MeV}$
+c) The uncharged particles $\Lambda^0$ and $K^0$ do not ionise the liquid of the chamber, so they leave no track. They leave a track only when they decay into charged particles at the tip of the V. Charge is conserved, so the particles produced in the decay have opposite charges ($+1$ and $-1$), and the magnetic field bends them in opposite directions.
+**Answer:** $218.471\,\text{MeV}$; the subtraction has thousandths, so the result is given to the precision of a thousandth. The reaction $\pi^- + p \to \Lambda^0 + K^0$ conserves everything that was checked, and the absence of a track and the opposite curving of the arms are explained by charge.
+**Reasonableness:** Rounded, $498 - 280 = 218$, close to the result. The energy is positive, so the decay is possible, and it is about $44\,\%$ of the rest energy of the kaon, since $218.5 : 497.6 = 0.439$. The result is greater than the $37.8\,\text{MeV}$ of the decay of the lambda, because the pions are light compared with the kaon. In the collision itself $Q = (139.570 + 938.272 - 1115.683 - 497.611)\,\text{MeV} = -535.452\,\text{MeV}$, so the kinetic energy of the pion pays for the mass of the new particles.

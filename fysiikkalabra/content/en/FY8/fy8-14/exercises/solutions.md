@@ -117,3 +117,77 @@
 **Substitution:** $d = 3.9\,\text{mm} \cdot \dfrac{\ln 20}{\ln 2} = 3.9\,\text{mm} \cdot \dfrac{2.9957}{0.69315} = 3.9\,\text{mm} \cdot 4.3219 = 16.86\,\text{mm}$
 **Answer:** about $17\,\text{mm}$, two significant figures like the half-value thickness $3.9\,\text{mm}$ and the share $5.0\,\%$.
 **Reasonableness:** Four half-value thicknesses would let through $\tfrac{1}{16} \approx 6.3\,\%$ and five $\tfrac{1}{32} \approx 3.1\,\%$, so the thickness must be between $4 \cdot 3.9\,\text{mm} = 15.6\,\text{mm}$ and $5 \cdot 3.9\,\text{mm} = 19.5\,\text{mm}$. For the $140\,\text{keV}$ photons of technetium-$99\text{m}$, the same attenuation would need only about $1\,\text{mm}$ of lead, because their half-value thickness is about $0.26\,\text{mm}$.
+
+## fy8-14-L1-06
+**Asked:** why a tracer that emits positrons is suited to locating the source from outside the body.
+**Principle:** A positron is a charged particle, so it stops in the tissue within a few millimetres and annihilates with an electron. At that moment its momentum is almost zero, so the annihilation produces two photons that leave in opposite directions and have the same energy $E_\gamma = m_e c^2 = 511\,\text{keV}$.
+**Model answer:** The positron annihilates with an electron into two photons in opposite directions, and the line segment joining them passes through the source. The detector registers the photons at the same time, and the source lies on this segment. The intersection of many segments reveals the position of the tracer. The detector does not register the positron itself, because it stops in the tissue; it is electrically charged and does not travel straight out. The energy of the photons is always $511\,\text{keV}$, so it does not tell the depth but only that an annihilation has taken place.
+
+## fy8-14-L1-07
+**Asked:** whether reducing the dose is sensible from the point of view of radiation protection when the image is noisy.
+**Principle:** The principles of the use of radiation are justification, optimisation and dose limits. Optimisation does not mean the smallest possible dose at any cost but the smallest dose with which the image answers the question.
+**Model answer:** The proposal is not sensible. When the dose is too small, the image stays noisy, and the small change in the lung that was being looked for cannot be seen in it. The examination has to be repeated, and the patient receives two doses instead of one. So the dose is not reduced further; instead the imaging settings are chosen so that the image is just clear enough.
+
+## fy8-14-L1-08
+**Given:** accelerating voltage $U = 80\,\text{kV}$, elementary charge $e = 1.602 \cdot 10^{-19}\,\text{C}$
+**Asked:** the greatest possible energy $E_\text{max}$ of an X-ray photon in joules
+**Principle:** The voltage $U$ gives the electron a kinetic energy $eU$. The greatest energy a photon can receive arises when the electron gives the photon all of its kinetic energy as it decelerates in the anode.
+**Formula:** $E_\text{max} = eU$
+**Conversions:** $U = 80\,\text{kV} = 80 \cdot 1000\,\text{V} = 80\,000\,\text{V}$, and $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$.
+**Substitution:** $E_\text{max} = 1.602 \cdot 10^{-19}\,\text{C} \cdot 80\,000\,\text{V} = 1.2816 \cdot 10^{-14}\,\text{J}$
+**Answer:** $1.3 \cdot 10^{-14}\,\text{J}$, two significant figures like the voltage $80\,\text{kV}$.
+**Reasonableness:** The energy of the electron is $80\,\text{keV}$, and $80\,000 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 1.28 \cdot 10^{-14}\,\text{J}$. In imaging the energies of the photons are tens of kiloelectronvolts, so the result is of the right order of magnitude. Most photons receive less energy than this, because a decelerating electron often gives up only part of its energy.
+
+## fy8-14-L2-05
+**Given:** from the table a dental X-ray $0.010\,\text{mSv}$ three times, a chest X-ray $0.10\,\text{mSv}$ twice and a head CT $2.0\,\text{mSv}$ once; annual dose from natural radiation $H_\text{nature} = 5.1\,\text{mSv}$ (STUK-A263, 2020)
+**Asked:** the share $p$ of the annual dose from natural radiation that the total dose makes up, as a percentage
+**Principle:** Effective doses can be compared directly and added together, so the total dose is the dose of each examination times the number of examinations, summed. The comparison is made with a single division.
+**Formula:** $H = n_1 H_1 + n_2 H_2 + n_3 H_3$ and $p = \dfrac{H}{H_\text{nature}} \cdot 100\,\%$
+**Conversions:** Not needed: all doses are in millisieverts. The share is converted to a percentage by multiplying by $100\,\%$.
+**Substitution:** $H = 3 \cdot 0.010\,\text{mSv} + 2 \cdot 0.10\,\text{mSv} + 1 \cdot 2.0\,\text{mSv} = 0.030\,\text{mSv} + 0.20\,\text{mSv} + 2.0\,\text{mSv} = 2.23\,\text{mSv}$
+$p = \dfrac{2.23\,\text{mSv}}{5.1\,\text{mSv}} \cdot 100\,\% = 43.73\,\%$
+**Answer:** $44\,\%$, two significant figures like the dose from natural radiation $5.1\,\text{mSv}$.
+**Reasonableness:** The dose of the head CT, $2.0\,\text{mSv}$, is almost the whole sum, and $2.0 : 5.1 \approx 0.39$. The small images add only $0.23\,\text{mSv}$, so the whole is $(2.0 + 0.23) : 5.1 \approx 0.44$, or about $44\,\%$. The dose is less than half of the annual dose, and most of it comes from a single CT examination.
+
+## fy8-14-L2-06
+**Given:** from the table the activity $A = 500$; $355$; $252$; $123$ and $64\,\text{MBq}$ at times $t = 0.0$; $2.0$; $4.0$; $8.0$ and $12.0\,\text{h}$; half-life of the decay $T_{1/2} = 6.01\,\text{h}$
+**Asked:** a) the time in which the activity in the patient halves; b) the share $p$ of the activity given by decay alone that the measured activity makes up at $12.0\,\text{h}$, as a percentage
+**Principle:** The activity in the patient decreases for two reasons: the nucleus decays, and the body removes the tracer, for example in the urine. The activity given by decay alone follows the law $A = A_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$.
+**Formula:** a) the halving time is read from the table; b) $A_\text{decay} = A_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$ and $p = \dfrac{A_\text{measured}}{A_\text{decay}} \cdot 100\,\%$
+**Conversions:** Not needed: the time and the half-life are both in hours, and the activities are in megabecquerels.
+**Substitution:**
+a) The activity $500\,\text{MBq}$ halves to about $250\,\text{MBq}$ in $4.0\,\text{h}$ (in the table $252\,\text{MBq}$), and from there to about $125\,\text{MBq}$ in the next $4.0\,\text{h}$ (in the table $123\,\text{MBq}$ at $8.0\,\text{h}$). So the halving time is about $4.0\,\text{h}$.
+b) $A_\text{decay} = 500\,\text{MBq} \cdot \left(\tfrac{1}{2}\right)^{12.0\,\text{h} / 6.01\,\text{h}} = 500\,\text{MBq} \cdot 0.2506 = 125.3\,\text{MBq}$, so $p = \dfrac{64\,\text{MBq}}{125.3\,\text{MBq}} \cdot 100\,\% = 51.1\,\%$
+**Answer:** b) $51\,\%$, two significant figures like the measured activity $64\,\text{MBq}$. In part a) the halving time is about $4.0\,\text{h}$, which is shorter than the half-life of the decay, because in addition to decay the tracer is removed from the body.
+**Reasonableness:** Twelve hours is two half-lives for decay, so by decay alone the activity would be about $500 : 4 = 125\,\text{MBq}$, and the measured $64\,\text{MBq}$ is about half of that. Three halving times of $4.0\,\text{h}$ would give $500 : 8 = 62.5\,\text{MBq}$, which agrees with the measured value.
+
+## fy8-14-L2-07
+**Given:** share allowed through ${I : I_0} = 1.0\,\% = 0.010$, half-value thickness of lead for $511\,\text{keV}$ photons $d_{1/2} = 3.9\,\text{mm}$ and for $140\,\text{keV}$ photons $0.26\,\text{mm}$
+**Asked:** the student's error and the correct thickness $d$ of the lead shield in millimetres
+**Principle:** The half-value thickness depends on the energy of the photons. The shield has to stop the $511\,\text{keV}$ photons, so the calculation must use their half-value thickness, $3.9\,\text{mm}$. The student used the value $0.26\,\text{mm}$ for $140\,\text{keV}$ photons, so the shield would be too thin. Otherwise the student's number $n = 6.64$ is correct.
+**Formula:** $\left(\tfrac{1}{2}\right)^{n} = \dfrac{I}{I_0}$, so $n = \dfrac{\ln (I_0 : I)}{\ln 2}$ and $d = n \, d_{1/2}$
+**Conversions:** $1.0\,\% = 0.010$, so ${I_0 : I} = {1 : 0.010} = 100$. The thickness comes out in millimetres like the half-value thickness.
+**Substitution:** $n = \dfrac{\ln 100}{\ln 2} = \dfrac{4.6052}{0.69315} = 6.644$ and $d = 6.644 \cdot 3.9\,\text{mm} = 25.91\,\text{mm}$
+**Answer:** the correct thickness is $26\,\text{mm}$, two significant figures like the half-value thickness $3.9\,\text{mm}$. The student's result $1.7\,\text{mm}$ is wrong, because it is based on the value for the energy $140\,\text{keV}$.
+**Reasonableness:** Seven half-value thicknesses would let through $\left(\tfrac{1}{2}\right)^{7} = \tfrac{1}{128} \approx 0.78\,\%$ and six $\tfrac{1}{64} \approx 1.6\,\%$, so the thickness must lie between $6 \cdot 3.9\,\text{mm} = 23.4\,\text{mm}$ and $7 \cdot 3.9\,\text{mm} = 27.3\,\text{mm}$. For $511\,\text{keV}$ photons the student's $1.7\,\text{mm}$ is only $1.7 : 3.9 \approx 0.44$ half-value thicknesses, so about $74\,\%$ would get through, not $1.0\,\%$.
+
+## fy8-14-L3-04
+**Given:** from the table mass $m = 75\,\text{kg}$, activity required at the start of imaging $a = 2.0\,\tfrac{\text{MBq}}{\text{kg}}$, waiting time $t = 60\,\text{min}$, half-life of fluorine-$18$ $T_{1/2} = 110\,\text{min}$, dose coefficient $k = 0.019\,\tfrac{\text{mSv}}{\text{MBq}}$, dose of the CT part $H_\text{CT} = 6.0\,\text{mSv}$; annual dose from natural radiation $5.1\,\text{mSv}$
+**Asked:** a) the patient's total effective dose $H$ in millisieverts; b) a comparison with natural radiation and when the examination is justified
+**Principle:** The activity needed for imaging, $A_\text{scan} = a m$, must remain after the waiting time, and during the wait the activity decreases only by decay. So the injected activity $A_0$ is greater than $A_\text{scan}$, and the smallest suitable value comes from the decay law. The dose depends on the injected activity, and the doses of the PET part and the CT part are added together.
+**Formula:** $A_\text{scan} = A_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$, so $A_0 = \dfrac{a m}{\left(\tfrac{1}{2}\right)^{t/T_{1/2}}}$, and $H = k A_0 + H_\text{CT}$
+**Conversions:** Not needed: the waiting time and the half-life are both in minutes, and the dose coefficient is in millisieverts per megabecquerel.
+**Substitution:** $A_\text{scan} = 2.0\,\tfrac{\text{MBq}}{\text{kg}} \cdot 75\,\text{kg} = 150\,\text{MBq}$ and $\left(\tfrac{1}{2}\right)^{60\,\text{min} / 110\,\text{min}} = \left(\tfrac{1}{2}\right)^{0.5455} = 0.6853$, so $A_0 = \dfrac{150\,\text{MBq}}{0.6853} = 218.9\,\text{MBq}$. Then $H = 0.019\,\tfrac{\text{mSv}}{\text{MBq}} \cdot 218.9\,\text{MBq} + 6.0\,\text{mSv} = 4.16\,\text{mSv} + 6.0\,\text{mSv} = 10.16\,\text{mSv}$
+**Answer:** a) $10\,\text{mSv}$, two significant figures like the mass $75\,\text{kg}$ and the activity $2.0\,\tfrac{\text{MBq}}{\text{kg}}$. b) The total dose is about two annual doses from natural radiation ($10.16 : 5.1 = 2.0$), so clearly greater than the annual dose. The examination is justified when the physician judges that the result settles a question about the treatment and that a method with a smaller dose would not give the same information; the benefit to the patient is then greater than the small additional risk caused by the radiation. The dose is optimised by using the smallest activity with which the imaging succeeds.
+**Reasonableness:** The waiting time $60\,\text{min}$ is a little over half of the half-life, so about a third of the activity has time to decay: $150 : 0.69 \approx 217\,\text{MBq}$. This agrees with the result $218.9\,\text{MBq}$. The dose of the PET part, $4.2\,\text{mSv}$, is of the same order of magnitude as the doses of other PET examinations, and the CT part adds even more to it.
+
+## fy8-14-L3-05
+**Given:** from the table thicknesses $d = 0.0$; $5.0$; $10.0$; $15.0$ and $20.0\,\text{mm}$ and count rates $R = 1006$; $689$; $468$; $327$ and $221\,\tfrac{1}{\text{s}}$; for the unknown plate $R_x = 402\,\tfrac{1}{\text{s}}$
+**Asked:** a) the ratios of the count rates; b) the half-value thickness $d_{1/2}$ of aluminium; c) the thickness $d_x$ of the unknown plate in millimetres
+**Principle:** If the radiation is attenuated according to the half-value thickness, every additional layer of equal thickness reduces the count rate by the same factor. The count rate is proportional to the intensity of the radiation reaching the detector, so $R = R_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$, and the unknown thickness has to be solved with a logarithm.
+**Reading the graph:** The count rates of all the plates are read from the table. In part a) the ratios are calculated: $689 : 1006 = 0.685$, $468 : 689 = 0.679$, $327 : 468 = 0.699$ and $221 : 327 = 0.676$. They are almost the same, about $0.68$, although the measurement has small random variation. So every $5.0\,\text{mm}$ of plate reduces the count rate to the same fraction, which fits exponential attenuation. In part b) the half-value thickness is calculated from the first and the last row of the table. As a check, a line fitted to all five points between $\ln R$ and $d$ gives $d_{1/2} = 9.18\,\text{mm}$ and $d_x = 12.1\,\text{mm}$, that is, the same answer.
+**Formula:** $\dfrac{R_0}{R} = 2^{d/d_{1/2}}$, so $d = d_{1/2} \cdot \dfrac{\ln (R_0 : R)}{\ln 2}$. From the calibration $d_{1/2} = \dfrac{d_{20} \ln 2}{\ln (R_0 : R_{20})}$ and for the unknown plate $d_x = d_{1/2} \cdot \dfrac{\ln (R_0 : R_x)}{\ln 2}$.
+**Conversions:** Not needed: the thicknesses are in millimetres, and the ratio of the count rates is a pure number.
+**Substitution:** b) $d_{1/2} = \dfrac{20.0\,\text{mm} \cdot 0.69315}{\ln (1006 : 221)} = \dfrac{13.863\,\text{mm}}{1.5157} = 9.147\,\text{mm}$. c) $d_x = 9.147\,\text{mm} \cdot \dfrac{\ln (1006 : 402)}{0.69315} = 9.147\,\text{mm} \cdot \dfrac{0.9174}{0.69315} = 9.147\,\text{mm} \cdot 1.3236 = 12.11\,\text{mm}$
+**Answer:** c) $12\,\text{mm}$, two significant figures, because the half-value thickness $d_{1/2}$ has been determined from a calibration in which the random variation of the measurements limits the precision to about two figures (ratios $0.68 \pm 0.01$). In part b) the half-value thickness of aluminium is $9.1\,\text{mm}$.
+**Reasonableness:** The count rate $402\,\tfrac{1}{\text{s}}$ lies between the table values $468$ ($10.0\,\text{mm}$) and $327$ ($15.0\,\text{mm}$), so the thickness must lie between $10.0\,\text{mm}$ and $15.0\,\text{mm}$, and $12.1\,\text{mm}$ does. Check: $12.1\,\text{mm}$ is $12.1 : 9.147 = 1.32$ half-value thicknesses, and $1006 \cdot \left(\tfrac{1}{2}\right)^{1.32} = 403$, as the measured $402$. The result is valid only within the calibrated range, and the background radiation has to be subtracted, because it is not attenuated in the plate.

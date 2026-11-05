@@ -1,0 +1,531 @@
+{
+  "intro": "Four sample problems show the types of exam questions: a calculation, a graph drawn from data, an explanation and the planning of an experiment. Solve first yourself, then assess your answer with the model answer and the marking scheme.",
+  "tasks": [
+    {
+      "id": "fy9-koe-s1",
+      "title": "Cycling up a hill",
+      "source": "example",
+      "source_note": "The numbers are chosen to be realistic, but they are not a measurement.",
+      "text": "A cyclist rides up a road to the top of a hill. The total mass of the cyclist and the bicycle is $82.0\\,\\text{kg}$. The road is $1.20\\,\\text{km}$ long, and along it the height increases by $45.0\\,\\text{m}$. The cyclist's sports watch shows that the climb takes $4\\,\\text{min}\\ 30\\,\\text{s}$, and the speed stays about the same for the whole climb. Air resistance and the rolling resistance of the tyres oppose the motion with a total average force of $18\\,\\text{N}$. The efficiency of the muscles is about $22\\,\\%$: that is the share of the energy from food that becomes work turning the pedals.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "How much does the potential energy of the cyclist and the bicycle increase during the climb?",
+          "answer": {
+            "value": 36198.9,
+            "unit": "J",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\Delta E_\\text{p} = mgh$, zero level at the bottom of the road."
+            },
+            {
+              "key": "calculation",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\Delta E_\\text{p} \\approx 36.2\\,\\text{kJ}$, three significant figures."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 2,
+          "text": "How large an average power is needed just to lift the cyclist and the bicycle up the hill?",
+          "answer": {
+            "value": 134.07,
+            "unit": "W",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$P = \\dfrac{\\Delta E_\\text{p}}{t}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "The time in seconds $t = 270\\,\\text{s}$; $P \\approx 134\\,\\text{W}$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "How large a mechanical power must the cyclist produce on average during the climb?",
+          "answer": {
+            "value": 214.07,
+            "unit": "W",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "The work of the muscles covers both the increase in potential energy and the work of the resistive forces; the kinetic energy does not change, because the speed is constant.",
+              "tag": "transfer",
+              "points": 2
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "The work of the resistive forces $W_\\text{r} = F_\\text{r} s = 21.6\\,\\text{kJ}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$P \\approx 210\\,\\text{W}$, two significant figures like the force $18\\,\\text{N}$."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 3,
+          "text": "How much energy from food does the climb use? Answer in kilojoules.",
+          "answer": {
+            "value": 262.72,
+            "unit": "kJ",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\eta = \\dfrac{W}{E}$, so $E = \\dfrac{W}{\\eta}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "The energy from food is larger than the mechanical work, because the efficiency is below one."
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "word",
+          "points": 3,
+          "text": "The cyclist's friend says that after the climb you can eat a bar of chocolate whose energy content is $2200\\,\\text{kJ}$ according to the wrapper, because the climb uses it up. Assess the claim.",
+          "criteria": [
+            {
+              "text": "The answer compares the numbers: the climb uses about $12\\,\\%$ of the energy of the bar, so the energy of the bar equals about eight climbs.",
+              "tag": "communication",
+              "points": 1
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "The assumptions of the model: constant speed, an average resistive force and the efficiency of the muscles; the resting metabolism is not included."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The claim is not true: one climb uses only a small part of the energy of the bar."
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy4-8",
+        "fy2-3",
+        "fy2-4"
+      ],
+      "links": {
+        "math": "fy4-8",
+        "transfer": "fy4-8",
+        "communication": "fy2-4"
+      }
+    },
+    {
+      "id": "fy9-koe-s2",
+      "title": "The pendulum and the free-fall acceleration",
+      "source": "example",
+      "source_note": "The data have variation like that of a measurement, but they are not a measurement.",
+      "text": "Students hang a spherical bob from a thin string and measure the length $L$ of the string with a tape measure from the point of suspension to the top of the bob. The bob is pulled aside only a little, and the time $t_{10}$ of ten periods is measured with a stopwatch. The measurement is made with six lengths of string.\n\n| $L\\ (\\text{m})$ | $t_{10}\\ (\\text{s})$ |\n|---|---|\n| $0.200$ | $9.33$ |\n| $0.350$ | $12.08$ |\n| $0.500$ | $14.42$ |\n| $0.650$ | $16.41$ |\n| $0.800$ | $18.08$ |\n| $0.950$ | $19.72$ |",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 2,
+          "text": "Why do the students measure the time of ten periods and not of one?",
+          "criteria": [
+            {
+              "key": "error_sources",
+              "points": 1,
+              "detail": "In hand timing the starting and stopping of the watch are late or early by about $0.2\\,\\text{s}$, which is a large part of the time of one period."
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "The same timing uncertainty is shared by ten periods, so the relative uncertainty of the period is a tenth."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "graph",
+          "points": 5,
+          "text": "Make a graph of the data whose points lie on a straight line, and fit a line to it.",
+          "criteria": [
+            {
+              "text": "Chooses the quantities $L$ and $T^2$ for the axes and justifies the choice with the expression for the period of a pendulum $T = 2\\pi\\sqrt{\\tfrac{l}{g}}$.",
+              "tag": "transfer",
+              "points": 2
+            },
+            {
+              "key": "graph_axes",
+              "points": 1
+            },
+            {
+              "key": "graph_points",
+              "points": 1,
+              "detail": "The periods are calculated as $T = \\tfrac{t_{10}}{10}$ and squared."
+            },
+            {
+              "key": "graph_fit",
+              "points": 1,
+              "detail": "A straight line not forced through the origin is fitted to the points."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 5,
+          "text": "Determine the free-fall acceleration from the graph.",
+          "answer": {
+            "value": 9.81,
+            "unit": "m/s²",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The slope read from the line at two points far apart: $k \\approx 4.03\\,\\tfrac{\\text{s}^2}{\\text{m}}$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$k = \\dfrac{4\\pi^2}{g}$, so $g = \\dfrac{4\\pi^2}{k}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$g \\approx 9.8\\,\\text{m/s}^2$ or $9.81\\,\\text{m/s}^2$, the unit derived from the unit of the slope."
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "The result is compared with the value $9.81\\,\\text{m/s}^2$."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 4,
+          "text": "The fitted line does not pass through the origin. Explain why, and assess whether it affects the result of part c.",
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The line crosses the $L$ axis at about $L \\approx -1.5\\,\\text{cm}$, that is it passes the vertical axis at about $0.06\\,\\text{s}^2$."
+            },
+            {
+              "key": "error_sources",
+              "points": 2,
+              "detail": "The length of the pendulum is from the point of suspension to the centre of the bob, but $L$ was measured to the top: every length is too short by the radius of the bob. The error is systematic."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "A constant error shifts the line but does not change its slope, so $g$ from the slope is reliable; $g$ calculated from single points would be too small."
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy1-4",
+        "fy1-3",
+        "fy5-9"
+      ],
+      "links": {
+        "experiment": "fy1-3",
+        "graph": "fy1-4",
+        "transfer": "fy5-9",
+        "math": "fy5-9",
+        "communication": "fy1-4"
+      }
+    },
+    {
+      "id": "fy9-koe-s3",
+      "title": "The vacuum flask",
+      "source": "example",
+      "source_note": "The numbers are chosen to be realistic, but they are not a measurement.",
+      "text": "A vacuum flask has two glass walls, one inside the other. The air between the walls has been removed, and the surfaces of the walls facing each other are silvered like a mirror. The mouth of the flask has a stopper. In the morning a hiker pours $0.50\\,\\text{kg}$ of tea at $85.0\\,{}^\\circ\\text{C}$ into the flask and closes the stopper. Six hours later, at $13.00$, the temperature of the tea is $70.0\\,{}^\\circ\\text{C}$. The outdoor temperature is about $20\\,{}^\\circ\\text{C}$ the whole time. The specific heat capacity of the tea is the same as that of water, $4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 5,
+          "text": "Explain how the structure of the flask slows down the cooling of the tea. Deal with every way in which heat can be transferred.",
+          "criteria": [
+            {
+              "text": "Conduction: a vacuum has no particles to transfer energy by collisions from one wall to the other.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Convection: a vacuum has no air that could flow and carry energy.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Thermal radiation: the mirror surface reflects most of the thermal radiation from the side of the tea back.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "The stopper stops the flow of steam and warm air at the mouth and the evaporation that would take up energy.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "There is still a net transfer of energy from the tea to the surroundings, but it is slow, for example through the mouth and the joint of the walls."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 3,
+          "text": "The hiker notices that the tea cools more slowly in the afternoon than in the morning. Explain the observation.",
+          "criteria": [
+            {
+              "text": "The heat flow from the tea to the surroundings grows as the temperature difference between the tea and the surroundings grows.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "As the tea cools, the temperature difference decreases, so the heat flow and the rate of cooling decrease."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "Calculate the average heat flow with which energy is transferred from the tea to the surroundings during the six hours.",
+          "answer": {
+            "value": 1.455,
+            "unit": "W",
+            "tolerance": 0.04
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$Q = cm\\Delta T$ and $P = \\dfrac{Q}{t}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$t = 6.0 \\cdot 3600\\,\\text{s}$; $P \\approx 1.5\\,\\text{W}$, two significant figures."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Does the vacuum flask also keep ice water cold? Justify your answer.",
+          "criteria": [
+            {
+              "text": "The same structures slow down the transfer of energy in both directions; now there is a net transfer of energy from the warm surroundings to the cold water.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "The comparison is fair when the temperature difference is about the same; in addition the melting of the ice takes up energy, so the water stays at $0\\,{}^\\circ\\text{C}$ as long as there is ice."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Yes: the vacuum flask also keeps a cold drink cold."
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy3-12",
+        "fy3-6",
+        "fy3-7"
+      ],
+      "links": {
+        "concept": "fy3-12",
+        "communication": "fy3-12",
+        "math": "fy3-6",
+        "transfer": "fy3-7"
+      }
+    },
+    {
+      "id": "fy9-koe-s4",
+      "title": "The efficiency of a kettle",
+      "source": "example",
+      "source_note": "The measured result of part b is chosen to be realistic, but it is not a measurement.",
+      "text": "A group of students wants to find out whether the efficiency of a kettle depends on how much water is heated in it. They have a kettle with a power of $2.0\\,\\text{kW}$, a digital thermometer, kitchen scales, a stopwatch, tap water and an energy meter connected between the socket and the kettle, which shows the electrical energy used to $0.001\\,\\text{kWh}$. Only the warming of the water counts as useful.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 5,
+          "text": "Plan an experiment with which the group can find out.",
+          "criteria": [
+            {
+              "text": "The quantity changed is the mass of the water, for example five different amounts from the smallest mark of the kettle to the largest.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "Kept constant: the same kettle, the same initial and final temperature, the lid closed and the kettle cooled to room temperature between the measurements.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "Measured: the mass of the water with the scales, the initial and final temperature with the thermometer and the electrical energy used with the energy meter.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "Every measurement is repeated, for example three times, and the mean of the results is calculated.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "The plan goes step by step so clearly that another group could repeat it.",
+              "tag": "communication",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "In one measurement the kettle holds $0.500\\,\\text{kg}$ of water, which warms from $15.0\\,{}^\\circ\\text{C}$ to $95.0\\,{}^\\circ\\text{C}$, and the energy meter shows $0.054\\,\\text{kWh}$. Calculate the efficiency of the kettle.",
+          "answer": {
+            "value": 86.2,
+            "unit": "%",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\eta = \\dfrac{Q}{E}$, where $Q = cm\\Delta T$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$E = 0.054 \\cdot 3.6 \\cdot 10^{6}\\,\\text{J} = 194\\,400\\,\\text{J}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\eta \\approx 86\\,\\%$, two significant figures like the reading $0.054\\,\\text{kWh}$."
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "The efficiency is below $100\\,\\%$; the rest of the energy heats the kettle and the surroundings."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 4,
+          "text": "Assess the sources of error of the experiment and say how their effect can be reduced.",
+          "criteria": [
+            {
+              "key": "error_sources",
+              "points": 2,
+              "detail": "For example, water evaporates while it is heated, the kettle is warm from the previous measurement and the thermometer measures at one point only."
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "The reading of the energy meter to $0.001\\,\\text{kWh}$ is about $2\\,\\%$ of the reading $0.054\\,\\text{kWh}$ and an even larger share with small amounts of water."
+            },
+            {
+              "text": "Suggests measures: the lid closed, the kettle cooled, the water stirred before the reading and the measurements repeated.",
+              "tag": "experiment",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "How does the group present the results, and what kind of result would show that the efficiency depends on the amount of water?",
+          "criteria": [
+            {
+              "key": "graph_axes",
+              "points": 1,
+              "detail": "An $(m, \\eta)$ graph: the mass of the water $m\\ (\\text{kg})$ on the horizontal axis and the efficiency $\\eta\\ (\\%)$ on the vertical axis."
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "A dependence is shown only if the change in efficiency is clearly larger than the scatter of the repeats."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "For example, the efficiency grows as the amount of water grows, because the energy used to heat the body of the kettle is a smaller part of the whole."
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "fy1-8",
+        "fy3-6",
+        "fy2-4"
+      ],
+      "links": {
+        "experiment": "fy1-8",
+        "communication": "fy1-8",
+        "math": "fy3-6",
+        "graph": "fy1-4"
+      }
+    }
+  ]
+}

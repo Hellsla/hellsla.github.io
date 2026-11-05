@@ -3,6 +3,7 @@
     {
       "id": "fy4-15-L1-01",
       "level": 1,
+      "core": true,
       "text": "Vesivoimalan putouskorkeus on $15{,}0\\,\\text{m}$, ja turbiinien läpi virtaa $120\\,\\text{m}^3$ vettä sekunnissa. Voimalan hyötysuhde on $0{,}900$. Kuinka suuri on voimalan sähköteho?",
       "answer": 15.8922,
       "unit": "MW",
@@ -43,6 +44,7 @@
     {
       "id": "fy4-15-L1-06",
       "level": 1,
+      "core": true,
       "text": "Kahdella vesivoimalalla on sama virtaama ja sama hyötysuhde, mutta toisen putouskorkeus on kaksinkertainen toiseen verrattuna. Voimalan teho on kaksinkertaisen putouksen voimalassa kaksinkertainen. Mikä seuraavista selittää tämän?",
       "kind": [
         "concept"
@@ -115,6 +117,7 @@
     {
       "id": "fy4-15-L2-04",
       "level": 2,
+      "core": true,
       "text": "Pienvesivoimalan putouskorkeus on $9{,}50\\,\\text{m}$, virtaama $3{,}20\\,\\text{m}^3\\text{/s}$ ja hyötysuhde $0{,}800$. Kuinka paljon sähköenergiaa voimala tuottaa vuorokaudessa ($24{,}0\\,\\text{h}$), kun virtaama pysyy samana? Vastaa megawattitunteina.",
       "answer": 5.725901,
       "unit": "MWh",
@@ -214,6 +217,7 @@
     {
       "id": "fy4-15-L2-07",
       "level": 2,
+      "core": true,
       "text": "Oppilas laski tuulivoimalan sähkötehon ja sai oudon pienen tuloksen. Hänen ratkaisunsa on tässä.\n\n”Roottorin halkaisija on $60\\,\\text{m}$, tuulen nopeus $7{,}0\\,\\text{m/s}$, ilman tiheys $1{,}25\\,\\text{kg/m}^3$ ja hyötysuhde $0{,}40$. Pinta-ala on $A = \\pi r^2 = 2827\\,\\text{m}^2$ ja teho $P = \\tfrac{1}{2}\\eta\\rho A v = 0{,}5 \\cdot 0{,}40 \\cdot 1{,}25 \\cdot 2827 \\cdot 7{,}0 = 4948\\,\\text{W} \\approx 4{,}9\\,\\text{kW}$.”\n\nSelitä, mikä oppilaan kaavassa on virhe, ja laske voimalan oikea sähköteho. Vastauskenttään tulee oikea teho kilowatteina.",
       "kind": [
         "error"

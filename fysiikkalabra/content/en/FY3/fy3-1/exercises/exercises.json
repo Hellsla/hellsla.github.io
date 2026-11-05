@@ -44,6 +44,7 @@
     {
       "id": "fy3-1-L1-06",
       "level": 1,
+      "core": true,
       "text": "An astronaut travels from the Earth to the Moon. Which statement about his mass and weight is correct?",
       "kind": [
         "concept"
@@ -74,6 +75,7 @@
     {
       "id": "fy3-1-L1-07",
       "level": 1,
+      "core": true,
       "text": "A book hangs from a force meter on the surface of the Earth. The weight $G$ of the book describes the strength of the interaction between which two objects?",
       "kind": [
         "concept"
@@ -130,6 +132,7 @@
     {
       "id": "fy3-1-L2-03",
       "level": 2,
+      "core": true,
       "text": "The mass of an astronaut with equipment is $145\\,\\text{kg}$. By how much is his weight on the Moon ($g = 1.62\\,\\text{m/s}^2$) smaller than on Earth ($g = 9.81\\,\\text{m/s}^2$)?",
       "answer": 1190,
       "unit": "N",
@@ -146,6 +149,7 @@
     {
       "id": "fy3-1-L2-05",
       "level": 2,
+      "core": true,
       "kind": [
         "data",
         "experiment"

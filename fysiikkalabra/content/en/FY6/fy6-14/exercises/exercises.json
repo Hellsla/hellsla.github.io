@@ -11,6 +11,7 @@
     {
       "id": "fy6-14-L1-02",
       "level": 1,
+      "core": true,
       "text": "A white LED is connected to a $5.0\\,\\text{V}$ USB power supply through a series resistor. The voltage of the LED is $3.1\\,\\text{V}$, and the desired current is $20\\,\\text{mA}$. What series resistor is needed? Give the answer in ohms.",
       "answer": 95.0,
       "unit": "Ω",
@@ -44,6 +45,7 @@
     {
       "id": "fy6-14-L1-06",
       "level": 1,
+      "core": true,
       "text": "The voltage of a battery is $9.0\\,\\text{V}$. The positive terminal of the battery is connected through a diode to a resistor, and the resistor is connected to the negative terminal of the battery. The triangle of the diode symbol points towards the resistor.\n\nWhat happens in the circuit?",
       "kind": [
         "concept"
@@ -133,6 +135,7 @@
     {
       "id": "fy6-14-L2-03",
       "level": 2,
+      "core": true,
       "text": "The area of a solar panel on the roof of a detached house is $1.6\\,\\text{m}^2$. When the light intensity is $800\\,\\text{W/m}^2$, the panel gives an electric power of $260\\,\\text{W}$. What is the efficiency of the panel? Give the answer as a percentage.",
       "answer": 20.3125,
       "unit": "%",
@@ -182,6 +185,7 @@
     {
       "id": "fy6-14-L2-06",
       "level": 2,
+      "core": true,
       "text": "The voltage and the current of a small solar cell were measured with different load resistors in the same illumination (example data).\n\nCalculate the power of the cell with each load resistor. What is the greatest measured power of the cell? Give the answer in milliwatts.",
       "kind": [
         "data"

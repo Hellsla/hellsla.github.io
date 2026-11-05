@@ -1,14 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: c4a1809b541e08ee
+CONTENT-HASH: bd05ae74ce1f9dca
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+(none needed: the text already matched fi in every number and was natural)
 
 ## Polish
-- solutions.md L2-03 Reasonableness — "the difference between the levels of the nucleus is hundreds of thousands of times greater ... as the theory of the chapter says" is still a long sentence for a student who could not solve the task; shorten to "A gamma photon carries hundreds of thousands of times the energy of a visible photon."
-- solutions.md L2-03 Substitution — `661 700 eV : 2.2545 eV` still uses the colon for division; write a fraction.
-- Carried over, not blocking: all 12 tasks are numeric; one level 1 task could be a decay-mode choice or "write the equation".
+(none)
 
 ## Checked
-- Delta judged: only L2-03's Reasonableness changed ("this 662 keV line" to "this gamma line"); the wording is correct and general, answer 2.93e5 unchanged and correct (hc/λ = 2.2545 eV).
-- Levels still 5/4/3; no other file changed.
-- Hash identical at start and end.
+- English text of the 8 new exercises: natural English, no Finnish left (grep for ä/ö: none), decimal point in JSON and LaTeX, display units translated.
+- Task structure (a/b/c parts, which result goes into the answer field, kinds, level) matches fi; scaffolding and feedback of distractors in L1-06 follow the same error types as fi.
+- Solutions keep the order Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness as in fi.
+- check_i18n.py en: 0 errors.
