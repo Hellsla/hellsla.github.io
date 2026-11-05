@@ -472,6 +472,7 @@
   window.flSolutionsOpen = OPEN_ALL;
   if (OPEN_ALL) {
     const main = document.querySelector('main');
+  const theory = document.getElementById('selita') || document.getElementById('teoria');
     if (main) { const p = document.createElement('p'); p.className = 'teacher-note'; p.setAttribute('role', 'note'); p.textContent = msg('teacher_mode'); main.prepend(p); }
   }
   // a locked box's summary does not open it (a click, Enter or Space all arrive as a click); a script may still open it
@@ -574,9 +575,9 @@
 /* 9. Tasks beside the theory (teacher 2026-11-05: "Oikealla puolella näkyisi tehtävät ja vasemmalla puolella teoria";
    not the default, opened when the student starts on the exercises). From 1100 px a button under the Tehtävät heading,
    and the Tehtävät link of the stage bar (or any link to #exercises), open the exercises as a panel on the right that
-   scrolls on its own, while the lesson stays on the left and scrolls with the page; the left column jumps to the
-   theory stage. "Sulje sivunäkymä" (or Esc inside the panel) puts the exercises back at the end of the page, at the
-   exercise that was at the top of the panel. Below 1100 px there is no button and nothing changes (site.css keeps the
+   scrolls on its own, while the lesson stays on the left, where it was (or, opened from the exercises themselves at
+   the end of the page, at the theory stage), and scrolls with the page. "Sulje
+   sivunäkymä" (or Esc inside the panel) puts the exercises back at the end of the page; the lesson stays put. Below 1100 px there is no button and nothing changes (site.css keeps the
    panel's rules inside the same media query, so a window made narrower falls back to the one column by itself).
    The choice is not stored: every page opens in the one reading column. */
 (() => {
@@ -597,27 +598,52 @@
   const label = () => { const o = isOpen(); btn.textContent = say(o ? 'split_close' : 'split_open', o ? 'Sulje sivunäkymä' : 'Avaa tehtävät teorian viereen'); btn.setAttribute('aria-expanded', String(o)); };
   const items = () => [...ex.querySelectorAll('li[id], details.level')];
   const firstVisible = (top) => items().find((el) => el.offsetParent && el.getBoundingClientRect().bottom > top + 8);
+  // The lesson on the left does not move when the panel opens or closes (teacher 2026-11-05, "en halua että
+  // vasemmanpuoleinen näkymä liikkuu"): the reading column keeps its left edge (--split-l, the panel takes the room to
+  // its right) and the block at the top of the window stays at the same height, however the narrower page reflows.
+  const main = document.querySelector('main');
   const theory = document.getElementById('selita') || document.getElementById('teoria');
+  const barBottom = () => { const t = document.querySelector('nav.toc'); return t ? Math.max(0, t.getBoundingClientRect().bottom) : 0; };
+  const anchor = () => {
+    if (window.scrollY < 2) return null;                // at the top of the page it stays at the top
+    const y = barBottom() + 6, x0 = main.getBoundingClientRect().left;   // what is seen just under the bar, in the reading column
+    for (const dx of [40, 120, 240]) for (const dy of [0, 24, 60]) {
+      const hit = document.elementFromPoint(x0 + dx, y + dy);
+      if (!hit || !main.contains(hit) || ex.contains(hit) || hit.closest('.lab-side, #sim')) continue;
+      let el = hit.closest('p, li, h1, h2, h3, h4, figure, table, summary, .katex-display, .eq-chain') || hit;
+      if (el.getBoundingClientRect().height > window.innerHeight) el = hit;
+      return [el, el.getBoundingClientRect().top];
+    }
+    return null;
+  };
+  const keepAt = (a) => { if (a && a[0].isConnected) window.scrollBy(0, a[0].getBoundingClientRect().top - a[1]); };
   const open = () => {
     if (isOpen() || !WIDE.matches) return;
     const r = ex.getBoundingClientRect(), keep = r.top < window.innerHeight * 0.5 ? firstVisible(0) : null;
+    const atEnd = r.top < window.innerHeight - 40;      // the exercises already on screen: the left side goes to the theory (teacher 2026-11-05)
+    const at = atEnd ? null : anchor(), m = main.getBoundingClientRect().left, rem = parseFloat(getComputedStyle(root).fontSize) || 16;
+    const room = window.innerWidth - (38 + 2 + 30) * rem;   // the reading column, the gap and a panel at least 30rem wide
+    root.style.setProperty('--split-l', Math.round(Math.max(2 * rem, Math.min(m, room))) + 'px');
     root.classList.add('tasks-split'); label();
     ex.setAttribute('role', 'region'); ex.setAttribute('aria-label', h2.textContent);
     if (!ex.querySelector('details.level[open]')) { const d = ex.querySelector('details.level'); if (d) d.open = true; }   // the first level open, ready to start
     ex.scrollTop = keep ? Math.max(0, keep.offsetTop - head.offsetHeight - 16) : 0;
-    if (theory) window.scrollTo({ top: theory.getBoundingClientRect().top + window.scrollY - (parseFloat(getComputedStyle(root).getPropertyValue('--sticky-top')) || 64) });
+    if (atEnd && theory) window.scrollTo({ top: theory.getBoundingClientRect().top + window.scrollY - barBottom() - 8, behavior: 'instant' });
+    else keepAt(at);
     status.textContent = say('split_status', '');
     btn.focus({ preventScroll: true });
     window.dispatchEvent(new Event('resize'));          // the formulas and the stage bar measure their new widths
+    if (at) [0, 200, 450].forEach((t) => setTimeout(() => keepAt(at), t));   // again after the formulas are re-fitted and inquiry.js has moved the simulation
     setTimeout(() => window.dispatchEvent(new Event('scroll')), 1000);   // after the bar's tap pin: mark the stage on the left
   };
   const close = () => {
     if (!isOpen()) return;
-    const keep = firstVisible(ex.getBoundingClientRect().top + head.offsetHeight);
+    const at = anchor();
     root.classList.remove('tasks-split'); label();
     ex.removeAttribute('role'); ex.removeAttribute('aria-label'); status.textContent = '';
+    keepAt(at);
     window.dispatchEvent(new Event('resize'));
-    (keep || ex).scrollIntoView({ block: 'start' });
+    [0, 200, 450].forEach((t) => setTimeout(() => keepAt(at), t));
     btn.focus({ preventScroll: true });
   };
   btn.addEventListener('click', () => (isOpen() ? close() : open()));
