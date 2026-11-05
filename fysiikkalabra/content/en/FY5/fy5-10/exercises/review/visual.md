@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: ec25fa0cc4fb0fa3
+CONTENT-HASH: bc8bbdeca45b9de8
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+(none needed: the English text matched fi in every number and was natural)
 
 ## Polish
+(none)
 
 ## Checked
-- contact-5 (#49–#60): exit ticket, level 1 tasks 1–5 and level 2 tasks 1–4 with their solutions opened; the L2-01 (t, y) graph with ticks 0.4 … 2 and axis labels $y\,(\text{cm})$, $t\,(\text{s})$.
-- contact-4 #45–#46: the check-stage snapshot figure (ticks 1–4, $x\,(\text{m})$).
-- Math layout: aligned substitution rows, boxed answers, $6.0 \cdot 10^{3}\,\text{m/s}$, $1.8 \cdot 10^{2}\,\text{m}$, subscripts $v_\text{a}$, $\lambda_\text{w}$ render; no Finnish text.
-
-## Scores
-illustrations 5 · typography 5 · Finnish (English) 4 · accessibility 5
+- Screenshots of the new tasks (L2-05 table, L3-04 table and solution, L2-06) checked: tables, units, input unit labels and calculation boxes render; no truncated or overflowing text.
+- Empty calculation boxes, if any, are the known template bug and not a translation issue.

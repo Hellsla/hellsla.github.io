@@ -39,6 +39,74 @@
       "answer": 0.25,
       "unit": "s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-10-L1-06",
+      "level": 1,
+      "text": "Kierrejousta voi saada värähtelemään kahdella tavalla: sen päätä voi työntää edestakaisin jousen suunnassa tai heiluttaa sivuttain. Mikä väite pitkittäisestä aallosta on oikein?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Jousen kohdat värähtelevät etenemissuunnan suuntaisesti, ja jouseen syntyy tihentymiä ja harvennuksia",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Jousen kohdat värähtelevät kohtisuoraan etenemissuuntaa vastaan, ja jouseen syntyy harjoja ja aallonpohjia",
+          "feedback": "Tämä kuvaa poikittaista aaltoa, ei pitkittäistä. Pitkittäisessä aallossa aineen kohdat värähtelevät etenemissuunnan suuntaisesti."
+        },
+        {
+          "text": "Jousen kohdat kulkevat aallon mukana lähteestä vastaanottajalle, ja aine siirtyy jousen toiseen päähän",
+          "feedback": "Aalto ei kuljeta ainetta mukanaan. Jousen kohdat värähtelevät tasapainoasemansa ympärillä ja palaavat paikalleen. Eteenpäin siirtyy vain häiriö ja energia."
+        },
+        {
+          "text": "Jousen kohdat värähtelevät etenemissuunnan suuntaisesti, ja jouseen syntyy tihentymiä ja harvennuksia",
+          "feedback": "Oikein: pitkittäisessä aallossa aineen kohdat värähtelevät etenemissuunnan suuntaisesti. Jouseen syntyy tihentymiä, joissa kierteet ovat tiheässä, ja harvennuksia, joissa ne ovat harvassa. Ne etenevät jousessa. Ääni ilmassa on samanlainen aalto.",
+          "correct": true
+        },
+        {
+          "text": "Jousen kohdat pysyvät paikallaan, ja vain jousen päässä tapahtuu värähtelyä",
+          "feedback": "Kun aalto kulkee ohi, jokainen jousen kohta värähtelee vuorollaan tasapainoasemansa ympärillä. Häiriö etenee koko jousen läpi. Kaikki kohdat eivät siis pysy paikallaan."
+        }
+      ]
+    },
+    {
+      "id": "fy5-10-L1-07",
+      "level": 1,
+      "text": "Kireän narun päätä heilutetaan tasaisesti. Sitten heilutustaajuus kaksinkertaistetaan, mutta naru ja sen jännitys pysyvät samoina. Mitä aallolle tapahtuu?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Aallonpituus puolittuu, koska nopeus pysyy samana ja aallonpituus on nopeus jaettuna taajuudella",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Aallonpituus puolittuu, koska nopeus pysyy samana ja aallonpituus on nopeus jaettuna taajuudella",
+          "feedback": "Oikein: nopeuden määrää naru, ei käden liike. Perusyhtälöstä $\\lambda = v/f$ seuraa, että kun $f$ kaksinkertaistuu ja $v$ pysyy samana, $\\lambda$ puolittuu.",
+          "correct": true
+        },
+        {
+          "text": "Aallon nopeus kaksinkertaistuu, koska tiheämpi heilutus työntää aaltoa nopeammin eteenpäin",
+          "feedback": "Tämä on yleinen virhekäsitys. Nopeuden määrää väliaine eli naru ja sen jännitys. Taajuus ei muuta nopeutta. Taajuus muuttaa aallonpituutta."
+        },
+        {
+          "text": "Aallonpituus pysyy samana, koska aallonpituuden määrää narun materiaali eikä käden liike",
+          "feedback": "Aallonpituutta ei määrää pelkkä naru. Naru määrää nopeuden. Aallonpituus on $\\lambda = v/f$, joten se riippuu myös lähteen taajuudesta."
+        },
+        {
+          "text": "Aallonpituus kaksinkertaistuu, koska tiheämpi heilutus venyttää aallon pidemmäksi",
+          "feedback": "Tiheämmällä heilutuksella samassa ajassa lähtee kaksi kertaa niin monta harjaa. Ne etenevät silti yhtä pitkän matkan. Harjat mahtuvat siis lähemmäs toisiaan, ja aallonpituus lyhenee."
+        }
+      ]
+    },
+    {
+      "id": "fy5-10-L1-08",
+      "level": 1,
+      "text": "Ukkosmyrskyssä salama nähdään käytännössä heti, mutta jyrinä kuuluu $4{,}0\\,\\text{s}$ myöhemmin. Äänen nopeus ilmassa on $343\\,\\text{m/s}$. Kuinka kaukana salama iski? Anna vastaus kilometreinä.",
+      "answer": 1.4,
+      "unit": "km",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +142,99 @@
       "answer": 6000,
       "unit": "m/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-10-L2-05",
+      "level": 2,
+      "text": "Kierrejousessa kulkevaa pitkittäistä pulssia kuvattiin videolla. Pulssi on yksi häiriö, joka etenee jousessa. Kuvista luettiin pulssin etureunan paikka. Esimerkkiaineisto on taulukossa. Paikka mitataan mittanauhan nollakohdasta. Kuvauksen alussa pulssi oli jo vähän nollakohdan ohi.\n\nPiirrä $(t, x)$-kuvaaja ja sovita pisteisiin suora. Kuinka suuri on pulssin nopeus?\n\nAnna vastaus suoran kulmakertoimena.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 2.6,
+      "unit": "m/s",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Pulssin etureunan paikka (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$x\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "0.00",
+            "0.10"
+          ],
+          [
+            "0.20",
+            "0.62"
+          ],
+          [
+            "0.40",
+            "1.13"
+          ],
+          [
+            "0.60",
+            "1.66"
+          ],
+          [
+            "0.80",
+            "2.17"
+          ],
+          [
+            "1.00",
+            "2.70"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-10-L2-06",
+      "level": 2,
+      "text": "Opiskelija tutkii kireässä narussa etenevää aaltoa. Narun yhden kohdan $(t, y)$-kuvaajassa peräkkäisten huippujen väli on $0{,}50\\,\\text{s}$. Narun valokuvassa eli $(x, y)$-kuvaajassa peräkkäisten harjojen väli on $1{,}5\\,\\text{m}$.\n\nOpiskelija ratkaisee: ”Huippujen väli on aallonpituus, eli $\\lambda = 0{,}50\\,\\text{m}$. Harjojen väli on jaksonaika, eli $T = 1{,}5\\,\\text{s}$. Siis $v = \\lambda/T = 0{,}33\\,\\text{m/s}$.”\n\nMikä opiskelijan ratkaisussa on virheellistä? Laske aallon oikea nopeus.",
+      "kind": [
+        "error"
+      ],
+      "answer": 3.0,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-10-L2-07",
+      "level": 2,
+      "text": "Äänen nopeutta mitataan kahdella mikrofonilla. Ne ovat samalla suoralla kaiuttimen kanssa. Kaiutin antaa lyhyen napsahduksen. Mittari näyttää ajan, jonka napsahdus tarvitsee kulkeakseen mikrofonien välin.\n\nEsimerkkiaineisto on taulukossa. Etäisyys $d$ on mikrofonien väli. Aika $\\Delta t$ on äänen kulkuaika mikrofonien välillä.\n\nMääritä äänen nopeus laskemalla pisteiden $d = 0{,}50\\,\\text{m}$ ja $d = 2{,}00\\,\\text{m}$ kautta kulkevan suoran kulmakerroin. Perustele, miksi kulmakerroin on parempi kuin yhden rivin osamäärä.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 340,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Mikrofonien väli ja kulkuaika (esimerkkiaineisto)",
+        "columns": [
+          "$d\\,(\\text{m})$",
+          "$\\Delta t\\,(\\text{ms})$"
+        ],
+        "rows": [
+          [
+            "0.50",
+            "1.5"
+          ],
+          [
+            "1.00",
+            "2.9"
+          ],
+          [
+            "1.50",
+            "4.4"
+          ],
+          [
+            "2.00",
+            "5.9"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -100,6 +261,75 @@
       "answer": 40,
       "unit": "s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-10-L3-04",
+      "level": 3,
+      "text": "Esimerkkiaineisto: $12{,}0\\,\\text{m}$ pitkää narua kiristetään eri voimilla $F$. Narun päähän tehty pulssi kulkee koko narun pituuden ajassa $t$. Mittaustulokset ovat taulukossa.\n\nLaske pulssin nopeus jokaiselle jännitykselle. Tutki, riippuuko nopeus jännityksestä suoraan verrannollisesti vai jollakin muulla tavalla.\n\nNarua heilutetaan taajuudella $5{,}0\\,\\text{Hz}$, kun jännitys on $30\\,\\text{N}$. Mikä on syntyvän aallon aallonpituus? Perustele, miksi aallonpituus muuttuisi, jos naru vaihdettaisiin paksumpaan mutta taajuus pidettäisiin samana.\n\nAnna vastaus aallonpituutena.",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 5.1,
+      "unit": "m",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Pulssin kulkuaika jännityksen funktiona (esimerkkiaineisto)",
+        "columns": [
+          "$F\\,(\\text{N})$",
+          "$t\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "5.0",
+            "1.15"
+          ],
+          [
+            "10.0",
+            "0.800"
+          ],
+          [
+            "20.0",
+            "0.570"
+          ],
+          [
+            "40.0",
+            "0.410"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-10-L3-05",
+      "level": 3,
+      "text": "Esimerkkiaineisto: pitkä köysi koostuu kahdesta eri paksuisesta osasta. Osat on liitetty toisiinsa. Köyden päätä heilutetaan tasaisesti taajuudella $5{,}0\\,\\text{Hz}$. Aallonpituus mitataan kummassakin osassa. Tulokset ovat taulukossa.\n\nHeilutuksen alussa köyteen tehdään yksi pulssi. Se kulkee ensin ohuen osan ja sitten paksun osan. Pulssin heijastumista liitoskohdassa ei huomioida. Pulssi etenee kummassakin osassa tasaisella nopeudella.\n\nKuinka kauan pulssilta kuluu köyden koko matkaan? Perustele, miksi taajuus on sama kummassakin osassa mutta aallonpituus ei.",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 4.9,
+      "unit": "s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Köyden osat (esimerkkiaineisto)",
+        "columns": [
+          "Osa",
+          "$L\\,(\\text{m})$",
+          "$\\lambda\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "Ohut",
+            "10.0",
+            "0.80"
+          ],
+          [
+            "Paksu",
+            "6.0",
+            "0.50"
+          ]
+        ]
+      }
     }
   ]
 }
