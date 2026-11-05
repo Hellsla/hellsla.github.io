@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 6f11aaaecc7f8a5d
-Round: 3
+CONTENT-HASH: 5a691da5f3916a2a
 
 ## Blocking
-(none)
 
 ## Polish
-- fy1-6-L3-04: the 5 % criterion is only in the solution; add "poikkeama yli 5 %" to the task text (carried over).
-- fy1-6-L3-05: the numeric check covers only t0 = 0,15 s; say which value is entered or list g = 9,8 m/s2 too (carried over).
-- fy1-6-L2-07 solution Järkevyys still states the 0,20 s check twice (2,00 m/s sentence and the 2,0/9,8 display); merge (carried over).
-- fy1-6-L3-01 (existing) overlaps L1-06 on mass independence; acceptable at different levels (carried over).
+- exercises.json fy1-6-L2-08 — mass independence is now tested three times (L1-06 hammer/feather, L2-08, L3-01 ratio 1,0); replace the numbers or the situation of L2-08 (e.g. give two different times or planets) so it adds something new.
+- exercises.json fy1-6-L2-08, reasons 2 and 4 and solutions.md — the feedback explains "vetoa vs. liikkeelle saamisen vaikeutta" (gravity and inertia), which FY1 has not taught (forces are FY2); shorten to "kokeet osoittavat, että g on sama kaikille kappaleille" or mark the cancelling as a preview.
+- exercises.json fy1-6-L2-08 — the correct reason is the only one that mentions g and v = gt; make the wrong reasons equally formal (e.g. "v = g t kasvaa massan mukana") so it cannot be picked by wording alone.
 
 ## Checked
-- Round 3 delta: L2-07 solution Annettu now says t1, t2 are the mid-points of the light breaks, matching the task text ("valon katkos puolivälissä") and the Periaate; g = 2,50/0,255 = 9,8 m/s2 unchanged and consistent.
-- Round-1 Blocking (L3-05 naming the cause) stays resolved; L3-05 answer 0,15 s matches the solution.
-- Counts 8/7/5, levels and plan items unchanged; no duplicates introduced.
+- New two-stage task: answer choices carry real misconceptions (proportional to mass, g read as speed, 4 × g); reason 1 is a true statement that does not explain, as the type requires.
+- Each feedback is specific to its option and repairs the idea rather than restating the answer.
+- Level 2 acceptable; numbers (2,0 s, 19,6 m/s) consistent with g = 9,81; vacuum made explicit.
+- Situation first, question last; no data trap.
+- Rest of the set unchanged since PASS.
+- Finnish reads correctly; "samankokoisia" correctly rules out size as the reason.

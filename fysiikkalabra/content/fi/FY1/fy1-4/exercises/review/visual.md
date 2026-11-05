@@ -1,18 +1,19 @@
-VERDICT: PASS
-CONTENT-HASH: 40177a99521db833
+VERDICT: FAIL
+CONTENT-HASH: e2f7da247d6bbbda
 
 ## Blocking
-(none)
+- [Major] L2-08 task text (open-exercises-L2-1280-10) — the four "Rivi 1…Rivi 4" lines are separated by single newlines in `exercises.json`, so the page runs them into one paragraph ("… 17,0 l). Rivi 2: ΔV = … Rivi 3: Δt = … Rivi 4: k = …") — the pupil must find the faulty step in a calculation whose rows cannot be told apart, and the row numbers are the answer options — put each row in its own paragraph (blank line between rows, as the rest of the task already does) or as a list.
 
 ## Polish
-- [Minor] L3-05 tehtävänanto (open-exercises-L3-1280-6/7) — oppilaan lainaus on suorien lainausmerkkien sisällä ("Jyrkin suora ..."); suomalaisessa tekstissä tavallinen on ”...” — vaihda lainausmerkit.
-- [Minor] L3-05 ratkaisu, Annettu (L3-1280-7) — kuuden pisteen luettelo "(t; s): (1,0 s; 0,75 m), ..." on tiheä, mutta taulukko on jo tehtävässä; riittäisi "taulukon mittauspisteet" ja vain kaksi suoraa — valinnainen.
+- [Minor] L2-08 and other litre tasks — the litre `\textsf{l}` reads like a capital I or bar in "5,0 l" and "l/min"; project-wide litre convention.
+- [Minor] L2-08 choices — rows 1–4 are quoted in full in the options, which repeats the task; acceptable, optionally shorten rows 1 and 4.
+- [Minor] L3-05 task — pupil's quotation uses straight quotes `"…"` in the source; use ” ” like the other tasks.
 
 ## Checked
-- Delta (hash 40177a99521db833), kaappaukset avattu: open-exercises-1280-6 ja -7 (L1-07), L2-1280-7 (L2-05, L2-06 taulukko), L2-1280-9 (L2-07 taulukko ja ratkaisun alku), L3-1280-5, -6, -7 (L3-04, L3-05 uusi taulukko ja ratkaisu).
-- Aiemmat Minor-löydökset: L2-07 tehtävänanto korjattu ("Mitä kulmakerroin tässä kuvaajassa tarkoittaa, ja kumpi aine on tiheämpi?"), \ldots-välit nyt ajatusviivalla ($100\text{–}500\,\text{g}$, $0{,}076\text{–}0{,}084\,\text{mm/g}$, $0{,}40\text{–}0{,}55$) ja renderöityvät oikein; L3-05:n puuttuva aineisto on nyt taulukko (desimaalipilkku, sarakeotsikot LaTeXina, yksiköt oikein).
-- L1-07 "Saman metallin ..." ja L2-05 "ripustettiin": luonteva suomi, monivalinnan palaute avautuu kortin sisään, ratkaisut (aligned-rivit, vastaus, järkevyys) ehjät, ei punaista KaTeXia.
-- Taulukon tasaus (otsikot keskitetty, arvot vasemmalle, kapea taulukko) on tunnettu jaetun komponentin asia, ei tämän setin; ei löydöksenä. Puhelinkaappauksia tehtävistä ei ole; check_layout 360/768/1280 puhdas.
+- Round 1 delta (new YO-skill task L2-08, paragraph splits in L2-02, L2-07, L3-01, L3-03, L3-05, solutions.md).
+- open-exercises-L2-1280-10: L2-08 task text (the Blocking defect), question, choices; the end of L2-07 Vastaus and Järkevyys intact.
+- open-exercises-L2-1280-11: remaining choices, wrong-answer feedback, answer chip, Kysytty/Periaate/Mallivastaus; fractions and l/min units set cleanly, nothing clipped.
+- Paragraph splits checked against the diff; layout of neighbouring tasks survived.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 3

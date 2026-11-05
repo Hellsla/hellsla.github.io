@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 858946470e7d35ed
+CONTENT-HASH: d91dc312a9901fe7
 
 ## Blocking
 
 ## Polish
-- content/fi/FY1/fy1-2/exercises/solutions.md:175 (L3-04) — "k … ei riipu pituudesta tai paikasta" holds within the task's premise. Strictly, k depends on the amplitude, which the premise leaves out. — Optional: "kun heilahdukset ovat yhtä pieniä".
-- content/fi/FY1/fy1-2/exercises/exercises.json:66 and solutions.md:55 (L1-06) — "kilogrammasta etuliitteellä muodostettu osa": the gram itself carries no prefix. — Write: "Gramma on kilogramman tuhannesosa; massan etuliitteet liitetään grammaan (mg, kg)."
-- content/fi/FY1/fy1-2/exercises/solutions.md:54 (L1-06) — "Etuliite … muodostaa perusyksikön osan tai monikerran": prefixes apply to every SI unit (kN, MJ). — Write "yksikön osan tai monikerran".
+- content/fi/FY1/fy1-2/exercises/exercises.json:68 (L1-06) — Carried over: "kilogrammasta etuliitteellä muodostettu osa" does not hold, because the gram itself carries no prefix. — Write: "Gramma on kilogramman tuhannesosa; massan etuliitteet liitetään grammaan."
+- content/fi/FY1/fy1-2/exercises/solutions.md:54 (L1-06) — Carried over: "muodostaa perusyksikön osan tai monikerran", but prefixes apply to every SI unit (kN, MJ). — Write "yksikön".
+- content/fi/FY1/fy1-2/exercises/exercises.json:119 (L1-09) — The stem defines the symbols s and t, but the options use only numbers with units, so the symbols are not needed. — Optional: drop "s" and "t", or write the options as s/t, s·t and so on.
 
 ## Checked
-- The round-2 Blocking item (L3-04, B) is fixed. solutions.md:179 now says "pienillä heilahduksilla pätee T = 2π√(L/g)", and "tarkka" is gone. This was the only change (`git diff HEAD~1 -- content/fi/FY1`).
-- L3-04 recomputed: dimensional analysis gives a = 1/2, b = −1/2, c = 0, and T₂ = 1,00 s·√4 = 2,00 s. The data agree with 2π√(L/g): this gives 1,003 s for 0,250 m and 2,006 s for 1,00 m.
-- Everything else is unchanged since round 2. The round-2 checks still apply: L2-05 speeds, L3-05 at 1,536 h, L1-06 options, L2-07 unit check, and answers.py agreeing with exercises.json.
-- The hash was the same at the start and the end.
+- The hash was d91dc312a9901fe7 at the start and at the end.
+- L1-09 (new, type 7): exactly one option, 12 km / 3,0 h, has the unit km/h. The others are km·h, h/km (time per distance, the inverse of speed, as the feedback says correctly) and km/h² (the acceleration type; acceptable in FY1, where v = gt is taught). Every feedback names the real unit, and the Mallivastaus gives the same reasons.
+- All 18 numeric answers recomputed with my own formulas match exercises.json and answers.py. These include L2-05 (the ship at 19,55 m/s is the fastest), L3-01 (63 247 AU), L3-03 (40,20 h), L3-04 (2,00 s) and L3-05 (7,647 h − 6,111 h = 1,536 h).
+- The L1-04 figure ends at 2,0 cm and 13,6 cm, which gives 116 mm.
+- The other tasks are unchanged and were PASS before.

@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 858946470e7d35ed
+CONTENT-HASH: d91dc312a9901fe7
 
 ## Blocking
 none
 
 ## Polish
-- solutions.md fy1-2-L3-05 — carried: "Vastaus" says "noin 1,5 h" while the stored answer is 1,54; write "noin 1,5 h (kenttään sopii 1,54)".
-- exercises.json fy1-2-L3-05 — carried: put "Onko väite oikein? Perustele." last so the question does not end on a yes/no after "Perustele".
+- exercises.json fy1-2-L1-09 — the stem introduces the symbols $s$ and $t$, but the options use numbers only; write "Matka on 12 km ja aika 3,0 h. Mikä seuraavista lausekkeista voi olla nopeus?" or drop the symbols.
+- Carried from round 3 (set otherwise unchanged): fy1-2-L3-05 "Vastaus" says "noin 1,5 h" while the stored answer is 1,54; and "Onko väite oikein? Perustele." should come last.
 
 ## Checked
-- Round 3 delta: L3-04 Vastaus now says "pienillä heilahduksilla pätee T = 2π√(L/g)" instead of "tarkka kaava". This is the correct, honest qualifier (small-amplitude formula) and keeps the point that unit analysis cannot give 2π and that k cancels in T2/T1; it does not disclose or contradict anything the task asks.
-- Rest unchanged since the round-2 PASS (8/7/5, data and error tasks, none repeats the worked example).
-- Capture open-exercises-L3-1280-5 opened: the Vastaus paragraph reads fluently, nothing clipped.
+- New YO-type task L1-09 (type 7, yksikkö ja dimensio): the question is last and the units alone decide it, as the solution says; no numerical work needed.
+- Each distractor has its own misconception and feedback: product (km·h), inverse (h/km, the nopeuden käänteisluku), squared time (km/h², acceleration-type unit).
+- Solution follows the task: principle (speed is distance per time unit), then each option's unit derived; nothing skipped.
+- Fits the lesson: the unit-from-formula method is the chapter's own and the task does not repeat the worked example.
+- Finnish and notation correct (km/h, $\text{km/h}^2$ with the glossary terms).

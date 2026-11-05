@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: c9e42a3b190e9ad8
-Round: 3
+CONTENT-HASH: b04a13ce486ff667
 
 ## Blocking
-(none)
 
 ## Polish
-- fy1-7-L3-04: "metallikappaleen" now leaves the material to the table (round-2 Polish done); the task still says "taulukon perusteella" without naming the table, say "oppitunnin tiheystaulukon perusteella".
-- fy1-7-L3-04: the answer field checks only 11,3 g/cm3; list 9,42 g/cm3 and about -17 % as further expected values; the solution has -16,7 % and "noin 17 %", keep one form (carried over).
-- fy1-7-L2-07: mention that copper (8,96) is nearest to 8,9 g/cm3 and that the identification is uncertain since iron also fits the range (carried over).
-- fy1-7-L2-05/06 second questions are not checked by the numeric answer (carried over).
+- exercises.json fy1-7-L2-08 — the text ends with an imperative ("Muunna ... ja laita ...") and the question is in `prompt`; make the last sentence a question: "Missä järjestyksessä kappaleet ovat tiheyden mukaan pienimmästä suurimpaan?"
+- solutions.md fy1-7-L2-08 — the five conversions are listed in one sentence; give each as its own line (0,36 kg = 360 g; 0,40 dm³ = 400 cm³; ...) so a student who got stuck sees which one went wrong.
+- exercises.json fy1-7-L2-08 — all four values are close to table materials (B = mänty/öljy range, C = kupari); consider noting in the solution that the order is found without naming the materials, to avoid a guessing-the-material detour.
 
 ## Checked
-- Round 3 delta: L3-04 no longer says "lyijyisen"; true rho = 113/10,0 = 11,3 (lead), measured 113/12,0 = 9,42 g/cm3, error -16,7 %; with 9,42 the table suggests copper, so the identification task is now a real inference.
-- Round-1 Blocking stays resolved; solution has all steps; level 3 fits.
-- Counts 8/7/5 and plan items unchanged; no duplicates.
+- New ordering task: B 0,90 < D 1,2 < A 2,7 < C 9,0 g/cm³ recomputed and correct; the order differs from the mass order, so the trap (heaviest = densest) is real and named in the solution.
+- Units mixed (g, kg, cm³, dm³, ml) all taught in the lesson's Yksiköt section; no unprepared jump.
+- Level 2 fits; no repeat of the iron-beam example.
+- Solution explains the principle and states significant figures.
+- Existing set unchanged since PASS; mixed-unit and displacement tasks coherent.
+- Finnish reads correctly.

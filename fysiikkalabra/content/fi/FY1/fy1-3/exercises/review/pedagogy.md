@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: b767859bee6529a5
+CONTENT-HASH: d9611902d296811e
 
 ## Blocking
 none
 
 ## Polish
-- solutions.md fy1-3-L1-08 — the heading "## fy1-3-L2-05" follows directly after the Järkevyys line with no blank line; add one so the heading renders.
-- exercises.json fy1-3-L1-08 — the answer unit "kertaa" is fine; add "Anna vastaus lukuna." or keep the unit empty so a student does not type "100 kertaa" into a numeric field.
-- exercises.json fy1-3-L3-04 — four asks in one task (permission, mean, no-note case, range comparison); the stored answer checks only 2,41 s. Acceptable at level 3; split the last sentence into its own numbered part if students skip it.
-- solutions.md fy1-3-L2-05 — the Järkevyys line says 1,800 s lies just outside 1,820 ± 0,015 s; correct but it hints at an error the task never asks about. Keep, but phrase as "mahdollinen syy" only if the lesson has taught systematic error (it has, per L2-06).
+- exercises.json fy1-3-L2-08 — the comparison rule (a difference smaller than the uncertainty cannot be shown) is not in the lesson's Kaava or Tiivistelmä; the option feedback and the Periaate teach it, and L3-05 already uses the same idea, so I do not block. Cheap fix: end the stem with "Eroa pidetään osoitettuna vain, jos se on suurempi kuin epävarmuus." or add the rule as one sentence to the lesson.
+- exercises.json fy1-3-L2-08 — the correct option is the longest and the only hedged one ("ei osoita"), which test-wise students pick without reading the data; give the wrong options similar length and hedging (e.g. "…ei vaikuta heilahdusaikaan, koska ero on pienempi kuin epävarmuus" as a too-strong form already exists, so lengthen the others).
+- exercises.json fy1-3-L2-08 option 4 — "Kevyen kuulan heilahdusaika on 14,300 s" confuses the time of ten swings with the swing time; write "Kevyen kuulan kymmenen heilahduksen aika on 14,300 s".
+- Carried from round 3: fy1-3-L1-08 missing blank line before the next heading and unit "kertaa" in a numeric field.
 
 ## Checked
-- L1-08 now compares two instruments (ratio 100): a new step, not a copy of L1-05; answers.py and solution agree.
-- L2-05 ends with one question sentence in the form T ± ΔT; the solution's rounding (ΔT = 0,015 s, two digits) is explained.
-- L2-06 no longer names instruments, removing the pipette-less-accurate misconception; A: +0,94 ml, B closer, A more repeatable; justification uses the half-ranges and means.
-- L3-04 uses a logbook entry and contrasts the half-range with and without 2,97 s (0,03 against 0,30 s); numbers recomputed (2,48 s, 0,295 s).
-- L3-05 asks for the interval comparison first, number as a check; the solution now says the gap exceeds the stated uncertainties and does not overclaim.
-- L1-07 solution corrected to "liian tarkka" with 5,428 cm.
-- Counts 8/7/5 = 20; figure task L1-03 unchanged.
+- New YO-type task L2-08 (type 10, mittausdata): data table (5+5 readings), stated Δx = 0,2 s, four conclusions: over-claim, correct, too-strong "no effect", over-precise 14,300 s; each feedback names the misconception.
+- Numbers verified: sums 71,5 s and 71,8 s, means 14,30 and 14,36 s, difference 0,06 s; half-ranges 0,2 and 0,15 s.
+- Solution is followable: means shown, difference compared with Δx and the range, each wrong claim explained, a way to detect the difference named.
+- Capture open-exercises-L2-1280-11: solution readable, nothing clipped.
