@@ -170,8 +170,8 @@
 </svg></div></div>
 <h4>Kierrosten lukumäärä määrää jännitteen</h4>
 <p>Sama muuttuva magneettivuo kulkee kummankin käämin jokaisen kierroksen läpi, joten jokaiseen kierrokseen indusoituu yhtä suuri jännite. Käämin jännite on sen kierrosten jännitteiden summa, joten se on verrannollinen kierrosten lukumäärään. Ideaalisessa muuntajassa ensiö- ja toisiojännitteen suhde on siis sama kuin käämien kierrosten lukumäärien suhde, <strong>muuntosuhde</strong>. Kun toisiokäämissä on enemmän kierroksia kuin ensiökäämissä, muuntaja nostaa jännitettä. Kun toisiokäämissä on vähemmän kierroksia, muuntaja laskee jännitettä.</p>
-<h4>Muuntaja toimii vain vaihtovirralla</h4>
-<p>Jos ensiökäämi kytketään akkuun, käämissä kulkee tasavirta, ja rautasydämen magneettikenttä on vakio. Vakiosuuruinen magneettivuo ei indusoi jännitettä, joten toisiokäämin jännite on nolla. Jännitepulssi syntyy vain hetkellä, jolloin virta kytketään tai katkaistaan, koska silloin vuo muuttuu. Tämän vuoksi sähköverkossa käytetään vaihtovirtaa: luvussa <em>Generaattori ja vaihtovirta</em> generaattori tuottaa vaihtojännitettä, ja muuntajilla sen suuruus voidaan muuttaa kulloinkin sopivaksi.</p>
+<h4>Muuntaja tarvitsee muuttuvan magneettivuon</h4>
+<p>Toisiokäämiin indusoituu jännite vain, kun sen läpi kulkeva magneettivuo muuttuu. Jos ensiökäämi kytketään akkuun, käämissä kulkee vakiosuuruinen tasavirta, ja rautasydämen magneettikenttä on vakio. Vakiosuuruinen magneettivuo ei indusoi jännitettä, joten toisiokäämin jännite on nolla. Jännitepulssi syntyy vain hetkellä, jolloin virta kytketään tai katkaistaan, koska silloin vuo muuttuu. Tämän vuoksi sähköverkossa käytetään vaihtovirtaa: luvussa <em>Generaattori ja vaihtovirta</em> generaattori tuottaa vaihtojännitettä, ja muuntajilla sen suuruus voidaan muuttaa kulloinkin sopivaksi.</p>
 <h4>Teho säilyy, virta muuttuu</h4>
 <p>Ideaalinen muuntaja ei kuluta energiaa, joten ensiökäämiin tuleva teho on yhtä suuri kuin toisiokäämistä lähtevä teho. Teho on jännitteen ja virran tulo, joten kun muuntaja nostaa jännitteen kymmenkertaiseksi, virta pienenee kymmenesosaan. Muuntaja ei siis lisää energiaa tai tehoa: se vaihtaa suuren virran suureksi jännitteeksi tai päinvastoin. Todellisessa muuntajassa osa energiasta muuttuu sisäenergiaksi käämien resistanssissa ja rautasydämen pyörrevirroissa. Siksi sydän kootaan ohuista toisistaan eristetyistä levyistä (luku <em>Lenzin laki ja pyörrevirrat</em>). Suurten voimalaitosmuuntajien hyötysuhde on yli $99\,\%$.</p>
 <h4>Siirtohäviö ja suurjännite</h4>
@@ -222,7 +222,7 @@
 <figure class="unit-photo"><img src="pics/fy7/transformer-750kv.webp" alt="Suuri vaalea muuntaja nurmella; sen päällä on pitkiä eristimiä ja säiliö, ja taustalla on sähköaseman teräsrakenteita ja johtoja." width="1600" height="1200" loading="lazy" decoding="async"><figcaption>Muuntaja, jonka suurempi jännite on $750\,\text{kV}$. Kun teho siirretään suurella jännitteellä, johtojen virta on pieni, ja siirtohäviö $P = RI^2$ jää pieneksi. <span class="photo-credit">Kuva: Novoklimov, CC0 1.0</span></figcaption></figure>
 
 <h4>Jännite lasketaan vaiheittain</h4>
-<p>Sähköasemilla muuntajat laskevat jännitteen alueverkon $110\,\text{kV}$:iin ja jakeluverkon $20\,\text{kV}$:iin, ja asuinalueen muuntamo laskee sen kotien $230\,\text{V}$:iin. Suurjännitettä ei tuoda koteihin, koska sen eristäminen vaatii pitkiä eristimiä ja suuria etäisyyksiä, ja kosketus olisi hengenvaarallinen (luku <em>Sähköturvallisuus</em>). Puhelimen laturi laskee jännitteen vielä noin $5\,\text{V}$:iin. Nykyaikainen laturi muuttaa verkkojännitteen ensin hyvin suuritaajuiseksi, jolloin muuntaja voi olla pieni, ja tasasuuntaa sen lopuksi. Laturin muuntajan käämit eivät kosketa toisiaan, joten puhelin ei ole johtavassa yhteydessä sähköverkkoon.</p>
+<p>Sähköasemilla muuntajat laskevat jännitteen alueverkon $110\,\text{kV}$:iin ja jakeluverkon $20\,\text{kV}$:iin, ja asuinalueen muuntamo laskee sen kotien $230\,\text{V}$:iin. Suurjännitettä ei tuoda koteihin, koska sen eristäminen vaatii pitkiä eristimiä ja suuria etäisyyksiä, ja kosketus olisi hengenvaarallinen (luku <em>Sähköturvallisuus kotona ja työssä</em>). Puhelimen laturi laskee jännitteen vielä noin $5\,\text{V}$:iin. Nykyaikainen laturi muuttaa verkkojännitteen ensin hyvin suuritaajuiseksi, jolloin muuntaja voi olla pieni, ja tasasuuntaa sen lopuksi. Laturin muuntajan käämit eivät kosketa toisiaan, joten puhelin ei ole johtavassa yhteydessä sähköverkkoon.</p>
 <h3 class="theory-h">Muuntaja ja siirtohäviö</h3>
 <p>Ideaalisen muuntajan jännitteet ja virrat riippuvat käämien kierrosten lukumääristä:</p>
 <p>$$\frac{U_1}{U_2} = \frac{N_1}{N_2} = \frac{I_2}{I_1}$$</p>
@@ -446,5 +446,5 @@ d.addEventListener('toggle',function(){if(d.open)open(d);});d.flMathOpen=functio
 renderMathInElement(root,O);flGlueMath(root);};
 window.addEventListener('beforeprint',function(){document.querySelectorAll('details[data-fl-math="wait"]').forEach(function(d){d.flMathOpen();});});</script>
 <script src="vendor/katex/contrib/auto-render.min.js" onload="flMath(document.body)"></script>
-<script src="lesson.js?v=8f9cc0d7"></script><script src="readaloud.js?v=2217d3b9"></script><script src="inquiry.js?v=ed5ba151"></script>
+<script src="lesson.js?v=8f9cc0d7"></script><script src="readaloud.js?v=2217d3b9"></script><script src="inquiry.js?v=f79c6034"></script>
 </body></html>
