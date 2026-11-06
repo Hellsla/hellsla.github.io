@@ -1,14 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: aa7434ae1159c8f8
+CONTENT-HASH: 7b7785dbfa112764
 
 ## Blocking
 
 ## Polish
-- solutions.md:196–198 (fy8-3-L2-08) — at 390 px the check lines `λ1 = 1240 eV nm : 0,6611 eV ≈ 1876 nm` and the λ2 line run past the 304 px column (about 351–356 px), so the end of each is clipped. — Split them after the ":".
+- exercises.json (fy8-3-L2-08, the 0,44 option) — the number checks out: |E6| : |E4| = 0,378 : 0,85 = 0,444. Is it a realistic mistake? Partly. It is the "proportion of the given numbers" error, where the student divides the two starting-level energies and does not invert. But the chapter's own warned mistake (a photon carries one level's energy), applied consistently, gives λ ∝ 1/|E_y| and so growth by 2,25×. The 0,44 option combines that warned mistake with a second error, ignoring the inverse dependence. The feedback names both, so it is acceptable. The 2,25× option tested the warned mistake more cleanly.
 
 ## Checked
-- I recomputed fy8-3-L2-08: E4−E3 = 0,6611 eV and E6−E3 = 1,1333 eV. λ2/λ1 = 0,583, and both lines are Paschen infrared (1876 and 1094 nm) ✓.
-- Distractors: 1,714 is the dependence read the wrong way round, and 2,25 = |E4|/|E6| is the chapter's own warned error (the photon taken to carry one level's energy). "Ei muutu" is also wrong. Every feedback is correct ✓.
-- The correct option cannot be picked out by its form: two options say "noin", and they are of similar length ✓. The correct feedback does not give anything away beyond the numbers.
-- Scope: only E_n and λ = hc/(E_y − E_a), both taught ✓.
-- Render: preview/fy8-3.html at 390 px, with the solution opened. There is no page overflow; the clipping is noted above. The hash is the same at the start and the end.
+- I recomputed: E4−E3 = 0,6611 eV and E6−E3 = 1,1333 eV, giving λ2/λ1 = 0,583. In the split check lines, λ1 = 1876 nm and λ2 = 1094 nm, both Paschen IR ✓. 1,7× is the dependence read the wrong way round ✓. "Ei muutu" is wrong ✓. Exactly one option is correct.
+- Form: two options now say "pienenee noin", so the correct one cannot be singled out by its form ✓.
+- Render: preview/fy8-3.html at 390 px, with the feedback and the solution open. Nothing is clipped ✓. The hash is the same at the start and the end.

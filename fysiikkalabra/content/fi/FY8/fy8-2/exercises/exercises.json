@@ -306,7 +306,7 @@
         {
           "text": "Spektri A",
           "figure": "fy8-2/pick-emissio",
-          "feedback": "Tämä on emissiospektri, jonka kuuma kaasu lähettää itse. Kaasun läpi kulkenut hehkulampun valo antaa jatkuvan värikaistan, josta atomien absorboimat aallonpituudet puuttuvat tummina viivoina."
+          "feedback": "Kirkkaat viivat mustalla pohjalla ovat emissioviivoja eli kaasun itse lähettämää valoa, eivät sen läpi kulkenutta valoa. Kaasun läpi kulkenut hehkulampun valo antaa jatkuvan värikaistan, josta atomien absorboimat aallonpituudet puuttuvat tummina viivoina."
         },
         {
           "text": "Spektri B",

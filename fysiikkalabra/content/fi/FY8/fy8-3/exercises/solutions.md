@@ -195,7 +195,17 @@ $\dfrac{\lambda_2}{\lambda_1} = \dfrac{E_4 - E_3}{E_6 - E_3}$
 
 $\dfrac{\lambda_2}{\lambda_1} = \dfrac{0{,}6611\,\text{eV}}{1{,}1333\,\text{eV}} \approx 0{,}583$
 
-Aallonpituus pienenee noin $0{,}58$-kertaiseksi, koska ylemmältä tasolta alkava siirtymä on suurempi energiaharppaus. Tarkistus: $\lambda_1 = 1240\,\text{eV}\,\text{nm} : 0{,}6611\,\text{eV} \approx 1876\,\text{nm}$ ja $\lambda_2 = 1240\,\text{eV}\,\text{nm} : 1{,}1333\,\text{eV} \approx 1094\,\text{nm}$, ja molemmat ovat Paschenin sarjan infrapunaa. Kasvu $1{,}7$-kertaiseksi syntyisi, jos riippuvuus luettaisiin väärin päin. Kasvu $2{,}25$-kertaiseksi syntyisi, jos fotonin energiaksi otettaisiin lähtötason energian suuruus. Sama päätetaso ei tee aallonpituuksista samoja, koska fotonin energia riippuu myös lähtötasosta.
+Aallonpituus pienenee noin $0{,}58$-kertaiseksi, koska ylemmältä tasolta alkava siirtymä on suurempi energiaharppaus. Tarkistus:
+
+$\lambda_1 = 1240\,\text{eV}\,\text{nm} : 0{,}6611\,\text{eV}$
+
+$\lambda_1 \approx 1876\,\text{nm}$
+
+$\lambda_2 = 1240\,\text{eV}\,\text{nm} : 1{,}1333\,\text{eV}$
+
+$\lambda_2 \approx 1094\,\text{nm}$
+
+Molemmat ovat Paschenin sarjan infrapunaa. Kasvu $1{,}7$-kertaiseksi syntyisi, jos riippuvuus luettaisiin väärin päin. Pieneneminen noin $0{,}44$-kertaiseksi syntyisi, jos suhteeksi otettaisiin lähtötasojen energioiden suhde $0{,}38 : 0{,}85$ eikä energiaerojen suhde. Sama päätetaso ei tee aallonpituuksista samoja, koska fotonin energia riippuu myös lähtötasosta.
 
 ## fy8-3-L3-04
 **Annettu:** emissioviivat $\lambda = 1876$; $1282$ ja $1094\,\text{nm}$ ($\pm 1\,\text{nm}$), $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$, kaikki viivat päättyvät samalle tasolle, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$

@@ -279,7 +279,7 @@
       "choices": [
         {
           "text": "Aallonpituus $\\lambda'$ on lyhyempi kuin $\\lambda$.",
-          "feedback": "Lyhyempi aallonpituus tarkoittaisi energisempää fotonia. Fotoni on kuitenkin luovuttanut osan energiastaan elektronille, eikä se ole saanut energiaa mistään lisää."
+          "feedback": "Mieti, saako fotoni sironnassa energiaa lisää vai luovuttaako se sitä, ja miten fotonin energia riippuu sen aallonpituudesta."
         },
         {
           "text": "Aallonpituus $\\lambda'$ on pidempi kuin $\\lambda$.",

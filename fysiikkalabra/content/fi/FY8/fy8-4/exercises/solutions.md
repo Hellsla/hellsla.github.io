@@ -176,7 +176,9 @@
 
 $hf' = hf - E_\text{k}$
 
-$hf' = 17{,}4\,\text{keV} - 0{,}55\,\text{keV} = 16{,}85\,\text{keV}$
+$hf' = 17{,}4\,\text{keV} - 0{,}55\,\text{keV}$
+
+$hf' = 16{,}85\,\text{keV}$
 
 Koska $\lambda = \tfrac{hc}{E}$, aallonpituuksien suhde on energioiden käänteinen suhde:
 

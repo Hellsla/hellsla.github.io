@@ -75,7 +75,9 @@
 
 $E_\text{k,max} = hf - W$
 
-$E_\text{k,max} = 3{,}10\,\text{eV} - 2{,}50\,\text{eV} = 0{,}60\,\text{eV}$
+$E_\text{k,max} = 3{,}10\,\text{eV} - 2{,}50\,\text{eV}$
+
+$E_\text{k,max} = 0{,}60\,\text{eV}$
 
 Lampun B fotonin energia $2{,}25\,\text{eV}$ on pienempi kuin irrotustyö $2{,}50\,\text{eV}$.
 

@@ -1,17 +1,15 @@
-VERDICT: FAIL
-CONTENT-HASH: 28d419cc967191aa
-ROUND: 1
+VERDICT: PASS
+CONTENT-HASH: 5b627e2749906f73
+ROUND: 2
 
 ## Blocking
-- [Major] solutions.md fy8-1-L1-09 Mallivastaus — at 390 px the line $E_\text{k,max} = 3{,}10\,\text{eV} - 2{,}50\,\text{eV} = 0{,}60\,\text{eV}$ is cut off after "0,60" (the unit and the result's end are lost; measured in my 390 px capture) — the answer line of the new task is unreadable on a phone — split into two display lines (substitution, then $E_\text{k,max} = 0{,}60\,\text{eV}$).
+(none)
 
 ## Polish
-- [Minor] exercises.json fy8-1-L1-09 — the true/false feedback of the correct statements ("Tosi: …") is short and fine; statement 4 feedback could name the unit "elektronia sekunnissa" explicitly. Optional.
+- [Minor] none beyond carried-over template matters.
 
 ## Checked
-- 390 px capture of fy8-1-L1-09 with all five statements answered-view, feedback and solution open; 1280 px capture likewise (no clipping there). Page-level horizontal overflow: none. Task blocks are split into short paragraphs and read well; units and symbols in LaTeX, decimal commas correct.
-- Form check (text): the statements are all of similar length; true/false mix 2/3 not guessable by form; distractors catch the chapter's wave-model misconceptions (intensity threshold, energy accumulation, delay). Within chapter scope.
-- Text only: L3-01 and L3-02 paragraph splits (no figure or formula changed).
+Round 1 Blocking resolved. Own 390 and 1280 px renders of the new task with options, feedback and solution open (r3 captures, read as 2x tiles); every formula line now fits the card, no clipping, no page overflow (measured). fy8-1-L1-09: the E_k,max substitution and result are on separate lines, 0,60 eV fully visible; statement cards and feedback intact.
 
 ## Scores
-illustrations 5 · typography 3 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

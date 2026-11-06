@@ -245,8 +245,8 @@
           "feedback": "Sama päätetaso tekee viivoista saman sarjan jäseniä, mutta fotonin energia on lähtö- ja päätetason erotus. Ylempi lähtötaso antaa suuremman erotuksen ja siksi eri aallonpituuden."
         },
         {
-          "text": "Aallonpituus kasvaa $2{,}25$-kertaiseksi.",
-          "feedback": "Tässä fotonin energiaksi on otettu lähtötason energian suuruus $|E_\\text{y}|$, joka pienenee arvosta $0{,}85\\,\\text{eV}$ arvoon $0{,}38\\,\\text{eV}$. Fotoni kantaa kuitenkin tasojen erotuksen $E_\\text{y} - E_\\text{a}$, ei yhden tason energiaa."
+          "text": "Aallonpituus pienenee noin $0{,}44$-kertaiseksi.",
+          "feedback": "Tässä suhteeksi on otettu lähtötasojen energioiden suhde $0{,}38\\,\\text{eV} : 0{,}85\\,\\text{eV}$. Fotoni kantaa kuitenkin tasojen erotuksen $E_\\text{y} - E_\\text{a}$, ei yhden tason energiaa, ja aallonpituus on kääntäen verrannollinen tähän erotukseen."
         }
       ]
     }
