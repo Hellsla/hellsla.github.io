@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 7eb29709fe3b4f87
+CONTENT-HASH: fdddeeb5c9f1df61
 
 ## Blocking
 
 ## Polish
-- [Minor] L2-08 solution Mallivastaus — one paragraph of 121 words (limit about 120) holding the answer, three rejected choices and the same-body distinction — split before "Perustelu ”voimat kumoavat toisensa”".
-- [Minor] L2-08 answer-stage feedback for the correct choice — "yhtä suurella voimalla ... ja voimat ovat vastakkaissuuntaiset" already names equal and opposite, which is the content of the reason stage — shorten to "Oikein: voimat ovat yhtä suuret."
-- [Minor] L2-08 task — $F_{KH}$ and $F_{HK}$ get their meaning only from the sentence order ("kuorma-auto työntää henkilöautoa voimalla F_KH") — acceptable; optionally say "$F_{KH}$ (kuorma-auto → henkilöauto)".
+- [Minor] L2-08 solution Mallivastaus — paragraph still about 121 words (round 1 note) — split before "Perustelu".
+- [Minor] L2-08 correct-choice feedback names "vastakkaissuuntaiset", the reason-stage content — shorten to "Oikein: voimat ovat yhtä suuret."
 
 ## Checked
-- Rendered preview/fy4-3.html at 390 and 1280 px with feedback, hints and solution open: whole L2-08 card (task, both stages, all seven feedbacks, solution).
-- Measured: no overflow, card 330 px, widest formula 129 px; no KaTeX errors; vectors set with overline, \tfrac inline in the option. Distractors catch the chapter's warned mistakes (force grows with mass; forces cancel; only the mover pushes); the correct choice is not identifiable by length or hedging.
-- Text only: Finnish, compound words (kuorma-auto, henkilöauto, vastavoima) read and consistent.
+- Rebuilt fy4-3 at hash fdddeeb5c9f1df61 (after the vectors became \overline{F}_{\text{KH}}/_{\text{HK}}), rendered L2-08 at 390 px with answer chosen, solution open: all subscripts (task, options, answer chip, Kysytty, Periaate, Mallivastaus, vectors with overline) are upright and consistent; no KaTeX errors; page 390 px, card 330 px, no overflow.
+- Source grep: no italic _{KH}/_{HK} left in exercises.json or solutions.md.
+- Text only: Finnish unchanged, distractors unchanged and still catch the chapter's mistakes.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

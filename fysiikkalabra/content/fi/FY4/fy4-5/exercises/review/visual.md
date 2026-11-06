@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 90b024b2178f8161
+CONTENT-HASH: 177053466bf26f9c
 
 ## Blocking
 
 ## Polish
-- [Minor] fy4-5-L1-09 option figures (390 px and 1280 px renders) — the options are shown in the order C, D, A, B although the labels are letters; a reader meets "Voimakuvio C" first. Put the choices in the order A-D in the source (the correct one is C, so the answer position stays off the first slot).
-- [Minor] pick-* figures — the label N sits on the box edge at the top right corner; move it a few px right or up.
-- [Minor] fy4-5-L1-09 — the correct figure is the only one with no extra or longer arrow, so "the plain one" can be found by form; acceptable because every distractor is a real chapter mistake (F too long, F_k, v as force), but a distractor with N and G unequal would hide it better.
+- [Minor] L1-09 option order is C, D, A, B (round 1 note) — put A-D in source order.
+- [Minor] pick-* figures — label N touches the box's top right corner; move it a few px.
+- [Minor] L1-09 — the correct figure is the only one without an extra or longer arrow (round 1 note); acceptable.
 
 ## Checked
-- Captures: fy4-5-open-exercises-1280-10 and -11 (L1-09 with feedback, solution open).
-- Own 390 px renders of L1-09 with feedback for options C, D, A, B and the solution open (scratch script vr4_probe.py): no horizontal overflow (page 390, card 330), no formula over 300 px; arrows, F_mu, N, G, F_k, v readable, red forces only, v red as intended by the wrong option; alt text present in the figure source.
-- Text only: solutions.md L1-09 wording, feedback texts (the correct feedback gives the reason only after answering), figure descriptions.
+- Rebuilt fy4-5 (build.py) and rendered L1-09 at 390 px (own script vr5_r2b.py), all four option figures with option D selected, solution open: page 390 px, card 330 px, no overflow.
+- Colours measured in the SVG: A, C, B red only (#c92a2a); D (pick-nopeus) has red forces plus exactly two #1971c2 elements (velocity arrow shaft/head... arrow and label) and the rendered image shows a blue arrow and blue $\overline{v}$ beside red G, N, F, F_mu. Rule force red, velocity blue holds.
+- Option D figure description says "sininen nopeuden nuoli v"; matches the drawing.
+- Text only: D feedback (clicking the option did not reveal the feedback box in my capture before "Vastaa", so read from the built HTML): fluent, reason clear, mentions the blue arrow, no stacked phrasing; solution text for D consistent.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 4
