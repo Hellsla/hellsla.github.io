@@ -42,6 +42,11 @@ EXTRACT = r"""(id) => {
   const strip = (root) => {
     root.querySelectorAll('.ex-num,.ex-core,form,details,label.solved,.pad-open,.pad,.feedback,button,script,style,.ex-head,.zoom-btn,legend').forEach((e) => e.remove());
     root.querySelectorAll('input').forEach((e) => e.remove());
+    // lesson.js flFitMath moves the punctuation after a formula wider than the column into the formula (.kx-punct), and
+    // which formulas are too wide depends on the machine's fonts: put the mark back after the formula, so the grading
+    // view gets the same text everywhere (CI 2026-11-06: fy8-10 lost a comma there on the CI machine only).
+    root.querySelectorAll('.katex .kx-punct').forEach((m) => { const k = m.closest('.katex'), h = k.parentNode && k.parentNode.nodeName === 'SPAN' && !k.parentNode.className && k.parentNode.childNodes.length === 1 ? k.parentNode : k, n = h.nextSibling;
+      if (n && n.nodeType === 3) n.data = m.dataset.text + n.data; else h.after(m.dataset.text || ''); m.remove(); k.classList.remove('kx-wide'); });
     // KaTeX: keep only its MathML (Chrome draws MathML Core); display formulas as blocks
     root.querySelectorAll('.katex-display').forEach((d) => { const m = d.querySelector('math'); if (m) { m.setAttribute('display', 'block'); d.replaceWith(m); } });
     root.querySelectorAll('.katex').forEach((k) => { const m = k.querySelector('math'); if (m) k.replaceWith(m); });
