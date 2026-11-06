@@ -14,5 +14,7 @@ Mode: delta (new task fy7-12-L2-08 and its solution), round 1
 - Maths: KaTeX renders, numbers with upright units and thin space, \cdot, colon for division, SI units upright; no Finnish left in the new task.
 - No figures in the new task; the lesson page and other tasks are unchanged (delta).
 
+- en fy7-12: opened open-exercises-L2-1280-10 (start of fy7-12-L2-08: task text, first options, feedback) as well as parts 11 and 12; the task text reads situation then question, with units and angles rendered correctly.
+
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

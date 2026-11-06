@@ -192,7 +192,7 @@ $$\begin{aligned}
 
 Suhde on $x_2 : x_1 = 19{,}9\,\text{cm} : 13{,}0\,\text{cm} \approx 1{,}5$. Etäisyys kasvaa siis noin $1{,}5$-kertaiseksi, $13{,}0\,\text{cm}$:stä noin $19{,}9\,\text{cm}$:iin.
 
-Pienillä kulmilla $\tan\theta \approx \sin\theta$, joten $x \approx L\lambda : d$. Hilavakio pienenee kolmasosaan, ja siksi etäisyys kasvaa noin kolminkertaiseksi. Varjostimen etäisyys puolittuu, ja siksi etäisyys puolittuu. Yhteensä kerroin on $3 : 2 = 1{,}5$. Tarkka kerroin $1{,}53$ on hieman suurempi, koska uudessa kulmassa $11{,}2^\circ$ tangentti on jo selvästi suurempi kuin sini. Jos ottaisi huomioon vain hilan, saisi kolminkertaisen etäisyyden. Pelkästä varjostimen siirrosta saisi puolet pienemmän etäisyyden. Tiheämpi hila ei taivuta valoa vähemmän vaan enemmän, koska viivatiheyden kasvaessa hilavakio pienenee.
+Pienillä kulmilla $\tan\theta \approx \sin\theta$, joten $x \approx L\lambda : d$. Hilavakio pienenee kolmasosaan, ja siksi etäisyys kasvaa noin kolminkertaiseksi. Varjostin siirretään puolet lähemmäs, ja siksi etäisyys puolittuu. Yhteensä kerroin on $3 : 2 = 1{,}5$. Tarkka kerroin $1{,}53$ on hieman suurempi, koska uudessa kulmassa $11{,}2^\circ$ tangentti on jo selvästi suurempi kuin sini. Jos ottaisi huomioon vain hilan, saisi kolminkertaisen etäisyyden. Pelkästä varjostimen siirrosta saisi puolet pienemmän etäisyyden. Tiheämpi hila ei taivuta valoa vähemmän vaan enemmän, koska viivatiheyden kasvaessa hilavakio pienenee.
 
 ## fy7-13-L3-04
 **Annettu:** rakoväli $d = 0{,}250\,\text{mm}$, varjostimen etäisyys $L = 2{,}00\,\text{m}$, intensiteettitaulukko
