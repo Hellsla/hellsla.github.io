@@ -71,7 +71,7 @@ if local_courses.validate(curriculum): sys.exit("\n".join(local_courses.validate
 # only (templates/palautus.js; first FY3-1, then every FY3 chapter); the teacher's side is palautus/ (a local grading
 # page or a Sheets-bound Apps Script), never part of the site.
 SUBMISSION_LANGS = {"fi", "fi-easy", "en"}           # teacher 2026-11-06: also English
-SUBMISSION_CHAPTER = re.compile(r"^fy[1-8]-\d+$")     # teacher 2026-11-06: every course FY1-FY8 (was FY3 only)
+SUBMISSION_CHAPTER = re.compile(r"^fy[1-8]-\d+$|^fy9-[a-z]+(-[a-z]+)*$")   # teacher 2026-11-06: every course FY1-FY8 (was FY3 only) and the FY9 review lessons (units)
 
 
 def submits(lang, lesson_id):
@@ -111,7 +111,7 @@ FORMS = submission_forms()
 # Guided self-assessment (teacher 2026-11-06, from his 2018 team sheet): in Tarkista osaamisesi every task and, at the
 # end, the chapter's goals get a level a-d or x (scripts/inquiry.py sa_fieldset, templates/inquiry.js part 8); the
 # levels and their history go into the same submission file (templates/palautus.js). FY3 first, then FY1-FY8.
-SELF_ASSESS_COURSES = {"FY1", "FY2", "FY3", "FY4", "FY5", "FY6", "FY7", "FY8"}   # teacher 2026-11-06: every chapter with the download button
+SELF_ASSESS_COURSES = {"FY1", "FY2", "FY3", "FY4", "FY5", "FY6", "FY7", "FY8", "FY9"}   # teacher 2026-11-06: every chapter with the download button, then the review course FY9
 
 
 def self_assesses(lang, meta):
@@ -705,7 +705,8 @@ def build_units(lang, out, unit_pub):
         if units.has_tasks(uid, lang):
             tasks_html, _ = practice.render(units.task_key(uid), lang, md, solution_html, T("practice.title"), embedded=True, prefix=units.number(uid))
         body, toc = inquiry.render(f, inq, {"intro": intro, "sections": sections, "sim": sim, "exercises": tasks_html, "exit": exit_html,
-                                            "concepts": inquiry.key_concepts_html(uid, d.get("key_concepts"), md)}, md)   # Selkeä suomi only (NOTES.md §12)
+                                            "concepts": inquiry.key_concepts_html(uid, d.get("key_concepts"), md),
+                                            "selfassess": self_assesses(lang, {"course": code, "id": uid})}, md)   # Selkeä suomi only (NOTES.md §12)
         if not tasks_html:
             for key in ("check_practice", "further_practice"):   # a unit without tasks has no exercises section: point to the theory summary only
                 body = body.replace(T(f"inquiry.{key}"), re.sub(r'(,| and)[^<]*<a href="#exercises">[^<]*</a>', "", T(f"inquiry.{key}")))
@@ -729,7 +730,8 @@ def build_units(lang, out, unit_pub):
                 .replace("{{strings}}", block + head).replace("{{back_to_course}}", esc(T("site.back_to_course", course=code)))
                 .replace("{{toc}}", toc).replace("{{main}}", f'<article id="teoria" class="inquiry unit unit-{d["kind"]}" data-course="{code.lower()}">{body}{tail}</article>' + units.course_nav(uid, lang, T, published) + embedded)
                 .replace("{{scripts}}", f'<script src="inquiry.js"></script>' + ('<script src="selfassess.js"></script>' if tasks_html else "")
-                         + (f'<script src="units/{code.lower()}/units.js"></script>' if cdir.is_dir() else ""))
+                         + (f'<script src="units/{code.lower()}/units.js"></script>' if cdir.is_dir() else "")
+                         + (submission_script(lang, uid) if tasks_html else ""))
                 .replace("{{description}}", esc(d["description"])).replace("{{url}}", URL + f"{uid}.html")
                 .replace("{{languages}}", languages_nav(f"{uid}.html") if len(unit_pub[uid]) > 1 else ""))   # a unit in one language has none
         (out / f"{uid}.html").write_text(rebase(html))
