@@ -252,6 +252,53 @@
       "unit": "m/s²",
       "tolerance": 0.02,
       "fbd": "equations"
+    },
+    {
+      "id": "fy4-13-L2-08",
+      "level": 2,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "On a frictionless table there is a trolley of mass $1.6\\,\\text{kg}$. A light, inextensible string tied to it passes over a light, frictionless pulley at the edge of the table, and a weight of mass $0.40\\,\\text{kg}$ hangs from the end of the string. The objects are released from rest, and air resistance is neglected.\n\nThen the experiment is done the other way round: on the table there is a $0.40\\,\\text{kg}$ trolley and from the end of the string hangs a $1.6\\,\\text{kg}$ weight. How does the tension $T$ in the string change when the second experiment is compared with the first?",
+      "answer": "The tension stays the same.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The tension becomes four times as large.",
+          "feedback": "Here the tension has been assumed to depend on the weight of the hanging mass, which becomes four times as large. When the objects accelerate, the net force on the weight points down, so $T$ is smaller than the weight of the weight."
+        },
+        {
+          "text": "The tension stays the same.",
+          "correct": true,
+          "feedback": "Correct: when the tension is calculated from the equations of motion in both experiments, the result is the same, $T \\approx 3.1\\,\\text{N}$. Next choose the reason that explains why swapping the masses does not change it."
+        },
+        {
+          "text": "The tension becomes a quarter.",
+          "feedback": "Here the acceleration has been assumed to be the same, because the total mass does not change, and $T = m_1 a$ has been reduced along with the mass of the trolley. The acceleration, however, becomes four times as large, because the weight of the hanging mass becomes four times as large."
+        }
+      ],
+      "reason_prompt": "Which reason explains your answer?",
+      "reasons": [
+        {
+          "text": "The string supports the hanging weight, so the tension is the weight of the weight, $T = m_2 g$.",
+          "feedback": "This is a common misconception in the chapter. Only at rest is $T = m_2 g$. When the weight goes down accelerating, $m_2 g - T = m_2 a$ is positive, so $T < m_2 g$ in both experiments."
+        },
+        {
+          "text": "The total mass does not change, so the acceleration does not change, and $T = m_1 a$ follows the mass of the trolley.",
+          "feedback": "The total mass is the same, but the system is accelerated by the weight $m_2 g$ of the hanging mass, and it becomes four times as large. So $a$ becomes four times as large while $m_1$ becomes a quarter."
+        },
+        {
+          "text": "In the formula $T = \\tfrac{m_1 m_2}{m_1 + m_2}\\,g$ the product and the sum of the masses stay the same when they are swapped.",
+          "correct": true,
+          "feedback": "Correct: the product $m_1 m_2 = 0.64\\,\\text{kg}^2$ and the sum $m_1 + m_2 = 2.0\\,\\text{kg}$ are the same in both experiments."
+        },
+        {
+          "text": "The string is inextensible, so the trolley and the weight have the same magnitude of acceleration $a$.",
+          "feedback": "The statement is true, but it does not explain the answer. The same acceleration holds in both experiments, and it does not tell how $T$ changes when the masses are swapped."
+        }
+      ]
     }
   ],
   "level3": [

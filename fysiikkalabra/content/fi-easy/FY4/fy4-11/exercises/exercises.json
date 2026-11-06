@@ -238,6 +238,41 @@
       "answer": 38.9,
       "unit": "m",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-11-L2-08",
+      "level": 2,
+      "kind": [
+        "reasoning",
+        "concept"
+      ],
+      "text": "Törmäyskokeissa käytetään samaa vyöhön kiinnitettyä koehenkilönukkea (esimerkkiarvot).\n\nKoe A: vanha auto törmää jäykkään esteeseen nopeudella $25\\,\\text{km/h}$. Nukke pysähtyy ajassa $0{,}030\\,\\text{s}$.\n\nKoe B: uusi auto törmää samaan esteeseen nopeudella $50\\,\\text{km/h}$. Autossa on rypistyvä keula eli keula, joka painuu kasaan, ja turvatyyny. Nukke pysähtyy ajassa $0{,}12\\,\\text{s}$.\n\nMiten nukkeen kohdistuva keskimääräinen voima $F_\\text{ka}$ muuttuu kokeesta A kokeeseen B?",
+      "answer": "Voima pienenee puoleen.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Voima kasvaa kahdeksankertaiseksi.",
+          "feedback": "Tässä voima on kerrottu aikojen suhteella sen sijaan, että se olisi jaettu sillä. Ajatuksena on ollut, että pidempi pysähtymisaika kasvattaisi voimaa. Impulssiperiaatteesta saadaan $F_\\text{ka} = \\tfrac{m\\,\\Delta v}{\\Delta t}$, joten voima on kääntäen verrannollinen aikaan. Kun aika kasvaa, voima pienenee."
+        },
+        {
+          "text": "Voima kasvaa kaksinkertaiseksi.",
+          "feedback": "Tässä on otettu huomioon vain nopeuden kaksinkertaistuminen. Nuken liikemäärän muutos kaksinkertaistuu, mutta se jakautuu nelinkertaiseen aikaan. Siksi voima ei kasva."
+        },
+        {
+          "text": "Voima pysyy samana.",
+          "feedback": "Tämä tulos syntyy, kun ajatellaan voiman riippuvan nopeuden neliöstä kuten jarrutusmatka: $2^2 : 4 = 1$. Keskimääräinen voima on liikemäärän muutos jaettuna ajalla. Liikemäärä on verrannollinen nopeuteen eikä sen neliöön."
+        },
+        {
+          "text": "Voima pienenee puoleen.",
+          "correct": true,
+          "feedback": "Oikein: liikemäärän muutos $m\\,\\Delta v$ kaksinkertaistuu ja pysähtymisaika nelinkertaistuu, joten voima muuttuu kertoimella $2 : 4 = 0{,}50$."
+        },
+        {
+          "text": "Voima pienenee neljäsosaan.",
+          "feedback": "Tässä on otettu huomioon vain ajan nelinkertaistuminen, ikään kuin liikemäärän muutos olisi molemmissa kokeissa sama. Nukke pysähtyy kuitenkin kaksinkertaisesta nopeudesta, joten sen liikemäärän muutos on kaksinkertainen."
+        }
+      ]
     }
   ],
   "level3": [

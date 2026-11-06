@@ -262,3 +262,20 @@ v ylös
 **Substitution:** $v_{\max} = 1.0\,\text{m/s}^2 \cdot 3.0\,\text{s} = 3.0\,\text{m/s}$ and $a_3 = \dfrac{0 - 3.0\,\text{m/s}}{4.0\,\text{s}} = -0.75\,\text{m/s}^2$. The normal force is $N = 70\,\text{kg}\cdot(9.81\,\text{m/s}^2 - 0.75\,\text{m/s}^2) = 70\,\text{kg}\cdot 9.06\,\text{m/s}^2 = 634.2\,\text{N}$
 **Answer:** $630\,\text{N}$ ($634\,\text{N}$ before rounding), two significant figures like the mass $70\,\text{kg}$ and the acceleration. The greatest velocity is $3.0\,\text{m/s}$ and the acceleration in phase 3 is $0.75\,\text{m/s}^2$ downward. The normal force is smaller than the weight $mg = 686.7\,\text{N}$, because the net force and the acceleration point down.
 **Reasonableness:** The elevator stops: $3.0\,\text{m/s} - 0.75\,\text{m/s}^2 \cdot 4.0\,\text{s} = 0$. The difference between the weight and the normal force is $686.7\,\text{N} - 634.2\,\text{N} = 52.5\,\text{N} = 70\,\text{kg}\cdot 0.75\,\text{m/s}^2$, so the forces agree with the equation of motion. In phase 1 the normal force would correspondingly be greater than the weight, $70\,\text{kg}\cdot 10.81\,\text{m/s}^2 = 756.7\,\text{N}$, and in the steady phase 2 equal to the weight.
+
+## fy4-4-L2-08
+**Find:** whether there is an error in the student's calculation and on which line, when the acceleration $a$ of a horizontally pushed shopping trolley is calculated.
+**Principle:** By Newton's second law $\Sigma F = ma$, so the acceleration is the net force divided by the mass. First the positive direction is chosen and the net force is written with its signs: the pushing force in the direction of motion and the friction force against it. On a horizontal floor the weight and the normal force cancel each other, so the weight does not oppose the motion; the acceleration is reduced by the mass. The calculation can be checked line by line: the expression for the net force, its value, the weight and the acceleration.
+**Model answer:** Line 1: $\Sigma F = F - F_\mu$ is correct, because friction points against the pushing force.
+
+Line 2: $45\,\text{N} - 9.0\,\text{N} = 36\,\text{N}$ is correct.
+
+Line 3: $G = 18\,\text{kg} \cdot 9.81\,\text{m/s}^2$, that is $G = 176.58\,\text{N} \approx 177\,\text{N}$, is calculated correctly, although the weight is not needed.
+
+Line 4 is wrong, because the net force is divided by the weight instead of the mass. The correct calculation:
+
+$a = \dfrac{\Sigma F}{m}$
+
+$a = \dfrac{36\,\text{N}}{18\,\text{kg}}$, that is $a = 2.0\,\text{m/s}^2$
+
+The acceleration is $2.0\,\text{m/s}^2$ in the direction of the pushing force, two significant figures like the forces and the mass. Check with units: $\text{N} : \text{kg} = \text{kg}\cdot\text{m/s}^2 : \text{kg}$, that is $\text{m/s}^2$, but the division $\text{N} : \text{N}$ on line 4 does not give the unit of acceleration at all. The correct answer is line 4.

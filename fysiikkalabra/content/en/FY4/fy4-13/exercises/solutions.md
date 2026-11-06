@@ -397,3 +397,26 @@ The sum of the masses is $3.634\,\text{kg}$, so $m_{1,\text{mean}} = \dfrac{3.63
 c) When $m_2 = 0.200\,\text{kg}$, $v = \dfrac{2 \cdot 0.80\,\text{m}}{0.96\,\text{s}} = 1.67\,\text{m/s}$.
 **Answer:** b) $0.91\,\text{kg}$, two significant figures, because the four values vary between $0.88$ and $0.93\,\text{kg}$ and the third figure is not reliable. c) When the hanging mass hits the floor, the string slackens and no horizontal force acts on the cart any more. By the first law the cart keeps moving at a constant speed, about $1.7\,\text{m/s}$, until some other force acts on it.
 **Reasonableness:** The four masses are $0.88$–$0.93\,\text{kg}$, so they deviate from the mean by at most $4\,\%$, and the difference is random variation, not systematic. Check: $a = \dfrac{m_2 g}{m_1 + m_2} = \dfrac{0.200 \cdot 9.81}{1.109}\,\text{m/s}^2 = 1.77\,\text{m/s}^2$ is close to the measured $1.74\,\text{m/s}^2$. The final speed $1.67\,\text{m/s}$ is twice the average speed $s : t = 0.83\,\text{m/s}$, as it should be in uniformly accelerated motion.
+
+## fy4-13-L2-08
+**Find:** how the tension $T$ in the string changes when the masses of the trolley and the weight are swapped, and which reason explains it.
+**Principle:** An equation of motion is written for each object: for the trolley $T = m_1 a$ and for the weight $m_2 g - T = m_2 a$. A light, inextensible string and a light, frictionless pulley give the objects the same magnitude of acceleration $a$ and the same tension $T$. From the equations $a = \tfrac{m_2}{m_1 + m_2}\,g$ and $T = \tfrac{m_1 m_2}{m_1 + m_2}\,g$.
+**Model answer:** In the first experiment $m_1 = 1.6\,\text{kg}$ and $m_2 = 0.40\,\text{kg}$:
+
+$$\begin{aligned}
+&a = \frac{0.40\,\text{kg} \cdot 9.81\,\text{m/s}^2}{2.0\,\text{kg}} \\
+&\phantom{a} = 1.962\,\text{m/s}^2 \\
+&T = 1.6\,\text{kg} \cdot 1.962\,\text{m/s}^2 \\
+&\phantom{T} \approx 3.14\,\text{N}
+\end{aligned}$$
+
+In the second experiment $m_1 = 0.40\,\text{kg}$ and $m_2 = 1.6\,\text{kg}$:
+
+$$\begin{aligned}
+&a = \frac{1.6\,\text{kg} \cdot 9.81\,\text{m/s}^2}{2.0\,\text{kg}} \\
+&\phantom{a} = 7.848\,\text{m/s}^2 \\
+&T = 0.40\,\text{kg} \cdot 7.848\,\text{m/s}^2 \\
+&\phantom{T} \approx 3.14\,\text{N}
+\end{aligned}$$
+
+So the tension stays the same, about $3.1\,\text{N}$. Reason: in the formula $T = \tfrac{m_1 m_2}{m_1 + m_2}\,g$ the product and the sum of the masses do not change when the masses swap places. The acceleration becomes four times as large, because the weight of the hanging mass, which accelerates the system, becomes four times as large, so $T = m_1 a$ does not decrease although the mass of the trolley becomes a quarter. In both experiments $T$ is smaller than the weight of the hanging mass ($3.9\,\text{N}$ and $15.7\,\text{N}$), as it must be for an accelerating weight.
