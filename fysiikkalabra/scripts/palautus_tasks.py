@@ -53,11 +53,14 @@ EXTRACT = r"""(id) => {
   };
   const lis = [...page.querySelectorAll('#exercises li[id]')].filter((li) => li.querySelector(':scope > .task'));
   return lis.map((li) => {
-    const c = li.cloneNode(true);
     const answer = li.querySelector(':scope > details.answer > :not(summary)');
     const ans = answer ? answer.cloneNode(true) : null;
     // figures become pictures (filled in by the caller from element screenshots)
-    c.querySelectorAll('.fig, figure').forEach((f, i) => { const img = document.createElement('img'); const lab = f.querySelector('[aria-label]'); img.setAttribute('alt', lab ? lab.getAttribute('aria-label') : ''); img.setAttribute('src', 'FIG:' + i); img.className = 'fig'; f.replaceWith(img); });
+    // every figure of the task (also inside a choice), outermost only, numbered on the page so the caller shoots the same one
+    li.querySelectorAll('.fig, figure').forEach((f) => f.removeAttribute('data-rl-fig'));
+    [...li.querySelectorAll('.fig, figure')].filter((f) => !f.parentElement.closest('.fig, figure')).forEach((f, i) => f.setAttribute('data-rl-fig', String(i)));
+    const c = li.cloneNode(true);
+    c.querySelectorAll('[data-rl-fig]').forEach((f) => { const i = f.getAttribute('data-rl-fig'); const img = document.createElement('img'); const lab = f.querySelector('[aria-label]'); img.setAttribute('alt', lab ? lab.getAttribute('aria-label') : ''); img.setAttribute('src', 'FIG:' + i); img.className = 'fig'; f.replaceWith(img); });
     strip(c); if (ans) strip(ans);
     return { id: li.id, number: li.dataset.num || '', level: Number((li.closest('details.level') ? [...document.querySelectorAll('#exercises details.level')].indexOf(li.closest('details.level')) : -1) + 1),
              html: c.innerHTML.replace(/\s+/g, ' ').trim(), answer: ans ? ans.innerHTML.replace(/\s+/g, ' ').trim() : '' };
@@ -79,17 +82,21 @@ def collect(course):
         pg = b.new_page(viewport={"width": 900, "height": 1000}, device_scale_factor=2)
         for pid in pages(course):
             pg.goto(f"http://127.0.0.1:{srv.server_port}/{pid}.html")
-            pg.evaluate("document.querySelectorAll('#exercises details.level, #exercises details.answer').forEach((d) => { d.open = true; })")
-            pg.wait_for_function("document.querySelectorAll('#exercises .katex').length > 0")
-            pg.wait_for_timeout(400)
-            pg.evaluate("window.flMath && window.flMath(document.getElementById('exercises'))")
-            pg.wait_for_timeout(300)
+            pg.wait_for_function("typeof window.renderMathInElement === 'function' && typeof window.flMath === 'function'")
+            # Every box open and typeset before reading (lesson.html flMath typesets a closed box only on its toggle event,
+            # which fires later; on a slow CI machine the old fixed waits read some boxes as raw LaTeX, 2026-11-06).
+            pg.evaluate("""() => document.querySelectorAll('#exercises details').forEach((d) => {
+              if (d.closest('.level, .answer') || d.matches('.level, .answer')) { d.open = true; if (d.flMathOpen) d.flMathOpen(); } })""")
+            pg.wait_for_function("""() => ![...document.querySelectorAll('#exercises details.level, #exercises details.answer')].some((d) => !d.open || d.dataset.flMath === 'wait' || d.classList.contains('fl-math-later'))""")
+            pg.evaluate("document.fonts ? document.fonts.ready.then(() => true) : true")
+            pg.wait_for_timeout(200)
             tasks = pg.evaluate(EXTRACT)
             for t in tasks:
-                figs = pg.locator(f'[id="{t["id"]}"] > .fig, [id="{t["id"]}"] > figure')
-                for i in range(figs.count()):
-                    png = base64.b64encode(figs.nth(i).screenshot(type="png")).decode()
+                figs = pg.locator(f'[id="{t["id"]}"] [data-rl-fig]')
+                for i in range(figs.count()):   # each figure of the task, choices too (before 2026-11-06 only the task's own)
+                    png = base64.b64encode(pg.locator(f'[id="{t["id"]}"] [data-rl-fig="{i}"]').screenshot(type="png", animations="disabled")).decode()
                     t["html"] = t["html"].replace(f'src="FIG:{i}"', f'src="data:image/png;base64,{png}"')
+                if "FIG:" in t["html"]: sys.exit(f"{pid} {t['id']}: a figure was not drawn for the grading view")
             title = pg.evaluate("(() => { const h = document.querySelector('main h1').cloneNode(true); h.querySelectorAll('.katex').forEach((k) => { const a = k.querySelector('annotation'); k.replaceWith(a ? a.textContent : k.textContent); }); return h.textContent; })()").strip()
             eyebrow = pg.evaluate("(() => { const e = document.querySelector('.ch-no'); return e ? e.textContent : ''; })()")
             m = re.search(r"Luku\s+(\d+)", eyebrow)
@@ -127,6 +134,12 @@ def local_page(tasks_gs, course):
             + page.replace("<head>", "<head>" + head, 1))
 
 
+def explain(old, new, path):
+    """Where a stale file differs (CI shows it in the log, so a difference is never a guess)."""
+    i = next((k for k, (x, y) in enumerate(zip(old, new)) if x != y), min(len(old), len(new)))
+    print(f"DIFF {path.relative_to(ROOT)} at character {i} (lengths {len(old)}, {len(new)}):\n  committed: {old[max(0, i - 200):i + 200]!r}\n  built:     {new[max(0, i - 200):i + 200]!r}")
+
+
 if __name__ == "__main__":
     strip = lambda s: re.sub(r"data:image/png;base64,[A-Za-z0-9+/=]+", "PNG", s)   # screenshots differ by a pixel between machines
     bad = []
@@ -135,13 +148,15 @@ if __name__ == "__main__":
         local = LOCAL(code)
         if code == GAS_COURSE:
             if check:
-                if strip(OUT.read_text() if OUT.is_file() else "") != strip(text): bad.append(OUT)
+                if strip(OUT.read_text() if OUT.is_file() else "") != strip(text):
+                    bad.append(OUT); explain(strip(OUT.read_text() if OUT.is_file() else ""), strip(text), OUT)
                 else: print(f"ok   {OUT.relative_to(ROOT)} is up to date")
             else:
                 OUT.parent.mkdir(parents=True, exist_ok=True); OUT.write_text(text)
                 print("wrote", OUT.relative_to(ROOT), f"({len(text) // 1024} kB)")
         if check:
-            if not local.is_file() or strip(local.read_text()) != strip(local_page(text, code)): bad.append(local)
+            if not local.is_file() or strip(local.read_text()) != strip(local_page(text, code)):
+                bad.append(local); explain(strip(local.read_text()) if local.is_file() else "", strip(local_page(text, code)), local)
             else: print(f"ok   {local.relative_to(ROOT)} is up to date")
         else:
             local.write_text(local_page(text, code))
