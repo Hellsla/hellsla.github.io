@@ -72,8 +72,9 @@ BASE = f"http://127.0.0.1:{srv.server_port}/"
 # static: the script is on the FY3 chapter pages only
 pages_with = sorted(p.relative_to(SITE).as_posix() for p in SITE.rglob("*.html") if "palautus.js" in p.read_text(errors="ignore"))
 chapters = sorted(p.name for p in SITE.glob("fy*-*.html") if re.fullmatch(r"fy[1-8]-\d+\.html", p.name))
-want = sorted(f"{d}{n}" for d in ("", "en/", "fi-easy/") for n in chapters if (SITE / d / n).is_file())   # teacher 2026-11-06: also English (and Selkeä suomi), every course FY1-FY8
-expect("palautus.js is loaded on every FY1-FY8 chapter page (fi, en, fi-easy) and nowhere else", len([c for c in chapters if c.startswith("fy3-")]) >= 16 and {c.split("-")[0] for c in chapters} == {f"fy{i}" for i in range(1, 9)} and pages_with == want, sorted(set(pages_with) ^ set(want)))
+reviews = sorted(p.name for p in SITE.glob("fy9-*.html"))   # the FY9 review lessons (teacher 2026-11-06, self-assessment of the review course)
+want = sorted(f"{d}{n}" for d in ("", "en/", "fi-easy/") for n in chapters + reviews if (SITE / d / n).is_file())   # teacher 2026-11-06: also English (and Selkeä suomi), every course FY1-FY8 and FY9
+expect("palautus.js is loaded on every FY1-FY8 chapter and FY9 lesson page (fi, en, fi-easy) and nowhere else", len([c for c in chapters if c.startswith("fy3-")]) >= 16 and {c.split("-")[0] for c in chapters} == {f"fy{i}" for i in range(1, 9)} and len(reviews) >= 16 and pages_with == want, sorted(set(pages_with) ^ set(want)))
 
 OPEN = "document.querySelectorAll('#exercises details.level').forEach((d) => { d.open = true; })"
 
@@ -241,6 +242,21 @@ with sync_playwright() as p:
         if SHOTS:
             pg.evaluate("document.querySelector('#exercises .palautus').scrollIntoView()"); pg.wait_for_timeout(200); shot(pg, f"opiskelija-{w}")
     expect("no script errors on the page", not errors, errors)
+
+    # FY9 review lesson (teacher 2026-11-06): its long review tasks (div.practice-task) are in the file, and so is the self-assessment
+    pg.goto(BASE + "fy9-energia.html")
+    rv = pg.evaluate("[...document.querySelectorAll('#exercises div.practice-task[id]')].filter((t) => t.querySelector('.pad-open')).map((t) => t.id)")
+    sa9 = pg.evaluate("[...document.querySelectorAll('#tarkista fieldset.sa-rate')].map((f) => f.dataset.sa)")
+    expect("FY9: a self-assessment under every Tarkista task and three closing statements", len(sa9) >= 7 and sa9[-3:] == ["tavoite-1", "tavoite-2", "tavoite-3"], sa9)
+    pg.click('fieldset[data-sa="tavoite-2"] .sa-opt[data-level="a"]')
+    open_pad(pg, rv[0])
+    pg.locator(f'[id="{rv[0]}"] .rich-text-editor').click(); pg.keyboard.type("Kertausratkaisu")
+    name9, f9 = download(pg)
+    a9 = {a["task"]: a for a in f9.get("answers", [])}
+    expect("FY9: fy9-energia.ratkaisut.json has every review task with an editor, the written one answered, and the self-assessment",
+           name9 == "fy9-energia.ratkaisut.json" and f9.get("version") == 2 and list(a9) == rv and a9[rv[0]]["status"] == "answered"
+           and "Kertausratkaisu" in json.dumps(a9[rv[0]]["content"], ensure_ascii=False) and [i["id"] for i in f9["selfassessment"]["items"]] == ["tavoite-2"], (name9, list(a9), rv))
+    expect("no script errors on the FY9 page", not errors, errors)
     ctx.close()
 
     # ---------------- teacher side ----------------
