@@ -244,7 +244,7 @@
     {
       "id": "fy5-4-L2-08",
       "level": 2,
-      "text": "A roller coaster car goes through the topmost point of a vertical, circular loop. The car is then upside down below the track, and the track presses the car. At the topmost point the normal acceleration of the car is $a_\\text{n} = 1.5\\,g$, where $g$ is the acceleration of free fall. Air resistance and friction are neglected.\n\nIn the diagrams $\\overline{G}$ is the weight of the car and $\\overline{N}$ the support force of the track. The arrow $\\overline{F}_\\text{kp}$ is a force named the centrifugal force, and $\\overline{v}$ is the velocity of the car. All the diagrams are drawn to the same scale.\n\nWhich free-body diagram shows correctly the forces acting on the car at the topmost point of the loop?",
+      "text": "A roller coaster car goes through the topmost point of a vertical, circular loop. The car is then upside down below the track, and the track presses the car. At the topmost point the normal acceleration of the car is $a_\\text{n} = 1.5\\,g$, where $g$ is the acceleration of free fall. Air resistance and friction are neglected.\n\nIn the diagrams $\\overline{G}$ is the weight of the car and $\\overline{N}$ the support force of the track. The arrow $\\overline{F}_\\text{cf}$ is a force named the centrifugal force, and $\\overline{v}$ is the velocity of the car. All the diagrams are drawn to the same scale.\n\nWhich free-body diagram shows correctly the forces acting on the car at the topmost point of the loop?",
       "kind": [
         "concept",
         "reasoning"

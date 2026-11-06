@@ -235,7 +235,7 @@ $G + N = m \cdot 1.5\,g$
 
 $N = 1.5\,mg - mg$, that is, $N = 0.5\,mg$
 
-The support force points down and is half of the weight, as in diagram C. In diagram A the support force has been drawn upwards like that of a floor; then the net force would be $G - N = 0.5\,G$ and not $1.5\,G$. In diagram B the upward centrifugal force $\overline{F}_\text{kp}$ cancels the net force although the car accelerates, and no object acts with such a force. In diagram D the velocity has been drawn as a force, although no force acts on the car in the direction of motion.
+The support force points down and is half of the weight, as in diagram C. In diagram A the support force has been drawn upwards like that of a floor; then the net force would be $G - N = 0.5\,G$ and not $1.5\,G$. In diagram B the upward centrifugal force $\overline{F}_\text{cf}$ cancels the net force although the car accelerates, and no object acts with such a force. In diagram D the velocity has been drawn as a force, although no force acts on the car in the direction of motion.
 
 ## fy5-4-L3-04
 **Given:** $m = 60.0\,\text{kg}$; at the bottom $v_1 = 27.2\,\text{m/s}$ and $a_1 = 53.2\,\text{m/s}^2$; at the top $v_2 = 14.0\,\text{m/s}$ and $a_2 = 14.1\,\text{m/s}^2$; $g = 9.81\,\text{m/s}^2$; sample data; air resistance and rolling resistance are neglected
