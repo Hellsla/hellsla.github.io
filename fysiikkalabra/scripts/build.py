@@ -87,6 +87,9 @@ FORMS_PAGE = "palautukset.html"
 FORM_URL = re.compile(r"^https://(forms\.gle/[A-Za-z0-9]{6,40}|docs\.google\.com/forms/d/e/[A-Za-z0-9_-]{20,120}/viewform(\?usp=[a-z_]{1,20})?)$")
 
 
+RETURN_CODES = courses.codes() + ["FY9"]   # the Palautukset page's courses: FY1-FY8 and the review course FY9 (teacher 2026-11-06)
+
+
 def submission_forms():
     if not FORMS_FILE.is_file(): return None
     d = json.loads(FORMS_FILE.read_text())
@@ -99,7 +102,7 @@ def submission_forms():
     for f in forms:
         if not isinstance(f, dict) or not isinstance(f.get("group"), str) or not re.fullmatch(r"[0-9A-Za-zÅÄÖåäö .-]{1,40}", f["group"]): bad(f"bad group in {f!r}")
         if not isinstance(f.get("url"), str) or not FORM_URL.match(f["url"]): bad(f"{f.get('group')}: the url must be a Google Forms responder link (https://forms.gle/...)")
-        if f["group"].split(".")[0] not in courses.codes(): bad(f"{f['group']}: the group must start with a course code and a dot, e.g. FY3.2")
+        if f["group"].split(".")[0] not in RETURN_CODES: bad(f"{f['group']}: the group must start with a course code and a dot, e.g. FY3.2")
         if f["group"] in seen: bad(f"{f['group']} twice")
         seen.add(f["group"])
     return d if forms else None
@@ -127,16 +130,22 @@ def submission_script(lang, lesson_id):
 def forms_title(): return T("site.returns_title", period=FORMS["period"], year=FORMS["year"])
 
 
+def return_title(code):
+    """A course's name in this language on the Palautukset page: a curriculum course, or the local review course FY9."""
+    if code in courses.codes(): return COURSES.get(code, {}).get("title") or courses.course(code)["title"]
+    return ((local_courses.load(T.lang).get(code) or {}).get("title")) or local_courses.load()[code]["title"]
+
+
 def forms_page_body():
     """One section per course in curriculum order: the groups' form buttons, or a grey placeholder when the course has
     no forms this period (teacher 2026-11-06: one page for every course, updated when the period changes)."""
     natural = lambda g: [int(t) if t.isdigit() else t for t in re.split(r"(\d+)", g)]
     out = []
-    for code in courses.codes():
+    for code in RETURN_CODES:
         fs = sorted((f for f in FORMS["forms"] if f["group"].split(".")[0] == code), key=lambda f: natural(f["group"]))
         links = ("".join(f'<a class="return-form" href="{esc(f["url"])}">{esc(f["group"])}</a>' for f in fs)
                  or f'<span class="return-none">{esc(T("site.returns_none"))}</span>')
-        out.append(f'<section class="return-course{'' if fs else ' is-empty'}"><h2>{esc(code)} {esc(COURSES.get(code, {}).get("title") or courses.course(code)["title"])}</h2>'
+        out.append(f'<section class="return-course{'' if fs else ' is-empty'}"><h2>{esc(code)} {esc(return_title(code))}</h2>'
                    f'<nav class="return-forms" aria-label="{esc(T("site.returns_aria", code=code))}">{links}</nav></section>')
     return (f'<h1>{esc(forms_title())}</h1>'
             f'<p class="lead">{esc(T("site.returns_lead"))}</p>'
