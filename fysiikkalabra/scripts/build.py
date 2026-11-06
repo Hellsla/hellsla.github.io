@@ -737,7 +737,7 @@ def build_units(lang, out, unit_pub):
         notice_html = "" if st["state"] == "reviewed" else f'<p class="notice" role="note">{T("units.notice_draft")}</p>'
         html = (texts(tpl).replace("{{title}}", esc(d["title"])).replace("{{course}}", code).replace("{{notice}}", notice_html)
                 .replace("{{strings}}", block + head).replace("{{back_to_course}}", esc(T("site.back_to_course", course=code)))
-                .replace("{{toc}}", toc).replace("{{main}}", f'<article id="teoria" class="inquiry unit unit-{d["kind"]}" data-course="{code.lower()}">{body}{tail}</article>' + units.course_nav(uid, lang, T, published) + embedded)
+                .replace("{{toc}}", toc).replace("{{main}}", f'<article id="teoria" class="inquiry unit unit-{d["kind"]}" data-course="{code.lower()}">{body}{units.course_nav(uid, lang, T, published)}{tail}</article>' + embedded)   # Previous / Next before the credits (teacher 2026-11-06)
                 .replace("{{scripts}}", f'<script src="inquiry.js"></script>' + ('<script src="selfassess.js"></script>' if tasks_html else "")
                          + (f'<script src="units/{code.lower()}/units.js"></script>' if cdir.is_dir() else "")
                          + (submission_script(lang, uid) if tasks_html else ""))
@@ -834,7 +834,7 @@ def build_language(lang):
                    + f'<a href="#exit">{inquiry.exit_title()}</a>' + (concept_cards.lesson_nav(T) if kc_section else "") + f'<a href="#exercises">{inquiry.exercises_title()}</a>')
             main = (f'<article id="teoria">{lesson_html}</article>\n'
                     f'<section id="exit"><h2>{inquiry.exit_title()}</h2>{exit_items}</section>\n' + kc_section +
-                    f'<section id="exercises"><h2>{inquiry.exercises_title()}</h2>{ex_html}</section>{photo_tail}')
+                    f'<section id="exercises"><h2>{inquiry.exercises_title()}</h2>{ex_html}</section><!--fl-chapter-nav:{meta["id"]}-->{photo_tail}')
         else:                                             # inquiry layout: the same parts placed by inquiry.json (scripts/inquiry.py)
             lesson_html = lesson_raw.replace("<!-- sim -->", "")
             pieces = re.split(r"(?=<h2[ >])", lesson_html)
@@ -855,13 +855,13 @@ def build_language(lang):
             if kc_section:   # bold terms of Teoriatiivistelmä that name a card open it (never before that stage)
                 body = re.sub(r'<section class="stage" id="selita".*?</section>', lambda m: concept_cards.mark_terms(m.group(0), meta["course"], lang), body, count=1, flags=re.S)
             body, photo_tail = photos(body)               # a photograph may also open a task (FY4 2026-11-03: Pohdinta)
-            main = f'<article id="teoria" class="inquiry">{body}{photo_tail}</article>'
+            main = f'<article id="teoria" class="inquiry">{body}<!--fl-chapter-nav:{meta["id"]}-->{photo_tail}</article>'   # Edellinen / Seuraava luku before the photo credits (teacher 2026-11-06)
         main = chapter_eyebrow(main, meta["course"], ch_no)
         skey = (meta["id"] if where[0] == "lesson" else where[1].name) if where else None   # the sim's block of lang "sims"
         html = (texts(tpl).replace("<title>{{title}}", "<title>" + esc(plain_tex(meta["title"]))).replace('og:title" content="{{title}}', 'og:title" content="' + esc(plain_tex(meta["title"])))
                 .replace("{{title}}", esc(meta["title"])).replace("{{course}}", meta["course"]).replace("{{notice}}", notice(meta["state"]))
                 .replace("{{strings}}", strings_block(skey)).replace("{{back_to_course}}", esc(T("site.back_to_course", course=meta["course"])))
-                .replace("{{toc}}", toc).replace("{{main}}", main + f"<!--fl-chapter-nav:{meta['id']}-->")
+                .replace("{{toc}}", toc).replace("{{main}}", main)
                 .replace("{{scripts}}", ('<script src="inquiry.js"></script>' if inq else "") + submission_script(lang, meta["id"]))
                 .replace("{{description}}", esc(description_of(meta, lesson_md))).replace("{{url}}", URL + name)
                 .replace("{{languages}}", languages_nav(name)))
