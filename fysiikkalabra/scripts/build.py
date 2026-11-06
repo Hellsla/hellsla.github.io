@@ -70,13 +70,13 @@ if local_courses.validate(curriculum): sys.exit("\n".join(local_courses.validate
 # Submission trial (teacher 2026-11-05): "Lataa kaikki ratkaisut" on the chapters of these courses in these languages
 # only (templates/palautus.js; first FY3-1, then every FY3 chapter); the teacher's side is palautus/ (a local grading
 # page or a Sheets-bound Apps Script), never part of the site.
-SUBMISSION_COURSES = {("fi", "fy3")}
-SUBMISSION_CHAPTER = re.compile(r"^(fy\d+)-\d+$")
+SUBMISSION_LANGS = {"fi", "fi-easy", "en"}           # teacher 2026-11-06: also English
+SUBMISSION_CHAPTER = re.compile(r"^fy[1-8]-\d+$")     # teacher 2026-11-06: every course FY1-FY8 (was FY3 only)
 
 
 def submits(lang, lesson_id):
     m = SUBMISSION_CHAPTER.match(lesson_id or "")
-    return bool(m) and (lang, m.group(1)) in SUBMISSION_COURSES
+    return bool(m) and lang in SUBMISSION_LANGS
 
 
 # Palautukset (teacher 2026-11-06): palautukset.json names the period and each group's Google Forms responder link. The
@@ -91,7 +91,8 @@ def submission_forms():
     if not FORMS_FILE.is_file(): return None
     d = json.loads(FORMS_FILE.read_text())
     bad = lambda why: sys.exit(f"palautukset.json: {why}")
-    if not isinstance(d.get("title"), str) or not 1 <= len(d["title"]) <= 80: bad("title must be text of 1-80 characters")
+    if d.get("period") not in (1, 2, 3, 4, 5): bad("period must be 1-5")
+    if not isinstance(d.get("year"), str) or not re.fullmatch(r"20\d\d-\d\d", d["year"]): bad("year must be like 2026-27")
     forms = d.get("forms")
     if not isinstance(forms, list): bad("forms must be a list")
     seen = set()
@@ -113,6 +114,9 @@ def submission_script(lang, lesson_id):
     return f'<script src="palautus.js" data-chapter="{lesson_id}"{ret}></script>'
 
 
+def forms_title(): return T("site.returns_title", period=FORMS["period"], year=FORMS["year"])
+
+
 def forms_page_body():
     """One section per course in curriculum order: the groups' form buttons, or a grey placeholder when the course has
     no forms this period (teacher 2026-11-06: one page for every course, updated when the period changes)."""
@@ -121,11 +125,11 @@ def forms_page_body():
     for code in courses.codes():
         fs = sorted((f for f in FORMS["forms"] if f["group"].split(".")[0] == code), key=lambda f: natural(f["group"]))
         links = ("".join(f'<a class="return-form" href="{esc(f["url"])}">{esc(f["group"])}</a>' for f in fs)
-                 or '<span class="return-none">Ei palautuksia tässä periodissa</span>')
-        out.append(f'<section class="return-course{'' if fs else ' is-empty'}"><h2>{esc(code)} {esc(courses.course(code)["title"])}</h2>'
-                   f'<nav class="return-forms" aria-label="{esc(code)}: ryhmien palautuslomakkeet">{links}</nav></section>')
-    return (f'<h1>{esc(FORMS["title"])}</h1>'
-            '<p class="lead">Valitse kurssi ja oma ryhmäsi. Palauta lomakkeella luvun ratkaisutiedosto, jonka latasit luvun Tehtävät-kohdasta (Lataa kaikki ratkaisut).</p>'
+                 or f'<span class="return-none">{esc(T("site.returns_none"))}</span>')
+        out.append(f'<section class="return-course{'' if fs else ' is-empty'}"><h2>{esc(code)} {esc(COURSES.get(code, {}).get("title") or courses.course(code)["title"])}</h2>'
+                   f'<nav class="return-forms" aria-label="{esc(T("site.returns_aria", code=code))}">{links}</nav></section>')
+    return (f'<h1>{esc(forms_title())}</h1>'
+            f'<p class="lead">{esc(T("site.returns_lead"))}</p>'
             + "".join(out))
 
 
@@ -1085,9 +1089,9 @@ def build_language(lang):
     about_body = hero + (about_body[h1.end():] if h1 else about_body)
     (out / ABOUT).write_text(page(T("site.about"), f'<article class="about">{about_body}</article>',
                                   f'<a href="index.html">{T("site.name")}</a> › {T("site.about")}', ABOUT, T("site.about_lead"), main_class="reading about-page"))
-    if FORMS and lang == "fi":   # Palautukset (teacher 2026-11-06): the Finnish chapters have the button
-        (out / FORMS_PAGE).write_text(page(FORMS["title"], forms_page_body(), f'<a href="index.html">{T("site.name")}</a> › {esc(FORMS["title"])}',
-                                           FORMS_PAGE, "Ryhmien palautuslomakkeet.", main_class="reading return-page"))
+    if FORMS and lang in SUBMISSION_LANGS:   # Palautukset (teacher 2026-11-06): where the chapters have the button
+        (out / FORMS_PAGE).write_text(page(forms_title(), forms_page_body(), f'<a href="index.html">{T("site.name")}</a> › {esc(forms_title())}',
+                                           FORMS_PAGE, T("site.returns_desc"), main_class="reading return-page"))
     # Tietosuoja (teacher 2026-11-04): content/<lang>/tietosuoja.md (the Finnish where a language has none), linked from every footer
     priv_md = next((f for f in (ROOT / "content" / lang / "tietosuoja.md", ROOT / "content" / i18n.SOURCE / "tietosuoja.md") if f.is_file()), None)
     if priv_md:

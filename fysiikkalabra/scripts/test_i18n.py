@@ -20,7 +20,7 @@ def snapshot():
 REAL = snapshot()
 
 T = pathlib.Path(tempfile.mkdtemp(prefix="fysiikkalabra-i18n-"))
-for f in ("curriculum.json", "competencies.json", "glossary.json", "CLAUDE.md", "NOTES.md"): shutil.copy(SRC / f, T / f)
+for f in ("curriculum.json", "competencies.json", "glossary.json", "CLAUDE.md", "NOTES.md", "palautukset.json"): shutil.copy(SRC / f, T / f)
 for d in ("scripts", "templates", "content", "lessons", "lang", "assets", "tests", "kortit"): shutil.copytree(SRC / d, T / d, ignore=shutil.ignore_patterns("__pycache__", "packet-*", "shots*"))
 (T / "docs").mkdir(exist_ok=True); shutil.copy(SRC / "docs/visual-baseline.tsv", T / "docs")   # what is published under the visual baseline (2026-10-31)
 for p in [*(T / "lang").glob("*.json"), *(T / "content").iterdir()]:     # Finnish only: the test adds its own "en"

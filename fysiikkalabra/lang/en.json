@@ -141,7 +141,12 @@
       "other": "{{n}} investigations available"
     },
     "open_course": "Open course →",
-    "local_status_home_building": "Course under construction"
+    "local_status_home_building": "Course under construction",
+    "returns_title": "Submissions · Period {{period}} · {{year}}",
+    "returns_lead": "Choose your course and your group. With the form, submit the chapter's solution file that you downloaded in the chapter's Exercises section (Download all solutions).",
+    "returns_none": "No submissions this period",
+    "returns_aria": "{{code}}: the groups' submission forms",
+    "returns_desc": "The groups' submission forms."
   },
   "lesson": {
     "photos": "Photographs",
@@ -418,7 +423,29 @@
     "list_reveal": "Not quite. The correct answers are marked with their reasoning.",
     "tf_is_true": "True",
     "tf_is_false": "False",
-    "order_right_place": "Correct place: {{n}}"
+    "order_right_place": "Correct place: {{n}}",
+    "palautus_download": "Download all solutions",
+    "palautus_return": "Submit",
+    "palautus_busy": "Saving and collecting your solutions…",
+    "palautus_done_link": "Submit the downloaded file with your group's form: press Submit.",
+    "palautus_done_forms": "Submit the downloaded file with your teacher's Google Forms form.",
+    "palautus_failed": "The file could not be made. Reload the page and try again.",
+    "palautus_task": "Task {{n}}",
+    "palautus_store": "Your saved solutions could not be read. Reload the page.",
+    "palautus_flush": "Not all open solutions could be saved, so the file was not downloaded. See the message under the solution and try again.",
+    "palautus_corrupt": "{{where}}: the saved solution is damaged. Write the solution again.",
+    "palautus_no_storage": "Your saved solutions could not be read (the browser does not allow storage). The file was not downloaded.",
+    "palautus_img_type": "{{where}}: the solution has a picture in a format that is not accepted (only PNG and JPEG). Delete it and paste the picture again.",
+    "palautus_img_web": "{{where}}: the solution has a picture pasted from a web page, which cannot be submitted. Delete it and paste a screenshot.",
+    "palautus_img_read": "{{where}}: a picture could not be read. Delete the picture and paste it again.",
+    "palautus_img_big": "{{where}}: a picture is too large ({{mb}} MB, at most {{max}} MB). Crop the screenshot smaller and paste it again.",
+    "palautus_img_broken": "{{where}}: a picture is damaged. Delete it and paste the picture again.",
+    "palautus_img_side": "{{where}}: a picture is too large (over {{n}} pixels wide or high).",
+    "palautus_latex_long": "{{where}}: a formula is too long (over {{n}} characters).",
+    "palautus_items": "{{where}}: the solution has too many parts.",
+    "palautus_text_long": "{{where}}: the text of the solution is too long (over {{n}} characters).",
+    "palautus_images": "Your solutions have {{n}} pictures, at most {{max}}. Delete some of them.",
+    "palautus_file_big": "The file would be too large ({{mb}} MB, at most {{max}} MB). Crop or delete pictures."
   },
   "sims": {
     "fy2-2": {
