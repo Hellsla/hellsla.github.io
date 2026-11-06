@@ -1,21 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 4c32264d89c055c7
-Mode: full (translation review against the reviewed Finnish set)
-Round 2
+CONTENT-HASH: eace54a780f9c990
+Mode: delta (new task fy5-14-L1-09), Round: 1
 
 ## Blocking
 (none)
 
-## Fixed
-(none needed beyond the science report)
-
 ## Polish
-(none)
+- [Minor] fy5-14-L1-09 statements 1-5 feedback — the page already prints the verdict ("False.") before the feedback, and every feedback starts with "False:"/"True:" again ("False. False: the pitch…") — stutter; identical in the reviewed Finnish and in fy4-14-L1-09, fy5-10-L1-09 — drop the leading "True:"/"False:" in a follow-up across the set.
+- [Minor] fy5-14-L1-09 text — "The own frequency of the horn" reads as a Finnish calque — "The frequency of the horn at rest" (also in feedback/solution).
 
 ## Checked
-- Captures open-exercises-1280-6, open-exercises-L2-1280-5 and open-exercises-L3-1280-5 (en): cards, MCQ feedback, data table, boxed answers and formula rows render correctly; no Finnish visible; no horizontal overflow.
-- Table captions and headers short and equal in structure to fi (Measurement, Flute/Violin, Middle/Near the bridge).
-- Captures predate the small L1-06/L1-07 wording polish, which changes no layout.
+- Own 390 px render of preview/en/fy5-14.html after the page scripts ran, task fy5-14-L1-09 with answer feedback and solution opened (scratch script shot_trv5.py): page scrollWidth 390, no element outside the viewport except inside a scroll box, no KaTeX error source, no raw $ left, no JS errors.
+- Opened the task captures in tiles: scenario text, five true/false statements with feedback opened, choice feedback, full worked solution; units, decimal marks and case endings render correctly.
+- Task text and solution read as English; language matches the reviewed Finnish set.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · language 5 · accessibility 4

@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 3309c347fe902beb
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 12247bcf797a5c2e
+Mode: delta (new task fy5-17-L2-08), Round: 1
 
 ## Blocking
 (none)
 
-## Fixed
-(none needed: the selkosuomi text already matched fi in every number and was natural)
-
 ## Polish
-(none)
+- None.
 
 ## Checked
-- Viewed open-exercises-L2-1280-6 (L2-05 table and solution card) and open-exercises-L3-1280-4 (L3-03 solution and L3-04 task): text wraps, tables fit the width, LaTeX renders with the correct decimal separator, answer box and unit shown.
-- Table captions, headers and cells equal fi apart from translated captions; no table wider than fi; no overlong unbroken strings; no stray Finnish or untranslated markup.
+- Own 390 px render of preview/fi-easy/fy5-17.html after the page scripts ran, task fy5-17-L2-08 with answer feedback and solution opened (scratch script shot_trv5.py): page scrollWidth 390, no element outside the viewport except inside a scroll box, no KaTeX error source, no raw $ left, no JS errors.
+- Opened the task captures in tiles: scenario text, two-step choice (answer and reason); one solution row scrolls sideways inside its .kx-wide line by design, choice feedback, full worked solution; units, decimal marks and case endings render correctly.
+- Task text and solution read as Selkeä suomi; language matches the reviewed Finnish set.
 
 ## Scores
-illustrations 4 · typography 4 · language 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4
