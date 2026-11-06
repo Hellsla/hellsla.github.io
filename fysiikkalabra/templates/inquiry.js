@@ -14,7 +14,7 @@
       localStorage (ruukkilabra:<page>:koe<n>) until Nollaa, and copied with Kopioi taulukko (TSV)
       with a decimal comma and the headings' data-plain text (teacher 2026-11-03).
    4. Numeric tasks: common-mistake feedback (data-mistakes) on top of lesson.js; every hint in view and open.
-   5. Explanations: model answer and self-assessment criteria once the student has ticked "Olen tehnyt ratkaisun", then
+   5. Explanations: model answer and self-assessment criteria once the student has written an answer (a drawing task: ticked "Olen piirtänyt voimakuvion paperille"), then
       the unticked criteria as the reasoning to add and where to practise it; a
       conclusion (data-after) also waits for the measurements of its experiments and copies tables and text for notes.
    6. Reflection: shows the student's own predictions next to the evidence and asks whether to revise.
@@ -416,12 +416,13 @@
     const saved = store.get(id); if (saved && saved.text) ta.value = saved.text;
     const say = (t) => { if (status) status.textContent = t; };
     const missing = () => after.filter((eid) => (measured[eid] || 0) < expMin(eid));
-    // the model answer (or model diagram) and the criteria open after the tick "Olen tehnyt ratkaisun" (a drawing task:
-    // "Olen piirtänyt voimakuvion paperille"); the tick alone is enough, the text field is the student's own (teacher
-    // 2026-11-03). The button stays in view, marked unavailable until then; a conclusion still waits for its measurements.
+    // the model answer and the criteria open once the student has written an answer in the text field (the tick "Olen
+    // tehnyt ratkaisun" removed, teacher 2026-11-06); a drawing task's model diagram after the tick "Olen piirtänyt
+    // voimakuvion paperille" (teacher 2026-11-03). The button stays in view, marked unavailable until then; a
+    // conclusion still waits for its measurements.
     const tick = ex.querySelector('.drew input'), draw = ex.classList.contains('draw');
     const OPEN = !!window.flSolutionsOpen;
-    const ready = () => OPEN || !tick || tick.checked;
+    const ready = () => OPEN || (tick ? tick.checked : !!ta.value.trim());
     const lockText = msg(draw ? 'locked_drawn' : 'locked_done');
     const lockNote = window.flLockNote ? window.flLockNote(lockText) : Object.assign(document.createElement('span'), { className: 'lock-note', textContent: lockText });
     const mark = () => {
@@ -430,12 +431,18 @@
     };
     if (OPEN && tick) tick.checked = true;
     mark();
-    ta.addEventListener('input', () => store.set(id, { text: ta.value }));
+    let wrote = ready();
+    ta.addEventListener('input', () => {
+      store.set(id, { text: ta.value });
+      if (tick) return;
+      mark();
+      if (!wrote && ready()) { wrote = true; if (status && status.textContent && !missing().length) say(''); if (window.flAttempt) window.flAttempt(ex, 'done', 'done'); }
+    });
     if (tick) tick.addEventListener('change', () => { mark(); if (tick.checked) { if (status && status.textContent && !missing().length) say(''); if (window.flAttempt) window.flAttempt(ex, 'done', 'done'); } });
     btn.addEventListener('click', () => {
       const m = OPEN ? [] : missing();
       if (m.length) { say(msg('explain_measure_first', { experiments: m.map((eid) => document.getElementById(eid)?.querySelector('h3')?.textContent.trim() || eid).join(', ') })); return; }
-      if (!ready()) { say(msg(draw ? 'explain_draw_first' : 'explain_tick_first')); tick.focus(); return; }
+      if (!ready()) { say(msg(draw ? 'explain_draw_first' : 'explain_tick_first')); (tick || ta).focus(); return; }
       say(''); model.hidden = false; btn.hidden = true; model.querySelector('h4')?.focus?.();
     });
     // own answer → model answer → observable criteria → what is missing → where to practise (teacher 2026-10-28)

@@ -68,7 +68,7 @@ def courses_with_button():
 EXTRACT = r"""(id) => {
   const page = document;
   const strip = (root) => {
-    root.querySelectorAll('.ex-num,.ex-core,.task-skills,.pts,form,details,label.solved,.pad-open,.pad,.feedback,button,script,style,.ex-head,.zoom-btn,legend').forEach((e) => e.remove());
+    root.querySelectorAll('.ex-num,.ex-core,.task-skills,.pts,form,details,.pad-open,.pad,.feedback,button,script,style,.ex-head,.zoom-btn,legend').forEach((e) => e.remove());
     root.querySelectorAll('input').forEach((e) => e.remove());
     // lesson.js flFitMath moves the punctuation after a formula wider than the column into the formula (.kx-punct), and
     // which formulas are too wide depends on the machine's fonts: put the mark back after the formula, so the grading

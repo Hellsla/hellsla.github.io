@@ -475,8 +475,7 @@ def explain_html(a, md, aid):
     copy = f'<button type="button" class="copy-notes">{T("inquiry.copy_notes")}</button>' if after else ""
     own = (f'<label class="drew"><input type="checkbox"> <span>{T("inquiry.drew_on_paper")}</span></label>'
            f'<textarea rows="2" aria-label="{T("inquiry.draw_notes")}" placeholder="{esc(T("inquiry.draw_notes"))}"></textarea>' if draw else
-           f'<textarea rows="4" aria-label="{T("inquiry.own_answer")}"></textarea>'
-           f'<label class="drew"><input type="checkbox"> <span>{T("inquiry.did_solution")}</span></label>')   # the model opens after the tick (teacher 2026-11-03)
+           f'<textarea rows="4" aria-label="{T("inquiry.own_answer")}"></textarea>')   # the model opens once the student has written an answer (the tick "Olen tehnyt ratkaisun" removed, teacher 2026-11-06)
     model_fig = fig_of({"figure": a["model_figure"]}) if a.get("model_figure") else ""
     return (f'<div class="explain{" draw" if draw else ""}"{attrs}>{task_text(inline(md, a["prompt"]))}{fig_of(a)}{own}{pair}'
             f'<div class="choice-actions"><button type="button" class="show-model">{T("inquiry.show_model_drawing" if draw else "inquiry.show_model")}</button>{copy}</div>'

@@ -13,7 +13,7 @@
    7. Enlarge a figure (teacher 2026-11-03): a click on a figure or a photo, or its "Suurenna kuva" button, shows it
       larger in a dialog, never over the image's own pixels nor about 90 % of the window (sim-embed.js enlarges a simulation).
    8. Try first (teacher 2026-11-03): Vastaus, Näytä ratkaisu and a model answer open only after the student's own
-      attempt (one Tarkista, or the tick "Olen tehnyt ratkaisun"); ?ratkaisut=1 opens them all for the teacher.
+      attempt (one Tarkista, or a solution written in the editor); ?ratkaisut=1 opens them all for the teacher.
    Its messages come from the page's #fl-strings block (lang/<lang>.json "js", written in by build.py). */
 (() => {
   const L10N = (() => { try { return JSON.parse(document.getElementById('fl-strings').textContent); } catch (e) { return {}; } })();
@@ -23,7 +23,7 @@
     return t === '' ? NaN : Number(t);
   };
   // A real attempt (teacher 2026-11-03, "opiskelija yrittää ensin itse"): Tarkista with a number, Vastaa with a choice,
-  // or the tick "Olen tehnyt ratkaisun". It opens what part 8 keeps locked; other scripts may listen too (the progress bar).
+  // or a solution written in the editor (part 6). It opens what part 8 keeps locked; other scripts may listen too (the progress bar).
   // detail: id (the task: exercise li, activity or Sovella task), kind check | choice | done, state ok | close | no | done.
   const taskId = (el) => (el.closest('#exercises li[id], section.practice-task[id], .activity[id]') || {}).id || '';
   const attempt = (el, kind, state) => el.dispatchEvent(new CustomEvent('fl:attempt', { bubbles: true, detail: { id: taskId(el), kind, state } }));
@@ -251,10 +251,10 @@
   // (padstore.js, IndexedDB, loaded with the editor): saved a moment after each change, restored when the editor
   // opens, with export/import of a backup file and deletion. Nothing is sent anywhere.
   const PAD_TASKS = [   // [the task, its part the editor goes in, what it goes before]
-    ['#exercises li[id]', (t) => t.querySelector(':scope > .task') && t, (box) => box.querySelector(':scope > form.check, :scope > label.solved, :scope > details.answer')],   // write first, then check (teacher 2026-11-01)
-    ['section.practice-task[id]', (t) => t.querySelector(':scope > .task-card'), (box) => box.querySelector(':scope > label.solved, :scope > details.reveal')],
+    ['#exercises li[id]', (t) => t.querySelector(':scope > .task') && t, (box) => box.querySelector(':scope > form.check, :scope > details.answer')],   // write first, then check (teacher 2026-11-01)
+    ['section.practice-task[id]', (t) => t.querySelector(':scope > .task-card'), (box) => box.querySelector(':scope > details.reveal')],
     // an exam task and a review (FY9) task are their own card (practice.py exam_task); one with only choices gets none (teacher 2026-11-06, "lisää kaikkiin materiaaleihin")
-    ['div.practice-task[id]', (t) => (!t.querySelector(':scope > ol.parts') || t.querySelector(':scope > ol.parts > li:not(:has(.choices))')) && t, (box) => box.querySelector(':scope > label.solved, :scope > details.reveal')],
+    ['div.practice-task[id]', (t) => (!t.querySelector(':scope > ol.parts') || t.querySelector(':scope > ol.parts > li:not(:has(.choices))')) && t, (box) => box.querySelector(':scope > details.reveal')],
   ];
   const HERE = document.currentScript ? document.currentScript.src : location.href;
   const VENDOR = new URL('vendor/digabi/', HERE).href;
@@ -398,8 +398,21 @@
     open.type = 'button'; open.className = 'pad-open'; open.textContent = msg('pad_write');
     open.setAttribute('aria-expanded', 'false'); open.setAttribute('aria-controls', id);
     const box = document.createElement('div'); box.className = 'pad'; box.id = id; box.hidden = true;
-    li.insertBefore(open, beforeOf(li));
+    const before = beforeOf(li);
+    li.insertBefore(open, before);
     open.after(box);
+    // "Kirjoita ratkaisu" and the number's answer box (input, unit, Tarkista) on one row (teacher 2026-11-06); the
+    // editor, when open, takes a row of its own between them, and the row wraps on a narrow phone
+    if (before && before.matches('form.check')) {
+      const row = document.createElement('div'); row.className = 'ex-row';
+      li.insertBefore(row, open); row.append(open, box, before);
+    }
+    // a written solution in the editor opens the task's answer (part 8; it replaced the tick "Olen tehnyt ratkaisun")
+    let told = false;
+    const wrote = (html) => {
+      if (told || !html || !(plainOf(html) || /<img/i.test(html))) return;
+      told = true; li.dispatchEvent(new CustomEvent('fl:written'));
+    };
     let answer = { answerHtml: '' }, made = false;
     const status = document.createElement('p'); status.className = 'pad-status'; status.setAttribute('aria-live', 'polite');
     open.addEventListener('click', () => {
@@ -433,7 +446,7 @@
           return (writing = w);
         };
         const changed = (a) => {
-          answer = a;
+          answer = a; wrote(a.answerHtml);
           if (quiet || (a.answerHtml || '') === last && !dirty) return;   // the editor reporting the value it was given
           dirty = true; say(saveState, msg('pad_saving'));
           clearTimeout(timer); timer = setTimeout(flush, 800);
@@ -443,7 +456,7 @@
           textAreaProps: { ariaLabelledBy: label.id, lang: document.documentElement.lang } });
         imageSizer(box, root);
         if (saved.error) say(saveState, saveError(saved.error), 'no');
-        else if (saved.html) say(saveState, msg('pad_restored'), 'ok');
+        else if (saved.html) { say(saveState, msg('pad_restored'), 'ok'); wrote(saved.html); }
         editors.set(task.id, {
           flush, busy: () => dirty || !!writing,
           cancel: () => { clearTimeout(timer); dirty = false; },
@@ -546,8 +559,9 @@
 
   // 8. Try first (teacher 2026-11-03, "opiskelija yrittää ensin itse, ja ratkaisu avautuu vasta sen jälkeen"). A numeric
   // task's Vastaus and Näytä ratkaisu open after one Tarkista with a number (part 1); a written task's answer, an
-  // exercise drawn on paper and a Sovella itsenäisesti task's model answer and rubric after the tick "Olen tehnyt
-  // ratkaisun" (label.solved; an inquiry explanation's own tick is in inquiry.js). A locked control stays in view,
+  // exercise drawn on paper and a Sovella itsenäisesti task's model answer and rubric (build.py and practice.py mark
+  // them data-written) once the student has written something in the solution editor (part 6, event fl:written; the
+  // tick "Olen tehnyt ratkaisun" was removed, teacher 2026-11-06; an inquiry explanation's is in inquiry.js). A locked control stays in view,
   // dimmed, with a lock symbol beside it (the reason as hover and screen-reader text), so the student knows the solution is there. Nothing is kept: a reload locks
   // again. ?ratkaisut=1 (the teacher) opens every lock on the page.
   const OPEN_ALL = (() => { try { return new URLSearchParams(location.search).get('ratkaisut') === '1'; } catch (e) { return false; } })();
@@ -596,10 +610,10 @@
     const unlock = lockBoxes(boxesIn(box), 'locked_try');
     form.addEventListener('fl:attempt', unlock);
   });
-  document.querySelectorAll('label.solved').forEach((label) => {
-    const tick = label.querySelector('input'), unlock = lockBoxes(boxesIn(label.parentElement), 'locked_done');
-    if (OPEN_ALL) tick.checked = true;
-    tick.addEventListener('change', () => { if (tick.checked) { unlock(); attempt(label, 'done', 'done'); } });
+  document.querySelectorAll('[data-written]').forEach((task) => {
+    const unlock = lockBoxes(boxesIn(task), 'locked_done');
+    task.addEventListener('fl:written', () => { unlock(); attempt(task, 'done', 'done'); }, { once: true });
+    task.addEventListener('fl:attempt', (e) => { if (e.target !== task) unlock(); });   // a task of choices: its Vastaa is the attempt too
   });
 
   let opened = [];

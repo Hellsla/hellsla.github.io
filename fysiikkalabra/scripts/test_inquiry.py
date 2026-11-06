@@ -563,9 +563,9 @@ with sync_playwright() as pw:
 
     # explanation: model answer and criteria on request
     ex = pg.locator("#check-3"); ex.locator(".show-model").click(force=True)
-    check("the model answer waits for the tick", not ex.locator(".model").is_visible() and ex.locator(".show-model").get_attribute("aria-disabled") == "true"
-          and "Olen tehnyt ratkaisun" in ex.locator(".explain-status").inner_text())
-    ex.locator("textarea").fill("Työ ei riipu ajasta."); ex.locator(".drew input").check()
+    check("the model answer waits for the student's own answer", not ex.locator(".model").is_visible() and ex.locator(".show-model").get_attribute("aria-disabled") == "true"
+          and "Kirjoita ensin" in ex.locator(".explain-status").inner_text() and ex.locator(".drew").count() == 0)
+    ex.locator("textarea").fill("Työ ei riipu ajasta.")
     check("model answer hidden until asked", not ex.locator(".model").is_visible() and ex.locator(".show-model").get_attribute("aria-disabled") is None)
     ex.locator(".show-model").click(); check("model answer and criteria shown", ex.locator(".model").is_visible() and ex.locator("ul.criteria input[type=checkbox]").count() == 4)
     boxes = ex.locator("ul.criteria input[type=checkbox]"); boxes.nth(0).check(); boxes.nth(1).check(); ex.locator(".check-criteria").click()
