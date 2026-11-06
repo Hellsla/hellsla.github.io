@@ -140,24 +140,34 @@
 
 ## fy8-7-L1-09
 **Kysytty:** mitkä viidestä väitteestä laserista ja kvanttipisteistä A ja B ovat tosia.
-**Periaate:** Fotonin energia riippuu vain aallonpituudesta, $hf = \tfrac{hc}{\lambda}$, ei siitä, millainen valonlähde sen lähettää. Laservalo syntyy stimuloidussa emissiossa, joka vaatii populaatioinversion $N_2 > N_1$; se saadaan pumppaamalla, ei lämmittämällä. Kvanttipisteessä energiarako kasvaa pisteen pienentyessä.
+**Periaate:** Fotonin energia riippuu vain aallonpituudesta, $hf = \tfrac{hc}{\lambda}$, ei siitä, millainen valonlähde sen lähettää. Laservalo syntyy stimuloidussa emissiossa, joka vaatii populaatioinversion $N_2 > N_1$; se saadaan pumppaamalla aineeseen, jossa on ainakin kolme tasoa. Kvanttipisteessä energiarako kasvaa pisteen pienentyessä.
 **Mallivastaus:** Kummankin valonlähteen $650\,\text{nm}$:n fotonin energia on
 
 $hf = \dfrac{hc}{\lambda}$
 
-$hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$
+$$\begin{aligned}
+&hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\quad \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}$$
 
-$hf = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{650 \cdot 10^{-9}\,\text{m}} = 3{,}056 \cdot 10^{-19}\,\text{J}$
+$$\begin{aligned}
+&hf = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{650 \cdot 10^{-9}\,\text{m}} \\
+&= 3{,}056 \cdot 10^{-19}\,\text{J}
+\end{aligned}$$
 
 Elektronivoltteina, kun $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$:
 
-$hf = \dfrac{3{,}056 \cdot 10^{-19}}{1{,}602 \cdot 10^{-19}}\,\text{eV} = 1{,}91\,\text{eV}$
+$$\begin{aligned}
+&hf = \dfrac{3{,}056 \cdot 10^{-19}}{1{,}602 \cdot 10^{-19}}\,\text{eV} \\
+&= 1{,}91\,\text{eV}
+\end{aligned}$$
 
 1 epätosi: fotonien energiat ovat samat, $1{,}91\,\text{eV}$. Laserin vaara johtuu siitä, että koko teho kulkee kapeassa säteessä, jonka silmä kohdistaa pieneksi pisteeksi.
 
 2 tosi: stimuloitu fotoni saa saapuvan fotonin energian, suunnan ja vaiheen, joten laservalon aallot ovat samassa tahdissa.
 
-3 epätosi: lämpimässäkin aineessa alemmalla tasolla on enemmän atomeja kuin ylemmällä. Populaatioinversio tehdään pumppaamalla aineeseen, jossa on ainakin kolme tasoa ja pitkäikäinen ylempi lasertaso.
+3 epätosi: kahdella tasolla pumppausvalo aiheuttaa ylätilan atomeissa stimuloitua emissiota yhtä todennäköisesti kuin virittää perustilan atomeja, joten ylätilaan saadaan enintään puolet atomeista. Populaatioinversio tehdään pumppaamalla aineeseen, jossa on ainakin kolme tasoa ja pitkäikäinen ylempi lasertaso.
 
 4 epätosi: piste A on pienempi, joten sen energiarako on suurempi ja fotonin energia suurempi. Piste A lähettää siis lyhyemmän aallonpituuden valoa kuin piste B.
 

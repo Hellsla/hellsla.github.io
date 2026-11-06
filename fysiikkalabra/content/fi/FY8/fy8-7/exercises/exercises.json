@@ -133,9 +133,9 @@
           "feedback": "Tosi: stimuloidussa emissiossa syntyvällä fotonilla on saapuvan fotonin energia, suunta ja vaihe, joten aallot pysyvät samassa tahdissa. Spontaanisti syntyvien fotonien vaiheet ovat satunnaiset."
         },
         {
-          "text": "Kun laseraine lämmitetään riittävän kuumaksi, ylemmälle tasolle tulee enemmän atomeja kuin alemmalle.",
+          "text": "Kaksitasoisessa aineessa saadaan ylemmälle tasolle enemmän atomeja kuin alemmalle, kun pumppausvaloa on riittävästi.",
           "true": false,
-          "feedback": "Epätosi: tässä populaatioinversion luullaan syntyvän lämmittämällä. Lämpimässäkin aineessa alemmalla tasolla on aina enemmän atomeja kuin ylemmällä. Inversio tehdään pumppaamalla aineeseen, jossa on ainakin kolme tasoa."
+          "feedback": "Epätosi: tässä luullaan, että pumppauksen voimakkuus yksin ratkaisee. Kahdella tasolla pumppausvalo aiheuttaa ylätilan atomeissa stimuloitua emissiota yhtä todennäköisesti kuin virittää perustilan atomeja, joten ylätilaan saadaan enintään puolet atomeista. Siksi laseraineessa on ainakin kolme tasoa."
         },
         {
           "text": "Kvanttipiste A lähettää pidemmän aallonpituuden valoa kuin samasta aineesta tehty kvanttipiste B.",
@@ -143,9 +143,9 @@
           "feedback": "Epätosi: tässä koon ja värin yhteys luetaan väärin päin. Pienemmässä pisteessä sallitut energiat erkanevat ja energiarako kasvaa, joten piste A ($3\\,\\text{nm}$) lähettää lyhyemmän aallonpituuden valoa kuin piste B ($5\\,\\text{nm}$)."
         },
         {
-          "text": "Laserissa vahvistuu lähinnä peilien välisen akselin suuntainen valo, ja se tulee ulos säteenä.",
+          "text": "Laserissa vahvistuu vain peilien välisen akselin suuntainen valo, ja se tulee ulos säteenä.",
           "true": true,
-          "feedback": "Tosi: akselin suuntainen fotoni kulkee peilien välissä aineen läpi satoja kertoja ja monistuu matkalla. Sivulle lähtevät fotonit poistuvat aineesta ennen kuin ehtivät monistua."
+          "feedback": "Tosi: akselin suuntainen fotoni kulkee peilien välissä aineen läpi monta kertaa ja monistuu matkalla. Sivulle lähtevät fotonit poistuvat aineesta ennen kuin ehtivät monistua."
         }
       ]
     }

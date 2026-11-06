@@ -334,10 +334,10 @@
       "choices": [
         {
           "text": "Mittaus on epäonnistunut, koska sovitettu suora ei kulje origon kautta vaan leikkaa akselin nollan alapuolella.",
-          "feedback": "Suoran ei tarvitse kulkea origon kautta. Mitattu kynnysjännite eroaa arvosta $\\tfrac{hf}{e}$ lähes yhtä paljon kaikilla LEDeillä, ja tämä ero siirtää suoraa muuttamatta kulmakerrointa $\\tfrac{h}{e}$."
+          "feedback": "Suoran ei tarvitse kulkea origon kautta. Mitattu kynnysjännite eroaa arvosta $\\tfrac{hf}{e}$ suunnilleen yhtä paljon kaikilla LEDeillä, ja tämä ero siirtää suoraa muuttamatta kulmakerrointa $\\tfrac{h}{e}$."
         },
         {
-          "text": "Ryhmän Planckin vakio on liian pieni, joten mittauksessa on systemaattinen virhe, joka pienentää kulmakerrointa.",
+          "text": "Mittauksessa on systemaattinen virhe, koska ryhmän Planckin vakio on hyväksyttyä pienempi eikä ero ole nolla.",
           "feedback": "Tässä ero luetaan merkittäväksi, vaikka se on epävarmuuden sisällä. Ero hyväksyttyyn arvoon on $0{,}25 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, ja se on pienempi kuin epävarmuus $\\Delta h = e\\,\\Delta k$, eli $0{,}34 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$."
         },
         {
@@ -346,8 +346,8 @@
           "feedback": "Oikein: $h = ek = 6{,}38 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$ ja $\\Delta h = e\\,\\Delta k$, eli $0{,}34 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$. Hyväksytty arvo $6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$ on välillä $h \\pm \\Delta h$."
         },
         {
-          "text": "Kynnysjännite kasvaa taajuuden mukana, joten LEDiin kytketty jännite määrää sen fotonien energian.",
-          "feedback": "Syy ja seuraus ovat väärin päin. Fotonin energian määrää puolijohteen energia-aukko: suuremman aukon LED tarvitsee suuremman kynnysjännitteen, mutta jännitteen kasvattaminen ei muuta fotonin energiaa."
+          "text": "Ryhmän Planckin vakio poikkeaa hyväksytystä arvosta, koska ero on suurempi kuin kulmakertoimen epävarmuus $\\Delta k$.",
+          "feedback": "Eroa ei voi verrata suoraan epävarmuuteen $\\Delta k$, koska niillä on eri yksiköt. Planckin vakion epävarmuus on $\\Delta h = e\\,\\Delta k$, eli $0{,}34 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, ja ero $0{,}25 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$ on sitä pienempi."
         }
       ]
     }

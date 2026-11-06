@@ -115,7 +115,7 @@
     {
       "id": "fy8-5-L1-09",
       "level": 1,
-      "text": "Vetyatomin elektronin energia on $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$, missä $n$ on pääkvanttiluku. Elektroni voi olla esimerkiksi seuraavissa tiloissa.\n\nTila A: $3\\text{d}$-tila\n\nTila B: $1\\text{s}$-tila\n\nTila C: $4\\text{s}$-tila\n\nTila D: $2\\text{p}$-tila\n\nTila E: tila, jonka aallossa on neljä solmupintaa\n\nMissä järjestyksessä tilat ovat elektronin energian mukaan pienimmästä suurimpaan?",
+      "text": "Vetyatomin elektronin energia on $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$, missä $n$ on pääkvanttiluku. Elektroni voi olla esimerkiksi seuraavissa tiloissa.\n\nTila A: $3\\text{d}$-tila\n\nTila B: $1\\text{s}$-tila\n\nTila C: $4\\text{s}$-tila\n\nTila D: $2\\text{p}$-tila\n\nTila E: $5\\text{p}$-tila\n\nMissä järjestyksessä tilat ovat elektronin energian mukaan pienimmästä suurimpaan?",
       "kind": [
         "concept",
         "reasoning"
