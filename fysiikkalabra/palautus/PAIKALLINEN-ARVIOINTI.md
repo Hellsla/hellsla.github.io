@@ -20,6 +20,11 @@ FY3-luvussa on Tehtävät-otsikon rivillä painike **Lataa kaikki ratkaisut**. P
 2. **Tallenna arviointisivu** kerran omalle koneelle: `fysiikkalabra/palautus/arviointi-fy3.html` (repossa, myös
    projektin tiedostoissa). Avaa se kaksoisnapsauttamalla. Sivu toimii ilman verkkoa.
 3. **Lisää ryhmät** sivulla: kirjoita nimi (esim. FY3.1) ja paina **Lisää ryhmä**. Yksi ryhmä jokaista lomaketta kohti.
+4. **Lomakelinkit Ruukkilabraan**: lisää ryhmän lomakkeen vastaajalinkki (Lähetä → linkki, `forms.gle/…`) tiedostoon
+   `fysiikkalabra/palautukset.json`. Ruukkilabraan tulee sivu *Palautukset* (otsikko tiedostosta, esim.
+   *Palautukset · 1. periodi · lv 2026-27*), jossa on nappi jokaiselle ryhmälle. FY3-lukujen Tehtävät-rivillä on
+   Lataa kaikki ratkaisut -napin vieressä nappi **Palauta**, joka vie tälle sivulle. Periodin vaihtuessa vaihda otsikko
+   ja linkit. Sivu vain linkittää lomakkeisiin, se ei lataa mitään Googlelta.
 
 ## Arviointi
 

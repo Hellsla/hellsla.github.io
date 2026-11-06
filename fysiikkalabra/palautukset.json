@@ -1,0 +1,10 @@
+{
+  "_ohje": "Palautukset-sivu (build.py submission_forms): periodin otsikko ja ryhmien Google Forms -vastaajalinkit. Ryhmän nimi alkaa kurssin koodilla ja pisteellä (FY3.2), sivu ryhmittelee kurssit itse. Päivitä periodin vaihtuessa. Tyhjä forms-lista = ei Palauta-nappia eikä sivua.",
+  "title": "Palautukset · 1. periodi · lv 2026-27",
+  "forms": [
+    {
+      "group": "FY3.2",
+      "url": "https://forms.gle/1JEQYSTidBPETrxbA"
+    }
+  ]
+}

@@ -482,8 +482,11 @@ form.check output[data-state=close]{color:#7a5a00;font-weight:600}form.check out
 .pad-save{margin:.3rem 0 0;font-size:var(--fs-ui);min-height:1.3em;color:var(--ink-2)}.pad-save[data-state=ok]{color:var(--accent-deep)}.pad-save[data-state=no]{color:#8a3b1a;font-weight:600}
 .pad-saved{margin:.4rem 0 0}.pad-saved>summary{font:600 var(--fs-ui) var(--sans);color:var(--accent-deep)}.pad-saved .pad-tools{margin-top:.3rem}
 /* Submission trial (palautus.js, FY3-1): "Lataa kaikki ratkaisut" at the top of Tehtävät */
-.palautus{margin:0 0 1.2rem}.palautus .palautus-btn{margin:0 0 .3rem}.palautus:not(:has(.palautus-btn)):has(.palautus-status:empty){display:none}.split-head>.palautus-btn{margin:.6rem 0 0}
-@media print{.palautus,.palautus-btn{display:none!important}}
+.palautus{margin:0 0 1.2rem}.palautus .palautus-btn{margin:0 0 .3rem}.palautus:not(:has(.palautus-btn)):has(.palautus-status:empty){display:none}.split-head>.palautus-btn{margin:.6rem 0 0}.split-head:has(>.palautus-btn)>h2{flex-basis:100%}.palautus-link{display:inline-flex;align-items:center;text-decoration:none}
+.return-course h2{margin:1.6rem 0 .6rem}.return-course.is-empty h2{color:var(--ink-2)}.return-forms{display:flex;flex-wrap:wrap;gap:.75rem;margin:0 0 1rem}.return-forms .return-none{display:inline-flex;align-items:center;min-height:48px;padding:0 1.5rem;border-radius:999px;background:var(--line-2);color:var(--ink-2);font:600 1rem var(--sans)}
+.return-forms .return-form{display:inline-flex;align-items:center;min-height:48px;padding:0 1.5rem;border-radius:999px;background:var(--accent-deep);color:#fff;font:700 1.125rem var(--sans);text-decoration:none}
+.return-forms .return-form:hover{background:var(--accent)}.return-forms .return-form:focus-visible{outline:3px solid var(--copper);outline-offset:3px}
+@media print{.palautus,.palautus-btn,.palautus-link{display:none!important}}
 @media print{.pad-open,.pad-tools,.pad-note,.pad-save,.pad-saved,.pad .rich-text-editor-toolbar-root{display:none!important}}
 
 /* print: the lesson as a handout. lesson.js opens every collapsed block while printing. */
@@ -573,14 +576,13 @@ h2.intro-h{margin:0 0 .45rem;font:700 var(--fs-small)/1.3 var(--sans);letter-spa
      (teacher 2026-11-05); the panel then starts 2rem right of the column and takes the rest of the window */
   html.tasks-split[style*="--split-l"] .page{margin:0;width:calc(var(--measure) + 0px);margin-left:var(--split-l)}
   html.tasks-split[style*="--split-l"] #exercises{left:calc(var(--split-l) + var(--measure) + 2rem);right:auto;width:min(var(--split-w),calc(100vw - var(--split-l) - var(--measure) - 2rem))}
-  html.tasks-split[style*="--split-l"] #exercises .pad .rich-text-editor-toolbar-root>div{left:calc(var(--split-l) + var(--measure) + 2rem)!important;right:auto!important;width:min(var(--split-w),calc(100vw - var(--split-l) - var(--measure) - 2rem))!important}
   html.tasks-split main.lesson{max-width:none}
   html.tasks-split #exercises{position:fixed;top:0;right:var(--split-side);bottom:0;z-index:30;width:var(--split-w);box-sizing:border-box;margin:0;padding:0 1.5rem 3rem;overflow-y:auto;overscroll-behavior:contain;
     container:content / inline-size;background:var(--bg);border-left:1px solid var(--line);border-right:1px solid var(--line);box-shadow:0 0 28px -14px rgba(20,23,30,.35)}
   html.tasks-split #exercises>.split-head{position:sticky;top:0;z-index:3;margin:0 -1.5rem 1rem;padding:0 1.5rem .7rem;border-top:0;border-bottom:1px solid var(--line);background:var(--bg)}
   html.tasks-split #exercises>.split-head>h2{padding-top:.8rem}
   html.tasks-split #exercises .act-exercises{margin-top:0}
-  html.tasks-split #exercises .pad .rich-text-editor-toolbar-root>div{left:auto!important;right:var(--split-side)!important;width:var(--split-w)!important;max-width:var(--split-w)}   /* Abitti's toolbar over the panel, not over the theory */
+  /* Abitti's toolbar keeps the whole width of the window also beside the theory (teacher 2026-11-06: over the panel alone it was too narrow) */
   html.tasks-split #exercises .pad .rich-text-editor-toolbar-root button{white-space:nowrap}
   html.tasks-split #exercises:has(.rich-text-editor-toolbar-root>div)>.split-head{top:36px}   /* while the toolbar shows, the panel's heading sits under it */
 }
@@ -1125,17 +1127,18 @@ ul.choices.mc label.mc-wrong{border:2px solid #b4532a;background:#fbf1ea}ul.choi
 .mc-score,.exam-total-line{font-weight:700}.mc-key{font-weight:500}
 .exam-total{border-top:2px solid var(--line);padding-top:.5rem}.exam-sec-line{margin:.2rem 0}
 
-/* A task full screen (lesson.js part 10, teacher 2026-11-06; every chapter). "Avaa isoksi" at the right end of the
+/* A task full screen (lesson.js part 10, teacher 2026-11-06; every chapter's exercises, Haastetehtävät, Esimerkkikoe, FY9). "Avaa isoksi" at the right end of the
    exercise's head row; the dialog covers the window: a bar (Tehtävä 3-4, 4 / 20, Edellinen, Seuraava, Sulje), then the
    task and the solution editor. From 1100 px they stand side by side and each scrolls on its own (the task at most
    44rem wide, so its lines stay readable); below that they stand under each other and the dialog scrolls. */
-.ex-big{margin-left:auto;display:inline-flex;align-items:center;gap:.35rem;min-height:40px;padding:0 .8rem;border:1px solid var(--line);border-radius:999px;background:var(--surface);font:600 var(--fs-ui) var(--sans);color:var(--accent-deep);cursor:pointer}
+.ex-big{margin-left:auto;display:inline-flex;align-items:center;justify-content:center;flex:none;width:40px;height:40px;padding:0;border:1px solid var(--line);border-radius:999px;background:var(--surface);font-size:1.05rem;color:var(--accent-deep);cursor:pointer}   /* the icon alone, 40 px (teacher 2026-11-06) */
+.ex-head:has(>.ex-big){position:relative;padding-right:3rem}.ex-head>.ex-big{position:absolute;top:0;right:0}   /* at the right end of the number row, never on a row of its own */
 .ex-big::before{content:"";width:.85em;height:.85em;flex:none;background:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M10 2h4v4M6 14H2v-4M14 2 9 7M2 14l5-5'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M10 2h4v4M6 14H2v-4M14 2 9 7M2 14l5-5'/%3E%3C/svg%3E") center/contain no-repeat}
 .ex-big:hover{background:var(--accent-soft);border-color:var(--accent-deep)}
 dialog.ex-focus{box-sizing:border-box;position:fixed;inset:0;width:100vw;height:100vh;height:100dvh;max-width:none;max-height:none;margin:0;padding:0;border:0;background:var(--bg);color:var(--ink);overflow:hidden;font-size:var(--fs-body);line-height:var(--lh)}
 dialog.ex-focus[open]{display:flex;flex-direction:column}
 dialog.ex-focus::backdrop{background:var(--bg)}
-#exercises>dialog.ex-focus{max-width:none}   /* not the reading column's width (.stage>*) */
+dialog.ex-focus{max-width:none!important}   /* not the reading column's width (.stage>*) */
 html.ex-focus-on{overflow:hidden}
 .ex-focus-bar{display:flex;flex-wrap:wrap;align-items:center;gap:.3rem 1rem;padding:.5rem max(1rem,(100vw - 92rem) / 2);background:var(--surface);border-bottom:1px solid var(--line);flex:none}
 .ex-focus-bar{margin-top:var(--tb,0px)}   /* Abitti's toolbar sits on the top edge while the editor is in use */
@@ -1148,7 +1151,10 @@ html.ex-focus-on{overflow:hidden}
 .ex-focus-body{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:1rem 1rem 3rem}
 .ex-focus-task{list-style:none;margin:0 auto;padding:0;max-width:44rem}
 .ex-focus-task>li{margin:0;padding:0}
-.ex-focus-task>li>.ex-head .ex-big,.ex-focus-task>li>.pad-open{display:none}   /* already big; the editor is always open here */
+.ex-focus-task .ex-big,.ex-focus-task .pad-open{display:none}   /* already big; the editor is always open here */
+.ex-focus-task>.practice-task{margin:0;max-width:none}
+.practice-task>:is(h2,h3):has(>.ex-big){position:relative;padding-right:3rem;flex-wrap:wrap}.practice-task>:is(h2,h3)>.ex-big{position:absolute;top:50%;right:0;margin:-20px 0 0}   /* at the right end of the task's heading */
+.ex-focus-body.no-pad>.ex-focus-pad{display:none}
 .ex-focus-pad{max-width:44rem;margin:1rem auto 0;padding-top:1rem;border-top:1px solid var(--line)}
 .ex-focus-pad .pad{margin:0}
 .ex-focus-pad .pad .rich-text-editor{min-height:14rem}
@@ -1157,6 +1163,12 @@ html.ex-focus-on{overflow:hidden}
   .ex-focus-task,.ex-focus-pad{min-height:0;overflow-y:auto;overscroll-behavior:contain;max-width:none;margin:0;padding:1.4rem .3rem 3rem}
   .ex-focus-pad{border-top:0;border-left:1px solid var(--line);padding-left:2.5rem}
   .ex-focus-pad .pad .rich-text-editor{min-height:calc(100dvh - 15rem)}
+  .ex-focus-body.no-pad{grid-template-columns:minmax(0,44rem);justify-content:center}
+  /* a short task (under half the view's height, lesson.js part 10): the task on top and the editor under it, filling the rest */
+  .ex-focus-body.stack{display:block;max-width:48rem;overflow-y:auto}
+  .ex-focus-body.stack>.ex-focus-task,.ex-focus-body.stack>.ex-focus-pad{overflow:visible;padding:1.4rem 0 0}
+  .ex-focus-body.stack>.ex-focus-pad{border-left:0;border-top:1px solid var(--line);margin-top:1.2rem;padding-bottom:3rem}
+  .ex-focus-body.stack .ex-focus-pad .pad .rich-text-editor{min-height:max(14rem,calc(100dvh - var(--tb,0px) - var(--th,0px) - 16rem))}
 }
 @media (max-width:600px){.ex-focus-nav{width:100%;margin-left:0}.ex-focus-nav .ex-focus-btn{flex:1;padding:0 .5rem}.ex-focus-body{padding:.8rem .8rem 3rem}.ex-focus-close::after{content:""}}
 /* Abitti's toolbar over the whole window in the dialog, also when the side panel is open (its rules point it at the panel) */
