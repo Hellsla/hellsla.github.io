@@ -111,6 +111,45 @@
           "feedback": "The normal force is perpendicular to the plank and does not cancel the friction, which is parallel to the plank. Friction does work because the box moves."
         }
       ]
+    },
+    {
+      "id": "fy4-8-L1-09",
+      "level": 1,
+      "text": "A roller coaster car with a mass of $400\\,\\text{kg}$ including the passengers starts from rest at a height of $20\\,\\text{m}$. It descends to the bottom of a valley at a height of $0\\,\\text{m}$ and then climbs to the top of a hill at a height of $12\\,\\text{m}$. Friction and air resistance are ignored. The numbers are example values.\n\nDecide which statements are true and which are false.",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "1 true, 2 false, 3 true, 4 false, 5 false",
+      "unit": "",
+      "tolerance": 0.02,
+      "statements": [
+        {
+          "text": "The speed of the car at the bottom of the valley is about $20\\,\\text{m/s}$.",
+          "true": true,
+          "feedback": "Correct: mechanical energy is conserved, so $mgh = \\tfrac12 mv^2$ and $v = \\sqrt{2gh}$. When $h = 20\\,\\text{m}$, the speed is $v \\approx 19.8\\,\\text{m/s}$."
+        },
+        {
+          "text": "If there were more passengers in the car, it would be faster at the bottom of the valley.",
+          "true": false,
+          "feedback": "Wrong: a heavier car has more kinetic energy at the bottom, but it also had more potential energy at the start. The mass cancels, and $v = \\sqrt{2gh}$ is the same."
+        },
+        {
+          "text": "The normal force of the track does no work on the car at any point of the track.",
+          "true": true,
+          "feedback": "Correct: the normal force is perpendicular to the surface of the track and therefore to the motion, so its component in the direction of the motion is zero and the work is $W = F_\\parallel s = 0$."
+        },
+        {
+          "text": "At the top of the hill, at a height of $12\\,\\text{m}$, the kinetic energy of the car is zero.",
+          "true": false,
+          "feedback": "Wrong: the car started from a higher point, so at the top it has kinetic energy $mg(20\\,\\text{m} - 12\\,\\text{m})$, that is about $31\\,\\text{kJ}$. The car would stop only at a height of $20\\,\\text{m}$."
+        },
+        {
+          "text": "If there were friction on the track, the total energy of the car and its surroundings would decrease.",
+          "true": false,
+          "feedback": "Wrong: friction decreases the mechanical energy of the car, but an equal amount of energy is transferred to the internal energy of the track, the wheels and the air. The total energy is conserved."
+        }
+      ]
     }
   ],
   "level2": [

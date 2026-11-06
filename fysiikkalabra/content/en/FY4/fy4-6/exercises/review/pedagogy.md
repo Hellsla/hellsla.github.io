@@ -1,7 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: ea2b4cf4411293ca
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 81df7a544708cbb7
+Mode: full (translation review against the reviewed Finnish set; one new task fy4-6-L2-08)
+Round 2
 
 ## Blocking
 (none)
@@ -13,6 +13,6 @@ Round 1
 (none)
 
 ## Checked
-- The new tasks keep the Finnish task structure: distractor feedback names the specific error (L1-06, L1-08), sub-parts a) to c) and the answer-box sentence are intact in L2-06, L2-07, L3-04, L3-05.
-- Language is plain and at the right level; terms are explained as in fi; the solution steps (Given, Find, Principle, Formula, Substitution, Answer, Reasonableness) are complete and match fi.
-- Significant figures and answer tolerances are equal to fi.
+- New task fy4-6-L2-08 keeps the Finnish structure: situation first, question last as its own sentence, level and kind as in fi, feedback names the specific error.
+- Language is English decimal point and natural English; reading level and terms equal to fi, glossary terms consistent.
+- The solution has the full steps (Given, Find, Principle, formula, substitution, answer, reasonableness) as in fi, with significant figures as in fi.

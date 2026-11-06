@@ -1,7 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 78c11966c9034b08
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 26473776bb9b39ee
+Mode: full (translation review against the reviewed Finnish set; one new task fy4-8-L1-09)
+Round 2
 
 ## Blocking
 (none)
@@ -13,6 +13,6 @@ Round 1
 (none)
 
 ## Checked
-- Natural English; no Finnish left (grep for ä/ö: none).
-- Situation first, question last; parts a)-c) and the "answer field takes the result of part b)" note kept; nothing added or dropped versus fi.
-- Feedback of every distractor in L1-06 and L1-08 stays instructive and matches the fi diagnosis; solutions keep Given/Find/Principle/Formula/Substitution/Answer/Reasonableness with the significance-figure reason.
+- New task fy4-8-L1-09 keeps the Finnish structure: situation first, question last as its own sentence, level and kind as in fi, feedback names the specific error.
+- Language is English decimal point and natural English; reading level and terms equal to fi, glossary terms consistent.
+- The solution has the full steps (Given, Find, Principle, formula, substitution, answer, reasonableness) as in fi, with significant figures as in fi.

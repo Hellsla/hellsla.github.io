@@ -195,3 +195,18 @@
 **Substitution:** a) $v_1 = -9.81\,\text{m/s}^2 \cdot 0.500\,\text{s} = -4.905\,\text{m/s}$ and $v_2 = 9.81\,\text{m/s}^2 \cdot 0.400\,\text{s} = 3.924\,\text{m/s}$. b) The change in momentum is $m(v_2 - v_1) = 0.60\,\text{kg} \cdot (3.924 + 4.905)\,\text{m/s} = 5.297\,\text{kg}\cdot\text{m/s}$, and the weight is $mg = 0.60\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 5.886\,\text{N}$. So $N_\text{avg} = 5.886\,\text{N} + \dfrac{5.297\,\text{N}\cdot\text{s}}{0.012\,\text{s}} = 5.886\,\text{N} + 441.5\,\text{N} = 447.3\,\text{N}$. c) For the clay ball $v_2 = 0$, so $N_\text{avg} = 5.886\,\text{N} + \dfrac{0.60\,\text{kg} \cdot 4.905\,\text{m/s}}{0.012\,\text{s}} = 5.886\,\text{N} + 245.3\,\text{N} = 251.1\,\text{N}$.
 **Answer:** b) $4.5 \cdot 10^2\,\text{N}$, two significant figures like the mass $0.60\,\text{kg}$ and the contact time $0.012\,\text{s}$. The velocities in part a are $-4.9\,\text{m/s}$ and $+3.9\,\text{m/s}$, and for the clay ball of part c the force is $2.5 \cdot 10^2\,\text{N}$.
 **Reasonableness:** The weight $5.9\,\text{N}$ is only about $1.3\,\%$ of the force of the floor. The ball fell about $1.2\,\text{m}$ and rose about $0.78\,\text{m}$, which fits a basketball. Explanation for c: the change in momentum of the clay ball is $2.9\,\text{kg}\cdot\text{m/s}$, but the momentum of the rebounding ball also changes upwards to $+2.4\,\text{kg}\cdot\text{m/s}$, so its change $5.3\,\text{kg}\cdot\text{m/s}$ is greater and a greater force is needed in the same time.
+
+## fy4-9-L1-09
+**Find:** the order of magnitude of the average force $F_\text{avg}$ when the roof stops a $20\,\text{g}$ hailstone from a speed of $20\,\text{m/s}$ in a time of $1.0\,\text{ms}$
+**Principle:** During the impact the force of the roof acts on the hailstone, and the effect of the weight is ignored, so the force of the roof is the net force. According to the impulse principle, its impulse equals the change in the momentum of the hailstone. The hailstone stops and does not bounce, so the magnitude of the change in momentum is $m v$. For the order of magnitude, the mass and the time still have to be converted to SI units.
+**Model answer:** Conversions: $m = 20\,\text{g} = 0.020\,\text{kg}$ and $\Delta t = 1.0\,\text{ms} = 0.0010\,\text{s}$.
+
+From the impulse principle $F_\text{avg}\,\Delta t = m v$, so
+
+$F_\text{avg} = \dfrac{m v}{\Delta t}$
+
+$m v = 0.020\,\text{kg} \cdot 20\,\text{m/s}$, that is $m v = 0.40\,\text{kg}\cdot\text{m/s}$
+
+$F_\text{avg} = \dfrac{0.40\,\text{kg}\cdot\text{m/s}}{0.0010\,\text{s}}$, that is $F_\text{avg} = 400\,\text{N}$
+
+The nearest option is $400\,\text{N}$. Reasonableness: the weight of the hailstone is $0.020\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 0.20\,\text{N}$, about $2000$ times smaller than the force of the roof, so ignoring the weight was justified. The other options come from errors: $0.4\,\text{N}$ when milliseconds are not converted to seconds, $4000\,\text{N}$ when the kinetic energy $\tfrac{1}{2} m v^2 = 4.0\,\text{J}$ is used instead of the momentum, and $400\,000\,\text{N}$ when the mass is substituted in grams.

@@ -300,6 +300,33 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy4-6-L2-08",
+      "level": 2,
+      "text": "Four boxes are on a floor or on a slope. Only the weight, the normal force and friction act on each box, and on box B also a horizontal push. Air resistance is ignored. The data of the boxes are example values.\n\nBox A: mass $20\\,\\text{kg}$, slides on a horizontal floor, coefficient of kinetic friction $0.30$.\n\nBox B: mass $40\\,\\text{kg}$, on a horizontal floor, pushed horizontally with a force of $30\\,\\text{N}$ but does not move, coefficient of static friction $0.50$.\n\nBox C: mass $10\\,\\text{kg}$, slides on a horizontal floor, coefficient of kinetic friction $0.45$.\n\nBox D: mass $25\\,\\text{kg}$, at rest on a slope with an angle of inclination of $30^\\circ$, coefficient of static friction $0.70$.\n\nIn which order are the boxes, from the smallest to the largest, by the magnitude of the friction force acting on them?",
+      "kind": [
+        "reasoning",
+        "model"
+      ],
+      "prompt": "Put the boxes in order by the magnitude of the friction force, from the smallest to the largest.",
+      "order": [
+        {
+          "text": "Box B"
+        },
+        {
+          "text": "Box C"
+        },
+        {
+          "text": "Box A"
+        },
+        {
+          "text": "Box D"
+        }
+      ],
+      "answer": "Box B ($30\\,\\text{N}$), box C ($44\\,\\text{N}$), box A ($59\\,\\text{N}$), box D ($1.2\\cdot 10^2\\,\\text{N}$).",
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level3": [
