@@ -16,3 +16,8 @@ an `onLatexUpdate` that draws the formula in the browser with MathJax into a sel
 
 To update: `npm pack rich-text-editor@<version>` (and the two others), copy the same files, and check the editor with
 `python scripts/test_writepad.py`.
+
+One change to the npm file (teacher 2026-11-06, a pasted picture can be made smaller): the editor's sanitizer keeps an
+image's `width` (`allowedAttributes:{img:["src","alt","width"]}`, was `["src","alt"]`), so the size the student gives a
+picture (lesson.js part 6, the picture's size bar) stays in the solution, in the saved copy and in the submission file.
+Make the same change again after an update.

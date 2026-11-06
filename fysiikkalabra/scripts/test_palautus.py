@@ -171,6 +171,8 @@ with sync_playwright() as p:
     pg.keyboard.type(" eli")
     pg.keyboard.press("Enter"); pg.keyboard.type("toinen rivi")
     paste_png(pg, t1, small)
+    # the student made the picture smaller in the editor (lesson.js imageSizer, teacher 2026-11-06): its width attribute
+    pg.evaluate(f"""() => {{ const i = document.querySelector('[id="{t1}"] .rich-text-editor img:not([data-math-image])'); i.setAttribute('width', '20'); i.dispatchEvent(new Event('input', {{ bubbles: true }})); }}""")
     pg.keyboard.type(" viimeinen")   # typed just before the download: must be in the file
     name, f1 = download(pg)
     files["v1"] = f1
@@ -196,6 +198,7 @@ with sync_playwright() as p:
     expect("the formula is its LaTeX with a PNG for the teacher", m["latex"] == "G=mg" and base64.b64decode(m["png"])[:4] == b"\x89PNG" and m["w"] > 0, {k: str(v)[:40] for k, v in m.items()})
     img = a1["content"][3]
     expect("the picture is embedded PNG data, not a blob or link", img["mime"] == "image/png" and base64.b64decode(img["data"]) == small.read_bytes() and (img["w"], img["h"]) == (40, 30))
+    expect("the size the student gave the picture is in the file (dw, CSS px)", img.get("dw") == 20, {k: v for k, v in img.items() if k != "data"})
     expect("unanswered tasks are 'empty' with no content and no other answers", all(a["status"] == "empty" and a["content"] == [] and a["responses"] == [] for a in f1["answers"] if a["task"] != t1))
     expect("the page says to return the file with Forms", "Palauta ladattu tiedosto Palauta-napista oman ryhmäsi lomakkeella." in pg.inner_text(".palautus-status"))
     _, f1b = download(pg)
@@ -453,6 +456,7 @@ with sync_playwright() as p:
     expect("the statement is shown with its formulas (MathML)", "Kappaleen massa" in tp.inner_text("#gStatement") and tp.locator("#gStatement math").count() > 0)
     # A's latest (v2) has task 1 answered with formula and picture
     expect("the answer: text, formula image with LaTeX, picture", tp.locator("#gAnswer img.math").count() == 1 and tp.get_attribute("#gAnswer img.math", "alt") == "G=mg" and tp.locator("#gAnswer img.shot").count() == 1)
+    expect("the picture is shown in the size the student gave it", tp.evaluate("document.querySelector('#gAnswer img.shot').getBoundingClientRect().width") == 20)
     expect("the picture fits the width", tp.evaluate("(() => { const i = document.querySelector('#gAnswer img.shot'); return i.getBoundingClientRect().width <= document.getElementById('gAnswer').clientWidth; })()"))
     tp.click("#gAnswer img.shot"); expect("a click enlarges the picture", tp.evaluate("document.getElementById('zoom').style.display") == "block"); tp.keyboard.press("Escape")
     expect("no external loads in the answer", tp.evaluate("[...document.querySelectorAll('#gAnswer img')].every((i) => i.src.startsWith('data:image/png;base64,') || i.src.startsWith('data:image/jpeg;base64,'))"))
