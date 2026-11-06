@@ -134,30 +134,9 @@
       S.ov = ov;
       $('title').textContent = 'RuukkiLabra · ' + ov.course + (ov.group ? ' · ryhmä ' + ov.group : '') + ' · arviointi';
       $('students').textContent = 'Hyväksyttyjä palauttajia ' + ov.students + '.';
-      var box = $('tasks'); box.textContent = '';
-      ov.chapters.forEach(function (c) {
-        var scored = 0, all = 0;
-        c.tasks.forEach(function (t) { scored += t.scored; all += t.submissions; });
-        var d = el('details', 'chapter'); d.setAttribute('data-chapter', c.id);
-        d.open = S.open[c.id] !== undefined ? S.open[c.id] : c.submissions > 0;   // palautetut luvut auki
-        d.addEventListener('toggle', function () { S.open[c.id] = d.open; });
-        var sm = el('summary', null, 'Luku ' + c.number + ' · ' + c.title + ' ');
-        sm.append(el('span', 'muted', '· palautuksia ' + c.submissions + (c.submissions ? ' · arvioitu ' + scored + '/' + all : '')));
-        var tb = el('tbody'), table = el('table'), head = el('thead'), hr = el('tr');
-        ['Tehtävä', 'Taso', 'Palautuksia', 'Joista tyhjiä', 'Arvioitu'].forEach(function (h) { hr.append(el('th', null, h)); });
-        head.append(hr); table.append(head, tb);
-        c.tasks.forEach(function (t) {
-          var tr = el('tr', 'task-row'); tr.tabIndex = 0;
-          tr.append(el('td', null, 'Tehtävä ' + t.number), el('td', null, String(t.level)), el('td', null, String(t.submissions)), el('td', null, String(t.empty)), el('td', null, String(t.scored)));
-          tr.addEventListener('click', function () { openTask(t.id); });
-          tr.addEventListener('keydown', function (e) { if (e.key === 'Enter') openTask(t.id); });
-          tb.append(tr);
-        });
-        d.append(sm, table); box.append(d);
-      });
-      box.hidden = false;
+      renderTasks(ov);
       renderSummary(ov);
-      $('homeState').textContent = ov.students ? '' : (window.RL_LOCAL ? 'Valitse ryhmän palautukset (zip) ylhäältä.' : 'Ei palautuksia. RuukkiLabra → Tuo palautukset, sitten Päivitä.');
+      $('homeState').textContent = ov.students ? '' : (window.RL_LOCAL ? 'Tuo ryhmän palautukset (zip) ylhäältä: Tuo tiedosto.' : 'Ei palautuksia. RuukkiLabra → Tuo palautukset, sitten Päivitä.');
       var pb = $('problems').querySelector('tbody'); pb.textContent = '';
       ov.problems.forEach(function (p) {
         var tr = el('tr');
@@ -173,6 +152,37 @@
       });
       $('problems').hidden = !ov.problems.length; $('probSec').hidden = !ov.problems.length;
     }, function (e) { $('homeState').textContent = 'Tietoja ei voitu ladata: ' + errText(e); $('homeState').className = 'err'; });
+  }
+  // Tehtävät luvuittain. Ratkaisuja = palauttajat, joiden uusimmassa palautuksessa tehtävään on ratkaisu (tyhjät eivät
+  // ole tehtyjä, opettaja 6.11.2026). Vain arvioimattomat: vain luvut ja tehtävät, joissa on arvioimaton ratkaisu.
+  function renderTasks(ov) {
+    var box = $('tasks'); box.textContent = '';
+    var shown = 0;
+    ov.chapters.forEach(function (c) {
+      var sol = 0, scored = 0, open = 0;
+      c.tasks.forEach(function (t) { sol += t.solutions; scored += t.scored; open += t.open; });
+      var tasks = S.onlyOpen ? c.tasks.filter(function (t) { return t.open > 0; }) : c.tasks;
+      if (S.onlyOpen && !tasks.length) return;
+      shown++;
+      var d = el('details', 'chapter'); d.setAttribute('data-chapter', c.id);
+      d.open = S.onlyOpen || (S.open[c.id] !== undefined ? S.open[c.id] : c.submissions > 0);   // palautetut luvut auki
+      d.addEventListener('toggle', function () { if (!S.onlyOpen) S.open[c.id] = d.open; });
+      var sm = el('summary', null, 'Luku ' + c.number + ' · ' + c.title + ' ');
+      sm.append(el('span', 'muted', '· palautuksia ' + c.submissions + (c.submissions ? ' · arvioitu ' + scored + '/' + sol + (open ? ' · arvioimatta ' + open : '') : '')));
+      var tb = el('tbody'), table = el('table'), head = el('thead'), hr = el('tr');
+      ['Tehtävä', 'Taso', 'Ratkaisuja', 'Arvioitu', 'Arvioimatta'].forEach(function (h) { hr.append(el('th', null, h)); });
+      head.append(hr); table.append(head, tb);
+      tasks.forEach(function (t) {
+        var tr = el('tr', 'task-row'); tr.tabIndex = 0; tr.setAttribute('data-task', t.id);
+        tr.append(el('td', null, 'Tehtävä ' + t.number), el('td', null, String(t.level)), el('td', null, String(t.solutions)), el('td', null, String(t.scored)), el('td', null, String(t.open)));
+        tr.addEventListener('click', function () { openTask(t.id); });
+        tr.addEventListener('keydown', function (e) { if (e.key === 'Enter') openTask(t.id); });
+        tb.append(tr);
+      });
+      d.append(sm, table); box.append(d);
+    });
+    if (S.onlyOpen && !shown) box.append(el('p', 'muted', 'Kaikki ratkaisut on arvioitu.'));
+    box.hidden = false;
   }
   // Kooste (opettaja 5.11.2026): nimet vasemmalla; Tehty, Tarkistamatta ja Pisteet joko koko opintojaksosta (luvut,
   // joista ryhmällä on palautuksia) tai yhdestä luvusta. Järjestys sarakkeen otsikosta.
@@ -231,7 +241,7 @@
   }
   $('scope').addEventListener('change', function () { S.scope = $('scope').value; if (S.ov) renderSummary(S.ov); });
   $('refresh').addEventListener('click', loadHome);
-  $('onlyOpen').addEventListener('change', function () { S.onlyOpen = $('onlyOpen').checked; });
+  $('onlyOpen').addEventListener('change', function () { S.onlyOpen = $('onlyOpen').checked; if (S.ov) renderTasks(S.ov); });
 
   /* ---- arviointi ---- */
   function cur() { var e = S.entries[S.idx]; return e ? { entry: e, version: e.versions[S.ver] } : null; }
@@ -248,8 +258,8 @@
     S.entries = []; lockUi(true);
     call('rlQueue', id).then(function (q) {
       S.entries = S.onlyOpen ? q.filter(function (e) { return scoreText(e.versions[e.versions.length - 1].score) === ''; }) : q;
-      $('filterNote').textContent = S.onlyOpen ? 'Vain arvioimattomat (' + S.entries.length + ' / ' + q.length + ' palauttajaa)' : '';
-      if (!S.entries.length) { $('gAnswer').textContent = S.onlyOpen ? 'Kaikki tämän tehtävän palautukset on arvioitu.' : 'Tästä luvusta ei ole hyväksyttyjä palautuksia.'; lockUi(false); $('points').disabled = true; return; }
+      $('filterNote').textContent = S.onlyOpen ? 'Vain arvioimattomat (' + S.entries.length + ' / ' + q.length + ' ratkaisua)' : '';
+      if (!S.entries.length) { $('gAnswer').textContent = S.onlyOpen ? 'Kaikki tämän tehtävän ratkaisut on arvioitu.' : 'Tähän tehtävään ei ole ratkaisuja (tyhjiä ei näytetä).'; lockUi(false); $('points').disabled = true; return; }
       show(0, null);
     }, function (e) { $('gAnswer').textContent = ''; setState('Jonoa ei voitu ladata: ' + errText(e), 'no'); lockUi(false); });
   }

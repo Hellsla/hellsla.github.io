@@ -458,24 +458,27 @@ function rlOverview() {
   var chapters = RL_COURSE.chapters.map(function (c) {
     var subs = m.students.filter(function (s) { return !!s.chapters[c.id]; });
     var tasks = c.tasks.map(function (t) {
-      var empty = 0, scored = 0;
+      // tyhjäksi jätetty tehtävä ei ole ratkaisu eikä arvioitava (opettaja 6.11.2026)
+      var empty = 0, scored = 0, open = 0;
       subs.forEach(function (s) {
         var last = rlLatest_(s, c.id);
-        if (last.answered.indexOf(t.id) < 0) empty++;
-        if (rlScoreOf_(m, s.email, last.sub, t.id) !== '') scored++;
+        if (last.answered.indexOf(t.id) < 0) { empty++; return; }
+        if (rlScoreOf_(m, s.email, last.sub, t.id) !== '') scored++; else open++;
       });
-      return { id: t.id, number: t.number, level: t.level, html: t.html, answer: t.answer, submissions: subs.length, empty: empty, scored: scored };
+      return { id: t.id, number: t.number, level: t.level, html: t.html, answer: t.answer, submissions: subs.length, empty: empty,
+               solutions: subs.length - empty, scored: scored, open: open };
     });
     return { id: c.id, number: c.number, title: c.title, submissions: subs.length, tasks: tasks };
   });
   return { course: RL_COURSE.id, group: RL_CONFIG.GROUP || '', maxPoints: RL_CONFIG.MAX_POINTS, students: m.students.length, chapters: chapters,
            summary: rlSummary_(m), problems: m.problems };
 }
+// Jonossa vain opiskelijat, joiden uusimmassa palautuksessa tehtävään on ratkaisu (opettaja 6.11.2026: tyhjiä ei näytetä).
 function rlQueue(taskId) {
   var info = rlTaskInfo_(taskId);
   if (!info) throw rlError_('Tuntematon tehtävä.');
   var m = rlModel_(), ch = info.chapter.id;
-  return m.students.filter(function (s) { return !!s.chapters[ch]; }).map(function (s) {
+  return m.students.filter(function (s) { var last = rlLatest_(s, ch); return !!last && last.answered.indexOf(taskId) >= 0; }).map(function (s) {
     return { email: s.email, versions: s.chapters[ch].map(function (v) {
       return { fileId: v.fileId, sub: v.sub, time: v.time, answered: v.answered.indexOf(taskId) >= 0, score: rlScoreOf_(m, s.email, v.sub, taskId) };
     }) };
