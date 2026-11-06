@@ -267,6 +267,37 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy5-15-L2-08",
+      "level": 2,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "Puhelimen äänitasosovellus näyttää vilkkaalla kadulla intensiteettitason $82\\,\\text{dB}$ ja kotona olohuoneessa $42\\,\\text{dB}$. Lukemat ovat esimerkkiarvoja.\n\nNoin kuinka moninkertainen äänen intensiteetti on kadulla olohuoneeseen verrattuna?",
+      "answer": "Noin $10^{4}$-kertainen",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Noin $2$-kertainen",
+          "feedback": "Tässä desibelilukemia on verrattu kuin tavallisia lukuja: $82 : 42 \\approx 2$. Desibeliasteikko on logaritminen. Siksi kaksinkertainen lukema ei tarkoita kaksinkertaista intensiteettiä."
+        },
+        {
+          "text": "Noin $40$-kertainen",
+          "feedback": "Tässä tasojen erotus $40\\,\\text{dB}$ on luettu suoraan intensiteettien suhteeksi. Erotus kertoo suhteen logaritmin. Jokainen $10\\,\\text{dB}$ tarkoittaa, että intensiteetti kymmenkertaistuu."
+        },
+        {
+          "text": "Noin $10^{4}$-kertainen",
+          "correct": true,
+          "feedback": "Oikein: tasojen erotus on $40\\,\\text{dB}$, eli neljä kertaa $10\\,\\text{dB}$. Jokainen $10\\,\\text{dB}$ kymmenkertaistaa intensiteetin, joten suhde on $10^{4}$."
+        },
+        {
+          "text": "Noin $10^{40}$-kertainen",
+          "feedback": "Tässä erotusta $40\\,\\text{dB}$ ei ole jaettu $10\\,\\text{dB}$:llä ennen potenssiin korottamista. Suhteen logaritmi on $\\tfrac{40\\,\\text{dB}}{10\\,\\text{dB}} = 4$ eikä $40$."
+        }
+      ]
     }
   ],
   "level3": [
