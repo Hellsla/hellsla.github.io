@@ -1,21 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: c5582c2049dad6c5
-Mode: full (translation review against the reviewed Finnish set)
+CONTENT-HASH: c9d7571df34d0c92
 Round 1
 
 ## Blocking
 (none)
 
-## Fixed
-(none needed: the plain Finnish already matched fi and was clear)
-
 ## Polish
-- [Minor] L2-05 hint box and Reasonableness lines: colon division (`2.30 V - 27.3 : 61.5`) renders as a stray colon; same in fi, fix in all languages together.
+(none)
 
 ## Checked
-- Opened captures under content/fi-easy/FY8/fy8-6/review/shots/ for L3-04 (fi-easy): tables, decimal separators, units and LaTeX render correctly, no overflow or clipped text.
-- Table captions and column headers are translated.
-- Answer chips show the same values as fi.
+- Own scratch script, 390 px, task card opened with Answer and solution: opened /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-b2-m4x9/fi-easy-fy8-6-L2-08.png (data table plus 4 options; a wrong option's feedback open); read in full. For fy8-6 I also cropped the card into three columns (/tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-b2-m4x9/s-fi-easy-6.png) to read the table, options and solution formulas at full size.
+- Older tasks with re-set text (fy8-6-L2-03, L2-04, L3-01, L3-02, L3-03): opened the top 760 px of each in the montages /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-b2-m4x9/m-fi-easy-0.png, m-fi-easy-1.png, m-fi-easy-2.png (text and input only; their solutions were not opened).
+- By script: no horizontal scroll at 390 px, no KaTeX error nodes. The packet's screenshot list was empty and not used; solutions.md and answers.py read as source only.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 4

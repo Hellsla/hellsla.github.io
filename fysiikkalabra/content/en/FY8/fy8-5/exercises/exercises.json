@@ -111,6 +111,36 @@
       "answer": 14,
       "unit": "electrons",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-5-L1-09",
+      "level": 1,
+      "text": "The energy of the electron of a hydrogen atom is $E_n = -\\tfrac{13.6\\,\\text{eV}}{n^2}$, where $n$ is the principal quantum number. The electron can be, for example, in the following states.\n\nState A: $3\\text{d}$ state\n\nState B: $1\\text{s}$ state\n\nState C: $4\\text{s}$ state\n\nState D: $2\\text{p}$ state\n\nState E: $5\\text{p}$ state\n\nIn what order are the states, according to the energy of the electron, from the smallest to the greatest?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "prompt": "Arrange by the energy of the electron from the smallest to the greatest.",
+      "order": [
+        {
+          "text": "State B"
+        },
+        {
+          "text": "State D"
+        },
+        {
+          "text": "State A"
+        },
+        {
+          "text": "State C"
+        },
+        {
+          "text": "State E"
+        }
+      ],
+      "answer": "State B ($-13.6\\,\\text{eV}$), state D ($-3.40\\,\\text{eV}$), state A ($-1.51\\,\\text{eV}$), state C ($-0.850\\,\\text{eV}$), state E ($-0.544\\,\\text{eV}$).",
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level2": [

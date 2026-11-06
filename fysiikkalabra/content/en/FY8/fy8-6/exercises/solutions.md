@@ -177,6 +177,47 @@
 **Answer:** $\Delta E = 0.0625\,\text{eV}$, three significant figures like the wavelengths. An LED is not monochromatic because the energies of its photons vary: the intensity is at least half of the maximum when the energy of a photon is between $1.94\,\text{eV}$ and $2.00\,\text{eV}$, and these photons make up the main part of the spectrum. The energy of a photon at the peak is about $1.97\,\text{eV}$. The energy gap is a property of the material, but the electrons and holes in the bands are at slightly different energies because of thermal motion, so the energies of the photons are distributed over a narrow interval around the energy gap.
 **Reasonableness:** With round numbers $1240 : 620 - 1240 : 640 \approx 2.00 - 1.94 = 0.06\,\text{eV}$. The difference is about $3\,\%$ of the energy of a photon at the peak, $1.97\,\text{eV}$, which fits a narrow but not infinitely narrow band.
 
+## fy8-6-L2-08
+**Find:** which conclusion from the data of the five LEDs is justified.
+**Principle:** At the threshold voltage the energy gained by an electron is approximately the energy of a photon, $eU_\text{k} \approx hf$, so the slope of the graph $(f, U_\text{k})$ is $k = \tfrac{h}{e}$ and the Planck constant is $h = ek$. The uncertainty of the slope transfers to the Planck constant with the same factor, $\Delta h = e\,\Delta k$. The result agrees with the accepted value if the accepted value is between $h - \Delta h$ and $h + \Delta h$.
+**Model answer:** The Planck constant and its uncertainty:
+
+$$\begin{aligned}
+&h = ek \\
+&= 1.602 \cdot 10^{-19}\,\text{C} \\
+&\quad \cdot 3.98 \cdot 10^{-15}\,\text{V}\,\text{s} \\
+&= 6.376 \cdot 10^{-34}\,\text{J}\,\text{s}
+\end{aligned}$$
+
+$$\begin{aligned}
+&\Delta h = e\,\Delta k \\
+&= 1.602 \cdot 10^{-19}\,\text{C} \\
+&\quad \cdot 0.21 \cdot 10^{-15}\,\text{V}\,\text{s} \\
+&= 0.336 \cdot 10^{-34}\,\text{J}\,\text{s}
+\end{aligned}$$
+
+The result of the group is $h = (6.4 \pm 0.3) \cdot 10^{-34}\,\text{J}\,\text{s}$, that is, the interval is $(6.04\text{–}6.71) \cdot 10^{-34}\,\text{J}\,\text{s}$. The difference from the accepted value is
+
+$$\begin{aligned}
+&6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\quad - 6.376 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&= 0.25 \cdot 10^{-34}\,\text{J}\,\text{s},
+\end{aligned}$$
+
+which is smaller than $\Delta h$. So the accepted value is within the interval of the group, and the Planck constant of the group agrees with the accepted value.
+
+The points also fit the line. For the red LED the line gives the voltage
+
+$$\begin{aligned}
+&3.98 \cdot 10^{-15}\,\text{V}\,\text{s} \cdot 4.76 \cdot 10^{14}\,\text{Hz} \\
+&\quad - 0.07\,\text{V} \\
+&= 1.82\,\text{V},
+\end{aligned}$$
+
+and the measured $1.85\,\text{V}$ differs from it by less than the measurement uncertainty $0.05\,\text{V}$.
+
+The other conclusions are not justified. The line does not have to pass through the origin, because the measured threshold voltage differs from the value $\tfrac{hf}{e}$ by about the same amount for all LEDs; the difference shifts the line but does not change the slope. A systematic error cannot be concluded, because the difference $0.25 \cdot 10^{-34}\,\text{J}\,\text{s}$ is within the uncertainty $0.34 \cdot 10^{-34}\,\text{J}\,\text{s}$. Nor can the difference be compared directly with the uncertainty $\Delta k$ of the slope, because it has a different unit; the comparison is made with the uncertainty of the Planck constant, $\Delta h = e\,\Delta k$.
+
 ## fy8-6-L3-04
 **Given:** the wavelengths and measured voltages of five LEDs from the table, zero-point error $+0.05\,\text{V}$, $c = 2.998 \cdot 10^8\,\text{m/s}$, $e = 1.602 \cdot 10^{-19}\,\text{C}$, accepted $h_0 = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$
 **Find:** the Planck constant $h$ from the slope of the line in the unit $\text{J}\,\text{s}$, and the effect of the correction on the line and on the result of a single LED
