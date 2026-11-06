@@ -29,6 +29,7 @@ a["fy6-13-L3-02"] = (5.6 - 1.0) * 220e-12 * 1.5e3 * 1e6    # connected, glass in
 d = 2 * 6.0e3 / 24e6                                       # only half of 24 MV/m used: d = 6,0 kV : 12 MV/m = 0,50 mm
 a["fy6-13-L3-03"] = 1.0e-9 * d / (EPS0 * 2.6) * 1e4        # A = C d : (eps0 eps_r) = 217 cm^2
 # Exercise bank additions (teacher 2026-11-04): L1-06, L1-07 and L2-06 are multiple choice (no number)
+# YO-skill form (teacher 2026-11-05): L1-09 is a true-or-false list (no number); Q = C U = 1,2 mC, W = 1/2 C U^2 = 7,2 mJ
 a["fy6-13-L1-08"] = 0.5 * 1000e-6 * (18 ** 2 - 6.0 ** 2) * 1e3   # dW = 1/2 C (U2^2 - U1^2) = 1/2 · 1000 µF · (324 - 36) V^2 = 144 mJ
 # L2-05 table: (U in V, Q in µC); line through the origin, slope k = Σ U Q / Σ U^2 = C in µF
 uq = [(2.0, 94), (4.0, 189), (6.0, 281), (8.0, 380), (10.0, 471), (12.0, 567)]

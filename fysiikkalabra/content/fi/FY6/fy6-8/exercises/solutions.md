@@ -202,3 +202,26 @@ c) $I_\text{k} = \dfrac{6{,}11\,\text{V}}{0{,}80\,\Omega} = 7{,}64\,\text{A}$
 **Vastaus:** Vastauslaatikkoon: c) $7{,}6\,\text{A}$, kaksi merkitsevää numeroa kuten johtimien resistanssissa $0{,}30\,\Omega$. Mittaus olisi pitänyt tehdä kytkemällä jännitemittari suoraan paristoryhmän napoihin, jolloin johtimien jännitehäviö ei sisälly mitattuun jännitteeseen.
 Muut kohdat: a) paristoryhmän lähdejännite on $E \approx 6{,}11\,\text{V}$. b) Oppilaan sisäinen resistanssi on liian suuri, koska kulmakerroin sisältää johtimien resistanssin; paristoryhmän sisäinen resistanssi on $0{,}80\,\Omega$. Oppilaan oikosulkuvirta $5{,}6\,\text{A}$ on liian pieni, koska hän jakoi lähdejännitteen liian suurella resistanssilla.
 **Järkevyys:** Mallin mukaan virralla $2{,}00\,\text{A}$ paristoryhmän napajännite on $6{,}11\,\text{V} - 0{,}80\,\Omega \cdot 2{,}00\,\text{A} = 4{,}51\,\text{V}$ ja johtimien jälkeen $4{,}51\,\text{V} - 0{,}30\,\Omega \cdot 2{,}00\,\text{A} = 3{,}91\,\text{V}$, mikä on taulukon neljäs arvo. Oikea oikosulkuvirta on suurempi kuin oppilaan, koska paristoryhmän sisäinen resistanssi on pienempi kuin hänen saamansa $1{,}1\,\Omega$. Jos navat yhdistettäisiin johtimilla, virta olisi pienempi, $6{,}11\,\text{V} : 1{,}10\,\Omega \approx 5{,}6\,\text{A}$ eli oppilaan luku, mutta se on virta johtimien kanssa, ei paristoryhmän oikosulkuvirta.
+
+## fy6-8-L2-08
+**Kysytty:** mikä johtopäätös pariston lähdejännitteestä $E$ ja sisäisestä resistanssista $R_\text{s}$ on taulukon mittausten perusteella perusteltu.
+**Periaate:** Napajännite on $U = E - R_\text{s} I$, joten mittauspisteiden $(I, U)$ pitäisi asettua laskevalle suoralle. Suora leikkaa pystyakselin kohdassa $U = E$, ja sen kulmakerroin on $-R_\text{s}$. Kulmakerroin luetaan kahdesta kaukana toisistaan olevasta pisteestä. Pisteiden poikkeamia suorasta verrataan mittausepävarmuuteen $\pm 0{,}01\,\text{V}$.
+**Mallivastaus:** Napajännitteen pudotukset peräkkäisten mittausten välillä, kun virta kasvaa $0{,}20\,\text{A}$, ovat $0{,}08\,\text{V}$, $0{,}07\,\text{V}$, $0{,}09\,\text{V}$ ja $0{,}08\,\text{V}$. Ne eroavat toisistaan enintään $0{,}02\,\text{V}$, mikä mahtuu kahden lukeman epävarmuuteen $2 \cdot 0{,}01\,\text{V}$. Pisteet sopivat siis yhdelle suoralle, eikä mittauksista voi päätellä sisäisen resistanssin muuttuvan.
+
+Kulmakerroin ääripisteistä:
+
+$$\begin{aligned}
+&R_\text{s} = -\frac{\Delta U}{\Delta I} \\
+&\phantom{R_\text{s}} = -\frac{1{,}19\,\text{V} - 1{,}51\,\text{V}}{0{,}90\,\text{A} - 0{,}10\,\text{A}} \\
+&\phantom{R_\text{s}} = \frac{0{,}32\,\text{V}}{0{,}80\,\text{A}} = 0{,}40\,\Omega
+\end{aligned}$$
+
+Lähdejännite saadaan jatkamalla suoraa pisteestä $(0{,}10\,\text{A};\ 1{,}51\,\text{V})$ kohtaan $I = 0$:
+
+$$\begin{aligned}
+&E = U + R_\text{s} I \\
+&\phantom{E} = 1{,}51\,\text{V} + 0{,}40\,\Omega \cdot 0{,}10\,\text{A} \\
+&\phantom{E} = 1{,}55\,\text{V}
+\end{aligned}$$
+
+Johtopäätös: lähdejännite on noin $1{,}55\,\text{V}$ ja sisäinen resistanssi noin $0{,}40\,\Omega$. Pienimmän virran lukema $1{,}51\,\text{V}$ on napajännite, ei lähdejännite. Yhden mittauksen osamäärä, esimerkiksi $1{,}19\,\text{V} : 0{,}90\,\text{A} \approx 1{,}3\,\Omega$, on kuorman resistanssi eikä sisäinen resistanssi. Epävarmuus vaikuttaa myös tulokseen: jos ääripisteiden lukemat ovat $0{,}01\,\text{V}$ vinossa vastakkaisiin suuntiin, kulmakertoimesta tulee $0{,}30\,\text{V} : 0{,}80\,\text{A} \approx 0{,}38\,\Omega$ tai $0{,}34\,\text{V} : 0{,}80\,\text{A} \approx 0{,}43\,\Omega$, joten sisäinen resistanssi on noin $0{,}4\,\Omega$.

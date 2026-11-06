@@ -49,6 +49,7 @@ FB_26 = [31.0, 14.4, 7.6, 3.5, 1.95]                      # pair B, 20 nC and q_
 ratios = [b / x for b, x in zip(FB_26, FA_26)]            # F_B : F_A = q_B : 20 nC at every distance
 a["fy6-10-L2-06"] = 20 * sum(ratios) / len(ratios)        # sum 17,45, mean 3,49, q_B = 69,8 nC
 a["fy6-10-L2-07"] = F(8.0 * nC, 12 * nC, 3.0 * cm) * 1000   # 8,988e9 · 96e-18 C^2 : 9,0e-4 m^2 = 0,9587 mN (the student divided by r)
+# fy6-10-L2-08 (multiple choice, text answer): F' / F = (2q · 2q / (3r)^2) / (q · 2q / r^2) = 4/9 · 1/2 = 2/9
 # Level 3 additions
 s_34 = (6.0 / 2.5) ** 0.5                                 # x / (x - d) = sqrt(|q1| / |q2|) = 1,549 (zero point beyond q2)
 a["fy6-10-L3-04"] = 12 * s_34 / (s_34 - 1)                # x = d s / (s - 1) = 33,85 cm from q1

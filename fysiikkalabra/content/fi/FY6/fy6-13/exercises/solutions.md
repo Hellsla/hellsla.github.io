@@ -140,6 +140,23 @@
 **Vastaus:** $144\,\text{mJ}$, kolme merkitsevää numeroa, koska kapasitanssi $1000\,\mu\text{F}$ ja jännite $18\,\text{V}$ määräävät tuloksen riittävän tarkasti.
 **Järkevyys:** Jännite kolminkertaistuu, joten energia kasvaa $3^2 = 9$-kertaiseksi: $W_2 : W_1 = 162\,\text{mJ} : 18\,\text{mJ} = 9$. Kasvu on $9W_1 - W_1 = 8W_1 = 8 \cdot 18\,\text{mJ} = 144\,\text{mJ}$.
 
+## fy6-13-L1-09
+**Kysytty:** mitkä viidestä väitteestä ladatusta kondensaattorista ovat tosia.
+**Periaate:** Latauksessa paristo siirtää varausta levystä toiseen, joten levyillä on varaukset $+Q$ ja $-Q$, ja $Q = CU$. Varaus ei kulje eristeen läpi, ja virta lakkaa, kun kondensaattorin jännite on pariston jännite. Kapasitanssi riippuu vain rakenteesta, ja energia on $W = \tfrac{1}{2} C U^2$.
+**Mallivastaus:** Varaus on
+
+$Q = CU = 100 \cdot 10^{-6}\,\text{F} \cdot 12\,\text{V}$
+
+$Q = 1{,}2 \cdot 10^{-3}\,\text{C} = 1{,}2\,\text{mC}$
+
+ja energia
+
+$W = \tfrac{1}{2} C U^2 = \tfrac{1}{2} \cdot 100 \cdot 10^{-6}\,\text{F} \cdot (12\,\text{V})^2$
+
+$W = 7{,}2 \cdot 10^{-3}\,\text{J} = 7{,}2\,\text{mJ}$
+
+1 tosi: levyjen varaukset ovat $+1{,}2\,\text{mC}$ ja $-1{,}2\,\text{mC}$, ja niiden summa on nolla. 2 epätosi: eriste ei päästä varausta läpi, ja virta kulkee johtimissa vain latauksen aikana; kun virta on lakannut, levyjen varaus ei enää muutu. 3 epätosi: kaksinkertainen jännite tuo kaksinkertaisen varauksen, joten $C = \tfrac{Q}{U}$ on yhä $100\,\mu\text{F}$. 4 epätosi: $14{,}4\,\text{mJ}$ on $QU$ eli pariston antama energia; kondensaattoriin varastoituu siitä puolet, $7{,}2\,\text{mJ}$, ja toinen puoli muuttuu vastuksen sisäenergiaksi. 5 tosi: kun $C$ pysyy samana, energia on verrannollinen jännitteen neliöön, joten $24\,\text{V}$:ssa se on $4 \cdot 7{,}2\,\text{mJ} = 28{,}8\,\text{mJ}$.
+
 ## fy6-13-L2-05
 **Annettu:** taulukon pisteet $(U;\ Q)$: $(2{,}0\,\text{V};\ 94\,\mu\text{C})$, $(4{,}0\,\text{V};\ 189\,\mu\text{C})$, $(6{,}0\,\text{V};\ 281\,\mu\text{C})$, $(8{,}0\,\text{V};\ 380\,\mu\text{C})$, $(10{,}0\,\text{V};\ 471\,\mu\text{C})$ ja $(12{,}0\,\text{V};\ 567\,\mu\text{C})$
 **Kysytty:** energia $W$ jännitteellä $12\,\text{V}$ millijouleina

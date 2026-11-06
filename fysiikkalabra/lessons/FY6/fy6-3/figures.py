@@ -245,8 +245,56 @@ def hero():
     return f.svg()
 
 
+# Graph choice of task fy6-3-L1-09: four (I, U) graphs on one grid, R = 2,0 kΩ given and Ohm's law holding; only
+# "pick-k2" is right (U = 2,0 kΩ · I: 8,0 V at 4,0 mA). The names say the drawn line or curve, not the answer.
+PICK_DESC = ("(I,U)-kuvaaja mittakaavassa: vaaka-akselilla virta I milliampeereina nollasta viiteen milliampeeriin, apuviivat "
+             "0,5 mA:n välein ja lukuarvot milliampeerin välein; pystyakselilla jännite U voltteina nollasta 12 volttiin, "
+             "apuviivat voltin välein ja lukuarvot kahden voltin välein. ")
+
+
+def pick_axes(fid, label):
+    """One option of the graph choice: the same (I, U) axes, I 0–5 mA and U 0–12 V, for every option."""
+    f = Fig(fid, 360, PICK_DESC + label)
+    a = Axes(f, (96, 320), (464, 54), x=(0, 5.0), y=(0, 12.0), xticks=[0.5 * k for k in range(1, 11)],
+             yticks=list(range(1, 13)), xlabel=r"I\ (\text{mA})", ylabel=r"U\ (\text{V})",
+             xfmt=lambda v: fi(v) if float(v).is_integer() else "", yfmt=lambda v: fi(v) if v % 2 == 0 else "")
+    return f, a
+
+
+def pick_graph(fid, label, pts):
+    """The option's line or curve, in the same colour and weight for every option."""
+    f, a = pick_axes(fid, label)
+    a.line(pts, INK, 3.5)
+    return f.svg()
+
+
+def pick_k2():
+    return pick_graph("fy63-pick-k2", "Origosta lähtevä nouseva suora kulkee pisteiden (2,0 mA; 4,0 V) ja (4,0 mA; 8,0 V) "
+                      "kautta ja päättyy pisteeseen (4,5 mA; 9,0 V).", [(0, 0), (4.5, 9.0)])
+
+
+def pick_k05():
+    """The slope inverted: R taken as I : U, 0,5 V per mA."""
+    return pick_graph("fy63-pick-k05", "Origosta lähtevä loivasti nouseva suora kulkee pisteen (4,0 mA; 2,0 V) kautta ja "
+                      "päättyy pisteeseen (4,5 mA; 2,25 V).", [(0, 0), (4.5, 2.25)])
+
+
+def pick_curve():
+    """Not ohmic: U = 0,5 V · (I / mA)², so U : I = 2,0 kΩ only at 4,0 mA and the resistance grows with the voltage."""
+    return pick_graph("fy63-pick-curve", "Origosta lähtevä käyrä nousee aluksi loivasti ja sitten yhä jyrkemmin. Se kulkee "
+                      "pisteiden (2,0 mA; 2,0 V) ja (4,0 mA; 8,0 V) kautta ja päättyy pisteeseen (4,5 mA; noin 10,1 V).",
+                      [(4.5 * k / 60, 0.5 * (4.5 * k / 60) ** 2) for k in range(61)])
+
+
+def pick_flat():
+    """The resistance's number drawn as a value of U instead of the slope."""
+    return pick_graph("fy63-pick-flat", "Vaakasuora suora kulkee jännitteen 2,0 V kohdalla virrasta 0 mA virtaan 4,5 mA.",
+                      [(0, 2.0), (4.5, 2.0)])
+
+
 FIGURES = {"hero": hero, "measure-circuit": measure_circuit, "micro": micro, "curves": curves, "wire": wire_fig,
-           "lamp-curve": lamp_curve, "resistor-points": resistor_points}
+           "lamp-curve": lamp_curve, "resistor-points": resistor_points,
+           "pick-k2": pick_k2, "pick-k05": pick_k05, "pick-curve": pick_curve, "pick-flat": pick_flat}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "measure-circuit": "safe: how ammeter (series) and voltmeter (parallel) are connected to measure R",
@@ -255,4 +303,8 @@ REUSE = {
     "wire": "reveals: R doubles with length and halves with cross-section",
     "lamp-curve": "safe: a lamp's U–I curve on a grid, no values marked (0,15 A at 1,0 V, 0,25 A at 3,0 V)",
     "resistor-points": "safe: five measured U–I points of a resistor, no line (best line 22 Ω)",
+    "pick-k2": "reveals: the right option of task fy6-3-L1-09 (R = 2,0 kΩ: U = 8,0 V at 4,0 mA)",
+    "pick-k05": "safe: a wrong option of task fy6-3-L1-09 (the slope inverted, R taken as I : U)",
+    "pick-curve": "safe: a wrong option of task fy6-3-L1-09 (U : I = 2,0 kΩ at one point only, not ohmic)",
+    "pick-flat": "safe: a wrong option of task fy6-3-L1-09 (the number of R drawn as a constant voltage)",
 }

@@ -18,6 +18,7 @@ a["fy6-16-L1-05"] = 44 / 50 * 100                         # 44 kWh into the batt
 a["fy6-16-L1-07"] = 7.4 * 5.5                             # 7,4 kW for 5,5 h: W = P t = 40,7 kWh from the grid
 a["fy6-16-L1-08"] = 0.25 * 16 ** 2                        # cable R = 0,25 ohm, I = 16 A: P = R I^2 = 64 W
 # (fy6-16-L1-06 is a multiple-choice concept task: no number)
+# (fy6-16-L2-08 is an order-of-magnitude choice: t = 24 kWh : (0,85 · 1,84 kW) = 15,3 h; wrong options 0,0153 h, 0,153 h, 15 300 h)
 # Level 2: two steps, a conversion or a figure
 # figure fy6-16/lataus-ex: 11 kW for 0-2,0 h, 5,5 kW for 2,0-3,0 h, then 0
 a["fy6-16-L2-01"] = 11 * 2.0 + 5.5 * 1.0                  # area under (t, P): 22 kWh + 5,5 kWh = 27,5 kWh from the grid

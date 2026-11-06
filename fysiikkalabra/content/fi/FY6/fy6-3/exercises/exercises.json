@@ -113,6 +113,41 @@
    "answer": 0.3,
    "unit": "A",
    "tolerance": 0.02
+  },
+  {
+   "id": "fy6-3-L1-09",
+   "level": 1,
+   "kind": [
+    "graph",
+    "concept"
+   ],
+   "text": "Elektroniikkapiirin vastuksen resistanssi on $2{,}0\\,\\text{k}\\Omega$. Vastus noudattaa Ohmin lakia, koska sen lämpötila pysyy samana.\n\nMikä kuvaajista on vastuksen ominaiskäyrä, kun virta $I$ on vaaka-akselilla ja jännite $U$ pystyakselilla?",
+   "answer": "Kuvaaja C",
+   "unit": "",
+   "tolerance": 0.02,
+   "choices": [
+    {
+     "text": "Kuvaaja A",
+     "figure": "fy6-3/pick-curve",
+     "feedback": "Käyrä kulkee pisteen $(4{,}0\\,\\text{mA};\\ 8{,}0\\,\\text{V})$ kautta, jossa $U : I = 2{,}0\\,\\text{k}\\Omega$, mutta se on kaareva. Siinä resistanssi kasvaa jännitteen mukana kuten kuumenevalla hehkulampulla. Ohmin lakia noudattavan vastuksen resistanssi on vakio."
+    },
+    {
+     "text": "Kuvaaja B",
+     "figure": "fy6-3/pick-k05",
+     "feedback": "Tässä kulmakertoimeksi on otettu virran ja jännitteen suhde $I : U$. Kuvaajassa $4{,}0\\,\\text{mA}$:n virta vastaa vain $2{,}0\\,\\text{V}$:n jännitettä, joten resistanssi olisi $0{,}50\\,\\text{k}\\Omega$. Resistanssi on $U : I$."
+    },
+    {
+     "text": "Kuvaaja C",
+     "figure": "fy6-3/pick-k2",
+     "correct": true,
+     "feedback": "Oikein: suora kulkee origon kautta, ja $4{,}0\\,\\text{mA}$:n virralla $U = RI = 2{,}0\\,\\text{k}\\Omega \\cdot 4{,}0\\,\\text{mA}$, eli $U = 8{,}0\\,\\text{V}$. Kulmakerroin on $2{,}0\\,\\text{k}\\Omega$ koko suoralla."
+    },
+    {
+     "text": "Kuvaaja D",
+     "figure": "fy6-3/pick-flat",
+     "feedback": "Tässä resistanssin lukuarvo on piirretty jännitteen arvoksi. Jännite pysyy samana, vaikka virta kasvaa, joten suhde $U : I$ pienenisi koko ajan. Resistanssi näkyy ominaiskäyrässä suoran kulmakertoimena, ei käyrän korkeutena."
+    }
+   ]
   }
  ],
  "level2": [

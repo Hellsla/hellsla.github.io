@@ -248,6 +248,42 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy6-11-L2-08",
+      "level": 2,
+      "text": "Kahden vaakasuoran levyn välissä on homogeeninen sähkökenttä, jonka voimakkuus on $1{,}0 \\cdot 10^{5}\\,\\text{N/C}$. Positiivinen levy on alempana, joten kenttä osoittaa ylöspäin. Pieni muovihelmi, jonka massa on $0{,}10\\,\\text{g}$ ja varaus $-20\\,\\text{nC}$, liikkuu levyjen välissä. Tarkasteluhetkellä sen nopeus on vaakasuoraan oikealle. Ilmanvastus jätetään huomiotta.\n\nKuvioissa $\\overline{G}$ on helmen paino, $\\overline{F}_\\text{s}$ kentän helmeen kohdistama sähköinen voima ja $\\overline{v}$ helmen nopeus. Kaikki kuviot on piirretty samassa mittakaavassa.\n\nMikä voimakuvio esittää oikein helmeen vaikuttavat voimat?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "fbd": "select",
+      "answer": "Voimakuvio B",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Voimakuvio A",
+          "figure": "fy6-11/pick-ylos",
+          "feedback": "Tässä sähköinen voima on piirretty kentän suuntaan. Helmi on negatiivinen, joten voima osoittaa kenttää vastaan eli alas. Ylöspäin osoittava $\\overline{F}_\\text{s}$ sopisi positiiviselle helmelle."
+        },
+        {
+          "text": "Voimakuvio B",
+          "figure": "fy6-11/pick-alas",
+          "correct": true,
+          "feedback": "Oikein: sähköinen voima $\\lvert q \\rvert E = 2{,}0\\,\\text{mN}$ ja paino $mg \\approx 0{,}98\\,\\text{mN}$ osoittavat kumpikin alas. Sähköisen voiman nuoli on noin kaksi kertaa painon nuolen pituinen."
+        },
+        {
+          "text": "Voimakuvio C",
+          "figure": "fy6-11/pick-nopeus",
+          "feedback": "Nopeus ei ole voima, joten sen nuoli $\\overline{v}$ ei kuulu voimakuvioon. Helmi ei tarvitse liikkeen suuntaista voimaa: se jatkaa vaakasuoraa liikettään, ja voimat muuttavat vain sen pystysuoraa nopeutta."
+        },
+        {
+          "text": "Voimakuvio D",
+          "figure": "fy6-11/pick-ilman",
+          "feedback": "Tässä paino on jätetty pois kuin elektronilla. Helmen paino $mg \\approx 0{,}98\\,\\text{mN}$ on kuitenkin noin puolet sähköisestä voimasta $2{,}0\\,\\text{mN}$, joten sitä ei voi jättää huomiotta."
+        }
+      ]
     }
   ],
   "level3": [

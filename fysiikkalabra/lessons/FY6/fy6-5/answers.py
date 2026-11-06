@@ -44,4 +44,5 @@ a["fy6-5-L3-04"] = I2
 # L3-05: voltage divider 12 V, R1 = R2 = 100 ohm, load Rk in parallel with R2; V_P = 5,0 V
 Rp = 100 * 5.0 / (12.0 - 5.0)                             # R_p = R1 V / (U - V) = 71,4 ohm
 a["fy6-5-L3-05"] = 1 / (1 / Rp - 1 / 100)                 # 1/Rk = 1/Rp - 1/R2 -> 250 ohm
+# L2-08 is multiple choice with a reason: R1 20, R2 30, R3 60 ohm in parallel, I = 0,30 A; R_k = 10 ohm, U = 3,0 V, I3 = 0,050 A; no number
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

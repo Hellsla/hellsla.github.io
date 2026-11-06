@@ -9,6 +9,7 @@ import math
 from figlib import (Fig, Axes, fi, INK, MUTED, WHITE, RULE, RULE_LIGHT, GLASS, HEAT, HEAT_LIGHT, HOT, HOT_LIGHT, COLD,
                     COLD_LIGHT, ALUMINIUM, METAL_EDGE, IRON, GOOD, GOOD_LIGHT, SAND_LIGHT, SAND, SAND_DARK, GRAIN, n)
 import herolib as H
+from fbd import FBD, VELOCITY
 
 FIELD, FORCE, VEL, ACC = GOOD, HOT, COLD, HEAT
 
@@ -393,8 +394,65 @@ def hero():
     return f.svg()
 
 
+# --- Voimakuvion valinta (task fy6-11-L2-08, docs/exercise-types.md type 3) ---------------------------------------
+# A small negatively charged bead (m = 0,10 g, q = -20 nC) moves to the right between horizontal plates, the positive
+# plate below, so the field E = 1,0e5 N/C points up and the electric force F_s = |q| E = 2,0 mN points down, against the
+# field; its weight G = 0,98 mN also points down. Four option diagrams to one scale (50 units per millinewton); only
+# "pick-alas" is right, each other has one error. Air resistance is neglected in the task.
+PK_G, PK_FS, PK_S = 0.10e-3 * 9.81 * 1e3, 20e-9 * 1.0e5 * 1e3, 50.0       # mN, mN, figure units per mN
+PK_BODY = (150, 165, 104, 36)
+PK_DESC = "Voimakuvio mittakaavassa: varattu helmi suorakulmiona. Keskipisteestä alaspäin osoittaa paino G. "
+
+
+def _pick(name, desc, fs_up=False, weight=True, v_force=False, wrong=None):
+    """An option of task fy6-11-L2-08: G from the centre; the electric force F_s from a point left of the centre, down
+    (right: against the upward field, the bead is negative) or, as an error, up along the field; weight=False leaves the
+    weight out (as if it were negligible like an electron's); v_force draws the velocity into the diagram as if it were a
+    force (in velocity blue, fy5-4 and fy4-5 style)."""
+    cx, cy, w, h = PK_BODY
+    f = Fig(f"fy611-pick-{name}", 320, desc, width=300)
+    d = FBD(f, PK_S, body=PK_BODY, a_dir=None if wrong else (0, -1), wrong=wrong)
+    if weight:
+        d.force("G", (0, -PK_G), (cx, cy), "gravity", lab=(22, -4))
+    d.force("F_s", (0, PK_FS if fs_up else -PK_FS), (cx - 34, cy), "electric", tex=r"\overline{F}_\text{s}",
+            lab=(-30, 10 if fs_up else -10))
+    d.draw()
+    if v_force:                                                    # the error: the velocity drawn into the force diagram
+        x1, y = cx + w / 2, cy                                     # like a force, but in velocity blue (it is no force)
+        f.arrow(x1, y, x1 + PK_G * PK_S, y, VELOCITY, 4, 18)
+        f.tex(x1 + PK_G * PK_S - 10, y - 26, r"\overline{v}", "middle", VELOCITY)
+    return f.svg()
+
+
+def pick_alas():
+    return _pick("alas", PK_DESC + "Keskipisteen vasemmalta puolelta lähtee sähköinen voima F s suoraan alaspäin; sen nuoli "
+                 "on kaksi kertaa niin pitkä kuin painon nuoli.")
+
+
+def pick_ylos():
+    return _pick("ylos", PK_DESC + "Keskipisteen vasemmalta puolelta lähtee sähköinen voima F s suoraan ylöspäin; sen nuoli "
+                 "on kaksi kertaa niin pitkä kuin painon nuoli.", fs_up=True,
+                 wrong="the electric force drawn along the field: the bead is negative, so the force points against E, down")
+
+
+def pick_nopeus():
+    return _pick("nopeus", PK_DESC + "Keskipisteen vasemmalta puolelta lähtee sähköinen voima F s suoraan alaspäin; sen nuoli "
+                 "on kaksi kertaa niin pitkä kuin painon nuoli. Oikeasta kyljestä lähtee sininen nopeuden nuoli v "
+                 "vaakasuoraan oikealle, yhtä pitkänä kuin painon nuoli.", v_force=True,
+                 wrong="the velocity v drawn as a force")
+
+
+def pick_ilman():
+    return _pick("ilman", "Voimakuvio mittakaavassa: varattu helmi suorakulmiona. Keskipisteen vasemmalta puolelta lähtee "
+                 "sähköinen voima F s suoraan alaspäin; sen nuoli on yhtä pitkä kuin muiden kuvioiden sähköisen voiman "
+                 "nuoli eli kaksi kertaa niin pitkä kuin niiden painon nuoli. Painoa ei ole piirretty.",
+                 weight=False,
+                 wrong="the weight left out as for an electron, although here G = 0,98 mN is half the electric force 2,0 mN")
+
+
 FIGURES = {"hero": hero, "test": testivaraus, "lines": kenttaviivat, "plates": levyt, "work": tyo, "profile": profiili,
-           "electron": elektroni, "abc": lambda: levyt(points=True), "fq-graph": fq_graph}
+           "electron": elektroni, "abc": lambda: levyt(points=True), "fq-graph": fq_graph,
+           "pick-alas": pick_alas, "pick-ylos": pick_ylos, "pick-nopeus": pick_nopeus, "pick-ilman": pick_ilman}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "test": "reveals: the force on a positive test charge is along E, on a negative one opposite (F = qE)",
@@ -405,4 +463,8 @@ REUSE = {
     "electron": "reveals: an electron's force and acceleration point against E, towards the + plate; its path bends",
     "abc": "safe: plates with traced field lines and three marked points A (middle), B (near the + plate), C (outside the end)",
     "fq-graph": "safe: four (q, F) points at one place between plates and a fitted line through the origin, no slope written",
+    "pick-alas": "reveals: the right option of task fy6-11-L2-08 (a negative bead in an upward field: G and F_s both down)",
+    "pick-ylos": "safe: a wrong option of task fy6-11-L2-08 (the electric force on a negative bead drawn along the field)",
+    "pick-nopeus": "safe: a wrong option of task fy6-11-L2-08 (the velocity, a blue arrow, drawn into the force diagram as if it were a force)",
+    "pick-ilman": "safe: a wrong option of task fy6-11-L2-08 (the weight left out although it is half the electric force)",
 }

@@ -187,3 +187,28 @@ $\Delta U_{200} = 0{,}005 \cdot 1{,}8\,\text{V} + 2 \cdot 0{,}1\,\text{V} = 0{,}
 **Sijoitus:** a) $R = \dfrac{4{,}52\,\text{V}}{0{,}0384\,\text{A}} = 117{,}71\,\Omega$. b) $\Delta U = 0{,}005 \cdot 4{,}52\,\text{V} + 2 \cdot 0{,}01\,\text{V} = 0{,}0426\,\text{V}$, joten $\dfrac{\Delta U}{U} = \dfrac{0{,}0426\,\text{V}}{4{,}52\,\text{V}} = 0{,}00942 = 0{,}94\,\%$. Lisäksi $\Delta I = 0{,}010 \cdot 38{,}4\,\text{mA} + 2 \cdot 0{,}1\,\text{mA} = 0{,}584\,\text{mA}$, joten $\dfrac{\Delta I}{I} = \dfrac{0{,}584\,\text{mA}}{38{,}4\,\text{mA}} = 0{,}0152 = 1{,}5\,\%$. c) Suhteellinen virheraja on $0{,}00942 + 0{,}0152 = 0{,}0246 = 2{,}5\,\%$, joten $\Delta R = 0{,}0246 \cdot 117{,}71\,\Omega = 2{,}90\,\Omega$.
 **Vastaus:** c)-kohdan virheraja on $\Delta R = 3\,\Omega$, yksi merkitsevä numero (laskimen arvo $2{,}90\,\Omega$). Mittaustulos on $R = 118\,\Omega \pm 3\,\Omega$ eli väli $115$–$121\,\Omega$, ja nimellisarvo $120\,\Omega$ mahtuu tähän väliin. Opiskelijan päätelmä on väärä: ero nimellisarvoon on $2{,}3\,\Omega$, mikä on pienempi kuin virheraja, joten mittaus ei osoita vastusta vialliseksi. Raportissa pitää antaa tulos virherajoineen ja pyöristää tulos virherajan mukaan, eikä kirjoittaa neljää merkitsevää numeroa ilman virherajaa. Jännitemittarin virta on $4{,}52\,\text{V} : 10\,\text{M}\Omega = 0{,}45\,\mu\text{A}$, mikä on vain $0{,}001\,\%$ virrasta $38{,}4\,\text{mA}$, joten sen voi jättää huomiotta (suuri mittarin resistanssi verrattuna vastukseen $118\,\Omega$).
 **Järkevyys:** Jännitteen ja virran suhteelliset virherajat ovat noin yksi ja puolitoista prosenttia, joten niiden summa on noin kaksi ja puoli prosenttia, ja $2{,}5\,\%$ luvusta $118\,\Omega$ on noin $3\,\Omega$. Nimellisarvo $120\,\Omega$ poikkeaa mittaustuloksesta noin $2\,\%$ ($2{,}29\,\Omega : 117{,}71\,\Omega = 1{,}95\,\%$), mikä on pienempi kuin $2{,}5\,\%$.
+
+## fy6-2-L2-08
+**Kysytty:** mikä opiskelijan mittaussuunnitelman riveistä on väärin, kun lampun virta ja jännite mitataan yleismittareilla.
+**Periaate:** Virtamittari kytketään sarjaan ja jännitemittari rinnalle. Tuntemattoman arvon mittaus aloitetaan suurimmalta alueelta, mutta lopullinen lukema luetaan pienimmältä alueelta, jolle arvo mahtuu. Lukeman virheraja on $\Delta x = p \cdot x + n \cdot r$, ja pienellä alueella resoluutio $r$ on pienempi.
+**Mallivastaus:** Rivi 1 on oikein: virran on kuljettava mittarin läpi, joten mittari on sarjassa lampun kanssa.
+
+Rivi 2 on oikein: suuruusluokkaa ei tiedetä, joten aloitetaan alueelta $10\,\text{A}$, jottei sulake pala.
+
+Rivi 3 on väärin. Lukema $0{,}14\,\text{A} = 140\,\text{mA}$ mahtuu alueelle $200\,\text{mA}$. Virherajat ovat alueella $10\,\text{A}$
+
+$\Delta I = 0{,}020 \cdot 0{,}14\,\text{A} + 3 \cdot 0{,}01\,\text{A}$
+
+$\Delta I \approx 0{,}033\,\text{A} = 33\,\text{mA}$
+
+ja alueella $200\,\text{mA}$, kun lukema on noin $140{,}0\,\text{mA}$,
+
+$\Delta I = 0{,}010 \cdot 140{,}0\,\text{mA} + 2 \cdot 0{,}1\,\text{mA}$
+
+$\Delta I = 1{,}6\,\text{mA}$
+
+Suurella alueella virheraja on siis noin kaksikymmenkertainen. Lopullinen virta luetaan alueelta $200\,\text{mA}$.
+
+Rivi 4 on oikein: jännitemittari on lampun rinnalla, ja alueella $2\,\text{V}$ näyttö näyttää enintään $1{,}999\,\text{V}$, joten $4{,}38\,\text{V}$ antaisi OL. Pienin alue, jolle lukema mahtuu, on $20\,\text{V}$.
+
+Oikea vastaus on rivi 3.

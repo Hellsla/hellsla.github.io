@@ -225,6 +225,37 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy6-16-L2-08",
+      "level": 2,
+      "text": "Sukulaisten luona sähköauton akkuun halutaan varastoida $24\\,\\text{kWh}$ energiaa. Auto ladataan tavallisesta pistorasiasta latauskaapelilla, joka rajoittaa virran $8{,}0\\,\\text{A}$:iin. Jännite on $230\\,\\text{V}$ ja latauksen hyötysuhde $85\\,\\%$, ja teho pysyy koko latauksen ajan vakiona (esimerkkiarvot).\n\nMikä on suuruusluokaltaan latausaika? Valitse lähin arvo.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": "noin $15\\,\\text{h}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "noin $0{,}015\\,\\text{h}$",
+          "feedback": "Tulos syntyy, kun energia on kilowattitunteina mutta teho watteina, $1840\\,\\text{W}$. Kun energia ja teho ovat samassa kerrannaisessa, teho on $1{,}84\\,\\text{kW}$ ja tulos tuhat kertaa suurempi."
+        },
+        {
+          "text": "noin $0{,}15\\,\\text{h}$",
+          "feedback": "Tulos syntyy, kun hyötysuhde sijoitetaan lukuna $85$ eikä desimaalilukuna $0{,}85$. Hyötysuhde on osuus, joten $85\\,\\% = 0{,}85$, ja latausaika on sata kertaa pidempi."
+        },
+        {
+          "text": "noin $15\\,\\text{h}$",
+          "correct": true,
+          "feedback": "Oikein: teho on $P = UI = 1{,}84\\,\\text{kW}$, joten $t = \\tfrac{W_\\text{akku}}{\\eta P}$, eli $t \\approx 15\\,\\text{h}$."
+        },
+        {
+          "text": "noin $15\\,000\\,\\text{h}$",
+          "feedback": "Tulos syntyy, kun energia muunnetaan wattitunneiksi, $24\\,000\\,\\text{Wh}$, mutta teho jätetään kilowateiksi. Kun energia ja teho ovat samassa kerrannaisessa, tulos on tuhat kertaa pienempi."
+        }
+      ]
     }
   ],
   "level3": [
