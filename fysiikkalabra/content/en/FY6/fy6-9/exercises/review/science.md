@@ -1,7 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: bef94e9f632af408
+CONTENT-HASH: 51f6a10c66298771
 Mode: full (translation review against the reviewed Finnish set; new YO-skill task L1-09 (units: which expression is the stored energy))
-Round 3
+Round 4 (re-review after the L1-09 unit-line rewording, commit 72e243f47)
 
 ## Blocking
 (none)
@@ -16,3 +16,4 @@ Round 3
 - solutions.md: same sections and same numbers as fi for all tasks (the new solution follows the same steps and reaches the same result).
 - Terms and notation as in the lesson; natural English, decimal point.
 - check_i18n: 0 errors (en); build.py fy6-9 succeeds.
+- L1-09 solution unit lines ("The unit of $UQ$ is ..." / "Lausekkeen $UQ$ yksikkö on ...") and inline tfrac checked against fi: same four units, same physics; check_i18n 0 errors, build fy6-9 ok.
