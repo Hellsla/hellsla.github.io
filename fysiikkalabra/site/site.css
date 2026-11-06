@@ -460,17 +460,25 @@ li.ex-js>details.answer:not([open]),li.ex-js>details.solution:not([open]){margin
 summary .lock-note{margin-left:.6rem}
 details[data-locked]>summary{cursor:not-allowed;color:var(--ink-2)}
 .show-model[aria-disabled=true]{opacity:.6;cursor:not-allowed}.choice-actions .lock-note{align-self:center}
-label.solved,.explain .drew{display:flex;gap:.6rem;align-items:flex-start;min-height:44px;padding:.5rem 0;cursor:pointer;font-size:var(--fs-inner)}
-label.solved input{margin:.25rem 0 0;width:1.15rem;height:1.15rem;flex:none;accent-color:var(--accent)}
+.explain .drew{display:flex;gap:.6rem;align-items:flex-start;min-height:44px;padding:.5rem 0;cursor:pointer;font-size:var(--fs-inner)}
 fieldset.choice .feedback.is-answer,fieldset.choice[data-state] .feedback.is-answer{border-color:var(--accent);background:var(--accent-soft)}
 fieldset.choice li.is-answer>label{outline:2px solid var(--accent);outline-offset:2px;border-radius:8px}
 form.check output[data-state=close]{color:#7a5a00;font-weight:600}form.check output[data-state=close]::before{content:"≈ ";font-weight:700}
 .teacher-note{margin:.6rem 0;padding:.5rem .9rem;border-radius:8px;background:#fff6d6;border:1px solid #e6cf7a;font:600 var(--fs-ui) var(--sans)}
-@media print{.lock-note,label.solved,.teacher-note{display:none}}
+@media print{.lock-note,.teacher-note{display:none}}
 /* the solution editor under an exercise (lesson.js 6; Abitti's own editor, loaded on the first click) */
 .pad-open,.pad-copy,.pad-btn{font:600 var(--fs-ui) var(--sans);min-height:40px;padding:0 1rem;border:1px solid var(--accent-deep);border-radius:999px;background:var(--surface);color:var(--accent-deep);cursor:pointer;margin:.1rem 0 .5rem}
 .pad-open:hover,.pad-copy:hover,.pad-btn:hover{background:var(--accent-soft)}
-.pad-open[aria-expanded=true]{background:var(--accent-soft)}
+/* "Kirjoita ratkaisu" filled, the exercise's Tarkista outlined, on one row with the answer box (teacher 2026-11-06);
+   the open editor takes a row of its own between them; on a phone the answer box wraps under the button */
+.pad-open{background:var(--accent-deep);color:#fff}
+.pad-open:hover,.pad-open[aria-expanded=true]{background:var(--accent);border-color:var(--accent);color:#fff}
+.ex-row{display:flex;flex-wrap:wrap;align-items:flex-start;gap:.5rem .75rem;margin:.4rem 0 .5rem}
+.ex-row>.pad-open{margin:0;flex:none}
+.ex-row>.pad{flex:1 1 100%;min-width:0;margin:0}
+.ex-row>form.check{flex:1 1 18rem;min-width:0;margin:0}
+.ex-row form.check button{background:var(--surface);color:var(--accent-deep)}
+.ex-row form.check button:hover{background:var(--accent-soft)}
 .pad{margin:0 0 .8rem}
 .pad .rich-text-editor{min-height:7.5rem;padding:.6rem .75rem;background:var(--surface);border:1px solid #767676;border-radius:var(--inner-radius);font-size:var(--fs-inner);line-height:1.6;color:var(--ink);font-family:var(--sans);overflow-wrap:anywhere;scroll-margin-top:9rem}
 .pad .rich-text-editor:focus{outline:2px solid var(--accent);outline-offset:2px;border-color:var(--accent)}

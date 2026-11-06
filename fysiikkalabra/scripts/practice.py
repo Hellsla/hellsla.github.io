@@ -481,13 +481,12 @@ def render(code, lang, md, solution_html, title, embedded=False, prefix=None):
     for n, task in enumerate(data["tasks"], 1):
         tid = task["id"]
         badge, situation, parts, reveal, pts = _card(task, sols, md, solution_html)
-        done = f'<label class="solved"><input type="checkbox"> <span>{T("inquiry.did_solution")}</span></label>'
         if embedded:
-            body += (f'<div class="activity task-card practice-task" id="{tid}" data-type="practice" data-num="{number(n, prefix)}"><h3>{(f'<span class="ex-num"><span class="visually-hidden">{T("lesson.exercise_word")} </span>{number(n, prefix)}</span> ' if prefix else f"{n}. ")}{esc(task["title"])} <span class="pts">{pts}</span></h3>'
-                     f'{badge}{situation}{parts}{skills_html(task)}{done}{reveal}</div>')
+            body += (f'<div class="activity task-card practice-task" id="{tid}" data-type="practice" data-written="1" data-num="{number(n, prefix)}"><h3>{(f'<span class="ex-num"><span class="visually-hidden">{T("lesson.exercise_word")} </span>{number(n, prefix)}</span> ' if prefix else f"{n}. ")}{esc(task["title"])} <span class="pts">{pts}</span></h3>'
+                     f'{badge}{situation}{parts}{skills_html(task)}{reveal}</div>')
             continue
         body += (f'<section class="stage practice-task" id="{tid}"><h2><span class="stage-no" aria-hidden="true">{n}</span>{esc(task["title"])}'
-                 f' <span class="pts">{pts}</span></h2><div class="activity task-card">{badge}{situation}{parts}{skills_html(task)}{done}{reveal}</div></section>')
+                 f' <span class="pts">{pts}</span></h2><div class="activity task-card" data-written="1">{badge}{situation}{parts}{skills_html(task)}{reveal}</div></section>')
         toc += (f'<a href="#{tid}"><span class="toc-no" aria-hidden="true">{n}</span><span class="toc-label">{esc(task["title"])}</span></a>')
     return body, toc
 
