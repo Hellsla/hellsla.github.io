@@ -1,17 +1,14 @@
-VERDICT: PASS
-CONTENT-HASH: b5ff0600214c4eda
+VERDICT: FAIL
+CONTENT-HASH: c3ae02f2b8a43d34
 
 ## Blocking
+- solutions.md fy4-15-L2-08, paragraph after the aligned block — "Verrannollisuudessa v unohtuvat molemmat ... tekijät, ... neliössä v² vain sekunnissa virtaavan ilman massan kasvu" is wrong and contradicts the option feedback. Tekijät are ½v² per kilogram and the mass flow ∝ v. P ∝ v keeps only the mass flow (the v² of the energy is forgotten); P ∝ v² keeps only the energy per kilogram (the mass flow is forgotten), as the 0,2 MW feedback says. Fix: "Verrannollisuudessa v unohtuu ilmakilogramman liike-energian ½v² nopeusriippuvuus, neliössä v² sekunnissa virtaavan ilman massan kasvu."
 
 ## Polish
-- exercises.json fy4-15-L2-08 — same scenario and chain as the worked example (rotor diameter, 1,25 kg/m³, η, P = ½ηρAv³) and close to L1-04/L2-07; the new part is the km/h trap and the magnitude form. Vary the context (e.g. smaller rotor, or ask first for the factor when v drops by a third) if a different task is wanted.
-- choices[1] feedback — "Nopeuden neliö kuvaa yhden ilmakilogramman liike-energiaa" is loose (½v²); "yhden kilogramman liike-energia on ½v²".
-- solutions.md last sentence compares with the lesson example (verified: 2,32 MW); fine but "Lisäksi" can go.
+- Same scenario and chain as the worked example (round 1 note, unchanged).
 
 ## Checked
-- Round 1, new YO-skill task only (the rest of the set was PASS before). All checks from the packet text and exercises.json/solutions.md; no render was made or opened, so phone width of formulas is estimated from the LaTeX, not measured.
-- Recomputed: A = 7854 m², P = 1,96 MW; v¹ gives 19,6 kW, v² gives 196 kW, 36 instead of 10 gives about 91 MW (47 x); options match exactly.
-- Distractors: the warned "double wind gives double power", unit slip, and exponent errors; correct option 14 characters among 14–18, not marked; steps 10x, 10x, 45x apart.
-- Scope: lesson formula only. The nimellisteho sentence keeps the formula valid.
-- Aligned chain longest line about 230 px estimated.
-- Hash unchanged at end.
+- Round 2, text only; no render, widths not measured. Solution split into short lines, longest about 230 px estimated.
+- Option 1 feedback now reads right ("lukuarvo 10³ on 100 kertaa 10"); 20 kW, 0,2 MW, 90 MW, 1,96 MW recomputed and consistent.
+- Options 14–18 characters, correct not marked; warned "double wind, double power" mistake covered.
+- Hash at start c3ae02f2b8a43d34, at end c3ae02f2b8a43d34.

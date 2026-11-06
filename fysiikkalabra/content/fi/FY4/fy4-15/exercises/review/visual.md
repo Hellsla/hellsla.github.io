@@ -1,19 +1,18 @@
-VERDICT: FAIL
-CONTENT-HASH: b5ff0600214c4eda
+VERDICT: PASS
+CONTENT-HASH: c3ae02f2b8a43d34
 
 ## Blocking
-- [Major] fy4-15-L2-08 solution, Mallivastaus first line "v = 36 km/h = 36 000 m / 3600 s = 10 m/s" — at 390 px the inline chain is 306 px in a 304 px container and the end of the result, "10 m/s", is clipped (the final s is cut; measured scrollWidth 311 > 304) — the converted speed is the key step of the task — put the conversion in the aligned block: v = 36 km/h on one row, "= 36 000 m / 3600 s" and "= 10 m/s" on the next rows (the block already holds A and P chains in 290 px).
+(none)
 
 ## Polish
-- [Minor] fy4-15-L2-08 choices — the options are in ascending order of size except that the correct 2 MW stands first when rendered; fine, but the "Oikein" feedback gives the whole formula, which is acceptable here (one stage).
-- [Minor] fy4-15-L2-08 solution — the final paragraph is long (about 110 words in one block); split after "…noin 90 MW." for phone reading.
-- [Minor] fy4-15-L2-08 solution — "noin 47 kertaa liian suuri" and the 36^3 : 10^3 comparison are fine; the unit stack kg/m^3 in the block repeats the earlier stacked-unit style (carried polish).
+- [Minor] fy4-15-L2-08 solution, last paragraph — "Verrannollisuudessa v unohtuvat molemmat nopeuden mukana kasvavat tekijät … neliössä v^2 vain sekunnissa virtaavan ilman massan kasvu" is clumsy Finnish; for example "Jos teho oletetaan verrannolliseksi nopeuteen v, unohtuvat sekä energian että ilmamassan kasvu; neliössä v^2 unohtuu toinen niistä."
+- [Minor] fy4-15-L2-08 solution — the paragraph is still long; fine for phone reading with the new break before "Tulos on järkevä".
+- [Minor] carried: stacked units kg/m^3, m/s in Sijoitus chains of earlier tasks (same style as the passed set).
 
 ## Checked
-- Opened (own script vr4_task390.py, 390 px viewport, feedback of both questions and solution open, overflow measured): 12-16 (L2-08) in full, both states; the other three tasks of the diff do not exist (only this one added).
-- Distractors catch the warned mistakes (v instead of v^3, v^2, km/h not converted); no correct-by-form cue (units and magnitudes only).
-- Overflow measured at 390 px: page width 390; only the clipped line above.
-- Text only: solutions.md diff.
+- Round 2. Packet is full mode only because of the visual baseline (no figures in this exercise set: no fbd or svg in the JSON); captures retaken for this hash: contact-5 and open-exercises-L2-1280-10 opened (the new task 12-16, fixed block), contact sheet triage of levels 2 and 3.
+- 390 px render of 12-16 with feedback and solution open (own script): the Major is fixed, the speed conversion is three rows (v = 36 km/h, = 36 000 m / 3600 s, = 10 m/s) in the aligned block; measured: no element clipped, widest chain 286 px.
+- Rest of the set: unchanged since my earlier PASS reports (no figures); not re-read in full.
 
 ## Scores
-illustrations 4 · typography 3 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

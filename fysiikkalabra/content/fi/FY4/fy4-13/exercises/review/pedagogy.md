@@ -1,16 +1,15 @@
-VERDICT: PASS
-CONTENT-HASH: 9a6922af61eee680
+VERDICT: FAIL
+CONTENT-HASH: cfd8d81fb96cf916
 
 ## Blocking
+- exercises.json fy4-13-L2-08 choices[1] — the correct stage-1 option is now the longest by far (61 characters vs 38 and 35) and its feedback the shortest (57 vs 199 and 206): identifiable by form. Fix: lengthen the distractors in kind ("Jännitysvoima kasvaa nelinkertaiseksi ensimmäiseen kokeeseen verrattuna.", "... pienenee neljäsosaan ...") or shorten the correct one back to "Jännitysvoima pysyy samana." and lengthen its feedback to the others' size without naming the acceleration.
 
 ## Polish
-- exercises.json fy4-13-L2-08 choices[1] (correct) feedback — "Kiihtyvyys sen sijaan kasvaa nelinkertaiseksi" refutes reason 2 ("kiihtyvyys ei muutu") before the reason is chosen, and "T ≈ 3,1 N kummassakin kokeessa" hints at the formula. Shorten to "Oikein: kummassakin kokeessa T on sama." and keep the acceleration remark for the solution and the reason feedbacks.
 - reasons[2] — "massojen tulo ja summa pysyvät samoina vaihdossa" → "kun massat vaihdetaan keskenään, niiden tulo ja summa pysyvät samoina".
-- reasons[3] feedback — "Väite on tosi, mutta ei selitä" is good; add that the same would hold for any masses.
 
 ## Checked
-- Round 1, new YO-skill task only (the rest of the set was PASS before). All checks from the packet text and exercises.json/solutions.md; no render was made or opened, so phone width of formulas is estimated from the LaTeX, not measured.
-- Numbers: a 1,962 and 7,848 m/s², T 3,14 N in both, below weights 3,9 and 15,7 N; formula T = m1m2/(m1+m2) g is in the lesson.
-- Form: reason lengths 83–94 characters, correct one not marked; stage-1 distractors are the warned mistakes (T = m2 g scaling; a unchanged, T follows m1). Reason 4 is the true-but-not-explanatory type.
-- Solution aligned blocks are split into short lines (about 220 px estimated).
-- Hash unchanged at end.
+- Round 2, text only; no render made, formula widths not measured.
+- Stage-1 correct feedback no longer refutes reason 2 or hints at the formula: fixed.
+- Reasons now 83–94 characters; reason 1 has a formula like the correct one, so the formula no longer marks it. Correct reason is longest by one character, immaterial.
+- Numbers and solution unchanged and right (T 3,14 N both, a 1,962 and 7,848 m/s²).
+- Hash at start cfd8d81fb96cf916, at end cfd8d81fb96cf916.

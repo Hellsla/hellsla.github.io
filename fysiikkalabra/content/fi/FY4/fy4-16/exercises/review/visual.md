@@ -1,18 +1,18 @@
-VERDICT: PASS
-CONTENT-HASH: c33ef8000459c4d0
+VERDICT: FAIL
+CONTENT-HASH: ffcdfb1fd3bb1799
 
 ## Blocking
-(none)
+- [Major] fy4-16 solutions.md L2-08 Mallivastaus — "joten epävarmuusvälit ovat selvästi erillään, joten lähtökorkeusvaikuttaa matkaan" — the words "lähtökorkeus vaikuttaa" are run together (visible in the rendered solution, 390 px) and "joten … joten" is stacked — a spelling error in new text in a reviewed solution — write "…ovat selvästi erillään, ja siksi lähtökorkeus vaikuttaa matkaan."
 
 ## Polish
-- [Minor] fy4-16-L2-08 options — the two wrong conclusions that use "varmasti" and "lainkaan" are absolute, while the correct one is the moderate one; test-wise students may pick by tone. Phrase option 4 less loudly ("pysähtyy noin 80 m:n päähän") so extrapolation is the only flaw.
-- [Minor] fy4-16-L2-08 table — numeric headers are left-aligned over left-aligned values and the table is narrower than the card (about 260 of 330 px); fine, but right-align numbers like the other data tables.
-- [Minor] fy4-16-L2-08 solution — the long last paragraph (about 120 words) could be split before "Matka 80 m …".
+- [Minor] fy4-16-L2-08 table — numeric headers left-aligned and the table narrower than the card; optional.
+- [Minor] fy4-16-L2-08 solution — the 2Δx rule is stated in Periaate; the question text could say "epävarmuusvälit x ± Δx" once so the 2Δx in the feedback is not new to the student.
+- [Minor] fy4-16-L2-08 option 3, "Massa ei vaikuta matkaan, koska … eroavat vain 0,7 m" — now reads as a plausible mistake, good; the feedback "alle 2 m:n vaikutus" is correct.
 
 ## Checked
-- Opened (own script vr4_task390.py, 390 px viewport, feedback of both questions and solution open, overflow measured): 16-16 (L2-08) in full: text, data table with caption "esimerkkiaineisto" and LaTeX units, options with feedback (wrong choice shown), answer and solution; no overflow or clipped chain (measured, longest chain under 290 px).
-- Option 1 catches the chapter's warned mistake (difference within uncertainty); the correct feedback does not state a reason stage beyond the comparison.
-- Text only: solutions.md diff, numbers recomputed (20,6 and 19,2 m, 0,7 m).
+- Round 2, delta. Rendered 16-16 (L2-08) at 390 px with feedback of all options and the solution open (own script); overflow measured: page 390 px, no clipped element, no chain wider than 286 px.
+- The tone cue is fixed (options 3 and 4 no longer carry "lainkaan"/"varmasti"); the 2Δx comparison is consistent in options, feedback and solution (0,7 m < 2,0 m, 20,6 and 19,2 m >> 2,0 m); the question text now says "pelkän taulukon perusteella".
+- Text only: the rest of solutions.md.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 3 · accessibility 4

@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: c33ef8000459c4d0
+CONTENT-HASH: ffcdfb1fd3bb1799
 
 ## Blocking
 
 ## Polish
-- exercises.json:347 and solutions.md:359 (L2-08) — "lähes kaksikymmenkertaisia": the differences are 20,6 and 19,2 times $\Delta x$, so one of them is over twenty. Write "noin kaksikymmenkertaisia".
+- solutions.md:359 (L2-08) — "lähtökorkeusvaikuttaa" is missing a space, and two "joten" clauses run in a row. Fix: "…joten epävarmuusvälit ovat selvästi erillään. Lähtökorkeus siis vaikuttaa matkaan."
+- exercises.json:347 (L2-08, correct feedback) — "kasvu on todellista" dropped the earlier "todennäköisesti". The guardrail says a true value lies in a range only *todennäköisesti*, and the solution itself calls Δx an estimate. With a difference of about 10 × 2Δx the claim is physically safe, but "kasvu on hyvin todennäköisesti todellista" keeps the wording the same everywhere.
 
 ## Checked
-- Scope: only the new task L2-08 (measurement data, type 10). The rest of the set was PASS before and is unchanged. Checked from the text only, no renders.
-- Model: $x = h/\mu$ (the brief's "Miksi pulkat pysähtyvät yhtä kauas", the mass cancels). The data give $h/x$ = 0,102; 0,0985; 0,0995; 0,101, so μ ≈ 0,10 for a sled on snow, which is realistic. Same slope, start at rest and a horizontal distance from the start are all stated in the task.
-- Uncertainty logic follows the guardrails. The mass differences are 0,7 m < Δx and the intervals overlap, so a difference cannot be shown, which does not prove there is none (option 3 feedback). The height effect is 20,6 and 19,2 m ≫ Δx, so "todennäköisesti todellista". The extrapolation to 8 m (twice the measured range) is called an estimate, with its assumption (same μ) named.
-- Distractors: overlap ignored, "no difference proven", and an extrapolation stated as certain. Option 1 catches the intuition that a heavier sled goes further, which the lesson refutes. The correct option is not the longest and not the hedged one.
-- "Lukeman epävarmuus Δx" is phrased as in the FY3 data tasks. The data caption is short.
-- solutions.md L2-08: Kysytty · Periaate · Mallivastaus. Every option is argued from the data, and the reasonableness check (h : x ≈ 0,10) is real.
-- answers.py: no line is needed. All 18 numeric answers in the set were recomputed in one call and match.
+- Round 2: commit ea64e7381, checked against the regenerated packet. Read from the text only; nothing was rendered.
+- The criterion is now 2Δx: two intervals $x \pm \Delta x$ overlap exactly when the difference is less than 2Δx. The criterion is applied consistently in the Periaate, the option 1 feedback, the correct feedback and the solution. Mass differences 0,7 m < 2,0 m (overlap); height differences 20,6 and 19,2 m ≫ 2,0 m.
+- The stem now says "pelkän taulukon perusteella". Option 4 (80 m from 8,00 m, which the lesson's model $x = h/\mu$ predicts) is therefore rightly unsupported: it goes past the measured range, and its feedback says how far (twice the range) and which assumption it rests on (the same μ).
+- The absolutes are removed from options 3 and 4. Option 3 ("massa ei vaikuta", from 0,7 m) is still wrong for the right reason (no difference shown is not equality, and an effect under 2 m would hide in the uncertainty). The correct option is not identifiable by length or hedging.
+- Round-1 item fixed: "noin kaksikymmenkertaisia".
+- Hash ffcdfb1fd3bb1799 at both start and end.
