@@ -152,7 +152,7 @@
         {
           "text": "Free-body diagram D",
           "figure": "fy4-5/pick-nopeus",
-          "feedback": "The arrow $\\overline{v}$ is drawn as a force, although velocity is not a force and has no cause. Velocity describes motion, and its arrow is drawn, if needed, beside the diagram in a colour of its own."
+          "feedback": "Velocity is not a force, so its arrow $\\overline{v}$ does not belong in a free-body diagram. A free-body diagram shows only forces, and every force has a cause, but velocity has none. Velocity describes motion, and its blue arrow is drawn, if needed, beside the diagram."
         }
       ]
     }

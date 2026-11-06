@@ -274,26 +274,26 @@
     {
       "id": "fy4-3-L2-08",
       "level": 2,
-      "text": "Example values: a truck of mass $12\\,\\text{t}$ reverses slowly and collides with a stationary car of mass $1.2\\,\\text{t}$.\n\nDuring the collision the truck pushes the car with the force $\\overline{F}_{KH}$ and the car pushes the truck with the force $\\overline{F}_{HK}$.\n\nHow large is the force $F_{HK}$ compared with the force $F_{KH}$ during the collision?",
+      "text": "Example values: a truck of mass $12\\,\\text{t}$ reverses slowly and collides with a stationary car of mass $1.2\\,\\text{t}$.\n\nDuring the collision the truck pushes the car with the force $\\overline{F}_{KH}$ and the car pushes the truck with the force $\\overline{F}_{HK}$.\n\nHow large is the force $F_{\\text{CT}}$ compared with the force $F_{\\text{TC}}$ during the collision?",
       "kind": [
         "concept",
         "reasoning"
       ],
-      "answer": "$F_{HK} = F_{KH}$",
+      "answer": "$F_{\\text{CT}} = F_{\\text{TC}}$",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "$F_{HK} = \\tfrac{1}{10}\\,F_{KH}$",
+          "text": "$F_{\\text{CT}} = \\tfrac{1}{10}\\,F_{\\text{TC}}$",
           "feedback": "This divides the forces in the ratio of the masses, as if the heavier vehicle pushed harder. However, the ratio of the masses $1.2\\,\\text{t} : 12\\,\\text{t}$ does not determine the ratio of the forces of an interaction."
         },
         {
-          "text": "$F_{HK} = F_{KH}$",
+          "text": "$F_{\\text{CT}} = F_{\\text{TC}}$",
           "correct": true,
           "feedback": "Correct: during the whole collision the car pushes the truck with a force as large as the force with which the truck pushes the car, and the forces are opposite in direction."
         },
         {
-          "text": "$F_{HK} = 0$",
+          "text": "$F_{\\text{CT}} = 0$",
           "feedback": "This assumes that only a moving vehicle can push. A stationary car also interacts with the truck: when the truck presses it, it pushes the truck back."
         }
       ],

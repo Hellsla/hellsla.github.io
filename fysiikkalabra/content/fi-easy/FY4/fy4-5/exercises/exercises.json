@@ -152,7 +152,7 @@
         {
           "text": "Voimakuvio D",
           "figure": "fy4-5/pick-nopeus",
-          "feedback": "Nuoli $\\overline{v}$ on piirretty voimaksi, vaikka nopeus ei ole voima eikä sillä ole aiheuttajaa. Nopeus kuvaa liikettä. Sen nuoli piirretään tarvittaessa kuvion viereen omalla värillään."
+          "feedback": "Nopeus ei ole voima. Siksi nopeuden nuoli $\\overline{v}$ ei kuulu voimakuvioon. Voimakuvioon piirretään vain voimat. Jokaisella voimalla on aiheuttaja, mutta nopeudella ei ole. Nopeus kuvaa liikettä. Sen sininen nuoli piirretään tarvittaessa voimakuvion viereen."
         }
       ]
     }

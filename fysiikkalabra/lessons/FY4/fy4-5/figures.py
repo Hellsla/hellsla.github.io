@@ -3,7 +3,7 @@ Every force diagram is an FBD: the object alone as a plain rectangle, its arrows
 as it is drawn. The situation is a separate pictorial situation picture (tilannekuva); no point-particle diagrams."""
 import math
 from figlib import Fig, INK, MUTED, WHITE, RULE, RULE_LIGHT, SAND_LIGHT, SAND, COPPER, ICE, ICE_EDGE, COLD_LIGHT, GLASS, fi
-from fbd import FBD, ground, FORCE
+from fbd import FBD, ground, FORCE, VELOCITY
 from figlib import GOOD, HEAT, HOT, HOT_LIGHT, IRON, n
 import herolib as H
 from figlib import COLD, METAL_EDGE
@@ -360,7 +360,7 @@ PK_DESC = "Voimakuvio mittakaavassa: laatikko suorakulmiona. Keskipisteestä ala
 def pick_push(fid, label, push=PK_F, extra=False, v_force=False, wrong=None):
     """One option: the box as a rectangle; G from the centre, N from the bottom face, the push F ending at the left face
     (the pusher stands on the left), friction from the bottom left corner to the left; extra adds F_k, the box's force on
-    the pusher (it acts on the pusher, not on the box); v_force draws the velocity as one more red force arrow."""
+    the pusher (it acts on the pusher, not on the box); v_force draws the velocity into the diagram as if it were a force (in velocity blue)."""
     cx, cy, w, h = PK_BODY
     f = Fig(fid, 240, label, width=300)
     d = FBD(f, PK_S, body=PK_BODY, a_dir=(0, 0), wrong=wrong)
@@ -370,9 +370,11 @@ def pick_push(fid, label, push=PK_F, extra=False, v_force=False, wrong=None):
     d.force("F_mu", (-PK_F, 0), (cx - w / 2, cy + h / 2), "friction", surface=0, lab=(-12, 18))
     if extra:
         d.force("F_k", (-PK_F, 0), (cx - w / 2, cy + 8), "other", tex=r"\overline{F}_\text{k}", lab=(-14, -14))
-    if v_force:
-        d.force("v", (PK_F, 0), (cx + w / 2, cy - 10), "other", tex=r"\overline{v}", lab=(14, -16))
     d.draw()
+    if v_force:                                                    # the error: the velocity drawn into the force diagram
+        x1, y = cx + w / 2, cy - 10                                # like a force, but in velocity blue (it is no force)
+        f.arrow(x1, y, x1 + PK_F * PK_S, y, VELOCITY, 4, 18)
+        f.tex(x1 + PK_F * PK_S + 14, y - 16, r"\overline{v}", "middle", VELOCITY)
     return f.svg()
 
 
@@ -399,7 +401,7 @@ def pick_lisa():
 def pick_nopeus():
     return pick_push("fy45-pick-nopeus", PK_DESC + "Vasemmalta tuleva työntövoima F osoittaa oikealle ja päättyy laatikon "
                      "vasempaan kylkeen. Alapinnan vasemmasta kulmasta lähtee kitkavoima vasemmalle, ja oikeasta kyljestä "
-                     "lähtee punainen nuoli v oikealle. Nuolet F, v ja kitkavoima ovat yhtä pitkät.", v_force=True,
+                     "lähtee sininen nopeuden nuoli v oikealle. Nuolet F, v ja kitkavoima ovat yhtä pitkät.", v_force=True,
                      wrong="the velocity v drawn as a force")
 
 
@@ -425,5 +427,5 @@ REUSE = {
     "pick-tasainen": "reveals: the right option of task fy4-5-L1-09 (a box pushed at constant velocity: G = N, F = F_mu)",
     "pick-pitka": "safe: a wrong option of task fy4-5-L1-09 (the push drawn twice the friction)",
     "pick-lisa": "safe: a wrong option of task fy4-5-L1-09 (an extra F_k, the box's push on the pusher)",
-    "pick-nopeus": "safe: a wrong option of task fy4-5-L1-09 (the velocity drawn as a red force arrow)",
+    "pick-nopeus": "safe: a wrong option of task fy4-5-L1-09 (the velocity, a blue arrow, drawn into the force diagram as if it were a force)",
 }
