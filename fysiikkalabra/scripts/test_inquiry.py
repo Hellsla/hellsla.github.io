@@ -265,6 +265,8 @@ def generic(lid):
         check("no console errors", not errors, str(errors[:2]))
         page_form(pg, b, url, acts, page)
         if pg.locator("#ennusta details.fold").count(): pg.locator("#ennusta details.fold > summary").first.click(); pg.wait_for_timeout(100)   # open the Ennusta box as a student does
+        more = pg.locator('#tutki details[data-fold="tutki-more"]')   # Tutki's other tasks wait in a closed box (teacher 2026-11-06)
+        if more.count() and not more.evaluate("(d) => d.open"): more.locator(":scope > summary").click(); pg.wait_for_timeout(100)
         n_opt = pg.locator("details.opt").count()
         if n_opt:                                         # optional activities: closed, named boxes that open from the keyboard
             st = pg.evaluate("[...document.querySelectorAll('details.opt')].map((d) => [d.open, d.querySelector('summary').textContent.includes('Valinnainen') || !d.querySelector('.opt-tag'), !!d.querySelector('.activity[id]')])")
