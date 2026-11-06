@@ -110,8 +110,8 @@ FORMS = submission_forms()
 
 # Guided self-assessment (teacher 2026-11-06, from his 2018 team sheet): in Tarkista osaamisesi every task and, at the
 # end, the chapter's goals get a level a-d or x (scripts/inquiry.py sa_fieldset, templates/inquiry.js part 8); the
-# levels and their history go into the same submission file (templates/palautus.js). Pilot: FY3.
-SELF_ASSESS_COURSES = {"FY3"}
+# levels and their history go into the same submission file (templates/palautus.js). FY3 first, then FY1-FY8.
+SELF_ASSESS_COURSES = {"FY1", "FY2", "FY3", "FY4", "FY5", "FY6", "FY7", "FY8"}   # teacher 2026-11-06: every chapter with the download button
 
 
 def self_assesses(lang, meta):
