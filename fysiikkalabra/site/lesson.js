@@ -701,6 +701,9 @@
     shut.setAttribute('aria-keyshortcuts', 'Escape');
     if (tasks.length > 1) nav.append(prev, next);
     nav.append(shut); bar.append(title, pos, nav);
+    // A press on the bar keeps the focus in the editor until the click: otherwise the editor blurs on mousedown,
+    // Abitti's toolbar goes, the bar moves up under the pointer and the click misses (teacher 2026-11-06, "pitää klikata 2x")
+    bar.addEventListener('mousedown', (e) => { if (e.target.closest('button')) e.preventDefault(); });
     const body = mk('div', 'ex-focus-body');
     const taskCol = mk(tasks[0].matches('li') ? 'ol' : 'div', 'ex-focus-task'), padCol = mk('div', 'ex-focus-pad');
     body.append(taskCol, padCol); dlg.append(bar, body); host.append(dlg);
