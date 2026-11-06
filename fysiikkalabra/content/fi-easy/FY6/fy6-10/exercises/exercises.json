@@ -249,6 +249,37 @@
       "answer": 0.9587,
       "unit": "mN",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-10-L2-08",
+      "level": 2,
+      "text": "Kaksi pientä varattua palloa A ja B on eristetangoissa. Pallon A varaus on $+q$ ja pallon B varaus $+2q$. Kun pallojen keskipisteiden etäisyys on $r$, palloon B kohdistuvan sähköisen voiman suuruus on $F$. Voima kohdistuu eli osuu palloon B.\n\nPallon A varaus kasvatetaan arvoon $+2q$, ja pallot siirretään etäisyydelle $3r$. Pallon B varaus ei muutu.\n\nMiten palloon B kohdistuvan sähköisen voiman suuruus muuttuu?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "Voima pienenee arvoon $\\tfrac{2}{9}F$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Voima pienenee arvoon $\\tfrac{2}{3}F$.",
+          "feedback": "Tässä voima on luettu kääntäen verrannolliseksi etäisyyteen. Coulombin laissa nimittäjässä on $r^2$. Kolminkertainen etäisyys jakaa voiman siis yhdeksällä eikä kolmella."
+        },
+        {
+          "text": "Voima pienenee arvoon $\\tfrac{1}{9}F$.",
+          "feedback": "Tässä on ajateltu, että pallon A varauksen muutos ei vaikuta palloon B. Laissa on varausten tulo. Kun tulo kaksinkertaistuu, voima kaksinkertaistuu kummassakin pallossa."
+        },
+        {
+          "text": "Voima pienenee arvoon $\\tfrac{2}{9}F$.",
+          "correct": true,
+          "feedback": "Oikein: varausten tulo kaksinkertaistuu ja $r^2$ yhdeksänkertaistuu, joten voima on $\\tfrac{2}{9}F$. Sama voima vaikuttaa myös palloon A."
+        },
+        {
+          "text": "Voima kasvaa arvoon $18F$.",
+          "feedback": "Tässä etäisyyden vaikutus on luettu väärin päin. Sähköinen voima heikkenee, kun etäisyys kasvaa. Laissa $r^2$ on nimittäjässä, ei osoittajassa."
+        }
+      ]
     }
   ],
   "level3": [

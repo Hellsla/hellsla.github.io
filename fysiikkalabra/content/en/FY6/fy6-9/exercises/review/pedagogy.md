@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 0452eedc42d7c0be
-Mode: full (translation review against the reviewed Finnish set; 8 new exercises L1-06..08, L2-05..07, L3-04..05)
-Round 2
+CONTENT-HASH: 51f6a10c66298771
+Mode: full (translation review against the reviewed Finnish set; new YO-skill task L1-09 (units: which expression is the stored energy))
+Round 4 (re-review after the L1-09 unit-line rewording, commit 72e243f47)
 
 ## Blocking
 (none)
-
-## Fixed
-(none needed: the text already matched the Finnish in every number and was natural)
 
 ## Polish
 (none)
 
 ## Checked
-- Natural, correct textbook English; the new tasks keep the structure of the Finnish (parts a, b, c, 'The answer field takes the result of part ...').
-- Choice feedback in L1-06 and L1-07 explains each wrong option and matches the Finnish; the correct choice is the same one.
-- Solutions are complete and the reasonableness checks read well.
-- check_i18n en: 0 errors.
+- Fixed: nothing needed; the new task already matched the Finnish.
+- New task L1-09 (units: which expression is the stored energy): the multiple-choice form keeps one clearly correct option, each distractor targets one misconception and its feedback names the error and repairs it, as in fi.
+- Language: natural English, decimal point; the task and solution read naturally and give the same steps as the Finnish.
+- Solutions complete and the reasonableness/check step is a real check.
+- check_i18n: 0 errors (en).
+- L1-09 solution unit lines ("The unit of $UQ$ is ..." / "Lausekkeen $UQ$ yksikkö on ...") and inline tfrac checked against fi: same four units, same physics; check_i18n 0 errors, build fy6-9 ok.

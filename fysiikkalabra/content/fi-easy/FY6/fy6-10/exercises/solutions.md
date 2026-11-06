@@ -170,6 +170,23 @@
 **Vastaus:** $0{,}96\,\text{mN}$, kaksi merkitsevää numeroa kuten varauksissa ja etäisyydessä. Opiskelijan virhe oli, että hän jakoi etäisyydellä $r$ eikä sen neliöllä $r^2$.
 **Järkevyys:** Opiskelijan väärä jakaja oli $0{,}030$ ja oikea $9{,}0 \cdot 10^{-4}$. Oikea tulos on siis väärästä tuloksesta $0{,}030 : 9{,}0 \cdot 10^{-4} = 33$-kertainen: $0{,}029\,\text{mN} \cdot 33 = 0{,}96\,\text{mN}$. Arvio: $10^{10} \cdot 10^{-16} : 10^{-3} \approx 10^{-3}\,\text{N}$ on lähellä tulosta.
 
+## fy6-10-L2-08
+**Kysytty:** miten palloon B kohdistuvan sähköisen voiman suuruus muuttuu, kun pallon A varaus kaksinkertaistuu ja etäisyys kolminkertaistuu
+**Periaate:** Coulombin lain $F = k\,\tfrac{\lvert q_1 q_2 \rvert}{r^2}$ mukaan voima on suoraan verrannollinen varausten tuloon ja kääntäen verrannollinen etäisyyden neliöön. Palloihin A ja B vaikuttavat voimat ovat voima ja vastavoima, joten ne ovat yhtä suuret. Siksi pallon A varauksen muutos muuttaa myös palloon B kohdistuvaa voimaa.
+**Mallivastaus:** Voima pienenee arvoon $\tfrac{2}{9}F$. Alussa:
+
+$F = k\,\dfrac{q \cdot 2q}{r^2} = k\,\dfrac{2q^2}{r^2}$
+
+Muutoksen jälkeen:
+
+$F' = k\,\dfrac{2q \cdot 2q}{(3r)^2} = k\,\dfrac{4q^2}{9r^2}$
+
+Suhde:
+
+$\dfrac{F'}{F} = \dfrac{4}{9} \cdot \dfrac{1}{2} = \dfrac{2}{9}$
+
+Varausten tulo kaksinkertaistuu. Se kaksinkertaistaa voiman. Etäisyyden neliö yhdeksänkertaistuu. Se jakaa voiman yhdeksällä. Voima on siis $\tfrac{2}{9}F \approx 0{,}22F$. Vastaus $\tfrac{2}{3}F$ syntyisi, jos voima olisi kääntäen verrannollinen etäisyyteen eikä sen neliöön. Vastaus $\tfrac{1}{9}F$ syntyisi, jos pallon A varauksen muutos ei vaikuttaisi palloon B. Laissa on kuitenkin varausten tulo. Vastaus $18F$ syntyisi, jos etäisyyden neliö olisi osoittajassa.
+
 ## fy6-10-L3-04
 **Annettu:** $q_1 = +6{,}0\,\text{nC}$ kohdassa $x = 0$, $q_2 = -2{,}5\,\text{nC}$ kohdassa $d = 12\,\text{cm}$. Positiivinen koevaraus $q$
 **Kysytty:** a) millä alueilla kokonaisvoima voi olla nolla; b) nollakohta $x$ senttimetreinä kohdasta $x = 0$; c) miksi tulos ei riipu koevarauksen suuruudesta

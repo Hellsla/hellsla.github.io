@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 07e87142e01fa3c8
+CONTENT-HASH: 7f59adac9f04c880
 
 ## Blocking
 (none)
@@ -8,4 +8,6 @@ CONTENT-HASH: 07e87142e01fa3c8
 (none)
 
 ## Checked
-Follow-up delta (2c31ff041, NOTES §12): the earlier polish is fixed. "Ohmin lakia noudattavan vastuksen" replaces the unexplained "ohmisen". The phrase uses the Kaava section's own wording ("Vastuksen pitää noudattaa Ohmin lakia"), and the Kaava section comes earlier in the lesson. Earlier: the misconception conditions constant R on temperature, and the filament caption is plain.
+- delta (figures.json only, 384fe88c6..HEAD): lesson.md unchanged; the new "mA" word and the four (I,U) pick-* descriptions belong to exercise option figures; no lesson figure uses them.
+- Lesson path, activities and figure placement unchanged; the figures sit beside their paragraphs and their captions still match the text.
+- The added descriptions serve exercise option figures and do not change the lesson's workload or learning path.

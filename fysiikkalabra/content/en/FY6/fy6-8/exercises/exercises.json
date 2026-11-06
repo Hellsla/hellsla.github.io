@@ -275,6 +275,66 @@
           "feedback": "The internal resistance is a property of the battery and does not change with the current. The current is zero because there is no external circuit, not because $R_\\text{s}$ is infinite."
         }
       ]
+    },
+    {
+      "id": "fy6-8-L2-08",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "The terminal voltage $U$ of a battery was measured at five load currents $I$, and the results are in the table. The uncertainty of the voltmeter reading is $\\pm 0.01\\,\\text{V}$. The uncertainty of the current is so small that it is neglected.\n\nWhich conclusion from the measurements is justified?",
+      "answer": "The source voltage is about $1.55\\,\\text{V}$ and the internal resistance is about $0.40\\,\\Omega$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Terminal voltage and current (example data)",
+        "columns": [
+          "$I\\,(\\text{A})$",
+          "$U\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "0.10",
+            "1.51"
+          ],
+          [
+            "0.30",
+            "1.43"
+          ],
+          [
+            "0.50",
+            "1.36"
+          ],
+          [
+            "0.70",
+            "1.27"
+          ],
+          [
+            "0.90",
+            "1.19"
+          ]
+        ]
+      },
+      "choices": [
+        {
+          "text": "The source voltage is about $1.51\\,\\text{V}$ and the internal resistance is about $0.40\\,\\Omega$.",
+          "feedback": "Here the terminal voltage at the smallest current has been read as the source voltage. At the current $0.10\\,\\text{A}$ there is already a voltage in the internal resistance, so the source voltage is obtained by extending the line to $I = 0$."
+        },
+        {
+          "text": "The source voltage is about $1.55\\,\\text{V}$ and the internal resistance is about $0.40\\,\\Omega$.",
+          "correct": true,
+          "feedback": "Correct: the line through the points meets the vertical axis at about $1.55\\,\\text{V}$, and its slope is about $-0.40\\,\\Omega$."
+        },
+        {
+          "text": "The source voltage is about $1.51\\,\\text{V}$ and the internal resistance is about $1.3\\,\\Omega$.",
+          "feedback": "Here there are two errors. The terminal voltage at the smallest current has been read as the source voltage, and the quotient $U : I$ of one measurement is the resistance of the external load. The internal resistance is obtained from the change of the terminal voltage, $R_\\text{s} = -\\Delta U : \\Delta I$."
+        },
+        {
+          "text": "The source voltage is about $1.55\\,\\text{V}$ and the internal resistance changes with the current.",
+          "feedback": "The drops of the terminal voltage between successive measurements, $0.07$–$0.09\\,\\text{V}$, differ by at most $0.02\\,\\text{V}$. The difference of two drops depends on three or four readings, so its uncertainty is up to $0.04\\,\\text{V}$. The difference fits within the uncertainty of the readings: the points fit one line, and the measurements do not show that the resistance changes."
+        }
+      ]
     }
   ],
   "level3": [

@@ -1,19 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 81bbe5b3454f7162
+CONTENT-HASH: 7de922d922addd67
+Round: 2
 
-Round 2.
+Delta: options replaced (5,1 / 11 / 13 / 15 h), question "Kuinka kauan lataus kestää?", fractions as `:`, solution lists the slips.
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions L2-05/L2-07/L3-04/L3-05, Vastaus — a)-, b)- ja c)-vastaukset ovat Vastaus-rivin jälkeen irrallisina kappaleina; toimii, mutta rivin voisi otsikoida "Vastaukset" kuten muissa luvuissa.
-- [Minor] solutions L3-04, Vastaus — "$390\,\text{€}$ on kahden merkitsevän numeron tarkkuudella" — selkeämpi: "koska sähkön kustannus $390\,\text{€}$ tunnetaan kymmenen euron tarkkuudella".
+- [Minor] 16-16 the correct value 15 h is the largest of the four and the feedback says every slip makes the time shorter, so a student who only remembers "losses lengthen" can pick it by position; add a distractor above 15 h (e.g. a forgotten kilo factor is no longer there, so for example dividing by `0,85` twice, about 18 h).
+- [Minor] 16-16 the options appear in the order 11, 13, 5,1, 15 h; order them by size (5,1 / 11 / 13 / 15) so the comparison is easy on a phone.
 
 ## Checked
-- Kierroksen 1 Polish: L1-06:n kömpelö palaute korvattu laskulla $60\,\text{kWh} : 11\,\text{kW} \approx 5{,}5\,\text{h}$ (oikein), L2-07:n yksiköt symboleina ($\text{kW}$) ja L3-04:n vastauksen pyöristys perusteltu.
-- Muutetut tekstit: L2-06 (huomio "teho pysyy tunnin ajan taulukon arvossa" ja c-ratkaisun huomautus), L2-07 (mittausjakso $0\text{–}3{,}0\,\text{h}$, keskiteho 7,6 kW) lasketut: 22,85 kWh, 7,617 kW, 1370,1 €, 780 € täsmäävät.
-- Avatut kaappaukset 1280 px: open-exercises-L2-1280-9 (16-15 taulukko, kuvaajanluku, kaavat) ja L3-1280-1 (16-16). Ei ylivuotoa, taulukko ja kaavat ehjinä.
+- Renders (own script, 390 px, correct option committed, all feedback, answer and solution open): page width = viewport, no overflow; `t = W_akku : (ηP)` in feedback is one line with a readable subscript; the aligned display is 286 px inside its scroll box; the new `t = 24 kWh : 1,84 kW ≈ 13 h` (254 px) and `t = 0,85 · 24 kWh : 1,84 kW` (243 px) lines fit.
+- Rendered: each distractor feedback names its slip (3UI, multiplying by η, leaving η out) and the correct feedback gives only the formula; the three slips are now specific.
+- Text only: the options' order is read from the built HTML.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

@@ -173,3 +173,22 @@
 **Sijoitus:** Sekunnissa kulkee $\dfrac{N}{t} = \dfrac{0{,}40\,\text{A}}{1{,}602 \cdot 10^{-19}\,\text{C}} = 2{,}50 \cdot 10^{18}\,\text{1/s}$ elektronia, joten $v = \dfrac{2{,}50 \cdot 10^{18}\,\text{1/s}}{1{,}3 \cdot 10^{23}\,\text{1/m}} = 1{,}92 \cdot 10^{-5}\,\text{m/s} = 1{,}92 \cdot 10^{-2}\,\text{mm/s}$. Aika on $t = \dfrac{1{,}0\,\text{m}}{1{,}92 \cdot 10^{-5}\,\text{m/s}} = 5{,}2 \cdot 10^{4}\,\text{s} = \dfrac{5{,}2 \cdot 10^{4}\,\text{s}}{3600\,\text{s/h}} = 14{,}5\,\text{h}$.
 **Vastaus:** a) $0{,}019\,\text{mm/s}$, kaksi merkitsevää numeroa kuten virrassa $0{,}40\,\text{A}$ ja elektronien tiheydessä. b) Matkan $1{,}0\,\text{m}$ kulkemiseen kuluu noin $14\,\text{h}$. c) Lamppu syttyy heti, koska johto on valmiiksi täynnä vapaita elektroneja, jotka lähtevät liikkeelle kaikkialla piirissä yhtä aikaa. Energiaa siirtyy lamppuun heti, vaikka kukin elektroni etenee hitaasti, koska lampun oman hehkulangan elektronit liikkuvat heti eikä lamppu odota pariston elektroneja.
 **Järkevyys:** Nopeus $0{,}019\,\text{mm/s}$ tarkoittaa noin $0{,}019\,\text{mm/s}\cdot 3600\,\text{s} \approx 69\,\text{mm}$ tunnissa, joten metriin kuluu noin $14\,\text{h}$ kuten laskettiin. Sekunnissa kulkeva $2{,}5 \cdot 10^{18}$ elektronia on mitättömän pieni osa johdon $1{,}3 \cdot 10^{23}$ elektronista metriä kohti, mikä sopii hitaaseen etenemiseen. Virta $0{,}40\,\text{A}$ tarkoittaa joka sekunti varausta $0{,}40\,\text{C}$, joka vastaa noin $2{,}5 \cdot 10^{18}$ elektronia.
+
+## fy6-1-L1-09
+**Kysytty:** mitkä viidestä väitteestä taskulampun virrasta, varauksesta ja energiasta ovat tosia.
+**Periaate:** Virta ei kulu lampussa: sama varaus kiertää suljetussa piirissä, joten virta on yhtä suuri piirin joka kohdassa. Varaus saadaan virrasta, $Q = It$. Jännite on siirtynyt energia varausyksikköä kohti, $U = \tfrac{E}{Q}$, joten energia on $E = UQ$. Johto on valmiiksi täynnä vapaita elektroneja, jotka alkavat liikkua kaikkialla piirissä yhtä aikaa.
+**Mallivastaus:** Minuutissa lampun läpi kulkeva varaus ja lamppuun siirtyvä energia ovat
+
+$Q = It = 0{,}30\,\text{A} \cdot 60\,\text{s} = 18\,\text{C}$
+
+$E = UQ = 3{,}0\,\text{V} \cdot 18\,\text{C} = 54\,\text{J}$
+
+1 epätosi: virta ei kulu lampussa. Lampun ja miinusnavan välissä virta on sama $0{,}30\,\text{A}$ kuin ennen lamppua, koska sama varaus palaa paristoon.
+
+2 tosi: lampun läpi kulkee minuutissa $18\,\text{C}$.
+
+3 tosi: $3{,}0\,\text{V} = 3{,}0\,\text{J/C}$, joten jokainen coulombi tuo lamppuun $3{,}0\,\text{J}$, kun johtojen ja pariston oma vastus jätetään huomiotta.
+
+4 epätosi: johdossa on valmiiksi vapaita elektroneja, ja ne alkavat liikkua kaikkialla piirissä yhtä aikaa, myös hehkulangassa. Lamppu syttyy heti, vaikka elektronit etenevät hitaasti.
+
+5 epätosi: $3{,}0\,\text{J}$ on energia yhtä coulombia kohti. Minuutissa lamppuun siirtyy $54\,\text{J}$.

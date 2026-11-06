@@ -260,6 +260,37 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy6-6-L2-08",
+      "level": 2,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "Vastus $R_1 = 24\\,\\Omega$ on kytketty yksin jännitelähteeseen. Lähteen jännite on $12\\,\\text{V}$. Sen jälkeen vastuksen $R_1$ kanssa kytketään sarjaan toinen samanlainen vastus $R_2 = 24\\,\\Omega$. Lähteen jännite pysyy samana. Lähteen ja johtimien resistanssit jätetään huomiotta.\n\nMiten vastuksen $R_1$ teho muuttuu, kun vastus $R_2$ kytketään sarjaan?",
+      "answer": "Teho pienenee neljäsosaan.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Teho kaksinkertaistuu.",
+          "feedback": "Tässä resistanssin kasvu on viety kaavaan $P = RI^2$, mutta virran muutos on unohdettu. Vastuksen $R_1$ oma resistanssi ei muutu. Sen läpi kulkeva virta pienenee."
+        },
+        {
+          "text": "Teho pysyy samana.",
+          "feedback": "Tässä vastuksen $R_1$ teho on laskettu koko lähteen jännitteellä. Sarjaankytkennässä vastuksen $R_1$ yli on enää osa lähteen jännitteestä. Siksi myös sen teho muuttuu."
+        },
+        {
+          "text": "Teho pienenee puoleen.",
+          "feedback": "Tässä teho on oletettu suoraan verrannolliseksi virtaan. Virta puolittuu, mutta Joulen lain $P = RI^2$ mukaan vastuksen teho riippuu virran neliöstä."
+        },
+        {
+          "text": "Teho pienenee neljäsosaan.",
+          "correct": true,
+          "feedback": "Oikein: virta puolittuu arvosta $0{,}50\\,\\text{A}$ arvoon $0{,}25\\,\\text{A}$. Teho $RI^2$ pienenee arvosta $6{,}0\\,\\text{W}$ arvoon $1{,}5\\,\\text{W}$."
+        }
+      ]
     }
   ],
   "level3": [

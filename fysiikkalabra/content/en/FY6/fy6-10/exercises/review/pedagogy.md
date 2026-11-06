@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: ac9f07827b25cf14
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 0c40b39a97046bfa
+Mode: full (translation review against the reviewed Finnish set; new YO-skill task L2-08 (Coulomb scaling, two changes at once))
+Round 3
 
 ## Blocking
 (none)
-
-## Fixed
-(none needed)
 
 ## Polish
 (none)
 
 ## Checked
-- Parts a/b/c of L2-05..07 and L3-04..05 keep the Finnish task structure, and the answer box still asks only for part b).
-- Distractor feedback in L1-06 and L1-07 names the same misconception as in fi, with the same level of hint.
-- English is natural and plain; sentences stay short enough for a student.
+- Fixed: nothing needed; the new task already matched the Finnish.
+- New task L2-08 (Coulomb scaling, two changes at once): the multiple-choice form keeps one clearly correct option, each distractor targets one misconception and its feedback names the error and repairs it, as in fi.
+- Language: natural English, decimal point; the task and solution read naturally and give the same steps as the Finnish.
+- Solutions complete and the reasonableness/check step is a real check.
+- check_i18n: 0 errors (en).

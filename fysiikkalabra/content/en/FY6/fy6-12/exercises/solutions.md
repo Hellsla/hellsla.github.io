@@ -168,6 +168,33 @@
 **Answer:** a) $6.66 \cdot 10^{-27}\,\text{kg}$, three significant figures like the speeds; b) the ion is a singly charged helium ion (He$^+$), whose mass is $6.646 \cdot 10^{-27}\,\text{kg}$.
 **Reasonableness:** The result differs from the mass of the helium ion by less than $1\,\%$, whereas the mass of the proton would be about $4$ times smaller and that of the deuteron about two times smaller, so the choice is clear. The masses of the rows vary by about $\pm 3\,\%$, which fits the scatter of the three-digit speeds.
 
+## fy6-12-L2-08
+**Find:** whether the student's calculation has an error and in which row, when the kinetic energy at point B of an electron that started from rest is calculated.
+**Principle:** Only the electric force does work, so the sum of the kinetic energy and the potential energy is conserved. The kinetic energy grows by as much as the potential energy $E_\text{p} = qV$ decreases. The change depends on the potential difference $V_B - V_A$ between the points, not on the potential of a single point, whose value depends on the choice of the zero point.
+**Model answer:** Row 1 is correct: the force on the electron points against the field, so it starts toward a higher potential, from point A to point B.
+
+Row 2 is correct: the charge of the electron is $q = -e$, so $E_{\text{p},A} = -30\,\text{eV}$ and $E_{\text{p},B} = -120\,\text{eV}$. The potential energy decreases.
+
+Row 3 is wrong. The student has used the potential $120\,\text{V}$ of point B in place of the potential difference. The electron started from point A, whose potential is $30\,\text{V}$, so it passes through the potential difference
+
+$U = V_B - V_A$
+
+$U = 120\,\text{V} - 30\,\text{V} = 90\,\text{V}$
+
+The kinetic energy at point B is
+
+$E_\text{k} = eU = 90\,\text{eV}$
+
+Row 4 is calculated correctly with the value of row 3, but the wrong value changes the result. Correctly:
+
+$E_\text{k} = 90 \cdot 1.602 \cdot 10^{-19}\,\text{J}$
+
+$E_\text{k} = 1.442 \cdot 10^{-17}\,\text{J}$
+
+$E_\text{k} \approx 1.4 \cdot 10^{-17}\,\text{J}$
+
+The kinetic energy is $90\,\text{eV}$, that is, $1.4 \cdot 10^{-17}\,\text{J}$ to two significant figures. Check: the potential energy decreases by $-30\,\text{eV} - (-120\,\text{eV}) = 90\,\text{eV}$, and the same amount changes into kinetic energy. The correct answer is row 3: the kinetic energy is given by the potential difference, not by the potential of the end point.
+
 ## fy6-12-L3-04
 **Given:** accelerating voltage $U_\text{a} = 1.8\,\text{kV}$, length of the plates $L = 5.0\,\text{cm}$, plate separation $d = 1.5\,\text{cm}$, deflecting voltage $U_\text{d} = 120\,\text{V}$, $e = 1.602 \cdot 10^{-19}\,\text{C}$, $m = 9.109 \cdot 10^{-31}\,\text{kg}$, $g = 9.81\,\text{m/s}^2$; initial speed zero, and the electron enters between the plates from the middle, parallel to the plates
 **Find:** a) the speed $v$ before the plates, b) the deflection $y$ in millimetres at the end of the plates and whether the electron hits a plate, c) whether gravity is negligible

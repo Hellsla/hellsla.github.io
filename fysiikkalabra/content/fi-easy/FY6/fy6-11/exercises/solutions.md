@@ -169,6 +169,25 @@
 **Vastaus:** $3{,}0 \cdot 10^{4}\,\text{V/m}$ ($2{,}98 \cdot 10^{4}\,\text{V/m}$), kaksi merkitsevää numeroa kuten testivarauksessa. Tulos on sama kuin $U : d$. Kenttä on siis levyjen välissä homogeeninen noin $6\,\text{cm}$:n päähän keskikohdasta.
 **Järkevyys:** Keskiarvo $2{,}98 \cdot 10^{4}\,\text{V/m}$ poikkeaa arvosta $U : d$ vain $0{,}6\,\%$. Pisteessä $x = 8{,}0\,\text{cm}$ kenttä on jo $3{,}7\,\%$ heikompi kuin keskellä. Raja $3\,\%$ ylittyy siis ennen reunaa. Reunalla $x = 10{,}0\,\text{cm}$ kenttä on jo $45{,}2\,\%$ heikompi.
 
+## fy6-11-L2-08
+**Kysytty:** mikä neljästä voimakuviosta esittää oikein pölyhiukkaseen vaikuttavat voimat.
+**Periaate:** Kappale on hiukkanen. Siihen vaikuttavat Maa (paino $\overline{G}$) ja levyjen sähkökenttä (sähköinen voima $\overline{F}_\text{s} = q\overline{E}$). Tyhjiössä ei ole ilmanvastusta. Hiukkasen varaus on negatiivinen, joten sähköinen voima osoittaa kenttää vastaan. Homogeenisessa kentässä voiman suuruus on $F_\text{s} = \lvert q \rvert E$ kaikkialla levyjen välissä. Nopeus ei ole voima, eikä vaakasuora liike tarvitse vaakasuoraa voimaa.
+**Mallivastaus:** Oikea on voimakuvio B. Kenttä osoittaa ylös ja hiukkanen on negatiivinen, joten sähköinen voima osoittaa alas. Voimien suuruudet:
+
+$F_\text{s} = \lvert q \rvert E$
+
+$F_\text{s} = 2{,}0 \cdot 10^{-16}\,\text{C} \cdot 1{,}0 \cdot 10^{5}\,\text{N/C}$
+
+$F_\text{s} = 2{,}0 \cdot 10^{-11}\,\text{N}$
+
+$G = mg$
+
+$G = 1{,}0 \cdot 10^{-12}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2$
+
+$G \approx 9{,}8 \cdot 10^{-12}\,\text{N}$
+
+Kumpikin voima osoittaa alas. Sähköisen voiman nuoli on noin kaksi kertaa niin pitkä kuin painon nuoli, kuten kuviossa B. Kuviossa A sähköinen voima on piirretty kentän suuntaan. Se pätisi vain positiiviselle hiukkaselle. Kuviossa C nopeus on piirretty voimaksi, vaikka hiukkaseen ei vaikuta liikkeen suuntaista voimaa. Kuviossa D paino puuttuu, vaikka se on noin puolet sähköisestä voimasta. Elektronin paino voidaan jättää huomiotta, mutta pölyhiukkasen ei.
+
 ## fy6-11-L3-04
 **Annettu:** esimerkkiaineisto: levyjen etäisyys $d = 8{,}0\,\text{mm}$, positiivinen levy ylempänä, $g = 9{,}81\,\text{m/s}^2$; pisaroiden massat $3{,}8$; $4{,}6$; $3{,}2$; $5{,}1$ ja $4{,}2 \cdot 10^{-15}\,\text{kg}$ sekä leijumisjännitteet $931\,\text{V}$, $746\,\text{V}$, $1580\,\text{V}$, $627\,\text{V}$ ja $683\,\text{V}$
 **Kysytty:** a) pisaroiden varaukset ja merkki, b) alkeisvarausten lukumäärät ja alkeisvarauksen arvio, c) vertaus kirjallisuusarvoon, d) ilmanpuhdistimen toiminta; vastauslaatikkoon alkeisvarauksen arvio coulombeina

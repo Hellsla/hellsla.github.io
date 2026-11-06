@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: bc67e70570a33706
-Mode: delta
-Round: 1
+CONTENT-HASH: 44f907a0c5ed6d70
 
 ## Blocking
 
-## Fixed
-- Wording edits listed in science.md; no layout, formula or number touched.
-
 ## Polish
+- [Minor] fy6-4-L2-08 (4-16) — the ordering rows start with Circuit C already in its correct first place (A, D, E, B follow in reverse of the answer); harmless, but a different shuffle would not hand out one position. For pedagogy: leave to that reviewer.
 
 ## Checked
-- Screenshots of the new exercises (open-exercises L1/L2/L3 at 1280 px, stage at 390 px, en): tables with captions and units in headers, inputs and units, opened solutions all fit without overflow or clipping (captures predate the small wording edits).
-- LaTeX decimals and units set as in the Finnish; no Finnish text visible in en.
+- Delta: new L2-08 (ordering task, shown as 4-16) and its solution.
+- Opened en fy6-4-open-exercises-L2-1280-10 (task text with circuits A-E, first row), -11 (rows with Place selects, opened Find/Principle/Model answer with 1/R fractions and R_A..R_D chains), -12 (end of solution).
+- Resistances render as maths with \Omega, subscripts upright ($R_\text{A}$), fractions set in display rows, no red KaTeX, nothing clipped or overflowing; the situation is listed one circuit per line and the question stands last.
+- Figures: none changed.
+
+## Scores
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

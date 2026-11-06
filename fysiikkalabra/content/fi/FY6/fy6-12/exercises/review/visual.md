@@ -1,19 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: e733db822fea11fb
+CONTENT-HASH: 4703625fe3ccea47
+Round: 2
 
-Delta: one feedback sentence in 12-6 (L1-06, choice 4) and core marks on 12-4, 12-6, 12-8, 12-11.
+Delta: the clipped U chain split into two lines, E_k split, task text paragraph, feedback wording.
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] exercises.json L1-06 choice 4 feedback — "kun potentiaalin nollakohta on negatiivisella levyllä" refers to a plate the task never mentions (it speaks only of "homogeeninen sähkökenttä"); e.g. "…$V = Ex$, kun kenttä on kahden levyn välissä, potentiaalin nollakohta on negatiivisella levyllä ja $x$ on etäisyys siitä."
-- [Minor] (carried over) 12-13 answer chip "U ≈ 30 V" vs box 30,1 V; 12-13 "275,7 V·cm"; 12-19 six formulas in one paragraph; 12-13 no reference plot.
+- [Minor] 12-16 options still appear in the order Rivi 1, 4, 3, 2 although the task says "rivi riviltä"; keep row order (last option stays last).
+- [Minor] 12-16 the correct option is still the longest row label (39 vs 24-33 characters); e.g. "Rivi 3: liike-energia".
 
 ## Checked
-- Own captures of preview/fy6-12.html, 12-6 with choice 4 committed (feedback shown) at 360, 390 and 1280 px: the new sentence sits inside the task card under its option, $V = Ex$, $x$ and $qV$ render on one line each, no overflow (page width = viewport), Vastaa and the model answer follow in order.
-- Core marks: the "Ydintehtävä" chip renders beside the task number on 12-6 (capture), and the built page carries it on exactly 12-4, 12-6, 12-8 and 12-11 (four `.ex-core`).
-- Screenshots refreshed (`screenshot.py fy6-12 --if-stale`); deterministic checks in the packet clean.
+- Renders (own script, 390 px, correct option committed, all feedback, answer and solution open): page width = viewport, no element beyond the card; the U chain now reads `U = V_B − V_A` / `U = 120 V − 30 V = 90 V` on two lines, E_k on two lines; widest formula 256 px (under 300 px). The Round 1 clipping is gone.
+- Rendered: the correct feedback now reads "Laskettaessa tulee U = V_B − V_A = 90 V" inside the card, no overflow; the task text has the paragraph break before "Oppilas laskee".
+- Text only: option order and label lengths from the built HTML.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

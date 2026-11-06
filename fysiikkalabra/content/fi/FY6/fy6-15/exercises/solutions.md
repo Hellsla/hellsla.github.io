@@ -68,6 +68,25 @@
 **Vastaus:** $6{,}0\,\text{kV}$, kaksi merkitsevää numeroa kuten läpilyöntilujuudessa $3{,}0\,\text{MV/m}$.
 **Järkevyys:** Yksi megavoltti metriä kohti on yksi kilovoltti millimetriä kohti, joten ilma kestää noin $3\,\text{kV}$ millimetriltä ja kahden millimetrin väli $2 \cdot 3\,\text{kV} = 6\,\text{kV}$. Pistorasian $230\,\text{V}$ jää tästä kauas alle, mutta salaman tai suurjännitejohdon jännitteet ovat tuhansia kertoja suurempia.
 
+## fy6-15-L1-09
+**Kysytty:** tilanteiden A–D järjestys kehon läpi kulkevan virran $I$ mukaan pienimmästä suurimpaan.
+**Periaate:** Vahingon tekee kehon läpi kulkeva virta, ja se riippuu sekä kosketusjännitteestä että virtatien resistanssista Ohmin lain mukaan, $I = U : R$. Suurin jännite ei siis välttämättä anna suurinta virtaa, eikä suurin resistanssi välttämättä pienintä. Lasketaan jokaisen tilanteen virta.
+**Mallivastaus:** Virrat:
+
+$I_\text{A} = 24\,\text{V} : 20\,\text{k}\Omega = 1{,}2\,\text{mA}$
+
+$I_\text{B} = 230\,\text{V} : 46\,\text{k}\Omega = 5{,}0\,\text{mA}$
+
+$I_\text{C} = 230\,\text{V} : 1{,}6\,\text{k}\Omega \approx 140\,\text{mA}$
+
+$I_\text{D} = 1000\,\text{V} : 25\,\text{k}\Omega = 40\,\text{mA}$
+
+Virta $I_\text{C}$ on ilmoitettu kahdella merkitsevällä numerolla kuten resistanssi $1{,}6\,\text{k}\Omega$. Virran mukaan pienimmästä suurimpaan järjestys on A, B, D, C.
+
+Jännitteen mukaan järjestys olisi eri, A, B ja C, D: tilanteen D jännite $1000\,\text{V}$ on suurin, mutta märän käden pieni resistanssi tekee tilanteen C virrasta suurimman. Pelkkä resistanssikaan ei ratkaise: tilanteen A resistanssi on pienempi kuin tilanteiden B ja D, mutta sen jännite on niin pieni, että virta jää pienimmäksi.
+
+Tilanteen A virta ylittää vain tuntokynnyksen. Tilanteen B virta jää näillä arvoilla alle irrottamiskynnyksen $10\,\text{mA}$, mutta kenkiä ei voi pitää sähköiskulta suojaavina: märkä lattia, vaurioitunut kenkä tai samanaikainen hanan kosketus ohittaa ne, eikä mitään virtaa voi pitää varmasti turvallisena. Tilanteen D virta ylittää hengityksen vaikeutumisen rajan $30\,\text{mA}$, ja tilanteen C virta ylittää kammiovärinän vaaran rajan $50\,\text{mA}$.
+
 ## fy6-15-L2-01
 **Annettu:** nimellisvirta $I_\text{s} = 16\,\text{A}$, jännite $U = 230\,\text{V}$, päällä olevat tehot $P_1 = 2000\,\text{W}$ ja $P_2 = 1200\,\text{W}$
 **Kysytty:** teho $P_\text{lisä}$, jonka ryhmään voi vielä kytkeä

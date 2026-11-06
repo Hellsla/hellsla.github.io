@@ -170,6 +170,23 @@
 **Answer:** $0.96\,\text{mN}$, two significant figures like the charges and the distance. The student's error was dividing by the distance $r$ and not by its square $r^2$.
 **Reasonableness:** The student's incorrect divisor was $0.030$ and the correct one $9.0 \cdot 10^{-4}$, so the correct result is $0.030 : 9.0 \cdot 10^{-4} = 33$ times the incorrect one: $0.029\,\text{mN} \cdot 33 = 0.96\,\text{mN}$. Estimate: $10^{10} \cdot 10^{-16} : 10^{-3} \approx 10^{-3}\,\text{N}$ is close to the result.
 
+## fy6-10-L2-08
+**Find:** how the magnitude of the electric force on ball B changes when the charge of ball A doubles and the distance triples
+**Principle:** By Coulomb's law $F = k\,\tfrac{\lvert q_1 q_2 \rvert}{r^2}$ the force is directly proportional to the product of the charges and inversely proportional to the square of the distance. The forces on balls A and B are a force and its reaction, so they are equal in magnitude. Therefore a change in the charge of ball A also changes the force on ball B.
+**Model answer:** The force decreases to $\tfrac{2}{9}F$. At the start:
+
+$F = k\,\dfrac{q \cdot 2q}{r^2} = k\,\dfrac{2q^2}{r^2}$
+
+After the change:
+
+$F' = k\,\dfrac{2q \cdot 2q}{(3r)^2} = k\,\dfrac{4q^2}{9r^2}$
+
+The ratio:
+
+$\dfrac{F'}{F} = \dfrac{4}{9} \cdot \dfrac{1}{2} = \dfrac{2}{9}$
+
+The product of the charges doubles, which doubles the force, and the square of the distance becomes nine times as large, which divides the force by nine. So the force is $\tfrac{2}{9}F \approx 0.22F$. The answer $\tfrac{2}{3}F$ would result if the force were inversely proportional to the distance and not to its square. The answer $\tfrac{1}{9}F$ would result if the change in the charge of ball A did not affect ball B, although the law contains the product of the charges. The answer $18F$ would result if the square of the distance were in the numerator.
+
 ## fy6-10-L3-04
 **Given:** $q_1 = +6.0\,\text{nC}$ at $x = 0$, $q_2 = -2.5\,\text{nC}$ at $d = 12\,\text{cm}$; a positive test charge $q$
 **Find:** a) in which regions the net force can be zero; b) the zero point $x$ in centimetres from the point $x = 0$; c) why the result does not depend on the magnitude of the test charge

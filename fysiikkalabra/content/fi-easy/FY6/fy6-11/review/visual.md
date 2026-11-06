@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 418cbb24e4577921
+CONTENT-HASH: 551446ad3bd6f294
 
 ## Blocking
 (none)
@@ -8,9 +8,9 @@ CONTENT-HASH: 418cbb24e4577921
 (none)
 
 ## Checked
-- Delta: koe-2 solution Periaate, 'jokaisella taulukon rivillä'. The solution is not captured open; read from the diff: plain, short sentences kept, maths untouched.
-- Opened fy6-11-open-exercises-1280-6 (fi-easy): the layout around the neighbouring solutions is intact.
-- Hash at start and end: 418cbb24e4577921. Captures re-made for this hash (screenshot.py --if-stale); no layout change around the edited sentence.
+- delta (figures.json only, 384fe88c6..HEAD): lesson.md unchanged; the new fy6-11/pick-* descriptions and, in en, the label mapping "s": "e" belong to exercise force-diagram options; the lesson itself has no figure label "s" and no F_s or F_e (it uses only \overline{F} = q\overline{E}), so the mapping cannot reach it and no en text/figure mismatch exists.
+- Re-ran screenshot.py for this hash and opened the captures of the lesson's theory pages at 1280 px (figures, labels, units, captions): all labels render, nothing clipped, no overflow, no figure label changed.
+- No lesson figure shows F_s or F_e, so the en label mapping "s" to "e" has no effect on the lesson's figures.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 4

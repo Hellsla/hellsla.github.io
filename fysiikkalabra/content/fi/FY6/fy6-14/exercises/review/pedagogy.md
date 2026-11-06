@@ -1,17 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: d82481d212cae25e
-ROUND: 2
+CONTENT-HASH: dd712fc8e155ee45
+Round: 1
 
 ## Blocking
+(none)
 
 ## Polish
-- L2-06 uses the same method as the existing L3-02 (U·I per load, take the maximum); ask L2-06 for the load at maximum power or an efficiency instead (carried over).
-- L2-05, L2-07 and existing L1-02/L2-02 are all "R = (U − U_D) : I"; the plan's error task (LED without resistor) is covered only partly by L3-05 c) (carried over).
-- L3-05 a): "jatkamalla jyrkkää suoraa" now prescribes the extrapolation method; acceptable since the lesson does not teach threshold extraction, but it is the only hint left, keep it at that.
+- exercises.json:277,281,285 — the feedback of three wrong first-stage answers already states the second-stage reasons ("diodi johtaa, kun anodi on plusnavan puolella"; "haarat ovat rinnan ... haaran 1 virta kulkee muista haaroista riippumatta"; "sarjassa oleva piidiodi ... katkaisee haaran 3 virran"). The two stages are separate components, so a student who errs at stage 1 reads the answer to stage 2. Keep only the diagnosis of the error in stage 1 ("Tässä anodi ja katodi on sekoitettu"), leave the principle to the reason stage.
+- exercises.json:259 — a three-branch circuit with anode/cathode directions told only in words is hard to hold in the head on a phone; add a circuit figure (IEC symbols) and keep the text as the figure's description.
+- exercises.json:259 — the lesson's own warned mistakes (R = U : I, diode as a resistor, I_k · U_oc) are not touched; fine for a direction task, but the packet should say which part of the lesson this task practises.
+- solutions.md:172 — "Lampun lanka johtaisi kumpaankin suuntaan" rests on fy6-3 (lamp as a resistor) and is not in this lesson; one clause "kuten vastus" would tie it back.
 
 ## Checked
-- Round-1 items resolved: L1-06 no longer equates the resistor with the minus terminal; it now gives 9,0 V and "vain pieni jännite" (solution: at most about 1 V).
-- L1-06/L1-07 correct option no longer first; L1-07 answer and options consistent, kind "reasoning" added.
-- L3-05 a): slope 21 mA : 0,05 V = 420 mA/V, threshold 2,05 − 0,048 = 2,00 V, correct; b) 13,8 mA at 2,02 V unchanged (load line (4,5 − U) : 180 meets the table); c) 0,10 V, 4,2-fold current correct.
-- Tolerance 0,05 on L3-05 fits the interpolation; no stale 1,85 V remains in the files.
-- Levels and kinds fit the plan; render not re-opened (wording and option order only).
+- Text only (no render); no formula chain longer than "4,5 V - 2,0 V = 2,5 V" (not measured separately, short).
+- Physics recomputed: branch 1 forward, 2.5 V over the series resistor; branch 2 LED B reverse; branch 3 silicon diode reverse so the lamp is dark; answer "Vain LED A" is correct.
+- Options cover the sensible error classes (lamp lit despite the diode, A and B confused, one reverse diode kills everything); correct option "Vain LED A" is not distinguishable by length or hedge.
+- Reasons: four of 87-104 characters; the correct one is not the longest, none hedged; reason 4 is true but irrelevant, as the type requires.
+- Correct choice's feedback at stage 1 ("Oikein: vain LED A palaa.") gives nothing away; stage 2 correct feedback does the explaining.
+- Within fy6-14 and fy6-3 (diode direction, parallel branches); question "Mitkä valot palavat?" is the last sentence; Finnish correct (anodi, katodi, estosuunta, etuvastus).
+- Not a duplicate of L1-06 (one diode in series with a resistor); level 2, kind concept + reasoning.
+- Hash unchanged at the start and end.

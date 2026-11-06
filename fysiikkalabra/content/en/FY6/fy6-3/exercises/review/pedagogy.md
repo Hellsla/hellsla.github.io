@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 423d58d957cde771
-Mode: full
-Round: 1
+CONTENT-HASH: 9d14eab469b0e194
 
 ## Blocking
-(none)
 
 ## Fixed
-- (none) The English matches the Finnish in content and reads naturally; no text edits were needed.
+- L1-09 feedback: "like in a heating filament lamp" changed to "like in a filament lamp that heats up"; "at a current of 4.0 mA U = RI" changed to "... the voltage is U = RI".
 
 ## Polish
-(none)
 
 ## Checked
-- New tasks keep the Finnish level, task structure (a, b, c) and answer-box instruction.
-- Distractor feedback explains the misconception in the same way as the Finnish.
-- Language level suits the audience; terms (characteristic curve, resistivity, fitted line, variables) are used consistently with the lesson.
-- No Finnish text left where it should not be.
+- New task fy6-3-L1-09 is a YO-skill form task at the same level and kind as in fi; situation first, question last, clear instruction.
+- Distractors and feedback are misconception-based and repair the error (same as fi); no answer disclosed in the task text.
+- Model answer is complete and follows step by step as in fi.
+- Natural English at upper-secondary reading level.

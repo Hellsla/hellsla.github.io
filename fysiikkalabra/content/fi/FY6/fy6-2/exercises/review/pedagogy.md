@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 012dc69df8b5c15b
-Round: 3
+CONTENT-HASH: 8a721a86e7a34235
+Round: 2
 
 ## Blocking
+(none)
 
 ## Polish
-- exercises.json L1-08 — same formula ΔX = p·X + n·r as L1-01, L1-02 and L1-05; acceptable at level 1. "Aurinkokennon" at 5,98 V is a panel or a series of cells; say "aurinkopaneelin".
-- exercises.json L2-06 — the correct choice is the longest and the only one with the "katkaistaan virta" detail; shorten it slightly or lengthen the distractors so length does not give it away.
-- exercises.json L3-04 — the "5,9-kertainen" comparison in the solution could be said as "noin kuusinkertainen".
+- exercises.json — the last option now reads "Päättelyssä ei ole virhettä" while the other rows are called "suunnitelma" in the stem ("Opiskelija ... kirjoittaa mittaussuunnitelman"); either word is fine, but use one: "Suunnitelmassa ei ole virhettä" in both stem and option.
 
 ## Checked
-- Only change since round 2: solutions.md L1-08 Järkevyys now "noin kolmasosa alueesta 20 V (5,98 : 20 = 0,30)"; 5,98/20 = 0,299, so the statement is true and the earlier false "yli kolmasosa" is gone.
-- L1-08 remains consistent: ΔU = 0,005·5,98 + 2·0,01 = 0,0499 V, answer 0,05 V, interval 5,93–6,03 V.
-- Round 1 Blocking items (L1-08 skill, L3-04 algebra steps) stay resolved; no other file in exercises changed.
-- Counts 8/7/5 = 20, levels and kinds match docs/exercise-bank/FY6.md; no duplicates; every new solution has principle, units, substitution and a sensible-result step.
+- Round 1 items fixed: formula line now "ΔI = 0,010 · 140 mA + 0,2 mA" (well under 300 px, re-measured logic from the earlier 278 px longest line); stiff Finnish rewritten with "pidät ... ehkä"; no-error feedback no longer hands over the key.
+- Correct (wrong) row still not longest nor the only one with a reason; row 3 is the lesson's warned mistake.
+- Numbers unchanged and correct (33 mA, 1,6 mA); intermediate 0,2 mA added makes the 200 mA line followable.
+- Text only; formula width judged from the round 1 measurements (KaTeX, 17 px, 390 px viewport), no new renders.

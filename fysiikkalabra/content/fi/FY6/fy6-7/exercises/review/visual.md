@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 83b798cb46578690
-ROUND: 3
+CONTENT-HASH: 5161df0334c5195f
+ROUND: 1 (delta)
+
 ## Blocking
-(none) The round 1 Blocking item is resolved: fy6-7-L2-07 now reads "$0{,}00\,\text{kWh}$" (L2-1280-9 shows "0,00 kWh").
+None.
 
 ## Polish
-- [Minor] solutions.md fy6-7-L3-05 Sijoitus (L3-1280-7) — the sentences are still split around display blocks: "… $S = …$ vuodessa ja [block] vuodessa. Takaisinmaksuaika on" leaves a lone "vuodessa." between blocks; write each result as a complete sentence before its block ("Vuosisäästö on" [block] "Takaisinmaksuaika on" [block]).
-- [Minor] solutions.md fy6-7-L3-05 Vastaus c) — "vanha jääkaappi lämmittää asuntoa enemmän, joten sähkölämmityksen aikana talvella osa säästöstä menetetään" is a long sentence; for science: confirm the wording of the omitted heating effect (the waste heat of the old fridge helps only in the heating season and only if heating is electric).
+- [Minor] fy6-7-L1-09 solution — the last Mallivastaus paragraph (about 70 words) packs the result, four error explanations and the Järkevyys ("Järkevyys: ...") into one block; split the error list and Järkevyys into their own lines.
 
 ## Checked
-- Round 1 Polish: L3-04 Kaava S on its own display line (fixed, L3-1280-5), L3-04 example no longer in parentheses (fixed), "kello 8" in plain text (fixed), L2-06 "Kuvaajan lukeminen" replaced by "Taulukon lukeminen" with the daily differences (fixed; 7,7+7,2+8,2+7,5+9,1+9,2+7,4 = 56,3 recomputed).
-- 1280 px captures open-exercises-L2-1280-6, -7, -8, -9 (L2-05, L2-06, L2-07), L3-1280-5, -7 (L3-04, L3-05) read at full size; exercises.json diff (L1-06 correct option moved to third place, task texts split into paragraphs) and solutions.md read. No 390/360 px capture of exercise cards exists; packet layout checks are clean.
-- Delta (boxed value at the start of the Vastaus/Answer line): the added value is correct (matches solution and exercises.json within tolerance, unit and decimal sign right, LaTeX number+unit) and the line is short and reads well; no layout change beyond one short sentence.
+- Rendered at 390 px (all five options committed, solution open) for L1-09 and the re-paragraphed L1-08: no overflow, no clipped text, no inline formula over 290 px; "$3{,}0\,\text{min}$:ssa" case ending correct; option set (0,0010 / 0,060 / 3,6 / 60 / 3600 kWh) shows no form tell, each distractor is one unit slip and its feedback matches (1,2 kW · 3 min computed).
+- Text only: Järkevyys reasoning, Periaate. No figure.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

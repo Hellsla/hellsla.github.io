@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 012dc69df8b5c15b
-ROUND: 3
+CONTENT-HASH: 8a721a86e7a34235
+Round: 2 (commit 57a66480d changed only the new task fy6-2-L2-08; round-1 Polish item on 0,033 A is resolved: marked "välitulos, noin 0,03 A").
 
 ## Blocking
 
 ## Polish
-- L1-08 vs L1-01 (carried over) — L1-08 is still close to a duplicate of L1-01: same 20 V range, same ±(0,5 % + 2), a voltage reading, and only the U ± ΔU notation added. Add the plan's relative-error part, e.g. "Kuinka monta prosenttia lukemasta virheraja on?"
-- exercises.json:208 (L2-06 correct feedback, carried over) — "... koska mittarissa on erillinen liitin suurille virroille" gives the wrong reason for opening the circuit. Write "Virta katkaistaan tai piiri avataan ennen johdon siirtämistä, koska johtoa ei irroteta liittimestä virran kulkiessa; suurille virroille on mittarissa oma liittimensä."
-- exercises.json:220 (L2-07, carried over) — the rest voltage (lepojännite) is defined for a battery that has stood without load. Add "Auto on ollut sammutettuna useita tunteja", so that comparing with 12,60 V is valid.
-- solutions.md:179 (L3-04 Järkevyys, carried over) — "lähes kymmenesosan" should be "kymmenesosan": R₂ : R_m = 0,10 exactly, and 0,571 μA : 5,714 μA = 0,100.
 
 ## Checked
-- Hash 012dc69df8b5c15b at start and end (the packet gives the same). Counts 8/7/5.
-- Only change since round 2 (HEAD d48687e6): solutions.md:141, L1-08 Järkevyys.
-- Round-2 Blocking resolved: the line now says "noin kolmasosa alueesta 20 V (5,98 : 20 = 0,30)". 0,30 is right, and "noin kolmasosa" is a fair description.
-- Rest of the line is still right: ΔU = 0,0299 V + 0,02 V = 0,0499 V ≈ 0,05 V, which is 0,83 % of 5,98 V, so it is under 1 %. The two parts, 0,03 V and 0,02 V, are of the same order.
-- No other task changed, so the round-1/2 checks of the other 19 tasks still hold.
+- Hash 8a721a86e7a34235 at start and end.
+- answers.py run against exercises.json: all 16 numeric answers agree within tolerance (one python call).
+- Changed 200 mA chain recomputed: 0,010 · 140 mA + 0,2 mA = 1,6 mA; 10 A range 0,0328 A ≈ 0,03 A; ratio about 20. Row 3 is still the only wrong line, and `answer` matches.
+- The no-error option "Päättelyssä ei ole virhettä" and the task sentence now agree; its feedback no longer asserts an error, only points to the error-limit calculation, and stays correct physics.
+- Reworded wrong-row feedback ("Jos pidät riviä virheellisenä, ajattelet ehkä …") keeps the same, correct reasons: ammeter in parallel → short circuit, start range vs final range, a reading that does not fit the 2 V range gives OL.
+- The wrong row is still the lesson's warned mistake (largest range always best); everything used (Δx = p·x + n·r, OL, smallest fitting range) is taught in this lesson.
+- Inline formula widths measured (KaTeX render at 17 px, 1.21 em, own script): widest 262 px, the changed chain 252 px, under 300 px. Page not rendered; the rest from text.

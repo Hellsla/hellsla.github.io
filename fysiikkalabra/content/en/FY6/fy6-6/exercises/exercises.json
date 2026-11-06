@@ -260,6 +260,37 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy6-6-L2-08",
+      "level": 2,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "A resistor $R_1 = 24\\,\\Omega$ is connected alone to a voltage source whose voltage is $12\\,\\text{V}$. A second, identical resistor $R_2 = 24\\,\\Omega$ is then connected in series with the resistor $R_1$. The voltage of the source stays the same. The resistances of the source and the wires are neglected.\n\nHow does the power of the resistor $R_1$ change when the resistor $R_2$ is connected in series?",
+      "answer": "The power decreases to one quarter.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The power doubles.",
+          "feedback": "Here the increase in resistance has been put into the formula $P = RI^2$, but the change in the current has been forgotten. The own resistance of the resistor $R_1$ does not change, and the current through it decreases."
+        },
+        {
+          "text": "The power stays the same.",
+          "feedback": "Here the power of the resistor $R_1$ has been calculated with the whole voltage of the source. In the series connection there is only a part of the voltage of the source across the resistor $R_1$, so its power changes too."
+        },
+        {
+          "text": "The power decreases to one half.",
+          "feedback": "Here the power has been assumed to be directly proportional to the current. The current halves, but according to Joule's law $P = RI^2$ the power of a resistor depends on the square of the current."
+        },
+        {
+          "text": "The power decreases to one quarter.",
+          "correct": true,
+          "feedback": "Correct: the current halves from $0.50\\,\\text{A}$ to $0.25\\,\\text{A}$, and the power $RI^2$ decreases from $6.0\\,\\text{W}$ to $1.5\\,\\text{W}$."
+        }
+      ]
     }
   ],
   "level3": [

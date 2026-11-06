@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: d82481d212cae25e
+CONTENT-HASH: dd712fc8e155ee45
 
-Round 2.
+Delta: new L2-08 (14-16, three parallel diode branches, choice plus reason).
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions L3-05, Järkevyys — "työpisteen jännite on hieman kynnysjännitettä $2{,}0\,\text{V}$ suurempi, kuten jyrkällä käyrällä kuuluukin" — selkeämpi: "…kuten jyrkällä käyrällä kuuluukin, koska virta on kynnysjännitteen jälkeen jo suuri".
-- [Minor] solutions L3-05, Vastaus-rivi näyttää "14 mA" kun laskettu arvo on $13{,}8\,\text{mA}$ — merkitsevien numeroiden perustelu on mukana, ok; ei muutosta.
+- [Minor] 14-16 three branches are described only in words; a small circuit sketch (or at least a table of branch, component, polarity) would help phone readers, but the text is complete and unambiguous.
+- [Minor] 14-16 stage-1 correct feedback "Oikein: vain LED A palaa." is thin compared with the distractor feedback; fine because it does not give away the reason stage.
 
 ## Checked
-- Kierroksen 1 Polish: kynnysjännite ($1{,}85\,\text{V}$) korvattu jyrkän suoran jatkeella $2{,}0\,\text{V}$ (420 mA/V, leikkaus 2,00 V täsmää taulukkoon), L1-06:n kömpelö virke korjattu, L1-08:lle lisätty `kind`.
-- L1-06 (9,0 V, "pieni jännite"), L1-07 (LED-vastus) ja L3-05 laskettu uudelleen: työpiste 13,8 mA / 2,02 V, ΔU 0,10 V (5 %), kaikki täsmäävät; tolerance 0,03 kattaa vastauksen 14 mA.
-- Avatut kaappaukset 1280 px: open-exercises-L3-1280-7 ja -8 (14-20 taulukko, kuvaajan lukeminen, leikkaus, sijoitus, vastaus ja järkevyys). Ei ylivuotoa, murtolausekkeet ja yksiköt ehjinä.
+- Renders (own script, 390 px and 360 px, correct option and correct reason committed, all feedback, answer and solution open): no overflow, no clipped formula (widest katex under 230 px), the 2,0 V and 2,5 V figures set in one line.
+- Rendered: the correct reason is not the longest or the only hedged one (reason lengths 88 to 104 characters); distractors catch series/parallel confusion, the lamp conducting both ways, and the "resistor needed" true-but-irrelevant claim.
+- Text only: the branch polarities (anode/cathode towards the plus terminal) read consistently in task, feedback and solution; no figure to describe.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 4

@@ -235,6 +235,57 @@
       "answer": -3.0,
       "unit": "V",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-5-L2-08",
+      "level": 2,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "Esimerkkikytkennässä kolme vastusta, $R_1 = 20\\,\\Omega$, $R_2 = 30\\,\\Omega$ ja $R_3 = 60\\,\\Omega$, on kytketty rinnan jännitelähteeseen. Pääjohtimen virtamittari näyttää $0{,}30\\,\\text{A}$. Lähteen jännitettä ei tunneta. Lähteen ja johtimien resistanssit jätetään huomiotta.\n\nKuinka suuri virta kulkee vastuksen $R_3$ kautta?",
+      "answer": "$0{,}050\\,\\text{A}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "$0{,}050\\,\\text{A}$",
+          "correct": true,
+          "feedback": "Oikein. Valitse seuraavaksi perustelu, joka selittää vastauksesi."
+        },
+        {
+          "text": "$0{,}10\\,\\text{A}$",
+          "feedback": "Tässä pääjohtimen virta on jaettu tasan kolmeen haaraan. Haarautumispiste ei jaa virtaa tasan, kun haarojen resistanssit ovat erisuuret."
+        },
+        {
+          "text": "$0{,}15\\,\\text{A}$",
+          "feedback": "Tässä suurimman resistanssin haaraan on oletettu suurin virta. Suurempi resistanssi kuitenkin vastustaa virtaa enemmän, ei vähemmän."
+        },
+        {
+          "text": "$0{,}30\\,\\text{A}$",
+          "feedback": "Tässä koko pääjohtimen virta kulkisi jokaisen vastuksen kautta kuten sarjakytkennässä. Virtalain mukaan virta jakautuu haaroihin, ja haarojen virtojen summa on $0{,}30\\,\\text{A}$."
+        }
+      ],
+      "reason_prompt": "Mikä perustelu selittää vastauksesi?",
+      "reasons": [
+        {
+          "text": "Haarautumispiste jakaa virran tasan, koska jokaiseen haaraan tulee yhtä paljon varausta.",
+          "feedback": "Virtalaki sanoo vain, että haarojen virtojen summa on tuleva virta. Se ei kerro jakoa. Jaon ratkaisee haarojen yhteinen jännite ja kunkin haaran resistanssi."
+        },
+        {
+          "text": "Haaroilla on sama jännite, joten pienemmän resistanssin haaran kautta kulkee suurempi virta.",
+          "correct": true,
+          "feedback": "Oikein: kokonaisresistanssi on $10\\,\\Omega$, joten haarojen jännite on $3{,}0\\,\\text{V}$ ja $I_3 = \\tfrac{3{,}0\\,\\text{V}}{60\\,\\Omega} = 0{,}050\\,\\text{A}$."
+        },
+        {
+          "text": "Suurimman resistanssin yli on suurin osa jännitteestä, joten sen kautta kulkee suurin virta.",
+          "feedback": "Tässä rinnankytkentää on käsitelty kuin sarjakytkentää. Jännite jakautuu vain sarjaan kytketyille vastuksille; rinnakkaisten haarojen yli on sama jännite."
+        },
+        {
+          "text": "Virta ei kulu vastuksissa, joten haaroista palaa miinusnapaan yhteensä $0{,}30\\,\\text{A}$.",
+          "feedback": "Väite on tosi, mutta se ei selitä vastausta. Se kertoo vain haarojen virtojen summan, ei sitä, miten virta jakautuu kolmen haaran kesken."
+        }
+      ]
     }
   ],
   "level3": [

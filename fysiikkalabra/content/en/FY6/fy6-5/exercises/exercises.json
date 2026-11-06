@@ -235,6 +235,57 @@
       "answer": -3.0,
       "unit": "V",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-5-L2-08",
+      "level": 2,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "In an example circuit, three resistors, $R_1 = 20\\,\\Omega$, $R_2 = 30\\,\\Omega$ and $R_3 = 60\\,\\Omega$, are connected in parallel to a voltage source. The ammeter in the main wire reads $0.30\\,\\text{A}$. The voltage of the source is not known. The resistances of the source and the wires are neglected.\n\nHow large is the current through the resistor $R_3$?",
+      "answer": "$0.050\\,\\text{A}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "$0.050\\,\\text{A}$",
+          "correct": true,
+          "feedback": "Correct. Next, choose the reason that explains your answer."
+        },
+        {
+          "text": "$0.10\\,\\text{A}$",
+          "feedback": "Here the current of the main wire has been divided equally among the three branches. A junction does not divide the current equally when the resistances of the branches are different."
+        },
+        {
+          "text": "$0.15\\,\\text{A}$",
+          "feedback": "Here the largest current has been assumed in the branch with the largest resistance. A larger resistance, however, opposes the current more, not less."
+        },
+        {
+          "text": "$0.30\\,\\text{A}$",
+          "feedback": "Here the whole current of the main wire would flow through every resistor as in a series connection. According to the current law the current divides into the branches, and the sum of the currents of the branches is $0.30\\,\\text{A}$."
+        }
+      ],
+      "reason_prompt": "Which reason explains your answer?",
+      "reasons": [
+        {
+          "text": "The junction divides the current equally, because the same amount of charge arrives in each branch.",
+          "feedback": "The current law only says that the sum of the currents of the branches is the arriving current. It does not tell how the current divides. The division is decided by the common voltage of the branches and the resistance of each branch."
+        },
+        {
+          "text": "The branches have the same voltage, so a larger current flows through the branch with the smaller resistance.",
+          "correct": true,
+          "feedback": "Correct: the total resistance is $10\\,\\Omega$, so the voltage of the branches is $3.0\\,\\text{V}$ and $I_3 = \\tfrac{3.0\\,\\text{V}}{60\\,\\Omega} = 0.050\\,\\text{A}$."
+        },
+        {
+          "text": "Most of the voltage is across the largest resistance, so the largest current flows through it.",
+          "feedback": "Here a parallel connection has been treated like a series connection. The voltage divides only among resistors connected in series; across parallel branches the voltage is the same."
+        },
+        {
+          "text": "Current is not used up in the resistors, so in total $0.30\\,\\text{A}$ returns from the branches to the negative terminal.",
+          "feedback": "The statement is true, but it does not explain the answer. It only tells the sum of the currents of the branches, not how the current divides among the three branches."
+        }
+      ]
     }
   ],
   "level3": [

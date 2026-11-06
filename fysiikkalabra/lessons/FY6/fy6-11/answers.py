@@ -37,6 +37,8 @@ a["fy6-11-L2-06"] = 4.0e-9 * 1800 / 0.060 * 1000          # L2-06: d = 6,0 cm (n
 fx = [60.2, 59.8, 59.5, 59.0, 58.0, 33.0]                 # L2-07: F in µN at x = 0...10 cm, q = 2,0 nC
 good = [f for f in fx if abs(f - fx[0]) / fx[0] < 0.03]   # within 3 %: x = 0...6 cm (four points, sum 238,5 µN)
 a["fy6-11-L2-07"] = sum(good) / len(good) * 1e-6 / 2.0e-9   # E = 59,6 µN : 2,0 nC = 2,98e4 V/m (U : d = 3,0e4 V/m)
+# L2-08 is a force-diagram choice (no number), a dust grain in a vacuum: F_s = |q| E = 2,0e-16 C · 1,0e5 N/C = 2,0e-11 N down,
+# G = m g = 1,0e-12 kg · 9,81 = 9,8e-12 N down (ratio 2,04, as in figures.py)
 mk = [3.8, 4.6, 3.2, 5.1, 4.2]                            # L3-04: m in 1e-15 kg, hover voltages in V, d = 8,0 mm
 uk = [931, 746, 1580, 627, 683]
 qk = [m * 1e-15 * g * 8.0e-3 / u for m, u in zip(mk, uk)]   # q = m g d / U = 3,20; 4,84; 1,59; 6,38; 4,83 (1e-19 C)

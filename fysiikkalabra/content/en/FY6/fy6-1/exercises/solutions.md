@@ -173,3 +173,22 @@
 **Substitution:** In a second $\dfrac{N}{t} = \dfrac{0.40\,\text{A}}{1.602 \cdot 10^{-19}\,\text{C}} = 2.50 \cdot 10^{18}\,\text{1/s}$ electrons pass, so $v = \dfrac{2.50 \cdot 10^{18}\,\text{1/s}}{1.3 \cdot 10^{23}\,\text{1/m}} = 1.92 \cdot 10^{-5}\,\text{m/s} = 1.92 \cdot 10^{-2}\,\text{mm/s}$. The time is $t = \dfrac{1.0\,\text{m}}{1.92 \cdot 10^{-5}\,\text{m/s}} = 5.2 \cdot 10^{4}\,\text{s} = \dfrac{5.2 \cdot 10^{4}\,\text{s}}{3600\,\text{s/h}} = 14.5\,\text{h}$.
 **Answer:** a) $0.019\,\text{mm/s}$, two significant figures like the current $0.40\,\text{A}$ and the density of the electrons. b) Moving a distance of $1.0\,\text{m}$ takes about $14\,\text{h}$. c) The lamp lights up immediately, because the wire is already full of free electrons, which start to move everywhere in the circuit at the same time. Energy is transferred to the lamp immediately although each electron advances slowly, because the electrons of the filament of the lamp itself move immediately and the lamp does not wait for the electrons of the battery.
 **Reasonableness:** The speed $0.019\,\text{mm/s}$ means about $0.019\,\text{mm/s}\cdot 3600\,\text{s} \approx 69\,\text{mm}$ in an hour, so a metre takes about $14\,\text{h}$ as calculated. The $2.5 \cdot 10^{18}$ electrons passing in a second are a negligibly small part of the $1.3 \cdot 10^{23}$ electrons of the wire per metre, which fits slow advance. A current of $0.40\,\text{A}$ means a charge of $0.40\,\text{C}$ every second, which corresponds to about $2.5 \cdot 10^{18}$ electrons.
+
+## fy6-1-L1-09
+**Find:** which of the five statements about the current, the charge and the energy in a flashlight are true.
+**Principle:** Current is not used up in the lamp: the same charge circulates in a closed circuit, so the current is equally large at every point of the circuit. The charge is obtained from the current, $Q = It$. Voltage is the transferred energy per unit of charge, $U = \tfrac{E}{Q}$, so the energy is $E = UQ$. The wire is already full of free electrons, which start to move everywhere in the circuit at the same time.
+**Model answer:** The charge passing through the lamp in a minute and the energy transferred to the lamp are
+
+$Q = It = 0.30\,\text{A} \cdot 60\,\text{s} = 18\,\text{C}$
+
+$E = UQ = 3.0\,\text{V} \cdot 18\,\text{C} = 54\,\text{J}$
+
+1 false: current is not used up in the lamp. Between the lamp and the negative terminal the current is the same $0.30\,\text{A}$ as before the lamp, because the same charge returns to the battery.
+
+2 true: $18\,\text{C}$ passes through the lamp in a minute.
+
+3 true: $3.0\,\text{V} = 3.0\,\text{J/C}$, so each coulomb brings $3.0\,\text{J}$ to the lamp when the resistance of the wires and of the battery itself is neglected.
+
+4 false: the wire already contains free electrons, and they start to move everywhere in the circuit at the same time, also in the filament. The lamp lights up at once even though the electrons advance slowly.
+
+5 false: $3.0\,\text{J}$ is the energy per one coulomb. In a minute $54\,\text{J}$ is transferred to the lamp.

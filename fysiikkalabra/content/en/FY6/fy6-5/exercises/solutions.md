@@ -203,3 +203,24 @@ c) $R_\text{p} = \dfrac{100\,\Omega \cdot 5.0\,\text{V}}{12\,\text{V} - 5.0\,\te
 
 **Answer:** $250\,\Omega$, to two significant figures. A smaller load resistance would lower the potential below $5.0\,\text{V}$ (with the load $100\,\Omega$ it is $4.0\,\text{V}$) and a greater load resistance would raise it closer to $6.0\,\text{V}$.
 **Reasonableness:** When $R_\text{L} = 250\,\Omega$, the current of the resistor $R_1$ is $12\,\text{V} : (100\,\Omega + 71.4\,\Omega) = 0.070\,\text{A}$ and its voltage is $100\,\Omega \cdot 0.070\,\text{A} = 7.0\,\text{V}$, so $V_P = 12\,\text{V} - 7.0\,\text{V} = 5.0\,\text{V}$. The currents in the branches are $5.0\,\text{V} : 100\,\Omega = 0.050\,\text{A}$ and $5.0\,\text{V} : 250\,\Omega = 0.020\,\text{A}$, together $0.070\,\text{A}$, as the current law requires. The value $250\,\Omega$ lies between the rows $1000\,\Omega$ ($5.72\,\text{V}$) and $100\,\Omega$ ($4.01\,\text{V}$) of the table, just like $5.0\,\text{V}$.
+
+## fy6-5-L2-08
+**Find:** the current $I_3$ through the resistor $R_3$ when the current of the main wire is $0.30\,\text{A}$, and the reason that explains it.
+**Principle:** Across parallel branches there is the same voltage $U$. According to Kirchhoff's current law the currents of the branches add up to the current $I$ of the main wire. The voltage is obtained from the total resistance $R_\text{k}$ of the parallel connection and Ohm's law $U = R_\text{k} I$, and the current of each branch is $\tfrac{U}{R}$.
+**Model answer:** The total resistance:
+
+$$\begin{aligned}
+&\frac{1}{R_\text{k}} = \frac{1}{20\,\Omega} + \frac{1}{30\,\Omega} + \frac{1}{60\,\Omega} \\
+&\frac{1}{R_\text{k}} = \frac{6}{60\,\Omega} \\
+&R_\text{k} = 10\,\Omega
+\end{aligned}$$
+
+The common voltage of the branches is $U = 10\,\Omega \cdot 0.30\,\text{A} = 3.0\,\text{V}$. The currents of the branches are
+
+$$\begin{aligned}
+&I_1 = \frac{3.0\,\text{V}}{20\,\Omega} = 0.15\,\text{A} \\
+&I_2 = \frac{3.0\,\text{V}}{30\,\Omega} = 0.10\,\text{A} \\
+&I_3 = \frac{3.0\,\text{V}}{60\,\Omega} = 0.050\,\text{A}
+\end{aligned}$$
+
+The current through the resistor $R_3$ is $0.050\,\text{A}$. The current law holds: the sum of the currents of the branches is $0.15\,\text{A} + 0.10\,\text{A} + 0.050\,\text{A}$, that is $0.30\,\text{A}$. The reason: the branches have the same voltage, so the current of a branch is inversely proportional to its resistance, and the smallest current flows in the branch with the largest resistance. The current does not divide equally, and the voltage does not divide among parallel branches as it does in a series connection. The statement that $0.30\,\text{A}$ returns from the branches in total is true, but it does not tell how the current divides.

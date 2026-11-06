@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: de8b276cdfca08dc
-
-Delta: one feedback sentence in 12-6 (L1-06, choice 4) and core marks on 12-4, 12-6, 12-8, 12-11.
+CONTENT-HASH: 24851d9dbd27e2fd
+Mode: delta (new YO-skill task fy6-12-L2-08, type 4 error finding; two tasks re-paragraphed). Packet regenerated after a wording fix in row 2 (hash changed); captures retaken.
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] exercises.json L1-06 choice 4 feedback — "when the zero of potential is at the negative plate" refers to a plate the task never mentions (it speaks only of "a uniform electric field"); e.g. "…$V = Ex$, if the field lies between two plates, the zero of potential is at the negative plate and $x$ is the distance from it."
+- [Minor] fy6-12-L2-08 text and solution — points A and B are plain letters ("point A", "point B") while L3 and older tasks write "point $A$" — set them as maths for consistency.
+- [Minor] fy6-12-L2-08 options — the rows appear in shuffled order (1, 4, 3, 2) although the task says "check the calculation row by row"; the engine shuffles every choice list, so only an observation.
 
 ## Checked
-- Own captures of preview/en/fy6-12.html, 12-6 with choice 4 committed (feedback shown) at 360 and 390 px: the new sentence sits inside the task card under its option; $V = Ex$, $x$, $qV$ each on one line; page width = viewport, no inline formula overflows.
-- Core marks: the "Core" chip renders beside the task number on 12-6 (capture); the built page carries exactly four `.ex-core` (12-4, 12-6, 12-8, 12-11).
-- Deterministic checks in the packet clean.
+- fy6-12-open-exercises-L2-1280-10.png (retaken after the edit) and the unchanged -11.png: the task (rows 1-4 with inline maths), the five options with the feedback box, the answer chip and the full solution (Find, Principle, Model answer with the U and E_k chains); nothing clipped, no overflow, maths renders, decimal points and units in English form.
+- The re-paragraphed L2 tasks were not opened; the change is mechanical.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations n/a (4) · typography 5 · English 4 · accessibility 4

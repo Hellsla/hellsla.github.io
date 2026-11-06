@@ -189,3 +189,18 @@
 **Sijoitus:** Muuttujat: riippumaton muuttuja on veden eli langan lämpötila $T$, riippuva muuttuja on langan resistanssi $R$ (mitataan virrasta ja jännitteestä), ja vakioitavat tekijät ovat langan aine, pituus ja paksuus sekä jännite $1{,}00\,\text{V}$. Mittausjärjestely: virtamittari kytketään sarjaan langan kanssa ja jännitemittari rinnan langan kanssa, jotta mittarit mittaavat langan virtaa ja jännitettä; lanka on lakattu, jotta vesi ei johda virtaa sen ohi, ja lämpömittari on langan vieressä. Resistanssit ovat $R_{20} = 1{,}00\,\text{V} : 0{,}500\,\text{A} = 2{,}000\,\Omega$, $R_{40} = 2{,}262\,\Omega$, $R_{60} = 2{,}513\,\Omega$ ja $R_{80} = 1{,}00\,\text{V} : 0{,}362\,\text{A} = 2{,}762\,\Omega$, joten kasvu on $\dfrac{2{,}762\,\Omega - 2{,}000\,\Omega}{2{,}000\,\Omega} \cdot 100\,\% = 38{,}1\,\%$. Virhelähteet: (1) lanka lämpenee myös virrasta itsestään, joten sen lämpötila voi olla korkeampi kuin veden; virta kytketään vain mittaushetkeksi ja jännite pidetään pienenä. (2) Lanka ei ole ehtinyt tasaantua veden lämpötilaan, tai lämpömittari ei ole langan kohdalla; jokaisessa lämpötilassa odotetaan, kunnes lämpömittarin lukema ei enää muutu, ja sekoitetaan vettä.
 **Vastaus:** Resistanssi on kasvanut noin $38\,\%$ (laskettu $38{,}1\,\%$), kaksi merkitsevää numeroa, koska kasvu on kahden lähes yhtä suuren resistanssin erotus suhteessa arvoon $R_{20}$. Tulos tukee päätelmää, että metallilangan resistanssi kasvaa lämpötilan noustessa.
 **Järkevyys:** Virta pienenee, kun lämpötila nousee ($0{,}500\,\text{A} \to 0{,}362\,\text{A}$), ja jännite on vakio, joten resistanssin on kasvettava: $0{,}500\,\text{A} : 0{,}362\,\text{A} = 1{,}38$. Resistanssi kasvaa jokaisella $20\,{}^\circ\text{C}$:n välillä suunnilleen saman verran ($0{,}262\,\Omega$, $0{,}251\,\Omega$ ja $0{,}249\,\Omega$), eli kasvu on lähes tasaista. Mittaus on yhdellä langalla, joten tulos kuvaa tämän esimerkkiaineiston lankaa eikä ole rautalangan tarkka ominaisuus.
+
+## fy6-3-L1-09
+**Kysytty:** mikä neljästä $(I, U)$-kuvaajasta on Ohmin lakia noudattavan $2{,}0\,\text{k}\Omega$:n vastuksen ominaiskäyrä.
+**Periaate:** Ohmin lakia noudattavan vastuksen resistanssi on vakio, joten $U = RI$: ominaiskäyrä on origon kautta kulkeva suora, jonka kulmakerroin on resistanssi $R$. Resistanssi on jännitteen ja virran suhde $U : I$, ei $I : U$, ja sen pitää olla sama käyrän joka pisteessä.
+**Mallivastaus:** Oikea on kuvaaja C. Lasketaan vastuksen jännite virralla $4{,}0\,\text{mA}$.
+
+$U = RI$
+
+$U = 2{,}0 \cdot 10^{3}\,\Omega \cdot 4{,}0 \cdot 10^{-3}\,\text{A}$
+
+$U = 8{,}0\,\text{V}$
+
+Kuvaajan C suora kulkee origon ja pisteen $(4{,}0\,\text{mA};\ 8{,}0\,\text{V})$ kautta, ja myös pisteessä $(2{,}0\,\text{mA};\ 4{,}0\,\text{V})$ suhde on $U : I = 2{,}0\,\text{k}\Omega$. Kuvaajan A käyrä kulkee samassa pisteessä $(4{,}0\,\text{mA};\ 8{,}0\,\text{V})$, mutta pisteessä $(2{,}0\,\text{mA};\ 2{,}0\,\text{V})$ suhde on vain $1{,}0\,\text{k}\Omega$: resistanssi kasvaa jännitteen mukana, joten komponentti ei noudata Ohmin lakia. Kuvaajassa B virralla $4{,}0\,\text{mA}$ jännite on $2{,}0\,\text{V}$, joten resistanssi olisi $0{,}50\,\text{k}\Omega$: siinä kulmakertoimeksi on otettu $I : U$. Kuvaajassa D jännite on vakio $2{,}0\,\text{V}$, joten suhde $U : I$ muuttuu koko ajan: siinä resistanssin lukuarvo on piirretty jännitteeksi.
+
+**Kuvaajan lukeminen:** Jokaisesta kuvaajasta luetaan jännite kahdella virralla, esimerkiksi $2{,}0\,\text{mA}$ ja $4{,}0\,\text{mA}$, ja lasketaan suhde $U : I$. Vain kuvaajassa C suhde on molemmissa pisteissä $2{,}0\,\text{k}\Omega$.

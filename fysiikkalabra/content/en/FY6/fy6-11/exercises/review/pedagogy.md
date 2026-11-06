@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 9dbe67314c91de71
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 4161a9356eed0c2b
+Mode: full (translation review against the reviewed Finnish set; new YO-skill task L2-08 (force diagram selection, dust particle in a uniform field))
+Round 3
 
 ## Blocking
-(none)
-
-## Fixed
 (none)
 
 ## Polish
 (none)
 
 ## Checked
-- Wording is natural English at the level of the Finnish; tasks, hints and answer-box instructions match fi sentence by sentence.
-- Data tables and captions marked as example data in L2-05, L2-07, L3-04, as in fi.
-- Student's error in L2-06 stated in neutral terms; no hint to the answer in the task text.
-- Feedback of L1-06/L1-07 distractors names the misconception without giving away the correct option.
+- Fixed: nothing needed; the new task already matched the Finnish.
+- New task L2-08 (force diagram selection, dust particle in a uniform field): the multiple-choice form keeps one clearly correct option, each distractor targets one misconception and its feedback names the error and repairs it, as in fi.
+- Language: natural English, decimal point; the task and solution read naturally and give the same steps as the Finnish.
+- Solutions complete and the reasonableness/check step is a real check.
+- check_i18n: 0 errors (en).

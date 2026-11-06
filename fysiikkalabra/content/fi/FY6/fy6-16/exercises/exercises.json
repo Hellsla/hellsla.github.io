@@ -225,6 +225,37 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy6-16-L2-08",
+      "level": 2,
+      "text": "Sukulaisten luona sähköauton akkuun halutaan varastoida $24\\,\\text{kWh}$ energiaa. Auto ladataan tavallisesta pistorasiasta latauskaapelilla, joka rajoittaa virran $8{,}0\\,\\text{A}$:iin. Jännite on $230\\,\\text{V}$ ja latauksen hyötysuhde $85\\,\\%$, ja teho pysyy koko latauksen ajan vakiona (esimerkkiarvot).\n\nKuinka kauan lataus kestää?",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": "noin $15\\,\\text{h}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "noin $5{,}1\\,\\text{h}$",
+          "feedback": "Tulos syntyy, kun teho lasketaan kolmivaiheisen laitteen kaavalla $P = 3UI$. Tavallinen pistorasia on yksivaiheinen, joten teho on $P = UI = 1{,}84\\,\\text{kW}$ ja latausaika kolme kertaa pidempi."
+        },
+        {
+          "text": "noin $11\\,\\text{h}$",
+          "feedback": "Tulos syntyy, kun akkuun menevä energia kerrotaan hyötysuhteella eikä jaeta sillä. Häviöiden vuoksi verkosta otetaan enemmän energiaa kuin akkuun varastoituu, joten lataus kestää kauemmin kuin ilman häviöitä, $t = W_\\text{akku} : (\\eta P)$."
+        },
+        {
+          "text": "noin $13\\,\\text{h}$",
+          "feedback": "Tulos syntyy, kun hyötysuhde jätetään pois: $24\\,\\text{kWh} : 1{,}84\\,\\text{kW} \\approx 13\\,\\text{h}$ on latausaika ilman häviöitä. Häviöiden vuoksi verkosta on otettava enemmän energiaa, joten aika on pidempi."
+        },
+        {
+          "text": "noin $15\\,\\text{h}$",
+          "correct": true,
+          "feedback": "Oikein: teho on $P = UI = 1{,}84\\,\\text{kW}$, joten $t = W_\\text{akku} : (\\eta P)$, eli $t \\approx 15\\,\\text{h}$."
+        }
+      ]
     }
   ],
   "level3": [

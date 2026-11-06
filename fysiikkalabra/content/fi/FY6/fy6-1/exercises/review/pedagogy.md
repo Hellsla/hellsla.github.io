@@ -1,15 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: cf52e4c26916eaa1
-Round: 2
+CONTENT-HASH: fd9abba3faab2137
 
 ## Blocking
+(none)
 
 ## Polish
-- exercises.json L2-07 vs L2-05 c) and L2-06 — "virta ei kulu" is still the theme of L1-06, L1-07, L2-05 c), L2-06 and L2-07; vary one (e.g. L2-07 could test series lamps or current direction) if the set is revised again.
-- solutions.md L3-05 Vastaus c) — the added sentence ("lampun oman hehkulangan elektronit liikkuvat heti") is correct but could say plainly that the field/voltage spreads along the circuit at once; optional.
+- fy6-1/exercises/exercises.json:142 — statement 4 says the lamp lights only after the electrons arrive, but the task says the lamp already burns — rephrase: "Kun kytkin suljetaan, lamppu syttyy vasta, kun paristosta lähteneet elektronit ovat ehtineet lamppuun."
+- exercises.json:115 — the two misconceptions (current is consumed, electrons arrive first) already are L1-06 distractors; for novelty swap one statement for a unit/energy slip such as "1 V = 1 J" — taste, not blocking.
+- exercises.json:115 — five statements with two small calculations is the upper end of level 1; acceptable because the numbers are round.
 
 ## Checked
-- Round 1 had no Blocking items. Round 1 Polish resolved: L1-08 now 0,25 A, 1,0 min, plain units (answer 9,36e19 = 15 C : 1,602e-19 C; solution and sensible-result step updated), so it no longer outranks L2-02; L3-04 Vastaus a) drops the "13 Wh" clause (12,5 Wh); L2-06 b) solution names the short circuit; L2-07 uses "resoluutio" and the c) model answer now argues from differences of both signs within one step; L1-07 text no longer pretends a diagram is shown; L3-05 c) now explains why the lamp lights at once.
-- Recomputed: L1-08 9,36e19; L2-07 means 0,310 and 0,306 A; L3-05 1,92e-5 m/s, 14,5 h. Answer fields match solutions.
-- Counts 8/7/5 = 20, levels and kinds match docs/exercise-bank/FY6.md; no duplicate of existing tasks or of the worked example.
-- Every new solution still has principle, units, substitution and a sensible-result step.
+- Statement form: 2 true, 3 false, no true/false tell by length or hedging; each false one carries a lesson misconception (current consumed, electron arrival, J/C vs J per minute).
+- Feedback gives reason per statement, nothing the stem lacks; task ends with the question as own sentence.
+- Numbers: 0,30 A * 60 s = 18 C, 3,0 V * 18 C = 54 J correct; scope = this lesson only (ammeter symbol is in the glossary).
+- Solution follows principle, then Q and E, then each of 1-5; longest formula line 264 px (fits 300).
+- Finnish: cases (0,30 A:n not needed), glossary terms virta, jännite correct; no compound-word errors found.
+- Text only (no renders: packet screenshots were empty; I measured widths of the model-solution formulas with KaTeX in Chromium at 17 px, 390 px viewport).

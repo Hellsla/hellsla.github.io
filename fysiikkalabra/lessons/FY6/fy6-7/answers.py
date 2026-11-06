@@ -38,4 +38,5 @@ cost_snt = sum(e * c for e, c in zip(E_p, a_p))           # 267,44 snt = 2,67 EU
 a["fy6-7-L3-04"] = 2.0 * 3.0 * (19.4 - 3.9) / 100         # 6,0 kWh · 15,5 snt/kWh = 93,0 snt = 0,930 EUR
 # old fridge 320 kWh/a, new 98 kWh/a, price 489 EUR, 0,17 EUR/kWh: saving 222 kWh = 37,74 EUR a year
 a["fy6-7-L3-05"] = 489 / ((320 - 98) * 0.17)              # payback 489 : 37,74 = 12,96 a (life 15 a: 566,1 - 489 = 77,1 EUR gain)
+# L1-09 is multiple choice (order of magnitude): 1,2 kW · 3,0 min = 1,2 kW · 0,050 h = 0,060 kWh; no number
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))
