@@ -4087,10 +4087,15 @@ function rlScoresCsv() {
   /* itsearvio (opettaja 6.11.2026): sama väriasteikko kuin Ruukkilabrassa, tummanvihreästä punertavaan + Ei vielä */
   .sa { display: inline-block; width: 26px; height: 18px; border-radius: 4px; vertical-align: middle; }
   .sa-a { background: #1a4d2e; } .sa-b { background: #5f9460; } .sa-c { background: #d6a744; } .sa-d { background: #c0583b; }
-  .sa-x { background: #d9d4c6; } .sa-none { background: none; border: 1px dashed var(--line); }
+  .sa-x { background: #9a9a9a; } .sa-none { background: #fff; border: 1px solid var(--line); box-sizing: border-box; }
   .sa-legend span.item { margin-right: 14px; white-space: nowrap; } .sa-legend .sa { margin-right: 4px; }
-  table.self { width: auto; } table.self th.it { font-size: 13px; max-width: 9em; white-space: normal; }
-  table.self td { text-align: center; } table.self td:first-child { text-align: left; white-space: nowrap; }
+  /* osaamisen sormenjälki (opettaja 6.11.2026): rivit väittämiä luvuittain, sarakkeissa opiskelijat; valkoinen = ei vastattu, harmaa = ei vielä */
+  table.fp { width: auto; border-collapse: collapse; } table.fp td, table.fp th { padding: 0; border: 1px solid var(--line); }
+  table.fp th.st { writing-mode: vertical-rl; transform: rotate(180deg); font-size: 12px; font-weight: 600; padding: 4px 2px; max-height: 11em; white-space: nowrap; text-transform: none; letter-spacing: 0; }
+  table.fp th.ch { text-align: left; padding: 6px 8px; background: var(--soft, #f3efe6); font-size: 14px; }
+  table.fp td.lab { padding: 3px 8px; font-size: 13px; min-width: 16em; max-width: 30em; }
+  table.fp td.c { width: 26px; min-width: 26px; height: 24px; }
+  table.fp td.c.sa-none { border: 1px solid var(--line); }
 </style>
 </head>
 <body>
@@ -4104,7 +4109,7 @@ function rlScoresCsv() {
     <div id="groupChart" hidden aria-label="Ryhmä yhteensä"></div>
     <div class="wide"><table id="summary" hidden><thead></thead><tbody></tbody></table></div>
     <section id="selfSec" hidden>
-      <h2>Itsearviot</h2>
+      <h2>Osaamisen sormenjälki</h2>
       <p class="muted sa-legend" id="selfLegend"></p>
       <div id="selfBox"></div>
     </section>
@@ -4274,39 +4279,44 @@ function rlScoresCsv() {
   $('hideNames').addEventListener('click', function () {
     S.hide = !S.hide; $('hideNames').textContent = S.hide ? 'Näytä nimet' : 'Piilota nimet'; $('hideNames').setAttribute('aria-pressed', String(S.hide));
     $('probSec').hidden = S.hide || !(S.ov && S.ov.problems.length);
-    if (S.ov) renderSummary(S.ov);
+    if (S.ov) { renderSummary(S.ov); renderSelf(S.ov); }
   });
-  // Itsearviot (opettaja 6.11.2026): luvuittain opiskelijat × kohteet (Tarkista osaamisesi -tehtävät ja luvun tavoitteet),
-  // uusimman palautuksen taso värinä. Kooste-valinta rajaa luvut.
+  // Osaamisen sormenjälki (opettaja 6.11.2026): koko ryhmä yhdessä taulukossa. Rivit ovat lukujen itsearviokohteet
+  // (Tarkista osaamisesi -tehtävät ja luvun tavoitteet) luvuittain, sarakkeissa opiskelijat, solussa uusimman palautuksen
+  // taso värinä. Valkoinen = ei vastattu (tai lukua ei palautettu), harmaa = en ole vielä opiskellut. Kooste-valinta rajaa luvut.
   var SA_TEXT = { a: 'Osaan niin hyvin, että voisin opettaa kaverille', b: 'Koen oivaltaneeni', c: 'Osaan osittain, epävarmuutta on vielä',
-                  d: 'Tarvitsen vielä harjoitusta', x: 'Ei vielä harjoiteltu' };
+                  d: 'Tarvitsen vielä harjoitusta', x: 'En ole vielä opiskellut', none: 'Ei vastattu' };
   function renderSelf(ov) {
     var box = $('selfBox'); box.textContent = '';
     var chs = ov.chapters.filter(function (c) { return c.self && c.self.students.length && (S.scope === 'all' || S.scope === c.id); });
     var lg = $('selfLegend'); lg.textContent = '';
-    ['a', 'b', 'c', 'd', 'x'].forEach(function (k) { var it = el('span', 'item'); it.append(el('span', 'sa sa-' + k), document.createTextNode(SA_TEXT[k])); lg.append(it); });
+    ['a', 'b', 'c', 'd', 'x', 'none'].forEach(function (k) { var it = el('span', 'item'); it.append(el('span', 'sa sa-' + k), document.createTextNode(SA_TEXT[k])); lg.append(it); });
+    $('selfSec').hidden = !chs.length;
+    if (!chs.length) return;
+    // kaikki ryhmän opiskelijat (myös ne, jotka eivät ole palauttaneet lukua), aakkosjärjestyksessä
+    var names = [];
+    ov.summary.forEach(function (r) { if (names.indexOf(r.email) < 0) names.push(r.email); });
+    chs.forEach(function (c) { c.self.students.forEach(function (x) { if (names.indexOf(x.email) < 0) names.push(x.email); }); });
+    names.sort(function (a, b) { return a.localeCompare(b, 'fi'); });
+    var wrap = el('div', 'wide'), t = el('table', 'fp'), head = el('thead'), hr = el('tr'), tb = el('tbody');
+    t.id = 'fingerprint';
+    hr.append(el('th', null, 'Väittämä'));
+    names.forEach(function (n, i) { var th = el('th', 'st', S.hide ? 'Opiskelija ' + (i + 1) : n); th.scope = 'col'; hr.append(th); });
+    head.append(hr); t.append(head, tb);
     chs.forEach(function (c) {
-      var d = el('details', 'chapter'); d.open = chs.length === 1;
-      d.append(el('summary', null, 'Luku ' + c.number + ' · ' + c.title));
-      var wrap = el('div', 'wide'), t = el('table', 'self'), hr = el('tr'), tb = el('tbody');
-      hr.append(el('th', null, 'Opiskelija'));
+      var cr = el('tr'), ch = el('th', 'ch', 'Luku ' + c.number + ' · ' + c.title); ch.colSpan = names.length + 1; cr.append(ch); tb.append(cr);
+      var by = {}; c.self.students.forEach(function (x) { by[x.email] = x.levels || {}; });
       c.self.items.forEach(function (it) {
-        var goal = /^tavoite-/.test(it.id), th = el('th', 'it', goal ? 'Tavoite ' + it.id.split('-')[1] : it.label);
-        th.title = it.label; hr.append(th);
-      });
-      var head = el('thead'); head.append(hr); t.append(head, tb);
-      c.self.students.slice().sort(function (a, b) { return a.email.localeCompare(b.email, 'fi'); }).forEach(function (s) {
-        var tr = el('tr'); tr.append(el('td', null, s.email));
-        c.self.items.forEach(function (it) {
-          var v = s.levels[it.id], td = el('td'), m = el('span', 'sa ' + (v ? 'sa-' + v : 'sa-none'));
-          m.setAttribute('role', 'img'); m.setAttribute('aria-label', it.label + ': ' + (v ? SA_TEXT[v] : 'ei arvioitu')); m.title = m.getAttribute('aria-label');
-          td.append(m); tr.append(td);
+        var tr = el('tr'); tr.append(el('td', 'lab', it.label));
+        names.forEach(function (n, i) {
+          var v = (by[n] || {})[it.id], k = v && SA_TEXT[v] ? v : 'none', td = el('td', 'c sa-' + k);
+          td.title = (S.hide ? 'Opiskelija ' + (i + 1) : n) + ': ' + SA_TEXT[k]; td.setAttribute('aria-label', td.title); td.dataset.level = k;
+          tr.append(td);
         });
         tb.append(tr);
       });
-      wrap.append(t); d.append(wrap); box.append(d);
     });
-    $('selfSec').hidden = !chs.length;
+    wrap.append(t); box.append(wrap);
   }
   $('scope').addEventListener('change', function () { S.scope = $('scope').value; if (S.ov) { renderSummary(S.ov); renderSelf(S.ov); } });
   $('refresh').addEventListener('click', loadHome);
