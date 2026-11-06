@@ -79,8 +79,44 @@ def submits(lang, lesson_id):
     return bool(m) and (lang, m.group(1)) in SUBMISSION_COURSES
 
 
+# Palautukset (teacher 2026-11-06): palautukset.json names the period and each group's Google Forms responder link. The
+# chapters with the download button then get a "Palauta" link to palautukset.html, a page with one button per group.
+# Only links: the site loads nothing from Google and receives no submission.
+FORMS_FILE = ROOT / "palautukset.json"
+FORMS_PAGE = "palautukset.html"
+FORM_URL = re.compile(r"^https://(forms\.gle/[A-Za-z0-9]{6,40}|docs\.google\.com/forms/d/e/[A-Za-z0-9_-]{20,120}/viewform(\?usp=[a-z_]{1,20})?)$")
+
+
+def submission_forms():
+    if not FORMS_FILE.is_file(): return None
+    d = json.loads(FORMS_FILE.read_text())
+    bad = lambda why: sys.exit(f"palautukset.json: {why}")
+    if not isinstance(d.get("title"), str) or not 1 <= len(d["title"]) <= 80: bad("title must be text of 1-80 characters")
+    forms = d.get("forms")
+    if not isinstance(forms, list): bad("forms must be a list")
+    seen = set()
+    for f in forms:
+        if not isinstance(f, dict) or not isinstance(f.get("group"), str) or not re.fullmatch(r"[0-9A-Za-zÅÄÖåäö .-]{1,40}", f["group"]): bad(f"bad group in {f!r}")
+        if not isinstance(f.get("url"), str) or not FORM_URL.match(f["url"]): bad(f"{f.get('group')}: the url must be a Google Forms responder link (https://forms.gle/...)")
+        if f["group"] in seen: bad(f"{f['group']} twice")
+        seen.add(f["group"])
+    return d if forms else None
+
+
+FORMS = submission_forms()
+
+
 def submission_script(lang, lesson_id):
-    return f'<script src="palautus.js" data-chapter="{lesson_id}"></script>' if submits(lang, lesson_id) else ""
+    if not submits(lang, lesson_id): return ""
+    ret = f' data-return="{FORMS_PAGE}"' if FORMS else ""
+    return f'<script src="palautus.js" data-chapter="{lesson_id}"{ret}></script>'
+
+
+def forms_page_body():
+    links = "".join(f'<a class="return-form" href="{esc(f["url"])}">{esc(f["group"])}</a>' for f in FORMS["forms"])
+    return (f'<h1>{esc(FORMS["title"])}</h1>'
+            '<p class="lead">Lataa luvun ratkaisut luvun Tehtävät-kohdasta (Lataa kaikki ratkaisut) ja palauta tiedosto oman ryhmäsi lomakkeella.</p>'
+            f'<nav class="return-forms" aria-label="Ryhmien palautuslomakkeet">{links}</nav>')
 
 
 def render_md(text, **kw):
@@ -1039,6 +1075,9 @@ def build_language(lang):
     about_body = hero + (about_body[h1.end():] if h1 else about_body)
     (out / ABOUT).write_text(page(T("site.about"), f'<article class="about">{about_body}</article>',
                                   f'<a href="index.html">{T("site.name")}</a> › {T("site.about")}', ABOUT, T("site.about_lead"), main_class="reading about-page"))
+    if FORMS and lang == "fi":   # Palautukset (teacher 2026-11-06): the Finnish chapters have the button
+        (out / FORMS_PAGE).write_text(page(FORMS["title"], forms_page_body(), f'<a href="index.html">{T("site.name")}</a> › {esc(FORMS["title"])}',
+                                           FORMS_PAGE, "Ryhmien palautuslomakkeet.", main_class="reading return-page"))
     # Tietosuoja (teacher 2026-11-04): content/<lang>/tietosuoja.md (the Finnish where a language has none), linked from every footer
     priv_md = next((f for f in (ROOT / "content" / lang / "tietosuoja.md", ROOT / "content" / i18n.SOURCE / "tietosuoja.md") if f.is_file()), None)
     if priv_md:

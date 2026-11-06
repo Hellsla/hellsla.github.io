@@ -143,8 +143,13 @@
   const status = el('p', 'pad-status palautus-status'); status.setAttribute('aria-live', 'polite');
   box.append(status);
   const head = sec.querySelector(':scope > .split-head') || sec.querySelector(':scope > h2');   // lesson.js part 9 wraps the heading
-  if (head && head.matches('.split-head')) { const t = head.querySelector(':scope > .split-toggle'); if (t) t.before(btn); else head.append(btn); }
-  else box.prepend(btn);
+  // "Palauta" (teacher 2026-11-06): to the page of the groups' Forms links, when build.py palautukset.json names them
+  const RETURN = ME && ME.dataset.return;
+  const go = RETURN ? el('a', 'pad-btn palautus-btn palautus-link', 'Palauta') : null;
+  if (go) go.href = RETURN;
+  const btns = go ? [btn, go] : [btn];
+  if (head && head.matches('.split-head')) { const t = head.querySelector(':scope > .split-toggle'); if (t) t.before(...btns); else head.append(...btns); }
+  else box.prepend(...btns);
   if (head) head.after(box); else sec.prepend(box);
 
   let busy = false;
@@ -158,7 +163,7 @@
       a.download = `${CHAPTER}.ratkaisut.json`; document.body.append(a); a.click(); a.remove();
       setTimeout(() => URL.revokeObjectURL(a.href), 4000);
       remember({ sha: r.sha, id: r.id });
-      say(status, 'Palauta ladattu tiedosto opettajan Google Forms -lomakkeella.', 'ok');
+      say(status, go ? 'Palauta ladattu tiedosto Palauta-napista oman ryhmäsi lomakkeella.' : 'Palauta ladattu tiedosto opettajan Google Forms -lomakkeella.', 'ok');
     } catch (e) {
       say(status, e && e.user ? e.message : 'Tiedostoa ei voitu koota. Lataa sivu uudelleen ja yritä uudelleen.', 'no');
     } finally { busy = false; btn.disabled = false; }
