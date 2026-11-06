@@ -649,6 +649,47 @@ def task_text(html, cls="task", pid=None):
     return f'<p class="{cls} scenario">{sp[0]}</p><p class="{cls} ask"{idattr}>{sp[1]}</p>'
 
 
+EXAMPLE_NAMES = ROOT / "example-names.json"   # short names of the worked examples (teacher 2026-11-06), outside the lessons: no review goes stale
+GENERIC_TITLES = {"käsite", "laskeminen", "laskenta", "laskutehtävä", "selitä", "concept", "calculation", "calculating",
+                  "calculation exercise", "explain"}   # a check's title that only names its kind: the kind's name replaces it
+
+
+def example_name(lid):
+    """The worked example's short name in the language being built ("Paineen nollakohta"); Selkeä suomi and a
+    language without its own names show the Finnish one, a lesson without one ""."""
+    names = json.loads(EXAMPLE_NAMES.read_text()) if EXAMPLE_NAMES.is_file() else {}
+    lang = T.lang if T.lang in names else "fi"
+    return names.get(lang, {}).get(lid) or names.get("fi", {}).get(lid, "")
+
+
+def task_titles(lid, by_stage, md):
+    """{activity id: shown title} for the boxes of Esimerkit and Itsearvio (teacher 2026-11-06).
+    Esimerkit: every box is a guided example, "Esimerkki 1: Paineen nollakohta", "Esimerkki 2: Etsi virhe", numbered
+    in page order (the worked example by its name in example-names.json). Itsearvio: each task named by its kind
+    (Käsitetehtävä, Laskutehtävä, Selitystehtävä; the exit ticket is Pohdintatehtävä, lang lesson.exit_ticket), its own name after a colon unless it only names
+    the kind, its running number kept ("2. Laskutehtävä: Lämpötilan kasvu")."""
+    out, n = {}, 0
+    is_worked = lambda a: a["type"] == "theory" and "Esimerkki" in a.get("sections", ())
+    for a in by_stage["sovella"] if any(map(is_worked, by_stage["sovella"])) else ():   # a unit's tasks without a worked example (FY9) stay tasks
+        t = a["type"]
+        worked = is_worked(a)
+        if not (worked or t in CARD_TYPES or (t == "theory" and a.get("title"))): continue
+        n += 1
+        name = inline(md, example_name(lid)) if worked else esc(re.sub(r"^(?:Valinnainen|Optional)\s*:\s*", "", a.get("title") or T(f"inquiry.optional_{t}")))
+        name = name[:1].upper() + name[1:]
+        out[a["id"]] = T("inquiry.example_n", n=n) + (f": {name}" if name else "")
+    for a in by_stage["tarkista"]:
+        t = a["type"]
+        if not T.has(f"inquiry.task_{t}"): continue
+        m = re.match(r"\s*(\d+\.)?\s*(.*)$", a.get("title", ""))
+        own = m.group(2).strip()
+        p = re.match(r"([^:]+):\s*(\S.*)$", own)
+        if p and p.group(1).casefold() in GENERIC_TITLES: own = p.group(2)[:1].upper() + p.group(2)[1:]   # "Concept: what the bounces showed"
+        own = "" if own.casefold() in GENERIC_TITLES or own.casefold() == T(f"inquiry.task_{t}").casefold() else own
+        out[a["id"]] = (f"{m.group(1)} " if m.group(1) else "") + T(f"inquiry.task_{t}") + (f": {esc(own)}" if own else "")
+    return out
+
+
 def toc_link(sid, n, title):
     """A stage in the navigation: its number (as on the stage heading) and its name. The chip bar shows the short name
     (NAV); a wide window shows the rest of the title too ("Tarkista osaamisesi", .toc-rest)."""
@@ -723,9 +764,11 @@ def render(folder, inquiry, parts, md):
         last = required[-1]; last["sections"] = list(last["sections"]) + leftover   # never into a closed optional box
     body = [intro_html(parts["intro"], inquiry, sum(1 for a in acts if a.get("optional")), md) + parts.get("concepts", "")]
 
+    shown = task_titles(lid, by_stage, md)
+
     def act(a):
         t, aid = a["type"], a["id"]
-        head = f'<h3>{esc(a["title"])}</h3>' if a.get("title") else ""
+        head = f'<h3>{shown[aid] if aid in shown else esc(a["title"])}</h3>' if a.get("title") or aid in shown else ""
         if a.get("core") and not a.get("optional"):   # a task of the lesson on the core path, tagged like a core exercise (teacher 2026-11-05)
             head = f'<p class="act-core"><span class="ex-core">{T("lesson.core_exercise")}</span></p>' + head
         if t == "hook": content = f'<div class="hook">{md(a["text"])}{fig_of(a)}</div>' + (f'<p class="question">{inline(md, a["question"])}</p>' if a.get("question") else "")
@@ -743,11 +786,20 @@ def render(folder, inquiry, parts, md):
             src = a.get("source")
             badge = (f'<p class="source" data-source="{src}"><strong>{T("inquiry.source_" + src)}</strong>' + (f' · {inline(md, a["source_note"])}' if a.get("source_note") else "") + '</p>') if src else ""
             content = f'<div class="interpret">{badge}<div class="representation">{md(a["text"])}{fig_of(a)}</div>{question_html(a["question"], md, lid, aid) if a.get("question") else ""}</div>'
-        elif t == "theory": content = "".join(parts["sections"][s] for s in a["sections"])
+        elif t == "theory":
+            content = "".join(parts["sections"][s] for s in a["sections"])
+            if aid in shown and "Esimerkki" in a["sections"]:   # the box itself says "Esimerkki 1: <name>"; no heading above it (teacher 2026-11-06)
+                ex = parts["sections"]["Esimerkki"]
+                if '<p class="example-label">' in ex:
+                    new = re.sub(r'^<h3 class="theory-h">.*?</h3>', "", ex, count=1)
+                    new = re.sub(r'<p class="example-label">.*?</p>', f'<h3 class="example-title">{shown[aid]}</h3>', new, count=1)
+                else: new = re.sub(r'^<h3 class="theory-h">.*?</h3>', f'<h3 class="theory-h">{shown[aid]}</h3>', ex, count=1)
+                content = content.replace(ex, new, 1)
+                head = ""
         elif t == "sim":
             lead, info = sim_parts(a, md)
             content = lead + parts["sim"].replace("<!--sim-info-->", info)
-        elif t == "exit": content = parts["exit"].replace("</h3>", "</h3>" + md(T("inquiry.exit_lead")), 1)   # one shared lead: the lessons' own say "Lopuksi", written when it came last
+        elif t == "exit": content = parts["exit"].replace("</h3>", "</h3>" + md(T("inquiry.exit_lead")), 1)
         else: content = ""
         if t in ("choice", "numeric") and a.get("stage") == "tarkista":   # after a wrong check: a suggestion where to practise, never a verdict (teacher 2026-10-29)
             hint = f'<p class="practice-hint" role="note">{inline(md, a["practice"]) if a.get("practice") else T("inquiry.check_practice")}</p>'
@@ -755,12 +807,13 @@ def render(folder, inquiry, parts, md):
         hints = hints_html([md(mathlayout.display_chains(h)) for h in a.get("hints", [])]) if t not in ("numeric",) else ""
         sa = ""
         if parts.get("selfassess") and a.get("stage") == "tarkista" and t in ("choice", "numeric", "explain", "exit"):   # every task of Tarkista osaamisesi (teacher 2026-11-06)
-            sa = sa_fieldset(lid, aid, plain(a.get("title") or exit_title()), "", T("inquiry.sa_legend"))
+            sa = sa_fieldset(lid, aid, plain(_h.unescape(shown.get(aid) or "") or a.get("title") or exit_title()), "", T("inquiry.sa_legend"))
         hints += sa
-        if a.get("optional") or a.get("fold"):         # a closed box, named, that a student may open or leave; "fold": a
-            name = esc(a.get("title") or T(f"inquiry.optional_{t}"))   # required part opened later (its own tag, e.g. "Lesson 2")
-            tag = esc(a["fold"]) if a.get("fold") else T("inquiry.optional")
-            return (f'<details class="opt{" fold" if a.get("fold") else ""}" data-type="{t}"><summary><span class="opt-tag">{tag}</span> {name}</summary>'
+        if a.get("optional") or a.get("fold") or t == "reflect":   # a closed box, named, that a student may open or leave; "fold": a
+            name = shown.get(aid) or esc(a.get("title") or T(f"inquiry.optional_{t}"))   # required part opened later (its own tag, e.g. "Lesson 2");
+            name = name[:1].upper() + name[1:]          # Palaa ennusteisiisi: closed until opened, required or not (teacher 2026-11-06)
+            tag = esc(a["fold"]) if a.get("fold") else T("inquiry.optional") if a.get("optional") else ""
+            return (f'<details class="opt{" fold" if a.get("fold") else ""}" data-type="{t}"><summary>' + (f'<span class="opt-tag">{tag}</span> ' if tag else "") + f'{name}</summary>'
                     f'<div class="activity act-{t}" id="{esc(aid)}" data-type="{t}">{content}{hints}</div></details>')
         card = " task-card" if t in CARD_TYPES else ""
         return f'<div class="activity act-{t}{card}" id="{esc(aid)}" data-type="{t}">{head}{content}{hints}</div>'

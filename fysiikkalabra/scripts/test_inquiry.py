@@ -62,7 +62,7 @@ FASTEST = """() => { const own = new Set(Object.values(window.simAdapter.params)
 RUN = """() => { const b = document.querySelector('#sim-root button');   // the sim's main button comes first (NOTES 4)
   if (b && !b.disabled && !/…$/.test(b.textContent.trim())) { b.click(); return b.textContent.trim(); } return null; }"""
 CONTROL = "(k) => { const p = window.simAdapter.params[k]; return typeof p.input === 'string' ? document.querySelector(p.input) : p.input; }"
-OLD_NAMES = ("Herätä kiinnostus", "Lähtölippu", "Selitä", "Teoriatiivistelmä", "Theory summary")     # replaced by Pohdinta, Exit ticket, Teoriatiivistelmä (2026-10-26), then Teoria (2026-11-05)
+OLD_NAMES = ("Herätä kiinnostus", "Lähtölippu", "Selitä", "Teoriatiivistelmä", "Theory summary", "Exit ticket", "Tarkista osaamisesi")     # replaced by Pohdinta, Exit ticket, Teoriatiivistelmä (2026-10-26), then Teoria (2026-11-05), Pohdintatehtävä and Itsearvio (2026-11-06)
 SPLIT = """async () => {   // lesson.js part 9: the exercises beside the theory, opened by the button, closed again (teacher 2026-11-05)
   const ex = document.getElementById('exercises'), b = ex && ex.querySelector('.split-toggle');
   if (!ex) return { none: true };
@@ -141,7 +141,8 @@ def page_form(pg, b, url, acts, page):
         if here: want += [inquiry.NAV.get(sid, t)]          # the exit ticket has no link of its own: it opens Tarkista osaamisesi (teacher 2026-11-04)
     want.append(inquiry.EXERCISES_TITLE)
     check("nav names the stages and the exercises (no link of their own for the exit ticket or the concept cards)", toc == want, f"{toc} != {want}")
-    check("the concept cards close Esimerkit (teacher 2026-11-05)", pg.evaluate("(() => { const k = document.getElementById('kertaa-kasitteet'); if (!k) return true; const s = k.closest('section.stage'); return !!s && (s.id === 'sovella' || !document.getElementById('sovella')) && s.lastElementChild === k; })()"))
+    check("the concept cards close Esimerkit (teacher 2026-11-05)", pg.evaluate("(() => { const k = document.getElementById('kertaa-kasitteet'); if (!k) return true; const s = k.closest('section.stage'); const box = k.closest('details.kc-fold'); return !!s && (s.id === 'sovella' || !document.getElementById('sovella')) && !!box && s.lastElementChild === box && !box.hasAttribute('open'); })()"))
+    check("Palaa ennusteisiisi is a closed box, required or not (teacher 2026-11-06)", pg.evaluate("[...document.querySelectorAll('.act-reflect')].every((r) => { const d = r.closest('details'); return d && !d.hasAttribute('open'); })"))
     check("the exit ticket opens Tarkista osaamisesi, before its checks", pg.evaluate("(() => { const x = document.getElementById('exit'); if (!x) return true; const a = x.closest('.activity'), s = x.closest('#tarkista'); return !!s && s.querySelector('.activity') === a; })()"))
     order = pg.evaluate("[...document.querySelectorAll('article > section, article > .intro')].map((e) => e.id || e.className)")
     order = [o for o in order if o != "credits"]          # the photo credits (build.photo_credits) follow as the page's colophon
@@ -264,8 +265,8 @@ def generic(lid):
         if pg.locator("details.fold").count(): pg.locator("details.fold > summary").first.click(); pg.wait_for_timeout(100)   # open the Ennusta box as a student does
         n_opt = pg.locator("details.opt").count()
         if n_opt:                                         # optional activities: closed, named boxes that open from the keyboard
-            st = pg.evaluate("[...document.querySelectorAll('details.opt')].map((d) => [d.open, d.querySelector('summary').textContent.includes('Valinnainen'), !!d.querySelector('.activity[id]')])")
-            check("optional activities start closed, are named Valinnainen and keep their ids", all(not o and v and i for o, v, i in st), str(st))
+            st = pg.evaluate("[...document.querySelectorAll('details.opt')].map((d) => [d.open, d.querySelector('summary').textContent.includes('Valinnainen') || !d.querySelector('.opt-tag'), !!d.querySelector('.activity[id]')])")
+            check("optional activities start closed, are named Valinnainen and keep their ids (closed required boxes carry no tag)", all(not o and v and i for o, v, i in st), str(st))
             pg.locator("details.opt > summary").first.focus(); pg.keyboard.press("Enter")
             check("an optional box opens from the keyboard", pg.locator("details.opt").first.evaluate("(d) => d.open"))
             pg.evaluate("document.querySelectorAll('details.opt').forEach((d) => { d.open = true; })")   # the rest of the run treats them like the others
@@ -406,10 +407,10 @@ with tempfile.TemporaryDirectory() as tmp:
     classic = (troot / "preview/fy3-2.html").read_text() if r.returncode == 0 else ""
     check("classic lesson builds", r.returncode == 0, (r.stdout + r.stderr)[-300:])
     check("classic lesson keeps its layout", '<article id="teoria">' in classic and 'class="stage"' not in classic and 'inquiry.js' not in classic
-          and '<a href="#teoria">Teoria</a><a href="#sim">Simulaatio</a><a href="#exit">Exit ticket</a><a href="#exercises">Tehtävät</a>' in classic
+          and '<a href="#teoria">Teoria</a><a href="#sim">Simulaatio</a><a href="#exit">Pohdintatehtävä</a><a href="#exercises">Tehtävät</a>' in classic
           and '<section id="sim"><h2>Simulaatio</h2>' in classic and classic.index('<section id="sim">') < classic.index('<h2>Esimerkki</h2>'))
     check("classic lesson: the formula section shows its law's name, the exercises come after the exit ticket",
-          '<h2 data-section="Kaava">Työ ja teho</h2>' in classic and "Kaava: Työ" not in classic and classic.index('<section id="exit"><h2>Exit ticket</h2>') < classic.index('<section id="exercises">'))
+          '<h2 data-section="Kaava">Työ ja teho</h2>' in classic and "Kaava: Työ" not in classic and classic.index('<section id="exit"><h2>Pohdintatehtävä</h2>') < classic.index('<section id="exercises">'))
 
 # a broken inquiry.json fails the build with the field named
 with tempfile.TemporaryDirectory() as tmp:
@@ -433,7 +434,11 @@ check("pilot builds", r.returncode == 0, (r.stdout + r.stderr)[-300:])
 page_html = (ROOT / "preview/fy3-2.html").read_text()
 for sid, title in inquiry.STAGES: check(f"stage {sid} rendered", f'<section class="stage" id="{sid}"' in page_html and title in page_html)
 order = [page_html.index(f'id="{sid}"') for sid, _ in inquiry.STAGES]; check("stages in order", order == sorted(order))
-check("theory sections placed once", page_html.count('class="theory-h">Ydinajatus') == 1 and page_html.count('class="theory-h">Esimerkki') == 1)
+check("theory sections placed once", page_html.count('class="theory-h">Ydinajatus') == 1 and page_html.count('class="example-title">Esimerkki 1: ') == 1)
+check("the worked example's box says 'Esimerkki 1: <name>', with no heading above it (teacher 2026-11-06)", 'class="theory-h">Esimerkki' not in page_html and 'class="example-label"' not in page_html
+      and f'Esimerkki 1: {inquiry.example_name("fy3-2")}</h3>' in page_html)
+check("the other boxes of Esimerkit are numbered examples too", re.search(r'id="sovella".*?Esimerkki 2: ', page_html, re.S) is not None)
+check("Itsearvio names its tasks by kind (Käsitetehtävä, Laskutehtävä, Selitystehtävä)", re.search(r'id="tarkista".*?(?:Käsitetehtävä|Laskutehtävä|Selitystehtävä)', page_html, re.S) is not None)
 check("unplaced sections land in Teoriatiivistelmä", page_html.index('class="theory-h">Tiivistelmä') < page_html.index('id="sovella"'))
 tk = page_html[page_html.index('<section class="stage" id="tarkista"'):]
 check("the exit ticket opens Tarkista osaamisesi, with no nav link of its own", tk.index('id="exit"') < tk.index('</section>') and tk.index('id="exit"') < tk.index('class="activity act-choice')

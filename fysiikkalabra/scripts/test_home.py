@@ -264,7 +264,7 @@ for lang in i18n.languages():
             sec = re.search(r'<div class="activity act-concepts kc-section" id="kertaa-kasitteet".*?</script></div>', page, re.S).group(0)
             if not all(f'data-id="{c["id"]}"' in sec for c in cards): wrong.append(f"{l['id']}: a card missing from the list")
             hj = re.search(r'<section class="stage" id="sovella".*?</section>', page, re.S)
-            if hj and not hj.group(0).endswith(sec + "</section>"): wrong.append(f"{l['id']}: not the last part of Esimerkit")
+            if hj and not hj.group(0).endswith(sec + "</details></section>"): wrong.append(f"{l['id']}: not the last part of Esimerkit")
             toc = re.search(r'<nav class="toc".*?</nav>', page, re.S)
             if not toc or 'href="#kertaa-kasitteet"' in toc.group(0): wrong.append(f"{l['id']}: a Käsitteet stage of its own in the navigation")
             sel = re.search(r'<section class="stage" id="selita".*?</section>', page, re.S)
@@ -359,6 +359,8 @@ with sync_playwright() as pw:
     if lid:
         code = lid.split("-")[0].upper()
         ctx = b.new_context(viewport={"width": 1280, "height": 900}); pg = ctx.new_page(); pg.goto(URL + f"{lid}.html"); pg.wait_for_timeout(300)
+        expect(f"{lid}: Kertaa luvun käsitteet starts closed and opens from its summary (teacher 2026-11-06)", pg.evaluate("!document.querySelector('details.kc-fold').open"))
+        pg.click("details.kc-fold > summary"); pg.wait_for_timeout(200)
         first = concept_cards.chapter_cards(code, lid, "fi")[0]["id"]
         st = lambda: pg.evaluate(f"(JSON.parse(localStorage.getItem('ruukkilabra:kortit') || '{{}}')['{first}'] || null)")
         card = f'#kertaa-kasitteet .kc-card[data-id="{first}"]'
@@ -375,7 +377,7 @@ with sync_playwright() as pw:
         ids = pg.evaluate("[...document.querySelectorAll('#kertaa-kasitteet .kc-card')].map(c => c.dataset.id)")
         expect(f"{lid}: an answered card gives its place to the next one", first not in ids and len(ids) == min(2, n_ch - 1), ids)
         for i in range(3):    # three 'Osasin' in a row, one per visit (the card comes back first on a reload)
-            pg.reload(); pg.wait_for_timeout(300); pg.click(card + " .kc-face"); pg.wait_for_timeout(500); pg.click(card + " .kc-good")
+            pg.reload(); pg.wait_for_timeout(300); pg.click("details.kc-fold > summary"); pg.click(card + " .kc-face"); pg.wait_for_timeout(500); pg.click(card + " .kc-good")
         e = st(); expect(f"{lid}: three 'Osasin' in a row take it out of the deck", bool(e) and e["tila"] == "osasin" and e["osasinPutki"] == 3, e)
         term = "#selita .kc-term-btn >> nth=0"
         pg.locator(term).scroll_into_view_if_needed(); pg.click(term); pg.wait_for_timeout(50)
@@ -402,7 +404,7 @@ with sync_playwright() as pw:
         ctx = b.new_context(viewport={"width": 1280, "height": 900}); pg = ctx.new_page()
         pg.add_init_script("Storage.prototype.setItem = () => { throw new Error('blocked'); }; Storage.prototype.getItem = () => { throw new Error('blocked'); };")
         errs = []; pg.on("pageerror", lambda e: errs.append(str(e)))
-        pg.goto(URL + f"{lid}.html"); pg.wait_for_timeout(200)
+        pg.goto(URL + f"{lid}.html"); pg.wait_for_timeout(200); pg.click("details.kc-fold > summary")
         pg.click('#kertaa-kasitteet .kc-face >> nth=0'); pg.wait_for_timeout(500); pg.click('#kertaa-kasitteet .kc-again >> nth=0')
         expect(f"{lid}: a browser that refuses storage still turns and marks cards (try/catch)", not errs and pg.evaluate("document.querySelector('#kertaa-kasitteet .kc-status').textContent.length > 0"), errs)
         ctx.close()
