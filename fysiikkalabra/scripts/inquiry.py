@@ -667,8 +667,9 @@ def task_titles(lid, by_stage, md):
     Esimerkit: every box is a guided example, "Esimerkki 1: Paineen nollakohta", "Esimerkki 2: Etsi virhe", numbered
     in page order (the worked example by its name in example-names.json). Itsearvio: each task named by its kind
     (Käsitetehtävä, Laskutehtävä, Selitystehtävä; the exit ticket is Pohdintatehtävä, lang lesson.exit_ticket), its own name after a colon unless it only names
-    the kind, its running number kept ("2. Laskutehtävä: Lämpötilan kasvu")."""
-    out, n = {}, 0
+    the kind, numbered on the page from the exit ticket on ("1. Pohdintatehtävä", "2. Käsitetehtävä",
+    "3. Laskutehtävä: Lämpötilan kasvu"; teacher 2026-11-06), whatever number the title carries."""
+    out, n, k = {}, 0, 0
     is_worked = lambda a: a["type"] == "theory" and "Esimerkki" in a.get("sections", ())
     for a in by_stage["sovella"] if any(map(is_worked, by_stage["sovella"])) else ():   # a unit's tasks without a worked example (FY9) stay tasks
         t = a["type"]
@@ -680,13 +681,15 @@ def task_titles(lid, by_stage, md):
         out[a["id"]] = T("inquiry.example_n", n=n) + (f": {name}" if name else "")
     for a in by_stage["tarkista"]:
         t = a["type"]
+        if t == "exit": k += 1; out[a["id"]] = f"{k}. {exit_title()}"; continue   # "1. Pohdintatehtävä", then the checks 2, 3 … (teacher 2026-11-06)
         if not T.has(f"inquiry.task_{t}"): continue
+        k += 1
         m = re.match(r"\s*(\d+\.)?\s*(.*)$", a.get("title", ""))
         own = m.group(2).strip()
         p = re.match(r"([^:]+):\s*(\S.*)$", own)
         if p and p.group(1).casefold() in GENERIC_TITLES: own = p.group(2)[:1].upper() + p.group(2)[1:]   # "Concept: what the bounces showed"
         own = "" if own.casefold() in GENERIC_TITLES or own.casefold() == T(f"inquiry.task_{t}").casefold() else own
-        out[a["id"]] = (f"{m.group(1)} " if m.group(1) else "") + T(f"inquiry.task_{t}") + (f": {esc(own)}" if own else "")
+        out[a["id"]] = f"{k}. " + T(f"inquiry.task_{t}") + (f": {esc(own)}" if own else "")   # the number of the page, not the one in the title
     return out
 
 
@@ -768,7 +771,7 @@ def render(folder, inquiry, parts, md):
 
     def act(a):
         t, aid = a["type"], a["id"]
-        head = f'<h3>{shown[aid] if aid in shown else esc(a["title"])}</h3>' if a.get("title") or aid in shown else ""
+        head = f'<h3>{shown[aid] if aid in shown else esc(a["title"])}</h3>' if (a.get("title") or aid in shown) and t != "exit" else ""
         if a.get("core") and not a.get("optional"):   # a task of the lesson on the core path, tagged like a core exercise (teacher 2026-11-05)
             head = f'<p class="act-core"><span class="ex-core">{T("lesson.core_exercise")}</span></p>' + head
         if t == "hook": content = f'<div class="hook">{md(a["text"])}{fig_of(a)}</div>' + (f'<p class="question">{inline(md, a["question"])}</p>' if a.get("question") else "")
@@ -799,7 +802,9 @@ def render(folder, inquiry, parts, md):
         elif t == "sim":
             lead, info = sim_parts(a, md)
             content = lead + parts["sim"].replace("<!--sim-info-->", info)
-        elif t == "exit": content = parts["exit"].replace("</h3>", "</h3>" + md(T("inquiry.exit_lead")), 1)
+        elif t == "exit":
+            content = parts["exit"].replace("</h3>", "</h3>" + md(T("inquiry.exit_lead")), 1)
+            if aid in shown: content = content.replace(f"<h3>{exit_title()}</h3>", f"<h3>{shown[aid]}</h3>", 1)   # "1. Pohdintatehtävä"
         else: content = ""
         if t in ("choice", "numeric") and a.get("stage") == "tarkista":   # after a wrong check: a suggestion where to practise, never a verdict (teacher 2026-10-29)
             hint = f'<p class="practice-hint" role="note">{inline(md, a["practice"]) if a.get("practice") else T("inquiry.check_practice")}</p>'
