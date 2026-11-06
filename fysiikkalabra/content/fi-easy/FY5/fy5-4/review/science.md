@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 4aa09c757dcbf43d
+CONTENT-HASH: 462902e6913e7556
 
 ## Blocking
 (none)
@@ -8,4 +8,4 @@ CONTENT-HASH: 4aa09c757dcbf43d
 (none)
 
 ## Checked
-batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Terms: normaalikiihtyvyys (towards the centre, changes direction, not speed), keskeisvoima as the sum of real forces, not a new force, and ympyräliike agree with the lesson.
+new figures.json entries are identity copies of the Finnish strings drawn by figures.py (same sense, ratios and F kp wording as the Finnish lesson); Apollo 8 caption says normaalikiihtyvyys in the centrifuge can equal the launch acceleration, correct and uses the lesson's term; nothing else changed.

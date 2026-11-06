@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: fb1bcf36a0a70069
+CONTENT-HASH: 0f799fe974011c12
+
 ## Blocking
+(none)
 
 ## Polish
-- Long title; acceptable, but a shorter form could be considered later.
+(none)
 
 ## Checked
-batch delta review: the diff is a renamed lesson title and updated chapter cross-references; every reference matches the new titles, no stale old title remains in the lesson, inquiry or exercises, and the sentences read correctly. No figures, numbers or symbols changed.
+figure descriptions are plain, precise English and say exactly what each option shows; the photo alt text and caption connect to centripetal acceleration; nothing else in the lesson changed.
