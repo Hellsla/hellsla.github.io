@@ -141,7 +141,12 @@
       "other": "{{n}} tutkimusta käytettävissä"
     },
     "open_course": "Avaa opintojakso →",
-    "local_status_home_building": "Opintojakso on tekeillä"
+    "local_status_home_building": "Opintojakso on tekeillä",
+    "returns_title": "Palautukset · {{period}}. periodi · lv {{year}}",
+    "returns_lead": "Valitse kurssi ja oma ryhmäsi. Lataa ensin luvun ratkaisut: luvun Tehtävät-kohdassa on nappi Lataa kaikki ratkaisut. Palauta tiedosto ryhmäsi lomakkeella.",
+    "returns_none": "Ei palautuksia tässä periodissa",
+    "returns_aria": "{{code}}: ryhmien palautuslomakkeet",
+    "returns_desc": "Ryhmien palautuslomakkeet."
   },
   "lesson": {
     "photos": "Valokuvat",
@@ -418,7 +423,29 @@
     "list_reveal": "Ei aivan. Oikeat vastaukset ja perustelut on merkitty.",
     "tf_is_true": "Tosi",
     "tf_is_false": "Epätosi",
-    "order_right_place": "Oikea paikka: {{n}}"
+    "order_right_place": "Oikea paikka: {{n}}",
+    "palautus_download": "Lataa kaikki ratkaisut",
+    "palautus_return": "Palauta",
+    "palautus_busy": "Tallennetaan ja kootaan ratkaisuja…",
+    "palautus_done_link": "Palauta ladattu tiedosto Palauta-napista oman ryhmäsi lomakkeella.",
+    "palautus_done_forms": "Palauta ladattu tiedosto opettajan Google Forms -lomakkeella.",
+    "palautus_failed": "Tiedostoa ei voitu koota. Lataa sivu uudelleen ja yritä uudelleen.",
+    "palautus_task": "Tehtävä {{n}}",
+    "palautus_store": "Tallennettuja ratkaisuja ei voitu lukea. Lataa sivu uudelleen.",
+    "palautus_flush": "Kaikkia avoimia ratkaisuja ei saatu tallennettua, joten tiedostoa ei ladattu. Katso virheilmoitus ratkaisun alta ja yritä uudelleen.",
+    "palautus_corrupt": "{{where}}: tallennettu ratkaisu on vioittunut. Kirjoita ratkaisu uudelleen.",
+    "palautus_no_storage": "Tallennettuja ratkaisuja ei voitu lukea (selain ei salli tallennusta). Tiedostoa ei ladattu.",
+    "palautus_img_type": "{{where}}: ratkaisussa on kuva, jonka muoto ei kelpaa (vain PNG ja JPEG). Poista se ja liitä kuva uudelleen.",
+    "palautus_img_web": "{{where}}: ratkaisussa on verkkosivulta liitetty kuva, jota ei voi palauttaa. Poista se ja liitä kuvakaappaus.",
+    "palautus_img_read": "{{where}}: kuvaa ei voitu lukea. Poista kuva ja liitä se uudelleen.",
+    "palautus_img_big": "{{where}}: kuva on liian suuri ({{mb}} Mt, enintään {{max}} Mt). Rajaa kuvakaappaus pienemmäksi ja liitä se uudelleen.",
+    "palautus_img_broken": "{{where}}: kuva on vioittunut. Poista se ja liitä kuva uudelleen.",
+    "palautus_img_side": "{{where}}: kuva on liian suuri (yli {{n}} pikseliä leveä tai korkea).",
+    "palautus_latex_long": "{{where}}: kaava on liian pitkä (yli {{n}} merkkiä).",
+    "palautus_items": "{{where}}: ratkaisussa on liian monta osaa.",
+    "palautus_text_long": "{{where}}: ratkaisun teksti on liian pitkä (yli {{n}} merkkiä).",
+    "palautus_images": "Ratkaisuissa on {{n}} kuvaa, enintään {{max}}. Poista osa kuvista.",
+    "palautus_file_big": "Tiedostosta tulisi liian suuri ({{mb}} Mt, enintään {{max}} Mt). Rajaa tai poista kuvia."
   },
   "sims": {
     "fy2-2": {

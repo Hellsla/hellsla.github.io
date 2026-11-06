@@ -28,6 +28,8 @@ RuukkiLabran `templates/palautus.js` tekee tiedoston opiskelijan selaimessa, ja 
   opiskelijoille tarvittaessa itse, mitä tiedostossa on: **mukana on vain** luvun tehtävien *Kirjoita ratkaisu* -editorien sisältö, tälle laitteelle tallennettuna.
   Tarkista-kenttien luvut ja valintatehtävien valinnat eivät tule mukaan, koska niitä ei tallenneta. Ei nimeä,
   sähköpostia eikä muiden lukujen ratkaisuja.
+- `lang`: sivun kieli, `fi` (myös selkosuomi) tai `en` (6.11.2026). Luvut ja tehtävätunnisteet ovat kaikilla kielillä samat,
+  joten arviointi on sama.
 - `answers`: jokainen luvun tehtävä kerran sivun järjestyksessä. Tyhjä editori on `"empty"` ilman sisältöä.
   Puuttuva tehtävä tai rikkinäinen tiedosto on tuonnissa *Virheellinen*, joten opettaja erottaa vastaamattoman
   tehtävän puuttuvasta tai virheellisestä palautuksesta.
