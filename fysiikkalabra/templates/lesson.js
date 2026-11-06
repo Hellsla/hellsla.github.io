@@ -663,7 +663,7 @@
 })();
 
 /* 10. A task full screen (teacher 2026-11-06, "tehtävä täyttää koko näytön, samoin ratkaisukenttä, koska jotkut
-   tehtävät ovat todella pitkiä"; a pilot in FY3-1 first). "Avaa isoksi" in an exercise's head row opens it in a dialog
+   tehtävät ovat todella pitkiä"; piloted in FY3-1, then every chapter). "Avaa isoksi" in an exercise's head row opens it in a dialog
    over the whole window: the task (its text, figures, answer box, Vastaus and Näytä ratkaisu) on the left and the
    solution editor, open and tall, on the right from 1100 px; under each other, the whole dialog scrolling, on a narrower
    screen. Edellinen / Seuraava go through the chapter's exercises in order, Sulje or Esc puts the task back where it was
@@ -671,8 +671,7 @@
    saved solution and the progress bar work as on the page; the dialog sits inside #exercises for the same reason. */
 (() => {
   const ex = document.getElementById('exercises');
-  const PILOT = /(^|\/)fy3-1\.html$/;                  // the pilot chapter (teacher 2026-11-06: ask before every chapter)
-  if (!ex || !window.HTMLDialogElement || !(PILOT.test(location.pathname) || /[?&]isoksi=1/.test(location.search))) return;
+  if (!ex || !window.HTMLDialogElement) return;   // every chapter (teacher 2026-11-06, after the FY3-1 pilot: "laita kaikkiin lukuihin")
   const tasks = [...ex.querySelectorAll('li[id]')].filter((li) => li.querySelector(':scope > .ex-head'));
   if (!tasks.length) return;
   const L10N = (() => { try { return JSON.parse(document.getElementById('fl-strings').textContent).js || {}; } catch (e) { return {}; } })();

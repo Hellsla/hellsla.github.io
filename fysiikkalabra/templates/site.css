@@ -1125,7 +1125,7 @@ ul.choices.mc label.mc-wrong{border:2px solid #b4532a;background:#fbf1ea}ul.choi
 .mc-score,.exam-total-line{font-weight:700}.mc-key{font-weight:500}
 .exam-total{border-top:2px solid var(--line);padding-top:.5rem}.exam-sec-line{margin:.2rem 0}
 
-/* A task full screen (lesson.js part 10, teacher 2026-11-06; pilot FY3-1). "Avaa isoksi" at the right end of the
+/* A task full screen (lesson.js part 10, teacher 2026-11-06; every chapter). "Avaa isoksi" at the right end of the
    exercise's head row; the dialog covers the window: a bar (Tehtävä 3-4, 4 / 20, Edellinen, Seuraava, Sulje), then the
    task and the solution editor. From 1100 px they stand side by side and each scrolls on its own (the task at most
    44rem wide, so its lines stay readable); below that they stand under each other and the dialog scrolls. */
