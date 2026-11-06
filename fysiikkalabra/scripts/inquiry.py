@@ -693,6 +693,24 @@ def task_titles(lid, by_stage, md):
     return out
 
 
+TUTKI_FOLD_COURSES = {f"FY{i}" for i in range(1, 10)}   # the modules whose Tutki shows one investigation at first
+TUTKI_VISIBLE = 2                                  # at most this many tasks of Tutki in view (teacher 2026-11-06)
+
+
+def tutki_split(items):
+    """(shown, folded) for the Tutki stage. Teacher 2026-11-06: "Tutki-osuudessa saisi olla maksimissaan kaksi
+    kysymystä" — too many questions in view hide the whole. The simulation stays as it is; of the tasks only the first
+    one (the first clear, easy investigation, usually Koe 1) stays in view, and a core task (Ydintehtävä) as the second
+    one at most. The rest, in their own order, go into one closed box "Lisää tutkittavaa" after them; links to them
+    (#exp-2) open it (lesson.js openTo)."""
+    tasks = [a for a in items if a["type"] != "sim"]
+    first = next((a for a in tasks if not a.get("optional")), tasks[0] if tasks else None)
+    keep = [first] if first else []
+    keep += [a for a in tasks if a is not first and a.get("core") and not a.get("optional")][:TUTKI_VISIBLE - len(keep)]
+    if len(tasks) <= 1: return items, []
+    return [a for a in items if a["type"] == "sim" or any(a is k for k in keep)], [a for a in tasks if not any(a is k for k in keep)]
+
+
 def toc_link(sid, n, title):
     """A stage in the navigation: its number (as on the stage heading) and its name. The chip bar shows the short name
     (NAV); a wide window shows the rest of the title too ("Tarkista osaamisesi", .toc-rest)."""
@@ -808,7 +826,7 @@ def render(folder, inquiry, parts, md):
                 head = ""
         elif t == "sim":
             lead, info = sim_parts(a, md)
-            content = lead + parts["sim"].replace("<!--sim-info-->", info)
+            content = parts["sim"].replace("<!--sim-info-->", info + (f'<div class="sim-lead">{lead}</div>' if lead else ""))   # the lead under the boxes, at the card's foot (teacher 2026-11-06)
         elif t == "exit":
             content = parts["exit"].replace("</h3>", "</h3>" + md(T("inquiry.exit_lead")), 1)
             if aid in shown: content = content.replace(f"<h3>{exit_title()}</h3>", f"<h3>{shown[aid]}</h3>", 1)   # "1. Pohdintatehtävä"
@@ -843,10 +861,19 @@ def render(folder, inquiry, parts, md):
         if not items: continue
         n += 1
         si = next((i for i, a in enumerate(items) if a["type"] == "sim"), None)
-        if si is not None and si < len(items) - 1:     # the sim beside the activities that use it
+        more = ""
+        if sid == "tutki" and folder.parent.name in TUTKI_FOLD_COURSES:
+            items, rest = tutki_split(items)
+            si = next((i for i, a in enumerate(items) if a["type"] == "sim"), None)
+            if rest:                                   # the rest of the investigation behind one closed box (teacher 2026-11-06)
+                k = len(rest)
+                more = (f'<details class="fold more" data-fold="tutki-more"><summary><span class="fold-title">{T("inquiry.more_title")}</span> '
+                        f'<span class="more-count" data-one="{esc(T("inquiry.more_count_one"))}" data-many="{esc(T("inquiry.more_count_many"))}">{T("inquiry.more_count_one" if k == 1 else "inquiry.more_count_many", n=k)}</span></summary>'
+                        f'<div class="fold-body">{flow(rest)}</div></details>')
+        if si is not None and (si < len(items) - 1 or more):   # the sim beside the activities that use it
             inner = (flow(items[:si]) + f'<div class="lab"><div class="lab-side">{act(items[si])}</div>'
-                     f'<div class="lab-main">{flow(items[si + 1:])}</div></div>')
-        else: inner = flow(items)
+                     f'<div class="lab-main">{flow(items[si + 1:])}{more}</div></div>')
+        else: inner = flow(items) + more
         if sid == "tarkista" and parts.get("selfassess"):   # the goals first, then the tasks with their own ratings (teacher 2026-11-06 evening)
             inner = sa_goals_html(lid, inquiry, md, courses.lang_of(folder)) + inner   # no separate key: the chosen level's text shows under the scale (teacher 2026-11-06)
         if sid == cards_at: inner += parts["cards"]       # the chapter's concept cards close Esimerkit (teacher 2026-11-05)
