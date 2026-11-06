@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 51eea64f715b2cd3
-Mode: full
-Round: 1
+CONTENT-HASH: a81094fffe435f50
+Mode: delta (new task fy5-9-L2-08), Round 1
 
 ## Blocking
-
-## Fixed
-- None needed: the translation text already matches the reviewed Finnish.
+(none)
 
 ## Polish
+- [Minor] old tasks — none new found; earlier tasks not re-examined beyond the unchanged delta.
 
 ## Checked
-- Screenshots of the new tasks: layout intact, long sentences wrap cleanly, tables with decimal comma in text render correctly.
-- Formulas render in L3-04 and L3-05; no overflow.
-- No empty calculation boxes attributable to translation (known template issue ignored).
+- Own render of fy5-9-L2-08 (fi-easy) at 390 px, all options answered, feedback and solution open, after page scripts: scrollWidth 390, no clipped element outside scroll boxes, no KaTeX errors or raw $ source; opened fi-easy-fy5-9-L2-08.png.
+- Quantities with units are inline maths, solution rows break as designed, no wide-formula problem.
+
+## Scores
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4
