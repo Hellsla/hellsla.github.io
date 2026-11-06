@@ -264,7 +264,7 @@ def generic(lid):
         pg.wait_for_timeout(300)
         check("no console errors", not errors, str(errors[:2]))
         page_form(pg, b, url, acts, page)
-        if pg.locator("details.fold").count(): pg.locator("details.fold > summary").first.click(); pg.wait_for_timeout(100)   # open the Ennusta box as a student does
+        if pg.locator("#ennusta details.fold").count(): pg.locator("#ennusta details.fold > summary").first.click(); pg.wait_for_timeout(100)   # open the Ennusta box as a student does
         n_opt = pg.locator("details.opt").count()
         if n_opt:                                         # optional activities: closed, named boxes that open from the keyboard
             st = pg.evaluate("[...document.querySelectorAll('details.opt')].map((d) => [d.open, d.querySelector('summary').textContent.includes('Valinnainen') || !d.querySelector('.opt-tag'), !!d.querySelector('.activity[id]')])")
@@ -288,10 +288,10 @@ def generic(lid):
             loc = pg.locator(f"#{pr['id']}"); wrong = int(loc.locator("input[data-correct='0']").first.get_attribute("value")); wrongs[pr["id"]] = str(wrong)
             loc.locator("input[type=radio]").nth(wrong).check(); loc.locator("button.commit").click()
             check(f"{pr['id']}: committed without feedback", loc.locator("fieldset").get_attribute("data-committed") == "1" and not loc.locator(".feedback").nth(wrong).is_visible())
-        if preds and pg.locator("details.fold").count():   # closing the box keeps the answers; reopened, they are there
-            pg.locator("details.fold > summary").first.click(); pg.wait_for_timeout(80); pg.locator("details.fold > summary").first.click(); pg.wait_for_timeout(80)
+        if preds and pg.locator("#ennusta details.fold").count():   # closing the box keeps the answers; reopened, they are there
+            pg.locator("#ennusta details.fold > summary").first.click(); pg.wait_for_timeout(80); pg.locator("#ennusta details.fold > summary").first.click(); pg.wait_for_timeout(80)
             kept = all(pg.locator(f"#{pr['id']} input[type=radio]").nth(int(wrongs[pr["id"]])).is_checked() for pr in preds)
-            check("the Ennusta box keeps the committed predictions when closed and reopened", kept and "vastattu" in pg.locator("details.fold .fold-status").inner_text(), pg.locator("details.fold .fold-status").inner_text())
+            check("the Ennusta box keeps the committed predictions when closed and reopened", kept and "vastattu" in pg.locator("#ennusta details.fold .fold-status").inner_text(), pg.locator("#ennusta details.fold .fold-status").inner_text())
         for ex in exps:
             loc = pg.locator(f"#{ex['id']}"); rows = loc.locator(".exp-table tbody tr")
             keys = [m["key"] if isinstance(m, dict) else m for m in ex["measure"]]
@@ -472,7 +472,7 @@ with sync_playwright() as pw:
     check("adapter declares capabilities", pg.evaluate("JSON.stringify(window.simAdapter.capabilities.set) === '[\"F\",\"s\",\"t\"]' && window.simAdapter.capabilities.reset === true"))
 
     # the Ennusta box: closed at first, opened by its summary
-    fold = pg.locator("details.fold")
+    fold = pg.locator("#ennusta details.fold")
     check("predictions hidden in a closed box at first", not fold.evaluate("(d) => d.open") and not pg.locator("#pred-1 button.commit").is_visible())
     fold.locator(":scope > summary").click(); check("the summary opens the box", fold.evaluate("(d) => d.open") and pg.locator("#pred-2 button.commit").is_visible())
     opt1 = pg.locator("details.opt:has(#pred-1)")   # pred-1 is optional in the pilot: closed until the student opens it
@@ -582,9 +582,9 @@ with sync_playwright() as pw:
 
     # keyboard: a choice answered with arrows and Enter
     pg.evaluate("try { localStorage.clear() } catch (e) {}"); pg.goto(url); pg.wait_for_function("window.simState", timeout=3000)   # without the #pred-2 the link left, which would open the box
-    check("the box starts closed again on a new visit", not pg.locator("details.fold").evaluate("(d) => d.open"))
-    pg.locator("details.fold > summary").focus(); pg.keyboard.press("Enter")
-    check("keyboard opens the Ennusta box", pg.locator("details.fold").evaluate("(d) => d.open"))
+    check("the box starts closed again on a new visit", not pg.locator("#ennusta details.fold").evaluate("(d) => d.open"))
+    pg.locator("#ennusta details.fold > summary").focus(); pg.keyboard.press("Enter")
+    check("keyboard opens the Ennusta box", pg.locator("#ennusta details.fold").evaluate("(d) => d.open"))
     pg.locator("#pred-2 input[type=radio]").nth(0).focus(); pg.keyboard.press("ArrowDown"); pg.keyboard.press("Tab")
     pg.keyboard.press("Tab"); pg.keyboard.press("Enter")   # textarea (justify), then the Vastaa button
     check("keyboard commit works", pg.locator("#pred-2 fieldset").get_attribute("data-committed") == "1" and pg.locator("#pred-2 .pending").is_visible())
@@ -596,6 +596,10 @@ with sync_playwright() as pw:
     check("no horizontal page overflow at 360 px", over <= 0, str(over))
     wide = pg.evaluate("[...document.querySelectorAll('fieldset.choice, .experiment, .reflect, .explain')].filter(e => e.getBoundingClientRect().right > 361).length")
     check("activity boxes fit at 360 px", wide == 0, str(wide))
+    more = pg.locator('#tutki details[data-fold="tutki-more"]')   # Tutki: one task in view, the rest in a closed box (teacher 2026-11-06)
+    check("Tutki shows one task, the rest wait in a closed box", more.count() == 1 and not more.evaluate("(d) => d.open") and more.locator("#exp-2").count() == 1
+          and pg.locator("#tutki .activity:not(.act-sim)").filter(visible=True).count() == 1, str(more.count()))
+    more.locator(":scope > summary").click()
     pg.locator("#exp-2 .exp-start").click(); pg.locator("#exp-2 .exp-record").click(); pg.wait_for_timeout(50)
     check("experiment works at 360 px, the simulation brought beside its buttons", pg.locator("#exp-2 .exp-table tbody tr").count() == 1 and pg.locator("#exp-2 #sim").count() == 1 and pg.locator(".sim-moved").is_visible())
     pg.close()
