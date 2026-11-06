@@ -240,6 +240,57 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy7-6-L2-08",
+      "level": 2,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "Pystysuora käämi, jossa on paljon kierroksia, on kytketty kytkimen kautta akkuun. Kevyt alumiinirengas lepää vaakasuorassa käämin yläpään päällä niin, että käämin akseli kulkee renkaan keskeltä. Kytkin on aluksi auki, eikä käämissä kulje virtaa.\n\nKytkin suljetaan, ja käämin virta kasvaa nopeasti nollasta suureen vakioarvoonsa.\n\nMitä renkaalle tapahtuu sillä hetkellä, kun virta kasvaa?",
+      "answer": "Rengas hypähtää ylöspäin",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Rengas painuu käämiä vasten",
+          "feedback": "Tämä olettaa, että käämi vetää rengasta puoleensa. Alumiini ei ole ferromagneettinen aine, joten veto ei synny itse metallista, ja renkaan induktiovirta vastustaa vuon kasvua eikä auta sitä."
+        },
+        {
+          "text": "Rengas hypähtää ylöspäin",
+          "correct": true,
+          "feedback": "Oikein: renkaan ja käämin välille syntyy hylkivä voima niin kauan kuin käämin virta kasvaa."
+        },
+        {
+          "text": "Rengas pysyy levossa",
+          "feedback": "Tämä olettaa, että akun tasavirta ei voi synnyttää induktiota. Kun kytkin suljetaan, virta ja sen kenttä kasvavat nollasta, joten renkaan läpi kulkeva vuo muuttuu, ja muutos synnyttää induktiovirran."
+        }
+      ],
+      "reason_prompt": "Mikä perustelu selittää vastauksesi?",
+      "reasons": [
+        {
+          "text": "Alumiini on metallia, joten käämin magneettikenttä vetää rengasta puoleensa kuten rautaa.",
+          "feedback": "Tämä on yleinen virhekäsitys: alumiini ei ole ferromagneettinen aine, eikä magneetti tartu siihen. Voima syntyy vain induktiovirrasta, ja Lenzin lain mukaan sen kenttä vastustaa vuon kasvua."
+        },
+        {
+          "text": "Renkaan induktiovirran kenttä vahvistaa vuon kasvua, joten rengas ja käämi vetävät toisiaan.",
+          "feedback": "Suunta on käännetty: induktiovirta ei auta muutosta vaan vastustaa sitä. Jos se auttaisi, energia kasvaisi tyhjästä, mikä on energian säilymisen vastaista."
+        },
+        {
+          "text": "Vuo renkaan läpi kasvaa, ja induktiovirran kenttä vastustaa kasvua, joten rengas hylkii käämiä.",
+          "correct": true,
+          "feedback": "Oikein: renkaan käämin puoleiselle sivulle syntyy samanniminen napa kuin käämin yläpäässä, ja samannimiset navat hylkivät toisiaan."
+        },
+        {
+          "text": "Akku antaa tasavirtaa, joten renkaan läpi kulkeva vuo ei muutu eikä induktiovirtaa synny.",
+          "feedback": "Tämä pätee vasta, kun virta on asettunut vakioksi. Kytkimen sulkemisen jälkeen virta kasvaa nollasta, joten vuo muuttuu ja renkaaseen syntyy induktiovirta."
+        },
+        {
+          "text": "Alumiini johtaa sähköä hyvin, joten suljetussa renkaassa voi kulkea suuri induktiovirta.",
+          "feedback": "Väite on tosi, mutta se ei selitä vastausta. Se kertoo vain, että renkaassa voi kulkea virta, ei sitä, mihin suuntaan virta kiertää ja hylkiikö vai vetääkö rengas käämiä."
+        }
+      ]
     }
   ],
   "level3": [

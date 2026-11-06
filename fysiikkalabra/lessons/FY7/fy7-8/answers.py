@@ -31,6 +31,7 @@ k5 = sum(n * u for n, u in zip(Nn, Un)) / sum(n * n for n in Nn)  # slope throug
 a["fy7-8-L2-05"] = 6.00 / k5                        # N1 = U1 / k = 6,00 V / 0,012354 V = 485,7
 a["fy7-8-L2-06"] = 2.00 * 11.5 / (230 * 0.114) * 100  # η = U2 I2 / (U1 I1) = 23,0 W / 26,22 W = 87,7 %
 a["fy7-8-L2-07"] = 230 * 2.0 / 2300                 # I2 = U1 I1 / U2 = 460 W / 2300 V = 0,20 A
+# L2-08 is multiple choice (order of magnitude): I = 3,0 MW / 20 kV = 150 A, P_h = 0,50 Ω · (150 A)² = 11,25 kW ≈ 10 kW; no number
 R4 = 0.040 * 150                                    # R = 6,0 Ω
 PhA = R4 * (200e6 / 220e3) ** 2                     # 4,959 MW at 220 kV (I = 909 A)
 PhB = R4 * (200e6 / 400e3) ** 2                     # 1,500 MW at 400 kV (I = 500 A)

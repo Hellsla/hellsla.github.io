@@ -193,3 +193,36 @@
 **Sijoitus:** a) $T_0 = \dfrac{2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}}{1{,}80 \cdot 10^{-6}\,\text{m}} = 1610\,\text{K}$, $T_4 = \dfrac{2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}}{2{,}05 \cdot 10^{-6}\,\text{m}} = 1414\,\text{K}$, $T_8 = \dfrac{2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}}{2{,}35 \cdot 10^{-6}\,\text{m}} = 1233\,\text{K}$ ja $T_{12} = \dfrac{2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}}{2{,}75 \cdot 10^{-6}\,\text{m}} = 1054\,\text{K}$. b) $v_T = \dfrac{(1610 - 1054)\,\text{K}}{12\,\text{min}} = 46{,}3\,\text{K/min}$. c) $t_\text{s} = 12\,\text{min} + \dfrac{(1054 - 800)\,\text{K}}{46{,}3\,\text{K/min}} = 12\,\text{min} + 5{,}5\,\text{min} = 17{,}5\,\text{min}$
 **Vastaus:** c) Hehku sammuu arvion mukaan noin $17{,}5\,\text{min}$ kuluttua ensimmäisestä mittauksesta, kolme merkitsevää numeroa kuten aallonpituuksissa. Välitulokset: lämpötilat $1610\,\text{K}$, $1414\,\text{K}$, $1233\,\text{K}$ ja $1054\,\text{K}$ sekä keskimääräinen jäähtymisnopeus $46{,}3\,\text{K/min}$. Todellinen hehkuaika on arviota pidempi: taulukon välien jäähtymisnopeudet ovat $49{,}1\,\text{K/min}$, $45{,}1\,\text{K/min}$ ja $44{,}8\,\text{K/min}$, eli nopeus pienenee. Kun jäähtyminen on keskimääräistä hitaampaa, lämpötila saavuttaa arvon $800\,\text{K}$ arvioitua myöhemmin.
 **Järkevyys:** Lämpötila $1054\,\text{K}$ viimeisessä mittauksessa on yli $800\,\text{K}$, joten hehku näkyy vielä ja sammumisen on tapahduttava myöhemmin kuin $12\,\text{min}$. Vahvistus: lämpötila hetkellä $17{,}5\,\text{min}$ on $1610\,\text{K} - 46{,}3\,\text{K/min} \cdot 17{,}5\,\text{min} = 800\,\text{K}$. Samalla lämpötilaa $800\,\text{K}$ vastaava huippu on $\dfrac{2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}}{800\,\text{K}} = 3{,}6\,\mu\text{m}$, kuten oppitunnin tummanpunaisella hehkulla.
+
+## fy7-9-L2-08
+**Kysytty:** mikä johtopäätös säteilylevyn lämpötilasta eri tehoasetuksilla on taulukon mittausten perusteella perusteltu.
+**Periaate:** Levy oletetaan mustaksi kappaleeksi, joten sen absoluuttinen lämpötila saadaan spektrin huipusta Wienin siirtymälailla $\lambda_\text{max} T = b$. Huipun aallonpituus on kääntäen verrannollinen lämpötilaan, joten kahden lämpötilan suhde on huippujen käänteissuhde. Kahden mittauksen eroa verrataan aallonpituuden epävarmuuteen $\pm 0{,}10\,\mu\text{m}$: ero, joka jää epävarmuuden sisään, ei osoita lämpötilojen eroa.
+**Mallivastaus:** Asetusten 1 ja 4 lämpötilojen suhteessa vakio $b$ supistuu pois:
+
+$\dfrac{T_4}{T_1} = \dfrac{b : \lambda_4}{b : \lambda_1} = \dfrac{\lambda_1}{\lambda_4}$
+
+$\dfrac{T_4}{T_1} = \dfrac{4{,}10\,\mu\text{m}}{2{,}90\,\mu\text{m}} \approx 1{,}41$
+
+Epävarmuus muuttaa suhdetta vain vähän. Pienin mahdollinen suhde saadaan, kun $\lambda_1$ on pienimmillään ja $\lambda_4$ suurimmillaan, ja suurin päinvastoin:
+
+$\dfrac{4{,}00\,\mu\text{m}}{3{,}00\,\mu\text{m}} \approx 1{,}33$
+
+$\dfrac{4{,}20\,\mu\text{m}}{2{,}80\,\mu\text{m}} = 1{,}50$
+
+Asetuksella 4 levyn absoluuttinen lämpötila on siis noin $1{,}4$ kertaa niin suuri kuin asetuksella 1, ja johtopäätös on perusteltu. Lämpötilat ovat
+
+$T_1 = \dfrac{2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}}{4{,}10 \cdot 10^{-6}\,\text{m}}$
+
+$T_1 \approx 707\,\text{K}$
+
+$T_4 = \dfrac{2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}}{2{,}90 \cdot 10^{-6}\,\text{m}}$
+
+$T_4 \approx 999\,\text{K}$
+
+Celsiusasteina ne ovat $707\,\text{K} - 273{,}15\,\text{K} \approx 434\,{}^\circ\text{C}$ ja $999\,\text{K} - 273{,}15\,\text{K} \approx 726\,{}^\circ\text{C}$. Celsiuslämpötilojen suhde on $726 : 434 \approx 1{,}7$, joten väite celsiuslämpötilan $1{,}4$-kertaistumisesta ei pidä. Suhde $1{,}4$ koskee vain absoluuttista lämpötilaa, koska Wienin siirtymälaki vaatii kelvinit.
+
+Suhde $\lambda_4 : \lambda_1 = 2{,}90 : 4{,}10 \approx 0{,}7$ saadaan, jos lämpötilan luulee olevan verrannollinen huipun aallonpituuteen. Riippuvuus on kuitenkin käänteinen: lyhyempi huippu tarkoittaa kuumempaa levyä, joten lämpötila kasvaa asetuksesta 1 asetukseen 4.
+
+Asetusten 2 ja 3 huiput $3{,}40\,\mu\text{m}$ ja $3{,}35\,\mu\text{m}$ eroavat vain $0{,}05\,\mu\text{m}$, mikä on vähemmän kuin kummankin lukeman epävarmuus. Laskettuina lämpötiloina $T_2 \approx 852\,\text{K}$ ja $T_3 \approx 865\,\text{K}$, mutta epävarmuuden rajoissa $T_2$ voi olla $828$–$878\,\text{K}$ ja $T_3$ $840$–$892\,\text{K}$. Välit menevät suurelta osin päällekkäin, joten mittauksista ei voi päätellä, että levy olisi asetuksella 3 kuumempi, saati että ero olisi $13\,\text{K}$.
+
+Perusteltu johtopäätös on siis, että asetuksella 4 levyn absoluuttinen lämpötila on noin $1{,}4$ kertaa niin suuri kuin asetuksella 1.

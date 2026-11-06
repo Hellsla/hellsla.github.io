@@ -14,6 +14,7 @@ a["fy7-7-L1-05"] = 230 * 4.35 / 1000                                # heater, ef
 # L1-06 is multiple choice (no number): answer is the option text in exercises.json
 a["fy7-7-L1-07"] = 1 / (3000 / 60) * 1000                           # 3000 r/min = 50 Hz; T = 1/f = 0,020 s = 20 ms
 a["fy7-7-L1-08"] = 17.0 / r2                                        # meter shows the effective value: U = U0 / √2 = 12,02 V -> 12,0 V
+# L1-09 is a graph choice (no number): U = 5,0 V, f = 40 Hz -> peak U √2 = 7,07 V ≈ 7,1 V, T = 1/f = 25 ms (pick-u71-t25)
 # Level 2: two steps, a conversion or a rearrangement
 f2 = 1200 / 60                                                      # 1200 r/min = 20 Hz
 A2 = 6.0 * 0.01 * 8.0 * 0.01                                        # 6,0 cm · 8,0 cm = 0,0048 m²

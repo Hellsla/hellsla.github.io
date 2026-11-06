@@ -24,6 +24,7 @@ a["fy7-15-L3-03"] = 16 + (420 - 16) * cos(radians(60.0)) ** 2   # background 16 
 # Level 1 (added): concept MC has no number; Malus and Brewster with new values
 a["fy7-15-L1-07"] = 300 * cos(radians(55.0)) ** 2            # polarised 300 W/m², 55,0°: 98,70 W/m² -> 98,7
 a["fy7-15-L1-08"] = degrees(atan(1.46 / 1.00))               # air -> fused silica: α_B = 55,59° -> 55,6°
+# YO-skill form (teacher 2026-11-05): L1-09 is an ordering task (no number); I = 150 / 200 / 240 / 100 / 125 W/m² for A / B / C / D / E -> D, E, A, B, C
 # Level 2 (added)
 # L2-05: least-squares line E = E0 cos²θ + E_t through the ten example readings; the slope is the polarised part E0
 _th = list(range(0, 91, 10))
