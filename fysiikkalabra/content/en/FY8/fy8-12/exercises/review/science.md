@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 9ace2105afa56c4b
+CONTENT-HASH: 96997263bad69450
 Mode: full (translation review against the reviewed Finnish set)
 Round 1
 
@@ -7,15 +7,14 @@ Round 1
 (none)
 
 ## Fixed
-(none needed; no edits made)
+(none needed)
 
 ## Polish
 (none)
 
 ## Checked
-- All 8 new tasks (L1-06..08, L2-05..07, L3-04..05) compared with fi by script: ids, levels, kind, answers, units, tolerances, correct flags and every number in texts, choices, feedback and table cells match (decimal point used consistently).
-- Data tables (L2-05, L2-06, L3-04, L3-05): all rows identical to fi; only captions and column headings translated.
-- solutions.md: number sequence equal to fi in all tasks; formulas unchanged (L3-05 caesium-137 85 % and 137 only reordered in prose).
-- Concept choices: correct option is the same as in fi, feedback keeps the same physical claims (paper stops alpha, aluminium/lead stop beta, GM pulse height independent of type).
-- English: terms correct (half-value thickness, net pulse count, geometric efficiency, range); no Finnish left over.
-- check_i18n en: 0 errors; hash unchanged at start and end.
+- New task fy8-12-L1-09 recomputed independently (ordering: fractions 2^(-d/d1/2) = A 17.7 %, B 11.9 %, E 8.7 %, C 6.25 %, D 3.3 %; order A,B,E,C,D matches the stored order and answer text).
+- Compared with content/fi: id, level, kind, answer, unit, tolerance, correct flag, options and every number in text, feedback and solutions.md identical.
+- Solution complete (principle, calculation, reasonableness/graph reading); no formula or number differs from fi.
+- English text matches fi in every number; decimal point used in en; wording natural.
+- check_i18n: nothing for fy8-12; build.py fy8-12 succeeds.

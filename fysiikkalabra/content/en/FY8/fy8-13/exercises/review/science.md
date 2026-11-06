@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 708656d835e962ab
-Mode: delta
+CONTENT-HASH: 8e2bb4342aaf97aa
+Mode: translation
 
 ## Blocking
 (none)
 
 ## Polish
-- solutions.md:123 and exercises.json:67 (L1-06, unchanged) — "the sievert describes (the) health risk" is broader than the glossary. — Optional rewording as in fi.
+(none)
 
 ## Checked
-- :134 now reads "the long-term cancer risk to the whole body for an average person", the same as :59, :104 and :149.
-- :104 and :149 say "the same thing". The risk is no longer called a quantity.
-- Core moved to L1-07, the same as fi. Nothing else changed (git diff vs HEAD).
-- Hash 708656d835e962ab at start and end.
+- fy8-13-L2-08 (en) compared with reviewed fi: same data, same options, same correct option, same answer.
+- Recomputed independently: order-of-magnitude choice: 12*6*9.0 h = 648 h, 3.0 uSv/h * 648 h = 1944 uSv = 1.9 mSv -> about 2 mSv; distractors 0.002 (/10^6), 0.03 (27 uSv, one flight), 0.2 (162 uSv, one month), 2000 (unit not converted) all recomputed.
+- solutions.md L2-08: principle, symbolic step, substitution, rounding and reasonableness agree with fi; answers.py note agrees.
+- English decimal point used, wording natural English.
+- check_i18n shows nothing for fy8-13; build.py fy8-13 succeeds. No translation edit was needed.
+- Hash 8e2bb4342aaf97aa at start and end.

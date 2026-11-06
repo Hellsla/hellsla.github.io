@@ -112,6 +112,45 @@
       "answer": 1,
       "unit": "e",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-15-L1-09",
+      "level": 1,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "The charges of the quarks are $u$ ($+\\tfrac{2}{3}e$) and $d$ and $s$ ($-\\tfrac{1}{3}e$), and the charge of an antiquark is opposite to that of the quark.\n\nReason which statements are true and which are false.",
+      "answer": "1 true, 2 false, 3 false, 4 true, 5 false",
+      "unit": "",
+      "tolerance": 0.02,
+      "statements": [
+        {
+          "text": "A particle with the quark content $u\\,u\\,s$ is a baryon, and its charge is $+e$.",
+          "true": true,
+          "feedback": "True: a hadron of three quarks is a baryon, and its charge is the sum of the charges of the quarks, $+\\tfrac{2}{3}e + \\tfrac{2}{3}e - \\tfrac{1}{3}e$, that is $+e$."
+        },
+        {
+          "text": "The meson $d\\,\\bar{u}$ is electrically neutral.",
+          "true": false,
+          "feedback": "False: this assumes that the quark and the antiquark of a meson always cancel each other's charge. The charge of an anti-$u$ quark is $-\\tfrac{2}{3}e$, so the charge of the meson is $-\\tfrac{1}{3}e - \\tfrac{2}{3}e$, that is $-e$."
+        },
+        {
+          "text": "The mass of the proton is approximately the sum of the masses of its three quarks.",
+          "true": false,
+          "feedback": "False: here the proton is thought of like a house whose mass is the sum of the masses of its bricks. The masses of the quarks are only about $1\\,\\%$ of the mass of the proton; the rest is the energy of the strong interaction that binds the quarks."
+        },
+        {
+          "text": "The strong interaction does not act on electrons or neutrinos.",
+          "true": true,
+          "feedback": "True: the strong interaction acts on quarks. The electron and the neutrinos are leptons, which are not made of quarks, so only the other interactions act on them."
+        },
+        {
+          "text": "In beta minus decay, the $u$ quark of a neutron changes into a $d$ quark.",
+          "true": false,
+          "feedback": "False: here the direction of the change is reversed. The neutron $udd$ changes into the proton $uud$, so a $d$ quark changes into a $u$ quark through the weak interaction. The change $u \\to d$ happens in beta plus decay."
+        }
+      ]
     }
   ],
   "level2": [

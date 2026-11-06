@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 708656d835e962ab
-ROUND: delta
+CONTENT-HASH: 8e2bb4342aaf97aa
+Round 1
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions.md:59 — a long sentence runs over four lines at 1280 px.
+(none)
 
 ## Checked
-- Captures re-taken with screenshot.py --if-stale (stamp matches the current hash).
-- open-exercises-1280-7: the L1-07 Reasonableness has the new wording, wraps cleanly and has no red KaTeX.
-- The L1-07 Core chip follows the same rendering as fi (stamp is current). The one-word changes at :104 and :149 do not affect the layout.
+- Own scratch script (preview built with build.py, 390 px, task card opened with its answer and solution): opened /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-all-k7q2/en-fy8-13-L2-08.png (order of magnitude, 5 options; wrong option feedback open; Answer and solution open, all of it read) .
+- Same checks by script: no horizontal scroll at 390 px, no KaTeX error nodes. The packet's own screenshot list was empty and was not used; answers.py and solutions.md read as source only.
 
 ## Scores
-illustrations n/a · typography 4 · English 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

@@ -1,15 +1,15 @@
-VERDICT: FAIL
-CONTENT-HASH: 42a85f8ae42cb80b
+VERDICT: PASS
+CONTENT-HASH: fdc5942edc3dece8
 
 ## Blocking
-- exercises.json:344 (fy8-6-L2-08) — **assessment (7)**. The correct option is the only one that mentions the uncertainty ("koska ero on epävarmuutta pienempi"), so it can be found from its form alone. — Fix: let distractor 340 also argue from the uncertainty, for example "…liian pieni, koska ero hyväksyttyyn arvoon on suurempi kuin mittausepävarmuus ±0,05 V".
-- solutions.md:185, 187, 189 (fy8-6-L2-08) — **layout, measured from the render**. At 390 px the chains `h = ek = 1,602·10⁻¹⁹ C · 3,98·10⁻¹⁵ V s = 6,376·10⁻³⁴ J s` (about 520 px), `Δh = …` (about 558 px), the difference chain (about 450 px) and the inline check `3,98·10⁻¹⁵ V s · 4,76·10¹⁴ Hz − 0,07 V = 1,82 V` (about 427 px) are clipped, so the results cannot be read on a phone. — Fix: write symbolic, substituted and result lines separately, and make the inline check its own lines.
 
 ## Polish
-- exercises.json:337 and solutions.md:191 — the text says "eroaa arvosta hf/e lähes yhtä paljon kaikilla LEDeillä", but in this data set hf/e − U_k ranges from 0,12 to 0,21 V. The offset grows with f, which is why the slope comes out 4 % below h/e. This is acceptable as a simplification at this level (C), but "suunnilleen" would be more honest.
+- exercises.json (fy8-6-L2-08) — the distractor "LEDiin kytketty jännite määrää fotonien energian" was dropped. It caught the chapter's first warned misconception. The set still catches the second warned misconception (the line not through the origin). This is a pedagogy choice, not a finding.
 
 ## Checked
-- I fitted the table by least squares: k = 3,976·10⁻¹⁵ V s, intercept −0,074 V and standard error of the slope 0,210·10⁻¹⁵ V s, all matching the task. Every residual is 0,048 V or less, within the ±0,05 V uncertainty ✓. h = 6,376·10⁻³⁴, Δh = 0,336·10⁻³⁴, and the difference from the accepted value, 0,25·10⁻³⁴, is less than Δh, so the correct option is right ✓.
-- Distractors: "not through the origin" is the chapter's warned error, "systematic error" reads a difference within the uncertainty as significant, and the voltage-sets-photon-energy option is the chapter's first misconception. Each is really wrong and its feedback is right ✓.
-- Scope: eU_k ≈ hf and h = ek are both taught ✓. The data are labelled esimerkkiaineisto.
-- Render: preview/fy8-6.html at 390 px, with feedback and the solution opened, plus a screenshot. The hash is the same at the start and the end.
+- Round 2: two options now argue from the uncertainty, the correct one and the Δk distractor, so the correct option can no longer be found from its form. The round-1 finding is resolved ✓.
+- Recomputed: least squares gives k = 3,976·10⁻¹⁵ V s, se(k) = 0,210·10⁻¹⁵ V s and intercept −0,074 V. h = 6,376·10⁻³⁴, Δh = 0,336·10⁻³⁴, and the difference from the accepted value is 0,250·10⁻³⁴, which is less than Δh. Exactly one option is correct ✓.
+- Distractors: the "ero ei ole nolla, siis systemaattinen virhe" option is wrong, since the difference is inside Δh. Comparing with Δk is wrong because the units differ (V s against J s), and its feedback says exactly this. The origin option is wrong. Every feedback is correct ✓.
+- The feedback now says "suunnilleen yhtä paljon", which matches the data, where the offsets are 0,12–0,21 V ✓.
+- Render: preview/fy8-6.html at 390 px with the feedback and the solution open. The four aligned blocks are each about 302 px wide inside the 304 px column. Nothing is clipped and the page does not overflow ✓.
+- The hash is fdc5942edc3dece8 at the start and at the end.

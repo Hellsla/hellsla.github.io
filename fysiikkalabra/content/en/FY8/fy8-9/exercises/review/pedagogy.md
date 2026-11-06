@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 54e23328ba3116c2
+CONTENT-HASH: 8f26b755fc382aac
 Mode: full (translation review against the reviewed Finnish set)
 Round 1
 
 ## Blocking
 (none)
 
-## Fixed
-(none needed: the English text already matched fi in every number and was natural)
-
 ## Polish
 (none)
 
 ## Checked
-- English text is natural and at the level of the Finnish original; the same hints, misconception feedback and "answer box takes part x" notes as fi, so the learning goals and scaffolding are unchanged.
-- Level 1 to 3 progression and task order are identical to fi (8/7/5 tasks); no hint gives away an answer that fi does not.
-- L1-06 distractors and feedback keep the diagnostic purpose of fi.
-- L2-06 asks to explain the background error in both languages; L3-04 and L3-05 keep the part a/b/c structure.
+- fy8-9-L1-09: Level 1 graph choice: the four option figures are needed to answer, share axes and curve style, descriptions give the plotted data without saying which is right; each distractor represents a recognisable misconception and its feedback repairs it.
+- Level and kind identical to fi; a mixture of levels per the rubric remains.
+- English text matches fi in every number; decimal point used in en; wording natural.
+- Solution is followable step by step and mirrors fi.

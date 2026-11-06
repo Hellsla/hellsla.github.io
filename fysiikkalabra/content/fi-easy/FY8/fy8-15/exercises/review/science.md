@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 86b73387a7a9c485
+CONTENT-HASH: 0dd51a4cdd7c1789
+Mode: translation
 
 ## Blocking
 (none)
 
-## Fixed
-- L2-07 (answer feedback x2 and solutions.md model answer) — added the explanation "eli hajoamisessa vapautuu energiaa" after "$Q > 0$" so that the term is understood without the lesson.
-
 ## Polish
-- L1-06 task adds "(Välittäjähiukkanen on hiukkanen, joka välittää voiman.)"; good, no change.
+(none)
 
 ## Checked
-- New exercises L1-06..08, L2-05..07, L3-04..05: ids, level, kind, answers (1; 5; 3; 0.797 MeV; 218.5 MeV), units, tolerances, correct flags and choice order match fi; a script diff of all non-text fields and of all numbers in exercises.json against fi found none.
-- Data table cells and LaTeX are identical to fi (decimal point in JSON tables).
-- Recomputed all eight answers (charge +1 e; 5 hadrons; 3 forbidden reactions; 0.7965 = 0.797 MeV; 218.471 MeV); solutions.md numbers equal fi.
-- Terms explained in simple Finnish: välittäjähiukkanen, annihiloituu eli tuhoutuu, antikvarkin varaus vastakkainen kuin kvarkin varaus.
-- check_i18n.py fi-easy: 0 errors.
+- fy8-15-L1-09 (fi-easy) compared with reviewed fi: same data, same options, same correct option, same answer.
+- Recomputed independently: true/false list: uus = +e (baryon) T; d-ubar = -1/3-2/3 = -e F; proton mass != sum of quark masses (~1 %) F; strong interaction does not act on leptons T; beta minus is d->u, not u->d F; answer string matches.
+- solutions.md L1-09: principle, symbolic step, substitution, rounding and reasonableness agree with fi; answers.py note agrees.
+- fi-easy follows NOTES.md section 12 (shorter sentences, terms explained, same physics and numbers as fi).
+- check_i18n shows nothing for fy8-15; build.py fy8-15 succeeds. No translation edit was needed.
+- Hash 0dd51a4cdd7c1789 at start and end.

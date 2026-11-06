@@ -144,6 +144,25 @@
 **Vastaus:** $916\,\text{keV}$. Vastauksessa on kolme merkitsevää numeroa, koska kalibrointi ja suoran lukeminen eivät anna enempää. Suoralta luettu arvo on $915 \dots 920\,\text{keV}$ piirtotarkkuuden mukaan. Perustelu: sovitettu suora käyttää kaikkia mittauksia ja tasoittaa satunnaisvaihtelun. Kahden pisteen läpi vedetty suora siirtyisi, jos jommankumman pisteen mittaus olisi vähän pielessä.
 **Järkevyys:** Tulos $916\,\text{keV}$ on Cs-137:n viivan $661{,}7\,\text{keV}$ ja Co-60:n viivan $1173{,}2\,\text{keV}$ välissä. Kanava $1531$ on myös kanavien $1104$ ja $1961$ välissä. Interpolointi on luotettavaa, koska piste on kalibrointipisteiden välissä eikä niiden ulkopuolella.
 
+## fy8-8-L2-08
+**Kysytty:** mikä opiskelijan neljästä hajoamisyhtälöstä on väärin.
+**Periaate:** Hajoamisyhtälössä massaluku eli yläindeksien summa säilyy. Myös varausluku eli alaindeksien summa säilyy. Alfahajoamisessa $A$ pienenee neljällä ja $Z$ kahdella. Beeta miinus -hajoamisessa neutroni muuttuu protoniksi ja $Z$ kasvaa yhdellä. Beeta plus -hajoamisessa protoni muuttuu neutroniksi ja $Z$ pienenee yhdellä. Gammahajoamisessa $A$ ja $Z$ pysyvät samoina.
+**Mallivastaus:** Tarkistetaan jokaisen rivin massaluvut ja varausluvut.
+
+Rivi 1 on oikein: $210 = 206 + 4$ ja $84 = 82 + 2$.
+
+Rivi 2 on oikein: $11 = 11 + 0$ ja $6 = 5 + 1$. Kun positroni lähtee, järjestysluku pienenee yhdellä.
+
+Rivi 3 on väärin. Massaluku säilyy, $131 = 131 + 0$, mutta varausluku ei säily:
+
+$52 + (-1) = 51$, eli varausluku ei ole $53$.
+
+Beeta miinus -hajoamisessa järjestysluku kasvaa yhdellä, $Z' = 53 + 1 = 54$. Siksi tytärydin on ksenon. Oikea yhtälö on ${}^{131}_{53}\text{I} \to {}^{131}_{54}\text{Xe} + {}^{0}_{-1}\text{e} + \bar{\nu}$, ja siinä $53 = 54 - 1$. Opiskelija on käyttänyt beeta plus -hajoamisen sääntöä $Z - 1$.
+
+Rivi 4 on oikein: gammafotoni vie mukanaan vain energiaa. Siksi $A = 99$ ja $Z = 43$ pysyvät samoina ja ydin on yhä teknetium.
+
+Oikea vastaus on rivi 3.
+
 ## fy8-8-L3-01
 **Annettu:** alkuydin ${}^{232}_{90}\text{Th}$, loppuydin ${}^{208}_{82}\text{Pb}$
 Sarjassa on vain alfa- ja beeta miinus -hajoamisia.

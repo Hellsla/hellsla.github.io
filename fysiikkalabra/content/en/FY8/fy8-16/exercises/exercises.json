@@ -247,6 +247,36 @@
           "correct": true
         }
       ]
+    },
+    {
+      "id": "fy8-16-L2-08",
+      "level": 2,
+      "kind": [
+        "reasoning"
+      ],
+      "text": "The hydrogen lines have been measured from the spectra of two galaxies. The values are example values.\n\nGalaxy A: $\\text{H}\\alpha$ line, in the laboratory $656.3\\,\\text{nm}$, measured $662.9\\,\\text{nm}$.\n\nGalaxy B: $\\text{H}\\beta$ line, in the laboratory $486.1\\,\\text{nm}$, measured $500.7\\,\\text{nm}$.\n\nBoth galaxies obey the Hubble–Lemaître law, and their own motion is ignored. How many times the distance of galaxy A is the distance of galaxy B?",
+      "answer": "about $3.0$ times",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "about $0.33$ times",
+          "feedback": "Here the dependence was read the wrong way round, as if a larger redshift meant a nearer galaxy. The distance is directly proportional to the recession speed and therefore to the redshift."
+        },
+        {
+          "text": "about $0.76$ times",
+          "feedback": "Here the measured wavelengths were compared instead of their shifts. Redshift does not tell how red the line is, but how much it has stretched from its own laboratory wavelength."
+        },
+        {
+          "text": "about $2.2$ times",
+          "feedback": "Here the shifts were compared in nanometres, $14.6\\,\\text{nm}$ and $6.6\\,\\text{nm}$. A shift is the same fraction of the wavelength of the line itself, so with the same redshift the shorter $\\text{H}\\beta$ line shifts fewer nanometres."
+        },
+        {
+          "text": "about $3.0$ times",
+          "correct": true,
+          "feedback": "Correct: $z_\\text{A} \\approx 0.0101$ and $z_\\text{B} \\approx 0.0300$. The distance $d = \\tfrac{cz}{H_0}$ is proportional to the redshift, so the ratio of the distances is about $3.0$."
+        }
+      ]
     }
   ],
   "level3": [

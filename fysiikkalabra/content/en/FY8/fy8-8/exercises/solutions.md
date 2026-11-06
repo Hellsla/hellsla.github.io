@@ -144,6 +144,25 @@
 **Answer:** $916\,\text{keV}$, three significant figures, because the calibration and the reading of the line do not give more. The value read from the line is $915 \dots 920\,\text{keV}$ depending on the drawing accuracy. Justification: the fitted line uses all the measurements and evens out the random variation, whereas a line drawn through two points would shift if the measurement of either point were a little off.
 **Reasonableness:** The result $916\,\text{keV}$ is between the line $661.7\,\text{keV}$ of Cs-137 and the line $1173.2\,\text{keV}$ of Co-60, and the channel $1531$ is also between the channels $1104$ and $1961$. Interpolation is reliable, because the point is between the calibration points and not outside them.
 
+## fy8-8-L2-08
+**Asked:** which of the student's four decay equations is wrong.
+**Principle:** In a decay equation the mass number, that is, the sum of the superscripts, and the atomic number, that is, the sum of the subscripts, are conserved. In alpha decay $A$ decreases by four and $Z$ by two, in beta minus decay a neutron turns into a proton and $Z$ increases by one, and in beta plus decay a proton turns into a neutron and $Z$ decreases by one. In gamma decay $A$ and $Z$ stay the same.
+**Model answer:** Let us check the mass numbers and the atomic numbers of each line.
+
+Line 1 is correct: $210 = 206 + 4$ and $84 = 82 + 2$.
+
+Line 2 is correct: $11 = 11 + 0$ and $6 = 5 + 1$. When a positron leaves, the atomic number decreases by one.
+
+Line 3 is wrong. The mass number is conserved, $131 = 131 + 0$, but the atomic number is not:
+
+$52 + (-1) = 51$, that is, the atomic number is not $53$.
+
+In beta minus decay the atomic number increases by one, $Z' = 53 + 1 = 54$, so the daughter nucleus is xenon. The correct equation is ${}^{131}_{53}\text{I} \to {}^{131}_{54}\text{Xe} + {}^{0}_{-1}\text{e} + \bar{\nu}$, in which $53 = 54 - 1$. The student has used the rule of beta plus decay, $Z - 1$.
+
+Line 4 is correct: the gamma photon carries away only energy, so $A = 99$ and $Z = 43$ stay the same and the nucleus is still technetium.
+
+The correct answer is line 3.
+
 ## fy8-8-L3-01
 **Given:** initial nucleus ${}^{232}_{90}\text{Th}$, final nucleus ${}^{208}_{82}\text{Pb}$; the series has only alpha and beta minus decays
 **Find:** the number of beta minus decays $n_\beta$

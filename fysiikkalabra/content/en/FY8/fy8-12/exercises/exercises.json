@@ -109,6 +109,36 @@
           "feedback": "Alpha radiation does not turn into gamma radiation in tissue. Gamma radiation passes through tissue more easily and gives up its energy less densely, so the danger is caused precisely by the dense ionisation of alpha particles."
         }
       ]
+    },
+    {
+      "id": "fy8-12-L1-09",
+      "level": 1,
+      "text": "The gamma radiation of a caesium-137 source is attenuated by five different shields in turn. The thickness $d$ of each shield and the half-value thickness $d_{1/2}$ of the material for this radiation are:\n\nShield A: iron, $d = 30\\,\\text{mm}$ and $d_{1/2} = 12\\,\\text{mm}$\n\nShield B: concrete, $d = 120\\,\\text{mm}$ and $d_{1/2} = 39\\,\\text{mm}$\n\nShield C: lead, $d = 22\\,\\text{mm}$ and $d_{1/2} = 5.5\\,\\text{mm}$\n\nShield D: water, $d = 400\\,\\text{mm}$ and $d_{1/2} = 81\\,\\text{mm}$\n\nShield E: aluminium, $d = 120\\,\\text{mm}$ and $d_{1/2} = 34\\,\\text{mm}$\n\nAssume a narrow beam. In what order are the shields according to how large a fraction of the gamma radiation they let through?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "prompt": "Put them in order of the fraction of radiation that gets through, from largest to smallest.",
+      "order": [
+        {
+          "text": "Shield A"
+        },
+        {
+          "text": "Shield B"
+        },
+        {
+          "text": "Shield E"
+        },
+        {
+          "text": "Shield C"
+        },
+        {
+          "text": "Shield D"
+        }
+      ],
+      "answer": "Shield A ($18\\,\\%$), shield B ($12\\,\\%$), shield E ($8.7\\,\\%$), shield C ($6.3\\,\\%$), shield D ($3.3\\,\\%$).",
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level2": [

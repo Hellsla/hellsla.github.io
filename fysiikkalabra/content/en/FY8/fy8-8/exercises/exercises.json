@@ -251,6 +251,41 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy8-8-L2-08",
+      "level": 2,
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "text": "A student wrote the equations of four radioactive decays.\n\nLine 1, alpha decay of polonium-210: ${}^{210}_{84}\\text{Po} \\to {}^{206}_{82}\\text{Pb} + {}^{4}_{2}\\text{He}$\n\nLine 2, beta plus decay of carbon-11: ${}^{11}_{6}\\text{C} \\to {}^{11}_{5}\\text{B} + {}^{0}_{+1}\\text{e} + \\nu$\n\nLine 3, beta minus decay of iodine-131: ${}^{131}_{53}\\text{I} \\to {}^{131}_{52}\\text{Te} + {}^{0}_{-1}\\text{e} + \\bar{\\nu}$\n\nLine 4, gamma decay of excited technetium-99: ${}^{99}_{43}\\text{Tc}^{\\ast} \\to {}^{99}_{43}\\text{Tc} + \\gamma$\n\nWhich line is wrong? If there is no error in the equations, choose the last option.",
+      "answer": "Line 3: beta minus decay of iodine-131",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Line 1: alpha decay of polonium-210",
+          "feedback": "Line 1 is correct: the mass numbers $210 = 206 + 4$ and the atomic numbers $84 = 82 + 2$. If you think the line is wrong, you may think that an alpha particle is a single particle and lowers the atomic number by only one."
+        },
+        {
+          "text": "Line 2: beta plus decay of carbon-11",
+          "feedback": "Line 2 is correct: the mass numbers $11 = 11 + 0$ and the atomic numbers $6 = 5 + 1$. If you think the line is wrong, you may be mixing up beta plus and beta minus decay: when a positron leaves, a proton turns into a neutron and $Z$ decreases."
+        },
+        {
+          "text": "Line 3: beta minus decay of iodine-131",
+          "correct": true,
+          "feedback": "Correct, this line is wrong: the atomic number is not conserved, because $52 + (-1) = 51$, not $53$. In beta minus decay a neutron turns into a proton, so the daughter nucleus is ${}^{131}_{54}\\text{Xe}$."
+        },
+        {
+          "text": "Line 4: gamma decay of technetium-99",
+          "feedback": "Line 4 is correct: the gamma photon carries away only energy, so $A = 99$ and $Z = 43$ stay the same. If you think the line is wrong, you may think that gamma decay changes the element."
+        },
+        {
+          "text": "There is no error in the equations",
+          "feedback": "Check the atomic numbers of each line: add up the subscripts on both sides of the arrow."
+        }
+      ]
     }
   ],
   "level3": [

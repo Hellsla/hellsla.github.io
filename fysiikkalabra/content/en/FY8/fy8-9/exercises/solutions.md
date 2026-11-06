@@ -75,6 +75,22 @@ The statement that all have decayed is an error, because the second half-life re
 **Answer:** $17.5\,\text{a}$, three significant figures like the half-life $5.27\,\text{a}$.
 **Reasonableness:** After three half-lives the activity is $\tfrac{1}{8} = 12.5\,\%$ and after four $\tfrac{1}{16} = 6.25\,\%$. The time at which the activity is $10\,\%$ lies between these: $3.32$ half-lives, that is, $3.32 \cdot 5.27\,\text{a} \approx 17.5\,\text{a}$.
 
+## fy8-9-L1-09
+**Asked:** which of the four $(t, A)$ graphs shows the activity of the sample, when $A_0 = 800\,\text{kBq}$ and $T_{1/2} = 2.0\,\text{h}$.
+**Principle:** The activity is proportional to the number of undecayed nuclei, so it follows the decay law $A = A_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$. In every half-life the activity halves, because the same fraction of the remaining nuclei always decays. So the curve becomes gentler all the time and never reaches zero.
+**Model answer:** The right one is graph C. Let us calculate the activity after two half-lives, that is, at the time $t = 4.0\,\text{h}$.
+
+$A = A_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$
+
+$A = 800\,\text{kBq} \cdot \left(\tfrac{1}{2}\right)^{2}$
+
+$A = 200\,\text{kBq}$
+
+Similarly, at the time $2.0\,\text{h}$ the activity is $400\,\text{kBq}$, at $6.0\,\text{h}$ it is $100\,\text{kBq}$ and at $8.0\,\text{h}$ it is $50\,\text{kBq}$. The curve of graph C passes through these points and becomes gentler all the time.
+
+In graph A the activity decreases steadily and is zero at the time $4.0\,\text{h}$: it assumes that the rest of the nuclei decay in the second half-life. In graph B the curve passes through the point $(2.0\,\text{h};\ 400\,\text{kBq})$, but it becomes steeper and hits zero: in it the old nuclei would be more likely to decay, although a nucleus has no memory. The curve of graph D is $A = A_0 e^{-t/T_{1/2}}$, in which the decay constant has been taken as $\tfrac{1}{T_{1/2}}$. At the time $2.0\,\text{h}$ it gives $800\,\text{kBq} \cdot e^{-1} \approx 294\,\text{kBq}$ and not half of the initial value. The decay constant is $\lambda = \tfrac{\ln 2}{T_{1/2}}$.
+**Reading the graph:** From each graph the activity was read at the times $2.0\,\text{h}$, $4.0\,\text{h}$ and $6.0\,\text{h}$, and the values were compared with the values of the decay law. In addition, it was checked whether the curve becomes gentler and whether it stays above zero.
+
 ## fy8-9-L2-01
 **Given:** the half-life of iodine-131 $T_{1/2} = 8.02\,\text{d}$
 **Asked:** the decay constant $\lambda$ in the unit $10^{-6}\,\tfrac{1}{\text{s}}$

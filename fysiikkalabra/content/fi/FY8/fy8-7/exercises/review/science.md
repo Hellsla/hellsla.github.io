@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 550d4a2308e6dc21
-Round: 1
+CONTENT-HASH: 1eb7bd804dee5a96
+Round: 2
 
 ## Blocking
 
 ## Polish
-- exercises.json:136 (fy8-7-L1-09 statement 3) — the heating statement needs the idea that thermal equilibrium always keeps N₁ > N₂; the brief's Tiivistelmä teaches inversion by pumping but not why heating cannot do it. Fine as a reasoning statement if the lesson says it; otherwise add "lämmittäminen ei riitä" to the lesson or reword to "Populaatioinversio syntyy, kun ainetta lämmitetään" (still false, needs no Boltzmann reasoning).
-- exercises.json:148 vs solutions.md (statement 5) — feedback says "satoja kertoja", solution "monta kertaa"; true for a He–Ne laser, not for every laser. Use "monta kertaa" in both.
+- exercises.json fy8-7-L1-09 statement 5 — "vahvistuu vain akselin suuntainen valo" is slightly absolute: off-axis light also gains a little on its single pass before leaving. As the feedback explains, only axial light is amplified appreciably, so it is a level-appropriate simplification (C). "vahvistuu merkittävästi vain" would make it exact.
 
 ## Checked
-- Recomputed in one script: hc = 1,9865·10⁻²⁵ J m, 650 nm photon 3,056·10⁻¹⁹ J = 1,91 eV for laser and LED alike; key "1 epätosi, 2 tosi, 3 epätosi, 4 epätosi, 5 tosi" correct.
-- Statement 4: smaller dot (3 nm) → larger gap → shorter λ, so "A longer λ" is false; consistent with the Tiivistelmä.
-- Statements 2 and 5 true as the lesson states them (stimulated photon copies energy, direction and phase; axial light amplified between mirrors).
-- Distractors catch the chapter's own warned mistake (laser photons "more energetic", statement 1); every feedback's physics right; no de Broglie anywhere.
-- Notation (hf, λ, E₂ − E₁, N₂ > N₁) as in the brief; answers.py only gained a comment and still runs.
-- 3–6 statements with at least one true and one false (exercise-types type 8).
-- Text only: the inline chain "hc = 6,626·10⁻³⁴ J s · 2,998·10⁸ m/s = …" in solutions.md:149 is long (~380 px estimated); KaTeX can break at = and ·, but the visual reviewer should measure it at 390 px.
+- Round-1 polish resolved. Statement 3 now asks for the two-level rule. Physics is right: with optical pumping, absorption and stimulated emission are equally likely between two levels, so N₂ only approaches N₁ (at most half) and inversion is impossible. The statement is false as keyed. Feedback and solution agree, and the set's level-3 task ("miksi inversio vaatii vähintään kolme tasoa") covers the same idea.
+- Statement 5 feedback now says "monta kertaa", consistent with the solution.
+- The hc, hf and eV chains in solutions.md are now aligned display blocks of 2–3 lines. Values are unchanged: 1,9865·10⁻²⁵ J m, 3,056·10⁻¹⁹ J, 1,91 eV, recomputed in my script.
+- Key "1 epätosi, 2 tosi, 3 epätosi, 4 epätosi, 5 tosi" still correct. Statements 1, 2 and 4 are unchanged from round 1 and checked there.
+- Periaate no longer mentions heating and agrees with statement 3.
+- No de Broglie. Notation as in the brief.
+- Text only: the new aligned lines are short (≤ ~250 px estimated); not rendered.
 - Hash identical at start and end.

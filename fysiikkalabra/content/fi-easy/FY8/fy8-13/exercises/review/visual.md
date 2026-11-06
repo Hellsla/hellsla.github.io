@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 83c2a5ec2edf0391
-ROUND: delta
+CONTENT-HASH: c46d79db763e3164
+Round 1
 
 ## Blocking
 (none)
@@ -9,9 +9,8 @@ ROUND: delta
 (none)
 
 ## Checked
-- Captures re-taken with screenshot.py --if-stale (stamp matches the current hash).
-- open-exercises-1280-7: the L1-07 Järkevyys has the new wording, wraps cleanly and has no red KaTeX.
-- The core chip moved to L1-07, the same as fi (stamp is current).
+- Own scratch script (preview built with build.py, 390 px, task card opened with its answer and solution): opened /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-all-k7q2/fi-easy-fy8-13-L2-08.png (order of magnitude, 5 options; wrong option feedback open; Answer and solution open, all of it read) .
+- Same checks by script: no horizontal scroll at 390 px, no KaTeX error nodes. The packet's own screenshot list was empty and was not used; answers.py and solutions.md read as source only.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

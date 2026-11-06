@@ -197,3 +197,20 @@
 **Answer:** $2.4\,\text{h}$, two significant figures like the dose limit $25\,\mu\text{Sv}$ and the thickness of the wall $10\,\text{cm}$. The dose rate in part b) is about $11\,\mu\text{Sv/h}$.
 **Model answer on part d):** The formula assumes that the photons hitting the concrete are either absorbed or pass through with the same proportion. In reality some of the gamma radiation scatters in the wall and the surroundings, and the scattered radiation can raise the dose rate at the workstation above the calculated value. The point-source assumption and the reading of the half-value thickness from the table are also approximate. Therefore the working time should be chosen shorter than the calculated one, for example half of it, and the dose should be monitored with a dosimeter.
 **Reasonableness:** Behind the wall at a distance of $1.0\,\text{m}$ the dose rate would be $240 \cdot \left(\tfrac{1}{2}\right)^{2.5} = 42.4\,\mu\text{Sv/h}$, which lies between the table values $60.5$ and $29.8\,\mu\text{Sv/h}$, just as $10\,\text{cm}$ lies between the thicknesses $8.0\,\text{cm}$ and $12.0\,\text{cm}$. The distance $2.0\,\text{m}$ reduces it to a quarter, that is, to $10.6\,\mu\text{Sv/h}$, and $2.4\,\text{h} \cdot 10.6\,\mu\text{Sv/h} \approx 25\,\mu\text{Sv}$.
+
+## fy8-13-L2-08
+**Asked:** the order of magnitude of the dose $H$ accumulated from flights in a year, in millisieverts.
+**Principle:** The dose rate is constant for the whole flight by assumption, so the dose is the dose rate times the time spent, $H = \dot{H} t$. The time $t$ is the total duration of all the flights of the year. Finally the microsieverts are converted to millisieverts: $1\,\text{mSv} = 1000\,\mu\text{Sv}$.
+**Model answer:** Flying time in a year:
+
+$$t = 12 \cdot 6 \cdot 9.0\,\text{h} = 648\,\text{h}$$
+
+Dose:
+
+$$\begin{aligned}
+&H = 3.0\,\mu\text{Sv/h} \cdot 648\,\text{h} \\
+&\phantom{H} = 1944\,\mu\text{Sv} \\
+&\phantom{H} \approx 1.9\,\text{mSv}
+\end{aligned}$$
+
+Flights accumulate about $1.9\,\text{mSv}$ in a year, so the order of magnitude is about $2\,\text{mSv}$. The wrong options come from common mistakes: the dose of one flight is only $27\,\mu\text{Sv}$, that is about $0.03\,\text{mSv}$, the dose of one month is about $160\,\mu\text{Sv}$, that is about $0.2\,\text{mSv}$, dividing the microsieverts by a million gives about $0.002\,\text{mSv}$, and leaving the unit unconverted gives about $2000\,\text{mSv}$. Reasonableness: $2\,\text{mSv}$ is about a third of the average annual dose of a Finn, $5.9\,\text{mSv}$, so the dose of a person who flies a lot grows clearly but stays in the same order of magnitude. A dose of $2000\,\text{mSv}$ would be hundreds of times the average, which is not possible from flights alone.

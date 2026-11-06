@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 90c5f28699ad31ea
-Mode: translation
-Round: 1
+CONTENT-HASH: e7058b83c8abc9c1
+Round 1
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] Captures exist at 1280 px only for the exercises; no 390 px exercise capture of the new tasks. Layout is the same component as fi, so no new risk.
+- [Minor] fy8-16-L2-08 ratkaisu — välivaiheen punasiirtymät kuuden desimaalin tarkkuudella ($0{,}010056$), vastaus kahdella merkitsevällä numerolla; vastauksessa tämä sanotaan, joten vain esitystapa.
 
 ## Checked
-- Opened fi-easy captures fy8-16-open-exercises-L2-1280-7.png (L2-05 solution) and fy8-16-open-exercises-L3-1280-6.png (L3-04 solution, start of L3-05): KaTeX renders, fractions and units upright, no overflow, no red errors.
-- Tables of L2-05 and L3-04 have the translated caption and column headers; numbers with thin-space thousands separators as in fi.
-- Decimal comma in all rendered numbers; the shots predate the wording polish, which changed text only.
+- Own scratch script (preview built with build.py, 390 px, task card opened with its answer and solution): opened /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-all-k7q2/fi-easy-fy8-16-L2-08.png (redshift ratio, 4 options; wrong option feedback open; Answer and solution open, all of it read) .
+- Changed older tasks (text split into paragraphs or re-set): fi-easy-fy8-16-L2-03.png (top, text paragraphs, solution); fi-easy-fy8-16-L3-01.png (top, text paragraphs, solution); fi-easy-fy8-16-L3-03.png (top, text paragraphs, solution); opened the top 760 px of each in the contact montages /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-all-k7q2/m-fi-easy-0.png and m-fi-easy-3.png (solution parts below not opened for these).
+- Same checks by script: no horizontal scroll at 390 px, no KaTeX error nodes. The packet's own screenshot list was empty and was not used; answers.py and solutions.md read as source only.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

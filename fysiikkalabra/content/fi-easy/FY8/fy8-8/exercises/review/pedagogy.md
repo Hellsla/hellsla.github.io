@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: a3e2c0e4d656c80d
+CONTENT-HASH: 17991a95637aadf8
 Mode: full (translation review against the reviewed Finnish set)
 Round 1
 
 ## Blocking
 (none)
 
-## Fixed
-(none needed: the text already matched fi in every number and was natural)
-
 ## Polish
 (none)
 
 ## Checked
-- selkosuomi text of the 8 new exercises: short sentences, common words, terms explained (e.g. 'Kirjoita c-kohdan tulos vastauskenttään'), decimal comma in prose and point in data cells exactly as in fi.
-- Task structure (a/b/c parts, which result goes into the answer field, kinds, level) matches fi; scaffolding and feedback of distractors in L1-06 follow the same error types as fi.
-- Solutions keep the order Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness as in fi.
-- check_i18n.py fi-easy: 0 errors.
+- fy8-8-L2-08: Error-analysis task at level 2: the student must check A and Z on each line; distractor feedback names the likely misconception (alpha as one particle, beta+ vs beta-, gamma changes element); the "no error" option gives a hint without the answer.
+- Level and kind identical to fi; a mixture of levels per the rubric remains.
+- fi-easy keeps the same numbers and physics as fi; sentences shorter and plainer (NOTES.md §12).
+- Solution is followable step by step and mirrors fi.

@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: c0821c73c198f4f9
+CONTENT-HASH: 35e9eff3639e71eb
+Mode: translation
 
 ## Blocking
 (none)
 
 ## Polish
-- Part c) of L3-04 and L3-05 asks for an explanation while the answer box takes only b); the text says so ("The answer box takes the result of part b)"), as in fi.
+(none)
 
 ## Checked
-- Levels and counts match fi: level 1 has 8, level 2 has 7, level 3 has 5 tasks.
-- Distractor feedback of L1-06, L1-07 and L2-07 says why each wrong option is wrong, with the same content as fi; the error-analysis task L2-07 names the misconception.
-- English is natural and at the right register for upper secondary physics; terms (mediator particle, antiparticle, baryon number, lepton number, annihilation) are used as in the lesson.
-- Hints toward the method are in the task text (quark charges, B formula, neutrino lepton numbers) as in fi.
+- fy8-15-L1-09 (en): situation first, question last as its own sentence, choices/statements and feedback keep the misconception each wrong option carries, as in fi.
+- Each feedback names the specific error and repairs it; none gives the answer before the student commits.
+- Solution can be followed step by step (Kysytty, Periaate, Mallivastaus) and matches fi.
+- English decimal point used, wording natural English.
+- Hash 35e9eff3639e71eb at start and end.

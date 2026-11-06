@@ -165,6 +165,32 @@ b) Suora antaa etäisyydellä $28\,\text{Mpc}$ nopeuden $68{,}45 \cdot 28\,\text
 **Periaate:** Alkuräjähdys ei ollut räjähdys avaruuden tietyssä kohdassa. Avaruus itse alkoi laajeta kaikkialla. Laajenemisessa kaikki galaksien väliset etäisyydet kasvavat samassa suhteessa. Siksi jokaisesta galaksista katsoen muut galaksit loittonevat samalla tavalla. Nopeus on verrannollinen etäisyyteen, $v = H_0\,d$. Laajenemisella ei ole keskipistettä eikä reunaa.
 **Mallivastaus:** Oppilaan havainto on oikein, mutta johtopäätös on väärä. Se, että galaksit loittonevat meistä joka suunnassa, ei tee Linnunradasta keskipistettä. Avaruus laajenee kaikkialla. Jokaisesta galaksista katsoen muut loittonevat samalla tavalla, eikä keskipistettä ole. Jos räjähdyksellä olisi paikka, loittoneminen näyttäisi eri galakseista erilaiselta. Havainnot eivät tue sitä. Hubblen ja Lemaîtren lain mukaan kaukaiset galaksit loittonevat nopeammin, eivät hitaammin. Väite hitaammasta loittonemisesta kaukana on siis väärä. Myös väite väsyvästä valosta on väärä, koska galaksien väliset etäisyydet todella kasvavat avaruuden laajetessa.
 
+## fy8-16-L2-08
+**Kysytty:** kuinka moninkertainen galaksin B etäisyys $d_\text{B}$ on galaksin A etäisyyteen $d_\text{A}$ verrattuna.
+**Periaate:** Punasiirtymä $z = \tfrac{\Delta\lambda}{\lambda_0}$ on sama osuus jokaisen viivan omasta aallonpituudesta. Siksi eri viivoista lasketut punasiirtymät ovat vertailukelpoisia, mutta siirtymät nanometreinä eivät ole. Pienellä punasiirtymällä $v = cz$. Hubblen ja Lemaîtren lain mukaan $d = \tfrac{v}{H_0}$, joten $d = \tfrac{cz}{H_0}$ on suoraan verrannollinen punasiirtymään. Suhteessa $c$ ja $H_0$ supistuvat eli katoavat.
+**Mallivastaus:** Galaksin A punasiirtymä:
+
+$$\begin{aligned}
+&z_\text{A} = \frac{662{,}9\,\text{nm} - 656{,}3\,\text{nm}}{656{,}3\,\text{nm}} \\
+&\phantom{z_\text{A}} = \frac{6{,}6\,\text{nm}}{656{,}3\,\text{nm}} = 0{,}010056
+\end{aligned}$$
+
+Galaksin B punasiirtymä:
+
+$$\begin{aligned}
+&z_\text{B} = \frac{500{,}7\,\text{nm} - 486{,}1\,\text{nm}}{486{,}1\,\text{nm}} \\
+&\phantom{z_\text{B}} = \frac{14{,}6\,\text{nm}}{486{,}1\,\text{nm}} = 0{,}030035
+\end{aligned}$$
+
+Etäisyyksien suhde:
+
+$$\begin{aligned}
+&\frac{d_\text{B}}{d_\text{A}} = \frac{c z_\text{B} : H_0}{c z_\text{A} : H_0} = \frac{z_\text{B}}{z_\text{A}} \\
+&\phantom{\frac{d_\text{B}}{d_\text{A}}} = \frac{0{,}030035}{0{,}010056} = 2{,}987
+\end{aligned}$$
+
+Galaksin B etäisyys on noin $3{,}0$-kertainen galaksin A etäisyyteen verrattuna, kaksi merkitsevää numeroa kuten siirtymässä $6{,}6\,\text{nm}$. Molemmat punasiirtymät ovat alle $0{,}1$, joten $v = cz$ pätee. Väärät vaihtoehdot ovat nämä. Siirtymien vertaaminen nanometreinä antaa $14{,}6 : 6{,}6 \approx 2{,}2$. Mitattujen aallonpituuksien vertaaminen antaa $500{,}7 : 662{,}9 \approx 0{,}76$. Käänteinen riippuvuus antaa $0{,}010056 : 0{,}030035 \approx 0{,}33$. Järkevyys: galaksin B viiva on siirtynyt noin $3\,\%$ ja galaksin A viiva noin $1\,\%$ omasta aallonpituudestaan. Siksi B loittonee noin kolme kertaa nopeammin ja on noin kolme kertaa kauempana.
+
 ## fy8-16-L3-04
 **Annettu:** esimerkkiaineisto: ratanopeudet $v_\text{hav}$ ja mallin nopeudet $v_\text{näk}$ seitsemällä etäisyydellä $r = 2$–$30\,\text{kpc}$ taulukossa; $r = 10\,\text{kpc}$: $v_\text{hav} = 207\,\text{km/s}$, $v_\text{näk} = 185\,\text{km/s}$; $r = 30\,\text{kpc}$: $v_\text{hav} = 213\,\text{km/s}$, $v_\text{näk} = 113\,\text{km/s}$
 **Kysytty:** a) nopeuksien suhteelliset muutokset välillä $10$–$30\,\text{kpc}$; b) suhde $\tfrac{v_\text{hav}}{v_\text{näk}}$ etäisyydellä $30\,\text{kpc}$; c) tulkinta massasta ja pimeästä aineesta

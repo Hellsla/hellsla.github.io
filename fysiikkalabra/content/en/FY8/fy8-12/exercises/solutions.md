@@ -138,6 +138,25 @@
 **Principle:** An alpha particle ionises densely and gives up all its energy over a very short distance. Ionisation damages cells, so the damage occurs where the energy is given up.
 **Model answer:** Outside the skin, alpha particles stop in the air and in the surface layer of the skin before they reach living cells. When an alpha emitter has been swallowed or breathed in, it is right next to tissue. The alpha particle then gives up all its energy over the distance of a few cells by ionising, and the damage is concentrated in a small area. So the difference is explained by the range of the particle, not by its energy increasing or turning into another kind of radiation: an alpha particle does not accelerate in tissue and does not turn into gamma radiation.
 
+## fy8-12-L1-09
+**Asked:** the order of shields A–E according to how large a fraction of the gamma radiation they let through, from largest to smallest.
+**Principle:** Every layer of one half-value thickness halves the gamma radiation, so the fraction that gets through is $\tfrac{I}{I_0} = \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$. The fraction depends only on how many half-value thicknesses $\tfrac{d}{d_{1/2}}$ there are in the shield: the more there are, the smaller the fraction that gets through. Neither the thickness alone nor the material alone decides.
+**Model answer:** Let us calculate the number of half-value thicknesses $\tfrac{d}{d_{1/2}}$ for each shield.
+
+$\tfrac{30\,\text{mm}}{12\,\text{mm}} = 2.50$ (shield A, iron)
+
+$\tfrac{120\,\text{mm}}{39\,\text{mm}} \approx 3.08$ (shield B, concrete)
+
+$\tfrac{22\,\text{mm}}{5.5\,\text{mm}} = 4.00$ (shield C, lead)
+
+$\tfrac{400\,\text{mm}}{81\,\text{mm}} \approx 4.94$ (shield D, water)
+
+$\tfrac{120\,\text{mm}}{34\,\text{mm}} \approx 3.53$ (shield E, aluminium)
+
+The fractions that get through are, for example, for shield A $\left(\tfrac{1}{2}\right)^{2.50} \approx 0.18$ and for shield D $\left(\tfrac{1}{2}\right)^{4.94} \approx 0.033$. Similarly, for shield B one gets $12\,\%$, for shield E $8.7\,\%$ and for shield C $6.3\,\%$. According to the fraction that gets through, from largest to smallest, the order is A, B, E, C, D.
+
+Lead is not the best shield here, although its half-value thickness is the smallest: a $400\,\text{mm}$ layer of water contains more half-value thicknesses than a $22\,\text{mm}$ lead plate. The thickness alone does not decide either: the concrete and aluminium shields are equally thick, but the half-value thickness of aluminium is smaller, so it lets through a smaller fraction. Reasonableness: the iron shield has only two and a half half-value thicknesses, and $18\,\%$ is between a quarter, $25\,\%$, and an eighth, $12.5\,\%$, as it should be.
+
 ## fy8-12-L2-05
 **Given:** ten pulse counts in $10\,\text{s}$ periods: $52$, $45$, $49$, $57$, $44$, $48$, $51$, $42$, $50$ and $46$; the order of magnitude of the random variation is $\sqrt{N}$
 **Asked:** the relative uncertainty of the total pulse count $N_\text{tot}$ as a percentage

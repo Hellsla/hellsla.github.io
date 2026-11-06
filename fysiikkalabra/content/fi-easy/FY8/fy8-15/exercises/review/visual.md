@@ -1,13 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 86b73387a7a9c485
+CONTENT-HASH: 0dd51a4cdd7c1789
+Round 1
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] Solutions L2-06 Sijoitus is one long paragraph of seven cases, as in fi; readable but dense.
+(none)
 
 ## Checked
-- Opened capture fy8-15-open-exercises-L2-1280-6.png (fi-easy L2-05 solution): maths and Finnish labels render, no raw LaTeX, no overflow.
-- Table captions and headers are Finnish ("Nro", "Yhdistelmä", "Hiukkanen", "Kvarkit"); decimals in tables use a point as in fi.
-- Edited text only (L2-07), no layout change.
+- Own scratch script (preview built with build.py, 390 px, task card opened with its answer and solution): opened /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-all-k7q2/fi-easy-fy8-15-L1-09.png (five true/false statements; 3/5 items marked wrong (fy8-15-L1-09-fb.png); Answer and solution open, all of it read) . Also opened /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-all-k7q2/fi-easy-fy8-15-L1-09-fb.png (top part, the marked items).
+- Same checks by script: no horizontal scroll at 390 px, no KaTeX error nodes. The packet's own screenshot list was empty and was not used; answers.py and solutions.md read as source only.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

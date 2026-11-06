@@ -87,6 +87,41 @@
       "answer": 17.5,
       "unit": "a",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-9-L1-09",
+      "level": 1,
+      "kind": [
+        "graph",
+        "concept"
+      ],
+      "text": "Radioaktiivisen näytteen aktiivisuus on alussa $800\\,\\text{kBq}$. Näytteen isotoopin puoliintumisaika on $2{,}0\\,\\text{h}$. Arvot ovat esimerkkiarvoja. Näytteessä on hyvin paljon ytimiä, eikä siihen synny uusia radioaktiivisia ytimiä.\n\nMikä kuvaajista esittää näytteen aktiivisuutta $A$ ajan $t$ funktiona?",
+      "answer": "Kuvaaja C",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Kuvaaja A",
+          "figure": "fy8-9/pick-suora",
+          "feedback": "Tässä aktiivisuus pienenee tasaisesti ja on nolla kahden puoliintumisajan jälkeen. Se olisi oikein vain, jos loput ytimet hajoaisivat toisessa puoliintumisajassa. Toisessa puoliintumisajassa hajoaa kuitenkin vain puolet jäljellä olevista ytimistä. Siksi hetkellä $4{,}0\\,\\text{h}$ aktiivisuus on $200\\,\\text{kBq}$."
+        },
+        {
+          "text": "Kuvaaja B",
+          "figure": "fy8-9/pick-kiihtyy",
+          "feedback": "Tässä hajoaminen kiihtyy ajan kuluessa, ikään kuin pitkään säilyneet ytimet olisivat vuorossa hajoamaan. Ytimellä ei ole muistia. Jäljellä olevista ytimistä hajoaa jokaisessa puoliintumisajassa sama osuus. Siksi käyrä loivenee eikä jyrkkene."
+        },
+        {
+          "text": "Kuvaaja C",
+          "figure": "fy8-9/pick-puolittuu",
+          "correct": true,
+          "feedback": "Oikein: aktiivisuus puolittuu jokaisessa $2{,}0\\,\\text{h}$:n jaksossa. Hetkinä $2{,}0\\,\\text{h}$, $4{,}0\\,\\text{h}$ ja $6{,}0\\,\\text{h}$ se on $400\\,\\text{kBq}$, $200\\,\\text{kBq}$ ja $100\\,\\text{kBq}$. Käyrä ei saavuta nollaa."
+        },
+        {
+          "text": "Kuvaaja D",
+          "figure": "fy8-9/pick-e",
+          "feedback": "Tämä käyrä on $A = A_0 e^{-t/T_{1/2}}$. Siinä hajoamisvakioksi on otettu $\\tfrac{1}{T_{1/2}}$ ilman lukua $\\ln 2$. Hetkellä $2{,}0\\,\\text{h}$ aktiivisuus on vain noin $290\\,\\text{kBq}$. Puoliintumisajan kohdalla sen pitää kuitenkin olla $400\\,\\text{kBq}$."
+        }
+      ]
     }
   ],
   "level2": [
