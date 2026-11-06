@@ -1,18 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 4b9525e95331f53c
-Mode: full (translation review against the reviewed Finnish set)
+CONTENT-HASH: 38b0d74ac801d74a
+Mode: delta (changed items rendered and read in full)
 Round 1
 
 ## Blocking
 (none)
 
-## Fixed
-- exercises.json L2-05 data table header: left-over Finnish column title "Potku" changed to "Kick" (fi shows the same column; numbers untouched).
-
 ## Polish
-(none)
+- [Minor] lesson page, optional "virhe" (Find the error) activity — with all boxes open at 390 px the inline chain reaches x = 458 px and the page scrolls sideways (scrollWidth 487) — outside this exercise set: for the lesson reviewer, break the chain.
 
 ## Checked
-- Opened captures of the new tasks (L2 and L3 solution-open shots at 1280 px, en): step labels, formula boxes, answer chip, tables and reasonableness callouts render without overflow or Finnish leftovers in the visible text.
-- Data tables of L2-05..07, L3-04, L3-05 have translated captions and column headers (captures predate the L2-05 header fix; the fix changes only one short header word).
-- Decimal point (en) / comma (fi-easy) as in the locale; units and LaTeX identical to fi, so layout equals the reviewed fi layout.
+- Rendered en/fy4-9.html at 390 px, every details/feedback/solution open, element captures of fy4-9-L1-09: task text and its new paragraph breaks, answer/choice/true-false/order widgets, feedback panels, Answer box, full worked solution (Given/Find/Principle/Model answer).
+- No element in the checked tasks passes x = 390; no table or caption overflow. Data-table captions (5 in the page) are 223-326 px wide inside 390 px. Widest inline chain 253 px (weight check line), below the 280 px flag.
+- Maths: units upright with thin space, \cdot, decimal point, vectors and subscripts set correctly; one step per row; no red KaTeX.
+- Not re-run: check_layout/check_a11y (in the packet).
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
