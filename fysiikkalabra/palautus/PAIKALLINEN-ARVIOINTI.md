@@ -1,14 +1,16 @@
-# Arviointi ilman Apps Scriptiä: paikallinen arviointisivu
+# Arviointi ilman Apps Scriptiä: paikallinen arviointisivu (FY1–FY8)
 
 Eduespoossa Apps Script on estetty (Google Admin: *you do not have access to this service*, 5.11.2026). Siksi
-arviointi tehdään erillisellä HTML-tiedostolla **`arviointi-fy3.html`**. Opettaja avaa sen omalla koneellaan
+arviointi tehdään erillisellä HTML-tiedostolla, yksi jokaiselle kurssille: **`arviointi-fy1.html`** … **`arviointi-fy8.html`**
+(6.11.2026 alkaen kaikki kurssit; ohjeen esimerkit ovat FY3:sta, muut toimivat samoin). Opettaja avaa sen omalla koneellaan
 selaimessa (Chrome tai Edge). Tiedosto ei kuulu RuukkiLabraan eikä julkiseen sivustoon. Sivu ei käytä verkkoa eikä
 Googlen tai Microsoftin palveluja. Se lukee Drivesta ladatut palautukset ja tallentaa pisteet vain tämän selaimen
 muistiin.
 
 Sivulla on koko FY3: kaikki 16 lukua opetusjärjestyksessä (sama kuin FY3-moduulisivulla), ja niiden tehtävät. Jokaisessa
 FY3-luvussa on Tehtävät-otsikon rivillä painike **Lataa kaikki ratkaisut**. Painike lataa luvun tiedoston
-`fy3-<n>.ratkaisut.json`.
+`fy3-<n>.ratkaisut.json`. Painike on myös englanninkielisessä (*Download all solutions*) ja selkosuomen FY3:ssa. Tiedosto on
+samanlainen, joten kaikki kielet arvioidaan samalla sivulla.
 
 ## Käyttöönotto
 
@@ -17,12 +19,12 @@ FY3-luvussa on Tehtävät-otsikon rivillä painike **Lataa kaikki ratkaisut**. P
    Opiskelija palauttaa samalla lomakkeella jokaisen luvun erikseen, kun luku on tehty. Uusi palautus on uusi
    lomakevastaus. Sheetsiin linkittämistä ja Apps Scriptiä ei tarvita. Palautuskansio ja lomakkeen vastaukset vain
    nimetyille opettajille (KAYTTOONOTTO.md, kohta 5).
-2. **Tallenna arviointisivu** kerran omalle koneelle: `fysiikkalabra/palautus/arviointi-fy3.html` (repossa, myös
+2. **Tallenna arviointisivu** kerran omalle koneelle, opettamasi kurssin sivu, esim. `fysiikkalabra/palautus/arviointi-fy3.html` (repossa, myös
    projektin tiedostoissa). Avaa se kaksoisnapsauttamalla. Sivu toimii ilman verkkoa.
 3. **Lisää ryhmät** sivulla: kirjoita nimi (esim. FY3.1) ja paina **Lisää ryhmä**. Yksi ryhmä jokaista lomaketta kohti.
 4. **Lomakelinkit Ruukkilabraan**: lisää ryhmän lomakkeen vastaajalinkki (Lähetä → linkki, `forms.gle/…`) tiedostoon
-   `fysiikkalabra/palautukset.json`. Ruukkilabraan tulee sivu *Palautukset* (otsikko tiedostosta, esim.
-   *Palautukset · 1. periodi · lv 2026-27*), jossa on nappi jokaiselle ryhmälle. FY3-lukujen Tehtävät-rivillä on
+   `fysiikkalabra/palautukset.json` (myös periodi ja lukuvuosi). Ruukkilabraan tulee sivu *Palautukset* (esim.
+   *Palautukset · 1. periodi · lv 2026-27*, englanniksi *Submissions*), jossa on kaikki kurssit ja nappi jokaiselle ryhmälle. FY3-lukujen Tehtävät-rivillä on
    Lataa kaikki ratkaisut -napin vieressä nappi **Palauta**, joka vie tälle sivulle. Periodin vaihtuessa vaihda otsikko
    ja linkit. Sivu vain linkittää lomakkeisiin, se ei lataa mitään Googlelta.
 
