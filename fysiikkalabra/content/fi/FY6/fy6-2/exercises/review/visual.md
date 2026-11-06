@@ -1,20 +1,18 @@
-VERDICT: PASS
-CONTENT-HASH: 012dc69df8b5c15b
-ROUND: 3
+VERDICT: FAIL
+CONTENT-HASH: e2a4b4fa15ee78b7
+ROUND: 1
 
 ## Blocking
-(none)
+- [Major] fy6-2-L2-08 task text vs. option order — the task says "Jos suunnitelmassa ei ole virhettä, valitse viimeinen vaihtoehto", but on the page "Suunnitelmassa ei ole virhettä" stands third (Rivi 2, Rivi 3, Suunnitelmassa …, Rivi 1, Rivi 4); the page keeps an option last only when its text matches the no_error strings ("Laskussa ei ole virhettä" or "Päättelyssä ei ole virhettä", lang/fi.json) — the instruction points to the wrong option, so the student is misled — reword the option to "Päättelyssä ei ole virhettä" (or the task to "valitse vaihtoehto, jonka mukaan virhettä ei ole") and confirm in the render that it is last.
+- [Major] fy6-2-L2-08 Mallivastaus, the line ΔI = 0,010 · 140,0 mA + 2 · 0,1 mA — at 390 px the chain is 312 px wide in a 304 px box (kx-wide, scrolls without a cue), so the final "mA" is cut ("0,1 m/") — shorten the chain (for instance write the 140,0 mA as the reading in the sentence) or put it in two lines, so that it fits about 300 px.
 
 ## Polish
-- [Minor] data tables (L2-05, L2-07, L3-04) — numeric column headers sit at the right while values are left-aligned (template-wide) — align numeric cells with their headers.
-- [Minor] fy6-2-L3-04 Järkevyys — the sentence "Pienempien vastusten tapauksessa [box] mikä on lähes 6,00 V" is cut in two by the equation box — put the check in a sentence of its own or write the two lines inline.
-- [Minor] fy6-2-L1-08 — the task asks for the form U ± ΔU but the answer box takes only ΔU — optional: "Ilmoita ensin mittaustulos muodossa ..., kirjoita sitten vastauslaatikkoon ΔU".
-- [Minor] fy6-2-L1-08 — a level 1 task with the "% + n numeroa" rule is at the upper edge of level 1 (carried over from the old L1-08, same type).
+- [Minor] fy6-2-L2-08 feedback of "Suunnitelmassa ei ole virhettä" — it says "Suunnitelmassa on virhe", which gives the answer away to anyone who picks it as a guess — fine as a hint, but say "Tarkista virherajat" without the claim.
 
 ## Checked
-- Round 2 Blocking item resolved: solutions.md L1-08 Järkevyys (line 141) now reads "noin kolmasosa alueesta 20 V (5,98 : 20 = 0,30)"; 5,98 / 20 = 0,299, correct.
-- No other change since round 2 (only that sentence); the earlier checks stand: captures open-exercises-1280-6..8, open-exercises-L2-1280-8..9, open-exercises-L3-1280-6..7 and the maths recomputation (0,0499 V -> 0,05 V; 5,714 V; 6,29 µA; R = 117,71 Ω, ΔR 2,90 Ω).
-- Not available: 360 px captures of exercise cards (packet layout 360 px check ok).
+- Renders at 390 px of fy6-2-L2-08 with a wrong choice (feedback open) and the correct one, Vastaus and Näytä ratkaisu open: the order of options and the clipped chain were read from these. Overflow measured (page 390 = viewport, no element outside); the clip measured from the formula's own box (312 vs 304 px).
+- Text only: the distractors catch the chapter's warned mistake ("suurin alue aina paras"); the correct row is not identifiable by form; scope (range choice, fuse, OL, virheraja) is taught in the lesson; the paragraph splits in L3-01..03 read well (not rendered).
+- Not seen: 360 px and 1280 px captures.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 3 · Finnish 4 · accessibility 3

@@ -1,11 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 116daa2ae1100191
-ROUND: 3
+CONTENT-HASH: 38efe7d1d9cfde8d
+
 ## Blocking
-(none) The round-2 Blocking item is resolved: in fy6-5-L3-05 Sijoitus the "c) R_p ... = 250 Ω" paragraph now appears once (solutions.md line 202); a), b) and c) are separate paragraphs and Vastaus follows directly.
+(none)
+
 ## Polish
-- L1-08 (two resistors in series) is still harder than L2-01 (one resistor, same V_B = V_A - RI idea); consider swapping levels or giving L1-08 one resistor.
-- Plan item "silmukka väärään suuntaan, negatiivinen virta" is covered only by L2-07 (sign error); one sentence on a negative current in L3-04 c) would close it.
+- exercises.json:240 — the task practises parallel division (fy6-4) and the current law, not the chapter's potential or its warned mistake (branch current from the source voltage); acceptable as a YO form, but consider a version with a series resistor so the source-voltage slip becomes a distractor.
+- exercises.json:240 — wrong-choice feedback of 0,10 A and 0,15 A already states the right reason ("sama jännite"); a student who errs then sees stage two solved. Shorten both to the diagnosis of the slip.
+- exercises.json:240 — correct reason is the only one with "kääntäen verrannollinen"; paraphrase the others with the same register.
+
 ## Checked
-- Round 2 Blocking resolved (duplicate c) paragraph deleted); the remainder of L3-05 unchanged and consistent (4,0 V, 71,4 Ω, 250 Ω).
-- Round 2 checks carry over: lead-text paragraph lengths, L3-04 solution layout and values, L2-05 staged lead, levels/kinds/plan fit, Finnish.
+- Stage 1 correct feedback only says "Oikein. Valitse seuraavaksi perustelu" - no reason revealed.
+- Option and reason lengths balanced (reasons 85-88 characters); nothing hedged or uniquely uncertain; the true-but-irrelevant reason (current not consumed) is the lesson's other warned idea.
+- Numbers: R = 10 Ω, U = 3,0 V, branches 0,15 + 0,10 + 0,050 = 0,30 A; distractors 0,10 (equal split), 0,15 (reversed order), 0,30 (series) match their feedback.
+- No repeat of L2-03 (two resistors, main current asked) or the worked example; display lines at most 197 px.
+- Finnish and terms (haarautumispiste, pääjohdin) consistent.
+- Text only (no renders: packet screenshots were empty; I measured widths of the model-solution formulas with KaTeX in Chromium at 17 px, 390 px viewport).

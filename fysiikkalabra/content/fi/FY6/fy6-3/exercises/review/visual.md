@@ -1,22 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 4e821e3ca31d2886
-ROUND: 2
+CONTENT-HASH: 593f504a543bc1e6
+ROUND: 1
 
 ## Blocking
 
 ## Polish
-- [Minor] fy6-3-L3-05 Sijoitus (open-exercises-L3-1280-7) — still fragmented: R_20 in one box, R_40 as a loose line, R_60 and R_80 in the next, and a long Muuttujat/Mallijärjestely paragraph — put all four rows in one aligned block and split the paragraph into list lines.
-- [Minor] fy6-3-L2-05 Vastaus (open-exercises-L2-1280-7) — "kolme merkitsevää numeroa, koska epävarmuus on vain noin 2 Ω; epävarmuus on noin ΔR ≈ 2 Ω" repeats itself — drop the second clause.
-- [Minor] fy6-3-L2-05 — a graph task with no model figure; the solution describes the fitted line in words only — a small fitted-line plot would let the student check their drawing (carried over).
-- [Minor] data tables (all new) — numeric column headers sit centred, values left-aligned (template-wide).
+- [Minor] fy6-3-L1-09 option order — the figures appear as Kuvaaja A, D, B, C (letters stay with their figures, the order is shuffled), which reads oddly on a phone — keep the letters in order by lettering after the shuffle, if the template allows.
+- [Minor] fy6-3-L1-09 feedback of Kuvaaja A — the coordinate pair is set as two formulas, "(4,0 mA" and "8,0 V)", with a bare semicolon, and at 390 px it breaks inside the pair — set the pair as one formula ($(4{,}0\,\text{mA};\ 8{,}0\,\text{V})$ as in the solution, which renders whole).
+- [Minor] fy6-3-L1-09 figures — each graph is 273 px wide at 390 px, tick numbers about 11 px and gridlines 8 px apart in the vertical direction; readable, but the points the feedback quotes ((4,0 mA; 8,0 V)) have to be found among 24 gridlines — optional: grid every 2 V.
 
 ## Checked
-- Round 1 Blocking (L3-04, skipped 1,0 V row and false "600 Ω:sta") is resolved: Sijoitus now has "1,0 V : 0,1 mA = 10 kΩ" and Vastaus "10 kΩ:sta 31 Ω:iin" (open-exercises-L3-1280-5, -6); 0,5 V correctly excluded (I = 0).
-- open-exercises-1280-7 (L1-07 reordered choices, L1-08 task and answer chip)
-- open-exercises-L2-1280-7 (L2-05 Sijoitus and Vastaus after the wording change, L2-07 "Polkupyörän etulampun" task and table)
-- open-exercises-L3-1280-5, -6, -7, -8 (L3-04 solution and Järkevyys, L3-05 task, table, solution; Vastaus "38 % (laskettu 38,1 %)" now consistent)
-- Not available: 360 px captures of exercise cards (packet layout 360 px check ok).
-- Maths re-computed against the table: R_A ≈ 75 Ω; R_B 16–37 Ω; R_C 10 kΩ, 600 Ω, 95 Ω, 31 Ω; 600 / 26 = 23; 2,762 / 2,000 -> 38,1 %; steps 0,262, 0,251, 0,249 Ω.
+- Renders at 390 px of fy6-3-L1-09 with the correct choice and with a wrong one (Kuvaaja A, feedback open), Vastaus and Näytä ratkaisu open; the four option figures seen at full size and measured (viewBox 600 x 360, label 24 px, scale 0.46 at 390 and 0.41 at 360).
+- Overflow: page scroll width 390, no element outside the viewport, widest formula chain 247 px (solution) and 230 px (feedback).
+- Figure descriptions (aria-label) read from the source: full axis description plus the curve's points, same axes and weight in all four, A curved, B slope 0,5 kΩ (I : U), C correct (9 V at 4,5 mA), D flat at 2 V — the data match the feedback.
+- Text only: distractors catch the I : U slope inversion and the "value as height" mistake the lesson names; the correct graph is not identifiable by its description; no reason stage.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

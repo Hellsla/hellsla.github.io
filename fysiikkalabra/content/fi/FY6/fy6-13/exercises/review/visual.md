@@ -1,19 +1,20 @@
-VERDICT: PASS
-CONTENT-HASH: 314e222bbcc3a430
+VERDICT: FAIL
+CONTENT-HASH: 73c55536e9b48ef1
 
-Round 2.
+Delta: new L1-09 (13-9, true-or-false list of five statements).
 
 ## Blocking
-(none)
+- [Major] 13-9 statement 1 feedback, `Q = CU = 100 μF · 12 V = 1,2 mC` — one inline formula 307 px wide at 390 px in an indented feedback box; the card clips it to "= 1,2" and the unit mC is lost — the unit of the central result is unreadable — split it (`Q = CU` / `= 100 μF · 12 V = 1,2 mC`) or drop the substitution.
+- [Major] 13-9 model answer, `W = 1/2 C U² = 1/2 · 100 · 10^-6 F · (12 V)²` — 338 px wide at 390 px, clipped at "(12" (the right edge 381 px vs 347 px card edge); the rest of the chain and the value are cut off — the 300 px rule is broken — break the chain into `W = ½CU²` and the substitution on its own line.
 
 ## Polish
-- [Minor] solutions L3-05, Sijoitus — "Lasille $U = 350\,\text{V}$," päättyy pilkkuun ennen display-lohkoa (renderissä pilkku roikkuu rivin lopussa) — kirjoita "Lasille $U = 350\,\text{V}$, ja $C$ ja $W$ ovat" tai poista pilkku (kierrokselta 1, "Lasi:" korjattu, pilkku jäi).
-- [Minor] solutions L1-07 (taso 1) — sisältö (varaus vakio, jännite kapasitanssin muuttuessa) on lähempänä tasoa 2; ok monivalintana, ei vaadi muutosta.
+- [Minor] 13-9 model answer closing paragraph gives the five statement verdicts as one run-on paragraph ("1 tosi: ... 2 epätosi: ..."); make it five short lines.
+- [Minor] Statements 3 and 5 share the "24 V" scenario; fine, but both open with the same clause, so read quickly they look alike.
 
 ## Checked
-- Kierroksen 1 Polish: L2-06:n väärä vaihtoehto "1–2 s" ja palaute ($2{,}0\,\text{V}$) täsmäävät taulukkoon (3,5 → 5,5 V); L3-05:n "Lasi:" korjattu; L2-05:n ja L2-06:n kuvaajanluku ("(12 V; 566 µC)", "(12 s; 1200 V)") sopii sovitettuun suoraan.
-- Muuttuneet kohdat (vaihtoehtojen järjestys L1/L2, L2-06 vastaus ja palaute, L1-05/L2-04 Vastaus-rivi) luettu diffistä ja laskettu: 144 mJ, 47,2 µF, 100 V/s oikein.
-- Avatut kaappaukset 1280 px: open-exercises-L2-1280-7 ja -8 (13-14 taulukko ja valinta, 13-15), L3-1280-8 (13-20 ratkaisu). Ei ylivuotoa, taulukko ja kaavat renderöityvät ehjinä. 360 px:n tehtäväkaappauksia ei ole; layout 360 px ok paketissa.
+- Renders (own script, 390 px and 360 px, every statement answered correctly, feedback, answer and solution open): card layout, true/false buttons and feedback inside the card; overflow found in the two formulas above (and at 360 px also more).
+- Rendered: no feedback of a correct statement gives away a later stage; distractor statements catch the chapter's mistakes (current through the dielectric, C depends on U, W = QU instead of ½QU).
+- Text only: compound words and the order of true/false (T, F, F, F, T) read in the JSON.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 3 · Finnish 4 · accessibility 3

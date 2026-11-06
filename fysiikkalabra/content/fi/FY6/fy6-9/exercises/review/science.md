@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 3bdcdbebb2c499c3
-Round 2: full review of the exercise set after the round-1 fixes (commit e6301a0ac); round 1 had no Blocking items.
+CONTENT-HASH: b79bfc3f3f8bf015
+Round: 1. One new YO-skill task, fy6-9-L1-09 (type 7, Yksikkö ja dimensio); the rest of the set was PASS before and is unchanged.
 
 ## Blocking
 
 ## Polish
-- solutions.md:160 (L2-06) — "kaksi merkitsevää numeroa kuten jännite-erotuksessa ... 0,5 V": 0,5 V has one significant figure, so it cannot justify two. Write "erotus 0,5 V on vain yhden desimaalin tarkka, joten tulos 1,5 Wh on likiarvo (noin 2 Wh)", or give the voltages as 4,20 V and 3,70 V in the task.
-- docs/exercise-bank/FY6.md:55 — still says "virta kulkee akun sisällä $-\to+$" during charging, which is the discharging direction (L1-07, + → −, is right). The plan's CC–CV graph and error claim are still listed though L2-07 and L2-06 replaced them. Update the plan.
+- solutions.md:156 — "Lauseke UQ/t on latauksen keskimääräinen teho" is not exact. The lesson teaches that the charger gives more than the battery stores (η < 100 %). Write "akkuun varastoitumisen keskimääräinen teho", as the option's own feedback (exercises.json, UQ/t) already says.
+- exercises.json:115–140 (fy6-9-L1-09) — UQ is the common core of three options (UQ, UQ/t, UQt), a mild form cue. A fourth distractor without the product, such as U/Q or Qt, would remove it. It also overlaps L1-06 (Ah is not energy); the unit reasoning makes it a different task, so taste only.
 
 ## Checked
-- Hash 3bdcdbebb2c499c3 at start and end. Diff since 048b5f229 read in full: only option reordering, wording and the round-1 Polish items changed.
-- Round-1 Polish fixed: L3-04 now states "ladattiin täyteen samasta tyhjästä tilasta"; answer 77.45 matches the solution's 77,45 %; L3-05 rounding now cites R_kok = 0,40 Ω.
-- L3-04 recomputed: W = 8,52 / 9,62 Wh, η = 77,45 % (87,5 % at 0,50 A), R_s = 0,10 Ω.
-- L2-06 recomputed: (4,2 − 3,7) V · 2,0 A · 1,5 h = 1,5 Wh; 11,1 + 1,5 = 12,6 Wh; the added a) answer is right.
-- L1-06, L1-07 after reordering: exactly one correct option (index 2 and 3), the `answer` text equals it, every distractor and its feedback still right.
-- answers.py re-run: all 18 numeric answers agree with exercises.json.
-- Levels, scope and notation unchanged from round 1; no duplicate of an existing task.
+- Hash b79bfc3f3f8bf015 at start and end.
+- All answers.py values rerun in one call: no mismatch; the comment edit in answers.py is right.
+- Units: Q → Ah (charge), UQ → V·Ah = Wh (energy), UQ/t → W, UQt → Wh·h. Exactly one option is energy.
+- The Q distractor is the lesson's warned mistake (Ah taken as energy). Its feedback "Akku ei varastoi varausta" matches the Tiivistelmä.
+- W = UQ with U the nominal voltage, as in the brief's Kaava; t is given on purpose as unneeded data, and the solution says so.
+- Not identifiable by length or hedging; the correct feedback gives the unit only.
+- Formulas measured with KaTeX in Chrome at 390 px (formula widths only): all short.

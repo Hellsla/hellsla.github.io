@@ -1,21 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 6cb1e7ee5db97fdc
-
-Round 2. Round 1 had no Blocking items; nothing blocking arises from the changes.
+CONTENT-HASH: 366b70447801ec08
+ROUND: 1 (delta)
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- [Minor] 10-13 (L2-05) Vastaus — "kuvaajasta luettu arvo voi poiketa hieman" still speaks of reading from a graph, but the solution now fits by least squares (s = Σxy : Σx²); write "sovitetusta suorasta laskettu arvo".
-- [Minor] 10-13, 10-14 (graph tasks, carried over) — no reference plot in the solution; add a small (1:r², F) figure with data markers and the line through the origin for 10-13.
-- [Minor] 10-13 Muunnokset — "jne., ja etäisyydet metreinä" / "jne.; lopuksi 1 C = 10⁹ nC" reads awkwardly; write one sentence ("Muut rivit muunnetaan samoin; lopuksi …").
-- [Minor] 10-20 (L3-05) Vastaus c) — "langat ovat yhä keskenään yhtä suuressa kulmassa pystysuoraan nähden" is clumsy; write "kummankin langan kulma pystysuoraan on yhä sama".
-- [Minor] 10-20 a) (carried over) — asks "Piirrä … voimat" but the solution describes the diagram in words only; add a small force figure.
+- [Minor] fy6-10-L2-08 options — three options read "Voima pienenee arvoon ..." and share digits with the correct 2/9 (1/9, 2/3), while "kasvaa 18F" stands apart; mild shared-element tell, not blocking.
+- [Minor] fy6-10-L2-08 solution — final paragraph (about 75 words) explains three distractors in one block; split.
+- [Minor] fy6-10-L3-02 (unchanged text, only paragraph split) — at 390 px the Sijoitus rows (ke² and Gm_e m_p chains) and the Järkevyys estimate are wider than the card and scroll or clip sideways; carried over, check_layout is clean.
 
 ## Checked
-- Round-1 Polish resolved: inline \dfrac replaced by colon form in 10-7/10-14 Periaate; q₁, q₂ and r conversions in 10-15 each given with units; ranges in 10-13 Järkevyys now "välillä … ".
-- Opened open-exercises-L2-1280-7 (10-13 end, 10-14 start), L3-4 (10-18 solution), L3-6 and L3-8 (10-19 end, 10-20 task split into paragraphs and Vastaus): chains, boxes, text blocks fine, nothing clipped. Chips of all 8 new tasks match exercises.json. No 360 px exercise capture exists.
+- Rendered at 390 px (all four options, solution open) L2-08 and L3-02: L2-08 no overflow, chains one per row, fractions legible; L3-02 task text split fine.
+- Text only: 2/9 recomputed; feedback does not give the reason before commitment.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

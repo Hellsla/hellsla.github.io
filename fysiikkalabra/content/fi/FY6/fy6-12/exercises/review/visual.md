@@ -1,19 +1,20 @@
-VERDICT: PASS
-CONTENT-HASH: e733db822fea11fb
+VERDICT: FAIL
+CONTENT-HASH: 2e352fcfcb383439
 
-Delta: one feedback sentence in 12-6 (L1-06, choice 4) and core marks on 12-4, 12-6, 12-8, 12-11.
+Delta: new L2-08 (12-16, find-the-error choice) and three L3 texts split into paragraphs.
 
 ## Blocking
-(none)
+- [Major] 12-16 model answer (solution), line `U = V_B - V_A = 120 V - 30 V = 90 V` — the single inline formula is 326 px wide at 390 px and the card clips it: it ends "= 90" with "V" cut off (the same line is 369 px right edge vs 347 px card edge) — the key corrected value is unreadable and the 300 px rule is broken — break it over two lines (`U = V_B - V_A` / `U = 120 V - 30 V = 90 V`) or use an aligned block.
 
 ## Polish
-- [Minor] exercises.json L1-06 choice 4 feedback — "kun potentiaalin nollakohta on negatiivisella levyllä" refers to a plate the task never mentions (it speaks only of "homogeeninen sähkökenttä"); e.g. "…$V = Ex$, kun kenttä on kahden levyn välissä, potentiaalin nollakohta on negatiivisella levyllä ja $x$ on etäisyys siitä."
-- [Minor] (carried over) 12-13 answer chip "U ≈ 30 V" vs box 30,1 V; 12-13 "275,7 V·cm"; 12-19 six formulas in one paragraph; 12-13 no reference plot.
+- [Minor] 12-16 the options appear in the order Rivi 1, Rivi 4, Rivi 3, Rivi 2 although the task says "rivi riviltä"; keep row order (last option stays last).
+- [Minor] 12-16 the correct option is the longest row label (39 vs 24-33 characters); shorten it or lengthen others, e.g. "Rivi 3: liike-energia".
+- [Minor] 12-16 solution `E_k = 1,442 ... ≈ 1,4 ...` is exactly 304 px, with no margin at 390 px; split it.
 
 ## Checked
-- Own captures of preview/fy6-12.html, 12-6 with choice 4 committed (feedback shown) at 360, 390 and 1280 px: the new sentence sits inside the task card under its option, $V = Ex$, $x$ and $qV$ render on one line each, no overflow (page width = viewport), Vastaa and the model answer follow in order.
-- Core marks: the "Ydintehtävä" chip renders beside the task number on 12-6 (capture), and the built page carries it on exactly 12-4, 12-6, 12-8 and 12-11 (four `.ex-core`).
-- Screenshots refreshed (`screenshot.py fy6-12 --if-stale`); deterministic checks in the packet clean.
+- Renders (own script, 390 px and 360 px, correct option committed, all feedback and answer and solution open): 12-16 card, overflow measured (page width = viewport; clipping inside the card found for the U line, at 360 px also the E_k line).
+- Rendered: option feedback (the correct one starts "Oikein, tämä rivi on väärin" and gives no further stage), distractors catch row 1 direction, row 2 sign of E_p, row 4 unit factor, no-error option.
+- Text only: Finnish compound words and glossary (potentiaaliero, potentiaali) consistent; the L3-01 and L3-03 paragraph splits (no figure or formula change, read in the diff).
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 3 · Finnish 4 · accessibility 3

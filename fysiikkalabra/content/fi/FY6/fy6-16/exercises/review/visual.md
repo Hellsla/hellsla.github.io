@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 81bbe5b3454f7162
+CONTENT-HASH: d7cc99d546a9be81
 
-Round 2.
+Delta: new L2-08 (16-16, order-of-magnitude charging time, four options).
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions L2-05/L2-07/L3-04/L3-05, Vastaus — a)-, b)- ja c)-vastaukset ovat Vastaus-rivin jälkeen irrallisina kappaleina; toimii, mutta rivin voisi otsikoida "Vastaukset" kuten muissa luvuissa.
-- [Minor] solutions L3-04, Vastaus — "$390\,\text{€}$ on kahden merkitsevän numeron tarkkuudella" — selkeämpi: "koska sähkön kustannus $390\,\text{€}$ tunnetaan kymmenen euron tarkkuudella".
+- [Minor] 16-16 correct feedback `t = W_akku/(ηP)` is set as an inline small fraction (`\tfrac`), so the subscript "akku" is tiny at 390 px; write `t = W_akku : (ηP)` or use a display block.
+- [Minor] 16-16 option order is increasing (0,015 / 0,15 / 15 / 15 000 h), as it should; the correct option sits third, a plain `noin 15 h` with no length or hedging cue.
 
 ## Checked
-- Kierroksen 1 Polish: L1-06:n kömpelö palaute korvattu laskulla $60\,\text{kWh} : 11\,\text{kW} \approx 5{,}5\,\text{h}$ (oikein), L2-07:n yksiköt symboleina ($\text{kW}$) ja L3-04:n vastauksen pyöristys perusteltu.
-- Muutetut tekstit: L2-06 (huomio "teho pysyy tunnin ajan taulukon arvossa" ja c-ratkaisun huomautus), L2-07 (mittausjakso $0\text{–}3{,}0\,\text{h}$, keskiteho 7,6 kW) lasketut: 22,85 kWh, 7,617 kW, 1370,1 €, 780 € täsmäävät.
-- Avatut kaappaukset 1280 px: open-exercises-L2-1280-9 (16-15 taulukko, kuvaajanluku, kaavat) ja L3-1280-1 (16-16). Ei ylivuotoa, taulukko ja kaavat ehjinä.
+- Renders (own script, 390 px and 360 px, correct option committed, all feedback, answer and solution open): no overflow, the aligned display `t = ...` is 286 px inside its scroll box (no clipping), unit figures and spacing correct.
+- Rendered: every distractor feedback names the exact slip (kWh against W, 85 against 0,85, Wh against kW) without revealing the correct value early; the correct feedback is short and inline formula chain fits.
+- Text only: compound words (hyötysuhde, latauskaapeli, suuruusluokka) spelled correctly.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5

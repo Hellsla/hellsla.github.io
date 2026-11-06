@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 116daa2ae1100191
-Round: 3. Round-2 Blocking item (duplicated c) paragraph in L3-05 Sijoitus) is resolved: the c) calculation now appears once, after the a) and b) paragraphs.
+CONTENT-HASH: 38efe7d1d9cfde8d
+Round: 1 (new task fy6-5-L2-08, two-stage choice with reasons; the rest of the set was PASS before and is unchanged).
 
 ## Blocking
 
 ## Polish
-- docs/exercise-bank/FY6.md plan, level 3 (carried over from round 2) — the plan's error analysis "silmukka väärään suuntaan → negatiivinen virta" is still not in the set (L3-05 replaces it). Update the plan, or add one c) item to L3-04: "jos I₃ olisi oletettu toiseen suuntaan, ratkaisu antaisi −0,10 A; mitä merkki tarkoittaa?"
+- content/fi/FY6/fy6-5/exercises/exercises.json:261 — no distractor carries this chapter's own warned mistakes (a resistor uses up current; the source voltage used for a branch); the task is mostly fy6-4 parallel-circuit physics. Optional: make the 0,15 A option's feedback name the "virta kuluu ensimmäisessä haarassa" idea, or add a series resistor in a later task so the source-voltage mistake can be a distractor.
 
 ## Checked
-- Hash 116daa2ae1100191 at start and end.
-- Only edit since round 2: the duplicated c) paragraph in L3-05 Sijoitus was deleted. Nothing else touched; the physics is unchanged.
-- Recomputed in my own script: L3-05 R_p = 71,4 Ω and R_k = 250 Ω; V_P = 6,00 V unloaded and 4,0 V with a 100 Ω load. All agree with solutions.md and answers.py.
-- L3-04 values (I₂ = 0,30 A, I₁ = 0,20 A, I₃ = 0,10 A, 3,3 W = 3,3 W) and the round-2 numeric checks (L2-05 0,59 A; L2-06 40 Ω; L2-07 −3,0 V) are unchanged and still correct.
-- The L3-05 a) reasoning (series, voltage law, load lowers the potential) and the Vastaus statement about smaller and larger load resistance are right.
+- Hash 38efe7d1d9cfde8d at start and end.
+- answers.py run against exercises.json: all 18 numeric answers agree within tolerance (one python call); the new comment line in answers.py describes L2-08 correctly.
+- L2-08 recomputed: 1/R_k = 1/20 + 1/30 + 1/60 = 6/60 1/Ω, R_k = 10 Ω, U = 3,0 V, I = 0,15 / 0,10 / 0,050 A, sum 0,30 A. Exactly one choice and one reason correct.
+- Wrong choices: equal split (0,10 A), largest current to largest R (0,15 A), full current in every branch (0,30 A); each feedback says why with I = U/R or the current law. Wrong reasons: equal split by the junction, series-type voltage division, and a true statement that does not explain (current law sum).
+- The correct choice's feedback only says "Oikein. Valitse seuraavaksi perustelu" and does not give the reason away; the four reasons are of similar length and form, none alone hedged.
+- Ideal source and wires stated; the unknown source voltage forces the R_k route, which the lesson teaches (Kirchhoff's current law, same voltage over parallel branches).
+- Inline formula widths measured (KaTeX render at 17 px, 1.21 em, own script): widest 292 px (solutions.md current-law sum), under 300 px. Page not rendered; the rest from text.
