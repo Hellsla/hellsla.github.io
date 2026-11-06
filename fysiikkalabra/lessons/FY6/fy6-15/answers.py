@@ -28,7 +28,7 @@ a["fy6-15-L3-02"] = U / (1.5e3 + 100e3) * 1e3              # body 1,5 kOhm + sho
 U_step = 1200 / 2.0 - 1200 / 3.0                           # step voltage 200 V
 a["fy6-15-L3-03"] = U_step / 4.0e3 * 1e3                   # foot to foot 4,0 kOhm: I = 200 V : 4,0 kOhm = 50 mA
 # Exercise-bank additions (L1-06, L1-07 and L2-07's written part are multiple choice or text; no number)
-# YO-skill form (teacher 2026-11-05): L1-09 is an ordering task (no number); I = U : R = 1,2 / 5,0 / 144 / 40 mA for A / B / C / D
+# YO-skill form (teacher 2026-11-05): L1-09 is an ordering task (no number); I = U : R = 1,2 / 5,0 / 140 (143,75) / 40 mA for A / B / C / D
 a["fy6-15-L1-08"] = 3.0e6 * 2.0e-3 / 1e3                   # air gap 2,0 mm: U_max = E_max d = 6000 V = 6,0 kV
 R_55 = [55.0, 0.90]                                        # kOhm: dry skin + rubber shoes, and bathtub; same 230 V, so I_4 : I_1 = R_1 : R_4
 a["fy6-15-L2-05"] = (U / (R_55[1] * 1e3)) / (U / (R_55[0] * 1e3))   # 255,6 mA : 4,18 mA = 61,1 times

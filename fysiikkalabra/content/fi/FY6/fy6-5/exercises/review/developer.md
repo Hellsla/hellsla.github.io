@@ -1,5 +1,5 @@
 VERDICT: DONE
 
-Round 1 (lint_lesson.py and check_solutions.py fy6-5 clean; answers.py unchanged, all answers verified).
-- exercises.json: L3-03 now says the 20 Ω resistor sits between the plus pole and the lamps, asks about the junction between resistor and lamps, and states that source and wire resistances are ignored; point letters A, B as maths.
-- solutions.md: L3-03 Annettu, Kysytty and Periaate match the clarified task (ideal source and wires stated); L1-04 Järkevyys is now a real check (drop below typical source voltage, unit); L1-05 Vastaus has no stray "; arvot luetaan", it is a separate sentence; point letters as maths.
+solutions.md (L2-08): the current-law check is split: "haarojen virtojen summa on 0,15 A + 0,10 A + 0,050 A, eli 0,30 A".
+exercises.json (L2-08): wrong first-stage feedback no longer gives the reason: 0,10 A says the junction does not split the current evenly when the resistances differ; 0,15 A says a larger resistance opposes the current more, not less. The correct reason is reworded to the same register as the distractors ("... joten pienemmän resistanssin haaran kautta kulkee suurempi virta"); reason lengths 88–92 characters.
+answers.py unchanged. check_lesson, check_solutions: ok.

@@ -262,18 +262,18 @@
         "error",
         "experiment"
       ],
-      "text": "Piirissä on $4{,}5\\,\\text{V}$:n paristo ja lamppu. Opiskelija mittaa lampun virran ja jännitteen kahdella yleismittarilla ja kirjoittaa mittaussuunnitelman. Lukemat ovat esimerkkiarvoja.\n\nVirta-alue $200\\,\\text{mA}$: resoluutio $0{,}1\\,\\text{mA}$, virheraja $\\pm(1{,}0\\,\\% + 2\\ \\text{numeroa})$.\n\nVirta-alue $10\\,\\text{A}$: resoluutio $0{,}01\\,\\text{A}$, virheraja $\\pm(2{,}0\\,\\% + 3\\ \\text{numeroa})$.\n\nRivi 1: virtamittari kytketään sarjaan lampun kanssa, koska mitattavan virran on kuljettava mittarin läpi.\n\nRivi 2: virran mittaus aloitetaan alueelta $10\\,\\text{A}$, koska virran suuruusluokkaa ei vielä tiedetä. Näyttö on $0{,}14\\,\\text{A}$.\n\nRivi 3: lopullinen virta luetaan alueelta $10\\,\\text{A}$, koska suurella alueella lukeman virheraja on pienempi.\n\nRivi 4: jännitemittari kytketään lampun rinnalle, ja lukema $4{,}38\\,\\text{V}$ luetaan alueelta $20\\,\\text{V}$, koska se ei mahdu alueelle $2\\,\\text{V}$.\n\nMikä rivi on väärin? Jos suunnitelmassa ei ole virhettä, valitse viimeinen vaihtoehto.",
+      "text": "Piirissä on $4{,}5\\,\\text{V}$:n paristo ja lamppu. Opiskelija mittaa lampun virran ja jännitteen kahdella yleismittarilla ja kirjoittaa mittaussuunnitelman. Lukemat ovat esimerkkiarvoja.\n\nVirta-alue $200\\,\\text{mA}$: resoluutio $0{,}1\\,\\text{mA}$, virheraja $\\pm(1{,}0\\,\\% + 2\\ \\text{numeroa})$.\n\nVirta-alue $10\\,\\text{A}$: resoluutio $0{,}01\\,\\text{A}$, virheraja $\\pm(2{,}0\\,\\% + 3\\ \\text{numeroa})$.\n\nRivi 1: virtamittari kytketään sarjaan lampun kanssa, koska mitattavan virran on kuljettava mittarin läpi.\n\nRivi 2: virran mittaus aloitetaan alueelta $10\\,\\text{A}$, koska virran suuruusluokkaa ei vielä tiedetä. Näyttö on $0{,}14\\,\\text{A}$.\n\nRivi 3: lopullinen virta luetaan alueelta $10\\,\\text{A}$, koska suurella alueella lukeman virheraja on pienempi.\n\nRivi 4: jännitemittari kytketään lampun rinnalle, ja lukema $4{,}38\\,\\text{V}$ luetaan alueelta $20\\,\\text{V}$, koska se ei mahdu alueelle $2\\,\\text{V}$.\n\nMikä rivi on väärin? Jos päättelyssä ei ole virhettä, valitse viimeinen vaihtoehto.",
       "answer": "Rivi 3: lopullisen virran mittausalue",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
           "text": "Rivi 1: virtamittarin kytkentä",
-          "feedback": "Rivi 1 on oikein: virtamittari mittaa sen läpi kulkevan virran, joten piiri avataan ja mittari asetetaan aukkoon sarjaan. Jos rivin luulee virheelliseksi, ajattelee, että virtamittari kytketään rinnalle kuten jännitemittari; silloin se tekisi oikosulun."
+          "feedback": "Rivi 1 on oikein: virtamittari mittaa sen läpi kulkevan virran, joten piiri avataan ja mittari asetetaan aukkoon sarjaan. Jos pidät riviä virheellisenä, ajattelet ehkä, että virtamittari kytketään rinnalle kuten jännitemittari; silloin se tekisi oikosulun."
         },
         {
           "text": "Rivi 2: virran mittauksen aloitusalue",
-          "feedback": "Rivi 2 on oikein: kun suuruusluokkaa ei tiedetä, aloitetaan suurimmalta alueelta, jotta liian suuri virta ei polta sulaketta. Jos rivin luulee virheelliseksi, sekoittaa aloitusalueen ja sen alueen, jolta lopullinen lukema luetaan."
+          "feedback": "Rivi 2 on oikein: kun suuruusluokkaa ei tiedetä, aloitetaan suurimmalta alueelta, jotta liian suuri virta ei polta sulaketta. Jos pidät riviä virheellisenä, sekoitat ehkä aloitusalueen ja sen alueen, jolta lopullinen lukema luetaan."
         },
         {
           "text": "Rivi 3: lopullisen virran mittausalue",
@@ -282,11 +282,11 @@
         },
         {
           "text": "Rivi 4: jännitteen kytkentä ja alue",
-          "feedback": "Rivi 4 on oikein: jännitemittari tulee lampun rinnalle, ja alueella $2\\,\\text{V}$ näyttö näyttää enintään $1{,}999\\,\\text{V}$, joten $4{,}38\\,\\text{V}$ antaisi OL. Jos rivin luulee virheelliseksi, ajattelee, että pienin alue on aina paras, vaikka lukema ei mahdu sille."
+          "feedback": "Rivi 4 on oikein: jännitemittari tulee lampun rinnalle, ja alueella $2\\,\\text{V}$ näyttö näyttää enintään $1{,}999\\,\\text{V}$, joten $4{,}38\\,\\text{V}$ antaisi OL. Jos pidät riviä virheellisenä, ajattelet ehkä, että pienin alue on aina paras, vaikka lukema ei mahdu sille."
         },
         {
-          "text": "Suunnitelmassa ei ole virhettä",
-          "feedback": "Suunnitelmassa on virhe. Laske virran virheraja kummallakin virta-alueella: suurempi alue ei anna pienempää virherajaa, kun lukema mahtuu myös pienemmälle alueelle."
+          "text": "Päättelyssä ei ole virhettä",
+          "feedback": "Tarkista virherajat: laske virran virheraja kummallakin virta-alueella."
         }
       ]
     }

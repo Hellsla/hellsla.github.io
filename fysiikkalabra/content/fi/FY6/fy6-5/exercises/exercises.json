@@ -255,11 +255,11 @@
         },
         {
           "text": "$0{,}10\\,\\text{A}$",
-          "feedback": "Tässä pääjohtimen virta on jaettu tasan kolmeen haaraan. Haaroilla on sama jännite, joten Ohmin lain mukaan pienemmän resistanssin haaraan kulkee suurempi virta."
+          "feedback": "Tässä pääjohtimen virta on jaettu tasan kolmeen haaraan. Haarautumispiste ei jaa virtaa tasan, kun haarojen resistanssit ovat erisuuret."
         },
         {
           "text": "$0{,}15\\,\\text{A}$",
-          "feedback": "Tässä suurimman resistanssin haaraan on oletettu suurin virta. Sama jännite ajaa kuitenkin suurimman virran pienimmän resistanssin haaraan, koska $I = \\tfrac{U}{R}$."
+          "feedback": "Tässä suurimman resistanssin haaraan on oletettu suurin virta. Suurempi resistanssi kuitenkin vastustaa virtaa enemmän, ei vähemmän."
         },
         {
           "text": "$0{,}30\\,\\text{A}$",
@@ -273,7 +273,7 @@
           "feedback": "Virtalaki sanoo vain, että haarojen virtojen summa on tuleva virta. Se ei kerro jakoa. Jaon ratkaisee haarojen yhteinen jännite ja kunkin haaran resistanssi."
         },
         {
-          "text": "Haaroilla on sama jännite, joten haaran virta on kääntäen verrannollinen sen resistanssiin.",
+          "text": "Haaroilla on sama jännite, joten pienemmän resistanssin haaran kautta kulkee suurempi virta.",
           "correct": true,
           "feedback": "Oikein: kokonaisresistanssi on $10\\,\\Omega$, joten haarojen jännite on $3{,}0\\,\\text{V}$ ja $I_3 = \\tfrac{3{,}0\\,\\text{V}}{60\\,\\Omega} = 0{,}050\\,\\text{A}$."
         },

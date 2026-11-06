@@ -205,8 +205,8 @@ Muut kohdat: a) paristoryhmän lähdejännite on $E \approx 6{,}11\,\text{V}$. b
 
 ## fy6-8-L2-08
 **Kysytty:** mikä johtopäätös pariston lähdejännitteestä $E$ ja sisäisestä resistanssista $R_\text{s}$ on taulukon mittausten perusteella perusteltu.
-**Periaate:** Napajännite on $U = E - R_\text{s} I$, joten mittauspisteiden $(I, U)$ pitäisi asettua laskevalle suoralle. Suora leikkaa pystyakselin kohdassa $U = E$, ja sen kulmakerroin on $-R_\text{s}$. Kulmakerroin luetaan kahdesta kaukana toisistaan olevasta pisteestä. Pisteiden poikkeamia suorasta verrataan mittausepävarmuuteen $\pm 0{,}01\,\text{V}$.
-**Mallivastaus:** Napajännitteen pudotukset peräkkäisten mittausten välillä, kun virta kasvaa $0{,}20\,\text{A}$, ovat $0{,}08\,\text{V}$, $0{,}07\,\text{V}$, $0{,}09\,\text{V}$ ja $0{,}08\,\text{V}$. Ne eroavat toisistaan enintään $0{,}02\,\text{V}$, mikä mahtuu kahden lukeman epävarmuuteen $2 \cdot 0{,}01\,\text{V}$. Pisteet sopivat siis yhdelle suoralle, eikä mittauksista voi päätellä sisäisen resistanssin muuttuvan.
+**Periaate:** Napajännite on $U = E - R_\text{s} I$, joten mittauspisteiden $(I, U)$ pitäisi asettua laskevalle suoralle. Suora leikkaa pystyakselin kohdassa $U = E$, ja sen kulmakerroin on $-R_\text{s}$. Kulmakerroin luetaan suoralta kahdesta kaukana toisistaan olevasta kohdasta; tässä ääripisteet ovat suoralla. Pisteiden poikkeamia suorasta verrataan mittausepävarmuuteen $\pm 0{,}01\,\text{V}$.
+**Mallivastaus:** Napajännitteen pudotukset peräkkäisten mittausten välillä, kun virta kasvaa $0{,}20\,\text{A}$, ovat $0{,}08\,\text{V}$, $0{,}07\,\text{V}$, $0{,}09\,\text{V}$ ja $0{,}08\,\text{V}$. Ne eroavat toisistaan enintään $0{,}02\,\text{V}$. Kahden pudotuksen erotus riippuu kolmesta tai neljästä lukemasta, joten sen epävarmuus on jopa $4 \cdot 0{,}01\,\text{V} = 0{,}04\,\text{V}$, ja ero mahtuu siihen. Pisteet sopivat siis yhdelle suoralle, eikä mittauksista voi päätellä sisäisen resistanssin muuttuvan.
 
 Kulmakerroin ääripisteistä:
 
@@ -224,4 +224,6 @@ $$\begin{aligned}
 &\phantom{E} = 1{,}55\,\text{V}
 \end{aligned}$$
 
-Johtopäätös: lähdejännite on noin $1{,}55\,\text{V}$ ja sisäinen resistanssi noin $0{,}40\,\Omega$. Pienimmän virran lukema $1{,}51\,\text{V}$ on napajännite, ei lähdejännite. Yhden mittauksen osamäärä, esimerkiksi $1{,}19\,\text{V} : 0{,}90\,\text{A} \approx 1{,}3\,\Omega$, on kuorman resistanssi eikä sisäinen resistanssi. Epävarmuus vaikuttaa myös tulokseen: jos ääripisteiden lukemat ovat $0{,}01\,\text{V}$ vinossa vastakkaisiin suuntiin, kulmakertoimesta tulee $0{,}30\,\text{V} : 0{,}80\,\text{A} \approx 0{,}38\,\Omega$ tai $0{,}34\,\text{V} : 0{,}80\,\text{A} \approx 0{,}43\,\Omega$, joten sisäinen resistanssi on noin $0{,}4\,\Omega$.
+Johtopäätös: lähdejännite on noin $1{,}55\,\text{V}$ ja sisäinen resistanssi noin $0{,}40\,\Omega$. Pienimmän virran lukema $1{,}51\,\text{V}$ on napajännite, ei lähdejännite. Yhden mittauksen osamäärä, esimerkiksi $1{,}19\,\text{V} : 0{,}90\,\text{A} \approx 1{,}3\,\Omega$, on kuorman resistanssi eikä sisäinen resistanssi. Jos molemmat virheet tehdään, saadaan $1{,}51\,\text{V}$ ja $1{,}3\,\Omega$.
+
+Epävarmuus vaikuttaa myös tulokseen: jos ääripisteiden lukemat ovat $0{,}01\,\text{V}$ vinossa vastakkaisiin suuntiin, kulmakertoimesta tulee $0{,}30\,\text{V} : 0{,}80\,\text{A} \approx 0{,}38\,\Omega$ tai $0{,}34\,\text{V} : 0{,}80\,\text{A} \approx 0{,}43\,\Omega$, joten sisäinen resistanssi on noin $0{,}4\,\Omega$.

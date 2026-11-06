@@ -199,11 +199,11 @@ Rivi 3 on väärin. Lukema $0{,}14\,\text{A} = 140\,\text{mA}$ mahtuu alueelle $
 
 $\Delta I = 0{,}020 \cdot 0{,}14\,\text{A} + 3 \cdot 0{,}01\,\text{A}$
 
-$\Delta I \approx 0{,}033\,\text{A} = 33\,\text{mA}$
+$\Delta I \approx 0{,}033\,\text{A} = 33\,\text{mA}$ (välitulos, noin $0{,}03\,\text{A}$)
 
-ja alueella $200\,\text{mA}$, kun lukema on noin $140{,}0\,\text{mA}$,
+ja alueella $200\,\text{mA}$, kun lukema on noin $140{,}0\,\text{mA}$ ja $2 \cdot 0{,}1\,\text{mA} = 0{,}2\,\text{mA}$,
 
-$\Delta I = 0{,}010 \cdot 140{,}0\,\text{mA} + 2 \cdot 0{,}1\,\text{mA}$
+$\Delta I = 0{,}010 \cdot 140\,\text{mA} + 0{,}2\,\text{mA}$
 
 $\Delta I = 1{,}6\,\text{mA}$
 

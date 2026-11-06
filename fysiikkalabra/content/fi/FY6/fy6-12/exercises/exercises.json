@@ -266,7 +266,7 @@
     {
       "id": "fy6-12-L2-08",
       "level": 2,
-      "text": "Kahden yhdensuuntaisen levyn välissä on homogeeninen sähkökenttä. Elektroni lähtee levosta kohdasta A, jonka potentiaali negatiiviseen levyyn nähden on $30\\,\\text{V}$, ja kulkee kohtaan B, jonka potentiaali on $120\\,\\text{V}$. Vain sähköinen voima tekee työtä elektroniin. Oppilas laskee elektronin liike-energian kohdassa B. Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$.\n\nRivi 1: elektronin varaus on negatiivinen, joten sähköinen voima osoittaa kenttää vastaan, ja levosta lähtenyt elektroni liikkuu kohti suurempaa potentiaalia eli kohdasta A kohtaan B.\n\nRivi 2: elektronin potentiaalienergia pienenee matkalla, koska negatiivisen varauksen potentiaalienergia $E_\\text{p} = qV$ on sitä pienempi, mitä suurempi potentiaali on.\n\nRivi 3: elektroni kulkee potentiaalieron $U = 120\\,\\text{V}$ läpi, joten sen liike-energia kohdassa B on $E_\\text{k} = eU = 120\\,\\text{eV}$.\n\nRivi 4: jouleina $E_\\text{k} = 120 \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{J}$, eli $E_\\text{k} = 1{,}9 \\cdot 10^{-17}\\,\\text{J}$.\n\nTarkista lasku rivi riviltä. Valitse väärä rivi tai viimeinen vaihtoehto, jos laskussa ei ole virhettä.",
+      "text": "Kahden yhdensuuntaisen levyn välissä on homogeeninen sähkökenttä. Elektroni lähtee levosta kohdasta A, jonka potentiaali negatiiviseen levyyn nähden on $30\\,\\text{V}$, ja kulkee kohtaan B, jonka potentiaali on $120\\,\\text{V}$. Vain sähköinen voima tekee työtä elektroniin.\n\nOppilas laskee elektronin liike-energian kohdassa B. Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$.\n\nRivi 1: elektronin varaus on negatiivinen, joten sähköinen voima osoittaa kenttää vastaan, ja levosta lähtenyt elektroni liikkuu kohti suurempaa potentiaalia eli kohdasta A kohtaan B.\n\nRivi 2: elektronin potentiaalienergia pienenee matkalla, koska negatiivisen varauksen potentiaalienergia $E_\\text{p} = qV$ on sitä pienempi, mitä suurempi potentiaali on.\n\nRivi 3: elektroni kulkee potentiaalieron $U = 120\\,\\text{V}$ läpi, joten sen liike-energia kohdassa B on $E_\\text{k} = eU = 120\\,\\text{eV}$.\n\nRivi 4: jouleina $E_\\text{k} = 120 \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{J}$, eli $E_\\text{k} = 1{,}9 \\cdot 10^{-17}\\,\\text{J}$.\n\nTarkista lasku rivi riviltä. Valitse väärä rivi tai viimeinen vaihtoehto, jos laskussa ei ole virhettä.",
       "kind": [
         "error",
         "reasoning"
@@ -286,7 +286,7 @@
         {
           "text": "Rivi 3: liike-energia elektronivoltteina",
           "correct": true,
-          "feedback": "Oikein, tämä rivi on väärin: $120\\,\\text{V}$ on kohdan B potentiaali, ei potentiaaliero. Oikein $U = V_B - V_A = 90\\,\\text{V}$, joten $E_\\text{k} = 90\\,\\text{eV}$ ja jouleina $1{,}4 \\cdot 10^{-17}\\,\\text{J}$."
+          "feedback": "Oikein, tämä rivi on väärin: $120\\,\\text{V}$ on kohdan B potentiaali, ei potentiaaliero. Laskettaessa tulee $U = V_B - V_A = 90\\,\\text{V}$, joten $E_\\text{k} = 90\\,\\text{eV}$ ja jouleina $1{,}4 \\cdot 10^{-17}\\,\\text{J}$."
         },
         {
           "text": "Rivi 4: muunnos jouleiksi",

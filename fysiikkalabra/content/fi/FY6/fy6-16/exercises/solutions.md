@@ -187,8 +187,8 @@ b) Keskiteho on $7{,}6\,\text{kW}$.
 **Järkevyys:** Jos teho olisi pysynyt $11\,\text{kW}$:ssa koko ajan $3{,}0\,\text{h}$, energiaa olisi otettu $33\,\text{kWh}$. Tulos on pienempi, koska teho laskee latauksen loppua kohti, ja keskiteho $7{,}6\,\text{kW}$ on huipputehon $11\,\text{kW}$ ja loppuarvon $1{,}4\,\text{kW}$ välissä.
 
 ## fy6-16-L2-08
-**Kysytty:** latausajan $t$ suuruusluokka, kun akkuun varastoidaan $24\,\text{kWh}$ pistorasiasta virralla $8{,}0\,\text{A}$.
-**Periaate:** Yksivaiheisen latauksen teho on $P = UI$. Häviöiden vuoksi verkosta otetaan enemmän energiaa kuin akkuun varastoituu, joten latausaika on $t = \tfrac{W_\text{akku}}{\eta P}$. Energia ja teho sijoitetaan samassa kerrannaisessa, kilowattitunteina ja kilowatteina, jolloin aika saadaan tunteina, ja hyötysuhde desimaalilukuna.
+**Kysytty:** latausaika $t$, kun akkuun varastoidaan $24\,\text{kWh}$ pistorasiasta virralla $8{,}0\,\text{A}$.
+**Periaate:** Yksivaiheisen latauksen teho on $P = UI$. Häviöiden vuoksi verkosta otetaan enemmän energiaa kuin akkuun varastoituu, joten akkuun menevä energia jaetaan hyötysuhteella ja latausaika on $t = W_\text{akku} : (\eta P)$. Energia ja teho sijoitetaan samassa kerrannaisyksikössä, kilowattitunteina ja kilowatteina, jolloin aika saadaan tunteina, ja hyötysuhde desimaalilukuna.
 **Mallivastaus:** Latausteho on
 
 $P = UI = 230\,\text{V} \cdot 8{,}0\,\text{A}$
@@ -203,9 +203,19 @@ t &= \frac{W_\text{akku}}{\eta P} \\
 &\approx 15\,\text{h}
 \end{aligned}$$
 
-Lähin vaihtoehto on noin $15\,\text{h}$.
+Oikea vaihtoehto on noin $15\,\text{h}$.
 
-Tulos on järkevä: verkosta otetaan noin $1{,}8\,\text{kWh}$ tunnissa, ja akkuun siitä menee noin $1{,}6\,\text{kWh}$, joten $24\,\text{kWh}$ vie noin $15$ tuntia. Lataus ei mahdu yhteen yöhön, mutta vuorokaudessa se ehtii. Muut vaihtoehdot syntyvät yksikkö- tai sijoitusvirheistä. Tehon jättäminen watteiksi energian ollessa kilowattitunteina antaa tuhat kertaa liian pienen ajan noin $0{,}015\,\text{h}$. Hyötysuhteen sijoittaminen lukuna $85$ antaa sata kertaa liian pienen ajan noin $0{,}15\,\text{h}$. Energian muuntaminen wattitunneiksi tehon jäädessä kilowateiksi antaa tuhat kertaa liian suuren ajan noin $15\,000\,\text{h}$, lähes kaksi vuotta.
+Tulos on järkevä: verkosta otetaan noin $1{,}8\,\text{kWh}$ tunnissa, ja akkuun siitä menee noin $1{,}6\,\text{kWh}$, joten $24\,\text{kWh}$ vie noin $15$ tuntia. Lataus ei mahdu yhteen yöhön, mutta vuorokaudessa se ehtii.
+
+Muut vaihtoehdot syntyvät tyypillisistä virheistä. Ilman hyötysuhdetta saadaan häviöttömän latauksen aika:
+
+$t = 24\,\text{kWh} : 1{,}84\,\text{kW} \approx 13\,\text{h}$
+
+Kun energia kerrotaan hyötysuhteella eikä jaeta sillä, aika lyhenee entisestään:
+
+$t = 0{,}85 \cdot 24\,\text{kWh} : 1{,}84\,\text{kW}$
+
+eli $t \approx 11\,\text{h}$. Häviöt pidentävät latausta, joten kumpikin on liian lyhyt. Kolmivaiheisen laitteen kaava $P = 3UI$ antaa kolme kertaa liian suuren tehon, vaikka pistorasia on yksivaiheinen, ja aika jää noin arvoon $5{,}1\,\text{h}$.
 
 ## fy6-16-L3-04
 **Annettu:** kuukausimatkat taulukosta, sähköauto $16{,}0\,\text{kWh}$ akusta sadalla kilometrillä, $\eta = 90{,}0\,\%$, $a_\text{koti} = 15\,\text{snt/kWh}$, $a_\text{julk} = 0{,}45\,\text{€/kWh}$, bensiiniauto $6{,}50\,\textsf{l}$ sadalla kilometrillä, bensiinin hinta $b = 1{,}85\,\text{€/}\textsf{l}$

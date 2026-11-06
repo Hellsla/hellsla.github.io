@@ -223,4 +223,4 @@ $$\begin{aligned}
 &I_3 = \frac{3{,}0\,\text{V}}{60\,\Omega} = 0{,}050\,\text{A}
 \end{aligned}$$
 
-Vastuksen $R_3$ kautta kulkee virta $0{,}050\,\text{A}$. Virtalaki toteutuu: $0{,}15\,\text{A} + 0{,}10\,\text{A} + 0{,}050\,\text{A} = 0{,}30\,\text{A}$. Perustelu: haaroilla on sama jännite, joten haaran virta on kääntäen verrannollinen sen resistanssiin, ja suurimman resistanssin haaraan kulkee pienin virta. Virta ei jakaudu tasan, eikä jännite jakaudu rinnakkaisille haaroille kuten sarjakytkennässä. Väite, että haaroista palaa yhteensä $0{,}30\,\text{A}$, on tosi, mutta se ei kerro, miten virta jakautuu.
+Vastuksen $R_3$ kautta kulkee virta $0{,}050\,\text{A}$. Virtalaki toteutuu: haarojen virtojen summa on $0{,}15\,\text{A} + 0{,}10\,\text{A} + 0{,}050\,\text{A}$, eli $0{,}30\,\text{A}$. Perustelu: haaroilla on sama jännite, joten haaran virta on kääntäen verrannollinen sen resistanssiin, ja suurimman resistanssin haaraan kulkee pienin virta. Virta ei jakaudu tasan, eikä jännite jakaudu rinnakkaisille haaroille kuten sarjakytkennässä. Väite, että haaroista palaa yhteensä $0{,}30\,\text{A}$, on tosi, mutta se ei kerro, miten virta jakautuu.
