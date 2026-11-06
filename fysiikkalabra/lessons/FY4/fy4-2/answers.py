@@ -38,6 +38,8 @@ a["fy4-2-L2-05"] = round(float(np.polyfit(t5, v5, 1)[0]), 2)   # slope of the (t
 t6 = np.array([0, .4, .8, 1.2, 1.6, 2.0]); x6 = np.array([0, .10, .37, .80, 1.46, 2.32])
 a["fy4-2-L2-06"] = round(float(2 * np.polyfit(t6 ** 2, x6, 1)[0]), 2)   # x = ½ a t²: slope of (t²,x) is a/2 -> a = 1,15 m/s²
 a["fy4-2-L2-07"] = "Videoanalyysilla, koska nopeus saadaan monelta hetkeltä ja nähdään, onko $(t,v)$-kuvaaja suora."   # many points show linearity
+assert abs(8.0**2 / (2 * 2.0) / (8.0**2 / (2 * 4.0)) - 2) < 1e-12   # s = v₀²/(2|a|): 8,0 m -> 16 m
+a["fy4-2-L2-08"] = "Kasvaa 2-kertaiseksi"           # halving |a| doubles the braking distance
 # Level 3 additions
 vv = [k / 3.6 for k in (0, 36, 62, 83, 100)]          # km/h -> m/s
 a["fy4-2-L3-04"] = round(sum((vv[i] + vv[i + 1]) / 2 * 2.0 for i in range(4)), 1)   # trapezoids, 2,0 s each: 128,3 m

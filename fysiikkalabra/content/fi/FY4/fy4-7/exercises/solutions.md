@@ -302,7 +302,7 @@ Erotus on sama, koska nollatason valinta lisää molempiin mekaanisiin energioih
 **Periaate:** Lausekkeen yksikkö saadaan sijoittamalla jokaisen suureen paikalle sen yksikkö: $m$ ($\text{kg}$), $G$ ($\text{N}$), $v$ ($\text{m/s}$), $h$ ($\text{m}$) ja $g$ ($\text{m/s}^2$). Energian yksikkö on $\text{J} = \text{N}\cdot\text{m} = \text{kg}\cdot\text{m}^2/\text{s}^2$, ja $\text{N} = \text{kg}\cdot\text{m/s}^2$. Lukukerroin $\tfrac12$ ei vaikuta yksikköön.
 **Mallivastaus:** Oikea on $\dfrac{G v^2}{2g}$. Lausekkeiden yksiköt:
 
-$\dfrac{m v^2}{2h}$: $\dfrac{\text{kg}\cdot\text{m}^2/\text{s}^2}{\text{m}} = \text{kg}\cdot\dfrac{\text{m}}{\text{s}^2} = \text{N}$
+$\tfrac{1}{2}\,m v$: $\text{kg}\cdot\dfrac{\text{m}}{\text{s}}$, ei joule
 
 $\dfrac{G v^2}{2g}$: $\dfrac{\text{N}\cdot\text{m}^2/\text{s}^2}{\text{m/s}^2} = \text{N}\cdot\text{m} = \text{J}$
 
@@ -310,5 +310,5 @@ $G g h$: $\text{N}\cdot\dfrac{\text{m}}{\text{s}^2}\cdot\text{m} = \text{J}\cdot
 
 $\dfrac{v^2}{2g}$: $\dfrac{\text{m}^2/\text{s}^2}{\text{m/s}^2} = \text{m}$
 
-Vain lausekkeen $\dfrac{G v^2}{2g}$ yksikkö on joule. Se on liike-energia toisin kirjoitettuna: kun painon paikalle sijoitetaan $G = mg$, $g$ supistuu pois ja jäljelle jää liike-energia $E_\text{k} = \tfrac12 m v^2$. Lauseke $\dfrac{m v^2}{2h}$ on voima ja $\dfrac{v^2}{2g}$ korkeus, jolle kitkaton kappale nousee nopeudesta $v$. Lausekkeessa $G g h$ paino on kirjoitettu massan paikalle, joten $g$ tulee kahteen kertaan; oikein $E_\text{p} = mgh = Gh$.
+Vain lausekkeen $\dfrac{G v^2}{2g}$ yksikkö on joule. Se on liike-energia toisin kirjoitettuna: kun painon paikalle sijoitetaan $G = mg$, $g$ supistuu pois ja jäljelle jää liike-energia $E_\text{k} = \tfrac12 m v^2$. Lausekkeen $\tfrac{1}{2}\,m v$ yksikkö on $\text{kg}\cdot\text{m/s}$: siinä nopeus on ensimmäisessä potenssissa, vaikka liike-energia on verrannollinen nopeuden neliöön. Lauseke $\dfrac{v^2}{2g}$ on korkeus, jolle kitkaton kappale nousee nopeudesta $v$. Lausekkeessa $G g h$ paino on kirjoitettu massan paikalle, joten $g$ tulee kahteen kertaan; oikein $E_\text{p} = mgh = Gh$.
 

@@ -171,9 +171,9 @@ Nopeuden muutos kasvaa kaksinkertaiseksi, koska $50\,\text{km/h} : 25\,\text{km/
 
 Pysähtymisaika kasvaa nelinkertaiseksi, koska $0{,}12\,\text{s} : 0{,}030\,\text{s} = 4$.
 
-Voima kerrotaan siis luvulla $2 : 4 = 0{,}50$: kokeessa B voima on puolet kokeen A voimasta, eli voima pienenee puoleen.
+Voima muuttuu siis kertoimella $2 : 4 = 0{,}50$: kokeessa B voima on puolet kokeen A voimasta, eli voima pienenee puoleen.
 
-Järkevyys: esimerkiksi $75\,\text{kg}$:n nukelle kokeessa A $\Delta v = 25 : 3{,}6\,\text{m/s} \approx 6{,}94\,\text{m/s}$, joten $F_\text{ka} \approx 17\,\text{kN}$. Kokeessa B $\Delta v \approx 13{,}9\,\text{m/s}$, joten $F_\text{ka} \approx 8{,}7\,\text{kN}$, puolet kokeen A voimasta. Rypistyvä keula ja turvatyyny pidentävät aikaa enemmän kuin nopeus kasvattaa liikemäärän muutosta. Kaksinkertaisen nopeuden ajatteleminen nelinkertaisena kuuluu jarrutusmatkaan, joka riippuu nopeuden neliöstä, ei törmäyksen voimaan.
+Järkevyys: esimerkiksi $75\,\text{kg}$:n nukelle kokeessa A $\Delta v = 25 : 3{,}6\,\text{m/s} \approx 6{,}94\,\text{m/s}$, joten $F_\text{ka} \approx 17\,\text{kN}$. Kokeessa B $\Delta v \approx 13{,}9\,\text{m/s}$, joten $F_\text{ka} \approx 8{,}7\,\text{kN}$, puolet kokeen A voimasta. Näissä esimerkkikokeissa pysähtymisaika pitenee enemmän kuin liikemäärän muutos kasvaa. Samassa autossa kaksinkertainen nopeus kaksinkertaistaa keskimääräisen voiman, jos pysähtymisaika pysyy samana. Jarrutusmatka riippuu nopeuden neliöstä, mutta törmäyksen keskimääräinen voima nopeudesta suoraan.
 
 ## fy4-11-L3-01
 **Annettu:** rajoitus $30\,\text{km/h}$, todellinen nopeus $v_0 = 40\,\text{km/h}$, reaktioaika $t_\text{r} = 1{,}0\,\text{s}$, hidastuvuus $a = 9{,}0\,\text{m/s}^2$; lapsi on etäisyydellä $d$, joka on pysähtymismatka $30\,\text{km/h}$:n nopeudesta

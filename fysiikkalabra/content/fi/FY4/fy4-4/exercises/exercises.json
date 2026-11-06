@@ -234,7 +234,7 @@
     {
       "id": "fy4-4-L2-08",
       "level": 2,
-      "text": "Esimerkkiarvot: ostoskärryä, jonka massa tavaroineen on $18\\,\\text{kg}$, työnnetään vaakasuoralla lattialla vaakasuoraan $45\\,\\text{N}$:n voimalla. Lattian kitkavoima kärryyn on $9{,}0\\,\\text{N}$, ja ilmanvastus jätetään huomiotta. Oppilas laskee kärryn kiihtyvyyden.\n\nRivi 1: positiivinen suunta on työntövoiman suunta, joten $\\Sigma F = F - F_\\mu$.\n\nRivi 2: $\\Sigma F = 45\\,\\text{N} - 9{,}0\\,\\text{N}$, eli $\\Sigma F = 36\\,\\text{N}$.\n\nRivi 3: $G = mg = 18\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2$, eli $G \\approx 177\\,\\text{N}$.\n\nRivi 4: $a = \\dfrac{\\Sigma F}{G}$, eli $a = \\dfrac{36\\,\\text{N}}{177\\,\\text{N}} \\approx 0{,}20\\,\\text{m/s}^2$.\n\nTarkista lasku rivi riviltä. Valitse väärä rivi tai viimeinen vaihtoehto, jos laskussa ei ole virhettä.",
+      "text": "Ostoskärryä, jonka massa tavaroineen on $18\\,\\text{kg}$, työnnetään vaakasuoralla lattialla vaakasuoraan $45\\,\\text{N}$:n voimalla. Lattian kitkavoima kärryyn on $9{,}0\\,\\text{N}$, ja ilmanvastus jätetään huomiotta. Oppilas laskee kärryn kiihtyvyyden.\n\nRivi 1: positiivinen suunta on työntövoiman suunta, joten $\\Sigma F = F - F_\\mu$.\n\nRivi 2: $\\Sigma F = 45\\,\\text{N} - 9{,}0\\,\\text{N}$, eli $\\Sigma F = 36\\,\\text{N}$.\n\nRivi 3: $G = mg = 18\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2$, eli $G \\approx 177\\,\\text{N}$.\n\nRivi 4: $a = \\dfrac{\\Sigma F}{G}$, eli $a = \\dfrac{36\\,\\text{N}}{177\\,\\text{N}} \\approx 0{,}20\\,\\text{m/s}^2$.\n\nTarkista lasku rivi riviltä. Valitse väärä rivi tai viimeinen vaihtoehto, jos laskussa ei ole virhettä.",
       "kind": [
         "error",
         "reasoning"
@@ -253,7 +253,7 @@
         },
         {
           "text": "Rivi 3: painon laskeminen",
-          "feedback": "Rivi 3 on oikein laskettu: $18\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\approx 177\\,\\text{N}$. Paino ei vaikuta vaakasuoraan liikkeeseen, mutta sen laskeminen ei ole virhe. Virhe syntyy vasta, kun painoa käytetään massan paikalla."
+          "feedback": "Rivi 3 on oikein laskettu: $18\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\approx 177\\,\\text{N}$. Paino ei vaikuta vaakasuoraan liikkeeseen, mutta sen laskeminen ei ole virhe. Tarkista muut rivit samalla tavalla."
         },
         {
           "text": "Rivi 4: kiihtyvyyden laskeminen",

@@ -267,8 +267,11 @@ v ylös
 **Kysytty:** onko oppilaan laskussa virhe ja millä rivillä, kun lasketaan vaakasuoraan työnnetyn ostoskärryn kiihtyvyys $a$.
 **Periaate:** Newtonin toisen lain mukaan $\Sigma F = ma$, joten kiihtyvyys on kokonaisvoima jaettuna massalla. Ensin valitaan positiivinen suunta ja kirjoitetaan kokonaisvoima etumerkkeineen: työntövoima liikkeen suuntaan ja kitkavoima sitä vastaan. Vaakasuoralla lattialla paino ja tukivoima kumoavat toisensa, joten paino ei vastusta liikettä; kiihtyvyyttä pienentää massa. Laskun voi tarkistaa rivi riviltä: kokonaisvoiman lauseke, sen arvo, paino ja kiihtyvyys.
 **Mallivastaus:** Rivi 1: $\Sigma F = F - F_\mu$ on oikein, koska kitka osoittaa työntövoimaa vastaan.
+
 Rivi 2: $45\,\text{N} - 9{,}0\,\text{N} = 36\,\text{N}$ on oikein.
-Rivi 3: $18\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 176{,}58\,\text{N} \approx 177\,\text{N}$ on oikein laskettu, vaikka painoa ei tarvita.
+
+Rivi 3: $G = 18\,\text{kg} \cdot 9{,}81\,\text{m/s}^2$, eli $G = 176{,}58\,\text{N} \approx 177\,\text{N}$, on oikein laskettu, vaikka painoa ei tarvita.
+
 Rivi 4 on väärin, koska siinä kokonaisvoima on jaettu painolla eikä massalla. Oikein:
 
 $a = \dfrac{\Sigma F}{m}$

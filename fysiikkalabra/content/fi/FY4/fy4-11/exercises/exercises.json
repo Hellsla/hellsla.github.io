@@ -266,7 +266,7 @@
         {
           "text": "Voima pienenee puoleen.",
           "correct": true,
-          "feedback": "Oikein: liikemäärän muutos $m\\,\\Delta v$ kaksinkertaistuu ja pysähtymisaika nelinkertaistuu, joten voima kerrotaan luvulla $2 : 4 = 0{,}50$."
+          "feedback": "Oikein: liikemäärän muutos $m\\,\\Delta v$ kaksinkertaistuu ja pysähtymisaika nelinkertaistuu, joten voima muuttuu kertoimella $2 : 4 = 0{,}50$."
         },
         {
           "text": "Voima pienenee neljäsosaan.",

@@ -126,8 +126,8 @@
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "$\\dfrac{m v^2}{2h}$",
-          "feedback": "Lausekkeen yksikkö on $\\tfrac{\\text{kg}\\cdot\\text{m}^2/\\text{s}^2}{\\text{m}} = \\text{kg}\\cdot\\text{m/s}^2 = \\text{N}$, eli se on voima. Lauseke ei ole energiaa vain siksi, että siinä on $m v^2$: jakaminen korkeudella vie siitä metrin pois."
+          "text": "$\\tfrac{1}{2}\\,m v$",
+          "feedback": "Lausekkeen yksikkö on $\\text{kg}\\cdot\\text{m/s}$, ei joule. Liike-energia ei kasva suoraan verrannollisesti nopeuteen vaan nopeuden neliöön, joten nopeuden pitää olla lausekkeessa toisessa potenssissa: $E_\\text{k} = \\tfrac{1}{2}\\,m v^2$."
         },
         {
           "text": "$\\dfrac{G v^2}{2g}$",
@@ -140,7 +140,7 @@
         },
         {
           "text": "$\\dfrac{v^2}{2g}$",
-          "feedback": "Lausekkeen yksikkö on $\\tfrac{\\text{m}^2/\\text{s}^2}{\\text{m/s}^2} = \\text{m}$, eli se on korkeus, jolle kappale nousee. Se tulee energiayhtälöstä, mutta massa puuttuu, joten se ei ole energiaa."
+          "feedback": "Lausekkeen yksikkö on $\\tfrac{\\text{m}^2/\\text{s}^2}{\\text{m/s}^2} = \\text{m}$, eli se on korkeus, jolle kitkaton kappale nousee nopeudesta $v$, kuten rampin nousukorkeus luvun teoriassa. Massa puuttuu, joten se ei ole energiaa."
         }
       ]
     }

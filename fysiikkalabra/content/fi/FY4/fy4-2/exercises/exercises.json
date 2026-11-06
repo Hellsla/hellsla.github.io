@@ -280,7 +280,7 @@
     {
       "id": "fy4-2-L2-08",
       "level": 2,
-      "text": "Esimerkkiarvot: pyöräilijä ajaa suoraa tietä nopeudella $8{,}0\\,\\text{m/s}$ ja jarruttaa tasaisesti pysähdyksiin.\n\nKuivalla asfaltilla kiihtyvyyden suuruus jarrutuksessa on $4{,}0\\,\\text{m/s}^2$.\n\nMärällä asfaltilla hän jarruttaa samasta nopeudesta, mutta kiihtyvyyden suuruus on $2{,}0\\,\\text{m/s}^2$.\n\nMiten jarrutusmatka muuttuu, kun tie on märkä?",
+      "text": "Pyöräilijä ajaa suoraa tietä nopeudella $8{,}0\\,\\text{m/s}$ ja jarruttaa tasaisesti pysähdyksiin.\n\nKuivalla asfaltilla kiihtyvyyden suuruus jarrutuksessa on $4{,}0\\,\\text{m/s}^2$.\n\nMärällä asfaltilla hän jarruttaa samasta nopeudesta, mutta kiihtyvyyden suuruus on $2{,}0\\,\\text{m/s}^2$.\n\nMiten jarrutusmatka muuttuu, kun tie on märkä?",
       "kind": [
         "concept",
         "reasoning"

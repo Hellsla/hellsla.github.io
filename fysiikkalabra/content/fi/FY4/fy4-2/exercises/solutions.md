@@ -192,7 +192,7 @@
 
 ## fy4-2-L2-08
 **Kysytty:** miten pyöräilijän jarrutusmatka $s$ muuttuu, kun alkunopeus on sama $8{,}0\,\text{m/s}$ mutta kiihtyvyyden suuruus pienenee arvosta $4{,}0\,\text{m/s}^2$ arvoon $2{,}0\,\text{m/s}^2$.
-**Periaate:** Jarrutus on tasaista, joten kiihtyvyys on vakio ja nopeus pienenee joka sekunti saman verran, $v = v_0 + a\,t$. Valitaan liikkeen suunta positiiviseksi, jolloin jarrutuksen kiihtyvyys on negatiivinen. Jarrutusmatka on $(t, v)$-kuvaajan ja aika-akselin väliin jäävä pinta-ala: kolmio, jonka korkeus on alkunopeus $v_0$ ja leveys jarrutusaika $t$, eli $s = \tfrac{1}{2}\,v_0\,t$. Matka riippuu siis sekä alkunopeudesta että siitä, kuinka kauan pysähtyminen kestää.
+**Periaate:** Jarrutus on tasaista, joten kiihtyvyys on vakio ja nopeus pienenee joka sekunti saman verran, $v = v_0 + a\,t$. Valitaan liikkeen suunta positiiviseksi, jolloin jarrutuksen kiihtyvyys on negatiivinen. Jarrutusmatka on $(t, v)$-kuvaajan ja aika-akselin väliin jäävä pinta-ala, koska nopeus on koko ajan positiivinen: kolmio, jonka korkeus on alkunopeus $v_0$ ja leveys jarrutusaika $t$, eli $s = \tfrac{1}{2}\,v_0\,t$. Matka riippuu siis sekä alkunopeudesta että siitä, kuinka kauan pysähtyminen kestää.
 **Mallivastaus:** Jarrutusmatka kasvaa kaksinkertaiseksi. Pysähtyessä $v = 0$, joten jarrutusaika on $t = \dfrac{0 - v_0}{a}$.
 
 Kuiva tie: $t_1 = \dfrac{0 - 8{,}0\,\text{m/s}}{-4{,}0\,\text{m/s}^2}$, eli $t_1 = 2{,}0\,\text{s}$
@@ -205,8 +205,16 @@ $s_1 = \tfrac{1}{2} \cdot 8{,}0\,\text{m/s} \cdot 2{,}0\,\text{s}$, eli $s_1 = 8
 
 $s_2 = \tfrac{1}{2} \cdot 8{,}0\,\text{m/s} \cdot 4{,}0\,\text{s}$, eli $s_2 = 16\,\text{m}$
 
-Suhde on $16\,\text{m} : 8{,}0\,\text{m} = 2{,}0$. Puolet pienempi kiihtyvyys kaksinkertaistaa jarrutusajan, ja kun kolmion korkeus $v_0$ pysyy samana, myös pinta-ala kaksinkertaistuu. Vastaus ”pysyy samana” unohtaa, että matka riippuu myös jarrutusajasta. Vastaus ”pienenee puoleen” lukee riippuvuuden väärin päin: pienempi kiihtyvyys pidentää pysähtymistä. Vastaus ”kasvaa 4-kertaiseksi” kasvattaa matkaa ajan neliössä mutta unohtaa, että kiihtyvyys puolittuu samalla. Tarkistus kaavalla $x - x_0 = v_0\,t + \tfrac{1}{2}\,a\,t^2$:
+Suhde on $16\,\text{m} : 8{,}0\,\text{m} = 2{,}0$. Puolet pienempi kiihtyvyys kaksinkertaistaa jarrutusajan, ja kun kolmion korkeus $v_0$ pysyy samana, myös pinta-ala kaksinkertaistuu.
 
-$s_2 = 8{,}0\,\text{m/s} \cdot 4{,}0\,\text{s} + \tfrac{1}{2} \cdot (-2{,}0\,\text{m/s}^2) \cdot (4{,}0\,\text{s})^2$
+Vastaus ”pysyy samana” unohtaa, että matka riippuu myös jarrutusajasta. Vastaus ”pienenee puoleen” lukee riippuvuuden väärin päin: pienempi kiihtyvyys pidentää pysähtymistä. Vastaus ”kasvaa 4-kertaiseksi” kasvattaa matkaa ajan neliössä mutta unohtaa, että kiihtyvyys puolittuu samalla.
+
+Tarkistus kaavalla $x - x_0 = v_0\,t + \tfrac{1}{2}\,a\,t^2$, termit erikseen:
+
+$v_0\,t = 8{,}0\,\text{m/s} \cdot 4{,}0\,\text{s}$, eli $v_0\,t = 32\,\text{m}$
+
+$\tfrac{1}{2}\,a = \tfrac{1}{2} \cdot (-2{,}0\,\text{m/s}^2)$, eli $\tfrac{1}{2}\,a = -1{,}0\,\text{m/s}^2$
+
+$\tfrac{1}{2}\,a\,t^2 = -1{,}0\,\text{m/s}^2 \cdot (4{,}0\,\text{s})^2$, eli $\tfrac{1}{2}\,a\,t^2 = -16\,\text{m}$
 
 $s_2 = 32\,\text{m} - 16\,\text{m}$, eli $s_2 = 16\,\text{m}$
