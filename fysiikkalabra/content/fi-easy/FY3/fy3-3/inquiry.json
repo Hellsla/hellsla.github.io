@@ -16,7 +16,7 @@
       "stage": "herata",
       "type": "hook",
       "text": "Pyörä on yön pakkasessa ulkona. Aamulla rengas painuu peukalon alla. Iltapäivällä sama pyörä on seissyt auringossa, ja rengas on kova. Venttiili on ollut kiinni koko ajan, joten renkaassa on sama ilma. Kumi venyy niin vähän, että renkaan tilavuus pysyy lähes samana. Ainoa muutos on ilman lämpötila.",
-      "question": "Mitä renkaan sisällä olevalle ilmalle tapahtuu, kun se lämpenee? Miksi se painaa renkaan seiniä silloin voimakkaammin?"
+      "question": "Mitä renkaan sisällä olevalle ilmalle tapahtuu, kun se lämpenee? Miksi ilman paine renkaassa silloin kasvaa?"
     },
     {
       "id": "pr-pumppu",
@@ -28,11 +28,11 @@
         {
           "text": "Renkaaseen tulee lisää ilmaa, ja ilma painaa renkaan seiniä sisältäpäin voimakkaammin.",
           "correct": true,
-          "feedback": "Juuri näin. Kun samaan tilaan tuodaan lisää ilmaa, ilman paine renkaan seiniin kasvaa. Alun ilmiössä ilmaa ei kuitenkaan lisätä. Jokin muu saa saman ilman painamaan seiniä voimakkaammin."
+          "feedback": "Juuri näin. Kun samaan tilaan tuodaan lisää ilmaa, ilman paine renkaan seiniin kasvaa. Alun ilmiössä ilmaa ei kuitenkaan lisätä. Jokin muu kasvattaa saman ilman painetta."
         },
         {
           "text": "Ilma puristuu renkaassa kokoon, joten sitä on lopulta vähemmän.",
-          "feedback": "Pumppaaminen lisää ilman määrää renkaassa. Ilmaa ei katoa minnekään. Ilma kyllä puristuu pienempään tilaan, ja juuri siksi se painaa renkaan seiniä voimakkaammin."
+          "feedback": "Pumppaaminen lisää ilman määrää renkaassa. Ilmaa ei katoa minnekään. Ilma kyllä puristuu pienempään tilaan, ja juuri siksi ilman paine renkaassa kasvaa."
         },
         {
           "text": "Kumi kiristyy pumpun iskuista, ja ilmalla ei ole asian kanssa tekemistä.",
@@ -109,7 +109,7 @@
       "stage": "ennusta",
       "type": "choice",
       "layout": "models",
-      "title": "Ennuste 3: miksi lämmin kaasu painaa enemmän?",
+      "title": "Ennuste 3: miksi lämpimän kaasun paine on suurempi?",
       "prompt": "Kolme opiskelijaa selittää, miksi suljetun astian kaasun paine kasvaa, kun kaasu lämpenee. Kenen selitys sopii siihen, mitä näet kokeessa 1?",
       "justify": true,
       "reveal": {
