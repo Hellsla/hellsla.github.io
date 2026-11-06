@@ -23,6 +23,7 @@ T = pathlib.Path(tempfile.mkdtemp(prefix="fysiikkalabra-i18n-"))
 for f in ("curriculum.json", "competencies.json", "glossary.json", "CLAUDE.md", "NOTES.md", "palautukset.json"): shutil.copy(SRC / f, T / f)
 for d in ("scripts", "templates", "content", "lessons", "lang", "assets", "tests", "kortit"): shutil.copytree(SRC / d, T / d, ignore=shutil.ignore_patterns("__pycache__", "packet-*", "shots*"))
 (T / "docs").mkdir(exist_ok=True); shutil.copy(SRC / "docs/visual-baseline.tsv", T / "docs")   # what is published under the visual baseline (2026-10-31)
+shutil.copy(SRC / "example-names.json", T)   # the worked examples' short names (Esimerkki 1: …, 2026-11-06)
 for p in [*(T / "lang").glob("*.json"), *(T / "content").iterdir()]:     # Finnish only: the test adds its own "en"
     if p.stem not in ("fi", "_gold"): shutil.rmtree(p) if p.is_dir() else p.unlink()
 shutil.rmtree(T / "content/fi/units", ignore_errors=True)   # local-course units (FY9) need the registry, which this copy leaves out
