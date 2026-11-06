@@ -1,16 +1,16 @@
-VERDICT: FAIL
-CONTENT-HASH: bbc9cb838c12abd5
-ROUND: 1 (delta)
+VERDICT: PASS
+CONTENT-HASH: fe154ae5f2ac3508
+ROUND: 2 (delta)
 
 ## Blocking
-- [Major] fy6-8-L2-08 options — the correct answer is identifiable by form: "1,55 V" appears in three options and "0,40 Ω" in two, and the correct option is the only one combining both; a student can pick it without reading the table — undermines the data-reading skill the task tests — vary the distractors independently (e.g. E about 1,43 V or 1,60 V with the right or wrong resistance) so no value or pairing is shared by most options.
+None. The round-1 Major (L2-08 correct option identifiable by form) is resolved: the options are now (1,51 V; 0,40 Ω), (1,55 V; 0,40 Ω, correct), (1,51 V; 1,3 Ω), (1,55 V; changes), so 1,51 V, 1,55 V and 0,40 Ω each occur twice and no option is singled out by shared values.
 
 ## Polish
-- [Minor] fy6-8-L2-08 solution — the last Mallivastaus paragraph is about 130 words (conclusion, two misreadings, uncertainty range); split into two paragraphs.
+- [Minor] fy6-8-L2-08 option 4 feedback — about 60 words with the 0,04 V uncertainty argument; acceptable, could be split into two sentences' worth of lines.
 
 ## Checked
-- Rendered at 390 px (all four options committed, correct with solution open): table with short caption "Napajännite ja virta (esimerkkiaineisto)" readable, decimals shown with comma, no overflow, aligned chains (R_s, E) fit the card, no inline formula over 290 px.
-- Text only: numbers recomputed (slope 0,40 Ω, E 1,55 V); distractor feedback names each error without giving the correct reason.
+- Rendered at 390 px (own script, all four options committed, correct with solution open): table with short caption, no overflow (doc and card 390/330), no inline formula over 290 px; the new double-error option's feedback and the split Johtopäätös/Epävarmuus paragraphs read well; slope and E chains fit the card.
+- Text only: 4 · 0,01 V = 0,04 V reasoning; "(esimerkkiaineisto)" now only in the caption.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

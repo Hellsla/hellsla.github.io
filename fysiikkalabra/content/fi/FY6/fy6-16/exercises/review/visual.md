@@ -1,19 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: d7cc99d546a9be81
+CONTENT-HASH: 7de922d922addd67
+Round: 2
 
-Delta: new L2-08 (16-16, order-of-magnitude charging time, four options).
+Delta: options replaced (5,1 / 11 / 13 / 15 h), question "Kuinka kauan lataus kestää?", fractions as `:`, solution lists the slips.
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] 16-16 correct feedback `t = W_akku/(ηP)` is set as an inline small fraction (`\tfrac`), so the subscript "akku" is tiny at 390 px; write `t = W_akku : (ηP)` or use a display block.
-- [Minor] 16-16 option order is increasing (0,015 / 0,15 / 15 / 15 000 h), as it should; the correct option sits third, a plain `noin 15 h` with no length or hedging cue.
+- [Minor] 16-16 the correct value 15 h is the largest of the four and the feedback says every slip makes the time shorter, so a student who only remembers "losses lengthen" can pick it by position; add a distractor above 15 h (e.g. a forgotten kilo factor is no longer there, so for example dividing by `0,85` twice, about 18 h).
+- [Minor] 16-16 the options appear in the order 11, 13, 5,1, 15 h; order them by size (5,1 / 11 / 13 / 15) so the comparison is easy on a phone.
 
 ## Checked
-- Renders (own script, 390 px and 360 px, correct option committed, all feedback, answer and solution open): no overflow, the aligned display `t = ...` is 286 px inside its scroll box (no clipping), unit figures and spacing correct.
-- Rendered: every distractor feedback names the exact slip (kWh against W, 85 against 0,85, Wh against kW) without revealing the correct value early; the correct feedback is short and inline formula chain fits.
-- Text only: compound words (hyötysuhde, latauskaapeli, suuruusluokka) spelled correctly.
+- Renders (own script, 390 px, correct option committed, all feedback, answer and solution open): page width = viewport, no overflow; `t = W_akku : (ηP)` in feedback is one line with a readable subscript; the aligned display is 286 px inside its scroll box; the new `t = 24 kWh : 1,84 kW ≈ 13 h` (254 px) and `t = 0,85 · 24 kWh : 1,84 kW` (243 px) lines fit.
+- Rendered: each distractor feedback names its slip (3UI, multiplying by η, leaving η out) and the correct feedback gives only the formula; the three slips are now specific.
+- Text only: the options' order is read from the built HTML.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 5
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

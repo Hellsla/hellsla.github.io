@@ -1,22 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 04b27443182f33ae
-Round: 1
+CONTENT-HASH: 457a3381949c58f3
+Round: 2
 
 ## Blocking
 (none)
 
 ## Polish
-- solutions.md:86 — the solution first computes I_C ≈ 144 mA, then says "noin 140 mA, kaksi merkitsevää numeroa"; make the line and the answer field agree (write 140 mA already in the list, or say "1,4·10^2 mA").
-- exercises.json:114 — four separate divisions plus a ranking is more than one step for Level 1; keep it but make sure the four situations stay the only work (no unit conversions beyond kΩ).
-- solutions.md:71 — the solution does not give the order by voltage alone (A, B and C, D) to show how it differs; one line "jännitteen mukaan C ja D vaihtaisivat paikkaa" makes the warned mistake visible.
+- solutions.md — the order list is stated, but the line "Jännitteen mukaan järjestys olisi eri, A, B ja C, D" would read better as "A, sitten B ja C yhtä suuret, viimeisenä D" since B and C have the same voltage.
 
 ## Checked
-- Text only (no render); I = U : R chains measured with KaTeX at 16 px: 239-249 px, under 300 px.
-- Recomputed: A 1,2 mA, B 5,0 mA, C 143,75 mA, D 40 mA; order A, B, D, C; the thresholds quoted (0,5, 10, 30, 50 mA) agree with the lesson's table.
-- The task catches the chapter's warned mistake (high voltage alone is dangerous): the voltage order (A, B and C, D) and the resistance order (B, D, A, C) both differ from the correct one.
-- A student could not guess the order by form: the situations are labelled A-D in a neutral order and the shuffled items carry no hint.
-- Data realistic for the set (dry skin and shoes 46 kΩ, as the other tasks use 50-55 kΩ; wet hand 1,6 kΩ; step voltage 25 kΩ is a given, not taught).
-- Within the chapter (Ohm's law for the body, the table, step voltage in the summary); the question is the last sentence and says direction (pienimmästä suurimpaan).
-- Division written with a colon in the solution, as the course rule asks.
-- Not a duplicate of L1-03/L1-04 (one case each) or L2-05 (a table with one ratio question); level 1, kind model + reasoning; 21 tasks (9/7/5).
+- Text only (no render); I = U : R chain measured at 16 px: 249 px, under 300 px.
+- Round 1 items resolved: I_C now 140 mA in the list with a line on two significant figures; the voltage order is stated; shoe caveat added for situation B.
+- Exercise unchanged; recomputed A 1,2, B 5,0, D 40, C 143,75 mA, order A, B, D, C; thresholds agree with the lesson table.
+- Catches the warned mistake (high voltage alone is dangerous): voltage order and resistance order both differ from the correct one.
+- Within the chapter; question last and states the direction; colon division as the course rule asks.
+- Not a duplicate of L1-03/L1-04/L2-05; level 1 with four divisions is acceptable.
 - Hash unchanged at the start and end.

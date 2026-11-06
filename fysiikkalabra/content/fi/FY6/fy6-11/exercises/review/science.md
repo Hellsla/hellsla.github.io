@@ -1,19 +1,18 @@
-VERDICT: FAIL
-CONTENT-HASH: e803415d0d56c89b
-Round: 1. One new YO-skill task, fy6-11-L2-08 (type 3, Voimakuvion valinta, four new figures); the rest of the set was PASS before and is unchanged.
+VERDICT: PASS
+CONTENT-HASH: 5e217585a15dde17
+Round: 2. Round 1 had one Blocking item (the 0,10 g bead with −20 nC would exceed the breakdown strength of air). It is fixed in 57a66480d: the task is now a dust grain in a vacuum chamber.
 
 ## Blocking
-- exercises.json:255 (fy6-11-L2-08) — the data are not realistic. A 0,10 g plastic bead has a radius of about 3 mm, and −20 nC on it gives a surface field of about kq/r² ≈ 2·10⁷ V/m. That is roughly seven times the breakdown strength of air (about 3·10⁶ V/m, which FY6 itself teaches under läpilyöntilujuus), so the bead could not keep its charge in air. — Put the plates in a vacuum ("levyt ovat tyhjiökammiossa" in place of "Ilmanvastus jätetään huomiotta"), or scale the bead down, for example a dust grain of 1,0·10⁻¹² kg with −2,0·10⁻¹⁶ C, in a vacuum. That keeps F_s : G ≈ 2 and the figures unchanged; update the solution and the feedback numbers to match.
 
 ## Polish
-- exercises.json:255–290 — no distractor carries the lesson's Yleinen virhekäsitys (force growing near a plate; E depending on the test charge). A and D carry mistakes the lesson's Kaava warns about, and A repeats L1-07. Consider a sentence on the bead's height in the task, with D's feedback (or the solution) saying F_s is the same anywhere between the plates.
-- lessons/FY6/fy6-11/figures.py (pick-*) — the descriptions say "suorakulmiona" but not that the forces start from the body (G from the centre, F_s from just left of it). Add "lähtevät kappaleesta" for a reader who cannot see the figure.
+- lessons/FY6/fy6-11/figures.py:404 (PK_DESC, carried over) — the descriptions do not say that the arrows start from the body; add "lähtevät kappaleesta" for a reader who cannot see the figure.
+- exercises.json:253 (carried over) — still no distractor for the lesson's Yleinen virhekäsitys (force growing near a plate). The solution's Periaate now says "kaikkialla levyjen välissä", which is enough; an option for it stays optional.
 
 ## Checked
-- Hash e803415d0d56c89b at start and end.
-- All answers.py values rerun in one call: no mismatch.
-- F_s = |q|E = 2,0 mN down (negative, upward field), G = 0,98 mN; ratio 2,04, matching the figures' "kaksi kertaa" and PK_FS : PK_G in figures.py; four descriptions match the drawn arrows.
-- Physics in the feedback: no force along v needed, forces change only the vertical velocity; weight is negligible for an electron, not for this bead (brief: öljypisarat, pölyhiukkaset).
-- Notation \overline{F}_\text{s}, \overline{G}, \overline{v}; the force is red and v blue as FY6 requires (from code; colours not rendered).
-- Not identifiable by form: "Voimakuvio A–D".
-- Formulas measured with KaTeX in Chrome at 390 px (formula widths only, figures not rendered): widest inline 282 px (G = mg … in the solution), under 300 px.
+- Hash 5e217585a15dde17 at start and end; the packet was regenerated and read again.
+- The new data are realistic: m = 1,0·10⁻¹² kg is a grain of radius about 5 µm, and q = −2,0·10⁻¹⁶ C is about 1250 e. Its surface field is about 7·10⁴ V/m, far below breakdown, and the vacuum removes air resistance as the brief's "tyhjiössä" does.
+- Recomputed: F_s = |q|E = 2,0·10⁻¹¹ N down, G = 9,8·10⁻¹² N down, ratio 2,04. This matches the figures (PK_FS : PK_G, same pixel lengths), the four descriptions, the feedback and the answers.py comment.
+- All "helmi" wording is replaced consistently in the stem, the feedback, the solution and the descriptions.
+- Option A (force along the field) and option D (weight left out as for an electron) still catch mistakes the lesson warns about.
+- The key is not identifiable by form ("Voimakuvio A–D").
+- Formulas measured with KaTeX in Chrome at 390 px (formula widths only; figures not rendered): widest inline 268 px, under 300 px. G = mg is now on its own row.

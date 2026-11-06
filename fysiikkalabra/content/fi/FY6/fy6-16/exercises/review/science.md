@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: d7cc99d546a9be81
-Round 1, science, mode full. Scope: the new YO-skill task fy6-16-L2-08 (order of magnitude, type 5); the rest of the set was PASS and is unchanged. Checked from text only, no renders.
+CONTENT-HASH: 7de922d922addd67
+Round: 2, science, mode full. Scope: fy6-16-L2-08, redesigned in commit 57a66480d from an order-of-magnitude task into a computed-value choice (5,1 / 11 / 13 / 15 h). The rest of the set is unchanged. Checked from text only, no renders.
 
 ## Blocking
 
 ## Polish
-- fy6-16/exercises/exercises.json:230 — the chapter's own warned mistake (multiplying by η instead of dividing, 24 · 0,85 : 1,84 ≈ 11 h) leads to the credited "noin 15 h", because 11 h is nearest to 15 h. In a magnitude task this cannot be a separate option, but no distractor catches it, and the task does not test it. Pedagogy should decide whether that is acceptable, or add a closing line in the solution that shows ÷η vs. ×η.
-- fy6-16/exercises/exercises.json:230 — the options are a factor 10, 100 and 1000 apart (docs/exercise-types.md asks for 10–100). The 15 000 h distractor (Wh with kW) is still a real error, so keep it if pedagogy agrees.
+- fy6-16/exercises/exercises.json (L2-08 choices) — the options rise in value and the correct 15 h comes last as the largest. A student who knows only "häviöt pidentävät" could pick it without computing. It is still physics-correct, so this is for pedagogy to decide: it could shuffle the order (e.g. 13 / 15 / 5,1 / 11 h) if the answer-position check allows.
 
 ## Checked
-- Recomputed: P = 230 V · 8,0 A = 1,84 kW and t = 24 kWh : (0,85 · 1,84 kW) = 15,3 h. The distractors were checked against their stated errors: 0,0153 h (kWh with W), 0,153 h (η = 85), 15 345 h (Wh with kW), and 15 345 h is about 1,75 a, so "lähes kaksi vuotta" holds.
-- The model is the lesson's, t = W_akku : (ηP) with P = UI single-phase. The stem states the assumption of constant power, which the lesson requires.
-- The data are realistic: an 8 A Mode-2 cable and 85 % efficiency.
-- The correct choice's feedback gives the chain without overflowing. Each wrong option's feedback names its error.
-- Form: the options differ only in value, so none can be picked out by form.
-- The solution is complete (Kysytty · Periaate · Mallivastaus) and has a real reasonableness check (≈1,6 kWh per hour).
+- I recomputed every option: 5,115 h from P = 3UI used for a single-phase socket, 11,09 h from multiplying by η, 13,04 h with η left out, and 15,35 h, which is the correct t = W_akku : (ηP). Each option's feedback names its own error and is right.
+- The chapter's warned mistake (×η instead of ÷η) is now a distractor, so the round-1 polish item is resolved. The 3UI and lossless slips come from the lesson's own formulas.
+- The stem now asks "Kuinka kauan lataus kestää?". It states the constant-power assumption the lesson requires, and its data are realistic: an 8 A cable and 85 % efficiency.
+- Solution: complete, with a real reasonableness check (≈1,6 kWh per hour). The 11 h chain `0,85 · 24 kWh : 1,84 kW` is evaluated left to right and is unambiguous. The notation W_akku, η and P = UI is the lesson's.
 - All numeric answers of the set were recomputed from answers.py in one call: no mismatch.
+- Inline width (text estimate): all rows are under about 230 px.
