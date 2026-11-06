@@ -1131,7 +1131,8 @@ ul.choices.mc label.mc-wrong{border:2px solid #b4532a;background:#fbf1ea}ul.choi
    exercise's head row; the dialog covers the window: a bar (Tehtävä 3-4, 4 / 20, Edellinen, Seuraava, Sulje), then the
    task and the solution editor. From 1100 px they stand side by side and each scrolls on its own (the task at most
    44rem wide, so its lines stay readable); below that they stand under each other and the dialog scrolls. */
-.ex-big{margin-left:auto;display:inline-flex;align-items:center;gap:.35rem;min-height:40px;padding:0 .8rem;border:1px solid var(--line);border-radius:999px;background:var(--surface);font:600 var(--fs-ui) var(--sans);color:var(--accent-deep);cursor:pointer}
+.ex-big{margin-left:auto;display:inline-flex;align-items:center;justify-content:center;flex:none;width:40px;height:40px;padding:0;border:1px solid var(--line);border-radius:999px;background:var(--surface);font-size:1.05rem;color:var(--accent-deep);cursor:pointer}   /* the icon alone, 40 px (teacher 2026-11-06) */
+.ex-head:has(>.ex-big){position:relative;padding-right:3rem}.ex-head>.ex-big{position:absolute;top:0;right:0}   /* at the right end of the number row, never on a row of its own */
 .ex-big::before{content:"";width:.85em;height:.85em;flex:none;background:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M10 2h4v4M6 14H2v-4M14 2 9 7M2 14l5-5'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M10 2h4v4M6 14H2v-4M14 2 9 7M2 14l5-5'/%3E%3C/svg%3E") center/contain no-repeat}
 .ex-big:hover{background:var(--accent-soft);border-color:var(--accent-deep)}
 dialog.ex-focus{box-sizing:border-box;position:fixed;inset:0;width:100vw;height:100vh;height:100dvh;max-width:none;max-height:none;margin:0;padding:0;border:0;background:var(--bg);color:var(--ink);overflow:hidden;font-size:var(--fs-body);line-height:var(--lh)}
@@ -1152,8 +1153,7 @@ html.ex-focus-on{overflow:hidden}
 .ex-focus-task>li{margin:0;padding:0}
 .ex-focus-task .ex-big,.ex-focus-task .pad-open{display:none}   /* already big; the editor is always open here */
 .ex-focus-task>.practice-task{margin:0;max-width:none}
-.practice-task>:is(h2,h3)>.ex-big{float:right;margin:0 0 .3rem 1rem;font-size:var(--fs-ui);line-height:1}
-.practice-task>:is(h2,h3):has(>.ex-big){flex-wrap:wrap;row-gap:.4rem}   /* a heading that is a flex row (Haastetehtävät): the button wraps under the title on a phone */
+.practice-task>:is(h2,h3):has(>.ex-big){position:relative;padding-right:3rem;flex-wrap:wrap}.practice-task>:is(h2,h3)>.ex-big{position:absolute;top:50%;right:0;margin:-20px 0 0}   /* at the right end of the task's heading */
 .ex-focus-body.no-pad>.ex-focus-pad{display:none}
 .ex-focus-pad{max-width:44rem;margin:1rem auto 0;padding-top:1rem;border-top:1px solid var(--line)}
 .ex-focus-pad .pad{margin:0}
