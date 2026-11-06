@@ -139,6 +139,21 @@
 **Answer:** $5.2\,\text{h}$, two significant figures like the current $0.50\,\text{A}$.
 **Reasonableness:** With a current of $0.50\,\text{A}$, a charge of $2.5\,\text{Ah}$ passes in five hours, which is close to the capacity $2.6\,\text{Ah}$, so the time is a little over five hours.
 
+## fy6-9-L1-09
+**Find:** which of the four expressions gives the energy stored in the power bank, that is, which expression has the unit of energy
+**Principle:** The unit of an expression is found by substituting the unit of each quantity: $Q$ ($\text{Ah}$), $U$ ($\text{V}$) and $t$ ($\text{h}$). A volt times an ampere is a watt, so $1\,\text{V}\cdot 1\,\text{Ah} = 1\,\text{Wh}$, which is a unit of energy. The energy of a battery is voltage times charge, $W = UQ$.
+**Model answer:** The correct one is $UQ$. The units of the expressions:
+
+$Q$: $\text{Ah}$, the unit of charge
+
+$UQ$: $\text{V}\cdot\text{Ah} = \text{Wh}$, the unit of energy
+
+$\dfrac{UQ}{t}$: $\dfrac{\text{Wh}}{\text{h}} = \text{W}$, the unit of power
+
+$UQt$: $\text{Wh}\cdot\text{h}$, not the unit of any quantity of this chapter
+
+Only the unit of $UQ$ is a unit of energy, and it is also the formula for the energy of a battery, $W = UQ$. The capacity $Q$ alone tells the charge that can pass through the battery, and it tells no energy without the voltage. The expression $\dfrac{UQ}{t}$ is the average power of the charging. In $UQt$ the time is included twice, because the ampere-hour already contains time: $1\,\text{Ah} = 1\,\text{A}\cdot 1\,\text{h}$. So the charging time is not needed for calculating the energy.
+
 ## fy6-9-L2-05
 **Given:** discharge current $I = 0.50\,\text{A}$, measurement interval $\Delta t = 1.0\,\text{h}$, terminal voltages from the table $4.15\,\text{V}$, $3.92\,\text{V}$, $3.80\,\text{V}$, $3.71\,\text{V}$, $3.58\,\text{V}$ and $3.12\,\text{V}$
 **Find:** the energy $W$ delivered by the cell in watt-hours

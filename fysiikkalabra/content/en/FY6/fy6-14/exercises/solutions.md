@@ -169,6 +169,19 @@
 **Answer:** $390\,\Omega$, two significant figures like the voltages and the current.
 **Reasonableness:** Check: $387\,\Omega \cdot 0.015\,\text{A} = 5.8\,\text{V}$, and $5.8\,\text{V} + 3.2\,\text{V} = 9.0\,\text{V}$. The student's $600\,\Omega$ would give a current of only $5.8\,\text{V} : 600\,\Omega = 9.7\,\text{mA}$, so the LED would be dimmer than desired.
 
+## fy6-14-L2-08
+**Find:** which of the three lights are on and why.
+**Principle:** A diode and an LED conduct only in the forward direction, when the anode is on the positive terminal side of the battery. In the reverse direction no current passes. Branches connected in parallel are each at the whole voltage of the battery, so each branch is a circuit of its own: a diode in the reverse direction in one branch interrupts only the current of that branch. The same current passes through components in series.
+**Model answer:** Only LED A is on.
+
+Branch 1: the anode of the LED is on the positive terminal side, so the LED is in the forward direction. The voltage of the branch $4.5\,\text{V}$ is greater than the voltage of the LED $2.0\,\text{V}$, and across the series resistor remains $4.5\,\text{V} - 2.0\,\text{V} = 2.5\,\text{V}$. Current passes, and LED A is on.
+
+Branch 2: the cathode of the LED is on the positive terminal side, so LED B is in the reverse direction. No current passes, and the whole $4.5\,\text{V}$ is across the LED.
+
+Branch 3: the cathode of the silicon diode is on the positive terminal side, so the diode is in the reverse direction. The filament of the lamp would conduct in both directions, but in series the same current passes through the lamp and the diode, and the diode stops it. Lamp C is not on.
+
+So the reason is that a diode conducts only when the anode is on the positive terminal side, and each parallel branch works as a circuit of its own. The need for a series resistor is a true fact, but it does not tell the direction of the current. If the branches were in series, even one diode in the reverse direction would interrupt the current of the whole circuit, and no light would be on.
+
 ## fy6-14-L3-04
 **Given:** area $A = 24\,\text{m}^2$, efficiency $\eta = 19\,\%$, monthly radiation energies $H$ and consumptions $E_\text{kul}$ in the table
 **Find:** a) the annual production $E$, b) the degree of self-sufficiency as a percentage, c) the months in which the production is smaller than the consumption, and the limitation of the degree of self-sufficiency

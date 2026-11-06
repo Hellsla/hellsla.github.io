@@ -218,3 +218,19 @@ b) $13\,\text{a}$. Vastaus on annettu kahdella merkitsevällä numerolla kuten h
 
 c) Käyttöiän aikana laite säästää ostohinnan jälkeen noin $77\,\text{€}$. Vaihto kannattaa vain niukasti. Takaisinmaksuaika on lähellä käyttöikää $15\,\text{a}$, ja voitto on noin $16\,\%$ ostohinnasta. Malli ei ota huomioon, että vanha jääkaappi lämmittää asuntoa enemmän. Sähkölämmityksen aikana talvella osa säästöstä menee siis hukkaan.
 **Järkevyys:** Tarkistus: $13\,\text{a} \cdot 37{,}74\,\text{€/a} = 490{,}6\,\text{€} \approx 489\,\text{€}$. Uusi laite käyttää vain $98 : 320 \approx 31\,\%$ vanhan energiasta, joten suuri säästö on uskottava.
+
+## fy6-7-L1-09
+**Kysytty:** mikroaaltouunin $3{,}0\,\text{min}$:ssa käyttämän sähköenergian $E$ suuruusluokka kilowattitunteina.
+**Periaate:** Uunin teho pysyy lämmityksen ajan vakiona. Siksi energia on teho kertaa aika, $E = Pt$. Kun teho on kilowatteina ja aika tunteina, energia saadaan suoraan kilowattitunteina. Minuutit muutetaan siis ensin tunneiksi.
+**Mallivastaus:** Aika tunteina:
+
+$$t = \frac{3{,}0}{60}\,\text{h} = 0{,}050\,\text{h}$$
+
+Energia:
+
+$$\begin{aligned}
+&E = 1{,}2\,\text{kW} \cdot 0{,}050\,\text{h} \\
+&\phantom{E} = 0{,}060\,\text{kWh}
+\end{aligned}$$
+
+Uuni käyttää noin $0{,}060\,\text{kWh}$ eli $60\,\text{Wh}$ sähköenergiaa. Suuruusluokka on siis sadasosia kilowattitunnista. Väärät vaihtoehdot syntyvät yksikkövirheistä. Minuuttien jakaminen luvulla $3600$ antaa $0{,}0010\,\text{kWh}$. Minuuttien sijoittaminen tunteina antaa $3{,}6\,\text{kWh}$. Wattien sijoittaminen kilowatteina antaa $60\,\text{kWh}$. Wattien ja minuuttien tulo antaa $3600\,\text{kWh}$. Järkevyys: yhden kilowatin laite käyttää tunnissa $1\,\text{kWh}$, ja kolme minuuttia on vain $\tfrac{1}{20}$ tunnista.

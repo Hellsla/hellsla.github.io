@@ -140,6 +140,35 @@
 **Answer:** $144\,\text{mJ}$, three significant figures, because the capacitance $1000\,\mu\text{F}$ and the voltage $18\,\text{V}$ determine the result accurately enough.
 **Reasonableness:** The voltage triples, so the energy grows to $3^2 = 9$ times as large: $W_2 : W_1 = 162\,\text{mJ} : 18\,\text{mJ} = 9$. The increase is $9W_1 - W_1 = 8W_1 = 8 \cdot 18\,\text{mJ} = 144\,\text{mJ}$.
 
+## fy6-13-L1-09
+**Find:** which of the five statements about a charged capacitor are true.
+**Principle:** In charging, the battery moves charge from one plate to the other, so the plates have charges $+Q$ and $-Q$, and $Q = CU$. Charge does not pass through the insulator, and the current stops when the voltage of the capacitor is the voltage of the battery. The capacitance depends only on the structure, and the energy is $W = \tfrac{1}{2} C U^2$.
+**Model answer:** The charge is
+
+$Q = CU$
+
+$Q = 100 \cdot 10^{-6}\,\text{F} \cdot 12\,\text{V}$
+
+$Q = 1.2 \cdot 10^{-3}\,\text{C} = 1.2\,\text{mC}$
+
+and the energy is
+
+$W = \tfrac{1}{2} C U^2$
+
+$W = \tfrac{1}{2} \cdot 100 \cdot 10^{-6}\,\text{F} \cdot (12\,\text{V})^2$
+
+$W = 7.2 \cdot 10^{-3}\,\text{J} = 7.2\,\text{mJ}$
+
+1 true: the charges of the plates are $+1.2\,\text{mC}$ and $-1.2\,\text{mC}$, and their sum is zero.
+
+2 false: the insulator does not conduct electricity, so charge does not pass through it. Current passes in the conductors only during charging; once the current has stopped, the charge of the plates no longer changes.
+
+3 false: double the voltage brings double the charge, so $C = \tfrac{Q}{U}$ is still $100\,\mu\text{F}$.
+
+4 false: $14.4\,\text{mJ}$ is $QU$, the energy given by the battery. Half of it is stored in the capacitor, $7.2\,\text{mJ}$, and the other half becomes internal energy of the resistor.
+
+5 true: when $C$ stays the same, the energy is proportional to the square of the voltage. At $24\,\text{V}$ it is $4 \cdot 7.2\,\text{mJ} = 28.8\,\text{mJ}$.
+
 ## fy6-13-L2-05
 **Given:** the points $(U;\ Q)$ of the table: $(2.0\,\text{V};\ 94\,\mu\text{C})$, $(4.0\,\text{V};\ 189\,\mu\text{C})$, $(6.0\,\text{V};\ 281\,\mu\text{C})$, $(8.0\,\text{V};\ 380\,\mu\text{C})$, $(10.0\,\text{V};\ 471\,\mu\text{C})$ and $(12.0\,\text{V};\ 567\,\mu\text{C})$
 **Find:** the energy $W$ at the voltage $12\,\text{V}$ in millijoules

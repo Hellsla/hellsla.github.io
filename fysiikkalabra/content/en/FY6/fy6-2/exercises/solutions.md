@@ -187,3 +187,28 @@ $\Delta U_{200} = 0.005 \cdot 1.8\,\text{V} + 2 \cdot 0.1\,\text{V} = 0.009\,\te
 **Substitution:** a) $R = \dfrac{4.52\,\text{V}}{0.0384\,\text{A}} = 117.71\,\Omega$. b) $\Delta U = 0.005 \cdot 4.52\,\text{V} + 2 \cdot 0.01\,\text{V} = 0.0426\,\text{V}$, so $\dfrac{\Delta U}{U} = \dfrac{0.0426\,\text{V}}{4.52\,\text{V}} = 0.00942 = 0.94\,\%$. Also $\Delta I = 0.010 \cdot 38.4\,\text{mA} + 2 \cdot 0.1\,\text{mA} = 0.584\,\text{mA}$, so $\dfrac{\Delta I}{I} = \dfrac{0.584\,\text{mA}}{38.4\,\text{mA}} = 0.0152 = 1.5\,\%$. c) The relative error limit is $0.00942 + 0.0152 = 0.0246 = 2.5\,\%$, so $\Delta R = 0.0246 \cdot 117.71\,\Omega = 2.90\,\Omega$.
 **Answer:** the error limit of part c) is $\Delta R = 3\,\Omega$, one significant figure (calculator value $2.90\,\Omega$). The measurement result is $R = 118\,\Omega \pm 3\,\Omega$, that is the interval $115$–$121\,\Omega$, and the nominal value $120\,\Omega$ fits in this interval. The student's conclusion is wrong: the difference from the nominal value is $2.3\,\Omega$, which is smaller than the error limit, so the measurement does not show the resistor to be faulty. In the report the result must be given with its error limit and rounded according to the error limit, instead of writing four significant figures without an error limit. The current of the voltmeter is $4.52\,\text{V} : 10\,\text{M}\Omega = 0.45\,\mu\text{A}$, which is only $0.001\,\%$ of the current $38.4\,\text{mA}$, so it can be neglected (the resistance of the meter is large compared with the resistor $118\,\Omega$).
 **Reasonableness:** The relative error limits of the voltage and the current are about one and one and a half percent, so their sum is about two and a half percent, and $2.5\,\%$ of $118\,\Omega$ is about $3\,\Omega$. The nominal value $120\,\Omega$ differs from the measurement result by about $2\,\%$ ($2.29\,\Omega : 117.71\,\Omega = 1.95\,\%$), which is less than $2.5\,\%$.
+
+## fy6-2-L2-08
+**Find:** which line of the student's measurement plan is wrong, when the current and the voltage of a lamp are measured with multimeters.
+**Principle:** An ammeter is connected in series and a voltmeter in parallel. The measurement of an unknown value is started on the largest range, but the final reading is read on the smallest range on which the value fits. The error limit of a reading is $\Delta x = p \cdot x + n \cdot r$, and on a small range the resolution $r$ is smaller.
+**Model answer:** Line 1 is correct: the current must pass through the meter, so the meter is in series with the lamp.
+
+Line 2 is correct: the order of magnitude is not known, so one starts from the range $10\,\text{A}$ so that the fuse does not blow.
+
+Line 3 is wrong. The reading $0.14\,\text{A} = 140\,\text{mA}$ fits the range $200\,\text{mA}$. The error limits on the range $10\,\text{A}$ are
+
+$\Delta I = 0.020 \cdot 0.14\,\text{A} + 3 \cdot 0.01\,\text{A}$
+
+$\Delta I \approx 0.033\,\text{A} = 33\,\text{mA}$ (intermediate result, about $0.03\,\text{A}$)
+
+and on the range $200\,\text{mA}$, when the reading is about $140.0\,\text{mA}$ and $2 \cdot 0.1\,\text{mA} = 0.2\,\text{mA}$,
+
+$\Delta I = 0.010 \cdot 140\,\text{mA} + 0.2\,\text{mA}$
+
+$\Delta I = 1.6\,\text{mA}$
+
+On the large range the error limit is thus about twenty times as large. The final current is read on the range $200\,\text{mA}$.
+
+Line 4 is correct: the voltmeter is in parallel with the lamp, and on the range $2\,\text{V}$ the display shows at most $1.999\,\text{V}$, so $4.38\,\text{V}$ would give OL. The smallest range on which the reading fits is $20\,\text{V}$.
+
+The correct answer is line 3.

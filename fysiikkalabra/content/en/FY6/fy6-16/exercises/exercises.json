@@ -225,6 +225,37 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy6-16-L2-08",
+      "level": 2,
+      "text": "At relatives' home, $24\\,\\text{kWh}$ of energy is to be stored in the battery of an electric car. The car is charged from an ordinary socket with a charging cable that limits the current to $8.0\\,\\text{A}$. The voltage is $230\\,\\text{V}$, the efficiency of charging is $85\\,\\%$, and the power stays constant throughout the charging (example values).\n\nHow long does the charging take?",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": "about $15\\,\\text{h}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "about $5.1\\,\\text{h}$",
+          "feedback": "This result comes from calculating the power with the formula of a three-phase device, $P = 3UI$. An ordinary socket is single-phase, so the power is $P = UI = 1.84\\,\\text{kW}$ and the charging time is three times as long."
+        },
+        {
+          "text": "about $11\\,\\text{h}$",
+          "feedback": "This result comes from multiplying the energy going into the battery by the efficiency instead of dividing by it. Because of losses, more energy is taken from the grid than is stored in the battery, so charging takes longer than without losses, $t = W_\\text{battery} : (\\eta P)$."
+        },
+        {
+          "text": "about $13\\,\\text{h}$",
+          "feedback": "This result comes from leaving out the efficiency: $24\\,\\text{kWh} : 1.84\\,\\text{kW} \\approx 13\\,\\text{h}$ is the charging time without losses. Because of losses, more energy has to be taken from the grid, so the time is longer."
+        },
+        {
+          "text": "about $15\\,\\text{h}$",
+          "correct": true,
+          "feedback": "Correct: the power is $P = UI = 1.84\\,\\text{kW}$, so $t = W_\\text{battery} : (\\eta P)$, that is, $t \\approx 15\\,\\text{h}$."
+        }
+      ]
     }
   ],
   "level3": [

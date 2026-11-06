@@ -140,6 +140,21 @@
 **Vastaus:** $5{,}2\,\text{h}$, kaksi merkitsevää numeroa kuten virrassa $0{,}50\,\text{A}$.
 **Järkevyys:** Virralla $0{,}50\,\text{A}$ viidessä tunnissa kulkee $2{,}5\,\text{Ah}$. Se on lähellä kapasiteettia $2{,}6\,\text{Ah}$. Aika on siis hieman yli viisi tuntia.
 
+## fy6-9-L1-09
+**Kysytty:** mikä neljästä lausekkeesta antaa varavirtalähteeseen varastoituneen energian eli minkä lausekkeen yksikkö on energian yksikkö
+**Periaate:** Lausekkeen yksikkö saadaan, kun jokaisen suureen paikalle sijoitetaan sen yksikkö: $Q$ ($\text{Ah}$), $U$ ($\text{V}$) ja $t$ ($\text{h}$). Voltti kertaa ampeeri on watti. Siksi $1\,\text{V}\cdot 1\,\text{Ah} = 1\,\text{Wh}$, ja se on energian yksikkö. Akun energia on jännite kertaa varaus, $W = UQ$.
+**Mallivastaus:** Oikea on $UQ$. Lausekkeiden yksiköt:
+
+$Q$: $\text{Ah}$, varauksen yksikkö
+
+$UQ$: $\text{V}\cdot\text{Ah} = \text{Wh}$, energian yksikkö
+
+$\dfrac{UQ}{t}$: $\dfrac{\text{Wh}}{\text{h}} = \text{W}$, tehon yksikkö
+
+$UQt$: $\text{Wh}\cdot\text{h}$, ei minkään tämän luvun suureen yksikkö
+
+Vain lausekkeen $UQ$ yksikkö on energian yksikkö. Se on myös akun energian kaava $W = UQ$. Pelkkä kapasiteetti $Q$ kertoo varauksen, joka akun läpi voi kulkea. Ilman jännitettä se ei kerro energiaa. Lauseke $\dfrac{UQ}{t}$ on latauksen keskimääräinen teho. Lausekkeessa $UQt$ aika on mukana kahdesti, koska ampeeritunnissa on jo aika: $1\,\text{Ah} = 1\,\text{A}\cdot 1\,\text{h}$. Latausaikaa ei siis tarvita energian laskemiseen.
+
 ## fy6-9-L2-05
 **Annettu:** purkausvirta $I = 0{,}50\,\text{A}$, mittausväli $\Delta t = 1{,}0\,\text{h}$, napajännitteet taulukosta $4{,}15\,\text{V}$, $3{,}92\,\text{V}$, $3{,}80\,\text{V}$, $3{,}71\,\text{V}$, $3{,}58\,\text{V}$ ja $3{,}12\,\text{V}$
 **Kysytty:** kennon antama energia $W$ wattitunteina

@@ -262,6 +262,41 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy6-12-L2-08",
+      "level": 2,
+      "text": "Kahden yhdensuuntaisen levyn välissä on homogeeninen sähkökenttä. Elektroni lähtee levosta kohdasta A. Kohdan A potentiaali negatiiviseen levyyn nähden on $30\\,\\text{V}$. Elektroni kulkee kohtaan B, jonka potentiaali on $120\\,\\text{V}$. Vain sähköinen voima tekee työtä elektroniin.\n\nOppilas laskee elektronin liike-energian kohdassa B. Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$.\n\nRivi 1: elektronin varaus on negatiivinen, joten sähköinen voima osoittaa kenttää vastaan. Levosta lähtenyt elektroni liikkuu kohti suurempaa potentiaalia eli kohdasta A kohtaan B.\n\nRivi 2: elektronin potentiaalienergia pienenee matkalla. Negatiivisen varauksen potentiaalienergia $E_\\text{p} = qV$ on nimittäin sitä pienempi, mitä suurempi potentiaali on.\n\nRivi 3: elektroni kulkee potentiaalieron $U = 120\\,\\text{V}$ läpi, joten sen liike-energia kohdassa B on $E_\\text{k} = eU = 120\\,\\text{eV}$.\n\nRivi 4: jouleina $E_\\text{k} = 120 \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{J}$, eli $E_\\text{k} = 1{,}9 \\cdot 10^{-17}\\,\\text{J}$.\n\nTarkista lasku rivi riviltä. Valitse väärä rivi. Jos laskussa ei ole virhettä, valitse viimeinen vaihtoehto.",
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "answer": "Rivi 3: liike-energia elektronivoltteina",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Rivi 1: elektronin liikkeen suunta",
+          "feedback": "Rivi 1 on oikein: negatiiviseen varaukseen vaikuttava voima osoittaa kenttää vastaan, kohti suurempaa potentiaalia. Jos luulet riviä vääräksi, ajattelet, että jokainen varaus liikkuu kohti pienempää potentiaalia."
+        },
+        {
+          "text": "Rivi 2: potentiaalienergian muutos",
+          "feedback": "Rivi 2 on oikein: $qV_A = -30\\,\\text{eV}$ ja $qV_B = -120\\,\\text{eV}$, joten potentiaalienergia pienenee. Jos luulet riviä vääräksi, sekoitat potentiaalin ja potentiaalienergian. Potentiaalienergian merkki riippuu varauksesta."
+        },
+        {
+          "text": "Rivi 3: liike-energia elektronivoltteina",
+          "correct": true,
+          "feedback": "Oikein, tämä rivi on väärin: $120\\,\\text{V}$ on kohdan B potentiaali, ei potentiaaliero. Oikein laskettuna $U = V_B - V_A = 90\\,\\text{V}$, joten $E_\\text{k} = 90\\,\\text{eV}$. Jouleina se on $1{,}4 \\cdot 10^{-17}\\,\\text{J}$."
+        },
+        {
+          "text": "Rivi 4: muunnos jouleiksi",
+          "feedback": "Rivi 4 on rivin 3 arvolla oikein: $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$, joten elektronivoltit kerrotaan tällä luvulla. Jos luulet riviä vääräksi, ajattelet ehkä, että muunnoksessa pitäisi jakaa."
+        },
+        {
+          "text": "Laskussa ei ole virhettä",
+          "feedback": "Laskussa on virhe rivillä 3: liike-energian antaa kohtien potentiaaliero $V_B - V_A$, ei loppukohdan potentiaali. Elektroni lähti kohdasta A, jonka potentiaali ei ole nolla."
+        }
+      ]
     }
   ],
   "level3": [

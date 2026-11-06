@@ -254,6 +254,57 @@
       "answer": 386.666667,
       "unit": "Ω",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-14-L2-08",
+      "level": 2,
+      "text": "Pariston jännite on $4{,}5\\,\\text{V}$. Pariston napoihin on kytketty rinnan kolme haaraa.\n\nHaara 1: punainen LED A ja etuvastus ovat sarjassa. LEDin anodi eli pluspuoli on pariston plusnavan puolella.\n\nHaara 2: punainen LED B ja etuvastus ovat sarjassa. LEDin katodi eli miinuspuoli on pariston plusnavan puolella.\n\nHaara 3: hehkulamppu C ja piidiodi ovat sarjassa. Diodin katodi eli miinuspuoli on pariston plusnavan puolella.\n\nPalavan punaisen LEDin jännite on $2{,}0\\,\\text{V}$. Lamppu C palaa, kun se kytketään yksin paristoon. Mitkä valot palavat?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "Vain LED A",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Vain LED A",
+          "correct": true,
+          "feedback": "Oikein: vain LED A palaa."
+        },
+        {
+          "text": "LED A ja lamppu C",
+          "feedback": "Tämä olettaa, että lamppu palaa kummin päin tahansa myös diodin kanssa. Lampun lanka johtaa kumpaankin suuntaan. Haarassa 3 on kuitenkin sarjassa piidiodi, ja se on estosuunnassa eli ei päästä virtaa läpi. Diodi katkaisee haaran 3 virran."
+        },
+        {
+          "text": "LED B ja lamppu C",
+          "feedback": "Tämä sekoittaa anodin ja katodin. Diodi johtaa, kun anodi on plusnavan puolella. LED B ja haaran 3 piidiodi ovat estosuunnassa. Vain LED A on päästösuunnassa."
+        },
+        {
+          "text": "Ei mikään valo",
+          "feedback": "Tämä olettaa, että estosuuntainen diodi katkaisee koko piirin. Haarat ovat kuitenkin rinnan, ja jokaisen haaran yli on pariston koko jännite. Siksi haaran 1 virta kulkee muista haaroista riippumatta."
+        }
+      ],
+      "reason_prompt": "Mikä perustelu selittää vastauksesi?",
+      "reasons": [
+        {
+          "text": "Diodi johtaa vain, kun anodi on plusnavan puolella. Jokainen rinnakkainen haara toimii omana virtapiirinään.",
+          "correct": true,
+          "feedback": "Oikein: haarojen 2 ja 3 diodit ovat estosuunnassa, eikä niissä kulje virtaa. Haaran 1 LEDin yli jää $2{,}0\\,\\text{V}$ ja vastuksen yli $2{,}5\\,\\text{V}$, joten virta kulkee."
+        },
+        {
+          "text": "Hehkulampun lanka johtaa kumpaankin suuntaan, joten haarassa 3 kulkee virta diodin suunnasta riippumatta.",
+          "feedback": "Lanka kyllä johtaa kumpaankin suuntaan. Haarassa kuitenkin sama virta kulkee sekä lampun että diodin läpi. Estosuuntainen diodi pysäyttää virran, joten lamppu ei pala."
+        },
+        {
+          "text": "Yksi estosuuntainen diodi katkaisee virran koko piiristä, kuten avattu kytkin sarjapiirissä katkaisee.",
+          "feedback": "Tämä pätee sarjakytkentään. Rinnakkaiset haarat ovat erillisiä virtateitä. Estosuuntainen diodi katkaisee vain oman haaransa virran."
+        },
+        {
+          "text": "LEDin kanssa tarvitaan etuvastus, koska ilman sitä LEDin virta kasvaisi liian suureksi.",
+          "feedback": "Väite on tosi, mutta se ei selitä vastausta. Etuvastus rajoittaa virran suuruutta. Se ei kerro, kumpaan suuntaan diodi päästää virran."
+        }
+      ]
     }
   ],
   "level3": [

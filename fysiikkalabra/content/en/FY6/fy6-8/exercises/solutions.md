@@ -202,3 +202,28 @@ c) $I_\text{k} = \dfrac{6.11\,\text{V}}{0.80\,\Omega} = 7.64\,\text{A}$
 **Answer:** For the answer box: c) $7.6\,\text{A}$, two significant figures like the resistance of the wires $0.30\,\Omega$. The measurement should have been made by connecting the voltmeter directly across the terminals of the group of batteries, so that the voltage drop in the wires is not included in the measured voltage.
 **Other parts:** a) the source voltage of the group of batteries is $E \approx 6.11\,\text{V}$. b) The student's internal resistance is too large, because the slope includes the resistance of the wires; the internal resistance of the group of batteries is $0.80\,\Omega$. The student's short-circuit current $5.6\,\text{A}$ is too small, because the student divided the source voltage by too large a resistance.
 **Reasonableness:** According to the model, at the current $2.00\,\text{A}$ the terminal voltage of the group of batteries is $6.11\,\text{V} - 0.80\,\Omega \cdot 2.00\,\text{A} = 4.51\,\text{V}$ and after the wires $4.51\,\text{V} - 0.30\,\Omega \cdot 2.00\,\text{A} = 3.91\,\text{V}$, which is the fourth value of the table. The correct short-circuit current is greater than the student's, because the internal resistance of the group of batteries is smaller than the $1.1\,\Omega$ the student obtained. If the terminals were connected with wires, the current would be smaller, $6.11\,\text{V} : 1.10\,\Omega \approx 5.6\,\text{A}$, which is the student's figure, but it is the current with the wires, not the short-circuit current of the group of batteries.
+
+## fy6-8-L2-08
+**Find:** which conclusion about the source voltage $E$ and the internal resistance $R_\text{s}$ of the battery is justified on the basis of the measurements of the table.
+**Principle:** The terminal voltage is $U = E - R_\text{s} I$, so the measured points $(I, U)$ should lie on a descending line. The line meets the vertical axis at $U = E$, and its slope is $-R_\text{s}$. The slope is read from the line at two points far apart; here the extreme points are on the line. The deviations of the points from the line are compared with the measurement uncertainty $\pm 0.01\,\text{V}$.
+**Model answer:** The drops of the terminal voltage between successive measurements, when the current increases by $0.20\,\text{A}$, are $0.08\,\text{V}$, $0.07\,\text{V}$, $0.09\,\text{V}$ and $0.08\,\text{V}$. They differ from each other by at most $0.02\,\text{V}$. The difference of two drops depends on three or four readings, so its uncertainty is up to $4 \cdot 0.01\,\text{V} = 0.04\,\text{V}$, and the difference fits within it. The points thus fit one line, and the measurements do not show that the internal resistance changes.
+
+The slope from the extreme points:
+
+$$\begin{aligned}
+&R_\text{s} = -\frac{\Delta U}{\Delta I} \\
+&\phantom{R_\text{s}} = -\frac{1.19\,\text{V} - 1.51\,\text{V}}{0.90\,\text{A} - 0.10\,\text{A}} \\
+&\phantom{R_\text{s}} = \frac{0.32\,\text{V}}{0.80\,\text{A}} = 0.40\,\Omega
+\end{aligned}$$
+
+The source voltage is obtained by extending the line from the point $(0.10\,\text{A};\ 1.51\,\text{V})$ to $I = 0$:
+
+$$\begin{aligned}
+&E = U + R_\text{s} I \\
+&\phantom{E} = 1.51\,\text{V} + 0.40\,\Omega \cdot 0.10\,\text{A} \\
+&\phantom{E} = 1.55\,\text{V}
+\end{aligned}$$
+
+Conclusion: the source voltage is about $1.55\,\text{V}$ and the internal resistance about $0.40\,\Omega$. The reading $1.51\,\text{V}$ at the smallest current is a terminal voltage, not the source voltage. The quotient of one measurement, for example $1.19\,\text{V} : 0.90\,\text{A} \approx 1.3\,\Omega$, is the resistance of the load and not the internal resistance. If both errors are made, the result is $1.51\,\text{V}$ and $1.3\,\Omega$.
+
+The uncertainty affects the result too: if the readings of the extreme points are $0.01\,\text{V}$ off in opposite directions, the slope becomes $0.30\,\text{V} : 0.80\,\text{A} \approx 0.38\,\Omega$ or $0.34\,\text{V} : 0.80\,\text{A} \approx 0.43\,\Omega$, so the internal resistance is about $0.4\,\Omega$.

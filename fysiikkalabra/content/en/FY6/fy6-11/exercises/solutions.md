@@ -169,6 +169,25 @@
 **Answer:** $3.0 \cdot 10^{4}\,\text{V/m}$ ($2.98 \cdot 10^{4}\,\text{V/m}$), two significant figures like the test charge. The result is the same as $U : d$, so the field between the plates is uniform up to about $6\,\text{cm}$ from the centre.
 **Reasonableness:** The mean $2.98 \cdot 10^{4}\,\text{V/m}$ differs from $U : d$ by only $0.6\,\%$. At the point $x = 8.0\,\text{cm}$ the field is already $3.7\,\%$ weaker than at the centre, so the $3\,\%$ limit is exceeded before the edge, and at the edge $x = 10.0\,\text{cm}$ the field is already $45.2\,\%$ weaker.
 
+## fy6-11-L2-08
+**Find:** which of the four force diagrams shows the forces on the dust particle correctly.
+**Principle:** The body is the particle. The forces on it are due to the Earth (the weight $\overline{G}$) and the electric field of the plates (the electric force $\overline{F}_\text{e} = q\overline{E}$); in a vacuum there is no air resistance. The charge of the particle is negative, so the electric force points against the field. In a uniform field the magnitude of the force is $F_\text{e} = \lvert q \rvert E$ everywhere between the plates. Velocity is not a force, and a horizontal motion does not need a horizontal force.
+**Model answer:** The correct one is force diagram B. The field points up and the particle is negative, so the electric force points down. The magnitudes of the forces:
+
+$F_\text{e} = \lvert q \rvert E$
+
+$F_\text{e} = 2.0 \cdot 10^{-16}\,\text{C} \cdot 1.0 \cdot 10^{5}\,\text{N/C}$
+
+$F_\text{e} = 2.0 \cdot 10^{-11}\,\text{N}$
+
+$G = mg$
+
+$G = 1.0 \cdot 10^{-12}\,\text{kg} \cdot 9.81\,\text{m/s}^2$
+
+$G \approx 9.8 \cdot 10^{-12}\,\text{N}$
+
+Both forces point down, and the arrow of the electric force is about twice as long as the arrow of the weight, as in diagram B. In diagram A the electric force is drawn in the direction of the field, which would hold only for a positive particle. In diagram C the velocity is drawn as a force, although no force acts on the particle in the direction of motion. In diagram D the weight is missing, although it is about half of the electric force. The weight of an electron can be ignored, but the weight of a dust particle cannot.
+
 ## fy6-11-L3-04
 **Given:** example data: distance of the plates $d = 8.0\,\text{mm}$, positive plate on top, $g = 9.81\,\text{m/s}^2$; masses of the droplets $3.8$; $4.6$; $3.2$; $5.1$ and $4.2 \cdot 10^{-15}\,\text{kg}$ and hovering voltages $931\,\text{V}$, $746\,\text{V}$, $1580\,\text{V}$, $627\,\text{V}$ and $683\,\text{V}$
 **Find:** a) the charges of the droplets and the sign, b) the numbers of elementary charges and an estimate of the elementary charge, c) a comparison with the literature value, d) how the air purifier works; the estimate of the elementary charge in coulombs in the answer box

@@ -91,6 +91,40 @@
       "answer": 25.0,
       "unit": "h",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-7-L1-09",
+      "level": 1,
+      "kind": [
+        "reasoning"
+      ],
+      "text": "Mikroaaltouuni ottaa sähköverkosta tehon $1{,}2\\,\\text{kW}$. Uunilla lämmitetään ateria, ja uuni on päällä $3{,}0\\,\\text{min}$. Mikä on uunin lämmityksen aikana käyttämän sähköenergian suuruusluokka? Suuruusluokka kertoo luvun koon suunnilleen.",
+      "answer": "noin $0{,}060\\,\\text{kWh}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "noin $0{,}0010\\,\\text{kWh}$",
+          "feedback": "Tässä minuutit on muutettu tunneiksi jakamalla luvulla $3600$, kuten sekunnit. Tunnissa on kuitenkin $60$ minuuttia. Siksi aika tunteina on $\\tfrac{3{,}0}{60}\\,\\text{h}$."
+        },
+        {
+          "text": "noin $0{,}060\\,\\text{kWh}$",
+          "correct": true,
+          "feedback": "Oikein: $3{,}0\\,\\text{min} = 0{,}050\\,\\text{h}$, joten $E = 1{,}2\\,\\text{kW} \\cdot 0{,}050\\,\\text{h}$, eli $0{,}060\\,\\text{kWh}$."
+        },
+        {
+          "text": "noin $3{,}6\\,\\text{kWh}$",
+          "feedback": "Tässä aika on sijoitettu minuutteina, vaikka tulos on merkitty kilowattitunneiksi. Kilowattitunnit saadaan vain, kun teho on kilowatteina ja aika tunteina."
+        },
+        {
+          "text": "noin $60\\,\\text{kWh}$",
+          "feedback": "Tässä teho on sijoitettu watteina ja aika tunteina, mutta tulos on merkitty kilowattitunneiksi. Watteina ja tunteina saadaan wattitunteja, ja $1\\,\\text{kWh} = 1000\\,\\text{Wh}$."
+        },
+        {
+          "text": "noin $3600\\,\\text{kWh}$",
+          "feedback": "Tässä watit ja minuutit on kerrottu keskenään ja tulos on merkitty kilowattitunneiksi. Ennen kertomista teho muutetaan kilowateiksi ja aika tunneiksi."
+        }
+      ]
     }
   ],
   "level2": [

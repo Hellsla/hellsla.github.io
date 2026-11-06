@@ -254,6 +254,57 @@
       "answer": 386.666667,
       "unit": "Ω",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-14-L2-08",
+      "level": 2,
+      "text": "The voltage of the battery is $4.5\\,\\text{V}$. Three branches are connected in parallel to the terminals of the battery.\n\nBranch 1: red LED A and a series resistor in series, the anode of the LED on the positive terminal side of the battery.\n\nBranch 2: red LED B and a series resistor in series, the cathode of the LED on the positive terminal side of the battery.\n\nBranch 3: incandescent lamp C and a silicon diode in series, the cathode of the diode on the positive terminal side of the battery.\n\nThe voltage of a lit red LED is $2.0\\,\\text{V}$, and lamp C lights up when it is connected alone to the battery. Which lights are on?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "Only LED A",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Only LED A",
+          "correct": true,
+          "feedback": "Correct: only LED A is on."
+        },
+        {
+          "text": "LED A and lamp C",
+          "feedback": "This assumes that the lamp also lights with the diode, whichever way round it is. The filament of the lamp conducts in both directions, but the silicon diode in series is in the reverse direction and interrupts the current of branch 3."
+        },
+        {
+          "text": "LED B and lamp C",
+          "feedback": "This mixes up the anode and the cathode. A diode conducts when the anode is on the positive terminal side, so LED B and the silicon diode of branch 3 are in the reverse direction, and only LED A is in the forward direction."
+        },
+        {
+          "text": "No light",
+          "feedback": "This assumes that a diode in the reverse direction interrupts the whole circuit. The branches are in parallel, and the whole voltage of the battery is across each branch, so the current of branch 1 passes regardless of the other branches."
+        }
+      ],
+      "reason_prompt": "Which reason explains your answer?",
+      "reasons": [
+        {
+          "text": "A diode conducts only when the anode is on the positive terminal side, and each parallel branch works as a circuit of its own.",
+          "correct": true,
+          "feedback": "Correct: the diodes of branches 2 and 3 are in the reverse direction, and no current passes in them. In branch 1, $2.0\\,\\text{V}$ is across the LED and $2.5\\,\\text{V}$ across the resistor, so current passes."
+        },
+        {
+          "text": "The filament of an incandescent lamp conducts in both directions, so current passes in branch 3 whichever way the diode is.",
+          "feedback": "The filament does conduct in both directions, but in the branch the same current passes through the lamp and the diode. A diode in the reverse direction stops the current, so the lamp does not light."
+        },
+        {
+          "text": "One diode in the reverse direction interrupts the current of the whole circuit, like an opened switch in a series circuit.",
+          "feedback": "This holds for a series connection. Parallel branches are separate current paths, so a diode in the reverse direction interrupts only the current of its own branch."
+        },
+        {
+          "text": "A series resistor is needed with an LED, because without it the current of the LED would grow too large.",
+          "feedback": "The statement is true, but it does not explain the answer. The series resistor limits the size of the current, but it does not tell which way the diode lets current pass."
+        }
+      ]
     }
   ],
   "level3": [

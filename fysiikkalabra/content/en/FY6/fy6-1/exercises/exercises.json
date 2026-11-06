@@ -110,6 +110,45 @@
       "answer": 9.36e+19,
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-1-L1-09",
+      "level": 1,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "A flashlight has a $3.0\\,\\text{V}$ battery, a switch and a lamp in the same loop. The switch is closed, and the lamp is lit. The values of the situation are example values, and the resistance of the wires and of the battery itself is neglected.\n\nAn ammeter connected between the positive terminal of the battery and the lamp reads $0.30\\,\\text{A}$.\n\nReason which statements are true and which are false.",
+      "answer": "1 false, 2 true, 3 true, 4 false, 5 false",
+      "unit": "",
+      "tolerance": 0.02,
+      "statements": [
+        {
+          "text": "The current between the lamp and the negative terminal is less than $0.30\\,\\text{A}$, because the lamp uses up current.",
+          "true": false,
+          "feedback": "False: current is not used up in the lamp. The same charge that enters the lamp leaves it and returns to the battery, so the current is $0.30\\,\\text{A}$ on both sides of the lamp. In the lamp it is energy that changes, not charge."
+        },
+        {
+          "text": "A charge of $18\\,\\text{C}$ passes through the lamp in one minute.",
+          "true": true,
+          "feedback": "True: from the definition of current $Q = It = 0.30\\,\\text{A} \\cdot 60\\,\\text{s}$, that is, $Q = 18\\,\\text{C}$. The ampere is a coulomb per second, so the time is converted to seconds."
+        },
+        {
+          "text": "Each coulomb passing through the lamp brings $3.0\\,\\text{J}$ of energy to the lamp.",
+          "true": true,
+          "feedback": "True: voltage is the transferred energy per unit of charge, $U = \\tfrac{E}{Q}$, and $3.0\\,\\text{V} = 3.0\\,\\text{J/C}$. The resistance of the wires and of the battery itself is neglected, so all the energy is transferred to the lamp."
+        },
+        {
+          "text": "The lamp lights up only after the electrons that left the battery have reached the lamp.",
+          "true": false,
+          "feedback": "False: the wire is already full of free electrons. When the circuit is closed, they start to move everywhere in the circuit at the same time, also in the filament, so the lamp lights up at once even though the electrons advance slowly."
+        },
+        {
+          "text": "The lamp receives $3.0\\,\\text{J}$ of energy from the battery in one minute.",
+          "true": false,
+          "feedback": "False: the voltage $3.0\\,\\text{V}$ is energy per coulomb, not energy per minute. In a minute $18\\,\\text{C}$ passes through the lamp, so $E = UQ = 3.0\\,\\text{V} \\cdot 18\\,\\text{C}$, that is, $E = 54\\,\\text{J}$."
+        }
+      ]
     }
   ],
   "level2": [

@@ -218,3 +218,19 @@ b) $13\,\text{a}$, two significant figures like the price $17\,\text{c/kWh}$ and
 
 c) During the service life the appliance saves about $77\,\text{€}$ after the purchase price. The replacement is only barely worthwhile, because the payback time is close to the service life $15\,\text{a}$ and the gain is about $16\,\%$ of the purchase price. The model does not take into account that an old refrigerator warms the home more, so during electric heating in winter part of the saving is lost.
 **Reasonableness:** Check: $13\,\text{a} \cdot 37.74\,\text{€/a} = 490.6\,\text{€} \approx 489\,\text{€}$. The new appliance uses only $98 : 320 \approx 31\,\%$ of the energy of the old one, so a large saving is credible.
+
+## fy6-7-L1-09
+**Find:** the order of magnitude of the electrical energy $E$ that the microwave oven uses in $3.0\,\text{min}$, in kilowatt-hours.
+**Principle:** The power of the oven stays constant during the heating, so the energy is power times time, $E = Pt$. When the power is in kilowatts and the time in hours, the energy is obtained directly in kilowatt-hours, so the minutes are first converted to hours.
+**Model answer:** The time in hours:
+
+$$t = \frac{3.0}{60}\,\text{h} = 0.050\,\text{h}$$
+
+The energy:
+
+$$\begin{aligned}
+&E = 1.2\,\text{kW} \cdot 0.050\,\text{h} \\
+&\phantom{E} = 0.060\,\text{kWh}
+\end{aligned}$$
+
+The oven uses about $0.060\,\text{kWh}$, that is $60\,\text{Wh}$, of electrical energy. The order of magnitude is thus hundredths of a kilowatt-hour. The wrong options come from unit errors: dividing the minutes by $3600$ gives $0.0010\,\text{kWh}$, substituting the minutes as hours gives $3.6\,\text{kWh}$, substituting the watts as kilowatts gives $60\,\text{kWh}$, and the product of the watts and the minutes gives $3600\,\text{kWh}$. Reasonableness: a device of one kilowatt uses $1\,\text{kWh}$ in an hour, and three minutes is only $\tfrac{1}{20}$ of an hour.
