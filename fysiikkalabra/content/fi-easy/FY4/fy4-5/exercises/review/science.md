@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 046a61ca3dfa2bb5
-Mode: translation review of the 8 new exercises (L1-06..08, L2-05..07, L3-04..05) against the reviewed Finnish
-Round: 1
+CONTENT-HASH: 3e156a3c25cd091a
 
 ## Blocking
-(none)
-
-## Fixed
-(none) The new exercises and solutions were already faithful to the Finnish.
 
 ## Polish
-(none)
+- None.
+
+## Fixed
+- No text change needed in this translation.
 
 ## Checked
-- exercises.json: ids, kind, fbd, unit, tolerance, answers (also the string answers of L1-06 and L1-08), correct flags and choice order identical to fi for all 8 new exercises.
-- All numbers, data table cells, captions and LaTeX ({,} decimal comma) identical to fi: 55 N, 40.1 deg, 2.5 m/s2, 12.2 N, 84 N, 14.4 m.
-- Solutions: values and formulas equal fi (alpha 39.8/40.2/40.4; a = 0.802; F_mu 83.9; N 185; a1 1.20, a3 -1.19; h 14.38); voimakuvio blocks identical.
-- check_i18n.py fi-easy 0 errors.
+- New task fy4-5-L1-09 (force diagram select, constant velocity, G=N, F=F_mu, options A-D with figures pick-pitka/lisa/tasainen/nopeus) compared with the reviewed Finnish: same id, level, kind, answer, tolerance, correct flags, choice and reason order, every number and formula.
+- Recomputed the physics: constant velocity gives F = F_mu and N = G; A (F = 2 F_mu), B (F_k acts on the pusher), D (v drawn as a force) are wrong, C correct.
+- solutions.md block matches the Finnish step by step (same equations and numbers).
+- figures.json: the four pick-* descriptions match the Finnish and figures.py (arrow lengths, F_k, red v arrow, friction at the corner); no description names the correct option
+- check_i18n shows nothing for fy4-5; build.py fy4-5 succeeds.

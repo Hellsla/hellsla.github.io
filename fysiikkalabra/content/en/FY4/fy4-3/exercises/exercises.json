@@ -270,6 +270,53 @@
           "feedback": "No force is needed to maintain motion. The force of the fist acts on the wall, not on the fist, so it cannot keep the fist moving or cancel the force of the wall."
         }
       ]
+    },
+    {
+      "id": "fy4-3-L2-08",
+      "level": 2,
+      "text": "Example values: a truck of mass $12\\,\\text{t}$ reverses slowly and collides with a stationary car of mass $1.2\\,\\text{t}$.\n\nDuring the collision the truck pushes the car with the force $\\overline{F}_{KH}$ and the car pushes the truck with the force $\\overline{F}_{HK}$.\n\nHow large is the force $F_{HK}$ compared with the force $F_{KH}$ during the collision?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "$F_{HK} = F_{KH}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "$F_{HK} = \\tfrac{1}{10}\\,F_{KH}$",
+          "feedback": "This divides the forces in the ratio of the masses, as if the heavier vehicle pushed harder. However, the ratio of the masses $1.2\\,\\text{t} : 12\\,\\text{t}$ does not determine the ratio of the forces of an interaction."
+        },
+        {
+          "text": "$F_{HK} = F_{KH}$",
+          "correct": true,
+          "feedback": "Correct: during the whole collision the car pushes the truck with a force as large as the force with which the truck pushes the car, and the forces are opposite in direction."
+        },
+        {
+          "text": "$F_{HK} = 0$",
+          "feedback": "This assumes that only a moving vehicle can push. A stationary car also interacts with the truck: when the truck presses it, it pushes the truck back."
+        }
+      ],
+      "reason_prompt": "Which reason explains your answer?",
+      "reasons": [
+        {
+          "text": "The force is proportional to the mass, so ten times the mass gives ten times the force.",
+          "feedback": "This is a common misconception. A force is not a property of an object that would grow with the mass, but an interaction between two objects, and its two forces are always equally large."
+        },
+        {
+          "text": "The forces are equal and opposite, so they cancel each other in the collision.",
+          "feedback": "The forces are equally large, but they do not cancel each other: $\\overline{F}_{KH}$ acts on the car and $\\overline{F}_{HK}$ on the truck. Only forces that act on the same object can cancel each other."
+        },
+        {
+          "text": "Only a moving object can push, so the force of a stationary car is zero.",
+          "feedback": "A force does not require motion. The car and the truck touch each other, so each pushes the other, even though the car was at rest before the collision."
+        },
+        {
+          "text": "The forces are the force and the reaction force of the same interaction, so they are equally large.",
+          "correct": true,
+          "feedback": "Correct: the collision is one interaction, and by Newton's third law its forces are equally large and opposite in direction, although the masses and speeds of the vehicles differ."
+        }
+      ]
     }
   ],
   "level3": [

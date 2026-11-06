@@ -222,3 +222,17 @@ $$\begin{aligned} t &= \dfrac{203\,\text{m} + 16\,\text{m/s} \cdot 8{,}0\,\text{
 $$\begin{aligned} x &= 203\,\text{m} + 9{,}9\,\text{m/s} \cdot 54\,\text{s} \\ &= 7{,}4 \cdot 10^2\,\text{m} \end{aligned}$$
 **Vastaus:** $7{,}4 \cdot 10^2\,\text{m}$ eli noin $740\,\text{m}$, kaksi merkitsevää numeroa. Nopeuksien erotus $16 - 9{,}9 = 6{,}1\,\text{m/s}$ rajoittaa tarkkuutta.
 **Järkevyys:** Poliisiauton paikka hetkellä $54\,\text{s}$ on $16\,\text{m/s} \cdot (54\,\text{s} - 8{,}0\,\text{s}) = 7{,}4 \cdot 10^2\,\text{m}$. Se on sama kuin rekan paikka, joten ratkaisu täsmää. Poliisiauto on rekkaa nopeampi, joten saavuttaminen on mahdollista. Ennuste on epävarma, koska aineisto päättyy hetkeen $40\,\text{s}$. Saavuttaminen tapahtuu hetkellä $54\,\text{s}$, eli $14\,\text{s}$ aineiston ulkopuolella. Ennuste olettaa, että rekka ajaa koko ajan samalla nopeudella samaa suoraa tietä. Aineisto ei todista sitä. Pieni virhe rekan nopeudessa kasvaa ennusteessa, koska nopeuksien erotus on pieni. Jos rekan nopeus olisi $0{,}2\,\text{m/s}$ suurempi, aika olisi noin $3\,\%$ pidempi.
+
+## fy4-1-L1-09
+**Kysytty:** mikä neljästä kuvaajasta esittää leluauton paikan $x$ ajan $t$ funktiona, kun auto on hetkellä $t = 0$ paikassa $x_0 = 6{,}0\,\text{m}$ ja sen nopeus on koko ajan $v = -1{,}0\,\text{m/s}$.
+**Periaate:** Nopeus pysyy samana, joten liike on tasaista ja paikka on $x = x_0 + v\,t$. Silloin $(t, x)$-kuvaaja on suora. Suora leikkaa paikka-akselin alkupaikan $x_0$ kohdalla, ja sen kulmakerroin (jyrkkyys) on nopeus $v$. Negatiivinen nopeus tarkoittaa, että paikka pienenee ajan kuluessa, joten suora laskee.
+**Mallivastaus:** Oikea on kuvaaja C. Lasketaan auton paikka hetkellä $t = 4{,}0\,\text{s}$.
+
+$x = x_0 + v\,t$
+
+$x = 6{,}0\,\text{m} + (-1{,}0\,\text{m/s}) \cdot 4{,}0\,\text{s}$
+
+$x = 2{,}0\,\text{m}$
+
+Kuvaaja C kulkee pisteiden $(0\,\text{s};\ 6{,}0\,\text{m})$ ja $(4{,}0\,\text{s};\ 2{,}0\,\text{m})$ kautta. Sen kulmakerroin on $\dfrac{2{,}0\,\text{m} - 6{,}0\,\text{m}}{4{,}0\,\text{s}}$, eli $-1{,}0\,\text{m/s}$. Kuvaaja A nousee paikasta $6\,\text{m}$ paikkaan $10\,\text{m}$. Siinä nopeuden miinusmerkki on jätetty huomiotta, vaikka etumerkki kertoo liikkeen suunnan. Kuvaajan B kulmakerroin on oikea, mutta se alkaa origosta, joten alkupaikka on unohtunut. Kuvaaja D on vaakasuora suora kohdassa $-1\,\text{m}$. Siinä nopeuden arvo on piirretty paikaksi, ikään kuin kuvaaja olisi $(t, v)$-kuvaaja. Tarkistus: auto liikkuu $4{,}0\,\text{s}$ ajan $1{,}0\,\text{m}$ sekunnissa negatiiviseen suuntaan. Siksi se siirtyy $4{,}0\,\text{m}$ alkupaikasta kohti origoa.
+**Kuvaajan lukeminen:** Jokaisesta kuvaajasta luetaan paikka hetkillä $0$ ja $4{,}0\,\text{s}$. Kuvaajat B ja C laskevat yhtä jyrkästi, joten ne erottaa vasta alkupaikka: kuvaaja B alkaa kohdasta $0\,\text{m}$ ja kuvaaja C kohdasta $6{,}0\,\text{m}$.

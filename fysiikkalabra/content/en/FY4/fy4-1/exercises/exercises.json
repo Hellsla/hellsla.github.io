@@ -132,6 +132,41 @@
           "feedback": "That would hold only if the motion started from the origin at the moment zero. Here the starting point is $(2.0\\,\\text{s};\\, 5.0\\,\\text{m})$, so the differences must be taken."
         }
       ]
+    },
+    {
+      "id": "fy4-1-L1-09",
+      "level": 1,
+      "text": "A toy car moves along a straight track on the $x$-axis. At the moment $t = 0$ it is at the position $x_0 = 6.0\\,\\text{m}$.\n\nThe velocity of the car is $v = -1.0\\,\\text{m/s}$ all the time.\n\nWhich graph shows the position $x$ of the toy car as a function of time $t$ from the moment $0$ to the moment $4.0\\,\\text{s}$?",
+      "kind": [
+        "graph",
+        "concept"
+      ],
+      "answer": "Graph C",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Graph A",
+          "figure": "fy4-1/pick-rising",
+          "feedback": "Here the position grows by $1.0\\,\\text{m}$ every second, so the velocity would be $+1.0\\,\\text{m/s}$. The sign of the velocity has been ignored: the minus sign tells the direction, so the position must decrease."
+        },
+        {
+          "text": "Graph B",
+          "figure": "fy4-1/pick-origin",
+          "feedback": "The slope $-1.0\\,\\text{m/s}$ of the line is right, but the line starts from the origin. The initial position has been forgotten: at the moment $t = 0$ the graph must be at $x_0 = 6.0\\,\\text{m}$."
+        },
+        {
+          "text": "Graph C",
+          "figure": "fy4-1/pick-falling",
+          "correct": true,
+          "feedback": "Correct: the line starts from $6.0\\,\\text{m}$ and falls $1.0\\,\\text{m}$ every second, so at the moment $4.0\\,\\text{s}$ the position is $2.0\\,\\text{m}$."
+        },
+        {
+          "text": "Graph D",
+          "figure": "fy4-1/pick-flat",
+          "feedback": "This is drawn like a $(t, v)$ graph: the value $-1.0$ is the velocity, not the position. A horizontal line in a $(t, x)$ graph would mean that the car stays at rest at $-1.0\\,\\text{m}$."
+        }
+      ]
     }
   ],
   "level2": [

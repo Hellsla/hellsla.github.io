@@ -222,3 +222,17 @@ $$\begin{aligned} t &= \dfrac{203\,\text{m} + 16\,\text{m/s} \cdot 8.0\,\text{s}
 $$\begin{aligned} x &= 203\,\text{m} + 9.9\,\text{m/s} \cdot 54\,\text{s} \\ &= 7.4 \cdot 10^2\,\text{m} \end{aligned}$$
 **Answer:** $7.4 \cdot 10^2\,\text{m}$ or about $740\,\text{m}$, two significant figures, because the difference of the velocities, $16 - 9.9 = 6.1\,\text{m/s}$, limits the accuracy.
 **Reasonableness:** The position of the police car at the moment $54\,\text{s}$ is $16\,\text{m/s} \cdot (54\,\text{s} - 8.0\,\text{s}) = 7.4 \cdot 10^2\,\text{m}$, the same as the position of the truck, so the solution checks out. The police car is faster than the truck, so catching up is possible. The prediction is uncertain, because the data ends at the moment $40\,\text{s}$ and the catching up happens at the moment $54\,\text{s}$, that is $14\,\text{s}$ outside the data. The prediction assumes that the truck keeps driving at the same velocity along the same straight road all the time, which the data does not prove. A small error in the velocity of the truck grows in the prediction, because the difference of the velocities is small: if the velocity of the truck were $0.2\,\text{m/s}$ greater, the time would be about $3\,\%$ longer.
+
+## fy4-1-L1-09
+**Find:** which of the four graphs shows the position $x$ of the toy car as a function of time $t$, when at the moment $t = 0$ the car is at the position $x_0 = 6.0\,\text{m}$ and its velocity is $v = -1.0\,\text{m/s}$ all the time.
+**Principle:** The velocity stays the same, so the motion is uniform and the position is $x = x_0 + v\,t$. Then the $(t, x)$ graph is a line that crosses the position axis at the initial position $x_0$ and whose slope is the velocity $v$. A negative velocity means that the position decreases as time passes, so the line falls.
+**Model answer:** The correct one is graph C. Let us calculate the position of the car at the moment $t = 4.0\,\text{s}$.
+
+$x = x_0 + v\,t$
+
+$x = 6.0\,\text{m} + (-1.0\,\text{m/s}) \cdot 4.0\,\text{s}$
+
+$x = 2.0\,\text{m}$
+
+Graph C goes through the points $(0\,\text{s};\ 6.0\,\text{m})$ and $(4.0\,\text{s};\ 2.0\,\text{m})$, and its slope is $\dfrac{2.0\,\text{m} - 6.0\,\text{m}}{4.0\,\text{s}}$, that is, $-1.0\,\text{m/s}$. Graph A rises from the position $6\,\text{m}$ to the position $10\,\text{m}$: there the minus sign of the velocity has been ignored, although the sign tells the direction of the motion. The slope of graph B is right, but it starts from the origin, so the initial position has been forgotten. Graph D is a horizontal line at $-1\,\text{m}$: the value of the velocity has been drawn as the position, as if the graph were a $(t, v)$ graph. Check: the car moves for $4.0\,\text{s}$ at $1.0\,\text{m}$ per second in the negative direction, so it moves $4.0\,\text{m}$ from the initial position towards the origin.
+**Reading the graphs:** The position is read from each graph at the moments $0$ and $4.0\,\text{s}$. Graphs B and C fall equally steeply, so only the initial position tells them apart: graph B starts from $0\,\text{m}$ and graph C from $6.0\,\text{m}$.

@@ -120,6 +120,41 @@
           "feedback": "Jos $N$ olisi nolla, myös lattian kitka olisi nolla. Silloin narun vaakakomponentti panisi laatikon liikkeelle. Laatikko kuitenkin pysyy paikallaan. Siksi lattia tukee sitä ja $N > 0$."
         }
       ]
+    },
+    {
+      "id": "fy4-5-L1-09",
+      "level": 1,
+      "text": "Työntäjä työntää laatikkoa vaakasuoralla lattialla vaakasuoralla voimalla. Laatikko liukuu oikealle tasaisella nopeudella. Ilmanvastus jätetään huomiotta.\n\nKuvioissa $\\overline{G}$ on laatikon paino ja $\\overline{N}$ on lattian tukivoima. Voima $\\overline{F}$ on työntäjän voima laatikkoon ja $\\overline{F}_\\mu$ on lattian kitkavoima. Voima $\\overline{F}_\\text{k}$ on laatikon voima työntäjään, ja $\\overline{v}$ on laatikon nopeus. Kaikki kuviot on piirretty samassa mittakaavassa.\n\nMikä voimakuvio esittää oikein laatikkoon vaikuttavat voimat?",
+      "kind": [
+        "concept"
+      ],
+      "fbd": "select",
+      "answer": "Voimakuvio C",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Voimakuvio A",
+          "figure": "fy4-5/pick-pitka",
+          "feedback": "Tässä työntövoima on kaksi kertaa niin suuri kuin kitkavoima. Ajatus, että liike tarvitsee eteenpäin osoittavan kokonaisvoiman, ei pidä paikkaansa. Nopeus on vakio, joten kokonaisvoima on nolla ja $F = F_\\mu$."
+        },
+        {
+          "text": "Voimakuvio B",
+          "figure": "fy4-5/pick-lisa",
+          "feedback": "Voima $\\overline{F}_\\text{k}$ on laatikon voima työntäjään. Se vaikuttaa työntäjään eikä laatikkoon. Voiman ja vastavoiman parista kuvioon piirretään vain se, joka vaikuttaa valittuun kappaleeseen."
+        },
+        {
+          "text": "Voimakuvio C",
+          "figure": "fy4-5/pick-tasainen",
+          "correct": true,
+          "feedback": "Oikein: laatikkoon vaikuttavat Maa, lattia ja työntäjä. Nopeus on vakio, joten kokonaisvoima on nolla: $N = G$ ja $F = F_\\mu$. Vastakkaiset nuolet ovat yhtä pitkät."
+        },
+        {
+          "text": "Voimakuvio D",
+          "figure": "fy4-5/pick-nopeus",
+          "feedback": "Nuoli $\\overline{v}$ on piirretty voimaksi, vaikka nopeus ei ole voima eikä sillä ole aiheuttajaa. Nopeus kuvaa liikettä. Sen nuoli piirretään tarvittaessa kuvion viereen omalla värillään."
+        }
+      ]
     }
   ],
   "level2": [

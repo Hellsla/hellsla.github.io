@@ -1,12 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 1cb1a625e4cf590e
-Round: 5
+CONTENT-HASH: 8072c719837decea
 
 ## Blocking
 
 ## Polish
-- In the cart figure F_k is a short stub beside the long F_r; the text names both, acceptable.
+- None.
+
+## Fixed
+- No text change needed in this translation.
 
 ## Checked
-- Round 4 Blocking resolved: the Force diagram sentence now names $\overline{F}_\text{t}$, matching Find, the figure and the equations; no "road}" symbol remains.
-- The L3-04 capture (L3-1280-6) was opened in round 4 and the figure is unchanged; numbers 450 N and 480 N unchanged.
+- fy4-3-L2-08: task text, hints toward the method, distractor feedback and solution say the same as the Finnish and name each misconception; natural English, decimal point (6.0, 1.2), terms consistent.
+- Feedback repairs the misconception (names the error) and does not only restate the answer; no answer is disclosed in the task text.
+- Terms used consistently (interaction, third law, force and reaction force); no Finnish left in the translated text.

@@ -120,6 +120,41 @@
           "feedback": "If $N$ were zero, the friction from the floor would also be zero, and the horizontal component of the string would set the box in motion. The box stays at rest, so the floor supports it and $N > 0$."
         }
       ]
+    },
+    {
+      "id": "fy4-5-L1-09",
+      "level": 1,
+      "text": "A pusher pushes a box on a horizontal floor with a horizontal force. The box slides to the right at a constant velocity. Air resistance is ignored.\n\nIn the diagrams $\\overline{G}$ is the weight of the box, $\\overline{N}$ the normal force of the floor, $\\overline{F}$ the force of the pusher on the box and $\\overline{F}_\\mu$ the friction force of the floor. The force $\\overline{F}_\\text{k}$ is the force of the box on the pusher, and $\\overline{v}$ is the velocity of the box. All diagrams are drawn to the same scale.\n\nWhich free-body diagram shows the forces acting on the box correctly?",
+      "kind": [
+        "concept"
+      ],
+      "fbd": "select",
+      "answer": "Free-body diagram C",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Free-body diagram A",
+          "figure": "fy4-5/pick-pitka",
+          "feedback": "Here the pushing force is twice as large as the friction force. The idea that motion needs a net force pointing forward is wrong: the velocity is constant, so the net force is zero and $F = F_\\mu$."
+        },
+        {
+          "text": "Free-body diagram B",
+          "figure": "fy4-5/pick-lisa",
+          "feedback": "The force $\\overline{F}_\\text{k}$ is the force of the box on the pusher, and it acts on the pusher, not on the box. Of a force and reaction force pair, the diagram includes only the one that acts on the chosen object."
+        },
+        {
+          "text": "Free-body diagram C",
+          "figure": "fy4-5/pick-tasainen",
+          "correct": true,
+          "feedback": "Correct: the Earth, the floor and the pusher act on the box. The velocity is constant, so the net force is zero: $N = G$ and $F = F_\\mu$, and the opposite arrows are equally long."
+        },
+        {
+          "text": "Free-body diagram D",
+          "figure": "fy4-5/pick-nopeus",
+          "feedback": "The arrow $\\overline{v}$ is drawn as a force, although velocity is not a force and has no cause. Velocity describes motion, and its arrow is drawn, if needed, beside the diagram in a colour of its own."
+        }
+      ]
     }
   ],
   "level2": [
