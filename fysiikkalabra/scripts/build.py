@@ -98,6 +98,7 @@ def submission_forms():
     for f in forms:
         if not isinstance(f, dict) or not isinstance(f.get("group"), str) or not re.fullmatch(r"[0-9A-Za-zÅÄÖåäö .-]{1,40}", f["group"]): bad(f"bad group in {f!r}")
         if not isinstance(f.get("url"), str) or not FORM_URL.match(f["url"]): bad(f"{f.get('group')}: the url must be a Google Forms responder link (https://forms.gle/...)")
+        if f["group"].split(".")[0] not in courses.codes(): bad(f"{f['group']}: the group must start with a course code and a dot, e.g. FY3.2")
         if f["group"] in seen: bad(f"{f['group']} twice")
         seen.add(f["group"])
     return d if forms else None
@@ -113,10 +114,19 @@ def submission_script(lang, lesson_id):
 
 
 def forms_page_body():
-    links = "".join(f'<a class="return-form" href="{esc(f["url"])}">{esc(f["group"])}</a>' for f in FORMS["forms"])
+    """One section per course in curriculum order: the groups' form buttons, or a grey placeholder when the course has
+    no forms this period (teacher 2026-11-06: one page for every course, updated when the period changes)."""
+    natural = lambda g: [int(t) if t.isdigit() else t for t in re.split(r"(\d+)", g)]
+    out = []
+    for code in courses.codes():
+        fs = sorted((f for f in FORMS["forms"] if f["group"].split(".")[0] == code), key=lambda f: natural(f["group"]))
+        links = ("".join(f'<a class="return-form" href="{esc(f["url"])}">{esc(f["group"])}</a>' for f in fs)
+                 or '<span class="return-none">Ei palautuksia tässä periodissa</span>')
+        out.append(f'<section class="return-course{'' if fs else ' is-empty'}"><h2>{esc(code)} {esc(courses.course(code)["title"])}</h2>'
+                   f'<nav class="return-forms" aria-label="{esc(code)}: ryhmien palautuslomakkeet">{links}</nav></section>')
     return (f'<h1>{esc(FORMS["title"])}</h1>'
-            '<p class="lead">Lataa luvun ratkaisut luvun Tehtävät-kohdasta (Lataa kaikki ratkaisut) ja palauta tiedosto oman ryhmäsi lomakkeella.</p>'
-            f'<nav class="return-forms" aria-label="Ryhmien palautuslomakkeet">{links}</nav>')
+            '<p class="lead">Valitse kurssi ja oma ryhmäsi. Palauta lomakkeella luvun ratkaisutiedosto, jonka latasit luvun Tehtävät-kohdasta (Lataa kaikki ratkaisut).</p>'
+            + "".join(out))
 
 
 def render_md(text, **kw):
