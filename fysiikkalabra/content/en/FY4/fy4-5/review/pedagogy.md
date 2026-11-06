@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: abbdd52fa18527f9
+CONTENT-HASH: c7ea60d4d0773826
 
 ## Blocking
 
@@ -11,3 +11,4 @@ CONTENT-HASH: abbdd52fa18527f9
 - All `voimakuvio` blocks in inquiry.json and lesson.md identical to the Finnish (check_i18n enforces); `check_i18n.py` 0 errors; `build.py fy4-5` builds; `figures.py fy4-5 --lang en --check` up to date.
 - Delta since the last PASS (commit 63d2f6f8, shared sim.js force diagram enlarged, nested list in step 3 re-indented): lesson text differs only in whitespace (`git diff -w` empty), so the earlier comparison with the Finnish stands; `check_i18n.py` 0 errors, figures up to date.
 Delta: English diagram labels and aria-labels now show the same symbols as the English text (F_d, F_b, G_c, ...), so a student reads one notation; nothing else changed.
+- Delta (figures.json): the new pick-* figure descriptions are alt text for exercise figures; they describe the picture without revealing which option is correct, same level and register as the existing descriptions (natural English); lesson text, stages, hints and exit ticket unchanged.

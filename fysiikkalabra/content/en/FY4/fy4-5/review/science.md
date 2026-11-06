@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: abbdd52fa18527f9
+CONTENT-HASH: c7ea60d4d0773826
 
 ## Blocking
 
@@ -11,3 +11,4 @@ CONTENT-HASH: abbdd52fa18527f9
 - All `voimakuvio` blocks in inquiry.json and lesson.md identical to the Finnish (check_i18n enforces); `check_i18n.py` 0 errors; `build.py fy4-5` builds; `figures.py fy4-5 --lang en --check` up to date.
 - Delta since the last PASS (commit 63d2f6f8, shared sim.js force diagram enlarged, nested list in step 3 re-indented): lesson text differs only in whitespace (`git diff -w` empty), so the earlier comparison with the Finnish stands; `check_i18n.py` 0 errors, figures up to date.
 Delta (figures.json): F_noste -> F_b matches the buoyancy F_b of the balloon solution; no other mapped symbol; F_mu renders as F_mu in the diagrams as in the text. Lesson content unchanged since the last PASS.
+- Delta (figures.json): the 4 new pick-* figure entries (fy4-5: 4 force-diagram descriptions; fy4-12: 4 v(t) graph descriptions plus the re-keyed (t,x) description) compared with the Finnish strings drawn by figures.py; every number, unit, symbol (F, F_k, v, N, G), direction, arrow-length relation and intersection time (6.3 s, 8 s, 4 s) matches; English reads naturally with decimal point. Lesson content otherwise unchanged (git diff 88e803e touches only figures.json); figures.py up to date, check_i18n clean, build.py fy4-5 builds.
