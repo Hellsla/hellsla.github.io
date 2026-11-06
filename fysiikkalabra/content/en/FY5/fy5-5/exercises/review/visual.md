@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 253b105585534b77
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 83919e209ffc0f9e
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] solutions.md — the two aligned display blocks are set in a smaller size than body text on a phone (flFitMath), still legible; same as the Finnish.
+- [Minor] solutions.md fy5-5-L2-08 — straight quotation marks around "all bodies fall with the same acceleration" in English; use curly quotes.
 
 ## Checked
-- Captures opened: en fy5-5-open-exercises-L2-1280-8 and -L3-1280-3; KaTeX renders, tables and answer boxes intact, no overflow, units upright.
-- Data tables (L2-05..07, L3-04) show the same cells as fi; decimal point in en.
+- Own 390 px render (scratch script, after the page's scripts, hints, feedback and solution open) of fy5-5-L2-08 in en: page scrollWidth 390, no element outside a scroll box (only KaTeX-internal svg paths, clipped by their own box).
+- Opened the whole task card in tiles: task text, every choice with feedback, answer, solution (Find/Principle/Model answer).
 
 ## Scores
-illustrations 5 · typography 5 · Finnish (English) 5 · accessibility 4
+illustrations 5 · typography 4 · English 4 · accessibility 4

@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: c48e979ac256fd22
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: fab8918566397611
 
 ## Blocking
 (none)
 
-## Fixed
-(none needed)
-
 ## Polish
-(none)
+- [Minor] Task text, solutions.md — none beyond the Finnish; display chain renders as aligned fractions, readable at 390 px.
 
 ## Checked
-- Captures opened (en): fy5-3-open-exercises-L2-1280-5 (L2-05 with data table) and fy5-3-open-exercises-L3-1280-4 (L3-04 start): maths, units, table and headings render cleanly; no overflow.
-- Table headers and captions are short and translated; LaTeX units upright with thin space.
-- Display blocks and tables identical in structure to fi.
+- Own 390 px render (scratch script, after the page's scripts, hints, feedback and solution open) of fy5-3-L1-09 in en: page scrollWidth 390, no element outside a scroll box (only KaTeX-internal svg paths, clipped by their own box).
+- Opened the whole task card in tiles: task text, every choice with feedback, answer, solution (Find/Principle/Model answer).
+
+## Scores
+illustrations 5 · typography 4 · English 4 · accessibility 4

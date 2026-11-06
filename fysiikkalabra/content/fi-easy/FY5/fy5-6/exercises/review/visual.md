@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 85c71ef6d47abaf5
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 0be719f8b69971cc
 
 ## Blocking
 (none)
 
-## Fixed
-- exercises.json L2-07: "Kaksi satelliittia vie ympyräradalle" was ungrammatical; now "viedään ympyräradalle".
-
 ## Polish
-(none)
+- [Minor] solutions.md — none beyond the Finnish; the aligned chain with the square root stays inside its card at 390 px.
 
 ## Checked
-- Screenshots of the new tasks checked (exercise captures 1280 px): data tables, LaTeX, decimals and solution layout render cleanly; no overflow.
-- Table captions and column headers translated; units and powers of ten in LaTeX as in fi.
-- No Finnish left in en (grep); in fi-easy no English left.
-- Letters, hyphenation and punctuation consistent with neighbouring tasks.
+- Own 390 px render (scratch script, after the page's scripts, hints, feedback and solution open) of fy5-6-L1-09 in fi-easy: page scrollWidth 390, no element outside a scroll box (only KaTeX-internal svg paths, clipped by their own box).
+- Opened the whole task card in tiles: task text, every choice with feedback, answer, solution (Find/Principle/Model answer).
+
+## Scores
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4
