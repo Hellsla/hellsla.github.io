@@ -483,18 +483,20 @@ with sync_playwright() as p:
     n1 = lambda f: sum(1 for a in f["answers"] if a["status"] == "answered")
     a_v2, b_v1 = n1(files["v2"]), n1(files["v1"])
     rows = lambda: lp.evaluate("JSON.stringify([...document.querySelectorAll('#summary tbody tr')].map((tr) => [...tr.cells].map((c) => c.textContent)))")
-    want = [["Aino Opiskelija", f"{a_v2 + 1} / 42", str(a_v2 - 1), "0,5 / 42"], ["Bertta Opiskelija", f"{b_v1} / 42", str(b_v1 - 1), "1 / 42"]]
+    # the chapters' task counts come from the generated file (the exercise bank grows: fy3-1 and fy3-2 have 21 since #345)
+    m1, m2 = (len([c for c in course["chapters"] if c["id"] == k][0]["tasks"]) for k in ("fy3-1", "fy3-2"))
+    want = [["Aino Opiskelija", f"{a_v2 + 1} / {m1 + m2}", str(a_v2 - 1), f"0,5 / {m1 + m2}"], ["Bertta Opiskelija", f"{b_v1} / {m1 + m2}", str(b_v1 - 1), f"1 / {m1 + m2}"]]
     expect("local page: summary with names on the left: done, unchecked, points (all returned chapters)", rows() == json.dumps(want, ensure_ascii=False, separators=(",", ":"))
            and [c.strip() for c in lp.inner_text("#summary thead").split("\t")][:1] == ["OPISKELIJA ▲"], (rows(), lp.inner_text("#summary thead")))
     lp.click('#summary button[data-key="points"]')
     expect("local page: a click on a heading sorts (points, highest first)", json.loads(rows())[0][0] == "Bertta Opiskelija" and "▼" in lp.inner_text("#summary thead"), rows())
     lp.select_option("#scope", "fy3-2")
-    expect("local page: the summary of one chapter", json.loads(rows()) == [["Aino Opiskelija", "1 / 21", "0", "0,5 / 21"], ["Bertta Opiskelija", "0 / 21", "0", "0 / 21"]], rows())
+    expect("local page: the summary of one chapter", json.loads(rows()) == [["Aino Opiskelija", f"1 / {m2}", "0", f"0,5 / {m2}"], ["Bertta Opiskelija", f"0 / {m2}", "0", f"0 / {m2}"]], rows())
     lp.select_option("#scope", "all"); lp.click('#summary button[data-key="name"]')
     with lp.expect_download() as d: lp.click("#csv")
     csv = [r.split(";") for r in pathlib.Path(d.value.path()).read_text(encoding="utf-8-sig").splitlines()]
     n_ch = len(course["chapters"])
-    expect("local page: CSV per group: chapters, total, returned chapters, done, unchecked (decimal comma; 0 kept apart from not returned)", d.value.suggested_filename == "FY3-FY3.1-pisteet.csv" and csv[0][:3] == ["Opiskelija", "Luku 1 (max 21)", "Luku 2 (max 21)"]
+    expect("local page: CSV per group: chapters, total, returned chapters, done, unchecked (decimal comma; 0 kept apart from not returned)", d.value.suggested_filename == "FY3-FY3.1-pisteet.csv" and csv[0][:3] == ["Opiskelija", f"Luku 1 (max {m1})", f"Luku 2 (max {m2})"]
            and csv[0][n_ch + 1:] == ["Yhteensä", "Palautettuja lukuja", "Tehty", "Tarkistamatta"] and csv[1][:4] == ["Aino Opiskelija", "0", "0,5", ""] and csv[1][n_ch + 1:] == ["0,5", "2", str(a_v2 + 1), str(a_v2 - 1)]
            and csv[2][:3] == ["Bertta Opiskelija", "1", ""] and csv[2][n_ch + 1:n_ch + 3] == ["1", "1"], (d.value.suggested_filename, csv[:3]))
     # another group's zip is not read into this group
