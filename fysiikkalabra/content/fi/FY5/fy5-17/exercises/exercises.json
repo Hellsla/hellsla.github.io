@@ -277,7 +277,7 @@
         "reasoning"
       ],
       "text": "Kaksi seismografiasemaa A ja B rekisteröi saman maanjäristyksen. Asemalla A S-aalto saapuu $8{,}0\\,\\text{s}$ P-aallon jälkeen ja asemalla B $24{,}0\\,\\text{s}$ P-aallon jälkeen. Järistyksen tapahtumahetkeä asemat eivät tiedä.\n\nOletetaan, että P-aallon nopeus on $6{,}0\\,\\text{km/s}$ ja S-aallon $3{,}5\\,\\text{km/s}$ koko matkalla kummallekin asemalle. Luvut ovat esimerkkiarvoja.\n\nMiten asemien etäisyydet järistyksen alkukohdasta suhtautuvat toisiinsa?",
-      "answer": "Asema B on noin kolme kertaa niin kaukana järistyksestä kuin asema A.",
+      "answer": "Asema B on kolme kertaa niin kaukana järistyksestä kuin asema A.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
@@ -286,9 +286,9 @@
           "feedback": "Aikaero riippuu nopeuksien lisäksi matkasta: mitä pidemmän matkan aallot kulkevat, sitä enemmän hitaampi S-aalto jää jälkeen. Eri aikaerot tarkoittavat eri etäisyyksiä."
         },
         {
-          "text": "Asema B on noin kolme kertaa niin kaukana järistyksestä kuin asema A.",
+          "text": "Asema B on kolme kertaa niin kaukana järistyksestä kuin asema A.",
           "correct": true,
-          "feedback": "Oikein: asemalla B aikaero on $24{,}0\\,\\text{s} : 8{,}0\\,\\text{s} = 3$-kertainen. Valitse seuraavaksi perustelu, joka selittää, miksi etäisyys on samassa suhteessa."
+          "feedback": "Oikein. Valitse seuraavaksi perustelu, joka selittää vastauksesi."
         },
         {
           "text": "Etäisyyksiä ei voi verrata, koska järistyksen tapahtumahetkeä ei tiedetä.",
@@ -302,9 +302,9 @@
           "feedback": "Tämä sekoittaa kulkuajan ja aikaeron. Etäisyys saadaan aikaerosta $\\Delta t$ ilman järistyshetkeä, kuten luvun kaavassa $d = \\tfrac{v_\\text{P} v_\\text{S}}{v_\\text{P} - v_\\text{S}}\\,\\Delta t$."
         },
         {
-          "text": "Kumpikin aalto kulkee saman matkan tasaisella nopeudella, joten aikaero kasvaa samassa suhteessa kuin matka.",
+          "text": "Aallot kulkevat saman matkan tasaisilla nopeuksilla, joten aikaero on verrannollinen matkaan.",
           "correct": true,
-          "feedback": "Oikein: kun $\\Delta t$ kolminkertaistuu, myös $d$ kolminkertaistuu. Asemalle A on noin $67\\,\\text{km}$ ja asemalle B noin $2{,}0 \\cdot 10^{2}\\,\\text{km}$."
+          "feedback": "Oikein: aikaero on asemalla B $24{,}0\\,\\text{s} : 8{,}0\\,\\text{s} = 3$-kertainen, ja kun $\\Delta t$ kolminkertaistuu, myös $d$ kolminkertaistuu. Asemalle A on noin $67\\,\\text{km}$ ja asemalle B noin $2{,}0 \\cdot 10^{2}\\,\\text{km}$."
         },
         {
           "text": "Aikaero on aaltojen nopeuksien erotuksen määräämä vakio, joka on sama jokaisella asemalla.",

@@ -92,7 +92,7 @@
 ## fy5-17-L2-08
 **Kysytty:** miten asemien A ja B etäisyydet järistyksen alkukohdasta suhtautuvat toisiinsa, kun S-aallon viive P-aaltoon nähden on asemalla A $8{,}0\,\text{s}$ ja asemalla B $24{,}0\,\text{s}$, ja mikä perustelu selittää sen
 **Periaate:** P- ja S-aalto lähtevät järistyksestä samalla hetkellä ja kulkevat asemalle saman matkan $d$ tasaisilla nopeuksilla. Kulkuaikojen erotus on $\Delta t = \tfrac{d}{v_\text{S}} - \tfrac{d}{v_\text{P}}$, joten se on suoraan verrannollinen matkaan. Järistyshetkeä ei tarvita, koska asema mittaa kahden saapumishetken erotuksen.
-**Mallivastaus:** Asema B on noin kolme kertaa niin kaukana kuin asema A. Etäisyys aikaerosta on
+**Mallivastaus:** Asema B on kolme kertaa niin kaukana kuin asema A. Etäisyys aikaerosta on
 
 $d = \dfrac{v_\text{P}\, v_\text{S}}{v_\text{P} - v_\text{S}} \cdot \Delta t$
 
@@ -108,7 +108,7 @@ Asemalle B:
 
 $d_\text{B} = 8{,}4\,\text{km/s} \cdot 24{,}0\,\text{s} \approx 2{,}0 \cdot 10^{2}\,\text{km}$
 
-Suhde on $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24{,}0\,\text{s}}{8{,}0\,\text{s}} = 3$. Perustelu: kumpikin aalto kulkee saman matkan tasaisella nopeudella, joten aikaero kasvaa samassa suhteessa kuin matka. Aikaero ei ole kaikilla asemilla sama vakio, koska S-aalto jää P-aallosta jälkeen sitä enemmän, mitä pidemmän matkan aallot kulkevat. Järistyshetken puuttuminen ei estä vertailua, koska aikaero mitataan aseman omalla kellolla. Se, että P-aalto saapuu ensimmäisenä, on totta, mutta se ei kerro etäisyyksien suhdetta.
+Suhde on $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24{,}0\,\text{s}}{8{,}0\,\text{s}} = 3$. Perustelu: aallot kulkevat saman matkan tasaisilla nopeuksilla, joten aikaero on verrannollinen matkaan. Aikaero ei ole kaikilla asemilla sama vakio, koska S-aalto jää P-aallosta jälkeen sitä enemmän, mitä pidemmän matkan aallot kulkevat. Järistyshetken puuttuminen ei estä vertailua, koska aikaero mitataan aseman omalla kellolla. Se, että P-aalto saapuu ensimmäisenä, on totta, mutta se ei kerro etäisyyksien suhdetta.
 
 ## fy5-17-L3-01
 **Annettu:** lepakon nopeus $v_\text{lep} = 10\,\text{m/s}$ kohti seinää, kaiun viive $t = 40\,\text{ms}$, äänen nopeus $v = 343\,\text{m/s}$

@@ -237,11 +237,11 @@
     },
     {
      "text": "Rivi 3: tukivoiman $N_\\text{B}$ laskeminen",
-     "feedback": "Rivi 3 on rivin 2 varsilla oikein: $160\\,\\text{N} \\cdot 1{,}5\\,\\text{m} + 40\\,\\text{N} \\cdot 1{,}0\\,\\text{m} = 280\\,\\text{Nm}$. Jos rivin luulee virheelliseksi, ajattelee ehkä, että kumpikin tuki kantaa puolet painoista eli $100\\,\\text{N}$."
+     "feedback": "Rivi 3 on rivin 2 varsilla oikein: $160\\,\\text{N} \\cdot 1{,}5\\,\\text{m} = 240\\,\\text{Nm}$ ja $40\\,\\text{N} \\cdot 1{,}0\\,\\text{m} = 40\\,\\text{Nm}$, yhteensä $280\\,\\text{Nm}$. Jos rivin luulee virheelliseksi, ajattelee ehkä, että kumpikin tuki kantaa puolet painoista eli $100\\,\\text{N}$."
     },
     {
      "text": "Rivi 4: tukivoiman $N_\\text{A}$ laskeminen",
-     "feedback": "Rivi 4 on rivin 3 tuloksella oikein: tukivoimien summa on painojen summa $200\\,\\text{N}$. Jos rivin luulee virheelliseksi, ajattelee ehkä, että lankku kaatuu heti, kun purkki on tuen B ohi, vaikka ratkaisee yhteinen painopiste."
+     "feedback": "Rivi 4 on rivin 3 tuloksella oikein: tukivoimien summa on painojen summa $200\\,\\text{N}$. Jos rivin luulee virheelliseksi, ajattelee ehkä, että purkin paino jätetään voimien summasta pois, koska purkki on tuen B ulkopuolella."
     },
     {
      "text": "Laskussa ei ole virhettä",

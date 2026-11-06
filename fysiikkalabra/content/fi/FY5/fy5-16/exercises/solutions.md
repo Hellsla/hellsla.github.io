@@ -94,7 +94,7 @@ $85\,\text{dB} - 79\,\text{dB} = 6\,\text{dB}$
 
 $79\,\text{dB} - 74\,\text{dB} = 5\,\text{dB}$
 
-Kaikki erotukset ovat odotetun $6{,}0\,\text{dB}$:n tuntumassa, ja suurin poikkeama $1\,\text{dB}$ on pienempi kuin erotuksen epävarmuus $2\,\text{dB}$. Siksi myöskään viimeisen välin pienempi lasku ei osoita, että ääni vaimenisi kauempana hitaammin. Taso ei puolitu: puolet $91\,\text{dB}$:stä olisi noin $46\,\text{dB}$, kun mitattiin $85\,\text{dB}$. Etäisyydellä $4{,}0\,\text{m}$ lukema $85\,\text{dB}$ voi todellisuudessa olla $86\,\text{dB}$, joten ylempi toiminta-arvo voi ylittyä, eikä mittaus osoita $8\,\text{h}$:n työskentelyä turvalliseksi.
+Kaikki erotukset ovat odotetun $6{,}0\,\text{dB}$:n tuntumassa, ja suurin poikkeama $1\,\text{dB}$ on pienempi kuin erotuksen epävarmuus $2\,\text{dB}$. Siksi myöskään viimeisen välin pienempi lasku ei osoita, että ääni vaimenisi kauempana hitaammin. Taso ei puolitu: puolet $91\,\text{dB}$:stä olisi noin $46\,\text{dB}$, kun mitattiin $85\,\text{dB}$. Etäisyydellä $4{,}0\,\text{m}$ lukema on $85\,\text{dB}$, mutta epävarmuuden vuoksi todellinen taso voi olla $84$–$86\,\text{dB}$, joten ylempi toiminta-arvo voi ylittyä, eikä mittaus osoita $8\,\text{h}$:n työskentelyä turvalliseksi.
 
 ## fy5-16-L3-01
 **Annettu:** $t_1 = 4{,}0\,\text{h}$ tasolla $L_1 = 88\,\text{dB}$, $t_2 = 4{,}0\,\text{h}$ tasolla $L_2 = 82\,\text{dB}$; vertailu $L_0 = 85\,\text{dB}$ ja $t_0 = 8\,\text{h}$

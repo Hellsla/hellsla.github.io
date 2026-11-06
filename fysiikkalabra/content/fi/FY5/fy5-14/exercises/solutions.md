@@ -48,7 +48,7 @@
 **Periaate:** Äänenkorkeuden kuulemme perustaajuudesta, joka on harmonisen sarjan alin taajuus ja vierekkäisten piikkien väli. Sointiväri riippuu yläsävelten voimakkuuksista perustaajuuteen verrattuna. Kun lähde liikkuu, ääni etenee ilman suhteen edelleen nopeudella $v$, mutta lähteen edessä aallonpituus lyhenee ja takana pitenee. Kuultu taajuus riippuu lähteen nopeudesta, ei sen etäisyydestä.
 **Mallivastaus:** Väitteet 2 ja 5 ovat tosia, väitteet 1, 3 ja 4 epätosia.
 
-Väite 1 on epätosi. Piikkien väli on $660\,\text{Hz} - 330\,\text{Hz} = 330\,\text{Hz}$, ja alin piikki on $330\,\text{Hz}$, joten perustaajuus ja sävelkorkeus vastaavat taajuutta $330\,\text{Hz}$. Korkein piikki $660\,\text{Hz}$ on yläsävel.
+Väite 1 on epätosi. Piikkien väli on $660\,\text{Hz} - 330\,\text{Hz} = 330\,\text{Hz}$, ja alin piikki on $330\,\text{Hz}$, joten perustaajuus ja sävelkorkeus vastaavat taajuutta $330\,\text{Hz}$. Voimakkain piikki $660\,\text{Hz}$ on yläsävel.
 
 Väite 2 on tosi. Saman sävelen perustaajuus on $330\,\text{Hz}$ kummallakin soittimella, mutta yläsävelten voimakkuudet eroavat, joten sointiväri on erilainen.
 

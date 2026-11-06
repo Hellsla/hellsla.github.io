@@ -116,7 +116,7 @@
       "kind": [
         "concept"
       ],
-      "text": "Viulun soittaman sävelen FFT-spektrissä on piikit taajuuksilla $330\\,\\text{Hz}$, $660\\,\\text{Hz}$, $990\\,\\text{Hz}$ ja $1320\\,\\text{Hz}$. Korkein piikki on taajuudella $660\\,\\text{Hz}$.\n\nToisessa tilanteessa kuulija seisoo aivan suoran tien vieressä. Auto ajaa tasaisella nopeudella suoraan häntä kohti, ohittaa hänet ja loittonee suoraan hänestä poispäin. Auton torven oma taajuus on $400\\,\\text{Hz}$, ja ilma on tyyntä.\n\nLuvut ovat esimerkkiarvoja. Päättele, mitkä väitteet ovat tosia ja mitkä epätosia.",
+      "text": "Viulun soittaman sävelen FFT-spektrissä on piikit taajuuksilla $330\\,\\text{Hz}$, $660\\,\\text{Hz}$, $990\\,\\text{Hz}$ ja $1320\\,\\text{Hz}$. Voimakkain piikki on taajuudella $660\\,\\text{Hz}$.\n\nToisessa tilanteessa kuulija seisoo aivan suoran tien vieressä. Auto ajaa tasaisella nopeudella suoraan häntä kohti, ohittaa hänet ja loittonee suoraan hänestä poispäin. Auton torven oma taajuus on $400\\,\\text{Hz}$, ja ilma on tyyntä.\n\nLuvut ovat esimerkkiarvoja. Päättele, mitkä väitteet ovat tosia ja mitkä epätosia.",
       "answer": "1 epätosi, 2 tosi, 3 epätosi, 4 epätosi, 5 tosi",
       "unit": "",
       "tolerance": 0.02,
@@ -124,10 +124,10 @@
         {
           "text": "Viulun sävel kuulostaa yhtä korkealta kuin $660\\,\\text{Hz}$:n puhdas ääni.",
           "true": false,
-          "feedback": "Epätosi: äänenkorkeus määräytyy perustaajuudesta, ei korkeimmasta piikistä. Perustaajuus on harmonisen sarjan alin taajuus ja piikkien väli, $330\\,\\text{Hz}$."
+          "feedback": "Epätosi: äänenkorkeus määräytyy perustaajuudesta, ei voimakkaimmasta piikistä. Perustaajuus on harmonisen sarjan alin taajuus ja piikkien väli, $330\\,\\text{Hz}$."
         },
         {
-          "text": "Huilu voi soittaa saman sävelen ja kuulostaa silti erilaiselta, koska sen yläsävelet ovat eri voimakkaita.",
+          "text": "Saman sävelen soittava huilu kuulostaa erilaiselta kuin viulu, koska sen yläsävelet ovat eri voimakkaita.",
           "true": true,
           "feedback": "Tosi: sama sävel tarkoittaa samaa perustaajuutta $330\\,\\text{Hz}$. Sointiväri riippuu siitä, kuinka voimakkaita yläsävelet ovat perustaajuuteen verrattuna, ja se on soittimilla erilainen."
         },
@@ -139,7 +139,7 @@
         {
           "text": "Lähestymisen aikana kuultu taajuus kasvaa koko ajan sitä mukaa kuin auto tulee lähemmäs.",
           "true": false,
-          "feedback": "Epätosi: kuultu taajuus riippuu auton nopeudesta, ei etäisyydestä. Tasaisella nopeudella taajuus on koko lähestymisen ajan sama ja suurempi kuin $400\\,\\text{Hz}$. Lähestyessä kasvaa voimakkuus."
+          "feedback": "Epätosi: kuultu taajuus riippuu auton nopeudesta, ei etäisyydestä. Tasaisella nopeudella taajuus on koko lähestymisen ajan sama ja suurempi kuin $400\\,\\text{Hz}$. Lähestyessä kasvaa äänen voimakkuus, ei korkeus."
         },
         {
           "text": "Auton ohitettua kuulija kuulee torven äänen, jonka taajuus on pienempi kuin $400\\,\\text{Hz}$.",
