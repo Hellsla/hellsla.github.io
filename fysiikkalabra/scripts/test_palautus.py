@@ -155,7 +155,7 @@ with sync_playwright() as p:
     pg.evaluate("window.flPadStore.put('fy3-2-L1-01', 'toisen luvun ratkaisu', 'fy3-2.html')")
     # guided self-assessment of Tarkista osaamisesi (teacher 2026-11-06): a colour scale under every task and goal
     sa = pg.evaluate("[...document.querySelectorAll('#tarkista fieldset.sa-rate')].map((f) => [f.dataset.sa, f.querySelectorAll('input[type=radio]').length])")
-    expect("self-assessment: five levels under every Tarkista task and every goal of the chapter", len(sa) >= 5 and all(n == 5 for _, n in sa) and any(i.startswith("tavoite-") for i, _ in sa) and pg.locator("#tarkista .sa-key li").count() == 5, sa)
+    expect("self-assessment: five levels under every Tarkista task and every goal of the chapter, no separate key (teacher 2026-11-06)", len(sa) >= 5 and all(n == 5 for _, n in sa) and any(i.startswith("tavoite-") for i, _ in sa) and pg.locator("#tarkista .sa-key").count() == 0, sa)
     sa_task = sa[1][0]
     pg.click(f'fieldset[data-sa="{sa_task}"] .sa-opt[data-level="b"]')
     pg.click('fieldset[data-sa="tavoite-1"] .sa-opt[data-level="d"]'); pg.click('fieldset[data-sa="tavoite-1"] .sa-opt[data-level="c"]')
