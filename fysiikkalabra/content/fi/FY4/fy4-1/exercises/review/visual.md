@@ -1,21 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 5bf5cc74045e4797
+CONTENT-HASH: fd398a527c525186
 
 ## Blocking
 
 ## Polish
-- [Minor] L2-06 solution, Kuvaajan lukeminen — B's end point is given as "(8,0 s; 5,7 m)" but the table shows 5,8 m at 8,0 s — write "lähellä pistettä (8,0 s; 5,7 m)" with the word "sovitettu suora" or use 5,8 m so the reader does not look for a misprint.
-- [Minor] L2-06 task — "kumpi kulkee nopeammin" is ambiguous when one velocity is negative (the solution has to explain "vauhdiltaan") — ask "kumman vauhti on suurempi".
-- [Minor] L3-04 Annettu — "(esim. (0,0 s; 0,30 m) ja (5,0 s; 3,52 m))" closes with two parentheses and a nested "esim." — drop the outer pair ("esim. $(0{,}0\,\text{s};\,0{,}30\,\text{m})$ ja …").
-- [Minor] L1-08 feedback — $\frac{x_2-x_1}{t_2-t_1}$ is inline `\frac` (large in running text) — `\tfrac`.
-- [Minor] L1-08 / L3-05 solutions — F_KL, F_LK (L1-08) and x_0R-style subscripts are not named in the task; give the symbol in Annettu ("$F_\text{LK}$ = lapsen voima köyteen").
+- [Minor] L1-09 option order — the shuffle shows the graphs as A, C, D, B, so the letters read out of order and the solution text ("A nousee ... B ... D") makes the student hunt — keep the letters in display order or label by content.
+- [Minor] L1-09 figures at 390 px — the figures scale to about 0,68 and the tick numbers come out near 9 px — enlarge the tick font a step or widen the plot, as in the lesson's graphs.
+- [Minor] L1-09 figures — the line ends at t = 4,0 s with no marker, so reading "hetkellä 4,0 s" off the grid is by eye — optionally a filled end point.
 
 ## Checked
-- Only 1280 px exercise captures exist (no 360/390 px of the exercises); layout 360/768/1280 deterministic checks are ok in the packet.
-- open-exercises-1280-6, -7, -8 (L1-06, L1-07, L1-08 with answers and solutions open).
-- open-exercises-L2-1280-5, -6, -7, -8, -9 (L2-05, L2-06, L2-07 data tables, solutions, chains).
-- open-exercises-L3-1280-5, -6, -7, -8 (L3-04, L3-05 tables, display chains, Järkevyys).
-- Data tables show decimal commas and header units; answer chips, "Kirjoita ratkaisu", answer boxes and open solutions stay inside the cards; chains aligned at "="; no overflow or clipping. Answers recomputed from the tables (0,61 m/s; 5,8 s; −1,5 m/s; 0,80 m/s; 740 m) match the solutions.
+- Rendered preview/fy4-1.html at 390 and 1280 px with every choice's feedback, hint and solution open (own script, scratchpad vis4_shots.py): L1-09 whole card, all four option figures (fig-1, fig-3 at 2x), feedback, Vastaus, Kirjoita ratkaisu, solution.
+- Measured: no horizontal overflow (card 330 px, page 390 px), no KaTeX errors, widest formula 261 px (fits 300 px). Option figures have full descriptions (axes, scale, line). Distractors catch the sign, forgotten start position and (t,v) confusion; the correct option is not identifiable by form (graphs).
+- Text only: Finnish of task, feedback and solution read.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

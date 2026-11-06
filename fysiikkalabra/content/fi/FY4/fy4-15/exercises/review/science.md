@@ -1,22 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 28f6844eead6cf50
+CONTENT-HASH: b5ff0600214c4eda
 
 ## Blocking
 
 ## Polish
-- exercises/solutions.md:204 fy4-15-L3-05 — "kolme merkitsevää numeroa kuten korkeudessa 85,0 m ja hyötysuhteessa 0,800": the hourly powers (40, 52 … MW) have two significant figures and limit the result — give 1,0·10⁶ m³ or say the powers are taken as exact hourly means.
-- exercises/exercises.json:74 fy4-15-L1-07 — P_o = ρQgh is L1-01 without η; close to a duplicate. Consider asking for the energy in one hour, or for Q from a given power, to vary the skill.
-- exercises/solutions.md:194 fy4-15-L3-04 — "teoreettisen ylärajan 59 %" is not in the lesson brief (it is already used in L2-02); add "(Betzin raja)" or drop it, for consistency with what is taught.
-- exercises/exercises.json:170 fy4-15-L2-06 — 120 m³/s and 9 MW stretch "pienvesivoimala" (Finnish limit ≈ 10 MW); fine, but "voimala" alone avoids the question.
+- solutions.md:224 (L2-08) — "Molemmissa unohtuu, että sekä ilmakilogramman liike-energia että sekunnissa virtaava ilman massa kasvavat" is only true of the $v$ option. The $v^2$ option forgets only the mass flow, as its own feedback correctly says. Fix: "Verrannollisuudessa $v$ unohtuvat molemmat, neliössä $v^2$ vain sekunnissa virtaavan ilman massan kasvu."
+- exercises.json (L2-08, the 20 kW feedback) — "kerroin $v^3$ on 100 kertaa suurempi kuin $v$" compares quantities with different units. Write "lukuarvo $10^3$ on 100 kertaa $10$".
 
 ## Checked
-- Recomputed all 8 new answers in one script: L1-07 2,918 MW; L1-08 180 kJ; L2-05 ΣPt = 5,478 GWh (stored 5,5, within 2 %); L2-06 18,80 GWh (stored 19), May/Aug 120 : 28 = 4,3, 9,0 / 2,1 MW; L2-07 242,5 kW (stored 240), 49 × 4948 W, unit check now right (ρAv is kg/s, W is kg·m²/s³, missing factor v²; round 1 wrongly accepted kg/(m·s)); L3-04 P/v³ = 1,250…1,241, mean 1,252 kW s³/m³, η = 39,9 %, model at 13 m/s 2,75 MW > 2,0 MW; L3-05 E = 300 MWh, V = 1,036·10⁶ m³, 86 % full, 6,00 h — all match solutions and answers.py; every rounded stored answer accepts the exact value.
-- L1-06: one correct option (mgh per kilogram ∝ h); distractors wrong with correct feedback.
-- Model conditions stated: constant η, below rated power, whole flow through turbine, constant power per row/hour, turbine losses ignored in L3-05 c.
-- Rated-power limit of P ∝ v³ explained as in the lesson (L3-04 c); power vs energy kept apart (E = Pt, MWh/GWh).
-- Efficiency ≤ 100 % and energy conversion, not production (guardrails).
-- Notation as in the lesson (η, ρ, Q, A = πr², P_o).
-- Scope: FY4 energy, power, efficiency; no later-course physics.
-- Levels 8/7/5; L2 data and error-analysis tasks, L3 modelling (v³ from data) and pumped-storage reasoning as in the plan; no duplicate except the L1-07 note.
-- Round 2 (hash 28f6844eead6cf50): changed lines checked: L2-07 unit check (solutions.md:180), quotes ”…” (exercises.json:217), "ala-altaasta" (exercises.json:300); no answer changed (answers.py = exercises.json).
-- Hash identical at start and end.
+- Scope: only the new task L2-08 (order of magnitude, type 5). The rest of the set was PASS before and is unchanged. Checked from the text only, no renders.
+- Recomputed: $v$ = 10 m/s, $A$ = 7854 m², $P = \tfrac12\eta\rho Av^3$ = 1,963 MW → "2 MW". The distractors are 19,6 kW ($\propto v$), 196 kW ($\propto v^2$) and 91,6 MW (36 not converted, ×46,7). They are a factor 10 or more apart, and each feedback names the reasoning that gives it.
+- Conditions: the task states "ei saavuta nimellistehoaan", so the formula with a constant η holds (brief: power curve and rated power). η = 40 % < 50 % as in the Tiivistelmä. 2 MW for a 100 m rotor at 10 m/s is realistic.
+- Distractors: the 20 kW option catches the chapter's warned mistake ("kaksinkertainen tuuli antaa kaksinkertaisen tehon"). The correct option cannot be told apart by its form (all four are bare values).
+- Notation ($P$, $\eta$, $\rho$, $A = \pi r^2$, $v$) is the same as in the lesson.
+- solutions.md L2-08: the conversions are shown and the formula is stated before substitution. The reasonableness check is real (wind power 4,9 MW; scaling from the lesson's example (100/120)²·(10/9)³·(0,40/0,45)·2,32 MW ≈ 1,96 MW agrees). The aligned lines are split short; checked from text only.
+- answers.py: no line is needed. All 19 numeric answers in the set were recomputed in one call and match.

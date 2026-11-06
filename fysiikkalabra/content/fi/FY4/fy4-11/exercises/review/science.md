@@ -1,21 +1,17 @@
-VERDICT: PASS
-CONTENT-HASH: 286231f4a979b6e5
+VERDICT: FAIL
+CONTENT-HASH: ca15fc6e4d36dac3
 
 ## Blocking
+- solutions.md:176 (L2-08) — "Rypistyvä keula ja turvatyyny pidentävät aikaa enemmän kuin nopeus kasvattaa liikemäärän muutosta" is stated as a general fact in a traffic-safety chapter, and it implies that higher speed is offset in a modern car. It holds only for these example values. In one car with about the same crash time, doubling the speed doubles F_ka. (Guardrails: safety statements exact; this is a type B finding, a missing condition.) Fix: "Näissä esimerkkikokeissa pysähtymisaika pitenee enemmän kuin liikemäärän muutos kasvaa. Samassa autossa kaksinkertainen nopeus kaksinkertaistaa keskimääräisen voiman, jos pysähtymisaika pysyy samana."
 
 ## Polish
-- content/fi/FY4/fy4-11/exercises/solutions.md:254 (L3-05 Vastaus) — "kolme merkitsevää numeroa kuten nopeuden muutoksessa 4,5 m/s": 4,5 m/s has two significant figures (from 10,1 − 5,6, both to 0,1 m/s) — write "18 kN, kaksi merkitsevää numeroa kuten nopeuden muutoksessa 4,5 m/s"; the answer box value 18,0 with tolerance 0,02 is unaffected.
-- content/fi/FY4/fy4-11/exercises/solutions.md:125 (L2-05 Vastaus) — "jarrutusmatkat on mitattu kolmen tai neljän numeron tarkkuudella": the data are 6,5 (two) and 14,1/25,9/39,6 (three) — write "kahden tai kolmen numeron tarkkuudella".
-- content/fi/FY4/fy4-11/exercises/exercises.json:186 (L2-06) — Δt = 0,200 s from 60 km/h means about 1,7 m of stopping distance, more than crumple zone plus belt travel allow — drop that row or call it a test setting.
-- docs/exercise-bank/FY4.md — the planned level-2 crash-test acceleration figure became the L3-05 velocity table; update the plan line.
+- exercises.json:249 (L2-08) — test A, a belted dummy stopped in 0,030 s from 25 km/h, means a ride-down distance of only 0,10 m and about 24 g, and F ≈ 17 kN for 75 kg. That is more than the lesson's belted 10 kN at 50 km/h, and less than a belt stretches. You could give A at least 0,05 s and rebuild the options, or say that A's dummy hits a rigid steering wheel.
 
 ## Checked
-- Re-review after the L3-04 b) layout change: 2ad = 2·5,1 m/s²·55 m = 561 m²/s² right, root row √((6,12 m/s)² + 561 m²/s²) = 24,46 m/s, v_max = 18,34 m/s = 66,0 km/h; the answer and the 54,8 m check are unchanged.
-- All 18 numeric answers recomputed in one script with my own formulas and from answers.py: all agree within tolerance.
-- L3-04: my least-squares fit of s_p/v on v gives t_r = 1,21 s, a = 5,10 m/s², v_max = 65,9 km/h, s_p(80) = 75 m, impact 52 km/h.
-- L2-05: least-squares slope through the origin gives a = 7,85 m/s²; the origin is physically justified.
-- L2-06: F·Δt = 1,24–1,27 kN·s in every row, v_0 = 60,0 km/h. L2-07: 12,0 m · 1,8² = 38,9 m.
-- L3-05: distance 0,79 m, F_ka = 10,0 kN, peak 18,0 kN (40–60 ms); assumptions stated; (d) right, belt and airbag together.
-- L1-06, L1-07: exactly one correct option; distractor feedback right. L1-08: a = μg with conditions stated.
-- Scope and notation as in the lesson; level 3 tasks multi-step YO style; no duplicates.
-- Hash 286231f4a979b6e5 at the start and at the end.
+- New task L2-08 (Ennuste muutoksesta), recomputed: F_B/F_A = (50/25)/(0,12/0,030) = 2/4 = 0,50, and with 75 kg the forces are 17,4 kN and 8,7 kN, as in the solution.
+- Each distractor follows from its stated error: ×8 (multiplied by the time ratio), ×2 (speed only), unchanged (v² as for braking, 4/4) and ¼ (same Δp, the lesson's belt misconception).
+- B: 0,12 s at 50 km/h (0,83 m, about 12 g) is consistent with the existing task at exercises.json:138 (0,100 s) and with the lesson.
+- F_ka = mΔv/Δt with Δv a magnitude matches the brief. The mass is not needed, and the solution says so.
+- The correct option can't be picked out by form: five short statements of the same pattern. The correct feedback is a one-line ratio.
+- solutions.md:163–176 complete (Kysytty · Periaate · Mallivastaus). I checked the inline formulas from the text only, with no render; each is under about 200 px.
+- answers.py comment agrees; the rest of the set is unchanged since the PASS. Hash is the same at the start and at the end.

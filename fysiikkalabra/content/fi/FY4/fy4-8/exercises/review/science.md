@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 030248d9a1c7200f
+CONTENT-HASH: 2f55633df83eff2a
 
 ## Blocking
 
 ## Polish
-- exercises/solutions.md:150 fy4-8-L2-05 — the rounding reason "kuten korkeuksissa h (esimerkiksi 0,05 m)" cites a datum with one significant figure — say "kuten nopeuksissa ja korkeuksissa (esim. 0,30 m, 2,41 m/s)" or give the reason as the spread of the fitted points.
-- exercises/solutions.md:160 fy4-8-L2-06 — "kolme merkitsevää numeroa kuten korkeuksissa ja nopeuksissa": h = 6,0 m, 3,0 m and v = 1,5 m/s have two — give −20 kJ (2 sf), or justify 3 sf from 18,0 m and 14,6 m/s and say why the others do not limit.
-- exercises/exercises.json:74 fy4-8-L1-07 — same skill (W_kok = ΔE_k from two speeds) as L1-04; the plan's L1 items "nopeus pudotuskorkeudesta / korkeus nopeudesta" were already covered by L1-01/02, so the deviation is defensible, but note it in docs/exercise-bank/FY4.md.
-- exercises/exercises.json:308 fy4-8-L3-04 — "kitkavoima vakio sekä rinteessä että vaakasuoralla" is stated (OK); the Järkevyys "kitkakerroin noin 0,08" could add "(rinne on loiva, joten tukivoima on lähes mg)".
-- solutions.md:153/174/184 — lint warns L2-06, L3-04, L3-05 at 316–362 words; acceptable for multi-part tasks, trim Sijoitus if wanted.
+- exercises.json:136 and solutions.md:217 (L1-09, statement 4) — "Vaunu pysähtyisi vasta 20 m:n korkeudella" reads as a fact about this track; write "Vaunu pysähtyisi vasta, jos rata nousisi 20 m:n korkeudelle".
+- exercises.json:131 (statement 3 feedback) — "kohtisuorassa radan pintaa ja siis liikettä vastaan" holds for a fixed track; fine at this level (C), no change needed unless the writer wants "paikallaan pysyvän radan".
+- Carried over: L2-05 and L2-06 rounding reasons; L1-07 vs L1-04 overlap; L3-04 Järkevyys; long L2-06/L3-04/L3-05 solutions.
 
 ## Checked
-- Recomputed all 8 new answers in one script (own formulas): L1-07 −1,044 kJ; L2-05 LSQ k = 19,53 → g = 9,77 m/s²; L2-06 E_mek 74,6/69,5/62,5/54,7 kJ, W = −19,93 kJ, F 94/107/157 N; L2-07 k = 0,2185 s²/m → F = 1,144 N; L3-04 s̄ = 30,07 m, F = 54,89 N, v = 6,87 m/s (√(2gh) = 10,85); L3-05 shares 0,642/0,636/0,653/0,625, mean 63,9 %, ΔE₁ = 0,240 J — all match exercises.json, solutions and answers.py; tolerances fit.
-- L1-06, L1-08: exactly one correct option; every distractor wrong and its feedback right (normal force does no work; friction work uses path length, not height).
-- Conditions stated in every task (no friction/air drag, constant friction, line through origin with reason in L2-05 c).
-- Energy principle used with the lesson's notation (E_k,1 + E_p,1 + W_muut = E_k,2 + E_p,2, W_kok = ΔE_k); friction → internal energy, total energy conserved (guardrail).
-- Scope: all inside FY4 energy principle; no later-course physics.
-- Levels: L1 one formula, L2 data/graph tasks, L3 multi-step YO-style modelling; 8/7/5 = 20; no duplicate of an existing task; plan items (pendulum + photogate, roller-coaster data, sled-type friction-work task, bouncing ball) present.
-- Hash identical at start and end.
+- Recomputed in one call: v = √(2·9,81·20) = 19,8 m/s ("noin 20 m/s", true); E_k at 12 m = 400·9,81·8 = 31,4 kJ ≈ 31 kJ (statement 4 false); mass cancels (2 false); normal force does no work, W = F∥s = 0 (3 true); total energy conserved with friction (5 false). Answer string "1 tosi, 2 epätosi, 3 tosi, 4 epätosi, 5 epätosi" matches; two true, three false.
+- Statements 2 and 5 are this chapter's two warned mistakes (heavier is faster; friction destroys energy), worded as the lesson's own corrections.
+- Conditions stated in the task (no friction or air resistance, starts from rest, zero level at the valley floor); Periaate says only the weight does work.
+- Notation W = F∥s, E_k, E_p, mgh as in the brief.
+- Rendered (preview build, 390 px, all feedback and the solution forced open, own script): no KaTeX span over 260 px, no overflow. Physics from text.
+- Hash 2f55633df83eff2a at the start and at the end.

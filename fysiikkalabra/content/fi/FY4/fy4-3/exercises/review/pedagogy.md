@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9afe1ad795180985
-Round: 3
-
+CONTENT-HASH: 7eb29709fe3b4f87
 ## Blocking
-
+(none)
 ## Polish
-- L3-04 diagram — in the cart figure F_r and F_k both run left from the same face; F_k is a short stub beside the long F_r, so the pair reads as one arrow with a side label at a glance. Acceptable: the text names both.
-
+(none)
 ## Checked
-- Opened the new L3-04 captures (L3-1280-5/6, fi): two separate one-body diagrams, each with its forces labelled; the cart's T points forwards, the horse's T backwards and F_t forwards, matching the Voimakuvio text.
-- Labels match the text: fi symbols F_r, F_k/F_dc, F_h/F_dh, F_t/F_road agree with Annettu and Kaava.
-- The model solution draws the diagram before the equations; numbers (450 N, 480 N) unchanged.
-- L1-08: Periaate now ends with the body choice only; no promise of a drawing.
-- Hash unchanged at the end.
+- New L2-08 (two-stage reasoned multiple choice, type 1): stage 1 F_HK = F_KH, stage 2 'voima ja vastavoima'.
+- Distractors hit the chapter's warned mistakes: reason 2 'kumoavat toisensa' (second warned error), reason 1 force grows with mass, option F=0 / reason 3 only moving bodies push.
+- Form: correct answer and correct reason are not the longest or the only hedged; reason 2 also says 'yhtä suuret', so only the 'kumoavat' claim separates it.
+- Stage-1 correct feedback states equality and opposite direction but not the law as reason, so the reason stage is not given away.
+- Scope: Newton III, vector notation with overline, magnitudes plain, as the lesson does. Task fits L2.
+- Solution has Kysytty/Periaate/Mallivastaus and addresses every wrong option and reason; Finnish correct.
+- Rendered at 390 px with solution open: no overflow, widest formula 129 px. Text only: feedback shown after answering (not verified visually).

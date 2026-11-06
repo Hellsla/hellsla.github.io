@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: db89440a4bef0c0d
+CONTENT-HASH: 9a6922af61eee680
 
 ## Blocking
 
 ## Polish
-- fy4-13-L2-06 still uses one table row only, and the plan's friction-estimate task is missing; the other rows could be used to show that $T < m_2 g$ every time.
-- L1-07 (Atwood, find $a$) is close to L2-02 (Atwood, find $T$).
-- Data tables use decimal points while the text uses commas.
+- exercises.json fy4-13-L2-08 choices[1] (correct) feedback — "Kiihtyvyys sen sijaan kasvaa nelinkertaiseksi" refutes reason 2 ("kiihtyvyys ei muutu") before the reason is chosen, and "T ≈ 3,1 N kummassakin kokeessa" hints at the formula. Shorten to "Oikein: kummassakin kokeessa T on sama." and keep the acceleration remark for the solution and the reason feedbacks.
+- reasons[2] — "massojen tulo ja summa pysyvät samoina vaihdossa" → "kun massat vaihdetaan keskenään, niiden tulo ja summa pysyvät samoina".
+- reasons[3] feedback — "Väite on tosi, mutta ei selitä" is good; add that the same would hold for any masses.
 
 ## Checked
-- Changes: MC option orders rebalanced (L1-06 correct option now third, L1-08 second); L2-07 key is now 2,0 with 2 % (true 1,962; the student's 2,45 falls outside); the Järkevyys line of L2-07 is now readable.
-- L3-04 states that the locomotive mass is excluded and that its pull is the same in both orders; the solution has three voimakuvio blocks, with the 27 / 15 / 6 kN arrows consistent with the numbers; K12 = 15 kN, and 21 kN in the new order (above 20 kN).
-- L3-05 now says the track is long enough; the voimakuvio of the 0,200 kg measurement (T = 1,6 N) matches $m_1 a$; answer 0,91 kg.
-- The "kaksi merkitsevää numeroa" lines now give a reason (spread of the data).
-- 20 tasks in 8/7/5 with complete solutions; scope stays inside the lesson.
-- Hash identical at the start and the end.
+- Round 1, new YO-skill task only (the rest of the set was PASS before). All checks from the packet text and exercises.json/solutions.md; no render was made or opened, so phone width of formulas is estimated from the LaTeX, not measured.
+- Numbers: a 1,962 and 7,848 m/s², T 3,14 N in both, below weights 3,9 and 15,7 N; formula T = m1m2/(m1+m2) g is in the lesson.
+- Form: reason lengths 83–94 characters, correct one not marked; stage-1 distractors are the warned mistakes (T = m2 g scaling; a unchanged, T follows m1). Reason 4 is the true-but-not-explanatory type.
+- Solution aligned blocks are split into short lines (about 220 px estimated).
+- Hash unchanged at end.

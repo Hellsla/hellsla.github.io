@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 286231f4a979b6e5
+CONTENT-HASH: ca15fc6e4d36dac3
 
 ## Blocking
 
 ## Polish
+- [Minor] solutions.md fy4-11-L2-08 Järkevyys — "Kaksinkertaisen nopeuden ajatteleminen nelinkertaisena kuuluu jarrutusmatkaan …" is a heavy sentence — "Jarrutusmatka riippuu nopeuden neliöstä, mutta törmäyksen keskimääräinen voima nopeudesta suoraan."
+- [Minor] fy4-11-L2-08 choice order — five options in a mixed order (pienenee neljäsosaan, pysyy samana, pienenee puoleen, kasvaa 8-kertaiseksi, kasvaa 2-kertaiseksi); an order by value (8×, 2×, same, ½, ¼) would read more easily.
 
 ## Checked
-- Retaken capture fy4-11-open-exercises-L3-1280-6 and -7: the new aligned block (2ad row, 561 m²/s², root row, result rows) renders with the equals signs aligned, nothing clipped, superscripts and units intact.
-- The following c) block and Vastaus/Järkevyys render as before; the layout survived.
-- Numbers 561 m²/s², 24,46 m/s, 18,34 m/s and 66,0 km/h match the Vastaus.
-- Layout 360/768/1280 px checks ok per packet (no 360 px exercise capture to inspect).
+- Own render of fy4-11-L2-08 at 390 px and 1280 px, a wrong choice with feedback, solution open: no overflow, no inline chain over 280 px, the Koe A / Koe B paragraphs read clearly.
+- Source of choices and solution: the correct option is not identifiable by form (five parallel one-line options, none hedged); distractors catch the 2×4 = 8 inversion, the velocity-only and the v² (stopping distance) mistakes; stays within chapter content; no plain number+unit.
+- Not opened: other tasks (unchanged).
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

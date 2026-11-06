@@ -1,17 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: d0a3da0eb8c360f9
+CONTENT-HASH: 90b024b2178f8161
 
 ## Blocking
 
 ## Polish
-- solutions.md:244–257 (L2-05) — the diagram is drawn for the first measurement (3,0 N, 2,5 N, 3,9 N at 39,8°), but the text does not say so. Add "(ensimmäinen mittaus)" to the Voimakuvio sentence.
-- solutions.md:291–304 (L2-07) — the diagram is in the table's plane, seen from above, so the weight and the support force are not in it. Say "ylhäältä katsottuna".
-- solutions.md:225 (L1-07) — G = N = 600 N is invented, because the mass is not given. Horizontal and vertical forces are drawn on separate scales ("eri mittakaavassa"), so no wrong ratio shows. If the spec could draw "equal, size unknown", that would be cleaner.
-- Carried from the previous round: L2-07 table friction; "Kuvaajan lukeminen" → "Taulukon lukeminen".
+- lessons/FY4/fy4-5/figures.py pick_tasainen (exercises.json:140, L1-09 option C) — only the correct option's description compares F with the weight ("kumpikin vajaa puolet painon nuolesta"), so a screen-reader user can pick it out by its form — give A, B and D the same ratio sentence (A: F about four fifths of G; B, D: F_k/v and F_μ just under half of G), or drop it from C.
+- exercises.json:128 (L1-09 stem) — "Voima F_k on laatikon voima työntäjään" names option B's error before the student judges it; "Voima F_k on laatikon ja työntäjän välinen voima" keeps the third-law check (taught in fy4-3) for the student.
+- Render 390 px (option figures) — the label N sits on the box's top edge in all four figures; nudge the label right (visual's call).
+- Carried from the previous round: L2-05 "(ensimmäinen mittaus)"; L2-07 "ylhäältä katsottuna"; L1-07 invented G = N = 600 N; "Kuvaajan lukeminen" → "Taulukon lukeminen".
 
 ## Checked
-- L1-07: F₁ 120 and F₂ 85 are pushes ending on the body, and F_μ 150 runs from the rear bottom corner along the floor. ΣF_x = 55 N forward, matching `a oikea` and the answer 55 N. G and N are equal. F_μ is longer than either push and shorter than their sum, as the text says (rendered lengths 175 : 125 : 220).
-- L2-05: arctan(2,5/3,0) = 39,8° and √(3,0² + 2,5²) = 3,91 N ≈ 3,9 N. The dashed components equal F_A and F_C in length, F_A points left, F_C down, F_B up to the right, and no weight is drawn (as the task states).
-- L2-07: F₁ + F₂ (60°) = (10,0; 6,93), with |Σ| = 12,17 N at 34,7°, so F₃ = 12,2 N at 214,7° closes the sum. The F₂ components are dashed. The table's 12,3 N is the measured value, and drawing the computed 12,2 N is right.
-- Every equation follows the drawn axes and signs. No velocity or acceleration is drawn as a force, and no component is double-counted.
-- The hash was d0a3da0eb8c360f9 at the start and at the end.
+- L1-09 physics: constant velocity, so ΣF = 0: F = F_μ and N = G; C draws exactly that (PK_F 40 vs PK_G 98,1, ratio 0,41 = "vajaa puolet", text). Solution's x/y equations match the drawn axes.
+- Each distractor carries one error and its feedback names it: A push 2 × friction (the chapter's warned "liikkeen voima" idea), B third-law partner F_k on the box (third law taught in fy4-3), D velocity drawn as a force (the chapter's warned mistake). Exactly one correct option.
+- Drawing rules from the code and the render: box a rectangle, G from the centre, N from the bottom face, friction from the rear bottom corner, push ending on the left face; same scale in all four figures as the stem says.
+- Option labels are "Voimakuvio A–D" only; no form give-away in the text; the correct feedback gives no extra reason stage.
+- Rendered (preview build, 390 px, all feedback and the solution forced open, own script): no KaTeX span wider than 260 px, no element past the 390 px edge. Physics checked from text and code; figure shapes and arrow lengths also from the render.
+- Within this and earlier chapters (fy4-3 third law, fy4-4 ΣF = ma).
+- Hash 90b024b2178f8161 at the start and at the end.

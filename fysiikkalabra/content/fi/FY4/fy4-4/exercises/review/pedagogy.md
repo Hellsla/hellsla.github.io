@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 751013725298ea15
-
+CONTENT-HASH: 2da55825729970a3
 ## Blocking
-
+(none)
 ## Polish
-- fy4-4-L2-07 now fixes the earlier Blocking item: a slab lowered and slowing, sign error in $a$ (the student takes the motion direction as the direction of $a$). It no longer repeats the example (a lift that accelerates up, the weight forgotten). It still uses a crane and a concrete element, as the example does; a lift cage or a rope-lowered crate would separate them further.
-- L1-06 (direction of $\Sigma F$ for a slowing lift) and L2-07 (the same idea for a slowing slab) test the same misconception; that is acceptable, since L2-07 adds numbers, but L1-06 pre-answers the error of L2-07.
-- Lifts recur in several tasks (L1-06, L2-02, L3-01, L3-05); one could move to a cart or lorry.
-- Data tables write decimals with a point while the text uses commas.
-
+- content/fi/FY4/fy4-4/exercises/solutions.md:271 — row-3 check line `18 kg * 9,81 m/s^2 = 176,58 N ~ 177 N` is 324 px in a 304 px box at 390 px (scrolls slightly); drop the `= 176,58 N` step or put it on its own line.
+- content/fi/FY4/fy4-4/exercises/exercises.json:~250 — feedback of row 3 ends 'Virhe syntyy vasta, kun painoa käytetään massan paikalla', which names the error before the student has found it; cut to 'Paino ei vaikuta vaakasuoraan liikkeeseen, mutta sen laskeminen ei ole virhe.'
+- exercises.json:~239 — rows 1 and 2 feedback 'Jos rivin luulee virheelliseksi, ajattelee, että ...' is stiff; write 'Jos pidit riviä virheellisenä, ajattelit, että ...'.
 ## Checked
-- Changed tasks: L1-07 (mass in g) and L1-08 (force in kN) now give a real unit conversion step, shown in Muunnokset; L2-06 data row 0,50 kg now 2,4 m/s² (still $F = 1{,}2$ N); L2-07 new.
-- L2-07 answer: $T = m(g + a) = 820\cdot 11{,}01 = 9028$ N; the student's $7{,}06$ kN is exactly $m(g - a)$; solution has voimakuvio, the equation with the sign convention, and a sanity check.
-- 20 tasks in 8/7/5; all solutions have the full step list; L3-04 and L3-05 unchanged and correct.
-- L1-06 distractors have their own feedback, one correct option.
-- Hash identical at the start and the end.
+- New L2-08 (error finding, type 4): four lines plus 'ei virhettä'; error in row 4 (weight instead of mass).
+- Distractor lines test the chapter's warned mistake (mass vs weight) and the red herring G = mg in row 3; each line's own check is explained.
+- Form: correct option is the last line, which is natural for a calculation; the 'ei virhettä' option is last as the type requires; no length or hedge clue.
+- Scope: F_mu, sigma F = ma, G = mg all taught in or before FY4.4.
+- Numbers verified: 36 N, 177 N, 2,0 m/s^2, 0,20 m/s^2 for the wrong line.
+- Rendered at 390 px with solution open: only the line above overflows; task lines (fractions) fit. Text only: Finnish.

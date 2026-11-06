@@ -1,19 +1,13 @@
-VERDICT: PASS
-CONTENT-HASH: 2aa6de8631579e57
-
+VERDICT: FAIL
+CONTENT-HASH: 4e883ea054d82bf0
 ## Blocking
-
+- content/fi/FY4/fy4-2/exercises/solutions.md:210 — in fy4-2-L2-08 the check line `s_2 = 8,0 m/s * 4,0 s + 1/2 * (-2,0 m/s^2) * (4,0 s)^2` is 397 px wide in a 304 px box at 390 px (measured in the render), so it scrolls sideways; limit is about 300 px — split into two lines, e.g. `s_2 = 8,0 m/s * 4,0 s + (-16 m)` after first evaluating each term in its own line (`v_0 t = 32 m`, `1/2 a t^2 = -16 m`, `s_2 = 16 m`).
 ## Polish
-- exercises.json L1-06 choice 4 — "pysähtyvään autoon vaikuttaa painon vastavoima" brings in Newton's third law (a later chapter) and is physically loose; use a distractor from this chapter's own misconceptions, e.g. "Ylöspäin, koska auto painaa tietä alaspäin ja kiihtyvyys on vastakkainen."
-- solutions.md L3-05 Järkevyys — "g sin α ≈ 0,81 m/s², α ≈ 5°" uses the incline component taught only in the force chapters; drop the sentence or say "loivalle radalle uskottava, sillä se on paljon pienempi kuin g".
-- exercises.json L1-07 — shares the figure ex-tv with L1-04; correct, but a graph that starts at v = 0 or decreases would vary the set.
-- exercises.json L2-06 — the text hands the student the linearisation; the solution's Periaate should say once that x = ½at² holds because the cart starts at rest from x0 = 0.
-- exercises.json L3-04 — a) and b) are routine for level 3; a (t,a) sketch would lift it.
-
+- Polish: the three wrong options catch dependence misreadings (time squared, inverted, independent), not one of the chapter's three warned mistakes (a = 0 when v = 0, negative a = slowing, heavy falls faster); acceptable for type 6, no change required.
 ## Checked
-- Round 2. Earlier report had no Blocking items; only the wording fixes changed: "videoanalyysillä" (L2-05, L3-03 text, L2-07 solution) is now correct Finnish.
-- L3-04 Järkevyys now reads "alle loppunopeudella 27,8 m/s koko ajan kuljettavan 222 m": correct (27,8 · 8,0 = 222 m) and the old "keskinopeudella" slip is gone.
-- Numbers unchanged and still match the answers (L2-05 0,84 m/s², L3-04 128 m, L3-05 3,61 m).
-- Levels fit and plan +3/+3/+2 met; no new task duplicates the worked example or an existing task.
-- Solutions complete for the new tasks (principle, formula, units, substitution, significant figures, sanity check).
-- Exercise captures show no clipping at 1280 px; the stage capture at 366 px fits.
+- New L2-08 (prediction, type 6) at L2 is right: needs t = v0/a and area under (t,v); within FY4.2 (area as displacement, v = v0 + at).
+- Form: correct option (2-fold) is neither longest nor the only hedged one; wrong-option feedbacks are longer than the correct one, no pattern; options span 4x, 2x, 1/2, 1x.
+- Numbers verified: t = 2,0 s and 4,0 s, s = 8,0 m and 16 m, check by x formula = 16 m; wrong-option feedbacks consistent with that.
+- Task order: situation, data, question last as its own sentence; direction (wet road) stated.
+- Solution is complete and explains why each wrong answer arises.
+- Rendered at 390 px: only the line above overflows; other formulas fit (widest 304 px = box width). Text only: Finnish and logic.

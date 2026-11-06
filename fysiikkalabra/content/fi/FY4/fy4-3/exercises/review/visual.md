@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 9afe1ad795180985
-Round: 3
+CONTENT-HASH: 7eb29709fe3b4f87
 
 ## Blocking
 
 ## Polish
-- [Minor] L3-04 horse figure — the F_h label sits just over the hatching beside the contact surface; legible, optional nudge.
-- [Minor] No 360 px capture of the exercise bodies exists; phone view rests on the layout checks.
+- [Minor] L2-08 solution Mallivastaus — one paragraph of 121 words (limit about 120) holding the answer, three rejected choices and the same-body distinction — split before "Perustelu ”voimat kumoavat toisensa”".
+- [Minor] L2-08 answer-stage feedback for the correct choice — "yhtä suurella voimalla ... ja voimat ovat vastakkaissuuntaiset" already names equal and opposite, which is the content of the reason stage — shorten to "Oikein: voimat ovat yhtä suuret."
+- [Minor] L2-08 task — $F_{KH}$ and $F_{HK}$ get their meaning only from the sentence order ("kuorma-auto työntää henkilöautoa voimalla F_KH") — acceptable; optionally say "$F_{KH}$ (kuorma-auto → henkilöauto)".
 
 ## Checked
-- Opened the regenerated L3-04 captures at 1280 px (fi): both figures fit their frame, every arrowhead is visible, arrows in house red, labels KaTeX with overlines, no overlap between bodies and arrows.
-- fi labels match the text (F_r, F_k/F_dc, F_h/F_dh, T, F_t/F_road); no leftover Finnish symbol in en.
-- L1-08 wording change: no layout effect.
+- Rendered preview/fy4-3.html at 390 and 1280 px with feedback, hints and solution open: whole L2-08 card (task, both stages, all seven feedbacks, solution).
+- Measured: no overflow, card 330 px, widest formula 129 px; no KaTeX errors; vectors set with overline, \tfrac inline in the option. Distractors catch the chapter's warned mistakes (force grows with mass; forces cancel; only the mover pushes); the correct choice is not identifiable by length or hedging.
+- Text only: Finnish, compound words (kuorma-auto, henkilöauto, vastavoima) read and consistent.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

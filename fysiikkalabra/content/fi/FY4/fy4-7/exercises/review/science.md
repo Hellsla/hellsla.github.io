@@ -1,21 +1,17 @@
-VERDICT: PASS
-CONTENT-HASH: 6068178bcd61558b
+VERDICT: FAIL
+CONTENT-HASH: 38dda5a3dff4f7c3
 
 ## Blocking
+- exercises.json:117–146 (L1-09) — no distractor catches a mistake this chapter warns about (E_k linear in v, a single "true" E_p, E_p only from gravity); the G-for-m mix in $Ggh$ is not one of them, and the v → v² error already has an L1 task elsewhere but the rev-4 rule asks the new task's distractors to carry it — replace $\dfrac{m v^2}{2h}$ (or $Ggh$) with $\tfrac12 m v$, feedback "kg·m/s, ei joule: liike-energia riippuu nopeuden neliöstä, joten v:n pitää olla toisessa potenssissa", and update solutions.md:300–314 to match.
 
 ## Polish
-- exercises.json:223 (L2-07) — "Kärryn liike-energia mitattiin … massa unohtui" gives no way E_k could be measured without the mass (in this chapter E_k comes from ½mv² or mgh, both need m) — say how it was determined (e.g. from the braking force and stopping distance measured with a force sensor) or present it as a simulation's output.
-- exercises.json:290 (L3-04) — a tennis ball keeps about 53–58 % of its height per bounce (ITF drop test); the data's 73 % is a livelier ball — change to "kumipallo/koripallo" or scale the heights (e.g. 1,50 → 0,84 → 0,47 …).
-- exercises.json:74–79 (L1-07) — inverse of L1-04 with a kJ conversion and a rearrangement, which answers.py's own header counts as level 2; kind "reasoning" does not fit a one-formula calculation — keep at level 1 but give the energy in joules, or relabel kind.
-- solutions.md:285 (L3-05 c) — the segment losses 284, 363, 354, 596 J are not monotonic in speed, and the path lengths along the slope are not given — add "jos osuudet ovat yhtä pitkiä" and say the trend is only rough.
-- Set vs plan (docs/exercise-bank/FY4.md) — L3-04 and L3-05 have the same a–d structure (losses + zero-level part d); the plan's energy-bar-chart figure task (level 2) is missing — update the plan or vary one task.
+- exercises.json:143 (L1-09, option $v^2/(2g)$) — "korkeus, jolle kappale nousee" lacks the lesson's condition; write "korkeus, jolle kitkaton kappale nousee nopeudesta $v$" (as solutions.md:313 already does). "Se tulee energiayhtälöstä" points at fy4-8; say "rampin nousukorkeudesta, kuten luvun teoriassa".
+- Carried over: L2-07 how E_k was measured; L3-04 tennis-ball 73 %; L1-07 level/kind; L3-05 c segment lengths; plan's energy-bar figure task.
 
 ## Checked
-- All 18 numeric answers recomputed independently (one script): json, answers.py and own model agree within tolerance (L2-07 least-squares slope 0,259 → 0,52 kg; L3-04 0,614 J; L3-05 1597 J).
-- L2-05 table matches free fall from 1,80 m (h, v within 0,01); E_mek 1,001–1,021 J, mean 1,009 J, spread 1,2 % as stated.
-- L2-06: h = −1,5 m, E_p = −1030 J, E_mek = −470 J; student's 1590 J reproduced; scope disclaimer ("määritelmän mukainen") covers buoyancy/water drag.
-- L3-04 ratios 0,727/0,734/0,712/0,737, mean 0,728; d) zero-level shift cancels (−0,615 J vs 0,614 J rounding).
-- L3-05: E_mek table, conservation check v₅ = 17,8 m/s, loss 19 %, zero level at point 1 gives −1543 J and same difference.
-- MC L1-06, L1-08: exactly one correct option, every feedback right; E_k ≥ 0 and E_p < 0 below zero level as in the lesson.
-- Scope: only E_k, E_p = mgh, E_mek, zero level; losses named as internal energy (guardrail: friction creates no energy).
-- Levels 8/7/5; solutions complete, symbolic first, rounding justified.
+- Units recomputed: mv²/(2h) → kg·m/s² = N; Gv²/(2g) → N·m = J (equal to ½mv² via G = mg); Ggh → J·m/s²; v²/(2g) → m. Exactly one option is joule; each feedback states the unit the expression really has.
+- J = N·m = kg·m²/s² and h = v²/(2g) are taught in this chapter's Kaava; G = mg from fy4-3. Within scope.
+- Correct option not identifiable by form: three of four are fractions with v², none hedged or longer; the correct feedback gives no further reason stage.
+- Notation G, g, h, E_p, E_k as in the brief.
+- Rendered (preview build, 390 px, all feedback and the solution forced open, own script): widest inline formula chain (mv²/(2h) feedback) under 260 px, no overflow inside the task. Physics from text.
+- Hash 38dda5a3dff4f7c3 at the start and at the end.

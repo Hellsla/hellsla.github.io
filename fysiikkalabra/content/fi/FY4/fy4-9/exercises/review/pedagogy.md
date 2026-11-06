@@ -1,13 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: cd5b133c0f7ecf25
+CONTENT-HASH: e4df9939d9e9aaf6
 
 ## Blocking
 
 ## Polish
-- No new findings; round-1 Polish items not touched by the diff remain optional (L3-05 weight leniency within the 2 % tolerance; L2-06 and L3-04 c) share the "soft stop" idea).
+- exercises.json fy4-9-L1-09 text — "raekivi" is an odd word; use "rae" ("Rae, jonka massa on 20 g, putoaa ... ja osuu auton kattoon") and "rakeen" in the solution.
+- fy4-9-L1-09 question — "suuruusluokaltaan ... Valitse lähin arvo" while the exact result 400 N is an option; "Arvioi ... Valitse lähin arvo" is more honest.
 
 ## Checked
-- Delta: L1-08 Järkevyys now says "noin 180-kertainen" (18 000 / 100 = 180), correct.
-- Delta: L2-07 solution now says seven trapezoids; the table has 8 rows, so 7 intervals of 10 ms: correct, and the sum 144,0 N and Δv = 2,88 m/s are unchanged.
-- No answers or numbers changed; the remaining round-1 checks stand.
+- Round 1, new YO-skill task only (the rest of the set was PASS before). All checks from the packet text and exercises.json/solutions.md; no render was made or opened, so phone width of formulas is estimated from the LaTeX, not measured.
+- Form: option texts 15–20 characters, feedbacks 215–262; the correct one is not longest, shortest-hedged or alone in mentioning anything.
+- Distractors: ms taken as s, kinetic energy instead of momentum (the lesson's third warned mistake), grams as kg; each feedback names its error and is right (4,0 J / 0,001 s = 4000 W; 0,4 N is about 2 x weight).
+- Scope: only p = mv, impulse principle, unit conversion; weight neglect is stated. No repeat of the tennis example.
+- Solution complete (conversions, principle, substitution, sanity check); longest chain "F_ka = 0,40 kg·m/s / 0,0010 s, eli 400 N" about 260 px estimated, wraps at "eli".
 - Hash unchanged at end.

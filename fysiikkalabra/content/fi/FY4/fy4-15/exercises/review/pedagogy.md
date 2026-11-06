@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 28f6844eead6cf50
+CONTENT-HASH: b5ff0600214c4eda
 
 ## Blocking
 
 ## Polish
-- fy4-15-L3-04 c) solution explains the 13 m/s case with "lapoja käännetään"; add that this is how the real power curve flattens (one sentence), and consider splitting the long "Mallivastaus kohtiin a ja c" into a) and c) lines for phone reading.
-- fy4-15-L3-04 "Järkevyys" cites the 59 % upper limit; the lesson does not teach it, so say "teoreettinen yläraja (Betzin raja)" or drop it.
-- fy4-15-L2-06 answer field 19 GWh but computed 18,8; use 18,8 (three digits) so students computing exactly are not told they are rounding.
-- fy4-15-L3-05 a) is a level-2 computation; the level-3 part is b) and c). Acceptable, but say in c) which energy (240 MWh in the water) the 6 h refers to.
-- fy4-15-L2-07 and L3-04 both use eta = 0,40; vary one (e.g. 0,35).
+- exercises.json fy4-15-L2-08 — same scenario and chain as the worked example (rotor diameter, 1,25 kg/m³, η, P = ½ηρAv³) and close to L1-04/L2-07; the new part is the km/h trap and the magnitude form. Vary the context (e.g. smaller rotor, or ask first for the factor when v drops by a third) if a different task is wanted.
+- choices[1] feedback — "Nopeuden neliö kuvaa yhden ilmakilogramman liike-energiaa" is loose (½v²); "yhden kilogramman liike-energia on ½v²".
+- solutions.md last sentence compares with the lesson example (verified: 2,32 MW); fine but "Lisäksi" can go.
 
 ## Checked
-- Recomputed: 2,918 MW; 180 kJ; 5,478 GWh; 18,80 GWh, ratio 4,3; 242 kW; P/v^3 = 1,24-1,27, eta 39,9 %, 2751 kW at 13 m/s; 300 MWh, 1,036e6 m^3, 240 MWh, 6,0 h; all match answers.
-- L1-06 distractors address real errors; feedback repairs them.
-- L2-07 error (v instead of v^3) is real; student's 4948 W reproduces.
-- Scope: P = rho Q g h, P = 1/2 eta rho A v^3, pumped storage per plan; nothing beyond the lesson except the Betz remark.
-- Levels fit; counts 8/7/5 reached; no duplicate within the set.
-- Renders at 1280 px not clipped.
+- Round 1, new YO-skill task only (the rest of the set was PASS before). All checks from the packet text and exercises.json/solutions.md; no render was made or opened, so phone width of formulas is estimated from the LaTeX, not measured.
+- Recomputed: A = 7854 m², P = 1,96 MW; v¹ gives 19,6 kW, v² gives 196 kW, 36 instead of 10 gives about 91 MW (47 x); options match exactly.
+- Distractors: the warned "double wind gives double power", unit slip, and exponent errors; correct option 14 characters among 14–18, not marked; steps 10x, 10x, 45x apart.
+- Scope: lesson formula only. The nimellisteho sentence keeps the formula valid.
+- Aligned chain longest line about 230 px estimated.
+- Hash unchanged at end.

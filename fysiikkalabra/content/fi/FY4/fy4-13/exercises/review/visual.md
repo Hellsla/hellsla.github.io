@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: db89440a4bef0c0d
+CONTENT-HASH: 9a6922af61eee680
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy4-13-L3-04 wagon-3 diagram — the a label sits on the N label at the top; separate them slightly.
-- [Minor] fy4-13-L1-07 — two FBDs plus two equations is heavy for level 1 (for pedagogy).
+- [Minor] fy4-13-L2-08 reasons — the correct reason is the only one with a formula, so it can be picked by form; give one distractor a formula too (for example the wrong T = m_1 a chain with its own symbols) or drop the formula from the correct one.
+- [Minor] fy4-13-L2-08 first question — the correct answer is the shortest option; lengthen it slightly ("Jännitysvoima pysyy samana kummassakin kokeessa").
+- [Minor] fy4-13-L2-08 solution — "Perustelu: kaavassa T = ... g massojen tulo ja summa" breaks across lines with the fraction alone; optional display line.
 
 ## Checked
-- L3 parts 6, 7, 9: L3-04 now with three voimakuvio figures (wagon 1 with F and K12, wagon 2 with K12 and K23, wagon 3 with K23), all legible, text matches, grammar fixed ("on kytketty"); L3-05 with the new cart and weight diagram, aligned Sijoitus.
-- Scale and arrow lengths match the text (K12 longer than K23).
-- Round 2 delta. Captures are 1280 px only (no 360/390 exercise-body captures), so phone rendering rests on the passing layout checks.
+- Opened (own script vr4_task390.py, 390 px viewport, feedback of both questions and solution open, overflow measured): 7-16 (L2-08) in full, plus 7-1, 7-9, 7-18 with the new paragraph breaks (also text of L3-01); the chain blocks are 286 px, no clipping, document width 390 (measured).
+- Distractors catch the chapter's warned mistake (T = m_2 g); correct feedback does not state the reason stage; spelling of compounds checked from text.
+- Read from text only: solutions.md diff (matches the rendered card). 1280 captures not re-opened: the diff adds no figure.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

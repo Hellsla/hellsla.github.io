@@ -1,19 +1,17 @@
-VERDICT: PASS
-CONTENT-HASH: 2aa6de8631579e57
-Round: 2
+VERDICT: FAIL
+CONTENT-HASH: 4e883ea054d82bf0
 
 ## Blocking
+- [Major] L2-08 solution, Tarkistus kaavalla — the chain "s_2 = 8,0 m/s · 4,0 s + ½ · (−2,0 m/s²) · (4,0 s)²" is 397 px wide in a 304 px box at 390 px; it is not split into rows, so it scrolls sideways and the page cuts it after "(−2,0 m/s" — the factors and the second term cannot be read without scrolling (rule: a chain fits about 300 px) — split it in the source, e.g. one line "$s_2 = 8{,}0\,\text{m/s} \cdot 4{,}0\,\text{s} + \tfrac{1}{2} \cdot (-2{,}0\,\text{m/s}^2) \cdot (4{,}0\,\text{s})^2$" as two chained formulas ("$v_0 t = 32\,\text{m}$ ja $\tfrac12 a t^2 = -16\,\text{m}$") or write the two terms on separate rows.
 
 ## Polish
-- [Minor] solutions.md L2-06 Muunnokset — "$\text{m} : \text{s}^2 = \text{m/s}^2$" reads oddly for a unit — "Kulmakerroin $x : t^2$ on yksikössä $\text{m/s}^2$"; Kuvaajan lukeminen "(yksikkö / $\text{s}^2$)" splits across a line — keep "yksikkö $\text{s}^2$" in one formula.
-- [Minor] L1-07 — reuses the figure of L1-04 (ex-tv) for another question; fine, optionally say in the figure description that it is shared.
-- [Minor] L3-04 solution Sijoitus — the four acceleration fractions are unit-less rows announced as "($\text{m/s}^2$)"; put the unit on each result ("$= 5{,}0\,\text{m/s}^2$").
-- [Minor] L3-05 solution Vastaus — c) is a long inline paragraph; split after "koko aikavälin ajan" and set the (t,x) description apart.
+- [Minor] L3-03 task (edited) — the inline polynomial is exactly as wide as the card (330 px) and the closing comma after "1,20 m" is clipped at 390 px — put the polynomial in its own paragraph without the comma, or end with a full stop after it.
+- [Minor] L2-08 solution Mallivastaus — the final paragraph runs about 100 words with three rejected answers in one block — optionally give the rejected answers their own short paragraph.
 
 ## Checked
-- Round 1 had no Blocking items; the round 2 diff is wording only. Verified in the source: "videoanalyysillä" now in L2-05, L3-03 and the L2-07 Mallivastaus (no "videoanalyysilla" left in exercises.json or solutions.md); L3-04 Järkevyys now reads "loppunopeudella $27{,}8\,\text{m/s}$ koko ajan kuljettavan $222\,\text{m}$", which matches 27,8 · 8,0 = 222 m.
-- Captures open-exercises-L3-1280-5 (L3-04 solution: km/h table, fraction rows, Vastaus) opened; layout survives. Captures predate the one-sentence wording fixes, deterministic layout checks (360/768/1280) ok.
-- Earlier round: L1-06..08, L2-05..07, L3-04..05 captures at 1280 px; ex-tv figure fine.
+- Rendered preview/fy4-2.html at 390 and 1280 px with feedback, hints and solution open: L2-08 whole card (task, four feedbacks, solution chains), L2-08 solution step at 2x, L3-03 task at 2x.
+- Measured overflow: card and page fit; only the chain above overflows (397 px vs 304 px); other chains 190 px or less. 1280 px: all fine.
+- The correct option is not identifiable by form (the four options have similar length; the 4-kertainen distractor catches the squared-time mistake). Text only: wording and units of task and feedback read; units LaTeX throughout.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 5
+illustrations 5 · typography 3 · Finnish 5 · accessibility 4

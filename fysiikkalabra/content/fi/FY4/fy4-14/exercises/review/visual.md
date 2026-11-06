@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 71907f335cfdbc4e
+CONTENT-HASH: 5ffc229e2dbf46e5
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] exercises.json fy4-14-L1-08 (task 9-8) — the student's quotation uses straight quotes and the closing `."` wraps alone onto a new line after the formula (capture 1280-9) — use Finnish quotes ”…” and end the quote with the full stop inside the maths line or move the sentence end before the formula break.
-- [Minor] fbd of L1-08, L3-04 (captures 1280-9, L3-6) — the head of G sits against the head of F_v under the box; readable, optional small horizontal offset.
-- [Minor] solutions.md L3-04 and L3-05 — 392 and 327 words (lint warning, three parts a-c each); acceptable for level 3 but Periaate/Järkevyys could carry more.
-- [Minor] L2-06 solution, Sijoitus b) — the ratio line is plain prose with maths inline; fine, but the "a)" label stands alone on its own row.
+- [Minor] fy4-14-L1-09 solution — the five lines "1 tosi: …" to "5 epätosi: …" are one block with single line breaks; set them as separate paragraphs or a list for phone reading.
+- [Minor] fy4-14-L1-09 statement 1 — "kiihtyvyyden suuruus" is exact; the feedback says "hidastuvuus suurempi kuin g" (another word); use the same term.
 
 ## Checked
-- Level 1 new tasks 9-6, 9-7, 9-8 (1280-7..10): MC options and feedback render, model answer and Voimakuvio (a orange, v blue, F red) correct; solution open states fit their cards.
-- Level 2 new tasks 9-13, 9-14, 9-15 (L2-1280-6..10): data tables with caption, units in LaTeX headers and decimal comma; sijoitus rows aligned; FBDs fine.
-- Level 3 new tasks 9-18..9-20 (L3-1280-5..9): multi-part texts, table, aligned sijoitus rows, FBDs legible.
-- No 390/360 px capture of the exercise cards exists (only stage-exercises-390); layout 360/768/1280 checks are ok in the packet. lint now 0 errors (packet's FAIL line is stale; only the word warnings above).
+- Opened (own script vr4_task390.py, 390 px viewport, feedback of both questions and solution open, overflow measured): 9-9 (L1-09) in full: five statements with Tosi/Epätosi controls, feedback, answer line and solution; no overflow (390 px, measured), inline formulas short.
+- Truth pattern T-F-T-F-F is not guessable by form; statements 2, 4 and 5 catch the chapter's warned mistakes (no force at the apex, drag above weight at terminal speed, lighter ball).
+- Text only: solutions.md diff, which matches the card.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

@@ -1,20 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 140890ba59fc47db
-Round: 2
+CONTENT-HASH: bc0ea52e2d8d623c
 
 ## Blocking
 
 ## Polish
-- [Minor] L2-06 solution — symbols $x_\text{A}$ (auto), $x_{0\text{B}}$ (pyöräilijä) are used but the task names only the vehicles — name them in Annettu ("auto A, pyöräilijä B").
-- [Minor] L1-07 solution Kaava — the two display rows are set in one aligned block with an odd indent; use one `=` chain per row.
-- [Minor] L2-05 solution Järkevyys — "taulukon aikaväliä myöhemmin" — "taulukon aikavälin jälkeen".
-- [Minor] L3-04 Vastaus — "kolme merkitsevää numeroa" for $267\,\text{m}$ although the data have two; explain or round to $270\,\text{m}$. Muunnokset "40 : 3,6" — "$40\,\text{km/h} = \dfrac{40}{3{,}6}\,\text{m/s}$".
-- [Minor] L1-06 — "kuvaajat on piirretty" but no graph is shown; optionally add the figure.
+- [Minor] fy4-12-L2-08 option figures at 390 px (pick-oikea, pick-kaari, pick-kohtaus, pick-alku) — each graph is drawn only about 190 px wide inside its option card, so tick numbers are about 9 px and the v_A, v_B labels about 7 px; the shapes and crossing points are still clear, but the values cannot be read off — allow the figure the full card width (less card padding) on a phone.
+- [Minor] same task — the options are listed shuffled (Kuvaaja 4, 1, 2, 3) — list them in numeric order.
+- [Minor] same figures — car and moped are green and brown, whereas FY4 draws velocity in blue; the colours separate the two bodies, so only name this convention in the figure description ("auto vihreä, mopo ruskea").
+- [Minor] fy4-12-L2-03 — the situation and the instruction are now split into two paragraphs as intended; no change needed.
 
 ## Checked
-- Round 1 had no Blocking items; the round 2 diff is one sentence in solutions.md L3-04 Vastaus. Resolved: the margin is now "noin $0{,}7\,\text{s}$ ... $(33\,\text{m} : 49\,\text{m/s})$", and 20 + 29 = 49 m/s closing speed at the end, 33/49 = 0,67 s, consistent with the final speed $29\,\text{m/s}$ in the same solution.
-- Capture open-exercises-L3-1280-6 (L3-04 chains, Vastaus, Järkevyys) opened: aligned rows, upright units, nothing clipped; capture predates the wording fix. Deterministic layout checks ok.
-- Earlier round: L1-06..08, L2-05..07, L3-04..05 captures at 1280 px.
+- Own render of fy4-12-L2-08 at 390 px (crop enlarged) and 1280 px with the correct choice and feedback, solution open: no overflow; all four graphs shown with axes, units and the same scale.
+- Compared figure sources and descriptions with the solution: kaari (curve), kohtaus (cross at 8 s), alku (starts at 12 m/s), oikea (20 to 0, cross at 4 s) are drawn as described; descriptions give a non-seeing reader the same information.
+- Source of choices and solution: the correct graph is not identifiable by form; distractors catch the warned mistake (crossing of v-lines read as meeting). Rendered fy4-12-L2-03 at 390 px.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 5
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

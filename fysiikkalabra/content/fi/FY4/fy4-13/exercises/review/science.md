@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: db89440a4bef0c0d
+CONTENT-HASH: 9a6922af61eee680
 
 ## Blocking
 
 ## Polish
-- solutions.md (L3-04, voimakuvio blocks) — the vertical arrows are drawn shortened ($G_1 = 30$ beside $F = 27$, while the real weight is about 235 kN). The text says so, but a model diagram with knowingly wrong length ratios goes against the "arrows in physically meaningful proportion" rule that YTL marks down. Consider drawing the weights to scale, or showing only the horizontal forces plus a note that $\overline{G}$ and $\overline{N}$ cancel.
-- solutions.md (L3-05, voimakuvio) — $G_1 = 8{,}92$ uses the mean cart mass 0,909 kg, not this measurement's 0,930 kg. Say "keskiarvomassalla" in the Voimakuvio line.
-- L2-06 — the bank plan's "kitkan arvio" is still not done (optional, carried over).
+- exercises.json:275 (L2-08, correct choice feedback) — "Kiihtyvyys sen sijaan kasvaa nelinkertaiseksi" is shown before the reason stage and rules out reason 2 ("kiihtyvyys ei muutu"), which leaves only reason 3 and the true-but-irrelevant reason 4. That half gives the reason stage away — keep only "kummassakin kokeessa $T \approx 3{,}1$ N" here; the acceleration change is already in the reason 2 feedback and the solution.
 
 ## Checked
-- Round-1 items fixed. L2-07 now keys 2.0 with tolerance 0,02 (|2,0 − 1,962|/1,962 = 1,9 %), and answers.py matches. L2-06 now gives a true reason for two figures (3,41 and 3,49 N are about 2 % apart). L3-05 now has a Voimakuvio step before the equations.
-- L3-04 voimakuvio blocks: the horizontal forces sum to $m\overline{a}$ in each wagon: 27 − 15 = 12 = 24 t · 0,50; 15 − 6 = 9 = 18 t · 0,50; 6 = 12 t · 0,50.
-- L3-04: the Vastaus is now in the order a), b), c), and "ne on kytketty" is fixed.
-- L3-05 voimakuvio: $T = 1{,}6$ N and $G_2 - T \approx m_2 a$ are consistent within rounding.
-- L2-05: the rounding reason is now the hand-fitted line.
-- L2-07: the reworded Järkevyys is correct ($m_2 g - T \approx 0 \ne m_2 a = 1{,}2$ N).
-- Changed answers recomputed: 2,0; 3,408 and 3,485; 15,03 kN; 0,909 kg. All are inside their tolerances.
+- Scope: only the new task L2-08 (two-stage, type 1). The rest of the set was PASS before and is unchanged. Checked from the text only, no renders.
+- Physics: cart and hanging weight, $T = \tfrac{m_1 m_2}{m_1+m_2}g$ is symmetric in the masses. Recomputed: $a$ = 1,962 → 7,848 m/s² (×4), $T$ = 3,139 N in both, weights 3,92 and 15,70 N, so $T < m_2 g$ both times. Frictionless table, light and inextensible string, light frictionless pulley and no air resistance are all stated in the task.
+- Within the lesson: the formula, the method and the "$T = m_2 g$" misconception all come from the brief's Kaava and Yleinen virhekäsitys. Notation $m_1, m_2, T, a$ is the same.
+- Distractors: choice "×4" and reason 1 catch the chapter's own warned mistake ($T$ = weight). Choice "¼" and reason 2 catch "same total mass ⇒ same $a$". Reason 4 is a true statement that does not explain the answer. Every wrong item's feedback says why it is wrong, and exactly one choice and one reason are correct.
+- Form: the correct reason is not the longest, not the only hedged one and not the only one about the masses (reason 2 also uses a formula).
+- solutions.md L2-08: Kysytty · Periaate · Mallivastaus. Symbolic result before substitution, both experiments computed, and the reasonableness check ($T$ below the weight) is a real check. Each aligned line is short (a single \frac), so it should fit 300 px; checked from text only.
+- answers.py: no line is needed (a choice task). All 18 numeric answers in the set were recomputed in one call and agree with exercises.json within their tolerances.
+- Spelling of compound words: jännitysvoima, kokonaisvoima, nelinkertaiseksi and väkipyörä are correct.

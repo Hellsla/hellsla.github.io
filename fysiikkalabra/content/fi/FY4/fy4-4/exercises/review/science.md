@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 751013725298ea15
+CONTENT-HASH: 2da55825729970a3
 
 ## Blocking
 
 ## Polish
-- exercises.json L2-07 (new task): the physics is the same as L2-03 (a crane lowers a load that slows down, and T = m(g + a)). The error-analysis framing makes it a different exercise, but whether the set needs both is for pedagogy to judge.
-- exercises.json L3-05: the plan asks for a "(t, a)-hissikuvaaja", but the task gives a table plus text. A (t, a) graph would match the plan.
+- content/fi/FY4/fy4-4/exercises/exercises.json:237 (L2-08) — "Esimerkkiarvot:" at the start of the text reads as if the values were placeholders — drop the prefix.
+- lessons/FY4/fy4-4/answers.py:32 — add the correct value of the task as a check line, e.g. `# fy4-4-L2-08 is multiple choice (error in row 4); a = 36 N / 18 kg = 2,0 m/s²`, so the stated correct value 2,0 m/s² is computed somewhere.
 
 ## Checked
-- Round 2: the round-1 items are fixed. L2-07 was replaced, L2-06 now answers a) and b) in its Vastaus, and L1-08 now asks for the snowmobile's mass only.
-- I recomputed all 20 answers in one script. All match answers.py (run with `python3 -I`) and the solutions.
-- L1-07: 170 g = 0,17 kg, so 68 N. L1-08: 0,60 kN = 600 N, so 400 kg. Both now have a real conversion step.
-- L2-06 (row 2,35 changed to 2,4): a fit through the origin gives F = 1,208 N (answer 1,2, tol 0,04). The products ma lie between 1,17 and 1,24 N.
-- L2-07 (new): the slab moves down and slows, so a points up. T = 820·(9,81 + 1,20) = 9028 N. The student's 7,06 kN = 820·8,61 is right for the wrong sign. The rendered diagram (T > G, a up, v down drawn separately) is right. Three significant figures fit 1,20 m/s².
-- L2-05, L3-04, L3-05 have not changed: m = 0,498 kg, F_μ = 1,19 N from the fit, N = 634 N.
-- L1-06 (MC): one correct option, and every distractor's feedback is right.
-- Scope: FY4.4 only; kinematics from fy4-2 appears at level 3 only.
-- The hash was the same at the start and at the end.
+- New task fy4-4-L2-08 (Virheen löytäminen, type 4): recomputed ΣF = 45 − 9,0 = 36 N; G = 18 · 9,81 = 176,58 ≈ 177 N; a = 36 N / 18 kg = 2,0 m/s²; the shown 36/177 = 0,20 is the only wrong line. Rows 1–3 are really correct, so exactly one correct option.
+- The error is this chapter's own warned mistake (massa vs. paino on a horizontal track), and the "Laskussa ei ole virhettä" feedback uses the lesson's words (tukivoima kumoaa painon, kiihtyvyyttä pienentää massa). Distractor feedback for rows 1–3 says why each line is right and which idea would make it look wrong.
+- Form: the five options are parallel ("Rivi n: …"), so the right one cannot be picked by form; the unit check N : N ≠ m/s² is a real check.
+- Physics: friction 9,0 N on an 18 kg cart (μ ≈ 0,05) and a = 2,0 m/s² are plausible; F_μ is the symbol already used in this set's solutions; air resistance left out is stated.
+- Scope: ΣF = ma with signed forces, taught here; friction only as a given force.
+- Solution complete (rows checked one by one, symbolic a = ΣF/m first, direction and significant figures stated).
+- All 21 answers: answers.py run once and compared: 19 numeric within tolerance; L1-06 and L2-08 one correct choice each.
+- Inline formulas (text only, not rendered): the longest, Rivi 4 "a = 36 N / 177 N ≈ 0,20 m/s²" with \dfrac, ≈ 170 px; all under 300 px. The 360 px layout check passed.
+- Hash identical at start and end.

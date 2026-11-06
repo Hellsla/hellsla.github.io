@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: e1dcbf2b13e4d6c6
+CONTENT-HASH: 3327555d5e0791a2
 
 ## Blocking
 
 ## Polish
-- L2-05 and L2-03 — both fit $(N, F_\mu)$ through the origin to get μ. The overlap is acceptable, because L2-05 adds computing N from the mass (carried over).
-- L3-05 — the fbd tag `error` still names an equation error, not a drawn diagram made `wrong=` (pedagogy's call).
+- solutions.md:350–382 (L2-08) — the boxes B and D are solved from ΣF_x = 0 with no force diagram or axis; one sentence ("rinteen suuntainen akseli alas rinnettä: F_μD − mg sin α = 0") or a small diagram would follow the chapter's fbd rule that the diagram comes before the equation (pedagogy's call).
+- solutions.md:382 (L2-08) — add a one-line Järkevyys like the set's other solutions, e.g. "D:n kitka 123 N < yläraja 149 N ja B:n 30 N < 196 N, joten levossa olevat pysyvät levossa".
+- Carried over: L2-05/L2-03 overlap; L3-05 fbd tag `error`.
 
 ## Checked
-- L3-04 key is now 73 (tolerance 0,03, |73 − 73,38|/73,38 = 0,5 %); answers.py rounds with sf(..., 2) and prints 73.0; it matches the Vastaus "73 m (laskettu 73,4 m)".
-- L3-05 new data (30°, μ = 0,35): $a = 1{,}9315\,\text{m/s}^2$, $s = 8{,}69\,\text{m} \to 8{,}7$ (key 8.7). The student's version gives 1,47 → "≈ 1,5". $N = 169{,}9$ N, the kinetic friction is 59,47 N, and the student's μmg is 68,7 N. The voimakuvio sums to $m\overline{a}$ along the slope: 98,1 − 59,5 = 38,6 = 20 · 1,93. The data no longer repeat the lesson's example.
-- L3-05: the sliding condition is now right (tan 30° > μ while sliding, and $\mu_0 < \tan 30^\circ$ from the task statement).
-- L3-04: the solution now carries unrounded intermediates: $v_0^2 = 493{,}8$, $a_c = 3{,}365$, $s_c = 73{,}4$ m, and a) and b) give 33,6 m and 55,9 m. Recomputed 73,38 m. "Auton massaa" is fixed.
-- L2-07 shows tan 25,4° = 0,4748 → 0,47.
-- L1-06 options now use $F_{\mu 0}$, and exactly one option is correct.
-- L2-06 now states that the pull is horizontal throughout.
+- Recomputed in one call: A μmg = 58,9 N; C 44,1 N; B static, F_μ = F = 30 N (bound 196 N); D mg sin 30° = 122,6 N (bound μ₀mg cos 30° = 148,7 N, so D really stays at rest). Order B < C < A < D is right and unique; answer string matches (1,2·10² N, 2 sf like 0,70 and 25 kg).
+- Distractor logic catches the chapter's own warned mistake: taking static friction as μ₀N makes B the largest (196 N); ordering by mass or by μ gives other orders, as the solution says.
+- The prompt names the quantity and direction ("kitkavoiman suuruuden mukaan pienimmästä suurimpaan"), as docs/exercise-types.md requires for Järjestäminen.
+- Assumptions stated in the task: only weight, normal force and friction (B also a horizontal push), no air resistance; N = mg on the floor justified in the Periaate.
+- Uses only fy4-6 content (μN, static friction up to μ₀N, slope components) and fy4-4/fy4-5 equilibrium.
+- Rendered (preview build, 390 px, solution forced open, own script): no KaTeX span over 260 px, no overflow. Physics from text.
+- Hash 3327555d5e0791a2 at the start and at the end.
