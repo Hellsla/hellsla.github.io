@@ -760,7 +760,8 @@
     dlg.addEventListener('keydown', (e) => { if (e.key === 'Escape') escInMath = !!(e.target.closest && e.target.closest('.math-editor, .math-editor-wrapper, .math-editor-latex-field, .math-editor-equation-field')); }, true);
     dlg.addEventListener('cancel', (e) => { if (escInMath) e.preventDefault(); escInMath = false; });
     tasks.forEach((task, i) => {
-      const b = mk('button', 'ex-big', say('big_open', 'Avaa isoksi')); b.type = 'button';
+      const b = mk('button', 'ex-big'); b.type = 'button';   // the icon alone (teacher 2026-11-06, "riittäisikö pelkkä logo"); its name for screen readers and on hover
+      b.setAttribute('aria-label', say('big_open', 'Avaa isoksi')); b.title = say('big_open', 'Avaa isoksi');
       b.setAttribute('aria-haspopup', 'dialog');
       b.addEventListener('click', () => open(i));
       headOf(task).append(b);
