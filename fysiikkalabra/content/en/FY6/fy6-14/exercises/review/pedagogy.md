@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 9fb68adcdfde4a9a
+CONTENT-HASH: 44cf48901039ff2e
 Mode: full (translation review against the reviewed Finnish set)
 Round 1
 
 ## Blocking
 (none)
 
-## Fixed
-- solutions.md L1-07 model answer: "The wrong options are incorrect" -> "The other options are wrong" (redundant wording).
-
 ## Polish
 (none)
 
 ## Checked
-- Level structure, task kinds and part labels a), b), c) match fi; the "result of part b" answer-box note is kept.
-- Choice feedback does not leak the answer in the wrong options and explains the misconception, as in fi.
-- Model solutions keep all steps (Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness) and the significant-figure reasoning.
-- English is natural and uses the course terms consistently (forward/reverse direction, series resistor, degree of self-sufficiency); no Finnish left (grep).
+- New task L2-08 (two-stage reasoning, diodes in parallel branches): prompt, options, feedback and model solution carry the same teaching as the reviewed Finnish; feedback of each wrong option names its misconception without giving the answer away.
+- English: decimal point, natural English, course terms consistent.
+- Instructions say what to do in which order; the task is answerable without the lesson text beyond what the packet lists; workload unchanged.
+- Model solution keeps every step (Find, Principle, Model answer, reasonableness) and the explanation of why each wrong option fails.
+- No fixes were needed.

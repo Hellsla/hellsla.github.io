@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: d82481d212cae25e
-Round 2: full review of the exercise set after the round-1 fixes (commit f8abf016e, diff from d0ea57642).
+CONTENT-HASH: dd712fc8e155ee45
+Round 1, science, mode full. Scope: the new YO-skill task fy6-14-L2-08 (two-stage, type 1); the rest of the set was PASS and is unchanged. Checked from text only, no renders.
 
 ## Blocking
-(none)
 
 ## Polish
-- L2-07 (plan deviation, carried from round 1, not physics): it repeats the lesson's first misconception, and its calculation is the same as L1-02 and the Esimerkki. The plan asked for an error analysis of a LED that burns out without a resistor, explained with the characteristic curve. The planning side decides, or updates docs/exercise-bank/FY6.md.
-- exercises.json L3-05 b) — the hint on how to find the operating point (load line or currents at the table voltages) was removed with the a) fix. That is fine at level 3, but the plan names "piirtämällä kuormasuora". If the drawing is meant, add "esimerkiksi piirtämällä kuormasuora ominaiskäyrän kanssa samaan kuvaajaan".
+- fy6-14/exercises/exercises.json:291 (and solutions.md) — "Diodi johtaa vain anodi plusnavan puolella" is clumsy Finnish — write "Diodi johtaa vain, kun sen anodi on plusnavan puolella, ja …".
+- fy6-14/exercises/exercises.json — none of the distractors carries the chapter's own warned mistakes (R = U : I, a diode as a fixed resistor). They carry the anode/cathode mix-up and the series-vs-parallel mix-up from the glossary and Tiivistelmä instead, which is acceptable physics. Pedagogy may want one of the warned mistakes in.
 
 ## Checked
-- Hash d82481d212cae25e at start and end.
-- Round-1 Blocking resolved: L3-05 a) now defines kynnysjännite as the glossary does (extend the steep straight part 2,05–2,10 V to the voltage axis). I recompute 2,05 V − 20 mA : 420 mA/V = 2,00 V, as in the solution and the new answers.py assert. The Järkevyys now compares 2,02 V with 2,0 V consistently.
-- Round-1 Polish fixed: L1-06 gives the battery 9,0 V, so "diodin yli vain pieni jännite" holds; L1-08 `tolerance` 0.03.
-- L1-06 and L1-07 after the rewrite: exactly one correct option, `answer` and answers.py equal its text, and every distractor is really wrong with correct feedback. The new estosuunta distractor ("virta kulkee takaisin") is wrong for the right reason.
-- One script recomputed every new answer: L1-08 16,7 %; L2-05 207 Ω (red); L2-06 181 mW at 22 Ω; L2-07 387 Ω; L3-04 87,7 %, deficit Jan–Mar and Oct–Dec (853 vs 3370 kWh); L3-05 operating point 2,02 V, 13,78 mA. All agree.
-- L3-05 renders at 1280 px without overflow (shots L3-1280-7, -8, taken after the fix).
-- Levels 8/7/5, units, symbols and scope correct.
+- Physics: branch 1 is forward-biased (4,5 V − 2,0 V = 2,5 V across the resistor), so LED A lights. LED B and the silicon diode in branch 3 are reverse-biased, so B and C stay dark. The parallel branches are independent, so "Vain LED A" is right. A red LED reverse-biased at 4,5 V is below the usual 5 V reverse rating, so the task is realistic.
+- The stem says that lamp C lights on its own, which removes any doubt about the lamp.
+- The correct choice's feedback ("Oikein: vain LED A palaa.") does not give away the reason stage.
+- Form: the four reasons are 84–103 characters long, and the correct one is not the longest. One reason is true but does not explain the answer (the series resistor), as type 1 asks.
+- The terms (päästösuunta, estosuunta, anodi, katodi, etuvastus) are the lesson's and the glossary's, and the task stays within fy6-14 and its prerequisites.
+- The solution is complete, takes each branch with its reason, and contrasts the series case.
+- All numeric answers of the set were recomputed from answers.py in one call: no mismatch.

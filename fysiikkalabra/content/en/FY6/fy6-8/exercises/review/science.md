@@ -1,21 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: e3892115020441e6
+CONTENT-HASH: abbe309450785620
 Mode: full (translation review against the reviewed Finnish set)
-Round: 2. Re-review: the only change since the PASS is the boxed value moved to the start of the first answer-step line (answers_shown).
+Round 2
 
 ## Blocking
 (none)
 
 ## Fixed
-(none needed: the text already matched fi in every number and was correct)
+(none needed)
 
 ## Polish
-- solutions.md:186 (fy6-8-L3-04 b) — "For the answer box:" now repeats the label already on line 185. Optional: start b) with "About $35\,\%$ …".
+(none)
 
 ## Checked
-- All 20 tasks incl. the 8 new ones (L1-06..08, L2-05..07, L3-04..05) compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags, choice order, data table cells and every number and $...$ identical.
-- solutions.md: 20 solutions, 19 section headers equal to fi, all 691 numbers identical in order. No Finnish left (grep).
-- Physics wording correct: terminal voltage equals E only at I = 0; short circuit I_k = E : R_s with terminal voltage zero; voltmeter draws negligible current; wire resistance R_j adds to the slope (L3-05, answer 7.6 A); extrapolation caveat kept.
-- Distractor feedback names the right error and matches the fi reasoning (L1-06, L1-07, L2-07).
-- check_i18n.py en: 0 errors.
-- L3-04 answer step now starts "In the answer box: $35\,\%$." It equals the key 35 % (tol 0.05), the Substitution share 0.355, b) and the fi set; same unit, LaTeX; the line reads well.
+- Whole set compared with reviewed fi by script: ids, levels, core, kind, units, tolerances, correct flags and every number in exercises and solutions are identical (decimal point in en); only sentence order differs in a few solutions.
+- New task L2-08 (terminal-voltage table, E 1.55 V, R_s 0.40 ohm): answer, choices, reasons, feedback and solution equal fi; recomputed drops 0.08/0.07/0.09/0.08 V, R_s = 0.32/0.80 = 0.40 ohm, E = 1.55 V, 1.19/0.90 = 1.3 ohm, uncertainty variants 0.38/0.43 ohm.
+- check_i18n shows nothing for fy6-8; build.py fy6-8 succeeds.

@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: b5d23bcdac8390ad
-ROUND: 3
+CONTENT-HASH: fe154ae5f2ac3508
+Round: 2
+
 ## Blocking
-(none) Round 1 Blocking resolved: L2-06 tolerance 0,13 accepts 0,35–0,45 A as the solution states; L3-05 lead split into paragraphs of 33 and 22 words.
+(none)
+
 ## Polish
-- exercises/solutions.md fy6-8-L3-04 and L3-05 "Vastaus": parts "b) ..." and "c) ..." follow without a blank line, so markdown may join them into one paragraph; add a blank line between lettered parts.
-- L3-04 is long (fit two batteries, three power parts); acceptable for L3, but giving the fitted E and R_s of the new battery would shorten it.
+(none)
+
 ## Checked
-- L3-05 no longer gives away the error (sentence removed); context changed to a four-AA group, E 6,11 V / R_s 0,80 Ω plausible; slope of table 1,10 Ω, short circuit 7,6 A correct.
-- L2-06 table now crosses between rows 0,30 and 0,50 A (1,45/1,42 then 1,35/1,38 V); recomputed from the fits, crossing 0,40 A at 1,40 V.
-- L2-05 b) now asks for slope variation (±0,03 Ω); solution gives 0,53–0,59 Ω, inside tolerance 0,06.
-- L2-07 and L1-06/07 MC distractors misconception-based with repairing feedback; levels and plan fit; solutions complete.
-- Delta (answer-step first line now starts with the boxed value): checked each added value against the solution result and exercises.json answer/tolerance, same unit, decimal comma; the line reads well and agrees. Values: L3-04 35 % (answer 35, tol 0,05; solution 1,10/3,10 = 35,5 %).
+- Round 1 blocking item fixed: options are now (1,51 V; 0,40 Ω), (1,55 V; 0,40 Ω) correct, (1,51 V; 1,3 Ω), (1,55 V; resistance changes) - each value appears twice, so no option is the common core of the others.
+- Uncertainty argument corrected: a difference of two drops uses 3-4 readings, ±0,04 V, in both feedback and solution; the "(esimerkkiaineisto)" label was moved out of the stem (the caption keeps it).
+- Numbers unchanged and correct; the combined-error feedback of option 3 is explicit and the solution adds the two-error line.
+- The overlap with L2-05 (same fitting procedure) remains; accepted as polish only.
+- Text only; formula width judged from the round 1 measurements (KaTeX, 17 px, 390 px viewport), no new renders.

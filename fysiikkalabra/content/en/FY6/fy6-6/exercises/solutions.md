@@ -194,3 +194,24 @@
 **Substitution:** $R_\text{h} = \dfrac{(230\,\text{V})^2}{2000\,\text{W}} = 26.45\,\Omega$. Thin cord: $I = \dfrac{230\,\text{V}}{26.45\,\Omega + 2.4\,\Omega} = 7.97\,\text{A}$ and $P_\text{thin} = 2.4\,\Omega \cdot (7.97\,\text{A})^2 = 152.5\,\text{W}$. Thick cord: $I = \dfrac{230\,\text{V}}{26.45\,\Omega + 0.71\,\Omega} = 8.47\,\text{A}$ and $P_\text{thick} = 0.71\,\Omega \cdot (8.47\,\text{A})^2 = 50.9\,\text{W}$
 **Answer:** $152.5\,\text{W}$, rounded $1.5 \cdot 10^{2}\,\text{W}$ or about $150\,\text{W}$ in the thin cord and $51\,\text{W}$ in the thick one, two significant figures like the resistance $2.4\,\Omega$. The current is almost the same with both cords, $7.97\,\text{A}$ and $8.47\,\text{A}$, so the power $RI^2$ of the cord depends mainly on its resistance: the resistance of the thin cord is about $3.4$ times as large and the power about three times as large. A thin cord on a reel cools poorly, so it warms up. A loaded cord reel should be unwound, and the permitted current of the cord must not be exceeded. Less energy is transformed in the thick cord, so it stays cooler.
 **Reasonableness:** With the thin cord the power of the heater is $26.45\,\Omega \cdot (7.97\,\text{A})^2 = 1681\,\text{W}$, and together with the cord $1681\,\text{W} + 152.5\,\text{W} = 1834\,\text{W}$. This is the same as the power of the source $230\,\text{V} \cdot 7.97\,\text{A} = 1834\,\text{W}$. Because of the thin cord the heater thus gets about $1681\,\text{W}$ instead of the rated power $2000\,\text{W}$.
+
+## fy6-6-L2-08
+**Find:** how the power of the resistor $R_1$ changes when an identical resistor $R_2$ is connected in series with it and the voltage of the source stays the same.
+**Principle:** The total resistance of a series connection is the sum of the resistances of the resistors, and the same current $I = \tfrac{U}{R_1 + R_2}$ flows through all of them. The power of the resistor $R_1$ is obtained from Joule's law $P_1 = R_1 I^2$, because the current is known. The power depends on the square of the current, so when the current halves, the power decreases to one quarter.
+**Model answer:** When the resistor $R_1$ is alone, the current and the power are
+
+$$\begin{aligned}
+&I = \frac{12\,\text{V}}{24\,\Omega} = 0.50\,\text{A} \\
+&P_1 = 24\,\Omega \cdot (0.50\,\text{A})^2 \\
+&\phantom{P_1} = 6.0\,\text{W}
+\end{aligned}$$
+
+In the series connection the total resistance is $24\,\Omega + 24\,\Omega = 48\,\Omega$, and
+
+$$\begin{aligned}
+&I' = \frac{12\,\text{V}}{48\,\Omega} = 0.25\,\text{A} \\
+&P_1' = 24\,\Omega \cdot (0.25\,\text{A})^2 \\
+&\phantom{P_1'} = 1.5\,\text{W}
+\end{aligned}$$
+
+The ratio of the powers is $\tfrac{1.5\,\text{W}}{6.0\,\text{W}} = \tfrac{1}{4}$, that is, the power of the resistor $R_1$ decreases to one quarter. The voltage gives the same result: there is now only $6.0\,\text{V}$ across the resistor $R_1$, and $\tfrac{(6.0\,\text{V})^2}{24\,\Omega} = 1.5\,\text{W}$. The power does not stay the same, because the whole voltage of the source is no longer across the resistor, and it does not decrease only to one half, because the power depends on the square of the current.

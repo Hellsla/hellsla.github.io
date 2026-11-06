@@ -168,6 +168,33 @@
 **Vastaus:** a) $6{,}66 \cdot 10^{-27}\,\text{kg}$, kolme merkitsevää numeroa kuten nopeuksissa; b) ioni on yksinkertaisesti varautunut heliumioni (He$^+$), jonka massa on $6{,}646 \cdot 10^{-27}\,\text{kg}$.
 **Järkevyys:** Tulos poikkeaa heliumionin massasta alle $1\,\%$, kun taas protonin massa olisi noin $4$ kertaa pienempi ja deuteronin noin kaksi kertaa pienempi, joten vaihtoehto on selvä. Rivien massat vaihtelevat noin $\pm 3\,\%$, mikä sopii nopeuksien kolmen numeron hajontaan.
 
+## fy6-12-L2-08
+**Kysytty:** onko oppilaan laskussa virhe ja millä rivillä, kun lasketaan levosta lähteneen elektronin liike-energia kohdassa B.
+**Periaate:** Vain sähköinen voima tekee työtä, joten liike-energian ja potentiaalienergian summa säilyy. Liike-energia kasvaa yhtä paljon kuin potentiaalienergia $E_\text{p} = qV$ pienenee. Muutos riippuu kohtien potentiaalierosta $V_B - V_A$, ei yksittäisen kohdan potentiaalista, jonka arvo riippuu nollakohdan valinnasta.
+**Mallivastaus:** Rivi 1 on oikein: elektroniin vaikuttava voima osoittaa kenttää vastaan, joten se lähtee kohti suurempaa potentiaalia, kohdasta A kohtaan B.
+
+Rivi 2 on oikein: elektronin varaus on $q = -e$, joten $E_{\text{p},A} = -30\,\text{eV}$ ja $E_{\text{p},B} = -120\,\text{eV}$. Potentiaalienergia pienenee.
+
+Rivi 3 on väärin. Oppilas on käyttänyt kohdan B potentiaalia $120\,\text{V}$ potentiaalieron paikalla. Elektroni lähti kohdasta A, jonka potentiaali on $30\,\text{V}$, joten se kulkee potentiaalieron läpi:
+
+$U = V_B - V_A$
+
+$U = 120\,\text{V} - 30\,\text{V} = 90\,\text{V}$
+
+Liike-energia kohdassa B on
+
+$E_\text{k} = eU = 90\,\text{eV}$
+
+Rivi 4 on laskettu oikein rivin 3 arvolla, mutta väärä arvo muuttaa tuloksen. Oikein:
+
+$E_\text{k} = 90 \cdot 1{,}602 \cdot 10^{-19}\,\text{J}$
+
+$E_\text{k} = 1{,}442 \cdot 10^{-17}\,\text{J}$
+
+$E_\text{k} \approx 1{,}4 \cdot 10^{-17}\,\text{J}$
+
+Liike-energia on $90\,\text{eV}$ eli $1{,}4 \cdot 10^{-17}\,\text{J}$ kahden merkitsevän numeron tarkkuudella. Tarkistus: potentiaalienergia pienenee $-30\,\text{eV} - (-120\,\text{eV}) = 90\,\text{eV}$, ja sama määrä muuttuu liike-energiaksi. Oikea vastaus on rivi 3: liike-energian antaa potentiaaliero, ei loppukohdan potentiaali.
+
 ## fy6-12-L3-04
 **Annettu:** kiihdytysjännite $U_\text{k} = 1{,}8\,\text{kV}$, levyjen pituus $L = 5{,}0\,\text{cm}$, levyjen väli $d = 1{,}5\,\text{cm}$, poikkeutusjännite $U_\text{p} = 120\,\text{V}$, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$, $m = 9{,}109 \cdot 10^{-31}\,\text{kg}$, $g = 9{,}81\,\text{m/s}^2$; alkunopeus nolla ja saapuminen levyjen väliin keskeltä levyjen suuntaisesti
 **Kysytty:** a) nopeus $v$ ennen levyjä, b) poikkeama $y$ millimetreinä levyjen lopussa ja osuuko elektroni levyyn, c) onko painovoima merkityksetön

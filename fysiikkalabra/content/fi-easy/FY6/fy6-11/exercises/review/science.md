@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 0705b915b6f0ca56
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 99bf518cf2d541bd
+Mode: full (translation review against the reviewed Finnish set; new YO-skill task L2-08 (force diagram selection, dust particle in a uniform field))
+Round 3
 
 ## Blocking
 (none)
 
-## Fixed
-(none needed: the text already matched fi in every number and was clear plain Finnish)
-
 ## Polish
-- solutions.md L3-04 Periaate: "askel" (step) for the elementary charge is not explained in plain terms; "alkeisvaraus" would be clearer (same wording as fi).
+(none)
 
 ## Checked
-- All 8 new exercises and the older ones compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags and data cells identical; every number in texts, choices, feedback and solutions.md equal to fi (945 numbers each, comma in prose and {,} in LaTeX as in fi).
-- Plain-language additions are scientifically correct: field line explained as a line showing the force direction (L1-06); dense lines = strong field.
-- Formulas, units and tolerances parity with fi (check_i18n 0 errors).
-- L1-06/L1-07: one correct option each; feedback matches fi.
+- Fixed: nothing needed; the new task already matched the Finnish.
+- Parity script over all of exercises.json against fi: same keys, ids, kind lists, fbd flag, correct flags, choice order, figure ids, units, tolerances, answers; every number equals the Finnish (only the order of two given quantities differs in a few English/fi-easy sentences, no change of meaning).
+- New task L2-08 (force diagram selection, dust particle in a uniform field): recomputed by hand from the task text; the correct option and every distractor's feedback state the same physics and numbers as fi.
+- solutions.md: same sections and same numbers as fi for all tasks (the new solution follows the same steps and reaches the same result).
+- Figure alt texts in figures.json carry the same four descriptions; the subscript maps s -> e in en ($F_\text{e}$ in task, feedback and solution), as in the existing en text; fi-easy keeps $F_\text{s}$.
+- Terms and notation as in the lesson; Selkeä suomi per NOTES.md §12 (difficult words explained in the sentence, short sentences, no step dropped, decimal comma).
+- check_i18n: 0 errors (fi-easy); build.py fy6-11 succeeds.

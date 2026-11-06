@@ -248,6 +248,42 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy6-11-L2-08",
+      "level": 2,
+      "text": "In a vacuum chamber there are two horizontal plates with a uniform electric field $1.0 \\cdot 10^{5}\\,\\text{N/C}$ between them. The positive plate is the lower one, so the field points up.\n\nA small dust particle with a mass of $1.0 \\cdot 10^{-12}\\,\\text{kg}$ and a charge of $-2.0 \\cdot 10^{-16}\\,\\text{C}$ moves between the plates. At the moment considered its velocity is horizontal, to the right.\n\nIn the diagrams $\\overline{G}$ is the weight of the particle, $\\overline{F}_\\text{e}$ the electric force of the field on the particle and $\\overline{v}$ the velocity of the particle. All the diagrams are drawn to the same scale.\n\nWhich force diagram shows the forces on the particle correctly?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "fbd": "select",
+      "answer": "Force diagram B",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Force diagram A",
+          "figure": "fy6-11/pick-ylos",
+          "feedback": "Here the electric force has been drawn in the direction of the field. The particle is negative, so the force points against the field, that is, down. An upward $\\overline{F}_\\text{e}$ would suit a positive particle."
+        },
+        {
+          "text": "Force diagram B",
+          "figure": "fy6-11/pick-alas",
+          "correct": true,
+          "feedback": "Correct: the electric force $\\lvert q \\rvert E = 2.0 \\cdot 10^{-11}\\,\\text{N}$ and the weight $mg \\approx 9.8 \\cdot 10^{-12}\\,\\text{N}$ both point down. The arrow of the electric force is about twice as long as the arrow of the weight."
+        },
+        {
+          "text": "Force diagram C",
+          "figure": "fy6-11/pick-nopeus",
+          "feedback": "Velocity is not a force, so its arrow $\\overline{v}$ does not belong in a force diagram. The particle does not need a force in the direction of motion: it keeps moving horizontally, and the forces change only its vertical velocity."
+        },
+        {
+          "text": "Force diagram D",
+          "figure": "fy6-11/pick-ilman",
+          "feedback": "Here the weight has been left out, as for an electron. The weight of the particle, $mg \\approx 9.8 \\cdot 10^{-12}\\,\\text{N}$, is however about half of the electric force $2.0 \\cdot 10^{-11}\\,\\text{N}$, so it cannot be ignored."
+        }
+      ]
     }
   ],
   "level3": [

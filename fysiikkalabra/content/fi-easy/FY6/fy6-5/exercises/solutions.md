@@ -203,3 +203,24 @@ c) $R_\text{p} = \dfrac{100\,\Omega \cdot 5{,}0\,\text{V}}{12\,\text{V} - 5{,}0\
 
 **Vastaus:** $250\,\Omega$. Vastauksessa on kaksi merkitsevää numeroa. Pienempi kuorman resistanssi laskisi potentiaalin alle $5{,}0\,\text{V}$ (kuormalla $100\,\Omega$ se on $4{,}0\,\text{V}$). Suurempi kuorman resistanssi nostaisi sen lähemmäs arvoa $6{,}0\,\text{V}$.
 **Järkevyys:** Kun $R_\text{k} = 250\,\Omega$, vastuksen $R_1$ virta on $12\,\text{V} : (100\,\Omega + 71{,}4\,\Omega) = 0{,}070\,\text{A}$. Sen jännite on $100\,\Omega \cdot 0{,}070\,\text{A} = 7{,}0\,\text{V}$, joten $V_P = 12\,\text{V} - 7{,}0\,\text{V} = 5{,}0\,\text{V}$. Virrat haaroissa ovat $5{,}0\,\text{V} : 100\,\Omega = 0{,}050\,\text{A}$ ja $5{,}0\,\text{V} : 250\,\Omega = 0{,}020\,\text{A}$. Yhteensä ne ovat $0{,}070\,\text{A}$, kuten virtalaki vaatii. Arvo $250\,\Omega$ on taulukon rivien $1000\,\Omega$ ($5{,}72\,\text{V}$) ja $100\,\Omega$ ($4{,}01\,\text{V}$) välissä, kuten $5{,}0\,\text{V}$.
+
+## fy6-5-L2-08
+**Kysytty:** vastuksen $R_3$ kautta kulkeva virta $I_3$, kun pääjohtimen virta on $0{,}30\,\text{A}$, ja perustelu, joka selittää sen.
+**Periaate:** Rinnakkaisten haarojen yli on sama jännite $U$. Kirchhoffin virtalain mukaan haarojen virrat ovat yhteensä pääjohtimen virta $I$. Jännite saadaan rinnankytkennän kokonaisresistanssista $R_\text{k}$ ja Ohmin laista $U = R_\text{k} I$. Jokaisen haaran virta on $\tfrac{U}{R}$.
+**Mallivastaus:** Kokonaisresistanssi:
+
+$$\begin{aligned}
+&\frac{1}{R_\text{k}} = \frac{1}{20\,\Omega} + \frac{1}{30\,\Omega} + \frac{1}{60\,\Omega} \\
+&\frac{1}{R_\text{k}} = \frac{6}{60\,\Omega} \\
+&R_\text{k} = 10\,\Omega
+\end{aligned}$$
+
+Haarojen yhteinen jännite on $U = 10\,\Omega \cdot 0{,}30\,\text{A} = 3{,}0\,\text{V}$. Haarojen virrat ovat
+
+$$\begin{aligned}
+&I_1 = \frac{3{,}0\,\text{V}}{20\,\Omega} = 0{,}15\,\text{A} \\
+&I_2 = \frac{3{,}0\,\text{V}}{30\,\Omega} = 0{,}10\,\text{A} \\
+&I_3 = \frac{3{,}0\,\text{V}}{60\,\Omega} = 0{,}050\,\text{A}
+\end{aligned}$$
+
+Vastuksen $R_3$ kautta kulkee virta $0{,}050\,\text{A}$. Virtalaki toteutuu: haarojen virtojen summa on $0{,}15\,\text{A} + 0{,}10\,\text{A} + 0{,}050\,\text{A}$, eli $0{,}30\,\text{A}$. Perustelu: haaroilla on sama jännite. Siksi haaran virta on kääntäen verrannollinen sen resistanssiin eli pienenee, kun resistanssi kasvaa. Suurimman resistanssin haaraan kulkee pienin virta. Virta ei jakaudu tasan. Jännite ei myöskään jakaudu rinnakkaisille haaroille kuten sarjakytkennässä. Väite, että haaroista palaa yhteensä $0{,}30\,\text{A}$, on tosi. Se ei kuitenkaan kerro, miten virta jakautuu.

@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 0452eedc42d7c0be
-Mode: full (translation review against the reviewed Finnish set; 8 new exercises L1-06..08, L2-05..07, L3-04..05)
+CONTENT-HASH: 51f6a10c66298771
 Round 2
+Mode: delta (fix of the Round 1 Major in fy6-9-L1-09; screenshots retaken)
 
 ## Blocking
 (none)
 
-## Fixed
-(none needed: the text already matched the Finnish in every number and was natural)
-
 ## Polish
-(none)
+- [Minor] fy6-9-L1-09 Model answer, third line — $\tfrac{UQ}{t}$ is small beside the $\dfrac{\text{Wh}}{\text{h}}$ in the same line; if the line is re-set, use $\tfrac{\text{Wh}}{\text{h}}$ too. Readable as is.
 
 ## Checked
-- Opened fy6-9-open-exercises-L2-1280-5.png (L2-05 table and solution start): table caption and cells fit the width, maths renders, no Finnish.
-- Texts are of similar length to the Finnish; no overlong unbroken strings; tables have the same columns and rows as fi.
+- fy6-9-open-exercises-1280-9.png (retaken): the four "The unit of … is …" lines now read as sentences, with no colon that could be taken for division; the final paragraph no longer opens the line spacing; options, feedback, answer chip, Find, Principle all render, nothing clipped.
+
+## Fixed since Round 1
+- Colon between maths expressions replaced by words; inline \dfrac changed to \tfrac.
 
 ## Scores
-illustrations 4 · typography 4 · English 4 · accessibility 4
+illustrations n/a (4) · typography 4 · English 4 · accessibility 4

@@ -248,6 +248,42 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy6-11-L2-08",
+      "level": 2,
+      "text": "Tyhjiökammiossa on kaksi vaakasuoraa levyä, joiden välissä on homogeeninen sähkökenttä $1{,}0 \\cdot 10^{5}\\,\\text{N/C}$. Positiivinen levy on alempana, joten kenttä osoittaa ylöspäin.\n\nPieni pölyhiukkanen, jonka massa on $1{,}0 \\cdot 10^{-12}\\,\\text{kg}$ ja varaus $-2{,}0 \\cdot 10^{-16}\\,\\text{C}$, liikkuu levyjen välissä. Tarkasteluhetkellä sen nopeus on vaakasuoraan oikealle.\n\nKuvioissa $\\overline{G}$ on hiukkasen paino, $\\overline{F}_\\text{s}$ kentän hiukkaseen kohdistama sähköinen voima ja $\\overline{v}$ hiukkasen nopeus. Kaikki kuviot on piirretty samassa mittakaavassa.\n\nMikä voimakuvio esittää oikein hiukkaseen vaikuttavat voimat?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "fbd": "select",
+      "answer": "Voimakuvio B",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Voimakuvio A",
+          "figure": "fy6-11/pick-ylos",
+          "feedback": "Tässä sähköinen voima on piirretty kentän suuntaan. Hiukkanen on negatiivinen, joten voima osoittaa kenttää vastaan eli alas. Ylöspäin osoittava $\\overline{F}_\\text{s}$ sopisi positiiviselle hiukkaselle."
+        },
+        {
+          "text": "Voimakuvio B",
+          "figure": "fy6-11/pick-alas",
+          "correct": true,
+          "feedback": "Oikein: sähköinen voima $\\lvert q \\rvert E = 2{,}0 \\cdot 10^{-11}\\,\\text{N}$ ja paino $mg \\approx 9{,}8 \\cdot 10^{-12}\\,\\text{N}$ osoittavat kumpikin alas. Sähköisen voiman nuoli on noin kaksi kertaa painon nuolen pituinen."
+        },
+        {
+          "text": "Voimakuvio C",
+          "figure": "fy6-11/pick-nopeus",
+          "feedback": "Nopeus ei ole voima, joten sen nuoli $\\overline{v}$ ei kuulu voimakuvioon. Hiukkanen ei tarvitse liikkeen suuntaista voimaa: se jatkaa vaakasuoraa liikettään, ja voimat muuttavat vain sen pystysuoraa nopeutta."
+        },
+        {
+          "text": "Voimakuvio D",
+          "figure": "fy6-11/pick-ilman",
+          "feedback": "Tässä paino on jätetty pois kuin elektronilla. Hiukkasen paino $mg \\approx 9{,}8 \\cdot 10^{-12}\\,\\text{N}$ on kuitenkin noin puolet sähköisestä voimasta $2{,}0 \\cdot 10^{-11}\\,\\text{N}$, joten sitä ei voi jättää huomiotta."
+        }
+      ]
     }
   ],
   "level3": [

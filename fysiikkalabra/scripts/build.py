@@ -108,6 +108,16 @@ def submission_forms():
 FORMS = submission_forms()
 
 
+# Guided self-assessment (teacher 2026-11-06, from his 2018 team sheet): in Tarkista osaamisesi every task and, at the
+# end, the chapter's goals get a level a-d or x (scripts/inquiry.py sa_fieldset, templates/inquiry.js part 8); the
+# levels and their history go into the same submission file (templates/palautus.js). Pilot: FY3.
+SELF_ASSESS_COURSES = {"FY3"}
+
+
+def self_assesses(lang, meta):
+    return meta.get("course") in SELF_ASSESS_COURSES and submits(lang, meta.get("id"))
+
+
 def submission_script(lang, lesson_id):
     if not submits(lang, lesson_id): return ""
     ret = f' data-return="{FORMS_PAGE}"' if FORMS else ""
@@ -828,7 +838,8 @@ def build_language(lang):
                 sections["Tiivistelmä"] = tv.replace("</ul>", "</ul>" + kc, 1) if "</ul>" in tv else tv + kc
             parts = {"intro": intro, "sections": sections, "sim": sim, "exercises": ex_html,
                      "concepts": inquiry.key_concepts_html(meta["id"], meta.get("key_concepts"), lambda t: nbsp_units(render_md(t))),   # Selkeä suomi only (NOTES.md §12)
-                     "exit": f'<div id="exit"><h3>{inquiry.exit_title()}</h3>{exit_items}</div>', "cards": kc_section}
+                     "exit": f'<div id="exit"><h3>{inquiry.exit_title()}</h3>{exit_items}</div>', "cards": kc_section,
+                     "selfassess": self_assesses(lang, meta)}
             body, toc = inquiry.render(folder, inq, parts, lambda t: nbsp_units(render_md(t)))
             if kc_section:   # bold terms of Teoriatiivistelmä that name a card open it (never before that stage)
                 body = re.sub(r'<section class="stage" id="selita".*?</section>', lambda m: concept_cards.mark_terms(m.group(0), meta["course"], lang), body, count=1, flags=re.S)

@@ -37,6 +37,7 @@ a["fy6-14-L2-05"] = (5.0 - leds[low]) / 0.015              # R = (5,0 V - 1,90 V
 cell = [(10, 0.99, 99), (15, 1.48, 99), (20, 1.89, 94), (22, 1.99, 91), (27, 2.12, 78), (33, 2.20, 66), (47, 2.28, 48), (100, 2.34, 23)]
 a["fy6-14-L2-06"] = max(u * i for _, u, i in cell)         # P = U I in mW: largest 1,99 V · 91 mA = 181 mW (22 ohm)
 a["fy6-14-L2-07"] = (9.0 - 3.2) / 0.015                    # correct R = (U - U_D) : I = 5,8 V : 0,015 A = 387 ohm (student: 9,0 V : I = 600 ohm)
+# YO-skill form (teacher 2026-11-05): L2-08 is a two-stage choice (no number); branch 1 resistor 4,5 V - 2,0 V = 2,5 V
 H = [12, 32, 80, 120, 160, 170, 170, 135, 85, 40, 15, 8]   # kWh/m2 per month
 C = [620, 560, 520, 400, 330, 290, 280, 300, 370, 460, 560, 650]  # kWh per month
 E_year = 0.19 * 24 * sum(H)                                # E = eta A sum(H) = 0,19 · 24 m2 · 1027 kWh/m2 = 4683 kWh

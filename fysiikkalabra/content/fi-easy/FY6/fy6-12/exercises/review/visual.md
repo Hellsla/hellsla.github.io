@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 885c14806ece5ea9
-
-Delta: one feedback sentence in 12-6 (L1-06, choice 4) and core marks on 12-4, 12-6, 12-8, 12-11.
+CONTENT-HASH: 5d9a1e2a7804d5aa
+Mode: delta (new YO-skill task fy6-12-L2-08, type 4 error finding; three tasks re-paragraphed)
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] exercises.json L1-06 choice 4 feedback — "Tässä potentiaali on nolla negatiivisella levyllä" refers to a plate the task never mentions ("Tasaisessa sähkökentässä…"); for an S2 reader e.g. "Ajatellaan, että kenttä on kahden levyn välissä. Potentiaali on nolla negatiivisella levyllä, ja $x$ on etäisyys siitä."
+- [Minor] fy6-12-L2-08 text and solution — the points A and B are plain letters ("kohdasta A", "kohtaan B"), while L3 and the older tasks set them as maths ("kohdan $A$") — write $A$ and $B$ for consistency.
+- [Minor] fy6-12-L2-08 options — the rows are shown in shuffled order (1, 4, 3, 2) in a task that says "tarkista lasku rivi riviltä"; the engine shuffles every choice list, so only an observation.
 
 ## Checked
-- Own captures of preview/fi-easy/fy6-12.html, 12-6 with choice 4 committed (feedback shown) at 360 and 390 px: the new short sentences sit inside the task card under the option; $V = Ex$, $x$, $qV$ each on one line; page width = viewport, no inline formula overflows.
-- Core marks: "Ydintehtävä" chip renders beside the task number on 12-6 (capture); exactly four `.ex-core` on the built page (12-4, 12-6, 12-8, 12-11).
-- Deterministic checks in the packet clean.
+- fy6-12-open-exercises-L2-1280-10.png and -11.png: task text, rows 1-4 as running text with inline maths, five options with the feedback box, the "Rivi 3" answer chip and the whole solution (Kysytty, Periaate, Mallivastaus with U and E_k chains) open; nothing clipped, no overflow, maths renders, decimal comma and units correct.
+- The re-paragraphed L2 tasks (blank lines between situation and question) were not opened; the change is mechanical.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations n/a (4) · typography 5 · Finnish (selkeä) 4 · accessibility 4

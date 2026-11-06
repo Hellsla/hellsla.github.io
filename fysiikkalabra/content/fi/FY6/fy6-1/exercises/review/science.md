@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: cf52e4c26916eaa1
-ROUND: 2
+CONTENT-HASH: fd9abba3faab2137
+Round: 1 (new task fy6-1-L1-09, true/false statements; the rest of the set was PASS before and is unchanged).
 
 ## Blocking
 
 ## Polish
-- solutions.md:149 (L2-06 Periaate vs Mallivastaus b) — the Periaate now says "lähes koko virta kulkee johdon kautta", but the Mallivastaus says "Lampun läpi ei kulje virtaa". Make them agree (guardrail 6): in b) write "Lampun läpi kulkee vain mitättömän pieni virta, joten lamppu ei pala."
-- solutions.md:174 (L3-05 c) — the added sentence is right, but it gives no mechanism. Add the cause in one clause: "koska sähköinen vuorovaikutus eli työntö etenee piirissä lähes valon nopeudella, ja kaikki vapaat elektronit alkavat liikkua lähes samanaikaisesti."
-- Plan drift (docs/exercise-bank/FY6.md fy6-1), carried over and extended: L1-07 asks about an imagined open switch, not "mikä kaavio vastaa kuvattua piiriä". L2-06 describes the circuits in words, not with two diagrams. L1-08 now uses 0,25 A, but the plan still says 2,5 mA. Update the plan so that it matches the tasks.
 
 ## Checked
-- Hash cf52e4c26916eaa1 at start and end. Counts 8/7/5.
-- Round-1 Blocking (L2-07 c, the "mittaus 4" inference) resolved: the solution now says that the differences go in both directions, are no larger than one display step and come from the reading's uncertainty.
-- Round-1 Polish resolved: "resoluutio eli pienin näyttöaskel" in L2-07 task, answer and solution; "vapaat elektronit" in L3-05; the L2-06 Periaate no longer gives the current a will; L1-08 is no longer harder than L2-02 (no mA conversion).
-- L1-08 recomputed: N = 0,25 A · 60 s : e = 9,36·10¹⁹, so 9,4·10¹⁹. The text, the solution, answers.py and exercises.json agree, and the reasonableness estimate (15 C · 6,2·10¹⁸) is right.
-- I recomputed every answer from answers.py in one script and checked each new task with my own formulas: L2-05 22,8 C, L3-04 12,5 Wh, L3-05 0,0192 mm/s. All are within tolerance of exercises.json.
-- L3-04: removing the "noin 13 Wh" clause leaves a consistent rounding reason.
-- L2-06: "oikosulku" is now named, and the safety sentence about a real battery is exact.
-- MC L1-06 and L1-07: still exactly one correct option each, with correct feedback.
+- Hash fd9abba3faab2137 at start and end.
+- answers.py run against exercises.json: all 15 numeric answers agree within tolerance (one python call).
+- L1-09 recomputed: Q = 0,30 A · 60 s = 18 C, E = 3,0 V · 18 C = 54 J; truth values 1 F, 2 T, 3 T, 4 F, 5 F are right, and `answer` matches.
+- Statement 3 is true only because wire and cell resistances are neglected; the task states that condition, and the feedback repeats it (guardrail: a law's conditions).
+- Both of the lesson's warned mistakes are the false statements 1 (current used up in the lamp) and 4 (electrons must travel from the cell to the lamp); statement 5 catches V read as energy per minute. Each feedback says why it is false, in the lesson's own words.
+- 3,0 V and 0,30 A are realistic flashlight values; I = Q/t, U = E/Q and e notation as in the lesson; no capacitor or later-chapter content.
+- Solution complete (Kysytty · Periaate · Mallivastaus), symbolic before numbers.
+- Inline formula widths measured (KaTeX render of each $…$ at 17 px, 1.21 em, my own script): widest 244 px (`E = UQ = …`), under 300 px. Page layout itself not rendered; everything else checked from text.

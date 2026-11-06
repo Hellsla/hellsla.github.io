@@ -1,21 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: a97ae43d20b65239
-Mode: full
-Round: 1
+CONTENT-HASH: 687ee168bd6f8a23
+Mode: delta (new YO-skill task fy6-16-L2-08, type 5 suuruusluokka/choice; one task re-paragraphed)
 
 ## Blocking
 (none)
 
-## Fixed
-- None needed for layout; wording fixes only (see science.md and pedagogy.md).
-
 ## Polish
-- [Minor] solutions L2-06, L2-07, L3-04, L3-05: "a)" sub-answers begin inside the Vastaus paragraph, as in fi.
+- [Minor] fy6-16-L2-08 Periaate — "samassa kerrannaisyksikössä" is a hard word for S2 readers and is not explained; write "samoissa yksiköissä, kilowattitunteina ja kilowatteina".
+- [Minor] fy6-16-L2-08 Mallivastaus — "Ilman hyötysuhdetta saadaan häviöttömän latauksen aika" is stiff; "Ilman hyötysuhdetta saadaan latausaika ilman häviöitä" reads more plainly.
 
 ## Checked
-- Captures fy6-16-open-exercises-L2-1280-* and L3-1280-* viewed: formulas, fractions, tables and decimal commas render without overflow.
-- Month names in the L3-04 table fit the two-column table.
-- No English left in the text.
+- fy6-16-open-exercises-L2-1280-10.png (task text of 16-16, "Valitse vaihtoehto", wrong-option feedback, Vastaa, answer chip) and -11.png (Kysytty, Periaate, Mallivastaus with the P chain and the aligned t display, järkevyys and error paragraphs): whole-row options, feedback inside the card, decimal comma, case ending ($8{,}0\,\text{A}$:iin) and units render correctly; nothing clipped or overflowing.
+- The re-paragraphed L3 task was not opened; the change is mechanical.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations n/a (4) · typography 5 · Finnish (selkeä) 4 · accessibility 4

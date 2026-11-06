@@ -113,6 +113,45 @@
       "answer": 144,
       "unit": "mJ",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-13-L1-09",
+      "level": 1,
+      "text": "Kondensaattori, jonka kapasitanssi on $100\\,\\mu\\text{F}$, ladataan vastuksen kautta $12\\,\\text{V}$:n paristolla, kunnes virta lakkaa kulkemasta. Päättele, mitkä väitteet ovat tosia ja mitkä epätosia.",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "1 tosi, 2 epätosi, 3 epätosi, 4 epätosi, 5 tosi",
+      "unit": "",
+      "tolerance": 0.02,
+      "statements": [
+        {
+          "text": "Levyjen varaukset ovat $+1{,}2\\,\\text{mC}$ ja $-1{,}2\\,\\text{mC}$, joten kondensaattorin kokonaisvaraus on nolla.",
+          "true": true,
+          "feedback": "Oikein: $Q = CU$, eli $Q = 100\\,\\mu\\text{F} \\cdot 12\\,\\text{V} = 1{,}2\\,\\text{mC}$. Paristo vain siirtää varausta levystä toiseen, joten levyjen varaukset ovat yhtä suuret ja vastakkaismerkkiset."
+        },
+        {
+          "text": "Latauksen päätyttyä virta kulkee levyjen välisen eristeen läpi samalla tavalla kuin johtimissa.",
+          "true": false,
+          "feedback": "Väärin: tämä on käsitys, että virta kulkee kondensaattorin läpi kuin johtimen. Eriste ei johda sähköä, joten varaus ei kulje sen läpi, ja virta kulkee johtimissa vain, kun levyjen varaus muuttuu. Latauksen lopussa virta on nolla."
+        },
+        {
+          "text": "Jos kondensaattori ladattaisiin $24\\,\\text{V}$:n jännitteeseen, sen kapasitanssi olisi kaksinkertainen.",
+          "true": false,
+          "feedback": "Väärin: tämä olettaa, että kapasitanssi kasvaa jännitteen mukana. Kaksinkertainen jännite tuo kaksinkertaisen varauksen, joten suhde $C = \\tfrac{Q}{U}$ pysyy arvossa $100\\,\\mu\\text{F}$."
+        },
+        {
+          "text": "Kondensaattoriin on varastoitunut energiaa $14{,}4\\,\\text{mJ}$.",
+          "true": false,
+          "feedback": "Väärin: $14{,}4\\,\\text{mJ}$ on pariston antama energia $QU$, eli $1{,}2\\,\\text{mC} \\cdot 12\\,\\text{V}$. Varaus siirtyy keskimäärin jännitteen $\\tfrac{U}{2}$ yli, joten kondensaattoriin varastoituu $\\tfrac{1}{2} QU = 7{,}2\\,\\text{mJ}$."
+        },
+        {
+          "text": "Jos kondensaattori ladattaisiin $24\\,\\text{V}$:n jännitteeseen, sen energia olisi nelinkertainen.",
+          "true": true,
+          "feedback": "Oikein: energia $W = \\tfrac{1}{2} C U^2$ riippuu jännitteen neliöstä. Kun $C$ pysyy samana ja jännite kaksinkertaistuu, energia kasvaa $2^2 = 4$-kertaiseksi, $28{,}8\\,\\text{mJ}$:iin."
+        }
+      ]
     }
   ],
   "level2": [

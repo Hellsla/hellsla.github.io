@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: a97ae43d20b65239
-Mode: full
-Round: 1
+CONTENT-HASH: 687ee168bd6f8a23
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
-
-## Fixed
-- exercises.json L2-05 c): the term "kuormanhallinta" is explained in brackets ("laite, joka rajoittaa latausvirtaa automaattisesti").
-- solutions.md L2-07: clearer sentence in Reasonableness.
 
 ## Polish
 (none)
 
 ## Checked
-- Selkosuomi: short sentences, one idea each; long fi sentences split (L1-06 choices, L2-05, L2-07, L3-04, L3-05 texts and solutions).
-- Terms explained in the text: sisäenergia (eli lämmittää kaapelia), hyötysuhde, pääsulake, vaihejohdin and nollajohdin used as in the lesson.
-- Choice feedback in L1-06 says in plain words why each wrong choice is wrong.
-- Same tasks, order and levels as fi; no step of the solutions dropped.
+- New task L2-08 (magnitude of charging time): prompt, options, feedback and model solution carry the same teaching as the reviewed Finnish; feedback of each wrong option names its misconception without giving the answer away.
+- fi-easy follows NOTES.md section 12 (clearer Finnish, same physics).
+- Instructions say what to do in which order; the task is answerable without the lesson text beyond what the packet lists; workload unchanged.
+- Model solution keeps every step (Find, Principle, Model answer, reasonableness) and the explanation of why each wrong option fails.
+- No fixes were needed.

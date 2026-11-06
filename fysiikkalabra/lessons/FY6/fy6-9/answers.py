@@ -13,7 +13,7 @@ a["fy6-9-L1-03"] = 36 * 13                                # W = U Q = 36 V · 13
 a["fy6-9-L1-04"] = 2.4 / 0.15                             # t = Q : I = 2,4 Ah : 0,15 A = 16 h
 # figure fy6-9/ex-current: 2,0 A for 0-1,5 h, then 1,0 A for 1,5-2,5 h; the charge is the area under the graph
 a["fy6-9-L1-05"] = 2.0 * 1.5 + 1.0 * (2.5 - 1.5)          # 3,0 Ah + 1,0 Ah = 4,0 Ah
-# the two multiple-choice tasks fy6-9-L1-06 and fy6-9-L1-07 have a text answer and no number
+# the multiple-choice tasks fy6-9-L1-06, fy6-9-L1-07 and fy6-9-L1-09 have a text answer and no number
 a["fy6-9-L1-08"] = 2600 * 0.001 / 0.50                    # 2600 mAh = 2,6 Ah; t = Q : I = 2,6 Ah : 0,50 A = 5,2 h
 # Level 2: two steps, a conversion or a rearrangement
 a["fy6-9-L2-01"] = (14.4 - 12.4) / (0.36 + 40 * 0.001)   # R_s = 40 mohm = 0,040 ohm; I = 2,0 V : 0,40 ohm = 5,0 A

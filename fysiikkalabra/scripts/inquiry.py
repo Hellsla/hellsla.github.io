@@ -161,6 +161,9 @@ def validate(folder, inquiry, lesson_md):
     E = lambda m: errs.append(f"{lid} inquiry.json: {m}")
     if not isinstance(inquiry, dict): return [f"{lid} inquiry.json: the top level must be an object"]
     if inquiry.get("version") != VERSION: E(f"version: must be {VERSION}")
+    extra = inquiry.get("self_extra")   # Tarkista osaamisesi: statements of what the tasks did not measure (teacher 2026-11-06)
+    if extra is not None and not (isinstance(extra, list) and 1 <= len(extra) <= 5 and all(isinstance(x, str) and x.strip() and len(x.split()) <= 25 for x in extra)):
+        E("self_extra: one to five short self-assessment statements in the student's words (\"Osaan ...\"), at most about 25 words each")
     if not isinstance(inquiry.get("contribution"), str) or not inquiry["contribution"].strip(): E("contribution: one sentence on what this lesson adds that earlier lessons did not")
     learn = inquiry.get("learn")
     if not (isinstance(learn, list) and 2 <= len(learn) <= 3 and all(isinstance(x, str) and x.strip() for x in learn)):
@@ -696,6 +699,42 @@ def toc_link(sid, n, title):
             + (f'<span class="toc-rest">{rest}</span>' if rest else "") + '</span></a>')
 
 
+SA_LEVELS = ("a", "b", "c", "d", "x")   # guided self-assessment (teacher 2026-11-06, his 2018 team sheet): five levels, shown as a
+# colour scale from Ruukkilabra green to a reddish tone and a grey "not yet" (teacher 2026-11-06: no letters); the
+# letters are only the values in the submission file
+
+
+def sa_fieldset(chapter, sid, label, md_label, legend):
+    """One self-assessment row of Tarkista osaamisesi (teacher 2026-11-06): the five levels as radio buttons, the
+    chosen level's description under them (inquiry.js part 8). sid: the item's id in the submission file
+    (an activity id, or "tavoite-<n>"); label: the item's plain text for the teacher's grading view."""
+    opts = "".join(f'<label class="sa-opt" data-level="{v}" title="{esc(T("inquiry.sa_" + v))}"><input type="radio" name="sa-{esc(sid)}" value="{v}">'
+                   f'<span class="sa-sw" aria-hidden="true">{T("inquiry.sa_x_short") if v == "x" else ""}</span><span class="sa-text">{T("inquiry.sa_" + v)}</span></label>' for v in SA_LEVELS)
+    return (f'<fieldset class="sa-rate" data-chapter="{esc(chapter)}" data-sa="{esc(sid)}" data-label="{esc(label)}">'
+            f'<legend>{md_label if md_label else legend}</legend><div class="sa-opts">{opts}</div><p class="sa-desc" aria-live="polite"></p></fieldset>')
+
+
+def sa_goals_html(chapter, inquiry, md):
+    """The end of Tarkista osaamisesi: the chapter's goals as statements ("Opin erottamaan painon ja massan"), or the
+    chapter's own statements of what the tasks did not measure (inquiry.json "self_extra"), on the same scale."""
+    extra = inquiry.get("self_extra")
+    items = [(f"tavoite-{i + 1}", x) for i, x in enumerate(extra)] if extra else [(f"tavoite-{i + 1}", T("inquiry.sa_goal_prefix") + " " + x) for i, x in enumerate(inquiry.get("learn") or [])]
+    if not items: return ""
+    rows = "".join(sa_fieldset(chapter, sid, plain(x), f'<span class="sa-statement">{inline(md, x)}</span>', "") for sid, x in items)
+    return (f'<div class="activity act-selfgoals task-card" id="itsearvio-tavoitteet" data-type="selfgoals"><h3>{T("inquiry.sa_goals_title")}</h3>'
+            f'<p class="sa-lead">{T("inquiry.sa_goals_lead")}</p>{rows}</div>')
+
+
+def sa_key_html():
+    """The scale once, at the start of the stage, so that a phone needs no hover text to tell the levels apart."""
+    return ('<div class="sa-key"><p class="sa-key-h">' + T("inquiry.sa_key") + '</p><ul>' + "".join(
+        f'<li data-level="{v}"><span class="sa-sw" aria-hidden="true"></span> {T("inquiry.sa_" + v)}</li>' for v in SA_LEVELS) + "</ul></div>")
+
+
+def plain(text):
+    """Plain text of a Markdown line for a data attribute: the formulas keep their LaTeX, the marks go."""
+    return re.sub(r"\s+", " ", re.sub(r"[*_`]", "", text)).strip()
+
 def render(folder, inquiry, parts, md):
     """(body html, toc html). parts: {'intro': html, 'sections': {key: html}, 'sim': html (with a <!--sim-info--> slot),
     'exercises': html, 'exit': html}.
@@ -766,6 +805,10 @@ def render(folder, inquiry, parts, md):
             hint = f'<p class="practice-hint" role="note">{inline(md, a["practice"]) if a.get("practice") else T("inquiry.check_practice")}</p>'
             content = content.replace("<output aria-live=\"polite\"></output></fieldset>", f'<output aria-live="polite"></output>{hint}</fieldset>') if t == "choice" else content[:-len("</div>")] + hint + "</div>"
         hints = hints_html([md(mathlayout.display_chains(h)) for h in a.get("hints", [])]) if t not in ("numeric",) else ""
+        sa = ""
+        if parts.get("selfassess") and a.get("stage") == "tarkista" and t in ("choice", "numeric", "explain", "exit"):   # every task of Tarkista osaamisesi (teacher 2026-11-06)
+            sa = sa_fieldset(lid, aid, plain(_h.unescape(shown.get(aid) or "") or a.get("title") or exit_title()), "", T("inquiry.sa_legend"))
+        hints += sa
         if a.get("optional") or a.get("fold") or t == "reflect":   # a closed box, named, that a student may open or leave; "fold": a
             name = shown.get(aid) or esc(a.get("title") or T(f"inquiry.optional_{t}"))   # required part opened later (its own tag, e.g. "Lesson 2");
             name = name[:1].upper() + name[1:]          # Palaa ennusteisiisi: closed until opened, required or not (teacher 2026-11-06)
@@ -792,6 +835,7 @@ def render(folder, inquiry, parts, md):
             inner = (flow(items[:si]) + f'<div class="lab"><div class="lab-side">{act(items[si])}</div>'
                      f'<div class="lab-main">{flow(items[si + 1:])}</div></div>')
         else: inner = flow(items)
+        if sid == "tarkista" and parts.get("selfassess"): inner = sa_key_html() + inner + sa_goals_html(lid, inquiry, md)
         if sid == cards_at: inner += parts["cards"]       # the chapter's concept cards close Esimerkit (teacher 2026-11-05)
         if sid == "ennusta":                           # closed at first; reopened later, the answers are still there
             k = sum(1 for a in items if a["type"] == "choice")

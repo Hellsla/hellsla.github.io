@@ -58,6 +58,28 @@ RuukkiLabran `templates/palautus.js` tekee tiedoston opiskelijan selaimessa, ja 
 Rajan ylitys näytetään opiskelijalle virheenä painikkeen alla (mikä tehtävä ja mikä raja), eikä tiedostoa ladata.
 Kuvia ei pudoteta hiljaisesti. Kuvakaappaus liitetään editoriin Ctrl+V:llä; erillistä kuvapainiketta ei ole.
 
+## Versio 2: itsearvio (6.11.2026)
+
+Luvun sivulla, jonka *Tarkista osaamisesi* -osiossa on ohjattu itsearvio (`build.py` `SELF_ASSESS_COURSES`, aluksi FY3),
+tiedoston `version` on 2 ja siinä on lisäksi
+
+```json
+"selfassessment": { "items": [
+  { "id": "check-1", "level": "b", "history": [["d", "2026-11-06T15:21:44.750Z"], ["b", "2026-11-07T08:02:10.112Z"]] },
+  { "id": "tavoite-1", "level": "c", "history": [["c", "2026-11-06T15:22:01.004Z"]] } ] }
+```
+
+- Kohteet ovat sivun järjestyksessä, ja mukana ovat vain arvioidut. `id` on Tarkista-osion tehtävän tunniste tai
+  `tavoite-<n>` (luvun tavoite tai inquiry.json `self_extra` -väittämä). Kohteiden nimet ovat arviointisivun
+  `Tehtavat.gs`:ssä (`self`), eivät tiedostossa.
+- `level`: `a` (osaan niin hyvin, että voisin opettaa kaverille, tummanvihreä), `b` (koen oivaltaneeni, vihreä),
+  `c` (osaan osittain, keltainen), `d` (tarvitsen vielä harjoitusta, punertava), `x` (ei vielä harjoiteltu, harmaa).
+  Opiskelija näkee vain väriasteikon, ei kirjaimia.
+- `history`: jokainen tason muutos aikaleimoineen (UTC), enintään 50 uusinta.
+- `content_sha256` lasketaan versiossa 2 merkkijonosta `JSON.stringify({answers: <kuten yllä>, selfassessment: <items>})`,
+  joten muuttunut itsearvio antaa uuden palautuksen.
+- Tuonti hyväksyy versiot 1 ja 2. Arviointisivun *Itsearviot* näyttää uusimman palautuksen tasot väreinä.
+
 ## Uusi versio
 Muutos, jota versio 1 ei ymmärrä, nostaa `version`-numeroa. Skripti hylkää tuntemattoman uudemman version
 syyllä *uudempi kuin tämä skripti tuntee*, eikä lue sitä puoliksi.

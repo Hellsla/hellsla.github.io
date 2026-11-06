@@ -260,6 +260,36 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy6-4-L2-08",
+      "level": 2,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "Elektroniikkasarjan vastuksista kootaan viisi kytkentää. Resistanssit ovat esimerkkiarvoja. Johtimien resistanssi jätetään huomiotta eli sitä ei oteta laskuun mukaan.\n\nKytkentä A: $220\\,\\Omega$ ja $330\\,\\Omega$ sarjassa.\n\nKytkentä B: $220\\,\\Omega$ ja $330\\,\\Omega$ rinnan.\n\nKytkentä C: kolme $330\\,\\Omega$:n vastusta rinnan.\n\nKytkentä D: $100\\,\\Omega$ sarjassa kahden rinnan kytketyn $330\\,\\Omega$:n vastuksen kanssa.\n\nKytkentä E: yksi $150\\,\\Omega$:n vastus.\n\nLaske kunkin kytkennän kokonaisresistanssi $R$ ja järjestä kytkennät.",
+      "prompt": "Järjestä kytkennät kokonaisresistanssin $R$ mukaan pienimmästä suurimpaan.",
+      "order": [
+        {
+          "text": "Kytkentä C"
+        },
+        {
+          "text": "Kytkentä B"
+        },
+        {
+          "text": "Kytkentä E"
+        },
+        {
+          "text": "Kytkentä D"
+        },
+        {
+          "text": "Kytkentä A"
+        }
+      ],
+      "answer": "Kytkentä C ($110\\,\\Omega$), kytkentä B ($132\\,\\Omega$), kytkentä E ($150\\,\\Omega$), kytkentä D ($265\\,\\Omega$), kytkentä A ($550\\,\\Omega$).",
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level3": [

@@ -153,6 +153,13 @@ with sync_playwright() as p:
     # another chapter's solution in the same store must stay out
     pg.evaluate("""() => new Promise((ok) => { const s = document.createElement('script'); s.src = 'padstore.js'; s.onload = ok; document.head.append(s); })""")
     pg.evaluate("window.flPadStore.put('fy3-2-L1-01', 'toisen luvun ratkaisu', 'fy3-2.html')")
+    # guided self-assessment of Tarkista osaamisesi (teacher 2026-11-06): a colour scale under every task and goal
+    sa = pg.evaluate("[...document.querySelectorAll('#tarkista fieldset.sa-rate')].map((f) => [f.dataset.sa, f.querySelectorAll('input[type=radio]').length])")
+    expect("self-assessment: five levels under every Tarkista task and every goal of the chapter", len(sa) >= 5 and all(n == 5 for _, n in sa) and any(i.startswith("tavoite-") for i, _ in sa) and pg.locator("#tarkista .sa-key li").count() == 5, sa)
+    sa_task = sa[1][0]
+    pg.click(f'fieldset[data-sa="{sa_task}"] .sa-opt[data-level="b"]')
+    pg.click('fieldset[data-sa="tavoite-1"] .sa-opt[data-level="d"]'); pg.click('fieldset[data-sa="tavoite-1"] .sa-opt[data-level="c"]')
+    expect("self-assessment: the chosen level's text shows under the scale", pg.inner_text(f'fieldset[data-sa="{sa_task}"] .sa-desc') == "Koen oivaltaneeni tämän asian", pg.inner_text(f'fieldset[data-sa="{sa_task}"] .sa-desc'))
     t1, t2 = tasks[0], tasks[3]
     open_pad(pg, t1)
     ed = pg.locator(f'[id="{t1}"] .rich-text-editor'); ed.click()
@@ -164,11 +171,14 @@ with sync_playwright() as p:
     name, f1 = download(pg)
     files["v1"] = f1
     expect("the file is fy3-1.ratkaisut.json", name == "fy3-1.ratkaisut.json", name)
-    expect("format, version, chapter and a 32-hex submission id", f1.get("format") == "ruukkilabra-palautus" and f1.get("version") == 1 and f1.get("chapter") == "fy3-1"
+    expect("format, version (2: with the self-assessment), chapter and a 32-hex submission id", f1.get("format") == "ruukkilabra-palautus" and f1.get("version") == 2 and f1.get("chapter") == "fy3-1"
            and re.fullmatch(r"[0-9a-f]{32}", f1.get("submission_id", "")) and f1.get("exported"), {k: v for k, v in f1.items() if k != "answers"})
     expect("every exercise once, in page order", [a["task"] for a in f1["answers"]] == tasks)
     expect("only this chapter (no fy3-2 solution)", "fy3-2" not in json.dumps(f1))
-    expect("no name or e-mail fields", not set(f1) - {"format", "version", "chapter", "lang", "submission_id", "exported", "includes", "content_sha256", "answers"}, set(f1))
+    expect("no name or e-mail fields", not set(f1) - {"format", "version", "chapter", "lang", "submission_id", "exported", "includes", "content_sha256", "answers", "selfassessment"}, set(f1))
+    sitems = (f1.get("selfassessment") or {}).get("items", [])
+    expect("self-assessment in the same file: the rated items in page order, level and history with times", [(i["id"], i["level"], [h[0] for h in i["history"]]) for i in sitems] == [(sa_task, "b", ["b"]), ("tavoite-1", "c", ["d", "c"])]
+           and all(re.fullmatch(r"\d{4}-\d\d-\d\dT[\d:.]+Z", h[1]) for i in sitems for h in i["history"]), sitems)
     a1 = f1["answers"][0]
     kinds = [i["type"] for i in a1["content"]]
     expect("text, formula, picture keep their order in the right task", a1["status"] == "answered" and kinds == ["text", "math", "text", "image", "text"], kinds)
@@ -263,7 +273,8 @@ with sync_playwright() as p:
         g = json.loads(json.dumps(f)); fn(g); return json.dumps(g)
 
     def reseal(g):   # recompute content_sha256 the way the page does (for a deliberately changed file that is otherwise valid)
-        canon = json.dumps([{"task": a["task"], "status": a["status"], "content": [{"type": "math", "latex": i["latex"]} if i["type"] == "math" else i for i in a["content"]]} for a in g["answers"]], ensure_ascii=False, separators=(",", ":"))
+        canon = [{"task": a["task"], "status": a["status"], "content": [{"type": "math", "latex": i["latex"]} if i["type"] == "math" else i for i in a["content"]]} for a in g["answers"]]
+        canon = json.dumps({"answers": canon, "selfassessment": g["selfassessment"]["items"]} if g.get("version") == 2 else canon, ensure_ascii=False, separators=(",", ":"))
         import hashlib
         g["content_sha256"] = hashlib.sha256(canon.encode()).hexdigest(); return g
 
@@ -290,7 +301,9 @@ with sync_playwright() as p:
     # broken, too big, tampered, malicious, outside the folder, no e-mail, unknown task, newer version
     bad = [("not JSON", "{ei json", None, None, A, "ei ole JSON"),
            ("another format", json.dumps({"format": "muu", "version": 1}), None, None, A, "ei ole RuukkiLabran"),
-           ("a newer version", modify(files["v1"], lambda g: g.update(version=2)), None, None, A, "uudempi"),
+           ("a newer version", modify(files["v1"], lambda g: g.update(version=3)), None, None, A, "uudempi"),
+           ("a changed self-assessment", modify(files["v1"], lambda g: g["selfassessment"]["items"][0].update(level="a")), None, None, A, "tarkistussumma"),
+           ("an unknown self-assessment level", json.dumps(reseal(json.loads(modify(files["v1"], lambda g: g["selfassessment"]["items"][0].update(level="e"))))), None, None, A, "tuntematon taso"),
            ("over the size limit", va, 9_500_000, None, A, "liian suuri"),
            ("a tampered answer", modify(files["v1"], lambda g: g["answers"][0]["content"][0].update(text="muutettu")), None, None, A, "tarkistussumma"),
            ("HTML as a PNG picture", json.dumps(reseal(json.loads(modify(files["v1"], lambda g: g["answers"][0]["content"][3].update(data=base64.b64encode(b"<html><script>alert(1)</script></html>").decode()))))), None, None, A, "ei ole PNG"),
@@ -330,7 +343,10 @@ with sync_playwright() as p:
     shot(tp, "arviointi-aloitus", full_page=True)
     home = tp.inner_text("#tasks tr.task-row")
     first = tp.locator("#tasks tr.task-row").first.inner_text().split("\t")
-    expect("task list: number, submissions, empty, graded (no class-size ratio)", first[0].strip() == "Tehtävä 1-1" and first[2:] == ["3", "0", "0"] and not re.search(r"\b\d+/\d+\b", home), (first, home[:300]))
+    expect("task list: number, solutions, graded, ungraded (no class-size ratio)", first[0].strip() == "Tehtävä 1-1" and first[2:] == ["3", "0", "3"] and not re.search(r"\b\d+/\d+\b", home), (first, home[:300]))
+    tp.locator("#selfSec details.chapter > summary").first.click()
+    cells = tp.evaluate("[...document.querySelectorAll('#selfSec table.self tbody tr')].map((tr) => [tr.cells[0].textContent, [...tr.querySelectorAll('.sa')].map((m) => m.className.replace('sa ', ''))])")
+    expect("grading view: Itsearviot shows each student's latest levels as colours (teacher 2026-11-06)", tp.is_visible("#selfSec") and any("sa-b" in c and "sa-c" in c for _, c in cells), cells)
     expect("the processing state lists invalid, duplicate and to-be-checked rows", all(w in tp.inner_text("#problems") for w in ["Virheellinen", "Kaksoiskappale", "Tarkistettava"]), tp.inner_text("#problems")[:200])
     tp.locator("#tasks tr.task-row").first.click()
     tp.wait_for_function("document.querySelector('#gAnswer .t')")
@@ -400,7 +416,7 @@ with sync_playwright() as p:
     # B's file in task 1: v1 content; check student 2 is C (empty there? no: C has v1 = answered)
     go_back(tp)
     first = tp.locator("#tasks tr.task-row").first.inner_text().split("\t")
-    expect("graded count in the list", first[4] == "1", first)
+    expect("graded and ungraded counts in the list", first[3] == "1" and first[4] == "2", first)
     # "Vain arvioimattomat"
     tp.check("#onlyOpen"); tp.locator("#tasks tr.task-row").first.click(); tp.wait_for_function("document.getElementById('gPos').textContent !== ''")
     expect("Vain arvioimattomat leaves out graded students", tp.inner_text("#gPos") == "Opiskelija 1/2" and tp.inner_text("#gEmail") != A, (tp.inner_text("#gPos"), tp.inner_text("#gEmail")))
@@ -418,9 +434,9 @@ with sync_playwright() as p:
     go_back(tp); tp.locator("#tasks tr.task-row").first.click(); tp.wait_for_function("!document.getElementById('points').disabled")
     expect("after reordering the rows the latest version still shows its own points", tp.input_value("#points") == "1", tp.input_value("#points"))
     # an empty task
-    go_back(tp); tp.locator("#tasks tr.task-row").nth(1).click()
-    tp.wait_for_function("document.querySelector('#gAnswer .empty, #gAnswer .t')")
-    expect("an unanswered task says so", "jätti tehtävän tyhjäksi" in tp.inner_text("#gAnswer"), tp.inner_text("#gAnswer"))
+    go_back(tp); tp.uncheck("#onlyOpen"); tp.locator("#tasks tr.task-row").nth(1).click()
+    tp.wait_for_function("document.getElementById('gAnswer').textContent !== 'Ladataan…'")
+    expect("a task everyone left empty has no queue (teacher 2026-11-06: empty ones are not shown)", "ei ole ratkaisuja" in tp.inner_text("#gAnswer"), tp.inner_text("#gAnswer"))
     expect("no formulas were written to the sheets", not E("MOCK.formulas"), E("MOCK.formulas"))
     expect("no script errors in the grading view", not terr, terr)
 
@@ -431,8 +447,10 @@ with sync_playwright() as p:
     course = json.loads(gs[gs.index("{"):gs.rindex(";")])
     ch2 = [c for c in course["chapters"] if c["id"] == "fy3-2"][0]
 
-    def chapter_file(ch, text):
-        answers = [{"task": t["id"], "status": "answered" if i == 0 else "empty", "content": [{"type": "text", "text": text}] if i == 0 else []} for i, t in enumerate(ch["tasks"])]
+    def chapter_file(ch, text, text2=None):
+        given = {0: text} if text2 is None else {0: text, 1: text2}
+        answers = [{"task": t["id"], "status": "answered" if i in given else "empty", "content": [{"type": "text", "text": given[i]}] if i in given else []} for i, t in enumerate(ch["tasks"])]
+        text = text + "|" + (text2 or "")
         canon = json.dumps(answers, ensure_ascii=False, separators=(",", ":"))
         return json.dumps({"format": "ruukkilabra-palautus", "version": 1, "chapter": ch["id"], "lang": "fi", "submission_id": hashlib.md5(text.encode()).hexdigest(),
                            "exported": "2026-11-05T12:00:00.000Z", "includes": "solution-editor", "content_sha256": hashlib.sha256(canon.encode()).hexdigest(), "answers": answers})
@@ -505,6 +523,19 @@ with sync_playwright() as p:
     lp.fill("#points", "0,5"); lp.press("#points", "Enter")
     lp.wait_for_function("document.getElementById('state').textContent.indexOf('Tallennettu') === 0")
     go_back(lp)
+    # a task left empty is no solution: not in the queue, not counted (teacher 2026-11-06)
+    row2 = lp.locator('details.chapter[data-chapter="fy3-1"] tr.task-row').nth(1)
+    expect("local page: an empty task shows no solutions", row2.inner_text().split("\t")[2:] == ["0", "0", "0"], row2.inner_text())
+    row2.click(); lp.wait_for_function("document.getElementById('gAnswer').textContent !== 'Ladataan…'")
+    expect("local page: an empty task's queue is empty, nothing shown as 'jätti tyhjäksi'", "ei ole ratkaisuja" in lp.inner_text("#gAnswer") and "jätti tehtävän tyhjäksi" not in lp.inner_text("#grade"), lp.inner_text("#gAnswer"))
+    go_back(lp)
+    # Vain arvioimattomat: only the chapters and tasks that have a solution without points (teacher 2026-11-06)
+    lp.check("#onlyOpen")
+    open_rows = lp.evaluate("[...document.querySelectorAll('#tasks tr.task-row')].map((r) => [r.closest('details').dataset.chapter, r.cells[4].textContent])")
+    expect("local page: 'Vain arvioimattomat' lists only chapters and tasks with unscored solutions", open_rows and all(n != "0" for _, n in open_rows) and lp.locator("#tasks details.chapter").count() < len(course["chapters"])
+           and not any(t.startswith("fy3-3") for t, _ in open_rows), open_rows[:5])
+    lp.uncheck("#onlyOpen")
+    expect("local page: unticked, every chapter is listed again", lp.locator("#tasks details.chapter").count() == len(course["chapters"]))
     shot(lp, "arviointi-kooste", full_page=False)
     n1 = lambda f: sum(1 for a in f["answers"] if a["status"] == "answered")
     a_v2, b_v1 = n1(files["v2"]), n1(files["v1"])
@@ -522,6 +553,16 @@ with sync_playwright() as p:
     gc = lp.inner_text("#groupChart")
     expect("local page: chart of the group: done and points out of the maximum (teacher 2026-11-06)", lp.is_visible("#groupChart") and "Tehty" in gc and "Pisteet" in gc and f"({a_v2 + 1 + b_v1} / {2 * (m1 + m2)})" in gc
            and lp.locator("#summary tbody .meter").count() == 4 and lp.evaluate("document.querySelector('#summary tbody .meter.pts > span').style.width") not in ("", "0%"), gc)
+    # names hidden for showing the points to the class (teacher 2026-11-06)
+    lp.click("#hideNames")
+    hidden_txt = lp.inner_text("#home")
+    expect("local page: 'Piilota nimet' leaves no name on the home view (summary numbered, problems hidden, not alphabetical)", "Aino" not in hidden_txt and "Bertta" not in hidden_txt and "Cecilia" not in hidden_txt
+           and json.loads(rows())[0][0] == "Opiskelija 1" and json.loads(rows())[0][3].startswith("1 /") and lp.inner_text("#hideNames") == "Näytä nimet", hidden_txt[:300])
+    lp.locator("#tasks tr.task-row").first.click(); lp.wait_for_function("document.querySelector('#gAnswer .t')")
+    expect("local page: names hidden in the grading view too", lp.inner_text("#gEmail").startswith("Opiskelija ") and "Opiskelija" not in lp.inner_text("#gEmail")[11:], lp.inner_text("#gEmail"))
+    go_back(lp)
+    lp.click("#hideNames")
+    expect("local page: 'Näytä nimet' brings the names back", "Aino Opiskelija" in lp.inner_text("#summary") and lp.is_visible("#probSec"), lp.inner_text("#summary")[:200])
     lp.click("#more > summary")
     with lp.expect_download() as d: lp.click("#csv")
     csv = [r.split(";") for r in pathlib.Path(d.value.path()).read_text(encoding="utf-8-sig").splitlines()]
@@ -538,12 +579,25 @@ with sync_playwright() as p:
     # reopen: group, points and imports kept in this browser, files read again without duplicates
     lp.reload(); lp.wait_for_selector("#tasks tr.task-row"); lp.wait_for_function("document.getElementById('homeState').textContent !== 'Ladataan…'")
     first = lp.locator("#tasks tr.task-row").first.inner_text().split("\t")
-    expect("local page: after reopening the group, points and imports are kept", lp.input_value("#group") == "FY3.1" and first[2] == "2" and first[4] == "2", (lp.input_value("#group"), first))
+    expect("local page: after reopening the group, points and imports are kept", lp.input_value("#group") == "FY3.1" and first[2] == "2" and first[3] == "2" and first[4] == "0", (lp.input_value("#group"), first))
     lp.locator("#tasks tr.task-row").first.click(); lp.wait_for_function("document.querySelector('#gAnswer .err, #gAnswer .t')")
-    expect("local page: without the zip it asks to choose it again", "zip" in lp.inner_text("#gAnswer"), lp.inner_text("#gAnswer"))
+    expect("local page: after reopening, the answers are still shown without a new import (IndexedDB, teacher 2026-11-06)", lp.locator("#gAnswer .t").count() >= 1 and lp.locator("#gAnswer .err").count() == 0 and lp.locator("#gAnswer img.shot").count() == 1, lp.inner_text("#gAnswer"))
     go_back(lp)
     load(zpath)
     expect("local page: reading the same zip again adds nothing", "Uusia palautuksia 0" in lmsg(), lmsg())
+    # a new version of a chapter: an unchanged task solution keeps its points, a new or changed one is to be graded (teacher 2026-11-06)
+    zre, zre2 = tmp / "uusi-versio.zip", tmp / "muutettu.zip"
+    make_zip(zre, FA, [("fy3-2.ratkaisut (1) - Aino Opiskelija.json", chapter_file(ch2, "Ainon työ ja energia", "Ainon uusi ratkaisu"), (2026, 11, 6, 12, 0, 0))])
+    make_zip(zre2, FA, [("fy3-2.ratkaisut (2) - Aino Opiskelija.json", chapter_file(ch2, "Ainon korjattu työ", "Ainon uusi ratkaisu"), (2026, 11, 6, 13, 0, 0))])
+    load(zre)
+    t1 = lambda: lp.locator('details.chapter[data-chapter="fy3-2"] tr.task-row').nth(0).inner_text().split("\t")
+    t2 = lambda: lp.locator('details.chapter[data-chapter="fy3-2"] tr.task-row').nth(1).inner_text().split("\t")
+    expect("local page: new version, unchanged task 1 keeps its points, new task 2 is unscored", "Uusia palautuksia 1" in lmsg() and t1()[3:] == ["1", "0"] and t2()[2:] == ["1", "0", "1"], (lmsg(), t1(), t2()))
+    lp.locator('details.chapter[data-chapter="fy3-2"] tr.task-row').first.click(); lp.wait_for_function("document.querySelector('#gAnswer .t')")
+    expect("local page: the grading view tells where the points came from", lp.input_value("#points") == "0,5" and "versiosta 1" in lp.inner_text("#state") and "versio 2/2" in lp.inner_text("#gTime"), (lp.input_value("#points"), lp.inner_text("#state")))
+    go_back(lp)
+    load(zre2)
+    expect("local page: a changed solution is to be graded again, the unchanged task 2 is not counted twice", t1()[3:] == ["0", "1"] and t2()[2:] == ["1", "0", "1"], (t1(), t2()))
     # a second group: its own form, students and points, made from the zip alone
     load(zpath2)
     expect("local page: the second group from its zip; a group menu appears", "ryhmä FY3.2" in lp.inner_text("#title") and lp.is_visible("#groupWrap"), lp.inner_text("#title"))
@@ -562,6 +616,11 @@ with sync_playwright() as p:
       localStorage.setItem('ruukkilabra:arviointi:FY3:ryhma:FY03.9', JSON.stringify({format: 'ruukkilabra-arviointi', version: 1, course: 'FY3', group: 'FY03.9', forms: [], sheets: []})); }""")
     lp.reload(); lp.wait_for_selector("#import")
     expect("local page: an older group is moved to the new storage", "FY03.9" in lp.evaluate("[...document.querySelectorAll('#group option')].map((o) => o.value)"), lp.evaluate("[...document.querySelectorAll('#group option')].map((o) => o.value)"))
+    lp.select_option("#group", "FY3.2"); lp.wait_for_function("document.getElementById('title').textContent.indexOf('ryhmä FY3.2') >= 0")
+    lp.click("#more > summary"); lp.click("#clear"); lp.wait_for_function("document.getElementById('localMsg').textContent.indexOf('poistettu') >= 0")
+    kept = lp.evaluate("""() => new Promise((ok) => { const r = indexedDB.open('ruukkilabra-arviointi'); r.onsuccess = () => {
+      const q = r.result.transaction('palautukset').objectStore('palautukset').getAllKeys(); q.onsuccess = () => ok(q.result); }; })""")
+    expect("local page: 'Poista ryhmä' removes the group's files from the browser too", "FY3.2" not in kept and "FY3.1" in kept, kept)
     expect("local page: nothing loaded from the network", not net, net)
     expect("local page: no script errors", not lerr, lerr)
     lctx.close()

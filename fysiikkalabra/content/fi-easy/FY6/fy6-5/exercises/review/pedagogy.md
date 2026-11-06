@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 0faadae449ab2dc4
+CONTENT-HASH: 5cfc1e1a443815c4
 Mode: full (translation review against the reviewed Finnish set)
-Round 1
+Round 2
 
 ## Blocking
 (none)
 
 ## Fixed
-(none needed: the text already matched fi in every number and was plain, short-sentence selkosuomi)
+(none needed)
 
 ## Polish
 (none)
 
 ## Checked
-- Short sentences, common words; new terms explained in place (kuorma = laite, joka ottaa virtaa). Long fi sentences were split without changing meaning.
-- Choices, feedback and part a)/b)/c) structure match fi; concept answers are unambiguous.
-- Error-analysis tasks L2-05 and L2-07 keep the student reasoning verbatim as in fi.
+- Selkeä suomi per NOTES.md §12: shorter sentences, one idea each, physics terms kept (glossary terms), no step dropped.
+- New task is clearer than fi where it helps (feedback split into two sentences; 'kulmakerroin eli jyrkkyys', 'verrannollinen eli pienenee, kun resistanssi kasvaa'; 'suuruusluokka kertoo luvun koon suunnilleen' in fy6-7).

@@ -262,6 +262,41 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy6-12-L2-08",
+      "level": 2,
+      "text": "Between two parallel plates there is a uniform electric field. An electron starts from rest at point A, whose potential relative to the negative plate is $30\\,\\text{V}$, and moves to point B, whose potential is $120\\,\\text{V}$. Only the electric force does work on the electron.\n\nA student calculates the kinetic energy of the electron at point B. The elementary charge is $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$.\n\nRow 1: the charge of the electron is negative, so the electric force points against the field, and an electron starting from rest moves toward a higher potential, that is, from point A to point B.\n\nRow 2: the potential energy of the electron decreases along the way, because the potential energy $E_\\text{p} = qV$ of a negative charge is smaller at a higher potential.\n\nRow 3: the electron passes through the potential difference $U = 120\\,\\text{V}$, so its kinetic energy at point B is $E_\\text{k} = eU = 120\\,\\text{eV}$.\n\nRow 4: in joules $E_\\text{k} = 120 \\cdot 1.602 \\cdot 10^{-19}\\,\\text{J}$, that is, $E_\\text{k} = 1.9 \\cdot 10^{-17}\\,\\text{J}$.\n\nCheck the calculation row by row. Choose the wrong row, or the last option if there is no error in the calculation.",
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "answer": "Row 3: kinetic energy in electronvolts",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Row 1: direction of the electron's motion",
+          "feedback": "Row 1 is correct: the force on a negative charge points against the field, toward a higher potential. If you think the row is wrong, you think that every charge moves toward a lower potential."
+        },
+        {
+          "text": "Row 2: change in potential energy",
+          "feedback": "Row 2 is correct: $qV_A = -30\\,\\text{eV}$ and $qV_B = -120\\,\\text{eV}$, so the potential energy decreases. If you think the row is wrong, you are mixing up the potential and the potential energy, whose sign depends on the charge."
+        },
+        {
+          "text": "Row 3: kinetic energy in electronvolts",
+          "correct": true,
+          "feedback": "Correct, this row is wrong: $120\\,\\text{V}$ is the potential of point B, not the potential difference. Calculated correctly, $U = V_B - V_A = 90\\,\\text{V}$, so $E_\\text{k} = 90\\,\\text{eV}$, and in joules $1.4 \\cdot 10^{-17}\\,\\text{J}$."
+        },
+        {
+          "text": "Row 4: conversion to joules",
+          "feedback": "Row 4 is correct with the value of row 3: $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$, so electronvolts are multiplied by this number. If you think the row is wrong, you may think the conversion should divide."
+        },
+        {
+          "text": "There is no error in the calculation",
+          "feedback": "The calculation has an error in row 3: the kinetic energy is given by the potential difference $V_B - V_A$ between the points, not by the potential of the end point. The electron started from point A, whose potential is not zero."
+        }
+      ]
     }
   ],
   "level3": [

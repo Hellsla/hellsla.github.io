@@ -254,6 +254,41 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy6-2-L2-08",
+      "level": 2,
+      "kind": [
+        "error",
+        "experiment"
+      ],
+      "text": "A circuit has a $4.5\\,\\text{V}$ battery and a lamp. A student measures the current and the voltage of the lamp with two multimeters and writes a measurement plan. The readings are example values.\n\nCurrent range $200\\,\\text{mA}$: resolution $0.1\\,\\text{mA}$, error limit $\\pm(1.0\\,\\% + 2\\ \\text{digits})$.\n\nCurrent range $10\\,\\text{A}$: resolution $0.01\\,\\text{A}$, error limit $\\pm(2.0\\,\\% + 3\\ \\text{digits})$.\n\nLine 1: the ammeter is connected in series with the lamp, because the current to be measured must pass through the meter.\n\nLine 2: the measurement of the current is started on the range $10\\,\\text{A}$, because the order of magnitude of the current is not yet known. The display shows $0.14\\,\\text{A}$.\n\nLine 3: the final current is read on the range $10\\,\\text{A}$, because on a large range the error limit of the reading is smaller.\n\nLine 4: the voltmeter is connected in parallel with the lamp, and the reading $4.38\\,\\text{V}$ is read on the range $20\\,\\text{V}$, because it does not fit the range $2\\,\\text{V}$.\n\nWhich line is wrong? If there is no error in the reasoning, choose the last option.",
+      "answer": "Line 3: the measuring range of the final current",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Line 1: connecting the ammeter",
+          "feedback": "Line 1 is correct: an ammeter measures the current passing through it, so the circuit is opened and the meter is placed in the gap in series. If you consider the line wrong, you may be thinking that an ammeter is connected in parallel like a voltmeter; then it would cause a short circuit."
+        },
+        {
+          "text": "Line 2: the starting range of the current measurement",
+          "feedback": "Line 2 is correct: when the order of magnitude is not known, one starts from the largest range so that too large a current does not blow the fuse. If you consider the line wrong, you may be confusing the starting range with the range on which the final reading is read."
+        },
+        {
+          "text": "Line 3: the measuring range of the final current",
+          "correct": true,
+          "feedback": "Correct, this line is wrong: $0.14\\,\\text{A} = 140\\,\\text{mA}$ fits the range $200\\,\\text{mA}$. There the error limit is about $1.6\\,\\text{mA}$, on the range $10\\,\\text{A}$ about $33\\,\\text{mA}$. The final reading is read on the smallest range on which it fits."
+        },
+        {
+          "text": "Line 4: connecting the voltage and the range",
+          "feedback": "Line 4 is correct: the voltmeter goes in parallel with the lamp, and on the range $2\\,\\text{V}$ the display shows at most $1.999\\,\\text{V}$, so $4.38\\,\\text{V}$ would give OL. If you consider the line wrong, you may be thinking that the smallest range is always the best, even if the reading does not fit it."
+        },
+        {
+          "text": "There is no error in the reasoning",
+          "feedback": "Check the error limits: calculate the error limit of the current on both current ranges."
+        }
+      ]
     }
   ],
   "level3": [

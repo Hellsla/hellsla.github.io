@@ -260,6 +260,36 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy6-4-L2-08",
+      "level": 2,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "Five circuits are built from the resistors of an electronics kit. The resistances are example values, and the resistance of the conductors is neglected.\n\nCircuit A: $220\\,\\Omega$ and $330\\,\\Omega$ in series.\n\nCircuit B: $220\\,\\Omega$ and $330\\,\\Omega$ in parallel.\n\nCircuit C: three $330\\,\\Omega$ resistors in parallel.\n\nCircuit D: $100\\,\\Omega$ in series with two $330\\,\\Omega$ resistors connected in parallel.\n\nCircuit E: a single $150\\,\\Omega$ resistor.\n\nCalculate the total resistance $R$ of each circuit and arrange the circuits.",
+      "prompt": "Arrange the circuits by the total resistance $R$ from the smallest to the largest.",
+      "order": [
+        {
+          "text": "Circuit C"
+        },
+        {
+          "text": "Circuit B"
+        },
+        {
+          "text": "Circuit E"
+        },
+        {
+          "text": "Circuit D"
+        },
+        {
+          "text": "Circuit A"
+        }
+      ],
+      "answer": "Circuit C ($110\\,\\Omega$), circuit B ($132\\,\\Omega$), circuit E ($150\\,\\Omega$), circuit D ($265\\,\\Omega$), circuit A ($550\\,\\Omega$).",
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level3": [

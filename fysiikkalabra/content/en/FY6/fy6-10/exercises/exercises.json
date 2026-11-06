@@ -249,6 +249,37 @@
       "answer": 0.9587,
       "unit": "mN",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-10-L2-08",
+      "level": 2,
+      "text": "Two small charged balls A and B are on insulating rods. The charge of ball A is $+q$ and the charge of ball B is $+2q$. When the distance between the centres of the balls is $r$, the magnitude of the electric force on ball B is $F$.\n\nThe charge of ball A is increased to $+2q$, and the balls are moved to the distance $3r$. The charge of ball B does not change.\n\nHow does the magnitude of the electric force on ball B change?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "The force decreases to $\\tfrac{2}{9}F$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The force decreases to $\\tfrac{2}{3}F$.",
+          "feedback": "Here the force has been read as inversely proportional to the distance. In Coulomb's law the denominator is $r^2$, so a threefold distance divides the force by nine, not by three."
+        },
+        {
+          "text": "The force decreases to $\\tfrac{1}{9}F$.",
+          "feedback": "Here it has been thought that the change in the charge of ball A does not affect ball B. The law contains the product of the charges, so doubling the product doubles the force on either ball."
+        },
+        {
+          "text": "The force decreases to $\\tfrac{2}{9}F$.",
+          "correct": true,
+          "feedback": "Correct: the product of the charges doubles and $r^2$ becomes nine times as large, so the force is $\\tfrac{2}{9}F$. The same force also acts on ball A."
+        },
+        {
+          "text": "The force increases to $18F$.",
+          "feedback": "Here the effect of the distance has been read the wrong way round. The electric force weakens as the distance grows, because $r^2$ is in the denominator of the law, not in the numerator."
+        }
+      ]
     }
   ],
   "level3": [

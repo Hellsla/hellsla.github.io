@@ -91,6 +91,40 @@
       "answer": 25.0,
       "unit": "h",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-7-L1-09",
+      "level": 1,
+      "kind": [
+        "reasoning"
+      ],
+      "text": "A microwave oven takes the power $1.2\\,\\text{kW}$ from the mains. It is used to heat a meal, and the oven is on for $3.0\\,\\text{min}$. What is the order of magnitude of the electrical energy the oven uses during the heating?",
+      "answer": "about $0.060\\,\\text{kWh}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "about $0.0010\\,\\text{kWh}$",
+          "feedback": "Here the minutes have been converted to hours by dividing by $3600$, like seconds. There are, however, $60$ minutes in an hour, so the time in hours is $\\tfrac{3.0}{60}\\,\\text{h}$."
+        },
+        {
+          "text": "about $0.060\\,\\text{kWh}$",
+          "correct": true,
+          "feedback": "Correct: $3.0\\,\\text{min} = 0.050\\,\\text{h}$, so $E = 1.2\\,\\text{kW} \\cdot 0.050\\,\\text{h}$, that is $0.060\\,\\text{kWh}$."
+        },
+        {
+          "text": "about $3.6\\,\\text{kWh}$",
+          "feedback": "Here the time has been substituted in minutes, although the result is given in kilowatt-hours. Kilowatt-hours are obtained only when the power is in kilowatts and the time in hours."
+        },
+        {
+          "text": "about $60\\,\\text{kWh}$",
+          "feedback": "Here the power has been substituted in watts and the time in hours, but the result is given in kilowatt-hours. With watts and hours the result is in watt-hours, and $1\\,\\text{kWh} = 1000\\,\\text{Wh}$."
+        },
+        {
+          "text": "about $3600\\,\\text{kWh}$",
+          "feedback": "Here the watts and the minutes have been multiplied together and the result given in kilowatt-hours. Before multiplying, the power is converted to kilowatts and the time to hours."
+        }
+      ]
     }
   ],
   "level2": [

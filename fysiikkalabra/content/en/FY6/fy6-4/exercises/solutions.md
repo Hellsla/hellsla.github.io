@@ -193,3 +193,28 @@
 **Substitution:** Series connection: the only resistors smaller than the target $470\,\Omega$ are $100\,\Omega$ and $390\,\Omega$, and their sum is $490\,\Omega$ (deviation $4.3\,\%$). Any other series connection is at least $100\,\Omega + 560\,\Omega = 660\,\Omega$ and worse. Parallel connection: the result is smaller than the smaller resistor, so the smaller resistor must be over $470\,\Omega$, which leaves the resistors $560\,\Omega$, $1200\,\Omega$, $1500\,\Omega$, $2700\,\Omega$ and $5600\,\Omega$. The pairs with $560\,\Omega$ give $382\,\Omega$, $408\,\Omega$, $\dfrac{560 \cdot 2700}{3260}\,\Omega = 463.8\,\Omega$ and $509\,\Omega$. In the other pairs the smaller resistor is at least $1200\,\Omega$, so the result is larger than $\dfrac{1200 \cdot 1500}{2700}\,\Omega = 667\,\Omega$. So the best is $560\,\Omega$ in parallel with $2700\,\Omega$: $R = 463.8\,\Omega$, and $p = \dfrac{470 - 463.8}{470} \cdot 100\,\% = 1.32\,\%$
 **Answer:** $1.3\,\%$, two significant figures. The connection is $560\,\Omega$ in parallel with $2700\,\Omega$, total resistance $464\,\Omega$. The best series connection ($100\,\Omega + 390\,\Omega$) deviates by $4.3\,\%$, so the parallel connection is over three times as accurate.
 **Reasonableness:** The result $463.8\,\Omega$ is smaller than $560\,\Omega$, as it should be in a parallel connection, and close to the target.
+
+## fy6-4-L2-08
+**Find:** the order of five resistor circuits by the total resistance $R$ from the smallest to the largest.
+**Principle:** In a series connection the resistances are added, $R = R_1 + R_2 + \dots$, so the total resistance is larger than any of the resistors. In a parallel connection $\tfrac{1}{R} = \tfrac{1}{R_1} + \tfrac{1}{R_2} + \dots$, and at the end the number is inverted; the total resistance is smaller than the smallest resistance of a branch. In a mixed circuit the parallel part is calculated first and then the resistors in series.
+**Model answer:** Circuit A is a series connection:
+
+$R_\text{A} = 220\,\Omega + 330\,\Omega = 550\,\Omega$
+
+Circuit B is a parallel connection:
+
+$R_\text{B} = \dfrac{220\,\Omega \cdot 330\,\Omega}{220\,\Omega + 330\,\Omega}$
+
+$R_\text{B} = 132\,\Omega$
+
+Circuit C has three equal branches:
+
+$\dfrac{1}{R_\text{C}} = \dfrac{3}{330\,\Omega}$, that is, $R_\text{C} = 110\,\Omega$
+
+In circuit D two $330\,\Omega$ resistors in parallel are half of one, $165\,\Omega$, and $100\,\Omega$ is in series with it:
+
+$R_\text{D} = 100\,\Omega + 165\,\Omega = 265\,\Omega$
+
+Circuit E has one resistor, $R_\text{E} = 150\,\Omega$.
+
+From the smallest to the largest total resistance the order is C ($110\,\Omega$), B ($132\,\Omega$), E ($150\,\Omega$), D ($265\,\Omega$) and A ($550\,\Omega$). Circuit C has the most resistors but the smallest resistance, because each parallel branch is a new path for the current. The resistance of circuit B is smaller than that of a single $150\,\Omega$ resistor, although both of its resistors are larger than $150\,\Omega$. If one forgets to invert the number $\tfrac{1}{R}$ in a parallel connection, the number of circuit B, $0.0076\,\tfrac{1}{\Omega}$, and that of circuit C, $0.0091\,\tfrac{1}{\Omega}$, look the smallest, and B and C change places.

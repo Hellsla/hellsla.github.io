@@ -1,20 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 19398d9c8f78c89c
-Mode: full (translation review against the reviewed Finnish set)
-Round 2
-## Blocking
-(none)
+CONTENT-HASH: f6987a85f62564f9
 
-## Fixed
-(none)
+## Blocking
 
 ## Polish
-(none)
+- [Minor] solutions.md fy6-7-L1-09 — "Reasonableness: a device of one kilowatt …" is run into the last Model answer paragraph, so the page shows no Reasonableness block (every neighbouring task has one, e.g. 7-8). Put it on its own line as `**Reasonableness:** …`.
 
 ## Checked
-- Opened captures fy6-7-open-exercises-L2-1280-5.png and fy6-7-open-exercises-L3-1280-2.png in content/en/FY6/fy6-7/review/shots: data tables, formulas, units and section labels render in en, no Finnish left in en, nothing clipped.
-- Table captions and column headings are translated; LaTeX units render correctly.
-- Delta (boxed value at the start of the Vastaus/Answer line): the added value is correct (matches solution and exercises.json within tolerance, unit and decimal point right, LaTeX number+unit) and the line is short and reads well; no layout change beyond one short sentence.
+- Delta: new L1-09 (order-of-magnitude choice, shown as 7-9), solution; L1-08 text re-split into situation / student's solution / question; answers.py comment only.
+- Opened en fy6-7-open-exercises-1280-8 (end of 7-8 with the re-split task's solution, start of 7-9) and -9 (four options with feedback, Find/Principle/Model answer with t and E blocks).
+- kWh, W, min and h render as upright maths units; options are whole clickable rows; feedback opens inside the card; no red KaTeX, no clipping, no overflow.
+- Figures: none changed.
 
 ## Scores
-illustrations 5 · typography 5 · language 5 · accessibility 5
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

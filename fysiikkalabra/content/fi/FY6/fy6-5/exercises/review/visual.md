@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 116daa2ae1100191
-ROUND: 3
+CONTENT-HASH: 22633f9efb51607f
+ROUND: 2
 
 ## Blocking
-None. The round-2 Major (duplicated "c) ... = 250 Ω" paragraph in L3-05 Sijoitus) is resolved: git show HEAD and solutions.md show c) appears once, followed directly by Vastaus.
 
 ## Polish
-- [Minor] fy6-5-L3-04 task text — a three-branch circuit with two sources and the current directions is still given only in words; a small circuit figure (P, Q, U1, U2, I1..I3) would help on a phone (carried over).
+- [Minor] fy6-5-L2-08 Mallivastaus, first aligned block — the rows of the three fractions sit tight (1/Rk … 6/60 Ω … Rk); legible, add row spacing if the template allows.
+- [Minor] fy6-5-L2-08 stage 1 feedback of 0,10 A — "Tässä pääjohtimen virta on jaettu tasan … Haarautumispiste ei jaa virtaa tasan" is close to the wrong reason option "Haarautumispiste jakaa virran tasan" shown below; harmless, but it names that reason's error — optional rewording.
 
 ## Checked
-- Round 2 Blocking: duplicate c) paragraph deleted (fixed). Round 2 Polish: L3-04 Sijoitus equations now in aligned display blocks (fixed); L3-05 b) now a separate paragraph with one full sentence (fixed).
-- solutions.md L3-05 and L3-04 Sijoitus re-read after the edit; no other change since round 2. No new 390/360 px exercise capture; packet's 360 px layout FAIL did not reproduce for the chapter pages in round 2.
+- Round 1 Major item is fixed. Renders at 390 px of fy6-5-L2-08, correct pair and a wrong first answer (reason stage visible), Vastaus and Näytä ratkaisu open, taken with my own script.
+- The sum is now "haarojen virtojen summa on 0,15 A + 0,10 A + 0,050 A, eli 0,30 A": no chain wider than 286 px (the aligned blocks), nothing clipped, page scroll width 390, nothing outside the viewport.
+- Stage 1 feedback of 0,10 A and 0,15 A no longer states the correct reason; the correct reason is no longer the longest option (it is the shortest, so form does not give it away).
+- Not seen: 360 px and 1280 px captures.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4

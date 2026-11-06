@@ -110,6 +110,45 @@
    "answer": 9.36e19,
    "unit": "",
    "tolerance": 0.02
+  },
+  {
+   "id": "fy6-1-L1-09",
+   "level": 1,
+   "kind": [
+    "concept",
+    "reasoning"
+   ],
+   "text": "Taskulampussa on $3{,}0\\,\\text{V}$:n paristo, kytkin ja lamppu samassa silmukassa. Kytkin on suljettu, ja lamppu palaa. Tilanteen arvot ovat esimerkkiarvoja, ja johtojen ja pariston oma vastus jätetään huomiotta.\n\nPariston plusnavan ja lampun väliin kytketty ampeerimittari näyttää $0{,}30\\,\\text{A}$.\n\nPäättele, mitkä väitteet ovat tosia ja mitkä epätosia.",
+   "answer": "1 epätosi, 2 tosi, 3 tosi, 4 epätosi, 5 epätosi",
+   "unit": "",
+   "tolerance": 0.02,
+   "statements": [
+    {
+     "text": "Lampun ja miinusnavan välissä virta on alle $0{,}30\\,\\text{A}$, koska lamppu kuluttaa virtaa.",
+     "true": false,
+     "feedback": "Epätosi: virta ei kulu lampussa. Sama varaus, joka tulee lamppuun, lähtee siitä ja palaa paristoon, joten virta on $0{,}30\\,\\text{A}$ lampun molemmin puolin. Lampussa muuttuu energia, ei varaus."
+    },
+    {
+     "text": "Lampun läpi kulkee yhdessä minuutissa varaus $18\\,\\text{C}$.",
+     "true": true,
+     "feedback": "Tosi: virran määritelmästä $Q = It = 0{,}30\\,\\text{A} \\cdot 60\\,\\text{s}$, eli $Q = 18\\,\\text{C}$. Ampeeri on coulombi sekunnissa, joten aika muutetaan sekunneiksi."
+    },
+    {
+     "text": "Jokainen lampun läpi kulkeva coulombi tuo lamppuun energiaa $3{,}0\\,\\text{J}$.",
+     "true": true,
+     "feedback": "Tosi: jännite on siirtynyt energia varausyksikköä kohti, $U = \\tfrac{E}{Q}$, ja $3{,}0\\,\\text{V} = 3{,}0\\,\\text{J/C}$. Johtojen ja pariston oma vastus jätetään huomiotta, joten koko energia siirtyy lamppuun."
+    },
+    {
+     "text": "Lamppu syttyy vasta, kun paristosta lähteneet elektronit ovat ehtineet lamppuun.",
+     "true": false,
+     "feedback": "Epätosi: johto on valmiiksi täynnä vapaita elektroneja. Kun piiri suljetaan, ne alkavat liikkua kaikkialla piirissä yhtä aikaa, myös hehkulangassa, joten lamppu syttyy heti, vaikka elektronit etenevät hitaasti."
+    },
+    {
+     "text": "Lamppu saa paristolta yhdessä minuutissa energiaa $3{,}0\\,\\text{J}$.",
+     "true": false,
+     "feedback": "Epätosi: jännite $3{,}0\\,\\text{V}$ on energia coulombia kohti, ei energia minuutissa. Minuutissa lampun läpi kulkee $18\\,\\text{C}$, joten $E = UQ = 3{,}0\\,\\text{V} \\cdot 18\\,\\text{C}$, eli $E = 54\\,\\text{J}$."
+    }
+   ]
   }
  ],
  "level2": [

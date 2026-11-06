@@ -1,13 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 83b798cb46578690
-ROUND: 3
+CONTENT-HASH: 5161df0334c5195f
+
 ## Blocking
-(none) Round 1 Blocking (L3-04 47-word paragraph) is resolved: the lead is split into two paragraphs of 28 and 19 words.
+(none)
+
 ## Polish
-- L1-07 repeats the worked example's structure (P, min/vrk, 30 vrk, snt/kWh); acceptable, or add a unit trap.
-- L3-05 c) solution: "vanha jääkaappi lämmittää asuntoa enemmän, joten sähkölämmityksen aikana ..." is slightly awkward; write "vanhan jääkaapin hukkalämpö lämmittää asuntoa talvella, joten osa säästöstä menetetään lämmityksessä".
+- exercises.json:96 — task is nearly the same skill as L1-07 (kW and minutes to kWh); keep, but note the set now has three such items.
+- exercises.json:96 — the stem asks for the "suuruusluokka" while the options are exact 2-digit values; say "Mikä on uunin käyttämä sähköenergia?" or turn the options into powers of ten.
+- solutions.md:222 — the sentence listing the four wrong routes is long; one line per wrong option is easier on a phone.
+
 ## Checked
-- Round 1 Polish resolved: decimal comma in L2-07, "Taulukon lukeminen" label, L2-06 a) now asks daily energies (7,7; 7,2; 8,2; 7,5; 9,1; 9,2; 7,4 kWh, sum 56,3 kWh matches the table).
-- Recomputed L1-07 1,215 €, L1-08 25 h, L2-05 733,65 kWh, L2-06 335 W / 9,0 €, L2-07 299 kWh (answer 299,3 tol 5 %, solution says 300), L3-04 0,93 €, L3-05 12,96 a / 77 €: consistent.
-- Levels, plan coverage and complete solutions; multi-part Vastaus now in separate paragraphs.
-- Delta (answer-step first line now starts with the boxed value): checked each added value against the solution result and exercises.json answer/tolerance, same unit, decimal comma; the line reads well and agrees. Values: L2-05 730 kWh (733,65 tol 2 %), L2-06 335 W, L2-07 300 kWh (299,3 tol 5 %), L3-04 0,93 €, L3-05 13 a (12,96 tol 2 %).
+- Magnitude spacing: 0,0010 / 0,060 / 3,6 / 60 / 3600 kWh, ascending, each the product of a named unit slip; the lesson's third warned mistake (2000 W * 15 min) is covered by 60 and 3600.
+- Correct option has no form tell: not longest, not hedged; every option starts "noin".
+- Numbers: 3,0 min = 0,050 h, E = 0,060 kWh = 60 Wh - correct; wrong values recomputed (1,2*3 = 3,6; 1200*0,05 = 60; 1200*3 = 3600; 1,2*3 : 3600 = 0,0010).
+- Within the lesson (E = Pt, kWh); longest formula 182 px.
+- Finnish: "käyttämän sähköenergian" fine.
+- Text only (no renders: packet screenshots were empty; I measured widths of the model-solution formulas with KaTeX in Chromium at 17 px, 390 px viewport).

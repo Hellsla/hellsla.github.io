@@ -1,19 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 6a5961577f7f1398
+CONTENT-HASH: 457a3381949c58f3
+Round: 2
 
-Round 2.
+Delta: solution only: the 140 mA value made consistent, `I = U : R`, closing paragraph split in two.
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions L3-04, Järkevyys — "…kasvavat tekijällä $1{,}28^2 = 1{,}64$, joten $30{,}4\,\text{K} \cdot 1{,}64 = 50\,\text{K}$." — edellinen "joten" ($20{,}5 : 16 = 1{,}28$, joten …) tekee virkkeestä raskaan; kirjoita "…kasvavat tekijällä $1{,}28^2 = 1{,}64$. Tästä $30{,}4\,\text{K} \cdot 1{,}64 = 50\,\text{K}$."
-- [Minor] solutions L2-05, Vastaus — "Opiskelijan virhe on, että sulake suojaisi ihmistä" on kömpelö — "Opiskelijan virhe on olettaa, että sulake suojaa ihmistä".
+- [Minor] 15-9 solution "Jännitteen mukaan järjestys olisi eri, A, B ja C, D" reads as a broken list; B and C have equal voltage, so say "A, sitten B ja C yhtä suuret, D".
+- [Minor] 15-9 the paragraph on situation B (shoes, wet floor, tap) is long and moves from the order task to a general safety remark; split it into its own short paragraph.
 
 ## Checked
-- Kierroksen 1 Polish: L3-04:n kaksoispistevirhe poistettu, L2-05:n "satakertainen" korjattu (yli kuusikymmenkertainen), L3-04:n suhde 0,33 selitetty, L3-05 b): viikko 3 lisätty (1,9 mA > 0,5 mA) oikein.
-- Muutetut vaihtoehdot (L1 maadoitus, suojausluokka) ja järjestyksen vaihdot luettu; viikkojen virrat 0,26 / 1,9 / 5,5 / 17,0 / 41,8 mA ja $R_\text{e} = 6{,}167\,\text{k}\Omega$ lasketut ja täsmäävät.
-- Avatut kaappaukset 1280 px: open-exercises-L3-1280-5 (15-19 teksti, taulukko, vastauslaatikko, Annettu/Periaate) ja -8 (15-20 ratkaisu, Muunnokset, Sijoitus). Ei ylivuotoa, taulukot ja aligned-rivit ehjinä.
+- Renders (own script, 390 px, all four ranks committed, feedback, answer and solution open): page width = viewport, nothing beyond the card; chain `I_C = 230 V : 1,6 kΩ ≈ 140 mA` now matches the answer chip (140 mA); widest formula 264 px; the principle line shows `I = U : R` on one line.
+- Rendered: the comparison direction ("pienimmästä suurimpaan") is stated in the task and prompt.
+- Text only: the 10, 30, 50 mA thresholds and the shoe remark.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 4

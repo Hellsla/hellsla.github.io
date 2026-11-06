@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 252b61fc982113e9
+CONTENT-HASH: 67126466d560ebe7
 
 ## Blocking
 (none)
@@ -8,7 +8,7 @@ CONTENT-HASH: 252b61fc982113e9
 (none)
 
 ## Checked
-- Delta (inquiry.json, koe-3 model solution, Principle): "in every measurement" -> "in every row of the table" (every row of the table); the rows are model values, so the new wording is the correct one.
-- Physics unchanged: F = qE, E = F : q, 150 uN : 3.0 nC = 50 uN : 1.0 nC = 5.0e4 N/C; the quotient is the same on every row because the ball stays at one place.
-- No number, symbol, option or feedback changed; my earlier PASS stands for the rest.
-- Matches the Finnish reference.
+- delta (figures.json only, 384fe88c6..HEAD): lesson.md unchanged; the new fy6-11/pick-* descriptions and, in en, the label mapping "s": "e" belong to exercise force-diagram options; the lesson itself has no figure label "s" and no F_s or F_e (it uses only \overline{F} = q\overline{E}), so the mapping cannot reach it and no en text/figure mismatch exists.
+- Read the captured theory pages: the lesson's seven figures (hero, test, lines, plates, work, profile, electron) render with the same labels and numbers as before; no figure text changed.
+- No number, symbol, option or feedback in the lesson changed; my earlier PASS stands.
+- Hash same at start and end.

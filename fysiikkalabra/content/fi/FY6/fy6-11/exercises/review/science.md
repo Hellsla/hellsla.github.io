@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 171aa8bf96452262
-Round 3: delta review of commit d6007a53c (solutions.md fy6-11-L2-07 Annettu).
+CONTENT-HASH: 5e217585a15dde17
+Round: 2. Round 1 had one Blocking item (the 0,10 g bead with −20 nC would exceed the breakdown strength of air). It is fixed in 57a66480d: the task is now a dust grain in a vacuum chamber.
 
 ## Blocking
 
 ## Polish
-- docs/exercise-bank/FY6.md fy6-11 Taso 2 — the plan's graph task (droplet deflection, figure) became the error-analysis task L2-06, and no new task has a graph. Update the plan line (carried over).
+- lessons/FY6/fy6-11/figures.py:404 (PK_DESC, carried over) — the descriptions do not say that the arrows start from the body; add "lähtevät kappaleesta" for a reader who cannot see the figure.
+- exercises.json:253 (carried over) — still no distractor for the lesson's Yleinen virhekäsitys (force growing near a plate). The solution's Periaate now says "kaikkialla levyjen välissä", which is enough; an option for it stays optional.
 
 ## Checked
-- Hash 171aa8bf96452262 at start and end. Diff d6007a53c^..d6007a53c in content/fi/FY6/fy6-11/exercises read in full: the only exercise change is solutions.md:163, force at x = 8,0 cm 52,1 → 58,0 µN.
-- solutions.md:163 Annettu now lists 60,2; 59,8; 59,5; 59,0; 58,0; 33,0 µN, identical to exercises.json L2-07 table rows and to answers.py `fx`; no "52,1" left in the exercise set.
-- Recomputed L2-07 from the task data: E = 3,01 / 2,99 / 2,98 / 2,95 / 2,90 / 1,65 · 10⁴ V/m; deviations 0,7 / 1,2 / 2,0 / 3,7 / 45,2 %; homogeneous x = 0–6,0 cm; mean 29 812,5 V/m = 2,98 · 10⁴ V/m, 0,6 % below U : d = 3,0 · 10⁴ V/m. Sijoitus, Vastaus, Järkevyys ("0,6 %" is right: 0,625 %) and answer field agree.
-- Visual round-2 Blocking (Annettu contradicting task table and Sijoitus) resolved.
-- answers.py run: all 18 answers unchanged and equal to exercises.json.
-- Physics, scope, levels and notation unchanged from round 2 (PASS); nothing else touched.
+- Hash 5e217585a15dde17 at start and end; the packet was regenerated and read again.
+- The new data are realistic: m = 1,0·10⁻¹² kg is a grain of radius about 5 µm, and q = −2,0·10⁻¹⁶ C is about 1250 e. Its surface field is about 7·10⁴ V/m, far below breakdown, and the vacuum removes air resistance as the brief's "tyhjiössä" does.
+- Recomputed: F_s = |q|E = 2,0·10⁻¹¹ N down, G = 9,8·10⁻¹² N down, ratio 2,04. This matches the figures (PK_FS : PK_G, same pixel lengths), the four descriptions, the feedback and the answers.py comment.
+- All "helmi" wording is replaced consistently in the stem, the feedback, the solution and the descriptions.
+- Option A (force along the field) and option D (weight left out as for an electron) still catch mistakes the lesson warns about.
+- The key is not identifiable by form ("Voimakuvio A–D").
+- Formulas measured with KaTeX in Chrome at 390 px (formula widths only; figures not rendered): widest inline 268 px, under 300 px. G = mg is now on its own row.

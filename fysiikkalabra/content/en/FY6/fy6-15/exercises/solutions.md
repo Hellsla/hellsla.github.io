@@ -68,6 +68,25 @@
 **Answer:** $6.0\,\text{kV}$, two significant figures like the dielectric strength $3.0\,\text{MV/m}$.
 **Reasonableness:** One megavolt per metre is one kilovolt per millimetre, so air withstands about $3\,\text{kV}$ per millimetre and a gap of two millimetres $2 \cdot 3\,\text{kV} = 6\,\text{kV}$. The $230\,\text{V}$ of a socket is far below this, but the voltages of lightning or a high-voltage line are thousands of times larger.
 
+## fy6-15-L1-09
+**Find:** the order of situations A–D by the current $I$ through the body, from the smallest to the greatest.
+**Principle:** The harm is done by the current through the body, and by Ohm's law it depends on both the contact voltage and the resistance of the current path, $I = U : R$. So the greatest voltage does not necessarily give the greatest current, nor the greatest resistance the smallest. We calculate the current of each situation.
+**Model answer:** The currents are:
+
+$I_\text{A} = 24\,\text{V} : 20\,\text{k}\Omega = 1.2\,\text{mA}$
+
+$I_\text{B} = 230\,\text{V} : 46\,\text{k}\Omega = 5.0\,\text{mA}$
+
+$I_\text{C} = 230\,\text{V} : 1.6\,\text{k}\Omega \approx 140\,\text{mA}$
+
+$I_\text{D} = 1000\,\text{V} : 25\,\text{k}\Omega = 40\,\text{mA}$
+
+The current $I_\text{C}$ is given with two significant figures like the resistance $1.6\,\text{k}\Omega$. By the current, from the smallest to the greatest, the order is A, B, D, C.
+
+By the voltage the order would be different, A, B and C, D: the voltage of situation D, $1000\,\text{V}$, is the greatest, but the small resistance of a wet hand makes the current of situation C the greatest. The resistance alone does not decide either: the resistance of situation A is smaller than those of situations B and D, but its voltage is so small that the current remains the smallest.
+
+The current of situation A only exceeds the threshold of perception. With these values the current of situation B stays below the let-go threshold $10\,\text{mA}$, but shoes cannot be considered protection against electric shock: a wet floor, a damaged shoe or touching a tap at the same time bypasses them, and no current can be considered certainly safe. The current of situation D exceeds the limit $30\,\text{mA}$ at which breathing becomes difficult, and the current of situation C exceeds the limit $50\,\text{mA}$ at which there is a danger of ventricular fibrillation.
+
 ## fy6-15-L2-01
 **Given:** rated current $I_\text{f} = 16\,\text{A}$, voltage $U = 230\,\text{V}$, powers that are on $P_1 = 2000\,\text{W}$ and $P_2 = 1200\,\text{W}$
 **Find:** the power $P_\text{extra}$ that can still be connected to the circuit

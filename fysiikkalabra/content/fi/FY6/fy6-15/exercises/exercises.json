@@ -109,6 +109,33 @@
       "answer": 6.0,
       "unit": "kV",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-15-L1-09",
+      "level": 1,
+      "text": "Neljässä tilanteessa ihmisen keho on osa virtapiiriä. Kosketusjännitteet $U$ ja virtatien resistanssit $R$ ovat esimerkkiarvoja.\n\nTilanne A: kuiva käsi koskettaa suojajännitteistä osaa, $U = 24\\,\\text{V}$ ja $R = 20\\,\\text{k}\\Omega$.\n\nTilanne B: kuiva käsi koskettaa jännitteistä runkoa, kengät jalassa, $U = 230\\,\\text{V}$ ja $R = 46\\,\\text{k}\\Omega$.\n\nTilanne C: märkä käsi koskettaa jännitteistä runkoa, $U = 230\\,\\text{V}$ ja $R = 1{,}6\\,\\text{k}\\Omega$.\n\nTilanne D: ihminen seisoo pudonneen johtimen lähellä, askeljännite $U = 1000\\,\\text{V}$ ja $R = 25\\,\\text{k}\\Omega$.\n\nMissä järjestyksessä tilanteet ovat kehon läpi kulkevan virran mukaan pienimmästä suurimpaan?",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "prompt": "Järjestä kehon läpi kulkevan virran mukaan pienimmästä suurimpaan.",
+      "order": [
+        {
+          "text": "Tilanne A"
+        },
+        {
+          "text": "Tilanne B"
+        },
+        {
+          "text": "Tilanne D"
+        },
+        {
+          "text": "Tilanne C"
+        }
+      ],
+      "answer": "Tilanne A ($1{,}2\\,\\text{mA}$), tilanne B ($5{,}0\\,\\text{mA}$), tilanne D ($40\\,\\text{mA}$), tilanne C ($140\\,\\text{mA}$).",
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level2": [

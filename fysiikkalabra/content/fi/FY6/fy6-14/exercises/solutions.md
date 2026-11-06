@@ -169,6 +169,19 @@
 **Vastaus:** $390\,\Omega$, kaksi merkitsevää numeroa kuten jännitteissä ja virrassa.
 **Järkevyys:** Tarkistus: $387\,\Omega \cdot 0{,}015\,\text{A} = 5{,}8\,\text{V}$, ja $5{,}8\,\text{V} + 3{,}2\,\text{V} = 9{,}0\,\text{V}$. Opiskelijan $600\,\Omega$ antaisi virraksi vain $5{,}8\,\text{V} : 600\,\Omega = 9{,}7\,\text{mA}$, joten LED olisi himmeämpi kuin haluttiin.
 
+## fy6-14-L2-08
+**Kysytty:** mitkä kolmesta valosta palavat ja miksi.
+**Periaate:** Diodi ja LED johtavat vain päästösuunnassa, kun anodi on pariston plusnavan puolella. Estosuunnassa virtaa ei kulje. Rinnan kytketyt haarat ovat kukin pariston koko jännitteessä, joten jokainen haara on oma virtapiirinsä: yhden haaran estosuuntainen diodi katkaisee vain sen haaran virran. Sarjassa olevien komponenttien läpi kulkee sama virta.
+**Mallivastaus:** Vain LED A palaa.
+
+Haara 1: LEDin anodi on plusnavan puolella, joten LED on päästösuunnassa. Haaran jännite $4{,}5\,\text{V}$ on suurempi kuin LEDin jännite $2{,}0\,\text{V}$, ja etuvastuksen yli jää $4{,}5\,\text{V} - 2{,}0\,\text{V} = 2{,}5\,\text{V}$. Virta kulkee, ja LED A palaa.
+
+Haara 2: LEDin katodi on plusnavan puolella, joten LED B on estosuunnassa. Virtaa ei kulje, ja koko $4{,}5\,\text{V}$ on LEDin yli.
+
+Haara 3: piidiodin katodi on plusnavan puolella, joten diodi on estosuunnassa. Lampun lanka johtaisi kumpaankin suuntaan, mutta sarjassa lampun ja diodin läpi kulkee sama virta, ja diodi pysäyttää sen. Lamppu C ei pala.
+
+Perustelu on siis, että diodi johtaa vain anodi plusnavan puolella ja jokainen rinnakkainen haara toimii omana virtapiirinään. Etuvastuksen tarve on tosi asia, mutta se ei kerro virran suunnasta. Jos haarat olisivat sarjassa, yksikin estosuuntainen diodi katkaisisi koko piirin virran, eikä mikään valo palaisi.
+
 ## fy6-14-L3-04
 **Annettu:** pinta-ala $A = 24\,\text{m}^2$, hyötysuhde $\eta = 19\,\%$, kuukausittaiset säteilyenergiat $H$ ja kulutukset $E_\text{kul}$ taulukossa
 **Kysytty:** a) vuosituotanto $E$, b) omavaraisuusaste prosentteina, c) kuukaudet, joissa tuotanto on kulutusta pienempi, ja omavaraisuusasteen rajoitus
