@@ -826,7 +826,7 @@ def render(folder, inquiry, parts, md):
                 head = ""
         elif t == "sim":
             lead, info = sim_parts(a, md)
-            content = lead + parts["sim"].replace("<!--sim-info-->", info)
+            content = parts["sim"].replace("<!--sim-info-->", info + (f'<div class="sim-lead">{lead}</div>' if lead else ""))   # the lead under the boxes, at the card's foot (teacher 2026-11-06)
         elif t == "exit":
             content = parts["exit"].replace("</h3>", "</h3>" + md(T("inquiry.exit_lead")), 1)
             if aid in shown: content = content.replace(f"<h3>{exit_title()}</h3>", f"<h3>{shown[aid]}</h3>", 1)   # "1. Pohdintatehtävä"
@@ -868,7 +868,7 @@ def render(folder, inquiry, parts, md):
             if rest:                                   # the rest of the investigation behind one closed box (teacher 2026-11-06)
                 k = len(rest)
                 more = (f'<details class="fold more" data-fold="tutki-more"><summary><span class="fold-title">{T("inquiry.more_title")}</span> '
-                        f'<span class="more-count">{T("inquiry.more_count_one" if k == 1 else "inquiry.more_count_many", n=k)}</span></summary>'
+                        f'<span class="more-count" data-one="{esc(T("inquiry.more_count_one"))}" data-many="{esc(T("inquiry.more_count_many"))}">{T("inquiry.more_count_one" if k == 1 else "inquiry.more_count_many", n=k)}</span></summary>'
                         f'<div class="fold-body">{flow(rest)}</div></details>')
         if si is not None and (si < len(items) - 1 or more):   # the sim beside the activities that use it
             inner = (flow(items[:si]) + f'<div class="lab"><div class="lab-side">{act(items[si])}</div>'

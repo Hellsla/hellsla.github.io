@@ -386,6 +386,12 @@ p.sol-answer{display:inline-block;margin:.1rem 0 .5rem;padding:.35rem .9rem;back
 #sim-root label.locked{opacity:.6}#sim-root label.locked::after{content:" (vakio)";font-size:.85em}html[lang=en] #sim-root label.locked::after{content:" (fixed)"}   /* a locked control in an experiment, in the page's language (visual audit 2026-10-31) */
 .sim-info{margin:.6rem 0 0;border-top:1px solid var(--line-2)}
 details.sim-box,#sim-root details.note{margin:0;border-bottom:1px solid var(--line-2)}
+/* Käyttöohje, Mallin oletukset and Laskennan selitys side by side on one row; an opened one drops below them at full width
+   (teacher 2026-11-06); the sim's own lead text under them at the foot of the card */
+.sim-info{display:flex;flex-wrap:wrap;column-gap:1.4rem}
+.sim-info>details.sim-box{flex:0 0 auto;border-bottom:0}
+.sim-info>details.sim-box[open]{flex:1 0 100%;order:1;border-top:1px solid var(--line-2)}
+.sim-lead{margin:.5rem 0 0;font-size:var(--fs-ui);color:var(--ink-2)}.sim-lead>p{margin:.3rem 0}
 details.sim-box>div{font-size:var(--fs-ui);padding:0 0 .6rem 1.2rem}details.sim-box>div>:first-child{margin-top:.2rem}
 
 footer.bottom{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:var(--fs-small);color:var(--ink-2);display:flex;flex-wrap:wrap;align-items:center;gap:.2rem 1.2rem}

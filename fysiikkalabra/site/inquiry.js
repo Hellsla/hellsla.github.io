@@ -24,6 +24,9 @@
       ruukkilabra:itsearvio:<chapter> as { v: 1, items: { id: { level, history: [[level, ISO time], ...] } } } (the same
       chapter in every language), and palautus.js puts it into the submission file. A change of mind is a new history
       entry, so the teacher sees how the assessment moved; choosing the same level again adds nothing.
+   9. Tutki (teacher 2026-11-06): one task in view, the rest in a closed box (details[data-fold=tutki-more]). Where the
+      simulation sits beside the tasks and is taller than them, the box's first task comes out too, so two are in view
+      and the simulation does not tower over a short column. Never more than two.
    Its messages come from the page's #fl-strings block (lang/<lang>.json "js", written in by build.py). */
 (() => {
   const L10N = (() => { try { return JSON.parse(document.getElementById('fl-strings').textContent); } catch (e) { return {}; } })();
@@ -483,6 +486,29 @@
     if (saved && saved.revise) { const x = rev.find((i) => i.value === saved.revise); if (x) x.checked = true; }
     rev.forEach((i) => i.addEventListener('change', () => { const s = store.get(id) || {}; s.revise = i.value; store.set(id, s); }));
   });
+
+  // 9. Tutki: a second task in view beside a tall simulation
+  const more = document.querySelector('#tutki details[data-fold="tutki-more"]');
+  const lab = more && more.closest('.lab'), side = lab && lab.querySelector('.lab-side'), main = lab && lab.querySelector('.lab-main');
+  let promoted = false;
+  const promote = () => {
+    if (promoted || !side || !more.isConnected || getComputedStyle(lab).getPropertyValue('--wide').trim() !== '1') return;
+    if (side.getBoundingClientRect().height <= main.getBoundingClientRect().height + 8) return;
+    const body = more.querySelector(':scope > .fold-body'), first = body && body.firstElementChild;
+    if (!first) return;
+    promoted = true;
+    more.before(first);
+    if (window.flMath) window.flMath(first);   // its formulas were waiting for the box to open (lesson.html)
+    if (window.flFitMath) window.flFitMath();
+    const left = body.children.length, c = more.querySelector('.more-count');
+    if (!left) more.remove();
+    else if (c) c.textContent = (left === 1 ? c.dataset.one : c.dataset.many).replace('{{n}}', left);
+  };
+  if (more) {
+    if (document.readyState === 'complete') setTimeout(promote, 300); else window.addEventListener('load', () => setTimeout(promote, 300));
+    setTimeout(promote, 1500);   // the simulation's canvas and the formulas may still be settling
+    window.addEventListener('resize', promote);
+  }
 
   // 8. self-assessment: a level a-d or x per task and per goal, with its history
   const SA_MAX = 50;
