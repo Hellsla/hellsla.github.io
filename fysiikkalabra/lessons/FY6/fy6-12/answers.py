@@ -37,6 +37,7 @@ a["fy6-12-L2-05"] = E5 * 0.060                                # U = E d = 30,1 V
 # L2-07: m = 2 e U / v^2 per row, then the mean; v in 1e4 m/s
 U7, v7 = [100, 200, 300, 400, 500], [6.88e4, 9.95e4, 12.0e4, 13.9e4, 15.4e4]
 a["fy6-12-L2-07"] = sum(2 * e * u / v ** 2 for u, v in zip(U7, v7)) / len(U7)   # 6,66e-27 kg (helium ion)
+# L2-08 is a find-the-error choice (no number): row 3 uses V_B = 120 V for U; right U = 120 - 30 = 90 V, E_k = 90 eV = 1,442e-17 J
 # L3-04: v = sqrt(2 e U_k / m); t = L / v; a = e U_p / (m d); y = a t^2 / 2 (= U_p L^2 / (4 d U_k))
 v34 = math.sqrt(2 * e * 1800 / m_e)                           # 2,516e7 m/s
 t34 = 0.050 / v34                                             # 1,987e-9 s

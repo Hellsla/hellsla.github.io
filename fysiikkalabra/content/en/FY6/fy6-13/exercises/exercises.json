@@ -113,6 +113,45 @@
       "answer": 144,
       "unit": "mJ",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-13-L1-09",
+      "level": 1,
+      "text": "A capacitor with a capacitance of $100\\,\\mu\\text{F}$ is charged through a resistor with a $12\\,\\text{V}$ battery until the current stops flowing. Decide which statements are true and which are false.",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "1 true, 2 false, 3 false, 4 false, 5 true",
+      "unit": "",
+      "tolerance": 0.02,
+      "statements": [
+        {
+          "text": "The charges of the plates are $+1.2\\,\\text{mC}$ and $-1.2\\,\\text{mC}$, so the total charge of the capacitor is zero.",
+          "true": true,
+          "feedback": "Correct: $Q = CU$, that is, $Q = 100\\,\\mu\\text{F} \\cdot 12\\,\\text{V} = 1.2\\,\\text{mC}$. The battery only moves charge from one plate to the other, so the charges of the plates are equal and opposite."
+        },
+        {
+          "text": "After charging has ended, current passes through the insulator between the plates in the same way as in conductors.",
+          "true": false,
+          "feedback": "Wrong: this is the idea that current passes through a capacitor like through a conductor. The insulator does not conduct electricity, so charge does not pass through it, and current passes in the conductors only while the charge of the plates changes. At the end of charging the current is zero."
+        },
+        {
+          "text": "If the capacitor were charged to a voltage of $24\\,\\text{V}$, its capacitance would be twice as large.",
+          "true": false,
+          "feedback": "Wrong: this assumes that capacitance grows with voltage. Double the voltage brings double the charge, so the ratio $C = \\tfrac{Q}{U}$ stays at $100\\,\\mu\\text{F}$."
+        },
+        {
+          "text": "Energy of $14.4\\,\\text{mJ}$ has been stored in the capacitor.",
+          "true": false,
+          "feedback": "Wrong: $14.4\\,\\text{mJ}$ is the energy given by the battery, $QU$, that is, $1.2\\,\\text{mC} \\cdot 12\\,\\text{V}$. The charge moves on average across a voltage of $\\tfrac{U}{2}$, so the energy stored in the capacitor is $\\tfrac{1}{2} QU = 7.2\\,\\text{mJ}$."
+        },
+        {
+          "text": "If the capacitor were charged to a voltage of $24\\,\\text{V}$, its energy would be four times as large.",
+          "true": true,
+          "feedback": "Correct: the energy $W = \\tfrac{1}{2} C U^2$ depends on the square of the voltage. When $C$ stays the same and the voltage doubles, the energy grows $2^2 = 4$-fold, to $28.8\\,\\text{mJ}$."
+        }
+      ]
     }
   ],
   "level2": [

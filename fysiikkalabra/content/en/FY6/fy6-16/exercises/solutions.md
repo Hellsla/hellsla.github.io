@@ -186,6 +186,37 @@ b) The correct charging time is $5.3\,\text{h}$.
 b) The average power is $7.6\,\text{kW}$.
 **Reasonableness:** If the power had stayed at $11\,\text{kW}$ for the whole $3.0\,\text{h}$, the energy taken would have been $33\,\text{kWh}$. The result is smaller because the power falls towards the end of charging, and the average power $7.6\,\text{kW}$ is between the peak power $11\,\text{kW}$ and the final value $1.4\,\text{kW}$.
 
+## fy6-16-L2-08
+**Find:** the charging time $t$ when $24\,\text{kWh}$ is stored in the battery from a socket with a current of $8.0\,\text{A}$.
+**Principle:** The power of single-phase charging is $P = UI$. Because of losses, more energy is taken from the grid than is stored in the battery, so the energy going into the battery is divided by the efficiency and the charging time is $t = W_\text{battery} : (\eta P)$. The energy and the power are substituted in the same multiple unit, kilowatt-hours and kilowatts, which gives the time in hours, and the efficiency as a decimal number.
+**Model answer:** The charging power is
+
+$P = UI = 230\,\text{V} \cdot 8.0\,\text{A}$
+
+$P = 1840\,\text{W} = 1.84\,\text{kW}$
+
+and the efficiency is $\eta = 85\,\% = 0.85$. The charging time is
+
+$$\begin{aligned}
+t &= \frac{W_\text{battery}}{\eta P} \\
+&= \frac{24\,\text{kWh}}{0.85 \cdot 1.84\,\text{kW}} \\
+&\approx 15\,\text{h}
+\end{aligned}$$
+
+The correct option is about $15\,\text{h}$.
+
+The result is reasonable: about $1.8\,\text{kWh}$ is taken from the grid in an hour, and about $1.6\,\text{kWh}$ of it goes into the battery, so $24\,\text{kWh}$ takes about $15$ hours. Charging does not fit into one night, but it fits into a day and a night.
+
+The other options come from typical errors. Without the efficiency we get the time of charging without losses:
+
+$t = 24\,\text{kWh} : 1.84\,\text{kW} \approx 13\,\text{h}$
+
+When the energy is multiplied by the efficiency instead of divided by it, the time becomes even shorter:
+
+$t = 0.85 \cdot 24\,\text{kWh} : 1.84\,\text{kW}$
+
+that is, $t \approx 11\,\text{h}$. Losses make charging longer, so both are too short. The formula of a three-phase device, $P = 3UI$, gives a power three times too large, although the socket is single-phase, and the time falls to about $5.1\,\text{h}$.
+
 ## fy6-16-L3-04
 **Given:** monthly distances from the table, electric car $16.0\,\text{kWh}$ from the battery per hundred kilometres, $\eta = 90.0\,\%$, $a_\text{home} = 15\,\text{c/kWh}$, $a_\text{public} = 0.45\,\text{€/kWh}$, petrol car $6.50\,\textsf{l}$ per hundred kilometres, price of petrol $b = 1.85\,\text{€/}\textsf{l}$
 **Find:** b) the difference $\Delta K$ in euros between the yearly costs of the petrol car and of the electric car charged at home

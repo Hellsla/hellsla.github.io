@@ -110,6 +110,37 @@
       "answer": 5.2,
       "unit": "h",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-9-L1-09",
+      "level": 1,
+      "text": "Varavirtalähteeseen on merkitty kapasiteetti $Q$ ampeeritunteina ja nimellisjännite $U$ voltteina. Tyhjä varavirtalähde latautuu täyteen ajassa $t$, joka on ilmoitettu tunteina.\n\nMikä lausekkeista antaa varavirtalähteeseen varastoituneen energian? Päättele vastaus lausekkeiden yksiköistä.",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "$UQ$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "$Q$",
+          "feedback": "Lausekkeen yksikkö on ampeeritunti, joka on varauksen yksikkö, ei energian. Tässä kapasiteetti on luultu energiaksi. Akku ei varastoi varausta, ja energiaan tarvitaan myös jännite."
+        },
+        {
+          "text": "$UQ$",
+          "correct": true,
+          "feedback": "Oikein: $\\text{V}\\cdot\\text{Ah} = \\text{Wh}$, joka on energian yksikkö. Energia on jännite kertaa varaus, $W = UQ$, ja wattitunti on $3600\\,\\text{J}$."
+        },
+        {
+          "text": "$\\dfrac{UQ}{t}$",
+          "feedback": "Lausekkeen yksikkö on $\\tfrac{\\text{Wh}}{\\text{h}} = \\text{W}$ eli tehon yksikkö. Tässä energia on sekoitettu tehoon: lauseke kertoo, kuinka nopeasti energiaa keskimäärin varastoituu."
+        },
+        {
+          "text": "$UQt$",
+          "feedback": "Lausekkeen yksikkö on $\\text{Wh}\\cdot\\text{h}$, ei energian yksikkö. Tässä tulo $UQ$ on luultu tehoksi ja kerrottu ajalla, vaikka aika on jo kapasiteetissa: $1\\,\\text{Ah} = 1\\,\\text{A}\\cdot 1\\,\\text{h}$."
+        }
+      ]
     }
   ],
   "level2": [

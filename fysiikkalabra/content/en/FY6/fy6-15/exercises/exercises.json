@@ -109,6 +109,33 @@
       "answer": 6.0,
       "unit": "kV",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-15-L1-09",
+      "level": 1,
+      "text": "In four situations a person's body is part of an electric circuit. The contact voltages $U$ and the resistances $R$ of the current paths are example values.\n\nSituation A: a dry hand touches a part with protective low voltage, $U = 24\\,\\text{V}$ and $R = 20\\,\\text{k}\\Omega$.\n\nSituation B: a dry hand touches a live casing, shoes on, $U = 230\\,\\text{V}$ and $R = 46\\,\\text{k}\\Omega$.\n\nSituation C: a wet hand touches a live casing, $U = 230\\,\\text{V}$ and $R = 1.6\\,\\text{k}\\Omega$.\n\nSituation D: a person stands near a fallen conductor, step voltage $U = 1000\\,\\text{V}$ and $R = 25\\,\\text{k}\\Omega$.\n\nIn which order are the situations, from the smallest to the greatest current through the body?",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "prompt": "Put the situations in order of the current through the body, from the smallest to the greatest.",
+      "order": [
+        {
+          "text": "Situation A"
+        },
+        {
+          "text": "Situation B"
+        },
+        {
+          "text": "Situation D"
+        },
+        {
+          "text": "Situation C"
+        }
+      ],
+      "answer": "Situation A ($1.2\\,\\text{mA}$), situation B ($5.0\\,\\text{mA}$), situation D ($40\\,\\text{mA}$), situation C ($140\\,\\text{mA}$).",
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level2": [

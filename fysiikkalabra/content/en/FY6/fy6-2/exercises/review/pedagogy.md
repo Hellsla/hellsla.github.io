@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: ec4fe6e56deccaf7
-Mode: translation
-Round: 1
+CONTENT-HASH: d1e122ce80fd069c
 
 ## Blocking
 
 ## Fixed
-- exercises.json L2-06: "OL tells of an overrange" -> "OL indicates an overrange"; "the meter has broken" -> "the meter is broken".
-- exercises.json L3-04: "A hint:" -> "Hint:".
+- None.
 
 ## Polish
 
 ## Checked
-- Text is natural English; tasks ask the same parts a)-d) as fi and the answer-box sentence matches.
-- Distractor feedback explains why each wrong option is wrong, and exactly one option is correct, as in fi.
-- Hints in L3-04 and the formula given in L3-05 c) are kept as in fi.
+- New task fy6-2-L2-08 is a YO-skill form task at the same level and kind as in fi; situation first, question last, clear instruction.
+- Distractors and feedback are misconception-based and repair the error (same as fi); no answer disclosed in the task text.
+- Model answer is complete and follows step by step as in fi.
+- Natural English at upper-secondary reading level.

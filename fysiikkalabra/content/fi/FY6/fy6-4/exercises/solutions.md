@@ -193,3 +193,28 @@
 **Sijoitus:** Sarjaankytkentä: tavoitetta $470\,\Omega$ pienempi vastus on vain $100\,\Omega$ ja $390\,\Omega$, ja niiden summa on $490\,\Omega$ (poikkeama $4{,}3\,\%$). Mikä tahansa muu sarjaankytkentä on vähintään $100\,\Omega + 560\,\Omega = 660\,\Omega$ ja huonompi. Rinnankytkentä: tulos on pienempi kuin pienempi vastus, joten pienemmän vastuksen on oltava yli $470\,\Omega$, eli kyseeseen tulevat vastukset $560\,\Omega$, $1200\,\Omega$, $1500\,\Omega$, $2700\,\Omega$ ja $5600\,\Omega$. Parit, joissa on $560\,\Omega$, antavat $382\,\Omega$, $408\,\Omega$, $\dfrac{560 \cdot 2700}{3260}\,\Omega = 463{,}8\,\Omega$ ja $509\,\Omega$. Muissa pareissa on pienempi vastus vähintään $1200\,\Omega$, joten tulos on suurempi kuin $\dfrac{1200 \cdot 1500}{2700}\,\Omega = 667\,\Omega$. Paras on siis $560\,\Omega$ rinnan $2700\,\Omega$:n kanssa: $R = 463{,}8\,\Omega$, ja $p = \dfrac{470 - 463{,}8}{470} \cdot 100\,\% = 1{,}32\,\%$
 **Vastaus:** $1{,}3\,\%$, kaksi merkitsevää numeroa. Kytkentä on $560\,\Omega$ rinnan $2700\,\Omega$:n kanssa, kokonaisresistanssi $464\,\Omega$. Paras sarjaankytkentä ($100\,\Omega + 390\,\Omega$) poikkeaa $4{,}3\,\%$, joten rinnankytkentä on yli kolme kertaa tarkempi.
 **Järkevyys:** Tulos $463{,}8\,\Omega$ on pienempi kuin $560\,\Omega$, kuten rinnankytkennässä pitää, ja lähellä tavoitetta.
+
+## fy6-4-L2-08
+**Kysytty:** viiden vastuskytkennän järjestys kokonaisresistanssin $R$ mukaan pienimmästä suurimpaan.
+**Periaate:** Sarjaankytkennässä resistanssit lasketaan yhteen, $R = R_1 + R_2 + \dots$, joten kokonaisresistanssi on suurempi kuin yksikään vastuksista. Rinnankytkennässä $\tfrac{1}{R} = \tfrac{1}{R_1} + \tfrac{1}{R_2} + \dots$, ja lopuksi luku käännetään; kokonaisresistanssi on pienempi kuin pienin haaran resistanssi. Sekakytkennässä lasketaan ensin rinnakkainen osa ja sitten sarjaan kytketyt.
+**Mallivastaus:** Kytkentä A on sarjaankytkentä:
+
+$R_\text{A} = 220\,\Omega + 330\,\Omega = 550\,\Omega$
+
+Kytkentä B on rinnankytkentä:
+
+$R_\text{B} = \dfrac{220\,\Omega \cdot 330\,\Omega}{220\,\Omega + 330\,\Omega}$
+
+$R_\text{B} = 132\,\Omega$
+
+Kytkennässä C on kolme yhtä suurta haaraa:
+
+$\dfrac{1}{R_\text{C}} = \dfrac{3}{330\,\Omega}$, eli $R_\text{C} = 110\,\Omega$
+
+Kytkennässä D kaksi $330\,\Omega$:n vastusta rinnan on puolet yhdestä, $165\,\Omega$, ja sen kanssa sarjassa on $100\,\Omega$:
+
+$R_\text{D} = 100\,\Omega + 165\,\Omega = 265\,\Omega$
+
+Kytkennässä E on yksi vastus, $R_\text{E} = 150\,\Omega$.
+
+Kokonaisresistanssin mukaan pienimmästä suurimpaan järjestys on C ($110\,\Omega$), B ($132\,\Omega$), E ($150\,\Omega$), D ($265\,\Omega$) ja A ($550\,\Omega$). Kytkennässä C on eniten vastuksia mutta pienin resistanssi, koska jokainen rinnakkainen haara on uusi kulkureitti. Kytkennän B resistanssi on pienempi kuin yksittäisen $150\,\Omega$:n vastuksen, vaikka kumpikin sen vastuksista on suurempi kuin $150\,\Omega$. Jos rinnankytkennässä unohtaa kääntää luvun $\tfrac{1}{R}$, kytkennän B luku $0{,}0076\,\tfrac{1}{\Omega}$ ja kytkennän C luku $0{,}0091\,\tfrac{1}{\Omega}$ näyttävät pienimmiltä, ja B ja C vaihtavat paikkaa.

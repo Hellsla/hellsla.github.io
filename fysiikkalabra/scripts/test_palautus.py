@@ -447,8 +447,10 @@ with sync_playwright() as p:
     course = json.loads(gs[gs.index("{"):gs.rindex(";")])
     ch2 = [c for c in course["chapters"] if c["id"] == "fy3-2"][0]
 
-    def chapter_file(ch, text):
-        answers = [{"task": t["id"], "status": "answered" if i == 0 else "empty", "content": [{"type": "text", "text": text}] if i == 0 else []} for i, t in enumerate(ch["tasks"])]
+    def chapter_file(ch, text, text2=None):
+        given = {0: text} if text2 is None else {0: text, 1: text2}
+        answers = [{"task": t["id"], "status": "answered" if i in given else "empty", "content": [{"type": "text", "text": given[i]}] if i in given else []} for i, t in enumerate(ch["tasks"])]
+        text = text + "|" + (text2 or "")
         canon = json.dumps(answers, ensure_ascii=False, separators=(",", ":"))
         return json.dumps({"format": "ruukkilabra-palautus", "version": 1, "chapter": ch["id"], "lang": "fi", "submission_id": hashlib.md5(text.encode()).hexdigest(),
                            "exported": "2026-11-05T12:00:00.000Z", "includes": "solution-editor", "content_sha256": hashlib.sha256(canon.encode()).hexdigest(), "answers": answers})
@@ -551,6 +553,16 @@ with sync_playwright() as p:
     gc = lp.inner_text("#groupChart")
     expect("local page: chart of the group: done and points out of the maximum (teacher 2026-11-06)", lp.is_visible("#groupChart") and "Tehty" in gc and "Pisteet" in gc and f"({a_v2 + 1 + b_v1} / {2 * (m1 + m2)})" in gc
            and lp.locator("#summary tbody .meter").count() == 4 and lp.evaluate("document.querySelector('#summary tbody .meter.pts > span').style.width") not in ("", "0%"), gc)
+    # names hidden for showing the points to the class (teacher 2026-11-06)
+    lp.click("#hideNames")
+    hidden_txt = lp.inner_text("#home")
+    expect("local page: 'Piilota nimet' leaves no name on the home view (summary numbered, problems hidden, not alphabetical)", "Aino" not in hidden_txt and "Bertta" not in hidden_txt and "Cecilia" not in hidden_txt
+           and json.loads(rows())[0][0] == "Opiskelija 1" and json.loads(rows())[0][3].startswith("1 /") and lp.inner_text("#hideNames") == "Näytä nimet", hidden_txt[:300])
+    lp.locator("#tasks tr.task-row").first.click(); lp.wait_for_function("document.querySelector('#gAnswer .t')")
+    expect("local page: names hidden in the grading view too", lp.inner_text("#gEmail").startswith("Opiskelija ") and "Opiskelija" not in lp.inner_text("#gEmail")[11:], lp.inner_text("#gEmail"))
+    go_back(lp)
+    lp.click("#hideNames")
+    expect("local page: 'Näytä nimet' brings the names back", "Aino Opiskelija" in lp.inner_text("#summary") and lp.is_visible("#probSec"), lp.inner_text("#summary")[:200])
     lp.click("#more > summary")
     with lp.expect_download() as d: lp.click("#csv")
     csv = [r.split(";") for r in pathlib.Path(d.value.path()).read_text(encoding="utf-8-sig").splitlines()]
@@ -569,10 +581,23 @@ with sync_playwright() as p:
     first = lp.locator("#tasks tr.task-row").first.inner_text().split("\t")
     expect("local page: after reopening the group, points and imports are kept", lp.input_value("#group") == "FY3.1" and first[2] == "2" and first[3] == "2" and first[4] == "0", (lp.input_value("#group"), first))
     lp.locator("#tasks tr.task-row").first.click(); lp.wait_for_function("document.querySelector('#gAnswer .err, #gAnswer .t')")
-    expect("local page: without the zip it asks to choose it again", "zip" in lp.inner_text("#gAnswer"), lp.inner_text("#gAnswer"))
+    expect("local page: after reopening, the answers are still shown without a new import (IndexedDB, teacher 2026-11-06)", lp.locator("#gAnswer .t").count() >= 1 and lp.locator("#gAnswer .err").count() == 0 and lp.locator("#gAnswer img.shot").count() == 1, lp.inner_text("#gAnswer"))
     go_back(lp)
     load(zpath)
     expect("local page: reading the same zip again adds nothing", "Uusia palautuksia 0" in lmsg(), lmsg())
+    # a new version of a chapter: an unchanged task solution keeps its points, a new or changed one is to be graded (teacher 2026-11-06)
+    zre, zre2 = tmp / "uusi-versio.zip", tmp / "muutettu.zip"
+    make_zip(zre, FA, [("fy3-2.ratkaisut (1) - Aino Opiskelija.json", chapter_file(ch2, "Ainon työ ja energia", "Ainon uusi ratkaisu"), (2026, 11, 6, 12, 0, 0))])
+    make_zip(zre2, FA, [("fy3-2.ratkaisut (2) - Aino Opiskelija.json", chapter_file(ch2, "Ainon korjattu työ", "Ainon uusi ratkaisu"), (2026, 11, 6, 13, 0, 0))])
+    load(zre)
+    t1 = lambda: lp.locator('details.chapter[data-chapter="fy3-2"] tr.task-row').nth(0).inner_text().split("\t")
+    t2 = lambda: lp.locator('details.chapter[data-chapter="fy3-2"] tr.task-row').nth(1).inner_text().split("\t")
+    expect("local page: new version, unchanged task 1 keeps its points, new task 2 is unscored", "Uusia palautuksia 1" in lmsg() and t1()[3:] == ["1", "0"] and t2()[2:] == ["1", "0", "1"], (lmsg(), t1(), t2()))
+    lp.locator('details.chapter[data-chapter="fy3-2"] tr.task-row').first.click(); lp.wait_for_function("document.querySelector('#gAnswer .t')")
+    expect("local page: the grading view tells where the points came from", lp.input_value("#points") == "0,5" and "versiosta 1" in lp.inner_text("#state") and "versio 2/2" in lp.inner_text("#gTime"), (lp.input_value("#points"), lp.inner_text("#state")))
+    go_back(lp)
+    load(zre2)
+    expect("local page: a changed solution is to be graded again, the unchanged task 2 is not counted twice", t1()[3:] == ["0", "1"] and t2()[2:] == ["1", "0", "1"], (t1(), t2()))
     # a second group: its own form, students and points, made from the zip alone
     load(zpath2)
     expect("local page: the second group from its zip; a group menu appears", "ryhmä FY3.2" in lp.inner_text("#title") and lp.is_visible("#groupWrap"), lp.inner_text("#title"))
@@ -591,6 +616,11 @@ with sync_playwright() as p:
       localStorage.setItem('ruukkilabra:arviointi:FY3:ryhma:FY03.9', JSON.stringify({format: 'ruukkilabra-arviointi', version: 1, course: 'FY3', group: 'FY03.9', forms: [], sheets: []})); }""")
     lp.reload(); lp.wait_for_selector("#import")
     expect("local page: an older group is moved to the new storage", "FY03.9" in lp.evaluate("[...document.querySelectorAll('#group option')].map((o) => o.value)"), lp.evaluate("[...document.querySelectorAll('#group option')].map((o) => o.value)"))
+    lp.select_option("#group", "FY3.2"); lp.wait_for_function("document.getElementById('title').textContent.indexOf('ryhmä FY3.2') >= 0")
+    lp.click("#more > summary"); lp.click("#clear"); lp.wait_for_function("document.getElementById('localMsg').textContent.indexOf('poistettu') >= 0")
+    kept = lp.evaluate("""() => new Promise((ok) => { const r = indexedDB.open('ruukkilabra-arviointi'); r.onsuccess = () => {
+      const q = r.result.transaction('palautukset').objectStore('palautukset').getAllKeys(); q.onsuccess = () => ok(q.result); }; })""")
+    expect("local page: 'Poista ryhmä' removes the group's files from the browser too", "FY3.2" not in kept and "FY3.1" in kept, kept)
     expect("local page: nothing loaded from the network", not net, net)
     expect("local page: no script errors", not lerr, lerr)
     lctx.close()

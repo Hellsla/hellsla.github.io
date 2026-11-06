@@ -3061,9 +3061,10 @@ var RL_SA_LEVELS = ['a', 'b', 'c', 'd', 'x'];   // väriasteikko vihreästä pun
 var RL_STATUS = { OK: 'Hyväksytty', DUP: 'Kaksoiskappale', CHECK: 'Tarkistettava', BAD: 'Virheellinen', READ: 'Lukuvirhe' };
 var RL_DECISION = { ACCEPT: 'Hyväksy', REJECT: 'Hylkää' };
 var RL_SUB_HEAD = ['Avain', 'Palautusaika', 'Sähköposti', 'Palautustunniste', 'Tila', 'Syy', 'Opettajan päätös',
-  'Vastattuja', 'Vastatut tehtävät', 'Tyhjiä', 'Tiedosto', 'Koko (t)', 'Sisällön SHA-256', 'Tuotu', 'Lomakkeen rivi', 'Luku', 'Itsearvio'];
+  'Vastattuja', 'Vastatut tehtävät', 'Tyhjiä', 'Tiedosto', 'Koko (t)', 'Sisällön SHA-256', 'Tuotu', 'Lomakkeen rivi', 'Luku',
+  'Tehtävien tiivisteet', 'Itsearvio'];
 var RL_SCORE_HEAD = ['Avain', 'Sähköposti', 'Palautustunniste', 'Tehtävä', 'Tehtävän numero', 'Pisteet', 'Tallennettu', 'Luku'];
-var RL_C = { key: 0, time: 1, email: 2, sub: 3, status: 4, reason: 5, decision: 6, nAnswered: 7, answered: 8, nEmpty: 9, file: 10, size: 11, sha: 12, imported: 13, row: 14, chapter: 15, self: 16 };
+var RL_C = { key: 0, time: 1, email: 2, sub: 3, status: 4, reason: 5, decision: 6, nAnswered: 7, answered: 8, nEmpty: 9, file: 10, size: 11, sha: 12, imported: 13, row: 14, chapter: 15, hashes: 16, self: 17 };
 var RL_S = { key: 0, email: 1, sub: 2, task: 3, number: 4, points: 5, saved: 6, chapter: 7 };
 
 /* ---------- valikko ---------- */
@@ -3155,9 +3156,8 @@ function rlSheet_(name, head) {
       sh.getRange(2, RL_S.saved + 1, sh.getMaxRows() - 1, 1).setNumberFormat('d.m.yyyy h.mm.ss');
     }
     sh.protect().setDescription('RuukkiLabra kirjoittaa tähän. Muuta vain saraketta Opettajan päätös.').setWarningOnly(true);
-  } else if (sh.getLastColumn() < head.length) {   // ennen 6.11.2026 tehty välilehti: uudet sarakkeet (Itsearvio) loppuun
-    var have = sh.getLastColumn();
-    sh.getRange(1, have + 1, 1, head.length - have).setValues([head.slice(have)]).setFontWeight('bold');
+  } else if (sh.getLastColumn() < head.length) {
+    sh.getRange(1, 1, 1, head.length).setValues([head]).setFontWeight('bold');   // uusi sarake (Tehtävien tiivisteet 6.11.2026)
   }
   return sh;
 }
@@ -3246,7 +3246,7 @@ function rlValidate_(text, deep) {
   if (typeof data.submission_id !== 'string' || !/^[0-9a-f]{32}$/.test(data.submission_id)) throw rlError_('palautustunniste puuttuu tai on virheellinen');
   if (typeof data.content_sha256 !== 'string' || !/^[0-9a-f]{64}$/.test(data.content_sha256)) throw rlError_('tarkistussumma puuttuu');
   if (!Array.isArray(data.answers)) throw rlError_('vastaukset puuttuvat');
-  var tasks = rlTasks_(data.chapter), seen = Object.create(null), answered = [], empty = [], images = 0, canon = [];
+  var tasks = rlTasks_(data.chapter), seen = Object.create(null), answered = [], empty = [], images = 0, canon = [], hashes = [];
   for (var i = 0; i < data.answers.length; i++) {
     var a = data.answers[i];
     if (!a || typeof a !== 'object' || typeof a.task !== 'string') throw rlError_('vastaus ' + (i + 1) + ' on virheellinen');
@@ -3267,6 +3267,7 @@ function rlValidate_(text, deep) {
     }
     if (chars > RL_LIMITS.text) throw rlError_(where + ': teksti on liian pitkä');
     canon.push({ task: a.task, status: a.status, content: items });
+    if (a.status === 'answered') hashes.push(a.task + '=' + rlSha_(JSON.stringify(canon[canon.length - 1])).slice(0, 16));
     (a.status === 'answered' ? answered : empty).push(a.task);
   }
   for (var id in tasks) if (!seen[id]) throw rlError_('tehtävä ' + tasks[id].number + ' puuttuu tiedostosta');
@@ -3274,7 +3275,7 @@ function rlValidate_(text, deep) {
   var self = data.version === 2 ? rlCheckSelf_(data.selfassessment, data.chapter) : null;
   var sha = rlSha_(self ? JSON.stringify({ answers: canon, selfassessment: self }) : JSON.stringify(canon));
   if (sha !== data.content_sha256) throw rlError_('tarkistussumma ei täsmää: tiedostoa on muutettu tai se on vioittunut');
-  return { data: data, chapter: data.chapter, answered: answered, empty: empty, sha: sha, self: self || [] };
+  return { data: data, chapter: data.chapter, answered: answered, empty: empty, sha: sha, hashes: hashes.join(','), self: self || [] };
 }
 // Itsearvio (versio 2): kohteet sivun järjestyksessä, taso ja sen historia. Tuntematon kohde, taso tai aika hylkää tiedoston.
 function rlCheckSelf_(sa, chapterId) {
@@ -3361,7 +3362,7 @@ function rlInFolder_(file) {
 }
 // Lukee ja tarkistaa yhden palautuksen. Palauttaa { status, reason, ... }; ei kirjoita mitään.
 function rlProcess_(resp) {
-  var out = { status: RL_STATUS.BAD, reason: '', sub: '', answered: [], empty: [], size: '', sha: '', chapter: '', self: '' };
+  var out = { status: RL_STATUS.BAD, reason: '', sub: '', answered: [], empty: [], size: '', sha: '', chapter: '', hashes: '', self: '' };
   if (!resp.time) { out.reason = 'palautusaika puuttuu'; return out; }
   if (RL_CONFIG.IDENTITY === 'name') { if (!resp.email) { out.reason = 'palauttajan nimi puuttuu tiedoston nimestä'; return out; } }
   else if (!resp.email || resp.email.indexOf('@') < 1) { out.reason = 'vahvistettu sähköpostiosoite puuttuu (ota sähköpostien kerääminen käyttöön lomakkeessa)'; return out; }
@@ -3379,7 +3380,7 @@ function rlProcess_(resp) {
   } catch (e) { out.status = RL_STATUS.READ; out.reason = 'tiedostoa ei voitu lukea'; return out; }
   try {
     var v = rlValidate_(text, true);
-    out.status = RL_STATUS.OK; out.sub = v.data.submission_id; out.answered = v.answered; out.empty = v.empty; out.sha = v.sha; out.chapter = v.chapter; out.self = rlSelfCell_(v.self);
+    out.status = RL_STATUS.OK; out.sub = v.data.submission_id; out.answered = v.answered; out.empty = v.empty; out.sha = v.sha; out.chapter = v.chapter; out.hashes = v.hashes; out.self = rlSelfCell_(v.self);
   } catch (e) { out.reason = rlUserMessage_(e); }
   return out;
 }
@@ -3420,7 +3421,7 @@ function rlImport_() {
         }
       }
       var row = [resp.key, resp.time || '', resp.email, p.sub, p.status, reason, '', p.answered.length, p.answered.join(','), p.empty.length,
-        resp.ids.length ? 'https://drive.google.com/open?id=' + resp.ids[0] : '', p.size, p.sha, new Date(), resp.row, p.chapter, p.self].map(rlCell_);
+        resp.ids.length ? 'https://drive.google.com/open?id=' + resp.ids[0] : '', p.size, p.sha, new Date(), resp.row, p.chapter, p.hashes, p.self].map(rlCell_);
       counts[p.status]++;
       if (at !== undefined) { row[RL_C.decision] = rows[at][RL_C.decision]; rows[at] = row; touched[at] = true; retried++; }
       else { byKey[resp.key] = rows.length; rows.push(row); added.push(rows.length - 1); }
@@ -3465,14 +3466,28 @@ function rlModel_() {
     var s = students[email] || (students[email] = { email: email, chapters: Object.create(null), first: time.getTime() });
     s.first = Math.min(s.first, time.getTime());
     (s.chapters[ch.id] || (s.chapters[ch.id] = [])).push({ fileId: rlText_(r[RL_C.file]).replace(/^.*[?&]id=/, ''), sub: rlText_(r[RL_C.sub]), timeMs: time.getTime(), time: rlFmt_(time),
-      answered: rlText_(r[RL_C.answered]).split(',').filter(String), sha: rlText_(r[RL_C.sha]), self: rlSelfParse_(r[RL_C.self]) });
+      answered: rlText_(r[RL_C.answered]).split(',').filter(String), sha: rlText_(r[RL_C.sha]), hashes: rlHashes_(rlText_(r[RL_C.hashes])), self: rlSelfParse_(r[RL_C.self]) });
   });
   var list = Object.keys(students).map(function (k) { return students[k]; });
   list.forEach(function (s) { for (var c in s.chapters) s.chapters[c].sort(function (a, b) { return a.timeMs - b.timeMs; }); });
   list.sort(function (a, b) { return a.first - b.first || (a.email < b.email ? -1 : 1); });   // ensimmäisen palautuksen järjestys
   return { students: list, scores: scores, problems: problems };
 }
-function rlScoreOf_(m, email, sub, task) { var v = m.scores[rlScoreKey_(email, sub, task)]; return v === undefined ? '' : v; }
+function rlHashes_(text) { var h = Object.create(null); text.split(',').forEach(function (x) { var i = x.indexOf('='); if (i > 0) h[x.slice(0, i)] = x.slice(i + 1); }); return h; }
+// Version pisteet tehtävästä. Jos versiolle ei ole tallennettu pisteitä, pisteet siirtyvät saman opiskelijan saman luvun
+// aiemmasta versiosta, jossa tehtävän ratkaisu on täsmälleen sama (tehtävän tiiviste), jottei samaa ratkaisua arvioida
+// uudelleen (opettaja 6.11.2026). Tyhjäksi tallennettu (arvioimaton) ei hae pisteitä muualta.
+function rlTaskScore_(m, s, chapterId, v, task) {
+  var own = m.scores[rlScoreKey_(s.email, v.sub, task)];
+  if (own !== undefined) return { score: own, from: -1 };
+  var vs = s.chapters[chapterId] || [], at = vs.indexOf(v), h = v.hashes[task];
+  if (h) for (var i = at - 1; i >= 0; i--) {
+    if (vs[i].hashes[task] !== h) continue;
+    var p = m.scores[rlScoreKey_(s.email, vs[i].sub, task)];
+    if (p !== undefined && p !== '') return { score: p, from: i };
+  }
+  return { score: '', from: -1 };
+}
 function rlRound_(x) { return Math.round(x * 100) / 100; }
 function rlPointsOk_(v) { return typeof v === 'number' && isFinite(v) && v >= 0 && v <= RL_CONFIG.MAX_POINTS && Math.abs(Math.round(v * 100) - v * 100) < 1e-6; }
 function rlNum_(x) { return String(rlRound_(x)).replace('.', ','); }   // suomalainen desimaalipilkku
@@ -3486,7 +3501,7 @@ function rlSummary_(m) {
       var last = rlLatest_(s, c.id); if (!last) return;
       var sum = 0, n = 0, a = 0, u = 0;
       c.tasks.forEach(function (t) {
-        var p = rlScoreOf_(m, s.email, last.sub, t.id), done = last.answered.indexOf(t.id) >= 0;
+        var p = rlTaskScore_(m, s, c.id, last, t.id).score, done = last.answered.indexOf(t.id) >= 0;
         if (p !== '') { sum += p; n++; }
         if (done) { a++; if (p === '') u++; }
       });
@@ -3507,7 +3522,7 @@ function rlOverview() {
       subs.forEach(function (s) {
         var last = rlLatest_(s, c.id);
         if (last.answered.indexOf(t.id) < 0) { empty++; return; }
-        if (rlScoreOf_(m, s.email, last.sub, t.id) !== '') scored++; else open++;
+        if (rlTaskScore_(m, s, c.id, last, t.id).score !== '') scored++; else open++;
       });
       return { id: t.id, number: t.number, level: t.level, html: t.html, answer: t.answer, submissions: subs.length, empty: empty,
                solutions: subs.length - empty, scored: scored, open: open };
@@ -3526,7 +3541,8 @@ function rlQueue(taskId) {
   var m = rlModel_(), ch = info.chapter.id;
   return m.students.filter(function (s) { var last = rlLatest_(s, ch); return !!last && last.answered.indexOf(taskId) >= 0; }).map(function (s) {
     return { email: s.email, versions: s.chapters[ch].map(function (v) {
-      return { fileId: v.fileId, sub: v.sub, time: v.time, answered: v.answered.indexOf(taskId) >= 0, score: rlScoreOf_(m, s.email, v.sub, taskId) };
+      var sc = rlTaskScore_(m, s, ch, v, taskId);
+      return { fileId: v.fileId, sub: v.sub, time: v.time, answered: v.answered.indexOf(taskId) >= 0, score: sc.score, from: sc.from };
     }) };
   });
 }
@@ -3608,7 +3624,8 @@ function rlScoresCsv() {
 </script><script>/* Paikallinen arviointisivu (Lauri 5.11.2026: eduespoossa Apps Script on estetty). Tämä tiedosto korvaa selaimessa ne
    Google-palvelut, joita Code.gs käyttää: palautustiedostot luetaan Drivesta ladatusta zip-tiedostosta (tai
    JSON-tiedostoista), ja välilehdet "RL Palautukset" ja "RL Pisteet" ovat tämän selaimen localStoragessa
-   ryhmittäin (avain ruukkilabra:arviointi:ryhma:<ryhmä>) opettajan omalla koneella.
+   ryhmittäin (avain ruukkilabra:arviointi:ryhma:<ryhmä>) opettajan omalla koneella. Tuodut palautustiedostot ovat
+   saman selaimen IndexedDB:ssä (tietokanta ruukkilabra-arviointi), joten vastaukset näkyvät myös sivun sulkemisen jälkeen.
    Yksi sivu periodia kohti, ja siinä ovat kaikki periodin kurssit (RL_COURSES, opettaja 6.11.2026). Ainoa painike on
    "Tuo tiedosto": ryhmä tunnistetaan zipin ylimmästä kansiosta, joka on lomakkeen nimi ("FY3.2 lv 2026-27 Palauta
    ratkaisut (File responses)") ja kurssi ryhmän nimestä (FY3). Ryhmä muistaa lomakkeensa, eikä toisen lomakkeen zipiä
@@ -3697,6 +3714,37 @@ function rlScoresCsv() {
     LOCAL.forms = Array.isArray(st.forms) ? st.forms.filter(function (x) { return typeof x === 'string'; }) : [];
     return st;
   }
+  /* ---- palautustiedostot IndexedDB:ssä ryhmittäin (opettaja 6.11.2026: vastaukset eivät saa kadota, kun sivu suljetaan) ---- */
+  var DB = null;
+  function db() {
+    if (DB) return DB;
+    DB = new Promise(function (ok, no) {
+      try {
+        var r = indexedDB.open('ruukkilabra-arviointi', 1);
+        r.onupgradeneeded = function () { r.result.createObjectStore('palautukset'); };
+        r.onsuccess = function () { ok(r.result); };
+        r.onerror = function () { no(r.error); };
+      } catch (e) { no(e); }
+    });
+    return DB;
+  }
+  function idb(mode, fn) {
+    return db().then(function (d) {
+      return new Promise(function (ok, no) {
+        var tx = d.transaction('palautukset', mode), st = tx.objectStore('palautukset'), out = fn(st);
+        tx.oncomplete = function () { ok(out && 'result' in out ? out.result : undefined); };
+        tx.onerror = tx.onabort = function () { no(tx.error); };
+      });
+    });
+  }
+  function storeFiles(g, files, entries) { return idb('readwrite', function (st) { st.put({ files: files, entries: entries }, g); }); }
+  function dropFiles(g) { return idb('readwrite', function (st) { st.delete(g); }).catch(function () {}); }
+  function loadFiles(g) {
+    if (!g || MEM[g]) return Promise.resolve();
+    return idb('readonly', function (st) { return st.get(g); }).then(function (v) {
+      if (v && v.files && Array.isArray(v.entries) && !MEM[g]) MEM[g] = { files: v.files, entries: v.entries };
+    }, function () {});
+  }
   function savedOf(g) { try { return JSON.parse(localStorage.getItem(key(g)) || 'null'); } catch (e) { return null; } }
   // Ryhmän vaihto: edellisen ryhmän tiedostot jäävät muistiin (sivun sulkemiseen asti), uuden ryhmän tila localStoragesta.
   // Kurssi vaihtuu ryhmän mukana (RL_COURSE: Code.gs lukee siitä luvut ja tehtävät).
@@ -3784,7 +3832,7 @@ function rlScoresCsv() {
         setTimeout(function () {
           var r;
           if (!/^rl(Overview|Queue|Answer|SaveScore|SetDecision|ScoresCsv)$/.test(name)) { if (no) no(new Error('tuntematon toiminto')); return; }
-          if (name === 'rlAnswer' && !LOCAL.entries.length) { if (no) no(new Error('Tuo ryhmän zip-tiedosto uudelleen ylhäältä (Tuo tiedosto). Vastauksia ei säilytetä sivun sulkemisen jälkeen.')); return; }
+          if (name === 'rlAnswer' && !LOCAL.entries.length) { if (no) no(new Error('Vastauksia ei ole tässä selaimessa. Tuo ryhmän zip-tiedosto uudelleen ylhäältä (Tuo tiedosto).')); return; }
           try { r = window[name](a); } catch (e) { if (no) no(new Error(e && e.rlUser ? e.message : 'odottamaton virhe')); return; }
           if (/^rl(SaveScore|SetDecision)$/.test(name) && !saveSheets()) { if (no) no(new Error('Selain ei salli tallentamista (localStorage). Pisteitä ei tallennettu.')); return; }
           if (ok) ok(r === undefined ? null : JSON.parse(JSON.stringify(r)));
@@ -3884,13 +3932,13 @@ function rlScoresCsv() {
       gSel.value = LOCAL.group;
       gLab.hidden = list.length < 2; more.hidden = !LOCAL.group;
     }
-    function choose(g) { useGroup(g); fillGroups(); window.rlReload(); }
+    function choose(g) { return loadFiles(g).then(function () { useGroup(g); fillGroups(); window.rlReload(); }); }
     var start = '';
     try { start = localStorage.getItem(chosenKey()) || ''; } catch (e) {}
     if (groups().indexOf(start) < 0) start = groups()[0] || '';
-    useGroup(start); fillGroups(); window.rlReload();
+    choose(start);
     if (!start) msg.textContent = 'Lataa Drivesta ryhmän lomakkeen palautuskansio (zip) ja tuo se tähän: Tuo tiedosto.';
-    gSel.addEventListener('change', function () { choose(gSel.value); msg.textContent = 'Ryhmä ' + gSel.value + '.' + (LOCAL.entries.length ? '' : ' Tuo ryhmän zip uudelleen, niin vastaukset näkyvät.'); });
+    gSel.addEventListener('change', function () { var g = gSel.value; choose(g).then(function () { msg.textContent = 'Ryhmä ' + g + '.' + (LOCAL.entries.length ? '' : ' Tuo ryhmän zip uudelleen, niin vastaukset näkyvät.'); }); });
     imp.addEventListener('click', function () { pick.click(); });
     pick.addEventListener('change', function () {
       if (!pick.files.length) return;
@@ -3905,25 +3953,31 @@ function rlScoresCsv() {
           if (!by[g]) { by[g] = { files: [], forms: [] }; order.push(g); }
           by[g].files.push(e); if (f && by[g].forms.indexOf(f) < 0) by[g].forms.push(f);
         });
-        var out = [];
-        order.forEach(function (g) {
-          var c = courseOfGroup(g), st = savedOf(g);
-          if (!COURSES[(st && st.course) || c]) { out.push('Ryhmä ' + g + ': kurssia ' + (c || '?') + ' ei ole tällä arviointisivulla, ei luettu.'); return; }
-          var list2 = groups();
-          if (list2.indexOf(g) < 0) { list2.push(g); if (!setGroups(list2)) { out.push('Selain ei salli tallentamista (localStorage).'); return; } }
-          useGroup(g);
-          var other = LOCAL.forms.length ? by[g].forms.filter(function (f) { return LOCAL.forms.indexOf(f) < 0; }) : [];
-          if (other.length) { out.push('Zip on lomakkeelta "' + other[0] + '", mutta ryhmän ' + g + ' palautukset on luettu lomakkeelta "' + LOCAL.forms[0] + '". Mitään ei luettu.'); return; }
-          by[g].forms.forEach(function (f) { if (LOCAL.forms.indexOf(f) < 0) LOCAL.forms.push(f); });
-          addEntries(by[g].files);
-          var r = rlImport_(); saveSheets();
-          var k = r.counts;
-          out.push('Ryhmä ' + g + ': luettu ' + by[g].files.length + ' tiedostoa. Uusia palautuksia ' + r.added + ' (hyväksyttyjä ' + k['Hyväksytty'] + ', kaksoiskappaleita ' + k['Kaksoiskappale'] + ', tarkistettavia ' + k['Tarkistettava'] + ', virheellisiä ' + k['Virheellinen'] + ').');
+        return Promise.all(order.map(loadFiles)).then(function () {
+          var out = [], stores = [];
+          order.forEach(function (g) {
+            var c = courseOfGroup(g), st = savedOf(g);
+            if (!COURSES[(st && st.course) || c]) { out.push('Ryhmä ' + g + ': kurssia ' + (c || '?') + ' ei ole tällä arviointisivulla, ei luettu.'); return; }
+            var list2 = groups();
+            if (list2.indexOf(g) < 0) { list2.push(g); if (!setGroups(list2)) { out.push('Selain ei salli tallentamista (localStorage).'); return; } }
+            useGroup(g);
+            var other = LOCAL.forms.length ? by[g].forms.filter(function (f) { return LOCAL.forms.indexOf(f) < 0; }) : [];
+            if (other.length) { out.push('Zip on lomakkeelta "' + other[0] + '", mutta ryhmän ' + g + ' palautukset on luettu lomakkeelta "' + LOCAL.forms[0] + '". Mitään ei luettu.'); return; }
+            by[g].forms.forEach(function (f) { if (LOCAL.forms.indexOf(f) < 0) LOCAL.forms.push(f); });
+            addEntries(by[g].files);
+            var r = rlImport_(); saveSheets();
+            stores.push(storeFiles(g, LOCAL.files, LOCAL.entries).then(function () { return true; }, function () { return false; }));
+            var k = r.counts;
+            out.push('Ryhmä ' + g + ': luettu ' + by[g].files.length + ' tiedostoa. Uusia palautuksia ' + r.added + ' (hyväksyttyjä ' + k['Hyväksytty'] + ', kaksoiskappaleita ' + k['Kaksoiskappale'] + ', tarkistettavia ' + k['Tarkistettava'] + ', virheellisiä ' + k['Virheellinen'] + ').');
+          });
+          notes.forEach(function (f) { out.push('Ryhmää ei tunnistettu: "' + f + '". Lomakkeen nimen pitää alkaa ryhmällä, esim. FY3.2 lv 2026-27 Palauta ratkaisut.'); });
+          fillGroups(); window.rlReload();
+          msg.textContent = out.join(' ');
+          return Promise.all(stores).then(function (oks) {
+            if (oks.indexOf(false) >= 0) msg.textContent += ' Selain ei salli palautusten tallentamista (IndexedDB): vastaukset näkyvät vain, kunnes sivu suljetaan.';
+          });
         });
-        notes.forEach(function (f) { out.push('Ryhmää ei tunnistettu: "' + f + '". Lomakkeen nimen pitää alkaa ryhmällä, esim. FY3.2 lv 2026-27 Palauta ratkaisut.'); });
-        fillGroups(); window.rlReload();
-        msg.textContent = out.join(' ');
-      }, function (e) { pick.value = ''; msg.textContent = 'Tiedostoja ei voitu lukea: ' + (e && e.message || e); });
+      }).catch(function (e) { pick.value = ''; msg.textContent = 'Tiedostoja ei voitu lukea: ' + (e && e.message || e); });
     });
     csv.addEventListener('click', function () {
       var name = course() + '-' + safe(LOCAL.group) + '-pisteet.csv';
@@ -3950,7 +4004,7 @@ function rlScoresCsv() {
       if (!window.confirm('Poistetaanko ryhmä ' + LOCAL.group + ' sekä sen tuonnit ja pisteet tästä selaimesta? Ota ensin varmuuskopio.')) return;
       var g = LOCAL.group;
       try { localStorage.removeItem(key()); } catch (e) {}
-      delete MEM[g]; LOCAL.group = '';
+      delete MEM[g]; LOCAL.group = ''; dropFiles(g);
       setGroups(groups().filter(function (x) { return x !== g; }));
       choose(groups()[0] || '');
       msg.textContent = 'Ryhmä ' + g + ' poistettu.';
@@ -4037,7 +4091,7 @@ function rlScoresCsv() {
     <div class="bar"><h1 id="title" class="grow">RuukkiLabra · arviointi</h1><button type="button" id="refresh">Päivitä</button></div>
     <div id="localBar" hidden></div>
     <p id="homeState" class="muted" aria-live="polite">Ladataan…</p>
-    <div class="bar"><h2 class="grow">Kooste</h2><label id="scopeWrap"><select id="scope" aria-label="Luku"></select></label></div>
+    <div class="bar"><h2 class="grow">Kooste</h2><button type="button" id="hideNames" aria-pressed="false">Piilota nimet</button><label id="scopeWrap"><select id="scope" aria-label="Luku"></select></label></div>
     <p id="noSummary" class="muted">Ei palautuksia.</p>
     <div id="groupChart" hidden aria-label="Ryhmä yhteensä"></div>
     <div class="wide"><table id="summary" hidden><thead></thead><tbody></tbody></table></div>
@@ -4082,7 +4136,7 @@ function rlScoresCsv() {
 (function () {
   'use strict';
   var $ = function (id) { return document.getElementById(id); };
-  var S = { ov: null, task: null, chapter: null, entries: [], idx: 0, ver: 0, nav: false, saving: null, token: 0, cache: {}, onlyOpen: false, open: {}, scope: 'all', sort: { key: 'name', dir: 1 }, ready: false };
+  var S = { ov: null, task: null, chapter: null, entries: [], idx: 0, ver: 0, nav: false, saving: null, token: 0, cache: {}, onlyOpen: false, hide: false, open: {}, scope: 'all', sort: { key: 'name', dir: 1 }, ready: false };
   var call = function (name, arg) {
     return new Promise(function (ok, no) {
       var r = google.script.run.withSuccessHandler(ok).withFailureHandler(function (e) { no(e); });
@@ -4119,7 +4173,7 @@ function rlScoresCsv() {
         } else dc.textContent = p.decision;
         pb.append(tr);
       });
-      $('problems').hidden = !ov.problems.length; $('probSec').hidden = !ov.problems.length;
+      $('problems').hidden = !ov.problems.length; $('probSec').hidden = !ov.problems.length || S.hide;
     }, function (e) { $('homeState').textContent = 'Tietoja ei voitu ladata: ' + errText(e); $('homeState').className = 'err'; });
   }
   // Tehtävät luvuittain. Ratkaisuja = palauttajat, joiden uusimmassa palautuksessa tehtävään on ratkaisu (tyhjät eivät
@@ -4171,7 +4225,8 @@ function rlScoresCsv() {
       scope.forEach(function (c) { var x = s.chapters[c.id]; if (x) { r.answered += x.answered; r.unchecked += x.unchecked; r.points += x.points; r.returned++; } });
       return r;
     });
-    var key = S.sort.key, dir = S.sort.dir;
+    // nimet piilossa (opettaja 6.11.2026: pisteiden näyttäminen opiskelijoille): ei aakkosjärjestystä, josta nimen voisi päätellä
+    var key = S.hide && S.sort.key === 'name' ? 'points' : S.sort.key, dir = S.hide && S.sort.key === 'name' ? -1 : S.sort.dir;
     rows.sort(function (a, b) { var byName = a.name.localeCompare(b.name, 'fi'); return key === 'name' ? byName * dir : ((a[key] - b[key]) * dir || byName); });
     var head = $('summary').querySelector('thead'), body = $('summary').querySelector('tbody');
     head.textContent = ''; body.textContent = '';
@@ -4193,7 +4248,7 @@ function rlScoresCsv() {
     rows.forEach(function (r) {
       var tr = el('tr'); if (!r.returned) { tr.className = 'none'; tr.title = 'Ei palautusta tästä luvusta'; }
       var part = function (v, of, bar) { var td = el('td', 'n'); td.append(el('span', 'v', v)); if (of !== undefined) td.append(el('span', 'of', ' / ' + of)); if (bar) td.append(bar); return td; };
-      tr.append(el('td', null, r.name),
+      tr.append(el('td', null, S.hide ? 'Opiskelija ' + (rows.indexOf(r) + 1) : r.name),
         part(String(r.answered), nTasks, meter(r.answered, nTasks, '', 'Tehty ' + pct(r.answered, nTasks))),
         part(String(r.unchecked)),
         part(num(r.points), num(max), meter(r.points, max, 'pts', 'Pisteet ' + pct(r.points, max))));
@@ -4208,6 +4263,11 @@ function rlScoresCsv() {
     gc.hidden = !rows.length;
     $('summary').hidden = !rows.length; $('noSummary').hidden = !!rows.length; $('scopeWrap').hidden = !rows.length;
   }
+  $('hideNames').addEventListener('click', function () {
+    S.hide = !S.hide; $('hideNames').textContent = S.hide ? 'Näytä nimet' : 'Piilota nimet'; $('hideNames').setAttribute('aria-pressed', String(S.hide));
+    $('probSec').hidden = S.hide || !(S.ov && S.ov.problems.length);
+    if (S.ov) renderSummary(S.ov);
+  });
   // Itsearviot (opettaja 6.11.2026): luvuittain opiskelijat × kohteet (Tarkista osaamisesi -tehtävät ja luvun tavoitteet),
   // uusimman palautuksen taso värinä. Kooste-valinta rajaa luvut.
   var SA_TEXT = { a: 'Osaan niin hyvin, että voisin opettaa kaverille', b: 'Koen oivaltaneeni', c: 'Osaan osittain, epävarmuutta on vielä',
@@ -4222,7 +4282,7 @@ function rlScoresCsv() {
       d.append(el('summary', null, 'Luku ' + c.number + ' · ' + c.title));
       var wrap = el('div', 'wide'), t = el('table', 'self'), hr = el('tr'), tb = el('tbody');
       hr.append(el('th', null, 'Opiskelija'));
-      c.self.items.forEach(function (it, i) {
+      c.self.items.forEach(function (it) {
         var goal = /^tavoite-/.test(it.id), th = el('th', 'it', goal ? 'Tavoite ' + it.id.split('-')[1] : it.label);
         th.title = it.label; hr.append(th);
       });
@@ -4270,13 +4330,13 @@ function rlScoresCsv() {
     S.ver = ver === null || ver === undefined ? e.versions.length - 1 : ver;   // oletuksena uusin hyväksytty versio
     var v = e.versions[S.ver];
     $('gPos').textContent = 'Opiskelija ' + (idx + 1) + '/' + S.entries.length;
-    $('gEmail').textContent = e.email;
+    $('gEmail').textContent = S.hide ? 'Opiskelija ' + (idx + 1) : e.email;
     $('gTime').textContent = 'Palautettu ' + v.time + ' · versio ' + (S.ver + 1) + '/' + e.versions.length + (S.ver === e.versions.length - 1 ? ' (uusin)' : ' (vanhempi)') + ' · tunniste ' + v.sub.slice(0, 8);
     var sel = $('gVer'); sel.textContent = '';
     e.versions.forEach(function (x, i) { var o = el('option', null, (i + 1) + ': ' + x.time + (scoreText(x.score) !== '' ? ' · ' + scoreText(x.score) + ' p' : '')); o.value = String(i); sel.append(o); });
     sel.value = String(S.ver); $('gVerWrap').hidden = e.versions.length < 2;
     $('points').value = scoreText(v.score);
-    setState(scoreText(v.score) !== '' ? 'Tallennettu ✓' : 'Arvioimaton', scoreText(v.score) !== '' ? 'ok' : null);
+    setState(v.from >= 0 ? 'Pisteet versiosta ' + (v.from + 1) + ' ✓ (sama ratkaisu)' : scoreText(v.score) !== '' ? 'Tallennettu ✓' : 'Arvioimaton', scoreText(v.score) !== '' ? 'ok' : null);
     $('prev').disabled = idx === 0; $('next').disabled = idx === S.entries.length - 1;
     $('points').disabled = true; $('gVer').disabled = false;
     var token = ++S.token;
@@ -4340,7 +4400,7 @@ function rlScoresCsv() {
     var target = c.version, req = { email: c.entry.email, sub: target.sub, task: S.task.id, value: p.value };
     setState('Tallennetaan…', 'busy');
     S.saving = call('rlSaveScore', req).then(function (r) {
-      target.score = r.value;
+      target.score = r.value; target.from = -1;
       if (cur() && cur().version === target) setState(r.value === '' ? 'Tallennettu ✓ (arvioimaton)' : 'Tallennettu ✓', 'ok');
       return true;
     }, function (e) {

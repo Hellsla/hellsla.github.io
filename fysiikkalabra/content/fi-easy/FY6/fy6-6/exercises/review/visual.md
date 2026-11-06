@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 3caee1c7f96c80fb
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: bd18cf01612b6d99
 
 ## Blocking
-(none)
-
-## Fixed
-(none needed: the text already matched fi in every number and was plain)
 
 ## Polish
-(none)
+- [Minor] solutions.md fy6-6-L2-08 — inline \tfrac fractions with units ($\tfrac{1{,}5\,\text{W}}{6{,}0\,\text{W}}$, $\tfrac{(6{,}0\,\text{V})^2}{24\,\Omega}$) are very small in running text; a colon division would match the house style.
 
 ## Checked
-- Exercise captures (levels 1-3 at 1280 px, solutions open) of the new tasks viewed: data tables with captions and column headers render in Finnish, the solutions' maths and units render, long Substitution blocks wrap without overflow.
-- Table cells and LaTeX in the text match fi, so the layout is the same as in the reviewed Finnish captures.
+- Delta: new L2-08 (prediction choice, shown as 6-16), solution; answers.py comment only.
+- Opened fi-easy fy6-6-open-exercises-L2-1280-9 (6-16 text, choices, feedback) and -10 (Kysytty/Periaate/Mallivastaus, both blocks, closing paragraph).
+- Decimal comma and units render as maths; the Finnish is plain and ordered (situation, change, question); the explanation names Joule's law and the square of the current in separate short sentences, suited to S2 readers.
+- No red KaTeX, no clipping, no overflow.
+- Figures: none changed.
+
+## Scores
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

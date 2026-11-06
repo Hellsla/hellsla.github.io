@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 0bbb7ef633d3e151
+CONTENT-HASH: f628c9c4d2493275
+Round: 1 (new task fy6-4-L2-08, ordering; the rest of the set was PASS before and is unchanged).
 
 ## Blocking
 
 ## Polish
-- exercises.json:153, :227, :329 (L2-05 102.1, L2-07 40.4, L3-05 1.32) vs solutions.md:150, :172, :194 (Vastaus 102 Ω, 40 Ω, 1,3 %) — answer field carries one digit more than the stated result; within tolerance, but set the field to the Vastaus value (102, 40, 1.3) as in the original tasks.
-- L3-04 (exercises.json:288, solutions.md:182) — with R2 = R3 = 110 Ω the calculation cannot tell which branch is open; the R3 ammeter row (0,0 mA) gives it away, and part c repeats L3-01's mixed-circuit calculation while part b repeats L2-06. To match the plan's "todista laskulla": use unequal R2, R3 (e.g. 100 Ω and 150 Ω, adjusting 180 Ω) and drop the R3 ammeter row.
-- L2-07 (exercises.json:220) — at 10,0 V the 40 Ω resistor dissipates 2,5 W and the 60 Ω 1,7 W; ordinary 0,25–0,6 W resistors would overheat and change R. Stop at 4–5 V or say "tehovastukset".
-- L2-05 solutions.md:149 — the calculated value also carries the ±1,5 % of each single reading; one sentence that comparing to one error limit is the strict test would make the conclusion exact.
-- L3-05 — E12 parts usually have ±5 % tolerance, larger than the 1,3 % vs 4,3 % difference; one line in Järkevyys noting that the comparison is between nominal values.
+- content/fi/FY6/fy6-4/exercises/solutions.md:220 — "B ja C vaihtavat paikkaa" is incomplete: forgetting to invert also makes D look like 100 Ω + 0,012 ≈ 100 Ω, so D moves before E as well — write "B ja C vaihtavat paikkaa ja D siirtyy E:n edelle" or drop D from the sentence explicitly ("rinnakkaisten kytkentöjen B ja C").
+- content/fi/FY6/fy6-4/exercises/exercises.json:265 — connection C (three 330 Ω in parallel) is the same calculation as L1-05 in this set; consider e.g. three 300 Ω (100 Ω) so the order stays C < B < E.
 
 ## Checked
-- Hash 0bbb7ef633d3e151 at start and end; counts 8/7/5; tasks match docs/exercise-bank/FY6.md fy6-4.
-- Recomputed in one script: L1-08 60 Ω; L2-05 series 1013 Ω (0,40 %), parallel 102,1 Ω (0,69 %); L2-06 198 Ω vs 100 Ω, R1 100 Ω, 3,02 + 5,98 = 9,00 V, one-branch model 30 mA; L2-07 ratios 24,10/24,10/24,29/24,02/24,15, mean 24,13 Ω, Rx 40,4 Ω; L3-04 125 Ω, faulty 180 Ω (49,8 mA ↔ 180,7 Ω), I3 36 mA; L3-05 all 42 pair-connections, best 560 ∥ 2700 = 463,8 Ω, 1,32 %, best series 490 Ω 4,26 %. All agree with exercises.json and answers.py.
-- L1-06: four totals 33/300/150/67 Ω right, one correct option. L1-07: ideal battery stated, each lamp's current unchanged, feedback right.
-- Unknown solved symbolically before substitution (1/Rx = 1/R − 1/R1); conversions mA ↔ A, kΩ right.
-- L3-05 pruning argument (series only below 470 Ω, parallel only with smaller part above 470 Ω) is correct and complete.
-- Batteries treated as ideal without stating it in L2-06/L3-04, consistent with the original L2-01 and the chapter level (C).
+- Hash f628c9c4d2493275 at start and end.
+- answers.py run against exercises.json: all 18 numeric answers agree within tolerance (one python call).
+- L2-08 recomputed: A 550 Ω, B 132 Ω, C 110 Ω, D 265 Ω, E 150 Ω; order C, B, E, D, A matches `order` and `answer`; 1/R_B = 0,0076 1/Ω and 1/R_C = 0,0091 1/Ω are right.
+- The prompt names the quantity and the direction (pienimmästä suurimpaan).
+- The lesson's second warned mistake (every added resistor increases R) is what the order tests: C has the most resistors and the smallest R, and B lies below the single 150 Ω.
+- Formulas (series sum, 1/R sum, R1R2/(R1+R2), mixed connection inside out) are the lesson's; wire resistance neglected is stated.
+- Inline formula widths measured (KaTeX render at 17 px, 1.21 em, own script): widest 239 px. Page not rendered; the rest from text.

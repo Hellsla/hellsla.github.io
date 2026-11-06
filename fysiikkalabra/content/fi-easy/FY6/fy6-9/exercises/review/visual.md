@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: a80ee8ee2111fea5
-Mode: full (translation review against the reviewed Finnish set; 8 new exercises L1-06..08, L2-05..07, L3-04..05)
+CONTENT-HASH: 47c6ed01597a514a
 Round 2
+Mode: delta (fix of the Round 1 Major in fy6-9-L1-09; screenshots retaken)
 
 ## Blocking
 (none)
 
-## Fixed
-(none needed: the text already matched the Finnish in every number and was natural)
-
 ## Polish
-(none)
+- [Minor] fy6-9-L1-09 Mallivastaus, third line — $\tfrac{UQ}{t}$ is small beside the $\dfrac{\text{Wh}}{\text{h}}$ in the same line; use $\tfrac{\text{Wh}}{\text{h}}$ too if the line is re-set. Readable as is.
 
 ## Checked
-- Opened fy6-9-open-exercises-L3-1280-4.png (L3-04 text and table): table caption and cells fit the width, maths renders, nothing clipped.
-- Texts are of similar length to the Finnish; tables have the same columns and rows as fi.
+- fy6-9-open-exercises-1280-9.png (retaken): the four "Lausekkeen … yksikkö on …" lines read as sentences, no colon that could be taken for division; the closing paragraph keeps its line spacing; Kysytty, Periaate, Mallivastaus render, nothing clipped.
+
+## Fixed since Round 1
+- Colon between maths expressions replaced by words; inline \dfrac changed to \tfrac.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations n/a (4) · typography 4 · Finnish (selkeä) 4 · accessibility 4

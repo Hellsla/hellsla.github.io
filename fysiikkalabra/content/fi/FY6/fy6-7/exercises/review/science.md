@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 83b798cb46578690
-Round: 3. Re-review: the only change since the PASS is the boxed value moved to the start of the first answer-step line (answers_shown). Round 2: Round 1 had no Blocking items. Checked the diff since 00b2dcb54: the round-1 Polish and the pedagogy/visual fixes (0,00 kWh, L2-06 daily energies, Vastaus parts on their own lines, L3-04 paragraph split, L1-06 option order).
+CONTENT-HASH: 5161df0334c5195f
+Round: 1. One new YO-skill task, fy6-7-L1-09 (type 5, Suuruusluokka); the rest of the set was PASS before and is unchanged.
 
 ## Blocking
 
 ## Polish
-- solutions.md (fy6-7-L2-07 Järkevyys) — the check still uses "299 kWh : 8760 h" after the Vastaus changed to 300 kWh. Write "300 kWh : 8760 h ≈ 0,034 kW" so the two lines agree.
+- exercises.json:101 (fy6-7-L1-09) — the question asks for a suuruusluokka but the options carry two significant figures ("noin 0,060 kWh"). That is fine, but "noin 0,06 kWh" (and 0,001 kWh) would read more like an order of magnitude. Taste only.
 
 ## Checked
-- Hash 83b798cb46578690 at start and end.
-- L2-06: the new daily energies 7,7 / 7,2 / 8,2 / 7,5 / 9,1 / 9,2 / 7,4 kWh equal the differences of the table readings and sum to 56,3 kWh. 335 W and 9,0 € are unchanged.
-- L2-07: Vastaus 300 kWh (2 s.f., by-eye fit) agrees with answer 299,3 within tolerance 0,05. The origin line now has its physical reason (0,00 kWh at t = 0). The 0,00 kWh decimal comma is fixed.
-- L3-05 c: the waste-heat direction is now right (the old fridge heats more, so part of the saving is lost with electric heating in winter).
-- L3-04: the Kaava and Sijoitus rewrites keep S = 6,0 kWh · 15,5 snt/kWh = 0,93 €, 267,44 snt and 14,1 snt/kWh.
-- answers.py was recomputed and compared with every numeric answer; all agree.
-- L1-06 reordered: one correct option, and `answer` equals its text.
-- The "Taulukon lukeminen" heading is now used for the L2-06 table.
-- Set: 8/7/5, with no duplicates.
-- Answer steps start with the boxed value: L2-05 730 kWh (key 733,65, tol 0,02), L2-06 335 W (335,119), L2-07 300 kWh (299,3, tol 0,05), L3-04 0,93 € (0,93), L3-05 13 a (12,957); each equals its own b) and Sijoitus, same unit, LaTeX with decimal comma; the lines read well.
+- Hash 5161df0334c5195f at start and end.
+- All answers.py values rerun in one call: no mismatch with exercises.json.
+- L1-09 recomputed: 1,2 kW · 0,050 h = 0,060 kWh. Distractors recomputed: 1,2 · 3,0/3600 = 0,0010; 1,2 · 3,0 = 3,6; 1200 · 0,050 = 60; 1200 · 3,0 = 3600. Each feedback names its real error.
+- Neighbouring options are 17–60 times apart (type 5 asks for 10–100).
+- The 3600 kWh option (watts × minutes) is the lesson's own warned unit mix (2000 W · 15 min ≠ 30 000 kWh); 60 kWh is the Wh/kWh confusion.
+- 1,2 kW input power for a microwave oven is realistic.
+- Not identifiable by form: five parallel "noin X kWh" options; the correct feedback adds no reason beyond the calculation.
+- Notation E = Pt, kWh as in the brief's Tiivistelmä.
+- Inline/display maths measured with KaTeX in Chrome at 390 px (formula widths only, not a page render): widest 171 px.

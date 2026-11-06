@@ -1,20 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: a4bbb1d6abcbe23a
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: df56262b52ce34b1
+Mode: delta (new YO-skill task fy6-10-L2-08, type 6 ennuste muutoksesta; L3-02 re-paragraphed)
 
 ## Blocking
 (none)
 
-## Fixed
-(none needed)
-
 ## Polish
-(none)
+- [Minor] fy6-10-L2-08 text — "Voima kohdistuu eli osuu palloon B." is an odd gloss: "osuu" (hits) is not what a force does and reads childish next to the physics term; write "Voima kohdistuu palloon B eli vaikuttaa siihen." or drop the sentence.
+- [Minor] fy6-10-L2-08 Periaate — Coulomb's law $F = k\,\tfrac{\lvert q_1 q_2 \rvert}{r^2}$ is set inline with \tfrac and the numerator renders very small; the same formula appears in display form in the neighbouring task's Kaava block, so it is only a readability remark.
+- [Minor] fy6-10-L2-08 options — the answers $\tfrac{2}{9}F$, $\tfrac{1}{9}F$, $\tfrac{2}{3}F$ use inline \tfrac, small but readable; the house rule, so only an observation.
 
 ## Checked
-- Opened the captures of the new tasks at 1280 px (L1-06/07 solution and choices, L2-05 solution and table, L3-04 and L3-05): no overflow, maths renders, units and decimals are in the selkosuomi form.
-- Data tables, captions and the answer box with unit render correctly.
+- fy6-10-open-exercises-L2-1280-10.png (end of L2-07, task text "10-16", correct option's feedback) and -11.png (remaining options, "Oikein.", answer chip, Kysytty, Periaate, Mallivastaus with the F, F' and ratio displays): options whole rows, feedback inside the card, displays aligned, decimal comma and case endings render; nothing clipped.
+- The re-paragraphed L3-02 was not opened; the change is mechanical.
 
 ## Scores
-illustrations 4 · typography 5 · language 5 · accessibility 5
+illustrations n/a (4) · typography 4 · Finnish (selkeä) 4 · accessibility 4

@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 07e87142e01fa3c8
-
-Follow-up review of the fix commit 2c31ff041 (delta from 8baae29cd64c26db). Change: lesson.md:452, misconception — "Ohmisen vastuksen" → "Ohmin lakia noudattavan vastuksen".
+CONTENT-HASH: 7f59adac9f04c880
 
 ## Blocking
+(none)
 
 ## Polish
+(none)
 
 ## Checked
-- The new term says the same physics in plainer words: a resistor that obeys Ohm's law keeps a nearly constant resistance when temperature and other conditions stay the same, so the current is proportional to the voltage. Correct, and still conditional.
-- Earlier: the old unconditional "ei riipu jännitteestä" is gone and appears nowhere else in the lesson; filament-bulb caption (electrons collide with metal ions, electrical energy becomes internal energy of the wire) is a fair simplification (C) and agrees with the bulb sentence.
+- delta (figures.json only, 384fe88c6..HEAD): lesson.md unchanged; the new "mA" word and the four (I,U) pick-* descriptions belong to exercise option figures; no lesson figure uses them.
+- Read the captured theory pages: the lesson's five figures (hero, measure-circuit, micro, curves, wire) render with the same labels and numbers as before; no figure text changed.
+- No number, symbol, option or feedback in the lesson changed; my earlier PASS stands.
 - Hash same at start and end.

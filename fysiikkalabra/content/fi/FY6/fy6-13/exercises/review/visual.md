@@ -1,19 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 314e222bbcc3a430
+CONTENT-HASH: 6f38db9cc5bb5b1e
+Round: 2
 
-Round 2.
+Delta: the clipped Q and W formulas split, statement 2 reworded, the closing verdicts as five paragraphs.
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions L3-05, Sijoitus — "Lasille $U = 350\,\text{V}$," päättyy pilkkuun ennen display-lohkoa (renderissä pilkku roikkuu rivin lopussa) — kirjoita "Lasille $U = 350\,\text{V}$, ja $C$ ja $W$ ovat" tai poista pilkku (kierrokselta 1, "Lasi:" korjattu, pilkku jäi).
-- [Minor] solutions L1-07 (taso 1) — sisältö (varaus vakio, jännite kapasitanssin muuttuessa) on lähempänä tasoa 2; ok monivalintana, ei vaadi muutosta.
+- [Minor] 13-9 statements 3 and 5 both begin "Jos kondensaattori ladattaisiin 24 V:n jännitteeseen"; vary the second one so the pair is not read as a repeat.
+- [Minor] 13-9 statement 1 feedback gives `Q = CU` and then the substitution as one 247 px formula; fits, but the reveal of the true value is in the same line as the formula chain.
 
 ## Checked
-- Kierroksen 1 Polish: L2-06:n väärä vaihtoehto "1–2 s" ja palaute ($2{,}0\,\text{V}$) täsmäävät taulukkoon (3,5 → 5,5 V); L3-05:n "Lasi:" korjattu; L2-05:n ja L2-06:n kuvaajanluku ("(12 V; 566 µC)", "(12 s; 1200 V)") sopii sovitettuun suoraan.
-- Muuttuneet kohdat (vaihtoehtojen järjestys L1/L2, L2-06 vastaus ja palaute, L1-05/L2-04 Vastaus-rivi) luettu diffistä ja laskettu: 144 mJ, 47,2 µF, 100 V/s oikein.
-- Avatut kaappaukset 1280 px: open-exercises-L2-1280-7 ja -8 (13-14 taulukko ja valinta, 13-15), L3-1280-8 (13-20 ratkaisu). Ei ylivuotoa, taulukko ja kaavat renderöityvät ehjinä. 360 px:n tehtäväkaappauksia ei ole; layout 360 px ok paketissa.
+- Renders (own script, 390 px, every statement answered correctly, feedback, answer and solution open): page width = viewport, nothing beyond the card; the statement 1 feedback line `Q = 100 μF · 12 V = 1,2 mC` is whole (247 px), the W substitution is 258 px and sits on its own line; the five verdicts are now short paragraphs and read well.
+- Rendered: statement 2 now says the current runs through the dielectric "samalla tavalla kuin johtimissa"; the feedback names the misconception without giving away the answer to other statements.
+- Text only: no new compound-word errors.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 4

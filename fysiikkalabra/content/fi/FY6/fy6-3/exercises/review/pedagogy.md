@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 4e821e3ca31d2886
-Round: 2
+CONTENT-HASH: 593f504a543bc1e6
 
 ## Blocking
+(none)
 
 ## Polish
-- exercises.json L3-04 a) — "teholedi (LED-diodi)" now says LED, but diodes are still met only in a later chapter; the elimination route works (A constant, B rising like the lamp, C the rest). Fine as is.
-- exercises.json L2-05 a) — fitting a line is still done on paper with no figure; the solution now says so and gives the check value (7,5 V at 50 mA). Acceptable.
-- exercises.json L1-06 — the correct choice is the longest; shorten it a little or lengthen the distractors.
-- The 4-column table of L3-04 should still be confirmed on a phone (no 360 px exercise capture in the packet).
+- exercises.json:147 — option D (flat line at 2,0 V, "the number of R drawn as a voltage") is a contrived slip nobody makes; a more realistic distractor is a line through the origin with R = 2,0 Ω slope (steep), or a line not through the origin.
+- exercises.json:118 — the feedback of A and B quotes coordinates the student can only read from the figure; fine, but add the unit "kΩ" to the A feedback line "U : I = 2,0 kΩ" check for 2,0 mA (1,0 kΩ) so the contrast is shown.
+- solutions.md:193 — "Kuvaajan lukeminen" paragraph repeats the previous one; merge to stay short on a phone.
 
 ## Checked
-- Round 1 Blocking resolved: L3-04 solution now lists C at 1,0 V : 0,1 mA = 10 kΩ and the answer says C falls from 10 kΩ to 31 Ω; the data table (C: 0,0, 0,1, 2,5, 21, 98 mA) matches, and the c) answer 600 Ω is unchanged (1,5 V : 2,5 mA).
-- Round 1 Polish resolved: L2-06 is now a bicycle lamp (context varied); L1-08 ends with R ∝ l; L3-04 explains that the diode's resistance falls once current starts to rise; L2-07 notes the slope gives the same 4,9 Ω; L2-05 states the +/-2 Ω source and the sig-fig reasoning; L1-06 text edited so the distractors are parallel and the correct choice is no longer first (answer equals the correct choice text).
-- Recomputed: L2-05 150 Ω, ΔR 1,7 Ω; L2-06 ratio 1,98; L2-07 4,93 Ω; L3-04 600 Ω and 23×; L3-05 38,1 %. All match answer fields.
-- Counts 8/7/5 = 20, levels and kinds match docs/exercise-bank/FY6.md; no duplicates; every new solution has principle, units, substitution and a sensible-result step.
+- Distractors: curve A catches the chapter's warned mistake (R grows with U, a curved line), B the inverted ratio I : U, D the value-versus-slope confusion.
+- Correct option not identifiable by form: figures only, no text differences; A shares the point (4,0 mA; 8,0 V) with C so a one-point check fails.
+- Figure descriptions (figcat) give axes, scales, grid and the points, same information as the figure; they do not name the right answer outside the option.
+- Numbers: 2,0 kΩ * 4,0 mA = 8,0 V; B 0,50 kΩ; A 1,0 kΩ at 2,0 mA - correct.
+- Within the lesson (ominaiskäyrä, Ohm's law); longest formula 247 px.
+- Text only (no renders: packet screenshots were empty; I measured widths of the model-solution formulas with KaTeX in Chromium at 17 px, 390 px viewport).

@@ -1,20 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: eda68d9188c67dc3
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 94be9d506dad0696
+Mode: delta (new YO-skill task fy6-15-L1-09, type 9 järjestäminen; two tasks re-paragraphed)
 
 ## Blocking
 (none)
 
-## Fixed
-- exercises.json L2-05 b): "Moninkertainenko" (awkward, abstract) changed to "Kuinka monta kertaa suurempi ..." (plain words, same meaning, no numbers touched).
-
 ## Polish
-(none)
+- [Minor] fy6-15-L1-09 text, situation D — "kahden askelen välillä" is a wrong form and the gloss is clumsy; write "Askeljännite on jännite maan pisteiden välillä, kun ihminen astuu yhden askeleen." (or "kahden askeleen välillä").
+- [Minor] fy6-15-L1-09 solution — "Jännitteen mukaan järjestys olisi eri, A, B ja C, D" is hard to parse (B and C both 230 V); write "Jännitteen mukaan järjestys olisi A, sitten B ja C (molemmissa 230 V) ja viimeisenä D".
+- [Minor] fy6-15-L1-09 text — the closing question ("Missä järjestyksessä ...") and the widget prompt ("Järjestä tilanteet ...") ask the same thing twice; keep the prompt only.
 
 ## Checked
-- Captures opened: fi-easy exercise level 2 and 3 at 1280 px and the 390 px stage; data tables, solution boxes and answer units render, nothing clipped.
-- Plain Finnish: short sentences, terms explained (läpilyöntilujuus, vikavirta, suojausluokka).
+- fy6-15-open-exercises-1280-9.png (task text, four situation paragraphs, the four "Paikka" selects, Vastaa, answer chip, Kysytty, Periaate) and -10.png (Mallivastaus lines I_A-I_D, the closing paragraphs): selects are whole labelled rows, decimal comma, units with thin spaces and the colon for division render; the plain-language glosses (tuntokynnys eli raja ...) are consistent; nothing clipped or overflowing.
+- The re-paragraphed L2/L3 tasks were not opened; the change is mechanical.
 
 ## Scores
-illustrations 4 · typography 5 · language 5 · accessibility 4
+illustrations n/a (4) · typography 5 · Finnish (selkeä) 4 · accessibility 4

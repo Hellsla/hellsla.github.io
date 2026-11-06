@@ -1,20 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 423d58d957cde771
-Mode: full
-Round: 1
+CONTENT-HASH: 9d14eab469b0e194
 
 ## Blocking
-(none)
 
 ## Fixed
-- (none) The English matches the Finnish in content and reads naturally; no text edits were needed.
+- L1-09 feedback: "like in a heating filament lamp" changed to "like in a filament lamp that heats up"; "at a current of 4.0 mA U = RI" changed to "... the voltage is U = RI".
 
 ## Polish
-(none)
 
 ## Checked
-- All 20 exercises: ids, answers, units, tolerances, correct flags and choice order equal the Finnish (scripted comparison, decimal comma normalised).
-- 8 new exercises (L1-06..08, L2-05..07, L3-04..05): data table cells and every number in texts, feedback and solutions equal the Finnish.
-- Answers recomputed: 0.3 A, 150 ohm, 2.0 times, 4.9 ohm, 600 ohm, 38 %.
-- Solutions follow the Finnish structure; physics statements (Ohm's law conditions, resistivity vs resistance, lamp and diode as non-ohmic) unchanged.
-- check_i18n.py en: 0 errors.
+- New task fy6-3-L1-09 compared with the reviewed Finnish: graph choice A-D: same correct graph C, 8.0 V at 4.0 mA, A (2.0 mA; 2.0 V), B 0.50 kOhm, D constant 2.0 V; new figure descriptions match the points.
+- Ids, answer text, units, tolerance, correct flags, option/statement order, figure keys and every number and LaTeX expression identical (English decimal point).
+- Solution carries the same steps and results as fi; principle stated, unknown solved symbolically, reasonableness points kept.
+- Natural English, no Finnish left, terms as in the glossary.
+- check_i18n.py en shows nothing for fy6-3; build.py fy6-3 succeeds.

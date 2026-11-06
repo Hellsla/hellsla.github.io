@@ -113,6 +113,41 @@
       "answer": 0.3,
       "unit": "A",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-3-L1-09",
+      "level": 1,
+      "kind": [
+        "graph",
+        "concept"
+      ],
+      "text": "The resistance of a resistor in an electronic circuit is $2.0\\,\\text{k}\\Omega$. The resistor obeys Ohm's law, because its temperature stays the same.\n\nWhich of the graphs is the characteristic curve of the resistor, when the current $I$ is on the horizontal axis and the voltage $U$ on the vertical axis?",
+      "answer": "Graph C",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Graph A",
+          "figure": "fy6-3/pick-curve",
+          "feedback": "The curve passes through the point $(4.0\\,\\text{mA};\\ 8.0\\,\\text{V})$, where $U : I = 2.0\\,\\text{k}\\Omega$, but it is curved. There the resistance increases with the voltage, like in a filament lamp that heats up. The resistance of a resistor obeying Ohm's law is constant."
+        },
+        {
+          "text": "Graph B",
+          "figure": "fy6-3/pick-k05",
+          "feedback": "Here the slope has been taken to be the ratio of the current to the voltage, $I : U$. In the graph a current of $4.0\\,\\text{mA}$ corresponds to a voltage of only $2.0\\,\\text{V}$, so the resistance would be $0.50\\,\\text{k}\\Omega$. Resistance is $U : I$."
+        },
+        {
+          "text": "Graph C",
+          "figure": "fy6-3/pick-k2",
+          "correct": true,
+          "feedback": "Correct: the line passes through the origin, and at a current of $4.0\\,\\text{mA}$ the voltage is $U = RI = 2.0\\,\\text{k}\\Omega \\cdot 4.0\\,\\text{mA}$, that is, $U = 8.0\\,\\text{V}$. The slope is $2.0\\,\\text{k}\\Omega$ along the whole line."
+        },
+        {
+          "text": "Graph D",
+          "figure": "fy6-3/pick-flat",
+          "feedback": "Here the numerical value of the resistance has been drawn as the value of the voltage. The voltage stays the same although the current increases, so the ratio $U : I$ would decrease all the time. In a characteristic curve the resistance shows as the slope of the line, not as the height of the curve."
+        }
+      ]
     }
   ],
   "level2": [

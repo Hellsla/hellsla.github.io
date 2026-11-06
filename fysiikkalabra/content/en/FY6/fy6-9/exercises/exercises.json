@@ -110,6 +110,37 @@
       "answer": 5.2,
       "unit": "h",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-9-L1-09",
+      "level": 1,
+      "text": "A power bank is marked with its capacity $Q$ in ampere-hours and its nominal voltage $U$ in volts. An empty power bank charges full in a time $t$, given in hours.\n\nWhich of the expressions gives the energy stored in the power bank? Deduce the answer from the units of the expressions.",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "$UQ$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "$Q$",
+          "feedback": "The unit of the expression is the ampere-hour, which is a unit of charge, not of energy. Here the capacity has been mistaken for energy. A battery does not store charge, and energy also needs the voltage."
+        },
+        {
+          "text": "$UQ$",
+          "correct": true,
+          "feedback": "Correct: $\\text{V}\\cdot\\text{Ah} = \\text{Wh}$, which is a unit of energy. Energy is voltage times charge, $W = UQ$, and a watt-hour is $3600\\,\\text{J}$."
+        },
+        {
+          "text": "$\\dfrac{UQ}{t}$",
+          "feedback": "The unit of the expression is $\\tfrac{\\text{Wh}}{\\text{h}} = \\text{W}$, that is, the unit of power. Here energy has been mixed up with power: the expression tells how fast energy is stored on average."
+        },
+        {
+          "text": "$UQt$",
+          "feedback": "The unit of the expression is $\\text{Wh}\\cdot\\text{h}$, not a unit of energy. Here the product $UQ$ has been taken for power and multiplied by the time, although the time is already in the capacity: $1\\,\\text{Ah} = 1\\,\\text{A}\\cdot 1\\,\\text{h}$."
+        }
+      ]
     }
   ],
   "level2": [

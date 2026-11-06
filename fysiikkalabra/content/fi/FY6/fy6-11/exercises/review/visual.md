@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 171aa8bf96452262
-
-Round 3. The round-2 Blocking item (11-15 Annettu line) is resolved; nothing else changed.
+CONTENT-HASH: 5e217585a15dde17
+ROUND: 2 (delta)
 
 ## Blocking
+None.
 
 ## Polish
-- [Minor] 11-15 Sijoitus — one long run-on paragraph for a), b) and c) before the boxes (still visible in open-exercises-L2-1280-10); start b) and c) on their own lines.
-- [Minor] 11-19 (L3-04) Vastaus — c) mixes "alle 1 %" with the Järkevyys "1,3 %" check; state "noin 0,1 %" consistently (1,60 vs 1,602). Carried over.
-- [Minor] 11-13, 11-15 (carried over) — F(d) and F(x) tasks have no plot; optional.
+- [Minor] fy6-11-L2-08 option order — the page shuffles the options but the labels are fixed, so the list reads A, C, B, D (carried over).
+- [Minor] fy6-11-L2-08 figures — four option cards each about 330 px tall with the drawing in the middle third (carried over); reduce the figure height.
+- [Minor] fy6-11-L2-08 options — A, C and D each differ from B by one error (inherent to the task type).
 
 ## Checked
-- Diff d6007a53c^..d6007a53c: only solutions.md L2-07 Annettu, 52,1 → 58,0 µN; the list now reads 60,2; 59,8; 59,5; 59,0; 58,0 and 33,0 µN, identical to the task table (open-exercises-L2-1280-9: 58,0 at 8,0 cm) and to E = 2,90 · 10⁴ V/m and 3,7 % in the Sijoitus.
-- Opened open-exercises-L2-1280-9 (task, table, Annettu) and -10 (Sijoitus, Vastaus, Järkevyys): layout intact, no clipping or overflow.
-- Hash identical at start and end. No 360 px exercise capture exists.
+- Rendered at 390 px (all four options, B with solution open) and the four figures: arrow lengths unchanged and to one scale (F_s twice G), "pölyhiukkanen" wording and new values 2,0 · 10^-11 N / 9,8 · 10^-12 N consistent in task, feedback and solution; aria-labels say hiukkanen and keep the full description (D names the missing weight); no overflow. The round-1 304 px chain is gone: the G calculation is now split into three short rows, none over 290 px.
+- L3-01 and L3-02 re-checked at 390 px, clean.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

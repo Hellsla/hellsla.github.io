@@ -22,7 +22,7 @@ Apps Script -versio jää valmiiksi siltä varalta, että kaupunki sallii sen.
 | `apps-script/Tehtavat.gs` | FY3:n luvut opetusjärjestyksessä ja niiden tehtävänannot (`RL_COURSE`), **generoitu**: `python scripts/palautus_tasks.py` |
 | `apps-script/appsscript.json` | manifesti: aikavyöhyke, V8 ja kolme oikeutta |
 | `arviointi-<lv>-p<periodi>.html` | paikallinen arviointisivu kuluvalle periodille, **generoitu** samalla komennolla (`palautus_tasks.py`) |
-| `paikallinen/local-backend.js` | paikallisen sivun korvikkeet Sheets-, Drive- ja google.script.run-palveluille, zipin luku, localStorage, CSV ja varmuuskopio |
+| `paikallinen/local-backend.js` | paikallisen sivun korvikkeet Sheets-, Drive- ja google.script.run-palveluille, zipin luku, localStorage (tilat ja pisteet), IndexedDB (palautukset), CSV ja varmuuskopio |
 | `test/gas-mock.js` | testien korvikkeet Sheets-, Drive- ja google.script.run-palveluille |
 
 RuukkiLabran puolella: `templates/palautus.js` (painike *Lataa kaikki ratkaisut* ja tiedoston muodostus; ei pitkää ohjetta eikä

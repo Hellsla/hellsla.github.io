@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 07e87142e01fa3c8
+CONTENT-HASH: 7f59adac9f04c880
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] whole page (pre-existing, outside this delta) — other inline formulas still break at 390 px, e.g. `0{,}5\,\text{V} : 0{,}050\,\text{A} = 10\,\Omega`; templates/lesson.html glues only pieces of at most 14 characters, so a longer formula can break (teacher's rule: never) — brace each as one group `${...}$`, as done in fy7-2 L1-02, or show it as a display row.
+(none)
 
 ## Checked
-- delta review of 2c31ff041: misconception paragraph ("Ohmin lakia noudattavan vastuksen", $R = U : I$); diff read. `screenshot.py fy6-3 --lang fi-easy --if-stale` (fresh captures).
-- Own 390 px element captures of each changed block opened (scratchpad caps/fi-easy-fy6-3-*-390.png): text wraps cleanly, KaTeX renders, no clipping, no horizontal scroll. Measured every inline .katex (getClientRects().length) at 360, 390 and 1280 px, all boxes open and all feedback shown, after `build.py fy6-3`: no formula in a changed passage breaks onto two lines.
-- Earlier: batch delta review: opened the captures of the changed passages (theory-1280 / example-390), source diff read; no figure changed; text-only edits render cleanly, no clipping, no horizontal overflow, no inline formula wrapped.
+- delta (figures.json only, 384fe88c6..HEAD): lesson.md unchanged; the new "mA" word and the four (I,U) pick-* descriptions belong to exercise option figures; no lesson figure uses them.
+- Re-ran screenshot.py for this hash and opened the captures of the lesson's theory pages at 1280 px (figures, labels, units, captions): all labels render, nothing clipped, no overflow, no figure label changed.
+- No lesson figure shows F_s or F_e, so the en label mapping "s" to "e" has no effect on the lesson's figures.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

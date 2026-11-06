@@ -275,6 +275,66 @@
           "feedback": "Sisäinen resistanssi on pariston ominaisuus eikä muutu virran mukana. Virta on nolla, koska ulkoista piiriä ei ole, ei siksi että $R_\\text{s}$ olisi ääretön."
         }
       ]
+    },
+    {
+      "id": "fy6-8-L2-08",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "Pariston napajännite $U$ mitattiin viidellä kuormitusvirralla $I$, ja tulokset ovat taulukossa. Jännitemittarin lukeman epävarmuus on $\\pm 0{,}01\\,\\text{V}$. Virran epävarmuus on niin pieni, että se jätetään huomiotta.\n\nMikä johtopäätös mittauksista on perusteltu?",
+      "answer": "Lähdejännite on noin $1{,}55\\,\\text{V}$, ja sisäinen resistanssi on noin $0{,}40\\,\\Omega$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Napajännite ja virta (esimerkkiaineisto)",
+        "columns": [
+          "$I\\,(\\text{A})$",
+          "$U\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "0.10",
+            "1.51"
+          ],
+          [
+            "0.30",
+            "1.43"
+          ],
+          [
+            "0.50",
+            "1.36"
+          ],
+          [
+            "0.70",
+            "1.27"
+          ],
+          [
+            "0.90",
+            "1.19"
+          ]
+        ]
+      },
+      "choices": [
+        {
+          "text": "Lähdejännite on noin $1{,}51\\,\\text{V}$, ja sisäinen resistanssi on noin $0{,}40\\,\\Omega$.",
+          "feedback": "Tässä pienimmän virran napajännite on luettu lähdejännitteeksi. Virralla $0{,}10\\,\\text{A}$ sisäisessä resistanssissa on jo jännite, joten lähdejännite saadaan jatkamalla suoraa kohtaan $I = 0$."
+        },
+        {
+          "text": "Lähdejännite on noin $1{,}55\\,\\text{V}$, ja sisäinen resistanssi on noin $0{,}40\\,\\Omega$.",
+          "correct": true,
+          "feedback": "Oikein: suora pisteiden kautta leikkaa pystyakselin noin kohdassa $1{,}55\\,\\text{V}$, ja sen kulmakerroin on noin $-0{,}40\\,\\Omega$."
+        },
+        {
+          "text": "Lähdejännite on noin $1{,}51\\,\\text{V}$, ja sisäinen resistanssi on noin $1{,}3\\,\\Omega$.",
+          "feedback": "Tässä on kaksi virhettä. Pienimmän virran napajännite on luettu lähdejännitteeksi, ja yhden mittauksen $U : I$ on ulkoisen kuorman resistanssi. Sisäinen resistanssi saadaan napajännitteen muutoksesta, $R_\\text{s} = -\\Delta U : \\Delta I$."
+        },
+        {
+          "text": "Lähdejännite on noin $1{,}55\\,\\text{V}$, ja sisäinen resistanssi muuttuu virran mukana.",
+          "feedback": "Napajännitteen pudotukset peräkkäisten mittausten välillä, $0{,}07$–$0{,}09\\,\\text{V}$, eroavat enintään $0{,}02\\,\\text{V}$. Kahden pudotuksen erotus riippuu kolmesta tai neljästä lukemasta, joten sen epävarmuus on jopa $0{,}04\\,\\text{V}$. Ero mahtuu lukemien epävarmuuteen: pisteet sopivat yhdelle suoralle, eikä mittauksista voi päätellä resistanssin muuttuvan."
+        }
+      ]
     }
   ],
   "level3": [

@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: aab8e734d01b85c6
+CONTENT-HASH: b895fc7f1ff12796
 
 ## Blocking
 
 ## Fixed
-- L1-07 text: "the lever is free" was unclear (fi: vipu on irti); now "the lever is lifted off the contact".
-- L2-06 text, answer, solution: "base of the lamp" changed to "terminal of the lamp" (fi: kanta; clearer English).
-- L2-07 a): "Tell how" changed to "Describe how".
-- L3-05 text: "passes through the conductor" changed to "flows in the wire"; "In a second" to "In one second".
+- L1-09 text: "Reason which statements" changed to "Decide which statements" (natural English).
 
 ## Polish
 
 ## Checked
-- Scripted comparison of the 8 new exercises (L1-06..08, L2-05..07, L3-04..05) against fi: ids, answers, units, tolerances, correct flags, choice order, data table cells and every number and LaTeX expression identical (decimal point in en).
-- Choice feedback of L1-06 and L1-07 matches the Finnish science content; solutions of all 8 carry the same steps and results (22.8 C, 12.5 Wh, 7.2 %, 0.0192 mm/s).
-- No Finnish left in en exercises.json or solutions.md; English natural and consistent with the glossary.
-- check_i18n.py en: 0 errors.
+- New task fy6-1-L1-09 compared with the reviewed Finnish: statements true/false (YO form): same 5 statements and truth values, Q = It = 18 C, E = UQ = 54 J, 3.0 J/C.
+- Ids, answer text, units, tolerance, correct flags, option/statement order, figure keys and every number and LaTeX expression identical (English decimal point).
+- Solution carries the same steps and results as fi; principle stated, unknown solved symbolically, reasonableness points kept.
+- Natural English, no Finnish left, terms as in the glossary.
+- check_i18n.py en shows nothing for fy6-1; build.py fy6-1 succeeds.

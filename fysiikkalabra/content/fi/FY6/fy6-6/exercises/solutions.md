@@ -194,3 +194,24 @@
 **Sijoitus:** $R_\text{L} = \dfrac{(230\,\text{V})^2}{2000\,\text{W}} = 26{,}45\,\Omega$. Ohut johto: $I = \dfrac{230\,\text{V}}{26{,}45\,\Omega + 2{,}4\,\Omega} = 7{,}97\,\text{A}$ ja $P_\text{o} = 2{,}4\,\Omega \cdot (7{,}97\,\text{A})^2 = 152{,}5\,\text{W}$. Paksu johto: $I = \dfrac{230\,\text{V}}{26{,}45\,\Omega + 0{,}71\,\Omega} = 8{,}47\,\text{A}$ ja $P_\text{p} = 0{,}71\,\Omega \cdot (8{,}47\,\text{A})^2 = 50{,}9\,\text{W}$
 **Vastaus:** $152{,}5\,\text{W}$, pyöristettynä $1{,}5 \cdot 10^{2}\,\text{W}$ eli noin $150\,\text{W}$ ohuessa johdossa ja $51\,\text{W}$ paksussa, kaksi merkitsevää numeroa kuten resistanssissa $2{,}4\,\Omega$. Virta on molemmilla johdoilla lähes sama, $7{,}97\,\text{A}$ ja $8{,}47\,\text{A}$, joten johdon teho $RI^2$ riippuu lähinnä sen resistanssista: ohuen johdon resistanssi on noin $3{,}4$-kertainen ja teho noin kolminkertainen. Rullalla oleva ohut johto jäähtyy huonosti, joten se lämpenee. Kuormitettu johtokela kannattaa kelata auki, eikä johdon sallittua virtaa saa ylittää. Paksussa johdossa muuttuu vähemmän energiaa, joten se pysyy viileämpänä.
 **Järkevyys:** Ohuen johdon kanssa lämmittimen teho on $26{,}45\,\Omega \cdot (7{,}97\,\text{A})^2 = 1681\,\text{W}$, ja yhdessä johdon kanssa $1681\,\text{W} + 152{,}5\,\text{W} = 1834\,\text{W}$. Tämä on sama kuin lähteen teho $230\,\text{V} \cdot 7{,}97\,\text{A} = 1834\,\text{W}$. Lämmitin saa siis ohuen johdon takia noin $1681\,\text{W}$ nimellistehon $2000\,\text{W}$ sijaan.
+
+## fy6-6-L2-08
+**Kysytty:** miten vastuksen $R_1$ teho muuttuu, kun sen kanssa kytketään sarjaan samanlainen vastus $R_2$ ja lähteen jännite pysyy samana.
+**Periaate:** Sarjaankytkennän kokonaisresistanssi on vastusten resistanssien summa, ja kaikkien vastusten läpi kulkee sama virta $I = \tfrac{U}{R_1 + R_2}$. Vastuksen $R_1$ teho saadaan Joulen laista $P_1 = R_1 I^2$, koska virta tunnetaan. Teho riippuu virran neliöstä, joten virran puolittuminen pienentää tehon neljäsosaan.
+**Mallivastaus:** Kun vastus $R_1$ on yksin, virta ja teho ovat
+
+$$\begin{aligned}
+&I = \frac{12\,\text{V}}{24\,\Omega} = 0{,}50\,\text{A} \\
+&P_1 = 24\,\Omega \cdot (0{,}50\,\text{A})^2 \\
+&\phantom{P_1} = 6{,}0\,\text{W}
+\end{aligned}$$
+
+Sarjaankytkennässä kokonaisresistanssi on $24\,\Omega + 24\,\Omega = 48\,\Omega$, ja
+
+$$\begin{aligned}
+&I' = \frac{12\,\text{V}}{48\,\Omega} = 0{,}25\,\text{A} \\
+&P_1' = 24\,\Omega \cdot (0{,}25\,\text{A})^2 \\
+&\phantom{P_1'} = 1{,}5\,\text{W}
+\end{aligned}$$
+
+Tehojen suhde on $\tfrac{1{,}5\,\text{W}}{6{,}0\,\text{W}} = \tfrac{1}{4}$, eli vastuksen $R_1$ teho pienenee neljäsosaan. Saman tuloksen antaa jännite: vastuksen $R_1$ yli on enää $6{,}0\,\text{V}$, ja $\tfrac{(6{,}0\,\text{V})^2}{24\,\Omega} = 1{,}5\,\text{W}$. Teho ei pysy samana, koska vastuksen yli ei ole enää koko lähteen jännite, eikä se pienene vain puoleen, koska teho riippuu virran neliöstä.

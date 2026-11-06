@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 885c14806ece5ea9
-Mode: full in the packet; scope by the teacher's ruling ("katselmoi vain muuttuneet osat"): the diff since the last PASS (`git diff f35980b22 -- content/fi-easy/FY6/fy6-12/exercises`) plus what the changed lines touch.
-Round 2 (follow-up: korjattujen käsitteiden yhdenmukaisuus)
+CONTENT-HASH: 5d9a1e2a7804d5aa
+Mode: full (translation review against the reviewed Finnish set; new YO-skill task L2-08 (error-finding, potential vs potential difference, eV))
+Round 3
 
 ## Blocking
 (none)
 
 ## Polish
-- exercises.json:72 — "Tässä potentiaali on nolla negatiivisella levyllä" says "tässä", but the L1-06 stem shows no plates — optional: "Kun potentiaali on nolla negatiivisella levyllä ja x on etäisyys siitä, ..."; physics is right as it stands.
+(none)
 
 ## Checked
-- Diff is five lines: `core: true` on L1-04, L1-06, L1-08, L2-03 and one feedback sentence in L1-06; no number, answer, unit, tolerance or correct flag changed.
-- L1-06 feedback: zero of potential at the negative plate, x measured from it, matches the fi change and the lesson's convention; sign agrees with the correct option.
-- Same core marks as fi.
-- Hash 885c14806ece5ea9 at start and end, equal to the packet's.
+- Fixed: nothing needed; the new task already matched the Finnish.
+- Parity script over all of exercises.json against fi: same keys, ids, kind lists, fbd flag, correct flags, choice order, figure ids, units, tolerances, answers; every number equals the Finnish (only the order of two given quantities differs in a few English/fi-easy sentences, no change of meaning).
+- New task L2-08 (error-finding, potential vs potential difference, eV): recomputed by hand from the task text; the correct option and every distractor's feedback state the same physics and numbers as fi.
+- solutions.md: same sections and same numbers as fi for all tasks (the new solution follows the same steps and reaches the same result).
+- Terms and notation as in the lesson; Selkeä suomi per NOTES.md §12 (difficult words explained in the sentence, short sentences, no step dropped, decimal comma).
+- check_i18n: 0 errors (fi-easy); build.py fy6-12 succeeds.
