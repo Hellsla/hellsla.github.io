@@ -573,14 +573,13 @@ h2.intro-h{margin:0 0 .45rem;font:700 var(--fs-small)/1.3 var(--sans);letter-spa
      (teacher 2026-11-05); the panel then starts 2rem right of the column and takes the rest of the window */
   html.tasks-split[style*="--split-l"] .page{margin:0;width:calc(var(--measure) + 0px);margin-left:var(--split-l)}
   html.tasks-split[style*="--split-l"] #exercises{left:calc(var(--split-l) + var(--measure) + 2rem);right:auto;width:min(var(--split-w),calc(100vw - var(--split-l) - var(--measure) - 2rem))}
-  html.tasks-split[style*="--split-l"] #exercises .pad .rich-text-editor-toolbar-root>div{left:calc(var(--split-l) + var(--measure) + 2rem)!important;right:auto!important;width:min(var(--split-w),calc(100vw - var(--split-l) - var(--measure) - 2rem))!important}
   html.tasks-split main.lesson{max-width:none}
   html.tasks-split #exercises{position:fixed;top:0;right:var(--split-side);bottom:0;z-index:30;width:var(--split-w);box-sizing:border-box;margin:0;padding:0 1.5rem 3rem;overflow-y:auto;overscroll-behavior:contain;
     container:content / inline-size;background:var(--bg);border-left:1px solid var(--line);border-right:1px solid var(--line);box-shadow:0 0 28px -14px rgba(20,23,30,.35)}
   html.tasks-split #exercises>.split-head{position:sticky;top:0;z-index:3;margin:0 -1.5rem 1rem;padding:0 1.5rem .7rem;border-top:0;border-bottom:1px solid var(--line);background:var(--bg)}
   html.tasks-split #exercises>.split-head>h2{padding-top:.8rem}
   html.tasks-split #exercises .act-exercises{margin-top:0}
-  html.tasks-split #exercises .pad .rich-text-editor-toolbar-root>div{left:auto!important;right:var(--split-side)!important;width:var(--split-w)!important;max-width:var(--split-w)}   /* Abitti's toolbar over the panel, not over the theory */
+  /* Abitti's toolbar keeps the whole width of the window also beside the theory (teacher 2026-11-06: over the panel alone it was too narrow) */
   html.tasks-split #exercises .pad .rich-text-editor-toolbar-root button{white-space:nowrap}
   html.tasks-split #exercises:has(.rich-text-editor-toolbar-root>div)>.split-head{top:36px}   /* while the toolbar shows, the panel's heading sits under it */
 }
@@ -1162,6 +1161,11 @@ html.ex-focus-on{overflow:hidden}
   .ex-focus-pad{border-top:0;border-left:1px solid var(--line);padding-left:2.5rem}
   .ex-focus-pad .pad .rich-text-editor{min-height:calc(100dvh - 15rem)}
   .ex-focus-body.no-pad{grid-template-columns:minmax(0,44rem);justify-content:center}
+  /* a short task (under half the view's height, lesson.js part 10): the task on top and the editor under it, filling the rest */
+  .ex-focus-body.stack{display:block;max-width:48rem;overflow-y:auto}
+  .ex-focus-body.stack>.ex-focus-task,.ex-focus-body.stack>.ex-focus-pad{overflow:visible;padding:1.4rem 0 0}
+  .ex-focus-body.stack>.ex-focus-pad{border-left:0;border-top:1px solid var(--line);margin-top:1.2rem;padding-bottom:3rem}
+  .ex-focus-body.stack .ex-focus-pad .pad .rich-text-editor{min-height:max(14rem,calc(100dvh - var(--tb,0px) - var(--th,0px) - 16rem))}
 }
 @media (max-width:600px){.ex-focus-nav{width:100%;margin-left:0}.ex-focus-nav .ex-focus-btn{flex:1;padding:0 .5rem}.ex-focus-body{padding:.8rem .8rem 3rem}.ex-focus-close::after{content:""}}
 /* Abitti's toolbar over the whole window in the dialog, also when the side panel is open (its rules point it at the panel) */
