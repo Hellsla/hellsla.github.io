@@ -94,14 +94,14 @@ def paste_png(pg, tid, path):
 
 def download(pg):
     with pg.expect_download(timeout=15000) as d:
-        pg.click(".palautus-btn")
+        pg.click("button.palautus-btn")
     return d.value.suggested_filename, json.loads(pathlib.Path(d.value.path()).read_text())
 
 
 def no_download(pg):
     got = []
     pg.once("download", lambda d: got.append(d))
-    pg.click(".palautus-btn")
+    pg.click("button.palautus-btn")
     pg.wait_for_function("document.querySelector('.palautus-status').dataset.state === 'no' || document.querySelector('.palautus-status').dataset.state === 'ok'", timeout=15000)
     pg.wait_for_timeout(300)
     return not got, pg.inner_text(".palautus-status")
@@ -125,8 +125,14 @@ with sync_playwright() as p:
     panel = pg.locator("#exercises .palautus")
     expect("the panel is at the top of Tehtävät", panel.count() == 1 and pg.evaluate("(() => { const p = document.querySelector('#exercises .palautus').previousElementSibling; return !!p && (p.matches('h2') || p.matches('.split-head')); })()"))
     ptext = panel.inner_text().strip()
-    expect("only the button 'Lataa kaikki ratkaisut', no long instructions (teacher 2026-11-05)", ptext == "" and pg.locator("#exercises .palautus-btn").count() == 1 and pg.inner_text("#exercises .palautus-btn") == "Lataa kaikki ratkaisut", ptext)
-    expect("the button is in the heading row before 'Avaa tehtävät teorian viereen' (teacher 2026-11-05)", pg.evaluate("(() => { const b = document.querySelector('#exercises .palautus-btn'); return !!b && b.parentElement.matches('.split-head') && !!b.nextElementSibling && b.nextElementSibling.matches('.split-toggle'); })()"))
+    expect("only the button 'Lataa kaikki ratkaisut', no long instructions (teacher 2026-11-05)", ptext == "" and pg.locator("#exercises button.palautus-btn").count() == 1 and pg.inner_text("#exercises button.palautus-btn") == "Lataa kaikki ratkaisut", ptext)
+    expect("the buttons are in the heading row: Lataa kaikki ratkaisut, Palauta, then 'Avaa tehtävät teorian viereen' (teacher 2026-11-05/06)", pg.evaluate("(() => { const b = document.querySelector('#exercises button.palautus-btn'); const a = b && b.nextElementSibling; return !!b && b.parentElement.matches('.split-head') && !!a && a.matches('a.palautus-link') && a.textContent === 'Palauta' && a.getAttribute('href') === 'palautukset.html' && !!a.nextElementSibling && a.nextElementSibling.matches('.split-toggle'); })()"))
+    expect("the heading row's buttons are on one line at 1280 px", pg.evaluate("(() => { const t = [...document.querySelectorAll('#exercises .split-head > button, #exercises .split-head > a')].map((e) => Math.round(e.getBoundingClientRect().top)); return t.length === 3 && new Set(t).size === 1; })()"))
+    pg.goto(BASE + "palautukset.html")
+    links = pg.evaluate("[...document.querySelectorAll('main a.return-form')].map((a) => [a.textContent, a.getAttribute('href')])")
+    expect("Palautukset page: period title and one button per group linking to its form", pg.inner_text("h1") == "Palautukset · 1. periodi · lv 2026-27" and ["FY3.2", "https://forms.gle/1JEQYSTidBPETrxbA"] in links and all(h.startswith(("https://forms.gle/", "https://docs.google.com/forms/")) for _, h in links), links)
+    expect("Palautukset page loads nothing from Google (links only)", not pg.evaluate("[...document.querySelectorAll('script[src],link[href],img[src],iframe')].some((e) => /google|gle/.test(e.src || e.href || ''))"))
+    pg.goto(BASE + "fy3-1.html"); pg.evaluate(OPEN)
     expect("no separate image button (Ctrl+V only)", pg.locator(".pad-image").count() == 0)
     tasks = pg.evaluate("[...document.querySelectorAll('#exercises li[id]')].filter((li) => li.querySelector(':scope > .task')).map((li) => li.id)")
     # another chapter's solution in the same store must stay out
@@ -158,7 +164,7 @@ with sync_playwright() as p:
     img = a1["content"][3]
     expect("the picture is embedded PNG data, not a blob or link", img["mime"] == "image/png" and base64.b64decode(img["data"]) == small.read_bytes() and (img["w"], img["h"]) == (40, 30))
     expect("unanswered tasks are 'empty' with no content", all(a["status"] == "empty" and a["content"] == [] for a in f1["answers"][1:]))
-    expect("the page says to return the file with Forms", "Palauta ladattu tiedosto opettajan Google Forms -lomakkeella." in pg.inner_text(".palautus-status"))
+    expect("the page says to return the file with Forms", "Palauta ladattu tiedosto Palauta-napista oman ryhmäsi lomakkeella." in pg.inner_text(".palautus-status"))
     _, f1b = download(pg)
     expect("the same solutions keep the submission id", f1b["submission_id"] == f1["submission_id"] and f1b["content_sha256"] == f1["content_sha256"])
     # a second task with a picture, then change text / replace / remove the picture
