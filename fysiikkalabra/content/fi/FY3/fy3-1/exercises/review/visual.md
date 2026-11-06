@@ -1,20 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: aee75e10fdf5cfc4
-ROUND: 2
+CONTENT-HASH: e2152bc8e282da0b
+ROUND: 1
 
 ## Blocking
-(none) Earlier Blocking: none. Round-1 Polish on L3-05 (chain broken mid-product, "b)" left at line end, inline display fraction) is resolved: the Sijoitus is now one aligned display block and the 612 kg comparison uses a colon.
+(none)
 
 ## Polish
-- [Minor] Task tables (L2-05, L3-04, L3-05, 1280 px) — column header is centred while the numbers sit left or right, so they do not line up — align header and cells the same way.
-- [Minor] L2-07 (open-exercises-L2-1280-7) — for the error task the Mallivastaus a) stands before Kysytty/Periaate; the usual order (given, asked, principle) is broken only here — optional: keep the order and put the model answer after Sijoitus.
-- [Minor] No 360 px captures of the new tasks exist (only the collapsed stage-exercises-390); check_layout 360 is clean.
+- [Minor] fy3-1-L1-09 option names — the choices are shuffled, so the labels appear as C, B, D, A while the text and solution refer to "Voimakuvio B" etc.; works, but reads scrambled — optional: name the options by a non-ordinal tag or keep figure options in A–D order.
+- [Minor] pick-extra (D) — F_k starts at the lower face although the force acts on the meter; intended as the misconception, the feedback explains it — no change needed, optional note in the solution that F_k is drawn only to be rejected.
+- [Minor] aria-labels of the four figures state the arrow lengths and give "F_k" as plain text (allowed in aria-label); they also describe the answer — acceptable for a screen reader.
 
 ## Checked
-- open-exercises-1280-8: L1-08 (0,18 t, Muunnokset 1 t = 1000 kg, answer 670 N matches 667,8 N).
-- open-exercises-L2-1280-5, -7: L2-05 (table, origin and (0,50 kg; 4,90 N) read-off, 9,8 m/s²), L2-06 and L2-07 (error task, "kymmenesosa" now matches 4,9/9,81).
-- open-exercises-L3-1280-6, -7: L3-04 (3,6 m/s², Mars verdict), L3-05 (aligned Sijoitus, a) and b) in one block).
-- Reordered MC choices (L1-06, L1-07) read in the diff; quantities in KaTeX, decimal comma, no clipping or overflow at 1280.
+- Rendered myself at 390 px (Playwright, feedback and solution open) and at 2x zoom: fy3-1-L1-09 and all four figures pick-rest, pick-long-pull, pick-extra, pick-weight-only.
+- Figures: forces red (#c92a2a), G and F and F_k as KaTeX italic with subscript, labels about 22 px at phone width, body and arrows clear; wrong options differ plainly (C: F twice G; D: third arrow; A: only G) and share the scale with B. No clipping, no horizontal overflow at 390 and 360 (measured scrollWidth).
+- Solution text, Sijoitus chain (three short display rows), quantities all in LaTeX, case endings ($4{,}9\,\text{N}$:n) read from the render.
+- Text only: the rest of the set (unchanged since PASS). The correct option is not identifiable by form; distractors catch the chapter's warned mistakes (missing meter force, F larger than G, F_k on the body).
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

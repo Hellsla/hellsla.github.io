@@ -1,15 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 42492e47d1fafc99
-Round: 3
-
-Round 3 checks the last commit (`git show HEAD -- content/fi/FY3`), which touches only the fy3-4 L3-05 Järkevyys line; the rest is covered by the round-2 PASS.
-
+CONTENT-HASH: 89a47ad1ed9999a9
 ## Blocking
-- none
-
+(none)
 ## Polish
-- fy3-4-L3-05: the answer field takes F4 only; F1 and the 1:3:5:7 ratio carry the part d) reasoning but are not checked. Acceptable (carried over).
-
+- (carried from round 1, unchanged, optional) the 10^6 feedback wording and the undefined word "suuruusluokka" in the stem.
 ## Checked
-- The ≈ in the L3-05 Järkevyys is the right sign for a check made with rounded kN values, and it models for students that a rounded product is compared approximately. It matches the task text, Vastaus and the answer 858,4 kN; the solution structure is unchanged and complete.
-- Nothing else changed since the round-2 PASS (counts 8/7/5, levels, no duplicates).
+- The inline chain in the correct feedback is split into two short expressions; the solution chain is now a two-line display block; both fit about 300 px.
+- Arithmetic and options unchanged, still correct.
+- Round 2. Checked from text (the diff of 6bbde30c5 against my round-1 findings); no capture was re-opened, so the 390 px fit of the new display blocks and shortened chains is judged from text only.

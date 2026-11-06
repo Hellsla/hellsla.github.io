@@ -89,6 +89,16 @@
 **Answer:** $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$, so the beam is steel. Two significant figures, because the change in length $3.0\,\text{mm}$ was read with two figures. The values are read exactly from the grid, so $11.6\ldots12.4$ is accepted.
 **Reasonableness:** Units: $\dfrac{\text{m}}{\text{m} \cdot \text{K}} = \tfrac{1}{\text{K}}$. Comparison with the table: an aluminium beam would lengthen $23 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 5.00\,\text{m} \cdot 50\,\text{K} = 5.75\,\text{mm}$ and a copper beam $4.25\,\text{mm}$, so only steel gives the $3.0\,\text{mm}$ that was read. A fraction of a millimetre per metre of length is typical of metals.
 
+## fy3-8-L2-08
+**Find:** how the change in length $\Delta L$ changes when we move from rod A to rod B
+**Principle:** The change in length is $\Delta L = \alpha L_0 \Delta T$. It is directly proportional to the initial length $L_0$ and the change in temperature $\Delta T$. The rods are made of the same steel, so the coefficient $\alpha$ is the same and cancels out of the ratio.
+**Model answer:** Let us compare the changes as a ratio:
+$\dfrac{\Delta L_\text{B}}{\Delta L_\text{A}} = \dfrac{\alpha L_\text{B} \Delta T_\text{B}}{\alpha L_\text{A} \Delta T_\text{A}}$
+The ratio of the initial lengths is $L_\text{B} : L_\text{A} = 2.0\,\text{m} : 4.0\,\text{m} = 0.5$.
+The ratio of the changes in temperature is $\Delta T_\text{B} : \Delta T_\text{A} = 30\,\text{K} : 10\,\text{K} = 3$.
+So $\Delta L_\text{B} : \Delta L_\text{A} = 0.5 \cdot 3 = 1.5$, that is, the change in length becomes $1.5$ times as large.
+Estimate: if the coefficient is about $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$, rod A lengthens by about $0.5\,\text{mm}$ and rod B by about $0.7\,\text{mm}$. The shorter rod lengthens more, because its temperature rises three-fold even though its initial length is only half. The change would triple only if the rods were equally long.
+
 ## fy3-8-L3-01
 **Given:** steel gear, diameter of the hole $d_0 = 75.000\,\text{mm}$ at the temperature $T_0 = 20\,{}^\circ\text{C}$, diameter of the axle $d = 75.090\,\text{mm}$, $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ (given in the problem)
 **Find:** the lowest temperature $T$ at which the hole is at least as big as the axle

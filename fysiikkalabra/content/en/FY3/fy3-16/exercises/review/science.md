@@ -1,19 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: a9fc9cb18c0434a8
+CONTENT-HASH: 35a961c55c19b541
 
 ## Blocking
 (none)
 
 ## Fixed
-- (none needed in the exercise files)
+- (none needed)
 
 ## Polish
 - none
 
 ## Checked
-- Delta review of the 8 new tasks (L1-06..08, L2-05..07, L3-04..05) against the reviewed Finnish: ids, levels, kinds, answers (incl. the text answers of L1-06/07), units, tolerances, correct flags and choice order, data table cells all identical (scripted comparison).
-- Every number in exercises.json and solutions.md equals the Finnish (decimal comma normalised to point, `{,}` handled); all 21 solution sections compared one by one.
-- Answers recomputed: 250 s, 76 %, 139 W/K, 2.9 h, 480 EUR, 590 kW.
-- Feedback of each wrong choice keeps the Finnish physics (no "cold flows", equilibrium, c vs latent heat).
-- Translation (English): natural, no Finnish words left; terms consistent (thermal conductivity, latent heat of fusion, heat loss coefficient, U-value).
-- check_i18n.py: 0 errors.
+- New task fy3-16-L2-08 (YO-skill form, reasoning+model) compared with the reviewed Finnish: id, level, kind, answer, unit, tolerance, four choices, correct flag and choice order identical.
+- Physics recomputed: t = s m/(U A ΔT), t2/t1 = (1.5/1.0)(1/0.5)(20/30) = 2; distractors 1 (U forgotten), 0.5 (U inverted), 3 (ΔT forgotten) correct and each feedback is right.
+- Conditions stated: 0 °C inside while ice lasts, no drinks, same area; ΔT in °C equals K.
+- Solution section (Given/Find/Principle/Model answer) has the same numbers and symbols as the Finnish; decimal point used.
+- Translation (English): natural, decimal point, no Finnish words left; terms consistent (U-value, latent heat of fusion).
+- Rest of the set unchanged from the previously passed version.
+- check_i18n.py: nothing for fy3-16; build.py fy3-16 succeeds.

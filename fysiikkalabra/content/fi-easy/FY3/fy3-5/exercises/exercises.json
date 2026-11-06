@@ -109,6 +109,45 @@
       "answer": 36,
       "unit": "kJ",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-5-L1-09",
+      "level": 1,
+      "text": "Lämpöeristetyn sylinterin ilmaa puristetaan nopeasti työntämällä mäntää. Mäntä tekee ilmaan työn $60\\,\\text{J}$. Eristys estää lämmön siirtymisen: ilman ja ympäristön välillä ei siirry lämpöä. Ilma pysyy kaasuna (esimerkkiarvot). Ilma on systeemi.\n\nPäättele, mitkä väitteet puristuksesta ovat tosia ja mitkä epätosia.",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "1 tosi, 2 tosi, 3 epätosi, 4 epätosi, 5 epätosi",
+      "unit": "",
+      "tolerance": 0.02,
+      "statements": [
+        {
+          "text": "Ilman sisäenergia kasvaa $60\\,\\text{J}$.",
+          "true": true,
+          "feedback": "Oikein: $\\Delta U = Q + W$, eli $\\Delta U = 0 + 60\\,\\text{J} = 60\\,\\text{J}$. Lämpöä ei siirry, joten koko työ jää ilmaan sisäenergiaksi."
+        },
+        {
+          "text": "Ilman lämpötila nousee, vaikka lämpöä ei siirry.",
+          "true": true,
+          "feedback": "Oikein: sisäenergia kasvaa ja ilma pysyy kaasuna, joten lämpötila nousee. Ilmaa voi kuumentaa myös tekemällä siihen työtä, kuten pyöräpumpun mäntä tekee."
+        },
+        {
+          "text": "Ilmaan siirtyy lämpömäärä $60\\,\\text{J}$.",
+          "true": false,
+          "feedback": "Väärin: eristyksen takia $Q = 0$. Luku $60\\,\\text{J}$ on männän tekemä työ $W$, ei lämpö. Työ ja lämpö ovat eri tapoja siirtää energiaa."
+        },
+        {
+          "text": "Ilman sisäenergia ei muutu, koska lämpöä ei siirry.",
+          "true": false,
+          "feedback": "Väärin: sisäenergiaa muuttavat sekä lämpö että työ, $\\Delta U = Q + W$. Vaikka $Q = 0$, työ $W = 60\\,\\text{J}$ kasvattaa sisäenergiaa."
+        },
+        {
+          "text": "Puristuksen jälkeen ilmassa on enemmän lämpöä kuin ennen.",
+          "true": false,
+          "feedback": "Väärin: lämpö on energian siirtymistä, eikä ilmaan varastoidu lämpöä. Kasvanut energia on sisäenergiaa, ja se tuli työnä."
+        }
+      ]
     }
   ],
   "level2": [

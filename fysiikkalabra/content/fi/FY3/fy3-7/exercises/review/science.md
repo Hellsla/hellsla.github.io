@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 6adc73b630c26584
+CONTENT-HASH: bf811b5954b48e62
 Round: 3
 
-Round 3 checks the last commit (`git show HEAD -- content/fi/FY3`), which touches only fy3-7 L2-05 (tolerance and Vastaus line); the rest is covered by the round-2 PASS.
+Round 3 checks commit 3b0a55d57, a one-sentence change in the L2-08 Mallivastaus of solutions.md. The rest of the set is unchanged since the round-2 PASS.
 
 ## Blocking
 - none
@@ -11,8 +11,8 @@ Round 3 checks the last commit (`git show HEAD -- content/fi/FY3`), which touche
 - none
 
 ## Checked
-- Arithmetic: s = 600 W · 139 s / 0,250 kg = 333 600 J/kg, so 334 kJ/kg. 334 · 0,95 = 317,3 kJ/kg, so the accepted range is 317,3..350,7 kJ/kg. The naive table-row reading 600 · 130 / 0,250 = 312 kJ/kg is 6,6 % low and is now rejected, as the Vastaus says ("liian pieni").
-- Careful readings still pass: Δt = 137..141 s gives 328,8..338,4 kJ/kg, and even Δt = 133 s gives 319,2. Only Δt below about 132,2 s fails.
-- Tolerance 0,05 in exercises.json, "±5 %" in the Vastaus line, and the answer 334 kJ/kg agree with the task text (hint to estimate start and end from the slopes) and with the solution (18 s, 157 s, 139 s). The lesson-level answers.py is not used by the exercise set; the exercise answer is in exercises.json.
-- Physics unchanged: slopes 1,14 K/s and 0,575 K/s agree with P/(cm).
+- The mass order is now listed from smallest to largest: kiehuva vesi 0,10, jääpussi 0,50, kattila 0,60, teekannu 1,0 kg. This is correct.
+- The sentence "Lämmön järjestys on lähes päinvastainen" is correct. The heat order is teekannu, jääpussi, kattila, kiehuva vesi (84 < 167 < 201 < 226 kJ, recomputed). The reverse of the mass order is teekannu, kattila, jääpussi, kiehuva vesi, so only jääpussi and kattila differ.
+- No number, formula, option or answer changed. `order` and the answer string still match my recomputation.
+- Renders vs text: I judged this round from the diff text only. The change is prose plus the inline masses that were already there, so there are no new formula chains.
 - The hash was the same at the start and at the end.

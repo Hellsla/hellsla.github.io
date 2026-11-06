@@ -1,25 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: d6c4bf6ac501e57b
-Round: 4
-Mode: delta
-
+CONTENT-HASH: 47a0c1150ac8db04
 ## Blocking
-
+(none)
 ## Polish
-- solutions.md fy3-3-L2-06 — the hint in c) now leads the student to the 0,17 ratio; good, but "osaa tunnin alun lämpötilaerosta" is clumsy, write "osan tunnin alun lämpötilaerosta".
-- exercises.json fy3-3-L1-07 — still a second plain °C to K conversion beside L1-01 (with a negative value); acceptable.
-- exercises.json fy3-3-L3-04 b) and d) — the sentence defining systematic and random error is placed inside the task text; fine, but would read better as a separate short note under the table.
-
+- exercises.json (fy3-3-L1-09) — the distractors are unit-algebra slips only; none catches the chapter's warned mistake (°C instead of K, 0 °C as the lowest temperature). Consider replacing "kPa" by "kPa/°C" with feedback that the proportionality needs kelvins.
+- Stem: the second sentence "Paine annetaan kilopascaleina ja lämpötila kelvineinä." is fine; add that c is a constant measured for one fixed vessel if a student asks what c means (optional).
 ## Checked
-- Round-1 Polish carried and fixed: the systematic/random definition is now in L2-05 b) and L3-04 c); the circular 146 °C remark is replaced by "418,61 K - 273,15 = 145,46 °C approx 145 °C"; L3-04 a) says the other parts are checked from the solution; L2-06 c) has the hint; L3-05 now defines ylipaine and says the total pressure is proportional to T.
-- Recomputed: 255 K, 1,5 K, 1,741, 40 s, 0,6 K, 145,46 °C, 797 and 696 kPa, 13,6 %; all match.
-- MC correct positions shuffled (L1-06 third, L1-08 second); distractors are real misconceptions.
-- Long solutions are split into aligned blocks, nothing is skipped; no 360 px exercise capture was in the packet.
-- Set 8/7/5; levels fit the plan.
-- Hash unchanged at the end.
-
-## Checked in round 3
-- Delta (HEAD): only the line breaks of aligned model-solution rows changed (long row split into "..." and "&= result"). The step order, reasoning, numbers and wording are unchanged; the shorter rows read more easily on a phone, the "&=" continuation sits under the first "=". No learning-related change.
-
-## Checked in round 4
-- Delta (HEAD~3..HEAD, solutions.md display maths only): Only layout changed: the corrected forehead temperature now sits in its own display formula after the aligned block; the earlier one-row split "\\ &=" is gone, so the line reads as one calculation. Step order, reasoning and numbers unchanged. No learning-related change.
+- Type 7 (yksikkö): correct option is not identifiable by form (all four are short unit expressions, two fractions, order shuffled by the page).
+- Feedback of every wrong option shows what unit c T would then have: repairs the misconception rather than restating the answer.
+- Stays inside FY3-3: p proportional to T is in the chapter summary; no derivation needed.
+- Model solution solves for c, checks by multiplying back, and gives a numerical example (0,40 kPa/K).
+- Finnish fine; question last as its own sentence.
+- Renders: the 1280 px open-solution captures of the new task (shuffled option order, feedback after a wrong try, solution block) were opened. The 390 px fit of inline chains was judged from text only (no phone capture of the exercises exists); each inline chain is short or breaks at = or ·.

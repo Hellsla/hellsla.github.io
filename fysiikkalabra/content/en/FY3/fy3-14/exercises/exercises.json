@@ -240,6 +240,45 @@
           "feedback": "The difference between the specific heat capacities is already included in the calculation and does not cause an error: the water gives out exactly the heat given by $c_\\text{w} m_\\text{w} \\Delta T$. The error comes from the mass or the temperature of the ice differing from what was assumed."
         }
       ]
+    },
+    {
+      "id": "fy3-14-L2-08",
+      "level": 2,
+      "text": "An insulated container holds $0.25\\,\\text{kg}$ of water at $18\\,{}^\\circ\\text{C}$. $0.080\\,\\text{kg}$ of ice at $0\\,{}^\\circ\\text{C}$ is added to the water (example values). Use the values $c_\\text{w} = 4190\\,\\text{J/(kg}\\cdot\\text{K)}$ and $s = 334\\,\\text{kJ/kg}$. Decide which statements about the final situation are true and which are false.",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "1 true, 2 false, 3 true, 4 true, 5 false",
+      "unit": "",
+      "tolerance": 0.02,
+      "statements": [
+        {
+          "text": "The water can give out about $19\\,\\text{kJ}$ when it cools to $0\\,{}^\\circ\\text{C}$.",
+          "true": true,
+          "feedback": "Correct: the heat given out by the water is $Q_\\text{w} = c_\\text{w} m_\\text{w} T_\\text{w}$, that is $Q_\\text{w} \\approx 18\\,855\\,\\text{J} \\approx 19\\,\\text{kJ}$. The temperature of the water falls by $18\\,\\text{K}$."
+        },
+        {
+          "text": "All the ice melts, because there is more water than ice ($0.25\\,\\text{kg} > 0.080\\,\\text{kg}$).",
+          "true": false,
+          "feedback": "Wrong: comparing the masses does not decide it, because melting depends on energy. Melting the ice takes $26.7\\,\\text{kJ}$, but the water can give out only $18.9\\,\\text{kJ}$, so some ice is left."
+        },
+        {
+          "text": "Melting all the ice takes about $27\\,\\text{kJ}$.",
+          "true": true,
+          "feedback": "Correct: the ice is already at $0\\,{}^\\circ\\text{C}$, so only the latent heat of fusion is needed, $Q_\\text{i} = s\\,m_\\text{i}$, that is $Q_\\text{i} \\approx 26\\,720\\,\\text{J} \\approx 27\\,\\text{kJ}$."
+        },
+        {
+          "text": "In the final state the container holds both ice and water, and the temperature is $0\\,{}^\\circ\\text{C}$.",
+          "true": true,
+          "feedback": "Correct: because $Q_\\text{w} < Q_\\text{i}$, only part of the ice melts, about $56\\,\\text{g}$. As long as there are ice and water together, the temperature is $0\\,{}^\\circ\\text{C}$."
+        },
+        {
+          "text": "The final temperature is the average of the starting temperatures, $9\\,{}^\\circ\\text{C}$.",
+          "true": false,
+          "feedback": "Wrong: the average forgets the latent heat, and a mass-weighted average does not help either (water $0.25\\,\\text{kg}$, ice $0.080\\,\\text{kg}$, result about $14\\,{}^\\circ\\text{C}$). The heat given out by the water is used up in melting the ice, and the temperature cannot rise above $0\\,{}^\\circ\\text{C}$ while there is still ice left."
+        }
+      ]
     }
   ],
   "level3": [

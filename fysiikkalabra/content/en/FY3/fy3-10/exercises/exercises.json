@@ -290,6 +290,41 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy3-10-L2-08",
+      "level": 2,
+      "text": "Example data: a rigid, closed $2.00\\,\\textsf{l}$ bottle contains $0.0800\\,\\text{mol}$ of air, and the pressure of the gas is $100\\,\\text{kPa}$. A student calculates the temperature of the gas in degrees Celsius.\n\nRow 1: $p = 100\\,000\\,\\text{Pa}$ and $V = 0.00200\\,\\text{m}^3$.\n\nRow 2: $pV = nRT$, so $T = \\dfrac{pV}{nR}$.\n\nRow 3: $T = \\dfrac{100\\,000 \\cdot 0.00200}{0.0800 \\cdot 8.31}\\,\\text{K}$, that is, $T \\approx 301\\,\\text{K}$.\n\nRow 4: $\\theta = 301 + 273 = 574\\,{}^\\circ\\text{C}$.\n\nWhich row is wrong? If there is no error in the calculation, choose the last option.",
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "answer": "Row 4: converting kelvins to degrees Celsius",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Row 1: the conversions of pressure and volume",
+          "feedback": "Row 1 is correct: $100\\,\\text{kPa} = 100\\,000\\,\\text{Pa}$ and $2.00\\,\\textsf{l} = 2.00\\,\\text{dm}^3 = 0.00200\\,\\text{m}^3$. If you think this row is wrong, you are mixing up the litre and the cubic metre (a cubic metre contains $1000\\,\\textsf{l}$)."
+        },
+        {
+          "text": "Row 2: solving the equation of state",
+          "feedback": "Row 2 is correct: when the equation $pV = nRT$ is divided on both sides by the product $nR$, the temperature becomes $T = pV / (nR)$. If you think this row is wrong, you think the temperature belongs in the numerator."
+        },
+        {
+          "text": "Row 3: substitution and calculation",
+          "feedback": "Row 3 is correct: the numerator is $200\\,\\text{J}$, the denominator is $0.0800 \\cdot 8.31 = 0.665$ and the quotient is $301\\,\\text{K}$. The result is already in kelvins, because the unit of $R$ contains the kelvin. If you think this row is wrong, you think the result would already be in degrees Celsius."
+        },
+        {
+          "text": "Row 4: converting kelvins to degrees Celsius",
+          "correct": true,
+          "feedback": "Correct, this row is wrong: the Celsius temperature is obtained from the kelvin temperature by subtracting $273$, not by adding. The correct value is $\\theta = 301 - 273 = 28\\,{}^\\circ\\text{C}$. The result $574\\,{}^\\circ\\text{C}$ would already be a sign of an error, because the bottle contains room-temperature air."
+        },
+        {
+          "text": "There is no error in the calculation",
+          "feedback": "There is an error in row 4. Rows 1 to 3 are correct and $T \\approx 301\\,\\text{K}$, but in degrees Celsius that is $301 - 273 = 28\\,{}^\\circ\\text{C}$. Adding would give $574\\,{}^\\circ\\text{C}$, which does not fit a closed bottle."
+        }
+      ]
     }
   ],
   "level3": [

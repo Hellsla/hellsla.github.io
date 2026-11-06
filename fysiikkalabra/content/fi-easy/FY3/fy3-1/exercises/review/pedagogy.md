@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 59ee800c2e411329
+CONTENT-HASH: 9505870d85e17af2
 Mode: translation
-Round: 1
+Round: 2
 
 ## Blocking
 (none)
-
-## Fixed
-- fy3-1-L3-04 task: 'kalibroi jousen' explained in plain words; fy3-1-L2-06 task: 'taivaankappale' explained (planeetta tai kuu).
 
 ## Polish
 - none
 
 ## Checked
-- Task structure (a/b parts, answer-box instruction, model-answer pointer), distractor feedback and solution sequence (Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness) equal the reviewed Finnish.
-- Misconception feedback of L1-06, L1-07 and the error task L2-07 keeps the same diagnostic and wording level; no hint leaks the answer.
-- Language level: selkosuomi reads naturally, short sentences and terms explained where needed (rover, celestial body, calibration in fi-easy; plain in en); no Finnish left in en.
-- Levels and kinds of the 8 new tasks unchanged from Finnish.
+- L1-09 is a level 1 force-diagram choice (fbd select): situation first, question last, four figures needed to answer, scale statement given; distractors each carry one recognisable error (missing force, wrong length, extra force on the wrong body).
+- Feedback of every option names its error and repairs it without restating a bare answer; the solution puts the diagram reasoning before the arrow comparison and computes G first.
+- Terms F, G, F_k are defined in the task text before use.
+- Reading level fits selkosuomi: short sentences, 'kohdistuvat eli osuvat' or 'luku, jolla lämpötila kerrotaan' glossed; same structure as the reviewed Finnish.
+- Option figure descriptions in figures.json are identity entries, identical to the Finnish and to figures.py (forces, directions, lengths per option); correct for a Finnish page.

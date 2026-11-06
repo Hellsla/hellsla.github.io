@@ -109,6 +109,36 @@
           "feedback": "Seinät eivät estä lämpenemistä: lämmitys nostaa kaasun lämpötilaa, ja juuri lämpötilan nousu muuttaa muita tilanmuuttujia."
         }
       ]
+    },
+    {
+      "id": "fy3-3-L1-09",
+      "level": 1,
+      "text": "Suljetun jäykän astian kaasun paine on suoraan verrannollinen kelvinlämpötilaan: $p = c\\,T$. Paine annetaan kilopascaleina ja lämpötila kelvineinä.\n\nMikä on vakion $c$ yksikkö?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "$c$ on yksikössä $\\tfrac{\\text{kPa}}{\\text{K}}$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "$c$ on yksikössä $\\tfrac{\\text{kPa}}{\\text{K}}$.",
+          "correct": true,
+          "feedback": "Oikein: $c = \\dfrac{p}{T}$, joten yksikkö on paineen yksikkö jaettuna lämpötilan yksiköllä, $\\tfrac{\\text{kPa}}{\\text{K}}$. Tällöin tulo $c\\,T$ on kilopascaleina."
+        },
+        {
+          "text": "$c$ on yksikössä $\\text{kPa} \\cdot \\text{K}$.",
+          "feedback": "Tämä kertoo yksiköt keskenään, vaikka $c$ saadaan jakamalla: $c = \\dfrac{p}{T}$. Silloin tulo $c\\,T$ olisi yksikössä $\\text{kPa} \\cdot \\text{K}^2$, eikä se ole paine."
+        },
+        {
+          "text": "$c$ on yksikössä $\\tfrac{\\text{K}}{\\text{kPa}}$.",
+          "feedback": "Tämä kääntää jakolaskun väärinpäin: $c$ on paine jaettuna lämpötilalla, ei lämpötila jaettuna paineella. Silloin tulo $c\\,T$ olisi yksikössä $\\tfrac{\\text{K}^2}{\\text{kPa}}$, ei kilopascaleina."
+        },
+        {
+          "text": "$c$ on yksikössä $\\text{kPa}$.",
+          "feedback": "Tämä unohtaa lämpötilan yksikön. Jos $c$ olisi kilopascaleina, tulo $c\\,T$ olisi yksikössä $\\text{kPa} \\cdot \\text{K}$. Kelvinin täytyy supistua pois, joten $c$:ssä on oltava jakajana kelvin."
+        }
+      ]
     }
   ],
   "level2": [

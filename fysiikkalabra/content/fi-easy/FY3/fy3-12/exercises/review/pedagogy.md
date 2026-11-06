@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 9160312ed1880965
+CONTENT-HASH: 351a2dfbe36ac039
 
-Mode: translation review (fi-easy) against the reviewed Finnish. Round 1.
+Mode: translation review (fi-easy (NOTES.md section 12)) against the reviewed Finnish. Round 2, new task fy3-12-L2-08.
 
 ## Blocking
 (none)
-
-## Fixed
-- none needed
 
 ## Polish
 - None.
 
 ## Checked
-- Selkosuomi: short sentences, one idea per sentence; terms (konvektio, interpolointi, positiivinen palautekytkentä, höyrystymislämpö) explained where they appear.
-- Feedback keeps the misconception diagnosis in every wrong choice.
-- Task and solution structure (a/b/c, Kysytty/Periaate/.../Mallivastaus) same as fi.
-- No new content added beyond clarifications.
+- L2-08 (YO-skill form) keeps the fi task form, prompt and feedback texts; every wrong option or statement keeps its misconception diagnosis.
+- Sentences are short, one idea each, terms explained in the Principle (NOTES.md section 12); same step order as fi.
+- Level and workload as in fi; no answer disclosed in the task text.

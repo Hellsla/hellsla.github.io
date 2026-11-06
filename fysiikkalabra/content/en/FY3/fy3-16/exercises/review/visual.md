@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: a9fc9cb18c0434a8
+CONTENT-HASH: 35a961c55c19b541
+Mode: delta
+Round: 1
 
 ## Blocking
 (none)
-
-## Fixed
-- (none needed in the exercise files)
 
 ## Polish
 - none
 
 ## Checked
-- Data tables (L2-05, L2-06, L3-04): caption, column headers and cells translated; numbers and units identical; the table renders without overflow in the screenshots (fy3-16-open-exercises-L2/L3 captures).
-- LaTeX identical to the Finnish except translated subscripts (`T_\text{out}` / `T_\text{ulko}`) and decimal point vs comma where the language requires it.
-- Units are wrapped in `\text{}` with thin spaces as in the Finnish; no Finnish left in en.
-- Translation (English): natural, no Finnish words left; terms consistent (thermal conductivity, latent heat of fusion, heat loss coefficient, U-value).
-- check_i18n.py: 0 errors.
+- Own 390 px render (scratch script, built page preview/en/fy3-16.html, every solution open): L2-08 (choices, answer, solution with aligned ratio), L3-01 task text. No stale shots/ in the packet; changed solutions.md text read in the open solution cards. Hash re-run at the end: unchanged.
+- Maths: KaTeX fractions, aligned substitutions, units upright with thin space, decimal point consistent.
+
+## Scores
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

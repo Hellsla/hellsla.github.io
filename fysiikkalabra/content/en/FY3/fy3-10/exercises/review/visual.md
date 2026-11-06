@@ -1,17 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: c8e4ec033bea480a
-Mode: full (translation review against the reviewed Finnish set, teacher procedure 2026-10-28)
-Round 1
+CONTENT-HASH: cbc54e44b941aaac
+Mode: delta (exercises, en), round 1. Changed: new task L2-08, situation/question paragraph splits, solutions.md for L2-08.
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] None beyond fi; layout is the same as the reviewed Finnish (long answer lines wrap normally at 1280 px).
+- (none)
 
 ## Checked
-- Captures fy3-10-open-exercises-L2-1280-6 and L3-1280-5 (and the new tasks' tables) opened: formulas, units and tables render, English text only, no Finnish left.
-- Tables of L2-05..07 and L3-04..05 keep the same columns as fi, with translated headers.
+- Rendered preview/en/fy3-10.html at 390 px with my own script (scratch trvis3x): fy3-10-L2-08 (error-finding, rows 1-4, choices with feedback open) and the paragraph-split tasks L1-07, L2-01..04, L3-01..03, in default and answered/opened state.
+- The new L2-08 card opened in full: task text, options or statements, feedback blocks, Vastaus/Answer and model solution; formulas, units, fractions and the units with \cdot render as KaTeX, no red source, no clipping or horizontal overflow.
+- The paragraph splits read as situation, then data, then the question; nothing sideways when feedback opens.
+- Fluent, consistent terms (efficiency, absorbed heat, latent heat); one instructional voice; decimal point and thin-space units set as maths.
+- Figure and graph tasks were not changed by the diff; contact sheets are not used in this exercises-only delta.
 
 ## Scores
-illustrations 4 · typography 4 · English 4 · accessibility 4
+illustrations 4 · typography 5 · English 4 · accessibility 4

@@ -219,6 +219,37 @@
       "answer": 36.6,
       "unit": "%",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-15-L2-08",
+      "level": 2,
+      "text": "Lauhdevoimalaitoksen polttoaineteho on $1200\\,\\text{MW}$. Lauhduttimen läpi virtaa merivettä $12\\,\\text{m}^3$ sekunnissa, ja vesi lämpenee lauhduttimessa $8\\,{}^\\circ\\text{C}$:sta $18\\,{}^\\circ\\text{C}$:seen (esimerkkiarvot). Veden tiheys on $1000\\,\\text{kg/m}^3$ ja ominaislämpökapasiteetti $4190\\,\\text{J/(kg}\\cdot\\text{K)}$. Mikä on suuruusluokaltaan lauhduttimesta veteen siirtyvä lämpöteho $P_\\text{L}$? Valitse lähin arvo.",
+      "kind": [
+        "reasoning",
+        "model"
+      ],
+      "answer": "$500\\,\\text{MW}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "$0{,}5\\,\\text{MW}$",
+          "feedback": "Tulos syntyy, kun $12\\,\\text{m}^3$ luetaan suoraan $12\\,\\text{kg}$:ksi eikä tiheyttä käytetä. Vesivirta on $q_m = \\rho V/t = 12\\,000\\,\\text{kg/s}$, tuhatkertainen, ja teho on vastaavasti tuhatkertainen."
+        },
+        {
+          "text": "$50\\,\\text{MW}$",
+          "feedback": "Tulos syntyy, kun kuutiometri muunnetaan väärin sadaksi litraksi eli sadaksi kilogrammaksi. Kuutiometri on $1000\\,\\text{l}$ ja vettä $1000\\,\\text{kg}$, joten vesivirta on $12\\,000\\,\\text{kg/s}$."
+        },
+        {
+          "text": "$500\\,\\text{MW}$",
+          "correct": true,
+          "feedback": "Oikein: vesivirta on $q_m = 12\\,000\\,\\text{kg/s}$ ja lämpötilan nousu $\\Delta T = 10\\,\\text{K}$. Teho on $P_\\text{L} = c\\,q_m\\,\\Delta T$, eli $P_\\text{L} \\approx 5{,}0 \\cdot 10^8\\,\\text{W} \\approx 500\\,\\text{MW}$. Se on noin $42\\,\\%$ polttoainetehosta $1200\\,\\text{MW}$, mikä sopii lauhdutinhäviöksi."
+        },
+        {
+          "text": "$15\\,000\\,\\text{MW}$",
+          "feedback": "Tulos syntyy, kun nousuksi $\\Delta T$ otetaan loppulämpötila kelvineinä, $291\\,\\text{K}$. Nousu on lämpötilojen erotus $10\\,\\text{K}$. Tulos ylittäisi myös laitoksen koko polttoaineen tehon $1200\\,\\text{MW}$, joten se on mahdoton."
+        }
+      ]
     }
   ],
   "level3": [

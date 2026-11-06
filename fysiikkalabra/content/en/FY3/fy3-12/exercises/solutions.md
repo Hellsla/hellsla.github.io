@@ -189,3 +189,18 @@
 **Answer:** $16\,{}^\circ\text{C}$ (calculated $16.3\,{}^\circ\text{C}$), two significant figures, because linear interpolation on a curved table limits the result to an accuracy of about $\pm 0.5\,\text{K}$.
 **Reasonableness:** A temperature of $16\,{}^\circ\text{C}$ is close to the real mean temperature of the Earth, about $+15\,{}^\circ\text{C}$. The power $398.3\,\tfrac{\text{W}}{\text{m}^2}$ is larger than $239\,\tfrac{\text{W}}{\text{m}^2}$, as it should be, because the surface receives extra energy from the atmosphere. The limiting case $f = 0$ gives $S = 239\,\tfrac{\text{W}}{\text{m}^2}$, which corresponds in the table to about $255\,\text{K}$.
 **Model answer c):** Without the atmosphere the surface would radiate only the power it absorbs, $239\,\tfrac{\text{W}}{\text{m}^2}$, which corresponds in the table to $255\,\text{K}$, that is, $255 - 273.15 \approx -18\,{}^\circ\text{C}$. With the atmosphere the model gives a temperature of $16.3\,{}^\circ\text{C}$, about $34\,\text{K}$ warmer, so the greenhouse effect raises the surface temperature by this much. The model is still rough: the real atmosphere absorbs the radiation of the Sun, the share $0.80$ varies with wavelength, and clouds, convection and the evaporation of water transfer energy upwards from the surface in other ways than by radiation.
+
+## fy3-12-L2-08
+**Find:** the thermal powers $P$ conducted through the building parts and their order from smallest to largest.
+**Principle:** When the temperatures on both sides of a building part stay constant, the thermal power conducted through it is $P = UA\Delta T$. The temperature difference is the same $30\,\text{K}$ for all parts, but the U-value and the area vary, so the order becomes clear only when both are taken into account.
+**Model answer:** First calculate $UA$ of each part and then the power:
+
+Door: $UA = 2.0\,\text{W/K}$, $P = 2.0\,\text{W/K} \cdot 30\,\text{K} = 60\,\text{W}$
+
+Roof: $UA = 7.2\,\text{W/K}$, $P = 7.2\,\text{W/K} \cdot 30\,\text{K} = 216\,\text{W}$
+
+Windows: $UA = 9.6\,\text{W/K}$, $P = 9.6\,\text{W/K} \cdot 30\,\text{K} = 288\,\text{W}$
+
+Wall: $UA = 15.3\,\text{W/K}$, $P = 15.3\,\text{W/K} \cdot 30\,\text{K} = 459\,\text{W}$
+
+From smallest to largest: door, roof, windows, wall. The U-value alone would give the wrong order, because the windows and the door have a large U-value but a small area, and the area alone would also give it wrong, because the wall has a small U-value but a large area. The results are given with two significant figures, because the U-values are given with two: about $60\,\text{W}$, $220\,\text{W}$, $290\,\text{W}$ and $460\,\text{W}$. Estimate: the wall's $UA \approx 0.2 \cdot 90 = 18\,\text{W/K}$ is the largest and the door's $2\,\text{W/K}$ the smallest, which fits.

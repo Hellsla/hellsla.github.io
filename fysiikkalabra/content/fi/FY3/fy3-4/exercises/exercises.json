@@ -110,6 +110,37 @@
           "feedback": "Väärin: hydrostaattinen paine kasvaa suoraan syvyyden mukana, ei neliöllisesti. Kuvaaja $(h, p)$ on suora."
         }
       ]
+    },
+    {
+      "id": "fy3-4-L1-09",
+      "level": 1,
+      "text": "Tutkimussukellusvene laskeutuu mereen $1{,}0\\,\\text{km}$:n syvyyteen. Veden tiheys on $1000\\,\\text{kg/m}^3$ ja se oletetaan vakioksi.\n\nMikä seuraavista on suuruusluokaltaan lähinnä hydrostaattista painetta tässä syvyydessä?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "$10^{7}\\,\\text{Pa}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "$10^{5}\\,\\text{Pa}$",
+          "feedback": "Tämä on ilmanpaineen suuruusluokka, ja se vastaa vain noin $10\\,\\text{m}$:n vesipatsasta. Paine kasvaa syvyyden mukana, ja $1{,}0\\,\\text{km}$ on sata kertaa syvempi kuin $10\\,\\text{m}$."
+        },
+        {
+          "text": "$10^{6}\\,\\text{Pa}$",
+          "feedback": "Tämä vastaa noin $100\\,\\text{m}$:n syvyyttä, eli kilometri on muunnettu metreiksi kymmenen kertaa liian pieneksi. Syvyys $1{,}0\\,\\text{km}$ on $1000\\,\\text{m}$, joten paine on kymmenen kertaa suurempi."
+        },
+        {
+          "text": "$10^{7}\\,\\text{Pa}$",
+          "correct": true,
+          "feedback": "Oikein: $\\rho g h \\approx 1000 \\cdot 9{,}81 \\cdot 1000\\,\\text{Pa}$, eli $\\rho g h \\approx 9{,}8 \\cdot 10^{6}\\,\\text{Pa}$. Se on lähinnä kymmenpotenssia $10^{7}$."
+        },
+        {
+          "text": "$10^{8}\\,\\text{Pa}$",
+          "feedback": "Tämä vastaa noin $10\\,\\text{km}$:n syvyyttä. Paine kasvaa suoraan syvyyden mukana, joten kymmenkertainen syvyys antaisi kymmenkertaisen paineen. Annettu syvyys on vain $1{,}0\\,\\text{km}$."
+        }
+      ]
     }
   ],
   "level2": [

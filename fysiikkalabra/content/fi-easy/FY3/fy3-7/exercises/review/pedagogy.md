@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 64aca687150b1e18
+CONTENT-HASH: 60c23477f4ffc71d
 Mode: full
-Round: 1
+Round: 2
 
 ## Blocking
 (none)
-
-## Fixed
-- Terms explained in the text: kulmakerroin (nousun jyrkkyys), interpolointi.
 
 ## Polish
 - none
 
 ## Checked
-- Short sentences, common words; sulamispiste and tasanne explained in the task text; parts a)/b)/c) and answer-box instruction match the Finnish.
-- Feedback of the choices in L1-06 and L1-07 split into short sentences and still correct.
-- Solutions keep the full structure of the Finnish with the same steps.
+- L2-08 is a YO-skill ordering task (kind concept and reasoning) with data given as a short list; each batch is named, the instruction says what to calculate and then to order.
+- The solution compares the heat order with the mass order and states why mass does not decide, as in the reviewed Finnish.
+- The rest of the set is unchanged from the Round 1 pass.
+- fi-easy: the Finnish "kuhunkin erään tarvittava lämpömäärä" was reworded to "kunkin erän tarvitsema lämpömäärä", and the instruction split into two sentences; the solution Periaate is in short sentences (NOTES.md section 12).

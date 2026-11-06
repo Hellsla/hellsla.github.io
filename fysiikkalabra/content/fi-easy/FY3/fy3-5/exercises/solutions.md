@@ -190,3 +190,13 @@
 **Sijoitus:** a) $P = \dfrac{239\,900\,\text{J}}{120\,\text{s}} = 1999\,\text{W} \approx 2{,}00\,\text{kW}$. b) $Q_\text{ulos} = 239{,}9\,\text{kJ} - 205{,}1\,\text{kJ} = 34{,}8\,\text{kJ}$ ja osuus $\dfrac{34{,}8\,\text{kJ}}{239{,}9\,\text{kJ}} \cdot 100\,\% = 14{,}5\,\%$
 **Vastaus:** $Q_\text{ulos} = 34{,}8\,\text{kJ}$ (kohta b), kolme merkitsevää numeroa kuten taulukon arvot, eli noin $14{,}5\,\%$ vastuksen energiasta. Kohta a): keskiteho on $P = 2{,}00\,\text{kW}$. Kohta c): Puuttuva energia ei ole kadonnut. Se on siirtynyt lämpönä keittimen seinän kautta ympäröivään ilmaan ja pöytään. Niiden sisäenergia on kasvanut yhtä paljon. Ensimmäinen pääsääntö on voimassa, kun veden nettolämpönä käytetään arvoa $Q = E_\text{v} - Q_\text{ulos}$. Kertynyt häviö $E_\text{v} - \Delta U$ kasvaa taulukossa jokaisella rivillä: $8{,}1$, $16{,}3$, $26{,}1$ ja $34{,}8\,\text{kJ}$. Lämmin vesi luovuttaa ympäristöön lämpöä koko ajan.
 **Järkevyys:** Häviö on pienempi kuin vastuksen energia ($34{,}8\,\text{kJ} < 239{,}9\,\text{kJ}$), joten veden sisäenergia kasvaa edelleen, kuten taulukossa. Tase: $205{,}1\,\text{kJ} + 34{,}8\,\text{kJ} = 239{,}9\,\text{kJ}$. Mittauksessa teho on $2{,}00\,\text{kW}$ ja häviö on keskimäärin noin $0{,}29\,\text{kW}$ koko ajan. Se on noin $15\,\%$ tehosta eli selvästi mitattava osa.
+
+## fy3-5-L1-09
+**Annettu:** työ $W = 60\,\text{J}$ (ympäristö tekee ilmaan työn), lämpöä ei siirry eli $Q = 0$, ilma pysyy kaasuna
+**Kysytty:** mitkä viidestä väitteestä ovat tosia ja mitkä epätosia
+**Periaate:** Sisäenergian muutos on systeemiin siirtyneen lämmön ja siihen tehdyn työn summa, $\Delta U = Q + W$. Lämpöeristetyssä sylinterissä $Q = 0$. Ilmaan tehty työ on positiivinen, koska ympäristö tekee työn systeemiin.
+**Mallivastaus:** Lasketaan sisäenergian muutos:
+
+$$\begin{aligned} \Delta U &= Q + W \\ &= 0 + 60\,\text{J} = 60\,\text{J} \end{aligned}$$
+
+Väite 1 on tosi, koska sisäenergia kasvaa $60\,\text{J}$. Väite 2 on tosi: ilma pysyy kaasuna, ja sisäenergian kasvu nostaa lämpötilaa. Väite 3 on epätosi: $60\,\text{J}$ on työ, ja lämpö on nolla. Väite 4 on epätosi, koska työ muuttaa sisäenergiaa, vaikka lämpöä ei siirry. Väite 5 on epätosi, koska lämpö on energian siirtymistä. Ilmassa ei ole lämpöä, vaan ilmaan on kertynyt sisäenergiaa.

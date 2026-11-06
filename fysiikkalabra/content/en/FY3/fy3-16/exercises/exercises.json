@@ -230,6 +230,37 @@
       "answer": 2.9,
       "unit": "h",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-16-L2-08",
+      "level": 2,
+      "text": "The ice pack of a cool bag is at $0\\,{}^\\circ\\text{C}$, and there are no drinks in the bag. The inside stays at $0\\,{}^\\circ\\text{C}$ until the ice has melted, and all the heat conducted through the wall melts ice. Compare two trips (example values).\n\nFirst trip: $1.0\\,\\text{kg}$ of ice, the U-value of the bag $U$, outdoor temperature $20\\,{}^\\circ\\text{C}$.\n\nSecond trip: $1.5\\,\\text{kg}$ of ice, because of thicker insulation the U-value $0.5\\,U$, outdoor temperature $30\\,{}^\\circ\\text{C}$.\n\nThe area of the walls of the bag is the same on both trips. How does the time the ice lasts change from the first trip to the second?",
+      "kind": [
+        "reasoning",
+        "model"
+      ],
+      "answer": "It doubles, because the mass of the ice and the temperature difference both increase by the factor $1.5$ and the U-value is halved.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "It stays the same, because the mass of the ice and the temperature difference both increase by the factor $1.5$ and cancel each other.",
+          "feedback": "Here the U-value is forgotten. The duration $t = \\dfrac{s\\,m}{UA\\Delta T}$ is inversely proportional to the U-value, so halving it doubles the time. The mass and the temperature difference do cancel each other, but the U-value does not."
+        },
+        {
+          "text": "It doubles, because the mass of the ice and the temperature difference both increase by the factor $1.5$ and the U-value is halved.",
+          "correct": true,
+          "feedback": "Correct: the duration is $t = \\dfrac{s\\,m}{UA\\Delta T}$, so $\\dfrac{t_2}{t_1} = \\dfrac{1.5}{0.5 \\cdot 1.5}$, that is, $\\dfrac{t_2}{t_1} = 2$. The inside is at $0\\,{}^\\circ\\text{C}$, so the temperature difference is the outdoor temperature: $\\dfrac{30}{20} = 1.5$."
+        },
+        {
+          "text": "It is halved, because the mass of the ice and the temperature difference cancel each other and the halved U-value shortens the time.",
+          "feedback": "Here the U-value is read the wrong way round. The smaller the U-value, the less heat is conducted into the bag and the longer the ice lasts, because $t$ is inversely proportional to the U-value. A halved U-value lengthens the time."
+        },
+        {
+          "text": "It triples, because the mass of the ice increases by the factor $1.5$ and the U-value is halved, and the outdoor temperature does not matter.",
+          "feedback": "Here the rise in the outdoor temperature is forgotten. The power through the wall $P = UA\\Delta T$ increases when the temperature difference increases by the factor $1.5$, so the ice melts faster and the time is shorter than triple."
+        }
+      ]
     }
   ],
   "level3": [

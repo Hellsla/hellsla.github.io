@@ -1,18 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 2a315176056af704
+CONTENT-HASH: c85d98ce6115a0a2
+ROUND: 2
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] solutions.md L2-05 Vastaus — a)-kohta puuttuu Vastaus-osasta, kun taas b) on siellä — ok jos a) on Sijoituksessa; harkitse yhtä lausetta "a) 338 kJ/kg".
-- [Minor] solutions.md L1-07, L2-05 Järkevyys — "21 kJ : 334 kJ/kg" on kunnossa, mutta L3-05 Sijoitus-ketjun luvuilta puuttuu yksikkö (4190 · 0,300 · 40 J − …) — lisää yksiköt tai jätä, jos ketju on tarkoituksella luvuin.
-- [Minor] L3-04 ja L3-05 taulukot — sarakeotsikot (KaTeX) näkyvät 1280 px kuvassa eri kohdassa kuin arvot; sivuston yhteinen taulukkotyyli, ei tämän tehtävän vika.
-- [Minor] solutions.md:198 L3-04 c) — pitkä inline-kaava nousee omaksi laatikokseen, ja "joten" jää yksin riville sen alle; kirjoita c) samaan tapaan kuin a): "c) Jään lämpeneminen on" + display-rivit, ja "joten" seuraavan laatikon eteen samalle riville tai pudota se.
+- [Minor] fy3-14-L2-08 (moved from L1-09) — the statement order is still fixed (T F T T F), so the pattern can be guessed; consider reordering. (Carried over.)
+- [Minor] for science: $Q_\text{v} = c_\text{v} m_\text{v} T_\text{v}$ uses the temperature $T_\text{v}$ as the drop to $0\,{}^\circ\text{C}$ ($18\,\text{K}$); the chapter's notation may want $\Delta T$. (Carried over.)
+- [Minor] Stem — "(esimerkkiarvot)" still sits mid-sentence after the ice temperature. (Carried over.)
 
 ## Checked
-- Round 3 (delta): L3-04 Sijoitus rivitetty display-`aligned`-riveiksi.
-- review/shots/fy3-14-open-exercises-L3-1280-6.png, -7.png (otettu commitin 6018cf733 jälkeen): "Ensin … = 3,95, joten" ja "= 4,45, joten" yhdellä rivillä; s_1-, s_2- ja s_2'-ketjut yksi =-askel riviä kohden, murtoviivat ja yksiköt siistit, ei ylivuotoa eikä punaista lähdettä. Vastaus ja Järkevyys ennallaan.
-- 360 px: tehtävistä ei ole 360 px kaappauksia; deterministinen layout 360 px -tarkistus on ok, ja levein uusi rivi (s_2':n ensimmäinen murtolauseke) on noin 25 merkkiä.
+- From render (390 px, Playwright chromium, preview rebuilt, hints, feedback and solution open; fresh capture opened in segments): the moved task fy3-14-L2-08 in level 2 (Taso 2 · soveltava harjoitus), stem, five statements with their feedback, answer line, Annettu/Periaate/Mallivastaus. No overflow (scrollWidth 390); formulas fit. The new statement 5 feedback (mass-weighted mean, $14\,{}^\circ\text{C}$) wraps cleanly and the sentence reads well.
+- Round 1 findings: feedback 1 now $18\,855\,\text{J}$, matching the solution (fixed). The others above are unchanged.
+- From text only: the mass-weighted mean (0,25 · 18 / 0,33 = 13,6, about $14\,{}^\circ\text{C}$) is right; solutions.md moved block identical to before; options not identifiable by form.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

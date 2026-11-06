@@ -1,17 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 757be2ef1f647d60
-Round: 3
+CONTENT-HASH: fb4c9e7694ba0259
+Round: 1
 
 ## Blocking
 (none)
 
 ## Polish
-- solutions.md:147 (L2-05 Periaate) — A's reason is now given ("tilavuus ja ilman määrä pysyvät samoina"); B could get the mirror reason ("paine pysyy samana, kun V/T on vakio" is there, but not that the air amount is fixed). Optional.
-- L1-07 is still the third plain Boyle compression at level 1 (after L1-01, L1-02). Carried over.
-- docs/exercise-bank/FY3.md:70 — plan line still lists "ruiskumittaus → linearisointi", already covered by L2-03; name L2-07 (absolute zero by extrapolation) instead. Carried over.
+- solutions.md:261-265 (L2-08) — "ratkaistaan paine tilavuudella $V_2$" then sets $V_2 = 20$ ml, while the task's end volume is 10 ml (named $p_3$). Name the intermediate point differently (e.g. $p$ at $V = 20$ ml) or say that 20 ml is a check point read off every graph.
+- solutions.md:147 (L2-05) — mirror reason for B (fixed air amount) still optional. Carried over.
+- L1-07 is still the third plain Boyle compression at level 1; exercise-bank plan line 70 still names "ruiskumittaus → linearisointi" instead of L2-07. Carried over.
 
 ## Checked
-- Round-2 Polish resolved: L2-05 a) now reads "…ja perustele, miksi lämpötilan on oltava kelvineinä." (no double comma, no dangling clause); the data caption says "astiassa A / astiassa B", matching the task text and the solution (Mallivastaus a) uses "Astiassa A/B").
-- L2-05 numbers unchanged: p/T 0,340 kPa/K, V/T 0,050 ml/K, 127 kPa at 100 °C; the Celsius comparison (4,99 to 1,50) supports the "kelvineinä" justification.
-- L3-05 Mallivastaus c): the author's note is deleted; the pressure ratio 399,5 : 101 ≈ 4,0 and volume ratio 4,0 are inverse, as Boyle's law requires. Correct, and the Järkevyys line still follows.
-- No other change since round 2; earlier recomputed answers stand.
+- New task L2-08 (kuvaajan valinta), recomputed: pV = 4000 kPa·ml → 100/200/400 kPa at 40/20/10 ml; option B is the only curve through these points.
+- figures.py pick-*: all four on one grid (V 0–45 ml, p 0–450 kPa, to scale as stated). A: line (40;100)–(10;400) gives 300 kPa at 20 ml, as the feedback says; C: constant 100 kPa; D: (10;25)–(40;100) passes the origin, i.e. p ∝ V, as its feedback says.
+- Exactly one correct option; each distractor really wrong and catches a named mistake: A is the lesson's own warned one ("kääntäen verrannollisuus ei ole laskeva suora"), C constant T read as constant p, D dependence read the wrong way.
+- Conditions stated in the task: tip closed (fixed amount), pushed slowly, temperature constant; solution Periaate states both conditions; feedback C mechanism (more wall collisions) right.
+- Option texts are "Kuvaaja A–D" only; figure descriptions give the same values as the graphs; nothing in form reveals B beyond the physics.
+- Within fy3-9 (Boyle, (V,p) graph shape); level 2 fits.
+- Renders: checked L2 screenshots 12–13 at 1280 px (option graphs legible; A and B share end points as intended; solution formulas short). Phone width not rendered: the inline chains (≈ "p₂ = 100 kPa·40 ml / 20 ml, eli p₂ = 200 kPa") judged from text to fit ~300 px.
+- answers.py and the other tasks unchanged since the round-3 PASS (commit touches exercises.json, solutions.md, figures.py only).
+- Hash identical at start and end.

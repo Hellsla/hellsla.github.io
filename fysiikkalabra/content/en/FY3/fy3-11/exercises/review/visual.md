@@ -1,15 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 182fdd9803837d67
+CONTENT-HASH: 73e42d2dc825c95e
+Mode: delta (exercises, en), round 1. Changed: new task L2-08, situation/question paragraph splits, solutions.md for L2-08.
 
 ## Blocking
 (none)
 
 ## Polish
-- None.
+- (none)
 
 ## Checked
-- open-exercises-1280-7 (L1-06 choices, feedback, solution), open-exercises-L2-1280-7 (L2-05 solution layout, L2-06 start), open-exercises-L3-1280-4 (L3-02/L3-03 end, 13-18 task and solution): text, formulas and spacing render correctly; no clipped lines or Finnish remains.
-- English strings in tables and answers are the ones shown; decimal points correct.
+- Rendered preview/en/fy3-11.html at 390 px with my own script (scratch trvis3x): fy3-11-L2-08 (efficiency, choice then reason) and the split tasks L2-01, L3-01..04, in default and answered/opened state.
+- The new L2-08 card opened in full: task text, options or statements, feedback blocks, Vastaus/Answer and model solution; formulas, units, fractions and the units with \cdot render as KaTeX, no red source, no clipping or horizontal overflow.
+- The paragraph splits read as situation, then data, then the question; nothing sideways when feedback opens.
+- Fluent, consistent terms (efficiency, absorbed heat, latent heat); one instructional voice; decimal point and thin-space units set as maths.
+- Figure and graph tasks were not changed by the diff; contact sheets are not used in this exercises-only delta.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish (English) 4 · accessibility 4
+illustrations 4 · typography 5 · English 4 · accessibility 4

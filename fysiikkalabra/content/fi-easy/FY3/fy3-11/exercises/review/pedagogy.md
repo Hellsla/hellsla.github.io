@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: d6c59949a7a14871
+CONTENT-HASH: 0471406a46280667
+Mode: full (translation review against the reviewed Finnish set, teacher procedure 2026-10-28)
+Round 2
 
 ## Blocking
 (none)
 
-## Fixed
-- L2-05: split the first sentence in two and explained hyötysuhde in one short sentence.
-- L2-07: added "Ilmalämpöpumppu ottaa lämpöä ulkoilmasta." so the term is explained.
-- L3-04: added one sentence that explains lämpökerroin (L1-08 already had it).
-
 ## Polish
-- None.
+(none)
 
 ## Checked
-- Selkosuomi: short sentences, common words, terms explained at first use; long Finnish sentences in feedback and part c) tasks are split with a full stop.
-- Content equals the Finnish: same levels, choices, one correct option per choice task, same feedback logic, nothing dropped or added.
+- fy3-11-L2-08 (fi-easy): same task structure and scaffolding as fi; each distractor feedback names its misconception and does not give the answer away before the choice.
+- Language: clearer Finnish per NOTES.md §12, short sentences, same physics .
+- Workload and level fit L2; solution is learnable (staged, with a reasonableness check).

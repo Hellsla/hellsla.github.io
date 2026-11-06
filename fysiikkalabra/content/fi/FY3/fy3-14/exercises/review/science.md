@@ -1,17 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 2a315176056af704
-
-Round 3 (delta): L3-04 Sijoitus split into display `aligned` rows for 360 px (commits bf75c929d, 6018cf733); the rest of the set unchanged since the round-2 PASS.
+CONTENT-HASH: c85d98ce6115a0a2
+Round: 2
 
 ## Blocking
+(none)
 
 ## Polish
-- exercises.json L2-07, fourth option feedback — "Virhe syntyy siitä, että jään massa tai lämpötila poikkeaa oletetusta": in this task only the mass explains a too-small s (colder ice makes it too large, as the first option's feedback says). Write "jään massa poikkeaa oletetusta".
-- exercises.json L1-06 / solutions.md L1-06 — "Täsmälleen 0 °C" holds at normal pressure; the lesson's Tiivistelmä says "normaalipaineessa". Optional to add (level-1 simplification, C).
-- docs/exercise-bank/FY3.md fy3-14 Taso 2 — the planned "lämpötila-aikakuvaaja, jossa kaikki jää ei sula (figure)" has no task; L2-06 (error analysis, table-free) covers "kaikki jää ei sula". Update the plan line or note the substitution.
+- solutions.md:200 (L2-08) — the solution still explains statement 5 with the plain mean only. Since the feedback (exercises.json:279) now also rules out the mass-weighted mean (about 14 °C), one clause in the solution would keep the two consistent.
+- exercises.json:274 (L2-08, statement 4 feedback) — could add "tasapainossa normaalipaineessa", as the lesson summary does (C, carried over, optional).
+- lessons/FY3/fy3-14/answers.py — no comment marking L2-08 as having no number (statements). Add it to the "multiple choice" comments (carried over).
 
 ## Checked
-- solutions.md:186-200 L3-04 recomputed: 0,200·21,8 − 0,0500·8,2 = 3,95; 0,200·23,8 − 0,0500·6,2 = 4,45; 4190·3,95/0,0500 = 331 010 → 331 000 J/kg = 331 kJ/kg; 4190·4,45/0,0500 = 372 910 → 372 900 J/kg = 373 kJ/kg.
-- c): 2100·0,0500·18,0 J = 1890 J; (18 645,5 J − 1890 J)/0,0500 kg = 335 110 → 335 100 J/kg. Every value identical to the previous single-line chain; Vastaus (331/373/335 kJ/kg) and answers.py untouched.
-- The bracket is still m_v(T_v − T) − m_j T with c_v factored out, consistent with the Kaava line; units J and kg on the display rows as before.
-- Hash unchanged at start and end.
+- Round-2 change (6bbde30c5): the task moved from L1-09 to L2-08 (exercises.json:245) with the same text and statements. The id is unique and nothing in answers.py refers to the old id.
+- Round-1 Polish on statement 5 is addressed. The mass-weighted mean 0,25·18/0,33 = 13,6 ≈ 14 °C is right, and the feedback correctly says neither mean helps.
+- The feedback now quotes 18 855 J and 26 720 J. I recomputed both: Q_v = 18 855 J ≈ 19 kJ and Q_j = 26 720 J ≈ 27 kJ. 56 g of ice melts, 24 g is left and T = 0 °C. Statements 1, 3 and 4 are true, 2 and 5 false, and the answer string matches.
+- The boundary case is per the guardrail (Q_v < Q_j → ice left at 0 °C). Notation is the lesson's. Level 2 fits two heat quantities and a comparison.
+- Renders: I measured the fresh preview at 390 px in Chromium with all feedback and the solution open. The widest inline formula is 263 px, within about 300 px. The physics is judged from the text.
+- Hash identical at start and end.

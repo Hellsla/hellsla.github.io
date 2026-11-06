@@ -442,7 +442,7 @@ check("the exercises come last, after Tarkista osaamisesi", page_html.index('id=
       and re.search(r'<a href="#tarkista"[^>]*>(?:(?!</a>).)*</a><a href="#exercises"[^>]*>(?:(?!</a>).)*Tehtävät(?:(?!</a>).)*</a></nav>', page_html) is not None)
 check("Ennusta is a closed box", re.search(r'<section class="stage" id="ennusta"[^>]*><h2>.*?</h2><details class="fold" data-fold="ennusta">', page_html) is not None)
 check("no old names on the page", not any(x in page_html for x in ("Herätä kiinnostus", "Lähtölippu", ">Selitä<")))
-check("exercises and exit ticket kept (8/7/5, 1 item)", page_html.count('class="level"') == 3 and page_html.count("<li>$(s, F)$-kuvaajassa") == 1 and '<span class="count">8 tehtävää' in page_html and '<span class="count">7 tehtävää' in page_html and '<span class="count">5 tehtävää' in page_html)
+check("exercises and exit ticket kept (8/8/5, 1 item)", page_html.count('class="level"') == 3 and page_html.count("<li>$(s, F)$-kuvaajassa") == 1 and page_html.count('<span class="count">8 tehtävää') == 2 and '<span class="count">5 tehtävää' in page_html)
 check("no answer disclosed before commitment", 'class="feedback" data-for="0" hidden' in page_html)
 check("nav lists the stages", '<a href="#herata">' in page_html and '<a href="#tarkista">' in page_html)
 

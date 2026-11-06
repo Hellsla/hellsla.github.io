@@ -255,6 +255,33 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy3-7-L2-08",
+      "level": 2,
+      "text": "Example data: four batches of water are heated or change state. The specific latent heat of fusion of water is $s = 334\\,\\tfrac{\\text{kJ}}{\\text{kg}}$, the specific latent heat of vaporisation $r = 2260\\,\\tfrac{\\text{kJ}}{\\text{kg}}$ and the specific heat capacity $c = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$.\n\nPan: $0.60\\,\\text{kg}$ of water warms from $20\\,{}^\\circ\\text{C}$ to $100\\,{}^\\circ\\text{C}$.\n\nBoiling water: $0.10\\,\\text{kg}$ of water vaporises at $100\\,{}^\\circ\\text{C}$.\n\nTeapot: $1.0\\,\\text{kg}$ of water warms from $20\\,{}^\\circ\\text{C}$ to $40\\,{}^\\circ\\text{C}$.\n\nIce bag: $0.50\\,\\text{kg}$ of ice melts into water at $0\\,{}^\\circ\\text{C}$.\n\nCalculate the quantity of heat $Q$ needed for each batch and put the batches in order.",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "prompt": "Put the batches in order of the quantity of heat $Q$ needed, from smallest to largest.",
+      "order": [
+        {
+          "text": "Teapot"
+        },
+        {
+          "text": "Ice bag"
+        },
+        {
+          "text": "Pan"
+        },
+        {
+          "text": "Boiling water"
+        }
+      ],
+      "answer": "Teapot (about $84\\,\\text{kJ}$), ice bag ($167\\,\\text{kJ}$), pan (about $201\\,\\text{kJ}$), boiling water ($226\\,\\text{kJ}$).",
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level3": [

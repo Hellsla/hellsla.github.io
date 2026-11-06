@@ -230,6 +230,53 @@
       "answer": 590,
       "unit": "J",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-2-L2-08",
+      "level": 2,
+      "text": "Kuminauhaa venytetään. Esimerkkiarvot: voima kasvaa tasaisesti nollasta, ja se on $10\\,\\text{cm}$:n venytyksellä $20\\,\\text{N}$ ja $20\\,\\text{cm}$:n venytyksellä $40\\,\\text{N}$.\n\nVenyttäminen $10\\,\\text{cm}$:iin vaatii työn $W_1$. Kuinka suuren työn venyttäminen $20\\,\\text{cm}$:iin vaatii alusta lukien?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "Työ on $4\\,W_1$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Työ on $2\\,W_1$.",
+          "feedback": "Tämä olettaa, että työ kasvaa samassa suhteessa kuin matka, kuin voima olisi vakio. Nyt myös voima kaksinkertaistuu, joten työ on kuvaajan pinta-ala eikä pelkkä matkan kerrannainen."
+        },
+        {
+          "text": "Työ on $3\\,W_1$.",
+          "feedback": "Tämä on vain venytyksen toisen $10\\,\\text{cm}$:n osan työ, $3{,}0\\,\\text{J}$ eli $3\\,W_1$. Kysytty on työ alusta lukien, joten ensimmäisen osan työ $W_1$ kuuluu mukaan."
+        },
+        {
+          "text": "Työ on $4\\,W_1$.",
+          "correct": true,
+          "feedback": "Oikein: työ nelinkertaistuu."
+        }
+      ],
+      "reason_prompt": "Mikä perustelu selittää vastauksesi?",
+      "reasons": [
+        {
+          "text": "Työ on voiman ja matkan tulo, ja matka kaksinkertaistuu $10\\,\\text{cm}$:stä $20\\,\\text{cm}$:iin.",
+          "feedback": "Tulo $W = F s$ kelpaa vain vakiovoimalle. Tässä voima kasvaa nollasta, joten työ on kuvaajan pinta-ala, ja myös voima kaksinkertaistuu."
+        },
+        {
+          "text": "Venytyksen toisella $10\\,\\text{cm}$:n osalla voiman keskiarvo on $30\\,\\text{N}$.",
+          "feedback": "Väite on tosi, mutta se kertoo vain toisen osan työn, $30\\,\\text{N} \\cdot 0{,}10\\,\\text{m} = 3{,}0\\,\\text{J}$. Se ei selitä koko työtä alusta lukien."
+        },
+        {
+          "text": "Työ on voimakuvaajan kolmion pinta-ala, ja sekä kanta että korkeus kaksinkertaistuvat.",
+          "correct": true,
+          "feedback": "Oikein: kolmion ala on $\\tfrac{1}{2} F s$. Kun $F$ ja $s$ kaksinkertaistuvat, ala nelinkertaistuu."
+        },
+        {
+          "text": "Voima on $20\\,\\text{cm}$:n venytyksellä kaksinkertainen $10\\,\\text{cm}$:n venytykseen verrattuna.",
+          "feedback": "Väite on tosi, mutta se on vain toinen kahdesta kaksinkertaistumisesta. Myös matka kaksinkertaistuu, ja työ riippuu molemmista."
+        }
+      ]
     }
   ],
   "level3": [

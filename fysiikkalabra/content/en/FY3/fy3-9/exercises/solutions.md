@@ -254,3 +254,18 @@ h &= \dfrac{399.5\,\text{kPa} - 101\,\text{kPa}}{9.81\,\tfrac{\text{kPa}}{\text{
 **Answer:** $h \approx 30\,\text{m}$, two significant figures like the limit volume $1.5\,\textsf{l}$. If the product corresponding to the surface, $101\,\text{kPa} \cdot 6.0\,\textsf{l} = 606\,\text{kPa}\cdot\textsf{l}$, is used, the result is $31\,\text{m}$, which is of the same size.
 **Model answer c):** The ratio of the pressures is $399.5 : 101 \approx 4.0$, that is, the pressure is four times that at the surface. A water column of thirty metres adds about $3 \cdot 101\,\text{kPa}$ of pressure, and the atmospheric pressure is added on top of that. The ratio of the volumes is $6.0\,\textsf{l} : 1.5\,\textsf{l} = 4.0$, that is, the volume is a quarter. The ratios are inverse, as Boyle's law requires.
 **Reasonableness:** The row $h = 20.0\,\text{m}$ of the table gives the pressure $297\,\text{kPa}$, that is, about three times the atmospheric pressure, and the volume $2.0\,\textsf{l}$, that is, a third. Every additional $10\,\text{m}$ adds about $98\,\text{kPa}$ of pressure, that is, about one atmospheric pressure, so at the depth $30\,\text{m}$ the pressure is about $4$ times and the volume a quarter, $6.0\,\textsf{l} : 4 = 1.5\,\textsf{l}$. The depth $30\,\text{m}$ is below the deepest row of the table, $20\,\text{m}$, so this is an extrapolation, whose reliability rests on the assumption of a constant temperature and a constant amount of air.
+
+## fy3-9-L2-08
+**Find:** which of the four graphs shows the pressure $p$ of the air in the syringe as a function of the volume $V$, when $40\,\text{ml}$ of air at the pressure $100\,\text{kPa}$ is compressed slowly to the volume $10\,\text{ml}$ at the same temperature.
+**Principle:** The tip of the syringe is closed, so the amount of air does not change, and the temperature stays the same. The change of state is therefore isothermal, and Boyle's law holds: $pV$ is constant. The pressure is inversely proportional to the volume, so the $(V, p)$ graph is a falling curve, not a straight line.
+**Model answer:** The correct one is graph B. From Boyle's law the pressure is solved at the volume $V_2$.
+
+$p_1 V_1 = p_2 V_2$, so $p_2 = \dfrac{p_1 V_1}{V_2}$
+
+$p_2 = \dfrac{100\,\text{kPa} \cdot 40\,\text{ml}}{20\,\text{ml}}$, that is, $p_2 = 200\,\text{kPa}$
+
+$p_3 = \dfrac{100\,\text{kPa} \cdot 40\,\text{ml}}{10\,\text{ml}}$, that is, $p_3 = 400\,\text{kPa}$
+
+Graph B passes through the points $(40\,\text{ml};\ 100\,\text{kPa})$, $(20\,\text{ml};\ 200\,\text{kPa})$ and $(10\,\text{ml};\ 400\,\text{kPa})$. Graph A is a falling straight line: its end points are right, but at the volume $20\,\text{ml}$ it gives $300\,\text{kPa}$, because on a straight line the pressure would grow by the same amount for every millilitre. In graph C the pressure stays the same, which confuses a constant temperature with a constant pressure. In graph D the pressure decreases on compression, as if the pressure were directly proportional to the volume.
+
+**Reading the graph:** From each graph the pressure is read at three volumes: $40\,\text{ml}$, $20\,\text{ml}$ and $10\,\text{ml}$. Graphs A and B start and end at the same points, so they can be told apart only by the pressure at the volume $20\,\text{ml}$: in graph A it is $300\,\text{kPa}$ and in graph B $200\,\text{kPa}$.

@@ -262,6 +262,53 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy3-11-L2-08",
+      "level": 2,
+      "text": "Example values: heat engines A and B each do the same work $W = 120\\,\\text{kJ}$ during one cycle.\n\nEngine A takes heat $Q_1 = 400\\,\\text{kJ}$ from the hot source during a cycle.\n\nEngine B takes heat $Q_1 = 300\\,\\text{kJ}$ from the hot source during a cycle.\n\nWhich engine has the greater efficiency?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "Engine B",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Engine A",
+          "feedback": "This regards a greater absorbed heat as better. Efficiency does not measure how much heat the engine takes, but what fraction of the absorbed heat is converted into work."
+        },
+        {
+          "text": "Engine B",
+          "correct": true,
+          "feedback": "Correct: the efficiency is $\\eta = W/Q_1$, so the same work from a smaller absorbed heat gives a greater fraction. For engine B the efficiency is $0.40$ and for engine A $0.30$."
+        },
+        {
+          "text": "The efficiencies are equal",
+          "feedback": "This assumes that the same work means the same efficiency. The efficiency also depends on the absorbed heat: for engine A $\\eta = 0.30$ and for engine B $\\eta = 0.40$."
+        }
+      ],
+      "reason_prompt": "Which reason explains your answer?",
+      "reasons": [
+        {
+          "text": "The engines do the same work in a cycle, so their efficiencies are equal.",
+          "feedback": "This is a common misconception: efficiency is not the work but the fraction of the absorbed heat that becomes work, $\\eta = W/Q_1$. The same work and a different absorbed heat give a different fraction."
+        },
+        {
+          "text": "Engine A takes more heat $Q_1$, so it has more to convert into work: $W = Q_1 - Q_2$.",
+          "feedback": "Here the work is the same $120\\,\\text{kJ}$ for both, so the extra heat of engine A is not converted into work but passes to the colder surroundings: for engine A $Q_2 = 280\\,\\text{kJ}$ and for engine B $Q_2 = 180\\,\\text{kJ}$."
+        },
+        {
+          "text": "The efficiency is $W/Q_1$, and the same work from a smaller absorbed heat gives a greater fraction.",
+          "feedback": "Correct: efficiency tells what fraction of the absorbed heat is converted into work. For engine B the fraction is $\\tfrac{120}{300}$ and for engine A $\\tfrac{120}{400}$.",
+          "correct": true
+        },
+        {
+          "text": "Both engines release heat to the colder surroundings, so the efficiency of each is below $100\\,\\%$.",
+          "feedback": "The statement is true, but it does not explain the answer. It holds for all heat engines and does not tell which is better; the comparison is decided only by the fraction $W/Q_1$."
+        }
+      ]
     }
   ],
   "level3": [

@@ -146,6 +146,16 @@
 **Vastaus:** $23\,{}^\circ\text{C}$, kaksi merkitsevää numeroa kuten massassa $0{,}20\,\text{kg}$ ja lämpötilassa $20\,{}^\circ\text{C}$.
 **Järkevyys:** Tulos on alkulämpötilojen välissä ja vain noin $2{,}8\,\text{K}$ veden alkulämpötilan yläpuolella. Energiatase: kupari luovuttaa $77\,\tfrac{\text{J}}{\text{K}} \cdot 77{,}2\,\text{K} \approx 5{,}9\,\text{kJ}$ ja vesi vastaanottaa $2095\,\tfrac{\text{J}}{\text{K}} \cdot 2{,}84\,\text{K} \approx 5{,}9\,\text{kJ}$. Oppilaan $60\,{}^\circ\text{C}$ vaatisi veden vastaanottavan $2095\,\tfrac{\text{J}}{\text{K}} \cdot 40\,\text{K} = 84\,\text{kJ}$. Kupari voi kuitenkin luovuttaa enintään $77\,\tfrac{\text{J}}{\text{K}} \cdot 80\,\text{K} \approx 6\,\text{kJ}$.
 
+## fy3-6-L2-08
+**Kysytty:** mikä oppilaan laskun riveistä on väärin.
+**Periaate:** Lämpömäärä on $Q = c m \Delta T$, missä $\Delta T$ on loppulämpötila miinus alkulämpötila. Jäähtyessä $\Delta T$ ja $Q$ ovat negatiivisia. Miinusmerkki kertoo, että kappale luovuttaa eli antaa energiaa ympäristöön. Laskun voi tarkistaa rivi riviltä: lämpötilan muutos, kaava, sijoitus ja tuloksen tulkinta.
+**Mallivastaus:** Rivi 1: $\Delta T = 40\,{}^\circ\text{C} - 220\,{}^\circ\text{C} = -180\,\text{K}$ on oikein, koska lämpötilan muutos on sama kelvineinä ja celsiusasteina.
+Rivi 2: $Q = c m \Delta T$ on oikein, koska levyn olomuoto ei muutu.
+Rivi 3: $450 \cdot 3{,}0 = 1350$ ja $1350 \cdot (-180) = -243\,000$, joten $Q = -243\,000\,\text{J}$ on oikein.
+Rivi 4 on väärin, koska negatiivinen lämpömäärä on mahdollinen: se kertoo, että levy luovuttaa energiaa.
+Oikein: levy luovuttaa ympäristöön $243\,\text{kJ}$.
+Tarkistus: levy jäähtyy, joten sen sisäenergia pienenee. Levy ei voi samalla vastaanottaa energiaa. Oikea vastaus on rivi 4.
+
 ## fy3-6-L3-01
 **Annettu:** vesi $m_\text{v} = 20\,\text{kg}$, $T_\text{v} = 10\,{}^\circ\text{C}$, tavoite $T = 40\,{}^\circ\text{C}$, $c_\text{v} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; kivet $T_\text{k} = 300\,{}^\circ\text{C}$, $c_\text{k} = 800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; ei häviöitä eikä höyrystymistä
 **Kysytty:** kivien massa $m_\text{k}$

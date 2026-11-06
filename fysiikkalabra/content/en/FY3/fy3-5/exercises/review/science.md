@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: fc675ddba93a47b0
+CONTENT-HASH: e6fd55e011a5217c
 
 ## Blocking
 (none)
@@ -8,7 +8,7 @@ CONTENT-HASH: fc675ddba93a47b0
 - none
 
 ## Checked
-- Translation review against the reviewed Finnish (en): compared exercises.json (all 8 new tasks L1-06..08, L2-05..07, L3-04..05) and solutions.md with content/fi/FY3/fy3-5 by script: ids, answers, units, tolerances, correct flags, data table cells, choices and every number are equal (decimal point/comma only).
-- Physics, signs (Q, W, dU), the first law, the cycle argument (L2-05), trapezoid rule (L3-04, 468 N sum, 18.7 J) and the kettle loss (L3-05, 34.8 kJ, 14.5 %) match the Finnish; formula lines identical.
-- Choice feedback explains each wrong option (temperature vs internal energy, heat is not stored, energy conserved) as in the Finnish.
-- check_i18n.py en: 0 errors.
+- Translation review against the reviewed Finnish (en): new task fy3-5-L1-09 in exercises.json and solutions.md compared with content/fi/FY3/fy3-5: statement flags, five statements and every feedback, ΔU = 0 + 60 J, Q = 0, W > 0 on the system, solutions.md; all equal to the Finnish.
+- Same physics, numbers, formulas, units, tolerance and correct answer (fi: 1 tosi, 2 tosi, 3-5 epätosi (ΔU = Q + W = 0 + 60 J = 60 J, T nousee, 60 J on työ eikä lämpö, lämpöä ei varastoidu)).
+- Terms and notation as in the rest of the set; no physics added or lost.
+- check_i18n.py: nothing for fy3-5; build.py fy3-5 succeeds.

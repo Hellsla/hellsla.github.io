@@ -255,6 +255,37 @@
       "answer": 10.4,
       "unit": "m",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy3-8-L2-08",
+      "level": 2,
+      "text": "Esimerkkiarvot: samasta teräksestä tehdyt sauvat A ja B ovat aluksi samassa lämpötilassa. Sauvan A pituus on $4{,}0\\,\\text{m}$ ja sen lämpötila nousee $10\\,\\text{K}$. Sauvan B pituus on $2{,}0\\,\\text{m}$ ja sen lämpötila nousee $30\\,\\text{K}$. Kumpikin sauva pääsee laajenemaan vapaasti.\n\nMiten pituuden muutos $\\Delta L$ muuttuu, kun siirrytään sauvasta A sauvaan B?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "Kasvaa: $\\Delta L_\\text{B}$ on $1{,}5$ kertaa $\\Delta L_\\text{A}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Kasvaa: $\\Delta L_\\text{B}$ on $1{,}5$ kertaa $\\Delta L_\\text{A}$",
+          "correct": true,
+          "feedback": "Oikein: $\\Delta L = \\alpha L_0 \\Delta T$, joten muutos on verrannollinen sekä alkupituuteen että lämpötilan muutokseen. Pituus puolittuu (kerroin $0{,}5$) ja lämpötilan muutos kolminkertaistuu (kerroin $3$), joten $\\Delta L_\\text{B} / \\Delta L_\\text{A} = 0{,}5 \\cdot 3 = 1{,}5$."
+        },
+        {
+          "text": "Kasvaa: $\\Delta L_\\text{B}$ on $3$ kertaa $\\Delta L_\\text{A}$",
+          "feedback": "Tässä otetaan huomioon vain lämpötilan muutos. Pituuden muutos on verrannollinen myös alkupituuteen: sauvassa B on puolet vähemmän hiukkasvälejä, joten sama lämpötilan nousu pidentää sitä vähemmän."
+        },
+        {
+          "text": "Pysyy samana: $\\Delta L_\\text{B} = \\Delta L_\\text{A}$",
+          "feedback": "Tässä ajatellaan, että sama aine laajenee aina yhtä paljon. Aine määrää vain kertoimen $\\alpha$. Pituuden muutokseen vaikuttavat lisäksi alkupituus ja lämpötilan muutos, ja nämä muuttuvat eri tavoin."
+        },
+        {
+          "text": "Pienenee: $\\Delta L_\\text{B}$ on $0{,}5$ kertaa $\\Delta L_\\text{A}$",
+          "feedback": "Tässä otetaan huomioon vain lyhyempi pituus. Lämpötilan muutos on sauvalla B kolminkertainen, ja se kasvattaa pituuden muutosta suoraan verrannollisesti, joten lyhyempikin sauva pitenee enemmän."
+        }
+      ]
     }
   ],
   "level3": [

@@ -1,5 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: d2575374e6555241
+CONTENT-HASH: 15b0a0fdf9fe9772
+Round: 4
+Mode: delta
 
 ## Blocking
 (none)
@@ -11,8 +13,8 @@ CONTENT-HASH: d2575374e6555241
 (none)
 
 ## Checked
-- Mode: translation review against the reviewed Finnish, round 1; the 8 new tasks L1-06..08, L2-05..07, L3-04..05 checked in exercises.json and solutions.md.
-- Ids, answers, units, tolerances, correct flags, kinds, choice order and table cells identical to fi (scripted comparison of every non-text field and of all numbers inside inline maths in text, choices, feedback and solutions; only the decimal separator differs).
-- Formulas and numeric chains in solutions.md identical to fi (decimal point in en JSON and LaTeX); no Finnish words left (Lake Päijänne is a proper noun).
-- Physics statements (p = F/A, p = p0 + rho g h, gauge vs. total pressure, mean-pressure force on wall parts) unchanged from fi.
-- check_i18n en: 0 errors.
+- New task fy3-4-L1-09 compared with the reviewed Finnish: same id, level, kind, unit, tolerance, answer and choice/reason order; exactly one correct option in each list, same as fi.
+- Recomputed: rho g h = 1000*9.81*1000 = 9.81e6 Pa; 10^5 = 10 m of water, 10^6 = 100 m, 10^8 = 10 km. Correct answer 10^7 Pa (rho g h = 9.81e6 Pa, nearer 1e7 than 1e6); all numbers and formulas in text, feedback and solution equal the Finnish.
+- Distractor feedback physics agrees with fi (same misconception named, same numbers).
+- Language: English decimal point used (JSON, LaTeX, feedback and solution), natural English, no Finnish left.
+- check_i18n.py shows nothing for fy3-4; build.py fy3-4 succeeds.

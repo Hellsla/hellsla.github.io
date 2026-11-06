@@ -1,21 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 06e3ab72bb92e102
-Mode: translation
-Round: 1
+CONTENT-HASH: cf6d9ce17e1d805b
+Mode: delta (the regenerated packet says full; the only change since round 1 is the figure descriptions)
+Round: 2
 
 ## Blocking
 (none)
 
-## Fixed
-- fy3-1-L1-07 feedback and solution: 'even in a space with no air' reworded to 'even where there is no air' (natural English). (text only; layout unaffected).
-
 ## Polish
-- [Minor] Captures predate the small text fix above; the changed sentence is one line shorter or equal, no layout risk.
+- [Minor] The four option figures' aria-labels say "the object", while the task text says "the body"; use "body" in figures.json for consistency.
+- [Minor] Option figures are about 250 px tall each, so the task is long on a phone.
 
 ## Checked
-- open-exercises-1280-6 and L3-1280-4 (L1-06 task and feedback, L3-04 task, table and solution) in en.
-- fi-easy: open-exercises-L3-1280-4 (L3-04 task, table, reasonableness) and L2-1280-5 (L2-05 table, solution cards).
-- Data tables show captions, KaTeX units and decimal separator correctly (point in en, comma in fi-easy); no overflow, no stray Finnish in en.
+- Rebuilt preview/en/fy3-1.html at 390 px: the four pick-* aria-labels are now English and match the figures (F twice G; equal arrows; F_k from the bottom face; G only). No Finnish remains in the labels. No Finnish word shows inside the figures (only G, F, F_k).
+- Round 1 captures of task fy3-1-L1-09 (text, options, feedback, solution at 390 px) are unchanged by this edit: no horizontal overflow.
+- Not repeated: the rest of the exercises, unchanged since round 1 (the regenerated packet marks full mode, so a full-mode review of the whole page was not done).
 
 ## Scores
-illustrations 5 · typography 4 · language 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish n/a · accessibility 4

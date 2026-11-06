@@ -1,21 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 196fd38f148cdfeb
+CONTENT-HASH: 23beb0210afaa772
 ROUND: 2
 
 ## Blocking
-(none) No Blocking in round 1; the changed tasks (L1 mixing/energy MCs, cycle, kettle L3-05) read correctly.
+(none) Round-1 Major fixed: the L1-09 feedback for statement 1 is now two short pieces, "ΔU = Q + W, eli ΔU = 0 + 60 J = 60 J", and fits the 390 px box with the unit visible.
 
 ## Polish
-- [Minor] L3-05 Vastaus — after the answer box the text starts with "(kohta b), ..." and runs b), a), c) in one paragraph; give a), b), c) their own lines in order. The percentage is now consistent (14,5 % in Vastaus, "noin 15 %" only as a rounded power share in Järkevyys).
-- [Minor] Data tables (L2-06 cycle, L2-07, L3-04, L3-05) — header/number alignment as elsewhere (site-wide table style).
-- [Minor] L3-04 Kuvaajan lukeminen — the label is used for a table; "Taulukon lukeminen" would be accurate (fy3-4 and fy3-7 already changed).
-- [Minor] Answer-field wording "Vastauslaatikkoon" vs "Vastauskenttään" in fy3-4; pick one site-wide.
-- [Minor] fy3-5-L3-03 (existing) — sentence starting with a semicolon after "310 J"; fix when next edited.
+- [Minor] L1-09 — statements 1-2 true, 3-5 false in a block; mixing the order would remove the pattern (not blocking).
+- [Minor] L1-09 feedback 2 — "kuten pyöräpumpun mäntä tekee" reads loosely; "kuten pyöräpumpussa".
 
 ## Checked
-- 1280 px: open-exercises-1280-6 (cup/pot MC with reordered options and "hiukkasia"), L3-1280-6 (L3-04 pump end), -7, -8 (L3-05 kettle: new oletus sentence, Periaate, Vastaus, Järkevyys). Captures newer than the fixed content. Numbers 18,72 J, 34,8 kJ, 14,5 % match. No red KaTeX, nothing clipped.
-- Diff HEAD~1 read. No 360/390 open-state capture; relied on the layout check.
-- No plain-text quantity in the changed text.
+- Renders (own Playwright, 390 px, preview/fy3-5.html): L1-09 with answers given, all feedback unhidden, solution open, read in tiles; the fixed feedback, other four feedbacks, model answer chain. No katex element exceeds the box; page scrollWidth 390.
+- Text only: the rest of the chapter was not re-rendered; the packet is a full-mode packet, but the exercise content outside L1-09 was PASS earlier and the diff is the round-1 fix.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 4

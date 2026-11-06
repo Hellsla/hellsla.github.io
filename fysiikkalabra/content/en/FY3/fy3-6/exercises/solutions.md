@@ -146,6 +146,16 @@
 **Answer:** $23\,{}^\circ\text{C}$, two significant figures as in the mass $0.20\,\text{kg}$ and the temperature $20\,{}^\circ\text{C}$.
 **Reasonableness:** The result is between the initial temperatures and only about $2.8\,\text{K}$ above the initial temperature of the water. Energy balance: the copper gives out $77\,\tfrac{\text{J}}{\text{K}} \cdot 77.2\,\text{K} \approx 5.9\,\text{kJ}$ and the water receives $2095\,\tfrac{\text{J}}{\text{K}} \cdot 2.84\,\text{K} \approx 5.9\,\text{kJ}$. The student's $60\,{}^\circ\text{C}$ would require the water to receive $2095\,\tfrac{\text{J}}{\text{K}} \cdot 40\,\text{K} = 84\,\text{kJ}$, but the copper can give out at most $77\,\tfrac{\text{J}}{\text{K}} \cdot 80\,\text{K} \approx 6\,\text{kJ}$.
 
+## fy3-6-L2-08
+**Find:** which of the lines of the student's calculation is wrong.
+**Principle:** The amount of heat is $Q = c m \Delta T$, where $\Delta T$ is the final temperature minus the initial temperature. When something cools, $\Delta T$ and $Q$ are negative, and the minus sign tells that the body gives out energy to the surroundings. The calculation can be checked line by line: the change in temperature, the formula, the substitution and the interpretation of the result.
+**Model answer:** Line 1: $\Delta T = 40\,{}^\circ\text{C} - 220\,{}^\circ\text{C} = -180\,\text{K}$ is correct, because a change in temperature is the same in kelvins and in degrees Celsius.
+Line 2: $Q = c m \Delta T$ is correct, because the state of matter of the plate does not change.
+Line 3: $450 \cdot 3.0 = 1350$ and $1350 \cdot (-180) = -243\,000$, so $Q = -243\,000\,\text{J}$ is correct.
+Line 4 is wrong, because a negative amount of heat is possible: it tells that the plate gives out energy.
+Correct: the plate gives out $243\,\text{kJ}$ to the surroundings.
+Check: the plate cools, so its internal energy decreases and it cannot receive energy at the same time. The correct answer is line 4.
+
 ## fy3-6-L3-01
 **Given:** water $m_\text{w} = 20\,\text{kg}$, $T_\text{w} = 10\,{}^\circ\text{C}$, target $T = 40\,{}^\circ\text{C}$, $c_\text{w} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; stones $T_\text{s} = 300\,{}^\circ\text{C}$, $c_\text{s} = 800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; no losses and no vaporisation
 **Find:** the mass of the stones $m_\text{s}$

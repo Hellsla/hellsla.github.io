@@ -1,21 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: fcc0d449c338b7d3
-Mode: full
-Round: 1
+CONTENT-HASH: 733cd6c68e7ef781
+Mode: delta
+Round: 2
 
 ## Blocking
 (none)
 
 ## Fixed
-- (none; no text edits were needed)
+- (none; delta: only the L2-08 table caption was shortened to "Air pressure, sealed bottle (example data)"; no number, formula or answer changed)
 
 ## Polish
-- solutions.md L2-05 Substitution: "$250\,{}^\circ\text{C} : 5$" uses a colon for division (as in the Finnish source); a division sign would read more naturally in English, but formula parity with fi is kept. Same in L2-06 and L2-07 ("2.0 : 15", "104.0 kPa : 0.33").
+- (none)
 
 ## Checked
-- Scripted comparison of exercises.json against fi: all 219 leaf strings and values checked; ids, answers, units, tolerances, correct flags, choice order, kind lists and table cells identical; every number in texts and feedback equals fi (decimal point in en JSON and LaTeX).
-- solutions.md: the 20 sections match fi in every number (scripted); no formula changed.
-- New tasks L1-06..08, L2-05..07, L3-04..05: answers recomputed from the data (77.4 K, -274, -302, -370, 10.7, -17.5 degC) and equal the Finnish answers.
-- Terms follow the guardrails: absolute zero is the lowest energy, not "particles stop"; extrapolation is an estimate under a model assumption.
-- Language: natural English, no Finnish left (grep for ä/ö clean); theta_av subscript is right.
-- check_i18n.py en: 0 errors.
+- Scripted comparison of fy3-13-L2-08 against fi: text, table cells, answer, kind, four choices, correct flag and order identical; every number (13.5, 0.8, 1.0 kPa, intervals 101.0-103.0, 101.8-103.8, 114.5-116.5, 62 kPa, -100 degC, 120 degC) equals fi; English decimal point throughout.
+- Recomputed: 115.5-102.0 = 13.5 kPa (>10 x 1.0); 0.8 < 1.0 so intervals overlap; fitted slope ~0.34 kPa/degC gives ~62 kPa at -100 degC. Correct choice is the only valid conclusion.
+- Physics: "cannot show" is not "no difference"; extrapolation is an estimate under a linearity assumption; sealed rigid bottle justifies rising p. Same as fi.
+- check_i18n.py: nothing for fy3-13; build.py fy3-13 succeeds (see report).
+- Caption shortened to fit 390 px: still describes the data (air pressure, sealed bottle); no physics change.

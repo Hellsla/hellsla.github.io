@@ -255,6 +255,37 @@
       "answer": 10.4,
       "unit": "m",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy3-8-L2-08",
+      "level": 2,
+      "text": "Example values: steel rods A and B are made of the same steel and are at first at the same temperature. The length of rod A is $4.0\\,\\text{m}$ and its temperature rises by $10\\,\\text{K}$. The length of rod B is $2.0\\,\\text{m}$ and its temperature rises by $30\\,\\text{K}$. Both rods can expand freely.\n\nHow does the change in length $\\Delta L$ change when we move from rod A to rod B?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "Increases: $\\Delta L_\\text{B}$ is $1.5$ times $\\Delta L_\\text{A}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Increases: $\\Delta L_\\text{B}$ is $1.5$ times $\\Delta L_\\text{A}$",
+          "correct": true,
+          "feedback": "Correct: $\\Delta L = \\alpha L_0 \\Delta T$, so the change is proportional to both the initial length and the change in temperature. The length is halved (factor $0.5$) and the change in temperature triples (factor $3$), so $\\Delta L_\\text{B} / \\Delta L_\\text{A} = 0.5 \\cdot 3 = 1.5$."
+        },
+        {
+          "text": "Increases: $\\Delta L_\\text{B}$ is $3$ times $\\Delta L_\\text{A}$",
+          "feedback": "This takes into account only the change in temperature. The change in length is proportional also to the initial length: rod B has half as many particle spacings, so the same rise in temperature lengthens it less."
+        },
+        {
+          "text": "Stays the same: $\\Delta L_\\text{B} = \\Delta L_\\text{A}$",
+          "feedback": "This assumes that the same material always expands by the same amount. The material determines only the coefficient $\\alpha$. The change in length also depends on the initial length and the change in temperature, and these change in different ways."
+        },
+        {
+          "text": "Decreases: $\\Delta L_\\text{B}$ is $0.5$ times $\\Delta L_\\text{A}$",
+          "feedback": "This takes into account only the shorter length. The change in temperature of rod B is three times as large, and it increases the change in length in direct proportion, so even the shorter rod lengthens more."
+        }
+      ]
     }
   ],
   "level3": [

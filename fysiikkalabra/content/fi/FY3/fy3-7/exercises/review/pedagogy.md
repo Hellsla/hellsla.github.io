@@ -1,16 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 6adc73b630c26584
-Round: 3
-
-Round 3 checks the last commit (`git show HEAD -- content/fi/FY3`), which touches only fy3-7 L2-05 (tolerance and Vastaus line); the rest is covered by the round-2 PASS.
-
+CONTENT-HASH: bf811b5954b48e62
 ## Blocking
-- none
-
+(none)
 ## Polish
-- fy3-7-L3-05 reuses the setting of existing L1-04 (espresso steam into milk); the physics differs (mixing, comparison), but a second context would add variety (carried over).
-- fy3-7-L2-05 b): the student must extrapolate about 2,5 s before and 6,5 s after table rows; fine at level 2 with the explicit slope hint (carried over).
-
+- (carried, optional) the stem's last sentence "Laske ... ja järjestä erät." repeats the prompt line; the kJ and J mix is fair but could be stated in the solution.
 ## Checked
-- The round-2 note that 312 kJ/kg fell inside the tolerance is resolved: tolerance 0,05 gives 317,3..350,7 kJ/kg (334 · 0,95 = 317,3), so the naive 130 s reading (312, -6,6 %) is no longer marked correct, while careful readings (start and end from the slopes, ±1-2 s: 137..141 s gives 328,8..338,4) pass. This now matches the task text, which tells the student that rows 20 s and 150 s are inside the plateau, and the Vastaus, which calls 312 "liian pieni".
-- Tolerance, Vastaus (±5 %) and answer 334 agree. Counts 8/7/5, levels and solution structure unchanged.
+- Round-2 Blocking fixed: the solution now lists masses smallest first (0,10; 0,50; 0,60; 1,0 kg) and calls the heat order "lähes päinvastainen"; this is true, since the heat order differs from the reverse of the mass order only by the jääpussi/kattila swap, and the sentence no longer contradicts the answer order.
+- Stem order (kattila, kiehuva vesi, teekannu, jääpussi) differs from the answer order; Q values 84, 167, 201, 226 kJ unchanged and correct.
+- Round 3, text only: the diff of 3b0a55d57 was read; no capture was opened.

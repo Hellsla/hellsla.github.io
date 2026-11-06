@@ -89,6 +89,15 @@
 **Answer:** $n_\text{A} - n_\text{B} \approx 0.024\,\text{mol}$, two significant figures, because the volume and the pressure readings from the graph are known to two digits. Separately $n_\text{A} \approx 0.060\,\text{mol}$ and $n_\text{B} \approx 0.036\,\text{mol}$. The points are read from grid crossings, so the accepted range is narrow: $0.0233$–$0.0247\,\text{mol}$.
 **Reasonableness:** The slope of line A is greater, so there is more gas in A and the difference is positive. The ratio of the pressures $100 : 60$ is also the ratio of the amounts of substance: $0.060 / 0.036 \approx 1.7$.
 
+## fy3-10-L2-08
+**Find:** which row of the student's calculation is wrong.
+**Principle:** The equation of state $pV = nRT$ requires base units: pressure in pascals, volume in cubic metres and temperature in kelvins. When the result is in kelvins, degrees Celsius are obtained by subtracting $273$, because $273$ is added to a Celsius temperature when converting it to kelvins. The calculation can be checked row by row: unit conversions, solving the equation, substitution and finally the conversion to degrees Celsius.
+**Model answer:** Row 1: $100\,\text{kPa} = 100\,000\,\text{Pa}$ and $2.00\,\textsf{l} = 0.00200\,\text{m}^3$ are correct.
+Row 2: $T = \dfrac{pV}{nR}$ is correct.
+Row 3: the numerator $100\,000 \cdot 0.00200 = 200$ and the denominator $0.0800 \cdot 8.31 = 0.665$, so $T = 200 : 0.665 \approx 301\,\text{K}$ is correct.
+Row 4 is wrong, because $273$ was added instead of subtracted. The correct value is $\theta = 301 - 273 = 28\,{}^\circ\text{C}$.
+Check: $574\,{}^\circ\text{C}$ would be a hot oven, but $28\,{}^\circ\text{C}$ fits room-temperature air. The correct answer is row 4.
+
 ## fy3-10-L3-01
 **Given:** air in the lungs, $V = 0.55\,\textsf{l}$, $\theta = 37\,{}^\circ\text{C}$, $p = 101\,\text{kPa}$; $N_\text{A} = 6.022 \cdot 10^{23}\,\tfrac{1}{\text{mol}}$, $R = 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
 **Find:** number of molecules $N$

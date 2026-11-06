@@ -230,6 +230,53 @@
       "answer": 590,
       "unit": "J",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-2-L2-08",
+      "level": 2,
+      "text": "A rubber band is stretched. Example values: the force grows steadily from zero, and it is $20\\,\\text{N}$ at a stretch of $10\\,\\text{cm}$ and $40\\,\\text{N}$ at a stretch of $20\\,\\text{cm}$.\n\nStretching it to $10\\,\\text{cm}$ requires the work $W_1$. How much work does stretching it to $20\\,\\text{cm}$ require, counting from the start?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "The work is $4\\,W_1$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The work is $2\\,W_1$.",
+          "feedback": "This assumes that the work grows in the same ratio as the distance, as if the force were constant. Here the force also doubles, so the work is the area of the graph and not just a multiple of the distance."
+        },
+        {
+          "text": "The work is $3\\,W_1$.",
+          "feedback": "This is only the work of the second $10\\,\\text{cm}$ part of the stretch, $3.0\\,\\text{J}$ or $3\\,W_1$. The question asks for the work counting from the start, so the work $W_1$ of the first part is included."
+        },
+        {
+          "text": "The work is $4\\,W_1$.",
+          "correct": true,
+          "feedback": "Correct: the work becomes four times as great."
+        }
+      ],
+      "reason_prompt": "Which justification explains your answer?",
+      "reasons": [
+        {
+          "text": "The work is the product of force and distance, and the distance doubles from $10\\,\\text{cm}$ to $20\\,\\text{cm}$.",
+          "feedback": "The product $W = F s$ is valid only for a constant force. Here the force grows from zero, so the work is the area of the graph, and the force also doubles."
+        },
+        {
+          "text": "On the second $10\\,\\text{cm}$ part of the stretch the mean value of the force is $30\\,\\text{N}$.",
+          "feedback": "The statement is true, but it gives only the work of the second part, $30\\,\\text{N} \\cdot 0.10\\,\\text{m} = 3.0\\,\\text{J}$. It does not explain the whole work counting from the start."
+        },
+        {
+          "text": "The work is the area of the triangle in the force graph, and both the base and the height double.",
+          "correct": true,
+          "feedback": "Correct: the area of the triangle is $\\tfrac{1}{2} F s$. When $F$ and $s$ double, the area becomes four times as great."
+        },
+        {
+          "text": "At a stretch of $20\\,\\text{cm}$ the force is double that at a stretch of $10\\,\\text{cm}$.",
+          "feedback": "The statement is true, but it is only one of the two doublings. The distance also doubles, and the work depends on both."
+        }
+      ]
     }
   ],
   "level3": [

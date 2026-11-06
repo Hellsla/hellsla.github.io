@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 15c5b525fcb69a71
-Mode: full
-Round: 1
+CONTENT-HASH: 2652c350745c0908
+Mode: delta
+Round: 2
 
 ## Blocking
 (none)
 
 ## Fixed
-(none: no translation text needed changes)
+(none: no translation text needed changes; the English figure descriptions were added in a6ee2cdec)
 
 ## Polish
 - None.
 
 ## Checked
-- Full translation review against the reviewed Finnish; the 8 new tasks (L1-06..08, L2-05..07, L3-04..05) read in full.
-- Scripted comparison of every number in exercises.json (texts, answers, units, tolerances, correct flags, data table cells) and in solutions.md (all 20 sections) with the Finnish: identical apart from decimal sign (decimal comma in prose, point in JSON table cells as in fi). Ids, choice order, correct flags and feedback structure match.
-- Physics text equals the source: Boyle's law, isochoric/isobaric, Kelvin proportionality, hose-volume systematic error, extrapolation to absolute zero, adiabatic-heating compression, diver p = p0 + rho g h. No formula or answer changed.
-- Translation (selkosuomi): no stray words of the other language; terms consistent. No edits needed.
-- check_i18n.py fi-easy: 0 errors.
+- Option-figure descriptions pick-line/boyle/flat/rising in figures.json (fi-easy) checked against the graph code and the Finnish: A line (40;100)-(10;400) gives 300 kPa at 20 ml; B curve 100/200/400 kPa (pV = 4000); C horizontal 100 kPa; D rising line 25/50/100 kPa at 10/20/40 ml. Values, shapes, grid (5 ml, 50 kPa) and range identical to the Finnish.
+- Descriptions do not give away the answer beyond what the graph shows; they agree with the feedback and the solution.
+- Exercises L2-08 text, answer B, feedback and solution unchanged and correct.
+- check_i18n.py: nothing for fy3-9.

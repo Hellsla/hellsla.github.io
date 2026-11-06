@@ -268,6 +268,33 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy3-12-L2-08",
+      "level": 2,
+      "text": "Inside the example building it is $21\\,{}^\\circ\\text{C}$ and outside $-9\\,{}^\\circ\\text{C}$, so the temperature difference across each building part is $\\Delta T = 30\\,\\text{K}$ and the temperatures stay constant. The U-values and areas of the building parts are example values.\n\nDoor: $U = 1.0\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$, $A = 2.0\\,\\text{m}^2$.\n\nWall: $U = 0.17\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$, $A = 90\\,\\text{m}^2$.\n\nWindows: $U = 1.2\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$, $A = 8.0\\,\\text{m}^2$.\n\nRoof: $U = 0.090\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$, $A = 80\\,\\text{m}^2$.\n\nCalculate the thermal power $P$ conducted through each building part and compare them.",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "prompt": "Put the building parts in order of the thermal power $P$ conducted through them, from smallest to largest.",
+      "order": [
+        {
+          "text": "Door"
+        },
+        {
+          "text": "Roof"
+        },
+        {
+          "text": "Windows"
+        },
+        {
+          "text": "Wall"
+        }
+      ],
+      "answer": "Door (about $60\\,\\text{W}$), roof (about $220\\,\\text{W}$), windows (about $290\\,\\text{W}$), wall (about $460\\,\\text{W}$).",
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level3": [

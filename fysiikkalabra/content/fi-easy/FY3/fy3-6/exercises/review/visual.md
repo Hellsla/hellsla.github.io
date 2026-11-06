@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 4b8fb777f41bd4cf
+CONTENT-HASH: 89e1824f0f4efd16
+Mode: delta
+Round: 1
 
 ## Blocking
 (none)
 
-## Fixed
-- none needed for layout; wording edits above shorten the L2-06 line that left "120 s." alone on a line (en)
-
 ## Polish
-- none
+[Minor] The student's lines 3 in task and solution show the substitution without units (base units stated in feedback); acceptable.
 
 ## Checked
-- fy3-6-open-exercises-L2/L3 captures at 1280 px (L2-05..07 tables and answers, L3-04 aligned substitution, L3-05 prompt) in fi-easy: tables show decimal-point values with units, no clipping, no Finnish in en.
+- New task fy3-6-L2-08 at 390 px (fi-easy), own render of preview/fi-easy/fy3-6.html: task text, every option and its feedback open, solution card open; page and card have no horizontal overflow (scrollWidth equals width).
+- Delta covers only the new task and its solution; surrounding exercises were not changed.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish (selkosuomi) 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

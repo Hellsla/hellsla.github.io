@@ -1,21 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 6adc73b630c26584
+CONTENT-HASH: bf811b5954b48e62
 ROUND: 3
 
-Round 3 checks the last commit (`git show HEAD -- content/fi/FY3`), which touches only fy3-7 L2-05 (tolerance and Vastaus line); the rest is covered by the round-2 PASS.
-
 ## Blocking
-(none)
+(none) Delta of commit 3b0a55d57: the masses in the L2-08 model answer are now listed smallest first (kiehuva vesi 0,10 kg, jääpussi 0,50 kg, kattila 0,60 kg, teekannu 1,0 kg), matching "pienimmästä suurimpaan" used for the heat order. Reads clearly and consistently.
 
 ## Polish
-- [Minor] The round-2 polish on L2-05 (tolerance accepting 312 kJ/kg) is resolved: 0,05 gives 317,3..350,7 and the Vastaus says ±5 %.
-- [Minor] Stearin Mallivastaus c): "4190 · 35,0 J = 146 650 J" and "2 406 650 J" lack units on the factors (carried over, verify).
-- [Minor] Data tables: header and number alignment (site-wide; carried over).
-- [Minor] Answer-field wording "Vastauslaatikkoon" vs "Vastauskenttään" in fy3-4 (site-wide; carried over).
+- [Minor] "Lämmön järjestys on lähes päinvastainen" — the quantity is lämpömäärä; "Lämpömäärien järjestys on lähes päinvastainen" is more exact (the heat order is the reverse of the mass order except that jääpussi and kattila keep their places).
+- [Minor] The Arvio sentence is long; optional split after "paljon".
 
 ## Checked
-- Diff HEAD read: one number in exercises.json (0.05) and "\pm 5\,\%" in solutions.md, valid LaTeX with the thin space as elsewhere; no layout impact. No plain-text quantity in the changed text.
-- No new capture; one-character change.
+- Render (own Playwright, 390 px, preview/fy3-7.html rebuilt with build.py fy3-7): L2-08 with ranks set, feedback unhidden, solution open; read the end of Periaate, the four Mallivastaus chains and the changed sentence. All chains and the unit-bearing masses fit; no katex overflow; scrollWidth 390.
+- Text only: the rest of the page unchanged since round 2 (PASS); hash at start and end bf811b5954b48e62.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

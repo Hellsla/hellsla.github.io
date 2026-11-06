@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: d6c59949a7a14871
+CONTENT-HASH: 0471406a46280667
+Mode: full (translation review against the reviewed Finnish set, teacher procedure 2026-10-28)
+Round 2
 
 ## Blocking
 (none)
 
-## Fixed
-- L2-05, L2-07, L3-04 task texts: only added a plain-language explanation (hyötysuhde, ilmalämpöpumppu, lämpökerroin) and split a long sentence; no number, unit or answer changed.
-
 ## Polish
-- None.
+(none)
 
 ## Checked
-- Scripted comparison of exercises.json against the Finnish for all 8 new tasks: ids, kinds, answers, units, tolerances, correct flags, choices, table cells and every number equal.
-- Solutions (243 lines): every number, unit and formula equals the Finnish; same structure.
-- Recomputed: lämpökerroin 3,25, suurin hyötysuhde 31,4 %, Q_ulko 20,9 kWh, kauden lämpökerroin 2,74, Delta U 0,74 kJ.
-- Terms and symbols (W_k, E_s, Q_sisälle, Q_ulko) as in the Finnish. check_i18n fi-easy: 0 errors.
+- fy3-11-L2-08 (fi-easy): id, kind, answer, tolerance, correct flags equal fi; the correct option and reason are the same as in fi.
+- Numbers and formulas identical to fi (decimal point only differs); recomputed: eta_A = 120/400 = 0.30, eta_B = 120/300 = 0.40, Q2 = 280 and 180 kJ .
+- All choice and reason feedback keep the same physics and misconception as fi; solution complete and symbolic first.
+- check_i18n.py: no fy3-11 findings; build.py fy3-11 succeeds.

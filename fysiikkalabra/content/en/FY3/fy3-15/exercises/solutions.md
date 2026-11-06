@@ -144,6 +144,30 @@
 **Answer:** $36.6\,\%$, three significant figures like the given efficiencies.
 **Reasonableness:** The student's error: a sum of efficiencies of $230\,\%$ would be over $100\,\%$, which is impossible, because a plant cannot produce more electricity than there is energy in the fuel. Each step reduces the power that is left, so the efficiencies are multiplied, not added. The product $0.366$ is smaller than the weakest step $0.410$, as it should be when all the factors are below 1. Estimate: $0.9 \cdot 0.4 \cdot 1.0 = 0.36$. The waste heat is $100\,\% - 36.6\,\% = 63.4\,\%$ of the fuel power.
 
+## fy3-15-L2-08
+**Given:** fuel power $P_0 = 1200\,\text{MW}$, water flow $12\,\tfrac{\text{m}^3}{\text{s}}$, temperature of the water $8\,{}^\circ\text{C} \to 18\,{}^\circ\text{C}$, $\rho = 1000\,\tfrac{\text{kg}}{\text{m}^3}$ and $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
+**Find:** the order of magnitude of the thermal power $P_\text{L}$ transferred from the condenser to the water
+**Principle:** The thermal power transferred to the water is $P_\text{L} = c\,q_m\,\Delta T$, where $q_m$ is the mass flow rate ($\text{kg/s}$) and $\Delta T$ is the rise in the temperature of the water in the condenser. The order of magnitude is enough, so the values may be rounded, but the density must be used and $\Delta T$ is the difference of the temperatures in kelvins.
+**Model answer:** The mass flow rate:
+
+$q_m = \rho\,\dfrac{V}{t}$
+
+$q_m = 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 12\,\tfrac{\text{m}^3}{\text{s}} = 12\,000\,\tfrac{\text{kg}}{\text{s}}$
+
+The rise in temperature:
+
+$\Delta T = 18\,{}^\circ\text{C} - 8\,{}^\circ\text{C} = 10\,\text{K}$
+
+The thermal power:
+
+$P_\text{L} = c\,q_m\,\Delta T$
+
+$P_\text{L} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 12\,000\,\tfrac{\text{kg}}{\text{s}} \cdot 10\,\text{K}$
+
+$P_\text{L} \approx 5.0 \cdot 10^8\,\text{W} = 500\,\text{MW}$
+
+The nearest option is $500\,\text{MW}$. Reasonableness: the result is about $42\,\%$ of the fuel power $1200\,\text{MW}$, which fits the fact that a large part of the energy of the fuel is transferred through the condenser. The other options come from errors: $0.5\,\text{MW}$ when the density is not used, $50\,\text{MW}$ when a cubic metre is read as a hundred kilograms and $15\,000\,\text{MW}$ when the final temperature in kelvins is used as the rise.
+
 ## fy3-15-L3-01
 **Given:** $P_0 = 600\,\text{MW}$. Electricity only: $P_\text{s,0} = 240\,\text{MW}$. Full combined production: $P_\text{s,full} = 180\,\text{MW}$ and $P_\text{k,full} = 348\,\text{MW}$. Now the district heating power is $P_\text{k} = 200\,\text{MW}$.
 **Find:** the electric power $P_\text{s}$ in megawatts and the overall efficiency $\eta_\text{tot}$

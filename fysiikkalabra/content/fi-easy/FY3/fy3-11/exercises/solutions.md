@@ -241,3 +241,14 @@ c) Työksi muuttui osuus $\tfrac{W_\text{k}}{Q} = \tfrac{300\,\text{J}}{1040\,\t
 **Vastaus:** b) $\Delta U = 0{,}74\,\text{kJ}$, kaksi merkitsevää numeroa, koska teho $260\,\text{W}$ ja aika $4{,}0\,\text{s}$ on annettu kahdella numerolla. Vastauslaatikkoon tulee tämä luku.
 **Perustelu c):** Noin $29\,\%$ lämmöstä muuttui työksi. Loput noin $71\,\%$ jäi ilman sisäenergiaksi, joten ilma lämpeni. Tämä sopii ilmaan: kaksiatomisella kaasulla vakiopaineessa työn osuus on noin $\tfrac{2}{7} \approx 29\,\%$ saadusta lämmöstä. Yksittäinen laajeneminen ei ole lämpövoimakone, koska kone toistaa työnsä kierros kerrallaan. Jotta mäntä saadaan takaisin alkuun, ilma on jäähdytettävä ja puristettava. Jäähdytyksessä lämpöä siirtyy kylmempään ympäristöön. Yhden laajenemisen työn osuus $29\,\%$ ei siis ole kierroksen hyötysuhde. Kierroksen hyötysuhde on $\eta = W/Q_1$, ja siinä työ on $W = Q_1 - Q_2$.
 **Järkevyys:** Sisäenergian muutos on positiivinen ja pienempi kuin lämpö, $0 < 740\,\text{J} < 1040\,\text{J}$, kuten pitääkin, kun kaasu laajenee ja saa lämpöä. Energiatase: $740\,\text{J} + 300\,\text{J} = 1040\,\text{J}$. Männän nopeus $3{,}0\,\text{cm/s}$ on hidas, joten kevyen männän liike on rauhallista.
+
+## fy3-11-L2-08
+**Kysytty:** kumman koneen hyötysuhde $\eta$ on suurempi ja miksi.
+**Periaate:** Lämpövoimakoneen hyötysuhde on kierroksen työn osuus kuumasta lähteestä otetusta lämmöstä, $\eta = W/Q_1$. Hyötysuhde riippuu siis sekä työstä että otetusta lämmöstä, ei pelkästään toisesta.
+**Mallivastaus:** Koneen B hyötysuhde on suurempi, koska sama työ saadaan pienemmästä otetusta lämmöstä. Lasketaan molemmat osuudet:
+
+Kone A: $\eta_\text{A} = \dfrac{120\,\text{kJ}}{400\,\text{kJ}} = 0{,}30$
+
+Kone B: $\eta_\text{B} = \dfrac{120\,\text{kJ}}{300\,\text{kJ}} = 0{,}40$
+
+Koneet tekevät saman työn, mutta hyötysuhde ei ole siksi sama. Koneen A ylimääräiset $100\,\text{kJ}$ lämpöä eivät muutu työksi, vaan siirtyvät kylmempään ympäristöön ($Q_2 = Q_1 - W$, eli $280\,\text{kJ}$ ja $180\,\text{kJ}$). Myöskään otetun lämmön suuruus ei yksin ratkaise, vaan vertailuun tarvitaan osuus $W/Q_1$. Tulos on järkevä: molemmat hyötysuhteet jäävät alle $100\,\%$:n, kuten lämpövoimakoneella pitääkin.

@@ -1,21 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 15c5b525fcb69a71
-Mode: full
-Round: 1
+CONTENT-HASH: 2652c350745c0908
+Mode: delta
+Round: 3
 
 ## Blocking
 (none)
 
 ## Fixed
-(none: no translation text needed changes)
+- Data-table captions: after the template change (table.ex-data caption wraps) every data caption in the page measures at 390 px with its right edge at 357 px or less and two lines at most, so "(example data)" / "(esimerkkiaineisto)" is fully visible. Round-2 Major closed. Round-1 fixes (en pick-* aria-labels, fy3-13 L2-08 caption) stay fixed.
 
 ## Polish
-- None.
+- [Minor] small tick labels of the fy3-9 pick-* graphs at 390 px; optional.
 
 ## Checked
-- Captures fy3-9-open-exercises-L2-1280-6 (L2-05 with table, en) and L3-1280-4 (fi-easy solution chain) opened; typography, units as inline maths, data table and solution display blocks render correctly in selkosuomi.
-- Number formatting in rendered maths and tables matches the language convention; no Finnish or English left over; no overflow seen.
-- Pure translation text change: no figures altered.
+- Rebuilt fy3-9 and fy3-13; measured every exercise data caption of en and fi-easy pages at 390 px by script (all fit); opened crops of a two-line caption in fi-easy fy3-13 L3-04 and en fy3-9 L2-06 (wrapped, legible, table unharmed). Rounds 1-2 renders of the tasks and solutions (maths, units, layout) remain valid, as the content hash is unchanged by CSS. Hash re-run at the end: unchanged.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

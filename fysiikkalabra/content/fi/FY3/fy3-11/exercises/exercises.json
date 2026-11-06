@@ -262,6 +262,53 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy3-11-L2-08",
+      "level": 2,
+      "text": "Esimerkkiarvot: lämpövoimakoneet A ja B tekevät kumpikin yhden kierroksen aikana saman työn $W = 120\\,\\text{kJ}$.\n\nKone A ottaa kierroksella kuumasta lähteestä lämmön $Q_1 = 400\\,\\text{kJ}$.\n\nKone B ottaa kierroksella kuumasta lähteestä lämmön $Q_1 = 300\\,\\text{kJ}$.\n\nKumman koneen hyötysuhde on suurempi?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "Koneen B",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Koneen A",
+          "feedback": "Tämä pitää suurempaa otettua lämpöä parempana. Hyötysuhde ei mittaa sitä, kuinka paljon lämpöä kone ottaa, vaan kuinka suuri osa otetusta lämmöstä muuttuu työksi."
+        },
+        {
+          "text": "Koneen B",
+          "correct": true,
+          "feedback": "Oikein: hyötysuhde on $\\eta = W/Q_1$, joten sama työ pienemmästä otetusta lämmöstä antaa suuremman osuuden. Koneella B hyötysuhde on $0{,}40$ ja koneella A $0{,}30$."
+        },
+        {
+          "text": "Hyötysuhteet ovat yhtä suuret",
+          "feedback": "Tämä olettaa, että sama työ tarkoittaa samaa hyötysuhdetta. Hyötysuhteeseen vaikuttaa myös otettu lämpö: koneella A $\\eta = 0{,}30$ ja koneella B $\\eta = 0{,}40$."
+        }
+      ],
+      "reason_prompt": "Mikä perustelu selittää vastauksesi?",
+      "reasons": [
+        {
+          "text": "Koneet tekevät kierroksella saman työn, joten niiden hyötysuhde on yhtä suuri.",
+          "feedback": "Tämä on yleinen virhekäsitys: hyötysuhde ei ole työ vaan työn osuus otetusta lämmöstä, $\\eta = W/Q_1$. Sama työ ja eri otettu lämpö antavat eri osuuden."
+        },
+        {
+          "text": "Kone A ottaa enemmän lämpöä $Q_1$, joten sillä on enemmän muutettavaa työksi: $W = Q_1 - Q_2$.",
+          "feedback": "Tässä työ on molemmilla sama $120\\,\\text{kJ}$, joten koneen A lisälämpö ei muutu työksi vaan siirtyy kylmempään ympäristöön: koneella A $Q_2 = 280\\,\\text{kJ}$ ja koneella B $Q_2 = 180\\,\\text{kJ}$."
+        },
+        {
+          "text": "Hyötysuhde on $W/Q_1$, ja sama työ pienemmällä otetulla lämmöllä antaa suuremman osuuden.",
+          "feedback": "Oikein: hyötysuhde kertoo, kuinka suuri osa otetusta lämmöstä muuttuu työksi. Koneella B osuus on $\\tfrac{120}{300}$ ja koneella A $\\tfrac{120}{400}$.",
+          "correct": true
+        },
+        {
+          "text": "Molemmat koneet luovuttavat lämpöä kylmempään ympäristöön, joten kummankin hyötysuhde on alle $100\\,\\%$.",
+          "feedback": "Väite on tosi, mutta se ei selitä vastausta. Se pätee kaikille lämpövoimakoneille eikä kerro, kumpi on parempi; vertailu ratkeaa vasta osuudesta $W/Q_1$."
+        }
+      ]
     }
   ],
   "level3": [

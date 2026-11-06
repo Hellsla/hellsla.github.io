@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 4b8fb777f41bd4cf
+CONTENT-HASH: 89e1824f0f4efd16
 
 ## Blocking
 (none)
 
 ## Fixed
-- solutions.md L2-06 Reasonableness — hard word "mittaushajonta" → "mittausten epätarkkuus"
-- solutions.md L2-07 Conversions — "painotettu keskiarvo" (weighted mean) explained: "keskiarvo, jossa suuremman lämpökapasiteetin kappaleen lämpötila painaa enemmän"
+- nothing needed fixing in the new task L2-08
 
 ## Polish
-- none
+- none new (the Finnish polish items on the "no error" feedback and the unit-less row 3 apply equally; Finnish untouched)
 
 ## Checked
-- Compared the 8 new exercises in exercises.json and solutions.md against the reviewed Finnish: ids, answers, units, tolerances, correct flag, choices and feedback, table cells and every number identical; sentences short, terms (kalorimetri, ominaislämpökapasiteetti, lämpökapasiteetti) explained.
-- Judged pedagogy: natural wording for 16-18-year-olds, terms as in terms.md; error-analysis task L2-07 and model task L3-05 keep the Finnish structure and hints.
+- L2-08 keeps the Finnish structure: situation, four short lines, question last, "no error" option last; one defensible answer.
+- Distractor feedback names the misconception (adding 273, separate cooling formula, minus sign as slip) and the solution follows the lines step by step.
+- fi-easy follows NOTES.md section 12: short sentences, luovuttaa eli antaa explained, same physics.

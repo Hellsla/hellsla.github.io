@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 64aca687150b1e18
+CONTENT-HASH: 60c23477f4ffc71d
 Mode: full
-Round: 1
+Round: 2
 
 ## Blocking
 (none)
-
-## Fixed
-- L2-05 task: "kulmakertoimista" explained in brackets (nousun jyrkkyydestä).
-- solutions.md L2-07: "lineaarinen interpolointi" explained (arvio suoran viivan mukaan).
 
 ## Polish
 - none
 
 ## Checked
-- ids L1-06..08, L2-05..07, L3-04..05; answers (0.602 kg, 334 kJ/kg, 0.4 kg, 14.4 K, 20 kJ, 23.5 g), units, tolerances, correct flags, choices and feedback, all table cells and every number in solutions.md match the reviewed Finnish; decimal comma in LaTeX as in fi.
-- Recomputed all eight answers from the data; the physics is the same as in the Finnish (lämpötila ei muutu olomuodon muutoksessa, ominaislämpö, kaksivaiheinen jäähtyminen).
-- No English left.
+- New task fy3-7-L2-08 (order four water batches by Q) compared with the reviewed Finnish: same data, order (teapot, ice bag, pan, boiling water), answer text and solution steps.
+- Recomputed: teapot 4190*1.0*20 = 83.8 kJ; ice bag 334*0.50 = 167 kJ; pan 4190*0.60*80 = 201.1 kJ; boiling water 2260*0.10 = 226 kJ. The order is right; mass order is nearly the reverse, as the solution says.
+- Q = cm dT, Q = sm, Q = rm used with the lesson's symbols and table values; temperature does not change in a change of state; masses and temperatures within scope.
+- Decimal point correct in the task and solution; the other 19 tasks are unchanged from the Round 1 pass.

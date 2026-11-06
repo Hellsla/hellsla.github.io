@@ -89,6 +89,15 @@
 **Vastaus:** $n_\text{A} - n_\text{B} \approx 0{,}024\,\text{mol}$, kaksi merkitsevää numeroa, koska tilavuus ja paineiden lukemat ovat kuvaajasta kahden numeron tarkkuudella. Erikseen $n_\text{A} \approx 0{,}060\,\text{mol}$ ja $n_\text{B} \approx 0{,}036\,\text{mol}$. Pisteet luetaan ruudukon risteyksistä, joten hyväksytty väli on kapea: $0{,}0233$–$0{,}0247\,\text{mol}$.
 **Järkevyys:** Suoran A kulmakerroin on suurempi, joten kaasua on A:ssa enemmän ja erotus on positiivinen. Paineiden suhde $100 : 60$ on myös ainemäärien suhde: $0{,}060 / 0{,}036 \approx 1{,}7$.
 
+## fy3-10-L2-08
+**Kysytty:** mikä oppilaan laskun riveistä on väärin.
+**Periaate:** Tilanyhtälö $pV = nRT$ vaatii perusyksiköt: paine pascaleina, tilavuus kuutiometreinä ja lämpötila kelvineinä. Kun tulos on kelvineinä, celsiusasteet saadaan vähentämällä $273$, koska celsiuslämpötilaan lisätään $273$ kelvineiksi muutettaessa. Laskun voi tarkistaa rivi riviltä: yksikkömuunnokset, yhtälön ratkaisu, sijoitus ja lopuksi muunnos celsiusasteiksi.
+**Mallivastaus:** Rivi 1: $100\,\text{kPa} = 100\,000\,\text{Pa}$ ja $2{,}00\,\textsf{l} = 0{,}00200\,\text{m}^3$ ovat oikein.
+Rivi 2: $T = \dfrac{pV}{nR}$ on oikein.
+Rivi 3: osoittaja $100\,000 \cdot 0{,}00200 = 200$ ja nimittäjä $0{,}0800 \cdot 8{,}31 = 0{,}665$, joten $T = 200 : 0{,}665 \approx 301\,\text{K}$ on oikein.
+Rivi 4 on väärin, koska $273$ on lisätty eikä vähennetty. Oikein $\theta = 301 - 273 = 28\,{}^\circ\text{C}$.
+Tarkistus: $574\,{}^\circ\text{C}$ olisi kuuma uuni, mutta $28\,{}^\circ\text{C}$ sopii huoneenlämpöiselle ilmalle. Oikea vastaus on rivi 4.
+
 ## fy3-10-L3-01
 **Annettu:** keuhkojen ilma, $V = 0{,}55\,\textsf{l}$, $\theta = 37\,{}^\circ\text{C}$, $p = 101\,\text{kPa}$; $N_\text{A} = 6{,}022 \cdot 10^{23}\,\tfrac{1}{\text{mol}}$, $R = 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
 **Kysytty:** molekyylien lukumäärä $N$

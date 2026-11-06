@@ -193,3 +193,16 @@
 $$\begin{aligned} m_\text{tot} &= 520\,\text{kg} + 180\,\text{kg} \\ &\quad + 95\,\text{kg} + 140\,\text{kg} \\ &= 935\,\text{kg} \\ G_\text{Earth} &= 935\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 9172\,\text{N} \\ G_\text{Mars} &= 935\,\text{kg} \cdot 3.71\,\text{m/s}^2 = 3469\,\text{N} \\ m_\text{max} &= \dfrac{6000\,\text{N}}{3.71\,\text{m/s}^2} = 1617\,\text{kg} \\ m_\text{extra} &= 1617\,\text{kg} - 935\,\text{kg} = 682\,\text{kg} \end{aligned}$$
 **Answer:** a) The total mass is $935\,\text{kg}$; the weight on Earth is $9.17\,\text{kN}$ and on Mars $3.47\,\text{kN}$. On Earth the weight exceeds the limit $6.00\,\text{kN}$, so the unit could not stand on its legs on Earth, but on Mars it can. b) The additional load can be at most $682\,\text{kg}$. A greater total mass can be taken to Mars ($1617\,\text{kg}$) than to Earth ($6000\,\text{N} : 9.81\,\text{m/s}^2 \approx 612\,\text{kg}$), because the same mass weighs only about $0.38$ times as much on Mars and a smaller force acts on the legs.
 **Reasonableness:** When the total mass is $1617\,\text{kg}$, the weight on Mars is $1617\,\text{kg} \cdot 3.71\,\text{m/s}^2 = 6000\,\text{N}$, exactly the limit of the legs. The allowed total mass on Mars is $\dfrac{9.81}{3.71} \approx 2.64$ times the mass allowed on Earth, and $2.64 \cdot 612\,\text{kg} \approx 1620\,\text{kg}$.
+
+## fy3-1-L1-09
+**Find:** which of the four force diagrams shows correctly the forces that act on a body hanging at rest from a force meter, when the mass of the body is $0.50\,\text{kg}$ and the meter reads $4.9\,\text{N}$.
+**Principle:** A force tells the strength of the interaction between two bodies. A force diagram shows one force for each interaction that acts on the body: the Earth pulls the body down (weight $G = m g$, from the centre), and the stretched spring of the force meter pulls the body up through the hook (force $F$, from the point of attachment). The reading of the meter is the magnitude of this force. The force of the body on the meter acts on the meter, so it does not belong in the force diagram of the body.
+**Model answer:** The correct one is force diagram B. The body interacts with two bodies: the Earth and the hook of the force meter. The weight is calculated from the mass.
+
+$G = m g$
+
+$G = 0.50\,\text{kg} \cdot 9.81\,\text{m/s}^2$
+
+$G = 4.905\,\text{N} \approx 4.9\,\text{N}$
+
+The force of the hook is the reading of the meter, $F = 4.9\,\text{N}$. The forces are equal, so on the same scale the arrows $G$ and $F$ are equally long, $G$ down from the centre and $F$ up from the top face. Diagram A lacks the force $F$ of the meter although the meter pulls the body. In diagram C the arrow $F$ is twice as long as $G$, which would correspond to a reading of about $9.8\,\text{N}$. Diagram D also has the force $F_\text{k}$, which is the force of the body on the meter: it acts on the meter and not on the body.

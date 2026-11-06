@@ -176,6 +176,28 @@ $$\begin{aligned} T &= \dfrac{4190\,\text{J} + 33\,400\,\text{J} - 42\,000\,\tex
 **Principle:** In the calculation the heat given out by the water is divided by the mass of the ice: $s = \dfrac{Q}{m}$. If the mass that really melted is smaller than the $0.050\,\text{kg}$ used in the calculation, the calculated $s$ comes out too small. An error that increased the heat given out by the water would also increase the result.
 **Model answer:** Melted water was sticking to the surface of the ice, so part of the weighed mass was already water and did not need latent heat. The calculation assumes that the whole weighed mass melted, so the divisor is too large and the result comes out too small. Ice that was colder than $0\,{}^\circ\text{C}$ would need extra heat and would increase the result. If the final temperature were read too low, the change in the temperature of the water would look larger and the result would increase. The difference between the specific heat capacities is included in the calculation and does not cause an error.
 
+## fy3-14-L2-08
+**Given:** water $m_\text{w} = 0.25\,\text{kg}$, $T_\text{w} = 18\,{}^\circ\text{C}$; ice $m_\text{i} = 0.080\,\text{kg}$, $T_\text{i} = 0\,{}^\circ\text{C}$; $c_\text{w} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ and $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
+**Find:** which of the statements about the final situation of the ice and water are true and which are false
+**Principle:** Energy is conserved in an insulated container. First compare the quantity of heat $Q_\text{w}$ that the water can give out when it cools to $0\,{}^\circ\text{C}$ with the quantity of heat $Q_\text{i}$ that the ice needs to melt completely. If $Q_\text{w} < Q_\text{i}$, some ice is left and the temperature is $0\,{}^\circ\text{C}$.
+**Model answer:** The heat given out by the water:
+
+$Q_\text{w} = c_\text{w} m_\text{w} T_\text{w}$
+
+$Q_\text{w} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.25\,\text{kg} \cdot 18\,\text{K}$
+
+$Q_\text{w} = 18\,855\,\text{J} \approx 19\,\text{kJ}$
+
+The ice is already at the melting temperature, so melting it takes:
+
+$Q_\text{i} = s\,m_\text{i}$
+
+$Q_\text{i} = 334\,000\,\tfrac{\text{J}}{\text{kg}} \cdot 0.080\,\text{kg}$
+
+$Q_\text{i} = 26\,720\,\text{J} \approx 27\,\text{kJ}$
+
+Statements 1, 3 and 4 are true. Because $Q_\text{w} < Q_\text{i}$, not all the ice melts. The mass of the melted ice is $m_\text{m} = \dfrac{Q_\text{w}}{s}$, that is $m_\text{m} = 0.056\,\text{kg}$, and about $24\,\text{g}$ of ice is left. There are ice and water together in the container, so the temperature is $0\,{}^\circ\text{C}$. Statement 2 is false: it is not the comparison of the masses that decides the melting but the comparison of the quantities of heat. Statement 5 is false: the average $\tfrac{18 + 0}{2}\,{}^\circ\text{C} = 9\,{}^\circ\text{C}$ would forget the latent heat of fusion, and the temperature of the final state is $0\,{}^\circ\text{C}$.
+
 ## fy3-14-L3-04
 **Given:** water $m_\text{w} = 0.200\,\text{kg}$, $T_\text{w} = 30.0\,{}^\circ\text{C}$; ice $m_\text{i} = 0.0500\,\text{kg}$; measurement 1: $T_\text{i} = 0.0\,{}^\circ\text{C}$, $T = 8.2\,{}^\circ\text{C}$; measurement 2: $T_\text{i} = -18.0\,{}^\circ\text{C}$, $T = 6.2\,{}^\circ\text{C}$; from the table $c_\text{w} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, $c_\text{i} = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ and $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
 **Find:** a) $s$ from each measurement, assuming that the temperature of the ice was $0\,{}^\circ\text{C}$, b) the reason for the difference, c) the corrected $s$ of measurement 2 in $\tfrac{\text{kJ}}{\text{kg}}$

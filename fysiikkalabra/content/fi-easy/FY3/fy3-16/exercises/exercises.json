@@ -230,6 +230,37 @@
       "answer": 2.9,
       "unit": "h",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-16-L2-08",
+      "level": 2,
+      "text": "Kylmälaukun jääpussin lämpötila on $0\\,{}^\\circ\\text{C}$. Laukussa ei ole juomia. Laukun sisällä pysyy $0\\,{}^\\circ\\text{C}$, kunnes jää on sulanut. Kaikki seinän läpi johtuva lämpö sulattaa jäätä. Vertaa kahta retkeä (esimerkkiarvot).\n\nEnsimmäinen retki: jäätä $1{,}0\\,\\text{kg}$, laukun U-arvo $U$ ja ulkolämpötila $20\\,{}^\\circ\\text{C}$.\n\nToinen retki: jäätä $1{,}5\\,\\text{kg}$ ja ulkolämpötila $30\\,{}^\\circ\\text{C}$. Eriste on paksumpi, joten U-arvo on $0{,}5\\,U$.\n\nLaukun seinien pinta-ala on molemmilla retkillä sama. Miten jään kestoaika muuttuu ensimmäisestä retkestä toiseen?",
+      "kind": [
+        "reasoning",
+        "model"
+      ],
+      "answer": "Kasvaa kaksinkertaiseksi, koska jään massa ja lämpötilaero kasvavat molemmat kertoimella $1{,}5$ ja U-arvo puolittuu.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Pysyy samana, koska jään massa ja lämpötilaero kasvavat molemmat kertoimella $1{,}5$ ja kumoavat toisensa.",
+          "feedback": "Tässä U-arvo unohtuu. Kestoaika $t = \\dfrac{s\\,m}{UA\\Delta T}$ on kääntäen verrannollinen U-arvoon. Kun U-arvo puolittuu, aika kaksinkertaistuu. Massa ja lämpötilaero kyllä kumoavat toisensa, mutta U-arvo ei."
+        },
+        {
+          "text": "Kasvaa kaksinkertaiseksi, koska jään massa ja lämpötilaero kasvavat molemmat kertoimella $1{,}5$ ja U-arvo puolittuu.",
+          "correct": true,
+          "feedback": "Oikein: kestoaika on $t = \\dfrac{s\\,m}{UA\\Delta T}$, joten $\\dfrac{t_2}{t_1} = \\dfrac{1{,}5}{0{,}5 \\cdot 1{,}5}$, eli $\\dfrac{t_2}{t_1} = 2$. Sisällä on $0\\,{}^\\circ\\text{C}$, joten lämpötilaero on sama kuin ulkolämpötila: $\\dfrac{30}{20} = 1{,}5$."
+        },
+        {
+          "text": "Pienenee puoleen, koska jään massa ja lämpötilaero kumoavat toisensa ja puolittunut U-arvo lyhentää aikaa.",
+          "feedback": "Tässä U-arvo on luettu väärin päin. Mitä pienempi U-arvo on, sitä vähemmän lämpöä johtuu laukkuun ja sitä kauemmin jää kestää. Syy on se, että $t$ on kääntäen verrannollinen U-arvoon. Puolittunut U-arvo pidentää aikaa."
+        },
+        {
+          "text": "Kasvaa kolminkertaiseksi, koska jään massa kasvaa kertoimella $1{,}5$ ja U-arvo puolittuu, eikä ulkolämpötilalla ole väliä.",
+          "feedback": "Tässä unohtuu ulkolämpötilan nousu. Seinän läpi tuleva teho $P = UA\\Delta T$ kasvaa, kun lämpötilaero kasvaa kertoimella $1{,}5$. Silloin jää sulaa nopeammin, ja kestoaika on lyhyempi kuin kolminkertainen."
+        }
+      ]
     }
   ],
   "level3": [
