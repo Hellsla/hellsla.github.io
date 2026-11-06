@@ -448,6 +448,11 @@ check("the exit ticket opens Tarkista osaamisesi, with no nav link of its own", 
       and '<a href="#exit"' not in page_html)
 check("Itsearvio closes the page, after the exercises (teacher 2026-11-06 evening)", page_html.index('<section class="stage stage-practice" id="exercises"') < page_html.index('<section class="stage" id="tarkista"') < page_html.index('id="exit"') and page_html.count('id="exercises"') == 1
       and re.search(r'<a href="#exercises"[^>]*>(?:(?!</a>).)*Tehtävät(?:(?!</a>).)*</a><a href="#tarkista"[^>]*>(?:(?!</a>).)*</a></nav>', page_html) is not None)
+nav_html = re.search(r'<nav class="toc".*?</nav>', page_html, re.S).group(0)
+nos = [int(x) for x in re.findall(r'<span class="toc-no" aria-hidden="true">(\d+)</span>', nav_html)]
+heads = [int(x) for x in re.findall(r'<section class="stage[^"]*" id="[^"]+"[^>]*><h2><span class="stage-no" aria-hidden="true">(\d+)</span>', page_html)]
+check("every chip in the bar, Tehtävät too, has its number, and the numbers run 1, 2, 3 … in page order like the stage headings (teacher 2026-11-06)",
+      nos == list(range(1, len(nos) + 1)) and nos == heads and nav_html.count('<a href="#') == len(nos) and '<a href="#exercises"><span class="toc-no"' in nav_html, (nos, heads))
 check("Ennusta is a closed box", re.search(r'<section class="stage" id="ennusta"[^>]*><h2>.*?</h2><details class="fold" data-fold="ennusta">', page_html) is not None)
 check("no old names on the page", not any(x in page_html for x in ("Herätä kiinnostus", "Lähtölippu", ">Selitä<")))
 check("exercises and exit ticket kept (8/8/5, 1 item)", page_html.count('class="level"') == 3 and page_html.count("<li>$(s, F)$-kuvaajassa") == 1 and page_html.count('<span class="count">8 tehtävää') == 2 and '<span class="count">5 tehtävää' in page_html)

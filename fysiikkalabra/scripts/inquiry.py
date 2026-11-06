@@ -882,18 +882,21 @@ def render(folder, inquiry, parts, md):
                      f'<span class="fold-status" data-n="{k}">{T("inquiry.fold_question_one" if k == 1 else "inquiry.fold_question_many", n=k)}</span></summary>'
                      f'<div class="fold-body">{inner}</div></details>')
         lead = f'<p class="stage-lead">{T(f"inquiry.lead_{sid}")}</p>' if T.has(f"inquiry.lead_{sid}") else ""   # what the stage is for (teacher 2026-11-05)
-        sec = f'<section class="stage" id="{sid}" data-stage="{sid}"><h2><span class="stage-no" aria-hidden="true">{n}</span>{title}</h2>{lead}{inner}</section>'
         if sid == "tarkista" and parts.get("exercises"):   # Itsearvio closes the page, after the exercises (teacher 2026-11-06 evening)
-            last = (sec, toc_link(sid, n, title)); continue
-        body.append(sec)
+            n -= 1; last = (sid, title, lead, inner); continue   # numbered after Tehtävät, so the bar reads 1, 2, 3 … in order
+        body.append(f'<section class="stage" id="{sid}" data-stage="{sid}"><h2><span class="stage-no" aria-hidden="true">{n}</span>{title}</h2>{lead}{inner}</section>')
         toc.append(toc_link(sid, n, title))
     if parts.get("exercises"):                         # the exercises after the lesson's stages, before Itsearvio
         text = ""                                      # the exercises' own lead text is not shown (teacher 2026-11-04: "turhia")
         aid = ex_act["id"] if ex_act else "harjoitukset"
-        body.append(f'<section class="stage stage-practice" id="exercises" data-stage="exercises"><h2>{exercises_title()}</h2>'
+        n += 1                                         # Tehtävät is a stage like the others: numbered, ticked when its core tasks are answered (teacher 2026-11-06)
+        body.append(f'<section class="stage stage-practice" id="exercises" data-stage="exercises"><h2><span class="stage-no" aria-hidden="true">{n}</span>{exercises_title()}</h2>'
                     f'<div class="activity act-exercises" id="{esc(aid)}" data-type="exercises">{text}{parts["exercises"]}</div></section>')
-        toc.append(f'<a href="#exercises" class="toc-end"><span class="toc-label">{exercises_title()}</span></a>')
-    if last: body.append(last[0]); toc.append(last[1])
+        toc.append(toc_link("exercises", n, exercises_title()))
+    if last:
+        sid, title, lead, inner = last; n += 1
+        body.append(f'<section class="stage" id="{sid}" data-stage="{sid}"><h2><span class="stage-no" aria-hidden="true">{n}</span>{title}</h2>{lead}{inner}</section>')
+        toc.append(toc_link(sid, n, title))
     return current_stage_names("\n".join(body)), "".join(toc)
 
 
