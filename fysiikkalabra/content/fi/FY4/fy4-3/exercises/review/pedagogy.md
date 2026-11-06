@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 7eb29709fe3b4f87
+CONTENT-HASH: fdddeeb5c9f1df61
 ## Blocking
 (none)
 ## Polish
 (none)
 ## Checked
-- New L2-08 (two-stage reasoned multiple choice, type 1): stage 1 F_HK = F_KH, stage 2 'voima ja vastavoima'.
-- Distractors hit the chapter's warned mistakes: reason 2 'kumoavat toisensa' (second warned error), reason 1 force grows with mass, option F=0 / reason 3 only moving bodies push.
-- Form: correct answer and correct reason are not the longest or the only hedged; reason 2 also says 'yhtä suuret', so only the 'kumoavat' claim separates it.
-- Stage-1 correct feedback states equality and opposite direction but not the law as reason, so the reason stage is not given away.
-- Scope: Newton III, vector notation with overline, magnitudes plain, as the lesson does. Task fits L2.
-- Solution has Kysytty/Periaate/Mallivastaus and addresses every wrong option and reason; Finnish correct.
-- Rendered at 390 px with solution open: no overflow, widest formula 129 px. Text only: feedback shown after answering (not verified visually).
+- Delta (round 3): the vector subscripts in L2-08 (text, stage-2 feedback, Periaate, Mallivastaus) are now upright, \overline{F}_{\text{KH}} / \overline{F}_{\text{HK}}; no remaining italic KH/HK subscript in exercises.json or solutions.md. My round-2 Polish item is resolved.
+- No number, option order, correct flag or wording changed; the correct option is still not identifiable by form and the distractors still catch the warned mistakes.
+- Inline formulas are short, within about 300 px at 390 px. Text-only check, not re-rendered.
