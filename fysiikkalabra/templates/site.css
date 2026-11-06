@@ -708,10 +708,11 @@ p.source[data-source=measured]{border-color:var(--accent-deep)}
 /* the Ennusta box: closed at first; open, it frames the predictions as one group */
 details.fold{max-width:calc(var(--measure) + 5rem);margin:0;border:1px solid var(--line);border-radius:var(--card-radius);background:color-mix(in srgb,var(--accent-soft) 55%,var(--bg));padding:0 1.1rem}
 details.fold>summary{min-height:56px;gap:.2rem .7rem;flex-wrap:wrap;font:700 var(--fs-body) var(--sans);color:var(--accent-deep)}
-details.fold>summary .fold-status{font:400 var(--fs-small) var(--sans);color:var(--ink-2)}
+details.fold>summary .fold-status,details.fold>summary .more-count{font:400 var(--fs-small) var(--sans);color:var(--ink-2)}
 details.fold[open]>summary{border-bottom:1px solid var(--line);margin-bottom:1.1rem}
 details.fold[open]{padding-bottom:.1rem}
 @media print{.fold-status{display:none}}
+details.fold.more{margin:0 0 1.25rem}   /* Tutki: the investigations after the first one (teacher 2026-11-06) */
 
 /* exercises: each level a box, each exercise a numbered item on a rule */
 details.level{max-width:calc(var(--measure) + 3rem);background:var(--surface);border:1px solid var(--line);border-radius:var(--card-radius);padding:0 1.2rem;margin:0 0 .8rem}
