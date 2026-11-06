@@ -163,6 +163,25 @@
 **Periaate:** Nukleonien lukumäärä säilyy ($236 = 236$), joten oppilaan lähtökohta on oikea. Massa ei kuitenkaan ole pelkästään nukleonien lukumäärä kertaa vakio, vaan siihen vaikuttaa sidosenergia. Tuotteissa sidosenergia nukleonia kohti on suurempi kuin uraanissa, joten tuotteiden kokonaismassa on pienempi. Massan ja energian ekvivalenssin mukaan massaero vapautuu energiana, $Q = \Delta m\,c^2$.
 **Mallivastaus:** Nukleonien määrä säilyy, mutta tuotteiden nukleonit ovat tiukemmin sidottuja kuin uraani-235:n nukleonit, joten tuotteiden kokonaismassa on pienempi kuin lähtöaineiden. Massaero vapautuu energiana, joten fissiossa vapautuu energiaa. Nukleonit eivät muutu energiaksi eivätkä katoa, ja massa ja energia ovat ekvivalentteja eivätkä toisistaan erillisiä. Jos tuotteiden nukleonit olisivat löyhemmin sidottuja, massa kasvaisi eikä energiaa vapautuisi.
 
+## fy8-11-L2-08
+**Kysytty:** vapautuuko energiaa, kun hiili-12-ydin jakautuu kolmeksi helium-4-ytimeksi, ja mikä perustelu sen selittää.
+**Periaate:** Ydinreaktiossa energiaa vapautuu, kun tuotteiden sidosenergia on yhteensä suurempi kuin lähtöaineiden, ja energiaa kuluu, kun se on pienempi. Nukleonien määrä säilyy, joten ratkaisee sidosenergia nukleonia kohti $\tfrac{E_\text{B}}{A}$. Fissio vapauttaa energiaa vain raskailla ytimillä, koska vain niillä jakautuminen siirtää nukleoneja kohti kuvaajan huippua.
+**Mallivastaus:** Reaktio vaatii energiaa. Lasketaan sidosenergiat ennen reaktiota ja sen jälkeen; kummallakin puolella on $12$ nukleonia.
+
+$E_\text{B,alku} = 12 \cdot 7{,}680\,\text{MeV} = 92{,}16\,\text{MeV}$
+
+$E_\text{B,loppu} = 12 \cdot 7{,}074\,\text{MeV} = 84{,}888\,\text{MeV}$
+
+$Q = E_\text{B,loppu} - E_\text{B,alku}$
+
+$Q = 84{,}888\,\text{MeV} - 92{,}16\,\text{MeV}$
+
+$Q \approx -7{,}27\,\text{MeV}$
+
+Tuotteissa nukleonit ovat löyhemmin sidottuja, joten sidosenergia pienenee noin $7{,}3\,\text{MeV}$. Tämä energia on tuotava reaktioon, esimerkiksi gammafotonina, ja tuotteiden yhteismassa on suurempi kuin hiili-12-atomin. Hiili-12 on kevyt ydin sidosenergiakuvaajan huipun vasemmalla puolella, joten sen jakautuminen siirtää nukleoneja alaspäin kuvaajalla. Käänteinen reaktio, kolmen helium-4-ytimen fuusio, vapauttaa saman energian.
+
+Perustelu, että sidosenergia vapautuu ytimen jakautuessa, on virheellinen: sidosenergia tarvitaan ytimen hajottamiseen. Perustelu, että jakautuminen vaatii aina energiaa, on virheellinen, koska uraani-235:n fissio vapauttaa energiaa. Nukleonien määrä on molemmin puolin $12$, mutta se ei selitä energiaa, koska energia tulee sidosenergian muutoksesta.
+
 ## fy8-11-L3-04
 **Annettu:** aktiivisuus tonnia kohti ajan funktiona (taulukko, esimerkkiaineisto; $t$ lasketaan noin $10$ vuotta poiston jälkeen), tavoitearvo $A_\text{raja} = 100\,\tfrac{\text{TBq}}{\text{t}}$, plutonium-239:n puoliintumisaika $24\,100\,\text{a}$
 **Kysytty:** a) puoliintumisaika $T_{1/2}$, b) aika $t$, jolloin aktiivisuus on $100\,\tfrac{\text{TBq}}{\text{t}}$, c) perustelu

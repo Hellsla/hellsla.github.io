@@ -45,4 +45,5 @@ nal = (222 - 206) // 4                        # 4 alpha decays
 a["fy8-8-L3-04"] = 82 - 86 + 2 * nal          # Z: 86 - 8 + n_beta = 82 -> 4 beta-minus decays
 # L3-05: levels 351,2; 820,5; 1501,4 keV; missing line is 1501,4 - 351,2 = 1150,2 keV
 a["fy8-8-L3-05"] = lam_pm(1501.4 - 351.2)     # 1,078 pm
+# fy8-8-L2-08 is a find-the-error task without a number: row 3, I-131 beta-minus, Z = 52 - 1 = 51 != 53; correct daughter Xe-131 (Z = 54)
 print(json.dumps({i: (round(v, 6) if not isinstance(v, str) else v) for i, v in a.items()}, ensure_ascii=False))

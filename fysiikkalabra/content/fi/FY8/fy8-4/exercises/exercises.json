@@ -264,6 +264,53 @@
       "answer": 6.4,
       "unit": "10¹⁵ 1/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-4-L2-08",
+      "level": 2,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "Röntgenfotoni, jonka energia on $17{,}4\\,\\text{keV}$, siroaa grafiitin lähes vapaasta, aluksi levossa olevasta elektronista. Sironnassa elektroni saa liike-energian $0{,}55\\,\\text{keV}$. Arvot ovat esimerkkiarvoja.\n\nMiten sironneen fotonin aallonpituus $\\lambda'$ vertautuu tulevan fotonin aallonpituuteen $\\lambda$?",
+      "answer": "Aallonpituus $\\lambda'$ on pidempi kuin $\\lambda$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Aallonpituus $\\lambda'$ on lyhyempi kuin $\\lambda$.",
+          "feedback": "Lyhyempi aallonpituus tarkoittaisi energisempää fotonia. Fotoni on kuitenkin luovuttanut osan energiastaan elektronille, eikä se ole saanut energiaa mistään lisää."
+        },
+        {
+          "text": "Aallonpituus $\\lambda'$ on pidempi kuin $\\lambda$.",
+          "correct": true,
+          "feedback": "Oikein: aallonpituus kasvaa noin $3\\,\\%$, arvosta $0{,}0713\\,\\text{nm}$ arvoon $0{,}0736\\,\\text{nm}$. Juuri tämän muutoksen Compton mittasi grafiitilla."
+        },
+        {
+          "text": "Aallonpituus $\\lambda'$ on yhtä suuri kuin $\\lambda$.",
+          "feedback": "Tämä on aaltomallin ennuste, jota mittaukset eivät tue. Compton havaitsi, että sironneen säteilyn aallonpituus muuttuu ja muutos kasvaa sirontakulman mukana."
+        }
+      ],
+      "reason_prompt": "Mikä perustelu selittää vastauksesi?",
+      "reasons": [
+        {
+          "text": "Sironneen fotonin energia on pienempi kuin tulevan, ja fotonin energia on suoraan verrannollinen sen aallonpituuteen.",
+          "feedback": "Energian pieneneminen on oikein, mutta riippuvuus on luettu väärin päin. Fotonin energia on $E = \\tfrac{hc}{\\lambda}$, joten pienempi energia tarkoittaa pidempää aallonpituutta."
+        },
+        {
+          "text": "Elektroni värähtelee tulevan aallon tahdissa ja säteilee siksi samalla taajuudella kuin tuleva röntgensäteily.",
+          "feedback": "Tämä on aaltomallin selitys, joka ei vastaa Comptonin mittauksia. Fotonimallissa sironta on törmäys, jossa elektroni saa osan fotonin energiasta."
+        },
+        {
+          "text": "Sironneen fotonin energia on pienempi kuin tulevan, ja fotonin energia on kääntäen verrannollinen aallonpituuteen.",
+          "correct": true,
+          "feedback": "Oikein: energian säilymisestä $hf' = hf - E_\\text{k}$, ja yhtälöstä $E = \\tfrac{hc}{\\lambda}$ pienempi energia antaa pidemmän aallonpituuden."
+        },
+        {
+          "text": "Fotonilla on liikemäärä $p = \\tfrac{h}{\\lambda}$, vaikka sillä ei ole lepomassaa eikä se voi olla levossa.",
+          "feedback": "Väite on tosi, mutta se ei kerro, kumpaan suuntaan aallonpituus muuttuu. Suunnan ratkaisee se, että fotoni luovuttaa elektronille energiaa ja liikemäärää."
+        }
+      ]
     }
   ],
   "level3": [

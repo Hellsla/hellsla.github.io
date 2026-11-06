@@ -177,6 +177,19 @@
 **Vastaus:** $\Delta E = 0{,}0625\,\text{eV}$, kolme merkitsevää numeroa kuten aallonpituuksissa. LED ei ole yksivärinen, koska sen fotonien energiat vaihtelevat: intensiteetti on vähintään puolet maksimista, kun fotonin energia on välillä $1{,}94\,\text{eV}$–$2{,}00\,\text{eV}$, ja nämä fotonit muodostavat spektrin pääosan. Huipun fotonin energia on noin $1{,}97\,\text{eV}$. Energia-aukko on materiaalin ominaisuus, mutta elektronit ja aukot ovat vöissä lämpöliikkeen vuoksi hieman eri energioilla, joten fotonien energiat jakautuvat kapealle välille energia-aukon kohdalle.
 **Järkevyys:** Pyöreillä luvuilla $1240 : 620 - 1240 : 640 \approx 2{,}00 - 1{,}94 = 0{,}06\,\text{eV}$. Ero on noin $3\,\%$ huipun fotonin energiasta $1{,}97\,\text{eV}$, mikä sopii kapeaan mutta ei äärettömän kapeaan kaistaan.
 
+## fy8-6-L2-08
+**Kysytty:** mikä johtopäätös viiden LEDin aineistosta on perusteltu.
+**Periaate:** Kynnysjännitteellä elektronin saama energia on likimain fotonin energia, $eU_\text{k} \approx hf$, joten kuvaajan $(f, U_\text{k})$ kulmakerroin on $k = \tfrac{h}{e}$ ja Planckin vakio on $h = ek$. Kulmakertoimen epävarmuus siirtyy Planckin vakioon samalla kertoimella, $\Delta h = e\,\Delta k$. Tulos on sopusoinnussa hyväksytyn arvon kanssa, jos hyväksytty arvo on välillä $h - \Delta h$ … $h + \Delta h$.
+**Mallivastaus:** Planckin vakio ja sen epävarmuus:
+
+$h = ek = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 3{,}98 \cdot 10^{-15}\,\text{V}\,\text{s} = 6{,}376 \cdot 10^{-34}\,\text{J}\,\text{s}$
+
+$\Delta h = e\,\Delta k = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 0{,}21 \cdot 10^{-15}\,\text{V}\,\text{s} = 0{,}336 \cdot 10^{-34}\,\text{J}\,\text{s}$
+
+Ryhmän tulos on $h = (6{,}4 \pm 0{,}3) \cdot 10^{-34}\,\text{J}\,\text{s}$, eli väli on $6{,}04 \cdot 10^{-34}\,\text{J}\,\text{s}$ … $6{,}71 \cdot 10^{-34}\,\text{J}\,\text{s}$. Hyväksytty arvo $6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ on tällä välillä: ero on $6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} - 6{,}376 \cdot 10^{-34}\,\text{J}\,\text{s} = 0{,}25 \cdot 10^{-34}\,\text{J}\,\text{s}$, mikä on pienempi kuin $\Delta h$. Ryhmän Planckin vakio on siis sopusoinnussa hyväksytyn arvon kanssa. Myös pisteet sopivat suoraan: esimerkiksi punaisen LEDin kohdalla suora antaa $3{,}98 \cdot 10^{-15}\,\text{V}\,\text{s} \cdot 4{,}76 \cdot 10^{14}\,\text{Hz} - 0{,}07\,\text{V} = 1{,}82\,\text{V}$, ja mitattu $1{,}85\,\text{V}$ poikkeaa siitä vähemmän kuin mittausepävarmuus $0{,}05\,\text{V}$.
+
+Muut johtopäätökset eivät ole perusteltuja. Suoran ei tarvitse kulkea origon kautta, koska mitattu kynnysjännite eroaa arvosta $\tfrac{hf}{e}$ lähes yhtä paljon kaikilla LEDeillä; ero siirtää suoraa mutta ei muuta kulmakerrointa. Systemaattista virhettä ei voi päätellä, koska ero $0{,}25 \cdot 10^{-34}\,\text{J}\,\text{s}$ on epävarmuuden $0{,}34 \cdot 10^{-34}\,\text{J}\,\text{s}$ sisällä. Jännite ei määrää fotonin energiaa: energia-aukko määrää fotonin energian, ja kynnysjännite on suurempi LEDillä, jonka energia-aukko on suurempi.
+
 ## fy8-6-L3-04
 **Annettu:** viiden LEDin aallonpituudet ja mitatut jännitteet taulukosta, nollapistevirhe $+0{,}05\,\text{V}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$, hyväksytty $h_0 = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$
 **Kysytty:** Planckin vakio $h$ suoran kulmakertoimesta yksikössä $\text{J}\,\text{s}$, sekä korjauksen vaikutus suoraan ja yhden LEDin tulokseen

@@ -138,6 +138,31 @@
 **Periaate:** Saapuva fotoni, jonka energia on $E_2 - E_1$, voi joko absorboitua alemmalla tasolla olevaan atomiin tai saada ylemmällä tasolla olevan atomin lähettämään uuden fotonin. Kumpi tapahtuu useammin, riippuu siitä, kummalla tasolla on enemmän atomeja.
 **Mallivastaus:** Populaatioinversio on tila, jossa ylemmällä lasertasolla on enemmän atomeja kuin alemmalla, $N_2 > N_1$. Silloin stimuloituja emissioita tapahtuu enemmän kuin absorptioita, ja läpi kulkeva valo vahvistuu. Tavallisesti tilanne on päinvastainen: lähes kaikki atomit ovat alemmalla tasolla, joten absorptio voittaa ja valo vaimenee. Inversio ei tarkoita sitä, että fotonien suunnat olisivat samat tai että taso olisi toisin päin, vaan sitä, miten atomit jakautuvat tasoille. Se saadaan pumppaamalla atomeja ylemmälle tasolle.
 
+## fy8-7-L1-09
+**Kysytty:** mitkä viidestä väitteestä laserista ja kvanttipisteistä A ja B ovat tosia.
+**Periaate:** Fotonin energia riippuu vain aallonpituudesta, $hf = \tfrac{hc}{\lambda}$, ei siitä, millainen valonlähde sen lähettää. Laservalo syntyy stimuloidussa emissiossa, joka vaatii populaatioinversion $N_2 > N_1$; se saadaan pumppaamalla, ei lämmittämällä. Kvanttipisteessä energiarako kasvaa pisteen pienentyessä.
+**Mallivastaus:** Kummankin valonlähteen $650\,\text{nm}$:n fotonin energia on
+
+$hf = \dfrac{hc}{\lambda}$
+
+$hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$
+
+$hf = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{650 \cdot 10^{-9}\,\text{m}} = 3{,}056 \cdot 10^{-19}\,\text{J}$
+
+Elektronivoltteina, kun $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$:
+
+$hf = \dfrac{3{,}056 \cdot 10^{-19}}{1{,}602 \cdot 10^{-19}}\,\text{eV} = 1{,}91\,\text{eV}$
+
+1 epätosi: fotonien energiat ovat samat, $1{,}91\,\text{eV}$. Laserin vaara johtuu siitä, että koko teho kulkee kapeassa säteessä, jonka silmä kohdistaa pieneksi pisteeksi.
+
+2 tosi: stimuloitu fotoni saa saapuvan fotonin energian, suunnan ja vaiheen, joten laservalon aallot ovat samassa tahdissa.
+
+3 epätosi: lämpimässäkin aineessa alemmalla tasolla on enemmän atomeja kuin ylemmällä. Populaatioinversio tehdään pumppaamalla aineeseen, jossa on ainakin kolme tasoa ja pitkäikäinen ylempi lasertaso.
+
+4 epätosi: piste A on pienempi, joten sen energiarako on suurempi ja fotonin energia suurempi. Piste A lähettää siis lyhyemmän aallonpituuden valoa kuin piste B.
+
+5 tosi: akselin suuntainen valo kulkee peilien välissä aineen läpi monta kertaa ja vahvistuu, ja osittain läpäisevän peilin läpi tulee ulos säde. Sivulle lähtevät fotonit poistuvat aineesta eivätkä ehdi monistua.
+
 ## fy8-7-L2-05
 **Annettu:** kvanttipisteiden halkaisijat $d = 2{,}0$; $3{,}0$; $4{,}0$; $5{,}0$ ja $6{,}0\,\text{nm}$ ja niiden valon aallonpituudet $\lambda = 486$; $529$; $573$; $601$ ja $617\,\text{nm}$ (taulukko), $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** energiarakojen erotus $\Delta E$ pienimmän ja suurimman pisteen välillä elektronivoltteina

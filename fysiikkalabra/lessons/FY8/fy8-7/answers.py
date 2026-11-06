@@ -38,4 +38,5 @@ def _polyfit1(xs, ys):
 pp = [10, 20, 30, 40, 50, 60, 70.]; pl = [0.0, 0.1, 2.1, 6.1, 10.0, 13.9, 18.1]
 k, b0 = _polyfit1(pp[2:], pl[2:])                     # fit above threshold: slope 0,398, intercept -9,86 mW, threshold 24,8 mW
 a["fy8-7-L3-05"] = k * 1064 / 808                         # N_L / N_p = (dP_L / dP_p) lambda_L / lambda_p = 0,398 * 1,3168 = 0,524
+# fy8-7-L1-09 is a true-or-false task without a number: 650 nm photon hc/lambda = 3,056e-19 J = 1,91 eV for the laser and the LED alike
 print(json.dumps({k: float(f"{v:.7g}") for k, v in a.items()}))

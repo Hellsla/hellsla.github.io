@@ -35,6 +35,7 @@ a["fy8-13-L2-06"] = sum(k) / len(k) / 3.0 ** 2         # k_ka = 100,875 (sum 403
 a["fy8-13-L2-07"] = 20 * 0.63e-3 / 1.8 * 1e3           # liver 0,63 mJ in 1,8 kg: D = 0,35 mGy; alpha w_R = 20: 7,0 mSv
 cm = (380 + 260 + 140 + 300) / 4                       # sum 1080 / 4 = 270 Bq/m³ (annual mean); dose now 4,0 · 270/94 · 0,80 = 9,19 mSv
 a["fy8-13-L3-04"] = 2.0 / (4.0 * 0.80) * 94            # target 2,0 mSv: c = 2,0 / (4,0 · 0,80) · 94 = 58,75 Bq/m³ -> 59
+# fy8-13-L2-08 is a multiple-choice task (no number): 12 · 6 · 9,0 h = 648 h; 3,0 µSv/h · 648 h = 1944 µSv ≈ 2 mSv
 Hd5 = 240 * (1.0 / 2.0) ** 2 * 0.5 ** (10 / 4.0)       # 240 µSv/h at 1,0 m, 2,0 m, 10 cm concrete d½ 4,0 cm: 10,61 µSv/h
 a["fy8-13-L3-05"] = 25 / Hd5                           # t = 25 µSv : 10,61 µSv/h = 2,357 h -> 2,4 h
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

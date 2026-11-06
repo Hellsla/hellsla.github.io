@@ -289,6 +289,42 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy8-2-L2-08",
+      "level": 2,
+      "kind": [
+        "graph",
+        "concept",
+        "reasoning"
+      ],
+      "text": "Malliatomilla on neljä energiatilaa, joiden energiat ovat esimerkkiarvoja.\n\nPerustila: $E_1 = -5{,}00\\,\\text{eV}$\n\nViritystila: $E_2 = -2{,}50\\,\\text{eV}$\n\nViritystila: $E_3 = -2{,}00\\,\\text{eV}$\n\nViritystila: $E_4 = -0{,}60\\,\\text{eV}$\n\nNäistä atomeista koostuva kaasu on huoneenlämpöistä, joten lähes kaikki sen atomit ovat perustilassa. Hehkulampun valo johdetaan kaasun läpi, ja läpi tullut valo tutkitaan spektroskoopilla näkyvän valon alueella $380$–$720\\,\\text{nm}$. Käytä arvoa $hc = 1240\\,\\text{eV}\\,\\text{nm}$.\n\nMikä kuva esittää havaittua spektriä?",
+      "answer": "Spektri C",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Spektri A",
+          "figure": "fy8-2/pick-emissio",
+          "feedback": "Tämä on emissiospektri, jonka kuuma kaasu lähettää itse. Kaasun läpi kulkenut hehkulampun valo antaa jatkuvan värikaistan, josta atomien absorboimat aallonpituudet puuttuvat tummina viivoina."
+        },
+        {
+          "text": "Spektri B",
+          "figure": "fy8-2/pick-kolme",
+          "feedback": "Viiva $653\\,\\text{nm}$ vastaa siirtymää tilasta $2$ tilaan $4$. Kylmän kaasun atomit ovat perustilassa, joten ne absorboivat vain perustilasta lähteviä siirtymiä, eikä tätä viivaa synny."
+        },
+        {
+          "text": "Spektri C",
+          "figure": "fy8-2/pick-kaksi",
+          "correct": true,
+          "feedback": "Oikein: perustilasta lähtevät siirtymät tiloihin $2$ ja $3$ antavat tummat viivat kohdissa $496\\,\\text{nm}$ ja $413\\,\\text{nm}$. Siirtymää tilaan $4$ vastaava viiva $282\\,\\text{nm}$ on ultraviolettia."
+        },
+        {
+          "text": "Spektri D",
+          "figure": "fy8-2/pick-kaista",
+          "feedback": "Tässä atomin luullaan absorboivan kaikki fotonit, joiden energia riittää viritykseen. Kun elektroni jää atomiin, fotonin energian on oltava täsmälleen kahden tilan erotus, joten syntyy kapeita viivoja."
+        }
+      ]
     }
   ],
   "level3": [

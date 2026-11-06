@@ -247,6 +247,36 @@
           "correct": true
         }
       ]
+    },
+    {
+      "id": "fy8-16-L2-08",
+      "level": 2,
+      "kind": [
+        "reasoning"
+      ],
+      "text": "Kahden galaksin spektristä on mitattu vedyn viivat. Arvot ovat esimerkkiarvoja.\n\nGalaksi A: $\\text{H}\\alpha$-viiva, laboratoriossa $656{,}3\\,\\text{nm}$, mitattu $662{,}9\\,\\text{nm}$.\n\nGalaksi B: $\\text{H}\\beta$-viiva, laboratoriossa $486{,}1\\,\\text{nm}$, mitattu $500{,}7\\,\\text{nm}$.\n\nMolemmat galaksit noudattavat Hubblen ja Lemaîtren lakia, ja niiden oma liike jätetään huomiotta. Kuinka moninkertainen galaksin B etäisyys on galaksin A etäisyyteen verrattuna?",
+      "answer": "noin $3{,}0$-kertainen",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "noin $0{,}33$-kertainen",
+          "feedback": "Tässä riippuvuus on luettu väärin päin, ikään kuin suurempi punasiirtymä tarkoittaisi lähempää galaksia. Etäisyys on suoraan verrannollinen etääntymisnopeuteen ja siis punasiirtymään."
+        },
+        {
+          "text": "noin $0{,}76$-kertainen",
+          "feedback": "Tässä on verrattu mitattuja aallonpituuksia eikä niiden siirtymiä. Punasiirtymä ei kerro, kuinka punainen viiva on, vaan kuinka paljon se on venynyt omasta laboratorioaallonpituudestaan."
+        },
+        {
+          "text": "noin $2{,}2$-kertainen",
+          "feedback": "Tässä on verrattu siirtymiä nanometreinä, $14{,}6\\,\\text{nm}$ ja $6{,}6\\,\\text{nm}$. Siirtymä on sama osuus viivan omasta aallonpituudesta, joten lyhyempi $\\text{H}\\beta$-viiva siirtyy samalla punasiirtymällä vähemmän nanometrejä."
+        },
+        {
+          "text": "noin $3{,}0$-kertainen",
+          "correct": true,
+          "feedback": "Oikein: $z_\\text{A} \\approx 0{,}0101$ ja $z_\\text{B} \\approx 0{,}0300$. Etäisyys $d = \\tfrac{cz}{H_0}$ on verrannollinen punasiirtymään, joten etäisyyksien suhde on noin $3{,}0$."
+        }
+      ]
     }
   ],
   "level3": [

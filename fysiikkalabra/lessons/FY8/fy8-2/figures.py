@@ -241,8 +241,69 @@ def hero():
     return f.svg()
 
 
+# Graph choice of task fy8-2-L2-08: a model atom with levels -5,00; -2,50; -2,00 and -0,60 eV, all atoms of the cold
+# gas in the ground state, white light through the gas. Four option spectra on the scale of lamp_spectrum; only
+# "pick-kaksi" is right (dark lines at 413 and 496 nm from the ground state). The names say the drawn spectrum.
+PICK_LV = (-5.00, -2.50, -2.00, -0.60)
+PICK_UP = [HC / (PICK_LV[k] - PICK_LV[0]) for k in (2, 1)]          # 413,3 and 495,9 nm: absorption from the ground state
+PICK_42 = HC / (PICK_LV[3] - PICK_LV[1])                             # 652,5 nm: 4 -> 2, only from an excited state
+PICK_DESC = ("Spektri mittakaavassa aallonpituusasteikolla 380–720 nanometriä; asteikon pienet jakoviivat ovat 10 nanometrin "
+             "välein ja luvut 50 nanometrin välein. ")
+
+
+def pick_spectrum(fid, label, kind, lines=(), dark_to=None):
+    """One option, drawn like lamp_spectrum: a black band with bright lines (emission) or a rainbow band with dark lines
+    or a dark region (absorption); the same band, axis and line width in every option."""
+    f = Fig(fid, 196, PICK_DESC + label)
+    x0, x1, lo, hi = 40, 560, 380, 720
+    X = lambda l: x0 + (l - lo) / (hi - lo) * (x1 - x0)
+    if kind == "em":
+        f.rect(x0, 30, x1 - x0, 70, INK)
+        for l in lines: f.rect(X(l) - 2, 30, 4, 70, wl_hex(l) if l >= 420 else "#a46bff")   # violet lightened on black
+    else:
+        rainbow(f, fid + "-rb")
+        f.rect(x0, 30, x1 - x0, 70, f"url(#{fid}-rb)")
+        for l in lines: f.rect(X(l) - 2, 30, 4, 70, INK)
+        if dark_to: f.rect(x0, 30, X(dark_to) - x0, 70, INK)
+    f.rect(x0, 30, x1 - x0, 70, stroke=INK, sw=2)
+    yA = 110
+    f.line(x0, yA, x1, yA, INK, 2)
+    for l in range(380, 721, 10):
+        big = l % 50 == 0
+        f.line(X(l), yA, X(l), yA + (10 if big else 5), INK, 2 if big else 1.5)
+        if big: f.tex(X(l), yA + 30, fi(l), "middle")
+    f.tex(x1 + 2, yA + 62, r"\lambda\ (\text{nm})", "end")
+    return f.svg()
+
+
+def pick_kaksi():
+    return pick_spectrum("fy82-pick-kaksi", "Jatkuva värikaista violetista punaiseen, ja sen poikki kulkee kaksi kapeaa tummaa "
+                         "viivaa: violetissa noin 413 nanometrin ja sinivihreässä noin 496 nanometrin kohdalla.", "abs", PICK_UP)
+
+
+def pick_emissio():
+    """Emission instead of absorption: bright lines on black at the same wavelengths."""
+    return pick_spectrum("fy82-pick-emissio", "Musta kaista, jossa on kaksi kapeaa kirkasta viivaa: violetti noin 413 "
+                         "nanometrin ja sinivihreä noin 496 nanometrin kohdalla.", "em", PICK_UP)
+
+
+def pick_kolme():
+    """The 4 -> 2 line added: absorption taken to start from an excited state too."""
+    return pick_spectrum("fy82-pick-kolme", "Jatkuva värikaista violetista punaiseen, ja sen poikki kulkee kolme kapeaa tummaa "
+                         "viivaa: violetissa noin 413, sinivihreässä noin 496 ja punaisessa noin 653 nanometrin kohdalla.",
+                         "abs", PICK_UP + [PICK_42])
+
+
+def pick_kaista():
+    """The lesson's misconception: every photon with enough energy for the excitation (2,50 eV or more) is absorbed."""
+    return pick_spectrum("fy82-pick-kaista", "Jatkuva värikaista, josta koko lyhytaaltoinen pää on tumma: kaista on musta "
+                         "aallonpituudesta 380 nanometriä noin 496 nanometriin asti, ja siitä punaiseen värit näkyvät "
+                         "yhtenäisinä ilman viivoja.", "abs", dark_to=PICK_UP[1])
+
+
 FIGURES = {"hero": hero, "spectra": spectra, "fluorescence": fluorescence, "levels": levels, "greenhouse": greenhouse,
-           "lamp-spectrum": lamp_spectrum}
+           "lamp-spectrum": lamp_spectrum, "pick-kaksi": pick_kaksi, "pick-emissio": pick_emissio, "pick-kolme": pick_kolme,
+           "pick-kaista": pick_kaista}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "spectra": "reveals: emission and absorption lines of hydrogen at the same wavelengths",
@@ -250,4 +311,8 @@ REUSE = {
     "levels": "reveals: the Balmer wavelengths 656, 486, 434, 410 nm and the 122 nm absorption",
     "greenhouse": "safe: schematic of visible light passing and CO2 absorbing and re-emitting infrared",
     "lamp-spectrum": "safe: emission lines of an unknown lamp at 405, 436, 546, 577 and 579 nm, the element not named",
+    "pick-kaksi": "reveals: the right option of task fy8-2-L2-08 (dark lines at 413 and 496 nm on a continuous band)",
+    "pick-emissio": "safe: a wrong option of task fy8-2-L2-08 (bright emission lines at 413 and 496 nm on black)",
+    "pick-kolme": "safe: a wrong option of task fy8-2-L2-08 (dark lines at 413, 496 and 653 nm, an absorption from an excited state added)",
+    "pick-kaista": "safe: a wrong option of task fy8-2-L2-08 (everything from 380 to 496 nm dark, every photon with enough energy absorbed)",
 }

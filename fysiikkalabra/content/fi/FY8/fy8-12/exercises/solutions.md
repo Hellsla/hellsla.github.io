@@ -138,6 +138,25 @@
 **Periaate:** Alfahiukkanen ionisoi tiheästi ja luovuttaa koko energiansa hyvin lyhyellä matkalla. Ionisaatio vaurioittaa soluja, joten vaurio syntyy siellä, missä energia luovutetaan.
 **Mallivastaus:** Ihon ulkopuolella alfahiukkaset pysähtyvät ilmassa ja ihon pintakerroksessa ennen kuin ne yltävät eläviin soluihin. Kun alfasäteilijä on nielty tai hengitetty, se on suoraan kudoksen vieressä. Alfahiukkanen luovuttaa silloin koko energiansa muutaman solun matkalle ionisoimalla, ja vaurio keskittyy pieneen alueeseen. Siksi eron selittää hiukkasen kantama, ei sen energian kasvaminen tai muuttuminen toiseksi säteilyksi: alfahiukkanen ei kiihdy kudoksessa eikä muutu gammasäteilyksi.
 
+## fy8-12-L1-09
+**Kysytty:** suojien A–E järjestys sen mukaan, kuinka suuren osan gammasäteilystä ne päästävät läpi, suurimmasta pienimpään.
+**Periaate:** Jokainen puoliintumispaksuuden kerros puolittaa gammasäteilyn, joten läpi pääsevä osuus on $\tfrac{I}{I_0} = \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$. Osuus riippuu vain siitä, kuinka monta puoliintumispaksuutta $\tfrac{d}{d_{1/2}}$ suojassa on: mitä useampi, sitä pienempi osuus pääsee läpi. Pelkkä paksuus tai pelkkä aine ei ratkaise.
+**Mallivastaus:** Lasketaan puoliintumispaksuuksien määrä $\tfrac{d}{d_{1/2}}$ jokaiselle suojalle.
+
+$\tfrac{30\,\text{mm}}{12\,\text{mm}} = 2{,}50$ (suoja A, rauta)
+
+$\tfrac{120\,\text{mm}}{39\,\text{mm}} \approx 3{,}08$ (suoja B, betoni)
+
+$\tfrac{22\,\text{mm}}{5{,}5\,\text{mm}} = 4{,}00$ (suoja C, lyijy)
+
+$\tfrac{400\,\text{mm}}{81\,\text{mm}} \approx 4{,}94$ (suoja D, vesi)
+
+$\tfrac{120\,\text{mm}}{34\,\text{mm}} \approx 3{,}53$ (suoja E, alumiini)
+
+Läpi pääsevät osuudet ovat esimerkiksi suojalle A $\left(\tfrac{1}{2}\right)^{2{,}50} \approx 0{,}18$ ja suojalle D $\left(\tfrac{1}{2}\right)^{4{,}94} \approx 0{,}033$. Samoin suojalle B saadaan $12\,\%$, suojalle E $8{,}7\,\%$ ja suojalle C $6{,}3\,\%$. Läpi pääsevän osuuden mukaan suurimmasta pienimpään järjestys on A, B, E, C, D.
+
+Lyijy ei ole tässä paras suoja, vaikka sen puoliintumispaksuus on pienin: $400\,\text{mm}$:n vesikerroksessa on enemmän puoliintumispaksuuksia kuin $22\,\text{mm}$:n lyijylevyssä. Myöskään paksuus yksin ei ratkaise: betoni- ja alumiinisuoja ovat yhtä paksuja, mutta alumiinin puoliintumispaksuus on pienempi, joten se päästää läpi pienemmän osuuden. Järkevyys: rautasuojassa on vain kaksi ja puoli puoliintumispaksuutta, ja $18\,\%$ on neljäsosan $25\,\%$ ja kahdeksasosan $12{,}5\,\%$ välissä, kuten pitää.
+
 ## fy8-12-L2-05
 **Annettu:** kymmenen pulssimäärää $10\,\text{s}$:n jaksoissa: $52$, $45$, $49$, $57$, $44$, $48$, $51$, $42$, $50$ ja $46$; satunnaisvaihtelun suuruusluokka $\sqrt{N}$
 **Kysytty:** kokonaispulssimäärän $N_\text{kok}$ suhteellinen epävarmuus prosentteina

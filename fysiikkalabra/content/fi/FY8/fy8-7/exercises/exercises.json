@@ -109,6 +109,45 @@
           "feedback": "Atomi ei voi pudota ylöspäin. Ylempi taso on määritelmän mukaan korkeampi, ja inversio tarkoittaa vain sitä, että sille on pumpattu enemmän atomeja kuin alemmalle."
         }
       ]
+    },
+    {
+      "id": "fy8-7-L1-09",
+      "level": 1,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "Punaisen laserosoittimen valon aallonpituus on $650\\,\\text{nm}$, ja punaisen LEDin spektrin huippu on samalla aallonpituudella $650\\,\\text{nm}$.\n\nKvanttipisteet A ja B on tehty samasta aineesta. Pisteen A halkaisija on $3\\,\\text{nm}$ ja pisteen B $5\\,\\text{nm}$.\n\nPäättele, mitkä väitteet ovat tosia ja mitkä epätosia.",
+      "answer": "1 epätosi, 2 tosi, 3 epätosi, 4 epätosi, 5 tosi",
+      "unit": "",
+      "tolerance": 0.02,
+      "statements": [
+        {
+          "text": "Laserosoittimen $650\\,\\text{nm}$:n fotonilla on enemmän energiaa kuin LEDin $650\\,\\text{nm}$:n fotonilla.",
+          "true": false,
+          "feedback": "Epätosi: tässä laservalon vaara luullaan fotonin suureksi energiaksi. Fotonin energia riippuu vain aallonpituudesta, joten kummankin $650\\,\\text{nm}$:n fotonin energia on $1{,}91\\,\\text{eV}$. Laser on vaarallinen, koska koko teho kulkee kapeassa säteessä."
+        },
+        {
+          "text": "Laservalo on koherenttia, koska jokainen stimuloitu fotoni kopioi sen aiheuttaneen fotonin vaiheen.",
+          "true": true,
+          "feedback": "Tosi: stimuloidussa emissiossa syntyvällä fotonilla on saapuvan fotonin energia, suunta ja vaihe, joten aallot pysyvät samassa tahdissa. Spontaanisti syntyvien fotonien vaiheet ovat satunnaiset."
+        },
+        {
+          "text": "Kun laseraine lämmitetään riittävän kuumaksi, ylemmälle tasolle tulee enemmän atomeja kuin alemmalle.",
+          "true": false,
+          "feedback": "Epätosi: tässä populaatioinversion luullaan syntyvän lämmittämällä. Lämpimässäkin aineessa alemmalla tasolla on aina enemmän atomeja kuin ylemmällä. Inversio tehdään pumppaamalla aineeseen, jossa on ainakin kolme tasoa."
+        },
+        {
+          "text": "Kvanttipiste A lähettää pidemmän aallonpituuden valoa kuin samasta aineesta tehty kvanttipiste B.",
+          "true": false,
+          "feedback": "Epätosi: tässä koon ja värin yhteys luetaan väärin päin. Pienemmässä pisteessä sallitut energiat erkanevat ja energiarako kasvaa, joten piste A ($3\\,\\text{nm}$) lähettää lyhyemmän aallonpituuden valoa kuin piste B ($5\\,\\text{nm}$)."
+        },
+        {
+          "text": "Laserissa vahvistuu lähinnä peilien välisen akselin suuntainen valo, ja se tulee ulos säteenä.",
+          "true": true,
+          "feedback": "Tosi: akselin suuntainen fotoni kulkee peilien välissä aineen läpi satoja kertoja ja monistuu matkalla. Sivulle lähtevät fotonit poistuvat aineesta ennen kuin ehtivät monistua."
+        }
+      ]
     }
   ],
   "level2": [

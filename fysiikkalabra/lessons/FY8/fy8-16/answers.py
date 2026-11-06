@@ -28,7 +28,8 @@ a["fy8-16-L3-01"] = 100 * (2 * n_) / (n_ + p_)         # helium mass fraction 2/
 a["fy8-16-L3-02"] = (3 * 4.002603 - 12.000000) * 931.5   # 3 He-4 -> C-12: 0,007809 u, Q = 7,274 MeV
 z3 = (676.2 - 656.3) / 656.3                           # the longest line is Hα: Δλ = 19,9 nm, z = 0,030322 (Hβ 500,9 and Hγ 447,2 agree)
 a["fy8-16-L3-03"] = C_KMS * z3 / 70                    # v = 9091 km/s, d = 129,9 Mpc -> 1,3 · 10² Mpc
-# Exercise-bank additions (L1-06, L1-08 and L2-07 are multiple choice without a number; the others below)
+# Exercise-bank additions (L1-06, L1-08, L2-07 and L2-08 are multiple choice without a number; the others below)
+# L2-08: z_A = 6,6 / 656,3 = 0,010056, z_B = 14,6 / 486,1 = 0,030035; d_B / d_A = z_B / z_A = 2,99 -> about 3,0
 a["fy8-16-L1-07"] = 12800 / 185                         # d = 185 Mpc, v = 12 800 km/s: H0 = 69,19 -> 69,2 km/s/Mpc
 d5 = [28, 45, 63, 88, 112, 135, 166, 194, 238]          # example data: nine galaxies, distance in Mpc
 v5 = [2260, 2990, 4260, 6140, 7460, 9380, 11190, 13310, 16350]   # speed in km/s

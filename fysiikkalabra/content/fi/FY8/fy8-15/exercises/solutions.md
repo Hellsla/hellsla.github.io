@@ -68,6 +68,27 @@
 **Vastaus:** $+1\,e$. Tulos on tarkka, koska kvarkkien varaukset ovat tarkkoja murtolukuja.
 **Järkevyys:** Kaonin merkintä $K^+$ kertoo varauksen $+e$, ja se täsmää. Kaoni on mesoni, joten kvarkin ja antikvarkin varausten murto-osat täydentävät toisensa kokonaisluvuksi, kuten jokaisella hadronilla.
 
+## fy8-15-L1-09
+**Kysytty:** mitkä viidestä väitteestä kvarkeista, hadroneista ja vuorovaikutuksista ovat tosia.
+**Periaate:** Hadronin varaus on sen kvarkkien ja antikvarkkien varausten summa, ja antikvarkin varaus on vastakkainen kuin kvarkin. Kolmen kvarkin hadroni on baryoni, kvarkin ja antikvarkin hadroni mesoni. Vahva vuorovaikutus vaikuttaa vain kvarkkeihin, ja heikko vuorovaikutus voi muuttaa kvarkin lajin.
+**Mallivastaus:** Lasketaan ensin kahden hiukkasen varaukset. Hiukkanen $u\,u\,s$:
+
+$q = +\tfrac{2}{3}e + \tfrac{2}{3}e - \tfrac{1}{3}e = +e$
+
+Mesoni $d\,\bar{u}$, jossa anti-$u$-kvarkin varaus on $-\tfrac{2}{3}e$:
+
+$q = -\tfrac{1}{3}e - \tfrac{2}{3}e = -e$
+
+1 tosi: $u\,u\,s$ on kolmen kvarkin hadroni eli baryoni, ja sen varaus on $+e$.
+
+2 epätosi: mesonin $d\,\bar{u}$ varaus on $-e$. Kvarkin ja antikvarkin varaukset kumoavat toisensa vain, kun ne ovat vastaluvut, kuten mesonissa $u\,\bar{u}$.
+
+3 epätosi: kvarkkien massat ovat vain noin $1\,\%$ protonin massasta. Suurin osa protonin massasta on kvarkkeja sitovan vahvan vuorovaikutuksen energiaa, $m = \tfrac{E}{c^2}$.
+
+4 tosi: elektroni ja neutriinot ovat leptoneja. Ne eivät koostu kvarkeista, joten vahva vuorovaikutus ei vaikuta niihin.
+
+5 epätosi: beeta miinus -hajoamisessa neutroni $udd$ muuttuu protoniksi $uud$, joten yksi $d$-kvarkki muuttuu $u$-kvarkiksi: $d \to u + W^-$. Muutos $u \to d$ tapahtuu beeta plus -hajoamisessa.
+
 ## fy8-15-L2-01
 **Annettu:** ydin ${}^{12}_{6}\text{C}$: järjestysluku $Z = 6$, massaluku $A = 12$; protoni $uud$, neutroni $udd$
 **Kysytty:** $d$-kvarkkien määrä $N_d$

@@ -31,7 +31,7 @@ assert m_Om - m_Si - m_K < 0                            # Sigma0 + K-: Q = -13,8
 a["fy8-15-L3-01"] = m_Om - m_La - m_K                   # Lambda0 + K-: Q = 63,090 MeV -> 63,09 MeV
 a["fy8-15-L3-02"] = 2 * 1.0e-3 * c ** 2 / 1e14          # 1,0 g antimatter + 1,0 g matter: E = 1,798e14 J -> 1,8 · 10^14 J
 a["fy8-15-L3-03"] = -1                                  # anti-nu_e + p -> n + X: q of X +1, B 0, L of X = -1 (positron)
-# Exercise bank additions (teacher 2026-11-04): L1-06, L1-07 and L2-07 are multiple choice (no number)
+# Exercise bank additions (teacher 2026-11-04): L1-06, L1-07 and L2-07 are multiple choice (no number); L1-09 is a true-or-false list (no number)
 a["fy8-15-L1-08"] = charge("u", "s")                    # K+ = u anti-s: +2/3 + 1/3 = +1
 def is_hadron(qk, aq=""):                               # B and q both integers
     B = F(len(qk) - len(aq), 3); q = sum(QQ[k] for k in qk) - sum(QQ[k] for k in aq)

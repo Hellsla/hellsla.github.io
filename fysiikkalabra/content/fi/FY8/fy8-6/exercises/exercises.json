@@ -283,6 +283,73 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy8-6-L2-08",
+      "level": 2,
+      "text": "Ryhmä mittasi viiden eri värisen LEDin kynnysjännitteet $U_\\text{k}$ ja laski valon taajuudet $f$ LEDien huippuaallonpituuksista (taulukko, esimerkkiaineisto). Jännitteiden mittausepävarmuus on $\\pm 0{,}05\\,\\text{V}$.\n\nPisteisiin $(f, U_\\text{k})$ sovitetun suoran kulmakerroin on $k = 3{,}98 \\cdot 10^{-15}\\,\\text{V}\\,\\text{s}$, ja sen epävarmuus on $\\Delta k = 0{,}21 \\cdot 10^{-15}\\,\\text{V}\\,\\text{s}$. Suora leikkaa pystyakselin kohdassa $-0{,}07\\,\\text{V}$.\n\nKäytä arvoja $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$ ja Planckin vakion hyväksyttyä arvoa $6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$.\n\nMikä johtopäätös aineistosta on perusteltu?",
+      "kind": [
+        "data",
+        "experiment",
+        "reasoning"
+      ],
+      "answer": "Ryhmän Planckin vakio on sopusoinnussa hyväksytyn arvon kanssa, koska ero on epävarmuutta pienempi.",
+      "unit": "",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Kynnysjännitteet (esimerkkiaineisto)",
+        "columns": [
+          "LED",
+          "$f\\,(10^{14}\\,\\text{Hz})$",
+          "$U_\\text{k}\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "punainen",
+            "4.76",
+            "1.85"
+          ],
+          [
+            "keltainen",
+            "5.08",
+            "1.90"
+          ],
+          [
+            "vihreä",
+            "5.71",
+            "2.18"
+          ],
+          [
+            "sininen",
+            "6.38",
+            "2.51"
+          ],
+          [
+            "violetti",
+            "7.40",
+            "2.85"
+          ]
+        ]
+      },
+      "choices": [
+        {
+          "text": "Mittaus on epäonnistunut, koska sovitettu suora ei kulje origon kautta vaan leikkaa akselin nollan alapuolella.",
+          "feedback": "Suoran ei tarvitse kulkea origon kautta. Mitattu kynnysjännite eroaa arvosta $\\tfrac{hf}{e}$ lähes yhtä paljon kaikilla LEDeillä, ja tämä ero siirtää suoraa muuttamatta kulmakerrointa $\\tfrac{h}{e}$."
+        },
+        {
+          "text": "Ryhmän Planckin vakio on liian pieni, joten mittauksessa on systemaattinen virhe, joka pienentää kulmakerrointa.",
+          "feedback": "Tässä ero luetaan merkittäväksi, vaikka se on epävarmuuden sisällä. Ero hyväksyttyyn arvoon on $0{,}25 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, ja se on pienempi kuin epävarmuus $\\Delta h = e\\,\\Delta k$, eli $0{,}34 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$."
+        },
+        {
+          "text": "Ryhmän Planckin vakio on sopusoinnussa hyväksytyn arvon kanssa, koska ero on epävarmuutta pienempi.",
+          "correct": true,
+          "feedback": "Oikein: $h = ek = 6{,}38 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$ ja $\\Delta h = e\\,\\Delta k$, eli $0{,}34 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$. Hyväksytty arvo $6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$ on välillä $h \\pm \\Delta h$."
+        },
+        {
+          "text": "Kynnysjännite kasvaa taajuuden mukana, joten LEDiin kytketty jännite määrää sen fotonien energian.",
+          "feedback": "Syy ja seuraus ovat väärin päin. Fotonin energian määrää puolijohteen energia-aukko: suuremman aukon LED tarvitsee suuremman kynnysjännitteen, mutta jännitteen kasvattaminen ei muuta fotonin energiaa."
+        }
+      ]
     }
   ],
   "level3": [

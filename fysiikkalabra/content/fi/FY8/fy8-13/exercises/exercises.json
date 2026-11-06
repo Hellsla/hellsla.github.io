@@ -203,6 +203,40 @@
       "answer": 7.0,
       "unit": "mSv",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-13-L2-08",
+      "level": 2,
+      "kind": [
+        "reasoning"
+      ],
+      "text": "Matkustamohenkilökunnan jäsen lentää kuukaudessa $6$ kaukolentoa, ja kukin lento kestää $9{,}0\\,\\text{h}$. Oletetaan, että avaruudesta tulevan säteilyn annosnopeus matkustamossa on koko lennon ajan $3{,}0\\,\\mu\\text{Sv/h}$ ja että hän lentää samalla tavalla vuoden jokaisena kuukautena. Luvut ovat esimerkkiarvoja.\n\nMikä on lennoista hänelle vuodessa kertyvän annoksen suuruusluokka?",
+      "answer": "noin $2\\,\\text{mSv}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "noin $0{,}002\\,\\text{mSv}$",
+          "feedback": "Tässä mikrosievertit on muutettu millisieverteiksi jakamalla miljoonalla. Mikro on kuitenkin tuhannesosa millistä, joten $1\\,\\text{mSv} = 1000\\,\\mu\\text{Sv}$ ja jakaja on $1000$."
+        },
+        {
+          "text": "noin $0{,}03\\,\\text{mSv}$",
+          "feedback": "Tämä on vain yhden lennon annos, $9{,}0\\,\\text{h} \\cdot 3{,}0\\,\\mu\\text{Sv/h} = 27\\,\\mu\\text{Sv}$. Annos kasvaa oleskeluajan mukana, joten koko vuoden lentotunnit lasketaan yhteen."
+        },
+        {
+          "text": "noin $0{,}2\\,\\text{mSv}$",
+          "feedback": "Tämä on yhden kuukauden annos, $54\\,\\text{h} \\cdot 3{,}0\\,\\mu\\text{Sv/h} \\approx 160\\,\\mu\\text{Sv}$. Kysytään vuoden annosta, joten kuukauden lentotunnit kerrotaan vielä luvulla $12$."
+        },
+        {
+          "text": "noin $2\\,\\text{mSv}$",
+          "correct": true,
+          "feedback": "Oikein: vuodessa lentotunteja on $12 \\cdot 6 \\cdot 9{,}0\\,\\text{h} = 648\\,\\text{h}$, joten annos on noin $1900\\,\\mu\\text{Sv}$ eli noin $2\\,\\text{mSv}$."
+        },
+        {
+          "text": "noin $2000\\,\\text{mSv}$",
+          "feedback": "Tässä tulos $1944\\,\\mu\\text{Sv}$ on merkitty millisieverteiksi muuntamatta yksikköä. Mikrosievertit muutetaan millisieverteiksi jakamalla luvulla $1000$, koska $1\\,\\text{mSv} = 1000\\,\\mu\\text{Sv}$."
+        }
+      ]
     }
   ],
   "level3": [

@@ -176,6 +176,27 @@
 **Vastaus:** a) Fotonin energia on tasojen energioiden erotus eikä radan kokoon verrannollinen, ja tulos $340\,\text{eV}$ ylittäisi ionisaatioenergian. b) $13{,}1\,\text{eV}$, kolme merkitsevää numeroa kuten arvossa $13{,}6\,\text{eV}$.
 **Järkevyys:** Tulos on alle ionisaatioenergian $13{,}6\,\text{eV}$, kuten sidotulta tasolta perustilaan siirryttäessä pitää olla. Tason $n = 5$ energian itseisarvo on vain $\tfrac{1}{25}$ perustilan arvosta, joten energiaero on lähes koko ionisaatioenergia: $13{,}06\,\text{eV}$ on $96\,\%$ arvosta $13{,}6\,\text{eV}$. Vastaava aallonpituus on noin $95{,}0\,\text{nm}$, ultraviolettia.
 
+## fy8-3-L2-08
+**Kysytty:** miten fotonin aallonpituus muuttuu, kun vetyatomin siirtymä $4 \to 3$ (aallonpituus $\lambda_1$) vaihtuu siirtymäksi $6 \to 3$ (aallonpituus $\lambda_2$), eli suhde $\lambda_2 : \lambda_1$.
+**Periaate:** Energia säilyy, joten fotonin energia on lähtö- ja päätetason erotus, $\tfrac{hc}{\lambda} = E_\text{y} - E_\text{a}$. Aallonpituus on siis kääntäen verrannollinen energiaeroon, ja aallonpituuksien suhde on energiaerojen käänteinen suhde. Vakiot $h$ ja $c$ supistuvat.
+**Mallivastaus:** Energiaerot ovat
+
+$E_4 - E_3 = -\tfrac{13{,}6\,\text{eV}}{16} + \tfrac{13{,}6\,\text{eV}}{9}$
+
+$E_4 - E_3 = 0{,}6611\,\text{eV}$
+
+$E_6 - E_3 = -\tfrac{13{,}6\,\text{eV}}{36} + \tfrac{13{,}6\,\text{eV}}{9}$
+
+$E_6 - E_3 = 1{,}1333\,\text{eV}$
+
+Aallonpituuksien suhde on
+
+$\dfrac{\lambda_2}{\lambda_1} = \dfrac{E_4 - E_3}{E_6 - E_3}$
+
+$\dfrac{\lambda_2}{\lambda_1} = \dfrac{0{,}6611\,\text{eV}}{1{,}1333\,\text{eV}} \approx 0{,}583$
+
+Aallonpituus pienenee noin $0{,}58$-kertaiseksi, koska ylemmältä tasolta alkava siirtymä on suurempi energiaharppaus. Tarkistus: $\lambda_1 = 1240\,\text{eV}\,\text{nm} : 0{,}6611\,\text{eV} \approx 1876\,\text{nm}$ ja $\lambda_2 = 1240\,\text{eV}\,\text{nm} : 1{,}1333\,\text{eV} \approx 1094\,\text{nm}$, ja molemmat ovat Paschenin sarjan infrapunaa. Kasvu $1{,}7$-kertaiseksi syntyisi, jos riippuvuus luettaisiin väärin päin. Kasvu $2{,}25$-kertaiseksi syntyisi, jos fotonin energiaksi otettaisiin lähtötason energian suuruus. Sama päätetaso ei tee aallonpituuksista samoja, koska fotonin energia riippuu myös lähtötasosta.
+
 ## fy8-3-L3-04
 **Annettu:** emissioviivat $\lambda = 1876$; $1282$ ja $1094\,\text{nm}$ ($\pm 1\,\text{nm}$), $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$, kaikki viivat päättyvät samalle tasolle, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** vähimmäistaajuus $f_\text{ion}$ terahertseinä, jolla fotoni ionisoi atomin siitä tasosta, jolle siirtymät päättyvät

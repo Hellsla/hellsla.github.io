@@ -138,6 +138,25 @@
 **Vastaus:** $14$ elektronia; tulos on tarkka kokonaisluku, koska se on laskettu lukumääristä.
 **Järkevyys:** Samalla säännöllä s-alikuorelle mahtuu $2 \cdot 1 = 2$, p-alikuorelle $2 \cdot 3 = 6$ ja d-alikuorelle $2 \cdot 5 = 10$ elektronia. Kuoren $n = 4$ alikuorille s, p, d ja f mahtuu yhteensä $2 + 6 + 10 + 14 = 32$ elektronia, ja tämä on yhtä kuin $2n^2 = 2 \cdot 4^2 = 32$.
 
+## fy8-5-L1-09
+**Kysytty:** tilojen A–E järjestys elektronin energian $E_n$ mukaan pienimmästä suurimpaan.
+**Periaate:** Vetyatomissa tilan energia riippuu vain pääkvanttiluvusta $n$, joka on tilan nimen numero. Kirjain kertoo aallon muodon, mutta se ei muuta vetyatomin tilan energiaa. Tilan aallossa on yhteensä $n - 1$ solmua, joten tilassa E, jossa on neljä solmupintaa, $n = 5$. Energiat ovat negatiivisia, joten pienin energia on sillä tilalla, jonka energian itseisarvo on suurin.
+**Mallivastaus:** Energiat:
+
+$E_1 = -\tfrac{13{,}6\,\text{eV}}{1^2} = -13{,}6\,\text{eV}$ (tila B, $1\text{s}$)
+
+$E_2 = -\tfrac{13{,}6\,\text{eV}}{2^2} = -3{,}40\,\text{eV}$ (tila D, $2\text{p}$)
+
+$E_3 = -\tfrac{13{,}6\,\text{eV}}{3^2} = -1{,}51\,\text{eV}$ (tila A, $3\text{d}$)
+
+$E_4 = -\tfrac{13{,}6\,\text{eV}}{4^2} = -0{,}850\,\text{eV}$ (tila C, $4\text{s}$)
+
+$E_5 = -\tfrac{13{,}6\,\text{eV}}{5^2} = -0{,}544\,\text{eV}$ (tila E)
+
+Energian mukaan pienimmästä suurimpaan järjestys on B, D, A, C, E.
+
+Kirjaimen perusteella ei voi järjestää: $3\text{d}$-tila on alempana kuin $4\text{s}$-tila, koska sen pääkvanttiluku on pienempi. Tilan E solmujen määrä ei ole sen pääkvanttiluku: neljä solmupintaa tarkoittaa $n = 5$, ei $n = 4$, joten tila E on ylempänä kuin tila C. Jos tilat järjestää energian itseisarvon mukaan, järjestys kääntyy väärin päin: $1\text{s}$-tila on sidotuin, ja sen energia on pienin.
+
 ## fy8-5-L2-05
 **Annettu:** mittauksia $N = 400$; luokan leveys $0{,}05\,\text{nm}$; luokkien lukumäärät $k$: $118$, $171$, $79$, $23$, $7$ ja $2$; $90\,\%$:n rajan säde $0{,}14\,\text{nm}$
 **Kysytty:** a) yleisin luokka, b) alle $0{,}10\,\text{nm}$:n etäisyydelle osuvien mittausten osuus $P$ prosentteina, c) aineiston sopivuus $90\,\%$:n rajaan
