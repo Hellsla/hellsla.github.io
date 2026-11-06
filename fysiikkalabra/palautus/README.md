@@ -8,7 +8,7 @@ arvioi tehtävän kerrallaan, opiskelija kerrallaan, nuolinäppäimillä. Sanall
 Tämä kansio ei kuulu julkaistuun sivustoon (`site/`).
 
 **Eduespoossa Apps Script on estetty (5.11.2026).** Arviointi tehdään siksi erillisellä paikallisella sivulla
-`arviointi-fy1.html` … `arviointi-fy8.html`, esim. [`arviointi-fy3.html`](arviointi-fy3.html) (koko kurssi, ryhmät erikseen, pisteet luvuittain ja yhteensä): ohje [PAIKALLINEN-ARVIOINTI.md](PAIKALLINEN-ARVIOINTI.md). Sivu käyttää
+[`arviointi-2026-27-p1.html`](arviointi-2026-27-p1.html) (kuluva periodi, kaikki sen kurssit, ryhmät erikseen, pisteet luvuittain ja yhteensä): ohje [PAIKALLINEN-ARVIOINTI.md](PAIKALLINEN-ARVIOINTI.md). Sivu käyttää
 samaa tarkistus- ja arviointikoodia (Code.gs, Review.html) selaimessa, palautukset Drivesta ladattuna zipinä.
 Apps Script -versio jää valmiiksi siltä varalta, että kaupunki sallii sen.
 
@@ -21,7 +21,7 @@ Apps Script -versio jää valmiiksi siltä varalta, että kaupunki sallii sen.
 | `apps-script/Review.html` | arviointinäkymä |
 | `apps-script/Tehtavat.gs` | FY3:n luvut opetusjärjestyksessä ja niiden tehtävänannot (`RL_COURSE`), **generoitu**: `python scripts/palautus_tasks.py` |
 | `apps-script/appsscript.json` | manifesti: aikavyöhyke, V8 ja kolme oikeutta |
-| `arviointi-fy<n>.html` | paikallinen arviointisivu kurssille FY1–FY8, **generoitu** samalla komennolla (`palautus_tasks.py`) |
+| `arviointi-<lv>-p<periodi>.html` | paikallinen arviointisivu kuluvalle periodille, **generoitu** samalla komennolla (`palautus_tasks.py`) |
 | `paikallinen/local-backend.js` | paikallisen sivun korvikkeet Sheets-, Drive- ja google.script.run-palveluille, zipin luku, localStorage, CSV ja varmuuskopio |
 | `test/gas-mock.js` | testien korvikkeet Sheets-, Drive- ja google.script.run-palveluille |
 

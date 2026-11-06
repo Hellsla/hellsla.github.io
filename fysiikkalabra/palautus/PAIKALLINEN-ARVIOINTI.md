@@ -1,28 +1,28 @@
-# Arviointi ilman Apps Scriptiä: paikallinen arviointisivu (FY1–FY8)
+# Arviointi ilman Apps Scriptiä: paikallinen arviointisivu (yksi tiedosto periodia kohti)
 
 Eduespoossa Apps Script on estetty (Google Admin: *you do not have access to this service*, 5.11.2026). Siksi
-arviointi tehdään erillisellä HTML-tiedostolla, yksi jokaiselle kurssille: **`arviointi-fy1.html`** … **`arviointi-fy8.html`**
-(6.11.2026 alkaen kaikki kurssit; ohjeen esimerkit ovat FY3:sta, muut toimivat samoin). Opettaja avaa sen omalla koneellaan
+arviointi tehdään erillisellä HTML-tiedostolla, yksi kuluvaa periodia kohti: **`arviointi-2026-27-p1.html`**. Siinä ovat
+kaikki periodin kurssit, eli ne, joille `palautukset.json` antaa lomakkeen (6.11.2026). Uusi periodi saa uuden tiedoston, kun
+`palautukset.json` päivitetään. Opettaja avaa sen omalla koneellaan
 selaimessa (Chrome tai Edge). Tiedosto ei kuulu RuukkiLabraan eikä julkiseen sivustoon. Sivu ei käytä verkkoa eikä
 Googlen tai Microsoftin palveluja. Se lukee Drivesta ladatut palautukset ja tallentaa pisteet vain tämän selaimen
 muistiin.
 
-Sivulla on koko FY3: kaikki 16 lukua opetusjärjestyksessä (sama kuin FY3-moduulisivulla), ja niiden tehtävät. Jokaisessa
-FY3-luvussa on Tehtävät-otsikon rivillä painike **Lataa kaikki ratkaisut**. Painike lataa luvun tiedoston
-`fy3-<n>.ratkaisut.json`. Painike on myös englanninkielisessä (*Download all solutions*) ja selkosuomen FY3:ssa. Tiedosto on
+Sivulla on periodin jokaisen kurssin kaikki luvut opetusjärjestyksessä ja niiden tehtävät. Jokaisessa FY1–FY8-luvussa on Tehtävät-otsikon rivillä painike **Lataa kaikki ratkaisut**. Painike lataa luvun tiedoston
+`fy3-<n>.ratkaisut.json`. Painike on myös englanniksi (*Download all solutions*) ja selkosuomeksi. Tiedosto on
 samanlainen, joten kaikki kielet arvioidaan samalla sivulla.
 
 ## Käyttöönotto
 
 1. **Yksi Forms-lomake ryhmää kohti**, eduespoo-tilillä, kuten KAYTTOONOTTO.md:n kohdassa 1. Nimeä lomakkeet
-   ryhmittäin, esim. *FY3.1 palautukset* ja *FY3.2 palautukset*. Tiedostokysymys *Palauta vastaukset*, enintään 10 Mt.
+   ryhmittäin, nimi **alkaa ryhmällä**: *FY3.2 lv 2026-27 Palauta ratkaisut*. Arviointisivu tunnistaa ryhmän ja kurssin
+   nimen alusta. Tiedostokysymys *Palauta vastaukset*, enintään 10 Mt.
    Opiskelija palauttaa samalla lomakkeella jokaisen luvun erikseen, kun luku on tehty. Uusi palautus on uusi
    lomakevastaus. Sheetsiin linkittämistä ja Apps Scriptiä ei tarvita. Palautuskansio ja lomakkeen vastaukset vain
    nimetyille opettajille (KAYTTOONOTTO.md, kohta 5).
-2. **Tallenna arviointisivu** kerran omalle koneelle, opettamasi kurssin sivu, esim. `fysiikkalabra/palautus/arviointi-fy3.html` (repossa, myös
-   projektin tiedostoissa). Avaa se kaksoisnapsauttamalla. Sivu toimii ilman verkkoa.
-3. **Lisää ryhmät** sivulla: kirjoita nimi (esim. FY3.1) ja paina **Lisää ryhmä**. Yksi ryhmä jokaista lomaketta kohti.
-4. **Lomakelinkit Ruukkilabraan**: lisää ryhmän lomakkeen vastaajalinkki (Lähetä → linkki, `forms.gle/…`) tiedostoon
+2. **Tallenna arviointisivu** kerran periodissa omalle koneelle: `fysiikkalabra/palautus/arviointi-2026-27-p1.html`
+   (repossa, myös projektin tiedostoissa). Avaa se kaksoisnapsauttamalla. Sivu toimii ilman verkkoa.
+3. **Lomakelinkit Ruukkilabraan**: lisää ryhmän lomakkeen vastaajalinkki (Lähetä → linkki, `forms.gle/…`) tiedostoon
    `fysiikkalabra/palautukset.json` (myös periodi ja lukuvuosi). Ruukkilabraan tulee sivu *Palautukset* (esim.
    *Palautukset · 1. periodi · lv 2026-27*, englanniksi *Submissions*), jossa on kaikki kurssit ja nappi jokaiselle ryhmälle. FY3-lukujen Tehtävät-rivillä on
    Lataa kaikki ratkaisut -napin vieressä nappi **Palauta**, joka vie tälle sivulle. Periodin vaihtuessa vaihda otsikko
@@ -32,17 +32,19 @@ samanlainen, joten kaikki kielet arvioidaan samalla sivulla.
 
 1. Drivessa: napsauta ryhmän lomakkeen kansiota **<lomakkeen nimi> (File responses)** hiiren oikealla → **Lataa**.
    Drive tekee zip-tiedoston (suurista kansioista useamman).
-2. Arviointisivulla: valitse **Ryhmä**, sitten **Palautukset (zip)** → valitse zip (tai kaikki
-   zipit kerralla). Sivu tarkistaa tiedostot ja näyttää käsittelytilan: hyväksytty, kaksoiskappale, tarkistettava
+2. Arviointisivulla: **Tuo tiedosto** → valitse zip (tai kaikkien ryhmien zipit kerralla). Ryhmä tunnistetaan zipin
+   ylimmästä kansiosta eli lomakkeen nimestä, ja uusi ryhmä syntyy itse. Kun ryhmiä on useampi, **Ryhmä**-valinnasta
+   vaihdetaan näkyvää ryhmää. Sivu tarkistaa tiedostot ja näyttää käsittelytilan: hyväksytty, kaksoiskappale, tarkistettava
    (sama palautustunniste kahdella opiskelijalla), virheellinen (syy näkyy). Tarkistettavan voi hyväksyä ja hyväksytyn
    hylätä rivin painikkeella.
 3. **Ryhmät pysyvät erillään.** Ryhmä muistaa, miltä lomakkeelta sen palautukset tulivat (zipin ylin kansio). Toisen
-   lomakkeen zipiä se ei lue, vaan kertoo, että valittu ryhmä on väärä. Jokaisella ryhmällä on omat opiskelijat, pisteet,
+   lomakkeen zipiä se ei lue samaan ryhmään. Toisen kurssin (jota ei ole tämän periodin sivulla) zipiä ei lueta. Jokaisella ryhmällä on omat opiskelijat, pisteet,
    CSV ja varmuuskopio.
 4. **Kooste** (ylhäällä): opiskelijat aakkosjärjestyksessä ja sarakkeet **Tehty** (tehtäviä, joihin on ratkaisu / tehtäviä),
    **Tarkistamatta** (tehtyjä ilman pisteitä) ja **Pisteet** (summa / enimmäispisteet). Valinnasta saa kaikki palautetut
    luvut yhdessä tai yhden luvun. Sarakkeen otsikko järjestää taulukon (uusi napsautus kääntää järjestyksen). Luvut
-   lasketaan opiskelijan uusimmasta hyväksytystä palautuksesta.
+   lasketaan opiskelijan uusimmasta hyväksytystä palautuksesta. Palkit näyttävät tehdyt tehtävät ja pisteet suhteessa
+   enimmäismäärään, opiskelijoittain ja koko ryhmälle (Kooste-otsikon alla).
 5. **Tehtävät**: jokainen luku on oma laatikkonsa, ja ne luvut, joista on palautuksia, ovat auki. Valitse tehtävä ja
    arvioi sen kaikki palautukset peräkkäin. Jonossa ovat vain ne opiskelijat, jotka ovat palauttaneet kyseisen luvun.
 
@@ -58,18 +60,18 @@ samanlainen, joten kaikki kielet arvioidaan samalla sivulla.
    Pisteet tehtävää kohti 0–1, enintään kaksi desimaalia (0,5 tai 0,25). Tyhjä = arvioimaton, 0 = annettu nolla.
    Viimeisellä opiskelijalla ↓ tallentaa ja kertoo, että tehtävä on käyty läpi. Jos tallennus epäonnistuu, siirtymistä
    ei tapahdu.
-6. **Vie pisteet (CSV)** lataa tiedoston `FY3-<ryhmä>-pisteet.csv`: opiskelija, pisteet luvuittain (tyhjä, jos lukua ei
+6. **Muut toiminnot** (pieni linkki Tuo tiedosto -napin alla): **Vie pisteet (CSV)** lataa tiedoston `FY3-<ryhmä>-pisteet.csv`: opiskelija, pisteet luvuittain (tyhjä, jos lukua ei
    ole palautettu), yhteensä, palautettujen lukujen määrä, Tehty ja Tarkistamatta. Desimaalierotin on pilkku. Avaa
    tiedosto Sheetsissä (Tiedosto → Tuo) tai Excelissä. Kaavoiksi tulkittavat merkit on suojattu.
 7. **Varmuuskopio** lataa ryhmän tuonnin tilan ja pisteet JSON-tiedostona. Säilytä se koulun Drivessa, ei julkisesti.
    **Palauta varmuuskopio** tuo sen takaisin valittuun ryhmään (esim. toisella koneella). **Poista ryhmä** poistaa
    ryhmän ja sen arvioinnin tästä selaimesta.
 8. Kun uusia palautuksia tulee, lataa kansio uudelleen ja valitse uusi zip samaan ryhmään. Jo luetut ohitetaan ja uudet
-   lisätään. Korjattu palautus on opiskelijan uusi versio samasta luvusta, ja vanhan pisteet säilyvät vanhalla
+   lisätään (Tuo tiedosto). Korjattu palautus on opiskelijan uusi versio samasta luvusta, ja vanhan pisteet säilyvät vanhalla
    versiolla.
 
 Sivu ei säilytä palautustiedostoja. Kun avaat sivun seuraavan kerran, ryhmät, pisteet ja tilat ovat tallessa, mutta
-vastausten näyttämistä varten valitse ryhmän zip uudelleen.
+vastausten näyttämistä varten tuo ryhmän zip uudelleen. Uuden periodin sivu näkee saman selaimen ryhmät ja pisteet.
 
 ## Tunniste ja aika
 

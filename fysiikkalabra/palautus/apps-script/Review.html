@@ -13,6 +13,9 @@
   main { max-width: 1280px; margin: 0 auto; padding: 12px 20px 90px; }
   h1 { font-size: 20px; margin: 0 0 4px; } h2 { font-size: 17px; margin: 18px 0 6px; }
   button { font: 600 15px system-ui, sans-serif; min-height: 38px; padding: 0 14px; border: 1px solid var(--accent); border-radius: 999px; background: #fff; color: var(--accent); cursor: pointer; }
+  button.primary { background: var(--accent); color: #fff; min-height: 46px; padding: 0 22px; font-size: 17px; }
+  button.primary:hover:not(:disabled) { background: #1a6b3a; }
+  #more > summary { cursor: pointer; color: var(--ink2); font-size: 14px; margin-top: 4px; }
   button:hover:not(:disabled) { background: var(--soft); } button:disabled { opacity: .45; cursor: default; }
   table { border-collapse: collapse; width: 100%; background: #fff; }
   th, td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
@@ -55,6 +58,12 @@
   #summary td { padding: 12px 10px; font-size: 18px; vertical-align: middle; }
   #summary td.n .v { font-weight: 600; } #summary td.n .of { color: #8a918c; }
   #summary tr.none td { color: var(--ink2); }
+  .meter { display: block; height: 8px; margin-top: 4px; background: #ece8dc; border-radius: 99px; overflow: hidden; min-width: 90px; }
+  .meter > span { display: block; height: 100%; background: var(--accent); border-radius: 99px; }
+  .meter.pts > span { background: #b45309; }
+  #groupChart { max-width: 760px; display: grid; grid-template-columns: auto 1fr auto; gap: 6px 12px; align-items: center; margin: 4px 0 12px; }
+  #groupChart .meter { height: 14px; margin: 0; }
+  #groupChart b { font-size: 15px; } #groupChart .v { font-weight: 600; white-space: nowrap; }
   #summary button.sort { border: 0; background: none; min-height: 0; padding: 2px 4px; color: inherit; font: inherit; letter-spacing: inherit; text-transform: inherit; border-radius: 4px; }
   #problems td:nth-child(2) { white-space: nowrap; }
 </style>
@@ -67,6 +76,7 @@
     <p id="homeState" class="muted" aria-live="polite">Ladataan…</p>
     <div class="bar"><h2 class="grow">Kooste</h2><label id="scopeWrap"><select id="scope" aria-label="Luku"></select></label></div>
     <p id="noSummary" class="muted">Ei palautuksia.</p>
+    <div id="groupChart" hidden aria-label="Ryhmä yhteensä"></div>
     <div class="wide"><table id="summary" hidden><thead></thead><tbody></tbody></table></div>
     <div class="bar"><h2 class="grow">Tehtävät</h2><label class="muted"><input type="checkbox" id="onlyOpen"> Vain arvioimattomat</label></div>
     <p class="muted" id="students" hidden></p>
@@ -195,12 +205,28 @@
       th.append(b); hr.append(th);
     });
     head.append(hr);
+    // Kaavio (opettaja 6.11.2026): tehdyt tehtävät ja pisteet suhteessa enimmäismäärään palkkeina, opiskelijoittain ja ryhmälle.
+    var meter = function (v, of, cls, label) {
+      var m = el('span', 'meter' + (cls ? ' ' + cls : '')), f = el('span'); m.setAttribute('role', 'img'); m.setAttribute('aria-label', label);
+      f.style.width = (of > 0 ? Math.max(0, Math.min(100, 100 * v / of)) : 0) + '%'; m.append(f); return m;
+    };
+    var pct = function (v, of) { return of > 0 ? Math.round(100 * v / of) + ' %' : '–'; };
     rows.forEach(function (r) {
       var tr = el('tr'); if (!r.returned) { tr.className = 'none'; tr.title = 'Ei palautusta tästä luvusta'; }
-      var part = function (v, of) { var td = el('td', 'n'); td.append(el('span', 'v', v)); if (of !== undefined) td.append(el('span', 'of', ' / ' + of)); return td; };
-      tr.append(el('td', null, r.name), part(String(r.answered), nTasks), part(String(r.unchecked)), part(num(r.points), num(max)));
+      var part = function (v, of, bar) { var td = el('td', 'n'); td.append(el('span', 'v', v)); if (of !== undefined) td.append(el('span', 'of', ' / ' + of)); if (bar) td.append(bar); return td; };
+      tr.append(el('td', null, r.name),
+        part(String(r.answered), nTasks, meter(r.answered, nTasks, '', 'Tehty ' + pct(r.answered, nTasks))),
+        part(String(r.unchecked)),
+        part(num(r.points), num(max), meter(r.points, max, 'pts', 'Pisteet ' + pct(r.points, max))));
       body.append(tr);
     });
+    var gc = $('groupChart'); gc.textContent = '';
+    if (rows.length) {
+      var all = rows.length * nTasks, done = rows.reduce(function (n, r) { return n + r.answered; }, 0), pts = rows.reduce(function (n, r) { return n + r.points; }, 0), pmax = rows.length * max;
+      gc.append(el('b', null, 'Tehty'), meter(done, all, '', 'Ryhmä: tehty ' + pct(done, all)), el('span', 'v', pct(done, all) + ' (' + done + ' / ' + all + ')'));
+      gc.append(el('b', null, 'Pisteet'), meter(pts, pmax, 'pts', 'Ryhmä: pisteet ' + pct(pts, pmax)), el('span', 'v', pct(pts, pmax) + ' (' + num(pts) + ' / ' + num(pmax) + ')'));
+    }
+    gc.hidden = !rows.length;
     $('summary').hidden = !rows.length; $('noSummary').hidden = !!rows.length; $('scopeWrap').hidden = !rows.length;
   }
   $('scope').addEventListener('change', function () { S.scope = $('scope').value; if (S.ov) renderSummary(S.ov); });
