@@ -248,23 +248,23 @@
         "concept",
         "reasoning"
       ],
-      "text": "Pystysuora käämi, jossa on paljon kierroksia, on kytketty kytkimen kautta akkuun. Kevyt alumiinirengas lepää vaakasuorassa käämin yläpään päällä niin, että käämin akseli kulkee renkaan keskeltä. Kytkin on aluksi auki, eikä käämissä kulje virtaa.\n\nKytkin suljetaan, ja käämin virta kasvaa nopeasti nollasta suureen vakioarvoonsa.\n\nMitä renkaalle tapahtuu sillä hetkellä, kun virta kasvaa?",
+      "text": "Pystysuora käämi, jossa on paljon kierroksia ja rautasydän, on kytketty kytkimen kautta akkuun. Kevyt alumiinirengas lepää vaakasuorassa käämin yläpään päällä niin, että käämin akseli kulkee renkaan keskeltä. Kytkin on aluksi auki, eikä käämissä kulje virtaa.\n\nKytkin suljetaan, ja käämin virta kasvaa nopeasti nollasta suureen vakioarvoonsa.\n\nMitä renkaalle tapahtuu sillä hetkellä, kun virta kasvaa?",
       "answer": "Rengas hypähtää ylöspäin",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
           "text": "Rengas painuu käämiä vasten",
-          "feedback": "Tämä olettaa, että käämi vetää rengasta puoleensa. Alumiini ei ole ferromagneettinen aine, joten veto ei synny itse metallista, ja renkaan induktiovirta vastustaa vuon kasvua eikä auta sitä."
+          "feedback": "Tämä olettaa, että käämi vetää rengasta puoleensa kuten rautaa. Alumiini ei ole ferromagneettinen aine, joten magneettikenttä ei vedä sitä puoleensa."
         },
         {
           "text": "Rengas hypähtää ylöspäin",
           "correct": true,
-          "feedback": "Oikein: renkaan ja käämin välille syntyy hylkivä voima niin kauan kuin käämin virta kasvaa."
+          "feedback": "Oikein. Valitse seuraavaksi perustelu, joka selittää vastauksesi."
         },
         {
           "text": "Rengas pysyy levossa",
-          "feedback": "Tämä olettaa, että akun tasavirta ei voi synnyttää induktiota. Kun kytkin suljetaan, virta ja sen kenttä kasvavat nollasta, joten renkaan läpi kulkeva vuo muuttuu, ja muutos synnyttää induktiovirran."
+          "feedback": "Tämä olettaa, että akun tasavirta ei voi synnyttää induktiota. Mieti, mitä käämin virralle tapahtuu juuri kytkimen sulkemisen hetkellä."
         }
       ],
       "reason_prompt": "Mikä perustelu selittää vastauksesi?",
@@ -275,7 +275,7 @@
         },
         {
           "text": "Renkaan induktiovirran kenttä vahvistaa vuon kasvua, joten rengas ja käämi vetävät toisiaan.",
-          "feedback": "Suunta on käännetty: induktiovirta ei auta muutosta vaan vastustaa sitä. Jos se auttaisi, energia kasvaisi tyhjästä, mikä on energian säilymisen vastaista."
+          "feedback": "Suunta on käännetty: induktiovirta ei auta vuon muutosta vaan vastustaa sitä. Jos se auttaisi, energia kasvaisi tyhjästä, mikä on energian säilymisen vastaista."
         },
         {
           "text": "Vuo renkaan läpi kasvaa, ja induktiovirran kenttä vastustaa kasvua, joten rengas hylkii käämiä.",

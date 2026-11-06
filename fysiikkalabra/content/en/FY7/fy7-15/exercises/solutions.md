@@ -143,6 +143,30 @@
 **Answer:** $55.6^\circ$, three significant figures like the refractive indices.
 **Reasonableness:** The refractive index of quartz glass is larger than that of water, $1.33$, and smaller than that of acrylic, $1.49$, so the angle must lie between the $53.1^\circ$ of water and the $56.1^\circ$ of acrylic, as in the result. Check: $\tan 55.59^\circ = 1.46$.
 
+## fy7-15-L1-09
+**Find:** the order of situations A–E by the intensity $I$ passing through the last polariser, from the smallest to the largest.
+**Principle:** An ideal polariser lets through half of the intensity of unpolarised light, whatever its position. For polarised light Malus's law $I = I_0 \cos^2\theta$ applies, where $\theta$ is the angle between the polarisation direction of the light and the transmission direction. The light that has passed through a polariser is polarised in its transmission direction, so the angle of the next polariser is measured from that.
+**Model answer:** The intensities:
+
+$I_\text{A} = 600\,\text{W/m}^2 \cdot \cos^2 60.0^\circ$, that is $I_\text{A} = 150\,\text{W/m}^2$
+
+$I_\text{B} = \tfrac{1}{2} \cdot 400\,\text{W/m}^2 = 200\,\text{W/m}^2$
+
+$I_\text{C} = 320\,\text{W/m}^2 \cdot \cos^2 30.0^\circ$, that is $I_\text{C} = 240\,\text{W/m}^2$
+
+$I_\text{D} = \tfrac{1}{2} \cdot 800\,\text{W/m}^2 \cdot \cos^2 60.0^\circ$, that is $I_\text{D} = 100\,\text{W/m}^2$
+
+In situation E, after the first polariser the light is polarised in its transmission direction, and the second polariser is at an angle of $45.0^\circ$ to it:
+
+$$\begin{aligned}
+&I_\text{E} = 500\,\text{W/m}^2 \cdot \cos^2 45.0^\circ \cdot \cos^2 45.0^\circ \\
+&I_\text{E} = 125\,\text{W/m}^2
+\end{aligned}$$
+
+From the smallest intensity to the largest, the order is D, E, A, B, C.
+
+If the factor $\cos\theta$ were taken without the square, the intensity of situation A would be $300\,\text{W/m}^2$ and the order would change. If the halving of unpolarised light were forgotten, situation B would be $400\,\text{W/m}^2$ and the largest. In situation E the second polariser is crossed with the polarisation direction of the incoming light, but light still gets through, because the polariser in between turns the polarisation direction.
+
 ## fy7-15-L2-05
 **Given:** the measured points $(\theta;\ E)$ of the table at ten angles, of which the largest reading is $322\,\text{lx}$ at $0^\circ$ and the smallest $7\,\text{lx}$ at $90^\circ$
 **Find:** the reading $E_0$ that the polarised light of the display alone gives when the transmission axis is aligned with the polarisation of the display, in $\text{lx}$

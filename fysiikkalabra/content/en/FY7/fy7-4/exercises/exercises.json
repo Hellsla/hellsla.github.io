@@ -223,6 +223,57 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy7-4-L2-08",
+      "level": 2,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "A light copper wire hangs vertically between the poles of a horseshoe magnet. You look at the wire from the front: the north pole $\\text{N}$ of the magnet is on the left of the wire and the south pole $\\text{S}$ on the right, so the field at the wire points horizontally from left to right.\n\nA current is connected to the wire, flowing downwards in the wire.\n\nIn which direction does the wire swing?",
+      "answer": "The wire swings towards the viewer.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The wire swings to the right, towards the south pole.",
+          "feedback": "Here the wire moves along the field lines towards the other pole, as if the magnet pulled it. The force on a current-carrying wire is, however, perpendicular to the field, not along it."
+        },
+        {
+          "text": "The wire swings towards the viewer.",
+          "correct": true,
+          "feedback": "Correct. Next choose the reason that explains your answer."
+        },
+        {
+          "text": "The wire swings away from the viewer.",
+          "feedback": "The direction has been turned the wrong way round. The right-hand rule is applied to the direction of the current, which is the direction of motion of a positive charge, so it is not reversed because of the electrons."
+        },
+        {
+          "text": "The wire does not swing at all.",
+          "feedback": "Copper is not ferromagnetic, so the magnet does not pull a wire with no current. When there is a current in the wire, the field exerts a force on the moving charges and through them on the wire."
+        }
+      ],
+      "reason_prompt": "Which reason explains your answer?",
+      "reasons": [
+        {
+          "text": "The field lines go from the north pole to the south pole, and a current-carrying wire moves in the direction of the field lines.",
+          "feedback": "This is a misconception that the magnet pulls the wire towards a pole. The force is perpendicular to the field, and it turns round when the direction of the current is reversed, although the magnet is the same."
+        },
+        {
+          "text": "Copper is not ferromagnetic, so the field of the magnet has no effect on a copper wire.",
+          "feedback": "The first part is true, but it does not explain the motion of a current-carrying wire. The magnetic field acts on the charges moving in the wire, so a force appears when there is a current in the wire."
+        },
+        {
+          "text": "The force is perpendicular to the current and to the field, and the right-hand rule gives its direction.",
+          "correct": true,
+          "feedback": "Correct: the thumb points in the direction of the current, down, and the other fingers in the direction of the field, to the right, so the palm pushes towards the viewer."
+        },
+        {
+          "text": "The electrons travel against the current, so the force is opposite to the one given by the right-hand rule.",
+          "feedback": "Here the sign of the charge has been taken into account twice. The negative electrons move upwards, and the two reversals cancel each other. Therefore the rule is applied directly to the direction of the current."
+        }
+      ]
     }
   ],
   "level3": [

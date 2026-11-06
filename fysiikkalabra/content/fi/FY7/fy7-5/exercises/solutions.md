@@ -210,7 +210,7 @@ $|e_\text{B}| = 50 \cdot \dfrac{6{,}0 \cdot 10^{-3}\,\text{Wb}}{0{,}10\,\text{s}
 
 $|e_\text{B}| = 3{,}0\,\text{V}$
 
-Tilanteessa C magneetti on levossa, joten vuo ei muutu: $\Delta\Phi = 0$ ja $e_\text{C} = 0$. Suuri vuo $8{,}0\,\text{mWb}$ ja kierrosten suuri lukumäärä eivät muuta tätä.
+Tilanteessa C magneetti on levossa, joten vuo ei muutu: $\Delta\Phi = 0$ ja $e_\text{C} = 0$. Vuo $0{,}080\,\text{mWb}$ ja kierrosten suuri lukumäärä eivät muuta tätä.
 
 Tilanne D:
 
@@ -224,4 +224,8 @@ $|e_\text{E}| = \dfrac{40 \cdot 10^{-3}\,\text{Wb}}{0{,}020\,\text{s}}$
 
 $|e_\text{E}| = 2{,}0\,\text{V}$
 
-Induktiojännitteen suuruuden mukaan pienimmästä suurimpaan järjestys on C ($0\,\text{V}$), D ($0{,}60\,\text{V}$), A ($1{,}2\,\text{V}$), E ($2{,}0\,\text{V}$) ja B ($3{,}0\,\text{V}$). Tilanteessa E vuo pienenee, joten jännitteen etumerkki on vastakkainen kuin vuon kasvaessa, mutta järjestyksessä verrataan vain suuruuksia. Jos kierrosten lukumäärän unohtaa, tilanteiden A ja B jännitteiksi tulee vain $6{,}0\,\text{mV}$ ja $60\,\text{mV}$, ja ne siirtyvät väärin heti tilanteen C jälkeen. Jos jännitettä luulee suureksi silloin, kun vuo on suuri, tilanne C siirtyy virheellisesti suurimmaksi. Järkevyys: tilanteessa E vuo muuttuu nopeimmin, $2{,}0\,\tfrac{\text{Wb}}{\text{s}}$, mutta tilanteen B $50$ kierrosta nostaa sen jännitteen suurimmaksi.
+Induktiojännitteen suuruuden mukaan pienimmästä suurimpaan järjestys on C ($0\,\text{V}$), D ($0{,}60\,\text{V}$), A ($1{,}2\,\text{V}$), E ($2{,}0\,\text{V}$) ja B ($3{,}0\,\text{V}$). Tilanteessa E vuo pienenee, joten jännitteen etumerkki on vastakkainen kuin vuon kasvaessa, mutta järjestyksessä verrataan vain suuruuksia.
+
+Jos kierrosten lukumäärän unohtaa, tilanteiden A ja B jännitteiksi tulee vain $6{,}0\,\text{mV}$ ja $60\,\text{mV}$, ja ne siirtyvät väärin heti tilanteen C jälkeen. Jos jännitteen luulee riippuvan vuon suuruudesta eikä sen muutoksesta, tilanteelle C tulee virheellisesti nollaa suurempi jännite.
+
+**Järkevyys:** Tilanteessa E vuo muuttuu nopeimmin, $2{,}0\,\tfrac{\text{Wb}}{\text{s}}$, mutta tilanteen B $50$ kierrosta nostaa sen jännitteen suurimmaksi.

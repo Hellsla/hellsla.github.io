@@ -90,6 +90,50 @@
       "answer": 12.3,
       "unit": "°",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-11-L1-09",
+      "level": 1,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "A narrow beam of white light comes from air into a crown glass prism. The refractive index of the glass is $1.514$ for red light and $1.530$ for violet. The speed of light in vacuum is $c = 3.00 \\cdot 10^{8}\\,\\text{m/s}$.\n\nIn a rainbow, red light is seen at an angle of about $42^\\circ$ and violet at about $40.6^\\circ$ from the direction of the antisolar point.\n\nReason out which statements are true and which are false.",
+      "answer": "1 false, 2 true, 3 false, 4 true, 5 true, 6 false",
+      "unit": "",
+      "tolerance": 0.02,
+      "statements": [
+        {
+          "text": "The prism deflects red light the most, because the wavelength of red light is the longest.",
+          "true": false,
+          "feedback": "False: the refractive index of the glass is greater for violet than for red, $1.530 > 1.514$. So violet is refracted the most at both surfaces and deviates the most, and red deviates the least."
+        },
+        {
+          "text": "Violet light travels more slowly in the glass of the prism than red light.",
+          "true": true,
+          "feedback": "True: $v = c : n$, so a greater refractive index means a lower speed. The speed of violet is $1.961 \\cdot 10^{8}\\,\\text{m/s}$ and that of red $1.982 \\cdot 10^{8}\\,\\text{m/s}$."
+        },
+        {
+          "text": "The frequency of red light is lower in glass than in air, because the light slows down in glass.",
+          "true": false,
+          "feedback": "False: at a boundary the frequency of light does not change, and the colour is determined by the frequency. When the speed decreases, the wavelength becomes shorter according to the equation $v = f\\lambda$, and red light stays red."
+        },
+        {
+          "text": "When red light coming out of a prism is directed into a second prism, it is refracted but does not split into new colours.",
+          "true": true,
+          "feedback": "True: a prism does not colour light but separates the colours already present in white light. A single separated colour is refracted in the second prism, but it contains no other colours to separate, as Newton showed."
+        },
+        {
+          "text": "Violet is at the inner edge of a rainbow, because violet is seen at a smaller angle from the direction of the antisolar point.",
+          "true": true,
+          "feedback": "True: the droplets seen at the same angle from the antisolar point form a circle. The angle of the violet circle, $40.6^\\circ$, is smaller than that of red, $42^\\circ$, so violet is at the inner edge of the arc and red at the outer edge."
+        },
+        {
+          "text": "When the sun is at an altitude of $45^\\circ$, a person standing on level ground sees the top of the red edge of the rainbow above the horizon.",
+          "true": false,
+          "feedback": "False: the antisolar point is $45^\\circ$ below the horizon, so the top of the red edge is at the altitude $42^\\circ - 45^\\circ = -3^\\circ$. The whole arc is below the horizon, and it cannot be seen from the ground."
+        }
+      ]
     }
   ],
   "level2": [

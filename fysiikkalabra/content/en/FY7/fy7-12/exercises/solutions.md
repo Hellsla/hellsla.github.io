@@ -193,3 +193,22 @@
 **Substitution:** $R_\text{min} = 0.50\,\text{mm} \cdot \dfrac{1.49 + 1.40}{1.49 - 1.40} = 0.50\,\text{mm} \cdot \dfrac{2.89}{0.09} = 0.50\,\text{mm} \cdot 32.11 = 16.06\,\text{mm}$
 **Answer:** $16\,\text{mm}$ ($16.1\,\text{mm}$). The accuracy is limited by the difference of the refractive indices $n_1 - n_2 = 0.09$. In a sharper bend some of the light leaks into the cladding.
 **Reasonableness:** Check: when $R = 16.06\,\text{mm}$, the ratio $(R - a) : (R + a)$ is $15.56 : 16.56 = 0.9396$. Likewise $1.40 : 1.49 = 0.9396$, so the angle of incidence is exactly the critical angle $\sin^{-1} 0.9396 = 70.0^\circ$. The table agrees with the result: at the radii $20.0\,\text{mm}$ and larger the power is at least $96\,\%$, but at the radii $15.0\,\text{mm}$ and $5.0\,\text{mm}$ it is only $88\,\%$ and $31\,\%$. The power does not drop to zero exactly at $R_\text{min}$, because below it at first only a thin part of the light travelling next to the inner edge leaks out, and the leaking share grows gradually as the radius gets smaller. Obliquely travelling rays leak already at slightly larger radii.
+
+## fy7-12-L2-08
+**Find:** what happens at the water surface to the laser beam coming from the bottom of the aquarium, and why.
+**Principle:** When light goes from a substance with a larger refractive index into one with a smaller refractive index, the critical angle follows from the equation $\sin\alpha_\text{r} = n_2 : n_1$, where $n_1$ belongs to the substance the light comes from. If the angle of incidence is larger than the critical angle, there is no refracted beam, and all the light is reflected back. The angle of incidence is measured from the normal of the boundary, not from the surface.
+**Model answer:** The normal is perpendicular to the water surface, so the angle of incidence is
+
+$\alpha_1 = 90^\circ - 40.0^\circ = 50.0^\circ$
+
+The light goes from water into air, so $n_1 = 1.33$ and $n_2 = 1.00$. The critical angle is
+
+$\sin\alpha_\text{r} = \dfrac{n_2}{n_1} = \dfrac{1.00}{1.33}$
+
+$\sin\alpha_\text{r} = 0.7519$
+
+$\alpha_\text{r} = 48.75^\circ \approx 48.8^\circ$
+
+The angle of incidence $50.0^\circ$ is larger than the critical angle $48.8^\circ$. The law of refraction would give $\sin\alpha_2 = 1.33 \cdot \sin 50.0^\circ$, that is $\sin\alpha_2 = 1.02 > 1$, so there is no refracted beam. The beam is totally internally reflected: all the light is reflected from the water surface back into the water at the angle of reflection $50.0^\circ$.
+
+The reason is therefore that the angle of incidence $50.0^\circ$ is larger than the critical angle $48.8^\circ$ of water and air. If you take $40.0^\circ$ as the angle of incidence, you have measured the angle from the surface, and you wrongly end up with partial refraction into the air. If the refractive indices change places, the sine of the critical angle becomes $1.33$, and it looks as if there is no critical angle. The statement about refraction away from the normal is true, but it does not tell whether the angle of incidence exceeds the critical angle. The light would travel along the water surface only if the angle of incidence were exactly the critical angle.

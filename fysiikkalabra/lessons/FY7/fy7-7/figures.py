@@ -236,12 +236,14 @@ PICK_DESC = ("Kuvaaja mittakaavassa: vaaka-akselilla aika t millisekunteina väl
 
 def pick_curve(fid, label, peak, period):
     """One option: the same axes and the same violet sine for every option, starting from zero and rising."""
-    f = Fig(fid, 380, PICK_DESC + label)
-    ax = Axes(f, (100, 340), (500, 40), x=(0, 100), y=(-10, 10), xticks=[5 * k for k in range(1, 21)],
+    f = Fig(fid, 406, PICK_DESC + label)
+    ax = Axes(f, (100, 366), (500, 66), x=(0, 100), y=(-10, 10), xticks=[5 * k for k in range(1, 21)],
               yticks=[-10 + k for k in range(0, 21)], xlabel=r"t\ (\text{ms})", ylabel=r"e\ (\text{V})",
               xfmt=lambda v: fi(v) if round(v) % 20 == 0 else "",
               yfmt=lambda v: fi(v) if round(v) % 2 == 0 else "", origin_label=False)
     f.line(ax.X(0), ax.Y(0), ax.X(100), ax.Y(0), MUTED, 2)
+    f.line(ax.x0 - 7, ax.Y(-10), ax.x0, ax.Y(-10), INK, 2)       # Axes skips the bottom tick: label −10 V by hand
+    f.tex(ax.x0 - 12, ax.Y(-10), fi(-10), "end")
     ax.curve(lambda t: peak * math.sin(2 * math.pi * t / period), 0, 100, CURRENT, 3, steps=400)
     return f.svg()
 

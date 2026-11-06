@@ -201,6 +201,41 @@
       "answer": 0.0379,
       "unit": "",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy7-10-L2-08",
+      "level": 2,
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "text": "Laserin säde kulkee lasikuution sisällä ja osuu kuution yläpintaan. Säteen ja pinnan välinen kulma on $60{,}0^\\circ$. Säde jatkaa pinnan läpi ilmaan. Lasin taitekerroin on $1{,}52$ ja ilman $1{,}00$.\n\nOppilas laskee säteen taitekulman ilmassa.\n\nRivi 1: valo siirtyy lasista ilmaan eli optisesti harvempaan aineeseen, joten se taittuu normaalista poispäin.\n\nRivi 2: tulokulma mitataan pinnan normaalista, joten $\\alpha_1 = 90^\\circ - 60{,}0^\\circ = 30{,}0^\\circ$.\n\nRivi 3: taittumislaista $\\sin\\alpha_2 = \\dfrac{1{,}00 \\cdot \\sin 30{,}0^\\circ}{1{,}52}$, eli $\\sin\\alpha_2 = 0{,}329$.\n\nRivi 4: taitekulma ilmassa on $\\alpha_2 = 19{,}2^\\circ$ normaalista mitattuna.\n\nTarkista lasku rivi riviltä. Valitse väärä rivi. Jos laskussa ei ole virhettä, valitse viimeinen vaihtoehto.",
+      "answer": "Rivi 3: taittumislain sijoitus",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Rivi 1: taittumisen suunta",
+          "feedback": "Rivi 1 on oikein. Lasin taitekerroin $1{,}52$ on suurempi kuin ilman. Siksi ilmaan tuleva säde taittuu normaalista poispäin. Jos luulee riviä virheelliseksi, ajattelee, että valo taittuu aina kohti normaalia."
+        },
+        {
+          "text": "Rivi 2: tulokulma",
+          "feedback": "Rivi 2 on oikein. Normaali on kohtisuorassa pintaa vastaan, joten pinnasta mitattu $60{,}0^\\circ$ on normaalista mitattuna $30{,}0^\\circ$. Jos luulee riviä virheelliseksi, mittaa tulokulman pinnasta eikä normaalista."
+        },
+        {
+          "text": "Rivi 3: taittumislain sijoitus",
+          "correct": true,
+          "feedback": "Oikein, tämä rivi on väärin: taitekertoimet ovat vaihtaneet paikkaa. Valo tulee lasista, joten $n_1 = 1{,}52$ ja $\\sin\\alpha_2 = 1{,}52 \\cdot \\sin 30{,}0^\\circ$. Siis $\\sin\\alpha_2 = 0{,}760$ ja $\\alpha_2 = 49{,}5^\\circ$."
+        },
+        {
+          "text": "Rivi 4: taitekulma",
+          "feedback": "Rivi 4 on laskettu oikein rivin 3 arvosta. Kulma, jonka sini on $0{,}329$, on $19{,}2^\\circ$. Jos luulee riviä virheelliseksi, tarkistaa vain viimeisen laskun eikä sitä, mistä sen luku tuli. Virhe näkyy tässä: $19{,}2^\\circ$ on pienempi kuin tulokulma."
+        },
+        {
+          "text": "Laskussa ei ole virhettä",
+          "feedback": "Laskussa on virhe rivillä 3. Tulos $19{,}2^\\circ$ on pienempi kuin tulokulma $30{,}0^\\circ$. Rivin 1 mukaan säteen pitää kuitenkin taittua normaalista poispäin. Taittumislaissa $n_1$ kuuluu aineelle, josta valo tulee."
+        }
+      ]
     }
   ],
   "level3": [

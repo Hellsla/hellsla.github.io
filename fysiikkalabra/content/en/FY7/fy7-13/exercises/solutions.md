@@ -169,6 +169,31 @@
 **Principle:** The wavelength is calculated from the distance $x$, and the relative error is approximately $\Delta x : x$. When $\Delta x$ stays the same, the error is a smaller part the larger $x$ is. So the measurement should be made so that $x$ is as large as possible.
 **Model answer:** The relative error decreases when a more distant maximum is measured: the same reading error is then a smaller part of a larger distance. Moving the screen closer to the grating makes $x$ smaller, so the same $\Delta x$ is a larger part and the error grows. A sparser grating makes the angles and so $x$ smaller, so the relative error grows too, and the error is not divided among several maxima. A brighter laser does not change the positions of the maxima, because they are determined by the wavelength, the grating spacing and the distance $L$.
 
+## fy7-13-L2-08
+**Find:** how the distance $x$ of the first-order maximum from the central maximum changes when the grating is replaced with a denser one and the screen is moved closer.
+**Principle:** The direction of the maximum is determined by the grating equation $d\sin\theta = k\lambda$, and the angle does not depend on the position of the screen. On the screen the distance of the maximum from the central maximum comes from a right-angled triangle, $x = L\tan\theta$. The change therefore has two opposite effects: the denser grating increases the angle, and the closer screen decreases the distance at the same angle. We calculate $x$ for both situations.
+**Model answer:** In the initial situation the grating constant is $d_1 = 1\,\text{mm} : 100 = 1.00 \cdot 10^{-5}\,\text{m}$.
+
+$$\begin{aligned}
+&\sin\theta_1 = \frac{650 \cdot 10^{-9}\,\text{m}}{1.00 \cdot 10^{-5}\,\text{m}} = 0.0650 \\
+&\theta_1 = 3.727^\circ \\
+&x_1 = 2.00\,\text{m} \cdot \tan 3.727^\circ \\
+&x_1 = 0.130\,\text{m}
+\end{aligned}$$
+
+The result agrees with the given distance $13.0\,\text{cm}$. The grating constant of the new grating is $d_2 = 1\,\text{mm} : 300 = 3.333 \cdot 10^{-6}\,\text{m}$.
+
+$$\begin{aligned}
+&\sin\theta_2 = \frac{650 \cdot 10^{-9}\,\text{m}}{3.333 \cdot 10^{-6}\,\text{m}} = 0.195 \\
+&\theta_2 = 11.24^\circ \\
+&x_2 = 1.00\,\text{m} \cdot \tan 11.24^\circ \\
+&x_2 = 0.199\,\text{m}
+\end{aligned}$$
+
+The ratio is $x_2 : x_1 = 19.9\,\text{cm} : 13.0\,\text{cm} \approx 1.5$. The distance therefore grows to about $1.5$ times the original, from $13.0\,\text{cm}$ to about $19.9\,\text{cm}$.
+
+For small angles $\tan\theta \approx \sin\theta$, so $x \approx L\lambda : d$. The grating constant decreases to a third, which makes the distance about three times as large, and the distance of the screen halves, which halves the distance. Together the factor is $3 : 2 = 1.5$. The exact factor $1.53$ is slightly larger, because at the new angle $11.2^\circ$ the tangent is already clearly larger than the sine. If you took only the grating into account, you would get three times the distance, and from the move of the screen alone a half of it. The denser grating does not bend the light less but more, because when the line density grows, the grating constant decreases.
+
 ## fy7-13-L3-04
 **Given:** slit separation $d = 0.250\,\text{mm}$, screen distance $L = 2.00\,\text{m}$, intensity table
 **Find:** a) the wavelength $\lambda$ in nanometres, b) the position of the second-order maximum, c) the position of the first maximum with a grating and the difference between the patterns

@@ -232,6 +232,36 @@
       "answer": 0.2,
       "unit": "A",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-8-L2-08",
+      "level": 2,
+      "kind": [
+        "reasoning"
+      ],
+      "text": "The generator of a wind turbine produces a power of $3.0\\,\\text{MW}$ at a voltage of $690\\,\\text{V}$. The transformer of the turbine raises the voltage to $20\\,\\text{kV}$, and the power is transmitted along a cable to a substation. The total resistance of the conductors of the cable is $0.50\\,\\Omega$. The values are example values, and the transformer is assumed to be ideal.\n\nWhat is the order of magnitude of the power loss $P_\\text{h}$ that turns into heat in the cable?",
+      "answer": "about $10\\,\\text{kW}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "about $0.1\\,\\text{kW}$",
+          "feedback": "Here the current has been multiplied by the resistance without the square. The product $RI = 75\\,\\text{V}$ is the voltage drop of the cable, not a power; the power loss is $RI^2$."
+        },
+        {
+          "text": "about $10\\,\\text{kW}$",
+          "correct": true,
+          "feedback": "Correct: $I = 3.0\\,\\text{MW} : 20\\,\\text{kV} = 150\\,\\text{A}$, so $P_\\text{h} = 0.50\\,\\Omega \\cdot (150\\,\\text{A})^2$, that is, about $11\\,\\text{kW}$."
+        },
+        {
+          "text": "about $10\\,\\text{MW}$",
+          "feedback": "Here the current has been calculated with the generator voltage $690\\,\\text{V}$, although the transformer raises the voltage before the cable. The result would be greater than the whole power of the turbine, which is impossible."
+        },
+        {
+          "text": "about $1000\\,\\text{MW}$",
+          "feedback": "Here the power loss has been calculated with the expression $U^2 : R$ using the transmission voltage. The transmission voltage is not the voltage across the resistance of the cable, so the current $I = P : U$ is calculated first."
+        }
+      ]
     }
   ],
   "level3": [

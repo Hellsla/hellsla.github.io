@@ -196,3 +196,20 @@ $$\text{saving} = (E_\text{A} - E_\text{B}) \cdot \text{price}$$
 **Substitution:** a) The power losses are $0.6$; $0.6$; $0.7$; $0.9$; $1.3$ and $1.9\,\text{kW}$ and the efficiencies on the rows $10\text{–}80\,\text{kW}$ are $94.3$; $96.6$; $97.8$; $97.9$ and $97.7\,\%$. b) At no load $P_0 = 0.6\,\text{kW}$. The greatest load has the smallest relative reading error, so $a = \dfrac{1.9\,\text{kW} - 0.6\,\text{kW}}{(80.0\,\text{kW})^2} = 2.03 \cdot 10^{-4}\,\text{kW}^{-1}$. c) $P_\text{out} = \sqrt{\dfrac{0.6\,\text{kW}}{2.03 \cdot 10^{-4}\,\text{kW}^{-1}}} = \sqrt{2954\,\text{kW}^2} = 54.35\,\text{kW}$
 **Answer:** about $54\,\text{kW}$, two significant figures, because the difference of the losses $1.9\,\text{kW} - 0.6\,\text{kW} = 1.3\,\text{kW}$ is known to two significant figures. The $a$ determined from the rows $20$–$60\,\text{kW}$ would give values of $49$–$57\,\text{kW}$, so the result is imprecise.
 **Reasonableness:** In the table the efficiency is greatest on the row $60\,\text{kW}$ ($97.9\,\%$), close to the result $54\,\text{kW}$. At the result the loss according to the model is $0.6\,\text{kW} + 2.03 \cdot 10^{-4}\,\text{kW}^{-1} \cdot (54.35\,\text{kW})^2 = 1.2\,\text{kW}$, and the efficiency is $\dfrac{54.35}{54.35 + 1.2} = 97.8\,\%$. The two parts of the loss are here $0.6\,\text{kW}$ each.
+
+## fy7-8-L2-08
+**Find:** the order of magnitude of the power loss $P_\text{h}$ that turns into heat in the cable of the wind turbine.
+**Principle:** An ideal transformer does not change the power, so the cable transmits the power $3.0\,\text{MW}$ at the voltage $20\,\text{kV}$. The current of the cable is obtained from the transmitted power and the transmission voltage, $I = P : U$, and the power loss is $P_\text{h} = RI^2$. The transmission voltage is not the voltage across the resistance of the cable, so the expression $U^2 : R$ cannot be used.
+**Model answer:** The current of the cable:
+
+$I = \dfrac{3.0 \cdot 10^{6}\,\text{W}}{20 \cdot 10^{3}\,\text{V}}$
+
+$I = 150\,\text{A}$
+
+The power loss:
+
+$P_\text{h} = 0.50\,\Omega \cdot (150\,\text{A})^2$
+
+$P_\text{h} = 11\,250\,\text{W} \approx 11\,\text{kW}$
+
+The power loss is about $11\,\text{kW}$, so the order of magnitude is $10\,\text{kW}$. It is only about $0.4\,\%$ of the transmitted power. The wrong options come from typical mistakes. The product $RI = 75\,\text{V}$ is the voltage drop of the cable, not a power, and it would give an order of magnitude of $0.1\,\text{kW}$. If the transformer is forgotten and the current is calculated with the voltage $690\,\text{V}$, the current is about $4\,350\,\text{A}$ and the power loss about $9.5\,\text{MW}$, which is more than the turbine produces. The expression $U^2 : R$ with the transmission voltage gives $800\,\text{MW}$, that is, an order of magnitude of $1000\,\text{MW}$, which is even more impossible. Reasonableness: the transformer reduces the current to about $29$ times smaller and the losses to about $840$ times smaller than they would be at the voltage $690\,\text{V}$.

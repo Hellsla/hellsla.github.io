@@ -228,6 +228,42 @@
           "correct": true
         }
       ]
+    },
+    {
+      "id": "fy7-2-L2-08",
+      "level": 2,
+      "text": "In a vacuum tube there is a homogeneous magnetic field whose magnetic flux density is $0.50\\,\\text{mT}$ and which points out of the page. An electron moves in the field; its mass is $9.109 \\cdot 10^{-31}\\,\\text{kg}$ and its charge $-1.602 \\cdot 10^{-19}\\,\\text{C}$. At the moment considered its velocity is $3.0 \\cdot 10^{6}\\,\\text{m/s}$ in the plane of the page, upwards.\n\nIn the diagrams $\\overline{F}_\\text{m}$ is the magnetic force exerted on the electron by the field, and the blue arrow $\\overline{v}$ is the velocity of the electron, which is not a force. The symbol $\\odot$ means the direction out of the page. All diagrams are drawn to the same scale.\n\nWhich force diagram shows correctly the forces acting on the electron?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "fbd": "select",
+      "answer": "Force diagram C",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Force diagram A",
+          "figure": "fy7-2/pick-ulos",
+          "feedback": "Here the force is drawn in the direction of the field, out of the page, as if the field pulled the electron towards a pole. The magnetic force is, however, perpendicular to both the velocity and the field, so it lies in the plane of the page."
+        },
+        {
+          "text": "Force diagram B",
+          "figure": "fy7-2/pick-oikea",
+          "feedback": "This is the direction given by the right-hand rule for a positive charge. The charge of the electron is negative, so the force on it points in the opposite direction, that is, to the left."
+        },
+        {
+          "text": "Force diagram C",
+          "figure": "fy7-2/pick-vasen",
+          "correct": true,
+          "feedback": "Correct: the magnitude of the force is $|q|vB \\approx 2.4 \\cdot 10^{-16}\\,\\text{N}$ to the left. The weight of the electron, $mg \\approx 8.9 \\cdot 10^{-30}\\,\\text{N}$, is so small that it is not drawn."
+        },
+        {
+          "text": "Force diagram D",
+          "figure": "fy7-2/pick-ylos",
+          "feedback": "Here the force is drawn in the direction of the velocity, as if the field accelerated the electron. The magnetic force is perpendicular to the velocity, so it does not change the speed but turns the direction of motion."
+        }
+      ]
     }
   ],
   "level3": [

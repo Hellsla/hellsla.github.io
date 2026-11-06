@@ -201,6 +201,41 @@
       "answer": 0.0379,
       "unit": "",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy7-10-L2-08",
+      "level": 2,
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "text": "A laser beam travels inside a glass cube and hits the top surface of the cube so that the angle between the beam and the surface is $60.0^\\circ$. The beam continues through the surface into the air. The refractive index of the glass is $1.52$ and that of air $1.00$.\n\nA student calculates the angle of refraction of the beam in the air.\n\nLine 1: the light passes from glass into air, that is, into an optically less dense material, so it is refracted away from the normal.\n\nLine 2: the angle of incidence is measured from the normal of the surface, so $\\alpha_1 = 90^\\circ - 60.0^\\circ = 30.0^\\circ$.\n\nLine 3: from the law of refraction $\\sin\\alpha_2 = \\dfrac{1.00 \\cdot \\sin 30.0^\\circ}{1.52}$, that is, $\\sin\\alpha_2 = 0.329$.\n\nLine 4: the angle of refraction in the air is $\\alpha_2 = 19.2^\\circ$ measured from the normal.\n\nCheck the calculation line by line. Choose the wrong line, or the last option if there is no error in the calculation.",
+      "answer": "Line 3: substitution into the law of refraction",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Line 1: direction of refraction",
+          "feedback": "Line 1 is correct: the refractive index of glass, $1.52$, is greater than that of air, so a beam coming into the air is refracted away from the normal. Believing the line to be wrong means thinking that light is always refracted towards the normal."
+        },
+        {
+          "text": "Line 2: angle of incidence",
+          "feedback": "Line 2 is correct: the normal is perpendicular to the surface, so $60.0^\\circ$ measured from the surface is $30.0^\\circ$ measured from the normal. Believing the line to be wrong means measuring the angle of incidence from the surface instead of from the normal."
+        },
+        {
+          "text": "Line 3: substitution into the law of refraction",
+          "correct": true,
+          "feedback": "Correct, this line is wrong: the refractive indices have changed places. The light comes from the glass, so $n_1 = 1.52$ and $\\sin\\alpha_2 = 1.52 \\cdot \\sin 30.0^\\circ$, that is, $\\sin\\alpha_2 = 0.760$ and $\\alpha_2 = 49.5^\\circ$."
+        },
+        {
+          "text": "Line 4: angle of refraction",
+          "feedback": "Line 4 has been calculated correctly from the value of line 3: the angle whose sine is $0.329$ is $19.2^\\circ$. Believing the line to be wrong means checking only the last calculation and not where its number came from. The error is visible here: $19.2^\\circ$ is smaller than the angle of incidence."
+        },
+        {
+          "text": "There is no error in the calculation",
+          "feedback": "There is an error in the calculation, on line 3. The result $19.2^\\circ$ is smaller than the angle of incidence $30.0^\\circ$, although according to line 1 the beam must be refracted away from the normal. In the law of refraction $n_1$ belongs to the material the light comes from."
+        }
+      ]
     }
   ],
   "level3": [

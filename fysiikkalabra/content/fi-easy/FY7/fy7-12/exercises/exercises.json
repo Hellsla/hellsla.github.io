@@ -237,6 +237,57 @@
       "answer": 38.7896,
       "unit": "°",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-12-L2-08",
+      "level": 2,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "Akvaarion pohjalla oleva laser osoittaa vinosti ylöspäin. Sen säde osuu tyyneen vedenpintaan alhaalta päin. Säteen ja vedenpinnan välinen kulma on $40{,}0^\\circ$. Veden taitekerroin on $1{,}33$ ja ilman $1{,}00$.\n\nMitä säteelle tapahtuu vedenpinnassa?",
+      "answer": "Kaikki valo heijastuu vedenpinnasta takaisin veteen.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Osa valosta taittuu ilmaan, ja osa heijastuu veteen.",
+          "feedback": "Näin käy, kun tulokulma on pienempi kuin rajakulma. Tässä tulokulma mitataan normaalista eli pinnan kohtisuorasta suunnasta. Se on $90^\\circ - 40{,}0^\\circ = 50{,}0^\\circ$ ja suurempi kuin rajakulma. Siksi taittunutta sädettä ei ole."
+        },
+        {
+          "text": "Kaikki valo heijastuu vedenpinnasta takaisin veteen.",
+          "correct": true,
+          "feedback": "Oikein: säde kokonaisheijastuu. Valoa ei pääse vedenpinnasta ilmaan."
+        },
+        {
+          "text": "Kaikki valo taittuu ilmaan, eikä valoa heijastu.",
+          "feedback": "Tämä olettaa, että läpinäkyvä rajapinta päästää kaiken valon läpi. Rajapinnassa osa valosta heijastuu aina. Tässä tulokulma $50{,}0^\\circ$ on suurempi kuin rajakulma, joten kaikki valo heijastuu."
+        },
+        {
+          "text": "Valo taittuu ilmaan ja kulkee pitkin vedenpintaa.",
+          "feedback": "Taitekulma on $90^\\circ$ vain, kun tulokulma on täsmälleen rajakulma. Tulokulma $50{,}0^\\circ$ on suurempi kuin rajakulma. Silloin taittumislaista ei saada taitekulmaa, ja valo heijastuu kokonaan."
+        }
+      ],
+      "reason_prompt": "Mikä perustelu selittää vastauksesi?",
+      "reasons": [
+        {
+          "text": "Tulokulma $50{,}0^\\circ$ on suurempi kuin veden ja ilman rajapinnan rajakulma $48{,}8^\\circ$.",
+          "correct": true,
+          "feedback": "Oikein: $\\sin\\alpha_\\text{r} = 1{,}00 : 1{,}33 = 0{,}752$, joten $\\alpha_\\text{r} = 48{,}8^\\circ$. Tulokulma mitataan normaalista, ja se on suurempi kuin rajakulma."
+        },
+        {
+          "text": "Tulokulma $40{,}0^\\circ$ on pienempi kuin veden ja ilman rajapinnan rajakulma $48{,}8^\\circ$.",
+          "feedback": "Tässä kulma on mitattu vedenpinnasta, ei normaalista. Normaalista mitattuna tulokulma on $90^\\circ - 40{,}0^\\circ = 50{,}0^\\circ$. Se on suurempi kuin rajakulma."
+        },
+        {
+          "text": "Rajakulman sini olisi $1{,}33 : 1{,}00 > 1$, joten rajakulmaa ei ole ja valo pääsee aina ilmaan.",
+          "feedback": "Tässä taitekertoimet ovat vaihtaneet paikkaa. Rajakulman sini on $n_2 : n_1$. Luku $n_1$ kuuluu aineelle, josta valo tulee. Siis $\\sin\\alpha_\\text{r} = 1{,}00 : 1{,}33$, ja rajakulma on olemassa."
+        },
+        {
+          "text": "Vedestä ilmaan tuleva valo siirtyy optisesti harvempaan aineeseen eli aineeseen, jonka taitekerroin on pienempi. Se taittuu normaalista poispäin.",
+          "feedback": "Väite on tosi, mutta se ei ratkaise vastausta. Se kertoo vain, että kokonaisheijastuminen on mahdollista. Tapahtuuko se, riippuu siitä, onko tulokulma suurempi kuin rajakulma."
+        }
+      ]
     }
   ],
   "level3": [

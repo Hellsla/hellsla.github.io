@@ -173,3 +173,18 @@
 **Sijoitus:** Kentät: $B_\text{m} = 36{,}5$; $20{,}8$; $15{,}0$; $7{,}13$; $4{,}55$ ja $1{,}97\,\mu\text{T}$ etäisyyksillä $12$; $14$; $16$; $20$; $24$ ja $30\,\text{cm}$. Tulot $B_\text{m} r^3$ ovat $63{,}0$; $57{,}0$; $61{,}5$; $57{,}1$; $62{,}9$ ja $53{,}1$ yksikössä $10^3\,\mu\text{T}\cdot\text{cm}^3$. Näiden summa on $354{,}5 \cdot 10^3\,\mu\text{T}\cdot\text{cm}^3$. Kulmat on luettu asteen tarkkuudella, joten tulot vaihtelevat. Keskiarvo tasoittaa lukemisvirheen: $k = 59{,}1 \cdot 10^3\,\mu\text{T}\cdot\text{cm}^3$. Tällöin $r_0 = \sqrt[3]{\dfrac{59\,100\,\mu\text{T}\cdot\text{cm}^3}{14\,\mu\text{T}}} = \sqrt[3]{4221\,\text{cm}^3} = 16{,}2\,\text{cm}$
 **Vastaus:** a) Tulo $B_\text{m} r^3$ on kaikissa pisteissä noin $5{,}3\ldots6{,}3 \cdot 10^4\,\mu\text{T}\cdot\text{cm}^3$, vaikka kenttä pienenee arvosta $36{,}5\,\mu\text{T}$ arvoon $1{,}97\,\mu\text{T}$. Kenttä on siis likimain kääntäen verrannollinen etäisyyden kuutioon. b) $r_0 \approx 16\,\text{cm}$ (tarkemmin $16{,}2\,\text{cm}$). Vastauksessa on kaksi merkitsevää numeroa kuten kulmissa. Arvo on likimääräinen, koska $k$ on keskiarvo hajonneista tuloista. c) Kun $r < r_0$, magneetin kenttä (etelään) on suurempi kuin Maan kenttä (pohjoiseen). Silloin pohjoiskomponentti on negatiivinen, ja neulan pohjoispää osoittaa etelään. Kun $r > r_0$, Maan kenttä on suurempi, ja neulan pohjoispää osoittaa pohjoiseen. Etäisyydellä $r_0$ vaakasuora kokonaiskenttä on nolla, joten neula ei asetu mihinkään suuntaan.
 **Järkevyys:** Taulukossa etäisyydellä $16\,\text{cm}$ kenttä on $15{,}0\,\mu\text{T}$ eli hieman Maan kenttää $14\,\mu\text{T}$ suurempi. Etäisyydellä $20\,\text{cm}$ se on vain $7{,}13\,\mu\text{T}$. Nollakohdan pitää siis olla hieman yli $16\,\text{cm}$:n päässä, kuten $16{,}2\,\text{cm}$. Tarkistus: $\dfrac{59\,100\,\mu\text{T}\cdot\text{cm}^3}{(16{,}2\,\text{cm})^3} = 13{,}9\,\mu\text{T}$.
+
+## fy7-1-L1-09
+**Kysytty:** mitkä viidestä väitteestä ovat tosia. Väitteet koskevat sauvamagneettia, sen kenttäviivoja ja Maan magneettisia napoja.
+**Periaate:** Magneetti on magneettinen dipoli. Sen navat esiintyvät aina pareittain, eikä yksittäistä napaa ole koskaan havaittu. Kentän suunta on se suunta, johon kompassin neulan pohjoispää osoittaa. Magneetin ulkopuolella kenttäviivat kulkevat pohjoisnavasta etelänapaan. Magneetin sisällä ne kulkevat etelänavasta pohjoisnapaan. Kahden magneetin kenttä on niiden kenttien vektorisumma eli summa, jossa otetaan huomioon myös suunnat. Kokonaiskentällä on jokaisessa pisteessä yksi suunta. Erinimiset navat vetävät toisiaan.
+**Mallivastaus:** Väitteet 3 ja 4 ovat tosia. Väitteet 1, 2 ja 5 ovat epätosia.
+
+1 epätosi: sahauskohtaan syntyy uusi pohjoisnapa. Pitkällä palalla on edelleen sekä pohjoisnapa että etelänapa. Lyhyestä palasta tulee toinen kokonainen magneetti.
+
+2 epätosi: kyljen vieressä kenttäviivat kulkevat magneetin suuntaisesti $\text{N}$-päästä $\text{S}$-päähän. Magneetin kenttä on siellä paljon Maan kenttää voimakkaampi. Siksi neula kääntyy magneetin kentän suuntaan, ja neulan pohjoispää osoittaa $\text{S}$-päätä kohti.
+
+3 tosi: ulkona viivat kulkevat $\text{N}$:stä $\text{S}$:ään ja sisällä $\text{S}$:stä $\text{N}$:ään. Siksi jokainen viiva sulkeutuu itseensä. Tämä sopii siihen, ettei yksittäisiä napoja ole.
+
+4 tosi: magneetin $\text{N}$-pää kääntyy maantieteelliseen pohjoiseen. Erinimiset navat vetävät toisiaan, joten siellä on Maan magneettinen etelänapa.
+
+5 epätosi: kahden magneetin välissä vaikuttaa yksi kokonaiskenttä $\overline{B} = \overline{B}_1 + \overline{B}_2$. Sillä on jokaisessa pisteessä vain yksi suunta, joten kenttäviivat eivät leikkaa toisiaan. Rautaviila näyttää kokonaiskentän viivat, jotka kaartuvat magneettien välissä.

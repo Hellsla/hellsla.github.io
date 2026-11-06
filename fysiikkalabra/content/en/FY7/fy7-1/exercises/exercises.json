@@ -112,6 +112,45 @@
       "answer": 51.4,
       "unit": "µT",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-1-L1-09",
+      "level": 1,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "A student examines a bar magnet on a table; its ends are marked with the poles $\\text{N}$ and $\\text{S}$. The student uses a compass and iron filings and records five statements about the observations. Near the magnet the Earth's magnetic field is much weaker than the field of the magnet.\n\nDecide which statements are true and which are false.",
+      "answer": "1 false, 2 false, 3 true, 4 true, 5 false",
+      "unit": "",
+      "tolerance": 0.02,
+      "statements": [
+        {
+          "text": "When a short piece is sawn off the $\\text{N}$ end of the magnet, the long piece that remains has only a south pole $\\text{S}$.",
+          "true": false,
+          "feedback": "False: the poles of a magnet always occur in pairs. A new north pole forms at the cut, so the long piece still has both $\\text{N}$ and $\\text{S}$, and so does the short piece."
+        },
+        {
+          "text": "Beside the side of the magnet, at its middle, the north end of a compass needle points towards the $\\text{N}$ end of the magnet.",
+          "true": false,
+          "feedback": "False: outside the magnet the field lines go from the north pole to the south pole. Beside the side the field therefore points towards the $\\text{S}$ end, and the north end of the needle turns in the direction of the field."
+        },
+        {
+          "text": "Inside the magnet the field lines go from the south pole to the north pole, so every field line is a closed loop.",
+          "true": true,
+          "feedback": "True: outside the lines go from $\\text{N}$ to $\\text{S}$ and inside from $\\text{S}$ to $\\text{N}$. A line has no beginning and no end, because there is no single magnetic pole."
+        },
+        {
+          "text": "When the magnet is hung from a thread so that it can turn freely, its $\\text{N}$ end turns towards the Earth's magnetic south pole.",
+          "true": true,
+          "feedback": "True: unlike poles attract each other, so the $\\text{N}$ end turns towards the Earth's magnetic south pole. It is near the geographic north pole, so the $\\text{N}$ end points north."
+        },
+        {
+          "text": "When a second magnet is brought onto the table, the field lines of the two magnets can cross each other between them.",
+          "true": false,
+          "feedback": "False: the field is the vector sum of the fields of the two magnets, and at each point it has only one direction. Therefore the field lines of the total field never cross each other."
+        }
+      ]
     }
   ],
   "level2": [

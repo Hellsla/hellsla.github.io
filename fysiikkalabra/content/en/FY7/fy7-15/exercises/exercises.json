@@ -87,6 +87,36 @@
       "answer": 55.5915,
       "unit": "°",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-15-L1-09",
+      "level": 1,
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "text": "In five situations light passes through one or two ideal polarisers. The intensities are example values. The angle is measured from the polarisation direction of the incoming light or between the transmission directions of the polarisers.\n\nSituation A: polarised light $600\\,\\text{W/m}^2$, one polariser at an angle of $60.0^\\circ$.\n\nSituation B: unpolarised light $400\\,\\text{W/m}^2$, one polariser.\n\nSituation C: polarised light $320\\,\\text{W/m}^2$, one polariser at an angle of $30.0^\\circ$.\n\nSituation D: unpolarised light $800\\,\\text{W/m}^2$, two polarisers, with an angle of $60.0^\\circ$ between their transmission directions.\n\nSituation E: polarised light $500\\,\\text{W/m}^2$, two polarisers. The first is at an angle of $45.0^\\circ$ and the second at an angle of $90.0^\\circ$ to the polarisation direction of the light.\n\nCalculate the intensity that passes through the last polariser in each situation, and put the situations in order.",
+      "prompt": "Put the situations in order of the intensity passing through the last polariser, from the smallest to the largest.",
+      "order": [
+        {
+          "text": "Situation D"
+        },
+        {
+          "text": "Situation E"
+        },
+        {
+          "text": "Situation A"
+        },
+        {
+          "text": "Situation B"
+        },
+        {
+          "text": "Situation C"
+        }
+      ],
+      "answer": "Situation D ($100\\,\\text{W/m}^2$), situation E ($125\\,\\text{W/m}^2$), situation A ($150\\,\\text{W/m}^2$), situation B ($200\\,\\text{W/m}^2$), situation C ($240\\,\\text{W/m}^2$).",
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level2": [

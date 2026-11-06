@@ -225,6 +225,41 @@
           "correct": true
         }
       ]
+    },
+    {
+      "id": "fy7-13-L2-08",
+      "level": 2,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "The light of a red laser, with a wavelength of $650\\,\\text{nm}$, hits perpendicularly a grating with $100$ lines per millimetre. The screen is $2.00\\,\\text{m}$ from the grating, perpendicular to the beam. The first-order maximum is $13.0\\,\\text{cm}$ from the central maximum on the screen.\n\nA student replaces the grating with one that has $300$ lines per millimetre and moves the screen to a distance of $1.00\\,\\text{m}$ from the grating. The laser stays the same.\n\nHow does the distance of the first-order maximum from the central maximum change?",
+      "answer": "The distance grows to about $1.5$ times the original.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The distance grows to about $6$ times the original.",
+          "feedback": "Here the effect of the grating has been read correctly, but the move of the screen the wrong way round. The angle does not depend on the position of the screen, so at the same angle $x = L\\tan\\theta$ halves when $L$ halves."
+        },
+        {
+          "text": "The distance grows to about $3$ times the original.",
+          "feedback": "Here only the change of the grating has been taken into account. The screen also moves half as close, and at the same angle the maximum is then closer to the central maximum, because $x = L\\tan\\theta$."
+        },
+        {
+          "text": "The distance grows to about $1.5$ times the original.",
+          "correct": true,
+          "feedback": "Correct: the denser grating makes the angle about three times as large and the closer screen halves the distance, so $x$ grows from $13.0\\,\\text{cm}$ to about $19.9\\,\\text{cm}$."
+        },
+        {
+          "text": "The distance decreases to about a half.",
+          "feedback": "Here it has been assumed that the direction of the maximum depends only on the wavelength of the laser. The direction is determined by the grating equation $d\\sin\\theta = k\\lambda$, so a grating constant $d$ that has become a third of the original makes the angle larger."
+        },
+        {
+          "text": "The distance decreases to about a sixth.",
+          "feedback": "Here the denser grating has been assumed to bend the light less. Three times the line density makes the grating constant $d$ a third of the original, so $\\sin\\theta = \\lambda : d$ becomes three times as large."
+        }
+      ]
     }
   ],
   "level3": [
