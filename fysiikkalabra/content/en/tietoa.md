@@ -30,7 +30,7 @@ The pedagogical decisions and the responsibility for the content, however, are m
 
 ## Author
 
-I am **Lauri Hellsten**, a teacher of physics, chemistry and mathematics from Espoo. I have worked for a long time in science education and in developing digital learning materials.
+I am **Lauri Hellsten**, a teacher of physics and mathematics from Espoo. I have worked for a long time in science education and in developing digital learning materials.
 
 Ruukkilabra is my own learning material project. Although its starting point is the future teaching at Kiviruukki upper secondary school, the material is also meant for other teachers and students to use.
 
