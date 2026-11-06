@@ -344,7 +344,7 @@
     {
      "text": "Lähtökorkeus vaikuttaa matkaan, koska korkeuden kaksinkertaistus pidensi matkaa yli $19\\,\\text{m}$.",
      "correct": true,
-     "feedback": "Oikein: kevyemmällä pulkalla matka kasvoi $20{,}6\\,\\text{m}$ ja raskaammalla $19{,}2\\,\\text{m}$. Molemmat erot ovat noin kaksikymmenkertaisia epävarmuuteen $1{,}0\\,\\text{m}$ nähden ja paljon suurempia kuin $2\\Delta x$, joten epävarmuusvälit eivät mene päällekkäin ja kasvu on todellista."
+     "feedback": "Oikein: kevyemmällä pulkalla matka kasvoi $20{,}6\\,\\text{m}$ ja raskaammalla $19{,}2\\,\\text{m}$. Erot ovat paljon suurempia kuin $2\\Delta x = 2{,}0\\,\\text{m}$, joten epävarmuusvälit eivät mene päällekkäin ja kasvu on todennäköisesti todellista."
     },
     {
      "text": "Massa ei vaikuta matkaan, koska samalta korkeudelta mitatut matkat eroavat vain $0{,}7\\,\\text{m}$.",

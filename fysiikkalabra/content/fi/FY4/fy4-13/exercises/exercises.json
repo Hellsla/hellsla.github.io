@@ -261,18 +261,18 @@
         "reasoning"
       ],
       "text": "Kitkattomalla pöydällä on kärry, jonka massa on $1{,}6\\,\\text{kg}$. Siihen sidottu kevyt ja venymätön lanka kulkee pöydän reunalla olevan kevyen ja kitkattoman väkipyörän yli, ja langan päässä roikkuu punnus, jonka massa on $0{,}40\\,\\text{kg}$. Kappaleet päästetään liikkeelle levosta, ja ilmanvastus jätetään huomiotta.\n\nSitten koe tehdään toisin päin: pöydällä on $0{,}40\\,\\text{kg}$:n kärry ja langan päässä roikkuu $1{,}6\\,\\text{kg}$:n punnus. Miten langan jännitysvoima $T$ muuttuu, kun toista koetta verrataan ensimmäiseen?",
-      "answer": "Jännitysvoima pysyy yhtä suurena kuin ensimmäisessä kokeessa.",
+      "answer": "Jännitysvoima pysyy ennallaan.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Jännitysvoima kasvaa nelinkertaiseksi.",
+          "text": "Jännitysvoima nelinkertaistuu.",
           "feedback": "Tässä jännitysvoima on oletettu riippuvan punnuksen painoksi, joka kasvaa nelinkertaiseksi. Kun kappaleet kiihtyvät, punnuksen kokonaisvoima osoittaa alas, joten $T$ on pienempi kuin punnuksen paino."
         },
         {
-          "text": "Jännitysvoima pysyy yhtä suurena kuin ensimmäisessä kokeessa.",
+          "text": "Jännitysvoima pysyy ennallaan.",
           "correct": true,
-          "feedback": "Oikein: kummassakin kokeessa $T \\approx 3{,}1\\,\\text{N}$."
+          "feedback": "Oikein: kun jännitysvoima lasketaan kummassakin kokeessa liikeyhtälöistä, tulos on sama, $T \\approx 3{,}1\\,\\text{N}$. Valitse seuraavaksi perustelu, joka selittää, miksi massojen vaihto ei muuta sitä."
         },
         {
           "text": "Jännitysvoima pienenee neljäsosaan.",

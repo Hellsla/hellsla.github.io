@@ -240,11 +240,11 @@
       "choices": [
         {
           "text": "$20\\,\\text{kW}$",
-          "feedback": "Tulos syntyy, kun teho lasketaan verrannolliseksi nopeuteen $v$ eikä sen kolmanteen potenssiin. Kun nopeus on $10\\,\\text{m/s}$, lukuarvo $10^3$ on $100$ kertaa $10$, joten teho on satakertainen."
+          "feedback": "Tulos syntyy, kun teho lasketaan verrannolliseksi nopeuteen $v$. Silloin mukana on vain sekunnissa roottorin läpi virtaavan ilman massa $\\rho A v$, mutta myös ilmakilogramman liike-energia $\\tfrac{1}{2}v^2$ kasvaa nopeuden mukana, joten $P \\propto v^3$. Kun nopeus on $10\\,\\text{m/s}$, lukuarvo $10^3$ on $100$ kertaa $10$."
         },
         {
           "text": "$0{,}2\\,\\text{MW}$",
-          "feedback": "Tulos syntyy, kun kaavaan sijoitetaan $v^2$. Nopeuden neliö kuvaa yhden ilmakilogramman liike-energiaa, mutta myös sekunnissa roottorin läpi virtaava ilman massa kasvaa nopeuden mukana, joten teho on $\\propto v^3$."
+          "feedback": "Tulos syntyy, kun teho lasketaan verrannolliseksi neliöön $v^2$. Silloin mukana on vain ilmakilogramman liike-energia $\\tfrac{1}{2}v^2$, mutta myös sekunnissa roottorin läpi virtaavan ilman massa $\\rho A v$ kasvaa nopeuden mukana, joten $P \\propto v^3$."
         },
         {
           "text": "$2\\,\\text{MW}$",

@@ -356,7 +356,7 @@ $40{,}2\,\text{m} - 19{,}6\,\text{m} = 20{,}6\,\text{m}$
 
 $39{,}5\,\text{m} - 20{,}3\,\text{m} = 19{,}2\,\text{m}$
 
-Molemmat erot ovat noin kaksikymmenkertaisia epävarmuuteen $1{,}0\,\text{m}$ nähden ja paljon suurempia kuin $2\Delta x = 2{,}0\,\text{m}$, joten epävarmuusvälit ovat selvästi erillään, joten lähtökorkeusvaikuttaa matkaan. Muut päätelmät eivät kestä. Samalta korkeudelta mitattujen matkojen erot ovat
+Molemmat erot ovat noin kaksikymmenkertaisia epävarmuuteen $1{,}0\,\text{m}$ nähden ja paljon suurempia kuin $2\Delta x = 2{,}0\,\text{m}$, joten epävarmuusvälit ovat selvästi erillään, ja siksi lähtökorkeus vaikuttaa matkaan. Muut päätelmät eivät kestä. Samalta korkeudelta mitattujen matkojen erot ovat
 
 $20{,}3\,\text{m} - 19{,}6\,\text{m} = 0{,}7\,\text{m}$
 
