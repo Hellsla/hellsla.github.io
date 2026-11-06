@@ -1,21 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: b07176193a006b48
+CONTENT-HASH: 32e78172ab301d83
 
 ## Blocking
 (none)
 
 ## Polish
-- fy5-3-L1-07 solution, Vastaus: "Tulos annetaan kahdella merkitsevällä numerolla, kuten sen pyöristetyssä muodossa ilmoitetaan" is circular. Write: "0,020 s; pyörimistaajuus 3000 1/min on annettu pyöristettynä, joten kaksi numeroa riittää."
-- fy5-3-L2-06 table: "Matala", "Paikannus", "Geostat." are terse; name them in the task (esim. "matala rata, paikannussatelliitti, geostationaarinen satelliitti") so the box instruction "geostationaarisen" maps to a row without guessing.
-- fy5-3-L3-04: the Cape Canaveral row is used only in a); say so or use it in b)/c) (e.g. compare all three) so the table has no idle data.
-- fy5-3-L3-05 b): the spiral-length model (N times circumference at mean radius) is stated in the task; fine, but the solution could add one line that this is exact for an arithmetic spiral.
+- exercises.json:114 — "ikään kuin karusellin kaikilla kohdilla olisi sama ratanopeus" is unclear as a diagnosis of the "puolittuu" pick — "Tässä on otettu huomioon vain pyörimistaajuus. Ratanopeus riippuu myös säteestä: reunalla lapsi kiertää suurempaa ympyrää."
+- exercises.json:92 — "pysyy samana" is the only option that is not a change, and the numbers 2 and 1/2 invite the product; a fifth option "Ratanopeus pienenee neljäsosaan" would make the factor less guessable. Optional.
 
 ## Checked
-- Counts 8/7/5 = 20; all new ids have complete model solutions.
-- Recomputed and match: 0,020 s; 0,21 mm/s; mean 41,2 s -> T 4,12 s -> 3,2 m/s; satellites 7,59 / 3,87 / 3,07 km/s; 16,1 -> 16 m/s (student's 32 m/s = diameter used as radius); launch speeds 463 / 408 / 213 m/s, Δ = 250 m/s, 6,0 %; CD f 458 -> 198 1/min, N 20 625, 5,4 km, 75 min.
-- All inside FY5-3 (T, f, v = 2πr/T); r = R cos φ is given in the task, no gravitation or a_n used.
-- Plan coverage: multi-turn timing experiment (L2-05), satellite data (L2-06), radius-vs-diameter error (L2-07), Earth rotation by latitude (L3-04); conceptual MC on velocity direction (L1-06).
-- L1-06 distractors target the real misconceptions (towards centre, outward force, constant direction) with repairing feedback.
-- Level 3 tasks are multi-step modelling (YO style) and not duplicates of L3-01..03.
-- Finnish correct; units and case after number+unit fine.
-- Captures only at 1280 px; no clipping seen.
+- Text only (no renders). New task fy5-3-L1-09 (type 6, prediction): v = 2πrf, ratios 2,0 and 0,50 give 1,0; arithmetic in solution checked, including 2,0 m/s both times.
+- Distractors each carry one real error (only r, only f, f confused with T); T mistake is explained without the task mentioning T.
+- Direction stated ("alkutilanteeseen verrattuna"); no unit conversion needed and solution says why.
+- Correct feedback does not add extra reasoning; within chapter (v = 2πrf, 1/min).
+- No formula chain over 300 px; Finnish and compound words correct.

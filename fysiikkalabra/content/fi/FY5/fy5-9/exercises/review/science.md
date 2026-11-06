@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: a36f0c50d4b793b9
+CONTENT-HASH: 628ca4af401209e3
 
 ## Blocking
 
 ## Polish
+- fy5-9/exercises/exercises.json:20 (L2-08, correct reason and reason 1 feedback) and solutions.md:191 — "jousen voima riippuu vain poikkeamasta" and "Jousen voima −kx on Kuussa sama". For a vertical spring, the spring force at equilibrium equals the weight, which is smaller on the Moon. It is the net restoring force about the shifted equilibrium that is −kx. Write "jousivärähtelijän palauttava voima $-kx$ riippuu vain poikkeamasta tasapainoasemasta", which matches the lesson's "paino siirtää vain tasapainoasemaa".
+- exercises.json:20, choice 4 feedback — "Tässä on sekoitettu massa ja paino" does not describe the mistake. The mistake is assuming that the pendulum depends on mass. Suggest: "Tässä on oletettu, että heilurinkin jaksonaika riippuu massasta."
 
 ## Checked
-- Round 1 polish all fixed: L2-06 now 20 N/m, two figures from t₁₀ (box value 20,14 within tolerance); L3-04 Järkevyys now a real model check (k·m/(m+m₀): 25,1·50/71 = 17,7 N/m, 25,1·300/321 = 23,5 N/m, both recomputed); L3-05 c) gives the direction (mgα > mg sin α → more work → 0,5988 > 0,5981 m/s), correct.
-- L1-07: correct option now gives the mechanism (stiffer spring accelerates more); exactly one correct, distractor feedback unchanged and right.
-- L1-08: new distractor "pitenee … hitaammin" is wrong and its feedback correct; one correct option.
-- L2-05: fit wording (line through origin and close to (1,00 m; 4,04 s²), slope from far-apart points on the fitted line) meets the guardrail; axis scale fine.
-- L3-04 tolerance 0,04 → 0,05 covers the least-squares value 25,12 N/m and hand fits; answer 25,15 unchanged.
-- answers.py run: all 17 numeric answers equal exercises.json and my round 1 recomputation (no answer changed).
-- Plan mismatch in docs/exercise-bank/FY5.md (round 1 polish) is a plan file, not this set; no physics impact.
-- No new errors in the diff; scope, notation and levels unchanged.
-- Hash identical at start and end.
+- New task L2-08 (type 1, two-stage): √(9,81/1,62) = 2,461, so T_K = 2,46 s. The spring period stays 1,00 s, because T = 2π√(m/k) has no g. The answer string equals the correct option.
+- Exactly one option and one reason are correct. Reason 4 is a true statement that does not explain the answer, as the type requires. The correct option's feedback gives the numbers but not the reason.
+- The distractors catch the lesson's warned mass idea (choice 4, reason 3) and a missing square root (×6). Lengths and hedging are similar across the options, and no option stands out by form.
+- The assumptions are stated in the task: small swings, no air resistance, the same length, spring and masses.
+- The phantom-aligned ratio chain in the solution is three short lines. From the text it fits 300 px. I did not render it.
+- answers.py ran once. All numeric answers agree with exercises.json within tolerance.
+- The hash was the same at the start and at the end.

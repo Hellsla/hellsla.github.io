@@ -1,17 +1,14 @@
-VERDICT: PASS
-CONTENT-HASH: 44dcfc0bfd9ecb00
+VERDICT: FAIL
+CONTENT-HASH: 06bb76b9d2209c38
 
 ## Blocking
-(none)
+- exercises.json:271 (fy5-8-L2-08) — the correct option is identifiable by form: it is the only one without a "koska" clause and the only one that mentions measurement uncertainty, which the task text has just stressed — rewrite all four as "X, koska Y" with similar length, and let a distractor also mention the uncertainty (e.g. "Jousivakiota ei voi päätellä, koska voimamittarin epävarmuus on liian suuri" or "…25,5 N/m, koska epävarmuus on pieni").
 
 ## Polish
-- exercises.json L1-08 — still reads two points of a line like L1-04; shares figure ex-kaksi with L2-04. Consider asking which spring is stiffer.
-- figures.py ex-kaksi description still cites the point (0,10 m; 2,5 N); consistent with the line (25 N/m), but the solution now reads (0,08; 2,0) and (0,12; 3,0): fine.
-- exercises.json L2-05 answer unit/format 24,4 vs solution "24 also OK" — consistent, tolerance 0,03 now rejects the 23,4 N/m error.
+- exercises.json:263 — the "jousivakio kasvaa venymän mukana" distractor is weak; the force-up/k-up confusion could rather be "jousivakio on suurin viimeisellä rivillä, koska voima on siinä suurin".
+- exercises.json:222 — comparing each row's F/x with its uncertainty ±0,05 N / x is taught only in the solution, not in the chapter text (which says only "mittausepävarmuuden vuoksi"); acceptable at L2 if earlier courses cover it, otherwise add one sentence to the task.
 
 ## Checked
-- Rewritten MC L1-06: one correct option, distractors misconception-based, order changed.
-- L1-08 solution points (0,08 m; 2,0 N) and (0,12 m; 3,0 N) lie on the 25 N/m line and on the figure's grid.
-- L2-05 fit derivation added (24,4 from fit through origin); tolerance tightened.
-- L3-04 now speaks of work done and notes hysteresis (upper bound for recoverable energy); 0,255 J unchanged.
-- Counts 8/7/5; all answers recomputed and match.
+- Text only (no renders). New task fy5-8-L2-08 (type 10, data): all five ratios and uncertainties recomputed (24,5±2,5; 25,5±1,3; 24,5±0,8; 25,0±0,6; 25,1±0,5), 25 N/m lies inside every interval; slope 25 N/m correct.
+- Distractors catch the unit slip (N/cm) and over-reading a difference within uncertainty; caption short, units consistent.
+- Within chapter (F=kx, slope as k); solution blocks are short lines (fit 300 px); Finnish and compounds correct.

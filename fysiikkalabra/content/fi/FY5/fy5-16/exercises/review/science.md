@@ -1,16 +1,16 @@
-VERDICT: PASS
-CONTENT-HASH: d62b2b53d0757222
+VERDICT: FAIL
+CONTENT-HASH: c33e72bc943a0fcc
 
 ## Blocking
+- content/fi/FY5/fy5-16/exercises/exercises.json:301 — "Lukema 85 dB on epävarmuuden vuoksi välillä 84–86 dB" says the reading itself lies in a range and states the range as certain. The reading is 85 dB; only the true level is uncertain, and only *todennäköisesti* inside the interval (guardrails, Measurement and data: "never for certain") — fix: "Epävarmuuden vuoksi todellinen taso voi olla 84–86 dB, joten ylempi toiminta-arvo voi ylittyä." (solutions.md:97 already says "voi todellisuudessa olla 86 dB"; make the two match.)
 
 ## Polish
+- content/fi/FY5/fy5-16/exercises/exercises.json:297 — the feedback says the uncertainty of a difference "on 2ΔL", but solutions.md:88 says "enintään 2ΔL" — use the same words in both (e.g. "on enintään").
+- content/fi/FY5/fy5-16/exercises/exercises.json:291 — the correct option is the only one with a hedge ("noin"), a mild form cue (FY2 lesson) — add "noin" to a distractor too, or drop it here (6, 6 and 5 dB are given).
 
 ## Checked
-- Round-3 Polish resolved: L2-07 now uses 109 dB, so it no longer repeats the inquiry's 103 dB → 7,5 min. The coordinator confirmed that the inquiry has no 109, 1,875 or 1,9, and that the "109" hits in lesson.md are SVG path coordinates. In the exercise set, 109 dB occurs only in L2-07 (task and solution).
-- L2-07 recomputed: n = (109 − 85)/3 = 8; t_sall = 480 min / 256 = 1,875 min ≈ 1,9 min. The student's answer is 8 h : 8 = 1,0 h = 60 min exactly, so the earlier mismatch between 1,3 h and 80 min is gone.
-- answers.py round(t_allowed(109)·60, 1) = 1,9; exercises.json has 1.9 min with tolerance 0.02. An unrounded 1,875 is off by 1,3 % and is still accepted. Two significant figures fit the data.
-- Solution: the unknown is solved symbolically before substitution, the conversion 8 h = 480 min is right, and 2⁸ = 256 is right. a) names the error correctly: dividing by n instead of 2ⁿ.
-- Round-5 wording: Vastaus a) "jaetaan kahdella kahdeksan kertaa eli kaikkiaan luvulla 256" is right (2⁸ = 256). In the Järkevyys, 60 min / 1,875 min = 32 is exact; three halvings take 8 h to 1 h and five more take 60 min to 60/32 = 1,875 min, eight in all. Under t₀/n each extra step really shortens the time less. The inquiry's 7,5 min is no longer printed even as an intermediate value.
-- "opiskelija" is used throughout; the task text and the solution agree (24 dB, 8 steps, 1,0 h).
-- The rest of the set is unchanged since round 3: the other 15 numeric answers recomputed in round 3 still match answers.py and exercises.json.
-- The known eq-chain collapse on main is not counted as a finding.
+- New task L2-08 (type 10, Mittausdata), checked against the text only, not renders: drops of 6, 6 and 5 dB per doubling of distance; expected 10·lg 4 = 6,02 dB. The largest deviation, 1 dB, is less than the 2 dB uncertainty of a difference, so the correct option follows from the data. Exactly one option is correct.
+- Distractors: halving of the level (the log scale read linearly), a "slower attenuation" claim from a difference within the uncertainty (type 10's intended trap), and a safety conclusion from a borderline reading. The last one's feedback correctly adds that the allowed-time formula is an estimate, not a guarantee, matching the lesson.
+- Point source, open field and ΔL = 1 dB are stated in the task; the data are realistic for a compressor. The 6 dB rule comes from the brief and the prerequisite fy5-15.
+- The data use decimal points, as the rest of the set does. The caption is short.
+- answers.py ran, and its 16 numeric answers are unchanged. L2-08 has a text answer and no entry. The rest of the set was PASS before and is unchanged.
