@@ -240,6 +240,42 @@
       "unit": "kN",
       "tolerance": 0.02,
       "fbd": "error"
+    },
+    {
+      "id": "fy5-4-L2-08",
+      "level": 2,
+      "text": "Vuoristoradan vaunu kulkee pystysuoran, ympyrän muotoisen silmukan ylimmän kohdan läpi. Vaunu on silloin ylösalaisin radan alapuolella, ja rata painaa vaunua. Ylimmässä kohdassa vaunun normaalikiihtyvyys on $a_\\text{n} = 1{,}5\\,g$. Tässä $g$ on putoamiskiihtyvyys. Ilmanvastus ja kitka jätetään huomiotta.\n\nKuvioissa $\\overline{G}$ on vaunun paino ja $\\overline{N}$ on radan tukivoima. Nuoli $\\overline{F}_\\text{kp}$ on voima, jota kutsutaan keskipakoisvoimaksi. Nuoli $\\overline{v}$ on vaunun nopeus. Kaikki kuviot on piirretty samassa mittakaavassa.\n\nMikä voimakuvio esittää oikein vaunuun vaikuttavat voimat silmukan ylimmässä kohdassa?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "fbd": "select",
+      "answer": "Voimakuvio C",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Voimakuvio A",
+          "figure": "fy5-4/pick-ylos",
+          "feedback": "Tässä tukivoima on piirretty ylöspäin kuin lattian tukivoima. Rata on vaunun yläpuolella, joten se työntää vaunua alaspäin. Ylöspäin osoittava $\\overline{N}$ antaisi kokonaisvoimaksi vain $0{,}5\\,G$. Kiihtyvyys vaatii kuitenkin $1{,}5\\,G$."
+        },
+        {
+          "text": "Voimakuvio B",
+          "figure": "fy5-4/pick-keskipako",
+          "feedback": "Keskipakoisvoimaa ei ole. Mikään kappale ei vedä vaunua ylöspäin, poispäin silmukan keskipisteestä. Tässä kuviossa voimat kumoavat toisensa, vaikka vaunu kiihtyy kohti keskipistettä. Kokonaisvoima ei siis voi olla nolla."
+        },
+        {
+          "text": "Voimakuvio C",
+          "figure": "fy5-4/pick-alas",
+          "correct": true,
+          "feedback": "Oikein: vaunuun vaikuttavat vain Maa ja rata. Kumpikin voima osoittaa alas kohti silmukan keskipistettä. Kokonaisvoima on $G + N = 1{,}5\\,mg$, joten tukivoima on $N = 0{,}5\\,G$."
+        },
+        {
+          "text": "Voimakuvio D",
+          "figure": "fy5-4/pick-nopeus",
+          "feedback": "Nopeus ei ole voima, joten sen nuoli $\\overline{v}$ ei kuulu voimakuvioon. Liike ei tarvitse eteenpäin työntävää voimaa. Vaunu jatkaa vauhdillaan, ja voimat vain kääntävät nopeuden suuntaa kohti keskipistettä."
+        }
+      ]
     }
   ],
   "level3": [

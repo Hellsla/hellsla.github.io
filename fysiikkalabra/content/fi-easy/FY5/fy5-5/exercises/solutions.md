@@ -258,3 +258,25 @@ N_\text{b} &= 62{,}0\,\text{kg} \cdot (9{,}81 - 0{,}5397)\,\tfrac{\text{m}}{\tex
 ```
 **Vastaus:** Vaa'an lukema olisi päiväntasaajalla $575\,\text{N}$. Jakson $6{,}0\,\text{h}$ kaksi merkitsevää numeroa rajoittaa tarkkuutta, joten myös $570\,\text{N}$ kelpaa. Kohta a: $a_\text{n} = 0{,}0337\,\text{m/s}^2$ ja vaa'an lukema on $606\,\text{N}$. Navalla lukema olisi $mg = 608\,\text{N}$. Kohta c: päiväntasaajalla kokonaisvoiman $mg - N$ on oltava $m a_\text{n}$ kohti keskipistettä ($m a_\text{n} = 2{,}09\,\text{N}$). Siksi $N = mg - m a_\text{n}$ on pienempi kuin $mg$. Navalla ihminen ei kierrä ympyrärataa, joten $a_\text{n} = 0$ ja $N = mg$. Vaaka näyttää siis vähemmän, vaikka gravitaatiovoima on oletuksen mukaan yhtä suuri.
 **Järkevyys:** Jakso on neljäsosa vuorokaudesta, joten nopeus on nelinkertainen ja $a_\text{n}$ kasvaa $4^2 = 16$-kertaiseksi: $16 \cdot 0{,}0337\,\text{m/s}^2 \approx 0{,}54\,\text{m/s}^2$. Lukema pienenee tällöin $62{,}0\,\text{kg} \cdot 0{,}54\,\text{m/s}^2 \approx 33\,\text{N}$ eli noin $5{,}5\,\%$ arvosta $mg = 608\,\text{N}$, ja $608\,\text{N} - 33\,\text{N} \approx 575\,\text{N}$. Lukema on siis pienempi kuin kohdassa a ($606\,\text{N}$) mutta selvästi positiivinen.
+
+## fy5-5-L2-08
+**Kysytty:** miten asteroidien kiihtyvyyksien suuruudet $a_{\text{A}}$ ja $a_{\text{B}}$ suhtautuvat toisiinsa liikkeen alussa, ja mikä perustelu selittää sen.
+**Periaate:** Gravitaatio on vuorovaikutus. Newtonin kolmannen lain mukaan asteroidit vetävät toisiaan yhtä suurilla ja vastakkaissuuntaisilla voimilla. Voiman suuruus saadaan gravitaatiolaista $F = \gamma \tfrac{m_{\text{A}} m_{\text{B}}}{r^2}$. Kunkin asteroidin kiihtyvyys saadaan Newtonin toisesta laista $a = \tfrac{F}{m}$.
+**Mallivastaus:** Kumpaankin asteroidiin vaikuttaa sama voima:
+
+$$\begin{aligned}
+&F = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\
+&\quad \cdot \frac{8{,}0 \cdot 10^{12}\,\text{kg} \cdot 2{,}0 \cdot 10^{12}\,\text{kg}}{(5{,}0 \cdot 10^{3}\,\text{m})^2} \\
+&\approx 4{,}27 \cdot 10^{7}\,\text{N}
+\end{aligned}$$
+
+Kiihtyvyydet ovat
+
+$$\begin{aligned}
+&a_{\text{A}} = \frac{4{,}27 \cdot 10^{7}\,\text{N}}{8{,}0 \cdot 10^{12}\,\text{kg}} \\
+&\phantom{a_{\text{A}}} \approx 5{,}3 \cdot 10^{-6}\,\text{m/s}^2 \\
+&a_{\text{B}} = \frac{4{,}27 \cdot 10^{7}\,\text{N}}{2{,}0 \cdot 10^{12}\,\text{kg}} \\
+&\phantom{a_{\text{B}}} \approx 2{,}1 \cdot 10^{-5}\,\text{m/s}^2
+\end{aligned}$$
+
+Kiihtyvyyksien suhde on $\tfrac{a_{\text{B}}}{a_{\text{A}}} = \tfrac{m_{\text{A}}}{m_{\text{B}}} = 4$, eli asteroidin B kiihtyvyys on neljä kertaa A:n kiihtyvyys. Perustelu: voimat ovat yhtä suuret, ja sama voima kiihdyttää kevyempää kappaletta enemmän. Raskaampi asteroidi ei vedä kevyempää voimakkaammin. Myöskään sääntö ”kaikki kappaleet putoavat samalla kiihtyvyydellä” ei päde tässä. Kumpikin asteroidi on toisen asteroidin kentässä, ja kentät ovat eri suuret. Etäisyys on molemmille sama, joten se ei vaikuta kiihtyvyyksien suhteeseen.

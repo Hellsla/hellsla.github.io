@@ -143,6 +143,25 @@
 **Answer:** $0.21\,\text{mm/s}$, two significant figures like the radius $12\,\text{cm}$ and the period $1.0\,\text{h}$.
 **Reasonableness:** In an hour the tip travels the circumference, about $754\,\text{mm}$. At the constant speed $0.21\,\text{mm/s}$ the distance travelled in an hour is $0.2094\,\text{mm/s} \cdot 3600\,\text{s} = 754\,\text{mm}$, the same as the circumference. The hand moves so slowly that the motion cannot be seen by eye.
 
+## fy5-3-L1-09
+**Find:** how the tangential speed $v$ of the child changes when the radius increases from $1.2\,\text{m}$ to $2.4\,\text{m}$ and the frequency of rotation decreases from $16\,\tfrac{1}{\text{min}}$ to $8.0\,\tfrac{1}{\text{min}}$.
+**Principle:** In both situations the child is in uniform circular motion, and the tangential speed is $v = 2\pi r f$. The tangential speed is therefore directly proportional to both the radius and the frequency of rotation, and the changes of both must be taken into account. When the ratio is calculated, the frequency of rotation does not need to be converted to the unit $\tfrac{1}{\text{s}}$, because the conversion factor cancels.
+**Model answer:** The radius doubles:
+
+$\dfrac{r_2}{r_1} = \dfrac{2.4\,\text{m}}{1.2\,\text{m}} = 2.0$
+
+The frequency of rotation is halved:
+
+$\dfrac{f_2}{f_1} = \dfrac{8.0\,\tfrac{1}{\text{min}}}{16\,\tfrac{1}{\text{min}}} = 0.50$
+
+The ratio of the tangential speeds:
+
+$\dfrac{v_2}{v_1} = \dfrac{2\pi r_2 f_2}{2\pi r_1 f_1}$
+
+$\dfrac{v_2}{v_1} = 2.0 \cdot 0.50$, that is, $\dfrac{v_2}{v_1} = 1.0$
+
+The tangential speed stays the same. Check: at the start $f_1 = \tfrac{16}{60\,\text{s}} \approx 0.267\,\tfrac{1}{\text{s}}$ and $v_1 = 2\pi \cdot 1.2\,\text{m} \cdot 0.267\,\tfrac{1}{\text{s}} \approx 2.0\,\text{m/s}$. At the end $f_2 = \tfrac{8.0}{60\,\text{s}} \approx 0.133\,\tfrac{1}{\text{s}}$ and $v_2 = 2\pi \cdot 2.4\,\text{m} \cdot 0.133\,\tfrac{1}{\text{s}} \approx 2.0\,\text{m/s}$. The increase of the radius alone would double the tangential speed, and the slowing down alone would halve it. The period doubles, but the tangential speed is proportional to the frequency of rotation and not to the period.
+
 ## fy5-3-L2-05
 **Given:** times for ten revolutions $t_{10}$: $41.2\,\text{s}$, $40.6\,\text{s}$, $41.8\,\text{s}$, $40.9\,\text{s}$ and $41.5\,\text{s}$; distance of the seat from the axis $r = 2.1\,\text{m}$
 **Find:** the period $T$ and the speed $v$ of the seat; $v$ in $\text{m/s}$ goes in the answer box

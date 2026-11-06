@@ -87,6 +87,37 @@
       "answer": 0.21,
       "unit": "mm/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-3-L1-09",
+      "level": 1,
+      "text": "Lapsi istuu karusellissa $1{,}2\\,\\text{m}$:n päässä keskipisteestä. Karuselli pyörii tasaisesti pyörimistaajuudella $16\\,\\tfrac{1}{\\text{min}}$. Sitten lapsi siirtyy karusellin reunalle, $2{,}4\\,\\text{m}$:n päähän keskipisteestä. Samaan aikaan karuselli hidastuu. Sen jälkeen se pyörii tasaisesti pyörimistaajuudella $8{,}0\\,\\tfrac{1}{\\text{min}}$. Luvut ovat esimerkkiarvoja.\n\nMiten lapsen ratanopeus muuttuu alkutilanteeseen verrattuna?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "Ratanopeus pysyy samana.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Ratanopeus kasvaa kaksinkertaiseksi.",
+          "feedback": "Tässä on otettu huomioon vain säteen kasvu. Ratanopeus on $v = 2\\pi r f$. Se riippuu siis myös pyörimistaajuudesta, ja pyörimistaajuus puolittuu samaan aikaan."
+        },
+        {
+          "text": "Ratanopeus pysyy samana.",
+          "correct": true,
+          "feedback": "Oikein: säde kaksinkertaistuu ja pyörimistaajuus puolittuu. Siksi tulo $r f$ ja ratanopeus $v = 2\\pi r f$ pysyvät samoina."
+        },
+        {
+          "text": "Ratanopeus puolittuu.",
+          "feedback": "Tässä on otettu huomioon vain pyörimistaajuus, ikään kuin karusellin kaikilla kohdilla olisi sama ratanopeus. Reunalla lapsi kiertää suurempaa ympyrää. Siksi säteen kasvu kasvattaa ratanopeutta."
+        },
+        {
+          "text": "Ratanopeus kasvaa nelinkertaiseksi.",
+          "feedback": "Tässä pyörimistaajuus on sekoitettu kierrosaikaan, joka kaksinkertaistuu. Ratanopeus on suoraan verrannollinen pyörimistaajuuteen. Kun taajuus puolittuu, ratanopeus pienenee."
+        }
+      ]
     }
   ],
   "level2": [

@@ -240,6 +240,42 @@
       "unit": "kN",
       "tolerance": 0.02,
       "fbd": "error"
+    },
+    {
+      "id": "fy5-4-L2-08",
+      "level": 2,
+      "text": "A roller coaster car goes through the topmost point of a vertical, circular loop. The car is then upside down below the track, and the track presses the car. At the topmost point the normal acceleration of the car is $a_\\text{n} = 1.5\\,g$, where $g$ is the acceleration of free fall. Air resistance and friction are neglected.\n\nIn the diagrams $\\overline{G}$ is the weight of the car and $\\overline{N}$ the support force of the track. The arrow $\\overline{F}_\\text{kp}$ is a force named the centrifugal force, and $\\overline{v}$ is the velocity of the car. All the diagrams are drawn to the same scale.\n\nWhich free-body diagram shows correctly the forces acting on the car at the topmost point of the loop?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "fbd": "select",
+      "answer": "Free-body diagram C",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Free-body diagram A",
+          "figure": "fy5-4/pick-ylos",
+          "feedback": "Here the support force has been drawn upwards like the support force of a floor. The track is above the car, so it pushes the car downwards. An upward $\\overline{N}$ would give a net force of only $0.5\\,G$, although the acceleration requires $1.5\\,G$."
+        },
+        {
+          "text": "Free-body diagram B",
+          "figure": "fy5-4/pick-keskipako",
+          "feedback": "There is no centrifugal force: no object pulls the car upwards, away from the centre of the loop. In this diagram the forces cancel each other, although the car accelerates towards the centre, so the net force cannot be zero."
+        },
+        {
+          "text": "Free-body diagram C",
+          "figure": "fy5-4/pick-alas",
+          "correct": true,
+          "feedback": "Correct: only the Earth and the track act on the car, and both forces point down towards the centre of the loop. The net force is $G + N = 1.5\\,mg$, so the support force is $N = 0.5\\,G$."
+        },
+        {
+          "text": "Free-body diagram D",
+          "figure": "fy5-4/pick-nopeus",
+          "feedback": "Velocity is not a force, so its arrow $\\overline{v}$ does not belong in a free-body diagram. The motion does not need a force pushing forward: the car keeps its speed, and the forces only turn the direction of the velocity towards the centre."
+        }
+      ]
     }
   ],
   "level3": [

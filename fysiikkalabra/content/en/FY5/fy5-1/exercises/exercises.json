@@ -109,6 +109,37 @@
       "answer": -9.0,
       "unit": "Nm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-1-L1-09",
+      "level": 1,
+      "text": "A stuck nut starts to turn when the moment of the hand's force about the axis of the nut is $M$. The hand pulls the handle of the spanner at a point whose distance from the centre of the nut is $d$. The force is at an angle $\\alpha$ to the extension of the handle.\n\nThe unit of the moment is $\\text{Nm}$ and that of the distance $\\text{m}$. The sine of the angle $\\sin\\alpha$ is just a number with no unit.\n\nWhich expression has the unit newton ($\\text{N}$), that is, which expression can give the smallest force $F$ with which the nut starts to turn?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "$\\dfrac{M}{d\\sin\\alpha}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "$M d\\sin\\alpha$",
+          "feedback": "The unit of the expression is $\\text{Nm}\\cdot\\text{m} = \\text{N}\\cdot\\text{m}^2$, not newton. The expression would claim that a longer spanner needs a larger force. However, a longer lever arm gives the same moment with a smaller force, because $M = Fr$."
+        },
+        {
+          "text": "$\\dfrac{M}{d\\sin\\alpha}$",
+          "correct": true,
+          "feedback": "Correct: $\\tfrac{\\text{Nm}}{\\text{m}} = \\text{N}$. The expression is obtained by solving the force from the formula of the moment $M = F d\\sin\\alpha$."
+        },
+        {
+          "text": "$M\\sin\\alpha$",
+          "feedback": "The unit of the expression is $\\text{Nm}$, the unit of a moment, not newton. Here the moment has been confused with the force: the moment is the product of the force and the lever arm, so the force is obtained only by dividing the moment by the lever arm."
+        },
+        {
+          "text": "$\\dfrac{d\\sin\\alpha}{M}$",
+          "feedback": "The unit of the expression is $\\tfrac{\\text{m}}{\\text{Nm}} = \\tfrac{1}{\\text{N}}$, not newton. The division has been turned upside down: solved from $M = Fr$, the force is the moment divided by the lever arm."
+        }
+      ]
     }
   ],
   "level2": [

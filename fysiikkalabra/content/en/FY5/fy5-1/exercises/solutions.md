@@ -69,6 +69,27 @@
 **Answer:** $-9.0\,\text{Nm}$, two significant figures like the force $15\,\text{N}$ and the distance $0.60\,\text{m}$. The minus sign tells the direction of rotation.
 **Reasonableness:** Estimate with rounded numbers: $15\,\text{N}\cdot 0.6\,\text{m} = 9\,\text{Nm}$, like the magnitude of the result. The sign is negative because the rotation is clockwise. If the same force turned the rod anticlockwise, the moment would be $+9.0\,\text{Nm}$.
 
+## fy5-1-L1-09
+**Find:** which of the four expressions has the unit newton $\text{N}$, that is, which of them can give the smallest force $F$ with which the nut starts to turn.
+**Principle:** The unit of an expression is obtained by putting the unit of each quantity in its place: $M$ ($\text{Nm}$) and $d$ ($\text{m}$). The sine of an angle is just a number, so it does not change the unit. The expression of a force must be in newtons. In addition, the lever arm of an oblique force is $r = d\sin\alpha$, and the moment is $M = F r$.
+**Model answer:** The correct one is $\dfrac{M}{d\sin\alpha}$. The units of the expressions:
+
+$M d\sin\alpha$: $\text{Nm}\cdot\text{m} = \text{N}\cdot\text{m}^2$
+
+$\dfrac{M}{d\sin\alpha}$: $\dfrac{\text{Nm}}{\text{m}} = \text{N}$
+
+$M\sin\alpha$: $\text{Nm}$, the unit of a moment
+
+$\dfrac{d\sin\alpha}{M}$: $\dfrac{\text{m}}{\text{Nm}} = \dfrac{1}{\text{N}}$
+
+Only the expression $\dfrac{M}{d\sin\alpha}$ has the unit newton. The same result is obtained from the formula of the moment:
+
+$M = F d\sin\alpha$
+
+$F = \dfrac{M}{d\sin\alpha}$
+
+The expression $M d\sin\alpha$ would give a larger force with a longer spanner, although a longer lever arm gives the same moment with a smaller force. In the expression $M\sin\alpha$ the moment has been confused with a force, and in the expression $\dfrac{d\sin\alpha}{M}$ the division is upside down.
+
 ## fy5-1-L2-01
 **Given:** tension of the string $F = 40\,\text{N}$, distance of the handle from the hinges $d = 0.75\,\text{m}$, angle of the string to the plane of the door $\alpha = 35^\circ$
 **Find:** moment $M$ of the string's force about the hinges in the unit $\text{Nm}$

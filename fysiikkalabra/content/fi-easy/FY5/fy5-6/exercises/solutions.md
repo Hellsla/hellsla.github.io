@@ -192,3 +192,20 @@
 **Sijoitus:** $\gamma M = 3{,}98438 \cdot 10^{14}\,\text{m}^3/\text{s}^2$. a) $T_\text{A} = 2\pi\sqrt{\dfrac{(6{,}771 \cdot 10^{6}\,\text{m})^3}{3{,}98438 \cdot 10^{14}\,\text{m}^3/\text{s}^2}} = 5546{,}0\,\text{s} = 92{,}4\,\text{min}$ ja $T_\text{B} = 2\pi\sqrt{\dfrac{(7{,}371 \cdot 10^{6}\,\text{m})^3}{3{,}98438 \cdot 10^{14}\,\text{m}^3/\text{s}^2}} = 6299{,}3\,\text{s} = 105{,}0\,\text{min}$. b) $t = \dfrac{5546{,}0\,\text{s} \cdot 6299{,}3\,\text{s}}{6299{,}3\,\text{s} - 5546{,}0\,\text{s}} = 46\,379\,\text{s} = 46\,379 : 3600\,\text{h} = 12{,}88\,\text{h}$
 **Vastaus:** satelliitit ovat taas samalla suoralla noin $12{,}9\,\text{h}$:n kuluttua, kolme merkitsevää numeroa kuten Maan massassa. Kiertoajat ovat $92{,}4\,\text{min}$ ja $105{,}0\,\text{min}$. Massoja ei tarvita, koska satelliitin massa supistuu liikeyhtälöstä pois.
 **Järkevyys:** Ajassa $46\,379\,\text{s}$ satelliitti A tekee $46\,379 : 5546 \approx 8{,}36$ ja B $46\,379 : 6299 \approx 7{,}36$ kierrosta. Ero on siis yksi kierros. Kiertoajat ovat lähellä ISS:n aikaa $92{,}8\,\text{min}$ (A). Ylempänä (B) kiertoaika on hieman pidempi, kuten pitääkin.
+
+## fy5-6-L1-09
+**Kysytty:** Phoboksen kiertoajan $T$ suuruusluokka, kun radan säde on $r = 9380\,\text{km}$ ja Marsin massa $M = 6{,}42 \cdot 10^{23}\,\text{kg}$.
+**Periaate:** Phobokseen vaikuttaa vain Marsin gravitaatiovoima. Se on ympyräliikkeen kokonaisvoima: $\gamma \tfrac{Mm}{r^2} = \tfrac{mv^2}{r}$. Siitä saadaan ratanopeus $v = \sqrt{\tfrac{\gamma M}{r}}$ ja kiertoaika $T = \tfrac{2\pi r}{v}$. Säde muutetaan metreiksi ennen sijoitusta. Lopuksi sekunnit muutetaan tunneiksi.
+**Mallivastaus:** Säde on $r = 9380\,\text{km} = 9{,}38 \cdot 10^{6}\,\text{m}$.
+
+$$\begin{aligned}
+&\gamma M = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\
+&\quad \cdot 6{,}42 \cdot 10^{23}\,\text{kg} \\
+&\quad = 4{,}285 \cdot 10^{13}\,\text{m}^3/\text{s}^2 \\
+&v = \sqrt{\frac{4{,}285 \cdot 10^{13}\,\text{m}^3/\text{s}^2}{9{,}38 \cdot 10^{6}\,\text{m}}} \\
+&\phantom{v} \approx 2137\,\text{m/s} \\
+&T = \frac{2\pi \cdot 9{,}38 \cdot 10^{6}\,\text{m}}{2137\,\text{m/s}} \\
+&\phantom{T} \approx 2{,}76 \cdot 10^{4}\,\text{s}
+\end{aligned}$$
+
+Tunneiksi muutettuna $T = \tfrac{2{,}76 \cdot 10^{4}\,\text{s}}{3600\,\text{s/h}} \approx 7{,}7\,\text{h}$. Kiertoaika on siis noin $7{,}7\,\text{h}$ eli muutama tunti. Muut vaihtoehdot syntyvät tyypillisistä virheistä. Neliöjuuren unohtaminen antaa noin $0{,}0036\,\text{h}$. Säteen jättäminen kilometreiksi neliöjuuren alle antaa noin $0{,}24\,\text{h}$. Sekuntien jakaminen luvulla $60$ antaa noin $460\,\text{h}$. Tulos on järkevä: ratanopeus $2{,}1\,\text{km/s}$ on pienempi kuin Maan lähellä kiertävän satelliitin. Syy on se, että Marsin massa on noin kymmenesosa Maan massasta.

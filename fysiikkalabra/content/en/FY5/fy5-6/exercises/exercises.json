@@ -87,6 +87,36 @@
       "answer": 29.79,
       "unit": "km/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-6-L1-09",
+      "level": 1,
+      "kind": [
+        "reasoning"
+      ],
+      "text": "Phobos, a moon of Mars, goes round Mars in an almost circular orbit of radius $9380\\,\\text{km}$. The mass of Mars is $6.42 \\cdot 10^{23}\\,\\text{kg}$. What is the order of magnitude of the orbital period of Phobos according to the circular-orbit model?",
+      "answer": "about $7.7\\,\\text{h}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "about $0.0036\\,\\text{h}$",
+          "feedback": "Here the square root has been forgotten: $\\tfrac{\\gamma M}{r}$ is the square of the orbital speed, $v^2$, not the speed $v$. The speed would come out about $4600\\,\\text{km/s}$, so the period becomes far too short."
+        },
+        {
+          "text": "about $0.24\\,\\text{h}$",
+          "feedback": "Here the radius has been put under the square root in kilometres but into the circumference $2\\pi r$ in metres. The speed then comes out $\\sqrt{1000} \\approx 32$ times too large and the period equally too short."
+        },
+        {
+          "text": "about $7.7\\,\\text{h}$",
+          "correct": true,
+          "feedback": "Correct: the orbital speed is $v \\approx 2.1\\,\\text{km/s}$, and the period $T = \\tfrac{2\\pi r}{v} \\approx 2.8 \\cdot 10^{4}\\,\\text{s}$ is about $7.7\\,\\text{h}$."
+        },
+        {
+          "text": "about $460\\,\\text{h}$",
+          "feedback": "Here seconds have been converted to hours by dividing by $60$. Dividing by $60$ gives minutes; an hour has $3600\\,\\text{s}$, so the result is $60$ times too large."
+        }
+      ]
     }
   ],
   "level2": [

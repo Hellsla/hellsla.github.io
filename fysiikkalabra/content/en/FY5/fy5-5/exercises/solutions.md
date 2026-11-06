@@ -258,3 +258,25 @@ N_\text{b} &= 62.0\,\text{kg} \cdot (9.81 - 0.5397)\,\tfrac{\text{m}}{\text{s}^2
 ```
 **Answer:** The reading of the scale at the equator would be $575\,\text{N}$; the two significant figures of the period $6.0\,\text{h}$ limit the accuracy, so $570\,\text{N}$ is also acceptable. Part a: $a_\text{n} = 0.0337\,\text{m/s}^2$ and the reading of the scale is $606\,\text{N}$, whereas at the pole it would be $mg = 608\,\text{N}$. Part c: at the equator the net force $mg - N$ must be $m a_\text{n}$ towards the centre ($m a_\text{n} = 2.09\,\text{N}$), so $N = mg - m a_\text{n}$ is smaller than $mg$. At the pole the person does not move along a circular path, $a_\text{n} = 0$ and $N = mg$. So the scale shows less, although the gravitational force is by assumption equally large.
 **Reasonableness:** The period is a quarter of a day, so the speed is four times as great and $a_\text{n}$ grows $4^2 = 16$-fold: $16 \cdot 0.0337\,\text{m/s}^2 \approx 0.54\,\text{m/s}^2$. The reading then decreases by $62.0\,\text{kg} \cdot 0.54\,\text{m/s}^2 \approx 33\,\text{N}$, that is, about $5.5\,\%$ of $mg = 608\,\text{N}$, and $608\,\text{N} - 33\,\text{N} \approx 575\,\text{N}$. The reading is thus smaller than in part a ($606\,\text{N}$) but clearly positive.
+
+## fy5-5-L2-08
+**Find:** how the magnitudes of the accelerations $a_{\text{A}}$ and $a_{\text{B}}$ of the asteroids compare at the beginning of the motion, and which reason explains it.
+**Principle:** Gravitation is an interaction, so by Newton's third law the asteroids pull each other with forces that are equal in magnitude and opposite in direction. The magnitude of the force is obtained from the law of gravitation $F = \gamma \tfrac{m_{\text{A}} m_{\text{B}}}{r^2}$. The acceleration of each asteroid is obtained from Newton's second law $a = \tfrac{F}{m}$.
+**Model answer:** The same force acts on each asteroid:
+
+$$\begin{aligned}
+&F = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\
+&\quad \cdot \frac{8.0 \cdot 10^{12}\,\text{kg} \cdot 2.0 \cdot 10^{12}\,\text{kg}}{(5.0 \cdot 10^{3}\,\text{m})^2} \\
+&\approx 4.27 \cdot 10^{7}\,\text{N}
+\end{aligned}$$
+
+The accelerations are
+
+$$\begin{aligned}
+&a_{\text{A}} = \frac{4.27 \cdot 10^{7}\,\text{N}}{8.0 \cdot 10^{12}\,\text{kg}} \\
+&\phantom{a_{\text{A}}} \approx 5.3 \cdot 10^{-6}\,\text{m/s}^2 \\
+&a_{\text{B}} = \frac{4.27 \cdot 10^{7}\,\text{N}}{2.0 \cdot 10^{12}\,\text{kg}} \\
+&\phantom{a_{\text{B}}} \approx 2.1 \cdot 10^{-5}\,\text{m/s}^2
+\end{aligned}$$
+
+The ratio of the accelerations is $\tfrac{a_{\text{B}}}{a_{\text{A}}} = \tfrac{m_{\text{A}}}{m_{\text{B}}} = 4$, that is, the acceleration of asteroid B is four times the acceleration of A. Reason: the forces are equal, and the same force accelerates the lighter body more. The heavier asteroid does not pull the lighter one harder. The rule "all bodies fall with the same acceleration" does not hold here either, because each asteroid is in the field of the other asteroid and the fields are of different magnitudes. The distance is the same for both, so it does not affect the ratio of the accelerations.

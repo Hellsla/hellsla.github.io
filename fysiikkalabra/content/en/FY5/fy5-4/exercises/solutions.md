@@ -224,6 +224,19 @@ akselit 0
 **Reasonableness:** The centripetal acceleration is $4.32\,\text{m/s}^2$, about $0.44\,g$, and the weight of the car is about $8.3\,\text{kN}$. So the friction must be about $0.44$ times the weight, which is possible on wet asphalt. The result of the student would require a friction about $0.88$ times the weight, and that would already exceed the typical grip of dry asphalt.
 **Model answer on the error:** The student drew a centrifugal force pointing outwards on the car and added it to the friction. There is no such force, because no object pulls the car outwards. The expression $m\tfrac{v^2}{r}$ is the magnitude of the net force and not a force of its own, and the net force comes from the friction alone. So the friction is $m\tfrac{v^2}{r} = 3672\,\text{N}$, and the doubled value $7344\,\text{N}$ calculated by the student is twice too large.
 
+## fy5-4-L2-08
+**Find:** which of the four free-body diagrams correctly shows the forces acting on the car at the topmost point of the loop.
+**Principle:** The body chosen is the car. The Earth (weight $\overline{G}$) and the track (support force $\overline{N}$) act on it; air resistance and friction are neglected. At the topmost point the centre of the loop is below the car, so the normal acceleration and, by Newton's second law, the net force point down. The track is above the car, so its support force pushes the car away from the track, that is, down. There is no centrifugal force, and velocity is not a force.
+**Model answer:** The correct one is free-body diagram C. Let the positive direction be down towards the centre. Then
+
+$G + N = m a_\text{n}$
+
+$G + N = m \cdot 1.5\,g$
+
+$N = 1.5\,mg - mg$, that is, $N = 0.5\,mg$
+
+The support force points down and is half of the weight, as in diagram C. In diagram A the support force has been drawn upwards like that of a floor; then the net force would be $G - N = 0.5\,G$ and not $1.5\,G$. In diagram B the upward centrifugal force $\overline{F}_\text{kp}$ cancels the net force although the car accelerates, and no object acts with such a force. In diagram D the velocity has been drawn as a force, although no force acts on the car in the direction of motion.
+
 ## fy5-4-L3-04
 **Given:** $m = 60.0\,\text{kg}$; at the bottom $v_1 = 27.2\,\text{m/s}$ and $a_1 = 53.2\,\text{m/s}^2$; at the top $v_2 = 14.0\,\text{m/s}$ and $a_2 = 14.1\,\text{m/s}^2$; $g = 9.81\,\text{m/s}^2$; sample data; air resistance and rolling resistance are neglected
 **Find:** a) the radius $r$ of the loop; b) the support force $N$ of the car on the passenger at the top and at the bottom; c) the smallest speed $v_\text{min}$ at the top, in $\text{m/s}$. The answer box takes the support force at the top, in $\text{N}$.
