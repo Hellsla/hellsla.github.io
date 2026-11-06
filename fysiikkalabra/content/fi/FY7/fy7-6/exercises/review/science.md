@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 958094b9ba257773
-ROUND: 1
+CONTENT-HASH: 8b13af556f7aa21c
+ROUND: 2
 
 ## Blocking
 
 ## Polish
-- exercises.json:263 (L2-08, correct choice) — the feedback "hylkivä voima niin kauan kuin käämin virta kasvaa" names the repulsion and the growing current, which points at reason 3 before the reason stage is answered (FY3 lesson) — shorten to "Oikein: rengas hypähtää ylöspäin." and leave the mechanism to the reason feedback.
-- exercises.json:251 (L2-08) — with an air-core coil and a battery the jump is real but small; the classic Thomson ring uses an iron core. Optional: "käämin sisällä on rautasydän" makes the "hypähtää" outcome realistic without changing any option (C, a fair simplification as written).
+- exercises.json:267 (L2-08, choice "pysyy levossa") — the feedback names the wrong assumption and then only hints ("Mieti, mitä…"); it does not say why the option is wrong. Reason 4's feedback and the solution do explain it, so this is acceptable — optionally add "virta kasvaa nollasta, joten vuo muuttuu".
 
 ## Checked
-- New task only (git diff b032dcb83~1..HEAD: additions only, the rest of the set was PASS). Checked from the text only; no renders (science role, no formula chains in this task).
-- Physics: growing coil current, growing flux through the ring, the induced field opposes the growth, the ring's coil-side face is the same pole as the coil's top, repulsion only while the current changes. All right, and the solution says the same as the lesson (Lenz from energy conservation).
-- Exactly one correct choice and one correct reason; each distractor has its own wrong idea: the chapter's warned "metal is attracted" (reason 1), the reversed Lenz direction (reason 2), "DC gives no induction" (reason 4), and a true but irrelevant statement (reason 5).
-- Form: the reasons are 85–95 characters each; the correct one is not the longest, not the only hedged one.
-- Scope: the coil field (fy7-3) and induction (fy7-5) only; Al called non-ferromagnetic with no para-magnetism, as the scope requires.
-- solutions.md L2-08 has Kysytty, Periaate and Mallivastaus, and explains each wrong reason.
-- answers.py ran with -I: all 14 numeric answers agree with exercises.json within tolerance; the L2-08 comment line is right.
-- Hash 958094b9ba257773 at start and end.
+- Both round-1 Polish items are done. The correct choice's feedback is now neutral ("Oikein. Valitse seuraavaksi perustelu…") and no longer gives away reason 3. The task now has a rautasydän, so the jump is realistic.
+- The iron core is within scope (ferromagnetism in fy7-1, the core in the lesson summary). Reason 1 and choice 1 ("vetää kuten rautaa") stay wrong for aluminium, and the Periaate's added sentence (the core strengthens the field, so the flux change is large) is right.
+- Reason 2's feedback is now "ei auta vuon muutosta vaan vastustaa sitä", which is right and is the lesson's wording (it opposes the change, not the field).
+- Solution's added sentence (the coil-side face is always the like pole, whichever pole the top is) is right.
+- Exactly one correct choice and reason; distractors and form unchanged from round 1 (reasons 85–95 characters).
+- Checked from the text and the git diff of 202302c75 only; no renders.
+- answers.py runs with -I; numeric answers unchanged (the commit touched only L2-08's text).
+- Hash 8b13af556f7aa21c at start and end.

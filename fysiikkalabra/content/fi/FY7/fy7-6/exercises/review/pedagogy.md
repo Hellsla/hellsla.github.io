@@ -1,20 +1,18 @@
-VERDICT: FAIL
-CONTENT-HASH: 958094b9ba257773
+VERDICT: PASS
+CONTENT-HASH: 8b13af556f7aa21c
 
-Round 1 (new task fy7-6-L2-08, two-stage justified choice; rest of set PASS before)
+Round 2 (fy7-6-L2-08, two-stage justified choice)
 
 ## Blocking
-- exercises.json:263 — the correct stage-1 feedback gives the reason stage away ("syntyy hylkivä voima niin kauan kuin käämin virta kasvaa" names repulsion and the growing current, i.e. reason 3) — change to "Oikein. Valitse seuraavaksi perustelu, joka selittää vastauksesi." as in fy7-4-L2-08.
+(none) The round-1 item is fixed: the correct stage-1 feedback is now "Oikein. Valitse seuraavaksi perustelu, joka selittää vastauksesi."
 
 ## Polish
-- exercises.json (wrong stage-1 feedback, "pysyy levossa" and "painuu käämiä vasten") — both already state "vuo muuttuu ja induktiovirta vastustaa kasvua", the content of the reason stage; shorten to the error of the option and leave the Lenz argument to the reason stage.
-- exercises.json (reason 5) — five reasons against three options; the true-but-irrelevant reason 5 is good, reason 2 ("vahvistaa vuon kasvua") overlaps the warned "vastustaa kenttää eikä muutosta"; keep, but then reason 2's feedback should say that Lenz opposes the change, not the field.
-- solutions.md:170 — add one line that the "yläpää" pole of the coil is not needed: only that the ring's coil side has the same pole as the coil end.
+- exercises.json (reason 1 feedback) — add that Lenz opposes the change, not the field, if reason 2 is kept; reason 2 ("vahvistaa vuon kasvua") overlaps the chapter's second warned idea only loosely (round 1, unchanged).
+- exercises.json (stage-1 "pysyy levossa" feedback) — "Mieti, mitä käämin virralle tapahtuu" is a hint toward reason 4 and 3; acceptable, but the stage-2 answer is still not named.
 
 ## Checked
-- Physics: jumping-ring effect, repulsion while the current rises, ring falls back when it is constant: correct.
-- Distractors catch the chapter's warned mistake (aluminium attracted like iron: option 1 and reason 1), DC-no-induction idea (option 3, reason 4) and the true-but-irrelevant conductivity (reason 5).
-- Correct reason is not clearly longest or the only hedged one.
-- Within chapter: Lenz, the coil as magnet (fy7-3) and same poles repel (fy7-1) only.
-- Situation first, question last; Finnish fine. Solution follows step by step.
+- Wrong stage-1 feedback now states only the option's error (aluminium not ferromagnetic; DC idea) and no longer gives the Lenz/induction argument.
+- Added iron core is taught in fy7-3 (sähkömagneetti) and makes the jump plausible; stem and solution agree.
+- Physics (jumping ring, repulsion while current rises) correct; correct reason not the longest or only hedged; 5 reasons, one true-but-irrelevant.
+- Distractors catch the warned mistake (aluminium attracted like iron) and DC-no-induction.
 - Checked from text only (no renders; pedagogy role); no inline formula chains.

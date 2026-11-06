@@ -1,20 +1,18 @@
-VERDICT: PASS
-CONTENT-HASH: 58b13b3e6286c0a5
+VERDICT: FAIL
+CONTENT-HASH: 94e15a47fe5d26e5
 
-Round 1 (new task fy7-5-L1-09, ordering; rest of set PASS before)
+Round 2 (fy7-5-L1-09, ordering)
 
 ## Blocking
-(none)
+- exercises.json:98 — with C flux now 0,080 mWb the task no longer catches the chapter's warned mistake "large flux means large voltage": a student using e = N·Φ gets 0,04 V for C, still below D (0,60 V), so C stays first and the order is the same as the correct one — restore a flux for C that makes the wrong rule put C clearly high (e.g. 8,0 mWb as before gives 4,0 V, above B), and fix the C sentence in solutions.md:196 if the number changes again.
 
 ## Polish
-- exercises.json:92 — five situations each needing a calculation is heavy for level 1 ("one formula or one step"); it reads like level 2. Cut to four situations (drop B or E) or state that the situation is a Level 2 task in the bank plan; do not change ids. Without B the mistakes "forgetting N" and "flux size" are still caught.
-- exercises.json:98 — "yhden kierroksen vuo tarkoittaa käämin yhden kierroksen läpi kulkevaa magneettivuota" is circular; write "Vuo on aina yhden kierroksen läpi kulkeva vuo."
-- solutions.md:196 — the long closing paragraph mixes three explanations; put each wrong-order cause on its own line.
-- Tilanne D has no coil; the stem "joissa voi syntyä induktiojännite" fits C poorly (none arises); say "joissa voisi syntyä".
+- exercises.json:92 — five calculations is heavy for level 1; consider four situations (round 1, unchanged).
+- exercises.json:98 — "yhden kierroksen vuo tarkoittaa käämin yhden kierroksen läpi kulkevaa magneettivuota" is circular; say "Vuo on yhden kierroksen läpi kulkeva vuo."
+- solutions.md:196 — "tilanteelle C tulee virheellisesti nollaa suurempi jännite" no longer shows why the order would go wrong; after the fix above name the wrong position.
 
 ## Checked
-- All five values recomputed: A 1,2 V, B 3,0 V, C 0, D 0,60 V, E 2,0 V; order C, D, A, E, B, direction "pienimmästä suurimpaan" stated in the prompt.
-- Distractors catch the chapter's warned mistakes: large flux but no change (C), forgetting N (A, B move), N = 1 loop (E) and flux rate vs size.
-- Correct order is not obvious from form: the rate (E) and the turns (B) cross, D is the only e = vBl case.
-- Within the chapter (induction law, e = vBl); solution complete step by step; units mWb handled.
-- Checked from text only (no renders; pedagogy role); inline formulas measured as KaTeX renders at 390 px: e_A 214 px, e_D 227 px, e_E 164 px, all fit.
+- Values recomputed: A 1,2 V, B 3,0 V, C 0, D 0,60 V, E 2,0 V; order C, D, A, E, B; direction stated in the prompt.
+- Round-1 Polish on the solution paragraph applied (wrong-order causes on separate lines).
+- The forgotten-N mistake is still caught (A, B fall below D).
+- Checked from text only (no renders; pedagogy role); inline formulas fit (measured earlier, at most 227 px at 390 px).
