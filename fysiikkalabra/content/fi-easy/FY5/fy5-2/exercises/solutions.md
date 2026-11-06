@@ -144,6 +144,27 @@
 **Vastaus:** a) $110\,\text{g}$, kolme merkitsevää numeroa kuten mittaustiedoissa. b) Jokainen mittaus antaa oman arvion mitan massasta. Keskiarvo pienentää yksittäisen $x$:n lukuvirheen vaikutusta. Tulosten vertailu on myös tarkistus: tulokset $108{,}5\text{–}111{,}4\,\text{g}$ vaihtelevat vain muutaman prosentin, eikä punnuksen mukana ole selvää suuntaa. Oletus mitan painopisteestä kohdassa $50{,}0\,\text{cm}$ näyttää siis pitävän. Jos tulos muuttuisi selvästi punnuksen mukana, oletuksessa tai mitoissa olisi virhe.
 **Järkevyys:** Tulos $110\,\text{g}$ on tavallisen metrimitan massan suuruusluokkaa. Tarkistus takaperin: $110{,}2\,\text{g}$:n mitalla ja $100{,}0\,\text{g}$:n punnuksella tukikohta on massojen ja paikkojen tulojen summa $110{,}2 \cdot 50{,}0 + 100{,}0 \cdot 5{,}0 = 6010$ jaettuna massojen summalla $110{,}2 + 100{,}0 = 210{,}2$, eli $x = 28{,}6\,\text{cm}$. Mitattu arvo oli $28{,}7\,\text{cm}$.
 
+## fy5-2-L2-08
+**Kysytty:** onko oppilaan laskussa virhe ja millä rivillä, kun lasketaan lankun tukivoimat $N_\text{A}$ ja $N_\text{B}$.
+**Periaate:** Lankku on levossa. Siksi momenttien summa minkä tahansa pisteen suhteen on nolla ja voimien summa on nolla. Kun momenttipisteeksi valitaan tuki A, jokaisen voiman varsi mitataan pisteestä A. Pystysuoran voiman varsi on etäisyys A:sta voiman vaikutuskohtaan vaakasuoran lankun suunnassa. Tukivoima $N_\text{B}$ kiertää lankkua vastapäivään. Lankun ja purkin painot kiertävät sitä myötäpäivään.
+**Mallivastaus:** Rivi 1 on oikein. Momenttiehto pätee jokaisen pisteen suhteen, ja tuen A valinta poistaa tuntemattoman $N_\text{A}$:n.
+
+Rivi 2 on väärin. Varret $r_\text{B} = 2{,}0\,\text{m}$ ja $r_G = 1{,}5\,\text{m}$ ovat oikein, koska lankun painopiste on keskellä. Purkki on kuitenkin lankun oikeassa päässä, joten sen varsi A:n suhteen on $r_\text{p} = 3{,}0\,\text{m}$. Oppilaan arvo $1{,}0\,\text{m}$ on purkin etäisyys tuesta B.
+
+Rivit 3 ja 4 on laskettu oikein rivin 2 arvoilla, mutta väärä varsi muuttaa tulokset. Oikea lasku on tässä:
+
+$N_\text{B} r_\text{B} = G r_G + G_\text{p} r_\text{p}$
+
+$G r_G = 160\,\text{N} \cdot 1{,}5\,\text{m} = 240\,\text{Nm}$
+
+$G_\text{p} r_\text{p} = 40\,\text{N} \cdot 3{,}0\,\text{m} = 120\,\text{Nm}$
+
+$N_\text{B} = \dfrac{360\,\text{Nm}}{2{,}0\,\text{m}}$, eli $N_\text{B} = 180\,\text{N}$
+
+$N_\text{A} = 200\,\text{N} - 180\,\text{N}$, eli $N_\text{A} = 20\,\text{N}$
+
+Tukivoimat ovat $N_\text{A} = 20\,\text{N}$ ja $N_\text{B} = 180\,\text{N}$. Vastauksessa on kaksi merkitsevää numeroa kuten lähtötiedoissa. Tarkistus tuen B suhteen: lankun painon momentti on $+160\,\text{N} \cdot 0{,}5\,\text{m} = +80\,\text{Nm}$ (vastapäivään). Tukivoiman $N_\text{A}$ momentti on $-20\,\text{N} \cdot 2{,}0\,\text{m} = -40\,\text{Nm}$ ja purkin painon momentti $-40\,\text{N} \cdot 1{,}0\,\text{m} = -40\,\text{Nm}$ (myötäpäivään). Summa on nolla, kuten pitääkin. Oikea vastaus on rivi 2: kaikkien voimien varret mitataan saman momenttipisteen suhteen.
+
 ## fy5-2-L3-01
 **Annettu:** lankku $L = 4{,}00\,\text{m}$, $m_\text{L} = 20{,}0\,\text{kg}$, painopiste $x_\text{L} = 2{,}00\,\text{m}$; pukit $x_1 = 0{,}50\,\text{m}$ ja $x_2 = 3{,}00\,\text{m}$ vasemmasta päästä; maalari $m_\text{m} = 60{,}0\,\text{kg}$
 **Kysytty:** maalarin suurin etäisyys $x$ lankun vasemmasta päästä ennen kaatumista

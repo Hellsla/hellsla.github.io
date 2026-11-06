@@ -259,3 +259,21 @@ E_\text{k} &= \tfrac{1}{2}\cdot 0.025\,\text{kg}\cdot(47.0\,\text{m/s})^2 \\
 v = \sqrt{\dfrac{2\cdot 37.75\,\text{J}}{0.025\,\text{kg}}} = 55.0\,\text{m/s}
 ```
 a little more than the measured $47.0\,\text{m/s}$.
+
+## fy5-8-L2-08
+**Find:** which conclusion about the spring constant of the spring is justified, based on the example data of the table and the reading uncertainty $\pm 0.05\,\text{N}$ of the force meter.
+**Principle:** The stretching force is $F_\text{v} = kx$, so the points $(x, F_\text{v})$ must lie on a line through the origin whose slope is the spring constant $k$. For each row we can calculate the ratio $\tfrac{F_\text{v}}{x}$ and its uncertainty $\tfrac{0.05\,\text{N}}{x}$. If one value of $k$ fits into the uncertainty intervals of all the rows, the differences between the rows are explained by the measurement uncertainty.
+**Model answer:** The extensions are converted to metres, for example $x = 4.0\,\text{cm} = 0.040\,\text{m}$. The ratio of the row $4.0\,\text{cm}$ and the uncertainty of the ratio are
+
+$$\begin{aligned}
+&\frac{F_\text{v}}{x} = \frac{1.02\,\text{N}}{0.040\,\text{m}} \approx 25.5\,\text{N/m} \\
+&\Delta\!\left(\frac{F_\text{v}}{x}\right) = \frac{0.05\,\text{N}}{0.040\,\text{m}} \approx 1.3\,\text{N/m}
+\end{aligned}$$
+
+In the same way the ratios of the other rows, as the extension increases, are $24.5\,\text{N/m}$ ($\pm 2.5\,\text{N/m}$), $24.5\,\text{N/m}$ ($\pm 0.8\,\text{N/m}$), $25.0\,\text{N/m}$ ($\pm 0.6\,\text{N/m}$) and $25.1\,\text{N/m}$ ($\pm 0.5\,\text{N/m}$). The value $25\,\text{N/m}$ is within the uncertainty interval of every row, so within the measurement accuracy the points lie on the same line through the origin. From the points $(0;\ 0)$ and $(0.100\,\text{m};\ 2.50\,\text{N})$ of the fitted line we get
+
+$k = \dfrac{2.50\,\text{N}}{0.100\,\text{m}}$
+
+$k = 25\,\text{N/m}$
+
+The justified conclusion is therefore that the spring constant is about $25\,\text{N/m}$, because the ratio of every row differs from it by less than the measurement uncertainty allows. The spring constant does not increase with the extension: the force grows clearly more than the reading uncertainty, but the ratio stays the same. At the extension $4.0\,\text{cm}$ the ratio is the largest, but its difference $0.5\,\text{N/m}$ is compared with the uncertainty of the ratio $1.3\,\text{N/m}$, not with the uncertainty of the force $0.05\,\text{N}$; the difference fits within the uncertainty, so the data does not show that the spring is stiffer there. The value $0.25$ is the slope in the unit $\text{N/cm}$, not $\text{N/m}$.

@@ -83,6 +83,19 @@
 **Answer:** $0.90\,\text{s}$, two significant figures as in the time $0.45\,\text{s}$.
 **Reasonableness:** The measured fall of $30\,\text{dB}$ is half of $60\,\text{dB}$, so the time doubles. The result is longer than the roughly half a second aimed for in classrooms, which suits an empty classroom with hard surfaces.
 
+## fy5-16-L2-08
+**Find:** which conclusion the noise level measurements of the compressor at four distances support, when the uncertainty of a reading is $\Delta L = 1\,\text{dB}$
+**Principle:** In an open space the intensity of a point source is inversely proportional to the square of the distance. When the distance doubles, the intensity drops to a quarter and the level decreases by $10\,\text{dB} \cdot \lg 4 \approx 6.0\,\text{dB}$. The uncertainty of the difference of two readings is at most $2\Delta L = 2\,\text{dB}$, so differences smaller than this cannot be measured.
+**Model answer:** The data supports the conclusion that the level drops by about $6\,\text{dB}$ every time the distance doubles. The differences of consecutive readings are
+
+$91\,\text{dB} - 85\,\text{dB} = 6\,\text{dB}$
+
+$85\,\text{dB} - 79\,\text{dB} = 6\,\text{dB}$
+
+$79\,\text{dB} - 74\,\text{dB} = 5\,\text{dB}$
+
+All the differences are close to the expected $6.0\,\text{dB}$, and the largest deviation, $1\,\text{dB}$, is smaller than the uncertainty of the difference, $2\,\text{dB}$. So even the smaller drop in the last interval does not show that the sound is damped more slowly farther away. The level does not halve: half of $91\,\text{dB}$ would be about $46\,\text{dB}$, while $85\,\text{dB}$ was measured. At the distance $4.0\,\text{m}$ the reading is $85\,\text{dB}$, but because of the uncertainty the real level can be $84$–$86\,\text{dB}$, so the upper action value may be exceeded, and the measurement does not show working for $8\,\text{h}$ to be safe.
+
 ## fy5-16-L3-01
 **Given:** $t_1 = 4.0\,\text{h}$ at a level $L_1 = 88\,\text{dB}$, $t_2 = 4.0\,\text{h}$ at a level $L_2 = 82\,\text{dB}$; reference $L_0 = 85\,\text{dB}$ and $t_0 = 8\,\text{h}$
 **Find:** the day's dose as a percentage of the reference dose

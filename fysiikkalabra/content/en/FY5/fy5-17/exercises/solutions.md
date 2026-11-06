@@ -89,6 +89,27 @@
 **Answer:** about $20\,\text{s}$, two significant figures like the speeds $6.0\,\text{km/s}$ and $3.5\,\text{km/s}$.
 **Reasonableness:** The travel time of the S wave is $117.6\,\text{km} : 3.5\,\text{km/s} = 33.6\,\text{s}$, and $33.6\,\text{s} - 19.6\,\text{s} = 14.0\,\text{s}$, as measured. The travel time of the P wave is greater than the time difference, because the P wave also needs time for the whole distance.
 
+## fy5-17-L2-08
+**Find:** how the distances of stations A and B from the origin of the earthquake compare with each other, when the delay of the S wave behind the P wave is $8.0\,\text{s}$ at station A and $24.0\,\text{s}$ at station B, and which reason explains it
+**Principle:** The P wave and the S wave leave the earthquake at the same moment and travel the same distance $d$ to the station at steady speeds. The difference of the travel times is $\Delta t = \tfrac{d}{v_\text{S}} - \tfrac{d}{v_\text{P}}$, so it is directly proportional to the distance. The moment of the earthquake is not needed, because the station measures the difference of two arrival times.
+**Model answer:** Station B is three times as far away as station A. The distance from the time difference is
+
+$d = \dfrac{v_\text{P}\, v_\text{S}}{v_\text{P} - v_\text{S}} \cdot \Delta t$
+
+The coefficient is
+
+$\dfrac{6.0 \cdot 3.5}{6.0 - 3.5}\,\text{km/s} = 8.4\,\text{km/s}$
+
+For station A:
+
+$d_\text{A} = 8.4\,\text{km/s} \cdot 8.0\,\text{s} \approx 67\,\text{km}$
+
+For station B:
+
+$d_\text{B} = 8.4\,\text{km/s} \cdot 24.0\,\text{s} \approx 2.0 \cdot 10^{2}\,\text{km}$
+
+The ratio is $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24.0\,\text{s}}{8.0\,\text{s}} = 3$. Reason: the waves travel the same distance at steady speeds, so the time difference is proportional to the distance. The time difference is not the same constant at all stations, because the longer the path the waves travel, the more the S wave falls behind the P wave. The missing moment of the earthquake does not prevent the comparison, because the time difference is measured with the station's own clock. That the P wave arrives first is true, but it does not tell the ratio of the distances.
+
 ## fy5-17-L3-01
 **Given:** speed of the bat $v_\text{bat} = 10\,\text{m/s}$ towards the wall, delay of the echo $t = 40\,\text{ms}$, speed of sound $v = 343\,\text{m/s}$
 **Find:** the distance $d$ to the wall at the moment of the call, in metres

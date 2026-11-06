@@ -43,6 +43,21 @@
 **Principle:** A human hears frequencies from about $20\,\text{Hz}$ to about $20\,\text{kHz}$. Sound below $20\,\text{Hz}$ is infrasound and sound above $20\,\text{kHz}$ is ultrasound. All of them are longitudinal pressure waves of the same kind; the class depends only on the frequency.
 **Model answer:** a) $12\,\text{Hz} < 20\,\text{Hz}$, so the lowest part of the thunder is infrasound. b) $440\,\text{Hz}$ lies between the limits $20\,\text{Hz}$ and $20\,\text{kHz}$, so the tuning note is audible sound. c) $35\,\text{kHz} > 20\,\text{kHz}$, so the sound of the dog whistle is ultrasound: a dog hears it, but a human does not. d) $2.5\,\text{MHz} = 2\,500\,000\,\text{Hz}$ is many orders of magnitude above the range of hearing, so the sound of ultrasound imaging is ultrasound.
 
+## fy5-14-L1-09
+**Find:** which of the five statements about the pitch and timbre of a violin note and about the sound of the horn of a moving car are true
+**Principle:** We hear the pitch from the fundamental frequency, which is the lowest frequency of the harmonic series and the spacing of adjacent peaks. The timbre depends on the strengths of the overtones compared with the fundamental frequency. When the source moves, the sound still travels relative to the air at the speed $v$, but in front of the source the wavelength becomes shorter and behind it longer. The frequency that is heard depends on the speed of the source, not on its distance.
+**Model answer:** Statements 2 and 5 are true, statements 1, 3 and 4 are false.
+
+Statement 1 is false. The spacing of the peaks is $660\,\text{Hz} - 330\,\text{Hz} = 330\,\text{Hz}$, and the lowest peak is $330\,\text{Hz}$, so the fundamental frequency and the pitch correspond to the frequency $330\,\text{Hz}$. The strongest peak $660\,\text{Hz}$ is an overtone.
+
+Statement 2 is true. The fundamental frequency of the same note is $330\,\text{Hz}$ in both instruments, but the strengths of the overtones differ, so the timbre is different.
+
+Statement 3 is false. The motion of the source does not change the speed of sound in air. It changes the wavelength: in front of an approaching car the wavefronts are closer together.
+
+Statement 4 is false. The car drives at a steady speed, so the frequency that is heard is the same throughout the approach and higher than $400\,\text{Hz}$. As the car approaches, the loudness grows, not the pitch.
+
+Statement 5 is true. At the moment of passing, the frequency drops. Behind a car that moves away the wavelength is longer than when the car stands still, so the frequency that is heard is lower than $400\,\text{Hz}$.
+
 ## fy5-14-L2-01
 **Given:** frequency of the tuning fork $f_1 = 262\,\text{Hz}$, $N = 15$ loud moments in a time $t = 5.0\,\text{s}$, the string is lower than the tuning fork
 **Find:** the frequency of the string $f_2$

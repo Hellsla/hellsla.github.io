@@ -217,6 +217,66 @@
       "answer": 0.6,
       "unit": "J",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy5-8-L2-08",
+      "level": 2,
+      "text": "Students stretched a spring with a force meter and measured the extension $x$ of the spring and the force $F_\\text{v}$ that stretches it. The table has example data. The uncertainty of the force meter reading is $\\pm 0.05\\,\\text{N}$, and the uncertainty of the extension is so small that it need not be taken into account.\n\nWhich conclusion from the data is justified?",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "data": {
+        "caption": "Spring measurement (example data)",
+        "columns": [
+          "$x\\,(\\text{cm})$",
+          "$F_\\text{v}\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "2.0",
+            "0.49"
+          ],
+          [
+            "4.0",
+            "1.02"
+          ],
+          [
+            "6.0",
+            "1.47"
+          ],
+          [
+            "8.0",
+            "2.00"
+          ],
+          [
+            "10.0",
+            "2.51"
+          ]
+        ]
+      },
+      "answer": "The spring constant is about $25\\,\\text{N/m}$, because the ratio $\\tfrac{F_\\text{v}}{x}$ of every row differs from it by less than the measurement uncertainty allows.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The spring constant increases with the extension, because the force grows from row to row much more than the reading uncertainty $0.05\\,\\text{N}$.",
+          "feedback": "Here the growth of the force has been mixed up with the growth of the spring constant. The force grows because the extension grows, but the spring constant is the ratio $\\tfrac{F_\\text{v}}{x}$, that is, the slope of the line, and in the data it stays at about $25\\,\\text{N/m}$. Comparing the growth of the force with the uncertainty tells nothing about the spring constant."
+        },
+        {
+          "text": "The spring is stiffest at the extension $4.0\\,\\text{cm}$, because the ratio $\\tfrac{F_\\text{v}}{x}$ is largest there and the difference exceeds the reading uncertainty $0.05\\,\\text{N}$.",
+          "feedback": "Here different quantities have been compared: the difference of the ratio is in the unit $\\text{N/m}$, but $0.05\\,\\text{N}$ is the uncertainty of the force. On this row the reading uncertainty gives the ratio an uncertainty of about $\\pm 1.3\\,\\text{N/m}$, so the value $25\\,\\text{N/m}$ fits this point too, and the data does not show that the spring is stiffer there."
+        },
+        {
+          "text": "The spring constant is about $25\\,\\text{N/m}$, because the ratio $\\tfrac{F_\\text{v}}{x}$ of every row differs from it by less than the measurement uncertainty allows.",
+          "correct": true,
+          "feedback": "Correct: a line through the origin fits all the points, that is, the value $25\\,\\text{N/m}$ is within the uncertainty interval of the ratio of every row."
+        },
+        {
+          "text": "The spring constant is about $0.25\\,\\text{N/m}$, because the force grows by about $0.25\\,\\text{N}$ for every centimetre of extension.",
+          "feedback": "Here the extension has been left in centimetres: $0.25\\,\\text{N/cm}$ is the correct slope, but the unit is $\\text{N/cm}$. Since $1\\,\\text{cm} = 0.01\\,\\text{m}$, the spring constant is $25\\,\\text{N/m}$."
+        }
+      ]
     }
   ],
   "level3": [

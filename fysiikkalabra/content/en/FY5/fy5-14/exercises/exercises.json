@@ -109,6 +109,44 @@
       "answer": 0.167,
       "unit": "s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-14-L1-09",
+      "level": 1,
+      "kind": [
+        "concept"
+      ],
+      "text": "In the FFT spectrum of a note played on a violin there are peaks at the frequencies $330\\,\\text{Hz}$, $660\\,\\text{Hz}$, $990\\,\\text{Hz}$ and $1320\\,\\text{Hz}$. The strongest peak is at the frequency $660\\,\\text{Hz}$.\n\nIn another situation a listener stands right next to a straight road. A car drives at a steady speed straight towards the listener, passes the listener and moves straight away. The own frequency of the horn of the car is $400\\,\\text{Hz}$, and the air is calm.\n\nThe numbers are example values. Decide which statements are true and which are false.",
+      "answer": "1 false, 2 true, 3 false, 4 false, 5 true",
+      "unit": "",
+      "tolerance": 0.02,
+      "statements": [
+        {
+          "text": "The note of the violin sounds as high as a pure tone of $660\\,\\text{Hz}$.",
+          "true": false,
+          "feedback": "False: the pitch is determined by the fundamental frequency, not by the strongest peak. The fundamental frequency is the lowest frequency of the harmonic series and the spacing of the peaks, $330\\,\\text{Hz}$."
+        },
+        {
+          "text": "A flute playing the same note sounds different from the violin because its overtones have different strengths.",
+          "true": true,
+          "feedback": "True: the same note means the same fundamental frequency $330\\,\\text{Hz}$. The timbre depends on how strong the overtones are compared with the fundamental frequency, and it is different for different instruments."
+        },
+        {
+          "text": "In front of an approaching car the sound of the horn travels faster in air than when the car stands still.",
+          "true": false,
+          "feedback": "False: the sound travels at the same speed relative to the air whether the source moves or not. The motion of the source changes the wavelength: in front of the car the wavefronts are closer together."
+        },
+        {
+          "text": "During the approach the frequency that is heard keeps increasing as the car gets closer.",
+          "true": false,
+          "feedback": "False: the frequency that is heard depends on the speed of the car, not on the distance. At a steady speed the frequency is the same throughout the approach and higher than $400\\,\\text{Hz}$. As the car approaches, the loudness grows, not the pitch."
+        },
+        {
+          "text": "After the car has passed, the listener hears the horn at a frequency lower than $400\\,\\text{Hz}$.",
+          "true": true,
+          "feedback": "True: behind a car that moves away the wavefronts are farther apart than when the car stands still, so the wavelength is longer and the frequency that is heard is lower than the own frequency of the horn."
+        }
+      ]
     }
   ],
   "level2": [

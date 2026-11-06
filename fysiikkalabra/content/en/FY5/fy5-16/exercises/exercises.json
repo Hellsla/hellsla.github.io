@@ -245,6 +245,62 @@
       "answer": 1.9,
       "unit": "min",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-16-L2-08",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "A small compressor at a building site can be regarded as a point source. Its noise level was measured in an open field at four distances, and the readings are in the table (example data). The uncertainty of each reading is $\\Delta L = 1\\,\\text{dB}$.\n\nWhich conclusion does the data support?",
+      "answer": "The level drops by about $6\\,\\text{dB}$ every time the distance doubles, that is, by about the same amount in every interval.",
+      "unit": "",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Sound level (example data)",
+        "columns": [
+          "$r\\,(\\text{m})$",
+          "$L\\,(\\text{dB})$"
+        ],
+        "rows": [
+          [
+            "2.0",
+            "91"
+          ],
+          [
+            "4.0",
+            "85"
+          ],
+          [
+            "8.0",
+            "79"
+          ],
+          [
+            "16.0",
+            "74"
+          ]
+        ]
+      },
+      "choices": [
+        {
+          "text": "The level roughly halves every time the distance doubles, that is, the level is inversely proportional to the distance.",
+          "feedback": "The decibel scale is logarithmic, and the level does not halve: half of $91\\,\\text{dB}$ would be about $46\\,\\text{dB}$, but $85\\,\\text{dB}$ was measured. With every doubling the level decreases by the same number of decibels."
+        },
+        {
+          "text": "The level drops by about $6\\,\\text{dB}$ every time the distance doubles, that is, by about the same amount in every interval.",
+          "correct": true,
+          "feedback": "Correct: the drops are $6\\,\\text{dB}$, $6\\,\\text{dB}$ and $5\\,\\text{dB}$. They differ from the expected $6\\,\\text{dB}$ by at most $1\\,\\text{dB}$, which is less than the uncertainty of the difference, $2\\,\\text{dB}$."
+        },
+        {
+          "text": "In the last interval the level dropped by only $5\\,\\text{dB}$, so farther from the source the sound is damped more slowly.",
+          "feedback": "The uncertainty was ignored. The uncertainty of the difference of two readings is at most $2\\Delta L = 2\\,\\text{dB}$, so $5\\,\\text{dB}$ and $6\\,\\text{dB}$ cannot be measurably distinguished. A single deviation does not show a new phenomenon."
+        },
+        {
+          "text": "At the distance $4.0\\,\\text{m}$ the level does not exceed $85\\,\\text{dB}$, so one can work there safely for $8\\,\\text{h}$.",
+          "feedback": "Because of the uncertainty the real level can be $84$–$86\\,\\text{dB}$, so the upper action value may be exceeded. In addition, the formula for the permitted time is an estimate, not a guarantee of safety for hearing."
+        }
+      ]
     }
   ],
   "level3": [

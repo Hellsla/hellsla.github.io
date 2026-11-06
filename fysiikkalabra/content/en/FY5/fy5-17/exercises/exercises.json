@@ -268,6 +268,53 @@
           "correct": true
         }
       ]
+    },
+    {
+      "id": "fy5-17-L2-08",
+      "level": 2,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "Two seismograph stations, A and B, record the same earthquake. At station A the S wave arrives $8.0\\,\\text{s}$ after the P wave and at station B $24.0\\,\\text{s}$ after the P wave. The stations do not know the moment when the earthquake happened.\n\nAssume that the speed of the P wave is $6.0\\,\\text{km/s}$ and that of the S wave $3.5\\,\\text{km/s}$ along the whole path to both stations. The numbers are example values.\n\nHow do the distances of the stations from the origin of the earthquake compare with each other?",
+      "answer": "Station B is three times as far from the earthquake as station A.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The stations are equally far away, because the time difference depends only on the speeds of the waves.",
+          "feedback": "The time difference depends on the distance as well as on the speeds: the longer the path the waves travel, the more the slower S wave falls behind. Different time differences mean different distances."
+        },
+        {
+          "text": "Station B is three times as far from the earthquake as station A.",
+          "correct": true,
+          "feedback": "Correct. Next choose the reason that explains your answer."
+        },
+        {
+          "text": "The distances cannot be compared, because the moment of the earthquake is not known.",
+          "feedback": "The moment of the event is not needed to measure the time difference. A station measures the difference of two arrival times with its own clock, and the distance is obtained from the difference when the speeds are known."
+        }
+      ],
+      "reason_prompt": "Which reason explains your answer?",
+      "reasons": [
+        {
+          "text": "The distance is calculated from the travel time, so it requires the moment of the earthquake, which the stations do not have.",
+          "feedback": "This mixes up the travel time and the time difference. The distance is obtained from the time difference $\\Delta t$ without the moment of the earthquake, as in the formula of the chapter $d = \\tfrac{v_\\text{P} v_\\text{S}}{v_\\text{P} - v_\\text{S}}\\,\\Delta t$."
+        },
+        {
+          "text": "The waves travel the same distance at steady speeds, so the time difference is proportional to the distance.",
+          "correct": true,
+          "feedback": "Correct: the time difference at station B is $24.0\\,\\text{s} : 8.0\\,\\text{s} = 3$ times as long, and when $\\Delta t$ triples, $d$ triples too. For station A the distance is about $67\\,\\text{km}$ and for station B about $2.0 \\cdot 10^{2}\\,\\text{km}$."
+        },
+        {
+          "text": "The time difference is a constant determined by the difference of the speeds of the waves, and it is the same at every station.",
+          "feedback": "The difference of the speeds is the same, but the time difference is not constant. In each second the S wave falls behind the P wave by a certain distance, so over a longer path it falls behind more."
+        },
+        {
+          "text": "The P wave is faster than the S wave, so it arrives first at every station.",
+          "feedback": "The statement is true, but it does not explain the answer. It only tells the order of arrival of the waves, not how the time difference depends on the distance."
+        }
+      ]
     }
   ],
   "level3": [
