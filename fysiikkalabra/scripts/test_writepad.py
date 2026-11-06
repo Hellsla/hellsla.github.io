@@ -22,6 +22,8 @@ And the solutions kept on this device (templates/padstore.js, phase 2): a soluti
 exercises keep their own, a restored formula is still an editable formula, a pasted picture survives, the versioned
 backup file exports and imports, Poista ratkaisu / Poista kaikki delete, a damaged record and a full or forbidden
 storage are reported instead of "Tallennettu", the copy still works, and no request but GET for the site's files.
+And a pasted picture's size (teacher 2026-11-06): a click on it shows Pieni / Keskikoko / Iso / Alkuperäinen and a corner
+handle, at 360 and 1280 px; the size given is saved and comes back after a reload.
 Exit status 1 on any failure."""
 import functools, http.server, re, sys, threading, pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
@@ -281,6 +283,40 @@ with sync_playwright() as pw:
     expect(f"{page}: no answer is sent over the network (only GET requests for the site's own files)", not other, other[:3])
     expect(f"{page}: no script errors while saving and restoring", not errs, errs)
     ctx.close()
+    # a pasted picture's size (teacher 2026-11-06, "haluan pienentää kuvaa"): the bar's sizes and the corner handle,
+    # kept after a reload, at a phone's and a laptop's width
+    for w in (360, 1280):
+        ctx = b.new_context(viewport={"width": w, "height": 900}, permissions=["clipboard-read", "clipboard-write"])
+        pg = ctx.new_page(); errs = []
+        pg.on("pageerror", lambda e: errs.append(str(e)))
+        visit(); a = editor(0); ed = a.locator(".rich-text-editor"); ed.click(); pg.keyboard.type("Kuva: ")
+        pg.evaluate("""async () => { const c = document.createElement('canvas'); c.width = 1600; c.height = 800; const g = c.getContext('2d'); g.fillStyle = '#06c'; g.fillRect(0, 0, 1600, 800);
+            const blob = await new Promise(r => c.toBlob(r, 'image/png')); await navigator.clipboard.write([new ClipboardItem({ 'image/png': blob })]); }""")
+        ed.click(); pg.keyboard.press("End"); pg.keyboard.press("Control+v"); pg.wait_for_timeout(600)
+        img = ed.locator("img:not([data-math-image])").first
+        img.click(); pg.wait_for_timeout(100)
+        bar, handle = a.locator(".pad-img-bar"), a.locator(".pad-img-handle")
+        labels = [T(f"js.pad_img_{k}") for k in ("small", "medium", "large", "original")]
+        expect(f"{page} {w}px: a click on a pasted picture shows its size bar and corner handle", bar.is_visible() and handle.is_visible() and bar.locator("button").all_inner_texts() == labels, bar.locator("button").all_inner_texts())
+        room = pg.evaluate("(e) => { const s = getComputedStyle(e); return e.clientWidth - parseFloat(s.paddingLeft) - parseFloat(s.paddingRight); }", ed.element_handle())
+        bar.locator("button").nth(0).click(); pg.wait_for_timeout(100)
+        expect(f"{page} {w}px: {labels[0]} makes the picture a quarter of the editor's width", abs(img.bounding_box()["width"] - room / 4) <= 2 and abs(int(img.get_attribute("width") or 0) - room / 4) <= 1, (img.get_attribute("width"), room))
+        expect(f"{page} {w}px: the size bar fits the window and its buttons are at least 40 px high", pg.evaluate("document.documentElement.scrollWidth <= innerWidth")
+               and bar.bounding_box()["x"] >= 0 and bar.bounding_box()["x"] + bar.bounding_box()["width"] <= w and all(bb_["height"] >= 40 for bb_ in [x.bounding_box() for x in bar.locator("button").all()]))
+        h = handle.bounding_box(); x, y = h["x"] + h["width"] / 2, h["y"] + h["height"] / 2
+        pg.mouse.move(x, y); pg.mouse.down(); pg.mouse.move(x + 40, y, steps=4); pg.mouse.up(); pg.wait_for_timeout(100)
+        dragged = int(img.get_attribute("width") or 0)
+        expect(f"{page} {w}px: dragging the corner handle makes the picture bigger", abs(dragged - (room / 4 + 40)) <= 2, (dragged, room))
+        expect(f"{page} {w}px: the new size is saved", saved(a), a.locator(".pad-save").inner_text())
+        visit(); a = editor(0); img = a.locator(".rich-text-editor img:not([data-math-image])").first
+        expect(f"{page} {w}px: after reloading, the picture has the size it was given", img.get_attribute("width") == str(dragged), img.get_attribute("width"))
+        img.click(); a.locator(".pad-img-bar button").nth(3).click(); pg.wait_for_timeout(100)
+        expect(f"{page} {w}px: {labels[3]} gives the picture its own size again (at most the editor's width)", img.get_attribute("width") is None and abs(img.bounding_box()["width"] - min(room, 1600)) <= 2, img.get_attribute("width"))
+        pg.locator("h1").first.click(); pg.wait_for_timeout(100)
+        expect(f"{page} {w}px: a click elsewhere hides the size bar", not a.locator(".pad-img-bar").is_visible())
+        if w == 1280: a.screenshot(path=str(ROOT / "preview" / "writepad-image-size.png"))
+        expect(f"{page} {w}px: no script errors while resizing a picture", not errs, errs)
+        ctx.close()
     # storage failure: the write throws QuotaExceededError -> an error is shown, never "Tallennettu"
     ctx = b.new_context(viewport={"width": 1280, "height": 900})
     ctx.add_init_script("IDBObjectStore.prototype.put = function () { throw new DOMException('full', 'QuotaExceededError'); };")

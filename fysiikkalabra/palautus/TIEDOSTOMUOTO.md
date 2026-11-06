@@ -36,6 +36,9 @@ RuukkiLabran `templates/palautus.js` tekee tiedoston opiskelijan selaimessa, ja 
 - `content`: osat ratkaisun järjestyksessä. Teksti rivinvaihtoineen (`\n`). Kaava on LaTeX ja sen kuva PNG:nä
   (`png`, piirretty 3-kertaisena; `w`, `h` = näyttökoko pikseleinä; jos selain ei piirrä kuvaa, vain LaTeX).
   Kuva on PNG- tai JPEG-data base64-muodossa ilman `data:`-alkua. SVG- tai HTML-sisältöä ei hyväksytä.
+  `w`, `h` = kuvan oma koko pikseleinä. Jos opiskelija on pienentänyt kuvaa editorissa (6.11.2026), `dw` on sen
+  näyttöleveys CSS-pikseleinä (kokonaisluku, pienempi kuin `w`); arviointisivu näyttää kuvan siinä koossa, ja
+  napsautus avaa sen täysikokoisena. Ilman `dw`:tä kuva näytetään omassa koossaan.
   Selaimen tilapäiset `blob:`-osoitteet muunnetaan dataksi. Verkko-osoitteesta liitetty kuva estää latauksen.
 - `content_sha256` = SHA-256 (UTF-8) merkkijonosta `JSON.stringify(answers)`, jossa kaavoista on jätetty vain
   `type` ja `latex`. Samat ratkaisut pitävät saman `submission_id`:n (selaimen localStorage
