@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 8bc6b6f0080d71e4
+CONTENT-HASH: 0103d8f31883bc59
 
-Round 3
+Scope: new task fy7-10-L2-08 (virheen löytäminen, YO type 4).
 
 ## Blocking
 (none)
 
 ## Polish
-- exercises.json:fy7-10-L3-04 — a) says "Piirrä tilanteesta kuva" but the box takes only b); add "(kuvan tarkistat itse)" as in fy7-12-L3-05 (carried over).
-- solutions.md:fy7-10-L3-05 Vastaus — "20,0 mm:n vesikerros rajoittaa tuloksen tarkkuutta" is muddled (the water term 15,6 mm dominates); say instead that the water layer gives most of the 19,5 mm (carried over).
-- exercises.json:fy7-10-L1-07/L1-08 — single-formula tasks, L1-07 close to a lesson sentence; acceptable.
+(none)
 
 ## Checked
-- Round-2 Blocking resolved: fy7-10-L3-04 lead is now split into short paragraphs (the assumption sentence and the x/alpha definitions each in their own block); none over ~45 words.
-- The only change since round 2 is that paragraph split; physics, answer (n_avg 1,3301) and solution are unchanged and still consistent.
-- Level fit, no duplicates, plan in docs/exercise-bank/FY7.md (8/7/5 incl. data, graph, error, experiment, model tasks) still coherent.
+- Error is the swapped n1/n2 on row 3; rows 1, 2, 4 each have a feedback naming the misconception that would make a student mark them (towards-normal rule, angle from surface, last-line check). They match the chapter's warned mistakes.
+- Numbers verified: 0,329 gives 19,2 deg; correct 0,760 gives 49,5 deg; 30 deg is below the critical angle 41 deg, so no total reflection is needed (not yet taught).
+- Correct row not identifiable by form; "no error" option last as the schema requires.
+- Solution explains the principle (n1 belongs to the incoming material) and gives a sanity check (angle must grow).
+- Within lesson: Snell, normal angle, optical density only.
+- Widest inline formula 196 px (render); fits.

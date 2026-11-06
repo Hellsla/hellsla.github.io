@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: c1bb42f3585103cf
-ROUND: 2
+CONTENT-HASH: c2299a6720da2db8
+ROUND: 1
 
 ## Blocking
 
 ## Polish
-- solutions.md:178 (L3-04): "taajuus f on rullan ja käämin pyörimistaajuus" describes a device that does not exist. In a real pullodynamo the magnet turns with the roller inside a fixed coil, and it is often multipole. Fix: "f on rullan ja magneetin pyörimistaajuus; käämin vuo vaihtelee kuten pyörivässä käämissä (kaksinapainen malli)". Or use "opetusgeneraattori".
-- lessons/FY7/fy7-7/answers.py:36: the comment still says "napadynamo". Fix: "pullodynamo".
-- exercises.json:47 (L1-06): the correct option "tuottaa saman tehon kuin tasajännite" does not say which DC voltage. Fix: "tuottaa vastukseen saman keskimääräisen tehon kuin yhtä suuri tasajännite".
-- exercises.json:125 (L2-05): still open from round 1. `graph` was dropped, but the plan's follow-up (three rotation rates → NBA) was not made. That is for pedagogy and the plan.
+- solutions.md:215 (L1-09) — "kahden peräkkäisen samaan suuntaan tapahtuvan nollakohdan välistä" is awkward — "kahden peräkkäisen nollakohdan välistä, joissa käyrä on nousemassa".
 
 ## Checked
-- Round-1 Blocking item L3-04 is resolved: the device is now a pullodynamo in the text, the caption and the solution. At 5–30 r/s, a roller of about 2,5 cm gives about 1–9 km/h, which is realistic for a lab measurement. The single-coil model was kept as a stated simplification.
-- L2-06 c) uncertainty is now right: ±0,2 V for the prediction plus ±0,1 V gives ±0,3 V, and the 0,2 V difference is smaller. "Eroa verrannollisuudesta ei voida osoittaa" follows the guardrail.
-- L3-04: c = −0,11 V is now "todennäköisesti" a measurement error. The two-point check (9,1 − 1,4)/25 = 0,308 V/Hz is right.
-- L2-05 reading: "hetkellä 12 ms (−0,1 V)" now matches the table.
-- L1-06: exactly one option is correct. The new distractor "tehollinen arvo, koska huippuarvo on pienempi" is really wrong, and its feedback is right.
-- I recomputed all new answers in one script: L1-07 20 ms, L1-08 12,02 V, L2-05 5,94 V, L2-06 2,44 %, L2-07 0,261 A, L3-04 k 0,308, c −0,107, B 0,3404 T, and 22 Hz → 6,67/6,78 V, L3-05 56,85 W. All equal answers.py and exercises.json.
-- Hash unchanged at start and end.
+- New task L1-09 only (additions only since b032dcb83~1). Checked from the text, figures.py and the catalog descriptions; I did not render the graphs.
+- Recomputed: e₀ = 5,0 V · √2 = 7,07 V ≈ 7,1 V, T = 1/40 Hz = 25 ms, so there are 4 periods in 0–100 ms. figures.py draws peak·sin(2πt/T) from 0 rising, which matches e = e₀ sin(2πft) and "nolla ja kasvamassa".
+- Options: 2 × 2 (peak 5,0 or 7,1 V; T 25 or 40 ms), so every feature appears in two options and the right one cannot be found by its form. Distractor C is the chapter's warned mistake (effective value drawn as the peak).
+- Each option figure has a full description (axes, ticks, peak and when, zero crossings, period, number of periods, minimum). The values agree with the drawn curves (6,25 ms and 10 ms peaks; 2,5 periods for T = 40 ms).
+- Feedback of every option is right; T = 1 : f and the √2 factor are the lesson's notation (U = U₀ : √2, e₀).
+- answers.py: all 19 numeric answers agree with exercises.json; the L1-09 comment is right.
+- Hash c2299a6720da2db8 at start and end.

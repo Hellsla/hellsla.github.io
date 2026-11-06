@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 1362402d4e28bc6a
-Round: 2
+CONTENT-HASH: e2a6a2d65fc2e7ac
+Round: 1
 
 ## Blocking
 
 ## Polish
-- [Minor] L1-08 — a level 1 task that needs sin 76° and the inclination idea is at the upper end of level 1 (carried over; the number 53 µT / 51 µT is now consistent in task, solution and answers.py) — keep, or add the hint "pystykomponentti on $B\sin I$".
+- [Minor] L1-09 — the sentence "Maan magneettikenttä on magneetin lähellä paljon magneetin kenttää heikompi" sits in the task text and hands over the reason for statement 2; acceptable as a premise, or move it into the solution.
 
 ## Checked
-- Round 1 had no Blocking items. Round 1 Polish: L3-05 now has its own data (r = 12…30 cm, tan θ, r^3 model and null point), so it no longer repeats L2-05; the Vastaus a) is written as $5{,}3\ldots6{,}3 \cdot 10^{4}\,\mu\text{T}\cdot\text{cm}^3$. Both resolved.
-- Captures L2-1280-6 (L2-05, now with 8,0 cm / 16 cm and the ratio 7,3 against 2^3 = 8) and L3-1280-7 (L3-05 Sijoitus, cube-root chain, Vastaus a-c): rows aligned, no red KaTeX, no clipping.
-- Recomputed L1-08 (51,4 µT), L2-05 (45,8; 14,5; 6,23 µT; ratio 7,3), L3-05 (k = 59,1·10^3; r_0 = 16,2 cm): the answers match the solutions and the task tables.
-- Reordered multiple-choice options (answer positions) are text only, as intended.
-- check_layout 360/768/1280 clean in the packet.
+- Rendered at 390 px with my own script (/tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-fy7-1-k7q2/vis_fy7_k7q2.py): the new task opened, wrong and right answers chosen so the feedback shows, Vastaus and Näytä ratkaisu open. Measured: no horizontal overflow (document 390 px, nothing past the viewport), no red KaTeX, no inline formula wider than 300 px, task card 330 px wide. Read from text only: option form tells, distractors against the chapter's warned mistake, scope against earlier chapters, spelling, Finnish.
+- Delta only: the new task and its solution (render), the re-split task texts (situation, then question) as text.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations n/a · typography 5 · Finnish 5 · accessibility 4

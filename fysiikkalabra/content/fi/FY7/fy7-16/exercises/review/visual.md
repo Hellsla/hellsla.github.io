@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 71c65847b5364a38
-ROUND: 2
+CONTENT-HASH: 17151a3c70a4f503
+Round: 1
 
 ## Blocking
 
 ## Polish
-- Ei huomautettavaa.
+
 
 ## Checked
-- 16 muutetut tehtävät: lasi-MC (vaihtoehtojen järjestys ja sanamuodot), desibelitehtävä (”…”-lainausmerkit korjattu), induktioliesi (tehtävätekstin kappalejako, toleranssi); open-exercises-L3-1280-6 (latauksen interpolointi, 13 mm) ja viereiset osat. Ehjä renderöinti.
-- Kierros 1: Blocking oli tyhjä; kierroksen 1 Polish-kohdat käyty läpi (taulukoiden desimaalipiste on JSON-tallenne, ei virhe). 360 px:n tehtäväkaappauksia ei ole; layout 360 px -tarkistus on ok. Ei paljaita yksiköitä tekstissä (skriptitarkistus), hash alussa ja lopussa sama.
+- Kuvat 390 px (oma skripti vis_k7q.py, uusi tehtävä palautteineen ja ratkaisuineen auki): doc scrollWidth 390, ei vaakaylivuotoa, ei yli 300 px leveitä KaTeX-ketjuja, ei KaTeX-virheitä. Sivun 1280 px -kaappauksia en avannut; ne ja muu sivu katsottu vain tekstistä ja determinististen tarkistusten perusteella.
+- 16-x (L2-08): 390 px, palaute ja ratkaisu auki: aligned-lohkot ja murtolausekkeet mahtuvat, ei ylivuotoa.
+- Muoto: oikea vaihtoehto ei ole pisin; harhat ovat yksikkövirheet suuruusluokissa (kilometrit, $10^5$, km/s). Vaihtoehdot yhdenmuotoiset. Tekstistä ja renderistä.
+- L3-01..L3-03: kappalejako ok.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

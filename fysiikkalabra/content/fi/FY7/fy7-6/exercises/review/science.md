@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: d5bc25b33d24fba8
-ROUND: 2
+CONTENT-HASH: 958094b9ba257773
+ROUND: 1
 
 ## Blocking
 
 ## Polish
-- exercises.json:124 (L2-02, an existing task): still "käämin läpi kulkeva magneettivuo". Fix: "yhden kierroksen läpi", as in L1-08 and L2-07 now.
-- solutions.md L2-05 c): "voima on molemmissa sama, mutta vauhti on pienempi, joten jarruttaa voimakkaammin samalla vauhdilla" uses F ∝ v (or at least F increasing with v), but the task does not state that. Fix: add "kun jarruttava voima kasvaa vauhdin mukana".
+- exercises.json:263 (L2-08, correct choice) — the feedback "hylkivä voima niin kauan kuin käämin virta kasvaa" names the repulsion and the growing current, which points at reason 3 before the reason stage is answered (FY3 lesson) — shorten to "Oikein: rengas hypähtää ylöspäin." and leave the mechanism to the reason feedback.
+- exercises.json:251 (L2-08) — with an air-core coil and a battery the jump is real but small; the classic Thomson ring uses an iron core. Optional: "käämin sisällä on rautasydän" makes the "hypähtää" outcome realistic without changing any option (C, a fair simplification as written).
 
 ## Checked
-- All round-1 Polish items are done. L2-04: the out-of-range clause was dropped. L1-08 and L2-07 now say "yhden kierroksen" flux. L2-07 says "keskimääräinen induktiojännite" in the text and in the Periaate. L3-04 c) now asks for the (t, v) graph.
-- L3-05 new data (1,00/0,80/0,50/0,25 mm): the sheets are now below the skin depth (about 0,7 mm at 50 Hz, borderline at 1,00 mm), and the task states the thin-sheet condition. P/d² = 1,21; 1,19; 1,24; 1,17, so k = 1,201 W/mm² and P(0,35 mm) = 0,147 W → 0,15 W, within tolerance. d) now compares with 0,35 mm: (1,0/0,35)² = 8,2, which is right.
-- L2-05: t̄ = 7,32 s, P = 26,8 mW; F:v = 1,44 against 0,78 N·s/m. The 3,3 s difference is far above the ±0,3 s spread.
-- L3-04: the new explanation of the 6 % gap (the curvature of a central difference) is right. The exact model gives 2,79 against a tangent of 2,61 m/s².
-- L2-07: e·Δt has a mean of 0,1046 V·s, so ΔΦ = 0,349 mWb. c) is answered in the solution.
-- L1-06 and L1-07: the options were reordered and shortened. Exactly one option is correct, the distractors are still wrong, and the feedback is unchanged and right.
-- I recomputed all new answers in one script, and they agree with answers.py: L1-08 6,0 V; L2-05 26,8 mW; L2-07 0,349 mWb; L3-04 2,65 m/s²; L3-05 0,147 W.
-- Hash unchanged at start and end.
+- New task only (git diff b032dcb83~1..HEAD: additions only, the rest of the set was PASS). Checked from the text only; no renders (science role, no formula chains in this task).
+- Physics: growing coil current, growing flux through the ring, the induced field opposes the growth, the ring's coil-side face is the same pole as the coil's top, repulsion only while the current changes. All right, and the solution says the same as the lesson (Lenz from energy conservation).
+- Exactly one correct choice and one correct reason; each distractor has its own wrong idea: the chapter's warned "metal is attracted" (reason 1), the reversed Lenz direction (reason 2), "DC gives no induction" (reason 4), and a true but irrelevant statement (reason 5).
+- Form: the reasons are 85–95 characters each; the correct one is not the longest, not the only hedged one.
+- Scope: the coil field (fy7-3) and induction (fy7-5) only; Al called non-ferromagnetic with no para-magnetism, as the scope requires.
+- solutions.md L2-08 has Kysytty, Periaate and Mallivastaus, and explains each wrong reason.
+- answers.py ran with -I: all 14 numeric answers agree with exercises.json within tolerance; the L2-08 comment line is right.
+- Hash 958094b9ba257773 at start and end.

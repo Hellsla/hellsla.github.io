@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: a48533fe7157ea8e
-ROUND: 2
+CONTENT-HASH: 58b13b3e6286c0a5
+Round: 1
 
 ## Blocking
-(none) Round 1 had none; the round-2 changes (L1-07 answer rounded to 2,3 V, L2-05 now uses the single 0,40-0,50 s interval, L3-04 chains split into two boxes, L3-05 |A| wording) render correctly.
 
 ## Polish
-- [Minor] exercises.json L3-05 table — negative values "-0,02", "-0,32", "-2,15" still typed with a hyphen; use a real minus sign "−".
+- [Minor] L1-09 solution — Järkevyys is run into the end of the long Mallivastaus paragraph (about 130 words) instead of its own block; split it off.
 
 ## Checked
-- 1280 px: L2 part 8 (L2-05 vuo-taulukko/graph reading), L3 parts 5 and 7 (L3-04 vaunu, L3-05 käämi pulses), changed tasks and layout around them. No exercise captures at 360/390 px; relies on green check_layout 360 px.
-- Tables, answer boxes, aligned chains, display formulas: no clipping, overflow or red KaTeX. Changed answers recomputed (1,452 V, 0,164 V/s, 2,25 V ≈ 2,3 V): match.
-- Hash checked at start: a48533fe7157ea8e.
+- Rendered at 390 px with my own script (/tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-fy7-1-k7q2/vis_fy7_k7q2.py): the new task opened, wrong and right answers chosen so the feedback shows, Vastaus and Näytä ratkaisu open. Measured: no horizontal overflow (document 390 px, nothing past the viewport), no red KaTeX, no inline formula wider than 300 px, task card 330 px wide. Read from text only: option form tells, distractors against the chapter's warned mistake, scope against earlier chapters, spelling, Finnish.
+- Delta only: the new task and its solution (render), the re-split task texts (situation, then question) as text.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 5 · accessibility 4
+illustrations n/a · typography 5 · Finnish 5 · accessibility 4

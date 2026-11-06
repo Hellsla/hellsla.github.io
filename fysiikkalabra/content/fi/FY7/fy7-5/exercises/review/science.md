@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: a48533fe7157ea8e
-ROUND: 2
+CONTENT-HASH: 58b13b3e6286c0a5
 
 ## Blocking
+- (none)
 
 ## Polish
-- exercises.json:125 (L2-05): still open from round 1. `graph` was dropped, but the plan's "piirrä e(t) annetusta Φ(t):stä toisella N:llä" task is still missing from the set. Fix: add the e(t) drawing as part b), or update docs/exercise-bank/FY7.md.
-- exercises.json:323 (L3-05): still open from round 1. Its core (Φ = pulse area ÷ N) repeats L3-03, and the plan's flip-coil task (B and inclination) was not written. Pedagogy and the plan should decide.
-- lessons/FY7/fy7-5/answers.py: L1-07 still computes 2,25 while exercises.json gives 2,3 (it is inside the 0,03 tolerance, so this is not a defect). Fix: `round(..., 1)` or a comment saying the exercise rounds to 2,3.
+- exercises.json:98 fy7-5-L1-09 tilanne C — 8,0 mWb through one turn means 0,5 T over 160 cm², far more than a bar magnet gives inside a school coil (about 0,1 mWb); use e.g. 0,080 mWb (the order does not change, e = 0 still).
 
 ## Checked
-- Round-1 Blocking item L1-07 is resolved. The answer is 2,3 V with tolerance 0,03, the solution gives the two-figure reason from 0,90 V, and 2,25 V is still accepted.
-- L2-05: the solution now lists every ΔΦ (0,98; 1,05; 0,97; 0,01; 1,21; 1,20 mWb). The steepest interval is 0,40–0,50 s, giving 1,452 V, and it notes that the whole-phase mean gives the same value. answers.py was changed to match.
-- L3-04: k = 0,164 V/s from the least-squares fit through the origin, which I recomputed as 0,16434. a = 1,64 m/s² and s = 1,18 m.
-- L3-05: |A_a| = NΦ, so the sign problem is gone. The trapezoid values recomputed to 0,0778 and −0,0787 mWb. The added "pinta-ala" wording in a) is right.
-- L1-06 and L2-07: the options were reordered and shortened. Exactly one option is correct, and every feedback is still right. "kohtisuorassa kenttää vastaan mutta liikkuu kentän suuntaisesti" is unambiguous.
-- I recomputed all eight new answers in one script, and they agree with exercises.json and answers.py: L1-07 2,25→2,3 V; L1-08 0,060 T; L2-05 1,45 V; L2-06 0,150 T; L3-04 1,64 m/s²; L3-05 0,078 mWb.
-- The other diffs only add paragraph breaks or change "-" to "−" in table cells, with no change to the physics. Hash unchanged at start and end.
+- Round 1, full mode; only L1-09 is new (type 9, ordering; prompt names |e| and "pienimmästä suurimpaan"). Hash identical start and end.
+- Recomputed: A 200 · 3,0 mWb / 0,50 s = 1,2 V, B 50 · 6,0 mWb / 0,10 s = 3,0 V, C 0 (no change of flux), D vBl = 4,0 · 0,30 · 0,50 = 0,60 V, E 1 · 40 mWb / 0,020 s = 2,0 V; order C, D, A, E, B matches `order`, `answer` and the answers.py comment. Gaps between values are large, so rounding cannot change the order.
+- Conditions stated: uniform change, "yhden kierroksen vuo" defined in the task (as in the lesson), rod, v and B mutually perpendicular for e = vBl.
+- The chapter's warned mistakes are built in and named in the solution: forgetting N (A, B drop to 6,0 mV and 60 mV, checked) and "large flux, large voltage" (C). Sign of E handled correctly as magnitude only.
+- Solution complete, each formula before substitution; inline chains short (estimated under 250 px, text only, not rendered).
+- All numeric answers of the chapter recomputed in one script: all within tolerance.

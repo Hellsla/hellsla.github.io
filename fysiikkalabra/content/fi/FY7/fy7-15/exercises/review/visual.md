@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 1e3facb8514637c6
-ROUND: 2
+CONTENT-HASH: 56b28525a948484b
+Round: 1
 
 ## Blocking
 
 ## Polish
-- [Minor] fy7-15-L3-05 a) — Auringon korkeus 36,9° on sama luku kuin vanhan tehtävän 15-17 vastaus — for pedagogy: vaihda aine tai kysy muuta.
+- [Minor] fy7-15-L1-09 — viiden tilanteen kuvaus on pitkä tekstimuuri puhelimella (noin 150 sanaa); harkitse tilanteiden lyhyempää muotoa tai taulukkoa. Ei estä käyttöä.
 
 ## Checked
-- 15 muutetut tehtävät: Malus-tehtävä (kysymysjärjestys, toleranssi), Brewster-virheanalyysi (”…”-lainausmerkit korjattu), kolmen polarisaattorin tehtävä (kappalejako), kalastaja (c-kohdan lisäys, vastaus 7,1 W/m²); open-exercises-L3-1280-4, -7. Kaikki renderöityvät ehjinä.
-- Kierros 1: Blocking oli tyhjä; kierroksen 1 Polish-kohdat käyty läpi (taulukoiden desimaalipiste on JSON-tallenne, ei virhe). 360 px:n tehtäväkaappauksia ei ole; layout 360 px -tarkistus on ok. Ei paljaita yksiköitä tekstissä (skriptitarkistus), hash alussa ja lopussa sama.
+- Kuvat 390 px (oma skripti vis_k7q.py, uusi tehtävä palautteineen ja ratkaisuineen auki): doc scrollWidth 390, ei vaakaylivuotoa, ei yli 300 px leveitä KaTeX-ketjuja, ei KaTeX-virheitä. Sivun 1280 px -kaappauksia en avannut; ne ja muu sivu katsottu vain tekstistä ja determinististen tarkistusten perusteella.
+- 15-9 (L1-09): järjestystehtävä 390 px, vastaus ja ratkaisu auki: valintalistat "Sija" mahtuvat korttiin, ketjut mahtuvat, ei ylivuotoa. Järjestelyn käyttö (select-sijat) vain staattisesti, ei interaktiota.
+- Muoto: oikea järjestys ei ole tunnistettavissa muodosta; harhat (ilman neliötä, puolitus unohtunut) ovat ratkaisussa. Tekstistä ja renderistä.
+- L3-03: kappalejako ok.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

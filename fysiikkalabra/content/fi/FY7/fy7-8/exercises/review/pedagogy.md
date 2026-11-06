@@ -1,20 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: b0742fa0acf09e72
-ROUND: 2
+CONTENT-HASH: c062ee293a88ae2f
+
+Round 1 (new task fy7-8-L2-08, order of magnitude; rest of set PASS before)
 
 ## Blocking
-(none) Round 1 flagged only paragraph count (L3-04, L3-05); under the rule lettered parts stand alone. L3-04's 40-word lead mixing situation and data is now split (23 + 21 words).
+(none)
 
 ## Polish
-- L3-04 uses the same 220 and 400 kV pair as L3-03, so the 3,3 ratio repeats; consider other voltages.
-- L3-05: the condition P0 = aP2 is given, not derived; the solution now says so, good. Name which row is the main fit for a.
-- L3-04: "johtimien yhteinen resistanssi" now clarifies the whole circuit; a short note on three phases is optional.
-- L1-08 now gives eta = P2 : P1 in the task, which fixes the earlier gap.
+- exercises.json:237 — options are 0,1 kW, 10 kW, 10 MW, 1000 MW: gaps of 100, 1000, 100. The task says values a factor 10-100 apart; use a spacing of 10-100 throughout, e.g. 0,1 kW, 10 kW, 1 MW, 100 MW, and re-check that each feedback still matches its value.
+- exercises.json (feedback of 10 MW) — "mikä on mahdotonta" is right only for 10 MW (above 3,0 MW); the 1000 MW option is also impossible but its feedback does not say it. One sentence "Tämä olisi myös moninkertaisesti voimalan tehoa suurempi" helps.
+- exercises.json:237 — the answer says "noin 10 kW" while the calculation gives 11 kW; fine, but add "Pyöristä suuruusluokkaan" to the stem so students do not look for 11 kW.
 
 ## Checked
-- Counts 8/7/5; new tasks have complete solutions.
-- L2-06 answer 87,72 % (solution 87,7 %, three s.f.) matches; "oletetaan P1 = U1 I1" added in task and solution.
-- L3-05: P0 = 0,6 kW, a = 2,03e-4 from the 80 kW row, P = sqrt(P0/a) = 54 kW; range 49-57 kW from rows 20-60 kW stated honestly.
-- L3-04: R = 6 Ω, 909 and 500 A, 4,96 and 1,50 MW, 43 440 and 13 140 MWh, 1,515 M€ unchanged and correct; "vakio teho" wording added.
-- L2-05 k = 0,012354 V/kierros, N1 = 486; L1-07 reworded (current settled), L1-07/L2-07 error analysis sound.
-- Levels fit the plan; no duplicate of the worked example; no lead text over 45 words.
+- Recomputed: I = 150 A, P_h = 11,25 kW; wrong options 75 V read as watts (0,1 kW), I = 4350 A at 690 V giving 9,5 MW, U squared over R = 800 MW.
+- Distractors catch the chapter's warned mistake (P = U^2 : R, option 4) and the lesson's "voltage drop is R I" idea (option 1).
+- Correct option not identifiable by form: options ascending, answer is second; not the only one with the unit kW.
+- Within chapter: P = U I, P_h = R I^2 and ideal transformer only. Situation first, question last as own sentence.
+- Solution step by step with sanity check.
+- Checked from text only (no renders; pedagogy role); inline formulas measured as KaTeX renders at 390 px: I 122 px, P_h 174 px, fit.

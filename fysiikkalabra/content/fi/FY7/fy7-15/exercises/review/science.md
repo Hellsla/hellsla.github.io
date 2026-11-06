@@ -1,17 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 1e3facb8514637c6
-Round 2.
+CONTENT-HASH: 56b28525a948484b
+
+Round 1 (exercises): full review; new YO-skill task fy7-15-L1-09 (järjestäminen), the rest of the set PASS before. Checked from the text only; no renders.
 
 ## Blocking
 
 ## Polish
-- exercises.json:124 (L2-05 tolerance 0.015) — the page accepts at least 2 % (lesson.js), so 0,015 has no effect. The box accepts 307,7–320,3 lx, not the 309–319 lx the solution states. 322 lx is still only "Lähellä", so the intent holds. Either write "noin 308–320 lx" or leave the tolerance at the default.
-- solutions.md L3-05 c (new sentence) — "polaroidut lasit puolittavat" holds for an ideal polariser. Add "ihanteelliset" (real lenses pass about 40 %).
+- solutions.md:168 (L1-09) — "välissä oleva polarisaattori kääntää polarisaatiosuunnan" suggests a rotation without loss; the lesson says the polariser selects a direction — fix with the lesson's words: "välissä olevan polarisaattorin läpi tullut valo on polarisoitunut 45,0°:n kulmaan, joten sillä on komponentti myös toisen polarisaattorin läpäisysuunnassa."
+- Carried over: L2-05 tolerance range; "ihanteelliset" in L3-05 c.
 
 ## Checked
-- Round-1 Blocking L3-04 Järkevyys resolved: the readings now differ from the calculated values in both directions (60°: 93 against 90 W/m²), and this is called measurement uncertainty. The model 120 sin²2θ gives 0/30/90/120/90/30/0.
-- Round-1 Polish resolved: L3-04 c (the transmitted light is polarised along the transmission axis and part of it is absorbed); 12,5 % is called exact (1/8); L3-05 7,1 W/m² is limited by I₀ = 40 W/m²; L2-07 adds that 36,3° is the Brewster angle from inside the ethanol.
-- One script recomputed every new answer: 98,70 W/m²; 55,59°; LSQ slope 313,9 lx with intercept 6,9 lx; 50,77°; 53,67°; 12,5 %; α_B 53,06°, Sun altitude 36,94°, 7,144 W/m², tinted glass 12 W/m², crossover 56,8°/33,2°. All agree with exercises.json and answers.py.
-- L3-05 c addition: unpolarised light is halved against 30 %, so plain tint darkens the rest of the view more. Correct.
-- L1-06 reordered: one correct option, it matches `answer`, and the feedback on each distractor is right.
-- Hash the same at start and end.
+- Hash 56b28525a948484b at start and end.
+- L1-09 values recomputed: A 600 · cos² 60° = 150; B 400 : 2 = 200; C 320 · cos² 30° = 240; D 800 : 2 · cos² 60° = 100; E 500 · cos² 45° · cos² 45° = 125 W/m². Order D, E, A, B, C right; all values distinct.
+- Prompt names the quantity and the direction ("pienimmästä suurimpaan").
+- The three warned mistakes are caught: halving forgotten (B 400, largest), cos without the square (A 300, order changes; checked), the third polariser letting light through (E). Angle definitions in the task are unambiguous.
+- Malus is extension (syventävä) in FY7; L1-09 is not marked core, consistent with L1-07 and L2-01/02.
+- Solution complete; inline chains split with "eli", display line for E estimated under 300 px (text only).
+- answers.py output equals exercises.json for all 19 numeric answers.
