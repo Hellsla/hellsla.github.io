@@ -29,6 +29,7 @@ GAS_COURSE = "FY3"   # Tehtavat.gs
 # (its own title without the number and kind, and the start of the question) so that the fingerprint tells its content.
 SELF_ITEMS = r"""(() => [...document.querySelectorAll('fieldset.sa-rate')].map((f) => {
   const out = { id: f.dataset.sa, label: f.dataset.label };
+  if (f.closest('details.opt')) out.optional = true;   // a Valinnainen task: not in the summary's average (teacher 2026-11-06)
   const act = f.closest('.activity');
   if (!act || /^tavoite-/.test(out.id)) return out;
   // the question itself: a numeric or explain task's .task, a choice's legend, the reflection's first item (not its answer)

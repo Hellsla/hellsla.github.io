@@ -186,6 +186,7 @@ var RL_COURSE = {
     {
      "id": "check-3",
      "label": "Selitä ja siirrä: Selitä omin sanoin, miksi astronautti painaa Kuussa vain noin kuudesosan siitä, mitä hän painaa Maassa, vaikka hänestä ei ole kadonnut mitään. Käytä käsitteitä massa, paino ja vuorovaikutus sekä yksiköitä.",
+     "optional": true,
      "full": "Selitä ja siirrä: Selitä omin sanoin, miksi astronautti painaa Kuussa vain noin kuudesosan siitä, mitä hän painaa Maassa, vaikka hänestä ei ole kadonnut mitään. Käytä käsitteitä massa, paino ja vuorovaikutus sekä yksiköitä.",
      "kind": "5. Selitystehtävä"
     },
@@ -378,12 +379,14 @@ var RL_COURSE = {
     {
      "id": "check-2",
      "label": "Kuvaaja ja laskeminen: (s, F)-kuvaajassa liikkeen suuntainen voima on 30 N välillä 0–4,0 m ja laskee sitten tasaisesti nollaan välillä 4,0–8,0 m. Kuinka suuren työn voima tekee koko 8,0 m:n matkalla? Vastaa jouleina.",
+     "optional": true,
      "full": "Kuvaaja ja laskeminen: (s, F)-kuvaajassa liikkeen suuntainen voima on 30 N välillä 0–4,0 m ja laskee sitten tasaisesti nollaan välillä 4,0–8,0 m. Kuinka suuren työn voima tekee koko 8,0 m:n matkalla? Vastaa jouleina.",
      "kind": "4. Laskutehtävä"
     },
     {
      "id": "check-3",
      "label": "Selitä ja siirrä: Selitä omin sanoin, miksi hissin moottori tekee saman työn riippumatta nostonopeudesta, mutta tarvitsee nopeammassa nostossa suuremman tehon. Käytä käsitteitä työ, teho ja yksiköitä.",
+     "optional": true,
      "full": "Selitä ja siirrä: Selitä omin sanoin, miksi hissin moottori tekee saman työn riippumatta nostonopeudesta, mutta tarvitsee nopeammassa nostossa suuremman tehon. Käytä käsitteitä työ, teho ja yksiköitä.",
      "kind": "5. Selitystehtävä"
     },
@@ -582,6 +585,7 @@ var RL_COURSE = {
     {
      "id": "check-3",
      "label": "Selitä mikromallin avulla, miksi lämpötilojen suhteita verrataan kelvineinä eikä celsiusasteina ja miksi kelvinlämpötila ei voi olla negatiivinen.",
+     "optional": true,
      "full": "Selitä mikromallin avulla, miksi lämpötilojen suhteita verrataan kelvineinä eikä celsiusasteina ja miksi kelvinlämpötila ei voi olla negatiivinen.",
      "kind": "5. Selitystehtävä"
     },
@@ -774,12 +778,14 @@ var RL_COURSE = {
     {
      "id": "tarkistus-2",
      "label": "Nollapiste kahdesta pisteestä: Suoralta luetaan pisteet (15,0 ^circC; 108,0 kPa) ja (95,0 ^circC; 137,0 kPa). Määritä lämpötila, jossa suora antaa paineeksi nollan. Vastaa celsiusasteina.",
+     "optional": true,
      "full": "Nollapiste kahdesta pisteestä: Suoralta luetaan pisteet (15,0 ^circC; 108,0 kPa) ja (95,0 ^circC; 137,0 kPa). Määritä lämpötila, jossa suora antaa paineeksi nollan. Vastaa celsiusasteina.",
      "kind": "4. Laskutehtävä"
     },
     {
      "id": "tarkistus-3",
      "label": "Selitä ja arvioi: Miksi ekstrapoloinnilla saatu absoluuttisen nollapisteen arvo on epävarmempi kuin mitkään mittausalueella luetut paineet, ja miten epävarmuutta voitaisiin pienentää?",
+     "optional": true,
      "full": "Selitä ja arvioi: Miksi ekstrapoloinnilla saatu absoluuttisen nollapisteen arvo on epävarmempi kuin mitkään mittausalueella luetut paineet, ja miten epävarmuutta voitaisiin pienentää?",
      "kind": "5. Selitystehtävä"
     },
@@ -978,6 +984,7 @@ var RL_COURSE = {
     {
      "id": "check-3",
      "label": "Selitä ja siirrä: Sukeltaja on 3,0 m:n syvyydessä, ja korvassa tuntuu painetta. Kun hän tasaa paineen päästämällä ilmaa nielusta välikorvaan, tunne katoaa. Selitä paineen avulla, miksi tärykalvoon kohdistuu aluksi voima ja miksi se häviää tasauksessa. Käytä käsitteitä paine, ylipaine ja voima.",
+     "optional": true,
      "full": "Selitä ja siirrä: Sukeltaja on 3,0 m:n syvyydessä, ja korvassa tuntuu painetta. Kun hän tasaa paineen päästämällä ilmaa nielusta välikorvaan, tunne katoaa. Selitä paineen avulla, miksi tärykalvoon kohdistuu aluksi voima ja miksi se häviää tasauksessa. Käytä käsitteitä paine, ylipaine ja voima.",
      "kind": "5. Selitystehtävä"
     },
@@ -1170,12 +1177,14 @@ var RL_COURSE = {
     {
      "id": "check-2",
      "label": "Energiakirjanpito: Sylinterin kaasu käy läpi kaksi vaihetta. Vaiheessa 1 mäntä puristaa kaasua tehden siihen työn 80 J, ja kaasusta siirtyy seiniin lämpömäärä 30 J. Vaiheessa 2 kaasuun siirtyy lämpömäärä 50 J, ja kaasu laajenee tehden mäntään työn 70 J.",
+     "optional": true,
      "full": "Energiakirjanpito: Sylinterin kaasu käy läpi kaksi vaihetta. Vaiheessa 1 mäntä puristaa kaasua tehden siihen työn 80 J, ja kaasusta siirtyy seiniin lämpömäärä 30 J. Vaiheessa 2 kaasuun siirtyy lämpömäärä 50 J, ja kaasu laajenee tehden mäntään työn 70 J.",
      "kind": "4. Laskutehtävä"
     },
     {
      "id": "check-3",
      "label": "Selitä ja siirrä: Pumppaat samaa rengasta kahdesti samaan paineeseen: kerran nopeasti ja kerran hyvin hitaasti. Kummallakin kerralla teet ilmaan suunnilleen saman työn. Selitä, miksi pumppu lämpenee nopeasti pumpatessa enemmän. Käytä käsitteitä sisäenergia, työ ja lämpö sekä yhtälöä ΔU = Q + W.",
+     "optional": true,
      "full": "Selitä ja siirrä: Pumppaat samaa rengasta kahdesti samaan paineeseen: kerran nopeasti ja kerran hyvin hitaasti. Kummallakin kerralla teet ilmaan suunnilleen saman työn. Selitä, miksi pumppu lämpenee nopeasti pumpatessa enemmän. Käytä käsitteitä sisäenergia, työ ja lämpö sekä yhtälöä ΔU = Q + W.",
      "kind": "5. Selitystehtävä"
     },
@@ -1374,6 +1383,7 @@ var RL_COURSE = {
     {
      "id": "tarkistus-3",
      "label": "Selitä ja siirrä: Suuren järven rannalla syksyn yöt ovat usein lauhempia ja kevään päivät viileämpiä kuin kaukana sisämaassa. Selitä ilmiö käyttämällä käsitteitä ominaislämpökapasiteetti ja lämpömäärä.",
+     "optional": true,
      "full": "Selitä ja siirrä: Suuren järven rannalla syksyn yöt ovat usein lauhempia ja kevään päivät viileämpiä kuin kaukana sisämaassa. Selitä ilmiö käyttämällä käsitteitä ominaislämpökapasiteetti ja lämpömäärä.",
      "kind": "5. Selitystehtävä"
     },
@@ -1572,6 +1582,7 @@ var RL_COURSE = {
     {
      "id": "check-3",
      "label": "Selitä ja siirrä: Miksi 100-asteinen höyry polttaa ihoa pahemmin kuin sama massa 100-asteista vettä? Käytä selityksessä olomuodon muutosta ja energiaa.",
+     "optional": true,
      "full": "Selitä ja siirrä: Miksi 100-asteinen höyry polttaa ihoa pahemmin kuin sama massa 100-asteista vettä? Käytä selityksessä olomuodon muutosta ja energiaa.",
      "kind": "5. Selitystehtävä"
     },
@@ -1770,6 +1781,7 @@ var RL_COURSE = {
     {
      "id": "tarkistus-3",
      "label": "Selitä ja siirrä: Juoman viilentämiseen käytetään jääkuutioita. Selitä, miksi 0-asteinen jää viilentää juomaa paljon tehokkaammin kuin sama massa 0-asteista vettä, ja miksi jäätä voi jäädä lasiin, vaikka juoma on huoneenlämpöistä.",
+     "optional": true,
      "full": "Selitä ja siirrä: Juoman viilentämiseen käytetään jääkuutioita. Selitä, miksi 0-asteinen jää viilentää juomaa paljon tehokkaammin kuin sama massa 0-asteista vettä, ja miksi jäätä voi jäädä lasiin, vaikka juoma on huoneenlämpöistä.",
      "kind": "5. Selitystehtävä"
     },
@@ -1968,6 +1980,7 @@ var RL_COURSE = {
     {
      "id": "check-3",
      "label": "Selitä ja siirrä: Selitä mikromallin avulla, miksi teräskisko pitenee lämmetessään, ja miksi saman lämpötilan nousu kasvattaa vakiopaineisen ilman tilavuutta suhteessa paljon enemmän kuin kiskon tilavuutta.",
+     "optional": true,
      "full": "Selitä ja siirrä: Selitä mikromallin avulla, miksi teräskisko pitenee lämmetessään, ja miksi saman lämpötilan nousu kasvattaa vakiopaineisen ilman tilavuutta suhteessa paljon enemmän kuin kiskon tilavuutta.",
      "kind": "5. Selitystehtävä"
     },
@@ -2364,6 +2377,7 @@ var RL_COURSE = {
     {
      "id": "check-3",
      "label": "Selitä punnituksen avulla: Selitä punnituksen ja tilanyhtälön avulla, miksi kahdessa yhtä suuressa astiassa on samassa paineessa ja lämpötilassa yhtä monta moolia kaasua, olipa kaasu mikä tahansa.",
+     "optional": true,
      "full": "Selitä punnituksen avulla: Selitä punnituksen ja tilanyhtälön avulla, miksi kahdessa yhtä suuressa astiassa on samassa paineessa ja lämpötilassa yhtä monta moolia kaasua, olipa kaasu mikä tahansa.",
      "kind": "5. Selitystehtävä"
     },
@@ -2760,6 +2774,7 @@ var RL_COURSE = {
     {
      "id": "check-3",
      "label": "Selitä ja vertaa: Kaupunki harkitsee voimalaitosta. Lauhdevoimalaitoksen hyötysuhde on 0,40. Yhteistuotantolaitoksen kokonaishyötysuhde on 0,88, mutta sähköä siitä on vain 0,30 polttoaineen tehosta. Selitä, miksi yhteistuotantolaitos ei ole yksinkertaisesti yli kaksi kertaa parempi kuin lauhdevoimalaitos, ja kerro, mitä tietoa vertailuun tarvitaan.",
+     "optional": true,
      "full": "Selitä ja vertaa: Kaupunki harkitsee voimalaitosta. Lauhdevoimalaitoksen hyötysuhde on 0,40. Yhteistuotantolaitoksen kokonaishyötysuhde on 0,88, mutta sähköä siitä on vain 0,30 polttoaineen tehosta. Selitä, miksi yhteistuotantolaitos ei ole yksinkertaisesti yli kaksi kertaa parempi kuin lauhdevoimalaitos, ja kerro, mitä tietoa vertailuun tarvitaan.",
      "kind": "5. Selitystehtävä"
     },
@@ -2952,6 +2967,7 @@ var RL_COURSE = {
     {
      "id": "check-2",
      "label": "Ilmakehän energiatase: Tutki-vaiheen ensimmäisen taulukon mallissa maanpinta säteilee 390 W/m^2. Siitä 100 W/m^2 pääsee ilmakehän läpi suoraan avaruuteen, ja loput ilmakehä imee. Ilmakehä säteilee alas maanpinnalle 150 W/m^2. Koko maapallo on tasapainossa, joten avaruuteen lähtee yhteensä 240 W/m^2.",
+     "optional": true,
      "full": "Ilmakehän energiatase: Tutki-vaiheen ensimmäisen taulukon mallissa maanpinta säteilee 390 W/m^2. Siitä 100 W/m^2 pääsee ilmakehän läpi suoraan avaruuteen, ja loput ilmakehä imee. Ilmakehä säteilee alas maanpinnalle 150 W/m^2. Koko maapallo on tasapainossa, joten avaruuteen lähtee yhteensä 240 W/m^2.",
      "kind": "4. Laskutehtävä"
     },
@@ -3156,6 +3172,7 @@ var RL_COURSE = {
     {
      "id": "check-3",
      "label": "Selitä ja siirrä: Löylyvettä heitetään 25 kg:n kiuaskiville. Selitä energian säilymisen ja olomuodon muutoksen avulla, miksi kivien lämpötila laskee heti ja miksi löyly tuntuu kuumalta iholla.",
+     "optional": true,
      "full": "Selitä ja siirrä: Löylyvettä heitetään 25 kg:n kiuaskiville. Selitä energian säilymisen ja olomuodon muutoksen avulla, miksi kivien lämpötila laskee heti ja miksi löyly tuntuu kuumalta iholla.",
      "kind": "5. Selitystehtävä"
     },
