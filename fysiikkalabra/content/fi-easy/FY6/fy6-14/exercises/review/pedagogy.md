@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 52fc2f236602dd83
+CONTENT-HASH: b600ad4b0b99295c
 Mode: full (translation review against the reviewed Finnish set)
 Round 1
 
 ## Blocking
 (none)
 
-## Fixed
-- solutions.md L1-07 Mallivastaus: "Väärät vaihtoehdot ovat virheellisiä" -> "Muut vaihtoehdot ovat vääriä" (simpler, as in L1-06).
-
 ## Polish
 (none)
 
 ## Checked
-- Level structure, task kinds and part labels a), b), c) match fi; the "result of part b" answer-box note is kept.
-- Choice feedback does not leak the answer in the wrong options and explains the misconception, as in fi.
-- Model solutions keep all steps (Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness) and the significant-figure reasoning.
-- Language is plain Finnish: short sentences, terms explained (kuormitusvastus, vaihtosuuntaaja, omavaraisuusaste, päästösuunta, estosuunta); no new terms added beyond fi.
+- New task L2-08 (two-stage reasoning, diodes in parallel branches): prompt, options, feedback and model solution carry the same teaching as the reviewed Finnish; feedback of each wrong option names its misconception without giving the answer away.
+- fi-easy follows NOTES.md section 12 (clearer Finnish, same physics).
+- Instructions say what to do in which order; the task is answerable without the lesson text beyond what the packet lists; workload unchanged.
+- Model solution keeps every step (Find, Principle, Model answer, reasonableness) and the explanation of why each wrong option fails.
+- No fixes were needed.

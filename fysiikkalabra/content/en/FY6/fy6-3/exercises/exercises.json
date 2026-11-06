@@ -129,7 +129,7 @@
         {
           "text": "Graph A",
           "figure": "fy6-3/pick-curve",
-          "feedback": "The curve passes through the point $(4.0\\,\\text{mA};\\ 8.0\\,\\text{V})$, where $U : I = 2.0\\,\\text{k}\\Omega$, but it is curved. There the resistance increases with the voltage, like in a heating filament lamp. The resistance of a resistor obeying Ohm's law is constant."
+          "feedback": "The curve passes through the point $(4.0\\,\\text{mA};\\ 8.0\\,\\text{V})$, where $U : I = 2.0\\,\\text{k}\\Omega$, but it is curved. There the resistance increases with the voltage, like in a filament lamp that heats up. The resistance of a resistor obeying Ohm's law is constant."
         },
         {
           "text": "Graph B",
@@ -140,7 +140,7 @@
           "text": "Graph C",
           "figure": "fy6-3/pick-k2",
           "correct": true,
-          "feedback": "Correct: the line passes through the origin, and at a current of $4.0\\,\\text{mA}$ $U = RI = 2.0\\,\\text{k}\\Omega \\cdot 4.0\\,\\text{mA}$, that is, $U = 8.0\\,\\text{V}$. The slope is $2.0\\,\\text{k}\\Omega$ along the whole line."
+          "feedback": "Correct: the line passes through the origin, and at a current of $4.0\\,\\text{mA}$ the voltage is $U = RI = 2.0\\,\\text{k}\\Omega \\cdot 4.0\\,\\text{mA}$, that is, $U = 8.0\\,\\text{V}$. The slope is $2.0\\,\\text{k}\\Omega$ along the whole line."
         },
         {
           "text": "Graph D",

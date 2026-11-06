@@ -118,7 +118,7 @@
         "concept",
         "reasoning"
       ],
-      "text": "A flashlight has a $3.0\\,\\text{V}$ battery, a switch and a lamp in the same loop. The switch is closed, and the lamp is lit. The values of the situation are example values, and the resistance of the wires and of the battery itself is neglected.\n\nAn ammeter connected between the positive terminal of the battery and the lamp reads $0.30\\,\\text{A}$.\n\nReason which statements are true and which are false.",
+      "text": "A flashlight has a $3.0\\,\\text{V}$ battery, a switch and a lamp in the same loop. The switch is closed, and the lamp is lit. The values of the situation are example values, and the resistance of the wires and of the battery itself is neglected.\n\nAn ammeter connected between the positive terminal of the battery and the lamp reads $0.30\\,\\text{A}$.\n\nDecide which statements are true and which are false.",
       "answer": "1 false, 2 true, 3 true, 4 false, 5 false",
       "unit": "",
       "tolerance": 0.02,

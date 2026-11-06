@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: ac9f07827b25cf14
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 0c40b39a97046bfa
+Mode: full (translation review against the reviewed Finnish set; new YO-skill task L2-08 (Coulomb scaling, two changes at once))
+Round 3
 
 ## Blocking
 (none)
-
-## Fixed
-(none needed: the text already matched fi in every number and was correct)
 
 ## Polish
 (none)
 
 ## Checked
-- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) and the older ones compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags (same option positions), data tables and captions, and every number in texts, choices and feedback are identical (decimal point in en JSON and LaTeX).
-- solutions.md: all numbers equal to fi, every new solution has the full step set (Given, Find, Principle, Formula, Conversions, Substitution, Answer, Reasonableness).
-- No Finnish left in en (grep). Terms right: torsion balance, least-squares fit, test charge, net force.
-- check_i18n.py en: 0 errors.
+- Fixed: nothing needed; the new task already matched the Finnish.
+- Parity script over all of exercises.json against fi: same keys, ids, kind lists, fbd flag, correct flags, choice order, figure ids, units, tolerances, answers; every number equals the Finnish (only the order of two given quantities differs in a few English/fi-easy sentences, no change of meaning).
+- New task L2-08 (Coulomb scaling, two changes at once): recomputed by hand from the task text; the correct option and every distractor's feedback state the same physics and numbers as fi.
+- solutions.md: same sections and same numbers as fi for all tasks (the new solution follows the same steps and reaches the same result).
+- Terms and notation as in the lesson; natural English, decimal point.
+- check_i18n: 0 errors (en); build.py fy6-10 succeeds.

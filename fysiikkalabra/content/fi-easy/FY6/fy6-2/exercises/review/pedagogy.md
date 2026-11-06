@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 4c792c32a24a66d8
-Mode: translation
-Round: 1
+CONTENT-HASH: 99b43d4ac55dcc70
 
 ## Blocking
 
 ## Fixed
-- None needed; the plain-Finnish text was already clear and equal to fi in maths.
+- L2-08 text: "resoluutio" and "virheraja" explained in the sentence (resoluutio eli pienin näyttöaskel; virheraja eli suurin mahdollinen virhe), NOTES §12.3.
 
 ## Polish
 
 ## Checked
-- Text is natural plain Finnish (selkosuomi); tasks ask the same parts a)-d) as fi and the answer-box sentence matches.
-- Distractor feedback explains why each wrong option is wrong, and exactly one option is correct, as in fi.
-- Hints in L3-04 and the formula given in L3-05 c) are kept as in fi.
-- Short sentences, terms (resoluutio, virheraja, lepojännite) explained or used as in the lesson; the added definition of lepojännite in L2-07 is correct.
+- New task fy6-2-L2-08 is a YO-skill form task at the same level and kind as in fi; situation first, question last, clear instruction.
+- Distractors and feedback are misconception-based and repair the error (same as fi); no answer disclosed in the task text.
+- Model answer is complete and follows step by step as in fi.
+- Selkeä suomi: terms explained inside the sentence, one idea per sentence, physics unchanged.

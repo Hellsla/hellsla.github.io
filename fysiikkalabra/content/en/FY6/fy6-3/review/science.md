@@ -1,9 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 7be8861751636773
+CONTENT-HASH: 1801dc8d3de815ed
 
 ## Blocking
+(none)
 
 ## Polish
+(none)
 
 ## Checked
-batch delta review: the misconception paragraph now limits the constant ratio $U : I$ to an ohmic resistor at constant temperature and conditions, and states the direct proportionality as following from that; this replaces the former unconditional "does not depend on the voltage" (a B condition now stated) and agrees with the next sentences (resistance depends on temperature; a filament lamp's resistance rises because the current heats the wire). Filament-bulb caption (tungsten filament, electron–ion collisions turning electric energy into internal energy, the wire heats up) is the school model and consistent with the lesson's last paragraph on energy, not current, being changed in a resistor. The prior-knowledge chapter reference now matches the title *Circuit, electric current and voltage*. No numbers, choices or answers changed.
+- delta (figures.json only, 384fe88c6..HEAD): lesson.md unchanged; the new "mA" word and the four (I,U) pick-* descriptions belong to exercise option figures; no lesson figure uses them.
+- Read the captured theory pages: the lesson's five figures (hero, measure-circuit, micro, curves, wire) render with the same labels and numbers as before; no figure text changed.
+- No number, symbol, option or feedback in the lesson changed; my earlier PASS stands.
+- Hash same at start and end.

@@ -145,15 +145,15 @@
 **Periaate:** Lausekkeen yksikkö saadaan sijoittamalla jokaisen suureen paikalle sen yksikkö: $Q$ ($\text{Ah}$), $U$ ($\text{V}$) ja $t$ ($\text{h}$). Voltti kertaa ampeeri on watti, joten $1\,\text{V}\cdot 1\,\text{Ah} = 1\,\text{Wh}$, joka on energian yksikkö. Akun energia on jännite kertaa varaus, $W = UQ$.
 **Mallivastaus:** Oikea on $UQ$. Lausekkeiden yksiköt:
 
-$Q$: $\text{Ah}$, varauksen yksikkö
+Lausekkeen $Q$ yksikkö on $\text{Ah}$, varauksen yksikkö
 
-$UQ$: $\text{V}\cdot\text{Ah} = \text{Wh}$, energian yksikkö
+Lausekkeen $UQ$ yksikkö on $\text{V}\cdot\text{Ah} = \text{Wh}$, energian yksikkö
 
-$\dfrac{UQ}{t}$: $\dfrac{\text{Wh}}{\text{h}} = \text{W}$, tehon yksikkö
+Lausekkeen $\tfrac{UQ}{t}$ yksikkö on $\dfrac{\text{Wh}}{\text{h}} = \text{W}$, tehon yksikkö
 
-$UQt$: $\text{Wh}\cdot\text{h}$, ei minkään tämän luvun suureen yksikkö
+Lausekkeen $UQt$ yksikkö on $\text{Wh}\cdot\text{h}$, ei minkään tämän luvun suureen yksikkö
 
-Vain lausekkeen $UQ$ yksikkö on energian yksikkö, ja se on myös akun energian kaava $W = UQ$. Pelkkä kapasiteetti $Q$ kertoo varauksen, joka akun läpi voi kulkea, eikä energiaa ilman jännitettä. Lauseke $\dfrac{UQ}{t}$ on latauksen keskimääräinen teho. Lausekkeessa $UQt$ aika on otettu mukaan kahdesti, koska ampeeritunnissa on jo aika: $1\,\text{Ah} = 1\,\text{A}\cdot 1\,\text{h}$. Latausajan tietoa ei siis tarvita energian laskemiseen.
+Vain lausekkeen $UQ$ yksikkö on energian yksikkö, ja se on myös akun energian kaava $W = UQ$. Pelkkä kapasiteetti $Q$ kertoo varauksen, joka akun läpi voi kulkea, eikä energiaa ilman jännitettä. Lauseke $\tfrac{UQ}{t}$ on latauksen keskimääräinen teho. Lausekkeessa $UQt$ aika on otettu mukaan kahdesti, koska ampeeritunnissa on jo aika: $1\,\text{Ah} = 1\,\text{A}\cdot 1\,\text{h}$. Latausajan tietoa ei siis tarvita energian laskemiseen.
 
 ## fy6-9-L2-05
 **Annettu:** purkausvirta $I = 0{,}50\,\text{A}$, mittausväli $\Delta t = 1{,}0\,\text{h}$, napajännitteet taulukosta $4{,}15\,\text{V}$, $3{,}92\,\text{V}$, $3{,}80\,\text{V}$, $3{,}71\,\text{V}$, $3{,}58\,\text{V}$ ja $3{,}12\,\text{V}$

@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: bdd32d6a736ae9e2
-Mode: full
-Round: 1
+CONTENT-HASH: beb9fc402961afe8
+Mode: delta (new YO-skill task fy6-16-L2-08, type 5 magnitude/estimate choice; one task re-paragraphed)
 
 ## Blocking
 (none)
 
-## Fixed
-- Finnish subscript in the L2-05 table header removed (house).
-
 ## Polish
-- [Minor] solutions L2-06, L2-07, L3-04, L3-05: "a) ..." sub-answers start inside the Answer paragraph, as in fi; layout unchanged from the reviewed Finnish.
+- [Minor] fy6-16-L2-08 solution — the display chain for t (fraction, then two = rows) is set in the usual card and reads well; the subscript "battery" in W_battery is a full word, which makes the fraction wide. A short subscript (W_b) would be tidier, optional.
+- [Minor] fy6-16-L2-08 solution — "Without the efficiency we get the time of charging without losses" is slightly circular; "Without the efficiency we get the charging time without losses" reads cleaner.
 
 ## Checked
-- Captures fy6-16-open-exercises-L2-1280-* and L3-1280-* viewed: formulas, fractions and the two-column month table (L3-04) fit without overflow; units and euro signs render.
-- No Finnish left in the exercise text, table captions or solutions (captures predate the small wording fixes, which only change words).
+- fy6-16-open-exercises-L2-1280-10.png (end of L2-07, task text for 16-16, stage "Choose an option" with feedback for a wrong option), -11.png (remaining options, answer chip, Find, Principle, Model answer with the P chain and the aligned t display, reasonableness and error paragraphs) and -12.png (last line): whole-row options with feedback inside the card, units with thin spaces, decimal points, colon for division and the aligned display render correctly; nothing clipped or overflowing.
+- The re-paragraphed L3 task was not opened; the change is mechanical.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish (English text) 5 · accessibility 4
+illustrations n/a (4) · typography 5 · English 4 · accessibility 4

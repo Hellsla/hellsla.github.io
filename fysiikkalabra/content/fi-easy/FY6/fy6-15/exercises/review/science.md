@@ -1,20 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: eda68d9188c67dc3
+CONTENT-HASH: 94be9d506dad0696
 Mode: full (translation review against the reviewed Finnish set)
 Round 1
 
 ## Blocking
 (none)
 
-## Fixed
-- exercises.json L2-05 b): "Moninkertainenko" (awkward, abstract) changed to "Kuinka monta kertaa suurempi ..." (plain words, same meaning, no numbers touched).
-
 ## Polish
 (none)
 
 ## Checked
-- Script comparison with content/fi: ids, levels, kinds, answers, tolerances, correct flags, choices, data cells and every number in texts, feedback and solutions.md (684 numbers each, identical; decimal point in JSON/data, {,} in LaTeX). Units equal except the display unit "kertaa" (en: times, fi-easy: kertaa), as intended.
-- Plain Finnish: short sentences, terms explained (läpilyöntilujuus, vikavirta, suojausluokka).
-- Re-derived: L1-08 6.0 kV, L2-05 61.1x, L2-06 9.565 A, L2-07 115 mA, L3-04 20.5 A, L3-05 6.167 kOhm; all agree with fi.
-- check_i18n.py fi-easy: 0 errors.
-
+- New task L1-09 (ordering by current) compared with content/fi: id, level, kind, answer, unit, tolerance, correct flags, choice/statement/order structure and every number identical; I = U:R gives 1.2, 5.0, 40 and 144 mA (140 mA at two significant figures), so A, B, D, C.
+- All 21 tasks of the set compared with fi by script (non-text fields): identical apart from translated table captions, column heads and text answers.
+- solutions.md: all numbers in the same order as fi (decimal separator normalised); formulas, LaTeX and the stated reasoning unchanged.
+- Physics of the new task recomputed independently; agrees with fi and with the key.
+- fi-easy follows NOTES.md section 12 (clearer Finnish, same physics).
+- No fixes were needed. check_i18n.py fi-easy: 0 errors; build.py fy6-15: ok.
