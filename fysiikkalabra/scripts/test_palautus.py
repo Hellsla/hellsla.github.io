@@ -153,6 +153,13 @@ with sync_playwright() as p:
     # another chapter's solution in the same store must stay out
     pg.evaluate("""() => new Promise((ok) => { const s = document.createElement('script'); s.src = 'padstore.js'; s.onload = ok; document.head.append(s); })""")
     pg.evaluate("window.flPadStore.put('fy3-2-L1-01', 'toisen luvun ratkaisu', 'fy3-2.html')")
+    # guided self-assessment of Tarkista osaamisesi (teacher 2026-11-06): a colour scale under every task and goal
+    sa = pg.evaluate("[...document.querySelectorAll('#tarkista fieldset.sa-rate')].map((f) => [f.dataset.sa, f.querySelectorAll('input[type=radio]').length])")
+    expect("self-assessment: five levels under every Tarkista task and every goal of the chapter", len(sa) >= 5 and all(n == 5 for _, n in sa) and any(i.startswith("tavoite-") for i, _ in sa) and pg.locator("#tarkista .sa-key li").count() == 5, sa)
+    sa_task = sa[1][0]
+    pg.click(f'fieldset[data-sa="{sa_task}"] .sa-opt[data-level="b"]')
+    pg.click('fieldset[data-sa="tavoite-1"] .sa-opt[data-level="d"]'); pg.click('fieldset[data-sa="tavoite-1"] .sa-opt[data-level="c"]')
+    expect("self-assessment: the chosen level's text shows under the scale", pg.inner_text(f'fieldset[data-sa="{sa_task}"] .sa-desc') == "Koen oivaltaneeni tämän asian", pg.inner_text(f'fieldset[data-sa="{sa_task}"] .sa-desc'))
     t1, t2 = tasks[0], tasks[3]
     open_pad(pg, t1)
     ed = pg.locator(f'[id="{t1}"] .rich-text-editor'); ed.click()
@@ -164,11 +171,14 @@ with sync_playwright() as p:
     name, f1 = download(pg)
     files["v1"] = f1
     expect("the file is fy3-1.ratkaisut.json", name == "fy3-1.ratkaisut.json", name)
-    expect("format, version, chapter and a 32-hex submission id", f1.get("format") == "ruukkilabra-palautus" and f1.get("version") == 1 and f1.get("chapter") == "fy3-1"
+    expect("format, version (2: with the self-assessment), chapter and a 32-hex submission id", f1.get("format") == "ruukkilabra-palautus" and f1.get("version") == 2 and f1.get("chapter") == "fy3-1"
            and re.fullmatch(r"[0-9a-f]{32}", f1.get("submission_id", "")) and f1.get("exported"), {k: v for k, v in f1.items() if k != "answers"})
     expect("every exercise once, in page order", [a["task"] for a in f1["answers"]] == tasks)
     expect("only this chapter (no fy3-2 solution)", "fy3-2" not in json.dumps(f1))
-    expect("no name or e-mail fields", not set(f1) - {"format", "version", "chapter", "lang", "submission_id", "exported", "includes", "content_sha256", "answers"}, set(f1))
+    expect("no name or e-mail fields", not set(f1) - {"format", "version", "chapter", "lang", "submission_id", "exported", "includes", "content_sha256", "answers", "selfassessment"}, set(f1))
+    sitems = (f1.get("selfassessment") or {}).get("items", [])
+    expect("self-assessment in the same file: the rated items in page order, level and history with times", [(i["id"], i["level"], [h[0] for h in i["history"]]) for i in sitems] == [(sa_task, "b", ["b"]), ("tavoite-1", "c", ["d", "c"])]
+           and all(re.fullmatch(r"\d{4}-\d\d-\d\dT[\d:.]+Z", h[1]) for i in sitems for h in i["history"]), sitems)
     a1 = f1["answers"][0]
     kinds = [i["type"] for i in a1["content"]]
     expect("text, formula, picture keep their order in the right task", a1["status"] == "answered" and kinds == ["text", "math", "text", "image", "text"], kinds)
@@ -263,7 +273,8 @@ with sync_playwright() as p:
         g = json.loads(json.dumps(f)); fn(g); return json.dumps(g)
 
     def reseal(g):   # recompute content_sha256 the way the page does (for a deliberately changed file that is otherwise valid)
-        canon = json.dumps([{"task": a["task"], "status": a["status"], "content": [{"type": "math", "latex": i["latex"]} if i["type"] == "math" else i for i in a["content"]]} for a in g["answers"]], ensure_ascii=False, separators=(",", ":"))
+        canon = [{"task": a["task"], "status": a["status"], "content": [{"type": "math", "latex": i["latex"]} if i["type"] == "math" else i for i in a["content"]]} for a in g["answers"]]
+        canon = json.dumps({"answers": canon, "selfassessment": g["selfassessment"]["items"]} if g.get("version") == 2 else canon, ensure_ascii=False, separators=(",", ":"))
         import hashlib
         g["content_sha256"] = hashlib.sha256(canon.encode()).hexdigest(); return g
 
@@ -290,7 +301,9 @@ with sync_playwright() as p:
     # broken, too big, tampered, malicious, outside the folder, no e-mail, unknown task, newer version
     bad = [("not JSON", "{ei json", None, None, A, "ei ole JSON"),
            ("another format", json.dumps({"format": "muu", "version": 1}), None, None, A, "ei ole RuukkiLabran"),
-           ("a newer version", modify(files["v1"], lambda g: g.update(version=2)), None, None, A, "uudempi"),
+           ("a newer version", modify(files["v1"], lambda g: g.update(version=3)), None, None, A, "uudempi"),
+           ("a changed self-assessment", modify(files["v1"], lambda g: g["selfassessment"]["items"][0].update(level="a")), None, None, A, "tarkistussumma"),
+           ("an unknown self-assessment level", json.dumps(reseal(json.loads(modify(files["v1"], lambda g: g["selfassessment"]["items"][0].update(level="e"))))), None, None, A, "tuntematon taso"),
            ("over the size limit", va, 9_500_000, None, A, "liian suuri"),
            ("a tampered answer", modify(files["v1"], lambda g: g["answers"][0]["content"][0].update(text="muutettu")), None, None, A, "tarkistussumma"),
            ("HTML as a PNG picture", json.dumps(reseal(json.loads(modify(files["v1"], lambda g: g["answers"][0]["content"][3].update(data=base64.b64encode(b"<html><script>alert(1)</script></html>").decode()))))), None, None, A, "ei ole PNG"),
@@ -331,6 +344,9 @@ with sync_playwright() as p:
     home = tp.inner_text("#tasks tr.task-row")
     first = tp.locator("#tasks tr.task-row").first.inner_text().split("\t")
     expect("task list: number, solutions, graded, ungraded (no class-size ratio)", first[0].strip() == "Tehtävä 1-1" and first[2:] == ["3", "0", "3"] and not re.search(r"\b\d+/\d+\b", home), (first, home[:300]))
+    tp.locator("#selfSec details.chapter > summary").first.click()
+    cells = tp.evaluate("[...document.querySelectorAll('#selfSec table.self tbody tr')].map((tr) => [tr.cells[0].textContent, [...tr.querySelectorAll('.sa')].map((m) => m.className.replace('sa ', ''))])")
+    expect("grading view: Itsearviot shows each student's latest levels as colours (teacher 2026-11-06)", tp.is_visible("#selfSec") and any("sa-b" in c and "sa-c" in c for _, c in cells), cells)
     expect("the processing state lists invalid, duplicate and to-be-checked rows", all(w in tp.inner_text("#problems") for w in ["Virheellinen", "Kaksoiskappale", "Tarkistettava"]), tp.inner_text("#problems")[:200])
     tp.locator("#tasks tr.task-row").first.click()
     tp.wait_for_function("document.querySelector('#gAnswer .t')")

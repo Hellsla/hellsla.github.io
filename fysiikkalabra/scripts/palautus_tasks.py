@@ -106,7 +106,11 @@ def collect(course):
             title = pg.evaluate("(() => { const h = document.querySelector('main h1').cloneNode(true); h.querySelectorAll('.katex').forEach((k) => { const a = k.querySelector('annotation'); k.replaceWith(a ? a.textContent : k.textContent); }); return h.textContent; })()").strip()
             eyebrow = pg.evaluate("(() => { const e = document.querySelector('.ch-no'); return e ? e.textContent : ''; })()")
             m = re.search(r"Luku\s+(\d+)", eyebrow)
-            chapters.append({"id": pid, "number": int(m.group(1)) if m else int(pid.split("-")[1]), "title": re.sub(r"\s+", " ", title).replace("\\Delta ", "Δ").replace("\\Delta", "Δ"), "tasks": tasks})
+            # guided self-assessment of Tarkista osaamisesi (teacher 2026-11-06): its items in page order, id and plain label
+            self_items = pg.evaluate("[...document.querySelectorAll('fieldset.sa-rate')].map((f) => ({ id: f.dataset.sa, label: f.dataset.label }))")
+            ch = {"id": pid, "number": int(m.group(1)) if m else int(pid.split("-")[1]), "title": re.sub(r"\s+", " ", title).replace("\\Delta ", "Δ").replace("\\Delta", "Δ"), "tasks": tasks}
+            if self_items: ch["self"] = self_items
+            chapters.append(ch)
         b.close()
     srv.shutdown()
     return chapters
