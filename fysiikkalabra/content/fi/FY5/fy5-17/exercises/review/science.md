@@ -1,16 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 2c4015ccb6d6d59f
+CONTENT-HASH: caaeaa93666bca57
 
 ## Blocking
 
 ## Polish
-- content/fi/FY5/fy5-17/exercises/exercises.json:289 — the correct choice is the only hedged one ("noin kolme kertaa"), and the model makes the ratio exactly 3 — drop "noin" or hedge a distractor.
-- content/fi/FY5/fy5-17/exercises/exercises.json:305 — the correct reason is the longest of the four (about 105 characters against 85–90) — trim it slightly, e.g. "Molemmat aallot kulkevat saman matkan tasaisella nopeudella, joten aikaero kasvaa matkan suhteessa."
 
 ## Checked
-- New task L2-08 (type 1, two-stage), checked against the text only, not renders: d = vP·vS/(vP − vS)·Δt = 8,4 km/s·Δt. Recomputed: dA = 67,2 km ≈ 67 km, dB = 201,6 km ≈ 2,0·10² km, ratio 3,0. Exactly one choice and one reason are correct.
-- The correct choice's feedback gives the ratio but not the reason ("Valitse seuraavaksi perustelu…"), as the FY3 lesson requires. The wrong reasons are travel time confused with time difference, a constant lag, and a true statement that does not explain the answer (type 1's pattern). Each feedback is right.
-- Conditions stated: constant vP and vS along the whole path to each station; the unknown origin time is addressed correctly (the difference is measured with the station's own clock).
-- Formula and symbols match the brief (d, vP, vS, Δt, 8,4 km/s per second). The inline chains are short (text estimate, under 300 px). The distractors do not target the lesson's echo or ultrasound mistakes; the seismic part has no warned mistake of its own, so this is not a finding for science.
-- Solution complete: symbolic first, then numbers, then the reason, and every wrong option explained.
-- answers.py ran, and its 16 numeric answers are unchanged. L2-08 has a text answer and no entry. The rest of the set was PASS before and is unchanged.
+- Round 2 (commit 4ff432a8f), checked against the text only, not renders. The correct choice's feedback is now just "Oikein. Valitse seuraavaksi perustelu, joka selittää vastauksesi.", so it gives away neither the ratio nor the reason. The ratio 24,0 s : 8,0 s = 3 moved to the correct reason's feedback, where it belongs.
+- "noin" dropped from the correct choice, the answer and the solution. That is right, because the model (constant vP and vS on the whole path) gives exactly d_B/d_A = Δt_B/Δt_A = 3. There is no longer a hedge cue.
+- The correct reason, shortened to "Aallot kulkevat saman matkan tasaisilla nopeuksilla, joten aikaero on verrannollinen matkaan." (about 93 characters against 85–90), is right because Δt = d(1/vS − 1/vP). It is no longer clearly the longest.
+- Recomputed values unchanged: 8,4 km/s; dA ≈ 67 km, dB ≈ 2,0·10² km. Exactly one choice and one reason are correct. The solution's wording of the reason matches the option.
+- answers.py is unchanged, and running it with python3 -I gives the same 16 numeric answers. The rest of the set is unchanged.

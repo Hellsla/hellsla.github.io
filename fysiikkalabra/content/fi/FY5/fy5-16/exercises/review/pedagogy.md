@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: c33e72bc943a0fcc
+CONTENT-HASH: 431ea9a2e547e7e5
 
 ## Blocking
 (none)
 
 ## Polish
-1. fy5-16/exercises/exercises.json:250 (L2-08) — the correct option is the only one that says 'noin' and 'kuten pistemäiseltä lähteeltä odotetaan', which hints at the model; write option 3 and 4 with the same kind of hedge, or remove 'kuten ... odotetaan' from the correct option.
-2. The chapter's own warned mistake (korva tottuu meluun) cannot be tested from a level table; distractor 4 (85 dB, 8 h safe) is the hearing-protection counterpart, which is acceptable.
-3. Option 4 feedback 'sallitun ajan kaava on arvio, ei takuu' — fine, but add what the student should do ('pidä altistus selvästi rajan alapuolella').
+1. L2-08 correct option is "noin 6 dB ... suunnilleen yhtä paljon joka välillä"; option 1 now also says "suunnilleen", so hedging no longer marks it. Nothing further needed.
 
 ## Checked
-- Differences 6, 6, 5 dB, expected 10 lg 4 = 6,0 dB; uncertainty of a difference 2 dB; conclusion (correct) is supported and option 3 is exactly the trap of treating a within-uncertainty difference as a trend.
-- 85 dB reading 84-86 dB and the 8 h value are in the brief; no new theory.
-- Data caption short (Melutaso (esimerkkiaineisto)); table columns with units; question last.
-- Option 1 (halving) is a clear logarithmic-scale misconception with repairing feedback. Checked from text only (no renders): scope against the brief, answer arithmetic recomputed, option forms, feedback per option, Finnish, phone width judged from formula length.
+- Round 2. Checked from text only (no renders).
+- Round 1 polish done: option 1 hedged, correct option no longer the only hedged one nor the longest (116 vs 126 characters); 85 dB feedback now says the true level may be 84-86 dB, matching the solution.
+- Differences 6, 6, 5 dB vs 6,0 dB expected, uncertainty of a difference 2 dB: correct option follows from the data, others are the log-scale and within-uncertainty traps.
+- Answer field and solution agree; no new theory.

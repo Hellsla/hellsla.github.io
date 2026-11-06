@@ -1,14 +1,13 @@
-VERDICT: FAIL
-CONTENT-HASH: 06bb76b9d2209c38
+VERDICT: PASS
+CONTENT-HASH: 5701e43715c62ef4
 
 ## Blocking
-- exercises.json:271 (fy5-8-L2-08) — the correct option is identifiable by form: it is the only one without a "koska" clause and the only one that mentions measurement uncertainty, which the task text has just stressed — rewrite all four as "X, koska Y" with similar length, and let a distractor also mention the uncertainty (e.g. "Jousivakiota ei voi päätellä, koska voimamittarin epävarmuus on liian suuri" or "…25,5 N/m, koska epävarmuus on pieni").
+(none)
 
 ## Polish
-- exercises.json:263 — the "jousivakio kasvaa venymän mukana" distractor is weak; the force-up/k-up confusion could rather be "jousivakio on suurin viimeisellä rivillä, koska voima on siinä suurin".
-- exercises.json:222 — comparing each row's F/x with its uncertainty ±0,05 N / x is taught only in the solution, not in the chapter text (which says only "mittausepävarmuuden vuoksi"); acceptable at L2 if earlier courses cover it, otherwise add one sentence to the task.
+- exercises.json (fy5-8-L2-08 option 4) — the unit-slip option is now the only one that does not mention the uncertainty; it is still wrong on its face (0,25 N/m), so no tell for the correct option, but a clause like "…eikä epävarmuutta tarvitse ottaa huomioon" would even it out. Optional.
 
 ## Checked
-- Text only (no renders). New task fy5-8-L2-08 (type 10, data): all five ratios and uncertainties recomputed (24,5±2,5; 25,5±1,3; 24,5±0,8; 25,0±0,6; 25,1±0,5), 25 N/m lies inside every interval; slope 25 N/m correct.
-- Distractors catch the unit slip (N/cm) and over-reading a difference within uncertainty; caption short, units consistent.
-- Within chapter (F=kx, slope as k); solution blocks are short lines (fit 300 px); Finnish and compounds correct.
+- Round 2. Text only (no renders). Round-1 blocker fixed: all four options are "X, koska Y" of similar length; three mention uncertainty (two wrongly), so neither "koska" nor the uncertainty identifies the correct option.
+- Wrong options' feedback is accurate (force growth is not k growth; 25,5±1,3 N/m covers 25; N/cm slip); the correct feedback adds no extra reasoning.
+- Numbers re-verified: 25 N/m inside every row's interval. Within chapter; Finnish correct.

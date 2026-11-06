@@ -1,19 +1,18 @@
-VERDICT: FAIL
-CONTENT-HASH: 06bb76b9d2209c38
+VERDICT: PASS
+CONTENT-HASH: 5701e43715c62ef4
 
 ## Blocking
-- fy5-8/exercises/exercises.json:267 (L2-08) — The correct option (third) is the only one that mentions the measurement uncertainty. In a type-10 data task, a student can pick it by form alone (FY2 lesson). — Make option 2 bring in the uncertainty as a wrong idea, for example "…suhde $F_\text{v}/x$ on siinä suurin, $25{,}5\,\text{N/m}$, ja ero muihin riveihin on suurempi kuin lukeman epävarmuus $0{,}05\,\text{N}$". Its feedback then names the unit mismatch: N/m compared with N, when the ratio's uncertainty here is ±1,3 N/m.
 
 ## Polish
-- exercises.json L2-08 choices — No distractor carries a mistake the lesson warns about. The method warnings in "Jousivakio mittauksesta" fit a data task: reading the slope from two neighbouring raw points, and total length instead of extension (the bank plan says "venymä vs. kokonaispituus"). One of these could replace option 1 or option 4.
-- solutions.md:270 — The bare "$\Delta$" has no quantity. Write $\Delta\!\left(\tfrac{F_\text{v}}{x}\right)$, or name it in the text before it ("suhteen epävarmuus").
+- fy5-8/exercises/exercises.json L2-08 choices — Carried over from round 1: no distractor carries a mistake the lesson's method section warns about, such as reading the slope from two neighbouring raw points or using total length instead of extension (bank plan). This is optional. The current distractors are physically sound.
 
 ## Checked
-- New task L2-08 (type 10): I recomputed every row. The ratios are 24,5 / 25,5 / 24,5 / 25,0 / 25,1 N/m, with uncertainties 0,05 N/x = ±2,5 / 1,25 / 0,83 / 0,63 / 0,50 N/m. The value 25 N/m lies inside every interval, so the correct key is right.
-- The guardrails hold. The line goes through the origin for a physical reason (F_v = kx, the spring at rest length). The slope is read from two points on the fitted line. The uncertainty ±0,05 N is larger than the 0,01 N resolution, which is consistent. "Erot mahtuvat mittausepävarmuuteen" does not claim the values are equal.
-- The correct option's feedback gives no reason it should not. The cm→N/cm distractor is real physics.
-- The data caption is short, and the table uses decimal points as the README schema says.
-- Formula chains in the solution are short two-line aligned blocks. From the text they fit 300 px. I did not render them.
-- The scope uses F_v = kx from this chapter and simple uncertainty division from FY1 measurement.
-- answers.py ran once. All 22 numeric answers in exercises.json agree within tolerance (one script).
-- The hash was the same at the start and at the end.
+- The round-1 Blocking item is fixed (commit 4ff432a8f). All four options now have the form "X, koska Y" and are of similar length. Three of them mention the uncertainty: options 1 and 2 wrongly, option 3 correctly. The right option can no longer be picked by form.
+- Option 2 (exercises.json:267) is now the warned unit mismatch: a ratio difference in N/m compared with the force uncertainty 0,05 N. Its feedback names the mismatch and gives the right comparison (±1,3 N/m).
+- Option 1 compares the growth of the force with 0,05 N, which is a true statement used for a wrong conclusion. Its feedback says why this tells nothing about k.
+- The answer string equals the text of the correct option. The correct option's feedback gives no extra reason.
+- I recomputed every row again: the ratios are 24,5 / 25,5 / 24,5 / 25,0 / 25,1 N/m with uncertainties ±2,5 / 1,25 / 0,83 / 0,63 / 0,50 N/m, and 25 N/m lies inside every interval.
+- The solution now writes Δ(F_v/x), and its closing paragraph matches the new options. The guardrails hold: a physical reason for the line through the origin, the slope read from the fitted line, and "within the uncertainty" not taken as proof the values are equal.
+- The aligned chain in the solution is two lines. From the text it fits 300 px. I did not render it.
+- answers.py ran again: all numeric answers agree with exercises.json within tolerance. The data table is unchanged.
+- The hash was the same at the start and at the end of round 2.

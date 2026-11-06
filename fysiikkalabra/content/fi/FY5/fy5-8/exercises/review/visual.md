@@ -1,17 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: 06bb76b9d2209c38
+VERDICT: PASS
+CONTENT-HASH: 5701e43715c62ef4
 
 ## Blocking
-- [Major] fy5-8-L2-08 choices — the correct option is the only one that mentions the measurement uncertainty ("erot mahtuvat mittausepävarmuuteen"), and the stem has just introduced the uncertainty, so the answer can be picked by form without reading the table — the distractors catch the chapter's warned mistake only if they also talk about uncertainty — rewrite the "jäykin venymällä 4,0 cm" option to include an uncertainty claim, e.g. "...koska suhde on siinä suurin, $25{,}5\,\text{N/m}$, ja ero on suurempi kuin mittausepävarmuus", and give the "kasvaa venymän mukana" option a similar clause.
 
 ## Polish
-- [Minor] fy5-8-L2-08 — table caption and header fine; table decimals correctly rendered with comma (source uses a dot, build converts).
-- [Minor] solution — the sentence beginning "Samoin muiden rivien suhteet ovat venymän kasvaessa" is a long run of four value pairs; a small table or aligned block would read better.
+- [Minor] fy5-8-L2-08 — the correct option is the only one that combines "noin 25 N/m" with "poikkeaa vähemmän kuin ... sallii"; the cue is now weak (three options mention the uncertainty, lengths 120-153 characters, the correct one is not the longest or shortest). Optional: give the "kasvaa venymän mukana" option a "noin"-style hedge.
+- [Minor] solution — the sentence listing the four other rows' ratios and uncertainties is long; a small aligned block would read better.
 
 ## Checked
-- Rendered the task at 390 px with every option's feedback and solution open: table, aligned display block, inline fractions in feedback all fit; scrollWidth 390, no clipping, no kx-wide.
-- Looked at option lengths (about 100 to 110 characters each, no length cue); the uncertainty cue is the finding above.
-- Text-only: spelling, N/m:ssä inflection, ratio, glossary use.
+- Round 2 against hash 5701e43715c62ef4 (round 1 Major: uncertainty cue). Rebuilt with build.py fy5-8 and rendered the task at 390 px, each option clicked separately with its feedback, and the solution open.
+- Page scrollWidth 390, no element outside a scroll box, no inline formula over 250 px, no kx-wide; the table, the aligned display block and the inline fractions in options and feedback fit.
+- Options now "X, koska Y" in similar length, three mention the uncertainty; the option 2 feedback names the real mistake (comparing N/m with N).
+- Text-only: spelling, N/m:ssä inflection, solution wording.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

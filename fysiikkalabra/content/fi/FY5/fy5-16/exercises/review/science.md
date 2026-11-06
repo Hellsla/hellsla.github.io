@@ -1,16 +1,12 @@
-VERDICT: FAIL
-CONTENT-HASH: c33e72bc943a0fcc
+VERDICT: PASS
+CONTENT-HASH: 431ea9a2e547e7e5
 
 ## Blocking
-- content/fi/FY5/fy5-16/exercises/exercises.json:301 — "Lukema 85 dB on epävarmuuden vuoksi välillä 84–86 dB" says the reading itself lies in a range and states the range as certain. The reading is 85 dB; only the true level is uncertain, and only *todennäköisesti* inside the interval (guardrails, Measurement and data: "never for certain") — fix: "Epävarmuuden vuoksi todellinen taso voi olla 84–86 dB, joten ylempi toiminta-arvo voi ylittyä." (solutions.md:97 already says "voi todellisuudessa olla 86 dB"; make the two match.)
 
 ## Polish
-- content/fi/FY5/fy5-16/exercises/exercises.json:297 — the feedback says the uncertainty of a difference "on 2ΔL", but solutions.md:88 says "enintään 2ΔL" — use the same words in both (e.g. "on enintään").
-- content/fi/FY5/fy5-16/exercises/exercises.json:291 — the correct option is the only one with a hedge ("noin"), a mild form cue (FY2 lesson) — add "noin" to a distractor too, or drop it here (6, 6 and 5 dB are given).
 
 ## Checked
-- New task L2-08 (type 10, Mittausdata), checked against the text only, not renders: drops of 6, 6 and 5 dB per doubling of distance; expected 10·lg 4 = 6,02 dB. The largest deviation, 1 dB, is less than the 2 dB uncertainty of a difference, so the correct option follows from the data. Exactly one option is correct.
-- Distractors: halving of the level (the log scale read linearly), a "slower attenuation" claim from a difference within the uncertainty (type 10's intended trap), and a safety conclusion from a borderline reading. The last one's feedback correctly adds that the allowed-time formula is an estimate, not a guarantee, matching the lesson.
-- Point source, open field and ΔL = 1 dB are stated in the task; the data are realistic for a compressor. The 6 dB rule comes from the brief and the prerequisite fy5-15.
-- The data use decimal points, as the rest of the set does. The caption is short.
-- answers.py ran, and its 16 numeric answers are unchanged. L2-08 has a text answer and no entry. The rest of the set was PASS before and is unchanged.
+- Round-1 Major resolved: the feedback now says "Epävarmuuden vuoksi todellinen taso voi olla 84–86 dB" (the reading is 85 dB; only the true level is uncertain, and "voi" keeps it uncertain). The solution uses the same words: "lukema on 85 dB, mutta … todellinen taso voi olla 84–86 dB".
+- The distractor's feedback and the solution now both say "enintään 2ΔL = 2 dB".
+- Hedging evened: distractor 1 now says "suunnilleen puolittuu", and the correct option ends "eli suunnilleen yhtä paljon joka välillä". The correct option still follows from the data (drops of 6, 6 and 5 dB, within 2 dB of 6,02 dB), and distractor 1 is still clearly wrong (91 → 85 dB is far from half). Exactly one option is correct.
+- Checked against the text only, not renders. answers.py is unchanged, and running it with python3 -I gives the same 16 numeric answers. The rest of the set is unchanged.
