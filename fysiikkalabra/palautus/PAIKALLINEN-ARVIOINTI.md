@@ -5,7 +5,7 @@ arviointi tehdään erillisellä HTML-tiedostolla, yksi kuluvaa periodia kohti: 
 kaikki periodin kurssit, eli ne, joille `palautukset.json` antaa lomakkeen (6.11.2026). Uusi periodi saa uuden tiedoston, kun
 `palautukset.json` päivitetään. Opettaja avaa sen omalla koneellaan
 selaimessa (Chrome tai Edge). Tiedosto ei kuulu RuukkiLabraan eikä julkiseen sivustoon. Sivu ei käytä verkkoa eikä
-Googlen tai Microsoftin palveluja. Se lukee Drivesta ladatut palautukset ja tallentaa pisteet vain tämän selaimen
+Googlen tai Microsoftin palveluja. Se lukee Drivesta ladatut palautukset ja tallentaa ne ja pisteet vain tämän selaimen
 muistiin.
 
 Sivulla on periodin jokaisen kurssin kaikki luvut opetusjärjestyksessä ja niiden tehtävät. Jokaisessa FY1–FY8-luvussa on Tehtävät-otsikon rivillä painike **Lataa kaikki ratkaisut**. Painike lataa luvun tiedoston
@@ -59,7 +59,7 @@ samanlainen, joten kaikki kielet arvioidaan samalla sivulla.
 
    Pisteet tehtävää kohti 0–1, enintään kaksi desimaalia (0,5 tai 0,25). Tyhjä = arvioimaton, 0 = annettu nolla.
    Viimeisellä opiskelijalla ↓ tallentaa ja kertoo, että tehtävä on käyty läpi. Jos tallennus epäonnistuu, siirtymistä
-   ei tapahdu.
+   ei tapahdu. **Piilota nimet** (Kooste-rivillä) korvaa nimet numeroilla, kun näytät pisteitä luokalle.
 6. **Muut toiminnot** (pieni linkki Tuo tiedosto -napin alla): **Vie pisteet (CSV)** lataa tiedoston `FY3-<ryhmä>-pisteet.csv`: opiskelija, pisteet luvuittain (tyhjä, jos lukua ei
    ole palautettu), yhteensä, palautettujen lukujen määrä, Tehty ja Tarkistamatta. Desimaalierotin on pilkku. Avaa
    tiedosto Sheetsissä (Tiedosto → Tuo) tai Excelissä. Kaavoiksi tulkittavat merkit on suojattu.
@@ -67,11 +67,14 @@ samanlainen, joten kaikki kielet arvioidaan samalla sivulla.
    **Palauta varmuuskopio** tuo sen takaisin valittuun ryhmään (esim. toisella koneella). **Poista ryhmä** poistaa
    ryhmän ja sen arvioinnin tästä selaimesta.
 8. Kun uusia palautuksia tulee, lataa kansio uudelleen ja valitse uusi zip samaan ryhmään. Jo luetut ohitetaan ja uudet
-   lisätään (Tuo tiedosto). Korjattu palautus on opiskelijan uusi versio samasta luvusta, ja vanhan pisteet säilyvät vanhalla
-   versiolla.
+   lisätään (Tuo tiedosto). Korjattu palautus on opiskelijan uusi versio samasta luvusta, ja sitä arvioidaan.
+   **Pisteet siirtyvät:** jos tehtävän ratkaisu on uudessa versiossa täsmälleen sama kuin aiemmassa, arvioidussa
+   versiossa, tehtävä saa vanhat pisteet (arviointinäkymässä *Pisteet versiosta 1 ✓ (sama ratkaisu)*). Vain uudet ja
+   muuttuneet ratkaisut jäävät arvioitaviksi. Siirretyt pisteet voi muuttaa normaalisti.
 
-Sivu ei säilytä palautustiedostoja. Kun avaat sivun seuraavan kerran, ryhmät, pisteet ja tilat ovat tallessa, mutta
-vastausten näyttämistä varten tuo ryhmän zip uudelleen. Uuden periodin sivu näkee saman selaimen ryhmät ja pisteet.
+Sivu säilyttää tuodut palautukset tämän selaimen muistissa. Kun avaat sivun seuraavan kerran, ryhmät, pisteet, tilat ja
+vastaukset ovat tallessa, eikä zipiä tarvitse tuoda uudelleen. Uuden periodin sivu näkee saman selaimen ryhmät ja
+pisteet. Varmuuskopio sisältää pisteet ja tilat mutta ei vastauksia: toisella koneella tuo myös ryhmän zip.
 
 ## Tunniste ja aika
 
@@ -85,8 +88,9 @@ vastausten näyttämistä varten tuo ryhmän zip uudelleen. Uuden periodin sivu 
 ## Tietoturva
 
 - Zip sisältää opiskelijoiden töitä: pidä se koulun koneella ja poista Lataukset-kansiosta arvioinnin jälkeen.
-- Sivu tallentaa selaimen muistiin (localStorage) ryhmittäin tuonnin tilan, opiskelijoiden nimet ja pisteet, ei
-  vastauksia. Käytä omaa, henkilökohtaista koulun konetta, älä yhteiskäyttöistä. Kurssin jälkeen: **Poista ryhmä**.
+- Sivu tallentaa selaimen muistiin ryhmittäin tuonnin tilan, opiskelijoiden nimet ja pisteet (localStorage) sekä
+  tuodut palautustiedostot eli vastaukset (IndexedDB). Käytä omaa, henkilökohtaista koulun konetta, älä
+  yhteiskäyttöistä. Kurssin jälkeen: **Poista ryhmä**, joka poistaa myös ryhmän vastaukset.
 - Sivu ei lataa mitään verkosta (Content-Security-Policy estää sen), ei suorita palautuksista koodia eikä näytä
   niistä HTML:ää. Kuvina näytetään vain tarkistetut PNG- ja JPEG-kuvat.
 
@@ -100,8 +104,8 @@ vastausten näyttämistä varten tuo ryhmän zip uudelleen. Uuden periodin sivu 
 3. Tee toinen lomake toiselle ryhmälle ja kokeile sen zipiä ensin väärään ryhmään (sivun pitää kieltäytyä) ja sitten
    oikeaan.
 4. Arvioi muutama tehtävä, katso Pisteet luvuittain, vie CSV ja avaa se Sheetsissä.
-5. Sulje ja avaa sivu ja valitse zip uudelleen. Pisteiden pitää olla tallessa, ja uusia rivejä pitää tulla 0.
+5. Sulje ja avaa sivu. Vastausten ja pisteiden pitää olla tallessa ilman uutta tuontia. Valitse sama zip uudelleen: uusia rivejä pitää tulla 0.
 6. Opiskelijan testitili ei pääse palautuskansioon eikä lomakkeen vastauksiin.
 
 Sivu on testattu automaattisesti (`scripts/test_palautus.py`) itse tehdyillä zip-tiedostoilla, joiden kansiot ja
-tiedostonimet ovat Formsin muotoa: kaksi ryhmää, kaksi lukua. Oikeaa Driven zipiä ei ole vielä testattu.
+tiedostonimet ovat Formsin muotoa: kaksi ryhmää, kaksi lukua, uusi versio luvusta. Oikeaa Driven zipiä ei ole vielä testattu.

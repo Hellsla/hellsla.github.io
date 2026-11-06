@@ -74,7 +74,7 @@
     <div class="bar"><h1 id="title" class="grow">RuukkiLabra · arviointi</h1><button type="button" id="refresh">Päivitä</button></div>
     <div id="localBar" hidden></div>
     <p id="homeState" class="muted" aria-live="polite">Ladataan…</p>
-    <div class="bar"><h2 class="grow">Kooste</h2><label id="scopeWrap"><select id="scope" aria-label="Luku"></select></label></div>
+    <div class="bar"><h2 class="grow">Kooste</h2><button type="button" id="hideNames" aria-pressed="false">Piilota nimet</button><label id="scopeWrap"><select id="scope" aria-label="Luku"></select></label></div>
     <p id="noSummary" class="muted">Ei palautuksia.</p>
     <div id="groupChart" hidden aria-label="Ryhmä yhteensä"></div>
     <div class="wide"><table id="summary" hidden><thead></thead><tbody></tbody></table></div>
@@ -114,7 +114,7 @@
 (function () {
   'use strict';
   var $ = function (id) { return document.getElementById(id); };
-  var S = { ov: null, task: null, chapter: null, entries: [], idx: 0, ver: 0, nav: false, saving: null, token: 0, cache: {}, onlyOpen: false, open: {}, scope: 'all', sort: { key: 'name', dir: 1 }, ready: false };
+  var S = { ov: null, task: null, chapter: null, entries: [], idx: 0, ver: 0, nav: false, saving: null, token: 0, cache: {}, onlyOpen: false, hide: false, open: {}, scope: 'all', sort: { key: 'name', dir: 1 }, ready: false };
   var call = function (name, arg) {
     return new Promise(function (ok, no) {
       var r = google.script.run.withSuccessHandler(ok).withFailureHandler(function (e) { no(e); });
@@ -150,7 +150,7 @@
         } else dc.textContent = p.decision;
         pb.append(tr);
       });
-      $('problems').hidden = !ov.problems.length; $('probSec').hidden = !ov.problems.length;
+      $('problems').hidden = !ov.problems.length; $('probSec').hidden = !ov.problems.length || S.hide;
     }, function (e) { $('homeState').textContent = 'Tietoja ei voitu ladata: ' + errText(e); $('homeState').className = 'err'; });
   }
   // Tehtävät luvuittain. Ratkaisuja = palauttajat, joiden uusimmassa palautuksessa tehtävään on ratkaisu (tyhjät eivät
@@ -202,7 +202,8 @@
       scope.forEach(function (c) { var x = s.chapters[c.id]; if (x) { r.answered += x.answered; r.unchecked += x.unchecked; r.points += x.points; r.returned++; } });
       return r;
     });
-    var key = S.sort.key, dir = S.sort.dir;
+    // nimet piilossa (opettaja 6.11.2026: pisteiden näyttäminen opiskelijoille): ei aakkosjärjestystä, josta nimen voisi päätellä
+    var key = S.hide && S.sort.key === 'name' ? 'points' : S.sort.key, dir = S.hide && S.sort.key === 'name' ? -1 : S.sort.dir;
     rows.sort(function (a, b) { var byName = a.name.localeCompare(b.name, 'fi'); return key === 'name' ? byName * dir : ((a[key] - b[key]) * dir || byName); });
     var head = $('summary').querySelector('thead'), body = $('summary').querySelector('tbody');
     head.textContent = ''; body.textContent = '';
@@ -224,7 +225,7 @@
     rows.forEach(function (r) {
       var tr = el('tr'); if (!r.returned) { tr.className = 'none'; tr.title = 'Ei palautusta tästä luvusta'; }
       var part = function (v, of, bar) { var td = el('td', 'n'); td.append(el('span', 'v', v)); if (of !== undefined) td.append(el('span', 'of', ' / ' + of)); if (bar) td.append(bar); return td; };
-      tr.append(el('td', null, r.name),
+      tr.append(el('td', null, S.hide ? 'Opiskelija ' + (rows.indexOf(r) + 1) : r.name),
         part(String(r.answered), nTasks, meter(r.answered, nTasks, '', 'Tehty ' + pct(r.answered, nTasks))),
         part(String(r.unchecked)),
         part(num(r.points), num(max), meter(r.points, max, 'pts', 'Pisteet ' + pct(r.points, max))));
@@ -239,6 +240,11 @@
     gc.hidden = !rows.length;
     $('summary').hidden = !rows.length; $('noSummary').hidden = !!rows.length; $('scopeWrap').hidden = !rows.length;
   }
+  $('hideNames').addEventListener('click', function () {
+    S.hide = !S.hide; $('hideNames').textContent = S.hide ? 'Näytä nimet' : 'Piilota nimet'; $('hideNames').setAttribute('aria-pressed', String(S.hide));
+    $('probSec').hidden = S.hide || !(S.ov && S.ov.problems.length);
+    if (S.ov) renderSummary(S.ov);
+  });
   $('scope').addEventListener('change', function () { S.scope = $('scope').value; if (S.ov) renderSummary(S.ov); });
   $('refresh').addEventListener('click', loadHome);
   $('onlyOpen').addEventListener('change', function () { S.onlyOpen = $('onlyOpen').checked; if (S.ov) renderTasks(S.ov); });
@@ -269,13 +275,13 @@
     S.ver = ver === null || ver === undefined ? e.versions.length - 1 : ver;   // oletuksena uusin hyväksytty versio
     var v = e.versions[S.ver];
     $('gPos').textContent = 'Opiskelija ' + (idx + 1) + '/' + S.entries.length;
-    $('gEmail').textContent = e.email;
+    $('gEmail').textContent = S.hide ? 'Opiskelija ' + (idx + 1) : e.email;
     $('gTime').textContent = 'Palautettu ' + v.time + ' · versio ' + (S.ver + 1) + '/' + e.versions.length + (S.ver === e.versions.length - 1 ? ' (uusin)' : ' (vanhempi)') + ' · tunniste ' + v.sub.slice(0, 8);
     var sel = $('gVer'); sel.textContent = '';
     e.versions.forEach(function (x, i) { var o = el('option', null, (i + 1) + ': ' + x.time + (scoreText(x.score) !== '' ? ' · ' + scoreText(x.score) + ' p' : '')); o.value = String(i); sel.append(o); });
     sel.value = String(S.ver); $('gVerWrap').hidden = e.versions.length < 2;
     $('points').value = scoreText(v.score);
-    setState(scoreText(v.score) !== '' ? 'Tallennettu ✓' : 'Arvioimaton', scoreText(v.score) !== '' ? 'ok' : null);
+    setState(v.from >= 0 ? 'Pisteet versiosta ' + (v.from + 1) + ' ✓ (sama ratkaisu)' : scoreText(v.score) !== '' ? 'Tallennettu ✓' : 'Arvioimaton', scoreText(v.score) !== '' ? 'ok' : null);
     $('prev').disabled = idx === 0; $('next').disabled = idx === S.entries.length - 1;
     $('points').disabled = true; $('gVer').disabled = false;
     var token = ++S.token;
@@ -339,7 +345,7 @@
     var target = c.version, req = { email: c.entry.email, sub: target.sub, task: S.task.id, value: p.value };
     setState('Tallennetaan…', 'busy');
     S.saving = call('rlSaveScore', req).then(function (r) {
-      target.score = r.value;
+      target.score = r.value; target.from = -1;
       if (cur() && cur().version === target) setState(r.value === '' ? 'Tallennettu ✓ (arvioimaton)' : 'Tallennettu ✓', 'ok');
       return true;
     }, function (e) {
