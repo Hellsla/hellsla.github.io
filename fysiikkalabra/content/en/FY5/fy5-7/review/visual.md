@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 160a3dd44e35ed9f
+CONTENT-HASH: a0a9a188acdab68e
 
 ## Blocking
 - none
@@ -8,4 +8,11 @@ CONTENT-HASH: 160a3dd44e35ed9f
 - none
 
 ## Checked
-- batch delta review: opened fy5-7-1280-0 and fy5-7-360-0; photo loads, floats right beside the text at 1280 px and sits in the column at 360 px without clipping or overflow; caption and alt are natural English, factual and consistent with the picture and the adjacent paragraph; credit line present under the caption.
+- delta review (English, fy5-7): only figures.json changed (new entries for option figures used in the exercise sets, which already passed); lesson text unchanged (git tree clean for the lesson files).
+- Rebuilt with `python scripts/build.py fy5-7`; page opened at 390 px after its own scripts ran: scrollWidth = clientWidth = 390 (no horizontal overflow), no KaTeX error nodes, no page errors.
+- Opened a 390 px contact sheet of every visible lesson figure (hero illustration, vector/path figure, road-bend diagrams, graphs, force diagrams for fy5-4; swing hero, spring/pendulum diagram, reference-circle, sine graphs and simulated-data graph for fy5-7): all render complete, unclipped, labels in KaTeX, colours per convention, in the language of the page (aria-labels in English, decimal comma in Finnish axes, decimal point in English).
+- The lesson's own figures are unchanged in this language; the new figure texts only add entries and replace none that the lesson shows.
+- The screenshot script (scripts/screenshot.py) crashes on a stage heading in this lesson page, so captures were made with a separate script; review/shots not refreshed.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
