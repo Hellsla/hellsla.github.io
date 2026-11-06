@@ -9,8 +9,9 @@ running number ("1-4"), level, statement (text, data table and choices, formulas
 so the Apps Script view needs no fonts, styles or scripts from outside) and the short model answer. The answer
 checks, hints, solutions, feedback and which choice is correct are left out. --check fails when the file is not
 up to date (the build changed an exercise and the generator was not run).
-One local grading page per course, palautus/arviointi-<course>.html (teacher 2026-11-06: every course); Tehtavat.gs
-(the Apps Script version, blocked in eduespoo) stays FY3."""
+One local grading page for the running period, palautus/arviointi-<year>-p<period>.html, with the courses that
+palautukset.json has forms for (teacher 2026-11-06: one file, a new one each period); Tehtavat.gs (the Apps Script
+version, blocked in eduespoo) stays FY3."""
 import base64, functools, http.server, json, pathlib, re, sys, threading
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from courses import ROOT
@@ -42,6 +43,11 @@ EXTRACT = r"""(id) => {
   const strip = (root) => {
     root.querySelectorAll('.ex-num,.ex-core,form,details,label.solved,.pad-open,.pad,.feedback,button,script,style,.ex-head,.zoom-btn,legend').forEach((e) => e.remove());
     root.querySelectorAll('input').forEach((e) => e.remove());
+    // lesson.js flFitMath moves the punctuation after a formula wider than the column into the formula (.kx-punct), and
+    // which formulas are too wide depends on the machine's fonts: put the mark back after the formula, so the grading
+    // view gets the same text everywhere (CI 2026-11-06: fy8-10 lost a comma there on the CI machine only).
+    root.querySelectorAll('.katex .kx-punct').forEach((m) => { const k = m.closest('.katex'), h = k.parentNode && k.parentNode.nodeName === 'SPAN' && !k.parentNode.className && k.parentNode.childNodes.length === 1 ? k.parentNode : k, n = h.nextSibling;
+      if (n && n.nodeType === 3) n.data = m.dataset.text + n.data; else h.after(m.dataset.text || ''); m.remove(); k.classList.remove('kx-wide'); });
     // KaTeX: keep only its MathML (Chrome draws MathML Core); display formulas as blocks
     root.querySelectorAll('.katex-display').forEach((d) => { const m = d.querySelector('math'); if (m) { m.setAttribute('display', 'block'); d.replaceWith(m); } });
     root.querySelectorAll('.katex').forEach((k) => { const m = k.querySelector('math'); if (m) k.replaceWith(m); });
@@ -53,11 +59,14 @@ EXTRACT = r"""(id) => {
   };
   const lis = [...page.querySelectorAll('#exercises li[id]')].filter((li) => li.querySelector(':scope > .task'));
   return lis.map((li) => {
-    const c = li.cloneNode(true);
     const answer = li.querySelector(':scope > details.answer > :not(summary)');
     const ans = answer ? answer.cloneNode(true) : null;
     // figures become pictures (filled in by the caller from element screenshots)
-    c.querySelectorAll('.fig, figure').forEach((f, i) => { const img = document.createElement('img'); const lab = f.querySelector('[aria-label]'); img.setAttribute('alt', lab ? lab.getAttribute('aria-label') : ''); img.setAttribute('src', 'FIG:' + i); img.className = 'fig'; f.replaceWith(img); });
+    // every figure of the task (also inside a choice), outermost only, numbered on the page so the caller shoots the same one
+    li.querySelectorAll('.fig, figure').forEach((f) => f.removeAttribute('data-rl-fig'));
+    [...li.querySelectorAll('.fig, figure')].filter((f) => !f.parentElement.closest('.fig, figure')).forEach((f, i) => f.setAttribute('data-rl-fig', String(i)));
+    const c = li.cloneNode(true);
+    c.querySelectorAll('[data-rl-fig]').forEach((f) => { const i = f.getAttribute('data-rl-fig'); const img = document.createElement('img'); const lab = f.querySelector('[aria-label]'); img.setAttribute('alt', lab ? lab.getAttribute('aria-label') : ''); img.setAttribute('src', 'FIG:' + i); img.className = 'fig'; f.replaceWith(img); });
     strip(c); if (ans) strip(ans);
     return { id: li.id, number: li.dataset.num || '', level: Number((li.closest('details.level') ? [...document.querySelectorAll('#exercises details.level')].indexOf(li.closest('details.level')) : -1) + 1),
              html: c.innerHTML.replace(/\s+/g, ' ').trim(), answer: ans ? ans.innerHTML.replace(/\s+/g, ' ').trim() : '' };
@@ -79,17 +88,21 @@ def collect(course):
         pg = b.new_page(viewport={"width": 900, "height": 1000}, device_scale_factor=2)
         for pid in pages(course):
             pg.goto(f"http://127.0.0.1:{srv.server_port}/{pid}.html")
-            pg.evaluate("document.querySelectorAll('#exercises details.level, #exercises details.answer').forEach((d) => { d.open = true; })")
-            pg.wait_for_function("document.querySelectorAll('#exercises .katex').length > 0")
-            pg.wait_for_timeout(400)
-            pg.evaluate("window.flMath && window.flMath(document.getElementById('exercises'))")
-            pg.wait_for_timeout(300)
+            pg.wait_for_function("typeof window.renderMathInElement === 'function' && typeof window.flMath === 'function'")
+            # Every box open and typeset before reading (lesson.html flMath typesets a closed box only on its toggle event,
+            # which fires later; on a slow CI machine the old fixed waits read some boxes as raw LaTeX, 2026-11-06).
+            pg.evaluate("""() => document.querySelectorAll('#exercises details').forEach((d) => {
+              if (d.closest('.level, .answer') || d.matches('.level, .answer')) { d.open = true; if (d.flMathOpen) d.flMathOpen(); } })""")
+            pg.wait_for_function("""() => ![...document.querySelectorAll('#exercises details.level, #exercises details.answer')].some((d) => !d.open || d.dataset.flMath === 'wait' || d.classList.contains('fl-math-later'))""")
+            pg.evaluate("document.fonts ? document.fonts.ready.then(() => true) : true")
+            pg.wait_for_timeout(200)
             tasks = pg.evaluate(EXTRACT)
             for t in tasks:
-                figs = pg.locator(f'[id="{t["id"]}"] > .fig, [id="{t["id"]}"] > figure')
-                for i in range(figs.count()):
-                    png = base64.b64encode(figs.nth(i).screenshot(type="png")).decode()
+                figs = pg.locator(f'[id="{t["id"]}"] [data-rl-fig]')
+                for i in range(figs.count()):   # each figure of the task, choices too (before 2026-11-06 only the task's own)
+                    png = base64.b64encode(pg.locator(f'[id="{t["id"]}"] [data-rl-fig="{i}"]').screenshot(type="png", animations="disabled")).decode()
                     t["html"] = t["html"].replace(f'src="FIG:{i}"', f'src="data:image/png;base64,{png}"')
+                if "FIG:" in t["html"]: sys.exit(f"{pid} {t['id']}: a figure was not drawn for the grading view")
             title = pg.evaluate("(() => { const h = document.querySelector('main h1').cloneNode(true); h.querySelectorAll('.katex').forEach((k) => { const a = k.querySelector('annotation'); k.replaceWith(a ? a.textContent : k.textContent); }); return h.textContent; })()").strip()
             eyebrow = pg.evaluate("(() => { const e = document.querySelector('.ch-no'); return e ? e.textContent : ''; })()")
             m = re.search(r"Luku\s+(\d+)", eyebrow)
@@ -109,41 +122,79 @@ def render(code, chapters):
             "var RL_COURSE = " + json.dumps(course, ensure_ascii=False, indent=1) + ";\n")
 
 
-LOCAL = lambda code: ROOT / f"palautus/arviointi-{code.lower()}.html"
+FORMS = ROOT / "palautukset.json"
+
+
+def period():
+    """The period of palautukset.json (teacher 2026-11-06: one grading file for the running period, a new one when the
+    next period starts): its courses (from the groups, "FY3.2" -> FY3), its name and the grading page's path."""
+    d = json.loads(FORMS.read_text()) if FORMS.is_file() else {}
+    codes = sorted({re.match(r"FY\d+", f["group"]).group(0) for f in d.get("forms", []) if re.match(r"FY\d+", f["group"])}, key=lambda c: int(c[2:]))
+    if not codes: return None
+    return {"courses": codes, "name": f"{d['period']}. periodi · lv {d['year']}",
+            "path": ROOT / f"palautus/arviointi-{d['year']}-p{d['period']}.html"}
+
+
 CSP = ("<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'none'; img-src data: blob:; "
        "style-src 'unsafe-inline'; script-src 'unsafe-inline'\">")
 
 
-def local_page(tasks_gs, course):
+def local_page(courses, name):
     """The local grading page (teacher 2026-11-05: Apps Script is blocked in eduespoo): Review.html with the services
     of palautus/paikallinen/local-backend.js, Tehtavat.gs and Code.gs inlined, opened from the teacher's own computer.
     Nothing is loaded from the network (CSP)."""
     gas = ROOT / "palautus"
     js = lambda t: "<script>" + t.replace("</script", "<\\/script") + "</script>"
-    head = (CSP + f"<title>RuukkiLabra · arviointi {course} (paikallinen)</title><script>window.RL_LOCAL = true;</script>"
-            + js(tasks_gs) + js((gas / "apps-script/Code.gs").read_text()) + js((gas / "paikallinen/local-backend.js").read_text()))
+    tasks = ("/* GENERATED by scripts/palautus_tasks.py: the period's courses, each with its chapters and exercises. */\n"
+             "var RL_COURSES = " + json.dumps(courses, ensure_ascii=False, indent=1) + ";\n"
+             "var RL_COURSE = RL_COURSES[" + json.dumps(next(iter(courses))) + "];\n")
+    head = (CSP + f"<title>RuukkiLabra · arviointi · {name}</title><script>window.RL_LOCAL = true;</script>"
+            + js(tasks) + js((gas / "apps-script/Code.gs").read_text()) + js((gas / "paikallinen/local-backend.js").read_text()))
     page = (gas / "apps-script/Review.html").read_text().replace('<base target="_top">\n', "")
     return ("<!-- GENERATED by scripts/palautus_tasks.py from palautus/apps-script and palautus/paikallinen; do not edit by hand. -->\n"
             + page.replace("<head>", "<head>" + head, 1))
 
 
+def explain(old, new, path):
+    """Where a stale file differs (CI shows it in the log, so a difference is never a guess)."""
+    i = next((k for k, (x, y) in enumerate(zip(old, new)) if x != y), min(len(old), len(new)))
+    print(f"DIFF {path.relative_to(ROOT)} at character {i} (lengths {len(old)}, {len(new)}):\n  committed: {old[max(0, i - 200):i + 200]!r}\n  built:     {new[max(0, i - 200):i + 200]!r}")
+
+
 if __name__ == "__main__":
     strip = lambda s: re.sub(r"data:image/png;base64,[A-Za-z0-9+/=]+", "PNG", s)   # screenshots differ by a pixel between machines
     bad = []
-    for code in courses_with_button():
-        text = render(code, collect(code))
-        local = LOCAL(code)
+    per = period()
+    have = courses_with_button()
+    wanted = [c for c in have if c == GAS_COURSE or (per and c in per["courses"])]
+    courses = {}
+    for code in wanted:
+        chapters = collect(code)
+        text = render(code, chapters)
+        if per and code in per["courses"]: courses[code] = {"id": code, "chapters": sorted(chapters, key=lambda c: c["number"])}
         if code == GAS_COURSE:
             if check:
-                if strip(OUT.read_text() if OUT.is_file() else "") != strip(text): bad.append(OUT)
+                if strip(OUT.read_text() if OUT.is_file() else "") != strip(text):
+                    bad.append(OUT); explain(strip(OUT.read_text() if OUT.is_file() else ""), strip(text), OUT)
                 else: print(f"ok   {OUT.relative_to(ROOT)} is up to date")
             else:
                 OUT.parent.mkdir(parents=True, exist_ok=True); OUT.write_text(text)
                 print("wrote", OUT.relative_to(ROOT), f"({len(text) // 1024} kB)")
+    if per:
+        missing = [c for c in per["courses"] if c not in courses]
+        if missing: sys.exit(f"palautukset.json names {', '.join(missing)}, which has no chapter with the button")
+        local, page = per["path"], local_page(courses, per["name"])
         if check:
-            if not local.is_file() or strip(local.read_text()) != strip(local_page(text, code)): bad.append(local)
+            if not local.is_file() or strip(local.read_text()) != strip(page):
+                bad.append(local); explain(strip(local.read_text()) if local.is_file() else "", strip(page), local)
             else: print(f"ok   {local.relative_to(ROOT)} is up to date")
         else:
-            local.write_text(local_page(text, code))
-            print("wrote", local.relative_to(ROOT), f"({len(local.read_text()) // 1024} kB)")
+            local.write_text(page)
+            print("wrote", local.relative_to(ROOT), f"({len(page) // 1024} kB)")
+    # one grading file at a time: the running period's (teacher 2026-11-06)
+    stale = [f for f in (ROOT / "palautus").glob("arviointi-*.html") if not per or f != per["path"]]
+    if stale:
+        if check: bad += stale; print("stale grading pages (run python scripts/palautus_tasks.py):", ", ".join(f.name for f in stale))
+        else:
+            for f in stale: f.unlink(); print("removed", f.relative_to(ROOT))
     if bad: sys.exit("out of date (run python scripts/palautus_tasks.py): " + ", ".join(str(p.relative_to(ROOT)) for p in bad))
