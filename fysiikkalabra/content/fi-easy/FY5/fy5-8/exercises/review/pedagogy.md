@@ -1,20 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 195a5843a6dcc8e0
-Mode: full (translation review against the reviewed Finnish set)
-Round 2
+CONTENT-HASH: 1ae8685140b955d6
+Mode: full (translation review against the reviewed Finnish set; new task fy5-8-L2-08)
+Round 1
 
 ## Blocking
 (none)
 
 ## Fixed
-(none needed: the fi-easy answers equal the correct choices and the text is plain selkosuomi)
+- None needed; new task fy5-8-L2-08 was already faithful to content/fi.
 
 ## Polish
 (none)
 
 ## Checked
-- Distractor feedback in L1-06/L1-07 keeps the Finnish diagnosis (vertical spring, always valid, compression only; double force, no change, square root).
-- Task statements keep the same sub-parts a), b), c) and the same asked quantity in the answer box as fi.
-- Error-finding tasks L2-06 and L2-07 keep the student claim in quotes with the same wording of the mistake (whole length used as extension; stiffer spring "stores more").
-- Plain Finnish: short sentences, terms explained (harmoninen voima, jousivakio, hystereesi in brackets), no English left.
-- Solutions keep the Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness structure.
+- fy5-8-L2-08: situation first, question last as its own sentence; same structure, options and reasoning steps as fi; example-data notice kept where fi has it.
+- Solution has the same stages as fi (Find, Principle, Model answer) and can be followed step by step; nothing skipped or added.
+- Feedback repairs the misconception rather than restating the answer, as in fi.
+- Selkosuomi per NOTES.md section 12: short sentences, common words, glossary terms kept; same physics and numbers as fi; decimal comma in text, point in table cells as in fi.
+- No change to level, workload or figure use; check_i18n.py shows nothing for fy5-8; build.py fy5-8 succeeds.

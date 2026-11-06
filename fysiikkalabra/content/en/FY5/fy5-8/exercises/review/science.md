@@ -1,20 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: fda0effb37e4eadc
-Mode: full (translation review against the reviewed Finnish set)
-Round 2
+CONTENT-HASH: 02b5aa9f39ab5ea1
+Mode: full (translation review against the reviewed Finnish set; new task fy5-8-L2-08)
+Round 1
 
 ## Blocking
 (none)
 
 ## Fixed
-- exercises.json L1-06 and L1-07: the `answer` field still held the Finnish text of the correct option; replaced with the exact English text of the correct choice (en answer must be the correct option's text).
+- None needed; new task fy5-8-L2-08 was already faithful to content/fi.
 
 ## Polish
 (none)
 
 ## Checked
-- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) and the older ones compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, figure ids, correct flags, data table cells and every number in texts, choices and feedback are identical (decimal point in en JSON and LaTeX where fi has a comma).
-- solutions.md: 701 numbers in the same order as fi, no differences; formulas and substitutions unchanged.
-- Key answers re-derived from the text: 25 N/m, 24.4 N/m, 24.525 N/m, 0.60 J, 0.255 J, 73 %; all agree.
-- L1-06 and L1-07: one correct choice each, feedback names the right error as in fi.
-- check_i18n.py en: 0 errors.
+- fy5-8-L2-08 (spring data with uncertainty): id, level, kind, answer, unit, tolerance, correct flags, choices order, data rows and every number in text, choices, feedback and solution identical to content/fi.
+- Recomputed independently: ratios 25.5/24.5/24.5/25.0/25.1 N/m, k=25 N/m, uncertainty 1.3 N/m at 4.0 cm; the 0.25 N/cm distractor; all agree with the solution and with the correct choice.
+- Distractor feedback keeps the Finnish physics (each wrong option's error named correctly).
+- Wording is natural textbook English; decimal point in JSON and LaTeX; no Finnish left.
+- check_i18n.py shows nothing for fy5-8; build.py fy5-8 succeeds.
