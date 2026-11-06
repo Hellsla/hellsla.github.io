@@ -305,8 +305,48 @@ def tarkistus_kuvaaja():
                       "katkoviivan jokaisella aika-akselin apuviivalla.", 5.0, 1.8, 5.4, 0.9, 0.9, 6.0, 1.0, 2.0)
 
 
+# Graph choice of task fy5-7-L1-09: four (t, x) graphs on one grid, f = 2,0 Hz and A = 3,0 cm given; only
+# "pick-a3-t05" is right (A = 3,0 cm, T = 0,50 s). The names say the drawn amplitude and period, not the answer.
+PICK_DESC = ("(t,x)-kuvaaja mittakaavassa: vaaka-akselilla aika t sekunteina nollasta kahteen sekuntiin, apuviivat "
+             "0,25 sekunnin välein ja lukuarvot puolen sekunnin välein; pystyakselilla poikkeama x senttimetreinä "
+             "miinus neljästä neljään senttimetrin välein. Tasapainoasema x = 0 on vaakasuora katkoviiva. Sinikäyrä "
+             "lähtee hetkellä 0 tasapainoasemasta ylöspäin. ")
+
+
+def pick_graph(fid, label, A, T):
+    """One option of the graph choice: the same axes, curve weight and colour for every option."""
+    return sine_graph(fid, PICK_DESC + label, A, T, 2.0, 0.25, 0.5, 4.0, 1.0, 1.0, height=330)
+
+
+def pick_a3_t05():
+    return pick_graph("fy57-pick-a3-t05", "Huiput ovat kohdassa 3 cm ja pohjat kohdassa miinus 3 cm. Ensimmäinen huippu on "
+                      "hetkellä 0,125 s, peräkkäiset huiput ovat 0,5 s:n päässä toisistaan, ja käyrä leikkaa "
+                      "tasapainoaseman 0,25 s:n välein. Aikavälillä on neljä täyttä värähdystä.", 3.0, 0.50)
+
+
+def pick_a15_t05():
+    """The amplitude read as the distance from a bottom to a top (2A = 3,0 cm)."""
+    return pick_graph("fy57-pick-a15-t05", "Huiput ovat kohdassa 1,5 cm ja pohjat kohdassa miinus 1,5 cm. Ensimmäinen huippu "
+                      "on hetkellä 0,125 s, peräkkäiset huiput ovat 0,5 s:n päässä toisistaan, ja käyrä leikkaa "
+                      "tasapainoaseman 0,25 s:n välein. Aikavälillä on neljä täyttä värähdystä.", 1.5, 0.50)
+
+
+def pick_a3_t1():
+    """The period taken as the time between successive crossings of x = 0 (T/2 = 0,50 s)."""
+    return pick_graph("fy57-pick-a3-t1", "Huiput ovat kohdassa 3 cm ja pohjat kohdassa miinus 3 cm. Ensimmäinen huippu on "
+                      "hetkellä 0,25 s, peräkkäiset huiput ovat 1,0 s:n päässä toisistaan, ja käyrä leikkaa "
+                      "tasapainoaseman 0,5 s:n välein. Aikavälillä on kaksi täyttä värähdystä.", 3.0, 1.0)
+
+
+def pick_a3_t2():
+    """The frequency taken as the period (T = 2,0 s)."""
+    return pick_graph("fy57-pick-a3-t2", "Huippu on kohdassa 3 cm hetkellä 0,5 s ja pohja kohdassa miinus 3 cm hetkellä "
+                      "1,5 s, ja käyrä leikkaa tasapainoaseman 1,0 s:n välein. Aikavälillä on yksi täysi värähdys.", 3.0, 2.0)
+
+
 FIGURES = {"hero": hero, "osat": osat, "kuvaaja": kuvaaja, "ympyra": ympyra, "sovitus": sovitus,
-           "l1-kuvaaja": l1_kuvaaja, "l2-kuvaaja": l2_kuvaaja, "tarkistus-kuvaaja": tarkistus_kuvaaja}
+           "l1-kuvaaja": l1_kuvaaja, "l2-kuvaaja": l2_kuvaaja, "tarkistus-kuvaaja": tarkistus_kuvaaja,
+           "pick-a3-t05": pick_a3_t05, "pick-a15-t05": pick_a15_t05, "pick-a3-t1": pick_a3_t1, "pick-a3-t2": pick_a3_t2}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "osat": "reveals: the amplitude is measured from the equilibrium to one extreme, for a spring and a pendulum",
@@ -316,4 +356,8 @@ REUSE = {
     "l1-kuvaaja": "safe: a model sine x(t), 0–3 s, half-centimetre gridlines, no marks (A and T are to be read)",
     "l2-kuvaaja": "safe: a model sine x(t), 0–3 s, several periods, no marks (A and T are to be read)",
     "tarkistus-kuvaaja": "safe: a model sine x(t) of a pendulum, 0–5,4 s, gridlines every 0,9 s, no marks (T to be read)",
+    "pick-a3-t05": "reveals: the right option of task fy5-7-L1-09 (f = 2,0 Hz, A = 3,0 cm: T = 0,50 s)",
+    "pick-a15-t05": "safe: a wrong option of task fy5-7-L1-09 (the amplitude taken as the bottom-to-top distance)",
+    "pick-a3-t1": "safe: a wrong option of task fy5-7-L1-09 (the period taken between successive crossings of x = 0)",
+    "pick-a3-t2": "safe: a wrong option of task fy5-7-L1-09 (the frequency taken as the period)",
 }

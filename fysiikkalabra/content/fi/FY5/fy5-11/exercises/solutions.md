@@ -223,3 +223,30 @@ $$
 **Vastaus:** vuori on $2{,}0 \cdot 10^2$ kertaa FM-aallonpituuden levyinen, kaksi merkitsevää numeroa kuten vuoren leveydessä.
 **c) Perustelut:** AM-radion aallonpituus $333\,\text{m}$ on samaa suuruusluokkaa kuin vuoren leveys, $\tfrac{b}{\lambda} = \tfrac{600\,\text{m}}{333\,\text{m}} = 1{,}8$, joten diffraktio on voimakasta ja AM-lähetys taipuu vuoren taakse laaksoon. FM-radion aallonpituus on vain $\tfrac{1}{200}$ vuoren leveydestä ja digi-tv:n $\tfrac{b}{\lambda} = \tfrac{600\,\text{m}}{0{,}500\,\text{m}} = 1200$, joten niiden diffraktio on heikkoa: aallot etenevät lähes suoraan, ja vuoren taakse jää radiovarjo. Näkyvän valon aallonpituus $550\,\text{nm} = 5{,}5 \cdot 10^{-7}\,\text{m}$ on vielä paljon lyhyempi, $\tfrac{b}{\lambda} \approx 1 \cdot 10^9$, joten valo etenee käytännössä suoraan eikä taivu vuoren taakse.
 **Järkevyys:** Mitä korkeampi taajuus, sitä lyhyempi aallonpituus ja sitä heikompi diffraktio: $333\,\text{m} > 3{,}00\,\text{m} > 0{,}500\,\text{m} > 5{,}5 \cdot 10^{-7}\,\text{m}$. Tarkistus: $333\,\text{m} \cdot 9{,}00 \cdot 10^5\,\text{Hz} = 3{,}00 \cdot 10^8\,\text{m/s}$.
+
+## fy5-11-L2-08
+**Kysytty:** asetelmien järjestys sen mukaan, kuinka voimakkaasti aalto leviää raon takana, heikoimmasta voimakkaimpaan.
+**Periaate:** Diffraktion voimakkuus riippuu siitä, kuinka leveä rako on aallonpituuteen verrattuna. Kun rako on monta aallonpituutta leveä, aalto jatkaa lähes suorana ja kaartuu vain reunoilta. Kun $b \approx \lambda$ tai $b < \lambda$, aalto leviää paljon. Vertaillaan siis suhdetta $\lambda : b$: mitä suurempi se on, sitä voimakkaammin aalto leviää. Aallonpituus saadaan perusyhtälöstä $\lambda = \tfrac{v}{f}$, ja leveydet muutetaan samaan yksikköön.
+**Mallivastaus:** Aallonpituudet ovat
+
+$\lambda_\text{A} = \dfrac{0{,}30\,\text{m/s}}{10\,\text{Hz}} = 3{,}0\,\text{cm}$
+
+$\lambda_\text{B} = \dfrac{0{,}30\,\text{m/s}}{6{,}0\,\text{Hz}} = 5{,}0\,\text{cm}$
+
+$\lambda_\text{C} = \dfrac{0{,}30\,\text{m/s}}{15\,\text{Hz}} = 2{,}0\,\text{cm}$
+
+$\lambda_\text{D} = \dfrac{0{,}30\,\text{m/s}}{5{,}0\,\text{Hz}} = 6{,}0\,\text{cm}$
+
+Raon leveys C:ssä on $15\,\text{mm} = 1{,}5\,\text{cm}$. Suhteet ovat
+
+A: $3{,}0\,\text{cm} : 6{,}0\,\text{cm} = 0{,}50$
+
+B: $5{,}0\,\text{cm} : 2{,}0\,\text{cm} = 2{,}5$
+
+C: $2{,}0\,\text{cm} : 1{,}5\,\text{cm} \approx 1{,}3$
+
+D: $6{,}0\,\text{cm} : 24\,\text{cm} = 0{,}25$
+
+Suhteen mukaan pienimmästä suurimpaan eli diffraktion mukaan heikoimmasta voimakkaimpaan järjestys on D, A, C, B. Asetelmassa D rako on neljä aallonpituutta leveä, joten aalto kaartuu vain reunoilta. Asetelmissa C ja B rako on aallonpituutta kapeampi, ja aalto leviää laajalle raon taakse, voimakkaimmin asetelmassa B.
+
+Pelkkä raon leveys ei ratkaise järjestystä: kapein rako on C:ssä, mutta B:n aalto leviää enemmän, koska sen aallonpituus on suurempi. Pelkkä aallonpituuskaan ei ratkaise: D:n aallonpituus on suurin, mutta sen rako on niin leveä, että se taipuu heikoimmin.

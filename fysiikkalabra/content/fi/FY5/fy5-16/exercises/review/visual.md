@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: d62b2b53d0757222
+CONTENT-HASH: 431ea9a2e547e7e5
 
 ## Blocking
 (none)
-Round-4 Major resolved: the answer pill of fy5-16-L2-07 now reads "1,9 min" (capture #65), and shown() returns 1{,}9\,\text{min} on the block.
 
 ## Polish
-(none)
+- [Minor] fy5-16-L2-08 — the correct option (116 characters) is no longer the only one with a hedge, and the longest is a distractor (126), so form does not give it away.
 
 ## Checked
-- L2-07: 109 - 85 = 24 dB = 8 steps; student 8 h : 8 = 1,0 h = 60 min; correct 480 min / 256 = 1,875 min, about 1,9 min; 60 / 1,875 = 32 matches the Järkevyys; answer 1,9 min within tolerance.
-- New Vastaus wording "luvulla $256$" and the two short check formulas (8 h to 1 h in three halvings, 60 min to 1,875 min in five more, eight in all) are correct and read fluently; the long chain is gone and nothing wraps awkwardly.
-- Captures opened: contact-6 (#65 task, answer pill and Annettu to Periaate; #66 solution rows, Vastaus and Järkevyys): inside the cards, no overflow, units upright, decimal comma correct.
-- No value repeated from the lesson or other tasks; rest of the set unchanged.
+- Round 2 after commit 4ff432a8f. Rebuilt with `python scripts/build.py fy5-16`; own script (vr5_newtask_probe.py, scratchpad) re-rendered the new task at 390 px after the page scripts ran, with answer, feedback and solution open: document scrollWidth 390, no clipped element outside a scroll box. Image of the card read (fy5-14, fy5-16 and fy5-17 renders re-made; fy5-17 re-read, the other two checked by measurement and by the diff text).
+- From text only: the round-2 diff, option and reason lengths.
+- Option hedging now parallel ("suunnilleen puolittuu" / "suunnilleen yhtä paljon"), 85 dB feedback reads "todellinen taso voi olla 84–86 dB"; table, options and three difference rows fit inside the card; no overflow.
+- Delta only: the changed task and solution; no figure.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations n/a (no figure) · typography 4 · Finnish 5 · accessibility 5

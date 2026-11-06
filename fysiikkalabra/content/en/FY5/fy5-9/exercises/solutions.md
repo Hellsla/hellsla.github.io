@@ -185,3 +185,20 @@
 **Substitution:** Part a): $T = 2\pi\sqrt{\dfrac{1.20\,\text{m}}{9.81\,\text{m/s}^2}} = 2.198\,\text{s}$, so $t = \dfrac{2.198\,\text{s}}{4} = 0.549\,\text{s}$. Part b): $h = 1.20\,\text{m} \cdot (1 - \cos 10.0\,{}^\circ) = 0.01823\,\text{m}$ and $v = \sqrt{2 \cdot 9.81\,\text{m/s}^2 \cdot 0.01823\,\text{m}} = 0.5981\,\text{m/s}$. Part c): $A = 1.20\,\text{m} \cdot 0.17453 = 0.2094\,\text{m}$ and $v_\text{h} = 0.2094\,\text{m} \cdot \sqrt{\dfrac{9.81}{1.20}}\,\dfrac{1}{\text{s}} = 0.5988\,\text{m/s}$, so the difference is $\dfrac{0.5988 - 0.5981}{0.5981} \cdot 100\,\% = 0.13\,\%$ and the harmonic model gives the greater speed.
 **Answer:** $0.598\,\text{m/s}$, three significant figures as in the length $1.20\,\text{m}$ and the angle $10.0\,{}^\circ$.
 **Reasonableness:** The kinetic energy per unit mass is $\tfrac{1}{2}v^2 = 0.1788\,\text{J/kg}$ and the decrease in potential energy is $gh = 9.81 \cdot 0.01823 = 0.1788\,\text{J/kg}$, so energy is conserved. The harmonic model gives a result that differs by only $0.13\,\%$, because at a small angle $\sin\alpha$ is almost the same as $\alpha$ in radians. The difference is positive, because the model uses $mg\alpha$ as the restoring force, which is greater than the real $mg\sin\alpha$: the model does slightly more work, so the speed is slightly greater ($0.5988\,\text{m/s} > 0.5981\,\text{m/s}$). The same order of magnitude can be seen in the table of the lesson: at the starting angle $10\,{}^\circ$ the period differs from the formula by only $0.2\,\%$.
+
+## fy5-9-L2-08
+**Find:** how the periods of a pendulum and a spring oscillator change when they are taken from Earth to the Moon, and which justification explains it.
+**Principle:** The period of a spring oscillator is $T = 2\pi\sqrt{\tfrac{m}{k}}$. The force of the spring $F = -kx$ depends only on the displacement, and in a vertical spring the weight only shifts the equilibrium position, so $g$ does not affect the period. In a pendulum the restoring force is the component of the weight along the path, $mg\sin\alpha$. The mass cancels, and for small swings $T = 2\pi\sqrt{\tfrac{l}{g}}$, that is, the period is proportional to $\tfrac{1}{\sqrt{g}}$.
+**Model answer:** The mass $m$ and the spring constant $k$ of the spring oscillator are the same on the Moon as on Earth, so its period stays $1.00\,\text{s}$. The spring stretches less on the Moon, but that only changes the position of the equilibrium.
+
+The length of the pendulum stays the same, so the ratio of the periods depends only on the accelerations of free fall:
+
+$$\begin{aligned}
+&\frac{T_\text{M}}{T_\text{E}} = \sqrt{\frac{g_\text{E}}{g_\text{M}}} \\
+&\phantom{\frac{T_\text{M}}{T_\text{E}}} = \sqrt{\frac{9.81\,\text{m/s}^2}{1.62\,\text{m/s}^2}} \\
+&\phantom{\frac{T_\text{M}}{T_\text{E}}} \approx 2.461
+\end{aligned}$$
+
+$T_\text{M} = 2.461 \cdot 1.00\,\text{s} \approx 2.46\,\text{s}$
+
+So the period of the pendulum becomes about $2.5$ times as long, and the period of the spring stays the same. Justification: the restoring force of the pendulum is a part of the weight, which is smaller on the Moon, but the mass to be accelerated does not decrease. The force of the spring depends only on the displacement and the spring constant. The acceleration of free fall on the Moon is about one sixth of the value on Earth, but because of the square root the period becomes only about $\sqrt{6.1} \approx 2.5$ times as long, not six times.

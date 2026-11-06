@@ -1,7 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: e63affccfd49f16d
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 8582b9190f73f167
+Mode: full (translation review against the reviewed Finnish set, new task L2-08)
+Round 2
 
 ## Blocking
 (none)
@@ -10,7 +10,7 @@ Round 1
 (none)
 
 ## Checked
-- Lauseet lyhyitä ja sanasto tuttua; keskinormaali selitetään ("eli yhtä kaukana molemmista kaiuttimista"), matkaero määritellään ratkaisussa (kahden etäisyyden erotus).
-- Väärien vaihtoehtojen virhekäsitykset ja korjaava palaute säilyvät L1-06, L1-07 ja L2-06:ssa.
-- L3-04 ja L3-05: oletukset (yhtä suuret aallot, ei heijastuksia, esimerkkiaineisto) mukana, pitkät virkkeet pilkottu.
-- Merkitsevien numeroiden perustelut ja päättely säilyvät lähteen mukaisina.
+- fy5-12-L2-08 keeps the Finnish pedagogy: a YO-skill task (error analysis or concept reasoning) with misconception-based distractors, each wrong choice with feedback naming its misconception and repairing it.
+- The stem gives no answer away; the correct option is not distinguishable by wording or length.
+- fi-easy has shorter sentences and explains terms in place; the demand is unchanged.
+- Solution is staged and readable on a phone; new task adds no extra workload.

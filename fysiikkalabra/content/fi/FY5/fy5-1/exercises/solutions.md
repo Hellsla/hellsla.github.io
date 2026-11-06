@@ -69,6 +69,27 @@
 **Vastaus:** $-9{,}0\,\text{Nm}$, kaksi merkitsevää numeroa kuten voimassa $15\,\text{N}$ ja etäisyydessä $0{,}60\,\text{m}$. Miinusmerkki kertoo kiertosuunnan.
 **Järkevyys:** Arvio pyöristetyillä luvuilla: $15\,\text{N}\cdot 0{,}6\,\text{m} = 9\,\text{Nm}$, kuten tuloksen suuruus. Etumerkki on negatiivinen, koska kiertosuunta on myötäpäivään. Jos sama voima kiertäisi sauvaa vastapäivään, momentti olisi $+9{,}0\,\text{Nm}$.
 
+## fy5-1-L1-09
+**Kysytty:** minkä neljästä lausekkeesta yksikkö on newton $\text{N}$ eli mikä niistä voi antaa pienimmän voiman $F$, jolla mutteri lähtee kiertymään.
+**Periaate:** Lausekkeen yksikkö saadaan sijoittamalla jokaisen suureen paikalle sen yksikkö: $M$ ($\text{Nm}$) ja $d$ ($\text{m}$). Kulman sini on pelkkä luku, joten se ei muuta yksikköä. Voiman lausekkeen on oltava newtoneina. Lisäksi vinon voiman varsi on $r = d\sin\alpha$, ja momentti on $M = F r$.
+**Mallivastaus:** Oikea on $\dfrac{M}{d\sin\alpha}$. Lausekkeiden yksiköt:
+
+$M d\sin\alpha$: $\text{Nm}\cdot\text{m} = \text{N}\cdot\text{m}^2$
+
+$\dfrac{M}{d\sin\alpha}$: $\dfrac{\text{Nm}}{\text{m}} = \text{N}$
+
+$M\sin\alpha$: $\text{Nm}$, momentin yksikkö
+
+$\dfrac{d\sin\alpha}{M}$: $\dfrac{\text{m}}{\text{Nm}} = \dfrac{1}{\text{N}}$
+
+Vain lausekkeen $\dfrac{M}{d\sin\alpha}$ yksikkö on newton. Sama tulos saadaan momentin kaavasta:
+
+$M = F d\sin\alpha$
+
+$F = \dfrac{M}{d\sin\alpha}$
+
+Lauseke $M d\sin\alpha$ antaisi suuremman voiman pidemmällä avaimella, vaikka pidempi varsi antaa saman momentin pienemmällä voimalla. Lausekkeessa $M\sin\alpha$ momentti on sekoitettu voimaan, ja lausekkeessa $\dfrac{d\sin\alpha}{M}$ jakolasku on väärin päin.
+
 ## fy5-1-L2-01
 **Annettu:** narun jännitysvoima $F = 40\,\text{N}$, kahvan etäisyys saranoista $d = 0{,}75\,\text{m}$, narun kulma oven tasoon nähden $\alpha = 35^\circ$
 **Kysytty:** narun voiman momentti $M$ saranoiden suhteen yksikössä $\text{Nm}$

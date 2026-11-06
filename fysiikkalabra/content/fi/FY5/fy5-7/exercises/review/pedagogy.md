@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 24a052823c292853
+CONTENT-HASH: 2c890badbdfaaf11
 
 ## Blocking
 (none)
 
 ## Polish
-- exercises.json L1-06 — the correct option's "jaksonaikaa vastaava taajuus" hints at the conversion; acceptable.
-- exercises.json L3-05 — answer 44 cm (tol 0,02) fits 44,2; the computation is closer to level 2, the reasoning in c) carries level 3.
+- exercises.json (fy5-7-L1-09 text) — the sentence about starting at a crossing upward does not discriminate (all four graphs start upward); harmless, or drop it to shorten the task.
 
 ## Checked
-- Round-3 delta: L3-05 Järkevyys now says "yli kaksi jaksoa (3,4 s) mittausalueen ohi": correct (5,0 s − 1,6 s = 3,4 s = 2,1 periods); the 43,1 cm check for T = 1,62 s is still right.
-- L1-02 and L2-04 answer fields are 5.10 and 7.50 again, matching the solutions' three significant figures.
-- Round-2 state holds: rewritten MC L1-06 and L1-08 have one correct option and misconception-based distractors.
-- Counts 8/7/5; all answers match the solutions.
+- Text and figure descriptions only (no renders; the four graph descriptions read from the packet). New task fy5-7-L1-09 (type 2, graph choice): T=0,50 s, A=3,0 cm, B matches; A has T=1,0 s, C amplitude 1,5 cm, D T=2,0 s as in feedback.
+- Distractors exactly the lesson's warned mistakes (zero crossings as period, amplitude as peak-to-peak, f as T).
+- Correct option not identifiable by form; all four figures equal in layout and fully described.
+- Correct feedback states only what is read from the graph, no extra reason stage.
+- Solution reads each graph and also gives the sin formula (lesson teaches sinifunktion sovittaminen); no long formula chain.

@@ -1,17 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 4c32264d89c055c7
-Mode: full (translation review against the reviewed Finnish set)
-Round 2
+CONTENT-HASH: eace54a780f9c990
+Mode: full (translation review against the reviewed Finnish set; new task fy5-14-L1-09)
+Round 1
 
 ## Blocking
 (none)
 
 ## Fixed
-(none needed beyond the science report)
+- None needed; new task fy5-14-L1-09 was already faithful to content/fi.
 
 ## Polish
 (none)
 
 ## Checked
-- Same structure and order as fi: hint-free tasks, misconception feedback per choice (L1-07 distance vs speed), error task L2-07 asks for the error and the value, L3 tasks keep three-part and justification questions.
-- Wording natural English for upper secondary level; no hints or answers added or removed compared with fi.
+- fy5-14-L1-09: situation first, question last as its own sentence; same structure, options and reasoning steps as fi; example-data notice kept where fi has it.
+- Solution has the same stages as fi (Find, Principle, Model answer) and can be followed step by step; nothing skipped or added.
+- Feedback repairs the misconception rather than restating the answer, as in fi.
+- Wording is natural textbook English; decimal point in JSON and LaTeX; no Finnish left.
+- No change to level, workload or figure use; check_i18n.py shows nothing for fy5-14; build.py fy5-14 succeeds.

@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 44dcfc0bfd9ecb00
+CONTENT-HASH: 5701e43715c62ef4
 
 ## Blocking
 
 ## Polish
-- fy5-8/exercises/solutions.md L1-08 — "0,04 m" in the check and in the Sijoitus difference: write 0,040 m so the two significant figures of the answer are visible.
+- fy5-8/exercises/exercises.json L2-08 choices — Carried over from round 1: no distractor carries a mistake the lesson's method section warns about, such as reading the slope from two neighbouring raw points or using total length instead of extension (bank plan). This is optional. The current distractors are physically sound.
 
 ## Checked
-- Round-1 Blocking 1 is fixed: L3-05 no longer assumes the string and spring are massless, and the loss explanation (kinetic energy of spring and string, vibration, sound, heat) is now consistent; the Vastaus keeps only the straight-line assumption.
-- Round-1 Blocking 2 is fixed: L1-08 reads the real grid points (0,08 m; 2,0 N) and (0,12 m; 3,0 N) and checks with (0,04 m; 1,0 N); all lie on line B (25 N/m), and answers.py follows.
-- The Polish items are done: "Hooken laki" is replaced by harmoninen voima F_v = kx; L1-06 feedback now says "välttämättä"; L2-05 now gives 24,4 N/m in both places (tolerance 0.03 still accepts 24); L3-04 asks for the stretching work W and states the hysteresis (the area is an upper bound for the returned energy).
-- I recomputed every new answer in one script: L1-08 25 N/m, L2-05 24,40 N/m, L2-06 24,53 N/m, L2-07 0,60 J, L3-04 0,255 J (½kx² from the first point gives 0,36 J, 41 % more), L3-05 73,05 % (answers.py 73,15 %). All are within tolerance.
-- In the MC tasks L1-06 (options reordered) and L1-07, exactly one option is correct and the answer string equals it.
-- No new physics errors are introduced; scope and notation match the lesson.
-- The hash was identical at the start and the end.
+- The round-1 Blocking item is fixed (commit 4ff432a8f). All four options now have the form "X, koska Y" and are of similar length. Three of them mention the uncertainty: options 1 and 2 wrongly, option 3 correctly. The right option can no longer be picked by form.
+- Option 2 (exercises.json:267) is now the warned unit mismatch: a ratio difference in N/m compared with the force uncertainty 0,05 N. Its feedback names the mismatch and gives the right comparison (±1,3 N/m).
+- Option 1 compares the growth of the force with 0,05 N, which is a true statement used for a wrong conclusion. Its feedback says why this tells nothing about k.
+- The answer string equals the text of the correct option. The correct option's feedback gives no extra reason.
+- I recomputed every row again: the ratios are 24,5 / 25,5 / 24,5 / 25,0 / 25,1 N/m with uncertainties ±2,5 / 1,25 / 0,83 / 0,63 / 0,50 N/m, and 25 N/m lies inside every interval.
+- The solution now writes Δ(F_v/x), and its closing paragraph matches the new options. The guardrails hold: a physical reason for the line through the origin, the slope read from the fitted line, and "within the uncertainty" not taken as proof the values are equal.
+- The aligned chain in the solution is two lines. From the text it fits 300 px. I did not render it.
+- answers.py ran again: all numeric answers agree with exercises.json within tolerance. The data table is unchanged.
+- The hash was the same at the start and at the end of round 2.

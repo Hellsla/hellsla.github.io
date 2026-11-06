@@ -213,6 +213,41 @@
      ]
     ]
    }
+  },
+  {
+   "id": "fy5-2-L2-08",
+   "level": 2,
+   "text": "Tasa-aineinen lankku, jonka pituus on $3{,}0\\,\\text{m}$ ja paino $160\\,\\text{N}$, on vaakasuorassa kahden tuen varassa. Tuki A on lankun vasemmassa päässä ja tuki B $2{,}0\\,\\text{m}$:n päässä vasemmasta päästä. Lankun oikeassa päässä on maalipurkki, jonka paino on $40\\,\\text{N}$. Tuet tukevat lankkua pystysuoraan ylöspäin. Oppilas laskee tukivoimat $N_\\text{A}$ ja $N_\\text{B}$, kun vastapäivään kiertävä momentti on positiivinen.\n\nRivi 1: momenttipisteeksi valitaan tuki A, joten tuntematon $N_\\text{A}$ ei esiinny momenttiehdossa.\n\nRivi 2: varret A:n suhteen ovat $r_\\text{B} = 2{,}0\\,\\text{m}$, lankun painolle $r_G = 1{,}5\\,\\text{m}$ ja purkin painolle $r_\\text{p} = 1{,}0\\,\\text{m}$.\n\nRivi 3: momenttiehdosta $N_\\text{B} r_\\text{B} = G r_G + G_\\text{p} r_\\text{p}$ saadaan $N_\\text{B} \\cdot 2{,}0\\,\\text{m} = 280\\,\\text{Nm}$, eli $N_\\text{B} = 140\\,\\text{N}$.\n\nRivi 4: voimien summasta $N_\\text{A} = G + G_\\text{p} - N_\\text{B}$, eli $N_\\text{A} = 60\\,\\text{N}$.\n\nTarkista lasku rivi riviltä. Valitse väärä rivi tai viimeinen vaihtoehto, jos laskussa ei ole virhettä.",
+   "kind": [
+    "error",
+    "reasoning"
+   ],
+   "answer": "Rivi 2: voimien varret",
+   "unit": "",
+   "tolerance": 0.02,
+   "choices": [
+    {
+     "text": "Rivi 1: momenttipisteen valinta",
+     "feedback": "Rivi 1 on oikein: momenttiehto pätee minkä tahansa pisteen suhteen, ja tuntemattoman voiman vaikutuspiste on hyvä valinta. Jos rivin luulee virheelliseksi, ajattelee, että momentit pitää laskea painopisteen suhteen."
+    },
+    {
+     "text": "Rivi 2: voimien varret",
+     "correct": true,
+     "feedback": "Oikein, tämä rivi on väärin: purkki on lankun oikeassa päässä, $3{,}0\\,\\text{m}$:n päässä tuesta A, joten sen painon varsi A:n suhteen on $r_\\text{p} = 3{,}0\\,\\text{m}$. Oikein $N_\\text{B} = 180\\,\\text{N}$ ja $N_\\text{A} = 20\\,\\text{N}$."
+    },
+    {
+     "text": "Rivi 3: tukivoiman $N_\\text{B}$ laskeminen",
+     "feedback": "Rivi 3 on rivin 2 varsilla oikein: $160\\,\\text{N} \\cdot 1{,}5\\,\\text{m} = 240\\,\\text{Nm}$ ja $40\\,\\text{N} \\cdot 1{,}0\\,\\text{m} = 40\\,\\text{Nm}$, yhteensä $280\\,\\text{Nm}$. Jos rivin luulee virheelliseksi, ajattelee ehkä, että kumpikin tuki kantaa puolet painoista eli $100\\,\\text{N}$."
+    },
+    {
+     "text": "Rivi 4: tukivoiman $N_\\text{A}$ laskeminen",
+     "feedback": "Rivi 4 on rivin 3 tuloksella oikein: tukivoimien summa on painojen summa $200\\,\\text{N}$. Jos rivin luulee virheelliseksi, ajattelee ehkä, että purkin paino jätetään voimien summasta pois, koska purkki on tuen B ulkopuolella."
+    },
+    {
+     "text": "Laskussa ei ole virhettä",
+     "feedback": "Laskussa on virhe rivillä 2: purkin painon varsi on mitattu tuesta B, vaikka momenttipiste on A. Kaikkien voimien varret mitataan saman valitun pisteen suhteen, joten purkin varsi on $3{,}0\\,\\text{m}$."
+    }
+   ]
   }
  ],
  "level3": [

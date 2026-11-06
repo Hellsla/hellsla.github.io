@@ -87,6 +87,37 @@
       "answer": 0.21,
       "unit": "mm/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-3-L1-09",
+      "level": 1,
+      "text": "A child sits on a roundabout $1.2\\,\\text{m}$ from the centre, and the roundabout rotates steadily at a frequency of rotation of $16\\,\\tfrac{1}{\\text{min}}$. The child moves to the edge of the roundabout, $2.4\\,\\text{m}$ from the centre. At the same time the roundabout slows down, and afterwards it rotates steadily at a frequency of rotation of $8.0\\,\\tfrac{1}{\\text{min}}$. The numbers are example values.\n\nHow does the tangential speed of the child change compared with the initial situation?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "The tangential speed stays the same.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The tangential speed doubles.",
+          "feedback": "Here only the increase of the radius has been taken into account. The tangential speed is $v = 2\\pi r f$, so it depends also on the frequency of rotation, which is halved at the same time."
+        },
+        {
+          "text": "The tangential speed stays the same.",
+          "correct": true,
+          "feedback": "Correct: the radius doubles and the frequency of rotation is halved, so the product $r f$ and the tangential speed $v = 2\\pi r f$ stay the same."
+        },
+        {
+          "text": "The tangential speed is halved.",
+          "feedback": "Here only the frequency of rotation has been taken into account, as if all parts of the roundabout had the same tangential speed. At the edge the child goes round a larger circle, so the increase of the radius increases the tangential speed."
+        },
+        {
+          "text": "The tangential speed becomes four times as large.",
+          "feedback": "Here the frequency of rotation has been confused with the period, which doubles. The tangential speed is directly proportional to the frequency of rotation, so halving the frequency decreases the tangential speed."
+        }
+      ]
     }
   ],
   "level2": [

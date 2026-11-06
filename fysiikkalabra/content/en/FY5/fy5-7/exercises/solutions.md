@@ -192,3 +192,18 @@
 **Substitution:** $D = \dfrac{46.0\,\text{cm} + 34.0\,\text{cm}}{2} = 40.0\,\text{cm}$ and $A = \dfrac{46.0\,\text{cm} - 34.0\,\text{cm}}{2} = 6.0\,\text{cm}$. At the time $5.0\,\text{s}$ the argument of the sine is $19.63$, and $d = 40.0\,\text{cm} + 6.0\,\text{cm} \cdot \sin 19.63 = 40.0\,\text{cm} + 6.0\,\text{cm} \cdot 0.7071 = 44.24\,\text{cm}$
 **Answer:** $44\,\text{cm}$, two significant figures, because the period $1.6\,\text{s}$ was read from the table at $0.2\,\text{s}$ intervals and the prediction is extrapolation. For $D$ both $40.0\,\text{cm}$ and $40.1\,\text{cm}$ are acceptable.
 **Reasonableness:** The time $5.0\,\text{s}$ is $3.125$ periods, that is, three full periods and $45\,{}^\circ$, and $\sin 45\,{}^\circ = 0.7071$. Part c): the prediction extends more than two periods ($3.4\,\text{s}$) beyond the measured range, so the error of the period accumulates: with the period $1.62\,\text{s}$ the prediction would be $43.1\,\text{cm}$.
+
+## fy5-7-L1-09
+**Find:** which of the four graphs shows the displacement $x$ of the weight as a function of time $t$ when the frequency is $f = 2.0\,\text{Hz}$, the amplitude $A = 3.0\,\text{cm}$ and timing starts at a pass through the equilibrium position going up.
+**Principle:** The period is the reciprocal of the frequency, $T = \tfrac{1}{f}$. From a graph the period is read between two successive peaks, and the amplitude from the level of the equilibrium position $x = 0$ to the level of the peak. Because timing starts at a pass in the positive direction, the curve is $x = A \sin\left(\tfrac{2\pi t}{T}\right)$ and starts from zero going up.
+**Model answer:** The correct one is graph B. Let us calculate the period.
+
+$T = \dfrac{1}{f}$
+
+$T = \dfrac{1}{2.0\,\text{Hz}}$
+
+$T = 0.50\,\text{s}$
+
+In graph B successive peaks are $0.50\,\text{s}$ apart, and the peaks are at $3.0\,\text{cm}$ and the troughs at $-3.0\,\text{cm}$. The first peak is at $\tfrac{T}{4} = 0.125\,\text{s}$, and in two seconds $4$ oscillations fit, as the frequency $2.0\,\text{Hz}$ requires. In graph A the passes through the equilibrium position are $0.50\,\text{s}$ apart, but the period is $1.0\,\text{s}$: there half a period has been read as a whole one. In graph C the distance between the peaks and the troughs is $3.0\,\text{cm}$, so the amplitude is only $1.5\,\text{cm}$: there the amplitude has been mixed up with the distance between the extreme positions, $2A$. In graph D the period is $2.0\,\text{s}$: there the numerical value of the frequency has been taken as the period.
+
+**Reading the graph:** From each graph, read the time between two successive peaks and the height of the peak from the dashed line of the equilibrium position. Graphs B and C oscillate in step, so they can be told apart only by the height of the peaks.

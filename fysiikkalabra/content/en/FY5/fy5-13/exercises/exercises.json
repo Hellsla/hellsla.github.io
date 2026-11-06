@@ -252,6 +252,37 @@
           "feedback": "The amplitude determines neither the speed of the wave nor the frequency. The speed of the wave depends on the string, and the frequency is determined by the speed and the length of the vibrating part."
         }
       ]
+    },
+    {
+      "id": "fy5-13-L2-08",
+      "level": 2,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "An organ builder makes two pipes from the same tube. The first pipe is open at both ends and its length is $L$. The second pipe is half as long, $\\tfrac{L}{2}$, and its upper end is closed with a plug. The air temperature is the same, and the end correction of the pipe is ignored.\n\nHow does the fundamental frequency of the second pipe change compared with the fundamental frequency of the first pipe?",
+      "answer": "The fundamental frequency stays the same.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The fundamental frequency doubles.",
+          "feedback": "Here the closed pipe has been calculated like an open pipe or a string, so only the halving of the length matters. In a closed pipe only a quarter of a wavelength fits into the length at the fundamental frequency, so $f_1 = \\tfrac{v}{4L}$ and not $\\tfrac{v}{2L}$."
+        },
+        {
+          "text": "The fundamental frequency stays the same.",
+          "correct": true,
+          "feedback": "Correct: halving the length doubles the fundamental frequency, and the closed end halves it. The fundamental frequency of the second pipe is $\\tfrac{v}{4 \\cdot L/2} = \\tfrac{v}{2L}$, that is, the same as that of the first pipe."
+        },
+        {
+          "text": "The fundamental frequency drops to half.",
+          "feedback": "Here only the plug has been taken into account, which halves the fundamental frequency of a pipe of the same length. However, the pipe is also half as long, and a shorter pipe sounds higher, so the changes cancel each other."
+        },
+        {
+          "text": "The fundamental frequency becomes four times as high.",
+          "feedback": "Here the effect of the plug has been read the wrong way round. The fundamental frequency of a closed pipe is $\\tfrac{v}{4L}$, so the plug halves the fundamental frequency and does not double it. Only halving the length doubles the fundamental frequency."
+        }
+      ]
     }
   ],
   "level3": [

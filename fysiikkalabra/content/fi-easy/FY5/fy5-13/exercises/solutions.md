@@ -89,6 +89,21 @@
 **Vastaus:** $60{,}0\,\text{m/s}$. Vastauksessa on kolme merkitsevää numeroa, koska viivaimelta luetussa pituudessa $1{,}20\,\text{m}$ ja taajuudessa $100\,\text{Hz}$ on kolme numeroa.
 **Järkevyys:** Yksi silmukka on $0{,}30\,\text{m}$ pitkä, joten aallonpituus on $0{,}60\,\text{m}$. Tällöin $100\,\text{Hz} \cdot 0{,}60\,\text{m} = 60\,\text{m/s}$. Narun perustaajuus olisi $100\,\text{Hz} : 4 = 25\,\text{Hz}$. Täryttäjä siis herättää neljännen ominaistaajuuden.
 
+## fy5-13-L2-08
+**Kysytty:** miten molemmista päistä avoimen, pituudeltaan $L$ olevan pillin perustaajuus muuttuu, kun pilli tehdään puolet lyhyemmäksi ja sen toinen pää suljetaan
+**Periaate:** Molemmista päistä avoimen pillin kummassakin päässä on siirtymän kupu. Siksi perustaajuudella pillin pituudelle mahtuu puolikas aallonpituus ja $f_1 = \tfrac{v}{2L}$. Toisesta päästä suljetussa pillissä suljettu pää on solmu ja avoin pää kupu. Siksi pituudelle mahtuu neljännes aallonpituutta ja $f_1 = \tfrac{v}{4L}$. Äänen nopeus $v$ on molemmissa sama, koska ilman lämpötila ei muutu.
+**Mallivastaus:** Perustaajuus pysyy samana. Ensimmäisen pillin perustaajuus on
+
+$f_1 = \dfrac{v}{2L}$
+
+Toisen pillin pituus on $\tfrac{L}{2}$, ja se on suljettu toisesta päästä:
+
+$f_1' = \dfrac{v}{4 \cdot \tfrac{L}{2}}$
+
+$f_1' = \dfrac{v}{2L}$
+
+Taajuudet ovat samat, eli $f_1' = f_1$. Pituuden puolittuminen kaksinkertaistaa perustaajuuden, ja tulppa puolittaa sen. Siksi muutokset kumoavat toisensa. Kaksinkertaistuminen olisi tulos, jos suljettu pilli laskettaisiin kuin avoin pilli tai kieli. Puoleen pieneneminen ottaa huomioon vain tulpan. Nelinkertaistuminen lukee tulpan vaikutuksen väärin päin.
+
 ## fy5-13-L3-01
 **Annettu:** avoimen urkupillin perustaajuus on $f_\text{a} = 262\,\text{Hz}$. Pillin pituus $L$ ja äänen nopeus $v$ pysyvät samoina, kun yläpää suljetaan.
 **Kysytty:** suljetun pillin perustaajuus $f_\text{s}$ hertseinä

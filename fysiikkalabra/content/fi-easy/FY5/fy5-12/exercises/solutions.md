@@ -179,3 +179,22 @@
 **Vastaus:** $8{,}5 \cdot 10^{2}\,\text{Hz}$ eli $850\,\text{Hz}$. Vastauksessa on kaksi merkitsevää numeroa: kaksi arviota $853\,\text{Hz}$ ja $851\,\text{Hz}$ eroavat alle prosentin. Matkaero on kahden lähes yhtä suuren etäisyyden erotus, joten sen tarkkuus on huonompi kuin etäisyyksien.
 **Mallivastaus:** b) Keskinormaalilla $y = 0$ matkaero on nolla ja ääni on voimakas. Kun $y$ kasvaa, matkaero kasvaa nollasta. Ensimmäinen heikentävän interferenssin ehto, jonka se saavuttaa, on $\Delta s = \tfrac{1}{2}\lambda$, siis $n = 0$. Seuraava hiljainen kohta vaatii matkaeroksi $\tfrac{3}{2}\lambda$, siis $n = 1$. Niiden välissä on voimakkaan äänen kohta $\Delta s = \lambda$. Toinen kohta antaa matkaeron $0{,}599\,\text{m}$. Se on kolme kertaa ensimmäinen matkaero $0{,}199\,\text{m}$ ($\tfrac{0{,}599}{0{,}199} = 3{,}0$), kuten luvuilla $\tfrac{3}{2}\lambda$ ja $\tfrac{1}{2}\lambda$ pitää. Jos kohta $y_1$ olisi ollut $n = 1$, suhde olisi ollut $\tfrac{5}{3}$ eikä $3$.
 **Järkevyys:** Aallonpituus $0{,}400\,\text{m}$ on selvästi pienempi kuin kaiuttimien väli $1{,}00\,\text{m}$. Siksi matkaero voi saavuttaa arvon $\tfrac{3}{2}\lambda = 0{,}60\,\text{m} < d$, ja hiljaisia kohtia on ainakin kaksi. Arvio $\Delta s \approx \dfrac{dy}{L} = \dfrac{1{,}00\,\text{m} \cdot 0{,}82\,\text{m}}{4{,}00\,\text{m}} = 0{,}205\,\text{m}$ on lähellä tarkkaa arvoa $0{,}199\,\text{m}$.
+
+## fy5-12-L2-08
+**Kysytty:** mikä oppilaan päättelyn riveistä on väärin, kun selvitetään, onko interferenssi pisteessä P vahvistava vai heikentävä.
+**Periaate:** Lähteet värähtelevät samassa vaiheessa samalla taajuudella. Siksi interferenssin laadun ratkaisee matkaeron ja aallonpituuden suhde $\tfrac{\Delta s}{\lambda}$. Jos $\Delta s = n\lambda$, aallot saapuvat samassa vaiheessa ja interferenssi on vahvistava. Jos $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$, harja kohtaa pohjan ja interferenssi on heikentävä. Päättelyn voi tarkistaa rivi riviltä: aallonpituus, matkaero, suhde ja päätelmä.
+**Mallivastaus:** Rivi 1 on oikein:
+
+$\lambda = \dfrac{v}{f} = \dfrac{0{,}36\,\text{m/s}}{12\,\text{Hz}}$
+
+$\lambda = 0{,}030\,\text{m} = 3{,}0\,\text{cm}$
+
+Rivi 2 on oikein:
+
+$\Delta s = 18{,}0\,\text{cm} - 12{,}0\,\text{cm}$, eli $\Delta s = 6{,}0\,\text{cm}$
+
+Rivi 3 on oikein: $\dfrac{\Delta s}{\lambda} = \dfrac{6{,}0\,\text{cm}}{3{,}0\,\text{cm}} = 2{,}0$.
+
+Rivi 4 on väärin. Lähteen $S_1$ aalto on kyllä kulkenut kaksi aallonpituutta pidemmän matkan. Kokonaisen aallonpituuden jälkeen aalto on kuitenkin taas samassa vaiheessa. Koska $\Delta s = 2\lambda$ eli $n = 2$, harja kohtaa pisteessä P harjan ja interferenssi on vahvistava.
+
+Oikea vastaus on rivi 4. Tarkistus: heikentävän interferenssin matkaerot olisivat tällä aallonpituudella $1{,}5\,\text{cm}$, $4{,}5\,\text{cm}$ ja $7{,}5\,\text{cm}$. Matkaero $6{,}0\,\text{cm}$ ei ole niiden joukossa.

@@ -87,6 +87,36 @@
       "answer": 29.79,
       "unit": "km/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-6-L1-09",
+      "level": 1,
+      "kind": [
+        "reasoning"
+      ],
+      "text": "Marsin kuu Phobos kiertää Marsia lähes ympyrärataa, jonka säde on $9380\\,\\text{km}$. Marsin massa on $6{,}42 \\cdot 10^{23}\\,\\text{kg}$. Mikä on Phoboksen kiertoajan suuruusluokka ympyräradan mallin mukaan?",
+      "answer": "noin $7{,}7\\,\\text{h}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "noin $0{,}0036\\,\\text{h}$",
+          "feedback": "Tässä neliöjuuri on unohtunut: $\\tfrac{\\gamma M}{r}$ on ratanopeuden neliö $v^2$, ei nopeus $v$. Nopeudeksi tulisi noin $4600\\,\\text{km/s}$, joten kiertoaika lyhenee aivan liikaa."
+        },
+        {
+          "text": "noin $0{,}24\\,\\text{h}$",
+          "feedback": "Tässä säde on sijoitettu neliöjuuren alle kilometreinä mutta kehän pituuteen $2\\pi r$ metreinä. Nopeus tulee silloin $\\sqrt{1000} \\approx 32$ kertaa liian suureksi ja kiertoaika yhtä paljon liian lyhyeksi."
+        },
+        {
+          "text": "noin $7{,}7\\,\\text{h}$",
+          "correct": true,
+          "feedback": "Oikein: ratanopeus on $v \\approx 2{,}1\\,\\text{km/s}$, ja kiertoaika $T = \\tfrac{2\\pi r}{v} \\approx 2{,}8 \\cdot 10^{4}\\,\\text{s}$ on noin $7{,}7\\,\\text{h}$."
+        },
+        {
+          "text": "noin $460\\,\\text{h}$",
+          "feedback": "Tässä sekunnit on muutettu tunneiksi jakamalla luvulla $60$. Luvulla $60$ jakaminen antaa minuutit; tunnissa on $3600\\,\\text{s}$, joten tulos on $60$ kertaa liian suuri."
+        }
+      ]
     }
   ],
   "level2": [

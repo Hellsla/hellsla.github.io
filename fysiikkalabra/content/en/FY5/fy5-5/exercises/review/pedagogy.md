@@ -1,18 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 253b105585534b77
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 83919e209ffc0f9e
 
 ## Blocking
 (none)
 
-## Fixed
-(none needed: the English text already matched fi in every number and was natural)
-
 ## Polish
-(none)
+- none.
 
 ## Checked
-- Level structure, task order, question wording (a/b/c parts, which part goes in the answer box) and hints/feedback match fi; the English keeps the pedagogical intent of every distractor feedback (e.g. L1-07 names the ignored factor, L1-08 explains centre vs surface).
-- Part c explanation tasks (L2-05c, L3-04c, L3-05c) ask for the same reasoning as in fi.
-- Register suits upper-secondary students; natural English, no calques.
+- English natural; two-stage structure (answer, then reason) and feedback identical to the Finnish.
+- fy5-5-L2-08: situation first, question last, solution staged, same order and feedback structure as the Finnish; nothing extra revealed.

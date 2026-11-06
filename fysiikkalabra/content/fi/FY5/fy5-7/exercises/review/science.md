@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 24a052823c292853
+CONTENT-HASH: 2c890badbdfaaf11
 
 ## Blocking
 
 ## Polish
-- fy5-7/exercises/solutions.md L3-05 — the c) model answer could mention again that damping would add to the error. This is optional, because the task assumes no damping.
 
 ## Checked
-- Round-2 Blocking is fixed: solutions.md:195 now says "yli kaksi jaksoa (3,4 s) mittausalueen ohi", which is right, since 5,0 s − 1,6 s = 3,4 s = 2,1 periods.
-- L1-02 and L2-04 answer fields are back to 5.10 and 7.50, which match the three significant figures in their solutions.
-- The diff since round 2 contains only these three lines; answers.py is unchanged.
-- I recomputed every new answer in one script: L1-07 25 s, L2-05 1,639 Hz, L2-06 1,51 s, L2-07 1,342 Hz, L3-04 79,06 %, L3-05 44,24 cm (field 44, inside the 2 % tolerance). All agree with answers.py.
-- MC tasks L1-06 and L1-08 each have exactly one correct option, and the answer string equals it.
-- The round-1 Polish items are applied: L3-05 now gives 44 cm with two significant figures and says why; the L3-04 beat wording is fixed; L2-06 has its part b) under Vastaus; the "graph" kind is removed from L3-05.
-- Physics, scope and notation are unchanged and match the lesson.
-- The hash was identical at the start and the end.
+- New task L1-09 (type 2, graph choice; exercises.json:126–150, solutions.md:197–210). I checked it from the text, the figure code (lessons/FY5/fy5-7/figures.py pick_graph) and the figure descriptions. I did not render it.
+- Physics: f = 2,0 Hz gives T = 0,50 s, the first peak at T/4 = 0,125 s, and 4 oscillations in 0–2 s. The generator draws B with A = 3,0 cm and T = 0,50 s, A with T = 1,0 s, C with A = 1,5 cm, and D with T = 2,0 s. These match the solution, the feedback and the descriptions.
+- All four curves start upward from x = 0 on the same axes, so the right option cannot be told apart by phase or form. The option texts are all "Kuvaaja X".
+- The three distractors catch the lesson's own warned mistakes: half a period read between crossings of x = 0, A taken as the top-to-bottom distance, and T confused with f.
+- The correct option's feedback restates only T = 1/f and the peak height. The rest of the set had no new items to check.
+- Inline formula chains in the solution are one short step per line (T = 1/f; 1/(2,0 Hz); 0,50 s). From the text they fit about 300 px.
+- The task stays inside this chapter (f = 1/T, amplitude, reading graphs). Notation follows the lesson: x, t, A, T, f.
+- answers.py ran once (python3 -I). I compared all 18 numeric answers with exercises.json in one script, and all are within tolerance. L1-09 is MC, so it is not in answers.py, which is correct.
+- The hash was the same at the start and at the end.

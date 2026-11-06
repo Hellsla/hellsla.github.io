@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: d998e72d3f3e680e
+CONTENT-HASH: c716085d5bc703dc
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy5-13-L2-06 vs fy5-13-L2-02 — the same resonance-tube set-up (water level, tuning fork); the task differs (three resonances, difference method, end correction), so only a note: a speaker and a tube of known length would widen the set.
-- [Minor] fy5-13-L1-08 a) — the error part has no answer field and is covered only by the model solution; acceptable for an error-analysis task.
+- [Minor] fy5-13-L2-08 — no defect; the correct option is the shortest (26 characters against 29–30) and its feedback is the shortest, so form does not give it away; the distractors catch the chapter's own mistake (closed pipe computed as open, plug effect read the wrong way).
 
 ## Checked
-- Round-1 items: no Blocking in round 1; the only edits since are wording ("putken pääkorjaus" in L2-06 and L3-05, the L3-04 c) constant named as f_1^2/F, a clearer feedback in the 600 Hz option, "sointiväri" dropped from the L3-05 answer). The terminology is now consistent with the lesson.
-- Numbers re-verified: L2-06 lambda 0,670 m, v = 343,0 m/s, e = 0,45 cm; L3-04 f1^2/F = 328,1 / 333,5 / 326,7 / 332,1, k = 330,1, f1 = 199 Hz; L3-05 v_A = 330,9 and v_B = 330,7 m/s (331 m/s).
-- Captures opened: contact-6 and contact-7 (new tasks 13-6..13-8, 13-13..13-15, 13-19, 13-20, tables, solutions): no overflow, tables inside their cards, solution blocks in the fixed order.
-- No new figure; no "graph" kind; no value read from a figure; the assumption "end correction ignored" (L3-05) does not contradict L2-06 where it is the subject.
-- No duplicate in fy5-12 or fy5-14.
+- Method: rebuilt with `python scripts/build.py fy5-13`; own script (vr5_newtask_probe.py, scratchpad) opened the new task at 390 px after the page scripts ran, answered, opened feedback, hints and solution, measured overflow. Document scrollWidth 390, no clipped element outside a scroll box; image read at card width (332 px, downscaled to read the whole card).
+- From text only: the packet's diff, form-of-answer check (length by character count), distractor-to-warned-mistake fit, scope against the chapter.
+- Render: stem, four options with feedback, Vastaus button, answer, Kysytty/Periaate/Mallivastaus; the three display lines of the model solution and the inline fractions in feedback fit 300 px; no gap in the opened card.
+- Delta only: new task and its solution; the rest of the set was PASS and untouched. No figure.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations n/a (no figure) · typography 5 · Finnish 5 · accessibility 5

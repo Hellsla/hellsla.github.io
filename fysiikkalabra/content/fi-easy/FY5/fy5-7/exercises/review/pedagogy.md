@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 3eae8231a4fcdb1c
+CONTENT-HASH: 67e831299c4a864b
 Mode: full (translation review against the reviewed Finnish set)
 Round 1
 
@@ -13,7 +13,7 @@ Round 1
 (none)
 
 ## Checked
-- The new tasks keep the Finnish pedagogy: misconception distractors (L1-06, L1-08), "use the whole series" (L2-05), half-period error (L2-07), part labels a/b/c and the line "write the result of part ... in the answer box" present in L2-06, L2-07, L3-04, L3-05.
-- Solutions keep the Find / Principle / Formula / Conversions / Substitution / Answer / Reasonableness structure; the part c) explanations are present.
-- Language level: selkosuomi is natural and consistent with the chapter's terms (period, frequency, amplitude, equilibrium position); no Finnish left in en; fi-easy sentences stay short and terms are explained as in the Finnish easy set.
-- The feedback texts give no answer away beyond fi.
+- fy5-7-L1-09: the pedagogy of the Finnish task is kept (situation first, question last; misconception-based distractors or statements; each feedback names the same error as fi and does not give the answer away before the student acts).
+- Solution keeps the Find / Principle / Model answer structure with the calculation staged step by step.
+- fi-easy sentences are short, terms are explained, no change in content.
+- Option figures pick-a3-t1, pick-a3-t05, pick-a15-t05, pick-a3-t2: fi-easy figures.json descriptions match lessons/FY5/fy5-7/figures.py (peaks, periods, first peak times) and the choice-to-figure mapping equals fi.

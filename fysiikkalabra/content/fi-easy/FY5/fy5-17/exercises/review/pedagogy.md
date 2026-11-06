@@ -1,18 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 3309c347fe902beb
-Mode: full (translation review against the reviewed Finnish set)
+CONTENT-HASH: 12247bcf797a5c2e
+Mode: full (translation review against the reviewed Finnish set; new task fy5-17-L2-08)
 Round 1
 
 ## Blocking
 (none)
 
 ## Fixed
-(none needed: the selkosuomi text already matched fi in every number and was natural)
+- None needed; new task fy5-17-L2-08 was already faithful to content/fi.
 
 ## Polish
 (none)
 
 ## Checked
-- Same tasks, same structure and the same hints as fi: no hint or answer added or removed; L1-06..08 and L2-07 feedback explains why each wrong option is wrong.
-- Language level: short sentences, common words, terms (varjoalue, vaimentuminen, A-kuvaus, kaiku) explained as in the reviewed Finnish; one idea per sentence.
-- Solutions keep the full step structure and the model answers/justifications of L1-06..08, L2-07, L3-04 c and L3-05 b.
+- fy5-17-L2-08: situation first, question last as its own sentence; same structure, options and reasoning steps as fi; example-data notice kept where fi has it.
+- Solution has the same stages as fi (Find, Principle, Model answer) and can be followed step by step; nothing skipped or added.
+- Feedback repairs the misconception rather than restating the answer, as in fi.
+- Selkosuomi per NOTES.md section 12: short sentences, common words, glossary terms kept; same physics and numbers as fi; decimal comma in text, point in table cells as in fi.
+- No change to level, workload or figure use; check_i18n.py shows nothing for fy5-17; build.py fy5-17 succeeds.

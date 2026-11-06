@@ -217,6 +217,66 @@
       "answer": 0.6,
       "unit": "J",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy5-8-L2-08",
+      "level": 2,
+      "text": "Oppilaat venyttivät jousta voimamittarilla. He mittasivat jousen venymän $x$ ja jousta venyttävän voiman $F_\\text{v}$. Taulukossa on esimerkkiaineisto. Voimamittarin lukeman epävarmuus on $\\pm 0{,}05\\,\\text{N}$. Venymän epävarmuus on niin pieni, ettei sitä tarvitse ottaa huomioon.\n\nMikä johtopäätös aineistosta on perusteltu?",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "data": {
+        "caption": "Jousen mittaus (esimerkkiaineisto)",
+        "columns": [
+          "$x\\,(\\text{cm})$",
+          "$F_\\text{v}\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "2.0",
+            "0.49"
+          ],
+          [
+            "4.0",
+            "1.02"
+          ],
+          [
+            "6.0",
+            "1.47"
+          ],
+          [
+            "8.0",
+            "2.00"
+          ],
+          [
+            "10.0",
+            "2.51"
+          ]
+        ]
+      },
+      "answer": "Jousivakio on noin $25\\,\\text{N/m}$, koska jokaisen rivin suhde $\\tfrac{F_\\text{v}}{x}$ poikkeaa siitä vähemmän kuin mittausepävarmuus sallii.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Jousivakio kasvaa venymän mukana, koska voima kasvaa riviltä toiselle paljon enemmän kuin lukeman epävarmuus $0{,}05\\,\\text{N}$.",
+          "feedback": "Tässä voiman kasvu on sekoitettu jousivakion kasvuun. Voima kasvaa, koska venymä kasvaa. Jousivakio on suhde $\\tfrac{F_\\text{v}}{x}$ eli suoran kulmakerroin, ja se pysyy aineistossa noin $25\\,\\text{N/m}$:ssä. Voiman kasvun vertaaminen epävarmuuteen ei kerro jousivakiosta mitään."
+        },
+        {
+          "text": "Jousi on jäykin venymällä $4{,}0\\,\\text{cm}$, koska suhde $\\tfrac{F_\\text{v}}{x}$ on siinä suurin ja ero ylittää lukeman epävarmuuden $0{,}05\\,\\text{N}$.",
+          "feedback": "Tässä on verrattu eri suureita. Suhteen ero on yksikössä $\\text{N/m}$, mutta $0{,}05\\,\\text{N}$ on voiman epävarmuus. Tällä rivillä lukeman epävarmuus antaa suhteelle epävarmuuden noin $\\pm 1{,}3\\,\\text{N/m}$. Siksi arvo $25\\,\\text{N/m}$ sopii tähänkin pisteeseen, eikä aineisto osoita jousen olevan siinä jäykempi."
+        },
+        {
+          "text": "Jousivakio on noin $25\\,\\text{N/m}$, koska jokaisen rivin suhde $\\tfrac{F_\\text{v}}{x}$ poikkeaa siitä vähemmän kuin mittausepävarmuus sallii.",
+          "correct": true,
+          "feedback": "Oikein. Origon kautta kulkeva suora sopii kaikkiin pisteisiin, eli arvo $25\\,\\text{N/m}$ on jokaisen rivin suhteen epävarmuusvälillä."
+        },
+        {
+          "text": "Jousivakio on noin $0{,}25\\,\\text{N/m}$, koska voima kasvaa noin $0{,}25\\,\\text{N}$ venymän jokaista senttimetriä kohti.",
+          "feedback": "Tässä venymä on jätetty senttimetreiksi. Arvo $0{,}25\\,\\text{N/cm}$ on oikea kulmakerroin, mutta sen yksikkö on $\\text{N/cm}$. Koska $1\\,\\text{cm} = 0{,}01\\,\\text{m}$, jousivakio on $25\\,\\text{N/m}$."
+        }
+      ]
     }
   ],
   "level3": [

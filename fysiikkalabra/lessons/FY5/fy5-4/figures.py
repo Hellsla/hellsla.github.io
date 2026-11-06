@@ -324,9 +324,60 @@ def malli_kiekko():
     return f.svg()
 
 
+
+# Voimakuvion valinta (task fy5-4-L2-08, docs/exercise-types.md type 3): a roller-coaster car passes the top of a
+# vertical loop upside down, the track above it, with a_n = 1,5 g, so the track pushes it down with N = 0,5 G and both
+# forces point down towards the centre (below). Four option diagrams to one scale (G = 80 units, N = 40 units); only
+# "pick-alas" is right, each other has one error.
+PK_BODY = (150, 195, 104, 36)
+PK_G, PK_N, PK_S = 80, 40, 1.3
+PK_DESC = "Vuoristoradan vaunun voimakuvio, vaunu suorakulmiona. Keskipisteestä alaspäin osoittaa paino G. "
+
+
+def _pick(name, desc, n_up=False, kp=False, v_force=False, wrong=None):
+    """An option of task fy5-4-L2-08: G from the centre; the track's normal force N a push from above ending at the top
+    face (the track above pushes the car down towards the centre) or, as an error, a push from below ending at the
+    bottom face as on a floor; kp adds an invented upward 'centrifugal force' F_kp from the top face; v_force draws the
+    velocity into the diagram as if it were a force (in velocity blue)."""
+    bx, by, w, h = PK_BODY
+    f = Fig(f"fy54-pick-{name}", 320, desc, width=300)
+    d = FBD(f, PK_S, body=PK_BODY, a_dir=None if wrong else (0, -1), wrong=wrong)
+    d.force("G", (0, -PK_G), (bx, by), "gravity", lab=(-24, -6))
+    if n_up: d.force("N", (0, PK_N), (bx + 30, by + h / 2), "normal", surface=0, push=True, lab=(24, 0))
+    else: d.force("N", (0, -PK_N), (bx + 30, by - h / 2), "normal", surface=0, outward=(0, -1), push=True, lab=(24, 0))
+    if kp: d.force("F_kp", (0, PK_G + PK_N), (bx - 30, by - h / 2), "other", tex=r"\overline{F}_\text{kp}", lab=(-40, 8))
+    d.draw()
+    if v_force:                                                    # the error: the velocity drawn into the force diagram
+        x1, y = bx + w / 2, by                                     # like a force, but in velocity blue (it is no force)
+        f.arrow(x1, y, x1 + PK_N * PK_S, y, VELOCITY, 4, 18)
+        f.tex(x1 + PK_N * PK_S - 10, y - 26, r"\overline{v}", "middle", VELOCITY)
+    return f.svg()
+
+
+def pick_alas():
+    return _pick("alas", PK_DESC + "Yläpuolelta tuleva tukivoima N osoittaa suoraan alaspäin ja päättyy yläpintaan; se on puolet painon pituudesta.")
+
+
+def pick_keskipako():
+    return _pick("keskipako", PK_DESC + "Yläpuolelta tuleva tukivoima N osoittaa suoraan alaspäin ja päättyy yläpintaan; se on puolet painon pituudesta. Yläpinnan "
+                 "vasemmalta puolelta lähtee nuoli F kp suoraan ylöspäin, puolitoista kertaa painon pituisena.", kp=True,
+                 wrong="an invented upward 'centrifugal force' F_kp: nothing exerts it, and with it the forces cancel although the car accelerates down towards the centre")
+
+
+def pick_ylos():
+    return _pick("ylos", PK_DESC + "Alapuolelta tuleva tukivoima N osoittaa suoraan ylöspäin ja päättyy alapintaan; se on puolet painon pituudesta.", n_up=True,
+                 wrong="the normal force drawn up as on a floor: the track is above the car and pushes it down, and with N up the net force is only 0,5 G, not 1,5 G")
+
+
+def pick_nopeus():
+    return _pick("nopeus", PK_DESC + "Yläpuolelta tuleva tukivoima N osoittaa suoraan alaspäin ja päättyy yläpintaan; se on puolet painon pituudesta. Oikeasta "
+                 "kyljestä lähtee sininen nopeuden nuoli v vaakasuoraan oikealle, yhtä pitkänä kuin tukivoima.", v_force=True,
+                 wrong="the velocity v drawn as a force")
+
 FIGURES = {"hero": hero, "muutos": muutos, "kaarre": kaarre, "kuvaaja": kuvaaja, "nyppyla": nyppyla, "esimerkki": esimerkki,
            "virhe": virhe, "valitse-a": valitse_a, "valitse-b": valitse_b, "valitse-c": valitse_c, "valitse-d": valitse_d,
-           "malli-kiekko": malli_kiekko}
+           "malli-kiekko": malli_kiekko, "pick-alas": pick_alas, "pick-keskipako": pick_keskipako, "pick-ylos": pick_ylos,
+           "pick-nopeus": pick_nopeus}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "hero": "decorative",
@@ -341,4 +392,8 @@ REUSE = {
     "valitse-c": "safe: a wrong option (N smaller than G) for diagram selection",
     "valitse-d": "safe: a wrong option (an extra centrifugal force) for diagram selection",
     "malli-kiekko": "reveals: the model diagram of a puck on a cord in a horizontal circle (shown after the attempt)",
+    "pick-alas": "reveals: the right option of task fy5-4-L2-08 (a roller-coaster car at the top of a loop: G and N both down)",
+    "pick-keskipako": "safe: a wrong option of task fy5-4-L2-08 (an invented upward centrifugal force F_kp)",
+    "pick-ylos": "safe: a wrong option of task fy5-4-L2-08 (the track's normal force drawn up as on a floor)",
+    "pick-nopeus": "safe: a wrong option of task fy5-4-L2-08 (the velocity, a blue arrow, drawn into the force diagram as if it were a force)",
 }

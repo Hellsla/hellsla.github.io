@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: e63affccfd49f16d
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 8582b9190f73f167
+Mode: full (translation review against the reviewed Finnish set, new task L2-08)
+Round 2
 
 ## Blocking
 (none)
-
-## Fixed
-(none needed: numbers, ids, answers, flags and formulas already matched fi)
 
 ## Polish
 (none)
 
 ## Checked
-- 20 tehtävää; id:t, vastaukset, yksiköt, toleranssit, kind-tagit, correct-liput ja vaihtoehtojen määrä samat kuin fi:ssä uusissa tehtävissä L1-06..08, L2-05..07, L3-04..05.
-- Kaikki luvut tehtävissä, vaihtoehdoissa, palautteissa ja taulukoissa verrattu skriptillä suomeen: identtiset.
-- Vastaukset laskettu uudelleen: 200 Hz, 680 Hz, 4,0 mm, 4,00 m ja 340 Hz, 850 Hz.
-- Ratkaisut säilyttävät perustelut: n = 0, Pythagoras, lambda/2-väli, energian säilyminen, vastamelukuulokkeet.
-- check_i18n fi-easy: 0 virhettä.
+- New task fy5-12-L2-08 compared with content/fi: id, kind tags, correct flag, choice count and order, answer, tolerance and unit identical; every number and formula identical (decimal comma to comma kept).
+- Recomputed: L2-08 error analysis, lambda = 0.36/12 = 3.0 cm, ds = 6.0 cm, ratio 2.0, row 4 wrong (whole number of wavelengths = constructive).
+- Solution keeps all lead-ins, the symbolic step before numbers and the explanation of each distractor.
+- fi-easy follows NOTES.md section 12: shorter sentences, terms explained, same physics.
+- check_i18n: nothing for fy5-12; build.py fy5-12 succeeds.

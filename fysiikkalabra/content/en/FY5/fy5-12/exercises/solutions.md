@@ -179,3 +179,22 @@
 **Answer:** $8.5 \cdot 10^{2}\,\text{Hz}$ or $850\,\text{Hz}$, two significant figures: the two estimates $853\,\text{Hz}$ and $851\,\text{Hz}$ differ by less than a percent, and the path difference is a difference of two almost equal distances, so its accuracy is poorer than that of the distances.
 **Model answer:** b) On the perpendicular bisector $y = 0$ the path difference is zero and the sound is loud. As $y$ increases, the path difference grows from zero, and the first condition of destructive interference that it reaches is $\Delta s = \tfrac{1}{2}\lambda$, that is $n = 0$. The next quiet point requires the path difference $\tfrac{3}{2}\lambda$, that is $n = 1$, and between them there is a point of loud sound at $\Delta s = \lambda$. The second point gives the path difference $0.599\,\text{m}$, which is three times the first, $0.199\,\text{m}$ ($\tfrac{0.599}{0.199} = 3.0$), as it should be for $\tfrac{3}{2}\lambda$ and $\tfrac{1}{2}\lambda$; if the point $y_1$ had been $n = 1$, the ratio would have been $\tfrac{5}{3}$ and not $3$.
 **Reasonableness:** The wavelength $0.400\,\text{m}$ is considerably smaller than the distance between the loudspeakers, $1.00\,\text{m}$, so the path difference can reach the value $\tfrac{3}{2}\lambda = 0.60\,\text{m} < d$ and there are at least two quiet points. The estimate $\Delta s \approx \dfrac{dy}{L} = \dfrac{1.00\,\text{m} \cdot 0.82\,\text{m}}{4.00\,\text{m}} = 0.205\,\text{m}$ is close to the exact value $0.199\,\text{m}$.
+
+## fy5-12-L2-08
+**Find:** which line of the student's reasoning is wrong when finding out whether the interference at point P is constructive or destructive.
+**Principle:** The sources vibrate in phase at the same frequency, so the type of interference is decided by the ratio of the path difference to the wavelength, $\tfrac{\Delta s}{\lambda}$. If $\Delta s = n\lambda$, the waves arrive in phase and the interference is constructive. If $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$, a crest meets a trough and the interference is destructive. The reasoning can be checked line by line: wavelength, path difference, ratio and conclusion.
+**Model answer:** Line 1 is correct:
+
+$\lambda = \dfrac{v}{f} = \dfrac{0.36\,\text{m/s}}{12\,\text{Hz}}$
+
+$\lambda = 0.030\,\text{m} = 3.0\,\text{cm}$
+
+Line 2 is correct:
+
+$\Delta s = 18.0\,\text{cm} - 12.0\,\text{cm}$, that is, $\Delta s = 6.0\,\text{cm}$
+
+Line 3 is correct: $\dfrac{\Delta s}{\lambda} = \dfrac{6.0\,\text{cm}}{3.0\,\text{cm}} = 2.0$.
+
+Line 4 is wrong. The wave from source $S_1$ has indeed travelled two wavelengths further, but after a whole wavelength the wave is in phase again. Since $\Delta s = 2\lambda$, that is, $n = 2$, a crest meets a crest at point P and the interference is constructive.
+
+The correct answer is line 4. Check: with this wavelength the path differences of destructive interference would be $1.5\,\text{cm}$, $4.5\,\text{cm}$ and $7.5\,\text{cm}$, and $6.0\,\text{cm}$ is not among them.

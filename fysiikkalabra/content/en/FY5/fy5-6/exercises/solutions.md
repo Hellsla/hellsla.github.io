@@ -192,3 +192,20 @@
 **Substitution:** $\gamma M = 3.98438 \cdot 10^{14}\,\text{m}^3/\text{s}^2$. a) $T_\text{A} = 2\pi\sqrt{\dfrac{(6.771 \cdot 10^{6}\,\text{m})^3}{3.98438 \cdot 10^{14}\,\text{m}^3/\text{s}^2}} = 5546.0\,\text{s} = 92.4\,\text{min}$ and $T_\text{B} = 2\pi\sqrt{\dfrac{(7.371 \cdot 10^{6}\,\text{m})^3}{3.98438 \cdot 10^{14}\,\text{m}^3/\text{s}^2}} = 6299.3\,\text{s} = 105.0\,\text{min}$. b) $t = \dfrac{5546.0\,\text{s} \cdot 6299.3\,\text{s}}{6299.3\,\text{s} - 5546.0\,\text{s}} = 46\,379\,\text{s} = 46\,379 : 3600\,\text{h} = 12.88\,\text{h}$
 **Answer:** the satellites are on the same straight line again after about $12.9\,\text{h}$, three significant figures as in the mass of the Earth. The orbital periods are $92.4\,\text{min}$ and $105.0\,\text{min}$. The masses are not needed, because the mass of a satellite cancels from the equation of motion.
 **Reasonableness:** In the time $46\,379\,\text{s}$ satellite A makes $46\,379 : 5546 \approx 8.36$ and B $46\,379 : 6299 \approx 7.36$ revolutions, so the difference is one revolution. The orbital periods are close to the $92.8\,\text{min}$ of the ISS (A) and slightly longer higher up (B), as they should be.
+
+## fy5-6-L1-09
+**Find:** the order of magnitude of the orbital period $T$ of Phobos, when the radius of the orbit is $r = 9380\,\text{km}$ and the mass of Mars is $M = 6.42 \cdot 10^{23}\,\text{kg}$.
+**Principle:** Only the gravitational force of Mars acts on Phobos, and it is the net force of the circular motion: $\gamma \tfrac{Mm}{r^2} = \tfrac{mv^2}{r}$. From it the orbital speed is $v = \sqrt{\tfrac{\gamma M}{r}}$ and the orbital period $T = \tfrac{2\pi r}{v}$. The radius is converted to metres before substituting, and finally seconds to hours.
+**Model answer:** The radius is $r = 9380\,\text{km} = 9.38 \cdot 10^{6}\,\text{m}$.
+
+$$\begin{aligned}
+&\gamma M = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\
+&\quad \cdot 6.42 \cdot 10^{23}\,\text{kg} \\
+&\quad = 4.285 \cdot 10^{13}\,\text{m}^3/\text{s}^2 \\
+&v = \sqrt{\frac{4.285 \cdot 10^{13}\,\text{m}^3/\text{s}^2}{9.38 \cdot 10^{6}\,\text{m}}} \\
+&\phantom{v} \approx 2137\,\text{m/s} \\
+&T = \frac{2\pi \cdot 9.38 \cdot 10^{6}\,\text{m}}{2137\,\text{m/s}} \\
+&\phantom{T} \approx 2.76 \cdot 10^{4}\,\text{s}
+\end{aligned}$$
+
+Converted to hours, $T = \tfrac{2.76 \cdot 10^{4}\,\text{s}}{3600\,\text{s/h}} \approx 7.7\,\text{h}$. The orbital period is thus about $7.7\,\text{h}$, a few hours. The other options come from typical errors: forgetting the square root gives about $0.0036\,\text{h}$, leaving the radius in kilometres under the square root about $0.24\,\text{h}$, and dividing seconds by $60$ about $460\,\text{h}$. The result is reasonable: the orbital speed $2.1\,\text{km/s}$ is smaller than that of a satellite orbiting near the Earth, because the mass of Mars is about a tenth of the mass of the Earth.

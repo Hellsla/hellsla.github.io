@@ -95,6 +95,25 @@
 **Vastaus:** $4$ sahaa. Lukumäärä on kokonaisluku, ja $3{,}98$ pyöristyy siihen, koska tasot on annettu kokonaisina desibeleinä.
 **Järkevyys:** Kaksi sahaa nostaisi tasoa $3\,\text{dB}$ ja neljä $6\,\text{dB}$, eli $85\,\text{dB} + 6\,\text{dB} = 91\,\text{dB}$. Tämä on annettu taso, joten neljä sahaa on oikea määrä.
 
+## fy5-15-L2-08
+**Kysytty:** kuinka moninkertainen äänen intensiteetti on kadulla ($82\,\text{dB}$) olohuoneeseen ($42\,\text{dB}$) verrattuna, suuruusluokkana
+**Periaate:** Kahden äänen tasojen erotus riippuu vain intensiteettien suhteesta, koska kuulokynnys $I_0$ supistuu pois: $L_2 - L_1 = 10\,\text{dB} \cdot \lg \tfrac{I_2}{I_1}$. Asteikko on logaritminen. Aina kun intensiteetti kymmenkertaistuu, tasoon lisätään $10\,\text{dB}$.
+**Mallivastaus:** Intensiteetti on kadulla noin $10^{4}$-kertainen. Tasojen erotus on
+
+$L_2 - L_1 = 82\,\text{dB} - 42\,\text{dB}$
+
+$L_2 - L_1 = 40\,\text{dB}$
+
+Jaetaan erotus $10\,\text{dB}$:llä:
+
+$\lg \dfrac{I_2}{I_1} = \dfrac{40\,\text{dB}}{10\,\text{dB}} = 4$
+
+Logaritmin määritelmästä saadaan
+
+$\dfrac{I_2}{I_1} = 10^{4}$
+
+Kadun intensiteetti on siis noin $10\,000$-kertainen. Suhde $2$ syntyy, kun desibelilukemia verrataan kuin tavallisia lukuja. Suhde $40$ syntyy, kun erotus luetaan suoraan suhteeksi. Suhde $10^{40}$ syntyy, kun erotus jätetään jakamatta $10\,\text{dB}$:llä.
+
 ## fy5-15-L3-01
 **Annettu:** katsojia $N = 12\,000$, yhden huudon taso kentän keskellä $L_1 = 42\,\text{dB}$ ja kuulutusjärjestelmän taso yksinään $L_K = 80\,\text{dB}$. Huudot ovat yhtä voimakkaita, ja kaikki lähteet ovat toisistaan riippumattomia.
 **Kysytty:** kaikkien äänien yhteistaso $L$ desibeleinä

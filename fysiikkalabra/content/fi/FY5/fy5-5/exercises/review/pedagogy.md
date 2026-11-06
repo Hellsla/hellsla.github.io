@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: fe1b8f9cccc55b9a
+CONTENT-HASH: 02aacafbb23bb84d
 
 ## Blocking
 (none)
 
 ## Polish
-- exercises.json L2-06, L2-07 — still tagged "graph" without a graph or figure; drop the tag or add the 1/r² plot.
-- exercises.json L1-08 and L2-03 — both test r = R + h; vary one context if either is replaced later.
+- exercises.json:299,303 — the feedback of the wrong stage-1 options already states the correct reason ("suurempi massa kiihtyy samasta voimasta vähemmän") so a retry makes stage 2 trivial — keep the diagnosis of the error but leave the explanation to stage 2.
 
 ## Checked
-- Round-3 delta: solutions.md L3-05 Periaate now reads "keskipistettä" (four places); nothing else changed, no new problem.
-- Round-2 state holds: L3-05 b) is the 6,0 h scale reading (575 N), no duplicate of fy5-6-L3-03.
-- Rewritten MC L1-06..08 still one correct option, misconception-based distractors.
-- Counts 8/7/5; answers match the solutions.
+- Text only (no renders). New task fy5-5-L2-08 (type 1, two-stage): F=4,27·10^7 N, a_A=5,3·10^-6, a_B=2,1·10^-5 m/s² verified; ratio 4.
+- Correct stage-1 feedback ("Oikein. Valitse seuraavaksi perustelu") gives nothing of the reason stage.
+- Reasons: the correct one is not the longest (the true-but-irrelevant one is), none hedged; no form clue.
+- Distractors carry the chapter's own warned mistake (heavier body pulls harder) and the "same g for all" mistake; the true-but-not-explaining reason is explained well.
+- Order comparison stated with direction ("B on neljä kertaa A:n"); field notion is taught in the chapter.
+- Solution aligned blocks are broken into short lines (fit about 300 px).

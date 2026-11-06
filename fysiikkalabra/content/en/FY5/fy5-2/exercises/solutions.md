@@ -144,6 +144,27 @@
 **Answer:** a) $110\,\text{g}$, three significant figures like the measurement data. b) Each measurement gives its own estimate of the mass of the rule, and the mean reduces the effect of a single reading error of $x$. Comparing the results is also a check: the results $108.5\text{–}111.4\,\text{g}$ vary by only a few per cent, and there is no clear trend with the mass, so the assumption that the centre of mass of the rule is at $50.0\,\text{cm}$ seems to hold. If the result changed clearly with the mass, there would be an error in the assumption or in the dimensions.
 **Reasonableness:** The result $110\,\text{g}$ is of the order of magnitude of the mass of an ordinary metre rule. Checking backwards: with a rule of $110.2\,\text{g}$ and a mass of $100.0\,\text{g}$ the point of support is the sum of the products of mass and position, $110.2 \cdot 50.0 + 100.0 \cdot 5.0 = 6010$, divided by the sum of the masses, $110.2 + 100.0 = 210.2$, that is $x = 28.6\,\text{cm}$, while the measured value was $28.7\,\text{cm}$.
 
+## fy5-2-L2-08
+**Find:** whether the student's calculation has an error and on which line, when the support forces $N_\text{A}$ and $N_\text{B}$ of the plank are calculated.
+**Principle:** The plank is at rest, so the sum of the moments about any point is zero and the sum of the forces is zero. When support A is chosen as the reference point, the lever arm of every force is measured from point A: the lever arm of a vertical force is the distance from A to the point where the force acts, measured along the horizontal plank. The support force $N_\text{B}$ turns the plank anticlockwise, the weights of the plank and the can clockwise.
+**Model answer:** Line 1 is correct: the moment condition holds about every point, and choosing support A removes the unknown $N_\text{A}$.
+
+Line 2 is wrong. The lever arms $r_\text{B} = 2.0\,\text{m}$ and $r_G = 1.5\,\text{m}$ are correct, because the centre of mass of the plank is in the middle. The can, however, is at the right end of the plank, so its lever arm about A is $r_\text{p} = 3.0\,\text{m}$. The student's value $1.0\,\text{m}$ is the distance of the can from support B.
+
+Lines 3 and 4 are calculated correctly with the values of line 2, but the wrong lever arm changes the results. The correct calculation:
+
+$N_\text{B} r_\text{B} = G r_G + G_\text{p} r_\text{p}$
+
+$G r_G = 160\,\text{N} \cdot 1.5\,\text{m} = 240\,\text{Nm}$
+
+$G_\text{p} r_\text{p} = 40\,\text{N} \cdot 3.0\,\text{m} = 120\,\text{Nm}$
+
+$N_\text{B} = \dfrac{360\,\text{Nm}}{2.0\,\text{m}}$, that is, $N_\text{B} = 180\,\text{N}$
+
+$N_\text{A} = 200\,\text{N} - 180\,\text{N}$, that is, $N_\text{A} = 20\,\text{N}$
+
+The support forces are $N_\text{A} = 20\,\text{N}$ and $N_\text{B} = 180\,\text{N}$, two significant figures like the initial data. Check about support B: the moment of the weight of the plank is $+160\,\text{N} \cdot 0.5\,\text{m} = +80\,\text{Nm}$ (anticlockwise). The moment of the support force $N_\text{A}$ is $-20\,\text{N} \cdot 2.0\,\text{m} = -40\,\text{Nm}$ and the moment of the weight of the can $-40\,\text{N} \cdot 1.0\,\text{m} = -40\,\text{Nm}$ (clockwise). The sum is zero, as it should be. The correct answer is line 2: the lever arms of all forces are measured about the same reference point.
+
 ## fy5-2-L3-01
 **Given:** plank $L = 4.00\,\text{m}$, $m_\text{p} = 20.0\,\text{kg}$, centre of mass $x_\text{p} = 2.00\,\text{m}$; trestles $x_1 = 0.50\,\text{m}$ and $x_2 = 3.00\,\text{m}$ from the left end; painter $m_\text{pt} = 60.0\,\text{kg}$
 **Find:** the greatest distance $x$ of the painter from the left end of the plank before toppling

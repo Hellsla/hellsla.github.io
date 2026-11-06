@@ -281,6 +281,53 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy5-5-L2-08",
+      "level": 2,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "Far away from all other celestial bodies there are two asteroids, A and B. The mass of asteroid A is $8.0 \\cdot 10^{12}\\,\\text{kg}$ and the mass of asteroid B is $2.0 \\cdot 10^{12}\\,\\text{kg}$. The distance between their centres is $5.0\\,\\text{km}$, and they are initially at rest relative to each other. The only force acting on them is the gravitational force between them. Treat the asteroids as spherically symmetric bodies.\n\nHow do the magnitudes of the accelerations $a_{\\text{A}}$ and $a_{\\text{B}}$ of the asteroids compare at the moment when they start to move?",
+      "answer": "The acceleration of asteroid B is four times that of A, $a_{\\text{B}} = 4\\,a_{\\text{A}}$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The accelerations are equal, $a_{\\text{A}} = a_{\\text{B}}$.",
+          "feedback": "Here equal forces have been confused with equal accelerations. By Newton's third law the forces are equal, but the acceleration $a = \\tfrac{F}{m}$ depends also on the mass of the accelerating body."
+        },
+        {
+          "text": "The acceleration of asteroid A is four times that of B, $a_{\\text{A}} = 4\\,a_{\\text{B}}$.",
+          "feedback": "Here it has been assumed that the heavier asteroid pulls the lighter one harder and therefore also accelerates more itself. The forces are equal, and a larger mass accelerates less from the same force."
+        },
+        {
+          "text": "The acceleration of asteroid B is four times that of A, $a_{\\text{B}} = 4\\,a_{\\text{A}}$.",
+          "correct": true,
+          "feedback": "Correct. Next choose the reason that explains your answer."
+        }
+      ],
+      "reason_prompt": "Which reason explains your answer?",
+      "reasons": [
+        {
+          "text": "The heavier asteroid pulls the lighter one with a greater force than the lighter one pulls the heavier one.",
+          "feedback": "This is a common misconception in the chapter. Gravitation is an interaction, so by Newton's third law the asteroids pull each other with forces that are equal in magnitude and opposite in direction."
+        },
+        {
+          "text": "All bodies fall in a gravitational field with the same acceleration regardless of their mass.",
+          "feedback": "This holds for bodies that are in the field of the same body, such as on the surface of the Earth. Here A is in the field of B and B is in the field of A. The field $g = \\gamma \\tfrac{M}{r^2}$ is smaller at A, because the mass of B is smaller."
+        },
+        {
+          "text": "An equal force acts on each asteroid, and the same force accelerates the lighter one more.",
+          "correct": true,
+          "feedback": "Correct: $a = \\tfrac{F}{m}$ and $F$ is the same, so the accelerations are inversely proportional to the masses."
+        },
+        {
+          "text": "The force between the asteroids increases as they approach, because the distance is raised to the second power in the formula.",
+          "feedback": "The statement is true, but it does not explain the answer. The distance is the same for both asteroids, so it does not tell why the accelerations differ."
+        }
+      ]
     }
   ],
   "level3": [

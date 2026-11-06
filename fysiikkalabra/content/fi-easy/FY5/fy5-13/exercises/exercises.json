@@ -252,6 +252,37 @@
           "feedback": "Amplitudi ei määrää aallon nopeutta eikä taajuutta. Aallon nopeus riippuu kielestä. Taajuus riippuu nopeudesta ja värähtelevän osan pituudesta."
         }
       ]
+    },
+    {
+      "id": "fy5-13-L2-08",
+      "level": 2,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "Urkujen rakentaja tekee kaksi pilliä samasta putkesta. Ensimmäinen pilli on avoin molemmista päistä, ja sen pituus on $L$. Toinen pilli on puolet lyhyempi, $\\tfrac{L}{2}$, ja sen yläpää suljetaan tulpalla. Ilman lämpötila on sama. Putken pääkorjausta eli putken pään vaikutusta aallonpituuteen ei oteta huomioon.\n\nMiten toisen pillin perustaajuus muuttuu ensimmäisen pillin perustaajuuteen verrattuna?",
+      "answer": "Perustaajuus pysyy samana.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Perustaajuus kaksinkertaistuu.",
+          "feedback": "Tässä suljettu pilli on laskettu kuin avoin pilli tai kieli, jolloin vain pituuden puolittuminen vaikuttaa. Suljetussa pillissä pituudelle mahtuu perustaajuudella vain neljännes aallonpituutta. Siksi $f_1 = \\tfrac{v}{4L}$ eikä $\\tfrac{v}{2L}$."
+        },
+        {
+          "text": "Perustaajuus pysyy samana.",
+          "correct": true,
+          "feedback": "Oikein: puolittunut pituus kaksinkertaistaa perustaajuuden, ja suljettu pää puolittaa sen. Toisen pillin perustaajuus on $\\tfrac{v}{4 \\cdot L/2} = \\tfrac{v}{2L}$, eli sama kuin ensimmäisen."
+        },
+        {
+          "text": "Perustaajuus pienenee puoleen.",
+          "feedback": "Tässä on otettu huomioon vain tulppa. Tulppa puolittaa saman pituisen pillin perustaajuuden. Pilli on kuitenkin myös puolet lyhyempi, ja lyhyempi pilli soi korkeammalta. Siksi muutokset kumoavat toisensa eli ne ovat yhtä suuret vastakkaisiin suuntiin."
+        },
+        {
+          "text": "Perustaajuus nelinkertaistuu.",
+          "feedback": "Tässä tulpan vaikutus on luettu väärin päin. Suljetun pillin perustaajuus on $\\tfrac{v}{4L}$, joten tulppa puolittaa perustaajuuden eikä kaksinkertaista sitä. Vain pituuden puolittuminen kaksinkertaistaa perustaajuuden."
+        }
+      ]
     }
   ],
   "level3": [

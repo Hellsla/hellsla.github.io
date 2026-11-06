@@ -95,6 +95,25 @@
 **Answer:** $4$ saws; the number is a whole number, and $3.98$ rounds to it, because the levels are given in whole decibels.
 **Reasonableness:** Two saws would raise the level by $3\,\text{dB}$ and four by $6\,\text{dB}$, that is $85\,\text{dB} + 6\,\text{dB} = 91\,\text{dB}$. This matches the given level, so four saws is the right number.
 
+## fy5-15-L2-08
+**Find:** how many times as great the sound intensity is on the street ($82\,\text{dB}$) as in the living room ($42\,\text{dB}$), as an order of magnitude
+**Principle:** The difference of the levels of two sounds depends only on the ratio of the intensities, because the threshold of hearing $I_0$ cancels: $L_2 - L_1 = 10\,\text{dB} \cdot \lg \tfrac{I_2}{I_1}$. The scale is logarithmic: whenever the intensity becomes ten times as great, $10\,\text{dB}$ is added to the level.
+**Model answer:** The intensity on the street is about $10^{4}$ times as great. The difference of the levels is
+
+$L_2 - L_1 = 82\,\text{dB} - 42\,\text{dB}$
+
+$L_2 - L_1 = 40\,\text{dB}$
+
+Divide the difference by $10\,\text{dB}$:
+
+$\lg \dfrac{I_2}{I_1} = \dfrac{40\,\text{dB}}{10\,\text{dB}} = 4$
+
+From the definition of the logarithm we get
+
+$\dfrac{I_2}{I_1} = 10^{4}$
+
+So the intensity on the street is about $10\,000$ times as great. The ratio $2$ results when the decibel readings are compared like ordinary numbers, the ratio $40$ when the difference is read directly as the ratio, and the ratio $10^{40}$ when the difference is not divided by $10\,\text{dB}$.
+
 ## fy5-15-L3-01
 **Given:** spectators $N = 12\,000$, level of one shout at the centre of the rink $L_1 = 42\,\text{dB}$, level of the public address system alone $L_K = 80\,\text{dB}$; the shouts are equally strong and all sources are independent
 **Find:** the combined level $L$ of all the sounds in decibels

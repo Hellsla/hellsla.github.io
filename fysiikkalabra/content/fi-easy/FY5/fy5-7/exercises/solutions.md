@@ -192,3 +192,20 @@
 **Sijoitus:** $D = \dfrac{46{,}0\,\text{cm} + 34{,}0\,\text{cm}}{2} = 40{,}0\,\text{cm}$ ja $A = \dfrac{46{,}0\,\text{cm} - 34{,}0\,\text{cm}}{2} = 6{,}0\,\text{cm}$. Hetkellä $5{,}0\,\text{s}$ sinin argumentti on $19{,}63$, ja $d = 40{,}0\,\text{cm} + 6{,}0\,\text{cm} \cdot \sin 19{,}63 = 40{,}0\,\text{cm} + 6{,}0\,\text{cm} \cdot 0{,}7071 = 44{,}24\,\text{cm}$
 **Vastaus:** $44\,\text{cm}$, kaksi merkitsevää numeroa. Jaksonaika $1{,}6\,\text{s}$ on luettu taulukosta $0{,}2\,\text{s}$:n välein, ja ennuste on ekstrapolointia eli arvio mittausalueen ulkopuolelle. Arvoksi $D$ kelpaa sekä $40{,}0\,\text{cm}$ että $40{,}1\,\text{cm}$.
 **Järkevyys:** Aika $5{,}0\,\text{s}$ on $3{,}125$ jaksoa eli kolme täyttä jaksoa ja $45\,{}^\circ$, ja $\sin 45\,{}^\circ = 0{,}7071$. Kohta c): ennuste ulottuu yli kaksi jaksoa ($3{,}4\,\text{s}$) mittausalueen ohi, joten jaksonajan virhe kertautuu. Jaksonajalla $1{,}62\,\text{s}$ ennuste olisi $43{,}1\,\text{cm}$.
+
+## fy5-7-L1-09
+**Kysytty:** mikä neljästä kuvaajasta esittää punnuksen poikkeaman $x$ ajan $t$ funktiona, kun taajuus on $f = 2{,}0\,\text{Hz}$, amplitudi $A = 3{,}0\,\text{cm}$ ja ajanotto alkaa tasapainoaseman ohituksesta ylöspäin.
+**Periaate:** Jaksonaika on taajuuden käänteisluku, $T = \tfrac{1}{f}$. Kuvaajasta jaksonaika luetaan kahden peräkkäisen huipun väliltä. Amplitudi luetaan tasapainoaseman tasolta $x = 0$ huipun tasolle. Ajanotto alkaa ohituksesta positiiviseen suuntaan. Siksi käyrä on $x = A \sin\left(\tfrac{2\pi t}{T}\right)$ ja lähtee nollasta ylöspäin.
+**Mallivastaus:** Oikea on kuvaaja B. Lasketaan ensin jaksonaika.
+
+$T = \dfrac{1}{f}$
+
+$T = \dfrac{1}{2{,}0\,\text{Hz}}$
+
+$T = 0{,}50\,\text{s}$
+
+Kuvaajassa B peräkkäiset huiput ovat $0{,}50\,\text{s}$:n välein. Huiput ovat kohdassa $3{,}0\,\text{cm}$ ja pohjat kohdassa $-3{,}0\,\text{cm}$. Ensimmäinen huippu on hetkellä $\tfrac{T}{4} = 0{,}125\,\text{s}$. Kahdessa sekunnissa ehtii $4$ värähdystä, kuten taajuus $2{,}0\,\text{Hz}$ edellyttää.
+
+Kuvaajassa A tasapainoaseman ohitukset ovat $0{,}50\,\text{s}$:n välein, mutta jaksonaika on $1{,}0\,\text{s}$. Siinä puolikas jakso on luettu kokonaiseksi. Kuvaajassa C huippujen ja pohjien etäisyys on $3{,}0\,\text{cm}$, joten amplitudi on vain $1{,}5\,\text{cm}$. Siinä amplitudi on sekoitettu ääriasemien väliseen etäisyyteen $2A$. Kuvaajassa D jaksonaika on $2{,}0\,\text{s}$. Siinä taajuuden lukuarvo on otettu jaksonajaksi.
+
+**Kuvaajan lukeminen:** Jokaisesta kuvaajasta luetaan kahden peräkkäisen huipun välinen aika. Lisäksi luetaan huipun korkeus tasapainoaseman katkoviivasta. Kuvaajat B ja C värähtelevät samaan tahtiin, joten ne erottaa vasta huippujen korkeus.

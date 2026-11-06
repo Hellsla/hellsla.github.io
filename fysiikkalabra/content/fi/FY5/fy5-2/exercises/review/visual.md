@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: c2fbdb04e79fbaad
+CONTENT-HASH: d53a1ac4e99ef2e0
 
 ## Blocking
-(none)
+(none; the round 1 Major is resolved: the Rivi 3 feedback is now two short formulas plus the sum, all fully visible at 390 px, no scroll box left)
 
 ## Polish
-- fy5-2-L3-05 Järkevyys: the tall inline fraction for 0,528 m is unchanged; use a display line or \tfrac.
+- [Minor] fy5-2-L2-08 — options appear in order Rivi 4, 2, 1, 3, so the row-by-row check is read out of order; fixed order (Rivi 1-4, then "Laskussa ei ole virhettä") would read better if the shuffle allows.
 
 ## Checked
-- Round 3 delta: fy5-2-L3-04 solution at 1280 px after the Voimakuvio step and box diagram were removed. Periaate carries the worded force analysis (weights, N, f, N_s with directions); Kaava, Muunnokset and Sijoitus follow without a gap or orphaned reference; nothing clipped, no red source. My earlier F_s placement note no longer applies. Nothing else changed.
+- Round 2 delta, rebuilt with build.py fy5-2, rendered at 390 px after the page scripts ran: all five choices with feedback, and the solution open. Document scrollWidth 390; no clipped element and no .kx-wide scroll box in any state.
+- Rivi 3 feedback: "160 N·1,5 m = 240 Nm ja 40 N·1,0 m = 40 Nm, yhteensä 280 Nm" wraps over three lines, every value readable. Rivi 4 feedback (purkin paino jätetään summasta pois) reads fluently, quantities in LaTeX, and does not give away the correct row.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

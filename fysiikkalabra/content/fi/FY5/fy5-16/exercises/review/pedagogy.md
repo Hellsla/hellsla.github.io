@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: d62b2b53d0757222
+CONTENT-HASH: 431ea9a2e547e7e5
 
 ## Blocking
+(none)
 
 ## Polish
-- fy5-16-L2-07 — the student's wrong value 1,0 h equals the lesson's 94 dB result (8 h : 8 = 1 h) and L3-04's 1,0 h table entry; harmless coincidence. Optional.
-- fy5-16-L2-06 Järkevyys — "Siksi tulos on positiivinen" is a weak sentence; harmless.
-- fy5-16-L3-04 b) and L3-05 b) both ask for a dose with protectors, as does the worked example; acceptable at level 3.
+1. L2-08 correct option is "noin 6 dB ... suunnilleen yhtä paljon joka välillä"; option 1 now also says "suunnilleen", so hedging no longer marks it. Nothing further needed.
 
 ## Checked
-- Round 5 change (solutions.md L2-07 only): Vastaus a) "aika jaetaan kahdella kahdeksan kertaa eli kaikkiaan luvulla 256" is correct (2^8 = 256) and clearer than the earlier exponent form; Finnish correct.
-- Järkevyys halving check: 8 h -> 1 h is three halvings, 60 min -> 1,875 min is five (60/32 = 1,875), together eight = n; arithmetic and the 32-fold comparison agree.
-- Answer 1.9 min, text, tolerance and the aligned block (480 min / 256 = 1,875 ≈ 1,9) unchanged and consistent; the shorter check is still followable step by step.
-- Rest of the set unchanged since the passed version.
+- Round 2. Checked from text only (no renders).
+- Round 1 polish done: option 1 hedged, correct option no longer the only hedged one nor the longest (116 vs 126 characters); 85 dB feedback now says the true level may be 84-86 dB, matching the solution.
+- Differences 6, 6, 5 dB vs 6,0 dB expected, uncertainty of a difference 2 dB: correct option follows from the data, others are the log-scale and within-uncertainty traps.
+- Answer field and solution agree; no new theory.

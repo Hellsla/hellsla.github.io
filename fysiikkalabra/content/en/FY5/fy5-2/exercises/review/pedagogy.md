@@ -1,20 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 7375d57f4d506db5
-Mode: full
-Round: 1
+CONTENT-HASH: 24819334321b131a
+Mode: full (translation review against the reviewed Finnish set; new task fy5-2-L2-08)
+Round 1
 
 ## Blocking
 (none)
 
 ## Fixed
-- L3-04: "acts on the ladder line" -> "acts along the ladder" (calque of Finnish "suoralla").
-- solutions L2-05: plank subscripts m_L, G_L -> m_p, G_p (as in all other plank solutions; L is also the length).
-- solutions L2-07: reasonableness sentence split into readable clauses (same formulas).
+- None needed; new task fy5-2-L2-08 was already faithful to content/fi.
 
 ## Polish
-- None.
+(none)
 
 ## Checked
-- 8 + 7 + 5 tasks with the same levels, kinds, part structure (a/b/c) and "answer box takes ..." sentences as the Finnish; all seven solution parts present for the new tasks.
-- Data tasks keep the example-data notice and the graph / interpolation instructions; error task L2-06 quotes the student's solution unchanged.
-- Wording is natural textbook English (lever arm, support force, centre of mass, topple); no Finnish left; decimal point in JSON and LaTeX.
+- fy5-2-L2-08: situation first, question last as its own sentence; same structure, options and reasoning steps as fi; example-data notice kept where fi has it.
+- Solution has the same stages as fi (Find, Principle, Model answer) and can be followed step by step; nothing skipped or added.
+- Feedback repairs the misconception rather than restating the answer, as in fi.
+- Wording is natural textbook English; decimal point in JSON and LaTeX; no Finnish left.
+- No change to level, workload or figure use; check_i18n.py shows nothing for fy5-2; build.py fy5-2 succeeds.

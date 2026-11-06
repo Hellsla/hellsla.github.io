@@ -288,6 +288,57 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy5-9-L2-08",
+      "level": 2,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "The period of a mathematical pendulum on Earth is $1.00\\,\\text{s}$, and the period of a weight on a vertically hanging spring is also $1.00\\,\\text{s}$. Both are taken to the Moon, where the acceleration of free fall is $1.62\\,\\text{m/s}^2$. The length of the pendulum, the spring and the weights stay the same, and the swings are small. Air resistance is neglected.\n\nHow do the periods of the pendulum and the spring oscillator change on the Moon compared with Earth?",
+      "answer": "The period of the pendulum becomes about $2.5$ times as long, the period of the spring stays the same.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The periods of the pendulum and the spring both become about $2.5$ times as long.",
+          "feedback": "Here it has been assumed that the period of every oscillator depends on the acceleration of free fall. The formula of the spring oscillator, $T = 2\\pi\\sqrt{m/k}$, does not contain $g$, and the weight only shifts the equilibrium position."
+        },
+        {
+          "text": "The period of the pendulum becomes about $2.5$ times as long, the period of the spring stays the same.",
+          "correct": true,
+          "feedback": "Correct: on the Moon the period of the pendulum is about $2.46\\,\\text{s}$, and the period of the spring oscillator is still $1.00\\,\\text{s}$. Next, choose the justification that explains the difference."
+        },
+        {
+          "text": "The period of the pendulum becomes about $6$ times as long, the period of the spring stays the same.",
+          "feedback": "Here the square root has been forgotten. The acceleration of free fall on the Moon is about one sixth of the value on Earth, but the period of a pendulum is proportional to $1/\\sqrt{g}$. So it becomes only about $\\sqrt{6.1} \\approx 2.5$ times as long."
+        },
+        {
+          "text": "The periods of the pendulum and the spring both stay the same as on Earth.",
+          "feedback": "Here mass and weight have been mixed up. The masses do not change, but the period of a pendulum does not depend on the mass but on the acceleration of free fall, $T = 2\\pi\\sqrt{l/g}$, and $g$ is smaller on the Moon."
+        }
+      ],
+      "reason_prompt": "Which justification explains your answer?",
+      "reasons": [
+        {
+          "text": "On the Moon the weight is smaller, so the restoring force becomes weaker in both oscillators.",
+          "feedback": "The force of the spring $F = -kx$ depends only on the displacement and the spring constant, not on the weight of the body. A smaller weight only shifts the equilibrium position of the spring higher."
+        },
+        {
+          "text": "The restoring force of the pendulum is a part of the weight, the force of the spring depends only on the displacement.",
+          "correct": true,
+          "feedback": "Correct: in the pendulum the restoring force $mg\\sin\\alpha$ decreases with $g$, but the mass to be accelerated does not decrease, so the swing slows down. The force of the spring $-kx$ is the same on the Moon as on Earth."
+        },
+        {
+          "text": "The masses of the bodies on the Moon are the same as on Earth, so the periods do not change.",
+          "feedback": "An unchanged mass explains only the spring oscillator. The period of a pendulum does not depend on the mass at all but on the length and the acceleration of free fall, and $g$ changes."
+        },
+        {
+          "text": "On the Moon the spring stretches less, because the weight of the body is smaller than on Earth.",
+          "feedback": "The claim is true, but it does not explain the answer. The extension only tells where the equilibrium position is. The period depends on how the force changes with the displacement, and that is the same spring constant $k$ in both places."
+        }
+      ]
     }
   ],
   "level3": [

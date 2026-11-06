@@ -288,6 +288,57 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy5-9-L2-08",
+      "level": 2,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "Matemaattisen heilurin jaksonaika on Maassa $1{,}00\\,\\text{s}$. Pystysuoraan riippuvan jousen ja punnuksen jaksonaika on myös $1{,}00\\,\\text{s}$. Molemmat viedään Kuuhun, jossa putoamiskiihtyvyys on $1{,}62\\,\\text{m/s}^2$. Heilurin pituus, jousi ja punnukset pysyvät samoina, ja heilahdukset ovat pieniä. Ilmanvastusta ei oteta huomioon.\n\nMiten heilurin ja jousivärähtelijän jaksonajat muuttuvat Kuussa Maahan verrattuna?",
+      "answer": "Heilurin jaksonaika kasvaa noin $2{,}5$-kertaiseksi, jousen pysyy samana.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Heilurin ja jousen jaksonajat kasvavat kumpikin noin $2{,}5$-kertaisiksi.",
+          "feedback": "Tässä on oletettu, että jokaisen värähtelijän jaksonaika riippuu putoamiskiihtyvyydestä. Jousivärähtelijän kaavassa $T = 2\\pi\\sqrt{m/k}$ ei ole $g$:tä. Paino siirtää vain tasapainoasemaa eli kohtaa, jossa punnus pysyy paikallaan."
+        },
+        {
+          "text": "Heilurin jaksonaika kasvaa noin $2{,}5$-kertaiseksi, jousen pysyy samana.",
+          "correct": true,
+          "feedback": "Oikein: Kuussa heilurin jaksonaika on noin $2{,}46\\,\\text{s}$, ja jousivärähtelijän jaksonaika on edelleen $1{,}00\\,\\text{s}$. Valitse seuraavaksi perustelu, joka selittää eron."
+        },
+        {
+          "text": "Heilurin jaksonaika kasvaa noin $6$-kertaiseksi, jousen pysyy samana.",
+          "feedback": "Tässä on unohdettu neliöjuuri. Putoamiskiihtyvyys on Kuussa noin kuudesosa Maan arvosta. Heilurin jaksonaika on kuitenkin verrannollinen lausekkeeseen $1/\\sqrt{g}$. Siksi se kasvaa vain noin $\\sqrt{6{,}1} \\approx 2{,}5$-kertaiseksi."
+        },
+        {
+          "text": "Heilurin ja jousen jaksonajat pysyvät kumpikin samoina kuin Maassa.",
+          "feedback": "Tässä on sekoitettu massa ja paino. Massat eivät muutu. Heilurin jaksonaika ei kuitenkaan riipu massasta vaan putoamiskiihtyvyydestä, $T = 2\\pi\\sqrt{l/g}$, ja $g$ on Kuussa pienempi."
+        }
+      ],
+      "reason_prompt": "Mikä perustelu selittää vastauksesi?",
+      "reasons": [
+        {
+          "text": "Kuussa paino on pienempi, joten palauttava voima heikkenee kummassakin värähtelijässä.",
+          "feedback": "Jousen voima $F = -kx$ riippuu vain poikkeamasta ja jousivakiosta. Se ei riipu punnuksen painosta. Pienempi paino siirtää vain jousen tasapainoasemaa ylemmäs."
+        },
+        {
+          "text": "Heilurin palauttava voima on osa painoa, jousen voima riippuu vain poikkeamasta.",
+          "correct": true,
+          "feedback": "Oikein: heilurissa palauttava voima $mg\\sin\\alpha$ pienenee $g$:n mukana, mutta kiihdytettävä massa ei pienene. Siksi heilahdus hidastuu. Jousen voima $-kx$ on Kuussa sama kuin Maassa."
+        },
+        {
+          "text": "Kappaleiden massat ovat Kuussa samat kuin Maassa, joten jaksonajat eivät muutu.",
+          "feedback": "Muuttumaton massa selittää vain jousivärähtelijän. Heilurin jaksonaika ei riipu massasta lainkaan, vaan pituudesta ja putoamiskiihtyvyydestä. Putoamiskiihtyvyys $g$ muuttuu."
+        },
+        {
+          "text": "Kuussa jousi venyy vähemmän, koska punnuksen paino on pienempi kuin Maassa.",
+          "feedback": "Väite on tosi, mutta se ei selitä vastausta. Venymä kertoo vain, missä tasapainoasema on. Jaksonaika riippuu siitä, miten voima muuttuu poikkeaman mukana. Jousivakio $k$ on sama kummassakin paikassa."
+        }
+      ]
     }
   ],
   "level3": [

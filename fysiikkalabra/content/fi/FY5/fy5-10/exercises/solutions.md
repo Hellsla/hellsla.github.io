@@ -239,3 +239,26 @@ t_2 &= \frac{6{,}0\,\text{m}}{2{,}5\,\text{m/s}} = 2{,}4\,\text{s}
 Kokonaisaika on $t = 2{,}5\,\text{s} + 2{,}4\,\text{s} = 4{,}9\,\text{s}$.
 **Vastaus:** $4{,}9\,\text{s}$, kaksi merkitsevää numeroa kuten lähtötiedoissa. Taajuus on sama kummassakin osassa, koska sen määrää köyden päätä heiluttava käsi: liitoskohta värähtelee samaa tahtia kuin sitä edeltävä köysi, eikä se voi lähettää eteenpäin harjoja eri tahtiin kuin vastaanottaa niitä. Nopeus määräytyy väliaineesta, joten se on erilainen paksussa osassa, ja siksi aallonpituus $\lambda = v/f$ on siellä lyhyempi.
 **Järkevyys:** Koko köyden pituus on $10{,}0\,\text{m} + 6{,}0\,\text{m} = 16{,}0\,\text{m}$, joten keskinopeus on $\tfrac{16{,}0\,\text{m}}{4{,}9\,\text{s}} = 3{,}3\,\text{m/s}$. Se on osien nopeuksien $2{,}5\,\text{m/s}$ ja $4{,}0\,\text{m/s}$ välissä, kuten pitää.
+
+## fy5-10-L1-09
+**Kysytty:** mitkä viidestä väitteestä kireässä köydessä etenevästä aallosta ja köyteen solmitusta nauhasta ovat tosia.
+**Periaate:** Taajuus on värähdysten määrä sekunnissa, ja valokuvassa peräkkäisten harjojen väli on aallonpituus $\lambda$. Aallon nopeus saadaan perusyhtälöstä $v = f\lambda$. Nopeus riippuu väliaineesta eli köydestä ja sen jännityksestä, taajuus lähteestä eli heiluttavasta kädestä. Aalto kuljettaa energiaa mutta ei ainetta.
+**Mallivastaus:** Taajuus ja jaksonaika ovat
+
+$f = \dfrac{12}{8{,}0\,\text{s}} = 1{,}5\,\text{Hz}$
+
+$T = \dfrac{1}{f} \approx 0{,}67\,\text{s}$
+
+ja aallon nopeus on
+
+$v = f\lambda = 1{,}5\,\text{Hz} \cdot 1{,}2\,\text{m}$, eli $v = 1{,}8\,\text{m/s}$.
+
+1 tosi: nauha värähtelee köyden kohdan mukana samalla taajuudella kuin köyden pää, $1{,}5\,\text{Hz}$.
+
+2 tosi: $v = f\lambda = 1{,}8\,\text{m/s}$.
+
+3 epätosi: aalto ei kuljeta ainetta. Nauha ja köyden kohta värähtelevät ylös ja alas tasapainoasemansa ympärillä, mutta eivät kulje eteenpäin. Eteenpäin siirtyy energia.
+
+4 epätosi: samalla jännityksellä köysi on sama väliaine, joten nopeus pysyy $1{,}8\,\text{m/s}$:na. Kaksinkertainen taajuus $3{,}0\,\text{Hz}$ puolittaa aallonpituuden: $\lambda = \tfrac{1{,}8\,\text{m/s}}{3{,}0\,\text{Hz}} = 0{,}60\,\text{m}$.
+
+5 epätosi: $(t, y)$-kuvaajan vaaka-akselilla on aika, joten huippujen väli on jaksonaika $T \approx 0{,}67\,\text{s}$, ei aallonpituus $1{,}2\,\text{m}$.

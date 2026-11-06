@@ -224,6 +224,19 @@ akselit 0
 **Järkevyys:** Normaalikiihtyvyys on $4{,}32\,\text{m/s}^2$ eli noin $0{,}44\,g$. Auton paino on noin $8{,}3\,\text{kN}$. Kitkan on siis oltava noin $0{,}44$-kertainen painoon verrattuna. Se on mahdollista märällä asfaltilla. Oppilaan tulos vaatisi kitkan, joka on noin $0{,}88$-kertainen painoon verrattuna. Se ylittäisi jo kuivan asfaltin tavallisen pidon.
 **Mallivastaus virheestä:** Oppilas piirsi autoon ulospäin osoittavan keskipakoisvoiman ja lisäsi sen kitkaan. Sellaista voimaa ei ole, koska mikään kappale ei vedä autoa ulospäin. Lauseke $m\tfrac{v^2}{r}$ on kokonaisvoiman suuruus eikä oma voimansa. Kokonaisvoima syntyy pelkästä kitkasta. Siksi kitka on $m\tfrac{v^2}{r} = 3672\,\text{N}$. Oppilaan laskema kaksinkertainen arvo $7344\,\text{N}$ on kaksi kertaa liian suuri.
 
+## fy5-4-L2-08
+**Kysytty:** mikä neljästä voimakuviosta esittää oikein vaunuun vaikuttavat voimat silmukan ylimmässä kohdassa.
+**Periaate:** Valitaan kappaleeksi vaunu. Siihen vaikuttavat Maa (paino $\overline{G}$) ja rata (tukivoima $\overline{N}$). Ilmanvastus ja kitka jätetään huomiotta. Ylimmässä kohdassa silmukan keskipiste on vaunun alapuolella. Siksi normaalikiihtyvyys osoittaa alas, ja Newtonin toisen lain mukaan myös kokonaisvoima osoittaa alas. Rata on vaunun yläpuolella, joten sen tukivoima työntää vaunua radasta poispäin eli alas. Keskipakoisvoimaa ei ole, eikä nopeus ole voima.
+**Mallivastaus:** Oikea on voimakuvio C. Valitaan positiiviseksi suunnaksi alas kohti keskipistettä. Silloin
+
+$G + N = m a_\text{n}$
+
+$G + N = m \cdot 1{,}5\,g$
+
+$N = 1{,}5\,mg - mg$, eli $N = 0{,}5\,mg$
+
+Tukivoima osoittaa alas ja on puolet painosta, kuten kuviossa C. Kuviossa A tukivoima on piirretty ylöspäin kuin lattian tukivoima. Silloin kokonaisvoima olisi $G - N = 0{,}5\,G$ eikä $1{,}5\,G$. Kuviossa B ylöspäin osoittava keskipakoisvoima $\overline{F}_\text{kp}$ kumoaa kokonaisvoiman, vaikka vaunu kiihtyy. Mikään kappale ei myöskään vaikuta tällä voimalla. Kuviossa D nopeus on piirretty voimaksi, vaikka vaunuun ei vaikuta liikkeen suuntaista voimaa.
+
 ## fy5-4-L3-04
 **Annettu:** $m = 60{,}0\,\text{kg}$; alhaalla $v_1 = 27{,}2\,\text{m/s}$ ja $a_1 = 53{,}2\,\text{m/s}^2$; ylhäällä $v_2 = 14{,}0\,\text{m/s}$ ja $a_2 = 14{,}1\,\text{m/s}^2$; $g = 9{,}81\,\text{m/s}^2$; esimerkkiaineisto; ilmanvastus ja vierimisvastus jätetään huomiotta
 **Kysytty:** a) silmukan säde $r$; b) vaunun tukivoima $N$ matkustajaan ylhäällä ja alhaalla; c) pienin nopeus $v_\text{min}$ ylhäällä, yksikössä $\text{m/s}$. Vastauslaatikkoon tukivoima ylhäällä, yksikössä $\text{N}$.

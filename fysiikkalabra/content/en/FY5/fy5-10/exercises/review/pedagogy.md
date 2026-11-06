@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: bc8bbdeca45b9de8
+CONTENT-HASH: 05a22a67824fc9ac
 Mode: full (translation review against the reviewed Finnish set)
 Round 1
 
@@ -7,11 +7,12 @@ Round 1
 (none)
 
 ## Fixed
-(none needed: the English text matched fi in every number and was natural)
+(none needed)
 
 ## Polish
 (none)
 
 ## Checked
-- Same sequence of Find/Principle/Model answer/Substitution/Answer/Reasonableness in solutions as fi; hints, error-analysis task (L2-06) and justification prompts preserved.
-- Language level: natural English, no Finnish left (grep).
+- fy5-10-L1-09: the pedagogy of the Finnish task is kept (situation first, question last; misconception-based distractors or statements; each feedback names the same error as fi and does not give the answer away before the student acts).
+- Solution keeps the Find / Principle / Model answer structure with the calculation staged step by step.
+- English reads naturally and uses the chapter's terms; no Finnish left.

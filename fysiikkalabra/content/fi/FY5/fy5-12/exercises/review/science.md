@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 1d11cb0e3736a1a7
+CONTENT-HASH: 37891267a0068020
 
 ## Blocking
 
 ## Polish
-- exercises.json:224 (L2-07) — the plan asks for a ripple-tank picture with nodal lines (figure); a table is used instead.
-- Long inline formulas in solutions render as empty boxes in the 1280 px captures in old and new tasks alike (site-wide, other thread).
+- fy5-12/exercises/solutions.md:200 — The check "matkaerot olisivat … 1,5 cm, 4,5 cm ja 7,5 cm" reads as a complete list. Write "1,5 cm, 4,5 cm, 7,5 cm ja niin edelleen", or "6,0 cm on 4,5 cm:n ja 7,5 cm:n puolivälissä".
 
 ## Checked
-- Changes since round 1 diffed; answers.py and task data unchanged; all new answers recomputed in one script: L1-08 200 Hz, L2-05 680 Hz, L2-07 3,97 → 4,0 mm, L3-04 340 Hz, L3-05 852,6 / 850,9 → 8,5·10² Hz; all agree with answers.py.
-- L2-05: the model minima for λ = 0,500 m inside x = 0,30…1,70 m are exactly 0,375; 0,625; 0,875; 1,125; 1,375; 1,625 m, so "kaikki tällä välillä havaitut kohdat peräkkäin" is true and the five-interval method is valid; the minima-not-silence note (unequal amplitudes near one speaker) is right; the λ/2 link to standing-wave nodes is right.
-- L2-06: options reordered and reworded; exactly one correct option; each distractor still wrong and its feedback right; energy redistribution matches the lesson.
-- L2-07 Järkevyys: no longer uses cos 45°; statement right.
-- L3-05 answer shown as 8,5·10² Hz, consistent with the two-significant-figure reasoning and answer 850.
-- Round-1 checks (L1-06, L1-07, L3-04, L3-05 n-assignment, stated conditions, notation, scope, no duplicates with fy5-11/fy5-13/fy5-16) still hold; those tasks are unchanged.
+- New task L2-08 (type 4, find the error; exercises.json:284). λ = 0,36 / 12 = 0,030 m = 3,0 cm, Δs = 6,0 cm, and Δs/λ = 2,0, so the interference is constructive. Only line 4 is wrong, and "Laskussa ei ole virhettä" is last.
+- The wrong line is exactly the lesson's warned mistake: Δs = nλ taken as destructive because the wave "travelled further". Each correct line's feedback names its own check.
+- The correct choice's feedback gives a counter-example (2,5λ) and does not just repeat the solution. The option texts have similar lengths.
+- The sources are in phase at the same frequency, as stated in the task. The ripple-tank values (12 Hz, 0,36 m/s) are realistic.
+- Notation follows the lesson: Δs = |s₁ − s₂|, nλ and (n + ½)λ.
+- The inline fractions in the task lines and the solution are single short fractions. From the text they fit 300 px. I did not render them.
+- answers.py ran once. All numeric answers agree with exercises.json within tolerance.
+- The hash was the same at the start and at the end.

@@ -89,6 +89,21 @@
 **Answer:** $60.0\,\text{m/s}$, three significant figures as in the length $1.20\,\text{m}$ read from the ruler and the frequency $100\,\text{Hz}$.
 **Reasonableness:** One loop is $0.30\,\text{m}$ long, so the wavelength is $0.60\,\text{m}$, and $100\,\text{Hz} \cdot 0.60\,\text{m} = 60\,\text{m/s}$. The fundamental frequency of the rope would be $100\,\text{Hz} : 4 = 25\,\text{Hz}$, so the vibrator excites the fourth natural frequency.
 
+## fy5-13-L2-08
+**Find:** how the fundamental frequency of a pipe of length $L$ that is open at both ends changes when the pipe is made half as long and one end is closed
+**Principle:** A pipe open at both ends has a displacement antinode at each end, so at the fundamental frequency half a wavelength fits into the length of the pipe and $f_1 = \tfrac{v}{2L}$. In a pipe closed at one end the closed end is a node and the open end an antinode, so a quarter of a wavelength fits into the length and $f_1 = \tfrac{v}{4L}$. The speed of sound $v$ is the same in both, because the air temperature does not change.
+**Model answer:** The fundamental frequency stays the same. The fundamental frequency of the first pipe is
+
+$f_1 = \dfrac{v}{2L}$
+
+The length of the second pipe is $\tfrac{L}{2}$, and it is closed at one end:
+
+$f_1' = \dfrac{v}{4 \cdot \tfrac{L}{2}}$
+
+$f_1' = \dfrac{v}{2L}$
+
+The frequencies are the same, that is, $f_1' = f_1$. Halving the length doubles the fundamental frequency, and the plug halves it, so the changes cancel each other. Doubling would be the result if the closed pipe were calculated like an open pipe or a string. Dropping to half takes into account only the plug, and becoming four times as high reads the effect of the plug the wrong way round.
+
 ## fy5-13-L3-01
 **Given:** fundamental frequency of the open organ pipe $f_\text{o} = 262\,\text{Hz}$; the length of the pipe $L$ and the speed of sound $v$ stay the same when the upper end is closed
 **Find:** the fundamental frequency $f_\text{c}$ of the closed pipe in hertz

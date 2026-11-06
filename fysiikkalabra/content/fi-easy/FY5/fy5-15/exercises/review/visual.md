@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: cc0ae5f5ee1c450b
+CONTENT-HASH: 5832f2120e4162ca
+Mode: delta, round 1 (new task fy5-15-L2-08 in fi-easy; L2-08, decibel difference as ratio (choice task))
 
 ## Blocking
-- none
-
-## Fixed
-- (fixed) L2-07 exercise text: "kalibroitu" explained in plain words ("mittariin, jonka lukemat on tarkistettu oikeiksi").
-- (fixed) L3-04 solution: "ilman vaimennus" → "ilman aiheuttama vaimennus" (unambiguous).
+(none)
 
 ## Polish
-- Screenshots in review/shots predate the new tasks (levels 1-3 old ids shown); text-level check only for the 8 new exercises: data captions and column headers translated, maths identical to the Finnish ($L_\text{...}$ labels, units with thin space, decimal commas in text and points in table cells as in the Finnish).
+- [Minor] sticky tab bar (Examples/Check/Exercises) overlaps the card in element screenshots only; a capture artefact, not a page defect.
 
 ## Checked
-- Captures opened: fy5-15-open-exercises-L2-1280-1.png (fi-easy): layout, boxed answers, Given/Find/Formula blocks, display maths render correctly.
-- Table cells keep decimal points as in the Finnish JSON; caption and column labels natural in fi-easy.
+- Own 390 px render of fy5-15-L2-08 (fi-easy) after the page scripts ran, answer feedback and solution open: page scrollWidth 390, no element clipped outside a scroll box, no .kx-wide line needed, no KaTeX error nodes.
+- Situation, question, choice rows, feedback box, FIND/PRINCIPLE/MODEL ANSWER block read in full: units and quantities set as maths, calculation rows stacked and aligned, no plain-text quantity or stray symbol.
+- Language read in fi-easy: natural, consistent with the chapter terms, instructions clear.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 5

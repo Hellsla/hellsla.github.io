@@ -83,6 +83,19 @@
 **Vastaus:** $0{,}90\,\text{s}$, kaksi merkitsevää numeroa kuten ajassa $0{,}45\,\text{s}$.
 **Järkevyys:** Mitattu lasku $30\,\text{dB}$ on puolet $60\,\text{dB}$:stä, joten aika kaksinkertaistuu. Tulos on pidempi kuin luokille tavoiteltu noin puoli sekuntia, mikä sopii tyhjään, kovapintaiseen luokkaan.
 
+## fy5-16-L2-08
+**Kysytty:** minkä päätelmän kompressorin melutason mittaukset neljältä etäisyydeltä tukevat, kun lukeman epävarmuus on $\Delta L = 1\,\text{dB}$
+**Periaate:** Pistemäisen lähteen intensiteetti on avoimessa tilassa kääntäen verrannollinen etäisyyden neliöön. Kun etäisyys kaksinkertaistuu, intensiteetti putoaa neljäsosaan ja taso pienenee $10\,\text{dB} \cdot \lg 4 \approx 6{,}0\,\text{dB}$. Kahden lukeman erotuksen epävarmuus on enintään $2\Delta L = 2\,\text{dB}$, joten tätä pienemmät erot eivät ole mitattavia.
+**Mallivastaus:** Aineisto tukee päätelmää, että taso laskee noin $6\,\text{dB}$ joka kerta, kun etäisyys kaksinkertaistuu. Peräkkäisten lukemien erotukset ovat
+
+$91\,\text{dB} - 85\,\text{dB} = 6\,\text{dB}$
+
+$85\,\text{dB} - 79\,\text{dB} = 6\,\text{dB}$
+
+$79\,\text{dB} - 74\,\text{dB} = 5\,\text{dB}$
+
+Kaikki erotukset ovat odotetun $6{,}0\,\text{dB}$:n tuntumassa, ja suurin poikkeama $1\,\text{dB}$ on pienempi kuin erotuksen epävarmuus $2\,\text{dB}$. Siksi myöskään viimeisen välin pienempi lasku ei osoita, että ääni vaimenisi kauempana hitaammin. Taso ei puolitu: puolet $91\,\text{dB}$:stä olisi noin $46\,\text{dB}$, kun mitattiin $85\,\text{dB}$. Etäisyydellä $4{,}0\,\text{m}$ lukema on $85\,\text{dB}$, mutta epävarmuuden vuoksi todellinen taso voi olla $84$–$86\,\text{dB}$, joten ylempi toiminta-arvo voi ylittyä, eikä mittaus osoita $8\,\text{h}$:n työskentelyä turvalliseksi.
+
 ## fy5-16-L3-01
 **Annettu:** $t_1 = 4{,}0\,\text{h}$ tasolla $L_1 = 88\,\text{dB}$, $t_2 = 4{,}0\,\text{h}$ tasolla $L_2 = 82\,\text{dB}$; vertailu $L_0 = 85\,\text{dB}$ ja $t_0 = 8\,\text{h}$
 **Kysytty:** päivän annos prosentteina vertailuannoksesta

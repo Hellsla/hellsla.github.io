@@ -1,18 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: e262fda17cca6039
-Mode: full (translation review against the reviewed Finnish set)
-Round 2
+CONTENT-HASH: bbc83d05aae3d06e
+Mode: full (translation review against the reviewed Finnish set; new task fy5-14-L1-09)
+Round 1
 
 ## Blocking
 (none)
 
 ## Fixed
-(none needed: the plain Finnish already matched fi in every number, flag and choice, with short sentences)
+- None needed; new task fy5-14-L1-09 was already faithful to content/fi.
 
 ## Polish
 (none)
 
 ## Checked
-- Compared by script with fi: ids, answers, units, tolerances, correct flags, choice order and every table cell of the 8 new tasks identical; decimal comma in text and solutions, point in tables as in fi.
-- Solution formulas identical to fi in all new tasks; check_i18n fi-easy shows no fy5-14 errors.
-- Sentences short; terms explained where needed (huojunta period in L1-08, FFT spectrum in L2-06, Doppler shift twice in L3-04); language matches the fi-easy style of the other chapters.
+- fy5-14-L1-09 (true/false: violin spectrum and moving car horn): id, level, kind, answer, unit, tolerance, correct flags, choices order, data rows and every number in text, choices, feedback and solution identical to content/fi.
+- Recomputed independently: fundamental 330 Hz; statements 2 and 5 true, 1, 3, 4 false; all agree with the solution and with the correct choice.
+- Distractor feedback keeps the Finnish physics (each wrong option's error named correctly).
+- Selkosuomi per NOTES.md section 12: short sentences, common words, glossary terms kept; same physics and numbers as fi; decimal comma in text, point in table cells as in fi.
+- check_i18n.py shows nothing for fy5-14; build.py fy5-14 succeeds.

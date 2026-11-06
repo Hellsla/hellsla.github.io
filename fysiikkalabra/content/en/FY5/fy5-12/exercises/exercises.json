@@ -280,6 +280,41 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy5-12-L2-08",
+      "level": 2,
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "text": "Two wave sources $S_1$ and $S_2$ in a ripple tank vibrate in phase at a frequency of $12\\,\\text{Hz}$, and the waves travel at a speed of $0.36\\,\\text{m/s}$. Point P is $18.0\\,\\text{cm}$ from source $S_1$ and $12.0\\,\\text{cm}$ from source $S_2$. A student reasons whether the interference at point P is constructive or destructive.\n\nLine 1: the wavelength is $\\lambda = \\dfrac{0.36\\,\\text{m/s}}{12\\,\\text{Hz}}$, that is, $\\lambda = 3.0\\,\\text{cm}$.\n\nLine 2: the path difference is $\\Delta s = |s_1 - s_2|$, that is, $\\Delta s = 6.0\\,\\text{cm}$.\n\nLine 3: the ratio of the path difference to the wavelength is $\\dfrac{6.0\\,\\text{cm}}{3.0\\,\\text{cm}} = 2.0$.\n\nLine 4: the wave from source $S_1$ has travelled two wavelengths further and lags behind, so the interference is destructive.\n\nWhich line is wrong? If there is no error in the calculation, choose the last option.",
+      "answer": "Line 4: the conclusion about the type of interference",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Line 1: the wavelength",
+          "feedback": "Line 1 is correct: $\\lambda = \\tfrac{v}{f} = 0.030\\,\\text{m}$, which is $3.0\\,\\text{cm}$. If you think the line is wrong, you believe that the wavelength would be obtained as the product $v f$, or that metres and centimetres cannot be used in the same calculation."
+        },
+        {
+          "text": "Line 2: the path difference",
+          "feedback": "Line 2 is correct: $18.0\\,\\text{cm} - 12.0\\,\\text{cm} = 6.0\\,\\text{cm}$. If you think the line is wrong, you believe that the path difference would be the sum of the distances or the distance of the point from the midpoint of the sources."
+        },
+        {
+          "text": "Line 3: the ratio of the path difference to the wavelength",
+          "feedback": "Line 3 is correct: both lengths are in centimetres, so the units cancel and the ratio is $2.0$. If you think the line is wrong, you believe that the lengths should first be converted to metres, although the ratio does not change."
+        },
+        {
+          "text": "Line 4: the conclusion about the type of interference",
+          "correct": true,
+          "feedback": "Correct, this line is wrong: after a whole wavelength the wave is in phase again. When $\\Delta s = 2\\lambda$, a crest meets a crest and the interference is constructive. It would be destructive, for example, when $\\Delta s = 2.5\\lambda$."
+        },
+        {
+          "text": "There is no error in the calculation",
+          "feedback": "There is an error in the calculation. Compare the conclusion of line 4 with the conditions of interference: the ratio $2.0$ is a whole number, so it satisfies the condition $\\Delta s = n\\lambda$ and not the condition $\\Delta s = \\left(n + \\tfrac{1}{2}\\right)\\lambda$."
+        }
+      ]
     }
   ],
   "level3": [
@@ -288,7 +323,7 @@
       "level": 3,
       "text": "On a sports field two loudspeakers in phase are $3.0\\,\\text{m}$ apart, and they play a sound with a frequency of $340\\,\\text{Hz}$. The speed of sound is $340\\,\\text{m/s}$.\n\nA listener walks along a long straight path that runs in front of the loudspeakers parallel to the line between them, from far to the left to far to the right.\n\nHow many quiet spots does the listener pass? Justify why there are only a finite number of quiet spots. Assume that the sound is not reflected from anywhere.",
       "answer": 6,
-      "unit": "kpl",
+      "unit": "spots",
       "tolerance": 0.02
     },
     {

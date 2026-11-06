@@ -267,6 +267,37 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy5-15-L2-08",
+      "level": 2,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "A phone sound-level app shows a sound intensity level of $82\\,\\text{dB}$ on a busy street and $42\\,\\text{dB}$ in the living room at home. The readings are example values.\n\nRoughly how many times as great is the sound intensity on the street as in the living room?",
+      "answer": "About $10^{4}$ times",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "About $2$ times",
+          "feedback": "Here the decibel readings have been compared like ordinary numbers: $82 : 42 \\approx 2$. The scale is logarithmic, so a double reading does not mean a double intensity."
+        },
+        {
+          "text": "About $40$ times",
+          "feedback": "Here the difference of the levels, $40\\,\\text{dB}$, has been read directly as the ratio of the intensities. The difference tells the logarithm of the ratio: every $10\\,\\text{dB}$ means that the intensity becomes ten times as great."
+        },
+        {
+          "text": "About $10^{4}$ times",
+          "correct": true,
+          "feedback": "Correct: the difference of the levels is $40\\,\\text{dB}$, that is, four times $10\\,\\text{dB}$. Every $10\\,\\text{dB}$ multiplies the intensity by ten, so the ratio is $10^{4}$."
+        },
+        {
+          "text": "About $10^{40}$ times",
+          "feedback": "Here the difference $40\\,\\text{dB}$ has not been divided by $10\\,\\text{dB}$ before raising to a power. The logarithm of the ratio is $\\tfrac{40\\,\\text{dB}}{10\\,\\text{dB}} = 4$ and not $40$."
+        }
+      ]
     }
   ],
   "level3": [

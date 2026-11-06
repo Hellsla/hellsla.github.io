@@ -1,7 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: b5a6b2f9904f4525
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 592a69c2bb05368a
+Mode: full (translation review against the reviewed Finnish set, new task L2-08)
+Round 2
 
 ## Blocking
 (none)
@@ -10,7 +10,7 @@ Round 1
 (none)
 
 ## Checked
-- Distractors and feedback of L1-06, L1-07, L2-06 translated faithfully: each wrong choice keeps its misconception and its corrective feedback.
-- Stems of L3-04 and L3-05 keep the stated assumptions (equal amplitudes, no reflection, example data).
-- Solutions keep the Finnish structure and significant-figure justifications; terms (path difference, nodal line, perpendicular bisector) used consistently.
-- Natural English for a upper-secondary reader; question stems reworded where clumsy.
+- fy5-12-L2-08 keeps the Finnish pedagogy: a YO-skill task (error analysis or concept reasoning) with misconception-based distractors, each wrong choice with feedback naming its misconception and repairing it.
+- The stem gives no answer away; the correct option is not distinguishable by wording or length.
+- English is natural and keeps the task level 2 demand.
+- Solution is staged and readable on a phone; new task adds no extra workload.

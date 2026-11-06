@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 6f1b1aee65125d07
+CONTENT-HASH: caa49ffb8ee68be0
 Mode: full (translation review against the reviewed Finnish set)
 Round 1
 
@@ -7,14 +7,14 @@ Round 1
 (none)
 
 ## Fixed
-(none needed: the English text already matched fi and read naturally)
+(none needed)
 
 ## Polish
 (none)
 
 ## Checked
-- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) and the older ones compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags, choices, feedback, data cells and every number in exercises.json are identical (decimal point in en JSON/LaTeX where relevant: en).
-- solutions.md: 614 numbers each, sequence equal to fi; formulas and answer lines unchanged.
-- Recomputed: L1-07 25 s, L2-05 1.64 Hz, L2-06 1.51 s, L2-07 1.34 Hz, L3-04 79 %, L3-05 44 cm; all match fi.
-- L1-06 and L1-08: one correct option each; distractor feedback names the same misconception as fi.
-- check_i18n.py en: 0 errors.
+- New task fy5-7-L1-09 (a four-option graph choice (f = 2.0 Hz, A = 3.0 cm gives T = 0.50 s, graph B)) compared with content/fi: answer, unit, tolerance, correct flags, choices/statements/order, every number and formula identical; English decimal point used; wording natural.
+- Recomputed independently: answers and all numbers in the task and its solution agree with fi.
+- solutions.md section for fy5-7-L1-09: same structure and numbers as fi; the physics and its conditions unchanged.
+- Option figures pick-a3-t1, pick-a3-t05, pick-a15-t05, pick-a3-t2: en figures.json descriptions match lessons/FY5/fy5-7/figures.py (peaks, periods, first peak times) and the choice-to-figure mapping equals fi.
+- check_i18n.py: no errors for fy5-7; build.py fy5-7 succeeds.

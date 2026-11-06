@@ -109,6 +109,37 @@
    "answer": -9.0,
    "unit": "Nm",
    "tolerance": 0.02
+  },
+  {
+   "id": "fy5-1-L1-09",
+   "level": 1,
+   "text": "Juuttunut mutteri lähtee kiertymään, kun käden voiman momentti mutterin akselin suhteen on $M$. Käsi vetää avaimen vartta otekohdassa, jonka etäisyys mutterin keskeltä on $d$. Voima on kulmassa $\\alpha$ varren jatkeeseen nähden.\n\nMomentin yksikkö on $\\text{Nm}$ ja etäisyyden $\\text{m}$. Kulman sini $\\sin\\alpha$ on pelkkä luku, jolla ei ole yksikköä.\n\nMinkä lausekkeen yksikkö on newton ($\\text{N}$) eli mikä lauseke voi antaa pienimmän voiman $F$, jolla mutteri lähtee kiertymään?",
+   "kind": [
+    "concept",
+    "reasoning"
+   ],
+   "answer": "$\\dfrac{M}{d\\sin\\alpha}$",
+   "unit": "",
+   "tolerance": 0.02,
+   "choices": [
+    {
+     "text": "$M d\\sin\\alpha$",
+     "feedback": "Lausekkeen yksikkö on $\\text{Nm}\\cdot\\text{m} = \\text{N}\\cdot\\text{m}^2$, ei newton. Lauseke väittäisi, että pidempi avain vaatii suuremman voiman. Pidempi varsi antaa kuitenkin saman momentin pienemmällä voimalla, koska $M = Fr$."
+    },
+    {
+     "text": "$\\dfrac{M}{d\\sin\\alpha}$",
+     "correct": true,
+     "feedback": "Oikein: $\\tfrac{\\text{Nm}}{\\text{m}} = \\text{N}$. Lauseke saadaan momentin kaavasta $M = F d\\sin\\alpha$ ratkaisemalla voima."
+    },
+    {
+     "text": "$M\\sin\\alpha$",
+     "feedback": "Lausekkeen yksikkö on $\\text{Nm}$ eli momentin yksikkö, ei newton. Tässä momentti on sekoitettu voimaan: momentti on voiman ja varren tulo, joten voima saadaan vasta jakamalla momentti varrella."
+    },
+    {
+     "text": "$\\dfrac{d\\sin\\alpha}{M}$",
+     "feedback": "Lausekkeen yksikkö on $\\tfrac{\\text{m}}{\\text{Nm}} = \\tfrac{1}{\\text{N}}$, ei newton. Jakolasku on käännetty väärin päin: kaavasta $M = Fr$ ratkaistuna voima on momentti jaettuna varrella."
+    }
+   ]
   }
  ],
  "level2": [

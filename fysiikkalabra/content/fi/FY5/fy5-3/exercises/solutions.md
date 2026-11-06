@@ -143,6 +143,25 @@
 **Vastaus:** $0{,}21\,\text{mm/s}$, kaksi merkitsevää numeroa kuten säteessä $12\,\text{cm}$ ja kierrosajassa $1{,}0\,\text{h}$.
 **Järkevyys:** Kärki kulkee tunnissa kehän, noin $754\,\text{mm}$. Tasaisella vauhdilla $0{,}21\,\text{mm/s}$ tunnissa kuljettu matka on $0{,}2094\,\text{mm/s} \cdot 3600\,\text{s} = 754\,\text{mm}$, sama kuin kehä. Viisari liikkuu niin hitaasti, ettei sen liikettä huomaa silmällä.
 
+## fy5-3-L1-09
+**Kysytty:** miten lapsen ratanopeus $v$ muuttuu, kun säde kasvaa $1{,}2\,\text{m}$:stä $2{,}4\,\text{m}$:iin ja pyörimistaajuus pienenee $16\,\tfrac{1}{\text{min}}$:sta $8{,}0\,\tfrac{1}{\text{min}}$:iin.
+**Periaate:** Lapsi on kummassakin tilanteessa tasaisessa ympyräliikkeessä, ja ratanopeus on $v = 2\pi r f$. Ratanopeus on siis suoraan verrannollinen sekä säteeseen että pyörimistaajuuteen, ja molempien muutokset on otettava huomioon. Suhdetta laskettaessa pyörimistaajuutta ei tarvitse muuntaa yksikköön $\tfrac{1}{\text{s}}$, koska muunnoskerroin supistuu.
+**Mallivastaus:** Säde kaksinkertaistuu:
+
+$\dfrac{r_2}{r_1} = \dfrac{2{,}4\,\text{m}}{1{,}2\,\text{m}} = 2{,}0$
+
+Pyörimistaajuus puolittuu:
+
+$\dfrac{f_2}{f_1} = \dfrac{8{,}0\,\tfrac{1}{\text{min}}}{16\,\tfrac{1}{\text{min}}} = 0{,}50$
+
+Ratanopeuksien suhde:
+
+$\dfrac{v_2}{v_1} = \dfrac{2\pi r_2 f_2}{2\pi r_1 f_1}$
+
+$\dfrac{v_2}{v_1} = 2{,}0 \cdot 0{,}50$, eli $\dfrac{v_2}{v_1} = 1{,}0$
+
+Ratanopeus pysyy samana. Tarkistus: alussa $f_1 = \tfrac{16}{60\,\text{s}} \approx 0{,}267\,\tfrac{1}{\text{s}}$ ja $v_1 = 2\pi \cdot 1{,}2\,\text{m} \cdot 0{,}267\,\tfrac{1}{\text{s}} \approx 2{,}0\,\text{m/s}$. Lopussa $f_2 = \tfrac{8{,}0}{60\,\text{s}} \approx 0{,}133\,\tfrac{1}{\text{s}}$ ja $v_2 = 2\pi \cdot 2{,}4\,\text{m} \cdot 0{,}133\,\tfrac{1}{\text{s}} \approx 2{,}0\,\text{m/s}$. Pelkkä säteen kasvu kaksinkertaistaisi ratanopeuden, ja pelkkä hidastuminen puolittaisi sen. Kierrosaika kaksinkertaistuu, mutta ratanopeus on verrannollinen pyörimistaajuuteen eikä kierrosaikaan.
+
 ## fy5-3-L2-05
 **Annettu:** kymmenen kierroksen ajat $t_{10}$: $41{,}2\,\text{s}$, $40{,}6\,\text{s}$, $41{,}8\,\text{s}$, $40{,}9\,\text{s}$ ja $41{,}5\,\text{s}$; istuimen etäisyys akselista $r = 2{,}1\,\text{m}$
 **Kysytty:** kierrosaika $T$ ja istuimen ratanopeus $v$; vastauslaatikkoon $v$ yksikössä $\text{m/s}$

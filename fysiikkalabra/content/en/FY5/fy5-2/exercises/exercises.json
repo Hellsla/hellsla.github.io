@@ -213,6 +213,41 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy5-2-L2-08",
+      "level": 2,
+      "text": "A uniform plank of length $3.0\\,\\text{m}$ and weight $160\\,\\text{N}$ rests horizontally on two supports. Support A is at the left end of the plank and support B is $2.0\\,\\text{m}$ from the left end. At the right end of the plank there is a paint can whose weight is $40\\,\\text{N}$. The supports push the plank vertically upwards. A student calculates the support forces $N_\\text{A}$ and $N_\\text{B}$, taking an anticlockwise moment as positive.\n\nLine 1: support A is chosen as the reference point, so the unknown $N_\\text{A}$ does not appear in the moment condition.\n\nLine 2: the lever arms about A are $r_\\text{B} = 2.0\\,\\text{m}$, for the weight of the plank $r_G = 1.5\\,\\text{m}$ and for the weight of the can $r_\\text{p} = 1.0\\,\\text{m}$.\n\nLine 3: from the moment condition $N_\\text{B} r_\\text{B} = G r_G + G_\\text{p} r_\\text{p}$ we get $N_\\text{B} \\cdot 2.0\\,\\text{m} = 280\\,\\text{Nm}$, that is, $N_\\text{B} = 140\\,\\text{N}$.\n\nLine 4: from the sum of the forces $N_\\text{A} = G + G_\\text{p} - N_\\text{B}$, that is, $N_\\text{A} = 60\\,\\text{N}$.\n\nCheck the calculation line by line. Choose the wrong line, or the last option if the calculation has no error.",
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "answer": "Line 2: lever arms of the forces",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Line 1: choice of reference point",
+          "feedback": "Line 1 is correct: the moment condition holds about any point, and the point where an unknown force acts is a good choice. If you think the line is wrong, you may believe that moments must be calculated about the centre of mass."
+        },
+        {
+          "text": "Line 2: lever arms of the forces",
+          "correct": true,
+          "feedback": "Correct, this line is wrong: the can is at the right end of the plank, $3.0\\,\\text{m}$ from support A, so the lever arm of its weight about A is $r_\\text{p} = 3.0\\,\\text{m}$. The correct values are $N_\\text{B} = 180\\,\\text{N}$ and $N_\\text{A} = 20\\,\\text{N}$."
+        },
+        {
+          "text": "Line 3: calculating the support force $N_\\text{B}$",
+          "feedback": "Line 3 is correct with the lever arms of line 2: $160\\,\\text{N} \\cdot 1.5\\,\\text{m} = 240\\,\\text{Nm}$ and $40\\,\\text{N} \\cdot 1.0\\,\\text{m} = 40\\,\\text{Nm}$, altogether $280\\,\\text{Nm}$. If you think the line is wrong, you may think that each support carries half of the weights, that is, $100\\,\\text{N}$."
+        },
+        {
+          "text": "Line 4: calculating the support force $N_\\text{A}$",
+          "feedback": "Line 4 is correct with the result of line 3: the sum of the support forces equals the sum of the weights, $200\\,\\text{N}$. If you think the line is wrong, you may think that the weight of the can is left out of the sum of the forces because the can is outside support B."
+        },
+        {
+          "text": "The calculation has no error",
+          "feedback": "The calculation has an error on line 2: the lever arm of the weight of the can has been measured from support B, although the reference point is A. The lever arms of all forces are measured about the same chosen point, so the lever arm of the can is $3.0\\,\\text{m}$."
+        }
+      ]
     }
   ],
   "level3": [

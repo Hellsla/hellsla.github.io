@@ -1,13 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: ca55abf18de305a6
+CONTENT-HASH: 23f25874b515562a
 
 ## Blocking
 (none)
 
 ## Polish
-- fy5-1-L3-04 text: the added sentence "ovat yhtä suuret (ja vastakkaissuuntaiset)" is correct but the parenthesis is unneeded for the student; optional.
+- exercises.json:116 — "Minkä lausekkeen yksikkö on newton ($\text{N}$) eli mikä lauseke voi antaa pienimmän voiman $F$…" — "eli" equates two different questions — ask only "Minkä lausekkeen yksikkö on newton?" and keep the context in the preceding sentence.
+- exercises.json:116 — the unit check cannot catch the lesson's own warned mistake (distance $d$ instead of arm $r$); only the "long key adds force" idea is carried (option $M d\sin\alpha$). Acceptable for a dimension task, no change needed.
 
 ## Checked
-- Delta only: L1-07 wording (string along the door edge) and option order (correct answer no longer second); L2-07 Vastaus now "21,6 ≈ 22 Nm" (two s.f. as for 90 N), inside the 2 % tolerance of the stored 21,6.
-- L3-04: the added premise (crank and chainring turn steadily, so the two moments are equal) closes the gap in the model; solution Periaate, trade-off sentence (more torque, less speed) and Järkevyys added; answers 788 N, 70,9 / 47,3 / 31,5 Nm unchanged and correct.
-- Both earlier Polish items were taken; nothing else changed. Finnish correct.
+- Text only (no renders). New task fy5-1-L1-09 (type 7, unit/dimension): each wrong option's unit is stated correctly in its feedback (N·m², Nm, 1/N); correct option's feedback gives no reasoning beyond Nm/m = N.
+- Correct option not identifiable by form: the two fractions are mirror images, lengths similar; no hedging.
+- Within the lesson ($M=Fr$, $r=d\sin\alpha$); L1 level fits.
+- Solution (Kysytty/Periaate/Mallivastaus) follows step by step; no formula chain over about 300 px at 390 px.
+- Finnish and compound words fine.

@@ -114,6 +114,41 @@
           "feedback": "The period is the duration of one oscillation, not the total of all of them. When more oscillations fit into a second, each of them must be shorter."
         }
       ]
+    },
+    {
+      "id": "fy5-7-L1-09",
+      "level": 1,
+      "text": "A weight oscillates sinusoidally on a spring. The frequency of the oscillation is $2.0\\,\\text{Hz}$ and the amplitude $3.0\\,\\text{cm}$.\n\nTiming is started when the weight passes the equilibrium position going up, and up is the positive direction.\n\nWhich of the graphs shows the displacement $x$ of the weight as a function of time $t$?",
+      "kind": [
+        "graph",
+        "concept"
+      ],
+      "answer": "Graph B",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Graph A",
+          "figure": "fy5-7/pick-a3-t1",
+          "feedback": "Here the period $0.50\\,\\text{s}$ has been drawn as the interval between two successive passes through the equilibrium position. Between the passes the weight moves in opposite directions, so the interval is only half of the period, and the period of the graph is $1.0\\,\\text{s}$."
+        },
+        {
+          "text": "Graph B",
+          "figure": "fy5-7/pick-a3-t05",
+          "correct": true,
+          "feedback": "Correct: the period is $T = \\tfrac{1}{f} = 0.50\\,\\text{s}$, so successive peaks are $0.50\\,\\text{s}$ apart, and the peaks are $3.0\\,\\text{cm}$ above the equilibrium position."
+        },
+        {
+          "text": "Graph C",
+          "figure": "fy5-7/pick-a15-t05",
+          "feedback": "The period is correct, but the amplitude $3.0\\,\\text{cm}$ has been drawn as the distance between the trough and the peak. The amplitude is measured from the equilibrium position to the peak, so the peaks must be at $3.0\\,\\text{cm}$."
+        },
+        {
+          "text": "Graph D",
+          "figure": "fy5-7/pick-a3-t2",
+          "feedback": "Here the numerical value of the frequency has been taken as the period, $T = 2.0\\,\\text{s}$. The frequency is the reciprocal of the period: two oscillations per second means that one oscillation lasts $0.50\\,\\text{s}$."
+        }
+      ]
     }
   ],
   "level2": [

@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: f3f7dd18087405bc
+CONTENT-HASH: 6c4ba64811929dcc
 
 ## Blocking
 (none)
-Round-1 Blocking resolved: the old fy5-14-L3-05 (sound-speed slope with a constant delay, overlapping fy5-11-L2-05 and fy5-10-L2-07) is replaced by a string-timbre task (FFT of a string plucked at the middle and near the bridge). It has no counterpart in fy5-10..13 (grep: no other plucking-position task).
 
 ## Polish
-- [Minor] fy5-14-L3-05 vs fy5-14-L2-06 — both read f_1 from a spectrum and ask which sound is brighter; L3-05 adds the missing even harmonics, the node argument and v = 2Lf_1, so it is a level up, but the "brighter and why" part in c) repeats L2-06 b).
-- [Minor] fy5-14-L2-05 — the same method as old L2-04 (car speed from a Doppler frequency); the averaged data differ.
-- [Minor] fy5-14-L3-04 — blood-flow Doppler is not in the lesson; the stem walks through the two steps, so it is solvable.
+- [Minor] fy5-14-L1-09 — the stem still joins two unrelated situations (violin spectrum and car horn); every statement is self-contained, so only a note.
 
 ## Checked
-- New L3-05 checked in full: 196 Hz x (1..6) matches the table; even harmonics of the "Keskeltä" column 0,02 / 0,01 / 0,01 (missing); odd ones 0,11 / 0,04 fall as 1/n^2 (1/9, 1/25); v = 2 * 0,650 m * 196 Hz = 254,8 = 255 m/s; the answer box (255 m/s, 2 % tolerance) matches the solution. The task stays in the chapter scope (harmonic series, FFT, timbre, node at the middle from fy5-13).
-- Other numbers: L1-08 0,167 s; L2-05 430,5 Hz, 30,4 m/s; L2-06 f1 = 262 Hz; L2-07 548 Hz; L3-04 0,475 m/s.
-- Captures opened: contact-8 and L3-1280-5 / -6 at full size: the table has the decimal comma, the chains are aligned, nothing overflows.
-- "model" kind and the table are justified; no figure, so no gridlines.
+- Round 2 after commit 4ff432a8f. Rebuilt with `python scripts/build.py fy5-14`; own script (vr5_newtask_probe.py, scratchpad) re-rendered the new task at 390 px after the page scripts ran, with answer, feedback and solution open: document scrollWidth 390, no clipped element outside a scroll box. Image of the card read (fy5-14, fy5-16 and fy5-17 renders re-made; fy5-17 re-read, the other two checked by measurement and by the diff text).
+- From text only: the round-2 diff, option and reason lengths.
+- "Voimakkain piikki" is now the term in the stem, statement 1 feedback and the solution, consistent with the sävelkorkeus/sointiväri wording; statements 2 and 4 read as full clauses; no overflow.
+- Delta only: the changed task and solution; no figure.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations n/a (no figure) · typography 4 · Finnish 5 · accessibility 5
