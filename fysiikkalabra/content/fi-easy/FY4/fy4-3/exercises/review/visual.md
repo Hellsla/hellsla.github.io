@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 6d157e2383c3163e
-Round: 3
+CONTENT-HASH: a6653535edaed64f
+Round: 1
 
 ## Blocking
 
 ## Polish
-- [Minor] L3-04 horse figure — the F_h label sits just over the hatching beside the contact surface; legible, optional nudge.
-- [Minor] No 360 px capture of the exercise bodies exists; phone view rests on the layout checks.
+- [Minor] fy4-3-L2-08 — the indices K and H are never defined; for S2 students add once "K on kuorma-auto, H on henkilöauto" or write the indices upright; the words of the situation make them guessable.
+- [Minor] the page is long on a phone (about 4000 px with everything open); nothing clipped.
 
 ## Checked
-- Opened the regenerated L3-04 captures at 1280 px (fi-easy): both figures fit their frame, every arrowhead is visible, arrows in house red, labels KaTeX with overlines, no overlap between bodies and arrows.
-- fi-easy labels match the text (F_r, F_k/F_dc, F_h/F_dh, T, F_t/F_road); no leftover Finnish symbol in en.
-- L1-08 wording change: no layout effect.
+- Opened fi-easy-fy4-3-L2-08 at 390 px with feedback and solution open (four parts).
+- Choices, reasons, feedback, Kysytty/Periaate/Mallivastaus: short sentences, one idea each, glossary terms (vuorovaikutus, voima, vastavoima) consistent; decimal comma, units in LaTeX, widest chain 129 px, scrollWidth 390.
+- No Finnish/English mismatch; physics identical to the en task.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 (no figure) · typography 4 · Finnish 5 · accessibility 4

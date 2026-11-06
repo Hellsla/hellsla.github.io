@@ -1,17 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: ca15fc6e4d36dac3
+VERDICT: PASS
+CONTENT-HASH: 3a2e90bccdbd2345
 
 ## Blocking
-- solutions.md:176 (L2-08) — "Rypistyvä keula ja turvatyyny pidentävät aikaa enemmän kuin nopeus kasvattaa liikemäärän muutosta" is stated as a general fact in a traffic-safety chapter, and it implies that higher speed is offset in a modern car. It holds only for these example values. In one car with about the same crash time, doubling the speed doubles F_ka. (Guardrails: safety statements exact; this is a type B finding, a missing condition.) Fix: "Näissä esimerkkikokeissa pysähtymisaika pitenee enemmän kuin liikemäärän muutos kasvaa. Samassa autossa kaksinkertainen nopeus kaksinkertaistaa keskimääräisen voiman, jos pysähtymisaika pysyy samana."
 
 ## Polish
-- exercises.json:249 (L2-08) — test A, a belted dummy stopped in 0,030 s from 25 km/h, means a ride-down distance of only 0,10 m and about 24 g, and F ≈ 17 kN for 75 kg. That is more than the lesson's belted 10 kN at 50 km/h, and less than a belt stretches. You could give A at least 0,05 s and rebuild the options, or say that A's dummy hits a rigid steering wheel.
+- exercises.json:249 (L2-08) — test A's 0,030 s for a belted dummy is short: it gives 0,10 m of ride-down and about 17 kN at 25 km/h. This may stay. The values are labelled esimerkkiarvot, the answer depends only on the ratio, and a realistic A (≥ 0,05 s) with B four times longer would push B to an unrealistic 0,2 s. If the text is touched again, "vanha auto ilman turvatyynyä" makes the short time plausible without changing any number.
+- solutions.md:176 (L2-08) — "törmäyksen keskimääräinen voima [riippuu] nopeudesta suoraan" holds at the same stopping time. The sentence before states that condition, so this is clear in context; "samalla pysähtymisajalla" would make the sentence stand alone.
 
 ## Checked
-- New task L2-08 (Ennuste muutoksesta), recomputed: F_B/F_A = (50/25)/(0,12/0,030) = 2/4 = 0,50, and with 75 kg the forces are 17,4 kN and 8,7 kN, as in the solution.
-- Each distractor follows from its stated error: ×8 (multiplied by the time ratio), ×2 (speed only), unchanged (v² as for braking, 4/4) and ¼ (same Δp, the lesson's belt misconception).
-- B: 0,12 s at 50 km/h (0,83 m, about 12 g) is consistent with the existing task at exercises.json:138 (0,100 s) and with the lesson.
-- F_ka = mΔv/Δt with Δv a magnitude matches the brief. The mass is not needed, and the solution says so.
-- The correct option can't be picked out by form: five short statements of the same pattern. The correct feedback is a one-line ratio.
-- solutions.md:163–176 complete (Kysytty · Periaate · Mallivastaus). I checked the inline formulas from the text only, with no render; each is under about 200 px.
-- answers.py comment agrees; the rest of the set is unchanged since the PASS. Hash is the same at the start and at the end.
+- Round 2: the round-1 blocker is resolved. solutions.md:176 now limits the comparison to "näissä esimerkkikokeissa" and adds the same-car rule (doubling the speed doubles F_ka when Δt stays the same). Both are correct and match the lesson's F_ka = mΔv/Δt.
+- "muuttuu kertoimella 2 : 4 = 0,50" (exercises.json, the correct feedback; solutions.md:174) is correct and doesn't reveal a reason.
+- The commit diff touches only those two strings in this chapter. The numbers and options are unchanged, and the round-1 recomputation still holds: the ratio is 0,50, with 17,4 kN and 8,7 kN for 75 kg.
+- The distractors (×8, ×2, unchanged, ¼) still each follow from their stated error. They catch the chapter's warned mistakes (v² as in braking; the belt changing Δp).
+- B (50 km/h, 0,12 s) is consistent with the existing task at exercises.json:138 (0,100 s) and with the lesson.
+- Exactly one option is correct, and none can be picked out by form. I checked from the text only; I did no render.
+- Hash 3a2e90bccdbd2345 is the same at the start and at the end (packet regenerated, mode full).

@@ -1,18 +1,18 @@
-VERDICT: FAIL
-CONTENT-HASH: ffcdfb1fd3bb1799
+VERDICT: PASS
+CONTENT-HASH: 2c3869fa773cda9b
 
 ## Blocking
-- [Major] fy4-16 solutions.md L2-08 Mallivastaus — "joten epävarmuusvälit ovat selvästi erillään, joten lähtökorkeusvaikuttaa matkaan" — the words "lähtökorkeus vaikuttaa" are run together (visible in the rendered solution, 390 px) and "joten … joten" is stacked — a spelling error in new text in a reviewed solution — write "…ovat selvästi erillään, ja siksi lähtökorkeus vaikuttaa matkaan."
+(none)
 
 ## Polish
-- [Minor] fy4-16-L2-08 table — numeric headers left-aligned and the table narrower than the card; optional.
-- [Minor] fy4-16-L2-08 solution — the 2Δx rule is stated in Periaate; the question text could say "epävarmuusvälit x ± Δx" once so the 2Δx in the feedback is not new to the student.
-- [Minor] fy4-16-L2-08 option 3, "Massa ei vaikuta matkaan, koska … eroavat vain 0,7 m" — now reads as a plausible mistake, good; the feedback "alle 2 m:n vaikutus" is correct.
+- [Minor] fy4-16-L2-08 table — numeric headers left-aligned and the table narrower than the card at 390 px; optional.
+- [Minor] fy4-16-L2-08 — the question could name the interval rule once ("epävarmuusvälit x ± Δx") before the feedback uses 2Δx; the Periaate states it.
+- [Minor] voimakuvio L3-04 (open-exercises-L3-1280-7) — the two panels use different arrow scales (G against friction) without a caption; add "voimat eri mittakaavassa" as in L2-06 (carried from round 1).
 
 ## Checked
-- Round 2, delta. Rendered 16-16 (L2-08) at 390 px with feedback of all options and the solution open (own script); overflow measured: page 390 px, no clipped element, no chain wider than 286 px.
-- The tone cue is fixed (options 3 and 4 no longer carry "lainkaan"/"varmasti"); the 2Δx comparison is consistent in options, feedback and solution (0,7 m < 2,0 m, 20,6 and 19,2 m >> 2,0 m); the question text now says "pelkän taulukon perusteella".
-- Text only: the rest of solutions.md.
+- Round 3. Packet is full mode only because of the visual baseline; captures retaken for this hash. Contact sheets 5 and 6 (levels 2 and 3, all tasks 16-6…16-20) and open-exercises-L3-1280-7 and L2-1280-14 opened at readable size: voimakuvio colours (force red, acceleration orange, velocity blue), labels in LaTeX, N perpendicular, dashed components are consistent; tables and chains fit.
+- 390 px render of 16-16 (L2-08) with feedback and solution open (own script): "…erillään, ja siksi lähtökorkeus vaikuttaa matkaan" is fixed; page 390 px, no clipped element, no chain wider than 286 px; the 2Δx comparison is consistent in options, feedback and solution.
+- Rest of the set unchanged since my earlier PASS reports; figures not individually re-opened beyond the two above.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 3 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

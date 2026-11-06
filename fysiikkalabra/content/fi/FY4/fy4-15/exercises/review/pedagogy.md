@@ -1,14 +1,14 @@
-VERDICT: FAIL
-CONTENT-HASH: c3ae02f2b8a43d34
+VERDICT: PASS
+CONTENT-HASH: 6aace4bb9c76d591
 
 ## Blocking
-- solutions.md fy4-15-L2-08, paragraph after the aligned block — "Verrannollisuudessa v unohtuvat molemmat ... tekijät, ... neliössä v² vain sekunnissa virtaavan ilman massan kasvu" is wrong and contradicts the option feedback. Tekijät are ½v² per kilogram and the mass flow ∝ v. P ∝ v keeps only the mass flow (the v² of the energy is forgotten); P ∝ v² keeps only the energy per kilogram (the mass flow is forgotten), as the 0,2 MW feedback says. Fix: "Verrannollisuudessa v unohtuu ilmakilogramman liike-energian ½v² nopeusriippuvuus, neliössä v² sekunnissa virtaavan ilman massan kasvu."
 
 ## Polish
-- Same scenario and chain as the worked example (round 1 note, unchanged).
+- Correct option's feedback is the shortest (165 vs 203–323 characters); mild, add one sentence of method if wanted.
+- Same scenario and chain as the worked example (unchanged note).
 
 ## Checked
-- Round 2, text only; no render, widths not measured. Solution split into short lines, longest about 230 px estimated.
-- Option 1 feedback now reads right ("lukuarvo 10³ on 100 kertaa 10"); 20 kW, 0,2 MW, 90 MW, 1,96 MW recomputed and consistent.
-- Options 14–18 characters, correct not marked; warned "double wind, double power" mistake covered.
-- Hash at start c3ae02f2b8a43d34, at end c3ae02f2b8a43d34.
+- Round 3, text only; no render, widths not measured.
+- Solution paragraph and both feedbacks now agree: v² keeps only energy per kilogram (mass flow forgotten), v keeps only the mass flow; P = η·½v²·ρAv written out, which makes the argument followable. 20 kW, 0,2 MW, 90 MW (47 x) and 1,96 MW recomputed.
+- Options 14–18 characters, correct not marked; warned doubling-wind mistake covered; lesson example 2,3 MW cross-check right.
+- Hash at start 6aace4bb9c76d591, at end 6aace4bb9c76d591.
