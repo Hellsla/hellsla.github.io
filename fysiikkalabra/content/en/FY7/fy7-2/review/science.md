@@ -1,7 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: ca6809a1c3c3421d
+CONTENT-HASH: 6b3c59a45cd6a20e
 
-Follow-up review of the fix commit 2c31ff041 (delta from 01ef6bfd64671ffb, whose full review is kept below). Change: inquiry.json:141, simulation `calc` box.
+Delta re-review. Only figures.json gained four entries (descriptions of the exercise option figures `fy7-2/pick-*`, force diagram of the electron, field into the page); lesson.md, inquiry.json and exit-ticket.json are unchanged since the earlier PASS.
 
 ## Blocking
 
@@ -12,9 +12,8 @@ None.
 - Inquiry items writing $qvB$, $qU$, $r = mv : (qB)$ concern positive particles only (correct, $q = |q|$); a note in the reflect prompt would match the lesson. Glossary entries still read $qvB\sin\alpha$, $mv/(qB)$.
 
 ## Checked
-- Earlier blocking item resolved: "the magnetic force, whose magnitude is $|q|vB$" and "The forces $F_\text{m} = |q|vB$ and $F_\text{s} = |q|E$ in the readings"; the electric force stays the signed vector $q\overline{E}$. Correct for the negative hydrogen ion and matches sim.js (`Math.abs(P.q)`).
-- Consistency: grep of plain $qvB$/$qE$/$qU$ — lesson.md uses them only in the worked example ("$|q| = q$" for Ne⁺); no inquiry item with plain $q$ involves a negative particle.
-- lesson.md notation: $\overline{F}_\text{s} = q\overline{E}$ signed, $F_\text{s} = |q|E$, $|q|U = \tfrac12 mv^2$, $F_\text{m} = |q|vB\sin\alpha$, $r = mv/(|q|B)$, selector, $m = |q|B_2r/v$; Summary, exit ticket and contribution agree.
-- Recomputed: proton $3.2 \cdot 10^{-14}\,\text{N}$, $5.2\,\text{cm}$, weight ratio $2 \cdot 10^{12}$; graph $10.4$/$20.9\,\text{cm}$; example $3.00 \cdot 10^5\,\text{m/s}$, $20.01\,\text{u}$, Ne-22 $27.4\,\text{cm}$; LHC $1.09 \cdot 10^{-6}\,\text{J}$; retrieval $4.38 \to 8.75 \cdot 10^5\,\text{m/s}$; koe-2 $24$/$48\,\text{fN}$; error item $4.57 \to 6.46\,\text{cm}$; transfer $0.225\,\text{T}$ (mistakes 0.159, 0.00712); check 3 $6.22\,\text{cm}$; exit $3.0 \cdot 10^5\,\text{m/s}$. All agree with lesson-answers.py.
-- Directions in figures and check 2 agree with $\overline{F} = q\overline{v} \times \overline{B}$; one correct option each; experiments lock all but the varied parameter; sim.js Boris integration, non-relativistic.
-- Hash at start and end: ca6809a1c3c3421d.
+- Diff read: the 18 earlier figures.json entries are byte-identical; the four new keys are used only by exercises/exercises.json (grep: no `pick-` in lesson.md, inquiry.json or exit-ticket.json), so the lesson's text and figures are unaffected.
+- Rendered the lesson (en, `screenshot.py fy7-2 --lang en --if-stale`): the formula diagrams (force on positive/negative particle, circular path with tangent velocity and central force, r(v) graph 10.4/20.9 cm, mass spectrometer with selector, direction-of-force check) show the same physics as before and as the descriptions say; the three photos are unchanged.
+- Earlier recomputations (proton 3.2e-14 N, 5.2 cm, example 3.00e5 m/s, 20.0 u, Ne-22 27.4 cm, koe-2 24/48 fN, transfer 0.225 T, exit 3.0e5 m/s) carry over: no number or symbol changed.
+- The new exercise descriptions themselves belong to the exercise-set review, not to this lesson review.
+- Hash at start and end: 6b3c59a45cd6a20e.

@@ -181,7 +181,7 @@
 
 1 false: a new north pole forms at the cut. The long piece still has both a north pole and a south pole, and the short piece becomes another complete magnet.
 
-2 false: beside the side the field lines run along the magnet from the $\text{N}$ end to the $\text{S}$ end. There the field of the magnet is much stronger than the field of the Earth, so the needle turns along it and its north end points towards the $\text{S}$ end.
+2 false: next to the side the field lines run along the magnet from the $\text{N}$ end to the $\text{S}$ end. There the field of the magnet is much stronger than the field of the Earth, so the needle turns along it and its north end points towards the $\text{S}$ end.
 
 3 true: outside the lines go from $\text{N}$ to $\text{S}$ and inside from $\text{S}$ to $\text{N}$, so every line closes on itself. This fits the fact that there are no single poles.
 

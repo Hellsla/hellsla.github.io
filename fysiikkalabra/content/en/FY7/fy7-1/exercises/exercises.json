@@ -131,9 +131,9 @@
           "feedback": "False: the poles of a magnet always occur in pairs. A new north pole forms at the cut, so the long piece still has both $\\text{N}$ and $\\text{S}$, and so does the short piece."
         },
         {
-          "text": "Beside the side of the magnet, at its middle, the north end of a compass needle points towards the $\\text{N}$ end of the magnet.",
+          "text": "Next to the side of the magnet, at its middle, the north end of a compass needle points towards the $\\text{N}$ end of the magnet.",
           "true": false,
-          "feedback": "False: outside the magnet the field lines go from the north pole to the south pole. Beside the side the field therefore points towards the $\\text{S}$ end, and the north end of the needle turns in the direction of the field."
+          "feedback": "False: outside the magnet the field lines go from the north pole to the south pole. Next to the side the field therefore points towards the $\\text{S}$ end, and the north end of the needle turns in the direction of the field."
         },
         {
           "text": "Inside the magnet the field lines go from the south pole to the north pole, so every field line is a closed loop.",

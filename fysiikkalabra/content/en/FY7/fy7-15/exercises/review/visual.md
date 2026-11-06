@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: cde76ff1bfd14f4a
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 5242af01a6e55574
+Mode: delta (new task fy7-15-L1-09 and its solution), round 1
 
 ## Blocking
 (none)
 
-## Fixed
-(none needed)
-
 ## Polish
-- The review screenshots in content/en/FY7/fy7-15/review/shots/ show an earlier ordering of the tasks, so the L3 captures do not all show the new tasks; text and maths were checked from the source instead.
+(none)
 
 ## Checked
-- Captures opened: open-exercises-1280-7 (L1-07 with solution) and L2/L3 captures (L2-06, L2-07 and L3 reasonableness): formulas, units (W/m2 upright), decimal point and substitution chains render cleanly; nothing clipped.
-- Data tables of L2-05, L2-06 and L3-04 have the same cells as fi; headers carry the quantities and units; captions say example data.
-- No Finnish visible in the English page; no plain-text quantities in either language.
+- Rebuilt and captured fy7-15 (en); opened fy7-15-open-exercises captures at 1280 px (last parts of the level) showing fy7-15-L1-09 with its task text, options or input, feedback, answer and opened solution.
+- Layout survived: no clipping or horizontal overflow, options are whole rows, solution blocks (Find, Principle, Model answer) read in order, display equations aligned and broken at meaningful steps.
+- Maths: KaTeX renders, numbers with upright units and thin space, \cdot, colon for division, SI units upright; no Finnish left in the new task.
+- No figures in the new task; the lesson page and other tasks are unchanged (delta).
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: ca6809a1c3c3421d
+CONTENT-HASH: 6b3c59a45cd6a20e
 
 ## Blocking
 (none)
@@ -9,9 +9,9 @@ CONTENT-HASH: ca6809a1c3c3421d
 - [Minor] whole page (pre-existing, outside this delta) — other inline formulas still break at 390 px, e.g. `q = e = 1.602 \cdot 10^{-19}\,\text{C}` (worked example, Transfer; also at 1280 px), `v = E : B = 1.0 \cdot 10^{6}\,\text{m/s}`; templates/lesson.html glues only pieces of at most 14 characters, so a longer formula can break (teacher's rule: never) — brace each as one group `${...}$`, as done in fy7-2 L1-02, or show it as a display row.
 
 ## Checked
-- delta review of 2c31ff041: Laskennan selitys box: $|q|vB$, $F_\text{m} = |q|vB$, $F_\text{s} = |q|E$; diff read. `screenshot.py fy7-2 --lang en --if-stale` (fresh captures).
-- Own 390 px element captures of each changed block opened (scratchpad caps/en-fy7-2-*-390.png): text wraps cleanly, KaTeX renders, no clipping, no horizontal scroll. Measured every inline .katex (getClientRects().length) at 360, 390 and 1280 px, all boxes open and all feedback shown, after `build.py fy7-2`: no formula in a changed passage breaks onto two lines.
-- Earlier: batch delta review: opened theory-1280-1..4, example-390-1..2 and open-exit-1280 (new |q| display blocks, inline formulas, summary bullets, exit-ticket answer and the example Given line render in KaTeX; no inline formula wraps onto two lines; no overflow); diffs of lesson.md, inquiry.json, exit-ticket.json read.
+- Delta re-review: the diff only adds figures.json descriptions for the exercise option figures `pick-*`; the 18 existing entries are unchanged and no lesson figure uses the new keys.
+- Fresh captures (`screenshot.py fy7-2 --lang en --if-stale`, 94 captures): opened fig-18-390 / fig-12-390 / fig-7-390 / fig-10-390 (lesson diagrams, graph, spectrometer): render cleanly, labels legible, descriptions still match what is drawn, no clipping or horizontal scroll.
+- Earlier Minor items below the Polish heading still hold (pre-existing, outside this delta).
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 5 · accessibility 4

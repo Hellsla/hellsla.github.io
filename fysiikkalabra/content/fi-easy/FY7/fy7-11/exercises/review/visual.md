@@ -1,20 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 1e20d2a076721b94
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 3725efef3cd38e4b
+Mode: delta (new task fy7-11-L1-09 and its solution), round 1
 
 ## Blocking
 (none)
-
-## Fixed
-(none needed: the plain Finnish already matched fi in every number and was clear)
 
 ## Polish
 (none)
 
 ## Checked
-- Reviewed the exercise captures of the new tasks (open-exercises L1, L2, L3 shots): choices, feedback boxes, data tables and solution blocks render without overflow.
-- Maths set as LaTeX in every number and unit; en uses the decimal point and fi-easy the decimal comma ({,}) in maths, as in fi; table cells keep the fi form.
-- Subscripts: en uses r (red), fi-easy keeps p (punainen) like fi; consistent through text, tables and solutions.
-- Table headers and captions translated; no stray Finnish in en, no English in fi-easy.
-- Display blocks in solutions are the same as fi (formula parity checked by check_i18n).
+- Rebuilt and captured fy7-11 (fi-easy); opened fy7-11-open-exercises captures at 1280 px (last parts of the level) showing fy7-11-L1-09 with its task text, options or input, feedback, answer and opened solution.
+- Layout survived: no clipping or horizontal overflow, options are whole rows, solution blocks (Find, Principle, Model answer) read in order, display equations aligned and broken at meaningful steps.
+- Maths: KaTeX renders, numbers with upright units and thin space, \cdot, colon for division, SI units upright; natural Finnish, decimal comma, glossary terms consistent.
+- No figures in the new task; the lesson page and other tasks are unchanged (delta).
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

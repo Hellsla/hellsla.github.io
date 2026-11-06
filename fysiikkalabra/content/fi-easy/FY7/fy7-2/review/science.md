@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 95e436a1b8ea1958
+CONTENT-HASH: 36f1e76b61ba6c02
 
-Follow-up review of the fix commit 2c31ff041 (delta from ef39ca99fa2409f7). Change: inquiry.json:141, sim `calc` box (Laskennan selitys).
+Delta re-review. Only figures.json gained four entries (descriptions of the exercise option figures `fy7-2/pick-*`, force diagram of the electron, field into the page); lesson.md, inquiry.json and exit-ticket.json are unchanged since the earlier PASS.
 
 ## Blocking
+
+None.
 
 ## Polish
 - lesson.md:275 — "Säde on kääntäen verrannollinen varaukseen ja kenttään" → "varauksen suuruuteen $|q|$ ja kenttään", to match $r = mv/(|q|B)$.
 - inquiry.json `pohdi`, `tarkistus-4`, `siirto` keep $r = mv:(qB)$ and $qvB$ for positive ions only (correct); "(positiivinen ioni, $|q| = q$)" would match the lesson's convention.
 
 ## Checked
-- Earlier blocking item resolved: "Magneettisen voiman suuruus on $|q|vB$" and "Lukemien voimat $F_\text{m} = |q|vB$ ja $F_\text{s} = |q|E$"; the vector $q\overline{E}$ stays signed. Correct for the negative hydrogen ion; matches sim.js `Math.abs(P.q)`.
-- Consistency: grep of plain $qvB$/$qE$/$qU$ — lesson.md only in the worked example ($|q| = q$ stated); no inquiry item with plain $q$ involves a negative particle.
-- Signed $\overline{F}_\text{s} = q\overline{E}$ vs $F_\text{s} = |q|E$, $E_\text{k} = |q|U$, $F_\text{m} = |q|vB\sin\alpha$, $r = mv/(|q|B)$, selector, spectrometer and summary consistent.
-- Right-hand rule and track-sign check correct.
-- Recomputed: $3{,}2 \cdot 10^{-14}\,\text{N}$, $r = 5{,}2\,\text{cm}$, ratio about $10^{12}$; example $3{,}00 \cdot 10^5\,\text{m/s}$, $20{,}0\,\text{u}$, Ne-22 27,4 cm; electron radius 1840 times smaller; LHC 6,8 TeV = $1{,}1 \cdot 10^{-6}\,\text{J}$.
-- Kertaus $8{,}8 \cdot 10^5\,\text{m/s}$; koe-1 10,4 / 20,9 cm; koe-2 24 / 48 fN; Etsi virhe 6,46 cm; transfer 0,225 T (mistakes 0,159, 0,00712); tarkistus-3 6,2 cm; exit $3{,}0 \cdot 10^5\,\text{m/s}$.
-- Each choice has exactly one correct option; experiments lock all but the varied parameter; captions fair (C).
-- Hash same at start and end.
+- Diff read: the 18 earlier figures.json entries are byte-identical; the four new keys are used only by exercises/exercises.json (grep: no `pick-` in lesson.md, inquiry.json or exit-ticket.json), so the lesson's text and figures are unaffected.
+- Rendered the lesson (fi-easy, `screenshot.py fy7-2 --lang fi-easy --if-stale`): the formula diagrams (force on positive/negative particle, circular path with tangent velocity and central force, r(v) graph 10.4/20.9 cm, mass spectrometer with selector, direction-of-force check) show the same physics as before and as the descriptions say; the three photos are unchanged.
+- Earlier recomputations (proton 3.2e-14 N, 5.2 cm, example 3.00e5 m/s, 20.0 u, Ne-22 27.4 cm, koe-2 24/48 fN, transfer 0.225 T, exit 3.0e5 m/s) carry over: no number or symbol changed.
+- The new exercise descriptions themselves belong to the exercise-set review, not to this lesson review.
+- Hash at start and end: 36f1e76b61ba6c02.

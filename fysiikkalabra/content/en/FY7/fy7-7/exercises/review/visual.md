@@ -1,21 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: faa096de17dcf301
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 4a710ba435aa74c3
 
 ## Blocking
-(none)
-
-## Fixed
-- solutions.md fy7-7-L1-04 Answer — a stray "; the reading ..." clause after the boxed value; now two sentences ("25 Hz. The reading ..."), as fi-easy already had.
 
 ## Polish
-- [Minor] solutions.md L3-04 Substitution — "c = −0.107 V. b)" runs the next part label into the equation line (same in fi); put a) b) c) on separate lines in a later pass.
+- [Minor] fy7-7-L1-09 solution — "Reasonableness:" is run into the "Reading the graph" paragraph; the house layout gives Reasonableness its own block — split it into its own line.
+- [Minor] fy7-7/pick-* options — the cards appear in the order B, A, D, C in the grid; keep A–D order if the shuffle is not intended.
 
 ## Checked
-- fy7-7-open-exercises-L2-1280-8 and L3-1280-5 (en): data tables, units, answer field with unit, boxed result and solution blocks render without clipping at phone width.
-- Fractions and units in the L2-06 and L3-04 solutions are aligned and readable; decimal separator is correct for the language.
-- The L1 and L3 captures open the new tasks with every solution section visible.
+- fy7-7-open-exercises-1280-8 and -9 (en): task 7-9 text (example values, $t = 0$, question), four graph option cards with feedback inside the selected card, answer line, opened solution (Find, Principle, Model answer, Reading the graph).
+- The four graphs share identical axes (t in ms 0–100, e in V -10…10), grid, violet curve and axis titles $e\ (\text{V})$, $t\ (\text{ms})$; peaks (5 V vs 7.1 V) and 2.5 vs 4 periods are visibly distinct and match the described values; labelled as to scale in the aria-labels.
+- Maths: $e_0=U\sqrt{2}$, $T=\dfrac{1}{40\,\text{Hz}}$, upright units; no red KaTeX; no overflow.
+- Not opened: 390 px capture of the option cards (tick labels in the 2-column cards at 1280 are small but legible).
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 (English) · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

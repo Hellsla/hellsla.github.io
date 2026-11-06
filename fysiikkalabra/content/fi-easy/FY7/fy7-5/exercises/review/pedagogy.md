@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 84c105908df6ddd4
+CONTENT-HASH: 8a451579ec92be38
 Mode: full (translation review against the reviewed Finnish set)
-Round 1
+Round 2
 
 ## Blocking
 (none)
 
 ## Fixed
-- content/fi-easy/FY7/fy7-5/exercises/exercises.json — L2-05 — explained the hard word "itseisarvo" in the question ("luvun suuruus ilman plus- tai miinusmerkkiä").
+(none)
 
 ## Polish
 (none)
 
 ## Checked
-- Short sentences, common words; decimal comma in text and LaTeX, decimal point only in JSON data tables as in fi.
-- Tasks, hints, sub-questions a) and b), the note on what the answer box takes, and the solution steps keep the fi order and level.
-- Distractor feedback explains the misconception in each case, as in fi; no feedback gives away or contradicts the correct choice.
-- Terminology is consistent with the lesson and the rest of the set (flux density, induced voltage, turns, sample data).
+- NOTES.md §12: clearer Finnish, short sentences, 'ideaaliseksi eli häviöttömäksi' / 'suuruusluokka' explained, same physics.
+- New task L1-09: prompt, options, feedback and solution (Kysytty/Periaate/Mallivastaus, Reasonableness) keep the fi level, order and staging; feedback repairs the misconception without giving the answer away before the choice.
+- Terminology consistent with the lesson and the rest of the set.
+- Figures (where the task has them): descriptions translated, no answer disclosed beyond fi.

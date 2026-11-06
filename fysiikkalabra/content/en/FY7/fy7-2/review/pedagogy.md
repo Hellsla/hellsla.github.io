@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: ca6809a1c3c3421d
+CONTENT-HASH: 6b3c59a45cd6a20e
 
 ## Blocking
 (none)
@@ -10,4 +10,4 @@ CONTENT-HASH: ca6809a1c3c3421d
 - Figure aria-labels begin "Formula diagram". "Diagram" reads more naturally in English.
 
 ## Checked
-Follow-up delta (2c31ff041): the calc note now writes |q|vB and |q|E, consistent with the lesson, and the signed vector qE is kept. Earlier: the predictions can be refuted, and all values were recomputed.
+Delta re-review: only figures.json gained descriptions for the exercise option figures `pick-*`; the lesson text, inquiry and exit ticket are unchanged and use none of them (grep), so the lesson's flow, load, predictions, feedback and language level are as approved. Earlier checks carry over.

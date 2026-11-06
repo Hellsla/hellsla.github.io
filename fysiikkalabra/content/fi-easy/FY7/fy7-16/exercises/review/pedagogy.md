@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 04ccd2767440e5a9
+CONTENT-HASH: 186e0da2b094809b
 Mode: full (translation review against the reviewed Finnish set)
-Round 1
+Round 2
 
 ## Blocking
 (none)
-
-## Fixed
-- L2-05 and L3-04 texts: "lineaarinen interpolointi" now explained in plain words in the task text itself ("laskea arvo kahden mittauspisteen väliltä suoran avulla"); numbers and answers unchanged.
 
 ## Polish
 (none)
 
 ## Checked
-- Levels, kinds (concept, data, graph, experiment, error, model, reasoning), task order and the structure of parts a), b), c) match fi in all 8 new tasks; the answer box asks for the same quantity and unit as in fi.
-- L1-06 choice feedback explains the right idea (glass does not conduct, so no eddy current), not just "wrong"; L2-07 error-analysis task keeps the student's claim and both parts.
-- Wording keeps the exercise voice and the glossary terms of the chapter (eddy current, attenuation, wireless charging, induction hob).
-- Language is selkosuomi: short sentences, terms (pyörrevirta, interpolointi, pienimmän neliösumman menetelmä) explained in the solutions.
+- Level counts and ids equal to fi; the new task fy7-16-L2-08 has the same form, prompt and options as fi.
+- Situation first, question last kept; the task needs no figure, so nothing to check at 360 px beyond long formulas, which break normally.
+- Feedback repairs the misconception rather than restating the answer, as in fi.
+- Solution keeps Kysytty/Find, Periaate/Principle, Mallivastaus/Model answer and the discussion of the wrong options.
+- fi-easy: short sentences, difficult terms explained once, no content lost.

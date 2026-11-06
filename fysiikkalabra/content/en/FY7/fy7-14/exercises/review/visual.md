@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: be1bb316e8571aa9
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: d24c68bd015724c8
+Mode: delta (new task fy7-14-L1-09 and its solution), round 1
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions L3-05 "Reading the graph" — the point (0; 0.05 mm) can wrap across lines in the narrow capture ("(0; / 0.05 mm)"); same in fi, a rendering matter only.
+(none)
 
 ## Checked
-- Opened captures fy7-14-open-exercises-1280-8, -9, L2-1280-8, L3-1280-8 (en): text, KaTeX formulas, tables and answer boxes render; no overflow or Finnish text visible in en.
-- Units and decimal separators consistent in rendered formulas and tables.
-- Headings and labels (Given/Find... or Annettu/Kysytty...) shown in the right language.
+- Rebuilt and captured fy7-14 (en); opened fy7-14-open-exercises captures at 1280 px (last parts of the level) showing fy7-14-L1-09 with its task text, options or input, feedback, answer and opened solution.
+- Layout survived: no clipping or horizontal overflow, options are whole rows, solution blocks (Find, Principle, Model answer) read in order, display equations aligned and broken at meaningful steps.
+- Maths: KaTeX renders, numbers with upright units and thin space, \cdot, colon for division, SI units upright; no Finnish left in the new task.
+- No figures in the new task; the lesson page and other tasks are unchanged (delta).
 
 ## Scores
-illustrations 4 · typography 4 · Finnish n/a (en) · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
