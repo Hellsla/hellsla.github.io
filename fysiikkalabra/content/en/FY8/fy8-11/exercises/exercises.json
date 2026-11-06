@@ -267,6 +267,53 @@
           "feedback": "The situation is the opposite: in the products the binding energy per nucleon is greater, not smaller. The total mass of more tightly bound nucleons is smaller, and the decreasing mass releases energy."
         }
       ]
+    },
+    {
+      "id": "fy8-11-L2-08",
+      "level": 2,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "Consider a reaction in which a carbon-12 nucleus splits into three helium-4 nuclei: ${}^{12}_{6}\\text{C} \\rightarrow 3\\,{}^{4}_{2}\\text{He}$. The binding energy per nucleon is $7.680\\,\\text{MeV}$ for carbon-12 and $7.074\\,\\text{MeV}$ for helium-4.\n\nIs energy released in this splitting?",
+      "answer": "The reaction requires energy.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Energy is released in the reaction.",
+          "feedback": "A splitting does not always release energy. Compare the binding energy per nucleon before and after the reaction."
+        },
+        {
+          "text": "The reaction requires energy.",
+          "correct": true,
+          "feedback": "Correct: the splitting requires about $7.3\\,\\text{MeV}$ of energy. The reverse reaction, the fusion of three helium-4 nuclei into carbon-12, releases the same energy."
+        },
+        {
+          "text": "Energy is neither released nor used.",
+          "feedback": "The number of nucleons is conserved, but mass is not. Energy is released or used when the binding energy per nucleon changes, and here it changes from $7.680\\,\\text{MeV}$ to $7.074\\,\\text{MeV}$."
+        }
+      ],
+      "reason_prompt": "Which reason explains your answer?",
+      "reasons": [
+        {
+          "text": "When a nucleus splits into parts, its binding energy is released as the kinetic energy of the nuclei that are formed.",
+          "feedback": "The binding energy is not energy stored in the nucleus. It was released when the nucleus formed, and the same energy is needed to break the nucleus into parts."
+        },
+        {
+          "text": "The splitting of a nucleus always requires energy, because the strong interaction binds the nucleons together.",
+          "feedback": "A splitting does not always require energy: the fission of uranium-235 releases about $200\\,\\text{MeV}$. What matters is whether the binding energy per nucleon increases or decreases."
+        },
+        {
+          "text": "In the products the nucleons are bound more loosely, so the total binding energy is smaller.",
+          "correct": true,
+          "feedback": "Correct: the binding energy of $12$ nucleons decreases from $92.16\\,\\text{MeV}$ to $84.89\\,\\text{MeV}$, so the difference has to be supplied to the reaction."
+        },
+        {
+          "text": "The number of nucleons is $12$ on both sides, so no part of the nuclei turns into energy.",
+          "feedback": "The number of nucleons is conserved, but the conclusion does not follow from that. Energy does not come from nucleons disappearing but from the change in binding energy, and a change in binding energy corresponds to a change in mass."
+        }
+      ]
     }
   ],
   "level3": [

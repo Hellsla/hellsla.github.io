@@ -191,3 +191,16 @@ b) $A_\text{hajoaminen} = 500\,\text{MBq} \cdot \left(\tfrac{1}{2}\right)^{12{,}
 **Sijoitus:** b) $d_{1/2} = \dfrac{20{,}0\,\text{mm} \cdot 0{,}69315}{\ln (1006 : 221)} = \dfrac{13{,}863\,\text{mm}}{1{,}5157} = 9{,}147\,\text{mm}$. c) $d_x = 9{,}147\,\text{mm} \cdot \dfrac{\ln (1006 : 402)}{0{,}69315} = 9{,}147\,\text{mm} \cdot \dfrac{0{,}9174}{0{,}69315} = 9{,}147\,\text{mm} \cdot 1{,}3236 = 12{,}11\,\text{mm}$
 **Vastaus:** c) $12\,\text{mm}$. Vastauksessa on kaksi merkitsevää numeroa. Puoliintumispaksuus $d_{1/2}$ on määritetty kalibroinnista, ja mittausten satunnaisvaihtelu rajoittaa sen tarkkuuden noin kahteen numeroon (suhteet $0{,}68 \pm 0{,}01$). Kohdassa b) alumiinin puoliintumispaksuus on $9{,}1\,\text{mm}$.
 **Järkevyys:** Laskentataajuus $402\,\tfrac{1}{\text{s}}$ on taulukon arvojen $468$ ($10{,}0\,\text{mm}$) ja $327$ ($15{,}0\,\text{mm}$) välissä. Paksuuden on siis oltava $10{,}0\,\text{mm}$:n ja $15{,}0\,\text{mm}$:n välissä, ja $12{,}1\,\text{mm}$ on. Tarkistus: $12{,}1\,\text{mm}$ on $12{,}1 : 9{,}147 = 1{,}32$ puoliintumispaksuutta, ja $1006 \cdot \left(\tfrac{1}{2}\right)^{1{,}32} = 403$, kuten mitattu $402$. Tulos pätee vain kalibroidulla välillä. Taustasäteily on vähennettävä, koska se ei vaimene levyssä.
+
+## fy8-14-L1-09
+**Kysytty:** lauseke lähtöaktiivisuudelle $A_0$, kun ruiskutushetkellä tarvitaan aktiivisuus $A$ ja kuljetus kestää ajan $t$.
+**Periaate:** Aktiivisuus pienenee hajoamislain mukaan, $A = A_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$. Jokainen puoliintumisaika puolittaa jäljellä olevan aktiivisuuden. Kuljetuksen aikana puoliintumisia on $\tfrac{t}{T_{1/2}}$. Ratkaistaan laki lähtöaktiivisuudelle $A_0$.
+**Mallivastaus:** Jaetaan hajoamislain molemmat puolet tekijällä $\left(\tfrac{1}{2}\right)^{t/T_{1/2}}$:
+
+$$A_0 = \frac{A}{\left(\tfrac{1}{2}\right)^{t/T_{1/2}}}$$
+
+Koska $\dfrac{1}{\left(\tfrac{1}{2}\right)^{n}} = 2^{n}$, saadaan
+
+$$A_0 = A \cdot 2^{t/T_{1/2}}$$
+
+Oikea lauseke on siis $A_0 = A \cdot 2^{t/T_{1/2}}$. Tarkistus: fluori-$18$:n puoliintumisaika on noin $110\,\text{min}$. Esimerkiksi kuljetus kestää $330\,\text{min}$. Silloin aktiivisuus puolittuu kolme kertaa, ja lähtiessä tarvitaan $2^{3} = 8$ kertaa aktiivisuus $A$. Tasaisen muutoksen lauseke antaisi vain $\tfrac{2 \cdot 330}{110} = 6$ kertaa $A$. Väärät lausekkeet: $A \cdot \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$ on pienempi kuin $A$, joten siinä hajoamislakia on käytetty väärään suuntaan. Lausekkeessa $A \cdot 2^{T_{1/2}/t}$ eksponentti on käännetty ylösalaisin, ja lauseke pienenisi kuljetusajan kasvaessa. Lauseke $A \cdot \tfrac{2t}{T_{1/2}}$ olettaa aktiivisuuden muuttuvan tasaisesti, ja ajalla $t = 0$ se antaisi nollan.

@@ -133,6 +133,39 @@
 **Periaate:** Ydinreaktio vapauttaa energiaa, kun syntyvien ytimien sidosenergia on yhteensä suurempi kuin alkuperäisten. Nukleonien määrä pysyy samana. Siksi ratkaisee sidosenergia nukleonia kohti $\tfrac{E_\text{B}}{A}$. Energiaa vapautuu, kun nukleonit siirtyvät sidosenergiakäyrällä ylöspäin.
 **Mallivastaus:** Rauta-56 on sidosenergiakäyrän huipulla nikkeli-62:n kanssa. $\tfrac{E_\text{B}}{A}$ on noin $8{,}8\,\text{MeV}$. Sekä kevyemmillä että raskaammilla ytimillä arvo on pienempi. Raudalla nukleonit ovat siis melkein yhtä tiiviisti sidottuja kuin huipun tiiveimmin sidotuilla ytimillä. Jos rautaydin yhdistettäisiin toiseen rautaytimeen tai halkaistaisiin, syntyvissä ytimissä nukleonit olisivat keskimäärin löyhemmin sidottuja. Silloin sidosenergia pienenisi ja reaktio vaatisi energiaa. Kemiallinen pysyvyys ei liity asiaan, koska se koskee elektroneja eikä ytimiä. Sähköinen hylkiminen vaikuttaa vain siihen, miten vaikea fuusion on käynnistyä. Se ei vaikuta energiataseeseen. Rauta-56:ssa on $26$ protonia ja $30$ neutronia. Muiden ytimien kanssa reaktio voi silti vapauttaa energiaa. Esimerkiksi rauta-56 ja helium-4 voivat muodostaa nikkeli-60:n ja vapauttaa noin $6{,}3\,\text{MeV}$.
 
+## fy8-10-L2-08
+**Kysytty:** mikä vaihtoehdoista on lähimpänä kulta-197-ytimen sidosenergiaa $E_\text{B}$.
+**Periaate:** Ydin on kevyempi kuin sen erilliset nukleonit. Massavajetta $\Delta m$ vastaa sidosenergia $E_\text{B} = \Delta m\,c^2$. Lasketaan atomimassoilla: $79$ vetyatomissa on $79$ elektronia, ja kulta-atomissakin on yhtä monta. Siksi elektronien massat kumoutuvat eli poistuvat laskusta. Ytimessä on $Z = 79$ protonia ja $N = 197 - 79 = 118$ neutronia.
+**Mallivastaus:** Lasketaan ensin vetyatomien ja neutronien massat.
+
+$Z\,m_\text{H} = 79 \cdot 1{,}007825\,\text{u}$
+
+$Z\,m_\text{H} = 79{,}618175\,\text{u}$
+
+$N\,m_\text{n} = 118 \cdot 1{,}008665\,\text{u}$
+
+$N\,m_\text{n} = 119{,}022470\,\text{u}$
+
+Massavaje on $\Delta m = Z\,m_\text{H} + N\,m_\text{n} - m_\text{atomi}$:
+
+$$\begin{aligned}
+&\Delta m = 79{,}618175\,\text{u} \\
+&\quad + 119{,}022470\,\text{u} \\
+&\quad - 196{,}966569\,\text{u} \\
+&= 1{,}674076\,\text{u}
+\end{aligned}$$
+
+Sidosenergia saadaan, kun yksikön $\text{u}$ paikalle sijoitetaan $931{,}5\,\tfrac{\text{MeV}}{c^2}$. Silloin $c^2$ supistuu pois:
+
+$$\begin{aligned}
+&E_\text{B} = 1{,}674076 \cdot 931{,}5\,\text{MeV} \\
+&\approx 1559\,\text{MeV}
+\end{aligned}$$
+
+Sidosenergia on noin $1560\,\text{MeV}$, joten lähin vaihtoehto on noin $1600\,\text{MeV}$. Väärät vaihtoehdot syntyvät tavallisista virheistä. Jos massavaje jaetaan luvulla $931{,}5$, tulos on noin $0{,}002\,\text{MeV}$. Jos se jaetaan nukleonien määrällä $197$, tulos on sidosenergia nukleonia kohti, noin $7{,}9\,\text{MeV}$. Jos koko atomin massa muutetaan energiaksi, tulos on noin $183\,000\,\text{MeV}$.
+
+Järkevyys: sidosenergia nukleonia kohti $7{,}9\,\text{MeV}$ sopii raskaille ytimille. Raskailla ytimillä se on hieman pienempi kuin raudan noin $8{,}8\,\text{MeV}$. Massavaje $1{,}674\,\text{u}$ on noin $0{,}8\,\%$ atomin massasta.
+
 ## fy8-10-L3-01
 **Annettu:** $m({}^{4}\text{He}) = 4{,}002603\,\text{u}$, $m({}^{3}\text{He}) = 3{,}016029\,\text{u}$, $m_\text{n} = 1{,}008665\,\text{u}$, $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$, vertailuarvo $\tfrac{E_\text{B}}{A} = 7{,}07\,\text{MeV}$
 **Kysytty:** neutronin irrottamiseen tarvittava energia $E$ megaelektronivoltteina

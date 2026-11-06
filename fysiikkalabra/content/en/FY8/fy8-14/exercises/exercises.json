@@ -91,6 +91,37 @@
       "answer": 1.3e-14,
       "unit": "J",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-14-L1-09",
+      "level": 1,
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "text": "A PET tracer is made in a cyclotron and transported to another hospital. The transport and preparations take a time $t$, and the half-life of fluorine-$18$ is $T_{1/2}$. At the moment of injection the activity of the tracer must be $A$. Assume that the activity decreases only by decay.\n\nWhich expression gives the activity $A_0$ that the tracer must have when it leaves?",
+      "answer": "$A_0 = A \\cdot 2^{t/T_{1/2}}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "$A_0 = A \\cdot \\left(\\tfrac{1}{2}\\right)^{t/T_{1/2}}$",
+          "feedback": "Here the law of decay has been used in the wrong direction: the expression gives the activity that would still remain a time $t$ after the injection. When it leaves, the activity has to be greater than $A$, not smaller."
+        },
+        {
+          "text": "$A_0 = A \\cdot 2^{T_{1/2}/t}$",
+          "feedback": "Here the exponent has been turned upside down. The number of half-lives is $\\tfrac{t}{T_{1/2}}$, so a longer transport needs a greater initial activity. This expression would decrease as the transport time increases."
+        },
+        {
+          "text": "$A_0 = A \\cdot 2^{t/T_{1/2}}$",
+          "correct": true,
+          "feedback": "Correct: in the time $t$ the activity halves $\\tfrac{t}{T_{1/2}}$ times, so when it leaves it has to be $2^{t/T_{1/2}}$ times as great. For example, in three half-lives $A_0 = 2^{3}A = 8A$."
+        },
+        {
+          "text": "$A_0 = A \\cdot \\tfrac{2t}{T_{1/2}}$",
+          "feedback": "Here the activity is assumed to change steadily with time. Every half-life, however, halves the activity that remains. In addition, at the time $t = 0$ the expression would give zero instead of $A$."
+        }
+      ]
     }
   ],
   "level2": [

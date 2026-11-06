@@ -191,3 +191,16 @@ b) $A_\text{decay} = 500\,\text{MBq} \cdot \left(\tfrac{1}{2}\right)^{12.0\,\tex
 **Substitution:** b) $d_{1/2} = \dfrac{20.0\,\text{mm} \cdot 0.69315}{\ln (1006 : 221)} = \dfrac{13.863\,\text{mm}}{1.5157} = 9.147\,\text{mm}$. c) $d_x = 9.147\,\text{mm} \cdot \dfrac{\ln (1006 : 402)}{0.69315} = 9.147\,\text{mm} \cdot \dfrac{0.9174}{0.69315} = 9.147\,\text{mm} \cdot 1.3236 = 12.11\,\text{mm}$
 **Answer:** c) $12\,\text{mm}$, two significant figures, because the half-value thickness $d_{1/2}$ has been determined from a calibration in which the random variation of the measurements limits the precision to about two figures (ratios $0.68 \pm 0.01$). In part b) the half-value thickness of aluminium is $9.1\,\text{mm}$.
 **Reasonableness:** The count rate $402\,\tfrac{1}{\text{s}}$ lies between the table values $468$ ($10.0\,\text{mm}$) and $327$ ($15.0\,\text{mm}$), so the thickness must lie between $10.0\,\text{mm}$ and $15.0\,\text{mm}$, and $12.1\,\text{mm}$ does. Check: $12.1\,\text{mm}$ is $12.1 : 9.147 = 1.32$ half-value thicknesses, and $1006 \cdot \left(\tfrac{1}{2}\right)^{1.32} = 403$, as the measured $402$. The result is valid only within the calibrated range, and the background radiation has to be subtracted, because it is not attenuated in the plate.
+
+## fy8-14-L1-09
+**Asked:** an expression for the initial activity $A_0$ when the activity $A$ is needed at the moment of injection and the transport takes a time $t$.
+**Principle:** The activity decreases according to the law of decay, $A = A_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$: every half-life halves the activity that remains. During the transport the number of half-lives is $\tfrac{t}{T_{1/2}}$, and the law is solved for the initial activity $A_0$.
+**Model answer:** We divide both sides of the law of decay by the factor $\left(\tfrac{1}{2}\right)^{t/T_{1/2}}$:
+
+$$A_0 = \frac{A}{\left(\tfrac{1}{2}\right)^{t/T_{1/2}}}$$
+
+Because $\dfrac{1}{\left(\tfrac{1}{2}\right)^{n}} = 2^{n}$, we get
+
+$$A_0 = A \cdot 2^{t/T_{1/2}}$$
+
+So the correct expression is $A_0 = A \cdot 2^{t/T_{1/2}}$. Check: the half-life of fluorine-$18$ is about $110\,\text{min}$. For example, in a transport that lasts $330\,\text{min}$ the activity halves three times, and when it leaves, $2^{3} = 8$ times the activity $A$ is needed. The expression for a steady change would give only $\tfrac{2 \cdot 330}{110} = 6$ times $A$. The wrong expressions: $A \cdot \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$ is smaller than $A$, so the law of decay has been used in the wrong direction. In the expression $A \cdot 2^{T_{1/2}/t}$ the exponent has been turned upside down, and it would decrease as the transport time increases. The expression $A \cdot \tfrac{2t}{T_{1/2}}$ assumes that the activity changes steadily, and at the time $t = 0$ it would give zero.

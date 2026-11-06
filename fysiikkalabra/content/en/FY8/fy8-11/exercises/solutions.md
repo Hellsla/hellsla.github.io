@@ -163,6 +163,29 @@
 **Principle:** The number of nucleons is conserved ($236 = 236$), so the student's starting point is correct. However, mass is not just the number of nucleons times a constant; the binding energy affects it. In the products the binding energy per nucleon is greater than in uranium, so the total mass of the products is smaller. By the equivalence of mass and energy, the mass difference is released as energy, $Q = \Delta m\,c^2$.
 **Model answer:** The number of nucleons is conserved, but the nucleons of the products are more tightly bound than those of uranium-235, so the total mass of the products is smaller than that of the starting materials. The mass difference is released as energy, so energy is released in fission. Nucleons do not turn into energy or disappear, and mass and energy are equivalent, not separate. If the nucleons of the products were more loosely bound, the mass would increase and no energy would be released.
 
+## fy8-11-L2-08
+**Asked:** whether energy is released when a carbon-12 nucleus splits into three helium-4 nuclei, and which reason explains it.
+**Principle:** In a nuclear reaction energy is released when the total binding energy of the products is greater than that of the reactants, and energy is used when it is smaller. The number of nucleons is conserved, so what decides is the binding energy per nucleon $\tfrac{E_\text{B}}{A}$. Fission usually releases energy for heavy nuclei, because for them the splitting moves nucleons towards the peak of the graph. Here the given values of $\tfrac{E_\text{B}}{A}$ decide.
+**Model answer:** The reaction requires energy. We calculate the binding energies before and after the reaction; there are $12$ nucleons on both sides.
+
+$E_\text{B,before} = 12 \cdot 7.680\,\text{MeV}$
+
+$E_\text{B,before} = 92.16\,\text{MeV}$
+
+$E_\text{B,after} = 12 \cdot 7.074\,\text{MeV}$
+
+$E_\text{B,after} = 84.888\,\text{MeV}$
+
+$Q = E_\text{B,after} - E_\text{B,before}$
+
+$Q = 84.888\,\text{MeV} - 92.16\,\text{MeV}$
+
+$Q \approx -7.27\,\text{MeV}$
+
+In the products the nucleons are bound more loosely, so the binding energy decreases by about $7.3\,\text{MeV}$. This energy has to be supplied to the reaction, for example as a gamma photon, and the total mass of the products is greater than that of the carbon-12 atom. Carbon-12 is a light nucleus to the left of the peak of the binding energy graph, so its splitting moves nucleons down the graph. The reverse reaction, the fusion of three helium-4 nuclei, releases the same energy.
+
+The reason that the binding energy is released when the nucleus splits is incorrect: binding energy is needed to break the nucleus up. The reason that a splitting always requires energy is incorrect, because the fission of uranium-235 releases energy. The number of nucleons is $12$ on both sides, but that does not explain the energy, because the energy comes from the change in binding energy.
+
 ## fy8-11-L3-04
 **Given:** activity per tonne as a function of time (table, example data; $t$ is counted from about $10$ years after removal), target value $A_\text{limit} = 100\,\tfrac{\text{TBq}}{\text{t}}$, half-life of plutonium-239 $24\,100\,\text{a}$
 **Asked:** a) the half-life $T_{1/2}$, b) the time $t$ at which the activity is $100\,\tfrac{\text{TBq}}{\text{t}}$, c) an explanation
