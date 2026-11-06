@@ -192,3 +192,40 @@
 **Sijoitus:** a) $\Phi = \dfrac{0{,}01946\,\text{V}\cdot\text{s}}{250} = 7{,}78 \cdot 10^{-5}\,\text{Wb} = 0{,}0778\,\text{mWb}$. b) Toisen pulssin ($24$–$48\,\text{ms}$) pinta-ala on samalla tavalla laskien $-0{,}01968\,\text{V}\cdot\text{s}$. Siis $\Phi = 0{,}01968\,\text{V}\cdot\text{s} : 250 = 0{,}0787\,\text{mWb}$.
 **Vastaus:** a) $\Phi \approx 0{,}078\,\text{mWb}$. Vastauksessa on kaksi merkitsevää numeroa, koska jännitteet on annettu kahden desimaalin tarkkuudella ja pinta-ala on arvio. b) Toisesta pulssista saadaan $0{,}079\,\text{mWb}$, eli sama vuo. Ensimmäisessä pulssissa vuo kasvaa, ja toisessa se pienenee takaisin nollaan. Siksi jännitteiden etumerkit ovat vastakkaiset. Vuon kokonaismuutos on kummassakin pulssissa yhtä suuri, joten pinta-alat ovat itseisarvoltaan yhtä suuret. Magneetti kiihtyy pudotessaan. Siksi sama vuon muutos tapahtuu toisessa pulssissa lyhyemmässä ajassa. Pulssi on kapeampi ja korkeampi.
 **Järkevyys:** Pulssien pinta-alat eroavat toisistaan noin $1\,\%$, joten mittausaineisto on sisäisesti johdonmukainen. Kolmion likiarvo $\tfrac{1}{2} \cdot 1{,}8\,\text{V} \cdot 0{,}020\,\text{s} = 0{,}018\,\text{V}\cdot\text{s}$ antaa saman suuruusluokan.
+
+## fy7-5-L1-09
+**Kysytty:** viiden tilanteen järjestys induktiojännitteen suuruuden $|e|$ mukaan pienimmästä suurimpaan.
+**Periaate:** Käämiin syntyvä jännite riippuu kahdesta asiasta: yhden kierroksen vuon muutosnopeudesta ja kierrosten lukumäärästä, $|e| = N\dfrac{\Delta\Phi}{\Delta t}$. Se ei riipu vuon suuruudesta. Yksittäisessä silmukassa $N = 1$. Kenttää vastaan kohtisuoraan liikkuvan tangon jännite on $e = vBl$.
+**Mallivastaus:** Lasketaan kunkin tilanteen jännite.
+
+Tilanne A:
+
+$|e_\text{A}| = 200 \cdot \dfrac{3{,}0 \cdot 10^{-3}\,\text{Wb}}{0{,}50\,\text{s}}$
+
+$|e_\text{A}| = 1{,}2\,\text{V}$
+
+Tilanne B:
+
+$|e_\text{B}| = 50 \cdot \dfrac{6{,}0 \cdot 10^{-3}\,\text{Wb}}{0{,}10\,\text{s}}$
+
+$|e_\text{B}| = 3{,}0\,\text{V}$
+
+Tilanteessa C sähkömagneetin virta on vakio, joten vuo ei muutu. Siis $\Delta\Phi = 0$ ja $e_\text{C} = 0$. Suuri vuo $8{,}0\,\text{mWb}$ ja suuri kierrosluku eivät muuta tätä.
+
+Tilanne D:
+
+$e_\text{D} = 4{,}0\,\text{m/s} \cdot 0{,}30\,\text{T} \cdot 0{,}50\,\text{m}$
+
+$e_\text{D} = 0{,}60\,\text{V}$
+
+Tilanne E, jossa $N = 1$:
+
+$|e_\text{E}| = \dfrac{40 \cdot 10^{-3}\,\text{Wb}}{0{,}020\,\text{s}}$
+
+$|e_\text{E}| = 2{,}0\,\text{V}$
+
+Induktiojännitteen suuruuden mukaan järjestys pienimmästä suurimpaan on C ($0\,\text{V}$), D ($0{,}60\,\text{V}$), A ($1{,}2\,\text{V}$), E ($2{,}0\,\text{V}$) ja B ($3{,}0\,\text{V}$). Tilanteessa E vuo pienenee. Siksi jännitteen etumerkki on vastakkainen kuin silloin, kun vuo kasvaa. Järjestyksessä verrataan kuitenkin vain suuruuksia.
+
+Jos kierrosten lukumäärän unohtaa, tilanteiden A ja B jännitteiksi tulee vain $6{,}0\,\text{mV}$ ja $60\,\text{mV}$. Silloin ne siirtyvät väärin heti tilanteen C jälkeen. Jos jännitteen luulee riippuvan vuon suuruudesta eikä sen muutoksesta, tilanteen C suuri vuo näyttää antavan suurimman jännitteen. Silloin C siirtyy väärin järjestyksen loppuun.
+
+**Järkevyys:** Tilanteessa E vuo muuttuu nopeimmin, $2{,}0\,\tfrac{\text{Wb}}{\text{s}}$. Silti tilanteen B $50$ kierrosta nostaa sen jännitteen suurimmaksi.

@@ -240,6 +240,57 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy7-6-L2-08",
+      "level": 2,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "A vertical coil with many turns and an iron core is connected to a battery through a switch. A light aluminium ring rests horizontally on top of the coil so that the axis of the coil passes through the centre of the ring. The switch is at first open, and there is no current in the coil.\n\nThe switch is closed, and the current of the coil grows quickly from zero to its large constant value.\n\nWhat happens to the ring at the moment when the current grows?",
+      "answer": "The ring jumps upwards",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The ring is pressed against the coil",
+          "feedback": "This assumes that the coil attracts the ring as it would iron. Aluminium is not a ferromagnetic material, so the magnetic field does not attract it."
+        },
+        {
+          "text": "The ring jumps upwards",
+          "correct": true,
+          "feedback": "Correct. Next choose the reason that explains your answer."
+        },
+        {
+          "text": "The ring stays at rest",
+          "feedback": "This assumes that the direct current of a battery cannot cause induction. Think about what happens to the current of the coil just at the moment when the switch is closed."
+        }
+      ],
+      "reason_prompt": "Which reason explains your answer?",
+      "reasons": [
+        {
+          "text": "Aluminium is a metal, so the magnetic field of the coil attracts the ring as it would iron.",
+          "feedback": "This is a common misconception: aluminium is not a ferromagnetic material, and a magnet does not stick to it. The force arises only from the induced current, and by Lenz's law its field opposes the growth of the flux."
+        },
+        {
+          "text": "The field of the induced current in the ring strengthens the growth of the flux, so the ring and the coil attract each other.",
+          "feedback": "The direction is reversed: the induced current does not help the change of flux but opposes it. If it helped, energy would grow out of nothing, which is against the conservation of energy."
+        },
+        {
+          "text": "The flux through the ring grows, and the field of the induced current opposes the growth, so the ring repels the coil.",
+          "correct": true,
+          "feedback": "Correct: on the side of the ring facing the coil a pole of the same name as the upper end of the coil is formed, and poles of the same name repel each other."
+        },
+        {
+          "text": "The battery gives direct current, so the flux through the ring does not change and no induced current arises.",
+          "feedback": "This is true only after the current has settled to a constant value. After the switch is closed the current grows from zero, so the flux changes and an induced current arises in the ring."
+        },
+        {
+          "text": "Aluminium conducts electricity well, so a large induced current can flow in a closed ring.",
+          "feedback": "The statement is true, but it does not explain the answer. It only says that a current can flow in the ring, not in which direction the current circulates and whether the ring repels or attracts the coil."
+        }
+      ]
     }
   ],
   "level3": [
