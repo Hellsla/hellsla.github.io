@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: bd1ff5c9876655d5
+CONTENT-HASH: 5338796927c96918
 Mode: full (translation review against the reviewed Finnish set; new task fy4-11-L2-08)
 Round 1
 
