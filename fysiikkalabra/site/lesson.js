@@ -693,7 +693,7 @@
     const id = 'ex-focus-title-' + (n++);
     const dlg = mk('dialog', 'ex-focus'); dlg.setAttribute('aria-labelledby', id);
     const bar = mk('div', 'ex-focus-bar');
-    const title = mk('h2', 'ex-focus-title'); title.id = id; title.tabIndex = -1;
+    const title = mk('p', 'ex-focus-title'); title.id = id; title.tabIndex = -1;   // not a heading: the dialog is named by it, and the stage keeps its one h2 (screenshot.py, palautus.js)
     const pos = mk('span', 'ex-focus-pos');
     const nav = mk('div', 'ex-focus-nav');
     const btn = (cls, key, def) => { const b = mk('button', 'ex-focus-btn ' + cls, say(key, def)); b.type = 'button'; return b; };
