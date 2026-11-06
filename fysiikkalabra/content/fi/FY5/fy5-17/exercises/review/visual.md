@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 2c4015ccb6d6d59f
+CONTENT-HASH: caaeaa93666bca57
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy5-17-L2-08 reasons — the correct reason is the longest (108 characters against 83–90) and has the shortest feedback among the wrong-vs-right lines; shorten it a little ("Kumpikin aalto kulkee saman matkan tasaisella nopeudella, joten aikaero on suoraan verrannollinen matkaan.").
-- [Minor] fy5-17-L2-08 solution — the row $d_\text{B} = 8{,}4\,\text{km/s} \cdot 24{,}0\,\text{s} \approx 2{,}0 \cdot 10^{2}\,\text{km}$ measures 317 px in a 304 px scrolling line (flFitMath, by design); it fits on screen, only a few pixels scroll.
+- [Minor] fy5-17-L2-08 — the correct choice's feedback is now very short (65 characters against 168–170) and the correct reason is still marginally the longest (93 against 83–90); both show only after answering, so only a note: give the correct choice one more clause.
 
 ## Checked
-- Method: rebuilt with `python scripts/build.py fy5-17`; own script (vr5_newtask_probe.py, scratchpad) opened the new task at 390 px after the page scripts ran, answered, opened feedback, hints and solution, measured overflow. Document scrollWidth 390, no clipped element outside a scroll box; image read at card width (332 px, downscaled to read the whole card).
-- From text only: the packet's diff, form-of-answer check (length by character count), distractor-to-warned-mistake fit, scope against the chapter.
-- Render: stem in three paragraphs, choice stage, reason stage with feedback and the correct-choice feedback pointing on to the reason stage without giving the reason; solution with five display rows; no overflow.
-- Delta only: new task and its solution; the rest of the set was PASS and untouched. No figure.
+- Round 2 after commit 4ff432a8f. Rebuilt with `python scripts/build.py fy5-17`; own script (vr5_newtask_probe.py, scratchpad) re-rendered the new task at 390 px after the page scripts ran, with answer, feedback and solution open: document scrollWidth 390, no clipped element outside a scroll box. Image of the card read (fy5-14, fy5-16 and fy5-17 renders re-made; fy5-17 re-read, the other two checked by measurement and by the diff text).
+- From text only: the round-2 diff, option and reason lengths.
+- Stage-1 feedback no longer reveals the reason; the 3-kertainen computation moved to the reason feedback; "noin" dropped from the answer; the solution row for $d_\text{B}$ (317 px in a 304 px scrolling line, by design) is the only wide formula; no overflow.
+- Delta only: the changed task and solution; no figure.
 
 ## Scores
-illustrations n/a (no figure) · typography 5 · Finnish 5 · accessibility 5
+illustrations n/a (no figure) · typography 4 · Finnish 5 · accessibility 5

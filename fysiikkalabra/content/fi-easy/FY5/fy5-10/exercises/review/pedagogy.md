@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 183d240a2cb1f209
+CONTENT-HASH: 6409de3a6a38bfc3
 Mode: full (translation review against the reviewed Finnish set)
 Round 1
 
@@ -7,11 +7,12 @@ Round 1
 (none)
 
 ## Fixed
-- L1-07 distractor feedback (option 3): ungrammatical "Aallonpituuden ei määrää pelkkä naru. Narun määräämä on nopeus." changed to "Aallonpituutta ei määrää pelkkä naru. Naru määrää nopeuden."
+(none needed)
 
 ## Polish
 (none)
 
 ## Checked
-- Same sequence of Find/Principle/Model answer/Substitution/Answer/Reasonableness in solutions as fi; hints, error-analysis task (L2-06) and justification prompts preserved.
-- Language level: selkosuomi: short sentences, terms explained (pulssi, väliaine), consistent with fi.
+- fy5-10-L1-09: the pedagogy of the Finnish task is kept (situation first, question last; misconception-based distractors or statements; each feedback names the same error as fi and does not give the answer away before the student acts).
+- Solution keeps the Find / Principle / Model answer structure with the calculation staged step by step.
+- fi-easy sentences are short, terms are explained, no change in content.

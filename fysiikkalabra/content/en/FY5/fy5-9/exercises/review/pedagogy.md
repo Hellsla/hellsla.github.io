@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 52fe102bfba8455b
-Mode: full
-Round: 1
+CONTENT-HASH: 56d3a67124511b7c
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
 
 ## Fixed
-- None needed: the translation text already matches the reviewed Finnish.
+(none needed)
 
 ## Polish
+(none)
 
 ## Checked
-- Concept tasks L1-06..08: each wrong choice keeps its targeted misconception and its feedback explains why it fails, as in Finnish.
-- Data tasks L2-05..07 and L3-04: task text keeps the stepwise instructions (calculate, plot, fit, read slope) and the answer-box sentence.
-- L3-05: parts a) to c) and the box instruction unchanged; solution keeps the three ideas.
-- Reading level suits the course; terms (simple pendulum, spring constant, starting angle) used consistently with the lesson.
+- fy5-9-L2-08: the pedagogy of the Finnish task is kept (situation first, question last; misconception-based distractors or statements; each feedback names the same error as fi and does not give the answer away before the student acts).
+- Solution keeps the Find / Principle / Model answer structure with the calculation staged step by step.
+- English reads naturally and uses the chapter's terms; no Finnish left.

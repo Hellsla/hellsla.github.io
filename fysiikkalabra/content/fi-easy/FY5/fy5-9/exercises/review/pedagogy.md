@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 51eea64f715b2cd3
-Mode: full
-Round: 1
+CONTENT-HASH: a81094fffe435f50
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
 
 ## Fixed
-- None needed: the translation text already matches the reviewed Finnish.
+(none needed)
 
 ## Polish
+(none)
 
 ## Checked
-- Selkosuomi: short sentences; long Finnish sentences split (e.g. L1-06 text, L2-06, L3-04, L3-05 c).
-- Terms explained where new: hitaus, silmämääräinen sovitus; other course terms kept as in the lesson.
-- Feedback of all choices keeps the misconception targeting of the Finnish.
-- Task structure, steps and the answer-box sentence match the Finnish.
+- fy5-9-L2-08: the pedagogy of the Finnish task is kept (situation first, question last; misconception-based distractors or statements; each feedback names the same error as fi and does not give the answer away before the student acts).
+- Solution keeps the Find / Principle / Model answer structure with the calculation staged step by step.
+- fi-easy sentences are short, terms are explained, no change in content.

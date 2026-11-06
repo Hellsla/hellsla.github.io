@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: bc8bbdeca45b9de8
+CONTENT-HASH: 05a22a67824fc9ac
 Mode: full (translation review against the reviewed Finnish set)
 Round 1
 
@@ -7,13 +7,13 @@ Round 1
 (none)
 
 ## Fixed
-(none needed: the English text matched fi in every number and was natural)
+(none needed)
 
 ## Polish
 (none)
 
 ## Checked
-- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) and the older ones compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags, data cells and every number (texts, feedback, solutions.md: 582 numbers each) identical; decimal point in en JSON and LaTeX where applicable.
-- Choice sets L1-06/L1-07: one correct option, feedback matches the fi error types.
-- Maths and re-derived answers (L1-08 1.4 km, L2-05 2.6 m/s, L2-06 3.0 m/s, L2-07 340 m/s, L3-04 5.1 m, L3-05 4.9 s) agree with fi.
-- check_i18n.py en: 0 errors.
+- New task fy5-10-L1-09 (five true/false statements on a rope wave (f = 1.5 Hz, v = 1.8 m/s, 3 to 5 false)) compared with content/fi: answer, unit, tolerance, correct flags, choices/statements/order, every number and formula identical; English decimal point used; wording natural.
+- Recomputed independently: answers and all numbers in the task and its solution agree with fi.
+- solutions.md section for fy5-10-L1-09: same structure and numbers as fi; the physics and its conditions unchanged.
+- check_i18n.py: no errors for fy5-10; build.py fy5-10 succeeds.

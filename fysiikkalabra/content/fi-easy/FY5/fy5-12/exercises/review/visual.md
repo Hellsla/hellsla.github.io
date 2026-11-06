@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: e63affccfd49f16d
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 8582b9190f73f167
+Mode: delta, round 1 (new task fy5-12-L2-08 in fi-easy; L2-08, "which line is wrong" (line 4 conclusion))
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] sticky tab bar (Examples/Check/Exercises) overlaps the card in element screenshots only; a capture artefact, not a page defect.
 
 ## Checked
-- fy5-12-open-exercises-L3-1280-6.png (L3-04 ratkaisu): laskulaatikot, kaavat ja teksti luettavia, ei leikkautumista.
-- Taulukot L2-05, L2-07, L3-05: otsikot, sarakkeet ja solut vastaavat fi:tä (desimaalipilkku LaTeXissa, piste JSONissa kuten muissa luvuissa).
-- Ei englantia tai viallista merkintää näkyvissä.
+- Own 390 px render of fy5-12-L2-08 (fi-easy) after the page scripts ran, answer feedback and solution open: page scrollWidth 390, no element clipped outside a scroll box, no .kx-wide line needed, no KaTeX error nodes.
+- Situation, question, choice rows, feedback box, FIND/PRINCIPLE/MODEL ANSWER block read in full: units and quantities set as maths, calculation rows stacked and aligned, no plain-text quantity or stray symbol.
+- Language read in fi-easy: natural, consistent with the chapter terms, instructions clear.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 5

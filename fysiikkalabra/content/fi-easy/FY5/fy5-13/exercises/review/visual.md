@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 155448df7d1c8452
+CONTENT-HASH: 1df2c1aee33c64a1
+Mode: delta, round 1 (new task fy5-13-L2-08 in fi-easy; L2-08, pipe open vs plug (choice task))
 
 ## Blocking
 (none)
 
-## Fixed
-(none: kuvakaappausten teksti ei vaatinut muutoksia)
-
 ## Polish
-- Taulukon solut (96.0, 16.3) käyttävät desimaalipistettä kuten suomenkielinen lähde; paritettu fi:n kanssa.
+- [Minor] sticky tab bar (Examples/Check/Exercises) overlaps the card in element screenshots only; a capture artefact, not a page defect.
 
 ## Checked
-- Kuvakaappaukset fy5-13-open-exercises-1280-*, -L2-1280-* ja -L3-1280-* (otettu käännöksen jälkeen) avattu uusille tehtäville: monivalinnan palaute, taulukot otsikoineen, vastauslaatikko yksikköineen ja ratkaisut näkyvät ehjinä, ei leikkautumista eikä punaista lähdekoodia.
-- Murtoluvut, alaindeksit (f_A, f_B, f_{1,ka}), yksiköt ja sijoitusketjut piirtyvät oikein; desimaalipilkku tekstissä ja LaTeXissa.
+- Own 390 px render of fy5-13-L2-08 (fi-easy) after the page scripts ran, answer feedback and solution open: page scrollWidth 390, no element clipped outside a scroll box, no .kx-wide line needed, no KaTeX error nodes.
+- Situation, question, choice rows, feedback box, FIND/PRINCIPLE/MODEL ANSWER block read in full: units and quantities set as maths, calculation rows stacked and aligned, no plain-text quantity or stray symbol.
+- Language read in fi-easy: natural, consistent with the chapter terms, instructions clear.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 5 · accessibility 5

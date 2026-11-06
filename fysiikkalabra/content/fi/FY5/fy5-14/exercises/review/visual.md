@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: c512778582165624
+CONTENT-HASH: 6c4ba64811929dcc
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy5-14-L1-09 — the stem joins two unrelated situations (violin spectrum and car horn) in one true/false set; it reads clearly and each statement is self-contained, so only a note: a later set could keep one situation.
-- [Minor] fy5-14-L1-09 statement 4 — feedback ends with a bare "Lähestyessä kasvaa voimakkuus."; "äänen voimakkuus" would read as a full clause.
+- [Minor] fy5-14-L1-09 — the stem still joins two unrelated situations (violin spectrum and car horn); every statement is self-contained, so only a note.
 
 ## Checked
-- Method: rebuilt with `python scripts/build.py fy5-14`; own script (vr5_newtask_probe.py, scratchpad) opened the new task at 390 px after the page scripts ran, answered, opened feedback, hints and solution, measured overflow. Document scrollWidth 390, no clipped element outside a scroll box; image read at card width (332 px, downscaled to read the whole card).
-- From text only: the packet's diff, form-of-answer check (length by character count), distractor-to-warned-mistake fit, scope against the chapter.
-- Render: five statements with Tosi/Epätosi buttons and feedback, answer line, model solution with five paragraphs; no overflow, formulas inline and short. Statement answers are 2 true, 3 false: no pattern leak.
-- Delta only: new task and its solution; the rest of the set was PASS and untouched. No figure.
+- Round 2 after commit 4ff432a8f. Rebuilt with `python scripts/build.py fy5-14`; own script (vr5_newtask_probe.py, scratchpad) re-rendered the new task at 390 px after the page scripts ran, with answer, feedback and solution open: document scrollWidth 390, no clipped element outside a scroll box. Image of the card read (fy5-14, fy5-16 and fy5-17 renders re-made; fy5-17 re-read, the other two checked by measurement and by the diff text).
+- From text only: the round-2 diff, option and reason lengths.
+- "Voimakkain piikki" is now the term in the stem, statement 1 feedback and the solution, consistent with the sävelkorkeus/sointiväri wording; statements 2 and 4 read as full clauses; no overflow.
+- Delta only: the changed task and solution; no figure.
 
 ## Scores
-illustrations n/a (no figure) · typography 5 · Finnish 4 · accessibility 5
+illustrations n/a (no figure) · typography 4 · Finnish 5 · accessibility 5

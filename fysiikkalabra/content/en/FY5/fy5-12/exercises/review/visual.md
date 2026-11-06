@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: b5a6b2f9904f4525
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 592a69c2bb05368a
+Mode: delta, round 1 (new task fy5-12-L2-08 in en; L2-08, "which line is wrong" (line 4 conclusion))
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] sticky tab bar (Examples/Check/Exercises) overlaps the card in element screenshots only; a capture artefact, not a page defect.
 
 ## Checked
-- fy5-12-open-exercises-1280-6.png (L1-06 solution, L1-07 choices): clean, no Finnish, no clipping.
-- fy5-12-open-exercises-L2-1280-6.png (L2-05 table with six points, solution, formulas): table and calculation boxes legible.
-- Data tables L2-05, L2-07, L3-05: captions translated, columns and cells match fi.
+- Own 390 px render of fy5-12-L2-08 (en) after the page scripts ran, answer feedback and solution open: page scrollWidth 390, no element clipped outside a scroll box, no .kx-wide line needed, no KaTeX error nodes.
+- Situation, question, choice rows, feedback box, FIND/PRINCIPLE/MODEL ANSWER block read in full: units and quantities set as maths, calculation rows stacked and aligned, no plain-text quantity or stray symbol.
+- Language read in en: natural, consistent with the chapter terms, instructions clear.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 5

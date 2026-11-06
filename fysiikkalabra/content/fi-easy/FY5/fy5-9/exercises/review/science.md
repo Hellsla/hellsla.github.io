@@ -1,16 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 51eea64f715b2cd3
-Mode: full
-Round: 1
+CONTENT-HASH: a81094fffe435f50
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
 
 ## Fixed
-- None needed: the translation text already matches the reviewed Finnish.
+(none needed)
 
 ## Polish
+(none)
 
 ## Checked
-- exercises.json, new tasks L1-06..08, L2-05..07, L3-04, L3-05: ids, answers, units, tolerances and correct flags identical to Finnish; numbers, formulas and data-table cells identical (decimal comma in text, point in tables as in fi).
-- Choice order and correct options match Finnish; feedback keeps the same reasoning, split into shorter sentences.
-- solutions.md of all 20 tasks: every number matches Finnish (script comparison); simplifications (hitaus explained, silmämääräinen sovitus explained) do not change the physics.
+- New task fy5-9-L2-08 (pendulum vs spring on the Moon (T ratio sqrt(9.81/1.62) = 2.46, spring unchanged) with reason step) compared with content/fi: answer, unit, tolerance, correct flags, choices/statements/order, every number and formula identical; fi-easy follows NOTES.md section 12: shorter sentences, same physics and numbers, terms explained.
+- Recomputed independently: answers and all numbers in the task and its solution agree with fi.
+- solutions.md section for fy5-9-L2-08: same structure and numbers as fi; the physics and its conditions unchanged.
+- check_i18n.py: no errors for fy5-9; build.py fy5-9 succeeds.
