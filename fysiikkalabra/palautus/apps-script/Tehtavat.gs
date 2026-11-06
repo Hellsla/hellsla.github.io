@@ -161,23 +161,23 @@ var RL_COURSE = {
    "self": [
     {
      "id": "lahtolippu",
-     "label": "Pohdintatehtävä"
+     "label": "1. Pohdintatehtävä"
     },
     {
      "id": "check-1",
-     "label": "1. Käsitetehtävä"
+     "label": "2. Käsitetehtävä"
     },
     {
      "id": "check-c2",
-     "label": "2. Käsitetehtävä: Massa ja paino arkikielessä"
+     "label": "3. Käsitetehtävä: Massa ja paino arkikielessä"
     },
     {
      "id": "check-2",
-     "label": "3. Laskutehtävä: Kuvaaja ja laskeminen"
+     "label": "4. Laskutehtävä: Kuvaaja ja laskeminen"
     },
     {
      "id": "check-3",
-     "label": "4. Selitystehtävä: Selitä ja siirrä"
+     "label": "5. Selitystehtävä: Selitä ja siirrä"
     },
     {
      "id": "tavoite-1",
@@ -349,23 +349,23 @@ var RL_COURSE = {
    "self": [
     {
      "id": "lahtolippu",
-     "label": "Pohdintatehtävä"
+     "label": "1. Pohdintatehtävä"
     },
     {
      "id": "check-1",
-     "label": "1. Käsitetehtävä"
+     "label": "2. Käsitetehtävä"
     },
     {
      "id": "check-c2",
-     "label": "2. Käsitetehtävä: Kantaminen ja työ"
+     "label": "3. Käsitetehtävä: Kantaminen ja työ"
     },
     {
      "id": "check-2",
-     "label": "3. Laskutehtävä: Kuvaaja ja laskeminen"
+     "label": "4. Laskutehtävä: Kuvaaja ja laskeminen"
     },
     {
      "id": "check-3",
-     "label": "4. Selitystehtävä: Selitä ja siirrä"
+     "label": "5. Selitystehtävä: Selitä ja siirrä"
     },
     {
      "id": "tavoite-1",
@@ -537,23 +537,23 @@ var RL_COURSE = {
    "self": [
     {
      "id": "lahtolippu",
-     "label": "Pohdintatehtävä"
+     "label": "1. Pohdintatehtävä"
     },
     {
      "id": "check-1",
-     "label": "1. Käsitetehtävä"
+     "label": "2. Käsitetehtävä"
     },
     {
      "id": "check-c2",
-     "label": "2. Käsitetehtävä: Lämpötilan kasvu"
+     "label": "3. Käsitetehtävä: Lämpötilan kasvu"
     },
     {
      "id": "check-2",
-     "label": "3. Laskutehtävä: Taulukko ja ekstrapolointi"
+     "label": "4. Laskutehtävä: Taulukko ja ekstrapolointi"
     },
     {
      "id": "check-3",
-     "label": "4. Selitystehtävä"
+     "label": "5. Selitystehtävä"
     },
     {
      "id": "tavoite-1",
@@ -725,23 +725,23 @@ var RL_COURSE = {
    "self": [
     {
      "id": "lahtolippu",
-     "label": "Pohdintatehtävä"
+     "label": "1. Pohdintatehtävä"
     },
     {
      "id": "tarkistus-1",
-     "label": "1. Käsitetehtävä: Mitä epävarmuus kertoo"
+     "label": "2. Käsitetehtävä: Mitä epävarmuus kertoo"
     },
     {
      "id": "check-c2",
-     "label": "2. Käsitetehtävä: Suora ja mittauspisteet"
+     "label": "3. Käsitetehtävä: Suora ja mittauspisteet"
     },
     {
      "id": "tarkistus-2",
-     "label": "3. Laskutehtävä: Nollapiste kahdesta pisteestä"
+     "label": "4. Laskutehtävä: Nollapiste kahdesta pisteestä"
     },
     {
      "id": "tarkistus-3",
-     "label": "4. Selitystehtävä: Selitä ja arvioi"
+     "label": "5. Selitystehtävä: Selitä ja arvioi"
     },
     {
      "id": "tavoite-1",
@@ -913,23 +913,23 @@ var RL_COURSE = {
    "self": [
     {
      "id": "lahtolippu",
-     "label": "Pohdintatehtävä"
+     "label": "1. Pohdintatehtävä"
     },
     {
      "id": "check-1",
-     "label": "1. Käsitetehtävä"
+     "label": "2. Käsitetehtävä"
     },
     {
      "id": "check-c2",
-     "label": "2. Käsitetehtävä: Astian muoto"
+     "label": "3. Käsitetehtävä: Astian muoto"
     },
     {
      "id": "check-2",
-     "label": "3. Laskutehtävä: Kuvaaja ja laskeminen"
+     "label": "4. Laskutehtävä: Kuvaaja ja laskeminen"
     },
     {
      "id": "check-3",
-     "label": "4. Selitystehtävä: Selitä ja siirrä"
+     "label": "5. Selitystehtävä: Selitä ja siirrä"
     },
     {
      "id": "tavoite-1",
@@ -1101,23 +1101,23 @@ var RL_COURSE = {
    "self": [
     {
      "id": "lahtolippu",
-     "label": "Pohdintatehtävä"
+     "label": "1. Pohdintatehtävä"
     },
     {
      "id": "check-1",
-     "label": "1. Käsitetehtävä"
+     "label": "2. Käsitetehtävä"
     },
     {
      "id": "check-c2",
-     "label": "2. Käsitetehtävä: Lämpö ja sisäenergia"
+     "label": "3. Käsitetehtävä: Lämpö ja sisäenergia"
     },
     {
      "id": "check-2",
-     "label": "3. Laskutehtävä: Energiakirjanpito"
+     "label": "4. Laskutehtävä: Energiakirjanpito"
     },
     {
      "id": "check-3",
-     "label": "4. Selitystehtävä: Selitä ja siirrä"
+     "label": "5. Selitystehtävä: Selitä ja siirrä"
     },
     {
      "id": "tavoite-1",
@@ -1289,23 +1289,23 @@ var RL_COURSE = {
    "self": [
     {
      "id": "lahtolippu",
-     "label": "Pohdintatehtävä"
+     "label": "1. Pohdintatehtävä"
     },
     {
      "id": "tarkistus-1",
-     "label": "1. Käsitetehtävä"
+     "label": "2. Käsitetehtävä"
     },
     {
      "id": "check-c2",
-     "label": "2. Käsitetehtävä: Lämpötasapaino"
+     "label": "3. Käsitetehtävä: Lämpötasapaino"
     },
     {
      "id": "tarkistus-2",
-     "label": "3. Laskutehtävä: Kalorimetrinen mittaus"
+     "label": "4. Laskutehtävä: Kalorimetrinen mittaus"
     },
     {
      "id": "tarkistus-3",
-     "label": "4. Selitystehtävä: Selitä ja siirrä"
+     "label": "5. Selitystehtävä: Selitä ja siirrä"
     },
     {
      "id": "tavoite-1",
@@ -1477,23 +1477,23 @@ var RL_COURSE = {
    "self": [
     {
      "id": "lahtolippu",
-     "label": "Pohdintatehtävä"
+     "label": "1. Pohdintatehtävä"
     },
     {
      "id": "check-1",
-     "label": "1. Käsitetehtävä"
+     "label": "2. Käsitetehtävä"
     },
     {
      "id": "check-c2",
-     "label": "2. Käsitetehtävä: Kiehuva vesi"
+     "label": "3. Käsitetehtävä: Kiehuva vesi"
     },
     {
      "id": "check-2",
-     "label": "3. Laskutehtävä: Lämpenemiskäyrä"
+     "label": "4. Laskutehtävä: Lämpenemiskäyrä"
     },
     {
      "id": "check-3",
-     "label": "4. Selitystehtävä: Selitä ja siirrä"
+     "label": "5. Selitystehtävä: Selitä ja siirrä"
     },
     {
      "id": "tavoite-1",
@@ -1665,23 +1665,23 @@ var RL_COURSE = {
    "self": [
     {
      "id": "lahtolippu",
-     "label": "Pohdintatehtävä"
+     "label": "1. Pohdintatehtävä"
     },
     {
      "id": "tarkistus-1",
-     "label": "1. Käsitetehtävä"
+     "label": "2. Käsitetehtävä"
     },
     {
      "id": "check-c2",
-     "label": "2. Käsitetehtävä: Kylmä jääpala vedessä"
+     "label": "3. Käsitetehtävä: Kylmä jääpala vedessä"
     },
     {
      "id": "tarkistus-2",
-     "label": "3. Laskutehtävä"
+     "label": "4. Laskutehtävä"
     },
     {
      "id": "tarkistus-3",
-     "label": "4. Selitystehtävä: Selitä ja siirrä"
+     "label": "5. Selitystehtävä: Selitä ja siirrä"
     },
     {
      "id": "tavoite-1",
@@ -1853,23 +1853,23 @@ var RL_COURSE = {
    "self": [
     {
      "id": "lahtolippu",
-     "label": "Pohdintatehtävä"
+     "label": "1. Pohdintatehtävä"
     },
     {
      "id": "check-1",
-     "label": "1. Käsitetehtävä"
+     "label": "2. Käsitetehtävä"
     },
     {
      "id": "check-c2",
-     "label": "2. Käsitetehtävä: Reikä lämpiää"
+     "label": "3. Käsitetehtävä: Reikä lämpiää"
     },
     {
      "id": "check-2",
-     "label": "3. Laskutehtävä: Taulukko ja laskeminen"
+     "label": "4. Laskutehtävä: Taulukko ja laskeminen"
     },
     {
      "id": "check-3",
-     "label": "4. Selitystehtävä: Selitä ja siirrä"
+     "label": "5. Selitystehtävä: Selitä ja siirrä"
     },
     {
      "id": "tavoite-1",
@@ -2041,23 +2041,23 @@ var RL_COURSE = {
    "self": [
     {
      "id": "loppukysymykset",
-     "label": "Pohdintatehtävä"
+     "label": "1. Pohdintatehtävä"
     },
     {
      "id": "check-1",
-     "label": "1. Käsitetehtävä"
+     "label": "2. Käsitetehtävä"
     },
     {
      "id": "check-c2",
-     "label": "2. Käsitetehtävä: Kelvinlämpötila"
+     "label": "3. Käsitetehtävä: Kelvinlämpötila"
     },
     {
      "id": "check-2",
-     "label": "3. Laskutehtävä: Kuvaaja ja laskeminen"
+     "label": "4. Laskutehtävä: Kuvaaja ja laskeminen"
     },
     {
      "id": "check-3",
-     "label": "4. Selitystehtävä: Selitä koe"
+     "label": "5. Selitystehtävä: Selitä koe"
     },
     {
      "id": "tavoite-1",
@@ -2229,23 +2229,23 @@ var RL_COURSE = {
    "self": [
     {
      "id": "lahtolippu",
-     "label": "Pohdintatehtävä"
+     "label": "1. Pohdintatehtävä"
     },
     {
      "id": "check-1",
-     "label": "1. Käsitetehtävä"
+     "label": "2. Käsitetehtävä"
     },
     {
      "id": "check-c2",
-     "label": "2. Käsitetehtävä: Kelvinlämpötila"
+     "label": "3. Käsitetehtävä: Kelvinlämpötila"
     },
     {
      "id": "check-2",
-     "label": "3. Laskutehtävä: Ennuste simulaation tilalle"
+     "label": "4. Laskutehtävä: Ennuste simulaation tilalle"
     },
     {
      "id": "check-3",
-     "label": "4. Selitystehtävä: Selitä punnituksen avulla"
+     "label": "5. Selitystehtävä: Selitä punnituksen avulla"
     },
     {
      "id": "tavoite-1",
@@ -2417,23 +2417,23 @@ var RL_COURSE = {
    "self": [
     {
      "id": "lahtolippu",
-     "label": "Pohdintatehtävä"
+     "label": "1. Pohdintatehtävä"
     },
     {
      "id": "check-1",
-     "label": "1. Käsitetehtävä"
+     "label": "2. Käsitetehtävä"
     },
     {
      "id": "check-c2",
-     "label": "2. Käsitetehtävä: Lämpöpumppu"
+     "label": "3. Käsitetehtävä: Lämpöpumppu"
     },
     {
      "id": "check-2",
-     "label": "3. Laskutehtävä: Kuvaaja ja laskeminen"
+     "label": "4. Laskutehtävä: Kuvaaja ja laskeminen"
     },
     {
      "id": "check-3",
-     "label": "4. Selitystehtävä: Selitä ja siirrä"
+     "label": "5. Selitystehtävä: Selitä ja siirrä"
     },
     {
      "id": "tavoite-1",
@@ -2605,23 +2605,23 @@ var RL_COURSE = {
    "self": [
     {
      "id": "lahtolippu",
-     "label": "Pohdintatehtävä"
+     "label": "1. Pohdintatehtävä"
     },
     {
      "id": "check-1",
-     "label": "1. Käsitetehtävä"
+     "label": "2. Käsitetehtävä"
     },
     {
      "id": "check-c2",
-     "label": "2. Käsitetehtävä: Miksi hyötysuhteet eroavat"
+     "label": "3. Käsitetehtävä: Miksi hyötysuhteet eroavat"
     },
     {
      "id": "check-2",
-     "label": "3. Laskutehtävä"
+     "label": "4. Laskutehtävä"
     },
     {
      "id": "check-3",
-     "label": "4. Selitystehtävä: Selitä ja vertaa"
+     "label": "5. Selitystehtävä: Selitä ja vertaa"
     },
     {
      "id": "tavoite-1",
@@ -2793,23 +2793,23 @@ var RL_COURSE = {
    "self": [
     {
      "id": "lahtolippu",
-     "label": "Pohdintatehtävä"
+     "label": "1. Pohdintatehtävä"
     },
     {
      "id": "check-1",
-     "label": "1. Käsitetehtävä"
+     "label": "2. Käsitetehtävä"
     },
     {
      "id": "check-c2",
-     "label": "2. Käsitetehtävä: Lämmön siirtymistapa"
+     "label": "3. Käsitetehtävä: Lämmön siirtymistapa"
     },
     {
      "id": "check-2",
-     "label": "3. Laskutehtävä: Ilmakehän energiatase"
+     "label": "4. Laskutehtävä: Ilmakehän energiatase"
     },
     {
      "id": "check-3",
-     "label": "4. Selitystehtävä: Selitä ja siirrä"
+     "label": "5. Selitystehtävä: Selitä ja siirrä"
     },
     {
      "id": "tavoite-1",
@@ -2981,23 +2981,23 @@ var RL_COURSE = {
    "self": [
     {
      "id": "lahtolippu",
-     "label": "Pohdintatehtävä"
+     "label": "1. Pohdintatehtävä"
     },
     {
      "id": "check-1",
-     "label": "1. Käsitetehtävä"
+     "label": "2. Käsitetehtävä"
     },
     {
      "id": "check-c2",
-     "label": "2. Käsitetehtävä: Sulamislämpö kylmälaukussa"
+     "label": "3. Käsitetehtävä: Sulamislämpö kylmälaukussa"
     },
     {
      "id": "check-2",
-     "label": "3. Laskutehtävä: Kaksi energian kohdetta"
+     "label": "4. Laskutehtävä: Kaksi energian kohdetta"
     },
     {
      "id": "check-3",
-     "label": "4. Selitystehtävä: Selitä ja siirrä"
+     "label": "5. Selitystehtävä: Selitä ja siirrä"
     },
     {
      "id": "tavoite-1",
