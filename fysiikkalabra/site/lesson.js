@@ -297,6 +297,53 @@
     }
     return viaEvent();
   };
+  // A pasted picture's size (teacher 2026-11-06, "haluan pienentää kuvaa"): a click on a picture (not a formula) in the
+  // editor shows a bar under it, Pieni / Keskikoko / Iso (a quarter, half or all of the editor's width) and
+  // Alkuperäinen, and a handle at its corner to drag any size. The size is the picture's width attribute in CSS
+  // pixels (the vendored editor keeps it, vendor/digabi/README.md), never more than the picture's own pixels, so it is
+  // saved with the solution and goes in the submission file (palautus.js dw). The picture's own pixels are kept.
+  const imageSizer = (box, root) => {
+    const ed = () => root.querySelector('.rich-text-editor');
+    const bar = document.createElement('div'); bar.className = 'pad-img-bar'; bar.hidden = true;
+    bar.setAttribute('role', 'group'); bar.setAttribute('aria-label', msg('pad_img_size'));
+    const handle = document.createElement('span'); handle.className = 'pad-img-handle'; handle.hidden = true; handle.title = msg('pad_img_drag');
+    const SIZES = [['pad_img_small', 0.25], ['pad_img_medium', 0.5], ['pad_img_large', 1], ['pad_img_original', 0]];
+    const btns = SIZES.map(([key, f]) => { const b = document.createElement('button'); b.type = 'button'; b.className = 'pad-btn'; b.textContent = msg(key); b.dataset.f = f; bar.append(b); return b; });
+    box.append(bar, handle);
+    let img = null;
+    const room = () => { const e = ed(), cs = getComputedStyle(e); return Math.max(40, e.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight)); };
+    const fit = (w) => Math.round(Math.max(Math.min(40, img.naturalWidth), Math.min(w, img.naturalWidth || w, room())));
+    const place = () => {
+      if (!img || !img.isConnected) return hide();
+      const b = box.getBoundingClientRect(), r = img.getBoundingClientRect();
+      handle.style.left = (r.right - b.left - 13) + 'px'; handle.style.top = (r.bottom - b.top - 13) + 'px';
+      bar.style.left = Math.max(0, Math.min(r.left - b.left, b.width - bar.offsetWidth)) + 'px'; bar.style.top = (r.bottom - b.top + 6) + 'px';
+    };
+    const hide = () => { if (img) img.classList.remove('pad-img-on'); img = null; bar.hidden = handle.hidden = true; };
+    const show = (i) => { if (img && img !== i) img.classList.remove('pad-img-on'); img = i; i.classList.add('pad-img-on'); bar.hidden = handle.hidden = false; place(); };
+    // the editor reads its content on an input event: its value, the autosave and its own undo then have the new size
+    const commit = () => { const e = ed(); if (e) e.dispatchEvent(new Event('input', { bubbles: true })); place(); };
+    const size = (w) => { if (w) img.setAttribute('width', String(fit(w))); else img.removeAttribute('width'); };
+    root.addEventListener('click', (e) => {
+      const i = e.target.closest && e.target.closest('.rich-text-editor img');
+      if (i && !i.hasAttribute('data-math-image') && !/^data:image\/svg/.test(i.getAttribute('src') || '')) show(i); else hide();
+    });
+    root.addEventListener('input', () => { if (img) requestAnimationFrame(place); });
+    root.addEventListener('keydown', (e) => { if (e.key === 'Escape') hide(); });
+    document.addEventListener('pointerdown', (e) => { if (img && !box.contains(e.target)) hide(); });
+    window.addEventListener('resize', () => { if (img) place(); });
+    // the bar keeps the editor's focus (a blur would hide Abitti's toolbar and move the bar, as in part 10)
+    bar.addEventListener('mousedown', (e) => e.preventDefault());
+    btns.forEach((b) => b.addEventListener('click', () => { if (!img) return; size(Number(b.dataset.f) * room()); commit(); }));
+    handle.addEventListener('pointerdown', (e) => {
+      if (!img) return;
+      e.preventDefault(); handle.setPointerCapture(e.pointerId);
+      const x0 = e.clientX, w0 = img.getBoundingClientRect().width;
+      const move = (m) => { size(w0 + m.clientX - x0); place(); };
+      const up = () => { handle.removeEventListener('pointermove', move); handle.removeEventListener('pointerup', up); handle.removeEventListener('pointercancel', up); commit(); };
+      handle.addEventListener('pointermove', move); handle.addEventListener('pointerup', up); handle.addEventListener('pointercancel', up);
+    });
+  };
   // The open editors by task id (to refresh them after an import or "Poista kaikki") and their pending saves.
   const editors = new Map();
   const saveError = (e) => msg({ quota: 'pad_save_quota', unavailable: 'pad_save_unavailable', corrupt: 'pad_save_corrupt' }[e && e.code] || 'pad_save_failed');
@@ -407,6 +454,7 @@
         answer = { answerHtml: saved.html };
         const ref = window.makeRichText({ container: root, language: 'FI', onLatexUpdate: drawLatex, onValueChange: changed, initialValue: saved.html,
           textAreaProps: { ariaLabelledBy: label.id, lang: document.documentElement.lang } });
+        imageSizer(box, root);
         if (saved.error) say(saveState, saveError(saved.error), 'no');
         else if (saved.html) { say(saveState, msg('pad_restored'), 'ok'); wrote(saved.html); }
         editors.set(task.id, {

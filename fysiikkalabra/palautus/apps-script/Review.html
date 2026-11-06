@@ -428,6 +428,7 @@
         } else p.append(el('code', 'math', it.latex));
       } else if (it.type === 'image' && (it.mime === 'image/png' || it.mime === 'image/jpeg') && B64.test(it.data)) {
         var i = el('img', 'shot'); i.alt = 'Opiskelijan kuva (' + it.w + ' × ' + it.h + ' px), suurenna napsauttamalla'; i.src = 'data:' + it.mime + ';base64,' + it.data;
+        if (it.dw > 0) i.style.width = it.dw + 'px';   // opiskelijan editorissa valitsema koko (6.11.2026)
         i.addEventListener('click', function () { zoom(i.src); }); p.append(i);
       }
     });

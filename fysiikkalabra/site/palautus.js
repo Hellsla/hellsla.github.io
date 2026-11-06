@@ -7,11 +7,12 @@
    File format "ruukkilabra-palautus", version 1 (palautus/TIEDOSTOMUOTO.md is the full description):
      { format, version: 1, chapter, lang, submission_id: 32 hex, exported: ISO time, includes: "solution-editor",
        content_sha256, answers: [ { task, status: "answered" | "empty", content: [item, ...] }, ... ] }
-     item = { type: "text", text } | { type: "math", latex, png?, w?, h? } | { type: "image", mime, data, w, h }
+     item = { type: "text", text } | { type: "math", latex, png?, w?, h? } | { type: "image", mime, data, w, h, dw? }
    Every exercise of the chapter is in `answers`, in page order, an unanswered one as "empty" with no content, so the
    teacher can tell an unanswered task from a missing or broken file. Text keeps its line breaks ("\n"); a formula is
    its LaTeX (the formula image is redrawn as a PNG, `png`, for the teacher's view); a picture is PNG or JPEG data
-   (base64, no "data:" prefix), pasted into the editor with Ctrl+V (teacher 2026-11-05: no separate image button).
+   (base64, no "data:" prefix), pasted into the editor with Ctrl+V (teacher 2026-11-05: no separate image button); `dw`
+   is the width in CSS px the student made it in the editor (teacher 2026-11-06), only when smaller than its own pixels.
    Items keep the order of the solution. No name, e-mail or other chapters.
    content_sha256 is the SHA-256 of the answers without the formula PNGs (JSON, UTF-8): the same solutions keep the
    same random submission_id (kept in localStorage ruukkilabra:palautus:<chapter>), any change gives a new one.
@@ -144,7 +145,11 @@
       let size;
       try { size = await loadImage(url); } catch (e) { throw fail(S('img_broken', { where })); }
       if (size.naturalWidth > LIMITS.side || size.naturalHeight > LIMITS.side) throw fail(S('img_side', { where, n: LIMITS.side }));
-      items.push({ type: 'image', mime: m[1], data: m[2], w: size.naturalWidth, h: size.naturalHeight });
+      const item = { type: 'image', mime: m[1], data: m[2], w: size.naturalWidth, h: size.naturalHeight };
+      // the size the student gave the picture in the editor (lesson.js imageSizer, teacher 2026-11-06): its width in CSS px
+      const dw = Number(img.getAttribute('width'));
+      if (Number.isInteger(dw) && dw >= 1 && dw < size.naturalWidth) item.dw = dw;
+      items.push(item);
     }
     // trim the whitespace at both ends; a solution of only spaces and line breaks is empty
     const first = items[0], last = items[items.length - 1];
