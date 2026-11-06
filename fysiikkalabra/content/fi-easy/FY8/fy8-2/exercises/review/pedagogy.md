@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 4a336f3cfc51a4b8
-Mode: translation
+CONTENT-HASH: e7c7b458ee26ff45
+Mode: delta
 
 ## Blocking
 (none)
@@ -13,4 +13,5 @@ Mode: translation
 - Each feedback names the specific error and repairs it; none gives the answer before the student commits.
 - Solution can be followed step by step (Kysytto, Periaate, Mallivastaus) and matches fi.
 - fi-easy follows NOTES.md section 12 (shorter sentences, terms explained, same physics and numbers as fi).
-- Hash 4a336f3cfc51a4b8 at start and end.
+- Delta: L1-08 student chain now reads E_3 - E_2 = -1.51 eV - (-3.40 eV), that is E_3 - E_2 = 1.89 eV; arithmetic -1.51 + 3.40 = 1.89 correct, same as fi, nothing else changed; answer and options unaffected.
+- Hash e7c7b458ee26ff45 at start and end.

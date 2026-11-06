@@ -87,7 +87,7 @@
     {
       "id": "fy8-2-L1-08",
       "level": 1,
-      "text": "A student solved the problem like this: “A hydrogen atom moves from the state $n = 2$, whose energy is $E_2 = -3.40\\,\\text{eV}$, to the state $n = 3$, whose energy is $E_3 = -1.51\\,\\text{eV}$. The energy of the photon is the difference between the states, $E_3 - E_2 = -1.51\\,\\text{eV} - (-3.40\\,\\text{eV}) = 1.89\\,\\text{eV}$, so the atom emits a photon whose energy is $1.89\\,\\text{eV}$.”\n\nThe numerical value is correct, but the conclusion is not. What is the error in the student's reasoning?",
+      "text": "A student solved the problem like this: “A hydrogen atom moves from the state $n = 2$, whose energy is $E_2 = -3.40\\,\\text{eV}$, to the state $n = 3$, whose energy is $E_3 = -1.51\\,\\text{eV}$. The energy of the photon is the difference between the states, $E_3 - E_2 = -1.51\\,\\text{eV} - (-3.40\\,\\text{eV})$, that is $E_3 - E_2 = 1.89\\,\\text{eV}$, so the atom emits a photon whose energy is $1.89\\,\\text{eV}$.”\n\nThe numerical value is correct, but the conclusion is not. What is the error in the student's reasoning?",
       "kind": [
         "error",
         "concept"

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 37a6048f0a02cb2c
+CONTENT-HASH: cbbbb7286332c468
 
 ## Blocking
 (none)
@@ -12,3 +12,4 @@ CONTENT-HASH: 37a6048f0a02cb2c
 - The solution is split into one step per line (E, lambda for each transition); the arithmetic is unchanged (496, 413 and 282 nm; 282 nm is UV and outside 380-720 nm).
 - The solution now explains A in the same terms as the feedback. The other options and figures are unchanged from Round 1.
 - Method: text only (diff and packet); no renders opened.
+- Delta (older task fy8-2-L1-08): the student's quoted chain is split into "... - (-3,40 eV), eli E_3 - E_2 = 1,89 eV"; wording, values and the error to be found are unchanged, and the split reads naturally. Text only.
