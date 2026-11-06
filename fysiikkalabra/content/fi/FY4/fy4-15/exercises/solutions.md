@@ -208,11 +208,12 @@ $$\begin{aligned}m &= \frac{8{,}64 \cdot 10^{11}\,\text{J}}{9{,}81\,\tfrac{\text
 ## fy4-15-L2-08
 **Kysytty:** tuulivoimalan sähkötehon $P$ suuruusluokka.
 **Periaate:** Roottorin läpi virtaa sekunnissa ilmaa, jonka liike-energia on tuulen teho $\tfrac{1}{2}\rho A v^3$, ja voimala muuttaa siitä sähköksi osuuden $\eta$. Voimala ei saavuta nimellistehoaan, joten kaava $P = \tfrac{1}{2}\eta\rho A v^3$ kuvaa sitä. Nopeus on muunnettava yksikköön $\text{m/s}$, koska se on kaavassa kolmannessa potenssissa.
-**Mallivastaus:** Muunnokset: $v = 36\,\text{km/h} = \dfrac{36\,000\,\text{m}}{3600\,\text{s}} = 10\,\text{m/s}$, säde $r = 100\,\text{m} : 2 = 50\,\text{m}$ ja $\eta = 0{,}40$.
-
-Roottorin pyyhkäisemä pinta-ala ja sähköteho ovat
+**Mallivastaus:** Säde on $r = 100\,\text{m} : 2 = 50\,\text{m}$ ja $\eta = 0{,}40$. Tuulen nopeus muunnetaan yksikköön $\text{m/s}$, ja sitten lasketaan roottorin pyyhkäisemä pinta-ala ja sähköteho:
 
 $$\begin{aligned}
+&v = 36\,\text{km/h} \\
+&\phantom{v} = \dfrac{36\,000\,\text{m}}{3600\,\text{s}} \\
+&\phantom{v} = 10\,\text{m/s} \\
 &A = \pi r^2 = \pi \cdot (50\,\text{m})^2 \\
 &\phantom{A} \approx 7854\,\text{m}^2 \\
 &P = \tfrac{1}{2}\eta\rho A v^3 \\
@@ -221,4 +222,6 @@ $$\begin{aligned}
 &\phantom{P} \approx 1{,}96 \cdot 10^{6}\,\text{W}
 \end{aligned}$$
 
-Sähköteho on suuruusluokaltaan $2\,\text{MW}$. Vääriin vaihtoehtoihin johtavat tyypilliset virheet: jos teho lasketaan verrannolliseksi nopeuteen $v$, tulos on noin $20\,\text{kW}$, ja nopeuden neliöllä $v^2$ noin $0{,}2\,\text{MW}$. Molemmissa unohtuu, että sekä ilmakilogramman liike-energia että sekunnissa virtaava ilman massa kasvavat nopeuden mukana. Jos nopeus sijoitetaan lukuna $36$ ilman muunnosta, tulos on noin $47$ kertaa liian suuri, noin $90\,\text{MW}$. Tulos on järkevä: tuulen teho on $P : \eta \approx 4{,}9\,\text{MW}$, ja sähköksi saadaan alle puolet. Lisäksi luvun esimerkin $120\,\text{m}$:n roottori antoi tuulen nopeudella $9{,}0\,\text{m/s}$ noin $2{,}3\,\text{MW}$, mikä on samaa suuruusluokkaa.
+Sähköteho on suuruusluokaltaan $2\,\text{MW}$. Vääriin vaihtoehtoihin johtavat tyypilliset virheet: jos teho lasketaan verrannolliseksi nopeuteen $v$, tulos on noin $20\,\text{kW}$, ja nopeuden neliöllä $v^2$ noin $0{,}2\,\text{MW}$. Verrannollisuudessa $v$ unohtuvat molemmat nopeuden mukana kasvavat tekijät, ilmakilogramman liike-energia ja sekunnissa virtaavan ilman massa, neliössä $v^2$ vain sekunnissa virtaavan ilman massan kasvu. Jos nopeus sijoitetaan lukuna $36$ ilman muunnosta, tulos on noin $47$ kertaa liian suuri, noin $90\,\text{MW}$.
+
+Tulos on järkevä: tuulen teho on $P : \eta \approx 4{,}9\,\text{MW}$, ja sähköksi saadaan alle puolet. Lisäksi luvun esimerkin $120\,\text{m}$:n roottori antoi tuulen nopeudella $9{,}0\,\text{m/s}$ noin $2{,}3\,\text{MW}$, mikä on samaa suuruusluokkaa.

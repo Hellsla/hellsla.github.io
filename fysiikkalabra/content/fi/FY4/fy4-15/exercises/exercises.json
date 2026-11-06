@@ -240,7 +240,7 @@
       "choices": [
         {
           "text": "$20\\,\\text{kW}$",
-          "feedback": "Tulos syntyy, kun teho lasketaan verrannolliseksi nopeuteen $v$ eikä sen kolmanteen potenssiin. Kun nopeus on $10\\,\\text{m/s}$, kerroin $v^3$ on $100$ kertaa suurempi kuin $v$, joten teho on satakertainen."
+          "feedback": "Tulos syntyy, kun teho lasketaan verrannolliseksi nopeuteen $v$ eikä sen kolmanteen potenssiin. Kun nopeus on $10\\,\\text{m/s}$, lukuarvo $10^3$ on $100$ kertaa $10$, joten teho on satakertainen."
         },
         {
           "text": "$0{,}2\\,\\text{MW}$",

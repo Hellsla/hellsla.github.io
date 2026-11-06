@@ -261,7 +261,7 @@
         "reasoning"
       ],
       "text": "Kitkattomalla pöydällä on kärry, jonka massa on $1{,}6\\,\\text{kg}$. Siihen sidottu kevyt ja venymätön lanka kulkee pöydän reunalla olevan kevyen ja kitkattoman väkipyörän yli, ja langan päässä roikkuu punnus, jonka massa on $0{,}40\\,\\text{kg}$. Kappaleet päästetään liikkeelle levosta, ja ilmanvastus jätetään huomiotta.\n\nSitten koe tehdään toisin päin: pöydällä on $0{,}40\\,\\text{kg}$:n kärry ja langan päässä roikkuu $1{,}6\\,\\text{kg}$:n punnus. Miten langan jännitysvoima $T$ muuttuu, kun toista koetta verrataan ensimmäiseen?",
-      "answer": "Jännitysvoima pysyy samana.",
+      "answer": "Jännitysvoima pysyy yhtä suurena kuin ensimmäisessä kokeessa.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
@@ -270,9 +270,9 @@
           "feedback": "Tässä jännitysvoima on oletettu riippuvan punnuksen painoksi, joka kasvaa nelinkertaiseksi. Kun kappaleet kiihtyvät, punnuksen kokonaisvoima osoittaa alas, joten $T$ on pienempi kuin punnuksen paino."
         },
         {
-          "text": "Jännitysvoima pysyy samana.",
+          "text": "Jännitysvoima pysyy yhtä suurena kuin ensimmäisessä kokeessa.",
           "correct": true,
-          "feedback": "Oikein: kummassakin kokeessa $T \\approx 3{,}1\\,\\text{N}$. Kiihtyvyys sen sijaan kasvaa nelinkertaiseksi, $1{,}96\\,\\text{m/s}^2$:stä $7{,}85\\,\\text{m/s}^2$:iin."
+          "feedback": "Oikein: kummassakin kokeessa $T \\approx 3{,}1\\,\\text{N}$."
         },
         {
           "text": "Jännitysvoima pienenee neljäsosaan.",
@@ -282,7 +282,7 @@
       "reason_prompt": "Mikä perustelu selittää vastauksesi?",
       "reasons": [
         {
-          "text": "Lanka kannattelee riippuvaa punnusta, joten jännitysvoima on yhtä suuri kuin punnuksen paino.",
+          "text": "Lanka kannattelee riippuvaa punnusta, joten jännitysvoima on punnuksen paino, $T = m_2 g$.",
           "feedback": "Tämä on luvun yleinen virhekäsitys. Vain levossa $T = m_2 g$. Kun punnus laskee kiihtyen, $m_2 g - T = m_2 a$ on positiivinen, joten $T < m_2 g$ molemmissa kokeissa."
         },
         {
