@@ -29,8 +29,8 @@ ohjetta, joten kerro opiskelijoille itse (esim. lomakkeen kuvauksessa):
 
 - Kirjoita ratkaisut tehtävien *Kirjoita ratkaisu* -editoriin. Liitä kuvakaappaus editoriin näppäimillä Ctrl+V.
   Rajaa kuvakaappaukseen vain tehtävään kuuluva sisältö.
-- Tiedostoon tulevat vain editoriin kirjoitetut ratkaisut (teksti, kaavat, kuvakaappaukset). Tarkista-kenttien
-  luvut ja valintatehtävien valinnat eivät tule mukaan, joten kirjoita vastaus ja valinta myös ratkaisuun.
+- Tiedostoon tulevat luvun vastaukset: editoriin kirjoitetut ratkaisut (teksti, kaavat, kuvakaappaukset),
+  numerovastaukset yksiköineen, valinnat, tekstivastaukset sekä luvun tavoitearvioiden kooste.
 - Tiedostossa ei ole nimeä, sähköpostia eikä muiden lukujen ratkaisuja. Se tallentuu vain omalle laitteelle
   (yleensä Lataukset-kansioon), ja se palautetaan tällä lomakkeella. Korjatun version voi palauttaa uudelleen.
 

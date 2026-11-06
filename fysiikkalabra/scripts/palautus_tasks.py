@@ -7,7 +7,9 @@ browser, course by course, after their own KaTeX has run, and writes palautus/ap
 teaching order ("FY3 · Luku 4" on the page), each with its exercises in page order with their
 running number ("1-4"), level, statement (text, data table and choices, formulas as MathML, figures as PNG pictures
 so the Apps Script view needs no fonts, styles or scripts from outside) and the short model answer. The answer
-checks, hints, solutions, feedback and which choice is correct are left out. --check fails when the file is not
+checks, hints, solutions, feedback and which choice is correct are left out. Since file version 3 (teacher 2026-11-06
+evening) the lesson's own tasks with an answer follow too (lesson: true, named "Itsearvio: 4. Laskutehtävä"): the grading
+page shows their answers but gives them no points. --check fails when the file is not
 up to date (the build changed an exercise and the generator was not run).
 One local grading page for the running period, palautus/arviointi-<year>-p<period>.html, with the courses that
 palautukset.json has forms for (teacher 2026-11-06: one file, a new one each period); Tehtavat.gs (the Apps Script
@@ -24,6 +26,31 @@ SITE = ROOT / (args[0] if args else "site")
 OUT = ROOT / "palautus/apps-script/Tehtavat.gs"
 GAS_COURSE = "FY3"   # Tehtavat.gs
 
+
+# The self-assessment items of a chapter (teacher 2026-11-06): the id, the page's plain label, and for a task what it asks
+# (its own title without the number and kind, and the start of the question) so that the fingerprint tells its content.
+# Teacher 2026-11-06 evening: the file carries only the goals' summary, so only the goals (tavoite-<n>) are listed.
+SELF_ITEMS = r"""(() => [...document.querySelectorAll('fieldset.sa-rate')].filter((f) => /^tavoite-\d+$/.test(f.dataset.sa || '')).map((f) => {
+  const out = { id: f.dataset.sa, label: f.dataset.label };
+  if (f.closest('details.opt')) out.optional = true;   // a Valinnainen task: not in the summary's average (teacher 2026-11-06)
+  const act = f.closest('.activity');
+  if (!act || /^tavoite-/.test(out.id)) return out;
+  // the question itself: a numeric or explain task's .task, a choice's legend, the reflection's first item (not its answer)
+  const src = act.querySelector('.task, fieldset.choice > legend, ol > li') || act;
+  const c = src.cloneNode(true);
+  const tex = (x) => x.replace(/\\(?:text|mathrm|mathit|mathbf)\{([^{}]*)\}/g, '$1').replace(/\{,\}/g, ',').replace(/\\[,;:!]|~/g, ' ').replace(/\\cdot/g, '·')
+         .replace(/\\t?frac\{([^{}]*)\}\{([^{}]*)\}/g, '$1/$2').replace(/\\Delta\s*/g, 'Δ').replace(/\\(?:left|right)/g, '').replace(/\\([a-zA-Z]+)/g, '$1').replace(/[{}]/g, '').replace(/\s+/g, ' ').trim();
+  // a formula as short plain text (3,0 cm, F = ma); a closed box is not typeset yet, so its $…$ too
+  c.querySelectorAll('.katex').forEach((k) => { const a = k.querySelector('annotation'); k.replaceWith(tex(a ? a.textContent : k.textContent)); });
+  c.querySelectorAll('details, .feedback, .choices, button, output, .practice-hint, input, textarea, select, form, .hints, .model, script, style, [hidden]').forEach((e) => e.remove());
+  const q = c.textContent.replace(/\$([^$]*)\$/g, (m, x) => tex(x)).replace(/\s+/g, ' ').trim();
+  const t = /^\s*\d+\.\s*[^:]+(?::\s*(.+))?$/.exec(out.label || '');
+  const own = t && t[1] ? t[1].trim() : '';
+  out.full = [own, q].filter(Boolean).join(': ') || out.label;
+  out.label = out.full;   // one row each: the page cuts it to the column with … and shows the rest on hover
+  out.kind = (f.dataset.label || '').replace(/:.*$/, '');
+  return out;
+}))()"""
 
 def pages(course):
     """The Finnish pages of the course with the button (build.py submission_script), as chapter ids."""
@@ -57,9 +84,9 @@ EXTRACT = r"""(id) => {
       if (!keep.includes(a.name)) e.removeAttribute(a.name);
     }));
   };
-  // the exercises and the FY9 review tasks (div.practice-task) that templates/palautus.js puts in the file
-  const lis = [...page.querySelectorAll('#exercises li[id], #exercises div.practice-task[id]')].filter((t) => (t.matches('li') ? t.querySelector(':scope > .task')
-    : !t.querySelector(':scope > ol.parts') || t.querySelector(':scope > ol.parts > li:not(:has(.choices))')));
+  // the tasks templates/palautus.js puts in the file, from the page's own list (window.flSubmissionTasks, version 3):
+  // the exercises and FY9 review tasks, and the lesson's own tasks with an answer (teacher 2026-11-06 evening)
+  const lis = window.flSubmissionTasks();
   // a review task's short answer: the answer step of each part of its model solution, under the part's heading
   const reviewAnswer = (li) => {
     const steps = [...li.querySelectorAll(':scope > details.reveal .steps')];
@@ -74,7 +101,24 @@ EXTRACT = r"""(id) => {
     });
     return box.childNodes.length ? box : null;
   };
+  // a lesson task's name in the list: its stage and its own title ("Itsearvio: 4. Laskutehtävä"), the title of the
+  // closed box it sits in when it has no heading of its own
+  const stageOf = (t) => { const h = t.closest('section.stage') && t.closest('section.stage').querySelector(':scope > h2');
+    return h ? [...h.childNodes].filter((n) => !(n.classList && n.classList.contains('stage-no'))).map((n) => n.textContent).join('').trim() : ''; };
+  const nameOf = (t) => { const h = t.querySelector(':scope > h3'); if (h) return h.textContent.trim();
+    const d = t.parentElement.closest('details.opt'), sum = d && d.querySelector(':scope > summary');
+    return sum ? [...sum.childNodes].filter((n) => !(n.classList && n.classList.contains('opt-tag'))).map((n) => n.textContent).join('').trim() : t.id; };
   return lis.map((li) => {
+    if (!li.closest('#exercises')) {
+      li.querySelectorAll('.fig, figure').forEach((f) => f.removeAttribute('data-rl-fig'));
+      [...li.querySelectorAll('.fig, figure')].filter((f) => !f.parentElement.closest('.fig, figure')).forEach((f, i) => f.setAttribute('data-rl-fig', String(i)));
+      const c = li.cloneNode(true);
+      c.querySelectorAll('[data-rl-fig]').forEach((f) => { const i = f.getAttribute('data-rl-fig'); const img = document.createElement('img'); const lab = f.querySelector('[aria-label]'); img.setAttribute('alt', lab ? lab.getAttribute('aria-label') : ''); img.setAttribute('src', 'FIG:' + i); img.className = 'fig'; f.replaceWith(img); });
+      c.querySelectorAll('h3, .sa-rate, .exp-table, .exp-status, .exp-controls, .exp-buttons, .practice-hint, .hints, .model, .crit-result, ul.criteria, .lock-note, .act-core, .pending, .revise, .my-predictions, textarea, select, .tf-opts, .ord-right, .copy-notes, .explain-status, .drew').forEach((e) => e.remove());
+      c.querySelectorAll('legend').forEach((l) => { const q = document.createElement('p'); q.innerHTML = l.innerHTML; l.replaceWith(q); });   // a lesson choice's question is its legend
+      strip(c);
+      return { id: window.flSubmissionTaskId(li), dom: li.id, number: [stageOf(li), nameOf(li)].filter(Boolean).join(': '), level: 0, lesson: true, html: c.innerHTML.replace(/\s+/g, ' ').trim(), answer: '' };
+    }
     const answer = li.matches('li') ? li.querySelector(':scope > details.answer > :not(summary)') : null;
     const ans = answer ? answer.cloneNode(true) : (li.matches('li') ? null : reviewAnswer(li));
     // figures become pictures (filled in by the caller from element screenshots)
@@ -109,21 +153,27 @@ def collect(course):
             # which fires later; on a slow CI machine the old fixed waits read some boxes as raw LaTeX, 2026-11-06).
             pg.evaluate("""() => document.querySelectorAll('#exercises details').forEach((d) => {
               if (d.closest('.level, .answer') || d.matches('.level, .answer') || d.matches('.practice-task > details.reveal')) { d.open = true; if (d.flMathOpen) d.flMathOpen(); } })""")
-            pg.wait_for_function("""() => ![...document.querySelectorAll('#exercises details.level, #exercises details.answer, #exercises .practice-task > details.reveal')].some((d) => !d.open || d.dataset.flMath === 'wait' || d.classList.contains('fl-math-later'))""")
+            # the lesson's own tasks in a closed box (Valinnainen, the Ennusta box): opened and typeset too (version 3)
+            pg.evaluate("""() => document.querySelectorAll('details.opt, details.fold').forEach((d) => { if (!d.closest('#exercises')) { d.open = true; if (d.flMathOpen) d.flMathOpen(); } })""")
+            pg.wait_for_function("""() => ![...document.querySelectorAll('#exercises details.level, #exercises details.answer, #exercises .practice-task > details.reveal, details.opt, details.fold')].some((d) => !d.open || d.dataset.flMath === 'wait' || d.classList.contains('fl-math-later'))""")
             pg.evaluate("document.fonts ? document.fonts.ready.then(() => true) : true")
             pg.wait_for_timeout(200)
+            pg.wait_for_function("typeof window.flSubmissionTasks === 'function'")
             tasks = pg.evaluate(EXTRACT)
+            tasks = [t for t in tasks if not t.get("lesson")] + [t for t in tasks if t.get("lesson")]   # the exercises first in the grading list, then the lesson's tasks
             for t in tasks:
-                figs = pg.locator(f'[id="{t["id"]}"] [data-rl-fig]')
+                dom = t.pop("dom", t["id"])   # a lesson task's page id (its id in the file has the chapter in front)
+                figs = pg.locator(f'[id="{dom}"] [data-rl-fig]')
                 for i in range(figs.count()):   # each figure of the task, choices too (before 2026-11-06 only the task's own)
-                    png = base64.b64encode(pg.locator(f'[id="{t["id"]}"] [data-rl-fig="{i}"]').screenshot(type="png", animations="disabled")).decode()
+                    png = base64.b64encode(pg.locator(f'[id="{dom}"] [data-rl-fig="{i}"]').screenshot(type="png", animations="disabled")).decode()
                     t["html"] = t["html"].replace(f'src="FIG:{i}"', f'src="data:image/png;base64,{png}"')
                 if "FIG:" in t["html"]: sys.exit(f"{pid} {t['id']}: a figure was not drawn for the grading view")
             title = pg.evaluate("(() => { const h = document.querySelector('main h1').cloneNode(true); h.querySelectorAll('.katex').forEach((k) => { const a = k.querySelector('annotation'); k.replaceWith(a ? a.textContent : k.textContent); }); return h.textContent; })()").strip()
             eyebrow = pg.evaluate("(() => { const e = document.querySelector('.ch-no'); return e ? e.textContent : ''; })()")
             m = re.search(r"Luku\s+(\d+(?:\.\d+)?)", eyebrow)   # "Luku 4", a FY9 review lesson "Luku 2.1"
             # guided self-assessment of Tarkista osaamisesi (teacher 2026-11-06): its items in page order, id and plain label
-            self_items = pg.evaluate("[...document.querySelectorAll('fieldset.sa-rate')].map((f) => ({ id: f.dataset.sa, label: f.dataset.label }))")
+            # teacher 2026-11-06: "Käsitetehtävä 1" tells too little, so a task's item carries its own title and question
+            self_items = pg.evaluate(SELF_ITEMS)
             ch = {"id": pid, "number": (int(m.group(1)) if m.group(1).isdigit() else m.group(1)) if m else int(pid.split("-")[1]), "title": re.sub(r"\s+", " ", title).replace("\\Delta ", "Δ").replace("\\Delta", "Δ"), "tasks": tasks}
             if self_items: ch["self"] = self_items
             chapters.append(ch)

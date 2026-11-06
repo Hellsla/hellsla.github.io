@@ -41,8 +41,11 @@ samanlainen, joten kaikki kielet arvioidaan samalla sivulla.
    lomakkeen zipiä se ei lue samaan ryhmään. Toisen kurssin (jota ei ole tämän periodin sivulla) zipiä ei lueta. Jokaisella ryhmällä on omat opiskelijat, pisteet,
    CSV ja varmuuskopio.
 4. **Kooste** (ylhäällä): opiskelijat aakkosjärjestyksessä ja sarakkeet **Tehty** (tehtäviä, joihin on ratkaisu / tehtäviä),
-   **Tarkistamatta** (tehtyjä ilman pisteitä) ja **Pisteet** (summa / enimmäispisteet). Valinnasta saa kaikki palautetut
-   luvut yhdessä tai yhden luvun. Sarakkeen otsikko järjestää taulukon (uusi napsautus kääntää järjestyksen). Luvut
+   **Tarkistamatta** (tehtyjä ilman pisteitä), **Pisteet** (summa / enimmäispisteet) ja **Itsearvio** (keskiarvo,
+   4 = osaan niin hyvin, että voisin opettaa kaverille … 1 = tarvitsen vielä harjoitusta; luvun tavoitearvioista,
+   *En ole vielä harjoitellut* ei ole mukana). Ylhäällä oleva **Luvut**-valinta (mistä luvusta mihin) rajaa koosteen, tehtävät ja sormenjäljen.
+   **Osaamisen sormenjälki** näyttää koko ryhmän tavoitearviot yhdessä taulukossa: rivit ovat luvun tavoitteet luvuittain, sarakkeissa
+   opiskelijat. Valkoinen = ei vastattu, harmaa = en ole vielä harjoitellut. Koko teksti näkyy hiiren alla. Sarakkeen otsikko järjestää taulukon (uusi napsautus kääntää järjestyksen). Luvut
    lasketaan opiskelijan uusimmasta hyväksytystä palautuksesta. Palkit näyttävät tehdyt tehtävät ja pisteet suhteessa
    enimmäismäärään, opiskelijoittain ja koko ryhmälle (Kooste-otsikon alla).
 5. **Tehtävät**: jokainen luku on oma laatikkonsa, ja ne luvut, joista on palautuksia, ovat auki. Valitse tehtävä ja

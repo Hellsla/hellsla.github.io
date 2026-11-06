@@ -300,8 +300,8 @@
     "sa_c": "I partly know this, but I am still unsure",
     "sa_d": "I still need practice and time to understand this",
     "sa_x": "I have not practised this yet",
-    "sa_goals_title": "Finally, assess what you learned",
-    "sa_goals_lead": "Your self-assessment is included when you submit the chapter's tasks.",
+    "sa_goals_title": "Assess what you learned",
+    "sa_goals_lead": "These goal assessments are included when you submit the chapter's tasks.",
     "sa_goal_prefix": "I learned to",
     "sa_x_short": "Not yet"
   },

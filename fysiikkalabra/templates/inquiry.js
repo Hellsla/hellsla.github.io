@@ -7,7 +7,8 @@
       the simulation cannot test (an explanation), once the linked theory section has been on screen.
    2. Plain choices: feedback for the selected option after "Vastaa" (why it is wrong); one change of answer, then the
       correct option is shown with its reasoning (teacher 2026-11-03). 2b–2c: true-or-false lists and ordering tasks
-      (teacher 2026-11-05) answered at once, the wrong items marked, one change, then the right answers.
+      (teacher 2026-11-05) answered at once, the wrong items marked, one change, then the right answers; the marks are
+      kept on this device (lesson.js 1b) and put back after a reload.
    3. Experiments (.experiment): drive window.simAdapter — set the initial conditions, lock the controlled
       parameters, record the varied parameter and the measured quantities into a table, reset. The table is kept in
       localStorage (ruukkilabra:<page>:koe<n>) until Nollaa, and copied with Kopioi taulukko (TSV)
@@ -96,7 +97,10 @@
 
   // 1–2. choices
   document.querySelectorAll('fieldset.choice').forEach((fs) => {
-    const id = fs.closest('.activity')?.id || fs.querySelector('input')?.name || '';
+    // its key: an exercise's choice (and a two-stage task's reason, "-why") by its radio name, the task's own id, since all
+    // exercises sit in one activity (before 2026-11-06 they shared one key); a lesson task's first choice by its activity
+    const act = fs.closest('.activity'), name = fs.querySelector('input')?.name || '';
+    const id = fs.closest('#exercises li[id], .practice-task[id]') ? name : (act && act.querySelector('fieldset.choice') === fs && act.id) || name;
     const radios = [...fs.querySelectorAll('input[type=radio]')], out = fs.querySelector('output');
     const btn = fs.querySelector('button.commit'), pending = fs.querySelector('.pending'), justify = fs.querySelector('.justify textarea');
     const reveal = fs.dataset.reveal, min = Number(fs.dataset.revealMin || 1);
@@ -156,11 +160,21 @@
 
   // 2b–2c. A list answered at once (teacher 2026-11-05): true-or-false statements (fieldset.tf) and putting items in
   // order (fieldset.order). "Vastaa" needs every item; the first answer marks the wrong items, they may be changed
-  // once, and then every item shows its right answer and (a statement) its reasoning. Not stored: a page reload starts over.
+  // once, and then every item shows its right answer and (a statement) its reasoning. The marks are kept (lesson.js 1b);
+  // the tries are not, so after a reload the list is answered again from the kept marks.
   document.querySelectorAll('fieldset.tf, fieldset.order').forEach((fs) => {
     const tf = fs.classList.contains('tf'), rows = [...fs.querySelectorAll(tf ? '.tf-list > li' : '.order-list > li')];
     const out = fs.querySelector('output'), btn = fs.querySelector('button.commit');
     const given = (li) => tf ? li.querySelector('input:checked')?.value : li.querySelector('select').value;
+    // the student's marks kept on this device (lesson.js 1b) and put back after a reload, unchecked: "Vastaa" again
+    const A = window.flAnswers, k = A ? A.key(fs, tf ? 'tf' : 'ord', 'fieldset.tf, fieldset.order') : null;
+    const saved = A ? A.get(k) : null;
+    if (Array.isArray(saved)) rows.forEach((li, i) => {
+      const v = saved[i]; if (typeof v !== 'string' || !v) return;
+      if (tf) { const r = li.querySelector(`input[value="${CSS.escape(v)}"]`); if (r) r.checked = true; }
+      else { const sel = li.querySelector('select'); if ([...sel.options].some((o) => o.value === v)) sel.value = v; }
+    });
+    const keep = () => { if (A) A.set(k, rows.some((li) => given(li)) ? rows.map((li) => given(li) || '') : ''); };
     const right = (li) => given(li) === (tf ? li.dataset.true : li.dataset.rank);
     const say = (text, state) => { out.textContent = text; out.dataset.state = state; fs.dataset.state = state === 'hint' ? '' : state; };
     let tries = 0;
@@ -185,7 +199,7 @@
       if (tries < 2) { wrong.forEach((li) => { li.dataset.state = 'no'; }); say(msg('list_wrong', { n: wrong.length, total: rows.length }), 'no'); return; }
       say(msg('list_reveal'), 'no'); reveal(); finish();
     });
-    fs.addEventListener('change', (ev) => { const li = ev.target.closest('li'); if (li && tries < 2) delete li.dataset.state; });
+    fs.addEventListener('change', (ev) => { keep(); const li = ev.target.closest('li'); if (li && tries < 2) delete li.dataset.state; });
   });
 
   // 7. the Ennusta box: "2 kysymystä", then "vastattu 1/2", then "vastattu 2/2 · palaute 2/2"
@@ -463,7 +477,11 @@
     fill(); bus.addEventListener('fl:answered', fill); bus.addEventListener('fl:measured', fill);
     const ta = r.querySelector('textarea'), id = r.closest('.activity').id;
     const saved = store.get(id); if (saved && saved.text) ta.value = saved.text;
-    ta.addEventListener('input', () => store.set(id, { text: ta.value }));
+    ta.addEventListener('input', () => { const s = store.get(id) || {}; s.text = ta.value; store.set(id, s); });
+    // "Haluatko muuttaa ennustettasi?" kept with the text (teacher 2026-11-06 evening: every answer stays on the device)
+    const rev = [...r.querySelectorAll('.revise input[type=radio]')];
+    if (saved && saved.revise) { const x = rev.find((i) => i.value === saved.revise); if (x) x.checked = true; }
+    rev.forEach((i) => i.addEventListener('change', () => { const s = store.get(id) || {}; s.revise = i.value; store.set(id, s); }));
   });
 
   // 8. self-assessment: a level a-d or x per task and per goal, with its history

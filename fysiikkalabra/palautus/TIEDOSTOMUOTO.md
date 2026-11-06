@@ -1,4 +1,4 @@
-# Palautustiedosto `<luku>.ratkaisut.json` (ruukkilabra-palautus, versio 1)
+# Palautustiedosto `<luku>.ratkaisut.json` (ruukkilabra-palautus, versiot 1–3)
 
 RuukkiLabran `templates/palautus.js` tekee tiedoston opiskelijan selaimessa, ja Apps Scriptin `Code.gs`
 (`rlValidate_`) tarkistaa sen. Rajat ovat molemmissa samat (`LIMITS` / `RL_LIMITS`).
@@ -25,8 +25,8 @@ RuukkiLabran `templates/palautus.js` tekee tiedoston opiskelijan selaimessa, ja 
 ```
 
 - Opiskelija näkee vain painikkeen *Lataa kaikki ratkaisut* (ei pitkää ohjetta, opettaja 5.11.2026). Opettaja kertoo
-  opiskelijoille tarvittaessa itse, mitä tiedostossa on: **mukana on vain** luvun tehtävien *Kirjoita ratkaisu* -editorien sisältö, tälle laitteelle tallennettuna.
-  Tarkista-kenttien luvut ja valintatehtävien valinnat eivät tule mukaan, koska niitä ei tallenneta. Ei nimeä,
+  opiskelijoille tarvittaessa itse, mitä tiedostossa on. Versioissa 1 ja 2 mukana oli vain luvun tehtävien *Kirjoita ratkaisu*
+  -editorien sisältö. Versiosta 3 alkaen mukana ovat myös numerovastaukset, valinnat ja tekstivastaukset (ks. alla). Ei nimeä,
   sähköpostia eikä muiden lukujen ratkaisuja.
 - `lang`: sivun kieli, `fi` (myös selkosuomi) tai `en` (6.11.2026). Luvut ja tehtävätunnisteet ovat kaikilla kielillä samat,
   joten arviointi on sama.
@@ -78,7 +78,41 @@ tiedoston `version` on 2 ja siinä on lisäksi
 - `history`: jokainen tason muutos aikaleimoineen (UTC), enintään 50 uusinta.
 - `content_sha256` lasketaan versiossa 2 merkkijonosta `JSON.stringify({answers: <kuten yllä>, selfassessment: <items>})`,
   joten muuttunut itsearvio antaa uuden palautuksen.
-- Tuonti hyväksyy versiot 1 ja 2. Arviointisivun *Itsearviot* näyttää uusimman palautuksen tasot väreinä.
+- Tuonti hyväksyy versiot 1 ja 2. Arviointisivun *Osaamisen sormenjälki* näyttää ryhmän uusimpien palautusten tasot väreinä: rivit kohteita luvuittain, sarakkeissa opiskelijat, valkoinen = ei vastattu, harmaa = en ole vielä harjoitellut.
+
+## Versio 3: kaikki vastaukset ja tavoitearvioiden kooste (6.11.2026)
+
+Nykyinen `palautus.js` tekee aina version 3. Erot versioon 2:
+
+```json
+"includes": "answers",
+"answers": [
+  { "task": "fy3-1-L1-02", "status": "answered", "content": [],
+    "responses": [ { "type": "number", "value": "6,0", "unit": "cm" } ] },
+  { "task": "fy3-1:reflect", "status": "answered", "content": [],
+    "responses": [ { "type": "choice", "question": "…", "answer": "Kyllä", "option": 0 },
+                   { "type": "text", "label": "…", "text": "Ennustin väärin, koska …" } ] }
+],
+"selfassessment": { "goals": [
+  { "id": "tavoite-1", "text": "Ymmärrän, mitä massa tarkoittaa.", "level": "a" },
+  { "id": "tavoite-2", "text": "Osaan …", "level": null } ] }
+```
+
+- `answers` sisältää ensin luvun Tehtävät-osion tehtävät (tunniste kuten ennen) ja sitten oppitunnin tehtävät, joissa
+  on vastauskenttä (ennusteet, kokeen taulukko, johtopäätös, Itsearvion tehtävät …). Oppitunnin tehtävän tunniste on
+  `<luku>:<aktiviteetin id>`, koska samat id:t toistuvat luvuissa. Arviointisivu näyttää oppitunnin tehtävät mutta
+  ei pisteytä niitä, joten pistemaksimit pysyvät ennallaan.
+- `responses` on jokaisessa tehtävässä (tyhjä lista, jos ei vastauksia). Tyypit: `number` (`value` kirjoitettuna,
+  `unit` jos kentässä on yksikkö), `choice` (`question`, `answer`, `option` = valinnan järjestysnumero), `text`
+  (`label`, `text`), `truefalse` (`items`: `text`, `value` true/false/null), `order` (`items`: `text`, `rank` tai null),
+  `table` (`head`, `rows`). Kysymys- ja vaihtoehtotekstit ovat pelkkää tekstiä, kaavat `$LaTeX$`-muodossa.
+- `status` on `"answered"`, jos editorissa tai yhdessäkin vastauksessa on jotain. Pelkkä numero tyhjällä editorilla on siis vastaus.
+- `selfassessment.goals`: luvun tavoitteet sivun järjestyksessä, kaikki mukana. `level` on opiskelijan viimeisin
+  valinta: `a`–`d`, `x` = *En ole vielä harjoitellut*, `null` = ei vastattu. Tehtäväkohtaiset itsearviot ja
+  muutoshistoria eivät tule tiedostoon; ne jäävät opiskelijan selaimeen.
+- `content_sha256` = SHA-256 merkkijonosta `JSON.stringify({answers: <answers ilman kaavakuvia, responses mukana>, selfassessment: <goals>})`.
+- Tuonti hyväksyy versiot 1, 2 ja 3. Vanhoista tiedostoista ei vaadita oppitunnin tehtäviä, ja version 2
+  tehtäväkohtaiset arviot ohitetaan (luetaan vain tarkistussummaa varten).
 
 ## Uusi versio
 Muutos, jota versio 1 ei ymmärrä, nostaa `version`-numeroa. Skripti hylkää tuntemattoman uudemman version
