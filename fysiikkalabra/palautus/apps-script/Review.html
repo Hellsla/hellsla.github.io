@@ -66,6 +66,8 @@
   #groupChart b { font-size: 15px; } #groupChart .v { font-weight: 600; white-space: nowrap; }
   #summary button.sort { border: 0; background: none; min-height: 0; padding: 2px 4px; color: inherit; font: inherit; letter-spacing: inherit; text-transform: inherit; border-radius: 4px; }
   #problems td:nth-child(2) { white-space: nowrap; }
+  .responses { margin-bottom: 10px; } .resp { margin: 0 0 8px; } .resp ul { margin: 4px 0 0 18px; padding: 0; } .resp table { width: auto; margin-top: 4px; }
+  .resp .t { white-space: pre-wrap; }
   /* itsearvio (opettaja 6.11.2026): sama väriasteikko kuin Ruukkilabrassa, tummanvihreästä punertavaan + Ei vielä */
   .sa { display: inline-block; width: 26px; height: 18px; border-radius: 4px; vertical-align: middle; }
   .sa-a { background: #1a4d2e; } .sa-b { background: #5f9460; } .sa-c { background: #d6a744; } .sa-d { background: #c0583b; }
@@ -198,7 +200,7 @@
     var shown = 0;
     ov.chapters.filter(inRange).forEach(function (c) {
       var sol = 0, scored = 0, open = 0;
-      c.tasks.forEach(function (t) { sol += t.solutions; scored += t.scored; open += t.open; });
+      c.tasks.forEach(function (t) { if (!t.lesson) { sol += t.solutions; scored += t.scored; open += t.open; } });
       var tasks = S.onlyOpen ? c.tasks.filter(function (t) { return t.open > 0; }) : c.tasks;
       if (S.onlyOpen && !tasks.length) return;
       shown++;
@@ -212,7 +214,9 @@
       head.append(hr); table.append(head, tb);
       tasks.forEach(function (t) {
         var tr = el('tr', 'task-row'); tr.tabIndex = 0; tr.setAttribute('data-task', t.id);
-        tr.append(el('td', null, 'Tehtävä ' + t.number), el('td', null, String(t.level)), el('td', null, String(t.solutions)), el('td', null, String(t.scored)), el('td', null, String(t.open)));
+        // oppitunnin tehtävä (versio 3): vastaukset näkyvät, pisteitä ei anneta
+        if (t.lesson) tr.append(el('td', null, t.number), el('td', null, 'Oppitunti'), el('td', null, String(t.solutions)), el('td', 'muted', '–'), el('td', 'muted', '–'));
+        else tr.append(el('td', null, 'Tehtävä ' + t.number), el('td', null, String(t.level)), el('td', null, String(t.solutions)), el('td', null, String(t.scored)), el('td', null, String(t.open)));
         tr.addEventListener('click', function () { openTask(t.id); });
         tr.addEventListener('keydown', function (e) { if (e.key === 'Enter') openTask(t.id); });
         tb.append(tr);
@@ -227,7 +231,7 @@
   var num = function (x) { return String(Math.round(x * 100) / 100).replace('.', ','); };
   function renderSummary(ov) {
     var scope = ov.chapters.filter(function (c) { return c.submissions > 0 && inRange(c); });
-    var nTasks = scope.reduce(function (n, c) { return n + c.tasks.length; }, 0), max = nTasks * ov.maxPoints;
+    var nTasks = scope.reduce(function (n, c) { return n + c.tasks.filter(function (t) { return !t.lesson; }).length; }, 0), max = nTasks * ov.maxPoints;
     var rows = ov.summary.map(function (s) {
       var r = { name: s.email, answered: 0, unchecked: 0, points: 0, returned: 0, self: -1 }, sum = 0, n = 0;
       scope.forEach(function (c) { var x = s.chapters[c.id]; if (x) { r.answered += x.answered; r.unchecked += x.unchecked; r.points += x.points; r.returned++; } });
@@ -292,10 +296,10 @@
   });
   // Osaamisen sormenjälki (opettaja 6.11.2026): koko ryhmä yhdessä taulukossa. Rivit ovat lukujen itsearviokohteet
   // (Tarkista osaamisesi -tehtävät ja luvun tavoitteet) luvuittain, sarakkeissa opiskelijat, solussa uusimman palautuksen
-  // taso värinä. Valkoinen = ei vastattu (tai lukua ei palautettu), harmaa = en ole vielä opiskellut. Kooste-valinta rajaa luvut.
+  // taso värinä. Valkoinen = ei vastattu (tai lukua ei palautettu), harmaa = en ole vielä harjoitellut. Kooste-valinta rajaa luvut.
   var SA_NUM = { a: 4, b: 3, c: 2, d: 1 };
   var SA_TEXT = { a: 'Osaan niin hyvin, että voisin opettaa kaverille', b: 'Koen oivaltaneeni', c: 'Osaan osittain, epävarmuutta on vielä',
-                  d: 'Tarvitsen vielä harjoitusta', x: 'En ole vielä opiskellut', none: 'Ei vastattu' };
+                  d: 'Tarvitsen vielä harjoitusta', x: 'En ole vielä harjoitellut', none: 'Ei vastattu' };
   function renderSelf(ov) {
     var box = $('selfBox'); box.textContent = '';
     var chs = ov.chapters.filter(function (c) { return c.self && c.self.students.length && inRange(c); });
@@ -338,10 +342,10 @@
   function openTask(id) {
     S.ov.chapters.forEach(function (c) { c.tasks.forEach(function (t) { if (t.id === id) { S.task = t; S.chapter = c; } }); });
     $('home').hidden = true; $('grade').hidden = false;
-    $('gTitle').textContent = S.ov.course + ' · Luku ' + S.chapter.number + ' · Tehtävä ' + S.task.number;
+    $('gTitle').textContent = S.ov.course + ' · Luku ' + S.chapter.number + ' · ' + (S.task.lesson ? S.task.number : 'Tehtävä ' + S.task.number);
     $('gStatement').innerHTML = S.task.html;   // RuukkiLabran oma, generoitu tehtävänanto (Tehtavat.gs), ei opiskelijan dataa
     $('gModel').innerHTML = S.task.answer;
-    $('range').textContent = '0–' + scoreText(max());
+    $('range').textContent = S.task.lesson ? 'oppitunnin tehtävä, ei pisteitä' : '0–' + scoreText(max());
     $('gAnswer').textContent = 'Ladataan…'; $('gPos').textContent = ''; $('gEmail').textContent = ''; $('gTime').textContent = '';
     setState('');
     S.entries = []; lockUi(true);
@@ -371,11 +375,11 @@
     $('gAnswer').textContent = 'Ladataan vastausta…';
     fetchAnswer(e, v).then(function (a) {
       if (token !== S.token) return;   // ehdittiin siirtyä toiseen opiskelijaan
-      renderAnswer(a); $('points').disabled = false;
+      renderAnswer(a); $('points').disabled = !!S.task.lesson;
     }, function (err) {
       if (token !== S.token) return;
       $('gAnswer').textContent = ''; $('gAnswer').append(el('p', 'err', 'Vastausta ei voitu näyttää: ' + errText(err)));
-      $('points').disabled = false;
+      $('points').disabled = !!S.task.lesson;
     });
     var nx = S.entries[idx + 1]; if (nx) fetchAnswer(nx, nx.versions[nx.versions.length - 1]).catch(function () {});   // seuraava valmiiksi
   }
@@ -384,9 +388,36 @@
     if (!S.cache[k]) S.cache[k] = call('rlAnswer', { email: e.email, fileId: v.fileId, sub: v.sub, task: S.task.id }).catch(function (err) { delete S.cache[k]; throw err; });
     return S.cache[k];
   }
+  // Muut vastaukset kuin editori (versio 3): numero yksikköineen, valinta, tosi/epätosi, järjestys, kirjoitettu vastaus ja
+  // mittaustaulukko, tekstinä (ei koskaan HTML:nä). Kaavat näkyvät LaTeXina $…$-merkkien välissä.
+  function renderResponses(list) {
+    var box = el('div', 'responses');
+    list.forEach(function (r) {
+      var row = el('div', 'resp');
+      if (r.type === 'number') { row.append(el('b', null, 'Numerovastaus: '), el('span', null, r.value + (r.unit ? ' ' + r.unit : ''))); }
+      else if (r.type === 'choice') { if (r.question) row.append(el('div', 'muted', r.question)); row.append(el('b', null, 'Valinta: '), el('span', null, r.answer)); }
+      else if (r.type === 'text') { row.append(el('b', null, (r.label || 'Vastaus') + ': ')); row.append(el('span', 't', r.text)); }
+      else if (r.type === 'truefalse') {
+        row.append(el('b', null, 'Tosi vai epätosi:'));
+        var ul = el('ul'); r.items.forEach(function (x) { ul.append(el('li', null, (x.value === null ? '(ei valittu)' : x.value ? 'Tosi' : 'Epätosi') + ' · ' + x.text)); }); row.append(ul);
+      } else if (r.type === 'order') {
+        row.append(el('b', null, 'Järjestys:'));
+        var ol = el('ul'); r.items.slice().sort(function (a, b) { return (a.rank || 99) - (b.rank || 99); }).forEach(function (x) { ol.append(el('li', null, (x.rank ? x.rank + '. ' : '(ei sijaa) ') + x.text)); }); row.append(ol);
+      } else if (r.type === 'table') {
+        row.append(el('b', null, 'Mittaukset:'));
+        var t = el('table'), hr = el('tr'); r.head.forEach(function (h) { hr.append(el('th', null, h)); }); var th = el('thead'); th.append(hr); t.append(th);
+        var tb = el('tbody'); r.rows.forEach(function (rw) { var tr = el('tr'); rw.forEach(function (c) { tr.append(el('td', null, c)); }); tb.append(tr); }); t.append(tb); row.append(t);
+      }
+      box.append(row);
+    });
+    return box;
+  }
   function renderAnswer(a) {
     var box = $('gAnswer'); box.textContent = '';
-    if (a.status === 'empty' || !a.content.length) { box.append(el('p', 'empty', 'Opiskelija jätti tehtävän tyhjäksi (ei ratkaisua editorissa).')); return; }
+    var resp = Array.isArray(a.responses) ? a.responses : [];
+    if (a.status === 'empty' || (!a.content.length && !resp.length)) { box.append(el('p', 'empty', 'Opiskelija jätti tehtävän tyhjäksi.')); return; }
+    if (resp.length) box.append(renderResponses(resp));
+    if (!a.content.length) { if (!S.task.lesson) box.append(el('p', 'muted', 'Ei ratkaisua editorissa.')); return; }
     var tex = $('showTex').checked, p = el('div');
     a.content.forEach(function (it) {
       if (it.type === 'text') p.append(el('span', 't', it.text));

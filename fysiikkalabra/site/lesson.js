@@ -1,7 +1,8 @@
-/* Lesson page behaviour. Everything runs in the browser and nothing is sent anywhere; only the student's own
-   solutions in the solution editor are kept on this device (part 6, padstore.js).
+/* Lesson page behaviour. Everything runs in the browser and nothing is sent anywhere; the student's own answers are
+   kept on this device only (part 1b, the solution editor's padstore.js), until the student downloads them (palautus.js).
    1. Answer check: compares the typed number with data-answer (±2 %, one unit in the last digit data-step, or the
       wider data-tol; 2–5 % away is "Lähellä") and tells other parts of the attempt (event fl:attempt).
+   1b. Answers kept on this device: a typed number, a true-or-false list, an ordering (window.flAnswers).
    2. Progress bar: the stage navigation marks the stage on screen and the stages whose answers are all given.
    3. Worked example in stages: reveals the solution one stage at a time.
    4. Print: opens every collapsed block and every hidden stage while printing.
@@ -56,6 +57,35 @@
       out.dataset.state = state;
       attempt(form, 'check', state);
     });
+  });
+
+  // 1b. The answers of the page's own controls kept on this device (teacher 2026-11-06 evening: "varmista vastausten
+  // paikallinen säilyminen sivun päivityksessä"): a typed number (form.check), a true-or-false list and an ordering task
+  // (inquiry.js 2b–2c) and the reflection's "revise" choice, in localStorage ruukkilabra:vastaukset:<page> as
+  // { v: 1, items: { "<task id>:<kind><n>": value } }. A choice, a written explanation and a reflection keep their own
+  // keys (inquiry.js store), the solution editor its IndexedDB (padstore.js). Restored before the other scripts wire the
+  // controls; nothing is checked or revealed again, the values are only back where the student left them.
+  const ANS_KEY = 'ruukkilabra:vastaukset:' + ((location.pathname.match(/(?:^|\/)((?:en|fi-easy|fr|sv)\/)?([^/]+?)(?:\.html)?$/) || []).slice(1).join('').replace(/\/$/, '') || 'index');
+  const ansRead = () => { try { const v = JSON.parse(localStorage.getItem(ANS_KEY)); return v && v.v === 1 && v.items && typeof v.items === 'object' ? v : { v: 1, items: {} }; } catch (e) { return { v: 1, items: {} }; } };
+  const ANS_TASK = '#exercises li[id], .practice-task[id], .activity[id]';
+  // a control's key: its task's id, its kind and its place among the same kind in that task ("fy3-1-L1-02:num0")
+  const ansKey = (el, kind, sel) => { const host = el.closest(ANS_TASK); if (!host) return null; return host.id + ':' + kind + [...host.querySelectorAll(sel)].filter((x) => x.closest(ANS_TASK) === host).indexOf(el); };
+  window.flAnswers = {
+    key: ansKey,
+    get(k) { return k ? ansRead().items[k] : undefined; },
+    set(k, value) {
+      if (!k) return;
+      const all = ansRead();
+      if (value === null || value === undefined || value === '') delete all.items[k]; else all.items[k] = value;
+      try { localStorage.setItem(ANS_KEY, JSON.stringify(all)); } catch (e) { /* private mode, blocked storage: the answer stays on the page only */ }
+    }
+  };
+  document.querySelectorAll('form.check').forEach((form) => {
+    const input = form.querySelector('input'), k = ansKey(form, 'num', 'form.check');
+    if (!input || !k) return;
+    const saved = window.flAnswers.get(k);
+    if (typeof saved === 'string' && !input.value) input.value = saved;
+    input.addEventListener('input', () => window.flAnswers.set(k, input.value.trim() ? input.value : ''));
   });
 
   /* 2. The progress bar (teacher 2026-11-03): the stage navigation sticks under the top edge at every width.

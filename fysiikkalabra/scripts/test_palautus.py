@@ -146,18 +146,21 @@ with sync_playwright() as p:
         expect(f"{lang}: Palautukset page in its language with the same form links", ["FY3.2", "https://forms.gle/1JEQYSTidBPETrxbA"] in links and pg.evaluate("document.documentElement.lang") == ("en" if lang == "en" else "fi") and (lang != "en" or pg.inner_text("h1").startswith("Submissions")), links)
     pg.goto(BASE + "en/fy3-1.html"); pg.evaluate(OPEN)
     name, fe = download(pg)
-    expect("en: the file is fy3-1.ratkaisut.json with lang 'en' and the same task ids as Finnish (one grading page for both)", name == "fy3-1.ratkaisut.json" and fe.get("lang") == "en" and fe.get("chapter") == "fy3-1" and [a["task"] for a in fe["answers"]][:1] == ["fy3-1-L1-01"], {k: v for k, v in fe.items() if k != "answers"})
+    expect("en: the file is fy3-1.ratkaisut.json with lang 'en' and the same task ids as Finnish (one grading page for both)", name == "fy3-1.ratkaisut.json" and fe.get("lang") == "en" and fe.get("chapter") == "fy3-1" and "fy3-1-L1-01" in [a["task"] for a in fe["answers"]], {k: v for k, v in fe.items() if k != "answers"})
     expect("en: the status after the download is English", pg.inner_text(".palautus-status").startswith("Submit the downloaded file"), pg.inner_text(".palautus-status"))
     pg.goto(BASE + "fy3-1.html"); pg.evaluate(OPEN)
     expect("no separate image button (Ctrl+V only)", pg.locator(".pad-image").count() == 0)
     tasks = pg.evaluate("[...document.querySelectorAll('#exercises li[id]')].filter((li) => li.querySelector(':scope > .task')).map((li) => li.id)")
+    all_tasks = pg.evaluate("window.flSubmissionTasks().map(window.flSubmissionTaskId)")   # version 3: the lesson's own tasks too (teacher 2026-11-06 evening)
     # another chapter's solution in the same store must stay out
     pg.evaluate("""() => new Promise((ok) => { const s = document.createElement('script'); s.src = 'padstore.js'; s.onload = ok; document.head.append(s); })""")
     pg.evaluate("window.flPadStore.put('fy3-2-L1-01', 'toisen luvun ratkaisu', 'fy3-2.html')")
     # guided self-assessment of Tarkista osaamisesi (teacher 2026-11-06): a colour scale under every task and goal
     sa = pg.evaluate("[...document.querySelectorAll('#tarkista fieldset.sa-rate')].map((f) => [f.dataset.sa, f.querySelectorAll('input[type=radio]').length])")
     expect("self-assessment: five levels under every Tarkista task and every goal of the chapter, no separate key (teacher 2026-11-06)", len(sa) >= 5 and all(n == 5 for _, n in sa) and any(i.startswith("tavoite-") for i, _ in sa) and pg.locator("#tarkista .sa-key").count() == 0, sa)
-    sa_task = sa[1][0]
+    sa_task = next(i for i, _ in sa if not i.startswith("tavoite-"))
+    expect("Itsearvio: the goals' card first, then the tasks with their own ratings (teacher 2026-11-06 evening)", [i.startswith("tavoite-") for i, _ in sa] == sorted([i.startswith("tavoite-") for i, _ in sa], reverse=True)
+           and pg.evaluate("document.querySelector('#tarkista > .stage-lead + .act-selfgoals, #tarkista > h2 + .act-selfgoals') !== null"), sa)
     pg.click(f'fieldset[data-sa="{sa_task}"] .sa-opt[data-level="b"]')
     pg.click('fieldset[data-sa="tavoite-1"] .sa-opt[data-level="d"]'); pg.click('fieldset[data-sa="tavoite-1"] .sa-opt[data-level="c"]')
     expect("self-assessment: the chosen level's text shows under the scale", pg.inner_text(f'fieldset[data-sa="{sa_task}"] .sa-desc') == "Koen oivaltaneeni tämän asian", pg.inner_text(f'fieldset[data-sa="{sa_task}"] .sa-desc'))
@@ -172,15 +175,19 @@ with sync_playwright() as p:
     name, f1 = download(pg)
     files["v1"] = f1
     expect("the file is fy3-1.ratkaisut.json", name == "fy3-1.ratkaisut.json", name)
-    expect("format, version (2: with the self-assessment), chapter and a 32-hex submission id", f1.get("format") == "ruukkilabra-palautus" and f1.get("version") == 2 and f1.get("chapter") == "fy3-1"
+    expect("format, version (3: every answer and the goals' summary), chapter and a 32-hex submission id", f1.get("format") == "ruukkilabra-palautus" and f1.get("version") == 3 and f1.get("chapter") == "fy3-1"
            and re.fullmatch(r"[0-9a-f]{32}", f1.get("submission_id", "")) and f1.get("exported"), {k: v for k, v in f1.items() if k != "answers"})
-    expect("every exercise once, in page order", [a["task"] for a in f1["answers"]] == tasks)
+    ids1 = [a["task"] for a in f1["answers"]]
+    expect("every task of the chapter once, in page order: the lesson's tasks and every exercise", ids1 == all_tasks and [i for i in ids1 if i in tasks] == tasks and len(set(ids1)) == len(ids1)
+           and {"fy3-1:pred-1", "fy3-1:exp-1", "fy3-1:johtopaatos", "fy3-1:check-2", "fy3-1:check-3"} <= set(ids1), ids1)
+    AN = lambda f: {a["task"]: a for a in f["answers"]}
     expect("only this chapter (no fy3-2 solution)", "fy3-2" not in json.dumps(f1))
     expect("no name or e-mail fields", not set(f1) - {"format", "version", "chapter", "lang", "submission_id", "exported", "includes", "content_sha256", "answers", "selfassessment"}, set(f1))
-    sitems = (f1.get("selfassessment") or {}).get("items", [])
-    expect("self-assessment in the same file: the rated items in page order, level and history with times", [(i["id"], i["level"], [h[0] for h in i["history"]]) for i in sitems] == [(sa_task, "b", ["b"]), ("tavoite-1", "c", ["d", "c"])]
-           and all(re.fullmatch(r"\d{4}-\d\d-\d\dT[\d:.]+Z", h[1]) for i in sitems for h in i["history"]), sitems)
-    a1 = f1["answers"][0]
+    goals1 = (f1.get("selfassessment") or {}).get("goals", [])
+    expect("self-assessment in the file: only the goals' summary, every goal with its text and latest level (null = not answered), no task ratings, no history (teacher 2026-11-06 evening)",
+           list(f1["selfassessment"]) == ["goals"] and [(g["id"], g["level"]) for g in goals1][:2] == [("tavoite-1", "c"), ("tavoite-2", None)] and all(g["text"] for g in goals1)
+           and all(list(g) == ["id", "text", "level"] for g in goals1) and sa_task not in json.dumps(f1["selfassessment"]) and "history" not in json.dumps(f1), f1.get("selfassessment"))
+    a1 = AN(f1)[t1]
     kinds = [i["type"] for i in a1["content"]]
     expect("text, formula, picture keep their order in the right task", a1["status"] == "answered" and kinds == ["text", "math", "text", "image", "text"], kinds)
     expect("the line break is kept", "\ntoinen rivi" in a1["content"][2]["text"], a1["content"][2])
@@ -189,7 +196,7 @@ with sync_playwright() as p:
     expect("the formula is its LaTeX with a PNG for the teacher", m["latex"] == "G=mg" and base64.b64decode(m["png"])[:4] == b"\x89PNG" and m["w"] > 0, {k: str(v)[:40] for k, v in m.items()})
     img = a1["content"][3]
     expect("the picture is embedded PNG data, not a blob or link", img["mime"] == "image/png" and base64.b64decode(img["data"]) == small.read_bytes() and (img["w"], img["h"]) == (40, 30))
-    expect("unanswered tasks are 'empty' with no content", all(a["status"] == "empty" and a["content"] == [] for a in f1["answers"][1:]))
+    expect("unanswered tasks are 'empty' with no content and no other answers", all(a["status"] == "empty" and a["content"] == [] and a["responses"] == [] for a in f1["answers"] if a["task"] != t1))
     expect("the page says to return the file with Forms", "Palauta ladattu tiedosto Palauta-napista oman ryhmäsi lomakkeella." in pg.inner_text(".palautus-status"))
     _, f1b = download(pg)
     expect("the same solutions keep the submission id", f1b["submission_id"] == f1["submission_id"] and f1b["content_sha256"] == f1["content_sha256"])
@@ -202,17 +209,17 @@ with sync_playwright() as p:
     paste_png(pg, t2, small)
     _, f3 = download(pg)
     expect("an added picture gives a new id", f3["submission_id"] != f2["submission_id"])
-    expect("the picture is in the second task", [i["type"] for i in f3["answers"][3]["content"]] == ["text", "image"], f3["answers"][3]["content"])
+    expect("the picture is in the second task", [i["type"] for i in AN(f3)[t2]["content"]] == ["text", "image"], AN(f3)[t2]["content"])
     pg.evaluate(f"""(src) => {{ const i = document.querySelector('[id="{t2}"] .rich-text-editor img:not([data-math-image])'); i.src = src; i.dispatchEvent(new Event('input', {{ bubbles: true }})); }}""",
                 "data:image/png;base64," + base64.b64encode(other.read_bytes()).decode())
     pg.locator(f'[id="{t2}"] .rich-text-editor').click(); pg.keyboard.press("End"); pg.keyboard.type(" ")
     pg.keyboard.press("Backspace"); pg.wait_for_timeout(200)
     _, f4 = download(pg)
-    expect("a replaced picture gives a new id", f4["submission_id"] != f3["submission_id"] and base64.b64decode(f4["answers"][3]["content"][1]["data"]) == other.read_bytes())
+    expect("a replaced picture gives a new id", f4["submission_id"] != f3["submission_id"] and base64.b64decode(AN(f4)[t2]["content"][1]["data"]) == other.read_bytes())
     pg.evaluate(f"""() => {{ document.querySelector('[id="{t2}"] .rich-text-editor img:not([data-math-image])').remove(); }}""")
     pg.locator(f'[id="{t2}"] .rich-text-editor').click(); pg.keyboard.type("!")
     _, f5 = download(pg)
-    expect("a removed picture gives a new id", f5["submission_id"] != f4["submission_id"] and [i["type"] for i in f5["answers"][3]["content"]] == ["text"], f5["answers"][3]["content"])
+    expect("a removed picture gives a new id", f5["submission_id"] != f4["submission_id"] and [i["type"] for i in AN(f5)[t2]["content"]] == ["text"], AN(f5)[t2]["content"])
     # failed save: no download, a message
     pg.evaluate("() => { window.__put = window.flPadStore.put; window.flPadStore.put = () => Promise.reject(Object.assign(new Error('x'), { code: 'failed' })); }")
     pg.locator(f'[id="{t1}"] .rich-text-editor').click(); pg.keyboard.press("End"); pg.keyboard.type(" lisää")
@@ -247,16 +254,75 @@ with sync_playwright() as p:
     pg.goto(BASE + "fy9-energia.html")
     rv = pg.evaluate("[...document.querySelectorAll('#exercises div.practice-task[id]')].filter((t) => t.querySelector('.pad-open')).map((t) => t.id)")
     sa9 = pg.evaluate("[...document.querySelectorAll('#tarkista fieldset.sa-rate')].map((f) => f.dataset.sa)")
-    expect("FY9: a self-assessment under every Tarkista task and three closing statements", len(sa9) >= 7 and sa9[-3:] == ["tavoite-1", "tavoite-2", "tavoite-3"], sa9)
+    expect("FY9: the three goal statements first in Itsearvio, then a self-assessment under every task (teacher 2026-11-06 evening)", len(sa9) >= 7 and sa9[:3] == ["tavoite-1", "tavoite-2", "tavoite-3"] and not any(x.startswith("tavoite-") for x in sa9[3:]), sa9)
     pg.click('fieldset[data-sa="tavoite-2"] .sa-opt[data-level="a"]')
     open_pad(pg, rv[0])
     pg.locator(f'[id="{rv[0]}"] .rich-text-editor').click(); pg.keyboard.type("Kertausratkaisu")
     name9, f9 = download(pg)
     a9 = {a["task"]: a for a in f9.get("answers", [])}
     expect("FY9: fy9-energia.ratkaisut.json has every review task with an editor, the written one answered, and the self-assessment",
-           name9 == "fy9-energia.ratkaisut.json" and f9.get("version") == 2 and list(a9) == rv and a9[rv[0]]["status"] == "answered"
-           and "Kertausratkaisu" in json.dumps(a9[rv[0]]["content"], ensure_ascii=False) and [i["id"] for i in f9["selfassessment"]["items"]] == ["tavoite-2"], (name9, list(a9), rv))
+           name9 == "fy9-energia.ratkaisut.json" and f9.get("version") == 3 and [k for k in a9 if k in rv] == rv and a9[rv[0]]["status"] == "answered"
+           and "Kertausratkaisu" in json.dumps(a9[rv[0]]["content"], ensure_ascii=False) and [(g["id"], g["level"]) for g in f9["selfassessment"]["goals"]] == [("tavoite-1", None), ("tavoite-2", "a"), ("tavoite-3", None)], (name9, list(a9), rv))
     expect("no script errors on the FY9 page", not errors, errors)
+
+    # Every answer of the chapter in the file (teacher 2026-11-06 evening): a number and a choice with an empty editor
+    # (FY3 luku 1 tasks 1-2 and 1-6 came out empty before), the lesson's choices, written answers, the reflection, a
+    # measurement table and the Itsearvio tasks; all kept over a reload; the goals' summary only.
+    pg2 = ctx.new_page(); pg2.on("pageerror", lambda e: errors.append(str(e)))
+    pg2.goto(BASE + "fy3-1.html"); pg2.evaluate(OPEN)
+    pg2.evaluate("() => { localStorage.clear(); }"); pg2.reload(); pg2.evaluate(OPEN)
+    pg2.fill('[id="fy3-1-L1-02"] form.check input', "6,0"); pg2.click('[id="fy3-1-L1-02"] form.check button')
+    pg2.check('[id="fy3-1-L1-06"] input[value="0"]'); pg2.click('[id="fy3-1-L1-06"] button.commit')
+    pg2.evaluate("""() => { document.querySelectorAll('details.fold, details.opt').forEach((d) => { d.open = true; }); }""")
+    pg2.check('#pred-2 input[type=radio] >> nth=1'); pg2.fill('#pred-2 .justify textarea', "Jupiter vetää enemmän."); pg2.click('#pred-2 button.commit')
+    pg2.fill('#johtopaatos textarea', "Suhde G/m on vakio.")
+    pg2.check('#reflect .revise input[value="kylla"]'); pg2.fill('#reflect textarea', "Paino muuttuu, massa ei.")
+    pg2.fill('#check-2 form.check input', "9,8")
+    pg2.check('#check-1 fieldset.choice input[type=radio] >> nth=0'); pg2.click('#check-1 fieldset.choice button.commit')
+    pg2.click('fieldset[data-sa="check-1"] .sa-opt[data-level="b"]')
+    pg2.click('fieldset[data-sa="tavoite-1"] .sa-opt[data-level="d"]'); pg2.click('fieldset[data-sa="tavoite-1"] .sa-opt[data-level="a"]')
+    pg2.click('fieldset[data-sa="tavoite-2"] .sa-opt[data-level="x"]')
+    # a measurement row as the experiment writes it (the simulation itself is tested in test_sims)
+    pg2.evaluate("""() => { const tb = document.querySelector('#exp-1 table.exp-table tbody'); const tr = document.createElement('tr');
+      tr.innerHTML = '<td data-value="0.1">0,10</td><td data-value="0.981">0,981</td>'; tb.append(tr); }""")
+    pg2.reload(); pg2.evaluate(OPEN)
+    pg2.evaluate("""() => { document.querySelectorAll('details.fold, details.opt').forEach((d) => { d.open = true; }); }""")
+    kept = pg2.evaluate("""() => [document.querySelector('[id="fy3-1-L1-02"] form.check input').value, (document.querySelector('[id="fy3-1-L1-06"] input:checked') || {}).value,
+      (document.querySelector('#pred-2 input:checked') || {}).value, document.querySelector('#pred-2 .justify textarea').value, document.querySelector('#johtopaatos textarea').value,
+      (document.querySelector('#reflect .revise input:checked') || {}).value, document.querySelector('#reflect textarea').value, document.querySelector('#check-2 form.check input').value,
+      (document.querySelector('fieldset[data-sa="tavoite-1"] input:checked') || {}).value]""")
+    expect("after a reload every answer is back: number, choice, reason, written answers, the reflection's choice, goal level", kept == ["6,0", "0", "1", "Jupiter vetää enemmän.", "Suhde G/m on vakio.", "kylla", "Paino muuttuu, massa ei.", "9,8", "a"], kept)
+    pg2.evaluate("""() => { const tb = document.querySelector('#exp-1 table.exp-table tbody'); if (!tb.rows.length) { const tr = document.createElement('tr');
+      tr.innerHTML = '<td data-value="0.1">0,10</td><td data-value="0.981">0,981</td>'; tb.append(tr); } }""")
+    with pg2.expect_download(timeout=15000) as d:
+        pg2.click("button.palautus-btn")
+    fa = json.loads(pathlib.Path(d.value.path()).read_text()); files["all"] = fa
+    A3 = {a["task"]: a for a in fa["answers"]}
+    R = lambda t: A3[t]["responses"]
+    expect("1-2: the number with its unit, answered though the editor is empty", A3["fy3-1-L1-02"]["status"] == "answered" and A3["fy3-1-L1-02"]["content"] == [] and R("fy3-1-L1-02") == [{"type": "number", "value": "6,0", "unit": "cm"}], A3["fy3-1-L1-02"])
+    expect("1-6: the chosen option's text, answered though the editor is empty", A3["fy3-1-L1-06"]["status"] == "answered" and R("fy3-1-L1-06")[0]["type"] == "choice" and R("fy3-1-L1-06")[0]["option"] == 0 and "Massa pysyy samana" in R("fy3-1-L1-06")[0]["answer"], R("fy3-1-L1-06"))
+    expect("a lesson prediction: the choice and its written reason", [r["type"] for r in R("fy3-1:pred-2")] == ["choice", "text"] and R("fy3-1:pred-2")[1]["text"] == "Jupiter vetää enemmän." and R("fy3-1:pred-2")[0]["question"], R("fy3-1:pred-2"))
+    expect("a written conclusion and the Itsearvio tasks' answers (number, choice)", R("fy3-1:johtopaatos") == [{"type": "text", "label": "Oma vastaus", "text": "Suhde G/m on vakio."}] and R("fy3-1:check-2")[0]["value"] == "9,8" and R("fy3-1:check-1")[0]["type"] == "choice", (R("fy3-1:johtopaatos"), R("fy3-1:check-2"), R("fy3-1:check-1")))
+    expect("the reflection: its yes/no choice and its text", [r["type"] for r in R("fy3-1:reflect")] == ["choice", "text"] and R("fy3-1:reflect")[0]["answer"] == "Kyllä" and R("fy3-1:reflect")[1]["text"] == "Paino muuttuu, massa ei.", R("fy3-1:reflect"))
+    expect("an experiment's measurements as a table", R("fy3-1:exp-1") and R("fy3-1:exp-1")[0]["type"] == "table" and R("fy3-1:exp-1")[0]["rows"] == [["0.1", "0.981"]] and len(R("fy3-1:exp-1")[0]["head"]) == 2, R("fy3-1:exp-1"))
+    expect("an exercise's data table is part of its statement, not an answer", all(r["type"] != "table" for t in A3 if t.startswith("fy3-1-L") for r in R(t)))
+    g = fa["selfassessment"]["goals"]
+    expect("goals: id, text and latest level; not answered (null) apart from 'En ole vielä harjoitellut' (x)", [(x["id"], x["level"]) for x in g] == [("tavoite-1", "a"), ("tavoite-2", "x"), ("tavoite-3", None)] and all(x["text"] for x in g), g)
+    expect("no task self-assessments, history or criteria ticks in the file", "check-1" not in json.dumps(fa["selfassessment"]) and "history" not in json.dumps(fa) and '"d"' not in json.dumps(fa["selfassessment"]), fa["selfassessment"])
+    # true-or-false and ordering tasks (FY1 luku 8 and 7): kept over a reload and in the file
+    for page_, sel, kind in (("fy1-8.html", "fieldset.tf", "truefalse"), ("fy1-7.html", "fieldset.order", "order")):
+        pg2.goto(BASE + page_); pg2.evaluate(OPEN)
+        tid = pg2.evaluate(f"document.querySelector('{sel}').closest('li[id]').id")
+        if kind == "truefalse": pg2.evaluate(f"""() => document.querySelectorAll('{sel} .tf-list > li').forEach((li, i) => {{ const r = li.querySelector('input[value="' + (i % 2) + '"]'); r.checked = true; r.dispatchEvent(new Event('change', {{ bubbles: true }})); }})""")
+        else: pg2.evaluate(f"""() => document.querySelectorAll('{sel} select').forEach((s, i) => {{ s.value = String(i + 1); s.dispatchEvent(new Event('change', {{ bubbles: true }})); }})""")
+        pg2.reload(); pg2.evaluate(OPEN)
+        with pg2.expect_download(timeout=15000) as d:
+            pg2.click("button.palautus-btn")
+        fx = {a["task"]: a for a in json.loads(pathlib.Path(d.value.path()).read_text())["answers"]}
+        r0 = fx[tid]["responses"]
+        ok = r0 and r0[0]["type"] == kind and (all(it["value"] == (i % 2 == 1) for i, it in enumerate(r0[0]["items"])) if kind == "truefalse" else [it["rank"] for it in r0[0]["items"]] == list(range(1, len(r0[0]["items"]) + 1)))
+        expect(f"{page_}: the {kind} marks are kept over a reload and are in the file with their texts", ok and fx[tid]["status"] == "answered" and all(it["text"] for it in r0[0]["items"]), r0)
+    expect("no script errors with every answer type", not errors, errors)
     ctx.close()
 
     # ---------------- teacher side ----------------
@@ -289,12 +355,14 @@ with sync_playwright() as p:
         g = json.loads(json.dumps(f)); fn(g); return json.dumps(g)
 
     def reseal(g):   # recompute content_sha256 the way the page does (for a deliberately changed file that is otherwise valid)
-        canon = [{"task": a["task"], "status": a["status"], "content": [{"type": "math", "latex": i["latex"]} if i["type"] == "math" else i for i in a["content"]]} for a in g["answers"]]
-        canon = json.dumps({"answers": canon, "selfassessment": g["selfassessment"]["items"]} if g.get("version") == 2 else canon, ensure_ascii=False, separators=(",", ":"))
+        v3 = g.get("version") == 3
+        canon = [dict({"task": a["task"], "status": a["status"], "content": [{"type": "math", "latex": i["latex"]} if i["type"] == "math" else i for i in a["content"]]}, **({"responses": a["responses"]} if v3 else {})) for a in g["answers"]]
+        canon = json.dumps({"answers": canon, "selfassessment": g["selfassessment"]["items"]} if g.get("version") == 2 else {"answers": canon, "selfassessment": g["selfassessment"]["goals"]} if v3 else canon, ensure_ascii=False, separators=(",", ":"))
         import hashlib
         g["content_sha256"] = hashlib.sha256(canon.encode()).hexdigest(); return g
 
     va, vb = json.dumps(files["v1"]), json.dumps(files["v2"])
+    i1 = [a["task"] for a in files["v1"]["answers"]].index(t1)   # the answer with text, formula and picture
     A, B, C = "aino.opiskelija@koulu.example", "bertta.opiskelija@koulu.example", "cecilia.opiskelija@koulu.example"
     resp_before = None
     submit(A, va, "2026-11-05T08:00:00Z")                                   # normal
@@ -317,15 +385,18 @@ with sync_playwright() as p:
     # broken, too big, tampered, malicious, outside the folder, no e-mail, unknown task, newer version
     bad = [("not JSON", "{ei json", None, None, A, "ei ole JSON"),
            ("another format", json.dumps({"format": "muu", "version": 1}), None, None, A, "ei ole RuukkiLabran"),
-           ("a newer version", modify(files["v1"], lambda g: g.update(version=3)), None, None, A, "uudempi"),
-           ("a changed self-assessment", modify(files["v1"], lambda g: g["selfassessment"]["items"][0].update(level="a")), None, None, A, "tarkistussumma"),
-           ("an unknown self-assessment level", json.dumps(reseal(json.loads(modify(files["v1"], lambda g: g["selfassessment"]["items"][0].update(level="e"))))), None, None, A, "tuntematon taso"),
+           ("a newer version", modify(files["v1"], lambda g: g.update(version=4)), None, None, A, "uudempi"),
+           ("a changed self-assessment", modify(files["v1"], lambda g: g["selfassessment"]["goals"][0].update(level="a")), None, None, A, "tarkistussumma"),
+           ("an unknown self-assessment level", json.dumps(reseal(json.loads(modify(files["v1"], lambda g: g["selfassessment"]["goals"][0].update(level="e"))))), None, None, A, "tuntematon taso"),
+           ("a task's self-assessment in version 3", json.dumps(reseal(json.loads(modify(files["v1"], lambda g: g["selfassessment"]["goals"].append({"id": "check-1", "text": "", "level": "b"}))))), None, None, A, "virheellinen"),
+           ("an unknown answer type", json.dumps(reseal(json.loads(modify(files["v1"], lambda g: g["answers"][i1]["responses"].append({"type": "html", "html": "<b>x</b>"}))))), None, None, A, "tuntematon vastaustyyppi"),
+           ("an empty task with an answer", json.dumps(reseal(json.loads(modify(files["v1"], lambda g: [a for a in g["answers"] if a["status"] == "empty"][0]["responses"].append({"type": "number", "value": "3"}))))), None, None, A, "eivät täsmää"),
            ("over the size limit", va, 9_500_000, None, A, "liian suuri"),
-           ("a tampered answer", modify(files["v1"], lambda g: g["answers"][0]["content"][0].update(text="muutettu")), None, None, A, "tarkistussumma"),
-           ("HTML as a PNG picture", json.dumps(reseal(json.loads(modify(files["v1"], lambda g: g["answers"][0]["content"][3].update(data=base64.b64encode(b"<html><script>alert(1)</script></html>").decode()))))), None, None, A, "ei ole PNG"),
-           ("an SVG picture", json.dumps(reseal(json.loads(modify(files["v1"], lambda g: g["answers"][0]["content"][3].update(mime="image/svg+xml", data=base64.b64encode(b"<svg onload='alert(1)'/>").decode()))))), None, None, A, "kuvamuoto"),
-           ("an HTML item", json.dumps(reseal(json.loads(modify(files["v1"], lambda g: g["answers"][0]["content"].append({"type": "html", "html": "<script>alert(1)</script>"}))))), None, None, A, "tuntematon sisältötyyppi"),
-           ("an unknown task", json.dumps(reseal(json.loads(modify(files["v1"], lambda g: g["answers"].append({"task": "fy9-9", "status": "empty", "content": []}))))), None, None, A, "tuntematon tehtävä"),
+           ("a tampered answer", modify(files["v1"], lambda g: g["answers"][i1]["content"][0].update(text="muutettu")), None, None, A, "tarkistussumma"),
+           ("HTML as a PNG picture", json.dumps(reseal(json.loads(modify(files["v1"], lambda g: g["answers"][i1]["content"][3].update(data=base64.b64encode(b"<html><script>alert(1)</script></html>").decode()))))), None, None, A, "ei ole PNG"),
+           ("an SVG picture", json.dumps(reseal(json.loads(modify(files["v1"], lambda g: g["answers"][i1]["content"][3].update(mime="image/svg+xml", data=base64.b64encode(b"<svg onload='alert(1)'/>").decode()))))), None, None, A, "kuvamuoto"),
+           ("an HTML item", json.dumps(reseal(json.loads(modify(files["v1"], lambda g: g["answers"][i1]["content"].append({"type": "html", "html": "<script>alert(1)</script>"}))))), None, None, A, "tuntematon sisältötyyppi"),
+           ("an unknown task", json.dumps(reseal(json.loads(modify(files["v1"], lambda g: g["answers"].append({"task": "fy9-9", "status": "empty", "content": [], "responses": []}))))), None, None, A, "tuntematon tehtävä"),
            ("a missing task", json.dumps(reseal(json.loads(modify(files["v1"], lambda g: g["answers"].pop())))), None, None, A, "puuttuu tiedostosta"),
            ("outside the submission folder", va, None, "muu-kansio", A, "palautuskansiossa"),
            ("no e-mail", va, None, None, "", "sähköpostiosoite puuttuu")]
@@ -363,8 +434,8 @@ with sync_playwright() as p:
     fp = tp.evaluate("""() => { const t = document.getElementById('fingerprint'); return { cols: [...t.tHead.rows[0].cells].slice(1).map((c) => c.textContent),
       chapters: [...t.querySelectorAll('tbody th.ch')].map((c) => c.textContent), rows: [...t.tBodies[0].rows].filter((r) => r.cells[0].tagName === 'TD').map((r) => [...r.cells].slice(1).map((c) => c.dataset.level)) }; }""")
     flat = [k for r in fp["rows"] for k in r]
-    expect("grading view: one fingerprint of the group, items by chapter as rows and students as columns (teacher 2026-11-06)", tp.is_visible("#selfSec") and len(fp["cols"]) >= 3
-           and fp["chapters"] and fp["chapters"][0].startswith("Luku 1") and all(len(r) == len(fp["cols"]) for r in fp["rows"]) and "b" in flat and "c" in flat and "none" in flat, fp)
+    expect("grading view: one fingerprint of the group, the goals by chapter as rows and students as columns (teacher 2026-11-06)", tp.is_visible("#selfSec") and len(fp["cols"]) >= 3
+           and fp["chapters"] and fp["chapters"][0].startswith("Luku 1") and all(len(r) == len(fp["cols"]) for r in fp["rows"]) and "c" in flat and "none" in flat, fp)
     expect("grading view: fingerprint colours: not answered white, 'not yet studied' grey", tp.evaluate("""() => [getComputedStyle(document.querySelector('#fingerprint td.sa-none')).backgroundColor,
       getComputedStyle(document.querySelector('.sa-legend .sa-x')).backgroundColor]""") == ["rgb(255, 255, 255)", "rgb(154, 154, 154)"])
     shot(tp, "osaamisen-sormenjalki", clip=tp.locator("#selfSec").bounding_box()) if SHOTS else None
@@ -467,6 +538,52 @@ with sync_playwright() as p:
     expect("no formulas were written to the sheets", not E("MOCK.formulas"), E("MOCK.formulas"))
     expect("no script errors in the grading view", not terr, terr)
 
+    # ---------------- version 3 and an old version 2 file side by side (teacher 2026-11-06 evening) ----------------
+    gs3 = (GAS / "Tehtavat.gs").read_text()
+    lesson_ids = {t["id"] for c in json.loads(gs3[gs3.index("{"):gs3.rindex(";")])["chapters"] for t in c["tasks"] if t.get("lesson")}
+    old2 = json.loads(json.dumps(files["all"]))
+    old2.update(version=2, includes="solution-editor", submission_id="e" * 32)
+    old2["answers"] = [{"task": a["task"], "status": "answered" if a["content"] else "empty", "content": a["content"]} for a in old2["answers"] if a["task"] not in lesson_ids]
+    old2["selfassessment"] = {"items": [{"id": "check-1", "level": "b", "history": [["b", "2026-11-06T10:00:00.000Z"]]}, {"id": "tavoite-1", "level": "c", "history": [["d", "2026-11-06T10:00:00.000Z"], ["c", "2026-11-06T10:05:00.000Z"]]}]}
+    reseal(old2)
+    t3 = b.new_page(viewport={"width": 1400, "height": 900}); t3err = []
+    t3.on("pageerror", lambda e: t3err.append(str(e)))
+    t3.set_content("<!doctype html><html><head>" + head + "</head><body></body></html>")
+    E3 = lambda js, arg=None: t3.evaluate(js, arg)
+    E3("(f) => { RL_CONFIG.SUBMISSION_FOLDER_ID = f; MOCK.addSheet('Lomakevastaukset 1', [['Aikaleima', 'Sähköpostiosoite', 'Palauta vastaukset']]); }", FOLDER)
+    D_, E_ = "daniel.opiskelija@koulu.example", "eero.opiskelija@koulu.example"
+    for i, (who, f) in enumerate(((D_, files["all"]), (E_, old2))):
+        fid = f"tiedosto-v3-{i}-abcdefghijklmnopqrstu"
+        E3("([id, text]) => { MOCK.files[id] = { text }; }", [fid, json.dumps(f)])
+        E3("([email, id, when]) => { MOCK.sheet('Lomakevastaukset 1').data.push([new Date(when), email, 'https://drive.google.com/open?id=' + id]); }", [who, fid, f"2026-11-06T1{i}:00:00Z"])
+    E3("() => rlImport_()")
+    rows3 = E3("() => MOCK.sheet('RL Palautukset').data.slice(1).map((r) => ({ email: r[2], status: r[4], reason: r[5], n: r[7], self: r[17] }))")
+    expect("import: a version 3 file and an old version 2 file are both accepted", [r["status"] for r in rows3] == ["Hyväksytty", "Hyväksytty"], rows3)
+    expect("version 3: the number, choice and lesson answers count as answered tasks", rows3[0]["n"] >= 8, rows3[0])
+    expect("the sheet keeps only the goals' levels: version 3 'tavoite-1=a,tavoite-2=x', version 2 without its task rating", rows3[0]["self"] == "tavoite-1=a,tavoite-2=x" and rows3[1]["self"] == "tavoite-1=c", rows3)
+    st3 = E3("() => MOCK.dump()")
+    st3j = json.dumps(st3).replace("</", "<\\/")
+    rhead3 = (f"<script>{js('mock')}</script><script>MOCK.load({st3j});</script>"
+              + f"<script>{js('Tehtavat.gs')}</script><script>{js('Code.gs')}</script><script>RL_CONFIG.SUBMISSION_FOLDER_ID = {json.dumps(FOLDER)};</script>")
+    t3.set_content((GAS / "Review.html").read_text().replace("<head>", "<head>" + rhead3, 1))
+    t3.wait_for_selector("#tasks tr.task-row")
+    t3.click('#tasks tr.task-row[data-task="fy3-1-L1-02"]'); t3.wait_for_function("document.getElementById('gAnswer').textContent.indexOf('Ladataan') < 0")
+    expect("grading view: task 1-2 shows the number with its unit (empty editor)", "Numerovastaus: 6,0 cm" in t3.inner_text("#gAnswer") and "Ei ratkaisua editorissa" in t3.inner_text("#gAnswer") and t3.inner_text("#gPos") == "Opiskelija 1/1", t3.inner_text("#gAnswer"))
+    go_back(t3)
+    t3.click('#tasks tr.task-row[data-task="fy3-1-L1-06"]'); t3.wait_for_function("document.getElementById('gAnswer').textContent.indexOf('Ladataan') < 0")
+    expect("grading view: task 1-6 shows the chosen option", "Valinta: Massa pysyy samana" in t3.inner_text("#gAnswer"), t3.inner_text("#gAnswer"))
+    go_back(t3)
+    lesson_row = t3.locator('#tasks tr.task-row[data-task="fy3-1:reflect"]')
+    expect("grading view: a lesson task is listed after the exercises, named by its stage, without points", lesson_row.count() == 1 and lesson_row.inner_text().split("\t")[1] == "Oppitunti"
+           and t3.evaluate("(() => { const r = [...document.querySelectorAll('#tasks details[data-chapter=\"fy3-1\"] tr.task-row')].map((x) => x.dataset.task); return r.indexOf('fy3-1:reflect') > r.indexOf('fy3-1-L3-05'); })()"), lesson_row.inner_text() if lesson_row.count() else None)
+    lesson_row.click(); t3.wait_for_function("document.getElementById('gAnswer').textContent.indexOf('Ladataan') < 0")
+    expect("grading view: the reflection's choice and text, and the points field is off for a lesson task", "Valinta: Kyllä" in t3.inner_text("#gAnswer") and "Paino muuttuu, massa ei." in t3.inner_text("#gAnswer") and t3.is_disabled("#points") and "ei pisteitä" in t3.inner_text("#range"), t3.inner_text("#gAnswer"))
+    t3.keyboard.press("1"); t3.wait_for_timeout(200)
+    expect("a lesson task gets no points from the keys", not t3.evaluate("(MOCK.sheet('RL Pisteet') || { data: [[]] }).data.length > 1"))
+    shot(t3, "arviointi-v3", full_page=True)
+    expect("no script errors with version 3 in the grading view", not t3err, t3err)
+    t3.close()
+
     # ---------------- the local grading page (eduespoo blocks Apps Script; teacher 2026-11-05) ----------------
     # The whole course on one page; one Forms form, so one Drive folder and one zip, per group.
     import zipfile, hashlib
@@ -476,7 +593,7 @@ with sync_playwright() as p:
 
     def chapter_file(ch, text, text2=None):
         given = {0: text} if text2 is None else {0: text, 1: text2}
-        answers = [{"task": t["id"], "status": "answered" if i in given else "empty", "content": [{"type": "text", "text": given[i]}] if i in given else []} for i, t in enumerate(ch["tasks"])]
+        answers = [{"task": t["id"], "status": "answered" if i in given else "empty", "content": [{"type": "text", "text": given[i]}] if i in given else []} for i, t in enumerate([t for t in ch["tasks"] if not t.get("lesson")])]   # an old (version 1) file: the exercises only
         text = text + "|" + (text2 or "")
         canon = json.dumps(answers, ensure_ascii=False, separators=(",", ":"))
         return json.dumps({"format": "ruukkilabra-palautus", "version": 1, "chapter": ch["id"], "lang": "fi", "submission_id": hashlib.md5(text.encode()).hexdigest(),
@@ -568,8 +685,10 @@ with sync_playwright() as p:
     a_v2, b_v1 = n1(files["v2"]), n1(files["v1"])
     rows = lambda: lp.evaluate("JSON.stringify([...document.querySelectorAll('#summary tbody tr')].map((tr) => [...tr.cells].map((c) => c.textContent)))")
     # the chapters' task counts come from the generated file (the exercise bank grows: fy3-1 and fy3-2 have 21 since #345)
-    m1, m2 = (len([c for c in course["chapters"] if c["id"] == k][0]["tasks"]) for k in ("fy3-1", "fy3-2"))
-    want = [["Aino Opiskelija", f"{a_v2 + 1} / {m1 + m2}", str(a_v2 - 1), f"0,5 / {m1 + m2}", "2,5"], ["Bertta Opiskelija", f"{b_v1} / {m1 + m2}", str(b_v1 - 1), f"1 / {m1 + m2}", "2,5"]]
+    # (only the exercises are scored: the lesson's own tasks are shown without points, version 3)
+    m1, m2 = (len([t for t in [c for c in course["chapters"] if c["id"] == k][0]["tasks"] if not t.get("lesson")]) for k in ("fy3-1", "fy3-2"))
+    # the self-assessment average is the goals' only (tavoite-1 = c), version 3
+    want = [["Aino Opiskelija", f"{a_v2 + 1} / {m1 + m2}", str(a_v2 - 1), f"0,5 / {m1 + m2}", "2"], ["Bertta Opiskelija", f"{b_v1} / {m1 + m2}", str(b_v1 - 1), f"1 / {m1 + m2}", "2"]]
     expect("local page: summary with names on the left: done, unchecked, points (all returned chapters)", rows() == json.dumps(want, ensure_ascii=False, separators=(",", ":"))
            and [c.strip() for c in lp.inner_text("#summary thead").split("\t")][:1] == ["OPISKELIJA ▲"], (rows(), lp.inner_text("#summary thead")))
     lp.click('#summary button[data-key="points"]')

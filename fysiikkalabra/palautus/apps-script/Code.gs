@@ -44,7 +44,7 @@ var RL_CONFIG = {
 
 // Samat rajat kuin RuukkiLabran palautus.js:ssä (LIMITS). Formsin tiedostokoon raja asetetaan 10 Mt:ksi.
 var RL_LIMITS = { file: 9000000, image: 2000000, side: 5000, images: 40, text: 20000, latex: 4000, items: 400, mathPng: 200000 };
-var RL_FORMAT = 'ruukkilabra-palautus', RL_VERSION = 2;   // 2: + itsearvio (selfassessment), opettaja 6.11.2026
+var RL_FORMAT = 'ruukkilabra-palautus', RL_VERSION = 3;   // 2: + itsearvio (selfassessment), 3: kaikki vastaukset + tavoitearvioiden kooste (opettaja 6.11.2026)
 var RL_SA_LEVELS = ['a', 'b', 'c', 'd', 'x'];   // väriasteikko vihreästä punertavaan + Ei vielä (inquiry.py SA_LEVELS)
 var RL_STATUS = { OK: 'Hyväksytty', DUP: 'Kaksoiskappale', CHECK: 'Tarkistettava', BAD: 'Virheellinen', READ: 'Lukuvirhe' };
 var RL_DECISION = { ACCEPT: 'Hyväksy', REJECT: 'Hylkää' };
@@ -218,6 +218,53 @@ function rlCheckItem_(it, where, deep) {
   }
   throw rlError_(where + ': tuntematon sisältötyyppi');
 }
+// Versio 3: tehtävän muut vastaukset kuin editori (numero, valinta, tosi/epätosi, järjestys, kirjoitettu vastaus,
+// mittaustaulukko). Palauttaa samat kentät samassa järjestyksessä kuin RuukkiLabran palautus.js kirjoittaa ne, joten
+// tarkistussumma lasketaan tästä. Tekstejä ei koskaan tulkita HTML:ksi.
+function rlCheckResponse_(r, where) {
+  if (!r || typeof r !== 'object' || Array.isArray(r)) throw rlError_(where + ': virheellinen vastaus');
+  var keys = Object.keys(r);
+  var only = function (allowed) { for (var k = 0; k < keys.length; k++) if (allowed.indexOf(keys[k]) < 0) throw rlError_(where + ': tuntematon kenttä "' + String(keys[k]).slice(0, 30) + '"'); };
+  var str = function (v, max, empty) { if (typeof v !== 'string' || v.length > max || (!empty && !v)) throw rlError_(where + ': virheellinen vastaus'); return v; };
+  var list = function (v, max) { if (!Array.isArray(v) || !v.length || v.length > max) throw rlError_(where + ': virheellinen vastaus'); return v; };
+  if (r.type === 'number') {
+    only(['type', 'value', 'unit']);
+    var n = { type: 'number', value: str(r.value, 100) };
+    if (r.unit !== undefined) n.unit = str(r.unit, 60, true);
+    return n;
+  }
+  if (r.type === 'choice') {
+    only(['type', 'question', 'answer', 'option']);
+    if (typeof r.option !== 'number' || r.option < 0 || r.option > 50 || r.option % 1) throw rlError_(where + ': virheellinen valinta');
+    return { type: 'choice', question: str(r.question, 2000, true), answer: str(r.answer, 2000, true), option: r.option };
+  }
+  if (r.type === 'truefalse') {
+    only(['type', 'items']);
+    return { type: 'truefalse', items: list(r.items, 20).map(function (x) {
+      if (!x || typeof x !== 'object' || (x.value !== true && x.value !== false && x.value !== null)) throw rlError_(where + ': virheellinen väite');
+      return { text: str(x.text, 2000, true), value: x.value };
+    }) };
+  }
+  if (r.type === 'order') {
+    only(['type', 'items']);
+    return { type: 'order', items: list(r.items, 20).map(function (x) {
+      if (!x || typeof x !== 'object' || !(x.rank === null || (typeof x.rank === 'number' && x.rank >= 1 && x.rank <= 20 && x.rank % 1 === 0))) throw rlError_(where + ': virheellinen järjestys');
+      return { text: str(x.text, 2000, true), rank: x.rank };
+    }) };
+  }
+  if (r.type === 'text') {
+    only(['type', 'label', 'text']);
+    return { type: 'text', label: str(r.label, 2000, true), text: str(r.text, RL_LIMITS.text) };
+  }
+  if (r.type === 'table') {
+    only(['type', 'head', 'rows']);
+    var cell = function (c) { return str(c, 200, true); };
+    var head = Array.isArray(r.head) && r.head.length <= 20 ? r.head.map(cell) : null;
+    if (!head) throw rlError_(where + ': virheellinen taulukko');
+    return { type: 'table', head: head, rows: list(r.rows, 200).map(function (row) { if (!Array.isArray(row) || row.length > 20) throw rlError_(where + ': virheellinen taulukko'); return row.map(cell); }) };
+  }
+  throw rlError_(where + ': tuntematon vastaustyyppi');
+}
 /**
  * Tarkistaa tiedoston tekstin. Palauttaa { data, answered: [id], empty: [id], sha } tai heittää virheen, jonka viesti
  * kertoo syyn opettajalle. deep = kuvadata puretaan ja tarkistetaan tavuista (tuonnissa aina).
@@ -229,7 +276,8 @@ function rlValidate_(text, deep) {
   if (data.format !== RL_FORMAT) throw rlError_('tiedosto ei ole RuukkiLabran palautustiedosto');
   if (typeof data.version !== 'number') throw rlError_('tiedostomuodon versio puuttuu');
   if (data.version > RL_VERSION) throw rlError_('tiedostomuodon versio ' + data.version + ' on uudempi kuin tämä skripti tuntee');
-  if (data.version !== 1 && data.version !== 2) throw rlError_('tuntematon tiedostomuodon versio');
+  if (data.version !== 1 && data.version !== 2 && data.version !== 3) throw rlError_('tuntematon tiedostomuodon versio');
+  var v3 = data.version === 3;
   if (typeof data.chapter !== 'string' || !rlChapters_()[data.chapter]) throw rlError_('tiedosto on toiselta opintojaksolta tai tuntemattomasta luvusta (' + String(data.chapter).slice(0, 20) + ')');
   if (typeof data.submission_id !== 'string' || !/^[0-9a-f]{32}$/.test(data.submission_id)) throw rlError_('palautustunniste puuttuu tai on virheellinen');
   if (typeof data.content_sha256 !== 'string' || !/^[0-9a-f]{64}$/.test(data.content_sha256)) throw rlError_('tarkistussumma puuttuu');
@@ -244,8 +292,12 @@ function rlValidate_(text, deep) {
     seen[a.task] = true;
     var where = 'tehtävä ' + t.number;
     if (!Array.isArray(a.content) || a.content.length > RL_LIMITS.items) throw rlError_(where + ': virheellinen sisältö');
+    if (v3 ? !Array.isArray(a.responses) || a.responses.length > 40 : a.responses !== undefined) throw rlError_(where + ': virheelliset vastaukset');
+    if (!v3 && t.lesson) throw rlError_('tuntematon tehtävä ' + a.task.slice(0, 40));   // oppitunnin tehtävät vasta versiossa 3
+    var resp = v3 ? a.responses.map(function (r) { return rlCheckResponse_(r, where); }) : [];
     if (a.status !== 'answered' && a.status !== 'empty') throw rlError_(where + ': tuntematon tila');
-    if ((a.status === 'empty') !== (a.content.length === 0)) throw rlError_(where + ': tila ja sisältö eivät täsmää');
+    // versio 3: tehtävään on vastattu, kun editorissa tai jossakin muussa vastauksessa on jotakin (opettaja 6.11.2026)
+    if ((a.status === 'empty') !== (a.content.length === 0 && resp.length === 0)) throw rlError_(where + ': tila ja sisältö eivät täsmää');
     var chars = 0, items = [];
     for (var j = 0; j < a.content.length; j++) {
       var it = rlCheckItem_(a.content[j], where, deep);
@@ -253,17 +305,22 @@ function rlValidate_(text, deep) {
       if (it.type === 'image') images++;
       items.push(it.type === 'math' ? { type: 'math', latex: it.latex } : a.content[j]);
     }
+    resp.forEach(function (r) { if (r.type === 'text') chars += r.text.length; });
     if (chars > RL_LIMITS.text) throw rlError_(where + ': teksti on liian pitkä');
-    canon.push({ task: a.task, status: a.status, content: items });
+    canon.push(v3 ? { task: a.task, status: a.status, content: items, responses: resp } : { task: a.task, status: a.status, content: items });
     if (a.status === 'answered') hashes.push(a.task + '=' + rlSha_(JSON.stringify(canon[canon.length - 1])).slice(0, 16));
     (a.status === 'answered' ? answered : empty).push(a.task);
   }
-  for (var id in tasks) if (!seen[id]) throw rlError_('tehtävä ' + tasks[id].number + ' puuttuu tiedostosta');
+  // vanhemmissa versioissa (1, 2) on vain editorilliset tehtävät, joten oppitunnin tehtävät eivät puutu niistä
+  for (var id in tasks) if (!seen[id] && (v3 || !tasks[id].lesson)) throw rlError_('tehtävä ' + tasks[id].number + ' puuttuu tiedostosta');
   if (images > RL_LIMITS.images) throw rlError_('kuvia on liikaa (' + images + ')');
-  var self = data.version === 2 ? rlCheckSelf_(data.selfassessment, data.chapter) : null;
-  var sha = rlSha_(self ? JSON.stringify({ answers: canon, selfassessment: self }) : JSON.stringify(canon));
+  var self = data.version === 2 ? rlCheckSelf_(data.selfassessment, data.chapter) : v3 ? rlCheckGoals_(data.selfassessment, data.chapter) : null;
+  var sha = rlSha_(data.version === 2 ? JSON.stringify({ answers: canon, selfassessment: self }) : v3 ? JSON.stringify({ answers: canon, selfassessment: self }) : JSON.stringify(canon));
   if (sha !== data.content_sha256) throw rlError_('tarkistussumma ei täsmää: tiedostoa on muutettu tai se on vioittunut');
-  return { data: data, chapter: data.chapter, answered: answered, empty: empty, sha: sha, hashes: hashes.join(','), self: self || [] };
+  // taulukkoon vain tavoitearviot (opettaja 6.11.2026): version 2 tehtäväkohtaiset arviot ja historiat jäävät pois
+  var known = rlGoalIds_(data.chapter);
+  var levels = (self || []).filter(function (x) { return x.level && known[x.id]; }).map(function (x) { return { id: x.id, level: x.level }; });
+  return { data: data, chapter: data.chapter, answered: answered, empty: empty, sha: sha, hashes: hashes.join(','), self: levels };
 }
 // Itsearvio (versio 2): kohteet sivun järjestyksessä, taso ja sen historia. Tuntematon kohde, taso tai aika hylkää tiedoston.
 function rlCheckSelf_(sa, chapterId) {
@@ -272,7 +329,7 @@ function rlCheckSelf_(sa, chapterId) {
   ((c && c.self) || []).forEach(function (x) { known[x.id] = true; });
   sa.items.forEach(function (it, i) {
     if (!it || typeof it !== 'object' || typeof it.id !== 'string' || !/^[a-z0-9-]{1,60}$/.test(it.id)) throw rlError_('itsearvion kohta ' + (i + 1) + ' on virheellinen');
-    if (c && c.self && !known[it.id]) throw rlError_('tuntematon itsearvion kohta ' + it.id);
+    // versio 2 kantoi myös tehtäväkohtaiset arviot; ne luetaan (tarkistussummaa varten) mutta eivät näy (opettaja 6.11.2026)
     if (seen[it.id]) throw rlError_('itsearvion kohta ' + it.id + ' on tiedostossa kahdesti');
     seen[it.id] = true;
     if (RL_SA_LEVELS.indexOf(it.level) < 0) throw rlError_('itsearvion kohdassa ' + it.id + ' on tuntematon taso');
@@ -285,7 +342,28 @@ function rlCheckSelf_(sa, chapterId) {
   });
   return out;
 }
-// Itsearvio taulukon soluun: "check-1=b,tavoite-1=c" (vain tunnisteita ja kirjaimia, ei opiskelijan tekstiä)
+// Versio 3: luvun tavoitteet, kukin kerran sivun järjestyksessä: tunniste, tavoiteteksti ja opiskelijan viimeisin taso tai
+// null (ei vastattu). "x" = En ole vielä harjoitellut. Ei tehtäväkohtaisia arvioita eikä historiaa.
+function rlCheckGoals_(sa, chapterId) {
+  if (!sa || typeof sa !== 'object' || Array.isArray(sa) || Object.keys(sa).join() !== 'goals' || !Array.isArray(sa.goals) || sa.goals.length > 30) throw rlError_('tavoitearvio on virheellinen');
+  var known = rlGoalIds_(chapterId), seen = Object.create(null);
+  return sa.goals.map(function (g, i) {
+    if (!g || typeof g !== 'object' || typeof g.id !== 'string' || !/^tavoite-\d{1,2}$/.test(g.id) || Object.keys(g).join() !== 'id,text,level') throw rlError_('tavoitearvion kohta ' + (i + 1) + ' on virheellinen');
+    if (!known[g.id]) throw rlError_('tuntematon tavoite ' + g.id);
+    if (seen[g.id]) throw rlError_('tavoite ' + g.id + ' on tiedostossa kahdesti');
+    seen[g.id] = true;
+    if (typeof g.text !== 'string' || g.text.length > 500) throw rlError_('tavoitteen ' + g.id + ' teksti on virheellinen');
+    if (g.level !== null && RL_SA_LEVELS.indexOf(g.level) < 0) throw rlError_('tavoitteessa ' + g.id + ' on tuntematon taso');
+    return { id: g.id, text: g.text, level: g.level };
+  });
+}
+// Luvun tavoitteiden tunnisteet arviointisivun tehtävälistasta (Tehtavat.gs self).
+function rlGoalIds_(chapterId) {
+  var c = rlChapters_()[chapterId], m = Object.create(null);
+  ((c && c.self) || []).forEach(function (x) { if (/^tavoite-/.test(x.id)) m[x.id] = true; });
+  return m;
+}
+// Itsearvio taulukon soluun: "tavoite-1=c,tavoite-2=x" (vain tunnisteita ja kirjaimia, ei opiskelijan tekstiä)
 function rlSelfCell_(self) { return self.map(function (x) { return x.id + '=' + x.level; }).join(','); }
 function rlSelfParse_(text) {
   var m = Object.create(null);
@@ -488,18 +566,21 @@ function rlSummary_(m) {
     RL_COURSE.chapters.forEach(function (c) {
       var last = rlLatest_(s, c.id); if (!last) return;
       var sum = 0, n = 0, a = 0, u = 0;
-      c.tasks.forEach(function (t) {
+      c.tasks.filter(function (t) { return !t.lesson; }).forEach(function (t) {   // oppitunnin tehtävät näytetään, ei pisteytetä
         var p = rlTaskScore_(m, s, c.id, last, t.id).score, done = last.answered.indexOf(t.id) >= 0;
         if (p !== '') { sum += p; n++; }
         if (done) { a++; if (p === '') u++; }
       });
-      per[c.id] = { points: rlRound_(sum), scored: n, tasks: c.tasks.length, answered: a, unchecked: u };
-      total += sum; scored += n; tasks += c.tasks.length; answered += a; unchecked += u;
+      var nt = rlScored_(c).length;
+      per[c.id] = { points: rlRound_(sum), scored: n, tasks: nt, answered: a, unchecked: u };
+      total += sum; scored += n; tasks += nt; answered += a; unchecked += u;
     });
     return { email: s.email, chapters: per, total: rlRound_(total), scored: scored, tasks: tasks, answered: answered, unchecked: unchecked };
   }).sort(function (a, b) { return a.email.localeCompare(b.email, 'fi'); });
 }
 
+// Pisteytettävät tehtävät: harjoitustehtävät, ei oppitunnin tehtäviä (lesson, versio 3).
+function rlScored_(c) { return c.tasks.filter(function (t) { return !t.lesson; }); }
 function rlOverview() {
   var m = rlModel_();
   var chapters = RL_COURSE.chapters.map(function (c) {
@@ -510,9 +591,10 @@ function rlOverview() {
       subs.forEach(function (s) {
         var last = rlLatest_(s, c.id);
         if (last.answered.indexOf(t.id) < 0) { empty++; return; }
+        if (t.lesson) return;
         if (rlTaskScore_(m, s, c.id, last, t.id).score !== '') scored++; else open++;
       });
-      return { id: t.id, number: t.number, level: t.level, html: t.html, answer: t.answer, submissions: subs.length, empty: empty,
+      return { id: t.id, number: t.number, level: t.level, lesson: !!t.lesson, html: t.html, answer: t.answer, submissions: subs.length, empty: empty,
                solutions: subs.length - empty, scored: scored, open: open };
     });
     // itsearvio (opettaja 6.11.2026): kohteet ja jokaisen palauttajan uusimman palautuksen tasot
@@ -555,11 +637,14 @@ function rlAnswer(req) {
   if (v.chapter !== info.chapter.id || v.data.submission_id !== version.sub || v.sha !== version.sha) throw rlError_('Palautustiedosto on muuttunut tuonnin jälkeen.');
   var a = v.data.answers.filter(function (x) { return x.task === req.task; })[0];
   var where = 'tehtävä ' + info.task.number;
-  return { status: a.status, content: a.content.map(function (it) { return rlCheckItem_(it, where, true); }) };
+  if (!a) return { status: 'empty', content: [], responses: [] };
+  return { status: a.status, content: a.content.map(function (it) { return rlCheckItem_(it, where, true); }),
+           responses: (a.responses || []).map(function (r) { return rlCheckResponse_(r, where); }) };
 }
 function rlSaveScore(req) {
   var info = req && typeof req.task === 'string' ? rlTaskInfo_(req.task) : null;
   if (!info || typeof req.email !== 'string' || typeof req.sub !== 'string') throw rlError_('Virheellinen tallennuspyyntö.');
+  if (info.task.lesson) throw rlError_('Oppitunnin tehtävää ei pisteytetä.');
   var value = req.value;
   if (value !== '' && !rlPointsOk_(value)) {
     throw rlError_('Pisteet ovat luku 0–' + RL_CONFIG.MAX_POINTS + ' (enintään kaksi desimaalia) tai tyhjä (arvioimaton).');
@@ -602,7 +687,7 @@ function rlSetDecision(req) {
 function rlScoresCsv() {
   var m = rlModel_(), chapters = RL_COURSE.chapters;
   var q = function (v) { v = v === null || v === undefined ? '' : String(v); if (/^[=+\-@\t\r]/.test(v)) v = "'" + v; return /[;"\n\r]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; };
-  var lines = [['Opiskelija'].concat(chapters.map(function (c) { return rlChapterName_(c) + ' (max ' + c.tasks.length * RL_CONFIG.MAX_POINTS + ')'; }), ['Yhteensä', 'Palautettuja lukuja', 'Tehty', 'Tarkistamatta']).map(q).join(';')];
+  var lines = [['Opiskelija'].concat(chapters.map(function (c) { return rlChapterName_(c) + ' (max ' + rlScored_(c).length * RL_CONFIG.MAX_POINTS + ')'; }), ['Yhteensä', 'Palautettuja lukuja', 'Tehty', 'Tarkistamatta']).map(q).join(';')];
   rlSummary_(m).forEach(function (s) {
     var cells = chapters.map(function (c) { return s.chapters[c.id] ? rlNum_(s.chapters[c.id].points) : ''; });
     lines.push([s.email].concat(cells, [rlNum_(s.total), Object.keys(s.chapters).length, s.answered, s.unchecked]).map(q).join(';'));
