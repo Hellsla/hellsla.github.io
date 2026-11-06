@@ -402,10 +402,12 @@
     li.insertBefore(open, before);
     open.after(box);
     // "Kirjoita ratkaisu" and the number's answer box (input, unit, Tarkista) on one row (teacher 2026-11-06); the
-    // editor, when open, takes a row of its own between them, and the row wraps on a narrow phone
-    if (before && before.matches('form.check')) {
+    // editor, when open, takes a row of its own between them, and the row wraps on a narrow phone. Kopioi ratkaisu
+    // and Poista ratkaisu sit beside Piilota editori while the editor is open (teacher 2026-11-06).
+    {
       const row = document.createElement('div'); row.className = 'ex-row';
-      li.insertBefore(row, open); row.append(open, box, before);
+      li.insertBefore(row, open); row.append(open, box);
+      if (before && before.matches('form.check')) row.append(before);
     }
     // a written solution in the editor opens the task's answer (part 8; it replaced the tick "Olen tehnyt ratkaisun")
     let told = false;
@@ -418,19 +420,24 @@
     open.addEventListener('click', () => {
       const show = box.hidden;
       box.hidden = !show; open.setAttribute('aria-expanded', String(show)); open.textContent = msg(show ? 'pad_hide' : 'pad_write');
+      const head = document.getElementById(id + '-tools'); if (head) head.hidden = !show;
       if (!show || made) { if (show) box.querySelector('.rich-text-editor')?.focus(); return; }
       made = true;
       box.append(status); status.textContent = msg('pad_loading');
       loadPad().then(() => window.flPadStore.get(task.id).then((html) => ({ html }), (e) => ({ html: '', error: e }))).then((saved) => {
         const label = document.createElement('span'); label.id = id + '-label'; label.hidden = true; label.textContent = msg('pad_label');
         const root = document.createElement('div'); root.className = 'pad-editor';
-        const tools = document.createElement('div'); tools.className = 'pad-tools';
+        const tools = document.createElement('div'); tools.className = 'pad-tools pad-head'; tools.id = id + '-tools';
         const copy = document.createElement('button'); copy.type = 'button'; copy.className = 'pad-copy'; copy.textContent = msg('pad_copy');
         const note = document.createElement('p'); note.className = 'pad-note'; note.textContent = msg('pad_note');
         const del = document.createElement('button'); del.type = 'button'; del.className = 'pad-btn pad-delete'; del.textContent = msg('pad_delete');
         const saveState = document.createElement('p'); saveState.className = 'pad-save'; saveState.setAttribute('aria-live', 'polite');
         tools.append(copy, del, status);
-        box.replaceChildren(label, root, saveState, tools, note, backupPanel(status));
+        // "Tallennetut ratkaisut" beside the save state (teacher 2026-11-06)
+        const saveRow = document.createElement('div'); saveRow.className = 'pad-saverow'; saveRow.append(saveState, backupPanel(status));
+        box.replaceChildren(label, root, saveRow, note);
+        // the tools beside the open button; in the large view (part 10) the editor stands alone, so they go in it
+        if (open.nextElementSibling === box) open.after(tools); else box.prepend(tools);
         status.textContent = '';
         // autosave: a change marks the solution dirty and is written 0,8 s after the last keystroke; leaving the page
         // writes at once (flushAll). "Tallennettu" is shown only after the write has committed.
@@ -821,7 +828,7 @@
       const task = tasks[i]; cur = i;
       home = document.createComment('ex-focus'); task.before(home); taskCol.append(task);
       const [o, pad] = padOf(task);
-      if (pad) { if (pad.hidden) o.click(); padCol.append(pad); }   // the editor open from the start (part 6 loads it)
+      if (pad) { if (pad.hidden) o.click(); padCol.append(pad); const t = document.getElementById(pad.id + '-tools'); if (t) pad.prepend(t); }   // the editor open from the start (part 6 loads it), its tools with it
       body.classList.toggle('no-pad', !pad);                        // a task of choices only: the task alone
       layout();
       title.textContent = nameOf(task, i);
@@ -833,7 +840,7 @@
     const back = () => {
       if (cur < 0) return;
       const [o, pad] = padOf(tasks[cur]);
-      if (pad && o) o.after(pad);
+      if (pad && o) { o.after(pad); const t = document.getElementById(pad.id + '-tools'); if (t) o.after(t); }
       home.replaceWith(tasks[cur]); home = null;
     };
     const go = (i) => { if (i < 0 || i >= tasks.length || i === cur) return; back(); put(i); title.focus({ preventScroll: true }); };
