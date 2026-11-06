@@ -701,8 +701,8 @@ def toc_link(sid, n, title):
             + (f'<span class="toc-rest">{rest}</span>' if rest else "") + '</span></a>')
 
 
-SA_LEVELS = ("a", "b", "c", "d", "x")   # guided self-assessment (teacher 2026-11-06, his 2018 team sheet): five levels, shown as a
-# colour scale from Ruukkilabra green to a reddish tone and a grey "not yet" (teacher 2026-11-06: no letters); the
+SA_LEVELS = ("d", "c", "b", "a", "x")   # reddish on the left, dark green on the right (teacher 2026-11-06 evening); guided self-assessment (teacher 2026-11-06, his 2018 team sheet): five levels, shown as a
+# colour scale from a reddish tone to Ruukkilabra green and a grey "not yet" (teacher 2026-11-06: no letters); the
 # letters are only the values in the submission file
 
 
@@ -835,7 +835,7 @@ def render(folder, inquiry, parts, md):
         tall empty space and the next task pushed far down (teacher 2026-10-27, "avautuvat kortit")."""
         return "".join(act(a) for a in items)
 
-    toc, n = [], 0
+    toc, n, last = [], 0, None
     cards_at = next((s for s in ("sovella", "tarkista", "selita") if by_stage[s]), None) if parts.get("cards") else None
     for sid, title in stages():
         items = by_stage[sid]
@@ -855,14 +855,18 @@ def render(folder, inquiry, parts, md):
                      f'<span class="fold-status" data-n="{k}">{T("inquiry.fold_question_one" if k == 1 else "inquiry.fold_question_many", n=k)}</span></summary>'
                      f'<div class="fold-body">{inner}</div></details>')
         lead = f'<p class="stage-lead">{T(f"inquiry.lead_{sid}")}</p>' if T.has(f"inquiry.lead_{sid}") else ""   # what the stage is for (teacher 2026-11-05)
-        body.append(f'<section class="stage" id="{sid}" data-stage="{sid}"><h2><span class="stage-no" aria-hidden="true">{n}</span>{title}</h2>{lead}{inner}</section>')
+        sec = f'<section class="stage" id="{sid}" data-stage="{sid}"><h2><span class="stage-no" aria-hidden="true">{n}</span>{title}</h2>{lead}{inner}</section>'
+        if sid == "tarkista" and parts.get("exercises"):   # Itsearvio closes the page, after the exercises (teacher 2026-11-06 evening)
+            last = (sec, toc_link(sid, n, title)); continue
+        body.append(sec)
         toc.append(toc_link(sid, n, title))
-    if parts.get("exercises"):                         # the exercises close the page, after the exit ticket
+    if parts.get("exercises"):                         # the exercises after the lesson's stages, before Itsearvio
         text = ""                                      # the exercises' own lead text is not shown (teacher 2026-11-04: "turhia")
         aid = ex_act["id"] if ex_act else "harjoitukset"
         body.append(f'<section class="stage stage-practice" id="exercises" data-stage="exercises"><h2>{exercises_title()}</h2>'
                     f'<div class="activity act-exercises" id="{esc(aid)}" data-type="exercises">{text}{parts["exercises"]}</div></section>')
         toc.append(f'<a href="#exercises" class="toc-end"><span class="toc-label">{exercises_title()}</span></a>')
+    if last: body.append(last[0]); toc.append(last[1])
     return current_stage_names("\n".join(body)), "".join(toc)
 
 
