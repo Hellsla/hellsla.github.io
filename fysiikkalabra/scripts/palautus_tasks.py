@@ -55,17 +55,17 @@ def pages(course):
     for f in SITE.glob(f"{course.lower()}-*.html"):
         m = re.search(r'<script src="palautus\.js(?:\?v=\w+)?" data-chapter="([a-z0-9-]+)"', f.read_text())
         if m and m.group(1) == f.stem: out.append(m.group(1))
-    return sorted(out, key=lambda c: int(c.split("-")[1]))
+    return sorted(out, key=lambda c: int(c.split("-")[1]) if c.split("-")[1].isdigit() else 0)   # FY9 units: by "Luku 1.2" below
 
 
 def courses_with_button():
-    found = {re.match(r"(fy\d+)-", f.name).group(1).upper() for f in SITE.glob("fy*-*.html") if re.fullmatch(r"fy\d+-\d+\.html", f.name)}
+    found = {re.match(r"(fy\d+)-", f.name).group(1).upper() for f in SITE.glob("fy*-*.html") if re.fullmatch(r"fy\d+-[a-z0-9-]+\.html", f.name)}   # a FY9 review lesson too (fy9-energia)
     return sorted((c for c in found if pages(c)), key=lambda c: int(c[2:]))
 
 EXTRACT = r"""(id) => {
   const page = document;
   const strip = (root) => {
-    root.querySelectorAll('.ex-num,.ex-core,form,details,label.solved,.pad-open,.pad,.feedback,button,script,style,.ex-head,.zoom-btn,legend').forEach((e) => e.remove());
+    root.querySelectorAll('.ex-num,.ex-core,.task-skills,.pts,form,details,label.solved,.pad-open,.pad,.feedback,button,script,style,.ex-head,.zoom-btn,legend').forEach((e) => e.remove());
     root.querySelectorAll('input').forEach((e) => e.remove());
     // lesson.js flFitMath moves the punctuation after a formula wider than the column into the formula (.kx-punct), and
     // which formulas are too wide depends on the machine's fonts: put the mark back after the formula, so the grading
@@ -81,14 +81,30 @@ EXTRACT = r"""(id) => {
       if (!keep.includes(a.name)) e.removeAttribute(a.name);
     }));
   };
-  const lis = [...page.querySelectorAll('#exercises li[id]')].filter((li) => li.querySelector(':scope > .task'));
+  // the exercises and the FY9 review tasks (div.practice-task) that templates/palautus.js puts in the file
+  const lis = [...page.querySelectorAll('#exercises li[id], #exercises div.practice-task[id]')].filter((t) => (t.matches('li') ? t.querySelector(':scope > .task')
+    : !t.querySelector(':scope > ol.parts') || t.querySelector(':scope > ol.parts > li:not(:has(.choices))')));
+  // a review task's short answer: the answer step of each part of its model solution, under the part's heading
+  const reviewAnswer = (li) => {
+    const steps = [...li.querySelectorAll(':scope > details.reveal .steps')];
+    if (!steps.length) return null;
+    const box = document.createElement('div');
+    steps.forEach((st) => {
+      const h = st.previousElementSibling && st.previousElementSibling.matches('h4.sol-part') ? st.previousElementSibling : null;
+      const a = st.querySelector('.sol-step[data-step="vastaus"], .sol-step[data-step="mallivastaus"]');
+      if (!a) return;
+      if (h) { const p = document.createElement('p'); p.innerHTML = '<strong></strong>'; p.firstChild.textContent = h.textContent.trim(); box.append(p); }
+      [...a.children].filter((c) => !c.matches('.sol-label')).forEach((c) => box.append(c.cloneNode(true)));
+    });
+    return box.childNodes.length ? box : null;
+  };
   return lis.map((li) => {
-    const answer = li.querySelector(':scope > details.answer > :not(summary)');
-    const ans = answer ? answer.cloneNode(true) : null;
+    const answer = li.matches('li') ? li.querySelector(':scope > details.answer > :not(summary)') : null;
+    const ans = answer ? answer.cloneNode(true) : (li.matches('li') ? null : reviewAnswer(li));
     // figures become pictures (filled in by the caller from element screenshots)
     // every figure of the task (also inside a choice), outermost only, numbered on the page so the caller shoots the same one
     li.querySelectorAll('.fig, figure').forEach((f) => f.removeAttribute('data-rl-fig'));
-    [...li.querySelectorAll('.fig, figure')].filter((f) => !f.parentElement.closest('.fig, figure')).forEach((f, i) => f.setAttribute('data-rl-fig', String(i)));
+    [...li.querySelectorAll('.fig, figure')].filter((f) => !f.parentElement.closest('.fig, figure') && !f.closest('details.reveal')).forEach((f, i) => f.setAttribute('data-rl-fig', String(i)));
     const c = li.cloneNode(true);
     c.querySelectorAll('[data-rl-fig]').forEach((f) => { const i = f.getAttribute('data-rl-fig'); const img = document.createElement('img'); const lab = f.querySelector('[aria-label]'); img.setAttribute('alt', lab ? lab.getAttribute('aria-label') : ''); img.setAttribute('src', 'FIG:' + i); img.className = 'fig'; f.replaceWith(img); });
     strip(c); if (ans) strip(ans);
@@ -116,8 +132,8 @@ def collect(course):
             # Every box open and typeset before reading (lesson.html flMath typesets a closed box only on its toggle event,
             # which fires later; on a slow CI machine the old fixed waits read some boxes as raw LaTeX, 2026-11-06).
             pg.evaluate("""() => document.querySelectorAll('#exercises details').forEach((d) => {
-              if (d.closest('.level, .answer') || d.matches('.level, .answer')) { d.open = true; if (d.flMathOpen) d.flMathOpen(); } })""")
-            pg.wait_for_function("""() => ![...document.querySelectorAll('#exercises details.level, #exercises details.answer')].some((d) => !d.open || d.dataset.flMath === 'wait' || d.classList.contains('fl-math-later'))""")
+              if (d.closest('.level, .answer') || d.matches('.level, .answer') || d.matches('.practice-task > details.reveal')) { d.open = true; if (d.flMathOpen) d.flMathOpen(); } })""")
+            pg.wait_for_function("""() => ![...document.querySelectorAll('#exercises details.level, #exercises details.answer, #exercises .practice-task > details.reveal')].some((d) => !d.open || d.dataset.flMath === 'wait' || d.classList.contains('fl-math-later'))""")
             pg.evaluate("document.fonts ? document.fonts.ready.then(() => true) : true")
             pg.wait_for_timeout(200)
             tasks = pg.evaluate(EXTRACT)
@@ -129,11 +145,11 @@ def collect(course):
                 if "FIG:" in t["html"]: sys.exit(f"{pid} {t['id']}: a figure was not drawn for the grading view")
             title = pg.evaluate("(() => { const h = document.querySelector('main h1').cloneNode(true); h.querySelectorAll('.katex').forEach((k) => { const a = k.querySelector('annotation'); k.replaceWith(a ? a.textContent : k.textContent); }); return h.textContent; })()").strip()
             eyebrow = pg.evaluate("(() => { const e = document.querySelector('.ch-no'); return e ? e.textContent : ''; })()")
-            m = re.search(r"Luku\s+(\d+)", eyebrow)
+            m = re.search(r"Luku\s+(\d+(?:\.\d+)?)", eyebrow)   # "Luku 4", a FY9 review lesson "Luku 2.1"
             # guided self-assessment of Tarkista osaamisesi (teacher 2026-11-06): its items in page order, id and plain label
             # teacher 2026-11-06: "Käsitetehtävä 1" tells too little, so a task's item carries its own title and question
             self_items = pg.evaluate(SELF_ITEMS)
-            ch = {"id": pid, "number": int(m.group(1)) if m else int(pid.split("-")[1]), "title": re.sub(r"\s+", " ", title).replace("\\Delta ", "Δ").replace("\\Delta", "Δ"), "tasks": tasks}
+            ch = {"id": pid, "number": (int(m.group(1)) if m.group(1).isdigit() else m.group(1)) if m else int(pid.split("-")[1]), "title": re.sub(r"\s+", " ", title).replace("\\Delta ", "Δ").replace("\\Delta", "Δ"), "tasks": tasks}
             if self_items: ch["self"] = self_items
             chapters.append(ch)
         b.close()
@@ -142,7 +158,7 @@ def collect(course):
 
 
 def render(code, chapters):
-    chapters = sorted(chapters, key=lambda c: c["number"])
+    chapters = sorted(chapters, key=lambda c: tuple(int(x) for x in str(c["number"]).split(".")))
     course = {"id": code, "chapters": chapters}
     return ("/* GENERATED by scripts/palautus_tasks.py from the built pages; do not edit by hand.\n"
             "   The course's chapters in teaching order, each with its exercises for the grading view: id, running number,\n"
@@ -200,7 +216,7 @@ if __name__ == "__main__":
     for code in wanted:
         chapters = collect(code)
         text = render(code, chapters)
-        if per and code in per["courses"]: courses[code] = {"id": code, "chapters": sorted(chapters, key=lambda c: c["number"])}
+        if per and code in per["courses"]: courses[code] = {"id": code, "chapters": sorted(chapters, key=lambda c: tuple(int(x) for x in str(c["number"]).split(".")))}
         if code == GAS_COURSE:
             if check:
                 if strip(OUT.read_text() if OUT.is_file() else "") != strip(text):

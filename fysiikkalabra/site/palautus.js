@@ -45,7 +45,10 @@
   const STORE_KEY = 'ruukkilabra:palautus:' + CHAPTER;
   const sec = document.getElementById('exercises');
   if (!CHAPTER || !sec) return;
-  const tasks = [...sec.querySelectorAll('li[id]')].filter((li) => li.querySelector(':scope > .task'));
+  // an exercise (li > p.task) and a review task of FY9 (div.practice-task, practice.py; teacher 2026-11-06), the ones
+  // lesson.js part 6 gives a solution editor: a task with only choices has none, so it is not in the file either
+  const tasks = [...sec.querySelectorAll('li[id], div.practice-task[id]')].filter((t) => (t.matches('li') ? t.querySelector(':scope > .task')
+    : !t.querySelector(':scope > ol.parts') || t.querySelector(':scope > ol.parts > li:not(:has(.choices))')));
   if (!tasks.length) return;
   const numOf = (li) => li.dataset.num || li.id;
   const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
