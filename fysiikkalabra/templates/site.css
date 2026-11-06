@@ -1125,7 +1125,7 @@ ul.choices.mc label.mc-wrong{border:2px solid #b4532a;background:#fbf1ea}ul.choi
 .mc-score,.exam-total-line{font-weight:700}.mc-key{font-weight:500}
 .exam-total{border-top:2px solid var(--line);padding-top:.5rem}.exam-sec-line{margin:.2rem 0}
 
-/* A task full screen (lesson.js part 10, teacher 2026-11-06; every chapter). "Avaa isoksi" at the right end of the
+/* A task full screen (lesson.js part 10, teacher 2026-11-06; every chapter's exercises, Haastetehtävät, Esimerkkikoe, FY9). "Avaa isoksi" at the right end of the
    exercise's head row; the dialog covers the window: a bar (Tehtävä 3-4, 4 / 20, Edellinen, Seuraava, Sulje), then the
    task and the solution editor. From 1100 px they stand side by side and each scrolls on its own (the task at most
    44rem wide, so its lines stay readable); below that they stand under each other and the dialog scrolls. */
@@ -1135,7 +1135,7 @@ ul.choices.mc label.mc-wrong{border:2px solid #b4532a;background:#fbf1ea}ul.choi
 dialog.ex-focus{box-sizing:border-box;position:fixed;inset:0;width:100vw;height:100vh;height:100dvh;max-width:none;max-height:none;margin:0;padding:0;border:0;background:var(--bg);color:var(--ink);overflow:hidden;font-size:var(--fs-body);line-height:var(--lh)}
 dialog.ex-focus[open]{display:flex;flex-direction:column}
 dialog.ex-focus::backdrop{background:var(--bg)}
-#exercises>dialog.ex-focus{max-width:none}   /* not the reading column's width (.stage>*) */
+dialog.ex-focus{max-width:none!important}   /* not the reading column's width (.stage>*) */
 html.ex-focus-on{overflow:hidden}
 .ex-focus-bar{display:flex;flex-wrap:wrap;align-items:center;gap:.3rem 1rem;padding:.5rem max(1rem,(100vw - 92rem) / 2);background:var(--surface);border-bottom:1px solid var(--line);flex:none}
 .ex-focus-bar{margin-top:var(--tb,0px)}   /* Abitti's toolbar sits on the top edge while the editor is in use */
@@ -1148,7 +1148,11 @@ html.ex-focus-on{overflow:hidden}
 .ex-focus-body{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:1rem 1rem 3rem}
 .ex-focus-task{list-style:none;margin:0 auto;padding:0;max-width:44rem}
 .ex-focus-task>li{margin:0;padding:0}
-.ex-focus-task>li>.ex-head .ex-big,.ex-focus-task>li>.pad-open{display:none}   /* already big; the editor is always open here */
+.ex-focus-task .ex-big,.ex-focus-task .pad-open{display:none}   /* already big; the editor is always open here */
+.ex-focus-task>.practice-task{margin:0;max-width:none}
+.practice-task>:is(h2,h3)>.ex-big{float:right;margin:0 0 .3rem 1rem;font-size:var(--fs-ui);line-height:1}
+.practice-task>:is(h2,h3):has(>.ex-big){flex-wrap:wrap;row-gap:.4rem}   /* a heading that is a flex row (Haastetehtävät): the button wraps under the title on a phone */
+.ex-focus-body.no-pad>.ex-focus-pad{display:none}
 .ex-focus-pad{max-width:44rem;margin:1rem auto 0;padding-top:1rem;border-top:1px solid var(--line)}
 .ex-focus-pad .pad{margin:0}
 .ex-focus-pad .pad .rich-text-editor{min-height:14rem}
@@ -1157,6 +1161,7 @@ html.ex-focus-on{overflow:hidden}
   .ex-focus-task,.ex-focus-pad{min-height:0;overflow-y:auto;overscroll-behavior:contain;max-width:none;margin:0;padding:1.4rem .3rem 3rem}
   .ex-focus-pad{border-top:0;border-left:1px solid var(--line);padding-left:2.5rem}
   .ex-focus-pad .pad .rich-text-editor{min-height:calc(100dvh - 15rem)}
+  .ex-focus-body.no-pad{grid-template-columns:minmax(0,44rem);justify-content:center}
 }
 @media (max-width:600px){.ex-focus-nav{width:100%;margin-left:0}.ex-focus-nav .ex-focus-btn{flex:1;padding:0 .5rem}.ex-focus-body{padding:.8rem .8rem 3rem}.ex-focus-close::after{content:""}}
 /* Abitti's toolbar over the whole window in the dialog, also when the side panel is open (its rules point it at the panel) */
