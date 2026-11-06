@@ -1,0 +1,19 @@
+{
+  "_doc": "Closing self-assessment statements per chapter (teacher 2026-11-06: more varied than 'I learned to …'). They replace the chapter's goals at the end of Check your understanding. scripts/inquiry.py sa_goals_html.",
+  "fy3-1": ["I understand why force tells the strength of an interaction and how a force meter measures it.", "I can tell weight and mass apart, also in everyday speech.", "I can calculate an object's weight on Earth and on other celestial bodies."],
+  "fy3-2": ["I can recognise when a force does work and when it does not.", "I can calculate work both with the formula and as the area under a graph.", "I know what power tells and can compare the power of two devices."],
+  "fy3-3": ["I can describe the state of a gas with its temperature, pressure and volume.", "I understand with the particle model what pressure and temperature are.", "I can justify why temperatures are compared in kelvins."],
+  "fy3-4": ["I understand how the same force can cause a large or a small pressure.", "I can calculate the pressure of a liquid at different depths.", "I can read both the constant term and the slope of a pressure-depth graph."],
+  "fy3-5": ["I can tell heat, work and internal energy apart.", "I can use the first law of thermodynamics as energy bookkeeping.", "I notice when the everyday word 'heat' means something else in physics."],
+  "fy3-6": ["I can calculate the heat that warms a substance.", "I understand what specific heat capacity tells about a substance.", "I can solve the equilibrium temperature of a calorimeter with energy conservation."],
+  "fy3-7": ["I understand where the energy goes when the temperature stays constant during a change of phase.", "I can calculate the heat needed for melting and vaporisation.", "I can recognise the stages of a change of phase in a heating curve."],
+  "fy3-8": ["I can explain with the particle model why a solid expands when it warms.", "I can plan an experiment to find out what the change in length depends on.", "I can calculate the change in an object's length and volume."],
+  "fy3-9": ["I can use Boyle's law in an isothermal process.", "I can show with a graph that pressure is inversely proportional to volume.", "I understand how the volume of a gas depends on its kelvin temperature."],
+  "fy3-10": ["I can infer from pressure, volume and temperature how much gas there is.", "I can use the ideal gas law.", "I understand gas pressure as particles colliding with the walls."],
+  "fy3-11": ["I can calculate the work of an expanding gas and see it as the area under a graph.", "I understand why a heat engine cannot turn all heat into work.", "I can calculate the efficiency of a heat engine."],
+  "fy3-12": ["I can recognise conduction, convection and thermal radiation in everyday situations.", "I can calculate the heat flow through a wall or a window.", "I can explain the greenhouse effect with the energy balance."],
+  "fy3-13": ["I can turn measurement data into a straight line and extend it.", "I can determine absolute zero from my own measurements.", "I can estimate the uncertainty of a result with the steepest and the shallowest line."],
+  "fy3-14": ["I understand why ice cools a drink so effectively.", "I can decide by comparing amounts of heat whether all the ice melts.", "I can calculate the equilibrium temperature when part of a substance melts."],
+  "fy3-15": ["I can calculate the efficiency of a power plant chain from the efficiencies of its stages.", "I know where the largest energy loss of a condensing power plant occurs.", "I understand why combined heat and power makes better use of the fuel."],
+  "fy3-16": ["I can combine several heat phenomena into one energy balance.", "I can justify whether energy goes into warming or into a change of phase.", "I dare to take on a multi-step everyday heat problem."]
+}

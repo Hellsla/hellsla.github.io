@@ -294,16 +294,15 @@
     "tf_false": "False",
     "order_place": "Place in the order",
     "order_pick": "Place",
-    "sa_legend": "Self-assessment: how well do you know this?",
+    "sa_legend": "Assess how well you knew this",
     "sa_a": "I know this so well that I could teach it to a friend",
     "sa_b": "I feel I have grasped this",
     "sa_c": "I partly know this, but I am still unsure",
     "sa_d": "I still need practice and time to understand this",
     "sa_x": "I have not practised this yet",
     "sa_goals_title": "Finally, assess what you learned",
-    "sa_goals_lead": "Assess the chapter's goals on the same scale. You can change your assessment later, after practising. Your self-assessment is included in your submission.",
+    "sa_goals_lead": "Your self-assessment is included when you submit the chapter's tasks.",
     "sa_goal_prefix": "I learned to",
-    "sa_key": "Self-assessment scale",
     "sa_x_short": "Not yet"
   },
   "js": {

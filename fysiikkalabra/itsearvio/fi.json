@@ -1,0 +1,19 @@
+{
+  "_doc": "Itsearvion loppuväittämät luvuittain (opettaja 6.11.2026: monipuolisemmat kuin 'Opin …'). Korvaavat luvun tavoitteet Tarkista osaamisesi -osion lopussa. Selkeä suomi käyttää näitä, ellei sillä ole omia. scripts/inquiry.py sa_goals_html.",
+  "fy3-1": ["Ymmärrän, miksi voima kertoo vuorovaikutuksen voimakkuudesta ja miten voimamittari sen mittaa.", "Erotan painon ja massan toisistaan myös arkikielessä.", "Pystyn laskemaan kappaleen painon Maassa ja muilla taivaankappaleilla."],
+  "fy3-2": ["Tunnistan, milloin voima tekee työtä ja milloin ei.", "Osaan laskea työn sekä kaavalla että kuvaajan pinta-alana.", "Tiedän, mitä teho kertoo, ja osaan verrata kahden laitteen tehoja."],
+  "fy3-3": ["Osaan kuvata kaasun tilan lämpötilan, paineen ja tilavuuden avulla.", "Ymmärrän hiukkasmallin avulla, mitä paine ja lämpötila ovat.", "Pystyn perustelemaan, miksi lämpötiloja verrataan kelvineinä."],
+  "fy3-4": ["Ymmärrän, miten sama voima voi aiheuttaa suuren tai pienen paineen.", "Osaan laskea nesteen paineen eri syvyyksillä.", "Pystyn tulkitsemaan paineen ja syvyyden kuvaajasta sekä vakiotermin että kulmakertoimen."],
+  "fy3-5": ["Erotan lämmön, työn ja sisäenergian toisistaan.", "Osaan käyttää termodynamiikan ensimmäistä pääsääntöä energiakirjanpitona.", "Huomaan, kun arkikielen 'lämpö' tarkoittaa fysiikassa jotain muuta."],
+  "fy3-6": ["Osaan laskea lämpömäärän, joka lämmittää ainetta.", "Ymmärrän, mitä ominaislämpökapasiteetti kertoo aineesta.", "Pystyn ratkaisemaan kalorimetrin tasapainolämpötilan energian säilymisen avulla."],
+  "fy3-7": ["Ymmärrän, mihin energia kuluu, kun lämpötila pysyy olomuodon muutoksen ajan vakiona.", "Osaan laskea sulamiseen ja höyrystymiseen tarvittavan lämpömäärän.", "Tunnistan lämpenemiskäyrästä olomuodon muutoksen vaiheet."],
+  "fy3-8": ["Pystyn selittämään hiukkasmallilla, miksi kiinteä aine laajenee lämmetessään.", "Osaan suunnitella kokeen, jolla selvitän, mistä pituuden muutos riippuu.", "Osaan laskea kappaleen pituuden ja tilavuuden muutoksen."],
+  "fy3-9": ["Osaan käyttää Boylen lakia isotermisessä tilanmuutoksessa.", "Pystyn osoittamaan kuvaajan avulla, että paine on kääntäen verrannollinen tilavuuteen.", "Ymmärrän, miten kaasun tilavuus riippuu kelvinlämpötilasta."],
+  "fy3-10": ["Pystyn päättelemään paineesta, tilavuudesta ja lämpötilasta, kuinka paljon kaasua on.", "Osaan käyttää ideaalikaasun tilanyhtälöä.", "Ymmärrän kaasun paineen hiukkasten törmäyksinä astian seiniin."],
+  "fy3-11": ["Osaan laskea laajenevan kaasun työn ja nähdä sen kuvaajan pinta-alana.", "Ymmärrän, miksi lämpövoimakone ei voi muuttaa kaikkea lämpöä työksi.", "Osaan laskea lämpövoimakoneen hyötysuhteen."],
+  "fy3-12": ["Tunnistan johtumisen, konvektion ja lämpösäteilyn arjen tilanteista.", "Osaan laskea seinän tai ikkunan läpi johtuvan lämpötehon.", "Pystyn selittämään kasvihuoneilmiön energiatasapainon avulla."],
+  "fy3-13": ["Osaan muuttaa mittausaineiston suoraksi ja jatkaa suoraa.", "Pystyn määrittämään absoluuttisen nollapisteen omista mittauksistani.", "Osaan arvioida tuloksen epävarmuuden jyrkimmän ja loivimman suoran avulla."],
+  "fy3-14": ["Ymmärrän, miksi jää viilentää juomaa niin tehokkaasti.", "Pystyn päättelemään lämpömääriä vertaamalla, sulaako kaikki jää.", "Osaan laskea tasapainolämpötilan, kun osa aineesta sulaa."],
+  "fy3-15": ["Osaan laskea voimalaitoksen ketjun hyötysuhteen vaiheiden hyötysuhteista.", "Tiedän, missä lauhdevoimalaitoksen suurin energiahäviö syntyy.", "Ymmärrän, miksi yhteistuotanto hyödyntää polttoaineen paremmin."],
+  "fy3-16": ["Pystyn kokoamaan useasta lämpöilmiöstä yhden energiakirjanpidon.", "Osaan perustella, kuluuko energia lämpenemiseen vai olomuodon muutokseen.", "Uskallan tarttua monivaiheiseen arjen lämpötehtävään."]
+}

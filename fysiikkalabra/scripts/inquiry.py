@@ -717,21 +717,28 @@ def sa_fieldset(chapter, sid, label, md_label, legend):
             f'<legend>{md_label if md_label else legend}</legend><div class="sa-opts">{opts}</div><p class="sa-desc" aria-live="polite"></p></fieldset>')
 
 
-def sa_goals_html(chapter, inquiry, md):
+def self_statements(chapter, lang):
+    """The chapter's closing statements from itsearvio/<lang>.json (teacher 2026-11-06: varied, "Osaan …", "Ymmärrän …",
+    "Tunnistan …", like his 2018 sheet, not every goal as "Opin …"); Selkeä suomi uses the Finnish ones. Kept apart
+    from inquiry.json so that writing them never stales a lesson's reviews."""
+    for l in dict.fromkeys([lang, "fi" if lang == "fi-easy" else lang]):
+        f = courses.ROOT / "itsearvio" / f"{l}.json"
+        if f.is_file():
+            got = json.loads(f.read_text()).get(chapter)
+            if got: return got
+    return None
+
+
+def sa_goals_html(chapter, inquiry, md, lang):
     """The end of Tarkista osaamisesi: the chapter's goals as statements ("Opin erottamaan painon ja massan"), or the
     chapter's own statements of what the tasks did not measure (inquiry.json "self_extra"), on the same scale."""
-    extra = inquiry.get("self_extra")
+    extra = inquiry.get("self_extra") or self_statements(chapter, lang)
     items = [(f"tavoite-{i + 1}", x) for i, x in enumerate(extra)] if extra else [(f"tavoite-{i + 1}", T("inquiry.sa_goal_prefix") + " " + x) for i, x in enumerate(inquiry.get("learn") or [])]
     if not items: return ""
-    rows = "".join(sa_fieldset(chapter, sid, plain(x), f'<span class="sa-statement">{inline(md, x)}</span>', "") for sid, x in items)
+    rows = "".join(sa_fieldset(chapter, sid, plain(x), f'<span class="sa-n">{i + 1}.</span> <span class="sa-statement">{inline(md, x)}</span>', "")
+                   for i, (sid, x) in enumerate(items))   # numbered (teacher 2026-11-06)
     return (f'<div class="activity act-selfgoals task-card" id="itsearvio-tavoitteet" data-type="selfgoals"><h3>{T("inquiry.sa_goals_title")}</h3>'
             f'<p class="sa-lead">{T("inquiry.sa_goals_lead")}</p>{rows}</div>')
-
-
-def sa_key_html():
-    """The scale once, at the start of the stage, so that a phone needs no hover text to tell the levels apart."""
-    return ('<div class="sa-key"><p class="sa-key-h">' + T("inquiry.sa_key") + '</p><ul>' + "".join(
-        f'<li data-level="{v}"><span class="sa-sw" aria-hidden="true"></span> {T("inquiry.sa_" + v)}</li>' for v in SA_LEVELS) + "</ul></div>")
 
 
 def plain(text):
@@ -812,7 +819,7 @@ def render(folder, inquiry, parts, md):
         hints = hints_html([md(mathlayout.display_chains(h)) for h in a.get("hints", [])]) if t not in ("numeric",) else ""
         sa = ""
         if parts.get("selfassess") and a.get("stage") == "tarkista" and t in ("choice", "numeric", "explain", "exit"):   # every task of Tarkista osaamisesi (teacher 2026-11-06)
-            sa = sa_fieldset(lid, aid, plain(_h.unescape(shown.get(aid) or "") or a.get("title") or exit_title()), "", T("inquiry.sa_legend"))
+            sa = sa_fieldset(lid, aid, plain(_h.unescape(shown.get(aid) or "") or a.get("title") or exit_title()), "", T("inquiry.sa_legend"))   # one plain question (teacher 2026-11-06)
         hints += sa
         if a.get("optional") or a.get("fold") or t == "reflect":   # a closed box, named, that a student may open or leave; "fold": a
             name = shown.get(aid) or esc(a.get("title") or T(f"inquiry.optional_{t}"))   # required part opened later (its own tag, e.g. "Lesson 2");
@@ -840,7 +847,7 @@ def render(folder, inquiry, parts, md):
             inner = (flow(items[:si]) + f'<div class="lab"><div class="lab-side">{act(items[si])}</div>'
                      f'<div class="lab-main">{flow(items[si + 1:])}</div></div>')
         else: inner = flow(items)
-        if sid == "tarkista" and parts.get("selfassess"): inner = sa_key_html() + inner + sa_goals_html(lid, inquiry, md)
+        if sid == "tarkista" and parts.get("selfassess"): inner += sa_goals_html(lid, inquiry, md, courses.lang_of(folder))   # no separate key: the chosen level's text shows under the scale (teacher 2026-11-06)
         if sid == cards_at: inner += parts["cards"]       # the chapter's concept cards close Esimerkit (teacher 2026-11-05)
         if sid == "ennusta":                           # closed at first; reopened later, the answers are still there
             k = sum(1 for a in items if a["type"] == "choice")

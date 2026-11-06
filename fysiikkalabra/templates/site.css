@@ -1179,22 +1179,15 @@ html #exercises .ex-focus .pad .rich-text-editor-toolbar-root>div,html.tasks-spl
 
 /* Guided self-assessment in Tarkista osaamisesi (teacher 2026-11-06, from his 2018 team sheet): five levels as a colour
    scale in Ruukkilabra's colours, from the deep green "could teach it to a friend" to a reddish "need practice", and a
-   grey "not yet" apart from the scale (teacher: no letters). The scale and its texts once at the start of the stage;
-   under every task and goal one row of radio buttons (44 px targets) and the chosen level's text under it.
+   grey "not yet" apart from the scale (teacher: no letters, no separate key). Under every task (a statement that
+   fits its kind) and goal one row of radio buttons (44 px targets) and the chosen level's text under it.
    inquiry.py sa_fieldset, inquiry.js part 8. */
-.sa-key,.sa-rate{--sa-a:#1a4d2e;--sa-b:#5f9460;--sa-c:#d6a744;--sa-d:#c0583b;--sa-x:#d9d4c6}
-:is(.sa-key,.sa-opts) [data-level=a]{--sa:var(--sa-a);--sa-on:#fff}:is(.sa-key,.sa-opts) [data-level=b]{--sa:var(--sa-b);--sa-on:#fff}
-:is(.sa-key,.sa-opts) [data-level=c]{--sa:var(--sa-c);--sa-on:#14171e}:is(.sa-key,.sa-opts) [data-level=d]{--sa:var(--sa-d);--sa-on:#fff}
-:is(.sa-key,.sa-opts) [data-level=x]{--sa:var(--sa-x);--sa-on:#14171e}
-.sa-key{margin:0 0 1.2rem;padding:.7rem 1rem;border:1px solid var(--line);border-radius:var(--inner-radius);background:var(--surface);font-size:var(--fs-inner)}
-.sa-key-h{margin:0 0 .35rem;font-weight:700}
-.sa-key ul{list-style:none;margin:0;padding:0;display:grid;gap:.3rem}
-.sa-key li{display:flex;align-items:flex-start;gap:.6rem;line-height:1.45}
-.sa-key li .sa-sw{flex:none;width:1.6rem;height:1.1rem;margin-top:.2rem;border-radius:4px;background:var(--sa)}
-.sa-key li[data-level=x]{margin-top:.2rem}
+.sa-rate{--sa-a:#1a4d2e;--sa-b:#5f9460;--sa-c:#d6a744;--sa-d:#c0583b;--sa-x:#d9d4c6}
+.sa-opts [data-level=a]{--sa:var(--sa-a);--sa-on:#fff}.sa-opts [data-level=b]{--sa:var(--sa-b);--sa-on:#fff}
+.sa-opts [data-level=c]{--sa:var(--sa-c);--sa-on:#14171e}.sa-opts [data-level=d]{--sa:var(--sa-d);--sa-on:#fff}
+.sa-opts [data-level=x]{--sa:var(--sa-x);--sa-on:#14171e}
 .sa-rate{margin:1rem 0 0;padding:.7rem 0 0;border:0;border-top:1px dashed var(--line);min-width:0}
-.sa-rate legend{float:left;width:100%;margin:0 0 .45rem;padding:0;font-weight:600;font-size:var(--fs-ui);color:var(--ink-2)}
-.act-selfgoals .sa-rate legend{font-weight:400;font-size:var(--fs-body);color:var(--ink)}
+.sa-rate legend{float:left;width:100%;margin:0 0 .45rem;padding:0;font-size:var(--fs-body);color:var(--ink)}
 .sa-opts{clear:both;display:flex;align-items:stretch;gap:3px;max-width:26rem}
 .sa-opt{position:relative;flex:1 1 0;display:flex;min-height:44px;cursor:pointer}
 .sa-opt[data-level=a] .sa-sw{border-radius:999px 0 0 999px}.sa-opt[data-level=d] .sa-sw{border-radius:0 999px 999px 0}
@@ -1209,3 +1202,4 @@ html #exercises .ex-focus .pad .rich-text-editor-toolbar-root>div,html.tasks-spl
 .sa-opt .sa-text{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .sa-desc{margin:.45rem 0 0;font-size:var(--fs-inner);color:var(--ink-2);min-height:1.5em}
 .sa-lead{margin:.2rem 0 .4rem;color:var(--ink-2)}
+.sa-n{font-weight:700;margin-right:.15em}
