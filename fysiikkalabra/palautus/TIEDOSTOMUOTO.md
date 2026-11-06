@@ -78,7 +78,7 @@ tiedoston `version` on 2 ja siinä on lisäksi
 - `history`: jokainen tason muutos aikaleimoineen (UTC), enintään 50 uusinta.
 - `content_sha256` lasketaan versiossa 2 merkkijonosta `JSON.stringify({answers: <kuten yllä>, selfassessment: <items>})`,
   joten muuttunut itsearvio antaa uuden palautuksen.
-- Tuonti hyväksyy versiot 1 ja 2. Arviointisivun *Itsearviot* näyttää uusimman palautuksen tasot väreinä.
+- Tuonti hyväksyy versiot 1 ja 2. Arviointisivun *Osaamisen sormenjälki* näyttää ryhmän uusimpien palautusten tasot väreinä: rivit kohteita luvuittain, sarakkeissa opiskelijat, valkoinen = ei vastattu, harmaa = en ole vielä opiskellut.
 
 ## Uusi versio
 Muutos, jota versio 1 ei ymmärrä, nostaa `version`-numeroa. Skripti hylkää tuntemattoman uudemman version

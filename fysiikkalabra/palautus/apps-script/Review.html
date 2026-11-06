@@ -52,7 +52,7 @@
   details.chapter > summary .muted { font-weight: 400; }
   details.chapter table { border-top: 1px solid var(--line); }
   .wide { overflow-x: auto; }
-  #summary { max-width: 760px; } #scope { max-width: 24em; }
+  #summary { max-width: 760px; } #rangeWrap select { max-width: 16em; }
   #summary th { text-transform: uppercase; letter-spacing: .03em; font-size: 13px; }
   #summary th.n, #summary td.n { text-align: center; white-space: nowrap; }
   #summary td { padding: 12px 10px; font-size: 18px; vertical-align: middle; }
@@ -69,10 +69,16 @@
   /* itsearvio (opettaja 6.11.2026): sama väriasteikko kuin Ruukkilabrassa, tummanvihreästä punertavaan + Ei vielä */
   .sa { display: inline-block; width: 26px; height: 18px; border-radius: 4px; vertical-align: middle; }
   .sa-a { background: #1a4d2e; } .sa-b { background: #5f9460; } .sa-c { background: #d6a744; } .sa-d { background: #c0583b; }
-  .sa-x { background: #d9d4c6; } .sa-none { background: none; border: 1px dashed var(--line); }
+  .sa-x { background: #9a9a9a; } .sa-none { background: #fff; border: 1px solid var(--line); box-sizing: border-box; }
   .sa-legend span.item { margin-right: 14px; white-space: nowrap; } .sa-legend .sa { margin-right: 4px; }
-  table.self { width: auto; } table.self th.it { font-size: 13px; max-width: 9em; white-space: normal; }
-  table.self td { text-align: center; } table.self td:first-child { text-align: left; white-space: nowrap; }
+  /* osaamisen sormenjälki (opettaja 6.11.2026): rivit väittämiä luvuittain, sarakkeissa opiskelijat; valkoinen = ei vastattu, harmaa = ei vielä */
+  table.fp { width: auto; border-collapse: collapse; table-layout: fixed; } table.fp td, table.fp th { padding: 0; border: 1px solid var(--line); }
+  table.fp th.st { writing-mode: vertical-rl; transform: rotate(180deg); font-size: 12px; font-weight: 600; padding: 4px 0; height: 9em; width: 20px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; text-transform: none; letter-spacing: 0; }
+  table.fp th.ch { text-align: left; padding: 2px 6px; height: 20px; background: var(--soft, #f3efe6); font-size: 13px; white-space: nowrap; }
+  table.fp tbody tr { height: 20px; }
+  table.fp td.lab { padding: 0 6px; font-size: 12px; width: 34em; max-width: 34em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  table.fp td.c { width: 20px; min-width: 20px; height: 20px; }
+  table.fp td.c.sa-none { border: 1px solid var(--line); }
 </style>
 </head>
 <body>
@@ -81,12 +87,13 @@
     <div class="bar"><h1 id="title" class="grow">RuukkiLabra · arviointi</h1><button type="button" id="refresh">Päivitä</button></div>
     <div id="localBar" hidden></div>
     <p id="homeState" class="muted" aria-live="polite">Ladataan…</p>
-    <div class="bar"><h2 class="grow">Kooste</h2><button type="button" id="hideNames" aria-pressed="false">Piilota nimet</button><label id="scopeWrap"><select id="scope" aria-label="Luku"></select></label></div>
+    <p class="bar" id="rangeWrap" hidden><b>Luvut</b> <select id="from" aria-label="Ensimmäinen luku"></select> – <select id="to" aria-label="Viimeinen luku"></select></p>
+    <div class="bar"><h2 class="grow">Kooste</h2><button type="button" id="hideNames" aria-pressed="false">Piilota nimet</button></div>
     <p id="noSummary" class="muted">Ei palautuksia.</p>
     <div id="groupChart" hidden aria-label="Ryhmä yhteensä"></div>
     <div class="wide"><table id="summary" hidden><thead></thead><tbody></tbody></table></div>
     <section id="selfSec" hidden>
-      <h2>Itsearviot</h2>
+      <h2>Osaamisen sormenjälki</h2>
       <p class="muted sa-legend" id="selfLegend"></p>
       <div id="selfBox"></div>
     </section>
@@ -126,7 +133,7 @@
 (function () {
   'use strict';
   var $ = function (id) { return document.getElementById(id); };
-  var S = { ov: null, task: null, chapter: null, entries: [], idx: 0, ver: 0, nav: false, saving: null, token: 0, cache: {}, onlyOpen: false, hide: false, open: {}, scope: 'all', sort: { key: 'name', dir: 1 }, ready: false };
+  var S = { ov: null, task: null, chapter: null, entries: [], idx: 0, ver: 0, nav: false, saving: null, token: 0, cache: {}, onlyOpen: false, hide: false, open: {}, from: '', to: '', sort: { key: 'name', dir: 1 }, ready: false };
   var call = function (name, arg) {
     return new Promise(function (ok, no) {
       var r = google.script.run.withSuccessHandler(ok).withFailureHandler(function (e) { no(e); });
@@ -146,6 +153,7 @@
       S.ov = ov;
       $('title').textContent = 'RuukkiLabra · ' + ov.course + (ov.group ? ' · ryhmä ' + ov.group : '') + ' · arviointi';
       $('students').textContent = 'Hyväksyttyjä palauttajia ' + ov.students + '.';
+      renderRange(ov);
       renderTasks(ov);
       renderSummary(ov);
       renderSelf(ov);
@@ -168,10 +176,27 @@
   }
   // Tehtävät luvuittain. Ratkaisuja = palauttajat, joiden uusimmassa palautuksessa tehtävään on ratkaisu (tyhjät eivät
   // ole tehtyjä, opettaja 6.11.2026). Vain arvioimattomat: vain luvut ja tehtävät, joissa on arvioimaton ratkaisu.
+  // Lukuväli (opettaja 6.11.2026: "mistä luvusta mihin lukuun"): rajaa koosteen, tehtävät ja sormenjäljen.
+  function renderRange(ov) {
+    var ids = ov.chapters.map(function (c) { return c.id; });
+    if (ids.indexOf(S.from) < 0) S.from = ids[0] || '';
+    if (ids.indexOf(S.to) < 0) S.to = ids[ids.length - 1] || '';
+    ['from', 'to'].forEach(function (k) {
+      var sel = $(k); sel.textContent = '';
+      ov.chapters.forEach(function (c) { var o = el('option', null, 'Luku ' + c.number + ' · ' + c.title); o.value = c.id; sel.append(o); });
+      sel.value = S[k];
+    });
+    $('rangeWrap').hidden = ids.length < 2;
+  }
+  function inRange(c) {
+    var ids = S.ov.chapters.map(function (x) { return x.id; }), i = ids.indexOf(c.id), a = ids.indexOf(S.from), b = ids.indexOf(S.to);
+    if (a < 0) a = 0; if (b < 0) b = ids.length - 1;
+    return i >= Math.min(a, b) && i <= Math.max(a, b);
+  }
   function renderTasks(ov) {
     var box = $('tasks'); box.textContent = '';
     var shown = 0;
-    ov.chapters.forEach(function (c) {
+    ov.chapters.filter(inRange).forEach(function (c) {
       var sol = 0, scored = 0, open = 0;
       c.tasks.forEach(function (t) { sol += t.solutions; scored += t.scored; open += t.open; });
       var tasks = S.onlyOpen ? c.tasks.filter(function (t) { return t.open > 0; }) : c.tasks;
@@ -201,18 +226,17 @@
   // joista ryhmällä on palautuksia) tai yhdestä luvusta. Järjestys sarakkeen otsikosta.
   var num = function (x) { return String(Math.round(x * 100) / 100).replace('.', ','); };
   function renderSummary(ov) {
-    var chs = ov.chapters.filter(function (c) { return c.submissions > 0; });
-    var sel = $('scope'), want = S.scope || 'all';
-    sel.textContent = '';
-    var o = el('option', null, 'Kaikki palautetut luvut'); o.value = 'all'; sel.append(o);
-    chs.forEach(function (c) { var x = el('option', null, 'Luku ' + c.number + ' · ' + c.title); x.value = c.id; sel.append(x); });
-    if (want !== 'all' && !chs.some(function (c) { return c.id === want; })) want = 'all';
-    sel.value = S.scope = want;
-    var scope = want === 'all' ? chs : chs.filter(function (c) { return c.id === want; });
+    var scope = ov.chapters.filter(function (c) { return c.submissions > 0 && inRange(c); });
     var nTasks = scope.reduce(function (n, c) { return n + c.tasks.length; }, 0), max = nTasks * ov.maxPoints;
     var rows = ov.summary.map(function (s) {
-      var r = { name: s.email, answered: 0, unchecked: 0, points: 0, returned: 0 };
+      var r = { name: s.email, answered: 0, unchecked: 0, points: 0, returned: 0, self: -1 }, sum = 0, n = 0;
       scope.forEach(function (c) { var x = s.chapters[c.id]; if (x) { r.answered += x.answered; r.unchecked += x.unchecked; r.points += x.points; r.returned++; } });
+      // itsearvion keskiarvo (opettaja 6.11.2026): pakolliset kohdat, a = 4 … d = 1; Ei vielä ja tyhjät eivät mukana
+      scope.forEach(function (c) {
+        var me = c.self && c.self.students.filter(function (x) { return x.email === s.email; })[0];
+        if (me) c.self.items.forEach(function (it) { var v = SA_NUM[(me.levels || {})[it.id]]; if (!it.optional && v) { sum += v; n++; } });
+      });
+      if (n) r.self = sum / n;
       return r;
     });
     // nimet piilossa (opettaja 6.11.2026: pisteiden näyttäminen opiskelijoille): ei aakkosjärjestystä, josta nimen voisi päätellä
@@ -221,7 +245,7 @@
     var head = $('summary').querySelector('thead'), body = $('summary').querySelector('tbody');
     head.textContent = ''; body.textContent = '';
     var hr = el('tr');
-    [['name', 'Opiskelija', ''], ['answered', 'Tehty', 'n'], ['unchecked', 'Tarkistamatta', 'n'], ['points', 'Pisteet', 'n']].forEach(function (h) {
+    [['name', 'Opiskelija', ''], ['answered', 'Tehty', 'n'], ['unchecked', 'Tarkistamatta', 'n'], ['points', 'Pisteet', 'n'], ['self', 'Itsearvio', 'n']].forEach(function (h) {
       var th = el('th', h[2]), b = el('button', 'sort', h[1] + ' ' + (key === h[0] ? (dir > 0 ? '▲' : '▼') : '⇅'));
       b.type = 'button'; b.setAttribute('data-key', h[0]);
       th.setAttribute('aria-sort', key === h[0] ? (dir > 0 ? 'ascending' : 'descending') : 'none');
@@ -234,6 +258,14 @@
       var m = el('span', 'meter' + (cls ? ' ' + cls : '')), f = el('span'); m.setAttribute('role', 'img'); m.setAttribute('aria-label', label);
       f.style.width = (of > 0 ? Math.max(0, Math.min(100, 100 * v / of)) : 0) + '%'; m.append(f); return m;
     };
+    var selfCell = function (v) {
+      var td = el('td', 'n');
+      if (v < 0) { td.append(el('span', 'muted', '–')); td.title = 'Ei itsearviota'; return td; }
+      var k = 'abcd'.charAt(4 - Math.round(v)), m = el('span', 'sa sa-' + k); m.setAttribute('aria-hidden', 'true');
+      m.style.marginRight = '6px'; td.append(m, el('span', 'v', num(Math.round(v * 10) / 10)));
+      td.title = 'Itsearvion keskiarvo ' + num(Math.round(v * 10) / 10) + ' (4 = ' + SA_TEXT.a.toLowerCase() + ', 1 = ' + SA_TEXT.d.toLowerCase() + '); valinnaiset ja Ei vielä eivät mukana';
+      return td;
+    };
     var pct = function (v, of) { return of > 0 ? Math.round(100 * v / of) + ' %' : '–'; };
     rows.forEach(function (r) {
       var tr = el('tr'); if (!r.returned) { tr.className = 'none'; tr.title = 'Ei palautusta tästä luvusta'; }
@@ -241,7 +273,7 @@
       tr.append(el('td', null, S.hide ? 'Opiskelija ' + (rows.indexOf(r) + 1) : r.name),
         part(String(r.answered), nTasks, meter(r.answered, nTasks, '', 'Tehty ' + pct(r.answered, nTasks))),
         part(String(r.unchecked)),
-        part(num(r.points), num(max), meter(r.points, max, 'pts', 'Pisteet ' + pct(r.points, max))));
+        part(num(r.points), num(max), meter(r.points, max, 'pts', 'Pisteet ' + pct(r.points, max))), selfCell(r.self));
       body.append(tr);
     });
     var gc = $('groupChart'); gc.textContent = '';
@@ -251,46 +283,52 @@
       gc.append(el('b', null, 'Pisteet'), meter(pts, pmax, 'pts', 'Ryhmä: pisteet ' + pct(pts, pmax)), el('span', 'v', pct(pts, pmax) + ' (' + num(pts) + ' / ' + num(pmax) + ')'));
     }
     gc.hidden = !rows.length;
-    $('summary').hidden = !rows.length; $('noSummary').hidden = !!rows.length; $('scopeWrap').hidden = !rows.length;
+    $('summary').hidden = !rows.length; $('noSummary').hidden = !!rows.length;
   }
   $('hideNames').addEventListener('click', function () {
     S.hide = !S.hide; $('hideNames').textContent = S.hide ? 'Näytä nimet' : 'Piilota nimet'; $('hideNames').setAttribute('aria-pressed', String(S.hide));
     $('probSec').hidden = S.hide || !(S.ov && S.ov.problems.length);
-    if (S.ov) renderSummary(S.ov);
+    if (S.ov) { renderSummary(S.ov); renderSelf(S.ov); }
   });
-  // Itsearviot (opettaja 6.11.2026): luvuittain opiskelijat × kohteet (Tarkista osaamisesi -tehtävät ja luvun tavoitteet),
-  // uusimman palautuksen taso värinä. Kooste-valinta rajaa luvut.
+  // Osaamisen sormenjälki (opettaja 6.11.2026): koko ryhmä yhdessä taulukossa. Rivit ovat lukujen itsearviokohteet
+  // (Tarkista osaamisesi -tehtävät ja luvun tavoitteet) luvuittain, sarakkeissa opiskelijat, solussa uusimman palautuksen
+  // taso värinä. Valkoinen = ei vastattu (tai lukua ei palautettu), harmaa = en ole vielä opiskellut. Kooste-valinta rajaa luvut.
+  var SA_NUM = { a: 4, b: 3, c: 2, d: 1 };
   var SA_TEXT = { a: 'Osaan niin hyvin, että voisin opettaa kaverille', b: 'Koen oivaltaneeni', c: 'Osaan osittain, epävarmuutta on vielä',
-                  d: 'Tarvitsen vielä harjoitusta', x: 'Ei vielä harjoiteltu' };
+                  d: 'Tarvitsen vielä harjoitusta', x: 'En ole vielä opiskellut', none: 'Ei vastattu' };
   function renderSelf(ov) {
     var box = $('selfBox'); box.textContent = '';
-    var chs = ov.chapters.filter(function (c) { return c.self && c.self.students.length && (S.scope === 'all' || S.scope === c.id); });
+    var chs = ov.chapters.filter(function (c) { return c.self && c.self.students.length && inRange(c); });
     var lg = $('selfLegend'); lg.textContent = '';
-    ['a', 'b', 'c', 'd', 'x'].forEach(function (k) { var it = el('span', 'item'); it.append(el('span', 'sa sa-' + k), document.createTextNode(SA_TEXT[k])); lg.append(it); });
+    ['a', 'b', 'c', 'd', 'x', 'none'].forEach(function (k) { var it = el('span', 'item'); it.append(el('span', 'sa sa-' + k), document.createTextNode(SA_TEXT[k])); lg.append(it); });
+    $('selfSec').hidden = !chs.length;
+    if (!chs.length) return;
+    // kaikki ryhmän opiskelijat (myös ne, jotka eivät ole palauttaneet lukua), aakkosjärjestyksessä
+    var names = [];
+    ov.summary.forEach(function (r) { if (names.indexOf(r.email) < 0) names.push(r.email); });
+    chs.forEach(function (c) { c.self.students.forEach(function (x) { if (names.indexOf(x.email) < 0) names.push(x.email); }); });
+    names.sort(function (a, b) { return a.localeCompare(b, 'fi'); });
+    var wrap = el('div', 'wide'), t = el('table', 'fp'), head = el('thead'), hr = el('tr'), tb = el('tbody');
+    t.id = 'fingerprint';
+    hr.append(el('th', null, 'Väittämä'));
+    names.forEach(function (n, i) { var th = el('th', 'st', S.hide ? 'Opiskelija ' + (i + 1) : n); th.scope = 'col'; hr.append(th); });
+    head.append(hr); t.append(head, tb);
     chs.forEach(function (c) {
-      var d = el('details', 'chapter'); d.open = chs.length === 1;
-      d.append(el('summary', null, 'Luku ' + c.number + ' · ' + c.title));
-      var wrap = el('div', 'wide'), t = el('table', 'self'), hr = el('tr'), tb = el('tbody');
-      hr.append(el('th', null, 'Opiskelija'));
+      var cr = el('tr'), ch = el('th', 'ch', 'Luku ' + c.number + ' · ' + c.title); ch.colSpan = names.length + 1; cr.append(ch); tb.append(cr);
+      var by = {}; c.self.students.forEach(function (x) { by[x.email] = x.levels || {}; });
       c.self.items.forEach(function (it) {
-        var goal = /^tavoite-/.test(it.id), th = el('th', 'it', goal ? 'Tavoite ' + it.id.split('-')[1] : it.label);
-        th.title = it.label; hr.append(th);
-      });
-      var head = el('thead'); head.append(hr); t.append(head, tb);
-      c.self.students.slice().sort(function (a, b) { return a.email.localeCompare(b.email, 'fi'); }).forEach(function (s) {
-        var tr = el('tr'); tr.append(el('td', null, s.email));
-        c.self.items.forEach(function (it) {
-          var v = s.levels[it.id], td = el('td'), m = el('span', 'sa ' + (v ? 'sa-' + v : 'sa-none'));
-          m.setAttribute('role', 'img'); m.setAttribute('aria-label', it.label + ': ' + (v ? SA_TEXT[v] : 'ei arvioitu')); m.title = m.getAttribute('aria-label');
-          td.append(m); tr.append(td);
+        var tr = el('tr'), lab = el('td', 'lab', it.label); lab.title = (it.kind ? it.kind + ': ' : '') + (it.full || it.label); tr.append(lab);
+        names.forEach(function (n, i) {
+          var v = (by[n] || {})[it.id], k = v && SA_TEXT[v] ? v : 'none', td = el('td', 'c sa-' + k);
+          td.title = (S.hide ? 'Opiskelija ' + (i + 1) : n) + ': ' + SA_TEXT[k]; td.setAttribute('aria-label', td.title); td.dataset.level = k;
+          tr.append(td);
         });
         tb.append(tr);
       });
-      wrap.append(t); d.append(wrap); box.append(d);
     });
-    $('selfSec').hidden = !chs.length;
+    wrap.append(t); box.append(wrap);
   }
-  $('scope').addEventListener('change', function () { S.scope = $('scope').value; if (S.ov) { renderSummary(S.ov); renderSelf(S.ov); } });
+  ['from', 'to'].forEach(function (k) { $(k).addEventListener('change', function () { S[k] = $(k).value; if (S.ov) { renderTasks(S.ov); renderSummary(S.ov); renderSelf(S.ov); } }); });
   $('refresh').addEventListener('click', loadHome);
   $('onlyOpen').addEventListener('change', function () { S.onlyOpen = $('onlyOpen').checked; if (S.ov) renderTasks(S.ov); });
 

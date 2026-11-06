@@ -360,9 +360,20 @@ with sync_playwright() as p:
     home = tp.inner_text("#tasks tr.task-row")
     first = tp.locator("#tasks tr.task-row").first.inner_text().split("\t")
     expect("task list: number, solutions, graded, ungraded (no class-size ratio)", first[0].strip() == "Tehtävä 1-1" and first[2:] == ["3", "0", "3"] and not re.search(r"\b\d+/\d+\b", home), (first, home[:300]))
-    tp.locator("#selfSec details.chapter > summary").first.click()
-    cells = tp.evaluate("[...document.querySelectorAll('#selfSec table.self tbody tr')].map((tr) => [tr.cells[0].textContent, [...tr.querySelectorAll('.sa')].map((m) => m.className.replace('sa ', ''))])")
-    expect("grading view: Itsearviot shows each student's latest levels as colours (teacher 2026-11-06)", tp.is_visible("#selfSec") and any("sa-b" in c and "sa-c" in c for _, c in cells), cells)
+    fp = tp.evaluate("""() => { const t = document.getElementById('fingerprint'); return { cols: [...t.tHead.rows[0].cells].slice(1).map((c) => c.textContent),
+      chapters: [...t.querySelectorAll('tbody th.ch')].map((c) => c.textContent), rows: [...t.tBodies[0].rows].filter((r) => r.cells[0].tagName === 'TD').map((r) => [...r.cells].slice(1).map((c) => c.dataset.level)) }; }""")
+    flat = [k for r in fp["rows"] for k in r]
+    expect("grading view: one fingerprint of the group, items by chapter as rows and students as columns (teacher 2026-11-06)", tp.is_visible("#selfSec") and len(fp["cols"]) >= 3
+           and fp["chapters"] and fp["chapters"][0].startswith("Luku 1") and all(len(r) == len(fp["cols"]) for r in fp["rows"]) and "b" in flat and "c" in flat and "none" in flat, fp)
+    expect("grading view: fingerprint colours: not answered white, 'not yet studied' grey", tp.evaluate("""() => [getComputedStyle(document.querySelector('#fingerprint td.sa-none')).backgroundColor,
+      getComputedStyle(document.querySelector('.sa-legend .sa-x')).backgroundColor]""") == ["rgb(255, 255, 255)", "rgb(154, 154, 154)"])
+    shot(tp, "osaamisen-sormenjalki", clip=tp.locator("#selfSec").bounding_box()) if SHOTS else None
+    avg = tp.evaluate("[...document.querySelectorAll('#summary tbody tr')].map((tr) => tr.cells[4].textContent.trim())")
+    expect("grading view: the summary shows each student's self-assessment average (required items only)", any(re.fullmatch(r"\d(,\d)?", a) for a in avg), avg)
+    tp.click("#hideNames")
+    hid = tp.evaluate("[...document.getElementById('fingerprint').tHead.rows[0].cells].slice(1).map((c) => c.textContent).concat([...document.querySelectorAll('#fingerprint td.c')].map((c) => c.title))")
+    expect("grading view: 'Piilota nimet' hides the names in the fingerprint too", hid and all(h.startswith("Opiskelija ") for h in hid) and not any(n in "".join(hid) for n in fp["cols"]), hid[:5])
+    tp.click("#hideNames")
     expect("the processing state lists invalid, duplicate and to-be-checked rows", all(w in tp.inner_text("#problems") for w in ["Virheellinen", "Kaksoiskappale", "Tarkistettava"]), tp.inner_text("#problems")[:200])
     tp.locator("#tasks tr.task-row").first.click()
     tp.wait_for_function("document.querySelector('#gAnswer .t')")
@@ -558,14 +569,17 @@ with sync_playwright() as p:
     rows = lambda: lp.evaluate("JSON.stringify([...document.querySelectorAll('#summary tbody tr')].map((tr) => [...tr.cells].map((c) => c.textContent)))")
     # the chapters' task counts come from the generated file (the exercise bank grows: fy3-1 and fy3-2 have 21 since #345)
     m1, m2 = (len([c for c in course["chapters"] if c["id"] == k][0]["tasks"]) for k in ("fy3-1", "fy3-2"))
-    want = [["Aino Opiskelija", f"{a_v2 + 1} / {m1 + m2}", str(a_v2 - 1), f"0,5 / {m1 + m2}"], ["Bertta Opiskelija", f"{b_v1} / {m1 + m2}", str(b_v1 - 1), f"1 / {m1 + m2}"]]
+    want = [["Aino Opiskelija", f"{a_v2 + 1} / {m1 + m2}", str(a_v2 - 1), f"0,5 / {m1 + m2}", "2,5"], ["Bertta Opiskelija", f"{b_v1} / {m1 + m2}", str(b_v1 - 1), f"1 / {m1 + m2}", "2,5"]]
     expect("local page: summary with names on the left: done, unchecked, points (all returned chapters)", rows() == json.dumps(want, ensure_ascii=False, separators=(",", ":"))
            and [c.strip() for c in lp.inner_text("#summary thead").split("\t")][:1] == ["OPISKELIJA ▲"], (rows(), lp.inner_text("#summary thead")))
     lp.click('#summary button[data-key="points"]')
     expect("local page: a click on a heading sorts (points, highest first)", json.loads(rows())[0][0] == "Bertta Opiskelija" and "▼" in lp.inner_text("#summary thead"), rows())
-    lp.select_option("#scope", "fy3-2")
-    expect("local page: the summary of one chapter", json.loads(rows()) == [["Aino Opiskelija", f"1 / {m2}", "0", f"0,5 / {m2}"], ["Bertta Opiskelija", f"0 / {m2}", "0", f"0 / {m2}"]], rows())
-    lp.select_option("#scope", "all"); lp.click('#summary button[data-key="name"]')
+    lp.select_option("#from", "fy3-2"); lp.select_option("#to", "fy3-2")
+    expect("local page: chapters from–to: the summary of one chapter", json.loads(rows()) == [["Aino Opiskelija", f"1 / {m2}", "0", f"0,5 / {m2}", "–"], ["Bertta Opiskelija", f"0 / {m2}", "0", f"0 / {m2}", "–"]], rows())
+    expect("local page: chapters from–to limit the task list too (teacher 2026-11-06)", lp.evaluate("[...document.querySelectorAll('#tasks details.chapter')].map((d) => d.dataset.chapter)") == ["fy3-2"])
+    lp.select_option("#from", course["chapters"][0]["id"]); lp.select_option("#to", course["chapters"][-1]["id"])
+    expect("local page: the whole course again", lp.locator("#tasks details.chapter").count() == len(course["chapters"]))
+    lp.click('#summary button[data-key="name"]')
     gc = lp.inner_text("#groupChart")
     expect("local page: chart of the group: done and points out of the maximum (teacher 2026-11-06)", lp.is_visible("#groupChart") and "Tehty" in gc and "Pisteet" in gc and f"({a_v2 + 1 + b_v1} / {2 * (m1 + m2)})" in gc
            and lp.locator("#summary tbody .meter").count() == 4 and lp.evaluate("document.querySelector('#summary tbody .meter.pts > span').style.width") not in ("", "0%"), gc)
