@@ -14,12 +14,31 @@
    (base64, no "data:" prefix), pasted into the editor with Ctrl+V (teacher 2026-11-05: no separate image button).
    Items keep the order of the solution. No name, e-mail or other chapters.
    content_sha256 is the SHA-256 of the answers without the formula PNGs (JSON, UTF-8): the same solutions keep the
-   same random submission_id (kept in localStorage ruukkilabra:palautus:<chapter>), any change gives a new one. */
+   same random submission_id (kept in localStorage ruukkilabra:palautus:<chapter>), any change gives a new one.
+   Version 2 (teacher 2026-11-06, guided self-assessment, build.py SELF_ASSESS_COURSES): a page with the self-assessment
+   of Tarkista osaamisesi (fieldset.sa-rate, inquiry.js part 8) adds
+     selfassessment: { items: [ { id, level: "a" | "b" | "c" | "d" | "x", history: [[level, ISO time], ...] }, ... ] }
+   with the assessed items in page order, and content_sha256 is then the SHA-256 of
+   JSON.stringify({ answers: <as above>, selfassessment: <items> }), so a changed assessment is a new submission. */
 (() => {
   const ME = document.currentScript;
   const CHAPTER = ME && ME.dataset.chapter;
   const HERE = ME ? ME.src : location.href;
-  const FORMAT = 'ruukkilabra-palautus', VERSION = 1;
+  const FORMAT = 'ruukkilabra-palautus';
+  const SA_IDS = [...document.querySelectorAll('fieldset.sa-rate')].map((f) => f.dataset.sa);
+  const VERSION = SA_IDS.length ? 2 : 1;
+  const SA_LEVEL = /^[abcdx]$/, SA_TIME = /^\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d(\.\d{1,3})?Z$/;
+  // the student's levels (inquiry.js part 8), only well-formed ones, in page order
+  const selfItems = () => {
+    let all = {};
+    try { const v = JSON.parse(localStorage.getItem('ruukkilabra:itsearvio:' + CHAPTER)); if (v && v.v === 1 && v.items) all = v.items; } catch (e) { /* none */ }
+    return SA_IDS.filter((id, i) => SA_IDS.indexOf(id) === i).map((id) => {
+      const it = all[id];
+      if (!it || !SA_LEVEL.test(it.level)) return null;
+      const history = (Array.isArray(it.history) ? it.history : []).filter((h) => Array.isArray(h) && SA_LEVEL.test(h[0]) && SA_TIME.test(h[1])).slice(-50).map((h) => [h[0], h[1]]);
+      return { id, level: it.level, history };
+    }).filter(Boolean);
+  };
   // Limits, the same in the teacher's Apps Script (Code.gs RL_LIMITS): Forms takes a file of at most 10 MB when the
   // teacher picks that size; a picture of 2 MB is a full-screen screenshot, and the teacher's view loads one task at a time.
   const LIMITS = { file: 9000000, image: 2000000, side: 5000, images: 40, text: 20000, latex: 4000, items: 400, mathPng: 200000 };
@@ -127,12 +146,14 @@
     }
     const images = answers.reduce((n, a) => n + a.content.filter((i) => i.type === 'image').length, 0);
     if (images > LIMITS.images) throw fail(S('images', { n: images, max: LIMITS.images }));
-    const sha = await sha256(canonical(answers));
+    const self = VERSION === 2 ? selfItems() : null;
+    const sha = await sha256(self ? JSON.stringify({ answers: JSON.parse(canonical(answers)), selfassessment: self }) : canonical(answers));
     const prev = remembered();
     const same = !!(prev && prev.sha === sha && /^[0-9a-f]{32}$/.test(prev.id || ''));
     const id = same ? prev.id : newId();
     const file = { format: FORMAT, version: VERSION, chapter: CHAPTER, lang: LANG, submission_id: id, exported: new Date().toISOString(),
       includes: 'solution-editor', content_sha256: sha, answers };
+    if (self) file.selfassessment = { items: self };
     const text = JSON.stringify(file);
     const size = new TextEncoder().encode(text).length;
     if (size > LIMITS.file) throw fail(S('file_big', { mb: (size / 1e6).toFixed(1).replace('.', ','), max: LIMITS.file / 1e6 }));

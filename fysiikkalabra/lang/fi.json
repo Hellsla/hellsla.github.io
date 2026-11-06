@@ -288,7 +288,18 @@
     "tf_true": "Tosi",
     "tf_false": "Epätosi",
     "order_place": "Sija järjestyksessä",
-    "order_pick": "Sija"
+    "order_pick": "Sija",
+    "sa_legend": "Itsearvio: kuinka hyvin osaat tämän?",
+    "sa_a": "Osaan tämän niin hyvin, että voisin opettaa sen kaverillenikin",
+    "sa_b": "Koen oivaltaneeni tämän asian",
+    "sa_c": "Osaan osittain, mutta epävarmuutta on vielä",
+    "sa_d": "Tarvitsen vielä harjoitusta ja aikaa tämän ymmärtämiseen",
+    "sa_x": "En ole vielä harjoitellut tätä",
+    "sa_goals_title": "Arvioi vielä, mitä opit",
+    "sa_goals_lead": "Arvioi luvun tavoitteet samalla asteikolla. Voit muuttaa arviota myöhemmin, kun olet harjoitellut. Itsearvio tulee mukaan palautukseen.",
+    "sa_goal_prefix": "Opin",
+    "sa_key": "Itsearvion asteikko",
+    "sa_x_short": "Ei vielä"
   },
   "js": {
     "split_open": "Avaa tehtävät teorian viereen",

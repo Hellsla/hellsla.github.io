@@ -18,6 +18,11 @@
       conclusion (data-after) also waits for the measurements of its experiments and copies tables and text for notes.
    6. Reflection: shows the student's own predictions next to the evidence and asks whether to revise.
    7. The Ennusta box (details.fold, closed at first): its summary counts the answers; closing it keeps them.
+   8. Guided self-assessment of Tarkista osaamisesi (fieldset.sa-rate, teacher 2026-11-06): every task and the chapter's
+      goals get a level a-d or x; the chosen level's text shows under the row. Kept in localStorage
+      ruukkilabra:itsearvio:<chapter> as { v: 1, items: { id: { level, history: [[level, ISO time], ...] } } } (the same
+      chapter in every language), and palautus.js puts it into the submission file. A change of mind is a new history
+      entry, so the teacher sees how the assessment moved; choosing the same level again adds nothing.
    Its messages come from the page's #fl-strings block (lang/<lang>.json "js", written in by build.py). */
 (() => {
   const L10N = (() => { try { return JSON.parse(document.getElementById('fl-strings').textContent); } catch (e) { return {}; } })();
@@ -459,5 +464,31 @@
     const ta = r.querySelector('textarea'), id = r.closest('.activity').id;
     const saved = store.get(id); if (saved && saved.text) ta.value = saved.text;
     ta.addEventListener('input', () => store.set(id, { text: ta.value }));
+  });
+
+  // 8. self-assessment: a level a-d or x per task and per goal, with its history
+  const SA_MAX = 50;
+  const saKey = (ch) => 'ruukkilabra:itsearvio:' + ch;
+  const saRead = (ch) => { try { const v = JSON.parse(localStorage.getItem(saKey(ch))); return v && v.v === 1 && v.items && typeof v.items === 'object' ? v : { v: 1, items: {} }; } catch (e) { return { v: 1, items: {} }; } };
+  document.querySelectorAll('fieldset.sa-rate').forEach((fs) => {
+    const ch = fs.dataset.chapter, id = fs.dataset.sa, desc = fs.querySelector('.sa-desc');
+    const show = () => {
+      const sel = fs.querySelector('input:checked');
+      desc.textContent = sel ? sel.closest('label').querySelector('.sa-text').textContent : '';
+      fs.dataset.level = sel ? sel.value : '';
+    };
+    const it = saRead(ch).items[id];
+    if (it && it.level) { const r = fs.querySelector(`input[value="${it.level}"]`); if (r) r.checked = true; }
+    show();
+    fs.addEventListener('change', () => {
+      const sel = fs.querySelector('input:checked'); if (!sel) return;
+      const all = saRead(ch), cur = all.items[id] || { level: null, history: [] };
+      if (cur.level !== sel.value) {
+        cur.level = sel.value; cur.history = (Array.isArray(cur.history) ? cur.history : []).concat([[sel.value, new Date().toISOString()]]).slice(-SA_MAX);
+        all.items[id] = cur;
+        try { localStorage.setItem(saKey(ch), JSON.stringify(all)); } catch (e) { /* private mode: the level stays on the page only */ }
+      }
+      show();
+    });
   });
 })();
