@@ -483,6 +483,8 @@ form.check output[data-state=close]{color:#7a5a00;font-weight:600}form.check out
 .ex-row{display:flex;flex-wrap:wrap;align-items:flex-start;gap:.5rem .75rem;margin:.4rem 0 .5rem}
 .ex-row>.pad-open{margin:0;flex:none}
 .ex-row>.pad{flex:1 1 100%;min-width:0;margin:0}
+.ex-row>.pad-head{margin:0;flex:0 1 auto}.ex-row>.pad-head[hidden]{display:none}
+.pad-saverow{display:flex;flex-wrap:wrap;align-items:baseline;gap:.2rem 1.2rem;margin-top:.3rem}.pad-saverow>.pad-save,.pad-saverow>.pad-saved{margin:0}.pad-saverow>.pad-saved[open]{flex-basis:100%}
 .ex-row>form.check{flex:1 1 18rem;min-width:0;margin:0}
 .ex-row form.check button{background:var(--surface);color:var(--accent-deep)}
 .ex-row form.check button:hover{background:var(--accent-soft)}
@@ -1180,7 +1182,7 @@ html.ex-focus-on{overflow:hidden}
 .practice-task>:is(h2,h3):has(>.ex-big){position:relative;padding-right:3rem;flex-wrap:wrap}.practice-task>:is(h2,h3)>.ex-big{position:absolute;top:50%;right:0;margin:-20px 0 0}   /* at the right end of the task's heading */
 .ex-focus-body.no-pad>.ex-focus-pad{display:none}
 .ex-focus-pad{max-width:44rem;margin:1rem auto 0;padding-top:1rem;border-top:1px solid var(--line)}
-.ex-focus-pad .pad{margin:0}
+.ex-focus-pad .pad{margin:0}.pad>.pad-head{margin:0 0 .5rem}
 .ex-focus-pad .pad .rich-text-editor{min-height:14rem}
 @media (min-width:1100px){
   .ex-focus-body{display:grid;grid-template-columns:minmax(0,44rem) minmax(0,1fr);gap:0 2.5rem;max-width:92rem;width:100%;box-sizing:border-box;margin:0 auto;padding:0 2rem;overflow:hidden}

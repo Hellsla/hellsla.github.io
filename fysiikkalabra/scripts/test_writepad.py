@@ -141,6 +141,8 @@ with sync_playwright() as pw:
         alt = li.locator(".rich-text-editor img").first.get_attribute("alt") if li.locator(".rich-text-editor img").count() else None
         src = li.locator(".rich-text-editor img").first.get_attribute("src") if alt else ""
         expect(f"{page}: a formula becomes an image with its LaTeX in alt, drawn in the browser", alt == "v=\\frac{s}{t}" and src.startswith("data:image/svg+xml"), (alt, src[:40]))
+        expect(f"{page}: Kopioi and Poista ratkaisu beside the hide button, Tallennetut ratkaisut beside the save state (teacher 2026-11-06)",
+               li.evaluate("(li) => !!li.querySelector('.ex-row > .pad-open + .pad-head > .pad-copy + .pad-delete') && !!li.querySelector('.pad > .pad-saverow > .pad-save + .pad-saved')"))
         li.locator(".pad-copy").click(); pg.wait_for_timeout(300)
         expect(f"{page}: Kopioi ratkaisu says the solution is copied", li.locator(".pad-status").inner_text().strip() == T("js.pad_copied"), li.locator(".pad-status").inner_text())
         clip = pg.evaluate("""async () => { const out = {}; for (const it of await navigator.clipboard.read()) for (const t of it.types) out[t] = await (await it.getType(t)).text(); return out; }""")
@@ -177,7 +179,7 @@ with sync_playwright() as pw:
         pg.goto(BASE + page); pg.wait_for_load_state("load")
         n = pg.locator("section.practice-task[id]").count()
         ok = pg.evaluate("""() => [...document.querySelectorAll('section.practice-task[id]')].every(s => {
-            const card = s.querySelector(':scope > .task-card'), b = card && card.querySelector(':scope > .pad-open'), r = card && card.querySelector(':scope > details.reveal');
+            const card = s.querySelector(':scope > .task-card'), b = card && card.querySelector(':scope > .ex-row > .pad-open'), r = card && card.querySelector(':scope > details.reveal');
             return b && b.textContent && r && (b.compareDocumentPosition(r) & 4); })""")
         expect(f"{page}: one '{T('js.pad_write')}' per task ({n}), in its card before the model answer", n > 0 and ok and pg.locator(".pad-open").count() == n)
         card = pg.locator("section.practice-task[id] > .task-card").first
