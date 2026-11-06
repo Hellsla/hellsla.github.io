@@ -274,7 +274,7 @@
     {
       "id": "fy4-3-L2-08",
       "level": 2,
-      "text": "Esimerkkiarvot: kuorma-auto, jonka massa on $12\\,\\text{t}$, peruuttaa hitaasti ja törmää paikallaan olevaan henkilöautoon, jonka massa on $1{,}2\\,\\text{t}$.\n\nTörmäyksen aikana kuorma-auto työntää henkilöautoa voimalla $\\overline{F}_{KH}$ ja henkilöauto kuorma-autoa voimalla $\\overline{F}_{HK}$.\n\nKuinka suuri on voima $F_{\\text{HK}}$ verrattuna voimaan $F_{\\text{KH}}$ törmäyksen aikana?",
+      "text": "Esimerkkiarvot: kuorma-auto, jonka massa on $12\\,\\text{t}$, peruuttaa hitaasti ja törmää paikallaan olevaan henkilöautoon, jonka massa on $1{,}2\\,\\text{t}$.\n\nTörmäyksen aikana kuorma-auto työntää henkilöautoa voimalla $\\overline{F}_{\\text{KH}}$ ja henkilöauto kuorma-autoa voimalla $\\overline{F}_{\\text{HK}}$.\n\nKuinka suuri on voima $F_{\\text{HK}}$ verrattuna voimaan $F_{\\text{KH}}$ törmäyksen aikana?",
       "kind": [
         "concept",
         "reasoning"
@@ -305,7 +305,7 @@
         },
         {
           "text": "Voimat ovat yhtä suuret ja vastakkaiset, joten ne kumoavat toisensa törmäyksessä.",
-          "feedback": "Voimat ovat yhtä suuret, mutta ne eivät kumoa toisiaan: $\\overline{F}_{KH}$ vaikuttaa henkilöautoon ja $\\overline{F}_{HK}$ kuorma-autoon. Vain samaan kappaleeseen vaikuttavat voimat voivat kumota toisensa."
+          "feedback": "Voimat ovat yhtä suuret, mutta ne eivät kumoa toisiaan: $\\overline{F}_{\\text{KH}}$ vaikuttaa henkilöautoon ja $\\overline{F}_{\\text{HK}}$ kuorma-autoon. Vain samaan kappaleeseen vaikuttavat voimat voivat kumota toisensa."
         },
         {
           "text": "Vain liikkuva kappale voi työntää, joten paikallaan olevan auton voima on nolla.",

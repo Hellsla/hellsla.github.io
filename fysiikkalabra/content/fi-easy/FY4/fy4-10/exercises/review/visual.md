@@ -1,18 +1,18 @@
-VERDICT: FAIL
+VERDICT: PASS
 CONTENT-HASH: 7285f36aa764b4e1
-Mode: delta, round 1
+Mode: delta, round 2 (supersedes round 1)
 
 ## Blocking
-[Major] fy4-10-L2-07 tehtävänanto — oppilaan lasku `v' = (0,60 · 0,80 + 0,20 · (−0,40)) / (0,60 + 0,20) m/s = 0,` on yksi 420 px leveä rivi, jota ei jaeta riveihin, ja se menee kortin reunan yli: tulos `0,70 m/s` leikkautuu pois ja sivu saa vaakasiirtymän (scrollWidth 426 / 390 px) — olennainen tieto leikkautuu — aseta lasku katkaistavaksi (esim. `aligned`, rivinvaihto murtolausekkeen jälkeen).
-(Kohta on delta-muutoksen ulkopuolella olevaa tekstiä; uusi L2-08 on kunnossa.)
+(none)
+Round 1 reported the L2-07 and (en) L2-05 chains as clipped Major, measured before the page's flFitMath step had run. Re-measured with it running: page scrollWidth 390 in both languages, no element outside the viewport except inside the designed sideways-scrolling `.kx-wide` / `.eq-chain` lines. These are old, untouched tasks with formulas identical to the passed Finnish, so they are Polish, not blocking for the new-task review.
 
 ## Polish
-- [Minor] fy4-10-L2-02 ratkaisu — pitkä ketju (noin 360 px) vierii `.eq-chain`-laatikossa; tarkoituksella, mutta CI:n KaTeX on noin 20 px leveämpi.
+- [Minor] fy4-10-L2-07 task — the student's chain (330 px, `.kx-wide`) scrolls sideways inside its own line, so its tail `= 0.70 m/s` is only seen by scrolling; the same in the passed Finnish. Follow-up for a shared fit/mathlayout rule (wrap a fraction chain), not this PR.
+- [Minor] fy4-10-L2-02 solution — chain about 364 px scrolls in `.eq-chain`; CI KaTeX about 20 px wider.
 
 ## Checked
-Rendered at 390 px with every hint, feedback and solution open (own scratch script): page scrollWidth, clipped elements and inline KaTeX chains over 280 px measured; no KaTeX errors.
-- fy4-10-L2-08 (uusi): tehtävä, viisi vaihtoehtoa palautteineen ja ratkaisu; ei ylivuotoa, yksiköt pystyssä, kieli selkeää ja johdonmukaista (rivi 3 väärin, korjattu sijoitus näkyy).
-- fy4-10-L2-07 avattu (löydös yllä). Ei kuvia deltassa.
+- Re-rendered at 390 px with every hint, feedback and solution open, flFitMath present: scrollWidth 390; opened fy4-10-L2-07 and L2-05 (en) captures.
+- fy4-10-L2-08 (new): task, five options with feedback and solution open in both languages; no overflow, units upright, `\cdot` used, clear order principle, formula, substitution, result, check.
 
 ## Scores
-illustrations 4 · typography 3 · Finnish 5 · accessibility 3
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

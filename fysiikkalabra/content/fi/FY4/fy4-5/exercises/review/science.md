@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 90b024b2178f8161
+CONTENT-HASH: 177053466bf26f9c
 
 ## Blocking
 
 ## Polish
-- lessons/FY4/fy4-5/figures.py pick_tasainen (exercises.json:140, L1-09 option C) — only the correct option's description compares F with the weight ("kumpikin vajaa puolet painon nuolesta"), so a screen-reader user can pick it out by its form — give A, B and D the same ratio sentence (A: F about four fifths of G; B, D: F_k/v and F_μ just under half of G), or drop it from C.
-- exercises.json:128 (L1-09 stem) — "Voima F_k on laatikon voima työntäjään" names option B's error before the student judges it; "Voima F_k on laatikon ja työntäjän välinen voima" keeps the third-law check (taught in fy4-3) for the student.
-- Render 390 px (option figures) — the label N sits on the box's top edge in all four figures; nudge the label right (visual's call).
-- Carried from the previous round: L2-05 "(ensimmäinen mittaus)"; L2-07 "ylhäältä katsottuna"; L1-07 invented G = N = 600 N; "Kuvaajan lukeminen" → "Taulukon lukeminen".
+- content/fi/FY4/fy4-5/exercises/exercises.json:153 (L1-09 option D) — now that v is blue, D can read as "C plus an allowed velocity arrow"; the error is that the arrow sits on the box and is drawn like a force (thick, filled head, from the face) — say so in the feedback ("nuoli lähtee laatikosta ja on piirretty voiman tavoin") and in the pick-nopeus description (lessons/FY4/fy4-5/figures.py:402: "paksu, umpikärkinen kuten voimat"), so a screen-reader user can tell it from a correct drawing too.
+- Carried from round 1: options A, B, D lack the F-to-G ratio sentence that C's description has; stem names option B's F_k error ("laatikon voima työntäjään"); label N on the box's top edge (visual's call); L2-05, L2-07, L1-07 and "Taulukon lukeminen" items.
 
 ## Checked
-- L1-09 physics: constant velocity, so ΣF = 0: F = F_μ and N = G; C draws exactly that (PK_F 40 vs PK_G 98,1, ratio 0,41 = "vajaa puolet", text). Solution's x/y equations match the drawn axes.
-- Each distractor carries one error and its feedback names it: A push 2 × friction (the chapter's warned "liikkeen voima" idea), B third-law partner F_k on the box (third law taught in fy4-3), D velocity drawn as a force (the chapter's warned mistake). Exactly one correct option.
-- Drawing rules from the code and the render: box a rectangle, G from the centre, N from the bottom face, friction from the rear bottom corner, push ending on the left face; same scale in all four figures as the stem says.
-- Option labels are "Voimakuvio A–D" only; no form give-away in the text; the correct feedback gives no extra reason stage.
-- Rendered (preview build, 390 px, all feedback and the solution forced open, own script): no KaTeX span wider than 260 px, no element past the 390 px edge. Physics checked from text and code; figure shapes and arrow lengths also from the render.
-- Within this and earlier chapters (fy4-3 third law, fy4-4 ΣF = ma).
-- Hash 90b024b2178f8161 at the start and at the end.
+- Round 2, delta since commit 5a93acbfc (packet generated in full mode; reviewed the change against the round-1 PASS): L1-09 option D figure and feedback only.
+- Figure from the code (SVG built in memory, not written): the velocity arrow uses VELOCITY #1971c2 (line, head, label), the four forces stay FORCE red; the description now says "sininen nopeuden nuoli v". Follows the house rule force red, velocity blue.
+- D is still unambiguously wrong: the taught rule (solutions L3-01, L2-06, L3-05; docs/force-diagrams.md) puts the thin blue v beside the diagram, never on the body, and YO 2025 marks velocity drawn on the body −5. D's arrow starts on the box face.
+- New D feedback is correct physics: velocity is not a force, has no cause, belongs beside the diagram. The correct option C's feedback is unchanged and gives no extra reason.
+- Distractors each keep one error (A push 2 × friction, B third-law partner on the box, D velocity drawn on the box); exactly one correct option.
+- answers.py run once: all 18 numeric answers within tolerance; the 3 multiple-choice tasks each have exactly one correct option.
+- Not re-rendered this round; checked from the code, the SVG text and the feedback.
+- Hash 177053466bf26f9c at the start and at the end.
