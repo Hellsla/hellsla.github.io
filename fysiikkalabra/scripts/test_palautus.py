@@ -131,6 +131,8 @@ with sync_playwright() as p:
     pg.goto(BASE + "palautukset.html")
     links = pg.evaluate("[...document.querySelectorAll('main a.return-form')].map((a) => [a.textContent, a.getAttribute('href')])")
     expect("Palautukset page: period title and one button per group linking to its form", pg.inner_text("h1") == "Palautukset · 1. periodi · lv 2026-27" and ["FY3.2", "https://forms.gle/1JEQYSTidBPETrxbA"] in links and all(h.startswith(("https://forms.gle/", "https://docs.google.com/forms/")) for _, h in links), links)
+    secs = pg.evaluate("[...document.querySelectorAll('main .return-course')].map((s) => [s.querySelector('h2').textContent.split(' ')[0], s.querySelectorAll('a.return-form').length, s.querySelectorAll('.return-none').length])")
+    expect("Palautukset page: every course FY1-FY8 in order, a grey placeholder where a course has no forms (teacher 2026-11-06)", [c for c, *_ in secs][:8] == [f"FY{i}" for i in range(1, 9)] and all((n > 0) != (e > 0) for _, n, e in secs) and dict((c, n) for c, n, _ in secs).get("FY3", 0) >= 1, secs)
     expect("Palautukset page loads nothing from Google (links only)", not pg.evaluate("[...document.querySelectorAll('script[src],link[href],img[src],iframe')].some((e) => /google|gle/.test(e.src || e.href || ''))"))
     pg.goto(BASE + "fy3-1.html"); pg.evaluate(OPEN)
     expect("no separate image button (Ctrl+V only)", pg.locator(".pad-image").count() == 0)
