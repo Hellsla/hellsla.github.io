@@ -138,15 +138,17 @@ def chips(code, lid, T, lang):
 
 def lesson_section(code, lid, T, lang, titles):
     """The last part of the Esimerkit stage (teacher 2026-11-05: the cards are practice, no stage of their own in the
-    navigation; inquiry.render puts it there), or "" when the chapter has no cards in this language."""
+    navigation; inquiry.render puts it there), or "" when the chapter has no cards in this language. Closed until
+    opened (teacher 2026-11-06: "oletuksena kiinni"); the Käsitteet link of the navigation opens it (lesson.js)."""
     cards = chapter_cards(code, lid, lang)
     if not cards: return ""
-    return (f'<div class="activity act-concepts kc-section" id="kertaa-kasitteet" data-moduuli="{code}" data-luku="{lid}">'
-            f'<h3>{T("cards.lesson_title")}</h3><p class="kc-intro">{T("cards.lesson_lead")}</p>'
+    return (f'<details class="opt kc-fold"><summary>{T("cards.lesson_title")}</summary>'
+            f'<div class="activity act-concepts kc-section" id="kertaa-kasitteet" data-moduuli="{code}" data-luku="{lid}">'
+            f'<p class="kc-intro">{T("cards.lesson_lead")}</p>'
             f'<dl class="kc-dl">{"".join(static_card(c) for c in cards)}</dl>'
             f'<p class="kc-more"><a href="{app_href(code)}">{T("cards.module_all")}</a></p>'
             + data_block(T, lang, cards_of(code, lang), {"luku": lid, "moduuli": code, "chapters": titles}, APP)
-            + '<script src="kortit.js"></script></div>')
+            + '<script src="kortit.js"></script></div></details>')
 
 
 def lesson_nav(T):
