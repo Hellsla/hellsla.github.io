@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 568f3ed1660463e9
+CONTENT-HASH: 0c494781d50723fc
 
 ## Blocking
 (none)
@@ -8,6 +8,5 @@ CONTENT-HASH: 568f3ed1660463e9
 - none.
 
 ## Checked
-- English natural; option figures A-D descriptions match figures.py; label F_kp kept as in the task text.
+- English natural; option figure A-D descriptions match figures.py; F_cf used the same in task text, solution and figure.
 - fy5-4-L2-08: situation first, question last, solution staged, same order and feedback structure as the Finnish; nothing extra revealed.
-- Fixed: figures.json pick-keskipako description 'arrow F cf' -> 'arrow F kp' (the label drawn in the figure and used in the task text).
