@@ -206,7 +206,9 @@ function rlCheckItem_(it, where, deep) {
     return out;
   }
   if (it.type === 'image') {
-    only(['type', 'mime', 'data', 'w', 'h']);
+    only(['type', 'mime', 'data', 'w', 'h', 'dw']);
+    // dw: leveys, jonka opiskelija antoi kuvalle editorissa (CSS-pikseleinä, pienempi kuin kuvan oma leveys; 6.11.2026)
+    if (it.dw !== undefined && !(typeof it.dw === 'number' && it.dw % 1 === 0 && it.dw >= 1 && it.dw <= RL_LIMITS.side)) throw rlError_(where + ': kuvan näyttöleveys on virheellinen');
     if (it.mime !== 'image/png' && it.mime !== 'image/jpeg') throw rlError_(where + ': kuvamuoto ei ole sallittu (vain PNG ja JPEG)');
     var info = null;
     if (deep) {
@@ -214,7 +216,9 @@ function rlCheckItem_(it, where, deep) {
       if (!info || info.mime !== it.mime) throw rlError_(where + ': kuvan sisältö ei ole ' + (it.mime === 'image/png' ? 'PNG' : 'JPEG') + '-kuva');
       if (info.w < 1 || info.h < 1 || info.w > RL_LIMITS.side || info.h > RL_LIMITS.side) throw rlError_(where + ': kuvan koko on liian suuri (yli ' + RL_LIMITS.side + ' px)');
     } else if (typeof it.data !== 'string' || it.data.length > RL_LIMITS.image * 1.4) throw rlError_(where + ': kuva on liian suuri');
-    return { type: 'image', mime: it.mime, data: it.data, w: info ? info.w : it.w, h: info ? info.h : it.h };
+    var out2 = { type: 'image', mime: it.mime, data: it.data, w: info ? info.w : it.w, h: info ? info.h : it.h };
+    if (it.dw !== undefined) out2.dw = it.dw;
+    return out2;
   }
   throw rlError_(where + ': tuntematon sisältötyyppi');
 }
