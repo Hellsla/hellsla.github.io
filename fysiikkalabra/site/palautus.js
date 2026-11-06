@@ -19,25 +19,38 @@
    of Tarkista osaamisesi (fieldset.sa-rate, inquiry.js part 8) adds
      selfassessment: { items: [ { id, level: "a" | "b" | "c" | "d" | "x", history: [[level, ISO time], ...] }, ... ] }
    with the assessed items in page order, and content_sha256 is then the SHA-256 of
-   JSON.stringify({ answers: <as above>, selfassessment: <items> }), so a changed assessment is a new submission. */
+   JSON.stringify({ answers: <as above>, selfassessment: <items> }), so a changed assessment is a new submission.
+   Version 3 (teacher 2026-11-06 evening, "kaikki tehtävävastaukset mukaan"): every task of the chapter with an answer
+   control, in page order: the exercises (and FY9 review tasks) as before, and the lesson's own tasks (Ennusta, Tutki,
+   Itsearvio …: .activity[id] outside Tehtävät, task "<chapter>:<activity id>"), each { task, status, content: [editor
+   items], responses: [item, ...] }
+   with responses = { type: "number", value, unit? } (a typed number as typed, its unit) | { type: "choice", question,
+   answer, option } (the chosen option's text) | { type: "truefalse", items: [{ text, value: true | false | null }] } |
+   { type: "order", items: [{ text, rank: n | null }] } | { type: "text", label, text } (a written answer, a reason) |
+   { type: "table", head: [...], rows: [[...], ...] } (an experiment's measurements). A task is "answered" when its
+   editor or any of its responses has something, so a number with an empty editor is an answer (before this, the file
+   held the editor only and a checked number or choice came out empty). Text keeps LaTeX between $…$.
+   The self-assessment of version 3 is the goals' summary only: selfassessment: { goals: [ { id: "tavoite-<n>", text,
+   level: "a" | "b" | "c" | "d" | "x" | null } ] }, every goal of the chapter, null = not answered, "x" = "En ole vielä
+   harjoitellut". The tasks' own self-assessments and the history of changes stay on this device and are not in the file.
+   content_sha256 = SHA-256 of JSON.stringify({ answers: <answers, formula PNGs left out>, selfassessment: <goals> }).
+   The list of tasks is window.flSubmissionTasks (scripts/palautus_tasks.py reads the same list for the grading page). */
 (() => {
   const ME = document.currentScript;
   const CHAPTER = ME && ME.dataset.chapter;
   const HERE = ME ? ME.src : location.href;
   const FORMAT = 'ruukkilabra-palautus';
-  const SA_IDS = [...document.querySelectorAll('fieldset.sa-rate')].map((f) => f.dataset.sa);
-  const VERSION = SA_IDS.length ? 2 : 1;
-  const SA_LEVEL = /^[abcdx]$/, SA_TIME = /^\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d(\.\d{1,3})?Z$/;
-  // the student's levels (inquiry.js part 8), only well-formed ones, in page order
-  const selfItems = () => {
+  const VERSION = 3;
+  const SA_LEVEL = /^[abcdx]$/;
+  // the chapter's goals (Itsearvio's first card, inquiry.py sa_goals_html) with the student's latest level, or null
+  const goals = () => {
     let all = {};
     try { const v = JSON.parse(localStorage.getItem('ruukkilabra:itsearvio:' + CHAPTER)); if (v && v.v === 1 && v.items) all = v.items; } catch (e) { /* none */ }
-    return SA_IDS.filter((id, i) => SA_IDS.indexOf(id) === i).map((id) => {
-      const it = all[id];
-      if (!it || !SA_LEVEL.test(it.level)) return null;
-      const history = (Array.isArray(it.history) ? it.history : []).filter((h) => Array.isArray(h) && SA_LEVEL.test(h[0]) && SA_TIME.test(h[1])).slice(-50).map((h) => [h[0], h[1]]);
-      return { id, level: it.level, history };
-    }).filter(Boolean);
+    const seen = new Set();
+    return [...document.querySelectorAll('fieldset.sa-rate')].filter((f) => /^tavoite-\d+$/.test(f.dataset.sa || '') && !seen.has(f.dataset.sa) && seen.add(f.dataset.sa)).map((f) => {
+      const it = all[f.dataset.sa];
+      return { id: f.dataset.sa, text: (f.dataset.label || '').slice(0, 500), level: it && SA_LEVEL.test(it.level) ? it.level : null };
+    });
   };
   // Limits, the same in the teacher's Apps Script (Code.gs RL_LIMITS): Forms takes a file of at most 10 MB when the
   // teacher picks that size; a picture of 2 MB is a full-screen screenshot, and the teacher's view loads one task at a time.
@@ -46,11 +59,28 @@
   const sec = document.getElementById('exercises');
   if (!CHAPTER || !sec) return;
   // an exercise (li > p.task) and a review task of FY9 (div.practice-task, practice.py; teacher 2026-11-06), the ones
-  // lesson.js part 6 gives a solution editor: a task with only choices has none, so it is not in the file either
-  const tasks = [...sec.querySelectorAll('li[id], div.practice-task[id]')].filter((t) => (t.matches('li') ? t.querySelector(':scope > .task')
+  // lesson.js part 6 gives a solution editor: a task with only choices has none
+  const edTasks = [...sec.querySelectorAll('li[id], div.practice-task[id]')].filter((t) => (t.matches('li') ? t.querySelector(':scope > .task')
     : !t.querySelector(':scope > ol.parts') || t.querySelector(':scope > ol.parts > li:not(:has(.choices))')));
+  // the answer controls of the page (teacher 2026-11-06 evening: numbers, choices, written answers, also of Itsearvio's
+  // tasks). Not answers: the self-assessment scales (sa-rate, rubric points), the "Olen tehnyt ratkaisun" ticks and the
+  // criteria an explanation is checked against (self-assessment marks), the solution editor's own fields.
+  const CONTROLS = 'form.check, fieldset.choice, fieldset.tf, fieldset.order, textarea, .experiment table.exp-table, .revise';   // an exercise's data table is part of its statement
+  const TASK = '#exercises li[id], #exercises div.practice-task[id], .activity[id]';
+  const hostOf = (el) => el.closest(TASK);
+  const own = (t, sel) => [...t.querySelectorAll(sel)].filter((x) => hostOf(x) === t && !x.closest('.pad, .pad-saved, .rich-text-editor, .sa-rate, .rubric, .palautus') && !(x.matches('textarea') && (x.readOnly || x.closest('.justify'))));
+  const lessonTasks = [...document.querySelectorAll('.activity[id]')].filter((a) => !a.closest('#exercises') && !a.matches('.act-exercises, .act-selfgoals') && own(a, CONTROLS).length);
+  const isEd = new Set(edTasks);
+  const tasks = [...new Set([...edTasks, ...lessonTasks, ...[...sec.querySelectorAll('li[id], div.practice-task[id]')].filter((t) => own(t, CONTROLS).length)])]
+    .filter((t) => isEd.has(t) || own(t, CONTROLS).length)
+    .sort((a, b) => (a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1));
+  // a lesson task's id in the file is "<chapter>:<activity id>" ("fy3-1:reflect"): the activity ids repeat from chapter
+  // to chapter, an exercise's id ("fy3-1-L1-02") does not
+  const taskId = (t) => (t.closest('#exercises') ? t.id : CHAPTER + ':' + t.id);
+  window.flSubmissionTasks = () => tasks.slice();
+  window.flSubmissionTaskId = taskId;
   if (!tasks.length) return;
-  const numOf = (li) => li.dataset.num || li.id;
+  const numOf = (li) => li.dataset.num || (li.querySelector(':scope > h3, :scope h3') || {}).textContent?.trim() || li.id;
   const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
   const say = (node, text, state) => { node.textContent = text; if (state) node.dataset.state = state; else delete node.dataset.state; };
   const fail = (text) => { const e = new Error(text); e.user = true; return e; };
@@ -125,8 +155,47 @@
     if (out.filter((i) => i.type === 'text').reduce((n, i) => n + i.text.length, 0) > LIMITS.text) throw fail(S('text_long', { where, n: LIMITS.text }));
     return out;
   };
+  // A piece of the page as plain text with its formulas as $LaTeX$ (KaTeX's annotation, or the source still unrendered
+  // in a closed box), without its controls and feedback.
+  const plainOf = (node) => {
+    if (!node) return '';
+    const c = node.cloneNode(true);
+    c.querySelectorAll('.katex').forEach((k) => { const a = k.querySelector('annotation'); k.replaceWith('$' + (a ? a.textContent : k.textContent) + '$'); });
+    c.querySelectorAll('input, select, textarea, button, output, .feedback, .ord-right, .sa-rate, script, style, svg, .visually-hidden').forEach((x) => x.remove());
+    return c.textContent.replace(/\s+/g, ' ').trim().slice(0, 2000);
+  };
+  const cellText = (td) => String(td.dataset.value ?? td.dataset.plain ?? plainOf(td)).trim().slice(0, 200);
+  const responsesOf = (t) => {
+    const out = [];
+    own(t, CONTROLS).forEach((x) => {
+      if (x.matches('form.check')) {
+        const v = (x.querySelector('input') || {}).value || '';
+        if (v.trim()) out.push(Object.assign({ type: 'number', value: v.trim().slice(0, 100) }, x.querySelector('.unit') ? { unit: plainOf(x.querySelector('.unit')).slice(0, 60) } : {}));
+      } else if (x.matches('fieldset.choice')) {
+        const r = x.querySelector('input[type=radio]:checked');
+        if (r) out.push({ type: 'choice', question: plainOf(x.querySelector('legend')), answer: plainOf(r.closest('label')), option: Number(r.value) || 0 });
+        const j = x.querySelector('.justify textarea');
+        if (j && j.value.trim()) out.push({ type: 'text', label: plainOf(j.closest('label')), text: j.value.trim().slice(0, LIMITS.text) });
+      } else if (x.matches('fieldset.tf')) {
+        const items = [...x.querySelectorAll('.tf-list > li')].map((li) => { const c = li.querySelector('input:checked'); return { text: plainOf(li.querySelector('.tf-text')), value: c ? c.value === '1' : null }; });
+        if (items.some((i) => i.value !== null)) out.push({ type: 'truefalse', items });
+      } else if (x.matches('fieldset.order')) {
+        const items = [...x.querySelectorAll('.order-list > li')].map((li) => { const v = li.querySelector('select').value; return { text: plainOf(li.querySelector('.ord-text')), rank: v ? Number(v) : null }; });
+        if (items.some((i) => i.rank !== null)) out.push({ type: 'order', items });
+      } else if (x.matches('.revise')) {
+        const r = x.querySelector('input[type=radio]:checked');
+        if (r) out.push({ type: 'choice', question: plainOf(x.querySelector('strong')), answer: plainOf(r.closest('label')), option: [...x.querySelectorAll('input[type=radio]')].indexOf(r) });
+      } else if (x.matches('textarea')) {
+        if (x.value.trim()) out.push({ type: 'text', label: (x.getAttribute('aria-label') || x.getAttribute('placeholder') || '').slice(0, 200), text: x.value.trim().slice(0, LIMITS.text) });
+      } else if (x.matches('.experiment table.exp-table')) {
+        const rows = [...x.querySelectorAll('tbody tr')].map((tr) => [...tr.children].map(cellText)).slice(0, 200);
+        if (rows.length) out.push({ type: 'table', head: [...x.querySelectorAll('thead th')].map((th) => String(th.dataset.plain || plainOf(th)).slice(0, 200)), rows });
+      }
+    });
+    return out;
+  };
   const canonical = (answers) => JSON.stringify(answers.map((a) => ({ task: a.task, status: a.status,
-    content: a.content.map((i) => (i.type === 'math' ? { type: 'math', latex: i.latex } : i)) })));
+    content: a.content.map((i) => (i.type === 'math' ? { type: 'math', latex: i.latex } : i)), responses: a.responses })));
   const sha256 = async (s) => [...new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(s)))].map((b) => b.toString(16).padStart(2, '0')).join('');
   const newId = () => [...crypto.getRandomValues(new Uint8Array(16))].map((b) => b.toString(16).padStart(2, '0')).join('');
   const remembered = () => { try { return JSON.parse(localStorage.getItem(STORE_KEY) || 'null'); } catch (e) { return null; } };
@@ -140,23 +209,26 @@
     const answers = [];
     for (const li of tasks) {
       const where = S('task', { n: numOf(li) });
-      let html;
-      try { html = await window.flPadStore.get(li.id); } catch (e) {
-        throw fail(e && e.code === 'corrupt' ? S('corrupt', { where }) : S('no_storage'));
+      let html = null;
+      if (isEd.has(li)) {
+        try { html = await window.flPadStore.get(li.id); } catch (e) {
+          throw fail(e && e.code === 'corrupt' ? S('corrupt', { where }) : S('no_storage'));
+        }
       }
       const content = html ? await contentOf(html, where) : [];
-      answers.push({ task: li.id, status: content.length ? 'answered' : 'empty', content });
+      const responses = responsesOf(li);
+      if (responses.filter((r) => r.type === 'text').reduce((n, r) => n + r.text.length, 0) + content.filter((i) => i.type === 'text').reduce((n, i) => n + i.text.length, 0) > LIMITS.text) throw fail(S('text_long', { where, n: LIMITS.text }));
+      answers.push({ task: taskId(li), status: content.length || responses.length ? 'answered' : 'empty', content, responses });
     }
     const images = answers.reduce((n, a) => n + a.content.filter((i) => i.type === 'image').length, 0);
     if (images > LIMITS.images) throw fail(S('images', { n: images, max: LIMITS.images }));
-    const self = VERSION === 2 ? selfItems() : null;
-    const sha = await sha256(self ? JSON.stringify({ answers: JSON.parse(canonical(answers)), selfassessment: self }) : canonical(answers));
+    const self = goals();
+    const sha = await sha256(JSON.stringify({ answers: JSON.parse(canonical(answers)), selfassessment: self }));
     const prev = remembered();
     const same = !!(prev && prev.sha === sha && /^[0-9a-f]{32}$/.test(prev.id || ''));
     const id = same ? prev.id : newId();
     const file = { format: FORMAT, version: VERSION, chapter: CHAPTER, lang: LANG, submission_id: id, exported: new Date().toISOString(),
-      includes: 'solution-editor', content_sha256: sha, answers };
-    if (self) file.selfassessment = { items: self };
+      includes: 'answers', content_sha256: sha, answers, selfassessment: { goals: self } };
     const text = JSON.stringify(file);
     const size = new TextEncoder().encode(text).length;
     if (size > LIMITS.file) throw fail(S('file_big', { mb: (size / 1e6).toFixed(1).replace('.', ','), max: LIMITS.file / 1e6 }));

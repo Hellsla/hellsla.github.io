@@ -300,8 +300,8 @@
     "sa_c": "Osaan osittain, mutta epävarmuutta on vielä",
     "sa_d": "Tarvitsen vielä harjoitusta ja aikaa tämän ymmärtämiseen",
     "sa_x": "En ole vielä harjoitellut tätä",
-    "sa_goals_title": "Arvioi vielä, mitä opit",
-    "sa_goals_lead": "Itsearviosi tulee mukaan luvun tehtävien palautukseen.",
+    "sa_goals_title": "Arvioi, mitä opit",
+    "sa_goals_lead": "Nämä tavoitearviot tulevat mukaan luvun tehtävien palautukseen.",
     "sa_goal_prefix": "Opin",
     "sa_x_short": "Ei vielä"
   },

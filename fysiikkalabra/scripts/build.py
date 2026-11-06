@@ -111,9 +111,10 @@ def submission_forms():
 FORMS = submission_forms()
 
 
-# Guided self-assessment (teacher 2026-11-06, from his 2018 team sheet): in Tarkista osaamisesi every task and, at the
-# end, the chapter's goals get a level a-d or x (scripts/inquiry.py sa_fieldset, templates/inquiry.js part 8); the
-# levels and their history go into the same submission file (templates/palautus.js). FY3 first, then FY1-FY8.
+# Guided self-assessment (teacher 2026-11-06, from his 2018 team sheet): in Itsearvio (#tarkista) the chapter's goals
+# first and then every task get a level a-d or x (scripts/inquiry.py sa_fieldset, templates/inquiry.js part 8), kept on
+# the student's device; the submission file carries only the goals' latest levels (templates/palautus.js, version 3,
+# teacher 2026-11-06 evening). FY3 first, then FY1-FY8.
 SELF_ASSESS_COURSES = {"FY1", "FY2", "FY3", "FY4", "FY5", "FY6", "FY7", "FY8", "FY9"}   # teacher 2026-11-06: every chapter with the download button, then the review course FY9
 
 
@@ -133,7 +134,7 @@ def forms_title(): return T("site.returns_title", period=FORMS["period"], year=F
 def return_title(code):
     """A course's name in this language on the Palautukset page: a curriculum course, or the local review course FY9."""
     if code in courses.codes(): return COURSES.get(code, {}).get("title") or courses.course(code)["title"]
-    return ((local_courses.load(T.lang).get(code) or {}).get("title")) or local_courses.load()[code]["title"]
+    return ((local_courses.load(T.lang).get(code) or {}).get("title")) or (local_courses.load().get(code) or {}).get("title") or code   # a copy without the local courses (test_i18n)
 
 
 def forms_page_body():

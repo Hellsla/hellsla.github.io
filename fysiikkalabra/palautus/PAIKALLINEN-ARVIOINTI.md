@@ -42,10 +42,10 @@ samanlainen, joten kaikki kielet arvioidaan samalla sivulla.
    CSV ja varmuuskopio.
 4. **Kooste** (ylhäällä): opiskelijat aakkosjärjestyksessä ja sarakkeet **Tehty** (tehtäviä, joihin on ratkaisu / tehtäviä),
    **Tarkistamatta** (tehtyjä ilman pisteitä), **Pisteet** (summa / enimmäispisteet) ja **Itsearvio** (keskiarvo,
-   4 = osaan niin hyvin, että voisin opettaa kaverille … 1 = tarvitsen vielä harjoitusta; valinnaiset tehtävät ja *Ei vielä*
-   eivät ole mukana). Ylhäällä oleva **Luvut**-valinta (mistä luvusta mihin) rajaa koosteen, tehtävät ja sormenjäljen.
-   **Osaamisen sormenjälki** näyttää koko ryhmän itsearviot yhdessä taulukossa: rivit ovat kohdat luvuittain, sarakkeissa
-   opiskelijat. Valkoinen = ei vastattu, harmaa = en ole vielä opiskellut. Koko teksti näkyy hiiren alla. Sarakkeen otsikko järjestää taulukon (uusi napsautus kääntää järjestyksen). Luvut
+   4 = osaan niin hyvin, että voisin opettaa kaverille … 1 = tarvitsen vielä harjoitusta; luvun tavoitearvioista,
+   *En ole vielä harjoitellut* ei ole mukana). Ylhäällä oleva **Luvut**-valinta (mistä luvusta mihin) rajaa koosteen, tehtävät ja sormenjäljen.
+   **Osaamisen sormenjälki** näyttää koko ryhmän tavoitearviot yhdessä taulukossa: rivit ovat luvun tavoitteet luvuittain, sarakkeissa
+   opiskelijat. Valkoinen = ei vastattu, harmaa = en ole vielä harjoitellut. Koko teksti näkyy hiiren alla. Sarakkeen otsikko järjestää taulukon (uusi napsautus kääntää järjestyksen). Luvut
    lasketaan opiskelijan uusimmasta hyväksytystä palautuksesta. Palkit näyttävät tehdyt tehtävät ja pisteet suhteessa
    enimmäismäärään, opiskelijoittain ja koko ryhmälle (Kooste-otsikon alla).
 5. **Tehtävät**: jokainen luku on oma laatikkonsa, ja ne luvut, joista on palautuksia, ovat auki. Valitse tehtävä ja
