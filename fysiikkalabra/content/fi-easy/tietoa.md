@@ -30,7 +30,7 @@ Pedagogiset ratkaisut ja vastuu sisällöistä ovat kuitenkin minulla. Materiaal
 
 ## Tekijä
 
-Olen **Lauri Hellsten**. Olen fysiikan, kemian ja matematiikan opettaja Espoosta. Olen työskennellyt pitkään luonnontieteiden opetuksessa. Olen myös kehittänyt pitkään digitaalisia oppimateriaaleja.
+Olen **Lauri Hellsten**. Olen fysiikan ja matematiikan opettaja Espoosta. Olen työskennellyt pitkään luonnontieteiden opetuksessa. Olen myös kehittänyt pitkään digitaalisia oppimateriaaleja.
 
 Ruukkilabra on oma oppimateriaaliprojektini. Sen lähtökohta on Kiviruukin lukion tuleva opetus. Materiaali on silti tarkoitettu myös muille opettajille ja opiskelijoille.
 
