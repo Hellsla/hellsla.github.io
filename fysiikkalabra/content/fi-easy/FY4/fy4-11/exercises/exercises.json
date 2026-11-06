@@ -246,7 +246,7 @@
         "reasoning",
         "concept"
       ],
-      "text": "Törmäyskokeissa käytetään samaa vyöhön kiinnitettyä koehenkilönukkea (esimerkkiarvot).\n\nKoe A: vanha auto törmää jäykkään esteeseen nopeudella $25\\,\\text{km/h}$. Nukke pysähtyy ajassa $0{,}030\\,\\text{s}$.\n\nKoe B: uusi auto törmää samaan esteeseen nopeudella $50\\,\\text{km/h}$. Autossa on rypistyvä keula eli keula, joka painuu kasaan, ja turvatyyny. Nukke pysähtyy ajassa $0{,}12\\,\\text{s}$.\n\nMiten nukkeen kohdistuva keskimääräinen voima $F_\\text{ka}$ muuttuu kokeesta A kokeeseen B?",
+      "text": "Törmäyskokeissa käytetään samaa vyöhön kiinnitettyä koehenkilönukkea (esimerkkiarvot).\n\nKoe A: vanha auto törmää jäykkään esteeseen nopeudella $25\\,\\text{km/h}$. Nukke pysähtyy ajassa $0{,}030\\,\\text{s}$.\n\nKoe B: uusi auto törmää samaan esteeseen nopeudella $50\\,\\text{km/h}$. Autossa on rypistyvä keula eli auton etuosa, joka painuu kasaan törmäyksessä, ja turvatyyny. Nukke pysähtyy ajassa $0{,}12\\,\\text{s}$.\n\nMiten nukkeen kohdistuva keskimääräinen voima $F_\\text{ka}$ muuttuu kokeesta A kokeeseen B?",
       "answer": "Voima pienenee puoleen.",
       "unit": "",
       "tolerance": 0.02,
