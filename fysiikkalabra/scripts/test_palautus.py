@@ -69,10 +69,13 @@ srv = http.server.ThreadingHTTPServer(("127.0.0.1", 0), functools.partial(Quiet,
 threading.Thread(target=srv.serve_forever, daemon=True).start()
 BASE = f"http://127.0.0.1:{srv.server_port}/"
 
-# static: the script is on the trial page only
+# static: the script is on the FY3 chapter pages only
 pages_with = sorted(p.relative_to(SITE).as_posix() for p in SITE.rglob("*.html") if "palautus.js" in p.read_text(errors="ignore"))
-fy3 = sorted(p.name for p in SITE.glob("fy3-*.html") if re.fullmatch(r"fy3-\d+\.html", p.name))
-expect("palautus.js is loaded on every Finnish FY3 chapter page and nowhere else", len(fy3) >= 16 and pages_with == fy3, pages_with)
+chapters = sorted(p.name for p in SITE.glob("fy*-*.html") if re.fullmatch(r"fy[1-8]-\d+\.html", p.name))
+want = sorted(f"{d}{n}" for d in ("", "en/", "fi-easy/") for n in chapters if (SITE / d / n).is_file())   # teacher 2026-11-06: also English (and Selkeä suomi), every course FY1-FY8
+expect("palautus.js is loaded on every FY1-FY8 chapter page (fi, en, fi-easy) and nowhere else", len([c for c in chapters if c.startswith("fy3-")]) >= 16 and {c.split("-")[0] for c in chapters} == {f"fy{i}" for i in range(1, 9)} and pages_with == want, sorted(set(pages_with) ^ set(want)))
+for i in range(1, 9):
+    expect(f"FY{i}: its own local grading page palautus/arviointi-fy{i}.html", (ROOT / f"palautus/arviointi-fy{i}.html").is_file() and f'"id": "FY{i}"' in (ROOT / f"palautus/arviointi-fy{i}.html").read_text())
 
 OPEN = "document.querySelectorAll('#exercises details.level').forEach((d) => { d.open = true; })"
 
@@ -134,6 +137,18 @@ with sync_playwright() as p:
     secs = pg.evaluate("[...document.querySelectorAll('main .return-course')].map((s) => [s.querySelector('h2').textContent.split(' ')[0], s.querySelectorAll('a.return-form').length, s.querySelectorAll('.return-none').length])")
     expect("Palautukset page: every course FY1-FY8 in order, a grey placeholder where a course has no forms (teacher 2026-11-06)", [c for c, *_ in secs][:8] == [f"FY{i}" for i in range(1, 9)] and all((n > 0) != (e > 0) for _, n, e in secs) and dict((c, n) for c, n, _ in secs).get("FY3", 0) >= 1, secs)
     expect("Palautukset page loads nothing from Google (links only)", not pg.evaluate("[...document.querySelectorAll('script[src],link[href],img[src],iframe')].some((e) => /google|gle/.test(e.src || e.href || ''))"))
+    # English (teacher 2026-11-06: "onhan nämä samat painikkeet myös EN julkaisussa?") and Selkeä suomi
+    for lang, dl, ret in (("en", "Download all solutions", "Submit"), ("fi-easy", "Lataa kaikki ratkaisut", "Palauta")):
+        pg.goto(BASE + f"{lang}/fy3-4.html"); pg.evaluate(OPEN)
+        row = pg.evaluate("[...document.querySelectorAll('#exercises .split-head > button.palautus-btn, #exercises .split-head > a.palautus-link')].map((e) => [e.textContent, e.getAttribute('href')])")
+        expect(f"{lang}: the heading row has '{dl}' and '{ret}' (to palautukset.html)", row == [[dl, None], [ret, "palautukset.html"]], row)
+        pg.goto(BASE + f"{lang}/palautukset.html")
+        links = pg.evaluate("[...document.querySelectorAll('main a.return-form')].map((a) => [a.textContent, a.getAttribute('href')])")
+        expect(f"{lang}: Palautukset page in its language with the same form links", ["FY3.2", "https://forms.gle/1JEQYSTidBPETrxbA"] in links and pg.evaluate("document.documentElement.lang") == ("en" if lang == "en" else "fi") and (lang != "en" or pg.inner_text("h1").startswith("Submissions")), links)
+    pg.goto(BASE + "en/fy3-1.html"); pg.evaluate(OPEN)
+    name, fe = download(pg)
+    expect("en: the file is fy3-1.ratkaisut.json with lang 'en' and the same task ids as Finnish (one grading page for both)", name == "fy3-1.ratkaisut.json" and fe.get("lang") == "en" and fe.get("chapter") == "fy3-1" and [a["task"] for a in fe["answers"]][:1] == ["fy3-1-L1-01"], {k: v for k, v in fe.items() if k != "answers"})
+    expect("en: the status after the download is English", pg.inner_text(".palautus-status").startswith("Submit the downloaded file"), pg.inner_text(".palautus-status"))
     pg.goto(BASE + "fy3-1.html"); pg.evaluate(OPEN)
     expect("no separate image button (Ctrl+V only)", pg.locator(".pad-image").count() == 0)
     tasks = pg.evaluate("[...document.querySelectorAll('#exercises li[id]')].filter((li) => li.querySelector(':scope > .task')).map((li) => li.id)")
