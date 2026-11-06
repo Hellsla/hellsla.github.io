@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 58ceb802ed0675d7
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 7790a67c91213848
+Round: 1
 
 ## Blocking
 (none)
-
-## Fixed
-(none needed)
 
 ## Polish
 (none)
 
 ## Checked
-Opened the new-task screenshots (L1, L2, L3 at 1280 and the 390 stage). Task texts, data tables with captions, choices and answer boxes render cleanly; maths and units are set as in fi (decimal comma in text); table columns and captions are short and fit at phone width; no overflow, no leftover Finnish labels, solutions show translated voimakuvio labels. Nothing visual changed by the text edits.
+- fy4-13-L2-08 (fi-easy) at 390 px, feedback and solution open (two-stage answer, boxed answer, Find/Principle/Model answer), screenshot read in full; measured after page scripts: scrollWidth 390, no clipped element outside a scroll box, no .kx-wide needed.
+- Units, decimal sign, LaTeX labels and vectors checked in the render.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

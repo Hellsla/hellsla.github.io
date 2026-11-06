@@ -189,3 +189,32 @@
 **Sijoitus:** $t_k = \dfrac{2{,}42\,\text{m/s}}{0{,}81\,\text{m/s}^2} \approx 2{,}99\,\text{s}$. Etäisyys on $s = \dfrac{(2{,}42\,\text{m/s})^2}{2 \cdot 0{,}81\,\text{m/s}^2} = \dfrac{5{,}86\,\text{m}^2/\text{s}^2}{1{,}62\,\text{m/s}^2} \approx 3{,}61\,\text{m}$. c) Kuvaajia ei piirretä vastauslaatikkoon, vaan ne kuvataan sanoin alla.
 **Vastaus:** Kärry ehtii noin $3{,}6\,\text{m}$ lähtöpisteestä ylöspäin, kaksi merkitsevää numeroa, koska kiihtyvyys ja alkunopeus on sovitettu hajonneesta aineistosta. c) $(t,a)$-kuvaaja on vaakasuora suora arvossa $a \approx -0{,}81\,\text{m/s}^2$ koko aikavälin ajan, koska kiihtyvyys on vakio ja osoittaa alas radalla myös käännöshetkellä. $(t,x)$-kuvaaja on alaspäin aukeava paraabeli, joka lähtee origosta, nousee aluksi jyrkästi ja loivenee, saa huippunsa $x \approx 3{,}6\,\text{m}$ hetkellä $t \approx 3{,}0\,\text{s}$ (tangentti vaakasuora, koska $v = 0$) ja laskee sen jälkeen; kärry palaa lähtöpisteeseen hetkellä $2\,t_k \approx 6{,}0\,\text{s}$, joten välillä $0 \ldots 5{,}0\,\text{s}$ kuvaaja on vielä positiivinen.
 **Järkevyys:** Nousun keskinopeus on $2{,}42\,\text{m/s} : 2 = 1{,}21\,\text{m/s}$, ja $1{,}21\,\text{m/s} \cdot 2{,}99\,\text{s} \approx 3{,}6\,\text{m}$. Aineiston viimeinen nopeus $-0{,}83\,\text{m/s}$ on lähellä sovituksen arvoa $2{,}42 - 0{,}81 \cdot 4{,}0 \approx -0{,}82\,\text{m/s}$, ja aineisto sisältää käännöshetken $t \approx 3{,}0\,\text{s}$ ($v \approx 0$). Kiihtyvyys $0{,}81\,\text{m/s}^2$ on loivalle kaltevuudelle uskottava: se vastaa kaltevuuskulmaa, jossa $g \sin\alpha \approx 0{,}81\,\text{m/s}^2$, eli $\alpha \approx 5\,{}^\circ$.
+
+## fy4-2-L2-08
+**Kysytty:** miten pyöräilijän jarrutusmatka $s$ muuttuu, kun alkunopeus on sama $8{,}0\,\text{m/s}$ mutta kiihtyvyyden suuruus pienenee arvosta $4{,}0\,\text{m/s}^2$ arvoon $2{,}0\,\text{m/s}^2$.
+**Periaate:** Jarrutus on tasaista, joten kiihtyvyys on vakio ja nopeus pienenee joka sekunti saman verran, $v = v_0 + a\,t$. Valitaan liikkeen suunta positiiviseksi, jolloin jarrutuksen kiihtyvyys on negatiivinen. Jarrutusmatka on $(t, v)$-kuvaajan ja aika-akselin väliin jäävä pinta-ala, koska nopeus on koko ajan positiivinen: kolmio, jonka korkeus on alkunopeus $v_0$ ja leveys jarrutusaika $t$, eli $s = \tfrac{1}{2}\,v_0\,t$. Matka riippuu siis sekä alkunopeudesta että siitä, kuinka kauan pysähtyminen kestää.
+**Mallivastaus:** Jarrutusmatka kasvaa kaksinkertaiseksi. Pysähtyessä $v = 0$, joten jarrutusaika on $t = \dfrac{0 - v_0}{a}$.
+
+Kuiva tie: $t_1 = \dfrac{0 - 8{,}0\,\text{m/s}}{-4{,}0\,\text{m/s}^2}$, eli $t_1 = 2{,}0\,\text{s}$
+
+Märkä tie: $t_2 = \dfrac{0 - 8{,}0\,\text{m/s}}{-2{,}0\,\text{m/s}^2}$, eli $t_2 = 4{,}0\,\text{s}$
+
+Jarrutusmatkat ovat kolmioiden pinta-aloja:
+
+$s_1 = \tfrac{1}{2} \cdot 8{,}0\,\text{m/s} \cdot 2{,}0\,\text{s}$, eli $s_1 = 8{,}0\,\text{m}$
+
+$s_2 = \tfrac{1}{2} \cdot 8{,}0\,\text{m/s} \cdot 4{,}0\,\text{s}$, eli $s_2 = 16\,\text{m}$
+
+Suhde on $16\,\text{m} : 8{,}0\,\text{m} = 2{,}0$. Puolet pienempi kiihtyvyys kaksinkertaistaa jarrutusajan, ja kun kolmion korkeus $v_0$ pysyy samana, myös pinta-ala kaksinkertaistuu.
+
+Vastaus ”pysyy samana” unohtaa, että matka riippuu myös jarrutusajasta. Vastaus ”pienenee puoleen” lukee riippuvuuden väärin päin: pienempi kiihtyvyys pidentää pysähtymistä. Vastaus ”kasvaa 4-kertaiseksi” kasvattaa matkaa ajan neliössä mutta unohtaa, että kiihtyvyys puolittuu samalla.
+
+Tarkistus kaavalla $x - x_0 = v_0\,t + \tfrac{1}{2}\,a\,t^2$, termit erikseen:
+
+$v_0\,t = 8{,}0\,\text{m/s} \cdot 4{,}0\,\text{s}$, eli $v_0\,t = 32\,\text{m}$
+
+$\tfrac{1}{2}\,a = \tfrac{1}{2} \cdot (-2{,}0\,\text{m/s}^2)$, eli $\tfrac{1}{2}\,a = -1{,}0\,\text{m/s}^2$
+
+$\tfrac{1}{2}\,a\,t^2 = -1{,}0\,\text{m/s}^2 \cdot (4{,}0\,\text{s})^2$, eli $\tfrac{1}{2}\,a\,t^2 = -16\,\text{m}$
+
+$s_2 = 32\,\text{m} - 16\,\text{m}$, eli $s_2 = 16\,\text{m}$

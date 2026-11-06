@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: f67dd6c2ff7ada86
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: c16723257aa2ad43
+Mode: delta, round 1
 
 ## Blocking
-(none)
-
-## Fixed
-(none needed: the plain Finnish already matched fi in every number and was clear)
+(ei)
 
 ## Polish
-(none)
+(ei)
 
 ## Checked
-- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) and the older ones compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags, data cells and every number in texts, choices, feedback (decimal point in en JSON and LaTeX) and solutions.md (618 numbers, 347 math fragments) identical.
-- Visual: table captions, column headers (Cone/Kartio, v_terminal/v_raja) and voimakuvio blocks match fi; screenshots of the new tasks checked, no overflow or untranslated labels.
-- Selkosuomi: short sentences, terms (ilmanvastus, rajanopeus, kokonaisvoima, kulmakerroin) used consistently and explained; instructions split into separate short sentences.
-- check_i18n.py fi-easy: 0 errors.
+Rendered at 390 px with every hint, feedback and solution open (own scratch script): page scrollWidth, clipped elements and inline KaTeX chains over 280 px measured; no KaTeX errors.
+- fy4-14-L1-09 (new, true/false statements): task split into situation and question, five statement rows with True/False pairs, solution with `\overline{G}`, `\overline{F}_\text{v}` and units upright; no overflow (scrollWidth 390), no clipped elements. Statement feedback is hidden until Answer, as designed.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 5 · accessibility 5

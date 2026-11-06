@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 0a4b561e503e708d
-Mode: full (translation review against the reviewed Finnish set)
+CONTENT-HASH: 7285f36aa764b4e1
+Mode: delta (translation review of the new task fy4-10-L2-08 against the reviewed Finnish set)
 Round 1
 
 ## Blocking
 (none)
 
 ## Fixed
-- solutions.md fy4-10-L3-04 (Principle): "törmäyksen lyhyen ajan, joten" was ungrammatical; now "törmäyksen lyhyen ajan aikana, joten".
+(none needed)
 
 ## Polish
 (none)
 
 ## Checked
-- Task texts keep the Finnish order: situation, data, then question; the answer-box sentence is kept in each task with a multi-part question.
-- Part labels a), b), c) and the guided self-assessment prompts (what error, what was wrong in the student's reasoning) are preserved.
-- Selkosuomi holds: short sentences, common words, terms (kimmoton, liikemäärä, impulssi) explained as in fi-easy lessons; long fi sentences were already split.
-- Model answers keep every step and the reasonableness checks of fi; nothing dropped.
+- fy4-10-L2-08: situation first, question last as its own sentence, as in fi; choices and feedback keep the misconception-naming style.
+- NOTES.md §12 fi-easy: shorter sentences, same physics; terms (liikemäärä, rajanopeus, hidastuvuus) kept and rajanopeus explained where first used.
+- Solution is followed step by step; the principle is explained, not only named; the reasonableness check is kept.

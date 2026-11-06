@@ -1,11 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 26f98b51fc745463
+CONTENT-HASH: e6499168f4b2e820
 
 ## Blocking
-- none
+(none)
 
 ## Polish
 - none
 
 ## Checked
-- batch delta review: "Luvun tärkeät käsitteet" panel captured from preview/fi-easy/fy4-12.html at 390 and 1280 px (the review/shots set has no capture of it) and opened — between the opening and stage 1, term bold over its explanation at 390 px, two-column at 1280 px, no clipping, no horizontal overflow, no KaTeX error; top-390 opened in a montage (read-aloud "Kuuntele" button under the title, layout intact).
+- Delta (only figures.json changed: new entries for exercise option figures pick-*; every pre-existing entry is byte-identical, only the old last entry gained a comma). Lesson page, figures and texts unchanged.
+- contact-1 sheet (top, sim, fig-1, fig-4, fig-6, fig-8, fig-10, fig-12 at 390); the new pick-* texts occur only in the exercise-set figures, none in a lesson figure; all lesson figures render as before, colours unchanged (force red, velocity blue).
+- Rebuilt via scripts/build.py fy4-12 (screenshot.py); page overflow at 390 px measured after the page scripts ran: scrollWidth 390 = clientWidth 390, no horizontal scroll.
+
+## Scores
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

@@ -175,6 +175,35 @@
 **Answer:** The greatest distance is $36\,\text{m}$, and it is at the moment $6.0\,\text{s}$. Two significant figures like the velocities.
 **Reasonableness:** From the difference of the positions: A is at the place $12.0\,\text{m/s} \cdot 6.0\,\text{s} = 72\,\text{m}$ and B at the place $\tfrac12 \cdot 2.0\,\text{m/s}^2 \cdot (6.0\,\text{s})^2 = 36\,\text{m}$, so the difference is $36\,\text{m}$. At the moments $4.0\,\text{s}$ and $8.0\,\text{s}$ the difference is $32\,\text{m}$ in both, so $36\,\text{m}$ is the greatest.
 
+## fy4-12-L2-08
+**Find:** which of the four $(t,v)$ graphs shows the velocities of car A and moped B for $0 \le t \le 10\,\text{s}$, when the car decelerates from the speed $20\,\text{m/s}$ with a deceleration of $2.0\,\text{m/s}^2$ and the moped moves uniformly at $12\,\text{m/s}$
+**Principle:** The motion of the moped is uniform, so its $(t,v)$ graph is a horizontal straight line. The deceleration of the car is constant, so its velocity decreases by the same amount every second, $v = v_0 + a\,t$, and the graph is a falling straight line. The positive direction is the direction of travel, so the acceleration of the car is $a = -2.0\,\text{m/s}^2$. The intersection of the velocity graphs is the moment when the velocities are equal, not the moment of meeting.
+**Model answer:** The correct one is graph 3. The velocity of the car is
+
+$v_\text{A} = v_{0\text{A}} + a\,t$
+
+$v_\text{A} = 20\,\text{m/s} - 2.0\,\text{m/s}^2 \cdot t$
+
+The car stops when $v_\text{A} = 0$:
+
+$t = \dfrac{20\,\text{m/s}}{2.0\,\text{m/s}^2}$, that is $t = 10\,\text{s}$
+
+The velocities are equal when $v_\text{A} = 12\,\text{m/s}$:
+
+$t = \dfrac{20\,\text{m/s} - 12\,\text{m/s}}{2.0\,\text{m/s}^2}$, that is $t = 4.0\,\text{s}$
+
+Graph 3 passes through the points $(0;\ 20\,\text{m/s})$, $(4.0\,\text{s};\ 12\,\text{m/s})$ and $(10\,\text{s};\ 0)$. The meeting at the moment $8.0\,\text{s}$ does not show as the intersection of the velocity graphs. Check of the positions at the moment $t = 8.0\,\text{s}$:
+
+$x_\text{A} = v_{0\text{A}}\,t + \tfrac{1}{2}\,a\,t^2$
+
+$x_\text{A} = 160\,\text{m} - 64\,\text{m}$, that is $x_\text{A} = 96\,\text{m}$
+
+$x_\text{B} = 12\,\text{m/s} \cdot 8.0\,\text{s}$, that is $x_\text{B} = 96\,\text{m}$
+
+In graph 2 the intersection is at the moment $8.0\,\text{s}$, which confuses the same velocity with the meeting. In graph 1 the velocity decreases along a curve, although the velocity of a uniformly decelerating body is a straight line. In graph 4 the car starts with the velocity of the moped, as if the same place meant the same velocity.
+
+**Reading the graph:** From each graph we read the velocity of the car at the moments $0$, $4\,\text{s}$ and $10\,\text{s}$ and the height of the horizontal line of the moped. Only in graph 3 does the line of the car start at $20\,\text{m/s}$, intersect the line of the moped, $12\,\text{m/s}$, at $4\,\text{s}$ and end at zero at $10\,\text{s}$.
+
 ## fy4-12-L3-04
 **Given:** both $v_0 = 20\,\text{m/s}$; length of the truck $L_\text{T} = 12\,\text{m}$, length of the car $L_\text{c} = 5.0\,\text{m}$, initial gap (front – rear) $10\,\text{m}$; acceleration of the car $a = 1.5\,\text{m/s}^2$; velocity of the oncoming car $v_\text{o} = 20\,\text{m/s}$; speed limit $80\,\text{km/h}$
 **Find:** the duration of the passing $t$ and the distance $s_\text{c}$; the smallest distance $d$ in $\text{m}$; the final velocity compared with the limit

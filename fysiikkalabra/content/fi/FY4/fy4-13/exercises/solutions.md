@@ -397,3 +397,26 @@ Massojen summa on $3{,}634\,\text{kg}$, joten $m_{1,\text{ka}} = \dfrac{3{,}634\
 c) Kun $m_2 = 0{,}200\,\text{kg}$, $v = \dfrac{2 \cdot 0{,}80\,\text{m}}{0{,}96\,\text{s}} = 1{,}67\,\text{m/s}$.
 **Vastaus:** b) $0{,}91\,\text{kg}$, kaksi merkitsevää numeroa, koska neljä arvoa vaihtelee välillä $0{,}88$–$0{,}93\,\text{kg}$ eikä kolmas numero ole luotettava. c) Kun punnus osuu lattiaan, lanka löystyy eikä kärryyn vaikuta enää vaakasuuntaista voimaa. Ensimmäisen lain mukaan kärry jatkaa liikettä tasaisella nopeudella, noin $1{,}7\,\text{m/s}$, kunnes jokin muu voima vaikuttaa siihen.
 **Järkevyys:** Neljä massaa ovat $0{,}88$–$0{,}93\,\text{kg}$, eli ne poikkeavat keskiarvosta enintään $4\,\%$, ja ero on satunnaisvaihtelua, ei suuntautunutta. Tarkistus: $a = \dfrac{m_2 g}{m_1 + m_2} = \dfrac{0{,}200 \cdot 9{,}81}{1{,}109}\,\text{m/s}^2 = 1{,}77\,\text{m/s}^2$ on lähellä mitattua $1{,}74\,\text{m/s}^2$. Loppunopeus $1{,}67\,\text{m/s}$ on kaksinkertainen keskinopeuteen $s : t = 0{,}83\,\text{m/s}$ nähden, kuten tasaisesti kiihtyvässä liikkeessä pitääkin.
+
+## fy4-13-L2-08
+**Kysytty:** miten langan jännitysvoima $T$ muuttuu, kun kärryn ja punnuksen massat vaihdetaan keskenään, ja mikä perustelu selittää sen.
+**Periaate:** Kummallekin kappaleelle kirjoitetaan oma liikeyhtälö: kärrylle $T = m_1 a$ ja punnukselle $m_2 g - T = m_2 a$. Kevyt ja venymätön lanka sekä kevyt ja kitkaton väkipyörä antavat kappaleille saman kiihtyvyyden suuruuden $a$ ja saman jännitysvoiman $T$. Yhtälöistä saadaan $a = \tfrac{m_2}{m_1 + m_2}\,g$ ja $T = \tfrac{m_1 m_2}{m_1 + m_2}\,g$.
+**Mallivastaus:** Ensimmäisessä kokeessa $m_1 = 1{,}6\,\text{kg}$ ja $m_2 = 0{,}40\,\text{kg}$:
+
+$$\begin{aligned}
+&a = \frac{0{,}40\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{2{,}0\,\text{kg}} \\
+&\phantom{a} = 1{,}962\,\text{m/s}^2 \\
+&T = 1{,}6\,\text{kg} \cdot 1{,}962\,\text{m/s}^2 \\
+&\phantom{T} \approx 3{,}14\,\text{N}
+\end{aligned}$$
+
+Toisessa kokeessa $m_1 = 0{,}40\,\text{kg}$ ja $m_2 = 1{,}6\,\text{kg}$:
+
+$$\begin{aligned}
+&a = \frac{1{,}6\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{2{,}0\,\text{kg}} \\
+&\phantom{a} = 7{,}848\,\text{m/s}^2 \\
+&T = 0{,}40\,\text{kg} \cdot 7{,}848\,\text{m/s}^2 \\
+&\phantom{T} \approx 3{,}14\,\text{N}
+\end{aligned}$$
+
+Jännitysvoima pysyy siis samana, noin $3{,}1\,\text{N}$. Perustelu: kaavassa $T = \tfrac{m_1 m_2}{m_1 + m_2}\,g$ massojen tulo ja summa eivät muutu, kun massat vaihtavat paikkaa. Kiihtyvyys nelinkertaistuu, koska systeemiä kiihdyttävä punnuksen paino nelinkertaistuu, joten $T = m_1 a$ ei pienene, vaikka kärryn massa pienenee neljäsosaan. Kummassakin kokeessa $T$ on pienempi kuin punnuksen paino ($3{,}9\,\text{N}$ ja $15{,}7\,\text{N}$), kuten kiihtyvällä punnuksella pitääkin.

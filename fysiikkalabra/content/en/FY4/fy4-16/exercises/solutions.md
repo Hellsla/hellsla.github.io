@@ -345,3 +345,22 @@ v alas
 **Substitution:** a) The distances of the intervals are $18.95\,\text{m}$, $12.475\,\text{m}$, $8.625\,\text{m}$, $6.35\,\text{m}$, $5.00\,\text{m}$ and $4.225\,\text{m}$. The sum is $h = 55.625\,\text{m}$. b) The kinetic energies are $E_{\text{k},1} = \tfrac12\cdot 78.0\,\text{kg}\cdot(46.0\,\text{m/s})^2 = 82\,524\,\text{J}$ and $E_{\text{k},2} = \tfrac12\cdot 78.0\,\text{kg}\cdot(7.9\,\text{m/s})^2 = 2434\,\text{J}$, so $F_\text{d} = 78.0\,\text{kg}\cdot 9.81\,\text{m/s}^2 + \dfrac{82\,524\,\text{J} - 2434\,\text{J}}{55.625\,\text{m}} = 765.2\,\text{N} + 1439.8\,\text{N} = 2205\,\text{N}$. c) Between $3.0$ and $4.0\,\text{s}$ the speed decreases from $7.9\,\text{m/s}$ to $6.8\,\text{m/s}$, so $a = \dfrac{6.8 - 7.9}{1.0}\,\text{m/s}^2 = -1.1\,\text{m/s}^2$, that is, the acceleration points up, and $F_\text{d} = 78.0\,\text{kg}\cdot(9.81 + 1.1)\,\text{m/s}^2 = 851\,\text{N}$
 **Answer:** b) $2.21\,\text{kN}$ upwards, three significant figures like the mass $78.0\,\text{kg}$ and the speeds; a) $h = 55.6\,\text{m}$; c) the air resistance is larger than the weight, because the speed decreases and the acceleration points up.
 **Reasonableness:** The average air resistance is about $2.9$ times the weight $765\,\text{N}$, so the net force points up and the skydiver slows down. The time average from the equation of motion is smaller: the mean acceleration is $\dfrac{46.0 - 7.9}{3.0}\,\text{m/s}^2 = 12.7\,\text{m/s}^2$, so $F_\text{d} \approx 78.0\,\text{kg}\cdot(9.81 + 12.7)\,\text{m/s}^2 \approx 1.76\,\text{kN}$. The difference is correct: the air resistance is greatest right after the opening, when the speed is high, and the skydiver then travels a long distance in a short time, so the average over distance is weighted towards the start. At the end the air resistance approaches the weight $765\,\text{N}$ ($851\,\text{N}$ is already close to it).
+
+## fy4-16-L2-08
+**Find:** which conclusion can be drawn on the basis of the table alone, when the uncertainty of a reading is $\Delta x = 1.0\,\text{m}$.
+**Principle:** The difference between two readings can be considered real only when the uncertainty intervals $x \pm \Delta x$ do not overlap, that is, when the difference is greater than $2\Delta x$. If the intervals overlap, the difference cannot be shown, but that does not prove that there is no difference. A dependence extended outside the measured range is an estimate, not a measurement result.
+**Model answer:** When the starting height doubles from $2.00\,\text{m}$ to $4.00\,\text{m}$, the distances grow by
+
+$40.2\,\text{m} - 19.6\,\text{m} = 20.6\,\text{m}$
+
+$39.5\,\text{m} - 20.3\,\text{m} = 19.2\,\text{m}$
+
+Both differences are about twenty times the uncertainty $1.0\,\text{m}$ and much larger than $2\Delta x = 2.0\,\text{m}$, so the uncertainty intervals are clearly separate, and therefore the starting height affects the distance. The other conclusions do not hold. The differences between the distances measured from the same height are
+
+$20.3\,\text{m} - 19.6\,\text{m} = 0.7\,\text{m}$
+
+$40.2\,\text{m} - 39.5\,\text{m} = 0.7\,\text{m}$
+
+They are smaller than $2\Delta x = 2.0\,\text{m}$, so the uncertainty intervals overlap, and the heavier sled travelled farther from the height $2.00\,\text{m}$ but a shorter distance from the height $4.00\,\text{m}$. So the data do not show that the heavier sled would travel farther. They do not prove, however, that the mass has no effect at all, because an effect of under $2\,\text{m}$ would be lost in the uncertainty. The result fits the model $x = \tfrac{h}{\mu}$, in which the mass cancels out.
+
+The distance $80\,\text{m}$ from the height $8.00\,\text{m}$ would be an estimate extended outside the measured range, and it assumes the same coefficient of friction for the whole distance, so it is not a certain result. The result is reasonable: the ratio $h : x \approx 0.10$ is almost the same in every row and is a reasonable coefficient of kinetic friction between snow and a sled.

@@ -112,6 +112,37 @@
           "feedback": "The situation is the other way round: the kinetic energy is positive and the potential energy is negative. In the formula $h$ is the height from the zero level, not the depth."
         }
       ]
+    },
+    {
+      "id": "fy4-7-L1-09",
+      "level": 1,
+      "text": "The mass of an object is $m$, its weight $G$, its speed $v$ and its height above the zero level $h$. The acceleration of free fall is $g$.\n\nWhich expression has the unit joule ($\\text{J}$), the unit of energy?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "$\\dfrac{G v^2}{2g}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "$\\tfrac{1}{2}\\,m v$",
+          "feedback": "The unit of the expression is $\\text{kg}\\cdot\\text{m/s}$, not joule. Kinetic energy does not grow in direct proportion to the speed but to the square of the speed, so the speed must be to the second power in the expression: $E_\\text{k} = \\tfrac{1}{2}\\,m v^2$."
+        },
+        {
+          "text": "$\\dfrac{G v^2}{2g}$",
+          "correct": true,
+          "feedback": "Correct: $\\tfrac{\\text{N}\\cdot\\text{m}^2/\\text{s}^2}{\\text{m/s}^2} = \\text{N}\\cdot\\text{m} = \\text{J}$. Since $G = mg$, the expression is the same as the kinetic energy $\\tfrac12 m v^2$."
+        },
+        {
+          "text": "$G g h$",
+          "feedback": "The unit of the expression is $\\text{N}\\cdot\\tfrac{\\text{m}}{\\text{s}^2}\\cdot\\text{m} = \\text{J}\\cdot\\tfrac{\\text{m}}{\\text{s}^2}$, not joule. Here weight and mass have been mixed up: $E_\\text{p} = mgh = Gh$, so $g$ would enter the calculation twice."
+        },
+        {
+          "text": "$\\dfrac{v^2}{2g}$",
+          "feedback": "The unit of the expression is $\\tfrac{\\text{m}^2/\\text{s}^2}{\\text{m/s}^2} = \\text{m}$, that is, it is the height to which a frictionless object rises from the speed $v$, like the rise height of the ramp in the theory of the chapter. The mass is missing, so it is not energy."
+        }
+      ]
     }
   ],
   "level2": [

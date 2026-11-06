@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 046a61ca3dfa2bb5
-Mode: translation review of the 8 new exercises (L1-06..08, L2-05..07, L3-04..05) against the reviewed Finnish
-Round: 1
+CONTENT-HASH: 5dc4b3d2d47c251a
+Round: 2
 
 ## Blocking
 (none)
 
-## Fixed
-(none)
-
 ## Polish
-(none)
+- [Minor] fy4-5 option figures — the label $\overline{N}$ sits tight against the box corner and arrow tip; fix: shift it a few px right (same in the older figures).
 
 ## Checked
-- Opened fy4-5-open-exercises-1280-9.png (L1-07 reasonableness and L1-08 with feedback): Finnish text, KaTeX and feedback box render correctly; no English left.
-- Layout of the choice list, feedback and solution blocks matches the Finnish page.
+- fy4-5-L1-09 (fi-easy) at 390 px, feedback and solution open (two-stage answer, boxed answer, Find/Principle/Model answer), screenshot read in full; measured after page scripts: scrollWidth 390, no clipped element outside a scroll box, no .kx-wide needed.
+- Units, decimal sign, LaTeX labels and vectors checked in the render.
+- Round 2: all four option figures (C, D, A, B) opened in the task render: forces red, velocity $\overline{v}$ in D blue and beside the body, none orange or red; arrows to scale, equal lengths in C; source colours checked (#c92a2a force, #1971c2 velocity).
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

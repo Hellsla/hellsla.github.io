@@ -160,6 +160,21 @@ s_2 &= 12.0\,\text{m} \cdot 1.8^2 \\
 **Answer:** a) The student treats the braking distance as proportional to the speed. The braking distance is, however, proportional to the square of the speed, because the braking time $t_\text{b} = \tfrac{v_0}{a}$ grows with the speed and at the same time the average speed also grows. So the ratio of the speeds must be raised to the second power. b) $38.9\,\text{m}$, three significant figures like the given braking distance $12.0\,\text{m}$.
 **Reasonableness:** A check through the deceleration: $a = \dfrac{(13.89\,\text{m/s})^2}{2 \cdot 12.0\,\text{m}} = 8.04\,\text{m/s}^2$, and at $90\,\text{km/h} = 25.0\,\text{m/s}$ the braking distance is $\dfrac{(25.0\,\text{m/s})^2}{2 \cdot 8.04\,\text{m/s}^2} = 38.9\,\text{m}$, as in the calculation. The student's result is more than $17\,\text{m}$ too small.
 
+## fy4-11-L2-08
+**Find:** how the average force $F_\text{avg}$ on the dummy changes when the collision speed increases from $25\,\text{km/h}$ to $50\,\text{km/h}$ and the stopping time from $0.030\,\text{s}$ to $0.12\,\text{s}$
+**Principle:** The dummy stops, so the magnitude of the change in its velocity $\Delta v$ is the collision speed. By the impulse–momentum principle $F_\text{avg}\,\Delta t = m\,\Delta v$, so the average force is proportional to the change in velocity and inversely proportional to the stopping time. The dummy is the same, so the mass $m$ does not change and is not needed in the comparison.
+**Model answer:** The average force is
+
+$F_\text{avg} = \dfrac{m\,\Delta v}{\Delta t}$
+
+The change in velocity becomes twice as large, because $50\,\text{km/h} : 25\,\text{km/h} = 2$. Then the change in momentum $m\,\Delta v$ is also twice as large.
+
+The stopping time becomes four times as long, because $0.12\,\text{s} : 0.030\,\text{s} = 4$.
+
+So the force changes by the factor $2 : 4 = 0.50$: in test B the force is half of the force in test A, that is, the force is halved.
+
+Reasonableness: for example, for a $75\,\text{kg}$ dummy in test A $\Delta v = 25 : 3.6\,\text{m/s} \approx 6.94\,\text{m/s}$, so $F_\text{avg} \approx 17\,\text{kN}$. In test B $\Delta v \approx 13.9\,\text{m/s}$, so $F_\text{avg} \approx 8.7\,\text{kN}$, half of the force in test A. In these example tests the stopping time becomes longer by more than the change in momentum grows. In the same car, double the speed doubles the average force if the stopping time stays the same. The braking distance depends on the square of the speed, but the average force in a collision depends directly on the speed.
+
 ## fy4-11-L3-01
 **Given:** limit $30\,\text{km/h}$, actual speed $v_0 = 40\,\text{km/h}$, reaction time $t_\text{r} = 1.0\,\text{s}$, deceleration $a = 9.0\,\text{m/s}^2$; the child is at a distance $d$ equal to the stopping distance from $30\,\text{km/h}$
 **Find:** the speed of the car $v$ at the child in $\text{km/h}$

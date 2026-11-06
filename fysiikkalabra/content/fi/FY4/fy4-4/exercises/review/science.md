@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 751013725298ea15
+CONTENT-HASH: 2af3ee47b4394d1d
 
 ## Blocking
 
 ## Polish
-- exercises.json L2-07 (new task): the physics is the same as L2-03 (a crane lowers a load that slows down, and T = m(g + a)). The error-analysis framing makes it a different exercise, but whether the set needs both is for pedagogy to judge.
-- exercises.json L3-05: the plan asks for a "(t, a)-hissikuvaaja", but the task gives a table plus text. A (t, a) graph would match the plan.
 
 ## Checked
-- Round 2: the round-1 items are fixed. L2-07 was replaced, L2-06 now answers a) and b) in its Vastaus, and L1-08 now asks for the snowmobile's mass only.
-- I recomputed all 20 answers in one script. All match answers.py (run with `python3 -I`) and the solutions.
-- L1-07: 170 g = 0,17 kg, so 68 N. L1-08: 0,60 kN = 600 N, so 400 kg. Both now have a real conversion step.
-- L2-06 (row 2,35 changed to 2,4): a fit through the origin gives F = 1,208 N (answer 1,2, tol 0,04). The products ma lie between 1,17 and 1,24 N.
-- L2-07 (new): the slab moves down and slows, so a points up. T = 820·(9,81 + 1,20) = 9028 N. The student's 7,06 kN = 820·8,61 is right for the wrong sign. The rendered diagram (T > G, a up, v down drawn separately) is right. Three significant figures fit 1,20 m/s².
-- L2-05, L3-04, L3-05 have not changed: m = 0,498 kg, F_μ = 1,19 N from the fit, N = 634 N.
-- L1-06 (MC): one correct option, and every distractor's feedback is right.
-- Scope: FY4.4 only; kinematics from fy4-2 appears at level 3 only.
-- The hash was the same at the start and at the end.
+- Round 2 (commit 684926b76, full packet regenerated): "Esimerkkiarvot:" dropped; the row-3 feedback now ends "Tarkista muut rivit samalla tavalla." and no longer points at the error; the solution's row-3 chain split into G = 18 kg · 9,81 m/s², eli G = 176,58 N ≈ 177 N; answers.py asserts a = 36 N / 18 kg = 2,0 m/s² (passes).
+- L2-08 physics recomputed: ΣF = 45 − 9,0 = 36 N; G = 176,58 ≈ 177 N; a = 2,0 m/s²; the shown 36/177 ≈ 0,20 is the only wrong line, so exactly one correct option. Rows 1–3 really correct.
+- The error is this chapter's warned mistake (massa vs. paino on a horizontal track); the "ei virhettä" feedback uses the lesson's words. Options parallel ("Rivi n: …"), not identifiable by form; the unit check N : N ≠ m/s² is a real check.
+- Data plausible (μ ≈ 0,05 for a cart); F_μ as elsewhere in this set; air resistance left out is stated. Scope: signed ΣF = ma from this chapter.
+- Solution complete, symbolic a = ΣF/m first, direction and significant figures stated.
+- All 21 answers: answers.py run once (python -I, exit 0) and compared: 19 numeric answers within tolerance; L1-06 and L2-08 one correct choice each.
+- Inline formulas (text only, not rendered): the longest is row 4's \dfrac chain (≈ 170 px), under 300 px at 390 px; the 360 px layout check passed.
+- Hash identical at start and end.

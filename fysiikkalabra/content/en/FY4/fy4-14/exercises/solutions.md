@@ -306,3 +306,16 @@ a 0
 **Substitution:** a) $F_\text{v} = 1.40 \cdot 10^{-5}\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 1.373 \cdot 10^{-4}\,\text{N}$. b) $v = \sqrt{2 \cdot 9.81\,\text{m/s}^2 \cdot 1500\,\text{m}} = \sqrt{29430\,\text{m}^2/\text{s}^2} = 171.55\,\text{m/s}$
 **Answer:** a) $1.37 \cdot 10^{-4}\,\text{N}$ upward. b) $172\,\text{m/s}$, three significant figures like the height $1.50\,\text{km}$. c) Without air resistance the speed would be about $620\,\text{km/h}$, over $20$ times the real $8.0\,\text{m/s}$, and the drop would be dangerous. As the drop falls, the air resistance grows as the speed grows until it is the size of the weight. Then the net force is zero and the speed stays constant. The weight of the drop is only about $1.4 \cdot 10^{-4}\,\text{N}$, so a small air resistance is enough to cancel it already at a small speed.
 **Reasonableness:** With the acceleration $g$ the drop would reach the speed $8.0\,\text{m/s}$ in the time $8.0\,\text{m/s} : 9.81\,\text{m/s}^2 = 0.82\,\text{s}$, that is within a few metres, even though the distance is $1500\,\text{m}$. In reality the air resistance limits the speed right at the start, so the drop travels almost the whole distance at a constant speed and falls for only about $190\,\text{s}$. The result $171.55\,\text{m/s}$ is of the right order of magnitude, since $\sqrt{2 \cdot 10 \cdot 1500} \approx 170$.
+
+## fy4-14-L1-09
+**Find:** which of the five statements about a volleyball thrown up and dropped from a height are true.
+**Principle:** The forces acting on the ball are the weight $\overline{G}$ and the air resistance $\overline{F}_\text{v}$, and the equation of motion is $\overline{G} + \overline{F}_\text{v} = m\overline{a}$. The air resistance points against the velocity and increases as the speed increases. At the terminal speed $F_\text{v} = G$, so the net force is zero.
+**Model answer:** The weight of the ball is
+
+$G = mg = 0.270\,\text{kg} \cdot 9.81\,\text{m/s}^2$, that is $G \approx 2.65\,\text{N}$.
+
+1 true: during the rise the air resistance points down together with the weight, so the net force is greater than $mg$ and the magnitude of the acceleration is greater than $9.81\,\text{m/s}^2$.
+2 false: at the highest point the speed is zero, so the air resistance is momentarily zero, but the weight $2.65\,\text{N}$ still acts and the acceleration is $g$ downwards.
+3 true: during the fall the air resistance increases with the speed, so the net force $mg - F_\text{v}$ and the acceleration decrease.
+4 false: at the terminal speed the net force is zero, so the air resistance is equal to the weight, that is $2.65\,\text{N}$, not greater.
+5 false: a lighter ball of the same size and shape has a smaller weight, and the air resistance cancels it already at a lower speed, so its terminal speed is lower.

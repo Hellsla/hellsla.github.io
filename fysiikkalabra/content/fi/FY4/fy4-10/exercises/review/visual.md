@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: fec4683407094eec
+CONTENT-HASH: f73c86410af7bc40
 
 ## Blocking
 
 ## Polish
-- [Minor] solutions.md fy4-10-L1-07 Sijoitus (open-exercises-1280-7) — "$-0{,}342857\,\text{m/s}$" shows six digits while the answer is 2 sig. figs — "$= -0{,}343\,\text{m/s}$", then Vastaus $0{,}34\,\text{m/s}$.
-- [Minor] solutions.md fy4-10-L1-08 Järkevyys (open-exercises-1280-9) — chains "$0{,}17 \cdot 1{,}8\,\text{kg}\cdot\text{m/s}$" have a bare $0{,}17$ (mass without kg) — "$0{,}17\,\text{kg} \cdot 1{,}8\,\text{m/s}$"; same in L3-04 Järkevyys ("$1100 \cdot 22{,}06 = 24\,266$", units only at the end).
-- [Minor] solutions.md fy4-10-L3-04 (open-exercises-L3-1280-7) — the block "Mallivastaus virheestä" has no error to model (it is a model/plausibility task) — rename to "Johtopäätös" or fold into Vastaus.
-- [Minor] L1-08 is tagged `concept` but is a calculation with a numeric answer; tag `reasoning` for consistency with the other numeric L1 tasks (for science/pedagogy).
-- [Minor] tables of L3-05 and L2-05 (open-exercises-L2-1280-6, L3-1280-7) — numeric column headers sit centred over right- or left-aligned values; align them (page CSS, developer).
+- [Minor] fy4-10-L2-08 choices — the rows are listed shuffled (Rivi 1, 4, 2, 3), which breaks the natural reading order of a line-by-line check — keep the choices in row order and the last option last.
+- [Minor] fy4-10-L2-08 task, Rivi 4 — "$\dfrac{0{,}24 - 0{,}060}{0{,}50}\,\text{m/s}$" has no units in the numerator — acceptable as the student's line, but "$0{,}24 - 0{,}060$ (kg·m/s)" would match rows 1 and 3.
+- [Minor] fy4-10-L2-08 inline chains — "$m_\text{A} v_\text{A} = m_\text{A} v_\text{A}' + m_\text{B} v_\text{B}'$" (282 px) and "$0{,}50\,\text{kg}\cdot 0{,}60\,\text{m/s} = \dots$" (290 px) fit the 300 px budget only just — no change needed.
 
 ## Checked
-- Round 2: re-opened the retaken captures of the changed solutions; L1-06 feedback and Periaate now say "muodonmuutoksissa sisäenergiaksi ja ääneksi", reads correctly; no new defects.
-- Text of L1-06…08, L2-05…07, L3-04…05 with data tables and complete solutions; numbers recomputed (energies, 73,4 %, 46,7 %, 79,4 km/h, 1,175 N all match the answer boxes).
-- open-exercises-1280-7, -9 (L1-06 solution, L1-07, L1-08), L2-1280-6, -8, -10 (L2-05 table and solution, L2-06 table and solution, L2-07), L3-1280-6, -7, -8 (L3-04 solution, L3-05 task, table and solution).
-- 1280 px only, no per-task 390 captures; 360/768/1280 layout checks clean per packet. No figures in the new tasks (tables only); no plain number+unit.
+- Own render of fy4-10-L2-08 at 390 px and 1280 px, "Laskussa ei ole virhettä" chosen so its feedback shows, solution open: no overflow, rows 1–4 set as separate paragraphs, primes and subscripts legible.
+- Source of the choices and solution: the correct row is not identifiable by form; distractor feedback targets the warned sign mistake; the correct feedback gives the reason only after answering (single-stage task); no plain number+unit.
+- Not opened: other tasks of the chapter (unchanged).
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

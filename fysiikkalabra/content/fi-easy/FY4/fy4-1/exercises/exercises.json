@@ -132,6 +132,41 @@
           "feedback": "Se pätisi vain, jos liike alkaisi origosta hetkellä nolla. Tässä alkupiste on $(2{,}0\\,\\text{s};\\, 5{,}0\\,\\text{m})$. Siksi pitää ottaa erotukset."
         }
       ]
+    },
+    {
+      "id": "fy4-1-L1-09",
+      "level": 1,
+      "text": "Leluauto liikkuu suoraa rataa pitkin $x$-akselilla. Hetkellä $t = 0$ se on paikassa $x_0 = 6{,}0\\,\\text{m}$.\n\nAuton nopeus on koko ajan $v = -1{,}0\\,\\text{m/s}$.\n\nMikä kuvaajista esittää leluauton paikan $x$ ajan $t$ funktiona hetkestä $0$ hetkeen $4{,}0\\,\\text{s}$?",
+      "kind": [
+        "graph",
+        "concept"
+      ],
+      "answer": "Kuvaaja C",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Kuvaaja A",
+          "figure": "fy4-1/pick-rising",
+          "feedback": "Tässä paikka kasvaa $1{,}0\\,\\text{m}$ joka sekunti, eli nopeus olisi $+1{,}0\\,\\text{m/s}$. Nopeuden etumerkki on jätetty huomiotta. Miinusmerkki kertoo suunnan, joten paikan pitää pienentyä."
+        },
+        {
+          "text": "Kuvaaja B",
+          "figure": "fy4-1/pick-origin",
+          "feedback": "Suoran kulmakerroin (jyrkkyys) $-1{,}0\\,\\text{m/s}$ on oikea, mutta suora alkaa origosta. Alkupaikka on unohtunut. Hetkellä $t = 0$ kuvaajan pitää olla kohdassa $x_0 = 6{,}0\\,\\text{m}$."
+        },
+        {
+          "text": "Kuvaaja C",
+          "figure": "fy4-1/pick-falling",
+          "correct": true,
+          "feedback": "Oikein: suora alkaa kohdasta $6{,}0\\,\\text{m}$ ja laskee $1{,}0\\,\\text{m}$ joka sekunti. Siksi hetkellä $4{,}0\\,\\text{s}$ paikka on $2{,}0\\,\\text{m}$."
+        },
+        {
+          "text": "Kuvaaja D",
+          "figure": "fy4-1/pick-flat",
+          "feedback": "Tämä on piirretty kuin $(t, v)$-kuvaaja. Arvo $-1{,}0$ on nopeus eikä paikka. $(t, x)$-kuvaajan vaakasuora suora tarkoittaisi, että auto on paikallaan kohdassa $-1{,}0\\,\\text{m}$."
+        }
+      ]
     }
   ],
   "level2": [

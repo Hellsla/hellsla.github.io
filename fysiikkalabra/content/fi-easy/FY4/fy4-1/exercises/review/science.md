@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 34e937c6b5c5fdb9
+CONTENT-HASH: d0bb3ff4b5264b29
 
 ## Blocking
 
-## Fixed
-- solutions.md fy4-1-L3-03: added the blank line before the next heading (as in the Finnish).
-- solutions.md fy4-1-L3-05: reasonableness fragment 'Luku 1,25 on.' -> 'Näin on, koska 1,25 on suurempi kuin yksi.'
-
 ## Polish
-- The Finnish needs no changes.
+- None.
+
+## Fixed
+- No text change needed in this translation.
 
 ## Checked
-Compared exercises.json (all 3 levels, 8 new tasks L1-06..08, L2-05..07, L3-04..05 included) against fi with a script: same keys, ids, kinds, answers, units, tolerances, correct flags, choice order, data table cells and captions; every number identical (decimal point in fi-easy JSON and LaTeX where applicable). solutions.md: all 20 blocks present, same numbers and same maths block by block; only the intended symbol renames differ. Recomputed the new answers: 0.61 m/s, 5.8 s (19.0/3.3), -1.5 m/s (-9.0/6.0), 0.80 m/s (1.25 * 0.64), 740 m (331/6.1 = 54 s). check_i18n shows no fy4-1 error.
+- New task fy4-1-L1-09 (graph choice: x0 = 6.0 m, v = -1.0 m/s, x(4.0 s) = 2.0 m; options A-D with figures pick-rising/origin/falling/flat) compared with the reviewed Finnish: same id, level, kind, answer, tolerance, correct flags, choice and reason order, every number and formula.
+- Recomputed the physics: x = 6.0 + (-1.0)(4.0) = 2.0 m; A grows, B starts at origin, D horizontal at -1 m, C only correct.
+- solutions.md block matches the Finnish step by step (same equations and numbers).
+- figures.json: all four pick-* descriptions give the same axes (t 0-5 s, x -6...12 m) and endpoints as the Finnish (6->10, 0->-4, 6->2, -1 flat) and match figures.py; none names the answer
+- check_i18n shows nothing for fy4-1; build.py fy4-1 succeeds.

@@ -1,19 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 7f3729c8c7c04c30
-Mode: full (translation review against the reviewed Finnish set)
+CONTENT-HASH: 056e48eb6dc95ff0
+Mode: delta (translation review of the new task fy4-12-L2-08 against the reviewed Finnish set)
 Round 1
 
 ## Blocking
 (none)
 
 ## Fixed
-- L2-05 text: "The data is sample data" -> "The data are sample data".
-- L3-04 text: "how long a distance does the car drive" -> "how far does the car drive"; "From the opposite lane comes a car" -> "A car comes from the opposite lane".
+(none needed): the translation already matched fi in physics, numbers and correct answers.
 
 ## Polish
 (none)
 
 ## Checked
-- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) compared with content/fi: ids, levels, kinds, answers, units, tolerances, correct flags, choices and feedback, data table cells, and all numbers equal (decimal point in en, comma in fi-easy text).
-- solutions.md: 887 numbers each in en, fi-easy and fi, identical in order; answers re-derived: L1-07 7.0 s, L2-05 7.0 s, L2-06 6.0 s, L2-07 36 m, L3-04 267 m, L3-05 52 m.
-- No Finnish left in en. check_i18n.py: 0 errors.
+- fy4-12-L2-08 (choice of the (t,v) graph for a braking car and a moped): all numbers, units, symbols and the answer/correct flags/true flags compared with fi by script; identical (decimal point).
+- Recomputed: car v = 20 - 2.0t, zero at 10 s, crosses 12 m/s at 4.0 s; x_A(8) = 96 m = x_B(8).
+- Option order, figure ids and feedback meaning match fi; each distractor feedback is physically right.
+- Option figures fy4-12/pick-oikea, -kohtaus, -alku, -kaari: the en descriptions in figures.json were compared with the Finnish descriptions (figures.py) and with the physics: pick-oikea 20 to 0 m/s, cross at 4 s; pick-kohtaus 20 to 10 m/s, cross at 8 s; pick-alku 12 to 0 m/s at 6 s; pick-kaari v = 20 - 0.2t^2, 15 m/s at 5 s, cross at sqrt(40) = 6.3 s. All match; no differences.
+- solutions.md section fy4-12-L2-08: structure (Find/Principle/Model answer) and every formula and number match fi.
+- check_i18n: no messages for fy4-12; build.py fy4-12 succeeded.

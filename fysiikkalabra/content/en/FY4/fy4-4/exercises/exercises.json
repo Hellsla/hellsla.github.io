@@ -230,6 +230,41 @@
       "unit": "N",
       "tolerance": 0.02,
       "fbd": "error"
+    },
+    {
+      "id": "fy4-4-L2-08",
+      "level": 2,
+      "text": "A shopping trolley whose mass with its goods is $18\\,\\text{kg}$ is pushed on a horizontal floor with a horizontal force of $45\\,\\text{N}$. The friction force of the floor on the trolley is $9.0\\,\\text{N}$, and air resistance is neglected. A student calculates the acceleration of the trolley.\n\nLine 1: the positive direction is the direction of the pushing force, so $\\Sigma F = F - F_\\mu$.\n\nLine 2: $\\Sigma F = 45\\,\\text{N} - 9.0\\,\\text{N}$, that is $\\Sigma F = 36\\,\\text{N}$.\n\nLine 3: $G = mg = 18\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2$, that is $G \\approx 177\\,\\text{N}$.\n\nLine 4: $a = \\dfrac{\\Sigma F}{G}$, that is $a = \\dfrac{36\\,\\text{N}}{177\\,\\text{N}} \\approx 0.20\\,\\text{m/s}^2$.\n\nCheck the calculation line by line. Choose the incorrect line, or the last option if the calculation has no error.",
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "answer": "Line 4: calculating the acceleration",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Line 1: expression for the net force",
+          "feedback": "Line 1 is correct: friction opposes the motion, so it points against the pushing force and gets a minus sign. Thinking that the line is wrong means thinking that all the forces acting on the object are added together with the same sign."
+        },
+        {
+          "text": "Line 2: calculating the net force",
+          "feedback": "Line 2 is correct: $45\\,\\text{N} - 9.0\\,\\text{N} = 36\\,\\text{N}$. Thinking that the line is wrong means thinking that the acceleration is determined by the pushing force $45\\,\\text{N}$ alone, although it is determined by the sum of all the forces."
+        },
+        {
+          "text": "Line 3: calculating the weight",
+          "feedback": "Line 3 is calculated correctly: $18\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\approx 177\\,\\text{N}$. The weight does not affect the horizontal motion, but calculating it is not an error. Check the other lines in the same way."
+        },
+        {
+          "text": "Line 4: calculating the acceleration",
+          "correct": true,
+          "feedback": "Correct, this line is wrong: the acceleration is the net force divided by the mass, not by the weight. The correct calculation is $a = 36\\,\\text{N} : 18\\,\\text{kg}$, that is $a = 2.0\\,\\text{m/s}^2$. The units reveal the error: $\\text{N} : \\text{N}$ does not give the unit $\\text{m/s}^2$."
+        },
+        {
+          "text": "There is no error in the calculation",
+          "feedback": "There is an error on line 4: the weight $G$ has been used in place of the mass $m$. On a horizontal floor the normal force cancels the weight, and the acceleration is reduced by the mass, not by the weight."
+        }
+      ]
     }
   ],
   "level3": [

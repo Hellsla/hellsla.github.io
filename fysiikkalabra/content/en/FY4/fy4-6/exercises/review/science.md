@@ -1,19 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: ea2b4cf4411293ca
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 81df7a544708cbb7
+Mode: full (translation review against the reviewed Finnish set; one new task fy4-6-L2-08)
+Round 2
 
 ## Blocking
 (none)
 
 ## Fixed
-(none needed: the English text already matched fi in every number)
+(none needed)
 
 ## Polish
 (none)
 
 ## Checked
-- All 14 tasks incl. the 8 new ones (L1-06..08, L2-05..07, L3-04..05) compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags (one correct option in L1-06, L1-08), data-table cells and every number in texts, choices and feedback are equal (decimal point in en JSON/LaTeX where fi has a comma).
-- solutions.md: all numbers equal to fi (992 each; voimakuvio code blocks keep the DSL syntax of fi).
-- Terms: weight, normal force, static/kinetic friction, limiting angle are correct and consistent; no Finnish prose left in en.
-- check_i18n.py en: 0 errors. No edits were needed.
+- New task fy4-6-L2-08, the ordering task L2-08 (friction of four boxes: B 30 N, C 44 N, A 59 N, D 1.2e2 N), compared with content/fi by script and by hand: same kind, answer, unit, tolerance, correct flags and every number in text, options, feedback and solution.
+- Recomputed from the task text: the answers and every intermediate value in solutions.md equal the reviewed Finnish (English decimal point and natural English).
+- Physics, conditions (ignored friction, air resistance or weight stated in the task) and notation equal to fi; no Finnish prose left in en.
+- The other tasks are unchanged from the reviewed set.
+- check_i18n.py shows nothing for fy4-6; build.py fy4-6 succeeds.

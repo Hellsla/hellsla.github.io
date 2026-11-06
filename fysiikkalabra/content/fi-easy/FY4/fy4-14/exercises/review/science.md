@@ -1,19 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: f67dd6c2ff7ada86
-Mode: full (translation review against the reviewed Finnish set)
+CONTENT-HASH: c16723257aa2ad43
+Mode: delta (translation review of the new task fy4-14-L1-09 against the reviewed Finnish set)
 Round 1
 
 ## Blocking
 (none)
 
 ## Fixed
-(none needed: the plain Finnish already matched fi in every number and was clear)
+(none needed): the translation already matched fi in physics, numbers and correct answers.
 
 ## Polish
 (none)
 
 ## Checked
-- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) and the older ones compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags, data cells and every number in texts, choices, feedback (decimal point in en JSON and LaTeX) and solutions.md (618 numbers, 347 math fragments) identical.
-- Science: every number, unit, answer, tolerance, correct flag and LaTeX fragment equals the Finnish; formulas untouched.
-- Selkosuomi: short sentences, terms (ilmanvastus, rajanopeus, kokonaisvoima, kulmakerroin) used consistently and explained; instructions split into separate short sentences.
-- check_i18n.py fi-easy: 0 errors.
+- fy4-14-L1-09 (five true/false statements about a volleyball (drag, terminal speed)): all numbers, units, symbols and the answer/correct flags/true flags compared with fi by script; identical (decimal comma {,}).
+- Recomputed: G = 0.270·9.81 = 2.65 N; truth values 1 T, 2 F, 3 T, 4 F, 5 F as in fi.
+- Option order, figure ids and feedback meaning match fi; each distractor feedback is physically right.
+- solutions.md section fy4-14-L1-09: structure (Find/Principle/Model answer) and every formula and number match fi.
+- check_i18n: no messages for fy4-14; build.py fy4-14 succeeded.

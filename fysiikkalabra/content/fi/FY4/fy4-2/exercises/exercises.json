@@ -276,6 +276,37 @@
           "feedback": "Kiihtyvyys voidaan määrittää suoraan mittauksista, esimerkiksi nopeuden muutoksesta ajassa. Laskeminen kulmasta ei kerro, mitä kärry todella tekee."
         }
       ]
+    },
+    {
+      "id": "fy4-2-L2-08",
+      "level": 2,
+      "text": "Pyöräilijä ajaa suoraa tietä nopeudella $8{,}0\\,\\text{m/s}$ ja jarruttaa tasaisesti pysähdyksiin.\n\nKuivalla asfaltilla kiihtyvyyden suuruus jarrutuksessa on $4{,}0\\,\\text{m/s}^2$.\n\nMärällä asfaltilla hän jarruttaa samasta nopeudesta, mutta kiihtyvyyden suuruus on $2{,}0\\,\\text{m/s}^2$.\n\nMiten jarrutusmatka muuttuu, kun tie on märkä?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "Kasvaa 2-kertaiseksi",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Kasvaa 4-kertaiseksi",
+          "feedback": "Tässä on huomattu, että jarrutusaika kaksinkertaistuu, ja matkan on ajateltu kasvavan ajan neliössä. Samalla kiihtyvyys kuitenkin puolittuu, joten matka kasvaa vain kaksinkertaiseksi: $8{,}0\\,\\text{m}$:stä $16\\,\\text{m}$:iin."
+        },
+        {
+          "text": "Kasvaa 2-kertaiseksi",
+          "correct": true,
+          "feedback": "Oikein: nopeus pienenee märällä tiellä $2{,}0\\,\\text{m/s}$ sekunnissa, joten pysähtyminen kestää $4{,}0\\,\\text{s}$ eikä $2{,}0\\,\\text{s}$. Jarrutusmatka kasvaa $8{,}0\\,\\text{m}$:stä $16\\,\\text{m}$:iin."
+        },
+        {
+          "text": "Pienenee puoleen",
+          "feedback": "Tässä riippuvuus on luettu väärin päin, ikään kuin jarrutusmatka olisi suoraan verrannollinen kiihtyvyyteen. Pienempi kiihtyvyys pienentää nopeutta hitaammin, joten pysähtyminen kestää kauemmin ja matkaa kertyy enemmän."
+        },
+        {
+          "text": "Pysyy samana",
+          "feedback": "Tässä on ajateltu, että jarrutusmatka riippuu vain alkunopeudesta. Alkunopeus on sama, mutta märällä tiellä nopeus pienenee $2{,}0\\,\\text{m/s}$ sekunnissa eikä $4{,}0\\,\\text{m/s}$, joten pysähtyminen kestää kaksi kertaa kauemmin."
+        }
+      ]
     }
   ],
   "level3": [

@@ -204,3 +204,24 @@ $$\begin{aligned}m &= \frac{8{,}64 \cdot 10^{11}\,\text{J}}{9{,}81\,\tfrac{\text
 **Vastaus:** $1{,}04 \cdot 10^{6}\,\text{m}^3$, kolme merkitsevää numeroa kuten korkeudessa $85{,}0\,\text{m}$ ja hyötysuhteessa $0{,}800$.
 **Mallivastaus kohtiin b ja c:** Pumpattu vesi $1{,}04 \cdot 10^{6}\,\text{m}^3$ on pienempi kuin yläaltaan tilavuus $1{,}20 \cdot 10^{6}\,\text{m}^3$, joten vesi mahtuu altaaseen ja allas täyttyy noin $86\,\%$:iin. Veteen varastoitunut energia on $0{,}800 \cdot 300\,\text{MWh} = 240\,\text{MWh}$. Teholla $40{,}0\,\text{MW}$ se riittäisi ajaksi $240\,\text{MWh} : 40{,}0\,\text{MW} = 6{,}00\,\text{h}$, jos turbiinin ja generaattorin häviöt jätetään huomiotta. Todellisuudessa häviöt lyhentävät aikaa. Pumppuvoimala sopii tuulivoiman rinnalle, koska tuulivoima on sääriippuvaa ja sen teho voi ylittää kulutuksen, kun taas vesivoima on hyvin säädettävää. Ylijäämäsähkö voidaan varastoida veden potentiaalienergiaksi ja muuttaa takaisin sähköksi, kun tuuli tyyntyy ja kulutus on suurempi kuin tuotanto.
 **Järkevyys:** Tarkistetaan potentiaalienergia: $1{,}036 \cdot 10^{9}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 85{,}0\,\text{m} = 8{,}64 \cdot 10^{11}\,\text{J}$, joka on $240\,\text{MWh}$. Kuutiometri vettä sitoo $85\,\text{m}$:n korkeudella noin $1000 \cdot 9{,}81 \cdot 85\,\text{J} = 0{,}83\,\text{MJ}$, joten $240\,\text{MWh} = 8{,}64 \cdot 10^{5}\,\text{MJ}$ vaatii noin $10^{6}$ kuutiometriä, kuten saatiin.
+
+## fy4-15-L2-08
+**Kysytty:** tuulivoimalan sähkötehon $P$ suuruusluokka.
+**Periaate:** Roottorin läpi virtaa sekunnissa ilmaa, jonka liike-energia on tuulen teho $\tfrac{1}{2}\rho A v^3$, ja voimala muuttaa siitä sähköksi osuuden $\eta$. Voimala ei saavuta nimellistehoaan, joten kaava $P = \tfrac{1}{2}\eta\rho A v^3$ kuvaa sitä. Nopeus on muunnettava yksikköön $\text{m/s}$, koska se on kaavassa kolmannessa potenssissa.
+**Mallivastaus:** Säde on $r = 100\,\text{m} : 2 = 50\,\text{m}$ ja $\eta = 0{,}40$. Tuulen nopeus muunnetaan yksikköön $\text{m/s}$, ja sitten lasketaan roottorin pyyhkäisemä pinta-ala ja sähköteho:
+
+$$\begin{aligned}
+&v = 36\,\text{km/h} \\
+&\phantom{v} = \dfrac{36\,000\,\text{m}}{3600\,\text{s}} \\
+&\phantom{v} = 10\,\text{m/s} \\
+&A = \pi r^2 = \pi \cdot (50\,\text{m})^2 \\
+&\phantom{A} \approx 7854\,\text{m}^2 \\
+&P = \tfrac{1}{2}\eta\rho A v^3 \\
+&\phantom{P} = 0{,}5 \cdot 0{,}40 \cdot 1{,}25\,\tfrac{\text{kg}}{\text{m}^3} \\
+&\qquad \cdot 7854\,\text{m}^2 \cdot \left(10\,\tfrac{\text{m}}{\text{s}}\right)^3 \\
+&\phantom{P} \approx 1{,}96 \cdot 10^{6}\,\text{W}
+\end{aligned}$$
+
+Sähköteho on suuruusluokaltaan $2\,\text{MW}$. Teho voidaan kirjoittaa muotoon $P = \eta \cdot \tfrac{1}{2}v^2 \cdot \rho A v$, jossa $\tfrac{1}{2}v^2$ on yhden ilmakilogramman liike-energia ja $\rho A v$ sekunnissa roottorin läpi virtaavan ilman massa. Molemmat kasvavat nopeuden mukana. Vaihtoehto $0{,}2\,\text{MW}$ syntyy, kun teho lasketaan verrannolliseksi neliöön $v^2$: mukana on vain liike-energia kilogrammaa kohti, ja massavirran kasvu unohtuu. Vaihtoehto $20\,\text{kW}$ syntyy, kun teho lasketaan verrannolliseksi nopeuteen $v$: mukana on vain massavirta, ja kilogrammaa kohti lasketun liike-energian kasvu unohtuu. Jos nopeus sijoitetaan lukuna $36$ muuntamatta, tulos on noin $47$ kertaa liian suuri, noin $90\,\text{MW}$.
+
+Tulos on järkevä. Tuulen teho on $P : \eta \approx 4{,}9\,\text{MW}$, ja siitä saadaan sähköksi alle puolet. Luvun esimerkissä $120\,\text{m}$:n roottori tuotti tuulen nopeudella $9{,}0\,\text{m/s}$ noin $2{,}3\,\text{MW}$, eli tulos on samaa suuruusluokkaa.

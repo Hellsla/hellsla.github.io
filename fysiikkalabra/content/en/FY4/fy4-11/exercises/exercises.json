@@ -238,6 +238,41 @@
       "answer": 38.9,
       "unit": "m",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-11-L2-08",
+      "level": 2,
+      "kind": [
+        "reasoning",
+        "concept"
+      ],
+      "text": "In crash tests the same test dummy fastened with a belt is used (example values).\n\nTest A: an old car hits a rigid obstacle at $25\\,\\text{km/h}$, and the dummy stops in $0.030\\,\\text{s}$.\n\nTest B: a new car with a crumple zone and an airbag hits the same obstacle at $50\\,\\text{km/h}$, and the dummy stops in $0.12\\,\\text{s}$.\n\nHow does the average force $F_\\text{avg}$ on the dummy change from test A to test B?",
+      "answer": "The force is halved.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The force becomes eight times as large.",
+          "feedback": "Here the force has been multiplied by the ratio of the times instead of divided by it, as if a longer stopping time increased the force. From the impulse–momentum principle $F_\\text{avg} = \\tfrac{m\\,\\Delta v}{\\Delta t}$, so the force is inversely proportional to the time."
+        },
+        {
+          "text": "The force becomes twice as large.",
+          "feedback": "Here only the doubling of the speed has been taken into account. The change in the dummy's momentum doubles, but it is spread over a time four times as long, so the force does not grow."
+        },
+        {
+          "text": "The force stays the same.",
+          "feedback": "The result comes from assuming that the force depends on the square of the speed like the braking distance: $2^2 : 4 = 1$. The average force is the change in momentum divided by the time, and momentum is proportional to the speed, not to its square."
+        },
+        {
+          "text": "The force is halved.",
+          "correct": true,
+          "feedback": "Correct: the change in momentum $m\\,\\Delta v$ doubles and the stopping time becomes four times as long, so the force changes by the factor $2 : 4 = 0.50$."
+        },
+        {
+          "text": "The force becomes a quarter.",
+          "feedback": "Here only the quadrupling of the time has been taken into account, as if the change in momentum were the same in both tests. For a dummy stopping from twice the speed the change in momentum is twice as large."
+        }
+      ]
     }
   ],
   "level3": [

@@ -14,6 +14,7 @@ a["fy4-9-L1-05"] = 0.15 / 0.0010                     # shuttlecock: F = I / Δt 
 # Level 1 additions (L1-06 is multiple choice: no number)
 a["fy4-9-L1-07"] = 36 / 20                           # curling stone from rest: v = I / m = 1,8 m/s
 a["fy4-9-L1-08"] = 1800 * (36 / 3.6)                 # van: 36 km/h = 10 m/s, p = m v = 18 000 kg·m/s
+# L1-09 is multiple choice (magnitude): hailstone F = m v / Δt = 0,020 · 20 / 0,0010 = 400 N; no number
 # Level 2: two steps, a conversion or a rearrangement
 a["fy4-9-L2-01"] = 1200 * (54 / 3.6) / 3.0 / 1000    # car braking to rest: F = m v1 / Δt = 6000 N = 6,0 kN
 a["fy4-9-L2-02"] = 0.046 * 70 / 0.50e-3 / 1000       # golf ball from rest: F = m v / Δt = 6440 N = 6,44 kN

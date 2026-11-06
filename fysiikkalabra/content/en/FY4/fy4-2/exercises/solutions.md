@@ -189,3 +189,32 @@
 **Substitution:** $t_k = \dfrac{2.42\,\text{m/s}}{0.81\,\text{m/s}^2} \approx 2.99\,\text{s}$. The distance is $s = \dfrac{(2.42\,\text{m/s})^2}{2 \cdot 0.81\,\text{m/s}^2} = \dfrac{5.86\,\text{m}^2/\text{s}^2}{1.62\,\text{m/s}^2} \approx 3.61\,\text{m}$. c) The graphs are not drawn in the answer box but described in words below.
 **Answer:** The cart gets about $3.6\,\text{m}$ upwards from the starting point, two significant figures, because the acceleration and the initial velocity have been fitted from scattered data. c) The $(t,a)$ graph is a horizontal line at $a \approx -0.81\,\text{m/s}^2$ for the whole interval, because the acceleration is constant and points down the track also at the turning moment. The $(t,x)$ graph is a downward-opening parabola that starts from the origin, rises steeply at first and flattens, has its peak at $x \approx 3.6\,\text{m}$ at $t \approx 3.0\,\text{s}$ (the tangent is horizontal, because $v = 0$) and falls after that; the cart returns to the starting point at $2\,t_k \approx 6.0\,\text{s}$, so in the range $0 \ldots 5.0\,\text{s}$ the graph is still positive.
 **Reasonableness:** The average velocity of the ascent is $2.42\,\text{m/s} : 2 = 1.21\,\text{m/s}$, and $1.21\,\text{m/s} \cdot 2.99\,\text{s} \approx 3.6\,\text{m}$. The last velocity of the data, $-0.83\,\text{m/s}$, is close to the value of the fit, $2.42 - 0.81 \cdot 4.0 \approx -0.82\,\text{m/s}$, and the data includes the turning moment $t \approx 3.0\,\text{s}$ ($v \approx 0$). The acceleration $0.81\,\text{m/s}^2$ is plausible for a gentle slope: it corresponds to an angle of inclination where $g \sin\alpha \approx 0.81\,\text{m/s}^2$, that is, $\alpha \approx 5\,{}^\circ$.
+
+## fy4-2-L2-08
+**Find:** how the braking distance $s$ of the cyclist changes when the initial speed is the same $8.0\,\text{m/s}$ but the magnitude of the acceleration decreases from $4.0\,\text{m/s}^2$ to $2.0\,\text{m/s}^2$.
+**Principle:** The braking is uniform, so the acceleration is constant and the speed decreases by the same amount every second, $v = v_0 + a\,t$. The direction of motion is chosen as positive, so the acceleration in braking is negative. The braking distance is the area between the $(t, v)$ graph and the time axis, because the speed is positive all the time: a triangle whose height is the initial speed $v_0$ and whose width is the braking time $t$, that is $s = \tfrac{1}{2}\,v_0\,t$. So the distance depends both on the initial speed and on how long stopping takes.
+**Model answer:** The braking distance becomes twice as long. When the cyclist stops, $v = 0$, so the braking time is $t = \dfrac{0 - v_0}{a}$.
+
+Dry road: $t_1 = \dfrac{0 - 8.0\,\text{m/s}}{-4.0\,\text{m/s}^2}$, that is $t_1 = 2.0\,\text{s}$
+
+Wet road: $t_2 = \dfrac{0 - 8.0\,\text{m/s}}{-2.0\,\text{m/s}^2}$, that is $t_2 = 4.0\,\text{s}$
+
+The braking distances are the areas of the triangles:
+
+$s_1 = \tfrac{1}{2} \cdot 8.0\,\text{m/s} \cdot 2.0\,\text{s}$, that is $s_1 = 8.0\,\text{m}$
+
+$s_2 = \tfrac{1}{2} \cdot 8.0\,\text{m/s} \cdot 4.0\,\text{s}$, that is $s_2 = 16\,\text{m}$
+
+The ratio is $16\,\text{m} : 8.0\,\text{m} = 2.0$. An acceleration half as large doubles the braking time, and when the height $v_0$ of the triangle stays the same, the area also doubles.
+
+The answer "stays the same" forgets that the distance also depends on the braking time. The answer "is halved" reads the dependence the wrong way round: a smaller acceleration makes stopping last longer. The answer "becomes 4 times as long" makes the distance grow with the square of the time but forgets that the acceleration is halved at the same time.
+
+Check with the formula $x - x_0 = v_0\,t + \tfrac{1}{2}\,a\,t^2$, term by term:
+
+$v_0\,t = 8.0\,\text{m/s} \cdot 4.0\,\text{s}$, that is $v_0\,t = 32\,\text{m}$
+
+$\tfrac{1}{2}\,a = \tfrac{1}{2} \cdot (-2.0\,\text{m/s}^2)$, that is $\tfrac{1}{2}\,a = -1.0\,\text{m/s}^2$
+
+$\tfrac{1}{2}\,a\,t^2 = -1.0\,\text{m/s}^2 \cdot (4.0\,\text{s})^2$, that is $\tfrac{1}{2}\,a\,t^2 = -16\,\text{m}$
+
+$s_2 = 32\,\text{m} - 16\,\text{m}$, that is $s_2 = 16\,\text{m}$

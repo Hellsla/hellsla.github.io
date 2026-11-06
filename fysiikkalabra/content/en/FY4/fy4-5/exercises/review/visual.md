@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: c0a8a9997259eb61
-Mode: translation review of the 8 new exercises (L1-06..08, L2-05..07, L3-04..05) against the reviewed Finnish
-Round: 1
+CONTENT-HASH: c323e17b0cdef469
+Round: 2
 
 ## Blocking
 (none)
 
-## Fixed
-(none)
-
 ## Polish
-(none)
+- [Minor] fy4-5 option figures — the label $\overline{N}$ sits tight against the box corner and arrow tip; fix: shift it a few px right (same in the older figures).
 
 ## Checked
-- Opened fy4-5-open-exercises-L2-1280-9.png (L2-06 solution) and fy4-5-open-exercises-L3-1280-9.png (L3-05 solution): English labels, decimal points, KaTeX display and free-body diagrams render correctly; no Finnish text visible.
-- Figure label "horizontal and vertical forces to different scales" is English; section labels are English.
-- The diagram symbols match the English text (G, N, F_mu, T, a, v).
+- fy4-5-L1-09 (en) at 390 px, feedback and solution open (two-stage answer, boxed answer, Find/Principle/Model answer), screenshot read in full; measured after page scripts: scrollWidth 390, no clipped element outside a scroll box, no .kx-wide needed.
+- Units, decimal sign, LaTeX labels and vectors checked in the render.
+- Round 2: all four option figures (C, D, A, B) opened in the task render: forces red, velocity $\overline{v}$ in D blue and beside the body, none orange or red; arrows to scale, equal lengths in C; source colours checked (#c92a2a force, #1971c2 velocity).
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

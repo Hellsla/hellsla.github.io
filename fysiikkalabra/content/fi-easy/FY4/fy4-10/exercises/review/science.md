@@ -1,21 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 0a4b561e503e708d
-Mode: full (translation review against the reviewed Finnish set)
+CONTENT-HASH: 7285f36aa764b4e1
+Mode: delta (translation review of the new task fy4-10-L2-08 against the reviewed Finnish set)
 Round 1
 
 ## Blocking
 (none)
 
 ## Fixed
-- solutions.md fy4-10-L3-04 (Principle): "törmäyksen lyhyen ajan, joten" was ungrammatical; now "törmäyksen lyhyen ajan aikana, joten".
+(none needed): the translation already matched fi in physics, numbers and correct answers.
 
 ## Polish
 (none)
 
 ## Checked
-- All 20 exercises: ids, kinds, levels, answers, units, tolerances, correct flags and every number in task texts, choices, feedback and data tables compared with fi by script (decimal point in en, comma/{,} in fi-easy); no differences.
-- Choices of L1-06: same four options, one correct flag on the same option, feedback meaning identical.
-- Data tables of L2-05, L2-06, L3-05 identical to fi cell by cell; column headers translated, symbols and units unchanged.
-- solutions.md: 20 sections in both, math fragments and numbers match fi section by section (L1-06..08, L2-05..07, L3-04, L3-05 read in full).
-- Sign handling (L2-07), friction neglect conditions (L3-04, L3-05), mu range 0.50-0.70 and the 50 km/h limit unchanged.
-- check_i18n: 0 errors.
+- fy4-10-L2-08 (error-analysis of a momentum calculation (sign of the rebound velocity)): all numbers, units, symbols and the answer/correct flags/true flags compared with fi by script; identical (decimal comma {,}).
+- Recomputed: v_B' = 0.60 m/s, the student's 0.36 m/s fails the check p_B > 0.24 kg·m/s; answer "Line 3" = correct flag.
+- Option order, figure ids and feedback meaning match fi; each distractor feedback is physically right.
+- solutions.md section fy4-10-L2-08: structure (Find/Principle/Model answer) and every formula and number match fi.
+- check_i18n: no messages for fy4-10; build.py fy4-10 succeeded.

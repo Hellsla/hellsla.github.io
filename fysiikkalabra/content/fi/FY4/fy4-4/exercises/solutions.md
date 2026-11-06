@@ -262,3 +262,20 @@ v ylös
 **Sijoitus:** $v_{\max} = 1{,}0\,\text{m/s}^2 \cdot 3{,}0\,\text{s} = 3{,}0\,\text{m/s}$ ja $a_3 = \dfrac{0 - 3{,}0\,\text{m/s}}{4{,}0\,\text{s}} = -0{,}75\,\text{m/s}^2$. Tukivoima on $N = 70\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 - 0{,}75\,\text{m/s}^2) = 70\,\text{kg}\cdot 9{,}06\,\text{m/s}^2 = 634{,}2\,\text{N}$
 **Vastaus:** $630\,\text{N}$ ($634\,\text{N}$ ennen pyöristystä), kaksi merkitsevää numeroa kuten massassa $70\,\text{kg}$ ja kiihtyvyydessä. Suurin nopeus on $3{,}0\,\text{m/s}$ ja kiihtyvyys vaiheessa 3 on $0{,}75\,\text{m/s}^2$ alaspäin. Tukivoima on painoa $mg = 686{,}7\,\text{N}$ pienempi, koska kokonaisvoima ja kiihtyvyys osoittavat alas.
 **Järkevyys:** Hissi pysähtyy: $3{,}0\,\text{m/s} - 0{,}75\,\text{m/s}^2 \cdot 4{,}0\,\text{s} = 0$. Tukivoiman ja painon erotus on $686{,}7\,\text{N} - 634{,}2\,\text{N} = 52{,}5\,\text{N} = 70\,\text{kg}\cdot 0{,}75\,\text{m/s}^2$, joten voimat täsmäävät liikeyhtälön kanssa. Vaiheessa 1 tukivoima olisi vastaavasti painoa suurempi, $70\,\text{kg}\cdot 10{,}81\,\text{m/s}^2 = 756{,}7\,\text{N}$, ja tasaisessa vaiheessa 2 yhtä suuri kuin paino.
+
+## fy4-4-L2-08
+**Kysytty:** onko oppilaan laskussa virhe ja millä rivillä, kun lasketaan vaakasuoraan työnnetyn ostoskärryn kiihtyvyys $a$.
+**Periaate:** Newtonin toisen lain mukaan $\Sigma F = ma$, joten kiihtyvyys on kokonaisvoima jaettuna massalla. Ensin valitaan positiivinen suunta ja kirjoitetaan kokonaisvoima etumerkkeineen: työntövoima liikkeen suuntaan ja kitkavoima sitä vastaan. Vaakasuoralla lattialla paino ja tukivoima kumoavat toisensa, joten paino ei vastusta liikettä; kiihtyvyyttä pienentää massa. Laskun voi tarkistaa rivi riviltä: kokonaisvoiman lauseke, sen arvo, paino ja kiihtyvyys.
+**Mallivastaus:** Rivi 1: $\Sigma F = F - F_\mu$ on oikein, koska kitka osoittaa työntövoimaa vastaan.
+
+Rivi 2: $45\,\text{N} - 9{,}0\,\text{N} = 36\,\text{N}$ on oikein.
+
+Rivi 3: $G = 18\,\text{kg} \cdot 9{,}81\,\text{m/s}^2$, eli $G = 176{,}58\,\text{N} \approx 177\,\text{N}$, on oikein laskettu, vaikka painoa ei tarvita.
+
+Rivi 4 on väärin, koska siinä kokonaisvoima on jaettu painolla eikä massalla. Oikein:
+
+$a = \dfrac{\Sigma F}{m}$
+
+$a = \dfrac{36\,\text{N}}{18\,\text{kg}}$, eli $a = 2{,}0\,\text{m/s}^2$
+
+Kiihtyvyys on $2{,}0\,\text{m/s}^2$ työntövoiman suuntaan, kaksi merkitsevää numeroa kuten voimissa ja massassa. Tarkistus yksiköillä: $\text{N} : \text{kg} = \text{kg}\cdot\text{m/s}^2 : \text{kg}$, eli $\text{m/s}^2$, mutta rivin 4 jakolasku $\text{N} : \text{N}$ ei anna kiihtyvyyden yksikköä lainkaan. Oikea vastaus on rivi 4.

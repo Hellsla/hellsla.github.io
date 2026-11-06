@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 6d157e2383c3163e
-Round: 3
+CONTENT-HASH: 470c69becc80c20b
+Round: 2
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] L3-04 horse figure — the F_h label sits just over the hatching beside the contact surface; legible, optional nudge.
-- [Minor] No 360 px capture of the exercise bodies exists; phone view rests on the layout checks.
+(none)
 
 ## Checked
-- Opened the regenerated L3-04 captures at 1280 px (fi-easy): both figures fit their frame, every arrowhead is visible, arrows in house red, labels KaTeX with overlines, no overlap between bodies and arrows.
-- fi-easy labels match the text (F_r, F_k/F_dc, F_h/F_dh, T, F_t/F_road); no leftover Finnish symbol in en.
-- L1-08 wording change: no layout effect.
+- fy4-3-L2-08 (fi-easy) at 390 px, feedback and solution open (two-stage answer, boxed answer, Find/Principle/Model answer), screenshot read in full; measured after page scripts: scrollWidth 390, no clipped element outside a scroll box, no .kx-wide needed.
+- Units, decimal sign, LaTeX labels and vectors checked in the render.
+- Finnish K/H subscripts upright \text{KH}/\text{HK}, explained in the task text; unchanged from the passed version.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

@@ -306,3 +306,16 @@ a 0
 **Sijoitus:** a) $F_\text{v} = 1{,}40 \cdot 10^{-5}\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 1{,}373 \cdot 10^{-4}\,\text{N}$. b) $v = \sqrt{2 \cdot 9{,}81\,\text{m/s}^2 \cdot 1500\,\text{m}} = \sqrt{29430\,\text{m}^2/\text{s}^2} = 171{,}55\,\text{m/s}$
 **Vastaus:** a) $1{,}37 \cdot 10^{-4}\,\text{N}$ ylöspäin. b) $172\,\text{m/s}$. Vastauksessa on kolme merkitsevää numeroa kuten korkeudessa $1{,}50\,\text{km}$. c) Ilman ilmanvastusta nopeus olisi noin $620\,\text{km/h}$. Se on yli $20$-kertainen todelliseen $8{,}0\,\text{m/s}$ verrattuna, ja pisara olisi vaarallinen. Kun pisara putoaa, ilmanvastus kasvaa nopeuden kasvaessa, kunnes se on painon suuruinen. Silloin kokonaisvoima on nolla ja nopeus pysyy vakiona. Pisaran paino on vain noin $1{,}4 \cdot 10^{-4}\,\text{N}$. Pieni ilmanvastus riittää kumoamaan sen jo pienellä nopeudella.
 **Järkevyys:** Kiihtyvyydellä $g$ pisara saavuttaisi nopeuden $8{,}0\,\text{m/s}$ ajassa $8{,}0\,\text{m/s} : 9{,}81\,\text{m/s}^2 = 0{,}82\,\text{s}$. Se tapahtuisi muutamassa metrissä, vaikka matkaa on $1500\,\text{m}$. Todellisuudessa ilmanvastus rajoittaa nopeuden heti alussa. Pisara kulkee lähes koko matkan vakionopeudella ja putoaa vain noin $190\,\text{s}$. Tulos $171{,}55\,\text{m/s}$ on suuruusluokaltaan oikea, sillä $\sqrt{2 \cdot 10 \cdot 1500} \approx 170$.
+
+## fy4-14-L1-09
+**Kysytty:** mitkä viidestä väitteestä ylös heitetystä ja korkealta pudotetusta lentopallosta ovat tosia.
+**Periaate:** Palloon vaikuttavat paino $\overline{G}$ ja ilmanvastus $\overline{F}_\text{v}$. Liikeyhtälö on $\overline{G} + \overline{F}_\text{v} = m\overline{a}$. Ilmanvastus osoittaa nopeutta vastaan ja kasvaa nopeuden kasvaessa. Rajanopeudella $F_\text{v} = G$, joten kokonaisvoima on nolla.
+**Mallivastaus:** Pallon paino on
+
+$G = mg = 0{,}270\,\text{kg} \cdot 9{,}81\,\text{m/s}^2$, eli $G \approx 2{,}65\,\text{N}$.
+
+1 tosi: nousun aikana ilmanvastus osoittaa alas, samaan suuntaan kuin paino. Siksi kokonaisvoima on suurempi kuin $mg$ ja kiihtyvyyden suuruus on suurempi kuin $9{,}81\,\text{m/s}^2$.
+2 epätosi: lakipisteessä nopeus on nolla, joten ilmanvastus on hetken nolla. Paino $2{,}65\,\text{N}$ vaikuttaa kuitenkin edelleen, ja kiihtyvyys on $g$ alaspäin.
+3 tosi: pudotuksen aikana ilmanvastus kasvaa nopeuden mukana. Siksi kokonaisvoima $mg - F_\text{v}$ ja kiihtyvyys pienenevät.
+4 epätosi: rajanopeudella kokonaisvoima on nolla, joten ilmanvastus on yhtä suuri kuin paino eli $2{,}65\,\text{N}$. Se ei ole suurempi.
+5 epätosi: samankokoisella ja samanmuotoisella mutta kevyemmällä pallolla on pienempi paino. Ilmanvastus kumoaa sen jo pienemmällä nopeudella, joten sen rajanopeus on pienempi.

@@ -119,6 +119,44 @@
       "unit": "N",
       "tolerance": 0.02,
       "fbd": "equations"
+    },
+    {
+      "id": "fy4-14-L1-09",
+      "level": 1,
+      "kind": [
+        "concept"
+      ],
+      "text": "Lentopallo, jonka massa on $0{,}270\\,\\text{kg}$, heitetään suoraan ylöspäin. Se nousee lakipisteeseen ja putoaa takaisin. Toisella kerralla sama pallo pudotetaan levosta korkealta tornista, ja se ehtii saavuttaa rajanopeutensa. Pallo liikkuu molemmilla kerroilla pystysuoraan.\n\nPäättele, mitkä väitteet ovat tosia ja mitkä epätosia.",
+      "answer": "1 tosi, 2 epätosi, 3 tosi, 4 epätosi, 5 epätosi",
+      "unit": "",
+      "tolerance": 0.02,
+      "statements": [
+        {
+          "text": "Nousun aikana pallon kiihtyvyyden suuruus on suurempi kuin $9{,}81\\,\\text{m/s}^2$.",
+          "true": true,
+          "feedback": "Tosi: nousevan pallon ilmanvastus osoittaa alas samaan suuntaan kuin paino, joten kokonaisvoima on suurempi kuin $mg$ ja hidastuvuus suurempi kuin $g$."
+        },
+        {
+          "text": "Lakipisteessä palloon ei vaikuta yhtään voimaa.",
+          "true": false,
+          "feedback": "Epätosi: paino $mg \\approx 2{,}65\\,\\text{N}$ vaikuttaa koko ajan. Lakipisteessä nopeus on nolla, joten vain ilmanvastus on hetken nolla, ja kiihtyvyys on $g$ alaspäin."
+        },
+        {
+          "text": "Pudotuksen aikana pallon kiihtyvyys pienenee, kun sen nopeus kasvaa.",
+          "true": true,
+          "feedback": "Tosi: ilmanvastus kasvaa nopeuden kasvaessa, joten kokonaisvoima $mg - F_\\text{v}$ ja kiihtyvyys pienenevät, kunnes ne ovat rajanopeudella nolla."
+        },
+        {
+          "text": "Rajanopeudella ilmanvastus on suurempi kuin $2{,}65\\,\\text{N}$.",
+          "true": false,
+          "feedback": "Epätosi: paino on $0{,}270\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\approx 2{,}65\\,\\text{N}$. Rajanopeudella kokonaisvoima on nolla, joten ilmanvastus on yhtä suuri kuin paino, ei suurempi."
+        },
+        {
+          "text": "Samankokoinen ja samanmuotoinen mutta kevyempi pallo saavuttaa saman rajanopeuden.",
+          "true": false,
+          "feedback": "Epätosi: kevyemmän pallon paino on pienempi, joten ilmanvastus kumoaa sen jo pienemmällä nopeudella. Kevyemmän pallon rajanopeus on pienempi."
+        }
+      ]
     }
   ],
   "level2": [

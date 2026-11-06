@@ -190,3 +190,31 @@
 **Sijoitus:** a) Energiat ovat $E_0 = 0{,}057 \cdot 9{,}81 \cdot 1{,}20\,\text{J} = 0{,}671\,\text{J}$, $E_1 = 0{,}431\,\text{J}$, $E_2 = 0{,}274\,\text{J}$, $E_3 = 0{,}179\,\text{J}$ ja $E_4 = 0{,}112\,\text{J}$. Osuudet ovat $r_0 = 0{,}77 : 1{,}20 = 0{,}642$, $r_1 = 0{,}636$, $r_2 = 0{,}653$ ja $r_3 = 0{,}625$. b) Osuuksien summa on $2{,}556$, joten keskiarvo on $2{,}556 : 4 = 0{,}639 = 63{,}9\,\%$. c) $\Delta E = 0{,}057\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot (1{,}20 - 0{,}77)\,\text{m} = 0{,}240\,\text{J}$.
 **Vastaus:** b) Pallo säilyttää kimmahduksessa keskimäärin noin $64\,\%$ mekaanisesta energiastaan, kaksi merkitsevää numeroa kuten korkeuksissa. c) Ensimmäisessä kimmahduksessa mekaanista energiaa muuttuu sisäenergiaksi noin $0{,}24\,\text{J}$. Perustelu: pallon mekaaninen energia ei säily kimmahduksissa, koska se pienenee joka kerta (korkeudet pienenevät: $1{,}20 \to 0{,}77 \to 0{,}49 \to 0{,}32 \to 0{,}20\,\text{m}$), mutta kokonaisenergia säilyy: kimmahduksessa pallon ja lattian vuorovaikutus muuttaa osan mekaanisesta energiasta pallon ja lattian sisäenergiaksi (lämpenemiseksi) ja ääneksi.
 **Järkevyys:** Osuudet $0{,}625$–$0{,}653$ ovat lähes samat, joten pallo menettää jokaisessa kimmahduksessa suunnilleen saman osuuden, ja se on uskottava tennispallolle. Neljän kimmahduksen jälkeen jäljellä on $0{,}20 : 1{,}20 \approx 17\,\%$ alkuenergiasta, ja $0{,}639^4 \approx 0{,}167$ antaa saman.
+
+## fy4-8-L1-09
+**Kysytty:** mitkä viidestä väitteestä vuoristoradan vaunusta ovat tosia.
+**Periaate:** Kitka ja ilmanvastus jätetään huomiotta, ja radan tukivoima on kohtisuorassa liikettä vastaan, joten vain paino tekee työtä. Silloin vaunun mekaaninen energia $E_\text{k} + E_\text{p}$ säilyy. Nollataso on laakson pohja.
+**Mallivastaus:** 1 tosi. Säilymislaista $mgh = \tfrac12 mv^2$ saadaan nopeus pohjalla:
+
+$v = \sqrt{2gh}$
+
+$v = \sqrt{2 \cdot 9{,}81\,\text{m/s}^2 \cdot 20\,\text{m}}$
+
+$v \approx 19{,}8\,\text{m/s}$
+
+2 epätosi. Massa supistuu säilymislaista pois, joten täydempi vaunu on pohjalla yhtä nopea. Sillä on enemmän liike-energiaa, mutta alussa sillä oli myös enemmän potentiaalienergiaa.
+
+3 tosi. Tukivoima on kohtisuorassa liikettä vastaan, joten sen liikkeen suuntainen komponentti on nolla ja $W = F_\parallel s = 0$.
+
+4 epätosi. Huipulla $12\,\text{m}$:n korkeudella liike-energia on alun ja huipun potentiaalienergioiden erotus:
+
+$E_\text{k} = mg(h_1 - h_2)$
+
+$E_\text{k} = 400\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 8\,\text{m}$
+
+$E_\text{k} \approx 31\,\text{kJ}$
+
+Vaunu pysähtyisi vasta lähtökorkeudella $20\,\text{m}$.
+
+5 epätosi. Kitka pienentäisi vaunun mekaanista energiaa, mutta yhtä suuri määrä energiaa siirtyisi radan, pyörien ja ilman sisäenergiaksi. Kokonaisenergia säilyy.
+

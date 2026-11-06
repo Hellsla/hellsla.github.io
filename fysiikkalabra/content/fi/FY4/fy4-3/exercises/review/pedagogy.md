@@ -1,15 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 9afe1ad795180985
-Round: 3
-
+CONTENT-HASH: fdddeeb5c9f1df61
 ## Blocking
-
+(none)
 ## Polish
-- L3-04 diagram — in the cart figure F_r and F_k both run left from the same face; F_k is a short stub beside the long F_r, so the pair reads as one arrow with a side label at a glance. Acceptable: the text names both.
-
+(none)
 ## Checked
-- Opened the new L3-04 captures (L3-1280-5/6, fi): two separate one-body diagrams, each with its forces labelled; the cart's T points forwards, the horse's T backwards and F_t forwards, matching the Voimakuvio text.
-- Labels match the text: fi symbols F_r, F_k/F_dc, F_h/F_dh, F_t/F_road agree with Annettu and Kaava.
-- The model solution draws the diagram before the equations; numbers (450 N, 480 N) unchanged.
-- L1-08: Periaate now ends with the body choice only; no promise of a drawing.
-- Hash unchanged at the end.
+- Delta (round 3): the vector subscripts in L2-08 (text, stage-2 feedback, Periaate, Mallivastaus) are now upright, \overline{F}_{\text{KH}} / \overline{F}_{\text{HK}}; no remaining italic KH/HK subscript in exercises.json or solutions.md. My round-2 Polish item is resolved.
+- No number, option order, correct flag or wording changed; the correct option is still not identifiable by form and the distractors still catch the warned mistakes.
+- Inline formulas are short, within about 300 px at 390 px. Text-only check, not re-rendered.

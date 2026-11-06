@@ -93,6 +93,37 @@
       "answer": 18000.0,
       "unit": "kg·m/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-9-L1-09",
+      "level": 1,
+      "kind": [
+        "reasoning",
+        "concept"
+      ],
+      "text": "A hailstone with a mass of $20\\,\\text{g}$ falls vertically at a speed of $20\\,\\text{m/s}$ and hits the horizontal roof of a car. The hailstone does not bounce but stops in a time of $1.0\\,\\text{ms}$ (example values). The effect of the weight of the hailstone during the impact is ignored.\n\nWhat is the order of magnitude of the average force with which the roof stops the hailstone? Choose the nearest value.",
+      "answer": "$400\\,\\text{N}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "$0.4\\,\\text{N}$",
+          "feedback": "The result is obtained when the time is substituted as the number $1.0$ as if it were in seconds. A millisecond is $0.001\\,\\text{s}$, so the force is a thousand times greater. A force of $0.4\\,\\text{N}$ would be only about twice the weight of the hailstone, and it would not stop the hailstone in a millisecond."
+        },
+        {
+          "text": "$400\\,\\text{N}$",
+          "correct": true,
+          "feedback": "Correct: the magnitude of the change in momentum is $m v = 0.40\\,\\text{kg}\\cdot\\text{m/s}$. From the impulse principle $F_\\text{avg} = \\tfrac{m v}{\\Delta t}$, that is $F_\\text{avg} = 400\\,\\text{N}$, when $\\Delta t = 0.0010\\,\\text{s}$."
+        },
+        {
+          "text": "$4000\\,\\text{N}$",
+          "feedback": "The result is obtained when, instead of the momentum, the kinetic energy $\\tfrac{1}{2} m v^2 = 4.0\\,\\text{J}$ is calculated and divided by the time. Energy divided by time is power, in the unit $\\text{W}$, not force. The impulse of a force equals the change in momentum, not the kinetic energy."
+        },
+        {
+          "text": "$400\\,000\\,\\text{N}$",
+          "feedback": "The result is obtained when the mass is substituted in grams as the number $20$ instead of in kilograms as $0.020\\,\\text{kg}$. The unit of momentum is $\\text{kg}\\cdot\\text{m/s}$, so the mass is converted to kilograms, and the force is a thousandth of this."
+        }
+      ]
     }
   ],
   "level2": [

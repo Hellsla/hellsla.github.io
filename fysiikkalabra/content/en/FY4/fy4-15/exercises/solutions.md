@@ -203,3 +203,24 @@ $$\begin{aligned}m &= \frac{8.64 \cdot 10^{11}\,\text{J}}{9.81\,\tfrac{\text{m}}
 **Answer:** $1.04 \cdot 10^{6}\,\text{m}^3$, three significant figures like the height $85.0\,\text{m}$ and the efficiency $0.800$.
 **Model answer for parts b and c:** The pumped water $1.04 \cdot 10^{6}\,\text{m}^3$ is less than the volume of the upper reservoir $1.20 \cdot 10^{6}\,\text{m}^3$, so the water fits into the reservoir and it fills to about $86\,\%$. The energy stored in the water is $0.800 \cdot 300\,\text{MWh} = 240\,\text{MWh}$. At a power of $40.0\,\text{MW}$ it would last $240\,\text{MWh} : 40.0\,\text{MW} = 6.00\,\text{h}$, if the losses of the turbine and the generator are ignored. In reality the losses shorten the time. A pumped-storage plant suits well alongside wind power, because wind power depends on the weather and its power can exceed consumption, while hydropower is easy to regulate. Surplus electricity can be stored as the potential energy of water and converted back into electricity when the wind calms down and consumption is greater than production.
 **Reasonableness:** Let us check the potential energy: $1.036 \cdot 10^{9}\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 85.0\,\text{m} = 8.64 \cdot 10^{11}\,\text{J}$, which is $240\,\text{MWh}$. A cubic metre of water at a height of $85\,\text{m}$ stores about $1000 \cdot 9.81 \cdot 85\,\text{J} = 0.83\,\text{MJ}$, so $240\,\text{MWh} = 8.64 \cdot 10^{5}\,\text{MJ}$ requires about $10^{6}$ cubic metres, as obtained.
+
+## fy4-15-L2-08
+**Find:** the order of magnitude of the electric power $P$ of the wind turbine.
+**Principle:** The air flowing through the rotor per second has kinetic energy equal to the power of the wind $\tfrac{1}{2}\rho A v^3$, and the turbine converts the fraction $\eta$ of it into electricity. The turbine does not reach its rated power, so the formula $P = \tfrac{1}{2}\eta\rho A v^3$ describes it. The speed must be converted to the unit $\text{m/s}$, because it is in the formula to the third power.
+**Model answer:** The radius is $r = 100\,\text{m} : 2 = 50\,\text{m}$ and $\eta = 0.40$. The wind speed is converted to $\text{m/s}$, and then the area swept by the rotor and the electric power are calculated:
+
+$$\begin{aligned}
+&v = 36\,\text{km/h} \\
+&\phantom{v} = \dfrac{36\,000\,\text{m}}{3600\,\text{s}} \\
+&\phantom{v} = 10\,\text{m/s} \\
+&A = \pi r^2 = \pi \cdot (50\,\text{m})^2 \\
+&\phantom{A} \approx 7854\,\text{m}^2 \\
+&P = \tfrac{1}{2}\eta\rho A v^3 \\
+&\phantom{P} = 0.5 \cdot 0.40 \cdot 1.25\,\tfrac{\text{kg}}{\text{m}^3} \\
+&\qquad \cdot 7854\,\text{m}^2 \cdot \left(10\,\tfrac{\text{m}}{\text{s}}\right)^3 \\
+&\phantom{P} \approx 1.96 \cdot 10^{6}\,\text{W}
+\end{aligned}$$
+
+The electric power is of the order of magnitude $2\,\text{MW}$. The power can be written as $P = \eta \cdot \tfrac{1}{2}v^2 \cdot \rho A v$, where $\tfrac{1}{2}v^2$ is the kinetic energy of one kilogram of air and $\rho A v$ is the mass of air flowing through the rotor per second. Both grow with the speed. The option $0.2\,\text{MW}$ comes from calculating the power as proportional to the square $v^2$: only the kinetic energy per kilogram is included, and the growth of the mass flow is forgotten. The option $20\,\text{kW}$ comes from calculating the power as proportional to the speed $v$: only the mass flow is included, and the growth of the kinetic energy per kilogram is forgotten. If the speed is substituted as the number $36$ without converting it, the result is about $47$ times too large, about $90\,\text{MW}$.
+
+The result is reasonable. The power of the wind is $P : \eta \approx 4.9\,\text{MW}$, and less than half of it becomes electricity. In the example of the chapter a $120\,\text{m}$ rotor produced about $2.3\,\text{MW}$ at a wind speed of $9.0\,\text{m/s}$, so the result is of the same order of magnitude.

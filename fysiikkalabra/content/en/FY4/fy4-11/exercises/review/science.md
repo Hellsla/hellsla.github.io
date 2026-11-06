@@ -1,21 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 661b12afa1df8fc5
-Mode: full (translation review against the reviewed Finnish set)
+CONTENT-HASH: 696dd89d4770c31a
+Mode: full (translation review against the reviewed Finnish set; new task fy4-11-L2-08)
 Round 1
 
 ## Blocking
 (none)
 
 ## Fixed
-- exercises.json: table column headers in L2-05 ($s_j$), L2-06 ($F_{ka}$) and L3-04 ($s_p$) still carried the Finnish subscripts while stem and solutions use $s_b$, $F_{avg}$, $s_{stop}$; changed to match (text only, formula parity kept; check_i18n 0 errors).
+(none)
 
 ## Polish
 (none)
 
 ## Checked
-- Re-review after L3-04 aligned-block change: 2ad = 2*5.1*55 = 561 m2/s2 (own row), sqrt(6.12^2 + 561) = sqrt(598.45) = 24.46, minus 6.12 = 18.34 m/s = 66.0 km/h; same maths as fi; rows are short enough for 360 px.
-- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags, choices, data cells and every number in texts, feedback and solutions.md are identical (decimal point in JSON/LaTeX in en; decimal comma in fi-easy as in fi).
-- Solutions: all 20 sections present, numbers per section equal to fi.
-- Key answers unchanged: 7.4 m/s2, 7.9 m/s2, 60 km/h, 38.9 m, 66 km/h, 18.0 kN.
-- L1-06/L1-07: one correct option each, distractor feedback names the same error as fi.
-- check_i18n.py en: 0 errors.
+- Script comparison of exercises.json with content/fi: all ids, levels, kinds, answers, units, tolerances, correct flags, choice order and every number in all strings are identical (decimal point in en); new task fy4-11-L2-08 included.
+- Correct option and distractor feedback of fy4-11-L2-08 carry the same physics and numbers as fi; solutions.md section has the same lines, formulas and results.
+- No Finnish left in en (grep); no wrong-language text. check_i18n.py: nothing for this chapter; build.py succeeds.

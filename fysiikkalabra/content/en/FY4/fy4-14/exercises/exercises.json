@@ -119,6 +119,44 @@
       "unit": "N",
       "tolerance": 0.02,
       "fbd": "equations"
+    },
+    {
+      "id": "fy4-14-L1-09",
+      "level": 1,
+      "kind": [
+        "concept"
+      ],
+      "text": "A volleyball of mass $0.270\\,\\text{kg}$ is thrown straight up. It rises to its highest point and falls back. On another occasion the same ball is dropped from rest from a tall tower, and it has time to reach its terminal speed. Both times the ball moves vertically.\n\nDecide which statements are true and which are false.",
+      "answer": "1 true, 2 false, 3 true, 4 false, 5 false",
+      "unit": "",
+      "tolerance": 0.02,
+      "statements": [
+        {
+          "text": "During the rise, the magnitude of the acceleration of the ball is greater than $9.81\\,\\text{m/s}^2$.",
+          "true": true,
+          "feedback": "True: the air resistance on a rising ball points down, in the same direction as the weight, so the net force is greater than $mg$ and the deceleration is greater than $g$."
+        },
+        {
+          "text": "At the highest point no force acts on the ball.",
+          "true": false,
+          "feedback": "False: the weight $mg \\approx 2.65\\,\\text{N}$ acts all the time. At the highest point the speed is zero, so only the air resistance is momentarily zero, and the acceleration is $g$ downwards."
+        },
+        {
+          "text": "During the fall, the acceleration of the ball decreases as its speed increases.",
+          "true": true,
+          "feedback": "True: air resistance increases as the speed increases, so the net force $mg - F_\\text{v}$ and the acceleration decrease until they are zero at the terminal speed."
+        },
+        {
+          "text": "At the terminal speed, the air resistance is greater than $2.65\\,\\text{N}$.",
+          "true": false,
+          "feedback": "False: the weight is $0.270\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\approx 2.65\\,\\text{N}$. At the terminal speed the net force is zero, so the air resistance is equal to the weight, not greater."
+        },
+        {
+          "text": "A ball of the same size and shape but lighter reaches the same terminal speed.",
+          "true": false,
+          "feedback": "False: the weight of the lighter ball is smaller, so the air resistance cancels it already at a lower speed. The terminal speed of the lighter ball is lower."
+        }
+      ]
     }
   ],
   "level2": [

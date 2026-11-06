@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: e4e45a56f1d17315
+CONTENT-HASH: 2c3869fa773cda9b
 
 ## Blocking
 
 ## Polish
-- No new findings; round-1 Polish items not touched by the diff remain optional (L2-05/L2-06 kind "graph" without a graph, L3-05 averages buried in the solution).
+- "korkeudelta h kentän yläpuolelta" in the stem could read "kentän tasosta mitattuna" (optional, from round 1).
 
 ## Checked
-- Delta: L2-07 method now nudges the box and adjusts the angle until it keeps sliding at constant speed; this is the correct way to get kinetic friction (static friction would otherwise decide the angle) and the solution Periaate explains why.
-- Delta: L2-07 b) asks "kuinka suuri on kertoimen vaihtelu keskiarvon ympärillä" and the answer gives 0,306 ... 0,335, μ ≈ 0,32 ± 0,02, about 5 %; consistent with the computed ±0,015.
-- Delta: L2-06 change is a typographic fix only; μ = 0,0805 unchanged.
-- No answers changed; round-1 checks stand.
-- Hash unchanged at end.
+- Round 3, text only; no render.
+- Solution typo "lähtökorkeusvaikuttaa" fixed; "todennäköisesti" restored in the correct feedback; correct feedback now 244 characters, no longer the longest (259–264).
+- Options 98–130 characters, correct not longest or uniquely worded; "pelkän taulukon perusteella" in the stem; 2Δx criterion consistent with 0,7 m, 20,6 m and 19,2 m.
+- Hash at start 2c3869fa773cda9b, at end 2c3869fa773cda9b.
