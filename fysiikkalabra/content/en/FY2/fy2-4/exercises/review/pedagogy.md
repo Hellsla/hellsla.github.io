@@ -1,19 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: cef7039ba3a4aa4f
+CONTENT-HASH: eddb481aa99052bc
 Mode: full
-Round: 1
+Round: 3
 
 ## Blocking
 (none)
 
 ## Fixed
-- exercises.json L3-04: unit "kertaa" (Finnish left over) changed to "times", as in L2-05.
+- none needed.
 
 ## Polish
 - none
 
 ## Checked
-- Level, kind tags and structure of the 8 new exercises match the Finnish; choices keep the same distractors and feedback logic.
-- Wording is English; no Finnish left and keeps the Finnish task order (calculate, then compare, then justify).
-- Solutions keep the Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness structure.
-- Terms (efficiency, useful energy, losses, loss power) used consistently.
+- L2-08 after the split of the formula chain: correct-option feedback now reads eta = E_a : E_o, then eta = 360 kJ : 600 kJ = 0.60, then 60 % (joined by 'that is'/'which is' or 'eli'); solutions.md Rivi/Line 2 split likewise. Same numbers, formulas and correct option as the reviewed Finnish.
+- Recomputed: E_o = 2500 W * 240 s = 600 kJ, E_h = 240 kJ, eta = 0.60, 240/600 = 0.40, 60 % + 40 % = 100 %.
+- check_i18n.py shows nothing for fy2-4; build.py fy2-4 succeeds. Hash taken at start and end: unchanged.
+- Shorter inline formulas read better at 390 px; the step order is kept and no step is lost.
+- Wording stays natural English.

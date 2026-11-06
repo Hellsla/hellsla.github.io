@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: dddd0748a061d540
+CONTENT-HASH: eb6030c5ebb1f4dc
 Mode: delta
-Round: 2
+Round: 3
 
 ## Blocking
 (none)
 
-## Fixed
-- (none needed)
-
 ## Polish
-- (none)
+- [Minor] fy2-2-L1-06 solution — an inline formula (`0.0033 GJ = 0.0033 · 1000 MJ = 3.3 MJ`) reached 4 px past the viewport in round 1 with the choices answered; not re-measured this round (page scroll width is 390 px in the unanswered, details-open state) — let it break after `=` if it recurs.
+- [Minor] Follow-up from earlier rounds: none open for fy2-2 beyond the item above.
 
 ## Checked
-- Screenshots of the new tasks (open-exercises L1-L3, 1280 px) viewed: data tables render with caption, aligned columns and upright units; nothing clipped.
-- Math typography in the new solutions: spacing, thin spaces before units, \cdot and colon division, subscripts, fractions are identical to the Finnish; decimals with a comma consistently.
-- Answer boxes show the right unit (km, kg, kertaa); no stray Finnish/English strings in captures.
-- Round 2 (figure change only): in the L1-05 figure "tikapuut-kohteet" (capture open-exercises-1280-4, fresh, stamp dddd0748a061d540) the caption "jokainen väli on 10-kertainen" now sits clearly below the scale labels 1 J … 1 TJ, with no contact, and fully inside the figure frame (the figure is 330 units high, the caption baseline is at 313). The scale, the three marked points (AA battery, tea water, lightning) and all labels are unchanged; no text, number or task changed.
+- Hash at start and end: eb6030c5ebb1f4dc; packet regenerated (delta, diff = the step label of the fy2-2-L1-09 solution only).
+- Own Playwright render at 390 px of preview/fi-easy/fy2-2.html: opened the L1-09 solution card in full; labels read GIVEN/FIND/PRINCIPLE/FORMULA/CONVERSIONS/SUBSTITUTION/MALLIVASTAUS/REASONABLENESS in the same style and order as the other tasks, no clipping, chain box fits, page scroll width 390.
+- Text only: the rest of the exercise set (unchanged since the previous rounds); 1280 px captures not re-opened.
+
+## Scores
+illustrations n/a · typography 4 · Finnish 4 · accessibility 4

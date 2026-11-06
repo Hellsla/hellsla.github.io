@@ -234,6 +234,53 @@
           "correct": true
         }
       ]
+    },
+    {
+      "id": "fy2-7-L2-08",
+      "level": 2,
+      "text": "Esimerkissä sähköverkkoon syötetään viikossa $1000\\,\\text{MWh}$ sähköenergiaa. Verkossa häviää $4{,}0\\,\\%$ verkkoon lähtevästä energiasta.\n\nSamalla alueella kaukolämpöverkkoon syötetään viikossa $300\\,\\text{MWh}$ lämpöenergiaa. Siellä häviää $9{,}0\\,\\%$ verkkoon lähtevästä energiasta.\n\nKummassa verkossa häviää viikossa enemmän energiaa?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "Sähköverkossa",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Kaukolämpöverkossa",
+          "feedback": "Tässä verrataan vain häviöprosentteja. Prosentti kertoo osuuden verkkoon lähtevästä energiasta. Häviävä energia riippuu myös siitä, kuinka paljon energiaa verkkoon lähtee."
+        },
+        {
+          "text": "Sähköverkossa",
+          "feedback": "Oikein: sähköverkkoon lähtee yli kolme kertaa enemmän energiaa. Siksi pienempikin osuus on energiana suurempi.",
+          "correct": true
+        },
+        {
+          "text": "Yhtä paljon molemmissa",
+          "feedback": "Häviö on osuus kertaa lähtevä energia. Sähköverkossa se on $0{,}040 \\cdot 1000\\,\\text{MWh} = 40\\,\\text{MWh}$ ja kaukolämpöverkossa $0{,}090 \\cdot 300\\,\\text{MWh} = 27\\,\\text{MWh}$. Häviöt eivät siis ole yhtä suuret."
+        }
+      ],
+      "reason_prompt": "Mikä perustelu selittää vastauksesi?",
+      "reasons": [
+        {
+          "text": "Kaukolämpöverkon häviöprosentti on suurempi, joten sen häviö on suurempi myös energiana mitattuna.",
+          "feedback": "Tämä on yleinen virhe: suuri prosentti ei yksin ratkaise. Häviö on osuus verkkoon lähtevästä energiasta. Siksi myös lähtevän energian määrä vaikuttaa."
+        },
+        {
+          "text": "Häviö on osuus lähtevästä energiasta, ja sähköverkkoon lähtee paljon enemmän energiaa kuin kaukolämpöverkkoon.",
+          "feedback": "Oikein: häviö on osuus kertaa lähtevä energia. Lähtevän energian määrä ja osuus ratkaisevat siis yhdessä.",
+          "correct": true
+        },
+        {
+          "text": "Sähköverkossa on pitkät voimalinjat ja kaukolämpöverkossa lyhyet putket, joten sähköverkossa häviää enemmän.",
+          "feedback": "Tehtävässä ei kerrota matkoista, eikä pituus yksin ratkaise. Häviö lasketaan tehtävän tiedoista: lähtevä energia kerrotaan osuudella."
+        },
+        {
+          "text": "Sähköenergia siirtyy valon nopeudella, joten sähköverkossa häviää enemmän kuin kaukolämpöverkossa.",
+          "feedback": "Energia siirtyy sähköverkossa todella nopeasti, mutta nopeus ei selitä häviön suuruutta. Häviö syntyy, kun johtimet lämpenevät. Sen määrän saa osuudesta ja lähtevästä energiasta."
+        }
+      ]
     }
   ],
   "level3": [

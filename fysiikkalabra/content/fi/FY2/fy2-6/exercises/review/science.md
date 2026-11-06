@@ -1,18 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: b71da49ea5d729c4
-Round: 3
+CONTENT-HASH: 7ba8761f49283226
+Round: 4
 
-The round-2 Blocking item is resolved. The L1-07 Mallivastaus (solutions.md:60) now names the options by their content: hydro is säätövoima, nuclear is perusvoima and wind is weather-dependent. This matches each option and its feedback whatever the shuffle order. The L3-05 table row was shortened to "Sääriippuvainen" / "Tasainen". This changes no data that the calculation uses. The Vastaus still states the physics ("ei säädettävissä nopeasti", "tarvitsee säätövoimaa").
+Since round 3 (4ab4e1a5d → HEAD) the only change to fy2-6's exercise set is the L1-09 correct-option feedback in exercises.json, from commit 442c889ba. Its chain is split with "eli", and "suuruusluokaltaan 2000" now reads "joten lähin vaihtoehto on 2000". solutions.md and answers.py are unchanged. The packet was regenerated, mode full.
 
 ## Blocking
 
 ## Polish
-- exercises.json:398 (L3-05, last table row) — "Tehon säädettävyys: Tasainen" describes the output rather than how adjustable it is. Rename the row "Tuotannon luonne" or write "Tasainen perusvoima" in the solution only. Rendering: the table's scrollWidth is still 601 px in a 593 px box at 1280 px, so "Tasainen" touches the card edge and scrolls 8 px. At 360 px it scrolls inside the table, like the other data tables. The page does not scroll. That part is for the visual reviewer.
-- exercises.json L2-07 and the L3-05 table — the IPCC life-cycle factors are CO₂ equivalents, but the text says "hiilidioksidimäärä" (carried over, minor). Say "hiilidioksidiekvivalentti" or add a footnote.
+- solutions.md:73 (L1-09 Kysytty) — still ends with "suuruusluokka". The feedback now says "lähin vaihtoehto" (resolved there), so this is the last place the old wording is left.
+- exercises.json:136 (L1-09, correct-option feedback) — "$1000\,\text{kW} \cdot 8760\,\text{h}$, eli noin $8{,}7 \cdot 10^{6}\,\text{kWh}$" is off: 1000 kW · 8760 h = 8,76·10⁶ kWh ≈ 8,8·10⁶. The 8,7 belongs to 990 kW. Write "$990\,\text{kW} \cdot 8760\,\text{h}$", or keep 1000 kW with ≈ 8,8·10⁶ and ≈ 1800. The keyed option is unaffected.
+- exercises.json:116 (L1-09) — the fix dropped "Esimerkkinä olevan" from the turbine and the house. Restore one marker, e.g. "(esimerkkiarvot)".
+- exercises.json L2-07 and the L3-05 table — the IPCC life-cycle factors are CO₂ equivalents but are called "hiilidioksidimäärä" (carried over).
+- exercises.json:398 (L3-05) — "Tehon säädettävyys: Tasainen" (carried over).
 
 ## Checked
-- L1-07: there is exactly one correct option. The Mallivastaus has no position words and agrees with all three feedbacks and with the glossary (vesivoima is hyvin säädettävää, ydinvoima is perusvoimaa).
-- L3-05 recomputed without change: 289 080 and 9 460 800 MWh; 16,60 → 17 €/MWh (2,4 %, inside 0,03); nuclear 10,57; c) 3469 t and 113 530 t; ratio 32,7.
-- The round-2 Polish on the "kumpikin kelpaa" reason is resolved in substance: the Vastaus says directly that the emissions per energy are the same.
-- The round-2 numbers still stand for the unchanged tasks (L1-08 2800 h; L2-05 23 pp; L2-06; L2-07 1,6·10⁶ t; L3-04 32 %, 5,7 and 7,2 GW).
-- FY2 scope: only E = Pt, shares and factor × energy.
+- Round-4 feedback: 0,33 · 3,0 MW ≈ 1 MW = 1000 kW; 8,7·10⁶ : 5000 = 1740, so the nearest option is 2000. This agrees with the key, "Valitse lähin arvo" and the Mallivastaus (solutions.md:83). The only slip is the one under Polish.
+- L1-09 options recomputed: mean power gives 1734 → 2000; rated power gives 2,63·10⁷ kWh : 5000 = 5256 → 5000; unconverted MWh gives 1,7 → 2; 3,3 % gives 173 → 200. The nearest option is the same linearly and on a log scale. Exactly one option is correct, and every distractor's feedback is right.
+- solutions.md "Muut vaihtoehdot" ("noin 5300") and the answers.py comment (1735 houses → about 2000) still hold.
+- All 19 numeric answers were recomputed in one python run, all within tolerance; the largest deviation is L1-03 (+1,05 %). L1-06 and L1-07 each have exactly one correct option.
+- Hash 7ba8761f49283226 at start and end. FY2 scope: only E = Pt, shares and factor × energy are used.

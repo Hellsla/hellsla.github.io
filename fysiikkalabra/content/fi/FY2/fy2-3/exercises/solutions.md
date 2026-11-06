@@ -195,3 +195,12 @@ Summa on $800 + 280 + 300 + 400 + 180 = 1960\,\text{Wh}$, joten $E_\text{yht} = 
 **Sijoitus:** Käyntiaikojen summa on $11{,}5 + 12{,}0 + 11{,}5 + 12{,}0 = 47{,}0\,\text{min}$ ja seisonta-aikojen summa $18{,}0 + 18{,}5 + 17{,}5 + 18{,}0 = 72{,}0\,\text{min}$. Kokonaisaika on $47{,}0\,\text{min} + 72{,}0\,\text{min} = 119{,}0\,\text{min}$, joten osuus on $\dfrac{47{,}0}{119{,}0} = 0{,}395$. Keskiteho on $P_\text{ka} = 0{,}395 \cdot 100\,\text{W} = 39{,}5\,\text{W} = 0{,}0395\,\text{kW}$. Vuosikulutus on $E = 0{,}0395\,\text{kW} \cdot 8760\,\text{h} = 346\,\text{kWh}$. Säästö on $(346\,\text{kWh} - 130\,\text{kWh}) \cdot 0{,}20\,\text{€/kWh} = 216\,\text{kWh} \cdot 0{,}20\,\text{€/kWh} = 43{,}2\,\text{€}$.
 **Vastaus:** Keskiteho on noin $40\,\text{W}$, vuosikulutus noin $350\,\text{kWh}$ ja säästö noin $43\,\text{€}$ vuodessa, kaksi merkitsevää numeroa. Uusi $600\,\text{€}$ jääkaappi maksaisi itsensä takaisin vasta ajassa $600\,\text{€} : 43\,\text{€/a} \approx 14\,\text{a}$, joten pelkän sähkön säästön vuoksi hankinta ei kannata, jos vanha jääkaappi toimii. Tulokseen vaikuttavat oletukset: mitattu neljä jaksoa on edustava, eikä huoneen lämpötila, oven avaaminen tai jään kertyminen muuta käyntiaikaa vuoden mittaan, ja muut kulutukset kuten valo ja sulatus jätetään huomiotta.
 **Järkevyys:** Keskiteho $40\,\text{W}$ on alle puolet käyntitehosta, koska kompressori käy noin kaksi viidesosaa ajasta. Jääkaapin vuosikulutus muutamia satoja kilowattitunteja on tyypillinen vanhalle laitteelle, ja sähkön hinta $0{,}20\,\text{€/kWh}$ antaa muutaman kymmenen euron vuosikustannuksen.
+
+## fy2-3-L2-08
+**Kysytty:** miten kiukaan teho $P$ muuttuu, kun sama energia $E$ muunnetaan puolessa ajasta.
+**Periaate:** Kiuas muuntaa energiaa tasaisesti, joten teho on energia jaettuna ajalla, $P = E : t$. Energia on molemmilla kerroilla sama, joten tehoon vaikuttaa vain aika, ja se on osamäärän nimittäjässä.
+**Mallivastaus:** Ensimmäisellä kerralla $P_1 = 6{,}0\,\text{kWh} : 3{,}0\,\text{h} = 2{,}0\,\text{kW}$.
+
+Toisella kerralla $P_2 = 6{,}0\,\text{kWh} : 1{,}5\,\text{h} = 4{,}0\,\text{kW}$.
+
+Teho on siis kaksinkertainen: $P_2 : P_1 = 4{,}0\,\text{kW} : 2{,}0\,\text{kW} = 2{,}0$. Kun aika puolittuu ja energia pysyy samana, teho kasvaa kaksinkertaiseksi. Teho ei puolitu, koska aika on nimittäjässä eikä kertoimena. Se ei pysy samana, koska teho kuvaa muuntumisen vauhtia eikä pelkkää energiaa. Se ei nelinkertaistu, koska aika puolittui vain kerran.

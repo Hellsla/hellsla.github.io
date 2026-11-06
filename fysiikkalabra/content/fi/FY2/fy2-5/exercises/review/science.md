@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: fa39dc3b4232eb3a
-Round: 4
+CONTENT-HASH: 554062ddfd509c38
+Round: 3
 
-Round 3 had no Blocking items. Only change since round 3: the L3-05 "Vastaus:" line states the answer-box value (`git show HEAD`).
+Since round 2 the only change is uncommitted, one line of solutions.md in the working tree. In L3-04, the three month groups now read "… eli 6700", "… eli 1300" and "… eli 5300" in place of "= …". exercises.json and answers.py are unchanged. The packet was regenerated, mode full.
 
 ## Blocking
 
 ## Polish
-- content/fi/FY2/fy2-5/exercises/exercises.json:60 (L1-06, second distractor) — "riippumatta määrästä" makes no sense in the sentence (carried over). Drop the phrase.
-- L3-04 and L3-05 — both still follow the same chain (m = E/(ηH), then η falls), and the plan's level 3 asks for "polttoainemäärä ja päästöt" (carried over). Add an emissions part (factor × fuel energy) to one of them when the set is next edited.
+- content/fi/FY2/fy2-5/exercises/solutions.md:205 (L2-08 Arvio) — "bensiini on lähes $40\,\text{MJ}$ kilogrammaa kohti" is wrong, because 43 is more than 40. Write "yli $40\,\text{MJ}$" or "noin $43\,\text{MJ}$".
+- solutions.md:203 and exercises.json:275 (L2-08) — "$104\,\text{MJ}$" has three significant figures, but the data (26 MJ/kg and 4,0 kg) have two. Write "noin $100\,\text{MJ}$", or note that unrounded values are kept for the ranking.
+- exercises.json:60 (L1-06, second distractor) — "riippumatta määrästä" makes no sense in the sentence (carried over).
+- L3-04 and L3-05 — both still follow the same chain m = E/(ηH). Level 3 in the plan asks for emissions too (carried over).
 
 ## Checked
-- Round 3 -> 4 change (only solutions.md, L3-05 "Vastaus:" line, now "vastauslaatikkoon kohdan b) tulos $940\,\text{kg}$."): 940 kg is part b)'s result (3428,6 - 2491,3 = 937,2 kg -> 940 kg, two significant figures) and equals the answer-box value 940 (tolerance 0,01); wording is clear and consistent with a)-d) below it. Mode: full.
-- L3-05 recomputed: wood 3428,6 kg, pellets 2491,3 kg, difference 937,2 kg. That is 0,3 % from 940, inside 0,01. The 3-figure a) values (3430 − 2490 = 940) also pass. The 2-figure values (3400 − 2500 = 900, −4,3 %) fail, as they should now that b) says to use unrounded masses.
-- L3-05 solution: the Sijoitus difference 3429 − 2491 = 938 kg, the Vastaus 940 kg and answer 940 agree. The b) instruction does not conflict with the 2-figure rounding in the a) Vastaus.
-- L3-05 c), d) and Järkevyys are unchanged and still correct: 2824 kg, +330 kg, 1,13 = 0,85 : 0,75, and 43 : 15 = 2,9.
-- Round-2 checks still stand for the unchanged tasks (L1-07 15,0 kg; L1-08 40,0 kWh; L2-05 5,63 kg; L2-07 18,4 kW; L3-04 3313 kg). Each MC has exactly one correct option, and no solution names an option by its position.
-- FY2 scope: no c·m·ΔT, and one efficiency per chain.
+- Round-3 line: the group sums are unchanged and right (2100 + 1900 + 1600 + 1100 = 6700; 600 + 250 + 200 + 250 = 1300; 600 + 1100 + 1600 + 2000 = 5300). "eli" is read here as "which is", and it does not change the meaning. 6700 + 1300 + 5300 = 13 300 kWh, the same total as before, and each group's sum is right. The rest of the line (47 880 MJ, 3313 kg, 1237 kg, 4024 kg, +710 kg) is unchanged. L3-04 gives 3313,5 kg against the answer 3300 (+0,41 %, tolerance 0,02). Language only: "joten … joten" is repeated.
+- L2-08 (unchanged since round 1): the energies 64,5 / 75 / 104 / 120 MJ match the `order` list, the gaps are at least 10 MJ and the conversions are right. The mass-order and H-order claims are true, and the `prompt` names the quantity and the direction.
+- All 18 numeric answers were recomputed in one python run, all within tolerance; the largest deviation is L2-07 (+2,3 %, tolerance 0,03). L1-06 and L2-06 each have exactly one correct option.
+- Hash 554062ddfd509c38 at start and end. FY2 scope: no c·m·ΔT, one efficiency per chain, and energiasisältö e is kept apart from lämpöarvo H.

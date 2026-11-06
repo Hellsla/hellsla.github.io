@@ -191,3 +191,11 @@
 Vuodessa lamppu ottaa energian $E_\text{o,v} = 0{,}0090\,\text{kW} \cdot 1095\,\text{h} = 9{,}855\,\text{kWh}$. Siitä muuttuu lämmöksi osuus $\dfrac{1510}{2160} = 0{,}699$, eli $E_\text{h,v} = 0{,}699 \cdot 9{,}855\,\text{kWh} = 6{,}89\,\text{kWh}$. Hinta on $6{,}89\,\text{kWh} \cdot 0{,}20\,\text{€/kWh} = 1{,}38\,\text{€}$.
 **Vastaus:** Oikea hyötysuhde on $30\,\%$. Oppilaan $70\,\%$ on häviöiden osuus eikä hyötysuhde. Lampun ottamasta sähköstä muuttuu vuodessa lämmöksi noin $6{,}9\,\text{kWh}$. Sen hinta on noin $1{,}4\,\text{€}$. Oppilaan $70\,\%$ on tähän laskuun oikea luku, koska kysytään lämmöksi muuttuvaa osaa: $30\,\% + 70\,\% = 100\,\%$.
 **Järkevyys:** Valoksi menee $0{,}30 \cdot 9{,}855\,\text{kWh} = 2{,}96\,\text{kWh}$. Valo ja lämpö yhteensä ovat $2{,}96\,\text{kWh} + 6{,}89\,\text{kWh} = 9{,}85\,\text{kWh}$, kuten pitääkin. Ledilampun tyypillinen hyötysuhde on noin $30\,\%$. Koko lampun vuosisähkö maksaa vain $1{,}97\,\text{€}$, joten $1{,}4\,\text{€}$ on järkevä.
+
+## fy2-4-L2-08
+**Kysytty:** mikä oppilaan laskun riveistä on väärin.
+**Periaate:** Hyötysuhde on hyötyenergian osuus otetusta energiasta, $\eta = \dfrac{E_\text{a}}{E_\text{o}}$. Siksi se on enintään $100\,\%$. Laskun voi tarkistaa rivi riviltä. Tarkista ensin yksikkömuunnokset. Tarkista sitten tasaisen tehon energia $E = P \cdot t$ ja energian säilyminen $E_\text{o} = E_\text{a} + E_\text{h}$. Tarkista lopuksi, kumpi energia on jakajana.
+**Mallivastaus:** Rivi 1: $2{,}5\,\text{kW} = 2500\,\text{W}$ ja $4{,}0\,\text{min} = 240\,\text{s}$ ovat oikein.
+Rivi 2: $E_\text{o} = 2500\,\text{W} \cdot 240\,\text{s}$, eli $E_\text{o} = 600\,000\,\text{J} = 600\,\text{kJ}$ on oikein.
+Rivi 3: $E_\text{h} = 600\,\text{kJ} - 360\,\text{kJ} = 240\,\text{kJ}$ on oikein.
+Rivi 4 on väärin, koska energiat on jaettu väärinpäin. Oikein $\eta = \dfrac{E_\text{a}}{E_\text{o}} = \dfrac{360\,\text{kJ}}{600\,\text{kJ}} = 0{,}60 = 60\,\%$. Tarkistus: hyötysuhde $167\,\%$ olisi yli $100\,\%$. Oikea tulos sopii myös riviin 3, sillä $240\,\text{kJ} : 600\,\text{kJ} = 0{,}40$ ja $60\,\% + 40\,\% = 100\,\%$. Oikea vastaus on siis rivi 4.

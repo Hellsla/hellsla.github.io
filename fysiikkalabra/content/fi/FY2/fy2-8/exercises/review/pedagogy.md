@@ -1,25 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 29e5ecd1dc7acc04
+CONTENT-HASH: 0d804621ffb859e2
 Round: 2
+Mode: full packet, judged on L2-08
 
 ## Blocking
 - none
 
 ## Polish
-- exercises.json fy2-8-L1-06 — correct option D is the longest (104 vs 101/92/91) by only 3 characters, acceptable; shorten it by one clause for safety.
-- fy2-8-L1-07 — the correct option is the only one with a multi-year period, which is the concept being tested; fine, but all four now sit at 88-93 characters, so no cue remains.
-- fy2-8-L2-05 and L3-04 — both use the Mauna Loa series but different years; L3-04 is the extension of the L2-05 idea (slope, forecast, validity), a good progression. Keep.
-- fy2-8-L3-05 — a) and b) are long chains of multiplications; fine at level 3, but part c) mostly repeats b). Consider replacing c) with a constraint (wind needs backup) if edited again.
+- fy2-8-L2-08 — option lengths are now 119/116/125/114/122; the correct one (C) is still longest by 3 characters, acceptable. Shorten by one clause if edited again.
+- fy2-8-L2-08 option B ends "ero on epävarmuutta suurempi" and A says "5 kt suurempi kuin 10 kt": both add a false number claim, which is good (they can be refuted from the table), but A's wording "ero 5 kt on suurempi kuin epävarmuus 10 kt" is so plainly false that it may read as a typo; consider "ero on vähintään epävarmuuden suuruinen".
+- Carried over: L1-06 correct option longest by 3; L3-05 c) repeats b).
 
 ## Checked
-- Round 1: L1-06 and L1-07 length cues removed (all options 88-104 and 88-93 characters, correct D and A); L2-05/L3-04 no longer share data or recompute the same slope; "Kuvaajan lukeminen" no longer used in tasks without a graph; L3-05 now states the carbon-sink fact in the task and refers to "oppitunnin taulukko".
-- Numbers verified: L2-05 2,27 ppm/a, L2-06 61 and 45 Mt, 26 %, L3-01 736 g/kWh, L3-02 50x, L3-03 4,14x, L3-04 2,2 ppm/a and 458 ppm (full-series line 446 ppm), L3-05 52 220 t, 24 680 t, 52,7 %, 9,2 pp.
-- MC L2-07: correct C (88) is not the longest, distractors are real unit slips and consistent with the solution.
-- Level 2 data tasks L2-05 and L2-06 fit; level 3 tasks are modelling and data interpretation.
-- Solutions follow the principle, formula, substitution, sanity check order.
-
-## Follow-up (2026-11-04, teacher's edit of L1-06: exercises.json:69, solutions.md:125)
-- L1-06 feedback (exercises.json:69) and model answer (solutions.md:125) now use the lesson's terms (maanpinnan keskilämpötila, yksinkertainen säteilytasapainomalli, efektiivinen säteilylämpötila) and the lesson's framing ("havainnollistaa"); the feedback still repairs the misconception rather than restating the option.
-- The model answer adds the 33 K difference, which is right and gives the student a concrete measure of the effect. Length stays reasonable for a level-1 check.
-- Polish: "kun" → "kun taas" in both sentences, so the contrast cannot be read as a cause.
-- Scope: only these two sentences; the rest of this report stands from the earlier round.
+- Round 1 Blocking closed: all five options are written in the same pattern (claim, koska, reason) and sit at 114-125 characters; no option is the only one with numbers.
+- Solution and feedback add the uncertainty intervals 510-530 and 410-430 kt that do not overlap: true, and a clear way to see why 100 kt counts.
+- Distractors still differ in type: ignoring uncertainty, cause overreach, extrapolation (170 kt in 2034 checks: 420 - 10*25), wrong column.
+- The "5 kt" option is checkable by the student from the table (520 - 515).
+- Delta m rests on FY1 measurement uncertainty; level 2 data interpretation fits.
+- Phone captures not opened; rest of the set unchanged.

@@ -1,21 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: dddd0748a061d540
-Mode: full
-Round: 2
+CONTENT-HASH: eb6030c5ebb1f4dc
 
 ## Blocking
 (none)
 
-## Fixed
-- (none needed)
-
 ## Polish
-- (none)
+(none)
 
 ## Checked
-- New exercises L1-06..08, L2-05..07, L3-04..05 compared with the reviewed Finnish in exercises.json: ids, kind, level, answers (incl. the choice answer 0.0033 GJ), units, tolerances, correct flag, all four choices and their feedback, all data table cells and every number are identical.
-- solutions.md: all math segments of the 8 new solutions equal the Finnish (formula parity); numbers recomputed: 1200 kJ, 350 MJ, 1.6 MJ and 7.3 km, 2.5 MJ, 6.0 km (slope 250 kJ/km), 49 000 times (3 200 000 / 65 GJ), 0.89 kg (1.10 MJ/day x 30 / 37).
-- Decimal comma in text and LaTeX as in the Finnish; table cells keep the same point values as fi.
-- Unit labels ("km", "kJ", "MJ", "times"/"kertaa", "kg") translated correctly.
-- check_i18n.py fi-easy: 0 errors.
-- Round 2 (figure change only): the L1-05 figure "tikapuut-kohteet" shows the same content (scale 1 J … 1 TJ, three marked points, labels) and the caption "jokainen väli on 10-kertainen" only moved 5 units lower; it no longer touches the scale labels and stays inside the figure. No text, number, task, answer or solution changed, so the earlier science findings stand. The answer 100 000 (10⁹ J : 10⁴ J) still follows from the figure.
+- New task fy2-2-L1-09 (unit prefixes, concept) compared with the reviewed Finnish: id, level, kind, answer $1000\,\text{kJ}$, unit, tolerance, four choices, correct flag on the same choice, all numbers identical.
+- Physics recomputed: 1 MJ = 1 000 000 J = 1000 kJ; 1 000 000 kJ = 1 GJ; 1000 GJ = 10^6 MJ; 1000 J = 1 kJ. Every distractor is really wrong and its feedback is right.
+- solutions.md L1-09: all seven steps and all formulas/numbers equal the Finnish; reasonableness check (1000 kJ x 1000 = 1 000 000 J) is valid.
+- Number format: decimal comma as in Finnish; term meanings kept (kilo, mega, giga explained). No scope breach (prefixes are FY1 content applied to energy).
+- check_i18n.py: nothing for fy2-2; build.py fy2-2 succeeds. No fixes were needed.
+- Round 2 (label only): the step label of the L1-09 solution is now 'Mallivastaus' instead of the plain answer label; the text, numbers, formulas and answer are unchanged, so the earlier findings stand. check_i18n.py shows nothing for fy2-2.

@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 59c94115b15b2cf7
+CONTENT-HASH: a5e3a606c3d94d47
+Mode: full
 Round: 3
 
 ## Blocking
 (none)
 
 ## Polish
-- solutions.md L3-04 c) Vastaus and exercises.json L3-04 c) — "Kokonaiskulutus voi pysyä samana, koska energiaa ei synny eikä katoa" presents the conservation law as the cause of a constant total, but a constant total is the task's assumption (real totals usually fall when combustion losses go away). Also "lisää energiaa saman verran kuin fossiilinen vähenee" reads as if total energy grows. Fix: "käytöt tarvitsevat saman energian, eikä sitä synny tyhjästä, joten vesi- ja tuulivoiman on tuotettava se, minkä fossiilinen tuotti (mallissa kokonaiskulutus oletetaan samaksi)".
-- exercises.json L1-07 third option feedback "Ympäristö kuuluu systeemiin" — the task names no system. Write "Kun ympäristö otetaan mukaan systeemiin, ...".
+- content/fi/FY2/fy2-1/exercises/exercises.json:141 — L1-09 statement 3 feedback says "likimain eristetyn", while the task assumes the system is isolated. "oletettu eristetty systeemi" would match the task.
+- solutions.md L3-04 c) and exercises.json L1-07 third option: older Polish items (a constant total presented as caused by conservation; "Ympäristö kuuluu systeemiin") are still open. Not blocking.
 
 ## Checked
-- Round-2 item L3-05 resolved: the reflection remark is gone from the task text and from Periaate, so the model "loppu energia muuttuu lämpöenergiaksi" matches a), b), c) and the check 0,14 + 4,86 = 5,00 MJ. The earlier Polish about heat versus reflection no longer applies.
-- Recomputed L3-05: stage differences 4,20 / 0,16 / 0,08 / 0,42 MJ, sum 4,86 MJ, panel share 86,4 %, light share 2,8 %. All match the key and solutions.md.
-- Diff since round 2 touches only that sentence (exercises.json and solutions.md); no other task changed, and L3-04 (470/1200 = 39,2 %, 218 GJ, over 70 PJ) is still correct.
-- FY2 scope holds (no W, no c·m·ΔT, no product of efficiencies).
-- Hash 59c94115b15b2cf7 vs. reported value was the same at start and end.
+- Hash a5e3a606c3d94d47 at start and end. Between round 2 (9fd1b2088) and HEAD (442c889ba), the only content change is one line, solutions.md L2-05 Järkevyys.
+- L2-05 recomputed from the table: total 36,0 + 10,5 + 9,0 + 4,5 = 60,0 GJ, shares 60 / 17,5 / 15 / 7,5 %.
+- The split check 60 % + 17,5 % = 77,5 % and 15 % + 7,5 % = 22,5 %, together 100 %, is correct and has the same numbers as before.
+- Key 60,0 %, answers.py line and Vastaus unchanged and consistent.
+- L1-09 is unchanged since round 2 and still correct: key 1 T, 2 F, 3 T, 4 F, 5 T; mechanism "mekaaninen energia → lämpöenergia".

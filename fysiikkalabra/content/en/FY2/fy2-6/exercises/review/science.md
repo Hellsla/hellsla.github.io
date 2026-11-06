@@ -1,18 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 28713b6250d269a0
+CONTENT-HASH: 8a33f75cd251a5cc
 Mode: full
-Round: 1
+Round: 2
 
 ## Blocking
 (none)
-
-## Fixed
-- exercises.json L1-07 feedback: "it cannot be decided" -> "it cannot be chosen".
-- exercises.json L2-07 a): reordered the long opening clause so the task reads: "Take the part of the life-cycle emissions that belongs to one year's electricity production. How many million tonnes ... would be saved ...?" (numbers and formulas untouched).
 
 ## Polish
 (none)
 
 ## Checked
-Translation of the 8 new exercises (L1-06..08, L2-05..07, L3-04..05) against the Finnish: ids, answers, units, tolerances, correct flags, choices and feedback, table captions, columns and cells, and every number match (scripted comparison, decimal comma normalised; decimal point in en JSON and LaTeX). solutions.md numbers identical to fi (720 of 720). No Finnish left in en. check_i18n.py en: 0 errors.
-Answers recomputed: 2800 h, 23 percentage points (22.8), 33 %, 1.6 million t, 6.7 GW, 17 euro/MWh (16.6).
+fy2-6-L1-09 (en) after commit 442c889ba: the correct-option feedback is split into short inline formulas joined by "that is" with the same numbers as the reviewed Finnish (0.33 * 3.0 MW ~ 1 MW = 1000 kW; 1000 kW * 8760 h ~ 8.7e6 kWh; 8.7e6 : 5000 ~ 1700). Translation fix this round: the closing clause now reads "so the closest option is $2000$", matching the Finnish change from "of the order of 2000" (no number or formula touched). Solution text unchanged and equal to Finnish (990 kW, 8.67e6 kWh, 1700, 2000; distractor 5300). check_i18n.py: nothing for fy2-6; build.py fy2-6 succeeds. Hash at start 1dc03f6c1872c7d2 (en) / a0071dd8179f13ff (fi-easy), final below; packets regenerated for both roles.
+Physics recomputed again: 1734 houses, so 2000; all distractor numbers (2, 200, 5256) correct.

@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 709d7df0039b5be6
-Round: 2
+CONTENT-HASH: 7b14ba9ee8f88098
+Round: 4
 
 ## Blocking
 (none)
 
 ## Polish
-- exercises.json: "burned" (L1-07) and "burnt" (L1-03, L2-02) are mixed; pick one spelling (not changed, both correct).
+- Finnish source (not editable here): L2-08 solution says petrol has "lähes 40 MJ/kg" but H = 43; "yli 40" is accurate. Fixed in this translation only.
 
 ## Checked
-- Round 1 -> 2 change (only solutions.md, L3-05 "Answer:" line, now "in the answer box, the result of part b), $940\,\text{kg}$."): 940 kg is part b)'s result and the box value 940; wording matches the Finnish and reads fine. Mode: full.
-- Translation review against the reviewed Finnish (2026-11-04), 16 tasks. New tasks L1-06..08, L2-05..07, L3-04..05: ids, answers (15 kg, 40 kWh, 5.6 kg, 18 kW, 3300 kg, 940 kg), units, tolerances (0.02, 0.03, 0.01), kind, correct flags, choices and feedback, data cells equal the Finnish (scripted comparison of all non-text JSON values: identical).
-- All numbers in solutions.md equal the Finnish (scripted; only the position of one 0.65 in the L2-07 sentence differs, word order).
-- Recomputed: 255/17=15; 144/3.6=40; 200/14.7-200/10.4=5.62; 0.065 kg/min -> 18.4 kW; 13300 kWh -> 3313 kg pellets, 940 kg difference; no formula changes.
-- Distractor logic and feedback correct in L1-06 and L2-06 (21.7 kWh, 26:3.0=8.7, 129 MJ).
-- Language: English; no Finnish left. check_i18n.py en: 0 errors. No edits needed.
+- New task fy2-5-L2-08 (order, YO form) compared with the reviewed Finnish: data (43/1500 g, 15/5.0 kg, 26/0.0040 t, 10/12 kg), order items, answer string, unit "", tolerance 0.02, kind equal.
+- Recomputed: 43*1.5=64.5, 15*5.0=75, 26*4.0=104, 10*12=120 MJ; order petrol < firewood < coal < milled peat is correct; 1500 g=1.5 kg, 0.0040 t=4.0 kg.
+- Mass-order remark (petrol 1.5, coal 4.0, firewood 5.0, peat 12 kg) correct; firewood and coal swap.
+- No formula, number or unit lost; L2-08 solution numbers equal the Finnish.
+- Language: natural English, decimal point (5.0, 0.0040), no Finnish left.
+- check_i18n.py: nothing for fy2-5; build.py fy2-5 succeeds. Earlier 16 tasks unchanged since round 2.
+- Round 3 -> 4 (commit 442c889ba): L3-04 Substitution line split into groups of four months (2100+1900+1600+1100 = 6700, 600+250+200+250 = 1300, 600+1100+1600+2000 = 5300, sum 6700+1300+5300 = 13 300); recomputed, correct, same numbers and wording pattern as the Finnish. No other change; no edits needed.

@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: e321927e96884da9
+CONTENT-HASH: 563ece0a62c60f6f
 
 ## Blocking
 (none)
 
 ## Fixed
-- L1-06 feedback reworded (see science.md).
+(none needed)
 
 ## Polish
 (none)
 
 ## Checked
-- Natural, short English; tasks say what to give (unit, kW, W, GWh, EUR) and do not give answers away.
-- Feedback on wrong choices is the same as in the Finnish: names the misconception (kW vs kWh, power vs total energy, slope vs height of line).
-- Solutions keep all steps in the Finnish order with real reasonableness checks; "fridge (compressor running)", "balancing power" and "c/kWh" are natural terms.
-- Levels and sequence (8 new tasks) match the reviewed Finnish.
+- L2-08 reads naturally in English; the question is its own last sentence; no trap, and the option feedback names each misreading (time read the wrong way round, energy alone, square).
+- Solution follows principle, model answer, then why each wrong option fails, as in the Finnish; level 2 fits.

@@ -59,6 +59,11 @@
 **Periaate:** Energiaa ei synny eikä katoa. Energia muuttaa muotoa: $E_\text{alussa} = E_\text{lopussa}$. Jokaisessa muutoksessa osa energiasta muuttuu lämpöenergiaksi. Lämpöenergia siirtyy lämpönä ympäristöön.
 **Mallivastaus:** Pistorasiasta tulee sähköenergiaa. Laturi muuttaa sen sellaiseksi sähköenergiaksi, joka sopii puhelimen akulle. Akussa sähköenergia varastoituu kemialliseksi energiaksi. Ketju on siis sähköenergia → sähköenergia → kemiallinen energia. Muutos ei ole täydellinen. Osa pistorasiasta tulevasta sähköenergiasta muuttuu laturissa lämpöenergiaksi. Siksi laturi lämpenee ja lämpöä siirtyy ympäristöön. Energian säilymislain mukaan pistorasiasta otettu energia on yhtä suuri kuin akkuun varastoitunut kemiallinen energia ja lämpöenergia yhteensä. Energiaa ei siis ole kadonnut. Lämpöenergiaa ei kuitenkaan voi enää käyttää puhelimen lataamiseen.
 
+## fy2-1-L1-09
+**Kysytty:** mitkä väitteistä pomppivan pallon energiasta ovat tosia ja mitkä epätosia
+**Periaate:** Energiaa ei synny eikä katoa. Energia muuttaa muotoa: eristetyssä systeemissä $E_\text{alussa} = E_\text{lopussa}$. Summaan kuuluvat kaikki energialajit, myös lämpöenergia. Törmäyksessä ja ilmanvastuksen takia mekaanista energiaa muuttuu lämpöenergiaksi.
+**Mallivastaus:** Väitteet 1, 3 ja 5 ovat tosia. Mekaaninen energia $E_\text{p} + E_\text{k}$ pienenee jokaisessa pompussa. Pallon, lattian ja ilman kokonaisenergia pysyy kuitenkin samana. Lopussa pallolla ei ole enää liike-energiaa. Sillä ei ole myöskään potentiaalienergiaa, jonka se sai olemalla lattiaa korkeammalla. Sama energia on lämpöenergiana pallossa, lattiassa ja ilmassa. Väitteet 2 ja 4 ovat epätosia. Energia ei kulu loppuun. Lämpöenergia kuuluu kokonaisenergiaan, joten kokonaisenergia ei vähene.
+
 ## fy2-1-L2-01
 **Annettu:** akusta vapautuva kemiallinen energia $E_\text{kem} = 3{,}00\,\text{kJ}$, potkulaudan ja kuljettajan liike-energia $E_\text{k} = 2150\,\text{J}$
 **Kysytty:** lämpöenergiaksi muuttuva energia $E_\text{lämpö}$ yksikössä $\text{J}$
@@ -107,7 +112,7 @@
 **Muunnokset:** Kaikki energiat ovat gigajouleina, joten muunnoksia ei tarvita. Osuus muutetaan prosenteiksi kertomalla sadalla.
 **Sijoitus:** Summa on $E_\text{yht} = 36{,}0\,\text{GJ} + 10{,}5\,\text{GJ} + 9{,}0\,\text{GJ} + 4{,}5\,\text{GJ} = 60{,}0\,\text{GJ}$, joten osuus on $\dfrac{36{,}0\,\text{GJ}}{60{,}0\,\text{GJ}} = 0{,}600 = 60{,}0\,\%$
 **Vastaus:** Lämmityksen osuus on $60\,\%$ kulutuksesta. Suurin säästökohde on tilojen lämmitys, koska siinä kuluu eniten energiaa. Kymmenen prosentin säästö lämmityksessä vähentäisi kulutusta $3{,}6\,\text{GJ}$. Sama säästö saunassa vähentäisi kulutusta vain $0{,}45\,\text{GJ}$.
-**Järkevyys:** Osuus on välillä $0$–$100\,\%$. Lämmitys on suurin erä, joten yli puolet on uskottava pohjoisessa asuinrakennuksessa. Tarkistus osuuksien summalla: $60\,\% + 17{,}5\,\% + 15\,\% + 7{,}5\,\% = 100\,\%$.
+**Järkevyys:** Osuus on välillä $0$–$100\,\%$. Lämmitys on suurin erä, joten yli puolet on uskottava pohjoisessa asuinrakennuksessa. Tarkistus osuuksien summalla: $60\,\% + 17{,}5\,\% = 77{,}5\,\%$ ja $15\,\% + 7{,}5\,\% = 22{,}5\,\%$, yhteensä $77{,}5\,\% + 22{,}5\,\% = 100\,\%$.
 
 ## fy2-1-L2-06
 **Annettu:** putoavan veden potentiaalienergian väheneminen $100\,\text{J}$ kierroksella, generaattorin sähköenergia $100\,\text{J}$, pumpun käyttämä sähköenergia $80\,\text{J}$, vesi palaa yläaltaaseen

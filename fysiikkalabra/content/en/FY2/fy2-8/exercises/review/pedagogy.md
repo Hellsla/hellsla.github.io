@@ -1,22 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: bfa242d0bb3d6d72
-Mode: full
-Round: 1
+CONTENT-HASH: ab3a7a9c0b52be41
+Mode: delta (new task fy2-8-L2-08 only)
+Round: 2
 
 ## Blocking
 - none
+
+## Fixed
+- exercises.json L2-08 option 2 feedback: "a more efficient equipment" -> "more efficient equipment" (grammar).
 
 ## Polish
 - none
 
 ## Checked
-- Translation keeps the pedagogy of the reviewed Finnish: L1-06/07 distractors and feedback each name the misconception (reflection, total absorption, atmosphere as energy source; weather vs climate by period length), L2-07 error-analysis feedback explains why each wrong option fails, L3-04 c and L3-05 d keep the reasoning prompts and the "what the emission factor does not tell" question.
-- Solutions keep the same structure and number of lines as the Finnish (Given, Find, Principle, Formula, Conversions, Substitution, Answer, Reasonableness, Conclusion); a) to d) parts in the same order.
-- Example data marked as examples ("example data, not statistics"; "The statements are examples, not measurement results") as in the Finnish; real data named NOAA Mauna Loa.
-- Reading level: English is clear and neutral for a Year 10-11 student.
-- No edits needed.
-
-## Follow-up (2026-11-04, teacher's edit of L1-06: exercises.json:69, solutions.md:125)
-- The L1-06 feedback and model answer use the lesson's terms (mean surface temperature, simple radiative balance model, effective radiating temperature) and match the Finnish. Clear for a Year 10–11 reader; the 33 K difference is a useful concrete figure.
-- The feedback still explains the mechanism before the numbers, so it repairs the misconception.
-- Scope: only these two sentences; the rest of this report stands from the earlier round.
+- fy2-8-L2-08 (exercises.json and solutions.md) against the reviewed Finnish: same table (5 rows, E and m), uncertainty 10 kt, correct option (2020 to 2024, 100 kt = 10 x 10 kt), exactly one correct flag, same five choices in the same order, tolerance and kinds equal.
+- Recomputed: 520 - 420 = 100 kt; 520 - 515 = 5 kt < 10 kt; intervals 510-530 and 410-430 kt do not overlap (2020/2021 intervals 510-530 and 505-525 do); slope -25 kt/a x 10 a from 420 gives 170 kt for 2034; 1000 GWh in both years sits in column E.
+- Each distractor still has one error and feedback that names it (wrong uncertainty comparison, unsupported cause, extrapolation, wrong column); no feedback gives a false number.
+- Solutions section keeps Find / Principle / Model answer as in fi; numbers equal.
+- English decimal point not applicable (integers only); natural English: "uncertainty range", "over-interpreting", "extrapolating too far".
+- check_i18n.py: nothing for fy2-8; build.py fy2-8 succeeds.

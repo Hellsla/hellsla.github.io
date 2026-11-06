@@ -94,6 +94,36 @@
       "answer": 350,
       "unit": "MJ",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-2-L1-09",
+      "level": 1,
+      "text": "Pellettikattilan lämpöenergia on $1\\,\\text{MJ}$. Mikä seuraavista arvoista on yhtä suuri kuin $1\\,\\text{MJ}$?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "$1000\\,\\text{kJ}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "$1000\\,\\text{J}$",
+          "feedback": "Tämä on yksi kilojoule, ei megajoule. Kilo tarkoittaa tuhatta, mutta mega tarkoittaa miljoonaa, joten $1\\,\\text{MJ} = 1\\,000\\,000\\,\\text{J}$."
+        },
+        {
+          "text": "$1\\,000\\,000\\,\\text{kJ}$",
+          "feedback": "Tässä miljoonakertainen kerroin on lisätty kilojouleihin, jotka ovat jo tuhatkertaisia. Tämä arvo on $1\\,\\text{GJ}$. Megajoule on tuhat kilojoulea."
+        },
+        {
+          "text": "$1000\\,\\text{kJ}$",
+          "feedback": "Oikein: kilo tarkoittaa tuhatta ja mega miljoonaa, joten $1\\,\\text{MJ} = 1\\,000\\,000\\,\\text{J} = 1000\\,\\text{kJ}$.",
+          "correct": true
+        },
+        {
+          "text": "$1000\\,\\text{GJ}$",
+          "feedback": "Tässä etuliitteiden suunta on kääntynyt: giga on suurempi kuin mega, joten gigajoule on tuhat megajoulea. Tämä arvo on $1000\\,\\text{GJ} = 1\\,000\\,000\\,\\text{MJ}$."
+        }
+      ]
     }
   ],
   "level2": [

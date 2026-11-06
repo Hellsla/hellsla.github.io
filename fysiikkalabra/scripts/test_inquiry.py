@@ -115,12 +115,13 @@ def list_tasks(pg, url):
         fs.locator("button.commit").click()
         shown = fs.locator(".feedback:visible, .ord-right:visible").count()
         check(f"{i}: the second wrong answer shows every right answer and locks", shown == n and not fs.locator("button.commit").is_visible(), f"{shown}/{n} shown")
-    pg.goto(url); pg.wait_for_timeout(300)
-    pg.evaluate("document.querySelectorAll('#exercises details').forEach((d) => { d.open = true; })")
+    q = pg.context.browser.new_page(viewport={"width": 1280, "height": 900}); q.goto(url); q.wait_for_timeout(300)   # a fresh page: the run's own page keeps its open boxes
+    q.evaluate("document.querySelectorAll('#exercises details').forEach((d) => { d.open = true; })")
     for i in ids:
-        fs = pg.locator(f'fieldset[data-id="{i}"]'); n = fs.locator("ol.tf-list > li, ul.order-list > li").count()
+        fs = q.locator(f'fieldset[data-id="{i}"]'); n = fs.locator("ol.tf-list > li, ul.order-list > li").count()
         fs.evaluate(js_right); fs.locator("button.commit").click()
         check(f"{i}: the right answers are marked right", fs.locator("output").get_attribute("data-state") == "ok" and fs.locator('li[data-state="ok"]').count() == n)
+    q.close()
 
 def page_form(pg, b, url, acts, page):
     """The lesson page form of 2026-10-26 (CLAUDE.md "Lesson page"), checked on the rendered page. pg is a 1280 px page."""

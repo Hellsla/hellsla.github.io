@@ -258,6 +258,76 @@
           "feedback": "Yksikkö $\\text{g/kWh} \\cdot \\text{kWh}$ antaa grammat, ei milligrammoja. Tulos $1640\\,\\text{g}$ on $1{,}6\\,\\text{kg}$."
         }
       ]
+    },
+    {
+      "id": "fy2-8-L2-08",
+      "level": 2,
+      "text": "Taulukossa on esimerkkivoimalan vuosittainen sähköntuotanto $E$ ja sen vuosittainen elinkaaripäästö $m$ hiilidioksidiekvivalentteina (esimerkkiaineisto, ei tilasto). Elinkaaripäästö sisältää kaikki päästöt polttoaineen hankinnasta sähköntuotantoon asti. Jokaisen vuoden päästöarvon epävarmuus on $\\Delta m = 10\\,\\text{kt}$. Minkä seuraavista päätelmistä taulukon aineisto tukee? Aineisto tukee päätelmää, kun taulukon luvut riittävät sen perusteluksi.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": "Päästö pieneni vuodesta $2020$ vuoteen $2024$, koska ero $100\\,\\text{kt}$ on paljon suurempi kuin epävarmuus $10\\,\\text{kt}$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Esimerkkivoimalan tuotanto ja päästö (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{a})$",
+          "$E\\,(\\text{GWh})$",
+          "$m\\,(\\text{kt})$"
+        ],
+        "rows": [
+          [
+            "2020",
+            "1000",
+            "520"
+          ],
+          [
+            "2021",
+            "1020",
+            "515"
+          ],
+          [
+            "2022",
+            "1010",
+            "470"
+          ],
+          [
+            "2023",
+            "1030",
+            "468"
+          ],
+          [
+            "2024",
+            "1000",
+            "420"
+          ]
+        ]
+      },
+      "choices": [
+        {
+          "text": "Päästö pieneni jo vuodesta $2020$ vuoteen $2021$, koska ero $5\\,\\text{kt}$ on suurempi kuin epävarmuus $10\\,\\text{kt}$.",
+          "feedback": "Epävarmuutta on verrattu väärin. Ero $520\\,\\text{kt} - 515\\,\\text{kt} = 5\\,\\text{kt}$ on pienempi eikä suurempi kuin epävarmuus $10\\,\\text{kt}$. Se voi siis johtua pelkästä mittaus- ja laskentavaihtelusta. Tämän kahden vuoden perusteella ei voi osoittaa, että päästö pieneni."
+        },
+        {
+          "text": "Taulukko todistaa, että päästö pieneni, koska voimala siirtyi kivihiilestä biomassaan; ero on epävarmuutta suurempi.",
+          "feedback": "Syy on tulkittu liikaa. Taulukossa on vain tuotanto ja päästö. Siinä ei ole tietoa polttoaineesta. Aineisto näyttää, että päästö pieneni, mutta se ei kerro, miksi. Syy voisi olla yhtä hyvin tehokkaampi laitteisto tai jokin muu muutos."
+        },
+        {
+          "text": "Päästö pieneni vuodesta $2020$ vuoteen $2024$, koska ero $100\\,\\text{kt}$ on paljon suurempi kuin epävarmuus $10\\,\\text{kt}$.",
+          "feedback": "Oikein: vuosien $2020$ ja $2024$ päästöjen ero on $520\\,\\text{kt} - 420\\,\\text{kt} = 100\\,\\text{kt}$. Se on kymmenkertainen epävarmuuteen $10\\,\\text{kt}$ verrattuna. Arvojen epävarmuusvälit $510$–$530\\,\\text{kt}$ ja $410$–$430\\,\\text{kt}$ eivät mene päällekkäin. Pieneneminen on siis todennäköisesti todellista, vaikka yksittäisten vuosien pienet erot jäisivät epävarmuuden sisään.",
+          "correct": true
+        },
+        {
+          "text": "Päästö on vuonna $2034$ enää $170\\,\\text{kt}$, koska pieneneminen jatkuu samaa vauhtia kuin vuosina $2020$–$2024$.",
+          "feedback": "Ennuste ulottuu liian pitkälle aineiston ulkopuolelle. Aineisto kattaa vain viisi vuotta, mutta ennuste olisi kymmenen vuotta sen jälkeen. Päästöjen kehitys voi muuttua, esimerkiksi jos voimalan tuotantotapa tai käyttö muuttuu. Siksi tämä trendi ei riitä perusteeksi näin pitkälle ennusteelle."
+        },
+        {
+          "text": "Päästö ei muuttunut vuosien $2020$ ja $2024$ välillä, koska sähköntuotanto oli molempina vuosina sama, $1000\\,\\text{GWh}$.",
+          "feedback": "Päätelmä lukee väärää saraketta. Luku $1000\\,\\text{GWh}$ kuuluu sarakkeeseen $E$, joka kertoo tuotetun energian. Päästö on sarakkeessa $m$, ja siinä arvo pieneni $520\\,\\text{kt}$:sta $420\\,\\text{kt}$:iin. Kun tuotanto pysyy samana ja päästö pienenee, päästö tuotettua energiaa kohti pienenee."
+        }
+      ]
     }
   ],
   "level3": [

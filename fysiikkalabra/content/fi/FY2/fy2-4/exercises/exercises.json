@@ -249,6 +249,41 @@
           "feedback": "Hyötysuhde on suhdeluku, joten eri kokoisten laitteiden hyötysuhteet voi verrata. Juuri siksi suhdeluku on hyödyllinen."
         }
       ]
+    },
+    {
+      "id": "fy2-4-L2-08",
+      "level": 2,
+      "text": "Sähkömoottori ottaa sähköverkosta tasaisesti tehon $2{,}5\\,\\text{kW}$ ja käy $4{,}0\\,\\text{min}$. Sinä aikana se antaa liike-energiaa $360\\,\\text{kJ}$. Oppilas laski moottorin hyötysuhteen näin:\n\nRivi 1: teho $P_\\text{o} = 2{,}5\\,\\text{kW} = 2500\\,\\text{W}$ ja aika $t = 4{,}0\\,\\text{min} = 240\\,\\text{s}$.\n\nRivi 2: otettu energia $E_\\text{o} = P_\\text{o} \\cdot t$, eli $E_\\text{o} = 2500\\,\\text{W} \\cdot 240\\,\\text{s}$, joten $E_\\text{o} = 600\\,\\text{kJ}$.\n\nRivi 3: häviöenergia $E_\\text{h} = E_\\text{o} - E_\\text{a}$, eli $E_\\text{h} = 600\\,\\text{kJ} - 360\\,\\text{kJ}$, joten $E_\\text{h} = 240\\,\\text{kJ}$.\n\nRivi 4: hyötysuhde $\\eta = E_\\text{o} : E_\\text{a}$, eli $\\eta = 600\\,\\text{kJ} : 360\\,\\text{kJ}$, joten $\\eta = 1{,}67 = 167\\,\\%$.\n\nMikä rivi on väärin?",
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "answer": "Rivi 4: hyötysuhteen laskeminen",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Rivi 1: tehon ja ajan muunnokset",
+          "feedback": "Rivi 1 on oikein: $1\\,\\text{kW} = 1000\\,\\text{W}$, joten $2{,}5\\,\\text{kW} = 2500\\,\\text{W}$, ja $1\\,\\text{min} = 60\\,\\text{s}$, joten $4{,}0\\,\\text{min} = 240\\,\\text{s}$. Jos muunnoksen luulee virheelliseksi, sekoittaa minuutin ja sekunnin suhteen (esimerkiksi luulee minuutissa olevan $100\\,\\text{s}$)."
+        },
+        {
+          "text": "Rivi 2: otetun energian laskeminen",
+          "feedback": "Rivi 2 on oikein: tasaisella teholla energia on teho kerrottuna ajalla, $2500 \\cdot 240 = 600\\,000$, ja $600\\,000\\,\\text{J} = 600\\,\\text{kJ}$. Joulut ja watit ovat johdonmukaiset, koska $1\\,\\text{W} \\cdot 1\\,\\text{s} = 1\\,\\text{J}$."
+        },
+        {
+          "text": "Rivi 3: häviöenergian laskeminen",
+          "feedback": "Rivi 3 on oikein: energia säilyy, joten häviöt ovat otettu energia vähennettynä hyötyenergialla, $600\\,\\text{kJ} - 360\\,\\text{kJ} = 240\\,\\text{kJ}$. Häviöt eivät ole hyötysuhde, vaan energia, joten niiden yksikkö on kJ."
+        },
+        {
+          "text": "Rivi 4: hyötysuhteen laskeminen",
+          "correct": true,
+          "feedback": "Oikein, tämä rivi on väärin: osoittaja ja nimittäjä on vaihdettu. Hyötysuhde on hyötyenergia jaettuna otetulla energialla, $\\eta = E_\\text{a} : E_\\text{o}$, eli $\\eta = 360\\,\\text{kJ} : 600\\,\\text{kJ} = 0{,}60$, eli $60\\,\\%$. Tulos $167\\,\\%$ olisi jo sinänsä merkki virheestä, koska hyötysuhde on enintään $100\\,\\%$."
+        },
+        {
+          "text": "Laskussa ei ole virhettä",
+          "feedback": "Laskussa on virhe rivillä 4. Tulos $167\\,\\%$ ylittää $100\\,\\%$, mikä on mahdotonta, koska hyötyenergia ei voi olla suurempi kuin otettu energia. Rivit 1–3 ovat oikein."
+        }
+      ]
     }
   ],
   "level3": [

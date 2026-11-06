@@ -89,6 +89,17 @@
 **Answer:** $1200\,\text{kWh}$, or $1.2 \cdot 10^3\,\text{kWh}$, two significant figures as in the loss percentage $20\,\%$ (the least precise value).
 **Reasonableness:** Without losses the energy would be $40.0\,\text{kW} \cdot 24\,\text{h} = 960\,\text{kWh}$. The loss is $1200\,\text{kWh} - 960\,\text{kWh} = 240\,\text{kWh}$, which is $20\,\%$ of $1200\,\text{kWh}$, and the result is $25\,\%$ larger than the need.
 
+## fy2-7-L2-08
+**Find:** in which network more energy is lost per week and why.
+**Principle:** The loss is a share of the energy sent into the network: $E_\text{loss} = p\, E_\text{sent}$. The loss percentage alone does not tell the amount of energy lost, because different amounts of energy are sent into the networks.
+**Model answer:** More energy is lost in the electricity grid. Reason: the loss is obtained by multiplying the energy sent out by the loss share, so a smaller percentage can give a larger loss when much more energy is sent out. Let us calculate both:
+
+Electricity grid: $E_\text{loss} = 0.040 \cdot 1000\,\text{MWh}$, so $E_\text{loss} = 40\,\text{MWh}$
+
+District heating network: $E_\text{loss} = 0.090 \cdot 300\,\text{MWh}$, so $E_\text{loss} = 27\,\text{MWh}$
+
+The loss of the electricity grid, $40\,\text{MWh}$, is larger than that of the district heating network, $27\,\text{MWh}$, even though the loss percentage of the district heating network is more than double. The lost energy turns into heat in the surroundings; it does not disappear.
+
 ## fy2-7-L3-01
 **Given:** energy needed at the destination $E_\text{arrived} = 600\,\text{MWh}$; loss before $9.0\,\%$ and after $6.0\,\%$ of the sent energy
 **Find:** the decrease in the energy fed in by the heating plant in megawatt-hours

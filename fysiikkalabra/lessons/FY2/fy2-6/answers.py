@@ -12,6 +12,7 @@ a["fy2-6-L1-04"] = (20.2 + 0.9) / 79.9 * 100  # read off fy2-6/fi-bars: wind 20,
 a["fy2-6-L1-05"] = 4.0 * 3.5                # house solar panels, 4,0 kW for 3,5 h: E = 14 kWh
 a["fy2-6-L1-08"] = round(11e3 / 4.0, -2)    # wind turbine 11 GWh = 11 000 MWh : 4,0 MW = 2750 h -> 2800 h (two significant figures)
 # fy2-6-L1-06 and L1-07 are multiple choice: no number
+# fy2-6-L1-09 is multiple choice (orders of magnitude): wind turbine 0,33 · 3,0 MW = 990 kW; 990 kW · 8760 h = 8,67·10^6 kWh; : 5000 kWh = 1735 houses -> about 2000
 # Level 2: two steps or a conversion
 P_ka = 0.32 * 25                            # wind farm: mean power 32 % of rated 25 MW = 8,0 MW
 a["fy2-6-L2-01"] = P_ka * h_year / 1e3      # E = 8,0 MW · 8760 h = 70 080 MWh = 70,08 GWh -> 70 GWh

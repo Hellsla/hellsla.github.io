@@ -59,6 +59,11 @@
 **Principle:** Energy is neither created nor destroyed but changes form: $E_\text{initial} = E_\text{final}$. In every change part of the energy changes into thermal energy, which is transferred as heat to the surroundings.
 **Model answer:** Electrical energy comes from the wall socket. The charger changes it into electrical energy suitable for the battery of the phone, and in the battery the electrical energy is stored as chemical energy. So the chain is electrical energy → electrical energy → chemical energy. The change is not perfect: part of the electrical energy from the wall socket changes into thermal energy in the charger, and that is why the charger warms up and heat is transferred to the surroundings. By the law of conservation of energy, the energy taken from the wall socket equals the chemical energy stored in the battery and the thermal energy together, so no energy has been lost. However, the thermal energy can no longer be used to charge the phone.
 
+## fy2-1-L1-09
+**Find:** which statements about the energy of a bouncing ball are true and which are false
+**Principle:** Energy is neither created nor destroyed but changes form: in an isolated system $E_\text{initial} = E_\text{final}$. The sum includes all forms of energy, also thermal energy. In the collision and because of air resistance, mechanical energy changes into thermal energy.
+**Model answer:** Statements 1, 3 and 5 are true. The mechanical energy $E_\text{p} + E_\text{k}$ decreases in every bounce, but the total energy of the ball, the floor and the air stays the same. At the end the ball has no kinetic energy and no potential energy gained from being above the floor, and the same energy is thermal energy in the ball, the floor and the air. Statements 2 and 4 are false: energy is not used up, and thermal energy is part of the total energy, so the total energy does not decrease.
+
 ## fy2-1-L2-01
 **Given:** chemical energy released from the battery $E_\text{chem} = 3.00\,\text{kJ}$, kinetic energy of the scooter and rider $E_\text{k} = 2150\,\text{J}$
 **Find:** energy changed into thermal energy $E_\text{thermal}$ in $\text{J}$
@@ -107,7 +112,7 @@
 **Conversions:** All energies are in gigajoules, so no conversions are needed. The share is changed into a percentage by multiplying by one hundred.
 **Substitution:** The sum is $E_\text{tot} = 36.0\,\text{GJ} + 10.5\,\text{GJ} + 9.0\,\text{GJ} + 4.5\,\text{GJ} = 60.0\,\text{GJ}$, so the share is $\dfrac{36.0\,\text{GJ}}{60.0\,\text{GJ}} = 0.600 = 60.0\,\%$
 **Answer:** The share of heating is $60\,\%$ of the consumption. The biggest target for saving is space heating, because it uses the most energy: a ten percent saving in heating would reduce the consumption by $3.6\,\text{GJ}$, but the same saving in the sauna by only $0.45\,\text{GJ}$.
-**Reasonableness:** The share is between $0$ and $100\,\%$, and heating is the biggest item, so more than half is believable in a residential building in the north. Checking the sum of the shares: $60\,\% + 17.5\,\% + 15\,\% + 7.5\,\% = 100\,\%$.
+**Reasonableness:** The share is between $0$ and $100\,\%$, and heating is the biggest item, so more than half is believable in a residential building in the north. Checking the sum of the shares: $60\,\% + 17.5\,\% = 77.5\,\%$ and $15\,\% + 7.5\,\% = 22.5\,\%$, in total $77.5\,\% + 22.5\,\% = 100\,\%$.
 
 ## fy2-1-L2-06
 **Given:** decrease of the potential energy of the falling water $100\,\text{J}$ per cycle, electrical energy of the generator $100\,\text{J}$, electrical energy used by the pump $80\,\text{J}$, the water returns to the upper pool

@@ -1,20 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 806a7348f1f818c0
-Mode: full
-Round: 1
+CONTENT-HASH: 2c9fdf155f72e6a3
 
 ## Blocking
-(none)
-
-## Fixed
 (none)
 
 ## Polish
 (none)
 
 ## Checked
-- The wording keeps the task structure of fi: sub-questions a) b) c), what to justify, and what unit to answer in are unchanged.
-- Wrong-choice feedback in L1-06 and L1-07 targets the same misconceptions as fi and does not give away the answer.
-- Level 3 tasks keep the "example figures, not real statistics" marking (L3-04) and the model assumption sentence (L3-05).
-- Language level: short sentences, one idea each, energy forms and terms explained, e.g. "Ympäristö kuuluu systeemiin. Siksi ...".
-- Solutions follow the Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness structure of fi.
+- L1-09 (fi-easy) is a level-1 true/false task with five statements; it keeps the structure of fi: one statement per misconception (energy used up, thermal energy not counted), and feedback that repairs it without giving the answer before the student chooses.
+- Wording is natural for the language and uses the glossary terms for mechanical, thermal, potential and kinetic energy.
+- Model answer in solutions.md explains each true and false statement, as in fi.
+- fi-easy (NOTES.md §12): short sentences with one idea each; the task adds one plain sentence explaining that an isolated system does not exchange energy with its surroundings; no physics added or lost.
+- Round 2: the split L2-05 sum check is shorter, reads in steps joined by the connecting words, and keeps the numbers of fi; no pedagogy issue.

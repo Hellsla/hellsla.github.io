@@ -253,6 +253,37 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy2-3-L2-08",
+      "level": 2,
+      "text": "The sauna stove transforms electrical energy $E = 6.0\\,\\text{kWh}$ at a steady power in a time $t = 3.0\\,\\text{h}$. On another occasion the stove transforms the same energy $6.0\\,\\text{kWh}$ in only half of the time, that is, in $1.5\\,\\text{h}$. How does the power of the stove change compared with the first occasion?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "The power doubles.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The power doubles.",
+          "correct": true,
+          "feedback": "Correct: power is energy divided by time, $P = E : t$. When the energy stays the same and the time is halved, the quotient doubles."
+        },
+        {
+          "text": "The power is halved.",
+          "feedback": "Here the time is read the wrong way round: power and time are not directly proportional. The time is in the denominator of the quotient, so halving the time increases the power instead of decreasing it."
+        },
+        {
+          "text": "The power stays the same.",
+          "feedback": "The energy is indeed the same, but the power does not depend on the energy alone. Power tells how fast the energy is transformed, and a faster transformation of the same energy means a greater power."
+        },
+        {
+          "text": "The power becomes four times as great.",
+          "feedback": "The time is halved only once, and the power is inversely proportional to the time, not to its square. Halving the time doubles the power, it does not quadruple it."
+        }
+      ]
     }
   ],
   "level3": [

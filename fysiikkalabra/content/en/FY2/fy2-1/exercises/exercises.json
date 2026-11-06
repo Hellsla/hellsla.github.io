@@ -113,6 +113,44 @@
       "answer": "Electrical energy → (in the charger) electrical energy and thermal energy → chemical energy in the battery; part changes into thermal energy, so the charger warms up, and energy is not lost",
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-1-L1-09",
+      "level": 1,
+      "text": "A ball is dropped from rest from a height of $1\\,\\text{m}$ onto a hard floor. It bounces several times, each bounce lower than the one before, and finally the ball comes to rest on the floor. The ball, the floor and the air are assumed to form an isolated system. Decide which statements about the situation are true and which are false.",
+      "kind": [
+        "concept"
+      ],
+      "answer": "1 true, 2 false, 3 true, 4 false, 5 true",
+      "unit": "",
+      "tolerance": 0.02,
+      "statements": [
+        {
+          "text": "The mechanical energy of the ball after the first bounce is less than at the moment it was dropped.",
+          "true": true,
+          "feedback": "Correct: part of the mechanical energy of the ball changed into thermal energy in the collision and because of air resistance, so the mechanical energy $E_\\text{p} + E_\\text{k}$ decreased."
+        },
+        {
+          "text": "The energy of the ball has been used up when the ball has stopped on the floor.",
+          "true": false,
+          "feedback": "Wrong: this is the misconception \"energy gets used up\". Energy does not disappear; it has changed into a form that is hard to use: the ball, the floor and the air have warmed up slightly."
+        },
+        {
+          "text": "During the bounces the total energy of the ball, the floor and the air stays the same.",
+          "true": true,
+          "feedback": "Correct: the ball, the floor and the air form an approximately isolated system, so the sum of all forms of energy is the same at the start and at the end: $E_\\text{initial} = E_\\text{final}$."
+        },
+        {
+          "text": "When the ball hits the floor, part of the energy changes into thermal energy, and so there is less energy in total than at the start.",
+          "true": false,
+          "feedback": "Wrong: thermal energy is part of the total energy. The mechanical energy decreases, but the total energy does not, because it only changes form."
+        },
+        {
+          "text": "When the ball has stopped, its initial potential energy is thermal energy in the ball, the floor and the air.",
+          "true": true,
+          "feedback": "Correct: during the bounces the potential energy changed through kinetic energy into thermal energy, which is now in the ball, the floor and the air. It can no longer easily be used to lift the ball."
+        }
+      ]
     }
   ],
   "level2": [

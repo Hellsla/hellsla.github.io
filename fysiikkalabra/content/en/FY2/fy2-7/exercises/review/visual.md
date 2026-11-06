@@ -1,20 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 01bbd76bd23df998
-Mode: full
+CONTENT-HASH: 051ea6bef718bc5f
+Mode: delta
 Round: 1
 
 ## Blocking
 (none)
 
-## Fixed
-- exercises.json L2-07 — "corrects the claim correctly" tautological; now "corrects the claim".
-- solutions.md L2-06 Principle — "same power line and same transmitted power ... stay the same" repeated "same"; reworded.
-
 ## Polish
 - (none)
 
 ## Checked
-- Screenshots of L3-04 and surrounding tasks: table caption, headings and a/b/c parts render cleanly; no overflow.
-- Column headers $E_\text{sent}$, $E_\text{arrived}$, $P_\text{loss}$ consistent with solutions.
-- Decimal point in en text and tables; thin spaces before units as in fi.
-- No Finnish strings in en JSON or solutions.
+- Delta = new task fy2-7-L2-08 (choice + reason, solution block). Own Playwright render at 390 px of preview/en/fy2-7.html: L2-08 card with all feedback and the solution open, plus a whole-page check for horizontal overflow (page scrollWidth 390; L2-08 produced no clipping, no kx-wide scroll). Both calculation lines break at 'so' and stay in the 390 px column; no clipping.
+- Existing capture fy2-7-open-exercises-L2-1280-10.png (L2-08 at 1280 px, answers wrong then solution open): layout, feedback blocks, Find/Principle/Model answer render cleanly.
+- Text only (not rendered by me): the diff of exercises.json, solutions.md, answers.py. Natural English; 'Let us calculate both' acceptable. Units and numbers in LaTeX, \cdot, thin spaces.
+- Not opened: figures and other tasks (unchanged by the delta).
+- Other tasks (L1-L3 subtraction chains) are scrollable wide formulas by design at 390 px; not in the delta.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

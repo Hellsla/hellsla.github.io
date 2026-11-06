@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 59c94115b15b2cf7
+CONTENT-HASH: a5e3a606c3d94d47
 Round: 3
 
 ## Blocking
 (none)
 
 ## Polish
-- exercises.json L3-05 text — "vaiheen loppu energia" is two words; write "vaiheen jäljelle jäävä energia" (or "loppuenergia"). Invented data are still not marked "esimerkkiluvut" as in L2-05, L2-07, L3-04: add "Esimerkkiluvuilla:" to the table intro.
-- solutions.md L3-04 c) Vastaus — "lisää energiaa saman verran kuin fossiilinen vähenee" reads as if total energy grows; say "tuottaa saman verran energiaa kuin fossiilinen tuotti". One clause saying 70 PJ is the limit at the data's precision would remove the tension with "vähintään".
-- L3-04 and L3-05 solutions are over the length guide; if trimmed, move the c) reasoning of L3-04 into Periaate/Järkevyys.
+(none)
 
 ## Checked
-- Round-2 Blocking resolved: the reflection remark was removed from the task text and from Periaate; a), b), c), the model and the conservation check 0,14 + 4,86 = 5,00 MJ now agree (heat = all the rest of each stage).
-- Diff since round 2 is that one sentence only; levels (8/7/5), plan, no duplicates and the earlier L1-07, L2-05..07, L3-04 fixes stay as passed in round 2.
-- L3-05 solution is followable: principle, formula, per-stage substitution, sum, share, conservation check, sanity check.
-- Recomputed 4,86 MJ, 86 %, 2,8 %, 39,2 %, 218 GJ.
-- Hash unchanged at start and end.
+- Diff since round 2 (commit 442c889ba) touches one line in this set: solutions.md L2-05 Järkevyys. The sum check is now 60 % + 17,5 % = 77,5 %, 15 % + 7,5 % = 22,5 %, together 100 %; I recomputed the shares from the table (36,0; 10,5; 9,0; 4,5 of 60,0 GJ) and all agree. The split is easier to follow at phone width, and the stage reasoning (share between 0 and 100 %, heating the largest) is unchanged.
+- No exercise text, option or feedback changed in fy2-1; L1-09 and the other tasks stand as passed in round 2. Levels 9/7/5 meet the minimums.
+- Not re-opened: screenshots (pure text change).
+- Hash identical at start and end.

@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 612eb028465da8f9
+CONTENT-HASH: a8fbefe90565d098
 Mode: full
-Round: 1
+Round: 2
 
 ## Blocking
 (none)
 
 ## Fixed
-- exercises.json L1-06 — "kantaverkossa" unexplained for easy Finnish; now "kantaverkossa eli valtakunnan sähköverkossa".
+- exercises.json L2-08 reasons — first distractor was shortened against fi, leaving the correct reason longest by a margin (88 vs 110/108/98); restored "mitattuna", now 98 like fi, so lengths are fi-like.
 
 ## Polish
 - (none)
 
 ## Checked
-- Selkosuomi: short sentences, common words; long fi sentences split (L2-05, L3-04, L3-05, feedback in L1-06 and L2-07).
-- Task parts a/b/c, hints and distractor feedback equal fi in content.
-- Terms häviöteho, hyötysuhde, kaukolämpö explained by context in the solutions; kantaverkko now explained.
-- Solutions structure intact.
+- New task L2-08 vs reviewed fi: id, kind, answer, tolerance, choices, reasons, correct flags identical; numbers 1000/300 MWh, 4,0/9,0 %, 40/27 MWh equal.
+- Selkosuomi per NOTES.md section 12: short sentences, feedback split into two sentences, no new terms; same physics as fi.
+- Length cue: reasons 98/110/108/98 characters (same as fi), no cue to the correct one; solutions L2-08 numerically equal fi.
+- Reasons are plausible misconceptions (percentage only, distance, speed); feedback repairs rather than restates; level 2 workload fits.

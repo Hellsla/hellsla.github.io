@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: c2b8f07b38a25845
+CONTENT-HASH: 0dd670b21be99b54
 
 ## Blocking
 (none)
@@ -11,6 +11,5 @@ CONTENT-HASH: c2b8f07b38a25845
 (none)
 
 ## Checked
-- Selkosuomi holds: short sentences, one idea each ("Siksi", "Siis" link steps), common words; terms (teho, kilowattitunti, kulmakerroin = jyrkkyys, säätövoima) are explained in the task or solution.
-- Feedback names the misconception as in fi (kW vs kWh, teho vs kokonaisenergia, jyrkkyys vs korkeus).
-- Reasonableness checks stay real checks; levels and sequence match fi.
+- L2-08 follows NOTES.md section 12: short sentences, the term nimittäjä explained as jakaja, 'osamäärä eli jakolaskun tulos'.
+- Feedback and solution mirror the Finnish structure and name each misconception; level 2 fits.

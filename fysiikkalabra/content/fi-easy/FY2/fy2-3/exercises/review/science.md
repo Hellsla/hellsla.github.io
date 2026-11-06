@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: c2b8f07b38a25845
+CONTENT-HASH: 0dd670b21be99b54
 
 ## Blocking
 (none)
@@ -11,5 +11,6 @@ CONTENT-HASH: c2b8f07b38a25845
 (none)
 
 ## Checked
-- New tasks L1-06..08, L2-05..07, L3-04..05 compared with the Finnish: ids, answers (30 kW, 1,96 kWh, 3,0 kWh, 1800 W, 2,8 GWh, 43 €), units, tolerances, correct flags, choices, data table cells and every number identical.
-- Solutions: all numbers, conversions and substitutions identical to fi; formulas unchanged (check_i18n fi-easy: 0 errors).
+- New task L2-08 (form 6, prediction of a change) compared with the Finnish: same data, same four choices, same correct one (teho kasvaa kaksinkertaiseksi), same tolerance; decimal commas kept.
+- Recomputed: P1 = 2,0 kW, P2 = 4,0 kW, ratio 2,0; wrong-option feedback is physically right.
+- Simplified wording keeps the physics (muuttaa instead of muuntaa, 'jakajana' beside 'nimittäjä'); check_i18n clean, build succeeds.

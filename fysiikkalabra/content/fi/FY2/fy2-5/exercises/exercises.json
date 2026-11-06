@@ -248,6 +248,33 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy2-5-L2-08",
+      "level": 2,
+      "text": "Neljä polttoainetta poltetaan erikseen. Jokaisen lämpöarvo $H$ ja palanut massa $m$ on annettu.\n\nBensiini: $H = 43\\,\\tfrac{\\text{MJ}}{\\text{kg}}$, $m = 1500\\,\\text{g}$.\n\nPolttopuu: $H = 15\\,\\tfrac{\\text{MJ}}{\\text{kg}}$, $m = 5{,}0\\,\\text{kg}$.\n\nKivihiili: $H = 26\\,\\tfrac{\\text{MJ}}{\\text{kg}}$, $m = 0{,}0040\\,\\text{t}$.\n\nJyrsinturve: $H = 10\\,\\tfrac{\\text{MJ}}{\\text{kg}}$, $m = 12\\,\\text{kg}$.\n\nLaske kunkin polttoaineen vapauttama energia $E = Hm$ ja järjestä polttoaineet.",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "prompt": "Järjestä polttoaineet vapautuvan energian $E$ mukaan pienimmästä suurimpaan.",
+      "order": [
+        {
+          "text": "Bensiini"
+        },
+        {
+          "text": "Polttopuu"
+        },
+        {
+          "text": "Kivihiili"
+        },
+        {
+          "text": "Jyrsinturve"
+        }
+      ],
+      "answer": "Bensiini (noin $65\\,\\text{MJ}$), polttopuu ($75\\,\\text{MJ}$), kivihiili ($104\\,\\text{MJ}$), jyrsinturve ($120\\,\\text{MJ}$).",
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level3": [
