@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 8eac3c571044cb32
+CONTENT-HASH: 25428d8365ff21bf
 Mode: full (translation review against the reviewed Finnish set)
 Round 2
 
@@ -10,6 +10,7 @@ Round 2
 (none)
 
 ## Checked
+- Delta: L1-09 solutions.md line 162 now 500 W/m² · (cos² 45°)²; equals cos²45° · cos²45° = 0.25 so I_E = 125 W/m² unchanged; only the layout (345 px) changed.
 - New task fy7-15-L1-09 (an ordering task, D, E, A, B, C) compared with content/fi: id, level, kind, answer, unit, tolerance, correct flag and every number in text, choices, feedback and solution identical (decimal comma kept).
 - Answer recomputed independently: an ordering task, D, E, A, B, C; equals the json and the solution; exactly one correct choice or the correct order, as in fi.
 - Every wrong option's feedback states a real misconception and its physics is right, as in fi.

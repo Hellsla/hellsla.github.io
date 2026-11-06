@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 5242af01a6e55574
+CONTENT-HASH: d854aa8f386f0906
 Mode: delta (new task fy7-15-L1-09 and its solution), round 1
 
 ## Blocking
@@ -13,6 +13,8 @@ Mode: delta (new task fy7-15-L1-09 and its solution), round 1
 - Layout survived: no clipping or horizontal overflow, options are whole rows, solution blocks (Find, Principle, Model answer) read in order, display equations aligned and broken at meaningful steps.
 - Maths: KaTeX renders, numbers with upright units and thin space, \cdot, colon for division, SI units upright; no Finnish left in the new task.
 - No figures in the new task; the lesson page and other tasks are unchanged (delta).
+
+- Re-check after the I_E line change to I_E = 500 W/m² · (cos² 45°)²: packet regenerated, recaptured; open-exercises-1280-10 shows the formula rendering correctly and fitting its box; check_layout (open state, every solution open) OK at 345 px and 390 px, no overflow.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

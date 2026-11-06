@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 56b28525a948484b
+CONTENT-HASH: 49d3bc7f92e37a89
 Round: 1
 
 ## Blocking
@@ -12,6 +12,8 @@ Round: 1
 - 15-9 (L1-09): järjestystehtävä 390 px, vastaus ja ratkaisu auki: valintalistat "Sija" mahtuvat korttiin, ketjut mahtuvat, ei ylivuotoa. Järjestelyn käyttö (select-sijat) vain staattisesti, ei interaktiota.
 - Muoto: oikea järjestys ei ole tunnistettavissa muodosta; harhat (ilman neliötä, puolitus unohtunut) ovat ratkaisussa. Tekstistä ja renderistä.
 - L3-03: kappalejako ok.
+
+- Re-check after the I_E line change to I_E = 500 W/m² · (cos² 45°)²: packet regenerated, recaptured; open-exercises-1280-10 shows the formula rendering correctly and fitting its box; check_layout (open state, every solution open) OK at 345 px and 390 px, no overflow.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 4

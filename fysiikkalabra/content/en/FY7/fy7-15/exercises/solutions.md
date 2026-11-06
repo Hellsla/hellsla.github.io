@@ -159,7 +159,7 @@ $I_\text{D} = \tfrac{1}{2} \cdot 800\,\text{W/m}^2 \cdot \cos^2 60.0^\circ$, tha
 In situation E, after the first polariser the light is polarised in its transmission direction, and the second polariser is at an angle of $45.0^\circ$ to it:
 
 $$\begin{aligned}
-&I_\text{E} = 500\,\text{W/m}^2 \cdot \cos^2 45.0^\circ \cdot \cos^2 45.0^\circ \\
+&I_\text{E} = 500\,\text{W/m}^2 \cdot \left(\cos^2 45.0^\circ\right)^2 \\
 &I_\text{E} = 125\,\text{W/m}^2
 \end{aligned}$$
 
