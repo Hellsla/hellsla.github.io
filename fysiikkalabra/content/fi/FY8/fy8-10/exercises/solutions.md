@@ -134,13 +134,17 @@
 **Mallivastaus:** Rauta-56 on sidosenergiakäyrän huipulla nikkeli-62:n kanssa, $\tfrac{E_\text{B}}{A}$ on noin $8{,}8\,\text{MeV}$. Sekä kevyemmillä että raskaammilla ytimillä arvo on pienempi, joten raudalla nukleonit ovat lähes yhtä tiiviisti sidottuja kuin huipun tiiviimmin sidotuilla ytimillä. Jos rautaytimiä yhdistettäisiin toiseen rautaytimeen tai halkaistaisiin, syntyvissä ytimissä nukleonit olisivat keskimäärin löyhemmin sidottuja, joten sidosenergia pienenisi ja reaktio vaatisi energiaa. Kemiallinen pysyvyys ei liity asiaan, koska se koskee elektroneja eikä ytimiä. Sähköinen hylkiminen vaikuttaa vain fuusion käynnistymiseen eikä energiataseeseen, ja rauta-56:ssa on $26$ protonia ja $30$ neutronia. Muiden ytimien kanssa reaktio voi silti vapauttaa energiaa: esimerkiksi rauta-56 ja helium-4 voivat muodostaa nikkeli-60:n ja vapauttaa noin $6{,}3\,\text{MeV}$.
 
 ## fy8-10-L2-08
-**Kysytty:** kulta-197-ytimen sidosenergian $E_\text{B}$ suuruusluokka.
+**Kysytty:** mikä vaihtoehdoista on lähimpänä kulta-197-ytimen sidosenergiaa $E_\text{B}$.
 **Periaate:** Ydin on kevyempi kuin sen erilliset nukleonit, ja massavajetta $\Delta m$ vastaa sidosenergia $E_\text{B} = \Delta m\,c^2$. Lasketaan atomimassoilla: $79$ vetyatomissa on $79$ elektronia kuten kulta-atomissakin, joten elektronien massat kumoutuvat. Ytimessä on $Z = 79$ protonia ja $N = 197 - 79 = 118$ neutronia.
 **Mallivastaus:** Lasketaan ensin vetyatomien ja neutronien massat.
 
-$79 \cdot 1{,}007825\,\text{u} = 79{,}618175\,\text{u}$
+$Z\,m_\text{H} = 79 \cdot 1{,}007825\,\text{u}$
 
-$118 \cdot 1{,}008665\,\text{u} = 119{,}022470\,\text{u}$
+$Z\,m_\text{H} = 79{,}618175\,\text{u}$
+
+$N\,m_\text{n} = 118 \cdot 1{,}008665\,\text{u}$
+
+$N\,m_\text{n} = 119{,}022470\,\text{u}$
 
 Massavaje on $\Delta m = Z\,m_\text{H} + N\,m_\text{n} - m_\text{atomi}$:
 
@@ -158,7 +162,9 @@ $$\begin{aligned}
 &\approx 1559\,\text{MeV}
 \end{aligned}$$
 
-Sidosenergia on noin $1560\,\text{MeV}$, joten sen suuruusluokka on $2000\,\text{MeV}$. Väärät vaihtoehdot syntyvät tavallisista virheistä: massavajeen jakaminen luvulla $931{,}5$ antaa noin $0{,}002\,\text{MeV}$, jakaminen nukleonien määrällä $197$ antaa sidosenergian nukleonia kohti, noin $7{,}9\,\text{MeV}$, ja koko atomin massan muuttaminen energiaksi antaa noin $183\,000\,\text{MeV}$. Järkevyys: sidosenergia nukleonia kohti $7{,}9\,\text{MeV}$ sopii raskaille ytimille, joilla se on hieman pienempi kuin raudan noin $8{,}8\,\text{MeV}$, ja massavaje $1{,}674\,\text{u}$ on noin $0{,}8\,\%$ atomin massasta.
+Sidosenergia on noin $1560\,\text{MeV}$, joten lähin vaihtoehto on noin $1600\,\text{MeV}$. Väärät vaihtoehdot syntyvät tavallisista virheistä: massavajeen jakaminen luvulla $931{,}5$ antaa noin $0{,}002\,\text{MeV}$, jakaminen nukleonien määrällä $197$ antaa sidosenergian nukleonia kohti, noin $7{,}9\,\text{MeV}$, ja koko atomin massan muuttaminen energiaksi antaa noin $183\,000\,\text{MeV}$.
+
+Järkevyys: sidosenergia nukleonia kohti $7{,}9\,\text{MeV}$ sopii raskaille ytimille, joilla se on hieman pienempi kuin raudan noin $8{,}8\,\text{MeV}$, ja massavaje $1{,}674\,\text{u}$ on noin $0{,}8\,\%$ atomin massasta.
 
 ## fy8-10-L3-01
 **Annettu:** $m({}^{4}\text{He}) = 4{,}002603\,\text{u}$, $m({}^{3}\text{He}) = 3{,}016029\,\text{u}$, $m_\text{n} = 1{,}008665\,\text{u}$, $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$, vertailuarvo $\tfrac{E_\text{B}}{A} = 7{,}07\,\text{MeV}$

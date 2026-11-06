@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: a7bae5f159811330
-Round: 1
+CONTENT-HASH: ee8c9677d92c1621
+Round: 2
 
 ## Blocking
 
 ## Polish
-- solutions.md:168 and exercises.json:285 (fy8-11-L2-08) — "Fissio vapauttaa energiaa vain raskailla ytimillä" is too absolute (Be-8 → 2 α releases 0,09 MeV); the task's own data decide the case. Write "yleensä vain" or "tässä ratkaisee annettu E_B/A".
-- exercises.json:313 reason 4 — "…joten mikään osa ytimistä ei muutu energiaksi" is called "tosi", but its "joten" points to the option "Energiaa ei vapaudu eikä kulu"; feedback could say the first half is true and the conclusion does not follow, since rest energy does change (here mass grows by 7,3 MeV/c²).
 
 ## Checked
-- Recomputed: 12·7,680 = 92,160 MeV, 12·7,074 = 84,888 MeV, Q = −7,272 MeV; cross-check from atomic masses (12 u − 3·4,002603 u)·931,5 MeV/u = −7,27 MeV. Key "Reaktio vaatii energiaa" right; the reverse triple-alpha releases the same 7,27 MeV in stars.
-- Exactly one correct choice and one correct reason; reason lengths equal (86–90 characters), none hedged, so not identifiable by form.
-- The correct choice's feedback (7,3 MeV, reverse reaction) does not give away the reason stage.
-- Distractor reasons catch the chapter's warned mistakes (binding energy "stored and released"; nucleons "turning into energy"); the "always needs energy" reason is refuted with U-235 (~200 MeV) as the brief states.
-- Q sign convention (Q > 0 releases) consistent with the brief's Q = (m_alku − m_loppu)c².
-- Text only: inline formulas short (≤ ~200 px estimated).
+- Both round-1 polish items are resolved:
+  - The Periaate now says "yleensä raskailla ytimillä", adds that the given E_B/A values decide, and is no longer absolute.
+  - The feedback for choice 1 now points to comparing E_B/A.
+  - The feedback for reason 4 now says the conclusion does not follow and ties the change in binding energy to the change in mass.
+- Removing "tähdissä" leaves a correct claim: the reverse fusion releases the same 7,27 MeV.
+- Recomputed: 92,160 MeV, 84,888 MeV, Q = −7,272 MeV; atomic masses give −7,27 MeV. The key "Reaktio vaatii energiaa" and the correct reason are still unique. The correct choice's feedback does not give away the reason.
+- The split E_B lines have the same values. Q sign is consistent with the brief.
+- Text only: lines short (≤ ~200 px estimated); not rendered.
 - Hash identical at start and end.

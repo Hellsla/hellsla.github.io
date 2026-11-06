@@ -282,12 +282,12 @@
       "choices": [
         {
           "text": "Reaktiossa vapautuu energiaa.",
-          "feedback": "Jakautuminen ei vapauta energiaa aina. Fissio vapauttaa energiaa raskailla ytimillä, jotka ovat sidosenergiakuvaajan huipun oikealla puolella. Hiili-12 on kevyt ydin huipun vasemmalla puolella."
+          "feedback": "Jakautuminen ei aina vapauta energiaa. Vertaa sidosenergiaa nukleonia kohti ennen reaktiota ja sen jälkeen."
         },
         {
           "text": "Reaktio vaatii energiaa.",
           "correct": true,
-          "feedback": "Oikein: jakautuminen vaatii noin $7{,}3\\,\\text{MeV}$ energiaa. Käänteinen reaktio, kolmen helium-4-ytimen fuusio hiili-12:ksi, vapauttaa saman energian tähdissä."
+          "feedback": "Oikein: jakautuminen vaatii noin $7{,}3\\,\\text{MeV}$ energiaa. Käänteinen reaktio, kolmen helium-4-ytimen fuusio hiili-12:ksi, vapauttaa saman energian."
         },
         {
           "text": "Energiaa ei vapaudu eikä kulu.",
@@ -311,7 +311,7 @@
         },
         {
           "text": "Nukleonien määrä on molemmin puolin $12$, joten mikään osa ytimistä ei muutu energiaksi.",
-          "feedback": "Väite on tosi, mutta se ei selitä energiaa. Energia ei synny nukleonien häviämisestä vaan sidosenergian muutoksesta, ja se muuttaa myös massaa."
+          "feedback": "Nukleonien määrä säilyy, mutta johtopäätös ei seuraa siitä. Energia ei synny nukleonien häviämisestä vaan sidosenergian muutoksesta, ja sidosenergian muutos vastaa massan muutosta."
         }
       ]
     }

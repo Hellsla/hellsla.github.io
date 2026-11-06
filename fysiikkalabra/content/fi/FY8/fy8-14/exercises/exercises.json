@@ -115,11 +115,11 @@
         {
           "text": "$A_0 = A \\cdot 2^{t/T_{1/2}}$",
           "correct": true,
-          "feedback": "Oikein: ajassa $t$ aktiivisuus puolittuu $\\tfrac{t}{T_{1/2}}$ kertaa, joten lähtiessä sen on oltava $2^{t/T_{1/2}}$-kertainen. Esimerkiksi kahdessa puoliintumisajassa $A_0 = 4A$."
+          "feedback": "Oikein: ajassa $t$ aktiivisuus puolittuu $\\tfrac{t}{T_{1/2}}$ kertaa, joten lähtiessä sen on oltava $2^{t/T_{1/2}}$-kertainen. Esimerkiksi kolmessa puoliintumisajassa $A_0 = 2^{3}A = 8A$."
         },
         {
           "text": "$A_0 = A \\cdot \\tfrac{2t}{T_{1/2}}$",
-          "feedback": "Tässä aktiivisuuden ajatellaan muuttuvan tasaisesti ajan mukana. Jokainen puoliintumisaika puolittaa kuitenkin jäljellä olevan aktiivisuuden, joten kerroin on potenssi. Lisäksi ajalla $t = 0$ lauseke antaisi nollan eikä $A$."
+          "feedback": "Tässä aktiivisuuden ajatellaan muuttuvan tasaisesti ajan mukana. Jokainen puoliintumisaika puolittaa kuitenkin jäljellä olevan aktiivisuuden. Lisäksi ajalla $t = 0$ lauseke antaisi nollan eikä $A$."
         }
       ]
     }

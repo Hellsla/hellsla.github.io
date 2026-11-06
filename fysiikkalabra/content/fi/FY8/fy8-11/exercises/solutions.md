@@ -165,12 +165,16 @@
 
 ## fy8-11-L2-08
 **Kysytty:** vapautuuko energiaa, kun hiili-12-ydin jakautuu kolmeksi helium-4-ytimeksi, ja mikä perustelu sen selittää.
-**Periaate:** Ydinreaktiossa energiaa vapautuu, kun tuotteiden sidosenergia on yhteensä suurempi kuin lähtöaineiden, ja energiaa kuluu, kun se on pienempi. Nukleonien määrä säilyy, joten ratkaisee sidosenergia nukleonia kohti $\tfrac{E_\text{B}}{A}$. Fissio vapauttaa energiaa vain raskailla ytimillä, koska vain niillä jakautuminen siirtää nukleoneja kohti kuvaajan huippua.
+**Periaate:** Ydinreaktiossa energiaa vapautuu, kun tuotteiden sidosenergia on yhteensä suurempi kuin lähtöaineiden, ja energiaa kuluu, kun se on pienempi. Nukleonien määrä säilyy, joten ratkaisee sidosenergia nukleonia kohti $\tfrac{E_\text{B}}{A}$. Fissio vapauttaa energiaa yleensä raskailla ytimillä, koska niillä jakautuminen siirtää nukleoneja kohti kuvaajan huippua. Tässä ratkaisevat annetut arvot $\tfrac{E_\text{B}}{A}$.
 **Mallivastaus:** Reaktio vaatii energiaa. Lasketaan sidosenergiat ennen reaktiota ja sen jälkeen; kummallakin puolella on $12$ nukleonia.
 
-$E_\text{B,alku} = 12 \cdot 7{,}680\,\text{MeV} = 92{,}16\,\text{MeV}$
+$E_\text{B,alku} = 12 \cdot 7{,}680\,\text{MeV}$
 
-$E_\text{B,loppu} = 12 \cdot 7{,}074\,\text{MeV} = 84{,}888\,\text{MeV}$
+$E_\text{B,alku} = 92{,}16\,\text{MeV}$
+
+$E_\text{B,loppu} = 12 \cdot 7{,}074\,\text{MeV}$
+
+$E_\text{B,loppu} = 84{,}888\,\text{MeV}$
 
 $Q = E_\text{B,loppu} - E_\text{B,alku}$
 
