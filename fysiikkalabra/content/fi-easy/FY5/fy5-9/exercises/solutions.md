@@ -185,3 +185,20 @@
 **Sijoitus:** Kohta a): $T = 2\pi\sqrt{\dfrac{1{,}20\,\text{m}}{9{,}81\,\text{m/s}^2}} = 2{,}198\,\text{s}$, joten $t = \dfrac{2{,}198\,\text{s}}{4} = 0{,}549\,\text{s}$. Kohta b): $h = 1{,}20\,\text{m} \cdot (1 - \cos 10{,}0\,{}^\circ) = 0{,}01823\,\text{m}$ ja $v = \sqrt{2 \cdot 9{,}81\,\text{m/s}^2 \cdot 0{,}01823\,\text{m}} = 0{,}5981\,\text{m/s}$. Kohta c): $A = 1{,}20\,\text{m} \cdot 0{,}17453 = 0{,}2094\,\text{m}$ ja $v_\text{h} = 0{,}2094\,\text{m} \cdot \sqrt{\dfrac{9{,}81}{1{,}20}}\,\dfrac{1}{\text{s}} = 0{,}5988\,\text{m/s}$. Ero on $\dfrac{0{,}5988 - 0{,}5981}{0{,}5981} \cdot 100\,\% = 0{,}13\,\%$, ja harmoninen malli antaa suuremman nopeuden.
 **Vastaus:** $0{,}598\,\text{m/s}$, kolme merkitsevää numeroa kuten pituudessa $1{,}20\,\text{m}$ ja kulmassa $10{,}0\,{}^\circ$.
 **Järkevyys:** Liike-energia massayksikköä kohti on $\tfrac{1}{2}v^2 = 0{,}1788\,\text{J/kg}$. Potentiaalienergian vähennys on $gh = 9{,}81 \cdot 0{,}01823 = 0{,}1788\,\text{J/kg}$. Energia siis säilyy. Harmoninen malli antaa tuloksen, joka eroaa vain $0{,}13\,\%$. Syy on, että pienellä kulmalla $\sin\alpha$ on lähes sama kuin $\alpha$ radiaaneina. Ero on positiivinen, koska malli käyttää palauttavana voimana arvoa $mg\alpha$. Se on suurempi kuin todellinen $mg\sin\alpha$. Malli tekee hieman enemmän työtä, joten nopeus on hieman suurempi ($0{,}5988\,\text{m/s} > 0{,}5981\,\text{m/s}$). Sama suuruusluokka näkyy oppitunnin taulukossa: lähtökulmalla $10\,{}^\circ$ jaksonaika poikkeaa kaavasta vain $0{,}2\,\%$.
+
+## fy5-9-L2-08
+**Kysytty:** miten heilurin ja jousivärähtelijän jaksonajat muuttuvat, kun ne viedään Maasta Kuuhun, ja mikä perustelu selittää sen.
+**Periaate:** Jousivärähtelijän jaksonaika on $T = 2\pi\sqrt{\tfrac{m}{k}}$. Jousen voima $F = -kx$ riippuu vain poikkeamasta. Pystysuorassa jousessa paino siirtää vain tasapainoasemaa, joten $g$ ei vaikuta jaksonaikaan. Heilurissa palauttava voima on painon radan suuntainen komponentti $mg\sin\alpha$. Massa supistuu pois. Pienillä heilahduksilla $T = 2\pi\sqrt{\tfrac{l}{g}}$, eli jaksonaika on verrannollinen lausekkeeseen $\tfrac{1}{\sqrt{g}}$.
+**Mallivastaus:** Jousivärähtelijän massa $m$ ja jousivakio $k$ ovat Kuussa samat kuin Maassa, joten sen jaksonaika pysyy $1{,}00\,\text{s}$:na. Jousi venyy Kuussa vähemmän, mutta se muuttaa vain tasapainoaseman paikkaa.
+
+Heilurin pituus pysyy samana, joten jaksonaikojen suhde riippuu vain putoamiskiihtyvyyksistä:
+
+$$\begin{aligned}
+&\frac{T_\text{K}}{T_\text{M}} = \sqrt{\frac{g_\text{M}}{g_\text{K}}} \\
+&\phantom{\frac{T_\text{K}}{T_\text{M}}} = \sqrt{\frac{9{,}81\,\text{m/s}^2}{1{,}62\,\text{m/s}^2}} \\
+&\phantom{\frac{T_\text{K}}{T_\text{M}}} \approx 2{,}461
+\end{aligned}$$
+
+$T_\text{K} = 2{,}461 \cdot 1{,}00\,\text{s} \approx 2{,}46\,\text{s}$
+
+Heilurin jaksonaika kasvaa siis noin $2{,}5$-kertaiseksi, ja jousen jaksonaika pysyy samana. Perustelu: heilurin palauttava voima on osa painoa, joka pienenee Kuussa. Kiihdytettävä massa ei kuitenkaan pienene. Jousen voima riippuu vain poikkeamasta ja jousivakiosta. Putoamiskiihtyvyys on Kuussa noin kuudesosa Maan arvosta. Neliöjuuren vuoksi jaksonaika kasvaa kuitenkin vain noin $\sqrt{6{,}1} \approx 2{,}5$-kertaiseksi, ei kuusinkertaiseksi.

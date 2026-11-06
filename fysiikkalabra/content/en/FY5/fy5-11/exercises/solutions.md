@@ -223,3 +223,30 @@ $$
 **Answer:** the mountain is $2.0 \cdot 10^2$ times as wide as the wavelength of FM radio, two significant figures like the width of the mountain.
 **c) Justification:** The wavelength of AM radio, $333\,\text{m}$, is of the same order as the width of the mountain, $\tfrac{b}{\lambda} = \tfrac{600\,\text{m}}{333\,\text{m}} = 1.8$, so diffraction is strong and the AM broadcast bends behind the mountain into the valley. The wavelength of FM radio is only $\tfrac{1}{200}$ of the width of the mountain and for digital TV $\tfrac{b}{\lambda} = \tfrac{600\,\text{m}}{0.500\,\text{m}} = 1200$, so their diffraction is weak: the waves travel almost straight, and a radio shadow remains behind the mountain. The wavelength of visible light, $550\,\text{nm} = 5.5 \cdot 10^{-7}\,\text{m}$, is still much shorter, $\tfrac{b}{\lambda} \approx 1 \cdot 10^9$, so light travels practically straight and does not bend behind the mountain.
 **Reasonableness:** The higher the frequency, the shorter the wavelength and the weaker the diffraction: $333\,\text{m} > 3.00\,\text{m} > 0.500\,\text{m} > 5.5 \cdot 10^{-7}\,\text{m}$. Check: $333\,\text{m} \cdot 9.00 \cdot 10^5\,\text{Hz} = 3.00 \cdot 10^8\,\text{m/s}$.
+
+## fy5-11-L2-08
+**Find:** the order of the setups by how strongly the wave spreads behind the slit, from the weakest to the strongest.
+**Principle:** The strength of diffraction depends on how wide the slit is compared with the wavelength. When the slit is many wavelengths wide, the wave continues almost straight and bends only at the edges. When $b \approx \lambda$ or $b < \lambda$, the wave spreads a lot. So we compare the ratio $\lambda : b$: the greater it is, the more strongly the wave spreads. The wavelength is obtained from the basic equation $\lambda = \tfrac{v}{f}$, and the widths are converted to the same unit.
+**Model answer:** The wavelengths are
+
+$\lambda_\text{A} = \dfrac{0.30\,\text{m/s}}{10\,\text{Hz}} = 3.0\,\text{cm}$
+
+$\lambda_\text{B} = \dfrac{0.30\,\text{m/s}}{6.0\,\text{Hz}} = 5.0\,\text{cm}$
+
+$\lambda_\text{C} = \dfrac{0.30\,\text{m/s}}{15\,\text{Hz}} = 2.0\,\text{cm}$
+
+$\lambda_\text{D} = \dfrac{0.30\,\text{m/s}}{5.0\,\text{Hz}} = 6.0\,\text{cm}$
+
+The width of the slit in C is $15\,\text{mm} = 1.5\,\text{cm}$. The ratios are
+
+A: $3.0\,\text{cm} : 6.0\,\text{cm} = 0.50$
+
+B: $5.0\,\text{cm} : 2.0\,\text{cm} = 2.5$
+
+C: $2.0\,\text{cm} : 1.5\,\text{cm} \approx 1.3$
+
+D: $6.0\,\text{cm} : 24\,\text{cm} = 0.25$
+
+By the ratio from the smallest to the greatest, that is, by diffraction from the weakest to the strongest, the order is D, A, C, B. In setup D the slit is four wavelengths wide, so the wave bends only at the edges. In setups C and B the slit is narrower than the wavelength, and the wave spreads widely behind the slit, most strongly in setup B.
+
+The width of the slit alone does not decide the order: the narrowest slit is in C, but the wave in B spreads more, because its wavelength is greater. The wavelength alone does not decide it either: the wavelength of D is the greatest, but its slit is so wide that it bends the least.

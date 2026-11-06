@@ -239,3 +239,26 @@ t_2 &= \frac{6.0\,\text{m}}{2.5\,\text{m/s}} = 2.4\,\text{s}
 The total time is $t = 2.5\,\text{s} + 2.4\,\text{s} = 4.9\,\text{s}$.
 **Answer:** $4.9\,\text{s}$, two significant figures like the initial values. The frequency is the same in both parts, because it is determined by the hand shaking the end of the rope: the joint vibrates in step with the rope before it, and it cannot send crests onward at a different rate from the one at which it receives them. The speed is determined by the medium, so it is different in the thick part, and that is why the wavelength $\lambda = v/f$ is shorter there.
 **Reasonableness:** The length of the whole rope is $10.0\,\text{m} + 6.0\,\text{m} = 16.0\,\text{m}$, so the mean speed is $\tfrac{16.0\,\text{m}}{4.9\,\text{s}} = 3.3\,\text{m/s}$. It is between the speeds of the parts, $2.5\,\text{m/s}$ and $4.0\,\text{m/s}$, as it should be.
+
+## fy5-10-L1-09
+**Find:** which of the five statements about a wave travelling along a taut rope and a ribbon tied to the rope are true.
+**Principle:** The frequency is the number of oscillations per second, and in a photograph the distance between successive crests is the wavelength $\lambda$. The speed of the wave is obtained from the basic equation $v = f\lambda$. The speed depends on the medium, that is, on the rope and its tension, and the frequency on the source, that is, on the shaking hand. A wave carries energy but not matter.
+**Model answer:** The frequency and the period are
+
+$f = \dfrac{12}{8.0\,\text{s}} = 1.5\,\text{Hz}$
+
+$T = \dfrac{1}{f} \approx 0.67\,\text{s}$
+
+and the speed of the wave is
+
+$v = f\lambda = 1.5\,\text{Hz} \cdot 1.2\,\text{m}$, that is, $v = 1.8\,\text{m/s}$.
+
+1 true: the ribbon oscillates with the point of the rope at the same frequency as the end of the rope, $1.5\,\text{Hz}$.
+
+2 true: $v = f\lambda = 1.8\,\text{m/s}$.
+
+3 false: a wave does not carry matter. The ribbon and the point of the rope oscillate up and down around their equilibrium positions, but they do not travel forward. It is energy that moves forward.
+
+4 false: with the same tension the rope is the same medium, so the speed stays $1.8\,\text{m/s}$. Double the frequency $3.0\,\text{Hz}$ halves the wavelength: $\lambda = \tfrac{1.8\,\text{m/s}}{3.0\,\text{Hz}} = 0.60\,\text{m}$.
+
+5 false: the horizontal axis of the $(t, y)$ graph is time, so the distance between the peaks is the period $T \approx 0.67\,\text{s}$, not the wavelength $1.2\,\text{m}$.

@@ -109,6 +109,45 @@
       "answer": 1.4,
       "unit": "km",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-10-L1-09",
+      "level": 1,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "In a yard there is a long taut rope with a light red ribbon tied to its midpoint. The end of the rope is shaken steadily up and down, and a periodic wave travels along the rope. The values of the situation are example values.\n\nThe ribbon makes $12$ full oscillations in $8.0\\,\\text{s}$.\n\nIn a photograph of the rope the distance between successive crests is $1.2\\,\\text{m}$.\n\nReason which statements are true and which are false.",
+      "answer": "1 true, 2 true, 3 false, 4 false, 5 false",
+      "unit": "",
+      "tolerance": 0.02,
+      "statements": [
+        {
+          "text": "The frequency of the wave is $1.5\\,\\text{Hz}$.",
+          "true": true,
+          "feedback": "True: the frequency is the number of oscillations per second, $f = 12 : 8.0\\,\\text{s}$, that is, $f = 1.5\\,\\text{Hz}$. The period is $T = \\tfrac{1}{f} \\approx 0.67\\,\\text{s}$."
+        },
+        {
+          "text": "The wave travels along the rope at a speed of $1.8\\,\\text{m/s}$.",
+          "true": true,
+          "feedback": "True: according to the basic equation $v = f\\lambda = 1.5\\,\\text{Hz} \\cdot 1.2\\,\\text{m}$, that is, $v = 1.8\\,\\text{m/s}$. The distance between the crests in the photograph is the wavelength."
+        },
+        {
+          "text": "The ribbon and the point of the rope under it move with the wave towards the other end of the rope.",
+          "true": false,
+          "feedback": "False: a wave carries energy but not matter. The ribbon and the point of the rope oscillate up and down around their equilibrium positions, but they do not travel forward."
+        },
+        {
+          "text": "With the same tension, shaking twice as fast increases the speed to $3.6\\,\\text{m/s}$.",
+          "true": false,
+          "feedback": "False: the speed of a wave depends on the medium, that is, on the rope and its tension, not on the frequency. The speed stays $1.8\\,\\text{m/s}$, and the wavelength shortens to $0.60\\,\\text{m}$."
+        },
+        {
+          "text": "In the $(t, y)$ graph of the ribbon the distance between successive peaks is $1.2\\,\\text{m}$.",
+          "true": false,
+          "feedback": "False: the horizontal axis of the $(t, y)$ graph is time, so the distance between the peaks is the period $T \\approx 0.67\\,\\text{s}$. The wavelength $1.2\\,\\text{m}$ is read from the photograph, that is, from the $(x, y)$ graph."
+        }
+      ]
     }
   ],
   "level2": [
