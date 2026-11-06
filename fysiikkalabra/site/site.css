@@ -1124,3 +1124,41 @@ ul.choices.mc label.mc-right{border:2px solid var(--accent);background:var(--acc
 ul.choices.mc label.mc-wrong{border:2px solid #b4532a;background:#fbf1ea}ul.choices.mc label.mc-wrong>span::after{content:" ✗";font-weight:700}
 .mc-score,.exam-total-line{font-weight:700}.mc-key{font-weight:500}
 .exam-total{border-top:2px solid var(--line);padding-top:.5rem}.exam-sec-line{margin:.2rem 0}
+
+/* A task full screen (lesson.js part 10, teacher 2026-11-06; every chapter). "Avaa isoksi" at the right end of the
+   exercise's head row; the dialog covers the window: a bar (Tehtävä 3-4, 4 / 20, Edellinen, Seuraava, Sulje), then the
+   task and the solution editor. From 1100 px they stand side by side and each scrolls on its own (the task at most
+   44rem wide, so its lines stay readable); below that they stand under each other and the dialog scrolls. */
+.ex-big{margin-left:auto;display:inline-flex;align-items:center;gap:.35rem;min-height:40px;padding:0 .8rem;border:1px solid var(--line);border-radius:999px;background:var(--surface);font:600 var(--fs-ui) var(--sans);color:var(--accent-deep);cursor:pointer}
+.ex-big::before{content:"";width:.85em;height:.85em;flex:none;background:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M10 2h4v4M6 14H2v-4M14 2 9 7M2 14l5-5'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M10 2h4v4M6 14H2v-4M14 2 9 7M2 14l5-5'/%3E%3C/svg%3E") center/contain no-repeat}
+.ex-big:hover{background:var(--accent-soft);border-color:var(--accent-deep)}
+dialog.ex-focus{box-sizing:border-box;position:fixed;inset:0;width:100vw;height:100vh;height:100dvh;max-width:none;max-height:none;margin:0;padding:0;border:0;background:var(--bg);color:var(--ink);overflow:hidden;font-size:var(--fs-body);line-height:var(--lh)}
+dialog.ex-focus[open]{display:flex;flex-direction:column}
+dialog.ex-focus::backdrop{background:var(--bg)}
+#exercises>dialog.ex-focus{max-width:none}   /* not the reading column's width (.stage>*) */
+html.ex-focus-on{overflow:hidden}
+.ex-focus-bar{display:flex;flex-wrap:wrap;align-items:center;gap:.3rem 1rem;padding:.5rem max(1rem,(100vw - 92rem) / 2);background:var(--surface);border-bottom:1px solid var(--line);flex:none}
+.ex-focus-bar{margin-top:var(--tb,0px)}   /* Abitti's toolbar sits on the top edge while the editor is in use */
+.ex-focus-title{margin:0;font:700 var(--fs-h3)/1.25 var(--sans);color:var(--accent-deep);outline:0}
+.ex-focus-pos{font-size:var(--fs-small);color:var(--ink-2);font-variant-numeric:tabular-nums}
+.ex-focus-nav{display:flex;flex-wrap:wrap;gap:.4rem;margin-left:auto}
+.ex-focus-btn{min-height:40px;padding:0 .9rem;border:1px solid var(--accent-deep);border-radius:999px;background:var(--surface);font:600 var(--fs-ui) var(--sans);color:var(--accent-deep);cursor:pointer}
+.ex-focus-btn:hover:not(:disabled){background:var(--accent-soft)}.ex-focus-btn:disabled{opacity:.45;cursor:default}
+.ex-focus-prev::before{content:"← "}.ex-focus-next::after{content:" →"}.ex-focus-close::after{content:" ✕"}
+.ex-focus-body{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:1rem 1rem 3rem}
+.ex-focus-task{list-style:none;margin:0 auto;padding:0;max-width:44rem}
+.ex-focus-task>li{margin:0;padding:0}
+.ex-focus-task>li>.ex-head .ex-big,.ex-focus-task>li>.pad-open{display:none}   /* already big; the editor is always open here */
+.ex-focus-pad{max-width:44rem;margin:1rem auto 0;padding-top:1rem;border-top:1px solid var(--line)}
+.ex-focus-pad .pad{margin:0}
+.ex-focus-pad .pad .rich-text-editor{min-height:14rem}
+@media (min-width:1100px){
+  .ex-focus-body{display:grid;grid-template-columns:minmax(0,44rem) minmax(0,1fr);gap:0 2.5rem;max-width:92rem;width:100%;box-sizing:border-box;margin:0 auto;padding:0 2rem;overflow:hidden}
+  .ex-focus-task,.ex-focus-pad{min-height:0;overflow-y:auto;overscroll-behavior:contain;max-width:none;margin:0;padding:1.4rem .3rem 3rem}
+  .ex-focus-pad{border-top:0;border-left:1px solid var(--line);padding-left:2.5rem}
+  .ex-focus-pad .pad .rich-text-editor{min-height:calc(100dvh - 15rem)}
+}
+@media (max-width:600px){.ex-focus-nav{width:100%;margin-left:0}.ex-focus-nav .ex-focus-btn{flex:1;padding:0 .5rem}.ex-focus-body{padding:.8rem .8rem 3rem}.ex-focus-close::after{content:""}}
+/* Abitti's toolbar over the whole window in the dialog, also when the side panel is open (its rules point it at the panel) */
+html #exercises .ex-focus .pad .rich-text-editor-toolbar-root>div,html.tasks-split #exercises .ex-focus .pad .rich-text-editor-toolbar-root>div,html.tasks-split[style*="--split-l"] #exercises .ex-focus .pad .rich-text-editor-toolbar-root>div{left:0!important;right:0!important;width:auto!important;max-width:100vw!important}
+@media print{.ex-big{display:none!important}}

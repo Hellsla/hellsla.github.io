@@ -661,3 +661,78 @@
   ex.addEventListener('keydown', (e) => { if (e.key === 'Escape' && isOpen() && !e.target.closest('dialog, .rich-text-editor, [contenteditable="true"]')) close(); });
   WIDE.addEventListener ? WIDE.addEventListener('change', () => { if (!WIDE.matches) close(); }) : null;
 })();
+
+/* 10. A task full screen (teacher 2026-11-06, "tehtävä täyttää koko näytön, samoin ratkaisukenttä, koska jotkut
+   tehtävät ovat todella pitkiä"; piloted in FY3-1, then every chapter). "Avaa isoksi" in an exercise's head row opens it in a dialog
+   over the whole window: the task (its text, figures, answer box, Vastaus and Näytä ratkaisu) on the left and the
+   solution editor, open and tall, on the right from 1100 px; under each other, the whole dialog scrolling, on a narrower
+   screen. Edellinen / Seuraava go through the chapter's exercises in order, Sulje or Esc puts the task back where it was
+   and shows it on the page. The task's own elements are moved, not copied, so the check, the try-first locks, the
+   saved solution and the progress bar work as on the page; the dialog sits inside #exercises for the same reason. */
+(() => {
+  const ex = document.getElementById('exercises');
+  if (!ex || !window.HTMLDialogElement) return;   // every chapter (teacher 2026-11-06, after the FY3-1 pilot: "laita kaikkiin lukuihin")
+  const tasks = [...ex.querySelectorAll('li[id]')].filter((li) => li.querySelector(':scope > .ex-head'));
+  if (!tasks.length) return;
+  const L10N = (() => { try { return JSON.parse(document.getElementById('fl-strings').textContent).js || {}; } catch (e) { return {}; } })();
+  const say = (k, d, v) => (typeof L10N[k] === 'string' ? L10N[k] : d).replace(/\{\{(\w+)\}\}/g, (m, n) => (v && n in v ? String(v[n]) : m));
+  const mk = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text) e.textContent = text; return e; };
+  const dlg = mk('dialog', 'ex-focus'); dlg.setAttribute('aria-labelledby', 'ex-focus-title');
+  const bar = mk('div', 'ex-focus-bar');
+  const title = mk('h2', 'ex-focus-title'); title.id = 'ex-focus-title'; title.tabIndex = -1;
+  const pos = mk('span', 'ex-focus-pos');
+  const nav = mk('div', 'ex-focus-nav');
+  const btn = (cls, key, def) => { const b = mk('button', 'ex-focus-btn ' + cls, say(key, def)); b.type = 'button'; return b; };
+  const prev = btn('ex-focus-prev', 'big_prev', 'Edellinen'), next = btn('ex-focus-next', 'big_next', 'Seuraava'), shut = btn('ex-focus-close', 'big_close', 'Sulje');
+  shut.setAttribute('aria-keyshortcuts', 'Escape');
+  nav.append(prev, next, shut); bar.append(title, pos, nav);
+  const body = mk('div', 'ex-focus-body');
+  const taskCol = mk('ol', 'ex-focus-task'), padCol = mk('div', 'ex-focus-pad');
+  body.append(taskCol, padCol); dlg.append(bar, body); ex.append(dlg);
+  // Abitti's toolbar is fixed to the top edge while the editor is in use (two or three rows on a phone): the bar moves under it
+  const fitBar = () => { const t = padCol.querySelector('.rich-text-editor-toolbar-root>div'); dlg.style.setProperty('--tb', (t ? Math.ceil(t.getBoundingClientRect().height) : 0) + 'px'); };
+  if (window.MutationObserver) new MutationObserver(fitBar).observe(padCol, { childList: true, subtree: true });
+  window.addEventListener('resize', fitBar);
+  let cur = -1, first = -1, home = null;
+  const padOf = (li) => { const o = li.querySelector(':scope > .pad-open'); return [o, o && document.getElementById(o.getAttribute('aria-controls'))]; };
+  const put = (i) => {
+    const li = tasks[i]; cur = i;
+    home = document.createComment('ex-focus'); li.before(home); taskCol.append(li);
+    const [o, pad] = padOf(li);
+    if (pad) { if (pad.hidden) o.click(); padCol.append(pad); }   // the editor open from the start (part 6 loads it)
+    title.textContent = say('big_title', 'Tehtävä {{num}}', { num: li.dataset.num || i + 1 });
+    pos.textContent = say('big_pos', '{{i}} / {{n}}', { i: i + 1, n: tasks.length });
+    prev.disabled = i === 0; next.disabled = i === tasks.length - 1;
+    taskCol.scrollTop = 0; padCol.scrollTop = 0; body.scrollTop = 0;
+    window.dispatchEvent(new Event('resize'));           // the formulas measure their new width
+  };
+  const back = () => {
+    if (cur < 0) return;
+    const li = tasks[cur], [o, pad] = padOf(li);
+    if (pad && o) o.after(pad);
+    home.replaceWith(li); home = null;
+  };
+  const go = (i) => { if (i < 0 || i >= tasks.length || i === cur) return; back(); put(i); title.focus({ preventScroll: true }); };
+  const open = (i) => { first = i; put(i); dlg.showModal(); title.focus({ preventScroll: true }); document.documentElement.classList.add('ex-focus-on'); };
+  dlg.addEventListener('close', () => {
+    const li = tasks[cur], moved = cur !== first;
+    back(); cur = -1; document.documentElement.classList.remove('ex-focus-on');
+    window.dispatchEvent(new Event('resize'));
+    const lvl = li.closest('details.level'); if (lvl && !lvl.open) lvl.open = true;
+    if (moved) li.scrollIntoView({ block: 'start' });
+    const b = li.querySelector('.ex-big'); if (b) b.focus({ preventScroll: !moved });
+  });
+  prev.addEventListener('click', () => go(cur - 1));
+  next.addEventListener('click', () => go(cur + 1));
+  shut.addEventListener('click', () => dlg.close());
+  // Esc closes, except inside the formula editor, where Esc ends the formula (Abitti's own behaviour)
+  let escInMath = false;
+  dlg.addEventListener('keydown', (e) => { if (e.key === 'Escape') escInMath = !!(e.target.closest && e.target.closest('.math-editor, .math-editor-wrapper, .math-editor-latex-field, .math-editor-equation-field')); }, true);
+  dlg.addEventListener('cancel', (e) => { if (escInMath) e.preventDefault(); escInMath = false; });
+  tasks.forEach((li, i) => {
+    const b = mk('button', 'ex-big', say('big_open', 'Avaa isoksi')); b.type = 'button';
+    b.setAttribute('aria-haspopup', 'dialog');
+    b.addEventListener('click', () => open(i));
+    li.querySelector(':scope > .ex-head').append(b);
+  });
+})();
