@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: d513cf1c18b2f151
-Mode: full (translation review against the reviewed Finnish set)
+CONTENT-HASH: 9c0419c7a7dea6b1
+Mode: full (translation review against the reviewed Finnish set; new task fy4-7-L1-09)
 Round 1
 
 ## Blocking
 (none)
 
 ## Fixed
-- solutions.md L2-06 Answer line: "that is, with two significant figures" read awkwardly after the answer box; now "with two significant figures like the mass and the speed". No number touched.
+(none)
 
 ## Polish
 (none)
 
 ## Checked
-- Script comparison of en against fi for all 12+8 exercises: identical key sets, ids, levels, kinds, answers, units, tolerances, correct flags, data cells; every number in texts, choices, feedback and solutions.md equal (decimal point in en where fi has {,}).
-- Re-derived: L1-07 11.98 m (12), L2-05 mean 1.009 J, L2-06 -470 J, L2-07 0.52 kg, L3-04 0.614 J, L3-05 1.6 kJ; all agree with fi.
-- Terms: zero level, mechanical energy, kinetic/potential energy, internal energy; no Finnish left (grep).
-- check_i18n.py en: 0 errors.
+- Script comparison of exercises.json with content/fi: all ids, levels, kinds, answers, units, tolerances, correct flags, choice order and every number in all strings are identical (decimal point in en); new task fy4-7-L1-09 included.
+- Correct option and distractor feedback of fy4-7-L1-09 carry the same physics and numbers as fi; solutions.md section has the same lines, formulas and results.
+- No Finnish left in en (grep); no wrong-language text. check_i18n.py: nothing for this chapter; build.py succeeds.

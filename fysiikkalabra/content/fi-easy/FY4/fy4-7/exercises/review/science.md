@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 6f92d460fdfb3e0d
-Mode: full (translation review against the reviewed Finnish set)
+CONTENT-HASH: d5d700d53ef52571
+Mode: full (translation review against the reviewed Finnish set; new task fy4-7-L1-09)
 Round 1
 
 ## Blocking
 (none)
 
 ## Fixed
-(none needed)
+(none)
 
 ## Polish
 (none)
 
 ## Checked
-- Script comparison of fi-easy against fi for all exercises: identical key sets, ids, levels, kinds, answers, units, tolerances, correct flags, data cells; every number in texts, choices, feedback and solutions.md equal (decimal comma in text and LaTeX as in fi; data cells keep the point as in fi).
-- New tasks L1-06..08, L2-05..07, L3-04..05: same physics as fi (signs below zero level, 4x for 2v, 0.614 J, 1.6 kJ).
-- Re-derived key answers; all agree with fi.
-- check_i18n.py fi-easy: 0 errors.
+- Script comparison of exercises.json with content/fi: all ids, levels, kinds, answers, units, tolerances, correct flags, choice order and every number in all strings are identical (decimal point in fi-easy); new task fy4-7-L1-09 included.
+- Correct option and distractor feedback of fy4-7-L1-09 carry the same physics and numbers as fi; solutions.md section has the same lines, formulas and results.
+- No Finnish left in en (grep); no wrong-language text. check_i18n.py: nothing for this chapter; build.py succeeds.
