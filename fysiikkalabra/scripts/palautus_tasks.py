@@ -25,6 +25,29 @@ OUT = ROOT / "palautus/apps-script/Tehtavat.gs"
 GAS_COURSE = "FY3"   # Tehtavat.gs
 
 
+# The self-assessment items of a chapter (teacher 2026-11-06): the id, the page's plain label, and for a task what it asks
+# (its own title without the number and kind, and the start of the question) so that the fingerprint tells its content.
+SELF_ITEMS = r"""(() => [...document.querySelectorAll('fieldset.sa-rate')].map((f) => {
+  const out = { id: f.dataset.sa, label: f.dataset.label };
+  const act = f.closest('.activity');
+  if (!act || /^tavoite-/.test(out.id)) return out;
+  // the question itself: a numeric or explain task's .task, a choice's legend, the reflection's first item (not its answer)
+  const src = act.querySelector('.task, fieldset.choice > legend, ol > li') || act;
+  const c = src.cloneNode(true);
+  const tex = (x) => x.replace(/\\(?:text|mathrm|mathit|mathbf)\{([^{}]*)\}/g, '$1').replace(/\{,\}/g, ',').replace(/\\[,;:!]|~/g, ' ').replace(/\\cdot/g, '·')
+         .replace(/\\t?frac\{([^{}]*)\}\{([^{}]*)\}/g, '$1/$2').replace(/\\Delta\s*/g, 'Δ').replace(/\\(?:left|right)/g, '').replace(/\\([a-zA-Z]+)/g, '$1').replace(/[{}]/g, '').replace(/\s+/g, ' ').trim();
+  // a formula as short plain text (3,0 cm, F = ma); a closed box is not typeset yet, so its $…$ too
+  c.querySelectorAll('.katex').forEach((k) => { const a = k.querySelector('annotation'); k.replaceWith(tex(a ? a.textContent : k.textContent)); });
+  c.querySelectorAll('details, .feedback, .choices, button, output, .practice-hint, input, textarea, select, form, .hints, .model, script, style, [hidden]').forEach((e) => e.remove());
+  const q = c.textContent.replace(/\$([^$]*)\$/g, (m, x) => tex(x)).replace(/\s+/g, ' ').trim();
+  const t = /^\s*\d+\.\s*[^:]+(?::\s*(.+))?$/.exec(out.label || '');
+  const own = t && t[1] ? t[1].trim() : '';
+  out.full = [own, q].filter(Boolean).join(': ') || out.label;
+  out.label = out.full;   // one row each: the page cuts it to the column with … and shows the rest on hover
+  out.kind = (f.dataset.label || '').replace(/:.*$/, '');
+  return out;
+}))()"""
+
 def pages(course):
     """The Finnish pages of the course with the button (build.py submission_script), as chapter ids."""
     out = []
@@ -107,7 +130,8 @@ def collect(course):
             eyebrow = pg.evaluate("(() => { const e = document.querySelector('.ch-no'); return e ? e.textContent : ''; })()")
             m = re.search(r"Luku\s+(\d+)", eyebrow)
             # guided self-assessment of Tarkista osaamisesi (teacher 2026-11-06): its items in page order, id and plain label
-            self_items = pg.evaluate("[...document.querySelectorAll('fieldset.sa-rate')].map((f) => ({ id: f.dataset.sa, label: f.dataset.label }))")
+            # teacher 2026-11-06: "Käsitetehtävä 1" tells too little, so a task's item carries its own title and question
+            self_items = pg.evaluate(SELF_ITEMS)
             ch = {"id": pid, "number": int(m.group(1)) if m else int(pid.split("-")[1]), "title": re.sub(r"\s+", " ", title).replace("\\Delta ", "Δ").replace("\\Delta", "Δ"), "tasks": tasks}
             if self_items: ch["self"] = self_items
             chapters.append(ch)

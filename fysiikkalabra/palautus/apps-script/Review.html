@@ -72,11 +72,12 @@
   .sa-x { background: #9a9a9a; } .sa-none { background: #fff; border: 1px solid var(--line); box-sizing: border-box; }
   .sa-legend span.item { margin-right: 14px; white-space: nowrap; } .sa-legend .sa { margin-right: 4px; }
   /* osaamisen sormenjälki (opettaja 6.11.2026): rivit väittämiä luvuittain, sarakkeissa opiskelijat; valkoinen = ei vastattu, harmaa = ei vielä */
-  table.fp { width: auto; border-collapse: collapse; } table.fp td, table.fp th { padding: 0; border: 1px solid var(--line); }
-  table.fp th.st { writing-mode: vertical-rl; transform: rotate(180deg); font-size: 12px; font-weight: 600; padding: 4px 2px; max-height: 11em; white-space: nowrap; text-transform: none; letter-spacing: 0; }
-  table.fp th.ch { text-align: left; padding: 6px 8px; background: var(--soft, #f3efe6); font-size: 14px; }
-  table.fp td.lab { padding: 3px 8px; font-size: 13px; min-width: 16em; max-width: 30em; }
-  table.fp td.c { width: 26px; min-width: 26px; height: 24px; }
+  table.fp { width: auto; border-collapse: collapse; table-layout: fixed; } table.fp td, table.fp th { padding: 0; border: 1px solid var(--line); }
+  table.fp th.st { writing-mode: vertical-rl; transform: rotate(180deg); font-size: 12px; font-weight: 600; padding: 4px 0; height: 9em; width: 20px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; text-transform: none; letter-spacing: 0; }
+  table.fp th.ch { text-align: left; padding: 2px 6px; height: 20px; background: var(--soft, #f3efe6); font-size: 13px; white-space: nowrap; }
+  table.fp tbody tr { height: 20px; }
+  table.fp td.lab { padding: 0 6px; font-size: 12px; width: 34em; max-width: 34em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  table.fp td.c { width: 20px; min-width: 20px; height: 20px; }
   table.fp td.c.sa-none { border: 1px solid var(--line); }
 </style>
 </head>
@@ -289,7 +290,7 @@
       var cr = el('tr'), ch = el('th', 'ch', 'Luku ' + c.number + ' · ' + c.title); ch.colSpan = names.length + 1; cr.append(ch); tb.append(cr);
       var by = {}; c.self.students.forEach(function (x) { by[x.email] = x.levels || {}; });
       c.self.items.forEach(function (it) {
-        var tr = el('tr'); tr.append(el('td', 'lab', it.label));
+        var tr = el('tr'), lab = el('td', 'lab', it.label); lab.title = (it.kind ? it.kind + ': ' : '') + (it.full || it.label); tr.append(lab);
         names.forEach(function (n, i) {
           var v = (by[n] || {})[it.id], k = v && SA_TEXT[v] ? v : 'none', td = el('td', 'c sa-' + k);
           td.title = (S.hide ? 'Opiskelija ' + (i + 1) : n) + ': ' + SA_TEXT[k]; td.setAttribute('aria-label', td.title); td.dataset.level = k;
