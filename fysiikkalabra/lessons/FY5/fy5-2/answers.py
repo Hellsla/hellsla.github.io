@@ -50,4 +50,8 @@ a["fy5-2-L3-04"] = (0.40 * (Gt2 + Gh2) * 5.00 * math.sin(al) - Gt2 * 2.50 * math
 # chair: legs 0,40 m apart, chair 8,00 kg (CoM 0,20 m), person 72,0 kg; tips when the common CoM is at the front legs
 xh = (80.0 * 0.40 - 8.00 * 0.20) / 72.0 * 100            # 42,22 cm
 a["fy5-2-L3-05"] = 50 + 10 * (xh - 41.3) / (44.4 - 41.3)  # linear interpolation between (50°; 41,3 cm) and (60°; 44,4 cm): 52,97° -> 53°
+# L2-08 (find the error, multiple choice): plank 3,0 m, 160 N, supports A (left end) and B (2,0 m); can 40 N at the right end
+assert (160 * 1.5 + 40 * 1.0) / 2.0 == 140 and 200 - 140 == 60   # the student's rows with the wrong arm r_p = 1,0 m
+assert (160 * 1.5 + 40 * 3.0) / 2.0 == 180 and 200 - 180 == 20   # correct arm r_p = 3,0 m about A: N_B = 180 N, N_A = 20 N
+assert abs(160 * 0.5 - 20 * 2.0 - 40 * 1.0) < 1e-12             # check about B: moments sum to zero
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

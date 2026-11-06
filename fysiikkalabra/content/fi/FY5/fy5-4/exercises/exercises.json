@@ -1,320 +1,356 @@
 {
-  "level1": [
+ "level1": [
+  {
+   "id": "fy5-4-L1-01",
+   "level": 1,
+   "core": true,
+   "text": "Auto ajaa moottoritien liittymän kaarteessa tasaisella nopeudella $20\\,\\text{m/s}$. Kaarteen säde on $80\\,\\text{m}$. Kuinka suuri on auton normaalikiihtyvyys?",
+   "answer": 5.0,
+   "unit": "m/s²",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy5-4-L1-02",
+   "level": 1,
+   "text": "Juoksija juoksee juoksuradan kaarteessa, jonka säde on $36{,}5\\,\\text{m}$. Hänen vauhtinsa pysyy kaarteessa samana, $8{,}00\\,\\text{m/s}$. Kuinka suuri on juoksijan normaalikiihtyvyys?",
+   "answer": 1.7534,
+   "unit": "m/s²",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy5-4-L1-03",
+   "level": 1,
+   "text": "Kivi, jonka massa on $0{,}50\\,\\text{kg}$, pyörii narun päässä vaakasuoralla ympyräradalla. Radan säde on $1{,}2\\,\\text{m}$ ja kiven ratanopeus $4{,}0\\,\\text{m/s}$. Kuinka suuri kokonaisvoima kiveen vaikuttaa?",
+   "answer": 6.6667,
+   "unit": "N",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy5-4-L1-04",
+   "level": 1,
+   "text": "Auto ajaa liikenneympyrässä, jonka säde on $25\\,\\text{m}$. Kiihtyvyysanturi näyttää, että auton normaalikiihtyvyys on $2{,}5\\,\\text{m/s}^2$. Kuinka suuri on auton ratanopeus?",
+   "answer": 7.9057,
+   "unit": "m/s",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy5-4-L1-05",
+   "level": 1,
+   "text": "Pyykinpesukoneen rummun säde on $0{,}25\\,\\text{m}$. Linkouksen aikana rummun reunalla olevan vaatteen ratanopeus on $15\\,\\text{m/s}$. Kuinka suuri on vaatteen normaalikiihtyvyys?",
+   "answer": 900.0,
+   "unit": "m/s²",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy5-4-L1-06",
+   "level": 1,
+   "core": true,
+   "text": "Auto kääntyy vasemmalle tasaisella vauhdilla, ja takapenkillä istuva matkustaja painuu oikeaa ovea vasten. Hänestä tuntuu kuin jokin työntäisi häntä ulospäin. Mikä selittää tämän oikein?",
+   "kind": [
+    "concept"
+   ],
+   "answer": "Matkustajan keho pyrkii jatkamaan suoraan, ja ovi työntää hänet sisäänpäin kaarteeseen.",
+   "unit": "",
+   "tolerance": 0.02,
+   "choices": [
     {
-      "id": "fy5-4-L1-01",
-      "level": 1,
-      "core": true,
-      "text": "Auto ajaa moottoritien liittymän kaarteessa tasaisella nopeudella $20\\,\\text{m/s}$. Kaarteen säde on $80\\,\\text{m}$. Kuinka suuri on auton normaalikiihtyvyys?",
-      "answer": 5.0,
-      "unit": "m/s²",
-      "tolerance": 0.02
+     "text": "Matkustajaan vaikuttaa ulospäin osoittava keskipakoisvoima, joka painaa hänet kiinni oveen.",
+     "feedback": "Keskipakoisvoimaa ei ole: mikään kappale ei vedä tai työnnä matkustajaa ulospäin. Oven antama voima osoittaa sisäänpäin."
     },
     {
-      "id": "fy5-4-L1-02",
-      "level": 1,
-      "text": "Juoksija juoksee juoksuradan kaarteessa, jonka säde on $36{,}5\\,\\text{m}$. Hänen vauhtinsa pysyy kaarteessa samana, $8{,}00\\,\\text{m/s}$. Kuinka suuri on juoksijan normaalikiihtyvyys?",
-      "answer": 1.7534,
-      "unit": "m/s²",
-      "tolerance": 0.02
+     "text": "Matkustajan keho pyrkii jatkamaan suoraan, ja ovi työntää hänet sisäänpäin kaarteeseen.",
+     "correct": true,
+     "feedback": "Oikein: keho jatkaisi suoraan, joten ovi painaa matkustajaa sisäänpäin ja pakottaa hänet kaarteeseen. Tämä ovesta tuleva voima tuntuu painautumisena ulospäin."
     },
     {
-      "id": "fy5-4-L1-03",
-      "level": 1,
-      "text": "Kivi, jonka massa on $0{,}50\\,\\text{kg}$, pyörii narun päässä vaakasuoralla ympyräradalla. Radan säde on $1{,}2\\,\\text{m}$ ja kiven ratanopeus $4{,}0\\,\\text{m/s}$. Kuinka suuri kokonaisvoima kiveen vaikuttaa?",
-      "answer": 6.6667,
-      "unit": "N",
-      "tolerance": 0.02
+     "text": "Matkustajaan ei vaikuta kaarteessa mikään sivuttainen voima, koska auton vauhti pysyy samana.",
+     "feedback": "Vauhti pysyy samana, mutta nopeuden suunta muuttuu. Suunnan muutos on kiihtyvyyttä, joten sivuttainen voima tarvitaan."
     },
     {
-      "id": "fy5-4-L1-04",
-      "level": 1,
-      "text": "Auto ajaa liikenneympyrässä, jonka säde on $25\\,\\text{m}$. Kiihtyvyysanturi näyttää, että auton normaalikiihtyvyys on $2{,}5\\,\\text{m/s}^2$. Kuinka suuri on auton ratanopeus?",
-      "answer": 7.9057,
-      "unit": "m/s",
-      "tolerance": 0.02
-    },
-    {
-      "id": "fy5-4-L1-05",
-      "level": 1,
-      "text": "Pyykinpesukoneen rummun säde on $0{,}25\\,\\text{m}$. Linkouksen aikana rummun reunalla olevan vaatteen ratanopeus on $15\\,\\text{m/s}$. Kuinka suuri on vaatteen normaalikiihtyvyys?",
-      "answer": 900.0,
-      "unit": "m/s²",
-      "tolerance": 0.02
-    },
-    {
-      "id": "fy5-4-L1-06",
-      "level": 1,
-      "core": true,
-      "text": "Auto kääntyy vasemmalle tasaisella vauhdilla, ja takapenkillä istuva matkustaja painuu oikeaa ovea vasten. Hänestä tuntuu kuin jokin työntäisi häntä ulospäin. Mikä selittää tämän oikein?",
-      "kind": [
-        "concept"
-      ],
-      "answer": "Matkustajan keho pyrkii jatkamaan suoraan, ja ovi työntää hänet sisäänpäin kaarteeseen.",
-      "unit": "",
-      "tolerance": 0.02,
-      "choices": [
-        {
-          "text": "Matkustajaan vaikuttaa ulospäin osoittava keskipakoisvoima, joka painaa hänet kiinni oveen.",
-          "feedback": "Keskipakoisvoimaa ei ole: mikään kappale ei vedä tai työnnä matkustajaa ulospäin. Oven antama voima osoittaa sisäänpäin."
-        },
-        {
-          "text": "Matkustajan keho pyrkii jatkamaan suoraan, ja ovi työntää hänet sisäänpäin kaarteeseen.",
-          "correct": true,
-          "feedback": "Oikein: keho jatkaisi suoraan, joten ovi painaa matkustajaa sisäänpäin ja pakottaa hänet kaarteeseen. Tämä ovesta tuleva voima tuntuu painautumisena ulospäin."
-        },
-        {
-          "text": "Matkustajaan ei vaikuta kaarteessa mikään sivuttainen voima, koska auton vauhti pysyy samana.",
-          "feedback": "Vauhti pysyy samana, mutta nopeuden suunta muuttuu. Suunnan muutos on kiihtyvyyttä, joten sivuttainen voima tarvitaan."
-        },
-        {
-          "text": "Istuimen kitka työntää matkustajaa ulospäin, koska kitka vastustaa matkustajan liikettä.",
-          "feedback": "Kitka vastustaa liukumista istuimeen nähden. Matkustaja pyrkisi liukumaan ulospäin, joten kitka osoittaa sisäänpäin."
-        }
-      ]
-    },
-    {
-      "id": "fy5-4-L1-07",
-      "level": 1,
-      "text": "Pyöräilijä ajaa ympyrän muotoisessa kaarteessa tasaisella vauhdilla. Mihin suuntaan hänen kiihtyvyytensä osoittaa?",
-      "kind": [
-        "concept"
-      ],
-      "answer": "Kohti keskipistettä, koska nopeuden suunta kääntyy koko ajan sisäänpäin.",
-      "unit": "",
-      "tolerance": 0.02,
-      "choices": [
-        {
-          "text": "Liikkeen suuntaan, koska pyöräilijä etenee radallaan koko ajan eteenpäin.",
-          "feedback": "Liikkeen suuntainen kiihtyvyys muuttaisi vauhtia. Tässä vauhti pysyy samana, ja vain nopeuden suunta muuttuu."
-        },
-        {
-          "text": "Radan keskipisteestä poispäin, koska pyöräilijä tuntee työntyvänsä ulospäin.",
-          "feedback": "Tunne ulospäin työntymisestä syntyy, koska keho pyrkii jatkamaan suoraan. Kiihtyvyys ei silti osoita ulospäin."
-        },
-        {
-          "text": "Kohti keskipistettä, koska nopeuden suunta kääntyy koko ajan sisäänpäin.",
-          "correct": true,
-          "feedback": "Oikein: nopeuden muutos osoittaa kaarteen sisäpuolelle, joten normaalikiihtyvyys osoittaa kohti keskipistettä."
-        },
-        {
-          "text": "Kiihtyvyyttä ei ole, koska pyöräilijän vauhti pysyy samana koko kaarteen ajan.",
-          "feedback": "Kiihtyvyys kertoo nopeuden muutoksesta, ja nopeus on vektori. Kun suunta muuttuu, nopeus muuttuu, vaikka vauhti pysyy samana."
-        }
-      ]
-    },
-    {
-      "id": "fy5-4-L1-08",
-      "level": 1,
-      "text": "Moottoripyörä ajaa ympyrän muotoisessa kaarteessa tasaisella nopeudella, ja sen normaalikiihtyvyys on $1{,}0\\,\\text{m/s}^2$. Kuljettaja ajaa saman kaarteen uudelleen kolminkertaisella nopeudella. Kuinka suuri normaalikiihtyvyys on silloin?",
-      "kind": [
-        "reasoning"
-      ],
-      "answer": 9.0,
-      "unit": "m/s²",
-      "tolerance": 0.02
+     "text": "Istuimen kitka työntää matkustajaa ulospäin, koska kitka vastustaa matkustajan liikettä.",
+     "feedback": "Kitka vastustaa liukumista istuimeen nähden. Matkustaja pyrkisi liukumaan ulospäin, joten kitka osoittaa sisäänpäin."
     }
-  ],
-  "level2": [
+   ]
+  },
+  {
+   "id": "fy5-4-L1-07",
+   "level": 1,
+   "text": "Pyöräilijä ajaa ympyrän muotoisessa kaarteessa tasaisella vauhdilla. Mihin suuntaan hänen kiihtyvyytensä osoittaa?",
+   "kind": [
+    "concept"
+   ],
+   "answer": "Kohti keskipistettä, koska nopeuden suunta kääntyy koko ajan sisäänpäin.",
+   "unit": "",
+   "tolerance": 0.02,
+   "choices": [
     {
-      "id": "fy5-4-L2-01",
-      "level": 2,
-      "core": true,
-      "text": "Pyöräilijä ajaa alikulkutunnelin notkon pohjan läpi tasaisella nopeudella $8{,}0\\,\\text{m/s}$. Pyöräilijän ja pyörän yhteinen massa on $80\\,\\text{kg}$, ja notkon pohjalla tien kaaren säde on $16\\,\\text{m}$. Ilmanvastus ja vierimisvastus jätetään huomiotta. Kuinka suuri on tien tukivoima pyörään notkon pohjalla? Vastaa kilonewtoneina.",
-      "answer": 1.1048,
-      "unit": "kN",
-      "tolerance": 0.02,
-      "fbd": "equations"
+     "text": "Liikkeen suuntaan, koska pyöräilijä etenee radallaan koko ajan eteenpäin.",
+     "feedback": "Liikkeen suuntainen kiihtyvyys muuttaisi vauhtia. Tässä vauhti pysyy samana, ja vain nopeuden suunta muuttuu."
     },
     {
-      "id": "fy5-4-L2-02",
-      "level": 2,
-      "text": "Leikkikentän karuselli pyörii tasaisesti niin, että yksi kierros kestää $5{,}0\\,\\text{s}$. Lapsi istuu karusellin reunalla $3{,}0\\,\\text{m}$:n päässä keskipisteestä. Kuinka suuri on lapsen normaalikiihtyvyys?",
-      "answer": 4.7374,
-      "unit": "m/s²",
-      "tolerance": 0.02
+     "text": "Radan keskipisteestä poispäin, koska pyöräilijä tuntee työntyvänsä ulospäin.",
+     "feedback": "Tunne ulospäin työntymisestä syntyy, koska keho pyrkii jatkamaan suoraan. Kiihtyvyys ei silti osoita ulospäin."
     },
     {
-      "id": "fy5-4-L2-03",
-      "level": 2,
-      "text": "Auto, jonka massa on $1200\\,\\text{kg}$, ajaa tasaisella nopeudella $12\\,\\text{m/s}$ nyppylän yli. Nyppylän huipulla tien kaaren säde on $30\\,\\text{m}$. Ilmanvastus ja vierimisvastus jätetään huomiotta. Kuinka suuri on tien tukivoima autoon huipulla? Vastaa kilonewtoneina.",
-      "answer": 6.012,
-      "unit": "kN",
-      "tolerance": 0.02,
-      "fbd": "equations"
+     "text": "Kohti keskipistettä, koska nopeuden suunta kääntyy koko ajan sisäänpäin.",
+     "correct": true,
+     "feedback": "Oikein: nopeuden muutos osoittaa kaarteen sisäpuolelle, joten normaalikiihtyvyys osoittaa kohti keskipistettä."
     },
     {
-      "id": "fy5-4-L2-04",
-      "level": 2,
-      "text": "Moukarinheittäjä pyörittää $7{,}26\\,\\text{kg}$:n moukaria ennen heittoa. Oletetaan, että moukari kiertää vaakasuoraa ympyrää, jonka säde on $1{,}8\\,\\text{m}$, ja yksi kierros kestää $0{,}50\\,\\text{s}$. Kuinka suuri kokonaisvoima moukariin vaikuttaa? Vastaa kilonewtoneina.",
-      "answer": 2.0636,
-      "unit": "kN",
-      "tolerance": 0.02
-    },
-    {
-      "id": "fy5-4-L2-05",
-      "level": 2,
-      "text": "Opiskelijat tutkivat, miten narun jännitysvoima riippuu ympyräliikkeen nopeudesta. Pieni kumitulppa liikkuu narun päässä ympyrää sileällä vaakasuoralla pöydällä, ja ympyrän säde pidetään vakiona, $0{,}80\\,\\text{m}$. Narun voima $F$ mitataan voimamittarilla, ja ratanopeus $v$ lasketaan kierrosajasta. Aineisto on esimerkkiaineisto.\n\nPiirrä $(v^2, F)$-kuvaaja ja sovita siihen suora, joka kulkee origon kautta. Lue suoralta kulmakerroin ja laske sen avulla tulpan massa. Pöytä on sileä ja naru vaakasuora, joten jännitysvoima on ainoa vaakasuuntainen voima.\n\nVastauslaatikkoon tulee tulpan massa grammoina.",
-      "kind": [
-        "data",
-        "graph"
-      ],
-      "answer": 24.98,
-      "unit": "g",
-      "tolerance": 0.05,
-      "data": {
-        "caption": "Narun voima (esimerkkiaineisto)",
-        "columns": [
-          "$v\\,(\\text{m/s})$",
-          "$F\\,(\\text{N})$"
-        ],
-        "rows": [
-          [
-            "3.0",
-            "0.28"
-          ],
-          [
-            "4.0",
-            "0.50"
-          ],
-          [
-            "5.0",
-            "0.78"
-          ],
-          [
-            "6.0",
-            "1.13"
-          ],
-          [
-            "7.0",
-            "1.53"
-          ]
-        ]
-      }
-    },
-    {
-      "id": "fy5-4-L2-06",
-      "level": 2,
-      "text": "Märällä koeradalla kuljettaja ajaa autolla ympyrää ja kasvattaa nopeutta, kunnes auto alkaa liukua. Eri kokeissa ympyrän säde $r$ vaihtelee, ja suurin liukumatta saavutettu ratanopeus $v$ mitataan. Aineisto on esimerkkiaineisto.\n\nRata on vaakasuora, ja ilmanvastus jätetään huomiotta. Laske jokaiselle riville lepokitkakerroin $\\mu_0$, jolla auto juuri ja juuri pysyy radalla, ja määritä niiden keskiarvo.\n\nVastauslaatikkoon tulee kitkakertoimen keskiarvo.",
-      "kind": [
-        "data"
-      ],
-      "answer": 0.5477,
-      "unit": "",
-      "tolerance": 0.03,
-      "fbd": "equations",
-      "data": {
-        "caption": "Liukumaton ajo (esimerkkiaineisto)",
-        "columns": [
-          "$r\\,(\\text{m})$",
-          "$v\\,(\\text{m/s})$"
-        ],
-        "rows": [
-          [
-            "20",
-            "10.4"
-          ],
-          [
-            "30",
-            "12.6"
-          ],
-          [
-            "40",
-            "14.8"
-          ],
-          [
-            "50",
-            "16.3"
-          ]
-        ]
-      }
-    },
-    {
-      "id": "fy5-4-L2-07",
-      "level": 2,
-      "core": true,
-      "text": "Oppilas ratkaisi tehtävän: \"Auto, jonka massa on $850\\,\\text{kg}$, ajaa vaakasuoran kaarteen läpi tasaisella nopeudella $18\\,\\text{m/s}$. Kaarteen säde on $75\\,\\text{m}$. Kuinka suuri kitkavoima tien on kohdistettava autoon?\"\n\nOppilaan ratkaisu: \"Autoon vaikuttavat kitka kohti kaarteen keskipistettä ja keskipakoisvoima ulospäin. Keskipakoisvoima on $m\\tfrac{v^2}{r} = 3672\\,\\text{N}$. Kokonaisvoiman pitää osoittaa kohti keskipistettä ja olla $m\\tfrac{v^2}{r}$, joten kitkan on oltava kokonaisvoima lisättynä keskipakoisvoimalla: $F_\\mu = 3672\\,\\text{N} + 3672\\,\\text{N} = 7344\\,\\text{N}$.\"\n\na) Selitä, mikä virhe oppilaan ratkaisussa on.\n\nb) Laske oikea kitkavoima.\n\nVastauslaatikkoon tulee osan b) tulos kilonewtoneina.",
-      "kind": [
-        "error"
-      ],
-      "answer": 3.672,
-      "unit": "kN",
-      "tolerance": 0.02,
-      "fbd": "error"
+     "text": "Kiihtyvyyttä ei ole, koska pyöräilijän vauhti pysyy samana koko kaarteen ajan.",
+     "feedback": "Kiihtyvyys kertoo nopeuden muutoksesta, ja nopeus on vektori. Kun suunta muuttuu, nopeus muuttuu, vaikka vauhti pysyy samana."
     }
-  ],
-  "level3": [
+   ]
+  },
+  {
+   "id": "fy5-4-L1-08",
+   "level": 1,
+   "text": "Moottoripyörä ajaa ympyrän muotoisessa kaarteessa tasaisella nopeudella, ja sen normaalikiihtyvyys on $1{,}0\\,\\text{m/s}^2$. Kuljettaja ajaa saman kaarteen uudelleen kolminkertaisella nopeudella. Kuinka suuri normaalikiihtyvyys on silloin?",
+   "kind": [
+    "reasoning"
+   ],
+   "answer": 9.0,
+   "unit": "m/s²",
+   "tolerance": 0.02
+  }
+ ],
+ "level2": [
+  {
+   "id": "fy5-4-L2-01",
+   "level": 2,
+   "core": true,
+   "text": "Pyöräilijä ajaa alikulkutunnelin notkon pohjan läpi tasaisella nopeudella $8{,}0\\,\\text{m/s}$. Pyöräilijän ja pyörän yhteinen massa on $80\\,\\text{kg}$, ja notkon pohjalla tien kaaren säde on $16\\,\\text{m}$. Ilmanvastus ja vierimisvastus jätetään huomiotta. Kuinka suuri on tien tukivoima pyörään notkon pohjalla? Vastaa kilonewtoneina.",
+   "answer": 1.1048,
+   "unit": "kN",
+   "tolerance": 0.02,
+   "fbd": "equations"
+  },
+  {
+   "id": "fy5-4-L2-02",
+   "level": 2,
+   "text": "Leikkikentän karuselli pyörii tasaisesti niin, että yksi kierros kestää $5{,}0\\,\\text{s}$. Lapsi istuu karusellin reunalla $3{,}0\\,\\text{m}$:n päässä keskipisteestä. Kuinka suuri on lapsen normaalikiihtyvyys?",
+   "answer": 4.7374,
+   "unit": "m/s²",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy5-4-L2-03",
+   "level": 2,
+   "text": "Auto, jonka massa on $1200\\,\\text{kg}$, ajaa tasaisella nopeudella $12\\,\\text{m/s}$ nyppylän yli. Nyppylän huipulla tien kaaren säde on $30\\,\\text{m}$. Ilmanvastus ja vierimisvastus jätetään huomiotta. Kuinka suuri on tien tukivoima autoon huipulla? Vastaa kilonewtoneina.",
+   "answer": 6.012,
+   "unit": "kN",
+   "tolerance": 0.02,
+   "fbd": "equations"
+  },
+  {
+   "id": "fy5-4-L2-04",
+   "level": 2,
+   "text": "Moukarinheittäjä pyörittää $7{,}26\\,\\text{kg}$:n moukaria ennen heittoa. Oletetaan, että moukari kiertää vaakasuoraa ympyrää, jonka säde on $1{,}8\\,\\text{m}$, ja yksi kierros kestää $0{,}50\\,\\text{s}$. Kuinka suuri kokonaisvoima moukariin vaikuttaa? Vastaa kilonewtoneina.",
+   "answer": 2.0636,
+   "unit": "kN",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy5-4-L2-05",
+   "level": 2,
+   "text": "Opiskelijat tutkivat, miten narun jännitysvoima riippuu ympyräliikkeen nopeudesta. Pieni kumitulppa liikkuu narun päässä ympyrää sileällä vaakasuoralla pöydällä, ja ympyrän säde pidetään vakiona, $0{,}80\\,\\text{m}$. Narun voima $F$ mitataan voimamittarilla, ja ratanopeus $v$ lasketaan kierrosajasta. Aineisto on esimerkkiaineisto.\n\nPiirrä $(v^2, F)$-kuvaaja ja sovita siihen suora, joka kulkee origon kautta. Lue suoralta kulmakerroin ja laske sen avulla tulpan massa. Pöytä on sileä ja naru vaakasuora, joten jännitysvoima on ainoa vaakasuuntainen voima.\n\nVastauslaatikkoon tulee tulpan massa grammoina.",
+   "kind": [
+    "data",
+    "graph"
+   ],
+   "answer": 24.98,
+   "unit": "g",
+   "tolerance": 0.05,
+   "data": {
+    "caption": "Narun voima (esimerkkiaineisto)",
+    "columns": [
+     "$v\\,(\\text{m/s})$",
+     "$F\\,(\\text{N})$"
+    ],
+    "rows": [
+     [
+      "3.0",
+      "0.28"
+     ],
+     [
+      "4.0",
+      "0.50"
+     ],
+     [
+      "5.0",
+      "0.78"
+     ],
+     [
+      "6.0",
+      "1.13"
+     ],
+     [
+      "7.0",
+      "1.53"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "fy5-4-L2-06",
+   "level": 2,
+   "text": "Märällä koeradalla kuljettaja ajaa autolla ympyrää ja kasvattaa nopeutta, kunnes auto alkaa liukua. Eri kokeissa ympyrän säde $r$ vaihtelee, ja suurin liukumatta saavutettu ratanopeus $v$ mitataan. Aineisto on esimerkkiaineisto.\n\nRata on vaakasuora, ja ilmanvastus jätetään huomiotta. Laske jokaiselle riville lepokitkakerroin $\\mu_0$, jolla auto juuri ja juuri pysyy radalla, ja määritä niiden keskiarvo.\n\nVastauslaatikkoon tulee kitkakertoimen keskiarvo.",
+   "kind": [
+    "data"
+   ],
+   "answer": 0.5477,
+   "unit": "",
+   "tolerance": 0.03,
+   "fbd": "equations",
+   "data": {
+    "caption": "Liukumaton ajo (esimerkkiaineisto)",
+    "columns": [
+     "$r\\,(\\text{m})$",
+     "$v\\,(\\text{m/s})$"
+    ],
+    "rows": [
+     [
+      "20",
+      "10.4"
+     ],
+     [
+      "30",
+      "12.6"
+     ],
+     [
+      "40",
+      "14.8"
+     ],
+     [
+      "50",
+      "16.3"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "fy5-4-L2-07",
+   "level": 2,
+   "core": true,
+   "text": "Oppilas ratkaisi tehtävän: \"Auto, jonka massa on $850\\,\\text{kg}$, ajaa vaakasuoran kaarteen läpi tasaisella nopeudella $18\\,\\text{m/s}$. Kaarteen säde on $75\\,\\text{m}$. Kuinka suuri kitkavoima tien on kohdistettava autoon?\"\n\nOppilaan ratkaisu: \"Autoon vaikuttavat kitka kohti kaarteen keskipistettä ja keskipakoisvoima ulospäin. Keskipakoisvoima on $m\\tfrac{v^2}{r} = 3672\\,\\text{N}$. Kokonaisvoiman pitää osoittaa kohti keskipistettä ja olla $m\\tfrac{v^2}{r}$, joten kitkan on oltava kokonaisvoima lisättynä keskipakoisvoimalla: $F_\\mu = 3672\\,\\text{N} + 3672\\,\\text{N} = 7344\\,\\text{N}$.\"\n\na) Selitä, mikä virhe oppilaan ratkaisussa on.\n\nb) Laske oikea kitkavoima.\n\nVastauslaatikkoon tulee osan b) tulos kilonewtoneina.",
+   "kind": [
+    "error"
+   ],
+   "answer": 3.672,
+   "unit": "kN",
+   "tolerance": 0.02,
+   "fbd": "error"
+  },
+  {
+   "id": "fy5-4-L2-08",
+   "level": 2,
+   "text": "Vuoristoradan vaunu kulkee pystysuoran, ympyrän muotoisen silmukan ylimmän kohdan läpi. Vaunu on silloin ylösalaisin radan alapuolella, ja rata painaa vaunua. Ylimmässä kohdassa vaunun normaalikiihtyvyys on $a_\\text{n} = 1{,}5\\,g$, missä $g$ on putoamiskiihtyvyys. Ilmanvastus ja kitka jätetään huomiotta.\n\nKuvioissa $\\overline{G}$ on vaunun paino ja $\\overline{N}$ radan tukivoima. Nuoli $\\overline{F}_\\text{kp}$ on keskipakoisvoimaksi nimetty voima, ja $\\overline{v}$ on vaunun nopeus. Kaikki kuviot on piirretty samassa mittakaavassa.\n\nMikä voimakuvio esittää oikein vaunuun vaikuttavat voimat silmukan ylimmässä kohdassa?",
+   "kind": [
+    "concept",
+    "reasoning"
+   ],
+   "fbd": "select",
+   "answer": "Voimakuvio C",
+   "unit": "",
+   "tolerance": 0.02,
+   "choices": [
     {
-      "id": "fy5-4-L3-01",
-      "level": 3,
-      "text": "Jäinen tie kaartaa vaakasuorassa, ja kaarteen säde on $60\\,\\text{m}$. Renkaiden ja jään välinen lepokitkakerroin on $0{,}10$. Ilmanvastus ja vierimisvastus jätetään huomiotta. Millä suurimmalla nopeudella auto voi ajaa kaarteen läpi liukumatta? Vastaa yksikössä $\\text{km/h}$.",
-      "answer": 27.6193,
-      "unit": "km/h",
-      "tolerance": 0.02,
-      "fbd": "equations"
+     "text": "Voimakuvio A",
+     "figure": "fy5-4/pick-ylos",
+     "feedback": "Tässä tukivoima on piirretty ylöspäin kuin lattian tukivoima. Rata on vaunun yläpuolella, joten se työntää vaunua alaspäin. Ylöspäin osoittava $\\overline{N}$ antaisi kokonaisvoimaksi vain $0{,}5\\,G$, vaikka kiihtyvyys vaatii $1{,}5\\,G$."
     },
     {
-      "id": "fy5-4-L3-02",
-      "level": 3,
-      "text": "Kiekko, jonka massa on $0{,}40\\,\\text{kg}$, on sidottu narulla pöytään kiinnitettyyn tappiin, ja se liukuu sileällä pöydällä vaakasuoraa ympyrää, jonka säde on $0{,}80\\,\\text{m}$. Naru katkeaa, jos sen jännitysvoima ylittää $25\\,\\text{N}$. Kitka jätetään huomiotta. Kuinka suuri voi kiekon pyörimistaajuus enintään olla?",
-      "answer": 1.4067,
-      "unit": "Hz",
-      "tolerance": 0.02,
-      "fbd": "equations"
+     "text": "Voimakuvio B",
+     "figure": "fy5-4/pick-keskipako",
+     "feedback": "Keskipakoisvoimaa ei ole: mikään kappale ei vedä vaunua ylöspäin, poispäin silmukan keskipisteestä. Tässä kuviossa voimat kumoavat toisensa, vaikka vaunu kiihtyy kohti keskipistettä, joten kokonaisvoima ei voi olla nolla."
     },
     {
-      "id": "fy5-4-L3-03",
-      "level": 3,
-      "text": "Tiesuunnittelija mitoittaa vaakasuoran kaarteen nopeudelle $80\\,\\text{km/h}$. Turvallisuussyistä tien kitkan ei pidä joutua antamaan autoon suurempaa sivuttaista voimaa kuin $0{,}25$ kertaa auton paino, jotta pito riittää myös märällä tiellä. Ilmanvastus ja vierimisvastus jätetään huomiotta. Kuinka suuri kaarteen säteen on vähintään oltava?",
-      "answer": 201.3566,
-      "unit": "m",
-      "tolerance": 0.02,
-      "fbd": "equations"
+     "text": "Voimakuvio C",
+     "figure": "fy5-4/pick-alas",
+     "correct": true,
+     "feedback": "Oikein: vaunuun vaikuttavat vain Maa ja rata, ja kumpikin voima osoittaa alas kohti silmukan keskipistettä. Kokonaisvoima on $G + N = 1{,}5\\,mg$, joten tukivoima on $N = 0{,}5\\,G$."
     },
     {
-      "id": "fy5-4-L3-04",
-      "level": 3,
-      "text": "Vuoristoradan vaunu kulkee pystysuoran ympyrän muotoisen silmukan läpi. Vaunun nopeusmittari mittasi ratanopeuden $v$ silmukan alimmassa ja ylimmässä kohdassa, ja normaalikiihtyvyys $a_\\text{n}$ laskettiin nopeudesta ja radan muodosta (taulukko, esimerkkiaineisto). Matkustajan massa on $60{,}0\\,\\text{kg}$. Ilmanvastus ja vierimisvastus jätetään huomiotta.\n\na) Laske silmukan säde kummastakin rivistä ja niiden keskiarvo.\n\nb) Piirrä matkustajan voimakuvio alimmassa ja ylimmässä kohdassa. Laske vaunun tukivoima matkustajaan kummassakin kohdassa. Kuinka moninkertainen tukivoima on alhaalla matkustajan painoon verrattuna?\n\nc) Mikä on pienin nopeus ylhäällä, jolla matkustaja pysyy vielä kosketuksessa vaunuun, kun säde on osan a) keskiarvo? Riittääkö taulukon nopeus?\n\nVastauslaatikkoon tulee osan b) tukivoima ylimmässä kohdassa.",
-      "kind": [
-        "data",
-        "model"
-      ],
-      "answer": 257.4,
-      "unit": "N",
-      "tolerance": 0.02,
-      "fbd": "equations",
-      "data": {
-        "caption": "Silmukan mittaukset (esimerkkiaineisto)",
-        "columns": [
-          "Kohta",
-          "$v\\,(\\text{m/s})$",
-          "$a_\\text{n}\\,(\\text{m/s}^2)$"
-        ],
-        "rows": [
-          [
-            "alhaalla",
-            "27.2",
-            "53.2"
-          ],
-          [
-            "ylhäällä",
-            "14.0",
-            "14.1"
-          ]
-        ]
-      }
-    },
-    {
-      "id": "fy5-4-L3-05",
-      "level": 3,
-      "text": "Moottoritien liittymän kaarteen rata on vaakasuora ympyrä, jonka säde on $130\\,\\text{m}$. Tie on kallistettu kaarteen sisäreunaa kohti kulmaan $8{,}0\\,{}^\\circ$ vaakatasosta. Renkaiden ja märän tien välinen lepokitkakerroin on $0{,}40$. Ilmanvastus ja vierimisvastus jätetään huomiotta.\n\na) Piirrä auton voimakuvio ja laske nopeus $v_0$, jolla auto voi ajaa kaarteen kokonaan ilman kitkaa. Anna se yksikössä $\\text{km/h}$.\n\nb) Laske suurin nopeus, jolla auto voi ajaa kaarteen liukumatta, kun kitka otetaan huomioon. Vertaa sitä nopeuteen, jonka sama kitkakerroin sallisi saman säteen vaakasuorassa kaarteessa.\n\nc) Perustele omin sanoin, miksi kallistettu kaarre auttaa.\n\nVastauslaatikkoon tulee osan b) suurin nopeus yksikössä $\\text{km/h}$.",
-      "kind": [
-        "model",
-        "reasoning"
-      ],
-      "answer": 97.29,
-      "unit": "km/h",
-      "tolerance": 0.02,
-      "fbd": "equations"
+     "text": "Voimakuvio D",
+     "figure": "fy5-4/pick-nopeus",
+     "feedback": "Nopeus ei ole voima, joten sen nuoli $\\overline{v}$ ei kuulu voimakuvioon. Liike ei tarvitse eteenpäin työntävää voimaa: vaunu jatkaa vauhdillaan, ja voimat vain kääntävät nopeuden suuntaa kohti keskipistettä."
     }
-  ]
+   ]
+  }
+ ],
+ "level3": [
+  {
+   "id": "fy5-4-L3-01",
+   "level": 3,
+   "text": "Jäinen tie kaartaa vaakasuorassa, ja kaarteen säde on $60\\,\\text{m}$. Renkaiden ja jään välinen lepokitkakerroin on $0{,}10$. Ilmanvastus ja vierimisvastus jätetään huomiotta. Millä suurimmalla nopeudella auto voi ajaa kaarteen läpi liukumatta? Vastaa yksikössä $\\text{km/h}$.",
+   "answer": 27.6193,
+   "unit": "km/h",
+   "tolerance": 0.02,
+   "fbd": "equations"
+  },
+  {
+   "id": "fy5-4-L3-02",
+   "level": 3,
+   "text": "Kiekko, jonka massa on $0{,}40\\,\\text{kg}$, on sidottu narulla pöytään kiinnitettyyn tappiin, ja se liukuu sileällä pöydällä vaakasuoraa ympyrää, jonka säde on $0{,}80\\,\\text{m}$. Naru katkeaa, jos sen jännitysvoima ylittää $25\\,\\text{N}$. Kitka jätetään huomiotta. Kuinka suuri voi kiekon pyörimistaajuus enintään olla?",
+   "answer": 1.4067,
+   "unit": "Hz",
+   "tolerance": 0.02,
+   "fbd": "equations"
+  },
+  {
+   "id": "fy5-4-L3-03",
+   "level": 3,
+   "text": "Tiesuunnittelija mitoittaa vaakasuoran kaarteen nopeudelle $80\\,\\text{km/h}$. Turvallisuussyistä tien kitkan ei pidä joutua antamaan autoon suurempaa sivuttaista voimaa kuin $0{,}25$ kertaa auton paino, jotta pito riittää myös märällä tiellä. Ilmanvastus ja vierimisvastus jätetään huomiotta. Kuinka suuri kaarteen säteen on vähintään oltava?",
+   "answer": 201.3566,
+   "unit": "m",
+   "tolerance": 0.02,
+   "fbd": "equations"
+  },
+  {
+   "id": "fy5-4-L3-04",
+   "level": 3,
+   "text": "Vuoristoradan vaunu kulkee pystysuoran ympyrän muotoisen silmukan läpi. Vaunun nopeusmittari mittasi ratanopeuden $v$ silmukan alimmassa ja ylimmässä kohdassa, ja normaalikiihtyvyys $a_\\text{n}$ laskettiin nopeudesta ja radan muodosta (taulukko, esimerkkiaineisto). Matkustajan massa on $60{,}0\\,\\text{kg}$. Ilmanvastus ja vierimisvastus jätetään huomiotta.\n\na) Laske silmukan säde kummastakin rivistä ja niiden keskiarvo.\n\nb) Piirrä matkustajan voimakuvio alimmassa ja ylimmässä kohdassa. Laske vaunun tukivoima matkustajaan kummassakin kohdassa. Kuinka moninkertainen tukivoima on alhaalla matkustajan painoon verrattuna?\n\nc) Mikä on pienin nopeus ylhäällä, jolla matkustaja pysyy vielä kosketuksessa vaunuun, kun säde on osan a) keskiarvo? Riittääkö taulukon nopeus?\n\nVastauslaatikkoon tulee osan b) tukivoima ylimmässä kohdassa.",
+   "kind": [
+    "data",
+    "model"
+   ],
+   "answer": 257.4,
+   "unit": "N",
+   "tolerance": 0.02,
+   "fbd": "equations",
+   "data": {
+    "caption": "Silmukan mittaukset (esimerkkiaineisto)",
+    "columns": [
+     "Kohta",
+     "$v\\,(\\text{m/s})$",
+     "$a_\\text{n}\\,(\\text{m/s}^2)$"
+    ],
+    "rows": [
+     [
+      "alhaalla",
+      "27.2",
+      "53.2"
+     ],
+     [
+      "ylhäällä",
+      "14.0",
+      "14.1"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "fy5-4-L3-05",
+   "level": 3,
+   "text": "Moottoritien liittymän kaarteen rata on vaakasuora ympyrä, jonka säde on $130\\,\\text{m}$. Tie on kallistettu kaarteen sisäreunaa kohti kulmaan $8{,}0\\,{}^\\circ$ vaakatasosta. Renkaiden ja märän tien välinen lepokitkakerroin on $0{,}40$. Ilmanvastus ja vierimisvastus jätetään huomiotta.\n\na) Piirrä auton voimakuvio ja laske nopeus $v_0$, jolla auto voi ajaa kaarteen kokonaan ilman kitkaa. Anna se yksikössä $\\text{km/h}$.\n\nb) Laske suurin nopeus, jolla auto voi ajaa kaarteen liukumatta, kun kitka otetaan huomioon. Vertaa sitä nopeuteen, jonka sama kitkakerroin sallisi saman säteen vaakasuorassa kaarteessa.\n\nc) Perustele omin sanoin, miksi kallistettu kaarre auttaa.\n\nVastauslaatikkoon tulee osan b) suurin nopeus yksikössä $\\text{km/h}$.",
+   "kind": [
+    "model",
+    "reasoning"
+   ],
+   "answer": 97.29,
+   "unit": "km/h",
+   "tolerance": 0.02,
+   "fbd": "equations"
+  }
+ ]
 }

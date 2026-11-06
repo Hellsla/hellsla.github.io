@@ -281,6 +281,53 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy5-5-L2-08",
+      "level": 2,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "Kaukana kaikista muista taivaankappaleista on kaksi asteroidia, A ja B. Asteroidin A massa on $8{,}0 \\cdot 10^{12}\\,\\text{kg}$ ja asteroidin B massa $2{,}0 \\cdot 10^{12}\\,\\text{kg}$. Asteroidien keskipisteiden etäisyys on $5{,}0\\,\\text{km}$, ja ne ovat aluksi levossa toistensa suhteen. Ainoa niihin vaikuttava voima on niiden välinen gravitaatiovoima. Käsittele asteroideja pallosymmetrisinä kappaleina.\n\nMiten asteroidien kiihtyvyyksien suuruudet $a_{\\text{A}}$ ja $a_{\\text{B}}$ suhtautuvat toisiinsa sillä hetkellä, kun ne lähtevät liikkeelle?",
+      "answer": "Asteroidin B kiihtyvyys on neljä kertaa A:n, $a_{\\text{B}} = 4\\,a_{\\text{A}}$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Kiihtyvyydet ovat yhtä suuret, $a_{\\text{A}} = a_{\\text{B}}$.",
+          "feedback": "Tässä yhtä suuret voimat on sekoitettu yhtä suuriin kiihtyvyyksiin. Voimat ovat Newtonin kolmannen lain mukaan yhtä suuret, mutta kiihtyvyys $a = \\tfrac{F}{m}$ riippuu myös kiihtyvän kappaleen massasta."
+        },
+        {
+          "text": "Asteroidin A kiihtyvyys on neljä kertaa B:n, $a_{\\text{A}} = 4\\,a_{\\text{B}}$.",
+          "feedback": "Tässä on oletettu, että raskaampi asteroidi vetää kevyempää voimakkaammin ja siksi myös itse kiihtyy enemmän. Voimat ovat yhtä suuret, ja suurempi massa kiihtyy samasta voimasta vähemmän."
+        },
+        {
+          "text": "Asteroidin B kiihtyvyys on neljä kertaa A:n, $a_{\\text{B}} = 4\\,a_{\\text{A}}$.",
+          "correct": true,
+          "feedback": "Oikein. Valitse seuraavaksi perustelu, joka selittää vastauksesi."
+        }
+      ],
+      "reason_prompt": "Mikä perustelu selittää vastauksesi?",
+      "reasons": [
+        {
+          "text": "Raskaampi asteroidi vetää kevyempää suuremmalla voimalla kuin kevyempi vetää raskaampaa.",
+          "feedback": "Tämä on luvun yleinen virhekäsitys. Gravitaatio on vuorovaikutus, joten Newtonin kolmannen lain mukaan asteroidit vetävät toisiaan yhtä suurilla ja vastakkaissuuntaisilla voimilla."
+        },
+        {
+          "text": "Kaikki kappaleet putoavat gravitaatiokentässä samalla kiihtyvyydellä massastaan riippumatta.",
+          "feedback": "Tämä pätee kappaleille, jotka ovat saman kappaleen kentässä, kuten Maan pinnalla. Tässä A on B:n kentässä ja B on A:n kentässä. Kenttä $g = \\gamma \\tfrac{M}{r^2}$ on A:n kohdalla pienempi, koska B:n massa on pienempi."
+        },
+        {
+          "text": "Kumpaankin asteroidiin vaikuttaa yhtä suuri voima, ja sama voima kiihdyttää kevyempää enemmän.",
+          "correct": true,
+          "feedback": "Oikein: $a = \\tfrac{F}{m}$ ja $F$ on sama, joten kiihtyvyydet ovat kääntäen verrannolliset massoihin."
+        },
+        {
+          "text": "Asteroidien välinen voima kasvaa niiden lähestyessä, koska etäisyys on kaavassa toisessa potenssissa.",
+          "feedback": "Väite on tosi, mutta se ei selitä vastausta. Etäisyys on kummallekin asteroidille sama, joten se ei kerro, miksi kiihtyvyydet eroavat."
+        }
+      ]
     }
   ],
   "level3": [

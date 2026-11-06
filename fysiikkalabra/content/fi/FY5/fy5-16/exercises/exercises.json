@@ -245,6 +245,62 @@
       "answer": 1.9,
       "unit": "min",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-16-L2-08",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "Työmaan pientä kompressoria voi pitää pistemäisenä lähteenä. Sen melutaso mitattiin avoimella kentällä neljältä etäisyydeltä, ja lukemat ovat taulukossa (esimerkkiaineisto). Jokaisen lukeman epävarmuus on $\\Delta L = 1\\,\\text{dB}$.\n\nMinkä päätelmän aineisto tukee?",
+      "answer": "Taso laskee noin $6\\,\\text{dB}$ joka kerta, kun etäisyys kaksinkertaistuu, kuten pistemäiseltä lähteeltä odotetaan.",
+      "unit": "",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Melutaso (esimerkkiaineisto)",
+        "columns": [
+          "$r\\,(\\text{m})$",
+          "$L\\,(\\text{dB})$"
+        ],
+        "rows": [
+          [
+            "2.0",
+            "91"
+          ],
+          [
+            "4.0",
+            "85"
+          ],
+          [
+            "8.0",
+            "79"
+          ],
+          [
+            "16.0",
+            "74"
+          ]
+        ]
+      },
+      "choices": [
+        {
+          "text": "Taso puolittuu aina, kun etäisyys kaksinkertaistuu, eli taso on kääntäen verrannollinen etäisyyteen.",
+          "feedback": "Desibeliasteikko on logaritminen, eikä taso puolitu: $91\\,\\text{dB}$:stä puolet olisi noin $46\\,\\text{dB}$, mutta mitattiin $85\\,\\text{dB}$. Taso pienenee joka kaksinkertaistuksella saman määrän desibelejä."
+        },
+        {
+          "text": "Taso laskee noin $6\\,\\text{dB}$ joka kerta, kun etäisyys kaksinkertaistuu, kuten pistemäiseltä lähteeltä odotetaan.",
+          "correct": true,
+          "feedback": "Oikein: laskut ovat $6\\,\\text{dB}$, $6\\,\\text{dB}$ ja $5\\,\\text{dB}$. Ne poikkeavat odotetusta $6\\,\\text{dB}$:stä enintään $1\\,\\text{dB}$, mikä on pienempi kuin erotuksen epävarmuus $2\\,\\text{dB}$."
+        },
+        {
+          "text": "Viimeisellä välillä taso laski vain $5\\,\\text{dB}$, joten kauempana lähteestä ääni vaimenee hitaammin.",
+          "feedback": "Epävarmuus jäi huomiotta. Kahden lukeman erotuksen epävarmuus on $2\\Delta L = 2\\,\\text{dB}$, joten $5\\,\\text{dB}$ ja $6\\,\\text{dB}$ eivät eroa toisistaan mitattavasti. Yksi poikkeama ei osoita uutta ilmiötä."
+        },
+        {
+          "text": "Etäisyydellä $4{,}0\\,\\text{m}$ taso ei ylitä arvoa $85\\,\\text{dB}$, joten siellä voi työskennellä $8\\,\\text{h}$ turvallisesti.",
+          "feedback": "Lukema $85\\,\\text{dB}$ on epävarmuuden vuoksi välillä $84$–$86\\,\\text{dB}$, joten ylempi toiminta-arvo voi ylittyä. Lisäksi sallitun ajan kaava on arvio, ei takuu kuulon turvallisuudesta."
+        }
+      ]
     }
   ],
   "level3": [

@@ -36,4 +36,5 @@ a["fy5-11-L3-04"] = max(_slopes)                         # steepest section x = 
 a["fy5-11-L3-05"] = 600 / (3.00e8 / 100e6)               # b/λ_FM = 600 m / 3,00 m = 200
 # L3-01 numbers for the model answer: b/λ at 100 Hz and at 5000 Hz
 _info = {"L3-01 b/lam 100 Hz": 0.80 / lam_100, "L3-01 b/lam 5000 Hz": 0.80 / lam_5000}
+# L2-08 is ordering: λ = v/f = 3,0 / 5,0 / 2,0 / 6,0 cm, λ:b = A 0,50, B 2,5, C 1,33, D 0,25 -> D, A, C, B; no number
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

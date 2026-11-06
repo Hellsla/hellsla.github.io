@@ -43,4 +43,5 @@ f1 = 340 / (2 * dpath(0.82))                  # first quiet point n = 0: Δs = �
 f2 = 340 / (2 * dpath(3.01) / 3)              # second quiet point n = 1: Δs = 3λ/2 -> f = 850,9 Hz (agrees within 1 %)
 assert abs(f1 - f2) / f1 < 0.01
 a["fy5-12-L3-05"] = round((f1 + f2) / 2, -1)  # two significant figures: 850 Hz
+# L2-08 is multiple choice (find the error): λ = 0,36/12 m = 3,0 cm, Δs = 6,0 cm = 2,0 λ -> constructive; row 4 calls it destructive; no number
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

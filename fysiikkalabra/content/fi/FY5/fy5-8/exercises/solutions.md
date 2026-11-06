@@ -259,3 +259,21 @@ E_\text{k} &= \tfrac{1}{2}\cdot 0{,}025\,\text{kg}\cdot(47{,}0\,\text{m/s})^2 \\
 v = \sqrt{\dfrac{2\cdot 37{,}75\,\text{J}}{0{,}025\,\text{kg}}} = 55{,}0\,\text{m/s}
 ```
 vähän enemmän kuin mitattu $47{,}0\,\text{m/s}$.
+
+## fy5-8-L2-08
+**Kysytty:** mikä johtopäätös jousen jousivakiosta on perusteltu taulukon esimerkkiaineiston ja voimamittarin lukeman epävarmuuden $\pm 0{,}05\,\text{N}$ perusteella.
+**Periaate:** Jousta venyttävä voima on $F_\text{v} = kx$, joten $(x, F_\text{v})$-pisteiden pitää olla origon kautta kulkevalla suoralla, jonka kulmakerroin on jousivakio $k$. Jokaiselle riville voidaan laskea suhde $\tfrac{F_\text{v}}{x}$ ja sen epävarmuus $\tfrac{0{,}05\,\text{N}}{x}$. Jos yksi arvo $k$ mahtuu kaikkien rivien epävarmuusväleihin, erot rivien välillä selittyvät mittausepävarmuudella.
+**Mallivastaus:** Venymät muutetaan metreiksi, esimerkiksi $x = 4{,}0\,\text{cm} = 0{,}040\,\text{m}$. Rivin $4{,}0\,\text{cm}$ suhde ja sen epävarmuus ovat
+
+$$\begin{aligned}
+&\frac{F_\text{v}}{x} = \frac{1{,}02\,\text{N}}{0{,}040\,\text{m}} \approx 25{,}5\,\text{N/m} \\
+&\Delta = \frac{0{,}05\,\text{N}}{0{,}040\,\text{m}} \approx 1{,}3\,\text{N/m}
+\end{aligned}$$
+
+Samoin muiden rivien suhteet ovat venymän kasvaessa $24{,}5\,\text{N/m}$ ($\pm 2{,}5\,\text{N/m}$), $24{,}5\,\text{N/m}$ ($\pm 0{,}8\,\text{N/m}$), $25{,}0\,\text{N/m}$ ($\pm 0{,}6\,\text{N/m}$) ja $25{,}1\,\text{N/m}$ ($\pm 0{,}5\,\text{N/m}$). Arvo $25\,\text{N/m}$ on jokaisen rivin epävarmuusvälillä, joten pisteet ovat mittaustarkkuuden rajoissa samalla origon kautta kulkevalla suoralla. Sovitetun suoran pisteistä $(0;\ 0)$ ja $(0{,}100\,\text{m};\ 2{,}50\,\text{N})$ saadaan
+
+$k = \dfrac{2{,}50\,\text{N}}{0{,}100\,\text{m}}$
+
+$k = 25\,\text{N/m}$
+
+Perusteltu johtopäätös on siis, että jousivakio on noin $25\,\text{N/m}$ ja suhteiden erot mahtuvat mittausepävarmuuteen. Jousivakio ei kasva venymän mukana: voima kasvaa, mutta suhde pysyy samana. Venymän $4{,}0\,\text{cm}$ kohdalla suhde on suurin, mutta ero $0{,}5\,\text{N/m}$ on pienempi kuin rivin epävarmuus $1{,}3\,\text{N/m}$, joten aineisto ei osoita jousen olevan siinä jäykempi. Arvo $0{,}25$ on kulmakerroin yksikössä $\text{N/cm}$, ei $\text{N/m}$.

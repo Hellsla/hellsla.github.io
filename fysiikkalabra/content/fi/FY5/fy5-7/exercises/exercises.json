@@ -114,6 +114,41 @@
           "feedback": "Jaksonaika on yhden värähdyksen kesto, ei kaikkien yhteenlaskettu. Kun värähdyksiä mahtuu sekuntiin enemmän, jokaisen on oltava lyhyempi."
         }
       ]
+    },
+    {
+      "id": "fy5-7-L1-09",
+      "level": 1,
+      "text": "Punnus värähtelee jousen varassa sinimuotoisesti. Värähtelyn taajuus on $2{,}0\\,\\text{Hz}$ ja amplitudi $3{,}0\\,\\text{cm}$.\n\nAjanotto aloitetaan, kun punnus ohittaa tasapainoaseman ylöspäin, ja ylöspäin on positiivinen suunta.\n\nMikä kuvaajista esittää punnuksen poikkeaman $x$ ajan $t$ funktiona?",
+      "kind": [
+        "graph",
+        "concept"
+      ],
+      "answer": "Kuvaaja B",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Kuvaaja A",
+          "figure": "fy5-7/pick-a3-t1",
+          "feedback": "Tässä jaksonaika $0{,}50\\,\\text{s}$ on piirretty kahden peräkkäisen tasapainoaseman ohituksen väliksi. Ohitusten välillä punnus liikkuu vastakkaisiin suuntiin, joten väli on vain puolet jaksonajasta, ja kuvaajan jaksonaika on $1{,}0\\,\\text{s}$."
+        },
+        {
+          "text": "Kuvaaja B",
+          "figure": "fy5-7/pick-a3-t05",
+          "correct": true,
+          "feedback": "Oikein: jaksonaika on $T = \\tfrac{1}{f} = 0{,}50\\,\\text{s}$, eli peräkkäiset huiput ovat $0{,}50\\,\\text{s}$:n välein, ja huiput ovat $3{,}0\\,\\text{cm}$ tasapainoaseman yläpuolella."
+        },
+        {
+          "text": "Kuvaaja C",
+          "figure": "fy5-7/pick-a15-t05",
+          "feedback": "Jaksonaika on oikea, mutta amplitudi $3{,}0\\,\\text{cm}$ on piirretty pohjan ja huipun väliseksi etäisyydeksi. Amplitudi mitataan tasapainoasemasta huippuun, joten huippujen pitää olla kohdassa $3{,}0\\,\\text{cm}$."
+        },
+        {
+          "text": "Kuvaaja D",
+          "figure": "fy5-7/pick-a3-t2",
+          "feedback": "Tässä taajuuden lukuarvo on otettu jaksonajaksi, $T = 2{,}0\\,\\text{s}$. Taajuus on jaksonajan käänteisluku: kaksi värähdystä sekunnissa tarkoittaa, että yksi värähdys kestää $0{,}50\\,\\text{s}$."
+        }
+      ]
     }
   ],
   "level2": [

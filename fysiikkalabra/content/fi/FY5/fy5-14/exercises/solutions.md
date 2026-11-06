@@ -43,6 +43,21 @@
 **Periaate:** Ihminen kuulee taajuuksia noin $20\,\text{Hz}$:stä noin $20\,\text{kHz}$:iin. Alle $20\,\text{Hz}$:n ääni on infraääntä ja yli $20\,\text{kHz}$:n ääni ultraääntä. Kaikki ovat samanlaisia pitkittäisiä paineaaltoja; luokka riippuu vain taajuudesta.
 **Mallivastaus:** a) $12\,\text{Hz} < 20\,\text{Hz}$, joten ukkosen matalin osa on infraääntä. b) $440\,\text{Hz}$ on rajojen $20\,\text{Hz}$ ja $20\,\text{kHz}$ välissä, joten viritysääni on kuultavaa ääntä. c) $35\,\text{kHz} > 20\,\text{kHz}$, joten koiranpillin ääni on ultraääntä: koira kuulee sen, mutta ihminen ei. d) $2{,}5\,\text{MHz} = 2\,500\,000\,\text{Hz}$ on monta kertaluokkaa yli kuuloalueen, joten ultraäänikuvauksen ääni on ultraääntä.
 
+## fy5-14-L1-09
+**Kysytty:** mitkä viidestä väitteestä viulun sävelen korkeudesta ja sointiväristä sekä liikkuvan auton torven äänestä ovat tosia
+**Periaate:** Äänenkorkeuden kuulemme perustaajuudesta, joka on harmonisen sarjan alin taajuus ja vierekkäisten piikkien väli. Sointiväri riippuu yläsävelten voimakkuuksista perustaajuuteen verrattuna. Kun lähde liikkuu, ääni etenee ilman suhteen edelleen nopeudella $v$, mutta lähteen edessä aallonpituus lyhenee ja takana pitenee. Kuultu taajuus riippuu lähteen nopeudesta, ei sen etäisyydestä.
+**Mallivastaus:** Väitteet 2 ja 5 ovat tosia, väitteet 1, 3 ja 4 epätosia.
+
+Väite 1 on epätosi. Piikkien väli on $660\,\text{Hz} - 330\,\text{Hz} = 330\,\text{Hz}$, ja alin piikki on $330\,\text{Hz}$, joten perustaajuus ja sävelkorkeus vastaavat taajuutta $330\,\text{Hz}$. Korkein piikki $660\,\text{Hz}$ on yläsävel.
+
+Väite 2 on tosi. Saman sävelen perustaajuus on $330\,\text{Hz}$ kummallakin soittimella, mutta yläsävelten voimakkuudet eroavat, joten sointiväri on erilainen.
+
+Väite 3 on epätosi. Lähteen liike ei muuta äänen nopeutta ilmassa. Se muuttaa aallonpituutta: lähestyvän auton edessä rintamat ovat tiheämmässä.
+
+Väite 4 on epätosi. Auto ajaa tasaisella nopeudella, joten kuultu taajuus on koko lähestymisen ajan sama ja suurempi kuin $400\,\text{Hz}$. Lähestyessä kasvaa äänen voimakkuus, ei korkeus.
+
+Väite 5 on tosi. Ohitushetkellä taajuus laskee. Loittonevan auton takana aallonpituus on suurempi kuin auton seistessä, joten kuultu taajuus on pienempi kuin $400\,\text{Hz}$.
+
 ## fy5-14-L2-01
 **Annettu:** ääniraudan taajuus $f_1 = 262\,\text{Hz}$, $N = 15$ voimakasta hetkeä ajassa $t = 5{,}0\,\text{s}$, kieli on ääniraudan ääntä matalampi
 **Kysytty:** kielen taajuus $f_2$
