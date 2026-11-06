@@ -16,7 +16,7 @@
       "stage": "herata",
       "type": "hook",
       "text": "A bicycle is left outside in a frosty night, and in the morning the tyre gives way under your thumb. In the afternoon the same bicycle has stood in the sun, and the tyre is hard. The valve has been closed all the time, so the tyre holds the same air, and the rubber stretches so little that the volume of the tyre stays almost the same. The only thing that has changed is the temperature of the air.",
-      "question": "What happens to the air inside the tyre when it warms up, and why does it then push harder on the walls of the tyre?"
+      "question": "What happens to the air inside the tyre when it warms up, and why does the pressure of the air in the tyre then increase?"
     },
     {
       "id": "pr-pumppu",
@@ -28,11 +28,11 @@
         {
           "text": "More air gets into the tyre, and the air pushes harder on the walls of the tyre from the inside.",
           "correct": true,
-          "feedback": "Exactly: when more air is brought into the same space, its pressure on the walls of the tyre increases. In the opening phenomenon, however, no air is added. Something else makes the same air push harder on the walls."
+          "feedback": "Exactly: when more air is brought into the same space, its pressure on the walls of the tyre increases. In the opening phenomenon, however, no air is added. Something else increases the pressure of the same air."
         },
         {
           "text": "The air is squeezed together in the tyre, so in the end there is less of it.",
-          "feedback": "Pumping increases the amount of air in the tyre; no air disappears anywhere. The air is squeezed into a smaller space, but that is exactly why it pushes harder on the walls of the tyre."
+          "feedback": "Pumping increases the amount of air in the tyre; no air disappears anywhere. The air is squeezed into a smaller space, but that is exactly why its pressure in the tyre increases."
         },
         {
           "text": "The rubber tightens from the strokes of the pump, and the air has nothing to do with it.",
@@ -109,7 +109,7 @@
       "stage": "ennusta",
       "type": "choice",
       "layout": "models",
-      "title": "Prediction 3: why does a warm gas push harder?",
+      "title": "Prediction 3: why is the pressure of a warm gas higher?",
       "prompt": "Three students explain why the pressure of a gas in a closed container increases when the gas warms up. Whose explanation fits what you see in experiment 1?",
       "justify": true,
       "reveal": {

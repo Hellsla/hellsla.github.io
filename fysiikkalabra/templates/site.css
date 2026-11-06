@@ -413,7 +413,8 @@ table thead,table tbody{display:table;width:100%}
 
 /* stage navigation = the progress bar (teacher 2026-11-03): a bar of chips that sticks under the top edge at every width;
    on a narrow window it scrolls sideways inside itself (never the page). Each stage shows its number, so the nav and the
-   stage headings read as one sequence; the stage on screen is marked (lesson.js sets aria-current) and a stage whose
+   stage headings read as one sequence
+   (Tehtävät included and numbered in page order, Itsearvio last; teacher 2026-11-06); the stage on screen is marked (lesson.js sets aria-current) and a stage whose
    answers are all given shows a tick (a.is-done). The Kuuntele button (readaloud.js, .toc-tools) sits at its right end. */
 nav.toc{position:sticky;top:0;z-index:5;display:flex;gap:.25rem;overflow-x:auto;scrollbar-width:none;margin:0 -16px 1rem;padding:.4rem 16px;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 nav.toc::-webkit-scrollbar{display:none}
@@ -586,7 +587,7 @@ h2.intro-h{margin:0 0 .45rem;font:700 var(--fs-small)/1.3 var(--sans);letter-spa
    bar, lesson, footer) narrows to the left and keeps scrolling with the window. Its own container, so what is inside
    lays out by the panel's width. Narrower than 1100 px the class does nothing and the exercises stay at the end. */
 .split-head{display:flex;flex-wrap:wrap;align-items:center;column-gap:1rem;border-top:2px solid var(--accent-deep);margin:0 0 1.25rem}
-.split-head>h2{flex:1 1 auto;margin:0;padding:.9rem 0 .2rem;border-top:0}
+.split-head>h2{flex:1 1 auto;display:flex;align-items:center;gap:.7rem;margin:0;padding:.9rem 0 .2rem;border-top:0}
 .split-toggle{display:none}
 @media (min-width:1100px){
   .split-toggle{display:inline-flex;align-items:center;gap:.4rem;min-height:40px;padding:0 1rem;margin:.6rem 0 0;font:600 var(--fs-ui) var(--sans);color:var(--accent-deep);background:var(--surface);border:1px solid var(--accent-deep);border-radius:999px;cursor:pointer}
