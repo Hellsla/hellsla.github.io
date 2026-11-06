@@ -230,6 +230,41 @@
       "unit": "N",
       "tolerance": 0.02,
       "fbd": "error"
+    },
+    {
+      "id": "fy4-4-L2-08",
+      "level": 2,
+      "text": "Ostoskärryä, jonka massa tavaroineen on $18\\,\\text{kg}$, työnnetään vaakasuoralla lattialla vaakasuoraan $45\\,\\text{N}$:n voimalla. Lattian kitkavoima kärryyn on $9{,}0\\,\\text{N}$, ja ilmanvastus jätetään huomiotta. Oppilas laskee kärryn kiihtyvyyden.\n\nRivi 1: positiivinen suunta on työntövoiman suunta, joten $\\Sigma F = F - F_\\mu$.\n\nRivi 2: $\\Sigma F = 45\\,\\text{N} - 9{,}0\\,\\text{N}$, eli $\\Sigma F = 36\\,\\text{N}$.\n\nRivi 3: $G = mg = 18\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2$, eli $G \\approx 177\\,\\text{N}$.\n\nRivi 4: $a = \\dfrac{\\Sigma F}{G}$, eli $a = \\dfrac{36\\,\\text{N}}{177\\,\\text{N}} \\approx 0{,}20\\,\\text{m/s}^2$.\n\nTarkista lasku rivi riviltä. Valitse väärä rivi tai viimeinen vaihtoehto, jos laskussa ei ole virhettä.",
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "answer": "Rivi 4: kiihtyvyyden laskeminen",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Rivi 1: kokonaisvoiman lauseke",
+          "feedback": "Rivi 1 on oikein: kitka vastustaa liikettä, joten se osoittaa työntövoimaa vastaan ja saa miinusmerkin. Jos rivin luulee virheelliseksi, ajattelee, että kaikki kappaleeseen vaikuttavat voimat lasketaan yhteen samanmerkkisinä."
+        },
+        {
+          "text": "Rivi 2: kokonaisvoiman laskeminen",
+          "feedback": "Rivi 2 on oikein: $45\\,\\text{N} - 9{,}0\\,\\text{N} = 36\\,\\text{N}$. Jos rivin luulee virheelliseksi, ajattelee, että kiihtyvyyden määrää pelkkä työntövoima $45\\,\\text{N}$, vaikka kiihtyvyyden määrää kaikkien voimien summa."
+        },
+        {
+          "text": "Rivi 3: painon laskeminen",
+          "feedback": "Rivi 3 on oikein laskettu: $18\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\approx 177\\,\\text{N}$. Paino ei vaikuta vaakasuoraan liikkeeseen, mutta sen laskeminen ei ole virhe. Tarkista muut rivit samalla tavalla."
+        },
+        {
+          "text": "Rivi 4: kiihtyvyyden laskeminen",
+          "correct": true,
+          "feedback": "Oikein, tämä rivi on väärin: kiihtyvyys on kokonaisvoima jaettuna massalla, ei painolla. Oikein on $a = 36\\,\\text{N} : 18\\,\\text{kg}$, eli $a = 2{,}0\\,\\text{m/s}^2$. Yksiköt paljastavat virheen: $\\text{N} : \\text{N}$ ei anna yksikköä $\\text{m/s}^2$."
+        },
+        {
+          "text": "Laskussa ei ole virhettä",
+          "feedback": "Laskussa on virhe rivillä 4: siinä on käytetty painoa $G$ massan $m$ paikalla. Vaakasuoralla lattialla tukivoima kumoaa painon, ja kiihtyvyyttä pienentää massa, ei paino."
+        }
+      ]
     }
   ],
   "level3": [

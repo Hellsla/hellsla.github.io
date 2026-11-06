@@ -1,20 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 7d584edec4b55713
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: c6b41b885c57e2a9
+Mode: delta (new task fy4-2-L2-08, round 1)
 
 ## Blocking
 (none)
-
-## Fixed
-(none needed: text matched fi in every number and was plain, natural selkosuomi)
 
 ## Polish
 (none)
 
 ## Checked
-- Opened the captures of L1-06..08 (1280-6..8), L2-05..07 and L3-04..05: tables, LaTeX, figure ex-tv and display blocks render as in fi, no clipped text or Finnish/English mixing.
-- Units in table headers and answer fields match fi.
+- Rebuilt fy4-2 with scripts/build.py fy4-2; rendered fy4-2-L2-08 at 390 px (fi-easy) after the page scripts ran, wrong answer then correct answer committed, hints/solution details open (own script, scratchpad trvis4_shot.py).
+- Measured: page scrollWidth 390, no element outside a scroll box beyond 390 px; no clipped formula.
+- Read stem, four/five choices with feedback, and the full solution (Find, Principle, Model answer, check) in the capture: KaTeX renders, chains split in rows, units upright, decimal comma consistent, no plain-text quantity.
+- Old tasks: only the changed text of the diff (fy4-2-L3-03 paragraph split) was looked at in the build.
 
 ## Scores
-illustrations 5 · typography 5 · language 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

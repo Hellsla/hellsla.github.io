@@ -346,3 +346,22 @@ v alas
 **Sijoitus:** a) Välien matkat ovat $18{,}95\,\text{m}$, $12{,}475\,\text{m}$, $8{,}625\,\text{m}$, $6{,}35\,\text{m}$, $5{,}00\,\text{m}$ ja $4{,}225\,\text{m}$. Summa on $h = 55{,}625\,\text{m}$. b) Liike-energiat ovat $E_{\text{k},1} = \tfrac12\cdot 78{,}0\,\text{kg}\cdot(46{,}0\,\text{m/s})^2 = 82\,524\,\text{J}$ ja $E_{\text{k},2} = \tfrac12\cdot 78{,}0\,\text{kg}\cdot(7{,}9\,\text{m/s})^2 = 2434\,\text{J}$, joten $F_\text{v} = 78{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 + \dfrac{82\,524\,\text{J} - 2434\,\text{J}}{55{,}625\,\text{m}} = 765{,}2\,\text{N} + 1439{,}8\,\text{N} = 2205\,\text{N}$. c) Välillä $3{,}0$–$4{,}0\,\text{s}$ nopeus pienenee $7{,}9\,\text{m/s}$:sta $6{,}8\,\text{m/s}$:iin, joten $a = \dfrac{6{,}8 - 7{,}9}{1{,}0}\,\text{m/s}^2 = -1{,}1\,\text{m/s}^2$ eli kiihtyvyys osoittaa ylös ja $F_\text{v} = 78{,}0\,\text{kg}\cdot(9{,}81 + 1{,}1)\,\text{m/s}^2 = 851\,\text{N}$
 **Vastaus:** b) $2{,}21\,\text{kN}$ ylöspäin, kolme merkitsevää numeroa kuten massassa $78{,}0\,\text{kg}$ ja nopeuksissa; a) $h = 55{,}6\,\text{m}$; c) ilmanvastus on painoa suurempi, koska nopeus pienenee ja kiihtyvyys osoittaa ylös.
 **Järkevyys:** Keskimääräinen ilmanvastus on noin $2{,}9$ kertaa paino $765\,\text{N}$, joten kokonaisvoima osoittaa ylös ja hyppääjä hidastuu. Aikakeskiarvo liikeyhtälöstä on pienempi: keskikiihtyvyys on $\dfrac{46{,}0 - 7{,}9}{3{,}0}\,\text{m/s}^2 = 12{,}7\,\text{m/s}^2$, jolloin $F_\text{v} \approx 78{,}0\,\text{kg}\cdot(9{,}81 + 12{,}7)\,\text{m/s}^2 \approx 1{,}76\,\text{kN}$. Ero on oikea: ilmanvastus on suurimmillaan heti avautumisen jälkeen, kun nopeus on suuri, ja hyppääjä kulkee silloin pitkän matkan lyhyessä ajassa, joten matkakeskiarvo painottuu alkuun. Lopussa ilmanvastus lähestyy painoa $765\,\text{N}$ ($851\,\text{N}$ on jo lähellä sitä).
+
+## fy4-16-L2-08
+**Kysytty:** mikä päätelmä voidaan tehdä pelkän taulukon perusteella, kun lukeman epävarmuus on $\Delta x = 1{,}0\,\text{m}$.
+**Periaate:** Kahden lukeman eron voi pitää todellisena vasta, kun epävarmuusvälit $x \pm \Delta x$ eivät mene päällekkäin eli kun ero on suurempi kuin $2\Delta x$. Jos välit menevät päällekkäin, eroa ei voi osoittaa, mutta se ei todista eron puuttumista. Mittausalueen ulkopuolelle jatkettu riippuvuus on arvio eikä mittaustulos.
+**Mallivastaus:** Kun lähtökorkeus kaksinkertaistuu $2{,}00\,\text{m}$:stä $4{,}00\,\text{m}$:iin, matkat kasvavat
+
+$40{,}2\,\text{m} - 19{,}6\,\text{m} = 20{,}6\,\text{m}$
+
+$39{,}5\,\text{m} - 20{,}3\,\text{m} = 19{,}2\,\text{m}$
+
+Molemmat erot ovat noin kaksikymmenkertaisia epävarmuuteen $1{,}0\,\text{m}$ nähden ja paljon suurempia kuin $2\Delta x = 2{,}0\,\text{m}$, joten epävarmuusvälit ovat selvästi erillään, ja siksi lähtökorkeus vaikuttaa matkaan. Muut päätelmät eivät kestä. Samalta korkeudelta mitattujen matkojen erot ovat
+
+$20{,}3\,\text{m} - 19{,}6\,\text{m} = 0{,}7\,\text{m}$
+
+$40{,}2\,\text{m} - 39{,}5\,\text{m} = 0{,}7\,\text{m}$
+
+Ne ovat pienempiä kuin $2\Delta x = 2{,}0\,\text{m}$, joten epävarmuusvälit menevät päällekkäin, ja raskaampi pulkka kulki korkeudelta $2{,}00\,\text{m}$ pidemmälle mutta korkeudelta $4{,}00\,\text{m}$ lyhyemmälle. Aineisto ei siis osoita, että raskaampi pulkka kulkisi kauemmas. Se ei kuitenkaan todista, ettei massa vaikuta lainkaan, koska alle $2\,\text{m}$:n vaikutus hukkuisi epävarmuuteen. Tulos sopii malliin $x = \tfrac{h}{\mu}$, jossa massa supistuu pois.
+
+Matka $80\,\text{m}$ korkeudelta $8{,}00\,\text{m}$ olisi mittausalueen ulkopuolelle jatkettu arvio, joka olettaa saman kitkakertoimen koko matkalle, joten se ei ole varma tulos. Tulos on järkevä: suhde $h : x \approx 0{,}10$ on joka rivillä lähes sama ja sopii lumen ja pulkan liikekitkakertoimeksi.

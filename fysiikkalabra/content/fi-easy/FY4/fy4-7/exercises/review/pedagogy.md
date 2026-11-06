@@ -1,20 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 6f92d460fdfb3e0d
-Mode: full (translation review against the reviewed Finnish set)
+CONTENT-HASH: d5d700d53ef52571
+Mode: full (translation review against the reviewed Finnish set; new task fy4-7-L1-09)
 Round 1
 
 ## Blocking
 (none)
 
-## Fixed
-(none needed)
-
 ## Polish
 (none)
 
 ## Checked
-- Task structure and parts a) to d) equal fi; the question is the last sentence.
-- Plain Finnish: short sentences, common words; terms (nollataso, mekaaninen energia, liike-energia, sisäenergia) as in fi and the lesson.
-- Solutions have the same stages and reasoning as fi, with short sentences.
-- Distractor feedback for L1-06 and L1-08 names the same errors as fi.
-- Long calculations readable at phone width in the captures.
+- fy4-7-L1-09 (YO-skill form) is parallel to fi: same choices in the same order, each distractor feedback names the same misconception and repairs it without more disclosure than fi.
+- Language level: clear Finnish following NOTES.md section 12 (short sentences, terms explained, same physics).
+- Model answer is complete and parallel to fi; other exercises unchanged from the earlier passed review.

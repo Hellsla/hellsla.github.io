@@ -1,7 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 6f92d460fdfb3e0d
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: d5d700d53ef52571
+Mode: delta (new task fy4-7-L1-09, round 1)
 
 ## Blocking
 (none)
@@ -10,9 +9,10 @@ Round 1
 (none)
 
 ## Checked
-- Opened the L3 exercise capture (L3-04 solution) in fi-easy: tables, aligned equation blocks and answer boxes are not clipped.
-- Maths: decimal comma in text and LaTeX, units with a thin space, symbols as in fi.
-- Table captions and column headings are in Finnish as in fi.
+- Rebuilt fy4-7 with scripts/build.py fy4-7; rendered fy4-7-L1-09 at 390 px (fi-easy) after the page scripts ran, wrong answer then correct answer committed, hints/solution details open (own script, scratchpad trvis4_shot.py).
+- Measured: page scrollWidth 390, no element outside a scroll box beyond 390 px; no clipped formula.
+- Read stem, four/five choices with feedback, and the full solution (Find, Principle, Model answer, check) in the capture: KaTeX renders, chains split in rows, units upright, decimal comma consistent, no plain-text quantity.
+- Old tasks: only the changed text of the diff (fy4-2-L3-03 paragraph split) was looked at in the build.
 
 ## Scores
-illustrations 4 · typography 5 · language 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

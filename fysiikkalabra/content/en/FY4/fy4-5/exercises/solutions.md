@@ -395,3 +395,14 @@ h_3 &= \tfrac12\cdot 2.397\,\tfrac{\text{m}}{\text{s}}\cdot 2.0\,\text{s} \\
 The height is $h = 2.40\,\text{m} + 9.59\,\text{m} + 2.40\,\text{m} = 14.38\,\text{m}$.
 **Answer:** a) The free-body diagram and the equation are above. b) $a_1 \approx 1.2\,\text{m/s}^2$ up, $a_2 \approx 0$ and $a_3 \approx -1.2\,\text{m/s}^2$, that is, the acceleration is down. c) In the third phase the net force points down, so the force of the rope is smaller than the weight although the velocity points up: the load slows down. The direction of the acceleration is the direction of the net force, not the direction of the motion. d) $h \approx 14.4\,\text{m}$, which to two significant figures is $14\,\text{m}$ like the mass $80\,\text{kg}$; the more precise value $14.4\,\text{m}$ is accepted in the answer box.
 **Reasonableness:** In the uniform phase the force of the rope, $785\,\text{N}$, is equal to the weight, $785\,\text{N}$, as it should be. The changes in velocity cancel each other: in phase 3 the velocity decreases by $1.19\,\text{m/s}^2\cdot 2.0\,\text{s} = 2.38\,\text{m/s}$, that is, almost from $2.40\,\text{m/s}$ to zero, so the lift ends at rest as in the task. The height is also the product of the greatest velocity and a time: the acceleration and deceleration phases together cover the same distance as uniform velocity in $2.0\,\text{s}$, so $h = v_\text{max}\cdot 6.0\,\text{s} = 2.397\,\text{m/s}\cdot 6.0\,\text{s} = 14.4\,\text{m}$.
+
+## fy4-5-L1-09
+**Find:** which of the four free-body diagrams correctly shows the forces that act on a box pushed at a constant velocity on a horizontal floor.
+**Principle:** The free-body diagram includes only the forces that act on the chosen object, and every force has a cause. When the velocity is constant, the acceleration is zero, so by Newton's second law the net force is zero in both the horizontal and the vertical direction.
+**Model answer:** The correct one is diagram C. The box interacts with three objects. The Earth pulls it down (weight $\overline{G}$, from the centre). The floor supports it upward (normal force $\overline{N}$, from the bottom surface) and resists the sliding (friction force $\overline{F}_\mu$ to the left, from the corner of the bottom surface). The pusher pushes it to the right (force $\overline{F}$). The equations of motion are, when $x$ points to the right and $y$ up:
+
+$x$: $F - F_\mu = 0$
+
+$y$: $N - G = 0$
+
+So $F = F_\mu$ and $N = G$, and the opposite arrows must be equally long, as in diagram C. In diagram A the pushing force is greater than friction, so the net force would point to the right and the box would accelerate. Diagram B has an extra force $\overline{F}_\text{k}$, which is the reaction force acting on the pusher. In diagram D the velocity is drawn as a force, although it has no cause.

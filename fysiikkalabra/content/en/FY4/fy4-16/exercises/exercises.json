@@ -294,6 +294,67 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy4-16-L2-08",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "Example data: students slid down the same straight slope on a sled, and the slope continues as a flat snow field. The sled started from rest at a height $h$ above the field, and the mass $m$ of the sled and the load was varied. For each run the horizontal distance $x$ from the starting point to the stopping point was measured.\n\nThe uncertainty of the reading of the distance is $\\Delta x = 1.0\\,\\text{m}$ for every reading. The uncertainties of the mass and the height are so small that they are neglected.\n\nWhich of the following conclusions does the data support on the basis of the table alone?",
+      "answer": "The starting height affects the distance, because doubling the height lengthened the distance by over $19\\,\\text{m}$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Horizontal distance of the sled (example data)",
+        "columns": [
+          "$m\\,(\\text{kg})$",
+          "$h\\,(\\text{m})$",
+          "$x\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "20.0",
+            "2.00",
+            "19.6"
+          ],
+          [
+            "40.0",
+            "2.00",
+            "20.3"
+          ],
+          [
+            "20.0",
+            "4.00",
+            "40.2"
+          ],
+          [
+            "40.0",
+            "4.00",
+            "39.5"
+          ]
+        ]
+      },
+      "choices": [
+        {
+          "text": "A heavier sled travels farther, because from the height $2.00\\,\\text{m}$ the distance grew from $19.6\\,\\text{m}$ to $20.3\\,\\text{m}$.",
+          "feedback": "The uncertainty was ignored. The difference $0.7\\,\\text{m}$ is smaller than $2\\Delta x = 2.0\\,\\text{m}$, so the intervals $18.6$–$20.6\\,\\text{m}$ and $19.3$–$21.3\\,\\text{m}$ overlap. From the height $4.00\\,\\text{m}$ the heavier sled even travelled a shorter distance."
+        },
+        {
+          "text": "The starting height affects the distance, because doubling the height lengthened the distance by over $19\\,\\text{m}$.",
+          "correct": true,
+          "feedback": "Correct: with the lighter sled the distance grew by $20.6\\,\\text{m}$ and with the heavier one by $19.2\\,\\text{m}$. The differences are much larger than $2\\Delta x = 2.0\\,\\text{m}$, so the uncertainty intervals do not overlap and the growth is probably real."
+        },
+        {
+          "text": "The mass does not affect the distance, because the distances measured from the same height differ by only $0.7\\,\\text{m}$.",
+          "feedback": "Too strong a conclusion. When a difference cannot be shown, it does not prove that there is no difference: an effect of under $2\\,\\text{m}$ would be lost in the uncertainty. The data fit a model where the mass cancels out, but do not prove it."
+        },
+        {
+          "text": "From the height $8.00\\,\\text{m}$ the sled stops $80\\,\\text{m}$ away, because the distance grows in the same proportion as the height.",
+          "feedback": "The conclusion extends the dependence outside the measured range. The height $8.00\\,\\text{m}$ is double the largest measured one, and the value $80\\,\\text{m}$ assumes that the distance grows in the same proportion and that the coefficient of friction stays the same. It is an estimate, not a measurement result."
+        }
+      ]
     }
   ],
   "level3": [

@@ -195,3 +195,18 @@
 **Sijoitus:** a) $v_1 = -9{,}81\,\text{m/s}^2 \cdot 0{,}500\,\text{s} = -4{,}905\,\text{m/s}$ ja $v_2 = 9{,}81\,\text{m/s}^2 \cdot 0{,}400\,\text{s} = 3{,}924\,\text{m/s}$. b) Liikemäärän muutos on $m(v_2 - v_1) = 0{,}60\,\text{kg} \cdot (3{,}924 + 4{,}905)\,\text{m/s} = 5{,}297\,\text{kg}\cdot\text{m/s}$, ja paino on $mg = 0{,}60\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 5{,}886\,\text{N}$. Siis $N_\text{ka} = 5{,}886\,\text{N} + \dfrac{5{,}297\,\text{N}\cdot\text{s}}{0{,}012\,\text{s}} = 5{,}886\,\text{N} + 441{,}5\,\text{N} = 447{,}3\,\text{N}$. c) Savipallolle $v_2 = 0$, joten $N_\text{ka} = 5{,}886\,\text{N} + \dfrac{0{,}60\,\text{kg} \cdot 4{,}905\,\text{m/s}}{0{,}012\,\text{s}} = 5{,}886\,\text{N} + 245{,}3\,\text{N} = 251{,}1\,\text{N}$.
 **Vastaus:** b) $4{,}5 \cdot 10^2\,\text{N}$. Vastauksessa on kaksi merkitsevää numeroa, kuten massassa $0{,}60\,\text{kg}$ ja kosketusajassa $0{,}012\,\text{s}$. Nopeudet ovat a-kohdassa $-4{,}9\,\text{m/s}$ ja $+3{,}9\,\text{m/s}$. C-kohdan savipallolle voima on $2{,}5 \cdot 10^2\,\text{N}$.
 **Järkevyys:** Paino $5{,}9\,\text{N}$ on vain noin $1{,}3\,\%$ lattian voimasta. Pallo putosi noin $1{,}2\,\text{m}$ ja nousi noin $0{,}78\,\text{m}$, mikä sopii koripallolle. Selitys c): savipallon liikemäärän muutos on $2{,}9\,\text{kg}\cdot\text{m/s}$. Kimpoavan pallon liikemäärä muuttuu lisäksi ylöspäin arvoon $+2{,}4\,\text{kg}\cdot\text{m/s}$. Sen muutos $5{,}3\,\text{kg}\cdot\text{m/s}$ on siis suurempi, ja samassa ajassa tarvitaan suurempi voima.
+
+## fy4-9-L1-09
+**Kysytty:** keskimääräisen voiman $F_\text{ka}$ suuruusluokka, kun katto pysäyttää $20\,\text{g}$:n raekiven nopeudesta $20\,\text{m/s}$ ajassa $1{,}0\,\text{ms}$
+**Periaate:** Iskun aikana raekiveen vaikuttaa katon voima. Painoa ei oteta huomioon, joten katon voima on kokonaisvoima. Impulssiperiaatteen mukaan sen impulssi on yhtä suuri kuin raekiven liikemäärän muutos. Raekivi pysähtyy eikä kimpoa, joten liikemäärän muutoksen suuruus on $m v$. Suuruusluokkaa varten massa ja aika on silti muunnettava SI-yksiköihin.
+**Mallivastaus:** Muunnokset: $m = 20\,\text{g} = 0{,}020\,\text{kg}$ ja $\Delta t = 1{,}0\,\text{ms} = 0{,}0010\,\text{s}$.
+
+Impulssiperiaatteesta $F_\text{ka}\,\Delta t = m v$, joten
+
+$F_\text{ka} = \dfrac{m v}{\Delta t}$
+
+$m v = 0{,}020\,\text{kg} \cdot 20\,\text{m/s}$, eli $m v = 0{,}40\,\text{kg}\cdot\text{m/s}$
+
+$F_\text{ka} = \dfrac{0{,}40\,\text{kg}\cdot\text{m/s}}{0{,}0010\,\text{s}}$, eli $F_\text{ka} = 400\,\text{N}$
+
+Lähin vaihtoehto on $400\,\text{N}$. Järkevyys: raekiven paino on $0{,}020\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 0{,}20\,\text{N}$. Se on noin $2000$ kertaa pienempi kuin katon voima, joten painon jättäminen huomiotta oli perusteltua. Muut vaihtoehdot syntyvät virheistä. Vastaus $0{,}4\,\text{N}$ syntyy, kun millisekunteja ei muunneta sekunneiksi. Vastaus $4000\,\text{N}$ syntyy, kun liikemäärän sijaan käytetään liike-energiaa $\tfrac{1}{2} m v^2 = 4{,}0\,\text{J}$. Vastaus $400\,000\,\text{N}$ syntyy, kun massa sijoitetaan grammoina.

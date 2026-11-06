@@ -300,6 +300,33 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy4-6-L2-08",
+      "level": 2,
+      "text": "Neljä laatikkoa on lattialla tai rinteellä. Kuhunkin laatikkoon vaikuttavat vain paino, tukivoima ja kitka, laatikkoon B lisäksi vaakasuora työntö. Ilmanvastus jätetään huomiotta. Laatikoiden tiedot ovat esimerkkiarvoja.\n\nLaatikko A: massa $20\\,\\text{kg}$, liukuu vaakasuoralla lattialla, liikekitkakerroin $0{,}30$.\n\nLaatikko B: massa $40\\,\\text{kg}$, vaakasuoralla lattialla, työnnetään vaakasuoraan $30\\,\\text{N}$:n voimalla, mutta se ei liiku, lepokitkakerroin $0{,}50$.\n\nLaatikko C: massa $10\\,\\text{kg}$, liukuu vaakasuoralla lattialla, liikekitkakerroin $0{,}45$.\n\nLaatikko D: massa $25\\,\\text{kg}$, levossa rinteellä, jonka kaltevuuskulma on $30^\\circ$, lepokitkakerroin $0{,}70$.\n\nMissä järjestyksessä laatikot ovat niihin vaikuttavan kitkavoiman suuruuden mukaan pienimmästä suurimpaan?",
+      "kind": [
+        "reasoning",
+        "model"
+      ],
+      "prompt": "Järjestä kitkavoiman suuruuden mukaan pienimmästä suurimpaan.",
+      "order": [
+        {
+          "text": "Laatikko B"
+        },
+        {
+          "text": "Laatikko C"
+        },
+        {
+          "text": "Laatikko A"
+        },
+        {
+          "text": "Laatikko D"
+        }
+      ],
+      "answer": "Laatikko B ($30\\,\\text{N}$), laatikko C ($44\\,\\text{N}$), laatikko A ($59\\,\\text{N}$), laatikko D ($1{,}2\\cdot 10^2\\,\\text{N}$).",
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level3": [

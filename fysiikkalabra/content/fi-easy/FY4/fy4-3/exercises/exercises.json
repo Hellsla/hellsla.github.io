@@ -270,6 +270,53 @@
           "feedback": "Liikkeen ylläpitämiseen ei tarvita voimaa. Nyrkin voima vaikuttaa seinään, ei nyrkkiin. Siksi se ei voi pitää nyrkkiä liikkeessä eikä kumota seinän voimaa."
         }
       ]
+    },
+    {
+      "id": "fy4-3-L2-08",
+      "level": 2,
+      "text": "Esimerkkiarvot: kuorma-auto, jonka massa on $12\\,\\text{t}$, peruuttaa hitaasti ja törmää paikallaan olevaan henkilöautoon. Henkilöauton massa on $1{,}2\\,\\text{t}$.\n\nTörmäyksen aikana kuorma-auto työntää henkilöautoa voimalla $\\overline{F}_{\\text{KH}}$. Henkilöauto työntää kuorma-autoa voimalla $\\overline{F}_{\\text{HK}}$. Merkinnöissä K tarkoittaa kuorma-autoa ja H henkilöautoa. Ensimmäinen kirjain kertoo, kuka työntää.\n\nKuinka suuri on voima $F_{\\text{HK}}$ verrattuna voimaan $F_{\\text{KH}}$ törmäyksen aikana?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "$F_{\\text{HK}} = F_{\\text{KH}}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "$F_{\\text{HK}} = \\tfrac{1}{10}\\,F_{\\text{KH}}$",
+          "feedback": "Tämä jakaa voimat massojen suhteessa, ikään kuin raskaampi auto työntäisi voimakkaammin. Massojen suhde $1{,}2\\,\\text{t} : 12\\,\\text{t}$ ei kuitenkaan määrää vuorovaikutuksen voimien suhdetta."
+        },
+        {
+          "text": "$F_{\\text{HK}} = F_{\\text{KH}}$",
+          "correct": true,
+          "feedback": "Oikein: henkilöauto työntää kuorma-autoa koko törmäyksen ajan yhtä suurella voimalla kuin kuorma-auto henkilöautoa. Voimat ovat vastakkaissuuntaiset."
+        },
+        {
+          "text": "$F_{\\text{HK}} = 0$",
+          "feedback": "Tämä olettaa, että vain liikkuva auto voi työntää. Paikallaan oleva henkilöautokin on vuorovaikutuksessa kuorma-auton kanssa. Kun kuorma-auto painaa sitä, se työntää kuorma-autoa takaisin."
+        }
+      ],
+      "reason_prompt": "Mikä perustelu selittää vastauksesi?",
+      "reasons": [
+        {
+          "text": "Voima on verrannollinen massaan, joten kymmenkertainen massa antaa kymmenkertaisen voiman.",
+          "feedback": "Tämä on yleinen virhekäsitys. Voima ei ole kappaleen ominaisuus, joka kasvaisi massan mukana. Voima on kahden kappaleen vuorovaikutus, ja sen kaksi voimaa ovat aina yhtä suuret."
+        },
+        {
+          "text": "Voimat ovat yhtä suuret ja vastakkaiset, joten ne kumoavat toisensa törmäyksessä.",
+          "feedback": "Voimat ovat yhtä suuret, mutta ne eivät kumoa toisiaan. Voima $\\overline{F}_{\\text{KH}}$ vaikuttaa henkilöautoon ja voima $\\overline{F}_{\\text{HK}}$ kuorma-autoon. Vain samaan kappaleeseen vaikuttavat voimat voivat kumota toisensa."
+        },
+        {
+          "text": "Vain liikkuva kappale voi työntää, joten paikallaan olevan auton voima on nolla.",
+          "feedback": "Voima ei vaadi liikettä. Henkilöauto ja kuorma-auto koskettavat toisiaan, joten kumpikin työntää toista. Näin on, vaikka henkilöauto oli ennen törmäystä paikallaan."
+        },
+        {
+          "text": "Voimat ovat saman vuorovaikutuksen voima ja vastavoima, joten ne ovat yhtä suuret.",
+          "correct": true,
+          "feedback": "Oikein: törmäys on yksi vuorovaikutus. Newtonin kolmannen lain mukaan sen voimat ovat yhtä suuret ja vastakkaissuuntaiset, vaikka autojen massat ja vauhdit ovat erilaiset."
+        }
+      ]
     }
   ],
   "level3": [

@@ -1,18 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: e6361e81ae93222a
-
+CONTENT-HASH: 177053466bf26f9c
 ## Blocking
-
+(none)
 ## Polish
-- fy4-5-L2-06 repeats the scene of L1-06 (a box sliding right and slowing under friction, no push force). L1-06 pre-answers L2-06's error; vary one of them.
-- L2-05 and L2-07 are both ring-with-force-sensors experiments.
-- L3-05 c) (rope force below weight while rising) repeats an idea of L3-01 and of fy4-4.
-- Data tables use decimal points while the text uses commas.
-
+- content/fi/FY4/fy4-5/exercises/exercises.json:125 (L1-09 intro) — carried over from round 1 and still open: the intro defines F_k and v, so B and D are eliminable from the text alone; accept as a gentle Level 1 task or drop the two definitions. Also 'vaakasuoralla lattialla vaakasuoralla voimalla' is clumsy: 'lattialla vaakasuoralla voimalla'.
+- same task, feedback — correct feedback (C) is the shortest of the four (about 170 characters against 220-330); not a reliable clue but easy to even out by adding one sentence to C.
 ## Checked
-- Changes: the correct MC option is no longer always third (L1-06 now fourth, L1-08 third) and the answer strings match the option texts; the L1-08 "N = 0" feedback now explains why (friction would be zero and the box would move).
-- L2-05 states that the weight of the ring is neglected, L2-07 that the ring lies on a table so weight and normal force cancel; solutions match.
-- L3-05 solution now says plainly that the exact 14,4 m is accepted in the box; L3-04 d) gives 185 N and $1{,}9\cdot 10^2$ N.
-- The curly quotes in the student's quotation (L2-06) are correct Finnish typography.
-- 20 tasks in 8/7/5; the new tasks have full solutions with voimakuvio and axes; numbers re-checked (40,1 degrees, 12,2 N, 83,9 N and 185 N, 14,4 m).
-- Hash identical at the start and the end.
+- Delta (round 2): only option D changed: figure pick-nopeus now draws the velocity arrow blue (rule: force red, velocity blue) and D's feedback says 'nopeus ei ole voima' and where the blue arrow belongs.
+- Correct option C still not identifiable by form: options differ by the arrow only; D's v arrow has the same length as F and the friction, so equality of arrows does not reveal C; the student must reject v as non-force (the chapter's warned force/velocity confusion) and F_k as reaction.
+- D feedback gives the reason (no cause, describes motion) without naming the correct option; C feedback unchanged and states N = G, F = F_mu as before.
+- Figure description of pick-nopeus names the blue arrow, its origin (right side) and equal lengths, so a reader without the image gets the same information as the figure.
+- Text and feedback only; the figure itself and 390 px rendering not viewed this round.

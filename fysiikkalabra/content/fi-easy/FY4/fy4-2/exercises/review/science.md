@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 7d584edec4b55713
-Mode: full (translation review against the reviewed Finnish set)
+CONTENT-HASH: c6b41b885c57e2a9
+Mode: full (translation review against the reviewed Finnish set; new task fy4-2-L2-08)
 Round 1
 
 ## Blocking
 (none)
 
 ## Fixed
-(none needed: text matched fi in every number and was plain, natural selkosuomi)
+(none)
 
 ## Polish
-- [Minor] solutions.md L3-04/L3-05: 'jänne', 'kupera', 'paraabeli', 'vakiotermi' are not explained in plain words; fi has the same terms, so left as is.
+(none)
 
 ## Checked
-- Script comparison of exercises.json with content/fi: ids, levels, kinds, answers, units, tolerances, correct flags, choices, figures and every table cell are identical for all 25 exercises (new: L1-06..08, L2-05..07, L3-04..05); numbers in all strings equal (decimal point in en JSON and LaTeX).
-- solutions.md: same 25 sections, same line structure and same numbers as fi (re-derived 3.61 m, 128.3 m, 1.15 m/s2, 0.84 m/s2).
-- No Finnish left in en (grep); no wrong-language text in fi-easy.
-- check_i18n.py fi-easy: 0 errors.
+- Script comparison of exercises.json with content/fi: all ids, levels, kinds, answers, units, tolerances, correct flags, choice order and every number in all strings are identical (decimal point in fi-easy); new task fy4-2-L2-08 included.
+- Correct option and distractor feedback of fy4-2-L2-08 carry the same physics and numbers as fi; solutions.md section has the same lines, formulas and results.
+- No Finnish left in en (grep); no wrong-language text. check_i18n.py: nothing for this chapter; build.py succeeds.

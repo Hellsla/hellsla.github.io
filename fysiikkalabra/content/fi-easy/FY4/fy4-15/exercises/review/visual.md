@@ -1,21 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: f70ac9a77d8e3c3c
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 6245bd0aff4eae08
+Round: 1
 
 ## Blocking
 (none)
 
-## Fixed
-(none needed: the plain Finnish text already matched fi in every number and was natural)
-
 ## Polish
-- [Minor] L2-06, L2-05 data tables: numeric columns sit far from their headers and the table does not fill the column; same as fi, layout not translation.
+(none)
 
 ## Checked
-- open-exercises-L2-1280-6 (L2-05 solution end, L2-06 task and table) and open-exercises-L3-1280-5 (L3-04 solution).
-- Finnish text only, no English left, no clipped labels or horizontal overflow; decimal commas in text and formulas; units with thin space.
-- Table captions and headers (Kuukausi, Huhtikuu...Syyskuu) are in Finnish.
+- fy4-15-L2-08 (fi-easy) at 390 px, feedback and solution open (two-stage answer, boxed answer, Find/Principle/Model answer), screenshot read in full; measured after page scripts: scrollWidth 390, no clipped element outside a scroll box, no .kx-wide needed.
+- Units, decimal sign, LaTeX labels and vectors checked in the render.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

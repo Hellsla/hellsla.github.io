@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: db89440a4bef0c0d
+CONTENT-HASH: 06d5cc861549825f
 
 ## Blocking
 
 ## Polish
-- fy4-13-L2-06 still uses one table row only, and the plan's friction-estimate task is missing; the other rows could be used to show that $T < m_2 g$ every time.
-- L1-07 (Atwood, find $a$) is close to L2-02 (Atwood, find $T$).
-- Data tables use decimal points while the text uses commas.
+- reasons[2] — "massojen tulo ja summa pysyvät samoina vaihdossa" → "kun massat vaihdetaan keskenään, niiden tulo ja summa pysyvät samoina".
+- Correct stage-1 feedback ends with an instruction ("Valitse seuraavaksi perustelu ..."); harmless, but it tells the student a reason follows, which the page already shows.
 
 ## Checked
-- Changes: MC option orders rebalanced (L1-06 correct option now third, L1-08 second); L2-07 key is now 2,0 with 2 % (true 1,962; the student's 2,45 falls outside); the Järkevyys line of L2-07 is now readable.
-- L3-04 states that the locomotive mass is excluded and that its pull is the same in both orders; the solution has three voimakuvio blocks, with the 27 / 15 / 6 kN arrows consistent with the numbers; K12 = 15 kN, and 21 kN in the new order (above 20 kN).
-- L3-05 now says the track is long enough; the voimakuvio of the 0,200 kg measurement (T = 1,6 N) matches $m_1 a$; answer 0,91 kg.
-- The "kaksi merkitsevää numeroa" lines now give a reason (spread of the data).
-- 20 tasks in 8/7/5 with complete solutions; scope stays inside the lesson.
-- Hash identical at the start and the end.
+- Round 3, text only; no render, widths not measured.
+- Stage-1 options are 30, 30 and 35 characters, feedbacks 199, 200, 206: the round-2 form cue is gone. Correct feedback names neither the acceleration nor the reason.
+- Reasons 83–94 characters, all with formula or symbols, correct reason not marked; numbers and solution unchanged and right.
+- Hash at start 06d5cc861549825f, at end 06d5cc861549825f.

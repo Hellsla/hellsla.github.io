@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 850def367bf1f5e2
-Mode: full (translation review against the reviewed Finnish set)
+CONTENT-HASH: 2040e0e2c0e5a3c7
+Mode: delta (translation review of the new task fy4-10-L2-08 against the reviewed Finnish set)
 Round 1
 
 ## Blocking
 (none)
 
 ## Fixed
-(none needed: the English text already matched fi in every number and was natural)
+(none needed)
 
 ## Polish
 (none)
 
 ## Checked
-- Task texts keep the Finnish order: situation, data, then question; the answer-box sentence is kept in each task with a multi-part question.
-- Part labels a), b), c) and the guided self-assessment prompts (what error, what was wrong in the student's reasoning) are preserved.
-- Wording is natural English and physics terms are standard (perfectly inelastic, work-energy principle, light gate, hook-and-loop tape).
-- Model answers keep every step and the reasonableness checks of fi; nothing dropped.
+- fy4-10-L2-08: situation first, question last as its own sentence, as in fi; choices and feedback keep the misconception-naming style.
+- Natural English with standard terms (rebound, momentum, sign convention).
+- Solution is followed step by step; the principle is explained, not only named; the reasonableness check is kept.

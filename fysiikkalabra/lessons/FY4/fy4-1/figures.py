@@ -151,4 +151,58 @@ def jogger_graph():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "displacement": displacement, "round-trip": round_trip, "graph-slope": graph_slope, "jogger-graph": jogger_graph}
+# Graph choice of task fy4-1-L1-09: four (t, x) graphs on one grid; only "pick-falling" is right
+# (x0 = 6,0 m, v = -1,0 m/s for 4,0 s).
+PICK_DESC = ("(t,x)-kuvaaja mittakaavassa: vaaka-akselilla aika 0–5 sekuntia sekunnin välein, pystyakselilla paikka "
+             "miinus 6 metristä 12 metriin kahden metrin välein, ja aika-akseli kulkee kohdassa x = 0. ")
+
+
+def pick_axes(fid, label):
+    """One option of the graph choice: signed (t, x) axes, t 0–5 s and x −6…12 m, the same grid for every option."""
+    f = Fig(fid, 400, PICK_DESC + label)
+    a = Axes(f, (96, 360), (470, 50), x=(0, 5), y=(-6, 12), xticks=[1, 2, 3, 4, 5],
+             yticks=[-6, -4, -2, 0, 2, 4, 6, 8, 10, 12], xlabel=r"t\ (\text{s})", ylabel=r"x\ (\text{m})", x_at=0,
+             origin_label=False)
+    return f, a
+
+
+def pick_falling():
+    f, a = pick_axes("fy41-pick-falling", "Laskeva suora: paikka on 6 metriä hetkellä 0 ja pienenee tasaisesti "
+                     "2 metriin hetkellä 4 sekuntia.")
+    a.line([(0, 6), (4, 2)], COLD, 3.5)
+    return f.svg()
+
+
+def pick_rising():
+    """The sign of the velocity ignored: the same start, the position grows by 1 m each second."""
+    f, a = pick_axes("fy41-pick-rising", "Nouseva suora: paikka on 6 metriä hetkellä 0 ja kasvaa tasaisesti "
+                     "10 metriin hetkellä 4 sekuntia.")
+    a.line([(0, 6), (4, 10)], COLD, 3.5)
+    return f.svg()
+
+
+def pick_flat():
+    """The velocity drawn as if the graph were a (t, v) graph."""
+    f, a = pick_axes("fy41-pick-flat", "Vaakasuora suora: paikka on miinus 1 metri koko ajan hetkestä 0 hetkeen "
+                     "4 sekuntia.")
+    a.line([(0, -1), (4, -1)], COLD, 3.5)
+    return f.svg()
+
+
+def pick_origin():
+    """The start position forgotten: x = v t from the origin."""
+    f, a = pick_axes("fy41-pick-origin", "Laskeva suora: paikka on 0 metriä hetkellä 0 ja pienenee tasaisesti "
+                     "miinus 4 metriin hetkellä 4 sekuntia.")
+    a.line([(0, 0), (4, -4)], COLD, 3.5)
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "displacement": displacement, "round-trip": round_trip, "graph-slope": graph_slope, "jogger-graph": jogger_graph, "pick-falling": pick_falling,
+           "pick-rising": pick_rising, "pick-flat": pick_flat, "pick-origin": pick_origin}
+# What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
+REUSE = {
+    "pick-falling": "reveals: the right option of task fy4-1-L1-09 (x0 = 6 m, v = -1,0 m/s for 4 s)",
+    "pick-rising": "safe: a wrong option of task fy4-1-L1-09 (the sign of the velocity ignored)",
+    "pick-flat": "safe: a wrong option of task fy4-1-L1-09 (the velocity drawn as a position)",
+    "pick-origin": "safe: a wrong option of task fy4-1-L1-09 (the start position forgotten)",
+}

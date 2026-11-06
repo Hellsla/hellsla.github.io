@@ -190,3 +190,30 @@
 **Substitution:** a) The energies are $E_0 = 0.057 \cdot 9.81 \cdot 1.20\,\text{J} = 0.671\,\text{J}$, $E_1 = 0.431\,\text{J}$, $E_2 = 0.274\,\text{J}$, $E_3 = 0.179\,\text{J}$ and $E_4 = 0.112\,\text{J}$. The shares are $r_0 = 0.77 : 1.20 = 0.642$, $r_1 = 0.636$, $r_2 = 0.653$ and $r_3 = 0.625$. b) The sum of the shares is $2.556$, so the mean is $2.556 : 4 = 0.639 = 63.9\,\%$. c) $\Delta E = 0.057\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot (1.20 - 0.77)\,\text{m} = 0.240\,\text{J}$.
 **Answer:** b) In a bounce the ball keeps on average about $64\,\%$ of its mechanical energy, two significant figures like the heights. c) In the first bounce about $0.24\,\text{J}$ of mechanical energy turns into internal energy. Justification: the mechanical energy of the ball is not conserved in the bounces, because it decreases every time (the heights decrease: $1.20 \to 0.77 \to 0.49 \to 0.32 \to 0.20\,\text{m}$), but the total energy is conserved: in a bounce the interaction between the ball and the floor turns part of the mechanical energy into internal energy (warming) of the ball and the floor, and into sound.
 **Reasonableness:** The shares $0.625$–$0.653$ are almost the same, so the ball loses about the same share in every bounce, which is believable for a tennis ball. After four bounces $0.20 : 1.20 \approx 17\,\%$ of the initial energy is left, and $0.639^4 \approx 0.167$ gives the same.
+
+## fy4-8-L1-09
+**Find:** which of the five statements about the roller coaster car are true.
+**Principle:** Friction and air resistance are ignored, and the normal force of the track is perpendicular to the motion, so only the weight does work. Then the mechanical energy $E_\text{k} + E_\text{p}$ of the car is conserved. The zero level is the bottom of the valley.
+**Model answer:** 1 true. From the conservation law $mgh = \tfrac12 mv^2$ the speed at the bottom is obtained:
+
+$v = \sqrt{2gh}$
+
+$v = \sqrt{2 \cdot 9.81\,\text{m/s}^2 \cdot 20\,\text{m}}$
+
+$v \approx 19.8\,\text{m/s}$
+
+2 false. The mass cancels from the conservation law, so a fuller car is equally fast at the bottom. It has more kinetic energy, but at the start it also had more potential energy.
+
+3 true. The normal force is perpendicular to the motion, so its component in the direction of the motion is zero and $W = F_\parallel s = 0$.
+
+4 false. At the top, at a height of $12\,\text{m}$, the kinetic energy is the difference between the potential energies at the start and at the top:
+
+$E_\text{k} = mg(h_1 - h_2)$
+
+$E_\text{k} = 400\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 8\,\text{m}$
+
+$E_\text{k} \approx 31\,\text{kJ}$
+
+The car would stop only at the starting height of $20\,\text{m}$.
+
+5 false. Friction would decrease the mechanical energy of the car, but an equal amount of energy would be transferred to the internal energy of the track, the wheels and the air. The total energy is conserved.

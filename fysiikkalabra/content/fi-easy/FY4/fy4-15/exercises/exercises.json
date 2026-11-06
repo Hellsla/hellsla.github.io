@@ -225,6 +225,37 @@
       "answer": 240,
       "unit": "kW",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-15-L2-08",
+      "level": 2,
+      "kind": [
+        "reasoning",
+        "model"
+      ],
+      "text": "Tuulivoimalan roottorin halkaisija on $100\\,\\text{m}$, ja tuulen nopeus on $36\\,\\text{km/h}$. Ilman tiheys on $1{,}25\\,\\text{kg/m}^3$. Voimala muuttaa $40\\,\\%$ roottorin läpi virtaavan tuulen tehosta sähköksi (esimerkkiarvot). Voimala ei saavuta nimellistehoaan eli suurinta tehoaan.\n\nMikä on suuruusluokaltaan voimalan sähköteho? Suuruusluokka kertoo luvun koon suunnilleen. Valitse lähin arvo.",
+      "answer": "$2\\,\\text{MW}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "$20\\,\\text{kW}$",
+          "feedback": "Tämä tulos syntyy, kun teho lasketaan verrannolliseksi nopeuteen $v$. Silloin mukana on vain sekunnissa roottorin läpi virtaavan ilman massa $\\rho A v$. Myös ilmakilogramman liike-energia $\\tfrac{1}{2}v^2$ kuitenkin kasvaa nopeuden mukana, joten $P \\propto v^3$. Kun nopeus on $10\\,\\text{m/s}$, lukuarvo $10^3$ on $100$ kertaa $10$."
+        },
+        {
+          "text": "$0{,}2\\,\\text{MW}$",
+          "feedback": "Tämä tulos syntyy, kun teho lasketaan verrannolliseksi neliöön $v^2$. Silloin mukana on vain ilmakilogramman liike-energia $\\tfrac{1}{2}v^2$. Myös sekunnissa roottorin läpi virtaavan ilman massa $\\rho A v$ kuitenkin kasvaa nopeuden mukana, joten $P \\propto v^3$."
+        },
+        {
+          "text": "$2\\,\\text{MW}$",
+          "correct": true,
+          "feedback": "Oikein: $v = 10\\,\\text{m/s}$ ja $A = \\pi \\cdot (50\\,\\text{m})^2 \\approx 7850\\,\\text{m}^2$, joten $P = \\tfrac{1}{2}\\eta\\rho A v^3$, eli $P \\approx 1{,}96\\,\\text{MW}$."
+        },
+        {
+          "text": "$90\\,\\text{MW}$",
+          "feedback": "Tämä tulos syntyy, kun nopeus sijoitetaan lukuna $36$ muuntamatta sitä yksikköön $\\text{m/s}$. Koska $36\\,\\text{km/h} = 10\\,\\text{m/s}$ ja $36^3 : 10^3 \\approx 47$, teho tulee noin $47$ kertaa liian suureksi."
+        }
+      ]
     }
   ],
   "level3": [

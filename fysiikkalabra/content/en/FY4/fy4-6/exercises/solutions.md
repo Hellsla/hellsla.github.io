@@ -346,3 +346,36 @@ s &= \tfrac{1}{2} \cdot 1.931\,\text{m/s}^2 \cdot (3.0\,\text{s})^2 \\
 ```
 **Answer:** the student's error is $N = mg$ on a slope, the correct normal force is $N = mg\cos\alpha \approx 170\,\text{N}$ and the correct acceleration $a \approx 1.9\,\text{m/s}^2$. The box slides a distance of $8.7\,\text{m}$ in the time $3.0\,\text{s}$, two significant figures like the coefficient of friction $0.35$ and the time $3.0\,\text{s}$.
 **Reasonableness:** The student's acceleration $1.5\,\text{m/s}^2$ is too small, because the friction $\mu mg = 69\,\text{N}$ was calculated too large; the correct friction is $\mu mg\cos\alpha = 59\,\text{N}$. Without friction the acceleration would be $g\sin 30^\circ \approx 4.9\,\text{m/s}^2$, so friction reduces it. The box accelerates down while sliding, because $\tan 30^\circ = 0.58 > \mu = 0.35$; according to the problem it starts to move, so $\mu_0 < \tan 30^\circ$.
+
+## fy4-6-L2-08
+**Given:** example values: A: $m_\text{A} = 20\,\text{kg}$, slides, $\mu = 0.30$; B: $m_\text{B} = 40\,\text{kg}$, at rest, push $F = 30\,\text{N}$, $\mu_0 = 0.50$; C: $m_\text{C} = 10\,\text{kg}$, slides, $\mu = 0.45$; D: $m_\text{D} = 25\,\text{kg}$, at rest on a slope, $\alpha = 30^\circ$, $\mu_0 = 0.70$; $g = 9.81\,\text{m/s}^2$
+
+**Find:** the order of the boxes by the magnitude of the friction force acting on them, from the smallest to the largest
+
+**Principle:** Kinetic friction $F_\mu = \mu N$ acts on a sliding box, and on a horizontal floor $N = mg$, because only the weight and the normal force act in the vertical direction. Static friction acts on a box at rest, and it is exactly as large as the balance requires, at most $\mu_0 N$. So the friction of a box at rest is obtained from the equation of motion $\Sigma F_x = 0$, not from the coefficient of static friction.
+
+**Model answer:** The sliding boxes:
+
+$F_{\mu\text{A}} = \mu m_\text{A} g$
+
+$F_{\mu\text{A}} = 0.30 \cdot 20\,\text{kg} \cdot 9.81\,\text{m/s}^2$
+
+$F_{\mu\text{A}} \approx 58.9\,\text{N}$
+
+$F_{\mu\text{C}} = 0.45 \cdot 10\,\text{kg} \cdot 9.81\,\text{m/s}^2$
+
+$F_{\mu\text{C}} \approx 44.1\,\text{N}$
+
+Box B does not move, so in the horizontal direction $F - F_{\mu\text{B}} = 0$ and $F_{\mu\text{B}} = F = 30\,\text{N}$. The upper limit of static friction $\mu_0 m_\text{B} g \approx 196\,\text{N}$ is not the value of the friction; it only tells that the box stays in place.
+
+Box D is at rest on a slope, so along the slope static friction cancels the component of the weight parallel to the slope:
+
+$F_{\mu\text{D}} = m_\text{D} g \sin\alpha$
+
+$F_{\mu\text{D}} = 25\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot \sin 30^\circ$
+
+$F_{\mu\text{D}} \approx 123\,\text{N}$
+
+The upper limit is $\mu_0 m_\text{D} g \cos\alpha \approx 149\,\text{N}$, so the box really stays in place.
+
+By the friction force, from the smallest to the largest, the order is B ($30\,\text{N}$), C ($44\,\text{N}$), A ($59\,\text{N}$), D ($1.2 \cdot 10^2\,\text{N}$). If the friction of box B were wrongly calculated as $\mu_0 N$, it would be the largest. The order by mass or by coefficient of friction would also be different, because friction depends both on the normal force and on whether the box slides.

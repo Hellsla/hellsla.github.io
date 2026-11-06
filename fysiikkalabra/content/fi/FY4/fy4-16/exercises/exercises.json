@@ -294,6 +294,67 @@
      ]
     ]
    }
+  },
+  {
+   "id": "fy4-16-L2-08",
+   "level": 2,
+   "kind": [
+    "data",
+    "reasoning"
+   ],
+   "text": "Esimerkkiaineisto: oppilaat laskivat pulkalla samaa suoraa rinnettä, joka jatkuu tasaisena lumikenttänä. Pulkka lähti levosta korkeudelta $h$ kentän yläpuolelta, ja pulkan ja kuorman massaa $m$ vaihdeltiin. Joka laskusta mitattiin vaakasuora matka $x$ lähtökohdasta pysähtymiskohtaan.\n\nMatkan lukeman epävarmuus on $\\Delta x = 1{,}0\\,\\text{m}$ jokaiselle lukemalle. Massan ja korkeuden epävarmuudet ovat niin pienet, että ne jätetään huomiotta.\n\nMinkä seuraavista päätelmistä aineisto tukee pelkän taulukon perusteella?",
+   "answer": "Lähtökorkeus vaikuttaa matkaan, koska korkeuden kaksinkertaistus pidensi matkaa yli $19\\,\\text{m}$.",
+   "unit": "",
+   "tolerance": 0.02,
+   "data": {
+    "caption": "Pulkan vaakamatka (esimerkkiaineisto)",
+    "columns": [
+     "$m\\,(\\text{kg})$",
+     "$h\\,(\\text{m})$",
+     "$x\\,(\\text{m})$"
+    ],
+    "rows": [
+     [
+      "20.0",
+      "2.00",
+      "19.6"
+     ],
+     [
+      "40.0",
+      "2.00",
+      "20.3"
+     ],
+     [
+      "20.0",
+      "4.00",
+      "40.2"
+     ],
+     [
+      "40.0",
+      "4.00",
+      "39.5"
+     ]
+    ]
+   },
+   "choices": [
+    {
+     "text": "Raskaampi pulkka kulkee kauemmas, koska korkeudelta $2{,}00\\,\\text{m}$ matka kasvoi $19{,}6\\,\\text{m}$:stä $20{,}3\\,\\text{m}$:iin.",
+     "feedback": "Epävarmuus jäi huomiotta. Ero $0{,}7\\,\\text{m}$ on pienempi kuin $2\\Delta x = 2{,}0\\,\\text{m}$, joten välit $18{,}6$–$20{,}6\\,\\text{m}$ ja $19{,}3$–$21{,}3\\,\\text{m}$ menevät päällekkäin. Korkeudelta $4{,}00\\,\\text{m}$ raskaampi pulkka kulki jopa lyhyemmän matkan."
+    },
+    {
+     "text": "Lähtökorkeus vaikuttaa matkaan, koska korkeuden kaksinkertaistus pidensi matkaa yli $19\\,\\text{m}$.",
+     "correct": true,
+     "feedback": "Oikein: kevyemmällä pulkalla matka kasvoi $20{,}6\\,\\text{m}$ ja raskaammalla $19{,}2\\,\\text{m}$. Erot ovat paljon suurempia kuin $2\\Delta x = 2{,}0\\,\\text{m}$, joten epävarmuusvälit eivät mene päällekkäin ja kasvu on todennäköisesti todellista."
+    },
+    {
+     "text": "Massa ei vaikuta matkaan, koska samalta korkeudelta mitatut matkat eroavat vain $0{,}7\\,\\text{m}$.",
+     "feedback": "Liian vahva päätelmä. Kun eroa ei voi osoittaa, se ei todista, ettei eroa ole: alle $2\\,\\text{m}$:n vaikutus hukkuisi epävarmuuteen. Aineisto sopii malliin, jossa massa supistuu pois, mutta ei todista sitä."
+    },
+    {
+     "text": "Korkeudelta $8{,}00\\,\\text{m}$ pulkka pysähtyy $80\\,\\text{m}$:n päähän, koska matka kasvaa samassa suhteessa kuin korkeus.",
+     "feedback": "Päätelmä jatkaa riippuvuutta mittausalueen ulkopuolelle. Korkeus $8{,}00\\,\\text{m}$ on kaksinkertainen suurimpaan mitattuun nähden, ja arvo $80\\,\\text{m}$ olettaa, että matka kasvaa samassa suhteessa ja kitkakerroin pysyy samana. Se on arvio, ei mittaustulos."
+    }
+   ]
   }
  ],
  "level3": [

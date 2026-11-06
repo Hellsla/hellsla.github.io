@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 7d584edec4b55713
-Mode: full (translation review against the reviewed Finnish set)
+CONTENT-HASH: c6b41b885c57e2a9
+Mode: full (translation review against the reviewed Finnish set; new task fy4-2-L2-08)
 Round 1
 
 ## Blocking
 (none)
 
-## Fixed
-(none needed: text matched fi in every number and was plain, natural selkosuomi)
-
 ## Polish
 (none)
 
 ## Checked
-- Choices keep the fi order, one correct option each (L1-06, L1-08, L2-07), distractor feedback names the same misconception as fi.
-- Hints and feedback give no answer away beyond fi; model answers and guided self-assessment tasks (L3-04, L3-05 a-c) are complete and parallel to fi.
-- Language level: short sentences, common words, terms (tangentti = sivuava suora, videoanalyysi) explained; matches the selkosuomi rules.
+- fy4-2-L2-08 (YO-skill form) is parallel to fi: same choices in the same order, each distractor feedback names the same misconception and repairs it without more disclosure than fi.
+- Language level: clear Finnish following NOTES.md section 12 (short sentences, terms explained, same physics).
+- Model answer is complete and parallel to fi; other exercises unchanged from the earlier passed review.

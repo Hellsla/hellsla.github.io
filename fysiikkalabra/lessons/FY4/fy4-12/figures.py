@@ -257,7 +257,58 @@ def ei_kohtaa():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "tilanne": tilanne, "kohtaus": kohtaus, "kaava": kaava, "vt": vt, "esimerkki": esimerkki, "kaksi-karrya": kaksi_karrya, "ei-kohtaa": ei_kohtaa}
+
+# Kuvaajan valinta (task fy4-12-L2-08, docs/exercise-types.md type 2): car A and moped B side by side at t = 0. A brakes
+# from 20 m/s at 2,0 m/s² (v_A = 20 − 2,0·t, at rest at 10 s), B keeps 12 m/s; B catches up with A at 8,0 s
+# (20t − t² = 12t). Four (t, v) option graphs on one grid over 0–10 s; only "pick-oikea" is right.
+PICK_DESC = "Kuvaaja mittakaavassa: auton A ja mopon B nopeudet v ajan t funktiona, kun t on 0–10 s. Ruudukon väli on 2 s ja 4 m/s. "
+
+
+def pick_vt(fid, label, a_pts, a_lab):
+    """One option of the graph choice: (t, v) axes, t 0–10 s and v 0–24 m/s; car A green, moped B brown at 12 m/s."""
+    f = Fig(fid, 340, PICK_DESC + label)
+    ax = Axes(f, (92, 296), (470, 52), x=(0, 10), y=(0, 24), xticks=[2, 4, 6, 8, 10], yticks=[4, 8, 12, 16, 20, 24],
+              xlabel=r"t\ (\text{s})", ylabel=r"v\ (\text{m/s})")
+    ax.line([(0, 12), (10, 12)], B_COL, 3.5)
+    ax.line(a_pts, A_COL, 3.5)
+    f.tex(ax.X(10) + 10, ax.Y(12), r"v_\text{B}", "start", B_COL)
+    f.tex(ax.X(a_lab[0]), ax.Y(a_lab[1]), r"v_\text{A}", "start", A_COL)
+    return f.svg()
+
+
+def pick_oikea():
+    return pick_vt("fy412-pick-oikea", "Auton nopeus pienenee suorana 20 m/s:sta hetkellä 0 nollaan hetkellä 10 s. Mopon nopeus on "
+                   "vaakasuora suora 12 m/s. Suorat leikkaavat hetkellä 4 s, kun kummankin nopeus on 12 m/s.",
+                   [(0, 20), (10, 0)], (2.4, 19))
+
+
+def pick_kohtaus():
+    """The lesson's warned mistake: the (t, v) lines drawn to cross at the catching-up time 8 s."""
+    return pick_vt("fy412-pick-kohtaus", "Auton nopeus pienenee suorana 20 m/s:sta hetkellä 0 arvoon 10 m/s hetkellä 10 s. Mopon "
+                   "nopeus on vaakasuora suora 12 m/s. Suorat leikkaavat hetkellä 8 s, kun kummankin nopeus on 12 m/s.",
+                   [(0, 20), (10, 10)], (2.4, 21.5))
+
+
+def pick_alku():
+    """Side by side read as the same speed: A starts at 12 m/s and stops at 6 s."""
+    return pick_vt("fy412-pick-alku", "Auton nopeus pienenee suorana 12 m/s:sta hetkellä 0 nollaan hetkellä 6 s ja pysyy sen jälkeen "
+                   "nollana. Mopon nopeus on vaakasuora suora 12 m/s. Kuvaajat alkavat samasta pisteestä, 12 m/s hetkellä 0.",
+                   [(0, 12), (6, 0), (10, 0)], (0.8, 5))
+
+
+def pick_kaari():
+    """Uniform deceleration drawn as a curve, the shape of a (t, x) graph: v = 20 − 0,2·t²."""
+    pts = [(10 * i / 60, 20 - 0.2 * (10 * i / 60) ** 2) for i in range(61)]
+    return pick_vt("fy412-pick-kaari", "Auton nopeus pienenee kaarevasti ja yhä jyrkemmin: 20 m/s hetkellä 0, 15 m/s hetkellä 5 s "
+                   "ja nolla hetkellä 10 s. Mopon nopeus on vaakasuora suora 12 m/s. Kuvaajat leikkaavat noin hetkellä 6,3 s.",
+                   pts, (2.4, 22.5))
+
+FIGURES = {"hero": hero, "tilanne": tilanne, "kohtaus": kohtaus, "kaava": kaava, "vt": vt, "esimerkki": esimerkki, "kaksi-karrya": kaksi_karrya, "ei-kohtaa": ei_kohtaa,
+           "pick-oikea": pick_oikea, "pick-kohtaus": pick_kohtaus, "pick-alku": pick_alku, "pick-kaari": pick_kaari}
 REUSE = {"hero": "decorative", "tilanne": "safe", "kohtaus": "reveals: the meeting time and place of the uniform head-on example",
          "kaava": "reveals: the passing time of the d = 0 example", "vt": "reveals: the passing time of the d = 0 example",
-         "esimerkki": "reveals: the worked example's answer", "kaksi-karrya": "safe: two crossing lines without the crossing marked", "ei-kohtaa": "safe: two diverging lines, no crossing for t >= 0"}
+         "esimerkki": "reveals: the worked example's answer", "kaksi-karrya": "safe: two crossing lines without the crossing marked", "ei-kohtaa": "safe: two diverging lines, no crossing for t >= 0",
+         "pick-oikea": "reveals: the right option of task fy4-12-L2-08 (car braking from 20 m/s at 2,0 m/s², moped at 12 m/s)",
+         "pick-kohtaus": "safe: a wrong option of task fy4-12-L2-08 (the (t, v) lines cross at the catching-up time)",
+         "pick-alku": "safe: a wrong option of task fy4-12-L2-08 (side by side read as the same speed)",
+         "pick-kaari": "safe: a wrong option of task fy4-12-L2-08 (uniform deceleration drawn as a curve)"}

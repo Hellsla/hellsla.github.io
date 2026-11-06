@@ -37,6 +37,7 @@ a["fy4-10-L2-05"] = 100 * (0.5 * mA * 0.25 ** 2 + 0.5 * mB * 0.58 ** 2) / (0.5 *
 vA, vA2, vB2 = (0.51 - 0.00) / 1.0, (1.21 - 1.10) / 1.0, (1.54 - 1.27) / 1.0   # speeds from the position table: 0,51, 0,11 and 0,27 m/s
 a["fy4-10-L2-06"] = 100 * (0.5 * 0.40 * vA2 ** 2 + 0.5 * 0.60 * vB2 ** 2) / (0.5 * 0.40 * vA ** 2)   # E_k left = 0,0243 / 0,0520 = 46,7 %
 a["fy4-10-L2-07"] = (0.60 * 0.80 + 0.20 * -0.40) / (0.60 + 0.20)   # error analysis: the left-moving cart is negative → 0,50 m/s
+# L2-08 is multiple choice (find the error): row 3 drops the sign; right v_B' = (0,24 + 0,060) / 0,50 = 0,60 m/s; no number
 # Level 3 additions
 vs = math.sqrt(2 * 0.60 * g * 8.0)                      # skid after the collision: ½Mv'² = μMgs → v' = √(2μgs) = 9,704 m/s
 a["fy4-10-L3-04"] = (1100 + 1400) * vs / 1100 * 3.6     # momentum: v_A = (mA+mB)v'/mA = 22,06 m/s = 79,4 km/h

@@ -296,3 +296,18 @@ E_1' - E_5' &= 1597\,\text{J}
 The difference is the same, because the choice of the zero level adds the same number to both mechanical energies, and it cancels out of the difference.
 **Answer:** $1.6\,\text{kJ}$, two significant figures like the mass $48\,\text{kg}$.
 **Reasonableness:** If the mechanical energy were conserved, the speed at point 5 would be about $17.8\,\text{m/s}$, and the measured $15.8\,\text{m/s}$ is smaller than that. The energy changed is about $19\,\%$ of the original $8530\,\text{J}$, which is a reasonable share for a sledding hill.
+
+## fy4-7-L1-09
+**Find:** which of the four expressions has the unit joule $\text{J}$.
+**Principle:** The unit of an expression is obtained by substituting the unit of each quantity: $m$ ($\text{kg}$), $G$ ($\text{N}$), $v$ ($\text{m/s}$), $h$ ($\text{m}$) and $g$ ($\text{m/s}^2$). The unit of energy is $\text{J} = \text{N}\cdot\text{m} = \text{kg}\cdot\text{m}^2/\text{s}^2$, and $\text{N} = \text{kg}\cdot\text{m/s}^2$. The numerical factor $\tfrac12$ does not affect the unit.
+**Model answer:** The correct one is $\dfrac{G v^2}{2g}$. The units of the expressions:
+
+$\tfrac{1}{2}\,m v$: $\text{kg}\cdot\dfrac{\text{m}}{\text{s}}$, not joule
+
+$\dfrac{G v^2}{2g}$: $\dfrac{\text{N}\cdot\text{m}^2/\text{s}^2}{\text{m/s}^2} = \text{N}\cdot\text{m} = \text{J}$
+
+$G g h$: $\text{N}\cdot\dfrac{\text{m}}{\text{s}^2}\cdot\text{m} = \text{J}\cdot\dfrac{\text{m}}{\text{s}^2}$
+
+$\dfrac{v^2}{2g}$: $\dfrac{\text{m}^2/\text{s}^2}{\text{m/s}^2} = \text{m}$
+
+Only the unit of the expression $\dfrac{G v^2}{2g}$ is joule. It is kinetic energy written in another way: when $G = mg$ is substituted for the weight, $g$ cancels and the kinetic energy $E_\text{k} = \tfrac12 m v^2$ remains. The unit of the expression $\tfrac{1}{2}\,m v$ is $\text{kg}\cdot\text{m/s}$: the speed is to the first power in it, although kinetic energy is proportional to the square of the speed. The expression $\dfrac{v^2}{2g}$ is the height to which a frictionless object rises from the speed $v$. In the expression $G g h$ the weight has been written in place of the mass, so $g$ appears twice; the correct form is $E_\text{p} = mgh = Gh$.

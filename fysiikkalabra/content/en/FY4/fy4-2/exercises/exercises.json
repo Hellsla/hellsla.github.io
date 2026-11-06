@@ -276,6 +276,37 @@
           "feedback": "Acceleration can be determined directly from measurements, for example from the change in velocity in time. Calculating from the angle does not tell what the cart actually does."
         }
       ]
+    },
+    {
+      "id": "fy4-2-L2-08",
+      "level": 2,
+      "text": "A cyclist rides along a straight road at $8.0\\,\\text{m/s}$ and brakes uniformly to a stop.\n\nOn dry asphalt the magnitude of the acceleration during braking is $4.0\\,\\text{m/s}^2$.\n\nOn wet asphalt the cyclist brakes from the same speed, but the magnitude of the acceleration is $2.0\\,\\text{m/s}^2$.\n\nHow does the braking distance change when the road is wet?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "Becomes 2 times as long",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Becomes 4 times as long",
+          "feedback": "This answer notices that the braking time doubles and assumes that the distance grows with the square of the time. At the same time, however, the acceleration is halved, so the distance only doubles: from $8.0\\,\\text{m}$ to $16\\,\\text{m}$."
+        },
+        {
+          "text": "Becomes 2 times as long",
+          "correct": true,
+          "feedback": "Correct: on the wet road the speed decreases by $2.0\\,\\text{m/s}$ every second, so stopping takes $4.0\\,\\text{s}$ instead of $2.0\\,\\text{s}$. The braking distance grows from $8.0\\,\\text{m}$ to $16\\,\\text{m}$."
+        },
+        {
+          "text": "Is halved",
+          "feedback": "This answer reads the dependence the wrong way round, as if the braking distance were directly proportional to the acceleration. A smaller acceleration reduces the speed more slowly, so stopping takes longer and the distance is greater."
+        },
+        {
+          "text": "Stays the same",
+          "feedback": "This answer assumes that the braking distance depends only on the initial speed. The initial speed is the same, but on the wet road the speed decreases by $2.0\\,\\text{m/s}$ every second instead of $4.0\\,\\text{m/s}$, so stopping takes twice as long."
+        }
+      ]
     }
   ],
   "level3": [

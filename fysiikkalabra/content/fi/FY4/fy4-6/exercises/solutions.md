@@ -346,3 +346,37 @@ s &= \tfrac{1}{2} \cdot 1{,}931\,\text{m/s}^2 \cdot (3{,}0\,\text{s})^2 \\
 ```
 **Vastaus:** oppilaan virhe on $N = mg$ rinteellä, oikea tukivoima on $N = mg\cos\alpha \approx 170\,\text{N}$ ja oikea kiihtyvyys $a \approx 1{,}9\,\text{m/s}^2$. Laatikko liukuu ajassa $3{,}0\,\text{s}$ matkan $8{,}7\,\text{m}$, kaksi merkitsevää numeroa kuten kitkakertoimessa $0{,}35$ ja ajassa $3{,}0\,\text{s}$.
 **Järkevyys:** Oppilaan kiihtyvyys $1{,}5\,\text{m/s}^2$ on liian pieni, koska hän laski kitkan $\mu mg = 69\,\text{N}$ liian suureksi; oikea kitka on $\mu mg\cos\alpha = 59\,\text{N}$. Ilman kitkaa kiihtyvyys olisi $g\sin 30^\circ \approx 4{,}9\,\text{m/s}^2$, joten kitka pienentää sitä. Liukuessaan laatikko kiihtyy alas, koska $\tan 30^\circ = 0{,}58 > \mu = 0{,}35$; tehtävän mukaan se lähtee liikkeelle, joten $\mu_0 < \tan 30^\circ$.
+
+## fy4-6-L2-08
+**Annettu:** esimerkkiarvot: A: $m_\text{A} = 20\,\text{kg}$, liukuu, $\mu = 0{,}30$; B: $m_\text{B} = 40\,\text{kg}$, levossa, työntö $F = 30\,\text{N}$, $\mu_0 = 0{,}50$; C: $m_\text{C} = 10\,\text{kg}$, liukuu, $\mu = 0{,}45$; D: $m_\text{D} = 25\,\text{kg}$, levossa rinteellä, $\alpha = 30^\circ$, $\mu_0 = 0{,}70$; $g = 9{,}81\,\text{m/s}^2$
+
+**Kysytty:** laatikoiden järjestys niihin vaikuttavan kitkavoiman suuruuden mukaan pienimmästä suurimpaan
+
+**Periaate:** Liukuvaan laatikkoon vaikuttaa liikekitka $F_\mu = \mu N$, ja vaakasuoralla lattialla $N = mg$, koska pystysuunnassa vaikuttavat vain paino ja tukivoima. Levossa olevaan laatikkoon vaikuttaa lepokitka, joka on juuri niin suuri kuin tasapaino vaatii, enintään $\mu_0 N$. Siksi levossa olevan laatikon kitka saadaan liikeyhtälöstä $\Sigma F_x = 0$ eikä lepokitkakertoimesta.
+
+**Mallivastaus:** Liukuvat laatikot:
+
+$F_{\mu\text{A}} = \mu m_\text{A} g$
+
+$F_{\mu\text{A}} = 0{,}30 \cdot 20\,\text{kg} \cdot 9{,}81\,\text{m/s}^2$
+
+$F_{\mu\text{A}} \approx 58{,}9\,\text{N}$
+
+$F_{\mu\text{C}} = 0{,}45 \cdot 10\,\text{kg} \cdot 9{,}81\,\text{m/s}^2$
+
+$F_{\mu\text{C}} \approx 44{,}1\,\text{N}$
+
+Laatikko B ei liiku, joten vaakasuunnassa $F - F_{\mu\text{B}} = 0$ ja $F_{\mu\text{B}} = F = 30\,\text{N}$. Lepokitkan yläraja $\mu_0 m_\text{B} g \approx 196\,\text{N}$ ei ole kitkan arvo, vaan se kertoo vain, että laatikko pysyy paikallaan.
+
+Laatikko D on levossa rinteellä, joten rinteen suunnassa lepokitka kumoaa painon rinteen suuntaisen komponentin:
+
+$F_{\mu\text{D}} = m_\text{D} g \sin\alpha$
+
+$F_{\mu\text{D}} = 25\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot \sin 30^\circ$
+
+$F_{\mu\text{D}} \approx 123\,\text{N}$
+
+Yläraja on $\mu_0 m_\text{D} g \cos\alpha \approx 149\,\text{N}$, joten laatikko todella pysyy paikallaan.
+
+Kitkavoiman mukaan pienimmästä suurimpaan järjestys on B ($30\,\text{N}$), C ($44\,\text{N}$), A ($59\,\text{N}$), D ($1{,}2 \cdot 10^2\,\text{N}$). Jos laatikon B kitkaksi laskettaisiin virheellisesti $\mu_0 N$, se olisi suurin. Massan tai kitkakertoimen mukaan järjestys olisi myös eri, koska kitka riippuu sekä tukivoimasta että siitä, liukuuko laatikko.
+

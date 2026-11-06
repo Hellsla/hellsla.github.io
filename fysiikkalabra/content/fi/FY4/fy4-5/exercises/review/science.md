@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: d0a3da0eb8c360f9
+CONTENT-HASH: 177053466bf26f9c
 
 ## Blocking
 
 ## Polish
-- solutions.md:244–257 (L2-05) — the diagram is drawn for the first measurement (3,0 N, 2,5 N, 3,9 N at 39,8°), but the text does not say so. Add "(ensimmäinen mittaus)" to the Voimakuvio sentence.
-- solutions.md:291–304 (L2-07) — the diagram is in the table's plane, seen from above, so the weight and the support force are not in it. Say "ylhäältä katsottuna".
-- solutions.md:225 (L1-07) — G = N = 600 N is invented, because the mass is not given. Horizontal and vertical forces are drawn on separate scales ("eri mittakaavassa"), so no wrong ratio shows. If the spec could draw "equal, size unknown", that would be cleaner.
-- Carried from the previous round: L2-07 table friction; "Kuvaajan lukeminen" → "Taulukon lukeminen".
+- content/fi/FY4/fy4-5/exercises/exercises.json:153 (L1-09 option D) — now that v is blue, D can read as "C plus an allowed velocity arrow"; the error is that the arrow sits on the box and is drawn like a force (thick, filled head, from the face) — say so in the feedback ("nuoli lähtee laatikosta ja on piirretty voiman tavoin") and in the pick-nopeus description (lessons/FY4/fy4-5/figures.py:402: "paksu, umpikärkinen kuten voimat"), so a screen-reader user can tell it from a correct drawing too.
+- Carried from round 1: options A, B, D lack the F-to-G ratio sentence that C's description has; stem names option B's F_k error ("laatikon voima työntäjään"); label N on the box's top edge (visual's call); L2-05, L2-07, L1-07 and "Taulukon lukeminen" items.
 
 ## Checked
-- L1-07: F₁ 120 and F₂ 85 are pushes ending on the body, and F_μ 150 runs from the rear bottom corner along the floor. ΣF_x = 55 N forward, matching `a oikea` and the answer 55 N. G and N are equal. F_μ is longer than either push and shorter than their sum, as the text says (rendered lengths 175 : 125 : 220).
-- L2-05: arctan(2,5/3,0) = 39,8° and √(3,0² + 2,5²) = 3,91 N ≈ 3,9 N. The dashed components equal F_A and F_C in length, F_A points left, F_C down, F_B up to the right, and no weight is drawn (as the task states).
-- L2-07: F₁ + F₂ (60°) = (10,0; 6,93), with |Σ| = 12,17 N at 34,7°, so F₃ = 12,2 N at 214,7° closes the sum. The F₂ components are dashed. The table's 12,3 N is the measured value, and drawing the computed 12,2 N is right.
-- Every equation follows the drawn axes and signs. No velocity or acceleration is drawn as a force, and no component is double-counted.
-- The hash was d0a3da0eb8c360f9 at the start and at the end.
+- Round 2, delta since commit 5a93acbfc (packet generated in full mode; reviewed the change against the round-1 PASS): L1-09 option D figure and feedback only.
+- Figure from the code (SVG built in memory, not written): the velocity arrow uses VELOCITY #1971c2 (line, head, label), the four forces stay FORCE red; the description now says "sininen nopeuden nuoli v". Follows the house rule force red, velocity blue.
+- D is still unambiguously wrong: the taught rule (solutions L3-01, L2-06, L3-05; docs/force-diagrams.md) puts the thin blue v beside the diagram, never on the body, and YO 2025 marks velocity drawn on the body −5. D's arrow starts on the box face.
+- New D feedback is correct physics: velocity is not a force, has no cause, belongs beside the diagram. The correct option C's feedback is unchanged and gives no extra reason.
+- Distractors each keep one error (A push 2 × friction, B third-law partner on the box, D velocity drawn on the box); exactly one correct option.
+- answers.py run once: all 18 numeric answers within tolerance; the 3 multiple-choice tasks each have exactly one correct option.
+- Not re-rendered this round; checked from the code, the SVG text and the feedback.
+- Hash 177053466bf26f9c at the start and at the end.

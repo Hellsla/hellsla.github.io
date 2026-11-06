@@ -395,3 +395,14 @@ h_3 &= \tfrac12\cdot 2{,}397\,\tfrac{\text{m}}{\text{s}}\cdot 2{,}0\,\text{s} \\
 Korkeus on $h = 2{,}40\,\text{m} + 9{,}59\,\text{m} + 2{,}40\,\text{m} = 14{,}38\,\text{m}$.
 **Vastaus:** a) Voimakuvio ja yhtälö ovat yllä. b) $a_1 \approx 1{,}2\,\text{m/s}^2$ ylös, $a_2 \approx 0$ ja $a_3 \approx -1{,}2\,\text{m/s}^2$ eli kiihtyvyys alas. c) Kolmannessa vaiheessa kokonaisvoima osoittaa alas. Siksi köyden voima on painoa pienempi, vaikka nopeus osoittaa ylös. Kuorma hidastuu. Kiihtyvyyden suunta on kokonaisvoiman suunta. Se ei ole liikkeen suunta. d) $h \approx 14{,}4\,\text{m}$. Kahdella merkitsevällä numerolla se on $14\,\text{m}$ kuten massa $80\,\text{kg}$. Vastauslaatikkoon käy tarkempi arvo $14{,}4\,\text{m}$.
 **Järkevyys:** Tasaisessa vaiheessa köyden voima $785\,\text{N}$ on sama kuin paino $785\,\text{N}$, kuten pitää. Nopeuden muutokset kumoavat toisensa. Vaiheessa 3 nopeus pienenee $1{,}19\,\text{m/s}^2\cdot 2{,}0\,\text{s} = 2{,}38\,\text{m/s}$. Se on lähes koko nopeus $2{,}40\,\text{m/s}$, joten nosto päättyy levossa kuten tehtävässä. Korkeus on myös suurimman nopeuden ja ajan tulo. Kiihdytys- ja hidastusvaihe kattavat yhdessä saman matkan kuin tasainen nopeus ajassa $2{,}0\,\text{s}$. Siksi $h = v_\text{max}\cdot 6{,}0\,\text{s} = 2{,}397\,\text{m/s}\cdot 6{,}0\,\text{s} = 14{,}4\,\text{m}$.
+
+## fy4-5-L1-09
+**Kysytty:** mikä neljästä voimakuviosta esittää oikein ne voimat, jotka vaikuttavat vaakasuoralla lattialla tasaisella nopeudella työnnettävään laatikkoon.
+**Periaate:** Voimakuvioon piirretään vain valittuun kappaleeseen vaikuttavat voimat, ja jokaisella on aiheuttaja. Kun nopeus on vakio, kiihtyvyys on nolla. Silloin Newtonin toisen lain mukaan kokonaisvoima on nolla sekä vaaka- että pystysuunnassa.
+**Mallivastaus:** Oikea on voimakuvio C. Laatikko on vuorovaikutuksessa kolmen kappaleen kanssa. Maa vetää sitä alaspäin (paino $\overline{G}$, keskipisteestä). Lattia tukee sitä ylöspäin (tukivoima $\overline{N}$, alapinnasta) ja vastustaa liukumista (kitkavoima $\overline{F}_\mu$ vasemmalle, alapinnan kulmasta). Työntäjä työntää sitä oikealle (voima $\overline{F}$). Liikeyhtälöt ovat, kun $x$ osoittaa oikealle ja $y$ ylös:
+
+$x$: $F - F_\mu = 0$
+
+$y$: $N - G = 0$
+
+Siis $F = F_\mu$ ja $N = G$, joten vastakkaisten nuolten pitää olla yhtä pitkät, kuten kuviossa C. Kuviossa A työntövoima on kitkaa suurempi. Silloin kokonaisvoima osoittaisi oikealle ja laatikko kiihtyisi. Kuviossa B on ylimääräinen voima $\overline{F}_\text{k}$. Se on työntäjään vaikuttava vastavoima. Kuviossa D nopeus on piirretty voimaksi, vaikka sillä ei ole aiheuttajaa.

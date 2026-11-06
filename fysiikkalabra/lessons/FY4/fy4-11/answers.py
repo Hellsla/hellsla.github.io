@@ -38,6 +38,7 @@ a["fy4-11-L2-05"] = round(1 / (2 * k), 1)                # s_j = v0²/(2a) → s
 k = 25.0 / 20.0                                          # F_ka = mΔv · (1/Δt): line through the origin and (20,0 1/s; 25,0 kN), k = 1,25 kN·s
 a["fy4-11-L2-06"] = round(k * 1000 / 75.0 * 3.6, -1)     # Δv = 1250 N·s / 75,0 kg = 16,67 m/s = 60,0 km/h → 60
 a["fy4-11-L2-07"] = round(12.0 * (90 / 50) ** 2, 1)      # s_j ∝ v0²: 12,0 m · 1,8² = 38,88 m → 38,9 m (the student's 1,8 · 12,0 = 21,6 m is wrong)
+# L2-08 is multiple choice (prediction): F_ka = m Δv / Δt, Δv ×2 and Δt ×4 → F_ka ×0,50; no number
 tr, aw, dsee = 1.2, 5.1, 55.0                            # wet road fit of s_p/v = t_r + v/(2a): t_r = 1,2 s, a = 5,1 m/s²; sight distance 55 m
 vmax = -aw * tr + math.sqrt((aw * tr) ** 2 + 2 * aw * dsee)   # t_r v + v²/(2a) = d → v = 18,34 m/s
 a["fy4-11-L3-04"] = round(vmax * 3.6, 0)                 # 66,0 km/h → 66 (stopping distance at 80 km/h is 75 m > 55 m)

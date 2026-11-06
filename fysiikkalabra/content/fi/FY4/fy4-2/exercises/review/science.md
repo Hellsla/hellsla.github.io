@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 2aa6de8631579e57
+CONTENT-HASH: 8ae950d4924a8353
 
 ## Blocking
 
 ## Polish
-- exercises.json:69 (L1-06, option 4) — carried from round 1: "painon vastavoima, joka osoittaa ylöspäin" plants a wrong term (the normal force is not the reaction to the weight), and the feedback does not correct it. — Use a distractor with no force words, e.g. "Alaspäin, koska jarrutus painaa autoa tietä vasten".
-- solutions.md:136 (L1-07) — carried: "kolme merkitsevää numeroa, koska luetut arvot ovat tarkasti ruudukon viivoilla" contradicts L1-04, which gives 1,0 m/s² (two figures) from the same figure. — Give 23 m (22,5 m as the intermediate value), or justify the same way in both.
-- solutions.md:163 (L2-06) — carried: "kolme merkitsevää numeroa … hajonta rajoittaa … kahteen" contradicts itself; a quadratic fit gives 1,20. — Answer 1,2 m/s² (≈ 1,15).
-- solutions.md:191 (L3-05) — carried: the reasonableness check uses $g\sin\alpha$, which fy4-2 does not teach. — Mark it as a look ahead or drop it.
-- solutions.md:179 (L3-04, Vastaus) — carried: "128 m, kolme merkitsevää numeroa kuten nopeuksien muunnoksessa", but 36 km/h has two figures. — State ≈ 1,3·10² m (128 m as the intermediate value) or justify the third figure.
+- content/fi/FY4/fy4-2/exercises/exercises.json:281 (L2-08) — optional: no distractor touches this chapter's warned mistakes (a = 0 when v = 0; negative a always slowing); they test the s ∝ v₀²/|a| dependence, which suits this form. Keep as is or let the "Pysyy samana" feedback name the sign idea.
 
 ## Checked
-- Round 2. Round-1 Blocking item solutions.md:180 (L3-04, Järkevyys) is resolved: the sentence now reads "loppunopeudella 27,8 m/s koko ajan kuljettavan 222 m", and 27,8 m/s · 8,0 s = 222 m is the right upper bound for a car that is never faster than 27,8 m/s; 128 m < 222 m holds.
-- The other changes (exercises.json L2-05 and L3-03 text, solutions.md L2-07) are only the spelling "videoanalyysillä"; no data, answer or tolerance changed.
-- The round-1 recomputation of all 20 answers (L1-07 22,5 m; L2-05 0,84 m/s²; L2-06 1,15 m/s²; L3-04 128,3 m; L3-05 −0,81 m/s², 2,42 m/s, 2,99 s, 3,61 m) still holds, since no number in the set changed.
-- MC items L1-06, L1-08, L2-07: exactly one correct option each, as in round 1.
-- Scope, plan (8/7/5 = 20) and coherence with the existing tasks unchanged since round 1.
-- The hash was the same at the start and at the end.
+- Round 2 (commit 684926b76, full packet regenerated): "Esimerkkiarvot:" dropped; Periaate now says the area equals the braking distance because v stays positive (correct condition); the check s₂ = v₀t + ½at² split into v₀t = 32 m, ½a = −1,0 m/s², ½at² = −16 m, s₂ = 16 m, all recomputed and right; answers.py adds an assert (ratio 2) and the string answer, equal to the correct choice text.
+- L2-08 physics: s = v₀²/(2|a|) = 8,0 m and 16 m, t = 2,0 s and 4,0 s; sign choice consistent; magnitudes realistic for a bicycle. Exactly one correct option; each distractor's feedback says why it is wrong; the correct option is not identifiable by form and its feedback adds only times and distances.
+- Scope: triangle area under (t,v) and x − x₀ = v₀t + ½at², both taught in this chapter.
+- Solution complete, symbolic first, real check with the second formula; notation as in the lesson.
+- All 21 answers: answers.py run once (python -I, exit 0, asserts pass) and compared: numeric answers within tolerance, string answers (L1-06, L1-08, L2-07, L2-08) equal their exercises.json answers; every MC task has exactly one correct choice.
+- Inline formulas (text only, not rendered): after the split, the longest line is ½at² = −1,0 m/s² · (4,0 s)² (≈ 200 px), under 300 px at 390 px; the 360 px layout check passed.
+- Hash identical at start and end.

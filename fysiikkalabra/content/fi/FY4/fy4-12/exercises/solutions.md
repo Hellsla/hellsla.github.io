@@ -175,6 +175,35 @@
 **Vastaus:** Suurin välimatka on $36\,\text{m}$, ja se on hetkellä $6{,}0\,\text{s}$. Kaksi merkitsevää numeroa kuten nopeuksissa.
 **Järkevyys:** Paikkojen erotuksesta: A on paikassa $12{,}0\,\text{m/s} \cdot 6{,}0\,\text{s} = 72\,\text{m}$ ja B paikassa $\tfrac12 \cdot 2{,}0\,\text{m/s}^2 \cdot (6{,}0\,\text{s})^2 = 36\,\text{m}$, joten ero on $36\,\text{m}$. Hetkillä $4{,}0\,\text{s}$ ja $8{,}0\,\text{s}$ ero on kummallakin $32\,\text{m}$, joten $36\,\text{m}$ on suurin.
 
+## fy4-12-L2-08
+**Kysytty:** mikä neljästä $(t,v)$-kuvaajasta esittää auton A ja mopon B nopeudet välillä $0 \le t \le 10\,\text{s}$, kun auto hidastaa nopeudesta $20\,\text{m/s}$ hidastuvuudella $2{,}0\,\text{m/s}^2$ ja mopo ajaa tasaisesti nopeudella $12\,\text{m/s}$
+**Periaate:** Mopon liike on tasaista, joten sen $(t,v)$-kuvaaja on vaakasuora suora. Auton hidastuvuus on vakio, joten sen nopeus pienenee joka sekunti saman verran, $v = v_0 + a\,t$, ja kuvaaja on laskeva suora. Positiivinen suunta on kulkusuunta, joten auton kiihtyvyys on $a = -2{,}0\,\text{m/s}^2$. Nopeuskuvaajien leikkauspiste on hetki, jolloin nopeudet ovat yhtä suuret, ei kohtaamishetki.
+**Mallivastaus:** Oikea on kuvaaja 3. Auton nopeus on
+
+$v_\text{A} = v_{0\text{A}} + a\,t$
+
+$v_\text{A} = 20\,\text{m/s} - 2{,}0\,\text{m/s}^2 \cdot t$
+
+Auto pysähtyy, kun $v_\text{A} = 0$:
+
+$t = \dfrac{20\,\text{m/s}}{2{,}0\,\text{m/s}^2}$, eli $t = 10\,\text{s}$
+
+Nopeudet ovat yhtä suuret, kun $v_\text{A} = 12\,\text{m/s}$:
+
+$t = \dfrac{20\,\text{m/s} - 12\,\text{m/s}}{2{,}0\,\text{m/s}^2}$, eli $t = 4{,}0\,\text{s}$
+
+Kuvaaja 3 kulkee pisteiden $(0;\ 20\,\text{m/s})$, $(4{,}0\,\text{s};\ 12\,\text{m/s})$ ja $(10\,\text{s};\ 0)$ kautta. Kohtaaminen hetkellä $8{,}0\,\text{s}$ ei näy nopeuskuvaajan leikkauspisteenä. Tarkistus paikoista hetkellä $t = 8{,}0\,\text{s}$:
+
+$x_\text{A} = v_{0\text{A}}\,t + \tfrac{1}{2}\,a\,t^2$
+
+$x_\text{A} = 160\,\text{m} - 64\,\text{m}$, eli $x_\text{A} = 96\,\text{m}$
+
+$x_\text{B} = 12\,\text{m/s} \cdot 8{,}0\,\text{s}$, eli $x_\text{B} = 96\,\text{m}$
+
+Kuvaajassa 2 leikkaus on hetkellä $8{,}0\,\text{s}$, mikä sekoittaa saman nopeuden ja kohtaamisen. Kuvaajassa 1 nopeus pienenee kaarevasti, vaikka tasaisesti hidastuvan nopeus on suora. Kuvaajassa 4 auto alkaa mopon nopeudella, ikään kuin sama paikka tarkoittaisi samaa nopeutta.
+
+**Kuvaajan lukeminen:** Jokaisesta kuvaajasta luetaan auton nopeus hetkillä $0$, $4\,\text{s}$ ja $10\,\text{s}$ sekä mopon vaakasuoran suoran korkeus. Vain kuvaajassa 3 auton suora alkaa arvosta $20\,\text{m/s}$, leikkaa mopon suoran $12\,\text{m/s}$ hetkellä $4\,\text{s}$ ja päättyy nollaan hetkellä $10\,\text{s}$.
+
 ## fy4-12-L3-04
 **Annettu:** molemmat $v_0 = 20\,\text{m/s}$; kuorma-auton pituus $L_\text{k} = 12\,\text{m}$, henkilöauton pituus $L_\text{h} = 5{,}0\,\text{m}$, alkuväli (etupää – takapää) $10\,\text{m}$; henkilöauton kiihtyvyys $a = 1{,}5\,\text{m/s}^2$; vastaantulevan nopeus $v_\text{v} = 20\,\text{m/s}$; nopeusrajoitus $80\,\text{km/h}$
 **Kysytty:** ohituksen kesto $t$ ja matka $s_\text{h}$; pienin etäisyys $d$ yksikössä $\text{m}$; loppunopeus rajoitukseen verrattuna

@@ -111,6 +111,45 @@
           "feedback": "Tukivoima on kohtisuorassa lankkua vastaan. Se ei kumoa kitkaa, joka on lankun suuntainen. Kitka tekee työtä, koska laatikko liikkuu."
         }
       ]
+    },
+    {
+      "id": "fy4-8-L1-09",
+      "level": 1,
+      "text": "Vuoristoradan vaunun massa matkustajineen on $400\\,\\text{kg}$. Vaunu lähtee levosta $20\\,\\text{m}$:n korkeudelta. Se laskee laakson pohjalle, jonka korkeus on $0\\,\\text{m}$. Sitten se nousee mäen huipulle $12\\,\\text{m}$:n korkeudelle. Kitkaa ja ilmanvastusta ei oteta huomioon. Luvut ovat esimerkkiarvoja.\n\nPäättele, mitkä väitteet ovat tosia ja mitkä epätosia.",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "1 tosi, 2 epätosi, 3 tosi, 4 epätosi, 5 epätosi",
+      "unit": "",
+      "tolerance": 0.02,
+      "statements": [
+        {
+          "text": "Laakson pohjalla vaunun nopeus on noin $20\\,\\text{m/s}$.",
+          "true": true,
+          "feedback": "Oikein: mekaaninen energia säilyy eli pysyy samana. Siksi $mgh = \\tfrac12 mv^2$ ja $v = \\sqrt{2gh}$. Kun $h = 20\\,\\text{m}$, nopeus on $v \\approx 19{,}8\\,\\text{m/s}$."
+        },
+        {
+          "text": "Jos vaunussa olisi enemmän matkustajia, se olisi laakson pohjalla nopeampi.",
+          "true": false,
+          "feedback": "Väärin: raskaammalla vaunulla on pohjalla enemmän liike-energiaa. Sillä oli kuitenkin alussa myös enemmän potentiaalienergiaa. Massa supistuu pois, ja $v = \\sqrt{2gh}$ on sama."
+        },
+        {
+          "text": "Radan tukivoima ei tee työtä vaunuun missään radan kohdassa.",
+          "true": true,
+          "feedback": "Oikein: tukivoima on kohtisuorassa radan pintaa vastaan, joten se on kohtisuorassa myös liikettä vastaan. Sen liikkeen suuntainen komponentti on nolla, ja työ on $W = F_\\parallel s = 0$."
+        },
+        {
+          "text": "Mäen huipulla $12\\,\\text{m}$:n korkeudella vaunun liike-energia on nolla.",
+          "true": false,
+          "feedback": "Väärin: vaunu lähti korkeammalta, joten sillä on huipulla liike-energiaa $mg(20\\,\\text{m} - 12\\,\\text{m})$. Se on noin $31\\,\\text{kJ}$. Vaunu pysähtyisi vasta $20\\,\\text{m}$:n korkeudella."
+        },
+        {
+          "text": "Jos radalla olisi kitkaa, vaunun ja sen ympäristön kokonaisenergia pienenisi.",
+          "true": false,
+          "feedback": "Väärin: kitka pienentää vaunun mekaanista energiaa. Yhtä suuri määrä energiaa siirtyy kuitenkin radan, pyörien ja ilman sisäenergiaksi. Kokonaisenergia säilyy."
+        }
+      ]
     }
   ],
   "level2": [

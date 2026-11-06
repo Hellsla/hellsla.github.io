@@ -265,6 +265,41 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy4-12-L2-08",
+      "level": 2,
+      "kind": [
+        "graph",
+        "concept"
+      ],
+      "text": "At the moment $t = 0$, car A and moped B are side by side on a straight road and move in the same direction. The speed of the car is $20\\,\\text{m/s}$, and it decelerates uniformly with a deceleration of $2.0\\,\\text{m/s}^2$ until it stops. The moped moves at a constant speed of $12\\,\\text{m/s}$. The moped catches up with the car at the moment $t = 8.0\\,\\text{s}$.\n\nWhich graph shows the velocities of the car and the moped as functions of time for $0 \\le t \\le 10\\,\\text{s}$?",
+      "answer": "Graph 3",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Graph 1",
+          "figure": "fy4-12/pick-kaari",
+          "feedback": "Here the velocity of the car decreases along a curve. In uniformly decelerating motion the velocity decreases by the same amount every second, $2.0\\,\\text{m/s}$, so the $(t,v)$ graph is a straight line. A curve is the $(t,x)$ graph of uniformly accelerating motion."
+        },
+        {
+          "text": "Graph 2",
+          "figure": "fy4-12/pick-kohtaus",
+          "feedback": "Here the velocity graphs intersect at the moment $8.0\\,\\text{s}$, when the moped catches up with the car. The intersection of $(t,v)$ graphs is the moment when the velocities are equal, not the meeting. Also, here the velocity of the car decreases by only $1.0\\,\\text{m/s}$ per second."
+        },
+        {
+          "text": "Graph 3",
+          "figure": "fy4-12/pick-oikea",
+          "correct": true,
+          "feedback": "Correct: the velocity of the car is $v_\\text{A} = 20\\,\\text{m/s} - 2.0\\,\\text{m/s}^2 \\cdot t$, so it is zero at the moment $10\\,\\text{s}$. The velocity of the moped stays at $12\\,\\text{m/s}$, and the lines intersect at the moment $4.0\\,\\text{s}$."
+        },
+        {
+          "text": "Graph 4",
+          "figure": "fy4-12/pick-alku",
+          "feedback": "Here the car and the moped start with the same velocity, as if bodies side by side had the same velocity. The same place does not mean the same velocity: at the start the velocity of the car is $20\\,\\text{m/s}$ and that of the moped $12\\,\\text{m/s}$."
+        }
+      ]
     }
   ],
   "level3": [

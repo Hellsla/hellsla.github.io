@@ -296,3 +296,19 @@ E_1' - E_5' &= 1597\,\text{J}
 Erotus on sama, koska nollatason valinta lisää molempiin mekaanisiin energioihin saman luvun, joka supistuu erotuksesta pois.
 **Vastaus:** $1{,}6\,\text{kJ}$, kaksi merkitsevää numeroa kuten massassa $48\,\text{kg}$.
 **Järkevyys:** Jos mekaaninen energia säilyisi, pisteen 5 nopeus olisi noin $17{,}8\,\text{m/s}$, ja mitattu $15{,}8\,\text{m/s}$ on sitä pienempi. Muuttunut energia on noin $19\,\%$ alkuperäisestä $8530\,\text{J}$:sta, mikä on kohtuullinen osuus pulkkamäelle.
+
+## fy4-7-L1-09
+**Kysytty:** minkä neljästä lausekkeesta yksikkö on joule $\text{J}$.
+**Periaate:** Lausekkeen yksikkö saadaan sijoittamalla jokaisen suureen paikalle sen yksikkö: $m$ ($\text{kg}$), $G$ ($\text{N}$), $v$ ($\text{m/s}$), $h$ ($\text{m}$) ja $g$ ($\text{m/s}^2$). Energian yksikkö on $\text{J} = \text{N}\cdot\text{m} = \text{kg}\cdot\text{m}^2/\text{s}^2$, ja $\text{N} = \text{kg}\cdot\text{m/s}^2$. Lukukerroin $\tfrac12$ ei vaikuta yksikköön.
+**Mallivastaus:** Oikea on $\dfrac{G v^2}{2g}$. Lausekkeiden yksiköt:
+
+$\tfrac{1}{2}\,m v$: $\text{kg}\cdot\dfrac{\text{m}}{\text{s}}$, ei joule
+
+$\dfrac{G v^2}{2g}$: $\dfrac{\text{N}\cdot\text{m}^2/\text{s}^2}{\text{m/s}^2} = \text{N}\cdot\text{m} = \text{J}$
+
+$G g h$: $\text{N}\cdot\dfrac{\text{m}}{\text{s}^2}\cdot\text{m} = \text{J}\cdot\dfrac{\text{m}}{\text{s}^2}$
+
+$\dfrac{v^2}{2g}$: $\dfrac{\text{m}^2/\text{s}^2}{\text{m/s}^2} = \text{m}$
+
+Vain lausekkeen $\dfrac{G v^2}{2g}$ yksikkö on joule. Se on liike-energia toisin kirjoitettuna: kun painon paikalle sijoitetaan $G = mg$, $g$ supistuu pois ja jäljelle jää liike-energia $E_\text{k} = \tfrac12 m v^2$. Lausekkeen $\tfrac{1}{2}\,m v$ yksikkö on $\text{kg}\cdot\text{m/s}$: siinä nopeus on ensimmäisessä potenssissa, vaikka liike-energia on verrannollinen nopeuden neliöön. Lauseke $\dfrac{v^2}{2g}$ on korkeus, jolle kitkaton kappale nousee nopeudesta $v$. Lausekkeessa $G g h$ paino on kirjoitettu massan paikalle, joten $g$ tulee kahteen kertaan; oikein $E_\text{p} = mgh = Gh$.
+

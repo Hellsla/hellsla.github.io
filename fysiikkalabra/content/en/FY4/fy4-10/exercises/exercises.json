@@ -227,6 +227,41 @@
       "answer": 0.5,
       "unit": "m/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-10-L2-08",
+      "level": 2,
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "text": "On an air track, cart A of mass $0.30\\,\\text{kg}$ moves to the right at $0.80\\,\\text{m/s}$ and collides with cart B of mass $0.50\\,\\text{kg}$, which is at rest. After the collision A bounces back to the left at $0.20\\,\\text{m/s}$. Friction is neglected. A student calculates the velocity of cart B after the collision, with right as the positive direction.\n\nLine 1: the momentum before is $m_\\text{A} v_\\text{A} = 0.30\\,\\text{kg} \\cdot 0.80\\,\\text{m/s}$, that is $0.24\\,\\text{kg}\\cdot\\text{m/s}$.\n\nLine 2: since B is at rest at first, $m_\\text{A} v_\\text{A} = m_\\text{A} v_\\text{A}' + m_\\text{B} v_\\text{B}'$.\n\nLine 3: $v_\\text{A}' = 0.20\\,\\text{m/s}$, so $m_\\text{A} v_\\text{A}' = 0.060\\,\\text{kg}\\cdot\\text{m/s}$.\n\nLine 4: $v_\\text{B}' = \\dfrac{0.24 - 0.060}{0.50}\\,\\text{m/s}$, that is $v_\\text{B}' = 0.36\\,\\text{m/s}$.\n\nWhich line is wrong? If there is no error in the calculation, choose the last option.",
+      "answer": "Line 3: the velocity of cart A after the collision",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Line 1: the momentum before the collision",
+          "feedback": "Line 1 is correct: A moves in the positive direction, and the momentum of B, which is at rest, is zero, so the total momentum is $0.24\\,\\text{kg}\\cdot\\text{m/s}$. If you think the line is wrong, you are thinking that a cart at rest also has momentum."
+        },
+        {
+          "text": "Line 2: the equation of the conservation law",
+          "feedback": "Line 2 is correct: the impulse of the external forces is negligible, so the total momentum is conserved, and the term of B before the collision is zero. If you think the line is wrong, you are thinking that kinetic energy and not momentum should be used for a bounce."
+        },
+        {
+          "text": "Line 3: the velocity of cart A after the collision",
+          "correct": true,
+          "feedback": "Correct, this line is wrong: after the collision A moves to the left, that is in the negative direction, so $v_\\text{A}' = -0.20\\,\\text{m/s}$ and $m_\\text{A} v_\\text{A}' = -0.060\\,\\text{kg}\\cdot\\text{m/s}$. Calculated correctly, $v_\\text{B}' = 0.60\\,\\text{m/s}$."
+        },
+        {
+          "text": "Line 4: solving for the velocity of cart B",
+          "feedback": "Line 4 solves the equation of line 2 correctly: $m_\\text{A} v_\\text{A}'$ is moved to the other side with a minus sign and divided by the mass $m_\\text{B}$. If you think the line is wrong, you are thinking that the minus sign should be a plus sign, although the sign of the bounce belongs to the velocity $v_\\text{A}'$ on line 3."
+        },
+        {
+          "text": "There is no error in the calculation",
+          "feedback": "There is an error in the calculation. The result cannot be right: when A bounces backwards, the momentum of B must be greater than the total momentum $0.24\\,\\text{kg}\\cdot\\text{m/s}$, but $0.50\\,\\text{kg} \\cdot 0.36\\,\\text{m/s}$ is only $0.18\\,\\text{kg}\\cdot\\text{m/s}$."
+        }
+      ]
     }
   ],
   "level3": [

@@ -252,6 +252,53 @@
       "unit": "m/s²",
       "tolerance": 0.02,
       "fbd": "equations"
+    },
+    {
+      "id": "fy4-13-L2-08",
+      "level": 2,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "Kitkattomalla pöydällä on kärry, jonka massa on $1{,}6\\,\\text{kg}$. Siihen sidottu kevyt ja venymätön lanka kulkee pöydän reunalla olevan kevyen ja kitkattoman väkipyörän yli, ja langan päässä roikkuu punnus, jonka massa on $0{,}40\\,\\text{kg}$. Kappaleet päästetään liikkeelle levosta, ja ilmanvastus jätetään huomiotta.\n\nSitten koe tehdään toisin päin: pöydällä on $0{,}40\\,\\text{kg}$:n kärry ja langan päässä roikkuu $1{,}6\\,\\text{kg}$:n punnus. Miten langan jännitysvoima $T$ muuttuu, kun toista koetta verrataan ensimmäiseen?",
+      "answer": "Jännitysvoima pysyy ennallaan.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Jännitysvoima nelinkertaistuu.",
+          "feedback": "Tässä jännitysvoima on oletettu riippuvan punnuksen painoksi, joka kasvaa nelinkertaiseksi. Kun kappaleet kiihtyvät, punnuksen kokonaisvoima osoittaa alas, joten $T$ on pienempi kuin punnuksen paino."
+        },
+        {
+          "text": "Jännitysvoima pysyy ennallaan.",
+          "correct": true,
+          "feedback": "Oikein: kun jännitysvoima lasketaan kummassakin kokeessa liikeyhtälöistä, tulos on sama, $T \\approx 3{,}1\\,\\text{N}$. Valitse seuraavaksi perustelu, joka selittää, miksi massojen vaihto ei muuta sitä."
+        },
+        {
+          "text": "Jännitysvoima pienenee neljäsosaan.",
+          "feedback": "Tässä kiihtyvyys on oletettu samaksi, koska kokonaismassa ei muutu, ja $T = m_1 a$ on pienennetty kärryn massan mukana. Kiihtyvyys kuitenkin nelinkertaistuu, koska riippuvan punnuksen paino nelinkertaistuu."
+        }
+      ],
+      "reason_prompt": "Mikä perustelu selittää vastauksesi?",
+      "reasons": [
+        {
+          "text": "Lanka kannattelee riippuvaa punnusta, joten jännitysvoima on punnuksen paino, $T = m_2 g$.",
+          "feedback": "Tämä on luvun yleinen virhekäsitys. Vain levossa $T = m_2 g$. Kun punnus laskee kiihtyen, $m_2 g - T = m_2 a$ on positiivinen, joten $T < m_2 g$ molemmissa kokeissa."
+        },
+        {
+          "text": "Kokonaismassa ei muutu, joten kiihtyvyys ei muutu, ja $T = m_1 a$ seuraa kärryn massaa.",
+          "feedback": "Kokonaismassa on sama, mutta systeemiä kiihdyttää riippuvan punnuksen paino $m_2 g$, ja se nelinkertaistuu. Siksi $a$ nelinkertaistuu samalla, kun $m_1$ pienenee neljäsosaan."
+        },
+        {
+          "text": "Kaavassa $T = \\tfrac{m_1 m_2}{m_1 + m_2}\\,g$ massojen tulo ja summa pysyvät samoina vaihdossa.",
+          "correct": true,
+          "feedback": "Oikein: tulo $m_1 m_2 = 0{,}64\\,\\text{kg}^2$ ja summa $m_1 + m_2 = 2{,}0\\,\\text{kg}$ ovat kummassakin kokeessa samat."
+        },
+        {
+          "text": "Lanka on venymätön, joten kärryllä ja punnuksella on sama kiihtyvyyden suuruus $a$.",
+          "feedback": "Väite on tosi, mutta se ei selitä vastausta. Sama kiihtyvyys pätee kummassakin kokeessa, eikä se kerro, miten $T$ muuttuu, kun massat vaihdetaan."
+        }
+      ]
     }
   ],
   "level3": [

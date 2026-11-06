@@ -35,4 +35,5 @@ a["fy4-4-L3-04"] = 2.0 - 0.41 / k                  # a = 0 at F = F_μ: F_μ = 2
 vmax = 1.0 * 3.0                                   # phase 1: v = a Δt = 3,0 m/s
 a3 = (0 - vmax) / (13.0 - 9.0)                     # phase 3 stops in 4,0 s: a = −0,75 m/s²
 a["fy4-4-L3-05"] = 70 * (g + a3)                   # N − mg = ma → N = m(g + a) = 634,2 N
+assert abs((45 - 9.0) / 18 - 2.0) < 1e-12           # fy4-4-L2-08 is multiple choice (error in row 4): a = 36 N / 18 kg = 2,0 m/s²
 print(json.dumps(a))

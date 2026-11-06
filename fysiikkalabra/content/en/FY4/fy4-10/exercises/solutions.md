@@ -182,6 +182,25 @@ c) The kinetic energy before is $\tfrac12 \cdot 0.40 \cdot 0.51^2\,\text{J} = 0.
 **Reasonableness:** The momentum of the cart moving to the right, $0.48\,\text{kg}\cdot\text{m/s}$, is greater than that of the cart moving to the left, $0.08\,\text{kg}\cdot\text{m/s}$, so the carts continue to the right and the total momentum is $0.40\,\text{kg}\cdot\text{m/s}$. The result is smaller than the initial velocity of the heavier cart, as it should be, because the motion in the opposite direction slows the common motion.
 **Model answer on the error:** The student forgot the sign of the velocity of the cart moving to the left and calculated its momentum as positive, although the cart moves in the direction opposite to the positive direction. So the momenta were added together, although they should partly cancel each other. The correct calculation is $0.48 - 0.08 = 0.40$, not $0.48 + 0.08 = 0.56$. The student's result is too large, and it would correspond to a situation in which both carts move to the right.
 
+## fy4-10-L2-08
+**Find:** which line of the student's calculation is wrong, when the velocity $v_\text{B}'$ of cart B after the collision is calculated and right is the positive direction
+**Principle:** Friction is neglected, and the weight and the normal force of the track cancel each other, so the total momentum of the carts is conserved in the collision. In one dimension every velocity is a signed number: the velocity and the momentum of a cart moving to the left, that is in the negative direction, are negative. The calculation can be checked line by line: the momentum before, the equation, the signs of the velocities and the solving.
+**Model answer:** Line 1 is correct: $m_\text{A} v_\text{A} = 0.24\,\text{kg}\cdot\text{m/s}$, and the momentum of B, which is at rest, is zero.
+
+Line 2 is correct: it is the conservation law $m_\text{A} v_\text{A} + m_\text{B} v_\text{B} = m_\text{A} v_\text{A}' + m_\text{B} v_\text{B}'$ when $v_\text{B} = 0$.
+
+Line 3 is wrong. A bounces to the left, so $v_\text{A}' = -0.20\,\text{m/s}$.
+
+$m_\text{A} v_\text{A}' = 0.30\,\text{kg} \cdot (-0.20\,\text{m/s})$, that is $m_\text{A} v_\text{A}' = -0.060\,\text{kg}\cdot\text{m/s}$
+
+Line 4 solves the equation correctly, but it takes the wrong number from line 3. Substituted correctly:
+
+$v_\text{B}' = \dfrac{m_\text{A} v_\text{A} - m_\text{A} v_\text{A}'}{m_\text{B}}$
+
+$v_\text{B}' = \dfrac{0.24 - (-0.060)}{0.50}\,\text{m/s}$, that is $v_\text{B}' = 0.60\,\text{m/s}$
+
+The correct answer is line 3. Check: when A bounces backwards, the momentum of B must be greater than the total momentum $0.24\,\text{kg}\cdot\text{m/s}$. With the correct result it is $0.50\,\text{kg} \cdot 0.60\,\text{m/s} = 0.30\,\text{kg}\cdot\text{m/s}$, and with the student's result only $0.18\,\text{kg}\cdot\text{m/s}$, which is impossible.
+
 ## fy4-10-L3-04
 **Given:** $m_\text{A} = 1100\,\text{kg}$, $m_\text{B} = 1400\,\text{kg}$, $v_\text{B} = 0$, sliding distance $s = 8.0\,\text{m}$, $\mu = 0.60$, $g = 9.81\,\text{m/s}^2$, speed limit $50\,\text{km/h}$
 **Find:** the velocity of car A before the collision $v_\text{A}$ in $\text{km/h}$ and a conclusion about the claim

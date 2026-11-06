@@ -227,6 +227,41 @@
    "answer": 0.5,
    "unit": "m/s",
    "tolerance": 0.02
+  },
+  {
+   "id": "fy4-10-L2-08",
+   "level": 2,
+   "kind": [
+    "error",
+    "reasoning"
+   ],
+   "text": "Ilmatyynyradalla vaunu A, jonka massa on $0{,}30\\,\\text{kg}$, liikkuu oikealle nopeudella $0{,}80\\,\\text{m/s}$ ja törmää levossa olevaan vaunuun B, jonka massa on $0{,}50\\,\\text{kg}$. Törmäyksen jälkeen A kimpoaa takaisin vasemmalle nopeudella $0{,}20\\,\\text{m/s}$. Kitka jätetään huomiotta. Oppilas laskee vaunun B nopeuden törmäyksen jälkeen, kun oikealle on positiivinen suunta.\n\nRivi 1: liikemäärä ennen on $m_\\text{A} v_\\text{A} = 0{,}30\\,\\text{kg} \\cdot 0{,}80\\,\\text{m/s}$, eli $0{,}24\\,\\text{kg}\\cdot\\text{m/s}$.\n\nRivi 2: koska B on aluksi levossa, $m_\\text{A} v_\\text{A} = m_\\text{A} v_\\text{A}' + m_\\text{B} v_\\text{B}'$.\n\nRivi 3: $v_\\text{A}' = 0{,}20\\,\\text{m/s}$, joten $m_\\text{A} v_\\text{A}' = 0{,}060\\,\\text{kg}\\cdot\\text{m/s}$.\n\nRivi 4: $v_\\text{B}' = \\dfrac{0{,}24 - 0{,}060}{0{,}50}\\,\\text{m/s}$, eli $v_\\text{B}' = 0{,}36\\,\\text{m/s}$.\n\nMikä rivi on väärin? Jos laskussa ei ole virhettä, valitse viimeinen vaihtoehto.",
+   "answer": "Rivi 3: vaunun A nopeus törmäyksen jälkeen",
+   "unit": "",
+   "tolerance": 0.02,
+   "choices": [
+    {
+     "text": "Rivi 1: liikemäärä ennen törmäystä",
+     "feedback": "Rivi 1 on oikein: A liikkuu positiiviseen suuntaan, ja levossa olevan B:n liikemäärä on nolla, joten kokonaisliikemäärä on $0{,}24\\,\\text{kg}\\cdot\\text{m/s}$. Jos rivin luulee virheelliseksi, ajattelee, että myös levossa olevalla vaunulla olisi liikemäärää."
+    },
+    {
+     "text": "Rivi 2: säilymislain yhtälö",
+     "feedback": "Rivi 2 on oikein: ulkoisten voimien impulssi on merkityksetön, joten kokonaisliikemäärä säilyy, ja B:n termi ennen on nolla. Jos rivin luulee virheelliseksi, ajattelee, että kimpoamisessa pitäisi käyttää liike-energiaa eikä liikemäärää."
+    },
+    {
+     "text": "Rivi 3: vaunun A nopeus törmäyksen jälkeen",
+     "correct": true,
+     "feedback": "Oikein, tämä rivi on väärin: A liikkuu törmäyksen jälkeen vasemmalle eli negatiiviseen suuntaan, joten $v_\\text{A}' = -0{,}20\\,\\text{m/s}$ ja $m_\\text{A} v_\\text{A}' = -0{,}060\\,\\text{kg}\\cdot\\text{m/s}$. Oikein laskettuna $v_\\text{B}' = 0{,}60\\,\\text{m/s}$."
+    },
+    {
+     "text": "Rivi 4: vaunun B nopeuden ratkaiseminen",
+     "feedback": "Rivi 4 ratkaisee rivin 2 yhtälön oikein: $m_\\text{A} v_\\text{A}'$ siirretään toiselle puolelle miinusmerkkisenä ja jaetaan massalla $m_\\text{B}$. Jos rivin luulee virheelliseksi, ajattelee, että miinusmerkin pitäisi olla plusmerkki, vaikka kimpoamisen etumerkki kuuluu nopeuteen $v_\\text{A}'$ rivillä 3."
+    },
+    {
+     "text": "Laskussa ei ole virhettä",
+     "feedback": "Laskussa on virhe. Tulos ei voi pitää paikkaansa: kun A kimpoaa taaksepäin, B:n liikemäärän on oltava suurempi kuin kokonaisliikemäärä $0{,}24\\,\\text{kg}\\cdot\\text{m/s}$, mutta $0{,}50\\,\\text{kg} \\cdot 0{,}36\\,\\text{m/s}$ on vain $0{,}18\\,\\text{kg}\\cdot\\text{m/s}$."
+    }
+   ]
   }
  ],
  "level3": [

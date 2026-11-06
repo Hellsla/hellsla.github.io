@@ -24,6 +24,7 @@ a["fy4-12-L1-07"] = 7.0 * 3.0 / (7.0 - 4.0)          # A 4,0 m/s from t = 0, B 7
 a["fy4-12-L2-05"] = (45.0 - 3.0) / ((20.4 - 3.0) / 5.0 - (32.4 - 45.0) / 5.0)   # table ends: v_A = 3,48 m/s, v_B = −2,52 m/s: t = 42,0 m / 6,00 m/s = 7,0 s
 a["fy4-12-L2-06"] = (4.0 + math.sqrt(4.0 ** 2 + 2 * 2.0 * 12)) / 2.0   # error task: a t²/2 = 12 + 4,0 t, t = (4,0 + √64) / 2,0 = 6,0 s (not v = a t: 2,0 s)
 a["fy4-12-L2-07"] = 0.5 * (12.0 / 2.0) * 12.0        # table: v_B = 2,0 m/s² t, equal speeds 12,0 m/s at t = 6,0 s; gap = triangle ½ · 6,0 s · 12,0 m/s = 36 m
+# L2-08 is multiple choice (graph choice): v_A = 20 − 2,0 t, at rest at 10 s, equal speeds at 4,0 s, meeting 20t − t² = 12t at 8,0 s; no number
 # Level 3 additions
 v_kk = 20.0; s_rel = 10 + 12 + 5.0; a_h = 1.5
 t_o = math.sqrt(2 * s_rel / a_h)                      # overtaking: ½ a t² = 10 + 12 + 5,0 = 27 m, t = 6,0 s
