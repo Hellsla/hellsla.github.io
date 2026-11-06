@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 8072c719837decea
+CONTENT-HASH: a47358c440f52073
+Mode: full (translation review against the reviewed Finnish set)
 
 ## Blocking
-
-## Polish
-- None.
+(none)
 
 ## Fixed
-- No text change needed in this translation.
+(see science.md)
+
+## Polish
+(none)
 
 ## Checked
-- fy4-3-L2-08: task text, hints toward the method, distractor feedback and solution say the same as the Finnish and name each misconception; natural English, decimal point (6.0, 1.2), terms consistent.
-- Feedback repairs the misconception (names the error) and does not only restate the answer; no answer is disclosed in the task text.
-- Terms used consistently (interaction, third law, force and reaction force); no Finnish left in the translated text.
+Concept+reason task keeps the Finnish structure and distractor feedback; subscript key now in the task; natural English.

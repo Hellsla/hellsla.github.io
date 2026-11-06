@@ -243,7 +243,7 @@
           "feedback": "The result comes from calculating the power as proportional to the speed $v$. Then only the mass of air flowing through the rotor per second, $\\rho A v$, is included, but the kinetic energy of a kilogram of air, $\\tfrac{1}{2}v^2$, also grows with the speed, so $P \\propto v^3$. When the speed is $10\\,\\text{m/s}$, the value $10^3$ is $100$ times $10$."
         },
         {
-          "text": "$0{,}2\\,\\text{MW}$",
+          "text": "$0.2\\,\\text{MW}$",
           "feedback": "The result comes from calculating the power as proportional to the square $v^2$. Then only the kinetic energy of a kilogram of air, $\\tfrac{1}{2}v^2$, is included, but the mass of air flowing through the rotor per second, $\\rho A v$, also grows with the speed, so $P \\propto v^3$."
         },
         {

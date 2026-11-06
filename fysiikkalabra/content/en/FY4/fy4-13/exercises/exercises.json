@@ -267,7 +267,7 @@
       "choices": [
         {
           "text": "The tension becomes four times as large.",
-          "feedback": "Here the tension has been assumed to depend on the weight of the hanging mass, which becomes four times as large. When the objects accelerate, the net force on the weight points down, so $T$ is smaller than the weight of the weight."
+          "feedback": "Here the tension has been assumed to depend on the weight of the hanging mass, which becomes four times as large. When the objects accelerate, the net force on the hanging mass points down, so $T$ is smaller than the weight of the hanging mass."
         },
         {
           "text": "The tension stays the same.",
@@ -282,8 +282,8 @@
       "reason_prompt": "Which reason explains your answer?",
       "reasons": [
         {
-          "text": "The string supports the hanging weight, so the tension is the weight of the weight, $T = m_2 g$.",
-          "feedback": "This is a common misconception in the chapter. Only at rest is $T = m_2 g$. When the weight goes down accelerating, $m_2 g - T = m_2 a$ is positive, so $T < m_2 g$ in both experiments."
+          "text": "The string supports the hanging mass, so the tension equals its weight, $T = m_2 g$.",
+          "feedback": "This is a common misconception in the chapter. Only at rest is $T = m_2 g$. When the hanging mass accelerates downward, $m_2 g - T = m_2 a$ is positive, so $T < m_2 g$ in both experiments."
         },
         {
           "text": "The total mass does not change, so the acceleration does not change, and $T = m_1 a$ follows the mass of the trolley.",
@@ -295,7 +295,7 @@
           "feedback": "Correct: the product $m_1 m_2 = 0.64\\,\\text{kg}^2$ and the sum $m_1 + m_2 = 2.0\\,\\text{kg}$ are the same in both experiments."
         },
         {
-          "text": "The string is inextensible, so the trolley and the weight have the same magnitude of acceleration $a$.",
+          "text": "The string is inextensible, so the trolley and the hanging mass have the same magnitude of acceleration $a$.",
           "feedback": "The statement is true, but it does not explain the answer. The same acceleration holds in both experiments, and it does not tell how $T$ changes when the masses are swapped."
         }
       ]

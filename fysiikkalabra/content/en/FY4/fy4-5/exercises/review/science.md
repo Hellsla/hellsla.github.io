@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 8e6d80f219b9595c
+CONTENT-HASH: c323e17b0cdef469
+Mode: full (translation review against the reviewed Finnish set)
 
 ## Blocking
-
-## Polish
-- None.
+(none)
 
 ## Fixed
-- No text change needed in this translation.
+(none)
+
+## Polish
+(none)
 
 ## Checked
-- New task fy4-5-L1-09 (force diagram select, constant velocity, G=N, F=F_mu, options A-D with figures pick-pitka/lisa/tasainen/nopeus) compared with the reviewed Finnish: same id, level, kind, answer, tolerance, correct flags, choice and reason order, every number and formula.
-- Recomputed the physics: constant velocity gives F = F_mu and N = G; A (F = 2 F_mu), B (F_k acts on the pusher), D (v drawn as a force) are wrong, C correct.
-- solutions.md block matches the Finnish step by step (same equations and numbers).
-- figures.json: the four pick-* descriptions match the Finnish and figures.py (arrow lengths, F_k, red v arrow, friction at the corner); no description names the correct option
-- check_i18n shows nothing for fy4-5; build.py fy4-5 succeeds.
+L1-09 vs content/fi: kind, fbd select, choices A-D with figure ids, correct flag C, tolerance identical. Option D feedback says velocity is not a force, has no cause, its blue arrow is drawn beside the diagram; figures.json description says 'blue velocity arrow v' and does not call it a force; matches the blue arrow drawn in figures.py. Solution D line consistent. Physics: constant v gives F=F_mu, N=G (checked).

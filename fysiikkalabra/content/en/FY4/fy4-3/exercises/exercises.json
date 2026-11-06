@@ -274,7 +274,7 @@
     {
       "id": "fy4-3-L2-08",
       "level": 2,
-      "text": "Example values: a truck of mass $12\\,\\text{t}$ reverses slowly and collides with a stationary car of mass $1.2\\,\\text{t}$.\n\nDuring the collision the truck pushes the car with the force $\\overline{F}_{\\text{TC}}$ and the car pushes the truck with the force $\\overline{F}_{\\text{CT}}$.\n\nHow large is the force $F_{\\text{CT}}$ compared with the force $F_{\\text{TC}}$ during the collision?",
+      "text": "Example values: a truck of mass $12\\,\\text{t}$ reverses slowly and collides with a stationary car of mass $1.2\\,\\text{t}$.\n\nDuring the collision the truck pushes the car with the force $\\overline{F}_{\\text{TC}}$ and the car pushes the truck with the force $\\overline{F}_{\\text{CT}}$. In the subscripts T stands for the truck and C for the car, and the first letter tells who pushes.\n\nHow large is the force $F_{\\text{CT}}$ compared with the force $F_{\\text{TC}}$ during the collision?",
       "kind": [
         "concept",
         "reasoning"

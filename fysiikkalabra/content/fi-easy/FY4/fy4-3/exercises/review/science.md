@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: a6653535edaed64f
+CONTENT-HASH: 470c69becc80c20b
+Mode: full (translation review against the reviewed Finnish set)
 
 ## Blocking
-
-## Polish
-- None.
+(none)
 
 ## Fixed
-- No text change needed in this translation.
+(none)
+
+## Polish
+(none)
 
 ## Checked
-- New task fy4-3-L2-08 (Newton's third law, F_HK = F_KH (12 t truck, 1.2 t car), 4 reasons, one correct) compared with the reviewed Finnish: same id, level, kind, answer, tolerance, correct flags, choice and reason order, every number and formula.
-- Recomputed the physics: third law F_HK = F_KH regardless of mass ratio 12 t : 1.2 t; the three wrong options and reasons are really wrong, exactly one correct each.
-- solutions.md block matches the Finnish step by step (same equations and numbers).
-- check_i18n shows nothing for fy4-3; build.py fy4-3 succeeds.
+L2-08 vs content/fi: choices, correct flags, numbers, physics identical. Text defines K (kuorma-auto), H (henkilöauto) and 'first letter tells who pushes'; solution repeats it; upright subscripts in vectors and magnitudes everywhere.
