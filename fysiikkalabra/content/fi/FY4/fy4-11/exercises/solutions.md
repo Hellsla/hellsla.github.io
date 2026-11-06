@@ -160,6 +160,21 @@ s_2 &= 12{,}0\,\text{m} \cdot 1{,}8^2 \\
 **Vastaus:** a) Opiskelija käsittelee jarrutusmatkaa nopeuteen verrannollisena. Jarrutusmatka on kuitenkin verrannollinen nopeuden neliöön, koska jarrutusaika $t_\text{j} = \tfrac{v_0}{a}$ kasvaa nopeuden mukana ja samalla myös keskinopeus kasvaa. Siksi nopeuden suhde on korotettava toiseen potenssiin. b) $38{,}9\,\text{m}$, kolme merkitsevää numeroa kuten annetussa jarrutusmatkassa $12{,}0\,\text{m}$.
 **Järkevyys:** Tarkistus hidastuvuuden kautta: $a = \dfrac{(13{,}89\,\text{m/s})^2}{2 \cdot 12{,}0\,\text{m}} = 8{,}04\,\text{m/s}^2$, ja nopeudella $90\,\text{km/h} = 25{,}0\,\text{m/s}$ jarrutusmatka on $\dfrac{(25{,}0\,\text{m/s})^2}{2 \cdot 8{,}04\,\text{m/s}^2} = 38{,}9\,\text{m}$, kuten laskussa. Opiskelijan tulos on yli $17\,\text{m}$ liian pieni.
 
+## fy4-11-L2-08
+**Kysytty:** miten nukkeen kohdistuva keskimääräinen voima $F_\text{ka}$ muuttuu, kun törmäysnopeus kasvaa $25\,\text{km/h}$:sta $50\,\text{km/h}$:iin ja pysähtymisaika $0{,}030\,\text{s}$:sta $0{,}12\,\text{s}$:iin
+**Periaate:** Nukke pysähtyy, joten sen nopeuden muutoksen suuruus $\Delta v$ on törmäysnopeus. Impulssiperiaatteesta $F_\text{ka}\,\Delta t = m\,\Delta v$, joten keskimääräinen voima on verrannollinen nopeuden muutokseen ja kääntäen verrannollinen pysähtymisaikaan. Nukke on sama, joten massa $m$ ei muutu, eikä sitä tarvita vertailussa.
+**Mallivastaus:** Keskimääräinen voima on
+
+$F_\text{ka} = \dfrac{m\,\Delta v}{\Delta t}$
+
+Nopeuden muutos kasvaa kaksinkertaiseksi, koska $50\,\text{km/h} : 25\,\text{km/h} = 2$. Silloin myös liikemäärän muutos $m\,\Delta v$ on kaksinkertainen.
+
+Pysähtymisaika kasvaa nelinkertaiseksi, koska $0{,}12\,\text{s} : 0{,}030\,\text{s} = 4$.
+
+Voima kerrotaan siis luvulla $2 : 4 = 0{,}50$: kokeessa B voima on puolet kokeen A voimasta, eli voima pienenee puoleen.
+
+Järkevyys: esimerkiksi $75\,\text{kg}$:n nukelle kokeessa A $\Delta v = 25 : 3{,}6\,\text{m/s} \approx 6{,}94\,\text{m/s}$, joten $F_\text{ka} \approx 17\,\text{kN}$. Kokeessa B $\Delta v \approx 13{,}9\,\text{m/s}$, joten $F_\text{ka} \approx 8{,}7\,\text{kN}$, puolet kokeen A voimasta. Rypistyvä keula ja turvatyyny pidentävät aikaa enemmän kuin nopeus kasvattaa liikemäärän muutosta. Kaksinkertaisen nopeuden ajatteleminen nelinkertaisena kuuluu jarrutusmatkaan, joka riippuu nopeuden neliöstä, ei törmäyksen voimaan.
+
 ## fy4-11-L3-01
 **Annettu:** rajoitus $30\,\text{km/h}$, todellinen nopeus $v_0 = 40\,\text{km/h}$, reaktioaika $t_\text{r} = 1{,}0\,\text{s}$, hidastuvuus $a = 9{,}0\,\text{m/s}^2$; lapsi on etäisyydellä $d$, joka on pysähtymismatka $30\,\text{km/h}$:n nopeudesta
 **Kysytty:** auton nopeus $v$ lapsen kohdalla yksikössä $\text{km/h}$

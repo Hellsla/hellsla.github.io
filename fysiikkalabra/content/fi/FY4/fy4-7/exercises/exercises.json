@@ -112,6 +112,37 @@
           "feedback": "Tilanne on päinvastoin: liike-energia on positiivinen ja potentiaalienergia negatiivinen. Kaavassa $h$ on korkeus nollatasosta, ei syvyys."
         }
       ]
+    },
+    {
+      "id": "fy4-7-L1-09",
+      "level": 1,
+      "text": "Kappaleen massa on $m$, paino $G$, nopeus $v$ ja korkeus nollatason yläpuolella $h$. Putoamiskiihtyvyys on $g$.\n\nMinkä lausekkeen yksikkö on joule ($\\text{J}$) eli energian yksikkö?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "$\\dfrac{G v^2}{2g}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "$\\dfrac{m v^2}{2h}$",
+          "feedback": "Lausekkeen yksikkö on $\\tfrac{\\text{kg}\\cdot\\text{m}^2/\\text{s}^2}{\\text{m}} = \\text{kg}\\cdot\\text{m/s}^2 = \\text{N}$, eli se on voima. Lauseke ei ole energiaa vain siksi, että siinä on $m v^2$: jakaminen korkeudella vie siitä metrin pois."
+        },
+        {
+          "text": "$\\dfrac{G v^2}{2g}$",
+          "correct": true,
+          "feedback": "Oikein: $\\tfrac{\\text{N}\\cdot\\text{m}^2/\\text{s}^2}{\\text{m/s}^2} = \\text{N}\\cdot\\text{m} = \\text{J}$. Koska $G = mg$, lauseke on sama kuin liike-energia $\\tfrac12 m v^2$."
+        },
+        {
+          "text": "$G g h$",
+          "feedback": "Lausekkeen yksikkö on $\\text{N}\\cdot\\tfrac{\\text{m}}{\\text{s}^2}\\cdot\\text{m} = \\text{J}\\cdot\\tfrac{\\text{m}}{\\text{s}^2}$, ei joule. Tässä paino ja massa on sekoitettu: $E_\\text{p} = mgh = Gh$, joten $g$ tulisi laskuun kahteen kertaan."
+        },
+        {
+          "text": "$\\dfrac{v^2}{2g}$",
+          "feedback": "Lausekkeen yksikkö on $\\tfrac{\\text{m}^2/\\text{s}^2}{\\text{m/s}^2} = \\text{m}$, eli se on korkeus, jolle kappale nousee. Se tulee energiayhtälöstä, mutta massa puuttuu, joten se ei ole energiaa."
+        }
+      ]
     }
   ],
   "level2": [

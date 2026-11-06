@@ -93,6 +93,37 @@
    "answer": 18000.0,
    "unit": "kg·m/s",
    "tolerance": 0.02
+  },
+  {
+   "id": "fy4-9-L1-09",
+   "level": 1,
+   "kind": [
+    "reasoning",
+    "concept"
+   ],
+   "text": "Raekivi, jonka massa on $20\\,\\text{g}$, putoaa pystysuoraan nopeudella $20\\,\\text{m/s}$ ja osuu auton vaakasuoraan kattoon. Raekivi ei kimpoa, vaan pysähtyy ajassa $1{,}0\\,\\text{ms}$ (esimerkkiarvot). Raekiven painon vaikutus iskun aikana jätetään huomiotta.\n\nMikä on suuruusluokaltaan keskimääräinen voima, jolla katto pysäyttää raekiven? Valitse lähin arvo.",
+   "answer": "$400\\,\\text{N}$",
+   "unit": "",
+   "tolerance": 0.02,
+   "choices": [
+    {
+     "text": "$0{,}4\\,\\text{N}$",
+     "feedback": "Tulos syntyy, kun aika sijoitetaan lukuna $1{,}0$ ikään kuin se olisi sekunteina. Millisekunti on $0{,}001\\,\\text{s}$, joten voima on tuhatkertainen. Voima $0{,}4\\,\\text{N}$ olisi vain noin kaksi kertaa raekiven paino, eikä se pysäyttäisi raetta millisekunnissa."
+    },
+    {
+     "text": "$400\\,\\text{N}$",
+     "correct": true,
+     "feedback": "Oikein: liikemäärän muutoksen suuruus on $m v = 0{,}40\\,\\text{kg}\\cdot\\text{m/s}$. Impulssiperiaatteesta $F_\\text{ka} = \\tfrac{m v}{\\Delta t}$, eli $F_\\text{ka} = 400\\,\\text{N}$, kun $\\Delta t = 0{,}0010\\,\\text{s}$."
+    },
+    {
+     "text": "$4000\\,\\text{N}$",
+     "feedback": "Tulos syntyy, kun liikemäärän sijaan lasketaan liike-energia $\\tfrac{1}{2} m v^2 = 4{,}0\\,\\text{J}$ ja jaetaan se ajalla. Energia jaettuna ajalla on teho yksikössä $\\text{W}$, ei voima. Voiman impulssi on yhtä suuri kuin liikemäärän muutos, ei liike-energia."
+    },
+    {
+     "text": "$400\\,000\\,\\text{N}$",
+     "feedback": "Tulos syntyy, kun massa sijoitetaan grammoina lukuna $20$ eikä kilogrammoina $0{,}020\\,\\text{kg}$. Liikemäärän yksikkö on $\\text{kg}\\cdot\\text{m/s}$, joten massa muunnetaan kilogrammoiksi, ja voima on tuhannesosa tästä."
+    }
+   ]
   }
  ],
  "level2": [

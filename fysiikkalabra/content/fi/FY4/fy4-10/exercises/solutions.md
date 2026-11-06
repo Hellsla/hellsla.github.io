@@ -182,6 +182,25 @@ c) Liike-energia ennen on $\tfrac12 \cdot 0{,}40 \cdot 0{,}51^2\,\text{J} = 0{,}
 **Järkevyys:** Oikealle liikkuvan vaunun liikemäärä $0{,}48\,\text{kg}\cdot\text{m/s}$ on suurempi kuin vasemmalle liikkuvan $0{,}08\,\text{kg}\cdot\text{m/s}$, joten vaunut jatkavat oikealle ja kokonaisliikemäärä on $0{,}40\,\text{kg}\cdot\text{m/s}$. Tulos on pienempi kuin raskaamman vaunun alkunopeus, kuten pitää, koska vastakkaissuuntainen liike hidastaa yhteistä liikettä.
 **Mallivastaus virheestä:** Oppilas unohti vasemmalle liikkuvan vaunun nopeuden etumerkin ja laski sen liikemäärän positiivisena, vaikka vaunu liikkuu vastakkaiseen suuntaan kuin positiivinen suunta. Siksi liikemäärät laskettiin yhteen, vaikka niiden pitäisi osittain kumota toisensa. Oikea laskenta on $0{,}48 - 0{,}08 = 0{,}40$ eikä $0{,}48 + 0{,}08 = 0{,}56$. Oppilaan tulos on liian suuri, ja se vastaisi tilannetta, jossa molemmat vaunut liikkuvat oikealle.
 
+## fy4-10-L2-08
+**Kysytty:** mikä oppilaan laskun riveistä on väärin, kun lasketaan vaunun B nopeus $v_\text{B}'$ törmäyksen jälkeen ja oikealle on positiivinen suunta
+**Periaate:** Kitka jätetään huomiotta, ja paino ja radan tukivoima kumoavat toisensa, joten vaunujen kokonaisliikemäärä säilyy törmäyksessä. Yhdessä ulottuvuudessa jokainen nopeus on etumerkillinen luku: vasemmalle eli negatiiviseen suuntaan liikkuvan vaunun nopeus ja liikemäärä ovat negatiivisia. Laskun voi tarkistaa rivi riviltä: liikemäärä ennen, yhtälö, nopeuksien etumerkit ja ratkaiseminen.
+**Mallivastaus:** Rivi 1 on oikein: $m_\text{A} v_\text{A} = 0{,}24\,\text{kg}\cdot\text{m/s}$, ja levossa olevan B:n liikemäärä on nolla.
+
+Rivi 2 on oikein: se on säilymislaki $m_\text{A} v_\text{A} + m_\text{B} v_\text{B} = m_\text{A} v_\text{A}' + m_\text{B} v_\text{B}'$, kun $v_\text{B} = 0$.
+
+Rivi 3 on väärin. A kimpoaa vasemmalle, joten $v_\text{A}' = -0{,}20\,\text{m/s}$.
+
+$m_\text{A} v_\text{A}' = 0{,}30\,\text{kg} \cdot (-0{,}20\,\text{m/s})$, eli $m_\text{A} v_\text{A}' = -0{,}060\,\text{kg}\cdot\text{m/s}$
+
+Rivi 4 ratkaisee yhtälön oikein, mutta saa rivin 3 väärän luvun. Oikein sijoitettuna:
+
+$v_\text{B}' = \dfrac{m_\text{A} v_\text{A} - m_\text{A} v_\text{A}'}{m_\text{B}}$
+
+$v_\text{B}' = \dfrac{0{,}24 - (-0{,}060)}{0{,}50}\,\text{m/s}$, eli $v_\text{B}' = 0{,}60\,\text{m/s}$
+
+Oikea vastaus on rivi 3. Tarkistus: kun A kimpoaa taaksepäin, B:n liikemäärän on oltava suurempi kuin kokonaisliikemäärä $0{,}24\,\text{kg}\cdot\text{m/s}$. Oikealla tuloksella se on $0{,}50\,\text{kg} \cdot 0{,}60\,\text{m/s} = 0{,}30\,\text{kg}\cdot\text{m/s}$, oppilaan tuloksella vain $0{,}18\,\text{kg}\cdot\text{m/s}$, mikä on mahdotonta.
+
 ## fy4-10-L3-04
 **Annettu:** $m_\text{A} = 1100\,\text{kg}$, $m_\text{B} = 1400\,\text{kg}$, $v_\text{B} = 0$, liukumismatka $s = 8{,}0\,\text{m}$, $\mu = 0{,}60$, $g = 9{,}81\,\text{m/s}^2$, nopeusrajoitus $50\,\text{km/h}$
 **Kysytty:** auton A nopeus ennen törmäystä $v_\text{A}$ yksikössä $\text{km/h}$ ja päätelmä väitteestä

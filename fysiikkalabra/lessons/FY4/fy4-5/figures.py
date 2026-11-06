@@ -349,9 +349,64 @@ def ruutu():
     return f.svg()
 
 
+# Voimakuvion valinta (task fy4-5-L1-09, docs/exercise-types.md type 3): a box pushed horizontally to the right slides at
+# constant velocity, so G = N and the push F = the friction F_mu. Four option diagrams to one scale (0,9 units per
+# newton, G = 98,1 N, F = 40 N); only "pick-tasainen" is right, each other has one error.
+PK_G, PK_F, PK_S = 10.0 * g, 40.0, 0.9
+PK_BODY = (175, 106, 110, 84)
+PK_DESC = "Voimakuvio mittakaavassa: laatikko suorakulmiona. Keskipisteestä alaspäin osoittaa paino G ja alapinnasta ylöspäin yhtä pitkä tukivoima N. "
+
+
+def pick_push(fid, label, push=PK_F, extra=False, v_force=False, wrong=None):
+    """One option: the box as a rectangle; G from the centre, N from the bottom face, the push F ending at the left face
+    (the pusher stands on the left), friction from the bottom left corner to the left; extra adds F_k, the box's force on
+    the pusher (it acts on the pusher, not on the box); v_force draws the velocity as one more red force arrow."""
+    cx, cy, w, h = PK_BODY
+    f = Fig(fid, 240, label, width=300)
+    d = FBD(f, PK_S, body=PK_BODY, a_dir=(0, 0), wrong=wrong)
+    d.force("G", (0, -PK_G), (cx, cy), "gravity", lab=(-20, 6))
+    d.force("N", (0, PK_G), (cx + 24, cy + h / 2), "normal", surface=0, lab=(20, 6))
+    d.force("F", (push, 0), (cx - w / 2, cy - 26), "applied", push=True, lab=(-14, -16))
+    d.force("F_mu", (-PK_F, 0), (cx - w / 2, cy + h / 2), "friction", surface=0, lab=(-12, 18))
+    if extra:
+        d.force("F_k", (-PK_F, 0), (cx - w / 2, cy + 8), "other", tex=r"\overline{F}_\text{k}", lab=(-14, -14))
+    if v_force:
+        d.force("v", (PK_F, 0), (cx + w / 2, cy - 10), "other", tex=r"\overline{v}", lab=(14, -16))
+    d.draw()
+    return f.svg()
+
+
+def pick_tasainen():
+    return pick_push("fy45-pick-tasainen", PK_DESC + "Vasemmalta tuleva työntövoima F osoittaa oikealle ja päättyy laatikon "
+                     "vasempaan kylkeen. Alapinnan vasemmasta kulmasta lähtee kitkavoima vasemmalle. Nuolet F ja kitkavoima "
+                     "ovat yhtä pitkät, kumpikin vajaa puolet painon nuolesta.")
+
+
+def pick_pitka():
+    return pick_push("fy45-pick-pitka", PK_DESC + "Vasemmalta tuleva työntövoima F osoittaa oikealle ja päättyy laatikon "
+                     "vasempaan kylkeen. Alapinnan vasemmasta kulmasta lähtee kitkavoima vasemmalle. Nuoli F on kaksi kertaa "
+                     "niin pitkä kuin kitkavoiman nuoli.", push=2 * PK_F,
+                     wrong="the push is drawn twice the friction although the box slides at constant velocity")
+
+
+def pick_lisa():
+    return pick_push("fy45-pick-lisa", PK_DESC + "Vasemmalta tuleva työntövoima F osoittaa oikealle ja päättyy laatikon "
+                     "vasempaan kylkeen. Vasemman kyljen keskeltä lähtee voima F_k vasemmalle, ja alapinnan vasemmasta "
+                     "kulmasta lähtee kitkavoima vasemmalle. Nuolet F, F_k ja kitkavoima ovat yhtä pitkät.", extra=True,
+                     wrong="an extra force F_k, the box's push on the pusher, acts on the pusher, not on the box")
+
+
+def pick_nopeus():
+    return pick_push("fy45-pick-nopeus", PK_DESC + "Vasemmalta tuleva työntövoima F osoittaa oikealle ja päättyy laatikon "
+                     "vasempaan kylkeen. Alapinnan vasemmasta kulmasta lähtee kitkavoima vasemmalle, ja oikeasta kyljestä "
+                     "lähtee punainen nuoli v oikealle. Nuolet F, v ja kitkavoima ovat yhtä pitkät.", v_force=True,
+                     wrong="the velocity v drawn as a force")
+
+
 FIGURES = {"hero": hero, "tilanne": tilanne, "suunnat": suunnat, "komponentit": komponentit, "esimerkki": esimerkki,
            "virhe": virhe_liukuva, "hissi-a": hissi_a, "hissi-b": hissi_b, "hissi-c": hissi_c, "hissi-d": hissi_d,
-           "malli-tyonto": malli_tyonto, "malli-pulkka": malli_pulkka, "malli-hissi": malli_hissi_jarru, "ruutu": ruutu}
+           "malli-tyonto": malli_tyonto, "malli-pulkka": malli_pulkka, "malli-hissi": malli_hissi_jarru, "ruutu": ruutu,
+           "pick-tasainen": pick_tasainen, "pick-pitka": pick_pitka, "pick-lisa": pick_lisa, "pick-nopeus": pick_nopeus}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "tilanne": "reveals: the forces on a box pulled at an angle with friction (a theory figure)",
@@ -367,4 +422,8 @@ REUSE = {
     "malli-pulkka": "reveals: the model diagram of a sled pulled at 30° at constant velocity (shown in the solution)",
     "malli-hissi": "reveals: the model diagram of a person in a lift slowing down while moving up (shown in the solution)",
     "ruutu": "safe: four forces on a 10 N grid, no net force drawn",
+    "pick-tasainen": "reveals: the right option of task fy4-5-L1-09 (a box pushed at constant velocity: G = N, F = F_mu)",
+    "pick-pitka": "safe: a wrong option of task fy4-5-L1-09 (the push drawn twice the friction)",
+    "pick-lisa": "safe: a wrong option of task fy4-5-L1-09 (an extra F_k, the box's push on the pusher)",
+    "pick-nopeus": "safe: a wrong option of task fy4-5-L1-09 (the velocity drawn as a red force arrow)",
 }

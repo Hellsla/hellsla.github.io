@@ -265,6 +265,41 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy4-12-L2-08",
+      "level": 2,
+      "kind": [
+        "graph",
+        "concept"
+      ],
+      "text": "Auto A ja mopo B ovat hetkellä $t = 0$ rinnakkain suoralla tiellä ja liikkuvat samaan suuntaan. Auton nopeus on $20\\,\\text{m/s}$, ja se hidastaa tasaisesti hidastuvuudella $2{,}0\\,\\text{m/s}^2$, kunnes pysähtyy. Mopo ajaa tasaisella nopeudella $12\\,\\text{m/s}$. Mopo saavuttaa auton hetkellä $t = 8{,}0\\,\\text{s}$.\n\nMikä kuvaajista esittää auton ja mopon nopeudet ajan funktiona välillä $0 \\le t \\le 10\\,\\text{s}$?",
+      "answer": "Kuvaaja 3",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Kuvaaja 1",
+          "figure": "fy4-12/pick-kaari",
+          "feedback": "Tässä auton nopeus pienenee kaarevasti. Tasaisesti hidastuvassa liikkeessä nopeus pienenee joka sekunti saman verran, $2{,}0\\,\\text{m/s}$, joten $(t,v)$-kuvaaja on suora. Kaareva on tasaisesti kiihtyvän liikkeen $(t,x)$-kuvaaja."
+        },
+        {
+          "text": "Kuvaaja 2",
+          "figure": "fy4-12/pick-kohtaus",
+          "feedback": "Tässä nopeuskuvaajat leikkaavat hetkellä $8{,}0\\,\\text{s}$, jolloin mopo saavuttaa auton. $(t,v)$-kuvaajien leikkauspiste on hetki, jolloin nopeudet ovat yhtä suuret, ei kohtaaminen. Auton nopeus myös pienenee tässä vain $1{,}0\\,\\text{m/s}$ sekunnissa."
+        },
+        {
+          "text": "Kuvaaja 3",
+          "figure": "fy4-12/pick-oikea",
+          "correct": true,
+          "feedback": "Oikein: auton nopeus on $v_\\text{A} = 20\\,\\text{m/s} - 2{,}0\\,\\text{m/s}^2 \\cdot t$, joten se on nolla hetkellä $10\\,\\text{s}$. Mopon nopeus pysyy arvossa $12\\,\\text{m/s}$, ja suorat leikkaavat hetkellä $4{,}0\\,\\text{s}$."
+        },
+        {
+          "text": "Kuvaaja 4",
+          "figure": "fy4-12/pick-alku",
+          "feedback": "Tässä auto ja mopo alkavat samalla nopeudella, ikään kuin rinnakkain olevilla kappaleilla olisi sama nopeus. Sama paikka ei tarkoita samaa nopeutta: alussa auton nopeus on $20\\,\\text{m/s}$ ja mopon $12\\,\\text{m/s}$."
+        }
+      ]
     }
   ],
   "level3": [
