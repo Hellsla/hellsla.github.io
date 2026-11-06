@@ -1,22 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: be3f59b3a9eff3ee
-Round: 3 (delta)
+CONTENT-HASH: cac0fd5db47fb84c
+Round: 1 (delta)
 
 ## Blocking
 (none)
 
-Delta: only the Järkevyys arrows of 9-7 changed (`\to` to `\!\to\!`); it reads well, nothing else changed.
-
 ## Polish
-- [Minor] solutions.md 9-7 Järkevyys — the tight arrows sit close to the percent signs but stay clearly visible and do not touch the numbers; leave.
-- [Minor] exercises.json L2-07 (9-15) — unit label beside the answer field is plain "1/s" while the answer shows $\tfrac{1}{\text{s}}$; project-wide field convention — leave.
-- [Minor] solutions.md L2-06 (9-14) — the Järkevyys block now says "a) Tulos ... sopii taulukkoon", followed by a separate bold "Selitys kohtaan b)" block; fixed as asked in round 1. A plain "Järkevyys:" without the "a)" prefix would read more naturally.
-- [Minor] solutions.md L2-05 (9-13) Vastaus — "noin $\pm 8\,\%$" is the spread of the net count $64$ only ($8/64$ is $12{,}5\,\%$, the effect on $T_{1/2}$ is about $8\,\%$); say "arvion hajonta on noin $8\,\%$" to avoid the reading that the count error is $8\,\%$.
-- [Minor] solutions.md L3-05 (9-20) — the $0{,}140\,\tfrac{1}{\text{d}}$ in Sijoitus and $0{,}1398\,\tfrac{1}{\text{d}}$ in Järkevyys are the same value at two roundings; use one.
+- [Minor] exercises.json L1-09 option letters — the page shuffles the options and the letters follow ("Kuvaaja D, B, A, C" from the top); the solution and feedbacks refer by letter and stay correct. Project-wide convention, leave.
+- [Minor] solutions.md L1-09 — the three rejected graphs (A, B, D) sit in one long paragraph; start each on its own line. The feedback for D gives "noin 290 kBq", the solution "294 kBq"; use one.
+- [Minor] pick-* figures at 390 px — tick numbers are about 11 px and the gridlines (50 kBq) are dense; still readable and the curve at 2 h separates C (400) from D (290) clearly. Leave.
 
 ## Checked
-- 1280 px capture fy8-9-open-exercises-1280-7/-8 (9-7 task, Sijoitus, Vastaus, Järkevyys with the arrow chain; 9-8 below it intact). Arrows visible, not touching numbers; no red KaTeX, no clipping.
-- Diff (solutions.md only) read; earlier rounds' checks stand. `check_layout.py fy8-9 --site --width 360` ok. Only 1280 px exercise captures exist; 360 px rests on check_layout.
+- Own 390 px render of 9-9 with feedback and solution open: all four option figures (pick-e, pick-kiihtyy, pick-suora, pick-puolittuu) opened and looked at. Same axes, ticks, unit labels ("t (h)", "A (kBq)"), curve colour and weight in all four; scale does not hint at the right answer; A, B and C meet at (2 h; 400 kBq) so the shape decides. Curves match the figure descriptions and the solution (A zero at 4 h, B zero at about 2,8 h, D about 290 kBq at 2 h). No overflow, equation chain short.
+- Full aria-labels read in the DOM (axes, scale, curve points); complete.
+- Correct option is not identifiable by form; the distractors are the chapter's warned mistakes (linear decay, accelerating decay, e^(-t/T) without ln 2).
+- Text only: L3-01 paragraph split.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 4

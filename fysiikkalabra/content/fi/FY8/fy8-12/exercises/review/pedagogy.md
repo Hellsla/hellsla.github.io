@@ -1,20 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: dac3457805b63750
+CONTENT-HASH: 75f18341105f4115
 
 ## Blocking
-- None. Lead-length rule: no new task lead is over ~45 words in one paragraph (longest L3-05: 65 words, already in 2 paragraphs; L3-04 39 words in 2).
+
+(none)
 
 ## Polish
-- fy8-12-L2-05 b): the table's spread (standard deviation about 4,4) is clearly smaller than √48,4 = 7,0, so "vertaa" is answered by "pienempi"; the solution's wording "noin 2√N" is a stretch. Use data with a spread near 7 (e.g. 41, 55, 48, 60, 39 ...).
-- fy8-12-L2-06 b) and c) both give the half-value thickness; say that c) is the more accurate and compare it with b).
-- fy8-12-L2-06 and L3-04 are very similar (Cs-137, 60 s counts, same formula); L3-04 differs through material identification and the 1 % target, which is enough, but vary the layout (e.g. a different background).
-- fy8-12-L3-05 d): the third assumption (narrow beam) pushes the other way (scattering raises the transmitted share); mention it in the solution.
-- fy8-12-L2-07: the right option is the longest of four; shorten it or lengthen the others.
+
+- fy8-12-L1-09 stem and prompt — the question is stated twice ('Missä järjestyksessä...' and the prompt); keep only the prompt. 
+- Five shields with five divisions is long for level 1; acceptable as the divisions are the whole task, but the solution could name 'järjestä suhteen d/d_1/2 mukaan' before the list.
 
 ## Checked
-- Recomputed: L1-07 1530 1/min; L2-05 484, 48,4, 4,5 %; L2-06 mean 5,50 mm; L3-04 11,99 mm (iron), 79,6 mm; L3-05 16,4 1/s, 0,365, 3,0 kBq.
-- L2-07 is a real experiment design (Al plate separates beta from gamma) and the distractors are real misconceptions.
-- L1-08 and L1-06 distractor feedback repairs the misconception.
-- Every new solution has principle, conversions, substitution and sanity check.
-- Levels fit the plan in docs/exercise-bank/FY8.md; no exact duplicate.
-- Screenshots: only 1280 px captures in the packet; not opened.
+
+- New task L1-09 (ordering, type 9): prompt names quantity and direction; the order follows only from d/d_1/2, so the two tempting shortcuts (thinnest d_1/2 = lead, thickest = water) both give a wrong order; B and E share 120 mm, which isolates the d_1/2 effect.
+- Answer percentages (18 / 12 / 8,7 / 6,3 / 3,3 %) agree with my recomputation from the given numbers; the order is strict, no ties.
+- Warned mistake 'two half-value layers stop everything' is not tested but power-law handling is practised; scope: narrow beam and half-value thickness are in the brief.
+- Solution: ratio per shield, two worked fractions, order, and why lead is not best. Checked from text only (JSON, solutions.md, packet brief); no renders or screenshots were available in the packet, so the 390 px fit of the new task and the formula-chain width were judged from the line lengths of the aligned blocks.

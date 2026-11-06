@@ -1,19 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 43ecf04c9f072b4f
-Round: 2
+CONTENT-HASH: 0f1f787b19c2726d
 
 ## Blocking
 
 ## Polish
-- solutions.md:188 (L3-05) — The heading "Kuvaajan lukeminen" sits on a task that has only a table. — Use "Taulukon lukeminen", as fy8-13-L3-05 now does.
-- exercises.json L1-07 / L3-05 — The deviations from the plan (optimisation instead of splitting the treatment dose across several directions; aluminium instead of paper) are still not recorded in docs/exercise-bank/FY8.md. Update the plan.
+- exercises.json:118 and solutions.md:206 (L1-09) — both worked checks use two half-lives (A₀ = 4A). The linear distractor A·2t/T½ also gives 4A at t = 2T½ (and 2A at t = T½), so these checks do not tell the right expression from that distractor. Use three half-lives (2³ = 8 vs 2·3 = 6) in the correct option's feedback and in the solution's Tarkistus, e.g. 330 min for F-18.
 
 ## Checked
-- Round 1 had no Blocking items.
-- Round 1 Polish resolved: in L1-06 the correct option and the model answer now say "yhdistävä jana kulkee lähteen kautta"; L2-05 cites STUK-A263 (2020) for 5,1 mSv; the chest image is 0,10 mSv as in fy8-13; L1-08 no longer has the "concept" kind; L2-07 now says "on vain 0,44 puoliintumispaksuutta".
-- L2-05 changed: 3 · 0,010 + 2 · 0,10 + 2,0 = 2,23 mSv, which is 43,7 % of 5,1. The answer 44 % (tol 3 %) and answers.py match.
-- L3-05: the new fit check is right. My least-squares fit of ln R on d gives d½ = 9,18 mm and d_x = 12,13 mm. The new reason for 2 significant figures (the ratios scatter 0,68 ± 0,01) is sound.
-- L1-06: the distractors were reworded. There is still exactly one correct option, and the brems-strahlung feedback is right (the annihilation photons are always 511 keV).
-- All the other new answers are unchanged and still agree with answers.py: L1-08 1,28·10⁻¹⁴ J; L2-06 51,1 %; L2-07 25,9 mm; L3-04 10,16 mSv; L3-05 12,10 mm.
-- Counts are 8/7/5 and there are no duplicates. The "FAIL inquiry" check concerns the lesson, not this set.
-- The hash 43ecf04c9f072b4f was the same at the start and at the end.
+- Hash 0f1f787b19c2726d at the start and at the end. Only the new task L1-09 (symbolic multiple choice) was judged.
+- Correct option: from A = A₀(½)^(t/T½), A₀ = A·2^(t/T½). There is exactly one correct option.
+- Distractors: A·(½)^(t/T½) < A (the law used in the wrong direction); A·2^(T½/t) falls as t grows (the exponent inverted); A·2t/T½ is linear and gives 0 at t = 0. Each one is really wrong, and its feedback states the error correctly.
+- The assumption "aktiivisuus pienenee vain hajoamalla" is stated, so no biological clearance is involved. The F-18 half-life of 110 min matches the set (109,8 min).
+- The notation (T_{1/2}, A₀, the base ½) is the lesson's, and the scope is within fy8-14. No de Broglie content. Checked from text only.

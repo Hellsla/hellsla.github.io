@@ -1,21 +1,17 @@
-VERDICT: PASS
-CONTENT-HASH: b76bee1182410114
+VERDICT: FAIL
+CONTENT-HASH: 28d419cc967191aa
+ROUND: 1
 
 ## Blocking
-(none)
+- [Major] solutions.md fy8-1-L1-09 Mallivastaus — at 390 px the line $E_\text{k,max} = 3{,}10\,\text{eV} - 2{,}50\,\text{eV} = 0{,}60\,\text{eV}$ is cut off after "0,60" (the unit and the result's end are lost; measured in my 390 px capture) — the answer line of the new task is unreadable on a phone — split into two display lines (substitution, then $E_\text{k,max} = 0{,}60\,\text{eV}$).
 
 ## Polish
-- [Minor] solutions.md fy8-1-L2-07 Kaava — the inline $f_0 = f_1 - \tfrac{E_1}{k}$ breaks after the minus sign and the fraction lands alone on the next line (open-exercises-L2-1280-10) — set it as its own display line, as in Sijoitus.
-- [Minor] solutions.md fy8-1-L2-06 Kuvaajan lukeminen — the two slope fractions are tiny \tfrac blocks with unit-laden numerators (open-exercises-L2-1280-8/9), cramped next to the rest — use \dfrac.
-- [Minor] exercises.json fy8-1-L3-05 data table — the headers $\lambda\,(\text{nm})$ and $P\,(\text{mW})$ sit left of their right-aligned numbers (open-exercises-L3-1280-8) — align headers with the values (a template matter, same in other numeric tables).
-- [Minor] solutions.md fy8-1-L3-05 Sijoitus c) — uses $3{,}397\,\text{eV}$ while a) gives $E_\text{C} = 3{,}40\,\text{eV}$ — write $3{,}40\,\text{eV}$ or say it is the unrounded value.
-- [Minor] solutions.md fy8-1-L3-04 and L3-05 Muunnokset — "jakamalla luvulla $1{,}602 \cdot 10^{-19}$" has no unit — add $\text{J/eV}$.
+- [Minor] exercises.json fy8-1-L1-09 — the true/false feedback of the correct statements ("Tosi: …") is short and fine; statement 4 feedback could name the unit "elektronia sekunnissa" explicitly. Optional.
 
 ## Checked
-- Opened open-exercises-1280-6, -7, -8, -9 (L1-06, L1-07, L1-08 with solutions), open-exercises-L2-1280-6 to -11 (L2-05, L2-06, L2-07), open-exercises-L3-1280-6 to -9 (L3-04, L3-05).
-- All new tasks: tables, quantities and units in LaTeX with upright units, solution cards (Annettu to Järkevyys) intact, nothing clipped or overflowing, answer boxes with units present; the answers shown match the solutions (5,56 · 10^14 Hz; 6,7 · 10^-34 J s; 0,90 eV; 2,14 eV; 0,093 %; 1,8 µA).
-- No exercise figures exist; the graph tasks are paper tasks with tables. Placement of tables and decimal commas is correct.
-- Exercise captures exist only at 1280 px (360 px exercise overflow is covered by the layout check, which is ok); no duplicate of an existing task, levels fit docs/exercise-bank/FY8.md.
+- 390 px capture of fy8-1-L1-09 with all five statements answered-view, feedback and solution open; 1280 px capture likewise (no clipping there). Page-level horizontal overflow: none. Task blocks are split into short paragraphs and read well; units and symbols in LaTeX, decimal commas correct.
+- Form check (text): the statements are all of similar length; true/false mix 2/3 not guessable by form; distractors catch the chapter's wave-model misconceptions (intensity threshold, energy accumulation, delay). Within chapter scope.
+- Text only: L3-01 and L3-02 paragraph splits (no figure or formula changed).
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 3 · Finnish 4 · accessibility 4

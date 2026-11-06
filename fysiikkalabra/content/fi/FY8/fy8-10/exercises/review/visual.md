@@ -1,21 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 16344269b7035d57
-Round: 2
+CONTENT-HASH: a0eb9a4aa91cb3e0
+Round: 1 (delta)
 
 ## Blocking
 (none)
 
-Round 1 had no Blocking items; the round-2 changes were checked and are correct and well rendered (L1-06 and L1-08 option order and distractors, L2-05 spreadsheet hint, L2-07 rewritten question, answer and feedback, L3-04 b) wording and the rounding-error explanation, L3-05 assumption sentence).
-
 ## Polish
-- [Minor] exercises.json 10-7, 10-12, 10-20 — unit labels beside the answer fields ("MeV", "10^14 kg", "10^20 kg") are plain text; project-wide field convention — leave.
-- [Minor] solutions.md L2-07 (10-15) Mallivastaus — long (about eight sentences); the Fe-56 plus He-4 counter-example is good, but a line break before "Muiden ytimien kanssa" would help reading.
-- [Minor] solutions.md L3-04 (10-19) Järkevyys — carries three ideas (rounding error, which method is more exact, the coal comparison); split into two short paragraphs when next edited.
-- [Minor] solutions.md L3-05 (10-20) Järkevyys — "(todellisuudessa vain ydin fuusioituu, joten osuus ytimen vedystä on suurempi)" is clumsy; "todellisuudessa vain tähden ydin fuusioituu, joten ytimen vedestä kuluisi suurempi osuus".
+- [Minor] exercises.json L2-08 — the answer "noin 2000 MeV" for $1560\,\text{MeV}$: "suuruusluokka" is more exactly $10^3\,\text{MeV}$; the sentence "Se on suuruusluokaltaan 2000 MeV" is weak. Say "pyöristettynä noin $2000\,\text{MeV}$" or ask for an estimate to one significant figure (for science).
+- [Minor] solutions.md L2-08 — the last paragraph runs the wrong-option explanations and "Järkevyys:" together; start Järkevyys on its own line.
+- [Minor] exercises.json L2-08 options — the options are in ascending order of magnitude (0,002; 8; 2000; 200 000), direction clear. The jump from 8 to 2000 is uneven; harmless.
 
 ## Checked
-- 1280 px captures with every solution open: L2 part 8 (10-14 solution end, 10-15 task and options with the new text) and L3 part 7 (10-20 task, Annettu, Kaava, answer field). Chains, tables and boxes render cleanly; no clipping or red source.
-- Diff of exercises.json and solutions.md against 0f82a5dd8 read in full. Only 1280 px exercise captures exist; 360 px rests on check_layout (ok).
+- Own 390 px render of 10-16 with feedback and solution open: task text, units ("u", "MeV/c^2", thin spaces), four options, both aligned blocks (massavaje, E_B) fit the column; no overflow measured. Chain broken at meaningful boundaries.
+- Form: the correct option is not identifiable (the middle value matches the calculation, the three wrong ones follow the named slips); feedback for the correct choice does not give the derivation away.
+- Text only: Finnish of the task and feedbacks.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations n/a (5) · typography 5 · Finnish 4 · accessibility 4

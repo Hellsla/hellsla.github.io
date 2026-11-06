@@ -1,20 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 36ac7c9b588458f9
+CONTENT-HASH: 5d522b9e7134f99f
+Round: 1 (delta)
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] exercises.json L1-08, L2-05..07, L3-04..05 — closing line "A-kohdan tulos kirjoitetaan vastauskenttään." differs from FY8-5..7 ("Anna a)-kohdan tulos vastauslaatikkoon.") and from the other tasks of this chapter — use one form across the chapter.
-- [Minor] exercises.json L3-04 text/solutions — nuclide names in plain text ("Pb-210:stä", "Rn-222:sta") break across lines ("Pb-" / "206:een") — bind them with a non-breaking hyphen or set as ${}^{210}\text{Pb}$:stä as the other tasks do.
-- [Minor] solutions.md L3-04 Sijoitus — a)–d) run together in one block; start each on its own line.
-- [Minor] solutions.md L2-07 Vastaus — "Suoralta luettu arvo on 915 … 920 keV" while the box answer is 916: state the reading range or the single value consistently.
+- [Minor] exercises.json L2-08 text and options — at 390 px "beeta miinus -" / "hajoaminen" breaks after the dash and leaves a lone hyphen at the end of the line (rows 2 and 3, also the option labels); bind with a non-breaking space ("miinus -hajoaminen").
+- [Minor] solutions.md L2-08 Mallivastaus — correct and clearly structured; the last line "Oikea vastaus on rivi 3." repeats the heading of the row analysis and could go.
 
 ## Checked
-- Opened at 1280 px: open-exercises-L2-1280-4 (end of an existing solution and 8-12 task), open-exercises-L3-1280-5 (L3-04 solution).
-- Read all new tasks and solutions in source (L1-06..08, L2-05..07, L3-04..05). Recomputed: Z/N changes for the six rows (3 beta minus), 144 neutrons, 916,4 keV (fit), 4 beta minus, 1150,2 keV and 1,08 pm; all match answers.
-- Nuclide notation, tables and level reasoning render correctly; L3-05 level diagram is to be drawn on paper, no figure expected.
-- Not opened: remaining new-task captures (judged from source and packet checks); no 360 px capture of the exercises exists.
+- Own 390 px render of 8-16 (L2-08) with feedback and solution open: nuclide notation renders cleanly (sub- and superscripts aligned, ν and ν̄ visible), no overflow, no clipped chain (measured; none).
+- Form: the correct row 3 is not distinguishable by length or wording; the last option catches "no error" and the distractor feedbacks name the chapter's mistake (alpha, beta plus versus minus, gamma). The solution gives the corrected equation.
+- Text only: L3-02 paragraph split.
 
 ## Scores
-illustrations n/a (5) · typography 4 · Finnish 4 · accessibility 4
+illustrations n/a (5) · typography 5 · Finnish 5 · accessibility 4

@@ -1,21 +1,16 @@
-VERDICT: PASS
-CONTENT-HASH: 4d9d5477327a2bc7
-Round: 2
+VERDICT: FAIL
+CONTENT-HASH: 42a85f8ae42cb80b
+ROUND: 1
 
 ## Blocking
-(none) Round 1 Blocking resolved: L2-05 Järkevyys now reads "Tulos 1,86 V on suurempi kuin jännite 1,80 V, jolla virta on vasta 0,6 mA …" (correct), and the solution uses the centre point (2,10 V; 14,92 mA), which gives 1,857 V.
+- [Major] solutions.md fy8-6-L2-08 Mallivastaus — at 390 px the lines $h = ek = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 3{,}98 \cdot 10^{-15} \dots$, the $\Delta h$ line, the difference "6,626 · 10⁻³⁴ J s − 6,376 · 10⁻³⁴ J s = …" and the red-LED check "… − 0,07 V = 1,82 V" run past the card (measured overflow to 525 px) and the results 6,376 · 10⁻³⁴, 0,336 · 10⁻³⁴, 0,25 · 10⁻³⁴ and 1,82 V are cut off — the numerical core of the justification is unreadable on a phone — put equation, substitution and result on separate display lines and keep each under about 300 px.
 
 ## Polish
-- [Minor] solutions.md L3-04 Vastaus — now split into answer / slope reasoning / single-LED paragraphs; good (round 1 Polish resolved). The first sentence of the slope paragraph could name "kohta b)" for symmetry with L2-06.
-- [Minor] solutions.md L2-07 Vastaus — "ja nämä fotonit muodostavat spektrin pääosan" is not shown by the data (only the half-maximum range is); for science: drop it or say "ja huipun energia 1,97 eV on tällä välillä".
-- [Minor] solutions.md L2-06 — b) is now in Vastaus; Järkevyys also repeats the 0,1 V argument, slightly long but clear.
+- [Minor] exercises.json fy8-6-L2-08 data table — the column headers sit left of the right-aligned numbers (template matter, carried over).
+- [Minor] solutions.md "välillä h − Δh … h + Δh" uses a loose ellipsis; use a dash or "…" with thin spaces.
 
 ## Checked
-- Round 1 Polish carried: L2-07 half-maximum wording fixed ("vähintään puolet maksimista"), L3-04 split, L2-06 b) in Vastaus.
-- Opened at 1280 px: open-exercises-L2-1280-10 (L2-06 end, L2-07 task and data table, comma in decimals), -11 (L2-07 solution), open-exercises-L3-1280-6 (L3-04 solution).
-- Recomputed changed tasks: L2-07 new table gives FWHM 620–640 nm, ΔE = 2,0000 − 1,9375 = 0,0625 eV (answer 0,0625, tolerance 0,03 fine), L2-05 1,857 V, L3-04 6,74·10^-34 J s (1,7 %), 6,497 and 6,329 values; all match answers.
-- MC reorder in L1 (LED photon option) and answer wording "x · 10^16" for 6,24 checked in source.
-- No 360 px exercise capture exists; layout check at 360 px is clean per packet.
+- 390 and 1280 px captures of fy8-6-L2-08 with the table, options, feedback and solution open; the table fits 390 px, the opening paragraphs are split well; the choice feedback reads clearly. Form check: the correct option is not the longest (the first distractor is longer) and the others also contain reasons; the distractors catch the chapter's warned mistakes (non-zero intercept, significance within uncertainty, cause/effect of voltage). Data caption short and labelled "esimerkkiaineisto".
 
 ## Scores
-illustrations n/a (5) · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 3 · Finnish 4 · accessibility 4

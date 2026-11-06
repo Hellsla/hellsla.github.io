@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 32070231e8079b94
+CONTENT-HASH: aa7434ae1159c8f8
 
 ## Blocking
+(none)
 
 ## Polish
-- exercises.json:82 fy8-3-L1-08 — answer 2,55 eV equals L1-03 and the solution itself notes the same Balmer line — fix: use another pair (e.g. 3 to 5, 0,97 eV) so it is not the inverse of L1-03.
-- exercises.json:74 fy8-3-L1-07 — 122 nm is still readable from the lesson's series table — fix: ask for the Lyman limit or the Paschen longest wavelength.
-- exercises.json:242 fy8-3-L3-04 — the lesson table lists Paschen as 821-1876 nm, so end level n = 3 is guessable — fix: ask the student to name which argument excludes each m.
+- exercises.json fy8-3-L2-08, options — the correct option is the only one that says "pienenee"; the other three say "kasvaa" or "ei muutu", and "1,7-kertaiseksi" is the reciprocal of "0,58". A student can pick it by elimination. Fix: make one distractor a shrinking one, e.g. "Aallonpituus pienenee noin 0,44-kertaiseksi" (0,378 eV : 0,85 eV, the single-level mistake with the direction right), and drop the reciprocal pair.
+- solutions.md fy8-3-L2-08 — "Paschenin sarjan" is named only in the solution; the brief's table has Paschen, so it is fine. Give the series' name already in the stem or leave it out.
+- exercises.json fy8-3-L2-08 stem — "Miten fotonin aallonpituus muuttuu" has no stated reference direction. Say "Miten siirtymän 6 -> 3 fotonin aallonpituus on verrattuna siirtymän 4 -> 3 fotonin aallonpituuteen?"
 
 ## Checked
-- Delta (41862d574): answers.py now fits with hand-written _polyfit1; L2-05 gives slope -3,289e15 Hz, E_ion 13,6025 eV (same as the numpy value, answer 13,6 eV, tolerance 0,03). No numpy import remains in the path.
-- check_solutions.py fy8-3 ok; answers_shown.py: all 4374 shown answers agree. All 19 numeric json answers within their 2 % tolerance of the code values (L1-07 121,57, L1-08 2,55, L2-06 3, L2-07 13,056, L3-04 365,3, L3-05 97,25).
-- Nothing else in the set changed since the PASS; counts 8/7/5 unchanged.
+- New task fy8-3-L2-08 (prediction of change, type 6): the situation and then one question; E4-E3 = 0,661 eV, E6-E3 = 1,133 eV, ratio 0,583 all verified.
+- Distractors match the chapter's warned mistake (photon energy from one level, |E4| = 0,85 eV -> 0,38 eV gives 2,25) and the inverse reading (1,7). Feedback names each error.
+- The correct feedback gives the energies and the ratio but no extra reasoning stage. The ratio route (h and c cancel) is explained step by step in the solution.
+- Within the chapter: E_n and lambda = hc/dE only.
+Method: text only (packet, exercises.json, solutions.md, git diff of the new task); no renders were opened. Long formula chains are wrapped by scripts/mathlayout.py per CLAUDE.md, so no separate 300 px finding.

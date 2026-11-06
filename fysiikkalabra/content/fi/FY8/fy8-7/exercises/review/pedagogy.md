@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 3b8c917c57419b7d
-
-Round: 2
+CONTENT-HASH: 550d4a2308e6dc21
 
 ## Blocking
 (none)
 
 ## Polish
-- solutions.md fy8-7-L3-05 d) — ratkaisu väittää, että neodyymilaserin alempi lasertaso tyhjenee heti (nelitasolaser) ja kynnys on vahvistuksen ja häviöiden tasapaino; fysiikka on oikein, mutta nelitasolaserin käsite ei välttämättä ole luvussa. Jos ei ole, lisää yksi lause "alempi taso tyhjenee nopeasti, joten inversio on helppo saada".
-- exercises.json fy8-7-L2-07 / solutions.md — väite energiavöiden energioiden vaihtelusta voi ylittää luvun sisällön; lyhennä tarvittaessa "energia-aukko ei ole yksi tarkka arvo".
+- exercises.json fy8-7-L1-09 stem — two unrelated settings (laser and LED at 650 nm; quantum dots A and B) are introduced before the five statements, and statements 2, 3 and 5 need neither. A student has to look up which statement refers to which setup. Fix: name the setup in each statement, or open with "Kysymys koskee laseria ja kvanttipisteitä" and keep one context.
+- statement 3 ("lämmitetään riittävän kuumaksi") — the brief says only that inversion is made by pumping. That thermal equilibrium always has more atoms on the lower level is the solution's claim, not the lesson's. Reword the statement to "Populaatioinversio syntyy, kun laseraine vain lämmitetään" so that it uses what the lesson teaches.
+- statements 2 and 5 are the two long, "koska ..." sentences and are both true; shorten them or add a long false one so that length is no clue.
 
 ## Checked
-- Round 1:n Blocking (L3-04:n 61 sanan johdanto yhtenä kappaleena) on korjattu: johdanto on kolmessa kappaleessa, kohdat a)–d) omina kappaleinaan; ratkaisun L3-04 sijoitus jaettu kohdittain.
-- Round 1:n Polish toteutettu: L1-07 Järkevyys ei enää viittaa kuvaajaan; L2-05 b) kysyy suoraa verrannollisuutta ja ratkaisu vastaa (ei); L3-05 a) perustelee pisteiden valinnan; L3-05 d) ratkaisu täsmennetty.
-- L1-07: 1,34 · 10^16 1/s; ratkaisu sanoo "1,3 · 10^16 (laskimen tulos 1,34 · 10^16)", answer 1.34e16 täsmää toleranssin sisällä.
-- L2-06: suhde 1,30, ratkaisu nyt 1,3 (kaksi merkitsevää); answer 1.3 täsmää.
-- L3-04: 82,2 %, lämpö 5,0 W, pakollinen 1,44 W, 75 % oikein.
-- L3-05: k = 0,398, kynnys 24,8 mW, 0,524 laserfotonia pumppausfotonia kohti, answer 0.524 täsmää.
-- Määrät 8/7/5, tasot ja kinds sopivat; ei kaksoiskappaleita; kaikissa ratkaisuissa kaikki vaiheet.
+- New task fy8-7-L1-09 (true/false, type 8): two true (2, 5), three false (1, 3, 4). The false ones are the lesson's warned mistakes: laser light has more energetic photons (1), heating gives inversion (3), a smaller dot gives longer wavelength (4).
+- Feedback for each statement names the error and does not reveal the others.
+- 1,91 eV for 650 nm verified; the workload is five short judgements at level 1.
+- Stays within the lesson (stimulated emission, inversion by pumping, resonator axis, dot size).
+Method: text only (packet, exercises.json, solutions.md, git diff of the new task); no renders were opened. Long formula chains are wrapped by scripts/mathlayout.py per CLAUDE.md, so no separate 300 px finding.

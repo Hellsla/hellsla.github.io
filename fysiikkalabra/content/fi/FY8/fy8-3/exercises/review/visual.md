@@ -1,20 +1,16 @@
-VERDICT: PASS
-CONTENT-HASH: 858f921815ead802
-ROUND: 2
+VERDICT: FAIL
+CONTENT-HASH: aa7434ae1159c8f8
+ROUND: 1
 
 ## Blocking
-(none)
-
-Round 1 Blocking resolved: fy8-3-L1-08 (3-8) is now absorption $n = 2 \to 4$ ($2{,}55\,\text{eV}$; text, answer, kind, solution and Järkevyys updated together), so it no longer duplicates L2-07 or L1-02. The new L2-07 (3-15) uses $n = 5 \to 1$ ($13{,}1\,\text{eV}$, student result $340\,\text{eV}$) and is consistent.
+- [Major] solutions.md fy8-3-L2-08 Mallivastaus Tarkistus — at 390 px $\lambda_1 = 1240\,\text{eV}\,\text{nm} : 0{,}6611\,\text{eV} \approx 1876\,\text{nm}$ is cut off at "187" and $\lambda_2 \dots 1094\,\text{nm}$ at "109" (measured overflow 4 px past the viewport, clipped by the card) — the checked wavelengths are unreadable on a phone — put the result on its own line or split after the equals sign. Also the "ja" between the two lines and the following "ja molemmat…" read as a broken sentence; join as two display lines and start the next sentence with "Molemmat ovat Paschenin sarjan infrapunaa."
 
 ## Polish
-- [Minor] exercises.json fy8-3-L2-06, L3-04, L3-05 data tables — the $\lambda$ header still sits left of the right-aligned numbers (open-exercises-L3-1280-5; carried over) — align headers with the values (template matter).
-- [Minor] solutions.md fy8-3-L3-04 (3-19) Sijoitus — the trial for $m = 1, 2, 3, \geq 4$ is now a bullet list and reads well; the heading "Päätaso $m = 1$ (ylätaso kokonaisluku)" could say "ylätaso $n_\text{y}$ kokonaisluku" so the symbol is named.
+- [Minor] exercises.json fy8-3-L2-08 choice 1 feedback — the inline \tfrac fraction $\lambda = \tfrac{hc}{E_\text{y} - E_\text{a}}$ is tiny; use \dfrac or write in words.
+- [Minor] correct option "noin $0{,}58$-kertaiseksi" breaks as "0,58-/kertaiseksi" at 390 px; harmless.
 
 ## Checked
-- Hash run at start and end: 858f921815ead802. Opened open-exercises-1280-8 (L1-08 new version), open-exercises-L2-1280-10 (L2-06 Vastaus and L2-07 with the new quotation), open-exercises-L3-1280-6 (L3-04 list and answer; also the start of L3-05).
-- Diff against aba63e09c read for L1-02, L1-08, L2-05, L2-06, L2-07, L3-04, L3-05: answers match solutions (2,55 eV; 13,1 eV; 3 photons; 365 THz; $k = -3289\,\text{THz}$ consistent with $13{,}60\,\text{eV}$); quotations now use ”…”; written conclusions repeated under Vastaus.
-- KaTeX, upright units, decimal commas, answer boxes, solution cards intact; no clipping at 1280 px. Exercise captures exist only at 1280 px; the 360 px layout check is ok. The figure fy8-3/levels-task is unchanged and safe.
+- 390 and 1280 px captures of fy8-3-L2-08 with options, feedback and solution open; the option set is not form-identifiable (all four are one-line statements of similar length; the correct one is the only one with a number below 1 but the wrong ones carry numbers too). Orders compared with the direction stated (λ₂ : λ₁ and "pienenee"). Distractors catch inverse reading, "same end level" and |E| mistakes. Spelling of compounds (energiaharppaus, päätetaso) fine.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 3 · Finnish 4 · accessibility 4

@@ -1,20 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 60d9e9328cf45092
-Round: 3
+CONTENT-HASH: d394fe65746f5dd5
+ROUND: 1
+
 ## Blocking
-(none) Round 1 Blocking resolved: the L2-05 (5-13) class ranges now read "0,00–0,05" … "0,25–0,30" with a decimal comma in all six rows, matching the task text and solution.
+(none)
 
 ## Polish
-- [Minor] solutions.md L3-05 Annettu — the long constants line wraps between constants at 1280 px (no longer inside "h ="); acceptable.
-- [Minor] solutions.md L2-06 (5-14) Vastaus — the answer box value (120 Hz) is stated first, then a)–c); fine, but "kaksi merkitsevää numeroa" could sit after b) where the 120 Hz appears.
-- [Minor] exercises.json L2-06 (5-14) — the figure labels "0 solmua / 1 solmu / 2 solmua" already give the a)-count away; harmless now that a) asks only for λ.
+- [Minor] solutions.md fy8-5-L1-09 Mallivastaus — the energy lines wrap "(tila D, 2p)" so that "2p)" lands alone on the next line at 390 px; set the state label in the following sentence or shorten to "(D)".
+- [Minor] the term "solmupinta" in tila E is not in the chapter glossary list of the packet; check it is used in the lesson (for pedagogy).
+- [Minor] the ordering selects ("Sija") carry no visible numbering hint of which end is smallest; the prompt names the direction, fine.
 
 ## Checked
-- Round 1 Polish carried: L2-05 Vastaus now split into a)/b)/c) lines (opened open-exercises-L2-1280-5, -6: table with comma, solution readable).
-- Opened at 1280 px: open-exercises-L2-1280-7 (5-14 changed task text, figure fy8-5/string, node labels, answer box Hz), open-exercises-L3-1280-8 (L3-05 with NIST source line, constants).
-- Read the diff against 8041d06bb: MC option order changed, L2-06 now asks λ and f for all three states (40/80/120 Hz recomputed, match), spectrum and L3-05 task texts split into paragraphs, L3-05 source (NIST) added. All numbers match answers.
-- No 360 px exercise capture exists; layout check at 360 px is clean per packet.
-- Delta (boxed value added to the Vastaus first line of L2-05): 72,3 % is correct (72,25 % in the solution and exercises.json within tolerance), LaTeX number+unit and decimal comma right; the line is short and reads well.
+- 390 and 1280 px captures of fy8-5-L1-09 with the answer and solution open; the five Tila cards with "Sija" selects are readable and large enough on a phone; formula chains E_n = −13,6 eV / n² = … fit 300 px (the longest fits with the label wrapping); no clipping, no page overflow. Answer text lists energies with units in LaTeX.
+- Form check: not a choice task; the distractor traps (3d vs 4s, node count vs n, |E| order) are all in the solution. Compound spelling fine.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

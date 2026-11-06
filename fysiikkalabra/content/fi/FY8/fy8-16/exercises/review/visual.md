@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: eb2ae3787808b0eb
-ROUND: 2
+CONTENT-HASH: f7549c461bffdbad
 
 ## Blocking
-(none; round 1 had none)
+(none)
 
 ## Polish
-- [Minor] solutions L2-05 Vastaus — "tarkemmin 68,4" while the Sijoitus gives 68,45; write 68,5 or 68,45 consistently.
-- [Minor] L1-07 is still a third rearrangement of v = H0 d (L1-03, L1-04); consider a two-point data set.
-- [Minor] L3-05 solution — the "Yleinen lipsahdus" sentence in Järkevyys is placed before the sanity check; moving it after the T·λ check would read better.
+- [Minor] solutions.md 16-8 — the fraction chain writes c z : H_0 inside a numerator, which reads clumsily; write d = cz/H_0 as a fraction or say 'c ja H_0 supistuvat' beside it.
+- [Minor] solutions.md 16-8 — final paragraph about 110 words; split before "Järkevyys".
 
 ## Checked
-- Round 1 Polish resolved: "0–250 Mpc" no longer breaks, slope range now 65-72 matching the answer tolerance 0,05, L3-05 wording no longer says "mikään ei liiku valoa nopeammin", correct MC options reordered and no longer the longest (L2-07 verified).
-- Captures at 1280 px (every solution open): L2 parts 6, 7 and 9 (L2-05 table and graph description, L2-06 answer 1,7·10^2 Mpc, L2-07 MC). No 360 px exercise captures in the packet.
-- Recomputed 68,45, 170,9 Mpc, 10,9 K: match. No red KaTeX, no overflow. Hash at start and end the same.
+- Rendered at 390 px with my own script (feedback of every option/statement, answer and solution open) and viewed the render of task 16-8 (L2-08, redshift ratio MC): correct option is the largest and last, but all four are one form (noin x-kertainen); distractors match the warned slips (reversed ratio, wavelengths instead of shifts, nm instead of z); three display blocks fit with no overflow.
+- Overflow measured: page scrollWidth 390 = viewport, no element past the right edge, no red KaTeX; widest formula block 286 px (inline chains in feedback shorter than 300 px).
+- From text only: the diff of exercises.json, solutions.md and answers.py; wording, spelling of compounds, decimal commas, units in LaTeX, situation-then-question paragraph splits of the reflowed old tasks (checked in the diff, not re-viewed in renders).
+- screenshot.py captures are current (stamp matches the hash); I used them for the stamp check, not for the new task, which my render covers. Hash same at start and end.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 5 · accessibility 4
+illustrations n/a · typography 5 · Finnish 5 · accessibility 4

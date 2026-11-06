@@ -1,21 +1,19 @@
-VERDICT: PASS
-CONTENT-HASH: 8f45e577d831e5c3
-Round: 2
+VERDICT: FAIL
+CONTENT-HASH: a7bae5f159811330
+Round: 1 (delta)
 
 ## Blocking
-(none)
-
-Round 1 had no Blocking items; the round-2 changes were checked and are correct (L1-06 and L1-07 option order, L1-08 Kaava with the unit written as $1\,\text{eV}$, L2-05 Vastaus, L2-06 source line and caption, L3-04 rescaled table and cesium/strontium framing, L3-05 split text and two-significant-figure answer $540\,\text{kg}$).
+- [Major] solutions.md fy8-11-L2-08 Mallivastaus — the two inline lines `E_B,alku = 12 · 7,680 MeV = 92,16 MeV` and `E_B,loppu = 12 · 7,074 MeV = 84,888 MeV` are wider than the column at 390 px (335 and 353 px in 304 px; the render cuts off "92,16 M" and "84,888"); the results are not visible without scrolling and the chain rule is about 300 px — fix: break at the equals sign, as the Q lines below already are (`E_B,alku = 12 · 7,680 MeV` then `E_B,alku = 92,16 MeV`, same for loppu).
 
 ## Polish
-- [Minor] solutions.md L3-05 (11-20) — Vastaus gives $1500\,\text{MW}$ and $1000\,\text{MW}$ (two figures) while Sijoitus and Järkevyys keep $1536\,\text{MW}$, $1029\,\text{MW}$ and "$1029 > 507$"; harmless, but say "noin" in Vastaus or use the same values.
-- [Minor] exercises.json L2-06 (11-14) — caption "nettosähköteho (MW) (TVO:n ja Fortumin verkkosivut, tilanne 2024)" has two parentheses in a row; "nettosähköteho (MW); lähde: TVO:n ja Fortumin verkkosivut, tilanne 2024".
-- [Minor] exercises.json 11-8, 11-19 — unit labels beside the answer fields ("10^-11 J", "a") are plain text; project-wide field convention — leave.
-- [Minor] for science: L3-04 (11-19) — $30\,000\,\tfrac{\text{TBq}}{\text{t}}$ at ten years is high compared with typical spent-fuel values; as example data it is acceptable, but the science reviewer may want the label "esimerkkiaineisto" kept prominent.
+- [Minor] exercises.json L2-08 reason 4 feedback — "ja se muuttaa myös massaa" is ambiguous (what changes mass?); write "ja sidosenergian muutos vastaa massan muutosta".
+- [Minor] exercises.json L2-08 choice 1 feedback — "Hiili-12 on kevyt ydin huipun vasemmalla puolella" already gives the reason of stage 2; keep only "Fissio vapauttaa energiaa raskailla ytimillä".
+- [Minor] exercises.json L2-08 choice 1 feedback — "Jakautuminen ei vapauta energiaa aina" reads better as "Jakautuminen ei aina vapauta energiaa".
 
 ## Checked
-- 1280 px captures with every solution open: L3 part 6 (11-19 Kuvaajan lukeminen, Sijoitus a to c, Vastaus with the L3-03 reference) and L3 part 7 (11-19 Järkevyys, 11-20 task in three paragraphs, answer field, Annettu). Chains, aligned rows and answer boxes render cleanly; no clipping or red KaTeX.
-- Diff of exercises.json and solutions.md against 0f82a5dd8 read in full; the numbers in L3-04 (ln values, slope, $249{,}7\,\text{a}$) recomputed and match. Only 1280 px exercise captures exist; 360 px rests on check_layout (ok).
+- Own 390 px render of 11-16 with feedback (both stages) and solution open: task with nuclear notation, three choices, four reasons, solution; measured overflow: the two lines above only, no page-level scroll.
+- Form: the correct choice and the correct reason are not identifiable by length or hedging; the distractor reasons match the chapter's mistakes (binding energy released, fission always, conserved nucleon number). The correct choice's feedback does not reveal the reason.
+- Text only: L3-02 paragraph split.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations n/a (5) · typography 3 · Finnish 4 · accessibility 4

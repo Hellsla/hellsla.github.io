@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 43ecf04c9f072b4f
-Round: 2
+CONTENT-HASH: 0f1f787b19c2726d
 
 ## Blocking
+
 (none)
 
 ## Polish
-- fy8-14-L2-07 — still a near duplicate of L3-03 (same lead shielding, 511 keV, 3,9 mm; only the percentage differs), so L3-03 is easier than a level-2 task; change L2-07's shield or percentage, or accept and note.
-- solutions.md fy8-14-L3-05 — heading "Kuvaajan lukeminen" although no graph is drawn (kind has no "graph"); rename "Taulukon lukeminen" as done in fy8-13-L3-05.
-- fy8-14-L2-05 — 0,10 mSv for a chest X-ray is at the upper end of typical values (about 0,02–0,1); fine as example data, but "tyypillisten tutkimusten suuruusluokkaa" in the text already covers it.
+
+- fy8-14-L1-09 option 4 (A * 2t/T) — weak distractor (zero at t = 0, no real-world pull); replace with A * (1 - (1/2)^(t/T)), a more plausible slip.
+- Solution uses 110 min for fluorine-18, which the brief does not carry; say 'esimerkiksi 110 min' or give it in the stem.
 
 ## Checked
-- Round 1 had no Blocking; Polish applied: L1-06 distractor feedback rewritten and options reordered, L1-08 "concept" kind removed, L3-05 semicolon lists, 5,1 mSv now sourced (STUK-A263, 2020) and matches fy8-13.
-- L2-05 recomputed: 0,030 + 0,20 + 2,0 = 2,23 mSv, 2,23/5,1 = 43,7 % -> 44; stored answer 44, Järkevyys updated (0,23 mSv, 0,44).
-- L3-05: fit of ln R against d gives d1/2 = 9,18 mm and dx = 12,1 mm as the solution states; ratios 0,685/0,679/0,699/0,676 correct; sig-fig justification in Vastaus is sound.
-- L1-06 shuffled options: correct answer text matches stored answer; L2-07 Järkevyys wording keeps 74 % and 1,0 % correct.
-- Levels, plan fit and complete solutions as in round 1.
-- No 360 px exercise captures listed; no layout change in this round.
+
+- New task L1-09 (model, symbolic) uses the decay law from fy8-9 in PET context; it needs a student to invert the law, the key idea, and options A and B are the two natural directional slips. Option C (correct) not identifiable by form: all four are expressions of the same length.
+- Correct feedback gives the idea via example (A0 = 4A for two half-lives), not a leaked stage.
+- Level 1 is at the upper edge (inverse direction), acceptable since the algebra is one step; the solution divides both sides and shows 1/(1/2)^n = 2^n.
+- Formula chains fit one line each (text only). Checked from text only (JSON, solutions.md, packet brief); no renders or screenshots were available in the packet, so the 390 px fit of the new task and the formula-chain width were judged from the line lengths of the aligned blocks.

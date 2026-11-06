@@ -1,18 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 3b8c917c57419b7d
-Round: 2
+CONTENT-HASH: 550d4a2308e6dc21
+Round: 1
 
 ## Blocking
 
 ## Polish
-- exercises.json fy8-7-L1-07 — carried over: the key is 1.34e16 while the Vastaus gives 1,3·10¹⁶; the Vastaus now names the calculator value, so this is consistent; 1.3e16 would match the stated two figures.
-- exercises.json fy8-7-L2-05 b) — "Onko energiarako suoraan verrannollinen pisteen kokoon?" has an obvious no (the gap falls as d grows). — Ask instead "Onko energiarako kääntäen verrannollinen halkaisijaan?" (it is not: E·d grows from 5,1 to 12,1 eV nm), which tests the data.
+- exercises.json:136 (fy8-7-L1-09 statement 3) — the heating statement needs the idea that thermal equilibrium always keeps N₁ > N₂; the brief's Tiivistelmä teaches inversion by pumping but not why heating cannot do it. Fine as a reasoning statement if the lesson says it; otherwise add "lämmittäminen ei riitä" to the lesson or reword to "Populaatioinversio syntyy, kun ainetta lämmitetään" (still false, needs no Boltzmann reasoning).
+- exercises.json:148 vs solutions.md (statement 5) — feedback says "satoja kertoja", solution "monta kertaa"; true for a He–Ne laser, not for every laser. Use "monta kertaa" in both.
 
 ## Checked
-- Round-1 Blocking L3-05 resolved: Periaate and d) now say a Nd laser (four-level) has inversion already at low pumping, the threshold is gain = losses (output mirror, scattering, absorption), below it only weak spontaneous light, P_L ≈ 0; inversion kept as the necessary condition. No other task in the set claims "no inversion below threshold".
-- Round-1 polish applied: L2-06 now 1,3 with two figures (key 1.3, answers.py comment updated); L2-07 option 2 feedback says "laserista ulos tuleva energia"; L3-05 "pumppaustehoilla" fixed and the two figures justified by the fit's spread.
-- L3-05: slope 0,398, threshold 24,8 mW, 0,398·1064/808 = 0,524 recomputed.
-- L1-07 Sijoitus rewritten: hc = 1,9865·10⁻²⁵ J m, Pλ = 2,660·10⁻⁹ W m, 1,339·10¹⁶ 1/s.
-- L3-04 only re-paragraphed: 82,22 %, 5,0 W, 1,44 W, 75,0 % unchanged.
-- L1-06, L1-08, L2-07: one correct option each, answer text matches.
-- All 17 answers.py values reproduced; hash identical at start and end.
+- Recomputed in one script: hc = 1,9865·10⁻²⁵ J m, 650 nm photon 3,056·10⁻¹⁹ J = 1,91 eV for laser and LED alike; key "1 epätosi, 2 tosi, 3 epätosi, 4 epätosi, 5 tosi" correct.
+- Statement 4: smaller dot (3 nm) → larger gap → shorter λ, so "A longer λ" is false; consistent with the Tiivistelmä.
+- Statements 2 and 5 true as the lesson states them (stimulated photon copies energy, direction and phase; axial light amplified between mirrors).
+- Distractors catch the chapter's own warned mistake (laser photons "more energetic", statement 1); every feedback's physics right; no de Broglie anywhere.
+- Notation (hf, λ, E₂ − E₁, N₂ > N₁) as in the brief; answers.py only gained a comment and still runs.
+- 3–6 statements with at least one true and one false (exercise-types type 8).
+- Text only: the inline chain "hc = 6,626·10⁻³⁴ J s · 2,998·10⁸ m/s = …" in solutions.md:149 is long (~380 px estimated); KaTeX can break at = and ·, but the visual reviewer should measure it at 390 px.
+- Hash identical at start and end.

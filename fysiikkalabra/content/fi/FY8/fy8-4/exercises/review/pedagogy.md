@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: e9be860c13569231
+CONTENT-HASH: 1581751e686fef70
 
 ## Blocking
+(none)
 
 ## Polish
-- exercises.json:74 fy8-4-L1-07 — E = hc/λ for 405 nm still does not practise this chapter and repeats fy8-1-L1-01/04 — fix: ask for the momentum of the photon, or photons per second from a stated power.
-- exercises.json:147 fy8-4-L2-05 — the box still holds the ratio 11,4 (least informative part); the sqrt(n) argument is now in the solution — fix: box part c) as the chosen N (500).
-- exercises.json:303 fy8-4-L3-05 — the table still lists 60° and 90° though only 120° is used (the solution says so) — fix: keep one row, or ask for p_e at 90° as well.
+- exercises.json fy8-4-L2-08, option "lyhyempi" feedback — "fotoni on luovuttanut osan energiastaan elektronille" already states the reason a student is asked to choose in the second stage. Rewrite so it only says that a shorter wavelength means a more energetic photon, and that the photon has no energy source.
+- exercises.json fy8-4-L2-08, reasons 1 and 3 — they differ by one word ("suoraan"/"kääntäen"), which is the intended trap, but they are also the two longest and most alike, so a student who sees the twin pair gets the stage from structure. Add a fourth wrong reason that is not a twin of the correct one, or make reason 4 less "true and complete".
+- Reason 4 feedback "Väite on tosi" is good; keep.
 
 ## Checked
-- Round 2. Round 1 had no Blocking. Carried-over Polish done: L3-04 now has e) which-way part (pattern cannot arise from known slit) and a different task shape; L2-07 changed to 633 nm, 2,0 mW with a) under Vastaus.
-- L2-07: wrong 3,14e-28 J and 6,4e24 /s reproduced from nm used as m; correct 6,37e15 /s.
-- L3-04: 4017 /s, 321 /s, 15,6 s, 75 km, 2e-5 photons in the apparatus recomputed.
-- L3-05: p 9,319e-24, p' 8,863e-24, p_e 1,575e-23 kg m/s, Ek 850 vs 854 eV recomputed; task id reference removed.
-- L2-05: sums 50/500/5000, shares 44/49,6/47,5 %, ratio 11,4, N = 500 argument valid.
-- L1-06, L1-08, L2-06 unchanged and correct. Counts 8/7/5.
+- New task fy8-4-L2-08 (two-stage, type 1): the first stage tests direction (pidempi), the second the cause. Stage 2 distractors: wrong proportionality (the chapter's inverse-reading error), the wave-model "same frequency", and a true but irrelevant statement.
+- The correct first-stage feedback gives the 3 % and the nm values but not the reason; the correct second-stage feedback gives the reason only after the commitment.
+- Numbers: 17,4 keV -> 0,0713 nm; 16,85 keV -> 0,0736 nm; ratio 1,03. The task stays within the lesson (hf = hf' + E_k, p = h/lambda).
+- The solution says why each wrong reason fails.
+Method: text only (packet, exercises.json, solutions.md, git diff of the new task); no renders were opened. Long formula chains are wrapped by scripts/mathlayout.py per CLAUDE.md, so no separate 300 px finding.
