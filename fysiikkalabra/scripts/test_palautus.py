@@ -74,8 +74,6 @@ pages_with = sorted(p.relative_to(SITE).as_posix() for p in SITE.rglob("*.html")
 chapters = sorted(p.name for p in SITE.glob("fy*-*.html") if re.fullmatch(r"fy[1-8]-\d+\.html", p.name))
 want = sorted(f"{d}{n}" for d in ("", "en/", "fi-easy/") for n in chapters if (SITE / d / n).is_file())   # teacher 2026-11-06: also English (and Selkeä suomi), every course FY1-FY8
 expect("palautus.js is loaded on every FY1-FY8 chapter page (fi, en, fi-easy) and nowhere else", len([c for c in chapters if c.startswith("fy3-")]) >= 16 and {c.split("-")[0] for c in chapters} == {f"fy{i}" for i in range(1, 9)} and pages_with == want, sorted(set(pages_with) ^ set(want)))
-for i in range(1, 9):
-    expect(f"FY{i}: its own local grading page palautus/arviointi-fy{i}.html", (ROOT / f"palautus/arviointi-fy{i}.html").is_file() and f'"id": "FY{i}"' in (ROOT / f"palautus/arviointi-fy{i}.html").read_text())
 
 OPEN = "document.querySelectorAll('#exercises details.level').forEach((d) => { d.open = true; })"
 
@@ -445,15 +443,22 @@ with sync_playwright() as p:
                 zi = zipfile.ZipInfo(f"{form} (File responses)/Palauta vastaukset (File responses)/" + name, date_time=when); zi.compress_type = zipfile.ZIP_DEFLATED
                 z.writestr(zi, text)
     zpath, zpath2 = tmp / "ryhma-a.zip", tmp / "ryhma-b.zip"
-    make_zip(zpath, "FY3 ryhmä A", [
+    FA, FB = "FY3.1 lv 2026-27 Palauta ratkaisut", "FY3.2 lv 2026-27 Palauta ratkaisut"   # Forms names (palautus/forms-ilme)
+    make_zip(zpath, FA, [
         ("fy3-1.ratkaisut - Aino Opiskelija.json", json.dumps(files["v1"]), (2026, 11, 5, 10, 0, 0)),
         ("fy3-1.ratkaisut (1) - Aino Opiskelija.json", json.dumps(files["v1"]), (2026, 11, 5, 10, 5, 0)),
         ("fy3-1.ratkaisut - Bertta Opiskelija.json", json.dumps(files["v1"]), (2026, 11, 5, 10, 10, 0)),
         ("fy3-1.ratkaisut (2) - Aino Opiskelija.json", json.dumps(files["v2"]), (2026, 11, 5, 11, 0, 0)),
         ("fy3-2.ratkaisut - Aino Opiskelija.json", chapter_file(ch2, "Ainon työ ja energia"), (2026, 11, 5, 11, 15, 0)),
         ("kuva - Cecilia Opiskelija.json", "<html><script>alert(1)</script></html>", (2026, 11, 5, 11, 30, 0))])
-    make_zip(zpath2, "FY3 ryhmä B", [("fy3-2.ratkaisut - Daniel Opiskelija.json", chapter_file(ch2, "Danielin työ ja energia"), (2026, 11, 6, 9, 0, 0))])
-    page = ROOT / "palautus/arviointi-fy3.html"
+    make_zip(zpath2, FB, [("fy3-2.ratkaisut - Daniel Opiskelija.json", chapter_file(ch2, "Danielin työ ja energia"), (2026, 11, 6, 9, 0, 0))])
+    zcopy, zfy5, zanon = tmp / "kopio.zip", tmp / "fy5.zip", tmp / "nimeton.zip"
+    make_zip(zcopy, FA + " (kopio)", [("fy3-2.ratkaisut - Eero Opiskelija.json", chapter_file(ch2, "Eeron työ"), (2026, 11, 6, 9, 0, 0))])
+    make_zip(zfy5, "FY5.1 lv 2026-27 Palauta ratkaisut", [("fy5-1.ratkaisut - Eero Opiskelija.json", "{}", (2026, 11, 6, 9, 0, 0))])
+    make_zip(zanon, "Palautukset", [("fy3-2.ratkaisut - Eero Opiskelija.json", chapter_file(ch2, "Eeron työ"), (2026, 11, 6, 9, 0, 0))])
+    pages_ = sorted((ROOT / "palautus").glob("arviointi-*.html"))
+    expect("one grading page, the running period's (teacher 2026-11-06: not one file per course)", [f.name for f in pages_] == ["arviointi-2026-27-p1.html"], [f.name for f in pages_])
+    page = pages_[0]
     lctx = b.new_context(accept_downloads=True, viewport={"width": 1400, "height": 900}, bypass_csp=True)   # the test itself evaluates scripts; the page keeps its CSP for the teacher
     lp = lctx.new_page(); lerr = []; net = []
     lp.on("pageerror", lambda e: lerr.append(str(e)))
@@ -467,16 +472,14 @@ with sync_playwright() as p:
         lp.wait_for_function("(w) => document.getElementById('localMsg').textContent.indexOf(w) >= 0", arg=want)
         lp.wait_for_function("document.getElementById('homeState').textContent !== 'Ladataan…'")
 
-    def add_group(name):
-        lp.fill("#newGroup", name); lp.click("#addGroup")
-        lp.wait_for_function("(g) => document.getElementById('title').textContent.indexOf('ryhmä ' + g) >= 0", arg=name)
     lp.goto(page.as_uri())
-    lp.wait_for_selector("#pick")
-    expect("local page: asks for a group first, no zip before it", "Lisää ensin ryhmä" in lmsg() and lp.is_disabled("#pick"), lmsg())
+    lp.wait_for_selector("#import")
+    expect("local page: one button 'Tuo tiedosto', no group fields (teacher 2026-11-06)", lp.inner_text("#import") == "Tuo tiedosto" and lp.locator("#newGroup, #addGroup").count() == 0
+           and lp.is_hidden("#groupWrap") and lp.is_hidden("#more") and "Tuo tiedosto" in lmsg(), lmsg())
     expect("local page: the whole course, chapters in teaching order", lp.locator("details.chapter").count() == len(course["chapters"]) >= 16
            and lp.locator("details.chapter").nth(3).get_attribute("data-chapter") == "fy3-13", lp.locator("details.chapter").count())
-    add_group("FY3.1")
     load(zpath)
+    expect("local page: the group comes from the zip (form 'FY3.1 lv 2026-27 ...')", "ryhmä FY3.1" in lp.inner_text("#title"), lp.inner_text("#title"))
     msg = lmsg()
     expect("local page: reads the group's Drive zip and imports (name from the Forms file name)", "Ryhmä FY3.1: luettu 6 tiedostoa" in msg and "hyväksyttyjä 3" in msg and "kaksoiskappaleita 1" in msg and "tarkistettavia 1" in msg and "virheellisiä 1" in msg, msg)
     expect("local page: problems list with chapter, names and an accept button", "Bertta Opiskelija" in lp.inner_text("#problems") and "Luku 1" in lp.inner_text("#problems") and lp.locator("#problems button").count() >= 2, lp.inner_text("#problems")[:300])
@@ -516,15 +519,22 @@ with sync_playwright() as p:
     lp.select_option("#scope", "fy3-2")
     expect("local page: the summary of one chapter", json.loads(rows()) == [["Aino Opiskelija", f"1 / {m2}", "0", f"0,5 / {m2}"], ["Bertta Opiskelija", f"0 / {m2}", "0", f"0 / {m2}"]], rows())
     lp.select_option("#scope", "all"); lp.click('#summary button[data-key="name"]')
+    gc = lp.inner_text("#groupChart")
+    expect("local page: chart of the group: done and points out of the maximum (teacher 2026-11-06)", lp.is_visible("#groupChart") and "Tehty" in gc and "Pisteet" in gc and f"({a_v2 + 1 + b_v1} / {2 * (m1 + m2)})" in gc
+           and lp.locator("#summary tbody .meter").count() == 4 and lp.evaluate("document.querySelector('#summary tbody .meter.pts > span').style.width") not in ("", "0%"), gc)
+    lp.click("#more > summary")
     with lp.expect_download() as d: lp.click("#csv")
     csv = [r.split(";") for r in pathlib.Path(d.value.path()).read_text(encoding="utf-8-sig").splitlines()]
     n_ch = len(course["chapters"])
     expect("local page: CSV per group: chapters, total, returned chapters, done, unchecked (decimal comma; 0 kept apart from not returned)", d.value.suggested_filename == "FY3-FY3.1-pisteet.csv" and csv[0][:3] == ["Opiskelija", f"Luku 1 (max {m1})", f"Luku 2 (max {m2})"]
            and csv[0][n_ch + 1:] == ["Yhteensä", "Palautettuja lukuja", "Tehty", "Tarkistamatta"] and csv[1][:4] == ["Aino Opiskelija", "0", "0,5", ""] and csv[1][n_ch + 1:] == ["0,5", "2", str(a_v2 + 1), str(a_v2 - 1)]
            and csv[2][:3] == ["Bertta Opiskelija", "1", ""] and csv[2][n_ch + 1:n_ch + 3] == ["1", "1"], (d.value.suggested_filename, csv[:3]))
-    # another group's zip is not read into this group
-    load(zpath2, "Mitään ei luettu")
-    expect("local page: a zip from another group's form is refused", "FY3 ryhmä B" in lmsg() and "Daniel" not in lp.inner_text("#home"), lmsg())
+    # another form named for the same group is not read into it; another course, and a form with no group, neither
+    load(zcopy, "Mitään ei luettu")
+    expect("local page: a zip from another form of the same group name is refused", "(kopio)" in lmsg() and "Eero" not in lp.inner_text("#home"), lmsg())
+    load(zfy5, "ei ole tällä arviointisivulla")
+    load(zanon, "Ryhmää ei tunnistettu")
+    expect("local page: neither another course nor a nameless form adds a group", lp.is_hidden("#groupWrap") and "Eero" not in lp.inner_text("#home"), lmsg())
     # reopen: group, points and imports kept in this browser, files read again without duplicates
     lp.reload(); lp.wait_for_selector("#tasks tr.task-row"); lp.wait_for_function("document.getElementById('homeState').textContent !== 'Ladataan…'")
     first = lp.locator("#tasks tr.task-row").first.inner_text().split("\t")
@@ -534,14 +544,24 @@ with sync_playwright() as p:
     go_back(lp)
     load(zpath)
     expect("local page: reading the same zip again adds nothing", "Uusia palautuksia 0" in lmsg(), lmsg())
-    # a second group: its own form, students and points
-    add_group("FY3.2")
-    expect("local page: a new group starts empty", "Aino" not in lp.inner_text("#home") and lp.is_hidden("#summary"), lp.inner_text("#home")[:200])
+    # a second group: its own form, students and points, made from the zip alone
     load(zpath2)
+    expect("local page: the second group from its zip; a group menu appears", "ryhmä FY3.2" in lp.inner_text("#title") and lp.is_visible("#groupWrap"), lp.inner_text("#title"))
     expect("local page: the second group has only its own students", "Daniel Opiskelija" in lp.inner_text("#summary") and "Aino" not in lp.inner_text("#summary"), lp.inner_text("#summary"))
     lp.select_option("#group", "FY3.1"); lp.wait_for_function("document.getElementById('title').textContent.indexOf('ryhmä FY3.1') >= 0")
     lp.wait_for_function("document.getElementById('homeState').textContent !== 'Ladataan…'")
     expect("local page: switching back shows the first group's students and points only", "Aino Opiskelija" in lp.inner_text("#summary") and "Daniel" not in lp.inner_text("#summary"), lp.inner_text("#summary"))
+    # both zips at once: each goes to its own group
+    lp.reload(); lp.wait_for_selector("#import")
+    lp.evaluate("document.getElementById('localMsg').textContent = ''")
+    lp.set_input_files("#pick", [str(zpath), str(zpath2)])
+    lp.wait_for_function("document.getElementById('localMsg').textContent.indexOf('Ryhmä FY3.2') >= 0")
+    expect("local page: two zips at once, each read into its own group", "Ryhmä FY3.1: luettu 6" in lmsg() and "Ryhmä FY3.2: luettu 1" in lmsg(), lmsg())
+    # groups made before 2026-11-06 (per course keys) are kept
+    lp.evaluate("""() => { localStorage.setItem('ruukkilabra:arviointi:FY3:ryhmat', JSON.stringify(['FY03.9']));
+      localStorage.setItem('ruukkilabra:arviointi:FY3:ryhma:FY03.9', JSON.stringify({format: 'ruukkilabra-arviointi', version: 1, course: 'FY3', group: 'FY03.9', forms: [], sheets: []})); }""")
+    lp.reload(); lp.wait_for_selector("#import")
+    expect("local page: an older group is moved to the new storage", "FY03.9" in lp.evaluate("[...document.querySelectorAll('#group option')].map((o) => o.value)"), lp.evaluate("[...document.querySelectorAll('#group option')].map((o) => o.value)"))
     expect("local page: nothing loaded from the network", not net, net)
     expect("local page: no script errors", not lerr, lerr)
     lctx.close()
