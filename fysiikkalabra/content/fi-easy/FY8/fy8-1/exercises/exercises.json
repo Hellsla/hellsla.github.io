@@ -94,6 +94,45 @@
       "answer": "Elektroni irtoaa, kun se ottaa vastaan yhden fotonin, jonka energia on vähintään irrotustyön suuruinen. Ultraviolettifotonin energia $3{,}40\\,\\text{eV}$ on suurempi kuin irrotustyö $2{,}28\\,\\text{eV}$. Siksi jo yksi fotoni irrottaa elektronin heti, vaikka fotoneja tulisi vähän. Punaisen valon fotonin energia $1{,}91\\,\\text{eV}$ on pienempi kuin irrotustyö. Siksi yksikään fotoni ei yksin riitä, eikä energiaa kerry useammasta fotonista. Fotonien suuri määrä eli kirkkaus ei siis auta.",
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-1-L1-09",
+      "level": 1,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "Metallilevyä valaistaan vuorotellen kahdella lampulla. Tilanteen arvot ovat esimerkkiarvoja.\n\nMetallin irrotustyö on $W = 2{,}50\\,\\text{eV}$. Irrotustyö on pienin energia, jonka elektroni tarvitsee irrotakseen metallista.\n\nLamppu A on himmeä. Sen violetin valon fotonin energia on $3{,}10\\,\\text{eV}$.\n\nLamppu B on hyvin kirkas. Sen vihreän valon fotonin energia on $2{,}25\\,\\text{eV}$.\n\nPäättele, mitkä väitteet ovat tosia ja mitkä epätosia.",
+      "answer": "1 epätosi, 2 tosi, 3 epätosi, 4 tosi, 5 epätosi",
+      "unit": "",
+      "tolerance": 0.02,
+      "statements": [
+        {
+          "text": "Lamppu B alkaa irrottaa elektroneja, kun sen valon intensiteettiä kasvatetaan tarpeeksi.",
+          "true": false,
+          "feedback": "Epätosi: tämä on aaltomallin ajatus, että riittävän kirkas valo irrottaisi aina elektroneja. Yksi elektroni saa yhden fotonin energian. Lampun B fotonin energia $2{,}25\\,\\text{eV}$ on pienempi kuin irrotustyö $2{,}50\\,\\text{eV}$. Kirkkaampi valo tuo vain lisää fotoneja, joiden energia on liian pieni."
+        },
+        {
+          "text": "Lampun A irrottamien elektronien suurin liike-energia on $0{,}60\\,\\text{eV}$.",
+          "true": true,
+          "feedback": "Tosi: valosähköisestä yhtälöstä $E_\\text{k,max} = hf - W$ saadaan $E_\\text{k,max} = 3{,}10\\,\\text{eV} - 2{,}50\\,\\text{eV}$. Tulos on $0{,}60\\,\\text{eV}$."
+        },
+        {
+          "text": "Kun lampun A intensiteetti kaksinkertaistetaan, suurin liike-energia on $1{,}20\\,\\text{eV}$.",
+          "true": false,
+          "feedback": "Epätosi: tässä luullaan, että kirkkaampi valo antaa elektronille enemmän energiaa. Taajuus ei muutu, joten yhden fotonin energia on yhä $3{,}10\\,\\text{eV}$. Elektroni ei myöskään kerää energiaa kahdelta fotonilta. Suurin liike-energia pysyy arvossa $0{,}60\\,\\text{eV}$."
+        },
+        {
+          "text": "Kun lampun A intensiteetti kaksinkertaistetaan, elektroneja irtoaa sekunnissa enemmän.",
+          "true": true,
+          "feedback": "Tosi: samanvärisellä valolla intensiteetti kertoo, kuinka monta fotonia osuu pinnalle sekunnissa. Fotoneja tulee enemmän, ja jokainen voi irrottaa yhden elektronin. Siksi myös elektroneja irtoaa enemmän."
+        },
+        {
+          "text": "Lamppu A irrottaa elektroneja vasta, kun ne ovat keränneet sen valosta energiaa jonkin aikaa.",
+          "true": false,
+          "feedback": "Epätosi: viive on aaltomallin ennuste, jota kokeissa ei havaita. Jo lampun A ensimmäinen fotoni tuo energian $3{,}10\\,\\text{eV}$. Se on suurempi kuin irrotustyö, joten elektroneja irtoaa heti, vaikka valo on himmeää."
+        }
+      ]
     }
   ],
   "level2": [

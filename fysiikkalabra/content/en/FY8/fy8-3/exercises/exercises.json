@@ -218,6 +218,37 @@
       "answer": 13.1,
       "unit": "eV",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-3-L2-08",
+      "level": 2,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "The energy levels of the hydrogen atom are $E_n = -\\tfrac{13.6\\,\\text{eV}}{n^2}$.\n\nThe line $\\lambda_1$ of the infrared spectrum of hydrogen is formed when an electron moves from level $n = 4$ to level $n = 3$.\n\nAnother line, $\\lambda_2$, is formed when an electron moves from level $n = 6$ to level $n = 3$.\n\nHow does the wavelength of the photon change when the transition $4 \\to 3$ is replaced by the transition $6 \\to 3$?",
+      "answer": "The wavelength decreases to about $0.58$ times its value.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The wavelength increases to about $1.7$ times its value.",
+          "feedback": "Here the dependence is read the wrong way round. The energy difference of the transition $6 \\to 3$ is greater, and the wavelength is inversely proportional to the energy difference, $\\lambda = \\tfrac{hc}{E_\\text{u} - E_\\text{l}}$, so the wavelength becomes shorter instead of longer."
+        },
+        {
+          "text": "The wavelength decreases to about $0.58$ times its value.",
+          "correct": true,
+          "feedback": "Correct: the energy difference grows from $0.661\\,\\text{eV}$ to $1.133\\,\\text{eV}$. The wavelength changes inversely, $\\lambda_2 : \\lambda_1 = 0.661 : 1.133$, that is about $0.58$."
+        },
+        {
+          "text": "The wavelength does not change, because the final level is the same.",
+          "feedback": "The same final level makes the lines members of the same series, but the photon energy is the difference between the initial and final levels. A higher initial level gives a greater difference and therefore a different wavelength."
+        },
+        {
+          "text": "The wavelength decreases to about $0.44$ times its value.",
+          "feedback": "Here the ratio of the energies of the initial levels, $0.38\\,\\text{eV} : 0.85\\,\\text{eV}$, has been used. However, the photon carries the difference of the levels $E_\\text{u} - E_\\text{l}$, not the energy of one level, and the wavelength is inversely proportional to this difference."
+        }
+      ]
     }
   ],
   "level3": [

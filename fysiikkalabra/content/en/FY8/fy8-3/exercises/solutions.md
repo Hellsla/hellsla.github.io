@@ -176,6 +176,37 @@
 **Answer:** a) The energy of the photon is the difference between the energies of the levels and is not proportional to the size of the orbit, and the result $340\,\text{eV}$ would exceed the ionisation energy. b) $13.1\,\text{eV}$, three significant figures, as in the value $13.6\,\text{eV}$.
 **Reasonableness:** The result is below the ionisation energy $13.6\,\text{eV}$, as it must be in a transition from a bound level to the ground state. The absolute value of the energy of level $n = 5$ is only $\tfrac{1}{25}$ of the ground-state value, so the energy difference is almost the whole ionisation energy: $13.06\,\text{eV}$ is $96\,\%$ of $13.6\,\text{eV}$. The corresponding wavelength is about $95.0\,\text{nm}$, ultraviolet.
 
+## fy8-3-L2-08
+**Find:** how the wavelength of the photon changes when the transition $4 \to 3$ of the hydrogen atom (wavelength $\lambda_1$) is replaced by the transition $6 \to 3$ (wavelength $\lambda_2$), that is the ratio $\lambda_2 : \lambda_1$.
+**Principle:** Energy is conserved, so the photon energy is the difference between the initial and final levels, $\tfrac{hc}{\lambda} = E_\text{u} - E_\text{l}$. The wavelength is therefore inversely proportional to the energy difference, and the ratio of the wavelengths is the inverse ratio of the energy differences. The constants $h$ and $c$ cancel.
+**Model answer:** The energy differences are
+
+$E_4 - E_3 = -\tfrac{13.6\,\text{eV}}{16} + \tfrac{13.6\,\text{eV}}{9}$
+
+$E_4 - E_3 = 0.6611\,\text{eV}$
+
+$E_6 - E_3 = -\tfrac{13.6\,\text{eV}}{36} + \tfrac{13.6\,\text{eV}}{9}$
+
+$E_6 - E_3 = 1.1333\,\text{eV}$
+
+The ratio of the wavelengths is
+
+$\dfrac{\lambda_2}{\lambda_1} = \dfrac{E_4 - E_3}{E_6 - E_3}$
+
+$\dfrac{\lambda_2}{\lambda_1} = \dfrac{0.6611\,\text{eV}}{1.1333\,\text{eV}} \approx 0.583$
+
+The wavelength decreases to about $0.58$ times its value, because a transition that starts from a higher level is a greater energy jump. Check:
+
+$\lambda_1 = 1240\,\text{eV}\,\text{nm} : 0.6611\,\text{eV}$
+
+$\lambda_1 \approx 1876\,\text{nm}$
+
+$\lambda_2 = 1240\,\text{eV}\,\text{nm} : 1.1333\,\text{eV}$
+
+$\lambda_2 \approx 1094\,\text{nm}$
+
+Both are infrared of the Paschen series. An increase to $1.7$ times would be obtained if the dependence were read the wrong way round. A decrease to about $0.44$ times would be obtained if the ratio of the energies of the initial levels, $0.38 : 0.85$, were taken instead of the ratio of the energy differences. The same final level does not make the wavelengths the same, because the photon energy also depends on the initial level.
+
 ## fy8-3-L3-04
 **Given:** emission lines $\lambda = 1876$; $1282$ and $1094\,\text{nm}$ ($\pm 1\,\text{nm}$), $E_n = -\tfrac{13.6\,\text{eV}}{n^2}$, all lines end on the same level, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Asked:** the minimum frequency $f_\text{ion}$ in terahertz at which a photon ionises the atom from the level on which the transitions end
