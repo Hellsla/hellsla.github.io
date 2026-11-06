@@ -31,8 +31,9 @@ var RL_CONFIG = {
   IDENTITY: 'email',
   // Sallittu sähköpostin verkkotunnus, esim. 'edu.example.fi'. Tyhjä = ei tarkisteta (lomake rajaa vastaajat).
   EMAIL_DOMAIN: '',
-  // Pisteet: kokonaisluku 0 … MAX_POINTS. Tyhjä = arvioimaton, 0 = annettu nolla pistettä.
-  MAX_POINTS: 3,
+  // Pisteet tehtävää kohti: 0 … MAX_POINTS, enintään kaksi desimaalia (esim. 0,5). Tyhjä = arvioimaton, 0 = annettu
+  // nolla pistettä. Opettaja 5.11.2026: 0–1 p tehtävää kohti.
+  MAX_POINTS: 1,
   // Ryhmän nimi arviointinäkymän otsikkoon, esim. 'FY3.2'. Paikallinen arviointisivu asettaa valitun ryhmän nimen.
   GROUP: '',
   SUBMISSIONS_SHEET: 'RL Palautukset',
@@ -137,7 +138,7 @@ function rlSheet_(name, head) {
       sh.getRange(2, RL_C.decision + 1, sh.getMaxRows() - 1, 1).setDataValidation(
         SpreadsheetApp.newDataValidation().requireValueInList([RL_DECISION.ACCEPT, RL_DECISION.REJECT], true).setAllowInvalid(false).build());
     } else {
-      sh.getRange(2, RL_S.points + 1, sh.getMaxRows() - 1, 1).setNumberFormat('0');
+      sh.getRange(2, RL_S.points + 1, sh.getMaxRows() - 1, 1).setNumberFormat('0.##');
       sh.getRange(2, RL_S.saved + 1, sh.getMaxRows() - 1, 1).setNumberFormat('d.m.yyyy h.mm.ss');
     }
     sh.protect().setDescription('RuukkiLabra kirjoittaa tähän. Muuta vain saraketta Opettajan päätös.').setWarningOnly(true);
@@ -428,19 +429,27 @@ function rlModel_() {
   return { students: list, scores: scores, problems: problems };
 }
 function rlScoreOf_(m, email, sub, task) { var v = m.scores[rlScoreKey_(email, sub, task)]; return v === undefined ? '' : v; }
+function rlRound_(x) { return Math.round(x * 100) / 100; }
+function rlPointsOk_(v) { return typeof v === 'number' && isFinite(v) && v >= 0 && v <= RL_CONFIG.MAX_POINTS && Math.abs(Math.round(v * 100) - v * 100) < 1e-6; }
+function rlNum_(x) { return String(rlRound_(x)).replace('.', ','); }   // suomalainen desimaalipilkku
 function rlLatest_(s, chapterId) { var vs = s.chapters[chapterId]; return vs ? vs[vs.length - 1] : null; }
-// Opiskelijan pisteet luvuittain (uusin hyväksytty versio) ja yhteensä; luku puuttuu, jos sitä ei ole palautettu.
+// Opiskelijan kooste luvuittain (uusin hyväksytty versio) ja yhteensä; luku puuttuu, jos sitä ei ole palautettu.
+// answered = tehtyjä (ratkaisu editorissa), unchecked = tehtyjä ilman pisteitä, points = pisteiden summa.
 function rlSummary_(m) {
   return m.students.map(function (s) {
-    var per = {}, total = 0, scored = 0, tasks = 0;
+    var per = {}, total = 0, scored = 0, tasks = 0, answered = 0, unchecked = 0;
     RL_COURSE.chapters.forEach(function (c) {
       var last = rlLatest_(s, c.id); if (!last) return;
-      var sum = 0, n = 0;
-      c.tasks.forEach(function (t) { var p = rlScoreOf_(m, s.email, last.sub, t.id); if (p !== '') { sum += p; n++; } });
-      per[c.id] = { points: sum, scored: n, tasks: c.tasks.length };
-      total += sum; scored += n; tasks += c.tasks.length;
+      var sum = 0, n = 0, a = 0, u = 0;
+      c.tasks.forEach(function (t) {
+        var p = rlScoreOf_(m, s.email, last.sub, t.id), done = last.answered.indexOf(t.id) >= 0;
+        if (p !== '') { sum += p; n++; }
+        if (done) { a++; if (p === '') u++; }
+      });
+      per[c.id] = { points: rlRound_(sum), scored: n, tasks: c.tasks.length, answered: a, unchecked: u };
+      total += sum; scored += n; tasks += c.tasks.length; answered += a; unchecked += u;
     });
-    return { email: s.email, chapters: per, total: total, scored: scored, tasks: tasks };
+    return { email: s.email, chapters: per, total: rlRound_(total), scored: scored, tasks: tasks, answered: answered, unchecked: unchecked };
   }).sort(function (a, b) { return a.email.localeCompare(b.email, 'fi'); });
 }
 
@@ -499,8 +508,8 @@ function rlSaveScore(req) {
   var info = req && typeof req.task === 'string' ? rlTaskInfo_(req.task) : null;
   if (!info || typeof req.email !== 'string' || typeof req.sub !== 'string') throw rlError_('Virheellinen tallennuspyyntö.');
   var value = req.value;
-  if (value !== '' && !(typeof value === 'number' && Math.floor(value) === value && value >= 0 && value <= RL_CONFIG.MAX_POINTS)) {
-    throw rlError_('Pisteet ovat kokonaisluku 0–' + RL_CONFIG.MAX_POINTS + ' tai tyhjä (arvioimaton).');
+  if (value !== '' && !rlPointsOk_(value)) {
+    throw rlError_('Pisteet ovat luku 0–' + RL_CONFIG.MAX_POINTS + ' (enintään kaksi desimaalia) tai tyhjä (arvioimaton).');
   }
   var lock = rlLock_(10000);
   try {
@@ -534,16 +543,16 @@ function rlSetDecision(req) {
     throw rlError_('Palautusta ei löydy.');
   } finally { lock.releaseLock(); }
 }
-// Pisteet taulukkona (CSV, puolipiste, UTF-8 BOM): opiskelija, pisteet luvuittain (uusin hyväksytty versio; tyhjä =
-// lukua ei palautettu), yhteensä, arvioitujen tehtävien määrä palautetuista luvuista.
+// Pisteet taulukkona (CSV, puolipiste, desimaalipilkku, UTF-8 BOM): opiskelija, pisteet luvuittain (uusin hyväksytty
+// versio; tyhjä = lukua ei palautettu), yhteensä, palautetut luvut, tehdyt ja tarkistamattomat tehtävät.
 // Kentät, jotka alkavat merkillä = + - @, saavat eteensä heittomerkin, jottei taulukko-ohjelma lue niitä kaavoiksi.
 function rlScoresCsv() {
   var m = rlModel_(), chapters = RL_COURSE.chapters;
   var q = function (v) { v = v === null || v === undefined ? '' : String(v); if (/^[=+\-@\t\r]/.test(v)) v = "'" + v; return /[;"\n\r]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; };
-  var lines = [['Opiskelija'].concat(chapters.map(function (c) { return rlChapterName_(c) + ' (max ' + c.tasks.length * RL_CONFIG.MAX_POINTS + ')'; }), ['Yhteensä', 'Palautettuja lukuja', 'Arvioitu']).map(q).join(';')];
+  var lines = [['Opiskelija'].concat(chapters.map(function (c) { return rlChapterName_(c) + ' (max ' + c.tasks.length * RL_CONFIG.MAX_POINTS + ')'; }), ['Yhteensä', 'Palautettuja lukuja', 'Tehty', 'Tarkistamatta']).map(q).join(';')];
   rlSummary_(m).forEach(function (s) {
-    var cells = chapters.map(function (c) { return s.chapters[c.id] ? s.chapters[c.id].points : ''; });
-    lines.push([s.email].concat(cells, [s.total, Object.keys(s.chapters).length, s.scored + '/' + s.tasks]).map(q).join(';'));
+    var cells = chapters.map(function (c) { return s.chapters[c.id] ? rlNum_(s.chapters[c.id].points) : ''; });
+    lines.push([s.email].concat(cells, [rlNum_(s.total), Object.keys(s.chapters).length, s.answered, s.unchecked]).map(q).join(';'));
   });
   return '﻿' + lines.join('\r\n') + '\r\n';
 }

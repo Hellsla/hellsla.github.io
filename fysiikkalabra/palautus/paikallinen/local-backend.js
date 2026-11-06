@@ -227,20 +227,18 @@
     // ryhmä: jokaisella ryhmällä oma lomake, oma zip ja oma tallennettu arviointi
     var gRow = el('p'); gRow.className = 'bar';
     var gLab = el('label'), gSel = el('select'); gSel.id = 'group'; gLab.append(el('b', 'Ryhmä: '), gSel);
-    var gNew = el('input'); gNew.type = 'text'; gNew.id = 'newGroup'; gNew.placeholder = 'Uuden ryhmän nimi, esim. FY3.2'; gNew.maxLength = 40; gNew.setAttribute('aria-label', 'Uuden ryhmän nimi');
+    var gNew = el('input'); gNew.type = 'text'; gNew.id = 'newGroup'; gNew.placeholder = 'Uusi ryhmä, esim. FY3.2'; gNew.maxLength = 40; gNew.setAttribute('aria-label', 'Uuden ryhmän nimi');
     var gAdd = el('button', 'Lisää ryhmä'); gAdd.type = 'button'; gAdd.id = 'addGroup';
     gRow.append(gLab, gNew, gAdd);
     var lab = el('label'), pick = el('input'); pick.type = 'file'; pick.multiple = true; pick.accept = '.zip,.json,application/zip,application/json'; pick.id = 'pick';
-    lab.append(el('b', 'Ryhmän palautukset: '), pick);
+    lab.append(el('b', 'Palautukset (zip): '), pick);
     var row = el('p'); row.className = 'bar';
-    var csv = el('button', 'Vie pisteet (CSV)'), bak = el('button', 'Varmuuskopioi ryhmän arviointi'), res = el('button', 'Palauta varmuuskopio'), clr = el('button', 'Poista ryhmä ja sen arviointi');
+    var csv = el('button', 'Vie pisteet (CSV)'), bak = el('button', 'Varmuuskopio'), res = el('button', 'Palauta varmuuskopio'), clr = el('button', 'Poista ryhmä');
     csv.id = 'csv'; bak.id = 'backup'; res.id = 'restore'; clr.id = 'clear';
     [csv, bak, res, clr].forEach(function (b) { b.type = 'button'; row.append(b); });
     var resFile = el('input'); resFile.type = 'file'; resFile.accept = '.json,application/json'; resFile.hidden = true;
     var msg = el('p'); msg.className = 'muted'; msg.id = 'localMsg'; msg.setAttribute('aria-live', 'polite');
-    var help = el('p', 'Valitse ryhmä ja sitten Drivesta ladattu ryhmän lomakkeen palautuskansion zip-tiedosto (tai useampi, jos Drive jakoi latauksen). Tiedostot luetaan vain tähän selaimeen, eikä niitä tallenneta: valitse ne uudelleen, kun avaat sivun seuraavan kerran. Pisteet ja tuonnin tila säilyvät tässä selaimessa ryhmittäin; vie ne CSV-tiedostona Sheetsiin ja ota varmuuskopio.');
-    help.className = 'muted';
-    bar.append(gRow, lab, help, row, resFile, msg);
+    bar.append(gRow, lab, row, resFile, msg);
     var safe = function (g) { return g.replace(/[^0-9A-Za-zÅÄÖåäö._-]+/g, '_'); };
     function fillGroups() {
       var list = groups(); gSel.textContent = '';
