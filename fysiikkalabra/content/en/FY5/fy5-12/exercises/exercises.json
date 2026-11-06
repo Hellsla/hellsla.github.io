@@ -323,7 +323,7 @@
       "level": 3,
       "text": "On a sports field two loudspeakers in phase are $3.0\\,\\text{m}$ apart, and they play a sound with a frequency of $340\\,\\text{Hz}$. The speed of sound is $340\\,\\text{m/s}$.\n\nA listener walks along a long straight path that runs in front of the loudspeakers parallel to the line between them, from far to the left to far to the right.\n\nHow many quiet spots does the listener pass? Justify why there are only a finite number of quiet spots. Assume that the sound is not reflected from anywhere.",
       "answer": 6,
-      "unit": "kpl",
+      "unit": "spots",
       "tolerance": 0.02
     },
     {

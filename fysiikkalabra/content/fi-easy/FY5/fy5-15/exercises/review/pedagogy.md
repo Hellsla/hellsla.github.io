@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: cc0ae5f5ee1c450b
+CONTENT-HASH: 5832f2120e4162ca
+Mode: full (translation review against the reviewed Finnish set, new task L2-08)
+Round 2
 
 ## Blocking
-- none
-
-## Fixed
-- (fixed) L2-07 exercise text: "kalibroitu" explained in plain words ("mittariin, jonka lukemat on tarkistettu oikeiksi").
-- (fixed) L3-04 solution: "ilman vaimennus" → "ilman aiheuttama vaimennus" (unambiguous).
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- 8 new exercises have the same levels, order, kind marks, parts a)-c) and answer-box instruction as the Finnish; every solution keeps Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness and the part c) justification text.
-- Choice feedback of L1-06 and L1-07 explains each wrong option as in the Finnish.
-- Plain Finnish: sentences split, causes joined with Siksi; the meaning of the Finnish is unchanged.
+- fy5-15-L2-08 keeps the Finnish pedagogy: a YO-skill task (error analysis or concept reasoning) with misconception-based distractors, each wrong choice with feedback naming its misconception and repairing it.
+- The stem gives no answer away; the correct option is not distinguishable by wording or length.
+- fi-easy has shorter sentences and explains terms in place; the demand is unchanged.
+- Solution is staged and readable on a phone; new task adds no extra workload.

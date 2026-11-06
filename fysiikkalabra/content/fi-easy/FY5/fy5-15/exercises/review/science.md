@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: cc0ae5f5ee1c450b
+CONTENT-HASH: 5832f2120e4162ca
+Mode: full (translation review against the reviewed Finnish set, new task L2-08)
+Round 2
 
 ## Blocking
-- none
-
-## Fixed
-- (fixed) L2-07 exercise text: "kalibroitu" explained in plain words ("mittariin, jonka lukemat on tarkistettu oikeiksi").
-- (fixed) L3-04 solution: "ilman vaimennus" → "ilman aiheuttama vaimennus" (unambiguous).
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- New exercises L1-06..08, L2-05..07, L3-04..05 in exercises.json and solutions.md against content/fi: ids, answers (answer strings, 120, 6.03, 4.0, 2.5, 320, 45), units, tolerances, kind lists, correct flags and choice order identical; data table cells and every number in solutions.md identical (decimal point in en, decimal comma in fi-easy).
-- Physics and wording of all solutions equal to the Finnish: 0 dB = I0, two dishwashers 67 dB, 120 dB, 6.03 dB per doubling, 3.96 dB hall excess, phone error 4.0 dB and factor 2.5 with saturation at 90 dB, 0.39 W and 315 m, 84.9 dB and 45 m.
-- check_i18n fi-easy: no fy5-15 errors (remaining errors are fy5-16, not this chapter).
-- Selkosuomi: short sentences, terms (systemaattinen virhe, kyllästyy, pistemäinen lähde) explained or common in the chapter; no English left.
+- New task fy5-15-L2-08 compared with content/fi: id, kind tags, correct flag, choice count and order, answer, tolerance and unit identical; every number and formula identical (decimal comma to comma kept).
+- Recomputed: L2-08 levels, 82 dB - 42 dB = 40 dB, lg ratio = 4, ratio 10^4; distractors 2, 40, 10^40.
+- Solution keeps all lead-ins, the symbolic step before numbers and the explanation of each distractor.
+- fi-easy follows NOTES.md section 12: shorter sentences, terms explained, same physics.
+- check_i18n: nothing for fy5-15; build.py fy5-15 succeeds.
