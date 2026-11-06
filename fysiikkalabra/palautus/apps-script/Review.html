@@ -304,7 +304,7 @@
     var box = $('selfBox'); box.textContent = '';
     var chs = ov.chapters.filter(function (c) { return c.self && c.self.students.length && inRange(c); });
     var lg = $('selfLegend'); lg.textContent = '';
-    ['a', 'b', 'c', 'd', 'x', 'none'].forEach(function (k) { var it = el('span', 'item'); it.append(el('span', 'sa sa-' + k), document.createTextNode(SA_TEXT[k])); lg.append(it); });
+    ['d', 'c', 'b', 'a', 'x', 'none'].forEach(function (k) { var it = el('span', 'item'); it.append(el('span', 'sa sa-' + k), document.createTextNode(SA_TEXT[k])); lg.append(it); });
     $('selfSec').hidden = !chs.length;
     if (!chs.length) return;
     // kaikki ryhmän opiskelijat (myös ne, jotka eivät ole palauttaneet lukua), aakkosjärjestyksessä
