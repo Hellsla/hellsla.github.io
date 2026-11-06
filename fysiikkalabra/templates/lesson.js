@@ -708,6 +708,19 @@
     const fitBar = () => { const t = padCol.querySelector('.rich-text-editor-toolbar-root>div'); dlg.style.setProperty('--tb', (t ? Math.ceil(t.getBoundingClientRect().height) : 0) + 'px'); };
     if (window.MutationObserver) new MutationObserver(fitBar).observe(padCol, { childList: true, subtree: true });
     window.addEventListener('resize', fitBar);
+    // From 1100 px a task at least half the view's height gets the editor beside it; a shorter one has it underneath,
+    // filling the rest of the window (teacher 2026-11-06, "liikaa tyhjää jos tehtävä on kovin lyhyt"). Measured when a
+    // task opens and when the window changes, not while the student works, so the editor does not jump.
+    const WIDE = window.matchMedia('(min-width:1100px)');
+    const layout = () => {
+      const t = taskCol.firstElementChild;
+      if (!t) return;
+      body.classList.remove('stack');
+      const h = t.getBoundingClientRect().height;
+      dlg.style.setProperty('--th', Math.ceil(h) + 'px');
+      body.classList.toggle('stack', WIDE.matches && h < 0.5 * body.clientHeight);
+    };
+    window.addEventListener('resize', () => { if (cur >= 0 && !layout.busy) { layout.busy = true; requestAnimationFrame(() => { layout.busy = false; layout(); }); } });
     let cur = -1, first = -1, home = null;
     const put = (i) => {
       const task = tasks[i]; cur = i;
@@ -715,6 +728,7 @@
       const [o, pad] = padOf(task);
       if (pad) { if (pad.hidden) o.click(); padCol.append(pad); }   // the editor open from the start (part 6 loads it)
       body.classList.toggle('no-pad', !pad);                        // a task of choices only: the task alone
+      layout();
       title.textContent = nameOf(task, i);
       pos.textContent = tasks.length > 1 ? say('big_pos', '{{i}} / {{n}}', { i: i + 1, n: tasks.length }) : '';
       prev.disabled = i === 0; next.disabled = i === tasks.length - 1;
