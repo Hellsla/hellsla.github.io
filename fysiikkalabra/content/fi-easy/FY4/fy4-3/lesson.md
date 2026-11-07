@@ -599,7 +599,7 @@ F_\text{v} &= 2F_1 \\
 
 <!-- vaihe -->
 
-**Tulos.** Ilmanvastus on $96\,\text{kN}$ eli $9{,}6\cdot 10^{4}\,\text{N}$, ja se osoittaa taaksepäin. Tarkkuus on kaksi merkitsevää numeroa, kuten moottorin voimassa $48\,\text{kN}$.
+**Tulos.** Ilmanvastus on $96\,\text{kN}$ eli $9{,}6\cdot 10^{4}\,\text{N}$, ja se osoittaa taaksepäin. Moottorin voima $48\,\text{kN}$ on tarkka arvo. Siksi ilmanvastus $96\,\text{kN}$ on tämän mallin tarkka arvo, eikä sitä tarvitse pyöristää.
 
 <!-- vaihe -->
 

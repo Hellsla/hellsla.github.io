@@ -435,7 +435,7 @@ A sled of mass $12\,\text{kg}$ is pulled on horizontal snow by a rope that makes
 
 <!-- vaihe -->
 
-**Result.** The acceleration is $a \approx 2.96\,\text{m/s}^2$ and the normal force is $N \approx 71.8\,\text{N}$. The whole numbers of the data, $12\,\text{kg}$, $80\,\text{N}$, $30\,\text{N}$ and $35^\circ$, are taken as exact values, so the precision is limited by the free-fall acceleration $9.81\,\text{m/s}^2$: the results are given with three significant figures.
+**Result.** The acceleration is $a \approx 2.96\,\text{m/s}^2$ and the normal force is $N \approx 71.8\,\text{N}$. The whole numbers of the data, $12\,\text{kg}$, $80\,\text{N}$, $30\,\text{N}$ and $35^\circ$, are taken as exact values. The acceleration is calculated from exact values only and is given with three significant figures. The precision of the normal force is limited by the free-fall acceleration $9.81\,\text{m/s}^2$, so it is also given with three significant figures.
 
 <!-- vaihe -->
 

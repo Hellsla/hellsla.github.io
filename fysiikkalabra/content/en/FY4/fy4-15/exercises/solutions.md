@@ -31,12 +31,12 @@
 ## fy4-15-L1-04
 **Given:** area swept by the rotor $A = 1500\,\text{m}^2$, wind speed $v = 8.0\,\text{m/s}$, density of air $\rho = 1.25\,\text{kg/m}^3$
 **Find:** the power of the wind $P_\text{wind}$ in $\text{kW}$
-**Principle:** In time $t$ a cylinder of air flows through the rotor, with mass $m = \rho A v t$ and kinetic energy $\tfrac{1}{2}mv^2$. The power of the wind is this kinetic energy divided by the time. The efficiency is not needed, because we are asked for the power of the wind, not the electric power.
+**Principle:** In time $t$ the undisturbed wind would carry a cylinder of air through the swept area, with mass $m = \rho A v t$ and kinetic energy $\tfrac{1}{2}mv^2$. The power of the wind is this kinetic energy divided by the time. The efficiency is not needed, because we are asked for the power of the wind, not the electric power.
 **Formula:** $P_\text{wind} = \dfrac{\tfrac{1}{2}mv^2}{t} = \dfrac{\tfrac{1}{2}\rho A v t\, v^2}{t}$, so $P_\text{wind} = \tfrac{1}{2}\rho A v^3$
 **Conversions:** The quantities are in SI units, so the power comes out in watts; finally $1\,\text{kW} = 1000\,\text{W}$.
 **Substitution:** $P_\text{wind} = \tfrac{1}{2} \cdot 1.25\,\tfrac{\text{kg}}{\text{m}^3} \cdot 1500\,\text{m}^2 \cdot \left(8.0\,\tfrac{\text{m}}{\text{s}}\right)^3 = 480\,000\,\text{W} = 480\,\text{kW}$
 **Answer:** $480\,\text{kW}$ or $4.8 \cdot 10^{2}\,\text{kW}$, two significant figures like the wind speed $8.0\,\text{m/s}$.
-**Reasonableness:** Every second $1.25 \cdot 1500 \cdot 8\,\text{kg} = 15\,000\,\text{kg}$ of air flows through the rotor, and each kilogram has kinetic energy $\tfrac{1}{2}\cdot 8^2\,\text{J} = 32\,\text{J}$. The product is $480\,000\,\text{J}$ per second, the same result. Less than half of this would become electricity.
+**Reasonableness:** Every second $1.25 \cdot 1500 \cdot 8\,\text{kg} = 15\,000\,\text{kg}$ of air passes through the swept area in the undisturbed wind, and each kilogram has kinetic energy $\tfrac{1}{2}\cdot 8^2\,\text{J} = 32\,\text{J}$. The product is $480\,000\,\text{J}$ per second, the same result. Less than half of this would become electricity.
 
 ## fy4-15-L1-05
 **Given:** electric power $P = 3.00\,\text{MW}$, time $t = 6.00\,\text{h}$
@@ -91,7 +91,7 @@
 ## fy4-15-L3-01
 **Given:** wind speed before $v_1 = 6.0\,\text{m/s}$ and after $v_2 = 9.0\,\text{m/s}$; the rotor and the efficiency are the same, and the turbine does not reach its rated power
 **Find:** how many times as large the electric power $P_2$ is as $P_1$, the ratio $x$
-**Principle:** The electric power is the fraction $\eta$ of the kinetic energy per second of the air flowing through the rotor. When the wind is faster, more air flows through each second in proportion to $v$, and each kilogram has more kinetic energy in proportion to $v^2$. So the power is proportional to the cube $v^3$, when $\eta$, $\rho$ and $A$ stay the same.
+**Principle:** The electric power is the fraction $\eta$ of the kinetic energy per second that the undisturbed wind carries through the swept area. When the wind is faster, more air flows through each second in proportion to $v$, and each kilogram has more kinetic energy in proportion to $v^2$. So the power is proportional to the cube $v^3$, when $\eta$, $\rho$ and $A$ stay the same.
 **Formula:** $P = \tfrac{1}{2}\eta\rho A v^3$, so $x = \dfrac{P_2}{P_1} = \dfrac{\tfrac{1}{2}\eta\rho A v_2^3}{\tfrac{1}{2}\eta\rho A v_1^3} = \left(\dfrac{v_2}{v_1}\right)^3$
 **Conversions:** Both speeds are in the same unit, so the unit cancels and no conversions are needed.
 **Substitution:** $x = \left(\dfrac{9.0\,\text{m/s}}{6.0\,\text{m/s}}\right)^3 = 1.5^3 = 3.375$
@@ -101,7 +101,7 @@
 ## fy4-15-L3-02
 **Given:** diameter of the old rotor $d_1 = 82\,\text{m}$, of the new one $d_2 = 162\,\text{m}$; the wind speed, the density of air and the efficiency are the same, and neither reaches its rated power
 **Find:** how many times as large the electric power of the new turbine $P_2$ is as that of the old one $P_1$, the ratio $x$
-**Principle:** At the same wind speed, a cylinder of air flows through each rotor every second, and its mass is proportional to the area swept by the rotor, $A = \pi r^2$. Each kilogram of air has the same kinetic energy, so the power is proportional to the area and therefore to the square of the diameter.
+**Principle:** At the same wind speed, the undisturbed wind carries a cylinder of air through the swept area of each rotor every second, and its mass is proportional to the area swept by the rotor, $A = \pi r^2$. Each kilogram of air has the same kinetic energy, so the power is proportional to the area and therefore to the square of the diameter.
 **Formula:** $P = \tfrac{1}{2}\eta\rho A v^3$ and $A = \pi\left(\tfrac{d}{2}\right)^2$, so $x = \dfrac{P_2}{P_1} = \dfrac{A_2}{A_1} = \left(\dfrac{d_2}{d_1}\right)^2$
 **Conversions:** The diameters are in the same unit, so the unit cancels and no conversions are needed.
 **Substitution:** $x = \left(\dfrac{162\,\text{m}}{82\,\text{m}}\right)^2 = 1.9756^2 = 3.903$
@@ -170,7 +170,7 @@ $$\begin{aligned}E &= 26.12\,\text{MW} \cdot 720\,\text{h} \\ &= 18\,804\,\text{
 ## fy4-15-L2-07
 **Given:** diameter $d = 60\,\text{m}$, wind speed $v = 7.0\,\text{m/s}$, density of air $\rho = 1.25\,\text{kg/m}^3$, efficiency $\eta = 0.40$; the student's result $4.9\,\text{kW}$
 **Find:** the student's error and the correct electric power $P$ in $\text{kW}$
-**Principle:** The mass of air flowing through the rotor per second is proportional to the speed $v$, and the kinetic energy of each kilogram of air is proportional to the square of the speed $v^2$. The power of the wind is therefore proportional to the cube of the speed $v^3$. The student used the speed to the first power.
+**Principle:** The mass of air that the undisturbed wind carries through the swept area per second is proportional to the speed $v$, and the kinetic energy of each kilogram of air is proportional to the square of the speed $v^2$. The power of the wind is therefore proportional to the cube of the speed $v^3$. The student used the speed to the first power.
 **Formula:** $P = \tfrac{1}{2}\eta\rho A v^3$ and $A = \pi r^2$
 **Conversions:** The radius is $r = 60\,\text{m} : 2 = 30\,\text{m}$. The area is $A = \pi \cdot (30\,\text{m})^2 = 2827\,\text{m}^2$, as in the student's solution. Finally $1\,\text{kW} = 1000\,\text{W}$.
 **Substitution:** The correct power is
@@ -221,6 +221,6 @@ $$\begin{aligned}
 &\phantom{P} \approx 1.96 \cdot 10^{6}\,\text{W}
 \end{aligned}$$
 
-The electric power is of the order of magnitude $2\,\text{MW}$. The power can be written as $P = \eta \cdot \tfrac{1}{2}v^2 \cdot \rho A v$, where $\tfrac{1}{2}v^2$ is the kinetic energy of one kilogram of air and $\rho A v$ is the mass of air flowing through the rotor per second. Both grow with the speed. The option $0.2\,\text{MW}$ comes from calculating the power as proportional to the square $v^2$: only the kinetic energy per kilogram is included, and the growth of the mass flow is forgotten. The option $20\,\text{kW}$ comes from calculating the power as proportional to the speed $v$: only the mass flow is included, and the growth of the kinetic energy per kilogram is forgotten. If the speed is substituted as the number $36$ without converting it, the result is about $47$ times too large, about $90\,\text{MW}$.
+The electric power is of the order of magnitude $2\,\text{MW}$. The power can be written as $P = \eta \cdot \tfrac{1}{2}v^2 \cdot \rho A v$, where $\tfrac{1}{2}v^2$ is the kinetic energy of one kilogram of air and $\rho A v$ is the mass of air that the undisturbed wind carries through the swept area per second. Both grow with the speed. The option $0.2\,\text{MW}$ comes from calculating the power as proportional to the square $v^2$: only the kinetic energy per kilogram is included, and the growth of the mass flow is forgotten. The option $20\,\text{kW}$ comes from calculating the power as proportional to the speed $v$: only the mass flow is included, and the growth of the kinetic energy per kilogram is forgotten. If the speed is substituted as the number $36$ without converting it, the result is about $47$ times too large, about $90\,\text{MW}$.
 
 The result is reasonable. The power of the wind is $P : \eta \approx 4.9\,\text{MW}$, and less than half of it becomes electricity. In the example of the chapter a $120\,\text{m}$ rotor produced about $2.3\,\text{MW}$ at a wind speed of $9.0\,\text{m/s}$, so the result is of the same order of magnitude.

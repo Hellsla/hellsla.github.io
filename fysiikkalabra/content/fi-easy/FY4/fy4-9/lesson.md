@@ -491,7 +491,7 @@ Törmäyksessä voima ei ole vakio. Se kasvaa nollasta suurimpaan arvoonsa ja pi
 ```latex
 F_\text{ka} = \frac{|\Delta p|}{\Delta t}
 ```
-missä $F_\text{ka}$ on keskimääräinen voima ($\text{N}$), $|\Delta p|$ liikemäärän muutoksen suuruus ($\text{kg}\cdot\text{m/s}$) ja $\Delta t$ törmäyksen kesto ($\text{s}$). Kaava antaa keskimääräisen voiman suuruuden. Keskimääräisen voiman $x$-komponentilla on etumerkki: $F_{\text{ka},x} = \tfrac{\Delta p_x}{\Delta t}$. Esimerkiksi pysäyttävän puskurin voiman komponentti on negatiivinen, kun kärry liikkuu positiiviseen suuntaan. Kuvaajassa keskimääräinen voima on sen suorakulmion korkeus, jonka pinta-ala on sama kuin käyrän alle jäävä pinta-ala. Muuttuvan voiman suurin arvo on aina keskimääräistä suurempi.
+missä $F_\text{ka}$ on keskimääräinen voima ($\text{N}$), $|\Delta p|$ liikemäärän muutoksen suuruus ($\text{kg}\cdot\text{m/s}$) ja $\Delta t$ törmäyksen kesto ($\text{s}$). Kaava antaa keskimääräisen voiman suuruuden. Keskimääräisen voiman $x$-komponentilla on etumerkki: $F_{\text{ka},x} = \tfrac{\Delta p_x}{\Delta t}$. Esimerkiksi pysäyttävän puskurin voiman komponentti on negatiivinen, kun kärry liikkuu positiiviseen suuntaan. Kuvaajassa keskimääräinen voima on sen suorakulmion korkeus, jonka pinta-ala on sama kuin käyrän alle jäävä pinta-ala. Muuttuvan voiman suurin itseisarvo on aina keskimääräisen voiman suuruutta suurempi.
 
 <svg data-fig="keskivoima" viewBox="0 0 600 330" role="img" aria-label="Kaavakuva, ei lukuarvoja. Törmäyksen aikana voima F kasvaa nollasta suurimpaan arvoonsa ja pienenee takaisin nollaan aikavälin Delta t aikana. Käyrän alle jäävä pinta-ala on impulssi I. Katkoviivoin piirretty suorakulmio on yhtä suuri kuin käyrän alle jäävä alue. Sen korkeus on keskimääräinen voima F_ka ja leveys Delta t." style="max-width:100%;font-size:24px">
   <line x1="79" y1="262" x2="484" y2="262" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
@@ -563,7 +563,7 @@ Toinen virhe on unohtaa etumerkit, kun kappale kimpoaa. Pallo osuu seinään nop
 
 ## Tiivistelmä
 - Liikemäärä on massan ja nopeuden tulo, $\overline{p} = m\overline{v}$. Se on vektori, jolla on nopeuden suunta. Yksikkö on $\text{kg}\cdot\text{m/s}$.
-- Vakiovoiman impulssi on $\overline{I} = \overline{F}\,\Delta t$. Muuttuvan voiman impulssi on $(t, F)$-kuvaajan alle jäävä pinta-ala. Yksikkö on $\text{N}\cdot\text{s} = \text{kg}\cdot\text{m/s}$.
+- Vakiovoiman impulssi on $\overline{I} = \overline{F}\,\Delta t$. Muuttuvan voiman impulssi on $(t, F)$-kuvaajan ja aika-akselin väliin jäävä etumerkillinen pinta-ala. Yksikkö on $\text{N}\cdot\text{s} = \text{kg}\cdot\text{m/s}$.
 - Impulssiperiaate: kokonaisvoiman impulssi on yhtä suuri kuin liikemäärän muutos, $\Delta\overline{p} = \overline{I}$.
 - Sama liikemäärän muutos saadaan suurella voimalla lyhyessä ajassa tai pienellä voimalla pitkässä ajassa. Pehmeä alusta, koukistetut polvet ja kypärän vaahtomuovi pidentävät pysähtymisaikaa ja pienentävät voimaa.
 - Yhdessä ulottuvuudessa valitaan positiivinen suunta ja käytetään etumerkkejä. Kappale kimpoaa suoraan takaisin samalla vauhdilla. Sen liikemäärän muutoksen suuruus on $2mv$, kaksi kertaa niin suuri kuin pysähtyvän.

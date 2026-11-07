@@ -121,10 +121,11 @@ def vesivoimala():
 
 
 def ilmalierio():
-    """The air that passes the rotor in time t fills a cylinder of cross-section A and length vt: m = ρAvt."""
+    """The air the undisturbed wind would carry through the swept area in time t fills a cylinder of cross-section A and length vt: m = ρAvt."""
     f = Fig("fy415-il", 360, "Periaatekuva, ei mittakaavassa: tuuli puhaltaa vasemmalta tuulivoimalan roottoria kohti. Ajassa t "
-            "roottorin läpi virtaa ilma, joka täyttää lieriön. Lieriön poikkipinta-ala on roottorin pyyhkäisemä pinta-ala "
-            "A = πr² ja pituus s = vt, joten ilman massa on m = ρAvt. Sininen nuoli on tuulen nopeus v.")
+            "häiriötön tuuli kuljettaisi roottorin pyyhkäisypinta-alan läpi ilman, joka täyttäisi lieriön. Lieriön "
+            "poikkipinta-ala on roottorin pyyhkäisemä pinta-ala A = πr² ja pituus s = vt, joten ilman massa olisi "
+            "m = ρAvt. Sininen nuoli on tuulen nopeus v.")
     cyl = grad(f, "fy415-ilc", GLASS, COLD_LIGHT)
     f.path("M150,70 H420 V270 H150 Z", cyl)
     f.add(f'<ellipse cx="150" cy="170" rx="24" ry="100" fill="{COLD_LIGHT}" stroke="{COLD}" stroke-width="2"/>')

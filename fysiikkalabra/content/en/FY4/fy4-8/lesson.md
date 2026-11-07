@@ -378,7 +378,7 @@ When an object moves along the $x$-axis and a constant net force $\Sigma F_x$ al
 ```
 When the equation is multiplied on both sides by the mass $m$ and $ma = \Sigma F_x$ is substituted, we get $\Sigma F_x\, \Delta x = \tfrac{1}{2} m v_2^2 - \tfrac{1}{2} m v_1^2$, that is, $\Sigma F_x\, \Delta x = \Delta E_\text{k}$.
 
-The displacement $\Delta x$ is not the same as the distance travelled $s$. If the object moves in one direction all the time, the magnitude of the displacement equals the distance travelled, and the work of the net force is $\Sigma F_\parallel\, s$. If the object turns back, like a ball thrown upwards, the distance travelled is longer than the displacement. The work of a constant force is then calculated from the displacement, $W = F_x\, \Delta x$, or in parts so that on each part the motion is in one direction. Friction and air resistance, on the other hand, turn with the motion, so their work is always negative and grows with the distance travelled. In both cases the work done by the net force equals the change in kinetic energy:
+The displacement $\Delta x$ is not the same as the distance travelled $s$. If the object moves in one direction all the time, the magnitude of the displacement equals the distance travelled, and the work of the net force is $\Sigma F_\parallel\, s$. If the object turns back, like a ball thrown upwards, the distance travelled is longer than the displacement. The work of a constant force is then calculated from the displacement, $W = F_x\, \Delta x$, or in parts so that on each part the motion is in one direction. Friction and air resistance, on the other hand, turn with the motion, so their work is always negative and its magnitude grows with the distance travelled. In both cases the work done by the net force equals the change in kinetic energy:
 ```latex
 W_\text{net} = \Delta E_\text{k}
 ```
@@ -481,7 +481,7 @@ Another mistake is to say that friction destroys energy. Friction decreases the 
 
 ## Summary
 - The mechanical energy $E_\text{mech} = E_\text{k} + E_\text{p}$ is conserved when only the weight does work, that is, when friction and air resistance can be ignored and nothing pulls or pushes. The normal force does no work, because it is perpendicular to the motion.
-- A force does work with its component in the direction of the motion, $W = F_\parallel s$: positive in the direction of the motion and negative against it.
+- A force does work with its component in the direction of the motion, $W = F_\parallel s$ when the object moves in one direction: positive in the direction of the motion and negative against it.
 - The work done by the net force equals the change in kinetic energy, $W_\text{net} = \Delta E_\text{k}$.
 - The work–energy principle: the change in mechanical energy is the work done by forces other than the weight, $\Delta E_\text{mech} = W_\text{other}$. Friction and air resistance turn mechanical energy into internal energy, and the total energy is conserved.
 - The weight is a conservative force, because its work depends only on the difference in height. Friction and air resistance are non-conservative forces, because their work grows with the distance travelled.

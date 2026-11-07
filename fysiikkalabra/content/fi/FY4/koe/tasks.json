@@ -1028,7 +1028,7 @@
       {
        "key": "conclusion",
        "points": 1,
-       "detail": "Kypärä läpäisee testin niukasti, noin $7\\,\\%$:n marginaalilla, mikä on pieni mallin ja mittauksen epävarmuuteen verrattuna."
+       "detail": "Kypärä läpäisee iskutestin niukasti, noin $7\\,\\%$:n marginaalilla, mikä on pieni mallin ja mittauksen epävarmuuteen verrattuna."
       }
      ]
     },

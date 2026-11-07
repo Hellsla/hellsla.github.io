@@ -28,7 +28,7 @@
     {
       "id": "fy4-15-L1-04",
       "level": 1,
-      "text": "Tuulivoimalan roottorin pyyhkäisemä pinta-ala on $1500\\,\\text{m}^2$. Tuulen nopeus on $8{,}0\\,\\text{m/s}$ ja ilman tiheys $1{,}25\\,\\text{kg/m}^3$. Kuinka suuri on roottorin läpi virtaavan tuulen teho?",
+      "text": "Tuulivoimalan roottorin pyyhkäisemä pinta-ala on $1500\\,\\text{m}^2$. Tuulen nopeus on $8{,}0\\,\\text{m/s}$ ja ilman tiheys $1{,}25\\,\\text{kg/m}^3$. Kuinka suuri on pyyhkäisypinta-alan läpi kulkevan häiriöttömän tuulen teho?",
       "answer": 480.0,
       "unit": "kW",
       "tolerance": 0.02
@@ -101,7 +101,7 @@
     {
       "id": "fy4-15-L2-02",
       "level": 2,
-      "text": "Valmistajan tehokäyrän mukaan tuulivoimala, jonka roottorin halkaisija on $82\\,\\text{m}$, antaa tuulen nopeudella $8{,}0\\,\\text{m/s}$ sähkötehoa $758\\,\\text{kW}$. Ilman tiheys on $1{,}25\\,\\text{kg/m}^3$. Kuinka suuri osuus roottorin läpi virtaavan tuulen tehosta muuttuu sähköksi? Vastaa prosentteina.",
+      "text": "Valmistajan tehokäyrän mukaan tuulivoimala, jonka roottorin halkaisija on $82\\,\\text{m}$, antaa tuulen nopeudella $8{,}0\\,\\text{m/s}$ sähkötehoa $758\\,\\text{kW}$. Ilman tiheys on $1{,}25\\,\\text{kg/m}^3$. Kuinka suuri osuus pyyhkäisypinta-alan läpi kulkevan häiriöttömän tuulen tehosta muuttuu sähköksi? Vastaa prosentteina.",
       "answer": 44.854048,
       "unit": "%",
       "tolerance": 0.02
@@ -233,18 +233,18 @@
         "reasoning",
         "model"
       ],
-      "text": "Tuulivoimalan roottorin halkaisija on $100\\,\\text{m}$, ja tuulen nopeus on $36\\,\\text{km/h}$. Ilman tiheys on $1{,}25\\,\\text{kg/m}^3$, ja voimala muuttaa $40\\,\\%$ roottorin läpi virtaavan tuulen tehosta sähköksi (esimerkkiarvot). Voimala ei saavuta nimellistehoaan.\n\nMikä on suuruusluokaltaan voimalan sähköteho? Valitse lähin arvo.",
+      "text": "Tuulivoimalan roottorin halkaisija on $100\\,\\text{m}$, ja tuulen nopeus on $36\\,\\text{km/h}$. Ilman tiheys on $1{,}25\\,\\text{kg/m}^3$, ja voimala muuttaa $40\\,\\%$ pyyhkäisypinta-alan läpi kulkevan häiriöttömän tuulen tehosta sähköksi (esimerkkiarvot). Voimala ei saavuta nimellistehoaan.\n\nMikä on suuruusluokaltaan voimalan sähköteho? Valitse lähin arvo.",
       "answer": "$2\\,\\text{MW}$",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
           "text": "$20\\,\\text{kW}$",
-          "feedback": "Tulos syntyy, kun teho lasketaan verrannolliseksi nopeuteen $v$. Silloin mukana on vain sekunnissa roottorin läpi virtaavan ilman massa $\\rho A v$, mutta myös ilmakilogramman liike-energia $\\tfrac{1}{2}v^2$ kasvaa nopeuden mukana, joten $P \\propto v^3$. Kun nopeus on $10\\,\\text{m/s}$, lukuarvo $10^3$ on $100$ kertaa $10$."
+          "feedback": "Tulos syntyy, kun teho lasketaan verrannolliseksi nopeuteen $v$. Silloin mukana on vain häiriöttömän tuulen sekunnissa pyyhkäisypinta-alan läpi kuljettaman ilman massa $\\rho A v$, mutta myös ilmakilogramman liike-energia $\\tfrac{1}{2}v^2$ kasvaa nopeuden mukana, joten $P \\propto v^3$. Kun nopeus on $10\\,\\text{m/s}$, lukuarvo $10^3$ on $100$ kertaa $10$."
         },
         {
           "text": "$0{,}2\\,\\text{MW}$",
-          "feedback": "Tulos syntyy, kun teho lasketaan verrannolliseksi neliöön $v^2$. Silloin mukana on vain ilmakilogramman liike-energia $\\tfrac{1}{2}v^2$, mutta myös sekunnissa roottorin läpi virtaavan ilman massa $\\rho A v$ kasvaa nopeuden mukana, joten $P \\propto v^3$."
+          "feedback": "Tulos syntyy, kun teho lasketaan verrannolliseksi neliöön $v^2$. Silloin mukana on vain ilmakilogramman liike-energia $\\tfrac{1}{2}v^2$, mutta myös häiriöttömän tuulen sekunnissa pyyhkäisypinta-alan läpi kuljettaman ilman massa $\\rho A v$ kasvaa nopeuden mukana, joten $P \\propto v^3$."
         },
         {
           "text": "$2\\,\\text{MW}$",

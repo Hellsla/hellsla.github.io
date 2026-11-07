@@ -28,7 +28,7 @@
     {
       "id": "fy4-15-L1-04",
       "level": 1,
-      "text": "The area swept by the rotor of a wind turbine is $1500\\,\\text{m}^2$. The wind speed is $8.0\\,\\text{m/s}$ and the density of air is $1.25\\,\\text{kg/m}^3$. What is the power of the wind flowing through the rotor?",
+      "text": "The area swept by the rotor of a wind turbine is $1500\\,\\text{m}^2$. The wind speed is $8.0\\,\\text{m/s}$ and the density of air is $1.25\\,\\text{kg/m}^3$. What is the power of the undisturbed wind passing through the swept area?",
       "answer": 480.0,
       "unit": "kW",
       "tolerance": 0.02
@@ -101,7 +101,7 @@
     {
       "id": "fy4-15-L2-02",
       "level": 2,
-      "text": "According to the manufacturer's power curve, a wind turbine with a rotor diameter of $82\\,\\text{m}$ gives an electric power of $758\\,\\text{kW}$ at a wind speed of $8.0\\,\\text{m/s}$. The density of air is $1.25\\,\\text{kg/m}^3$. What fraction of the power of the wind flowing through the rotor is converted into electricity? Give the answer as a percentage.",
+      "text": "According to the manufacturer's power curve, a wind turbine with a rotor diameter of $82\\,\\text{m}$ gives an electric power of $758\\,\\text{kW}$ at a wind speed of $8.0\\,\\text{m/s}$. The density of air is $1.25\\,\\text{kg/m}^3$. What fraction of the power of the undisturbed wind passing through the swept area is converted into electricity? Give the answer as a percentage.",
       "answer": 44.854048,
       "unit": "%",
       "tolerance": 0.02
@@ -233,18 +233,18 @@
         "reasoning",
         "model"
       ],
-      "text": "The rotor of a wind turbine has a diameter of $100\\,\\text{m}$, and the wind speed is $36\\,\\text{km/h}$. The density of air is $1.25\\,\\text{kg/m}^3$, and the turbine converts $40\\,\\%$ of the power of the wind flowing through the rotor into electricity (example values). The turbine does not reach its rated power.\n\nWhat is the order of magnitude of the electric power of the turbine? Choose the nearest value.",
+      "text": "The rotor of a wind turbine has a diameter of $100\\,\\text{m}$, and the wind speed is $36\\,\\text{km/h}$. The density of air is $1.25\\,\\text{kg/m}^3$, and the turbine converts $40\\,\\%$ of the power of the undisturbed wind passing through the swept area into electricity (example values). The turbine does not reach its rated power.\n\nWhat is the order of magnitude of the electric power of the turbine? Choose the nearest value.",
       "answer": "$2\\,\\text{MW}$",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
           "text": "$20\\,\\text{kW}$",
-          "feedback": "The result comes from calculating the power as proportional to the speed $v$. Then only the mass of air flowing through the rotor per second, $\\rho A v$, is included, but the kinetic energy of a kilogram of air, $\\tfrac{1}{2}v^2$, also grows with the speed, so $P \\propto v^3$. When the speed is $10\\,\\text{m/s}$, the value $10^3$ is $100$ times $10$."
+          "feedback": "The result comes from calculating the power as proportional to the speed $v$. Then only the mass of air that the undisturbed wind carries through the swept area per second, $\\rho A v$, is included, but the kinetic energy of a kilogram of air, $\\tfrac{1}{2}v^2$, also grows with the speed, so $P \\propto v^3$. When the speed is $10\\,\\text{m/s}$, the value $10^3$ is $100$ times $10$."
         },
         {
           "text": "$0.2\\,\\text{MW}$",
-          "feedback": "The result comes from calculating the power as proportional to the square $v^2$. Then only the kinetic energy of a kilogram of air, $\\tfrac{1}{2}v^2$, is included, but the mass of air flowing through the rotor per second, $\\rho A v$, also grows with the speed, so $P \\propto v^3$."
+          "feedback": "The result comes from calculating the power as proportional to the square $v^2$. Then only the kinetic energy of a kilogram of air, $\\tfrac{1}{2}v^2$, is included, but the mass of air that the undisturbed wind carries through the swept area per second, $\\rho A v$, also grows with the speed, so $P \\propto v^3$."
         },
         {
           "text": "$2\\,\\text{MW}$",

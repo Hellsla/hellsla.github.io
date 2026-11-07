@@ -297,7 +297,7 @@
             {
               "key": "conclusion",
               "points": 1,
-              "detail": "Comparing the models, one prepares for the larger speed (the estimate of part c or the reference value of the frictionless model, $17.2\\,\\text{m/s}$), because a brake designed for too small a speed could fail. The answer makes clear that the numbers are model estimates, not safe maximum speeds: actual design needs safety margins, a load analysis and measurements."
+              "detail": "Comparing the models, one prepares for the larger speed (the estimate of part c or the reference value of the frictionless model, $17.2\\,\\text{m/s}$), because a brake designed for too small a speed could fail. The answer makes clear that the numbers are model estimates, not safe maximum speeds: actual design needs, for example, safety margins, a load analysis and measurements."
             }
           ]
         }

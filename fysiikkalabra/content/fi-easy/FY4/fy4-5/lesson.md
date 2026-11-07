@@ -437,7 +437,7 @@ Pulkkaa, jonka massa on $12\,\text{kg}$, vedetään vaakasuoralla lumella narull
 
 <!-- vaihe -->
 
-**Tulos.** Kiihtyvyys on $a \approx 2{,}96\,\text{m/s}^2$ ja tukivoima $N \approx 71{,}8\,\text{N}$. Lähtötietojen kokonaisluvut $12\,\text{kg}$, $80\,\text{N}$, $30\,\text{N}$ ja $35^\circ$ tulkitaan tarkoiksi arvoiksi. Tarkkuutta rajaa siis putoamiskiihtyvyys $9{,}81\,\text{m/s}^2$. Siksi tulokset annetaan kolmella merkitsevällä numerolla.
+**Tulos.** Kiihtyvyys on $a \approx 2{,}96\,\text{m/s}^2$ ja tukivoima $N \approx 71{,}8\,\text{N}$. Lähtötietojen kokonaisluvut $12\,\text{kg}$, $80\,\text{N}$, $30\,\text{N}$ ja $35^\circ$ tulkitaan tarkoiksi arvoiksi. Kiihtyvyys lasketaan pelkistä tarkoista arvoista. Se annetaan kolmella merkitsevällä numerolla. Tukivoiman tarkkuutta rajaa putoamiskiihtyvyys $9{,}81\,\text{m/s}^2$. Siksi sekin annetaan kolmella merkitsevällä numerolla.
 
 <!-- vaihe -->
 

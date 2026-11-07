@@ -378,7 +378,7 @@ Kun kappale liikkuu $x$-akselia pitkin ja siihen vaikuttaa akselin suuntainen va
 ```
 Kun yhtälö kerrotaan puolittain massalla $m$ ja sijoitetaan $ma = \Sigma F_x$, saadaan $\Sigma F_x\, \Delta x = \tfrac{1}{2} m v_2^2 - \tfrac{1}{2} m v_1^2$ eli $\Sigma F_x\, \Delta x = \Delta E_\text{k}$.
 
-Siirtymä $\Delta x$ ei ole sama asia kuin kuljettu matka $s$. Jos kappale liikkuu koko ajan samaan suuntaan, siirtymän itseisarvo on yhtä suuri kuin kuljettu matka, ja kokonaisvoiman työ on $\Sigma F_\parallel\, s$. Jos kappale kääntyy, kuten ylös heitetty pallo, kuljettu matka on siirtymää pidempi. Vakiovoiman työ lasketaan silloin siirtymästä, $W = F_x\, \Delta x$, tai osissa niin, että jokaisella osuudella liike on yhteen suuntaan. Kitka ja ilmanvastus sen sijaan kääntyvät liikkeen mukana, joten niiden työ on aina negatiivinen ja kasvaa kuljetun matkan mukana. Kummassakin tapauksessa kokonaisvoiman tekemä työ on yhtä suuri kuin liike-energian muutos:
+Siirtymä $\Delta x$ ei ole sama asia kuin kuljettu matka $s$. Jos kappale liikkuu koko ajan samaan suuntaan, siirtymän itseisarvo on yhtä suuri kuin kuljettu matka, ja kokonaisvoiman työ on $\Sigma F_\parallel\, s$. Jos kappale kääntyy, kuten ylös heitetty pallo, kuljettu matka on siirtymää pidempi. Vakiovoiman työ lasketaan silloin siirtymästä, $W = F_x\, \Delta x$, tai osissa niin, että jokaisella osuudella liike on yhteen suuntaan. Kitka ja ilmanvastus sen sijaan kääntyvät liikkeen mukana, joten niiden työ on aina negatiivinen, ja sen itseisarvo kasvaa kuljetun matkan mukana. Kummassakin tapauksessa kokonaisvoiman tekemä työ on yhtä suuri kuin liike-energian muutos:
 ```latex
 W_\text{kok} = \Delta E_\text{k}
 ```
@@ -481,7 +481,7 @@ Toinen virhe on sanoa, että kitka hävittää energiaa. Kitka pienentää mekaa
 
 ## Tiivistelmä
 - Mekaaninen energia $E_\text{mek} = E_\text{k} + E_\text{p}$ säilyy, kun vain paino tekee työtä eli kitkan ja ilmanvastuksen voi jättää huomiotta eikä mikään vedä tai työnnä. Tukivoima ei tee työtä, koska se on kohtisuorassa liikettä vastaan.
-- Voima tekee työtä liikkeen suuntaisella komponentillaan, $W = F_\parallel s$: positiivista liikkeen suuntaan ja negatiivista liikettä vastaan.
+- Voima tekee työtä liikkeen suuntaisella komponentillaan, $W = F_\parallel s$, kun kappale liikkuu yhteen suuntaan: positiivista liikkeen suuntaan ja negatiivista liikettä vastaan.
 - Kokonaisvoiman tekemä työ on yhtä suuri kuin liike-energian muutos, $W_\text{kok} = \Delta E_\text{k}$.
 - Energiaperiaate: mekaanisen energian muutos on muiden voimien kuin painon tekemä työ, $\Delta E_\text{mek} = W_\text{muut}$. Kitka ja ilmanvastus muuttavat mekaanista energiaa sisäenergiaksi, ja kokonaisenergia säilyy.
 - Paino on konservatiivinen voima, koska sen työ riippuu vain korkeuserosta. Kitka ja ilmanvastus ovat ei-konservatiivisia voimia, koska niiden työ kasvaa kuljetun matkan mukana.

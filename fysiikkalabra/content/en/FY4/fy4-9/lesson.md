@@ -491,7 +491,7 @@ In a collision the force is not constant: it grows from zero to its greatest val
 ```latex
 F_\text{avg} = \frac{|\Delta p|}{\Delta t}
 ```
-where $F_\text{avg}$ is the average force ($\text{N}$), $|\Delta p|$ the magnitude of the change in momentum ($\text{kg}\cdot\text{m/s}$) and $\Delta t$ the duration of the collision ($\text{s}$). The formula gives the magnitude of the average force. The $x$-component of the average force is signed, $F_{\text{avg},x} = \tfrac{\Delta p_x}{\Delta t}$; for example, the component of the force of a stopping bumper is negative when the cart moves in the positive direction. In the graph the average force is the height of the rectangle whose area is the same as the area under the curve. The greatest value of a changing force is always larger than the average force.
+where $F_\text{avg}$ is the average force ($\text{N}$), $|\Delta p|$ the magnitude of the change in momentum ($\text{kg}\cdot\text{m/s}$) and $\Delta t$ the duration of the collision ($\text{s}$). The formula gives the magnitude of the average force. The $x$-component of the average force is signed, $F_{\text{avg},x} = \tfrac{\Delta p_x}{\Delta t}$; for example, the component of the force of a stopping bumper is negative when the cart moves in the positive direction. In the graph the average force is the height of the rectangle whose area is the same as the area under the curve. The greatest magnitude of a changing force is always larger than the magnitude of the average force.
 
 <svg data-fig="keskivoima" viewBox="0 0 600 330" role="img" aria-label="Diagram, no numerical values: during a collision the force F grows from zero to its greatest value and falls back to zero during the time interval Delta t. The area under the curve is the impulse I. A rectangle drawn with dashed lines, whose height is the average force F_avg and whose width is Delta t, has the same area as the region under the curve." style="max-width:100%;font-size:24px">
   <line x1="79" y1="262" x2="484" y2="262" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
@@ -563,7 +563,7 @@ Another mistake is to forget the signs when an object rebounds. If a ball hits a
 
 ## Summary
 - Momentum is the product of mass and velocity, $\overline{p} = m\overline{v}$. It is a vector with the direction of the velocity; the unit is $\text{kg}\cdot\text{m/s}$.
-- The impulse of a constant force is $\overline{I} = \overline{F}\,\Delta t$. The impulse of a changing force is the area under the $(t, F)$ graph; the unit is $\text{N}\cdot\text{s} = \text{kg}\cdot\text{m/s}$.
+- The impulse of a constant force is $\overline{I} = \overline{F}\,\Delta t$. The impulse of a changing force is the signed area between the $(t, F)$ graph and the time axis; the unit is $\text{N}\cdot\text{s} = \text{kg}\cdot\text{m/s}$.
 - The impulse–momentum principle: the impulse of the net force equals the change in momentum, $\Delta\overline{p} = \overline{I}$.
 - The same change in momentum is obtained with a large force in a short time or a small force in a long time. A soft surface, bent knees and the foam of a helmet lengthen the stopping time and lower the force.
 - In one dimension a positive direction is chosen and signs are used. For an object rebounding straight back at the same speed the magnitude of the change in momentum is $2mv$, twice as large as for one that stops.

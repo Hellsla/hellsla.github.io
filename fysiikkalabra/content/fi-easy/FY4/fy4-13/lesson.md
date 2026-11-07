@@ -296,7 +296,7 @@ missä $m_2 > m_1$. Jännitysvoima on kappaleiden painojen $m_1 g$ ja $m_2 g$ v�
 ### Menetelmä kytketyille kappaleille
 1. **Piirrä oma voimakuvio** kummallekin kappaleelle. Lanka vetää kumpaakin kappaletta itseään kohti. Jokaisella kappaleella on oma jännitysvoiman nuoli.
 2. **Valitse positiivinen suunta** kullekin kappaleelle kiihtyvyyden suuntaan. Joskus kiihtyvyyden oikeaa suuntaa ei tiedetä. Silloin positiivisen suunnan saa olettaa, kunhan kappaleiden suunnat sopivat yhteen langan kanssa. Jos kiihtyvyys on ratkaisussa negatiivinen, oikea kiihtyvyys on vastakkaiseen suuntaan. Kitkan suunta riippuu liikkeen suunnasta. Siksi oletettu suunta on tarkistettava, kun tilanteessa on kitkaa.
-3. **Kirjoita liikeyhtälö** $\Sigma F = ma$ kummallekin kappaleelle erikseen. Kiihtyvyyden suuruus $a$ ja jännitysvoiman suuruus $T$ ovat samat molemmissa. Jos kappaletta vedetään lisäksi ulkoisella voimalla $\overline{F}$, se kuuluu vain vedettävän kappaleen voimakuvioon ja liikeyhtälöön.
+3. **Kirjoita liikeyhtälö** $\Sigma F = ma$ kummallekin kappaleelle erikseen. Kiihtyvyys $a$ ja jännitysvoiman suuruus $T$ ovat samat molemmissa. Jos kappaletta vedetään lisäksi ulkoisella voimalla $\overline{F}$, se kuuluu vain vedettävän kappaleen voimakuvioon ja liikeyhtälöön.
 4. **Ratkaise** kaksi yhtälöä. Laske ne yhteen, jolloin $T$ poistuu. Tai sijoita toisesta yhtälöstä saatu $T$ toiseen yhtälöön.
 5. **Tarkista** etumerkit ja vertaa. Kun kappaleet kiihtyvät, jännitysvoima ei ole yhtä suuri kuin riippuvan kappaleen paino.
 

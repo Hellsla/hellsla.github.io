@@ -599,7 +599,7 @@ F_\text{d} &= 2F_1 \\
 
 <!-- vaihe -->
 
-**Result.** The air resistance is $96\,\text{kN}$, or $9.6\cdot 10^{4}\,\text{N}$, and it points backwards. The precision is two significant figures like the force of the engine $48\,\text{kN}$.
+**Result.** The air resistance is $96\,\text{kN}$, or $9.6\cdot 10^{4}\,\text{N}$, and it points backwards. The engine force $48\,\text{kN}$ is taken as an exact value, so the air resistance $96\,\text{kN}$ is an exact value of this model and needs no rounding.
 
 <!-- vaihe -->
 

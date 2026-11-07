@@ -31,12 +31,12 @@
 ## fy4-15-L1-04
 **Annettu:** roottorin pyyhkäisemä pinta-ala $A = 1500\,\text{m}^2$, tuulen nopeus $v = 8{,}0\,\text{m/s}$, ilman tiheys $\rho = 1{,}25\,\text{kg/m}^3$
 **Kysytty:** tuulen teho $P_\text{tuuli}$ yksikössä $\text{kW}$
-**Periaate:** Ajassa $t$ roottorin läpi virtaa ilmalieriö, jonka massa on $m = \rho A v t$ ja liike-energia $\tfrac{1}{2}mv^2$. Tuulen teho on tämä liike-energia jaettuna ajalla. Hyötysuhdetta ei tarvita, koska kysytään tuulen tehoa, ei sähkötehoa.
+**Periaate:** Ajassa $t$ häiriötön tuuli kuljettaisi pyyhkäisypinta-alan läpi ilmalieriön, jonka massa on $m = \rho A v t$ ja liike-energia $\tfrac{1}{2}mv^2$. Tuulen teho on tämä liike-energia jaettuna ajalla. Hyötysuhdetta ei tarvita, koska kysytään tuulen tehoa, ei sähkötehoa.
 **Kaava:** $P_\text{tuuli} = \dfrac{\tfrac{1}{2}mv^2}{t} = \dfrac{\tfrac{1}{2}\rho A v t\, v^2}{t}$, joten $P_\text{tuuli} = \tfrac{1}{2}\rho A v^3$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten teho saadaan watteina; lopuksi $1\,\text{kW} = 1000\,\text{W}$.
 **Sijoitus:** $P_\text{tuuli} = \tfrac{1}{2} \cdot 1{,}25\,\tfrac{\text{kg}}{\text{m}^3} \cdot 1500\,\text{m}^2 \cdot \left(8{,}0\,\tfrac{\text{m}}{\text{s}}\right)^3 = 480\,000\,\text{W} = 480\,\text{kW}$
 **Vastaus:** $480\,\text{kW}$ eli $4{,}8 \cdot 10^{2}\,\text{kW}$, kaksi merkitsevää numeroa kuten tuulen nopeudessa $8{,}0\,\text{m/s}$.
-**Järkevyys:** Sekunnissa roottorin läpi virtaa $1{,}25 \cdot 1500 \cdot 8\,\text{kg} = 15\,000\,\text{kg}$ ilmaa, ja jokaisella kilogrammalla on liike-energiaa $\tfrac{1}{2}\cdot 8^2\,\text{J} = 32\,\text{J}$. Tulo on $480\,000\,\text{J}$ sekunnissa, sama tulos. Sähköksi saataisiin tästä alle puolet.
+**Järkevyys:** Häiriötön tuuli kuljettaa sekunnissa pyyhkäisypinta-alan läpi $1{,}25 \cdot 1500 \cdot 8\,\text{kg} = 15\,000\,\text{kg}$ ilmaa, ja jokaisella kilogrammalla on liike-energiaa $\tfrac{1}{2}\cdot 8^2\,\text{J} = 32\,\text{J}$. Tulo on $480\,000\,\text{J}$ sekunnissa, sama tulos. Sähköksi saataisiin tästä alle puolet.
 
 ## fy4-15-L1-05
 **Annettu:** sähköteho $P = 3{,}00\,\text{MW}$, aika $t = 6{,}00\,\text{h}$
@@ -91,7 +91,7 @@
 ## fy4-15-L3-01
 **Annettu:** tuulen nopeus ennen $v_1 = 6{,}0\,\text{m/s}$ ja jälkeen $v_2 = 9{,}0\,\text{m/s}$; roottori ja hyötysuhde ovat samat, eikä voimala saavuta nimellistehoaan
 **Kysytty:** kuinka monta kertaa suurempi sähköteho $P_2$ on kuin $P_1$, suhdeluku $x$
-**Periaate:** Sähköteho on osuus $\eta$ roottorin läpi virtaavan ilman liike-energiasta sekunnissa. Kun tuuli on nopeampi, ilmaa virtaa sekunnissa enemmän suhteessa $v$ ja jokaisella kilogrammalla on liike-energiaa enemmän suhteessa $v^2$, joten teho on verrannollinen kuutioon $v^3$, kun $\eta$, $\rho$ ja $A$ pysyvät samoina.
+**Periaate:** Sähköteho on osuus $\eta$ häiriöttömän tuulen sekunnissa pyyhkäisypinta-alan läpi kuljettaman ilman liike-energiasta. Kun tuuli on nopeampi, ilmaa virtaa sekunnissa enemmän suhteessa $v$ ja jokaisella kilogrammalla on liike-energiaa enemmän suhteessa $v^2$, joten teho on verrannollinen kuutioon $v^3$, kun $\eta$, $\rho$ ja $A$ pysyvät samoina.
 **Kaava:** $P = \tfrac{1}{2}\eta\rho A v^3$, joten $x = \dfrac{P_2}{P_1} = \dfrac{\tfrac{1}{2}\eta\rho A v_2^3}{\tfrac{1}{2}\eta\rho A v_1^3} = \left(\dfrac{v_2}{v_1}\right)^3$
 **Muunnokset:** Kumpikin nopeus on samassa yksikössä, joten yksikkö supistuu eikä muunnoksia tarvita.
 **Sijoitus:** $x = \left(\dfrac{9{,}0\,\text{m/s}}{6{,}0\,\text{m/s}}\right)^3 = 1{,}5^3 = 3{,}375$
@@ -101,7 +101,7 @@
 ## fy4-15-L3-02
 **Annettu:** vanhan roottorin halkaisija $d_1 = 82\,\text{m}$, uuden $d_2 = 162\,\text{m}$; tuulen nopeus, ilman tiheys ja hyötysuhde ovat samat, eikä kumpikaan saavuta nimellistehoaan
 **Kysytty:** kuinka monta kertaa suurempi uuden voimalan sähköteho $P_2$ on kuin vanhan $P_1$, suhdeluku $x$
-**Periaate:** Samalla tuulen nopeudella jokaisen roottorin läpi virtaa sekunnissa ilmalieriö, jonka massa on verrannollinen roottorin pinta-alaan $A = \pi r^2$. Jokaisella ilmakilogrammalla on sama liike-energia, joten teho on verrannollinen pinta-alaan ja siten halkaisijan neliöön.
+**Periaate:** Samalla tuulen nopeudella häiriötön tuuli kuljettaa jokaisen roottorin pyyhkäisypinta-alan läpi sekunnissa ilmalieriön, jonka massa on verrannollinen roottorin pinta-alaan $A = \pi r^2$. Jokaisella ilmakilogrammalla on sama liike-energia, joten teho on verrannollinen pinta-alaan ja siten halkaisijan neliöön.
 **Kaava:** $P = \tfrac{1}{2}\eta\rho A v^3$ ja $A = \pi\left(\tfrac{d}{2}\right)^2$, joten $x = \dfrac{P_2}{P_1} = \dfrac{A_2}{A_1} = \left(\dfrac{d_2}{d_1}\right)^2$
 **Muunnokset:** Halkaisijat ovat samassa yksikössä, joten yksikkö supistuu eikä muunnoksia tarvita.
 **Sijoitus:** $x = \left(\dfrac{162\,\text{m}}{82\,\text{m}}\right)^2 = 1{,}9756^2 = 3{,}903$
@@ -171,7 +171,7 @@ $$\begin{aligned}E &= 26{,}12\,\text{MW} \cdot 720\,\text{h} \\ &= 18\,804\,\tex
 ## fy4-15-L2-07
 **Annettu:** halkaisija $d = 60\,\text{m}$, tuulen nopeus $v = 7{,}0\,\text{m/s}$, ilman tiheys $\rho = 1{,}25\,\text{kg/m}^3$, hyötysuhde $\eta = 0{,}40$; oppilaan tulos $4{,}9\,\text{kW}$
 **Kysytty:** oppilaan virhe ja oikea sähköteho $P$ yksikössä $\text{kW}$
-**Periaate:** Roottorin läpi virtaa sekunnissa ilmaa, jonka massa on verrannollinen nopeuteen $v$, ja jokaisen ilmakilogramman liike-energia on verrannollinen nopeuden neliöön $v^2$. Tuulen teho on siksi verrannollinen nopeuden kolmanteen potenssiin $v^3$. Oppilas käytti nopeutta ensimmäisessä potenssissa.
+**Periaate:** Häiriötön tuuli kuljettaa pyyhkäisypinta-alan läpi sekunnissa ilmaa, jonka massa on verrannollinen nopeuteen $v$, ja jokaisen ilmakilogramman liike-energia on verrannollinen nopeuden neliöön $v^2$. Tuulen teho on siksi verrannollinen nopeuden kolmanteen potenssiin $v^3$. Oppilas käytti nopeutta ensimmäisessä potenssissa.
 **Kaava:** $P = \tfrac{1}{2}\eta\rho A v^3$ ja $A = \pi r^2$
 **Muunnokset:** Säde on $r = 60\,\text{m} : 2 = 30\,\text{m}$. Pinta-ala on $A = \pi \cdot (30\,\text{m})^2 = 2827\,\text{m}^2$, kuten oppilaalla. Lopuksi $1\,\text{kW} = 1000\,\text{W}$.
 **Sijoitus:** Oikea teho on
@@ -222,6 +222,6 @@ $$\begin{aligned}
 &\phantom{P} \approx 1{,}96 \cdot 10^{6}\,\text{W}
 \end{aligned}$$
 
-Sähköteho on suuruusluokaltaan $2\,\text{MW}$. Teho voidaan kirjoittaa muotoon $P = \eta \cdot \tfrac{1}{2}v^2 \cdot \rho A v$, jossa $\tfrac{1}{2}v^2$ on yhden ilmakilogramman liike-energia ja $\rho A v$ sekunnissa roottorin läpi virtaavan ilman massa. Molemmat kasvavat nopeuden mukana. Vaihtoehto $0{,}2\,\text{MW}$ syntyy, kun teho lasketaan verrannolliseksi neliöön $v^2$: mukana on vain liike-energia kilogrammaa kohti, ja massavirran kasvu unohtuu. Vaihtoehto $20\,\text{kW}$ syntyy, kun teho lasketaan verrannolliseksi nopeuteen $v$: mukana on vain massavirta, ja kilogrammaa kohti lasketun liike-energian kasvu unohtuu. Jos nopeus sijoitetaan lukuna $36$ muuntamatta, tulos on noin $47$ kertaa liian suuri, noin $90\,\text{MW}$.
+Sähköteho on suuruusluokaltaan $2\,\text{MW}$. Teho voidaan kirjoittaa muotoon $P = \eta \cdot \tfrac{1}{2}v^2 \cdot \rho A v$, jossa $\tfrac{1}{2}v^2$ on yhden ilmakilogramman liike-energia ja $\rho A v$ häiriöttömän tuulen sekunnissa pyyhkäisypinta-alan läpi kuljettaman ilman massa. Molemmat kasvavat nopeuden mukana. Vaihtoehto $0{,}2\,\text{MW}$ syntyy, kun teho lasketaan verrannolliseksi neliöön $v^2$: mukana on vain liike-energia kilogrammaa kohti, ja massavirran kasvu unohtuu. Vaihtoehto $20\,\text{kW}$ syntyy, kun teho lasketaan verrannolliseksi nopeuteen $v$: mukana on vain massavirta, ja kilogrammaa kohti lasketun liike-energian kasvu unohtuu. Jos nopeus sijoitetaan lukuna $36$ muuntamatta, tulos on noin $47$ kertaa liian suuri, noin $90\,\text{MW}$.
 
 Tulos on järkevä. Tuulen teho on $P : \eta \approx 4{,}9\,\text{MW}$, ja siitä saadaan sähköksi alle puolet. Luvun esimerkissä $120\,\text{m}$:n roottori tuotti tuulen nopeudella $9{,}0\,\text{m/s}$ noin $2{,}3\,\text{MW}$, eli tulos on samaa suuruusluokkaa.

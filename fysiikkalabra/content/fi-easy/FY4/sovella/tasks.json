@@ -297,7 +297,7 @@
             {
               "key": "conclusion",
               "points": 1,
-              "detail": "Kun malleja verrataan, varaudutaan suurempaan nopeuteen (c-kohdan arvio tai kitkattoman mallin vertailuarvo $17{,}2\\,\\text{m/s}$). Liian pienelle nopeudelle mitoitettu jarru voisi pettää. Vastauksesta käy ilmi, että luvut ovat mallin arvioita eivätkä turvallisia suurimpia nopeuksia. Oikea mitoitus vaatii turvamarginaalit, kuormitustarkastelun ja mittaukset."
+              "detail": "Kun malleja verrataan, varaudutaan suurempaan nopeuteen (c-kohdan arvio tai kitkattoman mallin vertailuarvo $17{,}2\\,\\text{m/s}$). Liian pienelle nopeudelle mitoitettu jarru voisi pettää. Vastauksesta käy ilmi, että luvut ovat mallin arvioita eivätkä turvallisia suurimpia nopeuksia. Oikea mitoitus vaatii esimerkiksi turvamarginaalit, kuormitustarkastelun ja mittaukset."
             }
           ]
         }

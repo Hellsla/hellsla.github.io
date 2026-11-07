@@ -645,7 +645,7 @@ t = \frac{-v_0 + \sqrt{v_0^2 + 2a\,\Delta x}}{a}
 
 <!-- vaihe -->
 
-**Tulos.** Alamäen laskeminen kestää noin $9{,}4\,\text{s}$, ja nopeus mäen alla on noin $8{,}7\,\text{m/s}$. Kaksi merkitsevää numeroa, kuten alkunopeudessa $4{,}0\,\text{m/s}$, kiihtyvyydessä $0{,}50\,\text{m/s}^2$ ja matkassa $60\,\text{m}$. Ratkaisukaavan toinen ratkaisu $t \approx -25\,\text{s}$ hylätään, koska liike alkaa hetkellä $t = 0$.
+**Tulos.** Alamäen laskeminen kestää noin $9{,}4\,\text{s}$, ja nopeus mäen alla on noin $8{,}7\,\text{m/s}$. Kaksi merkitsevää numeroa, kuten alkunopeudessa $4{,}0\,\text{m/s}$ ja kiihtyvyydessä $0{,}50\,\text{m/s}^2$. Matka $60\,\text{m}$ tulkitaan tarkaksi arvoksi. Ratkaisukaavan toinen ratkaisu $t \approx -25\,\text{s}$ hylätään, koska liike alkaa hetkellä $t = 0$.
 
 <!-- vaihe -->
 

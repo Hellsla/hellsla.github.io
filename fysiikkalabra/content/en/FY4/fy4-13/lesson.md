@@ -296,7 +296,7 @@ where $m_2 > m_1$. The tension lies between the weights $m_1 g$ and $m_2 g$ of t
 ### Method for connected bodies
 1. **Draw a free-body diagram** for each body. The string pulls each body toward itself, and each body has its own tension arrow.
 2. **Choose the positive direction** for each body along its acceleration. If the actual direction of the acceleration is not known, the positive direction may be assumed, as long as the directions of the bodies fit together along the string. If the solution gives a negative acceleration, the actual acceleration is in the opposite direction. The direction of friction depends on the direction of motion, so with friction the assumed direction must be checked.
-3. **Write the equation of motion** $\Sigma F = ma$ for each body separately. The acceleration magnitude $a$ and the tension magnitude $T$ are the same in both. If a body is also pulled by an external force $\overline{F}$, that force belongs only in the free-body diagram and equation of motion of the body being pulled.
+3. **Write the equation of motion** $\Sigma F = ma$ for each body separately. The acceleration $a$ and the tension magnitude $T$ are the same in both. If a body is also pulled by an external force $\overline{F}$, that force belongs only in the free-body diagram and equation of motion of the body being pulled.
 4. **Solve** the two equations: add them, so that $T$ cancels, or substitute the $T$ from one into the other.
 5. **Check** the signs and compare: the tension is not equal to the weight of a hanging body when the bodies accelerate.
 
