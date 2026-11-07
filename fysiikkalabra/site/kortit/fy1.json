@@ -126,7 +126,7 @@
    "luku": "fy1-3",
    "aihe": "fy1-mittaaminen",
    "kasite": "Mittausvirhe",
-   "maaritelma": "Mitatun arvon poikkeama suureen todellisesta arvosta."
+   "maaritelma": "Mittaustuloksen ja suureen oikean arvon erotus. Sitä ei yleensä tunneta, joten sen mahdollinen suuruus arvioidaan mittausepävarmuutena."
   },
   {
    "id": "fy1-satunnaisvirhe",
@@ -134,7 +134,7 @@
    "luku": "fy1-3",
    "aihe": "fy1-mittaaminen",
    "kasite": "Satunnaisvirhe",
-   "maaritelma": "Vaihteleva poikkeama, jonka vaikutusta voidaan pienentää toistamalla mittaus ja laskemalla keskiarvo."
+   "maaritelma": "Vaihteleva poikkeama, jonka vaikutusta voidaan pienentää toistamalla mittauksen ja laskemalla keskiarvon."
   },
   {
    "id": "fy1-systemaattinen-virhe",
@@ -165,8 +165,8 @@
    "moduuli": "FY1",
    "luku": "fy1-3",
    "aihe": "fy1-mittaaminen",
-   "kasite": "Mittalaitteen tarkkuus",
-   "maaritelma": "Kertoo, kuinka pieniä muutoksia mittavälineellä voidaan luotettavasti havaita."
+   "kasite": "Mittalaitteen resoluutio",
+   "maaritelma": "Pienin lukeman muutos, jonka mittalaite pystyy näyttämään, esimerkiksi pienin asteikkoväli tai näytön viimeisen numeron askel. Se ei yksin kerro mittauksen epävarmuutta."
   },
   {
    "id": "fy1-si-jarjestelma",
@@ -198,7 +198,7 @@
    "luku": "fy1-2",
    "aihe": "fy1-si-jarjestelma",
    "kasite": "Johdannaisyksikkö",
-   "maaritelma": "Perusyksiköistä muodostettu yhdistelmä, kuten nopeuden m/s tai voiman N."
+   "maaritelma": "Perusyksiköistä muodostettu yhdistelmä, kuten nopeuden $\\text{m/s}$ tai voiman $\\text{N}$."
   },
   {
    "id": "fy1-kerrannaisyksikko",
@@ -230,7 +230,7 @@
    "luku": "fy1-2",
    "aihe": "fy1-si-jarjestelma",
    "kasite": "Suuruusluokka",
-   "maaritelma": "Kohteen kokoa kuvataan sopivan kymmenen potenssin avulla."
+   "maaritelma": "Suureen arvon suuruusluokka on kymmenpotenssien akselilla sitä lähin kymmenpotenssi, esimerkiksi $8{,}8\\cdot10^{3}\\,\\text{m}$ on suuruusluokkaa $10^{4}\\,\\text{m}$."
   },
   {
    "id": "fy1-alkeishiukkanen",
@@ -246,7 +246,7 @@
    "luku": "fy1-1",
    "aihe": "fy1-perusrakenteet",
    "kasite": "Kvarkki",
-   "maaritelma": "Protonien ja neutronien rakenneosa, joita näkyvässä aineessa ovat erityisesti ylös- ja alas-kvarkit."
+   "maaritelma": "Protonien ja neutronien rakenneosa. Tavallisen aineen protoneissa ja neutroneissa esiintyy ylöskvarkkeja ja alaskvarkkeja."
   },
   {
    "id": "fy1-leptoni",
@@ -278,7 +278,7 @@
    "luku": "fy1-1",
    "aihe": "fy1-perusrakenteet",
    "kasite": "Atomiydin",
-   "maaritelma": "Tiivis keskiosa, jossa protonit ja neutronit sijaitsevat."
+   "maaritelma": "Atomin tiivis keskiosa, jossa on protoneja ja yleensä myös neutroneja."
   },
   {
    "id": "fy1-atomi",
@@ -302,7 +302,7 @@
    "luku": "fy1-1",
    "aihe": "fy1-perusrakenteet",
    "kasite": "Aurinkokunta",
-   "maaritelma": "Tähti ja sitä kiertävät planeetat, pienkappaleet sekä muu aine."
+   "maaritelma": "Aurinko ja sitä kiertävät planeetat, pienkappaleet sekä muu aine."
   },
   {
    "id": "fy1-galaksi",
@@ -480,7 +480,7 @@
    "luku": "fy1-5",
    "aihe": "fy1-tiheys-ja-liike",
    "kasite": "Suoraan verrannollisuus",
-   "maaritelma": "Toisen suureen kaksinkertaistuessa myös toinen kaksinkertaistuu, ja kuvaaja kulkee origon kautta."
+   "maaritelma": "Kahden suureen suhde on vakio: kun toinen kaksinkertaistuu, myös toinen kaksinkertaistuu, ja kuvaaja on origon kautta kulkeva suora."
   },
   {
    "id": "fy1-paikka",
@@ -512,7 +512,7 @@
    "luku": "fy1-5",
    "aihe": "fy1-tiheys-ja-liike",
    "kasite": "Keskinopeus",
-   "maaritelma": "Koko siirtymä jaetaan siihen kuluneella ajalla."
+   "maaritelma": "Siirtymä jaettuna siihen kuluneella ajalla. Kun kappale liikkuu yhteen suuntaan, siirtymä on sama kuin kuljettu matka."
   },
   {
    "id": "fy1-kiihtyvyys",
@@ -538,7 +538,7 @@
    "luku": "fy1-6",
    "aihe": "fy1-tiheys-ja-liike",
    "kasite": "Putoamiskiihtyvyys",
-   "maaritelma": "Maan lähellä nopeus muuttuu noin $9{,}81\\,\\text{m/s}$ joka sekunti.",
+   "maaritelma": "Vapaasti putoavan kappaleen kiihtyvyys. Maan pinnalla vapaasti putoavan kappaleen nopeus kasvaa noin $9{,}81\\,\\text{m/s}$ joka sekunti.",
    "kaava": "g \\approx 9{,}81\\,\\text{m/s}^2",
    "kaava_puhe": "g on noin 9,81 metriä sekunnissa toiseen"
   },
@@ -572,7 +572,7 @@
    "luku": "fy1-8",
    "aihe": "fy1-kokeellinen-tutkimus",
    "kasite": "Toistettavuus",
-   "maaritelma": "Hyvin kuvattu koe voidaan tehdä uudelleen ja saada samansuuntaisia tuloksia."
+   "maaritelma": "Se, kuinka lähelle toisiaan samalla tavalla toistetut mittaustulokset osuvat. Hyvin kuvatun kokeen voi toistaa, ja tulosten pitää olla epävarmuuden rajoissa yhteensopivia."
   },
   {
    "id": "fy1-mittausaineisto",
@@ -636,7 +636,7 @@
    "luku": "fy1-8",
    "aihe": "fy1-tiedonhankinta",
    "kasite": "Tiedontuottaja",
-   "maaritelma": "Tahon tausta ja tarkoitus vaikuttavat siihen, miten sen julkaisemaa tietoa kannattaa arvioida."
+   "maaritelma": "Taho, joka tuottaa ja julkaisee tietoa, esimerkiksi tutkimuslaitos, viranomainen, yritys tai yksityishenkilö. Sen tausta ja tarkoitus vaikuttavat siihen, miten tietoa kannattaa arvioida."
   },
   {
    "id": "fy1-lahdekritiikki",
