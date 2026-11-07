@@ -1,7 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 89f77d1ef5cc0755
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: e005c7abda740c4e
+Mode: delta (new task fy7-13-L2-08 and its solution), round 1
 
 ## Blocking
 (none)
@@ -10,8 +9,10 @@ Round 1
 (none)
 
 ## Checked
-- Captures fy7-13-open-exercises-L3-1280-8 (L3-05 table, answer box, solution card) and the other new-task captures: table with translated caption and headers, units, Check button and solution card intact; the "Distance between the maxima +-1" caption fits.
-- No clipped text or Finnish in the en captures; LaTeX renders with decimal point.
+- Rebuilt and captured fy7-13 (en); opened fy7-13-open-exercises captures at 1280 px (last parts of the level) showing fy7-13-L2-08 with its task text, options or input, feedback, answer and opened solution.
+- Layout survived: no clipping or horizontal overflow, options are whole rows, solution blocks (Find, Principle, Model answer) read in order, display equations aligned and broken at meaningful steps.
+- Maths: KaTeX renders, numbers with upright units and thin space, \cdot, colon for division, SI units upright; no Finnish left in the new task.
+- No figures in the new task; the lesson page and other tasks are unchanged (delta).
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

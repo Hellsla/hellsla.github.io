@@ -1,18 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 2c4a05c4e4d55a83
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 22306330676659bc
+Mode: delta (new task fy7-12-L2-08 and its solution), round 1
 
 ## Blocking
 (none)
-
-## Fixed
-(none needed)
 
 ## Polish
 (none)
 
 ## Checked
-- Screenshots of the new tasks opened (en: L2-1280-9 (L2-07 task, answer 38.8°, solution) and L3-1280-9 (L3-05 answer and reasonableness)): maths renders, units and decimal points correct, no overflow, no clipped text, no Finnish in en.
-- Data tables of L2-05, L2-06, L3-04, L3-05 have translated captions and headers (Measurement/Fibre/Power; Mittaus/Kuitu/Teho) and unchanged cells.
-- Display units (°, ns, km, mm) are the same as in fi.
+- Rebuilt and captured fy7-12 (en); opened fy7-12-open-exercises captures at 1280 px (last parts of the level) showing fy7-12-L2-08 with its task text, options or input, feedback, answer and opened solution.
+- Layout survived: no clipping or horizontal overflow, options are whole rows, solution blocks (Find, Principle, Model answer) read in order, display equations aligned and broken at meaningful steps.
+- Maths: KaTeX renders, numbers with upright units and thin space, \cdot, colon for division, SI units upright; no Finnish left in the new task.
+- No figures in the new task; the lesson page and other tasks are unchanged (delta).
+
+- en fy7-12: opened open-exercises-L2-1280-10 (start of fy7-12-L2-08: task text, first options, feedback) as well as parts 11 and 12; the task text reads situation then question, with units and angles rendered correctly.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

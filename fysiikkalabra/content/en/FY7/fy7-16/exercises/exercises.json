@@ -222,6 +222,37 @@
       "answer": 1.0,
       "unit": "%",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-16-L2-08",
+      "level": 2,
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "text": "The server of an online game is connected to the player's home by an optical fibre link whose length is, as an example value, $1200\\,\\text{km}$. The refractive index of the fibre core is $1.47$, and the speed of light in a vacuum is $3.00 \\cdot 10^8\\,\\text{m/s}$. Light travels in the fibre almost parallel to the axis, and delays in the equipment are not taken into account.\n\nThe player's command travels as a light pulse to the server, and the reply returns along the same fibre. What is the order of magnitude of this round-trip time?",
+      "answer": "about $12\\,\\text{ms}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "about $12\\,\\mu\\text{s}$",
+          "feedback": "Here the length has been substituted as the number of kilometres, $1200$, although the speed is in metres per second. The length is converted into metres before dividing, $1200\\,\\text{km} = 1.2 \\cdot 10^6\\,\\text{m}$."
+        },
+        {
+          "text": "about $1.2\\,\\text{ms}$",
+          "feedback": "Here the length has been written as $1.2 \\cdot 10^5\\,\\text{m}$. Kilo means a thousand, so $1200\\,\\text{km} = 1200 \\cdot 10^3\\,\\text{m}$, that is $1.2 \\cdot 10^6\\,\\text{m}$."
+        },
+        {
+          "text": "about $12\\,\\text{ms}$",
+          "correct": true,
+          "feedback": "Correct: light travels in the fibre at the speed $c : n = 2.04 \\cdot 10^8\\,\\text{m/s}$ and covers the distance $2.4 \\cdot 10^6\\,\\text{m}$, so the time is about $11.8\\,\\text{ms}$."
+        },
+        {
+          "text": "about $12\\,\\text{s}$",
+          "feedback": "Here the speed of light has been taken as the number $300\\,000$, which is the speed in kilometres per second, although the length has been substituted in metres. The length and the speed must be in the same units."
+        }
+      ]
     }
   ],
   "level3": [

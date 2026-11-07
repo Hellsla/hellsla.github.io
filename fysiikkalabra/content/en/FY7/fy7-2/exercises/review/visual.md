@@ -1,24 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 58ca1c36704e1ad3
-Mode: full
-Round: 1
+CONTENT-HASH: 61de3a14e74dc141
 
 ## Blocking
 
 ## Polish
-- [Minor] L2-05 table column "Curves" is short and fits; no change needed beyond keeping it short on 360 px.
+- [Minor] fy7-2-L2-08 (2-16) — the four force-diagram cards appear in the order B, D, A, C in the 2-column grid, so letters read out of sequence — keep A–D order if the shuffle is not intended.
+- [Minor] fy7-2/pick-* aria-labels (en) — "F m" is read letter by letter — "F subscript m" or "magnetic force".
 
 ## Checked
-- Opened open-exercises-1280-6 (L1-06 choices, correct feedback block, solution), open-exercises-L2-1280-5 (L2-05 task text, table caption and header), open-exercises-L3-1280-4 (L3-03 solution, L3-04 start) at the English build.
-- Formulas render with decimal point, units upright with thin space, no clipping, no Finnish text on the page.
-- Table captions and headers in English; formula spacing like the Finnish page.
-- The unit "times" (L3-03) replaces "kertaa" in the answer unit display.
-- check_i18n.py en: 0 errors.
+- fy7-2-open-exercises-L2-1280-10, -11, -12 (en): task 2-16 statement with defined symbols, the four option cards with figures B, D, A, C and B's feedback, the opened solution and its three-row aligned display.
+- Each figure: electron as a rectangle, blue $\overline{v}$ apart from the body, red $\overline{F}_\text{m}$ of equal length, $\odot$ in A; labels in KaTeX, force red and velocity blue as per convention, nothing clipped, legible in the card at 1280.
+- Units upright with thin space, decimal point right for English, no red KaTeX, no overflow; the split of 2-1x (proton task) paragraphs is spacing only.
+- Not opened: 390 px layout of the cards (deterministic layout check covers it).
 
 ## Scores
-illustrations 5 · typography 5 · English 5 · accessibility 4
-
-## Follow-up (58ca1c36704e1ad3: four solutions.md edits on top of the hash above)
-- After `python scripts/build.py fy7-2 --exercises`, Playwright on the preview page with every exercise level and solution open, at 360 and 390 px: every inline `.katex` of L1-02 Annettu and Kaava (and L2-03, L3-02) has `getClientRects().length == 1`. The grouped ${|q| = e = …\,\text{C}}$ is 213 px in a 274 px (360) / 304 px (390) column; $|q|vB = \dfrac{mv^2}{r}$ 118 px, $r = \dfrac{mv}{|q|B}$ 80 px. No horizontal overflow.
-- Absolute-value bars, upright units and the decimal point render cleanly; the chapter titles stay italic.
-- No blocking issue.
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

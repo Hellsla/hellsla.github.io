@@ -191,3 +191,24 @@ $$\begin{aligned} r &= \dfrac{1.673 \cdot 10^{-27}\,\text{kg}}{1.602 \cdot 10^{-
 **Substitution:** a) $v = \dfrac{1.602 \cdot 10^{-19}\,\text{C} \cdot 1.00\,\text{T} \cdot 0.20\,\text{m}}{1.673 \cdot 10^{-27}\,\text{kg}} = 1.92 \cdot 10^{7}\,\text{m/s}$ and $E_\text{k} = \tfrac{1}{2} \cdot 1.673 \cdot 10^{-27}\,\text{kg} \cdot (1.92 \cdot 10^{7}\,\text{m/s})^2 = 3.07 \cdot 10^{-13}\,\text{J}$. b) In one crossing the energy increases by $qU = 1.602 \cdot 10^{-19}\,\text{C} \cdot 6.0 \cdot 10^{4}\,\text{V} = 9.61 \cdot 10^{-15}\,\text{J}$, so $n = \dfrac{3.07 \cdot 10^{-13}\,\text{J}}{9.61 \cdot 10^{-15}\,\text{J}} = 31.9 \approx 32$ crossings, that is $16$ revolutions. The period is $T = \dfrac{2\pi \cdot 1.673 \cdot 10^{-27}\,\text{kg}}{1.602 \cdot 10^{-19}\,\text{C} \cdot 1.00\,\text{T}} = 6.56 \cdot 10^{-8}\,\text{s}$, so $t = 16 \cdot 6.56 \cdot 10^{-8}\,\text{s} = 1.05 \cdot 10^{-6}\,\text{s} = 1.05\,\mu\text{s}$. c) $\dfrac{v}{c} = \dfrac{1.92 \cdot 10^{7}\,\text{m/s}}{3.00 \cdot 10^{8}\,\text{m/s}} = 0.064$
 **Answer:** a) $1.92 \cdot 10^{7}\,\text{m/s}$ and $3.07 \cdot 10^{-13}\,\text{J}$ (about $1.9\,\text{MeV}$). b) About $32$ crossings and $16$ revolutions; the acceleration takes $1.05\,\mu\text{s}$, three significant figures like the field and the radius. c) The speed is about $6\,\%$ of the speed of light, so the relativistic correction to the kinetic energy is of the order of $\tfrac{3}{4}(v : c)^2 \approx 0.3\,\%$. The classical treatment is valid here; at greater energies the period would begin to grow, and the switching rate of the accelerating voltage would not stay constant.
 **Reasonableness:** The period at the extraction radius: $\dfrac{2\pi r}{v} = \dfrac{2\pi \cdot 0.20\,\text{m}}{1.92 \cdot 10^{7}\,\text{m/s}} = 6.56 \cdot 10^{-8}\,\text{s}$, the same as with the formula $T = 2\pi m : (qB)$. Checking the energy: $32 \cdot 9.61 \cdot 10^{-15}\,\text{J} = 3.08 \cdot 10^{-13}\,\text{J}$, the same as $E_\text{k}$.
+
+## fy7-2-L2-08
+**Find:** which of the four force diagrams correctly shows the forces acting on an electron that moves upwards in a magnetic field pointing out of the page.
+**Principle:** Choose the electron as the object. In a vacuum only the magnetic field and the Earth act on it. The magnetic force is perpendicular to both the velocity and the field, and for a positive charge its direction is given by the right-hand rule; on a negative charge the force points in the opposite direction. The velocity is not a force. The weight is compared with the magnetic force.
+**Model answer:** The correct one is force diagram C. In the right-hand rule the thumb points in the direction of the velocity, up, and the other fingers in the direction of the field, out of the page, so the palm pushes to the right. The electron is negative, so the force points to the left. The magnitudes of the forces:
+
+$F_\text{m} = |q| v B$
+
+$$\begin{aligned}
+F_\text{m} &= 1.602 \cdot 10^{-19}\,\text{C} \cdot 3.0 \cdot 10^{6}\,\tfrac{\text{m}}{\text{s}} \\
+&\quad \cdot 0.50 \cdot 10^{-3}\,\text{T} \\
+&\approx 2.4 \cdot 10^{-16}\,\text{N}
+\end{aligned}$$
+
+$G = mg$
+
+$G = 9.109 \cdot 10^{-31}\,\text{kg} \cdot 9.81\,\text{m/s}^2$
+
+$G \approx 8.9 \cdot 10^{-30}\,\text{N}$
+
+The weight is about $10^{-14}$ times the magnetic force, so only $\overline{F}_\text{m}$ is drawn in the force diagram. In diagram A the force points in the direction of the field, out of the page, although the magnetic force is perpendicular to the field. In diagram B the direction of the force is that for a positive charge, so the negative charge of the electron has been forgotten. In diagram D the force is along the velocity, although the magnetic force does not change the speed but bends the path of the electron.

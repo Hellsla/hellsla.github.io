@@ -87,6 +87,36 @@
       "answer": 0.06,
       "unit": "T",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-5-L1-09",
+      "level": 1,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "Tarkastellaan viittä tilannetta, joissa voi syntyä induktiojännite. Arvot ovat esimerkkiarvoja. Yhden kierroksen vuo tarkoittaa käämin yhden kierroksen läpi kulkevaa magneettivuota.\n\nTilanne A: Käämissä on $200$ kierrosta. Yhden kierroksen vuo kasvaa tasaisesti $3{,}0\\,\\text{mWb}$ ajassa $0{,}50\\,\\text{s}$.\n\nTilanne B: Käämissä on $50$ kierrosta. Yhden kierroksen vuo kasvaa tasaisesti $6{,}0\\,\\text{mWb}$ ajassa $0{,}10\\,\\text{s}$.\n\nTilanne C: Suuren sähkömagneetin rautasydämen ympärillä on $500$ kierroksen käämi. Sähkömagneetin virta on vakio. Yhden kierroksen läpi kulkee vuo $8{,}0\\,\\text{mWb}$.\n\nTilanne D: Metallitanko on $0{,}50\\,\\text{m}$ pitkä. Se liikkuu vauhdilla $4{,}0\\,\\text{m/s}$ homogeenisessa magneettikentässä $0{,}30\\,\\text{T}$. Tanko, sen nopeus ja kenttä ovat kohtisuorassa toisiaan vastaan.\n\nTilanne E: Yksittäisen johdinsilmukan läpi kulkeva vuo pienenee tasaisesti $40\\,\\text{mWb}$ ajassa $0{,}020\\,\\text{s}$.\n\nLaske kunkin tilanteen induktiojännitteen suuruus $|e|$. Järjestä sitten tilanteet.",
+      "prompt": "Järjestä tilanteet induktiojännitteen suuruuden $|e|$ mukaan pienimmästä suurimpaan.",
+      "order": [
+        {
+          "text": "Tilanne C"
+        },
+        {
+          "text": "Tilanne D"
+        },
+        {
+          "text": "Tilanne A"
+        },
+        {
+          "text": "Tilanne E"
+        },
+        {
+          "text": "Tilanne B"
+        }
+      ],
+      "answer": "Tilanne C ($0\\,\\text{V}$), tilanne D ($0{,}60\\,\\text{V}$), tilanne A ($1{,}2\\,\\text{V}$), tilanne E ($2{,}0\\,\\text{V}$), tilanne B ($3{,}0\\,\\text{V}$).",
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level2": [

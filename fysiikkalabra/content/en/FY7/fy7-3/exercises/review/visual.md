@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 43e7c90a8f5c51ad
-Mode: full
-Round: 1
+CONTENT-HASH: 130f17b7a9a957c8
 
 ## Blocking
 
-## Fixed
-- None needed: no translation text had to be changed.
-
 ## Polish
+- [Minor] fy7-3-L2-08 solution — the inline $B = \mu_0 \tfrac{NI}{l}$ in Principle is small (\tfrac) next to the text — acceptable under the house rule, optional: show it once as a display formula.
 
 ## Checked
-- Opened the exercise screenshots of the new tasks (L2-05 solution): equations, units and fractions render without overflow or clipping at 390/1280 width.
-- Data tables of L2-05, L2-06 and L3-04 show the same cells as the Finnish; column headers and captions are translated.
-- Decimal separator in rendered English text and LaTeX is a point.
-- Answer unit label (uT, mT, uVs/(Am), times) fits next to the input field.
-- No untranslated strings visible in the English captures.
+- fy7-3-open-exercises-L2-1280-10 and -11 (en): new task 2-16 (L2-08) with situation, example-values note and question as separate paragraphs, four option rows with the feedback box inside the card, opened solution (Find, Principle, Model answer).
+- Ratios and the numeric check set as maths with upright units, $N : l$ with colon, 3 : 2 = 1.5; rows of the check aligned, no red KaTeX, no overflow.
+- The split paragraphs in the two tasks edited in the diff are spacing only.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

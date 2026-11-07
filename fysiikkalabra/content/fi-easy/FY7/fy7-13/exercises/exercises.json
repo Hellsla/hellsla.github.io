@@ -225,6 +225,41 @@
           "correct": true
         }
       ]
+    },
+    {
+      "id": "fy7-13-L2-08",
+      "level": 2,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "Punaisen laserin valon aallonpituus on $650\\,\\text{nm}$. Valo osuu kohtisuoraan hilaan, jossa on $100$ viivaa millimetrillä. Varjostin on $2{,}00\\,\\text{m}$:n päässä hilasta kohtisuorassa sädettä vastaan. Ensimmäisen kertaluvun maksimi on varjostimella $13{,}0\\,\\text{cm}$:n päässä keskimaksimista.\n\nOpiskelija vaihtaa tilalle hilan, jossa on $300$ viivaa millimetrillä. Hän siirtää myös varjostimen $1{,}00\\,\\text{m}$:n päähän hilasta. Laser pysyy samana.\n\nMiten ensimmäisen kertaluvun maksimin etäisyys keskimaksimista muuttuu?",
+      "answer": "Etäisyys kasvaa noin $1{,}5$-kertaiseksi.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Etäisyys kasvaa noin $6$-kertaiseksi.",
+          "feedback": "Tässä hilan vaikutus on luettu oikein, mutta varjostimen siirto väärin päin. Kulma ei riipu varjostimen paikasta. Samassa kulmassa $x = L\\tan\\theta$ puolittuu, kun $L$ puolittuu."
+        },
+        {
+          "text": "Etäisyys kasvaa noin $3$-kertaiseksi.",
+          "feedback": "Tässä on otettu huomioon vain hilan vaihto. Myös varjostin siirtyy puolet lähemmäs. Samassa kulmassa maksimi on silloin lähempänä keskimaksimia, koska $x = L\\tan\\theta$."
+        },
+        {
+          "text": "Etäisyys kasvaa noin $1{,}5$-kertaiseksi.",
+          "correct": true,
+          "feedback": "Oikein: tiheämpi hila kasvattaa kulman noin kolminkertaiseksi, ja lähempi varjostin puolittaa etäisyyden. Siksi $x$ kasvaa $13{,}0\\,\\text{cm}$:stä noin $19{,}9\\,\\text{cm}$:iin."
+        },
+        {
+          "text": "Etäisyys pienenee noin puoleen.",
+          "feedback": "Tässä on oletettu, että maksimin suunta riippuu vain laserin aallonpituudesta. Suunnan määrää kuitenkin hilayhtälö $d\\sin\\theta = k\\lambda$. Kun hilavakio $d$ pienenee kolmasosaan, kulma kasvaa."
+        },
+        {
+          "text": "Etäisyys pienenee noin kuudesosaan.",
+          "feedback": "Tässä on oletettu, että tiheämpi hila taivuttaa valoa vähemmän. Kolminkertainen viivatiheys pienentää hilavakion $d$ kolmasosaan. Silloin $\\sin\\theta = \\lambda : d$ kasvaa kolminkertaiseksi."
+        }
+      ]
     }
   ],
   "level3": [

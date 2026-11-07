@@ -1,21 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: bfc9f517bb3ff29d
-Mode: full
-Round: 1
+CONTENT-HASH: bcde11faf2628e81
 
 ## Blocking
 
-## Fixed
-- None needed.
-
 ## Polish
-- None.
+- [Minor] fy7-4-L2-08 (4-16) — spatial task given in words only — a small front-view sketch (magneetti, johdin, virran nuoli; ei voimaa) would help S2 readers without giving the answer.
 
 ## Checked
-- Opened content/fi-easy/FY7/fy7-4/review/shots/fy7-4-open-exercises-1280-5.png (L1 end, en) and fy7-4-open-exercises-L2-1280-6.png, fy7-4-open-exercises-L3-1280-5.png: task text, data tables (L2-05, L3-04), answer box with unit, and open solutions render without clipping; LaTeX renders correctly.
-- Tables: captions and column heads are short and fit; no horizontal overflow at this width.
-- Decimal separator: comma in text and formulas, point in table cells as in fi; no Finnish left in the English page.
-- The hash was the same at the start and the end (no edits).
+- fy7-4-open-exercises-L2-1280-11 and -12 (fi-easy): task 4-16 reason options with feedback, answer line, opened solution (Kysytty, Periaate, Mallivastaus with Perustelu).
+- Language plain and in order; "virhekäsitys" is explained in the same sentence; the viewer's frame (katsojaa kohti / poispäin) is used consistently.
+- Edited tasks' paragraph splits are spacing only; no red KaTeX, no overflow, nothing clipped.
+- Not opened: the first half of the task (statement and direction options) in -10; text is identical in structure to en, which I opened.
 
 ## Scores
-illustrations 4 · typography 4 · language 4 · accessibility 4
+illustrations 3 · typography 5 · Finnish 5 · accessibility 4

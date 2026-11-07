@@ -242,6 +242,37 @@
           "correct": true
         }
       ]
+    },
+    {
+      "id": "fy7-3-L2-08",
+      "level": 2,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "Opiskelijan käämissä on $240$ kierrosta $12\\,\\text{cm}$:n pituudella, ja siinä kulkee virta $0{,}60\\,\\text{A}$. Hän kelaa saman langan uudelleen yhtä paksulle putkelle niin, että kierroksia on edelleen $240$, mutta käämin pituus on $24\\,\\text{cm}$. Samalla hän kasvattaa virran $1{,}8\\,\\text{A}$:iin.\n\nLuvut ovat esimerkkiarvoja. Käämi on kummassakin tapauksessa pitkä paksuuteensa verrattuna, ja sen sisällä on ilmaa.\n\nMiten magneettivuon tiheys käämin keskellä muuttuu?",
+      "answer": "Kenttä kasvaa $1{,}5$-kertaiseksi.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Kenttä kasvaa $6$-kertaiseksi.",
+          "feedback": "Tässä kenttä on kerrottu virran suhteen lisäksi pituuden suhteella $2$, kuin pidempi käämi voimistaisi kenttää. Kenttä on kuitenkin kääntäen verrannollinen pituuteen, $B = \\mu_0 \\tfrac{NI}{l}$, joten pidennys heikentää sitä."
+        },
+        {
+          "text": "Kenttä kasvaa $3$-kertaiseksi.",
+          "feedback": "Tässä on huomioitu vain virran kolminkertaistuminen, koska kierroksia on yhtä monta. Kenttä riippuu kuitenkin kierrostiheydestä $N : l$ eikä kierrosten kokonaismäärästä, ja kierrostiheys puolittuu."
+        },
+        {
+          "text": "Kenttä kasvaa $1{,}5$-kertaiseksi.",
+          "correct": true,
+          "feedback": "Oikein: virta kolminkertaistuu ja kierrostiheys $N : l$ puolittuu, joten kenttä kasvaa tekijällä $3 : 2 = 1{,}5$, noin $1{,}5\\,\\text{mT}$:sta $2{,}3\\,\\text{mT}$:iin."
+        },
+        {
+          "text": "Kenttä pienenee puoleen.",
+          "feedback": "Tässä on huomioitu vain käämin venyttäminen. Kierrostiheyden puolittuminen puolittaisi kentän, mutta samalla virta kolminkertaistuu, ja kenttä on suoraan verrannollinen virtaan."
+        }
+      ]
     }
   ],
   "level3": [

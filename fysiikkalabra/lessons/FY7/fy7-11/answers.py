@@ -37,6 +37,8 @@ a["fy7-11-L3-03"] = th_p - th_v                      # width of the bow 1,665°
 # L1-06 (words): the correct option is C: the glass n is larger for violet (dispersion) so violet slows more; the frequency does not change
 a["fy7-11-L1-07"] = 405 / 1.530                      # λ in glass = λ0 / n (f constant, v = c / n) = 264,7 nm
 a["fy7-11-L1-08"] = 42.3 - 30.0                      # red edge 42,3° from the antisolar point, Sun 30,0° high: top at θ − h = 12,3°
+# L1-09 is true/false statements (no number): 1 false (violet n larger), 2 true (v = c/n: 1,961 < 1,982 · 10^8 m/s), 3 false (f unchanged),
+#   4 true (one colour does not split again), 5 true (violet 40,6° < red 42°), 6 false (Sun 45°: top at 42° - 45° = -3°)
 def d_alpha(n_p, n_v):                               # difference of the refraction angles of red and violet at α1 = 60,0°
     return asin(sin(60.0) / n_p) - asin(sin(60.0) / n_v)
 a["fy7-11-L2-05"] = d_alpha(1.6150, 1.6498)          # flint glass: 32,43° − 31,66° = 0,765° (crown 0,414°, acrylic 0,461°)

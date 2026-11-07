@@ -1,20 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: bfc9f517bb3ff29d
-Mode: full
-Round: 1
+CONTENT-HASH: bcde11faf2628e81
 
 ## Blocking
 
-## Fixed
-- None needed.
-
 ## Polish
-- None.
 
 ## Checked
-- Level, task type (kind), answer box and the parts a), b), c) of every new task match the Finnish, so level and difficulty are unchanged.
-- Choices of L1-06: the same four options in the same order; each distractor keeps its misconception and its corrective feedback; the correct option and its feedback are the translated fi ones.
-- Hints of what to write in the answer box ("Write ... in the answer box") are kept in all multi-part tasks.
-- Selkosuomi is simple: the long fi sentences are split, one idea per sentence; terms (virtavaaka, hajonta, säteittäinen kenttä) are explained or kept as in the lesson.
-- Solutions keep the full Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness structure of the Finnish.
-- The hash was the same at the start and the end (no edits).
+- Same levels, order, sub-questions, field instructions and hints as the reviewed Finnish; the new task fy7-4-L2-08 has the same structure, options and feedback as fi.
+- The situation comes first and the question last in its own sentence in fy7-4-L2-08; context is recognisable to a 17-year-old.
+- Each distractor's feedback names the one misconception it carries and repairs it; the correct option's feedback does not disclose the answer before the choice (two-stage tasks keep the reason step).
+- Solutions keep Find/Principle/Model answer order and every step the Finnish has; a student could follow them.
+- Clearer Finnish (NOTES.md section 12): whole connected sentences, difficult words explained in the sentence (e.g. kääntäen verrannollinen, vektorisumma), physics terms and all steps unchanged.
+- No wording fix was needed.

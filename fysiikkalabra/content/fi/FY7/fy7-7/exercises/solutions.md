@@ -194,3 +194,22 @@
 **Sijoitus:** a) $NBA = 120 \cdot 0{,}20\,\text{T} \cdot 0{,}0050\,\text{m}^2 = 0{,}12\,\text{Wb}$. Taajuudella $f_1$: $e_{0,1} = 0{,}12\,\text{Wb} \cdot 2\pi \cdot 25\,\text{Hz} = 18{,}85\,\text{V}$ ja $U_1 = \dfrac{18{,}85\,\text{V}}{\sqrt{2}} = 13{,}33\,\text{V}$. Taajuudella $f_2$: $e_{0,2} = 0{,}12\,\text{Wb} \cdot 2\pi \cdot 40\,\text{Hz} = 30{,}16\,\text{V}$ ja $U_2 = \dfrac{30{,}16\,\text{V}}{\sqrt{2}} = 21{,}33\,\text{V}$. b) $P_1 = \dfrac{(13{,}33\,\text{V})^2}{8{,}0\,\Omega} = 22{,}2\,\text{W}$ ja $P_2 = \dfrac{(21{,}33\,\text{V})^2}{8{,}0\,\Omega} = 56{,}8\,\text{W}$. Suurin hetkellinen teho on $p_{\max} = \dfrac{(30{,}16\,\text{V})^2}{8{,}0\,\Omega} = 113{,}7\,\text{W}$.
 **Vastaus:** b) Keskimääräinen teho on $P_2 \approx 57\,\text{W}$ pyörimistaajuudella $40\,\text{Hz}$, kaksi merkitsevää numeroa kuten käämin ja vastuksen arvot. Pyörimistaajuudella $25\,\text{Hz}$ teho on $22\,\text{W}$, ja suurin hetkellinen teho on $1{,}1 \cdot 10^{2}\,\text{W}$. c) Huippujännite on verrannollinen taajuuteen, ja teho on verrannollinen jännitteen neliöön, joten teho on verrannollinen taajuuden neliöön: $1{,}6^2 = 2{,}56$. Siksi teho kasvaa $2{,}56$-kertaiseksi, eikä $1{,}6$-kertaiseksi.
 **Järkevyys:** Tarkistus: $P_2 : P_1 = 56{,}8\,\text{W} : 22{,}2\,\text{W} = 2{,}56$, mikä vastaa lukua $1{,}6^2$. Keskimääräinen teho $56{,}8\,\text{W}$ on puolet huipputehosta $113{,}7\,\text{W}$, kuten sinimuotoisella jännitteellä pitääkin. Yksiköt: $\tfrac{\text{V}^2}{\Omega} = \text{W}$.
+
+## fy7-7-L1-09
+**Kysytty:** mikä neljästä $(t, e)$-kuvaajasta esittää generaattorin jännitettä, kun tehollinen arvo on $5{,}0\,\text{V}$ ja taajuus $40\,\text{Hz}$.
+**Periaate:** Sinimuotoisen jännitteen tehollinen arvo on huippuarvo jaettuna luvulla $\sqrt{2}$, joten kuvaajasta näkyvä huippuarvo on $e_0 = U\sqrt{2}$. Jaksonaika on taajuuden käänteisluku, $T = 1 : f$.
+**Mallivastaus:** Oikea on kuvaaja B. Huippuarvo:
+
+$e_0 = 5{,}0\,\text{V} \cdot \sqrt{2}$
+
+$e_0 \approx 7{,}1\,\text{V}$
+
+Jaksonaika:
+
+$T = \dfrac{1}{40\,\text{Hz}}$
+
+$T = 0{,}025\,\text{s} = 25\,\text{ms}$
+
+Kuvaajan B käyrä käy välillä $-7{,}1\,\text{V}$ ja $7{,}1\,\text{V}$, ja se on nolla ja kasvamassa hetkillä $0$, $25\,\text{ms}$, $50\,\text{ms}$ ja niin edelleen: välillä $0$–$100\,\text{ms}$ siinä on neljä täyttä jaksoa. Kuvaajan C jaksonaika on oikea, mutta sen huippuarvo on vain $5{,}0\,\text{V}$: siinä tehollinen arvo on piirretty huippuarvoksi, mikä on luvun yleinen virhe. Kuvaajan D huippuarvo on oikea, mutta sen jaksonaika on $40\,\text{ms}$: siinä taajuuden lukuarvo on luettu jaksonajaksi millisekunteina. Kuvaajassa A on molemmat virheet.
+
+**Kuvaajan lukeminen:** Huippuarvo luetaan käyrän ylimmän kohdan korkeudesta, ja jaksonaika kahden peräkkäisen samaan suuntaan tapahtuvan nollakohdan välistä. Järkevyys: taajuus $40\,\text{Hz}$ tarkoittaa $40$ jaksoa sekunnissa, eli $4$ jaksoa $100\,\text{ms}$:ssa.

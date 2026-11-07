@@ -73,6 +73,20 @@
 **Vastaus:** $1{,}5$ aallonpituutta, kaksi merkitsevää numeroa kuten paksuus $300\,\text{nm}$.
 **Järkevyys:** Matkaero on suurempi kuin kalvon kaksinkertainen paksuus $600\,\text{nm}$, koska aallonpituus kalvossa on lyhyempi. Tulos $1{,}5 = 1 + \tfrac{1}{2}$ on muotoa $k + \tfrac{1}{2}$ arvolla $k = 1$, joten saippuakalvo heijastaa tässä kohdassa vihreää laservaloa voimakkaasti.
 
+## fy7-14-L1-09
+**Kysytty:** lauseke, jolla saadaan kalvon paksuus $d$ ensimmäisen tumman renkaan kohdalla mustan laikun ulkopuolella.
+**Periaate:** Kalvon kahdesta pinnasta heijastuneiden aaltojen matkaero on $2nd$, koska alapinnasta heijastunut aalto kulkee kalvon läpi edestakaisin ja aallonpituus kalvossa on $\lambda : n$. Yläpinnan heijastus ilmasta kalvoon kääntää aallon, alapinnan heijastus kalvosta ilmaan ei. Kun siirtymiä on yksi, heikentävän interferenssin ehto on $2nd = k\lambda$, missä $k = 0, 1, 2, \ldots$
+**Mallivastaus:** Musta laikku on niin ohut, että matkaero on lähes nolla. Se vastaa heikentävän ehdon arvoa $k = 0$: aallot kumoavat toisensa yläpinnan siirtymän vuoksi. Kun kalvo paksunee, ensin tulee kirkas rengas, jossa $2nd = \tfrac{1}{2}\lambda$ eli $d = \lambda : (4n)$. Sen jälkeen tulee ensimmäinen tumma rengas, jossa $k = 1$:
+
+$$\begin{aligned}
+&2nd = 1 \cdot \lambda \\
+&d = \frac{\lambda}{2n}
+\end{aligned}$$
+
+Ensimmäisen tumman renkaan kohdalla kalvon paksuus on $d = \dfrac{\lambda}{2n}$. Esimerkiksi kun $\lambda = 589\,\text{nm}$ ja $n = 1{,}33$, paksuus on $589\,\text{nm} : 2{,}66 \approx 221\,\text{nm}$.
+
+Lauseke $\lambda : (4n)$ saadaan, jos siirtymä unohdetaan, mutta se on ensimmäisen kirkkaan renkaan paksuus. Lauseke $\lambda : n$ unohtaa, että valo kulkee kalvon läpi edestakaisin. Lauseke $\lambda : 2$ käyttää aallonpituutta ilmassa, ja lauseke $n\lambda : 2$ olettaa virheellisesti, että aallonpituus pitenee kalvossa. Valo hidastuu kalvossa, joten aallonpituus lyhenee.
+
 ## fy7-14-L2-01
 **Annettu:** saippuakalvon taitekerroin $n = 1{,}33$, paksuus $d = 240\,\text{nm}$, ilmaa molemmin puolin, näkyvä valo $400$–$700\,\text{nm}$
 **Kysytty:** heijastuneesta valosta puuttuva aallonpituus $\lambda$ nanometreinä

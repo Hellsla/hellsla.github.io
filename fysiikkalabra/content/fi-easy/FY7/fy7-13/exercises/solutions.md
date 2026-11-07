@@ -169,6 +169,31 @@
 **Periaate:** Aallonpituus lasketaan etäisyydestä $x$. Suhteellinen virhe on likimain $\Delta x : x$. Kun $\Delta x$ pysyy samana, virhe on sitä pienempi osa, mitä suurempi $x$ on. Siksi mittaus kannattaa tehdä niin, että $x$ on mahdollisimman suuri.
 **Mallivastaus:** Suhteellinen virhe pienenee, kun mitataan kauempana oleva maksimi. Sama lukemisvirhe on silloin pienempi osa suuremmasta etäisyydestä. Jos varjostin siirretään lähemmäs hilaa, $x$ pienenee. Silloin sama $\Delta x$ on suurempi osa, ja virhe kasvaa. Harvempi hila pienentää kulmia ja siksi myös $x$:ää. Silloin suhteellinen virhe kasvaa, eikä virhe jakaudu mihinkään. Kirkkaampi laser ei muuta maksimien paikkoja. Paikat riippuvat aallonpituudesta, hilavakiosta ja etäisyydestä $L$.
 
+## fy7-13-L2-08
+**Kysytty:** miten ensimmäisen kertaluvun maksimin etäisyys $x$ keskimaksimista muuttuu, kun hila vaihdetaan tiheämpään ja varjostin siirretään lähemmäs.
+**Periaate:** Maksimin suunnan määrää hilayhtälö $d\sin\theta = k\lambda$. Kulma ei riipu varjostimen paikasta. Varjostimella maksimin etäisyys keskimaksimista saadaan suorakulmaisesta kolmiosta: $x = L\tan\theta$. Muutoksella on siis kaksi vastakkaista vaikutusta. Tiheämpi hila suurentaa kulmaa. Lähempi varjostin pienentää etäisyyttä samassa kulmassa. Lasketaan $x$ kummassakin tilanteessa.
+**Mallivastaus:** Alkutilanteessa hilavakio on $d_1 = 1\,\text{mm} : 100 = 1{,}00 \cdot 10^{-5}\,\text{m}$.
+
+$$\begin{aligned}
+&\sin\theta_1 = \frac{650 \cdot 10^{-9}\,\text{m}}{1{,}00 \cdot 10^{-5}\,\text{m}} = 0{,}0650 \\
+&\theta_1 = 3{,}727^\circ \\
+&x_1 = 2{,}00\,\text{m} \cdot \tan 3{,}727^\circ \\
+&x_1 = 0{,}130\,\text{m}
+\end{aligned}$$
+
+Tulos vastaa annettua etäisyyttä $13{,}0\,\text{cm}$. Uuden hilan hilavakio on $d_2 = 1\,\text{mm} : 300 = 3{,}333 \cdot 10^{-6}\,\text{m}$.
+
+$$\begin{aligned}
+&\sin\theta_2 = \frac{650 \cdot 10^{-9}\,\text{m}}{3{,}333 \cdot 10^{-6}\,\text{m}} = 0{,}195 \\
+&\theta_2 = 11{,}24^\circ \\
+&x_2 = 1{,}00\,\text{m} \cdot \tan 11{,}24^\circ \\
+&x_2 = 0{,}199\,\text{m}
+\end{aligned}$$
+
+Suhde on $x_2 : x_1 = 19{,}9\,\text{cm} : 13{,}0\,\text{cm} \approx 1{,}5$. Etäisyys kasvaa siis noin $1{,}5$-kertaiseksi, $13{,}0\,\text{cm}$:stä noin $19{,}9\,\text{cm}$:iin.
+
+Pienillä kulmilla $\tan\theta \approx \sin\theta$, joten $x \approx L\lambda : d$. Hilavakio pienenee kolmasosaan, ja siksi etäisyys kasvaa noin kolminkertaiseksi. Varjostin siirretään puolet lähemmäs, ja siksi etäisyys puolittuu. Yhteensä kerroin on $3 : 2 = 1{,}5$. Tarkka kerroin $1{,}53$ on hieman suurempi, koska uudessa kulmassa $11{,}2^\circ$ tangentti on jo selvästi suurempi kuin sini. Jos ottaisi huomioon vain hilan, saisi kolminkertaisen etäisyyden. Pelkästä varjostimen siirrosta saisi puolet pienemmän etäisyyden. Tiheämpi hila ei taivuta valoa vähemmän vaan enemmän, koska viivatiheyden kasvaessa hilavakio pienenee.
+
 ## fy7-13-L3-04
 **Annettu:** rakoväli $d = 0{,}250\,\text{mm}$, varjostimen etäisyys $L = 2{,}00\,\text{m}$, intensiteettitaulukko
 **Kysytty:** a) aallonpituus $\lambda$ nanometreinä, b) toisen kertaluvun maksimin paikka, c) ensimmäisen maksimin paikka hilalla ja hilan kuvion ero

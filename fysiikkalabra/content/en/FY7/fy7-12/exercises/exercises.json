@@ -237,6 +237,57 @@
       "answer": 38.7896,
       "unit": "°",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-12-L2-08",
+      "level": 2,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "A laser at the bottom of an aquarium points obliquely upwards, and its beam hits the calm water surface from below so that the angle between the beam and the water surface is $40.0^\\circ$. The refractive index of water is $1.33$ and that of air $1.00$.\n\nWhat happens to the beam at the water surface?",
+      "answer": "All the light is reflected from the water surface back into the water.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Some of the light is refracted into the air, and some is reflected into the water.",
+          "feedback": "This holds when the angle of incidence is smaller than the critical angle. Here the angle of incidence measured from the normal is $90^\\circ - 40.0^\\circ = 50.0^\\circ$, and it is larger than the critical angle, so there is no refracted beam."
+        },
+        {
+          "text": "All the light is reflected from the water surface back into the water.",
+          "correct": true,
+          "feedback": "Correct: the beam is totally internally reflected, and no light gets from the water surface into the air."
+        },
+        {
+          "text": "All the light is refracted into the air, and none is reflected.",
+          "feedback": "This assumes that a transparent boundary lets all the light through. Some light is always reflected at a boundary, and here the angle of incidence $50.0^\\circ$ is larger than the critical angle, so all the light is reflected."
+        },
+        {
+          "text": "The light is refracted into the air and travels along the water surface.",
+          "feedback": "The angle of refraction is $90^\\circ$ only when the angle of incidence is exactly the critical angle. The angle of incidence $50.0^\\circ$ is larger than the critical angle, so the law of refraction gives no angle of refraction and the light is totally reflected."
+        }
+      ],
+      "reason_prompt": "Which reason explains your answer?",
+      "reasons": [
+        {
+          "text": "The angle of incidence $50.0^\\circ$ is larger than the critical angle $48.8^\\circ$ of the boundary between water and air.",
+          "correct": true,
+          "feedback": "Correct: $\\sin\\alpha_\\text{r} = 1.00 : 1.33 = 0.752$, so $\\alpha_\\text{r} = 48.8^\\circ$. The angle of incidence is measured from the normal, and it exceeds the critical angle."
+        },
+        {
+          "text": "The angle of incidence $40.0^\\circ$ is smaller than the critical angle $48.8^\\circ$ of the boundary between water and air.",
+          "feedback": "Here the angle has been measured from the water surface, not from the normal. Measured from the normal, the angle of incidence is $90^\\circ - 40.0^\\circ = 50.0^\\circ$, and it is larger than the critical angle."
+        },
+        {
+          "text": "The sine of the critical angle would be $1.33 : 1.00 > 1$, so there is no critical angle and the light always gets into the air.",
+          "feedback": "Here the refractive indices have swapped places. The sine of the critical angle is $n_2 : n_1$, where $n_1$ belongs to the substance the light comes from: $\\sin\\alpha_\\text{r} = 1.00 : 1.33$, so the critical angle exists."
+        },
+        {
+          "text": "Light going from water into air moves into an optically less dense substance and is refracted away from the normal.",
+          "feedback": "The statement is true, but it does not settle the answer. It only tells that total internal reflection is possible. Whether it happens depends on whether the angle of incidence is larger than the critical angle."
+        }
+      ]
     }
   ],
   "level3": [

@@ -232,6 +232,36 @@
       "answer": 0.2,
       "unit": "A",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-8-L2-08",
+      "level": 2,
+      "kind": [
+        "reasoning"
+      ],
+      "text": "Tuulivoimalan generaattori tuottaa tehon $3{,}0\\,\\text{MW}$ jännitteellä $690\\,\\text{V}$. Voimalan muuntaja nostaa jännitteen $20\\,\\text{kV}$:iin, ja teho siirretään kaapelia pitkin sähköasemalle. Kaapelin johtimien yhteinen resistanssi on $0{,}50\\,\\Omega$. Arvot ovat esimerkkiarvoja, ja muuntaja oletetaan ideaaliseksi.\n\nMikä on kaapelissa lämmöksi muuttuvan häviötehon $P_\\text{h}$ suuruusluokka?",
+      "answer": "noin $10\\,\\text{kW}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "noin $0{,}1\\,\\text{kW}$",
+          "feedback": "Tässä virta on kerrottu resistanssilla ilman neliötä. Tulo $RI = 75\\,\\text{V}$ on kaapelin jännitehäviö eikä teho; häviöteho on $RI^2$."
+        },
+        {
+          "text": "noin $10\\,\\text{kW}$",
+          "correct": true,
+          "feedback": "Oikein: $I = 3{,}0\\,\\text{MW} : 20\\,\\text{kV} = 150\\,\\text{A}$, joten $P_\\text{h} = 0{,}50\\,\\Omega \\cdot (150\\,\\text{A})^2$, eli noin $11\\,\\text{kW}$."
+        },
+        {
+          "text": "noin $10\\,\\text{MW}$",
+          "feedback": "Tässä virta on laskettu generaattorin jännitteellä $690\\,\\text{V}$, vaikka muuntaja nostaa jännitteen ennen kaapelia. Tulos olisi suurempi kuin voimalan koko teho, mikä on mahdotonta."
+        },
+        {
+          "text": "noin $1000\\,\\text{MW}$",
+          "feedback": "Tässä häviöteho on laskettu lausekkeella $U^2 : R$ siirtojännitteellä. Siirtojännite ei ole kaapelin resistanssin yli oleva jännite, joten ensin lasketaan virta $I = P : U$."
+        }
+      ]
     }
   ],
   "level3": [

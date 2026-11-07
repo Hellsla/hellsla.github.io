@@ -193,3 +193,30 @@
 **Answer:** $5.3\,\text{mT}$, two significant figures like the voltage $6.0\,\text{V}$ and the diameter $3.0\,\text{cm}$.
 **Reasonableness:** In a tight single-layer coil $N : l = 1 : d_\text{i}$, so $B = \mu_0 I : d_\text{i} = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 2.31\,\text{A} : 0.55 \cdot 10^{-3}\,\text{m} = 5.28\,\text{mT}$, the same result. The field is about $100$ times the Earth's field. The power is $U I = 6.0\,\text{V} \cdot 2.31\,\text{A} = 13.9\,\text{W}$, so the thin wire warms up and the electromagnet can be used only for short periods.
 **Justification for part d):** When the wire is twice as long, the resistance $R = \rho L : A$ doubles and the current $I = U : R$ halves to $1.16\,\text{A}$. There are twice as many turns, but they are in a single layer, so the length $l$ of the coil doubles and the turn density $N : l$ stays the same. The field $B = \mu_0 \tfrac{N}{l} I$ therefore halves to $2.6\,\text{mT}$. If there were two layers, $l$ would stay the same and the field would stay the same, but in this problem the coil is a single layer.
+
+## fy7-3-L2-08
+**Find:** how the magnetic flux density at the centre of the coil changes when a coil of $240$ turns is stretched from $12\,\text{cm}$ to $24\,\text{cm}$ and the current is increased from $0.60\,\text{A}$ to $1.8\,\text{A}$.
+**Principle:** Inside a long coil $B = \mu_0 \tfrac{N I}{l}$. The field is directly proportional to the current and to the turn density $N : l$, so it depends on the number of turns per unit length and not on the total number of turns. The thickness of the coil does not affect the field.
+**Model answer:** The field becomes $1.5$ times as large. The changes are
+
+$\dfrac{I_2}{I_1} = \dfrac{1.8\,\text{A}}{0.60\,\text{A}} = 3$
+
+$\dfrac{l_2}{l_1} = \dfrac{24\,\text{cm}}{12\,\text{cm}} = 2$
+
+The number of turns stays the same, so the turn density is halved. The ratio of the fields is
+
+$\dfrac{B_2}{B_1} = \dfrac{I_2}{I_1} \cdot \dfrac{l_1}{l_2}$
+
+$\dfrac{B_2}{B_1} = 3 \cdot \dfrac{1}{2} = 1.5$
+
+Check with numbers:
+
+$B_1 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot \dfrac{240 \cdot 0.60\,\text{A}}{0.12\,\text{m}}$
+
+$B_1 \approx 1.51 \cdot 10^{-3}\,\text{T}$
+
+$B_2 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot \dfrac{240 \cdot 1.8\,\text{A}}{0.24\,\text{m}}$
+
+$B_2 \approx 2.26 \cdot 10^{-3}\,\text{T}$
+
+So the field grows from about $1.5\,\text{mT}$ to about $2.3\,\text{mT}$. Tripling the current alone would give three times the field if the total number of turns were what mattered, but stretching the coil makes the turns sparser and weakens the field.

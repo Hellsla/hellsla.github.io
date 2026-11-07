@@ -26,6 +26,7 @@ a["fy7-6-L2-05"] = 20e-3 * g * (1.00 / t_ka) * 1e3                      # P = m 
 # fy7-6-L2-06 is answered in words (error analysis: the induced field opposes the change; an N face repels)
 products = [0.40 * 0.27, 0.25 * 0.41, 0.20 * 0.53, 0.10 * 1.02]  # e · Δt = N ΔΦ: 0,108, 0,1025, 0,106, 0,102 Wb
 a["fy7-6-L2-07"] = sum(products) / 4 / 300 * 1e3                        # ΔΦ = (e Δt)_ka / N = 0,10463 Wb / 300 = 0,3488 mWb -> 0,35 mWb
+# L2-08 is a two-stage multiple choice (no number): the ring jumps up, Lenz: its current opposes the growing flux
 # Level 3: reasoning or an unfamiliar context
 Q1 = 20e-3 * g * 1.00 - 0.5 * 20e-3 * 0.15 ** 2                         # one drop: m g h - 1/2 m v² = 0,19620 - 0,000225 = 0,195975 J
 a["fy7-6-L3-01"] = 50 * Q1 / (0.35 * 385)                               # ΔT = 50 Q1 / (m c) = 9,79875 J / 134,75 J/K = 0,07272 K -> 0,073 K

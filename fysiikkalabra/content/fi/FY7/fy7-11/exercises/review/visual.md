@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 1ce25266ae253843
+CONTENT-HASH: 444d1349c80bb015
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] fy7-11-L2-07 (11-15), kuvaaja — vain 0,005 pääväli, ei apuruudukkoa 0,001 tarkkuudelle; lukematarkkuus nyt ±0,002 ja toleranssi 0,3 %, joten luenta onnistuu, mutta tiheämpi apuviiva helpottaisi.
-- [Minor] fy7-11-L3-05 (11-20), Järkevyys — "R" ja "= 16,06 mm" (jos edelleen erillisillä riveillä) yhdistä yhdelle riville.
+- [Minor] exercises.json L1-09 stem — "noin 42°:n ja violetti noin 40,6°:n kulmassa" sets two case endings on angles in one sentence; reads heavily, consider "punainen noin 42° ja violetti noin 40,6° kulmassa"-type rephrasing in the teacher's style.
+- [Minor] statement 6 — uses 42° − h, stated only in the solution's Periaate; confirm the lesson teaches it (science/pedagogy).
 
 ## Checked
-- Round 1: A_max = 64,98° / 66,57° yhtenäinen Vastauksessa, Mallivastauksessa ja Järkevyydessä; "197 889 km/s"; lainaus ”...” korjattu (L2-06); lukematarkkuus ±0,002 ja toleranssi 0,003 täsmäävät (±0,15 % < 0,3 %)
-- Muutokset: L1-06 (11-6, oikea vastaus viimeisenä, vaihtoehdot lyhennetty, ei pituusvihjettä), L2-05 (42,3°), L2-06, L2-07, L3-05
-- Kuvat 1280 px: open-exercises-1280-6 (monivalinta), L3-1280-10 (L3-05 mallivastaus ja järkevyys, 0,02° ja 1,0005 > 1 täsmäävät); ei ylivuotoa
-- 360/390 px: tehtäväkohtaisia kuvia ei ole; pakettiraportin layout ok
+- Render fy7-11-L1-09 at 390 px: six statements each with Tosi/Epätosi buttons and feedback, solution with v = c : n fractions; no overflow or clipping; the answer line fits.
+- Text only: answer pattern F T F T T F; false statements are not marked by length or hedging; distractors hit the chapter's warned mistakes (wavelength vs refraction, frequency change).
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations n/a · typography 5 · Finnish 5 · accessibility 5

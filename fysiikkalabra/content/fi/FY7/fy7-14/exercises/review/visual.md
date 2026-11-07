@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: f11d7c4f7347aaa8
-ROUND: 2
+CONTENT-HASH: debd8276324fe042
+Round: 1
 
 ## Blocking
 
 ## Polish
-- [Minor] fy7-14 L2-06 (reunapinnoite) — vastaus-kappale on pitkä ja ketjuttaa useita lukuja yhteen kappaleeseen — jaa kahteen: tulos ja purppuran selitys.
+- [Minor] fy7-14-L1-09 — väärän vaihtoehdon $\lambda/(4n)$ palaute "unohdettu yläpinnan heijastuksen puolen aallonpituuden siirtymä" on kömpelö; esim. "unohdettu yläpinnan heijastuksessa tapahtuva puolen aallonpituuden siirtymä".
 
 ## Checked
-- 14 muutetut tehtävät: L1 kalvo-MC (vaihtoehtojen järjestys), pinnoitetaulukko (R-arvot 1,84…1,64 %, vastaus 97,8 nm), öljykalvo (b- ja c-kohta, vastaus 360 nm), ilmakiila (kuvaajan lukeminen, 12 µm); open-exercises-L3-1280-5, -7, -9. Laskut ja taulukko täsmäävät (kulmakerroin 1,9 mm/raita, 0,19 = 0,19).
-- Kierros 1: Blocking oli tyhjä; kierroksen 1 Polish-kohdat käyty läpi (taulukoiden desimaalipiste on JSON-tallenne, ei virhe). 360 px:n tehtäväkaappauksia ei ole; layout 360 px -tarkistus on ok. Ei paljaita yksiköitä tekstissä (skriptitarkistus), hash alussa ja lopussa sama.
+- Kuvat 390 px (oma skripti vis_k7q.py, uusi tehtävä palautteineen ja ratkaisuineen auki): doc scrollWidth 390, ei vaakaylivuotoa, ei yli 300 px leveitä KaTeX-ketjuja, ei KaTeX-virheitä. Sivun 1280 px -kaappauksia en avannut; ne ja muu sivu katsottu vain tekstistä ja determinististen tarkistusten perusteella.
+- 14-9 (L1-09): 390 px, palaute ja ratkaisu auki: kaavavaihtoehdot ($\dfrac{}{}$) ja aligned-lohko mahtuvat, ei ylivuotoa.
+- Muoto: kaikki vaihtoehdot samaa muotoa, oikea ei erotu; harhat osuvat varoitettuihin virheisiin (siirtymä unohtunut, matkaero $nd$, $n\lambda$). Tekstistä ja renderistä.
+- L3-01, L3-02: kappalejako ok.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

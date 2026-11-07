@@ -1,17 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 71c65847b5364a38
-Round 2.
+CONTENT-HASH: 17151a3c70a4f503
+
+Round 1 (exercises): full review; new YO-skill task fy7-16-L2-08 (suuruusluokka), the rest of the set PASS before. Checked from the text only; no renders.
 
 ## Blocking
 
 ## Polish
-- exercises.json:44 (L1-06) — the plan asks about glass or aluminium against steel; only glass is covered. An aluminium distractor would be good (carried over).
-- L3-05 a) overlaps the existing L3-02 (the same loop model); b) and c) justify it (carried over).
+- exercises.json:227 (L2-08) — the distractors carry unit errors only, none of this chapter's warned mistakes (dB read as percent, range of the charger, hot glass). Physics is fine; flag for pedagogy whether a chapter-specific distractor is wanted.
+- exercises.json:252 (L2-08, "noin 12 s") — 1000 times the answer, outside docs/exercise-types.md's "factor 10–100". Acceptable; "noin 120 ms" (factor 10, e.g. n forgotten twice) would fit the rule.
+- Carried over: L1-06 aluminium distractor; L3-05 a) overlap.
 
 ## Checked
-- Round-1 Blocking L2-05 resolved: tolerance 0.07 with data-step 1 gives an accepted range of 11,86–13,86 mm, so the solution's "12–13 mm" is accepted. Kuvaajan lukeminen and Vastaus now agree: crossing just over 12,5 mm, the chord value 12,857 mm, and a smooth curve slightly below the chord.
-- Round-1 Polish L3-05 c resolved: the added sentence says Al/Cu fail because their own eddy field cancels the flux, and steel's ferromagnetism adds heating. Correct and consistent with the lesson.
-- L1-06 reworded and reordered: exactly one correct option, it matches `answer`, and every feedback is right (the field passes through glass; Lenz gives the direction, not cancellation).
-- L3-05 text split; the model assumptions (one loop, own field neglected) are still stated in the task.
-- One script recomputed every new answer: 0,5036 mW; 15,05 km; 12,857 mm; 0,2003 dB/km; 1,0 %; 13,28 mm; 42,43 kHz. All agree with exercises.json and answers.py, and none changed this round.
-- Hash the same at start and end.
+- Hash 17151a3c70a4f503 at start and end.
+- L2-08 physics: v = c : n = 2,04 · 10⁸ m/s, s = 2 · 1,2 · 10⁶ m, t = 11,76 ms → "noin 12 ms"; check 4,9 µs per km · 2400 km = 11,8 ms right. Assumptions (axial ray, no device delays) stated in the task.
+- Distractors recomputed: L as 1200 m → 11,8 µs; 1,2 · 10⁵ m → 1,18 ms; v as 300 000 with L in m → 11,8 s. Each feedback names its error correctly.
+- Form: four options same form "noin 12 …"; correct not identifiable by form. Correct feedback right (11,8 ms).
+- Scope: t = s : v with v = c : n from prerequisite fy7-12; fits an applied chapter.
+- Solution complete, symbolic before substitution, conversion km → m shown; display lines short (text estimate).
+- answers.py output equals exercises.json for all 19 numeric answers.

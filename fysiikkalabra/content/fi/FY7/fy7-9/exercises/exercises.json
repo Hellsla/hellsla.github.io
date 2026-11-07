@@ -204,6 +204,62 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy7-9-L2-08",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "Sähköhellan säteilylevyn pinnan säteilyn spektrin huipun aallonpituus $\\lambda_\\text{max}$ mitattiin infrapunaspektrometrillä neljällä tehoasetuksella, ja tulokset ovat taulukossa. Levyn pinta oletetaan mustaksi kappaleeksi, ja jokaisen aallonpituuden epävarmuus on $\\pm 0{,}10\\,\\mu\\text{m}$. Wienin siirtymälain vakio on $b = 2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}$.\n\nMikä johtopäätös mittauksista on perusteltu?",
+      "answer": "Asetuksella 4 levyn absoluuttinen lämpötila on noin $1{,}4$ kertaa niin suuri kuin asetuksella 1.",
+      "unit": "",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Spektrin huippu (esimerkkiaineisto)",
+        "columns": [
+          "Tehoasetus",
+          "$\\lambda_\\text{max}\\,(\\mu\\text{m})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "4.10"
+          ],
+          [
+            "2",
+            "3.40"
+          ],
+          [
+            "3",
+            "3.35"
+          ],
+          [
+            "4",
+            "2.90"
+          ]
+        ]
+      },
+      "choices": [
+        {
+          "text": "Asetuksella 3 levyn absoluuttinen lämpötila on noin $13\\,\\text{K}$ suurempi kuin asetuksella 2.",
+          "feedback": "Tämä pitää mittausepävarmuuden sisään jäävää eroa todellisena. Huiput $3{,}40\\,\\mu\\text{m}$ ja $3{,}35\\,\\mu\\text{m}$ eroavat vain $0{,}05\\,\\mu\\text{m}$, mikä on vähemmän kuin kummankin lukeman epävarmuus $\\pm 0{,}10\\,\\mu\\text{m}$. Mittauksista ei voi päätellä, kummalla asetuksella levy on kuumempi."
+        },
+        {
+          "text": "Asetuksella 4 levyn absoluuttinen lämpötila on noin $1{,}4$ kertaa niin suuri kuin asetuksella 1.",
+          "correct": true,
+          "feedback": "Oikein: $T = b : \\lambda_\\text{max}$, joten lämpötilojen suhde on huippujen käänteissuhde $4{,}10 : 2{,}90 \\approx 1{,}4$. Epävarmuuden rajoissa suhde on $1{,}3$–$1{,}5$, joten johtopäätös pysyy."
+        },
+        {
+          "text": "Asetuksella 4 levyn celsiuslämpötila on noin $1{,}4$ kertaa niin suuri kuin asetuksella 1.",
+          "feedback": "Tämä sekoittaa celsiusasteet ja kelvinit. Wienin siirtymälaissa lämpötila on absoluuttinen, joten suhde $1{,}4$ koskee kelvinejä. Celsiusasteina lämpötilat ovat noin $434\\,{}^\\circ\\text{C}$ ja $726\\,{}^\\circ\\text{C}$, ja niiden suhde on noin $1{,}7$."
+        },
+        {
+          "text": "Asetuksella 4 levyn absoluuttinen lämpötila on noin $0{,}7$ kertaa niin suuri kuin asetuksella 1.",
+          "feedback": "Tämä lukee riippuvuuden väärin päin, ikään kuin huippu pitenisi lämpötilan kasvaessa. Huipun aallonpituus on kääntäen verrannollinen lämpötilaan, joten lyhyempi huippu asetuksella 4 tarkoittaa korkeampaa lämpötilaa, ja suhde on $4{,}10 : 2{,}90 \\approx 1{,}4$."
+        }
+      ]
     }
   ],
   "level3": [

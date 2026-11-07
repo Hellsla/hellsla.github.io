@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 825acbc29d3636fd
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 0a877e8585ccb3a6
+Mode: delta (new task fy7-9-L2-08 and its solution), round 1
 
 ## Blocking
 (none)
-
-## Fixed
-- L3-04 part c: added short explanations "(aallonpituus on lyhyempi / pidempi kuin näkyvällä valolla)" after ultraviolettialue and infrapuna, so the terms are explained in plain Finnish.
 
 ## Polish
 (none)
 
 ## Checked
-- Screenshots fy7-9-open-exercises-* of the new tasks viewed in this language: tables, captions, column headers and units render without overflow; no Finnish left (en) / no untranslated English (fi-easy).
-- LaTeX identical to fi (formula parity, check_i18n 0 errors).
+- Rebuilt and captured fy7-9 (fi-easy); opened fy7-9-open-exercises captures at 1280 px (last parts of the level) showing fy7-9-L2-08 with its task text, options or input, feedback, answer and opened solution.
+- Layout survived: no clipping or horizontal overflow, options are whole rows, solution blocks (Find, Principle, Model answer) read in order, display equations aligned and broken at meaningful steps.
+- Maths: KaTeX renders, numbers with upright units and thin space, \cdot, colon for division, SI units upright; natural Finnish, decimal comma, glossary terms consistent.
+- No figures in the new task; the lesson page and other tasks are unchanged (delta).
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

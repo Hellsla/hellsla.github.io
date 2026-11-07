@@ -195,3 +195,26 @@
 **Sijoitus:** a) $\sin\alpha_2 = \dfrac{1{,}00 \cdot \sin 55{,}0^\circ}{1{,}52} = 0{,}5389$, joten $\alpha_2 = 32{,}61^\circ$. b) $\sin\alpha_3 = \dfrac{1{,}00 \cdot \sin 55{,}0^\circ}{1{,}33} = 0{,}6159$, joten $\alpha_3 = 38{,}02^\circ$. Ilman lasilevyä tulos olisi sama, koska ilmasta suoraan veteen tulevalle säteelle pätee $1{,}00 \cdot \sin 55{,}0^\circ = 1{,}33 \cdot \sin\alpha_3$. c) $x = 6{,}0\,\text{mm} \cdot \tan 32{,}61^\circ + 20{,}0\,\text{mm} \cdot \tan 38{,}02^\circ = 3{,}839\,\text{mm} + 15{,}636\,\text{mm} = 19{,}47\,\text{mm}$
 **Vastaus:** $x \approx 19{,}5\,\text{mm}$. Vastauksessa on kolme merkitsevää numeroa, koska tulokulma ja taitekertoimet on annettu kolmella. Lasin osuus ($3{,}8\,\text{mm}$) on pieni, joten $20{,}0\,\text{mm}$ paksu vesikerros rajoittaa tuloksen tarkkuutta.
 **Järkevyys:** Jos säde kulkisi koko $26{,}0\,\text{mm}$:n matkan ilman suunnassa $55{,}0^\circ$, vaakasuuntainen matka olisi $26{,}0\,\text{mm} \cdot \tan 55{,}0^\circ = 37{,}1\,\text{mm}$. Tiheämmissä aineissa säde on lähempänä normaalia, joten matka on tätä lyhyempi: $19{,}5\,\text{mm} < 37{,}1\,\text{mm}$. Kulmat $32{,}6^\circ < 38{,}0^\circ < 55{,}0^\circ$ ovat järjestyksessä taitekertoimien $1{,}52 > 1{,}33 > 1{,}00$ mukaan.
+
+## fy7-10-L2-08
+**Kysytty:** onko oppilaan laskussa virhe ja millä rivillä, kun lasketaan lasikuution yläpinnasta ilmaan jatkavan säteen taitekulma.
+**Periaate:** Kulmat mitataan pinnan normaalista. Taittumislaissa $n_1 \sin\alpha_1 = n_2 \sin\alpha_2$ taitekerroin $n_1$ kuuluu aineelle, josta valo tulee, tässä lasille. Taitekerroin $n_2$ kuuluu aineelle, johon valo menee, tässä ilmalle. Lasista ilmaan säde taittuu normaalista poispäin. Siksi taitekulman pitää olla tulokulmaa suurempi.
+**Mallivastaus:** Rivi 1 on oikein. Lasin taitekerroin $1{,}52$ on suurempi kuin ilman $1{,}00$. Ilma on siis optisesti harvempaa, ja säde taittuu normaalista poispäin.
+
+Rivi 2 on oikein. Normaali on kohtisuorassa pintaa vastaan, joten tulokulma on
+
+$\alpha_1 = 90^\circ - 60{,}0^\circ = 30{,}0^\circ$
+
+Rivi 3 on väärin. Oppilas on vaihtanut taitekertoimien paikat, ikään kuin valo tulisi ilmasta lasiin. Valo tulee lasista, joten $n_1 = 1{,}52$ ja $n_2 = 1{,}00$:
+
+$\sin\alpha_2 = \dfrac{n_1 \sin\alpha_1}{n_2}$
+
+$\sin\alpha_2 = \dfrac{1{,}52 \cdot \sin 30{,}0^\circ}{1{,}00}$
+
+$\sin\alpha_2 = 0{,}760$
+
+$\alpha_2 = 49{,}46^\circ$
+
+Rivi 4 on laskettu oikein rivin 3 arvosta, mutta väärä arvo antaa väärän kulman. Virheen näkee myös vertaamalla riviin 1. Oppilaan tulos $19{,}2^\circ$ on pienempi kuin tulokulma $30{,}0^\circ$. Säde olisi siis taittunut kohti normaalia.
+
+Oikea taitekulma on $\alpha_2 \approx 49{,}5^\circ$. Siinä on kolme merkitsevää numeroa kuten kulmassa $60{,}0^\circ$ ja taitekertoimessa. Tarkistus: $1{,}52 \cdot \sin 30{,}0^\circ = 0{,}760$ ja $1{,}00 \cdot \sin 49{,}5^\circ = 0{,}760$, joten taittumislaki toteutuu. Lisäksi $49{,}5^\circ > 30{,}0^\circ$, kuten pitää olla, kun valo tulee optisesti harvempaan aineeseen. Oikea vastaus on rivi 3.

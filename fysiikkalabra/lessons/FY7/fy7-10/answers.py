@@ -29,6 +29,7 @@ a["fy7-10-L2-05"] = sum(p * q for p, q in zip(x, y)) / sum(p * p for p in x)   #
 a["fy7-10-L2-06"] = D(1.00 * S(50.0) / 1.33)        # error analysis: sin a2 = 0,7660 / 1,33 = 0,5760, a2 = 35,2° (not 50,0° : 1,33 = 37,6°)
 n0, n_hi, n_lo = S(45.0) / S(28.0), S(45.5) / S(27.5), S(44.5) / S(28.5)   # n = 1,506; largest 1,545, smallest 1,469
 a["fy7-10-L2-07"] = (n_hi - n_lo) / 2               # Delta n = (1,5447 - 1,4689) / 2 = 0,038
+# L2-08 is find-the-error (no number): row 3 swaps n; glass -> air, a1 = 90° - 60,0° = 30,0°: sin a2 = 1,52 · 0,5 = 0,760, a2 = 49,5° (not 19,2°)
 # Level 3: reasoning or an unfamiliar context
 a["fy7-10-L3-01"] = 90 - 30.0                       # mirrors at 90°: beta_1 = 30,0°, the second normal is parallel to mirror 1: 60,0°
 a1 = math.degrees(math.atan(1.5 / 2.0))             # pool: lamp 2,0 m deep, exit point 1,5 m aside: a1 = 36,87° in water

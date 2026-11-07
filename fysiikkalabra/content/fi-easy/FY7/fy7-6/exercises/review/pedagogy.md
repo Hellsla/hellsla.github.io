@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: df627d674e0b432d
+CONTENT-HASH: b366c16fb04b0dad
 Mode: full (translation review against the reviewed Finnish set)
-Round 1
+Round 2
 
 ## Blocking
 (none)
 
 ## Fixed
-(none)
+- content/fi-easy/FY7/fy7-6/exercises/solutions.md — L2-08 solution — awkward "Alumiini johtaa sähköä hyvin, ja se on tosi." -> "Se, että alumiini johtaa sähköä hyvin, on tosi."
 
 ## Polish
 (none)
 
 ## Checked
-- Choices, feedback and model answers of L1-06, L1-07, L2-06 keep the Finnish diagnostic function: each wrong option has feedback naming the misconception (field vs flux, ferromagnetism, gravity/friction, the student's reversed rule).
-- Task texts keep situation first, question last; parts a)-d) and the line saying which part goes in the answer box are preserved in L2-05, L2-07, L3-04, L3-05.
-- Solutions keep the fi structure (Given, Find, Principle, Formula, Conversions, Substitution, Answer, Reasonableness) with conversions and significant figures.
-- Reading level and register fit the target: Selkosuomi: short sentences, common terms (vuo, pyörrevirta, rajavauhti) explained in the solutions Periaate lines; decimal comma in text and LaTeX, decimal point in table cells as in fi.
+- NOTES.md §12: clearer Finnish, short sentences, 'ideaaliseksi eli häviöttömäksi' / 'suuruusluokka' explained, same physics.
+- New task L2-08: prompt, options, feedback and solution (Kysytty/Periaate/Mallivastaus, Reasonableness) keep the fi level, order and staging; feedback repairs the misconception without giving the answer away before the choice.
+- Terminology consistent with the lesson and the rest of the set.
+- Figures (where the task has them): descriptions translated, no answer disclosed beyond fi.

@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 42fcf9545eae0e70
-Mode: full (translation review: pedagogy parity with fi)
-Round 1
+CONTENT-HASH: 820217f747566fa9
+Mode: full (translation review against the reviewed Finnish set)
+Round 2
 
 ## Blocking
-(none)
-
-## Fixed
 (none)
 
 ## Polish
 (none)
 
 ## Checked
-- Task wording keeps fi's pedagogy: hints, the three-part structure of L3-04/L3-05, the error-analysis frame of L2-06 and the uncertainty frame of L2-07 are unchanged; reading level matches the language (selkosuomi)
-- Choice feedback of L1-06 names the right misconception for each distractor as in fi.
-- The tasks ask for an explanation or derivation where fi does (L2-06 explain, L3-04 a and c, L3-05 b) and give one answer-box quantity.
-- check_i18n.py fi-easy: 0 errors.
+- New task fy7-10-L2-08 keeps the Finnish scaffolding: same demand, same distractors with misconception-specific feedback, one correct answer, feedback repairs the misconception.
+- Task text gives the data the student needs and does not disclose the answer.
+- Language: follows NOTES.md section 12: shorter sentences, same physics and numbers, decimal comma, no new content.
