@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 90e0956eeb5429f7
+CONTENT-HASH: 47b1384771697fee
+Mode: delta (fy4-s2 d Mitoitus, its conclusion criterion and Hyväksytään myös; fy4-s3 b answer and conclusion criterion)
 
 ## Blocking
-(none left)
-
-## Fixed
-- (none needed in en)
 
 ## Polish
-- none
+- tasks.json fy4-s2 d conclusion criterion — it now requires that "the numbers are model estimates, not safe maximum speeds; real design needs safety margins, a load analysis and measurements". The task asks "Arvioi kummankin ohjaajan mallia. Kumman arvion mukaan jarru kannattaa mitoittaa?", which covers judging the models but not naming design requirements. Either add to the task "…ja riittääkö arvio sellaisenaan mitoitukseen?" or mark the design requirements as an example ("esimerkiksi") so a student who says "model estimate, not a safe limit" earns the point.
 
 ## Checked
-- Re-review of the translation after the Finnish change to fy4-s1 (new part e, c answer as list A/B), compared with content/fi/FY4/sovella: tasks.json (new data table, part e text, answer a0 0.45 m/s² ±0.04 and mu 0.024 ±0.1, five criteria and details), solutions.md (### e), accepted and common-mistake items), figures.json (fy4-s1-drag alt text).
-- Physics identical: g sin α = 0.684 and g cos α = 9.786 m/s², μ_A = (0.684 − 0.45)/9.786 ≈ 0.024, 0.030 − 0.024 = 0.006 = a fifth of 0.030, about 3 × 0.002 and below 0.015; friction independent of speed, air resistance grows with speed, systematic error, curve extended to v = 0. Formulas identical, decimal point in text and LaTeX, table values equal to the Finnish.
-- Step names **Find:**, **Graph:**, **Model answer:** English; figure alt text complete. practice.py figures FY4 --lang en up to date; practice.py check FY4 OK.
-- Round 2 (Finnish changes to fy4-s1: source_note about both tables' models, part e graph_read and error_sources details, a0 tolerance 0.05, 'about a fifth of the value of part c', part a 'almost constant', accepted a0 0.43–0.47): rechecked against fi; all present and equivalent, numbers and formulas identical, no wording fix needed. practice.py check and figures OK.
-- Delta re-review: the only change is the new ```voimakuvio spec block in each **Voimakuvio:** step of solutions.md; it is byte-identical to the Finnish (check_i18n 0 errors), no Finnish text added, text and numbers unchanged. practice.py check and figures OK.
+- s2: √(2·9,81·15,0) = 17,16 → 17,2 m/s; E_p 9,12 kJ, E_k 3,89 kJ, F = 29,1 N; c 13,57 → 14 m/s. The 17,2 m/s is now called the frictionless model's reference value, not a safe upper limit: correct (it bounds the speed only for a start from rest with no push-off, so it is not a safe design limit), and agrees with the safety guardrail (no simplified model as complete safety advice).
+- s2 d: rubric, solution and Hyväksytään myös now say the same (14 m/s or 17,2 m/s, either justified choice earns the point; both are model estimates).
+- s3 b: v' = √(2·0,75·9,81·4,2) = 7,86 m/s; v_B = 2950·7,86/1700 = 13,64 m/s = 49,1 km/h, 9 km/h over 40. The removed inference "the driver had probably braked before the collision" was not supported by the data (locked wheels after impact); its removal is right, and "according to the model, just before the collision" matches what was computed. Part e (friction during the impact makes the true v_B larger) is still consistent.
+- Points totals unchanged.
+- Hash identical at start and end.

@@ -1,22 +1,20 @@
-VERDICT: PASS
-CONTENT-HASH: f9b250176d97a909
+VERDICT: FAIL
+CONTENT-HASH: f069dabb51ddd461
+Mode: delta (editorial round 2026-11-07: undisturbed-wind reference power, η as its fraction, cubic law condition, cut-in/rated/cut-out, V82 caption)
 
 ## Blocking
+- lesson.md:253 (ilmalierio aria-label) — B, internal consistency: the text alternative still says "Ajassa t roottorin läpi virtaa ilma, joka täyttää lieriön … m = ρAvt". The new paragraph two lines above (lesson.md:251) says that the air at the rotor is slower than v and its mass flow is *not* ρAv; the figure description now contradicts the corrected model. — Fix: "Ajassa t häiriötön tuuli kuljettaisi pyyhkäisypinta-alan läpi ilman, joka täyttää lieriön …", and "ilman massa olisi m = ρAvt".
 
 ## Polish
-- lesson.md:426 (Esimerkki, Järkevyys) — "2,1 · 1,0 MW ≈ 2,2 MW": the chain as written gives 2,1 MW; the 2,2 comes from the unrounded 2,14 · 1,017. Fix: "≈ 2,14 · 1,02 MW ≈ 2,2 MW" or write "≈ 2,1 MW".
-- lessons/FY4/fy4-15/lesson-answers.py:389 — the comment "(text: noin 130 MW)" refers to a sentence the lesson no longer has. Fix: drop it.
-- lesson.md:300 — "Noin 13 m/s:n tuulesta alkaen teho pysyy 1650 kW:ssa" holds up to the curve's end (20 m/s, cut-out). C at this level; "tehokäyrän loppuun asti" would be exact.
-- tehokayra figures — the plotted points at 13–20 m/s are every 1 m/s, the table lists 13, 16, 20; all 1650 kW, so no wrong number, only a mismatch in what is shown.
+- lesson.md:251 and lesson.md:302 — a literal `\n\n` stands between two paragraphs (seen in the built preview as text "\n\nTodellisuudessa…"/"\n\nIn reality…"). Not physics, but it is visible on the page. Fix: a real blank line.
+- inquiry.json (prediction feedback ~58/62/179 and check-3 model ~337) — "roottorin läpi virtaa kaksi kertaa enemmän ilmaa" / "osuus roottorin läpi virtaavan ilman liike-energiasta": still true as proportionality (C), but "pyyhkäisypinta-alan läpi" would match the new wording.
+- Carried over: Järkevyys "2,1 · 1,0 MW ≈ 2,2 MW" (2,14 · 1,017).
 
 ## Checked
-- Round-1 Blocking (vesi-data max power vs mean flow) fixed: the 900 m³/s full-power flow is now stated and labelled calculated (η ≈ 0,90); recomputed 906 / 900 m³/s; siirto's check (354 m³/s, ≈ 55× less flow) now uses a number the student has seen.
-- Round-1 Polish items done: check-3 steady wind, exit ticket 3 no longer V82-specific, pressure turbines noted (C).
-- Recomputed every number of lesson.md, inquiry.json and the exit ticket in one script with my own formulas (8,92; 6,42 m³/s and its three mistakes; 800 kW and its two mistakes; 2,32 MW, 5,15 MW wind power; 8,0 / 7,9 MW/m; 235 kJ; (8:6)³ = 2,37; 55,6 MW and 5,6 MW). All agree with the text and lesson-answers.py.
-- Derivations of ρQgh and ½ρAv³, their conditions (small KE in upper/lower water; constant η below rated power) and units are correct.
-- Efficiency wording matches the guardrail; Betz 59 %, real turbines under half (V82 η 0,35–0,45 from the curve) correct.
-- 8,9-fold rise explained by η 0,35 → 0,39: correct.
-- Every choice item has exactly one correct option; each distractor's feedback is physically right.
-- Explain criteria and model answers (johtopäätös, check-3) match the theory and state the conditions.
-- Power-curve figures: to scale, model curve with η = 0,45 meets 1650 kW at 10,4 m/s.
+- Recomputed: ½ρAv³ = 5,15 MW → 5,2 MW; 0,45 · = 2,32 MW → 2,3 MW; (120:82)² = 2,14; 2·4 = 8; curve 5→10 m/s ×8,9.
+- Undisturbed-wind derivation (m = ρAvt, ½ρAv³t) correct; "reference power, η = P : P_tuuli" is the standard power-coefficient definition; Betz 59 % of that reference correct.
+- Cubic law stated only for roughly constant η (theory and Tiivistelmä agree).
+- Cut-in 3–4 m/s agrees with the curve (3 m/s 0 kW, 4 m/s 28 kW); rated 1650 kW from ~13 m/s; cut-out stop correctly described, and the caption says the graph does not show it.
+- V82 caption: standard density 1,225 kg/m³ and 10-min hub-height means correct; model 1,25 vs 1,225 called approximate, right.
+- Example task and Periaate now define η the same way as the theory; exit ticket 3 adds cut-out correctly.
 - Hash identical at start and end.
