@@ -1,14 +1,15 @@
-VERDICT: FAIL
-CONTENT-HASH: b1ff15e86d02b320
+VERDICT: PASS
+CONTENT-HASH: 2f28bfa475b316df
 
-Light delta review (teacher 2026-11-07): the diff against origin/main and what it touches.
+Light delta review (teacher 2026-11-07): diff origin/main..f9cecc6 and what it touches.
 
 ## Blocking
-- lesson.md:602 — A: Tulos says the air resistance 96 kN has two significant figures "like the engine force 48 kN"; by the teacher's rule (2026-11-07) the integer 48 kN is exact, so 48 kN cannot limit precision, and this now contradicts fy4-4:602 and fy4-5:440 — state that 48 kN is taken as exact, so 96 kN = 2·48 kN is exact (no rounding), as in fy4-1:475
+(none)
 
 ## Polish
 (none)
 
 ## Checked
-- lesson.md:606 Järkevyys: vector sum of thrust and air resistance zero at every constant velocity; air resistance grows with speed so greater constant speed needs greater thrust: correct causality (Newton 1), removes the old misleading "result does not depend on speed"
-- 2·48 kN = 96 kN recomputed; 850 km/h correctly unused
+- lesson.md:602 Tulos: 48 kN exact, so 96 kN = 2·48 kN exact, no rounding: follows the teacher's rule and matches fy4-1:475, fy4-4:602, fy4-5; earlier Blocking item resolved
+- lesson.md:606 Järkevyys: vector sum of thrust and air resistance zero at every constant velocity; air resistance grows with speed, so a greater speed needs a greater thrust: correct causality
+- 850 km/h correctly unused
