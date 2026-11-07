@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: d8560a2971c3a074
+CONTENT-HASH: 2d45d7f23d815a16
 Mode: delta (exercises, fi-easy), round 1. Changed: new task L2-08, situation/question paragraph splits, solutions.md for L2-08.
 
 ## Blocking
 (none)
 
 ## Polish
-- (none)
+- none
 
 ## Checked
+- delta review 2026-11-07 round 2 (follow-up consistency edits): L2-08 and L1-08 Periaate: "units must match the unit of $R$" with Pa+m³ (or kPa+l), kelvins always; opened fy3-10-fi-easy-l2sol-390: wraps cleanly, $R$ renders; consistent with the unchanged Mallivastaus rows.
 - Rendered preview/fi-easy/fy3-10.html at 390 px with my own script (scratch trvis3x): fy3-10-L2-08 (error-finding, rows 1-4, choices with feedback open) and the paragraph-split tasks L1-07, L2-01..04, L3-01..03, in default and answered/opened state.
 - The new L2-08 card opened in full: task text, options or statements, feedback blocks, Vastaus/Answer and model solution; formulas, units, fractions and the units with \cdot render as KaTeX, no red source, no clipping or horizontal overflow.
 - The paragraph splits read as situation, then data, then the question; nothing sideways when feedback opens.

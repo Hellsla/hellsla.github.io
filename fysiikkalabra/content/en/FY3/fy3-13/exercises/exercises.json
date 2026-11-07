@@ -88,7 +88,7 @@
         "concept",
         "reasoning"
       ],
-      "answer": "Extrapolation means extending the line fitted to the measurement points beyond the measurement range, assuming that the linear dependence of the pressure on the temperature also holds there.",
+      "answer": "Extending the line beyond the measurement range, because the linear dependence is assumed to hold there.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
@@ -105,9 +105,9 @@
           "feedback": "Wrong: because of measurement uncertainty the points do not usually lie exactly on the line. The line passes through the middle of the set of points."
         },
         {
-          "text": "Extrapolation means extending the line fitted to the measurement points beyond the measurement range, assuming that the linear dependence of the pressure on the temperature also holds there.",
+          "text": "Extending the line beyond the measurement range, because the linear dependence is assumed to hold there.",
           "correct": true,
-          "feedback": "Correct. The extrapolated value is an estimate based on the model, not a directly measured result. Here it is assumed that the same linear dependence also continues outside the measurement range."
+          "feedback": "Correct. Extrapolation means extending the line fitted to the measurement points beyond the measurement range, assuming that the linear dependence of the pressure on the temperature also holds there. The extrapolated value is an estimate based on the model, not a directly measured result. Here it is assumed that the same linear dependence also continues outside the measurement range."
         }
       ]
     }

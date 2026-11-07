@@ -49,7 +49,7 @@
       "kind": [
         "concept"
       ],
-      "answer": "Puhtaan veden ja jään seoksen lämpötila on normaalipaineessa noin $0\\,{}^\\circ\\text{C}$, kun molempia olomuotoja on tasapainossa. Tämä on veden sulamis- ja jähmettymislämpötila normaalipaineessa.",
+      "answer": "Noin $0\\,{}^\\circ\\text{C}$, koska jäätä ja vettä on tasapainossa yhtä aikaa vain sulamislämpötilassa.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
@@ -66,9 +66,9 @@
           "feedback": "Jos lämpötila olisi sulamislämpötilaa korkeampi, jää sulaisi edelleen ja lämpötila laskisi sulamisen takia. Lämpötasapainossa ei siirry lämpöä, joten jäätä ei voisi olla jäljellä."
         },
         {
-          "text": "Puhtaan veden ja jään seoksen lämpötila on normaalipaineessa noin $0\\,{}^\\circ\\text{C}$, kun molempia olomuotoja on tasapainossa. Tämä on veden sulamis- ja jähmettymislämpötila normaalipaineessa.",
+          "text": "Noin $0\\,{}^\\circ\\text{C}$, koska jäätä ja vettä on tasapainossa yhtä aikaa vain sulamislämpötilassa.",
           "correct": true,
-          "feedback": "Oikein: lämpötasapainossa jäätä ja vettä on yhtä aikaa vain jään sulamislämpötilassa, normaalipaineessa noin $0\\,{}^\\circ\\text{C}$. Tasapainossa lämpöä ei enää siirry, joten jää ei sula eikä vesi jäädy."
+          "feedback": "Oikein. Puhtaan veden ja jään seoksen lämpötila on normaalipaineessa noin $0\\,{}^\\circ\\text{C}$, kun molempia olomuotoja on tasapainossa. Tämä on veden sulamis- ja jähmettymislämpötila normaalipaineessa. Tasapainossa lämpöä ei enää siirry, joten jää ei sula eikä vesi jäädy."
         }
       ]
     },
@@ -256,7 +256,7 @@
         {
           "text": "Vesi voi luovuttaa jäähtyessään $0\\,{}^\\circ\\text{C}$:seen noin $19\\,\\text{kJ}$.",
           "true": true,
-          "feedback": "Oikein: veden luovuttama lämpö on $Q_\\text{v} = c_\\text{v} m_\\text{v} T_\\text{v}$, eli $Q_\\text{v} \\approx 18\\,855\\,\\text{J} \\approx 19\\,\\text{kJ}$. Veden lämpötila laskee $18\\,\\text{K}$."
+          "feedback": "Oikein: veden luovuttama lämpö on $Q_\\text{v} = c_\\text{v} m_\\text{v} \\Delta T_\\text{v}$, eli $Q_\\text{v} \\approx 18\\,855\\,\\text{J} \\approx 19\\,\\text{kJ}$. Veden lämpötila laskee $18\\,\\text{K}$."
         },
         {
           "text": "Kaikki jää sulaa, koska vettä on enemmän kuin jäätä ($0{,}25\\,\\text{kg} > 0{,}080\\,\\text{kg}$).",

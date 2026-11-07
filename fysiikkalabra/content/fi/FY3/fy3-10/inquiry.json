@@ -377,7 +377,7 @@
       "choices": [
         {
           "text": "Paine pitäisi sijoittaa kilopascaleina, $101\\,\\text{kPa}$.",
-          "feedback": "Pascal on oikea yksikkö, koska $1\\,\\text{Pa}\\cdot\\text{m}^3 = 1\\,\\text{J}$ sopii yhteen $R$:n yksikön kanssa. Kilopascaleilla tulos olisi tuhatkertaisesti väärä. Virhe on muualla."
+          "feedback": "Paine on sijoitettu oikein. Kun tilavuus on kuutiometreinä, paine sijoitetaan pascaleina, koska $1\\,\\text{Pa}\\cdot\\text{m}^3 = 1\\,\\text{J}$ sopii yhteen $R$:n yksikön kanssa. Kilopascalit ja kuutiometrit yhdessä antaisivat tuhatkertaisesti väärän tuloksen. Virhe on muualla."
         },
         {
           "text": "Lämpötila on celsiusasteina. Kelvineinä $T = 293{,}15\\,\\text{K}$, ja $n \\approx 0{,}083\\,\\text{mol}$.",
@@ -386,7 +386,7 @@
         },
         {
           "text": "Tilavuus pitäisi sijoittaa litroina, $2{,}0\\,\\textsf{l}$.",
-          "feedback": "Kuutiometri on oikein: $2{,}0\\,\\text{l} = 0{,}0020\\,\\text{m}^3$, ja vain se sopii yhteen pascalin ja $R$:n yksikön kanssa. Virhe on muualla."
+          "feedback": "Kuutiometri on oikein: $2{,}0\\,\\textsf{l} = 0{,}0020\\,\\text{m}^3$. Kun paine on pascaleina, tilavuus sijoitetaan kuutiometreinä. Litrat sopisivat vain kilopascalien kanssa, koska $1\\,\\text{kPa}\\cdot\\textsf{l} = 1\\,\\text{J}$. Virhe on muualla."
         },
         {
           "text": "Laskussa ei ole virhettä.",

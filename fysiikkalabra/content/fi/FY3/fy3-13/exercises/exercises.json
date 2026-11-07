@@ -88,7 +88,7 @@
         "concept",
         "reasoning"
       ],
-      "answer": "Ekstrapolointi tarkoittaa mittauspisteisiin sovitetun suoran jatkamista mittausalueen ulkopuolelle olettaen, että paineen lineaarinen riippuvuus lämpötilasta pätee myös siellä.",
+      "answer": "Suoran jatkamista mittausalueen ulkopuolelle, koska lineaarisen riippuvuuden oletetaan pätevän siellä.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
@@ -105,9 +105,9 @@
           "feedback": "Väärin: mittauspisteet eivät yleensä ole täsmälleen suoralla mittausepävarmuuden vuoksi. Suora kulkee pisteiden joukon keskeltä."
         },
         {
-          "text": "Ekstrapolointi tarkoittaa mittauspisteisiin sovitetun suoran jatkamista mittausalueen ulkopuolelle olettaen, että paineen lineaarinen riippuvuus lämpötilasta pätee myös siellä.",
+          "text": "Suoran jatkamista mittausalueen ulkopuolelle, koska lineaarisen riippuvuuden oletetaan pätevän siellä.",
           "correct": true,
-          "feedback": "Oikein. Ekstrapoloitu arvo on mallin perusteella tehty arvio, ei suoraan mitattu tulos. Tässä oletetaan, että sama lineaarinen riippuvuus jatkuu myös mittausalueen ulkopuolella."
+          "feedback": "Oikein. Ekstrapolointi tarkoittaa mittauspisteisiin sovitetun suoran jatkamista mittausalueen ulkopuolelle olettaen, että paineen lineaarinen riippuvuus lämpötilasta pätee myös siellä. Ekstrapoloitu arvo on mallin perusteella tehty arvio, ei suoraan mitattu tulos. Tässä oletetaan, että sama lineaarinen riippuvuus jatkuu myös mittausalueen ulkopuolella."
         }
       ]
     }

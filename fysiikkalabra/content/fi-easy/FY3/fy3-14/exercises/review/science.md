@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 57f97ad8180f0170
+CONTENT-HASH: c966a0c1c917e65e
 
 Mode: translation review (fi-easy (NOTES.md section 12)) against the reviewed Finnish. Round 2, new task fy3-14-L2-08.
 
@@ -7,9 +7,11 @@ Mode: translation review (fi-easy (NOTES.md section 12)) against the reviewed Fi
 - none
 
 ## Polish
-- None.
+- none
 
 ## Checked
+- delta review 2026-11-07 round 3 (fixes to round 2 findings): round 2 Polish (L3-05) resolved. Formula: c_v m_v ΔT_v = Q_j + c_v(m_v+m_j)(T − 0 °C), T_j = 0 °C − ΔT_j, ΔT_v,min = Q_j/(c_v m_v), T_v,min = 0 °C + ΔT_v,min; conversions define ΔT_v = T_v − 0 °C. Recomputed: Q_j = 50 280 − 13 575,6 = 36 704,4 J, ΔT_j = 15,7 K so T_j = −15,7 °C, ΔT_v,min = 36 704,4/1257 = 29,2 K so T_v,min = 29,2 °C; consistent with the Principle and the inquiry. Hashes equal at start and end.
+- delta review 2026-11-07 round 2 (follow-up consistency edits): L1-06: shortened correct option (about 0 °C, ice and water coexist in equilibrium only at the melting point) correct, lengths now comparable with the distractors, same form, answer equals option text, teacher's full sentences open its feedback. All Q_v = c_v m_v ΔT_v edits (L2-01, L3-01, L3-03, L2-06, L2-08, L3-05, L1-08 feedback 18 855 J) correct; L3-05 Periaate (T_v,min − 0 °C) correct, limit 29,2 °C recomputed (Polish). Hashes equal at start and end.
 - delta review 2026-11-07 (teacher's proofread replacement texts): L1-06 correct option, answer key, feedback and model answer: pure water–ice mixture in equilibrium at about 0 °C at normal pressure (melting/freezing point), no net heat transfer so no melting or freezing: correct, conditions stated, exactly one correct option, agrees with the lesson summary. Selkokieli text carries the same meaning as fi.
 - fy3-14-L2-08 recomputed independently: Q_w = 4190*0.25*18 = 18 855 J, Q_i = 334000*0.080 = 26 720 J, melted 56 g, 24 g left, T = 0 C; statements 1 T, 2 F, 3 T, 4 T, 5 F. Equals fi.
 - Answer, unit, tolerance, kind, order/statements/choices, correct flags and their order equal fi.

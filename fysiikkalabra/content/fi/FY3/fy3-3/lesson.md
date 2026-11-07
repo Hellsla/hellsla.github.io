@@ -257,7 +257,7 @@ Absoluuttinen nollapiste on siis $0\,\text{K}$ = $-273{,}15\,{}^\circ\text{C}$. 
   <foreignObject x="62" y="15.5" width="250" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{absoluuttinen nollapiste}$</div></foreignObject>
   <foreignObject x="332" y="15.5" width="118" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{vesi jäätyy}$</div></foreignObject>
   <foreignObject x="472" y="15.5" width="118" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{vesi kiehuu}$</div></foreignObject>
-  <foreignObject x="107" y="132.5" width="230" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$T = \theta + 273{,}15$</span></div></foreignObject>
+  <foreignObject x="72" y="132.5" width="300" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$T/\text{K} = \theta/{}^\circ\text{C} + 273{,}15$</span></div></foreignObject>
   <foreignObject x="553" y="97.5" width="30" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$T$</div></foreignObject>
   <foreignObject x="553" y="167.5" width="30" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\theta$</div></foreignObject>
 </svg>
@@ -381,7 +381,7 @@ Moni ajattelee, että lämpötila kaksinkertaistuu, kun se nousee $10\,{}^\circ\
 - Kaasusysteemissä lämpötila, paine ja tilavuus riippuvat toisistaan: jos yhtä muutetaan, vähintään yksi muista muuttuu myös.
 - Kaasun mikromalli: lämpötila kertoo hiukkasten keskimääräisestä liike-energiasta, ja paine syntyy hiukkasten törmäyksistä seinämään. Nesteessä ja kiinteässä aineessa energiaan kuuluu myös hiukkasten välisten vuorovaikutusten energia, joten lämpötila ei ole sama asia kuin aineen energia.
 - Kun tilavuus ja aineen määrä pysyvät samoina, harvan kaasun paine on suoraan verrannollinen kelvinlämpötilaan. Mittapisteiden suoran jatkaminen eli ekstrapolointi antaa arvion absoluuttisesta nollapisteestä.
-- Muunnos on $T = \theta + 273{,}15$. Absoluuttinen nollapiste on $0\,\text{K}$ = $-273{,}15\,{}^\circ\text{C}$.
+- Muunnos on $\tfrac{T}{\text{K}} = \tfrac{\theta}{{}^\circ\text{C}} + 273{,}15$. Absoluuttinen nollapiste on $0\,\text{K}$ = $-273{,}15\,{}^\circ\text{C}$.
 
 <svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Kuvitus: sama polkupyörä lumisena pakkasaamuna. Lunta on maassa ja satulalla, ja tolpan lämpömittarin pylväs on matalalla." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy33s-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d0e6fb"/><stop offset="1" stop-color="#ffffff"/></linearGradient></defs>

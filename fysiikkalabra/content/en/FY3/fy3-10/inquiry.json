@@ -381,7 +381,7 @@
       "choices": [
         {
           "text": "The pressure should be substituted in kilopascals, $101\\,\\text{kPa}$.",
-          "feedback": "The pascal is the correct unit, because $1\\,\\text{Pa}\\cdot\\text{m}^3 = 1\\,\\text{J}$ matches the unit of $R$. With kilopascals the result would be wrong by a factor of a thousand. The error is elsewhere."
+          "feedback": "The pressure was substituted correctly. When the volume is in cubic metres, the pressure is substituted in pascals, because $1\\,\\text{Pa}\\cdot\\text{m}^3 = 1\\,\\text{J}$ matches the unit of $R$. Kilopascals together with cubic metres would give a result wrong by a factor of a thousand. The error is elsewhere."
         },
         {
           "text": "The temperature is in degrees Celsius. In kelvins $T = 293.15\\,\\text{K}$, and $n \\approx 0.083\\,\\text{mol}$.",
@@ -390,7 +390,7 @@
         },
         {
           "text": "The volume should be substituted in litres, $2.0\\,\\textsf{l}$.",
-          "feedback": "The cubic metre is correct: $2.0\\,\\text{l} = 0.0020\\,\\text{m}^3$, and only it matches the units of the pascal and $R$. The error is elsewhere."
+          "feedback": "The cubic metre is correct: $2.0\\,\\textsf{l} = 0.0020\\,\\text{m}^3$. When the pressure is in pascals, the volume is substituted in cubic metres. Litres would fit only with kilopascals, because $1\\,\\text{kPa}\\cdot\\textsf{l} = 1\\,\\text{J}$. The error is elsewhere."
         },
         {
           "text": "There is no error in the calculation.",

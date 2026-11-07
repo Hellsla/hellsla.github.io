@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 398b134383d4c1c7
+CONTENT-HASH: f1593e0cfff67369
 
 ## Blocking
 - none
@@ -12,6 +12,7 @@ CONTENT-HASH: 398b134383d4c1c7
 - lesson.md:230: "the temperature in kelvins is directly proportional to the mean kinetic energy". For point particles this is right (C). "Mean kinetic energy of the motion from place to place" would match the guardrail wording used in the other chapters.
 
 ## Checked
+- delta review 2026-11-07 round 2 (follow-up consistency edits): inquiry 'Find the error' feedbacks: pressure in Pa with m³ (1 Pa·m³ = 1 J) and litres only with kPa (1 kPa·l = 1 J) are correct and match the lesson's 1 kPa·l = 1 J; kPa with m³ gives a factor 1000 error, right; each feedback still says the error is elsewhere, consistent with the step's correct option; litre as \textsf{l} as in the lesson. Hashes equal at start and end.
 - delta review 2026-11-07 (teacher's proofread replacement texts): p = absolute pressure, T kelvin temperature; unit argument Pa·m³ = N·m = J and kPa·l = 1000 Pa·0,001 m³ = 1 J are correct and consistent with R = 8,31 J/(mol·K); inquiry and exit-ticket edits are typesetting only, numbers unchanged (exit ticket n = 0,601 mol rechecked). English text carries the same meaning as fi.
 - Both blocking items of round 1 are fixed. Key idea now uses a rigid glass flask pumped empty, which matches punnitus. The check-2 Principle now reads "From pV = nRT the average pressure satisfies p ∝ NT/V", with no k and no "at every moment".
 - I recomputed every number in one script and it agrees with the lesson and with lesson-answers.py. The checks were the masses against n = pV/(RT) (scatter ≤ 0.022 g), m/M (spread 0.56 %) and the mean 0.2071 mol giving R 8.32. Also checked were laske-r 8.302 with its mistakes 121.7, 8302 and 0.008302, the worked example (0.2073 mol, 0.83 g, 6.0 g, 24.1 l/mol) and virhe (1.2 and 0.083 mol). Siirto gives 91 200 mol and 2645 kg, with mistakes 9870 and 2.64, and 3360 → 2640 kg. The rest are check-c2 1.068, check-2 3.0 (mistakes 2.25 and 1.69), exp-2 50 (mistakes 200, 71 and 25), the exit ticket 0.601 mol and kertaus 200 kPa.

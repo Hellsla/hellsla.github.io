@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 5c6e08c379ce6c0d
+CONTENT-HASH: 1b817f82ae4a1465
 
 ## Blocking
 - none
@@ -10,6 +10,7 @@ CONTENT-HASH: 5c6e08c379ce6c0d
 - inquiry.json:445 (check-1, correct feedback) — "kukin hiukkanen osuu seiniin useammin": in the sim only the right wall moves, so the hits per particle less than double. What doubles is the hits per unit wall length. Adding "seinän pituutta (pinta-alaa) kohti" would make it exact.
 
 ## Checked
+- delta review 2026-11-07 round 2 (follow-up consistency edits): inquiry 'Etsi virhe' feedbacks: pressure in Pa with m³ (1 Pa·m³ = 1 J) and litres only with kPa (1 kPa·l = 1 J) are correct and match the lesson's 1 kPa·l = 1 J; kPa with m³ gives a factor 1000 error, right; each feedback still says the error is elsewhere, consistent with the step's correct option; litre as \textsf{l} as in the lesson. Hashes equal at start and end.
 - delta review 2026-11-07 (teacher's proofread replacement texts): p = absolute pressure, T kelvin temperature; unit argument Pa·m³ = N·m = J and kPa·l = 1000 Pa·0,001 m³ = 1 J are correct and consistent with R = 8,31 J/(mol·K); inquiry and exit-ticket edits are typesetting only, numbers unchanged (exit ticket n = 0,601 mol rechecked).
 - One script recomputed every number: weighing masses vs n = pV/(RT) = 0,2072 mol (all within ±0,02 g); m/M 0,2075/0,2064/0,2076/0,2068; mean R 8,32 → "≈ 8,3"; laske-r 8,302 and the mistakes 121,7 / 8302 / 0,0083; example 0,2073 mol, 0,83 g, air 6,0 g, 24,1 l/mol.
 - virhe 1,2 → 0,083 mol; siirto 91 200 mol, 2645 kg, the mistakes 9870 and 2,64, the reasonableness check 1,20 kg/m³ → 3366 kg · 293/373 ≈ 2640; exit ticket 0,601 mol; check-c2 1,068; check-2 3,0; exp-2 N = 50.

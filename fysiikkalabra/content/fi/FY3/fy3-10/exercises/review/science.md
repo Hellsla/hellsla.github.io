@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: bab5b2b5c4d76a57
+CONTENT-HASH: 8c50fb38cfdcf2c1
 Round: 2
 
 ## Blocking
-(none)
+- none
 
 ## Polish
 - exercises.json:321 and :325 (feedback D, "ei virhettä") — still "koska pullossa on huoneenlämpöistä ilmaa" / "ei sovi suljettuun pulloon", but the task does not say the air is at room temperature. State it in the task, or phrase it as "574 °C olisi uunin lämpötila". Carried over.
 
 ## Checked
+- delta review 2026-11-07 round 2 (follow-up consistency edits): L2-08 and L1-08 Periaate: units must match R's unit, Pa with m³ or kPa with l, temperature always in K: correct, no longer claims base units are required; 'otherwise a unit factor remains' still true. Hashes equal at start and end.
 - Round-1 Polish resolved: V is now $2{,}00\,\textsf{l}$ = $0{,}00200\,\text{m}^3$ in the task text, in rows 1 and 3, in the row-1 feedback and in the solution (Mallivastaus rows 1 and 3), so the three-figure "$T \approx 301\,\text{K}$" is justified and row 4 is the only wrong row.
 - Recomputed: pV = 200 J, nR = 0,6648 J/K, T = 300,8 K ≈ 301 K; θ = 27,7 °C ≈ 28 °C; the wrong row gives 574 °C.
 - Exactly one correct option (row 4); "Laskussa ei ole virhettä" is last; the other feedback and the solution are unchanged and right.
