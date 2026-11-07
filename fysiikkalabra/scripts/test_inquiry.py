@@ -79,7 +79,7 @@ SPLIT = """async () => {   // lesson.js part 9: the exercises beside the theory,
 NAMES = """() => [...document.querySelectorAll('nav.toc a, main h2, main h3, main summary')].map((e) => e.textContent.replace(/^\\d+/, '').trim())"""
 WIDE = """() => {      // the wide layout as rendered: which blocks sit side by side, and the widest paragraph
   const R = (e) => e.getBoundingClientRect(), beside = (a, b) => R(b).left >= R(a).right - 1 && Math.abs(R(a).top - R(b).top) < 400;
-  const lab = document.querySelector('.lab'), rows = [...document.querySelectorAll('.act-theory > .fig-row, .theory-core > .fig-row, article#teoria > .fig-row')];
+  const lab = document.querySelector('.lab'), rows = [...document.querySelectorAll('.act-theory > .fig-row, article#teoria > .fig-row')];
   const text = [...document.querySelectorAll('main p, main li')].filter((e) => e.offsetParent && !e.closest('#sim-root, .katex-display, table'));
   const cells = [...document.querySelectorAll('.lab > *, .fig-row > *, .intro-row > *')].filter((e) => e.scrollWidth > e.clientWidth + 1).map((e) => e.className);
   return { over: document.documentElement.scrollWidth - document.documentElement.clientWidth,

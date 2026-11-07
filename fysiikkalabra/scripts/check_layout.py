@@ -128,7 +128,7 @@ JS = """() => {
     }
   }
   // small: reading text keeps its size on a phone, and every control is big enough to hit
-  for (const t of document.querySelectorAll('.act-theory > p, .theory-core > p, .act-theory .fig-text > p, .act-theory li, p.task, fieldset.choice legend, ul.choices label, .hook p, .learn li, details.solution .steps p:not(.sol-label)')) {
+  for (const t of document.querySelectorAll('.act-theory > p, .act-theory .fig-text > p, .act-theory li, p.task, fieldset.choice legend, ul.choices label, .hook p, .learn li, details.solution .steps p:not(.sol-label)')) {
     if (!V(t) || t.closest('#sim-root')) continue;
     const fs = parseFloat(getComputedStyle(t).fontSize);
     if (fs < 16.5) { out.push({what: 'small', over: Math.round(17 - fs), text: `${fs} px text: "${t.textContent.trim().slice(0, 40)}"`}); break; }
