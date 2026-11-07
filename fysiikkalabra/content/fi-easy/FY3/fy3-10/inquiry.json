@@ -23,7 +23,7 @@
       "stage": "herata",
       "type": "choice",
       "title": "Kertaa: Boylen laki",
-      "prompt": "Ruiskun suu tukitaan, kun ruiskussa on 60 ml ilmaa $100\\,\\text{kPa}$:n paineessa. Mäntää painetaan, kunnes ilman tilavuus on 30 ml. Lämpötila ei muutu. Mikä on ilman paine nyt?",
+      "prompt": "Ruiskun suu tukitaan, kun ruiskussa on $60\\,\\text{ml}$ ilmaa $100\\,\\text{kPa}$:n paineessa. Mäntää painetaan, kunnes ilman tilavuus on $30\\,\\text{ml}$. Lämpötila ei muutu. Mikä on ilman paine nyt?",
       "choices": [
         {
           "text": "$50\\,\\text{kPa}$",

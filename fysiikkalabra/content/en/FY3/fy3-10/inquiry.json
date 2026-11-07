@@ -23,7 +23,7 @@
       "stage": "herata",
       "type": "choice",
       "title": "Revise: Boyle's law",
-      "prompt": "The nozzle of a syringe is blocked when it contains 60 ml of air at a pressure of $100\\,\\text{kPa}$. The plunger is pushed until the volume of the air is 30 ml. The temperature does not change. What is the pressure of the air now?",
+      "prompt": "The nozzle of a syringe is blocked when it contains $60\\,\\text{ml}$ of air at a pressure of $100\\,\\text{kPa}$. The plunger is pushed until the volume of the air is $30\\,\\text{ml}$. The temperature does not change. What is the pressure of the air now?",
       "choices": [
         {
           "text": "$50\\,\\text{kPa}$",
