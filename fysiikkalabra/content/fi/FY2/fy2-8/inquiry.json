@@ -87,7 +87,7 @@
         {
           "text": "Suurimmat kivihiilellä ja pienimmät tuulivoimalla, koska tuulivoimalassa ei polteta polttoainetta.",
           "correct": true,
-          "feedback": "Oikein. Annetun vertailuaineiston mukaan kivihiilisähkön elinkaaripäästöt ovat suurimmat ja tuulivoiman pienimmät. Kivihiilen energia tulee suurimmaksi osaksi hiilen palamisesta, ja maakaasussa on hiilen lisäksi paljon vetyä, joka palaa vedeksi, joten sen päästö on pienempi. Tuulivoiman käytössä ei polteta polttoainetta, mutta voimalan rakentamisesta ja materiaalien tuotannosta syntyy elinkaaripäästöjä. Biomassan päästöt riippuvat esimerkiksi raaka-aineesta ja hiilivarastojen muutoksista. Seuraavassa vaiheessa näet taulukosta, kuinka suuria erot ovat."
+          "feedback": "Oikein. IPCC:n elinkaarivertailun mukaan kivihiilisähkön elinkaaripäästöt ovat suurimmat ja tuulivoiman pienimmät. Kivihiilen energia tulee suurimmaksi osaksi hiilen palamisesta, ja maakaasussa on hiilen lisäksi paljon vetyä, joka palaa vedeksi, joten sen päästö on pienempi. Tuulivoiman käytössä ei polteta polttoainetta, mutta voimalan rakentamisesta ja materiaalien tuotannosta syntyy elinkaaripäästöjä. Biomassan päästöt riippuvat esimerkiksi raaka-aineesta ja hiilivarastojen muutoksista. Seuraavassa vaiheessa näet taulukosta, kuinka suuria erot ovat."
         },
         {
           "text": "Suurimmat biomassalla ja pienimmät tuulivoimalla, koska puussa on enemmän hiiltä kuin kivihiilessä.",

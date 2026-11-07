@@ -64,7 +64,7 @@
     },
     {
      "text": "Samaan tehoon riittää pienempi virta, joten johtimet lämpenevät vähemmän ja häviö pienenee.",
-     "feedback": "Oikein: kun jännite on korkea, sama teho siirtyy pienemmällä virralla. Pienempi virta lämmittää johtimia vähemmän, joten siirrossa muuttuu vähemmän sähköenergiaa johtimien sisäenergiaksi ja edelleen lämmöksi ympäristöön.",
+     "feedback": "Oikein: kun jännite on korkea, sama teho siirtyy pienemmällä virralla. Pienempi virta lämmittää johtimia vähemmän, joten siirrossa muuttuu vähemmän sähköenergiaa johtimien sisäenergiaksi, joka siirtyy lämpönä ympäristöön.",
      "correct": true
     },
     {

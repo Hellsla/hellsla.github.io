@@ -87,7 +87,7 @@
         {
           "text": "Largest with coal and smallest with wind power, because no fuel is burned when a wind turbine runs.",
           "correct": true,
-          "feedback": "Correct. According to the comparison data given, coal electricity has the largest life-cycle emissions and wind power the smallest. The energy of coal comes mostly from the burning of carbon, and natural gas contains a lot of hydrogen as well as carbon, and hydrogen burns into water, so its emission is smaller. No fuel is burned when a wind turbine runs, but building the turbine and producing its materials cause life-cycle emissions. The emissions of biomass depend for example on the raw material and on changes in carbon stocks. In the next step you see from the table how large the differences are."
+          "feedback": "Correct. According to the IPCC life-cycle comparison, coal electricity has the largest life-cycle emissions and wind power the smallest. The energy of coal comes mostly from the burning of carbon, and natural gas contains a lot of hydrogen as well as carbon, and hydrogen burns into water, so its emission is smaller. No fuel is burned when a wind turbine runs, but building the turbine and producing its materials cause life-cycle emissions. The emissions of biomass depend for example on the raw material and on changes in carbon stocks. In the next step you see from the table how large the differences are."
         },
         {
           "text": "Largest with biomass and smallest with wind power, because wood contains more carbon than coal.",

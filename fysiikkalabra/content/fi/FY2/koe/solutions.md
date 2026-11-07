@@ -236,7 +236,7 @@
 ### d)
 **Kysytty:** arvio väitteestä
 **Periaate:** Päästöt syntyvät energian tuotannossa. Hukkalämmön käyttö korvaa muuta lämmöntuotantoa.
-**Mallivastaus:** Väite on liioiteltu. Datakeskuksen päästöt riippuvat siitä, miten sen käyttämä sähkö tuotetaan: fossiilisilla polttoaineilla tuotettu sähkö aiheuttaa päästöjä, käytettiinpä hukkalämpö tai ei. Hukkalämmön talteenotto voi pienentää lämmitysjärjestelmän päästöjä, koska kaukolämpöä tarvitsee tuottaa muualla vähemmän, mutta se ei poista sähköntuotannon päästöjä. Datakeskuksen koko elinkaaren päästöt eivät välttämättä ole nolla edes silloin, kun käyttösähkö on hyvin vähäpäästöistä, sillä myös palvelinten ja muiden laitteiden valmistus sekä rakennuksen rakentaminen aiheuttavat päästöjä. Väite on siis liioiteltu.
+**Mallivastaus:** Väite on liioiteltu. Datakeskuksen päästöt riippuvat siitä, miten sen käyttämä sähkö tuotetaan: fossiilisilla polttoaineilla tuotettu sähkö aiheuttaa päästöjä, käytettiinpä hukkalämpö tai ei. Hukkalämmön talteenotto voi pienentää lämmitysjärjestelmän päästöjä, koska kaukolämpöä tarvitsee tuottaa muualla vähemmän, mutta se ei poista sähköntuotannon päästöjä. Datakeskuksen koko elinkaaren päästöt eivät välttämättä ole nolla edes silloin, kun käyttösähkö on hyvin vähäpäästöistä, sillä myös palvelinten ja muiden laitteiden valmistus sekä rakennuksen rakentaminen aiheuttavat päästöjä.
 
 ### Yleisiä virheitä
 - Megawatit ja megawattitunnit sekoitetaan.

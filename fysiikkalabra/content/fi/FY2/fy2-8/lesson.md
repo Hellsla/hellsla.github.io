@@ -331,5 +331,5 @@ m &= e \cdot E \\
 - Kasvihuonekaasut päästävät auringon säteilyn suurelta osin läpi mutta hidastavat maanpinnan lämpösäteilyn pääsyä pois. Maan yksinkertaisesta säteilytasapainomallista saatu efektiivinen säteilylämpötila on noin $-18\,{}^\circ\text{C}$, mutta maanpinnan keskilämpötila on noin $+15\,{}^\circ\text{C}$. Ero havainnollistaa luonnollisen kasvihuoneilmiön merkitystä.
 - Fossiilisten polttoaineiden polttaminen lisää ilmakehän hiilidioksidia, voimistaa kasvihuoneilmiötä ja johtaa ilmastonmuutokseen.
 - Päästö on päästökerroin kertaa energia: $m = e \cdot E$. Tuotantotapoja verrataan elinkaaren päästökertoimilla, jotka vaihtelevat noin $12\,\text{g/kWh}$:sta (ydin- ja tuulivoima) noin $820\,\text{g/kWh}$:iin (kivihiili).
-- Biomassan päästökertoimessa polton hiilidioksidi on laskentaoletuksena nolla; todellinen ilmastovaikutus riippuu biomassan alkuperästä, hiilivarastojen muutoksista ja hiilen takaisin sitoutumisen nopeudesta.
+- Biomassan päästökertoimessa polton hiilidioksidi on laskentaoletuksena nolla; todellinen ilmastovaikutus riippuu biomassan alkuperästä, hiilivarastojen muutoksista ja siitä, kuinka nopeasti hiili sitoutuu takaisin.
 - Päästökerroin ei kerro kaikkea: maankäyttö, kuljetukset, jäte, turvallisuus ja sähkön saatavuus punnitaan erikseen, kun etsitään kestävää energiataloutta.
