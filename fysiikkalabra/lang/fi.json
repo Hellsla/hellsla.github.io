@@ -22,6 +22,7 @@
     "main_menu": "Päävalikko",
     "modules": "Moduulit",
     "reading_tips": "Lukuvinkit",
+    "booklets": "Vihkot",
     "reading_loan": "Lainattavissa Laurilta",
     "reading_language": "Kieli",
     "reading_level": "Vaativuus",
@@ -3107,5 +3108,14 @@
     "total_title": "Kokeen pisteet",
     "total_note": "Monivalinnat pisteyttää sivu, kun avaat niiden mallivastauksen. Muut pisteet ovat oma arviosi. Valinnaisista osista lasketaan parhaat tehtävät sääntöjen mukaan.",
     "revise": "Jos jokin tehtävä jäi heikoksi, palaa luvuille, jotka on mainittu tehtävän kohdassa Taidot luvuista."
+  },
+  "booklets": {
+    "lead": "Tulostettavat A5-vihkot: kunkin opintojakson teoria ja esimerkit yksissä kansissa. Tehtävät, simulaatiot ja malliratkaisut ovat verkossa: jokaisen luvun alussa on QR-koodi lukuun.",
+    "download": "Lataa PDF",
+    "meta": "{{pages}} sivua · {{size}}",
+    "none": "Vihkoja ei ole vielä.",
+    "print_h": "Näin tulostat",
+    "print_1": "Tulosta vihkotulostuksena: paperi A4, sivukoko A5, kaksipuolinen. Tulostin järjestää sivut niin, että taitetut arkit muodostavat vihkon.",
+    "print_2": "Ilman vihkotoimintoa tulosta kaksi sivua arkille kaksipuolisena, leikkaa arkit kahtia ja sido vasemmasta reunasta. Kuvat ovat värillisiä: nopeus, kiihtyvyys ja voima erottuvat väreistä."
   }
 }

@@ -22,6 +22,7 @@
     "main_menu": "Päävalikko",
     "modules": "Moduulit",
     "reading_tips": "Lukuvinkit",
+    "booklets": "Vihkot",
     "reading_loan": "Lainattavissa Laurilta",
     "reading_language": "Kieli",
     "reading_level": "Vaativuus",
@@ -3107,5 +3108,14 @@
     "total_title": "Kokeen pisteet",
     "total_note": "Sivu laskee monivalintojen pisteet, kun avaat mallivastauksen. Muut pisteet arvioit itse. Valinnaisista osista lasketaan parhaat tehtävät.",
     "revise": "Jos jokin tehtävä meni huonosti, palaa lukuihin, jotka on mainittu tehtävän kohdassa Taidot luvuista."
+  },
+  "booklets": {
+    "lead": "Täältä voit tulostaa vihkon. Vihkossa on opintojakson teoria ja esimerkit. Tehtävät ja ratkaisut ovat verkossa. Luvun alussa on QR-koodi.",
+    "download": "Lataa PDF",
+    "meta": "{{pages}} sivua · {{size}}",
+    "none": "Vihkoja ei ole vielä.",
+    "print_h": "Näin tulostat",
+    "print_1": "Valitse tulostimesta vihkotulostus. Paperi on A4 ja sivu A5. Tulosta molemmille puolille.",
+    "print_2": "Jos tulostimessa ei ole vihkotulostusta, tulosta kaksi sivua arkille. Leikkaa arkit kahtia ja nido reunasta. Tulosta väreillä, koska kuvissa on värejä."
   }
 }

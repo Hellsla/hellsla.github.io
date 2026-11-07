@@ -22,6 +22,7 @@
     "main_menu": "Main menu",
     "modules": "Modules",
     "reading_tips": "Reading tips",
+    "booklets": "Booklets",
     "reading_loan": "Borrow from Lauri",
     "reading_language": "Language",
     "reading_level": "Level",
@@ -3107,5 +3108,14 @@
     "total_title": "Exam score",
     "total_note": "The page scores the multiple-choice items when you open their model answer. The other points are your own assessment. In the optional parts the best tasks count under the rules.",
     "revise": "If a task went badly, go back to the chapters listed under Skills from chapters for that task."
+  },
+  "booklets": {
+    "lead": "Printable A5 booklets: the theory and worked examples of each course in one book. Tasks, simulations and model solutions are online: every chapter starts with a QR code to its page.",
+    "download": "Download PDF",
+    "meta": "{{pages}} pages · {{size}}",
+    "none": "No booklets yet.",
+    "print_h": "How to print",
+    "print_1": "Print as a booklet: paper A4, page size A5, double-sided. The printer orders the pages so that the folded sheets make a booklet.",
+    "print_2": "Without a booklet mode, print two pages per sheet double-sided, cut the sheets in half and bind the left edge. The figures are in colour: velocity, acceleration and force are told apart by colour."
   }
 }

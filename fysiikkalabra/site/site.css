@@ -85,7 +85,7 @@ header.top nav>a,.lang-menu>summary{display:inline-flex;align-items:center;min-h
 header.top nav>a:hover,.lang-menu>summary:hover{color:var(--ink);background:var(--bg-tint)}
 header.top nav>a:active,.lang-menu>summary:active{background:var(--line)}
 @media (max-width:29.99rem){header.top nav>a.nav-modules{display:none}.brand-name small{letter-spacing:.06em}.lang-menu>summary{padding:0 10px}}
-@media (max-width:39.99rem){header.top nav>a.nav-reading,header.top nav>a.nav-study{display:none}}   /* Lukuvinkit gives way first on a phone; the footer of every page links to it */
+@media (max-width:39.99rem){header.top nav>a.nav-reading,header.top nav>a.nav-study,header.top nav>a.nav-booklets{display:none}}   /* Lukuvinkit gives way first on a phone; the footer of every page links to it */
 @media (max-width:51.99rem){header.top nav>a.nav-about{display:none}}   /* Sivustosta (front page only) needs about 800 px to keep the header on one row; the footer links it */
 .visually-hidden{position:absolute!important;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 /* the language control: the current language on a quiet button, the others in a small panel (a <details>, no script) */
@@ -897,6 +897,16 @@ figure.unit-photo.wide figcaption{display:block;max-width:var(--measure)}
    subheadings inside it, no covers. Each book: its title as the link, the author, the small loan tag for the books the
    teacher lends, a short description and three facts (language, level, courses) as a quiet row that wraps on a phone. */
 .reading-tips .reading-intro{margin:0 0 1em}
+/* Vihkot (teacher 2026-11-07, scripts/booklets.py): one row per course book: icon, code and title, pages and size, download */
+.booklets{list-style:none;margin:1.2rem 0 2rem;padding:0;display:grid;gap:.6rem}
+.booklet{display:flex;align-items:center;gap:.9rem;padding:.8rem 1rem;background:var(--surface);border:1px solid var(--line);border-radius:var(--card-radius)}
+.booklet>img{flex:none}.booklet-text{flex:1;min-width:0}
+.booklet-title{margin:0;font:600 var(--fs-body)/1.35 var(--sans)}.booklet-title .mod-code{color:var(--accent-deep);font-weight:700}
+.booklet-meta{margin:.15rem 0 0;font-size:var(--fs-small);color:var(--ink-2)}
+.booklet-get{flex:none;display:inline-flex;align-items:center;min-height:44px;padding:0 1rem;border-radius:999px;background:var(--accent-deep);color:var(--surface);font:600 var(--fs-ui) var(--sans);text-decoration:none}
+.booklet-get:hover{background:var(--accent)}
+@media (max-width:29.99rem){.booklet{flex-wrap:wrap}.booklet-text{flex:1 1 calc(100% - 40px - .9rem)}.booklet-get{margin-left:calc(40px + .9rem)}}
+.booklets-h{margin-top:2rem}
 .reading-tips .lead{margin:0 0 1rem}
 .reading-list-lead{margin:1.8rem 0 .6rem}
 .reading-loan-note{margin:0 0 1.4rem;padding:.75rem 1rem;background:var(--accent-soft);border-radius:var(--inner-radius);font-size:var(--fs-inner)}
