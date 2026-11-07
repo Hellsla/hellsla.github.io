@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 5c3716e7cdd98e49
+CONTENT-HASH: 4349218cee0a871a
 
 ## Blocking
 (none)
@@ -8,4 +8,4 @@ CONTENT-HASH: 5c3716e7cdd98e49
 (none)
 
 ## Checked
-light delta review (teacher 2026-11-07), after fixes: "almost on the line of the track" matches the task's "right next to the track" and the Answer remark on the gradual drop.
+light delta review (teacher 2026-11-07), after fixes 2: Principle now says "the velocity of the train points almost straight towards or away from them", natural English and consistent with "almost on the line of the track" and the Answer remark.

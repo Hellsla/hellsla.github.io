@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: e872f4cb8b29bd0a
+CONTENT-HASH: 2da28ecf37a7af6b
 
 ## Blocking
 
 ## Polish
-- solutions.md s3 d — the task now says to use the added mass determined in part c, but Annettu/Periaate/Sijoitus still use $m_\text{s}/3 = 15$ g as the task's model and 'Hyväksytään myös' lists c's intercept value 14 g as the alternative; make c's added mass (≈ 14 g ≈ $m_\text{s}/3$) the main path. Both give 0,43 m/s (recomputed 0,434 and 0,433 m/s), so no score changes.
-- tasks.json s3 c/d — d presupposes a numeric added mass from c, but c's text asks only what the deviation can be due to (the number appears only in c's error_sources criterion); c could ask to estimate the added mass from the intercept.
+- solutions.md s3 d — the task now says to take the added mass from part c's graph, but Annettu/Periaate/Sijoitus still use $m_\text{j}/3 = 15$ g as the main path and list c's intercept value 14 g only under 'Hyväksytään myös'; make c's added mass (≈ 14 g ≈ $m_\text{j}/3$) the main path. Both give 0.43 m/s (recomputed 0.434 and 0.433 m/s), so no score changes.
 
 ## Checked
-- light delta review (teacher 2026-11-07), after fixes: HEAD~1 diff of tasks.json s3: source note no longer states the m_s/3 answer of c; d now says to use the hanging mass plus c's added mass; criterion 1 says the same with the model m_eff = m + m_s/3. Recomputed fit: slope 1.982 s²/kg, k = 19.9 N/m, intercept 0.0278 s², added mass 14.0 g; v_max 0.434 m/s (14 g) / 0.433 m/s (15 g), massless 0.446 m/s (outside 3 % tolerance, 2-point partial credit still fits the three criteria). Physics correct; rubric consistent, Polish only.
+- light delta review (teacher 2026-11-07), after fixes 2: HEAD~1 diff of tasks.json s3 d: text now 'Ota värähtelevässä massassa huomioon c-kohdan kuvaajasta saatava lisämassa', which points to the intercept without stating c's answer and resolves the old c/d Polish item (d no longer presupposes a number c did not ask for). Criterion 1 (hanging mass plus c's added mass, model m_eff = m + m_s/3), the 0.433 m/s answer with 3 % tolerance and the 2-point massless-spring partial credit (0.446 m/s) remain consistent; recomputed k = 19.9 N/m, added mass 14.0 g, v_max 0.434 / 0.433 m/s.

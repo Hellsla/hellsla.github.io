@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 2a23abf0b8280978
+CONTENT-HASH: 0de7306bade9b4cf
 
 ## Blocking
 
 ## Polish
-- lesson.md:561 (worked example, Periaate) — 'lähes radan linjalla, jolloin junan koko nopeus osoittaa kohti häntä' pairs 'almost' with 'the whole velocity'; 'jolloin junan nopeus osoittaa lähes suoraan kohti häntä' would keep the idealisation exact (C, numbers unaffected).
 
 ## Checked
-- light delta review (teacher 2026-11-07), after fixes: HEAD~1 diff: listener 'almost on the line of the track'; the on-line idealisation and the numbers (recomputed 340.8 Hz and 286.0 Hz) stand; only the wording point below.
+- light delta review (teacher 2026-11-07), after fixes 2: HEAD~1 diff: worked-example Principle now 'jolloin junan nopeus osoittaa lähes suoraan kohti häntä'; this resolves the old 'almost' + 'whole velocity' Polish item; the moving-source sign choice and the numbers (recomputed 340.8 Hz and 286.0 Hz) stand.

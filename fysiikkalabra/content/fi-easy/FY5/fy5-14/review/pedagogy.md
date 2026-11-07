@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 5cf06cb664fd5f07
+CONTENT-HASH: 7b2c3b0b1c173327
 
 ## Blocking
 (none)
@@ -8,4 +8,4 @@ CONTENT-HASH: 5cf06cb664fd5f07
 (none)
 
 ## Checked
-light delta review (teacher 2026-11-07), after fixes: "matkustaja on lähes radan linjalla" is plain and matches the task text.
+light delta review (teacher 2026-11-07), after fixes 2: "Silloin junan nopeus osoittaa lähes suoraan kohti häntä tai hänestä poispäin" is a short plain sentence and matches "lähes radan linjalla" and the task text.
