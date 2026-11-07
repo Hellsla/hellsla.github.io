@@ -494,11 +494,7 @@ Beats are used for tuning instruments. When a string is tightened towards the fr
 <figure class="unit-photo"><img src="pics/fy5/ambulance-panning.webp" alt="A white ambulance drives along a street. The ambulance is sharp, but the background and the high-rise buildings are blurred horizontally."><figcaption>An ambulance on the move in Toronto. The camera turned with the vehicle, so the background is blurred. As the ambulance approaches, the siren sounds higher, and as it moves away, lower.</figcaption></figure>
 
 ### The Doppler effect when the source moves
-When a sound source moves, each wavefront starts from the point where the source is at that moment and spreads through the air at speed $v$ in every direction. The period of the source is $T_0 = \tfrac{1}{f_0}$. During that time the previous wavefront travels a distance $v T_0$, but the source travels after it a distance $v_\text{s} T_0$. In front of the source the spacing of the wavefronts, that is, the wavelength, is therefore $(v - v_\text{s}) T_0$, and behind the source it is $(v + v_\text{s}) T_0$. A listener at rest hears the frequency $f = \tfrac{v}{\lambda}$, so
-```latex
-f = f_0 \cdot \frac{v}{v \mp v_\text{s}}
-```
-where $f$ is the frequency heard (Hz), $f_0$ is the frequency of the source (Hz), $v$ is the speed of sound (m/s) and $v_\text{s}$ is the speed of the source (m/s). The minus sign is chosen when the source approaches the listener and the plus sign when the source moves away.
+When a sound source moves, each wavefront starts from the point where the source is at that moment and spreads through the air at speed $v$ in every direction. The period of the source is $T_0 = \tfrac{1}{f_0}$. During that time the previous wavefront travels a distance $v T_0$, but the source travels after it a distance $v_\text{s} T_0$. In front of the source the spacing of the wavefronts, that is, the wavelength, is therefore $(v - v_\text{s}) T_0$, and behind the source it is $(v + v_\text{s}) T_0$. A listener at rest hears the frequency $f = \tfrac{v}{\lambda}$, so an approaching source sounds higher and a receding source lower.
 
 <svg data-fig="doppler" viewBox="0 0 600 424" role="img" aria-label="Schematic figure seen from above, two situations one below the other. At the top the source moves to the right at 0.4 times the speed of sound, shown by a blue velocity arrow. The wavefronts are circles that have started from earlier positions of the source, so they are close together in front of the source and far apart behind it. In the direction of listener A on the right the wavelength lambda A is short, and in the direction of listener B on the left the wavelength lambda B is long. At the bottom the source is at rest and the wavefronts are concentric circles at equal intervals. The listener moves to the left towards the source, shown by a blue velocity arrow; the wavelength lambda is the same in all directions." style="max-width:100%;font-size:24px">
   <defs><clipPath id="fy514-clip1"><rect x="26" y="34" width="548" height="140"/></clipPath><clipPath id="fy514-clip2"><rect x="26" y="236" width="548" height="144"/></clipPath></defs>
@@ -540,14 +536,24 @@ where $f$ is the frequency heard (Hz), $f_0$ is the frequency of the source (Hz)
 </svg>
 
 ### The Doppler effect when the listener moves
-When the source is at rest and the listener moves, the wavelength does not change. The listener, however, meets wavefronts more often when moving towards them, because the wavefronts approach at speed $v + v_\text{h}$. When moving away, the wavefronts catch up with the listener at speed $v - v_\text{h}$. The frequency heard is the rate at which the wavefronts are met:
+When the source is at rest and the listener moves, the wavelength does not change. The listener, however, meets wavefronts more often when moving towards them, because the wavefronts approach at speed $v + v_\text{h}$. When moving away, the wavefronts catch up with the listener at speed $v - v_\text{h}$. The frequency heard is the rate at which the wavefronts are met, so it is higher than $f_0$ when approaching and lower when moving away.
+The Doppler effect is used to measure speeds: an ultrasound device measures the flow speed of blood.
+
+## Further information: Doppler formulas {Lisätiedoksi: Dopplerin ilmiön laskukaavat}
+The frequency heard can be calculated from the spacing of the wavefronts. When the source moves, the wavelength is $(v - v_\text{s}) T_0$ in front of the source and $(v + v_\text{s}) T_0$ behind it. A listener at rest hears the frequency $f = \tfrac{v}{\lambda}$, so
+```latex
+f = f_0 \cdot \frac{v}{v \mp v_\text{s}}
+```
+where $f$ is the frequency heard (Hz), $f_0$ is the frequency of the source (Hz), $v$ is the speed of sound (m/s) and $v_\text{s}$ is the speed of the source (m/s). The minus sign is chosen when the source approaches the listener and the plus sign when the source moves away.
+
+When the source is at rest and the listener moves, the wavefronts meet the listener at speed $v + v_\text{h}$ or $v - v_\text{h}$, and the frequency heard is the rate at which the wavefronts are met:
 ```latex
 f = f_0 \cdot \frac{v \pm v_\text{h}}{v}
 ```
 where $v_\text{h}$ is the speed of the listener, or observer (m/s), and the other quantities are as above. The plus sign is chosen when the listener approaches the source and the minus sign when the listener moves away.
 
 ### Signs and assumptions
-The sign can be checked with a rule: approaching raises the frequency heard and moving away lowers it. So choose the sign that gives $f > f_0$ when approaching and $f < f_0$ when moving away. The speeds are measured relative to the air, which is at rest, that is, there is no wind. The formulas apply to motion along the straight line between the source and the listener, and they hold when only one of them moves and the speed of the source is less than the speed of sound. When the speed is much smaller than the speed of sound, both formulas give almost the same change, about $f_0 \cdot \tfrac{v_\text{s}}{v}$ or $f_0 \cdot \tfrac{v_\text{h}}{v}$. The Doppler effect is used to measure speeds: an ultrasound device measures the flow speed of blood.
+The sign can be checked with a rule: approaching raises the frequency heard and moving away lowers it. So choose the sign that gives $f > f_0$ when approaching and $f < f_0$ when moving away. The speeds are measured relative to the air, which is at rest, that is, there is no wind. The formulas apply to motion along the straight line between the source and the listener, and they hold when only one of them moves and the speed of the source is less than the speed of sound. When the speed is much smaller than the speed of sound, both formulas give almost the same change, about $f_0 \cdot \tfrac{v_\text{s}}{v}$ or $f_0 \cdot \tfrac{v_\text{h}}{v}$.
 
 ## Worked example
 A train runs along a straight track at a steady speed of $108\,\text{km/h}$ and sounds a horn whose frequency is $311\,\text{Hz}$. A passenger stands on the platform right next to the track, so the train comes straight towards them and then moves straight away from them. What frequency does the passenger hear as the train approaches and what frequency as it moves away, and by how much does the frequency drop at the moment the train passes? The air is calm, and the speed of sound is $340\,\text{m/s}$.
@@ -610,4 +616,4 @@ Another mistake is to think that the motion of the source changes the speed of s
 - Pitch is determined by frequency. The human range of hearing is about $20\,\text{Hz}$–$20\,\text{kHz}$; lower sound is infrasound and higher is ultrasound.
 - Timbre depends on the strengths of the overtones. The partials of an instrument form the harmonic series $f_n = n f_1$, and the FFT spectrum shows them as peaks.
 - When two sounds of almost the same frequency sound together, beats are heard with the frequency $f_\text{h} = |f_1 - f_2|$.
-- The Doppler effect: approaching raises and moving away lowers the frequency heard. For a moving source $f = f_0 \cdot \tfrac{v}{v \mp v_\text{s}}$ and for a moving listener $f = f_0 \cdot \tfrac{v \pm v_\text{h}}{v}$, the upper sign for approaching.
+- The Doppler effect: approaching raises and moving away lowers the frequency heard. Further information: for a moving source $f = f_0 \cdot \tfrac{v}{v \mp v_\text{s}}$ and for a moving listener $f = f_0 \cdot \tfrac{v \pm v_\text{h}}{v}$, the upper sign for approaching.

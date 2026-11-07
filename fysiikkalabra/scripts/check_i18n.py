@@ -31,7 +31,7 @@ ROOT = courses.ROOT
 TEXT_KEYS = {"text", "reason_prompt", "pending", "detail", "q", "a", "title", "question", "prompt", "feedback", "model", "hint", "hints", "howto", "calc", "label",
              "goals", "prerequisites_note", "glossary", "lead", "summary", "name", "mistakes", "explain", "options", "speaker",
              "claim", "why", "fold", "predictions", "rubric", "note", "words",
-             "solution", "contribution", "learn", "prior", "criteria", "pair", "intro", "source_note", "answer", "practice", "caption", "columns"}
+             "solution", "contribution", "learn", "deepen", "prior", "criteria", "pair", "intro", "source_note", "answer", "practice", "caption", "columns"}
 WORD_UNIT = re.compile(r"kpl|milj|vrk|kertaa|kierros|heilahdus|toistoa|tuhatta|suuruusluokkaa|ihmistä|annosta|ilma|viivaa|vahvistin|prosenttiyksik")   # a unit that is Finnish words
 
 

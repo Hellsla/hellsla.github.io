@@ -558,6 +558,7 @@ form.check output[data-state=close]{color:#7a5a00;font-weight:600}form.check out
 h2.intro-h{margin:0 0 .45rem;font:700 var(--fs-small)/1.3 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--accent-deep)}
 .learn ul,.prior ul{margin:0;padding-left:1.2rem}.learn li,.prior li{margin:.35rem 0}
 .learn li::marker{color:var(--accent)}
+h2.intro-h.deepen-h{margin-top:.9rem}.learn ul.deepen li::marker{color:var(--line)}
 .intro-more{max-width:var(--measure);margin:1.5rem 0 0;font-size:var(--fs-inner);line-height:1.55}
 .prior{margin:0 0 .9rem}
 .prior-ref{display:block;font-size:var(--fs-small);color:var(--ink-2)}
@@ -840,7 +841,7 @@ fieldset.choice[data-state="no"] .practice-hint,.numeric:has(output[data-state="
 .ex-path{max-width:calc(var(--measure) + 3rem);margin:0 0 1rem;font-size:var(--fs-ui);line-height:1.5;color:var(--ink-2)}
 .level-lead{margin:.2rem 0 .6rem;font-size:var(--fs-ui);color:var(--ink-2)}
 .ex-core{display:inline-block;margin:0 .5rem .25rem 0;padding:.05rem .55rem;border-radius:999px;background:var(--accent-soft);border:1px solid var(--accent);color:var(--accent-deep);font-size:.8125rem;font-weight:700;vertical-align:.1em}
-.act-core{margin:0 0 .35rem}.act-core .ex-core{margin:0}
+.ex-core.ex-ext{background:transparent;border-style:dashed}.act-core{margin:0 0 .35rem}.act-core .ex-core{margin:0}
 /* Kokeelliset tutkimukset (teacher 2026-10-30, scripts/investigations.py): the lesson page's reading column; the goals
    and levels, the working-mode choice (radios; guidance blocks of other modes are hidden by investigation.js), the
    prerequisites by kind with their level, just-in-time help links, guidance blocks as tinted panels, teacher guidance

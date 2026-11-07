@@ -4,7 +4,10 @@
   "learn": [
     "describe pitch and timbre using frequency and the harmonic series, and classify infrasound and ultrasound.",
     "make an FFT graph of a sound and read the fundamental frequency and the overtones from it.",
-    "explain beats and the Doppler effect and calculate the frequency heard."
+    "explain beats and the Doppler effect."
+  ],
+  "deepen": [
+    "calculate the frequency heard with the Doppler formulas."
   ],
   "prior": [
     "Sound is a longitudinal wave, and the speed of a wave is $v = f\\lambda$ (chapter *How waves form and travel*)",
@@ -307,6 +310,16 @@
       ]
     },
     {
+      "id": "lisatieto-doppler",
+      "stage": "selita",
+      "type": "theory",
+      "title": "Further information: Doppler formulas",
+      "sections": [
+        "Lisätiedoksi: Dopplerin ilmiön laskukaavat"
+      ],
+      "optional": true
+    },
+    {
       "id": "pohdi",
       "stage": "selita",
       "type": "reflect",
@@ -324,13 +337,15 @@
       "type": "theory",
       "sections": [
         "Esimerkki"
-      ]
+      ],
+      "title": "Extension: worked example",
+      "optional": true
     },
     {
       "id": "virhe",
       "stage": "sovella",
       "type": "choice",
-      "title": "Find the error",
+      "title": "Extension: find the error",
       "optional": true,
       "prompt": "A moped approaches a listener at $20.0\\,\\text{m/s}$, and the frequency of its horn is $620\\,\\text{Hz}$. A student calculates the frequency heard like this:\n\n$$\\begin{aligned} f &= f_0 \\cdot \\frac{v}{v + v_\\text{s}} \\\\ &= 620\\,\\text{Hz} \\cdot \\frac{340\\,\\text{m/s}}{360\\,\\text{m/s}} \\\\ &\\approx 586\\,\\text{Hz} \\end{aligned}$$\n\nWhere is the error?",
       "choices": [
@@ -357,7 +372,7 @@
       "id": "siirto",
       "stage": "sovella",
       "type": "numeric",
-      "title": "Apply to a new situation",
+      "title": "Extension: apply to a new situation",
       "optional": true,
       "prompt": "A student whirls a buzzer tied to the end of a string in a horizontal circle of radius $1.00\\,\\text{m}$. One revolution takes $0.500\\,\\text{s}$, and the frequency of the buzzer is $2.00\\,\\text{kHz}$. A listener standing far away in the same plane hears the pitch vary. What is the greatest frequency the listener hears? The air is calm, and the speed of sound is $340\\,\\text{m/s}$. Answer in hertz.",
       "answer": 2077,

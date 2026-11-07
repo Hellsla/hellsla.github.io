@@ -494,11 +494,7 @@ Huojuntaa käytetään soittimien virittämiseen. Kun kieltä kiristetään koht
 <figure class="unit-photo"><img src="pics/fy5/ambulance-panning.webp" alt="Valkoinen ambulanssi ajaa kadulla. Tausta on sumea."><figcaption>Ambulanssi ajaa Torontossa. Kun ambulanssi tulee kohti, sireeni kuulostaa korkeammalta. Kun se menee poispäin, sireeni kuulostaa matalammalta.</figcaption></figure>
 
 ### Dopplerin ilmiö, kun lähde liikkuu
-Ajatellaan, että äänilähde liikkuu. Jokainen aaltorintama lähtee siitä kohdasta, jossa lähde on sillä hetkellä. Rintama leviää ilmassa nopeudella $v$ joka suuntaan. Lähteen jaksonaika on $T_0 = \tfrac{1}{f_0}$. Sinä aikana edellinen rintama etenee matkan $v T_0$. Lähde ehtii kulkea sen perässä matkan $v_\text{s} T_0$. Lähteen edessä rintamien väli eli aallonpituus on siksi $(v - v_\text{s}) T_0$. Lähteen takana se on $(v + v_\text{s}) T_0$. Paikallaan oleva kuulija kuulee taajuuden $f = \tfrac{v}{\lambda}$, joten
-```latex
-f = f_0 \cdot \frac{v}{v \mp v_\text{s}}
-```
-missä $f$ on kuultu taajuus (Hz), $f_0$ on lähteen taajuus (Hz), $v$ on äänen nopeus (m/s) ja $v_\text{s}$ on lähteen nopeus (m/s). Miinusmerkki valitaan, kun lähde lähestyy kuulijaa. Plusmerkki valitaan, kun lähde loittonee.
+Ajatellaan, että äänilähde liikkuu. Jokainen aaltorintama lähtee siitä kohdasta, jossa lähde on sillä hetkellä. Rintama leviää ilmassa nopeudella $v$ joka suuntaan. Lähteen jaksonaika on $T_0 = \tfrac{1}{f_0}$. Sinä aikana edellinen rintama etenee matkan $v T_0$. Lähde ehtii kulkea sen perässä matkan $v_\text{s} T_0$. Lähteen edessä rintamien väli eli aallonpituus on siksi $(v - v_\text{s}) T_0$. Lähteen takana se on $(v + v_\text{s}) T_0$. Paikallaan oleva kuulija kuulee taajuuden $f = \tfrac{v}{\lambda}$. Siksi lähestyvän lähteen ääni kuulostaa korkeammalta ja loittonevan matalammalta.
 
 <svg data-fig="doppler" viewBox="0 0 600 424" role="img" aria-label="Kaavakuva ylhäältä katsottuna, kaksi tilannetta allekkain. Ylhäällä lähde liikkuu oikealle nopeudella, joka on 0,4 kertaa äänen nopeus, mitä esittää sininen nopeusnuoli. Aaltorintamat ovat ympyröitä, jotka ovat lähteneet lähteen aiemmista paikoista, joten ne ovat lähteen edessä tiheässä ja sen takana harvassa. Oikealla olevan kuulijan A suunnassa aallonpituus lambda A on lyhyt ja vasemmalla olevan kuulijan B suunnassa aallonpituus lambda B pitkä. Alhaalla lähde on paikallaan ja aaltorintamat ovat samankeskisiä ympyröitä yhtä suurin välein. Kuulija liikkuu vasemmalle kohti lähdettä, mitä esittää sininen nopeusnuoli; aallonpituus lambda on sama kaikkiin suuntiin." style="max-width:100%;font-size:24px">
   <defs><clipPath id="fy514-clip1"><rect x="26" y="34" width="548" height="140"/></clipPath><clipPath id="fy514-clip2"><rect x="26" y="236" width="548" height="144"/></clipPath></defs>
@@ -540,14 +536,24 @@ missä $f$ on kuultu taajuus (Hz), $f_0$ on lähteen taajuus (Hz), $v$ on ääne
 </svg>
 
 ### Dopplerin ilmiö, kun kuulija liikkuu
-Nyt lähde on paikallaan ja kuulija liikkuu. Aallonpituus ei muutu. Kuulija kuitenkin kohtaa aaltorintamia useammin, kun hän kulkee niitä vastaan. Rintamat lähestyvät häntä silloin nopeudella $v + v_\text{h}$. Kun kuulija loittonee, rintamat saavuttavat hänet nopeudella $v - v_\text{h}$. Kuultu taajuus on rintamien kohtaamistiheys:
+Nyt lähde on paikallaan ja kuulija liikkuu. Aallonpituus ei muutu. Kuulija kuitenkin kohtaa aaltorintamia useammin, kun hän kulkee niitä vastaan. Rintamat lähestyvät häntä silloin nopeudella $v + v_\text{h}$. Kun kuulija loittonee, rintamat saavuttavat hänet nopeudella $v - v_\text{h}$. Kuultu taajuus on rintamien kohtaamistiheys. Siksi se on lähestyttäessä suurempi ja loitottaessa pienempi kuin $f_0$.
+Dopplerin ilmiöllä mitataan nopeuksia: ultraäänilaite mittaa veren virtausnopeutta.
+
+## Lisätiedoksi: Dopplerin ilmiön laskukaavat
+Kuullun taajuuden voi laskea aaltorintamien väleistä. Kun lähde liikkuu, aallonpituus on lähteen edessä $(v - v_\text{s}) T_0$. Lähteen takana se on $(v + v_\text{s}) T_0$. Paikallaan oleva kuulija kuulee taajuuden $f = \tfrac{v}{\lambda}$, joten
+```latex
+f = f_0 \cdot \frac{v}{v \mp v_\text{s}}
+```
+missä $f$ on kuultu taajuus (Hz), $f_0$ on lähteen taajuus (Hz), $v$ on äänen nopeus (m/s) ja $v_\text{s}$ on lähteen nopeus (m/s). Miinusmerkki valitaan, kun lähde lähestyy kuulijaa. Plusmerkki valitaan, kun lähde loittonee.
+
+Nyt lähde on paikallaan ja kuulija liikkuu. Rintamat kohtaavat kuulijan nopeudella $v + v_\text{h}$ tai $v - v_\text{h}$. Kuultu taajuus on rintamien kohtaamistiheys:
 ```latex
 f = f_0 \cdot \frac{v \pm v_\text{h}}{v}
 ```
 missä $v_\text{h}$ on kuulijan eli havaitsijan nopeus (m/s) ja muut suureet ovat samat kuin edellä. Plusmerkki valitaan, kun kuulija lähestyy lähdettä. Miinusmerkki valitaan, kun kuulija loittonee.
 
 ### Etumerkit ja oletukset
-Etumerkin voi tarkistaa säännöllä. Lähestyminen nostaa kuultua taajuutta ja loittoneminen laskee sitä. Valitse siis merkki, joka antaa lähestyttäessä $f > f_0$ ja loitottaessa $f < f_0$. Nopeudet mitataan ilman suhteen. Ilma on paikallaan eli tuulta ei ole. Kaavat koskevat liikettä lähteen ja kuulijan välisellä suoralla. Ne pätevät, kun vain toinen liikkuu ja lähteen nopeus on pienempi kuin äänen nopeus. Kun nopeus on paljon pienempi kuin äänen nopeus, molemmat kaavat antavat lähes saman muutoksen. Se on noin $f_0 \cdot \tfrac{v_\text{s}}{v}$ tai $f_0 \cdot \tfrac{v_\text{h}}{v}$. Dopplerin ilmiöllä mitataan nopeuksia: ultraäänilaite mittaa veren virtausnopeutta.
+Etumerkin voi tarkistaa säännöllä. Lähestyminen nostaa kuultua taajuutta ja loittoneminen laskee sitä. Valitse siis merkki, joka antaa lähestyttäessä $f > f_0$ ja loitottaessa $f < f_0$. Nopeudet mitataan ilman suhteen. Ilma on paikallaan eli tuulta ei ole. Kaavat koskevat liikettä lähteen ja kuulijan välisellä suoralla. Ne pätevät, kun vain toinen liikkuu ja lähteen nopeus on pienempi kuin äänen nopeus. Kun nopeus on paljon pienempi kuin äänen nopeus, molemmat kaavat antavat lähes saman muutoksen. Se on noin $f_0 \cdot \tfrac{v_\text{s}}{v}$ tai $f_0 \cdot \tfrac{v_\text{h}}{v}$.
 
 ## Esimerkki
 Juna ajaa suoraa rataa tasaisella nopeudella $108\,\text{km/h}$ ja soittaa äänimerkkiä. Äänimerkin taajuus on $311\,\text{Hz}$. Matkustaja seisoo laiturilla aivan radan vieressä. Juna tulee suoraan häntä kohti ja loittonee suoraan hänestä poispäin. Minkä taajuuden matkustaja kuulee junan lähestyessä ja minkä sen loitotessa? Kuinka paljon taajuus laskee ohitushetkellä? Ilma on tyyntä, ja äänen nopeus on $340\,\text{m/s}$.
@@ -610,4 +616,4 @@ Toinen virhe on luulla, että lähteen liike muuttaa äänen nopeutta tai lähte
 - Äänenkorkeus määräytyy taajuudesta. Ihmisen kuuloalue on noin $20\,\text{Hz}$–$20\,\text{kHz}$. Matalampi ääni on infraääntä ja korkeampi ultraääntä.
 - Sointiväri riippuu yläsävelten voimakkuuksista. Soittimen osasävelet muodostavat harmonisen sarjan $f_n = n f_1$, ja FFT-spektri näyttää ne piikkeinä.
 - Kun kaksi lähes samantaajuista ääntä soi yhtä aikaa, kuuluu huojunta, jonka taajuus on $f_\text{h} = |f_1 - f_2|$.
-- Dopplerin ilmiö: lähestyminen nostaa ja loittoneminen laskee kuultua taajuutta. Liikkuvalle lähteelle $f = f_0 \cdot \tfrac{v}{v \mp v_\text{s}}$ ja liikkuvalle kuulijalle $f = f_0 \cdot \tfrac{v \pm v_\text{h}}{v}$. Ylempi merkki on lähestyttäessä.
+- Dopplerin ilmiö: lähestyminen nostaa ja loittoneminen laskee kuultua taajuutta. Lisätiedoksi: liikkuvalle lähteelle $f = f_0 \cdot \tfrac{v}{v \mp v_\text{s}}$ ja liikkuvalle kuulijalle $f = f_0 \cdot \tfrac{v \pm v_\text{h}}{v}$. Ylempi merkki on lähestyttäessä.
