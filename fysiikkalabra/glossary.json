@@ -5162,18 +5162,6 @@
     "locked": false
   },
   {
-    "term": "irradianssi",
-    "definition": "Pinnalle tuleva säteilyteho pinta-alayksikköä kohti, tunnus $G$ ja yksikkö $\\text{W/m}^2$. Kirkkaana kesäpäivänä kohtisuoraan tulevan auringonsäteilyn irradianssi on noin $1000\\,\\text{W/m}^2$. Se ei ole sama kuin fotometrinen valovoima.",
-    "lessons": [
-      "fy6-14"
-    ],
-    "see_also": [
-      "aurinkokenno",
-      "hyötysuhde"
-    ],
-    "locked": false
-  },
-  {
     "term": "tyhjäkäyntijännite",
     "definition": "Jännitelähteen, kuten aurinkokennon, napojen välinen jännite, kun siitä ei oteta virtaa. Aurinkokennolla se muuttuu irradianssin mukana vain vähän.",
     "lessons": [
