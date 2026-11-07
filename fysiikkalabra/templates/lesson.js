@@ -262,7 +262,7 @@
   const load = (src, base = VENDOR) => new Promise((ok, fail) => { const s = document.createElement('script'); s.src = new URL(src, base).href; s.onload = ok; s.onerror = fail; document.head.appendChild(s); });
   const loadPad = () => padLib || (padLib = (() => {
     const css = document.createElement('link'); css.rel = 'stylesheet'; css.href = VENDOR + 'mathquill.css'; document.head.appendChild(css);
-    window.MathJax = { startup: { typeset: false }, options: { enableMenu: false }, svg: { fontCache: 'none' } };   // never touches the KaTeX page
+    window.MathJax = { startup: { typeset: false }, options: { enableMenu: false }, svg: { fontCache: 'local' } };   // never touches the KaTeX page
     return Promise.all([load('tex-svg.js'), load('rich-text-editor-bundle.js'), load('padstore.js', HERE)]).then(() => window.MathJax.startup.promise);
   })().catch((e) => { padLib = null; throw e; }));
   // Abitti draws a formula on its server; here MathJax draws it into a self-contained SVG with the LaTeX in alt,
@@ -296,6 +296,34 @@
       return navigator.clipboard.write([new ClipboardItem({ 'text/html': new Blob([html], { type: 'text/html' }), 'text/plain': new Blob([text], { type: 'text/plain' }) })]).catch(viaEvent);
     }
     return viaEvent();
+  };
+  // A pasted picture (teacher 2026-11-07, the size of the module's file): a small one is kept exactly as it was pasted
+  // (never blurred, never compressed again). A big one is drawn once at most PASTE.side px on its long side (a
+  // screenshot, a graph: PNG, sharp text) or, when PNG would be much larger (a photo, a photographed handwritten
+  // solution), as JPEG at most PASTE.photo px. The aspect ratio stays; the editor and the file get only the result.
+  const PASTE = { keep: 350000, side: 2000, photo: 1600, q: 0.8 };
+  const fileUrl = (b) => new Promise((ok, no) => { const r = new FileReader(); r.onload = () => ok(r.result); r.onerror = () => no(r.error); r.readAsDataURL(b); });
+  const pasteImage = async (file) => {
+    let bmp = null;
+    try { bmp = await createImageBitmap(file); } catch (e) { return fileUrl(file); }   // the browser cannot decode it: as it is (palautus.js checks it)
+    try {
+      const w0 = bmp.width, h0 = bmp.height, long = Math.max(w0, h0);
+      if (!long || file.size <= PASTE.keep && long <= PASTE.side) return fileUrl(file);
+      const draw = (side, white) => {
+        const k = Math.min(1, side / long), c = document.createElement('canvas');
+        c.width = Math.max(1, Math.round(w0 * k)); c.height = Math.max(1, Math.round(h0 * k));
+        const g = c.getContext('2d'); g.imageSmoothingQuality = 'high';
+        if (white) { g.fillStyle = '#fff'; g.fillRect(0, 0, c.width, c.height); }   // JPEG has no transparency
+        g.drawImage(bmp, 0, 0, c.width, c.height);
+        return c;
+      };
+      const blob = (c, type, q) => new Promise((ok) => c.toBlob(ok, type, q));
+      const png = await blob(draw(PASTE.side), 'image/png');
+      const jpg = await blob(draw(PASTE.photo, true), 'image/jpeg', PASTE.q);
+      let best = png && (!jpg || png.size <= Math.max(PASTE.keep, 1.5 * jpg.size)) ? png : jpg;
+      if (!best || best.size >= file.size && long <= PASTE.side) best = file;   // nothing gained: the original
+      return fileUrl(best);
+    } finally { if (bmp.close) bmp.close(); }
   };
   // A pasted picture's size (teacher 2026-11-06, "haluan pienentää kuvaa"): a click on a picture (not a formula) in the
   // editor shows a bar under it, Pieni / Keskikoko / Iso (a quarter, half or all of the editor's width) and
@@ -354,7 +382,7 @@
   window.addEventListener('pagehide', flushAll);
   window.addEventListener('beforeunload', (e) => { if (unsaved()) { flushAll(); e.preventDefault(); e.returnValue = ''; } });   // a change still on its way asks before leaving
   // for the submission trial (palautus.js, FY3-1 only): write every open editor now; rejects when a write failed
-  window.flPads = { flush: () => flushAll().then(() => { if (unsaved()) { const e = new Error('unsaved'); e.code = 'unsaved'; throw e; } }) };
+  window.flPads = { flush: () => flushAll().then(() => { if (unsaved()) { const e = new Error('unsaved'); e.code = 'unsaved'; throw e; } }), image: pasteImage };
   // "Tallennetut ratkaisut": a backup file of every saved solution, bringing one back, and deleting all (one panel
   // per open editor; all act on the whole store of this device).
   const backupPanel = (status) => {
@@ -368,7 +396,7 @@
     d.append(sum, note, row, file);
     // on a module's pages (FY1-FY8) the backup is the module's work file (palautus.js flWork, teacher 2026-11-07: one
     // work per module, no second way of saving)
-    exp.addEventListener('click', () => (window.flWork ? flushAll().then(() => window.flWork.save()).then((r) => say(status, msg('palautus_saved', { name: r.name }), 'ok'), (e) => say(status, e && e.user ? e.message : saveError(e), 'no')) : flushAll().then(() => window.flPadStore.backup()).then((text) => {
+    exp.addEventListener('click', () => (window.flWork ? flushAll().then(() => window.flWork.save()).then((r) => say(status, msg('palautus_saved', { name: r.name, mb: r.mb }), 'ok'), (e) => say(status, e && e.user ? e.message : saveError(e), 'no')) : flushAll().then(() => window.flPadStore.backup()).then((text) => {
       const n = JSON.parse(text).solutions.length;
       const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([text], { type: 'application/json' }));
       a.download = `ruukkilabra-ratkaisut-${new Date().toISOString().slice(0, 10)}.json`; document.body.append(a); a.click(); a.remove();
@@ -468,7 +496,7 @@
           clearTimeout(timer); timer = setTimeout(flush, 800);
         };
         answer = { answerHtml: saved.html };
-        const ref = window.makeRichText({ container: root, language: 'FI', onLatexUpdate: drawLatex, onValueChange: changed, initialValue: saved.html,
+        const ref = window.makeRichText({ container: root, language: 'FI', onLatexUpdate: drawLatex, onValueChange: changed, initialValue: saved.html, getPasteSource: pasteImage,
           textAreaProps: { ariaLabelledBy: label.id, lang: document.documentElement.lang } });
         imageSizer(box, root);
         if (saved.error) say(saveState, saveError(saved.error), 'no');

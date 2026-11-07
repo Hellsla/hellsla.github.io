@@ -127,7 +127,7 @@
 
   // ---- the module page ----
   const mod = document.getElementById('oma-eteneminen');
-  if (mod) mod.hidden = false;
+  if (mod) { mod.hidden = false; const wrap = mod.closest('details'); if (wrap) wrap.hidden = false; }
   const graph = mod && mod.querySelector('details.pm-graph');
   if (graph) graph.addEventListener('toggle', () => { if (graph.open) render(); });
   let lastW = 0;

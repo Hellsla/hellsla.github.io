@@ -432,9 +432,10 @@
     a.content.forEach(function (it) {
       if (it.type === 'text') p.append(el('span', 't', it.text));
       else if (it.type === 'math') {
-        if (!tex && typeof it.png === 'string' && B64.test(it.png)) {
-          var m = el('img', 'math'); m.alt = it.latex; m.title = it.latex; m.src = 'data:image/png;base64,' + it.png;
-          m.style.width = Math.round(it.w * 1.25) + 'px'; m.style.height = Math.round(it.h * 1.25) + 'px'; p.append(m);
+        var pic = typeof it.png === 'string' && B64.test(it.png) ? 'data:image/png;base64,' + it.png : typeof it.svg === 'string' && B64.test(it.svg) ? 'data:image/svg+xml;base64,' + it.svg : '';
+        if (!tex && pic) {
+          var m = el('img', 'math'); m.alt = it.latex; m.title = it.latex; m.src = pic;
+          if (it.w > 0 && it.h > 0) { m.style.width = Math.round(it.w * 1.25) + 'px'; m.style.height = Math.round(it.h * 1.25) + 'px'; } p.append(m);
         } else p.append(el('code', 'math', it.latex));
       } else if (it.type === 'image' && (it.mime === 'image/png' || it.mime === 'image/jpeg') && B64.test(it.data)) {
         var i = el('img', 'shot'); i.alt = 'Opiskelijan kuva (' + it.w + ' × ' + it.h + ' px), suurenna napsauttamalla'; i.src = 'data:' + it.mime + ';base64,' + it.data;

@@ -47,7 +47,7 @@ if SITE.name == "site.tmp":
 else:
     SITE.mkdir(exist_ok=True)                         # preview/ is shared by agents building at the same time, so it is never wiped
 TPL = ROOT / "templates"
-for f in ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js"): shutil.copy(TPL / f, SITE / f)
+for f in ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js"): shutil.copy(TPL / f, SITE / f)
 card_files = concept_cards.publish(SITE)   # site/kortit/<module>.json, read by Käsitetakomo (scripts/concept_cards.py)
 # p5 + KaTeX, no CDN needed. The read-aloud model and onnxruntime-web are not part of the site (teacher 2026-11-04,
 # UI fix 3): they are in the repository Hellsla/ruukkilabra-models, copied into the published site's models/ folder
@@ -140,6 +140,16 @@ ASSIGNED_IDS = assigned.flat(ASSIGNED)
 COURSE_FILE = {f"FY{i}" for i in range(1, 9)}   # one work file per module (teacher 2026-11-07): FY1-FY8; FY9 keeps the chapter file
 
 
+def self_goals(course, lid, lang):
+    """The chapter's verbal self-assessment statements (Itsearvio's tavoite-1, -2, …) as plain text, for the module page's
+    Oma itsearvio (templates/omaarvio.js): the same ones inquiry.sa_goals_html shows."""
+    extra = inquiry.self_statements(lid, lang)
+    if extra: return [inquiry.plain(x) for x in extra]
+    inq = inquiry.load(courses.ROOT / "content" / ("fi" if lang == "fi-easy" else lang) / course / lid) or {}
+    if inq.get("self_extra"): return [inquiry.plain(x) for x in inq["self_extra"]]
+    return [inquiry.plain(T("inquiry.sa_goal_prefix") + " " + x) for x in inq.get("learn") or []]
+
+
 def course_block(course, lang):
     """The module's chapters and their exercise ids (#fl-course) for palautus.js's one work file per module (Tallenna
     työ tiedostoon, Avaa tallennettu työ, Palauta), with the assigned tasks for tehty.js (and the script when there are
@@ -149,27 +159,35 @@ def course_block(course, lang):
     for n, l in enumerate(curriculum[course].get("lessons", []), 1):
         ex = assigned.exercises(course, l["id"])   # the ids are the same in every language
         if ex: chs.append({"id": l["id"], "n": n, "tasks": [e["id"] for items in ex.values() for e in items]})
+        goals = self_goals(course, l["id"], lang)
+        if goals and chs and chs[-1]["id"] == l["id"]: chs[-1]["goals"] = goals
     given = [i for ids in ASSIGNED.get(course, {}).values() for i in ids]
     data = {"course": course, "chapters": chs, "assigned": given}
     return ('<script id="fl-course" type="application/json">' + json.dumps(data, separators=(",", ":")) + "</script>"
             + ('<script src="tehty.js"></script>' if given else ""))
 
 
-def progress_section(course, lang):
+def progress_section(course, lang, mod=None):
     """The module page's own part (teacher 2026-11-07), after the heading, before the chapters: Oma eteneminen (the
     counter, the bar and the graph, drawn by tehty.js from this browser's ticks; hidden without scripts) and the
     buttons Tallenna työ tiedostoon and Avaa tallennettu työ (palautus.js)."""
     block = course_block(course, lang)
     if not block: return ""
-    strings = {k: v for k, v in T("js").items() if k.startswith(("done_", "progress_", "palautus_", "work_"))}
+    strings = {k: v for k, v in T("js").items() if k.startswith(("done_", "progress_", "palautus_", "work_", "selfmap_"))}
+    strings.update({k: v for k, v in T("inquiry").items() if k in ("sa_a", "sa_b", "sa_c", "sa_d", "sa_x", "sa_x_short")})
     prog = (f'<section class="my-progress" id="oma-eteneminen" hidden><h2>{T("js.progress_title")}</h2>'
             '<p class="pm-count" aria-live="polite"></p><div class="pm-bar" role="progressbar" aria-valuemin="0"><span></span></div>'
             f'<details class="pm-graph"><summary>{T("js.progress_graph")}</summary><div class="pm-chart"></div></details>'
             f'<p class="pm-note">{T("js.progress_note")}</p></section>') if ASSIGNED.get(course) else ""
     ret = f' data-return="{FORMS_PAGE}"' if FORMS else ""
-    return (prog + '<div class="work-tools" id="oma-tyo" hidden></div>'
+    themes = json.dumps([{"t": th["title"], "first": th["first"]} for th in (mod or {}).get("themes", [])], ensure_ascii=False)
+    mine = (f'<section class="my-selfmap" id="oma-itsearvio" data-themes="{esc(themes)}" hidden><h2>{T("js.selfmap_title")}</h2>'
+            '<p class="sm-count" aria-live="polite"></p><div class="sm-map"></div><ul class="sm-legend"></ul></section>')
+    # behind one button (teacher 2026-11-07: "Näytä edistyminen", so the module page stays short); shown by the scripts
+    return (f'<details class="my-wrap" hidden><summary>{T("js.progress_show")}</summary><div class="my-row">' + prog + mine + '</div></details>'
+            '<div class="work-tools" id="oma-tyo" hidden></div>'
             '<script id="fl-strings" type="application/json">' + json.dumps({"js": strings}, ensure_ascii=False).replace("</", "<\\/") + "</script>"
-            + block + f'<script src="palautus.js" data-course="{course}"{ret}></script>')
+            + block + '<script src="omaarvio.js"></script>' + f'<script src="palautus.js" data-course="{course}"{ret}></script>')
 
 
 def forms_title(): return T("site.returns_title", period=FORMS["period"], year=FORMS["year"])
@@ -1012,7 +1030,7 @@ def build_language(lang):
         body = (notes + f'<div class="mod-head">{module_icons.img(code, 56, "mod-head-icon")}<div><span class="eyebrow">{code} · {credits}</span><h1>{esc(mod["title"])}</h1></div></div>'
                 f'<p class="lead">{esc(T("site.module_question." + code))}</p>'
                 f'<p class="mod-status">{main_label}{(" · " + extra_label) if extra_label else ""}</p>'
-                + progress_section(code, lang)
+                + progress_section(code, lang, mod)
                 + f'<h2>{T("site.course_lessons")}</h2>{items}<div class="mod-more">'
                 + concept_cards.module_section(code, T, lang, chapter_titles(code, built_ids))   # Kertauspakkasi: the student's deck of the module (teacher 2026-11-03); order deck, exam, Haastetehtävät (teacher 2026-11-05)
                 + (f'<section><h2>{T("exam.title")}</h2><p>{T("exam.course_lead")}</p><ul class="lessons practice-link"><li class="live">'
@@ -1207,7 +1225,7 @@ link_languages()
 i18n.set_lang(i18n.SOURCE)
 # Cache busting (teacher 2026-11-03: a page fetched just after a deploy showed new HTML with yesterday's cached site.css):
 # every link to a shared stylesheet or script carries ?v=<first 8 hex of its SHA-256>, so a changed file is a new URL.
-SHARED = ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js")
+SHARED = ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js")
 _ver = {f: hashlib.sha256((SITE / f).read_bytes()).hexdigest()[:8] for f in SHARED if (SITE / f).is_file()}
 _ref = re.compile(r'((?:href|src)="(?:\.\./)*)(' + "|".join(re.escape(f) for f in _ver) + r')(?:\?v=[0-9a-f]*)?"')
 for _page in SITE.rglob("*.html"):
@@ -1215,7 +1233,7 @@ for _page in SITE.rglob("*.html"):
     _old = _page.read_text(); _new = _ref.sub(lambda m: f'{m[1]}{m[2]}?v={_ver[m[2]]}"', _old)
     if _new != _old: _page.write_text(_new)
 if SITE.name == "site.tmp":                      # check the render, then swap it in; the old site comes back if the swap fails
-    expected += ["site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js"] + card_files + assets
+    expected += ["site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js"] + card_files + assets
     broken = [n for n in expected if not (SITE / n).is_file() or (SITE / n).stat().st_size == 0]
     if broken or not (SITE / "vendor").is_dir(): sys.exit(f"build check failed, site/ left unchanged: missing or empty {broken or ['vendor/']}")
     old = ROOT / "site.old"

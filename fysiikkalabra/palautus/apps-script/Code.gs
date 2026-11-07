@@ -192,7 +192,7 @@ function rlCheckItem_(it, where, deep) {
     return { type: 'text', text: it.text };
   }
   if (it.type === 'math') {
-    only(['type', 'latex', 'png', 'w', 'h']);
+    only(['type', 'latex', 'png', 'svg', 'w', 'h']);
     if (typeof it.latex !== 'string' || !it.latex.trim() || it.latex.length > RL_LIMITS.latex) throw rlError_(where + ': virheellinen kaava');
     var out = { type: 'math', latex: it.latex };
     if (it.png !== undefined) {
@@ -202,6 +202,13 @@ function rlCheckItem_(it, where, deep) {
         if (!mi || mi.mime !== 'image/png') throw rlError_(where + ': kaavakuva ei ole PNG-kuva');
       } else if (typeof it.png !== 'string' || it.png.length > RL_LIMITS.mathPng * 1.4) throw rlError_(where + ': kaavakuva on liian suuri');
       out.png = it.png; out.w = it.w; out.h = it.h;
+    }
+    // svg: työtiedostossa kaava on vain kerran, editorin MathJax-SVG:nä (palautus.js sref; 7.11.2026), PNG:tä ei ole
+    if (it.svg !== undefined) {
+      if (typeof it.svg !== 'string' || !/^[A-Za-z0-9+\/=]+$/.test(it.svg) || it.svg.length > RL_LIMITS.mathPng * 1.4) throw rlError_(where + ': kaavakuva on virheellinen');
+      if (deep && !/^\s*(<\?xml[^>]*>\s*)?<svg[\s>]/.test(Utilities.base64Decode(it.svg.slice(0, 200)).map(function (c) { return String.fromCharCode(c & 255); }).join(''))) throw rlError_(where + ': kaavakuva ei ole SVG-kuva');
+      if (it.w !== undefined && !(it.w > 0 && it.w <= 3000 && it.h > 0 && it.h <= 1000)) throw rlError_(where + ': kaavakuvan koko on virheellinen');
+      out.svg = it.svg; if (it.w !== undefined) { out.w = it.w; out.h = it.h; }
     }
     return out;
   }
@@ -382,6 +389,15 @@ function rlValidateWork_(data, deep) {
     }
     throw rlError_(where + ': kuvaa ei löydy tiedostosta');
   };
+  // k:s kaava (MathJax-SVG) ratkaisun HTML:ssä: työtiedoston kaava on vain siellä (sref), ei PNG:nä luvun vastauksissa
+  var formula = function (task, k, where) {
+    var tags = String(html[task] || '').match(/<img\b[^>]*>/gi) || [], n = 0;
+    for (var i = 0; i < tags.length; i++) {
+      var m = /\ssrc="data:image\/svg\+xml;base64,([A-Za-z0-9+\/=]+)"/.exec(tags[i]);
+      if (m && n++ === k) return m[1];
+    }
+    throw rlError_(where + ': kaavaa ei löydy tiedostosta');
+  };
   var progress = data.progress === null || data.progress === undefined ? null : rlCheckProgress_(data.progress);
   var seen = Object.create(null), parts = [], images = 0;
   data.chapters.forEach(function (c, i) {
@@ -394,6 +410,12 @@ function rlValidateWork_(data, deep) {
       if (!a || typeof a !== 'object' || !Array.isArray(a.content)) return a;
       var t = rlTasks_(c.chapter)[a.task], where = 'tehtävä ' + (t ? t.number : String(a.task).slice(0, 40));
       return { task: a.task, status: a.status, responses: a.responses, content: a.content.map(function (it) {
+        if (it && it.type === 'math' && it.sref !== undefined) {
+          if (typeof it.sref !== 'number' || it.sref % 1 || it.sref < 0) throw rlError_(where + ': virheellinen kaava');
+          var fm = { type: 'math', latex: it.latex, svg: formula(a.task, it.sref, where) };
+          if (it.w !== undefined) { fm.w = it.w; fm.h = it.h; }
+          return fm;
+        }
         if (!it || it.type !== 'image' || it.ref === undefined) return it;
         if (typeof it.ref !== 'number' || it.ref % 1 || it.ref < 0) throw rlError_(where + ': virheellinen kuva');
         images++;
