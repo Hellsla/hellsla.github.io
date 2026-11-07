@@ -2,57 +2,57 @@
  "FY1-en": {
   "course": "FY1",
   "lang": "en",
-  "pages": 104,
-  "bytes": 2460569,
+  "pages": 80,
+  "bytes": 2363750,
   "date": "2026-11-07"
  },
  "FY1-fi": {
   "course": "FY1",
   "lang": "fi",
-  "pages": 104,
-  "bytes": 2424539,
+  "pages": 80,
+  "bytes": 2332787,
   "date": "2026-11-07"
  },
  "FY2-en": {
   "course": "FY2",
   "lang": "en",
-  "pages": 96,
-  "bytes": 2386311,
+  "pages": 76,
+  "bytes": 2311865,
   "date": "2026-11-07"
  },
  "FY2-fi": {
   "course": "FY2",
   "lang": "fi",
-  "pages": 96,
-  "bytes": 2362034,
+  "pages": 76,
+  "bytes": 2287201,
   "date": "2026-11-07"
  },
  "FY3-en": {
   "course": "FY3",
   "lang": "en",
-  "pages": 204,
-  "bytes": 4619534,
+  "pages": 156,
+  "bytes": 4267879,
   "date": "2026-11-07"
  },
  "FY3-fi": {
   "course": "FY3",
   "lang": "fi",
-  "pages": 200,
-  "bytes": 4593112,
+  "pages": 152,
+  "bytes": 4245944,
   "date": "2026-11-07"
  },
  "FY4-en": {
   "course": "FY4",
   "lang": "en",
-  "pages": 204,
-  "bytes": 4052615,
+  "pages": 160,
+  "bytes": 3873172,
   "date": "2026-11-07"
  },
  "FY4-fi": {
   "course": "FY4",
   "lang": "fi",
-  "pages": 200,
-  "bytes": 4000077,
+  "pages": 156,
+  "bytes": 3818793,
   "date": "2026-11-07"
  }
 }
