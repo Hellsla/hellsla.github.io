@@ -4,7 +4,10 @@
   "learn": [
     "kuvaamaan äänenkorkeuden ja sointivärin taajuuden ja harmonisen sarjan avulla sekä luokittelemaan infra- ja ultraäänen.",
     "tekemään äänestä FFT-kuvaajan ja lukemaan siitä perustaajuuden ja yläsävelet.",
-    "selittämään huojunnan ja Dopplerin ilmiön sekä laskemaan kuullun taajuuden."
+    "selittämään huojunnan ja Dopplerin ilmiön."
+  ],
+  "deepen": [
+    "laskemalla kuullun taajuuden Dopplerin ilmiön kaavoilla."
   ],
   "prior": [
     "Ääni on pitkittäinen aalto, ja aallon nopeus on $v = f\\lambda$ (luku *Aaltojen synty ja eteneminen*)",
@@ -307,6 +310,16 @@
       ]
     },
     {
+      "id": "lisatieto-doppler",
+      "stage": "selita",
+      "type": "theory",
+      "title": "Lisätiedoksi: Dopplerin ilmiön laskukaavat",
+      "sections": [
+        "Lisätiedoksi: Dopplerin ilmiön laskukaavat"
+      ],
+      "optional": true
+    },
+    {
       "id": "pohdi",
       "stage": "selita",
       "type": "reflect",
@@ -324,13 +337,15 @@
       "type": "theory",
       "sections": [
         "Esimerkki"
-      ]
+      ],
+      "title": "Syventävä: esimerkki",
+      "optional": true
     },
     {
       "id": "virhe",
       "stage": "sovella",
       "type": "choice",
-      "title": "Etsi virhe",
+      "title": "Syventävä: etsi virhe",
       "optional": true,
       "prompt": "Mopo lähestyy kuulijaa nopeudella $20{,}0\\,\\text{m/s}$, ja sen äänimerkin taajuus on $620\\,\\text{Hz}$. Opiskelija laskee kuullun taajuuden näin:\n\n$$\\begin{aligned} f &= f_0 \\cdot \\frac{v}{v + v_\\text{s}} \\\\ &= 620\\,\\text{Hz} \\cdot \\frac{340\\,\\text{m/s}}{360\\,\\text{m/s}} \\\\ &\\approx 586\\,\\text{Hz} \\end{aligned}$$\n\nMissä on virhe?",
       "choices": [
@@ -357,7 +372,7 @@
       "id": "siirto",
       "stage": "sovella",
       "type": "numeric",
-      "title": "Sovella uuteen tilanteeseen",
+      "title": "Syventävä: sovella uuteen tilanteeseen",
       "optional": true,
       "prompt": "Opiskelija pyörittää narun päähän sidottua summeria vaakasuorassa ympyrässä, jonka säde on $1{,}00\\,\\text{m}$. Yksi kierros kestää $0{,}500\\,\\text{s}$, ja summerin taajuus on $2{,}00\\,\\text{kHz}$. Kaukana samassa tasossa seisova kuulija kuulee äänen korkeuden vaihtelevan. Mikä on suurin taajuus, jonka hän kuulee? Ilma on tyyntä, ja äänen nopeus on $340\\,\\text{m/s}$. Vastaa hertseinä.",
       "answer": 2077,

@@ -515,8 +515,11 @@ def exercise_html(e, solution_html, read=None, core=False, num=None):
     fig = figcat.figure_html(e["figure"], T.lang, read) if e.get("figure") else ""   # a figure by its id (scripts/figcat.py)
     fig = (data_table(e["data"]) if e.get("data") else "") + fig + (exercise_choice(e) if e.get("choices") or e.get("statements") or e.get("order") else "")
     tag = f'<span class="ex-core">{T("lesson.core_exercise")}</span>' if core else ""
+    text = e["text"]
+    ext = T("lesson.extension_exercise") + "."   # "Syventävä tehtävä." at the start of a task's text: a tag, never a core task (teacher 2026-11-07, LOPS 2019)
+    if text.startswith(ext): text, tag = text[len(ext):].lstrip(), tag + f'<span class="ex-core ex-ext">{T("lesson.extension_exercise")}</span>'
     written = "" if numeric else ' data-written="1"'   # a written task opens its answer once the student has written in the editor (lesson.js part 8; the tick "Olen tehnyt ratkaisun" removed, teacher 2026-11-06)
-    return (f'<li id="{e["id"]}"{" class=" + chr(34) + "core" + chr(34) if core else ""}{written}' + (f' data-num="{num}">' + number_label(num) if num else ">") + f'{tag}{exercise_text(nbsp_units(e["text"]), f"{e['id']}-q")}{fig}{check}'
+    return (f'<li id="{e["id"]}"{" class=" + chr(34) + "core" + chr(34) if core else ""}{written}' + (f' data-num="{num}">' + number_label(num) if num else ">") + f'{tag}{exercise_text(nbsp_units(text), f"{e['id']}-q")}{fig}{check}'
             f'<details class="answer"><summary>{T("lesson.answer")}</summary><p>{ans}</p></details>{sol}</li>')
 
 

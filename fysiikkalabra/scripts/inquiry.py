@@ -172,6 +172,9 @@ def validate(folder, inquiry, lesson_md):
         for i, x in enumerate(learn):
             if len(x.split()) > 22: E(f"learn[{i}]: {len(x.split())} words; a goal is one short line (at most about 20 words), the explanation belongs to the theory")
         for m in objectives.check(learn, courses.lang_of(folder))[0]: E(m)
+    deepen = inquiry.get("deepen")   # "Voit myös syventää osaamistasi": the goals of the chapter's Lisätiedoksi and Syventävä parts (teacher 2026-11-07, LOPS 2019)
+    if deepen is not None and not (isinstance(deepen, list) and 1 <= len(deepen) <= 2 and all(isinstance(x, str) and x.strip() and len(x.split()) <= 22 for x in deepen)):
+        E("deepen: one or two short goals of the extension parts, each completing the heading \"Voit myös syventää osaamistasi\"")
     prior = inquiry.get("prior", [])
     if not isinstance(prior, list) or not all(isinstance(x, str) and x.strip() for x in prior): E("prior: a list of short strings (what the student already knows, with the lesson it comes from)")
     acts = inquiry.get("activities")
@@ -582,6 +585,8 @@ def intro_html(intro, inquiry, n_opt, md):
     head, media = (intro[:m.start()], intro[m.start():]) if m else (intro, "")
     learn = inquiry.get("learn")
     goals = ("<ul>" + "".join(f"<li>{inline(md, x)}</li>" for x in learn) + "</ul>") if learn else f'<p>{inline(md, inquiry["contribution"])}</p>'
+    deepen = inquiry.get("deepen")
+    goals += (f'<h2 class="intro-h deepen-h">{T("inquiry.deepen")}</h2><ul class="deepen">' + "".join(f"<li>{inline(md, x)}</li>" for x in deepen) + "</ul>") if deepen else ""
     aside = f'<div class="learn"><h2 class="intro-h">{T("inquiry.learn")}</h2>{goals}</div>'
     prior = inquiry.get("prior") or []
     more = f'<div class="prior"><h2 class="intro-h">{T("inquiry.prior")}</h2><ul>' + "".join(prior_html(x, md) for x in prior) + "</ul></div>" if prior else ""
@@ -661,6 +666,13 @@ def example_name(lid):
     return names.get(lang, {}).get(lid) or names.get("fi", {}).get(lid, "")
 
 
+def extension_kind(title):
+    """"Syventävä" or "Lisätiedoksi" (lang inquiry.extension, inquiry.further) when an optional box's title starts
+    with it, else None. LOPS 2019 extension material (teacher 2026-11-07): the box's tag names it, not Valinnainen."""
+    m = re.match(r"\s*([^:]+?)\s*:", title or "")
+    return m.group(1) if m and m.group(1) in (T("inquiry.extension"), T("inquiry.further")) else None
+
+
 def task_titles(lid, by_stage, md):
     """{activity id: shown title} for the boxes of Esimerkit and Itsearvio (teacher 2026-11-06).
     Esimerkit: every box is a guided example, "Esimerkki 1: Paineen nollakohta", "Esimerkki 2: Etsi virhe", numbered
@@ -676,6 +688,8 @@ def task_titles(lid, by_stage, md):
         if not (worked or t in CARD_TYPES or (t == "theory" and a.get("title"))): continue
         n += 1
         name = inline(md, example_name(lid)) if worked else esc(re.sub(r"^(?:Valinnainen|Optional)\s*:\s*", "", a.get("title") or T(f"inquiry.optional_{t}")))
+        kind = extension_kind(a.get("title")) if a.get("optional") and not worked else None
+        if kind: name = esc(a["title"].split(":", 1)[1].strip())   # the box's tag says Syventävä / Lisätiedoksi
         name = name[:1].upper() + name[1:]
         out[a["id"]] = T("inquiry.example_n", n=n) + (f": {name}" if name else "")
     for a in by_stage["tarkista"]:
@@ -842,6 +856,9 @@ def render(folder, inquiry, parts, md):
             name = shown.get(aid) or esc(a.get("title") or T(f"inquiry.optional_{t}"))   # required part opened later (its own tag, e.g. "Lesson 2");
             name = name[:1].upper() + name[1:]          # Palaa ennusteisiisi: closed until opened, required or not (teacher 2026-11-06)
             tag = esc(a["fold"]) if a.get("fold") else T("inquiry.optional") if a.get("optional") else ""
+            kind = extension_kind(a.get("title")) if a.get("optional") else None   # "Syventävä: …", "Lisätiedoksi: …" name the box's kind instead of Valinnainen (teacher 2026-11-07)
+            if kind:
+                tag, name = esc(kind), re.sub(rf"(^|:\s*){re.escape(esc(kind))}\s*:\s*(\S)", lambda m: m.group(1) + m.group(2).upper(), name, count=1)
             return (f'<details class="opt{" fold" if a.get("fold") else ""}" data-type="{t}"><summary>' + (f'<span class="opt-tag">{tag}</span> ' if tag else "") + f'{name}</summary>'
                     f'<div class="activity act-{t}" id="{esc(aid)}" data-type="{t}">{content}{hints}</div></details>')
         card = " task-card" if t in CARD_TYPES else ""

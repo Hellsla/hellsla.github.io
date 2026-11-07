@@ -27,7 +27,7 @@
     {
       "id": "fy5-14-L1-04",
       "level": 1,
-      "text": "An ice-cream van drives straight away from a listener at $15.0\\,\\text{m/s}$ and plays a melody, one note of which is $415\\,\\text{Hz}$. What frequency of this note does a listener at rest hear? The air is calm, and the speed of sound is $340\\,\\text{m/s}$.",
+      "text": "Extension task. An ice-cream van drives straight away from a listener at $15.0\\,\\text{m/s}$ and plays a melody, one note of which is $415\\,\\text{Hz}$. What frequency of this note does a listener at rest hear? The air is calm, and the speed of sound is $340\\,\\text{m/s}$.",
       "answer": 397,
       "unit": "Hz",
       "tolerance": 0.02
@@ -169,8 +169,7 @@
     {
       "id": "fy5-14-L2-03",
       "level": 2,
-      "core": true,
-      "text": "A driver drives at $90.0\\,\\text{km/h}$ straight towards a junction where a stationary warning siren sounds at $650\\,\\text{Hz}$. What frequency does the driver hear? The air is calm, and the speed of sound is $340\\,\\text{m/s}$.",
+      "text": "Extension task. A driver drives at $90.0\\,\\text{km/h}$ straight towards a junction where a stationary warning siren sounds at $650\\,\\text{Hz}$. What frequency does the driver hear? The air is calm, and the speed of sound is $340\\,\\text{m/s}$.",
       "answer": 698,
       "unit": "Hz",
       "tolerance": 0.003
@@ -178,7 +177,7 @@
     {
       "id": "fy5-14-L2-04",
       "level": 2,
-      "text": "The engine of a racing car sounds at $425\\,\\text{Hz}$ in the pit at rest. When the car drives at the same engine speed straight away from a spectator standing on the extension of the straight, the spectator hears the frequency $398\\,\\text{Hz}$. How fast is the car moving? The air is calm, and the speed of sound is $340\\,\\text{m/s}$.",
+      "text": "Extension task. The engine of a racing car sounds at $425\\,\\text{Hz}$ in the pit at rest. When the car drives at the same engine speed straight away from a spectator standing on the extension of the straight, the spectator hears the frequency $398\\,\\text{Hz}$. How fast is the car moving? The air is calm, and the speed of sound is $340\\,\\text{m/s}$.",
       "answer": 23,
       "unit": "m/s",
       "tolerance": 0.03
@@ -186,7 +185,7 @@
     {
       "id": "fy5-14-L2-05",
       "level": 2,
-      "text": "A student standing beside the road records the sound of the horn of a car driving straight towards him. When the car is at rest, the frequency of the horn is $392\\,\\text{Hz}$. As the car approaches, the frequency is measured four times (example data).\n\nThe car drives at a steady speed. The air is calm, and the speed of sound is $340\\,\\text{m/s}$. How fast is the car moving according to the mean of the measurements?",
+      "text": "Extension task. A student standing beside the road records the sound of the horn of a car driving straight towards him. When the car is at rest, the frequency of the horn is $392\\,\\text{Hz}$. As the car approaches, the frequency is measured four times (example data).\n\nThe car drives at a steady speed. The air is calm, and the speed of sound is $340\\,\\text{m/s}$. How fast is the car moving according to the mean of the measurements?",
       "kind": [
         "data"
       ],
@@ -270,7 +269,7 @@
     {
       "id": "fy5-14-L2-07",
       "level": 2,
-      "text": "A student solves a problem: a car drives at $30.0\\,\\text{m/s}$ straight towards a listener at rest and sounds a horn with a frequency of $500\\,\\text{Hz}$. The speed of sound is $340\\,\\text{m/s}$.\n\nThe student uses the formula $f = f_0 \\cdot \\tfrac{v + v_\\text{s}}{v}$ and gets the frequency heard $544\\,\\text{Hz}$.\n\nWhat is the error in the student's solution? Calculate the correct frequency heard.",
+      "text": "Extension task. A student solves a problem: a car drives at $30.0\\,\\text{m/s}$ straight towards a listener at rest and sounds a horn with a frequency of $500\\,\\text{Hz}$. The speed of sound is $340\\,\\text{m/s}$.\n\nThe student uses the formula $f = f_0 \\cdot \\tfrac{v + v_\\text{s}}{v}$ and gets the frequency heard $544\\,\\text{Hz}$.\n\nWhat is the error in the student's solution? Calculate the correct frequency heard.",
       "kind": [
         "error"
       ],
@@ -283,7 +282,7 @@
     {
       "id": "fy5-14-L3-01",
       "level": 3,
-      "text": "A listener stands right next to a straight road and measures with a phone app the frequency of the siren of a passing ambulance: $476\\,\\text{Hz}$ as the car approaches and $404\\,\\text{Hz}$ as it moves away. The speed of the ambulance is constant, but the siren's own frequency is not known.\n\nHow fast is the ambulance moving? The air is calm, and the speed of sound is $340\\,\\text{m/s}$.",
+      "text": "Extension task. A listener stands right next to a straight road and measures with a phone app the frequency of the siren of a passing ambulance: $476\\,\\text{Hz}$ as the car approaches and $404\\,\\text{Hz}$ as it moves away. The speed of the ambulance is constant, but the siren's own frequency is not known.\n\nHow fast is the ambulance moving? The air is calm, and the speed of sound is $340\\,\\text{m/s}$.",
       "answer": 28,
       "unit": "m/s",
       "tolerance": 0.02
@@ -307,7 +306,7 @@
     {
       "id": "fy5-14-L3-04",
       "level": 3,
-      "text": "A cardiologist measures the speed of blood flow with an ultrasound device (example data). The probe emits ultrasound with a frequency of $f_0 = 4.00\\,\\text{MHz}$ towards blood that flows straight towards the probe. The red blood cells reflect the sound back to the probe. The sound travels in tissue at $1540\\,\\text{m/s}$.\n\nThe probe measures the change in the frequency of the reflected sound, $\\Delta f = f - f_0$, at different moments of the heartbeat.\n\nWhat is the greatest measured speed of the blood? Treat the red blood cell first as a moving listener that receives the sound of the probe, and then as a moving source that emits the same frequency back. Justify briefly why the measured change is almost double compared with one Doppler shift.",
+      "text": "Extension task. A cardiologist measures the speed of blood flow with an ultrasound device (example data). The probe emits ultrasound with a frequency of $f_0 = 4.00\\,\\text{MHz}$ towards blood that flows straight towards the probe. The red blood cells reflect the sound back to the probe. The sound travels in tissue at $1540\\,\\text{m/s}$.\n\nThe probe measures the change in the frequency of the reflected sound, $\\Delta f = f - f_0$, at different moments of the heartbeat.\n\nWhat is the greatest measured speed of the blood? Treat the red blood cell first as a moving listener that receives the sound of the probe, and then as a moving source that emits the same frequency back. Justify briefly why the measured change is almost double compared with one Doppler shift.",
       "kind": [
         "data",
         "model"

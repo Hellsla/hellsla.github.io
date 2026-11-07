@@ -27,7 +27,7 @@
     {
       "id": "fy5-14-L1-04",
       "level": 1,
-      "text": "Jäätelöauto ajaa suoraan poispäin kuulijasta nopeudella $15{,}0\\,\\text{m/s}$ ja soittaa melodiaa, jonka yksi sävel on $415\\,\\text{Hz}$. Minkä taajuuden paikallaan oleva kuulija kuulee tästä sävelestä? Ilma on tyyntä, ja äänen nopeus on $340\\,\\text{m/s}$.",
+      "text": "Syventävä tehtävä. Jäätelöauto ajaa suoraan poispäin kuulijasta nopeudella $15{,}0\\,\\text{m/s}$ ja soittaa melodiaa, jonka yksi sävel on $415\\,\\text{Hz}$. Minkä taajuuden paikallaan oleva kuulija kuulee tästä sävelestä? Ilma on tyyntä, ja äänen nopeus on $340\\,\\text{m/s}$.",
       "answer": 397,
       "unit": "Hz",
       "tolerance": 0.02
@@ -169,8 +169,7 @@
     {
       "id": "fy5-14-L2-03",
       "level": 2,
-      "core": true,
-      "text": "Autoilija ajaa nopeudella $90{,}0\\,\\text{km/h}$ suoraan kohti risteystä, jossa paikallaan oleva hälytyssireeni soi taajuudella $650\\,\\text{Hz}$. Minkä taajuuden autoilija kuulee? Ilma on tyyntä, ja äänen nopeus on $340\\,\\text{m/s}$.",
+      "text": "Syventävä tehtävä. Autoilija ajaa nopeudella $90{,}0\\,\\text{km/h}$ suoraan kohti risteystä, jossa paikallaan oleva hälytyssireeni soi taajuudella $650\\,\\text{Hz}$. Minkä taajuuden autoilija kuulee? Ilma on tyyntä, ja äänen nopeus on $340\\,\\text{m/s}$.",
       "answer": 698,
       "unit": "Hz",
       "tolerance": 0.003
@@ -178,7 +177,7 @@
     {
       "id": "fy5-14-L2-04",
       "level": 2,
-      "text": "Kilpa-auton moottori soi varikolla paikallaan taajuudella $425\\,\\text{Hz}$. Kun auto ajaa samalla kierrosluvulla suoraan poispäin katsojasta, joka seisoo radan suoran jatkeella, katsoja kuulee taajuuden $398\\,\\text{Hz}$. Kuinka suuri on auton nopeus? Ilma on tyyntä, ja äänen nopeus on $340\\,\\text{m/s}$.",
+      "text": "Syventävä tehtävä. Kilpa-auton moottori soi varikolla paikallaan taajuudella $425\\,\\text{Hz}$. Kun auto ajaa samalla kierrosluvulla suoraan poispäin katsojasta, joka seisoo radan suoran jatkeella, katsoja kuulee taajuuden $398\\,\\text{Hz}$. Kuinka suuri on auton nopeus? Ilma on tyyntä, ja äänen nopeus on $340\\,\\text{m/s}$.",
       "answer": 23,
       "unit": "m/s",
       "tolerance": 0.03
@@ -186,7 +185,7 @@
     {
       "id": "fy5-14-L2-05",
       "level": 2,
-      "text": "Tien vieressä seisova opiskelija nauhoittaa suoraan häntä kohti ajavan auton torven ääntä. Kun auto seisoo, torven taajuus on $392\\,\\text{Hz}$. Auton lähestyessä taajuus mitataan neljä kertaa (esimerkkiaineisto).\n\nAuto ajaa tasaisella nopeudella. Ilma on tyyntä, ja äänen nopeus on $340\\,\\text{m/s}$. Kuinka suuri on auton nopeus mittausten keskiarvon mukaan?",
+      "text": "Syventävä tehtävä. Tien vieressä seisova opiskelija nauhoittaa suoraan häntä kohti ajavan auton torven ääntä. Kun auto seisoo, torven taajuus on $392\\,\\text{Hz}$. Auton lähestyessä taajuus mitataan neljä kertaa (esimerkkiaineisto).\n\nAuto ajaa tasaisella nopeudella. Ilma on tyyntä, ja äänen nopeus on $340\\,\\text{m/s}$. Kuinka suuri on auton nopeus mittausten keskiarvon mukaan?",
       "kind": [
         "data"
       ],
@@ -270,7 +269,7 @@
     {
       "id": "fy5-14-L2-07",
       "level": 2,
-      "text": "Opiskelija ratkaisee tehtävän: auto ajaa nopeudella $30{,}0\\,\\text{m/s}$ suoraan kohti paikallaan olevaa kuulijaa ja soittaa torvea, jonka taajuus on $500\\,\\text{Hz}$. Äänen nopeus on $340\\,\\text{m/s}$.\n\nOpiskelija käyttää kaavaa $f = f_0 \\cdot \\tfrac{v + v_\\text{s}}{v}$ ja saa kuulluksi taajuudeksi $544\\,\\text{Hz}$.\n\nMikä virhe opiskelijan ratkaisussa on? Laske oikea kuultu taajuus.",
+      "text": "Syventävä tehtävä. Opiskelija ratkaisee tehtävän: auto ajaa nopeudella $30{,}0\\,\\text{m/s}$ suoraan kohti paikallaan olevaa kuulijaa ja soittaa torvea, jonka taajuus on $500\\,\\text{Hz}$. Äänen nopeus on $340\\,\\text{m/s}$.\n\nOpiskelija käyttää kaavaa $f = f_0 \\cdot \\tfrac{v + v_\\text{s}}{v}$ ja saa kuulluksi taajuudeksi $544\\,\\text{Hz}$.\n\nMikä virhe opiskelijan ratkaisussa on? Laske oikea kuultu taajuus.",
       "kind": [
         "error"
       ],
@@ -283,7 +282,7 @@
     {
       "id": "fy5-14-L3-01",
       "level": 3,
-      "text": "Kuulija seisoo aivan suoran tien vieressä ja mittaa puhelimen sovelluksella ohi ajavan ambulanssin sireenin taajuuden: auton lähestyessä $476\\,\\text{Hz}$ ja sen loitotessa $404\\,\\text{Hz}$. Ambulanssin nopeus on vakio, mutta sireenin omaa taajuutta ei tiedetä.\n\nKuinka suuri on ambulanssin nopeus? Ilma on tyyntä, ja äänen nopeus on $340\\,\\text{m/s}$.",
+      "text": "Syventävä tehtävä. Kuulija seisoo aivan suoran tien vieressä ja mittaa puhelimen sovelluksella ohi ajavan ambulanssin sireenin taajuuden: auton lähestyessä $476\\,\\text{Hz}$ ja sen loitotessa $404\\,\\text{Hz}$. Ambulanssin nopeus on vakio, mutta sireenin omaa taajuutta ei tiedetä.\n\nKuinka suuri on ambulanssin nopeus? Ilma on tyyntä, ja äänen nopeus on $340\\,\\text{m/s}$.",
       "answer": 28,
       "unit": "m/s",
       "tolerance": 0.02
@@ -307,7 +306,7 @@
     {
       "id": "fy5-14-L3-04",
       "level": 3,
-      "text": "Sydänlääkäri mittaa ultraäänilaitteella veren virtausnopeutta (esimerkkiaineisto). Anturi lähettää ultraääntä, jonka taajuus on $f_0 = 4{,}00\\,\\text{MHz}$, kohti verta, joka virtaa suoraan kohti anturia. Veren punasolut heijastavat ääntä takaisin anturiin. Ääni etenee kudoksessa nopeudella $1540\\,\\text{m/s}$.\n\nAnturi mittaa heijastuneen äänen taajuuden muutoksen $\\Delta f = f - f_0$ sydämen sykkeen eri hetkinä.\n\nMikä on veren suurin mitattu virtausnopeus? Käsittele punasolua ensin liikkuvana kuulijana, joka vastaanottaa anturin äänen, ja sitten liikkuvana lähteenä, joka lähettää saman taajuuden takaisin. Perustele lyhyesti, miksi mitattu muutos on lähes kaksinkertainen yhteen Doppler-siirtymään verrattuna.",
+      "text": "Syventävä tehtävä. Sydänlääkäri mittaa ultraäänilaitteella veren virtausnopeutta (esimerkkiaineisto). Anturi lähettää ultraääntä, jonka taajuus on $f_0 = 4{,}00\\,\\text{MHz}$, kohti verta, joka virtaa suoraan kohti anturia. Veren punasolut heijastavat ääntä takaisin anturiin. Ääni etenee kudoksessa nopeudella $1540\\,\\text{m/s}$.\n\nAnturi mittaa heijastuneen äänen taajuuden muutoksen $\\Delta f = f - f_0$ sydämen sykkeen eri hetkinä.\n\nMikä on veren suurin mitattu virtausnopeus? Käsittele punasolua ensin liikkuvana kuulijana, joka vastaanottaa anturin äänen, ja sitten liikkuvana lähteenä, joka lähettää saman taajuuden takaisin. Perustele lyhyesti, miksi mitattu muutos on lähes kaksinkertainen yhteen Doppler-siirtymään verrattuna.",
       "kind": [
         "data",
         "model"
