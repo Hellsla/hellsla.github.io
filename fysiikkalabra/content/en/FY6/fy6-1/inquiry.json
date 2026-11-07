@@ -345,7 +345,7 @@
         {
           "text": "The wire is already full of free electrons, which start moving throughout the circuit almost immediately.",
           "correct": true,
-          "feedback": "Correct. When the circuit is closed, an electromagnetic disturbance propagates along the wire very quickly but at a finite speed. The electrons of the filament itself start to move almost immediately, and the lamp does not have to wait for electrons coming from the battery. In a short circuit the delay is so small that the lamp appears to light at once."
+          "feedback": "Correct. When the circuit is closed, an electromagnetic disturbance propagates along the wire very quickly but at a finite speed. The electrons of the filament itself start to move almost immediately, and the lamp does not have to wait for electrons coming from the battery. When the wires are only a few metres long, the delay is so small that the lamp appears to light at once."
         },
         {
           "text": "The electrons travel from the battery to the lamp at nearly the speed of light when the circuit is closed.",

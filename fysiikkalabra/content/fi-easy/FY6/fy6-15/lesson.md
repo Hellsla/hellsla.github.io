@@ -356,7 +356,7 @@ Suojausluokan III laite toimii pienellä suojajännitteellä. Se on enintään $
 </svg>
 
 ### Vikavirtasuoja suojaa ihmistä
-Sulake ei huomaa ihmisen kautta kulkevaa virtaa. Sen nimellisvirta on ampeereja, mutta jo kymmenien milliampeerien virta kehon läpi voi olla hengenvaarallinen. Ihmistä sulake suojaa vain yhdessä suojamaadoituksen kanssa, kun vika aiheuttaa maasulun. Maasulku tarkoittaa, että virta pääsee vian takia maahan.
+Sulake ei huomaa ihmisen kautta kulkevaa virtaa. Sen nimellisvirta on ampeereja, mutta jo kymmenien milliampeerien virta kehon läpi voi olla hengenvaarallinen. Ihmistä sulake suojaa vain yhdessä suojamaadoituksen kanssa, kun vika aiheuttaa maasulun. Maasulku tarkoittaa, että vaihejohdin pääsee vian takia kosketukseen laitteen metallirungon, suojajohtimen tai maan kanssa.
 
 Ihmisen kautta kulkevan pienen virran katkaisee **vikavirtasuoja**. Se vertaa kahta virtaa: laitteeseen menevää virtaa vaihejohtimessa ja palaavaa virtaa nollajohtimessa. Ehjässä piirissä ne ovat yhtä suuret. Jos osa virrasta pääsee vian kautta maahan, esimerkiksi ihmisen kautta, palaava virta on pienempi. Kun ero ylittää laukaisuvirran, tavallisesti $30\,\text{mA}$, suoja katkaisee virran sekunnin murto-osassa. Uusissa asennuksissa pistorasiaryhmät suojataan vikavirtasuojalla. Sen testipainiketta kannattaa painaa säännöllisesti.
 
