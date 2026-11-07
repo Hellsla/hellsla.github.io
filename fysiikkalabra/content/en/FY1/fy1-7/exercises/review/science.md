@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 7e281292c53d6b9f
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 + round-3 diff since edb368de4 only)
+CONTENT-HASH: 7f32c937f097b93c
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,5 +9,6 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 + round-3 diff si
 - none
 
 ## Checked
-- no content change in this part since the previous light review: exercises.json and solutions.md are as passed in round 2; the only new change is a comment in answers.py (inq-siirto: "readings to 1 ml, stated in the task"), which changes the hash, not any value.
-- Rechecked the round-2 values: alloy (2,70*100 + 7,87*50)/150 = 4,42 g/cm3; 2,5 dm3 * 790 = 2,0 kg; 197/250 = 788 kg/m3; 8,96/2,70 = 3,32; V_Cu = 250/6,26 = 39,9 cm3.
+- L2-05 reasonableness: line (0;0)-(50,0;135) has slope 2,70; residuals +0,3, −0,5, +0,6, −0,1, +0,4 g (least squares through origin 2,705: same signs), so 'two below, three above' is right, and forced-through-origin reasoning is sound.
+- Concrete slab 0,75 m³ · 2,4 t/m³ ≈ 1,8 t; gold 19 · 100 g ≈ 1,9 kg; ethanol 0,79 · 2,5 kg ≈ 2,0 kg; Al/Cu ratio 8960 : 2700 = 3,32 between 3 and 4: all recomputed.
+- Task texts: 'Ongen lyijypaino' / 'fishing line sinker', 'ilmoitettu eri yksiköissä', added 'use the chapter's density table' to Al+Fe, Cu wire and alloy tasks: no change to data or answers.

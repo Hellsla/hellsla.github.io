@@ -28,7 +28,7 @@
 **Perustelu:** Ilman ilmanvastusta kaikki kappaleet putoavat samalla kiihtyvyydellä $g$ massasta riippumatta, joten molempien nopeus on $v = gt = 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 0{,}5\,\text{s} \approx 4{,}9\,\text{m/s}$. Ajatus, että raskas kappale putoaa nopeammin, on yleinen virhekäsitys.
 
 ### j)
-**Perustelu:** Lasketaan tiheydet samassa yksikössä $\text{g/cm}^3$. A: $40\,\text{g} : 50\,\text{cm}^3 = 0{,}80\,\text{g/cm}^3$. B: $270\,\text{g} : 100\,\text{cm}^3 = 2{,}7\,\text{g/cm}^3$. C: $0{,}50\,\text{dm}^3 = 500\,\text{cm}^3$, joten $1000\,\text{g} : 500\,\text{cm}^3 = 2{,}0\,\text{g/cm}^3$. D: $79\,\text{g} : 10\,\text{cm}^3 = 7{,}9\,\text{g/cm}^3$. Järjestys on A, C, B, D. Suurin massa ei tarkoita suurinta tiheyttä.
+**Perustelu:** Lasketaan tiheydet samassa yksikössä $\text{g/cm}^3$. A: $40\,\text{g} : 50\,\text{cm}^3 = 0{,}80\,\text{g/cm}^3$. B: $270\,\text{g} : 100\,\text{cm}^3 = 2{,}70\,\text{g/cm}^3$. C: $0{,}50\,\text{dm}^3 = 500\,\text{cm}^3$, joten $1000\,\text{g} : 500\,\text{cm}^3 = 2{,}0\,\text{g/cm}^3$. D: $79\,\text{g} : 10\,\text{cm}^3 = 7{,}9\,\text{g/cm}^3$. Järjestys on A, C, B, D. Suurin massa ei tarkoita suurinta tiheyttä.
 
 ### Yleisiä virheitä
 - Kohdassa d verrataan vain kirjaimia eikä yksiköitä, tai unohdetaan, että $\rho V$ on massa.
@@ -371,7 +371,7 @@ Elinan nopeuden suhteellinen epävarmuus on $\tfrac{0{,}2}{3{,}2} \approx 6\,\%$
 **Kaava:** $v = gt$
 **Muunnokset:** Tunnissa $3600\,\text{s}$, joten $1\,\tfrac{\text{m}}{\text{s}} = \tfrac{3600\,\text{m}}{1\,\text{h}} = 3{,}6\,\tfrac{\text{km}}{\text{h}}$.
 **Sijoitus:** $v = 9{,}7\,\tfrac{\text{m}}{\text{s}^2} \cdot 1{,}2\,\text{s} \approx 11{,}6\,\tfrac{\text{m}}{\text{s}}$ ja $11{,}6 \cdot 3{,}6\,\tfrac{\text{km}}{\text{h}} \approx 42\,\tfrac{\text{km}}{\text{h}}$
-**Vastaus:** Mallin mukaan $v \approx 42\,\text{km/h}$ (kaksi merkitsevää numeroa, kuten ajassa $1{,}2\,\text{s}$). Arvolla $9{,}81\,\text{m/s}^2$ saadaan sama tulos pyöristettynä. Ennuste on mittausalueen ulkopuolella: nopeus on lähes kolminkertainen mitattuun suurimpaan verrattuna. Koska ilmanvastus kasvaa nopeuden kasvaessa, se hidastaa palloakin enemmän kuin mittauksissa, joten todellinen nopeus on todennäköisesti jonkin verran pienempi. Ennuste on hyvä suuruusluokka-arvio.
+**Vastaus:** Mallin mukaan $v \approx 42\,\text{km/h}$ (kaksi merkitsevää numeroa, kuten ajassa $1{,}2\,\text{s}$). Arvolla $9{,}81\,\text{m/s}^2$ saadaan sama tulos pyöristettynä. Ennuste on mittausalueen ulkopuolella: nopeus on noin kolminkertainen mitattuun suurimpaan verrattuna. Koska ilmanvastus kasvaa nopeuden kasvaessa, se hidastaa palloakin enemmän kuin mittauksissa, joten todellinen nopeus on todennäköisesti jonkin verran pienempi. Ennuste on hyvä suuruusluokka-arvio.
 **Järkevyys:** Nopeus kasvaa joka sekunti noin $35\,\text{km/h}$, joten $1{,}2\,\text{s}$:ssa noin $40\,\text{km/h}$ on uskottava.
 
 ### Yleisiä virheitä

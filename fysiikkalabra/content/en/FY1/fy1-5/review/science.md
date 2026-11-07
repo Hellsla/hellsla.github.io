@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: f9fb7857e33c9c3c
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: a02ac803a2e453c3
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,4 +9,9 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368
 - none
 
 ## Checked
-- inquiry.json, lesson.md diff, Voyager d0 = 119.0 AU. Recomputed: 5 Nov 2026 -> 144.89 AU (2922 d); 15 Feb 2026 (2659 d) -> 142.56 AU from the Sun vs JPL 143.05 AU from Earth: 0.5 AU, within the ~1 AU offset, stated as such; unit conversion by substitution correct (0.0088602 AU/day).
+- Johtopäätös title "milloin paikka on verrannollinen aikaan": now physically right (position ∝ t only when s0 = 0; distance always) and agrees with the model answer and criteria
+- Järkevyys of siirto: v = 21,6 km/h = 6,0 m/s, 6,0 · 45 = 270 m, s = 120 + 270 = 390 m recomputed
+- lesson.md: "laskea nopeus paikan ja ajan osamääränä s : t" vs Δs : Δt when s0 ≠ 0 is the correct distinction; 4,0 m → 8,0 m
+- heliopause sentence ("aurinkotuuli ei enää hallitse") correct; interval notation 2,0–4,0 s
+- figures.py: only the colour of the s = s0 + vt line (HEAT → INK); geometry and numbers unchanged; sim.js: comment only; lang sims.fy1-5 "Toistonopeus"/"Replay speed" matches the inquiry text
+- en: same changes as fi, meaning preserved

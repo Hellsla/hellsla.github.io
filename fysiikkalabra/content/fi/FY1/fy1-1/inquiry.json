@@ -364,7 +364,7 @@
         {
           "text": "1 gravitaatio, 2 sähkömagneettinen, 3 vahva, 4 heikko",
           "correct": true,
-          "feedback": "Oikein. Maa ja avainnippu vetävät toisiaan gravitaation takia. Magneetin ja teräsoven välinen voima on magneettinen eli sähkömagneettinen. Ytimen osat pitää yhdessä vahvan vuorovaikutuksen jäännösvaikutus, ja neutronin muuttumisen protoniksi (beetahajoaminen) aiheuttaa heikko vuorovaikutus."
+          "feedback": "Oikein. Maa ja avainnippu vetävät toisiaan gravitaation takia. Magneetin ja teräsoven välinen voima on magneettinen eli sähkömagneettinen. Ytimen osat pitää yhdessä vahvan vuorovaikutuksen jäännösvaikutus, ja neutronin muuttumisen protoniksi (beetamiinushajoaminen eli $\\beta^{-}$-hajoaminen) aiheuttaa heikko vuorovaikutus."
         },
         {
           "text": "1 gravitaatio, 2 sähkömagneettinen, 3 gravitaatio, 4 heikko",
@@ -380,7 +380,7 @@
         },
         {
           "text": "1 gravitaatio, 2 sähkömagneettinen, 3 vahva, 4 vahva",
-          "feedback": "Kalium-40:n hajoamisessa (beetahajoaminen) neutroni muuttuu protoniksi, eli hiukkasen laji muuttuu. Tällaisen muutoksen aiheuttaa heikko vuorovaikutus. Vahva vuorovaikutus sitoo kvarkit ja ytimen osat yhteen, mutta se ei muuta neutronia protoniksi."
+          "feedback": "Kalium-40:n hajoamisessa (beetamiinushajoaminen eli $\\beta^{-}$-hajoaminen) neutroni muuttuu protoniksi, eli hiukkasen laji muuttuu. Tällaisen muutoksen aiheuttaa heikko vuorovaikutus. Vahva vuorovaikutus sitoo kvarkit ja ytimen osat yhteen, mutta se ei muuta neutronia protoniksi."
         }
       ]
     },

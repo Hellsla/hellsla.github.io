@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: ad8fb66cddb77ae3
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 4d9d133ebee00405
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,4 +9,5 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since 
 - none
 
 ## Checked
-- exercises.json, solutions.md, answers.py diff vs origin/main: $-delimiter and brace balance of every changed line, Finnish typographic style (thin space before units, nonbreaking AU:n), no notation broken.
+- solutions.md: Kaava lines merged into one sentence, g\,t spacing, Kysytty rewording; exercises.json Mars/air-resistance wording
+- Changes mirror the Finnish fix in fi; no notation, unit or decimal-comma error introduced.

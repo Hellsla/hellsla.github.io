@@ -247,7 +247,7 @@
           "feedback": "Both units are acceptable as long as they are consistent: $2700\\,\\text{kg/m}^3 = 2.70\\,\\text{g/cm}^3$. The error arises only when the units of density and volume are from different systems."
         },
         {
-          "text": "There is no error in the calculation; the piece really has a mass of thousands of kilograms.",
+          "text": "There is no error in the calculation; the piece really has a mass of hundreds of tonnes.",
           "feedback": "Estimate the result: $250\\,\\text{cm}^3$ is a quarter of a litre, so the piece is about the size of a palm. That much water would have a mass of $250\\,\\text{g}$, and aluminium is 2.7 times as dense, so the mass is about $0.7\\,\\text{kg}$."
         }
       ]
@@ -379,7 +379,7 @@
         "I mention measurement uncertainty: the result differs slightly from the table value, and the measurement of volume limits the accuracy.",
         "I mention that different substances can have almost the same density or that the piece may be an alloy."
       ],
-      "model": "Density $\\rho = m : V$ is a property of the substance: a large and a small piece of the same substance give the same result. That is why a measured density can be compared with table values. The result $8.9\\,\\text{g/cm}^3$ is very close to the value for copper, $8.96\\,\\text{g/cm}^3$, so copper is likely. The conclusion is not certain, because measurement results always contain uncertainty, especially in the volume, and because other substances or alloys may have a density close to the same value. Other tests, such as colour or magnetism, add certainty."
+      "model": "Density $\\rho = m : V$ is a property of the substance: a large and a small piece of the same substance give the same result. That is why a measured density can be compared with table values. The result $8.9\\,\\text{g/cm}^3$ is very close to the value for copper, $8.96\\,\\text{g/cm}^3$, so copper is likely. The conclusion is not certain, because measurement results always contain uncertainty, especially in the volume, and because other substances or alloys may have a density close to the same value. Other observations, such as colour or magnetism, add certainty: for example, the density of nickel ($8.91\\,\\text{g/cm}^3$) is almost the same as that of copper, but nickel is magnetic."
     },
     {
       "id": "lahtolippu",

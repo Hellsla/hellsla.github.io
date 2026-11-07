@@ -1,18 +1,18 @@
 ## fy1-5-L1-01
-**Given:** speed $v = 5.5\,\text{m/s}$, time $t = 20\,\text{s}$; the motion starts from the zero point, so $s_0 = 0$
-**Find:** distance travelled $s$ in metres
+**Given:** speed $v = 5.5\,\text{m/s}$, time $t = 20\,\text{s}$
+**Find:** distance travelled $\Delta s$ in metres
 **Principle:** The speed is constant, so the motion is uniform, and the distance is directly proportional to time.
-**Formula:** $s = s_0 + vt$, and since $s_0 = 0$, $s = vt$
+**Formula:** $\Delta s = vt$
 **Conversions:** None needed: the speed is in m/s and the time in seconds, so the product is in metres.
-**Substitution:** $s = 5.5\,\tfrac{\text{m}}{\text{s}} \cdot 20\,\text{s} = 110\,\text{m}$
+**Substitution:** $\Delta s = 5.5\,\tfrac{\text{m}}{\text{s}} \cdot 20\,\text{s} = 110\,\text{m}$
 **Answer:** $110\,\text{m}$, two significant figures as in the speed $5.5\,\text{m/s}$.
 **Reasonableness:** About $5\,\text{m}$ every second for twenty seconds is about $5 \cdot 20 = 100\,\text{m}$, and the unit $\tfrac{\text{m}}{\text{s}} \cdot \text{s} = \text{m}$ is the unit of distance.
 
 ## fy1-5-L1-02
-**Given:** distance $s = 360\,\text{m}$, time $t = 45\,\text{s}$; the motion is uniform and starts from the zero point
+**Given:** distance $\Delta s = 360\,\text{m}$, time $t = 45\,\text{s}$; the motion is uniform
 **Find:** speed $v$ in m/s
 **Principle:** In uniform motion, the speed is the distance travelled divided by the time it took.
-**Formula:** $s = vt$, so $v = \dfrac{s}{t}$
+**Formula:** $\Delta s = vt$, so $v = \dfrac{\Delta s}{t}$
 **Conversions:** None needed: the distance is in metres and the time in seconds.
 **Substitution:** $v = \dfrac{360\,\text{m}}{45\,\text{s}} = 8.0\,\tfrac{\text{m}}{\text{s}}$
 **Answer:** $8.0\,\text{m/s}$, two significant figures as in the time $45\,\text{s}$.
@@ -27,7 +27,7 @@
 **Conversions:** None needed: the distance is in metres and the time in seconds.
 **Substitution:** $v = \dfrac{20\,\text{m} - 0\,\text{m}}{8\,\text{s} - 0\,\text{s}} = 2.5\,\dfrac{\text{m}}{\text{s}}$ and $t = \dfrac{150\,\text{m}}{2.5\,\frac{\text{m}}{\text{s}}} = 60\,\text{s}$
 **Answer:** $60\,\text{s}$, that is one minute; the speed was read with two significant figures, so the answer is given with the same precision.
-**Reasonableness:** The speed $2.5\,\text{m/s}$ is about $9\,\text{km/h}$, a brisk walk or a slow jog. In the graph $10\,\text{s}$ takes $25\,\text{m}$, so $150\,\text{m}$, a distance six times as long, takes six times as long, $60\,\text{s}$.
+**Reasonableness:** The speed $2.5\,\text{m/s}$ is about $9\,\text{km/h}$, a slow jog; for a walker a very brisk pace. In the graph $10\,\text{s}$ takes $25\,\text{m}$, so $150\,\text{m}$, a distance six times as long, takes six times as long, $60\,\text{s}$.
 
 ## fy1-5-L1-04
 **Given:** $s_1 = 18\,\text{m}$ in time $t_1 = 4.0\,\text{s}$; the time asked about is $t_2 = 10\,\text{s}$; the motion starts from the starting point, so $s_0 = 0$
@@ -50,21 +50,21 @@
 **Reasonableness:** The quotients $7.0\,\text{m} : 2.0\,\text{s}$ and $21\,\text{m} : 6.0\,\text{s}$ are both $3.5\,\text{m/s}$, so the position is proportional to time and the initial position is zero. The speed $3.5\,\text{m/s}$ corresponds to slow cycling, about $13\,\text{km/h}$.
 
 ## fy1-5-L2-01
-**Given:** speed $v = 54\,\text{km/h}$, time $t = 14\,\text{s}$; the motion starts from the zero point
-**Find:** distance $s$ in metres
-**Principle:** The car drives at constant speed, so the motion is uniform and $s = vt$. The speed and the time must be in compatible units.
-**Formula:** $s = vt$
+**Given:** speed $v = 54\,\text{km/h}$, time $t = 14\,\text{s}$
+**Find:** distance $\Delta s$ in metres
+**Principle:** The car drives at constant speed, so the motion is uniform and $\Delta s = vt$. The speed and the time must be in compatible units.
+**Formula:** $\Delta s = vt$
 **Conversions:** substitute $1\,\text{km} = 1000\,\text{m}$ and $1\,\text{h} = 3600\,\text{s}$: $v = 54\,\text{km/h} = \dfrac{54\cdot1000\,\text{m}}{3600\,\text{s}} = 15\,\text{m/s}$.
-**Substitution:** $s = 15\,\tfrac{\text{m}}{\text{s}} \cdot 14\,\text{s} = 210\,\text{m}$
+**Substitution:** $\Delta s = 15\,\tfrac{\text{m}}{\text{s}} \cdot 14\,\text{s} = 210\,\text{m}$
 **Answer:** $210\,\text{m}$, two significant figures as in the speed $54\,\text{km/h}$ and the time $14\,\text{s}$.
 **Reasonableness:** The speed $54\,\text{km/h}$ is $0.9\,\text{km}$ per minute, and $14\,\text{s}$ is about $0.23\,\text{min}$, so the distance is about $0.9 \cdot 0.23\,\text{km} \approx 0.21\,\text{km} = 210\,\text{m}$.
 
 ## fy1-5-L2-02
-**Given:** speed $v = 36\,\text{km/h}$, distance $s = 4.5\,\text{km}$; the motion is uniform and starts from the zero point
+**Given:** speed $v = 36\,\text{km/h}$, distance $\Delta s = 4.5\,\text{km}$; the motion is uniform
 **Find:** time $t$ in seconds
 **Principle:** The bus drives at constant speed, so the distance is proportional to time and the time is the distance divided by the speed.
-**Formula:** $s = vt$, so $t = \dfrac{s}{v}$
-**Conversions:** $v = 36\,\text{km/h} = \dfrac{36\cdot1000\,\text{m}}{3600\,\text{s}} = 10\,\text{m/s}$ and $s = 4.5\,\text{km} = 4500\,\text{m}$.
+**Formula:** $\Delta s = vt$, so $t = \dfrac{\Delta s}{v}$
+**Conversions:** $v = 36\,\text{km/h} = \dfrac{36\cdot1000\,\text{m}}{3600\,\text{s}} = 10\,\text{m/s}$ and $\Delta s = 4.5\,\text{km} = 4500\,\text{m}$.
 **Substitution:** $t = \dfrac{4500\,\text{m}}{10\,\tfrac{\text{m}}{\text{s}}} = 450\,\text{s}$
 **Answer:** $450\,\text{s}$, two significant figures as in the data $36\,\text{km/h}$ and $4.5\,\text{km}$.
 **Reasonableness:** In kilometres and hours: $4.5\,\text{km} : 36\,\text{km/h} = 0.125\,\text{h} = 7.5\,\text{min} = 450\,\text{s}$, which is the same result.
@@ -81,11 +81,11 @@
 
 ## fy1-5-L2-04
 **Given:** time $t = 5.0\,\text{s}$, speed of sound $v = 343\,\text{m/s}$; the travel time of light is ignored
-**Find:** distance of the lightning $s$ in kilometres
-**Principle:** Sound travels at constant speed, so the distance it travels is $s = vt$. Light arrives practically at once, so the delay of the thunder is the travel time of sound over the whole distance.
-**Formula:** $s = vt$
+**Find:** distance of the lightning $\Delta s$ in kilometres
+**Principle:** Sound travels at constant speed, so the distance it travels is $\Delta s = vt$. Light arrives practically at once, so the delay of the thunder is the travel time of sound over the whole distance.
+**Formula:** $\Delta s = vt$
 **Conversions:** The distance is calculated in metres, and finally $1\,\text{km} = 1000\,\text{m}$.
-**Substitution:** $s = 343\,\tfrac{\text{m}}{\text{s}} \cdot 5.0\,\text{s} = 1715\,\text{m} = 1.7\,\text{km}$
+**Substitution:** $\Delta s = 343\,\tfrac{\text{m}}{\text{s}} \cdot 5.0\,\text{s} = 1715\,\text{m} = 1.7\,\text{km}$
 **Answer:** $1.7\,\text{km}$, two significant figures as in the time $5.0\,\text{s}$.
 **Reasonableness:** Rule of thumb: three seconds corresponds to about a kilometre, so five seconds corresponds to about $1.7\,\text{km}$. Light would travel this distance in $1715\,\text{m} : (3.0 \cdot 10^{8}\,\text{m/s}) \approx 6\,\mu\text{s}$, which is negligible compared with the delay $5.0\,\text{s}$.
 
@@ -179,7 +179,7 @@
 ## fy1-5-L3-04
 **Given:** measurement points of the table $(t;\ s)$: $(0\,\text{s};\ 0\,\text{m})$, $(5.0\,\text{s};\ 15\,\text{m})$, $(10\,\text{s};\ 30\,\text{m})$, $(15\,\text{s};\ 35\,\text{m})$, $(20\,\text{s};\ 40\,\text{m})$, $(30\,\text{s};\ 50\,\text{m})$ and $(40\,\text{s};\ 60\,\text{m})$
 **Find:** average speed $v_\text{avg}$ in the interval $5.0\text{–}35\,\text{s}$ and the reason why it is not the mean of the speeds of the parts
-**Principle:** In the graph, the points lie on two straight parts with different slopes, so a single line does not fit the whole motion. The motion is modelled piecewise: each part has its own uniform speed, and the position at the moment $35\,\text{s}$ is calculated from the model of the latter part. The average speed is the distance travelled divided by the time.
+**Principle:** In the graph, the points lie on two straight parts with different slopes, so a single line does not fit the whole motion. The motion is modelled piecewise: each part has its own uniform speed, and the position at the moment $35\,\text{s}$ is calculated from the model of the latter part. The average speed is the change in position divided by the length of the interval.
 **Reading the graph:** The points in the interval $0\text{–}10\,\text{s}$ are on the same steep line. From the moment $10\,\text{s}$ on, the line is gentler, and the points $(10\,\text{s};\ 30\,\text{m})$, $(20\,\text{s};\ 40\,\text{m})$ and $(40\,\text{s};\ 60\,\text{m})$ are on the same gentle line. So the speed changes at the moment $t = 10\,\text{s}$.
 **Formula:** speed of a part $v = \dfrac{\Delta s}{\Delta t}$, position on the gentle part $s = s_{10} + v_2 (t - 10\,\text{s})$ and average speed $v_\text{avg} = \dfrac{s(35\,\text{s}) - s(5.0\,\text{s})}{35\,\text{s} - 5.0\,\text{s}}$
 **Conversions:** None needed: the positions are in metres and the times in seconds.

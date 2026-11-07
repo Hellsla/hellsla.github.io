@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 530cc5a1ca475aac
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: c21767ab7f53b755
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- none that affect correctness
+- none
 
 ## Checked
-- diff since edb368de4 (lesson.md, inquiry.json, exit-ticket.json, figures/sim/answers): velocity arrow blue in figures.py (fy1-8 figure), slope notation (s2-s1)/(t2-t1), design-estimate rounding of 14 m and 1,7 m, source-criticism and objectivity sentences
-- numbers recomputed independently in Python; physics guardrails 1-7 on the changed passages
+- Worked example: point (5,0 s; 2,1 m) read at grid lines, v = 0,42 m/s; unchanged numbers.
+- Relative-uncertainty wording ('ei ylitä' / 'on enintään'), 'Ajanmittauksen suhteellinen epävarmuus' in the example (it is the time's uncertainty: correct), 'vastaavat ennustetta epävarmuuden rajoissa', 'useita arvoja tasavälein … ovatko pisteet suoralla': all correct statements.
+- Hypothesis feedback adds batteries to controlled variables, consistent with the text's distance-and-batteries example.

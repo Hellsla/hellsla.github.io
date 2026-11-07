@@ -284,7 +284,7 @@ If two variables change at the same time, for example the distance and the batte
 </svg>
 
 ### Planning before measuring
-Background information on the phenomenon and the methods is gathered before planning, with source criticism: judge who produced the information and why, how it is justified, whether it is up to date and whether other sources support it. Before measuring, the plan answers these questions: what is measured and with which instrument, which values are chosen for the independent variable and how many, how many repeats are made for each value, and what is kept constant. Try it out first with a trial run. It tells you whether the measurement is possible at all, and it gives a rough estimate of the result.
+Background information on the phenomenon and the methods is gathered before planning, with source criticism: judge who produced the information and why, how it is justified, whether it is up to date and whether other sources support it. Before measuring, the plan answers these questions: what is measured and with which instrument, which values are chosen for the independent variable and how many, how many repeats are made for each value, and what is kept constant. Try the plan out first with a trial run. It tells you whether the measurement is possible at all, and it gives a rough estimate of the result.
 
 Choose the measuring range so that the quantity being measured is clearly larger than the uncertainty of the measurement (see the section *Relative uncertainty and choosing the measuring range*). Choose several values at equal intervals, because one or two points do not show whether the dependence is a straight line.
 
@@ -368,7 +368,7 @@ where $\varepsilon$ is the relative uncertainty (often given as a percentage), $
 The required distance follows from the model of uniform motion $s = vt$. If the measurement is made at several distances, a straight line is fitted to the data points (chapter *Graphing and fitting a straight line*). When $t$ is on the horizontal axis and $s$ on the vertical axis, the slope of the line is the speed $v$. The shortest valid distance is the one at which the relative uncertainty just stays within the chosen limit $\varepsilon_\text{max}$. On a shorter distance the relative uncertainty exceeds this limit, and the result is too imprecise.
 
 ## Worked example
-Students investigate the motion of a toy car. In a trial run the speed of the car is about $0.42\,\text{m/s}$. The time is measured with a hand stopwatch, and the timing uncertainty is $\Delta t = 0.2\,\text{s}$. The relative uncertainty of the measurement should be at most $5.0\,\%$. What is the shortest distance the car must travel?
+Students investigate the motion of a toy car. In a trial run the speed of the car is about $0.42\,\text{m/s}$. The time is measured with a hand stopwatch, and the timing uncertainty is $\Delta t = 0.2\,\text{s}$. The relative uncertainty of the time measurement should be at most $5.0\,\%$. What is the shortest distance the car must travel?
 
 <!-- vaihe -->
 

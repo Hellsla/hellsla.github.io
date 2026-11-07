@@ -105,7 +105,7 @@
   {
    "id": "fy1-7-L1-08",
    "level": 1,
-   "text": "Onkikoukun lyijypainon tilavuus on $5{,}00\\,\\text{cm}^3$. Lyijyn tiheys on $11{,}3\\,\\text{g/cm}^3$. Kuinka suuri on painon massa? Anna vastaus grammoina.",
+   "text": "Ongen lyijypainon tilavuus on $5{,}00\\,\\text{cm}^3$. Lyijyn tiheys on $11{,}3\\,\\text{g/cm}^3$. Kuinka suuri on lyijypainon massa? Anna vastaus grammoina.",
    "kind": [
     "model"
    ],
@@ -152,7 +152,7 @@
    "id": "fy1-7-L2-05",
    "level": 2,
    "core": true,
-   "text": "Tasalaatuisesta metallista valmistettiin erikokoisia kappaleita, ja jokaisen tilavuus ja massa mitattiin. Piirrä mittauspisteistä $(V,m)$-kuvaaja ja sovita pisteisiin origon kautta kulkeva suora. Mikä on aineen tiheys yksikössä $\\text{g/cm}^3$? Mikä aine on kyseessä? Käytä oppitunnin taulukkoa.",
+   "text": "Tasalaatuisesta metallista valmistettiin erikokoisia kappaleita, ja jokaisen tilavuus ja massa mitattiin. Piirrä mittauspisteistä $(V,m)$-kuvaaja ja sovita pisteisiin origon kautta kulkeva suora. Mikä on aineen tiheys yksikössä $\\text{g/cm}^3$? Mikä aine on kyseessä? Käytä luvun tiheystaulukkoa.",
    "kind": [
     "data",
     "graph"
@@ -248,7 +248,7 @@
   {
    "id": "fy1-7-L2-08",
    "level": 2,
-   "text": "Neljän tuntemattoman kiinteän kappaleen massat ja tilavuudet on mitattu eri yksiköillä.\n\nKappale A: massa $135\\,\\text{g}$, tilavuus $50\\,\\text{cm}^3$\n\nKappale B: massa $0{,}36\\,\\text{kg}$, tilavuus $0{,}40\\,\\text{dm}^3$\n\nKappale C: massa $4{,}5\\,\\text{kg}$, tilavuus $500\\,\\text{cm}^3$\n\nKappale D: massa $120\\,\\text{g}$, tilavuus $100\\,\\text{ml}$\n\nMissä järjestyksessä kappaleet ovat tiheyden mukaan pienimmästä suurimpaan?",
+   "text": "Neljän tuntemattoman kiinteän kappaleen massat ja tilavuudet on ilmoitettu eri yksiköissä.\n\nKappale A: massa $135\\,\\text{g}$, tilavuus $50\\,\\text{cm}^3$\n\nKappale B: massa $0{,}36\\,\\text{kg}$, tilavuus $0{,}40\\,\\text{dm}^3$\n\nKappale C: massa $4{,}5\\,\\text{kg}$, tilavuus $500\\,\\text{cm}^3$\n\nKappale D: massa $120\\,\\text{g}$, tilavuus $100\\,\\text{ml}$\n\nMissä järjestyksessä kappaleet ovat tiheyden mukaan pienimmästä suurimpaan?",
    "kind": [
     "model",
     "reasoning"
@@ -285,7 +285,7 @@
   {
    "id": "fy1-7-L3-02",
    "level": 3,
-   "text": "Kappale tehdään valamalla yhteen $100\\,\\text{cm}^3$ alumiinia ja $50\\,\\text{cm}^3$ rautaa. Tilavuudet oletetaan yhteenlaskettaviksi. Kuinka suuri on kappaleen keskimääräinen tiheys? Anna vastaus yksikössä $\\text{g/cm}^3$.",
+   "text": "Kappale tehdään valamalla yhteen $100\\,\\text{cm}^3$ alumiinia ja $50\\,\\text{cm}^3$ rautaa. Tilavuudet oletetaan yhteenlaskettaviksi. Kuinka suuri on kappaleen keskimääräinen tiheys? Käytä luvun tiheystaulukkoa. Anna vastaus yksikössä $\\text{g/cm}^3$.",
    "answer": 4.42,
    "unit": "g/cm³",
    "tolerance": 0.02
@@ -293,7 +293,7 @@
   {
    "id": "fy1-7-L3-03",
    "level": 3,
-   "text": "Pyöreän kuparilangan halkaisija on $1{,}0\\,\\text{mm}$ ja massa $0{,}50\\,\\text{kg}$. Kuinka pitkä lanka on? Langan poikkileikkaus on ympyrä, jonka pinta-ala on $\\pi r^2$, ja langan tilavuus on pinta-ala kertaa pituus.",
+   "text": "Pyöreän kuparilangan halkaisija on $1{,}0\\,\\text{mm}$ ja massa $0{,}50\\,\\text{kg}$. Kuinka pitkä lanka on? Langan poikkileikkaus on ympyrä, jonka pinta-ala on $\\pi r^2$, ja langan tilavuus on pinta-ala kertaa pituus. Käytä luvun tiheystaulukkoa.",
    "answer": 71,
    "unit": "m",
    "tolerance": 0.02
@@ -314,7 +314,7 @@
   {
    "id": "fy1-7-L3-05",
    "level": 3,
-   "text": "Seoskappale on valettu kuparista ja alumiinista. Sen tilavuus on $100\\,\\text{cm}^3$ ja massa $520\\,\\text{g}$. Tilavuudet oletetaan yhteenlaskettaviksi. Kuinka monta kuutiosenttimetriä kuparia kappaleessa on? Käytä oppitunnin taulukon tiheyksiä. Perustele myös, kumpaa metallia kappaleessa on enemmän tilavuuden ja kumpaa massan mukaan.",
+   "text": "Seoskappale on valettu kuparista ja alumiinista. Sen tilavuus on $100\\,\\text{cm}^3$ ja massa $520\\,\\text{g}$. Tilavuudet oletetaan yhteenlaskettaviksi. Kuinka monta kuutiosenttimetriä kuparia kappaleessa on? Käytä luvun tiheystaulukon tiheyksiä. Perustele myös, kumpaa metallia kappaleessa on enemmän tilavuuden ja kumpaa massan mukaan.",
    "kind": [
     "model",
     "reasoning"

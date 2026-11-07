@@ -115,7 +115,7 @@ def m_v_graph():
 def displacement():
     f = Fig("fy17-disp", 372, "Periaatekuva tilavuuden mittaamisesta vedensiirtymällä. Vasemmassa mittalasissa vesi yltää merkkiin "
             "40 ml. Kun kivi upotetaan, vesi nousee oikeassa mittalasissa merkkiin 70 ml. Kiven tilavuus on "
-            "tilavuuksien erotus, 30 ml eli 30 cm³.")
+            "lukemien erotus, 30 ml eli 30 cm³.")
     f.defs_add(f'<linearGradient id="fy17-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{WATER_LIGHT}"/><stop offset="1" stop-color="{WATER}"/></linearGradient>')
     top, bot, w = 44, 324, 70            # cylinder from 0 ml (bottom) to 100 ml (top)
     per = (bot - top) / 100
@@ -139,7 +139,7 @@ def displacement():
     f.line(155, y1, 440, y1, MUTED, 1.5, "6 5")
     f.line(415, y2, 440, y2, MUTED, 1.5, "6 5")
     f.path(f"M448,{n(y2)} H456 V{n(y1)} H448", stroke=HEAT, w=2.5)
-    f.tex(466, (y1 + y2) / 2 - 16, r"\Delta V", "start", HEAT, w=60)
+    f.tex(466, (y1 + y2) / 2 - 16, r"V = V_2 - V_1", "start", HEAT, w=130)
     f.tex(466, (y1 + y2) / 2 + 16, r"= 30\,\text{ml}", "start", HEAT, w=120)
     f.tex(120, 346, r"V_1 = 40\,\text{ml}", "middle", w=170)
     f.tex(380, 346, r"V_2 = 70\,\text{ml}", "middle", w=170)

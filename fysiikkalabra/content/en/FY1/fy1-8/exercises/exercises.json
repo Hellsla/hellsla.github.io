@@ -79,12 +79,12 @@
       "kind": [
         "concept"
       ],
-      "answer": "How does the length of the pendulum string affect the length of the period?",
+      "answer": "How does the length of the pendulum string affect the period?",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "How does the length of the pendulum string affect the length of the period?",
+          "text": "How does the length of the pendulum string affect the period?",
           "feedback": "Correct: the question has one variable that is changed and one that is measured, and it can be answered by measuring with school equipment.",
           "correct": true
         },
@@ -389,7 +389,7 @@
     {
       "id": "fy1-8-L3-05",
       "level": 3,
-      "text": "A student plans an investigation for the question “Does the cooling rate of water depend on the material of the container?” He pours the same number of decilitres of $80\\,{}^\\circ\\text{C}$ water into three containers of the same size (glass, metal, plastic) and reads the temperature every minute. The independent (manipulated) variable is the material of the container and the dependent variable is the fall in temperature.\n\nThe temperatures of the glass container in a preliminary experiment are in the table. Estimate the initial cooling rate from the change during the first three minutes of the table. The uncertainty of the fall in temperature is estimated at $\\Delta T_\\text{fall} = 1.0\\,\\text{K}$, and the relative uncertainty of the fall is wanted to be at most $5.0\\,\\%$. Assume that even in the container that cools most slowly the initial rate is about the same as in the glass container.\n\nHow long must the measurement period be planned to be at least? Also name three variables to be controlled, with reasons, and tell how the cooling curves of the three containers are compared.",
+      "text": "A student plans an investigation for the question “Does the cooling rate of water depend on the material of the container?” He pours the same number of decilitres of $80\\,{}^\\circ\\text{C}$ water into three containers of the same size (glass, metal, plastic) and reads the temperature every minute. The independent (manipulated) variable is the material of the container and the dependent variable is the fall in temperature.\n\nThe temperatures of the glass container in a preliminary experiment are in the table. Estimate the initial cooling rate from the change during the first three minutes of the table. The uncertainty of the fall in temperature is estimated at $\\Delta T_\\text{fall} = 1.0\\,\\text{K}$, and the relative uncertainty of the fall is wanted to be at most $5.0\\,\\%$. Assume that the initial cooling rate is about the same in all the containers as in the glass container and that it stays constant.\n\nHow long must the measurement period be planned to be at least? Also name three variables to be controlled, with reasons, and tell how the cooling curves of the three containers are compared.",
       "kind": [
         "data",
         "model",

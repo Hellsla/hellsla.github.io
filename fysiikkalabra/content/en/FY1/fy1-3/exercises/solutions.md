@@ -97,7 +97,7 @@
 **Conversions:** Both delays are in seconds, so no conversions are needed.
 **Substitution:** $\Delta t_\text{sys} = 0.12\,\text{s} - 0.18\,\text{s} = -0.06\,\text{s}$
 **Answer:** $-0.06\,\text{s}$, two decimal places like the delays. The minus sign tells that the reading is too short.
-**Reasonableness:** The starting delay is larger than the stopping delay, so the reading comes out short, and the sign is negative. The delays cancel each other almost completely: the error is only a third of the starting delay. If the reading were $3.44\,\text{s}$, the true time would be $3.50\,\text{s}$.
+**Reasonableness:** The starting delay is larger than the stopping delay, so the reading comes out short, and the sign is negative. The delays cancel each other for the most part: the error is only a third of the starting delay. If the reading were $3.44\,\text{s}$, the true time would be $3.50\,\text{s}$.
 
 ## fy1-3-L3-02
 **Given:** the number of sheets $n = 250$, the smallest scale division $d = 1.0\,\text{mm}$
@@ -141,7 +141,7 @@
 **Formula:** $\Delta x = \dfrac{d}{2}$ for both instruments, and the comparison is the ratio $\Delta x_\text{r} : \Delta x_\text{c}$
 **Conversions:** Both intervals are in millimetres, so no conversions are needed.
 **Substitution:** $\Delta x_\text{r} = \dfrac{1.0\,\text{mm}}{2} = 0.5\,\text{mm}$ and $\Delta x_\text{c} = \dfrac{0.01\,\text{mm}}{2} = 0.005\,\text{mm}$, so $0.5\,\text{mm} : 0.005\,\text{mm} = 100$
-**Answer:** $100$ times smaller, one significant figure like the step $0.01\,\text{mm}$. The reading uncertainty of the calliper is a hundredth of that of the ruler.
+**Answer:** $100$ times smaller. The ratio is exact, because both uncertainties are estimated with the same rule (half of the reading interval). The reading uncertainty of the calliper is a hundredth of that of the ruler.
 **Reasonableness:** The ratio is the same as the ratio of the reading intervals $1.0\,\text{mm} : 0.01\,\text{mm} = 100$, because halving cancels out. With a ruler the thickness is read to half a millimetre and with a calliper to half a hundredth of a millimetre, which matches everyday experience that a calliper is more precise.
 
 ## fy1-3-L2-05
@@ -171,8 +171,8 @@
 **Formula:** $\Delta T = \dfrac{\Delta t}{N}$ and the requirement $\dfrac{\Delta T}{T} \le 0.01$, so $\dfrac{\Delta t}{N \cdot T} \le 0.01$, from which $N \ge \dfrac{\Delta t}{0.01 \cdot T}$
 **Conversions:** Not needed: all times are in seconds, and $1\,\% = 0.01$.
 **Substitution:** $N \ge \dfrac{0.2\,\text{s}}{0.01 \cdot 1.5\,\text{s}} = 13.33\ldots$
-**Answer:** At least $14$ swings must be timed, because $N$ is an integer and $13$ is not enough ($0.2 : (13 \cdot 1.5) = 1.03\,\%$).
-**Reasonableness:** Check: $N = 14$ gives $\Delta T = 0.2\,\text{s} : 14 \approx 0.0143\,\text{s}$ and $0.0143\,\text{s} : 1.5\,\text{s} \approx 0.95\,\%$, so the requirement is met. Timing a single swing would give the uncertainty $0.2 : 1.5 = 13\,\%$.
+**Answer:** At least $14$ swings must be timed, because $N$ is an integer and $13$ is not enough ($0.2\,\text{s} : (13 \cdot 1.5\,\text{s}) \approx 1.03\,\%$).
+**Reasonableness:** Check: $N = 14$ gives $\Delta T = 0.2\,\text{s} : 14 \approx 0.0143\,\text{s}$ and $0.0143\,\text{s} : 1.5\,\text{s} \approx 0.95\,\%$, so the requirement is met. Timing a single swing would give the uncertainty $0.2\,\text{s} : 1.5\,\text{s} \approx 13\,\%$.
 **Model answer:** The error from reaction time does not grow with the length of the time; it is about the same at the start and at the end. A long measurement is divided among many swings, so the share per swing becomes smaller. Repeating also reduces random error through the mean.
 
 ## fy1-3-L3-04

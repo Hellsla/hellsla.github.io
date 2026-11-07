@@ -218,7 +218,7 @@ A graph needs axes with the quantity and its unit written at the end, such as $s
 ### Fit a line, do not join the points
 In real data sets the data points do not usually lie exactly on one straight line, because of measurement uncertainty, especially random error (chapter *Measuring and the reliability of a measurement*). So you do not join the points into a broken line, since that line would follow the errors too. Instead you fit one straight line that runs through the middle of the set of points.
 
-A good fit is close to all the points and does not lean towards any single point. There are roughly as many points on each side of the line, and the deviations above and below cancel each other. The line does not have to pass through any point. If one point is clearly further away than the others, it is worth finding out why, and you do not drop the point automatically.
+A good fit is close to all the points and does not lean towards any single point. There are roughly as many points on each side of the line, and the deviations above and below roughly cancel each other. The line does not have to pass through any point. If one point is clearly further from the line than the others, it is worth finding out why, and you do not drop the point automatically.
 
 ### Linear model
 If the points lie roughly along a straight line, the relationship between the quantities is described by a linear model, whose equation is the equation of a straight line. The slope tells you how much the vertical quantity changes when the horizontal quantity increases by one unit, and the constant term tells you the value of the vertical quantity when the horizontal quantity is zero. A linear model is a physical model, a simplified description of a phenomenon based on measurements: the graph is its graphical model and the equation of the line its mathematical model, and because the equation gives numerical values, the model is quantitative.
@@ -293,7 +293,7 @@ The sign of the slope tells you the direction. With a positive slope the line ri
 ## Worked example
 The temperature $T$ of the water in a kettle was measured every minute:
 
-| $t$ (min) | $T$ (°C) |
+| $t\ (\text{min})$ | $T\ (^\circ\text{C})$ |
 | --- | --- |
 | 0 | 20.8 |
 | 1 | 27.9 |

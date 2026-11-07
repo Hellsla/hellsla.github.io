@@ -197,7 +197,7 @@
         "columns": [
           "Kulkuneuvo",
           "$v$",
-          "$\\text{Yksikkö}$"
+          "Yksikkö"
         ],
         "rows": [
           [
@@ -318,7 +318,7 @@
     {
       "id": "fy1-2-L3-05",
       "level": 3,
-      "text": "Valmistaja ilmoittaa kahden kannettavan virtalähteen tiedot eri yksiköissä. Molemmat on ladattu täyteen, ja kumpikin syöttää laitetta, jonka teho on taulukon käyttöteho.\n\nToiminta-aika on $t = \\dfrac{E}{P}$, ja teholle pätee $1\\,\\text{W} = 1\\,\\text{J/s}$. Energian yksiköille pätee $1\\,\\text{kWh} = 3{,}6\\,\\text{MJ}$.\n\nYstäväsi väittää, että laite B kestää kauemmin, koska sen energian lukuarvo $2{,}20$ on suurempi kuin laitteen A lukuarvo $0{,}65$.\n\nKuinka monta tuntia kauemmin pidempään toimiva laite toimii? Perustele. Onko väite oikein?",
+      "text": "Valmistaja ilmoittaa kahden kannettavan virtalähteen tiedot eri yksiköissä. Molemmat on ladattu täyteen, ja kumpikin syöttää laitetta, jonka teho on taulukon käyttöteho.\n\nToiminta-aika on $t = \\dfrac{E}{P}$, ja teholle pätee $1\\,\\text{W} = 1\\,\\text{J/s}$. Energian yksiköille pätee $1\\,\\text{kWh} = 3{,}6\\,\\text{MJ}$.\n\nYstäväsi väittää, että virtalähde B kestää kauemmin, koska sen energian lukuarvo $2{,}20$ on suurempi kuin virtalähteen A lukuarvo $0{,}65$.\n\nKuinka monta tuntia kauemmin pidempään toimiva virtalähde toimii? Perustele. Onko väite oikein?",
       "kind": [
         "data",
         "reasoning"
@@ -329,7 +329,7 @@
       "data": {
         "caption": "Valmistajan ilmoittamat tiedot",
         "columns": [
-          "Laite",
+          "Virtalähde",
           "$E$",
           "Yksikkö",
           "$P$",

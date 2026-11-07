@@ -1,9 +1,9 @@
 ## fy1-4-L1-01
 **Given:** two points on the line $(t_1;\ s_1) = (1.0\,\text{s};\ 2.3\,\text{m})$ and $(t_2;\ s_2) = (7.0\,\text{s};\ 10.1\,\text{m})$
-**Find:** the slope $k$ of the line in m/s
+**Find:** the slope $k$ of the line in $\text{m/s}$
 **Principle:** On a straight line, $s$ increases by the same amount per unit of time everywhere, so the slope is the same whichever two points of the line it is calculated from. The points are on the line and far apart, so the reading error has only a small effect on the result.
 **Formula:** $k = \dfrac{\Delta s}{\Delta t} = \dfrac{s_2 - s_1}{t_2 - t_1}$
-**Conversions:** None needed: the distances are in metres and the times in seconds, so the result comes directly in m/s.
+**Conversions:** None needed: the distances are in metres and the times in seconds, so the result comes directly in $\text{m/s}$.
 **Substitution:** $k = \dfrac{10.1\,\text{m} - 2.3\,\text{m}}{7.0\,\text{s} - 1.0\,\text{s}} = \dfrac{7.8\,\text{m}}{6.0\,\text{s}} = 1.3\,\text{m/s}$
 **Answer:** $1.3\,\text{m/s}$, two significant figures, because the differences $7.8\,\text{m}$ and $6.0\,\text{s}$ are known to two figures.
 **Reasonableness:** The slope is positive, because the distance increases with time. Between the points the trolley travels about $8\,\text{m}$ in about 6 seconds, that is, about 1.3 metres per second, which is the speed of a leisurely walk.
@@ -16,7 +16,7 @@
 **Conversions:** None needed: the time is in minutes as in the unit of the slope, and the height comes out in centimetres.
 **Substitution:** $h = 0.50\,\tfrac{\text{cm}}{\text{min}} \cdot 30\,\text{min} + 12\,\text{cm} = 15\,\text{cm} + 12\,\text{cm} = 27\,\text{cm}$
 **Answer:** $27\,\text{cm}$, two significant figures, like the slope $0.50$ and the constant term $12\,\text{cm}$.
-**Reasonableness:** In 30 minutes the surface rises about $0.5 \cdot 30 = 15\,\text{cm}$ from the starting height of $12\,\text{cm}$, so the height is about $27\,\text{cm}$, which is greater than at the start, as it should be when the pool is filling.
+**Reasonableness:** In 30 minutes the surface rises about $0.5\,\tfrac{\text{cm}}{\text{min}} \cdot 30\,\text{min} = 15\,\text{cm}$ from the starting height of $12\,\text{cm}$, so the height is about $27\,\text{cm}$, which is greater than at the start, as it should be when the pool is filling.
 
 ## fy1-4-L1-03
 **Given:** the line $h = 0.60\,\tfrac{\text{cm}}{\text{day}} \cdot t + 4.0\,\text{cm}$, that is, $k = 0.60\,\tfrac{\text{cm}}{\text{day}}$ and $b = 4.0\,\text{cm}$; length $h = 10\,\text{cm}$
@@ -26,11 +26,11 @@
 **Conversions:** None needed: the lengths are in centimetres and the slope gives centimetres per day.
 **Substitution:** $t = \dfrac{10\,\text{cm} - 4.0\,\text{cm}}{0.60\,\tfrac{\text{cm}}{\text{day}}} = \dfrac{6.0\,\text{cm}}{0.60\,\tfrac{\text{cm}}{\text{day}}} = 10\,\text{days}$
 **Answer:** $10\,\text{days}$, two significant figures, because $6.0\,\text{cm}$ and $0.60\,\tfrac{\text{cm}}{\text{day}}$ are known to two figures.
-**Reasonableness:** The lawn grows six centimetres from the starting $4.0\,\text{cm}$, and that takes about $6 : 0.6 = 10$ days. Check: $0.60 \cdot 10 + 4.0 = 10\,\text{cm}$.
+**Reasonableness:** The lawn grows six centimetres from the starting $4.0\,\text{cm}$, and that takes about $6 : 0.6 = 10$ days. Check: $0.60\,\tfrac{\text{cm}}{\text{day}} \cdot 10\,\text{days} + 4.0\,\text{cm} = 10\,\text{cm}$.
 
 ## fy1-4-L1-04
 **Given:** points on the line $(t_1;\ y_1) = (0.0\,\text{h};\ 20.0\,\text{cm})$ and $(t_2;\ y_2) = (4.0\,\text{h};\ 14.0\,\text{cm})$, where $y$ is the length of the candle
-**Find:** the slope $k$ of the line in cm/h
+**Find:** the slope $k$ of the line in $\text{cm/h}$
 **Principle:** The candle gets shorter steadily, so the length is a linear function of time. The slope is the change in length divided by the change in time, and it is negative when the quantity decreases.
 **Formula:** $k = \dfrac{\Delta y}{\Delta t} = \dfrac{y_2 - y_1}{t_2 - t_1}$
 **Conversions:** None needed: the lengths are in centimetres and the times in hours.
@@ -50,13 +50,13 @@
 
 ## fy1-4-L2-01
 **Given:** points on the line $(t_1;\ s_1) = (2.0\,\text{min};\ 0.30\,\text{km})$ and $(t_2;\ s_2) = (10.0\,\text{min};\ 1.50\,\text{km})$
-**Find:** the slope $k$ in m/s
+**Find:** the slope $k$ in $\text{m/s}$
 **Principle:** The slope of the line in a distance–time graph is the change in distance divided by the change in time. It is the same for any two points on the line, and the units must be converted to SI units before the result is given.
 **Formula:** $k = \dfrac{\Delta s}{\Delta t} = \dfrac{s_2 - s_1}{t_2 - t_1}$
 **Conversions:** $\Delta s = 1.50\,\text{km} - 0.30\,\text{km} = 1.20\,\text{km} = 1200\,\text{m}$ and $\Delta t = 10.0\,\text{min} - 2.0\,\text{min} = 8.0\,\text{min} = 480\,\text{s}$.
 **Substitution:** $k = \dfrac{1200\,\text{m}}{480\,\text{s}} = 2.5\,\text{m/s}$
 **Answer:** $2.5\,\text{m/s}$, two significant figures, because the time interval $8.0\,\text{min}$ is given to two figures.
-**Reasonableness:** The result is about $2.5 \cdot 3.6 = 9\,\text{km/h}$. Check with kilometres and minutes: $1.20\,\text{km} : 8.0\,\text{min} = 0.15\,\text{km/min} = 9\,\text{km/h}$, which is the speed of leisurely cycling.
+**Reasonableness:** The result is about $2.5\,\text{m/s} = 2.5 \cdot 3.6\,\text{km/h} = 9\,\text{km/h}$. Check with kilometres and minutes: $1.20\,\text{km} : 8.0\,\text{min} = 0.15\,\text{km/min} = 9\,\text{km/h}$, which is the speed of leisurely cycling.
 
 ## fy1-4-L2-02
 **Given:** the measured points $(t;\ s)$ of the graph: $(1\,\text{s};\ 0.6\,\text{m})$, $(2\,\text{s};\ 0.8\,\text{m})$, $(3\,\text{s};\ 1.6\,\text{m})$, $(4\,\text{s};\ 2.1\,\text{m})$, $(5\,\text{s};\ 2.4\,\text{m})$ and $(6\,\text{s};\ 2.9\,\text{m})$; the time asked about is $t = 8.0\,\text{s}$
@@ -74,10 +74,10 @@
 **Find:** the mass of the empty canister, that is, the constant term $b$ in kilograms
 **Principle:** The combined mass is $m = kV + b$: the water adds mass by the amount of the slope per litre, and when $V = 0$ only the mass of the empty canister remains. This is the point where the line crosses the $m$-axis, the constant term $b$.
 **Formula:** $k = \dfrac{m_2 - m_1}{V_2 - V_1}$, and since $m_1 = kV_1 + b$, we get $b = m_1 - kV_1$
-**Conversions:** None needed: the masses are in kilograms and the volumes in litres, so $k$ comes out in kg/l.
+**Conversions:** None needed: the masses are in kilograms and the volumes in litres, so $k$ comes out in $\text{kg/l}$.
 **Substitution:** $k = \dfrac{9.9\,\text{kg} - 3.9\,\text{kg}}{9.0\,\textsf{l} - 3.0\,\textsf{l}} = 1.0\,\tfrac{\text{kg}}{\textsf{l}}$ and $b = 3.9\,\text{kg} - 1.0\,\tfrac{\text{kg}}{\textsf{l}} \cdot 3.0\,\textsf{l} = 0.9\,\text{kg}$
 **Answer:** $0.9\,\text{kg}$, one decimal place like the given masses $3.9\,\text{kg}$ and $9.9\,\text{kg}$.
-**Reasonableness:** The slope $1.0\,\text{kg/l}$ is the density of water, so the liquid is correctly identified as water. An empty plastic canister has a mass of about $1\,\text{kg}$, so $0.9\,\text{kg}$ is reasonable.
+**Reasonableness:** The slope $1.0\,\text{kg/l}$ is the density of water, so the result is plausible. An empty plastic canister has a mass of about $1\,\text{kg}$, so $0.9\,\text{kg}$ is reasonable.
 
 ## fy1-4-L2-04
 **Given:** starting charge $b = 4.0\,\text{€}$ and price per kilometre $k = 2.5\,\tfrac{\text{€}}{\text{km}}$; distances $x_1 = 5.0\,\text{km}$ and $x_2 = 10\,\text{km}$
@@ -97,7 +97,7 @@
 **Conversions:** None needed: the position is in metres and the slope gives metres per second.
 **Substitution:** $t = \dfrac{0 - 0.40\,\text{m}}{0.85\,\tfrac{\text{m}}{\text{s}}} = -0.4706\,\text{s}$
 **Answer:** $-0.47\,\text{s}$, two significant figures like the slope $0.85\,\tfrac{\text{m}}{\text{s}}$ and the constant term $0.40\,\text{m}$. The minus sign means that the trolley was at the start of the track $0.47\,\text{s}$ before the stopwatch was started. The result assumes that the trolley was already moving at the same speed before the watch was started, because the line is extended outside the measured range ($t < 0$).
-**Reasonableness:** Check: in 0.47 seconds at $0.85\,\text{m/s}$ the trolley travels about $0.85 \cdot 0.47 = 0.40\,\text{m}$, which equals the constant term. The result is the same as if the watch had been started $0.47\,\text{s}$ earlier and the constant term were zero.
+**Reasonableness:** Check: in 0.47 seconds at $0.85\,\text{m/s}$ the trolley travels about $0.85\,\tfrac{\text{m}}{\text{s}} \cdot 0.47\,\text{s} = 0.40\,\text{m}$, which equals the constant term. The result is the same as if the watch had been started $0.47\,\text{s}$ earlier and the constant term were zero.
 
 ## fy1-4-L3-02
 **Given:** the temperature $T$ of the coffee: $90\,{}^\circ\text{C}$ ($0\,\text{min}$), $72\,{}^\circ\text{C}$ ($10\,\text{min}$), $60\,{}^\circ\text{C}$ ($20\,\text{min}$) and $51\,{}^\circ\text{C}$ ($30\,\text{min}$)
@@ -112,7 +112,7 @@
 ## fy1-4-L3-03
 **Given:** line $y = 2.0\,x$; the reading error of a $y$ value is at most $\Delta y_\text{read} = 0.1$, so the error of the difference $\Delta y$ of two readings is, in the worst case, $2\,\Delta y_\text{read} = 2 \cdot 0.1 = 0.2$; close together $\Delta x_1 = 4.5 - 4.0 = 0.5$, far apart $\Delta x_2 = 9.0 - 1.0 = 8.0$
 **Find:** how many times greater the relative uncertainty of the slope is when it is calculated from the close points
-**Principle:** The slope is $k = \Delta y : \Delta x$. When the $x$ values are known accurately, the relative uncertainty of the slope is equal to the relative uncertainty of the difference $\Delta y$. On a straight line $\Delta y = k\,\Delta x$, so the difference grows with the interval, but the reading error stays the same.
+**Principle:** The slope is $k = \Delta y : \Delta x$. When the $x$ values are known accurately, the relative uncertainty of the slope is equal to the relative uncertainty of the difference $\Delta y$. On a straight line $\Delta y = k\,\Delta x$, so the difference grows with the distance $\Delta x$ between the points, but the reading error stays the same. Here $\Delta y$ and $\Delta x$ are differences between two points, whereas $\Delta k$ and $\Delta y_\text{read}$ are uncertainties.
 **Formula:** $\dfrac{\Delta k}{k} = \dfrac{2\,\Delta y_\text{read}}{\Delta y} = \dfrac{2\,\Delta y_\text{read}}{k\,\Delta x}$, so $\dfrac{(\Delta k : k)_\text{near}}{(\Delta k : k)_\text{far}} = \dfrac{\Delta x_2}{\Delta x_1}$
 **Conversions:** None needed: the ratio has no unit.
 **Substitution:** Near: $\Delta y = 2.0 \cdot 0.5 = 1.0$ and $\dfrac{\Delta k}{k} = \dfrac{0.2}{1.0} = 0.20$. Far: $\Delta y = 2.0 \cdot 8.0 = 16$ and $\dfrac{\Delta k}{k} = \dfrac{0.2}{16} = 0.0125$. The ratio is $\dfrac{0.20}{0.0125} = \dfrac{8.0}{0.5} = 16$.
@@ -141,14 +141,14 @@
 
 ## fy1-4-L2-05
 **Given:** the data points of the table $(m;\ x)$: $(50.0\,\text{g};\ 4.1\,\text{mm})$, $(100.0\,\text{g};\ 8.3\,\text{mm})$, $(150.0\,\text{g};\ 11.8\,\text{mm})$, $(200.0\,\text{g};\ 16.5\,\text{mm})$, $(250.0\,\text{g};\ 20.2\,\text{mm})$ and $(300.0\,\text{g};\ 23.9\,\text{mm})$
-**Find:** the slope $k$ of the fitted line in mm/g
+**Find:** the slope $k$ of the fitted line in $\text{mm/g}$
 **Principle:** The extension of a spring increases steadily with the load as long as the spring is not stretched too far, so a linear model $x = km + b$ fits the points. The slope tells you the increase in extension per additional gram. The line is drawn through the middle of the set of points, and the slope is calculated from points on the line, not from data points.
 **Reading the graph:** The points lie on a rising line with points on both sides of it. The fitted line passes approximately through the points $(0\,\text{g};\ 0.2\,\text{mm})$ and $(300\,\text{g};\ 24.1\,\text{mm})$. They are read from the line and chosen far apart.
 **Formula:** $k = \dfrac{\Delta x}{\Delta m} = \dfrac{x_2 - x_1}{m_2 - m_1}$
 **Conversions:** None needed: the extension is in millimetres and the mass in grams, as in the requested unit.
 **Substitution:** $k = \dfrac{24.1\,\text{mm} - 0.2\,\text{mm}}{300\,\text{g} - 0\,\text{g}} = \dfrac{23.9\,\text{mm}}{300\,\text{g}} = 0.0797\,\tfrac{\text{mm}}{\text{g}}$
 **Answer:** $0.080\,\text{mm/g}$, two significant figures, because the line is fitted by eye and the slope is therefore obtained only to two figures. Fitting by eye varies, so about $0.076\text{–}0.084\,\text{mm/g}$ is a good answer.
-**Reasonableness:** A load of $100\,\text{g}$ stretches the spring by about $0.080 \cdot 100 = 8\,\text{mm}$, which matches the second row of the table. The line passes almost through the origin, as it should, because an unloaded spring does not stretch.
+**Reasonableness:** A load of $100\,\text{g}$ stretches the spring by about $0.080\,\tfrac{\text{mm}}{\text{g}} \cdot 100\,\text{g} = 8\,\text{mm}$, which matches the second row of the table. The line passes almost through the origin, as it should, because an unloaded spring does not stretch.
 
 ## fy1-4-L2-06
 **Given:** the data points of the table $(t;\ x)$: $(0.0\,\text{s};\ 0.82\,\text{m})$, $(1.0\,\text{s};\ 1.31\,\text{m})$, $(2.0\,\text{s};\ 1.68\,\text{m})$, $(3.0\,\text{s};\ 2.22\,\text{m})$, $(4.0\,\text{s};\ 2.57\,\text{m})$ and $(5.0\,\text{s};\ 3.09\,\text{m})$
@@ -174,7 +174,7 @@
 
 ## fy1-4-L3-04
 **Given:** the data points of the table $(m;\ x)$ over the range $100\text{–}700\,\text{g}$; extensions $8.1$, $16.3$, $24.2$, $32.5$, $40.1$, $51.8$ and $68.9\,\text{mm}$
-**Find:** the interval of loads over which the linear model holds, the slope $k$ of its line in mm/g, and a justification of why the model does not hold over the whole range
+**Find:** the interval of loads over which the linear model holds, the slope $k$ of its line in $\text{mm/g}$, and a justification of why the model does not hold over the whole range
 **Principle:** The linear model fits the range of loads over which the points lie on a line. Fit a line to the points that are on the line, and check where the other points no longer fit. Among the measured points, over the range $100\text{–}500\,\text{g}$ the extension increases steadily, but with greater loads the spring stretches more than the line predicts.
 **Reading the graph:** The first five points lie on a line with points on both sides of it. The fitted line passes approximately through the points $(0\,\text{g};\ 0.2\,\text{mm})$ and $(500\,\text{g};\ 40.3\,\text{mm})$. The points $600\,\text{g}$ and $700\,\text{g}$ are above the line, and the difference grows: the line would give $48.3\,\text{mm}$ and $56.3\,\text{mm}$, but the measured values are $51.8\,\text{mm}$ and $68.9\,\text{mm}$. The deviations are $3.5\,\text{mm}$ and $12.6\,\text{mm}$, while inside the range the deviation is at most $0.3\,\text{mm}$.
 **Formula:** $k = \dfrac{\Delta x}{\Delta m} = \dfrac{x_2 - x_1}{m_2 - m_1}$
@@ -189,10 +189,10 @@
 **Principle:** The steepest and the gentlest line that still fit among the points bound an estimated range for the slope. The value of the slope is the middle of the range and the uncertainty is half the width of the range, because the value is in the middle and the range extends by the uncertainty to both sides. The estimate is simple and does not guarantee that the true value is within the range.
 **Reading the graph:** The plotted points rise steadily, and the steepest and the gentlest line both pass through the set of points so that points are left on both sides. Between the times $1.0\,\text{s}$ and $6.0\,\text{s}$ the steepest line rises $3.50\,\text{m} - 0.75\,\text{m} = 2.75\,\text{m}$, and between the times $2.0\,\text{s}$ and $5.0\,\text{s}$ the gentlest rises $2.60\,\text{m} - 1.40\,\text{m} = 1.20\,\text{m}$. The student's mean and slopes are correct; the error is in the calculation of the uncertainty.
 **Formula:** $k = \dfrac{\Delta s}{\Delta t}$, $\;k = \dfrac{k_\text{max} + k_\text{min}}{2}$, $\;\Delta k = \dfrac{k_\text{max} - k_\text{min}}{2}$ and the relative uncertainty $\dfrac{\Delta k}{k} \cdot 100\,\%$
-**Conversions:** None needed: the slopes come out in m/s, and the percentage is a ratio without a unit multiplied by $100$.
+**Conversions:** None needed: the slopes come out in $\text{m/s}$, and the percentage is a ratio without a unit multiplied by $100$.
 **Substitution:** $k_\text{max} = \dfrac{2.75\,\text{m}}{5.0\,\text{s}} = 0.55\,\tfrac{\text{m}}{\text{s}}$ and $k_\text{min} = \dfrac{1.20\,\text{m}}{3.0\,\text{s}} = 0.40\,\tfrac{\text{m}}{\text{s}}$. The mean is $k = \dfrac{0.55 + 0.40}{2}\,\tfrac{\text{m}}{\text{s}} = 0.475\,\tfrac{\text{m}}{\text{s}}$ and $\Delta k = \dfrac{0.55 - 0.40}{2}\,\tfrac{\text{m}}{\text{s}} = 0.075\,\tfrac{\text{m}}{\text{s}}$, so $\dfrac{\Delta k}{k} \cdot 100\,\% = \dfrac{0.075}{0.475} \cdot 100\,\% = 15.8\,\%$
 **Answer:** The student used the whole difference of the slopes, $0.15\,\tfrac{\text{m}}{\text{s}}$, as the uncertainty instead of half of it; the correct uncertainty is $16\,\%$, two significant figures, like the coordinates of the points (for example $0.75\,\text{m}$). The slope is therefore about $(0.48 \pm 0.08)\,\tfrac{\text{m}}{\text{s}}$. The estimate tells you how much the slope can vary because of the scatter, but it does not guarantee that the true speed is within this range: the range is an estimated bound and not a certain limit.
-**Reasonableness:** The correct range $0.475 \pm 0.075\,\tfrac{\text{m}}{\text{s}}$ is $0.40\text{–}0.55\,\tfrac{\text{m}}{\text{s}}$, that is, exactly the gentlest and the steepest line. The student's range $0.475 \pm 0.15$ would be $0.33\text{–}0.63\,\tfrac{\text{m}}{\text{s}}$, which extends clearly beyond both lines, so $32\,\%$ is double. The slope of the best line fitted to all six points, about $0.51\,\tfrac{\text{m}}{\text{s}}$, is inside the range.
+**Reasonableness:** The correct range $(0.475 \pm 0.075)\,\tfrac{\text{m}}{\text{s}}$ is $0.40\text{–}0.55\,\tfrac{\text{m}}{\text{s}}$, that is, exactly the gentlest and the steepest line. The student's range $(0.475 \pm 0.15)\,\tfrac{\text{m}}{\text{s}}$ would be $0.33\text{–}0.63\,\tfrac{\text{m}}{\text{s}}$, which extends clearly beyond both lines, so $32\,\%$ is double. The slope of the best line fitted to all six points, about $0.51\,\tfrac{\text{m}}{\text{s}}$, is inside the range.
 
 ## fy1-4-L2-08
 **Find:** on which line the calculation of the slope has an error.

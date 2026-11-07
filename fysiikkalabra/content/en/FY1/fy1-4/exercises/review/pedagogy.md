@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 5ed29272f5bb00c8
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: 3a7b65d208dc939d
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,4 +9,5 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368
 - none
 
 ## Checked
-- exercises.json, solutions.md, answers.py diffs. Answer wording in the solution only (two figures because temperatures to two figures).
+- exercises diff: units set as \text, 'lukumäärään', 'suureiden välistä riippuvuutta', Reasonableness products now carry units (2,5 m/s = 2,5·3,6 km/h), 'tulos on uskottava'; numbers and answers unchanged.
+- Language en: matches the Finnish fixes; fi-easy stays plain Finnish.

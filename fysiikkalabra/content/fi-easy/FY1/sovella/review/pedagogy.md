@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 1b0cc7178a35fcdc
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the koe/sovella copy-edit diff only)
+CONTENT-HASH: 4dab3217f6439bd5
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,4 +9,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the koe/sovella copy-edit
 - none
 
 ## Checked
-- fi-easy model answer matches the fix, in short plain sentences; ramppia alas, intro and the research-question correction are grammar only; no demand changed.
+- Diff only: fy1-s1 figure labels moved (render checked: ramppi, v-formula and axes legible, no overlap), model answer scatter 'at most about 2 mm, less than one pixel' (consistent with 2.5 mm/pixel), uncertainty-estimate principle reworded; rubric and tasks untouched.

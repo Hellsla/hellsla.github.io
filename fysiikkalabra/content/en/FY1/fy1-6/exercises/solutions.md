@@ -2,7 +2,7 @@
 **Given:** the ball starts from rest, $t = 3.0\,\text{s}$, acceleration of free fall $g = 9.81\,\text{m/s}^2$
 **Find:** the speed of the ball $v$ in $\text{m/s}$
 **Principle:** Air resistance is ignored, so the ball is in free fall. Then the speed increases by the same amount every second, and the speed of an object that starts from rest is directly proportional to time.
-**Formula:** $v = g\,t$. The formula is already solved for the speed we want: $v = g\,t$
+**Formula:** $v = g\,t$, which is already solved for the speed we want.
 **Conversions:** The time is in seconds and $g$ in $\text{m/s}^2$, so the result comes directly in $\text{m/s}$. No conversions are needed.
 **Substitution:** $v = 9.81\,\text{m/s}^2 \cdot 3.0\,\text{s} = 29.43\,\text{m/s}$
 **Answer:** $29\,\text{m/s}$, two significant figures as in the time $3.0\,\text{s}$.
@@ -12,7 +12,7 @@
 **Given:** the apple starts from rest, $t = 0.80\,\text{s}$, $g = 9.81\,\text{m/s}^2$
 **Find:** the speed of the apple $v$ when it hits the ground, in $\text{m/s}$
 **Principle:** Air resistance is ignored, so the apple is in free fall and starts from rest. Then the speed is the product of the acceleration of free fall and the elapsed time.
-**Formula:** $v = g\,t$. The formula is already solved for the speed we want: $v = g\,t$
+**Formula:** $v = g\,t$, which is already solved for the speed we want.
 **Conversions:** The time is given in seconds, so no conversions are needed.
 **Substitution:** $v = 9.81\,\text{m/s}^2 \cdot 0.80\,\text{s} = 7.848\,\text{m/s}$
 **Answer:** $7.8\,\text{m/s}$, two significant figures as in the time $0.80\,\text{s}$.
@@ -22,7 +22,7 @@
 **Given:** the stone starts from rest, $t = 4.0\,\text{s}$, acceleration of free fall on the Moon $g_\text{Moon} = 1.62\,\text{m/s}^2$ (from the exercise)
 **Find:** the speed of the stone $v$ in $\text{m/s}$
 **Principle:** The Moon has no atmosphere, so the stone falls freely. The speed of a freely falling object that starts from rest is the product of the acceleration and the time, when the acceleration is the $g$ of the Moon.
-**Formula:** $v = g_\text{Moon}\,t$. The formula is already solved for the speed we want: $v = g_\text{Moon}\,t$
+**Formula:** $v = g_\text{Moon}\,t$, which is already solved for the speed we want.
 **Conversions:** The time is in seconds and the acceleration in $\text{m/s}^2$, so the result comes in $\text{m/s}$. No conversions are needed.
 **Substitution:** $v = 1.62\,\text{m/s}^2 \cdot 4.0\,\text{s} = 6.48\,\text{m/s}$
 **Answer:** $6.5\,\text{m/s}$, two significant figures as in the time $4.0\,\text{s}$.
@@ -43,7 +43,7 @@
 **Given:** the object starts from rest, $t = 6.0\,\text{s}$, acceleration of free fall on Mars $g_\text{Mars} = 3.71\,\text{m/s}^2$ (from the exercise)
 **Find:** the speed of the object $v$ in $\text{m/s}$
 **Principle:** There is no air resistance in the exercise, so the object is in free fall and the speed increases by the same amount every second. When the object starts from rest, the speed is $g\,t$ with the $g$ of Mars.
-**Formula:** $v = g_\text{Mars}\,t$. The formula is already solved for the speed we want: $v = g_\text{Mars}\,t$
+**Formula:** $v = g_\text{Mars}\,t$, which is already solved for the speed we want.
 **Conversions:** The time is in seconds and the acceleration in $\text{m/s}^2$, so no conversions are needed.
 **Substitution:** $v = 3.71\,\text{m/s}^2 \cdot 6.0\,\text{s} = 22.26\,\text{m/s}$
 **Answer:** $22\,\text{m/s}$, two significant figures as in the time $6.0\,\text{s}$.
@@ -63,7 +63,7 @@
 **Given:** graphs of bodies dropped from rest on two planets without an atmosphere, A and B; the time for the body on planet A $t_\text{A} = 5.0\,\text{s}$
 **Find:** the time $t_\text{B}$ after which the body on planet B has the same speed that the body on planet A has after the time $t_\text{A}$
 **Principle:** In free fall from rest the speed increases by the same amount every second, so the speed is $v = g\,t$ and the $(t, v)$ graph is a straight line from the origin whose slope is the $g$ of the planet. The same speed is found by first calculating the speed of A and then the time that B needs to reach it.
-**Reading the graph:** The line of planet A passes through the grid crossing $(5.0\,\text{s};\, 20\,\text{m/s})$, so the body on A has $v_\text{A} = 20\,\text{m/s}$ after $5.0\,\text{s}$. The line of planet B passes through the crossing $(5.0\,\text{s};\, 40\,\text{m/s})$. The readings are exact from the grid, so an answer that differs by at most $3\,\%$ is accepted.
+**Reading the graph:** The line of planet A passes through the grid crossing $(5.0\,\text{s};\, 20\,\text{m/s})$, so the body on A has $v_\text{A} = 20\,\text{m/s}$ after $5.0\,\text{s}$. The line of planet B passes through the crossing $(5.0\,\text{s};\, 40\,\text{m/s})$. The readings are at grid crossings, so they are exact.
 **Formula:** $g_\text{B} = \dfrac{v}{t}$ and $t_\text{B} = \dfrac{v_\text{A}}{g_\text{B}}$
 **Conversions:** Not needed: the speeds are in $\text{m/s}$ and the times in seconds.
 **Substitution:** $g_\text{B} = \dfrac{40\,\text{m/s}}{5.0\,\text{s}} = 8.0\,\text{m/s}^2$ and $t_\text{B} = \dfrac{20\,\text{m/s}}{8.0\,\text{m/s}^2} = 2.5\,\text{s}$
@@ -121,7 +121,7 @@
 **Reasonableness:** The difference is positive, because air slows the ball, and it is a small part of the speed: $\dfrac{4.4}{29.4} \approx 15\,\%$. In a three-second fall air resistance is already significant but not dominant, which fits a ball.
 
 ## fy1-6-L1-06
-**Find:** which hits the ground first on the surface of the Moon, the hammer or the feather.
+**Find:** whether the hammer or the feather hits the surface of the Moon first, or whether they hit it at the same time.
 **Principle:** The Moon has no atmosphere, so there is no air resistance and the objects are in free fall. In free fall the speed of an object that starts from rest is $v = g\,t$, and the acceleration of free fall $g$ is the same for all objects regardless of mass.
 **Model answer:** The hammer and the feather hit the ground at the same time. The speed of both increases by the same amount every second ($1.62\,\text{m/s}$ on the Moon), so they have the same speed the whole way. On Earth the feather falls more slowly only because air slows a light, wide object the most.
 
@@ -135,7 +135,7 @@
 **Given:** the increase in speed per second is $g = 9.81\,\text{m/s}^2$, that is, $9.81\,\text{m/s}$ every second
 **Find:** the increase in speed per second in $\text{km/h}$
 **Principle:** The acceleration of free fall tells the increase in speed per second. It is expressed in another unit by converting the speed from $\text{m/s}$ to $\text{km/h}$.
-**Formula:** $\Delta v = g\,\Delta t$. The formula is already solved for the quantity we want.
+**Formula:** $\Delta v = g\,\Delta t$, which is already solved for the quantity we want.
 **Conversions:** When $\Delta t = 1\,\text{s}$, the speed increases by the amount $g$. At a speed of $1\,\text{m/s}$ an object travels $3600\,\text{m} = 3.6\,\text{km}$ in an hour ($3600\,\text{s}$), so $1\,\text{m/s} = 3.6\,\text{km/h}$.
 **Substitution:** $\Delta v = 9.81\,\text{m/s}^2 \cdot 1\,\text{s} = 9.81 \cdot 1\,\text{m/s} = 9.81 \cdot 3.6\,\text{km/h} = 35.316\,\text{km/h}$
 **Answer:** $35.3\,\text{km/h}$ per second, three significant figures as in the number $9.81$.

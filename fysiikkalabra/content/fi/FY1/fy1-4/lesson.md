@@ -218,7 +218,7 @@ Kuvaajaan kuuluvat akselit, joiden päähän on kirjoitettu suure ja sen yksikk�
 ### Suora sovitetaan, pisteitä ei yhdistetä
 Todellisissa mittaussarjoissa mittauspisteet eivät yleensä sijaitse täsmälleen samalla suoralla mittausepävarmuuden, erityisesti satunnaisvirheen, vuoksi (luku *Mittaaminen ja mittauksen luotettavuus*). Pisteitä ei siksi yhdistetä murtoviivaksi, sillä viiva seuraisi myös virheitä. Pisteisiin sovitetaan sen sijaan yksi suora, joka kulkee pisteiden joukon keskeltä.
 
-Hyvä sovitus on lähellä kaikkia pisteitä, eikä se painotu yhden pisteen mukaan. Pisteitä on suoran molemmin puolin suunnilleen yhtä monta, ja ylä- ja alapuolen poikkeamat kumoavat toisensa. Suoran ei tarvitse kulkea yhdenkään pisteen kautta. Jos jokin piste on selvästi muita kauempana, sen syy kannattaa selvittää, eikä pistettä suljeta automaattisesti pois.
+Hyvä sovitus on lähellä kaikkia pisteitä, eikä se painotu yhden pisteen mukaan. Pisteitä on suoran molemmin puolin suunnilleen yhtä monta, ja ylä- ja alapuolen poikkeamat suunnilleen kumoavat toisensa. Suoran ei tarvitse kulkea yhdenkään pisteen kautta. Jos jokin piste on selvästi muita kauempana suorasta, sen syy kannattaa selvittää, eikä pistettä suljeta automaattisesti pois.
 
 ### Lineaarinen malli
 Jos pisteet asettuvat likimain suoralle, suureiden riippuvuutta kuvaa lineaarinen malli, jonka yhtälö on suoran yhtälö. Kulmakerroin kertoo, kuinka paljon pystysuure muuttuu, kun vaakasuure kasvaa yhden yksikön, ja vakiotermi kertoo pystysuureen arvon, kun vaakasuure on nolla. Lineaarinen malli on fysikaalinen malli eli mittauksiin perustuva yksinkertaistettu kuvaus ilmiöstä: kuvaaja on sen graafinen malli ja suoran yhtälö sen matemaattinen malli, ja koska yhtälö antaa lukuarvoja, malli on kvantitatiivinen.
@@ -293,7 +293,7 @@ Kulmakertoimen merkki kertoo suunnan. Positiivisella kulmakertoimella suora nous
 ## Esimerkki
 Vedenkeittimen veden lämpötilaa $T$ mitattiin joka minuutti:
 
-| $t$ (min) | $T$ (°C) |
+| $t\ (\text{min})$ | $T\ (^\circ\text{C})$ |
 | --- | --- |
 | 0 | 20,8 |
 | 1 | 27,9 |

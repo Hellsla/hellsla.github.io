@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 8df0fe9533bdd32b
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: ff53abfcd8d48eca
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- Ball B is also blue and the velocity arrows are blue; they are told apart by position and the arrow, but a student may link blue arrow to ball B. Colour meaning is kept consistent with the book's velocity colour, so acceptable.
+- none
 
 ## Checked
-- Lesson diff: sim.js (both velocity arrows now blue), exit-ticket 6,06, lesson.md wording of m/s2, lesson-answers.py. 9,81/1,62 = 6,056 -> 6,06 correct.
+- fy1-6 diff: v = g\,t spacing everywhere (title, meta, exit ticket, inquiry, solutions), consistent in all uses; 'Teräskuulan', en-dash range in aria-label; no change to tasks, options or feedback logic.
+- Language fi: matches the Finnish fixes; fi-easy stays plain Finnish.

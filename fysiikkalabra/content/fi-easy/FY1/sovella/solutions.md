@@ -56,8 +56,8 @@
   <circle cx="385.5" cy="160" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <circle cx="423.5" cy="130.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <circle cx="462" cy="100" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="204" y="337" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\text{ramppi}$</div></foreignObject>
-  <foreignObject x="95.5" y="153.5" width="270" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$v = \dfrac{1{,}12\,\text{m}}{1{,}4\,\text{s}} = 0{,}80\,\tfrac{\text{m}}{\text{s}}$</div></foreignObject>
+  <foreignObject x="85.5" y="306" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\text{ramppi}$</div></foreignObject>
+  <foreignObject x="232.5" y="296" width="270" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$v = \dfrac{1{,}12\,\text{m}}{1{,}4\,\text{s}} = 0{,}80\,\tfrac{\text{m}}{\text{s}}$</div></foreignObject>
 </svg>
 
 **Mallivastaus:** Pisteet hetkestä $0{,}4\,\text{s}$ alkaen ovat samalla suoralla. Siksi niihin sovitetaan suora: pallo vierii lattialla tasaisesti. Hetkellä $0{,}4\,\text{s}$ pallo on rampin alapäässä (noin $16\,\text{cm}$). Silloin pallolla on jo sama nopeus kuin lattialla. Kaksi ensimmäistä pistettä ovat rampilta. Rampilla vauhti vasta kasvaa. Siksi nämä pisteet jäävät suoran yläpuolelle, eivätkä ne kuulu sovitukseen. Pisteitä ei yhdistetä murtoviivaksi, koska jokaisessa mittauksessa on pieni virhe.
@@ -76,7 +76,7 @@
 ### c)
 **Kysytty:** paikan todellinen tarkkuus ja nopeuden perusteltu tarkkuus
 **Periaate:** Näytön numerot eivät kerro mittauksen tarkkuutta. Videolla paikan epävarmuutta voi arvioida kuvapisteen koosta. Pallon reunan paikka voi heittää kuvapisteen tai kaksi.
-**Mallivastaus:** Yksi kuvapiste vastaa $2{,}5\,\text{mm}$:ä. Siksi pallon paikka tunnetaan noin $\Delta s \approx 3\,\text{mm}$:n tarkkuudella. Sovellus laskee pallon keskipisteen sen reunan kuvapisteistä. Se voi antaa paikan kuvapisteen osina, mutta liikkuvan pallon reuna on hieman sumea. Sovelluksen näyttämä $0{,}1\,\text{mm}$:n numero syntyy laskennasta, kun kuvapisteet muunnetaan millimetreiksi. Se ei kerro mitään mittauksen tarkkuudesta: jo millimetrien numero on epävarma. Sama näkyy pisteiden sironnassa: lattialla pisteet poikkeavat sovitetusta suorasta muutaman millimetrin. Nopeus määritettiin $1{,}12\,\text{m}$:n matkasta. Matkan epävarmuus on muutama millimetri eli alle prosentti. Siksi nopeus ilmoitetaan muodossa $v = 0{,}80\,\text{m/s}$. Pienimmän neliösumman sovitus antaa $0{,}799\,\text{m/s}$. Kolmas merkitsevä numero on vielä perusteltavissa, mutta neljäs ei ole.
+**Mallivastaus:** Yksi kuvapiste vastaa $2{,}5\,\text{mm}$:ä. Siksi pallon paikka tunnetaan noin $\Delta s \approx 3\,\text{mm}$:n tarkkuudella. Sovellus laskee pallon keskipisteen sen reunan kuvapisteistä. Se voi antaa paikan kuvapisteen osina, mutta liikkuvan pallon reuna on hieman sumea. Sovelluksen näyttämä $0{,}1\,\text{mm}$:n numero syntyy laskennasta, kun kuvapisteet muunnetaan millimetreiksi. Se ei kerro mitään mittauksen tarkkuudesta: jo millimetrien numero on epävarma. Sama näkyy pisteiden sironnassa: lattialla pisteet poikkeavat sovitetusta suorasta enintään noin $2\,\text{mm}$ eli alle kuvapisteen. Nopeus määritettiin $1{,}12\,\text{m}$:n matkasta. Matkan epävarmuus on muutama millimetri eli alle prosentti. Siksi nopeus ilmoitetaan muodossa $v = 0{,}80\,\text{m/s}$. Pienimmän neliösumman sovitus antaa $0{,}799\,\text{m/s}$. Kolmas merkitsevä numero on vielä perusteltavissa, mutta neljäs ei ole.
 
 ### d)
 **Kysytty:** arvio ekstrapoloinnista (suoran jatkamisesta mittausvälin ulkopuolelle) ja selitys suoran vakiotermille
@@ -106,7 +106,7 @@ Sovitetun suoran vakiotermi on noin $s_0 = -0{,}16\,\text{m}$. Se ei ole pallon 
 ### b)
 **Annettu:** teräskuulan ajat $2{,}31$; $2{,}45$; $2{,}38$; $2{,}29$; $2{,}42\,\text{s}$ ja muovikuulan ajat $2{,}40$; $2{,}33$; $2{,}47$; $2{,}36$; $2{,}44\,\text{s}$
 **Kysytty:** keskiarvot $\bar{t}$ ja tulosten epävarmuusarviot $\Delta t$ sekä päätelmä erosta
-**Periaate:** Toistojen keskiarvo on paras arvio vierimisajasta. Vaihteluvälin puolikas on yksinkertainen arvio yksittäisten mittausten hajonnasta. Tässä sitä käytetään yksinkertaisena, varovaisena epävarmuusarviona vertailussa. Keskiarvon oma epävarmuus on yleensä tätä pienempi. Eron voi sanoa osoitetuksi vain, jos se on selvästi suurempi kuin nämä epävarmuusarviot.
+**Periaate:** Toistojen keskiarvo on paras arvio vierimisajasta. Vaihteluvälin puolikas on yksinkertainen arvio yksittäisten mittausten hajonnasta. Tässä sitä käytetään varovaisena epävarmuusarviona vertailussa. Keskiarvon oma epävarmuus on yleensä tätä pienempi. Eron voi sanoa osoitetuksi vain, jos se on selvästi suurempi kuin nämä epävarmuusarviot.
 **Kaava:** $\bar{t} = \dfrac{t_1 + t_2 + t_3 + t_4 + t_5}{5}$ ja $\Delta t = \dfrac{t_\text{max} - t_\text{min}}{2}$
 **Muunnokset:** Ei tarvita, kaikki ajat ovat sekunteina.
 **Sijoitus:** Teräs: $\bar{t} = \dfrac{11{,}85\,\text{s}}{5} = 2{,}37\,\text{s}$ ja $\Delta t = \dfrac{2{,}45\,\text{s} - 2{,}29\,\text{s}}{2} = 0{,}08\,\text{s}$.

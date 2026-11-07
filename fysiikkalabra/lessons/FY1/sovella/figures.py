@@ -16,8 +16,8 @@ def graph():
     for p in [(0.6, 0.32), (2.0, 1.44)]: ax.guide(*p)
     for t, s in zip(T, S):
         ax.point(t, s / 1000, COLD if t < 0.3 else INK)
-    f.tex(ax.X(0.65), ax.Y(0.10), r"\text{ramppi}", "start", COLD)
-    f.tex(ax.X(0.08), ax.Y(1.0), r"v = \dfrac{1{,}12\,\text{m}}{1{,}4\,\text{s}} = 0{,}80\,\tfrac{\text{m}}{\text{s}}", "start")
+    f.tex(ax.X(0.03), ax.Y(0.265), r"\text{ramppi}", "start", COLD)     # above the ramp points, between the 0,32 m guide and the 0,4 s point
+    f.tex(ax.X(0.8), ax.Y(0.24), r"v = \dfrac{1{,}12\,\text{m}}{1{,}4\,\text{s}} = 0{,}80\,\tfrac{\text{m}}{\text{s}}", "start")
     return f.svg()
 
 

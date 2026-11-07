@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 1eba2a530cd5e15b
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the koe/sovella copy-edit diff only)
+CONTENT-HASH: 76f108ca139d6b18
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,5 +9,6 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the koe/sovella copy-edit
 - none
 
 ## Checked
-- fy1-s1 d): the pair extrapolates to 10 s; measured 0,4–2,0 s, so 10 s - 2,0 s = 8 s beyond, 8/1,6 = 5 interval lengths. New "8 s / viisi kertaa" is correct (old "yli kuusi kertaa pidemmälle" was not). Check: (7,8 + 0,16) m / 0,80 m/s = 9,95 s ≈ 10 s, consistent with the task.
-- Finnish case fixes (ramppia alas, Ensimmäisen…Neljännen puutteen korjaus, kokoaa): no physics change; rubric points unchanged.
+- fy1-s1 model answer: fitted line to the floor points (t ≥ 0,6 s) gives 799,2 mm/s, s0 = −160 mm, residuals at most 1,95 mm: 'at most about 2 mm, less than one pixel (2,5 mm)' is right.
+- Graph labels moved only (figures.py coordinates); v = 1,12 m / 1,4 s = 0,80 m/s unchanged.
+- fy1-s2 principle: dropping a duplicated 'yksinkertainen' changes no meaning.

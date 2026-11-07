@@ -36,7 +36,7 @@
 **Muunnokset:** Ei tarvita. Tiheys on yksikössä $\text{kg/m}^3$ ja tilavuus yksikössä $\text{m}^3$. Siksi massa tulee kilogrammoina.
 **Sijoitus:** $m = 2400\,\tfrac{\text{kg}}{\text{m}^3} \cdot 0{,}75\,\text{m}^3 = 1800\,\text{kg}$
 **Vastaus:** $1{,}8 \cdot 10^3\,\text{kg}$, kaksi merkitsevää numeroa kuten tilavuudessa $0{,}75\,\text{m}^3$.
-**Järkevyys:** Kuutiometri vettä on $1000\,\text{kg}$. Betoni on noin 2,4 kertaa niin tiheää kuin vesi. Siksi $0{,}75\,\text{m}^3$:n betonilaatan massa on noin $0{,}75 \cdot 2400\,\text{kg} \approx 1800\,\text{kg}$. Se on yli tonni, ja betonilaatta onkin raskas.
+**Järkevyys:** Kuutiometrin vesimäärän massa on $1000\,\text{kg}$. Betoni on noin $2{,}4$ kertaa niin tiheää kuin vesi. Siksi $1\,\text{m}^3$ betonia on noin $2{,}4\,\text{t}$. Laatta on kolme neljäsosaa kuutiometristä. Sen massa on siis noin $1{,}8\,\text{t}$. Se on yli tonni, ja betonilaatta onkin raskas.
 
 ## fy1-7-L1-05
 **Annettu:** jäälohkon massa $m = 36{,}8\,\text{kg}$ ja tilavuus $V = 0{,}0400\,\text{m}^3$
@@ -56,7 +56,7 @@
 **Muunnokset:** Tiheys on yksikössä $\text{kg/m}^3$. Siksi mitat muunnetaan metreiksi: $10{,}0\,\text{cm} = 10{,}0 \cdot 0{,}01\,\text{m} = 0{,}100\,\text{m}$, $5{,}0\,\text{cm} = 5{,}0 \cdot 0{,}01\,\text{m} = 0{,}050\,\text{m}$ ja $2{,}0\,\text{cm} = 2{,}0 \cdot 0{,}01\,\text{m} = 0{,}020\,\text{m}$.
 **Sijoitus:** $m = 19\,300\,\tfrac{\text{kg}}{\text{m}^3} \cdot 0{,}100\,\text{m} \cdot 0{,}050\,\text{m} \cdot 0{,}020\,\text{m} = 19\,300\,\tfrac{\text{kg}}{\text{m}^3} \cdot 1{,}0 \cdot 10^{-4}\,\text{m}^3 = 1{,}93\,\text{kg}$
 **Vastaus:** $1{,}9\,\text{kg}$. Vastauksessa on kaksi merkitsevää numeroa, koska mitat $5{,}0\,\text{cm}$ ja $2{,}0\,\text{cm}$ tunnetaan kahden numeron tarkkuudella.
-**Järkevyys:** Harkon tilavuus on $100\,\text{cm}^3$. Saman tilavuuden vesi olisi $100\,\text{g}$. Kulta on noin 19 kertaa niin tiheää kuin vesi. Siksi massa on noin $19 \cdot 100\,\text{g} \approx 1{,}9\,\text{kg}$.
+**Järkevyys:** Harkon tilavuus on $100\,\text{cm}^3$. Saman tilavuuden veden massa olisi $100\,\text{g}$. Kulta on noin 19 kertaa niin tiheää kuin vesi. Siksi massa on noin $19 \cdot 100\,\text{g} \approx 1{,}9\,\text{kg}$.
 
 ## fy1-7-L2-02
 **Annettu:** etanolin tilavuus $V = 2{,}5\,\text{dm}^3$ ja tiheys $\rho = 790\,\tfrac{\text{kg}}{\text{m}^3}$
@@ -66,7 +66,7 @@
 **Muunnokset:** Tiheyden yksikkö on $\text{kg/m}^3$, ja siinä on kuutiometri. Siksi tilavuus muunnetaan kuutiometreiksi: $2{,}5\,\text{dm}^3 = 2{,}5 \cdot 10^{-3}\,\text{m}^3 = 0{,}0025\,\text{m}^3$. Muunnos perustuu siihen, että $1\,\text{dm}^3 = 10^{-3}\,\text{m}^3$.
 **Sijoitus:** $m = 790\,\tfrac{\text{kg}}{\text{m}^3} \cdot 0{,}0025\,\text{m}^3 = 1{,}975\,\text{kg}$
 **Vastaus:** $2{,}0\,\text{kg}$. Vastauksessa on kaksi merkitsevää numeroa kuten tilavuudessa $2{,}5\,\text{dm}^3$.
-**Järkevyys:** Kaksi ja puoli litraa vettä on $2{,}5\,\text{kg}$. Etanolin tiheys on pienempi kuin veden. Siksi etanolin massa on hieman pienempi, noin $0{,}79 \cdot 2{,}5\,\text{kg} \approx 2{,}0\,\text{kg}$.
+**Järkevyys:** Kahden ja puolen litran vesimäärän massa on $2{,}5\,\text{kg}$. Etanolin tiheys on pienempi kuin veden. Siksi etanolin massa on hieman pienempi, noin $0{,}79 \cdot 2{,}5\,\text{kg} \approx 2{,}0\,\text{kg}$.
 
 ## fy1-7-L2-03
 **Annettu:** metallikappaleen massa $m = 89{,}0\,\text{g}$; kuva mittalasista ennen ja jälkeen kappaleen upottamisen
@@ -98,7 +98,7 @@ $$\frac{V_\text{Al}}{V_\text{Cu}} = \frac{\rho_\text{Cu}}{\rho_\text{Al}}$$
 **Muunnokset:** Ei tarvita. Tiheydet ovat samassa yksikössä. Massa $m$ supistuu pois.
 **Sijoitus:** $\dfrac{V_\text{Al}}{V_\text{Cu}} = \dfrac{8960\,\tfrac{\text{kg}}{\text{m}^3}}{2700\,\tfrac{\text{kg}}{\text{m}^3}} = 3{,}32$
 **Vastaus:** $3{,}32$ kertaa. Vastauksessa on kolme merkitsevää numeroa. Taulukon tiheydet on annettu kolmen merkitsevän numeron tarkkuudella ($8{,}96\,\text{g/cm}^3$ ja $2{,}70\,\text{g/cm}^3$).
-**Järkevyys:** Alumiinin tiheys on pienempi. Siksi alumiinia tarvitaan suurempi tilavuus, jotta massa on sama. Laske pyöristetyillä luvuilla: $3 \cdot 2700 = 8100$ ja $4 \cdot 2700 = 10\,800$. Suhde $8960 : 2700$ on siis kolmen ja neljän välissä ja lähempänä kolmea. Tulos $3{,}32$ sopii tähän.
+**Järkevyys:** Alumiinin tiheys on pienempi. Siksi alumiinia tarvitaan suurempi tilavuus, jotta massa on sama. Kerro luku $2700$ kokonaisluvuilla $3$ ja $4$: $3 \cdot 2700 = 8100$ ja $4 \cdot 2700 = 10\,800$. Suhde $8960 : 2700$ on siis kolmen ja neljän välissä ja lähempänä kolmea. Tulos $3{,}32$ sopii tähän.
 
 ## fy1-7-L3-02
 **Annettu:** alumiini $V_1 = 100\,\text{cm}^3$, $\rho_1 = 2{,}70\,\tfrac{\text{g}}{\text{cm}^3}$ ja rauta $V_2 = 50\,\text{cm}^3$, $\rho_2 = 7{,}87\,\tfrac{\text{g}}{\text{cm}^3}$; tilavuudet lasketaan yhteen
@@ -136,7 +136,7 @@ $$L = \frac{V}{A} = \frac{m}{\rho\,\pi r^2}$$
 ## fy1-7-L1-08
 **Annettu:** lyijypainon tilavuus $V = 5{,}00\,\text{cm}^3$ ja lyijyn tiheys $\rho = 11{,}3\,\tfrac{\text{g}}{\text{cm}^3}$
 **Kysytty:** painon massa $m$ grammoina
-**Periaate:** Paino on kauttaaltaan lyijyä. Siksi massa on suoraan verrannollinen tilavuuteen. Verrannollisuuskerroin on lyijyn tiheys.
+**Periaate:** Lyijypaino on kauttaaltaan lyijyä. Siksi massa on suoraan verrannollinen tilavuuteen. Verrannollisuuskerroin on lyijyn tiheys.
 **Kaava:** Kaavasta $\rho = \dfrac{m}{V}$ ratkaistaan massa: $m = \rho V$
 **Muunnokset:** Ei tarvita. Tilavuus on kuutiosenttimetreinä ja tiheys yksikössä $\text{g/cm}^3$. Siksi $\text{cm}^3$ supistuu ja jäljelle jää gramma.
 **Sijoitus:** $m = 11{,}3\,\tfrac{\text{g}}{\text{cm}^3} \cdot 5{,}00\,\text{cm}^3 = 56{,}5\,\text{g}$
@@ -152,7 +152,7 @@ $$L = \frac{V}{A} = \frac{m}{\rho\,\pi r^2}$$
 **Muunnokset:** Ei tarvita. Massa on grammoina ja tilavuus kuutiosenttimetreinä, kuten kysytty yksikkö $\text{g/cm}^3$.
 **Sijoitus:** $\rho = \dfrac{135\,\text{g} - 0\,\text{g}}{50{,}0\,\text{cm}^3 - 0\,\text{cm}^3} = 2{,}70\,\tfrac{\text{g}}{\text{cm}^3}$
 **Vastaus:** $2{,}7\,\tfrac{\text{g}}{\text{cm}^3}$, kaksi merkitsevää numeroa, koska suora sovitetaan silmällä. Silmällä sovitus vaihtelee. Siksi noin $2{,}62\text{–}2{,}78\,\text{g/cm}^3$ on hyvä vastaus. Taulukossa alumiinin tiheys on $2{,}70\,\text{g/cm}^3$. Aine on siis alumiinia.
-**Järkevyys:** Suora kulkee origon kautta, kuten pitääkin. Kappaleen, jonka tilavuus on nolla, massa on nolla. Tarkistus: $27{,}3\,\text{g} : 10{,}0\,\text{cm}^3 = 2{,}73\,\tfrac{\text{g}}{\text{cm}^3}$ ja $135{,}4\,\text{g} : 50{,}0\,\text{cm}^3 = 2{,}71\,\tfrac{\text{g}}{\text{cm}^3}$. Jokainen piste antaa lähes saman arvon.
+**Järkevyys:** Suora pakotettiin kulkemaan origon kautta. Siksi tarkistetaan sen sijaan, että pisteet ovat suoran molemmin puolin. Niin ne ovat: kaksi pistettä on suoran alapuolella ja kolme yläpuolella. Tarkistus: $27{,}3\,\text{g} : 10{,}0\,\text{cm}^3 = 2{,}73\,\tfrac{\text{g}}{\text{cm}^3}$ ja $135{,}4\,\text{g} : 50{,}0\,\text{cm}^3 = 2{,}71\,\tfrac{\text{g}}{\text{cm}^3}$. Jokainen piste antaa lähes saman arvon.
 
 ## fy1-7-L2-06
 **Annettu:** taulukon mittauspisteet $(V;\ m_\text{yht})$: $(20{,}0\,\text{cm}^3;\ 103{,}6\,\text{g})$, $(40{,}0\,\text{cm}^3;\ 121{,}2\,\text{g})$, $(60{,}0\,\text{cm}^3;\ 140{,}5\,\text{g})$, $(80{,}0\,\text{cm}^3;\ 158{,}9\,\text{g})$ ja $(100{,}0\,\text{cm}^3;\ 176{,}8\,\text{g})$

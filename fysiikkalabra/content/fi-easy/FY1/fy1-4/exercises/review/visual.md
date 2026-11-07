@@ -1,13 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: b65ca39a5704ef4c
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: acf8f3273c02a82c
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- Untouched 'Oppilaan väli' remains in fy1-4 solutions while fy1-5 now says 'opiskelija'; optional harmonisation only.
 
 ## Checked
-- solutions.md one-line significant-figures reason.
-- No captures opened (light mode, judged from the diff). Fi-easy: sentences stay short and plain, notation and units in LaTeX with decimal comma, changes match the Finnish fix.
+- exercises.json/solutions.md: units set in \text{} math, tfrac unit factors in Järkevyys lines, parentheses around (0.475 ± 0.075); notation consistent
+- Changes mirror the Finnish fix in fi-easy; no notation, unit or decimal-comma error introduced.

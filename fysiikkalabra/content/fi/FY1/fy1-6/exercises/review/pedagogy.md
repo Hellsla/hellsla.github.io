@@ -1,13 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: ad8fb66cddb77ae3
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 4d9d133ebee00405
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- Raskaamman pallon virhekäsityksen palaute selittää nyt, miksi väite on osin tosi; hyvä.
+- none
 
 ## Checked
-- exercises.json, solutions.md
-- Arvioitu: muutosten vaikutus oppimispolkuun, palautteen korjaavuus (ei ennenaikaista vastauksen paljastamista), termien johdonmukaisuus, suomen luettavuus.
+- exercises diff: Mars wording 'ilmanvastus jätetään huomiotta', feedback 'Maa vetää sitä heikommin' (context Earth, correct), 'Kaava' lines no longer repeat the formula, grid-reading note rewritten ('ruudukon risteyksissä, joten ne ovat tarkkoja'); answers and levels unchanged.
+- Language fi: matches the Finnish fixes; fi-easy stays plain Finnish.

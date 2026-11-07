@@ -1,13 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 84947dbee0c76ca6
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: 1cdda49c2175b0d8
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- Järkevyys for 2,5 m/s (9 km/h): "kävelijälle hyvin reipas vauhti" is generous (9 km/h is race-walking pace); "hidas hölkkä" alone would suffice. Not an error.
 
 ## Checked
-- diff exercises.json, solutions.md, answers.py (unit wording, L2-08 distractor feedback, L3-01 Voyager, L3-02 rounding reason, uncertainty notation Δt).
-- Recomputed L3-01: 31,0 AU / 0,0088602 AU/vrk = 3498,8 vrk → 3,50·10³ (key 3500, tolerance 0,02); 2018-11-05 + 3499 vrk = 4.6.2028 ("kesäkuu 2028" right); 1 AU ≈ 112,9 vrk ("noin 110 vrk"). L3-02: 2·150 AU/c = 41,58 h → 41,6. L2-08: v = −1,0 m/s on the return trip is right.
+- Δs = vt now used where the distance travelled is asked (5,5 · 20 = 110 m; 360/45 = 8,0 m/s; 15 · 14 = 210 m; 4500/10 = 450 s; 343 · 5,0 = 1,7 km): dropping the unstated "s0 = 0" assumption is correct, since Δs = vt needs no starting point
+- average speed = change in position / length of interval: correct for this forward-only cyclist and consistent with the solution
+- oppilas → opiskelija; L2 kärry reword keeps data (7,0 m at 2,0 s, 21 m at 6,0 s)
+- answers.py unchanged; en and fi-easy match the fi fixes

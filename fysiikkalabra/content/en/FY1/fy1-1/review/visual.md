@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 3aa00aef52592794
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: f0465f9b9d84a4b5
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- lesson: the star/planet sentence no longer defines a star ("The energy of a Sun-like star is released in fusion reactions..."); optionally add one clause saying a star is a body that radiates its own energy.
-- cosmic-address figure: the longer English label "Earth and Moon" now ends close to the dashed orbit ellipse (about 275 px); acceptable, shorter than before the box shift.
-- for fi: "Aurinkokunnan planeettojen alue" is long next to 10^13 m in the Finnish figure; check at 390 px.
+- none
 
 ## Checked
-- diff of lesson.md, inquiry.json, exit-ticket.json, figures.json, figures.py, sims (fy1-1); figure changes judged from the lesson.md SVG rendered locally with KaTeX (no stale shots used); rendered scale-axis, matter-ladder, cosmic-address
+- Rendered fy1-1 scale ladder (10^n m labels, width 96 on 100 px pitch) and interactions panel (beta^- label) at 390 and 1000 px: no clipping or overlap; label reads beta^- -hajoaminen / beta^- decay; sqrt(10) rule and beta-minus notation read correctly.
+- Notation in changed passages is LaTeX with thin-space units; decimal comma/point correct for the language.

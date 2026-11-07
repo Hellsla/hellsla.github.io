@@ -1,13 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: c93916da7159938e
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: 30025219559974fb
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- none that affect correctness
+- none
 
 ## Checked
-- diff since edb368de4 (lesson.md, inquiry.json, exit-ticket.json, figures/sim/answers): inq-check2 answer 2,08 % (0,05/2,40 recomputed); lesson.md diff is the regenerated SVG only (no figures.py change)
-- numbers recomputed independently in Python; physics guardrails 1-7 on the changed passages
+- Uncertainty definition shortened to 'arvio siitä, kuinka suuri mittausvirhe voi olla': correct and consistent with the rest of the section.
+- Rounding example now 3,18 s +- 0,12 s (unit on both): correct notation; 'numeroita, joihin epävarmuuden vuoksi ei voi luottaa' states the reason correctly.
+- Added sentence: a precise but miscalibrated instrument gives tightly grouped readings in the wrong place: correct picture of good repeatability with systematic error.
+- Explain model answer (repeatability = closeness of repeated results to each other, accuracy = closeness to true value) is correct and matches en/fi-easy.
+- fi-easy wording is clear plain Finnish and says the same as the Finnish fix.

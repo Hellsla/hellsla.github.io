@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 65a2c477b29acac2
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: 0f5b4ea186d4db80
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,4 +9,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368
 - none
 
 ## Checked
-- Lesson diff: inquiry.json ((s2-s1):(t2-t1) in place of Δs:Δt, rounding of 1,7 m explained), lesson.md (source criticism, objective logging), figures.py (velocity arrow blue, dimension line grey).
+- Diff only: pre-test wording, 'paristot' in fair-test feedback, 'useita arvoja tasavälein' sentence, 'vastaavat ennustetta epävarmuuden rajoissa', epsilon_max phrasing, 'time measurement' relative uncertainty; meaning unchanged, no answer disclosed, fi/en/fi-easy aligned.

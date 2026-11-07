@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 544b7ae791e33883
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: b66beeda439758ca
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,4 +9,5 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368
 - none
 
 ## Checked
-- sim.js (velocity arrows blue, ball identity colours kept for balls/graph), exit-ticket.json (6,06), inquiry.json, lesson.md (reading of m/s^2), lesson-answers.py.
+- fy1-6 diff: v = g\,t spacing everywhere (title, meta, exit ticket, inquiry, solutions), consistent in all uses; 'Teräskuulan', en-dash range in aria-label; no change to tasks, options or feedback logic.
+- Language fi-easy: matches the Finnish fixes; fi-easy stays plain Finnish.

@@ -1,13 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: eec42dc6115fb05b
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: 7e7531b4f666d267
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- ei huomautettavaa
+- fy1-5 figure: the two lines are told apart by colour and the end labels; the alt text does not name colours, so nothing to change.
 
 ## Checked
-- fy1-4 lesson.md, inquiry.json; kuvien osalta lähdekoodi/SVG (ei kuvakaappauksia, kevyt katselmointi)
-- Uusi mallikäsite-kappale, interpolointi/ekstrapolointi ja kokonaislukumerkintä A=(0 min; 20 C) ovat luettavia ja LaTeX-yksiköt kunnossa; kuvaajan kuvaus (aria-label) ja kärryn tehtäväteksti selkeitä.
+- lesson.md (table header units \text, one wording), inquiry.json (feedback wording, units in \text{}); no figures.py change
+- Changes mirror the Finnish fix in fi; no notation, unit or decimal-comma error introduced.

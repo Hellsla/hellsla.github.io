@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 5b9d5a30105fc9a2
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: 65a7d4ef6f38eb82
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- none beyond wording; checked units/decimal comma/\,\text notation in all changed lines ($2{,}4\,\text{t}$, $1{,}8\,\text{t}$ etc. correct).
 
 ## Checked
-- 0,500/0,420 item, (s2-s1)/(t2-t1) notation, reaction-time sentence, solutions.md remarks.
-- No captures opened (light mode, judged from the diff). Fi-easy: sentences stay short and plain, notation and units in LaTeX with decimal comma, changes match the Finnish fix.
+- Exercise and solution diff read for notation (decimal comma, thin-space units, \text) and readable language; no figures changed.

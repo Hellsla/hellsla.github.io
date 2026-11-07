@@ -98,7 +98,7 @@ def ladder():
     base = 236
     for i, (x, h) in enumerate(zip(xs, hs)):
         f.rect(x, base - h, bw, h, COLD_LIGHT, COLD, 2.5, rx=3)
-        f.tex(x + bw / 2, base - h - 22, rf"10^{{{i - 15}}}", "middle", INK, w=90)
+        f.tex(x + bw / 2, base - h - 22, rf"10^{{{i - 15}}}\,\text{{m}}", "middle", INK, w=96)
     for i in range(5):
         f.arrow(xs[i] + bw + 6, base - 14, xs[i + 1] - 6, base - 14, MUTED, 2, 9)
         f.tex((xs[i] + bw + xs[i + 1]) / 2, base + 24, r"\cdot 10", "middle", HEAT, w=56)
@@ -258,7 +258,7 @@ def object_types():
 def interactions():
     f = Fig("fy11-forces", 420, "Kaaviokuva, ei mittakaavassa, neljä paneelia. Gravitaatio: Maa kiertää Aurinkoa, ja voima osoittaa Maasta kohti Aurinkoa. "
             "Sähkömagneettinen vuorovaikutus: positiivinen ydin ja negatiivinen elektroni vetävät toisiaan. Vahva vuorovaikutus: protonit ja neutronit "
-            "pysyvät ytimessä, ja protonin sisällä on kolme kvarkkia. Heikko vuorovaikutus: beetahajoamisessa neutroni muuttuu protoniksi, ja "
+            "pysyvät ytimessä, ja protonin sisällä on kolme kvarkkia. Heikko vuorovaikutus: beetamiinushajoamisessa neutroni muuttuu protoniksi, ja "
             "syntyy elektroni ja antineutriino.")
     W, H, g = 282, 196, 12
     panels = [(12, 12, "gravitaatio"), (12 + W + g, 12, "sähkömagneettinen"), (12, 12 + H + g, "vahva"), (12 + W + g, 12 + H + g, "heikko")]
@@ -300,7 +300,7 @@ def interactions():
     f.tex(x + 254, y + 56, r"\text{e}^-", "start", INK, w=34)
     f.add(f'<line x1="{n(x + 176)}" y1="{n(y + 116)}" x2="{n(x + 222)}" y2="{n(y + 144)}" stroke="{MUTED}" stroke-width="2" stroke-dasharray="4 3"/>')
     f.tex(x + 240, y + 150, r"\bar{\nu}", "middle", MUTED, w=30)
-    f.tex(x + W / 2, y + 178, r"\text{beetahajoaminen}", "middle")
+    f.tex(x + W / 2, y + 178, r"\beta^{-}\text{-hajoaminen}", "middle")
     return f.svg()
 
 

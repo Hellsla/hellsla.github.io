@@ -1,12 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 4a40e8df2377921f
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 3e9eeb5830f9cef2
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- Photogate: speed at the midpoint of blocking = average speed under constant acceleration; 0.204 s, 0.459 s, difference 0.255 s recomputed, matches.
+- none
 
 ## Checked
-- Diff of exercises.json, solutions.md and answers.py since origin/main; changed numbers recomputed by hand or in Python where they changed (substitutions, rounding, reasonableness checks); no answer or correct option changed.
+- L1 Mars: "ilmanvastus jätetään huomiotta" states the model condition; 3,71 · 6,0 = 22 m/s unchanged
+- L2-08 reason feedback "Maa myös vetää sitä heikommin": correct (weight ∝ m, inertia ∝ m, a = g); the correct option and other feedback unchanged
+- planet B: readings at grid crossings; removal of the 3 % sentence leaves the tolerance in exercises.json unchanged
+- hammer/feather Kysytty now allows "same time": correct, not leading
+- Kaava lines: duplicate formula removed, no content change; answers.py unchanged
+- en: same changes as fi, meaning preserved

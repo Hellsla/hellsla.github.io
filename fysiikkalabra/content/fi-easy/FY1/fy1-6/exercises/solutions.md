@@ -2,7 +2,7 @@
 **Annettu:** pallo lähtee levosta, $t = 3{,}0\,\text{s}$, putoamiskiihtyvyys $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** pallon nopeus $v$ yksikössä $\text{m/s}$
 **Periaate:** Ilmanvastus jätetään huomiotta, joten pallo on vapaassa pudotuksessa. Silloin nopeus kasvaa joka sekunti saman verran. Levosta lähteneen kappaleen nopeus on suoraan verrannollinen aikaan.
-**Kaava:** $v = g\,t$. Kaava on jo ratkaistu kysytyn nopeuden suhteen: $v = g\,t$
+**Kaava:** $v = g\,t$. Kaava on jo ratkaistu kysytyn nopeuden suhteen.
 **Muunnokset:** Aika on sekunteina ja $g$ yksikössä $\text{m/s}^2$. Tulos tulee siis suoraan yksikössä $\text{m/s}$. Muunnoksia ei tarvita.
 **Sijoitus:** $v = 9{,}81\,\text{m/s}^2 \cdot 3{,}0\,\text{s} = 29{,}43\,\text{m/s}$
 **Vastaus:** $29\,\text{m/s}$, kaksi merkitsevää numeroa kuten ajassa $3{,}0\,\text{s}$.
@@ -12,7 +12,7 @@
 **Annettu:** omena lähtee levosta, $t = 0{,}80\,\text{s}$, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** omenan nopeus $v$ osuessaan maahan yksikössä $\text{m/s}$
 **Periaate:** Ilmanvastus jätetään huomiotta, joten omena on vapaassa pudotuksessa ja lähtee levosta. Silloin nopeus on putoamiskiihtyvyyden ja kuluneen ajan tulo.
-**Kaava:** $v = g\,t$. Kaava on jo ratkaistu kysytyn nopeuden suhteen: $v = g\,t$
+**Kaava:** $v = g\,t$. Kaava on jo ratkaistu kysytyn nopeuden suhteen.
 **Muunnokset:** Aika on annettu sekunteina, joten muunnoksia ei tarvita.
 **Sijoitus:** $v = 9{,}81\,\text{m/s}^2 \cdot 0{,}80\,\text{s} = 7{,}848\,\text{m/s}$
 **Vastaus:** $7{,}8\,\text{m/s}$, kaksi merkitsevää numeroa kuten ajassa $0{,}80\,\text{s}$.
@@ -22,7 +22,7 @@
 **Annettu:** kivi lähtee levosta, $t = 4{,}0\,\text{s}$, Kuun putoamiskiihtyvyys $g_\text{Kuu} = 1{,}62\,\text{m/s}^2$ (tehtävänannosta)
 **Kysytty:** kiven nopeus $v$ yksikössä $\text{m/s}$
 **Periaate:** Kuussa ei ole ilmakehää, joten kivi putoaa vapaasti. Levosta lähteneen vapaasti putoavan kappaleen nopeus on kiihtyvyyden ja ajan tulo. Kiihtyvyys on tässä Kuun $g$.
-**Kaava:** $v = g_\text{Kuu}\,t$. Kaava on jo ratkaistu kysytyn nopeuden suhteen: $v = g_\text{Kuu}\,t$
+**Kaava:** $v = g_\text{Kuu}\,t$. Kaava on jo ratkaistu kysytyn nopeuden suhteen.
 **Muunnokset:** Aika on sekunteina ja kiihtyvyys yksikössä $\text{m/s}^2$. Tulos tulee siis yksikössä $\text{m/s}$. Muunnoksia ei tarvita.
 **Sijoitus:** $v = 1{,}62\,\text{m/s}^2 \cdot 4{,}0\,\text{s} = 6{,}48\,\text{m/s}$
 **Vastaus:** $6{,}5\,\text{m/s}$, kaksi merkitsevää numeroa kuten ajassa $4{,}0\,\text{s}$.
@@ -43,7 +43,7 @@
 **Annettu:** kappale lähtee levosta, $t = 6{,}0\,\text{s}$, Marsin putoamiskiihtyvyys $g_\text{Mars} = 3{,}71\,\text{m/s}^2$ (tehtävänannosta)
 **Kysytty:** kappaleen nopeus $v$ yksikössä $\text{m/s}$
 **Periaate:** Tehtävässä ei ole ilmanvastusta, joten kappale on vapaassa pudotuksessa. Nopeus kasvaa joka sekunti saman verran. Kun kappale lähtee levosta, nopeus on $g\,t$ Marsin $g$:llä.
-**Kaava:** $v = g_\text{Mars}\,t$. Kaava on jo ratkaistu kysytyn nopeuden suhteen: $v = g_\text{Mars}\,t$
+**Kaava:** $v = g_\text{Mars}\,t$. Kaava on jo ratkaistu kysytyn nopeuden suhteen.
 **Muunnokset:** Aika on sekunteina ja kiihtyvyys yksikössä $\text{m/s}^2$, joten muunnoksia ei tarvita.
 **Sijoitus:** $v = 3{,}71\,\text{m/s}^2 \cdot 6{,}0\,\text{s} = 22{,}26\,\text{m/s}$
 **Vastaus:** $22\,\text{m/s}$, kaksi merkitsevää numeroa kuten ajassa $6{,}0\,\text{s}$.
@@ -63,7 +63,7 @@
 **Annettu:** kuvaajat, joissa kappaleet on pudotettu levosta kahdella ilmattomalla planeetalla A ja B; planeetan A kappaleen aika $t_\text{A} = 5{,}0\,\text{s}$
 **Kysytty:** aika $t_\text{B}$, jonka kuluttua planeetan B kappaleella on sama nopeus kuin planeetan A kappaleella ajan $t_\text{A}$ kuluttua
 **Periaate:** Vapaassa pudotuksessa levosta nopeus kasvaa joka sekunti saman verran. Siksi nopeus on $v = g\,t$. Kuvaaja $(t, v)$ on origosta alkava suora, ja sen kulmakerroin on planeetan $g$. Lasketaan ensin A:n nopeus. Sitten lasketaan aika, jonka B tarvitsee samaan nopeuteen.
-**Kuvaajan lukeminen:** Planeetan A suora kulkee ruudukon risteyksen $(5{,}0\,\text{s};\, 20\,\text{m/s})$ kautta. Siksi A:n kappaleella on $v_\text{A} = 20\,\text{m/s}$ ajan $5{,}0\,\text{s}$ kuluttua. Planeetan B suora kulkee risteyksen $(5{,}0\,\text{s};\, 40\,\text{m/s})$ kautta. Lukemat ovat tarkkoja ruudukosta. Siksi vastauksen hyväksytään poikkeavan korkeintaan $3\,\%$.
+**Kuvaajan lukeminen:** Planeetan A suora kulkee ruudukon risteyksen $(5{,}0\,\text{s};\, 20\,\text{m/s})$ kautta. Siksi A:n kappaleella on $v_\text{A} = 20\,\text{m/s}$ ajan $5{,}0\,\text{s}$ kuluttua. Planeetan B suora kulkee risteyksen $(5{,}0\,\text{s};\, 40\,\text{m/s})$ kautta. Lukemat ovat ruudukon risteyksissä. Siksi ne ovat tarkkoja.
 **Kaava:** $g_\text{B} = \dfrac{v}{t}$ ja $t_\text{B} = \dfrac{v_\text{A}}{g_\text{B}}$
 **Muunnokset:** Ei tarvita: nopeudet ovat yksikössä $\text{m/s}$ ja ajat sekunteina.
 **Sijoitus:** $g_\text{B} = \dfrac{40\,\text{m/s}}{5{,}0\,\text{s}} = 8{,}0\,\text{m/s}^2$ ja $t_\text{B} = \dfrac{20\,\text{m/s}}{8{,}0\,\text{m/s}^2} = 2{,}5\,\text{s}$
@@ -121,7 +121,7 @@
 **Järkevyys:** Erotus on positiivinen, koska ilma hidastaa palloa. Se on pieni osa nopeudesta: $\dfrac{4{,}4}{29{,}4} \approx 15\,\%$. Kolmen sekunnin pudotuksessa ilmanvastus on jo merkittävä mutta ei hallitseva. Se sopii pallolle.
 
 ## fy1-6-L1-06
-**Kysytty:** kumpi osuu Kuun pinnalla maahan ensin, vasara vai höyhen.
+**Kysytty:** osuuko vasara vai höyhen ensin Kuun pintaan vai osuvatko ne yhtä aikaa.
 **Periaate:** Kuussa ei ole ilmakehää, joten ilmanvastusta ei ole. Kappaleet ovat vapaassa pudotuksessa. Silloin levosta lähteneen kappaleen nopeus on $v = g\,t$. Putoamiskiihtyvyys $g$ on sama kaikille kappaleille. Massalla ei ole väliä.
 **Mallivastaus:** Vasara ja höyhen osuvat maahan yhtä aikaa. Molempien nopeus kasvaa joka sekunti saman verran ($1{,}62\,\text{m/s}$ Kuussa). Niillä on siis koko matkan sama nopeus. Maassa höyhen putoaa hitaammin vain siksi, että ilma hidastaa eniten kevyttä ja leveää kappaletta.
 

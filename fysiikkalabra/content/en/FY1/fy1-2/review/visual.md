@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 3d04085ff61812ac
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-3 diff since the round-2 commit only)
+CONTENT-HASH: 6d1679b80c1fc06e
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,5 +9,5 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-3 diff since the ro
 - none
 
 ## Checked
-- git diff edb368de4 of the part's files (en fy1-2 lesson): Voyager 2 d0 119,0 AU, 142,2 AU / 19,7 h feedback, source_note, table, calc text, significant-figure paragraph of lesson.md, sim.js D0 constant (no layout change); numbers in LaTeX with thin-space units, decimal comma/point per language consistent between feedback, model and reflection text.
-- source diff only (text, alt text, numbers); no figure geometry or layout changed, so no new captures were opened
+- Word-diff of lesson, inquiry, exit ticket: wording, \tfrac{s}{c}, units on s values; no figures.py change in this part, no figure label moved, so no render.
+- Notation in changed passages is LaTeX with thin-space units; decimal comma/point correct for the language.

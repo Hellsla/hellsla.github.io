@@ -1,12 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 4231a65d5cc66205
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: d31ac21fe18b06ba
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- figures.py scale-axis — "yksi asteikkoväli oikealle ⇒ koko·10^5" is right for the minor ticks (every 5 exponents), but a reader may take the labelled ticks (every 10) as the asteikkoväli. — Optional: "yksi pieni asteikkoväli" or label every 5.
+- none
 
 ## Checked
-- lesson.md (Planck length, kymmenpotenssimuoto, matter ladder: protons "ja yleensä myös neutronit", nucleons of three quarks; stars' fusion, planets' reflected light and own thermal radiation; misconception box), inquiry.json (decimal feedback, step-count and midpoint answers, protonin koko feedbacks, Jupiter ~1/1000 M_sun, havaittava maailmankaikkeus), figures.py diffs (scale-axis legend vs tick spacing 5, havaittava maailmankaikkeus label, matter-ladder electron branch, planet-region 10^13 m). Every changed number recomputed; physics guardrails 1–7 applied to the changed passages only.
+- Order-of-magnitude rule now uses the limit sqrt(10) ~ 3,16, the logarithmic midpoint between 10^n and 10^(n+1): correct, and consistent with the examples 1,7 m -> 10^0 m and 8,8e3 m -> 10^4 m (exercise solutions' 'factor below about 3' stays consistent).
+- 'beetahajoaminen' -> 'beetamiinushajoaminen ($\beta^{-}$-hajoaminen)' in theory, both inquiry feedbacks (K-40 is beta-minus: n -> p + e- + antineutrino) and the fy11-forces figure label/aria; no 'beetahajoaminen' left in lesson, inquiry or exit ticket.
+- Ladder figure labels now carry the unit (10^-15 m ... 10^-10 m): values unchanged and match the aria-label (5 steps, factor 10^5).

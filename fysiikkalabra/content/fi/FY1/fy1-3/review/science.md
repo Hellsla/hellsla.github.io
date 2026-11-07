@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 54f5f1ae106f642a
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: cfa35f6889715ef5
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,5 +9,7 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368
 - none
 
 ## Checked
-- diff inquiry.json (check-2 key 2.08), lesson-answers.py, lesson.md (the example-plot SVG moved unchanged into the worked example; figures.py unchanged).
-- Recomputed check-2: mean 12,00 s : 5 = 2,40 s, half-range 0,05 s → 2,083 %. A relative tolerance of 0,05 accepts the shown answer 2 % and 2,1 %. Mistake 4,2 % (0,10 : 2,40) still right.
+- Uncertainty definition shortened to 'arvio siitä, kuinka suuri mittausvirhe voi olla': correct and consistent with the rest of the section.
+- Rounding example now 3,18 s +- 0,12 s (unit on both): correct notation; 'numeroita, joihin epävarmuuden vuoksi ei voi luottaa' states the reason correctly.
+- Added sentence: a precise but miscalibrated instrument gives tightly grouped readings in the wrong place: correct picture of good repeatability with systematic error.
+- Explain model answer (repeatability = closeness of repeated results to each other, accuracy = closeness to true value) is correct and matches en/fi-easy.

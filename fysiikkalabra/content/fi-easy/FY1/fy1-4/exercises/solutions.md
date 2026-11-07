@@ -1,9 +1,9 @@
 ## fy1-4-L1-01
 **Annettu:** suoran kaksi pistettä $(t_1;\ s_1) = (1{,}0\,\text{s};\ 2{,}3\,\text{m})$ ja $(t_2;\ s_2) = (7{,}0\,\text{s};\ 10{,}1\,\text{m})$
-**Kysytty:** suoran kulmakerroin $k$ yksikössä m/s
+**Kysytty:** suoran kulmakerroin $k$ yksikössä $\text{m/s}$
 **Periaate:** Suoralla $s$ kasvaa joka kohdassa yhtä paljon aikayksikköä kohti. Siksi kulmakerroin on sama, mitkä tahansa kaksi suoran pistettä valitaan. Pisteet ovat suoralla ja kaukana toisistaan. Silloin lukemavirhe vaikuttaa tulokseen vähän.
 **Kaava:** $k = \dfrac{\Delta s}{\Delta t} = \dfrac{s_2 - s_1}{t_2 - t_1}$
-**Muunnokset:** Ei tarvita. Matkat ovat metreinä ja ajat sekunteina. Tulos tulee siksi suoraan yksikössä m/s.
+**Muunnokset:** Ei tarvita. Matkat ovat metreinä ja ajat sekunteina. Tulos tulee siksi suoraan yksikössä $\text{m/s}$.
 **Sijoitus:** $k = \dfrac{10{,}1\,\text{m} - 2{,}3\,\text{m}}{7{,}0\,\text{s} - 1{,}0\,\text{s}} = \dfrac{7{,}8\,\text{m}}{6{,}0\,\text{s}} = 1{,}3\,\text{m/s}$
 **Vastaus:** $1{,}3\,\text{m/s}$, kaksi merkitsevää numeroa. Syy on se, että erotukset $7{,}8\,\text{m}$ ja $6{,}0\,\text{s}$ ovat kahden numeron tarkkuudella.
 **Järkevyys:** Kulmakerroin on positiivinen, koska matka kasvaa ajan mukana. Pisteiden välillä kärry kulkee noin $8\,\text{m}$ noin 6 sekunnissa. Se on noin 1,3 metriä sekunnissa, eli rauhallisen kävelyn vauhti.
@@ -16,7 +16,7 @@
 **Muunnokset:** Ei tarvita. Aika on minuutteina kuten kulmakertoimen yksikössä. Korkeus tulee senttimetreinä.
 **Sijoitus:** $h = 0{,}50\,\tfrac{\text{cm}}{\text{min}} \cdot 30\,\text{min} + 12\,\text{cm} = 15\,\text{cm} + 12\,\text{cm} = 27\,\text{cm}$
 **Vastaus:** $27\,\text{cm}$, kaksi merkitsevää numeroa, kuten kulmakertoimessa $0{,}50$ ja vakiotermissä $12\,\text{cm}$.
-**Järkevyys:** Pinta nousee 30 minuutissa noin $0{,}5 \cdot 30 = 15\,\text{cm}$ alkukorkeudesta $12\,\text{cm}$. Korkeus on siis noin $27\,\text{cm}$. Se on suurempi kuin alussa, kuten täytettäessä pitääkin.
+**Järkevyys:** Pinta nousee 30 minuutissa noin $0{,}5\,\tfrac{\text{cm}}{\text{min}} \cdot 30\,\text{min} = 15\,\text{cm}$ alkukorkeudesta $12\,\text{cm}$. Korkeus on siis noin $27\,\text{cm}$. Se on suurempi kuin alussa, kuten täytettäessä pitääkin.
 
 ## fy1-4-L1-03
 **Annettu:** suora $h = 0{,}60\,\tfrac{\text{cm}}{\text{vrk}} \cdot t + 4{,}0\,\text{cm}$, eli $k = 0{,}60\,\tfrac{\text{cm}}{\text{vrk}}$ ja $b = 4{,}0\,\text{cm}$; pituus $h = 10\,\text{cm}$
@@ -26,11 +26,11 @@
 **Muunnokset:** Ei tarvita. Pituudet ovat senttimetreinä. Kulmakerroin kertoo senttimetrit vuorokaudessa.
 **Sijoitus:** $t = \dfrac{10\,\text{cm} - 4{,}0\,\text{cm}}{0{,}60\,\tfrac{\text{cm}}{\text{vrk}}} = \dfrac{6{,}0\,\text{cm}}{0{,}60\,\tfrac{\text{cm}}{\text{vrk}}} = 10\,\text{vrk}$
 **Vastaus:** $10\,\text{vrk}$, kaksi merkitsevää numeroa. Syy on se, että $6{,}0\,\text{cm}$ ja $0{,}60\,\tfrac{\text{cm}}{\text{vrk}}$ ovat kahden numeron tarkkuudella.
-**Järkevyys:** Nurmikko kasvaa alun $4{,}0\,\text{cm}$:stä kuuden senttimetrin verran. Siihen kuluu noin $6 : 0{,}6 = 10$ vuorokautta. Tarkistus: $0{,}60 \cdot 10 + 4{,}0 = 10\,\text{cm}$.
+**Järkevyys:** Nurmikko kasvaa alun $4{,}0\,\text{cm}$:stä kuuden senttimetrin verran. Siihen kuluu noin $6 : 0{,}6 = 10$ vuorokautta. Tarkistus: $0{,}60\,\tfrac{\text{cm}}{\text{vrk}} \cdot 10\,\text{vrk} + 4{,}0\,\text{cm} = 10\,\text{cm}$.
 
 ## fy1-4-L1-04
 **Annettu:** suoran pisteet $(t_1;\ y_1) = (0{,}0\,\text{h};\ 20{,}0\,\text{cm})$ ja $(t_2;\ y_2) = (4{,}0\,\text{h};\ 14{,}0\,\text{cm})$, missä $y$ on kynttilän pituus
-**Kysytty:** suoran kulmakerroin $k$ yksikössä cm/h
+**Kysytty:** suoran kulmakerroin $k$ yksikössä $\text{cm/h}$
 **Periaate:** Kynttilä lyhenee tasaisesti. Siksi pituus on ajan lineaarinen funktio. Kulmakerroin on pituuden muutos jaettuna ajan muutoksella. Kulmakerroin on negatiivinen, kun suure pienenee.
 **Kaava:** $k = \dfrac{\Delta y}{\Delta t} = \dfrac{y_2 - y_1}{t_2 - t_1}$
 **Muunnokset:** Ei tarvita. Pituudet ovat senttimetreinä ja ajat tunteina.
@@ -41,7 +41,7 @@
 ## fy1-4-L1-05
 **Annettu:** pinossa $N = 250$ arkkia ja massa $m = 1{,}2\,\text{kg}$; massa esitetään origon kautta kulkevalla suoralla
 **Kysytty:** yhden arkin massa, eli kulmakerroin $k$ grammoina arkkia kohti
-**Periaate:** Massa on suoraan verrannollinen arkkien määrään. Siksi suora kulkee origon kautta, ja sen yhtälö on $m = kN$. Kulmakerroin kertoo yhden arkin massan.
+**Periaate:** Massa on suoraan verrannollinen arkkien lukumäärään. Siksi suora kulkee origon kautta, ja sen yhtälö on $m = kN$. Kulmakerroin kertoo yhden arkin massan.
 **Kaava:** $m = kN$, josta $k = \dfrac{m}{N}$
 **Muunnokset:** $1{,}2\,\text{kg} = 1200\,\text{g}$, koska $1\,\text{kg} = 1000\,\text{g}$.
 **Sijoitus:** $k = \dfrac{1200\,\text{g}}{250} = 4{,}8\,\text{g}$
@@ -50,13 +50,13 @@
 
 ## fy1-4-L2-01
 **Annettu:** suoran pisteet $(t_1;\ s_1) = (2{,}0\,\text{min};\ 0{,}30\,\text{km})$ ja $(t_2;\ s_2) = (10{,}0\,\text{min};\ 1{,}50\,\text{km})$
-**Kysytty:** kulmakerroin $k$ yksikössä m/s
+**Kysytty:** kulmakerroin $k$ yksikössä $\text{m/s}$
 **Periaate:** Matka-aikakuvaajan suoran kulmakerroin on matkan muutos jaettuna ajan muutoksella. Se on sama, mitkä tahansa kaksi suoran pistettä valitaan. Yksiköt pitää muuntaa SI-yksiköiksi ennen kuin ilmoittaa tuloksen.
 **Kaava:** $k = \dfrac{\Delta s}{\Delta t} = \dfrac{s_2 - s_1}{t_2 - t_1}$
 **Muunnokset:** $\Delta s = 1{,}50\,\text{km} - 0{,}30\,\text{km} = 1{,}20\,\text{km} = 1200\,\text{m}$ ja $\Delta t = 10{,}0\,\text{min} - 2{,}0\,\text{min} = 8{,}0\,\text{min} = 480\,\text{s}$.
 **Sijoitus:** $k = \dfrac{1200\,\text{m}}{480\,\text{s}} = 2{,}5\,\text{m/s}$
 **Vastaus:** $2{,}5\,\text{m/s}$, kaksi merkitsevää numeroa. Syy on se, että aikaväli $8{,}0\,\text{min}$ on annettu kahden numeron tarkkuudella.
-**Järkevyys:** Tulos on noin $2{,}5 \cdot 3{,}6 = 9\,\text{km/h}$. Tarkistus kilometreillä ja minuuteilla: $1{,}20\,\text{km} : 8{,}0\,\text{min} = 0{,}15\,\text{km/min} = 9\,\text{km/h}$. Se on rauhallisen pyöräilyn vauhti.
+**Järkevyys:** Tulos on noin $2{,}5\,\text{m/s} = 2{,}5 \cdot 3{,}6\,\text{km/h} = 9\,\text{km/h}$. Tarkistus kilometreillä ja minuuteilla: $1{,}20\,\text{km} : 8{,}0\,\text{min} = 0{,}15\,\text{km/min} = 9\,\text{km/h}$. Se on rauhallisen pyöräilyn vauhti.
 
 ## fy1-4-L2-02
 **Annettu:** kuvaajan mittauspisteet $(t;\ s)$: $(1\,\text{s};\ 0{,}6\,\text{m})$, $(2\,\text{s};\ 0{,}8\,\text{m})$, $(3\,\text{s};\ 1{,}6\,\text{m})$, $(4\,\text{s};\ 2{,}1\,\text{m})$, $(5\,\text{s};\ 2{,}4\,\text{m})$ ja $(6\,\text{s};\ 2{,}9\,\text{m})$; kysytty hetki $t = 8{,}0\,\text{s}$
@@ -74,10 +74,10 @@
 **Kysytty:** tyhjän kanisterin massa eli vakiotermi $b$ kilogrammoina
 **Periaate:** Yhteismassa on $m = kV + b$. Vesi lisää massaa kulmakertoimen verran litraa kohti. Kun $V = 0$, jäljelle jää vain tyhjän kanisterin massa. Se on suoran ja $m$-akselin leikkauskohta, eli vakiotermi $b$.
 **Kaava:** $k = \dfrac{m_2 - m_1}{V_2 - V_1}$, ja kun $m_1 = kV_1 + b$, saadaan $b = m_1 - kV_1$
-**Muunnokset:** Ei tarvita. Massat ovat kilogrammoina ja tilavuudet litroina. Siksi $k$ tulee yksikössä kg/l.
+**Muunnokset:** Ei tarvita. Massat ovat kilogrammoina ja tilavuudet litroina. Siksi $k$ tulee yksikössä $\text{kg/l}$.
 **Sijoitus:** $k = \dfrac{9{,}9\,\text{kg} - 3{,}9\,\text{kg}}{9{,}0\,\textsf{l} - 3{,}0\,\textsf{l}} = 1{,}0\,\tfrac{\text{kg}}{\textsf{l}}$ ja $b = 3{,}9\,\text{kg} - 1{,}0\,\tfrac{\text{kg}}{\textsf{l}} \cdot 3{,}0\,\textsf{l} = 0{,}9\,\text{kg}$
 **Vastaus:** $0{,}9\,\text{kg}$, yksi desimaali, kuten annetuissa massoissa $3{,}9\,\text{kg}$ ja $9{,}9\,\text{kg}$.
-**Järkevyys:** Kulmakerroin $1{,}0\,\text{kg/l}$ on veden tiheys. Vesi tunnistetaan siis oikein. Tyhjän muovikanisterin massa on noin $1\,\text{kg}$, joten $0{,}9\,\text{kg}$ on järkevä.
+**Järkevyys:** Kulmakerroin $1{,}0\,\text{kg/l}$ on veden tiheys. Tulos on siis uskottava. Tyhjän muovikanisterin massa on noin $1\,\text{kg}$, joten $0{,}9\,\text{kg}$ on järkevä.
 
 ## fy1-4-L2-04
 **Annettu:** alkumaksu $b = 4{,}0\,\text{€}$ ja kilometrihinta $k = 2{,}5\,\tfrac{\text{€}}{\text{km}}$; matkat $x_1 = 5{,}0\,\text{km}$ ja $x_2 = 10\,\text{km}$
@@ -97,7 +97,7 @@
 **Muunnokset:** Ei tarvita. Paikka on metreinä. Kulmakerroin kertoo metrit sekunnissa.
 **Sijoitus:** $t = \dfrac{0 - 0{,}40\,\text{m}}{0{,}85\,\tfrac{\text{m}}{\text{s}}} = -0{,}4706\,\text{s}$
 **Vastaus:** $-0{,}47\,\text{s}$, kaksi merkitsevää numeroa, kuten kulmakertoimessa $0{,}85\,\tfrac{\text{m}}{\text{s}}$ ja vakiotermissä $0{,}40\,\text{m}$. Miinusmerkki tarkoittaa, että kärry oli radan alussa $0{,}47\,\text{s}$ ennen kellon käynnistystä. Tulos olettaa, että kärry liikkui samalla nopeudella jo ennen kellon käynnistämistä. Syy on se, että suoraa jatketaan mittausalueen ulkopuolelle ($t < 0$).
-**Järkevyys:** Tarkistus: kärry kulkee 0,47 sekunnissa vauhdilla $0{,}85\,\text{m/s}$ noin $0{,}85 \cdot 0{,}47 = 0{,}40\,\text{m}$. Se on yhtä suuri kuin vakiotermi. Tulos on sama kuin tilanteessa, jossa kello olisi käynnistetty $0{,}47\,\text{s}$ aiemmin ja vakiotermi olisi nolla.
+**Järkevyys:** Tarkistus: kärry kulkee 0,47 sekunnissa vauhdilla $0{,}85\,\text{m/s}$ noin $0{,}85\,\tfrac{\text{m}}{\text{s}} \cdot 0{,}47\,\text{s} = 0{,}40\,\text{m}$. Se on yhtä suuri kuin vakiotermi. Tulos on sama kuin tilanteessa, jossa kello olisi käynnistetty $0{,}47\,\text{s}$ aiemmin ja vakiotermi olisi nolla.
 
 ## fy1-4-L3-02
 **Annettu:** kahvin lämpötila $T$: $90\,{}^\circ\text{C}$ ($0\,\text{min}$), $72\,{}^\circ\text{C}$ ($10\,\text{min}$), $60\,{}^\circ\text{C}$ ($20\,\text{min}$) ja $51\,{}^\circ\text{C}$ ($30\,\text{min}$)
@@ -112,7 +112,7 @@
 ## fy1-4-L3-03
 **Annettu:** suora $y = 2{,}0\,x$; $y$-lukeman lukemavirhe on enintään $\Delta y_\text{luku} = 0{,}1$. Kahden lukeman erotuksen $\Delta y$ virhe on siksi pahimmassa tapauksessa $2\,\Delta y_\text{luku} = 2 \cdot 0{,}1 = 0{,}2$; lähekkäin $\Delta x_1 = 4{,}5 - 4{,}0 = 0{,}5$, kaukana $\Delta x_2 = 9{,}0 - 1{,}0 = 8{,}0$
 **Kysytty:** kuinka monta kertaa suurempi on kulmakertoimen suhteellinen epävarmuus lähekkäisistä pisteistä laskettuna
-**Periaate:** Kulmakerroin on $k = \Delta y : \Delta x$. Kun $x$-arvot tunnetaan tarkasti, kulmakertoimen suhteellinen epävarmuus on yhtä suuri kuin erotuksen $\Delta y$ suhteellinen epävarmuus. Suoralla $\Delta y = k\,\Delta x$. Erotus kasvaa siis matkan mukana, mutta lukemavirhe pysyy samana.
+**Periaate:** Kulmakerroin on $k = \Delta y : \Delta x$. Kun $x$-arvot tunnetaan tarkasti, kulmakertoimen suhteellinen epävarmuus on yhtä suuri kuin erotuksen $\Delta y$ suhteellinen epävarmuus. Suoralla $\Delta y = k\,\Delta x$. Erotus kasvaa siis pisteiden välimatkan $\Delta x$ mukana, mutta lukemavirhe pysyy samana. Huomaa: $\Delta y$ ja $\Delta x$ ovat kahden pisteen erotuksia. $\Delta k$ ja $\Delta y_\text{luku}$ ovat epävarmuuksia.
 **Kaava:** $\dfrac{\Delta k}{k} = \dfrac{2\,\Delta y_\text{luku}}{\Delta y} = \dfrac{2\,\Delta y_\text{luku}}{k\,\Delta x}$, joten $\dfrac{(\Delta k : k)_\text{lähellä}}{(\Delta k : k)_\text{kaukana}} = \dfrac{\Delta x_2}{\Delta x_1}$
 **Muunnokset:** Ei tarvita. Suhde on yksikötön.
 **Sijoitus:** Lähellä $\Delta y = 2{,}0 \cdot 0{,}5 = 1{,}0$ ja $\dfrac{\Delta k}{k} = \dfrac{0{,}2}{1{,}0} = 0{,}20$. Kaukana $\Delta y = 2{,}0 \cdot 8{,}0 = 16$ ja $\dfrac{\Delta k}{k} = \dfrac{0{,}2}{16} = 0{,}0125$. Suhde on $\dfrac{0{,}20}{0{,}0125} = \dfrac{8{,}0}{0{,}5} = 16$.
@@ -141,14 +141,14 @@
 
 ## fy1-4-L2-05
 **Annettu:** taulukon mittauspisteet $(m;\ x)$: $(50{,}0\,\text{g};\ 4{,}1\,\text{mm})$, $(100{,}0\,\text{g};\ 8{,}3\,\text{mm})$, $(150{,}0\,\text{g};\ 11{,}8\,\text{mm})$, $(200{,}0\,\text{g};\ 16{,}5\,\text{mm})$, $(250{,}0\,\text{g};\ 20{,}2\,\text{mm})$ ja $(300{,}0\,\text{g};\ 23{,}9\,\text{mm})$
-**Kysytty:** sovitetun suoran kulmakerroin $k$ yksikössä mm/g
+**Kysytty:** sovitetun suoran kulmakerroin $k$ yksikössä $\text{mm/g}$
 **Periaate:** Jousen venymä kasvaa tasaisesti kuorman mukana, kun jousta ei venytetä liikaa. Siksi pisteisiin sopii lineaarinen malli $x = km + b$. Kulmakerroin kertoo venymän lisäyksen yhtä lisägrammaa kohti. Suora piirretään pisteiden joukon keskeltä. Kulmakerroin lasketaan suoran pisteistä, ei mittauspisteistä.
 **Kuvaajan lukeminen:** Pisteet ovat nousevalla suoralla, ja suoran molemmille puolille jää pisteitä. Sovitettu suora kulkee likimain pisteiden $(0\,\text{g};\ 0{,}2\,\text{mm})$ ja $(300\,\text{g};\ 24{,}1\,\text{mm})$ kautta. Pisteet luetaan suoralta, ja ne valitaan kaukana toisistaan.
 **Kaava:** $k = \dfrac{\Delta x}{\Delta m} = \dfrac{x_2 - x_1}{m_2 - m_1}$
 **Muunnokset:** Ei tarvita. Venymä on millimetreinä ja massa grammoina, kuten kysytyssä yksikössä.
 **Sijoitus:** $k = \dfrac{24{,}1\,\text{mm} - 0{,}2\,\text{mm}}{300\,\text{g} - 0\,\text{g}} = \dfrac{23{,}9\,\text{mm}}{300\,\text{g}} = 0{,}0797\,\tfrac{\text{mm}}{\text{g}}$
 **Vastaus:** $0{,}080\,\text{mm/g}$, kaksi merkitsevää numeroa. Syy on se, että suora sovitetaan silmämääräisesti, joten kulmakerroin saadaan vain kahden numeron tarkkuudella. Silmämääräinen sovitus vaihtelee. Siksi noin $0{,}076\text{–}0{,}084\,\text{mm/g}$ on hyvä vastaus.
-**Järkevyys:** Kuorma $100\,\text{g}$ venyttää jousta noin $0{,}080 \cdot 100 = 8\,\text{mm}$. Se vastaa taulukon toista riviä. Suora kulkee lähes origon kautta, kuten pitääkin, koska kuormaton jousi ei veny.
+**Järkevyys:** Kuorma $100\,\text{g}$ venyttää jousta noin $0{,}080\,\tfrac{\text{mm}}{\text{g}} \cdot 100\,\text{g} = 8\,\text{mm}$. Se vastaa taulukon toista riviä. Suora kulkee lähes origon kautta, kuten pitääkin, koska kuormaton jousi ei veny.
 
 ## fy1-4-L2-06
 **Annettu:** taulukon mittauspisteet $(t;\ x)$: $(0{,}0\,\text{s};\ 0{,}82\,\text{m})$, $(1{,}0\,\text{s};\ 1{,}31\,\text{m})$, $(2{,}0\,\text{s};\ 1{,}68\,\text{m})$, $(3{,}0\,\text{s};\ 2{,}22\,\text{m})$, $(4{,}0\,\text{s};\ 2{,}57\,\text{m})$ ja $(5{,}0\,\text{s};\ 3{,}09\,\text{m})$
@@ -174,7 +174,7 @@
 
 ## fy1-4-L3-04
 **Annettu:** taulukon mittauspisteet $(m;\ x)$ välillä $100\text{–}700\,\text{g}$; venymät $8{,}1$, $16{,}3$, $24{,}2$, $32{,}5$, $40{,}1$, $51{,}8$ ja $68{,}9\,\text{mm}$
-**Kysytty:** kuormien väli, jolla lineaarinen malli pätee, sen suoran kulmakerroin $k$ yksikössä mm/g ja perustelu, miksi malli ei päde koko alueella
+**Kysytty:** kuormien väli, jolla lineaarinen malli pätee, sen suoran kulmakerroin $k$ yksikössä $\text{mm/g}$ ja perustelu, miksi malli ei päde koko alueella
 **Periaate:** Lineaarinen malli sopii sille kuormien alueelle, jolla pisteet ovat suoralla. Suora sovitetaan pisteisiin, jotka ovat suoralla. Sitten tarkistetaan, mistä kohdasta alkaen muut pisteet eivät enää sovi. Mitatuista pisteistä venymä kasvaa tasaisesti alueella $100\text{–}500\,\text{g}$. Suuremmilla kuormilla jousi venyy enemmän kuin suora ennustaa.
 **Kuvaajan lukeminen:** Viisi ensimmäistä pistettä on suoralla, ja suoran molemmille puolille jää pisteitä. Sovitettu suora kulkee likimain pisteiden $(0\,\text{g};\ 0{,}2\,\text{mm})$ ja $(500\,\text{g};\ 40{,}3\,\text{mm})$ kautta. Pisteet $600\,\text{g}$ ja $700\,\text{g}$ ovat suoran yläpuolella, ja ero kasvaa. Suora antaisi $48{,}3\,\text{mm}$ ja $56{,}3\,\text{mm}$, mutta mitattu on $51{,}8\,\text{mm}$ ja $68{,}9\,\text{mm}$. Poikkeama on $3{,}5\,\text{mm}$ ja $12{,}6\,\text{mm}$. Alueen sisällä poikkeama on enintään $0{,}3\,\text{mm}$.
 **Kaava:** $k = \dfrac{\Delta x}{\Delta m} = \dfrac{x_2 - x_1}{m_2 - m_1}$
@@ -189,10 +189,10 @@
 **Periaate:** Jyrkin ja loivin suora, jotka vielä mahtuvat pisteiden joukkoon, rajaavat kulmakertoimelle arvioidun vaihteluvälin. Kulmakertoimen arvo on välin keskikohta. Epävarmuus on puolet välin leveydestä. Syy on se, että arvo on keskellä ja väli ulottuu epävarmuuden verran molemmille puolille. Arvio on yksinkertainen. Se ei takaa, että todellinen arvo on välillä.
 **Kuvaajan lukeminen:** Piirretyt pisteet nousevat tasaisesti. Jyrkin ja loivin suora kulkevat molemmat pistejoukon läpi, ja pisteitä jää kummallekin puolelle. Jyrkin suora nousee hetkien $1{,}0\,\text{s}$ ja $6{,}0\,\text{s}$ välillä $3{,}50\,\text{m} - 0{,}75\,\text{m} = 2{,}75\,\text{m}$. Loivin suora nousee hetkien $2{,}0\,\text{s}$ ja $5{,}0\,\text{s}$ välillä $2{,}60\,\text{m} - 1{,}40\,\text{m} = 1{,}20\,\text{m}$. Oppilaan keskiarvo ja kulmakertoimet ovat oikein. Virhe on epävarmuuden laskussa.
 **Kaava:** $k = \dfrac{\Delta s}{\Delta t}$, $\;k = \dfrac{k_\text{max} + k_\text{min}}{2}$, $\;\Delta k = \dfrac{k_\text{max} - k_\text{min}}{2}$ ja suhteellinen epävarmuus $\dfrac{\Delta k}{k} \cdot 100\,\%$
-**Muunnokset:** Ei tarvita. Kulmakertoimet saadaan yksikössä m/s, ja prosenttiosuus on yksikötön suhde kerrottuna luvulla $100$.
+**Muunnokset:** Ei tarvita. Kulmakertoimet saadaan yksikössä $\text{m/s}$, ja prosenttiosuus on yksikötön suhde kerrottuna luvulla $100$.
 **Sijoitus:** $k_\text{max} = \dfrac{2{,}75\,\text{m}}{5{,}0\,\text{s}} = 0{,}55\,\tfrac{\text{m}}{\text{s}}$ ja $k_\text{min} = \dfrac{1{,}20\,\text{m}}{3{,}0\,\text{s}} = 0{,}40\,\tfrac{\text{m}}{\text{s}}$. Keskiarvo $k = \dfrac{0{,}55 + 0{,}40}{2}\,\tfrac{\text{m}}{\text{s}} = 0{,}475\,\tfrac{\text{m}}{\text{s}}$ ja $\Delta k = \dfrac{0{,}55 - 0{,}40}{2}\,\tfrac{\text{m}}{\text{s}} = 0{,}075\,\tfrac{\text{m}}{\text{s}}$, joten $\dfrac{\Delta k}{k} \cdot 100\,\% = \dfrac{0{,}075}{0{,}475} \cdot 100\,\% = 15{,}8\,\%$
 **Vastaus:** Oppilas käytti epävarmuutena koko kulmakertoimien erotusta $0{,}15\,\tfrac{\text{m}}{\text{s}}$ eikä sen puolikasta. Oikea epävarmuus on $16\,\%$, kaksi merkitsevää numeroa, kuten pisteiden koordinaateissa (esimerkiksi $0{,}75\,\text{m}$). Kulmakerroin on siis noin $(0{,}48 \pm 0{,}08)\,\tfrac{\text{m}}{\text{s}}$. Arvio kertoo, kuinka paljon kulmakerroin voi hajonnan vuoksi vaihdella. Se ei takaa, että todellinen nopeus on tällä välillä. Väli on arvioitu rajaus eikä varma raja.
-**Järkevyys:** Oikea väli $0{,}475 \pm 0{,}075\,\tfrac{\text{m}}{\text{s}}$ on $0{,}40\text{–}0{,}55\,\tfrac{\text{m}}{\text{s}}$, eli täsmälleen loivin ja jyrkin suora. Oppilaan väli $0{,}475 \pm 0{,}15$ olisi $0{,}33\text{–}0{,}63\,\tfrac{\text{m}}{\text{s}}$. Se ulottuu selvästi yli kummankin suoran, joten $32\,\%$ on kaksinkertainen. Kaikkiin kuuteen pisteeseen sovitetun parhaan suoran kulmakerroin on noin $0{,}51\,\tfrac{\text{m}}{\text{s}}$. Se on välin sisällä.
+**Järkevyys:** Oikea väli $(0{,}475 \pm 0{,}075)\,\tfrac{\text{m}}{\text{s}}$ on $0{,}40\text{–}0{,}55\,\tfrac{\text{m}}{\text{s}}$, eli täsmälleen loivin ja jyrkin suora. Oppilaan väli $(0{,}475 \pm 0{,}15)\,\tfrac{\text{m}}{\text{s}}$ olisi $0{,}33\text{–}0{,}63\,\tfrac{\text{m}}{\text{s}}$. Se ulottuu selvästi yli kummankin suoran, joten $32\,\%$ on kaksinkertainen. Kaikkiin kuuteen pisteeseen sovitetun parhaan suoran kulmakerroin on noin $0{,}51\,\tfrac{\text{m}}{\text{s}}$. Se on välin sisällä.
 
 ## fy1-4-L2-08
 **Kysytty:** millä rivillä kulmakertoimen laskussa on virhe.

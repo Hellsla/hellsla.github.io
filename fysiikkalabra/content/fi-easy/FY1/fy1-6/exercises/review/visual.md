@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 064ca5aebc6ae5b8
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 36fadfc94d9365f2
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- Exercise and solution wording changes read as clear Finnish; notation (units in math, decimal commas) intact. No issues.
+- none
 
 ## Checked
-- exercises.json, solutions.md, answers.py diff vs origin/main
+- solutions.md: Kaava lines merged into one sentence, g\,t spacing, Kysytty rewording; exercises.json Mars/air-resistance wording
+- Changes mirror the Finnish fix in fi-easy; no notation, unit or decimal-comma error introduced.

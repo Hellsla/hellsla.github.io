@@ -1,4 +1,4 @@
-# Putoamiskiihtyvyys: $v = gt$
+# Putoamiskiihtyvyys: $v = g\,t$
 
 > **Miksi** vasara ja höyhen osuivat Kuun pintaan yhtä aikaa, kun astronautti pudotti ne samaan aikaan, vaikka Maassa höyhen leijailee hitaasti alas?
 

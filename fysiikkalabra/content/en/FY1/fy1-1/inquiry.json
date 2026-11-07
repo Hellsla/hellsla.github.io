@@ -364,7 +364,7 @@
         {
           "text": "1 gravity, 2 electromagnetic, 3 strong, 4 weak",
           "correct": true,
-          "feedback": "Correct. Earth and the keys attract each other because of gravity. The force between the magnet and the steel door is magnetic, that is, electromagnetic. The parts of the nucleus are held together by the residual effect of the strong interaction, and a neutron changing into a proton (beta decay) is caused by the weak interaction."
+          "feedback": "Correct. Earth and the keys attract each other because of gravity. The force between the magnet and the steel door is magnetic, that is, electromagnetic. The parts of the nucleus are held together by the residual effect of the strong interaction, and a neutron changing into a proton (beta-minus decay, $\\beta^{-}$ decay) is caused by the weak interaction."
         },
         {
           "text": "1 gravity, 2 electromagnetic, 3 gravity, 4 weak",
@@ -380,7 +380,7 @@
         },
         {
           "text": "1 gravity, 2 electromagnetic, 3 strong, 4 strong",
-          "feedback": "In the decay of potassium-40 (beta decay) a neutron changes into a proton, that is, the kind of particle changes. A change like this is caused by the weak interaction. The strong interaction binds quarks and the parts of the nucleus together, but it does not change a neutron into a proton."
+          "feedback": "In the decay of potassium-40 (beta-minus decay, $\\beta^{-}$ decay) a neutron changes into a proton, that is, the kind of particle changes. A change like this is caused by the weak interaction. The strong interaction binds quarks and the parts of the nucleus together, but it does not change a neutron into a proton."
         }
       ]
     },

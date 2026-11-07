@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: f7309186c3b74fca
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: edb7f1186c0935a8
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,4 +9,7 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368
 - none
 
 ## Checked
-- sim.js (velocity arrows blue, VEL colour only), exit-ticket.json (9.81/1.62 = 6.056 -> 6.06), lesson.md ('squared' wording), lesson-answers.py, inquiry.json svg.
+- title, meta, exit ticket, inquiry and lang sims.fy1-6: $v = gt$ → $v = g\,t$ only (no remaining `gt`); 1,62 · 3,0 and 9,81 · 2,0 = 19,6 m/s unchanged
+- Muunnokset sentence split (m/s because g is in m/s²): correct
+- translations carry the same notation change
+- en: same changes as fi, meaning preserved

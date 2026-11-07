@@ -79,12 +79,12 @@
       "kind": [
         "concept"
       ],
-      "answer": "Miten heilurin langan pituus vaikuttaa heilahdusajan pituuteen?",
+      "answer": "Miten heilurin langan pituus vaikuttaa heilahdusaikaan?",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Miten heilurin langan pituus vaikuttaa heilahdusajan pituuteen?",
+          "text": "Miten heilurin langan pituus vaikuttaa heilahdusaikaan?",
           "feedback": "Oikein: kysymyksessä on yksi muutettava ja yksi mitattava suure, ja siihen voi vastata mittaamalla koulun välineillä.",
           "correct": true
         },
@@ -185,7 +185,7 @@
     {
       "id": "fy1-8-L2-02",
       "level": 2,
-      "text": "Auto kulkee vakionopeudella $1{,}5\\,\\text{m/s}$ $3{,}0\\,\\text{m}$:n matkan. Kulkuaika mitataan käsikellolla, ja ajanoton epävarmuus on $0{,}20\\,\\text{s}$. Kuinka suuri on mitatun ajan suhteellinen epävarmuus prosentteina?",
+      "text": "Auto kulkee $3{,}0\\,\\text{m}$:n matkan vakionopeudella $1{,}5\\,\\text{m/s}$. Kulkuaika mitataan käsikellolla, ja ajanoton epävarmuus on $0{,}20\\,\\text{s}$. Kuinka suuri on mitatun ajan suhteellinen epävarmuus prosentteina?",
       "answer": 10,
       "unit": "%",
       "tolerance": 0.02
@@ -389,7 +389,7 @@
     {
       "id": "fy1-8-L3-05",
       "level": 3,
-      "text": "Oppilas suunnittelee tutkimuksen kysymykseen ”Riippuuko veden jäähtymisnopeus astian materiaalista?” Hän kaataa yhtä monta desilitraa $80\\,{}^\\circ\\text{C}$ vettä kolmeen samankokoiseen astiaan (lasi, metalli, muovi) ja lukee lämpötilan joka minuutti. Muutettava muuttuja on astian materiaali ja mitattava muuttuja lämpötilan lasku.\n\nEsikokeen lasiastian lämpötilat ovat taulukossa. Arvioi alun jäähtymisnopeus taulukon kolmen ensimmäisen minuutin muutoksesta. Lämpötilan laskun epävarmuudeksi arvioidaan $\\Delta T_\\text{lasku} = 1{,}0\\,\\text{K}$, ja laskun suhteellisen epävarmuuden halutaan olevan enintään $5{,}0\\,\\%$. Oleta, että hitaimmin jäähtyvässäkin astiassa alun nopeus on suunnilleen sama kuin lasiastiassa.\n\nKuinka pitkä mittausjakso vähintään pitää suunnitella? Nimeä lisäksi kolme vakioitavaa suuretta perusteluineen ja kerro, miten kolmen astian jäähtymiskäyriä verrataan.",
+      "text": "Oppilas suunnittelee tutkimuksen kysymykseen ”Riippuuko veden jäähtymisnopeus astian materiaalista?” Hän kaataa yhtä monta desilitraa $80\\,{}^\\circ\\text{C}$ vettä kolmeen samankokoiseen astiaan (lasi, metalli, muovi) ja lukee lämpötilan joka minuutti. Muutettava muuttuja on astian materiaali ja mitattava muuttuja lämpötilan lasku.\n\nEsikokeen lasiastian lämpötilat ovat taulukossa. Arvioi alun jäähtymisnopeus taulukon kolmen ensimmäisen minuutin muutoksesta. Lämpötilan laskun epävarmuudeksi arvioidaan $\\Delta T_\\text{lasku} = 1{,}0\\,\\text{K}$, ja laskun suhteellisen epävarmuuden halutaan olevan enintään $5{,}0\\,\\%$. Oleta, että alun jäähtymisnopeus on kaikissa astioissa suunnilleen sama kuin lasiastiassa ja pysyy vakiona.\n\nKuinka pitkä mittausjakso vähintään pitää suunnitella? Nimeä lisäksi kolme vakioitavaa suuretta perusteluineen ja kerro, miten kolmen astian jäähtymiskäyriä verrataan.",
       "kind": [
         "data",
         "model",

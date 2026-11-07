@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: eec42dc6115fb05b
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: 7e7531b4f666d267
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- The model-types sentence is dense (fysikaalinen, graafinen, matemaattinen, kvantitatiivinen in one sentence); acceptable, could be split.
+- The 16 g clause in the liquid-slope feedback is a long sentence; acceptable.
 
 ## Checked
-- Lesson diff: inquiry.json (cart 'tönäistiin ... liikkui tasaisesti' justifies the line through origin), lesson.md (model types, interpolation/extrapolation, example data written as exact 0 min / 20 °C / 60 °C).
+- fy1-4 diff: Ilmoitin/Ilmoitin-style wording, 'sovitetaan eikä yhdistetä murtoviivaksi', 0,79 -> 0,80 g/ml with 20 ml x 0,80 = 16 g (matches Experiment 2 slope k=0.8 and 78,5-16 = 62,5 ~ 63 g), \text units, 'kärryn tasaista liikettä'. Misconception feedback still repairs, no answer disclosed earlier.
+- Language fi: matches the Finnish fixes; fi-easy stays plain Finnish.

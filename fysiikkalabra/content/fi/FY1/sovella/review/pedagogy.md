@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 1eba2a530cd5e15b
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the koe/sovella copy-edit diff only)
+CONTENT-HASH: 76f108ca139d6b18
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,4 +9,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the koe/sovella copy-edit
 - none
 
 ## Checked
-- 'viisi kertaa mittausvälin pituuden verran' (8 s vs 1,6 s) is correct and clearer than 'yli kuusi kertaa'. Ramppia alas, intro and puutteen-korjaus labels are only grammar fixes; no task demand or rubric changed.
+- Diff only: fy1-s1 figure labels moved (render checked: ramppi, v-formula and axes legible, no overlap), model answer scatter 'at most about 2 mm, less than one pixel' (consistent with 2.5 mm/pixel), uncertainty-estimate principle reworded; rubric and tasks untouched.

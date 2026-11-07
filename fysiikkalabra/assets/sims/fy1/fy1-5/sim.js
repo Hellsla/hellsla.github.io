@@ -3,7 +3,7 @@
 // the starting position s0 (0…10 m), the speed v (0,5…5,0 m/s) and the clock t (0…10 s). Changing s0 or v restarts the run.
 // The student reads positions off the track and the graph; the sim shows s and the distance travelled Δs = s − s0, never a
 // ratio, so the pattern (s/t constant only when s0 = 0; Δs/t = v always) is for the student to find.
-// Time: the slider "Hetki t" scrubs 0…10 s; the main button plays it in simulated time (dt·speed), so "Nopeus (toisto)"
+// Time: the slider "Hetki t" scrubs 0…10 s; the main button plays it in simulated time (dt·speed), so "Toistonopeus"
 // changes only the pace. The graph is drawn for the times visited so far (tmax); dots mark whole seconds. Once t = 6 s has
 // been visited, the slope triangle between t = 2 s and t = 6 s shows Δs / Δt = v on the graph.
 // Every canvas text goes through lab(), which pushes its ink box to simState.labels. p5.js 1.9 instance mode, 600×400.
