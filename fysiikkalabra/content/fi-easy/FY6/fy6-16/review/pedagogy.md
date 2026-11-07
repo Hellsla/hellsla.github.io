@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 513fbef8b1ec3d7d
+CONTENT-HASH: 00f71104271cae65
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- inquiry.json learn[0] — "hinnan akun energian, latausvirran ja hyötysuhteen avulla" stacks genitives, so "hinnan akun energian" can read as "price of the battery energy"; clearer: "laskemaan akun energian, latausvirran ja hyötysuhteen avulla latausajan, verkosta otetun energian ja hinnan."
-- (Round 3, unchanged) meta.json kolmivaihesähkö is long and uses "vaihevirta", which the lesson does not use; hyötysuhde: "Osa energiasta menee hukkaan" is plainer.
+- none
 
-## Checked (delta: learn[0] without finite verb "tiedät")
-- The goal now completes the heading with the verb "laskemaan" and no finite verb; the inputs (akun energia, latausvirta, hyötysuhde) and outputs (latausaika, verkosta otettu energia, hinta) are all kept.
-- "avulla" is plain Finnish, shorter than the earlier clause; meaning unchanged, nothing dropped; the other goals and the rest of the lesson are untouched.
+## Checked
+- Diff since origin/main for fy6-16 lesson (fi-easy) read against the teacher's brief items that touch it; the changed text says what the brief intends, is consistent between lesson, inquiry, exercises, solutions and feedback, and introduces no new misconception.
+- Standing rules in the changed lines: LaTeX maths and units, decimal comma, no bold in task statements, no lesson ids shown.
+- NOTES.md §12: same physics as the Finnish; new terms (kytkentämuutos, irradianssi, tehokerroin, vaihe-ero, pätöteho, mitoitettu, vakiovirtalähde etc.) are explained in the sentence where first used; whole natural sentences, one action per sentence in instructions.

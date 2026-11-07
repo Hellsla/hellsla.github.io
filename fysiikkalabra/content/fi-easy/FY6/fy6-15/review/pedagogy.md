@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 5cea23de751f01c3
+CONTENT-HASH: f199e89d726f36ba
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- Same structural point as fi: ennuste-1/-2 are settled by the theory text.
+- 'TN system' is named but not explained for a first-year student; one clause would do (en and fi-easy).
 
 ## Checked
-- Earthing figure: the fault-current label is now I_v, the same symbol as in the RCD figure, placed clear of the arrow; the alt text says I v in both figures, so a reader who cannot see the figure gets the same symbol. No pedagogic change; one symbol per quantity across the two figures is an improvement.
-- Spot-checked fi-easy: short sentences, each new term defined at first use (nimellisvirta, eriste, oikosulku, vikavirta); content and numbers equal the fi version, safety caveats (never judge by colour, shoes are no protection, no larger fuse) retained.
-- Alt text and equation label match the Finnish figure (I v).
+- Diff since origin/main for fy6-15 lesson (fi-easy) read against the teacher's brief items that touch it; the changed text says what the brief intends, is consistent between lesson, inquiry, exercises, solutions and feedback, and introduces no new misconception.
+- Standing rules in the changed lines: LaTeX maths and units, decimal comma, no bold in task statements, no lesson ids shown.
+- NOTES.md §12: same physics as the Finnish; new terms (kytkentämuutos, irradianssi, tehokerroin, vaihe-ero, pätöteho, mitoitettu, vakiovirtalähde etc.) are explained in the sentence where first used; whole natural sentences, one action per sentence in instructions.

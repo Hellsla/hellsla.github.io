@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: be69f72bfd449b19
+CONTENT-HASH: 7175c5ba2fa9ab75
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- (Minor) Fixed: 'Silloin sähköenergiaa muuttuu' -> 'Sähköenergiaa muuttuu tällöin' (removes a repeated Silloin; same meaning).
+- none
 
 ## Checked
-- Numbers, units, `$...$` maths and formulas identical to the Finnish (multiset compared per file, no difference).
-- All 12 solutions carry all steps; answers and significant figures as in the Finnish.
-- Terms akku/paristo/lähdejännite/napajännite correct; meta key_concepts: 4 items, explain under 25 words, no numbers, no $.
-- Re-review after the concept-review commit: howto wording (electrical energy transformed into internal energy), efficiency paragraph (often below 100 %, charging always, R and R_s), L3-03 sisäenergiaksi, matching the Finnish; no numbers changed; $ counts equal.
+- Simplified-model label; elektroninen ohjaus, ensin virta likimain vakio, ylärajalla jännite vakio ja virta pienenee; summary bullet and inquiry model (= fi).
+- Diff since origin/main compared sentence by sentence with the Finnish source change; content hash checked at start and end.

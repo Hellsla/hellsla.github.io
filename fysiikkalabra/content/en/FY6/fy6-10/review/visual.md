@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 84609402814732d2
+CONTENT-HASH: 4e7c178af2d7ca44
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- 'Outside a spherically symmetric charged body ... the distance of such spheres' — body then spheres; write 'of such bodies' or say 'spheres' in both.
 
 ## Checked
-- batch delta review: opened the source image(s) and 1280/390 px renders of the photo(s): balloon-hair.webp and balloons-repel.webp (both alts match what is visible; slanted threads and apart yellow balloons clear; both float right; second sits beside 'Coulomb's law'). Alt matches the visible content, captions physically correct and tied to the chapter, units in LaTeX, photo floats right at 1280 (no clipping, scrollWidth = viewport) and stacks above the caption at 390.
+- Word-level diff since origin/main of the en fy6-10 lesson files and neighbouring text; decimal convention (point), number+unit in LaTeX, \cdot, no bold in task statements, no lesson ids; wording compared with the Finnish intent for the brief's items.

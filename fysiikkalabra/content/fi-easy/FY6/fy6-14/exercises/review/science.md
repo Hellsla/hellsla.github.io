@@ -1,18 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: b600ad4b0b99295c
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 3b30a01720987360
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- New task L2-08 (two-stage reasoning, diodes in parallel branches) compared with content/fi: id, level, kind, answer, unit, tolerance, correct flags, choice/statement/order structure and every number identical; only LED A lights; 4.5 V - 2.0 V = 2.5 V across the resistor of branch 1; branches 2 and 3 are reverse-biased.
-- All 21 tasks of the set compared with fi by script (non-text fields): identical apart from translated table captions, column heads and text answers.
-- solutions.md: all numbers in the same order as fi (decimal separator normalised); formulas, LaTeX and the stated reasoning unchanged.
-- Physics of the new task recomputed independently; agrees with fi and with the key.
-- fi-easy follows NOTES.md section 12 (clearer Finnish, same physics).
-- No fixes were needed. check_i18n.py fi-easy: 0 errors; build.py fy6-14: ok.
+- Two efficiency tasks: irradianssi (glossed säteilyteho neliömetriä kohti); 16,7 % and 20,3 % recomputed.
+- Diff since origin/main compared sentence by sentence with the Finnish source change; content hash checked at start and end.

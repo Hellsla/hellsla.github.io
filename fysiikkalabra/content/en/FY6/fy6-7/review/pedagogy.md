@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 47ff4797bc349252
+CONTENT-HASH: b7a77d887517552d
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-- Same structure as the Finnish chapter, nothing dropped; learning goals complete 'In this lesson, you will learn to' with parallel verbs.
-- Natural textbook English, concepts explained as in Finnish.
-- The hash is 47ff4797bc349252 at the start and at the end.
+- Diff since origin/main for fy6-7 lesson (en) read against the teacher's brief items that touch it; the changed text says what the brief intends, is consistent between lesson, inquiry, exercises, solutions and feedback, and introduces no new misconception.
+- Standing rules in the changed lines: LaTeX maths and units, decimal point, no bold in task statements, no lesson ids shown.

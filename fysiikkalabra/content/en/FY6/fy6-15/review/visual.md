@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 568b75cca14de38a
+CONTENT-HASH: 523f87c15ccf9fae
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- 'connected to the earthing and to the conductor coming from the grid along which the current returns to the supply' is heavy; split into two sentences.
 
 ## Checked
-- batch delta review: opened the source image(s) and 1280/390 px renders of the photo(s): residual-current-device.webp (four-pole, yellow TEST, black lever, 'I_dn = 0,03A' marking legible; caption 30 mA correct) and high-voltage-sign.webp (yellow triangle, lightning arrow, matches alt). Alt matches the visible content, captions physically correct and tied to the chapter, units in LaTeX, photo floats right at 1280 (no clipping, scrollWidth = viewport) and stacks above the caption at 390.
+- Word-level diff since origin/main of the en fy6-15 lesson files and neighbouring text; decimal convention (point), number+unit in LaTeX, \cdot, no bold in task statements, no lesson ids; wording compared with the Finnish intent for the brief's items. figures.json aria texts: all lesson aria-labels equal the figures.json entries; wording (irradiance / back to the supply, fault arrow upwards) matches the lesson text; plain units in aria are acceptable. No screenshots (aria only).

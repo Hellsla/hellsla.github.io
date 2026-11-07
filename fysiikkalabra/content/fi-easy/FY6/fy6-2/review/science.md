@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 4e3bd3e6b6ae5300
+CONTENT-HASH: 2d27b5a5e0730863
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Terms: virtamittari (in series), jännitemittari (in parallel with the part measured), yleismittari and mittausalue (largest value on the chosen setting) agree with the lesson.
+- Esimerkkimittarin liittimet; mittarit eroavat, tarkista merkinnät; ei virtamittaria jännitelähteen napojen rinnalle; koulussa turvalliset pienjännitelähteet (= fi).
+- Diff since origin/main compared sentence by sentence with the Finnish source change; content hash checked at start and end.

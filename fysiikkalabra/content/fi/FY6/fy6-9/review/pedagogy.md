@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 57b913a6fc66f29e
+CONTENT-HASH: 0ae1676575670854
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- lesson.md Hyötysuhde paragraph — "ei päädy määriteltyyn hyödylliseen käyttötarkoitukseen" is abstract for a 17-year-old; "ei päädy siihen, mitä varten energiaa otetaan (tässä akun varastoon)" is plainer.
+
 
 ## Checked
-- batch delta review: "jää usein alle 100 %" followed by "Latauksessa näin käy aina, koska virta lämmittää resistansseja R ja R_s" repairs the earlier overclaim and ties to the lesson's example (84 %); inquiry howto reworded ("oranssi hehku sen, kuinka paljon sähköenergiaa muuttuu ... sisäenergiaksi") says what the glow means, no numbers changed; captures of the figures and sim listed in the packet were not affected by a text-only change.
+- Real Li-ion charging (about constant current, then constant voltage) now stated, and the circuit model labelled simplified in the lesson, the circuit-derivation sentence, the summary and the inquiry model text. The old claim that the charger holds constant voltage in the final phase is consistent with the new one.
+- Reasoning path (voltage difference drives current, so charging slows) kept intact.

@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 48cfd52191926c87
+CONTENT-HASH: be926496cafebd38
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Re-check after fix: jännite is now energy per unit charge between two points, as the lesson defines it; sähkövirta ("varausten liikettä samaan suuntaan") matches the lesson's own description. virtapiiri, johde and eriste agree with the lesson.
+- Virtapiiri and virran suunta paragraphs vs fi: muutos etenee nopeasti mutta ei äärettömän nopeasti; vapaat elektronit valmiiksi johtimissa ja hehkulangassa; lyhyessä piirissä viive pieni. Same physics.
+- inquiry tarkista 1: correct option and three distractor feedbacks = fi; one correct option.
+- Diff since origin/main compared sentence by sentence with the Finnish source change; content hash checked at start and end.

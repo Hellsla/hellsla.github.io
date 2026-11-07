@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 1f46e7478f93fd99
+CONTENT-HASH: 9b346d37e8b89517
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- inquiry.json ennuste-1/-2 (earlier rounds, unchanged): both open only after the theory; no Tutki task tests the bird or fuse-versus-RCD.
-- glossary sulake: the new sentence chains two ideas with a semicolon (earlier round, unchanged).
+- "Suojamaadoitusjohdin" and "suojajohdin" alternate; the lesson links them with "eli" once, which is enough, but keep one term in the exercises if easy.
 
 ## Checked
-- Earthing figure: the fault-current label is now I_v, the same symbol as in the RCD figure, placed clear of the arrow; the alt text says I v in both figures, so a reader who cannot see the figure gets the same symbol. No pedagogic change; one symbol per quantity across the two figures is an improvement.
-- Round 2 findings (hook, johtopäätös criterion, fuse wording, shoes warning) are unchanged by this commit and still hold; the lesson path, predictions, tables and exit ticket are as passed.
+- TN fault-current path: return through the protective conductor to the supply, fuse/MCB trip, RCD also mentioned, TN caveat given. Figure aria-label (arrow up toward the supply) matches the unchanged drawing (PE polyline from the casing to the fuse).
+- Laypeople rule: fixed installations for professionals, only specifically permitted minor work and only if one can do it safely; the "epävarmassa tilanteessa" sentence is good advice. Exit ticket and summary agree.
+- P = UI as a model with in-phase current or power factor about 1 in the group-load section.

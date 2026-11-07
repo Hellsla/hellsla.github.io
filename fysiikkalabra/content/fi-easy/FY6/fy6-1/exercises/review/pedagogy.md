@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: e00de1c5d3845be8
+CONTENT-HASH: 25bea0e8e337cf85
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-
-## Fixed
-- None.
+- none
 
 ## Polish
+- none
 
 ## Checked
-- New task fy6-1-L1-09 is a YO-skill form task at the same level and kind as in fi; situation first, question last, clear instruction.
-- Distractors and feedback are misconception-based and repair the error (same as fi); no answer disclosed in the task text.
-- Model answer is complete and follows step by step as in fi.
-- Selkeä suomi: terms explained inside the sentence, one idea per sentence, physics unchanged.
+- Diff since origin/main for fy6-1 exercises (fi-easy) read against the teacher's brief items that touch it; the changed text says what the brief intends, is consistent between lesson, inquiry, exercises, solutions and feedback, and introduces no new misconception.
+- Standing rules in the changed lines: LaTeX maths and units, decimal comma, no bold in task statements, no lesson ids shown.
+- NOTES.md §12: same physics as the Finnish; new terms (kytkentämuutos, irradianssi, tehokerroin, vaihe-ero, pätöteho, mitoitettu, vakiovirtalähde etc.) are explained in the sentence where first used; whole natural sentences, one action per sentence in instructions.
+- Feedback wording 'almost immediately' / 'lähes heti' used consistently; the distinction between slow electrons and fast propagation is clear.

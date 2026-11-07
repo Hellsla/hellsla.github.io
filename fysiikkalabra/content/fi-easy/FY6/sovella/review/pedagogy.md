@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: eb7e7e6059e14f57
-
-Scope (teacher's ruling "katselmoi vain muuttuneet osat"): `git diff e7fb0232a -- content/*/FY6/sovella` plus what the changed sentence touches. This translation did not exist at e7fb0232a. Its diff since its last PASS (24b2a3b87) is one sentence, the fy6-s4 d **Principle/Periaate** in solutions.md, the same change as in fi. The packet's full mode was narrowed to that scope.
+CONTENT-HASH: 5362a247ece5dc15
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-None.
+- none
 
 ## Polish
-None.
+- none
 
 ## Checked
-- **Easy-Finnish style:** the change is in the fi-easy style, with short sentences and one fact each ("toisella levyllä … toisella …", then "Energia on …", then "Jännite ei katoa …"). It is simpler than the fi version, which joins the first two with "ja".
-- **Alignment:** it matches the corrected fi-easy fy6-13 wording ("Energia on levyjen välisessä sähkökentässä"), so the solution no longer contradicts the lesson's misconception box.
-- **Unchanged parts:** the rubric and points are unchanged, and practice.py check is OK.
-- **Hash:** the same at the start and at the end.
+- Diff since origin/main for FY6 sovella (fi-easy) read against the teacher's brief items that touch it; the changed text says what the brief intends, is consistent between lesson, inquiry, exercises, solutions and feedback, and introduces no new misconception.
+- Standing rules in the changed lines: LaTeX maths and units, decimal comma, no bold in task statements, no lesson ids shown.
+- NOTES.md §12: same physics as the Finnish; new terms (kytkentämuutos, irradianssi, tehokerroin, vaihe-ero, pätöteho, mitoitettu, vakiovirtalähde etc.) are explained in the sentence where first used; whole natural sentences, one action per sentence in instructions.
+- s4-d: no practical discharge instructions remain; 0,30 A framed as an idealised estimate; servicing for professionals; the common-error line is reversed accordingly. s4-b: answer list E = 6,86 J and share = 46,2 % matches the task question (energy and fraction).

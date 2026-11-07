@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 0aa0bba3b4879ed1
+CONTENT-HASH: c4df2de70c91f626
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-- (none)
+- none
 
 ## Polish
-- [Minor] fy6-14 sijoitus — kuva ajautuu 1280 px:ssä uuden osion (Etuvastus) otsikon ja tekstin viereen, vaikka se kuvaa edellisen kappaleen paneelia — siirrä kuva edellisen osion viimeisen kappaleen jälkeen, jos tila sallii.
+- none
 
 ## Checked
-batch delta review: photo file(s) opened and compared with alt text; rendered fy6-14 at 1280 px (float right, 320 px wide, no clipping, beside its paragraph) and 390 px (full-width block, no horizontal overflow); caption physics, Finnish and LaTeX units read; changed typography checked in the capture.
+- irradianssi used consistently (lesson, summary, inquiry, glossary, lang/fi.json label 'Irradianssi $G$'); no 'valon voimakkuus' left in fi lesson, exercises, inquiry, figures.py, sim-spec; LED current-limiting paragraph and summary bullet; aria-labels of figures kenno and teho (figures.py and lesson.md match, units and values unchanged, 'kahdella irradianssilla' reads correctly).
+- Source-only delta review (no screenshots needed: figure changes are aria-label texts only); Finnish language, maths typography (LaTeX, \cdot, decimal comma, number+unit LaTeX) and no lesson ids shown to students.

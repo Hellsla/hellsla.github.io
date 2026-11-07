@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: f8e0c8857f16c43a
+CONTENT-HASH: f7da803daeac7f68
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- lesson.md "Heating of a cable and a joint" — "From the reel little energy is transferred as heat to the surroundings" is clumsy; "Little energy is transferred as heat from the reel to the surroundings" is smoother.
+- none
 
-## Checked (delta: learn goal 3, heat-transfer wording)
-- Learn goal 3 is now "explain with Joule's law why a charger has its own circuit and why extension cords and loose joints heat up": it completes "In this lesson, you will learn to", is shorter (the previous over-20-word polish is closed), and still covers the circuit, cord and joint inputs of the slot.
-- "the heat cannot escape" is replaced by poor energy transfer from the reel; correct physics and consistent with the model answer, criterion 2 and the summary bullet.
-- "the high temperature ages the insulation" is clearer than "the heat ages".
-- Criterion is observable and fits the question; no number, symbol or figure changed.
+## Checked
+- Diff since origin/main for fy6-16 lesson (en) read against the teacher's brief items that touch it; the changed text says what the brief intends, is consistent between lesson, inquiry, exercises, solutions and feedback, and introduces no new misconception.
+- Standing rules in the changed lines: LaTeX maths and units, decimal point, no bold in task statements, no lesson ids shown.

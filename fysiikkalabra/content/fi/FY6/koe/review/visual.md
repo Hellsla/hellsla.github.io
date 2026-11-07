@@ -1,18 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 5975ae07a8d8b0f5
+CONTENT-HASH: 75644e4be115aed6
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] fig-7 and fig-15 — in-plot labels (U_R, U_L, 189 mA, 3,0 cm, (400; 2,24)) are about 8 px at 390 px — enlarge.
-- [Minor] top-390 — banner "tätä oppituntia" on an exam page — "tätä sivua".
+- none
 
 ## Checked
-- Round 3 (hash 5975ae07a8d8b0f5): the k6 list (page-390-51) and the k7 list (page-390-62) now render as separate bullets, no literal "\n" left (source grep clean); nothing else changed.
-- Round 2 (hash 23e345225fb4e45c): page-390-26 shows k3 b self-marking rows now short ("ΔU ≈ 0,035 V eli noin 1,2 %") with nothing clipped; page-390-51 shows k6 a ("F = mg ≈ 2,2 mN") clean; units are inline, no stacked fractions left in these rows.
-- fig-3 (U–I): ticks now "1,0 … 0,2", consistent. fig-9 (k3 c circuits): LED arrows clear of the divider, "+/−" on both batteries, junction dots, LED direction along the current: follows the course conventions; fig-1 (k1 d) unchanged.
-- Osa 1 g and k7 e texts: units and indices in LaTeX, instructions clear and fluent.
-- Earlier round: fig-5, fig-7, fig-13, fig-15 and contact sheets 1–6, no clipping elsewhere.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+- k7-d task, solutions, rubric and distractor text; k6-e Coulomb detail; k5 statement and solutions (control electronics keeps 15 mW constant down to 2,0 V; W = 0,5*0,47*(4,5^2-2,0^2) = 3,82 J, t = 255 s); k3-b answer list (dI = 0,01355*(0,0349/2,98+0,05) = 0,00084 A); k5-b answer list; LaTeX units and decimal comma throughout.
+- Source-only delta review (no screenshots needed: figure changes are aria-label texts only); Finnish language, maths typography (LaTeX, \cdot, decimal comma, number+unit LaTeX) and no lesson ids shown to students.

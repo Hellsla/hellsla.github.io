@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 046f1b65485abd37
+CONTENT-HASH: ce8f542f0c239b34
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy6-1 photo — sits beside the voltage/current tables, a little apart from its Voltage paragraph on a wide screen — none needed (build placement).
+- lesson.md, 'In an ordinary short circuit the propagation delay...' — 'short circuit' is a defined term in fy6-2 (a bypass); say 'In an ordinary circuit of a few metres the propagation delay...'.
 
 ## Checked
-batch delta review: opened the 390 px theory captures (stage-selita, whole sequence) and the 1280 theory captures around each new unit-photo; photo is sharp, caption and its $...$ maths render, credit line present, alt text informative, no clipping or horizontal overflow, surrounding figures and formulas intact.
+- Word-level diff since origin/main of the en fy6-1 lesson files and neighbouring text; decimal convention (point), number+unit in LaTeX, \cdot, no bold in task statements, no lesson ids; wording compared with the Finnish intent for the brief's items.

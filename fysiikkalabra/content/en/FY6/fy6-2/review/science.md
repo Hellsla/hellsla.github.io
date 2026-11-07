@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 875a2259874cf175
+CONTENT-HASH: ca8401bb91b5326f
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- Result step: the relative limits 2 % and 0.67 % are computed from the rounded limits (unrounded 1.8 % and 0.63 %); identical to the Finnish, which has the same open polish note.
+- none
 
 ## Checked
-- Delta re-review (internal energy wording; error limit rounded to one significant figure, two if the first digit is 1): token comparison of en against the Finnish: every changed number identical (worked example ±0.03 V / ±0.010 V, 2 % and 0.67 %, error-bands figure incl. aria-label and figures.json keys, exit ticket 0.04 V, "Find the error" 0.05 V, check-2 6 mV, inquiry numbers); the internal-energy wording matches ('internal energy of the filament' / hehkulangan sisäenergia).
-- Physics terms and formulas unchanged; same-p-and-n condition in 'Miksi pienin sopiva alue' present and correct; the Δx note matches the Finnish.
+- Multimeter: jack assignment framed as the example meter; meters differ, check markings and manual (= fi).
+- New sentences: ammeter must not be connected across source terminals; school lab uses safe low-voltage sources as instructed (= fi). Physics of the wrong-connection paragraph unchanged.
+- Diff since origin/main compared sentence by sentence with the Finnish source change; content hash checked at start and end.

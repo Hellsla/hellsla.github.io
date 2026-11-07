@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 6bfe3e9e31cd7a54
+CONTENT-HASH: 00f71104271cae65
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] fy6-16 ev-charging-socket caption: 'Isommalla ... Pienemmällä ...' does not say which port is which, and in the photo the grey-capped left port looks larger than the orange-capped right one. Fix: say which side is which, or drop the size wording.
+- 'Tällöin tehokerroin on likimain yksi. Silloin yksivaiheisen laitteen teho' — 'Tällöin... Silloin' repeats; drop one.
 
 ## Checked
-batch delta review: opened the image file(s) and rendered preview/fi-easy/fy6-16.html at 1280 px (photo floats right, 320 px wide, credit line shown, no clipping) and 390 px (full column width, no horizontal overflow); Photos ev-charging-socket and ev-charging-station: alts match (open flap on white car, two capped ports; yellow station with yellow guard rails).
+- Word-level diff since origin/main of the fi-easy fy6-16 lesson files and neighbouring text; decimal convention (comma, Finnish), number+unit in LaTeX, \cdot, no bold in task statements, no lesson ids; wording compared with the Finnish intent for the brief's items.

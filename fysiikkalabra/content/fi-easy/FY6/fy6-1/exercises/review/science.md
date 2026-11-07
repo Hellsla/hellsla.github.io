@@ -1,16 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: e00de1c5d3845be8
+CONTENT-HASH: 25bea0e8e337cf85
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-
-## Fixed
-- None.
+- none
 
 ## Polish
+- none
 
 ## Checked
-- New task fy6-1-L1-09 compared with the reviewed Finnish: statements true/false (YO form): same 5 statements and truth values, Q = It = 18 C, E = UQ = 54 J, 3.0 J/C.
-- Ids, answer text, units, tolerance, correct flags, option/statement order, figure keys and every number and LaTeX expression identical (decimal comma, Selkeä suomi per NOTES §12).
-- Solution carries the same steps and results as fi; principle stated, unknown solved symbolically, reasonableness points kept.
-- Short sentences, difficult words explained, physics terms kept (resoluutio, virheraja, ominaiskäyrä).
-- check_i18n.py fi-easy shows nothing for fy6-1; build.py fy6-1 succeeds.
+- Choice feedback, true/false 4, L1-0x c and L1-09 principle = fi (hyvin nopeasti mutta rajallisella nopeudella, lähes heti). Drift numbers unchanged (1,92e-5 m/s, ≈ 14 h).
+- Diff since origin/main compared sentence by sentence with the Finnish source change; content hash checked at start and end.

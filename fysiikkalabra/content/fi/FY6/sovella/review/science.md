@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: a34f3aab0e6c03cc
-
-Scope (teacher's ruling "katselmoi vain muuttuneet osat"): `git diff e7fb0232a -- content/*/FY6/sovella` plus what the changed sentence touches. The fi content change is one sentence, the fy6-s4 d **Periaate** in solutions.md. en and fi-easy did not exist at e7fb0232a, so for them the diff since their last PASS (24b2a3b87) applies. It is the same one sentence. The packet's full mode was narrowed to that scope.
+CONTENT-HASH: 3cbb4ca9b49e5be1
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-None.
+- none
 
 ## Polish
-- s4 d rubric criterion 1 still says "säilyttää varauksensa ja energiansa". That is correct under the lesson's definition (fy6-13: "Kondensaattorin varauksella $Q$ tarkoitetaan toisen levyn varauksen suuruutta"), so it needs no change.
+- none
 
 ## Checked
-- **New Periaate:** "levyillä on varaukset $+Q$ ja $-Q$, ja energia on varastoitunut levyjen väliseen sähkökenttään". This is physically correct. It removes the old implication that the capacitor holds a net charge, or holds its energy "on the plates". It matches fy6-13 lines 51, 250 and 393 (total charge zero, energy in the field).
-- **Symbol $Q$:** consistent with s4 c ("Kondensaattorin varaus on $Q = CU$") and with the teacher's note $Q = CU = 0{,}099\,\text{C}$.
-- **Rest of d:** "Jännite ei katoa" and the Mallivastaus (300 V, ≈15 J, 0,30 A, a 10 kΩ discharge resistor with 9 W) are unchanged and still agree with the Periaate.
-- **Checks:** practice.py check is OK (4 tasks, 60 points). The hash is the same at the start and at the end.
+- s4-b now an answer list: E = ½·330 µF·(300² − 220²) V² = 14,85 − 7,986 = 6,864 J (6,86, tol 0,03); share 6,864/14,85 = 46,22 % (46,2, tol 0,03). answers.py keys fy6-s4-b-E and fy6-s4-b-share (now in %) agree; solution's 46 % and 1 − (220/300)² = 0,46 agree.
+- s4-d: no practical discharge instructions remain in task, solution, rubric or common errors; 300 V / 1,0 kΩ = 0,30 A labelled an idealised estimate in an imagined contact, current falls as C discharges; servicing (controlled discharge, verified absence of voltage) left to qualified professionals; rubric criteria ask only what the task asks; 4 points unchanged. The removed fy6-s4-d-Ires key is no longer used.
+- practice.py check FY6: OK, 60 points.

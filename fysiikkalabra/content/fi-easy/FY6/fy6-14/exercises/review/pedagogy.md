@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: b600ad4b0b99295c
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 3b30a01720987360
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- New task L2-08 (two-stage reasoning, diodes in parallel branches): prompt, options, feedback and model solution carry the same teaching as the reviewed Finnish; feedback of each wrong option names its misconception without giving the answer away.
-- fi-easy follows NOTES.md section 12 (clearer Finnish, same physics).
-- Instructions say what to do in which order; the task is answerable without the lesson text beyond what the packet lists; workload unchanged.
-- Model solution keeps every step (Find, Principle, Model answer, reasonableness) and the explanation of why each wrong option fails.
-- No fixes were needed.
+- Diff since origin/main for fy6-14 exercises (fi-easy) read against the teacher's brief items that touch it; the changed text says what the brief intends, is consistent between lesson, inquiry, exercises, solutions and feedback, and introduces no new misconception.
+- Standing rules in the changed lines: LaTeX maths and units, decimal comma, no bold in task statements, no lesson ids shown.
+- NOTES.md §12: same physics as the Finnish; new terms (kytkentämuutos, irradianssi, tehokerroin, vaihe-ero, pätöteho, mitoitettu, vakiovirtalähde etc.) are explained in the sentence where first used; whole natural sentences, one action per sentence in instructions.
+- Irradiance replaces 'light intensity' in both task statements and solutions; eta = P/(GA) and the numbers are unchanged.

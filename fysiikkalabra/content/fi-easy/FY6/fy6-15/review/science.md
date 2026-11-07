@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 5cea23de751f01c3
+CONTENT-HASH: f199e89d726f36ba
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- inquiry.json:177 — the same note as in the Finnish source: the prompt "miksi sama sulake ei suojaa ihmistä?" is absolute, though the model answer qualifies it.
+- content/fi-easy/FY6/fy6-15/lesson.md:359 (unchanged text): the gloss "Maasulku tarkoittaa, että virta pääsee vian takia maahan" now sits next to the new TN explanation in which the fault current returns via the protective conductor. Not an error (a fault to earthed parts), but "virta pääsee vian takia maadoitettuihin osiin tai maahan" would fit better.
 
 ## Checked
-- Delta 45327c18: the earthing figure label changes from I_vika to I_v (lesson.md:312), the same symbol as the RCD figure (lesson.md:400–401). This is consistent, because both currents are vikavirta in the text.
-- The numbers in lesson.md, inquiry.json, exit-ticket.json, exercises.json and solutions.md were compared by script with the Finnish and are identical.
-- The safety statements survive in plain Finnish:
-  - sulake ei korvata suuremmalla;
-  - the fuse protects a person only together with protective earthing, and the small current through a person is cut by the RCD;
-  - the RCD does not help in a vaihe–nolla contact;
-  - colours only in new installations, and "väristä ei saa päätellä jännitteettömyyttä";
-  - the shoe conditions;
-  - layperson work and Tukes;
-  - moist places need an RCD or protective extra-low voltage.
+- Suojajohdin, vikavirta takaisin sähkönsyöttöön, sulake/johdonsuojakatkaisija, vikavirtasuoja, TN caveat, sähkökeskus sentence (= fi).
+- Maallikko: kiinteät asennukset pääsääntöisesti ammattilaisille, vain erikseen sallitut vähäiset työt ja vain turvallisesti; exit ticket and meta explain the same.
+- P = UI paragraph conditioned (tehokerroin ≈ 1); 2300 W, 3680 W.
+- Diff since origin/main compared sentence by sentence with the Finnish source change; content hash checked at start and end.

@@ -1,13 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 302f6334f20a1e27
+CONTENT-HASH: ce8f542f0c239b34
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-
+- lesson.md (inquiry too): 'electromagnetic disturbance' / 'sähkömagneettinen häiriö' is a new term at an introductory level and is not explained; 'in an ordinary short circuit the propagation delay is small' reuses 'short circuit' (oikosulku) for a short loop of wire, which clashes with its technical meaning in fy6-2; 'short circuit' -> 'short loop of wire'.
 
 ## Checked
-- Same structure as Finnish: 13 headings, 448 lines, 154 inquiry maths items, same stages, predictions, options and feedback; nothing dropped.
-- Learning goals complete (3), start with a bare verb after "In this lesson, you will learn to".
-- Natural textbook English.
-- Re-review after the concept fix (internal energy of the filament, transferred as heat): lesson.md, kertaus option and feedbacks, pred-1 feedback, johtopaatos criterion and model match the Finnish in meaning and numbers; no physics changed. Correct kertaus option stays about as long as the wrong ones.
+- Diff since origin/main for fy6-1 lesson (en) read against the teacher's brief items that touch it; the changed text says what the brief intends, is consistent between lesson, inquiry, exercises, solutions and feedback, and introduces no new misconception.
+- Standing rules in the changed lines: LaTeX maths and units, decimal point, no bold in task statements, no lesson ids shown.

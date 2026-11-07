@@ -1,10 +1,13 @@
-VERDICT: PASS
-CONTENT-HASH: 6ea2cc5fb6d4558c
+VERDICT: FAIL
+CONTENT-HASH: 73dcfae33680151a
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
+- fi/FY6/fy6-1/lesson.md:83 — grammar error in new text: "Tavallisen lyhyessä virtapiirissä etenemisviive on niin pieni..." (genitive + inessive do not agree) — write "Tavallisessa lyhyessä virtapiirissä etenemisviive on niin pieni, että lamppu näyttää syttyvän heti." (fi-easy and en are not in my part; check they were not copied from this sentence).
 
 ## Polish
-- [Minor] fig-row caption fine; none beyond: the photo is a close-up with little visible circuit structure, the caption carries the teaching point (acceptable).
+- none
 
 ## Checked
-batch delta review: rendered the new figure.unit-photo at 390 px and 1280 px from the built page (own captures, plus fig-row-1280 to confirm the existing figures survived); photo loads, no horizontal overflow, caption and credit line legible, alt text matches the image, LaTeX in captions renders ($6{,}3\,\text{V}$, $656\,\text{nm}$, $n = 3$) with units upright; no clipping.
+- Diff of lesson.md (current-flow section, switching sentence and the drift-speed paragraph) read in Finnish; consistent with the brief (finite speed, free electrons already in the wire, small drift speed); no maths changed.
+- Source-only delta review (no screenshots needed: figure changes are aria-label texts only); Finnish language, maths typography (LaTeX, \cdot, decimal comma, number+unit LaTeX) and no lesson ids shown to students.
