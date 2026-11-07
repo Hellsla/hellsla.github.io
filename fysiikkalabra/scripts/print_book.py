@@ -46,7 +46,13 @@ main h1{font-size:17pt!important;line-height:1.2!important}main h2{font-size:13p
 #ennusta,#tutki,#sim,#tarkista,#exercises,nav,.chapter-nav,details.sim-box,details.fold,details.hint,details.answer,
 details.solution,.solution,.pad,.pad-open,button,.stage-no,.skip-link,
 .activity:not(.act-theory):not(.act-hook),details.opt:has(.activity:not(.act-theory):not(.act-hook)),
-a[href*="kasitetakomo"],a[href*="takomo"]{display:none!important}
+a[href*="kasitetakomo"],a[href*="takomo"],#credits,.unit-credits{display:none!important}
+/* the photo credits list at the end of a chapter is left out: every photo's caption names its author and licence */
+/* a table prints flat: no scroll-cue shadows at its edges (they printed as grey bands), nothing hidden by scrolling */
+table{background:#fff!important;overflow:visible!important}
+/* a box never splits over two pages (a box taller than a page still breaks, there is no other way) */
+blockquote,.katex-display,.notice,table,.eq-chain,.example-task,.intro-aside,.kc,details.opt,.worked .step,.fig,.fig-row,
+figure,.book-qr{break-inside:avoid}
 .intro-row{flex-direction:column!important}svg{max-width:100%;height:auto}img{max-width:100%}
 .book-qr{display:flex;gap:4mm;align-items:center;margin:0 0 5mm;padding:2.5mm 3mm;border:1px solid #bbb;border-radius:2mm;break-inside:avoid}
 .book-qr svg{width:21mm;height:21mm;flex:none}.book-qr p{margin:0;font-size:8.5pt!important;line-height:1.35}
@@ -92,27 +98,51 @@ def render_chapter(page, f, url, label):
     return title, page.pdf(format="A5", print_background=True, prefer_css_page_size=True)
 
 
-FRONT_CSS = """@page{size:A5;margin:16mm 15mm}body{font-family:Inter,'Segoe UI',Arial,sans-serif;color:#1d2a2a}
-.cover{height:170mm;display:flex;flex-direction:column;justify-content:space-between}
-.brand{font:700 13pt Georgia,serif;letter-spacing:.04em;color:#235e5a}.code{font:700 34pt Georgia,serif;margin:30mm 0 2mm}
-h1{font:600 19pt/1.25 Georgia,serif;margin:0}.note{font-size:9pt;color:#555}.qr{display:flex;gap:4mm;align-items:center;font-size:8.5pt}
-.qr svg{width:24mm;height:24mm}.blank{break-before:page;height:1mm}
-h2{font:700 15pt Georgia,serif;margin:0 0 6mm;break-before:page}ol{list-style:none;padding:0;margin:0;font-size:10pt}
-li{display:flex;gap:2mm;margin:0 0 2.6mm;line-height:1.3}li .n{flex:none;width:7mm;color:#235e5a;font-weight:700}
-li .t{flex:1}li .p{flex:none;width:8mm;text-align:right}"""
+FONTS = SITE / "vendor/fonts"
+BRAND = SITE / "brand"
+# the cover in the site's colours (teacher 2026-11-07): cream paper, the Ruukkilabra wordmark, (its subtitle is part of the logo), a forest-green panel with
+# the course in white and the school's white logo; the cover page has no margins so its colours reach the edges
+FRONT_CSS = """
+@font-face{font-family:"Fraunces";font-weight:100 900;src:url(%(fraunces)s) format("woff2")}
+@font-face{font-family:"Plus Jakarta Sans";font-weight:200 800;src:url(%(jakarta)s) format("woff2")}
+@page{size:A5;margin:16mm 15mm}@page cover{margin:0}
+html,body{margin:0}body{font-family:"Plus Jakarta Sans",Arial,sans-serif;color:#14171e;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.cover{page:cover;width:148mm;height:209.5mm;display:flex;flex-direction:column;background:#f7f3ec;overflow:hidden}
+.cover-top{flex:none;padding:20mm 16mm 14mm}.cover-top img{display:block;width:96mm;height:auto}
+.cover-band{flex:1;display:flex;flex-direction:column;justify-content:space-between;background:#1a4b2e;color:#fff;padding:16mm 16mm 13mm;
+  border-top:2.2mm solid #d76a10}
+.code{font:700 40pt/1 "Fraunces",Georgia,serif;letter-spacing:.01em}
+h1{font:600 20pt/1.22 "Fraunces",Georgia,serif;margin:4mm 0 0;max-width:110mm}
+.cover-foot{display:flex;align-items:flex-end;justify-content:space-between;gap:6mm}
+.qr{display:flex;gap:3mm;align-items:center;font-size:7.5pt;line-height:1.4;color:#e7efe9}
+.qr svg{width:20mm;height:20mm;background:#fff;padding:1mm;border-radius:1mm;flex:none}
+.school{width:34mm;height:auto;flex:none}
+.blank{break-before:page;height:1mm}
+h2{font:700 15pt "Fraunces",Georgia,serif;color:#14532d;margin:0 0 6mm;break-before:page}
+ol{list-style:none;padding:0;margin:0;font-size:10pt}
+li{display:flex;gap:2mm;margin:0 0 2.6mm;line-height:1.3}li .n{flex:none;width:7mm;color:#14532d;font-weight:700}
+li .t{flex:1}li .p{flex:none;width:8mm;text-align:right}
+.note{font-size:8pt;color:#474c5b;margin-top:8mm}""" % {
+    "fraunces": (FONTS / "fraunces-latin-wght-normal.woff2").as_uri(),
+    "jakarta": (FONTS / "plus-jakarta-sans-latin-wght-normal.woff2").as_uri()}
 
 
 def front_html(course, lang, course_title, toc, toc_start):
     t = TEXT[lang]
     url = page_url(lang, f"{course}.html")
+    logo = BRAND / ("ruukkilabra-logo-en.svg" if lang == "en" else "ruukkilabra-logo-fi.svg")
+    school = BRAND / "kiviruukin-lukio-oikea-valkoinen.svg"
     rows = "".join(f'<li><span class="n">{i}</span><span class="t">{title}</span>'
                    f'<span class="p">{p}</span></li>' for i, (title, p) in enumerate(toc, 1))
     return (f'<!doctype html><html lang="{lang[:2]}"><meta charset="utf-8">'
             f'<link rel="stylesheet" href="{(SITE / "vendor/katex/katex.min.css").as_uri()}"><style>{FRONT_CSS}</style><body>'
-            f'<div class="cover"><div><div class="brand">Ruukkilabra</div><div class="code">{course}</div>'
-            f'<h1>{html.escape(course_title)}</h1></div><div><div class="qr">{qr_svg(url)}<div>{t["course_qr"]}:<br>'
-            f'{html.escape(url.replace("https://", ""))}</div></div><p class="note">{t["note"]}</p></div></div>'
-            f'<div class="blank"></div><h2>{t["toc"]}</h2><ol>{rows}</ol></body></html>')
+            f'<div class="cover"><div class="cover-top"><img src="{logo.as_uri()}" alt="Ruukkilabra">'
+            '</div>'
+            f'<div class="cover-band"><div><div class="code">{course}</div><h1>{html.escape(course_title)}</h1></div>'
+            f'<div class="cover-foot"><div class="qr">{qr_svg(url)}<div>{t["course_qr"]}:<br>'
+            f'{html.escape(url.replace("https://", ""))}</div></div>'
+            f'<img class="school" src="{school.as_uri()}" alt="Kiviruukin lukio"></div></div></div>'
+            f'<div class="blank"></div><h2>{t["toc"]}</h2><ol>{rows}</ol><p class="note">{t["note"]}</p></body></html>')
 
 
 def number_pages(reader, skip):
