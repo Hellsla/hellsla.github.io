@@ -1,6 +1,6 @@
 # Energiantuotanto ja voimalaitosten hyötysuhde
 
-> **Miksi** voimalaitos tarvitsee polttoainetta noin kaksi ja puoli kertaa enemmän kuin se tuottaa sähköä, ja miten loput energiasta saadaan käyttöön?
+> **Miksi** lämpövoimalaitokseen tarvitaan polttoaineen energiaa noin $2{,}5$ kertaa niin paljon kuin se tuottaa sähköenergiaa, ja miten loppu energia voitaisiin hyödyntää?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: talvinen yhteistuotantovoimalaitos. Piipusta ja voimalasta nousee höyryä, voimalinjat vievät sähköä pois, ja kaukolämpöputket kulkevat kaupunkiin: punainen meno kuumaa vettä, sininen paluu jäähtynyttä vettä. Kerrostalojen ikkunat loistavat lämpiminä." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy315h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d0e6fb"/><stop offset="1" stop-color="#ffffff"/></linearGradient><linearGradient id="fy315h-chimney" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#c4ccd4"/></linearGradient><linearGradient id="fy315h-stack" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#c4ccd4"/></linearGradient></defs>
@@ -275,7 +275,11 @@ Tästä hyötysuhde on $\eta = \tfrac{228{,}228\,\text{MW}}{600\,\text{MW}} = 0{
 Kattilan häviö on vain $54\,\text{MW}$ ja generaattorin ja muuntajan $12\,\text{MW}$, joten parannukset kannattaa kohdistaa höyrykiertoon ja sen jälkeen lauhduttimen lämmön käyttöön.
 
 ## Yleinen virhekäsitys
-Moni ajattelee, että hukkalämpö on energiaa, joka on kadonnut. Energia ei katoa: se siirtyy lämpönä mereen tai ilmaan, joka lämpenee vain vähän: niin lähellä ympäristön lämpötilaa olevasta vedestä tai ilmasta ei voi enää saada työtä eikä sähköä. Yhteistuotannossa sama lämpö johdetaan kaukolämpöverkkoon ja lämmittää koteja.
+Moni ajattelee, että hukkalämpö on kadonnutta energiaa. Energia ei kuitenkaan katoa, vaan siirtyy esimerkiksi jäähdytysveteen tai ympäröivään ilmaan.
+
+Jos lämpö siirtyy ympäristöön vain hieman ympäristön lämpötilaa korkeammassa lämpötilassa, siitä on vaikea tuottaa merkittävästi mekaanista työtä tai sähköä. Mitä pienempi lämpötilaero on, sitä pienempi on lämpövoimakoneen suurin mahdollinen hyötysuhde.
+
+Sähkön ja lämmön yhteistuotannossa osa energiasta, joka muuten jäisi hukkalämmöksi, voidaan hyödyntää kaukolämpönä.
 
 Toinen virhe on laskea vaiheiden hyötysuhteet yhteen tai ottaa niiden keskiarvo. Kun kolmen vaiheen hyötysuhteet ovat 0,92, 0,46 ja 0,945, ketjun hyötysuhde on niiden tulo 0,40, ei keskiarvo 0,78. Kolmas virhe on pitää yhteistuotannon $88\,\%$:n kokonaishyötysuhdetta merkkinä siitä, että kaikki energia olisi yhtä arvokasta: sähköä voi käyttää kaikkeen, kaukolämpöä vain lämmitykseen.
 

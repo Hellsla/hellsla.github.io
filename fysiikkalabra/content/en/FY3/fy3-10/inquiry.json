@@ -23,23 +23,23 @@
       "stage": "herata",
       "type": "choice",
       "title": "Revise: Boyle's law",
-      "prompt": "The nozzle of a syringe is blocked when it contains 60 ml of air at a pressure of 100 kPa. The plunger is pushed until the volume of the air is 30 ml. The temperature does not change. What is the pressure of the air now?",
+      "prompt": "The nozzle of a syringe is blocked when it contains 60 ml of air at a pressure of $100\\,\\text{kPa}$. The plunger is pushed until the volume of the air is 30 ml. The temperature does not change. What is the pressure of the air now?",
       "choices": [
         {
-          "text": "50 kPa",
+          "text": "$50\\,\\text{kPa}$",
           "feedback": "At constant temperature, pressure and volume change in opposite directions: Boyle's law $p_1V_1 = p_2V_2$ means inverse proportionality. When the volume is halved, the pressure doubles."
         },
         {
-          "text": "100 kPa",
+          "text": "$100\\,\\text{kPa}$",
           "feedback": "The amount of air stays the same, but the pressure does not. By Boyle's law $p_1V_1 = p_2V_2$, $p_2 = p_1V_1/V_2 = 100\\,\\text{kPa} \\cdot 60\\,\\text{ml} / 30\\,\\text{ml} = 200\\,\\text{kPa}$."
         },
         {
-          "text": "200 kPa",
+          "text": "$200\\,\\text{kPa}$",
           "correct": true,
           "feedback": "Correct: Boyle's law $p_1V_1 = p_2V_2$ gives $p_2 = 100\\,\\text{kPa} \\cdot 60\\,\\text{ml} / 30\\,\\text{ml} = 200\\,\\text{kPa}$. Half the volume, twice the pressure."
         },
         {
-          "text": "400 kPa",
+          "text": "$400\\,\\text{kPa}$",
           "feedback": "The pressure is inversely proportional to the volume, not to its square. The volume is halved once, so the pressure doubles once: $200\\,\\text{kPa}$."
         }
       ],
@@ -81,7 +81,7 @@
       "stage": "tutki",
       "type": "interpret",
       "title": "Weigh the flasks",
-      "text": "A thin-walled 5.00 litre glass flask is weighed first pumped empty and then filled with different gases. Each time the gas pressure is 101 kPa and the temperature is $20\\,{}^\\circ\\text{C}$. A mole is always the same, a certain number of particles, and the molar mass $M$ is the mass of one mole. The table shows the masses of the gases (*example values* with the usual scatter of weighing, about ±$0.02\\,\\text{g}$) and the molar masses.\n\n| gas | $m$ (g) | $M$ (g/mol) |\n|---|---|---|\n| helium He | 0.83 | 4.00 |\n| nitrogen N₂ | 5.78 | 28.0 |\n| air | 6.02 | 29.0 |\n| carbon dioxide CO₂ | 9.10 | 44.0 |\n\nFirst calculate the quotient of the mass and the molar mass, $m/M$, for helium.",
+      "text": "A thin-walled 5.00 litre glass flask is weighed first pumped empty and then filled with different gases. Each time the gas pressure is $101\\,\\text{kPa}$ and the temperature is $20\\,{}^\\circ\\text{C}$. A mole is always the same, a certain number of particles, and the molar mass $M$ is the mass of one mole. The table shows the masses of the gases (*example values* with the usual scatter of weighing, about ±$0.02\\,\\text{g}$) and the molar masses.\n\n| gas | $m$ (g) | $M$ (g/mol) |\n|---|---|---|\n| helium He | 0.83 | 4.00 |\n| nitrogen N₂ | 5.78 | 28.0 |\n| air | 6.02 | 29.0 |\n| carbon dioxide CO₂ | 9.10 | 44.0 |\n\nFirst calculate the quotient of the mass and the molar mass, $m/M$, for helium.",
       "question": {
         "type": "numeric",
         "prompt": "What is $m/M$ for helium?",
@@ -118,7 +118,7 @@
         {
           "text": "$m/M$ is almost the same for all the gases.",
           "correct": true,
-          "feedback": "Exactly: helium 0.2075 mol, nitrogen 0.2064 mol, air 0.2076 mol and carbon dioxide 0.2068 mol. The differences are under $1\\,\\%$, that is, the scatter of weighing. The quotient $m/M$ is the amount of substance in moles, so at the same pressure, volume and temperature all these gases contain the same number of moles."
+          "feedback": "Exactly: helium $0.2075\\,\\text{mol}$, nitrogen $0.2064\\,\\text{mol}$, air $0.2076\\,\\text{mol}$ and carbon dioxide $0.2068\\,\\text{mol}$. The differences are under $1\\,\\%$, that is, the scatter of weighing. The quotient $m/M$ is the amount of substance in moles, so at the same pressure, volume and temperature all these gases contain the same number of moles."
         },
         {
           "text": "$m/M$ is greatest for helium, because more of a light gas fits into the flask.",
@@ -130,7 +130,7 @@
         },
         {
           "text": "$m/M$ grows in the same proportion as the mass.",
-          "feedback": "Carbon dioxide is about 11 times heavier than helium, but $m/M$ is almost the same for both, 0.2068 mol and 0.2075 mol. The molar mass grows in the same proportion as the mass, so the quotient stays the same."
+          "feedback": "Carbon dioxide is about 11 times heavier than helium, but $m/M$ is almost the same for both, $0.2068\\,\\text{mol}$ and $0.2075\\,\\text{mol}$. The molar mass grows in the same proportion as the mass, so the quotient stays the same."
         }
       ]
     },
@@ -143,7 +143,7 @@
       "choices": [
         {
           "text": "The air balloon, because the air balloon is heavier.",
-          "feedback": "In the weighing the mass of air was about 7 times the mass of helium ($6.02\\,\\text{g}$ and $0.83\\,\\text{g}$), but when the mass is divided by the molar mass, both give almost the same amount of substance, 0.2076 mol and 0.2075 mol. A mole is always the same number of particles, so there are the same number of particles. Mass tells the number of particles only if the particles are all alike."
+          "feedback": "In the weighing the mass of air was about 7 times the mass of helium ($6.02\\,\\text{g}$ and $0.83\\,\\text{g}$), but when the mass is divided by the molar mass, both give almost the same amount of substance, $0.2076\\,\\text{mol}$ and $0.2075\\,\\text{mol}$. A mole is always the same number of particles, so there are the same number of particles. Mass tells the number of particles only if the particles are all alike."
         },
         {
           "text": "The same number.",
@@ -152,7 +152,7 @@
         },
         {
           "text": "The helium balloon, because the small, fast helium particles fit more tightly.",
-          "feedback": "The weighing does not support this: for helium $m/M$ was 0.2075 mol, the same as for the other gases within the scatter of the measurements. At the same temperature the light helium particles move faster, so they hit the walls more often, but each hit pushes the wall more weakly. The weighing shows that the end result is the same pressure with the same number of particles. In the ideal gas model the particles are points, and their size does not affect how many fit."
+          "feedback": "The weighing does not support this: for helium $m/M$ was $0.2075\\,\\text{mol}$, the same as for the other gases within the scatter of the measurements. At the same temperature the light helium particles move faster, so they hit the walls more often, but each hit pushes the wall more weakly. The weighing shows that the end result is the same pressure with the same number of particles. In the ideal gas model the particles are points, and their size does not affect how many fit."
         },
         {
           "text": "It depends on the type of gas and the temperature, so it cannot be deduced.",
@@ -300,7 +300,7 @@
       "stage": "tutki",
       "type": "numeric",
       "title": "Calculate the constant from the weighing",
-      "prompt": "In the simulation $pV/(NT)$ stayed constant. Let us calculate the same quantity from weighing data that resemble a measurement of a real gas. In the weighing the amount of substance of helium was $n = m/M = 0.2075\\,\\text{mol}$, the pressure 101 kPa, the volume $5.00\\,\\textsf{l}$ and the temperature $20\\,{}^\\circ\\text{C}$. Calculate $pV/(nT)$ in SI units.",
+      "prompt": "In the simulation $pV/(NT)$ stayed constant. Let us calculate the same quantity from weighing data that resemble a measurement of a real gas. In the weighing the amount of substance of helium was $n = m/M = 0.2075\\,\\text{mol}$, the pressure $101\\,\\text{kPa}$, the volume $5.00\\,\\textsf{l}$ and the temperature $20\\,{}^\\circ\\text{C}$. Calculate $pV/(nT)$ in SI units.",
       "answer": 8.3,
       "unit": "J/(mol·K)",
       "tolerance": 0.02,
@@ -377,16 +377,16 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Find the error",
-      "prompt": "A student calculates how many moles of air are in a 2.0 litre bottle when the pressure is 101 kPa and the temperature is $20\\,{}^\\circ\\text{C}$:\n\n$$\\begin{aligned} n &= \\frac{pV}{RT} \\\\ &= \\frac{101\\,000\\,\\text{Pa} \\cdot 0.0020\\,\\text{m}^3}{8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 20\\,\\text{K}} \\\\ &\\approx 1.2\\,\\text{mol} \\end{aligned}$$\n\nWhere is the error?",
+      "prompt": "A student calculates how many moles of air are in a 2.0 litre bottle when the pressure is $101\\,\\text{kPa}$ and the temperature is $20\\,{}^\\circ\\text{C}$:\n\n$$\\begin{aligned} n &= \\frac{pV}{RT} \\\\ &= \\frac{101\\,000\\,\\text{Pa} \\cdot 0.0020\\,\\text{m}^3}{8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 20\\,\\text{K}} \\\\ &\\approx 1.2\\,\\text{mol} \\end{aligned}$$\n\nWhere is the error?",
       "choices": [
         {
-          "text": "The pressure should be substituted in kilopascals, 101 kPa.",
+          "text": "The pressure should be substituted in kilopascals, $101\\,\\text{kPa}$.",
           "feedback": "The pascal is the correct unit, because $1\\,\\text{Pa}\\cdot\\text{m}^3 = 1\\,\\text{J}$ matches the unit of $R$. With kilopascals the result would be wrong by a factor of a thousand. The error is elsewhere."
         },
         {
           "text": "The temperature is in degrees Celsius. In kelvins $T = 293.15\\,\\text{K}$, and $n \\approx 0.083\\,\\text{mol}$.",
           "correct": true,
-          "feedback": "Correct. In the equation of state the temperature is always in kelvins: $n = 101\\,000\\,\\text{Pa} \\cdot 0.0020\\,\\text{m}^3 / (8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 293.15\\,\\text{K}) \\approx 0.083\\,\\text{mol}$. Reasonableness check: a mole takes up about $24\\,\\textsf{l}$ at room temperature, so 2.0 litres contain about 0.08 mol."
+          "feedback": "Correct. In the equation of state the temperature is always in kelvins: $n = 101\\,000\\,\\text{Pa} \\cdot 0.0020\\,\\text{m}^3 / (8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 293.15\\,\\text{K}) \\approx 0.083\\,\\text{mol}$. Reasonableness check: a mole takes up about $24\\,\\textsf{l}$ at room temperature, so 2.0 litres contain about $0.08\\,\\text{mol}$."
         },
         {
           "text": "The volume should be substituted in litres, $2.0\\,\\textsf{l}$.",
@@ -404,7 +404,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Apply to a new situation",
-      "prompt": "The volume of the envelope of a hot-air balloon is $2.80 \\cdot 10^3\\,\\text{m}^3$. The lower part of the envelope is open, so the pressure of the air inside is the same as that outside, 101 kPa. The burner heats the air inside to $100\\,{}^\\circ\\text{C}$. How many kilograms of air are inside the envelope? The molar mass of air is $29.0\\,\\text{g/mol}$, and $R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$. Assume that air is an ideal gas.",
+      "prompt": "The volume of the envelope of a hot-air balloon is $2.80 \\cdot 10^3\\,\\text{m}^3$. The lower part of the envelope is open, so the pressure of the air inside is the same as that outside, $101\\,\\text{kPa}$. The burner heats the air inside to $100\\,{}^\\circ\\text{C}$. How many kilograms of air are inside the envelope? The molar mass of air is $29.0\\,\\text{g/mol}$, and $R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$. Assume that air is an ideal gas.",
       "answer": 2640,
       "unit": "kg",
       "tolerance": 0.02,
@@ -522,7 +522,7 @@
         "I say that a mole is always the same number of particles, so there are the same number of particles too.",
         "I explain the difference in masses with the molar mass: $m = nM$, and the particles of a heavier gas are heavier."
       ],
-      "model": "In the weighing each of the four gases had the same pressure, volume and temperature, and the quotient $m/M$ was almost the same for all of them, 0.2075 mol for helium and 0.2068 mol for carbon dioxide. The equation of state explains this: $n = pV/(RT)$, and the molar gas constant $R$ is the same for all gases, so the same $p$, $V$ and $T$ give the same amount of substance whatever the type of gas. A mole is always the same number of particles, so there are the same number of particles too. The masses differ because $m = nM$: a carbon dioxide particle is much heavier than a helium particle, so the same amount of carbon dioxide weighs about 11 times more.",
+      "model": "In the weighing each of the four gases had the same pressure, volume and temperature, and the quotient $m/M$ was almost the same for all of them, $0.2075\\,\\text{mol}$ for helium and $0.2068\\,\\text{mol}$ for carbon dioxide. The equation of state explains this: $n = pV/(RT)$, and the molar gas constant $R$ is the same for all gases, so the same $p$, $V$ and $T$ give the same amount of substance whatever the type of gas. A mole is always the same number of particles, so there are the same number of particles too. The masses differ because $m = nM$: a carbon dioxide particle is much heavier than a helium particle, so the same amount of carbon dioxide weighs about 11 times more.",
       "optional": true
     },
     {

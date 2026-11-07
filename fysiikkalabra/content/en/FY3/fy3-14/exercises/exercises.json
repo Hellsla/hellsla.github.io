@@ -49,7 +49,7 @@
       "kind": [
         "concept"
       ],
-      "answer": "Exactly $0\\,{}^\\circ\\text{C}$, because the heat is used for melting the ice.",
+      "answer": "At normal pressure, the temperature of a mixture of pure water and ice is about $0\\,{}^\\circ\\text{C}$ when both phases are in equilibrium. This is the melting and freezing temperature of water at normal pressure.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
@@ -66,9 +66,9 @@
           "feedback": "If the temperature were above the melting temperature, the ice would still melt and the temperature would fall because of the melting. In thermal equilibrium no heat is transferred, so there could be no ice left."
         },
         {
-          "text": "Exactly $0\\,{}^\\circ\\text{C}$, because the heat is used for melting the ice.",
+          "text": "At normal pressure, the temperature of a mixture of pure water and ice is about $0\\,{}^\\circ\\text{C}$ when both phases are in equilibrium. This is the melting and freezing temperature of water at normal pressure.",
           "correct": true,
-          "feedback": "Correct: in thermal equilibrium ice and water exist together only at the melting temperature of ice, $0\\,{}^\\circ\\text{C}$. The heat is used for the change of state and does not change the temperature."
+          "feedback": "Correct: in thermal equilibrium ice and water exist together only at the melting temperature of ice, about $0\\,{}^\\circ\\text{C}$ at normal pressure. In equilibrium no more heat is transferred, so the ice does not melt and the water does not freeze."
         }
       ]
     },

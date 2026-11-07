@@ -122,7 +122,7 @@
 </svg>
 
 ## Ydinajatus
-Kun tutkit ilmiötä, rajaat tutkittavan osan erilleen muusta maailmasta. Rajattu osa on termodynaaminen systeemi. Kaikki sen ulkopuolella on ympäristö. Pyörän renkaan ilma on esimerkki systeemistä. Jos systeemistä ei pääse ainetta ulos eikä sisään, systeemi on suljettu. Systeemin tilaa kuvataan tilanmuuttujilla. Tilanmuuttujia ovat lämpötila, paine ja tilavuus sekä aineen määrä. Paine on voima pinta-alaa kohti. Paineen yksikkö on pascal (Pa), ja 1 kPa = 1000 Pa. Paineeseen tutustutaan tarkemmin myöhemmin. Kun muutat kaasusysteemissä yhtä tilanmuuttujaa, vähintään yksi muista muuttuu myös.
+Kun tutkit ilmiötä, rajaat tutkittavan osan erilleen muusta maailmasta. Rajattu osa on termodynaaminen systeemi. Kaikki sen ulkopuolella on ympäristö. Pyörän renkaan ilma on esimerkki systeemistä. Jos systeemistä ei pääse ainetta ulos eikä sisään, systeemi on suljettu. Systeemin tilaa kuvataan tilanmuuttujilla. Tilanmuuttujia ovat lämpötila, paine ja tilavuus sekä aineen määrä. Paine on voima pinta-alaa kohti. Paineen yksikkö on pascal (Pa), ja $1\,\text{kPa} = 1000\,\text{Pa}$. Paineeseen tutustutaan tarkemmin myöhemmin. Kun muutat kaasusysteemissä yhtä tilanmuuttujaa, vähintään yksi muista muuttuu myös.
 
 <svg data-fig="system" viewBox="0 0 600 340" role="img" aria-label="Periaatekuva, ei mittakaavassa. Kaasu on sylinterissä. Sylinterin yläpään sulkee mäntä, joka voi liikkua. Kaasu on termodynaaminen systeemi. Systeemin rajapinta on piirretty katkoviivalla kaasun ympärille. Sylinterin seinät, mäntä ja koko muu maailma ovat ympäristöä. Systeemin tilaa kuvaavat tilanmuuttujat: paine p, tilavuus V ja lämpötila T." style="max-width:100%;font-size:24px">
   <rect x="138" y="150" width="204" height="140" fill="#eef5f9"/>
@@ -226,11 +226,11 @@ Lämpötilaa mitataan celsiusasteikolla ja kelvinasteikolla. Celsiusasteikolla $
 Lause ”lämpötila kertoo hiukkasten keskimääräisestä liike-energiasta” on sellaisenaan totta vain harvalle kaasulle. Harvassa kaasussa hiukkaset vaikuttavat toisiinsa vain törmätessään. Silloin lämpötila on verrannollinen hiukkasten etenemisliikkeen keskimääräiseen liike-energiaan. Nesteessä ja kiinteässä aineessa hiukkaset ovat lähellä toisiaan. Ne värähtelevät, ja naapurit vetävät niitä. Lämpötila kuvaa niissäkin hiukkasten lämpöliikkeen voimakkuutta. Aineen energiaan kuuluu kuitenkin myös hiukkasten välisten vuorovaikutusten energia. Siksi lämpötila ei ole sama asia kuin aineen energia. Jäällä ja vedellä voi olla sama lämpötila $0\,{}^\circ\text{C}$, mutta samamassaisessa vedessä on enemmän sisäenergiaa kuin jäässä (luvut *Sisäenergia, lämpömäärä ja energian säilyminen* ja *Olomuodon muutokset*). Absoluuttisessa nollapisteessäkään kaikki hiukkasten liike ei lakkaa. Sen energia on kuitenkin pienin mahdollinen.
 
 ## Kaava: Kelvinasteikko
-Celsiuslämpötila $\theta$ muutetaan kelvineiksi näin:
+Celsiuslämpötila $\theta$ ja kelvinlämpötila $T$ liittyvät toisiinsa. Niiden lukuarvoille pätee yhtälö
 ```latex
-T = \theta + 273{,}15
+\frac{T}{\text{K}} = \frac{\theta}{{}^\circ\text{C}} + 273{,}15
 ```
-Tässä $T$ on lämpötila kelvineinä (K) ja $\theta$ on lämpötila celsiusasteina (°C). Käytännössä riittää usein luku 273. Kelvineille ei käytetä sanaa aste. Sanotaan ”300 kelviniä”, ei ”300 kelvinastetta”.
+Esimerkiksi $20\,{}^\circ\text{C}$ on sama lämpötila kuin $293{,}15\,\text{K}$. Lämpötilaero on kelvineinä ja celsiusasteina sama luku. Kun lämpötila nousee $20\,{}^\circ\text{C}$:sta $30\,{}^\circ\text{C}$:seen, nousu on $10\,\text{K}$. Käytännössä riittää usein luku 273. Kelvineille ei käytetä sanaa aste. Sanotaan ”300 kelviniä”, ei ”300 kelvinastetta”.
 
 Absoluuttinen nollapiste on siis $0\,\text{K}$ = $-273{,}15\,{}^\circ\text{C}$. Kelvinlämpötila ei voi olla negatiivinen. Celsiuslämpötila voi olla negatiivinen.
 

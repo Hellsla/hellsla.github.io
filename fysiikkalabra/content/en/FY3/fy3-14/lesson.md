@@ -98,17 +98,22 @@ When warm water and ice are put in an insulated container, heat is transferred f
   <foreignObject x="353.0" y="309" width="244" height="34"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\text{ice } 0.025\,\text{kg},\ 0\,{}^\circ\text{C}$</div></foreignObject>
 </svg>
 
-This is why the final temperature cannot be found as the mean of the initial temperatures. There are four possible end states. If the water can give out enough heat as it cools to melt all the ice, all the ice melts and the temperature of the mixture is at least $0\,{}^\circ\text{C}$: exactly $0\,{}^\circ\text{C}$ if the heat is only just enough, and otherwise above $0\,{}^\circ\text{C}$. If the heat is not enough, both ice and water are left in the container, and as long as both are present, the temperature is exactly $0\,{}^\circ\text{C}$. If the ice is very cold and there is little water, part or all of the water freezes; only when all the water has frozen is the temperature below $0\,{}^\circ\text{C}$. The solution always starts with the same comparison: calculate how much heat the water can give out and how much the ice needs to melt completely.
+When warm water and cold ice are mixed in an insulated container, the final temperature is generally not the mean of the initial temperatures. The solution is based on conservation of energy.
 
 ## Formula: Thermal equilibrium and melting
-An insulated container holds water of mass $m_\text{w}$ and temperature $T_\text{w} > 0\,{}^\circ\text{C}$, and ice of mass $m_\text{i}$ and temperature $T_\text{i} \le 0\,{}^\circ\text{C}$. We compare two quantities of heat: the one the water can give out as it cools to $0\,{}^\circ\text{C}$, and the one the ice needs to warm to $0\,{}^\circ\text{C}$ and melt completely:
+An insulated container holds water of mass $m_\text{w}$ and temperature $T_\text{w} > 0\,{}^\circ\text{C}$, and ice of mass $m_\text{i}$ and temperature $T_\text{i} \le 0\,{}^\circ\text{C}$. The quantity of heat given out by the water as it cools to the melting point is
 ```latex
-\begin{aligned}
-Q_\text{w} &= c_\text{w} m_\text{w} T_\text{w} \\
-Q_\text{i} &= c_\text{i} m_\text{i} \Delta T_\text{i} + s m_\text{i}
-\end{aligned}
+Q_\text{w} = c_\text{w} m_\text{w} \Delta T_\text{w}
 ```
-where $Q_\text{w}$ is the quantity of heat given out by the water (J), $c_\text{w}$ is the specific heat capacity of water and $c_\text{i}$ that of ice (J/(kg·K)), $T_\text{w}$ is the temperature of the water in degrees Celsius (the same number as the temperature change to $0\,{}^\circ\text{C}$ in kelvins), $Q_\text{i}$ is the quantity of heat the ice needs (J), $\Delta T_\text{i} = 0\,{}^\circ\text{C} - T_\text{i}$ is the rise in the temperature of the ice (K) and $s$ is the specific latent heat of fusion of ice (J/kg). The first term warms the ice to $0\,{}^\circ\text{C}$ and the second melts it.
+Warming the ice to the melting point needs the energy
+```latex
+Q_\text{i,warm} = c_\text{i} m_\text{i} \Delta T_\text{i}
+```
+Melting all the ice needs the additional energy $s m_\text{i}$. So warming and melting the ice need altogether
+```latex
+Q_\text{i} = Q_\text{i,warm} + s m_\text{i}
+```
+where $c_\text{w}$ is the specific heat capacity of water and $c_\text{i}$ that of ice (J/(kg·K)), $\Delta T_\text{w} = T_\text{w} - 0\,{}^\circ\text{C}$ is the fall in the temperature of the water to the melting point (K), $\Delta T_\text{i} = 0\,{}^\circ\text{C} - T_\text{i}$ is the rise in the temperature of the ice to the melting point (K) and $s$ is the specific latent heat of fusion of ice (J/kg).
 
 <svg viewBox="0 0 600 392" role="img" aria-label="Energy balance bars drawn to scale, in kilojoules: 0.30 kg of water at 20 °C gives out 25.1 kJ when it cools to 0 °C. 0.10 kg of ice at −10 °C needs 2.1 kJ to warm to 0 °C and 33.4 kJ to melt, 35.5 kJ in total. The heat from the water is not enough: the pale part of the bar shows the ice that does not have time to melt." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy314-heat2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
@@ -146,6 +151,15 @@ where $Q_\text{w}$ is the quantity of heat given out by the water (J), $c_\text{
 | of water $c_\text{w}$ | $4190\,\text{J/(kg}\cdot\text{K)}$ |
 | of ice $c_\text{i}$ | $2100\,\text{J/(kg}\cdot\text{K)}$ |
 | of ice $s$ | $334\,\text{kJ/kg}$ |
+
+The possible end states are:
+
+1. If $Q_\text{w} > Q_\text{i}$, all the ice melts and the resulting water warms to above $0\,{}^\circ\text{C}$.
+2. If $Q_\text{i,warm} \le Q_\text{w} \le Q_\text{i}$, the final temperature is $0\,{}^\circ\text{C}$. Some ice may be left, or all the ice may only just melt.
+3. If $Q_\text{w} < Q_\text{i,warm}$, the water cooling to zero degrees is not enough on its own to warm all the ice to the melting point. Then part of the water may freeze and give out energy as it solidifies.
+4. If even the energy released when all the water freezes is not enough to warm the ice to the melting point, the end state is ice only, at a temperature below $0\,{}^\circ\text{C}$.
+
+So before calculating the temperature, you must work out which phases are present in the end state.
 
 If $Q_\text{w} \ge Q_\text{i}$, all the ice melts. The heat given out by the water is then used to warm and melt the ice, and the rest warms the whole amount of water $m_\text{w} + m_\text{i}$ to the temperature $T$. The energy balance is
 ```latex
@@ -201,7 +215,7 @@ The mass of ice that is left is $m_\text{i} - m_\text{melt}$. The graph shows ho
   <foreignObject x="135.0" y="260.0" width="110" height="34"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\text{initial glass}$</div></foreignObject>
 </svg>
 
-If $Q_\text{w}$ is not enough even to warm the ice to $0\,{}^\circ\text{C}$, the cold ice freezes some of the water. As long as some water is left, ice and water are present together and the temperature is $0\,{}^\circ\text{C}$. Only if all the water freezes does the mass of ice cool to below $0\,{}^\circ\text{C}$; its temperature is found from the same energy balance in the Level 3 exercise.
+In case 3 the cold ice freezes some of the water. As long as some water is left, ice and water are present together and the temperature is $0\,{}^\circ\text{C}$. In case 4 all the water freezes, and the temperature of the ice is found from the same energy balance in the Level 3 exercise.
 
 <figure class="unit-photo"><img src="pics/fy3/ice-water-glass.webp" alt="A glass of water seen from above. The glass holds water and many ice cubes."><figcaption>Ice cubes in a glass of water. The ice melts as heat flows into it from the surrounding water.</figcaption></figure>
 
@@ -221,7 +235,7 @@ A calorimeter contains $0.250\,\text{kg}$ of water at a temperature of $24.0\,{}
 **Rearranged formula.** When the water cools to $0\,{}^\circ\text{C}$ it gives out a quantity of heat $Q_\text{w}$, and to melt, the ice needs a quantity of heat $Q_\text{i}$. When $Q_\text{w} > Q_\text{i}$, the surplus warms all the water ($m_\text{w} + m_\text{i}$) to the temperature $T$:
 ```latex
 \begin{aligned}
-&Q_\text{w} = c_\text{w} m_\text{w} T_\text{w} \\
+&Q_\text{w} = c_\text{w} m_\text{w} \Delta T_\text{w} \\
 &Q_\text{i} = c_\text{i} m_\text{i} \Delta T_\text{i} + s m_\text{i} \\[6pt]
 &T = \frac{Q_\text{w} - Q_\text{i}}{c_\text{w} (m_\text{w} + m_\text{i})}
 \end{aligned}
@@ -229,14 +243,14 @@ A calorimeter contains $0.250\,\text{kg}$ of water at a temperature of $24.0\,{}
 
 <!-- vaihe -->
 
-**Unit conversions.** The masses are already in kilograms. A temperature change is the same in kelvins and in degrees Celsius: the water cools by $24.0\,{}^\circ\text{C} - 0\,{}^\circ\text{C} = 24.0\,\text{K}$ and the ice warms by $\Delta T_\text{i} = 0\,{}^\circ\text{C} - (-8.0\,{}^\circ\text{C}) = 8.0\,\text{K}$. The latent heat of fusion is $334\,\tfrac{\text{kJ}}{\text{kg}} = 334\,000\,\tfrac{\text{J}}{\text{kg}}$.
+**Unit conversions.** The masses are already in kilograms. A temperature change is the same in kelvins and in degrees Celsius: the water cools by $\Delta T_\text{w} = 24.0\,{}^\circ\text{C} - 0\,{}^\circ\text{C} = 24.0\,\text{K}$ and the ice warms by $\Delta T_\text{i} = 0\,{}^\circ\text{C} - (-8.0\,{}^\circ\text{C}) = 8.0\,\text{K}$. The latent heat of fusion is $334\,\tfrac{\text{kJ}}{\text{kg}} = 334\,000\,\tfrac{\text{J}}{\text{kg}}$.
 
 <!-- vaihe -->
 
 **Substitution.** We calculate the quantities of heat separately and then the temperature:
 ```latex
 \begin{aligned}
-&Q_\text{w} = c_\text{w} m_\text{w} T_\text{w} \\
+&Q_\text{w} = c_\text{w} m_\text{w} \Delta T_\text{w} \\
 &= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.250\,\text{kg} \cdot 24.0\,\text{K} \\
 &= 25\,140\,\text{J} \\[6pt]
 &Q_\text{i} = c_\text{i} m_\text{i} \Delta T_\text{i} + s m_\text{i} \\
@@ -272,7 +286,7 @@ In reality, melting all the ice would need $33.4\,\text{kJ}$, but the water can 
 
 ## Summary
 - In an insulated container, the quantity of heat given out by the water is equal to the quantity of heat taken in by the ice. The ice first warms to $0\,{}^\circ\text{C}$ and then melts; during melting the temperature does not change.
-- First compare the quantities of heat $Q_\text{w} = c_\text{w} m_\text{w} T_\text{w}$ and $Q_\text{i} = c_\text{i} m_\text{i} \Delta T_\text{i} + s m_\text{i}$. If $Q_\text{w} \ge Q_\text{i}$, all the ice melts and $T = \tfrac{Q_\text{w} - Q_\text{i}}{c_\text{w}(m_\text{w} + m_\text{i})}$; in the borderline case $Q_\text{w} = Q_\text{i}$ the temperature is exactly $0\,{}^\circ\text{C}$.
+- First compare the quantities of heat $Q_\text{w} = c_\text{w} m_\text{w} \Delta T_\text{w}$ and $Q_\text{i} = c_\text{i} m_\text{i} \Delta T_\text{i} + s m_\text{i}$. If $Q_\text{w} \ge Q_\text{i}$, all the ice melts and $T = \tfrac{Q_\text{w} - Q_\text{i}}{c_\text{w}(m_\text{w} + m_\text{i})}$; in the borderline case $Q_\text{w} = Q_\text{i}$ the temperature is exactly $0\,{}^\circ\text{C}$.
 - If $Q_\text{w} < Q_\text{i}$, some ice is left and the temperature is $0\,{}^\circ\text{C}$. The mass of melted ice is $m_\text{melt} = \tfrac{Q_\text{w} - c_\text{i} m_\text{i} \Delta T_\text{i}}{s}$. Exception: if the ice is so cold that all the water freezes, the temperature is below $0\,{}^\circ\text{C}$.
 - The specific latent heat of fusion of water is $334\,\text{kJ/kg}$: melting one kilogram of ice needs the same energy as warming a kilogram of water by almost $80\,\text{K}$.
 - The final temperature is not the mean of the initial temperatures, and when ice and water are together in the same container in equilibrium at normal pressure, the temperature is $0\,{}^\circ\text{C}$.

@@ -49,7 +49,7 @@
       "kind": [
         "concept"
       ],
-      "answer": "Täsmälleen $0\\,{}^\\circ\\text{C}$, koska lämpö kuluu jään sulamiseen.",
+      "answer": "Puhtaan veden ja jään seoksen lämpötila on normaalipaineessa noin $0\\,{}^\\circ\\text{C}$, kun molempia olomuotoja on tasapainossa. Tämä on veden sulamis- ja jähmettymislämpötila normaalipaineessa.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
@@ -66,9 +66,9 @@
           "feedback": "Jos lämpötila olisi sulamislämpötilaa korkeampi, jää sulaisi edelleen ja lämpötila laskisi sulamisen takia. Lämpötasapainossa lämpöä ei siirry, joten jäätä ei voisi olla jäljellä."
         },
         {
-          "text": "Täsmälleen $0\\,{}^\\circ\\text{C}$, koska lämpö kuluu jään sulamiseen.",
+          "text": "Puhtaan veden ja jään seoksen lämpötila on normaalipaineessa noin $0\\,{}^\\circ\\text{C}$, kun molempia olomuotoja on tasapainossa. Tämä on veden sulamis- ja jähmettymislämpötila normaalipaineessa.",
           "correct": true,
-          "feedback": "Oikein: lämpötasapainossa jäätä ja vettä on yhtä aikaa vain jään sulamislämpötilassa $0\\,{}^\\circ\\text{C}$. Lämpö kuluu olomuodon muutokseen, eikä se muuta lämpötilaa."
+          "feedback": "Oikein: lämpötasapainossa jäätä ja vettä on yhtä aikaa vain jään sulamislämpötilassa. Normaalipaineessa se on noin $0\\,{}^\\circ\\text{C}$. Tasapainossa lämpöä ei enää siirry. Siksi jää ei sula, eikä vesi jäädy."
         }
       ]
     },

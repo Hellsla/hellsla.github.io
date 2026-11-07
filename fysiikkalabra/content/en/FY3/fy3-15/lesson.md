@@ -1,6 +1,6 @@
 # Energy production and the efficiency of power plants
 
-> **Why** does a power plant need about two and a half times as much fuel as the electricity it produces, and how can the rest of the energy be put to use?
+> **Why** does a thermal power plant need about $2.5$ times as much fuel energy as the electrical energy it produces, and how could the rest of the energy be put to use?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: a combined heat and power plant in winter. Steam rises from the chimney and the plant, power lines carry electricity away, and district heating pipes run to the city: the red flow pipe carries hot water and the blue return pipe carries cooled water. The windows of the apartment buildings glow warm." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy315h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d0e6fb"/><stop offset="1" stop-color="#ffffff"/></linearGradient><linearGradient id="fy315h-chimney" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#c4ccd4"/></linearGradient><linearGradient id="fy315h-stack" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#c4ccd4"/></linearGradient></defs>
@@ -275,7 +275,11 @@ From this the efficiency is $\eta = \tfrac{228.228\,\text{MW}}{600\,\text{MW}} =
 The loss of the boiler is only $54\,\text{MW}$ and that of the generator and transformer $12\,\text{MW}$, so improvements should be aimed at the steam cycle and after that at the use of the heat of the condenser.
 
 ## Common misconception
-Many people think that waste heat is energy that has been lost. Energy does not disappear: it is transferred as heat to the sea or the air, which warms up only a little: from water or air so close to the temperature of the surroundings no work or electricity can be obtained any more. In combined production the same heat is led into the district heating network and heats homes.
+Many people think that waste heat is energy that has been lost. Energy does not disappear, however: it is transferred, for example, to the cooling water or the surrounding air.
+
+If heat is transferred to the surroundings at a temperature only slightly above that of the surroundings, it is hard to obtain much mechanical work or electricity from it. The smaller the temperature difference, the lower the maximum possible efficiency of a heat engine.
+
+In combined heat and power production, part of the energy that would otherwise be left as waste heat can be used as district heating.
 
 Another mistake is to add the efficiencies of the steps or to take their mean. When the efficiencies of three steps are 0.92, 0.46 and 0.945, the efficiency of the chain is their product 0.40, not the mean 0.78. A third mistake is to take the overall efficiency of $88\,\%$ of combined production as a sign that all the energy would be equally valuable: electricity can be used for everything, district heating only for heating.
 

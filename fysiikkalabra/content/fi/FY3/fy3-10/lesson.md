@@ -242,7 +242,21 @@ Tarkat mittaukset antavat kaikille kaasuille arvon $R = 8{,}31\,\tfrac{\text{J}}
 ```latex
 pV = nRT
 ```
-missä $p$ on paine (Pa), $V$ tilavuus (m³), $n$ ainemäärä (mol), $R = 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$ moolinen kaasuvakio ja $T$ lämpötila kelvineinä (K). Kaasun laatu ei näy yhtälössä lainkaan. Celsiusasteina annettu lämpötila $\theta$ muutetaan kelvineiksi lisäämällä lukuarvoon $273{,}15$. Paine on aina kokonaispaine pascaleina ja tilavuus kuutiometreinä, koska $R$:n yksikössä on joule: ${1\,\text{Pa} \cdot \text{m}^3} = {1\,\tfrac{\text{N}}{\text{m}^2} \cdot \text{m}^3} = {1\,\text{N} \cdot \text{m}} = 1\,\text{J}$.
+missä $p$ on kaasun absoluuttinen paine, $V$ tilavuus, $n$ ainemäärä, $R$ moolinen kaasuvakio ja $T$ kelvinlämpötila. Kaasun laatu ei näy yhtälössä lainkaan. Celsiusasteina annettu lämpötila $\theta$ muutetaan kelvineiksi lisäämällä lukuarvoon $273{,}15$.
+
+Kun käytetään kaasuvakion arvoa
+```latex
+R = 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}
+```
+tulon $pV$ yksikön on oltava joule. Tavallisesti paine muunnetaan pascaleiksi ja tilavuus kuutiometreiksi, jolloin
+```latex
+1\,\text{Pa} \cdot \text{m}^3 = 1\,\tfrac{\text{N}}{\text{m}^2} \cdot \text{m}^3 = 1\,\text{N} \cdot \text{m} = 1\,\text{J}
+```
+Myös kilopascalien ja litrojen yhdistelmä on mahdollinen, sillä
+```latex
+1\,\text{kPa} \cdot \textsf{l} = 1000\,\text{Pa} \cdot 0{,}001\,\text{m}^3 = 1\,\text{J}
+```
+Tärkeintä on käsitellä yksiköt johdonmukaisesti koko laskun ajan.
 
 Kun tilanyhtälö ratkaistaan paineen suhteen, nähdään, että paine kaksinkertaistuu, kun hiukkasten lukumäärä tai kelvinlämpötila kaksinkertaistuu tai kun tilavuus puolittuu. Paine on siis suoraan verrannollinen hiukkasten lukumäärään ja kelvinlämpötilaan ja kääntäen verrannollinen tilavuuteen, eli $p \propto NT/V$.
 

@@ -136,7 +136,7 @@
 ## fy3-13-L1-08
 **Kysytty:** mitä ekstrapolointi tarkoittaa, kun mittauspisteisiin sovitettua suoraa jatketaan kohtaan $p = 0$.
 **Periaate:** Mittaus kattaa vain välin $20\ldots 100\,{}^\circ\text{C}$. Kun suoraa jatketaan tämän välin ulkopuolelle, tulosta ei ole mitattu vaan päätelty. Päätelmä olettaa, että sama lineaarinen riippuvuus pätee myös mitatun alueen ulkopuolella.
-**Mallivastaus:** Ekstrapolointi on suoran jatkamista mittausalueen ulkopuolelle. Silloin oletetaan, että paine käyttäytyy siellä samoin kuin mitatulla alueella. Siksi ekstrapoloitu arvo on arvio eikä mittaustulos. Arvon lukeminen kahden mitatun pisteen väliltä on interpolointia. Toistaminen pienentää keskiarvon satunnaista virhettä. Suora kulkee pisteiden joukon keskeltä, ei jokaisen pisteen kautta.
+**Mallivastaus:** Ekstrapolointi tarkoittaa, että mittauspisteisiin sovitettua suoraa jatketaan mittausalueen ulkopuolelle. Silloin oletetaan, että paineen lineaarinen riippuvuus lämpötilasta pätee myös siellä. Siksi ekstrapoloitu arvo on mallin avulla tehty arvio eikä suoraan mitattu tulos. Arvon lukeminen kahden mitatun pisteen väliltä on interpolointia. Toistaminen pienentää keskiarvon satunnaista virhettä. Suora kulkee pisteiden joukon keskeltä, ei jokaisen pisteen kautta.
 
 ## fy3-13-L2-05
 **Annettu:** viisi pistettä taulukosta; sovitetun suoran kulmakerroin $k = 0{,}363\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$; suora kulkee keskipisteen $(\theta_{\text{ka}}, p_{\text{ka}})$ kautta

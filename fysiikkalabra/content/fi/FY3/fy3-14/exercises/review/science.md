@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: c85d98ce6115a0a2
+CONTENT-HASH: 28b06b845d07ec34
 Round: 2
 
 ## Blocking
-(none)
+- none
 
 ## Polish
 - solutions.md:200 (L2-08) — the solution still explains statement 5 with the plain mean only. Since the feedback (exercises.json:279) now also rules out the mass-weighted mean (about 14 °C), one clause in the solution would keep the two consistent.
@@ -11,6 +11,7 @@ Round: 2
 - lessons/FY3/fy3-14/answers.py — no comment marking L2-08 as having no number (statements). Add it to the "multiple choice" comments (carried over).
 
 ## Checked
+- delta review 2026-11-07 (teacher's proofread replacement texts): L1-06 correct option, answer key, feedback and model answer: pure water–ice mixture in equilibrium at about 0 °C at normal pressure (melting/freezing point), no net heat transfer so no melting or freezing: correct, conditions stated, exactly one correct option, agrees with the lesson summary.
 - Round-2 change (6bbde30c5): the task moved from L1-09 to L2-08 (exercises.json:245) with the same text and statements. The id is unique and nothing in answers.py refers to the old id.
 - Round-1 Polish on statement 5 is addressed. The mass-weighted mean 0,25·18/0,33 = 13,6 ≈ 14 °C is right, and the feedback correctly says neither mean helps.
 - The feedback now quotes 18 855 J and 26 720 J. I recomputed both: Q_v = 18 855 J ≈ 19 kJ and Q_j = 26 720 J ≈ 27 kJ. 56 g of ice melts, 24 g is left and T = 0 °C. Statements 1, 3 and 4 are true, 2 and 5 false, and the answer string matches.

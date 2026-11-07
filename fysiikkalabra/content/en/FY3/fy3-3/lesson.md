@@ -122,7 +122,7 @@
 </svg>
 
 ## Key idea
-When you study a phenomenon, you separate the part of the world you are looking at from the rest. The separated part is the thermodynamic system, and everything outside it is the surroundings. The air in a bicycle tyre is an example of a system. If no matter can leave or enter the system, the system is closed. The state of a system is described by state variables: temperature, pressure and volume, and the amount of substance. Pressure is force per unit area; its unit is the pascal (Pa), and 1 kPa = 1000 Pa. Pressure is studied in more detail later. When you change one state variable of a gas system, at least one of the others changes too.
+When you study a phenomenon, you separate the part of the world you are looking at from the rest. The separated part is the thermodynamic system, and everything outside it is the surroundings. The air in a bicycle tyre is an example of a system. If no matter can leave or enter the system, the system is closed. The state of a system is described by state variables: temperature, pressure and volume, and the amount of substance. Pressure is force per unit area; its unit is the pascal (Pa), and $1\,\text{kPa} = 1000\,\text{Pa}$. Pressure is studied in more detail later. When you change one state variable of a gas system, at least one of the others changes too.
 
 <svg data-fig="system" viewBox="0 0 600 340" role="img" aria-label="Principle diagram, not to scale: gas in a cylinder whose upper end is closed by a movable piston. The gas is a thermodynamic system; its boundary is drawn as a dashed line around the gas. The walls of the cylinder, the piston and the rest of the world are the surroundings. The state variables that describe the state of the system are pressure p, volume V and temperature T." style="max-width:100%;font-size:24px">
   <rect x="138" y="150" width="204" height="140" fill="#eef5f9"/>
@@ -226,11 +226,11 @@ Temperature is measured on the Celsius scale, where $0\,{}^\circ\text{C}$ is the
 The statement "temperature tells you the average kinetic energy of the particles" holds as such for a dilute gas whose particles interact with each other only when they collide. Then the temperature is proportional to the average kinetic energy of the translational motion of the particles. In a liquid and in a solid the particles are close to each other and vibrate, pulled by their neighbours. Temperature describes the strength of the thermal motion of the particles in them too, but the energy of the substance also includes the energy of the interactions between the particles. So temperature is not the same thing as the energy of a substance: ice and water can have the same temperature $0\,{}^\circ\text{C}$, although water of the same mass has more internal energy than ice (chapters *Internal energy, heat and conservation of energy* and *Changes of state*). Even at absolute zero not all motion of the particles stops, but its energy is the smallest possible.
 
 ## Formula: Kelvin scale
-The conversion of a Celsius temperature $\theta$ to kelvins is:
+The numerical values of the Celsius temperature $\theta$ and the kelvin temperature $T$ are related by the equation
 ```latex
-T = \theta + 273.15
+\frac{T}{\text{K}} = \frac{\theta}{{}^\circ\text{C}} + 273.15
 ```
-where $T$ is the temperature in kelvins (K) and $\theta$ is the temperature in degrees Celsius (°C). In practice the number 273 is often enough. For kelvins you do not use the word degree: you say "300 kelvins", not "300 degrees kelvin".
+For example, $20\,{}^\circ\text{C}$ corresponds to $293.15\,\text{K}$. A temperature difference, on the other hand, has the same numerical value in kelvins and in degrees Celsius: a rise from $20\,{}^\circ\text{C}$ to $30\,{}^\circ\text{C}$ is $10\,\text{K}$. In practice the number 273 is often enough. For kelvins you do not use the word degree: you say "300 kelvins", not "300 degrees kelvin".
 
 Absolute zero is therefore $0\,\text{K}$ = $-273.15\,{}^\circ\text{C}$. A temperature in kelvins cannot be negative, but a Celsius temperature can.
 

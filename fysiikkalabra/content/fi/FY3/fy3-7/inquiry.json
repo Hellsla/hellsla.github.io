@@ -232,7 +232,7 @@
       "stage": "selita",
       "type": "reflect",
       "title": "Palaa ennusteisiisi",
-      "prompt": "Vertaa ennusteitasi mittauksiin ja malliin $Q = sm$, $Q = rm$. Palaa sitten alun kysymykseen: mihin levyn energia menee niinä hetkinä, kun lämpömittarin lukema ei muutu, ja miksi kiehuvan veden lämpötila ei nouse, vaikka liesi on täysillä?",
+      "prompt": "Vertaa ennusteitasi mittauksiin ja malliin $Q = sm$, $Q = rm$. Palaa sitten alun kysymykseen: mihin levyn energia menee niinä hetkinä, kun lämpömittarin lukema ei muutu, ja miksi kiehuvan veden lämpötila pysyy noin $100\\,{}^\\circ\\text{C}$:ssa, vaikka kattilaan siirtyy koko ajan energiaa?",
       "predictions": [
         "pred-1",
         "pred-2",

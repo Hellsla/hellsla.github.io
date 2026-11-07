@@ -1,6 +1,6 @@
 # Changes of state
 
-> **Why** does the temperature of boiling water not rise above $100\,{}^\circ\text{C}$, even though the hob is on full and energy keeps flowing into the pan?
+> **Why** does the temperature of water boiling at normal atmospheric pressure stay at about $100\,{}^\circ\text{C}$, even though energy keeps flowing into the pan?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: a pan on a kitchen hob with water boiling vigorously. The hotplate glows red and energy keeps flowing from it into the pan. There are bubbles in the water and steam rises from it. The column of a thermometer dipped in the water stays at the same height." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy37h-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a96a3"/><stop offset="0.3" stop-color="#ffffff"/><stop offset="0.65" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><linearGradient id="fy37h-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><radialGradient id="fy37h-glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0.55" stop-color="#c92a2a"/><stop offset="0.8" stop-color="#e8590c"/><stop offset="1" stop-color="#ffc078" stop-opacity="0"/></radialGradient><linearGradient id="fy37h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#d0e6fb"/></linearGradient></defs>

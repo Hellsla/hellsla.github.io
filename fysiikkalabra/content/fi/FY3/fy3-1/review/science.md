@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: d748ffe438661103
+CONTENT-HASH: 50fec54398b12fb1
 
 ## Blocking
 - none
@@ -9,6 +9,7 @@ CONTENT-HASH: d748ffe438661103
 - lessons/FY3/fy3-1/sim-spec.md:1 — "asteikko on kirjoitettu kaavion yläpuolelle" still describes the removed caption; the full-scale value is on the top of the y axis — update the sentence (carried over).
 
 ## Checked
+- delta review 2026-11-07 (teacher's proofread replacement texts): worked example mass now 1,20·10² kg: G = 1177,2 N ≈ 1,18 kN and 445,2 N ≈ 445 N recomputed, three significant figures justified by m and g; reasonableness sentence (1,18 kN) consistent with the unchanged 120 kg estimate.
 - Round 3 delta: sim.js diff since 4253a4a (the last PASS) is two lines in drawChart: chart title now sized to titleMax = BARS.w − 8 (292 px, over the chart only) and drawn at BARS.y − ts(14) instead of − ts(6). `git diff 4253a4a -- lessons/FY3/fy3-1 content/*/FY3/fy3-1 lang` shows nothing else but exercises/review/carry.tsv (review log, not lesson content); packet full only because sim.js changed.
 - Layout only: G = m g, stretch, arrow, bars, chartFull = m · 24,8, gridline step, readout and simState { m, body, g, G, stretch, arrow, bars, chartFull } untouched; inquiry tests 65/65, lint/latex/build/sims/layout 360 px ok.
 - Geometry: title (x 274–566, baseline 60 − 14k) cannot meet the axis title G (N) (right-aligned at x 264, centred at 90 − 14k) nor the Jupiter value label (baseline ≥ 84 at full scale).

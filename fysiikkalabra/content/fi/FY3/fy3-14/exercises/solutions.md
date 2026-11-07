@@ -134,7 +134,7 @@ $$\begin{aligned} T &= \dfrac{4190\,\text{J} + 33\,400\,\text{J} - 42\,000\,\tex
 ## fy3-14-L1-06
 **Kysytty:** lasin sisällön lämpötila, kun lämpötasapaino on saavutettu ja jäätä on yhä jäljellä
 **Periaate:** Eristetyssä lasissa lämpötasapainossa ei siirry lämpöä. Jään sulamisen aikana lämpötila ei muutu, vaan siirtyvä lämpö kuluu jään hiukkasten keskinäisten vuorovaikutusten muuttamiseen. Niin kauan kuin jäätä ja vettä on yhtä aikaa, lämpötila on jään sulamislämpötila $0\,{}^\circ\text{C}$.
-**Mallivastaus:** Lasin sisällön lämpötila on täsmälleen $0\,{}^\circ\text{C}$, koska jäätä on yhä jäljellä: jäätä ja vettä voi olla tasapainossa yhtä aikaa vain siinä lämpötilassa. Selitys ei ole se, että lämpötila olisi alkulämpötilojen keskiarvo, koska osa lämmöstä on kulunut sulamiseen. Lämpötila ei myöskään ole yli $0\,{}^\circ\text{C}$, koska silloin jää sulaisi edelleen, eikä sen alapuolella, koska silloin vesi alkaisi jäätyä.
+**Mallivastaus:** Puhtaan veden ja jään seoksen lämpötila on normaalipaineessa noin $0\,{}^\circ\text{C}$, kun molempia olomuotoja on tasapainossa. Tämä on veden sulamis- ja jähmettymislämpötila normaalipaineessa: jäätä ja vettä voi olla tasapainossa yhtä aikaa vain siinä lämpötilassa. Selitys ei ole se, että lämpötila olisi alkulämpötilojen keskiarvo, koska osa lämmöstä on kulunut sulamiseen. Lämpötila ei myöskään ole yli $0\,{}^\circ\text{C}$, koska silloin jää sulaisi edelleen, eikä sen alapuolella, koska silloin vesi alkaisi jäätyä.
 
 ## fy3-14-L1-07
 **Annettu:** vesi, $m = 0{,}20\,\text{kg}$, $T_\text{alku} = 25\,{}^\circ\text{C}$, $T_\text{loppu} = 0\,{}^\circ\text{C}$; taulukosta $c_\text{v} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
