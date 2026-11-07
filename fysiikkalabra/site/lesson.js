@@ -229,7 +229,7 @@
     if (!boxes.length || !li.querySelector(':scope > .task')) return;
     const head = document.createElement('div'); head.className = 'ex-head';
     const num = li.querySelector(':scope > .ex-num'); if (num) head.append(num);   // the running number "6-3" first (build.py number_label)
-    const tag = li.querySelector(':scope > .ex-core'); if (tag) head.append(tag);
+    li.querySelectorAll(':scope > .ex-core').forEach((tag) => head.append(tag));   // Annettu (an assigned task, tehty.js), Ydintehtävä, Syventävä
     boxes.forEach((d, i) => {
       d.id = d.id || `${li.id}-${d.classList.contains('answer') ? 'answer' : 'solution'}`;
       const b = document.createElement('button'); b.type = 'button'; b.className = 'ex-toggle';
@@ -366,17 +366,26 @@
     const file = document.createElement('input'); file.type = 'file'; file.accept = 'application/json,.json'; file.hidden = true;
     const note = document.createElement('p'); note.className = 'pad-note'; note.textContent = msg('pad_backup_note');
     d.append(sum, note, row, file);
-    exp.addEventListener('click', () => flushAll().then(() => window.flPadStore.backup()).then((text) => {
+    // on a module's pages (FY1-FY8) the backup is the module's work file (palautus.js flWork, teacher 2026-11-07: one
+    // work per module, no second way of saving)
+    exp.addEventListener('click', () => (window.flWork ? flushAll().then(() => window.flWork.save()).then((r) => say(status, msg('palautus_saved', { name: r.name }), 'ok'), (e) => say(status, e && e.user ? e.message : saveError(e), 'no')) : flushAll().then(() => window.flPadStore.backup()).then((text) => {
       const n = JSON.parse(text).solutions.length;
       const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([text], { type: 'application/json' }));
       a.download = `ruukkilabra-ratkaisut-${new Date().toISOString().slice(0, 10)}.json`; document.body.append(a); a.click(); a.remove();
       setTimeout(() => URL.revokeObjectURL(a.href), 1000);
       say(status, msg('pad_exported', { n }), 'ok');
-    }, (e) => say(status, saveError(e), 'no')));
+    }, (e) => say(status, saveError(e), 'no'))));
     imp.addEventListener('click', () => file.click());
     file.addEventListener('change', () => {
       const f = file.files && file.files[0]; file.value = '';
       if (!f) return;
+      if (window.flWork) {
+        f.text().then((text) => window.flWork.open(text)).then((r) => {
+          try { sessionStorage.setItem('ruukkilabra:avattu', r.n || r.m ? msg('palautus_opened', { n: r.n, m: r.m }) : msg('palautus_nothing')); } catch (e) { /* none */ }
+          location.reload();
+        }, (e) => say(status, e && e.user ? e.message : saveError(e), 'no'));
+        return;
+      }
       f.text().then((text) => window.flPadStore.restore(text)).then(({ restored }) => {
         restored.forEach((r) => { const ed = editors.get(r.id); if (ed) ed.set(r.html); });
         say(status, msg('pad_imported', { n: restored.length }), 'ok');

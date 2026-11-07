@@ -28,7 +28,7 @@ stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import hashlib, json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
-import answers_shown, booklets, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, svgids, units
+import answers_shown, assigned, booklets, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, svgids, units
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
@@ -47,7 +47,7 @@ if SITE.name == "site.tmp":
 else:
     SITE.mkdir(exist_ok=True)                         # preview/ is shared by agents building at the same time, so it is never wiped
 TPL = ROOT / "templates"
-for f in ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js"): shutil.copy(TPL / f, SITE / f)
+for f in ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js"): shutil.copy(TPL / f, SITE / f)
 card_files = concept_cards.publish(SITE)   # site/kortit/<module>.json, read by Käsitetakomo (scripts/concept_cards.py)
 # p5 + KaTeX, no CDN needed. The read-aloud model and onnxruntime-web are not part of the site (teacher 2026-11-04,
 # UI fix 3): they are in the repository Hellsla/ruukkilabra-models, copied into the published site's models/ folder
@@ -129,6 +129,47 @@ def submission_script(lang, lesson_id):
     if not submits(lang, lesson_id): return ""
     ret = f' data-return="{FORMS_PAGE}"' if FORMS else ""
     return f'<script src="palautus.js" data-chapter="{lesson_id}"{ret}></script>'
+
+
+# Annetut tehtävät (teacher 2026-11-07, FY3 first): the teacher's assigned exercises of a module, by their ids in
+# annetut.json (scripts/assigned.py). The pages mark them and templates/tehty.js keeps the student's "Tehty" ticks.
+ASSIGNED = assigned.load()
+ASSIGNED_IDS = assigned.flat(ASSIGNED)
+
+
+COURSE_FILE = {f"FY{i}" for i in range(1, 9)}   # one work file per module (teacher 2026-11-07): FY1-FY8; FY9 keeps the chapter file
+
+
+def course_block(course, lang):
+    """The module's chapters and their exercise ids (#fl-course) for palautus.js's one work file per module (Tallenna
+    työ tiedostoon, Avaa tallennettu työ, Palauta), with the assigned tasks for tehty.js (and the script when there are
+    any). Empty outside FY1-FY8 or a language without submissions."""
+    if course not in COURSE_FILE or lang not in SUBMISSION_LANGS: return ""
+    chs = []
+    for n, l in enumerate(curriculum[course].get("lessons", []), 1):
+        ex = assigned.exercises(course, l["id"])   # the ids are the same in every language
+        if ex: chs.append({"id": l["id"], "n": n, "tasks": [e["id"] for items in ex.values() for e in items]})
+    given = [i for ids in ASSIGNED.get(course, {}).values() for i in ids]
+    data = {"course": course, "chapters": chs, "assigned": given}
+    return ('<script id="fl-course" type="application/json">' + json.dumps(data, separators=(",", ":")) + "</script>"
+            + ('<script src="tehty.js"></script>' if given else ""))
+
+
+def progress_section(course, lang):
+    """The module page's own part (teacher 2026-11-07), after the heading, before the chapters: Oma eteneminen (the
+    counter, the bar and the graph, drawn by tehty.js from this browser's ticks; hidden without scripts) and the
+    buttons Tallenna työ tiedostoon and Avaa tallennettu työ (palautus.js)."""
+    block = course_block(course, lang)
+    if not block: return ""
+    strings = {k: v for k, v in T("js").items() if k.startswith(("done_", "progress_", "palautus_", "work_"))}
+    prog = (f'<section class="my-progress" id="oma-eteneminen" hidden><h2>{T("js.progress_title")}</h2>'
+            '<p class="pm-count" aria-live="polite"></p><div class="pm-bar" role="progressbar" aria-valuemin="0"><span></span></div>'
+            f'<details class="pm-graph"><summary>{T("js.progress_graph")}</summary><div class="pm-chart"></div></details>'
+            f'<p class="pm-note">{T("js.progress_note")}</p></section>') if ASSIGNED.get(course) else ""
+    ret = f' data-return="{FORMS_PAGE}"' if FORMS else ""
+    return (prog + '<div class="work-tools" id="oma-tyo" hidden></div>'
+            '<script id="fl-strings" type="application/json">' + json.dumps({"js": strings}, ensure_ascii=False).replace("</", "<\\/") + "</script>"
+            + block + f'<script src="palautus.js" data-course="{course}"{ret}></script>')
 
 
 def forms_title(): return T("site.returns_title", period=FORMS["period"], year=FORMS["year"])
@@ -515,11 +556,14 @@ def exercise_html(e, solution_html, read=None, core=False, num=None):
     fig = figcat.figure_html(e["figure"], T.lang, read) if e.get("figure") else ""   # a figure by its id (scripts/figcat.py)
     fig = (data_table(e["data"]) if e.get("data") else "") + fig + (exercise_choice(e) if e.get("choices") or e.get("statements") or e.get("order") else "")
     tag = f'<span class="ex-core">{T("lesson.core_exercise")}</span>' if core else ""
+    given = e["id"] in ASSIGNED_IDS   # an assigned task (annetut.json, teacher 2026-11-07): "Annettu" beside its number, a green left edge
+    if given: tag = f'<span class="ex-core ex-given">{T("lesson.assigned_exercise")}</span>' + tag
     text = e["text"]
     ext = T("lesson.extension_exercise") + "."   # "Syventävä tehtävä." at the start of a task's text: a tag, never a core task (teacher 2026-11-07, LOPS 2019)
     if text.startswith(ext): text, tag = text[len(ext):].lstrip(), tag + f'<span class="ex-core ex-ext">{T("lesson.extension_exercise")}</span>'
     written = "" if numeric else ' data-written="1"'   # a written task opens its answer once the student has written in the editor (lesson.js part 8; the tick "Olen tehnyt ratkaisun" removed, teacher 2026-11-06)
-    return (f'<li id="{e["id"]}"{" class=" + chr(34) + "core" + chr(34) if core else ""}{written}' + (f' data-num="{num}">' + number_label(num) if num else ">") + f'{tag}{exercise_text(nbsp_units(text), f"{e['id']}-q")}{fig}{check}'
+    cls = " ".join(c for c, on in (("core", core), ("assigned", given)) if on)
+    return (f'<li id="{e["id"]}"{" class=" + chr(34) + cls + chr(34) if cls else ""}{written}' + (f' data-num="{num}">' + number_label(num) if num else ">") + f'{tag}{exercise_text(nbsp_units(text), f"{e['id']}-q")}{fig}{check}'
             f'<details class="answer"><summary>{T("lesson.answer")}</summary><p>{ans}</p></details>{sol}</li>')
 
 
@@ -872,7 +916,7 @@ def build_language(lang):
                 .replace("{{title}}", esc(meta["title"])).replace("{{course}}", meta["course"]).replace("{{notice}}", notice(meta["state"]))
                 .replace("{{strings}}", strings_block(skey)).replace("{{back_to_course}}", esc(T("site.back_to_course", course=meta["course"])))
                 .replace("{{toc}}", toc).replace("{{main}}", main)
-                .replace("{{scripts}}", ('<script src="inquiry.js"></script>' if inq else "") + submission_script(lang, meta["id"]))
+                .replace("{{scripts}}", ('<script src="inquiry.js"></script>' if inq else "") + (course_block(meta["course"], lang) if submits(lang, meta["id"]) else "") + submission_script(lang, meta["id"]))
                 .replace("{{description}}", esc(description_of(meta, lesson_md))).replace("{{url}}", URL + name)
                 .replace("{{languages}}", languages_nav(name)))
         (out / name).write_text(rebase(html))
@@ -968,6 +1012,7 @@ def build_language(lang):
         body = (notes + f'<div class="mod-head">{module_icons.img(code, 56, "mod-head-icon")}<div><span class="eyebrow">{code} · {credits}</span><h1>{esc(mod["title"])}</h1></div></div>'
                 f'<p class="lead">{esc(T("site.module_question." + code))}</p>'
                 f'<p class="mod-status">{main_label}{(" · " + extra_label) if extra_label else ""}</p>'
+                + progress_section(code, lang)
                 + f'<h2>{T("site.course_lessons")}</h2>{items}<div class="mod-more">'
                 + concept_cards.module_section(code, T, lang, chapter_titles(code, built_ids))   # Kertauspakkasi: the student's deck of the module (teacher 2026-11-03); order deck, exam, Haastetehtävät (teacher 2026-11-05)
                 + (f'<section><h2>{T("exam.title")}</h2><p>{T("exam.course_lead")}</p><ul class="lessons practice-link"><li class="live">'
@@ -1162,7 +1207,7 @@ link_languages()
 i18n.set_lang(i18n.SOURCE)
 # Cache busting (teacher 2026-11-03: a page fetched just after a deploy showed new HTML with yesterday's cached site.css):
 # every link to a shared stylesheet or script carries ?v=<first 8 hex of its SHA-256>, so a changed file is a new URL.
-SHARED = ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js")
+SHARED = ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js")
 _ver = {f: hashlib.sha256((SITE / f).read_bytes()).hexdigest()[:8] for f in SHARED if (SITE / f).is_file()}
 _ref = re.compile(r'((?:href|src)="(?:\.\./)*)(' + "|".join(re.escape(f) for f in _ver) + r')(?:\?v=[0-9a-f]*)?"')
 for _page in SITE.rglob("*.html"):
@@ -1170,7 +1215,7 @@ for _page in SITE.rglob("*.html"):
     _old = _page.read_text(); _new = _ref.sub(lambda m: f'{m[1]}{m[2]}?v={_ver[m[2]]}"', _old)
     if _new != _old: _page.write_text(_new)
 if SITE.name == "site.tmp":                      # check the render, then swap it in; the old site comes back if the swap fails
-    expected += ["site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js"] + card_files + assets
+    expected += ["site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js"] + card_files + assets
     broken = [n for n in expected if not (SITE / n).is_file() or (SITE / n).stat().st_size == 0]
     if broken or not (SITE / "vendor").is_dir(): sys.exit(f"build check failed, site/ left unchanged: missing or empty {broken or ['vendor/']}")
     old = ROOT / "site.old"

@@ -53,7 +53,7 @@ for lang in i18n.languages():
         h = f.read_text()
         m = re.search(r'id="exercises"(.*?)(?=<section|<div class="stage|</main>)', h, re.S)
         if not m or "<li" not in m.group(1): continue
-        items = re.findall(r'<li id="[^"]+"[^>]*>(?:<span class="ex-num"><span class="visually-hidden">[^<]*</span>[^<]*</span>)?(?:<span class="ex-core">[^<]*</span>)?<p class="task"', m.group(1))   # the running number "6-3" first (build.py number_label)
+        items = re.findall(r'<li id="[^"]+"[^>]*>(?:<span class="ex-num"><span class="visually-hidden">[^<]*</span>[^<]*</span>)?(?:<span class="ex-core[^"]*">[^<]*</span>)*<p class="task"', m.group(1))   # the running number "6-3" first (build.py number_label)
         tasks = m.group(1).count('class="task"')
         if tasks: pages.setdefault(lang, []).append(f.relative_to(SITE).as_posix())
         if len(items) != tasks:
