@@ -223,6 +223,57 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy7-4-L2-08",
+      "level": 2,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "Kevyt kuparijohdin roikkuu pystysuorassa hevosenkenkämagneetin napojen välissä. Katsot johdinta edestä. Magneetin pohjoisnapa $\\text{N}$ on johtimen vasemmalla puolella ja etelänapa $\\text{S}$ oikealla. Siksi kenttä osoittaa johtimen kohdalla vaakasuoraan vasemmalta oikealle.\n\nJohtimeen kytketään virta. Virta kulkee johtimessa alaspäin.\n\nMihin suuntaan johdin heilahtaa?",
+      "answer": "Johdin heilahtaa kohti katsojaa.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Johdin heilahtaa oikealle kohti etelänapaa.",
+          "feedback": "Tässä johdin liikkuu kenttäviivojen suuntaan kohti toista napaa, ikään kuin magneetti vetäisi sitä. Virtajohtimeen kohdistuva voima on kuitenkin kohtisuorassa kenttää vastaan eikä kentän suuntainen."
+        },
+        {
+          "text": "Johdin heilahtaa kohti katsojaa.",
+          "correct": true,
+          "feedback": "Oikein. Valitse seuraavaksi perustelu, joka selittää vastauksesi."
+        },
+        {
+          "text": "Johdin heilahtaa poispäin katsojasta.",
+          "feedback": "Suunta on väärin päin. Oikean käden sääntö annetaan virran suunnalle. Virran suunta on positiivisen varauksen liikkeen suunta. Sääntöä ei siis käännetä elektronien takia."
+        },
+        {
+          "text": "Johdin ei heilahda lainkaan.",
+          "feedback": "Kupari ei ole ferromagneettista, joten magneetti ei vedä johdinta, jossa ei kulje virtaa. Kun johtimessa kulkee virta, kenttä kohdistaa voiman liikkuviin varauksiin. Varaukset siirtävät voiman johtimeen."
+        }
+      ],
+      "reason_prompt": "Mikä perustelu selittää vastauksesi?",
+      "reasons": [
+        {
+          "text": "Kenttäviivat kulkevat pohjoisnavasta etelänapaan, ja virtajohdin liikkuu kenttäviivojen suuntaan.",
+          "feedback": "Tämä on virhekäsitys, jonka mukaan magneetti vetää johdinta kohti napaa. Voima on kohtisuorassa kenttää vastaan. Voima kääntyy, kun virran suunta käännetään, vaikka magneetti on sama."
+        },
+        {
+          "text": "Kupari ei ole ferromagneettista, joten magneetin kenttä ei vaikuta kuparijohtimeen.",
+          "feedback": "Alkuosa on tosi, mutta se ei selitä virtajohtimen liikettä. Magneettikenttä vaikuttaa johtimessa liikkuviin varauksiin. Siksi voima syntyy, kun johtimessa kulkee virta."
+        },
+        {
+          "text": "Voima on kohtisuorassa virtaa ja kenttää vastaan, ja oikean käden sääntö antaa sen suunnan.",
+          "correct": true,
+          "feedback": "Oikein: peukalo osoittaa virran suuntaan alas ja muut sormet kentän suuntaan oikealle. Silloin kämmen työntää kohti katsojaa."
+        },
+        {
+          "text": "Elektronit kulkevat virtaa vastaan, joten voima on vastakkainen kuin oikean käden sääntö antaa.",
+          "feedback": "Tässä varauksen merkki on otettu huomioon kahdesti. Negatiiviset elektronit liikkuvat ylöspäin, ja kaksi kääntöä kumoavat toisensa. Siksi sääntö annetaan suoraan virran suunnalle."
+        }
+      ]
     }
   ],
   "level3": [

@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: c1bb42f3585103cf
+CONTENT-HASH: 08148d6414cd1c3b
 ROUND: 2
 
 ## Blocking
-(none) Round 1 had none; the round-2 fixes (stray semicolon removed in L1-07, L2-07 a) before b), L3-04 two-point check of k added, L2 uncertainty wording) are in place and correct.
+(none) Round-1 Major fixed: in the 2x close-up of an option figure (viewBox 600x406) "e (V)" is fully inside the figure and the -10 tick is labelled.
 
 ## Polish
-- [Minor] solutions.md L3-04 Sijoitus — after the fit line "c = −0,107 V. b)" the part label b) runs on in the same line; put "b)" on its own line as a) and c) are.
-- [Minor] exercises.json L2-05 table — negative values still typed with a hyphen ("-0,1", "-8,4"); use "−".
+- [Minor] L1-09 options still display as B, A, D, C (shuffled with letters); solution refers to letters in A-D order.
 
 ## Checked
-- 1280 px: L3 part 5 (L3-04 pullodynamo) with the new a) check, table, display chains; other changes from the diff.
-- Answer boxes, aligned chains, tables: no clipping, overflow or red source. No 360/390 px exercise captures; relies on green check_layout 360 px.
-- Hash at start: c1bb42f3585103cf.
+- fy7-7-L1-09 at 390 px: four option figures, feedback, solution; no horizontal overflow (item 330 px, document 390 px; off-box curve paths are clipped by the SVG); 2x close-up of one figure.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

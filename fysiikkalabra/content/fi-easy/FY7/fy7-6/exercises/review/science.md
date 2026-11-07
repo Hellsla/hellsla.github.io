@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: df627d674e0b432d
+CONTENT-HASH: b366c16fb04b0dad
 Mode: full (translation review against the reviewed Finnish set)
-Round 1
+Round 2
 
 ## Blocking
 (none)
 
 ## Fixed
-(none: no translation text needed changing)
+- content/fi-easy/FY7/fy7-6/exercises/solutions.md — L2-08 solution — awkward "Alumiini johtaa sähköä hyvin, ja se on tosi." -> "Se, että alumiini johtaa sähköä hyvin, on tosi."
 
 ## Polish
 (none)
 
 ## Checked
-- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05): ids, level, kind, answer, unit, tolerance, correct flags, choice order and every data table cell identical to fi (programmatic comparison of all non-string fields; every number in every string compared after normalising decimal separators: 0 differences).
-- Formulas and LaTeX in exercises.json and solutions.md match fi; recomputed 6.0 V, 27 mW (7.32 s, 0.1366 m/s), 0.35 mWb, 2.7 m/s^2 (v_r 0.74 m/s, k 0.663), 0.15 W (k 1.201 W/mm^2): all agree with the fi answers.
-- Physics wording faithful: Lenz opposes the change in flux, not the field; N/S pole directions in L1-06 and L2-06 as in fi; eddy-current braking explained as in fi.
-- Selkosuomi: short sentences, common terms (vuo, pyörrevirta, rajavauhti) explained in the solutions Periaate lines; decimal comma in text and LaTeX, decimal point in table cells as in fi.
-- python3 scripts/check_i18n.py fi-easy: 0 errors.
+- Structural diff against content/fi, all 4 FY7 exercise sets of this round: same ids, keys, answers, units, tolerances, correct flags, choice/order sequence, data cells; number multisets of every text, feedback and solution equal to fi (decimal separators normalised); LaTeX identical apart from translated subscripts.
+- New YO-skill task L2-08: two-stage ring task: ring jumps up (Lenz, flux grows), all five reasons keep fi correctness flags and feedback; recomputed independently, matches fi and answers.py.
+- Distractor feedback says the same as fi (correct option and reason unchanged).
+- check_i18n.py: no fy7-6 finding (fi-easy: 0 errors); build.py fy7-6 succeeds.

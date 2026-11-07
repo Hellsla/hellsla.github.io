@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 57d948820be4c485
+CONTENT-HASH: f67af3c7d7223c53
 
 ## Blocking
 
 ## Polish
+- [Minor] fy7-1-L1-09 solution 2 (fi-easy) — "$\text{N}$-päästä" breaks across lines between N and the hyphen (capture -9) — keep the hyphenated compound together, e.g. a non-breaking hyphen or reword "magneetin pohjoispäästä ($\text{N}$) etelänpäähän ($\text{S}$)".
+- [Minor] fy7-1-L1-09 statement 2 — "kyljen vieressä keskikohdan kohdalla" is clumsy — "magneetin kyljen vieressä, sen keskikohdalla".
 
 ## Checked
-- Captures opened: open-exercises-L2-1280-6 (en, L2-05/06 solution steps) and open-exercises-L3-1280-4 (fi-easy, L3-04 with data table); the others are structurally identical to fi.
-- Data tables render with translated captions and headers, units upright with thin space.
-- Maths in solutions is set as maths, no red KaTeX, no horizontal overflow at 1280 wide.
-- No Finnish text left in en; table row labels (window, sofa, desk) translated.
+- fy7-1-open-exercises-1280-8 and -9 (fi-easy): new task 1-9 with five Tosi/Epätosi rows, answer line, opened solution (Kysytty, Periaate, Mallivastaus 1-5).
+- N and S upright maths, case endings after maths ($\text{N}$:stä) correct, vector sum renders, no red KaTeX, no overflow; the solution opens inside its card.
+- Language is plain, defined terms (vektorisumma explained), one voice.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

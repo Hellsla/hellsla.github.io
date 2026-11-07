@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 2c4a05c4e4d55a83
+CONTENT-HASH: 22306330676659bc
 Mode: full (translation review against the reviewed Finnish set)
-Round 1
+Round 2
 
 ## Blocking
 (none)
-
-## Fixed
-(none needed)
 
 ## Polish
 (none)
 
 ## Checked
-- Task structure (a/b/c parts, which part goes into the answer field, hints about the answer unit) matches fi in all 8 new exercises.
-- English is natural and keeps the register of the Finnish tasks; sentences are clear for an upper-secondary reader.
-- Worked solutions keep the given/find/principle/formula/conversions/substitution/answer/reasonableness structure with the same reasoning as fi.
+- New task fy7-12-L2-08 keeps the Finnish scaffolding: same demand, same distractors with misconception-specific feedback, one correct answer, feedback repairs the misconception.
+- Task text gives the data the student needs and does not disclose the answer.
+- Language: natural English, decimal point, no Finnish left.

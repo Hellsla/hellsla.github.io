@@ -192,3 +192,40 @@
 **Substitution:** a) $\Phi = \dfrac{0.01946\,\text{V}\cdot\text{s}}{250} = 7.78 \cdot 10^{-5}\,\text{Wb} = 0.0778\,\text{mWb}$. b) Calculated in the same way, the area of the second pulse ($24$–$48\,\text{ms}$) is $-0.01968\,\text{V}\cdot\text{s}$, so $\Phi = 0.01968\,\text{V}\cdot\text{s} : 250 = 0.0787\,\text{mWb}$.
 **Answer:** a) $\Phi \approx 0.078\,\text{mWb}$, two significant figures, because the voltages are given to two decimal places and the area is an estimate. b) The second pulse gives $0.079\,\text{mWb}$, the same flux. In the first pulse the flux grows and in the second it decreases back to zero, so the signs of the voltages are opposite, and the total change in flux is equally large in both pulses, so the areas are equal in absolute value. The magnet accelerates as it falls, so the same change in flux takes place in a shorter time in the second pulse: the pulse is narrower and taller.
 **Reasonableness:** The areas of the pulses differ by about $1\,\%$, so the data are internally consistent. The triangle approximation $\tfrac{1}{2} \cdot 1.8\,\text{V} \cdot 0.020\,\text{s} = 0.018\,\text{V}\cdot\text{s}$ gives the same order of magnitude.
+
+## fy7-5-L1-09
+**Find:** the order of five situations by the magnitude $|e|$ of the induced voltage, from smallest to largest.
+**Principle:** The voltage induced in a coil depends on the rate of change of the flux of one turn and on the number of turns, $|e| = N\dfrac{\Delta\Phi}{\Delta t}$, not on the size of the flux. In a single loop $N = 1$. The voltage of a rod moving perpendicular to the field is $e = vBl$.
+**Model answer:** We calculate the voltage in each situation.
+
+Situation A:
+
+$|e_\text{A}| = 200 \cdot \dfrac{3.0 \cdot 10^{-3}\,\text{Wb}}{0.50\,\text{s}}$
+
+$|e_\text{A}| = 1.2\,\text{V}$
+
+Situation B:
+
+$|e_\text{B}| = 50 \cdot \dfrac{6.0 \cdot 10^{-3}\,\text{Wb}}{0.10\,\text{s}}$
+
+$|e_\text{B}| = 3.0\,\text{V}$
+
+In situation C the current of the electromagnet is constant, so the flux does not change: $\Delta\Phi = 0$ and $e_\text{C} = 0$. The large flux $8.0\,\text{mWb}$ and the large number of turns do not change this.
+
+Situation D:
+
+$e_\text{D} = 4.0\,\text{m/s} \cdot 0.30\,\text{T} \cdot 0.50\,\text{m}$
+
+$e_\text{D} = 0.60\,\text{V}$
+
+Situation E, where $N = 1$:
+
+$|e_\text{E}| = \dfrac{40 \cdot 10^{-3}\,\text{Wb}}{0.020\,\text{s}}$
+
+$|e_\text{E}| = 2.0\,\text{V}$
+
+By the magnitude of the induced voltage, from smallest to largest, the order is C ($0\,\text{V}$), D ($0.60\,\text{V}$), A ($1.2\,\text{V}$), E ($2.0\,\text{V}$) and B ($3.0\,\text{V}$). In situation E the flux decreases, so the sign of the voltage is opposite to that when the flux grows, but the order compares only the magnitudes.
+
+If the number of turns is forgotten, the voltages of situations A and B come out as only $6.0\,\text{mV}$ and $60\,\text{mV}$, and they move to the wrong place right after situation C. If the voltage is thought to depend on the size of the flux and not on its change, the large flux of situation C seems to give the greatest voltage, and C wrongly moves to the end of the order.
+
+**Reasonableness:** In situation E the flux changes fastest, $2.0\,\tfrac{\text{Wb}}{\text{s}}$, but the $50$ turns of situation B raise its voltage to the greatest.

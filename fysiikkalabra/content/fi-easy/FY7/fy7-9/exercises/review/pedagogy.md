@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 825acbc29d3636fd
+CONTENT-HASH: 0a877e8585ccb3a6
 Mode: full (translation review against the reviewed Finnish set)
-Round 1
+Round 2
 
 ## Blocking
 (none)
-
-## Fixed
-- L3-04 part c: added short explanations "(aallonpituus on lyhyempi / pidempi kuin näkyvällä valolla)" after ultraviolettialue and infrapuna, so the terms are explained in plain Finnish.
 
 ## Polish
 (none)
 
 ## Checked
-- Task wording keeps the fi scaffolding: assumptions (black body), asked unit, the answer-box instruction and the a/b/c structure with the same learning demand (L2-06 error diagnosis, L3-04 reasoning, L3-05 model limits).
-- Feedback of the L1-06 choices names the specific misconception as in fi; one correct option.
-- Language: clear plain Finnish (short sentences, terms explained).
-- check_i18n.py fi-easy: 0 errors.
+- New task fy7-9-L2-08 keeps the Finnish scaffolding: same demand, same distractors with misconception-specific feedback, one correct answer, feedback repairs the misconception.
+- Task text gives the data the student needs and does not disclose the answer.
+- Language: follows NOTES.md section 12: shorter sentences, same physics and numbers, decimal comma, no new content.

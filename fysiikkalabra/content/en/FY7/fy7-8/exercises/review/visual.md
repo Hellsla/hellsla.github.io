@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: b07019580b69ebba
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: a84b25b5f1c41692
 
 ## Blocking
-(none)
-
-## Fixed
-- L2-05 table caption was cut off at the right edge (capture L2-1280-6); shortened, same maths.
 
 ## Polish
-- [Minor] L2-05 table: the two columns are spread wide; same layout as in fi, so left.
+- [Minor] fy7-8-L2-08 solution — the closing Model answer paragraph is about 150 words and "Reasonableness:" is run into it; split after "...even more impossible." and give Reasonableness its own line.
+- [Minor] options appear in the order 10 MW, 1000 MW, 10 kW, 0.1 kW (shuffled); an ascending order would read more easily if the shuffle is not intended.
 
 ## Checked
-- Captures fy7-8-open-exercises-1280-7, L2-1280-6, L2-1280-8, L3-1280-6 opened: answer fields, units (kW, turns, %), aligned substitution chains, fractions and subscripts render correctly.
-- L3-05 table and a)-c) paragraphs readable; no Finnish visible.
-- Decimal point in tables and in LaTeX throughout.
+- fy7-8-open-exercises-L2-1280-10 and -11 (en): task 8-16 (situation, example-values note, question), four option rows with feedback inside the card, answer line, opened solution (Find, Principle, Model answer with two aligned calculation steps).
+- Maths: $I=\dfrac{3.0\cdot 10^{6}\,\text{W}}{20\cdot 10^{3}\,\text{V}}$, $P_\text{h}=RI^2$, $U^2 : R$ with colon, thin-space thousands ($4\,350\,\text{A}$), upright units; no red KaTeX, no overflow.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

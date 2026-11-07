@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: afe57b4cbe0531f3
-Mode: full (translation review: visual parity with fi)
-Round 1
+CONTENT-HASH: 2dbe4b29223aeaef
+Mode: delta (new task fy7-10-L2-08 and its solution), round 1
 
 ## Blocking
 (none)
 
-## Fixed
-(none)
-
 ## Polish
-(none)
+- [Minor] fy7-10-L2-08 task, line 3 — the inline \dfrac enlarges the line spacing of the student's calculation lines — optional: use \frac so the lines stay even.
 
 ## Checked
-- Opened exercise screenshots of the new tasks (L2-05 table and solution, L3-04 task text and table, L3-05) in en: text, tables and LaTeX render, no overflow, no raw markup, no Finnish in en.
-- Data tables and captions translated; units and decimal formatting consistent with the language.
-- check_i18n.py en: 0 errors.
+- Rebuilt and captured fy7-10 (en); opened fy7-10-open-exercises captures at 1280 px (last parts of the level) showing fy7-10-L2-08 with its task text, options or input, feedback, answer and opened solution.
+- Layout survived: no clipping or horizontal overflow, options are whole rows, solution blocks (Find, Principle, Model answer) read in order, display equations aligned and broken at meaningful steps.
+- Maths: KaTeX renders, numbers with upright units and thin space, \cdot, colon for division, SI units upright; no Finnish left in the new task.
+- No figures in the new task; the lesson page and other tasks are unchanged (delta).
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

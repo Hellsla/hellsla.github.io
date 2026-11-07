@@ -191,3 +191,24 @@ $$\begin{aligned} r &= \dfrac{1{,}673 \cdot 10^{-27}\,\text{kg}}{1{,}602 \cdot 1
 **Sijoitus:** a) $v = \dfrac{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1{,}00\,\text{T} \cdot 0{,}20\,\text{m}}{1{,}673 \cdot 10^{-27}\,\text{kg}} = 1{,}92 \cdot 10^{7}\,\text{m/s}$ ja $E_\text{k} = \tfrac{1}{2} \cdot 1{,}673 \cdot 10^{-27}\,\text{kg} \cdot (1{,}92 \cdot 10^{7}\,\text{m/s})^2 = 3{,}07 \cdot 10^{-13}\,\text{J}$. b) Yhdellä ylityksellä energia kasvaa määrän $qU = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 6{,}0 \cdot 10^{4}\,\text{V} = 9{,}61 \cdot 10^{-15}\,\text{J}$, joten $n = \dfrac{3{,}07 \cdot 10^{-13}\,\text{J}}{9{,}61 \cdot 10^{-15}\,\text{J}} = 31{,}9 \approx 32$ ylitystä eli $16$ kierrosta. Kierrosaika on $T = \dfrac{2\pi \cdot 1{,}673 \cdot 10^{-27}\,\text{kg}}{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1{,}00\,\text{T}} = 6{,}56 \cdot 10^{-8}\,\text{s}$, joten $t = 16 \cdot 6{,}56 \cdot 10^{-8}\,\text{s} = 1{,}05 \cdot 10^{-6}\,\text{s} = 1{,}05\,\mu\text{s}$. c) $\dfrac{v}{c} = \dfrac{1{,}92 \cdot 10^{7}\,\text{m/s}}{3{,}00 \cdot 10^{8}\,\text{m/s}} = 0{,}064$
 **Vastaus:** a) $1{,}92 \cdot 10^{7}\,\text{m/s}$ ja $3{,}07 \cdot 10^{-13}\,\text{J}$ (noin $1{,}9\,\text{MeV}$). b) Noin $32$ ylitystä ja $16$ kierrosta; kiihdytys kestää $1{,}05\,\mu\text{s}$, kolme merkitsevää numeroa kuten kentässä ja säteessä. c) Vauhti on noin $6\,\%$ valon nopeudesta, joten suhteellisuusteorian korjaus liike-energiaan on suuruusluokkaa $\tfrac{3}{4}(v : c)^2 \approx 0{,}3\,\%$. Klassinen käsittely on tässä kelvollinen; suuremmilla energioilla kierrosaika alkaisi kasvaa, eikä kiihdytysjännitteen vaihtotahti pysyisi vakiona.
 **Järkevyys:** Kierrosaika ulosvetosäteellä: $\dfrac{2\pi r}{v} = \dfrac{2\pi \cdot 0{,}20\,\text{m}}{1{,}92 \cdot 10^{7}\,\text{m/s}} = 6{,}56 \cdot 10^{-8}\,\text{s}$, sama kuin kaavalla $T = 2\pi m : (qB)$. Energian tarkistus: $32 \cdot 9{,}61 \cdot 10^{-15}\,\text{J} = 3{,}08 \cdot 10^{-13}\,\text{J}$, sama kuin $E_\text{k}$.
+
+## fy7-2-L2-08
+**Kysytty:** mikä neljästä voimakuviosta esittää oikein elektroniin vaikuttavat voimat, kun elektroni liikkuu ylöspäin paperista ulos osoittavassa magneettikentässä.
+**Periaate:** Valitaan kappaleeksi elektroni. Tyhjiössä siihen vaikuttavat vain magneettikenttä ja Maa. Magneettinen voima on kohtisuorassa sekä nopeutta että kenttää vastaan, ja sen suunta positiiviselle varaukselle saadaan oikean käden säännöllä; negatiiviseen varaukseen voima osoittaa vastakkaiseen suuntaan. Nopeus ei ole voima. Painoa verrataan magneettiseen voimaan.
+**Mallivastaus:** Oikea on voimakuvio C. Oikean käden säännössä peukalo osoittaa nopeuden suuntaan ylös ja muut sormet kentän suuntaan paperista ulos, jolloin kämmen työntää oikealle. Elektroni on negatiivinen, joten voima osoittaa vasemmalle. Voimien suuruudet:
+
+$F_\text{m} = |q| v B$
+
+$$\begin{aligned}
+F_\text{m} &= 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 3{,}0 \cdot 10^{6}\,\tfrac{\text{m}}{\text{s}} \\
+&\quad \cdot 0{,}50 \cdot 10^{-3}\,\text{T} \\
+&\approx 2{,}4 \cdot 10^{-16}\,\text{N}
+\end{aligned}$$
+
+$G = mg$
+
+$G = 9{,}109 \cdot 10^{-31}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2$
+
+$G \approx 8{,}9 \cdot 10^{-30}\,\text{N}$
+
+Paino on noin $10^{-14}$-osa magneettisesta voimasta, joten voimakuvioon piirretään vain $\overline{F}_\text{m}$. Kuviossa A voima osoittaa kentän suuntaan paperista ulos, vaikka magneettinen voima on kohtisuorassa kenttää vastaan. Kuviossa B voiman suunta on positiivisen varauksen suunta, eli elektronin negatiivinen varaus on unohdettu. Kuviossa D voima on nopeuden suuntainen, vaikka magneettinen voima ei muuta vauhtia vaan kääntää elektronin rataa.

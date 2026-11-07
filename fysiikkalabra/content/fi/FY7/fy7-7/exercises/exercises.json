@@ -87,6 +87,41 @@
       "answer": 12.020815,
       "unit": "V",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-7-L1-09",
+      "level": 1,
+      "kind": [
+        "graph",
+        "concept"
+      ],
+      "text": "Pienen generaattorin käämi pyörii tasaisesti homogeenisessa magneettikentässä. Generaattorin sinimuotoisen jännitteen tehollinen arvo on $5{,}0\\,\\text{V}$ ja taajuus $40\\,\\text{Hz}$. Arvot ovat esimerkkiarvoja. Hetkellä $t = 0$ jännite on nolla ja kasvamassa.\n\nMikä kuvaajista esittää generaattorin jännitettä $e$ ajan $t$ funktiona?",
+      "answer": "Kuvaaja B",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Kuvaaja A",
+          "figure": "fy7-7/pick-u50-t40",
+          "feedback": "Tässä on kaksi virhettä: tehollinen arvo $5{,}0\\,\\text{V}$ on piirretty huippuarvoksi, ja jaksonajaksi on luettu taajuuden lukuarvo millisekunteina. Huippuarvo on $\\sqrt{2}$-kertainen, ja $T = 1 : f$."
+        },
+        {
+          "text": "Kuvaaja B",
+          "figure": "fy7-7/pick-u71-t25",
+          "correct": true,
+          "feedback": "Oikein: huippuarvo on $5{,}0\\,\\text{V} \\cdot \\sqrt{2} \\approx 7{,}1\\,\\text{V}$, ja jaksonaika on $T = 1 : 40\\,\\text{Hz}$, eli $25\\,\\text{ms}$."
+        },
+        {
+          "text": "Kuvaaja C",
+          "figure": "fy7-7/pick-u50-t25",
+          "feedback": "Jaksonaika $25\\,\\text{ms}$ on oikein, mutta tehollinen arvo $5{,}0\\,\\text{V}$ on piirretty huippuarvoksi. Sinimuotoisen jännitteen huippuarvo on $\\sqrt{2}$-kertainen, noin $7{,}1\\,\\text{V}$."
+        },
+        {
+          "text": "Kuvaaja D",
+          "figure": "fy7-7/pick-u71-t40",
+          "feedback": "Huippuarvo $7{,}1\\,\\text{V}$ on oikein, mutta jaksonajaksi on luettu taajuuden lukuarvo millisekunteina. Jaksonaika on $T = 1 : f$, eli $25\\,\\text{ms}$."
+        }
+      ]
     }
   ],
   "level2": [

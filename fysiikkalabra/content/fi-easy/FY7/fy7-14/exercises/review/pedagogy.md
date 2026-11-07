@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 32434261a000870a
+CONTENT-HASH: 03d3187b9dd897b6
 Mode: full (translation review against the reviewed Finnish set)
-Round 1
+Round 2
 
 ## Blocking
 (none)
 
-## Fixed
-- solutions.md L3-04 part c — "kalvo näyttää väriltään värittömältä" (redundant) — changed to "kalvo näyttää värittömältä".
-
 ## Polish
-- (none beyond the Fixed item)
+(none)
 
 ## Checked
-- Same pedagogy as the reviewed fi set: part labels a)/b)/c), answer-box sentence ("takes ... of part b)") present in every multi-part task, example-data wording kept.
-- Level and kind tags unchanged (L2-06 error analysis, L2-05/L2-07/L3-05 data+graph, L1-06 concept).
-- Solutions keep the fixed order Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness, with significant-figure reasoning and reasonableness checks translated faithfully.
-- Student's wrong solution in L2-06 quoted with the same numbers (2nd = 665 nm) and the same error.
-- Reading level: Selkosuomi is clear: short sentences, common words, terms explained (matkaero, kertaluku, heikentävä interferenssi kept as course terms); decimal comma in text and LaTeX like fi.
+- Level counts and ids equal to fi; the new task fy7-14-L1-09 has the same form, prompt and options as fi.
+- Situation first, question last kept; the task needs no figure, so nothing to check at 360 px beyond long formulas, which break normally.
+- Feedback repairs the misconception rather than restating the answer, as in fi.
+- Solution keeps Kysytty/Find, Periaate/Principle, Mallivastaus/Model answer and the discussion of the wrong options.
+- fi-easy: short sentences, difficult terms explained once, no content lost.

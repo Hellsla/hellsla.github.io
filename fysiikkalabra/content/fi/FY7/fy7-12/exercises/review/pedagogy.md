@@ -1,15 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 2d654420254bbbeb
-Round: 4
+CONTENT-HASH: 613d454f2b784ce1
+
+Scope: new task fy7-12-L2-08 (perustelumonivalinta, two-stage, YO type 1).
 
 ## Blocking
 (none)
 
 ## Polish
-- exercises.json:fy7-12-L2-02 (42 words) and L3-02 (58 words) — existing tasks with long lead paragraphs; split when next touched (carried over).
+- solutions.md:214 — "Jos kulman $40{,}0^\circ$ pitää tulokulmana, mittaa kulman pinnasta" — "Jos kulmaa $40{,}0^\circ$ pitää tulokulmana, on mitannut kulman pinnasta, ja päätyy väärin..."
+- exercises.json (choices feedback) — the three wrong stage-1 feedbacks already state 50,0 deg > critical angle, so a student who guesses wrong learns the reason stage; acceptable for feedback after answering, but shorten to "tulokulma ylittää rajakulman" if the reasons are meant to stay open.
 
 ## Checked
-- Only change since round 3: L1-08 time 0,50 → 0,500 ms in task text and in solution (Annettu, Muunnokset, Sijoitus, Vastaus, Järkevyys); all five now agree.
-- Answer 103,4483 km, tolerance 0,02: "103 km" lies inside; three significant figures are now justified by n = 1,45, t = 0,500 ms and c = 3,00 · 10⁸. Earlier rounding item resolved.
-- The remaining 0,50 ms in solutions.md:47–48 belongs to a different task (L1-0x, two figures from 2,0 · 10⁸ m/s) and is correct.
-- Nothing else changed; round 3 verdict stands (hash 2d654420254bbbeb at start and end).
+- Correct stage-1 feedback does not reveal the reason stage (it names only total reflection).
+- Correct reason not identifiable by form: lengths 85-100 characters; the true-but-irrelevant reason 4 and the shared 48,8 deg value in reason 2 prevent elimination by number.
+- Distractors carry the surface/normal mistake (reason 2 pairs with stage-1 option 1), swapped n (reason 3) and "true but not explaining" (reason 4).
+- Numbers verified: 50,0 deg, sin(crit) 0,752, 48,8 deg, 1,33 x sin 50 = 1,02.
+- Within lesson and fy7-10 (normal angle).
+- Widest inline formula 212 px (render).

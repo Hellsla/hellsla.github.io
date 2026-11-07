@@ -93,6 +93,41 @@
       "answer": 1.5,
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-14-L1-09",
+      "level": 1,
+      "kind": [
+        "concept",
+        "model"
+      ],
+      "text": "Saippuakuplan yläosassa on musta laikku, ja sen ympärillä kalvo paksunee tasaisesti alaspäin. Kuplaa valaistaan yksivärisellä valolla. Valon aallonpituus ilmassa on $\\lambda$, ja valo tulee kohtisuoraan kalvoon. Kalvon taitekerroin on $n$, ja sen molemmin puolin on ilmaa.\n\nLaikun ympärillä näkyy vuorotellen kirkkaita ja tummia renkaita. Millä lausekkeella saadaan kalvon paksuus $d$ ensimmäisen tumman renkaan kohdalla laikun ulkopuolella?",
+      "answer": "$d = \\dfrac{\\lambda}{2n}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "$d = \\dfrac{\\lambda}{4n}$",
+          "feedback": "Tässä on unohdettu, että yläpinnan heijastuksessa aalto siirtyy puoli aallonpituutta. Siirtymän vuoksi matkaero $2nd = \\tfrac{1}{2}\\lambda$ tekee interferenssistä vahvistavan. Tämä paksuus on siis ensimmäinen kirkas rengas."
+        },
+        {
+          "text": "$d = \\dfrac{\\lambda}{n}$",
+          "feedback": "Tässä matkaeroksi on otettu kalvon paksuus vain kerran. Alapinnasta heijastunut aalto kulkee kalvon läpi edestakaisin. Siksi matkaero on $2nd$ eikä $nd$."
+        },
+        {
+          "text": "$d = \\dfrac{\\lambda}{2n}$",
+          "correct": true,
+          "feedback": "Oikein: heijastuksissa on yksi siirtymä, joten heikentävä ehto on $2nd = k\\lambda$. Musta laikku vastaa arvoa $k = 0$ ja ensimmäinen tumma rengas arvoa $k = 1$."
+        },
+        {
+          "text": "$d = \\dfrac{\\lambda}{2}$",
+          "feedback": "Tässä on käytetty aallonpituutta ilmassa. Kalvossa aallonpituus on $\\lambda : n$. Lisämatkaan $2d$ mahtuu silloin yhtä monta aallonpituutta kuin ilmassa matkaan $2nd$."
+        },
+        {
+          "text": "$d = \\dfrac{n\\lambda}{2}$",
+          "feedback": "Tässä on oletettu, että aallonpituus pitenee kalvossa. Valo hidastuu kalvossa nopeuteen $c : n$, ja taajuus pysyy samana. Siksi aallonpituus lyhenee arvoon $\\lambda : n$."
+        }
+      ]
     }
   ],
   "level2": [

@@ -175,6 +175,29 @@
 **Vastaus:** a) Virhe on se, että desibelit tulkittiin prosenteiksi. Desibelit lasketaan yhteen ja tehojen suhteet kerrotaan: kaksi $10\,\text{dB}$:n osuutta pienentää tehon kymmenesosaan kahdesti. b) $1{,}0\,\%$ lähetetystä tehosta saapuu perille. Opiskelijan arvo $80\,\%$ vastaisi vaimennusta vain noin $1\,\text{dB}$.
 **Järkevyys:** Vaimennus $20\,\text{dB}$ on $2 \cdot 10\,\text{dB}$, joten teho on $\tfrac{1}{10} \cdot \tfrac{1}{10} = \tfrac{1}{100}$ eli $1\,\%$. Opiskelijan arvon tarkistus: $10\,\text{dB} \cdot \lg \dfrac{1}{0{,}80} = 0{,}97\,\text{dB}$, joten $80\,\%$ vastaisi noin $1\,\text{dB}$:n vaimennusta eikä $20\,\text{dB}$:ä.
 
+## fy7-16-L2-08
+**Kysytty:** valopulssin edestakaisen kulkuajan $t$ suuruusluokka $1200\,\text{km}$:n kuituyhteydessä.
+**Periaate:** Valo etenee kuidun ytimessä nopeudella $v = c : n$. Koska valo kulkee lähes akselin suuntaisesti, sen kulkema matka on käytännössä kuidun pituus. Edestakaisin kuljettu matka on kaksi kertaa yhteyden pituus, ja aika on matka jaettuna nopeudella. Pituus muutetaan ensin metreiksi, jotta yksiköt sopivat yhteen nopeuden kanssa.
+**Mallivastaus:** Valon nopeus kuidussa ja edestakainen matka:
+
+$$\begin{aligned}
+&v = \frac{3{,}00 \cdot 10^8\,\text{m/s}}{1{,}47} \\
+&v = 2{,}04 \cdot 10^8\,\text{m/s} \\[6pt]
+&s = 2 \cdot 1{,}2 \cdot 10^6\,\text{m} \\
+&s = 2{,}4 \cdot 10^6\,\text{m}
+\end{aligned}$$
+
+Kulkuaika:
+
+$$\begin{aligned}
+&t = \frac{s}{v} = \frac{2{,}4 \cdot 10^6\,\text{m}}{2{,}04 \cdot 10^8\,\text{m/s}} \\
+&t = 0{,}0118\,\text{s}
+\end{aligned}$$
+
+Edestakainen kulkuaika on noin $12\,\text{ms}$ eli kymmenen millisekunnin suuruusluokkaa. Tarkistus: jokainen kilometri viivästyttää signaalia noin $4{,}9\,\mu\text{s}$, ja $2400 \cdot 4{,}9\,\mu\text{s} \approx 11{,}8\,\text{ms}$.
+
+Väärät suuruusluokat syntyvät yksikkövirheistä. Jos pituus sijoitetaan kilometrien lukuarvona, tulos on tuhat kertaa liian pieni, noin $12\,\mu\text{s}$. Jos $1200\,\text{km}$ kirjoitetaan muotoon $1{,}2 \cdot 10^5\,\text{m}$, tulos on kymmenen kertaa liian pieni. Jos nopeudeksi otetaan $300\,000$ eli nopeus kilometreinä sekunnissa ja pituus metreinä, tulos on tuhat kertaa liian suuri, noin $12\,\text{s}$.
+
 ## fy7-16-L3-04
 **Annettu:** $N = 15$, $f = 130\,\text{kHz}$, taulukon $d$ ja $e_0$, latauksen raja $e_0 = 1{,}0\,\text{V}$, uusi taajuus $f' = 100\,\text{kHz}$ ja sama vuo
 **Kysytty:** suurin etäisyys $d$ millimetreinä, jolla lataus toimii taajuudella $100\,\text{kHz}$

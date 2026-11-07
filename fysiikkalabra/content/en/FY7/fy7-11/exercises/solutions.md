@@ -198,3 +198,34 @@
 **Answer:** $\Delta\delta = 7.4^\circ$ (with accurate intermediate values $7.42^\circ$), two significant figures, because the result is the difference of two almost equal angles. Violet limits the apex angle: $A_\text{max} = 64.98^\circ$ for violet and $66.57^\circ$ for red.
 **Model answer:** Increasing the apex angle increases the separation of the colours: at $60.0^\circ$ the difference is $3.9^\circ$ and at $64.0^\circ$ it is $7.4^\circ$, that is, $3.5^\circ$ greater. The greatest allowed apex angle is determined by violet light, because its refractive index is the greatest and $\alpha_{3,\text{max}}$ is therefore the smallest. The apex angle $65.0^\circ$ is not worth choosing, because it is only $0.02^\circ$ above the limit $A_\text{max} = 64.98^\circ$: then for violet $n_\text{v}\sin\alpha_3 = 1.0005 > 1$, so the violet ray cannot leave and cannot be measured. The apex angle $64.0^\circ$ is close to the limit, so the violet ray leaves at a very shallow angle ($\alpha_4 = 77.8^\circ$) and its direction is sensitive to rounding.
 **Reasonableness:** Violet is deviated more than red ($\delta_\text{v} > \delta_\text{r}$), as it should be. The angle $64.0^\circ$ is smaller than $A_\text{max} = 64.98^\circ$, and the check $n_\text{v}\sin\alpha_3 = 0.977 < 1$ confirms that the ray can leave. The difference at a single surface would be only about $1^\circ$, and two surfaces and a large deviation increase it.
+
+## fy7-11-L1-09
+**Find:** which of the six statements about the dispersion of a prism and about the rainbow are true and which are false.
+**Principle:** The refractive index depends on wavelength (dispersion): in glass the refractive index of violet is greater than that of red, so violet slows down more and is refracted more. The speed of light in a material is $v = c : n$. At a boundary the frequency of light, and so the colour, is preserved, but the speed and the wavelength change. In a rainbow each colour is seen at its own angle from the direction of the antisolar point, and if the sun is at altitude $h$, the top of the red edge is at altitude $42^\circ - h$.
+**Model answer:** Statement 1 is false. The refractive index of glass is $1.530$ for violet and $1.514$ for red, so violet is refracted more at both surfaces of the prism and deviates the most. Red deviates the least, although its wavelength is the longest.
+
+Statement 2 is true. The speeds of light in the glass are
+
+$v_\text{v} = \dfrac{3.00 \cdot 10^{8}\,\text{m/s}}{1.530}$
+
+$v_\text{v} = 1.961 \cdot 10^{8}\,\text{m/s}$
+
+$v_\text{r} = \dfrac{3.00 \cdot 10^{8}\,\text{m/s}}{1.514}$
+
+$v_\text{r} = 1.982 \cdot 10^{8}\,\text{m/s}$
+
+So violet travels more slowly.
+
+Statement 3 is false. The frequency is determined by the light source, and it does not change at the boundary. When the light slows down, its wavelength becomes shorter according to the equation $v = f\lambda$, but the colour, which is determined by the frequency, stays the same.
+
+Statement 4 is true. The colours are already present in white light, and the prism only separates them. The separated red light is refracted in the second prism, but it does not split, because it contains no other colours.
+
+Statement 5 is true. The droplets seen at the same angle from the direction of the antisolar point form a circle. The angle of violet, $40.6^\circ$, is smaller than that of red, $42^\circ$, so the circle of violet is smaller and violet is at the inner edge of the arc.
+
+Statement 6 is false. When the sun is at an altitude of $45^\circ$, the antisolar point is $45^\circ$ below the horizon. The top of the red edge is at the altitude
+
+$42^\circ - 45^\circ = -3^\circ$
+
+that is, below the horizon, so the arc cannot be seen on level ground.
+
+Answer: statements 2, 4 and 5 are true, and statements 1, 3 and 6 are false.

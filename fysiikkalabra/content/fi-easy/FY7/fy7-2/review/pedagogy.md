@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 95e436a1b8ea1958
+CONTENT-HASH: 36f1e76b61ba6c02
 
 ## Blocking
 (none)
@@ -10,4 +10,4 @@ CONTENT-HASH: 95e436a1b8ea1958
 - Ydinajatus opens straight into its first subsection. One lead sentence would help a phone reader.
 
 ## Checked
-Follow-up delta (2c31ff041, NOTES §12): the calc note now writes |q|vB and |q|E, matching fi and the lesson, and its sentences stay short. Earlier full review: difficult words are explained, the physics is identical to fi, and the calculations were recomputed.
+Delta re-review: only figures.json gained descriptions for the exercise option figures `pick-*`; the lesson text, inquiry and exit ticket are unchanged and use none of them (grep), so the lesson's flow, load, predictions, feedback and language level are as approved. Earlier checks carry over.

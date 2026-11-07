@@ -173,3 +173,18 @@
 **Substitution:** Fields: $B_\text{m} = 36.5$; $20.8$; $15.0$; $7.13$; $4.55$ and $1.97\,\mu\text{T}$ at distances $12$; $14$; $16$; $20$; $24$ and $30\,\text{cm}$. The products $B_\text{m} r^3$ are $63.0$; $57.0$; $61.5$; $57.1$; $62.9$ and $53.1$ in the unit $10^3\,\mu\text{T}\cdot\text{cm}^3$. Their sum is $354.5 \cdot 10^3\,\mu\text{T}\cdot\text{cm}^3$. The angles have been read to the nearest degree, so the products vary, and the mean evens out the reading error: $k = 59.1 \cdot 10^3\,\mu\text{T}\cdot\text{cm}^3$. Then $r_0 = \sqrt[3]{\dfrac{59\,100\,\mu\text{T}\cdot\text{cm}^3}{14\,\mu\text{T}}} = \sqrt[3]{4221\,\text{cm}^3} = 16.2\,\text{cm}$
 **Answer:** a) The product $B_\text{m} r^3$ is about $5.3\ldots6.3 \cdot 10^4\,\mu\text{T}\cdot\text{cm}^3$ at all points, although the field decreases from $36.5\,\mu\text{T}$ to $1.97\,\mu\text{T}$, so the field is approximately inversely proportional to the cube of the distance. b) $r_0 \approx 16\,\text{cm}$ (more precisely $16.2\,\text{cm}$), two significant figures like the angles; the value is approximate, because $k$ is a mean of scattered products. c) When $r < r_0$, the field of the magnet (towards the south) is greater than the Earth's field (towards the north), so the north component is negative and the north end of the needle points south. When $r > r_0$, the Earth's field is greater and the north end of the needle points north. At the distance $r_0$ the horizontal total field is zero, so the needle does not settle in any direction.
 **Reasonableness:** In the table at a distance of $16\,\text{cm}$ the field is $15.0\,\mu\text{T}$, a little greater than the Earth's field $14\,\mu\text{T}$, and at $20\,\text{cm}$ only $7.13\,\mu\text{T}$, so the zero point must be a little over $16\,\text{cm}$, as $16.2\,\text{cm}$ is. A check: $\dfrac{59\,100\,\mu\text{T}\cdot\text{cm}^3}{(16.2\,\text{cm})^3} = 13.9\,\mu\text{T}$.
+
+## fy7-1-L1-09
+**Find:** which of the five statements about a bar magnet, its field lines and the magnetic poles of the Earth are true.
+**Principle:** A magnet is a magnetic dipole: its poles always occur in pairs, and a single pole has never been observed. The direction of the field is the direction in which the north end of a compass needle points. Outside the magnet the field lines go from the north pole to the south pole and inside from the south pole to the north pole. The field of two magnets is the vector sum of their fields, and at each point it has one direction. Unlike poles attract each other.
+**Model answer:** Statements 3 and 4 are true, statements 1, 2 and 5 are false.
+
+1 false: a new north pole forms at the cut. The long piece still has both a north pole and a south pole, and the short piece becomes another complete magnet.
+
+2 false: next to the side the field lines run along the magnet from the $\text{N}$ end to the $\text{S}$ end. There the field of the magnet is much stronger than the field of the Earth, so the needle turns along it and its north end points towards the $\text{S}$ end.
+
+3 true: outside the lines go from $\text{N}$ to $\text{S}$ and inside from $\text{S}$ to $\text{N}$, so every line closes on itself. This fits the fact that there are no single poles.
+
+4 true: the $\text{N}$ end of the magnet turns towards the geographic north. Unlike poles attract each other, so the Earth's magnetic south pole is there.
+
+5 false: between two magnets there is one total field $\overline{B} = \overline{B}_1 + \overline{B}_2$. It has only one direction at each point, so the field lines do not cross each other. The iron filings show the lines of the total field, which curve in the space between the magnets.

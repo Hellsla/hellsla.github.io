@@ -73,6 +73,20 @@
 **Answer:** $1.5$ wavelengths, two significant figures like the thickness $300\,\text{nm}$.
 **Reasonableness:** The path difference is greater than twice the thickness of the film, $600\,\text{nm}$, because the wavelength in the film is shorter. The result $1.5 = 1 + \tfrac{1}{2}$ is of the form $k + \tfrac{1}{2}$ with $k = 1$, so the soap film reflects green laser light strongly at this point.
 
+## fy7-14-L1-09
+**Find:** the expression for the thickness $d$ of the film at the first dark ring outside the black spot.
+**Principle:** The path difference of the waves reflected from the two surfaces of the film is $2nd$, because the wave reflected from the lower surface travels through the film back and forth, and the wavelength in the film is $\lambda : n$. The reflection at the upper surface, from air to the film, inverts the wave; the reflection at the lower surface, from the film to air, does not. When there is one shift, the condition for destructive interference is $2nd = k\lambda$, where $k = 0, 1, 2, \ldots$
+**Model answer:** The black spot is so thin that the path difference is almost zero. It corresponds to the value $k = 0$ of the destructive condition: the waves cancel each other because of the shift at the upper surface. When the film thickens, a bright ring comes first, where $2nd = \tfrac{1}{2}\lambda$, that is $d = \lambda : (4n)$. After that comes the first dark ring, where $k = 1$:
+
+$$\begin{aligned}
+&2nd = 1 \cdot \lambda \\
+&d = \frac{\lambda}{2n}
+\end{aligned}$$
+
+At the first dark ring the thickness of the film is $d = \dfrac{\lambda}{2n}$. For example, when $\lambda = 589\,\text{nm}$ and $n = 1.33$, the thickness is $589\,\text{nm} : 2.66 \approx 221\,\text{nm}$.
+
+The expression $\lambda : (4n)$ is obtained if the shift is forgotten, but it is the thickness of the first bright ring. The expression $\lambda : n$ forgets that the light travels through the film back and forth. The expression $\lambda : 2$ uses the wavelength in air, and the expression $n\lambda : 2$ wrongly assumes that the wavelength becomes longer in the film. Light slows down in the film, so the wavelength becomes shorter.
+
 ## fy7-14-L2-01
 **Given:** refractive index of the soap film $n = 1.33$, thickness $d = 240\,\text{nm}$, air on both sides, visible light $400$–$700\,\text{nm}$
 **Find:** the wavelength $\lambda$ missing from the reflected light, in nanometres

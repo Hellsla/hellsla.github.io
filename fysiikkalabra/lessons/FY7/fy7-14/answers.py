@@ -15,6 +15,7 @@ a["fy7-14-L1-05"] = sqrt(1.60)                      # ideal coating index n_c = 
 # L1-06 is multiple choice (no number): only the air-film (top) reflection inverts
 a["fy7-14-L1-07"] = 570 / (4 * 1.47)                # oil on water, one shift (1,00 < 1,47 > 1,33): constructive 2nd = λ/2, d = λ / (4n) = 96,94 nm
 a["fy7-14-L1-08"] = 2 * 1.33 * 300 / 532            # path difference 2nd = 798 nm = 1,5 wavelengths of 532 nm
+# YO-skill form (teacher 2026-11-05): L1-09 is an expression choice (no number); one shift, dark 2nd = kλ, k = 1: d = λ / (2n)
 # Level 2: a rearrangement, a conversion or two steps
 a["fy7-14-L2-01"] = 2 * 1.33 * 240 / 1              # soap film, one shift: destructive 2nd = kλ, k = 1: 638,4 nm (k = 2: 319 nm, UV)
 a["fy7-14-L2-02"] = 4 * 1.38 * 110e-9 * 1e9         # coating, two shifts: destructive 2nd = λ/2, λ = 4nd = 607,2 nm

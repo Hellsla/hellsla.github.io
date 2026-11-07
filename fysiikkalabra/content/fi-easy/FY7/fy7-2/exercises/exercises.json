@@ -228,6 +228,42 @@
           "correct": true
         }
       ]
+    },
+    {
+      "id": "fy7-2-L2-08",
+      "level": 2,
+      "text": "Tyhjiöputkessa on homogeeninen magneettikenttä. Kentän magneettivuon tiheys on $0{,}50\\,\\text{mT}$, ja kenttä osoittaa paperista ulos. Kentässä liikkuu elektroni. Elektronin massa on $9{,}109 \\cdot 10^{-31}\\,\\text{kg}$ ja varaus $-1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Tarkasteluhetkellä elektronin nopeus on $3{,}0 \\cdot 10^{6}\\,\\text{m/s}$ paperin tasossa ylöspäin.\n\nKuvioissa $\\overline{F}_\\text{m}$ on magneettinen voima, jonka kenttä kohdistaa elektroniin. Sininen nuoli $\\overline{v}$ on elektronin nopeus, eikä se ole voima. Merkki $\\odot$ tarkoittaa suuntaa paperista ulos. Kaikki kuviot on piirretty samassa mittakaavassa.\n\nMikä voimakuvio esittää oikein elektroniin vaikuttavat voimat?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "fbd": "select",
+      "answer": "Voimakuvio C",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Voimakuvio A",
+          "figure": "fy7-2/pick-ulos",
+          "feedback": "Tässä voima on piirretty kentän suuntaan paperista ulos, ikään kuin kenttä vetäisi elektronia kohti napaa. Magneettinen voima on kuitenkin kohtisuorassa sekä nopeutta että kenttää vastaan. Siksi se on paperin tasossa."
+        },
+        {
+          "text": "Voimakuvio B",
+          "figure": "fy7-2/pick-oikea",
+          "feedback": "Tämä on oikean käden säännön antama suunta positiiviselle varaukselle. Elektronin varaus on negatiivinen, joten elektroniin kohdistuva voima osoittaa vastakkaiseen suuntaan eli vasemmalle."
+        },
+        {
+          "text": "Voimakuvio C",
+          "figure": "fy7-2/pick-vasen",
+          "correct": true,
+          "feedback": "Oikein: voiman suuruus on $|q|vB \\approx 2{,}4 \\cdot 10^{-16}\\,\\text{N}$ vasemmalle. Elektronin paino $mg \\approx 8{,}9 \\cdot 10^{-30}\\,\\text{N}$ on niin pieni, ettei sitä piirretä."
+        },
+        {
+          "text": "Voimakuvio D",
+          "figure": "fy7-2/pick-ylos",
+          "feedback": "Tässä voima on piirretty nopeuden suuntaan, ikään kuin kenttä kiihdyttäisi elektronia. Magneettinen voima on kohtisuorassa nopeutta vastaan. Siksi se ei muuta vauhtia vaan kääntää liikkeen suuntaa."
+        }
+      ]
     }
   ],
   "level3": [

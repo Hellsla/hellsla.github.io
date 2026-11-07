@@ -87,6 +87,36 @@
       "answer": 0.06,
       "unit": "T",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-5-L1-09",
+      "level": 1,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "Consider five situations in which an induced voltage can arise. The values are example values, and the flux of one turn means the magnetic flux through one turn of the coil.\n\nSituation A: the flux of one turn of a coil of $200$ turns grows steadily by $3.0\\,\\text{mWb}$ in $0.50\\,\\text{s}$.\n\nSituation B: the flux of one turn of a coil of $50$ turns grows steadily by $6.0\\,\\text{mWb}$ in $0.10\\,\\text{s}$.\n\nSituation C: around the iron core of a large electromagnet there is a coil of $500$ turns. The current of the electromagnet is constant, and a flux of $8.0\\,\\text{mWb}$ passes through one turn.\n\nSituation D: a metal rod of length $0.50\\,\\text{m}$ moves at a speed of $4.0\\,\\text{m/s}$ in a homogeneous magnetic field of $0.30\\,\\text{T}$. The rod, its velocity and the field are perpendicular to each other.\n\nSituation E: the flux through a single wire loop decreases steadily by $40\\,\\text{mWb}$ in $0.020\\,\\text{s}$.\n\nCalculate the magnitude $|e|$ of the induced voltage in each situation and put the situations in order.",
+      "prompt": "Put the situations in order of the magnitude $|e|$ of the induced voltage, from smallest to largest.",
+      "order": [
+        {
+          "text": "Situation C"
+        },
+        {
+          "text": "Situation D"
+        },
+        {
+          "text": "Situation A"
+        },
+        {
+          "text": "Situation E"
+        },
+        {
+          "text": "Situation B"
+        }
+      ],
+      "answer": "Situation C ($0\\,\\text{V}$), situation D ($0.60\\,\\text{V}$), situation A ($1.2\\,\\text{V}$), situation E ($2.0\\,\\text{V}$), situation B ($3.0\\,\\text{V}$).",
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level2": [

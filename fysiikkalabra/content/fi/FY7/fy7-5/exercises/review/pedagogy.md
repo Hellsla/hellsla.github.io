@@ -1,20 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: a48533fe7157ea8e
-ROUND: 2
+CONTENT-HASH: fd4eb60f56237477
+
+Round 3 (fy7-5-L1-09, ordering)
 
 ## Blocking
-(none) Both round-1 items are fixed: L2-06 now opens with a 27-word situation paragraph, data in its own paragraph; L3-04 opens with a 14-word situation, data in the second paragraph, lettered parts separate.
+(none) The round-2 item is fixed: C is an electromagnet with an iron core, constant current, 500 turns, flux 8,0 mWb per turn. The wrong rule e = N·Φ gives 4,0 V, above B (3,0 V), so C wrongly lands last; the solution (solutions.md:229) says so.
 
 ## Polish
-- L3-05 overlaps L3-03 (magnet through a coil, flux from the pulse area). It is deeper (table, trapezoid sum, second pulse), but say in the task that the area method is used, or vary the context.
-- L1-08 is the inverse of L1-03; level 1 has three vBl tasks (L1-03, L1-05, L1-08). A different L1 type (e.g. reading a graph) would add variety.
-- L2-05 lost its "graph" kind, which is right (no graph is drawn); the table is the whole task.
-- Existing L2-04 (not part of this round) has a 48-word single paragraph; split if the file is touched again.
+- exercises.json:92 — five calculations is heavy for level 1; consider four situations (unchanged since round 1).
+- exercises.json:98 — "yhden kierroksen vuo tarkoittaa käämin yhden kierroksen läpi kulkevaa magneettivuota" is circular; say "Vuo on yhden kierroksen läpi kulkeva vuo."
 
 ## Checked
-- Counts 8/7/5 = 20; every new task has a complete solution; ids unique.
-- L1-07 answer is now 2,3 V (tolerance 0,03); solution rounds 2,25 V to two significant figures and 2,25 V is still accepted.
-- L2-05 solution now uses the single interval 0,40-0,50 s: 120 * 1,21 mWb / 0,10 s = 1,452 V, answer 1,45 V matches.
-- L1-06 and L2-07 multiple choice: correct option no longer first or longest; distractors are real misconceptions with own feedback; L2-07 wording "kohtisuorassa kenttää vastaan mutta liikkuu kentän suuntaisesti" is clear.
-- L3-04 k = 0,164 V/s, a = 1,64 m/s2, s = 1,18 m; L3-05 areas 0,01946 and 0,01968 V*s, 0,078 and 0,079 mWb; the sign explanation now rests on rising then falling flux.
-- Levels fit the brief and docs/exercise-bank/FY7.md; no duplicate of the worked example. Paragraph rule: no lead text over 45 words in the new tasks.
+- Values recomputed: A 1,2 V, B 3,0 V, C 0, D 0,60 V, E 2,0 V; order C, D, A, E, B; direction stated in the prompt.
+- Both warned mistakes are caught: forgotten N (A, B fall below D) and flux size (C jumps to last).
+- Constant current stated in the stem, so "vuo ei muutu" follows without a trick; 1 T over 80 cm² is realistic.
+- Solution step by step; within the chapter (induction law, e = vBl).
+- Checked from text only (no renders; pedagogy role); inline formulas fit (at most 227 px at 390 px).

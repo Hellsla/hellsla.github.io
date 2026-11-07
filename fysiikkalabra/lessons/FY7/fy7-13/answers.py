@@ -45,6 +45,7 @@ d6 = mm / 600
 lam_ok = d6 * sin(atan(0.337 / 1.00))                        # correct λ with tan θ = x / L: 532,3 nm
 lam_bad = d6 * (0.337 / 1.00)                                # student: sin θ ≈ x / L: 561,7 nm
 a["fy7-13-L2-06"] = (lam_bad / lam_ok - 1) * 100             # error 5,53 %
+# YO-skill form (teacher 2026-11-05): L2-08 is a change prediction (no number); 100 -> 300 lines/mm, L 2,00 -> 1,00 m: x = L tan(asin(λ/d)) = 13,03 -> 19,88 cm, factor 1,53
 # Level 3 (example data)
 x1 = 5.0e-3                                                  # peak of the table: x_1 = 5,0 mm
 a["fy7-13-L3-04"] = 0.250e-3 * sin(atan(x1 / 2.00)) * 1e9    # λ = d sin θ = 625,0 nm

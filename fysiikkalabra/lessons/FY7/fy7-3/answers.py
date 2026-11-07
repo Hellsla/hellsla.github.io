@@ -31,6 +31,7 @@ I_w = (sum(Br) / 3) * 1e-6 * 1e-2 / (mu0 / (2 * math.pi))     # I = 2 pi (B r) /
 a["fy7-3-L2-06"] = wire(I_w, 3.0 * 0.01) * 1e6        # 3,0 cm: 53,7 uT -> 54 uT
 # L2-06 d): B at 0,50 cm = 161 uT cm / 0,50 cm = 322 uT -> 320 uT (not the answer box)
 # (fy7-3-L2-07 is multiple choice: no number)
+# (fy7-3-L2-08 is multiple choice: no number) coil 240 turns: 12 cm, 0,60 A -> 24 cm, 1,8 A: B2/B1 = 3 / 2 = 1,5 (1,51 mT -> 2,26 mT)
 # Level 3: reasoning, two ideas, an unfamiliar context
 B_w = 14e-6 * math.tan(math.radians(30))              # compass turns 30°: the wire's field is perpendicular to B_h, tan 30° = B_w / B_h -> 8,083e-6 T
 a["fy7-3-L3-01"] = 2 * math.pi * 5.0 * 0.01 * B_w / mu0      # I = 2 pi r B_w / mu0 = 2,02 A -> 2,0 A

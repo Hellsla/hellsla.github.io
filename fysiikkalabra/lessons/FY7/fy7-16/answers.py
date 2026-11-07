@@ -40,6 +40,7 @@ fibre_P = [488, 327, 196, 129, 79.1]
 fibre_A = [10 * log10(800 / q) for q in fibre_P]
 a["fy7-16-L2-06"] = sum(x * y for x, y in zip(fibre_L, fibre_A)) / sum(x * x for x in fibre_L)  # 0,2003 dB/km
 a["fy7-16-L2-07"] = 100 * 10 ** (-20 / 10)           # 20 dB -> power ratio 10^-2 = 1,0 %
+# YO-skill form (teacher 2026-11-05): L2-08 is an order-of-magnitude choice (no number); t = 2 L n / c = 2 · 1,2e6 m · 1,47 / 3,00e8 m/s = 11,76 ms
 # L3-04: charger coil, flux from e0 = N 2πf Φ0, threshold 1,0 V at 100 kHz, interpolate between 12 mm and 16 mm
 N4, f4 = 15, 130e3
 d4 = [4, 8, 12, 16, 20]

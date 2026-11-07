@@ -175,6 +175,29 @@
 **Answer:** a) The error is that decibels were interpreted as percentages. Decibels are added and the ratios of the powers are multiplied: two $10\,\text{dB}$ parts reduce the power to a tenth twice. b) $1.0\,\%$ of the transmitted power arrives. The student’s value $80\,\%$ would correspond to an attenuation of only about $1\,\text{dB}$.
 **Reasonableness:** The attenuation $20\,\text{dB}$ is $2 \cdot 10\,\text{dB}$, so the power is $\tfrac{1}{10} \cdot \tfrac{1}{10} = \tfrac{1}{100}$, that is $1\,\%$. Checking the student’s value: $10\,\text{dB} \cdot \lg \dfrac{1}{0.80} = 0.97\,\text{dB}$, so $80\,\%$ would correspond to an attenuation of about $1\,\text{dB}$ and not $20\,\text{dB}$.
 
+## fy7-16-L2-08
+**Find:** the order of magnitude of the round-trip time $t$ of a light pulse in a $1200\,\text{km}$ fibre link.
+**Principle:** Light travels in the core of the fibre at the speed $v = c : n$. Because the light travels almost parallel to the axis, the distance it covers is practically the length of the fibre. The distance covered back and forth is twice the length of the link, and the time is the distance divided by the speed. The length is converted into metres first, so that the units match the speed.
+**Model answer:** The speed of light in the fibre and the distance back and forth:
+
+$$\begin{aligned}
+&v = \frac{3.00 \cdot 10^8\,\text{m/s}}{1.47} \\
+&v = 2.04 \cdot 10^8\,\text{m/s} \\[6pt]
+&s = 2 \cdot 1.2 \cdot 10^6\,\text{m} \\
+&s = 2.4 \cdot 10^6\,\text{m}
+\end{aligned}$$
+
+The travel time:
+
+$$\begin{aligned}
+&t = \frac{s}{v} = \frac{2.4 \cdot 10^6\,\text{m}}{2.04 \cdot 10^8\,\text{m/s}} \\
+&t = 0.0118\,\text{s}
+\end{aligned}$$
+
+The round-trip time is about $12\,\text{ms}$, that is of the order of ten milliseconds. Check: every kilometre delays the signal by about $4.9\,\mu\text{s}$, and $2400 \cdot 4.9\,\mu\text{s} \approx 11.8\,\text{ms}$.
+
+The wrong orders of magnitude come from unit errors. If the length is substituted as the number of kilometres, the result is a thousand times too small, about $12\,\mu\text{s}$. If $1200\,\text{km}$ is written as $1.2 \cdot 10^5\,\text{m}$, the result is ten times too small. If the speed is taken as $300\,000$, that is the speed in kilometres per second, and the length in metres, the result is a thousand times too large, about $12\,\text{s}$.
+
 ## fy7-16-L3-04
 **Given:** $N = 15$, $f = 130\,\text{kHz}$, $d$ and $e_0$ of the table, the charging limit $e_0 = 1.0\,\text{V}$, new frequency $f' = 100\,\text{kHz}$ and the same flux
 **Find:** the greatest distance $d$ in millimetres at which charging works at the frequency $100\,\text{kHz}$

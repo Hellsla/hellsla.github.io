@@ -27,6 +27,7 @@ pulse = [(49.0, 0), (49.2, 0), (49.4, 52), (49.6, 91), (49.8, 96), (50.0, 88), (
 half = [t for t, i in pulse if i >= 50]                     # rows with I >= 50 %: 49,4 ... 50,2 µs
 a["fy7-12-L2-06"] = (max(half) - min(half)) * 1e3           # pulse width 0,8 µs = 800 ns
 a["fy7-12-L2-07"] = degrees(asin(1.00 * sin(radians(70.0)) / 1.50))   # air -> glass has no critical angle: β = 38,79° -> 38,8°
+# (fy7-12-L2-08 is a two-stage multiple choice: no number) water -> air, beam 40,0° from the surface: a1 = 50,0° > a_r = asin(1,00 / 1,33) = 48,8°: total reflection
 # Level 3: reasoning, two ideas or an unfamiliar context
 ar = asin(1.00 / 1.33)                                      # pool lamp: light leaves the surface only where α < α_r
 a["fy7-12-L3-01"] = 1.80 * tan(ar)                          # radius r = h tan α_r = 1,80 m · tan 48,75° = 2,053 m

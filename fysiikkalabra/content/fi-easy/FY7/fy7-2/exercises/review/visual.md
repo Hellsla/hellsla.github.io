@@ -1,23 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: be5a20d4c273629f
-Mode: full
-Round: 1
+CONTENT-HASH: fab32967a3807688
 
 ## Blocking
 
 ## Polish
-- [Minor] Taulukon sarakeotsikot (Rata, Kaartuu, Kohta) ovat lyhyitä; ei muutettavaa.
+- [Minor] fy7-2-L2-08 (2-16) — the four option cards appear in the order B, D, A, C in the grid — keep A–D order if the shuffle is not intended.
+- [Minor] solution 2-16 — "Paino on noin $10^{-14}$-osa magneettisesta voimasta" is stiff — "Paino on noin $10^{-14}$-kertainen magneettiseen voimaan verrattuna".
+- [Minor] fy7-2/pick-* aria-labels — "F m" is read letter by letter — "magneettinen voima F".
 
 ## Checked
-- Avattu fi-easy-kuvakaappaus open-exercises-L3-1280-6 (L3-04 ratkaisu): kaavat, desimaalipilkku, yksiköt pystyssä, ei leikkautumista, ei vaakasuuntaista ylivuotoa.
-- Uusien tehtävien tekstit, taulukot ja kuvatekstit luettu käännöksestä; selitykset sulkeissa (liike-energia, klassinen käsittely) näkyvät luettavasti.
-- Ei englantia tai muuta vierasta kieltä sivulla.
-- check_i18n.py fi-easy: 0 errors.
+- fy7-2-open-exercises-L2-1280-10 and -11 (fi-easy): task 2-16 text, option cards with figures B, D, A, C, feedback inside the card, opened solution with aligned display.
+- Figures: electron as a rectangle, blue $\overline{v}$, red $\overline{F}_\text{m}$ equal lengths, $\odot$ explained in the task; KaTeX labels, no clipping.
+- Decimal comma and upright units correct; case endings fine; instructions are plain and in order (situation, symbol explanation, question, "Valitse vaihtoehto").
+- Not opened: 390 px layout of the cards.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
-
-## Follow-up (be5a20d4c273629f: four solutions.md edits on top of the hash above)
-- After `python scripts/build.py fy7-2 --exercises`, Playwright on the preview page with every exercise level and solution open, at 360 and 390 px: every inline `.katex` of L1-02 Annettu and Kaava (and L2-03, L3-02) has `getClientRects().length == 1`. The grouped ${|q| = e = …\,\text{C}}$ is 213 px in a 274 px (360) / 304 px (390) column; $|q|vB = \dfrac{mv^2}{r}$ 118 px, $r = \dfrac{mv}{|q|B}$ 80 px. No horizontal overflow.
-- Absolute-value bars, upright units and the decimal comma render cleanly; the chapter titles stay italic.
-- No blocking issue.
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

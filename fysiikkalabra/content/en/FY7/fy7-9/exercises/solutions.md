@@ -193,3 +193,36 @@
 **Substitution:** a) $T_0 = \dfrac{2.898 \cdot 10^{-3}\,\text{m} \cdot \text{K}}{1.80 \cdot 10^{-6}\,\text{m}} = 1610\,\text{K}$, $T_4 = \dfrac{2.898 \cdot 10^{-3}\,\text{m} \cdot \text{K}}{2.05 \cdot 10^{-6}\,\text{m}} = 1414\,\text{K}$, $T_8 = \dfrac{2.898 \cdot 10^{-3}\,\text{m} \cdot \text{K}}{2.35 \cdot 10^{-6}\,\text{m}} = 1233\,\text{K}$ and $T_{12} = \dfrac{2.898 \cdot 10^{-3}\,\text{m} \cdot \text{K}}{2.75 \cdot 10^{-6}\,\text{m}} = 1054\,\text{K}$. b) $v_T = \dfrac{(1610 - 1054)\,\text{K}}{12\,\text{min}} = 46.3\,\text{K/min}$. c) $t_\text{off} = 12\,\text{min} + \dfrac{(1054 - 800)\,\text{K}}{46.3\,\text{K/min}} = 12\,\text{min} + 5.5\,\text{min} = 17.5\,\text{min}$
 **Answer:** c) According to the estimate, the glow goes out about $17.5\,\text{min}$ after the first measurement, three significant figures like the wavelengths. Intermediate results: the temperatures $1610\,\text{K}$, $1414\,\text{K}$, $1233\,\text{K}$ and $1054\,\text{K}$ and the average cooling rate $46.3\,\text{K/min}$. The actual glowing time is longer than the estimate: the cooling rates over the intervals of the table are $49.1\,\text{K/min}$, $45.1\,\text{K/min}$ and $44.8\,\text{K/min}$, so the rate decreases. When the cooling is slower than average, the temperature reaches the value $800\,\text{K}$ later than estimated.
 **Reasonableness:** The temperature $1054\,\text{K}$ at the last measurement is over $800\,\text{K}$, so the glow is still visible and it must go out later than $12\,\text{min}$. Check: the temperature at the moment $17.5\,\text{min}$ is $1610\,\text{K} - 46.3\,\text{K/min} \cdot 17.5\,\text{min} = 800\,\text{K}$. The peak corresponding to the temperature $800\,\text{K}$ is $\dfrac{2.898 \cdot 10^{-3}\,\text{m} \cdot \text{K}}{800\,\text{K}} = 3.6\,\mu\text{m}$, like the dark red glow in the lesson.
+
+## fy7-9-L2-08
+**Find:** which conclusion about the temperature of the radiant plate at different power settings is justified on the basis of the measurements in the table.
+**Principle:** The plate is assumed to be a black body, so its absolute temperature is obtained from the peak of the spectrum with Wien's displacement law $\lambda_\text{max} T = b$. The wavelength of the peak is inversely proportional to the temperature, so the ratio of two temperatures is the inverse ratio of the peaks. The difference between two measurements is compared with the uncertainty of the wavelength $\pm 0.10\,\mu\text{m}$: a difference that stays within the uncertainty does not show a difference in temperature.
+**Model answer:** In the ratio of the temperatures at settings 1 and 4 the constant $b$ cancels:
+
+$\dfrac{T_4}{T_1} = \dfrac{b : \lambda_4}{b : \lambda_1} = \dfrac{\lambda_1}{\lambda_4}$
+
+$\dfrac{T_4}{T_1} = \dfrac{4.10\,\mu\text{m}}{2.90\,\mu\text{m}} \approx 1.41$
+
+The uncertainty changes the ratio only a little. The smallest possible ratio is obtained when $\lambda_1$ is at its smallest and $\lambda_4$ at its greatest, and the greatest ratio the other way round:
+
+$\dfrac{4.00\,\mu\text{m}}{3.00\,\mu\text{m}} \approx 1.33$
+
+$\dfrac{4.20\,\mu\text{m}}{2.80\,\mu\text{m}} = 1.50$
+
+So at setting 4 the absolute temperature of the plate is about $1.4$ times that at setting 1, and the conclusion is justified. The temperatures are
+
+$T_1 = \dfrac{2.898 \cdot 10^{-3}\,\text{m} \cdot \text{K}}{4.10 \cdot 10^{-6}\,\text{m}}$
+
+$T_1 \approx 707\,\text{K}$
+
+$T_4 = \dfrac{2.898 \cdot 10^{-3}\,\text{m} \cdot \text{K}}{2.90 \cdot 10^{-6}\,\text{m}}$
+
+$T_4 \approx 999\,\text{K}$
+
+In degrees Celsius they are $707\,\text{K} - 273.15\,\text{K} \approx 434\,{}^\circ\text{C}$ and $999\,\text{K} - 273.15\,\text{K} \approx 726\,{}^\circ\text{C}$. The ratio of the Celsius temperatures is $726 : 434 \approx 1.7$, so the claim that the Celsius temperature becomes $1.4$ times as great does not hold. The ratio $1.4$ applies only to the absolute temperature, because Wien's displacement law requires kelvins.
+
+The ratio $\lambda_4 : \lambda_1 = 2.90 : 4.10 \approx 0.7$ is obtained if the temperature is thought to be proportional to the wavelength of the peak. The dependence is inverse, however: a shorter peak means a hotter plate, so the temperature rises from setting 1 to setting 4.
+
+The peaks $3.40\,\mu\text{m}$ and $3.35\,\mu\text{m}$ of settings 2 and 3 differ by only $0.05\,\mu\text{m}$, which is less than the uncertainty of either reading. The calculated temperatures are $T_2 \approx 852\,\text{K}$ and $T_3 \approx 865\,\text{K}$, but within the uncertainty $T_2$ can be $828$–$878\,\text{K}$ and $T_3$ $840$–$892\,\text{K}$. The intervals largely overlap, so the measurements do not show that the plate is hotter at setting 3, let alone that the difference is $13\,\text{K}$.
+
+So the justified conclusion is that at setting 4 the absolute temperature of the plate is about $1.4$ times that at setting 1.

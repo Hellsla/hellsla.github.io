@@ -1,18 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 1ce25266ae253843
-
-Round 2 (the round-1 verdict was PASS): The developer applied three round-1 polish items. L2-07 now gives the reading accuracy as ±0,002 (0,15 % in v), labels 1,5167 as a manufacturer's table value and tightens its tolerance to 0,003. L3-04 now says 42,3°. L3-05 now says A_max = 64,98°, notes the 0,02° margin and has the missing verb. L1-06 has new distractor wording and its options are in a new order.
+CONTENT-HASH: 444d1349c80bb015
+ROUND: 1
 
 ## Blocking
 
 ## Polish
-- exercises.json fy7-11-L1-08 (carried over): the plan (Taso 1) asks for "taitekulma kahdelle värille", but L1-08 is a θ − h task. — Update the plan line or note the swap.
-- exercises.json fy7-11-L2-06 vs L3-03 (carried over): both compute θ = 4β − 2α for red and violet light. L3-03's level 3 rests on its different α per colour. — Note this in the plan.
 
 ## Checked
-- One script recomputed the new answers with my own formulas, and they agree with answers.py: 264,7 nm; 12,3°; 0,7646°; 42,29° (violet 40,63°); 197 889 km/s and 395,8 nm; 1,40002; Δδ 7,417° (A = 60°: 3,909°).
-- L3-05: A_max is 64,977° for violet and 66,573° for red, and n_v sin α₃ at 65° is 1,0005.
-- L2-07: the tolerance 0,003 accepts readings n ≈ 1,512–1,520, which matches a ±0,002 reading.
-- L1-06: exactly one option is correct, and each distractor's feedback is right. The frequency is unchanged in glass, red light is slower than c in glass and still refracts, and glass does not dye the light.
-- Every Vastaus value of the new tasks lies inside its tolerance.
-- The hash was the same at the start and at the end.
+- New task L1-09 (true/false, 6 statements) only (additions only since b032dcb83~1). Checked from the text only; no renders.
+- Statement 1 is false (violet n 1,530 > red 1,514; red deviates least). This is the chapter's warned mistake.
+- Statement 2 is true: v = c : n gives 1,961·10⁸ and 1,982·10⁸ m/s (recomputed).
+- Statement 3 is false: the frequency is unchanged at a boundary (taught in fy7-10) and λ shortens.
+- Statement 4 is true: a separated colour does not split again. This is the warned "the prism colours the light" mistake, and the remaining slight spread within one band is a fair simplification (C).
+- Statement 5 is true: violet at 40,6° < red at 42°, so violet is on the inner edge.
+- Statement 6 is false: with the Sun at 45° the top is at 42° − 45° = −3°. This matches the lesson's "aurinko alle 42°".
+- The set has 3 true and 3 false statements, and each feedback gives the statement's reason. Every statement uses only fy7-10/fy7-11 content.
+- answers.py: all 19 numeric answers agree with exercises.json; the L1-09 comment matches the answer string.
+- Hash 444d1349c80bb015 at start and end.

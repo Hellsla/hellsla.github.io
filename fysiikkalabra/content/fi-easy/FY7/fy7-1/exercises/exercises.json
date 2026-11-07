@@ -112,6 +112,45 @@
       "answer": 51.4,
       "unit": "µT",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-1-L1-09",
+      "level": 1,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "Oppilas tutkii pöydällä olevaa sauvamagneettia. Magneetin päihin on merkitty navat $\\text{N}$ ja $\\text{S}$. Oppilas käyttää kompassia ja rautaviilaa ja kirjaa havainnoistaan viisi väitettä. Maan magneettikenttä on magneetin lähellä paljon heikompi kuin magneetin oma kenttä.\n\nPäättele, mitkä väitteet ovat tosia ja mitkä epätosia.",
+      "answer": "1 epätosi, 2 epätosi, 3 tosi, 4 tosi, 5 epätosi",
+      "unit": "",
+      "tolerance": 0.02,
+      "statements": [
+        {
+          "text": "Kun magneetin $\\text{N}$-päästä sahataan irti lyhyt pala, jäljelle jäävällä pitkällä palalla on vain etelänapa $\\text{S}$.",
+          "true": false,
+          "feedback": "Epätosi: magneetin navat esiintyvät aina pareittain. Sahauskohtaan syntyy uusi pohjoisnapa. Siksi pitkällä palalla on edelleen sekä $\\text{N}$ että $\\text{S}$, ja lyhyellä palalla on myös kumpikin."
+        },
+        {
+          "text": "Magneetin kyljen vieressä keskikohdan kohdalla kompassin neulan pohjoispää osoittaa magneetin $\\text{N}$-päätä kohti.",
+          "true": false,
+          "feedback": "Epätosi: magneetin ulkopuolella kenttäviivat kulkevat pohjoisnavasta etelänapaan. Kyljen vieressä kenttä osoittaa siis $\\text{S}$-päätä kohti. Neulan pohjoispää kääntyy kentän suuntaan."
+        },
+        {
+          "text": "Magneetin sisällä kenttäviivat kulkevat etelänavasta pohjoisnapaan, joten jokainen kenttäviiva on suljettu silmukka.",
+          "true": true,
+          "feedback": "Tosi: ulkona viivat kulkevat $\\text{N}$:stä $\\text{S}$:ään ja sisällä $\\text{S}$:stä $\\text{N}$:ään. Viivalla ei ole alkua eikä loppua, koska yksittäistä magneettinapaa ei ole."
+        },
+        {
+          "text": "Kun magneetti ripustetaan langasta vapaasti kääntyväksi, sen $\\text{N}$-pää kääntyy kohti Maan magneettista etelänapaa.",
+          "true": true,
+          "feedback": "Tosi: erinimiset navat vetävät toisiaan, joten $\\text{N}$-pää kääntyy kohti Maan magneettista etelänapaa. Se on maantieteellisen pohjoisnavan lähellä, joten $\\text{N}$-pää osoittaa pohjoiseen."
+        },
+        {
+          "text": "Kun pöydälle tuodaan toinen magneetti, kahden magneetin kenttäviivat voivat leikata toisiaan niiden välissä.",
+          "true": false,
+          "feedback": "Epätosi: kokonaiskenttä on kahden magneetin kenttien vektorisumma eli summa, jossa otetaan huomioon myös suunnat. Kokonaiskentällä on jokaisessa pisteessä vain yksi suunta. Siksi kokonaiskentän kenttäviivat eivät koskaan leikkaa toisiaan."
+        }
+      ]
     }
   ],
   "level2": [
