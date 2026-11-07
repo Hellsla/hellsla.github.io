@@ -265,8 +265,15 @@ def generic(lid):
         check("no console errors", not errors, str(errors[:2]))
         page_form(pg, b, url, acts, page)
         if pg.locator("#ennusta details.fold").count(): pg.locator("#ennusta details.fold > summary").first.click(); pg.wait_for_timeout(100)   # open the Ennusta box as a student does
+        # predictions first, as a student makes them: the tasks further down scroll past the theory section that
+        # reveals a theory-linked prediction (fy5-17), and its feedback would then rightly show at once
+        wrongs = {}
+        for pr in preds:
+            loc = pg.locator(f"#{pr['id']}"); wrong = int(loc.locator("input[data-correct='0']").first.get_attribute("value")); wrongs[pr["id"]] = str(wrong)
+            loc.locator("input[type=radio]").nth(wrong).check(); loc.locator("button.commit").click()
+            check(f"{pr['id']}: committed without feedback", loc.locator("fieldset").get_attribute("data-committed") == "1" and not loc.locator(".feedback").nth(wrong).is_visible())
         more = pg.locator('#tutki details[data-fold="tutki-more"]')   # Tutki's other tasks wait in a closed box (teacher 2026-11-06)
-        if more.count() and not more.evaluate("(d) => d.open"): more.locator(":scope > summary").click(); pg.wait_for_timeout(100)
+        if more.count(): more.evaluate("(d) => { d.open = true; }"); pg.wait_for_timeout(100)   # without scrolling: a theory section seen early would reveal predictions
         n_opt = pg.locator("details.opt").count()
         if n_opt:                                         # optional activities: closed, named boxes that open from the keyboard
             st = pg.evaluate("[...document.querySelectorAll('details.opt')].map((d) => [d.open, d.querySelector('summary').textContent.includes('Valinnainen') || !d.querySelector('.opt-tag'), !!d.querySelector('.activity[id]')])")
@@ -285,11 +292,6 @@ def generic(lid):
             loc.locator("input[data-correct='1']").first.check(); loc.locator("button.commit").click()
             check(f"{a['id']}: the correct choice is marked right", "Oikein" in loc.locator("output").inner_text())
         list_tasks(pg, url)
-        wrongs = {}
-        for pr in preds:
-            loc = pg.locator(f"#{pr['id']}"); wrong = int(loc.locator("input[data-correct='0']").first.get_attribute("value")); wrongs[pr["id"]] = str(wrong)
-            loc.locator("input[type=radio]").nth(wrong).check(); loc.locator("button.commit").click()
-            check(f"{pr['id']}: committed without feedback", loc.locator("fieldset").get_attribute("data-committed") == "1" and not loc.locator(".feedback").nth(wrong).is_visible())
         if preds and pg.locator("#ennusta details.fold").count():   # closing the box keeps the answers; reopened, they are there
             pg.locator("#ennusta details.fold > summary").first.click(); pg.wait_for_timeout(80); pg.locator("#ennusta details.fold > summary").first.click(); pg.wait_for_timeout(80)
             kept = all(pg.locator(f"#{pr['id']} input[type=radio]").nth(int(wrongs[pr["id"]])).is_checked() for pr in preds)
