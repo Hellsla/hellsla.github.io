@@ -620,7 +620,12 @@ h2.intro-h{margin:0 0 .45rem;font:700 var(--fs-small)/1.3 var(--sans);letter-spa
 .task-card>h3:first-child{margin-top:0}
 .task-card>:last-child,.task-card>:last-child>:last-child{margin-bottom:0}
 .activity.is-active{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}   /* the experiment that drives the simulation now */
-.act-theory>h3.theory-h:first-child{margin-top:0}
+.act-theory>h3.theory-h:first-child,.act-theory>.theory-core:first-child>h3.theory-h:first-child{margin-top:0}
+/* Ydinajatus: a calm green line at its left, outside the text so the column keeps its width (teacher 2026-11-07).
+   No padding or border above or below, so the margins of the heading and the last paragraph still collapse as before. */
+.theory-core{--core-line:#3d9a5f;   /* at least 3:1 against both the light page and a dark one */
+  border-left:4px solid var(--core-line);margin-left:-.625rem;padding-left:calc(.625rem - 4px)}
+@media (min-width:40rem){.theory-core{margin-left:-1.125rem;padding-left:calc(1.125rem - 4px)}}
 .act-theory h3.theory-h{margin-top:2.2rem}
 .act-theory h4{font:700 var(--fs-body)/1.35 var(--sans);margin:1.6rem 0 .4rem;color:var(--ink)}   /* a subheading inside a theory section (### in lesson.md) */
 .hook{font:400 var(--fs-body)/1.6 var(--serif)}.hook>:first-child{margin-top:0}
@@ -757,8 +762,8 @@ details.level>ol>li:last-child{border-bottom:0}
    inquiry.js reads --wide on .lab to know that the simulation sits beside the experiments. */
 @container content (min-width:60rem){
   /* text and tasks in one reading column, whatever the width */
-  .stage>*:not(.lab,.act-theory,.act-sim),.act-theory>*:not(.fig-row),.lab-main>*,article#teoria:not(.inquiry)>:not(.fig-row,#sim){max-width:calc(var(--measure) + 3rem)}
-  .act-theory>p,.act-theory>ul,.act-theory>ol,.act-theory>h3,.act-theory>h4,.act-theory>blockquote{max-width:var(--measure)}
+  .stage>*:not(.lab,.act-theory,.act-sim),.act-theory>*:not(.fig-row,.theory-core),.theory-core>*:not(.fig-row),.lab-main>*,article#teoria:not(.inquiry)>:not(.fig-row,#sim){max-width:calc(var(--measure) + 3rem)}
+  :is(.act-theory,.theory-core)>:is(p,ul,ol,h3,h4,blockquote){max-width:var(--measure)}
   .stage>.act-sim{max-width:40rem}
   /* the opening: the illustration (its size set by what it shows, not by the column) beside the key facts, from the same height */
   .intro-row{display:grid;grid-template-columns:minmax(0,36rem) minmax(17rem,24rem);column-gap:var(--gap);align-items:start}
@@ -885,9 +890,9 @@ figure.unit-photo.wide figcaption{display:block;max-width:var(--measure)}
 /* On a wide screen a photo in the running text sits beside the text column, in the empty space to its right
    (teacher 2026-11-01); inside a box or on a narrower screen it stays in the column. */
 @media (min-width:80rem){
-  .act-theory>figure.unit-photo:not(.wide):not(:has(+ .fx-wide, + .fig-row.side, + .example, + .fx-map, + .fx-timeline, + * + .fx-wide, + * + .fig-row.side, + * + .example, + * + .fx-map, + * + .fx-timeline, + * + * + .fx-wide, + * + * + .fig-row.side, + * + * + .example, + * + * + .fx-map, + * + * + .fx-timeline)){float:right;clear:right;margin:.35rem calc(100% - var(--measure) - 4.5rem - 20rem) 1rem 0}
-  details .activity.act-theory>figure.unit-photo.unit-photo{float:none;margin:1.25rem 0 1.5rem}
-  .act-theory>.fx-wide,.act-theory>.fig-row.side,.act-theory>.example,.act-theory>.fx-map,.act-theory>.fx-timeline,.act-sim,section.stage,.unit-credits{clear:right}
+  :is(.act-theory,.theory-core)>figure.unit-photo:not(.wide):not(:has(+ .fx-wide, + .fig-row.side, + .example, + .fx-map, + .fx-timeline, + * + .fx-wide, + * + .fig-row.side, + * + .example, + * + .fx-map, + * + .fx-timeline, + * + * + .fx-wide, + * + * + .fig-row.side, + * + * + .example, + * + * + .fx-map, + * + * + .fx-timeline)){float:right;clear:right;margin:.35rem calc(100% - var(--measure) - 4.5rem - 20rem) 1rem 0}
+  details .activity.act-theory>figure.unit-photo.unit-photo,details .activity.act-theory>.theory-core>figure.unit-photo.unit-photo{float:none;margin:1.25rem 0 1.5rem}
+  :is(.act-theory,.theory-core)>:is(.fx-wide,.fig-row.side,.example,.fx-map,.fx-timeline),.act-sim,section.stage,.unit-credits{clear:right}
 }
 /* the photographs' credits at the end of the page */
 .unit-credits{max-width:var(--measure);margin-top:var(--stage-space);border-top:1px solid var(--line);padding-top:1.25rem;font-size:var(--fs-inner)}
