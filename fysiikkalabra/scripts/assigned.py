@@ -10,9 +10,12 @@ carries it (templates/palautus.js, version 4).
 
 The proposal keeps the chapter's core exercises (build.py core_ids) and adds, in as many chapters as the module's
 target needs, one level-3 task (applying) that brings a kind the core lacks (data, graph, experiment, error,
-reasoning, model). Extension tasks ("Syventävä tehtävä." at the start of the text) are never assigned, and the
+reasoning, model). Short answer-only tasks (teacher 2026-11-07: a one-item multiple choice or a level-1 calculation
+with one formula that needs no solving, e.g. Celsius to kelvins) do not count towards the 4-5 of a chapter: a core
+one stays assigned on top of them. Extension tasks ("Syventävä tehtävä." at the start of the text) are never assigned, and the
 contents and levels of the exercises are not touched. FY9, FY10 and FY14 have no assigned tasks."""
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -42,6 +45,31 @@ def core_ids(ex):
     return out
 
 
+def solution_lines(code, lid, lang="fi"):
+    """{task id: the **Kaava:** line of its model solution} from the chapter's solutions.md"""
+    p = ROOT / "content" / lang / code / lid / "exercises" / "solutions.md"
+    out, cur = {}, None
+    for line in (p.read_text().splitlines() if p.is_file() else []):
+        m = re.match(r"## (\S+)", line)
+        if m: cur = m.group(1); out[cur] = ""
+        elif cur and line.startswith("**Kaava:**"): out[cur] = line
+    return out
+
+
+def is_short(e, formula):
+    """only an answer is asked: a level-1 one-item multiple choice, or a level-1 calculation with one formula that is
+    used as it is (no "joten" solving step, at most one "=") and no data or figure"""
+    if e.get("level") != 1 or e.get("data") or e.get("figure") or e.get("statements") or e.get("order"): return False
+    if e.get("choices"): return True
+    return isinstance(e.get("answer"), (int, float)) and bool(formula) and "joten" not in formula and formula.count("=") <= 1
+
+
+def shorts(code, lid):
+    ex = exercises(code, lid) or {}
+    f = solution_lines(code, lid)
+    return {e["id"] for items in ex.values() for e in items if is_short(e, f.get(e["id"], ""))}
+
+
 def kinds(e):
     k = set(e.get("kind") or [])
     if e.get("figure"): k.add("graph")
@@ -55,26 +83,32 @@ def propose(code):
     slots = [l["id"] for l in curriculum()[code]["lessons"]]
     sets = {lid: exercises(code, lid) for lid in slots}
     sets = {lid: ex for lid, ex in sets.items() if ex}
-    picks = {}
+    picks, extra_short = {}, {}
+    short = {lid: shorts(code, lid) for lid in sets}
     for lid, ex in sets.items():
         by_id = {e["id"]: e for items in ex.values() for e in items}
-        picks[lid] = [i for i in core_ids(ex) if not by_id[i]["text"].startswith(EXT)]
+        core = [i for i in core_ids(ex) if not by_id[i]["text"].startswith(EXT)]
+        picks[lid] = [i for i in core if i not in short[lid]]
+        extra_short[lid] = [i for i in core if i in short[lid]]   # on top of the chapter's 4-5
     def add_one(lid, level):
         """the next task of a chapter: of the given level first, the one adding most kinds the chapter's picks lack"""
         ex = sets[lid]; by_id = {e["id"]: e for items in ex.values() for e in items}
         have = set().union(*(kinds(by_id[i]) for i in picks[lid])) if picks[lid] else set()
-        cands = [e for items in ex.values() for e in items if e["id"] not in picks[lid] and not e["text"].startswith(EXT)]
+        cands = [e for items in ex.values() for e in items if e["id"] not in picks[lid] and e["id"] not in short[lid] and not e["text"].startswith(EXT)]
         cands.sort(key=lambda e: (e.get("level") != level, -len(kinds(e) - have - {"calc"})))
         if cands: picks[lid].append(cands[0]["id"])
     target = TARGET.get(code, DEFAULT_TARGET)
     base = target // len(picks)
     for lid in picks:                                 # a chapter with fewer core tasks: filled up to the module's base
-        while len(picks[lid]) < base: add_one(lid, 2)
+        while len(picks[lid]) < base:
+            n = len(picks[lid]); add_one(lid, 2)
+            if len(picks[lid]) == n: break            # the bank has nothing more to give
     extra = max(0, target - sum(len(v) for v in picks.values()))
     order = [lid for lid in picks if len(picks[lid]) == base]   # one level-3 task more, spread evenly over the teaching order
     chosen = [order[int(i * len(order) / extra)] for i in range(extra)] if 0 < extra <= len(order) else order[:extra]
     for lid in chosen: add_one(lid, 3)
     for lid in picks:                                 # page order (levels, then the bank's order)
+        picks[lid] += extra_short[lid]
         pos = {e["id"]: n for n, e in enumerate(e for items in sets[lid].values() for e in items)}
         picks[lid].sort(key=pos.get)
     return picks
@@ -97,7 +131,7 @@ def check(data):
     for code, chs in data.items():
         if code not in COURSES: errs.append(f"{code}: only FY1-FY8 have assigned tasks"); continue
         slots = [l["id"] for l in cur[code]["lessons"]]
-        n = 0
+        n, sizes = 0, []
         for lid, ids in chs.items():
             if lid not in slots: errs.append(f"{code}: {lid} is not a chapter of the module"); continue
             for lang in ("fi", "en", "fi-easy"):
@@ -110,10 +144,10 @@ def check(data):
             for i in ids:
                 if i in seen: errs.append(f"{i} assigned twice ({seen[i]}, {lid})")
                 seen[i] = lid
-            n += len(ids)
+            short = shorts(code, lid)
+            sizes.append(len([i for i in ids if i not in short])); n += sizes[-1]
         lo, hi = RANGE.get(code, DEFAULT_RANGE)
-        if not lo <= n <= hi: errs.append(f"{code}: {n} assigned tasks, expected {lo}-{hi}")
-        sizes = [len(v) for v in chs.values()]
+        if not lo <= n <= hi: errs.append(f"{code}: {n} assigned tasks (short ones not counted), expected {lo}-{hi}")
         if sizes and max(sizes) - min(sizes) > 2: errs.append(f"{code}: uneven chapters {sizes}")
     return errs
 
@@ -130,14 +164,17 @@ if __name__ == "__main__":
         data = load()
         for code in args[1:]:
             p = propose(code)
-            print(code, sum(len(v) for v in p.values()), "tasks:", " ".join(f"{lid.split('-')[1]}:{len(v)}" for lid, v in p.items()))
+            sh = {lid: shorts(code, lid) for lid in p}
+            print(code, sum(len([i for i in v if i not in sh[lid]]) for lid, v in p.items()), "tasks +", sum(len([i for i in v if i in sh[lid]]) for lid, v in p.items()), "short:",
+                  " ".join(f"{lid.split('-')[1]}:{len([i for i in v if i not in sh[lid]])}+{len([i for i in v if i in sh[lid]])}" for lid, v in p.items()))
             if args[0] == "--propose": data[code] = p
         if args[0] == "--propose": write(data)
         if args[0] == "--dry": sys.exit(0)
     data = load()
     errs = check(data)
     for code, chs in data.items():
-        print(f"{code}: {sum(len(v) for v in chs.values())} annettua tehtävää, {len(chs)} lukua ({min(map(len, chs.values()))}-{max(map(len, chs.values()))} / luku)")
+        main = [len([i for i in v if i not in shorts(code, lid)]) for lid, v in chs.items()]
+        print(f"{code}: {sum(main)} annettua tehtävää + {sum(map(len, chs.values())) - sum(main)} lyhyttä vastaustehtävää, {len(chs)} lukua ({min(main)}-{max(main)} / luku)")
     ids = [i for chs in data.values() for v in chs.values() for i in v]
     print(f"tunnisteita {len(ids)}, yksilöllisiä {len(set(ids))}")
     if errs: sys.exit("\n".join(errs))

@@ -330,8 +330,15 @@
         for (let i = 0; i < ch.tasks.length; i++) {
           const id = ch.tasks[i], r = byId.get(id), where = S('task', { n: ch.n + '-' + (i + 1) });
           const content = r ? await contentOf(r.html, where) : [];
-          let k = 0;
-          content.forEach((it) => { if (it.type === 'image') { delete it.data; it.ref = k++; images++; } });
+          // a picture and a MathJax formula are in the file once, in store.solutions; here only their place (ref, sref).
+          // A formula drawn on Abitti's server (/math.svg?latex=) has no SVG in the file: its PNG stays.
+          const own = r ? [...new DOMParser().parseFromString('<div>' + r.html + '</div>', 'text/html').querySelectorAll('img')].map((m) => m.getAttribute('src') || '')
+            .filter((s) => /^data:image\/svg\+xml/.test(s) || /\/math\.svg\?latex=/.test(s)).map((s) => /^data:image\/svg\+xml;base64,/.test(s)) : [];
+          let k = 0, f = 0, svgs = 0;
+          content.forEach((it) => {
+            if (it.type === 'image') { delete it.data; it.ref = k++; images++; }
+            else if (it.type === 'math' && own[f++]) { delete it.png; it.sref = svgs++; }
+          });
           const responses = (numbers[id] || []).map((value) => ({ type: 'number', value }));
           if (content.length || responses.length) answers.push({ task: id, status: 'answered', content, responses });
         }
@@ -352,7 +359,7 @@
       const size = new TextEncoder().encode(text).length;
       if (size > LIMITS.file) throw fail(S('file_big', { mb: (size / 1e6).toFixed(1).replace('.', ','), max: LIMITS.file / 1e6 }));
       try { localStorage.setItem(WKEY, JSON.stringify({ sha, id })); } catch (e) { /* the next save gets a new id */ }
-      return { text, name: fileName(now) };
+      return { text, name: fileName(now), mb: Math.max(0.1, size / 1e6).toFixed(1).replace('.', LANG === 'en' ? '.' : ',') };
     };
     const save = async () => {
       const r = await make();
@@ -403,7 +410,7 @@
       if (busy) return; busy = true; b.disabled = true; say(status, S('busy'));
       try { await work(); } catch (e) { say(status, e && e.user ? e.message : S('failed'), 'no'); } finally { busy = false; b.disabled = false; }
     };
-    saveBtn.addEventListener('click', () => run(saveBtn, async () => { const r = await save(); say(status, S('saved', { name: r.name }), 'ok'); }));
+    saveBtn.addEventListener('click', () => run(saveBtn, async () => { const r = await save(); say(status, S('saved', { name: r.name, mb: r.mb }), 'ok'); }));
     // a message carried over the reload after Avaa tallennettu työ
     try { const m = sessionStorage.getItem('ruukkilabra:avattu'); if (m) { sessionStorage.removeItem('ruukkilabra:avattu'); setTimeout(() => say(status, m, 'ok'), 0); } } catch (e) { /* none */ }
     if (ON_CHAPTER) {

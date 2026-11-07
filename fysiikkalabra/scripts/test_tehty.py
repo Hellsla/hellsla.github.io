@@ -34,7 +34,8 @@ def expect(name, ok, detail=""):
 data = assigned.load()
 errs = assigned.check(data)
 expect("annetut.json: counts, unique ids, no extension tasks, FY1-FY8 only", not errs, errs)
-expect("FY3 has 70-75 assigned tasks, 4-5 per chapter", 70 <= sum(map(len, data["FY3"].values())) <= 75 and {len(v) for v in data["FY3"].values()} <= {4, 5}, {k: len(v) for k, v in data["FY3"].items()})
+main = {k: len([i for i in v if i not in assigned.shorts("FY3", k)]) for k, v in data["FY3"].items()}   # short answer-only tasks on top (teacher 2026-11-07)
+expect("FY3 has 70-75 assigned tasks, 4-5 per chapter, short answer-only tasks on top", 70 <= sum(main.values()) <= 75 and set(main.values()) <= {4, 5}, main)
 for code in ("FY9", "FY10", "FY14"):
     expect(f"{code} has no assigned tasks and its pages no tracker", code not in data and not any("tehty.js" in p.read_text() for p in SITE.glob(f"{code.lower()}-*.html")))
 FY3 = [i for v in data["FY3"].values() for i in v]
@@ -69,7 +70,7 @@ with sync_playwright() as p:
         expect(f"{lang or 'fi/'}fy3-1: exactly the assigned tasks are marked: '{word}' right after the number, a 3 px green edge, no tinted tag", [m["id"] for m in marks] == CH and others == 0
                and all(m["tag"] == word and m["border"] == "3px" and m["bg"] == "rgba(0, 0, 0, 0)" for m in marks), (marks, others))
         expect(f"{lang or 'fi/'}fy3-1: 'Tehty' at the right end of the head row, before 'Avaa isoksi'", all(0 < m["done"] < m["big"] for m in marks), marks)
-        expect(f"{lang or 'fi/'}fy3-1: Tehtävät opens with the chapter's counter", pg.inner_text("#exercises .done-count") == ("0/5 assigned tasks done" if lang == "en/" else "0/5 annettua tehtävää tehty"), pg.inner_text("#exercises .done-count"))
+        expect(f"{lang or 'fi/'}fy3-1: Tehtävät opens with the chapter's counter", pg.inner_text("#exercises .done-count") == (f"0/{len(CH)} assigned tasks done" if lang == "en/" else f"0/{len(CH)} annettua tehtävää tehty"), pg.inner_text("#exercises .done-count"))
 
     pg.goto(BASE + "fy3-1.html"); pg.evaluate(OPEN)
     num_task = next(i for i in CH if pg.evaluate(f"!!document.querySelector('[id=\"{i}\"] form.check')"))
@@ -95,9 +96,9 @@ with sync_playwright() as p:
     st = pg.evaluate(STATE)
     t1 = (st or {}).get("done", {}).get(num_task, "")
     expect("a saved solution (written just before, saved before the tick): Tehty with an ISO 8601 time", box(num_task).is_checked() and len(t1) == 24 and t1.endswith("Z") and t1[10] == "T", st)
-    expect("the chapter's counter follows at once", pg.inner_text("#exercises .done-count") == "1/5 annettua tehtävää tehty")
+    expect("the chapter's counter follows at once", pg.inner_text("#exercises .done-count") == f"1/{len(CH)} annettua tehtävää tehty")
     pg.reload(); pg.evaluate(OPEN); pg.wait_for_timeout(400)
-    expect("a reload keeps the tick", box(num_task).is_checked() and pg.inner_text("#exercises .done-count") == "1/5 annettua tehtävää tehty")
+    expect("a reload keeps the tick", box(num_task).is_checked() and pg.inner_text("#exercises .done-count") == f"1/{len(CH)} annettua tehtävää tehty")
     # 3. a picture alone is a solution (a formula or a picture is an image in the editor's HTML); a second task
     other = next(i for i in CH if i != num_task)
     pg.evaluate(f"""() => new Promise((ok) => {{ const s = document.createElement('script'); s.src = 'padstore.js'; s.onload = ok; document.head.append(s); }})""")
@@ -108,20 +109,33 @@ with sync_playwright() as p:
     mp = ctx.new_page(); mp.on("pageerror", lambda e: errors.append(str(e)))
     mp.goto(BASE + "FY3.html")
     total = len(FY3)
+    expect("module page: the progress is behind one button 'Näytä edistyminen', closed (teacher 2026-11-07)", mp.is_visible(".my-wrap > summary") and mp.inner_text(".my-wrap > summary") == "Näytä edistyminen"
+           and not mp.evaluate("document.querySelector('.my-wrap').open"))
+    mp.click(".my-wrap > summary")
     pos = mp.evaluate("(() => { const s = document.getElementById('oma-eteneminen'), h = document.querySelector('main h1'), l = [...document.querySelectorAll('main h2')].find((x) => !s.contains(x)); return !s.hidden && !!(h.compareDocumentPosition(s) & 4) && !!(s.compareDocumentPosition(l) & 4); })()")
     expect("module page: Oma eteneminen after the heading, before the chapters", pos)
-    expect(f"module page: '2/{total} tehtävää tehty' and the bar", mp.inner_text(".pm-count") == f"2/{total} tehtävää tehty" and mp.get_attribute(".pm-bar", "aria-valuenow") == "2"
-           and abs(float(mp.evaluate("document.querySelector('.pm-bar > span').style.width").rstrip("%")) - 100 * 2 / total) < 0.01, mp.inner_text(".pm-count"))
+    # Oma itsearvio beside it (teacher 2026-11-07): the verbal statements assessed and the fingerprint under the themes
+    mp.evaluate("localStorage.setItem('ruukkilabra:itsearvio:fy3-1', JSON.stringify({ items: { 'tavoite-1': { level: 'a' }, 'tavoite-3': { level: 'd' }, 'tehtava-x': { level: 'b' } } }))")
+    mp.reload(); mp.evaluate("document.querySelectorAll('.my-wrap').forEach((d) => { d.open = true; })")
+    goals = sum(len(c.get("goals", [])) for c in json.loads(mp.evaluate("document.getElementById('fl-course').textContent"))["chapters"])
+    cells = mp.evaluate("[...document.querySelectorAll('#oma-itsearvio .sm-grid .sm-cell:not(.sm-gap)')].map((c) => c.dataset.level || '')")
+    themes = mp.evaluate("[...document.querySelectorAll('#oma-itsearvio .sm-theme')].map((t) => t.textContent)")
+    expect("module page: Oma itsearvio counts the verbal statements only (2/N) and colours their cells; the themes above the columns",
+           goals >= 40 and mp.inner_text(".sm-count") == f"2/{goals} väitettä arvioitu" and len(cells) == goals and sorted(c for c in cells if c) == ["a", "d"]
+           and themes[0] == "Voima, työ ja lämpötila" and len(themes) == 4, (mp.inner_text(".sm-count"), goals, themes))
+    mp.evaluate("localStorage.removeItem('ruukkilabra:itsearvio:fy3-1')")
+    expect(f"module page: '2/{total} tehtävää tehty' and the bar", mp.evaluate("document.querySelector('.pm-count').textContent") == f"2/{total} tehtävää tehty" and mp.get_attribute(".pm-bar", "aria-valuenow") == "2"
+           and abs(float(mp.evaluate("document.querySelector('.pm-bar > span').style.width").rstrip("%")) - 100 * 2 / total) < 0.01, mp.evaluate("document.querySelector('.pm-count').textContent"))
     mp.click(".pm-graph > summary"); mp.wait_for_selector(".pm-chart svg", timeout=3000)
     g = mp.evaluate("(() => { const s = document.querySelector('.pm-chart svg'); return s && { dots: s.querySelectorAll('.pm-dot').length, path: s.querySelector('.pm-line').getAttribute('d'), ticks: [...s.querySelectorAll('.pm-tick')].map((t) => t.textContent) }; })()")
     expect(f"module page: the graph by date, cumulative up to {total}", g and g["dots"] == 1 and str(total) in g["ticks"] and g["path"].startswith("M"), g)
     # 5. untick, a new tick gets a new time; counted once
     tick(num_task)
-    expect("an untick takes the mark off and the module page follows (another tab)", not box(num_task).is_checked() and mp.inner_text(".pm-count") == f"1/{total} tehtävää tehty", mp.inner_text(".pm-count"))
+    expect("an untick takes the mark off and the module page follows (another tab)", not box(num_task).is_checked() and mp.evaluate("document.querySelector('.pm-count').textContent") == f"1/{total} tehtävää tehty", mp.evaluate("document.querySelector('.pm-count').textContent"))
     pg.wait_for_timeout(20); tick(num_task)
     st = pg.evaluate(STATE); t2 = st["done"].get(num_task, "")
     expect("a new tick gets a new time; the task counts once; the log keeps tick, untick, tick", t2 > t1 and list(st["done"]).count(num_task) == 1
-           and [x[2] for x in st["log"] if x[0] == num_task] == [1, 0, 1] and pg.inner_text("#exercises .done-count") == "2/5 annettua tehtävää tehty", st)
+           and [x[2] for x in st["log"] if x[0] == num_task] == [1, 0, 1] and pg.inner_text("#exercises .done-count") == f"2/{len(CH)} annettua tehtävää tehty", st)
     # 6. the module's work file (teacher 2026-11-07): the same from a chapter and from the module page
     pg.fill('[id="fy3-2-L1-01"] form.check input', "1") if pg.locator('[id="fy3-2-L1-01"]').count() else None
     btns = pg.evaluate("[...document.querySelectorAll('#exercises .split-head > button, #exercises .split-head > a')].map((e) => e.textContent.trim())")
@@ -145,7 +159,7 @@ with sync_playwright() as p:
            and f.get("created", "").endswith("Z") and any(r["id"] == num_task for r in f["store"]["solutions"]) and any(k.startswith("ruukkilabra:vastaukset:") for k in f["store"]["local"]), {k: v for k, v in pr.items() if k != "assigned"})
     expect("only this module's data in the file", all(r["id"].startswith("fy3-") for r in f["store"]["solutions"]) and not any("fy4-" in k for k in f["store"]["local"]))
     # the module page: the same file and Avaa tallennettu työ
-    mp.goto(BASE + "FY3.html")
+    mp.goto(BASE + "FY3.html"); mp.evaluate("document.querySelectorAll('.my-wrap').forEach((d) => { d.open = true; })")
     mb = mp.evaluate("[...document.querySelectorAll('#oma-tyo button')].map((b) => b.textContent)")
     expect("module page: Tallenna työ tiedostoon and Avaa tallennettu työ, no text under them", mb == ["Tallenna työ tiedostoon", "Avaa tallennettu työ"] and mp.inner_text("#oma-tyo").strip() == "Tallenna työ tiedostoon\nAvaa tallennettu työ".replace("\n", "\n"), (mb, mp.inner_text("#oma-tyo")))
     with mp.expect_download(timeout=15000) as d2: mp.click("#oma-tyo button >> nth=0")
@@ -154,7 +168,7 @@ with sync_playwright() as p:
     # 7. another computer: open the work on the module page, then continue in a chapter
     ctx2 = b.new_context(viewport={"width": 1280, "height": 900}); p2 = ctx2.new_page(); mode = ["accept"]; asked = []
     p2.on("dialog", lambda d: (asked.append(d.message), d.accept() if mode[0] == "accept" else d.dismiss())); p2.on("pageerror", lambda e: errors.append(str(e)))
-    p2.goto(BASE + "FY3.html")
+    p2.goto(BASE + "FY3.html"); p2.evaluate("document.querySelectorAll('.my-wrap').forEach((d) => { d.open = true; })")
     def open_work(page, path):
         with page.expect_file_chooser() as fc: page.click("#oma-tyo button >> nth=1")
         with page.expect_navigation(): fc.value.set_files(str(path))
@@ -164,15 +178,15 @@ with sync_playwright() as p:
     fc.value.set_files(str(bad)); p2.wait_for_timeout(600)
     expect("a changed or damaged file is refused before anything is written", "vioittunut" in p2.inner_text("#oma-tyo") and p2.evaluate("localStorage.getItem('ruukkilabra:tehty')") is None, p2.inner_text("#oma-tyo"))
     open_work(p2, work_path)
-    expect("another browser: the module page shows the progress back and says what was opened", p2.inner_text(".pm-count") == f"2/{total} tehtävää tehty" and "avattiin" in p2.inner_text("#oma-tyo"), (p2.inner_text(".pm-count"), p2.inner_text("#oma-tyo")))
+    expect("another browser: the module page shows the progress back and says what was opened", p2.evaluate("document.querySelector('.pm-count').textContent") == f"2/{total} tehtävää tehty" and "avattiin" in p2.inner_text("#oma-tyo"), (p2.evaluate("document.querySelector('.pm-count').textContent"), p2.inner_text("#oma-tyo")))
     p2.goto(BASE + "fy3-1.html"); p2.evaluate(OPEN); p2.wait_for_timeout(400)
     p2.click(f'[id="{num_task}"] .pad-open'); p2.wait_for_selector(f'[id="{num_task}"] .rich-text-editor')
     expect("another browser: the solutions, the ticks and the chapter's counter are back", "Oma ratkaisu" in p2.inner_text(f'[id="{num_task}"] .rich-text-editor') and p2.locator(f'[id="{num_task}"] .ex-done input').is_checked()
-           and p2.inner_text("#exercises .done-count") == "2/5 annettua tehtävää tehty", p2.inner_text("#exercises .done-count"))
+           and p2.inner_text("#exercises .done-count") == f"2/{len(CH)} annettua tehtävää tehty", p2.inner_text("#exercises .done-count"))
     # a newer solution in this browser is not overwritten by accident: Cancel keeps it
     p2.locator(f'[id="{num_task}"] .rich-text-editor').click(); p2.keyboard.press("End"); p2.keyboard.type(" UUSI"); p2.wait_for_timeout(1300)
     mode[0] = "dismiss"
-    p2.goto(BASE + "FY3.html")
+    p2.goto(BASE + "FY3.html"); p2.evaluate("document.querySelectorAll('.my-wrap').forEach((d) => { d.open = true; })")
     open_work(p2, work_path)
     p2.goto(BASE + "fy3-1.html"); p2.evaluate(OPEN); p2.click(f'[id="{num_task}"] .pad-open'); p2.wait_for_selector(f'[id="{num_task}"] .rich-text-editor')
     expect("opening an older file asks first; Peruuta keeps this browser's newer solution", asked and "uudempia" in asked[-1] and "UUSI" in p2.inner_text(f'[id="{num_task}"] .rich-text-editor'), (asked, p2.inner_text(f'[id="{num_task}"] .rich-text-editor')))
@@ -189,12 +203,12 @@ with sync_playwright() as p:
     mp.evaluate("""() => new Promise((ok) => { const r = indexedDB.deleteDatabase('ruukkilabra-ratkaisut'); r.onsuccess = r.onerror = r.onblocked = () => ok(); })""")
     pg.close()
     mp.reload(); mp.wait_for_timeout(800)
-    expect("solutions cleared from the browser: the module page drops the ticks", mp.inner_text(".pm-count") == f"0/{total} tehtävää tehty", mp.inner_text(".pm-count"))
+    expect("solutions cleared from the browser: the module page drops the ticks", mp.evaluate("document.querySelector('.pm-count').textContent") == f"0/{total} tehtävää tehty", mp.evaluate("document.querySelector('.pm-count').textContent"))
     # 10. layout
     for w in (360, 768, 1280):
         for page in ("fy3-1.html", "FY3.html"):
             mp.set_viewport_size({"width": w, "height": 900}); mp.goto(BASE + page)
-            if page == "FY3.html": mp.click(".pm-graph > summary"); mp.evaluate("localStorage.setItem('ruukkilabra:tehty', JSON.stringify({v:1, done:{'%s':'2026-11-01T10:00:00.000Z','%s':'2026-11-05T10:00:00.000Z'}, log:[]}))" % (FY3[0], FY3[7])); mp.wait_for_timeout(200)
+            if page == "FY3.html": mp.evaluate("document.querySelectorAll('.my-wrap').forEach((d) => { d.open = true; })"); mp.click(".pm-graph > summary"); mp.evaluate("localStorage.setItem('ruukkilabra:tehty', JSON.stringify({v:1, done:{'%s':'2026-11-01T10:00:00.000Z','%s':'2026-11-05T10:00:00.000Z'}, log:[]}))" % (FY3[0], FY3[7])); mp.wait_for_timeout(200)
             else: mp.evaluate(OPEN)
             over = mp.evaluate("document.documentElement.scrollWidth - document.documentElement.clientWidth")
             heads = mp.evaluate("[...document.querySelectorAll('#exercises li.assigned .ex-head')].filter((h) => h.scrollWidth > h.clientWidth + 1).length") if page != "FY3.html" else 0
