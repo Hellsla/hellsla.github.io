@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 9c8a2363b0045857
-Mode: full (translation review against the reviewed Finnish set)
+CONTENT-HASH: d08cadb8ab28136f
+Mode: delta (round 2, commit f9cecc6 since 8b7dd5d78)
 
 ## Blocking
-(none)
-
-## Fixed
-- exercises.json L2-08 choice 2: Finnish decimal comma '$0{,}2\,\text{MW}$' -> '$0.2\,\text{MW}$'.
 
 ## Polish
-(none)
+- solutions.md L2-08 Järkevyys: "Tuulen teho on P : η ≈ 4,9 MW" could say "vertailuteho" to match the Periaate.
 
 ## Checked
-L2-08 vs content/fi: kind, tolerance, choices order, correct flag, feedback numbers identical. Recomputed v=10 m/s, A=7854 m2, P=0.5*0.40*1.25*7854*1000=1.96 MW (wind 4.9 MW, 47=36^3/10^3 ratio), answer 2 MW; distractors 0.2 MW (v^2) and 20 kW (v) and 90 MW (unconverted) match. Solution equals Finnish. Colon-for-division kept (check_i18n requires it).
+- Round-1 Blocking fixed: the L1-04, L2-02 and L2-08 task texts now ask about, or give, the power of the undisturbed wind through the swept area. The L2-08 feedbacks (exercises.json:243, :247) and solutions.md call ρAv the mass that the undisturbed wind carries through the swept area per second. Tasks, solutions and brief now agree.
+- L1-04 Periaate: "kuljettaisi … ilmalieriön, m = ρAvt" agrees with the lesson.
+- The L1 kinetic-energy task "2,50·10³ kg of air flows through the rotor" is left as is: it gives the mass outright and is ½mv² only, so there is no contradiction.
+- Recomputed: 480 kW; η = 0,4485 → 44,9 %; 1,96 MW ≈ 2 MW, reference 4,9 MW; distractors 0,2 MW and 20 kW.
+- Hash identical at start and end.

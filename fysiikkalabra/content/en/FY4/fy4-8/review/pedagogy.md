@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 90cb84d87239530b
+CONTENT-HASH: 016fb836e9fdfd7f
 
 ## Blocking
 
 ## Polish
+- Siirtymä/matka-kappale on tiivis; yksi lause ylös heitetyn pallon työstä (kokonaisvoima työ nolla, kun palaa) auttaisi lukiolaista.
 
 ## Checked
-Read the lesson as an English-speaking student: the order, the staged example, the three predictions, the experiments, the checks and the model answers follow the Finnish. Chapter names are used instead of ids, decimal point everywhere (also in LaTeX). Layout checked at 360, 768 and 1280 px with check_layout.py: no overflow or overlap. check_i18n shows nothing for fy4-8. Fixed the Finnish track labels in the experiment tables.
-
-Delta review: leftover Finnish words in en names/labels/sim bar labels/figure caption are now English and match the Finnish meaning; no blocking issue.
+- Light delta review (teacher 2026-11-07): judged `git diff origin/main` of fy4-8 en (English text matches the Finnish change).
+- Työn määritelmä rajattu yhteen suuntaan (x-akseli, etumerkilliset nopeudet, siirtymä Δx), ja uusi kappale erottaa siirtymän ja kuljetun matkan (ylös heitetty pallo, kitka). Johto pysyy seurattavana, tiivistelmä (W = F∥ s, kun liike yhteen suuntaan) on johdonmukainen.
+- Consistency with summary, goals and inquiry feedback: no contradictions; untouched content passed earlier reviews.
+- Hash at start and end 016fb836e9fdfd7f.

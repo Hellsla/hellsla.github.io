@@ -1,17 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 90e0956eeb5429f7
+CONTENT-HASH: b53b61432729e115
+Mode: delta (c2c6eff02, s2 d conclusion criterion)
 
 ## Blocking
-(none left)
-
-## Fixed
-- (none needed in en)
 
 ## Polish
-- none
+- solutions.md "Mitoitus" caveat now carries no point; fine as teaching text. The "Hyväksytään myös" line for s2 d matches the trimmed criterion.
 
 ## Checked
-- Part e reads naturally in English for 16–18-year-olds: situation (six extra runs, short measuring section) before the question, the question asks the same as the Finnish and names no model (curve vs straight line is a criterion, not hinted in the text).
-- Solution keeps every step of the Finnish (Find, Graph, Model answer with reason, substitution, size of the error and comparison with the wax difference); one idea per paragraph; the new accepted range and common mistake present. Criteria keys and 5 points kept (49 points in total).
-- Round 2 (Finnish changes to fy4-s1: source_note about both tables' models, part e graph_read and error_sources details, a0 tolerance 0.05, 'about a fifth of the value of part c', part a 'almost constant', accepted a0 0.43–0.47): rechecked against fi; all present and equivalent, numbers and formulas identical, no wording fix needed. practice.py check and figures OK.
-- Delta re-review: the only change is the new ```voimakuvio spec block in each **Voimakuvio:** step of solutions.md; it is byte-identical to the Finnish (check_i18n 0 errors), no Finnish text added, text and numbers unchanged. practice.py check and figures OK.
+- Diff only; text read.
+- s2 d conclusion is now only the choice of the larger speed and its reason, which is exactly what the part text asks. The earlier unasked point is gone, so a correct answer can earn 4/4.
+- s3 b and the earlier Sovella deltas unchanged and passed.

@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 75e1488dc70e49ec
+CONTENT-HASH: e6938d7621155d3f
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] Tug-of-war caption does not say what the photo shows about Newton's first law (a lean-back balances the pull); at 1280 px both photos are unfloated (left, no text wrap) because of the layout rule for photos followed by a figure. By design, no fix needed.
+(none)
 
 ## Checked
-batch delta review: opened en/fy4-3 captures at 360 and 1280 px (both photos, 360 and 1280) and the photo file; photo loads, sits in the theory column (floated right or unfloated by layout rule at 1280, full column at 360), no clipping or overflow from the photo, alt and caption natural English and consistent with the picture, no unit-bearing numbers needing LaTeX, credit line present under the caption.
+- Delta only. Opened en/fy4-3 captures: example-390-2 (Result and extended Reasonableness) at readable size. Edited text renders in natural English; every number with its unit is inline LaTeX, no inline formula wraps, no overflow or clipping, surrounding layout intact.
+
+## Scores
+illustrations 4 · typography 4 · Finnish (English language quality) 5 · accessibility 4

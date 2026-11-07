@@ -1,22 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: f9b250176d97a909
+CONTENT-HASH: df577543465b349f
+Mode: delta (wind-power reference power, cut-in/rated/cut-out, figure caption)
 
 ## Blocking
 
 ## Polish
-- inquiry.json `vesi-data` — kysymys käskee laskemaan P : h ja vaihtoehdot sisältävät johtopäätöksen; opiskelija ei itse valitse vertailua. — Kysy ensin "mitä laskisit?" tai poista johtopäätös vaihtoehdoista.
-- Kuva ilmalierio — nimiössä "m = ρAvt" irrallinen pilkku, ja A = πr² on roottorista irrallaan. — Siisti kuva, yhdistä A roottorin kiekkoon.
-- Tavoite "laskemaan … tuottaman energian": E = Pt on vain virhekäsityksessä ja tiivistelmässä. — Lisää lause ja kaava Kaava-osaan.
-- `tuuli-data` — kuvaaja toistaa taulukon eikä ole vastaukseen tarpeen. — Pyydä lukemaan jokin arvo kuvaajasta.
-- exit-ticket.json kysymys 2: "kaksi kertaa toisen putouskorkeus" -> "kaksi kertaa niin suuri kuin toisen".
+- lesson.md:237 — "häiriötön tuuli" / "undisturbed wind" is used in the 59 % sentence before it is explained (lesson.md:249-251). — Add a short gloss at first use ("tuuli ennen roottoria").
+- lesson.md (tehokäyrä caption) — "napakorkeudella", "ten-minute mean", standard density are specialist detail for a 17-year-old; harmless but heavy. — Optional: cut to one sentence ("vakio-olosuhteissa, joten vertailu on likimääräinen").
+- inquiry.json:278, :337 — still speak loosely of "roottorin läpi virtaava tuuli" while the lesson now defines a reference power. Not wrong in context (qualitative), optional to align.
 
 ## Checked
-- Kierroksen 1 Blocking korjattu: Miksi-lause ei enää paljasta Ennuste 1:n lukua (top 390 px).
-- Polku Pohdinta, Ennusta, Tutki, Teoria, Esimerkki, Tarkista seurattavissa; slotin tavoitteet katettu, ei ylimääräistä.
-- Ennusteet voidaan kumota aineistolla (8,9-kertainen; P:h noin 8 MW/m); virhevalintojen palaute korjaa väärinkäsityksen.
-- vesi-data: 600 vs 900 m³/s -ristiriita selitetty; siirron järkevyystarkistus nyt johdonmukainen.
-- Esimerkki seitsemässä vaiheessa, laskut ja suuruusluokkatarkistus oikein.
-- Etsi virhe, siirto ja Tarkista-tehtävät: vastaukset ja virhearvot täsmäävät; kriteerit havaittavia.
-- Kuvat 390 px (sankari, ilmalierio, tehokäyrä) luettavia, ei leikkautumista.
-- Exit ticket testaa ydinajatuksen (hyötysuhde, Q·h, nimellisteho).
-- Hash alussa ja lopussa sama.
+- Read from text; no render. Diff only: lesson text, figure aria-label, exit ticket, figures.json.
+- The new reference-power paragraph is staged well: undisturbed wind and cylinder first, then "in reality the rotor slows the air", then η defined against P_tuuli. The old unqualified "roottorin läpi virtaava" is gone, so η and the 59 % limit now mean the same thing.
+- The ×8 versus measured ×8,9 explanation now says the cube law holds only for roughly constant η; consistent with the inquiry prediction feedback.
+- Cut-in (3-4 m/s), rated (13 m/s, 1650 kW) and cut-out are named in order in one paragraph; the graph caption says the graph does not show cut-out, so no hidden contradiction. Exit-ticket answer matches the lesson.
+- Example, Periaate and Järkevyys use "vertailuteho/reference power" consistently; summary bullet matches.
+- Figure ilmalierio aria-label is conditional ("kuljettaisi", "olisi") and matches the text.
+- Translation parity checked for this language: same structure and numbers as fi.

@@ -599,11 +599,11 @@ A construction crane lifts a concrete slab of mass $480\,\text{kg}$. The tension
 
 <!-- vaihe -->
 
-**Result.** The acceleration is $a \approx 1.02\,\text{m/s}^2$ upward. It has three significant figures, like the tension $5.20\,\text{kN}$ and the mass $480\,\text{kg}$.
+**Result.** The acceleration is $a \approx 1.02\,\text{m/s}^2$ upward. It has three significant figures, like the tension $5.20\,\text{kN}$ and the free-fall acceleration $9.81\,\text{m/s}^2$. The whole number $480\,\text{kg}$ is taken as an exact value, so it does not limit the precision.
 
 <!-- vaihe -->
 
-**Reasonableness.** The force of the rope is only about ten percent greater than the weight $4.71\,\text{kN}$, so the acceleration should also be about a tenth of the free-fall acceleration: $0.1\cdot 9.81\,\text{m/s}^2 \approx 1\,\text{m/s}^2$. If the weight were forgotten, the result would be $5200\,\text{N} : 480\,\text{kg} \approx 10.8\,\text{m/s}^2$. That is more than the free-fall acceleration and far too large for a crane.
+**Reasonableness.** The force of the rope is only about ten percent greater than the weight $4.71\,\text{kN}$, so the acceleration should also be about a tenth of the free-fall acceleration: $0.1\cdot 9.81\,\text{m/s}^2 \approx 1\,\text{m/s}^2$. If the weight were forgotten, the result would be $5200\,\text{N} : 480\,\text{kg} \approx 10.8\,\text{m/s}^2$. That would be wrong, because besides the force of the rope the weight acts on the element downward, and the acceleration is set by the sum of these forces. For example, when the element rises at a constant velocity, the rope pulls with a force equal to the weight and the forces cancel, but a calculation that forgets the weight would still give an acceleration of about $9.8\,\text{m/s}^2$.
 
 ## Common misconception
 Many people think that a force always acts in the direction of motion and that the net force points in the direction of motion. The net force, however, points in the direction of the acceleration. When air resistance is ignored, a ball thrown upward keeps rising even though only its weight, which points down, acts on it, and that is why it slows down. In a slowing motion the net force points against the velocity. A second mistake is to think that a constant force keeps up a constant velocity. When the net force is constant and not zero, the velocity changes steadily. A third mistake is to confuse mass and weight. On a horizontal track the weight does not resist the motion, because the normal force cancels it: it is the mass that makes the acceleration smaller.

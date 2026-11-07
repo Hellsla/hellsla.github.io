@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 90e0956eeb5429f7
+CONTENT-HASH: b53b61432729e115
+Mode: delta (round 3, commit c2c6eff02: fy4-s2 d conclusion criterion trimmed)
 
 ## Blocking
-(none left)
-
-## Fixed
-- (none needed in en)
 
 ## Polish
-- none
 
 ## Checked
-- Re-review of the translation after the Finnish change to fy4-s1 (new part e, c answer as list A/B), compared with content/fi/FY4/sovella: tasks.json (new data table, part e text, answer a0 0.45 m/s² ±0.04 and mu 0.024 ±0.1, five criteria and details), solutions.md (### e), accepted and common-mistake items), figures.json (fy4-s1-drag alt text).
-- Physics identical: g sin α = 0.684 and g cos α = 9.786 m/s², μ_A = (0.684 − 0.45)/9.786 ≈ 0.024, 0.030 − 0.024 = 0.006 = a fifth of 0.030, about 3 × 0.002 and below 0.015; friction independent of speed, air resistance grows with speed, systematic error, curve extended to v = 0. Formulas identical, decimal point in text and LaTeX, table values equal to the Finnish.
-- Step names **Find:**, **Graph:**, **Model answer:** English; figure alt text complete. practice.py figures FY4 --lang en up to date; practice.py check FY4 OK.
-- Round 2 (Finnish changes to fy4-s1: source_note about both tables' models, part e graph_read and error_sources details, a0 tolerance 0.05, 'about a fifth of the value of part c', part a 'almost constant', accepted a0 0.43–0.47): rechecked against fi; all present and equivalent, numbers and formulas identical, no wording fix needed. practice.py check and figures OK.
-- Delta re-review: the only change is the new ```voimakuvio spec block in each **Voimakuvio:** step of solutions.md; it is byte-identical to the Finnish (check_i18n 0 errors), no Finnish text added, text and numbers unchanged. practice.py check and figures OK.
+- s2 d: the conclusion criterion now asks only for the choice (the larger model speed, either c's 14 m/s or the frictionless reference value 17,2 m/s) and its reason (a brake sized for too small a speed could fail). This is what "Kumman arvion mukaan jarru kannattaa mitoittaa?" asks. It agrees with Hyväksytään myös (either justified choice earns the point).
+- The solution's Mitoitus keeps the caveat that neither number is a safe maximum and that real design needs margins, load analysis and measurements. That satisfies the guardrail against presenting a simplified model as complete safety advice, without grading what the task does not ask.
+- Round 1 still holds:
+  - s2: 17,16 m/s; 29,1 N; 13,57 → 14 m/s.
+  - s3 b: 7,86 m/s; 13,64 m/s = 49,1 km/h.
+- Points unchanged.
+- Hash identical at start and end.

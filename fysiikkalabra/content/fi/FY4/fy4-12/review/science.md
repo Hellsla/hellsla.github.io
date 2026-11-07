@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: ee2c8ead5cfa8ced
-
+CONTENT-HASH: 537741e800c3a6c8
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: the new title "Kahden kappaleen liikkeiden vertailu" (lesson.md, meta.json) describes the content and makes no physics claim. Dropping the level-policy sentence from the exercises text changes no physics. No student-facing text still uses the old title (only pedagogy reports do).
+- Diff: two uniform motions give a linear equation; distinct position lines intersect at most once (parallel distinct lines: never), identical lines mean the bodies coincide throughout — correct and complete.
+- Quadratic case with acceleration (up to two intersections) unchanged and correct.
+- Consistent with the bus–runner prediction options (inquiry.json:316–320) and the overtaking example; no other passage claims "always exactly once".

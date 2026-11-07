@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 20ae2c5af22a932c
-
+CONTENT-HASH: ef5183ea1cc403e3
 ## Blocking
-(none)
 
 ## Polish
-- none
 
 ## Checked
-- batch delta review: key_concepts, reworded sentences, photo captions, objective-form and level-policy edits, chapter-reference titles judged against the guardrails and the lesson text; restyled figure lines are styling only.
+- Delta since 8b7dd5d78: summary now says impulse is the signed area between the $(t, F)$ graph and the time axis — matches the theory and the bumper figure.
+- "Greatest magnitude of a changing force exceeds the magnitude of the average force" — correct for a non-constant force of one sign (the collision context).
+- Earlier round (unchanged): signed $F_x(t)$ area, $F_\text{ka} = |\Delta p|/\Delta t$ and $F_{\text{ka},x} = \Delta p_x/\Delta t$; bumper figure $-2{,}0\,\text{N·s}$ for 1,0 kg from 2,0 m/s; inquiry feedback ($-2{,}00$, $-4{,}00\,\text{N·s}$) consistent.

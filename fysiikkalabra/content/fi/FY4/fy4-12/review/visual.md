@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 1d502d6887e4a964
+CONTENT-HASH: 537741e800c3a6c8
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] Kuvateksti ei sido pysäköityjä raitiovaunuja kohtaamis- tai ohitusaiheeseen; kuva on yleiskuva.
+- none
 
 ## Checked
-- batch delta review: opened shots 1280/360 (trams) at 360 and 1280 px; photo loads, no clipping or overflow, credit line present, alt and caption natural Finnish, no plain number+unit.
+- Light delta review: diff read; changed passages opened at 360-390 px (fy4-12-stage-selita-390-3): added sentences on first-degree equation render cleanly, graph and displays intact.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

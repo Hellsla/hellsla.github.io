@@ -599,11 +599,11 @@ F_\text{d} &= 2F_1 \\
 
 <!-- vaihe -->
 
-**Result.** The air resistance is $96\,\text{kN}$, or $9.6\cdot 10^{4}\,\text{N}$, and it points backwards. The precision is two significant figures like the force of the engine $48\,\text{kN}$.
+**Result.** The air resistance is $96\,\text{kN}$, or $9.6\cdot 10^{4}\,\text{N}$, and it points backwards. The engine force $48\,\text{kN}$ is taken as an exact value, so the air resistance $96\,\text{kN}$ is an exact value of this model and needs no rounding.
 
 <!-- vaihe -->
 
-**Reasonableness.** If the air resistance were smaller than the thrusts, the net force would point forwards and the aircraft would accelerate; if it were larger, the aircraft would slow down. Constant velocity is possible only when the air resistance is as large as the sum of the thrusts $2\cdot 48\,\text{kN}$. The result does not depend on the magnitude of the velocity: the same reasoning holds for all constant velocities.
+**Reasonableness.** If the air resistance were smaller than the thrusts, the net force would point forwards and the aircraft would accelerate; if it were larger, the aircraft would slow down. Constant velocity is possible only when the air resistance is as large as the sum of the thrusts $2\cdot 48\,\text{kN}$. The same reasoning holds for all constant velocities: the sum of the thrust and the air resistance is always zero. The magnitudes of the forces can still differ at different speeds, because air resistance grows as the speed grows, so a greater constant speed also needs a greater thrust.
 
 ## Common misconception
 Many people think that a force must act on a moving object in the direction of motion and that the motion ends when this force "wears out". According to the first law this is not so: no force acts forwards on a sliding curling stone, and it slows down only because of friction. Another common error is to think that a force and its reaction force cancel each other. They act on different objects: a horse pulls a cart and the cart pulls the horse, but the motion of the cart is decided only by the forces acting on the cart. A third error is to take the weight of a book resting on a table and the normal force of the table as a force and its reaction force. They are equally large because of the first law. The reaction force of the normal force is the force of the book on the table, and the reaction force of the weight is the gravitational force of the book on the Earth.

@@ -645,7 +645,7 @@ t = \frac{-v_0 + \sqrt{v_0^2 + 2a\,\Delta x}}{a}
 
 <!-- vaihe -->
 
-**Result.** The descent takes about $9.4\,\text{s}$, and the velocity at the bottom is about $8.7\,\text{m/s}$. Two significant figures, like the initial velocity $4.0\,\text{m/s}$, the acceleration $0.50\,\text{m/s}^2$ and the distance $60\,\text{m}$. The other solution of the formula, $t \approx -25\,\text{s}$, is rejected because the motion starts at $t = 0$.
+**Result.** The descent takes about $9.4\,\text{s}$, and the velocity at the bottom is about $8.7\,\text{m/s}$. Two significant figures, like the initial velocity $4.0\,\text{m/s}$ and the acceleration $0.50\,\text{m/s}^2$. The distance $60\,\text{m}$ is taken as an exact value. The other solution of the formula, $t \approx -25\,\text{s}$, is rejected because the motion starts at $t = 0$.
 
 <!-- vaihe -->
 
@@ -657,6 +657,6 @@ Many people think that the acceleration is zero whenever the velocity is zero. A
 ## Summary
 - Acceleration $a = \tfrac{\Delta v}{\Delta t}$ tells you the change in velocity per unit of time, with the unit $\text{m/s}^2$. It is a vector quantity, and on a straight line its sign tells the direction.
 - The speed increases when the acceleration and the velocity point in the same direction, and decreases when they point in opposite directions.
-- In uniformly accelerated motion the $(t,v)$ graph is a straight line whose slope is the acceleration and whose area against the time axis is the displacement; the part below the time axis ($v < 0$) is counted as negative.
+- In uniformly accelerated motion the $(t,v)$ graph is a straight line whose slope is the acceleration and whose signed area between it and the time axis is the displacement; the part below the time axis ($v < 0$) is counted as negative.
 - $v = v_0 + a\,t$ and $x = x_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2$. The $(t,x)$ graph is a curve, and the instantaneous velocity is the slope of its tangent.
 - In free fall the acceleration is $g = 9.81\,\text{m/s}^2$ downwards. It can be determined by fitting a quadratic polynomial to the measured points: $a = 2A$.

@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 6aace4bb9c76d591
+CONTENT-HASH: c6dcfbc54a32b382
+Mode: delta (wording: undisturbed wind through the swept area)
 
 ## Blocking
 
 ## Polish
-- Correct option's feedback is the shortest (165 vs 203–323 characters); mild, add one sentence of method if wanted.
-- Same scenario and chain as the worked example (unchanged note).
+- exercises.json L1-04 — "pyyhkäisypinta-alan läpi kulkevan häiriöttömän tuulen teho" is a heavy phrase for a level-1 question. — Keep, but the lesson gloss (see lesson report) should come first.
+- solutions.md:227 (L2-08 Järkevyys) — "Tuulen teho on P : η ≈ 4,9 MW" — say "vertailuteho / reference power" to match the Periaate.
 
 ## Checked
-- Round 3, text only; no render, widths not measured.
-- Solution paragraph and both feedbacks now agree: v² keeps only energy per kilogram (mass flow forgotten), v keeps only the mass flow; P = η·½v²·ρAv written out, which makes the argument followable. 20 kW, 0,2 MW, 90 MW (47 x) and 1,96 MW recomputed.
-- Options 14–18 characters, correct not marked; warned doubling-wind mistake covered; lesson example 2,3 MW cross-check right.
-- Hash at start 6aace4bb9c76d591, at end 6aace4bb9c76d591.
+- Diff only; text read, nothing rendered.
+- L1-04, L2-02, L2-08 task texts, the two L2-08 distractor feedbacks and the solution Periaate paragraphs now use one consistent account (undisturbed wind, reference power) and agree with the lesson.
+- No answer, number or level changed; the questions still end with the question sentence; no new trap beyond what the lesson now teaches.
+- Distractor feedback still names the factor kept and the factor forgotten.

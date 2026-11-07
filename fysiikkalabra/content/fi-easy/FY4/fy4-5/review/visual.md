@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 1fe0666fb51e7d2e
+CONTENT-HASH: 96142a8465153f10
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] sim controls (sim-390) — the checkbox of "Näytä voiman F komponentit" sits above its label — align it inline.
-- [Minor] fig-5 (kuva 10, ilmapallo) — arrow labels are about 8–9 px at 390 and F_noste crowds the neighbouring arrow — move apart or enlarge slightly.
+- none
 
 ## Checked
-- Delta (only figures.json changed: new entries for exercise option figures pick-*; every pre-existing entry is byte-identical, only the old last entry gained a comma). Lesson page, figures and texts unchanged.
-- contact-1 sheet (top, sim, fig-1, fig-8, fig-10 four situations, fig-12, fig-16 at 390); the new pick-* texts occur only in the exercise-set figures, none in a lesson figure; all lesson figures render as before, colours unchanged (force red, velocity blue).
-- Rebuilt via scripts/build.py fy4-5 (screenshot.py); page overflow at 390 px measured after the page scripts ran: scrollWidth 390 = clientWidth 390, no horizontal scroll.
+- Delta review (editorial correction round, light, teacher 2026-11-07). lesson.md diff read (Tulos, Järkevyys): all quantities in LaTeX, 35^\circ correct, decimal comma. Text-only edit, captures current.
+- Plain Finnish: new sentences short and concrete, terms as in the glossary; mathematical typography: \cdot, colon for division, decimal comma, units upright in inline LaTeX; no plain-text quantity in the changed text.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

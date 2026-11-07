@@ -9,6 +9,6 @@
   },
   {
     "q": "Why does the power of a wind turbine stop growing when the wind becomes stronger than the speed at which the turbine reaches the top of its power curve?",
-    "a": "The turbine has reached its rated power, which the generator cannot exceed. The blades are turned so that part of the wind passes by, so the fraction of the wind's power that becomes electricity decreases as the wind strengthens, and the power stays constant."
+    "a": "The turbine has reached its rated power, which the generator cannot exceed. The blades are turned so that part of the wind passes by, so the fraction of the wind's power that becomes electricity decreases as the wind strengthens, and the power stays at the rated power. This does not go on without limit: when the wind exceeds the cut-out speed of the turbine, the turbine is stopped to protect its structure, and the power drops to zero."
   }
 ]

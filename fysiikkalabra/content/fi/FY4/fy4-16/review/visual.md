@@ -2,10 +2,13 @@ VERDICT: PASS
 CONTENT-HASH: 5120e9b665464081
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- batch delta review: tool-choice paragraph with the third-tool sentence; built page and scripts/screenshot.py fy4-16 (captures current), changed passages opened at 390 px (j-390-0): clean wrapping, KaTeX renders, no inline formula wraps, no clipping, no horizontal scroll. Diff read; the rest of the lesson unchanged.
+- Delta had no diff (hash 5120e9b665464081 equals the hash of my previous PASS), so the earlier report stands; nothing changed to look at.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

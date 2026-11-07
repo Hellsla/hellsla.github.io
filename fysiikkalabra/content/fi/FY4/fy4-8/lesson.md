@@ -363,20 +363,22 @@ Ketjuhissi nostaa junan ensimmäisen mäen huipulle. Sen jälkeen junalla on vai
 ## Kaava: Mekaniikan energiaperiaate
 
 ### Työ ja liike-energia
-Kun kappale siirtyy suoraviivaisesti matkan $s$ ja siihen vaikuttaa vakiovoima $\overline{F}$, voiman tekemä työ on
+Kun kappale liikkuu suoraviivaisesti samaan suuntaan matkan $s$ ja siihen vaikuttaa vakiovoima $\overline{F}$, voiman tekemä työ on
 ```latex
 W = F_\parallel\, s
 ```
 missä $F_\parallel$ on voiman liikkeen suuntainen komponentti ($\text{N}$), negatiivinen silloin, kun komponentti osoittaa liikettä vastaan, ja $s$ kuljettu matka ($\text{m}$). Työn yksikkö on $1\,\text{N}\cdot\text{m} = 1\,\text{J}$.
 
-Kun kappaleeseen vaikuttaa liikkeen suuntainen vakio kokonaisvoima $\Sigma F$, se kiihtyy tasaisesti, ja sen kiihtyvyys on $a = \tfrac{\Sigma F}{m}$. Luvussa *Kiihtyvyys ja tasaisesti kiihtyvä liike* opit, että tasaisesti kiihtyvässä liikkeessä kiihtyvyys on $a = \tfrac{v_2 - v_1}{t}$ ja kuljettu matka on keskinopeus kertaa aika, $s = \tfrac{v_1 + v_2}{2}\,t$. Kun nämä kerrotaan keskenään, aika supistuu pois:
+Kun kappale liikkuu $x$-akselia pitkin ja siihen vaikuttaa akselin suuntainen vakio kokonaisvoima $\Sigma F_x$, se kiihtyy tasaisesti, ja sen kiihtyvyys on $a = \tfrac{\Sigma F_x}{m}$. Luvussa *Kiihtyvyys ja tasaisesti kiihtyvä liike* opit, että tasaisesti kiihtyvässä liikkeessä kiihtyvyys on $a = \tfrac{v_2 - v_1}{t}$ ja siirtymä on keskinopeus kertaa aika, $\Delta x = \tfrac{v_1 + v_2}{2}\,t$. Nopeudet $v_1$ ja $v_2$ ovat tässä etumerkillisiä: negatiivinen nopeus tarkoittaa liikettä akselin negatiiviseen suuntaan. Kun yhtälöt kerrotaan keskenään, aika supistuu pois:
 ```latex
 \begin{aligned}
-&a s = \frac{v_2 - v_1}{t} \cdot \frac{v_1 + v_2}{2}\,t \\
-&\phantom{as} = \tfrac12 \left(v_2^2 - v_1^2\right)
+&a\,\Delta x = \frac{v_2 - v_1}{t} \cdot \frac{v_1 + v_2}{2}\,t \\
+&\phantom{a\,\Delta x} = \tfrac12 \left(v_2^2 - v_1^2\right)
 \end{aligned}
 ```
-Kun yhtälö kerrotaan puolittain massalla $m$ ja sijoitetaan $ma = \Sigma F$, saadaan $\Sigma F\, s = \tfrac{1}{2} m v_2^2 - \tfrac{1}{2} m v_1^2$. Kokonaisvoiman tekemä työ on siis yhtä suuri kuin liike-energian muutos:
+Kun yhtälö kerrotaan puolittain massalla $m$ ja sijoitetaan $ma = \Sigma F_x$, saadaan $\Sigma F_x\, \Delta x = \tfrac{1}{2} m v_2^2 - \tfrac{1}{2} m v_1^2$ eli $\Sigma F_x\, \Delta x = \Delta E_\text{k}$.
+
+Siirtymä $\Delta x$ ei ole sama asia kuin kuljettu matka $s$. Jos kappale liikkuu koko ajan samaan suuntaan, siirtymän itseisarvo on yhtä suuri kuin kuljettu matka, ja kokonaisvoiman työ on $\Sigma F_\parallel\, s$. Jos kappale kääntyy, kuten ylös heitetty pallo, kuljettu matka on siirtymää pidempi. Vakiovoiman työ lasketaan silloin siirtymästä, $W = F_x\, \Delta x$, tai osissa niin, että jokaisella osuudella liike on yhteen suuntaan. Kitka ja ilmanvastus sen sijaan kääntyvät liikkeen mukana, joten niiden työ on aina negatiivinen, ja sen itseisarvo kasvaa kuljetun matkan mukana. Kummassakin tapauksessa kokonaisvoiman tekemä työ on yhtä suuri kuin liike-energian muutos:
 ```latex
 W_\text{kok} = \Delta E_\text{k}
 ```
@@ -479,7 +481,7 @@ Toinen virhe on sanoa, että kitka hävittää energiaa. Kitka pienentää mekaa
 
 ## Tiivistelmä
 - Mekaaninen energia $E_\text{mek} = E_\text{k} + E_\text{p}$ säilyy, kun vain paino tekee työtä eli kitkan ja ilmanvastuksen voi jättää huomiotta eikä mikään vedä tai työnnä. Tukivoima ei tee työtä, koska se on kohtisuorassa liikettä vastaan.
-- Voima tekee työtä liikkeen suuntaisella komponentillaan, $W = F_\parallel s$: positiivista liikkeen suuntaan ja negatiivista liikettä vastaan.
+- Voima tekee työtä liikkeen suuntaisella komponentillaan, $W = F_\parallel s$, kun kappale liikkuu yhteen suuntaan: positiivista liikkeen suuntaan ja negatiivista liikettä vastaan.
 - Kokonaisvoiman tekemä työ on yhtä suuri kuin liike-energian muutos, $W_\text{kok} = \Delta E_\text{k}$.
 - Energiaperiaate: mekaanisen energian muutos on muiden voimien kuin painon tekemä työ, $\Delta E_\text{mek} = W_\text{muut}$. Kitka ja ilmanvastus muuttavat mekaanista energiaa sisäenergiaksi, ja kokonaisenergia säilyy.
 - Paino on konservatiivinen voima, koska sen työ riippuu vain korkeuserosta. Kitka ja ilmanvastus ovat ei-konservatiivisia voimia, koska niiden työ kasvaa kuljetun matkan mukana.

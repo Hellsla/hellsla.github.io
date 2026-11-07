@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: a935be65a072cbc5
+CONTENT-HASH: a158a19c96763680
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- Pitkä virke 'Samanmassaisen matkustajan...' on raskas; jaa kahtia.
 
 ## Checked
-batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.
+- Light delta review (teacher 2026-11-07): judged `git diff origin/main` of fy4-11 fi-easy (short sentences, plain wording; reading level fits).
+- Otsikko 'Sama liikemäärän muutos, eri törmäysaika' ja ehdollinen muotoilu (sama alku- ja loppunopeus) poistavat harhaanjohtavan 'aina sama'; tuulilasivirke pitää tosimaailman rajauksen. Yhdenmukainen virhekappaleen ja tiivistelmän kanssa; mikään ei paljasta tutkimuskysymyksen vastausta.
+- Consistency with summary, goals and inquiry feedback: no contradictions; untouched content passed earlier reviews.
+- Hash at start and end a158a19c96763680.

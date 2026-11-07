@@ -645,7 +645,7 @@ t = \frac{-v_0 + \sqrt{v_0^2 + 2a\,\Delta x}}{a}
 
 <!-- vaihe -->
 
-**Tulos.** Alamäen laskeminen kestää noin $9{,}4\,\text{s}$, ja nopeus mäen alla on noin $8{,}7\,\text{m/s}$. Kaksi merkitsevää numeroa, kuten alkunopeudessa $4{,}0\,\text{m/s}$, kiihtyvyydessä $0{,}50\,\text{m/s}^2$ ja matkassa $60\,\text{m}$. Ratkaisukaavan toinen ratkaisu $t \approx -25\,\text{s}$ hylätään, koska liike alkaa hetkellä $t = 0$.
+**Tulos.** Alamäen laskeminen kestää noin $9{,}4\,\text{s}$, ja nopeus mäen alla on noin $8{,}7\,\text{m/s}$. Kaksi merkitsevää numeroa, kuten alkunopeudessa $4{,}0\,\text{m/s}$ ja kiihtyvyydessä $0{,}50\,\text{m/s}^2$. Matka $60\,\text{m}$ tulkitaan tarkaksi arvoksi. Ratkaisukaavan toinen ratkaisu $t \approx -25\,\text{s}$ hylätään, koska liike alkaa hetkellä $t = 0$.
 
 <!-- vaihe -->
 
@@ -657,6 +657,6 @@ Moni ajattelee, että kiihtyvyys on nolla aina, kun nopeus on nolla. Ylös heite
 ## Tiivistelmä
 - Kiihtyvyys $a = \tfrac{\Delta v}{\Delta t}$ kertoo nopeuden muutoksen aikayksikössä, yksikkö $\text{m/s}^2$. Se on vektorisuure, ja suoralla etumerkki kertoo suunnan.
 - Vauhti kasvaa, kun kiihtyvyys ja nopeus ovat samansuuntaiset, ja pienenee, kun ne ovat vastakkaissuuntaiset.
-- Tasaisesti kiihtyvässä liikkeessä $(t,v)$-kuvaaja on suora, jonka kulmakerroin on kiihtyvyys ja jonka ja aika-akselin välinen pinta-ala on siirtymä; aika-akselin alapuolinen osa ($v < 0$) lasketaan negatiivisena.
+- Tasaisesti kiihtyvässä liikkeessä $(t,v)$-kuvaaja on suora, jonka kulmakerroin on kiihtyvyys ja jonka ja aika-akselin väliin jäävä etumerkillinen pinta-ala on siirtymä; aika-akselin alapuolinen osa ($v < 0$) lasketaan negatiivisena.
 - $v = v_0 + a\,t$ ja $x = x_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2$. $(t,x)$-kuvaaja on käyrä, ja hetkellinen nopeus on sen tangentin kulmakerroin.
 - Vapaassa pudotuksessa kiihtyvyys on $g = 9{,}81\,\text{m/s}^2$ alaspäin. Sen voi määrittää sovittamalla mittauspisteisiin toisen asteen polynomin: $a = 2A$.

@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 3bf3246b520a33de
+CONTENT-HASH: 494c46b1e7d36455
 
 ## Blocking
-(none)
 
 ## Polish
-- meta.json key_concepts — only three; the central idea (coupled bodies share one acceleration) is missing, glossary permitting add "kytketyt kappaleet: Kappaleet, jotka liikkuvat yhdessä, joten niillä on sama kiihtyvyys."
+- 'kunhan kappaleiden suunnat sopivat yhteen langan kanssa' on abstrakti; esimerkki (toinen nousee, toinen laskee) selkeyttäisi.
 
 ## Checked
-batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.
+- Light delta review (teacher 2026-11-07): judged `git diff origin/main` of fy4-13 fi-easy (short sentences, plain wording; reading level fits).
+- Oletetun positiivisen suunnan sääntö, negatiivinen ratkaisu ja kitkavaroitus ovat ymmärrettäviä ja yhdenmukaisia tiivistelmän kanssa; tukee itsenäistä voimakuvioiden käyttöä.
+- Consistency with summary, goals and inquiry feedback: no contradictions; untouched content passed earlier reviews.
+- Hash at start and end 494c46b1e7d36455.

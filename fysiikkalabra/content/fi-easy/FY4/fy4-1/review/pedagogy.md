@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 3bf40868749c04fd
+CONTENT-HASH: f16e1c51bf39d505
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.
+- Kevyt delta-katselmointi (opettaja 2026-11-07): diff origin/main -muutokset arvioitu ja niiden johdonmukaisuus tavoitteiden, yhteenvedon ja ratkaisujen kanssa.
+- Kulmakertoimen kuvaus erottaa nyt vauhdin (itseisarvo) ja suunnan (etumerkki); yhtenevä sanaston ja nopeus/vauhti-erottelun kanssa. Tulos-kohta: kokonaisluvut tarkkoja, ei pyöristystä; johdonmukainen opettajan säännön kanssa, ei jää ristiriitaa yhteenvedon kanssa.
+- Kokonaisluvut tehtävätiedoissa tulkitaan tarkoiksi (opettajan sääntö); teksti sanoo tämän käyttöpaikalla. Muutos ei paljasta vastausta ennen toimintaa eikä vaikuta palautteeseen, ennusteisiin tai kokeisiin.
+- Muu sisältö ennallaan (aiemmin hyväksytty). ESCALATE-tarvetta ei ole.

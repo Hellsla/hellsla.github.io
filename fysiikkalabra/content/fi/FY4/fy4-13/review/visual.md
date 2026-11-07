@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 4f8a1e9ed25edc2e
+CONTENT-HASH: 6add813177ef7122
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] Kuvan laitteessa on kalteva taso, mutta luvun kärry on vaakasuoralla pöydällä; kuvatekstiin voisi lisätä, että luvun tilanteessa taso on vaakasuora.
+- none
 
 ## Checked
-- batch delta review: opened shots 1280/360 (inclined plane apparatus) at 360 and 1280 px; photo loads, no clipping or overflow, credit line present, alt and caption natural Finnish, no plain number+unit.
+- Light delta review: diff read; changed passages opened at 360-390 px (fy4-13-stage-selita-390-3): enlarged numbered step 2 and step 3 wrap cleanly, a and T inline maths on one line, figure and displays intact.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

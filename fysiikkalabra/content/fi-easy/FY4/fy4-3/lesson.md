@@ -599,11 +599,11 @@ F_\text{v} &= 2F_1 \\
 
 <!-- vaihe -->
 
-**Tulos.** Ilmanvastus on $96\,\text{kN}$ eli $9{,}6\cdot 10^{4}\,\text{N}$, ja se osoittaa taaksepäin. Tarkkuus on kaksi merkitsevää numeroa, kuten moottorin voimassa $48\,\text{kN}$.
+**Tulos.** Ilmanvastus on $96\,\text{kN}$ eli $9{,}6\cdot 10^{4}\,\text{N}$, ja se osoittaa taaksepäin. Moottorin voima $48\,\text{kN}$ on tarkka arvo. Siksi ilmanvastus $96\,\text{kN}$ on tämän mallin tarkka arvo, eikä sitä tarvitse pyöristää.
 
 <!-- vaihe -->
 
-**Järkevyys.** Jos ilmanvastus olisi työntövoimia pienempi, kokonaisvoima osoittaisi eteenpäin ja kone kiihtyisi. Jos ilmanvastus olisi suurempi, kone hidastuisi. Tasainen nopeus on mahdollinen vain, kun ilmanvastus on yhtä suuri kuin työntövoimien summa $2\cdot 48\,\text{kN}$. Tulos ei riipu nopeuden suuruudesta. Sama päättely pätee kaikilla tasaisilla nopeuksilla.
+**Järkevyys.** Jos ilmanvastus olisi työntövoimia pienempi, kokonaisvoima osoittaisi eteenpäin ja kone kiihtyisi. Jos ilmanvastus olisi suurempi, kone hidastuisi. Tasainen nopeus on mahdollinen vain, kun ilmanvastus on yhtä suuri kuin työntövoimien summa $2\cdot 48\,\text{kN}$. Sama päättely pätee kaikilla tasaisilla nopeuksilla: työntövoiman ja ilmanvastuksen summa on aina nolla. Voimien suuruudet voivat silti olla eri nopeuksilla erilaiset. Ilmanvastus kasvaa, kun nopeus kasvaa. Siksi suurempi tasainen nopeus tarvitsee myös suuremman työntövoiman.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että liikkuvaan kappaleeseen täytyy vaikuttaa voima liikkeen suuntaan. Moni ajattelee myös, että liike loppuu, kun tämä voima "kuluu loppuun". Ensimmäisen lain mukaan näin ei ole. Liukuvaan curlingkiveen ei vaikuta mikään eteenpäin, ja se hidastuu vain kitkan takia.

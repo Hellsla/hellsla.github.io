@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 4a96f7d2a023f9a0
+CONTENT-HASH: 4ae8996762a31242
 
 ## Blocking
 - none
@@ -8,4 +8,7 @@ CONTENT-HASH: 4a96f7d2a023f9a0
 - none
 
 ## Checked
-- batch delta review: opened shots 1280/360 (highway-light-trails) at 360 and 1280 px; photo loads, no clipping or overflow, credit line present, alt and caption natural Finnish, no plain number+unit.
+- Light delta review: diff read; changed passages opened at 360-390 px (fy4-1-example-390-2: Tulos step; theory paragraph text checked in source): KaTeX renders, no inline formula wraps, no clipping, no plain number+unit.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

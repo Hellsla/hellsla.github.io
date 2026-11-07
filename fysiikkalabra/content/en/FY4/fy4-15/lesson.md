@@ -234,7 +234,7 @@ Not all the energy the water loses becomes electricity. The water rubs against t
 where $\eta$ (eta) is the efficiency, given as a decimal number or as a percentage. Efficiency is at most $100\,\%$. In real devices it is usually below $100\,\%$, because part of the energy taken in does not end up in the intended useful form, here electricity. The efficiency of a large hydropower plant is about $90\,\%$.
 
 ### The kinetic energy of the wind
-In a wind turbine the source of energy is the kinetic energy of moving air, $E_\text{k} = \tfrac{1}{2}mv^2$. The wind pushes on the rotor blades and makes the rotor turn, and the air slows down as it passes the rotor. The rotor cannot stop the air completely, because the air must be able to flow away behind the rotor. So even an ideal rotor can capture only about $59\,\%$ of the power of the wind flowing through it, and a real wind turbine captures less than half. Air is light: a cubic metre has a mass of only about $1.25\,\text{kg}$. This is why the rotor of a wind turbine has to be large, so that a lot of air flows through it every second.
+In a wind turbine the source of energy is the kinetic energy of moving air, $E_\text{k} = \tfrac{1}{2}mv^2$. The wind pushes on the rotor blades and makes the rotor turn, and the air slows down as it passes the rotor. The rotor cannot stop the air completely, because the air must be able to flow away behind the rotor. So even an ideal rotor can capture only about $59\,\%$ of the power that the undisturbed wind carries through the area swept by the rotor, and a real wind turbine captures less than half. Air is light: a cubic metre has a mass of only about $1.25\,\text{kg}$. This is why the rotor of a wind turbine has to be large, so that a lot of air flows through it every second.
 
 <figure class="unit-photo"><img src="pics/fy4/middelgrunden-wind-farm.webp" alt="White wind turbines behind a breakwater against a blue sky. Open sea and a few boats are in the foreground."><figcaption>The Middelgrunden offshore wind farm off Copenhagen, Denmark, photographed from a boat.</figcaption></figure>
 
@@ -248,9 +248,11 @@ P = \eta \rho Q g h
 where $P$ is the electric power of the plant ($\text{W}$), $\eta$ the efficiency, $\rho$ the density of water ($1000\,\text{kg/m}^3$), $Q$ the flow rate ($\text{m}^3\text{/s}$), $g$ the acceleration due to gravity ($9.81\,\text{m/s}^2$) and $h$ the head ($\text{m}$). The formula assumes that the kinetic energy of the water in the upper and lower water is small, so the energy that is converted is the change in potential energy.
 
 ### Wind power
-In time $t$ the air flowing through the rotor fills a cylinder whose cross-sectional area is the area swept by the rotor, $A = \pi r^2$, and whose length is $vt$. The mass of this air is $m = \rho A v t$, and its kinetic energy is $\tfrac{1}{2}mv^2 = \tfrac{1}{2}\rho A v^3 t$. So the power of the wind flowing through the rotor is $\tfrac{1}{2}\rho A v^3$.
+Consider first the undisturbed wind, that is, the wind before the rotor has slowed it down. In time $t$ the undisturbed wind of speed $v$ would carry through the area swept by the rotor, $A = \pi r^2$, the air that fills a cylinder of length $vt$. The mass of this air is $m = \rho A v t$, and its kinetic energy is $\tfrac{1}{2}mv^2 = \tfrac{1}{2}\rho A v^3 t$. So the power flow of the undisturbed wind through the swept area is $P_\text{wind} = \tfrac{1}{2}\rho A v^3$.
 
-<svg data-fig="ilmalierio" viewBox="0 0 600 360" role="img" aria-label="Schematic, not to scale: the wind blows from the left towards the rotor of a wind turbine. In time t the air flowing through the rotor fills a cylinder. The cross-sectional area of the cylinder is the area swept by the rotor, A = πr², and its length is s = vt, so the mass of the air is m = ρAvt. The blue arrow is the wind speed v." style="max-width:100%;font-size:24px">
+In reality the rotor slows the air down already before the blades, so at the rotor the air flows more slowly than $v$, and its mass flow is not $\rho A v$. Therefore $P_\text{wind}$ is a reference power: it tells how much energy per second would pass through an area of the same size without the turbine. The efficiency $\eta$ of the turbine is defined as a fraction of this reference power, $\eta = P : P_\text{wind}$.
+
+<svg data-fig="ilmalierio" viewBox="0 0 600 360" role="img" aria-label="Schematic, not to scale: the wind blows from the left towards the rotor of a wind turbine. In time t the undisturbed wind would carry air through the area swept by the rotor, and this air would fill a cylinder. The cross-sectional area of the cylinder is the area swept by the rotor, A = πr², and its length is s = vt, so the mass of the air would be m = ρAvt. The blue arrow is the wind speed v." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy415-ilc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef5f9"/><stop offset="1" stop-color="#d0e6fb"/></linearGradient></defs>
   <path d="M150,70 H420 V270 H150 Z" fill="url(#fy415-ilc)" stroke-linejoin="round"/>
   <ellipse cx="150" cy="170" rx="24" ry="100" fill="#d0e6fb" stroke="#1971c2" stroke-width="2"/>
@@ -292,14 +294,16 @@ In time $t$ the air flowing through the rotor fills a cylinder whose cross-secti
   <foreignObject x="488" y="93.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$A = \pi r^2$</div></foreignObject>
 </svg>
 
-The turbine converts the fraction $\eta$ of this into electricity:
+So the electric power is:
 ```latex
 P = \frac{1}{2}\eta \rho A v^3
 ```
-where $P$ is the electric power ($\text{W}$), $\eta$ the fraction of the wind's power that becomes electricity, that is the efficiency of the turbine, $\rho$ the density of air (about $1.25\,\text{kg/m}^3$), $A$ the area swept by the rotor ($\text{m}^2$) and $v$ the wind speed ($\text{m/s}$).
+where $P$ is the electric power ($\text{W}$), $\eta$ the efficiency of the turbine, that is, the electric power as a fraction of the reference power of the undisturbed wind, $\rho$ the density of air (about $1.25\,\text{kg/m}^3$), $A$ the area swept by the rotor ($\text{m}^2$) and $v$ the speed of the undisturbed wind ($\text{m/s}$).
 
 ### Why is the speed raised to the third power?
-When the wind speed doubles, twice as much air flows through the rotor each second, and each kilogram of air has four times as much kinetic energy. So the power grows by a factor of $2 \cdot 4 = 2^3 = 8$. In the power curve of a real turbine, the power grows about $8.9$ times when the wind speed goes from $5\,\text{m/s}$ to $10\,\text{m/s}$, because the efficiency is slightly better at the higher speed. From a wind of about $13\,\text{m/s}$ on, the power stays at $1650\,\text{kW}$. This is the rated power of the turbine, which the generator cannot exceed, so the blades are turned to let part of the wind pass by. Then the formula with a constant efficiency no longer describes the turbine.
+When the wind speed doubles, twice as much air passes through the swept area each second, and each kilogram of air has four times as much kinetic energy. So the reference power grows by a factor of $2 \cdot 4 = 2^3 = 8$. The electric power grows in the same ratio only in a model where the efficiency stays roughly constant. In the power curve of a real turbine, the power grows about $8.9$ times when the wind speed goes from $5\,\text{m/s}$ to $10\,\text{m/s}$, because the efficiency is slightly better at the higher speed.
+
+A real turbine also has three ranges of wind speed that the cubic model does not describe. In a wind weaker than the cut-in speed, for this turbine about $3\text{–}4\,\text{m/s}$, the turbine produces no electricity. From a wind of about $13\,\text{m/s}$ on, the power stays at $1650\,\text{kW}$. This is the rated power of the turbine, which the generator cannot exceed, so the blades are turned to let part of the wind pass by. Then the formula with a constant efficiency no longer describes the turbine. In a storm wind stronger than the cut-out speed the turbine is stopped to protect its structure, and its power drops to zero.
 
 <svg data-fig="tehokayra" viewBox="0 0 600 340" role="img" aria-label="Graph to scale, the power curve given by the manufacturer: the electric power P of a wind turbine in kilowatts as a function of the wind speed v, for a rotor diameter of 82 m. Points: 3 m/s 0 kW, 4 m/s 28 kW, 5 m/s 144 kW, 6 m/s 309 kW, 7 m/s 511 kW, 8 m/s 758 kW, 9 m/s 1017 kW, 10 m/s 1285 kW, 11 m/s 1504 kW, 12 m/s 1637 kW and 13–20 m/s 1650 kW. The dashed line is the model curve ½ηρAv³ for η = 0.45: it rises like the points but keeps rising when the points level off at 1650 kilowatts." style="max-width:100%;font-size:24px">
   <line x1="133.5" y1="296" x2="133.5" y2="50" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -379,8 +383,10 @@ When the wind speed doubles, twice as much air flows through the rotor each seco
   <foreignObject x="338" y="86" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{power curve}$</span></div></foreignObject>
 </svg>
 
+The points of the graph are the manufacturer's power curve of the Vestas V82 wind turbine (rotor diameter $82\,\text{m}$, rated power $1650\,\text{kW}$). A manufacturer's power curve is given for standard conditions, usually an air density of $1.225\,\text{kg/m}^3$ and ten-minute average winds at hub height. The dashed model curve is calculated with the density $1.25\,\text{kg/m}^3$, so the comparison is approximate. In too strong a wind the turbine is stopped, and its power drops to zero; the graph does not show this region. Source: Vestas Wind Systems, technical data of the V82 turbine; values from the NREL turbine archive (turbine-models, Vestas V82).
+
 ## Worked example
-The rotor of a wind turbine has a diameter of $120\,\text{m}$. The wind speed is $9.0\,\text{m/s}$ and the density of air is $1.25\,\text{kg/m}^3$. The turbine converts $45\,\%$ of the power of the wind flowing through the rotor into electricity. What is the electric power of the turbine?
+The rotor of a wind turbine has a diameter of $120\,\text{m}$. The wind speed is $9.0\,\text{m/s}$ and the density of air is $1.25\,\text{kg/m}^3$. The turbine converts into electricity $45\,\%$ of the power that the undisturbed wind carries through the area swept by the rotor. What is the electric power of the turbine?
 
 <!-- vaihe -->
 
@@ -388,7 +394,7 @@ The rotor of a wind turbine has a diameter of $120\,\text{m}$. The wind speed is
 
 <!-- vaihe -->
 
-**Principle.** Air flows through the rotor every second, and its kinetic energy per second is the power of the wind, $\tfrac{1}{2}\rho A v^3$. The turbine converts the fraction $\eta$ of it into electricity, so the electric power comes from the formula for the power of a wind turbine. The area $A$ is the circle swept by the rotor.
+**Principle.** The undisturbed wind carries the power $\tfrac{1}{2}\rho A v^3$ through the area swept by the rotor. The turbine converts the fraction $\eta$ of this reference power into electricity, so the electric power comes from the formula for the power of a wind turbine. The area $A$ is the circle swept by the rotor.
 
 <!-- vaihe -->
 
@@ -425,7 +431,7 @@ P &= \tfrac{1}{2}\eta\rho A v^3 \\
 
 <!-- vaihe -->
 
-**Reasonableness.** The turbine of the power curve, with a rotor diameter of $82\,\text{m}$, gives a power of $1017\,\text{kW}$ at a wind speed of $9\,\text{m/s}$. The area of this rotor is $(120 : 82)^2 \approx 2.1$ times as large, so the power should be about $2.1 \cdot 1.0\,\text{MW} \approx 2.2\,\text{MW}$. The result $2.3\,\text{MW}$ is of the same order of magnitude. The power of the wind is $5.2\,\text{MW}$, and less than half of it becomes electricity, as it should.
+**Reasonableness.** The turbine of the power curve, with a rotor diameter of $82\,\text{m}$, gives a power of $1017\,\text{kW}$ at a wind speed of $9\,\text{m/s}$. The area of this rotor is $(120 : 82)^2 \approx 2.1$ times as large, so the power should be about $2.1 \cdot 1.0\,\text{MW} \approx 2.2\,\text{MW}$. The result $2.3\,\text{MW}$ is of the same order of magnitude. The reference power of the undisturbed wind is $5.2\,\text{MW}$, and less than half of it becomes electricity, as it should.
 
 ## Common misconception
 People often think that a power plant produces energy. A power plant converts energy: the electricity of a hydropower plant comes from the potential energy of water and the electricity of a wind turbine from the kinetic energy of the wind, and some of the energy always turns into something other than electricity. A second mistake is to assume that double the wind gives double the power. The power grows with the third power of the speed, until the turbine reaches its rated power. A third mistake is to mix up power and energy: power is given in watts, and energy is obtained by multiplying power by time. A power plant with a power of $3\,\text{MW}$ produces $3\,\text{MWh}$ of energy in an hour.
@@ -434,5 +440,5 @@ People often think that a power plant produces energy. A power plant converts en
 - Hydro and wind power plants convert mechanical energy into electricity: a hydropower plant the potential energy of water, a wind turbine the kinetic energy of air.
 - The efficiency $\eta = \tfrac{P_\text{s}}{P_\text{o}}$ is at most $100\,\%$; for a large hydropower plant it is about $90\,\%$ and for a wind turbine below $50\,\%$.
 - The power of a hydropower plant is $P = \eta\rho Q g h$: it is proportional to the flow rate and the head.
-- The power of a wind turbine is $P = \tfrac{1}{2}\eta\rho A v^3$: double the wind speed gives about eight times the power, until the turbine reaches its rated power.
+- The power of a wind turbine is $P = \tfrac{1}{2}\eta\rho A v^3$: when the efficiency stays roughly constant, double the wind speed gives about eight times the power, until the turbine reaches its rated power. In a very strong wind the turbine is stopped.
 - Energy is power times time, $E = Pt$.

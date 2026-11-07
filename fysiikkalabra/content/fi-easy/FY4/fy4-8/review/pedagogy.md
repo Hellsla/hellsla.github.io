@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 46f1229065674ba9
+CONTENT-HASH: d14d9ed03047d517
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- Siirtymä/matka-kappale on tiivis; yksi lause ylös heitetyn pallon työstä (kokonaisvoima työ nolla, kun palaa) auttaisi lukiolaista.
 
 ## Checked
-batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.
+- Light delta review (teacher 2026-11-07): judged `git diff origin/main` of fy4-8 fi-easy (short sentences, plain wording; reading level fits).
+- Työn määritelmä rajattu yhteen suuntaan (x-akseli, etumerkilliset nopeudet, siirtymä Δx), ja uusi kappale erottaa siirtymän ja kuljetun matkan (ylös heitetty pallo, kitka). Johto pysyy seurattavana, tiivistelmä (W = F∥ s, kun liike yhteen suuntaan) on johdonmukainen.
+- Consistency with summary, goals and inquiry feedback: no contradictions; untouched content passed earlier reviews.
+- Hash at start and end d14d9ed03047d517.

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 545c0b76c44a88a1
+CONTENT-HASH: a158a19c96763680
 
 ## Blocking
 - none
@@ -8,4 +8,8 @@ CONTENT-HASH: 545c0b76c44a88a1
 - none
 
 ## Checked
-- batch delta review: "Luvun tärkeät käsitteet" panel captured from preview/fi-easy/fy4-11.html at 390 and 1280 px (the review/shots set has no capture of it) and opened — between the opening and stage 1, term bold over its explanation at 390 px, two-column at 1280 px, no clipping, no horizontal overflow, no KaTeX error; the edited lesson.md/inquiry.json sentences read in their diff (prose only, no new maths); top-390 opened in a montage (read-aloud "Kuuntele" button under the title, layout intact).
+- Delta review (editorial correction round, light, teacher 2026-11-07). lesson.md diff read (heading and Ydinajatus paragraph, myth paragraph, summary bullet): prose and inline maths only. Captures current, not re-opened.
+- Plain Finnish: new sentences short and concrete, terms as in the glossary; mathematical typography: \cdot, colon for division, decimal comma, units upright in inline LaTeX; no plain-text quantity in the changed text.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

@@ -343,7 +343,7 @@ Kun kappale siirtyy paikasta $x_1$ paikkaan $x_2$, sen **siirtymä** on paikan m
 
 <figure class="unit-photo"><img src="pics/fy4/highway-light-trails.webp" alt="Kaartuva moottoritie yöllä: punaisia ja valkoisia valojuovia, katuvaloja ja lumiset pientareet."><figcaption>Pitkällä valotusajalla otetussa yökuvassa ajoneuvojen valot piirtävät juovia. Punaiset juovat ovat takavaloja, valkoiset ajovaloja.</figcaption></figure>
 
-Liike voidaan esittää **$(t,x)$-kuvaajana**, jossa vaaka-akselilla on aika ja pystyakselilla paikka. Tasaisen liikkeen kuvaaja on suora. Suoran jyrkkyys eli kulmakerroin on nopeus: jyrkempi suora tarkoittaa suurempaa nopeutta, vaakasuora suora paikallaan oloa ja laskeva suora liikettä negatiiviseen suuntaan. Kuvaaja ei ole kuva kappaleen radasta: nouseva viiva ei tarkoita ylämäkeä, vaan sitä, että paikka kasvaa.
+Liike voidaan esittää **$(t,x)$-kuvaajana**, jossa vaaka-akselilla on aika ja pystyakselilla paikka. Tasaisen liikkeen kuvaaja on suora. Suoran kulmakerroin on nopeus. Mitä suurempi kulmakertoimen itseisarvo on, sitä suurempi on kappaleen vauhti, ja kulmakertoimen etumerkki kertoo liikkeen suunnan: nouseva suora tarkoittaa liikettä positiiviseen suuntaan, laskeva suora liikettä negatiiviseen suuntaan ja vaakasuora suora paikallaan oloa. Kuvaaja ei ole kuva kappaleen radasta: nouseva viiva ei tarkoita ylämäkeä, vaan sitä, että paikka kasvaa.
 
 ## Kaava: Keskinopeus ja tasaisen liikkeen yhtälö
 Kun paikka muuttuu aikavälillä $\Delta t = t_2 - t_1$ määrän $\Delta x$, keskinopeus on siirtymä jaettuna ajalla:
@@ -472,7 +472,7 @@ x &= x_1 + v\,t \\
 
 <!-- vaihe -->
 
-**Tulos.** Nopeus on $v = 2{,}5\,\text{m/s}$ ja paikka hetkellä $60\,\text{s}$ on $x = 170\,\text{m}$ eli $1{,}7 \cdot 10^2\,\text{m}$. Nopeudessa on kaksi merkitsevää numeroa, koska aikaväli $40\,\text{s}$ on kahdella numerolla. Paikassa tulo $2{,}5\,\text{m/s} \cdot 60\,\text{s} = 150\,\text{m}$ on myös kahdella numerolla, joten summa $20\,\text{m} + 150\,\text{m}$ tunnetaan vain kymmenien metrien tarkkuudella: $x = 1{,}7 \cdot 10^2\,\text{m}$.
+**Tulos.** Nopeus on $v = 2{,}5\,\text{m/s}$ ja paikka hetkellä $60\,\text{s}$ on $x = 170\,\text{m}$. Kuvaajasta luetut kokonaisluvut $0\,\text{s}$, $40\,\text{s}$, $20\,\text{m}$ ja $120\,\text{m}$ tulkitaan tarkoiksi arvoiksi, joten tuloksia ei tarvitse pyöristää: ne ovat tämän mallin tarkkoja arvoja.
 
 <!-- vaihe -->
 

@@ -1,11 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 439993a1b66dbd2f
+CONTENT-HASH: 2f28bfa475b316df
+
+Light delta review (teacher 2026-11-07): diff origin/main..f9cecc6 and what it touches.
 
 ## Blocking
 (none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- batch delta review, round 2 (diff f83714cd..b8a6e1bb): inertia key concept now 'nopeutta tai liikkeen suuntaa vaikea muuttaa', correct and consistent with the first law; no other content changed.
+- lesson.md:602 Tulos: 48 kN exact, so 96 kN = 2·48 kN exact, no rounding: follows the teacher's rule and matches fy4-1:475, fy4-4:602, fy4-5; earlier Blocking item resolved
+- lesson.md:606 Järkevyys: vector sum of thrust and air resistance zero at every constant velocity; air resistance grows with speed, so a greater speed needs a greater thrust: correct causality
+- 850 km/h correctly unused

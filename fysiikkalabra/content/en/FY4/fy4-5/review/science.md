@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: c7ea60d4d0773826
+CONTENT-HASH: 16469b344a7bcbfd
+
+Light delta review (teacher 2026-11-07): diff origin/main..f9cecc6 and what it touches.
 
 ## Blocking
+(none)
 
 ## Polish
-- Layout check (`check_layout.py fy4-5 --lang en`, 360 and 1280 px) reports a figure-label overlap "N / F_y" that is identical in the Finnish preview (generated figure, not translation text). The English caption of the generated component figure, "horizontal and vertical forces to different scales", is wider than its figure in en ("leaves the figure", 360 and 1280 px); it comes from the figure generator's English string, not from the content files, and is outside this review's files.
+(none)
 
 ## Checked
-- Delta `git diff a6af45ae` of fi, en and fi-easy for fy4-5; every changed passage compared with the Finnish: hook (two children take turns; pull vs push), model text (ice and friction neglected; rope force is tension usually T, here F because the simulation switches between pull and push), solution of the 50 N vertical-component task (G-N = 50 N, rounding to whole newtons, decimals not significant figures, G 196,2 / N 146,2 spec), exp-2 question "when the angle α > 0°", spec blocks beside the Voimakuvio steps of the inquiry solutions; lesson epigraph (sled presses on the ground/surface beneath it, not snow). Numbers, symbols, \overline vectors and decimal marks agree with the Finnish.
-- All `voimakuvio` blocks in inquiry.json and lesson.md identical to the Finnish (check_i18n enforces); `check_i18n.py` 0 errors; `build.py fy4-5` builds; `figures.py fy4-5 --lang en --check` up to date.
-- Delta since the last PASS (commit 63d2f6f8, shared sim.js force diagram enlarged, nested list in step 3 re-indented): lesson text differs only in whitespace (`git diff -w` empty), so the earlier comparison with the Finnish stands; `check_i18n.py` 0 errors, figures up to date.
-Delta (figures.json): F_noste -> F_b matches the buoyancy F_b of the balloon solution; no other mapped symbol; F_mu renders as F_mu in the diagrams as in the text. Lesson content unchanged since the last PASS.
-- Delta (figures.json): the 4 new pick-* figure entries (fy4-5: 4 force-diagram descriptions; fy4-12: 4 v(t) graph descriptions plus the re-keyed (t,x) description) compared with the Finnish strings drawn by figures.py; every number, unit, symbol (F, F_k, v, N, G), direction, arrow-length relation and intersection time (6.3 s, 8 s, 4 s) matches; English reads naturally with decimal point. Lesson content otherwise unchanged (git diff 88e803e touches only figures.json); figures.py up to date, check_i18n clean, build.py fy4-5 builds.
+- lesson.md:438 Tulos: a = (T cos α − F_μ)/m from exact values only, given to 3 s.f.; g limits only N (3 s.f.): earlier Blocking item resolved
+- Recomputed T_x = 65,53 N, T_y = 45,89 N, a = 2,961 m/s², N = 71,83 N
+- Järkevyys 71,8 + 45,9 ≈ 118 N, frictionless 5,5 m/s²: consistent; no stale 3,0 m/s² / 72 N in inquiry.json or exit ticket

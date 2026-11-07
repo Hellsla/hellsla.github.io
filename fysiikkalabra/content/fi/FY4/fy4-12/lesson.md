@@ -398,7 +398,7 @@ x &= x_0 + v_0\,t + \tfrac12\,a\,t^2 \\
 v &= v_0 + a\,t
 \end{aligned}
 ```
-missä $x_0$ on alkupaikka ($\text{m}$), $v_0$ alkunopeus ($\text{m/s}$), $a$ kiihtyvyys ($\text{m/s}^2$), $t$ aika ($\text{s}$) ja $v$ nopeus hetkellä $t$ ($\text{m/s}$). Kaavat pätevät, kun liike on suoraviivaista ja kiihtyvyys on vakio. Kahden tasaisen liikkeen yhtälö on ensimmäisen asteen yhtälö, joten kappaleet kohtaavat enintään kerran. Jos toinen kiihtyy, yhtälö on toisen asteen yhtälö, ja viivoilla voi olla kaksi leikkauspistettä.
+missä $x_0$ on alkupaikka ($\text{m}$), $v_0$ alkunopeus ($\text{m/s}$), $a$ kiihtyvyys ($\text{m/s}^2$), $t$ aika ($\text{s}$) ja $v$ nopeus hetkellä $t$ ($\text{m/s}$). Kaavat pätevät, kun liike on suoraviivaista ja kiihtyvyys on vakio. Kahden tasaisen liikkeen yhtälö on ensimmäisen asteen yhtälö. Jos paikkafunktiot ovat eri suoria, niillä on enintään yksi leikkauspiste, joten kappaleet kohtaavat enintään kerran. Jos paikkafunktiot ovat samat, kappaleet ovat samassa paikassa koko tarkastelun ajan. Jos toinen kiihtyy, yhtälö on toisen asteen yhtälö, ja viivoilla voi olla kaksi leikkauspistettä.
 
 Yksinkertaisin ohitus: auto lähtee levosta samasta paikasta, jossa pyöräilijä kulkee tasaisella nopeudella $v$. Autolle $x_\text{A} = \tfrac12 a t^2$ ja pyöräilijälle $x_\text{B} = v\,t$:
 ```latex

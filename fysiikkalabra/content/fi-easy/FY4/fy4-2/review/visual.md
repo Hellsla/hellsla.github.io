@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 2efbacf8bfa38382
+CONTENT-HASH: a86d4fd234d3af68
 
 ## Blocking
 - none
@@ -8,4 +8,8 @@ CONTENT-HASH: 2efbacf8bfa38382
 - none
 
 ## Checked
-- batch delta review: "Luvun tärkeät käsitteet" panel captured from preview/fi-easy/fy4-2.html at 390 and 1280 px (the review/shots set has no capture of it) and opened — between the opening and stage 1, term bold over its explanation at 390 px, two-column at 1280 px, no clipping, no horizontal overflow, no KaTeX error; top-390 opened in a montage (read-aloud "Kuuntele" button under the title, layout intact).
+- Delta review (editorial correction round, light, teacher 2026-11-07). lesson.md diff read (Tulos significant-figure sentence, summary bullet): inline LaTeX quantities correct, no wrapping risk. Text-only edit, captures current.
+- Plain Finnish: new sentences short and concrete, terms as in the glossary; mathematical typography: \cdot, colon for division, decimal comma, units upright in inline LaTeX; no plain-text quantity in the changed text.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

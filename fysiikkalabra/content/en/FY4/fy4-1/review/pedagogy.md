@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 984ee5cc554c2171
+CONTENT-HASH: ba91c144201bfa51
 
 ## Blocking
 
 ## Polish
-- The Finnish needs no changes.
 
 ## Checked
-Read lesson.md, inquiry.json, exit-ticket.json and figures.json in full. Same teaching order as the Finnish: hook, review, three predictions with justification, simulation, three experiments, measurement data, back-and-forth motion, theory, reflection, worked example, find-the-error, transfer, exercises, three check questions, exit ticket. Worked-example step labels (Given and find, Principle, Formula solved, Unit conversions, Substitution, Result, Reasonableness) and solution labels (Given, Find, Principle, Reading the graph, Formula, Conversions, Substitution, Answer, Reasonableness) are the same as in the other en chapters (checked against fy4-2). Terms are used consistently: position, displacement, distance travelled, velocity, speed (vauhti), average velocity v_avg, slope, (t,x) graph. Chapter names, not ids. Reads naturally; the three awkward sentences were smoothed (hook, runner prompt, prediction 2).
-- Delta review (984ee5cc554c2171): Delta since the passed version: only the colon-to-comma punctuation change in the exp-1 and exp-3 answer lines, already matched in English. No wording, sequence or interaction change. check_i18n en 0 errors.
+- Kevyt delta-katselmointi (opettaja 2026-11-07): diff origin/main -muutokset arvioitu ja niiden johdonmukaisuus tavoitteiden, yhteenvedon ja ratkaisujen kanssa.
+- Kulmakertoimen kuvaus erottaa nyt vauhdin (itseisarvo) ja suunnan (etumerkki); yhtenevä sanaston ja nopeus/vauhti-erottelun kanssa. Tulos-kohta: kokonaisluvut tarkkoja, ei pyöristystä; johdonmukainen opettajan säännön kanssa, ei jää ristiriitaa yhteenvedon kanssa.
+- Kokonaisluvut tehtävätiedoissa tulkitaan tarkoiksi (opettajan sääntö); teksti sanoo tämän käyttöpaikalla. Muutos ei paljasta vastausta ennen toimintaa eikä vaikuta palautteeseen, ennusteisiin tai kokeisiin.
+- Muu sisältö ennallaan (aiemmin hyväksytty). ESCALATE-tarvetta ei ole.

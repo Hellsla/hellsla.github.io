@@ -8,4 +8,7 @@ CONTENT-HASH: 6715f4c193fc7b4a
 (none)
 
 ## Checked
-- batch delta review: opened the captures of the changed passages (theory-1280 / example-390), source diff read; no figure changed; text-only edits render cleanly, no clipping, no horizontal overflow, no inline formula wrapped.
+- No diff, hash equals the version passed earlier; no new captures opened, previous PASS carried.
+
+## Scores
+illustrations 4 · typography 4 · Finnish (English language quality) 5 · accessibility 4

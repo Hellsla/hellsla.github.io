@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9f999931a52c1b2e
+CONTENT-HASH: e7603624bb853c01
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] Caption could carry the turbine's role (kinetic energy of wind to electricity) to link it to the paragraph; optional.
+(none)
 
 ## Checked
-batch delta review: opened en/fy4-15 captures at 360 and 1280 px and the photo file; photo loads, sits in the theory column (floated right or unfloated by layout rule at 1280, full column at 360), no clipping or overflow from the photo, alt and caption natural English and consistent with the picture, no unit-bearing numbers needing LaTeX, credit line present under the caption.
+- Delta of the earlier round plus the new diff: only the ilmalierio aria-label (and its figures.json key) changed; the new wording is clear English and says the same as the figure. The page render is unchanged from the captures judged before (theory-1280-2/3, example-390-1).
+
+## Scores
+illustrations 4 · typography 4 · Finnish (English language quality) 5 · accessibility 4

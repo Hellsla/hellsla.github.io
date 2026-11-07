@@ -1,17 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: d00b795ae3ab58a7
+CONTENT-HASH: 43b2a4af744f58e2
 
 ## Blocking
 
 ## Polish
-- inquiry.json:478 — "matalampi kuin korkeus, jolle jäljellä oleva mekaaninen energia riittäisi" on raskas — "matalampi kuin korkeus, johon jäljellä oleva mekaaninen energia riittäisi".
-- lesson.md "Vastaus alun kysymykseen" — "matalampi kuin ensimmäinen ja matalampi kuin korkeus, jolle…" on toisteinen — toinen ehto riittää (jäljellä olevan energian korkeus on aina alle ensimmäisen).
-- Aiemmat Polish-kohdat (sim 1280 px:n sivupalkki, pulkkaesimerkin kuva, check-3:n siirto) ovat ennallaan.
+- Siirtymä/matka-kappale on tiivis; yksi lause ylös heitetyn pallon työstä (kokonaisvoima työ nolla, kun palaa) auttaisi lukiolaista.
 
 ## Checked
-- Selitä 3 -kysymys ("myöhemmät mäet ovat sitä matalampia") ja kriteerit vastaavat toisiaan; uusi kriteeri 2 on havaittava ja mallivastaus täyttää kaikki neljä.
-- Fysiikka ja päättely: E_mek pienenee vastusvoimien työn takia, joten seuraavan mäen on oltava matalampi; ei paljasta vastausta ennen yritystä.
-- Alun kysymykseen vastataan nyt täsmällisemmin; ei uusia käsitteitä tai lisätyötä.
-- Tiivistelmän lisäys "eikä mikään vedä tai työnnä" tarkentaa säilymisehdon ja sopii energiaperiaatteen kanssa.
-- Muu tunti ennallaan; hash alussa ja lopussa d00b795ae3ab58a7.
-- Edellinen Polish korjattu: inquiry.json:478 "koko matkan ajan. Jokaisen" (pilkku ja iso kirjain).
+- Light delta review (teacher 2026-11-07): judged `git diff origin/main` of fy4-8 fi.
+- Työn määritelmä rajattu yhteen suuntaan (x-akseli, etumerkilliset nopeudet, siirtymä Δx), ja uusi kappale erottaa siirtymän ja kuljetun matkan (ylös heitetty pallo, kitka). Johto pysyy seurattavana, tiivistelmä (W = F∥ s, kun liike yhteen suuntaan) on johdonmukainen.
+- Consistency with summary, goals and inquiry feedback: no contradictions; untouched content passed earlier reviews.
+- Hash at start and end 43b2a4af744f58e2.

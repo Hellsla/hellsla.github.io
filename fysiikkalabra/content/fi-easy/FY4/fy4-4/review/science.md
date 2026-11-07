@@ -1,11 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 4cff35441a7a7870
+CONTENT-HASH: 6a2b9af46ed998f4
+
+Light delta review (teacher 2026-11-07): the diff against origin/main and what it touches.
 
 ## Blocking
 (none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- batch delta review: key_concepts, reworded sentences, photo captions, objective-form and level-policy edits, chapter-reference titles judged against the guardrails and the lesson text; restyled figure lines are styling only; force-diagram blocks recomputed (G = 13 734 N, N = G, F_mu 7000 N back; cart G 176,58 N, 30 N vs 12 N).
+- lesson.md:602 Tulos: recomputed mg = 4708,8 N, a = (5200 − 4708,8)/480 = 1,023 m/s²; 3 s.f. limited by 5,20 kN and 9,81 m/s², 480 kg exact per teacher's rule: correct
+- lesson.md:606 Järkevyys: forgetting weight gives 5200/480 = 10,8 m/s²; at constant velocity T = mg so T/m = g ≈ 9,8 m/s² although a = 0: correct argument that names the mechanism (net force sets a)
+- Ratio T/mg = 1,10, a ≈ 0,1 g check still valid

@@ -905,7 +905,7 @@
    "source": "example",
    "source_note": "Testin arvot on laadittu esimerkiksi; todellisissa kypärästandardeissa pudotuskorkeus ja kiihtyvyyden raja vastaavat näitä.",
    "figure": "fy4-koe/fy4-k7-pulse",
-   "text": "Pyöräilykypärän iskutestissä kypärä puetaan $5{,}0\\,\\text{kg}$:n päämalliin, joka pudotetaan levosta $1{,}50\\,\\text{m}$:n korkeudelta teräsalustalle. Kypärän vaahtomuovi painuu kasaan ja pysäyttää päämallin, joka ei kimpoa takaisin. Päämallin sisällä oleva anturi mittaa sen kiihtyvyyttä. Kuvaajassa on erään kypärän mittaus; vaahtomuovi painui siinä kasaan $2{,}4\\,\\text{cm}$. Kypärä läpäisee testin, jos päämallin suurin kiihtyvyys on enintään $2450\\,\\text{m/s}^2$ eli $250$ kertaa putoamiskiihtyvyys. Ilmanvastus on merkityksetön.",
+   "text": "Pyöräilykypärän iskutestissä kypärä puetaan $5{,}0\\,\\text{kg}$:n päämalliin, joka pudotetaan levosta $1{,}50\\,\\text{m}$:n korkeudelta teräsalustalle. Kypärän vaahtomuovi painuu kasaan ja pysäyttää päämallin, joka ei kimpoa takaisin. Päämallin sisällä oleva anturi mittaa sen kiihtyvyyttä. Kuvaajassa on erään kypärän mittaus; vaahtomuovi painui siinä kasaan $2{,}4\\,\\text{cm}$. Tässä tehtävässä kypärä läpäisee iskutestin, jos päämallin suurin kiihtyvyys on enintään $2450\\,\\text{m/s}^2$ eli $250$ kertaa putoamiskiihtyvyys. Kypärän hyväksyntään eli sertifiointiin kuuluu lisäksi muita testejä, joten rajan alittaminen ei yksin riitä siihen. Ilmanvastus on merkityksetön.",
    "parts": [
     {
      "id": "a",
@@ -998,7 +998,7 @@
      "id": "d",
      "kind": "calc",
      "points": 5,
-     "text": "Valmistaja suunnittelee ohuempaa kypärää, jonka vaahtomuovi painuisi samassa testissä kasaan vain $1{,}0\\,\\text{cm}$. Arvioi, läpäiseekö ohuempi kypärä testin. Oleta, että kiihtyvyyskuvaajan muoto pysyy samanlaisena.",
+     "text": "Valmistaja suunnittelee ohuempaa kypärää, jonka vaahtomuovi painuisi samassa testissä kasaan vain $1{,}0\\,\\text{cm}$. Arvioi, läpäiseekö ohuempi kypärä iskutestin. Oleta, että kiihtyvyyskuvaajan muoto pysyy samanlaisena.",
      "answer": {
       "value": 2280,
       "unit": "m/s^2",
@@ -1028,7 +1028,7 @@
       {
        "key": "conclusion",
        "points": 1,
-       "detail": "Kypärä läpäisee testin niukasti, noin $7\\,\\%$:n marginaalilla, mikä on pieni mallin ja mittauksen epävarmuuteen verrattuna."
+       "detail": "Kypärä läpäisee iskutestin niukasti, noin $7\\,\\%$:n marginaalilla, mikä on pieni mallin ja mittauksen epävarmuuteen verrattuna."
       }
      ]
     },
@@ -1044,7 +1044,7 @@
        "points": 1
       },
       {
-       "text": "$25\\,\\text{km/h} \\approx 6{,}9\\,\\text{m/s}$, joten liike-energia on noin $(6{,}9 : 5{,}4)^2 \\approx 1{,}6$-kertainen testiin verrattuna.",
+       "text": "Jos pää osuisi seinään kohtisuoraan koko etenemisnopeudella $25\\,\\text{km/h} \\approx 6{,}9\\,\\text{m/s}$, liike-energia olisi noin $(6{,}9 : 5{,}4)^2 \\approx 1{,}6$-kertainen testiin verrattuna. Pään todellinen törmäysnopeus ei kuitenkaan ole automaattisesti sama kuin etenemisnopeus.",
        "tag": "math",
        "points": 1
       },

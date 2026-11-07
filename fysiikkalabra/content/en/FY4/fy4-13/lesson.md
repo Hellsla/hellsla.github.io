@@ -295,8 +295,8 @@ where $m_2 > m_1$. The tension lies between the weights $m_1 g$ and $m_2 g$ of t
 
 ### Method for connected bodies
 1. **Draw a free-body diagram** for each body. The string pulls each body toward itself, and each body has its own tension arrow.
-2. **Choose the positive direction** for each body along its acceleration.
-3. **Write the equation of motion** $\Sigma F = ma$ for each body separately. The acceleration magnitude $a$ and the tension magnitude $T$ are the same in both. If a body is also pulled by an external force $\overline{F}$, that force belongs only in the free-body diagram and equation of motion of the body being pulled.
+2. **Choose the positive direction** for each body along its acceleration. If the actual direction of the acceleration is not known, the positive direction may be assumed, as long as the directions of the bodies fit together along the string. If the solution gives a negative acceleration, the actual acceleration is in the opposite direction. The direction of friction depends on the direction of motion, so with friction the assumed direction must be checked.
+3. **Write the equation of motion** $\Sigma F = ma$ for each body separately. The acceleration $a$ and the tension magnitude $T$ are the same in both. If a body is also pulled by an external force $\overline{F}$, that force belongs only in the free-body diagram and equation of motion of the body being pulled.
 4. **Solve** the two equations: add them, so that $T$ cancels, or substitute the $T$ from one into the other.
 5. **Check** the signs and compare: the tension is not equal to the weight of a hanging body when the bodies accelerate.
 
@@ -409,7 +409,7 @@ People often think that the cart is pulled by the weight of the hanging mass, so
 Another mistake is to treat the forces $\overline{T}_1$ and $\overline{T}_2$ as an action–reaction pair. They act on different bodies but belong to different interactions: one to the string–cart pair and the other to the string–mass pair. They are equal because the string is light and the pulley is light and frictionless, not because they would be the forces of one interaction pair. A third mistake is to think that the heavier body accelerates more. Bodies at the ends of an inextensible string have the same acceleration magnitude.
 
 ## Summary
-- Bodies connected by a string or over a pulley each have their own free-body diagram and their own equation of motion $\Sigma F = ma$, and the positive direction is chosen for each body along its acceleration.
+- Bodies connected by a string or over a pulley each have their own free-body diagram and their own equation of motion $\Sigma F = ma$, and the positive direction is chosen for each body along its acceleration, or assumed if the direction is not known: a negative solution means that the acceleration is in the opposite direction.
 - A light, inextensible string and a light, frictionless pulley give the bodies the same acceleration magnitude $a$ and equal tensions $T_1 = T_2 = T$.
 - For a cart and a hanging mass, $a = \frac{m_2}{m_1 + m_2}\,g$ and $T = \frac{m_1 m_2}{m_1 + m_2}\,g$. For two hanging bodies, $a = \frac{m_2 - m_1}{m_1 + m_2}\,g$ and $T = \frac{2 m_1 m_2}{m_1 + m_2}\,g$.
 - The tension for an accelerating hanging body is not its weight: for the cart and the hanging mass $T < m_2 g$, and for two hanging bodies $T$ lies between the weights.

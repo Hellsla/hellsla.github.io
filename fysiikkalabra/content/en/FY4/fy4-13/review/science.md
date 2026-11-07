@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 53a6c9035667e48c
-
+CONTENT-HASH: 66b641106a3af95a
 ## Blocking
 
 ## Polish
 
 ## Checked
-Delta review: experiment names for the situation selector now "situation" instead of Finnish "tilanne" (two experiments). The simulation's two-body free-body diagram captions come from lang/en.json sims.fy4-13.vk1_kaksi / vk2_kaksi: "Free-body diagram: m_1" / "m_2", same content as Finnish "Voimakuvio: m_1" / "m_2", same form as vk1/vk2. check_i18n 0 errors.
+- Delta since 8b7dd5d78: step 3 now says "the acceleration $a$" (not magnitude), consistent with step 2's assumed direction where $a$ may come out negative; with per-body positive directions fitted along the string, $a$ is the same for both bodies — correct.
+- Earlier round (unchanged): assumed-direction rule, negative solution = opposite acceleration, friction caveat (recheck the assumed direction) — correct; summary says the same.
+- Atwood formula, $m_1 g < T < m_2 g$, worked example and inquiry untouched and consistent.

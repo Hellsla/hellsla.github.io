@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: e6499168f4b2e820
+CONTENT-HASH: 358d805b1ae68646
 
 ## Blocking
-(none)
+- none
 
 ## Polish
 - none
 
 ## Checked
-- Delta (only figures.json changed: new entries for exercise option figures pick-*; every pre-existing entry is byte-identical, only the old last entry gained a comma). Lesson page, figures and texts unchanged.
-- contact-1 sheet (top, sim, fig-1, fig-4, fig-6, fig-8, fig-10, fig-12 at 390); the new pick-* texts occur only in the exercise-set figures, none in a lesson figure; all lesson figures render as before, colours unchanged (force red, velocity blue).
-- Rebuilt via scripts/build.py fy4-12 (screenshot.py); page overflow at 390 px measured after the page scripts ran: scrollWidth 390 = clientWidth 390, no horizontal scroll.
+- Delta review (editorial correction round, light, teacher 2026-11-07). lesson.md diff read (sentence after the position equations): prose only. Captures current, not re-opened.
+- Plain Finnish: new sentences short and concrete, terms as in the glossary; mathematical typography: \cdot, colon for division, decimal comma, units upright in inline LaTeX; no plain-text quantity in the changed text.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5
