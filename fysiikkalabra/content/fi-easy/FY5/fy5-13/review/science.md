@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 96ae571dd1d73779
+CONTENT-HASH: 394bea7d94af7b8e
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- light delta review (teacher 2026-11-07), round 2: HEAD~1 diff: the ideal-reflection sentences moved after the superposition sentence; physics unchanged and correct.
+- light delta review (teacher 2026-11-07), after fixes: HEAD~1 diff: ideal reflection stated before the sum; the remark that a weaker real reflected wave makes even the nodes vibrate slightly moved after the node/antinode spacing (λ/2, λ/4); consistent with the stated assumption, physics correct.

@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: aaf97035e025d284
+CONTENT-HASH: e19a95257b2698ca
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- light delta review (teacher 2026-11-07), round 2: HEAD~1 diff: ISS reboost now tied to upper-atmosphere drag (the main cause of decay in low orbit): correct; the earlier Polish item is fixed, no new error.
+- light delta review (teacher 2026-11-07), after fixes: HEAD~1 diff of lesson.md drops the closing 'Gravitaatio ei siis puutu, vaan mikään ei tue kappaletta.'; the bold definition (only gravity, common free fall, support force zero while the weight acts) stays correct and matches the summary; no number changed.

@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 45a83f2053abbd16
+CONTENT-HASH: be1ccffb88eff6c2
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- light delta review (teacher 2026-11-07): only the passages changed against origin/main were judged, in context, not a full review; 'ideal wave model' qualifier the same in text, summary, exit ticket and inquiry model answer; Stokes drift of floating objects, ideal string speed set by tension and mass per length, dispersion of surface waves and the tsunami's speed growing with depth (v ≈ √(gh)) are all correct.
+- light delta review (teacher 2026-11-07), after fixes: HEAD~1 diff: the bell sentence now follows directly from 'energy but not matter' in the ideal wave model, and the real-wave net transport (Stokes drift of a floating object) comes after it; causality and the ideal-model qualifier correct, no new error.

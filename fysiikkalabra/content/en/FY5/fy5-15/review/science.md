@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 7cd7f745a4456532
+CONTENT-HASH: 77140ffe888aa13f
 
 ## Blocking
 
@@ -7,4 +7,4 @@ CONTENT-HASH: 7cd7f745a4456532
 - lesson.md:271 (What a meter measures) — 'the meter reading is treated as the sound intensity level' could say 'the unweighted reading', since the previous paragraph says ordinary meters show dB(A).
 
 ## Checked
-- light delta review (teacher 2026-11-07), round 3: HEAD~1 diff of lesson.md: the meter section now says 'the unweighted sound pressure level and the sound intensity level' are about equal in a free field, matching caption and summary: earlier Polish fixed, physics correct, no new error. Numbers unchanged (I = 3,98·10⁻³ W/m², P = 5,00 W).
+- light delta review (teacher 2026-11-07), after fixes: HEAD~1 diff: 'such a wide range is hard to show on an ordinary scale' moved right after the 10¹² ratio; physics unchanged and correct; the old Polish item still applies.

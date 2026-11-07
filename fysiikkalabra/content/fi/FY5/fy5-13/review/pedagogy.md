@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: f8b4c26c46a2613b
+CONTENT-HASH: 0dc75d7c4482d80e
 
 ## Blocking
 (none)
@@ -8,4 +8,4 @@ CONTENT-HASH: f8b4c26c46a2613b
 (none)
 
 ## Checked
-light delta review (teacher 2026-11-07): batch delta review of changed passages only — one-sentence ideal-reflection assumption in "Aalto ja sen heijastus" is short, placed before the result it qualifies, and keeps the node idea clear.
+light delta review (teacher 2026-11-07), after fixes: ideal-reflection assumption kept short before the sum; the weaker-reflection remark now comes after the solmu/kupu definitions ("solmutkin värähtelevät hiukan"), so no clash with "pysyvät koko ajan paikallaan".

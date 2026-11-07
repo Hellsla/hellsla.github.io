@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: f8b4c26c46a2613b
+CONTENT-HASH: 0dc75d7c4482d80e
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- light delta review (teacher 2026-11-07), round 2: HEAD~1 diff: the ideal-reflection sentence moved after the superposition sentence, so 'Niiden poikkeamat' again means the two waves; physics unchanged and correct; earlier Polish fixed.
+- light delta review (teacher 2026-11-07), after fixes: HEAD~1 diff: ideal reflection stated before the sum; the remark that a weaker real reflected wave makes even the nodes vibrate slightly moved after the node/antinode spacing (λ/2, λ/4); consistent with the stated assumption, physics correct.

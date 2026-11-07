@@ -739,5 +739,5 @@ Toinen virhe on sijoittaa kaavaan $v = \sqrt{\tfrac{\gamma M}{r}}$ korkeus $h$. 
 - Satelliittiin vaikuttaa vain keskuskappaleen gravitaatiovoima. Se on kokonaisvoima, joka antaa ympyräradalla normaalikiihtyvyyden: $\gamma \tfrac{Mm}{r^2} = \tfrac{mv^2}{r}$.
 - Ympyräradan ratanopeus on $v = \sqrt{\tfrac{\gamma M}{r}}$ ja kiertoaika $T = \tfrac{2\pi r}{v}$. Satelliitin massa ei vaikuta. Kauempana kiertävä satelliitti on hitaampi, ja sen kiertoaika on pidempi.
 - Radan säde mitataan keskuskappaleen keskipisteestä: $r = R + h$.
-- Painottomuus on tuettomuutta ja yhteistä vapaata putoamista: gravitaatio vaikuttaa, mutta tukivoima on nolla.
+- Painottomuudessa kappaletta ei tue mikään, ja se putoaa vapaasti: gravitaatio vaikuttaa, mutta tukivoima on nolla.
 - Ympyrämalli pätee, kun keskuskappale on paljon satelliittia massiivisempi, muut voimat ovat pieniä ja rata on lähes ympyrä.

@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 6796b6ef39090d7b
+CONTENT-HASH: 82182e756639fe8e
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-light delta review (teacher 2026-11-07): only the passages changed against origin/main were judged, in context; no full review was done even where the tooling asks for one. 'Ideal wave model' qualifier in theory, summary and exit ticket; Stokes drift of a floating object; rope speed set by tension and mass per length; dispersion of water waves; tsunami faster in deeper sea (v = √(gh)): all correct.
+- light delta review (teacher 2026-11-07), after fixes: HEAD~1 diff: the bell sentence now follows directly from 'energy but not matter' in the ideal wave model, and the real-wave net transport (Stokes drift of a floating object) comes after it; causality and the ideal-model qualifier correct, no new error.

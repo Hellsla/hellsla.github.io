@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 8dfd2b146fcd2bd8
+CONTENT-HASH: e85d23c8af85e2db
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- light delta review (teacher 2026-11-07), round 2: HEAD~1 diff: 'Because of the drag … the orbit of the ISS is raised' — correct cause; earlier Polish fixed, no new error.
+- light delta review (teacher 2026-11-07), after fixes: HEAD~1 diff: definition now 'nothing supports the body: only gravity acts on it, and it falls freely together with its surroundings' and the summary bullet says the same; correct (free fall with surroundings, support force zero, weight acts), no number changed.

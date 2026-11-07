@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 5d2b6600308ccef8
+CONTENT-HASH: f3a92ad89167f2ed
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- light delta review (teacher 2026-11-07), round 2: HEAD~1 diff: 'Toiminta-arvoihin sen sijaan verrataan altistusta ilman kuulonsuojaimia' matches VNA 85/2006: earlier Polish fixed, no new error.
+- light delta review (teacher 2026-11-07), after fixes: HEAD~1 diff: reference time is 'a calculated reference value', not a permitted or safe time; correct and consistent with VNA 85/2006 wording elsewhere, no number changed.

@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 4dcc7246ad688dab
+CONTENT-HASH: 5c3716e7cdd98e49
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- lesson.md:561 (worked example, Principle) — 'almost on the line of the track, so that the whole velocity of the train points towards' pairs 'almost' with 'the whole'; 'so that the velocity of the train points almost straight towards or away from them' would keep the idealisation exact (C, numbers unaffected).
 
 ## Checked
-light delta review (teacher 2026-11-07): only the passages changed against origin/main were judged, in context; no full review was done even where the tooling asks for one. Worked-example idealisation (listener on the track line, full velocity along the line of sight) and the gradual drop for an offset listener, with far-field values still ≈341 Hz and 286 Hz: correct; recomputed 311·343/(343∓30) = 340.8 Hz and 286.0 Hz.
+- light delta review (teacher 2026-11-07), after fixes: HEAD~1 diff: listener 'almost on the line of the track'; the on-line idealisation and the numbers (recomputed 340.8 Hz and 286.0 Hz) stand; only the wording point below.

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 5b96e9d7a39bc7ea
+CONTENT-HASH: bce80948fc0b7dd0
 
 ## Blocking
 
@@ -7,4 +7,4 @@ CONTENT-HASH: 5b96e9d7a39bc7ea
 - lesson.md:271 (Mitä mittari mittaa) — 'mittarin lukemaa käsitellään intensiteettitasona' could say 'painottamatonta lukemaa', since the previous paragraph says ordinary meters show dB(A).
 
 ## Checked
-- light delta review (teacher 2026-11-07), round 3: HEAD~1 diff of lesson.md: the meter section now says 'painottamattoman äänenpainetason ja intensiteettitason' are about equal in a free field, matching caption and summary: earlier Polish fixed, physics correct, no new error. Numbers unchanged (I = 3,98·10⁻³ W/m², P = 5,00 W).
+- light delta review (teacher 2026-11-07), after fixes: HEAD~1 diff: 'such a wide range is hard to show on an ordinary scale' moved right after the 10¹² ratio; physics unchanged and correct; the old Polish item still applies.

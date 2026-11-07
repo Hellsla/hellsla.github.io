@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 9fb5b401f62a3652
+CONTENT-HASH: 053cb480bab0df62
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-light delta review (teacher 2026-11-07): git diff origin/main of exercises/ and answers.py (only wording, answers.py unchanged), not a full review: "Todellista keskipakoisvoimaa ei ole" in two feedbacks and two solutions consistent with ground-frame force diagrams; correct options unchanged.
+- light delta review (teacher 2026-11-07), after fixes: HEAD~1 diff of solutions.md: the friction task's model answer now says no such *real* (centrifugal) force exists, matching the four earlier 'no real centrifugal force' feedbacks and the ground-frame diagrams; friction = mv²/r = 3672 N and the doubled 7344 N unchanged; answers.py unchanged.

@@ -386,7 +386,7 @@
           "id": "d",
           "kind": "calc",
           "points": 3,
-          "text": "A $250\\,\\text{g}$ mass is hung from the spring and set oscillating with an amplitude of $5.0\\,\\text{cm}$. Use as the oscillating mass the mass of the hanging mass plus the added mass you determined in part c. How large is the greatest speed of the mass?",
+          "text": "A $250\\,\\text{g}$ mass is hung from the spring and set oscillating with an amplitude of $5.0\\,\\text{cm}$. Include in the oscillating mass the added mass that the graph of part c gives. How large is the greatest speed of the mass?",
           "answer": {
             "value": 0.433,
             "unit": "m/s",

@@ -558,7 +558,7 @@ A train runs along a straight track at a steady speed of $108\,\text{km/h}$ and 
 
 <!-- vaihe -->
 
-**Principle.** The sound source moves and the listener is at rest, so we use the Doppler formula for a moving source. In front of the approaching train the wavefronts bunch together, so the sign is chosen so that $f_1 > f_0$. Behind the receding train the wavefronts spread out, and $f_2 < f_0$. The model is ideal: the passenger is assumed to be almost on the line of the track, so that the whole velocity of the train points towards or away from them.
+**Principle.** The sound source moves and the listener is at rest, so we use the Doppler formula for a moving source. In front of the approaching train the wavefronts bunch together, so the sign is chosen so that $f_1 > f_0$. Behind the receding train the wavefronts spread out, and $f_2 < f_0$. The model is ideal: the passenger is assumed to be almost on the line of the track, so that the velocity of the train points almost straight towards or away from them.
 
 <!-- vaihe -->
 

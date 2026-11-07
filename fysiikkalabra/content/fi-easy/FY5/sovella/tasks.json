@@ -386,7 +386,7 @@
           "id": "d",
           "kind": "calc",
           "points": 3,
-          "text": "Jouseen ripustetaan $250\\,\\text{g}$:n punnus, ja se pannaan värähtelemään $5{,}0\\,\\text{cm}$:n amplitudilla. Käytä värähtelevänä massana punnuksen massaa ja c-kohdassa määrittämääsi lisämassaa. Kuinka suuri on punnuksen suurin nopeus?",
+          "text": "Jouseen ripustetaan $250\\,\\text{g}$:n punnus, ja se pannaan värähtelemään $5{,}0\\,\\text{cm}$:n amplitudilla. Ota värähtelevässä massassa huomioon c-kohdan kuvaajasta saatava lisämassa. Kuinka suuri on punnuksen suurin nopeus?",
           "answer": {
             "value": 0.433,
             "unit": "m/s",

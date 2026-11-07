@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: de328e454b279f27
+CONTENT-HASH: 77bf0b5f5d1caf99
 
 ## Blocking
 (none)
 
 ## Polish
-- lesson.md:611 — "tuettomuutta" is a rare noun for S2 readers and the bold definition is now three sentences; "Mikään ei vain tue kappaletta" has an odd word order — e.g. "**Painottomuudessa kappaletta ei tue mikään. Siihen vaikuttaa vain gravitaatio, ja se putoaa samalla kiihtyvyydellä kuin ympäristönsä.**" and "Kappaletta ei vain tue mikään."
+- lesson.md:742 — the Tiivistelmä still says "Painottomuus on tuettomuutta ja yhteistä vapaata putoamista", the rare noun the text no longer uses; write "Painottomuudessa kappaletta ei tue mikään: gravitaatio vaikuttaa, mutta tukivoima on nolla."
 
 ## Checked
-light delta review (teacher 2026-11-07): only the changed passages were judged, in context of the surrounding text, tasks, feedback and solutions; no full review even where the tooling asks for one; physics left to the science review; weightlessness definition, ISS caption, model-deviation paragraph and Tiivistelmä agree; core idea (gravity acts, support force is zero) stays first.
+light delta review (teacher 2026-11-07), after fixes: bold definition now "Painottomuudessa kappaletta ei tue mikään. Siihen vaikuttaa vain gravitaatio ...", plain and short; the odd "Mikään ei vain tue" is gone.
