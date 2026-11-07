@@ -34,7 +34,7 @@
 **Principle:** A degree Celsius and a kelvin are the same size, and the zero points of the scales differ only by the constant $273.15$. The constant cancels in the subtraction, so a change in temperature is the same on both scales.
 **Formula:** $\Delta T = T_2 - T_1$, and since $T/\text{K} = \theta/{}^\circ\text{C} + 273.15$, the constant $273.15$ cancels: $\Delta T/\text{K} = (\theta_2 - \theta_1)/{}^\circ\text{C}$
 **Conversions:** No conversion is needed, because a change in temperature is the same in degrees Celsius and in kelvins; only the unit changes.
-**Substitution:** $\Delta T = 45 - 20 = 25\,\text{K}$
+**Substitution:** $\Delta T = (45 - 20)\,\text{K} = 25\,\text{K}$
 **Answer:** $25\,\text{K}$, two significant figures like the given temperatures.
 **Reasonableness:** Check in kelvins: $T_1 = 293.15\,\text{K}$ and $T_2 = 318.15\,\text{K}$, so the difference is $318.15 - 293.15 = 25\,\text{K}$. The sign is positive, because the water warms up.
 

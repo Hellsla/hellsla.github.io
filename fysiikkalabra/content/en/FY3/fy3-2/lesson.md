@@ -118,7 +118,7 @@
 ## Key idea
 In everyday language, work often means effort. In physics, work has a more precise meaning: a force does work when an object is displaced and the force has a component along the displacement.
 
-When you carry a backpack horizontally at a steady speed, your force supporting the backpack points upwards but the backpack is displaced horizontally. The force is perpendicular to the displacement, so the mechanical work done by this force is zero. Your muscles still use energy to hold the backpack up.
+When you carry a backpack horizontally at a steady speed, your force supporting the backpack points upwards, but the backpack is displaced horizontally. The force is perpendicular to the displacement, so the mechanical work done by this force is zero. Your muscles still use energy to hold the backpack up.
 
 <svg data-fig="carry-lift" viewBox="0 0 600 320" role="img" aria-label="Diagram of two situations. On the left a backpack is carried sideways: the supporting force F points up but the motion is sideways, so the force does no work, W = 0. On the right the backpack is lifted up: the force F and the motion are in the same direction, so the force does work W = F s." style="max-width:100%;font-size:24px">
   <foreignObject x="52.5" y="15.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{carried sideways}$</div></foreignObject>

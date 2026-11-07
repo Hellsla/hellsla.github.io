@@ -265,7 +265,17 @@ When the ice has melted, the bag contains $1.0\,\text{kg}$ of meltwater and $0.5
 &\approx 6285\,\tfrac{\text{J}}{\text{K}}
 \end{aligned}
 ```
-When heat flows into the bag at a power of $33.6\,\text{W}$, the model says the temperature of the contents starts to rise by about $19\,\text{K}$ per hour. This estimate holds at the start of the temperature rise and assumes that the heat flow stays constant.
+When heat flows into the bag at a power of $33.6\,\text{W}$, the model says the temperature of the contents starts to rise by about $19\,\text{K}$ per hour:
+```latex
+\begin{aligned}
+&\frac{\Delta T}{\Delta t} = \frac{P}{C} \\
+&= \frac{33.6\,\text{W}}{6285\,\tfrac{\text{J}}{\text{K}}} \\
+&\approx 0.00535\,\tfrac{\text{K}}{\text{s}} \\
+&= 0.00535 \cdot 3600\,\tfrac{\text{K}}{\text{h}} \\
+&\approx 19\,\tfrac{\text{K}}{\text{h}}
+\end{aligned}
+```
+This estimate holds at the start of the temperature rise and assumes that the heat flow stays constant.
 
 ## Common misconception
 Many people think that ice produces cold that flows into the drinks. Cold does not flow: because of the temperature difference, energy moves on net from the warmer object to the colder one, and ice cools things because it takes in energy. Another mistake is to assume that the temperature rises steadily all the time. During melting the temperature stays constant, even though energy keeps coming in.

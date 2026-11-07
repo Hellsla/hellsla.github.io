@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: b3a21b5f7f8e0a81
+CONTENT-HASH: d91c7f52e216d089
 
 Follow-up review of the fix commit 2c31ff041 (delta from bce5197e309debb6, whose full review is kept below). Change: lesson.md:111, the paragraph after $P = UA\Delta T$.
 
@@ -11,6 +11,7 @@ Follow-up review of the fix commit 2c31ff041 (delta from bce5197e309debb6, whose
 - Common misconception, mixing example: "about $0\,{}^\circ\text{C}$" would match the Key idea (C).
 
 ## Checked
+- delta review 2026-11-07 round 4 (three small fixes): restored display after the teacher's sentence (now ending with a colon): ΔT/Δt = P/C = 33.6 W / 6285 J/K = 0.005346 K/s ≈ 0.00535 K/s, × 3600 s/h = 19.25 K/h ≈ 19 K/h, recomputed; C = 6285 J/K and P = 33.6 W come from the display and the solution directly above; the next sentence (valid at the start of the rise, constant heat flow) still follows it. 390 px capture: display fits, no wrapping. Hashes equal at start and end.
 - delta review 2026-11-07 (teacher's proofread replacement texts): heat capacity after melting C = (1,0 + 0,50) kg·4190 J/(kg·K) = 6285 J/K with the stated assumption c_drinks = c_water, and 33,6 W/6285 J/K·3600 s/h = 19,2 K/h recomputed; the new limits (initial phase, constant heat flow, which really decreases as the inside warms) are correct; unit-conversion sentence unchanged in substance. English text carries the same meaning as fi.
 - Earlier blocking item resolved: "In the model, the inside of the bag is taken to be at $0\,{}^\circ\text{C}$ as long as there is ice, so $\Delta T$ is the outside temperature in degrees Celsius. Then all the energy coming through the wall melts ice" — the formula $t = sm/(UA\Delta T)$ now carries its condition and agrees with the Key idea.
 - Consistency: grep of "$0\,{}^\circ\text{C}$" in lesson.md and inquiry.json — no remaining unqualified claim outside the model contexts listed under Polish.

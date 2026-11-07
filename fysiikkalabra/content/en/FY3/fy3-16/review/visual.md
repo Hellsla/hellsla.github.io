@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: b3a21b5f7f8e0a81
+CONTENT-HASH: d91c7f52e216d089
 
 ## Blocking
 - none
@@ -10,6 +10,7 @@ CONTENT-HASH: b3a21b5f7f8e0a81
 - [Minor] lesson.md U-value paragraph (untouched words of the edited line) — units in parentheses are plain text: (W/(m²·K)), (m²), (K) — write $\text{W/(m}^2\cdot\text{K)}$, $\text{m}^2$, $\text{K}$.
 
 ## Checked
+- delta review 2026-11-07 round 4 (three small fixes): the 19 K/h step is an aligned display again after the sentence that now ends with a colon, followed by the unchanged validity sentence; $33.6\,\text{W} : 6285\,\text{J/K} \approx 0.00535\,\text{K/s}$, $\cdot 3600 \approx 19\,\text{K/h}$ correct. Opened fy3-16-en-p19-390: five left-aligned rows like the $C$ display just above, \tfrac units upright, \cdot, no overflow.
 - delta review 2026-11-07 (teacher's proofread replacement texts): Yksikkömuunnokset wording and the new heat-capacity display $C = (m_\text{jää} + m_\text{j})\,c$ with the 19 K/h sentence; opened fy3-16-en-muunnos-390/-1280 and fy3-16-en-laukku-390/-1280 (aligned rows, fractions and units render, no overflow).
 - delta review of 2c31ff041: cooler-bag model sentence ($0\,{}^\circ\text{C}$ as a model assumption); diff read. `screenshot.py fy3-16 --lang en --if-stale` (fresh captures).
 - Own 390 px element captures of each changed block opened (scratchpad caps/en-fy3-16-*-390.png): text wraps cleanly, KaTeX renders, no clipping, no horizontal scroll. Measured every inline .katex (getClientRects().length) at 360, 390 and 1280 px, all boxes open and all feedback shown, after `build.py fy3-16`: no formula in a changed passage breaks onto two lines.

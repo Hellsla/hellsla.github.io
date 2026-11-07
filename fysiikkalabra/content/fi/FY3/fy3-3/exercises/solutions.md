@@ -34,7 +34,7 @@
 **Periaate:** Celsiusasteen ja kelvinin suuruus on sama, ja asteikkojen nollakohdat eroavat vain vakiolla $273{,}15$. Vakio supistuu eron laskussa pois, joten lämpötilan muutos on sama kummallakin asteikolla.
 **Kaava:** $\Delta T = T_2 - T_1$, ja koska $T/\text{K} = \theta/{}^\circ\text{C} + 273{,}15$, vakio $273{,}15$ kumoutuu: $\Delta T/\text{K} = (\theta_2 - \theta_1)/{}^\circ\text{C}$
 **Muunnokset:** Muunnosta ei tarvita, koska lämpötilan muutos on sama celsiusasteina ja kelvineinä; vain yksikkö vaihtuu.
-**Sijoitus:** $\Delta T = 45 - 20 = 25\,\text{K}$
+**Sijoitus:** $\Delta T = (45 - 20)\,\text{K} = 25\,\text{K}$
 **Vastaus:** $25\,\text{K}$, kaksi merkitsevää numeroa kuten annetuissa lämpötiloissa.
 **Järkevyys:** Tarkistus kelvineinä: $T_1 = 293{,}15\,\text{K}$ ja $T_2 = 318{,}15\,\text{K}$, joten ero on $318{,}15 - 293{,}15 = 25\,\text{K}$. Etumerkki on positiivinen, koska vesi lämpenee.
 
