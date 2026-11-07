@@ -1,10 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 569c8f6ed3d687f8
+CONTENT-HASH: e2cb78db43525510
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-
+- [Minor] lesson.md — "jännite on vakio, ja merkitään lyhyesti $e$" → "jännite on vakio, ja sitä merkitään lyhyesti $e$:llä".
 
 ## Checked
-batch delta review: opened the image file(s) (eddy-current-brake) and rendered unit-photo with caption at 1280 px (float right, 320 px wide, inside column, no clipping) and 390 px (stacked, no horizontal overflow); alt text matches what is visible, caption physically sound and tied to the chapter, Finnish natural, number+unit in LaTeX.
+- Source diff since origin/main of lesson.md, inquiry.json, exit-ticket.json, meta.json, figures.json (and figures.py for fy7-8); no screenshots in light mode (parent runs the layout checks).
+- $e_\text{ka}$ formula and "average … in the time interval Δt" wording; steady-change sentence.
+- No paragraph changed in this round in fi exceeds about 120 words
+- Hash identical at start and end.

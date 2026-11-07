@@ -138,7 +138,7 @@
 ## fy7-7-L2-07
 **Given:** power of the bulb $P = 60\,\text{W}$, mains voltage $230\,\text{V}$; in the student’s solution $230\,\text{V}$ has been interpreted as a peak value and the current obtained is $0.37\,\text{A}$
 **Find:** a) the student’s error, b) the rms value $I$ of the current of the bulb in amperes
-**Principle:** The mains voltage $230\,\text{V}$ is already an rms value, because an alternating voltage is given as an rms value. The average power is calculated from rms values as with direct current, $P = UI$, so the rms value of the current is obtained directly from the power and the rms voltage. Nothing needs to be calculated with the peak value.
+**Principle:** The mains voltage $230\,\text{V}$ is already an rms value, because an alternating voltage is given as an rms value. An incandescent lamp is a resistive load, so the average power is calculated from rms values as with direct current, $P = UI$, so the rms value of the current is obtained directly from the power and the rms voltage. Nothing needs to be calculated with the peak value.
 **Formula:** $P = UI$, so $I = \dfrac{P}{U}$
 **Conversions:** Not needed.
 **Substitution:** $I = \dfrac{60\,\text{W}}{230\,\text{V}} = 0.2609\,\text{A}$

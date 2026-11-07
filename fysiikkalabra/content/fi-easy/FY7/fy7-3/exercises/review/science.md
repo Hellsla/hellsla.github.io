@@ -1,14 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: d99cea5b5dda6932
+CONTENT-HASH: 99e5a8438eb68251
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-- Scripted comparison against the reviewed Finnish: all 21 ids, kinds, units, tolerances, answers, correct flags, choice order and table cells identical; every number in texts, feedback and solutions matches (same decimal comma).
-- New task fy7-3-L2-08 recomputed with own formulas: B = mu0 N I / l: B1 = 1.508 mT, B2 = 2.262 mT, ratio 1.500; 6x, 3x and 0.5x are the wrong-factor distractors.
-- Solutions: same numbers and display equations as fi in every section (S2 additions contain no new number, no step dropped).
-- Physics terms kept (vektorisuure, kierrostiheys, kääntäen verrannollinen) and explained in the sentence, as NOTES.md section 12 asks.
-- Figures are shared with fi; no figure text changed.
-- check_i18n.py: 0 errors for fi-easy, nothing listed for fy7-3; build.py fy7-3 succeeds.
+- 16 solution lines per language: only $\mu_0 = $ → $\mu_0 \approx 4\pi\cdot10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$ in Given lines (word-level diff: nothing else). Numbers and answers.py unchanged; measured $\mu_0 = Al/N = 1{,}26\cdot10^{-6}$ correctly stays an equality. Hash identical at start and end.

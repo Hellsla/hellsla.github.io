@@ -1,19 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 42fc97841a2c002d
-Mode: full (translation review against the reviewed Finnish set)
-Round 2
+CONTENT-HASH: cca2804aaa8edd9c
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
-
-## Fixed
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- Structural diff against content/fi, all 4 FY7 exercise sets of this round: same ids, keys, answers, units, tolerances, correct flags, choice/order sequence, data cells; number multisets of every text, feedback and solution equal to fi (decimal separators normalised); LaTeX identical apart from translated subscripts.
-- New YO-skill task L1-09: graph choice B: peak 5.0*sqrt2 = 7.1 V, T = 25 ms; figure descriptions translated in figures.json; recomputed independently, matches fi and answers.py.
-- Distractor feedback says the same as fi (correct option and reason unchanged).
-- check_i18n.py: no fy7-7 finding (fi-easy: 0 errors); build.py fy7-7 succeeds.
+- L2-07 solution: incandescent lamp named a resistive load before $P = UI$ — correct and matches the lesson's new condition. $I = 60\,\text{W}/230\,\text{V} = 0{,}2609\,\text{A} \to 0{,}26\,\text{A}$ matches answers.py; student's $0{,}37\,\text{A}$ check ($230\cdot0{,}37 = 85\,\text{W}$) right. fi, en, fi-easy agree. Hash identical at start and end.

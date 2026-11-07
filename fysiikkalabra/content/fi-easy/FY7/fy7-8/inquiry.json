@@ -201,7 +201,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Etsi virhe",
-      "prompt": "Voimalaitos siirtää tehon $200\\,\\text{MW}$ jännitteellä $400\\,\\text{kV}$. Johdon resistanssi on $6{,}0\\,\\Omega$. Opiskelija laskee häviötehon\n\n$$\\begin{aligned} P_\\text{h} &= \\frac{U^2}{R} \\\\ &= \\frac{(400\\,000\\,\\text{V})^2}{6{,}0\\,\\Omega} \\\\ &\\approx 2{,}7 \\cdot 10^{10}\\,\\text{W} \\end{aligned}$$\n\nMissä on virhe?",
+      "prompt": "Voimalaitos siirtää tehon $200\\,\\text{MW}$ jännitteellä $400\\,\\text{kV}$. Johdon resistanssi on $6{,}0\\,\\Omega$. Siirtoa kuvataan yksinkertaistetulla kaksijohtimisella mallilla. Opiskelija laskee häviötehon\n\n$$\\begin{aligned} P_\\text{h} &= \\frac{U^2}{R} \\\\ &= \\frac{(400\\,000\\,\\text{V})^2}{6{,}0\\,\\Omega} \\\\ &\\approx 2{,}7 \\cdot 10^{10}\\,\\text{W} \\end{aligned}$$\n\nMissä on virhe?",
       "choices": [
         {
           "text": "Siirtojännite ei ole johdon resistanssin yli: ensin $I = P : U$, sitten $P_\\text{h} = R I^2 = 1{,}5\\,\\text{MW}$.",
@@ -224,7 +224,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Sovella uuteen tilanteeseen: tuulipuiston liityntäjohto",
-      "prompt": "Tuulipuisto syöttää tehon $33\\,\\text{MW}$ sähköasemalle $110\\,\\text{kV}$:n voimajohtoa pitkin. Johtimien yhteinen resistanssi on $8{,}0\\,\\Omega$. Kuinka suuri teho johdossa muuttuu lämmöksi? Vastaa kilowatteina.",
+      "prompt": "Tuulipuisto syöttää tehon $33\\,\\text{MW}$ sähköasemalle $110\\,\\text{kV}$:n voimajohtoa pitkin. Johtimien yhteinen resistanssi on $8{,}0\\,\\Omega$. Siirtoa kuvataan yksinkertaistetulla kaksijohtimisella mallilla. Kuinka suuri teho johdossa muuttuu lämmöksi? Vastaa kilowatteina.",
       "answer": 720,
       "unit": "kW",
       "tolerance": 0.02,

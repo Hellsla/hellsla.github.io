@@ -1,14 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: f67af3c7d7223c53
+CONTENT-HASH: f8923468513d93d0
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-- Scripted comparison against the reviewed Finnish: all 21 ids, kinds, units, tolerances, answers, correct flags, choice order and table cells identical; every number in texts, feedback and solutions matches (same decimal comma).
-- New task fy7-1-L1-09 recomputed with own formulas: true/false statements: 1 false (cut piece keeps both poles), 2 false (needle beside the side points to S), 3 true, 4 true, 5 false, each feedback right.
-- Solutions: same numbers and display equations as fi in every section (S2 additions contain no new number, no step dropped).
-- Physics terms kept (vektorisuure, kierrostiheys, kääntäen verrannollinen) and explained in the sentence, as NOTES.md section 12 asks.
-- Figures are shared with fi; no figure text changed.
-- check_i18n.py: 0 errors for fi-easy, nothing listed for fy7-1; build.py fy7-1 succeeds.
+- L1-07: stem now asks about the bar-magnet model; answer string equals the correct option text in fi, en and fi-easy (checked programmatically); distractor feedback right; solution adds the geomagnetic naming by location, and the true/false item 4 note matches. Consistent with the lesson. Hash identical at start and end.

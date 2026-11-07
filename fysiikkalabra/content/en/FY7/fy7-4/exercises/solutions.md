@@ -74,7 +74,7 @@
 **Reasonableness:** The force increases as the angle approaches $90^\circ$, but by less than a factor of two: $0.094\,\text{N} < 2 \cdot 0.050\,\text{N} = 0.100\,\text{N}$. The greatest possible force would be $0.050\,\text{N} : 0.3420 = 0.146\,\text{N}$, and $0.094\,\text{N}$ stays below it.
 
 ## fy7-4-L2-01
-**Given:** currents of the wires $I_1 = I_2 = 10\,\text{A}$ in the same direction, distance $r = 5.0\,\text{mm}$, length of the parallel part $l = 0.80\,\text{m}$, $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
+**Given:** currents of the wires $I_1 = I_2 = 10\,\text{A}$ in the same direction, distance $r = 5.0\,\text{mm}$, length of the parallel part $l = 0.80\,\text{m}$, $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Find:** force $F$ between the wires in millinewtons
 **Principle:** The magnetic field of wire $1$ circles around it, so at wire $2$ it is perpendicular to wire $2$. The field at wire $2$ is the same along the whole length, because the distance stays the same. A force $F = I_2 l B_1$ therefore acts on wire $2$. Currents in the same direction attract each other.
 **Formula:** $B_1 = \dfrac{\mu_0 I_1}{2\pi r}$ and $F = I_2 l B_1$
@@ -156,7 +156,7 @@
 **Reasonableness:** A current of a few amperes is enough to support a light rod, which suits a laboratory experiment. If the direction of the current were reversed, the force would point downwards and the wires would tighten: the tension would then be twice the weight.
 
 ## fy7-4-L3-02
-**Given:** distance between the busbars $r = 0.30\,\text{m}$, currents $I_1 = I_2 = 20\,\text{kA}$ in opposite directions, length considered $l = 1.0\,\text{m}$, $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
+**Given:** distance between the busbars $r = 0.30\,\text{m}$, currents $I_1 = I_2 = 20\,\text{kA}$ in opposite directions, length considered $l = 1.0\,\text{m}$, $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Find:** force $F$ on a $1.0\,\text{m}$ length of a busbar and its direction; the force is given as positive if the busbars attract each other and negative if they repel each other
 **Principle:** Each busbar is in the magnetic field of the other. The field of one busbar at the other is perpendicular to it and the same along its whole length, so the force is $F = I_2 l B_1$. Currents in opposite directions repel each other, so the force pushes the busbars apart.
 **Formula:** $B_1 = \dfrac{\mu_0 I_1}{2\pi r}$ and $F = I_2 l B_1$
@@ -187,7 +187,7 @@
 **Reasonableness:** When $I = 8.0\,\text{A}$, the magnetic force is $0.336\,\text{N}$ and the friction $0.088\,\text{N}$, so $a = 0.248\,\text{N} : 0.045\,\text{kg} = 5.5\,\text{m/s}^2$, which matches the value in the table, $5.6\,\text{m/s}^2$.
 
 ## fy7-4-L3-05
-**Given:** length of the upper wire $l = 0.50\,\text{m}$, mass $m = 3.0\,\text{g}$, distance between the wires $r = 1.0\,\text{cm}$, the same current $I$ in both; $g = 9.81\,\text{m/s}^2$, $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
+**Given:** length of the upper wire $l = 0.50\,\text{m}$, mass $m = 3.0\,\text{g}$, distance between the wires $r = 1.0\,\text{cm}$, the same current $I$ in both; $g = 9.81\,\text{m/s}^2$, $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Find:** a) the directions of the currents and the current $I$ in amperes; b) whether the floating is stable in the vertical direction
 **Principle:** The upper wire floats when the forces on it cancel each other: the weight points down, so the force of the field of the lower wire must point up, that is, the wires must repel each other. Repulsion requires currents in opposite directions, because currents in the same direction would attract the wires towards each other. The field of the lower wire is perpendicular to the upper wire, so the force is $F = I l B_1$, where $B_1 = \dfrac{\mu_0 I}{2\pi r}$.
 **Formula:** $I l B_1 = m g$, that is, $\dfrac{\mu_0 I^2 l}{2\pi r} = m g$, so $I = \sqrt{\dfrac{2\pi r m g}{\mu_0 l}}$

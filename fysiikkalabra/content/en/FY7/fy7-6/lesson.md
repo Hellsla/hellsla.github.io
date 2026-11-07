@@ -242,9 +242,9 @@ Eddy currents always convert electrical energy into internal energy. In the iron
 ## Formula: Lenz's law and energy
 The minus sign in the law of induction from the chapter *Electromagnetic induction* is Lenz's law:
 ```latex
-e = -N \frac{\Delta \Phi}{\Delta t}
+e_\text{ka} = -N \frac{\Delta \Phi}{\Delta t}
 ```
-where $e$ is the induced voltage (V), $N$ the number of turns of the loop, $\Delta\Phi$ the change in magnetic flux (Wb) and $\Delta t$ the time taken by the change (s). The minus sign tells us that the field of the induced current opposes the change in flux. The magnitude is calculated without the sign, and the direction is deduced from Lenz's law.
+where $e_\text{ka}$ is the average induced voltage (V) in the time interval $\Delta t$, $N$ the number of turns of the loop, $\Delta\Phi$ the change in magnetic flux (Wb) and $\Delta t$ the time taken by the change (s). When the flux changes steadily, the voltage is constant, and it is written simply $e$. The minus sign tells us that the field of the induced current opposes the change in flux. The magnitude is calculated without the sign, and the direction is deduced from Lenz's law.
 
 Conservation of energy tells us where the energy of a falling magnet goes. When the magnet falls a height $h$, its potential energy decreases by $mgh$. Part of it is converted into kinetic energy, and the rest, through the eddy currents, into internal energy $Q$ of the tube:
 ```latex

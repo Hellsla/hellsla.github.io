@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: ceb1df2309580737
+CONTENT-HASH: 488060ce95071088
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] aurora-saana caption — "siksi revontulia näkyy Lapissa usein" is true but the photo itself shows no field; fine as a context photo, no change needed beyond optional "napa-alueilla" wording.
+- [Minor] lesson.md, Yleinen virhekäsitys — "…koska Maan pohjoista magneettista napaa kutsutaan magneettiseksi pohjoisnavaksi" is circular — e.g. "Moni päättelee nimestä *magneettinen pohjoisnapa*, että Maan pohjoisessa on magneetin pohjoisnapa, jonka luo neulan pohjoispää hakeutuu."
 
 ## Checked
-- Delta, round 1: rendered preview/fy7-N.html myself with playwright at 390 and 1280 px, scrolled each lazy photo into view (all loaded, naturalWidth 1600, no horizontal overflow; photo sits in the side column at 1280 and column width at 390, credit line visible), opened the per-photo crops and the full-size sources.
-- horseshoe-magnet-filings (390, 1280): filings clustered at the poles and drawn in arcs, as caption and alt say; sharp, white background, reads well small.
-- aurora-saana (390, 1280): green aurora over Saana as alt says; caption accurate (Kilpisjärvi, CC BY-SA credit shown).
-- Layout around both photos survived; hash unchanged at end.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+- Source diff since origin/main of lesson.md, inquiry.json, exit-ticket.json, meta.json, figures.json (and figures.py for fy7-8); no screenshots in light mode (parent runs the layout checks).
+- Bar-magnet model vs geomagnetic naming: Why-question, theory, new naming paragraph, misconception, summary, inquiry check-1 feedbacks; terms consistent (sauvamagneettimalli / magneettinen pohjoisnapa).
+- No paragraph changed in this round in fi exceeds about 120 words
+- Hash identical at start and end.

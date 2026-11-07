@@ -138,7 +138,7 @@
 ## fy7-7-L2-07
 **Annettu:** lampun teho $P = 60\,\text{W}$, verkkojännite $230\,\text{V}$; oppilaan ratkaisussa $230\,\text{V}$ on tulkittu huippuarvoksi ja virraksi on saatu $0{,}37\,\text{A}$
 **Kysytty:** a) oppilaan virhe, b) lampun virran tehollinen arvo $I$ ampeereina
-**Periaate:** Verkkojännite $230\,\text{V}$ on jo tehollinen arvo, koska vaihtojännite ilmoitetaan tehollisarvona. Keskimääräinen teho lasketaan tehollisarvoista kuten tasavirralla, $P = UI$, joten virran tehollinen arvo saadaan suoraan tehosta ja tehollisesta jännitteestä. Huippuarvolla ei tarvitse laskea mitään.
+**Periaate:** Verkkojännite $230\,\text{V}$ on jo tehollinen arvo, koska vaihtojännite ilmoitetaan tehollisarvona. Hehkulamppu on resistiivinen kuorma, joten keskimääräinen teho lasketaan tehollisarvoista kuten tasavirralla, $P = UI$, joten virran tehollinen arvo saadaan suoraan tehosta ja tehollisesta jännitteestä. Huippuarvolla ei tarvitse laskea mitään.
 **Kaava:** $P = UI$, josta $I = \dfrac{P}{U}$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $I = \dfrac{60\,\text{W}}{230\,\text{V}} = 0{,}2609\,\text{A}$

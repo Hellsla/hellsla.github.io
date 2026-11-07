@@ -1,10 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 6253b0cdb771b33d
+CONTENT-HASH: 56ec9ba1af892522
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] fy7-6 caption — "on a train" cannot be seen in the photo (a test bench with the brake unit); consider "An eddy current brake for a train bogie".
+- none
 
 ## Checked
-batch delta review: opened each new photo in assets/pics/fy7 and compared alt text and caption with it; rendered preview/en/fy7-6.html at 1280 px (figure floats right, 320 px wide, no overflow) and 390 px (full-width, below text, credit line present); captions physically correct and tied to the chapter, numbers with units in LaTeX.
+- Source diff since origin/main of lesson.md, inquiry.json, exit-ticket.json, meta.json, figures.json (and figures.py for fy7-8); no screenshots in light mode (parent runs the layout checks).
+- $e_\text{ka}$ formula and "average … in the time interval Δt" wording; steady-change sentence.
+- No paragraph changed in this round in en exceeds about 120 words
+- Hash identical at start and end.

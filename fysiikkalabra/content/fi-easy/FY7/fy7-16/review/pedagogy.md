@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: fe84213bdf68234e
+CONTENT-HASH: d2e65e166ed2dcc5
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- key_concepts "vaimennus" — P0, P, a and L are not defined in the box; add "P0 on teho kuidun alussa, P lopussa, a kuidun vaimennuskerroin (dB/km) ja L pituus", or drop A = aL from the box.
-- key_concepts "induktioliesi" — "teräs- tai valurautapohjaa" hides the condition that the pot must be ferromagnetic (lesson: aluminium/copper work poorly); say "ferromagneettista pohjaa, esimerkiksi terästä".
+- none
 
 ## Checked
-Box at 390 px fits (no horizontal scroll), five terms readable, dB maths consistent (10 dB -> 1/10, 3 dB -> 1/2). Wireless charging, eddy current and desibeli match lesson. Hash unchanged at end.
+- Diff: receiver-coil sentence describes the instantaneous voltage in words instead of the average formula; 47 % framed as one 2020 device comparison that depends on devices and alignment (text and summary); hob heading 'kattilan pohja toisiopuolena', many eddy-current paths instead of one shorted turn; household hobs designed for ferromagnetic bases, physics does not require it.
+- The source framing models how to read a single measurement; the ferromagnetic sentence is followed by the existing explanation why steel heats better, so no contradiction.
+- Language checked: fi-easy. fi-easy: the new text is in short, clear sentences and keeps every point of fi (nothing dropped). Hash d2e65e166ed2dcc5 at start and end.

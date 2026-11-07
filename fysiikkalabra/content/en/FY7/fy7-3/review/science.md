@@ -1,9 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: a9158b0333ee89b5
+CONTENT-HASH: e070b14b313b08c9
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-batch delta review: koe-1/koe-2 names translated (I current, N number of turns); keys, initial values, locked lists, units and measured keys B and n unchanged, so koe-1 still varies only l and koe-2 only x; no numbers, options or feedback touched.
+- Diff is only $\mu_0 = 4\pi\cdot10^{-7}$ → $\mu_0 \approx 4\pi\cdot10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$ (2 lesson lines, 3 inquiry lines per language; word-level diff checked: no other change). Correct after the 2019 SI revision; the measured-$\mu_0$ results ($\mu_0 = Al : N$) stay as equalities, which is right. LaTeX intact in all three languages. Hash identical at start and end.

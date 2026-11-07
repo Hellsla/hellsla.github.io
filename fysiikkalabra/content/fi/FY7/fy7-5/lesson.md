@@ -263,14 +263,14 @@ missä $\Phi$ on magneettivuo, $B$ magneettivuon tiheys (T) ja $A$ silmukan pint
 </svg>
 
 ## Kaava: Induktiolaki
-Faradayn havainnot tiivistyvät **induktiolakiin**: käämiin syntyvä induktiojännite on verrannollinen käämin läpi kulkevan magneettivuon muutosnopeuteen ja käämin kierrosten lukumäärään:
+Faradayn havainnot tiivistyvät **induktiolakiin**: käämiin syntyvä induktiojännite on verrannollinen käämin läpi kulkevan magneettivuon muutosnopeuteen ja käämin kierrosten lukumäärään. Käämin keskimääräinen induktiojännite aikavälillä $\Delta t$ on
 ```latex
-e = -N\frac{\Delta\Phi}{\Delta t}
+e_\text{ka} = -N\frac{\Delta\Phi}{\Delta t}
 ```
-missä $e$ on induktiojännite (V), $N$ käämin kierrosten lukumäärä, $\Delta\Phi$ yhden kierroksen läpi kulkevan magneettivuon muutos (Wb) ja $\Delta t$ aika (s), jonka kuluessa muutos tapahtuu. Kierrokset ovat sarjassa, joten jokainen kierros lisää jännitteeseen yhtä paljon. Yksiköt sopivat yhteen: $1\,\tfrac{\text{Wb}}{\text{s}} = 1\,\text{V}$. Miinusmerkki kertoo induktiojännitteen suunnan: se vastustaa muutosta, joka sen synnyttää. Suuntaa käsitellään luvussa *Lenzin laki ja pyörrevirrat*; jännitteen suuruus lasketaan yhtälöstä $|e| = N \cdot \Delta\Phi : \Delta t$.
+missä $e_\text{ka}$ on keskimääräinen induktiojännite (V), $N$ käämin kierrosten lukumäärä, $\Delta\Phi$ yhden kierroksen läpi kulkevan magneettivuon muutos (Wb) ja $\Delta t$ aika (s), jonka kuluessa muutos tapahtuu. Jos vuo muuttuu tasaisella nopeudella, induktiojännite on koko aikavälin vakio ja yhtä suuri kuin keskiarvonsa, ja silloin merkitään lyhyesti $e$. Jos vuo muuttuu epätasaisesti, jännitteen hetkellinen arvo riippuu vuon muutosnopeudesta juuri kyseisellä hetkellä: $e(t) = -N\,\tfrac{\mathrm{d}\Phi}{\mathrm{d}t}$. Kierrokset ovat sarjassa, joten jokainen kierros lisää jännitteeseen yhtä paljon. Yksiköt sopivat yhteen: $1\,\tfrac{\text{Wb}}{\text{s}} = 1\,\text{V}$. Miinusmerkki kertoo induktiojännitteen suunnan: se vastustaa muutosta, joka sen synnyttää. Suuntaa käsitellään luvussa *Lenzin laki ja pyörrevirrat*; jännitteen suuruus lasketaan yhtälöstä $|e_\text{ka}| = N \cdot |\Delta\Phi| : \Delta t$. Suuruus on aina positiivinen, myös silloin, kun vuo pienenee.
 
 ### Vuon kuvaaja ja jännite
-Osamäärä $\Delta\Phi : \Delta t$ on vuon kuvaajan $(t, \Phi)$ kulmakerroin. Induktiojännite ei siis riipu siitä, kuinka suuri vuo on, vaan siitä, kuinka jyrkästi se muuttuu. Alla kymmenen kierroksen käämi kulkee tasaisella vauhdilla magneettikentän alueen läpi. Kun käämi tulee kenttään, vuo kasvaa tasaisesti ja jännite on vakio. Kun käämi on kokonaan kentän sisällä, vuo on suurimmillaan mutta ei muutu, joten jännite on nolla. Kun käämi lähtee kentästä, vuo pienenee ja jännite on yhtä suuri mutta vastakkaismerkkinen.
+Osamäärä $\Delta\Phi : \Delta t$ on vuon kuvaajan $(t, \Phi)$ kulmakerroin; kun kuvaaja on kaareva, hetkellinen muutosnopeus on kuvaajan tangentin kulmakerroin. Induktiojännite ei siis riipu siitä, kuinka suuri vuo on, vaan siitä, kuinka jyrkästi se muuttuu. Alla kymmenen kierroksen käämi kulkee tasaisella vauhdilla magneettikentän alueen läpi. Kun käämi tulee kenttään, vuo kasvaa tasaisesti ja jännite on vakio. Kun käämi on kokonaan kentän sisällä, vuo on suurimmillaan mutta ei muutu, joten jännite on nolla. Kun käämi lähtee kentästä, vuo pienenee ja jännite on yhtä suuri mutta vastakkaismerkkinen.
 
 <svg data-fig="graph" viewBox="0 0 600 380" role="img" aria-label="Kaksi kuvaajaa mittakaavassa samalla aika-akselilla nollasta neljään sekuntiin. Kymmenen kierroksen neliön muotoinen käämi, sivu 0,10 m, kulkee vauhdilla 0,10 m/s magneettikentän 0,20 T alueen läpi. Ylempi kuvaaja: magneettivuo millivebereinä on nolla 0,5 sekuntiin asti, kasvaa tasaisesti arvoon 2,0 hetkellä 1,5 s, pysyy vakiona 2,5 sekuntiin ja pienenee tasaisesti nollaan hetkellä 3,5 s. Alempi kuvaaja: induktiojännite millivoltteina on nolla, kun vuo ei muutu, miinus 20 vuon kasvaessa ja plus 20 vuon pienentyessä. Katkoviivat hetkillä 0,5; 1,5; 2,5 ja 3,5 s yhdistävät kuvaajat." style="max-width:100%;font-size:24px">
   <line x1="141" y1="150" x2="141" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -480,7 +480,7 @@ Moni ajattelee, että magneettikenttä itse synnyttää jännitteen ja että voi
 ## Tiivistelmä
 - Sähkömagneettisessa induktiossa käämiin syntyy induktiojännite, kun sen läpi kulkeva magneettivuo muuttuu. Jos vuo ei muutu, jännitettä ei synny.
 - Magneettivuo on $\Phi = BA$, kun kenttä on kohtisuorassa silmukan tasoa vastaan; yksikkö on weber, $1\,\text{Wb} = 1\,\text{T}\cdot\text{m}^2$.
-- Induktiolaki: $e = -N \cdot \Delta\Phi : \Delta t$. Jännite on vuon kuvaajan kulmakerroin kerrottuna kierrosten lukumäärällä; miinusmerkki kertoo suunnan.
+- Induktiolaki: keskimääräinen induktiojännite on $e_\text{ka} = -N \cdot \Delta\Phi : \Delta t$, ja sen suuruus on $|e_\text{ka}| = N \cdot |\Delta\Phi| : \Delta t$. Kun vuo muuttuu tasaisesti, jännite on vakio ja yhtä suuri kuin keskiarvonsa; miinusmerkki kertoo suunnan.
 - Kenttää vastaan kohtisuoraan liikkuvan tangon päiden välinen jännite on $e = vBl$, koska magneettinen voima siirtää tangon elektroneja toiseen päähän.
 
 <svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Kuvitus: ravistelutaskulamppu pöydällä. Läpinäkyvän rungon sisällä on lieriön muotoinen magneetti ja rungon keskellä kuparinen käämi. Kun lamppua ravistellaan, magneetti liukuu käämin läpi edestakaisin, ja lampun etupään valodiodi loistaa." style="max-width:100%;font-size:24px">

@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: b7d2af821abef4eb
+CONTENT-HASH: a274d360a4620cf5
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- lesson.md "Effects of radiation" — one paragraph carries heating, ionisation and X-ray imaging; splitting it would help a phone reader.
+- none
 
 ## Checked
-- Round-1 blocker fixed: the sim region label now reads "infrared" (fresh fy7-9-sim-390.png); no Finnish word visible in the en sim. The duplicate closed box is gone too (three boxes now).
-- Path unchanged and sound: recap, two refutable predictions, sim, two experiments (min 3 and 2), conclusion, then theory; opening question not answered before commitment.
-- Slot goals met (accelerated charge and hot body as sources; black-body spectrum depends only on temperature); workload one lesson.
-- Worked example staged one step per stage with reasonableness; Find the error targets the Celsius mistake.
-- Tarkista: misconception distractors, mistake values, observable explain criteria; exit ticket tests the core idea.
+- Diff: 'klassisen sähkömagnetismin mukaan' for radiation from accelerated charges, one sentence that atoms and nuclei are treated in quantum physics, non-ionising UV can damage skin and eyes; summary 'klassisen mallin mukaan'.
+- The model statement sets the limit without a jump; the UV sentence corrects a likely misconception (only ionising radiation is harmful).
+- Round 2: en paragraph split only.
+- Language checked: en. Hash a274d360a4620cf5 at start and end.

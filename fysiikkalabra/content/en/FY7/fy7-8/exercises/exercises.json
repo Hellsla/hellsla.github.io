@@ -36,8 +36,8 @@
     {
       "id": "fy7-8-L1-05",
       "level": 1,
-      "text": "A current of $800\\,\\text{A}$ flows in a $400\\,\\text{kV}$ line of the transmission grid. How large a power does the line transmit? Give the answer in megawatts.",
-      "answer": 320.0,
+      "text": "A current of $800\\,\\text{A}$ flows in each phase conductor of a three-phase $400\\,\\text{kV}$ line of the transmission grid. The voltage $400\\,\\text{kV}$ is the line voltage between the phase conductors, and the power factor is $1$. How large a power does the line transmit? Give the answer in megawatts.",
+      "answer": 554.2563,
       "unit": "MW",
       "tolerance": 0.02
     },
@@ -101,7 +101,7 @@
       "id": "fy7-8-L2-01",
       "level": 2,
       "core": true,
-      "text": "A hydroelectric power plant transmits a power of $50\\,\\text{MW}$ at a voltage of $110\\,\\text{kV}$ to a substation. The total resistance of the conductors is $4.0\\,\\Omega$. How large a power becomes internal energy in the line? Give the answer in kilowatts.",
+      "text": "A hydroelectric power plant transmits a power of $50\\,\\text{MW}$ at a voltage of $110\\,\\text{kV}$ to a substation. The total resistance of the conductors is $4.0\\,\\Omega$. The transmission is described with the simplified two-wire model. How large a power becomes internal energy in the line? Give the answer in kilowatts.",
       "answer": 826.4463,
       "unit": "kW",
       "tolerance": 0.02
@@ -117,7 +117,7 @@
     {
       "id": "fy7-8-L2-03",
       "level": 2,
-      "text": "A power plant transmits a power of $100\\,\\text{MW}$ at a voltage of $220\\,\\text{kV}$ along a line whose total conductor resistance is $4.8\\,\\Omega$. What percentage of the transmitted power becomes internal energy in the line?",
+      "text": "A power plant transmits a power of $100\\,\\text{MW}$ at a voltage of $220\\,\\text{kV}$ along a line whose total conductor resistance is $4.8\\,\\Omega$. The transmission is described with the simplified two-wire model. What percentage of the transmitted power becomes internal energy in the line?",
       "answer": 0.9917,
       "unit": "%",
       "tolerance": 0.02
@@ -239,7 +239,7 @@
       "kind": [
         "reasoning"
       ],
-      "text": "The generator of a wind turbine produces a power of $3.0\\,\\text{MW}$ at a voltage of $690\\,\\text{V}$. The transformer of the turbine raises the voltage to $20\\,\\text{kV}$, and the power is transmitted along a cable to a substation. The total resistance of the conductors of the cable is $0.50\\,\\Omega$. The values are example values, and the transformer is assumed to be ideal.\n\nWhat is the order of magnitude of the power loss $P_\\text{h}$ that turns into heat in the cable?",
+      "text": "The generator of a wind turbine produces a power of $3.0\\,\\text{MW}$ at a voltage of $690\\,\\text{V}$. The transformer of the turbine raises the voltage to $20\\,\\text{kV}$, and the power is transmitted along a cable to a substation. The total resistance of the conductors of the cable is $0.50\\,\\Omega$. The values are example values, the transformer is assumed to be ideal, and the transmission is described with the simplified two-wire model.\n\nWhat is the order of magnitude of the power loss $P_\\text{h}$ that turns into heat in the cable?",
       "answer": "about $10\\,\\text{kW}$",
       "unit": "",
       "tolerance": 0.02,
@@ -268,7 +268,7 @@
     {
       "id": "fy7-8-L3-01",
       "level": 3,
-      "text": "The generator of a power plant produces a power of $150\\,\\text{MW}$ at a voltage of $20\\,\\text{kV}$. An ideal transformer raises the voltage to $400\\,\\text{kV}$, and the electricity is transmitted along a line whose total conductor resistance is $8.0\\,\\Omega$. What percentage of the power becomes internal energy in the line?",
+      "text": "The generator of a power plant produces a power of $150\\,\\text{MW}$ at a voltage of $20\\,\\text{kV}$. An ideal transformer raises the voltage to $400\\,\\text{kV}$, and the electricity is transmitted along a line whose total conductor resistance is $8.0\\,\\Omega$. The transmission is described with the simplified two-wire model. What percentage of the power becomes internal energy in the line?",
       "answer": 0.75,
       "unit": "%",
       "tolerance": 0.02
@@ -276,7 +276,7 @@
     {
       "id": "fy7-8-L3-02",
       "level": 3,
-      "text": "A $400\\,\\text{kV}$ power line is being planned to transmit a power of $400\\,\\text{MW}$. The power loss of the line may be at most $1.0\\,\\%$ of the transmitted power. What is the greatest total resistance the conductors may have?",
+      "text": "A $400\\,\\text{kV}$ power line is being planned to transmit a power of $400\\,\\text{MW}$. The power loss of the line may be at most $1.0\\,\\%$ of the transmitted power. The transmission is described with the simplified two-wire model. What is the greatest total resistance the conductors may have?",
       "answer": 4.0,
       "unit": "Ω",
       "tolerance": 0.02
@@ -284,7 +284,7 @@
     {
       "id": "fy7-8-L3-03",
       "level": 3,
-      "text": "An old $220\\,\\text{kV}$ power line is converted into a $400\\,\\text{kV}$ line so that the conductors and their resistance remain the same. How many times the power can the same line transmit, if the power loss is still to be the same share of the transmitted power as before?",
+      "text": "An old $220\\,\\text{kV}$ power line is converted into a $400\\,\\text{kV}$ line so that the conductors and their resistance remain the same. The transmission is described with the simplified two-wire model. How many times the power can the same line transmit, if the power loss is still to be the same share of the transmitted power as before?",
       "answer": 3.3058,
       "unit": "times",
       "tolerance": 0.02
@@ -292,7 +292,7 @@
     {
       "id": "fy7-8-L3-04",
       "level": 3,
-      "text": "A designer compares two ways of transmitting the power of a wind farm to a substation $150\\,\\text{km}$ away. Option A is a $220\\,\\text{kV}$ line and option B a $400\\,\\text{kV}$ line, with similar conductors in both.\n\nAssume that the transmitted power is a constant $200\\,\\text{MW}$ throughout the year, $8760\\,\\text{h}$. The total resistance of the conductors is $0.040\\,\\Omega$ per kilometre of line. The figures are example data.\n\na) Calculate the resistance of the conductors and the current of the line in each option.\n\nb) Calculate the power loss and the energy lost in the line in a year in each option, in megawatt-hours.\n\nc) The price of electricity is $50\\,\\text{€/MWh}$. How many million euros a year does option B save in the value of the lost energy compared with option A? In addition, justify in writing why the loss is smaller even though the transmitted power is the same.\n\nIn the answer box give the saving from part c) in millions of euros.",
+      "text": "A designer compares two ways of transmitting the power of a wind farm to a substation $150\\,\\text{km}$ away. Option A is a $220\\,\\text{kV}$ line and option B a $400\\,\\text{kV}$ line, with similar conductors in both.\n\nAssume that the transmitted power is a constant $200\\,\\text{MW}$ throughout the year, $8760\\,\\text{h}$. The total resistance of the conductors is $0.040\\,\\Omega$ per kilometre of line. The figures are example data, and the transmission is described with the simplified two-wire model.\n\na) Calculate the resistance of the conductors and the current of the line in each option.\n\nb) Calculate the power loss and the energy lost in the line in a year in each option, in megawatt-hours.\n\nc) The price of electricity is $50\\,\\text{€/MWh}$. How many million euros a year does option B save in the value of the lost energy compared with option A? In addition, justify in writing why the loss is smaller even though the transmitted power is the same.\n\nIn the answer box give the saving from part c) in millions of euros.",
       "kind": [
         "model",
         "reasoning"

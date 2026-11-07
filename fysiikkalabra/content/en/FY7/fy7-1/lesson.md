@@ -1,6 +1,6 @@
 # Magnets, the magnetic dipole and the magnetic field
 
-> **Why** does a compass needle in the forest always point north, but swing away the moment a magnet is brought next to it?
+> **Why** does a compass needle in the forest usually point roughly north, but swing away the moment a magnet is brought next to it?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: an orienteering map on a rock in a spruce forest. A compass lies on the map, and beside it a bar magnet with its reddish and blue ends visible. The compass needle has turned towards the magnet and does not point in the direction of the north arrow of the map." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy71h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><linearGradient id="fy71h-moss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b2f2bb"/><stop offset="1" stop-color="#e9c98a"/></linearGradient></defs>
@@ -281,7 +281,9 @@ The field is visualised with **field lines**. The direction of a field line at e
 <figure class="unit-photo"><img src="pics/fy7/horseshoe-magnet-filings.webp" alt="A horseshoe magnet with iron filings clinging in dense arcs and tufts at and around its poles."><figcaption>Iron filings around a horseshoe magnet. Each grain becomes magnetised and lines up with the field, so the filings trace out the field lines. Most filings gather at the poles, where the field is strongest.</figcaption></figure>
 
 ### The Earth's magnetic field
-The Earth has a magnetic field that resembles the field of a bar magnet. It arises from the motions of molten iron in the Earth's outer core and the electric currents associated with them. The north end of a compass needle turns towards geographic north. Because unlike poles attract each other, the Earth's magnetic **south pole** $\text{S}$ is near the geographic North Pole, and the magnetic north pole $\text{N}$ is near the geographic South Pole.
+The Earth has a magnetic field that resembles the field of a bar magnet. It arises from the motions of molten iron in the Earth's outer core and the electric currents associated with them. The north end of a compass needle turns towards geographic north. Because unlike poles attract each other, near the geographic North Pole the direction of the Earth's field corresponds to the field of the **south pole** $\text{S}$ of a bar magnet, and near the geographic South Pole to the field of the north pole $\text{N}$ of a bar magnet.
+
+In geomagnetism and navigation, however, the magnetic pole in the northern hemisphere is called the **magnetic north pole**. The names come from different points of view: in the bar-magnet model a pole is named after its field, in navigation after its location. The needle points only roughly to geographic north, because the magnetic pole is not at the geographic pole and local disturbances affect the direction.
 
 The magnetic poles are not exactly at the geographic poles, and they wander slowly. A compass therefore deviates from true north: in Finland at present about $10^\circ$ east in the south and about $15^\circ$ east in Lapland. In Finland the field lines also dip steeply towards the ground, about $73^\circ$–$79^\circ$ below the horizontal. This angle is called the **inclination**.
 
@@ -452,7 +454,7 @@ B_\text{m} &= B_\text{h}\tan\theta \\
 **Reasonableness.** At an angle of $45^\circ$ the field of the magnet would equal $B_\text{h}$. The angle is greater than $45^\circ$, so $B_\text{m}$ is greater than $14\,\mu\text{T}$, as the result is. The total field is $\sqrt{(14\,\mu\text{T})^2 + (17.9\,\mu\text{T})^2} \approx 22.7\,\mu\text{T}$, and $B_\text{h} : \cos 52^\circ$ gives the same. The field is of the order of magnitude of the Earth's field, which fits a magnet about ten centimetres away.
 
 ## Common misconception
-Many people think that the Earth's magnetic north pole is near the geographic North Pole, because the compass points there. However, the north end of a compass needle is the north pole of a magnet, and it is attracted by an unlike pole. So the magnetic pole near the geographic North Pole is a south pole.
+Many people think that the north end of a compass needle seeks the north pole of a bar magnet, because the Earth's northern magnetic pole is called the magnetic north pole. However, the north end of a compass needle is the north pole of a magnet, and it is attracted by an unlike pole. So in the bar-magnet model the pole near the geographic North Pole is a south pole, although in geomagnetism it is called the magnetic north pole.
 
 Another mistake is to think that the poles of a magnet can be separated by cutting the magnet in the middle. Two new poles appear at the cut, and each piece becomes a complete dipole. A third mistake is to think that a magnet attracts all metals. An aluminium can or a copper coin does not stick to a magnet, because they are not ferromagnetic.
 
@@ -462,7 +464,7 @@ In calculations the most common mistake is to add perpendicular fields like plai
 - A magnet always has two poles, a north pole $\text{N}$ and a south pole $\text{S}$: it is a magnetic dipole. Like poles repel and unlike poles attract each other, and a single pole has never been observed.
 - In ferromagnetic materials, such as iron, the atomic dipoles form magnetic domains. The field of a magnet aligns them, so the material becomes magnetised and the magnet attracts it.
 - The direction of a magnetic field is the direction in which the north end of a compass needle points. Outside a magnet the field lines run from the north pole to the south pole, and their density tells the strength of the field.
-- The Earth's magnetic south pole is near the geographic North Pole. In Finland the Earth's field is about $52\,\mu\text{T}$ and points steeply into the ground.
+- In the bar-magnet model there is a south pole near the geographic North Pole, although in geomagnetism it is called the magnetic north pole. In Finland the Earth's field is about $52\,\mu\text{T}$ and points steeply into the ground.
 - Magnetic flux density $\overline{B}$ is a vector whose unit is the tesla $\text{T}$. Fields add as vectors: for perpendicular fields $B = \sqrt{B_1^2 + B_2^2}$ and $\tan\theta = B_2 : B_1$.
 
 <svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Illustration: a fridge door where magnets hold a child&#x27;s drawing and a shopping list. The steel sheet of the door attracts the magnets." style="max-width:100%;font-size:24px">

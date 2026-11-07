@@ -1,19 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 42fc97841a2c002d
-Mode: full (translation review against the reviewed Finnish set)
-Round 2
+CONTENT-HASH: cca2804aaa8edd9c
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
-
-## Fixed
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- NOTES.md §12: clearer Finnish, short sentences, 'ideaaliseksi eli häviöttömäksi' / 'suuruusluokka' explained, same physics.
-- New task L1-09: prompt, options, feedback and solution (Kysytty/Periaate/Mallivastaus, Reasonableness) keep the fi level, order and staging; feedback repairs the misconception without giving the answer away before the choice.
-- Terminology consistent with the lesson and the rest of the set.
-- Figures (where the task has them): descriptions translated, no answer disclosed beyond fi.
+- Diff: L2-07 solution Periaate now says the incandescent lamp is a resistive load before P = UI. Clear reason, no step lost; task text unchanged.
+- Language checked: fi-easy. fi-easy: the new text is in short, clear sentences and keeps every point of fi (nothing dropped). Hash cca2804aaa8edd9c at start and end.

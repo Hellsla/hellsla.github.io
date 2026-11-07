@@ -1,11 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 07c2f07e831f95f0
+CONTENT-HASH: f3f619028352a996
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] horseshoe-magnet photo caption: "the filings trace out the field lines" — the photo shows mostly tufts at the poles and a sparse scatter, so the field lines are hardly visible — soften to "begin to trace".
-- [Minor] both photos render at about 320 px wide, left-aligned beside blank space at 1280 px; consistent across the four lessons, so only a note.
+- [Minor] lesson.md, misconception — "because the Earth's northern magnetic pole is called the magnetic north pole" is circular — e.g. "Many people conclude from the name *magnetic north pole* that the north pole of a magnet lies in the north and attracts the north end of the needle."
 
 ## Checked
-batch delta review: rendered preview/en/fy7-1.html at 390 and 1280 px (packet captures omit the photos), opened both unit-photo figures; caption and alt match the images (aurora over Saana, credit lines shown), no overflow, rest of layout untouched.
+- Source diff since origin/main of lesson.md, inquiry.json, exit-ticket.json, meta.json, figures.json (and figures.py for fy7-8); no screenshots in light mode (parent runs the layout checks).
+- Bar-magnet model vs geomagnetic naming: Why-question, theory, new naming paragraph, misconception, summary, inquiry check-1 feedbacks; terms consistent (sauvamagneettimalli / magneettinen pohjoisnapa).
+- No paragraph changed in this round in en exceeds about 120 words
+- Hash identical at start and end.

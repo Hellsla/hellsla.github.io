@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 1c8a05ab21bb5bf4
+CONTENT-HASH: 647388c3ad9838b2
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- Runko sanoo välillä käämi, fy7-4 kela; sanat pysyvät johdonmukaisina lukujen sisällä, ei estä.
+- none
 
 ## Checked
-batch delta review: meta.json key_concepts diff in context of the lesson text; "Pitkän käämin sisällä, kaukana sen päistä" on tarkka ja kolmeen kuvaan (pitkä käämi pituussuunnassa leikattuna) sopiva; selkeä nuorelle.
+- Diff is only mu0 = -> \approx in the lesson text, worked example, inquiry calc text and solutions (2019 SI); nothing else changed.
+- The approx sign does not change any step or number; the worked steps read the same.
+- Language checked: fi-easy. fi-easy: the new text is in short, clear sentences and keeps every point of fi (nothing dropped). Hash 647388c3ad9838b2 at start and end.

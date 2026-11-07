@@ -111,8 +111,8 @@
 
 ## fy7-1-L1-07
 **Kysytty:** mitä kompassin neulan pohjoispään suunta kertoo Maan magneettisista navoista
-**Periaate:** Neulan pohjoispää on magneetin pohjoisnapa. Samannimiset navat hylkivät toisiaan, ja erinimiset navat vetävät toisiaan. Siksi neulan pohjoispäätä vetää puoleensa Maan magneettinen etelänapa.
-**Mallivastaus:** Neulan pohjoispää kääntyy kohti maantieteellistä pohjoista. Siellä oleva napa vetää sitä puoleensa. Neulan pohjoispää on pohjoisnapa, ja erinimiset navat vetävät toisiaan. Siksi maantieteellisen pohjoisnavan lähellä on Maan magneettinen etelänapa. Neula on magneetti, ja Maan magneettikenttä kääntää sitä. Maan pyöriminen, painovoima tai kitka ei käännä sitä. Oikea vaihtoehto on se, joka päättelee navan nimen erinimisten napojen vetovoimasta. Samannimisen navan hakeutuminen, pyörimisakseli ja napojen puuttuminen eivät kuulu Maan kentän selitykseen.
+**Periaate:** Neulan pohjoispää on magneetin pohjoisnapa. Samannimiset navat hylkivät toisiaan, ja erinimiset navat vetävät toisiaan. Siksi neulan pohjoispäätä vetää puoleensa sauvamagneettimallin etelänapa.
+**Mallivastaus:** Neulan pohjoispää kääntyy kohti maantieteellistä pohjoista. Siellä oleva napa vetää sitä puoleensa. Neulan pohjoispää on pohjoisnapa, ja erinimiset navat vetävät toisiaan. Siksi sauvamagneettimallissa maantieteellisen pohjoisnavan lähellä on etelänapa. Geomagnetismissa ja navigoinnissa tätä napaa kutsutaan kuitenkin magneettiseksi pohjoisnavaksi, koska nimi perustuu sijaintiin. Neula on magneetti, ja Maan magneettikenttä kääntää sitä. Maan pyöriminen, painovoima tai kitka ei käännä sitä. Oikea vaihtoehto on se, joka päättelee navan nimen erinimisten napojen vetovoimasta. Samannimisen navan hakeutuminen, pyörimisakseli ja napojen puuttuminen eivät kuulu Maan kentän selitykseen.
 
 ## fy7-1-L1-08
 **Annettu:** Maan kentän magneettivuon tiheys $B = 53\,\mu\text{T}$, inklinaatio $I = 76\,{}^\circ$ vaakatason alapuolelle
@@ -185,6 +185,6 @@
 
 3 tosi: ulkona viivat kulkevat $\text{N}$:stä $\text{S}$:ään ja sisällä $\text{S}$:stä $\text{N}$:ään. Siksi jokainen viiva sulkeutuu itseensä. Tämä sopii siihen, ettei yksittäisiä napoja ole.
 
-4 tosi: magneetin $\text{N}$-pää kääntyy maantieteelliseen pohjoiseen. Erinimiset navat vetävät toisiaan, joten siellä on Maan magneettinen etelänapa.
+4 tosi: magneetin $\text{N}$-pää kääntyy maantieteelliseen pohjoiseen. Erinimiset navat vetävät toisiaan, joten siellä on sauvamagneettimallin etelänapa (geomagnetismissa magneettinen pohjoisnapa).
 
 5 epätosi: kahden magneetin välissä vaikuttaa yksi kokonaiskenttä $\overline{B} = \overline{B}_1 + \overline{B}_2$. Sillä on jokaisessa pisteessä vain yksi suunta, joten kenttäviivat eivät leikkaa toisiaan. Rautaviila näyttää kokonaiskentän viivat, jotka kaartuvat magneettien välissä.

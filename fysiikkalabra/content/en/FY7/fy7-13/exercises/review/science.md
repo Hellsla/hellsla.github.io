@@ -1,18 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: e005c7abda740c4e
-Mode: full (translation review against the reviewed Finnish set)
-Round 2
+CONTENT-HASH: 92a6c24e78a8af80
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- New task fy7-13-L2-08 (a change prediction (1.5 times)) compared with content/fi: id, level, kind, answer, unit, tolerance, correct flag and every number in text, choices, feedback and solution identical (decimal point in en).
-- Answer recomputed independently: a change prediction (1.5 times); equals the json and the solution; exactly one correct choice or the correct order, as in fi.
-- Every wrong option's feedback states a real misconception and its physics is right, as in fi.
-- All other exercises: structure and all numbers equal to fi by script (reordered sentences only); no English decimal commas in en.
-- Natural English; terms as in the earlier en exercises.
-- check_i18n.py: nothing for fy7-13; build.py fy7-13 succeeds.
+- Diff is one safety sentence in L3-02 and L3-05 (reflected beams not into eyes); physics right, task data and answers unchanged (L3-02 1.5988 um, answers.py untouched). Language checked: en.

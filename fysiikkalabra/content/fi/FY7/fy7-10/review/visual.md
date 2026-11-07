@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: aea3efed31ff10d4
+CONTENT-HASH: f7bbaabd76044508
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only; round 2 after the fixes to the round-1 findings)
 
 ## Blocking
+- none
 
 ## Polish
-
+- [Minor] lesson.md — "rajapinnassa … läpäisee rajapinnan" repeats the noun; e.g. "…osa valosta heijastuu ja osa menee läpi".
 
 ## Checked
-batch delta review: opened the image file(s) (pencil-in-water) and rendered unit-photo with caption at 1280 px (float right, 320 px wide, inside column, no clipping) and 390 px (stacked, no horizontal overflow); alt text matches what is visible, caption physically sound and tied to the chapter, Finnish natural, number+unit in LaTeX.
+- Source diff since origin/main plus the round-2 diff (scratchpad round2.diff); no screenshots in light mode (parent runs the layout checks).
+- Exception wording now "Tähän on kuitenkin poikkeuksia:" / "Tähän on kuitenkin poikkeuksia." / "There are exceptions, however:", which fits both total internal reflection and Brewster; chapter titles exact.
+- Hash identical at start and end of this round.

@@ -263,14 +263,18 @@ where $\Phi$ is the magnetic flux, $B$ the magnetic flux density (T) and $A$ the
 </svg>
 
 ## Formula: Faraday's law of induction
-Faraday's observations are summarised in **Faraday's law of induction**: the induced voltage in a coil is proportional to the rate of change of the magnetic flux through the coil and to the number of turns of the coil:
+Faraday's observations are summarised in **Faraday's law of induction**: the induced voltage in a coil is proportional to the rate of change of the magnetic flux through the coil and to the number of turns of the coil. The average induced voltage of a coil in the time interval $\Delta t$ is
 ```latex
-e = -N\frac{\Delta\Phi}{\Delta t}
+e_\text{ka} = -N\frac{\Delta\Phi}{\Delta t}
 ```
-where $e$ is the induced voltage (V), $N$ the number of turns of the coil, $\Delta\Phi$ the change in the magnetic flux through one turn (Wb) and $\Delta t$ the time (s) in which the change takes place. The turns are in series, so each turn adds the same amount to the voltage. The units fit together: $1\,\tfrac{\text{Wb}}{\text{s}} = 1\,\text{V}$. The minus sign gives the direction of the induced voltage: it opposes the change that produces it. The direction is discussed in the chapter *Lenz's law and eddy currents*; the magnitude of the voltage is calculated from the equation $|e| = N \cdot \Delta\Phi : \Delta t$.
+where $e_\text{ka}$ is the average induced voltage (V), $N$ the number of turns of the coil, $\Delta\Phi$ the change in the magnetic flux through one turn (Wb) and $\Delta t$ the time (s) in which the change takes place.
+
+If the flux changes at a steady rate, the induced voltage is constant over the whole interval and equal to its average, and then it is written simply $e$. If the flux changes unevenly, the instantaneous value of the voltage depends on the rate of change of the flux at that very moment: $e(t) = -N\,\tfrac{\mathrm{d}\Phi}{\mathrm{d}t}$.
+
+The turns are in series, so each turn adds the same amount to the voltage. The units fit together: $1\,\tfrac{\text{Wb}}{\text{s}} = 1\,\text{V}$. The minus sign gives the direction of the induced voltage: it opposes the change that produces it. The direction is discussed in the chapter *Lenz's law and eddy currents*; the magnitude of the voltage is calculated from the equation $|e_\text{ka}| = N \cdot |\Delta\Phi| : \Delta t$. The magnitude is always positive, also when the flux decreases.
 
 ### The flux graph and the voltage
-The quotient $\Delta\Phi : \Delta t$ is the slope of the flux graph $(t, \Phi)$. The induced voltage therefore does not depend on how large the flux is but on how steeply it changes. In the graph below, a coil of ten turns moves at a steady speed through a region of magnetic field. When the coil enters the field, the flux grows steadily and the voltage is constant. When the coil is completely inside the field, the flux is at its greatest but does not change, so the voltage is zero. When the coil leaves the field, the flux decreases and the voltage is equal in size but opposite in sign.
+The quotient $\Delta\Phi : \Delta t$ is the slope of the flux graph $(t, \Phi)$; when the graph is curved, the instantaneous rate of change is the slope of the tangent of the graph. The induced voltage therefore does not depend on how large the flux is but on how steeply it changes. In the graph below, a coil of ten turns moves at a steady speed through a region of magnetic field. When the coil enters the field, the flux grows steadily and the voltage is constant. When the coil is completely inside the field, the flux is at its greatest but does not change, so the voltage is zero. When the coil leaves the field, the flux decreases and the voltage is equal in size but opposite in sign.
 
 <svg data-fig="graph" viewBox="0 0 600 380" role="img" aria-label="Two graphs to scale on the same time axis from zero to four seconds. A square coil of ten turns, side 0.10 m, moves at a speed of 0.10 m/s through a region of magnetic field of 0.20 T. Upper graph: the magnetic flux in milliwebers is zero until 0.5 seconds, grows steadily to 2.0 at 1.5 s, stays constant until 2.5 seconds and decreases steadily to zero at 3.5 s. Lower graph: the induced voltage in millivolts is zero when the flux does not change, minus 20 while the flux grows and plus 20 while the flux decreases. Dashed lines at 0.5, 1.5, 2.5 and 3.5 s link the graphs." style="max-width:100%;font-size:24px">
   <line x1="141" y1="150" x2="141" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -480,7 +484,7 @@ Many people think that the magnetic field itself produces a voltage and that a s
 ## Summary
 - In electromagnetic induction, an induced voltage appears in a coil when the magnetic flux through it changes. If the flux does not change, no voltage appears.
 - The magnetic flux is $\Phi = BA$ when the field is perpendicular to the plane of the loop; the unit is the weber, $1\,\text{Wb} = 1\,\text{T}\cdot\text{m}^2$.
-- Faraday's law: $e = -N \cdot \Delta\Phi : \Delta t$. The voltage is the slope of the flux graph multiplied by the number of turns; the minus sign gives the direction.
+- Faraday's law: the average induced voltage is $e_\text{ka} = -N \cdot \Delta\Phi : \Delta t$, and its magnitude is $|e_\text{ka}| = N \cdot |\Delta\Phi| : \Delta t$. When the flux changes steadily, the voltage is constant and equal to its average; the minus sign gives the direction.
 - The voltage between the ends of a rod moving perpendicular to the field is $e = vBl$, because the magnetic force moves the electrons of the rod to one end.
 
 <svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Illustration: a shake-powered torch on a table. Inside the transparent body is a cylindrical magnet, and in the middle of the body is a copper coil. When the torch is shaken, the magnet slides back and forth through the coil, and the LED at the front of the torch shines." style="max-width:100%;font-size:24px">

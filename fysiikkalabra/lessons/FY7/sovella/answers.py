@@ -46,7 +46,7 @@ k = (110 / 20) ** 2                                   # d) how many times smalle
 A_need = A * Ph20 / Ph110
 d_need = 2 * math.sqrt(A_need / math.pi)
 mass_old = dens * L * A; mass_new = dens * L * A_need
-out.update({"fy7-s3-R": round(R, 3), "fy7-s3-I20": I20, "fy7-s3-a": round(Ph20 / 1e3, 2), "fy7-s3-a-rel": round(Ph20 / P * 100, 2),
+out.update({"fy7-s3-R": round(R, 3), "fy7-s3-I20": I20, "fy7-s3-a-Ph": round(Ph20 / 1e3, 2), "fy7-s3-a-rel": round(Ph20 / P * 100, 2),
             "fy7-s3-I110": round(I110, 3), "fy7-s3-b": round(Ph110 / 1e3, 3), "fy7-s3-b-rel": round(Ph110 / P * 100, 3),
             "fy7-s3-dU20": round(dU20, 1), "fy7-s3-c": round((20e3 - dU20) / 1e3, 3), "fy7-s3-c-rel": round(dU20 / 20e3 * 100, 2), "fy7-s3-dU110": round(dU110, 1), "fy7-s3-dU110-rel": round(dU110 / 110e3 * 100, 3), "fy7-s3-k": k, "fy7-s3-Aneed": round(A_need * 1e6, 1),
             "fy7-s3-dneed": round(d_need * 100, 2), "fy7-s3-mold": round(mass_old / 1e3, 2), "fy7-s3-mnew": round(mass_new / 1e3, 1)})

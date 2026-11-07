@@ -268,9 +268,9 @@ Sama ajatus näkyy kupariputkessa, johon on sahattu pitkittäinen rako. Rako kat
 ## Kaava: Lenzin laki ja energia
 Luvun *Sähkömagneettinen induktio* induktiolain miinusmerkki on Lenzin laki:
 ```latex
-e = -N \frac{\Delta \Phi}{\Delta t}
+e_\text{ka} = -N \frac{\Delta \Phi}{\Delta t}
 ```
-Kaavassa $e$ on induktiojännite (V), $N$ on silmukan kierrosten lukumäärä, $\Delta\Phi$ on magneettivuon muutos (Wb) ja $\Delta t$ on muutokseen kulunut aika (s). Miinusmerkki kertoo, että induktiovirran kenttä vastustaa vuon muutosta. Suuruus lasketaan ilman merkkiä. Suunta päätellään Lenzin laista.
+Kaavassa $e_\text{ka}$ on keskimääräinen induktiojännite (V) aikavälillä $\Delta t$, $N$ on silmukan kierrosten lukumäärä, $\Delta\Phi$ on magneettivuon muutos (Wb) ja $\Delta t$ on muutokseen kulunut aika (s). Kun vuo muuttuu tasaisesti, jännite on vakio. Silloin merkitään lyhyesti $e$. Miinusmerkki kertoo, että induktiovirran kenttä vastustaa vuon muutosta. Suuruus lasketaan ilman merkkiä. Suunta päätellään Lenzin laista.
 
 Energian säilyminen kertoo, mihin putoavan magneetin energia menee. Kun magneetti putoaa korkeuden $h$, sen potentiaalienergia pienenee määrän $mgh$. Osa tästä energiasta muuttuu liike-energiaksi. Loput muuttuu pyörrevirtojen kautta putken sisäenergiaksi $Q$:
 ```latex

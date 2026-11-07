@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "contribution": "Käämiin syntyy jännite vain, kun sen läpi kulkeva magneettivuo muuttuu. Luvussa on kolme asiaa. Magneettivuo on $\\Phi = BA$. Induktiolaki on $e = -N \\cdot \\Delta\\Phi : \\Delta t$, ja jännite on vuon kuvaajan kulmakerroin. Liikkuvan tangon jännite $e = vBl$ johdetaan tangon elektroneihin kohdistuvasta magneettisesta voimasta. Simulaatiossa käämi kulkee kenttäalueen läpi, ja kuvaajat $\\Phi(t)$ ja $e(t)$ piirtyvät.",
+  "contribution": "Käämiin syntyy jännite vain, kun sen läpi kulkeva magneettivuo muuttuu. Luvussa on kolme asiaa. Magneettivuo on $\\Phi = BA$. Induktiolaki on $e_\\text{ka} = -N \\cdot \\Delta\\Phi : \\Delta t$, ja jännite on vuon kuvaajan kulmakerroin. Liikkuvan tangon jännite $e = vBl$ johdetaan tangon elektroneihin kohdistuvasta magneettisesta voimasta. Simulaatiossa käämi kulkee kenttäalueen läpi, ja kuvaajat $\\Phi(t)$ ja $e(t)$ piirtyvät.",
   "learn": [
     "laskemaan magneettivuon ja käämiin syntyvän induktiojännitteen induktiolain avulla.",
     "päättelemään induktiojännitteen magneettivuon kuvaajan kulmakertoimesta.",
@@ -190,7 +190,7 @@
         "koe-2"
       ],
       "prompt": "Kirjoita taulukoidesi perusteella, miten sisääntulon jännite riippuu käämin vauhdista ja kierrosten lukumäärästä. Kirjoita myös, mitä jännite on, kun käämi on kokonaan kentän sisällä. Mitä huomaat tulosta $e \\cdot \\Delta t$ kokeessa 1? Vertaa sitä yhden kierroksen suurimpaan vuohon $2{,}0\\,\\text{mWb}$ ja kierrosten lukumäärään.",
-      "model": "Kokeessa 1 sisääntulon jännite oli vauhdilla $0{,}10\\,\\text{m/s}$ $-20{,}0\\,\\text{mV}$ ja vauhdilla $0{,}20\\,\\text{m/s}$ $-40{,}0\\,\\text{mV}$. Jännite on siis verrannollinen vauhtiin. Sisääntulo kesti vastaavasti $1{,}00\\,\\text{s}$ ja $0{,}50\\,\\text{s}$, joten tulo $e \\cdot \\Delta t = -20\\,\\text{mV}\\cdot\\text{s}$ pysyi samana. Se on $-N\\Delta\\Phi = -10 \\cdot 2{,}0\\,\\text{mWb} = -20\\,\\text{mWb}$, koska $1\\,\\text{mV}\\cdot\\text{s} = 1\\,\\text{mWb}$. Jännite on siis $e = -N \\cdot \\Delta\\Phi : \\Delta t$. Sama vuon muutos nopeammin antaa suuremman jännitteen. Kokeessa 2 jännite oli $5$ kierroksella $-10{,}0\\,\\text{mV}$ ja $20$ kierroksella $-40{,}0\\,\\text{mV}$. Jännite on siis verrannollinen kierrosten lukumäärään. Kun käämi oli kokonaan kentän sisällä, jännite oli nolla, koska vuo ei muuttunut. Arvot ovat mallin laskemia.",
+      "model": "Kokeessa 1 sisääntulon jännite oli vauhdilla $0{,}10\\,\\text{m/s}$ $-20{,}0\\,\\text{mV}$ ja vauhdilla $0{,}20\\,\\text{m/s}$ $-40{,}0\\,\\text{mV}$. Jännite on siis verrannollinen vauhtiin. Sisääntulo kesti vastaavasti $1{,}00\\,\\text{s}$ ja $0{,}50\\,\\text{s}$, joten tulo $e \\cdot \\Delta t = -20\\,\\text{mV}\\cdot\\text{s}$ pysyi samana. Se on $-N\\Delta\\Phi = -10 \\cdot 2{,}0\\,\\text{mWb} = -20\\,\\text{mWb}$, koska $1\\,\\text{mV}\\cdot\\text{s} = 1\\,\\text{mWb}$. Vuo muuttui tasaisesti, joten jännite on $e = -N \\cdot \\Delta\\Phi : \\Delta t$. Sama vuon muutos nopeammin antaa suuremman jännitteen. Kokeessa 2 jännite oli $5$ kierroksella $-10{,}0\\,\\text{mV}$ ja $20$ kierroksella $-40{,}0\\,\\text{mV}$. Jännite on siis verrannollinen kierrosten lukumäärään. Kun käämi oli kokonaan kentän sisällä, jännite oli nolla, koska vuo ei muuttunut. Arvot ovat mallin laskemia.",
       "criteria": [
         "Kerroin, että sisääntulon jännite kaksinkertaistuu, kun vauhti kaksinkertaistuu. Kerroin myös, että jännite kaksinkertaistuu, kun kierrosten lukumäärä kaksinkertaistuu.",
         "Kerroin, että jännite on nolla, kun käämi on kokonaan kentän sisällä, koska vuo ei silloin muutu.",
@@ -212,7 +212,7 @@
       "stage": "selita",
       "type": "reflect",
       "title": "Palaa ennusteisiisi",
-      "prompt": "Vertaa ennusteitasi mallin arvoihin ja induktiolakiin $e = -N \\cdot \\Delta\\Phi : \\Delta t$. Palaa sitten alun kysymykseen. Miksi pyörän dynamo sytyttää lampun vain, kun pyörä pyörii? Miksi lamppu palaa sitä kirkkaammin, mitä lujempaa ajat?",
+      "prompt": "Vertaa ennusteitasi mallin arvoihin ja induktiolakiin $e_\\text{ka} = -N \\cdot \\Delta\\Phi : \\Delta t$. Palaa sitten alun kysymykseen. Miksi pyörän dynamo sytyttää lampun vain, kun pyörä pyörii? Miksi lamppu palaa sitä kirkkaammin, mitä lujempaa ajat?",
       "predictions": [
         "ennuste-sisalla",
         "ennuste-vauhti"
@@ -261,8 +261,8 @@
       "tolerance": 0.02,
       "hints": [
         "Mikä käämin läpi kulkevassa vuossa muuttuu, ja kuinka nopeasti? Kuinka monta kierrosta on sarjassa?",
-        "Induktiojännitteen suuruus on $|e| = N \\cdot \\Delta\\Phi : \\Delta t$. Muunna ensin vuo vebereiksi ja aika sekunneiksi.",
-        "$\\Delta\\Phi = 0{,}12 \\cdot 10^{-3}\\,\\text{Wb}$ ja $\\Delta t = 15 \\cdot 10^{-3}\\,\\text{s}$, joten $|e| = 600 \\cdot 0{,}12 \\cdot 10^{-3}\\,\\text{Wb} : (15 \\cdot 10^{-3}\\,\\text{s})$."
+        "Keskimääräisen induktiojännitteen suuruus on $|e_\\text{ka}| = N \\cdot |\\Delta\\Phi| : \\Delta t$. Muunna ensin vuo vebereiksi ja aika sekunneiksi.",
+        "$\\Delta\\Phi = 0{,}12 \\cdot 10^{-3}\\,\\text{Wb}$ ja $\\Delta t = 15 \\cdot 10^{-3}\\,\\text{s}$, joten $|e_\\text{ka}| = 600 \\cdot 0{,}12 \\cdot 10^{-3}\\,\\text{Wb} : (15 \\cdot 10^{-3}\\,\\text{s})$."
       ],
       "mistakes": [
         {
@@ -278,13 +278,13 @@
           "feedback": "Sijoitit vuon $0{,}12$ ikään kuin se olisi vebereinä. Vuo on $0{,}12\\,\\text{mWb} = 0{,}12 \\cdot 10^{-3}\\,\\text{Wb}$, joten jännite on tuhannesosa tästä."
         }
       ],
-      "solution": "**Annettu:** kierrosten lukumäärä $N = 600$, yhden kierroksen vuon muutos $\\Delta\\Phi = 0{,}12\\,\\text{mWb}$, aika $\\Delta t = 15\\,\\text{ms}$\n\n**Kysytty:** induktiojännitteen keskimääräinen suuruus $|e|$ voltteina\n\n**Periaate:** Kun magneetti liukuu käämiin, käämin läpi kulkeva magneettivuo kasvaa. Siksi käämiin syntyy induktiojännite induktiolain mukaan. Vuo ei välttämättä kasva tasaisesti. Vuon kokonaismuutoksen ja ajan osamäärä antaa jännitteen keskiarvon tällä aikavälillä. Kierrokset ovat sarjassa, joten jännite on $N$-kertainen yhden kierroksen jännitteeseen verrattuna.\n\n**Kaava:** $|e| = N\\dfrac{\\Delta\\Phi}{\\Delta t}$\n\n**Muunnokset:** $\\Delta\\Phi = 0{,}12\\,\\text{mWb} = 0{,}12 \\cdot 10^{-3}\\,\\text{Wb}$ ja $\\Delta t = 15\\,\\text{ms} = 15 \\cdot 10^{-3}\\,\\text{s} = 0{,}015\\,\\text{s}$\n\n**Sijoitus:** $|e| = 600 \\cdot \\dfrac{0{,}12 \\cdot 10^{-3}\\,\\text{Wb}}{0{,}015\\,\\text{s}} = 600 \\cdot 8{,}0 \\cdot 10^{-3}\\,\\text{V} = 4{,}8\\,\\text{V}$\n\n**Vastaus:** $4{,}8\\,\\text{V}$. Vastauksessa on kaksi merkitsevää numeroa, koska vuon muutoksessa $0{,}12\\,\\text{mWb}$ ja ajassa $15\\,\\text{ms}$ on kaksi.\n\n**Järkevyys:** Yksi kierros antaisi vain $8{,}0\\,\\text{mV}$. Se ei riittäisi valodiodille. Valodiodi tarvitsee noin $2$–$3\\,\\text{V}$:n jännitteen, joten satojen kierrosten käämi ja nopea ravistus ovat välttämättömiä. Jos ravistat hitaammin, sama vuon muutos kestää kauemmin ja jännite jää pienemmäksi."
+      "solution": "**Annettu:** kierrosten lukumäärä $N = 600$, yhden kierroksen vuon muutos $\\Delta\\Phi = 0{,}12\\,\\text{mWb}$, aika $\\Delta t = 15\\,\\text{ms}$\n\n**Kysytty:** induktiojännitteen keskimääräinen suuruus $|e_\\text{ka}|$ voltteina\n\n**Periaate:** Kun magneetti liukuu käämiin, käämin läpi kulkeva magneettivuo kasvaa. Siksi käämiin syntyy induktiojännite induktiolain mukaan. Vuo ei välttämättä kasva tasaisesti. Vuon kokonaismuutoksen ja ajan osamäärä antaa jännitteen keskiarvon tällä aikavälillä. Kierrokset ovat sarjassa, joten jännite on $N$-kertainen yhden kierroksen jännitteeseen verrattuna.\n\n**Kaava:** $|e_\\text{ka}| = N\\dfrac{\\Delta\\Phi}{\\Delta t}$\n\n**Muunnokset:** $\\Delta\\Phi = 0{,}12\\,\\text{mWb} = 0{,}12 \\cdot 10^{-3}\\,\\text{Wb}$ ja $\\Delta t = 15\\,\\text{ms} = 15 \\cdot 10^{-3}\\,\\text{s} = 0{,}015\\,\\text{s}$\n\n**Sijoitus:** $|e_\\text{ka}| = 600 \\cdot \\dfrac{0{,}12 \\cdot 10^{-3}\\,\\text{Wb}}{0{,}015\\,\\text{s}} = 600 \\cdot 8{,}0 \\cdot 10^{-3}\\,\\text{V} = 4{,}8\\,\\text{V}$\n\n**Vastaus:** $4{,}8\\,\\text{V}$. Vastauksessa on kaksi merkitsevää numeroa, koska vuon muutoksessa $0{,}12\\,\\text{mWb}$ ja ajassa $15\\,\\text{ms}$ on kaksi.\n\n**Järkevyys:** Yksi kierros antaisi vain $8{,}0\\,\\text{mV}$. Se ei riittäisi valodiodille. Valodiodi tarvitsee noin $2$–$3\\,\\text{V}$:n jännitteen, joten satojen kierrosten käämi ja nopea ravistus ovat välttämättömiä. Jos ravistat hitaammin, sama vuon muutos kestää kauemmin ja jännite jää pienemmäksi."
     },
     {
       "id": "harjoitukset",
       "stage": "sovella",
       "type": "exercises",
-      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä kaavaa: $\\Phi = BA$, $e = -N \\cdot \\Delta\\Phi : \\Delta t$ tai $e = vBl$. Tason 2 tehtävissä yhdistetään kaksi vaihetta tai luetaan vuon kuvaajaa. Taso 3 vaatii päättelyä uudessa tilanteessa."
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä kaavaa: $\\Phi = BA$, $e_\\text{ka} = -N \\cdot \\Delta\\Phi : \\Delta t$ tai $e = vBl$. Tason 2 tehtävissä yhdistetään kaksi vaihetta tai luetaan vuon kuvaajaa. Taso 3 vaatii päättelyä uudessa tilanteessa."
     },
     {
       "id": "check-1",

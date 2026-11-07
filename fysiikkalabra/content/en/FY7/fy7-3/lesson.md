@@ -258,7 +258,7 @@ The magnetic flux density of a long straight wire at a distance $r$ from the wir
 ```latex
 B = \frac{\mu_0 I}{2\pi r}
 ```
-where $B$ is the magnetic flux density (T), $I$ the current in the wire (A), $r$ the distance from the wire (m) and $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$ the permeability of free space, a constant of nature. In air the same value is used. The field is directly proportional to the current and inversely proportional to the distance: doubling the distance halves the field. The formula holds when the wire is much longer than the distance $r$ and other wires are far away. For example, the field of a $10\,\text{A}$ wire at a distance of $1\,\text{cm}$ is $200\,\mu\text{T}$, about four times the Earth's magnetic field of about $50\,\mu\text{T}$.
+where $B$ is the magnetic flux density (T), $I$ the current in the wire (A), $r$ the distance from the wire (m) and $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$ the permeability of free space, a constant of nature. In air the same value is used. The field is directly proportional to the current and inversely proportional to the distance: doubling the distance halves the field. The formula holds when the wire is much longer than the distance $r$ and other wires are far away. For example, the field of a $10\,\text{A}$ wire at a distance of $1\,\text{cm}$ is $200\,\mu\text{T}$, about four times the Earth's magnetic field of about $50\,\mu\text{T}$.
 
 <svg data-fig="wire-graph" viewBox="0 0 600 340" role="img" aria-label="Graph to scale: the magnetic flux density B of a straight wire in microtesla as a function of the distance r in centimetres, when the current is 10 A. The curve falls as the distance grows: at a distance of 1 cm B is 200 µT, at 2 cm it is 100 µT and at 4 cm it is 50 µT. When the distance doubles, the field is halved." style="max-width:100%;font-size:24px">
   <line x1="171" y1="290" x2="171" y2="56" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -370,7 +370,7 @@ A school coil has $600$ turns and its length is $15.0\,\text{cm}$. A current of 
 
 <!-- vaihe -->
 
-**Given and asked.** Number of turns $N = 600$, length of the coil $l = 15.0\,\text{cm}$, current $I = 2.50\,\text{A}$ and the constant $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$. We are asked for the magnetic flux density $B$ at the centre of the coil and its ratio to the Earth's field $B_\text{Earth} = 50\,\mu\text{T}$.
+**Given and asked.** Number of turns $N = 600$, length of the coil $l = 15.0\,\text{cm}$, current $I = 2.50\,\text{A}$ and the constant $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$. We are asked for the magnetic flux density $B$ at the centre of the coil and its ratio to the Earth's field $B_\text{Earth} = 50\,\mu\text{T}$.
 
 <!-- vaihe -->
 

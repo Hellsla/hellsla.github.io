@@ -249,7 +249,7 @@
         {
           "text": "Ilmoitettu $230\\,\\text{V}$ on jo tehollinen arvo, joten huippuarvo on $230\\,\\text{V} \\cdot \\sqrt{2} \\approx 325\\,\\text{V}$.",
           "correct": true,
-          "feedback": "Oikein. Verkkojännitteet ja mittarien lukemat ilmoitetaan tehollisarvoina, koska niillä teho lasketaan kuten tasavirralla, $P = UI$. Jännite käy siis välillä $-325\\,\\text{V}$ ja $325\\,\\text{V}$."
+          "feedback": "Oikein. Verkkojännitteet ja mittarien lukemat ilmoitetaan tehollisarvoina, koska niillä resistiivisen kuorman teho lasketaan kuten tasavirralla, $P = UI$. Jännite käy siis välillä $-325\\,\\text{V}$ ja $325\\,\\text{V}$."
         },
         {
           "text": "Tehollinen arvo saadaan kertomalla huippuarvo luvulla $\\sqrt{2}$, joten oikea arvo on $325\\,\\text{V}$.",
@@ -311,7 +311,7 @@
         {
           "text": "Tasajännitettä, joka tuottaisi vastukseen saman keskimääräisen tehon.",
           "correct": true,
-          "feedback": "Oikein. Vastuksen teho vaihtelee, ja sen keskiarvo on puolet huippuarvosta. Siksi tehollinen arvo on $U = U_0 : \\sqrt{2}$, ja keskimääräinen teho on $P = UI$ kuten tasavirralla."
+          "feedback": "Oikein. Vastuksen teho vaihtelee, ja sen keskiarvo on puolet huippuarvosta. Siksi tehollinen arvo on $U = U_0 : \\sqrt{2}$, ja vastuksen keskimääräinen teho on $P = UI$ kuten tasavirralla."
         },
         {
           "text": "Jännitteen keskiarvoa yhden kokonaisen jakson aikana laskettuna.",

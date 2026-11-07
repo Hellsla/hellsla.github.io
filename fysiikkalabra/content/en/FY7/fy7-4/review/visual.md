@@ -1,10 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 35ebba4793494ceb
+CONTENT-HASH: 3fdc6d94a88f1134
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] motor photo caption is accurate (cut-away AC motor, explicitly distinguished from the lesson's DC motor); the fan mentioned in alt is barely visible, harmless.
+- none
 
 ## Checked
-batch delta review: rendered preview/en/fy7-4.html at 390 and 1280 px (packet captures omit the photo), opened the unit-photo figure; alt and caption match, credit shown, no overflow.
+- Source diff since origin/main of lesson.md, inquiry.json, exit-ticket.json, meta.json, figures.json (and figures.py for fy7-8); no screenshots in light mode (parent runs the layout checks).
+- Every μ0 occurrence in the diff changed from = to \approx, typography intact ($\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$); no remaining "μ0 = 4π" or "exact" wording in student text.
+- No paragraph changed in this round in en exceeds about 120 words
+- Hash identical at start and end.

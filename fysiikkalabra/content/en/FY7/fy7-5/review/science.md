@@ -1,16 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 8e30d9dcfe2bbaf4
-Mode: full in the packet; scope by the teacher's ruling ("katselmoi vain muuttuneet osat"): the diff since the last PASS (`git diff 930a3e02a -- content/en/FY7/fy7-5/lesson.md content/en/FY7/fy7-5/inquiry.json`) plus what the changed lines touch. The exercise set is reviewed apart.
+CONTENT-HASH: 0e04e6b96fbac7d1
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- inquiry.json prior and warm-up (choice text and two feedbacks): F = qvB now F = |q|vB — right for the magnitude (electron q < 0), matches fi and the fy7-2 notation.
-- Warm-up still has exactly one correct option; distractor feedback still says why each is wrong.
-- lesson.md:362 F_m = evB (e = elementary charge, magnitude) consistent with |q|vB; chapter reference *Uniform electric field* is the current FY6 title, *Charged particle in electric and magnetic fields* the current fy7-2 title.
-- lesson.md new shake-torch photo caption: moving magnet, changing flux through the coil, induced voltage charging the energy store — correct, same as fi.
-- Hash 8e30d9dcfe2bbaf4 at start and end, equal to the packet's.
+- Induction law as the average voltage $e_\text{ka} = -N\,\Delta\Phi/\Delta t$ over $\Delta t$; steady change → constant voltage written $e$; uneven change → instantaneous $e(t) = -N\,\mathrm{d}\Phi/\mathrm{d}t$ and the tangent slope of the $(t,\Phi)$ graph; magnitude $N|\Delta\Phi|/\Delta t$ positive also when flux decreases. All correct. Inquiry model answer: entry with $N=10$, $\Delta\Phi = 2{,}0\,\text{mWb}$, $\Delta t = 1{,}00$ / $0{,}50\,\text{s}$ → $-20$ / $-40\,\text{mV}$, $e\Delta t = -20\,\text{mWb}$ (recomputed); use of $e$ there is justified by the added "vuo muuttui tasaisesti". Hint value $600\cdot0{,}12\,\text{mWb}/15\,\text{ms} = 4{,}8\,\text{V}$. Summary, contribution and exercise intro agree. fi, en, fi-easy agree. Hash identical at start and end.
+- Round 2: inquiry magnet task now uses $|e_\text{ka}|$ in hint 3 and in the solution's Kysytty, Kaava and Sijoitus (Minor resolved); value $600\cdot0{,}12\,\text{mWb}:15\,\text{ms} = 4{,}8\,\text{V}$ unchanged. The remaining $|e|$ belongs to the separate find-the-error task (magnitude, correct). en lesson: paragraph split only (text identical after whitespace normalisation).

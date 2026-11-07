@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: d18c5c8e6452dfbc
+CONTENT-HASH: 56ec9ba1af892522
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- Earlier polish items stand; none is Blocking.
+- none
 
 ## Checked
-- Changed Sijoitus step of the braking task: v1^2 - v2^2 = 625 - 100 = 525 m^2/s^2 is correct.
-- F = 2400 kg * 525 m^2/s^2 / (2 * 30 m) = 1 260 000 / 60 = 21 000 N = 21 kN, matching the Kaava step F = m(v1^2 - v2^2)/(2s) and the stated Vastaus and Järkevyys (a = 8,8 m/s^2, 630 kJ).
-- The split is a better staged step for the student: the difference of squares is computed first, then inserted; no answer is disclosed earlier.
-- check_layout.py fy7-6 --width 340: OK for fi, en and fi-easy.
-- Nothing else changed (git diff shows only this solution string per language).
+- Diff: the recalled induction law now e_ka (average over dt) with one sentence 'kun vuo muuttuu tasaisesti, jännite on vakio, merkitään e'. Consistent with Sähkömagneettinen induktio; no other change.
+- Language checked: en. Hash 56ec9ba1af892522 at start and end.

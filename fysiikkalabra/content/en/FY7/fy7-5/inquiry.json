@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "contribution": "A voltage appears in a coil only when the magnetic flux through it changes: the magnetic flux $\\Phi = BA$, Faraday's law $e = -N \\cdot \\Delta\\Phi : \\Delta t$ as the slope of the flux graph, and the voltage of a moving rod $e = vBl$ derived from the magnetic force on the electrons of the rod; in the simulation a coil moves through a region of field and the graphs $\\Phi(t)$ and $e(t)$ are drawn.",
+  "contribution": "A voltage appears in a coil only when the magnetic flux through it changes: the magnetic flux $\\Phi = BA$, Faraday's law $e_\\text{ka} = -N \\cdot \\Delta\\Phi : \\Delta t$ as the slope of the flux graph, and the voltage of a moving rod $e = vBl$ derived from the magnetic force on the electrons of the rod; in the simulation a coil moves through a region of field and the graphs $\\Phi(t)$ and $e(t)$ are drawn.",
   "learn": [
     "calculate the magnetic flux and the induced voltage in a coil using Faraday's law.",
     "deduce the induced voltage from the slope of the magnetic flux graph.",
@@ -190,7 +190,7 @@
         "koe-2"
       ],
       "prompt": "Write on the basis of your tables: how does the voltage on entry depend on the speed of the coil and the number of turns, and what is the voltage when the coil is completely inside the field? What do you notice about the result $e \\cdot \\Delta t$ in experiment 1? Compare it with the greatest flux through one turn, $2.0\\,\\text{mWb}$, and the number of turns.",
-      "model": "In experiment 1 the voltage on entry was $-20.0\\,\\text{mV}$ at a speed of $0.10\\,\\text{m/s}$ and $-40.0\\,\\text{mV}$ at $0.20\\,\\text{m/s}$, so the voltage is proportional to the speed. The entry lasted $1.00\\,\\text{s}$ and $0.50\\,\\text{s}$ respectively, so the product $e \\cdot \\Delta t = -20\\,\\text{mV}\\cdot\\text{s}$ stayed the same. It is $-N\\Delta\\Phi = -10 \\cdot 2.0\\,\\text{mWb} = -20\\,\\text{mWb}$, since $1\\,\\text{mV}\\cdot\\text{s} = 1\\,\\text{mWb}$. The voltage is therefore $e = -N \\cdot \\Delta\\Phi : \\Delta t$: the same change in flux in a shorter time gives a greater voltage. In experiment 2 the voltage was $-10.0\\,\\text{mV}$ with $5$ turns and $-40.0\\,\\text{mV}$ with $20$ turns, so it is proportional to the number of turns. When the coil was completely inside the field, the voltage was zero, because the flux did not change. The values are calculated by the model.",
+      "model": "In experiment 1 the voltage on entry was $-20.0\\,\\text{mV}$ at a speed of $0.10\\,\\text{m/s}$ and $-40.0\\,\\text{mV}$ at $0.20\\,\\text{m/s}$, so the voltage is proportional to the speed. The entry lasted $1.00\\,\\text{s}$ and $0.50\\,\\text{s}$ respectively, so the product $e \\cdot \\Delta t = -20\\,\\text{mV}\\cdot\\text{s}$ stayed the same. It is $-N\\Delta\\Phi = -10 \\cdot 2.0\\,\\text{mWb} = -20\\,\\text{mWb}$, since $1\\,\\text{mV}\\cdot\\text{s} = 1\\,\\text{mWb}$. The voltage is therefore $e = -N \\cdot \\Delta\\Phi : \\Delta t$, because the flux changed steadily: the same change in flux in a shorter time gives a greater voltage. In experiment 2 the voltage was $-10.0\\,\\text{mV}$ with $5$ turns and $-40.0\\,\\text{mV}$ with $20$ turns, so it is proportional to the number of turns. When the coil was completely inside the field, the voltage was zero, because the flux did not change. The values are calculated by the model.",
       "criteria": [
         "I said that the voltage on entry doubles when the speed doubles, and doubles when the number of turns doubles.",
         "I said that the voltage is zero when the coil is completely inside the field, because the flux then does not change.",
@@ -212,7 +212,7 @@
       "stage": "selita",
       "type": "reflect",
       "title": "Return to your predictions",
-      "prompt": "Compare your predictions with the values of the model and with Faraday's law $e = -N \\cdot \\Delta\\Phi : \\Delta t$. Then return to the opening question: why does the bicycle dynamo light the lamp only when the wheel is turning, and why does the lamp shine brighter the faster you ride?",
+      "prompt": "Compare your predictions with the values of the model and with Faraday's law $e_\\text{ka} = -N \\cdot \\Delta\\Phi : \\Delta t$. Then return to the opening question: why does the bicycle dynamo light the lamp only when the wheel is turning, and why does the lamp shine brighter the faster you ride?",
       "predictions": [
         "ennuste-sisalla",
         "ennuste-vauhti"
@@ -261,8 +261,8 @@
       "tolerance": 0.02,
       "hints": [
         "What changes in the flux through the coil, and how fast? How many turns are in series?",
-        "The magnitude of the induced voltage is $|e| = N \\cdot \\Delta\\Phi : \\Delta t$. First convert the flux to webers and the time to seconds.",
-        "$\\Delta\\Phi = 0.12 \\cdot 10^{-3}\\,\\text{Wb}$ and $\\Delta t = 15 \\cdot 10^{-3}\\,\\text{s}$, so $|e| = 600 \\cdot 0.12 \\cdot 10^{-3}\\,\\text{Wb} : (15 \\cdot 10^{-3}\\,\\text{s})$."
+        "The magnitude of the average induced voltage is $|e_\\text{ka}| = N \\cdot |\\Delta\\Phi| : \\Delta t$. First convert the flux to webers and the time to seconds.",
+        "$\\Delta\\Phi = 0.12 \\cdot 10^{-3}\\,\\text{Wb}$ and $\\Delta t = 15 \\cdot 10^{-3}\\,\\text{s}$, so $|e_\\text{ka}| = 600 \\cdot 0.12 \\cdot 10^{-3}\\,\\text{Wb} : (15 \\cdot 10^{-3}\\,\\text{s})$."
       ],
       "mistakes": [
         {
@@ -278,13 +278,13 @@
           "feedback": "You substituted the flux $0.12$ as if it were in webers. The flux is $0.12\\,\\text{mWb} = 0.12 \\cdot 10^{-3}\\,\\text{Wb}$, so the voltage is a thousandth of this."
         }
       ],
-      "solution": "**Given:** number of turns $N = 600$, change in flux through one turn $\\Delta\\Phi = 0.12\\,\\text{mWb}$, time $\\Delta t = 15\\,\\text{ms}$\n\n**Find:** average magnitude of the induced voltage $|e|$ in volts\n\n**Principle:** When the magnet slides into the coil, the magnetic flux through the coil grows, so an induced voltage appears in the coil according to Faraday's law. The flux does not necessarily grow steadily, so the quotient of the total change in flux and the time gives the average of the voltage over this interval. The turns are in series, so the voltage is $N$ times the voltage of one turn.\n\n**Formula:** $|e| = N\\dfrac{\\Delta\\Phi}{\\Delta t}$\n\n**Conversions:** $\\Delta\\Phi = 0.12\\,\\text{mWb} = 0.12 \\cdot 10^{-3}\\,\\text{Wb}$ and $\\Delta t = 15\\,\\text{ms} = 15 \\cdot 10^{-3}\\,\\text{s} = 0.015\\,\\text{s}$\n\n**Substitution:** $|e| = 600 \\cdot \\dfrac{0.12 \\cdot 10^{-3}\\,\\text{Wb}}{0.015\\,\\text{s}} = 600 \\cdot 8.0 \\cdot 10^{-3}\\,\\text{V} = 4.8\\,\\text{V}$\n\n**Answer:** $4.8\\,\\text{V}$, two significant figures like the change in flux $0.12\\,\\text{mWb}$ and the time $15\\,\\text{ms}$.\n\n**Reasonableness:** One turn would give only $8.0\\,\\text{mV}$, which would not be enough for an LED. An LED needs a voltage of about $2$–$3\\,\\text{V}$, so a coil of hundreds of turns and fast shaking are essential. If shaken more slowly, the same change in flux takes longer and the voltage stays smaller."
+      "solution": "**Given:** number of turns $N = 600$, change in flux through one turn $\\Delta\\Phi = 0.12\\,\\text{mWb}$, time $\\Delta t = 15\\,\\text{ms}$\n\n**Find:** average magnitude of the induced voltage $|e_\\text{ka}|$ in volts\n\n**Principle:** When the magnet slides into the coil, the magnetic flux through the coil grows, so an induced voltage appears in the coil according to Faraday's law. The flux does not necessarily grow steadily, so the quotient of the total change in flux and the time gives the average of the voltage over this interval. The turns are in series, so the voltage is $N$ times the voltage of one turn.\n\n**Formula:** $|e_\\text{ka}| = N\\dfrac{\\Delta\\Phi}{\\Delta t}$\n\n**Conversions:** $\\Delta\\Phi = 0.12\\,\\text{mWb} = 0.12 \\cdot 10^{-3}\\,\\text{Wb}$ and $\\Delta t = 15\\,\\text{ms} = 15 \\cdot 10^{-3}\\,\\text{s} = 0.015\\,\\text{s}$\n\n**Substitution:** $|e_\\text{ka}| = 600 \\cdot \\dfrac{0.12 \\cdot 10^{-3}\\,\\text{Wb}}{0.015\\,\\text{s}} = 600 \\cdot 8.0 \\cdot 10^{-3}\\,\\text{V} = 4.8\\,\\text{V}$\n\n**Answer:** $4.8\\,\\text{V}$, two significant figures like the change in flux $0.12\\,\\text{mWb}$ and the time $15\\,\\text{ms}$.\n\n**Reasonableness:** One turn would give only $8.0\\,\\text{mV}$, which would not be enough for an LED. An LED needs a voltage of about $2$–$3\\,\\text{V}$, so a coil of hundreds of turns and fast shaking are essential. If shaken more slowly, the same change in flux takes longer and the voltage stays smaller."
     },
     {
       "id": "harjoitukset",
       "stage": "sovella",
       "type": "exercises",
-      "text": "Practise at three levels. Level 1 tasks use one formula, $\\Phi = BA$, $e = -N \\cdot \\Delta\\Phi : \\Delta t$ or $e = vBl$, level 2 tasks combine two steps or read a flux graph, and level 3 requires reasoning in a new situation."
+      "text": "Practise at three levels. Level 1 tasks use one formula, $\\Phi = BA$, $e_\\text{ka} = -N \\cdot \\Delta\\Phi : \\Delta t$ or $e = vBl$, level 2 tasks combine two steps or read a flux graph, and level 3 requires reasoning in a new situation."
     },
     {
       "id": "check-1",

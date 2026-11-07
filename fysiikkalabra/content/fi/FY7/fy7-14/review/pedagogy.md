@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 9368ce31ea655078
+CONTENT-HASH: 8fa069fd7d032030
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- Ennusteet 1 ja 2 vaativat käännössäännön (suuremman taitekertoimen aine), jota ei opeteta ennen ennustetta; prior mainitsee vain köyden. Koe voi silti kumota ennusteen, ja ennusteet ovat perusteltavia. Valinnainen: lisää kertaukseen kysymys valon käännössäännöstä.
-- Työmäärä on yli tunnin (kolme koetta, johtopäätös, esimerkki, siirto, 12 tehtävää, kolme tarkistusta). Koe 3 voisi olla optional, koska väri käsitellään esimerkissä ja Tarkistuksessa 2.
-- Koe 2 ja Koe 3 eivät sisällä omaa kysymystä; johtopäätös kattaa ne. Koe 3:lle voisi antaa lyhyen numeerisen kysymyksen (puuttuva aallonpituus).
+- [Minor] The new sentence repeats 'lisämatka 2d' stated two sentences earlier; it could start 'Geometrinen lisämatka 2d vastaa siis optista matkaeroa 2nd ...' to avoid the repeat.
 
 ## Checked
-- Round 1 polish fixed: "Hyvin ohut kalvo on musta" now says wave 2 lags half a wavelength; Tulos sentence split.
-- Learning path: two reflections, path difference, phase shift, black film, colour, coating; opening question answered; slot goals covered, no more.
-- Figure "reflections" (fig-5 capture): "ei siirtymää" label now beside the lower ray, legible at 390 px; colour not the only cue.
-- Example in eight stages, one step each, does not repeat the exercises.
-- Predictions can be refuted by the R readings; option feedback repairs the misconception.
-- Etsi virhe, siirto and mistakes feedback target real errors; checks 1-3 and explain criteria observable.
-- Simulation at 390 px: three panels, readout and colour box legible, help text in named boxes.
-- Finnish and glossary terms correct.
+- Diff: geometric extra path 2d vs optical path difference 2nd (bold term), 'optinen' added in the formula intro and summary; very thin soap film reflects very little and looks dark/almost black in reflected light.
+- The new term is defined where it is used and the summary matches.
+- Round 2: exit-ticket model answer now 'heijastaa hyvin vähän valoa ja näyttää tummalta tai lähes mustalta', matching the lesson and summary.
+- Language checked: fi. Hash 8fa069fd7d032030 at start and end.

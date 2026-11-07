@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: a11a1c2fc6509c1e
+CONTENT-HASH: f6d4777566df2cb3
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- Optional only: Kokonaisheijastuminen-selitys on täysi ja ehdot (n1>n2, tulokulma > rajakulma) mukana; rajakulmassa "Se on olemassa vain, kun n1 > n2" on hyvä. Ei muutoksia.
+- none
 
 ## Checked
-- Delta review: only the new "Luvun tärkeät käsitteet" box (meta.json key_concepts) judged; unchanged lesson content, which passed earlier, not re-audited.
-- Box renders at 390 px (own capture of section.kc from preview/fi-easy/fy7-12.html): no horizontal scroll, math (λ, n, sin, °) readable, terms bold, one item per block.
-- Voluntary lead text present; no note fields or assessment.
-- Every explanation is 1-2 plain sentences, 25 words or fewer; terms match the lesson and glossary.
-- Physics conditions present (absoluuttinen lämpötila, normaali, tyhjiö, n1 > n2 for rajakulma and kokonaisheijastus, optisesti tiheämpi).
-- No misconception introduced; box does not give away inquiry or exit-ticket answers beyond the lesson's own text.
-- Note: the stock shots/top-390 capture does not show the box (it sits below the hero); I captured it separately.
+- Diff: no propagating refracted ray (instead of 'no light at all'), an ideal lossless boundary reflects all power, one sentence on the evanescent field; traditional fibre endoscope vs modern video endoscope with a tip camera.
+- Corrections are short and keep the main idea (total internal reflection) intact.
+- Round 2: the bold definition 'Tämä on kokonaisheijastuminen' now follows the definition sentence directly, and 'eikä energiaa siirry toiseen aineeseen' is added before the evanescent-field sentence, so students no longer wonder whether light leaks; my item is resolved.
+- Language checked: fi-easy. fi-easy: the new text is in short, clear sentences and keeps every point of fi (nothing dropped). Hash f6d4777566df2cb3 at start and end.

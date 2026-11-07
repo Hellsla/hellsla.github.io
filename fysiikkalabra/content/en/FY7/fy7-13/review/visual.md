@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 029afbb4725a0a19
+CONTENT-HASH: 629dab689ddd9d59
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only; round 2 after the fixes to the round-1 findings)
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] fy7-13 caption — the interference photo (before "Coherent light") already says "coherent"; fine, but the diffraction alt could say "a bright green panel" rather than "pale surface".
+- [Minor] lesson.md — the laser-measurement paragraph is about 141 words; optionally make the safety sentences ("School experiments use a low-power laser …") a paragraph of their own.
 
 ## Checked
-batch delta review: opened each new photo in assets/pics/fy7 and compared alt text and caption with it; rendered preview/en/fy7-13.html at 1280 px (figure floats right, 320 px wide, no overflow) and 390 px (full-width, below text, credit line present); captions physically correct and tied to the chapter, numbers with units in LaTeX.
+- Source diff since origin/main plus the round-2 diff (scratchpad round2.diff); no screenshots in light mode (parent runs the layout checks).
+- Round-1 blocker fixed: opening paragraph split at "Light is electromagnetic wave motion"; both parts under the limit.
+- Hash identical at start and end of this round.

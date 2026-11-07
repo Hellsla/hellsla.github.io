@@ -242,9 +242,9 @@ Pyörrevirrat muuttavat sähköenergiaa aina sisäenergiaksi. Muuntajan ja sähk
 ## Kaava: Lenzin laki ja energia
 Luvun *Sähkömagneettinen induktio* induktiolain miinusmerkki on Lenzin laki:
 ```latex
-e = -N \frac{\Delta \Phi}{\Delta t}
+e_\text{ka} = -N \frac{\Delta \Phi}{\Delta t}
 ```
-missä $e$ on induktiojännite (V), $N$ silmukan kierrosten lukumäärä, $\Delta\Phi$ magneettivuon muutos (Wb) ja $\Delta t$ muutokseen kulunut aika (s). Miinusmerkki kertoo, että induktiovirran kenttä vastustaa vuon muutosta. Suuruus lasketaan ilman merkkiä, ja suunta päätellään Lenzin laista.
+missä $e_\text{ka}$ on keskimääräinen induktiojännite (V) aikavälillä $\Delta t$, $N$ silmukan kierrosten lukumäärä, $\Delta\Phi$ magneettivuon muutos (Wb) ja $\Delta t$ muutokseen kulunut aika (s). Kun vuo muuttuu tasaisesti, jännite on vakio, ja merkitään lyhyesti $e$. Miinusmerkki kertoo, että induktiovirran kenttä vastustaa vuon muutosta. Suuruus lasketaan ilman merkkiä, ja suunta päätellään Lenzin laista.
 
 Energian säilyminen kertoo, mihin putoavan magneetin energia menee. Kun magneetti putoaa korkeuden $h$, sen potentiaalienergia pienenee määrän $mgh$. Osa muuttuu liike-energiaksi ja loput pyörrevirtojen kautta putken sisäenergiaksi $Q$:
 ```latex

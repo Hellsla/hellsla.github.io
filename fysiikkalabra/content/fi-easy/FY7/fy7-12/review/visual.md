@@ -1,5 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: eab83363a7e48911
+CONTENT-HASH: f6d4777566df2cb3
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only; round 2 after the fixes to the round-1 findings)
 
 ## Blocking
 - none
@@ -8,4 +9,7 @@ CONTENT-HASH: eab83363a7e48911
 - none
 
 ## Checked
-batch delta review: opened tir-wine-glass, optical-fibres (assets/pics/fy7) and compared with alt and caption (alt matches what is visible, caption physically correct, plain Finnish, units in LaTeX where present); rendered preview/fi-easy/fy7-12.html with playwright: figure.unit-photo floats right at 1280 px (x 744–1064, credit line shown, no clipping), stacks full width at 390 px, no horizontal overflow.
+- Source diff since origin/main plus the round-2 diff (scratchpad round2.diff); no screenshots in light mode (parent runs the layout checks).
+- Round-1 blocker fixed: the definition "Tämä on **kokonaisheijastuminen**." / "Tätä sanotaan **kokonaisheijastumiseksi**." / "This is **total internal reflection**." now follows "…heijastumislain mukaan." directly; the lossless-boundary and evanescent-field sentences follow it, so the antecedent is unambiguous. Added "eikä energiaa siirry toiseen aineeseen" / "and no energy passes into the second substance" reads naturally.
+- Endoscope paragraph unchanged since round 1.
+- Hash identical at start and end of this round.

@@ -1,11 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 34ad8f8b0de78384
+CONTENT-HASH: f9f01cda79f0e568
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] laser-diffraction alt — the image also shows a bright green rectangle (right) with dots, and the dim 4×3 dot grid is on the left; alt only names "vihreitä valopisteitä ruudukkona" — add e.g. "Pimeässä on vihreä kirkas suorakulmio ja sen vieressä himmeä ruudukko vihreitä pisteitä."
+- [Minor] lesson.md — the opening paragraph is now about 122 words; optionally break before "Valo on sähkömagneettista aaltoliikettä".
 
 ## Checked
-batch delta review: opened laser-interference, laser-diffraction (assets/pics/fy7) and compared with alt and caption (alt matches what is visible, caption physically correct, plain Finnish, units in LaTeX where present); rendered preview/fi-easy/fy7-13.html with playwright: figure.unit-photo floats right at 1280 px (x 744–1064, credit line shown, no clipping), stacks full width at 390 px, no horizontal overflow.
+- Source diff since origin/main of lesson.md, inquiry.json, exit-ticket.json, meta.json, figures.json (and figures.py for fy7-8); no screenshots in light mode (parent runs the layout checks).
+- Fringe-spacing sentences (geometry, not only wavelength), laser-safety paragraph; decimal separators and nm range in LaTeX.
+- Paragraph lengths of every changed paragraph counted against origin/main.
+- Hash identical at start and end.

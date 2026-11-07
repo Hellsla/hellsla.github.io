@@ -1,10 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: db76c0c164d4f96e
+CONTENT-HASH: e1bf14bfdcd13d38
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only; round 2 after the fixes to the round-1 findings)
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] fy7-12 alt text — "a green laser beam enters from below" is as seen; fine, no change needed beyond optionally naming the small laser at the bottom edge.
+- none
 
 ## Checked
-batch delta review: opened each new photo in assets/pics/fy7 and compared alt text and caption with it; rendered preview/en/fy7-12.html at 1280 px (figure floats right, 320 px wide, no overflow) and 390 px (full-width, below text, credit line present); captions physically correct and tied to the chapter, numbers with units in LaTeX.
+- Source diff since origin/main plus the round-2 diff (scratchpad round2.diff); no screenshots in light mode (parent runs the layout checks).
+- Round-1 blocker fixed: the definition "Tämä on **kokonaisheijastuminen**." / "Tätä sanotaan **kokonaisheijastumiseksi**." / "This is **total internal reflection**." now follows "…heijastumislain mukaan." directly; the lossless-boundary and evanescent-field sentences follow it, so the antecedent is unambiguous. Added "eikä energiaa siirry toiseen aineeseen" / "and no energy passes into the second substance" reads naturally.
+- Paragraph now split at "Veden ja ilman rajapinnassa" / "At the boundary between water and air"; both parts within the limit.
+- Endoscope paragraph unchanged since round 1.
+- Hash identical at start and end of this round.

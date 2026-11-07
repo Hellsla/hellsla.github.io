@@ -266,7 +266,7 @@ Pitkän suoran johtimen magneettivuon tiheys etäisyydellä $r$ johtimesta on
 ```latex
 B = \frac{\mu_0 I}{2\pi r}
 ```
-Kaavassa $B$ on magneettivuon tiheys (T) ja $I$ on johtimen virta (A). Symboli $r$ on etäisyys johtimesta (m). Vakio $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$ on tyhjiön permeabiliteetti. Se on luonnonvakio. Ilmassa käytetään samaa arvoa.
+Kaavassa $B$ on magneettivuon tiheys (T) ja $I$ on johtimen virta (A). Symboli $r$ on etäisyys johtimesta (m). Vakio $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$ on tyhjiön permeabiliteetti. Se on luonnonvakio. Ilmassa käytetään samaa arvoa.
 
 Kenttä on suoraan verrannollinen virtaan ja kääntäen verrannollinen etäisyyteen. Kun etäisyys kaksinkertaistuu, kenttä puolittuu. Kaava pätee, kun johdin on paljon pidempi kuin etäisyys $r$ ja muut johtimet ovat kaukana. Esimerkiksi $10\,\text{A}$:n johtimen kenttä on $1\,\text{cm}$:n etäisyydellä $200\,\mu\text{T}$. Se on noin nelinkertainen Maan magneettikenttään noin $50\,\mu\text{T}$ verrattuna.
 
@@ -386,7 +386,7 @@ Koulun käämissä on $600$ kierrosta, ja sen pituus on $15{,}0\,\text{cm}$. Kä
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Kierrosten lukumäärä on $N = 600$. Käämin pituus on $l = 15{,}0\,\text{cm}$ ja virta $I = 2{,}50\,\text{A}$. Vakio on $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$. Kysytään magneettivuon tiheyttä $B$ käämin keskellä. Lisäksi kysytään sen suhdetta Maan kenttään $B_\text{Maa} = 50\,\mu\text{T}$.
+**Tunnetut ja kysytty.** Kierrosten lukumäärä on $N = 600$. Käämin pituus on $l = 15{,}0\,\text{cm}$ ja virta $I = 2{,}50\,\text{A}$. Vakio on $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$. Kysytään magneettivuon tiheyttä $B$ käämin keskellä. Lisäksi kysytään sen suhdetta Maan kenttään $B_\text{Maa} = 50\,\mu\text{T}$.
 
 <!-- vaihe -->
 

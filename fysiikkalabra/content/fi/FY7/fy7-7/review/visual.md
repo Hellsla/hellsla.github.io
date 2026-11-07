@@ -1,10 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: a9a1809dfd830640
+CONTENT-HASH: c4fd2b7feb9ccd07
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] unit-photo bicycle-dynamo at 1280 px — the float pushes the following block down, leaving a ca. $120\,\text{px}$ empty gap between the heading "Miksi jännite on sinimuotoinen" and its paragraph — move the photo after that paragraph or let the heading start below the float.
+- [Minor] lesson.md — "…kuorman, kuten ideaalisen vastuksen, läpi, …" reads heavily; optionally "Kun vaihtovirta kulkee puhtaasti resistiivisen kuorman, esimerkiksi ideaalisen vastuksen, läpi …" or two sentences.
 
 ## Checked
-batch delta review: opened the image file(s) (bicycle-dynamo, generator-stator, generator-rotor) and rendered unit-photo with caption at 1280 px (float right, 320 px wide, inside column, no clipping) and 390 px (stacked, no horizontal overflow); alt text matches what is visible, caption physically sound and tied to the chapter, Finnish natural, number+unit in LaTeX.
+- Source diff since origin/main of lesson.md, inquiry.json, exit-ticket.json, meta.json, figures.json (and figures.py for fy7-8); no screenshots in light mode (parent runs the layout checks).
+- Resistive-load limitation of P = UI in theory, summary and inquiry feedbacks; instantaneous-voltage sentence after the generator formula; decimal comma/point and units in LaTeX.
+- No paragraph changed in this round in fi exceeds about 120 words
+- Hash identical at start and end.

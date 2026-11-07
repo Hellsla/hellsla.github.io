@@ -1,18 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 053680a79e7e951f
+CONTENT-HASH: b6357eb2bbe3a6b7
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- meta.json key_concepts "vahvistava interferenssi" / "heikentävä interferenssi" — the conditions 2nd = (k + ½)λ and 2nd = kλ do not repeat "kun valo tulee kohtisuoraan" or k = 0, 1, 2, … The adjacent "matkaero" entry states normal incidence, and lesson.md:389–402 states both, so this is C. Optionally add "k = 0, 1, 2, …".
+- none
 
 ## Checked
-- Re-review limited to the new key_concepts box. The rest passed earlier and is unchanged.
-- ohut kalvo: a thickness of the order of λ, and the two surface reflections interfere. Right.
-- matkaero: "2nd at normal incidence, with λ measured in air" is the optical path difference, worded exactly as in lesson.md:200 and :389. Right.
-- vahvistava: for a soap film in air, only the top reflection inverts, so constructive is 2nd = (k + ½)λ. Right, and it matches Tiivistelmä :522.
-- heikentävä: 2nd = kλ, so a very thin film (k = 0) looks black. Right, and it matches :206.
-- heijastuksenestopinnoite: the thinnest coating is d = λ : (4n), and the condition is stated (n between air and glass, so both reflections invert). Right, and it matches :404–409.
-- check_i18n.py fi-easy: 0 errors.
-- Box at 390 px: \tfrac renders, no horizontal scroll.
-- The hash was the same at the start and at the end.
+- Geometric extra path 2d vs optical path difference 2nd, compared with the vacuum/air wavelength: correct (550 : 1.33 = 413.5 nm). Very thin soap film: reflections in antiphase, ideally very little reflected light, looks dark/almost black in reflected light: correct; formula section and summary now say optical path difference. Languages match. (language checked: fi-easy.)
+- Round 2: exit ticket now "heijastaa hyvin vähän valoa ja näyttää tummalta tai lähes mustalta", consistent with theory and summary (previous polish resolved).

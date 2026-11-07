@@ -1,11 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 42adc3fd12b8cf2c
+CONTENT-HASH: e070b14b313b08c9
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] compass-needle photo caption: "the needles turn along the field lines that circle the wire" — in the photo the needles point in varied directions and the circling is not evident; add a short cue (current on, view along the wire) or soften.
-- [Minor] alt "four rows of small compass needles" is correct; consider adding that the wire is vertical.
+- none
 
 ## Checked
-batch delta review: rendered preview/en/fy7-3.html at 390 and 1280 px (packet captures omit the photo), opened the unit-photo figure; credit line shown, no overflow, layout around it intact.
+- Source diff since origin/main of lesson.md, inquiry.json, exit-ticket.json, meta.json, figures.json (and figures.py for fy7-8); no screenshots in light mode (parent runs the layout checks).
+- Every μ0 occurrence in the diff changed from = to \approx, typography intact ($\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$); no remaining "μ0 = 4π" or "exact" wording in student text.
+- No paragraph changed in this round in en exceeds about 120 words
+- Hash identical at start and end.

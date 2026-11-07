@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 8ae7e6ed7904aba9
+CONTENT-HASH: c4fd2b7feb9ccd07
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- Remaining items from the previous report stay open and non-blocking (P = UI step, "kierros" ambiguity, koe-2 optional while the core path varies only f, exit-ticket Q1 is recall).
-- inquiry.json koe-2 intro — the inferred N dependence is not recorded anywhere; if wanted, name the answer in the conclusion's model answer ("kaksinkertainen N, kaksinkertainen e₀").
+- [Minor] 'tehokerroin' is new and unexplained here; a short '(kerroin, joka on 1, kun virta ja jännite ovat samassa vaiheessa)' would avoid a dangling term.
 
 ## Checked
-- Delta only. koe-2 intro: the earlier unusable instruction (N is locked) is now a reasoning task from e₀ = NBA·2πf; matches the locked parameters (N, f locked, B varied).
-- Finnish: "Päättele lopuksi kaavasta, mitä huippujännitteelle tapahtuisi, jos kierrosten lukumäärä kaksinkertaistettaisiin" is correct and clear; no answer disclosed.
-- Summary: "Sinimuotoisen vaihtojännitteen tehollinen arvo on ..." reads correctly and sets the condition; consistent with the theory section.
-- No other change; path, predictions and example as previously approved.
+- Diff: e = e0 sin(2 pi f t) named as the instantaneous voltage with when it is largest/zero; P = UI from rms values limited to a purely resistive load (in phase), general case via power factor; inquiry feedbacks and summary say 'resistiivisen kuorman'/'vastuksen'.
+- The added sentences explain rather than distract: the instantaneous-voltage sentence links to the flux picture of the misconception section.
+- Language checked: fi. Hash c4fd2b7feb9ccd07 at start and end.

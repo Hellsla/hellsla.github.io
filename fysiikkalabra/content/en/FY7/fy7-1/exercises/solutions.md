@@ -111,8 +111,8 @@
 
 ## fy7-1-L1-07
 **Find:** what the direction of the north end of a compass needle tells about the Earth's magnetic poles
-**Principle:** The north end of the needle is the north pole of a magnet. Poles of the same name repel and unlike poles attract each other, so the north end of the needle is attracted by the Earth's magnetic south pole.
-**Model answer:** The north end of the needle turns towards the geographic north, so it is attracted by the pole there. Since the north end of the needle is a north pole and unlike poles attract each other, near the geographic North Pole there is the Earth's magnetic south pole. The needle is a magnet and it is turned by the Earth's magnetic field, not by the rotation of the Earth, gravity or friction. The correct option is the one that deduces the name of the pole from the attraction between unlike poles; a pole of the same name seeking the needle, the axis of rotation and the absence of poles do not belong in the explanation of the Earth's field.
+**Principle:** The north end of the needle is the north pole of a magnet. Poles of the same name repel and unlike poles attract each other, so the north end of the needle is attracted by the south pole of the bar-magnet model.
+**Model answer:** The north end of the needle turns towards the geographic north, so it is attracted by the pole there. Since the north end of the needle is a north pole and unlike poles attract each other, in the bar-magnet model there is a south pole near the geographic North Pole. In geomagnetism and navigation this pole is nevertheless called the magnetic north pole, because the name is based on its location. The needle is a magnet and it is turned by the Earth's magnetic field, not by the rotation of the Earth, gravity or friction. The correct option is the one that deduces the name of the pole from the attraction between unlike poles; a pole of the same name seeking the needle, the axis of rotation and the absence of poles do not belong in the explanation of the Earth's field.
 
 ## fy7-1-L1-08
 **Given:** magnetic flux density of the Earth's field $B = 53\,\mu\text{T}$, inclination $I = 76\,{}^\circ$ below the horizontal
@@ -185,6 +185,6 @@
 
 3 true: outside the lines go from $\text{N}$ to $\text{S}$ and inside from $\text{S}$ to $\text{N}$, so every line closes on itself. This fits the fact that there are no single poles.
 
-4 true: the $\text{N}$ end of the magnet turns towards the geographic north. Unlike poles attract each other, so the Earth's magnetic south pole is there.
+4 true: the $\text{N}$ end of the magnet turns towards the geographic north. Unlike poles attract each other, so the south pole of the bar-magnet model is there (in geomagnetism, the magnetic north pole).
 
 5 false: between two magnets there is one total field $\overline{B} = \overline{B}_1 + \overline{B}_2$. It has only one direction at each point, so the field lines do not cross each other. The iron filings show the lines of the total field, which curve in the space between the magnets.

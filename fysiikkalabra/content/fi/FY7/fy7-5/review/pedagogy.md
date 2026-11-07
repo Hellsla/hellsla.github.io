@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: bdb8a5d35a3da719
-Scope: the diff since my last PASS (base 2d74cd20a, hash 2f29d9f694dda152), not a full review: the packet says full, but the teacher ruled "katselmoi vain muuttuneet osat" and the only changes are consistency fixes. Reviewed `git diff 2d74cd20a -- content/fi/FY7/fy7-5` (lesson, inquiry) plus the text the changed lines touch.
+CONTENT-HASH: bb4b6b5b410a9a8f
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- content/fi/FY7/fy7-5/lesson.md:198 — alt-teksti ei mainitse magneettia, johon kuvateksti nojaa ja joka näkyy kuvassa (hopeinen sylinteri käämin oikealla puolella) — "…kuparinvärinen käämi, sen oikealla puolella hopeinen magneetti ja vasemmassa päässä musta lamppuosa."
+- [Minor] Summary dropped 'jännite on vuon kuvaajan kulmakerroin kerrottuna N:llä'; the slope idea is the key graph skill, worth keeping in one clause.
 
 ## Checked
-- inquiry.json prior and stage-1 choices/feedback: $F = |q|vB$ now names the magnitude, matching "sen suuruus on" and fy7-2's $F_\text{m} = |q|vB\sin\alpha$; the correct option and its reasoning (no force at $v = 0$) are unchanged in meaning.
-- Lesson $F_\text{m} = evB$ (e as magnitude) stays consistent with |q|.
-- Chapter references now use current titles: *Varatun hiukkasen liike sähkö- ja magneettikentässä* (fy7-2), *Homogeeninen sähkökenttä* (fy6-11, where $U = Ed$ is taught).
-- New shake-torch photo sits right before "Muutos synnyttää jännitteen" and gives an everyday case of changing flux; caption states the chain magnet moves → flux changes → voltage induced; Finnish correct.
-- Hash unchanged at start and end.
+- Diff: induction law now e_ka = -N dPhi:dt as the average over dt; steady change -> constant e; uneven change -> e(t) = -N dPhi/dt with the tangent slope; |e_ka| = N|dPhi|:dt always positive; meta, inquiry hint, return prompt, exercises card, summary.
+- The average/instantaneous distinction is placed right after the formula and tied to the graph (slope vs tangent slope), so it adds a step the student can follow; the inquiry model answer now says why e = -N dPhi:dt holds there (steady change).
+- dPhi/dt appears only as a pointer with the tangent-slope reading next to it, so a student without derivatives is not stranded.
+- Round 2 (diff since my round-1 report): magnet-task hint 3 and solution use |e_ka| throughout (fi, en, fi-easy); en formula paragraph split into three. Consistent with the lesson; my hint-3 item is resolved.
+- Language checked: fi. Hash bb4b6b5b410a9a8f at start and end.

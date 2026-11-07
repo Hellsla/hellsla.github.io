@@ -1,10 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: dcbdef859c90c94d
+CONTENT-HASH: c7393e08a3ea5ab9
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] fy7-11 prism photo — placed after the references line, before the next subsection; fine at 1280 but it sits right after a citation line, which is slightly odd.
+- [Minor] lesson.md — the antisolar-point paragraph is now about 134 words; optionally break before "The different colours leave a droplet".
 
 ## Checked
-batch delta review: opened each new photo in assets/pics/fy7 and compared alt text and caption with it; rendered preview/en/fy7-11.html at 1280 px (figure floats right, 320 px wide, no overflow) and 390 px (full-width, below text, credit line present); captions physically correct and tied to the chapter, numbers with units in LaTeX.
+- Source diff since origin/main of lesson.md, inquiry.json, exit-ticket.json, meta.json, figures.json (and figures.py for fy7-8); no screenshots in light mode (parent runs the layout checks).
+- Rainbow sentence: no "one colour per droplet" claim left.
+- Paragraph lengths of every changed paragraph counted against origin/main.
+- Hash identical at start and end.

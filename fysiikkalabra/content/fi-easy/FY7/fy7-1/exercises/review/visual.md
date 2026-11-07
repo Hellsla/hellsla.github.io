@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: f67af3c7d7223c53
+CONTENT-HASH: f8923468513d93d0
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] fy7-1-L1-09 solution 2 (fi-easy) — "$\text{N}$-päästä" breaks across lines between N and the hyphen (capture -9) — keep the hyphenated compound together, e.g. a non-breaking hyphen or reword "magneetin pohjoispäästä ($\text{N}$) etelänpäähän ($\text{S}$)".
-- [Minor] fy7-1-L1-09 statement 2 — "kyljen vieressä keskikohdan kohdalla" is clumsy — "magneetin kyljen vieressä, sen keskikohdalla".
+- none
 
 ## Checked
-- fy7-1-open-exercises-1280-8 and -9 (fi-easy): new task 1-9 with five Tosi/Epätosi rows, answer line, opened solution (Kysytty, Periaate, Mallivastaus 1-5).
-- N and S upright maths, case endings after maths ($\text{N}$:stä) correct, vector sum renders, no red KaTeX, no overflow; the solution opens inside its card.
-- Language is plain, defined terms (vektorisumma explained), one voice.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+- Source diff since origin/main of exercises/exercises.json, exercises/solutions.md and lessons/FY7/fy7-1/answers.py.
+- L1-07 statement, options, feedbacks, solution and true/false item 4: bar-magnet model vs geomagnetic naming worded consistently; no bold in the task statement.
+- Hash identical at start and end.

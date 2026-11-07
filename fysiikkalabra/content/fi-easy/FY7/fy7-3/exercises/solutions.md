@@ -1,5 +1,5 @@
 ## fy7-3-L1-01
-**Annettu:** pitkä suora johdin, virta $I = 12\,\text{A}$, etäisyys $r = 3{,}0\,\text{cm}$; $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
+**Annettu:** pitkä suora johdin, virta $I = 12\,\text{A}$, etäisyys $r = 3{,}0\,\text{cm}$; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Kysytty:** magneettivuon tiheys $B$ mikrotesloina
 **Periaate:** Johdin on pitkä ja suora. Etäisyys on paljon pienempi kuin johtimen pituus. Siksi pitkän suoran johtimen kaava pätee. Kenttä on suoraan verrannollinen virtaan ja kääntäen verrannollinen etäisyyteen.
 **Kaava:** $B = \dfrac{\mu_0 I}{2\pi r}$
@@ -9,7 +9,7 @@
 **Järkevyys:** Luvun esimerkissä $10\,\text{A}$ antaa $1\,\text{cm}$:n päässä $200\,\mu\text{T}$. Nyt etäisyys on kolminkertainen ja virta hieman suurempi. Silloin kenttä on noin $200\,\mu\text{T} \cdot 1{,}2 : 3 = 80\,\mu\text{T}$. Kenttä on samaa suuruusluokkaa kuin Maan kenttä $50\,\mu\text{T}$, joten se kääntää lähellä olevaa kompassia selvästi.
 
 ## fy7-3-L1-02
-**Annettu:** käämi, $N = 500$, pituus $l = 25\,\text{cm}$, virta $I = 1{,}2\,\text{A}$; $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
+**Annettu:** käämi, $N = 500$, pituus $l = 25\,\text{cm}$, virta $I = 1{,}2\,\text{A}$; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Kysytty:** magneettivuon tiheys $B$ käämin keskellä millitesloina
 **Periaate:** Käämi on pitkä paksuuteensa verrattuna. Kenttä halutaan keskeltä, kaukaa päistä. Siellä kenttä on lähes homogeeninen ja riippuu kierrostiheydestä ja virrasta. Siksi pitkän käämin kaava pätee.
 **Kaava:** $B = \mu_0 \dfrac{N I}{l}$
@@ -19,7 +19,7 @@
 **Järkevyys:** Kierrostiheys on $500 : 0{,}25\,\text{m} = 2000$ kierrosta metrillä. Tuhat kierrosta metrillä ja $1\,\text{A}$ antavat noin $1{,}26\,\text{mT}$. Nyt tiheys on $2000$ kierrosta metrillä (kaksinkertainen) ja virta $1{,}2\,\text{A}$, joten kenttä on noin $1{,}26\,\text{mT} \cdot 2 \cdot 1{,}2 \approx 3\,\text{mT}$.
 
 ## fy7-3-L1-03
-**Annettu:** voimajohdon johdin, virta $I = 800\,\text{A}$, etäisyys $r = 16\,\text{m}$; muiden johtimien kentät jätetään huomiotta; $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
+**Annettu:** voimajohdon johdin, virta $I = 800\,\text{A}$, etäisyys $r = 16\,\text{m}$; muiden johtimien kentät jätetään huomiotta; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Kysytty:** magneettivuon tiheys $B$ maanpinnalla mikrotesloina
 **Periaate:** Voimajohto on satoja metrejä pitkä ja suora. Siksi sitä voi $16\,\text{m}$:n etäisyydellä käsitellä pitkänä suorana johtimena. Tehtävässä muiden johtimien vaikutus jätetään pois. Lasketaan siis yhden johtimen kenttä.
 **Kaava:** $B = \dfrac{\mu_0 I}{2\pi r}$
@@ -29,7 +29,7 @@
 **Järkevyys:** Virta on suuri, mutta etäisyyskin on suuri: $2 \cdot 10^{-7} \cdot 800 : 16\,\text{T} = 1 \cdot 10^{-5}\,\text{T}$. Kenttä on noin viidesosa Maan magneettikentästä $50\,\mu\text{T}$.
 
 ## fy7-3-L1-04
-**Annettu:** johdin, virta $I = 2{,}5\,\text{A}$, etäisyys $r = 5{,}0\,\text{mm}$; toisen johtimen vaikutus jätetään huomiotta; $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
+**Annettu:** johdin, virta $I = 2{,}5\,\text{A}$, etäisyys $r = 5{,}0\,\text{mm}$; toisen johtimen vaikutus jätetään huomiotta; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Kysytty:** magneettivuon tiheys $B$ millitesloina
 **Periaate:** Johto on paljon pidempi kuin etäisyys $5\,\text{mm}$. Siksi johdinta voi käsitellä pitkänä suorana johtimena. Tehtävässä lasketaan vain toisen johtimen kenttä.
 **Kaava:** $B = \dfrac{\mu_0 I}{2\pi r}$
@@ -39,7 +39,7 @@
 **Järkevyys:** Kenttä on noin kaksinkertainen Maan kenttään $50\,\mu\text{T}$ verrattuna, koska etäisyys on hyvin pieni. Todellisessa johdossa toisen johtimen virta kulkee vastakkaiseen suuntaan. Se heikentää kenttää useimmissa kohdissa, varsinkin kauempana johdosta. Johdon kenttä on silloin vielä pienempi.
 
 ## fy7-3-L1-05
-**Annettu:** käämi, $N = 300$, pituus $l = 15\,\text{cm}$, virta $I = 0{,}40\,\text{A}$; $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
+**Annettu:** käämi, $N = 300$, pituus $l = 15\,\text{cm}$, virta $I = 0{,}40\,\text{A}$; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Kysytty:** magneettivuon tiheys $B$ käämin keskellä millitesloina
 **Periaate:** Käämi on pitkä paksuuteensa verrattuna, ja kenttä halutaan keskeltä. Siksi pitkän käämin kaava pätee. Kenttä riippuu kierrostiheydestä $N : l$ ja virrasta.
 **Kaava:** $B = \mu_0 \dfrac{N I}{l}$
@@ -54,7 +54,7 @@
 **Mallivastaus:** Kenttäviivat ovat johtimen ympärillä ympyröitä. Ne kiertävät ylhäältä katsottuna vastapäivään. Kun virta käännetään, peukalo osoittaa alas ja kierto kääntyy myötäpäivään. Kierron suunta ei riipu johtimen aineesta. Se riippuu virran suunnasta. Sääntönä on oikean käden sääntö, ei vasemman käden sääntö. Kenttäviivat eivät ole suoria viivoja johtimesta poispäin, koska ne kiertävät johdinta ympyröinä.
 
 ## fy7-3-L1-07
-**Annettu:** alussa $N_1 = 400$, lopussa $N_2 = 1000$, pituus $l = 20\,\text{cm}$ ja virta $I = 0{,}75\,\text{A}$ pysyvät samoina; $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
+**Annettu:** alussa $N_1 = 400$, lopussa $N_2 = 1000$, pituus $l = 20\,\text{cm}$ ja virta $I = 0{,}75\,\text{A}$ pysyvät samoina; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Kysytty:** magneettivuon tiheys $B$ käämin keskellä lisäyksen jälkeen millitesloina
 **Periaate:** Käämi on pitkä, joten sen sisällä $B = \mu_0 \tfrac{N I}{l}$. Kierroksia lisätään samalle pituudelle. Silloin kierrostiheys $N : l$ kasvaa. Kenttä kasvaa samassa suhteessa, kun virta pysyy samana.
 **Kaava:** $B = \mu_0 \dfrac{N_2 I}{l}$
@@ -64,7 +64,7 @@
 **Järkevyys:** Lisäyksen jälkeen kierrostiheys on $1000 : 0{,}20\,\text{m} = 5000$ kierrosta metrillä. Yksi ampeeri antaisi noin $6{,}3\,\text{mT}$. Siksi $0{,}75\,\text{A}$ antaa noin $4{,}7\,\text{mT}$. Alussa kenttä oli $1{,}9\,\text{mT}$. Kierrosten määrä kasvoi $2{,}5$-kertaiseksi, joten kenttäkin on $2{,}5 \cdot 1{,}9\,\text{mT} \approx 4{,}7\,\text{mT}$.
 
 ## fy7-3-L1-08
-**Annettu:** virta $I = 2{,}0\,\text{A}$ molemmissa; käämissä $N = 250$ ja $l = 10\,\text{cm}$; johtimen etäisyys $r = 2{,}0\,\text{cm}$; $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
+**Annettu:** virta $I = 2{,}0\,\text{A}$ molemmissa; käämissä $N = 250$ ja $l = 10\,\text{cm}$; johtimen etäisyys $r = 2{,}0\,\text{cm}$; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Kysytty:** suhde $B_\text{käämi} : B_\text{johdin}$
 **Periaate:** Käämin keskikenttä lasketaan pitkän käämin kaavalla. Johtimen kenttä lasketaan pitkän suoran johtimen kaavalla. Lopuksi lasketaan kenttien suhde.
 **Kaava:** $B_\text{käämi} = \mu_0 \dfrac{N I}{l}$ ja $B_\text{johdin} = \dfrac{\mu_0 I}{2\pi r}$
@@ -74,7 +74,7 @@
 **Järkevyys:** Käämin kenttä $6{,}3\,\text{mT}$ on noin $130$-kertainen Maan kenttään $50\,\mu\text{T}$ verrattuna. Johtimen kenttä $20\,\mu\text{T}$ on noin $40\,\%$ Maan kentästä. Käämi keskittää virran moneen kierrokseen. Siksi sen kenttä on paljon voimakkaampi kuin yhden johtimen kenttä samalla virralla.
 
 ## fy7-3-L2-01
-**Annettu:** tavoitekenttä $B = 20\,\text{mT}$, kierroksia $N = 1200$, pituus $l = 0{,}30\,\text{m}$; $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
+**Annettu:** tavoitekenttä $B = 20\,\text{mT}$, kierroksia $N = 1200$, pituus $l = 0{,}30\,\text{m}$; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Kysytty:** käämin virta $I$ ampeereina
 **Periaate:** Käämi on pitkä, joten sen sisällä $B = \mu_0 \tfrac{N I}{l}$. Kenttä on suoraan verrannollinen virtaan. Tarvittavan virran saat ratkaisemalla kaavasta $I$.
 **Kaava:** $B = \mu_0 \dfrac{N I}{l}$, josta $I = \dfrac{B l}{N \mu_0}$
@@ -84,7 +84,7 @@
 **Järkevyys:** Kierrostiheys on $1200 : 0{,}30\,\text{m} = 4000$ kierrosta metrillä. Yksi ampeeri antaa silloin noin $4 \cdot 1{,}26\,\text{mT} \approx 5\,\text{mT}$. Neljä ampeeria antaa noin $20\,\text{mT}$, kuten haluttiin.
 
 ## fy7-3-L2-02
-**Annettu:** pitkä suora johdin, virta $I = 6{,}0\,\text{A}$, kentän suuruus $B = 14\,\mu\text{T}$; $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
+**Annettu:** pitkä suora johdin, virta $I = 6{,}0\,\text{A}$, kentän suuruus $B = 14\,\mu\text{T}$; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Kysytty:** etäisyys $r$ senttimetreinä
 **Periaate:** Pitkän suoran johtimen kenttä heikkenee kääntäen verrannollisesti etäisyyteen. Siksi kenttä on $14\,\mu\text{T}$ vain yhdellä etäisyydellä. Se ratkaistaan suoran johtimen kaavasta.
 **Kaava:** $B = \dfrac{\mu_0 I}{2\pi r}$, josta $r = \dfrac{\mu_0 I}{2\pi B}$
@@ -94,7 +94,7 @@
 **Järkevyys:** Tarkistetaan sijoittamalla takaisin: $2 \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 6{,}0\,\text{A} : 0{,}0857\,\text{m} = 1{,}4 \cdot 10^{-5}\,\text{T}$. Lähempänä johdinta sen kenttä on Maan kenttää voimakkaampi, kauempana heikompi. Siksi kompassin on oltava muutaman senttimetrin päässä, jotta Ørstedin koe näkyy selvästi.
 
 ## fy7-3-L2-03
-**Annettu:** langan pituus $L = 25\,\text{m}$, putken halkaisija $d = 4{,}0\,\text{cm}$, käämin pituus $l = 0{,}20\,\text{m}$, virta $I = 2{,}0\,\text{A}$; $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
+**Annettu:** langan pituus $L = 25\,\text{m}$, putken halkaisija $d = 4{,}0\,\text{cm}$, käämin pituus $l = 0{,}20\,\text{m}$, virta $I = 2{,}0\,\text{A}$; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Kysytty:** magneettivuon tiheys $B$ käämin keskellä millitesloina
 **Periaate:** Ensin lasketaan kierrosten määrä. Yhteen kierrokseen kuluu lankaa putken ympärysmitan $\pi d$ verran. Käämi on viisi kertaa niin pitkä kuin paksu, joten sen keskellä voi käyttää pitkän käämin kaavaa.
 **Kaava:** $N = \dfrac{L}{\pi d}$ ja $B = \mu_0 \dfrac{N I}{l}$, josta $B = \dfrac{\mu_0 L I}{\pi d\, l}$
@@ -104,7 +104,7 @@
 **Järkevyys:** Kierroksia on noin $200$ ja kierrostiheys noin $1000$ kierrosta metrillä. Silloin $2\,\text{A}$ antaa noin $2 \cdot 1{,}26\,\text{mT} \approx 2{,}5\,\text{mT}$. Lyhyessä käämissä kenttä on todellisuudessa hieman pienempi kuin kaava antaa.
 
 ## fy7-3-L2-04
-**Annettu:** kaksi pitkää yhdensuuntaista johdinta, etäisyys $d = 10\,\text{cm}$, virrat $I = 10\,\text{A}$ vastakkaisiin suuntiin; $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
+**Annettu:** kaksi pitkää yhdensuuntaista johdinta, etäisyys $d = 10\,\text{cm}$, virrat $I = 10\,\text{A}$ vastakkaisiin suuntiin; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Kysytty:** magneettivuon tiheys $B$ johtimien puolivälissä mikrotesloina
 **Periaate:** Kenttien vektorit lasketaan yhteen. Oikean käden säännön mukaan vastakkaissuuntaisten virtojen kentät osoittavat johtimien välissä samaan suuntaan. Kun peukalo osoittaa toisessa johtimessa ylös ja toisessa alas, sormet kiertävät johtimien välissä samaan suuntaan. Puolivälissä kumpikin johdin on $5{,}0\,\text{cm}$:n päässä. Kentät ovat siis yhtä suuret ja vahvistavat toisiaan.
 **Kaava:** $B = 2 \cdot \dfrac{\mu_0 I}{2\pi r}$, missä $r = \dfrac{d}{2}$, eli $B = \dfrac{\mu_0 I}{\pi r}$
@@ -125,7 +125,7 @@
 **Järkevyys:** Tulos on lähes sama kuin kirjallisuusarvo $4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} = 1{,}257 \cdot 10^{-6}\,\tfrac{\text{Vs}}{\text{Am}}$. Vakiotermi $0{,}06\,\text{mT}$ on samaa suuruusluokkaa kuin Maan kenttä $0{,}05\,\text{mT}$. Maan kenttä on osa vakiotermiä. Loput on anturin nollakohtaa. Suora antaa virralla $1{,}5\,\text{A}$ arvon $0{,}06\,\text{mT} + 2{,}51\,\tfrac{\text{mT}}{\text{A}} \cdot 1{,}5\,\text{A} = 3{,}83\,\text{mT}$. Se vastaa taulukon arvoa $3{,}80\,\text{mT}$.
 
 ## fy7-3-L2-06
-**Annettu:** taulukon mittauspisteet $(r;\ B)$: $(1{,}0\,\text{cm};\ 161\,\mu\text{T})$, $(2{,}0\,\text{cm};\ 79\,\mu\text{T})$ ja $(4{,}0\,\text{cm};\ 41\,\mu\text{T})$; $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
+**Annettu:** taulukon mittauspisteet $(r;\ B)$: $(1{,}0\,\text{cm};\ 161\,\mu\text{T})$, $(2{,}0\,\text{cm};\ 79\,\mu\text{T})$ ja $(4{,}0\,\text{cm};\ 41\,\mu\text{T})$; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Kysytty:** magneettivuon tiheys $B$ etäisyydellä $3{,}0\,\text{cm}$ mikrotesloina
 **Periaate:** Pitkän suoran johtimen kentälle $B = \tfrac{\mu_0 I}{2\pi r}$. Siksi $B \cdot r = \tfrac{\mu_0 I}{2\pi}$ on vakio, jos $B$ on kääntäen verrannollinen etäisyyteen. Vakiosta saadaan virta. Virralla lasketaan kenttä uudessa kohdassa.
 **Kuvaajan lukeminen:** Tulot ovat $1{,}0\,\text{cm} \cdot 161\,\mu\text{T} = 161\,\mu\text{T}\,\text{cm}$, $2{,}0\,\text{cm} \cdot 79\,\mu\text{T} = 158\,\mu\text{T}\,\text{cm}$ ja $4{,}0\,\text{cm} \cdot 41\,\mu\text{T} = 164\,\mu\text{T}\,\text{cm}$. Ne poikkeavat keskiarvostaan $161\,\mu\text{T}\,\text{cm}$ alle $2\,\%$. Tulo on siis käytännössä vakio, ja $B$ on kääntäen verrannollinen etäisyyteen $r$.
@@ -142,7 +142,7 @@
 **Mallivastaus:** Lukema on liian pieni, koska anturi mittaa vain oman suuntansa komponentin. Kulmassa $60\,{}^\circ$ lukema on $B \cos 60\,{}^\circ = 0{,}50\,B$, eli puolet todellisesta. Kentän homogeenisuus ei tee anturin suunnasta yhdentekevää. Kenttä ei myöskään voimistu tai heikkene kallistuksen vuoksi. Jos kaikki mittaukset tehdään samalla kallistuksella, kuvaajan kulmakerroin jää liian pieneksi. Silloin myös siitä laskettu $\mu_0$ jää liian pieneksi. Maan kenttä lisää lukemaan vakiotermin. Se poistetaan nollaamalla anturi, kun virta on pois päältä. Vakiotermi ei muuta kulmakerrointa. Virhe vältetään asettamalla anturi akselin suuntaiseksi ja kääntämällä sitä, kunnes lukema on suurin.
 
 ## fy7-3-L3-01
-**Annettu:** johdin $r = 5{,}0\,\text{cm}$ kompassin yläpuolella, neulan kääntymiskulma $\alpha = 30^\circ$, Maan kentän vaakakomponentti $B_\text{h} = 14\,\mu\text{T}$; johtimen kenttä $B_\text{j}$ on kohtisuorassa $B_\text{h}$:ta vastaan; $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
+**Annettu:** johdin $r = 5{,}0\,\text{cm}$ kompassin yläpuolella, neulan kääntymiskulma $\alpha = 30^\circ$, Maan kentän vaakakomponentti $B_\text{h} = 14\,\mu\text{T}$; johtimen kenttä $B_\text{j}$ on kohtisuorassa $B_\text{h}$:ta vastaan; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Kysytty:** johtimen virta $I$ ampeereina
 **Periaate:** Kompassin neula kääntyy kokonaiskentän suuntaan. Kokonaiskenttä on kahden kohtisuoran kentän vektorisumma. Siksi neulan kääntymiskulmalle pätee $\tan \alpha = B_\text{j} : B_\text{h}$. Johdin on pitkä ja suora, joten sen kentästä saadaan virta suoran johtimen kaavalla.
 **Kaava:** $\tan \alpha = \dfrac{B_\text{j}}{B_\text{h}}$ ja $B_\text{j} = \dfrac{\mu_0 I}{2\pi r}$, josta $I = \dfrac{2\pi r B_\text{h} \tan \alpha}{\mu_0}$
@@ -152,7 +152,7 @@
 **Järkevyys:** Kulma on alle $45^\circ$, joten johtimen kentän on oltava Maan kenttää heikompi. Tulos $8\,\mu\text{T} < 14\,\mu\text{T}$ täyttää tämän. Kahden ampeerin virta on tavallinen koulun virtalähteelle. Juuri tällaisella kokeella Ørsted havaitsi ilmiön.
 
 ## fy7-3-L3-02
-**Annettu:** magneettikuvauslaitteen käämi, $B = 1{,}5\,\text{T}$, pituus $l = 1{,}6\,\text{m}$, kierroksen halkaisija $d = 1{,}0\,\text{m}$, virta $I = 400\,\text{A}$; $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
+**Annettu:** magneettikuvauslaitteen käämi, $B = 1{,}5\,\text{T}$, pituus $l = 1{,}6\,\text{m}$, kierroksen halkaisija $d = 1{,}0\,\text{m}$, virta $I = 400\,\text{A}$; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Kysytty:** langan kokonaispituus $L$ kilometreinä
 **Periaate:** Tehtävässä käämi oletetaan pitkäksi. Siksi kierrosten määrä ratkaistaan kaavasta $B = \mu_0 \tfrac{N I}{l}$. Jokaiseen kierrokseen kuluu lankaa ympärysmitan $\pi d$ verran. Langan pituus on siis kierrosten määrä kertaa ympärysmitta.
 **Kaava:** $N = \dfrac{B l}{\mu_0 I}$ ja $L = N \pi d$, josta $L = \dfrac{\pi d B l}{\mu_0 I}$
@@ -172,7 +172,7 @@
 **Järkevyys:** Kohta on lähempänä heikomman virran johdinta, kuten pitääkin. Tarkistus: $4{,}0\,\text{A} : 4{,}0\,\text{cm} = 1{,}0\,\tfrac{\text{A}}{\text{cm}}$ ja $6{,}0\,\text{A} : 6{,}0\,\text{cm} = 1{,}0\,\tfrac{\text{A}}{\text{cm}}$. Kentät ovat siis yhtä suuret.
 
 ## fy7-3-L3-04
-**Annettu:** johtimen korkeus kompassin yläpuolella $h = 4{,}0\,\text{cm}$, taulukon pisteet $(I;\ \alpha)$: $(1{,}0\,\text{A};\ 17{,}5\,{}^\circ)$, $(2{,}0\,\text{A};\ 32{,}0\,{}^\circ)$, $(3{,}0\,\text{A};\ 43{,}5\,{}^\circ)$, $(4{,}0\,\text{A};\ 51{,}0\,{}^\circ)$ ja $(5{,}0\,\text{A};\ 57{,}5\,{}^\circ)$; johtimen kenttä $B_\text{j}$ on kohtisuorassa Maan kentän vaakakomponenttia $B_\text{h}$ vastaan; $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
+**Annettu:** johtimen korkeus kompassin yläpuolella $h = 4{,}0\,\text{cm}$, taulukon pisteet $(I;\ \alpha)$: $(1{,}0\,\text{A};\ 17{,}5\,{}^\circ)$, $(2{,}0\,\text{A};\ 32{,}0\,{}^\circ)$, $(3{,}0\,\text{A};\ 43{,}5\,{}^\circ)$, $(4{,}0\,\text{A};\ 51{,}0\,{}^\circ)$ ja $(5{,}0\,\text{A};\ 57{,}5\,{}^\circ)$; johtimen kenttä $B_\text{j}$ on kohtisuorassa Maan kentän vaakakomponenttia $B_\text{h}$ vastaan; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Kysytty:** Maan kentän vaakakomponentti $B_\text{h}$ mikrotesloina
 **Periaate:** Linearisointi tarkoittaa, että valitaan suure, jonka kuvaaja on suora. Kulma $\alpha$ ei ole suoraan verrannollinen virtaan, mutta $\tan \alpha$ voi olla. Siksi kuvaajaksi valitaan $\tan \alpha$ virran funktiona. Neula kääntyy kokonaiskentän suuntaan. Kentät $B_\text{h}$ ja $B_\text{j}$ ovat kohtisuorassa toisiaan vastaan, joten $\tan \alpha = B_\text{j} : B_\text{h}$. Johdin on pitkä ja suora, joten $B_\text{j} = \tfrac{\mu_0 I}{2\pi h}$. Yhdistämällä saadaan $\tan \alpha = \tfrac{\mu_0}{2\pi h B_\text{h}} \cdot I = k I$. Siis $\tan \alpha$ on suoraan verrannollinen virtaan, jos $B_\text{j}$ on. Suoran kulmakertoimesta $k$ saadaan $B_\text{h}$.
 **Kuvaajan lukeminen:** Tangentit ovat $0{,}315$, $0{,}625$, $0{,}949$, $1{,}235$ ja $1{,}570$. Suhteet $\tan \alpha : I$ ovat $0{,}315$, $0{,}312$, $0{,}316$, $0{,}309$ ja $0{,}314\,\tfrac{1}{\text{A}}$. Ne ovat vakioita noin $2\,\%$:n tarkkuudella. Pisteet asettuvat origon kautta kulkevalle suoralle. Siksi johtimen kenttä on suoraan verrannollinen virtaan. Suoran kulmakerroin on $k = 0{,}313\,\tfrac{1}{\text{A}}$.
@@ -184,7 +184,7 @@
 **Perustelu kohtaan c):** Kulma on $\alpha = \arctan (k I)$. Tangentti ei ole suoraan verrannollinen kulmaan, joten kulma ei ole suoraan verrannollinen virtaan. Kulman kasvu hidastuu. Kun virta kasvaa arvosta $1{,}0\,\text{A}$ arvoon $2{,}0\,\text{A}$, kulma kasvaa $14{,}5\,{}^\circ$. Kun virta kasvaa arvosta $4{,}0\,\text{A}$ arvoon $5{,}0\,\text{A}$, kulma kasvaa vain $6{,}5\,{}^\circ$. Kun virta on suuri, johtimen kenttä on paljon suurempi kuin $B_\text{h}$. Silloin kokonaiskenttä osoittaa lähes johtimen kentän suuntaan. Se on kohtisuorassa alkuperäiseen pohjoissuuntaan nähden. Siksi $\alpha$ lähestyy kulmaa $90\,{}^\circ$ mutta ei saavuta sitä, koska $B_\text{h}$ ei häviä.
 
 ## fy7-3-L3-05
-**Annettu:** langan pituus $L = 30\,\text{m}$, metallin halkaisija $0{,}50\,\text{mm}$, eristeineen $d_\text{e} = 0{,}55\,\text{mm}$, $\rho = 1{,}7 \cdot 10^{-8}\,\Omega\,\text{m}$, putken halkaisija $d = 3{,}0\,\text{cm}$, jännite $U = 6{,}0\,\text{V}$; $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
+**Annettu:** langan pituus $L = 30\,\text{m}$, metallin halkaisija $0{,}50\,\text{mm}$, eristeineen $d_\text{e} = 0{,}55\,\text{mm}$, $\rho = 1{,}7 \cdot 10^{-8}\,\Omega\,\text{m}$, putken halkaisija $d = 3{,}0\,\text{cm}$, jännite $U = 6{,}0\,\text{V}$; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Kysytty:** magneettivuon tiheys $B$ käämin keskellä millitesloina
 **Periaate:** Yhden kierroksen langan pituus on $\pi d$. Tiiviissä kerroksessa jokainen kierros vie pituutta eristeellisen langan paksuuden $d_\text{e}$ verran. Virran rajoittaa langan resistanssi: $R = \rho L : A$ ja $I = U : R$ (FY6). Käämi oletetaan pitkäksi, joten kenttä on $B = \mu_0 \tfrac{N I}{l}$.
 **Kaava:** $N = \dfrac{L}{\pi d}$, $l = N d_\text{e}$, $A = \pi \left(\dfrac{d_\text{m}}{2}\right)^2$, $R = \dfrac{\rho L}{A}$, $I = \dfrac{U}{R}$ ja $B = \mu_0 \dfrac{N I}{l}$

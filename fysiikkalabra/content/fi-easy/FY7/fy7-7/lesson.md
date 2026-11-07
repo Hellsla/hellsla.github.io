@@ -324,7 +324,7 @@ Käämissä on $N$ kierrosta, ja sen pinta-ala on $A$. Käämi pyörii tasaisest
 &e_0 = NBA \cdot 2\pi f
 \end{aligned}
 ```
-missä $\Phi$ on magneettivuo yhden kierroksen läpi (Wb), $e$ jännitteen hetkellinen arvo eli arvo tietyllä hetkellä (V), $e_0$ jännitteen huippuarvo eli suurin arvo (V), $N$ kierrosten lukumäärä, $B$ magneettivuon tiheys (T), $A$ käämin pinta-ala (m²) ja $f$ pyörimistaajuus eli kierrosten määrä sekunnissa (Hz). Jännitteen taajuus on sama kuin pyörimistaajuus. Jaksonaika eli yhden kierroksen kesto on $T = 1 : f$.
+missä $\Phi$ on magneettivuo yhden kierroksen läpi (Wb), $e$ jännitteen hetkellinen arvo eli arvo tietyllä hetkellä (V), $e_0$ jännitteen huippuarvo eli suurin arvo (V), $N$ kierrosten lukumäärä, $B$ magneettivuon tiheys (T), $A$ käämin pinta-ala (m²) ja $f$ pyörimistaajuus eli kierrosten määrä sekunnissa (Hz). Jännitteen taajuus on sama kuin pyörimistaajuus. Jaksonaika eli yhden kierroksen kesto on $T = 1 : f$. Vuo muuttuu pyöriessä epätasaisesti, joten $e$ on hetkellinen jännite. Se on suurin, kun vuo on nolla ja muuttuu nopeimmin. Se on nolla, kun vuo on suurimmillaan.
 
 ### Mistä huippuarvo tulee
 Huippuarvo saadaan liikkuvan johtimen jännitteestä $e = vBl$ (luku *Sähkömagneettinen induktio*). Suorakulmaisen käämin kaksi sivua, joiden pituus on $l$, kiertävät akselia säteellä $b : 2$. Tässä $b$ on käämin leveys. Sivujen nopeus on $v = 2\pi f \cdot b : 2 = \pi f b$.
@@ -378,7 +378,7 @@ Vaihtojännitteen keskiarvo yhden jakson aikana on nolla. Lamppu tai vastus läm
 &I = \frac{I_0}{\sqrt{2}}
 \end{aligned}
 ```
-missä $U_0$ ja $I_0$ ovat jännitteen ja virran **huippuarvot** ja $U$ ja $I$ tehollisarvot. Silloin keskimääräinen teho on $P = UI$, kuten tasavirralla.
+missä $U_0$ ja $I_0$ ovat jännitteen ja virran **huippuarvot** ja $U$ ja $I$ tehollisarvot. Kun vaihtovirta kulkee puhtaan resistiivisen kuorman, kuten ideaalisen vastuksen, läpi, virta ja jännite ovat samassa vaiheessa. Silloin keskimääräinen teho voidaan laskea tehollisarvoista kaavalla $P = UI$, kuten tasavirralla. Yleisessä vaihtovirtapiirissä virran ja jännitteen välillä voi olla vaihe-ero. Silloin keskimääräinen teho riippuu myös tehokertoimesta.
 
 Pistorasian $230\,\text{V}$ on tehollinen arvo. Jännitteen huippuarvo on $230\,\text{V} \cdot \sqrt{2} \approx 325\,\text{V}$. Taajuus on $50\,\text{Hz}$, joten jännite vaihtaa suuntaansa sata kertaa sekunnissa. Fingrid pitää kantaverkon taajuuden normaalisti välillä $49{,}9$–$50{,}1\,\text{Hz}$. Mittarit näyttävät vaihtojännitteen ja -virran tehollisarvoina.
 
@@ -472,7 +472,7 @@ Kolmas virhe on päätellä, että vaihtovirta ei siirrä energiaa, koska sen ke
 - Generaattorissa käämi pyörii magneettikentässä (tai magneetti käämin sisällä). Käämin läpi kulkeva vuo $\Phi = BA\cos(2\pi f t)$ vaihtelee jatkuvasti.
 - Induktiojännite riippuu vuon muutosnopeudesta. Se on nolla, kun vuo on suurin. Se on suurin, kun käämin taso on kentän suuntainen ja vuo on nolla.
 - Syntyy sinimuotoinen vaihtojännite $e = e_0 \sin(2\pi f t)$. Sen huippuarvo on $e_0 = NBA \cdot 2\pi f$, ja sen taajuus on sama kuin pyörimistaajuus.
-- Sinimuotoisen vaihtojännitteen tehollinen arvo on $U = U_0 : \sqrt{2}$ ja virran $I = I_0 : \sqrt{2}$. Keskimääräinen teho on $P = UI$. Verkkojännitteen $230\,\text{V}$ huippuarvo on noin $325\,\text{V}$ ja taajuus $50\,\text{Hz}$.
+- Sinimuotoisen vaihtojännitteen tehollinen arvo on $U = U_0 : \sqrt{2}$ ja virran $I = I_0 : \sqrt{2}$. Resistiivisen kuorman keskimääräinen teho on $P = UI$. Verkkojännitteen $230\,\text{V}$ huippuarvo on noin $325\,\text{V}$ ja taajuus $50\,\text{Hz}$.
 - Tuulivoimalan roottori pyörittää generaattoria, ja taajuusmuuttaja sovittaa jännitteen verkon taajuuteen.
 
 <svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Kuvitus: pyöräilijä ajaa iltahämärässä. Etupyörän navassa on dynamo, joka antaa lampulle vaihtojännitteen. Lampun valokeila valaisee tietä pyörän edessä." style="max-width:100%;font-size:24px">

@@ -36,8 +36,8 @@
     {
       "id": "fy7-8-L1-05",
       "level": 1,
-      "text": "Kantaverkon $400\\,\\text{kV}$:n johdossa kulkee $800\\,\\text{A}$:n virta. Kuinka suurta tehoa johto siirtää? Anna vastaus megawatteina.",
-      "answer": 320.0,
+      "text": "Kantaverkon $400\\,\\text{kV}$:n johto on kolmivaiheinen. Sen jokaisessa vaihejohtimessa kulkee $800\\,\\text{A}$:n virta. Jännite $400\\,\\text{kV}$ on vaihejohtimien välinen pääjännite, ja tehokerroin on $1$. Kuinka suurta tehoa johto siirtää? Anna vastaus megawatteina.",
+      "answer": 554.2563,
       "unit": "MW",
       "tolerance": 0.02
     },
@@ -101,7 +101,7 @@
       "id": "fy7-8-L2-01",
       "level": 2,
       "core": true,
-      "text": "Vesivoimala siirtää tehon $50\\,\\text{MW}$ jännitteellä $110\\,\\text{kV}$ sähköasemalle. Johtimien yhteinen resistanssi on $4{,}0\\,\\Omega$. Kuinka suuri teho johdossa muuttuu lämmöksi? Anna vastaus kilowatteina.",
+      "text": "Vesivoimala siirtää tehon $50\\,\\text{MW}$ jännitteellä $110\\,\\text{kV}$ sähköasemalle. Johtimien yhteinen resistanssi on $4{,}0\\,\\Omega$. Siirtoa kuvataan yksinkertaistetulla kaksijohtimisella mallilla. Kuinka suuri teho johdossa muuttuu lämmöksi? Anna vastaus kilowatteina.",
       "answer": 826.4463,
       "unit": "kW",
       "tolerance": 0.02
@@ -117,7 +117,7 @@
     {
       "id": "fy7-8-L2-03",
       "level": 2,
-      "text": "Voimalaitos siirtää tehon $100\\,\\text{MW}$ jännitteellä $220\\,\\text{kV}$ johtoa pitkin. Johtimien yhteinen resistanssi on $4{,}8\\,\\Omega$. Kuinka monta prosenttia siirrettävästä tehosta muuttuu johdossa lämmöksi?",
+      "text": "Voimalaitos siirtää tehon $100\\,\\text{MW}$ jännitteellä $220\\,\\text{kV}$ johtoa pitkin. Johtimien yhteinen resistanssi on $4{,}8\\,\\Omega$. Siirtoa kuvataan yksinkertaistetulla kaksijohtimisella mallilla. Kuinka monta prosenttia siirrettävästä tehosta muuttuu johdossa lämmöksi?",
       "answer": 0.9917,
       "unit": "%",
       "tolerance": 0.02
@@ -239,7 +239,7 @@
       "kind": [
         "reasoning"
       ],
-      "text": "Tuulivoimalan generaattori tuottaa tehon $3{,}0\\,\\text{MW}$ jännitteellä $690\\,\\text{V}$. Voimalan muuntaja nostaa jännitteen $20\\,\\text{kV}$:iin. Teho siirretään kaapelia pitkin sähköasemalle. Kaapelin johtimien yhteinen resistanssi on $0{,}50\\,\\Omega$. Arvot ovat esimerkkiarvoja, ja muuntaja oletetaan ideaaliseksi eli häviöttömäksi.\n\nMikä on kaapelissa lämmöksi muuttuvan häviötehon $P_\\text{h}$ suuruusluokka? Suuruusluokka kertoo luvun koon suunnilleen.",
+      "text": "Tuulivoimalan generaattori tuottaa tehon $3{,}0\\,\\text{MW}$ jännitteellä $690\\,\\text{V}$. Voimalan muuntaja nostaa jännitteen $20\\,\\text{kV}$:iin. Teho siirretään kaapelia pitkin sähköasemalle. Kaapelin johtimien yhteinen resistanssi on $0{,}50\\,\\Omega$. Arvot ovat esimerkkiarvoja, ja muuntaja oletetaan ideaaliseksi eli häviöttömäksi. Siirtoa kuvataan yksinkertaistetulla kaksijohtimisella mallilla.\n\nMikä on kaapelissa lämmöksi muuttuvan häviötehon $P_\\text{h}$ suuruusluokka? Suuruusluokka kertoo luvun koon suunnilleen.",
       "answer": "noin $10\\,\\text{kW}$",
       "unit": "",
       "tolerance": 0.02,
@@ -268,7 +268,7 @@
     {
       "id": "fy7-8-L3-01",
       "level": 3,
-      "text": "Voimalaitoksen generaattori tuottaa tehon $150\\,\\text{MW}$ jännitteellä $20\\,\\text{kV}$. Ideaalinen muuntaja nostaa jännitteen $400\\,\\text{kV}$:iin. Sähkö siirretään johtoa pitkin, jonka johtimien yhteinen resistanssi on $8{,}0\\,\\Omega$. Kuinka monta prosenttia tehosta muuttuu johdossa lämmöksi?",
+      "text": "Voimalaitoksen generaattori tuottaa tehon $150\\,\\text{MW}$ jännitteellä $20\\,\\text{kV}$. Ideaalinen muuntaja nostaa jännitteen $400\\,\\text{kV}$:iin. Sähkö siirretään johtoa pitkin, jonka johtimien yhteinen resistanssi on $8{,}0\\,\\Omega$. Siirtoa kuvataan yksinkertaistetulla kaksijohtimisella mallilla. Kuinka monta prosenttia tehosta muuttuu johdossa lämmöksi?",
       "answer": 0.75,
       "unit": "%",
       "tolerance": 0.02
@@ -276,7 +276,7 @@
     {
       "id": "fy7-8-L3-02",
       "level": 3,
-      "text": "Suunnitteilla on $400\\,\\text{kV}$:n voimajohto, jonka on siirrettävä tehoa $400\\,\\text{MW}$. Johdon häviöteho saa olla enintään $1{,}0\\,\\%$ siirrettävästä tehosta. Kuinka suuri johtimien yhteinen resistanssi saa enintään olla?",
+      "text": "Suunnitteilla on $400\\,\\text{kV}$:n voimajohto, jonka on siirrettävä tehoa $400\\,\\text{MW}$. Johdon häviöteho saa olla enintään $1{,}0\\,\\%$ siirrettävästä tehosta. Siirtoa kuvataan yksinkertaistetulla kaksijohtimisella mallilla. Kuinka suuri johtimien yhteinen resistanssi saa enintään olla?",
       "answer": 4.0,
       "unit": "Ω",
       "tolerance": 0.02
@@ -284,7 +284,7 @@
     {
       "id": "fy7-8-L3-03",
       "level": 3,
-      "text": "Vanha $220\\,\\text{kV}$:n voimajohto muutetaan $400\\,\\text{kV}$:n johdoksi. Johtimet ja niiden resistanssi pysyvät samoina. Kuinka moninkertainen teho samaa johtoa voidaan siirtää, kun häviöteho on edelleen yhtä suuri osuus siirrettävästä tehosta kuin ennen?",
+      "text": "Vanha $220\\,\\text{kV}$:n voimajohto muutetaan $400\\,\\text{kV}$:n johdoksi. Johtimet ja niiden resistanssi pysyvät samoina. Siirtoa kuvataan yksinkertaistetulla kaksijohtimisella mallilla. Kuinka moninkertainen teho samaa johtoa voidaan siirtää, kun häviöteho on edelleen yhtä suuri osuus siirrettävästä tehosta kuin ennen?",
       "answer": 3.3058,
       "unit": "kertaa",
       "tolerance": 0.02
@@ -292,7 +292,7 @@
     {
       "id": "fy7-8-L3-04",
       "level": 3,
-      "text": "Suunnittelija vertaa kahta tapaa siirtää tuulipuiston teho sähköasemalle. Asema on $150\\,\\text{km}$:n päässä. Vaihtoehto A on $220\\,\\text{kV}$:n johto ja vaihtoehto B on $400\\,\\text{kV}$:n johto. Kummassakin on samanlaiset johtimet.\n\nOletetaan, että siirrettävä teho on vakio $200\\,\\text{MW}$ koko vuoden, $8760\\,\\text{h}$. Johtimien yhteinen resistanssi on $0{,}040\\,\\Omega$ johdon kilometriä kohti. Luvut ovat esimerkkiaineistoa.\n\na) Laske johtimien resistanssi ja johdon virta kummassakin vaihtoehdossa.\n\nb) Laske häviöteho ja vuodessa johtoon hukkuva energia kummassakin vaihtoehdossa megawattitunteina.\n\nc) Sähkön hinta on $50\\,\\text{€/MWh}$. Kuinka monta miljoonaa euroa vuodessa vaihtoehto B säästää häviöenergian arvossa verrattuna vaihtoehtoon A? Perustele lisäksi kirjallisesti, miksi häviö pienenee, vaikka siirrettävä teho on sama.\n\nKirjoita vastauslaatikkoon kohdan c) säästö miljoonina euroina.",
+      "text": "Suunnittelija vertaa kahta tapaa siirtää tuulipuiston teho sähköasemalle. Asema on $150\\,\\text{km}$:n päässä. Vaihtoehto A on $220\\,\\text{kV}$:n johto ja vaihtoehto B on $400\\,\\text{kV}$:n johto. Kummassakin on samanlaiset johtimet.\n\nOletetaan, että siirrettävä teho on vakio $200\\,\\text{MW}$ koko vuoden, $8760\\,\\text{h}$. Johtimien yhteinen resistanssi on $0{,}040\\,\\Omega$ johdon kilometriä kohti. Luvut ovat esimerkkiaineistoa. Siirtoa kuvataan yksinkertaistetulla kaksijohtimisella mallilla.\n\na) Laske johtimien resistanssi ja johdon virta kummassakin vaihtoehdossa.\n\nb) Laske häviöteho ja vuodessa johtoon hukkuva energia kummassakin vaihtoehdossa megawattitunteina.\n\nc) Sähkön hinta on $50\\,\\text{€/MWh}$. Kuinka monta miljoonaa euroa vuodessa vaihtoehto B säästää häviöenergian arvossa verrattuna vaihtoehtoon A? Perustele lisäksi kirjallisesti, miksi häviö pienenee, vaikka siirrettävä teho on sama.\n\nKirjoita vastauslaatikkoon kohdan c) säästö miljoonina euroina.",
       "kind": [
         "model",
         "reasoning"

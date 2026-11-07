@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: d81523ca9a2b0c13
-Scope: the diff since my last PASS (base 54b95f708, hash c245c1fc5b1be4ba), not a full review: the packet says full, but the teacher ruled "katselmoi vain muuttuneet osat" and the only changes are consistency fixes. Reviewed `git diff 54b95f708 -- content/fi-easy/FY7/fy7-5` (lesson, inquiry) plus the text the changed lines touch; plain-language quality of the changed sentences checked.
+CONTENT-HASH: b1a099f5521137fb
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- content/fi-easy/FY7/fy7-5/lesson.md:198 — "Jännite lataa lampun." is loose (the voltage charges the torch's store, not the lamp) — "Jännite lataa lampun akun."
+- none
 
 ## Checked
-- $F = |q|vB$ in prior and stage-1 choices/feedback matches fy7-2 fi-easy, which explains $|q|$ as "varauksen suuruus"; no new term for the plain-language reader.
-- The changed feedback sentences keep short selkosuomi sentences; only the chapter name changed.
-- Chapter references use current titles (*Varatun hiukkasen liike sähkö- ja magneettikentässä*, *Homogeeninen sähkökenttä*).
-- Photo caption: five short sentences, one step each (magneetti liikkuu → vuo muuttuu → jännite), everyday words; alt short and plain.
-- Hash unchanged at start and end.
+- Diff: induction law now e_ka = -N dPhi:dt as the average over dt; steady change -> constant e; uneven change -> e(t) = -N dPhi/dt with the tangent slope; |e_ka| = N|dPhi|:dt always positive; meta, inquiry hint, return prompt, exercises card, summary.
+- The average/instantaneous distinction is placed right after the formula and tied to the graph (slope vs tangent slope), so it adds a step the student can follow; the inquiry model answer now says why e = -N dPhi:dt holds there (steady change).
+- dPhi/dt appears only as a pointer with the tangent-slope reading next to it, so a student without derivatives is not stranded.
+- Round 2 (diff since my round-1 report): magnet-task hint 3 and solution use |e_ka| throughout (fi, en, fi-easy); en formula paragraph split into three. Consistent with the lesson; my hint-3 item is resolved.
+- Language checked: fi-easy. fi-easy: the new text is in short, clear sentences and keeps every point of fi (nothing dropped). Hash b1a099f5521137fb at start and end.

@@ -163,14 +163,14 @@ Positiiviseen ioniin vaikuttava sähköinen voima osoittaa samaan suuntaan kuin 
 ## fy7-s3
 
 ### a)
-**Annettu:** siirrettävä teho $P = 6{,}0\,\text{MW}$, siirtojännite $U = 20\,\text{kV}$, johdon pituus $25\,\text{km}$, kaksi johdinta, poikkipinta-ala $A = 150\,\text{mm}^2$ ja resistiivisyys $\rho = 2{,}82 \cdot 10^{-8}\,\Omega\,\text{m}$
-**Kysytty:** johdon häviöteho $P_\text{h}$ ja sen osuus siirrettävästä tehosta
-**Periaate:** Virta kulkee kaivokselle toista johdinta pitkin ja palaa toista pitkin. Virtapiirin johtimien pituus on siis $2 \cdot 25\,\text{km}$. Resistanssi saadaan resistiivisyydestä, pituudesta ja poikkipinta-alasta. Siirrettävä teho on jännitteen ja virran tulo, joten virta on teho jaettuna jännitteellä. Johdon resistanssissa lämmöksi muuttuva teho on resistanssin ja virran neliön tulo.
+**Annettu:** sähköaseman johtoon syöttämä teho $P = 6{,}0\,\text{MW}$, siirtojännite $U = 20\,\text{kV}$, johdon pituus $25\,\text{km}$, kaksi johdinta, poikkipinta-ala $A = 150\,\text{mm}^2$ ja resistiivisyys $\rho = 2{,}82 \cdot 10^{-8}\,\Omega\,\text{m}$
+**Kysytty:** johdon häviöteho $P_\text{h}$ ja sen osuus johtoon syötetystä tehosta
+**Periaate:** Virta kulkee kaivokselle toista johdinta pitkin ja palaa toista pitkin. Yksinkertaistetussa kaksijohtimisessa mallissa virtapiirin johtimien pituus on siis $2 \cdot 25\,\text{km}$. Resistanssi saadaan resistiivisyydestä, pituudesta ja poikkipinta-alasta. Siirrettävä teho on jännitteen ja virran tulo, joten virta on teho jaettuna jännitteellä. Johdon resistanssissa lämmöksi muuttuva teho on resistanssin ja virran neliön tulo.
 **Kaava:** $R = \rho \dfrac{l}{A}$, $I = \dfrac{P}{U}$ ja $P_\text{h} = R I^2$
 **Muunnokset:** $l = 2 \cdot 25\,\text{km} = 5{,}0 \cdot 10^{4}\,\text{m}$, $A = 150\,\text{mm}^2 = 150 \cdot 10^{-6}\,\text{m}^2$, $P = 6{,}0 \cdot 10^{6}\,\text{W}$ ja $U = 20 \cdot 10^{3}\,\text{V}$
 **Sijoitus:** $R = 2{,}82 \cdot 10^{-8}\,\Omega\,\text{m} \cdot \dfrac{5{,}0 \cdot 10^{4}\,\text{m}}{150 \cdot 10^{-6}\,\text{m}^2} = 9{,}40\,\Omega$, $I = \dfrac{6{,}0 \cdot 10^{6}\,\text{W}}{20 \cdot 10^{3}\,\text{V}} = 300\,\text{A}$ ja $P_\text{h} = 9{,}40\,\Omega \cdot (300\,\text{A})^2 = 846\,000\,\text{W}$. Osuus on $846\,\text{kW} : 6000\,\text{kW} = 0{,}141 = 14{,}1\,\%$.
-**Vastaus:** $P_\text{h} \approx 850\,\text{kW}$ eli noin $14\,\%$ siirrettävästä tehosta. Vastauksessa on kaksi merkitsevää numeroa, kuten tehossa ja jännitteessä.
-**Järkevyys:** Sähköverkon häviöt ovat Suomessa yhteensä vain muutamia prosentteja. Siksi $14\,\%$:n häviö yhdessä johdossa on aivan liian suuri. Pienellä jännitteellä tarvitaan suuri virta, ja häviö kasvaa virran neliönä.
+**Vastaus:** $P_\text{h} \approx 850\,\text{kW}$ eli noin $14\,\%$ johtoon syötetystä tehosta. Vastauksessa on kaksi merkitsevää numeroa, kuten tehossa ja jännitteessä.
+**Järkevyys:** Sähköverkon häviöt ovat Suomessa yhteensä vain muutamia prosentteja. Siksi $14\,\%$:n häviö yhdessä johdossa on aivan liian suuri. Pienellä jännitteellä tarvitaan suuri virta, ja häviö kasvaa virran neliönä. Kaivokselle jää vain noin $6{,}0\,\text{MW} - 0{,}85\,\text{MW} \approx 5{,}2\,\text{MW}$.
 
 ### b)
 **Annettu:** a-kohdan tiedot ja resistanssi $R = 9{,}40\,\Omega$, siirtojännite $U = 110\,\text{kV}$
@@ -204,7 +204,7 @@ Positiiviseen ioniin vaikuttava sähköinen voima osoittaa samaan suuntaan kuin 
 *Johtopäätös.* Ehdotus toimisi periaatteessa, mutta johto olisi valtavan raskas ja kallis. Siksi pitkät siirrot tehdään suurella jännitteellä. Jännite lasketaan muuntajalla vasta käyttöpaikan lähellä.
 
 ### e)
-**Annettu:** johtimien etäisyys $r = 1{,}5\,\text{m}$, virta normaalikäytössä $I = 300\,\text{A}$ (a-kohta) ja oikosulussa $I_\text{k} = 8{,}0\,\text{kA}$, $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$, johtimen poikkipinta-ala $A = 150\,\text{mm}^2$ ja alumiinin tiheys $\rho_\text{Al} = 2700\,\text{kg/m}^3$
+**Annettu:** johtimien etäisyys $r = 1{,}5\,\text{m}$, virta normaalikäytössä $I = 300\,\text{A}$ (a-kohta) ja oikosulussa $I_\text{k} = 8{,}0\,\text{kA}$, $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$, johtimen poikkipinta-ala $A = 150\,\text{mm}^2$ ja alumiinin tiheys $\rho_\text{Al} = 2700\,\text{kg/m}^3$
 **Kysytty:** vetävätkö vai hylkivätkö johtimet toisiaan, voima johtimen metriä kohti $F : l$ kummassakin tilanteessa ja sen merkitys
 **Periaate:** Virta kulkee kaivokselle toista johdinta pitkin ja palaa toista pitkin. Johtimissa kulkee siis yhtä suuri virta vastakkaisiin suuntiin. Kumpikin johdin on pitkä suora johdin. Johtimet ovat paljon pidempiä kuin niiden etäisyys. Siksi toisen johtimen kohdalla oleva magneettikenttä saadaan suoran johtimen kentän kaavasta. Kenttä on kohtisuorassa toista johdinta vastaan, joten siihen kohdistuu voima $F = IlB$. Oikean käden säännön mukaan vastakkaissuuntaiset virrat hylkivät toisiaan. Vaihtovirralla virrat vaihtavat suuntaa yhtä aikaa. Ne ovat siis aina vastakkaissuuntaiset, ja johtimet hylkivät toisiaan koko ajan. Johtimen metrin paino saadaan sen massasta, joka on tiheyden ja tilavuuden tulo.
 **Kaava:** $B = \dfrac{\mu_0 I}{2\pi r}$ ja $F = IlB$, joten $\dfrac{F}{l} = \dfrac{\mu_0 I^2}{2\pi r}$. Painoa varten $\dfrac{G}{l} = \rho_\text{Al} A g$.
