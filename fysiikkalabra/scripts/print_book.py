@@ -39,10 +39,20 @@ TEXT = {
 # student answers or operates on the web is left out: predictions, the investigation, the simulation, tasks, the
 # check, the exercises, hints and model solutions, the optional boxes that hold a task, navigation and buttons.
 BOOK_CSS = """
-@page{size:A5;margin:13mm 14mm 15mm 14mm}
+@page{size:A5;margin:10mm 11mm 12mm 11mm}
 html,body{background:#fff!important}
-main{font-size:10pt!important;line-height:1.42!important}main *{font-size:inherit}
-main h1{font-size:17pt!important;line-height:1.2!important}main h2{font-size:13pt!important}main h3{font-size:11pt!important}
+main{font-size:9.3pt!important;line-height:1.34!important}main *{font-size:inherit}
+main h1{font-size:15pt!important;line-height:1.2!important}main h2{font-size:12pt!important;margin:.9em 0 .35em!important}main h3{font-size:10.5pt!important;margin:.8em 0 .3em!important}
+/* compact (teacher 2026-11-07, "50 A4 arkkia on aika paljon"): the same content in less paper; smaller type and margins,
+   figures and photos narrower than the column, tighter spacing (FY3 200 -> about 150 pages) */
+main p,main ul,main ol{margin-top:.35em!important;margin-bottom:.45em!important}main li{margin:.15em 0!important}
+.fig svg,.fig img,.fig-row svg{max-width:92mm!important;display:block;margin-left:auto!important;margin-right:auto!important}
+.fig,.fig-row{margin:.4em 0!important;gap:.4em!important}
+figure.unit-photo{width:62mm!important;margin:.5em auto!important}.intro-media img,.intro-media svg{max-width:70mm!important;display:block;margin:0 auto}
+.intro-row{gap:3mm!important}.intro-aside{padding:2.5mm 3.5mm!important}.intro-head blockquote{margin:0 0 3mm!important}
+.katex-display{margin:.35em 0!important}.eq-chain{margin:.3em 0!important}
+.example{margin:.5em 0!important}.example-task{padding:2.5mm 3.5mm!important}.worked .step{margin:.35em 0!important;padding-left:3mm!important}
+.worked .step p{margin:.15em 0!important}
 #ennusta,#tutki,#sim,#tarkista,#exercises,nav,.chapter-nav,details.sim-box,details.fold,details.hint,details.answer,
 details.solution,.solution,.pad,.pad-open,button,.stage-no,.skip-link,
 .activity:not(.act-theory):not(.act-hook),details.opt:has(.activity:not(.act-theory):not(.act-hook)),
@@ -58,7 +68,7 @@ main h2,main h3,main h4,.theory-h,.example-label,.step-label{break-after:avoid}
 /* a box taller than about half a page may break (print_book.py marks it): moved whole it left a page nearly empty */
 .book-may-break{break-inside:auto!important}
 .intro-row{flex-direction:column!important}svg{max-width:100%;height:auto}img{max-width:100%}
-.book-qr{display:flex;gap:4mm;align-items:center;margin:0 0 5mm;padding:2.5mm 3mm;border:1px solid #bbb;border-radius:2mm;break-inside:avoid}
+.book-qr{display:flex;gap:4mm;align-items:center;margin:0 0 3mm;padding:2.5mm 3mm;border:1px solid #bbb;border-radius:2mm;break-inside:avoid}
 .book-qr svg{width:21mm;height:21mm;flex:none}.book-qr p{margin:0;font-size:8.5pt!important;line-height:1.35}
 .book-qr .u{font-family:monospace;word-break:break-all}
 """
@@ -99,8 +109,8 @@ def render_chapter(page, f, url, label):
            f'<span class="u">{html.escape(url.replace("https://", ""))}</span></p></div>')
     # measure in the printed column width: a kept-whole box taller than ~45 % of the page body may break instead
     page.emulate_media(media="print")
-    page.set_viewport_size({"width": round(120 * 96 / 25.4), "height": 900})
-    page.evaluate("""() => { const limit = 0.45 * 182 * 96 / 25.4;
+    page.set_viewport_size({"width": round(126 * 96 / 25.4), "height": 900})
+    page.evaluate("""() => { const limit = 0.45 * 188 * 96 / 25.4;
       for (const el of document.querySelectorAll('main *'))
         if (getComputedStyle(el).breakInside === 'avoid' && el.getBoundingClientRect().height > limit)
           el.classList.add('book-may-break'); }""")
