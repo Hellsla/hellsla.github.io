@@ -299,7 +299,7 @@ P = \sqrt{3}\,U I \cos\varphi
 ```
 Tässä $P$ on siirrettävä pätöteho (W), $U$ on pääjännite (V) ja $I$ on vaihejohtimen virta (A). Merkintä $\cos\varphi$ on tehokerroin. Tehokerroin on yksi, kun virta ja jännite ovat samassa vaiheessa.
 
-Samalla jännitteellä ja virralla kolmivaihejohto siirtää noin $1{,}73$-kertaisen tehon kaksijohtimiseen malliin verrattuna. Periaate on silti sama: suuri siirtojännite pienentää virtaa ja häviöitä. Tämän luvun laskutehtävissä käytetään tarkoituksella yksinkertaistettua kaksijohtimista mallia $P = UI$, ellei tehtävässä sanota muuta.
+Samalla jännitteellä, virralla ja tehokertoimella kolmivaihejohto siirtää noin $1{,}73$-kertaisen tehon kaksijohtimiseen malliin verrattuna. Periaate on silti sama: suuri siirtojännite pienentää virtaa ja häviöitä. Tämän luvun laskutehtävissä käytetään tarkoituksella yksinkertaistettua kaksijohtimista mallia $P = UI$, ellei tehtävässä sanota muuta.
 
 ## Esimerkki
 Sähköaseman muuntaja laskee alueverkon jännitteen $110\,\text{kV}$ jakeluverkon jännitteeksi $20\,\text{kV}$. Toisiokäämissä on $360$ kierrosta, ja jakeluverkkoon lähtevä virta on $450\,\text{A}$. Kuinka monta kierrosta ensiökäämissä on? Kuinka suuri virta ensiökäämissä kulkee? Muuntaja oletetaan ideaaliseksi.

@@ -41,10 +41,10 @@
 ## fy7-8-L1-05
 **Annettu:** kolmivaihejohdon pääjännite $U = 400\,\text{kV}$, vaihejohtimen virta $I = 800\,\text{A}$, tehokerroin $\cos\varphi = 1$
 **Kysytty:** siirrettävä teho $P$ megawatteina
-**Periaate:** Johto on kolmivaiheinen. Jännite $400\,\text{kV}$ on vaihejohtimien välinen pääjännite. Kun kolmivaiheverkko on tasaisesti kuormitettu, sen pätöteho on $P = \sqrt{3}\,U I \cos\varphi$. Kaksijohtimisen mallin kaava $P = UI$ antaisi liian pienen tuloksen, koska siinä ei ole mukana kolmatta vaihejohdinta.
+**Periaate:** Johto on kolmivaiheinen. Jännite $400\,\text{kV}$ on vaihejohtimien välinen pääjännite. Kun kolmivaiheverkko on tasaisesti kuormitettu, sen pätöteho on $P = \sqrt{3}\,U I \cos\varphi$. Kaksijohtimisen mallin kaava $P = UI$ antaisi liian pienen tuloksen. Jokainen kolmesta vaihejohtimesta siirtää tehoa vaihejännitteellä $U : \sqrt{3}$, koska vaiheiden jännitteet ovat eri vaiheissa. Siksi kokonaisteho on $3 \cdot (U : \sqrt{3}) \cdot I = \sqrt{3}\,U I$.
 **Kaava:** $P = \sqrt{3}\,U I \cos\varphi$. Kun $\cos\varphi = 1$, $P = \sqrt{3}\,U I$.
 **Muunnokset:** $U = 400\,\text{kV} = 400 \cdot 1000\,\text{V} = 400\,000\,\text{V}$. Lopuksi $1\,\text{MW} = 1\,000\,000\,\text{W}$.
-**Sijoitus:** $P = \sqrt{3} \cdot 400\,000\,\text{V} \cdot 800\,\text{A} = 554\,256\,000\,\text{W} = 554{,}3\,\text{MW}$
+**Sijoitus:** $P = \sqrt{3} \cdot 400\,000\,\text{V} \cdot 800\,\text{A} \approx 554\,260\,000\,\text{W} = 554{,}26\,\text{MW}$
 **Vastaus:** $554\,\text{MW}$, kolme merkitsevää numeroa kuten lähtöarvoissa.
 **Järkevyys:** Tulos on $\sqrt{3} \approx 1{,}73$ kertaa kaksijohtimisen mallin tulos $400\,\text{kV} \cdot 800\,\text{A} = 320\,\text{MW}$. Satojen megawattien teho on suuren voimalaitoksen tehon suuruusluokkaa. Kantaverkon $400\,\text{kV}$:n johto siirtää juuri tällaisia tehoja.
 

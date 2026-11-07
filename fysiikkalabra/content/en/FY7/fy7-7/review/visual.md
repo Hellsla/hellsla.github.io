@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: a53ef6aace2ab9ec
+CONTENT-HASH: 06e94ded07fe1195
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only; round 2 after the fixes to the round-1 findings)
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] fy7-7 captions — three photos in one lesson; the rotor caption could say it is the rotating part that carries the magnetic poles, to pair with the stator caption.
+- none
 
 ## Checked
-batch delta review: opened each new photo in assets/pics/fy7 and compared alt text and caption with it; rendered preview/en/fy7-7.html at 1280 px (figure floats right, 320 px wide, no overflow) and 390 px (full-width, below text, credit line present); captions physically correct and tied to the chapter, numbers with units in LaTeX.
+- Source diff since origin/main plus the round-2 diff (scratchpad round2.diff); no screenshots in light mode (parent runs the layout checks).
+- Round-1 blocker fixed: paragraph split at "The $230\,\text{V}$ of a wall socket is an rms value"; both halves under the limit; resistive-load wording unchanged.
+- Hash identical at start and end of this round.

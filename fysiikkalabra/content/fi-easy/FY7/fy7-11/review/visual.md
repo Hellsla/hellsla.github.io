@@ -1,11 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 3adbe09ef20f1545
+CONTENT-HASH: 9a730fa7a4922787
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] lesson.md — "Siksi … Pisaran muiden värien voimakkaimmat suunnat kulkevat silmän ohi. Siksi …": two "Siksi" in three sentences and a direction that "travels"; e.g. "Muiden värien voimakkain valo kulkee silmän ohi."
 
 ## Checked
-batch delta review: opened prism-dispersion, rainbow-glen-coe (assets/pics/fy7) and compared with alt and caption (alt matches what is visible, caption physically correct, plain Finnish, units in LaTeX where present); rendered preview/fi-easy/fy7-11.html with playwright: figure.unit-photo floats right at 1280 px (x 744–1064, credit line shown, no clipping), stacks full width at 390 px, no horizontal overflow.
+- Source diff since origin/main of lesson.md, inquiry.json, exit-ticket.json, meta.json, figures.json (and figures.py for fy7-8); no screenshots in light mode (parent runs the layout checks).
+- Rainbow sentence: no "one colour per droplet" claim left.
+- No paragraph changed in this round in fi-easy exceeds about 120 words
+- Hash identical at start and end.

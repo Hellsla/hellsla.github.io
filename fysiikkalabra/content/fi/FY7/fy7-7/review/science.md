@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 8ae7e6ed7904aba9
+CONTENT-HASH: c4fd2b7feb9ccd07
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- Earlier polish items (sim-spec/comments wording, derive caption, inquiry.json:104 animation speed) are unchanged and still non-blocking.
+- none
 
 ## Checked
-- Delta only: koe-2 intro now asks to infer the N dependence from the formula; N is locked in the experiment (locked N, f; vary B), so the inference is the right task. e0 = NBA·2πf: doubling N doubles e0 (e0 proportional to N); no claim contradicts the model.
-- Summary: "Sinimuotoisen vaihtojännitteen tehollinen arvo U = U0 : √2" adds the missing condition (resolves previous polish item at lesson.md:447); consistent with glossary.
-- Nothing else in the diff touches physics or numbers.
+- $P = UI$ from rms values now limited to a purely resistive load (current and voltage in phase); general case depends on the power factor — correct. Inquiry feedbacks ("resistiivisen kuorman teho", "vastuksen keskimääräinen teho") and summary match. New sentence: with $\Phi = BA\cos(2\pi ft)$, $e = -N\,\mathrm{d}\Phi/\mathrm{d}t = NBA\,2\pi f\sin(2\pi ft)$ is instantaneous, greatest in magnitude when $\Phi = 0$ and zero when $\Phi$ is extreme — verified. fi, en, fi-easy agree. Hash identical at start and end.

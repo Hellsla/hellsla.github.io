@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 951e7c25a7f12573
+CONTENT-HASH: b72feb4f29c1d660
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- Fy7-3:ssa laatikko käyttää sanaa käämi, tässä kela; runko käyttää molempia, joten ei estä.
+- none
 
 ## Checked
-- Delta: meta.json key_concepts "virtasilmukka", lisätty sana "Homogeenisessa" luettu kontekstissaan.
-- Sana on oppilaalle tuttu: se on selitetty fy7-2:ssa ("joka paikassa yhtä voimakas ja samansuuntainen"), fy7-3:ssa ja tämän luvun rungossa (lesson.md:132 "Homogeenisessa eli joka kohdassa samanlaisessa kentässä"), joten lyhyt laatikko ei tarvitse omaa selitystä.
-- Ehto tukee oppimista: laatikko ei enää ristiriidassa heti seuraavan kaiutin-käsitteen ja rungon säteittäisen kentän kanssa.
-- Suomi: "Homogeenisessa kentässä sen vastakkaisiin sivuihin kohdistuvat vastakkaiset voimat" kieliopillisesti oikein, verbi monikossa kuten edellisellä kierroksella korjattiin.
-- Lukutaso: lause pysyy lyhyenä, sopii fi-easy-tasolle.
-- Delta (CI layout fix): the Etsi virhe product row now continues on its own line with \quad \cdot 0,866; same numbers, reads in order, error still findable.
+- Diff is only mu0 = -> \approx in the lesson text, worked example, inquiry calc text and solutions (2019 SI); nothing else changed.
+- The approx sign does not change any step or number; the worked steps read the same.
+- Language checked: fi-easy. fi-easy: the new text is in short, clear sentences and keeps every point of fi (nothing dropped). Hash b72feb4f29c1d660 at start and end.

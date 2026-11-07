@@ -1,19 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: a84b25b5f1c41692
-Mode: full (translation review against the reviewed Finnish set)
-Round 2
+CONTENT-HASH: 9ceabd6ae4d66620
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
-
-## Fixed
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- Structural diff against content/fi, all 4 FY7 exercise sets of this round: same ids, keys, answers, units, tolerances, correct flags, choice/order sequence, data cells; number multisets of every text, feedback and solution equal to fi (decimal separators normalised); LaTeX identical apart from translated subscripts.
-- New YO-skill task L2-08: order of magnitude: I = 150 A, P_h = 11.25 kW -> 10 kW; wrong options 0.1 kW, 10 MW (9.5 MW), 1000 MW (800 MW) verified; recomputed independently, matches fi and answers.py.
-- Distractor feedback says the same as fi (correct option and reason unchanged).
-- check_i18n.py: no fy7-8 finding (en: 0 errors); build.py fy7-8 succeeds.
+- L1-05 recomputed: $\sqrt3\cdot400\,\text{kV}\cdot800\,\text{A} = 554{,}26\,\text{MW}$ = answers.py (3**0.5*400e3*800/1e6) = exercises.json 554.2563 in fi/en/fi-easy; task states three-phase, line voltage, $\cos\varphi = 1$, so the data suffice; two-wire comparison 320 MW and the √3 factor right. L2-01 826,4 kW, L2-03 0,9917 %, L2-08 $I=150\,\text{A}$, $P_\text{h}=11\,\text{kW}$ ~10 kW, L3-01 0,75 %, L3-02 4,0 Ω, L3-03 3,306, L3-04 (R = 6,0 Ω; 909 A / 500 A; 4,96 / 1,50 MW; ≈1,52 M€) recomputed; all now state the two-wire model, answers unchanged. L1-03 note: in a three-phase transformer $\sqrt3 U_1 I_1 = \sqrt3 U_2 I_2$, so the current ratio is still the inverse line-voltage ratio — correct. L3-03 note: three-phase loss share $= R_\text{ph}P/(U^2\cos^2\varphi)$, so the $(400:220)^2$ ratio holds at the same power factor — correct. Consistent with the lesson's "ellei tehtävässä toisin mainita". Hash identical at start and end.
+- Round 2: L1-05 Sijoitus now $\approx 554\,260\,000\,\text{W} = 554{,}26\,\text{MW}$ (exact 554 256 258 W → 554,26 MW; Minor resolved). New Periaate: each of three phase conductors carries power at the phase voltage $U:\sqrt3$, total $3\cdot(U:\sqrt3)\cdot I = \sqrt3\,UI$ — correct for a balanced load at $\cos\varphi = 1$; the stated reason (phase voltages are out of phase, so the line voltage is $\sqrt3$ times the phase voltage) is a fair simplification. Answer 554 MW = answers.py; fi, en, fi-easy agree.

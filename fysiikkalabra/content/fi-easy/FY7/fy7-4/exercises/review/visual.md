@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: bcde11faf2628e81
+CONTENT-HASH: ebb42c79b13ea8b7
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] fy7-4-L2-08 (4-16) — spatial task given in words only — a small front-view sketch (magneetti, johdin, virran nuoli; ei voimaa) would help S2 readers without giving the answer.
+- none
 
 ## Checked
-- fy7-4-open-exercises-L2-1280-11 and -12 (fi-easy): task 4-16 reason options with feedback, answer line, opened solution (Kysytty, Periaate, Mallivastaus with Perustelu).
-- Language plain and in order; "virhekäsitys" is explained in the same sentence; the viewer's frame (katsojaa kohti / poispäin) is used consistently.
-- Edited tasks' paragraph splits are spacing only; no red KaTeX, no overflow, nothing clipped.
-- Not opened: the first half of the task (statement and direction options) in -10; text is identical in structure to en, which I opened.
-
-## Scores
-illustrations 3 · typography 5 · Finnish 5 · accessibility 4
+- Source diff since origin/main of exercises/exercises.json, exercises/solutions.md and lessons/FY7/fy7-4/answers.py.
+- μ0 = → \approx in every Annettu line and task statement; LaTeX intact; decimal separators per language.
+- Hash identical at start and end.

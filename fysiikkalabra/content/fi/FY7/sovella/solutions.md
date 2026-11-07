@@ -169,7 +169,7 @@ Positiiviseen ioniin vaikuttava sähköinen voima on sähkökentän suuntainen, 
 **Kaava:** $R = \rho \dfrac{l}{A}$, $I = \dfrac{P}{U}$ ja $P_\text{h} = R I^2$
 **Muunnokset:** $l = 2 \cdot 25\,\text{km} = 5{,}0 \cdot 10^{4}\,\text{m}$, $A = 150\,\text{mm}^2 = 150 \cdot 10^{-6}\,\text{m}^2$, $P = 6{,}0 \cdot 10^{6}\,\text{W}$ ja $U = 20 \cdot 10^{3}\,\text{V}$
 **Sijoitus:** $R = 2{,}82 \cdot 10^{-8}\,\Omega\,\text{m} \cdot \dfrac{5{,}0 \cdot 10^{4}\,\text{m}}{150 \cdot 10^{-6}\,\text{m}^2} = 9{,}40\,\Omega$, $I = \dfrac{6{,}0 \cdot 10^{6}\,\text{W}}{20 \cdot 10^{3}\,\text{V}} = 300\,\text{A}$ ja $P_\text{h} = 9{,}40\,\Omega \cdot (300\,\text{A})^2 = 846\,000\,\text{W}$. Osuus on $846\,\text{kW} : 6000\,\text{kW} = 0{,}141 = 14{,}1\,\%$.
-**Vastaus:** $P_\text{h} \approx 850\,\text{kW}$ eli noin $14\,\%$ siirrettävästä tehosta, kaksi merkitsevää numeroa kuten tehossa ja jännitteessä.
+**Vastaus:** $P_\text{h} \approx 850\,\text{kW}$ eli noin $14\,\%$ johtoon syötetystä tehosta, kaksi merkitsevää numeroa kuten tehossa ja jännitteessä.
 **Järkevyys:** Sähköverkon häviöt ovat Suomessa yhteensä vain muutamia prosentteja, joten $14\,\%$:n häviö yhdessä johdossa on aivan liian suuri. Pienellä jännitteellä tarvitaan suuri virta, ja häviö kasvaa virran neliönä. Kaivokselle jää vain noin $6{,}0\,\text{MW} - 0{,}85\,\text{MW} \approx 5{,}2\,\text{MW}$.
 
 ### b)

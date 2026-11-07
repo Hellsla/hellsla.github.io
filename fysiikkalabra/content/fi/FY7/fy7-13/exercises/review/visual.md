@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 1c29d0e03aeb4958
-Round: 1
+CONTENT-HASH: 44027671945483e8
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-
+- none
 
 ## Checked
-- Kuvat 390 px (oma skripti vis_k7q.py, uusi tehtävä palautteineen ja ratkaisuineen auki): doc scrollWidth 390, ei vaakaylivuotoa, ei yli 300 px leveitä KaTeX-ketjuja, ei KaTeX-virheitä. Sivun 1280 px -kaappauksia en avannut; ne ja muu sivu katsottu vain tekstistä ja determinististen tarkistusten perusteella.
-- 13-16 (L2-08): 390 px, palaute ja ratkaisu auki: aligned-lohkot (sin, tan) mahtuvat, ei ylivuotoa.
-- Muoto: oikea vaihtoehto ei ole pisin eikä ainoa lukuarvoltaan erottuva; harhat kattavat varoitetun virheen (varjostimen siirto väärin päin, vain toinen muutos). Suunnat ilmoitettu ("kasvaa/pienenee"). Tekstistä ja renderistä.
-- L3-02, L3-03: tekstin jako kappaleisiin ok.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+- Source diff since origin/main of exercises/exercises.json, exercises/solutions.md and lessons/FY7/fy7-13/answers.py.
+- L3-02 and L3-05: one safety sentence each, placed after the set-up, plain text, no bold; meaning same in fi, en and fi-easy.
+- Hash identical at start and end.

@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: f2fded5d7d8d5960
+CONTENT-HASH: 9a730fa7a4922787
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- Optional only: Sateenkaari-kohta: "Pääkaaressa" on lesson.md:197-200:n termi, mutta boxissa sitä ei ole selitetty; "Pääkaari on kirkkain, yksi heijastus pisarassa" -lyhennys auttaisi, mutta ei ole välttämätön. Dispersio-lause "Vedessä ja lasissa" on oikein (näkyvän valon alue).
+- [Minor] Two consecutive sentences begin 'Siksi'; vary one ('Niinpä' or merge).
 
 ## Checked
-- Delta review: only the new "Luvun tärkeät käsitteet" box (meta.json key_concepts) judged; unchanged lesson content, which passed earlier, not re-audited.
-- Box renders at 390 px (own capture of section.kc from preview/fi-easy/fy7-11.html): no horizontal scroll, math (λ, n, sin, °) readable, terms bold, one item per block.
-- Voluntary lead text present; no note fields or assessment.
-- Every explanation is 1-2 plain sentences, 25 words or fewer; terms match the lesson and glossary.
-- Physics conditions present (absoluuttinen lämpötila, normaali, tyhjiö, n1 > n2 for rajakulma and kokonaisheijastus, optisesti tiheämpi).
-- No misconception introduced; box does not give away inquiry or exit-ticket answers beyond the lesson's own text.
-- Note: the stock shots/top-390 capture does not show the box (it sits below the hero); I captured it separately.
+- Diff: a droplet does not send literally one colour; the strongest directions differ by colour, so one colour reaches the eye especially strongly from each droplet.
+- Still leads to 'jokainen katsoja näkee oman sateenkaarensa' without a gap.
+- Language checked: fi-easy. fi-easy: the new text is in short, clear sentences and keeps every point of fi (nothing dropped). Hash 9a730fa7a4922787 at start and end.

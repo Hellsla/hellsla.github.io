@@ -338,7 +338,7 @@
           "id": "a",
           "kind": "calc",
           "points": 3,
-          "text": "How much power is converted into heat in the line if the $20\\,\\text{kV}$ line is used? What percentage of the transmitted power is that?",
+          "text": "How much power is converted into heat in the line if the $20\\,\\text{kV}$ line is used? What percentage of the power fed into the line is that?",
           "answer": [
             {
               "name": "Ph",
@@ -367,7 +367,7 @@
             {
               "key": "units_precision",
               "points": 1,
-              "detail": "$P_\\text{h} \\approx 850\\,\\text{kW}$, that is, about $14\\,\\%$ of the transmitted power"
+              "detail": "$P_\\text{h} \\approx 850\\,\\text{kW}$, that is, about $14\\,\\%$ of the power fed into the line"
             }
           ]
         },

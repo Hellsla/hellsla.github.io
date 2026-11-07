@@ -283,7 +283,7 @@ Suomen todellinen kantaverkko on kolmivaiheinen: johdolla on kolme vaihejohdinta
 ```latex
 P = \sqrt{3}\,U I \cos\varphi
 ```
-missä $P$ on siirrettävä pätöteho (W), $U$ pääjännite (V), $I$ vaihejohtimen virta (A) ja $\cos\varphi$ tehokerroin. Tehokerroin on yksi, kun virta ja jännite ovat samanvaiheiset. Samalla jännitteellä ja virralla kolmivaihejohto siirtää siis noin $1{,}73$-kertaisen tehon kaksijohtimiseen malliin verrattuna. Periaate on kuitenkin sama: suuri siirtojännite pienentää virtaa ja häviöitä. Tämän luvun laskutehtävissä käytetään tarkoituksella yksinkertaistettua kaksijohtimista mallia $P = UI$, ellei tehtävässä toisin mainita.
+missä $P$ on siirrettävä pätöteho (W), $U$ pääjännite (V), $I$ vaihejohtimen virta (A) ja $\cos\varphi$ tehokerroin. Tehokerroin on yksi, kun virta ja jännite ovat samanvaiheiset. Samalla jännitteellä, virralla ja tehokertoimella kolmivaihejohto siirtää siis noin $1{,}73$-kertaisen tehon kaksijohtimiseen malliin verrattuna. Periaate on kuitenkin sama: suuri siirtojännite pienentää virtaa ja häviöitä. Tämän luvun laskutehtävissä käytetään tarkoituksella yksinkertaistettua kaksijohtimista mallia $P = UI$, ellei tehtävässä toisin mainita.
 
 ## Esimerkki
 Sähköaseman muuntaja laskee alueverkon jännitteen $110\,\text{kV}$ jakeluverkon jännitteeksi $20\,\text{kV}$. Toisiokäämissä on $360$ kierrosta, ja jakeluverkkoon lähtevä virta on $450\,\text{A}$. Kuinka monta kierrosta ensiökäämissä on, ja kuinka suuri virta ensiökäämissä kulkee? Muuntaja oletetaan ideaaliseksi.

@@ -1,10 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: ff1442ab842620c2
+CONTENT-HASH: 730aa0cfcf2b68b4
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- The $750\,\text{kV}$ transformer photo sits in a lesson whose highest Finnish grid voltage is $400\,\text{kV}$; a few words ("not in Finland" or "used in some countries") would stop a student taking 750 kV as a Finnish grid value.
+- none
 
 ## Checked
-batch delta review: the heading and lead now state the real condition, that a voltage is induced in the secondary only when the flux through it changes, instead of "works only with alternating current"; the battery case (steady direct current, constant flux, zero secondary voltage, a pulse at switch-on/off) follows from it and agrees with the turns-ratio paragraph above ("the same changing magnetic flux"). Photo caption: high voltage, small line current, loss $P = RI^2$ small, consistent with the formula section. Chapter reference *Electrical safety at home and at work* matches the title. No numbers, choices or answers changed.
+- Two-wire model (P = UI, $P_\text{h} = RI^2$, R = both conductors, current out and back) is now explicitly a simplification; real grid three-phase, 400 kV = line voltage, $P = \sqrt{3}\,UI\cos\varphi$ for a balanced load, power factor 1 when in phase — correct. Low-voltage network ≈400 V phase–phase / ≈230 V phase–neutral ($400/\sqrt3 \approx 231$) correct. "Teho on jännitteen ja virran tulo" limited to a resistive load: correct. Loss-graph aria (200 MW, 6,0 Ω): 100 kV → 12 %, 200 kV → 3,0 %, 400 kV → 0,75 % recomputed. Inquiry virhe: $I = 500\,\text{A}$, $P_\text{h} = 1{,}5\,\text{MW}$; siirto: $I = 300\,\text{A}$, $P_\text{h} = 720\,\text{kW}$ — both now state the two-wire model, answers unchanged and right. Grid single-line aria, figures.py and figures.json match the lesson. Summary consistent with theory. fi, en, fi-easy agree. Hash identical at start and end.
+- Round 2: "Samalla jännitteellä, virralla ja tehokertoimella … noin $1{,}73$-kertaisen tehon" (en "At the same voltage, current and power factor") is now exact (Minor resolved). en paragraph split otherwise only.

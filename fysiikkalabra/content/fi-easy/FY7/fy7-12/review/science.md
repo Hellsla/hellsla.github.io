@@ -1,16 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: a11a1c2fc6509c1e
+CONTENT-HASH: f6d4777566df2cb3
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- meta.json:35 (key_concepts, valokuitu) — "Ohut lasikuitu"; the glossary says "lasi- tai muovikuitu". C, optional.
-- lesson.md:181 (carried) — "vähän enemmän" understates the fibre delay (1,47 × vacuum time).
+- [Minor] fig "water" aria-label (lessons/FY7/fy7-12/figures.py, figures.json, lesson.md): "ilmaan ei pääse valoa, vaan koko säde heijastuu" could echo the new wording (ei etenevää taittunutta sädettä); not wrong in the ideal model.
 
 ## Checked
-- Re-review of the new "Luvun tärkeät käsitteet" box; rest unchanged since the PASS (hash a11a1c2fc6509c1e at start and end).
-- Taitekerroin: $n = c : v$, core slightly higher than cladding — same as glossary and fy7-10's box.
-- Rajakulma: incidence angle giving 90° refraction, exists only for $n_1 > n_2$, $\sin\alpha_\text{r} = n_2 : n_1$ — condition stated, matches glossary.
-- Kokonaisheijastuminen: both conditions stated (from higher to lower n, and angle above the critical angle); "kaikki valo heijastuu" correct.
-- Valokuitu: guidance by total internal reflection in the core, data as light pulses — consistent with lesson and glossary.
-- check_i18n.py fi-easy: 0 errors. Box at 390 px: no overflow, $n_1 > n_2$ and $\sin\alpha_\text{r}$ render inline.
+- TIR: no propagating refracted ray, ideal lossless boundary reflects all incident power, evanescent field near boundary in one sentence: correct. Critical angle water-air 48.8 deg (arcsin 1/1.333) unchanged. Endoscope: traditional fibrescope (illumination bundle + coherent image bundle) vs video endoscope with chip-on-tip camera, fibres for illumination only: correct. Languages match. (language checked: fi-easy.)
+- Round 2: definition "Tämä on kokonaisheijastuminen" now follows the law-of-reflection sentence; "eikä energiaa siirry toiseen aineeseen" for an ideal boundary is correct (evanescent field carries no time-averaged power across); fi, en, fi-easy match.

@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 16eb1f679b402831
+CONTENT-HASH: e5d3fab773ab40c6
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- meta.json:39 — "kenttäviiva": "näyttää kentän suunnan" could say "kentän suunta on viivan suuntainen kussakin kohdassa"; fair at this level (C).
+- none
 
 ## Checked
-- Delta: meta.json:43 "magneettivuon tiheys" drops "Sen tunnus on B"; the remaining "kertoo magneettikentän voimakkuuden ja suunnan ... yksikkö on tesla" is correct and agrees with the glossary and lesson (B a vector, unit T).
-- Other four key_concepts unchanged from the passed version. No choices changed.
+- Bar-magnet model vs geomagnetic naming: the needle's N end is attracted by an unlike pole, so in the bar-magnet model the pole near geographic north is a south pole, while geomagnetism/navigation names it the magnetic north pole by location. Theory, misconception, summary, Why-question ("yleensä likimain kohti pohjoista") and inquiry check-1 prompt, correct option and both distractor feedbacks say the same; exactly one option correct. Declination/local disturbances as the reason for "likimain" is a fair simplification. fi, en and fi-easy agree in meaning. Hash identical at start and end.

@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 252bb915d1c9e991
+CONTENT-HASH: 24b9ddd2db5cbc0a
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
+- [Minor] solutions.md L1-07 'Kysytty: ... Maan magneettisista navoista' (en 'the Earth's magnetic poles') could follow the new stem: 'sauvamagneettimallin navoista'.
 
 ## Checked
-- Same levels, order, sub-questions, field instructions and hints as the reviewed Finnish; the new task fy7-1-L1-09 has the same structure, options and feedback as fi.
-- The situation comes first and the question last in its own sentence in fy7-1-L1-09; context is recognisable to a 17-year-old.
-- Each distractor's feedback names the one misconception it carries and repairs it; the correct option's feedback does not disclose the answer before the choice.
-- Solutions keep Find/Principle/Model answer order and every step the Finnish has; a student could follow them.
-- English is natural and at the right reading level; decimal points used.
-- Fixed in en: "Beside the side of the magnet" -> "Next to the side of the magnet" (L1-09 statement 2, its feedback, solution). 
+- Diff: L1-07 stem, answer, two options and their feedback, solution Periaate/Mallivastaus, true/false item 4.
+- L1-07: the stem gives the situation, then the model ('Maan kenttää kuvataan sauvamagneetin kenttänä'), then the question; exactly one correct option; the correct feedback adds the geomagnetic name; the like-poles distractor feedback names its error. The rotation and no-poles options are unchanged and still clearly wrong.
+- The solution explains both names with the reason (location), the same wording as the lesson.
+- Language checked: en. Hash 24b9ddd2db5cbc0a at start and end.

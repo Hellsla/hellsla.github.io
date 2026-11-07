@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 8304191b1ffa6a2e
+CONTENT-HASH: f3eacd571505584e
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] compass-needles-wire caption — the view is from above, with the wire coming up through the plate; the needles circulate around it (horizontal above and below the wire, vertical beside it), consistent with the caption — optionally add "Kuva ylhäältä" so the pattern is read as circles, and mention the current is on.
+- none
 
 ## Checked
-- Delta, round 1: rendered preview/fy7-N.html myself with playwright at 390 and 1280 px, scrolled each lazy photo into view (all loaded, naturalWidth 1600, no horizontal overflow; photo sits in the side column at 1280 and column width at 390, credit line visible), opened the per-photo crops and the full-size sources.
-- compass-needles-wire (390, 1280, and full-size source): four rows of needles, blue wire as alt says; the tangential pattern matches the caption.
-- Surroundings intact; hash unchanged at end.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+- Source diff since origin/main of lesson.md, inquiry.json, exit-ticket.json, meta.json, figures.json (and figures.py for fy7-8); no screenshots in light mode (parent runs the layout checks).
+- Every μ0 occurrence in the diff changed from = to \approx, typography intact ($\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$); no remaining "μ0 = 4π" or "exact" wording in student text.
+- No paragraph changed in this round in fi exceeds about 120 words
+- Hash identical at start and end.

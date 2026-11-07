@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: bdb8a5d35a3da719
+CONTENT-HASH: bb4b6b5b410a9a8f
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only; round 2 after the fixes to the round-1 findings)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- [Minor] lesson.md — "ja silloin merkitään lyhyesti $e$" → "ja silloin sitä merkitään lyhyesti $e$:llä"; inquiry model "…koska vuo muuttui tasaisesti: sama vuon muutos…" — the colon explains the wrong clause; use a full stop.
 
 ## Checked
-- batch delta review: Pohjatiedot item, the Kertaus choice (all three feedbacks shown) and the Liikkuvan johtimen paragraph captured at 360 and 390 px: $F = |q|vB$ renders on one line in each place, no red KaTeX, nothing clipped; the references *Varatun hiukkasen liike sähkö- ja magneettikentässä* and *Homogeeninen sähkökenttä* match those chapters' titles; check_layout 360 OK.
+- Source diff since origin/main plus the round-2 diff (scratchpad round2.diff); no screenshots in light mode (parent runs the layout checks).
+- $e_\text{ka}$ / $|e_\text{ka}| = N \cdot |\Delta\Phi| : \Delta t$ / $e(t) = -N\,\tfrac{\mathrm{d}\Phi}{\mathrm{d}t}$ typography; inquiry magnet task now uses $|e_\text{ka}|$ in Kysytty, Kaava and Sijoitus consistently.
+- Hash identical at start and end of this round.

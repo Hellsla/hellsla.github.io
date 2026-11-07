@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 08148d6414cd1c3b
-ROUND: 2
+CONTENT-HASH: cbc1dcf4add6c401
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none) Round-1 Major fixed: in the 2x close-up of an option figure (viewBox 600x406) "e (V)" is fully inside the figure and the -10 tick is labelled.
+- none
 
 ## Polish
-- [Minor] L1-09 options still display as B, A, D, C (shuffled with letters); solution refers to letters in A-D order.
+- none
 
 ## Checked
-- fy7-7-L1-09 at 390 px: four option figures, feedback, solution; no horizontal overflow (item 330 px, document 390 px; off-box curve paths are clipped by the SVG); 2x close-up of one figure.
-
-## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+- Source diff since origin/main of exercises/exercises.json, exercises/solutions.md and lessons/FY7/fy7-7/answers.py.
+- L2-07 Periaate: incandescent lamp named as a resistive load; sentence reads naturally.
+- Hash identical at start and end.

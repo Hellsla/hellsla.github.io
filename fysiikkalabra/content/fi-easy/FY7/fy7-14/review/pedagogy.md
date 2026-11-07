@@ -1,11 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 053680a79e7e951f
+CONTENT-HASH: b6357eb2bbe3a6b7
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- key_concepts "matkaero" — "matkaero on 2nd" is the optical path difference; the lesson does the same ("kun aallonpituus mitataan ilmassa"), so consistent. Optional: say "optinen matkaero" only if the lesson does.
-- key_concepts "heijastuksenestopinnoite" — λ is not said to be the wavelength in air; add "ilmassa" as in "matkaero".
+- [Minor] The new sentence repeats 'lisämatka 2d' stated two sentences earlier; it could start 'Geometrinen lisämatka 2d vastaa siis optista matkaeroa 2nd ...' to avoid the repeat.
 
 ## Checked
-Box at 390 px: fits, readable, formulas render. Conditions complete: soap film in air, normal incidence, only the upper reflection inverts, thin-film black, coating index between air and glass. Matches lesson text. Hash unchanged at end.
+- Diff: geometric extra path 2d vs optical path difference 2nd (bold term), 'optinen' added in the formula intro and summary; very thin soap film reflects very little and looks dark/almost black in reflected light.
+- The new term is defined where it is used and the summary matches.
+- Round 2: exit-ticket model answer now 'heijastaa hyvin vähän valoa ja näyttää tummalta tai lähes mustalta', matching the lesson and summary.
+- Language checked: fi-easy. fi-easy: the new text is in short, clear sentences and keeps every point of fi (nothing dropped). Hash b6357eb2bbe3a6b7 at start and end.

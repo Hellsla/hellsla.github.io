@@ -92,7 +92,7 @@ Kun tulokulmaa kasvatetaan, taitekulma kasvaa vielä nopeammin. Se lähestyy kul
 ### Rajakulma ja kokonaisheijastuminen
 Tulokulmaa, jolla taitekulma on $90^\circ$, sanotaan **rajakulmaksi** $\alpha_\text{r}$. Rajakulmassa taittunut säde kulkee pitkin rajapintaa.
 
-Kun tulokulma on suurempi kuin rajakulma, taittumislaista ei saada taitekulmaa. Sen sinin pitäisi olla suurempi kuin yksi, eikä sellaista kulmaa ole. Toiseen aineeseen ei silloin synny etenevää taittunutta valonsädettä. Valo heijastuu takaisin heijastumislain mukaan. Ideaalisessa rajapinnassa, jossa valoa ei häviä, koko tuleva valoteho heijastuu takaisin. Rajapinnan lähelle syntyy kuitenkin hyvin nopeasti vaimeneva sähkömagneettinen kenttä. Tätä sanotaan **kokonaisheijastumiseksi**.
+Kun tulokulma on suurempi kuin rajakulma, taittumislaista ei saada taitekulmaa. Sen sinin pitäisi olla suurempi kuin yksi, eikä sellaista kulmaa ole. Toiseen aineeseen ei silloin synny etenevää taittunutta valonsädettä. Valo heijastuu takaisin heijastumislain mukaan. Tätä sanotaan **kokonaisheijastumiseksi**. Ideaalisessa rajapinnassa, jossa valoa ei häviä, koko tuleva valoteho heijastuu takaisin. Energiaa ei siirry toiseen aineeseen. Rajapinnan lähelle syntyy kuitenkin hyvin nopeasti vaimeneva sähkömagneettinen kenttä.
 
 Veden ja ilman rajapinnassa rajakulma on $48{,}8^\circ$. Siksi sukeltaja näkee vedenpinnan peilinä, kun hän katsoo sitä vinosti alhaalta. Peilistä näkyy pohja.
 

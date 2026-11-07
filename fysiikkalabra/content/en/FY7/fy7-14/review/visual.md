@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 0b9b1e6fff952d24
+CONTENT-HASH: c31b0e2dcf823b64
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only; round 2 after the fixes to the round-1 findings)
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] fy7-14 caption — "the colour that is reinforced" could read "the colour that is reflected most strongly".
+- [Minor] lesson.md — the "Wave 2, reflected from the lower surface" paragraph is about 141 words; optionally break before "The ray reflected from the lower surface thus travels".
 
 ## Checked
-batch delta review: opened each new photo in assets/pics/fy7 and compared alt text and caption with it; rendered preview/en/fy7-14.html at 1280 px (figure floats right, 320 px wide, no overflow) and 390 px (full-width, below text, credit line present); captions physically correct and tied to the chapter, numbers with units in LaTeX.
+- Source diff since origin/main plus the round-2 diff (scratchpad round2.diff); no screenshots in light mode (parent runs the layout checks).
+- Exit ticket answer now "heijastaa hyvin vähän valoa ja näyttää tummalta tai lähes mustalta" / "reflects very little light and looks dark or almost black", consistent with the theory and summary; optical path difference wording unchanged.
+- Hash identical at start and end of this round.

@@ -1,9 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 593a9fbbc33c4f1b
+CONTENT-HASH: f3f619028352a996
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-batch delta review: inquiry.json exp-1/exp-2 names and values translated (magneetti→magnet, mukana→on, pois→off); keys, initial states, locked lists and measured keys unchanged, so the controlled variables and the Earth's-field on/off setups still match the intros (exp-1 with Earth's field, exp-2 without); no numbers, options or feedback touched; my earlier Polish item resolved.
+- Bar-magnet model vs geomagnetic naming: the needle's N end is attracted by an unlike pole, so in the bar-magnet model the pole near geographic north is a south pole, while geomagnetism/navigation names it the magnetic north pole by location. Theory, misconception, summary, Why-question ("yleensä likimain kohti pohjoista") and inquiry check-1 prompt, correct option and both distractor feedbacks say the same; exactly one option correct. Declination/local disturbances as the reason for "likimain" is a fair simplification. fi, en and fi-easy agree in meaning. Hash identical at start and end.

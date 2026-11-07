@@ -338,7 +338,7 @@
           "id": "a",
           "kind": "calc",
           "points": 3,
-          "text": "Kuinka suuri teho johdossa muuttuu lämmöksi, jos käytetään $20\\,\\text{kV}$:n johtoa? Kuinka monta prosenttia se on siirrettävästä tehosta?",
+          "text": "Kuinka suuri teho johdossa muuttuu lämmöksi, jos käytetään $20\\,\\text{kV}$:n johtoa? Kuinka monta prosenttia se on johtoon syötetystä tehosta?",
           "answer": [
             {
               "name": "Ph",
@@ -367,7 +367,7 @@
             {
               "key": "units_precision",
               "points": 1,
-              "detail": "$P_\\text{h} \\approx 850\\,\\text{kW}$ eli noin $14\\,\\%$ siirrettävästä tehosta"
+              "detail": "$P_\\text{h} \\approx 850\\,\\text{kW}$ eli noin $14\\,\\%$ johtoon syötetystä tehosta"
             }
           ]
         },

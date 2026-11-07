@@ -1,10 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: d6bdad1752cab02d
+CONTENT-HASH: 08b567284aa7ac29
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-
+- [Minor] lesson.md — "Eri värit lähtevät pisarasta voimakkaimpina …" and "pisaran muiden värien voimakkaimmat suunnat kulkevat silmän ohi" (a direction does not travel) read stiffly; e.g. "Kukin väri lähtee pisarasta voimakkaimpana hieman eri suuntaan. Kustakin pisarasta silmään tulee siksi erityisen voimakkaasti yhtä väriä, ja muiden värien voimakkain valo kulkee silmän ohi." Also two consecutive "Siksi".
 
 ## Checked
-batch delta review: opened the image file(s) (prism-dispersion, rainbow-glen-coe) and rendered unit-photo with caption at 1280 px (float right, 320 px wide, inside column, no clipping) and 390 px (stacked, no horizontal overflow); alt text matches what is visible, caption physically sound and tied to the chapter, Finnish natural, number+unit in LaTeX.
+- Source diff since origin/main of lesson.md, inquiry.json, exit-ticket.json, meta.json, figures.json (and figures.py for fy7-8); no screenshots in light mode (parent runs the layout checks).
+- Rainbow sentence: no "one colour per droplet" claim left.
+- No paragraph changed in this round in fi exceeds about 120 words
+- Hash identical at start and end.

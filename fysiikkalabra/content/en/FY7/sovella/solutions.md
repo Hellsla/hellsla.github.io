@@ -169,7 +169,7 @@ The electric force on a positive ion is in the direction of the electric field, 
 **Formula:** $R = \rho \dfrac{l}{A}$, $I = \dfrac{P}{U}$ and $P_\text{h} = R I^2$
 **Conversions:** $l = 2 \cdot 25\,\text{km} = 5.0 \cdot 10^{4}\,\text{m}$, $A = 150\,\text{mm}^2 = 150 \cdot 10^{-6}\,\text{m}^2$, $P = 6.0 \cdot 10^{6}\,\text{W}$ and $U = 20 \cdot 10^{3}\,\text{V}$
 **Substitution:** $R = 2.82 \cdot 10^{-8}\,\Omega\,\text{m} \cdot \dfrac{5.0 \cdot 10^{4}\,\text{m}}{150 \cdot 10^{-6}\,\text{m}^2} = 9.40\,\Omega$, $I = \dfrac{6.0 \cdot 10^{6}\,\text{W}}{20 \cdot 10^{3}\,\text{V}} = 300\,\text{A}$ and $P_\text{h} = 9.40\,\Omega \cdot (300\,\text{A})^2 = 846\,000\,\text{W}$. The share is $846\,\text{kW} : 6000\,\text{kW} = 0.141 = 14.1\,\%$.
-**Answer:** $P_\text{h} \approx 850\,\text{kW}$, that is, about $14\,\%$ of the transmitted power, two significant figures like the power and the voltage.
+**Answer:** $P_\text{h} \approx 850\,\text{kW}$, that is, about $14\,\%$ of the power fed into the line, two significant figures like the power and the voltage.
 **Reasonableness:** The losses of the whole electricity grid in Finland are only a few per cent in total, so a loss of $14\,\%$ in a single line is far too large. At a low voltage a large current is needed, and the loss grows as the square of the current. Only about $6.0\,\text{MW} - 0.85\,\text{MW} \approx 5.2\,\text{MW}$ is left for the mine.
 
 ### b)

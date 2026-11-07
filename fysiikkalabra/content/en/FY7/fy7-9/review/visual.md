@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 189f50be9eaf2eed
+CONTENT-HASH: a274d360a4620cf5
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only; round 2 after the fixes to the round-1 findings)
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] for science: sparkler caption — "much hotter than red-glowing lava" overstates (lava about 1100 °C, sparks of similar order); say "hotter than" or drop the comparison.
+- none
 
 ## Checked
-batch delta review: opened each new photo in assets/pics/fy7 and compared alt text and caption with it; rendered preview/en/fy7-9.html at 1280 px (figure floats right, 320 px wide, no overflow) and 390 px (full-width, below text, credit line present); captions physically correct and tied to the chapter, numbers with units in LaTeX.
+- Source diff since origin/main plus the round-2 diff (scratchpad round2.diff); no screenshots in light mode (parent runs the layout checks).
+- Round-1 blocker fixed: paragraph split at "In the antenna of a transmitter"; classical-model and UV sentences unchanged.
+- Hash identical at start and end of this round.

@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: c062ee293a88ae2f
+CONTENT-HASH: fb4a6839555b1dd9
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only; round 2 after the fixes to the round-1 findings)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] solutions.md L2-08 — "29-osaan" and "840-osaan" break after the hyphen on the phone; rewrite as "pienenee noin 29-kertaiseksi" with a non-breaking hyphen or avoid the compound.
-- [Minor] solutions.md L2-08 Mallivastaus — the last paragraph is one dense block of five sentences; split the wrong-option explanations into short paragraphs.
+- [Minor] solutions.md L1-05 Periaate — "koska vaiheiden jännitteet ovat eri vaiheissa" is close to a tautology and the causal link is loose; e.g. "Vaihejännite on $U : \sqrt{3}$, koska vaihejännitteiden välillä on $120^\circ$:n vaihe-ero. Kukin vaihejohdin siirtää tehon $(U : \sqrt{3}) \cdot I$, joten kokonaisteho on …"
 
 ## Checked
-- Render fy7-8-L2-08 at 390 px: stem, four choices with feedback, solution; the two fraction chains (I = 3,0·10^6 W / 20·10^3 V; Ph = RI²) are about 190 px wide and fit; no overflow or clipping.
-- Text only: options span 0,1 kW to 1000 MW with the correct one not extreme, each distractor names a real mistake (RI, 690 V, U²/R); correct feedback shows the calculation, no separate reason stage.
-
-## Scores
-illustrations n/a · typography 5 · Finnish 4 · accessibility 5
+- Source diff since origin/main plus the round-2 diff (scratchpad round2.diff); no screenshots in light mode (parent runs the layout checks).
+- Round-1 blocker fixed: L1-05 Sijoitus "$P = \sqrt{3} \cdot 400\,000\,\text{V} \cdot 800\,\text{A} \approx 554\,260\,000\,\text{W} = 554{,}26\,\text{MW}$" (en 554.26) is now correct: √3 · 3,2·10⁸ W = 554 256 258 W ≈ 554 260 000 W; Vastaus 554 MW (3 s.f.) and the stored answer 554.2563 agree.
+- L1-05 Periaate: phase voltage $U : \sqrt{3}$ and total power $3 \cdot (U : \sqrt{3}) \cdot I = \sqrt{3}\,U I$; LaTeX, division colon and \cdot per house rules.
+- Two-wire sentences in the other tasks and solutions unchanged since round 1.
+- Hash identical at start and end of this round.

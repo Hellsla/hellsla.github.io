@@ -146,7 +146,7 @@ Valon kulku on käännettävissä. Jos säde kulkee ilmasta veteen tiettyä reit
 Mitä suurempi on taitekertoimien ero, sitä enemmän säde taittuu samalla tulokulmalla. Siksi timantti taittaa valoa paljon enemmän kuin vesi. Timantin taitekerroin on $2{,}42$.
 
 ### Osittainen heijastuminen
-Tavallisesti kahden läpinäkyvän aineen rajapinnassa valo jakautuu kahteen osaan. Yksi osa heijastuu, ja toinen menee läpi. Joskus näin ei kuitenkaan tapahdu. Kokonaisheijastumisessa toiseen aineeseen ei etene taittunutta valonsädettä (luku *Kokonaisheijastuminen ja valokuitu*). Brewsterin kulmassa tietty valon polarisaatiosuunta ei heijastu (luku *Valon polarisaatio*). Kun valo tulee kohtisuoraan ilmasta lasiin, lasin kummastakin pinnasta heijastuu noin $4\,\%$ valosta. Vedenpinnasta heijastuu noin $2\,\%$.
+Tavallisesti kahden läpinäkyvän aineen rajapinnassa valo jakautuu kahteen osaan. Yksi osa heijastuu, ja toinen menee läpi. Tähän on kuitenkin poikkeuksia. Kokonaisheijastumisessa toiseen aineeseen ei etene taittunutta valonsädettä (luku *Kokonaisheijastuminen ja valokuitu*). Brewsterin kulmassa tietty valon polarisaatiosuunta ei heijastu (luku *Valon polarisaatio*). Kun valo tulee kohtisuoraan ilmasta lasiin, lasin kummastakin pinnasta heijastuu noin $4\,\%$ valosta. Vedenpinnasta heijastuu noin $2\,\%$.
 
 Mitä suurempi tulokulma on, sitä suurempi osa heijastuu. Suuri tulokulma tarkoittaa, että valo tulee pintaa hipoen. Siksi järven pinta peilaa iltaisin rannan puut, vaikka pohja näkyy, kun katsoo suoraan alas.
 

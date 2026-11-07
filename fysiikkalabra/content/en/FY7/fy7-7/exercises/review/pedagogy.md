@@ -1,19 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 4a710ba435aa74c3
-Mode: full (translation review against the reviewed Finnish set)
-Round 2
+CONTENT-HASH: 1a9b4e2911026989
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
-
-## Fixed
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- decimal point in JSON, tables and LaTeX; plain English.
-- New task L1-09: prompt, options, feedback and solution (Kysytty/Periaate/Mallivastaus, Reasonableness) keep the fi level, order and staging; feedback repairs the misconception without giving the answer away before the choice.
-- Terminology consistent with the lesson and the rest of the set.
-- Figures (where the task has them): descriptions translated, no answer disclosed beyond fi.
+- Diff: L2-07 solution Periaate now says the incandescent lamp is a resistive load before P = UI. Clear reason, no step lost; task text unchanged.
+- Language checked: en. Hash 1a9b4e2911026989 at start and end.

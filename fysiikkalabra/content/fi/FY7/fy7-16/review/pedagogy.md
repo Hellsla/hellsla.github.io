@@ -1,21 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: e7fc6c136ce16cf8
+CONTENT-HASH: e70f007904e06fa7
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- inquiry.json koe-1 intro — "Seuraa myös, montako kenttäviivaa kulkee vastaanottimen läpi" has no recorded column and the 390 px sim readout shows no count; the figure carries it — drop the sentence or add a column.
-- inquiry.json ennuste-kela/koe-2 — four non-optional predictions plus two experiments, interpret, explain, transfer and exercises is long for one hour; mark ennuste-kela or the interpret item optional (round-1 note, still open).
-- inquiry.json "prior" — decibel and logarithm (FY5) are used in ennuste-kuitu and Kaava but not listed in "prior"; add them.
-- lesson.md "Yleinen virhekäsitys" — three misconceptions in one paragraph, the dB one is a calculation point; split into a short list.
-- hero (fig-2, 390 px) — cable, router and charger small; enlarge a little.
+- none
 
 ## Checked
-- Round-1 fixes read in the captures: charger figure (fig-5) now shows z = 3 mm and 20 mm panels with 24 px labels puhelin, lähetinkäämi, vastaanotinkäämi and darker lines through the receiver; the sentence before it explains green lines and triangle.
-- Opening question answered by the theory blocks; slot goals met, nothing re-taught.
-- Predictions 1 and 2 can be refuted by the sim; koe-2 now adds 35 mm so the "each distance has its own best coil size" outcome is observable; wrong-option feedback repairs misconceptions.
-- Example has seven stages, one step each; transfer task differs from the example.
-- Data named with source and year (Ravenscraft 2020, Corning 2016); dB series/product clause is clear.
-- Finnish and case after number+unit correct.
-- Sim at 390 px legible, controls and readout understandable.
+- Diff: receiver-coil sentence describes the instantaneous voltage in words instead of the average formula; 47 % framed as one 2020 device comparison that depends on devices and alignment (text and summary); hob heading 'kattilan pohja toisiopuolena', many eddy-current paths instead of one shorted turn; household hobs designed for ferromagnetic bases, physics does not require it.
+- The source framing models how to read a single measurement; the ferromagnetic sentence is followed by the existing explanation why steel heats better, so no contradiction.
+- Language checked: fi. Hash e70f007904e06fa7 at start and end.

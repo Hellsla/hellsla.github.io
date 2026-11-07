@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 79b3242698a3fff3
+CONTENT-HASH: aa0d1a01b2d22233
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only; round 2 after the fixes to the round-1 findings)
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] fy7-8-L2-08 solution — "noin $29$-osaan" breaks across lines after the hyphen (capture -11) — reword "noin 29 kertaa pienemmäksi ja häviöt noin 840 kertaa pienemmiksi".
-- [Minor] "Järkevyys:" is run into the last Mallivastaus paragraph; give it its own line.
+- [Minor] solutions.md L1-05 Periaate — "koska vaiheiden jännitteet ovat eri vaiheissa" is close to a tautology; e.g. "Vaihejännite on $U : \sqrt{3}$. Se johtuu siitä, että vaihejännitteiden välillä on $120^\circ$:n vaihe-ero."
 
 ## Checked
-- fy7-8-open-exercises-L2-1280-10 and -11 (fi-easy): task 8-16 with "suuruusluokka" explained in the question, four options with feedback in the card, answer line, opened solution (Kysytty, Periaate, Mallivastaus).
-- Decimal comma, case endings ($20\,\text{kV}$:iin), upright units, colon division, no red KaTeX, no overflow.
-- Language plain; one voice; "ideaalinen eli häviötön" glossed.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+- Source diff since origin/main plus the round-2 diff (scratchpad round2.diff); no screenshots in light mode (parent runs the layout checks).
+- Round-1 blocker fixed: L1-05 Sijoitus "$P = \sqrt{3} \cdot 400\,000\,\text{V} \cdot 800\,\text{A} \approx 554\,260\,000\,\text{W} = 554{,}26\,\text{MW}$" (en 554.26) is now correct: √3 · 3,2·10⁸ W = 554 256 258 W ≈ 554 260 000 W; Vastaus 554 MW (3 s.f.) and the stored answer 554.2563 agree.
+- L1-05 Periaate: phase voltage $U : \sqrt{3}$ and total power $3 \cdot (U : \sqrt{3}) \cdot I = \sqrt{3}\,U I$; LaTeX, division colon and \cdot per house rules.
+- Two-wire sentences in the other tasks and solutions unchanged since round 1.
+- Hash identical at start and end of this round.

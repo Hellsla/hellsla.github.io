@@ -41,10 +41,10 @@
 ## fy7-8-L1-05
 **Given:** line voltage of the three-phase line $U = 400\,\text{kV}$, current of a phase conductor $I = 800\,\text{A}$, power factor $\cos\varphi = 1$
 **Find:** the transmitted power $P$ in megawatts
-**Principle:** The line is three-phase, and $400\,\text{kV}$ is the line voltage between the phase conductors. The active power of an evenly loaded three-phase grid is $P = \sqrt{3}\,U I \cos\varphi$. The two-wire model $P = UI$ would give too small a result, because it leaves out the third phase conductor.
+**Principle:** The line is three-phase, and $400\,\text{kV}$ is the line voltage between the phase conductors. The active power of an evenly loaded three-phase grid is $P = \sqrt{3}\,U I \cos\varphi$. The two-wire model $P = UI$ would give too small a result. Each of the three phase conductors carries power at the phase voltage $U : \sqrt{3}$, because the voltages of the phases are out of phase with each other, so the total power is $3 \cdot (U : \sqrt{3}) \cdot I = \sqrt{3}\,U I$.
 **Formula:** $P = \sqrt{3}\,U I \cos\varphi$, and when $\cos\varphi = 1$, $P = \sqrt{3}\,U I$
 **Conversions:** $U = 400\,\text{kV} = 400 \cdot 1000\,\text{V} = 400\,000\,\text{V}$. Finally $1\,\text{MW} = 1\,000\,000\,\text{W}$.
-**Substitution:** $P = \sqrt{3} \cdot 400\,000\,\text{V} \cdot 800\,\text{A} = 554\,256\,000\,\text{W} = 554.3\,\text{MW}$
+**Substitution:** $P = \sqrt{3} \cdot 400\,000\,\text{V} \cdot 800\,\text{A} \approx 554\,260\,000\,\text{W} = 554.26\,\text{MW}$
 **Answer:** $554\,\text{MW}$, three significant figures like the given values.
 **Reasonableness:** The result is $\sqrt{3} \approx 1.73$ times the result of the two-wire model, $400\,\text{kV} \cdot 800\,\text{A} = 320\,\text{MW}$. A power of hundreds of megawatts is of the order of magnitude of the power of a large power plant, and a $400\,\text{kV}$ line of the transmission grid transmits just such powers.
 
