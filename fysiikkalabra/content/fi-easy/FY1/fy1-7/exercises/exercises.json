@@ -85,7 +85,7 @@
       "choices": [
         {
           "text": "Öljy jää veden päälle, koska öljyn tiheys on pienempi kuin veden.",
-          "feedback": "Oikein. Saman tilavuuden öljyssä on vähemmän massaa kuin vedessä ($0{,}92$-kertaisesti). Öljy on siis kevyempää ja nousee veden päälle. Vertaillaan aineiden tiheyksiä, ei kappaleiden kokoa.",
+          "feedback": "Oikein. Saman tilavuuden öljyssä on vähemmän massaa kuin vedessä ($0{,}92$-kertaisesti). Öljy nousee siis veden päälle. Vertaillaan aineiden tiheyksiä, ei kappaleiden kokoa.",
           "correct": true
         },
         {
@@ -152,7 +152,7 @@
       "id": "fy1-7-L2-05",
       "level": 2,
       "core": true,
-      "text": "Tasalaatuisesta metallista tehtiin eri kokoisia kappaleita. Jokaisen kappaleen tilavuus ja massa mitattiin. Piirrä mittauspisteistä $(V,m)$-kuvaaja. Sovita pisteisiin suora, joka kulkee origon kautta. Mikä on aineen tiheys yksikössä $\\text{g/cm}^3$? Mikä aine on kyseessä? Käytä oppitunnin taulukkoa.",
+      "text": "Tasalaatuisesta metallista tehtiin erikokoisia kappaleita. Jokaisen kappaleen tilavuus ja massa mitattiin. Piirrä mittauspisteistä $(V,m)$-kuvaaja. Sovita pisteisiin suora, joka kulkee origon kautta. Mikä on aineen tiheys yksikössä $\\text{g/cm}^3$? Mikä aine on kyseessä? Käytä oppitunnin taulukkoa.",
       "kind": [
         "data",
         "graph"

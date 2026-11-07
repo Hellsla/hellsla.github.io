@@ -25,7 +25,7 @@
 **Formula:** Solve for the volume from $\rho = \dfrac{m}{V}$: $V = \dfrac{m}{\rho}$
 **Conversions:** Not needed: the mass is in grams and the density in $\text{g/cm}^3$, so the gram cancels and $\text{cm}^3$ remains.
 **Substitution:** $V = \dfrac{316\,\text{g}}{0.79\,\tfrac{\text{g}}{\text{cm}^3}} = 400\,\text{cm}^3$
-**Answer:** $400\,\text{cm}^3$, two significant figures, because the density $0.79\,\tfrac{\text{g}}{\text{cm}^3}$ is known to two figures.
+**Answer:** $4.0 \cdot 10^2\,\text{cm}^3$, two significant figures, because the density $0.79\,\tfrac{\text{g}}{\text{cm}^3}$ is known to two figures.
 **Reasonableness:** Ethanol is less dense than water, so $316\,\text{g}$ takes up more space than $316\,\text{g}$ of water, which is $316\,\text{cm}^3$. The result $400\,\text{cm}^3$ is greater, as it should be.
 
 ## fy1-7-L1-04
@@ -35,7 +35,7 @@
 **Formula:** $\rho = \dfrac{m}{V}$, so $m = \rho V$
 **Conversions:** Not needed: the density is in $\text{kg/m}^3$ and the volume in $\text{m}^3$, so the mass comes out in kilograms.
 **Substitution:** $m = 2400\,\tfrac{\text{kg}}{\text{m}^3} \cdot 0.75\,\text{m}^3 = 1800\,\text{kg}$
-**Answer:** $1800\,\text{kg}$, two significant figures like the volume $0.75\,\text{m}^3$.
+**Answer:** $1.8 \cdot 10^3\,\text{kg}$, two significant figures like the volume $0.75\,\text{m}^3$.
 **Reasonableness:** A cubic metre of water has a mass of $1000\,\text{kg}$ and concrete is about 2.4 times as dense, so $0.75\,\text{m}^3$ has a mass of about $0.75 \cdot 2400\,\text{kg} \approx 1800\,\text{kg}$: over a tonne, as you would expect of a concrete slab.
 
 ## fy1-7-L1-05
@@ -45,7 +45,7 @@
 **Formula:** $\rho = \dfrac{m}{V}$
 **Conversions:** Not needed: the mass is in kilograms and the volume in cubic metres, and the answer is asked in $\text{kg/m}^3$.
 **Substitution:** $\rho = \dfrac{36.8\,\text{kg}}{0.0400\,\text{m}^3} = 920\,\tfrac{\text{kg}}{\text{m}^3}$
-**Answer:** $920\,\tfrac{\text{kg}}{\text{m}^3}$, three significant figures like the given values.
+**Answer:** $9.20 \cdot 10^2\,\tfrac{\text{kg}}{\text{m}^3}$, three significant figures like the given values.
 **Reasonableness:** The result is slightly below the density of water, $1000\,\tfrac{\text{kg}}{\text{m}^3}$, which fits the fact that ice floats on water. Rough estimate: $37\,\text{kg} : 0.04\,\text{m}^3 \approx 925\,\tfrac{\text{kg}}{\text{m}^3}$.
 
 ## fy1-7-L2-01
@@ -53,7 +53,7 @@
 **Find:** the mass $m$ of the ingot in kilograms
 **Principle:** The ingot is gold all the way through, so the mass is density times volume. The volume of a rectangular block is the product of the three dimensions.
 **Formula:** $V = a\,b\,c$ and $m = \rho V = \rho\,a\,b\,c$
-**Conversions:** The density is in $\text{kg/m}^3$, so the dimensions are converted to metres: $10.0\,\text{cm} = 0.100\,\text{m}$, $5.0\,\text{cm} = 0.050\,\text{m}$ and $2.0\,\text{cm} = 0.020\,\text{m}$.
+**Conversions:** The density is in $\text{kg/m}^3$, so the dimensions are converted to metres: $10.0\,\text{cm} = 10.0 \cdot 0.01\,\text{m} = 0.100\,\text{m}$, $5.0\,\text{cm} = 5.0 \cdot 0.01\,\text{m} = 0.050\,\text{m}$ and $2.0\,\text{cm} = 2.0 \cdot 0.01\,\text{m} = 0.020\,\text{m}$.
 **Substitution:** $m = 19\,300\,\tfrac{\text{kg}}{\text{m}^3} \cdot 0.100\,\text{m} \cdot 0.050\,\text{m} \cdot 0.020\,\text{m} = 19\,300\,\tfrac{\text{kg}}{\text{m}^3} \cdot 1.0 \cdot 10^{-4}\,\text{m}^3 = 1.93\,\text{kg}$
 **Answer:** $1.9\,\text{kg}$, two significant figures, because the dimensions $5.0\,\text{cm}$ and $2.0\,\text{cm}$ are known to two figures.
 **Reasonableness:** The volume of the ingot is $100\,\text{cm}^3$, and the same volume of water would be $100\,\text{g}$. Gold is about 19 times as dense, so $19 \cdot 100\,\text{g} \approx 1.9\,\text{kg}$.
@@ -63,7 +63,7 @@
 **Find:** the mass $m$ of the liquid in kilograms
 **Principle:** The liquid is one substance, so the mass is directly proportional to volume and the constant is the density.
 **Formula:** $\rho = \dfrac{m}{V}$, so $m = \rho V$
-**Conversions:** The density is per cubic metre, so $2.5\,\text{dm}^3 = 2.5 \cdot 10^{-3}\,\text{m}^3 = 0.0025\,\text{m}^3$, because $1\,\text{dm}^3 = 10^{-3}\,\text{m}^3$.
+**Conversions:** The unit of density is $\text{kg/m}^3$, so $2.5\,\text{dm}^3 = 2.5 \cdot 10^{-3}\,\text{m}^3 = 0.0025\,\text{m}^3$, because $1\,\text{dm}^3 = 10^{-3}\,\text{m}^3$.
 **Substitution:** $m = 790\,\tfrac{\text{kg}}{\text{m}^3} \cdot 0.0025\,\text{m}^3 = 1.975\,\text{kg}$
 **Answer:** $2.0\,\text{kg}$, two significant figures like the volume $2.5\,\text{dm}^3$ and the density $790\,\tfrac{\text{kg}}{\text{m}^3}$.
 **Reasonableness:** Two and a half litres of water has a mass of $2.5\,\text{kg}$. Ethanol is less dense than water, so its mass is slightly smaller, about $0.79 \cdot 2.5\,\text{kg} \approx 2.0\,\text{kg}$.
@@ -74,9 +74,9 @@
 **Principle:** A submerged object displaces its own volume of water, so the volume of the object is the difference of the water readings. Density is mass per unit of volume.
 **Reading the graph:** The numbers on the scale are at $20\,\text{ml}$ intervals, the long marks are at $10\,\text{ml}$ intervals and the small marks at $2\,\text{ml}$ intervals. Before the object is lowered in, the water reaches the mark $V_1 = 40\,\text{ml}$. After that, the water reaches the long mark halfway between the numbers $40$ and $60$, $V_2 = 50\,\text{ml}$. An answer is accepted if it deviates by at most $3\,\%$.
 **Formula:** $V = V_2 - V_1$ and $\rho = \dfrac{m}{V}$
-**Conversions:** $V = 50\,\text{ml} - 40\,\text{ml} = 10\,\text{ml} = 10\,\text{cm}^3 = 1.0 \cdot 10^{-5}\,\text{m}^3$ and $89.0\,\text{g} = 0.0890\,\text{kg}$.
+**Conversions:** $V = 50\,\text{ml} - 40\,\text{ml} = 10\,\text{ml} = 10\,\text{cm}^3 = 10 \cdot 10^{-6}\,\text{m}^3 = 1.0 \cdot 10^{-5}\,\text{m}^3$ and $89.0\,\text{g} = 89.0 \cdot 10^{-3}\,\text{kg} = 0.0890\,\text{kg}$.
 **Substitution:** $\rho = \dfrac{0.0890\,\text{kg}}{1.0 \cdot 10^{-5}\,\text{m}^3} = 8900\,\tfrac{\text{kg}}{\text{m}^3}$
-**Answer:** $8900\,\tfrac{\text{kg}}{\text{m}^3}$, two significant figures, because the volume $10\,\text{ml}$ is read from the scale to about $1\,\text{ml}$.
+**Answer:** $8.9 \cdot 10^3\,\tfrac{\text{kg}}{\text{m}^3}$, two significant figures, because the volume $10\,\text{ml}$ is read from the scale to about $1\,\text{ml}$.
 **Reasonableness:** Estimate: $89\,\text{g} : 10\,\text{cm}^3 \approx 9\,\tfrac{\text{g}}{\text{cm}^3}$, which is $9000\,\tfrac{\text{kg}}{\text{m}^3}$. The result is close to the density of copper, $8960\,\tfrac{\text{kg}}{\text{m}^3}$, so the object may be copper.
 
 ## fy1-7-L2-04
@@ -84,10 +84,10 @@
 **Find:** the density $\rho$ of the liquid in $\text{kg/m}^3$
 **Principle:** The balance shows the total mass of the flask and the liquid, but the density is calculated from the mass of the liquid alone. The mass of the flask is subtracted, and the rest is the mass of the liquid.
 **Formula:** $m = m_\text{tot} - m_0$ and $\rho = \dfrac{m}{V} = \dfrac{m_\text{tot} - m_0}{V}$
-**Conversions:** $m = 412\,\text{g} - 215\,\text{g} = 197\,\text{g} = 0.197\,\text{kg}$ and $250\,\text{cm}^3 = 250 \cdot 10^{-6}\,\text{m}^3 = 2.50 \cdot 10^{-4}\,\text{m}^3$.
+**Conversions:** $m = 412\,\text{g} - 215\,\text{g} = 197\,\text{g} = 197 \cdot 10^{-3}\,\text{kg} = 0.197\,\text{kg}$ and $250\,\text{cm}^3 = 250 \cdot 10^{-6}\,\text{m}^3 = 2.50 \cdot 10^{-4}\,\text{m}^3$.
 **Substitution:** $\rho = \dfrac{0.197\,\text{kg}}{2.50 \cdot 10^{-4}\,\text{m}^3} = 788\,\tfrac{\text{kg}}{\text{m}^3}$
 **Answer:** $788\,\tfrac{\text{kg}}{\text{m}^3}$, three significant figures, because the difference of the masses, $197\,\text{g}$, and the volume, $250\,\text{cm}^3$, have been measured to three figures.
-**Reasonableness:** The result is close to the density of ethanol, $790\,\tfrac{\text{kg}}{\text{m}^3}$, so the liquid is probably ethanol. If the mass of the flask had been forgotten, the wrong result would be $1650\,\tfrac{\text{kg}}{\text{m}^3}$, which would be more than water.
+**Reasonableness:** The result is close to the density of ethanol, $790\,\tfrac{\text{kg}}{\text{m}^3}$, so the liquid is probably ethanol. If the mass of the flask had been forgotten, the wrong result would be $1650\,\tfrac{\text{kg}}{\text{m}^3}$, which would be greater than the density of water.
 
 ## fy1-7-L3-01
 **Given:** the copper object and the aluminium object have equal masses, $m_\text{Cu} = m_\text{Al} = m$; from the table $\rho_\text{Cu} = 8960\,\tfrac{\text{kg}}{\text{m}^3}$ and $\rho_\text{Al} = 2700\,\tfrac{\text{kg}}{\text{m}^3}$
@@ -146,7 +146,7 @@ $$L = \frac{V}{A} = \frac{m}{\rho\,\pi r^2}$$
 ## fy1-7-L2-05
 **Given:** the measurement points $(V;\ m)$ in the table: $(10.0\,\text{cm}^3;\ 27.3\,\text{g})$, $(20.0\,\text{cm}^3;\ 53.5\,\text{g})$, $(30.0\,\text{cm}^3;\ 81.6\,\text{g})$, $(40.0\,\text{cm}^3;\ 107.9\,\text{g})$ and $(50.0\,\text{cm}^3;\ 135.4\,\text{g})$
 **Find:** the density $\rho$ of the substance in $\text{g/cm}^3$ and the name of the substance
-**Principle:** The mass of a given substance is directly proportional to volume, $m = \rho V$, so the points lie on a straight line through the origin, and the slope of the line is the density. The line is drawn through the middle of the set of points, and the slope is calculated from points on the line, not from a single measurement point.
+**Principle:** The mass of a given substance is directly proportional to volume, $m = \rho V$, so the points lie, within the measurement uncertainty, on a straight line through the origin, and the slope of the line is the density. The line is drawn through the middle of the set of points, and the slope is calculated from points on the line, not from a single measurement point.
 **Reading the graph:** The points lie on a rising straight line with points on both sides of it. The fitted line passes approximately through the points $(0\,\text{cm}^3;\ 0\,\text{g})$ and $(50.0\,\text{cm}^3;\ 135\,\text{g})$. The points are read from the line and chosen far apart.
 **Formula:** $\rho = \dfrac{\Delta m}{\Delta V} = \dfrac{m_2 - m_1}{V_2 - V_1}$
 **Conversions:** Not needed: the mass is in grams and the volume in cubic centimetres, like the requested unit $\text{g/cm}^3$.
@@ -157,18 +157,18 @@ $$L = \frac{V}{A} = \frac{m}{\rho\,\pi r^2}$$
 ## fy1-7-L2-06
 **Given:** the measurement points $(V;\ m_\text{tot})$ in the table: $(20.0\,\text{cm}^3;\ 103.6\,\text{g})$, $(40.0\,\text{cm}^3;\ 121.2\,\text{g})$, $(60.0\,\text{cm}^3;\ 140.5\,\text{g})$, $(80.0\,\text{cm}^3;\ 158.9\,\text{g})$ and $(100.0\,\text{cm}^3;\ 176.8\,\text{g})$
 **Find:** the density $\rho$ of the liquid in $\text{kg/m}^3$, the mass $m_0$ of the empty measuring cylinder and the reason why the line does not pass through the origin
-**Principle:** The balance shows the total mass of the measuring cylinder and the liquid, which follows the linear model $m_\text{tot} = \rho V + m_0$. The density of the liquid is the slope of the line, and the mass $m_0$ of the empty cylinder is the point where the line crosses the vertical axis.
+**Principle:** The balance shows the total mass of the measuring cylinder and the liquid, which follows the linear model $m_\text{tot} = \rho V + m_0$. The density of the liquid is the slope of the line, and the mass $m_0$ of the empty cylinder is the intercept of the line on the vertical axis.
 **Reading the graph:** The points lie on a rising straight line with points on both sides of it. The fitted line passes approximately through the points $(0\,\text{cm}^3;\ 85\,\text{g})$ and $(100\,\text{cm}^3;\ 177\,\text{g})$. The point $(0\,\text{cm}^3;\ 85\,\text{g})$ is where the line crosses the vertical axis.
 **Formula:** $\rho = \dfrac{\Delta m_\text{tot}}{\Delta V} = \dfrac{m_2 - m_1}{V_2 - V_1}$ and $m_0 = m_1 - \rho V_1$
 **Conversions:** $1\,\tfrac{\text{g}}{\text{cm}^3} = 1000\,\tfrac{\text{kg}}{\text{m}^3}$.
 **Substitution:** $\rho = \dfrac{177\,\text{g} - 85\,\text{g}}{100\,\text{cm}^3 - 0\,\text{cm}^3} = \dfrac{92\,\text{g}}{100\,\text{cm}^3} = 0.92\,\tfrac{\text{g}}{\text{cm}^3} = 920\,\tfrac{\text{kg}}{\text{m}^3}$ and $m_0 = 85\,\text{g}$ (where the line crosses the vertical axis)
-**Answer:** the density of the liquid is $920\,\tfrac{\text{kg}}{\text{m}^3}$, two significant figures, because the line is fitted by eye. The mass of the empty measuring cylinder is about $85\,\text{g}$. The line does not pass through the origin, because the balance also shows the mass of the empty measuring cylinder: when there is no liquid, $V = 0$, the balance still shows $m_0$.
+**Answer:** the density of the liquid is $9.2 \cdot 10^2\,\tfrac{\text{kg}}{\text{m}^3}$, two significant figures, because the line is fitted by eye. The mass of the empty measuring cylinder is about $85\,\text{g}$. The line does not pass through the origin, because the balance also shows the mass of the empty measuring cylinder: when there is no liquid, $V = 0$, the balance still shows $m_0$.
 **Reasonableness:** The density $920\,\tfrac{\text{kg}}{\text{m}^3}$ is the same as the density of cooking oil or ice in the table, so the liquid may be cooking oil. Check at the point $V = 60\,\text{cm}^3$: $85\,\text{g}\,{+}\,0.92 \cdot 60\,\text{g} = 140\,\text{g}$, measured $140.5\,\text{g}$.
 
 ## fy1-7-L2-07
 **Given:** mass of the object $m = 107\,\text{g}$, readings of the measuring cylinder $V_1 = 60\,\text{ml}$ and $V_2 = 72\,\text{ml}$; the student’s result $\rho = 1.5\,\tfrac{\text{g}}{\text{cm}^3}$
 **Find:** the student’s error, the correct density $\rho$ in $\text{g/cm}^3$ and the substance
-**Principle:** In the water displacement method the volume of the object is the rise of the water level, that is, the difference of the readings. The reading $V_2$ of the measuring cylinder also includes the water that was in the cylinder before the object was lowered in. Density is the mass of the object divided by the volume of the object.
+**Principle:** In the water displacement method the volume of the object is the difference of the cylinder readings. The reading $V_2$ of the measuring cylinder also includes the water that was in the cylinder before the object was lowered in. Density is the mass of the object divided by the volume of the object.
 **Formula:** $V = V_2 - V_1$ and $\rho = \dfrac{m}{V}$
 **Conversions:** $V = 72\,\text{ml} - 60\,\text{ml} = 12\,\text{ml} = 12\,\text{cm}^3$, because $1\,\text{ml} = 1\,\text{cm}^3$.
 **Substitution:** $\rho = \dfrac{107\,\text{g}}{12\,\text{cm}^3} = 8.92\,\tfrac{\text{g}}{\text{cm}^3}$
@@ -204,11 +204,11 @@ $$L = \frac{V}{A} = \frac{m}{\rho\,\pi r^2}$$
 
 **Model answer:** Conversions:
 
-$0.36\,\text{kg} = 360\,\text{g}$
+$0.36\,\text{kg} = 0.36 \cdot 1000\,\text{g} = 360\,\text{g}$
 
-$0.40\,\text{dm}^3 = 400\,\text{cm}^3$
+$0.40\,\text{dm}^3 = 0.40 \cdot 1000\,\text{cm}^3 = 400\,\text{cm}^3$
 
-$4.5\,\text{kg} = 4500\,\text{g}$
+$4.5\,\text{kg} = 4.5 \cdot 1000\,\text{g} = 4500\,\text{g}$
 
 $100\,\text{ml} = 100\,\text{cm}^3$
 

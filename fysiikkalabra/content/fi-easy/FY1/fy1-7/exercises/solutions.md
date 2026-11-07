@@ -16,7 +16,7 @@
 **Muunnokset:** Ei tarvita. Tiheys on yksikössä $\text{g/cm}^3$ ja tilavuus yksikössä $\text{cm}^3$. Siksi massa tulee suoraan grammoina.
 **Sijoitus:** $m = 2{,}70\,\tfrac{\text{g}}{\text{cm}^3} \cdot 35{,}0\,\text{cm}^3 = 94{,}5\,\text{g}$
 **Vastaus:** $94{,}5\,\text{g}$, kolme merkitsevää numeroa kuten tiedoissa.
-**Järkevyys:** Vesi, jonka tilavuus on $35\,\text{cm}^3$, painaisi $35\,\text{g}$. Alumiini on noin 2,7 kertaa niin tiheää kuin vesi. Siksi massa on noin $2{,}7 \cdot 35\,\text{g} \approx 95\,\text{g}$. Tulos täsmää.
+**Järkevyys:** Veden, jonka tilavuus on $35\,\text{cm}^3$, massa olisi $35\,\text{g}$. Alumiini on noin 2,7 kertaa niin tiheää kuin vesi. Siksi massa on noin $2{,}7 \cdot 35\,\text{g} \approx 95\,\text{g}$. Tulos täsmää.
 
 ## fy1-7-L1-03
 **Annettu:** etanolin massa $m = 316\,\text{g}$ ja tiheys $\rho = 0{,}79\,\tfrac{\text{g}}{\text{cm}^3}$
@@ -25,7 +25,7 @@
 **Kaava:** Kaavasta $\rho = \dfrac{m}{V}$ ratkaistaan tilavuus: $V = \dfrac{m}{\rho}$
 **Muunnokset:** Ei tarvita. Massa on grammoina ja tiheys $\text{g/cm}^3$. Gramma supistuu, ja jäljelle jää $\text{cm}^3$.
 **Sijoitus:** $V = \dfrac{316\,\text{g}}{0{,}79\,\tfrac{\text{g}}{\text{cm}^3}} = 400\,\text{cm}^3$
-**Vastaus:** $400\,\text{cm}^3$, kaksi merkitsevää numeroa, koska tiheys $0{,}79\,\tfrac{\text{g}}{\text{cm}^3}$ tunnetaan kahden numeron tarkkuudella.
+**Vastaus:** $4{,}0 \cdot 10^2\,\text{cm}^3$, kaksi merkitsevää numeroa, koska tiheys $0{,}79\,\tfrac{\text{g}}{\text{cm}^3}$ tunnetaan kahden numeron tarkkuudella.
 **Järkevyys:** Etanolin tiheys on pienempi kuin veden. Siksi $316\,\text{g}$ etanolia vie enemmän tilaa kuin $316\,\text{g}$ vettä. Sen verran vettä on $316\,\text{cm}^3$. Tulos $400\,\text{cm}^3$ on suurempi, kuten pitääkin.
 
 ## fy1-7-L1-04
@@ -35,8 +35,8 @@
 **Kaava:** $\rho = \dfrac{m}{V}$, josta $m = \rho V$
 **Muunnokset:** Ei tarvita. Tiheys on yksikössä $\text{kg/m}^3$ ja tilavuus yksikössä $\text{m}^3$. Siksi massa tulee kilogrammoina.
 **Sijoitus:** $m = 2400\,\tfrac{\text{kg}}{\text{m}^3} \cdot 0{,}75\,\text{m}^3 = 1800\,\text{kg}$
-**Vastaus:** $1800\,\text{kg}$, kaksi merkitsevää numeroa kuten tilavuudessa $0{,}75\,\text{m}^3$.
-**Järkevyys:** Kuutiometri vettä on $1000\,\text{kg}$. Betoni on noin 2,4 kertaa niin tiheää kuin vesi. Siksi $0{,}75\,\text{m}^3$ betonia painaa noin $0{,}75 \cdot 2400\,\text{kg} \approx 1800\,\text{kg}$. Se on yli tonni, ja betonilaatta onkin raskas.
+**Vastaus:** $1{,}8 \cdot 10^3\,\text{kg}$, kaksi merkitsevää numeroa kuten tilavuudessa $0{,}75\,\text{m}^3$.
+**Järkevyys:** Kuutiometri vettä on $1000\,\text{kg}$. Betoni on noin 2,4 kertaa niin tiheää kuin vesi. Siksi $0{,}75\,\text{m}^3$:n betonilaatan massa on noin $0{,}75 \cdot 2400\,\text{kg} \approx 1800\,\text{kg}$. Se on yli tonni, ja betonilaatta onkin raskas.
 
 ## fy1-7-L1-05
 **Annettu:** jäälohkon massa $m = 36{,}8\,\text{kg}$ ja tilavuus $V = 0{,}0400\,\text{m}^3$
@@ -45,7 +45,7 @@
 **Kaava:** $\rho = \dfrac{m}{V}$
 **Muunnokset:** Ei tarvita. Massa on kilogrammoina ja tilavuus kuutiometreinä. Vastaus pyydetään yksikössä $\text{kg/m}^3$.
 **Sijoitus:** $\rho = \dfrac{36{,}8\,\text{kg}}{0{,}0400\,\text{m}^3} = 920\,\tfrac{\text{kg}}{\text{m}^3}$
-**Vastaus:** $920\,\tfrac{\text{kg}}{\text{m}^3}$, kolme merkitsevää numeroa kuten tiedoissa.
+**Vastaus:** $9{,}20 \cdot 10^2\,\tfrac{\text{kg}}{\text{m}^3}$, kolme merkitsevää numeroa kuten tiedoissa.
 **Järkevyys:** Tulos on hieman pienempi kuin veden tiheys $1000\,\tfrac{\text{kg}}{\text{m}^3}$. Se sopii siihen, että jää kelluu vedessä. Karkea arvio: $37\,\text{kg} : 0{,}04\,\text{m}^3 \approx 925\,\tfrac{\text{kg}}{\text{m}^3}$.
 
 ## fy1-7-L2-01
@@ -53,7 +53,7 @@
 **Kysytty:** harkon massa $m$ kilogrammoina
 **Periaate:** Harkko on kauttaaltaan kultaa. Massa on siis tiheys kertaa tilavuus. Harkko on suorakulmainen särmiö. Sen tilavuus saadaan, kun kolme mittaa kerrotaan keskenään.
 **Kaava:** $V = a\,b\,c$ ja $m = \rho V = \rho\,a\,b\,c$
-**Muunnokset:** Tiheys on yksikössä $\text{kg/m}^3$. Siksi mitat muunnetaan metreiksi: $10{,}0\,\text{cm} = 0{,}100\,\text{m}$, $5{,}0\,\text{cm} = 0{,}050\,\text{m}$ ja $2{,}0\,\text{cm} = 0{,}020\,\text{m}$.
+**Muunnokset:** Tiheys on yksikössä $\text{kg/m}^3$. Siksi mitat muunnetaan metreiksi: $10{,}0\,\text{cm} = 10{,}0 \cdot 0{,}01\,\text{m} = 0{,}100\,\text{m}$, $5{,}0\,\text{cm} = 5{,}0 \cdot 0{,}01\,\text{m} = 0{,}050\,\text{m}$ ja $2{,}0\,\text{cm} = 2{,}0 \cdot 0{,}01\,\text{m} = 0{,}020\,\text{m}$.
 **Sijoitus:** $m = 19\,300\,\tfrac{\text{kg}}{\text{m}^3} \cdot 0{,}100\,\text{m} \cdot 0{,}050\,\text{m} \cdot 0{,}020\,\text{m} = 19\,300\,\tfrac{\text{kg}}{\text{m}^3} \cdot 1{,}0 \cdot 10^{-4}\,\text{m}^3 = 1{,}93\,\text{kg}$
 **Vastaus:** $1{,}9\,\text{kg}$. Vastauksessa on kaksi merkitsevää numeroa, koska mitat $5{,}0\,\text{cm}$ ja $2{,}0\,\text{cm}$ tunnetaan kahden numeron tarkkuudella.
 **Järkevyys:** Harkon tilavuus on $100\,\text{cm}^3$. Saman tilavuuden vesi olisi $100\,\text{g}$. Kulta on noin 19 kertaa niin tiheää kuin vesi. Siksi massa on noin $19 \cdot 100\,\text{g} \approx 1{,}9\,\text{kg}$.
@@ -63,7 +63,7 @@
 **Kysytty:** nesteen massa $m$ kilogrammoina
 **Periaate:** Neste on yhtä ainetta. Siksi massa on suoraan verrannollinen tilavuuteen. Verrannollisuuskerroin on tiheys.
 **Kaava:** $\rho = \dfrac{m}{V}$, josta $m = \rho V$
-**Muunnokset:** Tiheyden yksikössä on kuutiometri. Siksi tilavuus muunnetaan kuutiometreiksi: $2{,}5\,\text{dm}^3 = 2{,}5 \cdot 10^{-3}\,\text{m}^3 = 0{,}0025\,\text{m}^3$. Muunnos perustuu siihen, että $1\,\text{dm}^3 = 10^{-3}\,\text{m}^3$.
+**Muunnokset:** Tiheyden yksikkö on $\text{kg/m}^3$, ja siinä on kuutiometri. Siksi tilavuus muunnetaan kuutiometreiksi: $2{,}5\,\text{dm}^3 = 2{,}5 \cdot 10^{-3}\,\text{m}^3 = 0{,}0025\,\text{m}^3$. Muunnos perustuu siihen, että $1\,\text{dm}^3 = 10^{-3}\,\text{m}^3$.
 **Sijoitus:** $m = 790\,\tfrac{\text{kg}}{\text{m}^3} \cdot 0{,}0025\,\text{m}^3 = 1{,}975\,\text{kg}$
 **Vastaus:** $2{,}0\,\text{kg}$. Vastauksessa on kaksi merkitsevää numeroa kuten tilavuudessa $2{,}5\,\text{dm}^3$ ja tiheydessä $790\,\tfrac{\text{kg}}{\text{m}^3}$.
 **Järkevyys:** Kaksi ja puoli litraa vettä on $2{,}5\,\text{kg}$. Etanolin tiheys on pienempi kuin veden. Siksi etanolin massa on hieman pienempi, noin $0{,}79 \cdot 2{,}5\,\text{kg} \approx 2{,}0\,\text{kg}$.
@@ -74,9 +74,9 @@
 **Periaate:** Upotettu kappale syrjäyttää oman tilavuutensa verran vettä. Kappaleen tilavuus on siis veden lukemien erotus. Tiheys on massa tilavuutta kohti.
 **Kuvaajan lukeminen:** Asteikon numerot ovat $20\,\text{ml}$ välein. Pitkät viivat ovat $10\,\text{ml}$ välein ja pienet viivat $2\,\text{ml}$ välein. Ennen upotusta vesi yltää merkkiin $V_1 = 40\,\text{ml}$. Upotuksen jälkeen vesi yltää pitkään viivaan numeroiden $40$ ja $60$ puolivälissä, $V_2 = 50\,\text{ml}$. Vastaus hyväksytään, jos se poikkeaa korkeintaan $3\,\%$.
 **Kaava:** $V = V_2 - V_1$ ja $\rho = \dfrac{m}{V}$
-**Muunnokset:** $V = 50\,\text{ml} - 40\,\text{ml} = 10\,\text{ml} = 10\,\text{cm}^3 = 1{,}0 \cdot 10^{-5}\,\text{m}^3$ ja $89{,}0\,\text{g} = 0{,}0890\,\text{kg}$.
+**Muunnokset:** $V = 50\,\text{ml} - 40\,\text{ml} = 10\,\text{ml} = 10\,\text{cm}^3 = 10 \cdot 10^{-6}\,\text{m}^3 = 1{,}0 \cdot 10^{-5}\,\text{m}^3$ ja $89{,}0\,\text{g} = 89{,}0 \cdot 10^{-3}\,\text{kg} = 0{,}0890\,\text{kg}$.
 **Sijoitus:** $\rho = \dfrac{0{,}0890\,\text{kg}}{1{,}0 \cdot 10^{-5}\,\text{m}^3} = 8900\,\tfrac{\text{kg}}{\text{m}^3}$
-**Vastaus:** $8900\,\tfrac{\text{kg}}{\text{m}^3}$. Vastauksessa on kaksi merkitsevää numeroa, koska tilavuus $10\,\text{ml}$ luetaan asteikolta noin $1\,\text{ml}$:n tarkkuudella.
+**Vastaus:** $8{,}9 \cdot 10^3\,\tfrac{\text{kg}}{\text{m}^3}$. Vastauksessa on kaksi merkitsevää numeroa, koska tilavuus $10\,\text{ml}$ luetaan asteikolta noin $1\,\text{ml}$:n tarkkuudella.
 **Järkevyys:** Arvio: $89\,\text{g} : 10\,\text{cm}^3 \approx 9\,\tfrac{\text{g}}{\text{cm}^3}$. Se on $9000\,\tfrac{\text{kg}}{\text{m}^3}$. Tulos on lähellä kuparin tiheyttä $8960\,\tfrac{\text{kg}}{\text{m}^3}$. Kappale voi siis olla kuparia.
 
 ## fy1-7-L2-04
@@ -84,10 +84,10 @@
 **Kysytty:** nesteen tiheys $\rho$ yksikössä $\text{kg/m}^3$
 **Periaate:** Vaaka näyttää pullon ja nesteen yhteismassan. Tiheys lasketaan kuitenkin pelkän nesteen massasta. Vähennä pullon massa. Loput on nesteen massaa.
 **Kaava:** $m = m_\text{yht} - m_0$ ja $\rho = \dfrac{m}{V} = \dfrac{m_\text{yht} - m_0}{V}$
-**Muunnokset:** $m = 412\,\text{g} - 215\,\text{g} = 197\,\text{g} = 0{,}197\,\text{kg}$ ja $250\,\text{cm}^3 = 250 \cdot 10^{-6}\,\text{m}^3 = 2{,}50 \cdot 10^{-4}\,\text{m}^3$.
+**Muunnokset:** $m = 412\,\text{g} - 215\,\text{g} = 197\,\text{g} = 197 \cdot 10^{-3}\,\text{kg} = 0{,}197\,\text{kg}$ ja $250\,\text{cm}^3 = 250 \cdot 10^{-6}\,\text{m}^3 = 2{,}50 \cdot 10^{-4}\,\text{m}^3$.
 **Sijoitus:** $\rho = \dfrac{0{,}197\,\text{kg}}{2{,}50 \cdot 10^{-4}\,\text{m}^3} = 788\,\tfrac{\text{kg}}{\text{m}^3}$
 **Vastaus:** $788\,\tfrac{\text{kg}}{\text{m}^3}$. Vastauksessa on kolme merkitsevää numeroa. Massojen erotus $197\,\text{g}$ ja tilavuus $250\,\text{cm}^3$ on mitattu kolmen numeron tarkkuudella.
-**Järkevyys:** Tulos on lähellä etanolin tiheyttä $790\,\tfrac{\text{kg}}{\text{m}^3}$. Neste on siis luultavasti etanolia. Ajattele, että unohdat vähentää pullon massan. Silloin saat väärän tuloksen $1650\,\tfrac{\text{kg}}{\text{m}^3}$. Se olisi enemmän kuin veden tiheys.
+**Järkevyys:** Tulos on lähellä etanolin tiheyttä $790\,\tfrac{\text{kg}}{\text{m}^3}$. Neste on siis luultavasti etanolia. Ajattele, että unohdat vähentää pullon massan. Silloin saat väärän tuloksen $1650\,\tfrac{\text{kg}}{\text{m}^3}$. Se olisi suurempi kuin veden tiheys.
 
 ## fy1-7-L3-01
 **Annettu:** kuparikappaleella ja alumiinikappaleella on sama massa, $m_\text{Cu} = m_\text{Al} = m$; taulukosta $\rho_\text{Cu} = 8960\,\tfrac{\text{kg}}{\text{m}^3}$ ja $\rho_\text{Al} = 2700\,\tfrac{\text{kg}}{\text{m}^3}$
@@ -131,7 +131,7 @@ $$L = \frac{V}{A} = \frac{m}{\rho\,\pi r^2}$$
 ## fy1-7-L1-07
 **Kysytty:** mitä tapahtuu, kun ruokaöljyä kaadetaan veteen. Öljyn tiheys on $920\,\text{kg/m}^3$ ja veden tiheys $1000\,\text{kg/m}^3$.
 **Periaate:** Tiheys kertoo, kuinka paljon massaa on yhdessä tilavuusyksikössä. Pienemmän tiheyden neste on samassa tilavuudessa kevyempää. Se asettuu tiheämmän nesteen päälle.
-**Mallivastaus:** Öljyn tiheys $920\,\text{kg/m}^3$ on pienempi kuin veden tiheys $1000\,\text{kg/m}^3$. Siksi öljy jää veden päälle omaksi kerrokseksi. Sama näkyy siitä, että öljyn tiheys on $0{,}92$-kertainen veden tiheyteen verrattuna. Kuutiometri öljyä painaa $920\,\text{kg}$ ja kuutiometri vettä $1000\,\text{kg}$. Öljy ei sekoitu veteen. Siksi tiheys ratkaisee, kumpi neste on päällä. Nesteen sakeus tai määrä ei ratkaise asiaa.
+**Mallivastaus:** Öljyn tiheys $920\,\text{kg/m}^3$ on pienempi kuin veden tiheys $1000\,\text{kg/m}^3$. Siksi öljy jää veden päälle omaksi kerrokseksi. Sama näkyy siitä, että öljyn tiheys on $0{,}92$-kertainen veden tiheyteen verrattuna. Kuutiometrin öljymäärän massa on $920\,\text{kg}$ ja kuutiometrin vesimäärän $1000\,\text{kg}$. Öljy ei sekoitu veteen. Siksi tiheys ratkaisee, kumpi neste on päällä. Nesteen sakeus tai määrä ei ratkaise asiaa.
 
 ## fy1-7-L1-08
 **Annettu:** lyijypainon tilavuus $V = 5{,}00\,\text{cm}^3$ ja lyijyn tiheys $\rho = 11{,}3\,\tfrac{\text{g}}{\text{cm}^3}$
@@ -141,12 +141,12 @@ $$L = \frac{V}{A} = \frac{m}{\rho\,\pi r^2}$$
 **Muunnokset:** Ei tarvita. Tilavuus on kuutiosenttimetreinä ja tiheys yksikössä $\text{g/cm}^3$. Siksi $\text{cm}^3$ supistuu ja jäljelle jää gramma.
 **Sijoitus:** $m = 11{,}3\,\tfrac{\text{g}}{\text{cm}^3} \cdot 5{,}00\,\text{cm}^3 = 56{,}5\,\text{g}$
 **Vastaus:** $56{,}5\,\text{g}$, kolme merkitsevää numeroa kuten tiedoissa.
-**Järkevyys:** Viisi kuutiosenttimetriä vettä painaisi noin $5\,\text{g}$. Lyijyn tiheys on noin $11$ kertaa veden tiheys. Siksi massa on noin $11 \cdot 5\,\text{g} = 55\,\text{g}$. Se sopii tulokseen $56{,}5\,\text{g}$.
+**Järkevyys:** Viiden kuutiosenttimetrin vesimäärän massa olisi noin $5\,\text{g}$. Lyijyn tiheys on noin $11$ kertaa veden tiheys. Siksi massa on noin $11 \cdot 5\,\text{g} = 55\,\text{g}$. Se sopii tulokseen $56{,}5\,\text{g}$.
 
 ## fy1-7-L2-05
 **Annettu:** taulukon mittauspisteet $(V;\ m)$: $(10{,}0\,\text{cm}^3;\ 27{,}3\,\text{g})$, $(20{,}0\,\text{cm}^3;\ 53{,}5\,\text{g})$, $(30{,}0\,\text{cm}^3;\ 81{,}6\,\text{g})$, $(40{,}0\,\text{cm}^3;\ 107{,}9\,\text{g})$ ja $(50{,}0\,\text{cm}^3;\ 135{,}4\,\text{g})$
 **Kysytty:** aineen tiheys $\rho$ yksikössä $\text{g/cm}^3$ ja aineen nimi
-**Periaate:** Saman aineen massa on suoraan verrannollinen tilavuuteen, $m = \rho V$. Siksi pisteet ovat origon kautta kulkevalla suoralla. Suoran kulmakerroin on tiheys. Suora piirretään pistejoukon keskelle. Kulmakerroin lasketaan suoran pisteistä, ei yksittäisestä mittauspisteestä.
+**Periaate:** Saman aineen massa on suoraan verrannollinen tilavuuteen, $m = \rho V$. Siksi pisteet ovat mittausepävarmuuden rajoissa origon kautta kulkevalla suoralla. Suoran kulmakerroin on tiheys. Suora piirretään pistejoukon keskelle. Kulmakerroin lasketaan suoran pisteistä, ei yksittäisestä mittauspisteestä.
 **Kuvaajan lukeminen:** Pisteet ovat nousevalla suoralla, ja suoran molemmin puolin on pisteitä. Sovitettu suora kulkee likimain pisteiden $(0\,\text{cm}^3;\ 0\,\text{g})$ ja $(50{,}0\,\text{cm}^3;\ 135\,\text{g})$ kautta. Pisteet luetaan suoralta, ja ne valitaan kauas toisistaan.
 **Kaava:** $\rho = \dfrac{\Delta m}{\Delta V} = \dfrac{m_2 - m_1}{V_2 - V_1}$
 **Muunnokset:** Ei tarvita. Massa on grammoina ja tilavuus kuutiosenttimetreinä, kuten kysytty yksikkö $\text{g/cm}^3$.
@@ -162,13 +162,13 @@ $$L = \frac{V}{A} = \frac{m}{\rho\,\pi r^2}$$
 **Kaava:** $\rho = \dfrac{\Delta m_\text{yht}}{\Delta V} = \dfrac{m_2 - m_1}{V_2 - V_1}$ ja $m_0 = m_1 - \rho V_1$
 **Muunnokset:** $1\,\tfrac{\text{g}}{\text{cm}^3} = 1000\,\tfrac{\text{kg}}{\text{m}^3}$.
 **Sijoitus:** $\rho = \dfrac{177\,\text{g} - 85\,\text{g}}{100\,\text{cm}^3 - 0\,\text{cm}^3} = \dfrac{92\,\text{g}}{100\,\text{cm}^3} = 0{,}92\,\tfrac{\text{g}}{\text{cm}^3} = 920\,\tfrac{\text{kg}}{\text{m}^3}$ ja $m_0 = 85\,\text{g}$ (kohta, jossa suora leikkaa pystyakselin)
-**Vastaus:** nesteen tiheys on $920\,\tfrac{\text{kg}}{\text{m}^3}$, kaksi merkitsevää numeroa, koska suora sovitetaan silmällä. Tyhjän mittalasin massa on noin $85\,\text{g}$. Suora ei kulje origon kautta, koska vaaka näyttää myös tyhjän mittalasin massan. Jos nestettä ei ole, $V = 0$, ja vaaka näyttää silti $m_0$.
+**Vastaus:** nesteen tiheys on $9{,}2 \cdot 10^2\,\tfrac{\text{kg}}{\text{m}^3}$, kaksi merkitsevää numeroa, koska suora sovitetaan silmällä. Tyhjän mittalasin massa on noin $85\,\text{g}$. Suora ei kulje origon kautta, koska vaaka näyttää myös tyhjän mittalasin massan. Jos nestettä ei ole, $V = 0$, ja vaaka näyttää silti $m_0$.
 **Järkevyys:** Tiheys $920\,\tfrac{\text{kg}}{\text{m}^3}$ on sama kuin ruokaöljyn tai jään tiheys taulukossa. Neste voi siis olla ruokaöljyä. Tarkistus kohdassa $V = 60\,\text{cm}^3$: $85\,\text{g}\,{+}\,0{,}92 \cdot 60\,\text{g} = 140\,\text{g}$, mitattu $140{,}5\,\text{g}$.
 
 ## fy1-7-L2-07
 **Annettu:** kappaleen massa $m = 107\,\text{g}$, mittalasin lukemat $V_1 = 60\,\text{ml}$ ja $V_2 = 72\,\text{ml}$; oppilaan tulos $\rho = 1{,}5\,\tfrac{\text{g}}{\text{cm}^3}$
 **Kysytty:** oppilaan virhe, oikea tiheys $\rho$ yksikössä $\text{g/cm}^3$ ja aine
-**Periaate:** Vedensiirtomenetelmässä kappaleen tilavuus on veden pinnan nousu eli lukemien erotus. Mittalasin lukema $V_2$ sisältää myös veden, joka oli lasissa jo ennen upotusta. Tiheys on kappaleen massa jaettuna kappaleen tilavuudella.
+**Periaate:** Vedensiirtomenetelmässä kappaleen tilavuus on mittalasin lukemien erotus. Mittalasin lukema $V_2$ sisältää myös veden, joka oli lasissa jo ennen upotusta. Tiheys on kappaleen massa jaettuna kappaleen tilavuudella.
 **Kaava:** $V = V_2 - V_1$ ja $\rho = \dfrac{m}{V}$
 **Muunnokset:** $V = 72\,\text{ml} - 60\,\text{ml} = 12\,\text{ml} = 12\,\text{cm}^3$, koska $1\,\text{ml} = 1\,\text{cm}^3$.
 **Sijoitus:** $\rho = \dfrac{107\,\text{g}}{12\,\text{cm}^3} = 8{,}92\,\tfrac{\text{g}}{\text{cm}^3}$
@@ -204,11 +204,11 @@ $$L = \frac{V}{A} = \frac{m}{\rho\,\pi r^2}$$
 
 **Mallivastaus:** Muunnokset:
 
-$0{,}36\,\text{kg} = 360\,\text{g}$
+$0{,}36\,\text{kg} = 0{,}36 \cdot 1000\,\text{g} = 360\,\text{g}$
 
-$0{,}40\,\text{dm}^3 = 400\,\text{cm}^3$
+$0{,}40\,\text{dm}^3 = 0{,}40 \cdot 1000\,\text{cm}^3 = 400\,\text{cm}^3$
 
-$4{,}5\,\text{kg} = 4500\,\text{g}$
+$4{,}5\,\text{kg} = 4{,}5 \cdot 1000\,\text{g} = 4500\,\text{g}$
 
 $100\,\text{ml} = 100\,\text{cm}^3$
 

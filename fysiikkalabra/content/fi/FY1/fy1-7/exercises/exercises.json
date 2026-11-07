@@ -85,12 +85,12 @@
    "choices": [
     {
      "text": "Öljy jää veden päälle, koska öljyn tiheys on pienempi kuin veden.",
-     "feedback": "Oikein: saman tilavuuden öljyssä on vähemmän massaa kuin vedessä ($0{,}92$ kertaa), joten öljy on kevyempää ja nousee veden päälle. Aineiden tiheyksiä verrataan, ei kappaleiden kokoa.",
+     "feedback": "Oikein: saman tilavuuden öljyssä on vähemmän massaa kuin vedessä ($0{,}92$ kertaa), joten öljy nousee veden päälle. Aineiden tiheyksiä verrataan, ei kappaleiden kokoa.",
      "correct": true
     },
     {
      "text": "Öljy vajoaa lasin pohjalle, koska öljy on sakeampaa.",
-     "feedback": "Sakeus eli juoksevuus ei ratkaise. Ratkaisevaa on tiheys: öljyn tiheys on pienempi kuin veden, joten öljy ei vajoa."
+     "feedback": "Sakeus eli viskositeetti ei ratkaise. Ratkaisevaa on tiheys: öljyn tiheys on pienempi kuin veden, joten öljy ei vajoa."
     },
     {
      "text": "Öljy ja vesi sekoittuvat tasaisesti, koska ne ovat molemmat nesteitä.",
@@ -152,7 +152,7 @@
    "id": "fy1-7-L2-05",
    "level": 2,
    "core": true,
-   "text": "Tasalaatuisesta metallista valmistettiin eri kokoisia kappaleita, ja jokaisen tilavuus ja massa mitattiin. Piirrä mittauspisteistä $(V,m)$-kuvaaja ja sovita pisteisiin origon kautta kulkeva suora. Mikä on aineen tiheys yksikössä $\\text{g/cm}^3$? Mikä aine on kyseessä? Käytä oppitunnin taulukkoa.",
+   "text": "Tasalaatuisesta metallista valmistettiin erikokoisia kappaleita, ja jokaisen tilavuus ja massa mitattiin. Piirrä mittauspisteistä $(V,m)$-kuvaaja ja sovita pisteisiin origon kautta kulkeva suora. Mikä on aineen tiheys yksikössä $\\text{g/cm}^3$? Mikä aine on kyseessä? Käytä oppitunnin taulukkoa.",
    "kind": [
     "data",
     "graph"
