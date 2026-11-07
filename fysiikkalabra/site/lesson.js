@@ -28,6 +28,23 @@
   const taskId = (el) => (el.closest('#exercises li[id], section.practice-task[id], .activity[id]') || {}).id || '';
   const attempt = (el, kind, state) => el.dispatchEvent(new CustomEvent('fl:attempt', { bubbles: true, detail: { id: taskId(el), kind, state } }));
   window.flAttempt = attempt;
+  // A task answered by checking (teacher 2026-11-07, "Tee molemmat"): every Tarkista number and every Vastaa choice of
+  // the task checked once, right or wrong, counts it done on the module page's counter (tehty.js), beside a saved
+  // solution. Kept on this device only: ruukkilabra:tarkistettu {taskId: {parts: [part numbers], of: n, done: ISO}}.
+  const PARTS = 'form.check, fieldset.choice, fieldset.tf, fieldset.order', CHECKED = 'ruukkilabra:tarkistettu';
+  document.addEventListener('fl:attempt', (e) => {
+    const d = e.detail || {}, task = d.id && document.getElementById(d.id), part = e.target && e.target.closest && e.target.closest(PARTS);
+    if (!task || !part || (d.kind !== 'check' && d.kind !== 'choice')) return;
+    const all = [...task.querySelectorAll(PARTS)], k = all.indexOf(part);
+    if (k < 0) return;
+    try {
+      const m = JSON.parse(localStorage.getItem(CHECKED) || '{}') || {}, r = m[d.id] || { parts: [] };
+      if (!r.parts.includes(k)) r.parts.push(k);
+      r.of = all.length;
+      if (!r.done && r.parts.length >= r.of) r.done = new Date().toISOString();
+      m[d.id] = r; localStorage.setItem(CHECKED, JSON.stringify(m));
+    } catch (err) { /* no storage here */ }
+  });
   // Accepted (teacher 2026-11-03): within 2 % of the model answer or one unit in its shown last significant digit
   // (data-step), whichever is larger, or the task's own wider tolerance; 2–5 % away is "Lähellä", not a rejection.
   document.querySelectorAll('form.check').forEach((form) => {

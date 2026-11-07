@@ -213,6 +213,29 @@ with sync_playwright() as p:
             over = mp.evaluate("document.documentElement.scrollWidth - document.documentElement.clientWidth")
             heads = mp.evaluate("[...document.querySelectorAll('#exercises li.assigned .ex-head')].filter((h) => h.scrollWidth > h.clientWidth + 1).length") if page != "FY3.html" else 0
             expect(f"{page} at {w} px: no horizontal overflow, the head row fits", over <= 0 and heads == 0, (over, heads))
+    # 11. FY1-FY9 but FY3 (teacher 2026-11-07): the same view on the module page only, over every task of the module, a task
+    # with a saved solution counting as done; no marks or Tehty boxes on the tasks; FY9 has it too (no work file)
+    c3 = b.new_context(viewport={"width": 1280, "height": 900}); q = c3.new_page(); q.on("pageerror", lambda e: errors.append(str(e)))
+    q.goto(BASE + "fy1-1.html"); q.evaluate(OPEN)
+    expect("FY1 chapter page: no Annettu marks, no Tehty boxes, no counter", q.locator("li.assigned, .ex-done, .done-count").count() == 0 and q.locator("script[src*='tehty.js']").count() == 0)
+    t1 = q.evaluate("document.querySelector('#exercises li[id]').id")
+    q.evaluate("(id) => new Promise((ok) => { const s = document.createElement('script'); s.src = 'padstore.js'; s.onload = () => window.flPadStore.put(id, 'Oma ratkaisu', 'fy1-1.html').then(ok); document.head.append(s); })", t1)
+    first = q.evaluate("JSON.parse(localStorage.getItem('ruukkilabra:ratkaistu') || '{}')")
+    expect("a solution's first save is remembered for the graph (and kept on a later save)", isinstance(first.get(t1), str) and q.evaluate("(id) => window.flPadStore.put(id, 'Muutettu', 'fy1-1.html').then(() => JSON.parse(localStorage.getItem('ruukkilabra:ratkaistu'))[id])", t1) == first[t1])
+    # an answer-only task counts once every Tarkista of it has been checked, right or wrong ("Tee molemmat", 2026-11-07)
+    t2 = q.evaluate("(t1) => { const li = [...document.querySelectorAll('#exercises li[id]')].find((l) => l.id !== t1 && l.querySelector('form.check') && !l.querySelector('fieldset')); if (!li) return '';"
+                    " li.querySelectorAll('form.check').forEach((f) => { f.querySelector('input').value = '1'; f.requestSubmit(); }); return li.id; }", t1)
+    chk = q.evaluate("JSON.parse(localStorage.getItem('ruukkilabra:tarkistettu') || '{}')")
+    expect("a task whose every number answer is checked is remembered as checked", bool(t2) and isinstance(chk.get(t2, {}).get("done"), str), (t2, chk))
+    for code, has_work in (("FY1", True), ("FY9", False)):
+        q.goto(BASE + code + ".html"); q.wait_for_timeout(600)
+        n_all = sum(len(c["tasks"]) for c in json.loads(q.evaluate("document.getElementById('fl-course').textContent"))["chapters"])
+        q.click(".my-wrap > summary"); q.wait_for_timeout(300)
+        cnt = q.inner_text(".pm-count")
+        expect(f"{code}: Näytä edistyminen counts every task of the module ({cnt}), Oma itsearvio beside it", n_all > 50 and cnt == f"{2 if code == 'FY1' else 0}/{n_all} tehtävää tehty"
+               and q.is_visible("#oma-itsearvio") and q.locator("#oma-itsearvio .sm-cell:not(.sm-gap)").count() > 20 and (q.locator("#oma-tyo").count() == 1) == has_work, (cnt, n_all))
+    q.evaluate("(id) => window.flPadStore ? window.flPadStore.remove(id) : null", t1)
+    c3.close()
     expect("no script errors", not errors, errors)
     b.close()
 srv.shutdown()

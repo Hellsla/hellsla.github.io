@@ -18,8 +18,15 @@
   const HERE = ME ? ME.src : location.href;
   const KEY = 'ruukkilabra:tehty', LOG_MAX = 3000;
   const C = (() => { try { return JSON.parse(document.getElementById('fl-course').textContent); } catch (e) { return null; } })();
-  if (!C || !Array.isArray(C.assigned) || !C.assigned.length) return;
-  const A = { course: C.course, tasks: C.assigned };
+  if (!C) return;
+  // A module without assigned tasks (teacher 2026-11-07: FY1-FY9 but FY3): only its page's Oma eteneminen, over every
+  // task of the module; a task counts as done when it has a saved solution, dated by its first save (padstore.js
+  // ruukkilabra:ratkaistu, else the record's last save), or when every Tarkista and Vastaa of the task has been checked
+  // (ruukkilabra:tarkistettu, lesson.js). No marks or Tehty boxes on the tasks themselves.
+  const EVERY = !(Array.isArray(C.assigned) && C.assigned.length);
+  if (EVERY && !document.getElementById('oma-eteneminen')) return;
+  const A = { course: C.course, tasks: EVERY ? (C.chapters || []).flatMap((c) => c.tasks || []) : C.assigned };
+  let solved = {};
   const ALL = new Set(A.tasks);
   const L10N = (() => { try { return JSON.parse(document.getElementById('fl-strings').textContent).js || {}; } catch (e) { return {}; } })();
   const FI = { done_label: 'Tehty', done_aria: 'Tehtävä {{num}} tehty', done_need: 'Kirjoita ensin oma ratkaisu Kirjoita ratkaisu -editoriin. Tehdyksi voi merkitä, kun ratkaisu on tallennettu.',
@@ -34,6 +41,7 @@
 
   // ---- the ticks ----
   const read = () => {
+    if (EVERY) return { v: 1, done: solved, log: [] };
     try {
       const v = JSON.parse(localStorage.getItem(KEY));
       if (v && v.v === 1 && v.done && typeof v.done === 'object' && !Array.isArray(v.done)) return { v: 1, done: v.done, log: Array.isArray(v.log) ? v.log : [] };
@@ -51,7 +59,7 @@
     return true;
   };
   // the module's ticks and log for the submission file (palautus.js)
-  window.flDone = {
+  if (!EVERY) window.flDone = {
     course: A.course, assigned: A.tasks.slice(),
     progress: () => {
       const st = read();
@@ -73,7 +81,20 @@
   const msgs = new Map();   // task id -> its message line (a chapter page)
   const drop = (id) => { if (save(id, false)) say(msgs.get(id), S('done_removed'), 'hint'); };
   // every tick of the module whose saved solution is gone (the page opens, "Poista kaikki", a backup brought back)
+  const FIRST = 'ruukkilabra:ratkaistu';
   const reconcile = () => {
+    if (EVERY) {
+      loadStore().then(() => window.flPadStore.all()).then(({ solutions }) => {
+        let first = {}; try { first = JSON.parse(localStorage.getItem(FIRST) || '{}') || {}; } catch (e) { /* none */ }
+        const now = new Date().toISOString(), out = {};
+        solutions.forEach((r) => { if (ALL.has(r.id) && isSolution(r.html)) out[r.id] = typeof first[r.id] === 'string' ? first[r.id] : r.updated || now; });
+        let checked = {}; try { checked = JSON.parse(localStorage.getItem('ruukkilabra:tarkistettu') || '{}') || {}; } catch (e) { /* none */ }
+        Object.keys(checked).forEach((id) => { const t = checked[id] && checked[id].done;   // every answer part checked (lesson.js)
+          if (ALL.has(id) && typeof t === 'string' && (!out[id] || t < out[id])) out[id] = t; });
+        solved = out; render();
+      }, () => { /* the store cannot be read now */ });
+      return;
+    }
     const st = read(), mine = Object.keys(st.done).filter((id) => ALL.has(id));
     if (!mine.length) return;
     loadStore().then(() => window.flPadStore.all()).then(({ solutions }) => {
@@ -84,12 +105,13 @@
   };
   document.addEventListener('fl:pad-change', (e) => {
     const d = e.detail || {};
-    if (d.all) { reconcile(); render(); return; }
+    if (d.all || EVERY) { reconcile(); render(); return; }
     if (!d.id || !ALL.has(d.id) || !(d.id in read().done)) return;
     if ('html' in d) { if (!isSolution(d.html)) drop(d.id); }
     else loadStore().then(() => window.flPadStore.get(d.id)).then((html) => { if (!isSolution(html)) drop(d.id); }, () => {});
   });
-  window.addEventListener('storage', (e) => { if (e.key === KEY || e.key === null) render(); });
+  window.addEventListener('storage', (e) => { if (EVERY) reconcile(); else if (e.key === KEY || e.key === null) render(); });
+  window.addEventListener('pageshow', (e) => { if (e.persisted) reconcile(); });
 
   // ---- a chapter page ----
   const sec = document.getElementById('exercises');
