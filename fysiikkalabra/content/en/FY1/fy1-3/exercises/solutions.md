@@ -30,14 +30,14 @@
 **Reasonableness:** In the figure the extreme points are seven squares apart, that is, $0.7\,\text{s}$, and half of it is smaller than the range, as it should be. The middle of the range is $12.55\,\text{s}$, and $12.55\,\text{s} \pm 0.35\,\text{s}$ gives exactly the interval $12.2\,\text{s}$–$12.9\,\text{s}$, onto which all the points fall.
 
 ## fy1-3-L1-04
-**Given:** the reading of the scale when empty (zero reading) $m_0 = 1.2\,\text{g}$, the reading with the object $m_\text{reading} = 48.7\,\text{g}$
+**Given:** the reading of the scale when empty (zero reading) $m_0 = 0.9\,\text{g}$, the reading with the object $m_\text{reading} = 36.4\,\text{g}$
 **Find:** the mass of the object $m$ in the unit $\text{g}$
-**Principle:** The scale adds the same amount $1.2\,\text{g}$ to every reading, because it already shows it when empty. This is a systematic error, and it is corrected by subtracting the zero reading from the reading.
+**Principle:** The scale adds the same amount $0.9\,\text{g}$ to every reading, because it already shows it when empty. This is a systematic error, and it is corrected by subtracting the zero reading from the reading.
 **Formula:** $m = m_\text{reading} - m_0$
 **Conversions:** Both readings are in grams, so no conversions are needed.
-**Substitution:** $m = 48.7\,\text{g} - 1.2\,\text{g} = 47.5\,\text{g}$
-**Answer:** $47.5\,\text{g}$, three significant figures; both readings are known to one decimal place.
-**Reasonableness:** The scale shows too much, so the true mass must be smaller than the reading, and $47.5\,\text{g} < 48.7\,\text{g}$. Check: $47.5\,\text{g} + 1.2\,\text{g} = 48.7\,\text{g}$.
+**Substitution:** $m = 36.4\,\text{g} - 0.9\,\text{g} = 35.5\,\text{g}$
+**Answer:** $35.5\,\text{g}$, three significant figures; both readings are known to one decimal place.
+**Reasonableness:** The scale shows too much, so the true mass must be smaller than the reading, and $35.5\,\text{g} < 36.4\,\text{g}$. Check: $35.5\,\text{g} + 0.9\,\text{g} = 36.4\,\text{g}$.
 
 ## fy1-3-L1-05
 **Given:** the smallest scale division $d = 1.0\,\text{mm}$
@@ -110,14 +110,14 @@
 **Reasonableness:** The thickness of ordinary copy paper is about $0.1\,\text{mm} = 100\,\mu\text{m}$, so the relative uncertainty is about $2\,\%$. Measuring one sheet directly with a ruler would give an uncertainty of $0.5\,\text{mm}$, that is, about $500\,\%$ of its thickness, so measuring the stack reduces the relative uncertainty to a 250th.
 
 ## fy1-3-L3-03
-**Given:** true value $x_\text{true} = 8.00\,\text{cm}$; readings $8.24$, $8.27$, $8.25$, $8.29$ and $8.25\,\text{cm}$; $n = 5$
+**Given:** true value $x_\text{true} = 8.00\,\text{cm}$; readings $8.04$, $8.07$, $8.05$, $8.09$ and $8.05\,\text{cm}$; $n = 5$
 **Find:** the estimate of the systematic error $\Delta x_\text{sys}$ in the unit $\text{cm}$
 **Principle:** The readings are close together but all clearly above the true value. The mean reduces random error, so its difference from the true value describes the systematic error that remains.
 **Formula:** $\bar{x} = \dfrac{x_1 + \dots + x_5}{n}$ and $\Delta x_\text{sys} = \bar{x} - x_\text{true}$
 **Conversions:** All lengths are in centimetres, so no conversions are needed.
-**Substitution:** The sum is $8.24\,\text{cm} + 8.27\,\text{cm} + 8.25\,\text{cm} + 8.29\,\text{cm} + 8.25\,\text{cm} = 41.30\,\text{cm}$, so $\bar{x} = \dfrac{41.30\,\text{cm}}{5} = 8.26\,\text{cm}$ and $\Delta x_\text{sys} = 8.26\,\text{cm} - 8.00\,\text{cm} = 0.26\,\text{cm}$
-**Answer:** $0.26\,\text{cm}$, two significant figures; the difference is to two decimal places.
-**Reasonableness:** The estimate of random error $\dfrac{8.29\,\text{cm} - 8.24\,\text{cm}}{2} = 0.025\,\text{cm} \approx 0.03\,\text{cm}$ is about a tenth of the systematic error, so the error is dominated by the systematic part, for example a wrong zero. If $0.26\,\text{cm}$ is subtracted from all the readings, they are $7.98\,\text{cm}$–$8.03\,\text{cm}$, that is, close to the true value.
+**Substitution:** The sum is $8.04\,\text{cm} + 8.07\,\text{cm} + 8.05\,\text{cm} + 8.09\,\text{cm} + 8.05\,\text{cm} = 40.30\,\text{cm}$, so $\bar{x} = \dfrac{40.30\,\text{cm}}{5} = 8.06\,\text{cm}$ and $\Delta x_\text{sys} = 8.06\,\text{cm} - 8.00\,\text{cm} = 0.06\,\text{cm}$
+**Answer:** $0.06\,\text{cm}$, one significant figure; the difference is to two decimal places.
+**Reasonableness:** The estimate of random error $\dfrac{8.09\,\text{cm} - 8.04\,\text{cm}}{2} = 0.025\,\text{cm} \approx 0.03\,\text{cm}$ is about half of the systematic error. Still, all the readings are above the true value, so they contain a systematic error, for example a wrong zero of the callipers or dirt between their jaws. Its size $0.6\,\text{mm}$ is plausible for vernier callipers. If $0.06\,\text{cm}$ is subtracted from all the readings, they are $7.98\,\text{cm}$–$8.03\,\text{cm}$, that is, close to the true value.
 
 ## fy1-3-L1-06
 **Find:** which of the situations is a systematic error.

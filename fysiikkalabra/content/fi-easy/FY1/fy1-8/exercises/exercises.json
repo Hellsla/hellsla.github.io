@@ -201,7 +201,7 @@
     {
       "id": "fy1-8-L2-04",
       "level": 2,
-      "text": "Hypoteesin mukaan auton nopeus on $0{,}50\\,\\text{m/s}$. Kokeessa nopeudeksi mitataan $0{,}42\\,\\text{m/s}$. Kuinka monta prosenttia mitattu arvo poikkeaa hypoteesin ennustamasta arvosta?",
+      "text": "Hypoteesin mukaan auton nopeus on $0{,}500\\,\\text{m/s}$. Kokeessa nopeudeksi mitataan $0{,}420\\,\\text{m/s}$. Kuinka monta prosenttia mitattu arvo poikkeaa hypoteesin ennustamasta arvosta?",
       "answer": 16,
       "unit": "%",
       "tolerance": 0.02
@@ -356,7 +356,7 @@
     {
       "id": "fy1-8-L3-04",
       "level": 3,
-      "text": "Oppilas tutki, vaikuttaako pallon massa vierimisaikaan (vrt. kevyen ja raskaan pallon mittaukset). Viiden toiston keskiarvot ovat $\\bar{t}_{50} = 3{,}12\\,\\text{s} \\pm 0{,}04\\,\\text{s}$ ja $\\bar{t}_{200} = 3{,}08\\,\\text{s} \\pm 0{,}04\\,\\text{s}$ (epävarmuus on puolet vaihteluvälistä). Oppilaan hypoteesi oli, että raskas pallo vierii rinteen alas nopeammin. Käsikellon ajanoton epävarmuudeksi arvioitiin yhdessä mittauksessa $0{,}15\\,\\text{s}$.\n\nPohdinnassa lukee: ”Koe onnistui hyvin. Raskaan pallon keskiarvo on pienempi, joten hypoteesi oli oikein. Virheitä oli vähän.”\n\nKuinka moninkertainen käsiajanoton epävarmuus $0{,}15\\,\\text{s}$ on keskiarvojen erotukseen verrattuna? Perustele sen avulla ja tulosten väleillä, mitkä pohdinnan väitteet aineisto tukee ja mitkä ei. Kirjoita pohdintaan kaksi parempaa lausetta.",
+      "text": "Oppilas tutki, vaikuttaako pallon massa vierimisaikaan (vrt. kevyen ja raskaan pallon mittaukset). Viiden toiston keskiarvot ovat $\\bar{t}_{50} = 3{,}12\\,\\text{s} \\pm 0{,}04\\,\\text{s}$ ja $\\bar{t}_{200} = 3{,}08\\,\\text{s} \\pm 0{,}04\\,\\text{s}$ (epävarmuus on puolet vaihteluvälistä). Oppilaan hypoteesi oli, että raskas pallo vierii rinteen alas nopeammin. Käsikellon ajanoton epävarmuudeksi arvioitiin yhdessä mittauksessa $0{,}15\\,\\text{s}$. Arvio sisältää reaktioajan. Reaktioaika voi olla eri suuri eri mittaussarjoissa, esimerkiksi eri ajanottajalla tai eri kerralla. Siksi se ei näy kokonaan viiden peräkkäisen toiston hajonnassa.\n\nPohdinnassa lukee: ”Koe onnistui hyvin. Raskaan pallon keskiarvo on pienempi, joten hypoteesi oli oikein. Virheitä oli vähän.”\n\nKuinka moninkertainen käsiajanoton epävarmuus $0{,}15\\,\\text{s}$ on keskiarvojen erotukseen verrattuna? Perustele sen avulla ja tulosten väleillä, mitkä pohdinnan väitteet aineisto tukee ja mitkä ei. Kirjoita pohdintaan kaksi parempaa lausetta.",
       "kind": [
         "data",
         "reasoning",

@@ -33,11 +33,20 @@ a["fy1-2-L2-07"] = 12 / 0.20 / 60                       # t = V/q = 12 l / 0,20 
 a["fy1-2-L3-04"] = round(1.00 * (1.00 / 0.250) ** 0.5, 2)   # 1,00 s · sqrt(1,00/0,250) = 2,00 s
 tA = 0.65 * 1000 * 3600 / 85.0                          # A: 0,65 kWh = 0,65 · 1000 W · 3600 s = 2,34e6 J; / 85,0 W = 27 529 s = 7,647 h
 tB = 2.20e6 / (0.100 * 1000)                            # B: 2,20 MJ = 2,20e6 J; 0,100 kW = 100 W: 22 000 s = 6,111 h
-a["fy1-2-L3-05"] = round((tA - tB) / 3600, 2)           # A lasts 1,54 h longer -> 1,5 h (two figures from 0,65 kWh; tolerance 0,03: 1,46…1,54)
+a["fy1-2-L3-05"] = round((tA - tB) / 3600, 1)           # A lasts 1,536 h longer -> 1,5 h (two figures from 0,65 kWh; tolerance 0,03: 1,455…1,545)
 # Worked example (not in exercises.json): Neptune 30,1 AU
 s_nep = 30.1 * AU                                       # 4,503e9 km
 t_nep = s_nep / C                                       # 15 020 s = 4,17 h
 # inquiry.json numeric tasks
 siirto = 15.341 * YEAR / AU                             # Voyager 2: 15,341 km/s · 3,156e7 s/a / 1,496e8 km/AU = 3,236 AU/a
+# Voyager 2 model of the simulation (round 2, 2026-11-07): d = d0 + v (t - t0), d0 = 119,0 AU from the Sun on 2018-11-05
+# (Burlaga et al. 2019), v = 15,341 km/s; exact constants 1 AU = 149 597 870,7 km, c = 299 792,458 km/s as in sim.js
+import datetime as _dt
+def voyager(y, m, d, d0=119.0, v=15.341, au=149597870.7, c=299792.458):
+    km = d0 * au + v * (_dt.date(y, m, d) - _dt.date(2018, 11, 5)).days * 86400
+    return km / au, km, km / c / 3600                 # AU, km, light time from the Sun in h
+voy_table = {y: voyager(y, 11, 5) for y in (2018, 2022, 2026, 2030)}   # 119,0 / 131,9 / 144,9 / 157,8 AU; 1,78 / 1,97 / 2,17 / 2,36 e10 km; 16,5 / 18,3 / 20,1 / 21,9 h
+voy_2026 = voyager(2026, 1, 1)                         # 142,2 AU, 19,7 h; 19,71 h / 8,317 min = 142 (the ratio in the inquiry)
+voy_feb = (voyager(2026, 2, 1)[0], voyager(2026, 2, 28)[0])   # 142,4 … 142,7 AU from the Sun ~ 142,5; JPL Feb 2026: 143,05 AU from the Earth (|Earth - Sun| <= 1 AU)
 tark2 = 0.387 * AU / C / 60                             # Mercury 0,387 AU: 5,790e7 km / 2,998e5 km/s = 193,1 s = 3,22 min
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

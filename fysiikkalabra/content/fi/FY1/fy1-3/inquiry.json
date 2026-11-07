@@ -520,7 +520,7 @@
       "type": "numeric",
       "title": "3. Laskeminen",
       "prompt": "Kuulan vierimisaika mitataan viisi kertaa ja tulokset ovat $2{,}36\\,\\text{s}$, $2{,}41\\,\\text{s}$, $2{,}38\\,\\text{s}$, $2{,}46\\,\\text{s}$ ja $2{,}39\\,\\text{s}$. Virhearvio on vaihteluvälin puolikas. Kuinka monta prosenttia se on keskiarvosta?",
-      "answer": 2.1,
+      "answer": 2.08,
       "unit": "%",
       "tolerance": 0.05,
       "hints": [

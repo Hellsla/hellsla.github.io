@@ -106,7 +106,7 @@
 **Kaava:** $k = \dfrac{\Delta T}{\Delta t}$ ja $\dfrac{|k_1|}{|k_3|}$
 **Muunnokset:** Ei tarvita. Lämpötilojen erotus on sama celsiusasteina ja kelvineinä. Aika on minuutteina.
 **Sijoitus:** $k_1 = \dfrac{72\,{}^\circ\text{C} - 90\,{}^\circ\text{C}}{10\,\text{min}} = -1{,}8\,\tfrac{{}^\circ\text{C}}{\text{min}}$ ja $k_3 = \dfrac{51\,{}^\circ\text{C} - 60\,{}^\circ\text{C}}{10\,\text{min}} = -0{,}90\,\tfrac{{}^\circ\text{C}}{\text{min}}$, joten $\dfrac{|k_1|}{|k_3|} = \dfrac{1{,}8}{0{,}90} = 2{,}0$
-**Vastaus:** $2{,}0$ kertaa, kaksi merkitsevää numeroa, kuten lämpötilaerotuksissa. Yksi suora ei sovi, koska kulmakerroin ei ole vakio. Kahvi jäähtyy ensin kaksi kertaa nopeammin kuin lopussa. Väliltä 10–$20\,\text{min}$ saadaan vielä kolmas arvo $-1{,}2\,\tfrac{{}^\circ\text{C}}{\text{min}}$. Pisteet eivät asetu suoralle.
+**Vastaus:** $2{,}0$ kertaa, kaksi merkitsevää numeroa. Syy on se, että lämpötilat on mitattu kahden numeron tarkkuudella. Yksi suora ei sovi, koska kulmakerroin ei ole vakio. Kahvi jäähtyy ensin kaksi kertaa nopeammin kuin lopussa. Väliltä 10–$20\,\text{min}$ saadaan vielä kolmas arvo $-1{,}2\,\tfrac{{}^\circ\text{C}}{\text{min}}$. Pisteet eivät asetu suoralle.
 **Järkevyys:** Kulmakertoimet ovat negatiivisia, koska kahvi jäähtyy. Jäähtyminen hidastuu. Syy on se, että kahvi lähestyy huoneen lämpötilaa ja lämpötilaero ympäristöön pienenee. Tämä sopii kokemukseen kuuman juoman jäähtymisestä.
 
 ## fy1-4-L3-03

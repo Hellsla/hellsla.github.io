@@ -65,28 +65,28 @@
 **Formula:** $t = \dfrac{s}{v}$ and $\varepsilon = \dfrac{\Delta t}{t} = \dfrac{\Delta t\, v}{s}$
 **Conversions:** The distance is in metres and the speed in $\text{m/s}$, so the time comes out in seconds. The quotient is multiplied by one hundred to get a percentage.
 **Substitution:** $t = \dfrac{3.0\,\text{m}}{1.5\,\text{m/s}} = 2.0\,\text{s}$, so $\varepsilon = \dfrac{0.20\,\text{s}}{2.0\,\text{s}} = 0.10 = 10\,\%$
-**Answer:** $10\,\%$, two significant figures like the distance and the speed.
+**Answer:** $10\,\%$, that is $0.10$, two significant figures like the distance, the speed and the uncertainty $0.20\,\text{s}$.
 **Reasonableness:** In a two-second measurement, the timing uncertainty $0.20\,\text{s}$ is a tenth of the total time. The result is twice a limit of, for example, $5\,\%$, which is why the short distance is a poor choice.
 
 ## fy1-8-L2-03
 **Given:** points $(t_1, s_1) = (2.0\,\text{s}, 90\,\text{cm})$ and $(t_2, s_2) = (8.0\,\text{s}, 342\,\text{cm})$
 **Find:** the speed $v$ in $\text{m/s}$
 **Principle:** The motion is uniform, so the distance changes steadily with time, and the speed is the ratio of the change in distance to the change in time, that is, the slope between two points.
-**Formula:** $v = \dfrac{\Delta s}{\Delta t} = \dfrac{s_2 - s_1}{t_2 - t_1}$
+**Formula:** $v = \dfrac{s_2 - s_1}{t_2 - t_1}$
 **Conversions:** Convert the distances to metres: $90\,\text{cm} = 0.90\,\text{m}$ and $342\,\text{cm} = 3.42\,\text{m}$.
 **Substitution:** $v = \dfrac{3.42\,\text{m} - 0.90\,\text{m}}{8.0\,\text{s} - 2.0\,\text{s}} = \dfrac{2.52\,\text{m}}{6.0\,\text{s}} = 0.42\,\text{m/s}$
 **Answer:** $0.42\,\text{m/s}$, two significant figures, because the time difference $6.0\,\text{s}$ is given with two figures.
 **Reasonableness:** Between the points $6.0\,\text{s}$ has passed and the distance has grown by just under three metres, so the speed is about $\tfrac{2.5\,\text{m}}{6\,\text{s}} \approx 0.4\,\text{m/s}$. The line crosses the distance axis at $s_0 = 0.90\,\text{m} - 0.42\,\text{m/s} \cdot 2.0\,\text{s} \approx 0.06\,\text{m}$, so it passes almost through the origin.
 
 ## fy1-8-L2-04
-**Given:** speed predicted by the hypothesis $v_\text{pred} = 0.50\,\text{m/s}$, measured speed $v_\text{meas} = 0.42\,\text{m/s}$
+**Given:** speed predicted by the hypothesis $v_\text{pred} = 0.500\,\text{m/s}$, measured speed $v_\text{meas} = 0.420\,\text{m/s}$
 **Find:** the deviation of the measured value from the predicted value as a percentage
 **Principle:** A hypothesis is tested by comparing the measurement with its prediction. The deviation is expressed relative to the prediction, so that the difference can be compared with the uncertainty of the measurement regardless of the unit.
 **Formula:** $\delta = \dfrac{\left| v_\text{pred} - v_\text{meas} \right|}{v_\text{pred}}$
 **Conversions:** Both speeds are in $\text{m/s}$, so the units cancel. The quotient is multiplied by one hundred to get a percentage.
-**Substitution:** $\delta = \dfrac{\left| 0.50\,\text{m/s} - 0.42\,\text{m/s} \right|}{0.50\,\text{m/s}} = \dfrac{0.08}{0.50} = 0.16 = 16\,\%$
-**Answer:** $16\,\%$, two significant figures like the speeds.
-**Reasonableness:** The measured speed is below the prediction, and the difference $0.08\,\text{m/s}$ is about a sixth of the prediction ($\tfrac{1}{6} \approx 17\,\%$). If the uncertainty of the speed were only a few per cent, the difference would be too large to be chance, and the hypothesis should be rejected or checked.
+**Substitution:** $\delta = \dfrac{\left| 0.500\,\text{m/s} - 0.420\,\text{m/s} \right|}{0.500\,\text{m/s}} = \dfrac{0.080}{0.500} = 0.16 = 16\,\%$
+**Answer:** $16\,\%$, two significant figures like the difference of the speeds $0.080\,\text{m/s}$.
+**Reasonableness:** The measured speed is below the prediction, and the difference $0.080\,\text{m/s}$ is about a sixth of the prediction ($\tfrac{1}{6} \approx 17\,\%$). If the uncertainty of the speed were only a few per cent, the difference would be too large to be chance, and the hypothesis should be rejected or checked.
 
 ## fy1-8-L3-01
 **Given:** slope of the steepest line $v_\text{max} = 0.463\,\text{m/s}$, of the shallowest $v_\text{min} = 0.397\,\text{m/s}$
@@ -102,9 +102,9 @@
 **Given:** temperatures $80.0\,{}^\circ\text{C}$ at time $0\,\text{min}$, $68.0\,{}^\circ\text{C}$ at $5.0\,\text{min}$, $52.0\,{}^\circ\text{C}$ at $15.0\,\text{min}$ and $47.0\,{}^\circ\text{C}$ at $20.0\,\text{min}$
 **Find:** the difference between the rates of fall during the first and the last five minutes in $\text{K/min}$
 **Principle:** The hypothesis "the temperature falls steadily" predicts the same rate of fall everywhere. So calculate the rate of fall for two periods and compare them. A temperature change is the same in kelvins and in degrees Celsius.
-**Formula:** $r = \dfrac{T_\text{start} - T_\text{end}}{\Delta t}$ and $\Delta r = r_1 - r_2$
+**Formula:** $r = \dfrac{T_\text{start} - T_\text{end}}{t_\text{end} - t_\text{start}}$ and the difference $r_1 - r_2$
 **Conversions:** A fall in temperature in degrees Celsius equals the fall in kelvins, so a change of $1\,{}^\circ\text{C}$ is $1\,\text{K}$ and no conversion is needed.
-**Substitution:** $r_1 = \dfrac{80.0\,{}^\circ\text{C} - 68.0\,{}^\circ\text{C}}{5.0\,\text{min}} = \dfrac{12.0\,\text{K}}{5.0\,\text{min}} = 2.4\,\text{K/min}$ and $r_2 = \dfrac{52.0\,{}^\circ\text{C} - 47.0\,{}^\circ\text{C}}{5.0\,\text{min}} = \dfrac{5.0\,\text{K}}{5.0\,\text{min}} = 1.0\,\text{K/min}$, so $\Delta r = 2.4\,\text{K/min} - 1.0\,\text{K/min} = 1.4\,\text{K/min}$
+**Substitution:** $r_1 = \dfrac{80.0\,{}^\circ\text{C} - 68.0\,{}^\circ\text{C}}{5.0\,\text{min}} = \dfrac{12.0\,\text{K}}{5.0\,\text{min}} = 2.4\,\text{K/min}$ and $r_2 = \dfrac{52.0\,{}^\circ\text{C} - 47.0\,{}^\circ\text{C}}{5.0\,\text{min}} = \dfrac{5.0\,\text{K}}{5.0\,\text{min}} = 1.0\,\text{K/min}$, so $r_1 - r_2 = 2.4\,\text{K/min} - 1.0\,\text{K/min} = 1.4\,\text{K/min}$
 **Answer:** $1.4\,\text{K/min}$, two significant figures, because the time intervals $5.0\,\text{min}$ and the fall $5.0\,\text{K}$ in the last interval are given with two significant figures.
 **Reasonableness:** The first rate of fall is more than twice the last one, and this difference cannot come from the reading uncertainty alone, which from the precision of the readings is about $0.1\,\text{K}$. So the hypothesis of a steady fall does not hold: the temperature falls more slowly the closer the water is to room temperature.
 
@@ -156,7 +156,7 @@
 ## fy1-8-L2-07
 **Given:** the points of the table $(t;\,s)$ = $(0.0\,\text{s};\,0.00\,\text{m})$, $(2.0\,\text{s};\,0.62\,\text{m})$, $(4.0\,\text{s};\,1.18\,\text{m})$, $(6.0\,\text{s};\,1.83\,\text{m})$, $(8.0\,\text{s};\,2.39\,\text{m})$; the slope read by the student is $3.3$
 **Find:** the speed $v$ of the car in $\text{m/s}$ and what the number $3.3$ describes
-**Principle:** In uniform motion $s = vt$, so when time is on the horizontal axis and distance on the vertical axis, the slope of the line is the speed. The student swapped the axes: when distance is on the horizontal axis, the slope is $\Delta t : \Delta s = 1 : v$, the reciprocal of the speed. In addition, the axes lacked quantities and units, so no meaning can be given to the number $3.3$.
+**Principle:** In uniform motion $s = vt$, so when time is on the horizontal axis and distance on the vertical axis, the slope of the line is the speed. The student swapped the axes: when distance is on the horizontal axis, the slope is $(t_2 - t_1) : (s_2 - s_1) = 1 : v$, the reciprocal of the speed. In addition, the axes lacked quantities and units, so no meaning can be given to the number $3.3$.
 **Reading the graph:** The points lie almost on a line through the origin. The fitted line passes, for example, through the points $(2.0\,\text{s};\,0.60\,\text{m})$ and $(8.0\,\text{s};\,2.40\,\text{m})$. The slope is read from two points of the line, not from two adjacent measurement points.
 **Formula:** $v = \dfrac{s_2 - s_1}{t_2 - t_1}$
 **Conversions:** The distance is in metres and the time in seconds, so no conversions are needed.
@@ -168,9 +168,9 @@
 **Given:** $\bar{t}_{50} = 3.12\,\text{s} \pm 0.04\,\text{s}$, $\bar{t}_{200} = 3.08\,\text{s} \pm 0.04\,\text{s}$; hand-timing uncertainty $\Delta t_\text{hand} = 0.15\,\text{s}$; the claims of the discussion “the experiment went well”, “the hypothesis was correct” and “there were few errors”
 **Find:** how many times larger than the difference of the means $\Delta t_\text{hand}$ is, and which claims the data supports
 **Principle:** The discussion evaluates what the results show and how reliable they are. A difference can be shown only if the uncertainty intervals do not overlap, that is, if the difference is greater than the sum of the uncertainties. An experiment is not said to prove a hypothesis for certain, and the sentence “there were few errors” must not be left without numbers.
-**Formula:** $\Delta \bar{t} = \bar{t}_{50} - \bar{t}_{200}$ and the ratio $k = \dfrac{\Delta t_\text{hand}}{\Delta \bar{t}}$
+**Formula:** the difference $d = \bar{t}_{50} - \bar{t}_{200}$ and the ratio $k = \dfrac{\Delta t_\text{hand}}{d}$
 **Conversions:** All times are in seconds, so no conversions are needed.
-**Substitution:** $\Delta \bar{t} = 3.12\,\text{s} - 3.08\,\text{s} = 0.04\,\text{s}$, so $k = \dfrac{0.15\,\text{s}}{0.04\,\text{s}} = 3.75 \approx 3.8$. The intervals are $3.08$–$3.16\,\text{s}$ and $3.04$–$3.12\,\text{s}$, and they overlap in the interval $3.08$–$3.12\,\text{s}$.
+**Substitution:** $d = 3.12\,\text{s} - 3.08\,\text{s} = 0.04\,\text{s}$, so $k = \dfrac{0.15\,\text{s}}{0.04\,\text{s}} = 3.75 \approx 3.8$. The intervals are $3.08$–$3.16\,\text{s}$ and $3.04$–$3.12\,\text{s}$, and they overlap in the interval $3.08$–$3.12\,\text{s}$.
 **Answer:** about $3.8$ times. The data does not support the claim “the hypothesis was correct”, because the difference $0.04\,\text{s}$ is as large as the uncertainty $0.04\,\text{s}$ and the intervals overlap; a smaller mean alone is not enough. The claim “there were few errors” does not hold either: the hand-timing uncertainty is a multiple of the difference. The claim “the experiment went well” is too strong, because the experiment could not show a difference. Better sentences: “The difference of the means $0.04\,\text{s}$ is as large as the uncertainty $0.04\,\text{s}$, so the data does not show a difference in the travel times of the balls; however, this does not prove that mass has no effect.” and “The hand-timing uncertainty $0.15\,\text{s}$ is about $3.8$ times the difference, so in future a photogate should be used and the number of repeats increased.”
 **Reasonableness:** When the uncertainty of the hand stopwatch is a multiple of the measured difference, a small difference ($0.04\,\text{s}$, about $1.3\,\%$ of the time) cannot stand out from the measurement error. The conclusion “no difference can be shown” is therefore suitably cautious. No deviating measurement was removed and the hypothesis was not declared certain.
 
@@ -178,8 +178,8 @@
 **Given:** temperatures of the preliminary experiment in the glass container: $80.0\,{}^\circ\text{C}$ at $0.0\,\text{min}$ and $74.0\,{}^\circ\text{C}$ at $3.0\,\text{min}$; uncertainty of the fall $\Delta T_\text{fall} = 1.0\,\text{K}$, largest allowed relative uncertainty $\varepsilon_\text{max} = 5.0\,\%$
 **Find:** the minimum length $t$ of the measurement period in $\text{min}$, three variables to be controlled and the way of comparing the cooling curves
 **Principle:** The initial cooling rate is estimated from the change during the first three minutes of the table. The relative uncertainty stays within the limit only if the measured fall is large enough compared with the uncertainty, just as in a time measurement where the uncertainty of the time is constant. First the smallest sufficient fall is calculated, and then the time in which the water cools by this amount at the initial rate.
-**Formula:** $r = \dfrac{T_\text{start} - T_3}{\Delta t}$, $\;\varepsilon = \dfrac{\Delta T_\text{fall}}{T_\text{fall}} \le \varepsilon_\text{max}$, from which $T_\text{fall} \ge \dfrac{\Delta T_\text{fall}}{\varepsilon_\text{max}}$ and $t = \dfrac{T_\text{fall}}{r}$
+**Formula:** $r = \dfrac{T_\text{start} - T_3}{t_3 - t_\text{start}}$, $\;\varepsilon = \dfrac{\Delta T_\text{fall}}{T_\text{fall}} \le \varepsilon_\text{max}$, from which $T_\text{fall} \ge \dfrac{\Delta T_\text{fall}}{\varepsilon_\text{max}}$ and $t = \dfrac{T_\text{fall}}{r}$
 **Conversions:** A percent is a hundredth: $5.0\,\% = 0.050$. A fall in temperature is the same in kelvins and degrees Celsius, so $\text{K}$ is suitable as the unit.
 **Substitution:** $r = \dfrac{80.0\,{}^\circ\text{C} - 74.0\,{}^\circ\text{C}}{3.0\,\text{min}} = \dfrac{6.0\,\text{K}}{3.0\,\text{min}} = 2.0\,\text{K/min}$. Then $T_\text{fall} \ge \dfrac{1.0\,\text{K}}{0.050} = 20\,\text{K}$, so $t = \dfrac{20\,\text{K}}{2.0\,\text{K/min}} = 10\,\text{min}$.
-**Answer:** at least $10\,\text{min}$, two significant figures like the given values. Variables to be controlled: the amount of water (otherwise the heat capacity and the surface area change), the initial temperature of the water (the cooling rate depends on the temperature difference to the room) and the surroundings, that is, the temperature of the room and the air flow, and whether there is a lid or not. The curves are drawn in the same graph and compared by their initial slopes (the cooling rate for the same fall in temperature $T_\text{fall}$, for example during the first $20\,\text{K}$ fall), taking the uncertainty into account.
+**Answer:** at least $10\,\text{min}$, two significant figures like the time interval $3.0\,\text{min}$ and the uncertainty $1.0\,\text{K}$. Variables to be controlled: the amount of water (otherwise the heat capacity and the surface area change), the initial temperature of the water (the cooling rate depends on the temperature difference to the room) and the surroundings, that is, the temperature of the room and the air flow, and whether there is a lid or not. The curves are drawn in the same graph and compared by their initial slopes (the cooling rate for the same fall in temperature $T_\text{fall}$, for example during the first $20\,\text{K}$ fall), taking the uncertainty into account.
 **Reasonableness:** The fall in temperature must be $20\,\text{K}$, which is 20 times the uncertainty $1.0\,\text{K}$, so the relative uncertainty is $\tfrac{1}{20} = 5\,\%$. In reality cooling slows down (compare the earlier cooling exercise), and in the container that cools most slowly the fall is smaller, so $10\,\text{min}$ is a lower limit: the period should be planned longer and checked with a preliminary experiment.

@@ -4,7 +4,7 @@
       "id": "fy1-5-L1-01",
       "level": 1,
       "core": true,
-      "text": "A cyclist rides uniformly at $5.5\\,\\text{m/s}$. How far does the cyclist travel in 20 seconds?",
+      "text": "A cyclist rides uniformly at $5.5\\,\\text{m/s}$. How far does the cyclist travel in $20\\,\\text{s}$?",
       "answer": 110,
       "unit": "m",
       "tolerance": 0.02
@@ -100,7 +100,7 @@
     {
       "id": "fy1-5-L2-01",
       "level": 2,
-      "text": "A car drives at a constant speed of $54\\,\\text{km/h}$. How far does it travel in 14 seconds? Give the answer in metres.",
+      "text": "A car drives at a constant speed of $54\\,\\text{km/h}$. How far does it travel in $14\\,\\text{s}$? Give the answer in metres.",
       "answer": 210,
       "unit": "m",
       "tolerance": 0.02
@@ -116,7 +116,7 @@
     {
       "id": "fy1-5-L2-03",
       "level": 2,
-      "text": "A hiker is at a point $1.5\\,\\text{km}$ from a cabin. The hiker walks along a straight path away from the cabin, uniformly at $1.5\\,\\text{m/s}$. How far from the cabin is the hiker after 10 minutes? Give the answer in kilometres.",
+      "text": "A hiker is at a point $1.5\\,\\text{km}$ from a cabin. The hiker walks along a straight path away from the cabin, uniformly at $1.5\\,\\text{m/s}$. How far from the cabin is the hiker after $10\\,\\text{min}$? Give the answer in kilometres.",
       "answer": 2.4,
       "unit": "km",
       "tolerance": 0.02
@@ -221,7 +221,7 @@
         {
           "text": "Graph B",
           "figure": "fy1-5/pick-vt",
-          "feedback": "This is a $(t, v)$ graph: the vertical axis shows the speed $v$, not the position $s$. In it, standing still is $v = 0$ and steady walking is a horizontal line, but in a position graph a horizontal line means staying in place. You cannot see from this graph where the walker is, nor that she is at $6.0\\,\\text{m}$ at the start."
+          "feedback": "This is a $(t, v)$ graph: the vertical axis shows the speed $v$, not the position $s$. In it, standing still is $v = 0$ and steady walking is a horizontal line, but in a position graph a horizontal line means staying in place. You cannot see from this graph where the walker is, nor that she is at $6.0\\,\\text{m}$ at the start. Even as a velocity graph B would not be right: the position decreases on the way back, so the velocity $v = \\Delta s : \\Delta t = -1.0\\,\\text{m/s}$ is negative."
         },
         {
           "text": "Graph C",
@@ -241,8 +241,8 @@
     {
       "id": "fy1-5-L3-01",
       "level": 3,
-      "text": "The Voyager 2 probe crossed the heliopause on 5 November 2018 at a distance of $119.7\\,\\text{AU}$ from the Sun (NASA/JPL), and its speed relative to the Sun is $15.341\\,\\text{km/s}$ (JPL). Assume the speed is constant.\n\nHow many days after the heliopause crossing is the probe, according to the model, $150\\,\\text{AU}$ from the Sun? Use the values $1\\,\\text{AU} = 149\\,597\\,870.7\\,\\text{km}$ and $1\\,\\text{day} = 86\\,400\\,\\text{s}$. The result is a model value.",
-      "answer": 3420,
+      "text": "The Voyager 2 probe crossed the heliopause on 5 November 2018 at a distance of $119.0\\,\\text{AU}$ from the Sun (Burlaga et al. 2019), and its speed relative to the Sun was then $15.341\\,\\text{km/s}$ (NASA/JPL). Assume the speed is constant.\n\nHow many days after the heliopause crossing is the probe, according to the model, $150\\,\\text{AU}$ from the Sun? Use the values $1\\,\\text{AU} = 149\\,597\\,870.7\\,\\text{km}$ and $1\\,\\text{day} = 86\\,400\\,\\text{s}$. The result is a model value.",
+      "answer": 3500,
       "unit": "days",
       "tolerance": 0.02
     },

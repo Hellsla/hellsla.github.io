@@ -59,6 +59,9 @@ course's `scope_notes` in `curriculum.json`, not here. Lines without a date pred
   significant figures, and a student rounding to them stays inside the relative `tolerance` (0,02 as a rule; `77 K`
   has two figures, so −196 °C needs 0,03 or a whole-number task). A coefficient with a power of ten counts its
   mantissa: `9,0 · 10⁻⁶ 1/K`, not `9 · 10⁻⁶`.
+- An integer datum ending in zeros is exact unless the task says otherwise (teacher 2026-11-07, "Sovitaan että 10 min tarkka"):
+  `10 min`, `400 cm³`, `4200 m` do not limit the answer's significant figures; the measured data do, and a
+  justification never says "kaksi numeroa kuten 10 min". FY1 *Suureet, yksiköt ja SI-järjestelmä* states it to the student.
 - Compute every exercise answer in `answers.py` and every number of the lesson text and the inquiry in
   `lesson-answers.py` (one commented line per step, each prints `{id: value}`; 2026-10-28: the exercises are a part of
   their own, README "Exercises"); the lint re-runs both. A task whose answer is a datum plus a small change (L = L₀ + ΔL) cannot be marked by relative tolerance:

@@ -19,7 +19,7 @@ a["fy1-7-L2-03"] = 89.0e-3 / (dV * 1e-6)         # rho = 0,0890 kg / 10e-6 m3 = 
 a["fy1-7-L2-04"] = (412 - 215) / 250 * 1000      # liquid: m = 412 g − 215 g = 197 g; rho = 197/250 g/cm3 = 0,788 g/cm3 = 788 kg/m3
 # Level 3: reasoning or an unfamiliar context
 a["fy1-7-L3-01"] = rho["kupari"] / rho["alumiini"]   # equal masses: V_Al / V_Cu = rho_Cu / rho_Al = 8960 / 2700 = 3,32
-a["fy1-7-L3-02"] = (2.70 * 100 + 7.87 * 50) / (100 + 50)   # alloy: total m / total V = (270 + 393,5) g / 150 cm3 = 4,42 g/cm3
+a["fy1-7-L3-02"] = (2.70 * 100 + 7.87 * 50) / (100 + 50)   # alloy: total m / total V = (270 + 393,5) g / 150 cm3 = 4,42 g/cm3 (volumes exact, teacher 2026-11-07)
 V_wire = 0.50 / rho["kupari"]                    # copper wire: V = m/rho = 0,50 kg / 8960 kg/m3 = 5,58e-5 m3
 A_wire = math.pi * (0.50e-3) ** 2                # cross-section from radius 0,50 mm: 7,854e-7 m2
 a["fy1-7-L3-03"] = V_wire / A_wire               # length L = V/A = 71,05 m -> 71 m
@@ -44,7 +44,7 @@ a["fy1-7-L3-04"] = 113 / (62.0 - 50.0 - 2.0)   # bubble 2,0 ml: true V = 12,0 - 
 a["fy1-7-L3-05"] = round((520 - 2.70 * 100) / (8.96 - 2.70), 1)   # alloy: V_Cu = (m - rho_Al V)/(rho_Cu - rho_Al) = 250/6,26 = 39,9 cm3
 # inquiry.json numeric tasks (not exercises; printed with their own keys)
 a["fy1-7-inq-metalli"] = (224.3 - 45.1) / (25.0 - 5.0)         # copper-like metal, slope between first and last point = 8,96 g/cm3
-a["fy1-7-inq-siirto"] = 0.187 / (70e-6)          # stone: 187 g, displaced 70 ml: rho = 0,187 kg / 70e-6 m3 = 2671 kg/m3 -> 2,7e3
+a["fy1-7-inq-siirto"] = 0.187 / (70e-6)          # stone: 187 g, displaced 70 ml: rho = 0,187 kg / 70e-6 m3 = 2671 kg/m3 -> 2,7e3 (readings to 1 ml, stated in the task)
 a["fy1-7-inq-virhe"] = 2.70 * 250   # Etsi virhe (not numeric): aluminium 250 cm3: m = 2,70 g/cm3 · 250 cm3 = 675 g
 a["fy1-7-inq-tarkistus-2"] = 500 * 0.200 ** 3   # pine cube: m = 500 kg/m3 · (0,200 m)^3 = 4,00 kg
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

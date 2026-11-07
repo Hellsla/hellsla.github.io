@@ -286,7 +286,7 @@
       "id": "fy1-7-L3-02",
       "level": 3,
       "text": "An object is made by casting together $100\\,\\text{cm}^3$ of aluminium and $50\\,\\text{cm}^3$ of iron. The volumes are assumed to add up. What is the average density of the object? Give your answer in $\\text{g/cm}^3$.",
-      "answer": 4.4,
+      "answer": 4.42,
       "unit": "g/cm³",
       "tolerance": 0.02
     },

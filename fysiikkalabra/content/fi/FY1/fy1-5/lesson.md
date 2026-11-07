@@ -299,15 +299,15 @@ missä $\Delta s$ on paikan muutos (m) ja $\Delta t$ sen aikaväli (s). Suora le
 Muunna aina ennen sijoitusta yhteensopiviin yksiköihin (yleensä SI-yksiköihin): sijoita yksikön paikalle sen arvo. Esimerkiksi $1\,\text{km} = 1000\,\text{m}$ ja $1\,\text{h} = 3600\,\text{s}$, joten $72\,\text{km/h} = \tfrac{72\cdot1000\,\text{m}}{3600\,\text{s}} = 20\,\text{m/s}$. Samoin $1\,\text{min} = 60\,\text{s}$. Aurinkokunnan mittakaavan etäisyyksiä ilmoitetaan usein tähtitieteellisinä yksikköinä: $1\,\text{AU} = 149\,597\,870{,}7\,\text{km}$ on suunnilleen Maan ja Auringon keskietäisyys.
 
 ## Esimerkki
-Voyager 2 -luotain ylitti heliopaussin 5. marraskuuta 2018 etäisyydellä $s_0 = 119{,}7\,\text{AU}$ Auringosta (NASA/JPL). Luotaimen nopeus Aurinkoon nähden on $v = 15{,}341\,\text{km/s}$ (JPL:n Voyager-lentotilanne). Oletetaan nopeus vakioksi. Kuinka kaukana Auringosta luotain on mallin mukaan 5. marraskuuta 2026?
+Voyager 2 -luotain ylitti heliopaussin 5. marraskuuta 2018 etäisyydellä $s_0 = 119{,}0\,\text{AU}$ Auringosta (Burlaga ym. 2019, Nature Astronomy). Luotaimen nopeus Aurinkoon nähden oli ylityksen aikaan $v = 15{,}341\,\text{km/s}$ (NASA/JPL). Oletetaan nopeus vakioksi. Kuinka kaukana Auringosta luotain on mallin mukaan 5. marraskuuta 2026?
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** $s_0 = 119{,}7\,\text{AU}$ hetkellä $t = 0$ (5. marraskuuta 2018), $v = 15{,}341\,\text{km/s}$ ja $1\,\text{AU} = 149\,597\,870{,}7\,\text{km}$. Aikaväli 5. marraskuuta 2018 – 5. marraskuuta 2026 on 8 vuotta, joissa on karkauspäivät 2020 ja 2024: $8 \cdot 365 + 2 = 2922$ vuorokautta. Kysytään etäisyyttä $s$ Auringosta.
+**Tunnetut ja kysytty.** $s_0 = 119{,}0\,\text{AU}$ hetkellä $t = 0$ (5. marraskuuta 2018), $v = 15{,}341\,\text{km/s}$ ja $1\,\text{AU} = 149\,597\,870{,}7\,\text{km}$. Aikaväli 5. marraskuuta 2018 – 5. marraskuuta 2026 on 8 vuotta, joissa on karkauspäivät 2020 ja 2024: $8 \cdot 365 + 2 = 2922$ vuorokautta. Kysytään etäisyyttä $s$ Auringosta.
 
 <!-- vaihe -->
 
-**Periaate.** Kun nopeus oletetaan vakioksi, luotain liikkuu tasaisesti ja paikka noudattaa lineaarista mallia. Tulos on mallin arvo, ei mittaus: Auringon vetovoima hidastaa luotainta hieman.
+**Periaate.** Kun nopeus oletetaan vakioksi, luotain liikkuu tasaisesti ja paikka noudattaa lineaarista mallia. Tulos on mallin arvo, ei mittaus: Auringon vetovoima hidastaa luotainta hieman, vuosina 2018–2026 vain noin $0{,}1\,\text{km/s}$, mikä on tässä mitätöntä.
 
 <!-- vaihe -->
 
@@ -318,7 +318,7 @@ s = s_0 + v t
 
 <!-- vaihe -->
 
-**Yksikkömuunnokset.** Aika on valmiiksi vuorokausina, $t = 2922\,\text{vrk}$, joten nopeus muunnetaan yksikköön AU/vrk: $v = 15{,}341\,\tfrac{\text{km}}{\text{s}} \cdot 86\,400\,\tfrac{\text{s}}{\text{vrk}} = 1\,325\,462\,\tfrac{\text{km}}{\text{vrk}}$, ja jakamalla luvulla $149\,597\,870{,}7\,\text{km/AU}$ saadaan $v = 0{,}0088602\,\tfrac{\text{AU}}{\text{vrk}}$.
+**Yksikkömuunnokset.** Aika on valmiiksi vuorokausina, $t = 2922\,\text{vrk}$, joten nopeus muunnetaan yksikköön AU/vrk. Yksiköiden paikalle sijoitetaan $1\,\text{km} = \tfrac{1}{149\,597\,870{,}7}\,\text{AU}$ ja $1\,\text{s} = \tfrac{1}{86\,400}\,\text{vrk}$: $v = 15{,}341\,\tfrac{\text{km}}{\text{s}} = 15{,}341 \cdot \tfrac{1}{149\,597\,870{,}7}\,\text{AU} : \left(\tfrac{1}{86\,400}\,\text{vrk}\right) = 0{,}0088602\,\tfrac{\text{AU}}{\text{vrk}}$.
 
 <!-- vaihe -->
 
@@ -326,20 +326,20 @@ s = s_0 + v t
 ```latex
 \begin{aligned}
 s &= s_0 + v t \\
-&= 119{,}7\,\text{AU} \\
+&= 119{,}0\,\text{AU} \\
 &\quad + 0{,}0088602\,\tfrac{\text{AU}}{\text{vrk}} \cdot 2922\,\text{vrk} \\
-&= 119{,}7\,\text{AU} + 25{,}89\,\text{AU} \\
-&= 145{,}59\,\text{AU}
+&= 119{,}0\,\text{AU} + 25{,}89\,\text{AU} \\
+&= 144{,}89\,\text{AU}
 \end{aligned}
 ```
 
 <!-- vaihe -->
 
-**Tulos.** Luotain on mallin mukaan $s \approx 145{,}6\,\text{AU}$ Auringosta, noin $2{,}18 \cdot 10^{10}\,\text{km}$. Alkuetäisyys on annettu kymmenesosan tarkkuudella, joten tulos pyöristetään kymmenesosiin.
+**Tulos.** Luotain on mallin mukaan $s \approx 144{,}9\,\text{AU}$ Auringosta, noin $2{,}17 \cdot 10^{10}\,\text{km}$. Alkuetäisyys on annettu kymmenesosan tarkkuudella, joten tulos pyöristetään kymmenesosiin.
 
 <!-- vaihe -->
 
-**Järkevyys.** Nopeus $15\,\text{km/s}$ vie vuodessa noin $15\,\text{km/s} \cdot 3{,}16 \cdot 10^{7}\,\text{s} \approx 4{,}7 \cdot 10^{8}\,\text{km} \approx 3{,}2\,\text{AU}$, joten 8 vuodessa luotain etenee noin $26\,\text{AU}$ ja $119{,}7\,\text{AU} + 26\,\text{AU} \approx 146\,\text{AU}$. Sama malli antaa 15. helmikuuta 2026 arvon $143{,}3\,\text{AU}$, ja JPL ilmoittaa helmikuulle 2026 arvon $143{,}05\,\text{AU}$. Ero on noin $0{,}2\,\text{AU}$, alle $0{,}2\,\%$ etäisyydestä, joten vakionopeusmalli toimii tässä hyvin. Ero johtuu osin siitä, että Auringon vetovoima hidastaa luotainta aivan vähän ja alkuetäisyys on annettu vain kymmenesosan tarkkuudella. Mallin poikkeama on siis vain prosentin murto-osa.
+**Järkevyys.** Nopeus $15\,\text{km/s}$ vie vuodessa noin $15\,\text{km/s} \cdot 3{,}16 \cdot 10^{7}\,\text{s} \approx 4{,}7 \cdot 10^{8}\,\text{km} \approx 3{,}2\,\text{AU}$, joten 8 vuodessa luotain etenee noin $26\,\text{AU}$ ja $119{,}0\,\text{AU} + 26\,\text{AU} \approx 145\,\text{AU}$. Sama malli antaa 15. helmikuuta 2026 etäisyydeksi Auringosta $142{,}6\,\text{AU}$. NASA/JPL:n Voyager-tilannesivu ilmoitti helmikuussa 2026 luotaimen etäisyydeksi Maasta $143{,}05\,\text{AU}$. Maa kiertää Aurinkoa, joten luotaimen etäisyys Maasta poikkeaa sen etäisyydestä Auringosta vuoden mittaan jopa noin $1\,\text{AU}$. Ero $0{,}5\,\text{AU}$ on tätä pienempi: malli ja havainto täsmäävät noin $1\,\text{AU}$:n tarkkuudella, ja tarkemmin tämä vertailu ei mallia testaa. Se on alle prosentti etäisyydestä, joten vakionopeusmalli sopii muutaman vuoden ennusteisiin.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että tasaisessa liikkeessä paikka kaksinkertaistuu, kun aika kaksinkertaistuu. Näin käy vain, jos liike alkaa nollakohdasta. Kun kärry on alussa kohdassa $s_0 = 6\,\text{m}$ ja etenee nopeudella $2{,}0\,\text{m/s}$, se on hetkellä $2{,}0\,\text{s}$ paikassa $10\,\text{m}$ ja hetkellä $4{,}0\,\text{s}$ paikassa $14\,\text{m}$, ei $20\,\text{m}$:ssä. Matka sen sijaan kaksinkertaistuu: $4\,\text{m}$ muuttuu $8\,\text{m}$:ksi. Toinen virhe on lukea nopeudeksi paikan arvo eikä paikan muutos aikaa kohti: nopeus on $\Delta s : \Delta t$, ei $s : t$, kun $s_0 \neq 0$.

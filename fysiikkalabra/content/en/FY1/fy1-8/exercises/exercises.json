@@ -201,7 +201,7 @@
     {
       "id": "fy1-8-L2-04",
       "level": 2,
-      "text": "According to the hypothesis the speed of the car is $0.50\\,\\text{m/s}$, but in the experiment the speed is measured as $0.42\\,\\text{m/s}$. By how many percent does the measured value differ from the value predicted by the hypothesis?",
+      "text": "According to the hypothesis the speed of the car is $0.500\\,\\text{m/s}$, but in the experiment the speed is measured as $0.420\\,\\text{m/s}$. By how many percent does the measured value differ from the value predicted by the hypothesis?",
       "answer": 16,
       "unit": "%",
       "tolerance": 0.02
@@ -356,7 +356,7 @@
     {
       "id": "fy1-8-L3-04",
       "level": 3,
-      "text": "A student investigated whether the mass of a ball affects the rolling time (compare the measurements of the light and heavy ball). The results of five repeats are the means $\\bar{t}_{50} = 3.12\\,\\text{s} \\pm 0.04\\,\\text{s}$ and $\\bar{t}_{200} = 3.08\\,\\text{s} \\pm 0.04\\,\\text{s}$ (the uncertainty is half of the range). The student's hypothesis was that the heavy ball rolls down the slope faster. The uncertainty of timing with a hand stopwatch was estimated at $0.15\\,\\text{s}$ for a single measurement.\n\nThe discussion says: “The experiment went well. The mean of the heavy ball is smaller, so the hypothesis was correct. There were few errors.”\n\nHow many times larger than the difference of the means is the hand-timing uncertainty $0.15\\,\\text{s}$? Use this and the intervals of the results to justify which claims of the discussion the data supports and which it does not, and write two better sentences for the discussion.",
+      "text": "A student investigated whether the mass of a ball affects the rolling time (compare the measurements of the light and heavy ball). The results of five repeats are the means $\\bar{t}_{50} = 3.12\\,\\text{s} \\pm 0.04\\,\\text{s}$ and $\\bar{t}_{200} = 3.08\\,\\text{s} \\pm 0.04\\,\\text{s}$ (the uncertainty is half of the range). The student's hypothesis was that the heavy ball rolls down the slope faster. The uncertainty of timing with a hand stopwatch was estimated at $0.15\\,\\text{s}$ for a single measurement. The estimate includes the reaction time, which can differ between measurement series, for example with a different timer or on a different occasion, so it does not fully show in the spread of five consecutive repeats.\n\nThe discussion says: “The experiment went well. The mean of the heavy ball is smaller, so the hypothesis was correct. There were few errors.”\n\nHow many times larger than the difference of the means is the hand-timing uncertainty $0.15\\,\\text{s}$? Use this and the intervals of the results to justify which claims of the discussion the data supports and which it does not, and write two better sentences for the discussion.",
       "kind": [
         "data",
         "reasoning",

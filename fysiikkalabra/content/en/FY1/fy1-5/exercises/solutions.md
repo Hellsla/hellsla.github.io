@@ -90,14 +90,14 @@
 **Reasonableness:** Rule of thumb: three seconds corresponds to about a kilometre, so five seconds corresponds to about $1.7\,\text{km}$. Light would travel this distance in $1715\,\text{m} : (3.0 \cdot 10^{8}\,\text{m/s}) \approx 6\,\mu\text{s}$, which is negligible compared with the delay $5.0\,\text{s}$.
 
 ## fy1-5-L3-01
-**Given:** $s_0 = 119.7\,\text{AU}$ at time $t = 0$ (5 November 2018), $v = 15.341\,\text{km/s}$, $s = 150\,\text{AU}$, $1\,\text{AU} = 149\,597\,870.7\,\text{km}$, $1\,\text{day} = 86\,400\,\text{s}$
+**Given:** $s_0 = 119.0\,\text{AU}$ at time $t = 0$ (5 November 2018), $v = 15.341\,\text{km/s}$, $s = 150\,\text{AU}$, $1\,\text{AU} = 149\,597\,870.7\,\text{km}$, $1\,\text{day} = 86\,400\,\text{s}$
 **Find:** time $t$ in days when the probe is at a distance of $150\,\text{AU}$
 **Principle:** The speed is assumed constant, so the uniform motion model $s = s_0 + vt$ applies. The result is a model value, because the Sun's gravity slows the probe slightly and the real time is therefore a little longer.
 **Formula:** $s = s_0 + vt$, so $t = \dfrac{s - s_0}{v}$
-**Conversions:** The speed in astronomical units per day: $v = 15.341\,\tfrac{\text{km}}{\text{s}} \cdot 86\,400\,\tfrac{\text{s}}{\text{day}} = 1\,325\,462\,\tfrac{\text{km}}{\text{day}}$, and $\dfrac{1\,325\,462\,\text{km/day}}{149\,597\,870.7\,\text{km/AU}} = 0.0088602\,\tfrac{\text{AU}}{\text{day}}$.
-**Substitution:** $t = \dfrac{150\,\text{AU} - 119.7\,\text{AU}}{0.0088602\,\text{AU/day}} = \dfrac{30.3\,\text{AU}}{0.0088602\,\text{AU/day}} = 3419.8\,\text{days}$
-**Answer:** $3420\,\text{days}$, three significant figures, when $150\,\text{AU}$ is interpreted as accurate to three figures and the difference is $30.3\,\text{AU}$.
-**Reasonableness:** The rate is about $3.2\,\text{AU}$ per year, so $30.3\,\text{AU}$ takes about $30.3 : 3.2 \approx 9.5$ years. The result $3420\,\text{days} \approx 9.4$ years fits this and falls in March 2028. The model differs from the JPL value by about $0.2\,\text{AU}$, which corresponds to an error of about 20 days in the date.
+**Conversions:** The speed in astronomical units per day by substituting $1\,\text{km} = \tfrac{1}{149\,597\,870.7}\,\text{AU}$ and $1\,\text{s} = \tfrac{1}{86\,400}\,\text{day}$: $v = 15.341\,\tfrac{\text{km}}{\text{s}} = \dfrac{15.341 \cdot \tfrac{1}{149\,597\,870.7}\,\text{AU}}{\tfrac{1}{86\,400}\,\text{day}} = 0.0088602\,\tfrac{\text{AU}}{\text{day}}$.
+**Substitution:** $t = \dfrac{150\,\text{AU} - 119.0\,\text{AU}}{0.0088602\,\text{AU/day}} = \dfrac{31.0\,\text{AU}}{0.0088602\,\text{AU/day}} = 3498.8\,\text{days}$
+**Answer:** $3.50 \cdot 10^{3}\,\text{days}$, about $3500\,\text{days}$, three significant figures: $150\,\text{AU}$ is an exact limit, and the difference $31.0\,\text{AU}$ is accurate to three figures.
+**Reasonableness:** The rate is about $3.2\,\text{AU}$ per year, so $31.0\,\text{AU}$ takes about $31.0 : 3.2 \approx 9.7$ years. The result $3500\,\text{days} \approx 9.6$ years fits this and falls in June 2028. The model and the observation agree to within about $1\,\text{AU}$ (see the worked example), and $1\,\text{AU}$ corresponds to about $110\,\text{days}$ in the date, so the date is a rough one.
 
 ## fy1-5-L3-02
 **Given:** distance $d = 150\,\text{AU}$, speed of the signal $c = 299\,792\,458\,\text{m/s}$, $1\,\text{AU} = 149\,597\,870.7\,\text{km}$
@@ -106,7 +106,7 @@
 **Formula:** $2d = ct$, so $t = \dfrac{2d}{c}$
 **Conversions:** $d = 150 \cdot 149\,597\,870.7\,\text{km} = 2.2440 \cdot 10^{10}\,\text{km} = 2.2440 \cdot 10^{13}\,\text{m}$. Finally $1\,\text{h} = 3600\,\text{s}$.
 **Substitution:** $t = \dfrac{2 \cdot 2.2440 \cdot 10^{13}\,\text{m}}{299\,792\,458\,\text{m/s}} = 1.497 \cdot 10^{5}\,\text{s} = \dfrac{1.497 \cdot 10^{5}\,\text{s}}{3600\,\text{s/h}} = 41.58\,\text{h}$
-**Answer:** $41.6\,\text{h}$, three significant figures, when the distance $150\,\text{AU}$ is interpreted as accurate to three figures.
+**Answer:** $41.6\,\text{h}$. The given values are exact (the assumed distance $150\,\text{AU}$, and the speed of light and $1\,\text{AU}$ by definition), so the precision is chosen: three significant figures are enough.
 **Reasonableness:** Light travels one AU in about $499\,\text{s} \approx 8.3\,\text{min}$, so $150\,\text{AU}$ takes about $150 \cdot 8.3\,\text{min} \approx 1250\,\text{min} \approx 20.8\,\text{h}$, and there and back $41.6\,\text{h}$. A delay of more than a day is reasonable, because the probe is tens of billions of kilometres away.
 
 ## fy1-5-L3-03
@@ -167,10 +167,10 @@
 **Reasonableness:** The distance tripled: $3.0\,\text{m} \cdot 3 = 9.0\,\text{m}$. The student's answer $33\,\text{m}$ would require the trolley to travel $25\,\text{m}$ in six seconds, that is, a speed of $4.2\,\text{m/s}$, which is a different speed from the $1.5\,\text{m/s}$ obtained from the data.
 
 ## fy1-5-L2-07
-**Given:** speed about $v = 0.80\,\text{m/s}$, uncertainty of the timing $u_t = 0.2\,\text{s}$ (the same for all times), limit of the relative uncertainty $2.0\,\%$
+**Given:** speed about $v = 0.80\,\text{m/s}$, uncertainty of the timing $\Delta t = 0.2\,\text{s}$ (the same for all times; here $\Delta t$ is the uncertainty, not a time interval), limit of the relative uncertainty $2.0\,\%$
 **Find:** minimum distance $s$ in metres
-**Principle:** The relative uncertainty of the time is $u_t : t$. Since $u_t$ is constant, the relative uncertainty decreases as the measured time grows. The limit gives the minimum time, and in uniform motion the distance is speed times time.
-**Formula:** $\dfrac{u_t}{t} \le 0.020$, so $t \ge \dfrac{u_t}{0.020}$, and $s = vt$
+**Principle:** The relative uncertainty of the time is $\varepsilon = \Delta t : t$. Since $\Delta t$ is constant, the relative uncertainty decreases as the measured time grows. The limit gives the minimum time, and in uniform motion the distance is speed times time.
+**Formula:** $\varepsilon = \dfrac{\Delta t}{t} \le 0.020$, so $t \ge \dfrac{\Delta t}{0.020}$, and $s = vt$
 **Conversions:** None needed: the times are in seconds and the speed in m/s. The percentage is $2.0\,\% = 0.020$.
 **Substitution:** $t \ge \dfrac{0.2\,\text{s}}{0.020} = 10\,\text{s}$ and $s = 0.80\,\tfrac{\text{m}}{\text{s}} \cdot 10\,\text{s} = 8.0\,\text{m}$
 **Answer:** The car must travel at least $8.0\,\text{m}$. A long distance improves the measurement, because it takes longer and the timing uncertainty $0.2\,\text{s}$ is then a smaller part of the whole time. On a short distance, for example $1.0\,\text{m}$ ($t = 1.25\,\text{s}$), the relative uncertainty would be $16\,\%$.

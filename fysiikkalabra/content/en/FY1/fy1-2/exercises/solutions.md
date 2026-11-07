@@ -15,7 +15,7 @@
 **Formula:** $1\,\text{km} = 10^{-3}\,\text{Mm}$
 **Conversions:** A megametre is a thousand kilometres, so a kilometre is a thousandth of a megametre. In place of the kilometre we write $10^{-3}\,\text{Mm}$.
 **Substitution:** $s = 384\,400\,\text{km} = 384\,400\cdot 10^{-3}\,\text{Mm} = 384.4\,\text{Mm}$
-**Answer:** $384.4\,\text{Mm}$, four significant figures. The trailing zeros of the whole number $384\,400$ are unclear, so the number is interpreted as precise to a hundred kilometres, $3.844\cdot10^{5}\,\text{km}$, and $1\,\text{km} = 10^{-3}\,\text{Mm}$ is exact.
+**Answer:** $384.4\,\text{Mm}$. In the tasks of this book the value $384\,400\,\text{km}$, given as a whole number ending in zeros, is exact, and $1\,\text{km} = 10^{-3}\,\text{Mm}$ is exact, so the numerical value is only divided by a thousand and the result is not rounded.
 **Reasonableness:** A megametre is a thousand kilometres, and $384\,400\,\text{km}$ is about $400\,000\,\text{km}$, so the result is about $400\,\text{Mm}$. The distance lies between the powers of ten $10^{8}\,\text{m} = 100\,\text{Mm}$ and $10^{9}\,\text{m} = 1000\,\text{Mm}$, as it should.
 
 ## fy1-2-L1-03
@@ -190,6 +190,6 @@
 **Principle:** The numerical values $0.65$ and $2.20$ cannot be compared, because the units $\text{kWh}$ and $\text{MJ}$ are of different sizes. A device runs for the time $t = \tfrac{E}{P}$ until the stored energy has been used up. Energy and power are therefore converted to the units J and W.
 **Formula:** $t = \dfrac{E}{P}$
 **Conversions:** In place of the kilowatt-hour we write $1000\,\text{W}\cdot3600\,\text{s}$, that is $1\,\text{kWh} = 3.6\,\text{MJ}$. $E_\text{A} = 0.65\cdot1000\,\text{W}\cdot3600\,\text{s} = 2.34\cdot10^{6}\,\text{J}$, $E_\text{B} = 2.20\cdot10^{6}\,\text{J}$ and $P_\text{B} = 0.100\cdot1000\,\text{W} = 100\,\text{W}$. Seconds are converted to hours, $1\,\text{h} = 3600\,\text{s}$.
-**Substitution:** $t_\text{A} = \dfrac{2.34\cdot10^{6}\,\text{J}}{85.0\,\text{W}} = 2.753\cdot10^{4}\,\text{s} = 7.647\,\text{h}$ and $t_\text{B} = \dfrac{2.20\cdot10^{6}\,\text{J}}{100\,\text{W}} = 2.20\cdot10^{4}\,\text{s} = 6.111\,\text{h}$. The difference is $7.647\,\text{h} - 6.111\,\text{h} = 1.54\,\text{h}$
+**Substitution:** $t_\text{A} = \dfrac{2.34\cdot10^{6}\,\text{J}}{85.0\,\text{W}} = 2.753\cdot10^{4}\,\text{s} = 7.647\,\text{h}$ and $t_\text{B} = \dfrac{2.20\cdot10^{6}\,\text{J}}{100\,\text{W}} = 2.20\cdot10^{4}\,\text{s} = 6.111\,\text{h}$. The difference is $7.647\,\text{h} - 6.111\,\text{h} = 1.54\,\text{h} \approx 1.5\,\text{h}$
 **Answer:** device A runs longer, about $1.5\,\text{h}$, two significant figures like the energy $0.65\,\text{kWh}$. The energy of device B is only $0.61\,\text{kWh}$, and its power is greater. So the claim is not correct.
 **Reasonableness:** The energy of device A, $650\,\text{Wh}$, divided by an estimate of $90\,\text{W}$ for the power $85\,\text{W}$ gives about $7\,\text{h}$. The energy of device B is $2.2:3.6 = 0.61\,\text{kWh}$, and $610\,\text{Wh} : 100\,\text{W}$ is about $6\,\text{h}$.

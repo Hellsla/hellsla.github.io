@@ -65,28 +65,28 @@
 **Kaava:** $t = \dfrac{s}{v}$ ja $\varepsilon = \dfrac{\Delta t}{t} = \dfrac{\Delta t\, v}{s}$
 **Muunnokset:** Matka on metreinä ja nopeus yksikössä $\text{m/s}$, joten aika saadaan sekunteina. Osamäärä kerrotaan sadalla prosenteiksi.
 **Sijoitus:** $t = \dfrac{3{,}0\,\text{m}}{1{,}5\,\text{m/s}} = 2{,}0\,\text{s}$, joten $\varepsilon = \dfrac{0{,}20\,\text{s}}{2{,}0\,\text{s}} = 0{,}10 = 10\,\%$
-**Vastaus:** $10\,\%$, kaksi merkitsevää numeroa kuten matkassa ja nopeudessa.
+**Vastaus:** $10\,\%$ eli $0{,}10$, kaksi merkitsevää numeroa kuten matkassa, nopeudessa ja epävarmuudessa $0{,}20\,\text{s}$.
 **Järkevyys:** Kahden sekunnin mittauksessa ajanoton epävarmuus $0{,}20\,\text{s}$ on kymmenesosa kokonaisajasta. Tulos on kaksinkertainen esimerkiksi $5\,\%$:n rajaan verrattuna, ja siksi lyhyt matka on huono valinta.
 
 ## fy1-8-L2-03
 **Annettu:** pisteet $(t_1, s_1) = (2{,}0\,\text{s}, 90\,\text{cm})$ ja $(t_2, s_2) = (8{,}0\,\text{s}, 342\,\text{cm})$
 **Kysytty:** nopeus $v$ yksikössä $\text{m/s}$
 **Periaate:** Liike on tasaista, joten matka muuttuu ajan mukana tasaisesti ja nopeus on matkan muutoksen ja ajan muutoksen suhde eli kulmakerroin kahden pisteen välillä.
-**Kaava:** $v = \dfrac{\Delta s}{\Delta t} = \dfrac{s_2 - s_1}{t_2 - t_1}$
+**Kaava:** $v = \dfrac{s_2 - s_1}{t_2 - t_1}$
 **Muunnokset:** Muutetaan matkat metreiksi: $90\,\text{cm} = 0{,}90\,\text{m}$ ja $342\,\text{cm} = 3{,}42\,\text{m}$.
 **Sijoitus:** $v = \dfrac{3{,}42\,\text{m} - 0{,}90\,\text{m}}{8{,}0\,\text{s} - 2{,}0\,\text{s}} = \dfrac{2{,}52\,\text{m}}{6{,}0\,\text{s}} = 0{,}42\,\text{m/s}$
 **Vastaus:** $0{,}42\,\text{m/s}$, kaksi merkitsevää numeroa, koska aikojen erotus $6{,}0\,\text{s}$ on annettu kahdella numerolla.
 **Järkevyys:** Pisteiden välillä on kulunut $6{,}0\,\text{s}$ ja matka kasvanut vajaat kolme metriä, joten nopeus on noin $\tfrac{2{,}5\,\text{m}}{6\,\text{s}} \approx 0{,}4\,\text{m/s}$. Suora leikkaa matka-akselin kohdassa $s_0 = 0{,}90\,\text{m} - 0{,}42\,\text{m/s} \cdot 2{,}0\,\text{s} \approx 0{,}06\,\text{m}$ eli kulkee lähes origon kautta.
 
 ## fy1-8-L2-04
-**Annettu:** hypoteesin ennustama nopeus $v_\text{enn} = 0{,}50\,\text{m/s}$, mitattu nopeus $v_\text{mit} = 0{,}42\,\text{m/s}$
+**Annettu:** hypoteesin ennustama nopeus $v_\text{enn} = 0{,}500\,\text{m/s}$, mitattu nopeus $v_\text{mit} = 0{,}420\,\text{m/s}$
 **Kysytty:** mitatun arvon poikkeama ennustetusta prosentteina
 **Periaate:** Hypoteesia testataan vertaamalla mittausta sen ennusteeseen. Poikkeama suhteutetaan ennusteeseen, jotta ero voidaan verrata mittauksen epävarmuuteen riippumatta yksiköstä.
 **Kaava:** $\delta = \dfrac{\left| v_\text{enn} - v_\text{mit} \right|}{v_\text{enn}}$
 **Muunnokset:** Kummatkin nopeudet ovat yksikössä $\text{m/s}$, joten yksiköt supistuvat. Osamäärä kerrotaan sadalla prosenteiksi.
-**Sijoitus:** $\delta = \dfrac{\left| 0{,}50\,\text{m/s} - 0{,}42\,\text{m/s} \right|}{0{,}50\,\text{m/s}} = \dfrac{0{,}08}{0{,}50} = 0{,}16 = 16\,\%$
-**Vastaus:** $16\,\%$, kaksi merkitsevää numeroa kuten nopeuksissa.
-**Järkevyys:** Mitattu nopeus on alle ennusteen, ja ero $0{,}08\,\text{m/s}$ on noin kuudesosa ennusteesta ($\tfrac{1}{6} \approx 17\,\%$). Jos nopeuden epävarmuus olisi vain muutaman prosentin, ero olisi liian suuri sattumalle, ja hypoteesi olisi syytä hylätä tai tarkistaa.
+**Sijoitus:** $\delta = \dfrac{\left| 0{,}500\,\text{m/s} - 0{,}420\,\text{m/s} \right|}{0{,}500\,\text{m/s}} = \dfrac{0{,}080}{0{,}500} = 0{,}16 = 16\,\%$
+**Vastaus:** $16\,\%$, kaksi merkitsevää numeroa kuten nopeuksien erotuksessa $0{,}080\,\text{m/s}$.
+**Järkevyys:** Mitattu nopeus on alle ennusteen, ja ero $0{,}080\,\text{m/s}$ on noin kuudesosa ennusteesta ($\tfrac{1}{6} \approx 17\,\%$). Jos nopeuden epävarmuus olisi vain muutaman prosentin, ero olisi liian suuri sattumalle, ja hypoteesi olisi syytä hylätä tai tarkistaa.
 
 ## fy1-8-L3-01
 **Annettu:** jyrkimmän suoran kulmakerroin $v_\text{max} = 0{,}463\,\text{m/s}$, loivimman $v_\text{min} = 0{,}397\,\text{m/s}$
@@ -102,9 +102,9 @@
 **Annettu:** lämpötilat $80{,}0\,{}^\circ\text{C}$ ajanhetkellä $0\,\text{min}$, $68{,}0\,{}^\circ\text{C}$ hetkellä $5{,}0\,\text{min}$, $52{,}0\,{}^\circ\text{C}$ hetkellä $15{,}0\,\text{min}$ ja $47{,}0\,{}^\circ\text{C}$ hetkellä $20{,}0\,\text{min}$
 **Kysytty:** laskunopeuksien erotus ensimmäisen ja viimeisen viiden minuutin aikana yksikössä $\text{K/min}$
 **Periaate:** Hypoteesi "lämpötila laskee tasaisesti" ennustaa saman laskunopeuden joka kohdassa. Siksi lasketaan laskunopeus kahdessa jaksossa ja verrataan niitä. Lämpötilan muutos on sama kelvineinä ja celsiusasteina.
-**Kaava:** $r = \dfrac{T_\text{alku} - T_\text{loppu}}{\Delta t}$ ja $\Delta r = r_1 - r_2$
+**Kaava:** $r = \dfrac{T_\text{alku} - T_\text{loppu}}{t_\text{loppu} - t_\text{alku}}$ ja erotus $r_1 - r_2$
 **Muunnokset:** Lämpötilan lasku celsiusasteina on yhtä suuri kuin kelvineinä, joten $1\,{}^\circ\text{C}$:n muutos on $1\,\text{K}$ eikä muunnosta tarvita.
-**Sijoitus:** $r_1 = \dfrac{80{,}0\,{}^\circ\text{C} - 68{,}0\,{}^\circ\text{C}}{5{,}0\,\text{min}} = \dfrac{12{,}0\,\text{K}}{5{,}0\,\text{min}} = 2{,}4\,\text{K/min}$ ja $r_2 = \dfrac{52{,}0\,{}^\circ\text{C} - 47{,}0\,{}^\circ\text{C}}{5{,}0\,\text{min}} = \dfrac{5{,}0\,\text{K}}{5{,}0\,\text{min}} = 1{,}0\,\text{K/min}$, joten $\Delta r = 2{,}4\,\text{K/min} - 1{,}0\,\text{K/min} = 1{,}4\,\text{K/min}$
+**Sijoitus:** $r_1 = \dfrac{80{,}0\,{}^\circ\text{C} - 68{,}0\,{}^\circ\text{C}}{5{,}0\,\text{min}} = \dfrac{12{,}0\,\text{K}}{5{,}0\,\text{min}} = 2{,}4\,\text{K/min}$ ja $r_2 = \dfrac{52{,}0\,{}^\circ\text{C} - 47{,}0\,{}^\circ\text{C}}{5{,}0\,\text{min}} = \dfrac{5{,}0\,\text{K}}{5{,}0\,\text{min}} = 1{,}0\,\text{K/min}$, joten $r_1 - r_2 = 2{,}4\,\text{K/min} - 1{,}0\,\text{K/min} = 1{,}4\,\text{K/min}$
 **Vastaus:** $1{,}4\,\text{K/min}$, kaksi merkitsevää numeroa, koska aikavälit $5{,}0\,\text{min}$ ja viimeisen jakson lasku $5{,}0\,\text{K}$ on annettu kahdella merkitsevällä numerolla.
 **Järkevyys:** Ensimmäinen laskunopeus on yli kaksinkertainen viimeiseen verrattuna, eikä tämä ero voi johtua pelkästä lukeman epävarmuudesta, joka on lukemien tarkkuuden perusteella noin $0{,}1\,\text{K}$. Hypoteesi tasaisesta laskusta ei siis päde: lämpötila laskee sitä hitaammin, mitä lähempänä huoneen lämpötilaa vesi on.
 
@@ -156,7 +156,7 @@
 ## fy1-8-L2-07
 **Annettu:** taulukon pisteet $(t;\,s)$ = $(0{,}0\,\text{s};\,0{,}00\,\text{m})$, $(2{,}0\,\text{s};\,0{,}62\,\text{m})$, $(4{,}0\,\text{s};\,1{,}18\,\text{m})$, $(6{,}0\,\text{s};\,1{,}83\,\text{m})$, $(8{,}0\,\text{s};\,2{,}39\,\text{m})$; oppilaan lukema kulmakerroin on $3{,}3$
 **Kysytty:** auton nopeus $v$ yksikössä $\text{m/s}$ ja se, mitä luku $3{,}3$ kuvaa
-**Periaate:** Tasaisessa liikkeessä $s = vt$, joten kun aika on vaaka-akselilla ja matka pystyakselilla, suoran kulmakerroin on nopeus. Oppilas vaihtoi akselit: kun matka on vaaka-akselilla, kulmakerroin on $\Delta t : \Delta s = 1 : v$ eli nopeuden käänteisluku. Lisäksi akselilta puuttuivat suureet ja yksiköt, joten lukemalle $3{,}3$ ei voi antaa merkitystä.
+**Periaate:** Tasaisessa liikkeessä $s = vt$, joten kun aika on vaaka-akselilla ja matka pystyakselilla, suoran kulmakerroin on nopeus. Oppilas vaihtoi akselit: kun matka on vaaka-akselilla, kulmakerroin on $(t_2 - t_1) : (s_2 - s_1) = 1 : v$ eli nopeuden käänteisluku. Lisäksi akselilta puuttuivat suureet ja yksiköt, joten lukemalle $3{,}3$ ei voi antaa merkitystä.
 **Kuvaajan lukeminen:** Pisteet ovat lähes suoralla, joka kulkee origon kautta. Sovitettu suora kulkee esimerkiksi pisteiden $(2{,}0\,\text{s};\,0{,}60\,\text{m})$ ja $(8{,}0\,\text{s};\,2{,}40\,\text{m})$ kautta. Kulmakerroin luetaan kahdesta suoran pisteestä, ei kahdesta vierekkäisestä mittauspisteestä.
 **Kaava:** $v = \dfrac{s_2 - s_1}{t_2 - t_1}$
 **Muunnokset:** Matka on metreinä ja aika sekunteina, joten muunnoksia ei tarvita.
@@ -167,17 +167,17 @@
 **Annettu:** $\bar{t}_{50} = 3{,}12\,\text{s} \pm 0{,}04\,\text{s}$, $\bar{t}_{200} = 3{,}08\,\text{s} \pm 0{,}04\,\text{s}$; käsiajanoton epävarmuus $\Delta t_\text{käsi} = 0{,}15\,\text{s}$; pohdinnan väitteet ”koe onnistui hyvin”, ”hypoteesi oli oikein” ja ”virheitä oli vähän”
 **Kysytty:** kuinka moninkertainen $\Delta t_\text{käsi}$ on keskiarvojen erotukseen verrattuna, ja mitkä väitteet aineisto tukee
 **Periaate:** Pohdinta arvioi, mitä tulokset osoittavat ja kuinka luotettavia ne ovat. Ero voidaan osoittaa vain, jos epävarmuusvälit eivät mene päällekkäin eli jos ero on suurempi kuin epävarmuuksien summa. Kokeen ei sanota todistavan hypoteesia varmaksi, eikä lauseen ”virheitä oli vähän” pidä jäädä ilman lukuja.
-**Kaava:** $\Delta \bar{t} = \bar{t}_{50} - \bar{t}_{200}$ ja suhde $k = \dfrac{\Delta t_\text{käsi}}{\Delta \bar{t}}$
+**Kaava:** erotus $d = \bar{t}_{50} - \bar{t}_{200}$ ja suhde $k = \dfrac{\Delta t_\text{käsi}}{d}$
 **Muunnokset:** Kaikki ajat ovat sekunteina, joten muunnoksia ei tarvita.
-**Sijoitus:** $\Delta \bar{t} = 3{,}12\,\text{s} - 3{,}08\,\text{s} = 0{,}04\,\text{s}$, joten $k = \dfrac{0{,}15\,\text{s}}{0{,}04\,\text{s}} = 3{,}75 \approx 3{,}8$. Välit ovat $3{,}08$–$3{,}16\,\text{s}$ ja $3{,}04$–$3{,}12\,\text{s}$, ja ne menevät päällekkäin välillä $3{,}08$–$3{,}12\,\text{s}$.
+**Sijoitus:** $d = 3{,}12\,\text{s} - 3{,}08\,\text{s} = 0{,}04\,\text{s}$, joten $k = \dfrac{0{,}15\,\text{s}}{0{,}04\,\text{s}} = 3{,}75 \approx 3{,}8$. Välit ovat $3{,}08$–$3{,}16\,\text{s}$ ja $3{,}04$–$3{,}12\,\text{s}$, ja ne menevät päällekkäin välillä $3{,}08$–$3{,}12\,\text{s}$.
 **Vastaus:** noin $3{,}8$ kertaa. Aineisto ei tue väitettä ”hypoteesi oli oikein”, koska erotus $0{,}04\,\text{s}$ on yhtä suuri kuin epävarmuus $0{,}04\,\text{s}$ ja välit menevät päällekkäin; pienempi keskiarvo ei yksin riitä. Väite ”virheitä oli vähän” ei myöskään pidä: käsiajanoton epävarmuus on moninkertainen eroon nähden. Väite ”koe onnistui hyvin” on liian vahva, koska koe ei pystynyt osoittamaan eroa. Parempia lauseita: ”Keskiarvojen erotus $0{,}04\,\text{s}$ on yhtä suuri kuin epävarmuus $0{,}04\,\text{s}$, joten aineisto ei osoita pallojen kulkuaikojen eroa; tämä ei kuitenkaan todista, ettei massalla ole vaikutusta.” ja ”Käsiajanoton epävarmuus $0{,}15\,\text{s}$ on noin $3{,}8$-kertainen erotukseen nähden, joten jatkossa kannattaa käyttää valokennoa ja lisätä toistoja.”
 **Järkevyys:** Kun käsikellon epävarmuus on moninkertainen mitattuun eroon nähden, pieni ero ($0{,}04\,\text{s}$, noin $1{,}3\,\%$ ajasta) ei voi erottua mittausvirheestä. Johtopäätös ”ei osoitettavaa eroa” on siksi sopivan varovainen. Poikkeavaa mittausta ei poistettu eikä hypoteesia julistettu varmaksi.
 ## fy1-8-L3-05
 **Annettu:** esikokeen lämpötilat lasiastiassa: $80{,}0\,{}^\circ\text{C}$ hetkellä $0{,}0\,\text{min}$ ja $74{,}0\,{}^\circ\text{C}$ hetkellä $3{,}0\,\text{min}$; laskun epävarmuus $\Delta T_\text{lasku} = 1{,}0\,\text{K}$, suurin sallittu suhteellinen epävarmuus $\varepsilon_\text{max} = 5{,}0\,\%$
 **Kysytty:** mittausjakson vähimmäispituus $t$ yksikössä $\text{min}$ sekä kolme vakioitavaa suuretta ja jäähtymiskäyrien vertailutapa
 **Periaate:** Alun jäähtymisnopeus arvioidaan taulukon kolmen ensimmäisen minuutin muutoksesta. Suhteellinen epävarmuus pysyy rajassa vain, jos mitattu lasku on tarpeeksi suuri epävarmuuteen nähden, samoin kuin aikamittauksessa, jossa ajan epävarmuus on vakio. Ensin lasketaan pienin riittävä lasku ja sitten aika, jossa vesi jäähtyy tämän verran alun nopeudella.
-**Kaava:** $r = \dfrac{T_\text{alku} - T_3}{\Delta t}$, $\;\varepsilon = \dfrac{\Delta T_\text{lasku}}{T_\text{lasku}} \le \varepsilon_\text{max}$, josta $T_\text{lasku} \ge \dfrac{\Delta T_\text{lasku}}{\varepsilon_\text{max}}$ ja $t = \dfrac{T_\text{lasku}}{r}$
+**Kaava:** $r = \dfrac{T_\text{alku} - T_3}{t_3 - t_\text{alku}}$, $\;\varepsilon = \dfrac{\Delta T_\text{lasku}}{T_\text{lasku}} \le \varepsilon_\text{max}$, josta $T_\text{lasku} \ge \dfrac{\Delta T_\text{lasku}}{\varepsilon_\text{max}}$ ja $t = \dfrac{T_\text{lasku}}{r}$
 **Muunnokset:** Prosentti on sadasosa: $5{,}0\,\% = 0{,}050$. Lämpötilan lasku on sama kelvineinä ja celsiusasteina, joten $\text{K}$ sopii yksikkönä.
 **Sijoitus:** $r = \dfrac{80{,}0\,{}^\circ\text{C} - 74{,}0\,{}^\circ\text{C}}{3{,}0\,\text{min}} = \dfrac{6{,}0\,\text{K}}{3{,}0\,\text{min}} = 2{,}0\,\text{K/min}$. Sitten $T_\text{lasku} \ge \dfrac{1{,}0\,\text{K}}{0{,}050} = 20\,\text{K}$, joten $t = \dfrac{20\,\text{K}}{2{,}0\,\text{K/min}} = 10\,\text{min}$.
-**Vastaus:** vähintään $10\,\text{min}$, kaksi merkitsevää numeroa kuten annetuissa arvoissa. Vakioitavia suureita: vesimäärä (muuten lämpökapasiteetti ja pinta-ala muuttuvat), veden alkulämpötila (jäähtymisnopeus riippuu lämpötilaerosta huoneeseen) ja ympäristö eli huoneen lämpötila ja ilmavirta sekä kansi tai ei kantta. Käyrät piirretään samaan kuvaajaan, ja niitä verrataan alun kulmakertoimilla (laskunopeus samalla lämpötilan laskulla $T_\text{lasku}$, esimerkiksi ensimmäisen $20\,\text{K}$ laskun aikana) epävarmuus huomioiden.
+**Vastaus:** vähintään $10\,\text{min}$, kaksi merkitsevää numeroa kuten aikavälissä $3{,}0\,\text{min}$ ja epävarmuudessa $1{,}0\,\text{K}$. Vakioitavia suureita: vesimäärä (muuten lämpökapasiteetti ja pinta-ala muuttuvat), veden alkulämpötila (jäähtymisnopeus riippuu lämpötilaerosta huoneeseen) ja ympäristö eli huoneen lämpötila ja ilmavirta sekä kansi tai ei kantta. Käyrät piirretään samaan kuvaajaan, ja niitä verrataan alun kulmakertoimilla (laskunopeus samalla lämpötilan laskulla $T_\text{lasku}$, esimerkiksi ensimmäisen $20\,\text{K}$ laskun aikana) epävarmuus huomioiden.
 **Järkevyys:** Lämpötilan laskun pitää olla $20\,\text{K}$, mikä on 20 kertaa epävarmuus $1{,}0\,\text{K}$, joten suhteellinen epävarmuus on $\tfrac{1}{20} = 5\,\%$. Todellisuudessa jäähtyminen hidastuu (vrt. aiempi jäähtymistehtävä), ja hitaimmin jäähtyvässä astiassa lasku on pienempi, joten $10\,\text{min}$ on alaraja: jakso kannattaa suunnitella pidemmäksi ja tarkistaa esikokeella.

@@ -90,14 +90,14 @@
 **Järkevyys:** Peukalosääntö: kolme sekuntia vastaa noin kilometriä, joten viisi sekuntia vastaa noin $1{,}7\,\text{km}$. Valo kulkisi tämän matkan ajassa $1715\,\text{m} : (3{,}0 \cdot 10^{8}\,\text{m/s}) \approx 6\,\mu\text{s}$, mikä on mitätön viiveeseen $5{,}0\,\text{s}$ verrattuna.
 
 ## fy1-5-L3-01
-**Annettu:** $s_0 = 119{,}7\,\text{AU}$ hetkellä $t = 0$ (5. marraskuuta 2018), $v = 15{,}341\,\text{km/s}$, $s = 150\,\text{AU}$, $1\,\text{AU} = 149\,597\,870{,}7\,\text{km}$, $1\,\text{vrk} = 86\,400\,\text{s}$
+**Annettu:** $s_0 = 119{,}0\,\text{AU}$ hetkellä $t = 0$ (5. marraskuuta 2018), $v = 15{,}341\,\text{km/s}$, $s = 150\,\text{AU}$, $1\,\text{AU} = 149\,597\,870{,}7\,\text{km}$, $1\,\text{vrk} = 86\,400\,\text{s}$
 **Kysytty:** aika $t$ vuorokausina, kun luotain on etäisyydellä $150\,\text{AU}$
 **Periaate:** Nopeus oletetaan vakioksi, joten tasaisen liikkeen malli $s = s_0 + vt$ pätee. Tulos on mallin arvo, koska Auringon vetovoima hidastaa luotainta hieman ja todellinen aika on siksi vähän pidempi.
 **Kaava:** $s = s_0 + vt$, josta $t = \dfrac{s - s_0}{v}$
-**Muunnokset:** Nopeus tähtitieteellisiksi yksiköiksi vuorokaudessa: $v = 15{,}341\,\tfrac{\text{km}}{\text{s}} \cdot 86\,400\,\tfrac{\text{s}}{\text{vrk}} = 1\,325\,462\,\tfrac{\text{km}}{\text{vrk}}$, ja $\dfrac{1\,325\,462\,\text{km/vrk}}{149\,597\,870{,}7\,\text{km/AU}} = 0{,}0088602\,\tfrac{\text{AU}}{\text{vrk}}$.
-**Sijoitus:** $t = \dfrac{150\,\text{AU} - 119{,}7\,\text{AU}}{0{,}0088602\,\text{AU/vrk}} = \dfrac{30{,}3\,\text{AU}}{0{,}0088602\,\text{AU/vrk}} = 3419{,}8\,\text{vrk}$
-**Vastaus:** $3420\,\text{vrk}$, kolme merkitsevää numeroa, kun $150\,\text{AU}$ tulkitaan kolmen numeron tarkkuudella ja erotus on $30{,}3\,\text{AU}$.
-**Järkevyys:** Vauhti on noin $3{,}2\,\text{AU}$ vuodessa, joten $30{,}3\,\text{AU}$ vie noin $30{,}3 : 3{,}2 \approx 9{,}5$ vuotta. Tulos $3420\,\text{vrk} \approx 9{,}4$ vuotta sopii tähän ja ajoittuu maaliskuuhun 2028. Malli poikkeaa JPL:n arvosta noin $0{,}2\,\text{AU}$, mikä vastaa noin 20 vuorokauden virhettä ajankohdassa.
+**Muunnokset:** Nopeus tähtitieteellisiksi yksiköiksi vuorokaudessa sijoittamalla $1\,\text{km} = \tfrac{1}{149\,597\,870{,}7}\,\text{AU}$ ja $1\,\text{s} = \tfrac{1}{86\,400}\,\text{vrk}$: $v = 15{,}341\,\tfrac{\text{km}}{\text{s}} = \dfrac{15{,}341 \cdot \tfrac{1}{149\,597\,870{,}7}\,\text{AU}}{\tfrac{1}{86\,400}\,\text{vrk}} = 0{,}0088602\,\tfrac{\text{AU}}{\text{vrk}}$.
+**Sijoitus:** $t = \dfrac{150\,\text{AU} - 119{,}0\,\text{AU}}{0{,}0088602\,\text{AU/vrk}} = \dfrac{31{,}0\,\text{AU}}{0{,}0088602\,\text{AU/vrk}} = 3498{,}8\,\text{vrk}$
+**Vastaus:** $3{,}50 \cdot 10^{3}\,\text{vrk}$ eli noin $3500\,\text{vrk}$, kolme merkitsevää numeroa: $150\,\text{AU}$ on tarkka raja-arvo, ja erotus $31{,}0\,\text{AU}$ on kolmen numeron tarkkuudella.
+**Järkevyys:** Vauhti on noin $3{,}2\,\text{AU}$ vuodessa, joten $31{,}0\,\text{AU}$ vie noin $31{,}0 : 3{,}2 \approx 9{,}7$ vuotta. Tulos $3500\,\text{vrk} \approx 9{,}6$ vuotta sopii tähän ja ajoittuu kesäkuuhun 2028. Malli ja havainto täsmäävät noin $1\,\text{AU}$:n tarkkuudella (ks. esimerkki), ja $1\,\text{AU}$ vastaa noin $110\,\text{vrk}$:n eroa ajankohdassa, joten ajankohta on suuntaa antava.
 
 ## fy1-5-L3-02
 **Annettu:** etäisyys $d = 150\,\text{AU}$, signaalin nopeus $c = 299\,792\,458\,\text{m/s}$, $1\,\text{AU} = 149\,597\,870{,}7\,\text{km}$
@@ -106,7 +106,7 @@
 **Kaava:** $2d = ct$, josta $t = \dfrac{2d}{c}$
 **Muunnokset:** $d = 150 \cdot 149\,597\,870{,}7\,\text{km} = 2{,}2440 \cdot 10^{10}\,\text{km} = 2{,}2440 \cdot 10^{13}\,\text{m}$. Lopuksi $1\,\text{h} = 3600\,\text{s}$.
 **Sijoitus:** $t = \dfrac{2 \cdot 2{,}2440 \cdot 10^{13}\,\text{m}}{299\,792\,458\,\text{m/s}} = 1{,}497 \cdot 10^{5}\,\text{s} = \dfrac{1{,}497 \cdot 10^{5}\,\text{s}}{3600\,\text{s/h}} = 41{,}58\,\text{h}$
-**Vastaus:** $41{,}6\,\text{h}$, kolme merkitsevää numeroa, kun etäisyys $150\,\text{AU}$ tulkitaan kolmen numeron tarkkuudella.
+**Vastaus:** $41{,}6\,\text{h}$. Annetut arvot ovat tarkkoja (oletettu etäisyys $150\,\text{AU}$ sekä määritelmän mukaiset valon nopeus ja $1\,\text{AU}$), joten tarkkuus valitaan: kolme merkitsevää numeroa riittää.
 **Järkevyys:** Valo kulkee yhden AU:n noin $499\,\text{s} \approx 8{,}3\,\text{min}$, joten $150\,\text{AU}$ vie noin $150 \cdot 8{,}3\,\text{min} \approx 1250\,\text{min} \approx 20{,}8\,\text{h}$ ja edestakaisin $41{,}6\,\text{h}$. Yli vuorokauden viive on järkevä, koska luotain on kymmeniä miljardeja kilometrejä päässä.
 
 ## fy1-5-L3-03
@@ -167,10 +167,10 @@
 **Järkevyys:** Matka kolminkertaistui: $3{,}0\,\text{m} \cdot 3 = 9{,}0\,\text{m}$. Oppilaan vastaus $33\,\text{m}$ vaatisi kärryltä matkan $25\,\text{m}$ kuudessa sekunnissa eli nopeuden $4{,}2\,\text{m/s}$, mikä on eri nopeus kuin annetuista tiedoista saatu $1{,}5\,\text{m/s}$.
 
 ## fy1-5-L2-07
-**Annettu:** nopeus noin $v = 0{,}80\,\text{m/s}$, ajanoton epävarmuus $u_t = 0{,}2\,\text{s}$ (sama kaikilla ajoilla), suhteellisen epävarmuuden raja $2{,}0\,\%$
+**Annettu:** nopeus noin $v = 0{,}80\,\text{m/s}$, ajanoton epävarmuus $\Delta t = 0{,}2\,\text{s}$ (sama kaikilla ajoilla; tässä $\Delta t$ on epävarmuus, ei aikaväli), suhteellisen epävarmuuden raja $2{,}0\,\%$
 **Kysytty:** pienin matka $s$ metreinä
-**Periaate:** Ajan suhteellinen epävarmuus on $u_t : t$. Koska $u_t$ on vakio, suhteellinen epävarmuus pienenee, kun mitattu aika kasvaa. Raja antaa pienimmän ajan, ja tasaisessa liikkeessä matka on nopeus kertaa aika.
-**Kaava:** $\dfrac{u_t}{t} \le 0{,}020$, josta $t \ge \dfrac{u_t}{0{,}020}$, ja $s = vt$
+**Periaate:** Ajan suhteellinen epävarmuus on $\varepsilon = \Delta t : t$. Koska $\Delta t$ on vakio, suhteellinen epävarmuus pienenee, kun mitattu aika kasvaa. Raja antaa pienimmän ajan, ja tasaisessa liikkeessä matka on nopeus kertaa aika.
+**Kaava:** $\varepsilon = \dfrac{\Delta t}{t} \le 0{,}020$, josta $t \ge \dfrac{\Delta t}{0{,}020}$, ja $s = vt$
 **Muunnokset:** Ei tarvita: ajat ovat sekunteina ja nopeus m/s. Prosentti on $2{,}0\,\% = 0{,}020$.
 **Sijoitus:** $t \ge \dfrac{0{,}2\,\text{s}}{0{,}020} = 10\,\text{s}$ ja $s = 0{,}80\,\tfrac{\text{m}}{\text{s}} \cdot 10\,\text{s} = 8{,}0\,\text{m}$
 **Vastaus:** Auton on kuljettava vähintään $8{,}0\,\text{m}$. Pitkä matka parantaa mittausta, koska se kestää kauemmin ja ajanoton epävarmuus $0{,}2\,\text{s}$ on silloin pienempi osa koko ajasta. Lyhyellä matkalla, esimerkiksi $1{,}0\,\text{m}$ ($t = 1{,}25\,\text{s}$), suhteellinen epävarmuus olisi $16\,\%$.

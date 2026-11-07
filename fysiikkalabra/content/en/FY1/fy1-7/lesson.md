@@ -262,6 +262,8 @@ In a calculation, keep all quantities in the same system of units. The volume co
 | lead | 11 300 | 11.3 |
 | gold | 19 300 | 19.3 |
 
+The values in the table are at room temperature, the value for ice at $0\,{}^\circ\text{C}$. The density of wood varies with its moisture and quality, so the value for pine is a typical value.
+
 ### Measuring volume
 
 The volume of a regular object is calculated from its dimensions: the volume of a cube is $a^3$ and the volume of a rectangular block is the area of the base times the height. The volume of an irregular object is measured by displacement of water: the object is fully submerged in the water in a measuring cylinder, and its volume is the difference of the cylinder readings, $V = V_2 - V_1$.

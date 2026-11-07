@@ -221,9 +221,9 @@ Todellisissa mittaussarjoissa mittauspisteet eivät yleensä sijaitse täsmälle
 Hyvä sovitus on lähellä kaikkia pisteitä, eikä se painotu yhden pisteen mukaan. Pisteitä on suoran molemmin puolin suunnilleen yhtä monta, ja ylä- ja alapuolen poikkeamat kumoavat toisensa. Suoran ei tarvitse kulkea yhdenkään pisteen kautta. Jos jokin piste on selvästi muita kauempana, sen syy kannattaa selvittää, eikä pistettä suljeta automaattisesti pois.
 
 ### Lineaarinen malli
-Jos pisteet asettuvat likimain suoralle, suureiden riippuvuutta kuvaa lineaarinen malli, jonka yhtälö on suoran yhtälö. Kulmakerroin kertoo, kuinka paljon pystysuure muuttuu, kun vaakasuure kasvaa yhden yksikön, ja vakiotermi kertoo pystysuureen arvon, kun vaakasuure on nolla.
+Jos pisteet asettuvat likimain suoralle, suureiden riippuvuutta kuvaa lineaarinen malli, jonka yhtälö on suoran yhtälö. Kulmakerroin kertoo, kuinka paljon pystysuure muuttuu, kun vaakasuure kasvaa yhden yksikön, ja vakiotermi kertoo pystysuureen arvon, kun vaakasuure on nolla. Lineaarinen malli on fysikaalinen malli eli mittauksiin perustuva yksinkertaistettu kuvaus ilmiöstä: kuvaaja on sen graafinen malli ja suoran yhtälö sen matemaattinen malli, ja koska yhtälö antaa lukuarvoja, malli on kvantitatiivinen.
 
-Kun vakiotermi on nolla, suora kulkee origon kautta ja suureet ovat suoraan verrannolliset: kaksinkertainen $x$ antaa kaksinkertaisen $y$:n. Mittaukset tukevat mallia vain mitatulla alueella. Jos suoraa jatketaan mitatun alueen ulkopuolelle, oletetaan, että riippuvuus pysyy samanlaisena, ja tulos on vain arvio. Jos pisteet kaareutuvat systemaattisesti suoran ympärillä, esimerkiksi päiden pisteet ovat suoran yläpuolella ja keskikohdan pisteet sen alapuolella, lineaarinen malli ei sovi.
+Kun vakiotermi on nolla, suora kulkee origon kautta ja suureet ovat suoraan verrannolliset: kaksinkertainen $x$ antaa kaksinkertaisen $y$:n. Mittaukset tukevat mallia vain mitatulla alueella, joten arvon arvioiminen mitattujen pisteiden väliltä (interpolointi) on perusteltua. Jos suoraa jatketaan mitatun alueen ulkopuolelle (ekstrapolointi), oletetaan, että riippuvuus pysyy samanlaisena, ja tulos on vain arvio. Jos pisteet kaareutuvat systemaattisesti suoran ympärillä, esimerkiksi päiden pisteet ovat suoran yläpuolella ja keskikohdan pisteet sen alapuolella, lineaarinen malli ei sovi.
 
 ## Kaava: Suoran yhtälö
 Lineaarisen mallin kuvaaja on suora, jonka yhtälö on
@@ -358,7 +358,7 @@ Sovita mittauspisteisiin suora, määritä sen yhtälö $T = kt + b$ ja päätte
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Kuvaajassa on kuusi mittauspistettä, ja sovitettu suora on piirretty niiden joukon keskeltä. Suoralta luetaan kaksi kaukana toisistaan olevaa pistettä: $A = (t_1;\ T_1) = (0{,}0\,\text{min};\ 20{,}0\,{}^\circ\text{C})$ ja $B = (t_2;\ T_2) = (5{,}0\,\text{min};\ 60{,}0\,{}^\circ\text{C})$. Kysytään kulmakerrointa $k$, vakiotermiä $b$ ja aikaa $t$, jolla $T = 40\,{}^\circ\text{C}$.
+**Tunnetut ja kysytty.** Kuvaajassa on kuusi mittauspistettä, ja sovitettu suora on piirretty niiden joukon keskeltä. Suoralta luetaan kaksi kaukana toisistaan olevaa pistettä: $A = (t_1;\ T_1) = (0\,\text{min};\ 20\,{}^\circ\text{C})$ ja $B = (t_2;\ T_2) = (5{,}0\,\text{min};\ 60\,{}^\circ\text{C})$. Kysytään kulmakerrointa $k$, vakiotermiä $b$ ja aikaa $t$, jolla $T = 40\,{}^\circ\text{C}$.
 
 <!-- vaihe -->
 
@@ -385,13 +385,13 @@ Sovita mittauspisteisiin suora, määritä sen yhtälö $T = kt + b$ ja päätte
 ```latex
 \begin{aligned}
 k &= \frac{T_2 - T_1}{t_2 - t_1} \\
-&= \frac{60{,}0\,{}^\circ\text{C} - 20{,}0\,{}^\circ\text{C}}{5{,}0\,\text{min} - 0{,}0\,\text{min}} \\
+&= \frac{60\,{}^\circ\text{C} - 20\,{}^\circ\text{C}}{5{,}0\,\text{min} - 0\,\text{min}} \\
 &= 8{,}0\,\tfrac{{}^\circ\text{C}}{\text{min}} \\[6pt]
 b &= T_1 - k t_1 \\
-&= 20{,}0\,{}^\circ\text{C} - 8{,}0\,\tfrac{{}^\circ\text{C}}{\text{min}} \cdot 0{,}0\,\text{min} \\
-&= 20{,}0\,{}^\circ\text{C} \\[6pt]
+&= 20\,{}^\circ\text{C} - 8{,}0\,\tfrac{{}^\circ\text{C}}{\text{min}} \cdot 0\,\text{min} \\
+&= 20\,{}^\circ\text{C} \\[6pt]
 t &= \frac{T - b}{k} \\
-&= \frac{40\,{}^\circ\text{C} - 20{,}0\,{}^\circ\text{C}}{8{,}0\,\tfrac{{}^\circ\text{C}}{\text{min}}} \\
+&= \frac{40\,{}^\circ\text{C} - 20\,{}^\circ\text{C}}{8{,}0\,\tfrac{{}^\circ\text{C}}{\text{min}}} \\
 &= 2{,}5\,\text{min}
 \end{aligned}
 ```

@@ -16,7 +16,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "At a recycling point there are two grey metal cubes on the table. They are exactly the same size, but one feels much heavier in your hand than the other. One is aluminium and the other is iron, but the cubes have no markings. On the table there are a balance and a ruler.",
+      "text": "At a recycling point there are two grey metal cubes on the table. They are exactly the same size, but one feels much heavier in your hand than the other. The cubes have no markings, and nobody knows which metal they are made of. On the table there are a balance and a ruler.",
       "question": "Which quantities of the cubes should you measure so that you can work out what they are made of?"
     },
     {
@@ -137,7 +137,7 @@
       "type": "interpret",
       "title": "Unknown metal",
       "source": "simulated",
-      "text": "The table shows example data for pieces made of an unknown metal. The numbers are *example values*. You can calculate density in two ways: as the ratio $m : V$ of a single row, or as the ratio of the differences $\\Delta m : \\Delta V$ of two rows far apart. The latter uses the whole measuring range.\n\n| Piece | $V$ ($\\text{cm}^3$) | $m$ (g) |\n|---|---|---|\n| 1 | 5.0 | 45.1 |\n| 2 | 10.0 | 89.2 |\n| 3 | 15.0 | 135.0 |\n| 4 | 20.0 | 178.9 |\n| 5 | 25.0 | 224.3 |",
+      "text": "The table shows example data for pieces made of an unknown metal. The numbers are *example values*. You can calculate density in two ways: as the ratio $m : V$ of a single row, or as the ratio of the differences $\\Delta m : \\Delta V$ of two rows far apart. The latter uses the whole measuring range. Using two rows is a quick estimate of the slope; the most reliable value is the slope of a line fitted to all the points (the theory part of this chapter).\n\n| Piece | $V$ ($\\text{cm}^3$) | $m$ (g) |\n|---|---|---|\n| 1 | 5.0 | 45.1 |\n| 2 | 10.0 | 89.2 |\n| 3 | 15.0 | 135.0 |\n| 4 | 20.0 | 178.9 |\n| 5 | 25.0 | 224.3 |",
       "question": {
         "type": "numeric",
         "prompt": "Calculate the density of the metal using the first and last rows and the formula $\\rho = \\Delta m : \\Delta V$. Finally, compare your result with the table in the book (the theory part of this chapter): aluminium $2.70$, iron $7.87$, copper $8.96$, lead $11.3$ and gold $19.3\\,\\text{g/cm}^3$. Give your answer in $\\text{g/cm}^3$.",
@@ -159,7 +159,7 @@
             "feedback": "You divided the change in mass $179.2\\,\\text{g}$ by the volume of the last row, $25.0\\,\\text{cm}^3$. You must also take the change in volume: $25.0\\,\\text{cm}^3 - 5.0\\,\\text{cm}^3 = 20.0\\,\\text{cm}^3$."
           }
         ],
-        "solution": "**Given:** first row $V_1 = 5.0\\,\\text{cm}^3$, $m_1 = 45.1\\,\\text{g}$ and last row $V_5 = 25.0\\,\\text{cm}^3$, $m_5 = 224.3\\,\\text{g}$\n\n**Find:** the density $\\rho$ of the metal in $\\text{g/cm}^3$\n\n**Principle:** Mass is directly proportional to volume, so the measurement points lie, within the measurement uncertainty, on the line $m = \\rho V$, whose slope is the density. The slope is obtained as the ratio of the differences of two points far apart.\n\n**Formula:** $\\rho = \\dfrac{\\Delta m}{\\Delta V} = \\dfrac{m_5 - m_1}{V_5 - V_1}$\n\n**Conversions:** Not needed: the masses are in grams and the volumes in cubic centimetres, and the answer is asked in $\\text{g/cm}^3$.\n\n**Substitution:** $\\rho = \\dfrac{224.3\\,\\text{g} - 45.1\\,\\text{g}}{25.0\\,\\text{cm}^3 - 5.0\\,\\text{cm}^3} = \\dfrac{179.2\\,\\text{g}}{20.0\\,\\text{cm}^3} = 8.96\\,\\tfrac{\\text{g}}{\\text{cm}^3}$\n\n**Answer:** $8.96\\,\\tfrac{\\text{g}}{\\text{cm}^3}$, three significant figures, because the difference of the volumes, $20.0\\,\\text{cm}^3$, is known to three and the difference of the masses, $179.2\\,\\text{g}$, to four significant figures.\n\n**Reasonableness:** The value matches copper in the table, $8.96\\,\\tfrac{\\text{g}}{\\text{cm}^3}$, so the metal is probably copper. Check with a single row: $\\dfrac{224.3\\,\\text{g}}{25.0\\,\\text{cm}^3} = 8.97\\,\\tfrac{\\text{g}}{\\text{cm}^3}$, which is almost the same."
+        "solution": "**Given:** first row $V_1 = 5.0\\,\\text{cm}^3$, $m_1 = 45.1\\,\\text{g}$ and last row $V_5 = 25.0\\,\\text{cm}^3$, $m_5 = 224.3\\,\\text{g}$\n\n**Find:** the density $\\rho$ of the metal in $\\text{g/cm}^3$\n\n**Principle:** Mass is directly proportional to volume, so the measurement points lie, within the measurement uncertainty, on the line $m = \\rho V$, whose slope is the density. The slope is obtained as the ratio of the differences of two points far apart.\n\n**Formula:** $\\rho = \\dfrac{\\Delta m}{\\Delta V} = \\dfrac{m_5 - m_1}{V_5 - V_1}$\n\n**Conversions:** Not needed: the masses are in grams and the volumes in cubic centimetres, and the answer is asked in $\\text{g/cm}^3$.\n\n**Substitution:** $\\rho = \\dfrac{224.3\\,\\text{g} - 45.1\\,\\text{g}}{25.0\\,\\text{cm}^3 - 5.0\\,\\text{cm}^3} = \\dfrac{179.2\\,\\text{g}}{20.0\\,\\text{cm}^3} = 8.96\\,\\tfrac{\\text{g}}{\\text{cm}^3}$\n\n**Answer:** $8.96\\,\\tfrac{\\text{g}}{\\text{cm}^3}$, three significant figures, because the difference of the volumes, $20.0\\,\\text{cm}^3$, is known to three and the difference of the masses, $179.2\\,\\text{g}$, to four significant figures.\n\n**Reasonableness:** The value matches copper in the table, $8.96\\,\\tfrac{\\text{g}}{\\text{cm}^3}$, so the metal is probably copper. Check with a single row: $\\dfrac{224.3\\,\\text{g}}{25.0\\,\\text{cm}^3} = 8.97\\,\\tfrac{\\text{g}}{\\text{cm}^3}$, which is almost the same. The slope of the line fitted to all five points is also $8.96\\,\\tfrac{\\text{g}}{\\text{cm}^3}$, so here the estimate from two distant points is just as good."
       }
     },
     {
@@ -257,7 +257,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Apply to a new situation",
-      "prompt": "A stone found in a river has a mass of $187\\,\\text{g}$. A measuring cylinder contains $120\\,\\text{ml}$ of water, and when the stone is lowered in, the reading is $190\\,\\text{ml}$. What is the density of the substance of the stone? Give your answer in $\\text{kg/m}^3$.",
+      "prompt": "A stone found in a river has a mass of $187\\,\\text{g}$. A measuring cylinder contains $120\\,\\text{ml}$ of water, and when the stone is lowered in, the reading is $190\\,\\text{ml}$. The scale of the measuring cylinder is read to $1\\,\\text{ml}$. What is the density of the substance of the stone? Give your answer in $\\text{kg/m}^3$.",
       "answer": 2700,
       "unit": "kg/m³",
       "tolerance": 0.02,
@@ -280,7 +280,7 @@
           "feedback": "The mass is in grams and the volume in cubic metres, so the units are from different systems. Convert the mass to kilograms: $187\\,\\text{g} = 0.187\\,\\text{kg}$."
         }
       ],
-      "solution": "**Given:** mass of the stone $m = 187\\,\\text{g}$; water reading before $V_1 = 120\\,\\text{ml}$ and after $V_2 = 190\\,\\text{ml}$\n\n**Find:** the density $\\rho$ of the substance of the stone in $\\text{kg/m}^3$\n\n**Principle:** A submerged stone displaces its own volume of water, so the volume of the stone is the difference of the readings. Density is mass divided by volume.\n\n**Formula:** $V = V_2 - V_1$ and $\\rho = \\dfrac{m}{V} = \\dfrac{m}{V_2 - V_1}$\n\n**Conversions:** $V = 190\\,\\text{ml} - 120\\,\\text{ml} = 70\\,\\text{ml} = 70\\,\\text{cm}^3 = 70 \\cdot 10^{-6}\\,\\text{m}^3 = 7.0 \\cdot 10^{-5}\\,\\text{m}^3$ and $m = 187\\,\\text{g} = 187 \\cdot 10^{-3}\\,\\text{kg} = 0.187\\,\\text{kg}$.\n\n**Substitution:** $\\rho = \\dfrac{0.187\\,\\text{kg}}{7.0 \\cdot 10^{-5}\\,\\text{m}^3} = 2671\\,\\tfrac{\\text{kg}}{\\text{m}^3}$\n\n**Answer:** $2.7 \\cdot 10^3\\,\\tfrac{\\text{kg}}{\\text{m}^3}$, two significant figures, because the difference of the readings, $70\\,\\text{ml}$, is known to two figures.\n\n**Reasonableness:** Rocks are usually about 2.5 to 3 times as dense as water, and $2.7 \\cdot 10^3\\,\\text{kg/m}^3$ is in this range. Estimate: $190\\,\\text{g}$ and $70\\,\\text{cm}^3$ would give about $2.7\\,\\text{g/cm}^3$."
+      "solution": "**Given:** mass of the stone $m = 187\\,\\text{g}$; water reading before $V_1 = 120\\,\\text{ml}$ and after $V_2 = 190\\,\\text{ml}$\n\n**Find:** the density $\\rho$ of the substance of the stone in $\\text{kg/m}^3$\n\n**Principle:** A submerged stone displaces its own volume of water, so the volume of the stone is the difference of the readings. Density is mass divided by volume.\n\n**Formula:** $V = V_2 - V_1$ and $\\rho = \\dfrac{m}{V} = \\dfrac{m}{V_2 - V_1}$\n\n**Conversions:** $V = 190\\,\\text{ml} - 120\\,\\text{ml} = 70\\,\\text{ml} = 70\\,\\text{cm}^3 = 70 \\cdot 10^{-6}\\,\\text{m}^3 = 7.0 \\cdot 10^{-5}\\,\\text{m}^3$ and $m = 187\\,\\text{g} = 187 \\cdot 10^{-3}\\,\\text{kg} = 0.187\\,\\text{kg}$.\n\n**Substitution:** $\\rho = \\dfrac{0.187\\,\\text{kg}}{7.0 \\cdot 10^{-5}\\,\\text{m}^3} = 2671\\,\\tfrac{\\text{kg}}{\\text{m}^3}$\n\n**Answer:** $2.7 \\cdot 10^3\\,\\tfrac{\\text{kg}}{\\text{m}^3}$, two significant figures, because the readings are read to $1\\,\\text{ml}$, so the difference of the readings, $70\\,\\text{ml}$, is known to only two figures.\n\n**Reasonableness:** Rocks are usually about 2.5 to 3 times as dense as water, and $2.7 \\cdot 10^3\\,\\text{kg/m}^3$ is in this range. Estimate: $190\\,\\text{g}$ and $70\\,\\text{cm}^3$ would give about $2.7\\,\\text{g/cm}^3$."
     },
     {
       "id": "harjoitukset",
@@ -318,7 +318,7 @@
       "id": "check-c2",
       "stage": "tarkista",
       "type": "choice",
-      "title": "2. Density is a property of a substance",
+      "title": "2. Two iron cubes",
       "prompt": "An iron cube is replaced by another iron cube whose volume is twice as large. How do the mass and the density change?",
       "choices": [
         {

@@ -457,33 +457,6 @@ x = x_\text{reading} - \Delta x_\text{sys}
 ## Worked example
 A student measures the rolling time of a ball on a ramp with a hand stopwatch six times and gets the results $3.12\,\text{s}$, $3.25\,\text{s}$, $3.07\,\text{s}$, $3.31\,\text{s}$, $3.19\,\text{s}$ and $3.15\,\text{s}$. What is the measurement result with its error estimate, and how large is the relative uncertainty?
 
-<svg data-fig="example-plot" viewBox="0 0 600 330" role="img" aria-label="Measurement results (t, time) to scale: six results between 3.07 s and 3.31 s, mean 3.18 s and the result 3.18 s ± 0.12 s on a green bar." style="max-width:100%;font-size:24px">
-  <line x1="261" y1="150" x2="261" y2="62" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <circle cx="196" cy="138" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="332.5" cy="138" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="143.5" cy="138" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="395.5" cy="138" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="269.5" cy="138" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="227.5" cy="138" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <line x1="58" y1="150" x2="502" y2="150" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M514,150 L501,156 L501,144 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <line x1="70" y1="150" x2="70" y2="157" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="60" y="161.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$3$</div></foreignObject>
-  <line x1="175" y1="150" x2="175" y2="157" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="152.5" y="161.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$3.1$</div></foreignObject>
-  <line x1="280" y1="150" x2="280" y2="157" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="257.5" y="161.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$3.2$</div></foreignObject>
-  <line x1="385" y1="150" x2="385" y2="157" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="362.5" y="161.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$3.3$</div></foreignObject>
-  <line x1="490" y1="150" x2="490" y2="157" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="467.5" y="161.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$3.4$</div></foreignObject>
-  <foreignObject x="520" y="135.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$t\ (\text{s})$</div></foreignObject>
-  <foreignObject x="131" y="35.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\bar{t} = 3.18\,\text{s}$</div></foreignObject>
-  <rect x="134.5" y="236" width="252" height="16" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="2.5"/>
-  <line x1="261" y1="230" x2="261" y2="258" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <foreignObject x="202.5" y="277.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$t = 3.18\,\text{s} \pm 0.12\,\text{s}$</div></foreignObject>
-</svg>
-
 <!-- vaihe -->
 
 **Given and find.** The number of measurements is $n = 6$, and the smallest result is $t_\text{min} = 3.07\,\text{s}$ and the largest $t_\text{max} = 3.31\,\text{s}$. The mean $\bar{t}$, the error estimate $\Delta t$ and the relative uncertainty $\varepsilon$ are asked for.
@@ -533,6 +506,33 @@ A student measures the rolling time of a ball on a ramp with a hand stopwatch si
 <!-- vaihe -->
 
 **Reasonableness.** The interval $3.18\,\text{s} \pm 0.12\,\text{s}$, that is, $3.06\,\text{s}$–$3.30\,\text{s}$, covers five of the six results. The result $3.31\,\text{s}$ falls just outside it, which fits the fact that the error estimate is rough. The relative uncertainty is a few percent, which is usual for a hand-timed measurement. However, the repeats tell only about random error: a systematic error would be revealed only by comparison with another method of measurement.
+
+<svg data-fig="example-plot" viewBox="0 0 600 330" role="img" aria-label="Measurement results (t, time) to scale: six results between 3.07 s and 3.31 s, mean 3.18 s and the result 3.18 s ± 0.12 s on a green bar." style="max-width:100%;font-size:24px">
+  <line x1="261" y1="150" x2="261" y2="62" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <circle cx="196" cy="138" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="332.5" cy="138" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="143.5" cy="138" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="395.5" cy="138" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="269.5" cy="138" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="227.5" cy="138" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <line x1="58" y1="150" x2="502" y2="150" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M514,150 L501,156 L501,144 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="70" y1="150" x2="70" y2="157" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="60" y="161.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$3$</div></foreignObject>
+  <line x1="175" y1="150" x2="175" y2="157" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="152.5" y="161.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$3.1$</div></foreignObject>
+  <line x1="280" y1="150" x2="280" y2="157" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="257.5" y="161.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$3.2$</div></foreignObject>
+  <line x1="385" y1="150" x2="385" y2="157" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="362.5" y="161.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$3.3$</div></foreignObject>
+  <line x1="490" y1="150" x2="490" y2="157" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="467.5" y="161.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$3.4$</div></foreignObject>
+  <foreignObject x="520" y="135.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$t\ (\text{s})$</div></foreignObject>
+  <foreignObject x="131" y="35.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\bar{t} = 3.18\,\text{s}$</div></foreignObject>
+  <rect x="134.5" y="236" width="252" height="16" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="2.5"/>
+  <line x1="261" y1="230" x2="261" y2="258" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <foreignObject x="202.5" y="277.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$t = 3.18\,\text{s} \pm 0.12\,\text{s}$</div></foreignObject>
+</svg>
 
 ## Common misconception
 Many people think that a precise instrument or many repeats guarantee a correct result. Repeats reduce random error but not systematic error, and good repeatability tells nothing about accuracy. Another misconception is to regard all error as carelessness. Carelessness causes a gross error, which is looked for and left out only for a justified and recorded reason, but random and systematic error belong to the result of a skilled measurer too, and that is why they are estimated and stated. A third is to calculate a mean of numbers that are in different units: the results are converted to the same unit first.

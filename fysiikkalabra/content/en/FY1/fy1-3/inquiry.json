@@ -520,7 +520,7 @@
       "type": "numeric",
       "title": "3. Calculation",
       "prompt": "The rolling time of a ball is measured five times and the results are $2.36\\,\\text{s}$, $2.41\\,\\text{s}$, $2.38\\,\\text{s}$, $2.46\\,\\text{s}$ and $2.39\\,\\text{s}$. The error estimate is half of the range. What percentage of the mean is it?",
-      "answer": 2.1,
+      "answer": 2.08,
       "unit": "%",
       "tolerance": 0.05,
       "hints": [

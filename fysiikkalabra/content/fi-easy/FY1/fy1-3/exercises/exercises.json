@@ -29,8 +29,8 @@
     {
       "id": "fy1-3-L1-04",
       "level": 1,
-      "text": "Keittiövaaka näyttää tyhjänä lukeman $1{,}2\\,\\text{g}$, vaikka sen päällä ei ole mitään. Vaa'alle pannaan kappale, ja vaaka näyttää $48{,}7\\,\\text{g}$. Mikä on kappaleen massa?",
-      "answer": 47.5,
+      "text": "Keittiövaaka näyttää tyhjänä lukeman $0{,}9\\,\\text{g}$, vaikka sen päällä ei ole mitään. Vaa'alle pannaan kappale, ja vaaka näyttää $36{,}4\\,\\text{g}$. Mikä on kappaleen massa?",
+      "answer": 35.5,
       "unit": "g",
       "tolerance": 0.02
     },
@@ -330,8 +330,8 @@
     {
       "id": "fy1-3-L3-03",
       "level": 3,
-      "text": "Terästangon pituus tunnetaan vertailumittauksesta tarkasti: se on $8{,}00\\,\\text{cm}$. Tanko mitataan työntömitalla viisi kertaa. Lukemat ovat $8{,}24\\,\\text{cm}$, $8{,}27\\,\\text{cm}$, $8{,}25\\,\\text{cm}$, $8{,}29\\,\\text{cm}$ ja $8{,}25\\,\\text{cm}$. Laske systemaattisen virheen arvio eli keskiarvon ja oikean arvon erotus.",
-      "answer": 0.26,
+      "text": "Terästangon pituus tunnetaan vertailumittauksesta tarkasti: se on $8{,}00\\,\\text{cm}$. Tanko mitataan työntömitalla viisi kertaa. Lukemat ovat $8{,}04\\,\\text{cm}$, $8{,}07\\,\\text{cm}$, $8{,}05\\,\\text{cm}$, $8{,}09\\,\\text{cm}$ ja $8{,}05\\,\\text{cm}$. Laske systemaattisen virheen arvio eli keskiarvon ja oikean arvon erotus.",
+      "answer": 0.06,
       "unit": "cm",
       "tolerance": 0.02
     },

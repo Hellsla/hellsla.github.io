@@ -344,13 +344,13 @@
     {
       "id": "fy1-1-L3-05",
       "level": 3,
-      "text": "Voyager 2 ylitti heliopaussin 5. marraskuuta 2018 etäisyydellä $d_0 = 119{,}7\\,\\text{AU}$ Auringosta, ja sen nopeus Aurinkoon nähden on $v = 15{,}341\\,\\text{km/s}$. Tasaisen liikkeen malli on $d = d_0 + vt$.\n\nOppilas laski mallin ennusteen helmikuulle 2026, jolloin heliopaussin ylityksestä on kulunut $t = 7{,}25\\,\\text{a}$. Oppilaan ratkaisu: ”Matka on $s = vt = 15{,}341\\,\\text{km/s}\\cdot7{,}25 = 111{,}2\\,\\text{km}$. Etäisyys on $d = 119{,}7\\,\\text{AU} + 111{,}2\\,\\text{km} \\approx 119{,}7\\,\\text{AU}$. Voyager olisi siis lähes samassa paikassa kuin 2018, joten malli on väärä.”\n\nKäytä arvoja $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$ ja $1\\,\\text{a} = 3{,}156\\cdot10^{7}\\,\\text{s}$. Mittaus antoi helmikuussa 2026 arvon $143{,}05\\,\\text{AU}$.\n\nEtsi oppilaan virhe ja laske mallin oikea ennuste etäisyydelle $d$ tähtitieteellisinä yksikköinä. Selitä, miksi mittaus tukee mallia mutta ei todista, että Voyager liikkuu samalla nopeudella aina.",
+      "text": "Voyager 2 ylitti heliopaussin 5. marraskuuta 2018 etäisyydellä $d_0 = 119{,}0\\,\\text{AU}$ Auringosta (Burlaga ym. 2019, Nature Astronomy), ja sen nopeus Aurinkoon nähden oli silloin $v = 15{,}341\\,\\text{km/s}$. Tasaisen liikkeen mallissa tämä nopeus pysyy vakiona: $d = d_0 + vt$.\n\nOppilas laski mallin ennusteen helmikuulle 2026, jolloin heliopaussin ylityksestä on kulunut $t = 7{,}25\\,\\text{a}$. Oppilaan ratkaisu: ”Matka on $s = vt = 15{,}341\\,\\text{km/s}\\cdot7{,}25 = 111{,}2\\,\\text{km}$. Etäisyys on $d = 119{,}0\\,\\text{AU} + 111{,}2\\,\\text{km} \\approx 119{,}0\\,\\text{AU}$. Voyager olisi siis lähes samassa paikassa kuin 2018, joten malli on väärä.”\n\nKäytä arvoja $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$ ja $1\\,\\text{a} = 3{,}156\\cdot10^{7}\\,\\text{s}$. NASA/JPL:n lennonseurannan mukaan Voyager 2 oli helmikuussa 2026 etäisyydellä $143{,}05\\,\\text{AU}$ Maasta. Koska Maa kiertää Aurinkoa, luotaimen etäisyys Maasta poikkeaa sen etäisyydestä Auringosta enintään noin $1\\,\\text{AU}$.\n\nEtsi oppilaan virhe ja laske mallin oikea ennuste etäisyydelle $d$ tähtitieteellisinä yksikköinä. Kuinka tarkasti ennustetta ja havaintoa voi tällä tiedolla verrata? Selitä, miksi havainto tukee mallia mutta ei todista, että Voyager liikkuu samalla nopeudella aina.",
       "kind": [
         "error",
         "model",
         "reasoning"
       ],
-      "answer": 143.2,
+      "answer": 142.5,
       "unit": "AU",
       "tolerance": 0.02
     }

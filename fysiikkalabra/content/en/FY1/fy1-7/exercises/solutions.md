@@ -65,7 +65,7 @@
 **Formula:** $\rho = \dfrac{m}{V}$, so $m = \rho V$
 **Conversions:** The unit of density is $\text{kg/m}^3$, so $2.5\,\text{dm}^3 = 2.5 \cdot 10^{-3}\,\text{m}^3 = 0.0025\,\text{m}^3$, because $1\,\text{dm}^3 = 10^{-3}\,\text{m}^3$.
 **Substitution:** $m = 790\,\tfrac{\text{kg}}{\text{m}^3} \cdot 0.0025\,\text{m}^3 = 1.975\,\text{kg}$
-**Answer:** $2.0\,\text{kg}$, two significant figures like the volume $2.5\,\text{dm}^3$ and the density $790\,\tfrac{\text{kg}}{\text{m}^3}$.
+**Answer:** $2.0\,\text{kg}$, two significant figures like the volume $2.5\,\text{dm}^3$.
 **Reasonableness:** Two and a half litres of water has a mass of $2.5\,\text{kg}$. Ethanol is less dense than water, so its mass is slightly smaller, about $0.79 \cdot 2.5\,\text{kg} \approx 2.0\,\text{kg}$.
 
 ## fy1-7-L2-03
@@ -86,7 +86,7 @@
 **Formula:** $m = m_\text{tot} - m_0$ and $\rho = \dfrac{m}{V} = \dfrac{m_\text{tot} - m_0}{V}$
 **Conversions:** $m = 412\,\text{g} - 215\,\text{g} = 197\,\text{g} = 197 \cdot 10^{-3}\,\text{kg} = 0.197\,\text{kg}$ and $250\,\text{cm}^3 = 250 \cdot 10^{-6}\,\text{m}^3 = 2.50 \cdot 10^{-4}\,\text{m}^3$.
 **Substitution:** $\rho = \dfrac{0.197\,\text{kg}}{2.50 \cdot 10^{-4}\,\text{m}^3} = 788\,\tfrac{\text{kg}}{\text{m}^3}$
-**Answer:** $788\,\tfrac{\text{kg}}{\text{m}^3}$, three significant figures, because the difference of the masses, $197\,\text{g}$, and the volume, $250\,\text{cm}^3$, have been measured to three figures.
+**Answer:** $788\,\tfrac{\text{kg}}{\text{m}^3}$, three significant figures like the difference of the masses, $197\,\text{g}$. The volume of the volumetric flask, $250\,\text{cm}^3$, is an exact value, so it does not limit the precision.
 **Reasonableness:** The result is close to the density of ethanol, $790\,\tfrac{\text{kg}}{\text{m}^3}$, so the liquid is probably ethanol. If the mass of the flask had been forgotten, the wrong result would be $1650\,\tfrac{\text{kg}}{\text{m}^3}$, which would be greater than the density of water.
 
 ## fy1-7-L3-01
@@ -97,7 +97,7 @@
 $$\frac{V_\text{Al}}{V_\text{Cu}} = \frac{\rho_\text{Cu}}{\rho_\text{Al}}$$
 **Conversions:** Not needed: the densities are in the same unit and the mass $m$ cancels.
 **Substitution:** $\dfrac{V_\text{Al}}{V_\text{Cu}} = \dfrac{8960\,\tfrac{\text{kg}}{\text{m}^3}}{2700\,\tfrac{\text{kg}}{\text{m}^3}} = 3.32$
-**Answer:** $3.32$ times, three significant figures like the densities $8960\,\tfrac{\text{kg}}{\text{m}^3}$ and $2.70\cdot10^{3}\,\tfrac{\text{kg}}{\text{m}^3}$.
+**Answer:** $3.32$ times, three significant figures, because the densities in the table are given to three significant figures ($8.96\,\text{g/cm}^3$ and $2.70\,\text{g/cm}^3$).
 **Reasonableness:** Aluminium is less dense, so more volume of it is needed to get the same mass. With rounded numbers $3 \cdot 2700 = 8100$ and $4 \cdot 2700 = 10\,800$, so the ratio $8960 : 2700$ is between three and four, closer to three, like $3.32$.
 
 ## fy1-7-L3-02
@@ -108,7 +108,7 @@ $$\frac{V_\text{Al}}{V_\text{Cu}} = \frac{\rho_\text{Cu}}{\rho_\text{Al}}$$
 $$\bar{\rho} = \frac{m_1 + m_2}{V_1 + V_2} = \frac{\rho_1 V_1 + \rho_2 V_2}{V_1 + V_2}$$
 **Conversions:** Not needed: all quantities are in the units $\text{g}$ and $\text{cm}^3$.
 **Substitution:** The masses are $m_1 = 2.70\,\tfrac{\text{g}}{\text{cm}^3} \cdot 100\,\text{cm}^3 = 270\,\text{g}$ and $m_2 = 7.87\,\tfrac{\text{g}}{\text{cm}^3} \cdot 50\,\text{cm}^3 = 393.5\,\text{g}$, so $\bar{\rho} = \dfrac{270\,\text{g} + 393.5\,\text{g}}{150\,\text{cm}^3} = 4.42\,\tfrac{\text{g}}{\text{cm}^3}$
-**Answer:** $4.4\,\tfrac{\text{g}}{\text{cm}^3}$, two significant figures like the volumes $50\,\text{cm}^3$.
+**Answer:** $4.42\,\tfrac{\text{g}}{\text{cm}^3}$, three significant figures like the densities in the table, $2.70\,\text{g/cm}^3$ and $7.87\,\text{g/cm}^3$. The volumes $100\,\text{cm}^3$ and $50\,\text{cm}^3$ are exact values, so they do not limit the precision.
 **Reasonableness:** The result is between the densities of aluminium and iron, and closer to aluminium, because there is twice as much aluminium by volume. The ordinary mean of the two densities, $5.3\,\tfrac{\text{g}}{\text{cm}^3}$, would be too large.
 
 ## fy1-7-L3-03
@@ -192,7 +192,7 @@ $$L = \frac{V}{A} = \frac{m}{\rho\,\pi r^2}$$
 **Formula:** For the volumes $V_\text{Cu} + V_\text{Al} = V$ and for the masses $\rho_\text{Cu} V_\text{Cu} + \rho_\text{Al} V_\text{Al} = m$. Substituting $V_\text{Al} = V - V_\text{Cu}$ into the second equation gives $V_\text{Cu} = \dfrac{m - \rho_\text{Al} V}{\rho_\text{Cu} - \rho_\text{Al}}$
 **Conversions:** Not needed: the masses are in grams, the volumes in cubic centimetres and the densities in $\text{g/cm}^3$.
 **Substitution:** $V_\text{Cu} = \dfrac{520\,\text{g} - 2.70\,\tfrac{\text{g}}{\text{cm}^3} \cdot 100\,\text{cm}^3}{8.96\,\tfrac{\text{g}}{\text{cm}^3} - 2.70\,\tfrac{\text{g}}{\text{cm}^3}} = \dfrac{250\,\text{g}}{6.26\,\tfrac{\text{g}}{\text{cm}^3}} = 39.9\,\text{cm}^3$
-**Answer:** $39.9\,\text{cm}^3$, three significant figures, because the densities in the table have three figures and the data $520\,\text{g}$ and $100\,\text{cm}^3$ are read to three figures. The volume of aluminium is $V_\text{Al} = 100\,\text{cm}^3 - 39.9\,\text{cm}^3 = 60.1\,\text{cm}^3$.
+**Answer:** $39.9\,\text{cm}^3$, three significant figures, because the densities in the table have three figures. The volume $100\,\text{cm}^3$ and the mass $520\,\text{g}$ are exact values, so they do not limit the precision. The volume of aluminium is $V_\text{Al} = 100\,\text{cm}^3 - 39.9\,\text{cm}^3 = 60.1\,\text{cm}^3$.
 **Reasonableness:** If the object were pure aluminium, its mass would be $270\,\text{g}$, and if it were pure copper, $896\,\text{g}$. The actual mass $520\,\text{g}$ is between these and closer to aluminium, so less than half of the volume is copper, like $39.9\,\text{cm}^3$. There is more aluminium by volume ($60.1\,\text{cm}^3$), but more copper by mass: the mass of the copper is about $357.5\,\text{g}$ and that of the aluminium about $162.3\,\text{g}$, because the density of copper is several times as great. Check: $8.96 \cdot 39.9\,\text{g} + 2.70 \cdot 60.1\,\text{g} = 357.5\,\text{g} + 162.3\,\text{g} = 519.8\,\text{g} \approx 520\,\text{g}$.
 
 ## fy1-7-L2-08
@@ -224,4 +224,4 @@ $\rho_\text{D} = 120\,\text{g} : 100\,\text{cm}^3 = 1.2\,\tfrac{\text{g}}{\text{
 
 From smallest to largest the order is B, D, A, C.
 
-Object B would float in water and the others would sink. The order by mass would be different: object C is the heaviest and object D the lightest, but density tells the mass per volume, not the total mass of the object. The densities are given with two significant figures, like the least precise initial values; the order does not change, because the densities differ clearly from each other.
+Object B would float in water and the others would sink. The order by mass would be different: object C is the heaviest and object D the lightest, but density tells the mass per volume, not the total mass of the object. Two significant figures are enough to decide the order, because the densities differ clearly from each other.

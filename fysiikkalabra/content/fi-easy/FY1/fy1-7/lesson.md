@@ -262,6 +262,8 @@ Pidä laskussa kaikki suureet samassa yksikköjärjestelmässä. Tilavuuden muun
 | lyijy | 11 300 | 11,3 |
 | kulta | 19 300 | 19,3 |
 
+Taulukon arvot ovat huoneenlämpötilassa. Jään arvo on $0\,{}^\circ\text{C}$:ssa. Puun tiheys vaihtelee sen mukaan, kuinka kosteaa puu on ja millaista se on. Männyn arvo on siksi tyypillinen arvo.
+
 ### Tilavuuden mittaaminen
 
 Säännöllisen kappaleen tilavuuden voi laskea mitoista. Kuution tilavuus on $a^3$. Suorakulmaisen särmiön tilavuus on pohjan pinta-ala kertaa korkeus. Epäsäännöllisen kappaleen tilavuus mitataan vedensiirtymällä. Upota kappale kokonaan mittalasissa olevaan veteen. Kappaleen tilavuus on mittalasin lukemien erotus $V = V_2 - V_1$.

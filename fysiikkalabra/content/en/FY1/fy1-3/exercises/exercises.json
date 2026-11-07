@@ -29,8 +29,8 @@
     {
       "id": "fy1-3-L1-04",
       "level": 1,
-      "text": "A kitchen scale shows a reading of $1.2\\,\\text{g}$ when empty, although there is nothing on it. An object is placed on the scale, and the scale shows $48.7\\,\\text{g}$. What is the mass of the object?",
-      "answer": 47.5,
+      "text": "A kitchen scale shows a reading of $0.9\\,\\text{g}$ when empty, although there is nothing on it. An object is placed on the scale, and the scale shows $36.4\\,\\text{g}$. What is the mass of the object?",
+      "answer": 35.5,
       "unit": "g",
       "tolerance": 0.02
     },
@@ -330,8 +330,8 @@
     {
       "id": "fy1-3-L3-03",
       "level": 3,
-      "text": "The length of a steel rod is known exactly from a reference measurement: it is $8.00\\,\\text{cm}$. The rod is measured five times with vernier callipers, and the readings are $8.24\\,\\text{cm}$, $8.27\\,\\text{cm}$, $8.25\\,\\text{cm}$, $8.29\\,\\text{cm}$ and $8.25\\,\\text{cm}$. Calculate the estimate of the systematic error, that is, the difference between the mean and the true value.",
-      "answer": 0.26,
+      "text": "The length of a steel rod is known exactly from a reference measurement: it is $8.00\\,\\text{cm}$. The rod is measured five times with vernier callipers, and the readings are $8.04\\,\\text{cm}$, $8.07\\,\\text{cm}$, $8.05\\,\\text{cm}$, $8.09\\,\\text{cm}$ and $8.05\\,\\text{cm}$. Calculate the estimate of the systematic error, that is, the difference between the mean and the true value.",
+      "answer": 0.06,
       "unit": "cm",
       "tolerance": 0.02
     },

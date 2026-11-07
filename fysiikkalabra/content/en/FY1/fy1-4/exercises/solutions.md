@@ -106,7 +106,7 @@
 **Formula:** $k = \dfrac{\Delta T}{\Delta t}$ and $\dfrac{|k_1|}{|k_3|}$
 **Conversions:** None needed: a temperature difference is the same in degrees Celsius and in kelvins, and the time is in minutes.
 **Substitution:** $k_1 = \dfrac{72\,{}^\circ\text{C} - 90\,{}^\circ\text{C}}{10\,\text{min}} = -1.8\,\tfrac{{}^\circ\text{C}}{\text{min}}$ and $k_3 = \dfrac{51\,{}^\circ\text{C} - 60\,{}^\circ\text{C}}{10\,\text{min}} = -0.90\,\tfrac{{}^\circ\text{C}}{\text{min}}$, so $\dfrac{|k_1|}{|k_3|} = \dfrac{1.8}{0.90} = 2.0$
-**Answer:** $2.0$ times, two significant figures like the temperature differences. One line does not fit, because the slope is not constant: the coffee first cools twice as fast as at the end, and the interval 10–$20\,\text{min}$ gives a third value, $-1.2\,\tfrac{{}^\circ\text{C}}{\text{min}}$. The points do not lie on a straight line.
+**Answer:** $2.0$ times, two significant figures, because the temperatures were measured to two figures. One line does not fit, because the slope is not constant: the coffee first cools twice as fast as at the end, and the interval 10–$20\,\text{min}$ gives a third value, $-1.2\,\tfrac{{}^\circ\text{C}}{\text{min}}$. The points do not lie on a straight line.
 **Reasonableness:** The slopes are negative, because the coffee cools. The cooling slows down because the coffee approaches room temperature and the temperature difference to the surroundings gets smaller, which fits what you know about a hot drink cooling.
 
 ## fy1-4-L3-03

@@ -190,7 +190,7 @@ Kun kappale päästetään putoamaan levosta, sen nopeus kasvaa. **Vapaa pudotus
   <foreignObject x="527" y="119.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10\,\text{m}$</div></foreignObject>
 </svg>
 
-Nopeuden muutosta aikayksikköä kohti eli esimerkiksi yhdessä sekunnissa kutsutaan **kiihtyvyydeksi**. Vapaasti putoavan kappaleen kiihtyvyys on **putoamiskiihtyvyys** $g = 9{,}81\,\text{m/s}^2$. Yksikkö $\text{m/s}^2$ luetaan "metriä sekunnissa sekunnissa". Nopeus mitataan yksiköllä $\text{m/s}$, ja se muuttuu joka sekunti tämän verran. Luku $g$ ei siis ole nopeus. Se kertoo, kuinka nopeasti nopeus kasvaa.
+Nopeuden muutosta aikayksikköä kohti eli esimerkiksi yhdessä sekunnissa kutsutaan **kiihtyvyydeksi**. Vapaasti putoavan kappaleen kiihtyvyys on **putoamiskiihtyvyys** $g = 9{,}81\,\text{m/s}^2$. Yksikkö $\text{m/s}^2$ luetaan "metriä sekunnissa toiseen" eli "metriä sekunnissa sekunnissa". Nopeus mitataan yksiköllä $\text{m/s}$, ja se muuttuu joka sekunti tämän verran. Luku $g$ ei siis ole nopeus. Se kertoo, kuinka nopeasti nopeus kasvaa.
 
 ### Massa ei vaikuta putoamiseen
 Kun ilmanvastusta ei ole, kaikki kappaleet putoavat samalla kiihtyvyydellä. Kappaleen massalla ei ole väliä. Tyhjiössä vasara ja höyhen putoavat yhtä nopeasti. Kuulalla, jonka massa on $5\,\text{kg}$, on joka hetki sama nopeus kuin kuulalla, jonka massa on $1\,\text{kg}$. Syy selitetään myöhemmin voimien yhteydessä. Tässä luvussa tämä on koetulos, jonka tutkit itse.

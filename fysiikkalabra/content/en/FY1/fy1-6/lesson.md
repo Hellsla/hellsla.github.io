@@ -190,7 +190,7 @@ When an object is released from rest, its speed increases. **Free fall** is fall
   <foreignObject x="527" y="119.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10\,\text{m}$</div></foreignObject>
 </svg>
 
-The change in speed per unit of time is called **acceleration**. The acceleration of a freely falling object is the **acceleration of free fall** $g = 9.81\,\text{m/s}^2$. The unit $\text{m/s}^2$ is read "metres per second per second": speed is measured in $\text{m/s}$, and it changes by this amount every second. So the number $g$ is not a speed but the rate at which the speed increases.
+The change in speed per unit of time is called **acceleration**. The acceleration of a freely falling object is the **acceleration of free fall** $g = 9.81\,\text{m/s}^2$. The unit $\text{m/s}^2$ is read "metres per second squared", that is, "metres per second per second": speed is measured in $\text{m/s}$, and it changes by this amount every second. So the number $g$ is not a speed but the rate at which the speed increases.
 
 ### Mass does not affect falling
 When there is no air resistance, all objects fall with the same acceleration regardless of their mass. In a vacuum a hammer and a feather fall equally fast, and a ball with a mass of $5\,\text{kg}$ has at every moment the same speed as a ball with a mass of $1\,\text{kg}$. The reason is explained later in connection with forces. In this chapter it is taken as an experimental result that you investigate yourself.

@@ -344,13 +344,13 @@
     {
       "id": "fy1-1-L3-05",
       "level": 3,
-      "text": "Voyager 2 crossed the heliopause on 5 November 2018 at a distance $d_0 = 119.7\\,\\text{AU}$ from the Sun, and its speed relative to the Sun is $v = 15.341\\,\\text{km/s}$. The model of uniform motion is $d = d_0 + vt$.\n\nA student calculated the model's prediction for February 2026, when $t = 7.25\\,\\text{a}$ has passed since the heliopause crossing. The student's solution: “The distance travelled is $s = vt = 15.341\\,\\text{km/s}\\cdot7.25 = 111.2\\,\\text{km}$. The distance is $d = 119.7\\,\\text{AU} + 111.2\\,\\text{km} \\approx 119.7\\,\\text{AU}$. So Voyager would be almost in the same place as in 2018, which means the model is wrong.”\n\nUse the values $1\\,\\text{AU} = 1.496\\cdot10^{8}\\,\\text{km}$ and $1\\,\\text{a} = 3.156\\cdot10^{7}\\,\\text{s}$. A measurement in February 2026 gave $143.05\\,\\text{AU}$.\n\nFind the student's error and calculate the correct prediction of the model for the distance $d$ in astronomical units. Explain why the measurement supports the model but does not prove that Voyager always moves at the same speed.",
+      "text": "Voyager 2 crossed the heliopause on 5 November 2018 at a distance $d_0 = 119.0\\,\\text{AU}$ from the Sun (Burlaga et al. 2019, Nature Astronomy), and its speed relative to the Sun was then $v = 15.341\\,\\text{km/s}$. In the model of uniform motion this speed stays constant: $d = d_0 + vt$.\n\nA student calculated the model's prediction for February 2026, when $t = 7.25\\,\\text{a}$ has passed since the heliopause crossing. The student's solution: “The distance travelled is $s = vt = 15.341\\,\\text{km/s}\\cdot7.25 = 111.2\\,\\text{km}$. The distance is $d = 119.0\\,\\text{AU} + 111.2\\,\\text{km} \\approx 119.0\\,\\text{AU}$. So Voyager would be almost in the same place as in 2018, which means the model is wrong.”\n\nUse the values $1\\,\\text{AU} = 1.496\\cdot10^{8}\\,\\text{km}$ and $1\\,\\text{a} = 3.156\\cdot10^{7}\\,\\text{s}$. According to NASA/JPL mission tracking, Voyager 2 was $143.05\\,\\text{AU}$ from the Earth in February 2026. Because the Earth orbits the Sun, the probe's distance from the Earth differs from its distance from the Sun by up to about $1\\,\\text{AU}$.\n\nFind the student's error and calculate the correct prediction of the model for the distance $d$ in astronomical units. How precisely can the prediction and the observation be compared with this information? Explain why the observation supports the model but does not prove that Voyager always moves at the same speed.",
       "kind": [
         "error",
         "model",
         "reasoning"
       ],
-      "answer": 143.2,
+      "answer": 142.5,
       "unit": "AU",
       "tolerance": 0.02
     }

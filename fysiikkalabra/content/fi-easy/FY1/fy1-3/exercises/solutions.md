@@ -30,14 +30,14 @@
 **Järkevyys:** Kuvassa pisteiden ääripäiden väli on seitsemän ruutua eli $0{,}7\,\text{s}$. Sen puolikas on pienempi kuin vaihteluväli, kuten pitää. Vaihteluvälin keskikohta on $12{,}55\,\text{s}$. Tulos $12{,}55\,\text{s} \pm 0{,}35\,\text{s}$ antaa juuri välin $12{,}2\,\text{s}$–$12{,}9\,\text{s}$. Kaikki pisteet osuvat tälle välille.
 
 ## fy1-3-L1-04
-**Annettu:** vaa'an lukema tyhjänä (nollalukema) $m_0 = 1{,}2\,\text{g}$, lukema kappaleen kanssa $m_\text{lukema} = 48{,}7\,\text{g}$
+**Annettu:** vaa'an lukema tyhjänä (nollalukema) $m_0 = 0{,}9\,\text{g}$, lukema kappaleen kanssa $m_\text{lukema} = 36{,}4\,\text{g}$
 **Kysytty:** kappaleen massa $m$ yksikössä $\text{g}$
-**Periaate:** Vaaka lisää jokaiseen lukemaan saman määrän $1{,}2\,\text{g}$, koska se näyttää sen jo tyhjänä. Tämä on systemaattinen virhe. Se korjataan vähentämällä nollalukema lukemasta.
+**Periaate:** Vaaka lisää jokaiseen lukemaan saman määrän $0{,}9\,\text{g}$, koska se näyttää sen jo tyhjänä. Tämä on systemaattinen virhe. Se korjataan vähentämällä nollalukema lukemasta.
 **Kaava:** $m = m_\text{lukema} - m_0$
 **Muunnokset:** Molemmat lukemat ovat grammoina, joten muunnoksia ei tarvita.
-**Sijoitus:** $m = 48{,}7\,\text{g} - 1{,}2\,\text{g} = 47{,}5\,\text{g}$
-**Vastaus:** $47{,}5\,\text{g}$. Siinä on kolme merkitsevää numeroa, ja molemmat lukemat tunnetaan yhden desimaalin tarkkuudella.
-**Järkevyys:** Vaaka näyttää liikaa, joten oikean massan täytyy olla pienempi kuin lukema, ja $47{,}5\,\text{g} < 48{,}7\,\text{g}$. Tarkistus: $47{,}5\,\text{g} + 1{,}2\,\text{g} = 48{,}7\,\text{g}$.
+**Sijoitus:** $m = 36{,}4\,\text{g} - 0{,}9\,\text{g} = 35{,}5\,\text{g}$
+**Vastaus:** $35{,}5\,\text{g}$. Siinä on kolme merkitsevää numeroa, ja molemmat lukemat tunnetaan yhden desimaalin tarkkuudella.
+**Järkevyys:** Vaaka näyttää liikaa, joten oikean massan täytyy olla pienempi kuin lukema, ja $35{,}5\,\text{g} < 36{,}4\,\text{g}$. Tarkistus: $35{,}5\,\text{g} + 0{,}9\,\text{g} = 36{,}4\,\text{g}$.
 
 ## fy1-3-L1-05
 **Annettu:** pienin asteikkoväli $d = 1{,}0\,\text{mm}$
@@ -110,14 +110,14 @@
 **Järkevyys:** Tavallisen kopiopaperin paksuus on noin $0{,}1\,\text{mm} = 100\,\mu\text{m}$, joten suhteellinen epävarmuus on noin $2\,\%$. Yhden arkin mittaaminen suoraan viivaimella antaisi epävarmuudeksi $0{,}5\,\text{mm}$. Se on noin $500\,\%$ arkin paksuudesta. Pinon mittaaminen pienentää siis suhteellisen epävarmuuden 250-osaan.
 
 ## fy1-3-L3-03
-**Annettu:** oikea arvo $x_\text{oikea} = 8{,}00\,\text{cm}$; lukemat $8{,}24$, $8{,}27$, $8{,}25$, $8{,}29$ ja $8{,}25\,\text{cm}$; $n = 5$
+**Annettu:** oikea arvo $x_\text{oikea} = 8{,}00\,\text{cm}$; lukemat $8{,}04$, $8{,}07$, $8{,}05$, $8{,}09$ ja $8{,}05\,\text{cm}$; $n = 5$
 **Kysytty:** systemaattisen virheen arvio $\Delta x_\text{sys}$ yksikössä $\text{cm}$
 **Periaate:** Lukemat ovat tiiviisti toistensa lähellä, mutta kaikki ovat selvästi oikean arvon yläpuolella. Keskiarvo pienentää satunnaisvirhettä. Siksi sen ero oikeaan arvoon kuvaa jäljelle jäänyttä systemaattista virhettä.
 **Kaava:** $\bar{x} = \dfrac{x_1 + \dots + x_5}{n}$ ja $\Delta x_\text{sys} = \bar{x} - x_\text{oikea}$
 **Muunnokset:** Kaikki pituudet ovat senttimetreinä, joten muunnoksia ei tarvita.
-**Sijoitus:** Summa on $8{,}24\,\text{cm} + 8{,}27\,\text{cm} + 8{,}25\,\text{cm} + 8{,}29\,\text{cm} + 8{,}25\,\text{cm} = 41{,}30\,\text{cm}$, joten $\bar{x} = \dfrac{41{,}30\,\text{cm}}{5} = 8{,}26\,\text{cm}$ ja $\Delta x_\text{sys} = 8{,}26\,\text{cm} - 8{,}00\,\text{cm} = 0{,}26\,\text{cm}$
-**Vastaus:** $0{,}26\,\text{cm}$. Siinä on kaksi merkitsevää numeroa, ja erotus on kahden desimaalin tarkkuudella.
-**Järkevyys:** Satunnaisvirheen arvio $\dfrac{8{,}29\,\text{cm} - 8{,}24\,\text{cm}}{2} = 0{,}025\,\text{cm} \approx 0{,}03\,\text{cm}$ on noin kymmenesosa systemaattisesta virheestä. Virheen ratkaisee siis systemaattinen osa, esimerkiksi väärä nollakohta. Jos kaikista lukemista vähennetään $0{,}26\,\text{cm}$, ne ovat $7{,}98\,\text{cm}$–$8{,}03\,\text{cm}$ eli lähellä oikeaa arvoa.
+**Sijoitus:** Summa on $8{,}04\,\text{cm} + 8{,}07\,\text{cm} + 8{,}05\,\text{cm} + 8{,}09\,\text{cm} + 8{,}05\,\text{cm} = 40{,}30\,\text{cm}$, joten $\bar{x} = \dfrac{40{,}30\,\text{cm}}{5} = 8{,}06\,\text{cm}$ ja $\Delta x_\text{sys} = 8{,}06\,\text{cm} - 8{,}00\,\text{cm} = 0{,}06\,\text{cm}$
+**Vastaus:** $0{,}06\,\text{cm}$. Siinä on yksi merkitsevä numero, ja erotus on kahden desimaalin tarkkuudella.
+**Järkevyys:** Satunnaisvirheen arvio $\dfrac{8{,}09\,\text{cm} - 8{,}04\,\text{cm}}{2} = 0{,}025\,\text{cm} \approx 0{,}03\,\text{cm}$ on noin puolet systemaattisesta virheestä. Kaikki lukemat ovat silti oikean arvon yläpuolella. Niissä on siis systemaattinen virhe. Syy voi olla esimerkiksi työntömitan väärä nollakohta tai lika leukojen välissä. Virhe $0{,}6\,\text{mm}$ on työntömitalle uskottava. Jos kaikista lukemista vähennetään $0{,}06\,\text{cm}$, ne ovat $7{,}98\,\text{cm}$–$8{,}03\,\text{cm}$ eli lähellä oikeaa arvoa.
 
 ## fy1-3-L1-06
 **Kysytty:** mikä tilanteista on systemaattinen virhe.

@@ -16,7 +16,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "Kierrätyspisteellä on pöydällä kaksi harmaata metallikuutiota. Ne ovat täsmälleen samankokoiset. Toinen tuntuu kädessä paljon raskaammalta kuin toinen. Toinen on alumiinia ja toinen rautaa, mutta kuutioissa ei ole merkintöjä. Pöydällä on vaaka ja viivoitin.",
+      "text": "Kierrätyspisteellä on pöydällä kaksi harmaata metallikuutiota. Ne ovat täsmälleen samankokoiset. Toinen tuntuu kädessä paljon raskaammalta kuin toinen. Kuutioissa ei ole merkintöjä, eikä niiden metallia tiedetä. Pöydällä on vaaka ja viivoitin.",
       "question": "Mitä kuutioista kannattaa mitata, jotta voit päätellä niiden aineen?"
     },
     {
@@ -137,7 +137,7 @@
       "type": "interpret",
       "title": "Tuntematon metalli",
       "source": "simulated",
-      "text": "Taulukossa on esimerkkiaineisto tuntemattomasta metallista tehdyistä paloista. Luvut ovat *esimerkkiarvoja*. Tiheyden voi laskea kahdella tavalla. Ensimmäinen tapa on yhden rivin suhde $m : V$. Toinen tapa on kahden kaukana toisistaan olevan rivin erotusten suhde $\\Delta m : \\Delta V$. Toinen tapa käyttää koko mittausaluetta.\n\n| Pala | $V$ ($\\text{cm}^3$) | $m$ (g) |\n|---|---|---|\n| 1 | 5,0 | 45,1 |\n| 2 | 10,0 | 89,2 |\n| 3 | 15,0 | 135,0 |\n| 4 | 20,0 | 178,9 |\n| 5 | 25,0 | 224,3 |",
+      "text": "Taulukossa on esimerkkiaineisto tuntemattomasta metallista tehdyistä paloista. Luvut ovat *esimerkkiarvoja*. Tiheyden voi laskea kahdella tavalla. Ensimmäinen tapa on yhden rivin suhde $m : V$. Toinen tapa on kahden kaukana toisistaan olevan rivin erotusten suhde $\\Delta m : \\Delta V$. Toinen tapa käyttää koko mittausaluetta. Kahden rivin käyttö on nopea likiarvo kulmakertoimelle. Luotettavin arvo on kaikkiin pisteisiin sovitetun suoran kulmakerroin (luvun teoriaosa).\n\n| Pala | $V$ ($\\text{cm}^3$) | $m$ (g) |\n|---|---|---|\n| 1 | 5,0 | 45,1 |\n| 2 | 10,0 | 89,2 |\n| 3 | 15,0 | 135,0 |\n| 4 | 20,0 | 178,9 |\n| 5 | 25,0 | 224,3 |",
       "question": {
         "type": "numeric",
         "prompt": "Laske metallin tiheys käyttämällä ensimmäistä ja viimeistä riviä ja kaavaa $\\rho = \\Delta m : \\Delta V$. Vertaa lopuksi tulosta kirjan taulukkoon (luvun teoriaosa): alumiini $2{,}70$, rauta $7{,}87$, kupari $8{,}96$, lyijy $11{,}3$ ja kulta $19{,}3\\,\\text{g/cm}^3$. Vastaa yksikössä $\\text{g/cm}^3$.",
@@ -159,7 +159,7 @@
             "feedback": "Jaoit massan muutoksen $179{,}2\\,\\text{g}$ viimeisen rivin tilavuudella $25{,}0\\,\\text{cm}^3$. Myös tilavuudesta pitää ottaa muutos: $25{,}0\\,\\text{cm}^3 - 5{,}0\\,\\text{cm}^3 = 20{,}0\\,\\text{cm}^3$."
           }
         ],
-        "solution": "**Annettu:** ensimmäinen rivi $V_1 = 5{,}0\\,\\text{cm}^3$, $m_1 = 45{,}1\\,\\text{g}$ ja viimeinen rivi $V_5 = 25{,}0\\,\\text{cm}^3$, $m_5 = 224{,}3\\,\\text{g}$\n\n**Kysytty:** metallin tiheys $\\rho$ yksikössä $\\text{g/cm}^3$\n\n**Periaate:** Massa on suoraan verrannollinen tilavuuteen. Siksi mittauspisteet ovat mittausepävarmuuden rajoissa suoralla $m = \\rho V$. Suoran kulmakerroin on tiheys. Valitse kaksi pistettä, jotka ovat kaukana toisistaan. Kulmakerroin on niiden massojen erotuksen ja tilavuuksien erotuksen suhde.\n\n**Kaava:** $\\rho = \\dfrac{\\Delta m}{\\Delta V} = \\dfrac{m_5 - m_1}{V_5 - V_1}$\n\n**Muunnokset:** Ei tarvita. Massat ovat grammoina ja tilavuudet kuutiosenttimetreinä. Vastaus pyydetään yksikössä $\\text{g/cm}^3$.\n\n**Sijoitus:** $\\rho = \\dfrac{224{,}3\\,\\text{g} - 45{,}1\\,\\text{g}}{25{,}0\\,\\text{cm}^3 - 5{,}0\\,\\text{cm}^3} = \\dfrac{179{,}2\\,\\text{g}}{20{,}0\\,\\text{cm}^3} = 8{,}96\\,\\tfrac{\\text{g}}{\\text{cm}^3}$\n\n**Vastaus:** $8{,}96\\,\\tfrac{\\text{g}}{\\text{cm}^3}$. Vastauksessa on kolme merkitsevää numeroa, koska tilavuuksien erotus $20{,}0\\,\\text{cm}^3$ tunnetaan kolmen ja massojen erotus $179{,}2\\,\\text{g}$ neljän merkitsevän numeron tarkkuudella.\n\n**Järkevyys:** Arvo on sama kuin kuparin tiheys taulukossa, $8{,}96\\,\\tfrac{\\text{g}}{\\text{cm}^3}$. Metalli on siis luultavasti kuparia. Tarkista yhdellä rivillä: $\\dfrac{224{,}3\\,\\text{g}}{25{,}0\\,\\text{cm}^3} = 8{,}97\\,\\tfrac{\\text{g}}{\\text{cm}^3}$. Tulos on lähes sama."
+        "solution": "**Annettu:** ensimmäinen rivi $V_1 = 5{,}0\\,\\text{cm}^3$, $m_1 = 45{,}1\\,\\text{g}$ ja viimeinen rivi $V_5 = 25{,}0\\,\\text{cm}^3$, $m_5 = 224{,}3\\,\\text{g}$\n\n**Kysytty:** metallin tiheys $\\rho$ yksikössä $\\text{g/cm}^3$\n\n**Periaate:** Massa on suoraan verrannollinen tilavuuteen. Siksi mittauspisteet ovat mittausepävarmuuden rajoissa suoralla $m = \\rho V$. Suoran kulmakerroin on tiheys. Valitse kaksi pistettä, jotka ovat kaukana toisistaan. Kulmakerroin on niiden massojen erotuksen ja tilavuuksien erotuksen suhde.\n\n**Kaava:** $\\rho = \\dfrac{\\Delta m}{\\Delta V} = \\dfrac{m_5 - m_1}{V_5 - V_1}$\n\n**Muunnokset:** Ei tarvita. Massat ovat grammoina ja tilavuudet kuutiosenttimetreinä. Vastaus pyydetään yksikössä $\\text{g/cm}^3$.\n\n**Sijoitus:** $\\rho = \\dfrac{224{,}3\\,\\text{g} - 45{,}1\\,\\text{g}}{25{,}0\\,\\text{cm}^3 - 5{,}0\\,\\text{cm}^3} = \\dfrac{179{,}2\\,\\text{g}}{20{,}0\\,\\text{cm}^3} = 8{,}96\\,\\tfrac{\\text{g}}{\\text{cm}^3}$\n\n**Vastaus:** $8{,}96\\,\\tfrac{\\text{g}}{\\text{cm}^3}$. Vastauksessa on kolme merkitsevää numeroa, koska tilavuuksien erotus $20{,}0\\,\\text{cm}^3$ tunnetaan kolmen ja massojen erotus $179{,}2\\,\\text{g}$ neljän merkitsevän numeron tarkkuudella.\n\n**Järkevyys:** Arvo on sama kuin kuparin tiheys taulukossa, $8{,}96\\,\\tfrac{\\text{g}}{\\text{cm}^3}$. Metalli on siis luultavasti kuparia. Tarkista yhdellä rivillä: $\\dfrac{224{,}3\\,\\text{g}}{25{,}0\\,\\text{cm}^3} = 8{,}97\\,\\tfrac{\\text{g}}{\\text{cm}^3}$. Tulos on lähes sama. Kaikkiin viiteen pisteeseen sovitetun suoran kulmakerroin on myös $8{,}96\\,\\tfrac{\\text{g}}{\\text{cm}^3}$. Kahden kaukaisen pisteen likiarvo on siis tässä yhtä hyvä."
       }
     },
     {
@@ -257,7 +257,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Sovella uuteen tilanteeseen",
-      "prompt": "Joesta löydetyn kiven massa on $187\\,\\text{g}$. Mittalasissa on vettä $120\\,\\text{ml}$. Kun kivi upotetaan, lukema on $190\\,\\text{ml}$. Kuinka suuri on kiven aineen tiheys? Vastaa yksikössä $\\text{kg/m}^3$.",
+      "prompt": "Joesta löydetyn kiven massa on $187\\,\\text{g}$. Mittalasissa on vettä $120\\,\\text{ml}$. Kun kivi upotetaan, lukema on $190\\,\\text{ml}$. Mittalasin asteikko luetaan $1\\,\\text{ml}$:n tarkkuudella. Kuinka suuri on kiven aineen tiheys? Vastaa yksikössä $\\text{kg/m}^3$.",
       "answer": 2700,
       "unit": "kg/m³",
       "tolerance": 0.02,
@@ -280,7 +280,7 @@
           "feedback": "Massa on grammoina ja tilavuus kuutiometreinä, joten yksiköt ovat eri järjestelmistä. Muunna massa kilogrammoiksi: $187\\,\\text{g} = 0{,}187\\,\\text{kg}$."
         }
       ],
-      "solution": "**Annettu:** kiven massa $m = 187\\,\\text{g}$; veden lukema ennen $V_1 = 120\\,\\text{ml}$ ja jälkeen $V_2 = 190\\,\\text{ml}$\n\n**Kysytty:** kiven aineen tiheys $\\rho$ yksikössä $\\text{kg/m}^3$\n\n**Periaate:** Kun kivi upotetaan veteen, se syrjäyttää oman tilavuutensa verran vettä. Kiven tilavuus on siis lukemien erotus. Tiheys on massa jaettuna tilavuudella.\n\n**Kaava:** $V = V_2 - V_1$ ja $\\rho = \\dfrac{m}{V} = \\dfrac{m}{V_2 - V_1}$\n\n**Muunnokset:** $V = 190\\,\\text{ml} - 120\\,\\text{ml} = 70\\,\\text{ml} = 70\\,\\text{cm}^3 = 70 \\cdot 10^{-6}\\,\\text{m}^3 = 7{,}0 \\cdot 10^{-5}\\,\\text{m}^3$ ja $m = 187\\,\\text{g} = 187 \\cdot 10^{-3}\\,\\text{kg} = 0{,}187\\,\\text{kg}$.\n\n**Sijoitus:** $\\rho = \\dfrac{0{,}187\\,\\text{kg}}{7{,}0 \\cdot 10^{-5}\\,\\text{m}^3} = 2671\\,\\tfrac{\\text{kg}}{\\text{m}^3}$\n\n**Vastaus:** $2{,}7 \\cdot 10^3\\,\\tfrac{\\text{kg}}{\\text{m}^3}$. Vastauksessa on kaksi merkitsevää numeroa, koska lukemien erotus $70\\,\\text{ml}$ tunnetaan kahden numeron tarkkuudella.\n\n**Järkevyys:** Kivien tiheys on tavallisesti noin 2,5–3 kertaa veden tiheys. Tulos $2{,}7 \\cdot 10^3\\,\\text{kg/m}^3$ on tällä välillä. Arvio: $190\\,\\text{g}$ ja $70\\,\\text{cm}^3$ antaisivat noin $2{,}7\\,\\text{g/cm}^3$."
+      "solution": "**Annettu:** kiven massa $m = 187\\,\\text{g}$; veden lukema ennen $V_1 = 120\\,\\text{ml}$ ja jälkeen $V_2 = 190\\,\\text{ml}$\n\n**Kysytty:** kiven aineen tiheys $\\rho$ yksikössä $\\text{kg/m}^3$\n\n**Periaate:** Kun kivi upotetaan veteen, se syrjäyttää oman tilavuutensa verran vettä. Kiven tilavuus on siis lukemien erotus. Tiheys on massa jaettuna tilavuudella.\n\n**Kaava:** $V = V_2 - V_1$ ja $\\rho = \\dfrac{m}{V} = \\dfrac{m}{V_2 - V_1}$\n\n**Muunnokset:** $V = 190\\,\\text{ml} - 120\\,\\text{ml} = 70\\,\\text{ml} = 70\\,\\text{cm}^3 = 70 \\cdot 10^{-6}\\,\\text{m}^3 = 7{,}0 \\cdot 10^{-5}\\,\\text{m}^3$ ja $m = 187\\,\\text{g} = 187 \\cdot 10^{-3}\\,\\text{kg} = 0{,}187\\,\\text{kg}$.\n\n**Sijoitus:** $\\rho = \\dfrac{0{,}187\\,\\text{kg}}{7{,}0 \\cdot 10^{-5}\\,\\text{m}^3} = 2671\\,\\tfrac{\\text{kg}}{\\text{m}^3}$\n\n**Vastaus:** $2{,}7 \\cdot 10^3\\,\\tfrac{\\text{kg}}{\\text{m}^3}$. Vastauksessa on kaksi merkitsevää numeroa. Lukemat luetaan $1\\,\\text{ml}$:n tarkkuudella, joten lukemien erotus $70\\,\\text{ml}$ tunnetaan vain kahden numeron tarkkuudella.\n\n**Järkevyys:** Kivien tiheys on tavallisesti noin 2,5–3 kertaa veden tiheys. Tulos $2{,}7 \\cdot 10^3\\,\\text{kg/m}^3$ on tällä välillä. Arvio: $190\\,\\text{g}$ ja $70\\,\\text{cm}^3$ antaisivat noin $2{,}7\\,\\text{g/cm}^3$."
     },
     {
       "id": "harjoitukset",
@@ -318,7 +318,7 @@
       "id": "check-c2",
       "stage": "tarkista",
       "type": "choice",
-      "title": "2. Tiheys on aineen ominaisuus",
+      "title": "2. Kaksi rautakuutiota",
       "prompt": "Rautakuutio vaihdetaan toiseen rautakuutioon. Uuden kuution tilavuus on kaksi kertaa niin suuri. Miten massa ja tiheys muuttuvat?",
       "choices": [
         {

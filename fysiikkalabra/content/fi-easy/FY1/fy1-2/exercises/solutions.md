@@ -15,7 +15,7 @@
 **Kaava:** $1\,\text{km} = 10^{-3}\,\text{Mm}$
 **Muunnokset:** Megametri on tuhat kilometriä, joten kilometri on tuhannesosa megametristä. Kilometrin paikalle kirjoitetaan $10^{-3}\,\text{Mm}$.
 **Sijoitus:** $s = 384\,400\,\text{km} = 384\,400\cdot 10^{-3}\,\text{Mm} = 384{,}4\,\text{Mm}$
-**Vastaus:** $384{,}4\,\text{Mm}$, neljä merkitsevää numeroa. Kokonaisluvun $384\,400$ loppunollat ovat epäselviä. Siksi luku tulkitaan sadan kilometrin tarkkuudella, $3{,}844\cdot10^{5}\,\text{km}$, ja $1\,\text{km} = 10^{-3}\,\text{Mm}$ on tarkka.
+**Vastaus:** $384{,}4\,\text{Mm}$. Loppunolliin päättyvänä kokonaislukuna annettu $384\,400\,\text{km}$ on tämän kirjan tehtävissä tarkka arvo. Myös $1\,\text{km} = 10^{-3}\,\text{Mm}$ on tarkka. Siksi lukuarvo vain jaetaan tuhannella, eikä tulosta pyöristetä.
 **Järkevyys:** Megametri on tuhat kilometriä, ja $384\,400\,\text{km}$ on noin $400\,000\,\text{km}$, joten tulos on noin $400\,\text{Mm}$. Etäisyys on kymmenpotenssien $10^{8}\,\text{m} = 100\,\text{Mm}$ ja $10^{9}\,\text{m} = 1000\,\text{Mm}$ välissä, kuten pitääkin.
 
 ## fy1-2-L1-03
@@ -190,6 +190,6 @@
 **Periaate:** Lukuarvoja $0{,}65$ ja $2{,}20$ ei voi verrata, koska yksiköt $\text{kWh}$ ja $\text{MJ}$ ovat eri suuria. Laite toimii ajan $t = \tfrac{E}{P}$, kunnes varastoitu energia on kulunut. Energia ja teho muunnetaan siksi yksiköihin J ja W.
 **Kaava:** $t = \dfrac{E}{P}$
 **Muunnokset:** Kilowattitunnin paikalle kirjoitetaan $1000\,\text{W}\cdot3600\,\text{s}$, eli $1\,\text{kWh} = 3{,}6\,\text{MJ}$. $E_\text{A} = 0{,}65\cdot1000\,\text{W}\cdot3600\,\text{s} = 2{,}34\cdot10^{6}\,\text{J}$, $E_\text{B} = 2{,}20\cdot10^{6}\,\text{J}$ ja $P_\text{B} = 0{,}100\cdot1000\,\text{W} = 100\,\text{W}$. Sekunnit muunnetaan tunneiksi, $1\,\text{h} = 3600\,\text{s}$.
-**Sijoitus:** $t_\text{A} = \dfrac{2{,}34\cdot10^{6}\,\text{J}}{85{,}0\,\text{W}} = 2{,}753\cdot10^{4}\,\text{s} = 7{,}647\,\text{h}$ ja $t_\text{B} = \dfrac{2{,}20\cdot10^{6}\,\text{J}}{100\,\text{W}} = 2{,}20\cdot10^{4}\,\text{s} = 6{,}111\,\text{h}$. Erotus $7{,}647\,\text{h} - 6{,}111\,\text{h} = 1{,}54\,\text{h}$
+**Sijoitus:** $t_\text{A} = \dfrac{2{,}34\cdot10^{6}\,\text{J}}{85{,}0\,\text{W}} = 2{,}753\cdot10^{4}\,\text{s} = 7{,}647\,\text{h}$ ja $t_\text{B} = \dfrac{2{,}20\cdot10^{6}\,\text{J}}{100\,\text{W}} = 2{,}20\cdot10^{4}\,\text{s} = 6{,}111\,\text{h}$. Erotus $7{,}647\,\text{h} - 6{,}111\,\text{h} = 1{,}54\,\text{h} \approx 1{,}5\,\text{h}$
 **Vastaus:** laite A toimii kauemmin, noin $1{,}5\,\text{h}$, kaksi merkitsevää numeroa kuten energiassa $0{,}65\,\text{kWh}$. Laitteen B energia on vain $0{,}61\,\text{kWh}$, ja sen teho on suurempi. Väite ei siis ole oikein.
 **Järkevyys:** Laitteen A energia $650\,\text{Wh}$ jaettuna tehon $85\,\text{W}$ arviolla $90\,\text{W}$ antaa noin $7\,\text{h}$. Laitteen B energia on $2{,}2:3{,}6 = 0{,}61\,\text{kWh}$, ja $610\,\text{Wh} : 100\,\text{W}$ on noin $6\,\text{h}$.

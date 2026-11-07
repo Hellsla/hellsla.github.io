@@ -65,7 +65,7 @@
 **Kaava:** $\rho = \dfrac{m}{V}$, josta $m = \rho V$
 **Muunnokset:** Tiheyden yksikkö on $\text{kg/m}^3$, joten $2{,}5\,\text{dm}^3 = 2{,}5 \cdot 10^{-3}\,\text{m}^3 = 0{,}0025\,\text{m}^3$, koska $1\,\text{dm}^3 = 10^{-3}\,\text{m}^3$.
 **Sijoitus:** $m = 790\,\tfrac{\text{kg}}{\text{m}^3} \cdot 0{,}0025\,\text{m}^3 = 1{,}975\,\text{kg}$
-**Vastaus:** $2{,}0\,\text{kg}$, kaksi merkitsevää numeroa kuten tilavuudessa $2{,}5\,\text{dm}^3$ ja tiheydessä $790\,\tfrac{\text{kg}}{\text{m}^3}$.
+**Vastaus:** $2{,}0\,\text{kg}$, kaksi merkitsevää numeroa kuten tilavuudessa $2{,}5\,\text{dm}^3$.
 **Järkevyys:** Kaksi ja puoli litraa vettä on $2{,}5\,\text{kg}$. Etanolin tiheys on pienempi kuin veden, joten sen massa on hieman pienempi, noin $0{,}79 \cdot 2{,}5\,\text{kg} \approx 2{,}0\,\text{kg}$.
 
 ## fy1-7-L2-03
@@ -86,7 +86,7 @@
 **Kaava:** $m = m_\text{yht} - m_0$ ja $\rho = \dfrac{m}{V} = \dfrac{m_\text{yht} - m_0}{V}$
 **Muunnokset:** $m = 412\,\text{g} - 215\,\text{g} = 197\,\text{g} = 197 \cdot 10^{-3}\,\text{kg} = 0{,}197\,\text{kg}$ ja $250\,\text{cm}^3 = 250 \cdot 10^{-6}\,\text{m}^3 = 2{,}50 \cdot 10^{-4}\,\text{m}^3$.
 **Sijoitus:** $\rho = \dfrac{0{,}197\,\text{kg}}{2{,}50 \cdot 10^{-4}\,\text{m}^3} = 788\,\tfrac{\text{kg}}{\text{m}^3}$
-**Vastaus:** $788\,\tfrac{\text{kg}}{\text{m}^3}$, kolme merkitsevää numeroa, koska massojen erotus $197\,\text{g}$ ja tilavuus $250\,\text{cm}^3$ on mitattu kolmen numeron tarkkuudella.
+**Vastaus:** $788\,\tfrac{\text{kg}}{\text{m}^3}$, kolme merkitsevää numeroa kuten massojen erotuksessa $197\,\text{g}$. Mittapullon tilavuus $250\,\text{cm}^3$ on tarkka arvo, joten se ei rajoita tarkkuutta.
 **Järkevyys:** Tulos on lähellä etanolin tiheyttä $790\,\tfrac{\text{kg}}{\text{m}^3}$, joten neste on luultavasti etanolia. Jos pullon massa olisi unohdettu vähentää, saataisiin virheellisesti $1650\,\tfrac{\text{kg}}{\text{m}^3}$, mikä olisi suurempi kuin veden tiheys.
 
 ## fy1-7-L3-01
@@ -97,7 +97,7 @@
 $$\frac{V_\text{Al}}{V_\text{Cu}} = \frac{\rho_\text{Cu}}{\rho_\text{Al}}$$
 **Muunnokset:** Ei tarvita: tiheydet ovat samassa yksikössä ja massa $m$ supistuu pois.
 **Sijoitus:** $\dfrac{V_\text{Al}}{V_\text{Cu}} = \dfrac{8960\,\tfrac{\text{kg}}{\text{m}^3}}{2700\,\tfrac{\text{kg}}{\text{m}^3}} = 3{,}32$
-**Vastaus:** $3{,}32$ kertaa, kolme merkitsevää numeroa kuten tiheyksissä $8960\,\tfrac{\text{kg}}{\text{m}^3}$ ja $2{,}70\cdot10^{3}\,\tfrac{\text{kg}}{\text{m}^3}$.
+**Vastaus:** $3{,}32$ kertaa, kolme merkitsevää numeroa, koska taulukon tiheydet on annettu kolmen merkitsevän numeron tarkkuudella ($8{,}96\,\text{g/cm}^3$ ja $2{,}70\,\text{g/cm}^3$).
 **Järkevyys:** Alumiinin tiheys on pienempi, joten saman massan saamiseksi sitä tarvitaan enemmän tilavuutena. Pyöristetyillä luvuilla $3 \cdot 2700 = 8100$ ja $4 \cdot 2700 = 10\,800$, joten suhde $8960 : 2700$ on kolmen ja neljän välissä, lähempänä kolmea, kuten $3{,}32$.
 
 ## fy1-7-L3-02
@@ -108,7 +108,7 @@ $$\frac{V_\text{Al}}{V_\text{Cu}} = \frac{\rho_\text{Cu}}{\rho_\text{Al}}$$
 $$\bar{\rho} = \frac{m_1 + m_2}{V_1 + V_2} = \frac{\rho_1 V_1 + \rho_2 V_2}{V_1 + V_2}$$
 **Muunnokset:** Ei tarvita: kaikki suureet ovat yksiköissä $\text{g}$ ja $\text{cm}^3$.
 **Sijoitus:** Massat ovat $m_1 = 2{,}70\,\tfrac{\text{g}}{\text{cm}^3} \cdot 100\,\text{cm}^3 = 270\,\text{g}$ ja $m_2 = 7{,}87\,\tfrac{\text{g}}{\text{cm}^3} \cdot 50\,\text{cm}^3 = 393{,}5\,\text{g}$, joten $\bar{\rho} = \dfrac{270\,\text{g} + 393{,}5\,\text{g}}{150\,\text{cm}^3} = 4{,}42\,\tfrac{\text{g}}{\text{cm}^3}$
-**Vastaus:** $4{,}4\,\tfrac{\text{g}}{\text{cm}^3}$, kaksi merkitsevää numeroa kuten tilavuuksissa $50\,\text{cm}^3$.
+**Vastaus:** $4{,}42\,\tfrac{\text{g}}{\text{cm}^3}$, kolme merkitsevää numeroa kuten taulukon tiheyksissä $2{,}70\,\text{g/cm}^3$ ja $7{,}87\,\text{g/cm}^3$. Tilavuudet $100\,\text{cm}^3$ ja $50\,\text{cm}^3$ ovat tarkkoja arvoja, joten ne eivät rajoita tarkkuutta.
 **Järkevyys:** Tulos on alumiinin ja raudan tiheyksien välissä, ja lähempänä alumiinia, koska alumiinia on kaksi kertaa niin paljon tilavuutena. Kahden tiheyden tavallinen keskiarvo $5{,}3\,\tfrac{\text{g}}{\text{cm}^3}$ olisi liian suuri.
 
 ## fy1-7-L3-03
@@ -191,7 +191,7 @@ $$L = \frac{V}{A} = \frac{m}{\rho\,\pi r^2}$$
 **Kaava:** Tilavuuksille $V_\text{Cu} + V_\text{Al} = V$ ja massoille $\rho_\text{Cu} V_\text{Cu} + \rho_\text{Al} V_\text{Al} = m$. Sijoittamalla $V_\text{Al} = V - V_\text{Cu}$ toiseen yhtälöön ratkeaa $V_\text{Cu} = \dfrac{m - \rho_\text{Al} V}{\rho_\text{Cu} - \rho_\text{Al}}$
 **Muunnokset:** Ei tarvita: massat ovat grammoina, tilavuudet kuutiosenttimetreinä ja tiheydet yksikössä $\text{g/cm}^3$.
 **Sijoitus:** $V_\text{Cu} = \dfrac{520\,\text{g} - 2{,}70\,\tfrac{\text{g}}{\text{cm}^3} \cdot 100\,\text{cm}^3}{8{,}96\,\tfrac{\text{g}}{\text{cm}^3} - 2{,}70\,\tfrac{\text{g}}{\text{cm}^3}} = \dfrac{250\,\text{g}}{6{,}26\,\tfrac{\text{g}}{\text{cm}^3}} = 39{,}9\,\text{cm}^3$
-**Vastaus:** $39{,}9\,\text{cm}^3$, kolme merkitsevää numeroa, koska taulukon tiheydet ovat kolmella numerolla ja tiedot $520\,\text{g}$ ja $100\,\text{cm}^3$ luetaan kolmen numeron tarkkuudella. Alumiinia on $V_\text{Al} = 100\,\text{cm}^3 - 39{,}9\,\text{cm}^3 = 60{,}1\,\text{cm}^3$.
+**Vastaus:** $39{,}9\,\text{cm}^3$, kolme merkitsevää numeroa, koska taulukon tiheydet on annettu kolmella numerolla. Tilavuus $100\,\text{cm}^3$ ja massa $520\,\text{g}$ ovat tarkkoja arvoja, joten ne eivät rajoita tarkkuutta. Alumiinia on $V_\text{Al} = 100\,\text{cm}^3 - 39{,}9\,\text{cm}^3 = 60{,}1\,\text{cm}^3$.
 **Järkevyys:** Jos kappale olisi pelkkää alumiinia, sen massa olisi $270\,\text{g}$, ja pelkkää kuparia $896\,\text{g}$. Todellinen massa $520\,\text{g}$ on näiden välissä ja lähempänä alumiinia, joten kuparia on alle puolet tilavuudesta, kuten $39{,}9\,\text{cm}^3$. Alumiinia on enemmän tilavuuden mukaan ($60{,}1\,\text{cm}^3$), mutta kuparia on enemmän massan mukaan: kuparin massa on noin $357{,}5\,\text{g}$ ja alumiinin noin $162{,}3\,\text{g}$, koska kuparin tiheys on moninkertainen. Tarkistus: $8{,}96 \cdot 39{,}9\,\text{g} + 2{,}70 \cdot 60{,}1\,\text{g} = 357{,}5\,\text{g} + 162{,}3\,\text{g} = 519{,}8\,\text{g} \approx 520\,\text{g}$.
 
 ## fy1-7-L2-08
@@ -223,4 +223,4 @@ $\rho_\text{D} = 120\,\text{g} : 100\,\text{cm}^3 = 1{,}2\,\tfrac{\text{g}}{\tex
 
 Pienimmästä suurimpaan järjestys on B, D, A, C.
 
-Kappale B kelluisi vedessä ja muut uppoaisivat. Massan mukaan järjestys olisi eri: kappale C on raskain ja kappale D kevein, mutta tiheys kertoo massan tilavuutta kohti, ei kappaleen kokonaismassaa. Tiheydet on annettu kahdella merkitsevällä numerolla, kuten epätarkimmat lähtöarvot; järjestys ei muutu, koska tiheydet eroavat selvästi toisistaan.
+Kappale B kelluisi vedessä ja muut uppoaisivat. Massan mukaan järjestys olisi eri: kappale C on raskain ja kappale D kevein, mutta tiheys kertoo massan tilavuutta kohti, ei kappaleen kokonaismassaa. Järjestyksen ratkaisemiseen riittää kaksi merkitsevää numeroa, koska tiheydet eroavat selvästi toisistaan.

@@ -4,7 +4,7 @@
       "id": "fy1-5-L1-01",
       "level": 1,
       "core": true,
-      "text": "Pyöräilijä ajaa tasaisesti nopeudella $5{,}5\\,\\text{m/s}$. Kuinka pitkän matkan hän kulkee 20 sekunnissa?",
+      "text": "Pyöräilijä ajaa tasaisesti nopeudella $5{,}5\\,\\text{m/s}$. Kuinka pitkän matkan hän kulkee $20\\,\\text{s}$:ssa?",
       "answer": 110,
       "unit": "m",
       "tolerance": 0.02
@@ -100,7 +100,7 @@
     {
       "id": "fy1-5-L2-01",
       "level": 2,
-      "text": "Auto ajaa tasaisella nopeudella $54\\,\\text{km/h}$. Kuinka pitkän matkan se kulkee 14 sekunnissa? Vastaa metreinä.",
+      "text": "Auto ajaa tasaisella nopeudella $54\\,\\text{km/h}$. Kuinka pitkän matkan se kulkee $14\\,\\text{s}$:ssa? Vastaa metreinä.",
       "answer": 210,
       "unit": "m",
       "tolerance": 0.02
@@ -116,7 +116,7 @@
     {
       "id": "fy1-5-L2-03",
       "level": 2,
-      "text": "Retkeilijä on kohdassa, joka on $1{,}5\\,\\text{km}$:n päässä mökistä. Hän kävelee suoraa polkua mökistä poispäin tasaisesti nopeudella $1{,}5\\,\\text{m/s}$. Kuinka kaukana mökistä hän on 10 minuutin kuluttua? Vastaa kilometreinä.",
+      "text": "Retkeilijä on kohdassa, joka on $1{,}5\\,\\text{km}$:n päässä mökistä. Hän kävelee suoraa polkua mökistä poispäin tasaisesti nopeudella $1{,}5\\,\\text{m/s}$. Kuinka kaukana mökistä hän on $10\\,\\text{min}$:n kuluttua? Vastaa kilometreinä.",
       "answer": 2.4,
       "unit": "km",
       "tolerance": 0.02
@@ -221,7 +221,7 @@
         {
           "text": "Kuvaaja B",
           "figure": "fy1-5/pick-vt",
-          "feedback": "Tämä on $(t, v)$-kuvaaja: pystyakselilla on nopeus $v$, ei paikka $s$. Siinä paikallaan seisominen on $v = 0$ ja tasainen kävely vaakasuora viiva, mutta paikan kuvaajassa vaakasuora viiva tarkoittaa paikallaan oloa. Kuvaajasta ei näe, missä kävelijä on, eikä sitä, että hän on alussa kohdassa $6{,}0\\,\\text{m}$."
+          "feedback": "Tämä on $(t, v)$-kuvaaja: pystyakselilla on nopeus $v$, ei paikka $s$. Siinä paikallaan seisominen on $v = 0$ ja tasainen kävely vaakasuora viiva, mutta paikan kuvaajassa vaakasuora viiva tarkoittaa paikallaan oloa. Kuvaajasta ei näe, missä kävelijä on, eikä sitä, että hän on alussa kohdassa $6{,}0\\,\\text{m}$. Nopeuskuvaajanakaan B ei olisi oikein: paikka pienenee paluumatkalla, joten nopeus $v = \\Delta s : \\Delta t = -1{,}0\\,\\text{m/s}$ on negatiivinen."
         },
         {
           "text": "Kuvaaja C",
@@ -241,8 +241,8 @@
     {
       "id": "fy1-5-L3-01",
       "level": 3,
-      "text": "Voyager 2 -luotain ylitti heliopaussin 5. marraskuuta 2018 etäisyydellä $119{,}7\\,\\text{AU}$ Auringosta (NASA/JPL), ja sen nopeus Aurinkoon nähden on $15{,}341\\,\\text{km/s}$ (JPL). Oleta nopeus vakioksi.\n\nKuinka monta vuorokautta heliopaussin ylityksestä kuluu, ennen kuin luotain on mallin mukaan $150\\,\\text{AU}$:n päässä Auringosta? Käytä arvoja $1\\,\\text{AU} = 149\\,597\\,870{,}7\\,\\text{km}$ ja $1\\,\\text{vrk} = 86\\,400\\,\\text{s}$. Tulos on mallin arvo.",
-      "answer": 3420,
+      "text": "Voyager 2 -luotain ylitti heliopaussin 5. marraskuuta 2018 etäisyydellä $119{,}0\\,\\text{AU}$ Auringosta (Burlaga ym. 2019), ja sen nopeus Aurinkoon nähden oli silloin $15{,}341\\,\\text{km/s}$ (NASA/JPL). Oleta nopeus vakioksi.\n\nKuinka monta vuorokautta heliopaussin ylityksestä kuluu, ennen kuin luotain on mallin mukaan $150\\,\\text{AU}$:n päässä Auringosta? Käytä arvoja $1\\,\\text{AU} = 149\\,597\\,870{,}7\\,\\text{km}$ ja $1\\,\\text{vrk} = 86\\,400\\,\\text{s}$. Tulos on mallin arvo.",
+      "answer": 3500,
       "unit": "vrk",
       "tolerance": 0.02
     },

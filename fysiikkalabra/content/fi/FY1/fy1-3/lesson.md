@@ -457,33 +457,6 @@ x = x_\text{lukema} - \Delta x_\text{sys}
 ## Esimerkki
 Oppilas mittaa kuulan vierimisajan rampilla käsikellolla kuusi kertaa ja saa tulokset $3{,}12\,\text{s}$, $3{,}25\,\text{s}$, $3{,}07\,\text{s}$, $3{,}31\,\text{s}$, $3{,}19\,\text{s}$ ja $3{,}15\,\text{s}$. Mikä on mittaustulos virhearvion kanssa ja kuinka suuri on suhteellinen epävarmuus?
 
-<svg data-fig="example-plot" viewBox="0 0 600 330" role="img" aria-label="Mittaustulokset (t, aika) mittakaavassa: kuusi tulosta väliltä 3,07 s – 3,31 s, keskiarvo 3,18 s ja tulos 3,18 s ± 0,12 s vihreällä palkilla." style="max-width:100%;font-size:24px">
-  <line x1="261" y1="150" x2="261" y2="62" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <circle cx="196" cy="138" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="332.5" cy="138" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="143.5" cy="138" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="395.5" cy="138" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="269.5" cy="138" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="227.5" cy="138" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <line x1="58" y1="150" x2="502" y2="150" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M514,150 L501,156 L501,144 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <line x1="70" y1="150" x2="70" y2="157" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="60" y="161.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$3$</div></foreignObject>
-  <line x1="175" y1="150" x2="175" y2="157" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="152.5" y="161.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$3{,}1$</div></foreignObject>
-  <line x1="280" y1="150" x2="280" y2="157" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="257.5" y="161.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$3{,}2$</div></foreignObject>
-  <line x1="385" y1="150" x2="385" y2="157" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="362.5" y="161.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$3{,}3$</div></foreignObject>
-  <line x1="490" y1="150" x2="490" y2="157" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="467.5" y="161.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$3{,}4$</div></foreignObject>
-  <foreignObject x="520" y="135.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$t\ (\text{s})$</div></foreignObject>
-  <foreignObject x="131" y="35.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\bar{t} = 3{,}18\,\text{s}$</div></foreignObject>
-  <rect x="134.5" y="236" width="252" height="16" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="2.5"/>
-  <line x1="261" y1="230" x2="261" y2="258" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <foreignObject x="202.5" y="277.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$t = 3{,}18\,\text{s} \pm 0{,}12\,\text{s}$</div></foreignObject>
-</svg>
-
 <!-- vaihe -->
 
 **Tunnetut ja kysytty.** Mittauksia on $n = 6$, ja pienin tulos on $t_\text{min} = 3{,}07\,\text{s}$ ja suurin $t_\text{max} = 3{,}31\,\text{s}$. Kysytään keskiarvoa $\bar{t}$, virhearviota $\Delta t$ ja suhteellista epävarmuutta $\varepsilon$.
@@ -533,6 +506,33 @@ Oppilas mittaa kuulan vierimisajan rampilla käsikellolla kuusi kertaa ja saa tu
 <!-- vaihe -->
 
 **Järkevyys.** Väli $3{,}18\,\text{s} \pm 0{,}12\,\text{s}$ eli $3{,}06\,\text{s}$–$3{,}30\,\text{s}$ kattaa viisi kuudesta tuloksesta. Tulos $3{,}31\,\text{s}$ jää juuri sen ulkopuolelle, mikä sopii siihen, että virhearvio on karkea. Suhteellinen epävarmuus on muutaman prosentin, mikä on tavallista käsin otetulle ajalle. Toistot kuitenkin kertovat vain satunnaisvirheestä: systemaattisen virheen paljastaisi vasta vertailu toiseen mittaustapaan.
+
+<svg data-fig="example-plot" viewBox="0 0 600 330" role="img" aria-label="Mittaustulokset (t, aika) mittakaavassa: kuusi tulosta väliltä 3,07 s – 3,31 s, keskiarvo 3,18 s ja tulos 3,18 s ± 0,12 s vihreällä palkilla." style="max-width:100%;font-size:24px">
+  <line x1="261" y1="150" x2="261" y2="62" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <circle cx="196" cy="138" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="332.5" cy="138" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="143.5" cy="138" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="395.5" cy="138" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="269.5" cy="138" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="227.5" cy="138" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <line x1="58" y1="150" x2="502" y2="150" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M514,150 L501,156 L501,144 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="70" y1="150" x2="70" y2="157" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="60" y="161.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$3$</div></foreignObject>
+  <line x1="175" y1="150" x2="175" y2="157" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="152.5" y="161.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$3{,}1$</div></foreignObject>
+  <line x1="280" y1="150" x2="280" y2="157" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="257.5" y="161.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$3{,}2$</div></foreignObject>
+  <line x1="385" y1="150" x2="385" y2="157" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="362.5" y="161.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$3{,}3$</div></foreignObject>
+  <line x1="490" y1="150" x2="490" y2="157" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="467.5" y="161.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$3{,}4$</div></foreignObject>
+  <foreignObject x="520" y="135.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$t\ (\text{s})$</div></foreignObject>
+  <foreignObject x="131" y="35.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\bar{t} = 3{,}18\,\text{s}$</div></foreignObject>
+  <rect x="134.5" y="236" width="252" height="16" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="2.5"/>
+  <line x1="261" y1="230" x2="261" y2="258" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <foreignObject x="202.5" y="277.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$t = 3{,}18\,\text{s} \pm 0{,}12\,\text{s}$</div></foreignObject>
+</svg>
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että tarkka laite tai paljon toistoja takaavat oikean tuloksen. Toistot pienentävät satunnaisvirhettä mutta eivät systemaattista virhettä, ja hyvä toistettavuus ei kerro oikeellisuudesta. Toinen virhekäsitys on pitää kaikkea virhettä huolimattomuutena. Huolimattomuudesta syntyy karkea virhe, joka etsitään ja jätetään pois vain perustellusta ja kirjatusta syystä, mutta satunnais- ja systemaattinen virhe kuuluvat myös taitavan mittaajan tulokseen, ja siksi ne arvioidaan ja ilmoitetaan. Kolmas on laskea keskiarvo erilaisissa yksiköissä olevista luvuista: tulokset muunnetaan ensin samaan yksikköön.
