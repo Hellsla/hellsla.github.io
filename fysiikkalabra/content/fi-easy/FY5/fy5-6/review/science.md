@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 6b865c9e57f68a00
+CONTENT-HASH: e47e307492d07dcc
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- content/fi-easy/FY5/fy5-6/lesson.md:647 — "Siksi esimerkiksi ISS:n rataa nostetaan" follows the Earth-oblateness sentence and reads as if oblateness caused the reboosts; the cause is drag in the upper atmosphere — say "Yläilmakehän jarrutuksen vuoksi ISS:n rataa nostetaan …".
 
 ## Checked
-batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Terms: kiertorata, satelliitti, and painottomuus (free fall, support force zero, gravity still acts) agree with the lesson and the guardrails.
+light delta review (teacher 2026-11-07): only the changed passages of the batch packet's diff (= git diff origin/main) judged in context, not a full review; weightlessness = no support + common free fall, gravity acting, normal force zero (theory, bold definition, summary consistent); ISS caption correct; model deviations (drag, Moon/Sun, oblateness) correct; ISS 8.6 m/s², 88 % recomputed.

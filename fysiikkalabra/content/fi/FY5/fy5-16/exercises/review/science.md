@@ -1,12 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: 431ea9a2e547e7e5
+VERDICT: FAIL
+CONTENT-HASH: 24c498bba9ee31a5
 
 ## Blocking
+- A — solutions.md:39 (L1-04 Järkevyys) — "Taso [83 dB under the protectors] on kuitenkin yli alemman toiminta-arvon 80 dB" compares the level under protectors with an action value. Action values are applied to the exposure without protectors (VNA 85/2006); what the protected level is compared with is the limit value 87 dB(A). — Fix: "Ilman suojaimia taso 106 dB ylittää kummankin toiminta-arvon, joten suojaimia on käytettävä. Korvalle tuleva 83 dB jää raja-arvon 87 dB(A) alle, mutta vertailuannoksen alittaminen ei takaa kuulon turvallisuutta."
 
 ## Polish
+- solutions.md:103, 105, 204, 207, 219 (L3-01, L3-04) — t_{sall,i} is left over beside the renamed t_v; rename to t_{v,i}.
 
 ## Checked
-- Round-1 Major resolved: the feedback now says "Epävarmuuden vuoksi todellinen taso voi olla 84–86 dB" (the reading is 85 dB; only the true level is uncertain, and "voi" keeps it uncertain). The solution uses the same words: "lukema on 85 dB, mutta … todellinen taso voi olla 84–86 dB".
-- The distractor's feedback and the solution now both say "enintään 2ΔL = 2 dB".
-- Hedging evened: distractor 1 now says "suunnilleen puolittuu", and the correct option ends "eli suunnilleen yhtä paljon joka välillä". The correct option still follows from the data (drops of 6, 6 and 5 dB, within 2 dB of 6,02 dB), and distractor 1 is still clearly wrong (91 → 85 dB is far from half). Exactly one option is correct.
-- Checked against the text only, not renders. answers.py is unchanged, and running it with python3 -I gives the same 16 numeric answers. The rest of the set is unchanged.
+- light delta review (teacher 2026-11-07): only the passages changed against origin/main were judged, in context, not a full review; packet says Mode full; per the teacher only the diff was judged. 'Vertailuaika/energia-annos' rewording of L1-01, L2-01, L2-07, L3-05 stems and solutions correct; recomputed 2,0 h, 4,0 h, 1,875 min, 92 dB → 1,59 h and 190 %, 86 dB → 6,35 h and 47 %; L3-01 125 % gives L_EX,8h ≈ 86,0 dB(A), so 'ylittää ylemmän toiminta-arvon' is right; the L2-08 option feedback (85 dB unprotected exceeds 80 dB) is right; answers.py unchanged.

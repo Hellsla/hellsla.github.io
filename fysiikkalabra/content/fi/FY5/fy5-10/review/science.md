@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 751af08c90959771
+CONTENT-HASH: 45a83f2053abbd16
 
 ## Blocking
 
-None.
-
 ## Polish
 
-None.
-
 ## Checked
-
-batch delta review: "Mekaaninen aaltoliike on häiriön etenemistä väliaineessa" in Ydinajatus and Tiivistelmä is now correct as a definition (electromagnetic waves need no medium); it agrees with the next paragraph ("Mekaaninen aalto tarvitsee väliaineen"), and the energy-not-matter and particles-oscillate statements are unchanged. No number, option or feedback changed.
+- light delta review (teacher 2026-11-07): only the passages changed against origin/main were judged, in context, not a full review; 'ideal wave model' qualifier the same in text, summary, exit ticket and inquiry model answer; Stokes drift of floating objects, ideal string speed set by tension and mass per length, dispersion of surface waves and the tsunami's speed growing with depth (v ≈ √(gh)) are all correct.

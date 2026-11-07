@@ -644,7 +644,7 @@ Tasaisen ympyräliikkeen malli on yksinkertaistus. Se kuvaa satelliitin liikett�
 - muiden kappaleiden gravitaatio ja ilmanvastus ovat niin pieniä, että vain keskuskappaleen gravitaatio vaikuttaa,
 - satelliitin nopeus on juuri sen radan säteen ympyräradan nopeus, jolloin etäisyys keskipisteestä pysyy vakiona.
 
-Todellinen satelliitti poikkeaa aina hieman mallista. Matalalla radalla ohut yläilmakehä jarruttaa liikettä. Kuun ja Auringon gravitaatio vetää satelliittia. Lisäksi Maa on navoiltaan hieman litistynyt, joten sen massa ei jakaudu täsmälleen pallon tavoin. Siksi esimerkiksi ISS:n rataa nostetaan välillä rakettimoottoreilla.
+Todellinen satelliitti poikkeaa aina hieman mallista. Matalalla radalla ohut yläilmakehä jarruttaa liikettä. Kuun ja Auringon gravitaatio vetää satelliittia. Lisäksi Maa on navoiltaan hieman litistynyt, joten sen massa ei jakaudu täsmälleen pallon tavoin. Yläilmakehän jarrutuksen vuoksi esimerkiksi ISS:n rataa nostetaan välillä rakettimoottoreilla.
 
 Monet todelliset radat ovat lähes ympyröitä. Maan etäisyys Auringosta vaihtelee vain noin $3\,\%$ keskietäisyydestä. Siksi ympyrämalli kuvaa Maan rataa hyvin. Kuun etäisyys Maasta vaihtelee noin $11\,\%$. Malli antaa Kuulle silti hyvän likiarvon. Halleyn komeetan rata on sen sijaan hyvin pitkänomainen. Ympyrämalli ei sovi siihen lainkaan.
 

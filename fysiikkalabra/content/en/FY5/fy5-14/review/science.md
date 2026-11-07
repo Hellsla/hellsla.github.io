@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: f42659fc7d7c0a81
+CONTENT-HASH: 4dcc7246ad688dab
 
 ## Blocking
 (none)
@@ -8,4 +8,4 @@ CONTENT-HASH: f42659fc7d7c0a81
 (none)
 
 ## Checked
-batch delta review: chapter titles renamed in the title, meta and every chapter reference; every reference names the current title of the right chapter (no stale old title left in content/en/FY5); no formula, number, option or feedback physics changed; every changed choice keeps its single correct option.
+light delta review (teacher 2026-11-07): only the passages changed against origin/main were judged, in context; no full review was done even where the tooling asks for one. Worked-example idealisation (listener on the track line, full velocity along the line of sight) and the gradual drop for an offset listener, with far-field values still ≈341 Hz and 286 Hz: correct; recomputed 311·343/(343∓30) = 340.8 Hz and 286.0 Hz.

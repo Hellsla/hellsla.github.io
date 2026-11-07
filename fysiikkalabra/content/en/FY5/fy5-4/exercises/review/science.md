@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 0c494781d50723fc
+CONTENT-HASH: 768547d305826021
 
 ## Blocking
 (none)
 
 ## Polish
-- none.
+(none)
 
 ## Checked
-- Recomputed: a_n = 1.5 g down, G + N = 1.5 mg gives N = 0.5 mg down; A (N up) net 0.5 G; B forces cancel; D velocity not a force. Task, solution and the pick-keskipako figure description now consistently name the centrifugal force F_cf, matching the figure.
-- fy5-4-L2-08 compared with the reviewed Finnish: id, level, kind, answer, unit, tolerance, choices, correct flag, feedback and solution steps identical in content.
-- No Finnish text left in en files; check_i18n clean for fy5-4; build.py fy5-4 succeeds.
+light delta review (teacher 2026-11-07): only the passages changed against origin/main were judged, in context; no full review was done even where the tooling asks for one. four feedback/solution lines now say 'no real centrifugal force' (exercises.json L1 choice, L2-08 choice B; solutions L2 friction task and L2-08): correct in the ground frame used by the FBDs; no number, answer or correct flag changed.

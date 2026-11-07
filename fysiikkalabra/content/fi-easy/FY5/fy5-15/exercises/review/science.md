@@ -1,7 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 5832f2120e4162ca
-Mode: full (translation review against the reviewed Finnish set, new task L2-08)
-Round 2
+CONTENT-HASH: 4d3e8ba6e9447fc3
 
 ## Blocking
 (none)
@@ -10,8 +8,4 @@ Round 2
 (none)
 
 ## Checked
-- New task fy5-15-L2-08 compared with content/fi: id, kind tags, correct flag, choice count and order, answer, tolerance and unit identical; every number and formula identical (decimal comma to comma kept).
-- Recomputed: L2-08 levels, 82 dB - 42 dB = 40 dB, lg ratio = 4, ratio 10^4; distractors 2, 40, 10^40.
-- Solution keeps all lead-ins, the symbolic step before numbers and the explanation of each distractor.
-- fi-easy follows NOTES.md section 12: shorter sentences, terms explained, same physics.
-- check_i18n: nothing for fy5-15; build.py fy5-15 succeeds.
+light delta review (teacher 2026-11-07): git diff origin/main of exercises/ and answers.py (one task text), not a full review: L1-03 now states free propagation outdoors so the meter reading may be treated as intensity level (true only in a free field); recomputed 95 dB → 3.2e-3 W/m².

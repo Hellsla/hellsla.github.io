@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 462902e6913e7556
+CONTENT-HASH: b9fdc006f8109f4b
 
 ## Blocking
 (none)
@@ -8,4 +8,4 @@ CONTENT-HASH: 462902e6913e7556
 (none)
 
 ## Checked
-new figures.json entries are identity copies of the Finnish strings drawn by figures.py (same sense, ratios and F kp wording as the Finnish lesson); Apollo 8 caption says normaalikiihtyvyys in the centrifuge can equal the launch acceleration, correct and uses the lesson's term; nothing else changed.
+light delta review (teacher 2026-11-07): only the changed passages of the batch packet's diff (= git diff origin/main) judged in context, not a full review; Δv direction (inward, parallel to midpoint-to-centre line, instantaneous a_n towards centre in the limit) correct; centrifugal force only as a fictitious force in the turning frame, ground-frame force diagrams with real forces only; exit ticket, inquiry model and summary consistent; numbers unchanged.

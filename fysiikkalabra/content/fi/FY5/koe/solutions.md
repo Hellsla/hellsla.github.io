@@ -508,7 +508,7 @@ Vaaka-akselilla on langan pituus $l\ (\text{m})$ ja pystyakselilla $T^2\ (\text{
 **Muunnokset:** $1\,\text{h} = 60\,\text{min}$
 **Sijoitus:** Ilman suojaimia $n = \dfrac{103\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = 6$ ja $t_\text{v} = \dfrac{8\,\text{h}}{2^6} = 0{,}125\,\text{h} = 7{,}5\,\text{min}$. Tulppien kanssa korvalle tulee $103\,\text{dB} - 12\,\text{dB} = 91\,\text{dB}$, joten $n = 2$ ja $t_\text{v} = \dfrac{8\,\text{h}}{2^2} = 2{,}0\,\text{h}$.
 **Vastaus:** Ilman kuulonsuojaimia vertailuannos kertyisi lavan edessä jo noin $7{,}5\,\text{min}$:ssa. Tulppien todellisella vaimennuksella vertailuaika on $2{,}0\,\text{h}$, joten tulpat eivät riitä neljän tunnin vuoroon: annos olisi kaksinkertainen vertailuannokseen verrattuna.
-**Järkevyys:** Valmistajan vaimennuksella $22\,\text{dB}$ korvalle tulisi $81\,\text{dB}$, alle ylemmän toiminta-arvon, ja annos olisi jäänyt vertailuannoksen alle. Ero osoittaa, kuinka paljon suojaimen asettaminen vaikuttaa.
+**Järkevyys:** Valmistajan vaimennuksella $22\,\text{dB}$ korvalle tulisi $81\,\text{dB}$, alle vertailutason $85\,\text{dB}$, ja annos olisi jäänyt vertailuannoksen alle. Ero osoittaa, kuinka paljon suojaimen asettaminen vaikuttaa.
 
 ### c)
 **Annettu:** $L_1 = 103\,\text{dB}$, kun $r_1 = 10\,\text{m}$; $r_2 = 25\,\text{m}$; tulppien todellinen vaimennus $12\,\text{dB}$
@@ -517,7 +517,7 @@ Vaaka-akselilla on langan pituus $l\ (\text{m})$ ja pystyakselilla $T^2\ (\text{
 **Kaava:** $L_2 = L_1 + 10\,\text{dB} \cdot \lg\left(\dfrac{r_1}{r_2}\right)^2$ ja $t_\text{v} = \dfrac{8\,\text{h}}{2^{\,n}}$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $L_2 = 103\,\text{dB} + 10\,\text{dB} \cdot \lg\left(\dfrac{10\,\text{m}}{25\,\text{m}}\right)^2 \approx 103\,\text{dB} - 8\,\text{dB} = 95\,\text{dB}$. Tulppien kanssa korvalle tulee $95\,\text{dB} - 12\,\text{dB} = 83\,\text{dB}$, joten $n = \dfrac{83\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} \approx -0{,}67$ ja $t_\text{v} = \dfrac{8\,\text{h}}{2^{-0{,}67}} \approx 12{,}7\,\text{h}$.
-**Vastaus:** Uudella paikalla melutaso on noin $95\,\text{dB}$. Tulppien kanssa korvalle tulee noin $83\,\text{dB}$, jolla vertailuaika on noin $13\,\text{h}$, joten neljän tunnin vuoron annos jää vertailuannoksen alle, kun tulppia pidetään koko vuoron ajan. Korvalle tuleva taso on silti yli alemman toiminta-arvon $80\,\text{dB}$, joten melua kannattaa vähentää muutenkin.
+**Vastaus:** Uudella paikalla melutaso on noin $95\,\text{dB}$. Tulppien kanssa korvalle tulee noin $83\,\text{dB}$, jolla vertailuaika on noin $13\,\text{h}$, joten neljän tunnin vuoron annos jää vertailuannoksen alle, kun tulppia pidetään koko vuoron ajan. Ilman tulppia taso $95\,\text{dB}$ ylittää kummankin toiminta-arvon, joten tulppia on käytettävä koko vuoron ajan. Korvalle tuleva $83\,\text{dB}$ jää raja-arvon $87\,\text{dB(A)}$ alle, mutta vertailuannoksen alittaminen ei takaa kuulon turvallisuutta, joten melua kannattaa vähentää muutenkin.
 **Järkevyys:** Neljän tunnin vuoron vertailutaso on $85\,\text{dB} + 3\,\text{dB} = 88\,\text{dB}$, ja $83\,\text{dB}$ jää sen alle. Etäisyys kasvaa $2{,}5$-kertaiseksi eli enemmän kuin kerran mutta vähemmän kuin kahdesti kaksinkertaiseksi, joten tason on laskettava $6$–$12\,\text{dB}$: $8\,\text{dB}$ on uskottava.
 
 ### d)

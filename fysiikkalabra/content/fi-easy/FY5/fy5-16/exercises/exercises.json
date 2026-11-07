@@ -298,7 +298,7 @@
         },
         {
           "text": "Etäisyydellä $4{,}0\\,\\text{m}$ taso ei ylitä arvoa $85\\,\\text{dB}$, joten siellä voi työskennellä $8\\,\\text{h}$ turvallisesti.",
-          "feedback": "Epävarmuuden vuoksi todellinen taso voi olla $84$–$86\\,\\text{dB}$. Silloin ylempi toiminta-arvo voi ylittyä. Lisäksi ylempi toiminta-arvo ei ole turvallisuusraja. Vaikka annos jää vertailuannosta pienemmäksi, kuulo ei ole varmasti turvassa. Jo alempi toiminta-arvo $80\\,\\text{dB}$ ylittyy."
+          "feedback": "Epävarmuuden vuoksi todellinen taso voi olla $84$–$86\\,\\text{dB}$. Silloin ylempi toiminta-arvo voi ylittyä. Lisäksi ylempi toiminta-arvo ei ole turvallisuusraja. Vaikka annos ei ylittäisi vertailuannosta, kuulo ei ole varmasti turvassa. Jo alempi toiminta-arvo $80\\,\\text{dB}$ ylittyy."
         }
       ]
     }

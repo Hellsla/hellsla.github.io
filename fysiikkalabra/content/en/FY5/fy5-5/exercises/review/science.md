@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 83919e209ffc0f9e
+CONTENT-HASH: 2dfa5cdb22af192d
 
 ## Blocking
 (none)
 
 ## Polish
-- none.
+(none)
 
 ## Checked
-- Recomputed F = 4.27e7 N, a_A = 5.3e-6, a_B = 2.1e-5 m/s^2, ratio 4; third-law forces equal; two-stage answer and reason, one correct each, feedback physics right.
-- fy5-5-L2-08 compared with the reviewed Finnish: id, level, kind, answer, unit, tolerance, choices, correct flag, feedback and solution steps identical in content.
-- No Finnish text left in en files; check_i18n clean for fy5-5; build.py fy5-5 succeeds.
+light delta review (teacher 2026-11-07): only the passages changed against origin/main were judged, in context; no full review was done even where the tooling asks for one. L3-04 text: Cavendish determined the Earth's mean density; the modern calculation runs the other way from g, R and γ: correct. Recomputed M = gR²/γ = 5.97·10²⁴ kg, ρ = 5508 ≈ 5510 kg/m³ (answers.py agrees); solution's comparison with Cavendish's 5450 kg/m³ (≈1 %) correct.

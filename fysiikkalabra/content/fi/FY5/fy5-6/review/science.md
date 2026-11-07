@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: cb6948f3d741ca30
+CONTENT-HASH: e60f675c7a4d67f9
 
 ## Blocking
 
 ## Polish
+- lesson.md:647 — "Siksi esimerkiksi ISS:n rataa nostetaan" follows three causes, but reboosts compensate mainly the atmospheric drag — e.g. "Ilmanvastuksen vuoksi esimerkiksi ISS:n rataa nostetaan ajoittain …".
 
 ## Checked
-- batch delta review: the diff only renames this and neighbouring FY5 chapters (title, meta.json, `luku *...*` references in lesson.md and inquiry.json); every renamed reference names the chapter that holds the cited content, and no formula, number, option, `correct` flag or feedback physics changed. Opening illustration redrawn: its alt text and capture show the situation correctly (no labels or numbers in the lesson's other figures changed). Every choice still has exactly one correct option.
+- light delta review (teacher 2026-11-07): only the passages changed against origin/main were judged, in context, not a full review; weightlessness = no support + common free fall with gravity acting, the same in the text and the summary (guardrail wording); ISS caption (free fall, orbital speed keeps it from hitting Earth) correct; perturbations (drag, Moon and Sun, oblateness) correct; the keskipakoisvoima sentence is unchanged and right.

@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 71986967a9004414
+CONTENT-HASH: 3cfb9e499347c92f
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- content/en/FY5/fy5-6/lesson.md:647 — 'That is why ... the ISS is raised' follows three perturbations, but reboosts compensate mainly for atmospheric drag — write 'Because of the drag, the orbit of the ISS is raised...'.
 
 ## Checked
-batch delta review: chapter titles renamed in the title, meta and every chapter reference; every reference names the current title of the right chapter (no stale old title left in content/en/FY5); new ISS illustration caption: descriptive only, no physics claim; no formula, number, option or feedback physics changed; every changed choice keeps its single correct option.
+light delta review (teacher 2026-11-07): only the passages changed against origin/main were judged, in context; no full review was done even where the tooling asks for one. Weightlessness = no support + common free fall, gravity acting, N = 0, in definition and summary (matches the guardrail); new paragraph on drag, lunar/solar gravity and the Earth's oblateness correct.

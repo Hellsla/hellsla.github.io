@@ -644,7 +644,7 @@ The model of uniform circular motion is a simplification. It describes the motio
 - the gravity of other bodies and air resistance are so small that only the gravity of the central body acts,
 - the speed of the satellite is exactly the circular-orbit speed of the radius of its orbit, so that the distance from the centre stays constant.
 
-Real satellite motion always deviates slightly from the model. In a low orbit the thin upper atmosphere slows the motion, the gravity of the Moon and the Sun pulls on the satellite, and the mass of the Earth is not distributed exactly spherically, because the Earth is slightly flattened at the poles. That is why, for example, the orbit of the ISS is raised from time to time with rocket engines.
+Real satellite motion always deviates slightly from the model. In a low orbit the thin upper atmosphere slows the motion, the gravity of the Moon and the Sun pulls on the satellite, and the mass of the Earth is not distributed exactly spherically, because the Earth is slightly flattened at the poles. Because of the drag, for example, the orbit of the ISS is raised from time to time with rocket engines.
 
 Many real orbits are nearly circles. The distance of the Earth from the Sun varies by only about $3\,\%$ of the mean distance, so the circular model describes the orbit of the Earth well. The distance of the Moon from the Earth varies by about $11\,\%$, so the model gives a good approximation for the Moon. The orbit of Halley's comet, in contrast, is very elongated, and the circular model does not suit it at all.
 

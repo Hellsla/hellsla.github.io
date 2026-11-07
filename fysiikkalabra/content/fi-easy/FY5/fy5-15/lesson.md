@@ -215,7 +215,7 @@ Pieni äänilähde, joka säteilee tasaisesti joka suuntaan, on pistemäinen lä
   <foreignObject x="42" y="311.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0$</div></foreignObject>
 </svg>
 
-<figure class="unit-photo"><img src="pics/fy5/sound-level-meter-park.webp" alt="Ihmisiä istuu puistossa. Tolpassa on punainen näyttö, jossa lukee 62 dB."><figcaption>Melunäyttö puistossa Kiinassa. Näyttö kertoo äänitason desibeleinä. Tällaiset mittarit näyttävät yleensä A-painotettua äänenpainetasoa. Ulkona se on lukuarvoltaan suunnilleen sama kuin intensiteettitaso. $62\,\text{dB}$ on noin tavallisen puheen voimakkuus.</figcaption></figure>
+<figure class="unit-photo"><img src="pics/fy5/sound-level-meter-park.webp" alt="Ihmisiä istuu puistossa. Tolpassa on punainen näyttö, jossa lukee 62 dB."><figcaption>Melunäyttö puistossa Kiinassa. Näyttö kertoo äänitason desibeleinä. Tällaiset mittarit näyttävät yleensä A-painotettua äänenpainetasoa. Ulkona painottamaton äänenpainetaso on lukuarvoltaan suunnilleen sama kuin intensiteettitaso. A-painotettu lukema voi olla erilainen, varsinkin matalilla äänillä. $62\,\text{dB}$ on noin tavallisen puheen voimakkuus.</figcaption></figure>
 
 ### Kuulokynnys ja kipukynnys
 Ihmisen korva on hämmästyttävän herkkä. Nuori normaalikuuloinen ihminen erottaa noin $1000\,\text{Hz}$:n taajuudella äänen, jonka intensiteetti on noin $I_0 = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2$. Se on heikoin ääni, jonka hän kuulee. Tätä sanotaan **kuulokynnykseksi**. Kuulokynnys ei ole hiljaisuus. Se on heikoin kuultavissa oleva ääni. Se on myös eri suuri eri taajuuksilla. Kovimmat äänet alkavat tuntua kivulta, kun intensiteetti on noin $1\,\text{W/m}^2$. Tämä kipukynnys on biljoona eli $10^{12}$ kertaa kuulokynnyksen suuruinen. Molemmat kynnykset ovat eri ihmisillä erilaisia, ja ne riippuvat taajuudesta. Siksi nämä arvot ovat sovittuja likiarvoja. Ne eivät ole luonnonvakioita. Näin laajaa vaihteluväliä on hankala esittää tavallisella asteikolla.
@@ -467,7 +467,7 @@ Ulkoilmakonsertissa desibelimittari näyttää $96\,\text{dB}$, kun se on $10\,\
 
 <!-- vaihe -->
 
-**Tulos.** Intensiteetti on noin $4{,}0 \cdot 10^{-3}\,\text{W/m}^2$. Kaiutintornin ääniteho on noin $5{,}0\,\text{W}$. Tulokset ilmoitetaan kahdella merkitsevällä numerolla, koska taso $96\,\text{dB}$ on annettu kokonaisina desibeleinä. Jo $1\,\text{dB}$:n ero tasossa muuttaisi intensiteettiä ja tehoa noin neljänneksellä. Tarkkuutta rajoittaa siis taso. Etäisyys $10\,\text{m}$ on annettu kokonaislukuna. Siksi sitä pidetään tarkkana arvona.
+**Tulos.** Intensiteetti on noin $4{,}0 \cdot 10^{-3}\,\text{W/m}^2$. Kaiutintornin ääniteho on noin $5{,}0\,\text{W}$. Tulokset ilmoitetaan kahdella merkitsevällä numerolla, koska taso $96\,\text{dB}$ on annettu kokonaisina desibeleinä. Jo $1\,\text{dB}$:n ero tasossa muuttaisi intensiteettiä ja tehoa noin neljänneksellä. Tarkkuutta rajoittaa siis taso. Esimerkissä etäisyyttä $10\,\text{m}$ pidetään tarkkana arvona.
 
 <!-- vaihe -->
 
@@ -481,7 +481,7 @@ Toinen virhe on ajatella, että kaksinkertainen desibelilukema tarkoittaa kaksin
 ## Tiivistelmä
 - Intensiteetti on teho pinta-alaa kohti: $I = \tfrac{P}{A}$, yksikkö $\text{W/m}^2$. Pistemäiselle lähteelle ilman heijastuksia $I = \tfrac{P}{4\pi r^2}$. Kaksinkertainen etäisyys antaa neljäsosan intensiteetistä.
 - Vertailuintensiteetti $I_0 = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2$ on suunnilleen kuulokynnys eli heikoin kuultava ääni. Kipukynnys on noin $1\,\text{W/m}^2$. Kynnykset ovat sovittuja likiarvoja. Ne vaihtelevat ihmisen ja taajuuden mukaan.
-- Melumittari mittaa äänenpainetasoa (usein $\text{dB(A)}$). Kun ääni etenee vapaasti, se on lukuarvoltaan suunnilleen sama kuin intensiteettitaso. Kaikuvassa huoneessa se voi olla erilainen.
+- Melumittari mittaa äänenpainetasoa (usein A-painotettuna, $\text{dB(A)}$). Kun ääni etenee vapaasti, painottamaton äänenpainetaso on lukuarvoltaan suunnilleen sama kuin intensiteettitaso. Kaikuvassa huoneessa se voi olla erilainen.
 - Intensiteettitaso on $L = 10\,\text{dB} \cdot \lg \tfrac{I}{I_0}$. Kaksinkertainen intensiteetti lisää tasoa noin $3\,\text{dB}$ ja kymmenkertainen $10\,\text{dB}$.
 - Intensiteetti tasosta: $I = I_0 \cdot 10^{\,L/(10\,\text{dB})}$.
 - Riippumattomien lähteiden intensiteetit lasketaan yhteen. Desibelejä ei lasketa yhteen.

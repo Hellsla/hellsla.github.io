@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: df914065e3c42db8
+CONTENT-HASH: 6796b6ef39090d7b
 
 ## Blocking
+(none)
 
 ## Polish
-- The goals and contribution in inquiry.json still say "wave motion" generically; that is fine, since the lesson treats mechanical waves throughout and says light comes in FY7.
+(none)
 
 ## Checked
-batch delta review: the definition in Key idea and in the Summary now reads "Mechanical wave motion is the propagation of a disturbance in a medium", which removes the implied claim that every wave needs a medium (electromagnetic waves do not) and agrees with the following sentence "A mechanical wave needs a medium". The two places are worded the same. Particles vibrate about equilibrium, energy but not matter carried, thermal motion in a gas: unchanged and correct. No numbers, choices or answers changed.
+light delta review (teacher 2026-11-07): only the passages changed against origin/main were judged, in context; no full review was done even where the tooling asks for one. 'Ideal wave model' qualifier in theory, summary and exit ticket; Stokes drift of a floating object; rope speed set by tension and mass per length; dispersion of water waves; tsunami faster in deeper sea (v = √(gh)): all correct.

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 881317d6a36fd926
+CONTENT-HASH: cc23e4c2ca6e21a8
 
 ## Blocking
 (none)
@@ -8,4 +8,4 @@ CONTENT-HASH: 881317d6a36fd926
 (none)
 
 ## Checked
-batch delta review: chapter titles renamed in the title, meta and every chapter reference; every reference names the current title of the right chapter (no stale old title left in content/en/FY5); new ultrasound illustration caption and the goal wording 'earthquake waves': descriptive, no physics claim; no formula, number, option or feedback physics changed; every changed choice keeps its single correct option.
+light delta review (teacher 2026-11-07): only the passages changed against origin/main were judged, in context; no full review was done even where the tooling asks for one. Reflection percentages as typical values for perpendicular incidence, dependent on tissue and angle; non-ionising ≠ harmless (heating, cavitation, limited power and duration): correct.

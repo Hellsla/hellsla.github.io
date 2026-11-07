@@ -215,7 +215,7 @@ A small sound source that radiates evenly in all directions is a point source. W
   <foreignObject x="42" y="311.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0$</div></foreignObject>
 </svg>
 
-<figure class="unit-photo"><img src="pics/fy5/sound-level-meter-park.webp" alt="People sit on benches under trees in a park. A red digital display on a post reads 62 dB."><figcaption>A noise display in the People's Park in Chengdu, China. The display shows the sound level in decibels. Such meters usually show the A-weighted sound pressure level, which outdoors in a free sound field is numerically about the same as the sound intensity level. $62\,\text{dB}$ is about the level of normal conversation.</figcaption></figure>
+<figure class="unit-photo"><img src="pics/fy5/sound-level-meter-park.webp" alt="People sit on benches under trees in a park. A red digital display on a post reads 62 dB."><figcaption>A noise display in the People's Park in Chengdu, China. The display shows the sound level in decibels. Such meters usually show the A-weighted sound pressure level. Outdoors in a free sound field the unweighted sound pressure level is numerically about the same as the sound intensity level; an A-weighted reading can differ from it, especially at low frequencies. $62\,\text{dB}$ is about the level of normal conversation.</figcaption></figure>
 
 ### Threshold of hearing and threshold of pain
 The human ear is astonishingly sensitive. The weakest sound that a young person with normal hearing can distinguish at a frequency of about $1000\,\text{Hz}$ has an intensity of about $I_0 = 1.0 \cdot 10^{-12}\,\text{W/m}^2$. This is called the **threshold of hearing**. The threshold of hearing is not silence but the weakest audible sound, and it is different at different frequencies. The loudest sounds begin to feel painful when the intensity is about $1\,\text{W/m}^2$. This threshold of pain is a trillion, that is $10^{12}$, times the threshold of hearing. Both thresholds vary from person to person and with frequency, so these values are agreed approximate values, not constants of nature. Such a wide range is hard to present on an ordinary scale.
@@ -467,7 +467,7 @@ At an open-air concert a decibel meter reads $96\,\text{dB}$ at a distance of $1
 
 <!-- vaihe -->
 
-**Answer.** The intensity is about $4.0 \cdot 10^{-3}\,\text{W/m}^2$ and the sound power of the loudspeaker tower about $5.0\,\text{W}$. The results are given to two significant figures, because the level $96\,\text{dB}$ is given in whole decibels: a difference of just $1\,\text{dB}$ in the level would change the intensity and the power by about a quarter. So the level limits the precision. The distance $10\,\text{m}$ is given as a whole number in the task data, so it is treated as an exact value.
+**Answer.** The intensity is about $4.0 \cdot 10^{-3}\,\text{W/m}^2$ and the sound power of the loudspeaker tower about $5.0\,\text{W}$. The results are given to two significant figures, because the level $96\,\text{dB}$ is given in whole decibels: a difference of just $1\,\text{dB}$ in the level would change the intensity and the power by about a quarter. So the level limits the precision. In the example the distance $10\,\text{m}$ is treated as an exact value.
 
 <!-- vaihe -->
 
@@ -481,7 +481,7 @@ Another mistake is to think that a double decibel reading means a double sound. 
 ## Summary
 - Intensity is power per unit area: $I = \tfrac{P}{A}$, unit $\text{W/m}^2$. For a point source without reflections $I = \tfrac{P}{4\pi r^2}$: twice the distance gives a quarter of the intensity.
 - The reference intensity $I_0 = 1.0 \cdot 10^{-12}\,\text{W/m}^2$ corresponds approximately to the threshold of hearing, the weakest audible sound, and the threshold of pain is about $1\,\text{W/m}^2$. The thresholds are agreed approximate values that vary with the person and the frequency.
-- A sound level meter measures the sound pressure level (often $\text{dB(A)}$). In a freely travelling wave it is numerically about the same as the sound intensity level, in a reverberant room not necessarily.
+- A sound level meter measures the sound pressure level (often A-weighted, $\text{dB(A)}$). In a freely travelling wave the unweighted sound pressure level is numerically about the same as the sound intensity level, in a reverberant room not necessarily.
 - The sound intensity level is $L = 10\,\text{dB} \cdot \lg \tfrac{I}{I_0}$. Doubling the intensity raises the level by about $3\,\text{dB}$, a tenfold intensity by $10\,\text{dB}$.
 - Intensity from the level: $I = I_0 \cdot 10^{\,L/(10\,\text{dB})}$.
 - The intensities of independent sources are added, the decibels are not.

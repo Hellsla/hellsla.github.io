@@ -332,13 +332,13 @@ $\tfrac{1}{r}$ is chosen for the horizontal axis and $v^2$ for the vertical axis
 **Conversions:** $A = 5.0\,\text{cm} = 0.050\,\text{m}$ and $m_\text{s} = 45\,\text{g} = 0.045\,\text{kg}$
 **Substitution:** $m_\text{eff} = 0.250\,\text{kg} + 0.045\,\text{kg} : 3 = 0.265\,\text{kg}$ and $v_\text{max} = 0.050\,\text{m} \cdot \sqrt{\dfrac{19.9\,\text{N/m}}{0.265\,\text{kg}}} = 0.050\,\text{m} \cdot 8.67\,\tfrac{1}{\text{s}} = 0.433\,\text{m/s}$
 **Answer:** $v_\text{max} \approx 0.43\,\text{m/s}$, two significant figures like the amplitude $5.0\,\text{cm}$.
-**Reasonableness:** The period is about $2\pi\sqrt{0.265\,\text{kg} : 19.9\,\text{N/m}} \approx 0.73\,\text{s}$, and during a period the mass travels $4A = 20\,\text{cm}$, so its average speed is about $0.28\,\text{m/s}$. The greatest speed is larger than this, as it should be. A massless spring would give a slightly larger speed, about $0.45\,\text{m/s}$, because then none of the same energy goes to the spring.
+**Reasonableness:** The period is about $2\pi\sqrt{0.265\,\text{kg} : 19.9\,\text{N/m}} \approx 0.73\,\text{s}$, and during a period the mass travels $4A = 20\,\text{cm}$, so its average speed is about $0.28\,\text{m/s}$. The greatest speed is larger than this, as it should be. A massless spring would give a slightly larger speed, about $0.45\,\text{m/s}$, because then no energy goes into moving the spring.
 
 ### Hyväksytään myös
 - In part b slopes of $1.95\text{–}2.02\,\text{s}^2/\text{kg}$ and the spring constants calculated from them, $19.5\text{–}20.2\,\text{N/m}$, are accepted, as is a line fitted by a calculator or spreadsheet ($19.9\,\text{N/m}$).
 - The graph of part a can also be drawn from the quantities $m$ and $T^2$ with the mass on a gram scale; in part b the unit must then be converted.
 - In part c the deviation can also be explained by a systematic error, when the explanation is justified and it is stated that an addition of constant size does not change the slope.
-- In part d, $v_\text{max} \approx 0.45\,\text{m/s}$ calculated with a massless spring is also accepted when the student says that the mass of the spring is ignored and justifies the assumption. So is the added mass of $14\,\text{g}$ from the intercept of part c, which gives the same $0.43\,\text{m/s}$.
+- In part d, $v_\text{max} \approx 0.45\,\text{m/s}$ calculated with a massless spring earns the points of the other criteria, but not the point for the effective mass, when the student says that the mass of the spring is ignored and justifies the assumption. So is the added mass of $14\,\text{g}$ from the intercept of part c, which gives the same $0.43\,\text{m/s}$.
 
 ### Yleisiä virheitä
 - A $(m, T)$ graph is drawn and a straight line is fitted to its curved set of points.

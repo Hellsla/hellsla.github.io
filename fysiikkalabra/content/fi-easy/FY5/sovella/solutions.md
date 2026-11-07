@@ -338,7 +338,7 @@ Vaaka-akselille valitaan $\tfrac{1}{r}$ ja pystyakselille $v^2$.
 - b-kohdassa kulmakertoimet $1{,}95\text{–}2{,}02\,\text{s}^2/\text{kg}$ ja niistä lasketut jousivakiot $19{,}5\text{–}20{,}2\,\text{N/m}$ hyväksytään. Myös laskimen tai taulukkolaskennan suoran sovitus ($19{,}9\,\text{N/m}$) hyväksytään.
 - a-kohdan kuvaajan voi piirtää myös suureista $m$ ja $T^2$ niin, että massa on gramma-asteikolla. Silloin b-kohdassa yksikkö pitää muuttaa.
 - c-kohdassa poikkeaman voi selittää myös systemaattisella virheellä. Selityksen pitää olla perusteltu, ja siinä pitää todeta, että vakiosuuruinen lisäys ei muuta kulmakerrointa.
-- d-kohdassa hyväksytään myös massattoman jousen mallilla laskettu $v_\text{max} \approx 0{,}45\,\text{m/s}$. Opiskelijan pitää kertoa, että hän jättää jousen massan huomiotta, ja perustella oletus. Myös c-kohdan leikkauskohdasta saatu lisämassa $14\,\text{g}$ hyväksytään. Sillä tulos on sama $0{,}43\,\text{m/s}$.
+- d-kohdassa massattoman jousen mallilla laskettu $v_\text{max} \approx 0{,}45\,\text{m/s}$ saa muiden kriteerien pisteet, mutta ei tehollista massaa koskevaa pistettä. Opiskelijan pitää kertoa, että hän jättää jousen massan huomiotta, ja perustella oletus. Myös c-kohdan leikkauskohdasta saatu lisämassa $14\,\text{g}$ hyväksytään. Sillä tulos on sama $0{,}43\,\text{m/s}$.
 
 ### Yleisiä virheitä
 - Kuvaajaksi piirretään $(m, T)$-kuvaaja, ja sen kaarevaan pisteistöön sovitetaan suora.

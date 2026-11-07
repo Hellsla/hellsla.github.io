@@ -1,20 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 9e5206ef58e39b4a
-Mode: full (translation review against the reviewed Finnish set; new task fy5-16-L2-08)
-Round 1
+CONTENT-HASH: 8c7366b5969f48e3
 
 ## Blocking
 (none)
 
-## Fixed
-- None needed; new task fy5-16-L2-08 was already faithful to content/fi.
-
 ## Polish
-(none)
+- content/en/FY5/fy5-16/exercises/solutions.md:103,105,204,207,219 — L3-01 and L3-04 still use the symbol t_perm,i while their text now says reference time — rename to t_ref,i for consistency.
 
 ## Checked
-- fy5-16-L2-08 (noise level vs distance with uncertainty): id, level, kind, answer, unit, tolerance, correct flags, choices order, data rows and every number in text, choices, feedback and solution identical to content/fi.
-- Recomputed independently: drops 6, 6, 5 dB vs 10 lg 4 = 6.0 dB, difference uncertainty 2 dB; 85 dB +-1 dB action value; all agree with the solution and with the correct choice.
-- Distractor feedback keeps the Finnish physics (each wrong option's error named correctly).
-- Wording is natural textbook English; decimal point in JSON and LaTeX; no Finnish left.
-- check_i18n.py shows nothing for fy5-16; build.py fy5-16 succeeds.
+light delta review (teacher 2026-11-07): only the passages changed against origin/main were judged, in context; no full review was done even where the tooling asks for one. packet says Mode full, done as a light review of git diff of exercises/ and answers.py instead. 'Permitted time' replaced by reference time (time to reach the dose of 8 h at 85 dB) in L1-01, L2-01, L2-07, L3-05 and solutions; action values not called safe; lower action value 80 dB, protectors and noise reduction above 85 dB match VNA 85/2006. Recomputed 2.0 h, 4.0 h, 150 %, 1.875 min, 125 %, 3.75 min, 1.59 h, 190 %, 47 %: all correct.

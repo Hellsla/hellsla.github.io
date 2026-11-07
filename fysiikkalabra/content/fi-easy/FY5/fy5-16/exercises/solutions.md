@@ -36,7 +36,7 @@
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $L = 106\,\text{dB} - 23\,\text{dB} = 83\,\text{dB}$
 **Vastaus:** $83\,\text{dB}$, kokonaisina desibeleinä kuten lähtötiedot.
-**Järkevyys:** Taso jää ylemmän toiminta-arvon $85\,\text{dB}$ alle. Ylempää toiminta-arvoa vastaava annos ei siis täyty työpäivän aikana, jos suojaimet ovat hyvin paikallaan ja niitä pidetään koko ajan. Taso on kuitenkin yli alemman toiminta-arvon $80\,\text{dB}$. Vertailuannosta pienempi annos ei myöskään takaa, että kuulo on turvassa. Ilman suojaimia vertailuaika olisi noin $4\,\text{min}$.
+**Järkevyys:** Toiminta-arvoihin verrataan altistusta ilman suojaimia. Taso $106\,\text{dB}$ ylittää kummankin toiminta-arvon, joten suojaimia on käytettävä. Korvalle tuleva $83\,\text{dB}$ jää altistuksen raja-arvon $87\,\text{dB(A)}$ alle. Vertailuannos ei siis täyty työpäivän aikana, jos suojaimet ovat hyvin paikallaan ja niitä pidetään koko ajan. Vertailuannosta pienempi annos ei silti takaa, että kuulo on turvassa. Ilman suojaimia vertailuaika olisi noin $4\,\text{min}$.
 
 ## fy5-16-L1-05
 **Kysytty:** kuuluuko kukin keino lähteeseen, kulkutiehen vai korvaan
@@ -100,9 +100,9 @@ Kaikki erotukset ovat lähellä odotettua $6{,}0\,\text{dB}$:ä. Suurin poikkeam
 **Annettu:** $t_1 = 4{,}0\,\text{h}$ tasolla $L_1 = 88\,\text{dB}$, $t_2 = 4{,}0\,\text{h}$ tasolla $L_2 = 82\,\text{dB}$; vertailu $L_0 = 85\,\text{dB}$ ja $t_0 = 8\,\text{h}$
 **Kysytty:** päivän annos prosentteina vertailuannoksesta
 **Periaate:** Annos on korvaan kertynyt energia. Eri jaksojen osuudet lasketaan siis yhteen. Kunkin jakson osuus on sen keston ja kyseisen tason vertailuajan suhde.
-**Kaava:** $t_{\text{sall},i} = \dfrac{t_0}{2^{\,n_i}}$, missä $n_i = \dfrac{L_i - L_0}{3\,\text{dB}}$, ja annos $= \left(\dfrac{t_1}{t_{\text{sall},1}} + \dfrac{t_2}{t_{\text{sall},2}}\right) \cdot 100\,\%$
+**Kaava:** $t_{\text{v},i} = \dfrac{t_0}{2^{\,n_i}}$, missä $n_i = \dfrac{L_i - L_0}{3\,\text{dB}}$, ja annos $= \left(\dfrac{t_1}{t_{\text{v},1}} + \dfrac{t_2}{t_{\text{v},2}}\right) \cdot 100\,\%$
 **Muunnokset:** Ei tarvita. Ajat ovat tunteina, ja yksikkö supistuu.
-**Sijoitus:** $n_1 = 1$, joten $t_{\text{sall},1} = 8\,\text{h} : 2 = 4{,}0\,\text{h}$. $n_2 = \dfrac{82\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = -1$, joten $t_{\text{sall},2} = 8\,\text{h} \cdot 2 = 16\,\text{h}$. Annos $= \left(\dfrac{4{,}0\,\text{h}}{4{,}0\,\text{h}} + \dfrac{4{,}0\,\text{h}}{16\,\text{h}}\right) \cdot 100\,\% = (1 + 0{,}25) \cdot 100\,\% = 125\,\%$
+**Sijoitus:** $n_1 = 1$, joten $t_{\text{v},1} = 8\,\text{h} : 2 = 4{,}0\,\text{h}$. $n_2 = \dfrac{82\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = -1$, joten $t_{\text{v},2} = 8\,\text{h} \cdot 2 = 16\,\text{h}$. Annos $= \left(\dfrac{4{,}0\,\text{h}}{4{,}0\,\text{h}} + \dfrac{4{,}0\,\text{h}}{16\,\text{h}}\right) \cdot 100\,\% = (1 + 0{,}25) \cdot 100\,\% = 125\,\%$
 **Vastaus:** $125\,\%$. Ajat on annettu kahden numeron tarkkuudella, joten tulos on arvio, noin $1{,}3$-kertainen annos. Päivittäinen altistus ylittää ylemmän toiminta-arvon. Kuulonsuojaimia on siis käytettävä, ja melua on vähennettävä.
 **Järkevyys:** Jo lastauslaiturin $4\,\text{h}$ täyttää koko annoksen, joten tuloksen täytyy olla yli $100\,\%$. Pakkaamon osuus on pieni. Siellä intensiteetti on vain neljäsosa laiturin intensiteetistä.
 
@@ -201,10 +201,10 @@ t_\text{v} &= \frac{8\,\text{h}}{2^{\,8}} \\
 **Annettu:** sahaus $L_1 = 97\,\text{dB}$, $t_1 = 1{,}0\,\text{h}$; höyläys $L_2 = 91\,\text{dB}$, $t_2 = 2{,}0\,\text{h}$; kokoaminen $L_3 = 85\,\text{dB}$, $t_3 = 3{,}0\,\text{h}$; vertailu $L_0 = 85\,\text{dB}$ ja $t_0 = 8\,\text{h}$
 **Kysytty:** a) päivän annos prosentteina; b) kuulonsuojainten pienin vaimennus $\Delta L$; c) riittääkö sahan koteloiminen
 **Periaate:** Annos on korvaan kertynyt energia. Vaiheiden osuudet lasketaan siis yhteen. Osuus on keston ja kyseisen tason vertailuajan suhde. Kuulonsuojain pienentää kaikkien vaiheiden intensiteettiä samalla kertoimella. Siksi annos jaetaan luvulla $2^{\,\Delta L / (3\,\text{dB})}$.
-**Kaava:** $t_{\text{sall},i} = \dfrac{t_0}{2^{\,n_i}}$, missä $n_i = \dfrac{L_i - L_0}{3\,\text{dB}}$; annos $D = \sum \dfrac{t_i}{t_{\text{sall},i}}$; ehto $\dfrac{D}{2^{\,\Delta L / (3\,\text{dB})}} \le 1$
+**Kaava:** $t_{\text{v},i} = \dfrac{t_0}{2^{\,n_i}}$, missä $n_i = \dfrac{L_i - L_0}{3\,\text{dB}}$; annos $D = \sum \dfrac{t_i}{t_{\text{v},i}}$; ehto $\dfrac{D}{2^{\,\Delta L / (3\,\text{dB})}} \le 1$
 **Muunnokset:** Ei tarvita. Ajat ovat tunteina, ja yksikkö supistuu.
 **Sijoitus:**
-Sahaus: $n_1 = \dfrac{97 - 85}{3} = 4$, joten $t_{\text{sall},1} = 8\,\text{h} : 16 = 0{,}50\,\text{h}$ ja osuus on $1{,}0\,\text{h} : 0{,}50\,\text{h} = 2{,}0$. Höyläys: $n_2 = 2$, $t_{\text{sall},2} = 2{,}0\,\text{h}$ ja osuus $1{,}0$. Kokoaminen: $n_3 = 0$, $t_{\text{sall},3} = 8\,\text{h}$ ja osuus $0{,}375$.
+Sahaus: $n_1 = \dfrac{97 - 85}{3} = 4$, joten $t_{\text{v},1} = 8\,\text{h} : 16 = 0{,}50\,\text{h}$ ja osuus on $1{,}0\,\text{h} : 0{,}50\,\text{h} = 2{,}0$. Höyläys: $n_2 = 2$, $t_{\text{v},2} = 2{,}0\,\text{h}$ ja osuus $1{,}0$. Kokoaminen: $n_3 = 0$, $t_{\text{v},3} = 8\,\text{h}$ ja osuus $0{,}375$.
 $$\begin{aligned}
 D &= 2{,}0 + 1{,}0 + 0{,}375 \\
 &= 3{,}375
@@ -216,7 +216,7 @@ $$\begin{aligned}
 &= 3\,\text{dB} \cdot 1{,}755 \\
 &= 5{,}26\,\text{dB}
 \end{aligned}$$
-Kohta c: kotelo laskee sahauksen tason arvoon $87\,\text{dB}$. Silloin $n_1 = \dfrac{2}{3}$ ja $t_{\text{sall},1} = \dfrac{8\,\text{h}}{2^{2/3}} = 5{,}04\,\text{h}$. Osuus on $1{,}0 : 5{,}04 = 0{,}198$. Uusi annos on $D = 0{,}198 + 1{,}0 + 0{,}375 = 1{,}57$.
+Kohta c: kotelo laskee sahauksen tason arvoon $87\,\text{dB}$. Silloin $n_1 = \dfrac{2}{3}$ ja $t_{\text{v},1} = \dfrac{8\,\text{h}}{2^{2/3}} = 5{,}04\,\text{h}$. Osuus on $1{,}0 : 5{,}04 = 0{,}198$. Uusi annos on $D = 0{,}198 + 1{,}0 + 0{,}375 = 1{,}57$.
 **Vastaus:** a) noin $340\,\%$. b) vähintään $5{,}3\,\text{dB}$. c) Kotelo ei riitä yksin, koska annos on edelleen noin $160\,\%$ vertailuannoksesta. Kotelon lisäksi tarvitaan esimerkiksi kuulonsuojaimet, joiden vaimennus on vähintään $\dfrac{3\,\text{dB} \cdot \lg 1{,}57}{\lg 2} = 2{,}0\,\text{dB}$. Toinen keino on sijoittaa höyläyskone erilleen työpisteestä.
 **Järkevyys:** Sahaus ja höyläys ovat yli toiminta-arvon. Annoksen täytyy siis olla yli $100\,\%$. Tavalliset suojaimet vaimentavat $20$–$30\,\text{dB}$, joten $5{,}3\,\text{dB}$ täyttyy helposti.
 

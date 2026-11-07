@@ -36,7 +36,7 @@
 **Conversions:** Not needed.
 **Substitution:** $L = 106\,\text{dB} - 23\,\text{dB} = 83\,\text{dB}$
 **Answer:** $83\,\text{dB}$, in whole decibels like the given values.
-**Reasonableness:** The level stays below the upper action value $85\,\text{dB}$, so the dose of the upper action value is not reached during the working day if the protectors are well fitted and worn all the time. The level is still above the lower action value $80\,\text{dB}$, and staying below the reference dose does not guarantee safe hearing. Without protectors the reference time would be about $4\,\text{min}$.
+**Reasonableness:** The action values are compared with the exposure without protectors: $106\,\text{dB}$ exceeds both action values, so protectors must be used. The $83\,\text{dB}$ at the ear stays below the exposure limit value $87\,\text{dB(A)}$, and the reference dose is not reached during the working day if the protectors are well fitted and worn all the time. Staying below the reference dose still does not guarantee safe hearing. Without protectors the reference time would be about $4\,\text{min}$.
 
 ## fy5-16-L1-05
 **Find:** whether each measure belongs to the source, the path or the ear
@@ -100,9 +100,9 @@ All the differences are close to the expected $6.0\,\text{dB}$, and the largest 
 **Given:** $t_1 = 4.0\,\text{h}$ at a level $L_1 = 88\,\text{dB}$, $t_2 = 4.0\,\text{h}$ at a level $L_2 = 82\,\text{dB}$; reference $L_0 = 85\,\text{dB}$ and $t_0 = 8\,\text{h}$
 **Find:** the day's dose as a percentage of the reference dose
 **Principle:** The dose is the energy accumulated in the ear, so the shares of the different periods are added. The share of each period is the ratio of its duration to the reference time at that level.
-**Formula:** $t_{\text{perm},i} = \dfrac{t_0}{2^{\,n_i}}$, where $n_i = \dfrac{L_i - L_0}{3\,\text{dB}}$, and dose $= \left(\dfrac{t_1}{t_{\text{perm},1}} + \dfrac{t_2}{t_{\text{perm},2}}\right) \cdot 100\,\%$
+**Formula:** $t_{\text{ref},i} = \dfrac{t_0}{2^{\,n_i}}$, where $n_i = \dfrac{L_i - L_0}{3\,\text{dB}}$, and dose $= \left(\dfrac{t_1}{t_{\text{ref},1}} + \dfrac{t_2}{t_{\text{ref},2}}\right) \cdot 100\,\%$
 **Conversions:** Not needed: the times are in hours, and the unit cancels.
-**Substitution:** $n_1 = 1$, so $t_{\text{perm},1} = 8\,\text{h} : 2 = 4.0\,\text{h}$. $n_2 = \dfrac{82\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = -1$, so $t_{\text{perm},2} = 8\,\text{h} \cdot 2 = 16\,\text{h}$. Dose $= \left(\dfrac{4.0\,\text{h}}{4.0\,\text{h}} + \dfrac{4.0\,\text{h}}{16\,\text{h}}\right) \cdot 100\,\% = (1 + 0.25) \cdot 100\,\% = 125\,\%$
+**Substitution:** $n_1 = 1$, so $t_{\text{ref},1} = 8\,\text{h} : 2 = 4.0\,\text{h}$. $n_2 = \dfrac{82\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = -1$, so $t_{\text{ref},2} = 8\,\text{h} \cdot 2 = 16\,\text{h}$. Dose $= \left(\dfrac{4.0\,\text{h}}{4.0\,\text{h}} + \dfrac{4.0\,\text{h}}{16\,\text{h}}\right) \cdot 100\,\% = (1 + 0.25) \cdot 100\,\% = 125\,\%$
 **Answer:** $125\,\%$. The times are given to two figures, so the result is an estimate, about $1.3$ times the dose. The daily exposure exceeds the upper action value, so hearing protectors must be used and the noise must be reduced.
 **Reasonableness:** The $4\,\text{h}$ at the loading dock alone fill the whole dose, so the result must be over $100\,\%$. The share of the packing room is small, because there the intensity is only a quarter of the intensity at the dock.
 
@@ -201,10 +201,10 @@ t_\text{ref} &= \frac{8\,\text{h}}{2^{\,8}} \\
 **Given:** sawing $L_1 = 97\,\text{dB}$, $t_1 = 1.0\,\text{h}$; planing $L_2 = 91\,\text{dB}$, $t_2 = 2.0\,\text{h}$; assembly $L_3 = 85\,\text{dB}$, $t_3 = 3.0\,\text{h}$; reference $L_0 = 85\,\text{dB}$ and $t_0 = 8\,\text{h}$
 **Find:** a) the day's dose as a percentage; b) the smallest attenuation $\Delta L$ of the hearing protectors; c) whether enclosing the saw is enough
 **Principle:** The dose is the energy accumulated in the ear, so the shares of the stages are added. The share is the ratio of the duration to the reference time at that level. A hearing protector lowers the intensity of all stages by the same factor, so the dose is divided by the number $2^{\,\Delta L / (3\,\text{dB})}$.
-**Formula:** $t_{\text{perm},i} = \dfrac{t_0}{2^{\,n_i}}$, where $n_i = \dfrac{L_i - L_0}{3\,\text{dB}}$; dose $D = \sum \dfrac{t_i}{t_{\text{perm},i}}$; condition $\dfrac{D}{2^{\,\Delta L / (3\,\text{dB})}} \le 1$
+**Formula:** $t_{\text{ref},i} = \dfrac{t_0}{2^{\,n_i}}$, where $n_i = \dfrac{L_i - L_0}{3\,\text{dB}}$; dose $D = \sum \dfrac{t_i}{t_{\text{ref},i}}$; condition $\dfrac{D}{2^{\,\Delta L / (3\,\text{dB})}} \le 1$
 **Conversions:** Not needed: the times are in hours, and the unit cancels.
 **Substitution:**
-Sawing: $n_1 = \dfrac{97 - 85}{3} = 4$, so $t_{\text{perm},1} = 8\,\text{h} : 16 = 0.50\,\text{h}$ and the share is $1.0\,\text{h} : 0.50\,\text{h} = 2.0$. Planing: $n_2 = 2$, $t_{\text{perm},2} = 2.0\,\text{h}$ and the share $1.0$. Assembly: $n_3 = 0$, $t_{\text{perm},3} = 8\,\text{h}$ and the share $0.375$.
+Sawing: $n_1 = \dfrac{97 - 85}{3} = 4$, so $t_{\text{ref},1} = 8\,\text{h} : 16 = 0.50\,\text{h}$ and the share is $1.0\,\text{h} : 0.50\,\text{h} = 2.0$. Planing: $n_2 = 2$, $t_{\text{ref},2} = 2.0\,\text{h}$ and the share $1.0$. Assembly: $n_3 = 0$, $t_{\text{ref},3} = 8\,\text{h}$ and the share $0.375$.
 $$\begin{aligned}
 D &= 2.0 + 1.0 + 0.375 \\
 &= 3.375
@@ -216,7 +216,7 @@ $$\begin{aligned}
 &= 3\,\text{dB} \cdot 1.755 \\
 &= 5.26\,\text{dB}
 \end{aligned}$$
-Part c: the enclosure lowers the level of sawing to $87\,\text{dB}$, whereby $n_1 = \dfrac{2}{3}$ and $t_{\text{perm},1} = \dfrac{8\,\text{h}}{2^{2/3}} = 5.04\,\text{h}$, and the share is $1.0 : 5.04 = 0.198$. The new dose is $D = 0.198 + 1.0 + 0.375 = 1.57$.
+Part c: the enclosure lowers the level of sawing to $87\,\text{dB}$, whereby $n_1 = \dfrac{2}{3}$ and $t_{\text{ref},1} = \dfrac{8\,\text{h}}{2^{2/3}} = 5.04\,\text{h}$, and the share is $1.0 : 5.04 = 0.198$. The new dose is $D = 0.198 + 1.0 + 0.375 = 1.57$.
 **Answer:** a) about $340\,\%$. b) at least $5.3\,\text{dB}$. c) It is not enough alone, because the dose is still about $160\,\%$ of the reference dose. In addition to the enclosure, for example hearing protectors with an attenuation of at least $\dfrac{3\,\text{dB} \cdot \lg 1.57}{\lg 2} = 2.0\,\text{dB}$ are needed, or the planer could be placed away from the workstation.
 **Reasonableness:** Sawing and planing are above the action value, so the dose must be over $100\,\%$. Ordinary protectors attenuate $20$–$30\,\text{dB}$, so $5.3\,\text{dB}$ is easily met.
 

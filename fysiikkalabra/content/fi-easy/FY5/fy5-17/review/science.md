@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: f46b0497089516a3
+CONTENT-HASH: d1f04d839bde9393
 
 ## Blocking
 (none)
@@ -8,4 +8,4 @@ CONTENT-HASH: f46b0497089516a3
 (none)
 
 ## Checked
-batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Terms: ultraääni, heijastuminen (part returns at a boundary between two materials) and maanjäristysaalto (from the rupture, through crust and interior) agree with the lesson.
+light delta review (teacher 2026-11-07): only the changed passages of the batch packet's diff (= git diff origin/main) judged in context, not a full review; reflection percentages as typical normal-incidence model values depending on tissue and angle; ultrasound non-ionising but heating and cavitation, so power and duration limited: correct.

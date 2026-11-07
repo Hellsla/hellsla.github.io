@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 2a5a372104aa7adf
+CONTENT-HASH: e3f9f20d84240585
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: the diff only renames this and neighbouring FY5 chapters (title, meta.json, `luku *...*` references in lesson.md and inquiry.json); every renamed reference names the chapter that holds the cited content, and no formula, number, option, `correct` flag or feedback physics changed. Every choice still has exactly one correct option.
+- light delta review (teacher 2026-11-07): only the passages changed against origin/main were judged, in context, not a full review; ambulance caption (higher pitch approaching, lower receding) correct; the worked example's on-line idealisation and the remark that an observer beside the track hears a gradual drop that tends to 341 Hz and 286 Hz far from the pass are correct (numbers unchanged).

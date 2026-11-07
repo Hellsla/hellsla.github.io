@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 7eec6ef637658e2d
+CONTENT-HASH: 5bc694b064e3028d
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: the diff only renames this and neighbouring FY5 chapters (title, meta.json, `luku *...*` references in lesson.md and inquiry.json); every renamed reference names the chapter that holds the cited content, and no formula, number, option, `correct` flag or feedback physics changed. Opening illustration redrawn: its alt text and capture show the situation correctly (no labels or numbers in the lesson's other figures changed). Every choice still has exactly one correct option.
+- light delta review (teacher 2026-11-07): only the passages changed against origin/main were judged, in context, not a full review; reflection percentages now labelled as typical model values for normal incidence (they depend on tissues and angle): correct; non-ionising but not harmless (heating, cavitation), limits on power and duration and examination only when needed: correct and suitably worded as safety content.

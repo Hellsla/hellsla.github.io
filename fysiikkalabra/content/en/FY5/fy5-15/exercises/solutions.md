@@ -19,7 +19,7 @@
 **Reasonableness:** The intensity is between $10^{-5}$ and $10^{-4}\,\text{W/m}^2$, so the level must be between $70$ and $80\,\text{dB}$. A vacuum cleaner is usually about as loud as a busy street.
 
 ## fy5-15-L1-03
-**Given:** sound intensity level $L = 95\,\text{dB}$, threshold of hearing $I_0 = 1.0 \cdot 10^{-12}\,\text{W/m}^2$
+**Given:** the meter reading, taken as the sound intensity level in a free sound field, $L = 95\,\text{dB}$, threshold of hearing $I_0 = 1.0 \cdot 10^{-12}\,\text{W/m}^2$
 **Find:** the intensity $I$ in $\text{W/m}^2$
 **Principle:** The level is ten times the logarithm of the ratio of the intensities. The intensity is obtained by dividing the equation by $10\,\text{dB}$ and using the definition of the logarithm: if $\lg x = y$, then $x = 10^y$.
 **Formula:** $L = 10\,\text{dB} \cdot \lg \dfrac{I}{I_0}$, so $\lg \dfrac{I}{I_0} = \dfrac{L}{10\,\text{dB}}$ and $I = I_0 \cdot 10^{\,L/(10\,\text{dB})}$
