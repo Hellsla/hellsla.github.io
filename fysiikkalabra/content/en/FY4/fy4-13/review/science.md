@@ -1,9 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 53a6c9035667e48c
-
+CONTENT-HASH: 79fe94089f0ca1f9
 ## Blocking
 
 ## Polish
+- lesson.md:299 — step 3 calls $a$ the "acceleration magnitude"; with an assumed direction the solved $a$ may be negative (signed component). Optional: "the same $a$ (along the string)".
 
 ## Checked
-Delta review: experiment names for the situation selector now "situation" instead of Finnish "tilanne" (two experiments). The simulation's two-body free-body diagram captions come from lang/en.json sims.fy4-13.vk1_kaksi / vk2_kaksi: "Free-body diagram: m_1" / "m_2", same content as Finnish "Voimakuvio: m_1" / "m_2", same form as vk1/vk2. check_i18n 0 errors.
+- Step 2 addition: assume a positive direction consistent along the string; a negative solution means the opposite acceleration — correct for frictionless systems.
+- Friction caveat: direction of kinetic friction depends on the motion, so a negative result must be rechecked (the system may stay at rest or move the other way with a different friction direction) — correct.
+- Summary carries the same rule in the same words.
+- Atwood formula, $m_1 g < T < m_2 g$, worked example and inquiry untouched and consistent with the change.

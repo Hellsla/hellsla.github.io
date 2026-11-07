@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: de8ddb6c3da9412d
+CONTENT-HASH: 99550b898b2febe7
+
+Light delta review (teacher 2026-11-07): the diff against origin/main and what it touches.
 
 ## Blocking
+(none)
 
 ## Polish
+- lesson.md:648 — Tulos lists the distance 60 m among the two-significant-figure data; by the teacher's rule (2026-11-07) the integer 60 m is exact — name only 4,0 m/s and 0,50 m/s² as limiting (result 2 s.f. unchanged)
 
 ## Checked
-Compared lesson.md, inquiry.json, exit-ticket.json, meta.json and figures.json line by line and number by number against the Finnish: every step, justification, hint, feedback, model answer and number agrees (a script found no numeric difference outside the figures). The signed-area statement (the part below the time axis, v < 0, counts as negative) is kept in the lesson text, the summary, the simulation's calc box and the figure descriptions. The English term for putoamiskiihtyvyys is acceleration of free fall (kept consistent with the course title 'Acceleration of free fall: v = gt'), used the same way everywhere. The simulation labels (sims.fy4-2) are translated with every placeholder and formula kept. The experiments in this lesson have no option-label values, only the measure labels x (m) and v (m/s), which are language-neutral. No Finnish remains in the English files. Nothing needed fixing.
-
-Re-check after the Finnish fixes (2026-11-01): the English lesson carries the air-resistance condition for a = g in the common-mistake paragraph ('When air resistance is small' / 'Kun ilmanvastus on pieni') and the colon division in the reasonableness step, matching the Finnish; no other file differs in meaning from the Finnish. check_i18n.py: 0 errors. Nothing needed fixing.
+- lesson.md:660 summary: signed area between the (t,v) line and the time axis = displacement, part below axis negative: correct and consistent with the theory section and the formula figure
+- Recomputed nothing new: the change carries no number

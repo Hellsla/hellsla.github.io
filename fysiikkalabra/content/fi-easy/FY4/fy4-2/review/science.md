@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9eda2879ea71e124
+CONTENT-HASH: 552f60d222fd7a63
+
+Light delta review (teacher 2026-11-07): the diff against origin/main and what it touches.
 
 ## Blocking
 (none)
 
 ## Polish
-- meta.json "hetkellinen nopeus": a speedometer shows speed without direction; fine for the example.
+- lesson.md:648 — Tulos lists the distance 60 m among the two-significant-figure data; by the teacher's rule (2026-11-07) the integer 60 m is exact — name only 4,0 m/s and 0,50 m/s² as limiting (result 2 s.f. unchanged)
 
 ## Checked
-- batch delta review: key_concepts, reworded sentences, photo captions, objective-form and level-policy edits, chapter-reference titles judged against the guardrails and the lesson text; restyled figure lines are styling only.
+- lesson.md:660 summary: signed area between the (t,v) line and the time axis = displacement, part below axis negative: correct and consistent with the theory section and the formula figure
+- Recomputed nothing new: the change carries no number

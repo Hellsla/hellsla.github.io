@@ -1,12 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 984ee5cc554c2171
+CONTENT-HASH: ba91c144201bfa51
+
+Light delta review (teacher 2026-11-07): the diff against origin/main and what it touches.
 
 ## Blocking
+(none)
 
 ## Polish
-- Outside this chapter: content/en/FY4/fy4-12 uses the same `names.tapaus: tapaus` (Finnish word shown in the Locked line); the reviewer of that chapter may want 'case'. Also the SVG coordinate-comma damage was a plain decimal-separator replace; other en chapters with inquiry-embedded SVGs could be grepped for `M[0-9]+\.[0-9]+ L`.
-- The sim labels (lang/en.json sims.fy4-1) are fine; lang/fi-easy.json sim labels are not simplified, outside this review.
+(none)
 
 ## Checked
-Compared lesson.md, inquiry.json (all 21 activities: prompts, choices, feedback, hints, mistake values and feedback, solutions, criteria, model answer), exit-ticket.json, meta.json and figures.json against the Finnish. A script compared all 305 inquiry fields: the same keys, the same non-text values, the same numbers (decimal comma read as point) and the same count of $...$ mentions in every field; no difference. The same script found no decimal comma in any en file and no Finnish words outside glossary/section keys and the sim parameter keys. Figure texts (aria-labels, figures.json) match the Finnish number by number (x1 = 2 m, x2 = 8 m, +6 m, -5 m, 20 m / 120 m / 170 m, 4 km). The SVGs of the two inquiry graphs were compared against the Finnish SVGs: FIXED a real error, the decimal commas inside SVG coordinates had been turned into points (path d= 'M496,286' became 'M496.286', polyline points '92,240.5' became '92.240.5'), which would have drawn the measured-data and back-and-forth graphs wrongly; the SVG bodies are now the Finnish ones with only the aria-label and the label 'fitted line' translated. FIXED names.tapaus: 'tapaus' (Finnish, shown to the student in the Locked line of the three experiments) is now 'case', matching the simulation label 'Case'. Hook and runner wording: the number and unit sentences now say what the Finnish says ('covers 150 m in 20 s at a uniform speed', 'rides steadily 2.0 km'). Re-checked the worked example by hand: v = 100 m / 40 s = 2.5 m/s, x = 20 m + 150 m = 170 m = 1.7*10^2 m, 9 km/h; sled 5.0 m/s, 39 m, x0 = -11 m; check-2 13 m, 4.8 s, 5.2 s. Ran check_i18n (en 0 errors), build.py fy4-1, check_layout.py fy4-1 at 360 and 1280 px (en OK; the script has no --lang option, it checks all language previews), figures.py fy4-1 --lang en --check (up to date).
-- Delta review (984ee5cc554c2171): Delta since the passed version: the Finnish exp-1 and exp-3 Vastaus lines changed a colon to a comma (punctuation only); the English lines already read 'two significant figures, because' and match. Numbers, units and physics unchanged. check_i18n en 0 errors.
+- lesson.md:346 (t,x) graph: slope = velocity, |slope| = speed, sign = direction; rising/falling/horizontal correct; agrees with inquiry model answer ("jyrkkyys kertoo suuruuden ja nousu tai lasku suunnan") and glossary
+- lesson.md:475 Tulos: recomputed v = 100 m / 40 s = 2,5 m/s, x(60 s) = 20 m + 150 m = 170 m
+- Significant figures follow the teacher's rule (integers exact): no rounding needed, 170 m exact in the model; old 1,7·10² m form removed everywhere (no stale copy in inquiry.json, exit ticket, lesson-answers.py)
+- Järkevyys (100 m per 40 s, +50 m in 20 s, 9 km/h) still consistent with the new Tulos

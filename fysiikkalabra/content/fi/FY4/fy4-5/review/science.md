@@ -1,23 +1,15 @@
-VERDICT: PASS
-CONTENT-HASH: df3ef99aaf2cf768
+VERDICT: FAIL
+CONTENT-HASH: 103a331487484b75
+
+Light delta review (teacher 2026-11-07): the diff against origin/main and what it touches.
 
 ## Blocking
+- lesson.md:438 — A: Tulos says the precision of both results is limited by g = 9,81 m/s², but a = (T cos α − F_μ)/m uses no g; with 12 kg, 80 N, 30 N and 35° exact, a = 2,961… is not limited by any datum — say that a is computed from exact values and given to three figures, and that g limits only N
 
 ## Polish
-- sim.js:57 — v is still capped silently at 12 m/s while the readout keeps showing a > 0 (carried over). Either say in the sim box that the model stops speeding up at 12 m/s, or stop the run at the cap.
-- lesson.md (Ydinajatus) — "Liikkeen ratkaisee … kokonaisvoima" would be safer as "Liikkeen muutoksen ratkaisee" (carried over).
-- lesson.md (Yleinen virhekäsitys) — "vinossa työnnössä suurempi": add "alaspäin", because a push slanted upward lowers N (carried over).
-- inquiry.json solution diagrams with `pinta` — the surface is hatched inside the voimakuvio, but the text says no surfaces are drawn there. This comes from the tool, not the lesson (carried over).
-- lesson.md hero / inquiry.json hook — the hero is set on snow while the inquiry is set on ice. The physics is unaffected (carried over).
+(none)
 
 ## Checked
-- Reason for this review: sim.js changed only its scale (S 0.32 → 0.34), the rectangle's size and position, and the label size. The physics (forces(), simState, adapter) is unchanged.
-- At the new scale the extreme cases fit the canvas: push with F = 150 N, α = 80°, m = 40 kg gives N = 540 N, which is 184 px and so the top of the arrow at y ≈ 61. G = 392 N reaches y ≈ 361. 150 sin 80° = 148 N < 196 N, so the sled never leaves the ice.
-- The sim screenshot at 1280 px matches the model: G = 196 N, N = 146 N, F_x = 87 N, |F_y| = 50 N and a = 4,33 m/s², and the N arrow is shorter than the G arrow.
-- One script recomputed the worked example, pred-1, pred-2, exp-1 at 0°, 30° and 60°, exp-2, aineisto, siirto, check-2, check-3 and every mistake value. All agree with lesson-answers.py and the text.
-- The esimerkki SVG is to scale at 1,15 px/N for G, N, T, F_μ, T_x and T_y, and T is drawn at 35,1°. In the tilanne figure N + T_y = G (84 + 29 = 113 px), with T drawn at 30°.
-- Option figures (checked in figures.py and the renders): hissi-a has N = 1,3 G and is right. b (N = G), c (v drawn as a red force) and d (N < G) each carry one error, and their feedback names it correctly. virhe's only error is the forward F.
-- Exactly one option is correct in every choice item. The distractor feedback, the explain model answers and the exit ticket agree with the theory.
-- exp-1 locks tapa, F and m and varies α. simState gives N, Fx and a at those settings.
-- "FAIL sims" does not reproduce: scripts/test_sims.py fy4-5 passes for fi, en and fi-easy.
-- The hash was the same at the start and the end.
+- lesson.md:438 recomputed: T_x = 65,53 N, T_y = 45,89 N, a = 35,53/12 = 2,961 m/s², N = 117,72 − 45,89 = 71,83 N: 2,96 m/s² and 71,8 N correct
+- N limited by g (3 s.f.): correct
+- Järkevyys: 71,8 + 45,9 ≈ 118 N, frictionless 65,5/12 ≈ 5,5 m/s²: consistent with the new values; no stale 3,0 m/s² / 72 N / 46 N elsewhere (inquiry.json, exit ticket)

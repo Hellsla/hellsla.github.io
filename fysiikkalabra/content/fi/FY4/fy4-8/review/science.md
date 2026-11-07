@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: d00b795ae3ab58a7
-
+CONTENT-HASH: 4c6d1b52905374f8
 ## Blocking
 
 ## Polish
-- lesson.md:361 — "matalampi kuin ensimmäinen ja matalampi kuin korkeus, jolle…" is correct. The second condition implies the first. You could write "mekaaninen energia" for "energia" so it matches the model answer.
-- lesson.md (Kaava, Työ ja liike-energia) — W = F_∥ s is still used along curved track. Add "kun vastusvoima on koko ajan liikettä vastaan" (carried over from round 2).
+- lesson.md:381 — "friction and air resistance: work always negative and grows with distance" holds for sliding/rolling against a fixed surface (C at this level); "grows" of a negative quantity reads oddly — optionally say its magnitude grows.
+- lesson.md:484 — the summary's $W = F_\parallel s$ omits the new "moving in one direction" condition stated in the theory; optional half-clause for consistency.
 
 ## Checked
-- Round-2 Blocking 1 is fixed. The check-3 model now says a hill must be lower than the height the remaining mechanical energy reaches, and only that hills "yleensä" get lower. It no longer claims each hill is lower than the one before it.
-- Round-2 Blocking 2 is fixed. Criterion 2 now gives energy conservation as the reason for the start-height limit, and leftover kinetic energy as the reason a later hill must be lower.
-- The check-3 prompt now asks only why later hills are lower than the first. The prompt, the four criteria and the model answer agree.
-- lesson.md:361 (Vastaus alun kysymykseen) agrees with the check-3 model, and the earlier "matalampi kuin ensimmäinen" ambiguity is resolved.
-- The Tiivistelmä now gives the full conservation condition: no friction or air resistance, and nothing pulls or pushes. It also keeps the normal-force sentence and matches the glossary.
-- The hook's "jokainen mäki on matalampi kuin edellinen" describes this particular track's drawings, not a general rule. It is consistent (C).
-- The punctuation fix in the check-3 model (". Jokaisen") changes no physics. inquiry.json parses, and no numbers changed since round 2. The round-2 recomputation still holds: the sled, cart, swing, check-2 and sim values.
-- The sim, the exit ticket and every choice item are unchanged since round 2, which passed them.
+- Diff: $W = F_\parallel s$ now conditioned on straight-line motion in one direction — correct.
+- Derivation with signed $v_1, v_2$ and displacement: $a\,\Delta x = \tfrac12(v_2^2 - v_1^2)$ is correct for constant $a$, including turning motion; $\Sigma F_x\,\Delta x = \Delta E_\text{k}$ follows.
+- Distance vs displacement paragraph: $|\Delta x| = s$ for one-way motion; constant force uses $F_x\,\Delta x$ or piecewise — correct (ball thrown up: gravity's net work zero).
+- Resistance work $-Fs$ over the path agrees with the sim model, prediction 2 feedback ($200\,\text{N} \cdot 45{,}9\,\text{m} \approx 9{,}19\,\text{kJ}$), conclusion model answer and summary (non-conservative work grows with distance).
+- Cart example unchanged and consistent: $12\,\text{N} \cdot 3{,}0\,\text{m} = 36\,\text{J}$, $v = 6{,}0\,\text{m/s}$.
+- Energy principle section, exit ticket and inquiry untouched by the diff; no contradiction with the new text.

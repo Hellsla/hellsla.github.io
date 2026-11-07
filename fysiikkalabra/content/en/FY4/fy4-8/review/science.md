@@ -1,11 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 90cb84d87239530b
-
+CONTENT-HASH: 7174f3dc842bc79e
 ## Blocking
 
 ## Polish
+- lesson.md:381 — "friction and air resistance: work always negative and grows with distance" holds for sliding/rolling against a fixed surface (C at this level); "grows" of a negative quantity reads oddly — optionally say its magnitude grows.
+- lesson.md:484 — the summary's $W = F_\parallel s$ omits the new "moving in one direction" condition stated in the theory; optional half-clause for consistency.
 
 ## Checked
-Compared lesson.md, inquiry.json, exit-ticket.json, meta.json and figures.json with the Finnish: every step, number, justification, hint, feedback and model answer is kept, and the number sequences match exactly. Physics terms are right (weight, normal force, friction, net force, work–energy principle, conservative and non-conservative force). Fixed: the track-shape labels in the experiment tables were still Finnish (kaareva, suora) and are now curved and straight. Figure labels and descriptions are English; figures.py --check and check_latex pass.
-
-Delta review: leftover Finnish words in en names/labels/sim bar labels/figure caption are now English and match the Finnish meaning; no blocking issue.
+- Diff: $W = F_\parallel s$ now conditioned on straight-line motion in one direction — correct.
+- Derivation with signed $v_1, v_2$ and displacement: $a\,\Delta x = \tfrac12(v_2^2 - v_1^2)$ is correct for constant $a$, including turning motion; $\Sigma F_x\,\Delta x = \Delta E_\text{k}$ follows.
+- Distance vs displacement paragraph: $|\Delta x| = s$ for one-way motion; constant force uses $F_x\,\Delta x$ or piecewise — correct (ball thrown up: gravity's net work zero).
+- Resistance work $-Fs$ over the path agrees with the sim model, prediction 2 feedback ($200\,\text{N} \cdot 45{,}9\,\text{m} \approx 9{,}19\,\text{kJ}$), conclusion model answer and summary (non-conservative work grows with distance).
+- Cart example unchanged and consistent: $12\,\text{N} \cdot 3{,}0\,\text{m} = 36\,\text{J}$, $v = 6{,}0\,\text{m/s}$.
+- Energy principle section, exit ticket and inquiry untouched by the diff; no contradiction with the new text.
