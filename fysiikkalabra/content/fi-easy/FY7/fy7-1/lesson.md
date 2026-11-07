@@ -1,6 +1,6 @@
 # Magneetit, magneettinen dipoli ja magneettikenttä
 
-> **Miksi** kompassin neula osoittaa metsässä aina pohjoiseen, mutta kääntyy heti muualle, kun sen viereen tuodaan magneetti?
+> **Miksi** kompassin neula osoittaa metsässä yleensä likimain kohti pohjoista, mutta kääntyy heti muualle, kun sen viereen tuodaan magneetti?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: suunnistuskartta kivellä kuusimetsässä. Kartan päällä on kompassi. Sen vieressä on sauvamagneetti, jonka punertava ja sininen pää näkyvät. Kompassin neula on kääntynyt kohti magneettia. Se ei osoita kartan pohjoisnuolen suuntaan." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy71h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><linearGradient id="fy71h-moss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b2f2bb"/><stop offset="1" stop-color="#e9c98a"/></linearGradient></defs>
@@ -293,7 +293,9 @@ Missä viivat ovat tiheässä, siellä kenttä on voimakas. Kenttäviivat eivät
 ### Maan magneettikenttä
 Maapallolla on magneettikenttä, joka muistuttaa sauvamagneetin kenttää. Se syntyy Maan ulkoytimen sulan raudan liikkeistä ja niihin liittyvistä sähkövirroista. Kompassin neulan pohjoispää kääntyy kohti maantieteellistä pohjoista.
 
-Erinimiset navat vetävät toisiaan. Siksi maantieteellisen pohjoisnavan lähellä on Maan magneettinen **etelänapa** $\text{S}$. Maantieteellisen etelänavan lähellä on magneettinen pohjoisnapa $\text{N}$.
+Erinimiset navat vetävät toisiaan. Siksi Maan kenttä on maantieteellisen pohjoisnavan lähellä samanlainen kuin sauvamagneetin **etelänavan** $\text{S}$ kenttä. Maantieteellisen etelänavan lähellä se on samanlainen kuin sauvamagneetin pohjoisnavan $\text{N}$ kenttä.
+
+Geomagnetismissa ja navigoinnissa Maan pohjoisella pallonpuoliskolla olevaa magneettista napaa kutsutaan kuitenkin **magneettiseksi pohjoisnavaksi**. Nimet perustuvat eri tapoihin katsoa asiaa. Sauvamagneettimallissa napa nimetään sen kentän mukaan. Navigoinnissa napa nimetään sen sijainnin mukaan. Neula osoittaa vain likimain maantieteelliseen pohjoiseen. Syy on se, että magneettinen napa ei ole maantieteellisen navan kohdalla. Myös paikalliset häiriöt vaikuttavat suuntaan.
 
 Magneettiset navat eivät ole tarkalleen maantieteellisten napojen kohdalla, ja ne liikkuvat hitaasti. Siksi kompassi ei osoita aivan oikeaan pohjoiseen. Suomessa poikkeama on nykyään etelässä noin $10^\circ$ ja Lapissa noin $15^\circ$ itään. Suomessa kenttäviivat myös painuvat jyrkästi maata kohti, noin $73^\circ$–$79^\circ$ vaakatason alapuolelle. Tätä kulmaa sanotaan **inklinaatioksi**.
 
@@ -468,7 +470,7 @@ B_\text{m} &= B_\text{h}\tan\theta \\
 **Järkevyys.** Jos kulma olisi $45^\circ$, magneetin kenttä olisi yhtä suuri kuin $B_\text{h}$. Kulma on yli $45^\circ$, joten $B_\text{m}$ on suurempi kuin $14\,\mu\text{T}$. Tulos on sellainen. Kokonaiskenttä on $\sqrt{(14\,\mu\text{T})^2 + (17{,}9\,\mu\text{T})^2} \approx 22{,}7\,\mu\text{T}$. Saman tuloksen antaa $B_\text{h} : \cos 52^\circ$. Kenttä on Maan kentän suuruusluokkaa. Se sopii magneetille, joka on noin kymmenen senttimetrin päässä.
 
 ## Yleinen virhekäsitys
-Moni ajattelee, että maantieteellisen pohjoisnavan lähellä on Maan magneettinen pohjoisnapa, koska kompassi osoittaa sinne. Kompassin neulan pohjoispää on kuitenkin magneetin pohjoisnapa. Sitä vetää puoleensa eriniminen napa. Maantieteellisen pohjoisnavan lähellä on siis magneettinen etelänapa.
+Moni ajattelee, että kompassin neulan pohjoispää hakeutuu sauvamagneetin pohjoisnavan luo. Syy on se, että Maan pohjoista magneettista napaa kutsutaan magneettiseksi pohjoisnavaksi. Kompassin neulan pohjoispää on kuitenkin magneetin pohjoisnapa. Sitä vetää puoleensa eriniminen napa. Sauvamagneettimallissa maantieteellisen pohjoisnavan lähellä on siis etelänapa, vaikka geomagnetismissa sitä kutsutaan magneettiseksi pohjoisnavaksi.
 
 Toinen virhe on luulla, että magneetin navat voi erottaa katkaisemalla magneetin keskeltä. Katkaisukohtaan syntyy kaksi uutta napaa. Kummastakin palasta tulee kokonainen dipoli. Kolmas virhe on ajatella, että magneetti vetää kaikkia metalleja. Alumiinitölkki tai kuparikolikko ei tartu magneettiin, koska ne eivät ole ferromagneettisia.
 
@@ -478,7 +480,7 @@ Laskuissa yleisin virhe on laskea kohtisuorat kentät yhteen kuin tavalliset luv
 - Magneetilla on aina kaksi napaa, pohjoisnapa $\text{N}$ ja etelänapa $\text{S}$. Se on magneettinen dipoli. Samannimiset navat hylkivät ja erinimiset vetävät toisiaan. Yksittäistä napaa ei ole löydetty.
 - Ferromagneettisissa aineissa, kuten raudassa, atomidipolit muodostavat alkeisalueita. Magneetin kenttä järjestää ne. Silloin aine magnetoituu ja magneetti vetää sitä.
 - Magneettikentän suunta on se, johon kompassin neulan pohjoispää osoittaa. Kenttäviivat kulkevat magneetin ulkopuolella pohjoisnavasta etelänapaan. Viivojen tiheys kertoo kentän voimakkuuden.
-- Maantieteellisen pohjoisnavan lähellä on Maan magneettinen etelänapa. Suomessa Maan kenttä on noin $52\,\mu\text{T}$ ja osoittaa jyrkästi maahan.
+- Sauvamagneettimallissa maantieteellisen pohjoisnavan lähellä on etelänapa, vaikka geomagnetismissa sitä kutsutaan magneettiseksi pohjoisnavaksi. Suomessa Maan kenttä on noin $52\,\mu\text{T}$ ja osoittaa jyrkästi maahan.
 - Magneettivuon tiheys $\overline{B}$ on vektori, jonka yksikkö on tesla $\text{T}$. Kentät lasketaan yhteen vektoreina. Kohtisuorille kentille $B = \sqrt{B_1^2 + B_2^2}$ ja $\tan\theta = B_2 : B_1$.
 
 <svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Kuvitus: jääkaapin ovi, jossa magneetit pitävät kiinni lapsen piirustusta ja kauppalistaa. Oven teräslevy vetää magneetteja puoleensa." style="max-width:100%;font-size:24px">

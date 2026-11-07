@@ -49,7 +49,7 @@ Kuituyhteys perustuu **kokonaisheijastumiseen**. Valo pysyy kuidun ytimessä, ko
 ### Langaton lataus: muuntaja ilman rautasydäntä
 Langattoman laturin alustassa on litteä **lähetinkäämi**. Puhelimen takakuoren alla on samanlainen **vastaanotinkäämi**. Lähetinkäämissä kulkee vaihtovirta. Qi-standardin latureissa sen taajuus on noin $100$–$200\,\text{kHz}$. Virta synnyttää vaihtuvan magneettikentän, ja osa kentän vuosta kulkee vastaanotinkäämin läpi.
 
-Kun vuo muuttuu, vastaanotinkäämiin indusoituu vaihtojännite. Jännite noudattaa induktiolakia $e = -N \cdot \Delta\Phi : \Delta t$. Puhelimen elektroniikka tasasuuntaa jännitteen eli muuttaa sen tasajännitteeksi, ja sillä ladataan akkua. Laite on kuin muuntaja (luku *Muuntaja ja sähköenergian siirto*), mutta käämejä ei yhdistä rautasydän. Niiden välissä on vain ilmaa ja muovia.
+Kun vuo muuttuu, vastaanotinkäämiin indusoituu vaihtojännite. Jännite noudattaa induktiolakia: jännitteen hetkellinen arvo riippuu siitä, kuinka nopeasti vuo muuttuu kullakin hetkellä. Puhelimen elektroniikka tasasuuntaa jännitteen eli muuttaa sen tasajännitteeksi, ja sillä ladataan akkua. Laite on kuin muuntaja (luku *Muuntaja ja sähköenergian siirto*), mutta käämejä ei yhdistä rautasydän. Niiden välissä on vain ilmaa ja muovia.
 
 ### Miksi etäisyys ratkaisee
 Muuntajassa rautasydän ohjaa lähes koko vuon toisiokäämin läpi. Ilman sydäntä lähetinkäämin kenttäviivat kiertävät käämin johtimien ympäri ja kääntyvät takaisin jo lähellä käämiä. Kun puhelin on aivan alustan päällä, suuri osa vuosta kulkee vastaanottimen läpi. Kun puhelinta nostetaan, yhä harvempi kenttäviiva yltää vastaanottimeen asti. Silloin vuo ja jännite pienenevät jyrkästi.
@@ -144,14 +144,14 @@ Käämien taakse asetetaan ohut ferriittilevy. Ferriitti on aine, joka magnetoit
 ### Hukka langattomassa latauksessa
 Vastaanottimeen saadaan riittävä jännite, vaikka vain osa vuosta osuu siihen. Silloin lähetinkäämissä on kuitenkin kuljettava suurempi virta. Virta muuttaa käämien resistanssissa sähköenergiaa sisäenergiaksi teholla $P = RI^2$, joten laturi ja puhelin lämpenevät.
 
-Mittauksessa (Ravenscraft, OneZero, 2020) puhelimen lataaminen tyhjästä täyteen otti pistorasiasta johdolla $14{,}26\,\text{Wh}$. Kohdalleen asetetulla latausalustalla se vei keskimäärin $21{,}01\,\text{Wh}$ eli noin $47\,\%$ enemmän energiaa. Kun käämit olivat vähän sivussa toisistaan, lataus vei $25{,}62\,\text{Wh}$.
+Eräässä vuonna 2020 tehdyssä laitevertailussa (Ravenscraft, OneZero, 2020) puhelimen lataaminen tyhjästä täyteen otti pistorasiasta johdolla $14{,}26\,\text{Wh}$. Kohdalleen asetetulla latausalustalla se vei keskimäärin $21{,}01\,\text{Wh}$ eli noin $47\,\%$ enemmän energiaa. Kun käämit olivat vähän sivussa toisistaan, lataus vei $25{,}62\,\text{Wh}$. Ero riippuu kuitenkin laturista, puhelimesta, lataustavasta ja käämien kohdistuksesta. Siksi luvut eivät päde kaikkiin langattomiin latureihin.
 
 Jos laturin ja puhelimen välissä on kolikko tai avain, siihen syntyy pyörrevirtoja ja se kuumenee. Siksi laturi tunnistaa vieraan metalliesineen ja keskeyttää latauksen.
 
-### Induktioliesi: kattilan pohja on toisiokäämi
+### Induktioliesi: kattilan pohja toisiopuolena
 Induktiolieden lasilevyn alla on litteä kuparikela. Kelassa kulkee vaihtovirta, jonka taajuus on kymmeniä kilohertsejä. Kelan vaihtuva magneettikenttä kulkee lasin läpi kattilan pohjaan. Pohjan läpi kulkeva vuo muuttuu jatkuvasti, joten pohjaan indusoituu pyörrevirtoja. Lenzin lain mukaan ne kiertävät niin, että niiden oma kenttä vastustaa vuon muutosta.
 
-Pohjan resistanssissa pyörrevirtojen sähköenergia muuttuu pohjan sisäenergiaksi, ja kuuma pohja lämmittää ruoan. Liesi on siis muuntaja, jonka toisiokäämi on kattilan pohja. Se on yksi oikosuljettu kierros. Oikosuljettu tarkoittaa, että kierros on suljettu eikä siinä ole kuormaa.
+Pohjan resistanssissa pyörrevirtojen sähköenergia muuttuu pohjan sisäenergiaksi, ja kuuma pohja lämmittää ruoan. Induktioliesi toimii siis samaan tapaan kuin muuntaja. Kattilan metallipohja on muuntajan toisiopuoli. Pohjaan ei kuitenkaan synny yhtä tavallisen käämin kierrosta. Muuttuva magneettikenttä synnyttää pohjaan monta pyörrevirtojen reittiä.
 
 Lasi ei johda sähköä, joten siihen ei synny virtoja. Lasi lämpenee vain siksi, että kuuma kattila lämmittää sen.
 
@@ -223,7 +223,7 @@ Lasi ei johda sähköä, joten siihen ei synny virtoja. Lasi lämpenee vain siks
 <figure class="unit-photo"><img src="pics/fy7/induction-hob.webp" alt="Musta keittotaso, jossa on neljä keittoaluetta. Takana on kattila."><figcaption>Induktioliesi. Lasin alla on käämi, jossa kulkee vaihtovirta. Sen magneettikenttä tekee kattilan pohjaan pyörrevirtoja. Kattila lämpenee itse. Taso lämpenee vain kattilan takia.</figcaption></figure>
 
 ### Miksi kattilan on oltava terästä tai valurautaa
-Induktioliesi lämmittää tehokkaasti vain kattilaa, jonka pohja on ferromagneettista ainetta, kuten terästä tai valurautaa. Ferromagneettinen pohja vahvistaa kelan kenttää ja kokoaa vuon itseensä (luku *Magneetit, magneettinen dipoli ja magneettikenttä*).
+Tavalliset kotien induktioliedet on suunniteltu kattiloille, joiden pohjassa on ferromagneettista ainetta, kuten terästä tai valurautaa. Induktiolämmitys ei kuitenkaan aina vaadi ferromagneettista ainetta. Myös muut johteet lämpenevät, jos laite on suunniteltu niille. Ferromagneettinen pohja vahvistaa kelan kenttää ja kokoaa vuon itseensä (luku *Magneetit, magneettinen dipoli ja magneettikenttä*).
 
 Lisäksi teräs johtaa sähköä huonommin kuin alumiini. Pyörrevirrat kulkevat teräksessä vain ohuessa pintakerroksessa, jonka resistanssi on suuri. Siksi pohjan sisäenergia kasvaa nopeasti samalla kelan virralla.
 
@@ -370,6 +370,6 @@ Kolmas virhe koskee desibelejä. Kun vaimennus desibeleinä kaksinkertaistuu, te
 
 ## Tiivistelmä
 - Langaton laturi on muuntaja ilman rautasydäntä. Lähetinkäämin vaihtovirran vuo indusoi vastaanotinkäämiin jännitteen $e_0 = N \cdot 2\pi f \cdot \Phi_0$. Vuo ja jännite pienenevät jyrkästi, kun käämien väli kasvaa tai käämit siirtyvät sivuun.
-- Langattomassa latauksessa osa energiasta muuttuu käämien sisäenergiaksi. Mittauksessa lataus vei noin $47\,\%$ enemmän energiaa kuin johdolla.
+- Langattomassa latauksessa osa energiasta muuttuu käämien sisäenergiaksi. Eräässä laitevertailussa lataus vei noin $47\,\%$ enemmän energiaa kuin johdolla. Ero riippuu laitteista ja käämien kohdistuksesta.
 - Induktioliedessä kelan vaihtuva kenttä synnyttää kattilan pohjaan pyörrevirtoja, jotka lämmittävät pohjaa. Ferromagneettinen teräspohja kuumenee hyvin ja alumiini ja kupari huonosti. Sähköä johtamaton lasi ei kuumene itsestään lainkaan.
 - Valokuidussa valo pysyy ytimessä kokonaisheijastumalla, mutta lasi vaimentaa sitä. Vaimennukselle pätee $A = aL$ ja $A = 10\,\text{dB} \cdot \lg (P_0 : P)$. Jokainen $10\,\text{dB}$ pienentää tehon kymmenesosaan.

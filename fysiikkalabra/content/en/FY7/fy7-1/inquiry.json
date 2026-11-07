@@ -362,16 +362,16 @@
       "stage": "tarkista",
       "type": "choice",
       "title": "1. Concept",
-      "prompt": "In Finland the north end of a compass needle points towards geographic north. What magnetic pole does the Earth have near the geographic North Pole?",
+      "prompt": "In Finland the north end of a compass needle points roughly towards geographic north. The Earth is described as a bar magnet. Which pole of the bar magnet is near the geographic North Pole?",
       "choices": [
         {
           "text": "A north pole, because the compass points towards the north pole.",
-          "feedback": "Like poles repel each other, so a north pole would push the north end of the needle away. The needle is attracted by an unlike pole, that is a magnetic south pole."
+          "feedback": "Like poles repel each other, so a north pole would push the north end of the needle away. The needle is attracted by an unlike pole, that is the south pole of the bar magnet."
         },
         {
           "text": "A south pole, because it attracts the north pole of the needle.",
           "correct": true,
-          "feedback": "Correct. The north end of the needle is the north pole of a magnet, and it is attracted by an unlike pole. So near the geographic North Pole there is the Earth's magnetic south pole."
+          "feedback": "Correct. The north end of the needle is the north pole of a magnet, and it is attracted by an unlike pole. So near the geographic North Pole there is the south pole of the bar-magnet model. In geomagnetism it is nevertheless called the magnetic north pole, because the name is based on its location."
         },
         {
           "text": "Neither, because the rotation of the Earth turns the needle to the north.",
@@ -379,7 +379,7 @@
         },
         {
           "text": "Both poles, because the Earth is a magnetic dipole.",
-          "feedback": "In a dipole the poles are at different ends. The Earth's magnetic south pole is near the geographic North Pole and the magnetic north pole near the geographic South Pole."
+          "feedback": "In a dipole the poles are at different ends. The south pole of the bar-magnet model is near the geographic North Pole and its north pole near the geographic South Pole."
         }
       ]
     },

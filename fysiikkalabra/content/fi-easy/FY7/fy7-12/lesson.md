@@ -92,7 +92,7 @@ Kun tulokulmaa kasvatetaan, taitekulma kasvaa vielä nopeammin. Se lähestyy kul
 ### Rajakulma ja kokonaisheijastuminen
 Tulokulmaa, jolla taitekulma on $90^\circ$, sanotaan **rajakulmaksi** $\alpha_\text{r}$. Rajakulmassa taittunut säde kulkee pitkin rajapintaa.
 
-Kun tulokulma on suurempi kuin rajakulma, taittumislaista ei saada taitekulmaa. Sen sinin pitäisi olla suurempi kuin yksi, eikä sellaista kulmaa ole. Toiseen aineeseen ei silloin pääse valoa ollenkaan. Kaikki valo heijastuu takaisin heijastumislain mukaan. Tätä sanotaan **kokonaisheijastumiseksi**.
+Kun tulokulma on suurempi kuin rajakulma, taittumislaista ei saada taitekulmaa. Sen sinin pitäisi olla suurempi kuin yksi, eikä sellaista kulmaa ole. Toiseen aineeseen ei silloin synny etenevää taittunutta valonsädettä. Valo heijastuu takaisin heijastumislain mukaan. Ideaalisessa rajapinnassa, jossa valoa ei häviä, koko tuleva valoteho heijastuu takaisin. Rajapinnan lähelle syntyy kuitenkin hyvin nopeasti vaimeneva sähkömagneettinen kenttä. Tätä sanotaan **kokonaisheijastumiseksi**.
 
 Veden ja ilman rajapinnassa rajakulma on $48{,}8^\circ$. Siksi sukeltaja näkee vedenpinnan peilinä, kun hän katsoo sitä vinosti alhaalta. Peilistä näkyy pohja.
 
@@ -185,9 +185,9 @@ Esimerkki pitkästä yhteydestä on Cinian merikaapeli C-Lion1. Se kulkee Itäme
 Valo etenee lasissa hitaammin kuin tyhjiössä. Siksi kuitu viivästyttää signaalia vähän enemmän kuin pelkkä matka antaisi odottaa.
 
 ### Tähystin
-Lääkärin kuituendoskoopissa eli tähystimessä on kaksi kuitukimppua. Toinen kimppu vie valoa kehon sisään. Toinen tuo kuvan takaisin.
+Perinteisessä kuitutähystimessä eli kuituendoskoopissa on kaksi kuitukimppua. Toinen kimppu tuo valaistusvalon kehon sisään. Toinen välittää kuvan takaisin.
 
-Kuvakimpussa on tuhansia kuituja. Ne ovat kimpun kummassakin päässä samassa järjestyksessä. Kukin kuitu kuljettaa yhden kuvapisteen valon. Kimppu taipuu, joten sillä nähdään mutkan taakse, esimerkiksi mahalaukkuun.
+Kuvakimpussa on tuhansia kuituja. Ne ovat kimpun kummassakin päässä samassa järjestyksessä. Kukin kuitu kuljettaa yhden kuvapisteen valon. Kimppu taipuu, joten sillä nähdään mutkan taakse, esimerkiksi mahalaukkuun. Nykyaikaisissa videotähystimissä kuva voidaan tehdä myös kamerakennolla, joka on laitteen kärjessä. Silloin kuidut tuovat vain valaistuksen.
 
 ### Timantin säihke
 Timantin taitekerroin on $2{,}42$. Sen rajakulma ilmaa vasten on siksi vain $24{,}4^\circ$.

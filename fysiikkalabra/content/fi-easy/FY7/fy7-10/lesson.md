@@ -146,7 +146,7 @@ Valon kulku on käännettävissä. Jos säde kulkee ilmasta veteen tiettyä reit
 Mitä suurempi on taitekertoimien ero, sitä enemmän säde taittuu samalla tulokulmalla. Siksi timantti taittaa valoa paljon enemmän kuin vesi. Timantin taitekerroin on $2{,}42$.
 
 ### Osittainen heijastuminen
-Rajapinnassa valo jakautuu aina kahteen osaan. Yksi osa heijastuu, ja toinen menee läpi. Kun valo tulee kohtisuoraan ilmasta lasiin, lasin kummastakin pinnasta heijastuu noin $4\,\%$ valosta. Vedenpinnasta heijastuu noin $2\,\%$.
+Tavallisesti kahden läpinäkyvän aineen rajapinnassa valo jakautuu kahteen osaan. Yksi osa heijastuu, ja toinen menee läpi. Joskus näin ei kuitenkaan tapahdu. Kokonaisheijastumisessa toiseen aineeseen ei etene taittunutta valonsädettä (luku *Kokonaisheijastuminen ja valokuitu*). Brewsterin kulmassa tietty valon polarisaatiosuunta ei heijastu (luku *Valon polarisaatio*). Kun valo tulee kohtisuoraan ilmasta lasiin, lasin kummastakin pinnasta heijastuu noin $4\,\%$ valosta. Vedenpinnasta heijastuu noin $2\,\%$.
 
 Mitä suurempi tulokulma on, sitä suurempi osa heijastuu. Suuri tulokulma tarkoittaa, että valo tulee pintaa hipoen. Siksi järven pinta peilaa iltaisin rannan puut, vaikka pohja näkyy, kun katsoo suoraan alas.
 
@@ -342,7 +342,7 @@ Kolmas virhe on uskoa, että valo taittuu aina kohti normaalia. Suunta riippuu s
 Neljäs virhe on luulla, että valo taittuu, koska se ”törmää” pintaan. Valo taittuu, koska sen nopeus muuttuu.
 
 ## Tiivistelmä
-- Rajapinnassa osa valosta heijastuu ja osa taittuu. Kulmat mitataan rajapinnan normaalista.
+- Rajapinnassa osa valosta yleensä heijastuu ja osa taittuu. Kulmat mitataan rajapinnan normaalista.
 - Heijastuslaki: $\beta = \alpha_1$, ja tuleva säde, heijastunut säde ja normaali ovat samassa tasossa.
 - Taitekerroin $n = c : v$ kertoo, kuinka monta kertaa hitaammin valo etenee aineessa kuin tyhjiössä.
 - Taittumislaki: $n_1 \sin\alpha_1 = n_2 \sin\alpha_2$. Optisesti tiheämpään aineeseen säde taittuu kohti normaalia, harvempaan normaalista poispäin.

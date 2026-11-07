@@ -258,7 +258,7 @@ Pitkän suoran johtimen magneettivuon tiheys etäisyydellä $r$ johtimesta on
 ```latex
 B = \frac{\mu_0 I}{2\pi r}
 ```
-missä $B$ on magneettivuon tiheys (T), $I$ johtimen virta (A), $r$ etäisyys johtimesta (m) ja $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$ tyhjiön permeabiliteetti, luonnonvakio. Ilmassa käytetään samaa arvoa. Kenttä on suoraan verrannollinen virtaan ja kääntäen verrannollinen etäisyyteen: kaksinkertainen etäisyys puolittaa kentän. Kaava pätee, kun johdin on paljon pidempi kuin etäisyys $r$ ja muut johtimet ovat kaukana. Esimerkiksi $10\,\text{A}$:n johtimen kenttä on $1\,\text{cm}$:n etäisyydellä $200\,\mu\text{T}$, mikä on noin nelinkertainen Maan magneettikenttään noin $50\,\mu\text{T}$ verrattuna.
+missä $B$ on magneettivuon tiheys (T), $I$ johtimen virta (A), $r$ etäisyys johtimesta (m) ja $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$ tyhjiön permeabiliteetti, luonnonvakio. Ilmassa käytetään samaa arvoa. Kenttä on suoraan verrannollinen virtaan ja kääntäen verrannollinen etäisyyteen: kaksinkertainen etäisyys puolittaa kentän. Kaava pätee, kun johdin on paljon pidempi kuin etäisyys $r$ ja muut johtimet ovat kaukana. Esimerkiksi $10\,\text{A}$:n johtimen kenttä on $1\,\text{cm}$:n etäisyydellä $200\,\mu\text{T}$, mikä on noin nelinkertainen Maan magneettikenttään noin $50\,\mu\text{T}$ verrattuna.
 
 <svg data-fig="wire-graph" viewBox="0 0 600 340" role="img" aria-label="Kuvaaja mittakaavassa: suoran johtimen magneettivuon tiheys B mikrotesloina etäisyyden r funktiona senttimetreinä, kun virta on 10 A. Käyrä laskee etäisyyden kasvaessa: 1 cm:n etäisyydellä B on 200 µT, 2 cm:n etäisyydellä 100 µT ja 4 cm:n etäisyydellä 50 µT. Kun etäisyys kaksinkertaistuu, kenttä puolittuu." style="max-width:100%;font-size:24px">
   <line x1="171" y1="290" x2="171" y2="56" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -370,7 +370,7 @@ Koulun käämissä on $600$ kierrosta, ja sen pituus on $15{,}0\,\text{cm}$. Kä
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Kierrosten lukumäärä $N = 600$, käämin pituus $l = 15{,}0\,\text{cm}$, virta $I = 2{,}50\,\text{A}$ ja vakio $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$. Kysytään magneettivuon tiheyttä $B$ käämin keskellä ja sen suhdetta Maan kenttään $B_\text{Maa} = 50\,\mu\text{T}$.
+**Tunnetut ja kysytty.** Kierrosten lukumäärä $N = 600$, käämin pituus $l = 15{,}0\,\text{cm}$, virta $I = 2{,}50\,\text{A}$ ja vakio $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$. Kysytään magneettivuon tiheyttä $B$ käämin keskellä ja sen suhdetta Maan kenttään $B_\text{Maa} = 50\,\mu\text{T}$.
 
 <!-- vaihe -->
 

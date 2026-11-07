@@ -75,10 +75,10 @@ def plant(f, x, y):
 
 
 def grid():
-    f = Fig("fy78-grid", 372, "Kaavakuva sähköverkosta, ei mittakaavassa. Ylärivillä voimalaitoksen generaattorin "
+    f = Fig("fy78-grid", 372, "Kaavakuva sähköverkosta yksiviivaesityksenä, ei mittakaavassa: todellisissa kolmivaiheisissa johdoissa on kolme vaihejohdinta. Ylärivillä voimalaitoksen generaattorin "
             "jännite 20 kV nostetaan muuntajalla 400 kilovoltiksi, ja kantaverkon suuret pylväät vievät sähkön "
             "sähköasemalle. Sähköasemalla muuntaja laskee jännitteen, ja alarivillä jakeluverkon pienet pylväät vievät "
-            "20 kV:n jännitteen muuntamolle, joka laskee sen kotien 230 voltiksi.", width=640)
+            "20 kV:n jännitteen muuntamolle, joka laskee sen pienjänniteverkon jännitteeksi: kotien pistorasioissa on 230 volttia.", width=640)
     # top row: plant -> step-up transformer -> 400 kV line -> substation
     plant(f, 16, 170)
     f.line(80, 150, 152, 150, INK, 2.5)
@@ -114,7 +114,7 @@ def grid():
 def loss_graph():
     f = Fig("fy78-loss-graph", 340, "Kuvaaja mittakaavassa: siirtojohdossa lämmöksi muuttuvan tehon osuus siirretystä "
             "tehosta prosentteina siirtojännitteen funktiona kilovoltteina, kun siirretty teho on 200 MW ja johdon "
-            "resistanssi 6,0 ohmia. Käyrä laskee jyrkästi: 100 kV:lla osuus on 12 %, 200 kV:lla 3,0 % ja 400 kV:lla "
+            "resistanssi 6,0 ohmia yksinkertaistetussa kaksijohtimisessa mallissa. Käyrä laskee jyrkästi: 100 kV:lla osuus on 12 %, 200 kV:lla 3,0 % ja 400 kV:lla "
             "0,75 %. Kun jännite kaksinkertaistuu, osuus pienenee neljäsosaan.")
     ax = Axes(f, (96, 290), (470, 60), x=(0, 400), y=(0, 25), xticks=[50 * k for k in range(1, 9)],
               yticks=[5 * k for k in range(1, 6)], xlabel=r"U\ (\text{kV})", ylabel=r"P_\text{h} : P\ (\%)",

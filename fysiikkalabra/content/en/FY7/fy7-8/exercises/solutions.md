@@ -26,7 +26,7 @@
 **Conversions:** $U_1 = 20\,\text{kV} = 20 \cdot 1000\,\text{V} = 20\,000\,\text{V}$, so that the voltages are in the same unit.
 **Substitution:** $I_1 = \dfrac{250\,\text{A} \cdot 400\,\text{V}}{20\,000\,\text{V}} = 5.0\,\text{A}$
 **Answer:** $5.0\,\text{A}$, two significant figures like the voltage $20\,\text{kV}$.
-**Reasonableness:** Power is conserved: $20\,000\,\text{V} \cdot 5.0\,\text{A} = 100\,\text{kW}$ and $400\,\text{V} \cdot 250\,\text{A} = 100\,\text{kW}$. The primary current of a step-down transformer is smaller than the secondary current, as it should be.
+**Reasonableness:** Power is conserved: $20\,000\,\text{V} \cdot 5.0\,\text{A} = 100\,\text{kW}$ and $400\,\text{V} \cdot 250\,\text{A} = 100\,\text{kW}$. The primary current of a step-down transformer is smaller than the secondary current, as it should be. The real transformer of a local substation is three-phase, and $20\,\text{kV}$ and $400\,\text{V}$ are line voltages; the ratio of the currents is still the same $400\,\text{V} : 20\,000\,\text{V}$, because power is conserved on both sides.
 
 ## fy7-8-L1-04
 **Given:** total resistance of the conductors $R = 2.5\,\Omega$, current $I = 120\,\text{A}$
@@ -39,19 +39,19 @@
 **Reasonableness:** Units: $\Omega \cdot \text{A}^2 = \tfrac{\text{V}}{\text{A}} \cdot \text{A}^2 = \text{V} \cdot \text{A} = \text{W}$. The loss corresponds to the power of about five electric stoves; in a distribution line such a power can be lost when the current is over a hundred amperes.
 
 ## fy7-8-L1-05
-**Given:** transmission voltage $U = 400\,\text{kV}$, current $I = 800\,\text{A}$
+**Given:** line voltage of the three-phase line $U = 400\,\text{kV}$, current of a phase conductor $I = 800\,\text{A}$, power factor $\cos\varphi = 1$
 **Find:** the transmitted power $P$ in megawatts
-**Principle:** Electric power is the product of voltage and current. The power transmitted by a line is the product of the transmission voltage and the current of the line.
-**Formula:** $P = U I$
+**Principle:** The line is three-phase, and $400\,\text{kV}$ is the line voltage between the phase conductors. The active power of an evenly loaded three-phase grid is $P = \sqrt{3}\,U I \cos\varphi$. The two-wire model $P = UI$ would give too small a result, because it leaves out the third phase conductor.
+**Formula:** $P = \sqrt{3}\,U I \cos\varphi$, and when $\cos\varphi = 1$, $P = \sqrt{3}\,U I$
 **Conversions:** $U = 400\,\text{kV} = 400 \cdot 1000\,\text{V} = 400\,000\,\text{V}$. Finally $1\,\text{MW} = 1\,000\,000\,\text{W}$.
-**Substitution:** $P = 400\,000\,\text{V} \cdot 800\,\text{A} = 320\,000\,000\,\text{W} = 320\,\text{MW}$
-**Answer:** $320\,\text{MW}$, three significant figures like the given values.
-**Reasonableness:** $320\,\text{MW}$ is of the order of magnitude of the power of a large power plant, and a line of the transmission grid transmits just such powers. The same power at $230\,\text{V}$ would require a current of over a million amperes.
+**Substitution:** $P = \sqrt{3} \cdot 400\,000\,\text{V} \cdot 800\,\text{A} = 554\,256\,000\,\text{W} = 554.3\,\text{MW}$
+**Answer:** $554\,\text{MW}$, three significant figures like the given values.
+**Reasonableness:** The result is $\sqrt{3} \approx 1.73$ times the result of the two-wire model, $400\,\text{kV} \cdot 800\,\text{A} = 320\,\text{MW}$. A power of hundreds of megawatts is of the order of magnitude of the power of a large power plant, and a $400\,\text{kV}$ line of the transmission grid transmits just such powers.
 
 ## fy7-8-L2-01
 **Given:** power $P = 50\,\text{MW}$, transmission voltage $U = 110\,\text{kV}$, resistance of the conductors $R = 4.0\,\Omega$
 **Find:** the power $P_\text{h}$ that becomes internal energy in the line, in kilowatts
-**Principle:** The line is heated by its current, and the power loss is $P_\text{h} = R I^2$. The current is obtained from the power and the transmission voltage, because $P = U I$. The transmission voltage is not across the resistance of the line, so the loss is not calculated with the expression $U^2 : R$.
+**Principle:** The task uses the simplified two-wire model. The line is heated by its current, and the power loss is $P_\text{h} = R I^2$. The current is obtained from the power and the transmission voltage, because $P = U I$. The transmission voltage is not across the resistance of the line, so the loss is not calculated with the expression $U^2 : R$.
 **Formula:** $P = U I$, so $I = \dfrac{P}{U}$, and $P_\text{h} = R I^2$
 **Conversions:** $P = 50\,\text{MW} = 50 \cdot 10^{6}\,\text{W}$ and $U = 110\,\text{kV} = 110 \cdot 10^{3}\,\text{V}$. Finally $1\,\text{kW} = 1000\,\text{W}$.
 **Substitution:** $I = \dfrac{50 \cdot 10^{6}\,\text{W}}{110 \cdot 10^{3}\,\text{V}} = 454.5\,\text{A}$ and $P_\text{h} = 4.0\,\Omega \cdot (454.5\,\text{A})^2 = 826\,400\,\text{W} = 826.4\,\text{kW}$
@@ -71,7 +71,7 @@
 ## fy7-8-L2-03
 **Given:** power $P = 100\,\text{MW}$, transmission voltage $U = 220\,\text{kV}$, resistance of the conductors $R = 4.8\,\Omega$
 **Find:** the share of the power loss $P_\text{h} : P$ as a percentage
-**Principle:** The line is heated by the current, and the power loss is $P_\text{h} = R I^2$. The current is obtained from the transmitted power and the transmission voltage, $P = U I$. Finally the power loss is compared with the transmitted power.
+**Principle:** The task uses the simplified two-wire model. The line is heated by the current, and the power loss is $P_\text{h} = R I^2$. The current is obtained from the transmitted power and the transmission voltage, $P = U I$. Finally the power loss is compared with the transmitted power.
 **Formula:** $I = \dfrac{P}{U}$, $P_\text{h} = R I^2$ and the share $\dfrac{P_\text{h}}{P}$
 **Conversions:** $P = 100\,\text{MW} = 100 \cdot 10^{6}\,\text{W}$ and $U = 220\,\text{kV} = 220 \cdot 10^{3}\,\text{V}$.
 **Substitution:** $I = \dfrac{100 \cdot 10^{6}\,\text{W}}{220 \cdot 10^{3}\,\text{V}} = 454.5\,\text{A}$, $P_\text{h} = 4.8\,\Omega \cdot (454.5\,\text{A})^2 = 0.9917 \cdot 10^{6}\,\text{W}$ and $\dfrac{P_\text{h}}{P} = \dfrac{0.9917 \cdot 10^{6}\,\text{W}}{100 \cdot 10^{6}\,\text{W}} = 0.009917 = 0.9917\,\%$
@@ -92,7 +92,7 @@
 ## fy7-8-L3-01
 **Given:** power of the generator $P = 150\,\text{MW}$ and voltage $20\,\text{kV}$, an ideal transformer raises the voltage to $U = 400\,\text{kV}$, resistance of the conductors $R = 8.0\,\Omega$
 **Find:** the share of the power loss $P_\text{h} : P$ as a percentage
-**Principle:** An ideal transformer does not consume energy, so the whole power $150\,\text{MW}$ goes into the line, but at the voltage $400\,\text{kV}$. The current of the line is determined by the transmission voltage, not by the voltage of the generator. This current heats the line at the rate $P_\text{h} = R I^2$.
+**Principle:** The task uses the simplified two-wire model. An ideal transformer does not consume energy, so the whole power $150\,\text{MW}$ goes into the line, but at the voltage $400\,\text{kV}$. The current of the line is determined by the transmission voltage, not by the voltage of the generator. This current heats the line at the rate $P_\text{h} = R I^2$.
 **Formula:** $I = \dfrac{P}{U}$, $P_\text{h} = R I^2$ and the share $\dfrac{P_\text{h}}{P}$
 **Conversions:** $P = 150\,\text{MW} = 150 \cdot 10^{6}\,\text{W}$ and $U = 400\,\text{kV} = 400 \cdot 10^{3}\,\text{V}$.
 **Substitution:** $I = \dfrac{150 \cdot 10^{6}\,\text{W}}{400 \cdot 10^{3}\,\text{V}} = 375\,\text{A}$, $P_\text{h} = 8.0\,\Omega \cdot (375\,\text{A})^2 = 1.125 \cdot 10^{6}\,\text{W}$ and $\dfrac{P_\text{h}}{P} = \dfrac{1.125 \cdot 10^{6}\,\text{W}}{150 \cdot 10^{6}\,\text{W}} = 0.0075 = 0.75\,\%$
@@ -102,7 +102,7 @@
 ## fy7-8-L3-02
 **Given:** transmission voltage $U = 400\,\text{kV}$, transmitted power $P = 400\,\text{MW}$, loss at most $1.0\,\%$, that is $P_\text{h} \le 0.010\,P$
 **Find:** the greatest permitted resistance $R$ of the conductors in ohms
-**Principle:** The power loss is $P_\text{h} = R I^2$, and the current is $I = P : U$. Combining these gives $P_\text{h} = R P^2 : U^2$. When the loss may be at most a given share of the power, the resistance may be at most the value for which the loss is exactly this share.
+**Principle:** The task uses the simplified two-wire model. The power loss is $P_\text{h} = R I^2$, and the current is $I = P : U$. Combining these gives $P_\text{h} = R P^2 : U^2$. When the loss may be at most a given share of the power, the resistance may be at most the value for which the loss is exactly this share.
 **Formula:** $\dfrac{R P^2}{U^2} = 0.010\,P$, so $R = \dfrac{0.010\,U^2}{P}$
 **Conversions:** $U = 400\,\text{kV} = 400 \cdot 10^{3}\,\text{V}$ and $P = 400\,\text{MW} = 400 \cdot 10^{6}\,\text{W}$.
 **Substitution:** $R = \dfrac{0.010 \cdot (400 \cdot 10^{3}\,\text{V})^2}{400 \cdot 10^{6}\,\text{W}} = \dfrac{1.6 \cdot 10^{9}\,\text{V}^2}{4.0 \cdot 10^{8}\,\text{W}} = 4.0\,\Omega$
@@ -112,12 +112,12 @@
 ## fy7-8-L3-03
 **Given:** original transmission voltage $U_1 = 220\,\text{kV}$, new transmission voltage $U_2 = 400\,\text{kV}$, the resistance $R$ and the share of the loss stay the same
 **Find:** how many times the power $P_2 : P_1$ can be transmitted
-**Principle:** The power loss is $P_\text{h} = R I^2$ and the current $I = P : U$, so the share of the loss is $P_\text{h} : P = R P : U^2$. When $R$ and the share stay the same, the power $P$ is proportional to the square of the voltage $U^2$.
+**Principle:** The task uses the simplified two-wire model. The power loss is $P_\text{h} = R I^2$ and the current $I = P : U$, so the share of the loss is $P_\text{h} : P = R P : U^2$. When $R$ and the share stay the same, the power $P$ is proportional to the square of the voltage $U^2$.
 **Formula:** $\dfrac{R P_1}{U_1^2} = \dfrac{R P_2}{U_2^2}$, so $\dfrac{P_2}{P_1} = \dfrac{U_2^2}{U_1^2}$
 **Conversions:** Not needed: in the ratio of the voltages the kilovolts cancel.
 **Substitution:** $\dfrac{P_2}{P_1} = \dfrac{(400\,\text{kV})^2}{(220\,\text{kV})^2} = (1.818)^2 = 3.306$
 **Answer:** about $3.3$ times the power, two significant figures like the voltage $220\,\text{kV}$.
-**Reasonableness:** The voltage increases to somewhat less than double, so the power can increase to somewhat less than four times. For example, the powers $100\,\text{MW}$ and $331\,\text{MW}$ give the currents $455\,\text{A}$ and $826\,\text{A}$, and the share of the losses $R I : U$ is the same in both.
+**Reasonableness:** The voltage increases to somewhat less than double, so the power can increase to somewhat less than four times. For example, the powers $100\,\text{MW}$ and $331\,\text{MW}$ give the currents $455\,\text{A}$ and $826\,\text{A}$, and the share of the losses $R I : U$ is the same in both. The same ratio $(400 : 220)^2$ is obtained in the real three-phase grid too, because there as well the share of the loss is proportional to the power and inversely proportional to the square of the voltage.
 
 ## fy7-8-L1-06
 **Find:** why a transformer gives no voltage in the secondary coil when the primary coil is connected to a direct voltage.
@@ -178,7 +178,7 @@
 ## fy7-8-L3-04
 **Given:** constant power $P = 200\,\text{MW}$, distance $150\,\text{km}$, total resistance of the conductors $0.040\,\Omega$ per kilometre of line, time $t = 8760\,\text{h}$, voltages $U_\text{A} = 220\,\text{kV}$ and $U_\text{B} = 400\,\text{kV}$, price of electricity $50\,\text{€/MWh}$
 **Find:** the yearly saving of option B in the value of the lost energy in millions of euros, and the justification
-**Principle:** The current of the line is determined by the transmission voltage, $I = P : U$, and the power that becomes internal energy in the conductors is $P_\text{h} = R I^2$. The same power flows with a smaller current at a higher voltage, so the loss is smaller. Because the power is constant, the lost energy is the power loss multiplied by the time, $E = P_\text{h} t$, and the saving is the difference of the energies multiplied by the price.
+**Principle:** The task uses the simplified two-wire model. The current of the line is determined by the transmission voltage, $I = P : U$, and the power that becomes internal energy in the conductors is $P_\text{h} = R I^2$. The same power flows with a smaller current at a higher voltage, so the loss is smaller. Because the power is constant, the lost energy is the power loss multiplied by the time, $E = P_\text{h} t$, and the saving is the difference of the energies multiplied by the price.
 **Formula:** $R = 0.040\,\tfrac{\Omega}{\text{km}} \cdot s$, $I = \dfrac{P}{U}$, $P_\text{h} = R I^2$, $E = P_\text{h} t$ and
 
 $$\text{saving} = (E_\text{A} - E_\text{B}) \cdot \text{price}$$
@@ -199,7 +199,7 @@ $$\text{saving} = (E_\text{A} - E_\text{B}) \cdot \text{price}$$
 
 ## fy7-8-L2-08
 **Find:** the order of magnitude of the power loss $P_\text{h}$ that turns into heat in the cable of the wind turbine.
-**Principle:** An ideal transformer does not change the power, so the cable transmits the power $3.0\,\text{MW}$ at the voltage $20\,\text{kV}$. The current of the cable is obtained from the transmitted power and the transmission voltage, $I = P : U$, and the power loss is $P_\text{h} = RI^2$. The transmission voltage is not the voltage across the resistance of the cable, so the expression $U^2 : R$ cannot be used.
+**Principle:** The task uses the simplified two-wire model. An ideal transformer does not change the power, so the cable transmits the power $3.0\,\text{MW}$ at the voltage $20\,\text{kV}$. The current of the cable is obtained from the transmitted power and the transmission voltage, $I = P : U$, and the power loss is $P_\text{h} = RI^2$. The transmission voltage is not the voltage across the resistance of the cable, so the expression $U^2 : R$ cannot be used.
 **Model answer:** The current of the cable:
 
 $I = \dfrac{3.0 \cdot 10^{6}\,\text{W}}{20 \cdot 10^{3}\,\text{V}}$

@@ -362,16 +362,16 @@
       "stage": "tarkista",
       "type": "choice",
       "title": "1. Käsite",
-      "prompt": "Kompassin neulan pohjoispää osoittaa Suomessa kohti maantieteellistä pohjoista. Mikä magneettinen napa Maalla on maantieteellisen pohjoisnavan lähellä?",
+      "prompt": "Kompassin neulan pohjoispää osoittaa Suomessa likimain kohti maantieteellistä pohjoista. Maata kuvataan sauvamagneettina. Kumpi sauvamagneetin napa on maantieteellisen pohjoisnavan lähellä?",
       "choices": [
         {
           "text": "Pohjoisnapa, koska kompassi osoittaa pohjoisnapaa kohti.",
-          "feedback": "Samannimiset navat hylkivät toisiaan. Pohjoisnapa työntäisi siis neulan pohjoispäätä poispäin. Neulaa vetää puoleensa eriniminen napa eli magneettinen etelänapa."
+          "feedback": "Samannimiset navat hylkivät toisiaan. Pohjoisnapa työntäisi siis neulan pohjoispäätä poispäin. Neulaa vetää puoleensa eriniminen napa eli sauvamagneetin etelänapa."
         },
         {
           "text": "Etelänapa, koska se vetää puoleensa neulan pohjoisnapaa.",
           "correct": true,
-          "feedback": "Oikein. Neulan pohjoispää on magneetin pohjoisnapa, ja sitä vetää puoleensa eriniminen napa. Maantieteellisen pohjoisnavan lähellä on siis Maan magneettinen etelänapa."
+          "feedback": "Oikein. Neulan pohjoispää on magneetin pohjoisnapa, ja sitä vetää puoleensa eriniminen napa. Maantieteellisen pohjoisnavan lähellä on siis sauvamagneettimallin etelänapa. Geomagnetismissa sitä kutsutaan silti magneettiseksi pohjoisnavaksi, koska nimi perustuu sijaintiin."
         },
         {
           "text": "Ei kumpaakaan, koska Maan pyöriminen kääntää neulan pohjoiseen.",
@@ -379,7 +379,7 @@
         },
         {
           "text": "Molemmat navat, koska Maa on magneettinen dipoli.",
-          "feedback": "Dipolissa navat ovat eri päissä. Maan magneettinen etelänapa on maantieteellisen pohjoisnavan lähellä. Magneettinen pohjoisnapa on maantieteellisen etelänavan lähellä."
+          "feedback": "Dipolissa navat ovat eri päissä. Sauvamagneettimallin etelänapa on maantieteellisen pohjoisnavan lähellä. Sen pohjoisnapa on maantieteellisen etelänavan lähellä."
         }
       ]
     },

@@ -74,7 +74,7 @@
 **Järkevyys:** Voima kasvaa, kun kulma lähestyy $90^\circ$:ta. Se kasvaa kuitenkin vähemmän kuin kaksinkertaiseksi: $0{,}094\,\text{N} < 2 \cdot 0{,}050\,\text{N} = 0{,}100\,\text{N}$. Suurin mahdollinen voima olisi $0{,}050\,\text{N} : 0{,}3420 = 0{,}146\,\text{N}$, ja $0{,}094\,\text{N}$ jää sen alle.
 
 ## fy7-4-L2-01
-**Annettu:** johtimien virrat $I_1 = I_2 = 10\,\text{A}$ samaan suuntaan, etäisyys $r = 5{,}0\,\text{mm}$, rinnakkaisen osan pituus $l = 0{,}80\,\text{m}$, $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
+**Annettu:** johtimien virrat $I_1 = I_2 = 10\,\text{A}$ samaan suuntaan, etäisyys $r = 5{,}0\,\text{mm}$, rinnakkaisen osan pituus $l = 0{,}80\,\text{m}$, $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Kysytty:** johtimien välinen voima $F$ millinewtoneina
 **Periaate:** Johtimen $1$ magneettikenttä kiertää johdinta ympyröinä. Siksi se on johtimen $2$ kohdalla kohtisuorassa johdinta $2$ vastaan. Kenttä on johtimen $2$ kohdalla koko matkalla yhtä suuri, koska etäisyys pysyy samana. Johtimeen $2$ kohdistuu siis voima $F = I_2 l B_1$. Samansuuntaiset virrat vetävät toisiaan puoleensa.
 **Kaava:** $B_1 = \dfrac{\mu_0 I_1}{2\pi r}$ ja $F = I_2 l B_1$
@@ -156,7 +156,7 @@
 **Järkevyys:** Muutaman ampeerin virta riittää kannattelemaan kevyen tangon. Se sopii laboratoriokokeeseen. Jos virran suunta käännettäisiin, voima osoittaisi alaspäin ja langat kiristyisivät. Silloin langan jännitys olisi kaksinkertainen painoon verrattuna.
 
 ## fy7-4-L3-02
-**Annettu:** kiskojen etäisyys $r = 0{,}30\,\text{m}$, virrat $I_1 = I_2 = 20\,\text{kA}$ vastakkaisiin suuntiin, tarkasteltava pituus $l = 1{,}0\,\text{m}$, $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
+**Annettu:** kiskojen etäisyys $r = 0{,}30\,\text{m}$, virrat $I_1 = I_2 = 20\,\text{kA}$ vastakkaisiin suuntiin, tarkasteltava pituus $l = 1{,}0\,\text{m}$, $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Kysytty:** kiskon $1{,}0\,\text{m}$:n osaan kohdistuva voima $F$ ja sen suunta. Voima ilmoitetaan positiivisena, jos kiskot vetävät toisiaan, ja negatiivisena, jos ne hylkivät toisiaan.
 **Periaate:** Kumpikin kisko on toisen kiskon magneettikentässä. Toisen kiskon kenttä on kohtisuorassa tätä kiskoa vastaan ja koko matkalla yhtä suuri. Siksi voima on $F = I_2 l B_1$. Vastakkaissuuntaiset virrat hylkivät toisiaan, joten voima työntää kiskoja erilleen.
 **Kaava:** $B_1 = \dfrac{\mu_0 I_1}{2\pi r}$ ja $F = I_2 l B_1$
@@ -187,7 +187,7 @@
 **Järkevyys:** Kun $I = 8{,}0\,\text{A}$, magneettinen voima on $0{,}336\,\text{N}$ ja kitka $0{,}088\,\text{N}$. Silloin $a = 0{,}248\,\text{N} : 0{,}045\,\text{kg} = 5{,}5\,\text{m/s}^2$. Tämä vastaa taulukon arvoa $5{,}6\,\text{m/s}^2$.
 
 ## fy7-4-L3-05
-**Annettu:** ylemmän johtimen pituus $l = 0{,}50\,\text{m}$, massa $m = 3{,}0\,\text{g}$, johtimien etäisyys $r = 1{,}0\,\text{cm}$, sama virta $I$ molemmissa. $g = 9{,}81\,\text{m/s}^2$, $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$.
+**Annettu:** ylemmän johtimen pituus $l = 0{,}50\,\text{m}$, massa $m = 3{,}0\,\text{g}$, johtimien etäisyys $r = 1{,}0\,\text{cm}$, sama virta $I$ molemmissa. $g = 9{,}81\,\text{m/s}^2$, $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$.
 **Kysytty:** a) virtojen suunnat ja virta $I$ ampeereina; b) onko leijuminen vakaata pystysuunnassa
 **Periaate:** Ylempi johdin leijuu, kun siihen vaikuttavat voimat kumoavat toisensa. Paino osoittaa alas, joten alemman johtimen kentän voiman täytyy osoittaa ylös. Johtimien täytyy siis hylkiä toisiaan. Hylkimiseen tarvitaan vastakkaissuuntaiset virrat, koska samansuuntaiset virrat vetäisivät johtimia toisiaan kohti. Alemman johtimen kenttä on kohtisuorassa ylempää johdinta vastaan, joten voima on $F = I l B_1$, missä $B_1 = \dfrac{\mu_0 I}{2\pi r}$.
 **Kaava:** $I l B_1 = m g$, eli $\dfrac{\mu_0 I^2 l}{2\pi r} = m g$, josta $I = \sqrt{\dfrac{2\pi r m g}{\mu_0 l}}$

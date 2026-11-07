@@ -249,7 +249,7 @@
         {
           "text": "The stated $230\\,\\text{V}$ is already the rms value, so the peak value is $230\\,\\text{V} \\cdot \\sqrt{2} \\approx 325\\,\\text{V}$.",
           "correct": true,
-          "feedback": "Correct. Mains voltages and meter readings are given as rms values, because with them the power is calculated as with direct current, $P = UI$. The voltage therefore swings between $-325\\,\\text{V}$ and $325\\,\\text{V}$."
+          "feedback": "Correct. Mains voltages and meter readings are given as rms values, because with them the power of a resistive load is calculated as with direct current, $P = UI$. The voltage therefore swings between $-325\\,\\text{V}$ and $325\\,\\text{V}$."
         },
         {
           "text": "The rms value is obtained by multiplying the peak value by $\\sqrt{2}$, so the correct value is $325\\,\\text{V}$.",
@@ -311,7 +311,7 @@
         {
           "text": "The direct voltage that would deliver the same average power to a resistor.",
           "correct": true,
-          "feedback": "Correct. The power in a resistor varies, and its average is half of the peak value. This is why the rms value is $U = U_0 : \\sqrt{2}$, and the average power is $P = UI$ as with direct current."
+          "feedback": "Correct. The power in a resistor varies, and its average is half of the peak value. This is why the rms value is $U = U_0 : \\sqrt{2}$, and the average power of the resistor is $P = UI$ as with direct current."
         },
         {
           "text": "The average of the voltage over one whole period.",

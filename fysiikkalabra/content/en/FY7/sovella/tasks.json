@@ -332,18 +332,27 @@
       "title": "Electricity supply for a mine",
       "source": "example",
       "source_note": "The mine, the line and the powers are made up. The resistivity and density of aluminium are table values.",
-      "text": "A mining company opens a new mine $25\\,\\text{km}$ from the nearest substation. A power of about $6.0\\,\\text{MW}$ is transmitted to the mine continuously. From the substation it is possible to build either a $20\\,\\text{kV}$ line straight to the mine or a $110\\,\\text{kV}$ line, at the end of which a transformer is built at the mine. The transformer steps the voltage down to $20\\,\\text{kV}$ for the mine's own network.\n\nIn both options the line has two aluminium conductors with a cross-sectional area of $150\\,\\text{mm}^2$. The resistivity of aluminium is $2.82 \\cdot 10^{-8}\\,\\Omega\\,\\text{m}$ and its density is $2700\\,\\text{kg/m}^3$.\n\nReal power lines are three-phase, but a simple model is enough here: the substation sends a power of $6.0\\,\\text{MW}$ into the line, the power is calculated as for direct current, the voltages and currents are effective values, and the transformer is ideal.",
+      "text": "A mining company opens a new mine $25\\,\\text{km}$ from the nearest substation. The substation continuously feeds an electric power of $6.0\\,\\text{MW}$ into the line to the mine. Part of this power becomes heat in the transmission line, so the power received by the mine depends on the transmission loss. From the substation it is possible to build either a $20\\,\\text{kV}$ line straight to the mine or a $110\\,\\text{kV}$ line, at the end of which a transformer is built at the mine. The transformer steps the voltage down to $20\\,\\text{kV}$ for the mine's own network.\n\nIn both options the line has two aluminium conductors with a cross-sectional area of $150\\,\\text{mm}^2$. The resistivity of aluminium is $2.82 \\cdot 10^{-8}\\,\\Omega\\,\\text{m}$ and its density is $2700\\,\\text{kg/m}^3$.\n\nReal power lines are three-phase, but the simplified two-wire model is enough here: the substation sends a power of $6.0\\,\\text{MW}$ into the line, the power is calculated with $P = UI$ as for direct current, the voltages and currents are effective values, and the transformer is ideal.",
       "parts": [
         {
           "id": "a",
           "kind": "calc",
           "points": 3,
           "text": "How much power is converted into heat in the line if the $20\\,\\text{kV}$ line is used? What percentage of the transmitted power is that?",
-          "answer": {
-            "value": 846,
-            "unit": "kW",
-            "tolerance": 0.02
-          },
+          "answer": [
+            {
+              "name": "Ph",
+              "value": 846,
+              "unit": "kW",
+              "tolerance": 0.02
+            },
+            {
+              "name": "rel",
+              "value": 14.1,
+              "unit": "%",
+              "tolerance": 0.02
+            }
+          ],
           "criteria": [
             {
               "text": "Calculates the resistance of the conductors from the length of the whole circuit, $2 \\cdot 25\\,\\text{km}$: $R = \\rho\\dfrac{l}{A} \\approx 9.4\\,\\Omega$.",
@@ -450,7 +459,7 @@
           "id": "e",
           "kind": "calc",
           "points": 4,
-          "text": "The two conductors of the line run side by side on the poles at a distance of $1.5\\,\\text{m}$ from each other. Do the conductors attract or repel each other? How large is the force on each metre of conductor in the $20\\,\\text{kV}$ line in normal operation and in a short circuit near the substation, when the current briefly rises to $8.0\\,\\text{kA}$? Does the force matter? The permeability of vacuum is $\\mu_0 = 4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$.",
+          "text": "The two conductors of the line run side by side on the poles at a distance of $1.5\\,\\text{m}$ from each other. Do the conductors attract or repel each other? How large is the force on each metre of conductor in the $20\\,\\text{kV}$ line in normal operation and in a short circuit near the substation, when the current briefly rises to $8.0\\,\\text{kA}$? Does the force matter? The permeability of vacuum is $\\mu_0 \\approx 4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$.",
           "answer": [
             {
               "name": "F",

@@ -75,17 +75,17 @@
     {
       "id": "fy7-1-L1-07",
       "level": 1,
-      "text": "The north end of a compass needle points towards the geographic north. What does this tell about the Earth's magnetic poles?",
+      "text": "The north end of a compass needle points roughly towards the geographic north. The Earth's field is described as the field of a bar magnet. What does the direction of the needle tell about the poles of this model?",
       "kind": [
         "concept"
       ],
-      "answer": "Near the geographic North Pole there is the Earth's magnetic south pole, because the north pole of the needle is attracted by an unlike pole.",
+      "answer": "In the bar-magnet model there is a south pole near the geographic North Pole, because the north pole of the needle is attracted by an unlike pole.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Near the geographic North Pole there is the Earth's magnetic north pole, because the north pole of the needle seeks a pole of the same name.",
-          "feedback": "Wrong: poles of the same name repel each other, so the north end of the needle does not seek a north pole. It points towards an unlike pole, that is, a magnetic south pole."
+          "text": "In the bar-magnet model there is a north pole near the geographic North Pole, because the north pole of the needle seeks a pole of the same name.",
+          "feedback": "Wrong: poles of the same name repel each other, so the north end of the needle does not seek a north pole. It points towards an unlike pole, that is, the south pole of the bar-magnet model."
         },
         {
           "text": "The needle points north because the rotation of the Earth turns a light needle along the axis of rotation, and the magnetic field has no part in it.",
@@ -96,8 +96,8 @@
           "feedback": "Wrong: the Earth's field resembles the field of a bar magnet, and it has a pole at each end. The needle is turned by magnetic interaction, not by gravity or friction."
         },
         {
-          "text": "Near the geographic North Pole there is the Earth's magnetic south pole, because the north pole of the needle is attracted by an unlike pole.",
-          "feedback": "Correct: the north end of the needle is the north pole of a magnet, and unlike poles attract each other. Since the north end of the needle points towards the geographic north, there is the Earth's magnetic south pole.",
+          "text": "In the bar-magnet model there is a south pole near the geographic North Pole, because the north pole of the needle is attracted by an unlike pole.",
+          "feedback": "Correct: the north end of the needle is the north pole of a magnet, and unlike poles attract each other. Since the north end of the needle points towards the geographic north, the south pole of the bar-magnet model is there. In geomagnetism this pole is nevertheless called the magnetic north pole.",
           "correct": true
         }
       ]

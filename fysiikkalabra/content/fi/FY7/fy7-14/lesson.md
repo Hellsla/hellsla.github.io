@@ -199,13 +199,13 @@ Luvussa *Valon interferenssi ja diffraktio* nähtiin, että valo on aaltoliikett
 <figure class="unit-photo"><img src="pics/fy7/soap-bubble-reflection.webp" alt="Saippuakupla ilmassa vihreää taustaa vasten; kuplan pinnalla näkyy ylösalaisin heijastunut kuva puista ja taivaasta, ja reunoilla on violetteja ja sinisiä värejä."><figcaption>Saippuakupla heijastaa ympäristöään kuin kupera peili. Kuplan reunoilla näkyy värejä, koska valo heijastuu sekä kalvon ulkopinnasta että sisäpinnasta, ja heijastuneet aallot interferoivat.</figcaption></figure>
 
 ### Matkaero kalvossa
-Alapinnasta heijastunut aalto 2 kulkee kalvon läpi edestakaisin, joten se kulkee lisämatkan $2d$, missä $d$ on kalvon paksuus. Kalvossa valo etenee nopeudella $c : n$, mutta sen taajuus ei muutu. Siksi aallonpituus kalvossa on $n$ kertaa lyhyempi kuin ilmassa: esimerkiksi saippuakalvossa ($n = 1{,}33$) aallonpituus $550\,\text{nm}$ lyhenee arvoon $413{,}5\,\text{nm}$, koska $550\,\text{nm} : 1{,}33 = 413{,}5\,\text{nm}$. Lisämatkaan $2d$ mahtuu siksi yhtä monta aallonpituutta kuin ilmassa matkaan $2nd$. Aaltojen 1 ja 2 matkaero on $2nd$, kun aallonpituus mitataan ilmassa.
+Alapinnasta heijastunut aalto 2 kulkee kalvon läpi edestakaisin, joten se kulkee lisämatkan $2d$, missä $d$ on kalvon paksuus. Kalvossa valo etenee nopeudella $c : n$, mutta sen taajuus ei muutu. Siksi aallonpituus kalvossa on $n$ kertaa lyhyempi kuin ilmassa: esimerkiksi saippuakalvossa ($n = 1{,}33$) aallonpituus $550\,\text{nm}$ lyhenee arvoon $413{,}5\,\text{nm}$, koska $550\,\text{nm} : 1{,}33 = 413{,}5\,\text{nm}$. Lisämatkaan $2d$ mahtuu siksi yhtä monta aallonpituutta kuin ilmassa matkaan $2nd$. Alapinnasta heijastunut säde kulkee siis kalvossa geometrisesti ylimääräisen matkan $2d$, ja koska valo etenee kalvossa hitaammin kuin ilmassa, vastaava **optinen matkaero** on $2nd$. Tätä verrataan ilmassa ilmoitettuun aallonpituuteen.
 
 ### Puolen aallonpituuden siirtymä heijastuksessa
 Matkaero ei yksin ratkaise interferenssiä. Luvussa *Aalto kohtaa esteen tai raon* köyden pulssi kääntyi heijastuessaan kiinteästä päästä mutta ei vapaasta päästä. Valolle pätee vastaava sääntö: **kun valo heijastuu rajapinnasta, jonka takana on suuremman taitekertoimen aine, heijastunut aalto kääntyy**, eli harja palaa pohjana. Tämä vastaa puolen aallonpituuden siirtymää. Kun takana on pienemmän taitekertoimen aine, heijastunut aalto ei käänny. Saippuakalvossa yläpinnan heijastus tapahtuu ilmasta kalvoon ($1{,}00 \to 1{,}33$), joten aalto 1 kääntyy. Alapinnan heijastus tapahtuu kalvosta ilmaan ($1{,}33 \to 1{,}00$), joten aalto 2 ei käänny.
 
 ### Hyvin ohut kalvo on musta
-Kun saippuakalvo on paljon ohuempi kuin aallonpituus, matkaero on lähes nolla. Aalto 1 on kuitenkin kääntynyt ja aalto 2 ei, joten aallot ovat vastakkaisessa vaiheessa ja kumoavat toisensa. Hyvin ohut kalvo ei heijasta valoa, ja se näyttää mustalta. Siksi saippuakuplan yläosaan ilmestyy juuri ennen puhkeamista musta laikku. Kun kalvo on niin paksu, että $2nd = \tfrac{1}{2}\lambda$, aalto 2 jää puoli aallonpituutta jälkeen, mikä vastaa kääntymistä. Silloin aallot ovat samassa vaiheessa ja vahvistavat toisiaan.
+Kun saippuakalvo on paljon ohuempi kuin aallonpituus, matkaero on lähes nolla. Aalto 1 on kuitenkin kääntynyt ja aalto 2 ei, joten aallot ovat vastakkaisessa vaiheessa ja kumoavat toisensa. Hyvin ohut saippuakalvo heijastaa ihannetilanteessa vain hyvin vähän valoa, joten se näyttää heijastuneessa valossa tummalta tai lähes mustalta. Siksi saippuakuplan yläosaan ilmestyy juuri ennen puhkeamista musta laikku. Kun kalvo on niin paksu, että $2nd = \tfrac{1}{2}\lambda$, aalto 2 jää puoli aallonpituutta jälkeen, mikä vastaa kääntymistä. Silloin aallot ovat samassa vaiheessa ja vahvistavat toisiaan.
 
 <svg data-fig="phase" viewBox="0 0 600 360" role="img" aria-label="Kaavakuva: kalvosta heijastuneet aallot 1 ja 2 sekä niiden summa kahdessa tapauksessa. Vasemmalla kalvo on paljon ohuempi kuin aallonpituus. Aalto 1 on kääntynyt yläpinnan heijastuksessa, aalto 2 ei, eikä aalto 2 ole jäänyt jälkeen, joten aallot ovat vastakkaisessa vaiheessa: harja kohtaa pohjan, ja summa on vaakasuora suora eli heijastunutta valoa ei ole. Oikealla kalvo on niin paksu, että aalto 2 kulkee puoli aallonpituutta pidemmän matkan. Silloin aallot ovat samassa vaiheessa, ja summa on kaksinkertainen aalto eli heijastus on voimakas." style="max-width:100%;font-size:24px">
   <foreignObject x="69.5" y="21.5" width="183" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{hyvin ohut kalvo}$</div></foreignObject>
@@ -386,7 +386,7 @@ Saippuakupla ei ole joka kohdasta yhtä paksu. Painovoima valuttaa saippuavettä
 <figure class="unit-photo"><img src="pics/fy7/soap-bubble-colours.webp" alt="Lähikuva saippuakuplan kalvosta: oransseja, sinisiä ja violetteja pyörteitä tummaa taustaa vasten."><figcaption>Saippuakalvon interferenssivärejä. Kalvon paksuus vaihtelee kohdasta toiseen, ja kussakin kohdassa vahvistuu se väri, jolle kahden heijastuksen matkaero sopii.</figcaption></figure>
 
 ## Kaava: Ohuen kalvon interferenssi
-Kun valo tulee kohtisuoraan kalvoon, kalvon kahdesta pinnasta heijastuneiden aaltojen matkaero on
+Kun valo tulee kohtisuoraan kalvoon, kalvon kahdesta pinnasta heijastuneiden aaltojen optinen matkaero on
 ```latex
 \Delta s = 2nd
 ```
@@ -509,9 +509,9 @@ Matkaero on $2nd = 1010{,}8\,\text{nm}$. Arvolla $k = 0$ saadaan $2021{,}6\,\tex
 Moni ajattelee, että saippuakuplan värit syntyvät samalla tavalla kuin prisman tai sateenkaaren värit, taittumalla eri suuntiin. Kuplan värit syntyvät kuitenkin interferenssistä: saman paksuinen kalvo vahvistaa joitakin aallonpituuksia ja heikentää toisia, ja väri riippuu kalvon paksuudesta. Toinen virhe on unohtaa heijastuksen puolen aallonpituuden siirtymä ja päätellä, että hyvin ohut kalvo heijastaa voimakkaasti, koska matkaero on nolla. Kolmas virhe on luulla, että heijastuksenestopinnoite imee heijastuvan valon itseensä. Pinnoite on läpinäkyvä: heikentävässä interferenssissä valoa heijastuu vähemmän ja sitä pääsee enemmän lasin läpi.
 
 ## Tiivistelmä
-- Ohuen kalvon kahdesta pinnasta heijastuneet aallot interferoivat. Kun valo tulee kohtisuoraan, niiden matkaero on $2nd$, koska aallonpituus kalvossa on $\lambda : n$.
+- Ohuen kalvon kahdesta pinnasta heijastuneet aallot interferoivat. Kun valo tulee kohtisuoraan, niiden optinen matkaero on $2nd$, koska aallonpituus kalvossa on $\lambda : n$.
 - Heijastunut aalto kääntyy eli saa puolen aallonpituuden siirtymän, kun valo heijastuu suuremman taitekertoimen ainetta vasten.
-- Saippuakalvossa ilmassa on yksi siirtymä: vahvistava $2nd = (k + \tfrac{1}{2})\lambda$, heikentävä $2nd = k\lambda$. Hyvin ohut kalvo on siksi musta.
+- Saippuakalvossa ilmassa on yksi siirtymä: vahvistava $2nd = (k + \tfrac{1}{2})\lambda$, heikentävä $2nd = k\lambda$. Hyvin ohut kalvo näyttää siksi heijastuneessa valossa lähes mustalta.
 - Valkoisessa valossa kalvo näyttää värikkäältä, koska osa aallonpituuksista kumoutuu, ja väri vaihtuu kalvon paksuuden mukana.
 - Heijastuksenestopinnoitteessa on kaksi siirtymää, ja ohuin heikentävä pinnoite on $d = \lambda : (4n)$, esimerkiksi $\text{MgF}_2$:lla $99{,}6\,\text{nm}$ aallonpituudelle $550\,\text{nm}$.
 

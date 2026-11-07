@@ -201,7 +201,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Find the error",
-      "prompt": "A power plant transmits a power of $200\\,\\text{MW}$ at a voltage of $400\\,\\text{kV}$ along a line whose resistance is $6.0\\,\\Omega$. A student calculates the power loss\n\n$$\\begin{aligned} P_\\text{h} &= \\frac{U^2}{R} \\\\ &= \\frac{(400\\,000\\,\\text{V})^2}{6.0\\,\\Omega} \\\\ &\\approx 2.7 \\cdot 10^{10}\\,\\text{W} \\end{aligned}$$\n\nWhere is the error?",
+      "prompt": "A power plant transmits a power of $200\\,\\text{MW}$ at a voltage of $400\\,\\text{kV}$ along a line whose resistance is $6.0\\,\\Omega$. The transmission is described with the simplified two-wire model. A student calculates the power loss\n\n$$\\begin{aligned} P_\\text{h} &= \\frac{U^2}{R} \\\\ &= \\frac{(400\\,000\\,\\text{V})^2}{6.0\\,\\Omega} \\\\ &\\approx 2.7 \\cdot 10^{10}\\,\\text{W} \\end{aligned}$$\n\nWhere is the error?",
       "choices": [
         {
           "text": "The transmission voltage is not across the resistance of the line: first $I = P : U$, then $P_\\text{h} = R I^2 = 1.5\\,\\text{MW}$.",
@@ -224,7 +224,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Apply to a new situation: the connection line of a wind farm",
-      "prompt": "A wind farm feeds a power of $33\\,\\text{MW}$ to a substation along a $110\\,\\text{kV}$ power line. The total resistance of the conductors is $8.0\\,\\Omega$. How large a power becomes internal energy in the line? Answer in kilowatts.",
+      "prompt": "A wind farm feeds a power of $33\\,\\text{MW}$ to a substation along a $110\\,\\text{kV}$ power line. The total resistance of the conductors is $8.0\\,\\Omega$. The transmission is described with the simplified two-wire model. How large a power becomes internal energy in the line? Answer in kilowatts.",
       "answer": 720,
       "unit": "kW",
       "tolerance": 0.02,

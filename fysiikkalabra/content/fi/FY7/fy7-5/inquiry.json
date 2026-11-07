@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "contribution": "Käämiin syntyy jännite vain, kun sen läpi kulkeva magneettivuo muuttuu: magneettivuo $\\Phi = BA$, induktiolaki $e = -N \\cdot \\Delta\\Phi : \\Delta t$ vuon kuvaajan kulmakertoimena ja liikkuvan tangon jännite $e = vBl$ johdettuna tangon elektroneihin kohdistuvasta magneettisesta voimasta; simulaatiossa käämi kulkee kenttäalueen läpi ja kuvaajat $\\Phi(t)$ ja $e(t)$ piirtyvät.",
+  "contribution": "Käämiin syntyy jännite vain, kun sen läpi kulkeva magneettivuo muuttuu: magneettivuo $\\Phi = BA$, induktiolaki $e_\\text{ka} = -N \\cdot \\Delta\\Phi : \\Delta t$ vuon kuvaajan kulmakertoimena ja liikkuvan tangon jännite $e = vBl$ johdettuna tangon elektroneihin kohdistuvasta magneettisesta voimasta; simulaatiossa käämi kulkee kenttäalueen läpi ja kuvaajat $\\Phi(t)$ ja $e(t)$ piirtyvät.",
   "learn": [
     "laskemaan magneettivuon ja käämiin syntyvän induktiojännitteen induktiolain avulla.",
     "päättelemään induktiojännitteen magneettivuon kuvaajan kulmakertoimesta.",
@@ -190,7 +190,7 @@
         "koe-2"
       ],
       "prompt": "Kirjoita taulukoidesi perusteella: miten sisääntulon jännite riippuu käämin vauhdista ja kierrosten lukumäärästä, ja mitä jännite on, kun käämi on kokonaan kentän sisällä? Mitä huomaat tulosta $e \\cdot \\Delta t$ kokeessa 1? Vertaa sitä yhden kierroksen suurimpaan vuohon $2{,}0\\,\\text{mWb}$ ja kierrosten lukumäärään.",
-      "model": "Kokeessa 1 sisääntulon jännite oli vauhdilla $0{,}10\\,\\text{m/s}$ $-20{,}0\\,\\text{mV}$ ja vauhdilla $0{,}20\\,\\text{m/s}$ $-40{,}0\\,\\text{mV}$, joten jännite on verrannollinen vauhtiin. Sisääntulo kesti vastaavasti $1{,}00\\,\\text{s}$ ja $0{,}50\\,\\text{s}$, joten tulo $e \\cdot \\Delta t = -20\\,\\text{mV}\\cdot\\text{s}$ pysyi samana. Se on $-N\\Delta\\Phi = -10 \\cdot 2{,}0\\,\\text{mWb} = -20\\,\\text{mWb}$, sillä $1\\,\\text{mV}\\cdot\\text{s} = 1\\,\\text{mWb}$. Jännite on siis $e = -N \\cdot \\Delta\\Phi : \\Delta t$: sama vuon muutos nopeammin antaa suuremman jännitteen. Kokeessa 2 jännite oli $5$ kierroksella $-10{,}0\\,\\text{mV}$ ja $20$ kierroksella $-40{,}0\\,\\text{mV}$, joten se on verrannollinen kierrosten lukumäärään. Kun käämi oli kokonaan kentän sisällä, jännite oli nolla, koska vuo ei muuttunut. Arvot ovat mallin laskemia.",
+      "model": "Kokeessa 1 sisääntulon jännite oli vauhdilla $0{,}10\\,\\text{m/s}$ $-20{,}0\\,\\text{mV}$ ja vauhdilla $0{,}20\\,\\text{m/s}$ $-40{,}0\\,\\text{mV}$, joten jännite on verrannollinen vauhtiin. Sisääntulo kesti vastaavasti $1{,}00\\,\\text{s}$ ja $0{,}50\\,\\text{s}$, joten tulo $e \\cdot \\Delta t = -20\\,\\text{mV}\\cdot\\text{s}$ pysyi samana. Se on $-N\\Delta\\Phi = -10 \\cdot 2{,}0\\,\\text{mWb} = -20\\,\\text{mWb}$, sillä $1\\,\\text{mV}\\cdot\\text{s} = 1\\,\\text{mWb}$. Jännite on siis $e = -N \\cdot \\Delta\\Phi : \\Delta t$, koska vuo muuttui tasaisesti: sama vuon muutos nopeammin antaa suuremman jännitteen. Kokeessa 2 jännite oli $5$ kierroksella $-10{,}0\\,\\text{mV}$ ja $20$ kierroksella $-40{,}0\\,\\text{mV}$, joten se on verrannollinen kierrosten lukumäärään. Kun käämi oli kokonaan kentän sisällä, jännite oli nolla, koska vuo ei muuttunut. Arvot ovat mallin laskemia.",
       "criteria": [
         "Kerroin, että sisääntulon jännite kaksinkertaistuu, kun vauhti kaksinkertaistuu, ja kaksinkertaistuu, kun kierrosten lukumäärä kaksinkertaistuu.",
         "Kerroin, että jännite on nolla, kun käämi on kokonaan kentän sisällä, koska vuo ei silloin muutu.",
@@ -212,7 +212,7 @@
       "stage": "selita",
       "type": "reflect",
       "title": "Palaa ennusteisiisi",
-      "prompt": "Vertaa ennusteitasi mallin arvoihin ja induktiolakiin $e = -N \\cdot \\Delta\\Phi : \\Delta t$. Palaa sitten alun kysymykseen: miksi pyörän dynamo sytyttää lampun vain, kun pyörä pyörii, ja miksi lamppu palaa sitä kirkkaammin, mitä lujempaa ajat?",
+      "prompt": "Vertaa ennusteitasi mallin arvoihin ja induktiolakiin $e_\\text{ka} = -N \\cdot \\Delta\\Phi : \\Delta t$. Palaa sitten alun kysymykseen: miksi pyörän dynamo sytyttää lampun vain, kun pyörä pyörii, ja miksi lamppu palaa sitä kirkkaammin, mitä lujempaa ajat?",
       "predictions": [
         "ennuste-sisalla",
         "ennuste-vauhti"
@@ -261,7 +261,7 @@
       "tolerance": 0.02,
       "hints": [
         "Mikä käämin läpi kulkevassa vuossa muuttuu, ja kuinka nopeasti? Kuinka monta kierrosta on sarjassa?",
-        "Induktiojännitteen suuruus on $|e| = N \\cdot \\Delta\\Phi : \\Delta t$. Muunna ensin vuo vebereiksi ja aika sekunneiksi.",
+        "Keskimääräisen induktiojännitteen suuruus on $|e_\\text{ka}| = N \\cdot |\\Delta\\Phi| : \\Delta t$. Muunna ensin vuo vebereiksi ja aika sekunneiksi.",
         "$\\Delta\\Phi = 0{,}12 \\cdot 10^{-3}\\,\\text{Wb}$ ja $\\Delta t = 15 \\cdot 10^{-3}\\,\\text{s}$, joten $|e| = 600 \\cdot 0{,}12 \\cdot 10^{-3}\\,\\text{Wb} : (15 \\cdot 10^{-3}\\,\\text{s})$."
       ],
       "mistakes": [
@@ -284,7 +284,7 @@
       "id": "harjoitukset",
       "stage": "sovella",
       "type": "exercises",
-      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä kaavaa, $\\Phi = BA$, $e = -N \\cdot \\Delta\\Phi : \\Delta t$ tai $e = vBl$, tason 2 tehtävissä yhdistetään kaksi vaihetta tai luetaan vuon kuvaajaa, ja taso 3 vaatii päättelyä uudessa tilanteessa."
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä kaavaa, $\\Phi = BA$, $e_\\text{ka} = -N \\cdot \\Delta\\Phi : \\Delta t$ tai $e = vBl$, tason 2 tehtävissä yhdistetään kaksi vaihetta tai luetaan vuon kuvaajaa, ja taso 3 vaatii päättelyä uudessa tilanteessa."
     },
     {
       "id": "check-1",

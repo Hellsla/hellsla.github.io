@@ -274,7 +274,7 @@
     {
       "id": "fy7-13-L3-02",
       "level": 3,
-      "text": "Opiskelija tutkii CD-levyä heijastushilana. Hän tekee pahviseen varjostimeen reiän ja ohjaa punaisen laserin säteen, jonka aallonpituus on $650\\,\\text{nm}$, reiän läpi kohtisuoraan levyn pintaan. Varjostin on levyn suuntainen $10{,}0\\,\\text{cm}$:n päässä levystä.\n\nLevystä heijastuneet ensimmäisen kertaluvun maksimit näkyvät varjostimella reiän molemmin puolin $89\\,\\text{mm}$:n päässä toisistaan.\n\nKuinka suuri on levyn vierekkäisten raitojen etäisyys? Anna vastaus mikrometreinä.",
+      "text": "Opiskelija tutkii CD-levyä heijastushilana. Hän tekee pahviseen varjostimeen reiän ja ohjaa punaisen laserin säteen, jonka aallonpituus on $650\\,\\text{nm}$, reiän läpi kohtisuoraan levyn pintaan. Levystä heijastuvia säteitä ei saa suunnata silmiin. Varjostin on levyn suuntainen $10{,}0\\,\\text{cm}$:n päässä levystä.\n\nLevystä heijastuneet ensimmäisen kertaluvun maksimit näkyvät varjostimella reiän molemmin puolin $89\\,\\text{mm}$:n päässä toisistaan.\n\nKuinka suuri on levyn vierekkäisten raitojen etäisyys? Anna vastaus mikrometreinä.",
       "answer": 1.5988,
       "unit": "µm",
       "tolerance": 0.02
@@ -380,7 +380,7 @@
     {
       "id": "fy7-13-L3-05",
       "level": 3,
-      "text": "Opiskelija tutkii DVD-levyä heijastushilana. Vihreän laserin säde, jonka aallonpituus on $532\\,\\text{nm}$, kulkee levyn suuntaisessa pahvissa olevan reiän läpi ja osuu kohtisuoraan levyn pintaan.\n\nLevystä heijastuneet ensimmäisen kertaluvun maksimit $k = \\pm 1$ näkyvät pahvilla reiän molemmin puolin. Opiskelija mittaa maksimien välimatkan $2x$ neljällä eri etäisyydellä $L$ pahvin ja levyn välillä; tulokset ovat taulukossa.\n\na) Laske jokaisesta mittauksesta levyn raitojen etäisyys $d$ ja niiden keskiarvo $d_{\\text{ka}}$.\n\nb) Osoita laskemalla, ettei toisen kertaluvun maksimia synny. Kuinka monta valopistettä pahvilla näkyy, ja minne nollannen kertaluvun heijastus menee?\n\nc) Kuinka monta prosenttia keskiarvo $d_{\\text{ka}}$ poikkeaa DVD-levyn raitavälistä $0{,}74\\,\\mu\\text{m}$?\n\nKohdan a) keskiarvo mikrometreinä kirjoitetaan vastauslaatikkoon.",
+      "text": "Opiskelija tutkii DVD-levyä heijastushilana. Vihreän laserin säde, jonka aallonpituus on $532\\,\\text{nm}$, kulkee levyn suuntaisessa pahvissa olevan reiän läpi ja osuu kohtisuoraan levyn pintaan. Levystä heijastuvia säteitä ei saa suunnata silmiin.\n\nLevystä heijastuneet ensimmäisen kertaluvun maksimit $k = \\pm 1$ näkyvät pahvilla reiän molemmin puolin. Opiskelija mittaa maksimien välimatkan $2x$ neljällä eri etäisyydellä $L$ pahvin ja levyn välillä; tulokset ovat taulukossa.\n\na) Laske jokaisesta mittauksesta levyn raitojen etäisyys $d$ ja niiden keskiarvo $d_{\\text{ka}}$.\n\nb) Osoita laskemalla, ettei toisen kertaluvun maksimia synny. Kuinka monta valopistettä pahvilla näkyy, ja minne nollannen kertaluvun heijastus menee?\n\nc) Kuinka monta prosenttia keskiarvo $d_{\\text{ka}}$ poikkeaa DVD-levyn raitavälistä $0{,}74\\,\\mu\\text{m}$?\n\nKohdan a) keskiarvo mikrometreinä kirjoitetaan vastauslaatikkoon.",
       "kind": [
         "data",
         "model",

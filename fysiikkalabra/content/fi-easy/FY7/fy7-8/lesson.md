@@ -152,7 +152,7 @@ Toisiokäämiin syntyy jännite vain, kun sen läpi kulkeva magneettivuo muuttuu
 Tämän vuoksi sähköverkossa käytetään vaihtovirtaa. Luvussa *Generaattori ja vaihtovirta* generaattori tuottaa vaihtojännitettä. Muuntajilla jännite voidaan muuttaa aina sopivan suuruiseksi.
 
 ### Teho säilyy, virta muuttuu
-Ideaalinen muuntaja ei kuluta energiaa. Siksi ensiökäämiin tuleva teho on yhtä suuri kuin toisiokäämistä lähtevä teho. Teho on jännitteen ja virran tulo. Kun muuntaja nostaa jännitteen kymmenkertaiseksi, virta pienenee kymmenesosaan.
+Ideaalinen muuntaja ei kuluta energiaa. Siksi ensiökäämiin tuleva teho on yhtä suuri kuin toisiokäämistä lähtevä teho. Kun kuorma on resistiivinen, teho on jännitteen ja virran tulo. Kun muuntaja nostaa jännitteen kymmenkertaiseksi, virta pienenee kymmenesosaan.
 
 Muuntaja ei siis lisää energiaa eikä tehoa. Se vaihtaa suuren virran suureksi jännitteeksi tai päinvastoin. Todellisessa muuntajassa osa energiasta muuttuu sisäenergiaksi käämien resistanssissa ja rautasydämen pyörrevirroissa. Siksi sydän kootaan ohuista levyistä, jotka on eristetty toisistaan (luku *Lenzin laki ja pyörrevirrat*). Suurten voimalaitosmuuntajien hyötysuhde on yli $99\,\%$.
 
@@ -161,7 +161,7 @@ Voimajohdolla on resistanssi. Johdossa kulkeva virta lämmittää johtoa. Lämm�
 
 Saman tehon voi siirtää suurella jännitteellä ja pienellä virralla. Kun jännite nostetaan kymmenkertaiseksi, virta pienenee kymmenesosaan ja häviöteho sadasosaan. Siksi voimalaitoksen generaattorin jännite nostetaan muuntajalla **suurjännitteeksi**. Fingrid ylläpitää Suomen kantaverkkoa. Kantaverkon jännitteet ovat $400\,\text{kV}$, $220\,\text{kV}$ ja $110\,\text{kV}$. Kantaverkon häviöt vastaavat noin $2\,\%$:a Suomessa käytetystä sähköstä (Fingrid, *Yhteisillä linjoilla* 2026, vuoden 2025 tiedot).
 
-<svg data-fig="grid" viewBox="0 0 640 372" role="img" aria-label="Kaavakuva sähköverkosta, ei mittakaavassa. Ylärivillä voimalaitoksen generaattorin jännite 20 kV nostetaan muuntajalla 400 kilovoltiksi. Kantaverkon suuret pylväät vievät sähkön sähköasemalle. Sähköasemalla muuntaja laskee jännitteen. Alarivillä jakeluverkon pienet pylväät vievät 20 kV:n jännitteen muuntamolle. Muuntamo laskee jännitteen kotien 230 voltiksi." style="max-width:100%;font-size:24px">
+<svg data-fig="grid" viewBox="0 0 640 372" role="img" aria-label="Kaavakuva sähköverkosta yksiviivaesityksenä, ei mittakaavassa. Todellisissa kolmivaiheisissa johdoissa on kolme vaihejohdinta. Ylärivillä voimalaitoksen generaattorin jännite 20 kV nostetaan muuntajalla 400 kilovoltiksi. Kantaverkon suuret pylväät vievät sähkön sähköasemalle. Sähköasemalla muuntaja laskee jännitteen. Alarivillä jakeluverkon pienet pylväät vievät 20 kV:n jännitteen muuntamolle. Muuntamo laskee jännitteen pienjänniteverkon jännitteeksi. Kotien pistorasioissa on 230 volttia." style="max-width:100%;font-size:24px">
   <rect x="60" y="66" width="14" height="40" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
   <rect x="16" y="106" width="64" height="64" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
   <path d="M11,106 H85 L68,90 H28 Z" fill="#6c757d" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
@@ -209,7 +209,7 @@ Saman tehon voi siirtää suurella jännitteellä ja pienellä virralla. Kun jä
 <figure class="unit-photo"><img src="pics/fy7/transformer-750kv.webp" alt="Iso vaalea muuntaja nurmella. Taustalla on sähköaseman rakenteita ja johtoja."><figcaption>Muuntaja, jonka suurempi jännite on $750\,\text{kV}$. Johdoissa häviää tehoa $P = RI^2$. Kun jännite on suuri, johdoissa kulkee pieni virta. Silloin johdoissa häviää vähän tehoa.</figcaption></figure>
 
 ### Jännite lasketaan vaiheittain
-Sähköasemilla muuntajat laskevat jännitteen alueverkon $110\,\text{kV}$:iin ja jakeluverkon $20\,\text{kV}$:iin. Asuinalueen muuntamo laskee sen kotien $230\,\text{V}$:iin. Suurjännitettä ei tuoda koteihin. Sen eristäminen vaatii pitkiä eristimiä ja suuria etäisyyksiä, ja kosketus olisi hengenvaarallinen (luku *Sähköturvallisuus kotona ja työssä*).
+Sähköasemilla muuntajat laskevat jännitteen alueverkon $110\,\text{kV}$:iin ja jakeluverkon $20\,\text{kV}$:iin. Asuinalueen muuntamossa on jakelumuuntaja. Se laskee esimerkiksi $20\,\text{kV}$:n jännitteen pienjänniteverkon jännitteeksi. Pienjänniteverkossa vaihejohtimien välillä on noin $400\,\text{V}$. Vaihejohtimen ja nollajohtimen välillä on noin $230\,\text{V}$. Se on kodin pistorasian jännite. Suurjännitettä ei tuoda koteihin. Sen eristäminen vaatii pitkiä eristimiä ja suuria etäisyyksiä, ja kosketus olisi hengenvaarallinen (luku *Sähköturvallisuus kotona ja työssä*).
 
 Puhelimen laturi laskee jännitteen vielä noin $5\,\text{V}$:iin. Nykyaikainen laturi muuttaa verkkojännitteen ensin hyvin suuritaajuiseksi. Silloin muuntaja voi olla pieni. Lopuksi laturi tasasuuntaa jännitteen. Laturin muuntajan käämit eivät kosketa toisiaan. Puhelin ei siis ole johtavassa yhteydessä sähköverkkoon.
 
@@ -221,18 +221,18 @@ Ideaalisen muuntajan jännitteet ja virrat riippuvat käämien kierrosten lukum�
 Tässä $U_1$ on ensiöjännite (V) ja $U_2$ on toisiojännite (V). Kirjaimet $N_1$ ja $N_2$ ovat ensiökäämin ja toisiokäämin kierrosten lukumäärät. Kirjaimet $I_1$ ja $I_2$ ovat ensiövirta ja toisiovirta (A). Suhde $N_1 : N_2$ on muuntosuhde. Viimeinen yhtäsuuruus seuraa tehon säilymisestä: $U_1 I_1 = U_2 I_2$. Jännitteet ja virrat ovat tehollisia arvoja (luku *Generaattori ja vaihtovirta*). Kun jännite kasvaa, virta pienenee samassa suhteessa.
 
 ### Siirtojohdon tehohäviö
-Voimalaitos lähettää tehon $P$ jännitteellä $U$. Johdon virta ja johdossa lämmöksi muuttuva teho ovat
+Sähkönsiirtoa kuvataan ensin yksinkertaistetulla kaksijohtimisella virtapiirillä. Siinä virta kulkee perille yhtä johdinta pitkin ja palaa toista pitkin. Voimalaitos lähettää tehon $P$ jännitteellä $U$. Johdon virta ja johdossa lämmöksi muuttuva teho ovat
 ```latex
 \begin{aligned}
 &P = U I \\[6pt]
 &P_\text{h} = R I^2 = \frac{R P^2}{U^2}
 \end{aligned}
 ```
-Tässä $P$ on siirrettävä teho (W), $U$ on siirtojännite (V) ja $I$ on johdon virta (A). Kirjain $R$ on johtimien resistanssi (Ω) ja $P_\text{h}$ on häviöteho (W). Kun sama teho siirretään kaksinkertaisella jännitteellä, virta puolittuu ja häviöteho pienenee neljäsosaan.
+Tässä $P$ on siirrettävä teho (W), $U$ on siirtojännite (V) ja $I$ on johdon virta (A). Kirjain $R$ on kummankin johtimen yhteenlaskettu resistanssi (Ω) ja $P_\text{h}$ on häviöteho (W). Kun sama teho siirretään kaksinkertaisella jännitteellä, virta puolittuu ja häviöteho pienenee neljäsosaan.
 
 Siirtojännite $U$ ei ole sama kuin jännite johdon resistanssin yli. Johdon päiden välinen jännitehäviö on vain $R I$. Siksi häviötehoa ei saa laskea lausekkeella $U^2 : R$.
 
-<svg data-fig="loss-graph" viewBox="0 0 600 340" role="img" aria-label="Kuvaaja mittakaavassa: siirtojohdossa lämmöksi muuttuvan tehon osuus siirretystä tehosta prosentteina. Osuus on siirtojännitteen funktio, ja jännite on kilovoltteina. Siirretty teho on 200 MW ja johdon resistanssi 6,0 ohmia. Käyrä laskee jyrkästi. Jännitteellä 100 kV osuus on 12 %, jännitteellä 200 kV 3,0 % ja jännitteellä 400 kV 0,75 %. Kun jännite kaksinkertaistuu, osuus pienenee neljäsosaan." style="max-width:100%;font-size:24px">
+<svg data-fig="loss-graph" viewBox="0 0 600 340" role="img" aria-label="Kuvaaja mittakaavassa: siirtojohdossa lämmöksi muuttuvan tehon osuus siirretystä tehosta prosentteina. Osuus on siirtojännitteen funktio, ja jännite on kilovoltteina. Siirretty teho on 200 MW ja johdon resistanssi 6,0 ohmia yksinkertaistetussa kaksijohtimisessa mallissa. Käyrä laskee jyrkästi. Jännitteellä 100 kV osuus on 12 %, jännitteellä 200 kV 3,0 % ja jännitteellä 400 kV 0,75 %. Kun jännite kaksinkertaistuu, osuus pienenee neljäsosaan." style="max-width:100%;font-size:24px">
   <line x1="143" y1="290" x2="143" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="189.5" y1="290" x2="189.5" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="236" y1="290" x2="236" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -292,6 +292,15 @@ Siirtojännite $U$ ei ole sama kuin jännite johdon resistanssin yli. Johdon pä
   <foreignObject x="320" y="115.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$R = 6{,}0\,\Omega$</div></foreignObject>
 </svg>
 
+### Todellinen kantaverkko on kolmivaiheinen
+Suomen todellinen kantaverkko on kolmivaiheinen. Johdolla on kolme vaihejohdinta. Esimerkiksi $400\,\text{kV}$ on vaihejohtimien välinen jännite. Sitä sanotaan pääjännitteeksi. Kun kolmivaiheverkko on tasaisesti kuormitettu, sen pätöteho on
+```latex
+P = \sqrt{3}\,U I \cos\varphi
+```
+Tässä $P$ on siirrettävä pätöteho (W), $U$ on pääjännite (V) ja $I$ on vaihejohtimen virta (A). Merkintä $\cos\varphi$ on tehokerroin. Tehokerroin on yksi, kun virta ja jännite ovat samassa vaiheessa.
+
+Samalla jännitteellä ja virralla kolmivaihejohto siirtää noin $1{,}73$-kertaisen tehon kaksijohtimiseen malliin verrattuna. Periaate on silti sama: suuri siirtojännite pienentää virtaa ja häviöitä. Tämän luvun laskutehtävissä käytetään tarkoituksella yksinkertaistettua kaksijohtimista mallia $P = UI$, ellei tehtävässä sanota muuta.
+
 ## Esimerkki
 Sähköaseman muuntaja laskee alueverkon jännitteen $110\,\text{kV}$ jakeluverkon jännitteeksi $20\,\text{kV}$. Toisiokäämissä on $360$ kierrosta, ja jakeluverkkoon lähtevä virta on $450\,\text{A}$. Kuinka monta kierrosta ensiökäämissä on? Kuinka suuri virta ensiökäämissä kulkee? Muuntaja oletetaan ideaaliseksi.
 
@@ -350,7 +359,8 @@ Toinen virhe on ajatella, että jännitettä nostava muuntaja lisää tehoa. Ide
 - Muuntajassa ensiökäämin vaihtovirta synnyttää rautasydämeen muuttuvan magneettivuon. Vuo indusoi toisiokäämiin vaihtojännitteen. Tasavirralla vuo ei muutu, eikä muuntaja toimi.
 - Ideaalisessa muuntajassa $U_1 : U_2 = N_1 : N_2 = I_2 : I_1$. Teho säilyy, joten jännitteen kasvaessa virta pienenee.
 - Siirtojohdon häviöteho on $P_\text{h} = R I^2$, missä $I = P : U$. Kaksinkertainen siirtojännite pienentää häviöt neljäsosaan.
-- Sähkö siirretään pitkiä matkoja suurjännitteellä. Suomen kantaverkon jännitteet ovat $400\,\text{kV}$, $220\,\text{kV}$ ja $110\,\text{kV}$. Muuntajat laskevat jännitteen vaiheittain kotien $230\,\text{V}$:iin.
+- Sähkö siirretään pitkiä matkoja suurjännitteellä. Suomen kantaverkon jännitteet ovat $400\,\text{kV}$, $220\,\text{kV}$ ja $110\,\text{kV}$. Muuntajat laskevat jännitteen vaiheittain pienjänniteverkon $400\,\text{V}$:iin ja $230\,\text{V}$:iin.
+- Laskuissa käytetään yksinkertaistettua kaksijohtimista mallia $P = UI$. Todellinen kantaverkko on kolmivaiheinen: $400\,\text{kV}$ on pääjännite, ja pätöteho on $P = \sqrt{3}\,U I \cos\varphi$.
 
 <svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Kuvitus: pieni puhelimen laturi on kytketty seinäpistorasiaan. Laturin johto vie pöydällä olevaan puhelimeen, joka latautuu." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy78s-desk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy78s-screen" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#1971c2"/></linearGradient></defs>

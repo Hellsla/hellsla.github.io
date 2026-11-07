@@ -75,17 +75,17 @@
     {
       "id": "fy7-1-L1-07",
       "level": 1,
-      "text": "Kompassin neulan pohjoispää osoittaa maantieteellistä pohjoista kohti. Mitä tämä kertoo Maan magneettisista navoista?",
+      "text": "Kompassin neulan pohjoispää osoittaa likimain maantieteellistä pohjoista kohti. Maan kenttää kuvataan sauvamagneetin kenttänä. Mitä neulan suunta kertoo tämän mallin navoista?",
       "kind": [
         "concept"
       ],
-      "answer": "Maantieteellisen pohjoisnavan lähellä on Maan magneettinen etelänapa. Neulan pohjoisnapaa vetää puoleensa eriniminen napa.",
+      "answer": "Sauvamagneettimallissa maantieteellisen pohjoisnavan lähellä on etelänapa. Neulan pohjoisnapaa vetää puoleensa eriniminen napa.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Maantieteellisen pohjoisnavan lähellä on Maan magneettinen pohjoisnapa. Neulan pohjoisnapa hakeutuu samannimisen navan luo.",
-          "feedback": "Väärin: samannimiset navat hylkivät toisiaan. Siksi neulan pohjoispää ei hakeudu pohjoisnavan luo. Se osoittaa kohti erinimistä napaa eli magneettista etelänapaa."
+          "text": "Sauvamagneettimallissa maantieteellisen pohjoisnavan lähellä on pohjoisnapa. Neulan pohjoisnapa hakeutuu samannimisen navan luo.",
+          "feedback": "Väärin: samannimiset navat hylkivät toisiaan. Siksi neulan pohjoispää ei hakeudu pohjoisnavan luo. Se osoittaa kohti erinimistä napaa eli sauvamagneettimallin etelänapaa."
         },
         {
           "text": "Neula osoittaa pohjoiseen, koska Maan pyöriminen kääntää kevyen neulan pyörimisakselin suuntaiseksi. Magneettikentällä ei ole osuutta.",
@@ -96,8 +96,8 @@
           "feedback": "Väärin: Maan kenttä muistuttaa sauvamagneetin kenttää, ja siinä on napa kummassakin päässä. Neulaa kääntää magneettinen vuorovaikutus. Painovoima ja kitka eivät käännä sitä."
         },
         {
-          "text": "Maantieteellisen pohjoisnavan lähellä on Maan magneettinen etelänapa. Neulan pohjoisnapaa vetää puoleensa eriniminen napa.",
-          "feedback": "Oikein: neulan pohjoispää on magneetin pohjoisnapa, ja erinimiset navat vetävät toisiaan. Neulan pohjoispää osoittaa maantieteellistä pohjoista kohti. Siellä on siis Maan magneettinen etelänapa.",
+          "text": "Sauvamagneettimallissa maantieteellisen pohjoisnavan lähellä on etelänapa. Neulan pohjoisnapaa vetää puoleensa eriniminen napa.",
+          "feedback": "Oikein: neulan pohjoispää on magneetin pohjoisnapa, ja erinimiset navat vetävät toisiaan. Neulan pohjoispää osoittaa maantieteellistä pohjoista kohti. Siellä on siis sauvamagneettimallin etelänapa. Geomagnetismissa tätä napaa kutsutaan silti magneettiseksi pohjoisnavaksi.",
           "correct": true
         }
       ]
