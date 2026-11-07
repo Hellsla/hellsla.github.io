@@ -280,8 +280,8 @@ def generic(lid):
         if more.count(): more.evaluate("(d) => { d.open = true; }"); pg.wait_for_timeout(100)
         n_opt = pg.locator("details.opt").count()
         if n_opt:                                         # optional activities: closed, named boxes that open from the keyboard
-            st = pg.evaluate("[...document.querySelectorAll('details.opt')].map((d) => [d.open, d.querySelector('summary').textContent.includes('Valinnainen') || !d.querySelector('.opt-tag'), !!d.querySelector('.activity[id]')])")
-            check("optional activities start closed, are named Valinnainen and keep their ids (closed required boxes carry no tag)", all(not o and v and i for o, v, i in st), str(st))
+            st = pg.evaluate("[...document.querySelectorAll('details.opt')].map((d) => [d.open, /Valinnainen|Syventävä|Lisätiedoksi/.test(d.querySelector('summary').textContent) || !d.querySelector('.opt-tag'), !!d.querySelector('.activity[id]')])")
+            check("optional activities start closed, are named Valinnainen (or Syventävä, Lisätiedoksi: LOPS 2019 extension, teacher 2026-11-07) and keep their ids (closed required boxes carry no tag)", all(not o and v and i for o, v, i in st), str(st))
             pg.locator("details.opt > summary").first.focus(); pg.keyboard.press("Enter")
             check("an optional box opens from the keyboard", pg.locator("details.opt").first.evaluate("(d) => d.open"))
             pg.evaluate("document.querySelectorAll('details.opt').forEach((d) => { d.open = true; })")   # the rest of the run treats them like the others
