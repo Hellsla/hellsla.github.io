@@ -558,7 +558,7 @@
       "voyager_2": "Voyager 2",
       "malli": "model",
       "etaisyys_n": "Distance $d = 10^{ {{n}} }\\,\\text{km}$",
-      "selite": "One pixel is the diameter of the Moon, 3474 km. Bottom bar: distance from the Sun, logarithmic scale.",
+      "selite": "One pixel is the diameter of the Moon, $3474\\,\\text{km}$. Bottom bar: distance from the Sun, logarithmic scale.",
       "nakyma": "<strong>Centre of the view:</strong> $d = {{km}}\\,\\text{km} = {{au}}\\,\\text{AU}$, light travels from the Sun to this point in a time $t = {{t}}$",
       "matka": "<br><strong>Path of the light:</strong> $s = {{s}}\\,\\text{km}$, elapsed time $t = {{t}}$, animation speed ${{x}}$ times real time",
       "voyager_rivi": "<br><strong>Voyager 2</strong>, model values (NASA/JPL), {{pvm}}: $d = {{km}}\\,\\text{km} = {{au}}\\,\\text{AU}$, $v = {{v}}\\,\\text{km/s}$, signal from the Sun $t = {{t}}$",

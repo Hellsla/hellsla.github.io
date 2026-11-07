@@ -198,7 +198,7 @@
    "luku": "fy1-2",
    "aihe": "fy1-si-jarjestelma",
    "kasite": "Johdannaisyksikkö",
-   "maaritelma": "Perusyksiköistä muodostettu yhdistelmä, kuten nopeuden m/s tai voiman N."
+   "maaritelma": "Perusyksiköistä muodostettu yhdistelmä, kuten nopeuden $\\text{m/s}$ tai voiman $\\text{N}$."
   },
   {
    "id": "fy1-kerrannaisyksikko",
@@ -230,7 +230,7 @@
    "luku": "fy1-2",
    "aihe": "fy1-si-jarjestelma",
    "kasite": "Suuruusluokka",
-   "maaritelma": "Kohteen kokoa kuvataan sopivan kymmenen potenssin avulla."
+   "maaritelma": "Suureen arvon suuruusluokka on kymmenpotenssien akselilla sitä lähin kymmenpotenssi, esimerkiksi $8{,}8\\cdot10^{3}\\,\\text{m}$ on suuruusluokkaa $10^{4}\\,\\text{m}$."
   },
   {
    "id": "fy1-alkeishiukkanen",

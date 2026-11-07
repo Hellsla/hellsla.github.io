@@ -488,7 +488,7 @@ Yksikkö valitaan niin, että lukuarvo on helppo lukea. Luvussa *Fysiikka tietee
 Esimerkiksi vetyatomin halkaisija on $0{,}11\,\text{nm}$ ja protonin halkaisija $1{,}7\,\text{fm}$. Yksikkö ei muuta kokoa. Se muuttaa vain kirjoitustapaa. Astronominen yksikkö ja valovuosi eivät ole SI-yksiköitä. Ne on kuitenkin määritelty metreinä, joten ne voi aina muuntaa metreiksi.
 
 ### Merkitsevät numerot
-Lukuarvon **merkitsevät numerot** kertovat, kuinka tarkasti suure tunnetaan. Laske mukaan kaikki numerot ensimmäisestä nollasta eroavasta numerosta alkaen. Myös loppunollat ovat merkitseviä. Luvussa $0{,}0250\,\text{m}$ on kolme merkitsevää numeroa ja luvussa $3{,}0\,\text{m}$ kaksi. Kymmenpotenssimuoto näyttää tarkkuuden: luvussa $3{,}00\cdot10^{8}$ on kolme merkitsevää numeroa ja luvussa $3\cdot10^{8}$ yksi. Kokonaisluvun loppunollat ovat epäselviä. Luvusta $384\,400$ ei näe, onko tarkkuus sata kilometriä vai yksi kilometri. Kirjoita siksi tarkkuus näkyviin kymmenpotenssimuodossa, esimerkiksi $3{,}844\cdot10^{5}$ (neljä merkitsevää numeroa).
+Lukuarvon **merkitsevät numerot** kertovat, kuinka tarkasti suure tunnetaan. Laske mukaan kaikki numerot ensimmäisestä nollasta eroavasta numerosta alkaen. Myös desimaaliluvun loppunollat ovat merkitseviä. Luvussa $0{,}0250\,\text{m}$ on kolme merkitsevää numeroa ja luvussa $3{,}0\,\text{m}$ kaksi. Kymmenpotenssimuoto näyttää tarkkuuden: luvussa $3{,}00\cdot10^{8}$ on kolme merkitsevää numeroa ja luvussa $3\cdot10^{8}$ yksi. Kokonaisluvun loppunollat ovat epäselviä. Kuun keskietäisyydestä $384\,400\,\text{km}$ ei näe, onko tarkkuus sata, kymmenen vai yksi kilometri. Kirjoita siksi tarkkuus näkyviin kymmenpotenssimuodossa, esimerkiksi $3{,}844\cdot10^{5}\,\text{km}$ (neljä merkitsevää numeroa).
 
 Kerto- ja jakolaskun tulos annetaan niin monella merkitsevällä numerolla kuin epätarkimmassa tekijässä on. Pyöristä vasta lopuksi. Tarkoilla luvuilla, kuten muunnoskertoimella $1000$, ei ole rajoittavaa vaikutusta. Esimerkiksi $1{,}85\,\text{m}\cdot0{,}92\,\text{m} = 1{,}702\,\text{m}^2$ pyöristetään arvoon $1{,}7\,\text{m}^2$.
 
@@ -501,7 +501,7 @@ Kun vaihdat yksikköä, suure ei muutu. Vain sen kirjoitustapa muuttuu. Muunnos 
 
 Toiseen suuntaan $1\,\text{m} = 0{,}001\,\text{km}$, joten $350\,\text{m} = 350\cdot0{,}001\,\text{km} = 0{,}35\,\text{km}$. Tarkista tulos aina päättelemällä. Pienemmässä yksikössä lukuarvo on suurempi, koska pieniä yksiköitä tarvitaan enemmän. Pinta-alan yksikkö on kahden pituuden tulo, joten $1\,\text{km}^2 = 1000\,\text{m}\cdot1000\,\text{m} = 10^{6}\,\text{m}^2$.
 
-Tähtitieteessä kilometri on liian pieni yksikkö. **Astronominen yksikkö** $\text{AU}$ on Maan ja Auringon keskimääräinen etäisyys: $1\,\text{AU} = 149\,597\,870{,}7\,\text{km} \approx 1{,}496\cdot10^{8}\,\text{km}$. Myös valovuosi on pituusyksikkö eikä aikayksikkö. Se on matka, jonka valo kulkee vuodessa, noin $9{,}46\cdot10^{12}\,\text{km}$.
+Tähtitieteessä kilometri on liian pieni yksikkö. **Astronominen yksikkö** $\text{AU}$ on sovittu pituusyksikkö. Se on suunnilleen yhtä suuri kuin Maan ja Auringon keskimääräinen etäisyys: $1\,\text{AU} = 149\,597\,870{,}7\,\text{km} \approx 1{,}496\cdot10^{8}\,\text{km}$. Myös valovuosi on pituusyksikkö eikä aikayksikkö. Se on matka, jonka valo kulkee tyhjiössä vuodessa, noin $9{,}46\cdot10^{12}\,\text{km}$.
 
 Etäisyyden voi ilmoittaa myös ajalla, jonka valo tarvitsee sen kulkemiseen. Valo etenee tyhjiössä tasaisella nopeudella $c$. Valon kulkema matka on siis nopeus kertaa aika, $s = ct$. Kulkuaika saadaan, kun ratkaiset tämän kaavan ajan suhteen eli kirjoitat kaavan niin, että aika on yksin yhtälön vasemmalla puolella:
 
@@ -564,7 +564,7 @@ t = \frac{s}{c}
 <!-- vaihe -->
 
 **Yksikkömuunnokset.** Etäisyys muunnetaan kilometreiksi kirjoittamalla $\text{AU}$:n paikalle $1{,}496\cdot10^{8}\,\text{km}$: $s = 30{,}1\,\text{AU} = 30{,}1\cdot1{,}496\cdot10^{8}\,\text{km} = 4{,}503\cdot10^{9}\,\text{km}$.
-Kulkuaika tulee sekunteina, koska $\text{km}$ supistuu pois. Sekunnit muunnetaan tunneiksi, koska $1\,\text{h} = 3600\,\text{s}$.
+Kulkuaika tulee sekunteina, koska $\text{km}$ supistuu pois. Aika kysytään tunteina, joten sekunnit muunnetaan tunneiksi: $1\,\text{h} = 3600\,\text{s}$.
 
 <!-- vaihe -->
 
@@ -584,7 +584,7 @@ t &= \frac{s}{c} \\
 
 <!-- vaihe -->
 
-**Järkevyys.** Yhden AU:n matkan valo kulkee $8{,}3\,\text{min}$:ssa, joten $30$ AU vie noin $30\cdot 8{,}3\,\text{min} = 250\,\text{min} \approx 4{,}2\,\text{h}$. Tämä täsmää tuloksen kanssa. Etäisyys on miljardien kilometrien luokkaa, ja se sopii ulkoplaneetalle.
+**Järkevyys.** Yhden AU:n matkan valo kulkee $8{,}3\,\text{min}$:ssa, joten $30\,\text{AU}$ vie valolta noin $30\cdot 8{,}3\,\text{min} \approx 250\,\text{min} \approx 4{,}2\,\text{h}$. Tämä täsmää tuloksen kanssa. Etäisyys on miljardien kilometrien luokkaa, ja se sopii ulkoplaneetalle.
 
 ## Yleinen virhekäsitys
 Lukuarvo ja yksikkö kuuluvat yhteen. Kun yksikkö vaihtuu, lukuarvo muuttuu päinvastaiseen suuntaan. Suurempi yksikkö tarkoittaa pienempää lukuarvoa. Suure itse pysyy samana.
@@ -598,5 +598,5 @@ Valovuosi ei ole aikayksikkö, vaikka nimessä on vuosi. Se on pituusyksikkö, n
 - SI-järjestelmässä perusyksiköitä ovat esimerkiksi metri, kilogramma ja sekunti. Muut yksiköt johdetaan niistä.
 - Etuliite on kymmenpotenssi: kilo $10^{3}$, mega $10^{6}$, giga $10^{9}$, milli $10^{-3}$, mikro $10^{-6}$.
 - Yksikkömuunnoksessa vanhan yksikön paikalle kirjoitetaan sen arvo uudessa yksikössä, esimerkiksi $4{,}2\,\text{km} = 4{,}2\cdot1000\,\text{m}$. Neliöyksikössä muunnos tehdään kahdesti: $1\,\text{km}^2 = 10^{6}\,\text{m}^2$.
-- Tulos annetaan niin monella merkitsevällä numerolla kuin epätarkimmassa tekijässä on.
+- Kerto- ja jakolaskun tulos annetaan niin monella merkitsevällä numerolla kuin epätarkimmassa tekijässä on.
 - Valon kulkuaika on $t = \tfrac{s}{c}$. Yhden AU:n matkan valo kulkee noin $8{,}3\,\text{min}$:ssa.

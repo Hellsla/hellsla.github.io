@@ -27,7 +27,7 @@
       "choices": [
         {
           "text": "Three times greater, because the exponent grows by three.",
-          "feedback": "An exponent growing by three does not mean three times greater: every step of the exponent builds up a factor of 10. The ratio is $10^{9} : 10^{6} = 10^{9-6} = 10^{3}$."
+          "feedback": "An exponent growing by three does not mean three times greater: every step of the exponent multiplies the number by ten. The ratio is $10^{9} : 10^{6} = 10^{9-6} = 10^{3}$."
         },
         {
           "text": "A thousand times greater.",
@@ -40,7 +40,7 @@
         },
         {
           "text": "A million times greater.",
-          "feedback": "A million is $10^{6}$, which is the exponent of the shorter length. In the ratio the exponents are subtracted: $10^{9-6} = 10^{3}$, not $10^{6}$."
+          "feedback": "A million is $10^{6}$, the numerical value of the shorter length in metres, not the ratio of the lengths. In the ratio the exponents are subtracted: $10^{9-6} = 10^{3}$, not $10^{6}$."
         }
       ],
       "optional": true
@@ -63,7 +63,7 @@
         },
         {
           "text": "About an hour.",
-          "feedback": "The values of the model refute this: the travel time is $19.8\\,\\text{h}$. In an hour light travels only about 7 AU, a little less than the distance from the Sun to Saturn ($9.5\\,\\text{AU}$), while Voyager 2 is more than 140 AU away."
+          "feedback": "The values of the model refute this: the travel time is $19.8\\,\\text{h}$. In an hour light travels only about $7\\,\\text{AU}$, a little less than the distance from the Sun to Saturn ($9.5\\,\\text{AU}$), while Voyager 2 is more than $140\\,\\text{AU}$ away."
         },
         {
           "text": "About a day, that is tens of hours.",
@@ -72,7 +72,7 @@
         },
         {
           "text": "Several weeks.",
-          "feedback": "The values of the model refute this: the travel time is $19.8\\,\\text{h}$. In a week light would travel more than 1200 AU. Voyager 2 is only about 143 AU away, and a light-year is about $63\\,000\\,\\text{AU}$."
+          "feedback": "The values of the model refute this: the travel time is $19.8\\,\\text{h}$. In a week light would travel more than $1200\\,\\text{AU}$. Voyager 2 is only about $143\\,\\text{AU}$ away, and a light-year is about $63\\,000\\,\\text{AU}$."
         }
       ]
     },
@@ -174,7 +174,7 @@
       "type": "interpret",
       "title": "The initial data and values of the Voyager 2 model",
       "source": "model",
-      "source_note": "NASA/JPL: heliopause crossing on 2018-11-05 at a distance of 119.7 AU, speed $15.341\\,\\text{km/s}$; $1\\,\\text{AU} = 149\\,597\\,870.7\\,\\text{km}$, $c = 299\\,792\\,458\\,\\text{m/s}$.",
+      "source_note": "NASA/JPL: heliopause crossing on 2018-11-05 at a distance of $119.7\\,\\text{AU}$, speed $15.341\\,\\text{km/s}$; $1\\,\\text{AU} = 149\\,597\\,870.7\\,\\text{km}$, $c = 299\\,792\\,458\\,\\text{m/s}$.",
       "text": "The simulation calculates the position of Voyager 2 by assuming that after crossing the heliopause the probe moves at a constant speed. The heliopause is the boundary beyond which the stream of particles from the Sun, the solar wind, no longer dominates space. The distances and signal travel times from the Sun calculated this way (four days, not measurements):\n\n| Year | $d$ (AU) | $d$ (km) | $t$ (h) |\n|---|---|---|---|\n| 2018 | $119.7$ | $1.79\\cdot10^{10}$ | $16.6$ |\n| 2022 | $132.6$ | $1.98\\cdot10^{10}$ | $18.4$ |\n| 2026 | $145.6$ | $2.18\\cdot10^{10}$ | $20.2$ |\n| 2030 | $158.5$ | $2.37\\cdot10^{10}$ | $22.0$ |\n\nThe values are for 5 November of each year. The same distance is written in three ways: in AU, in kilometres and as the travel time of light in hours.",
       "question": {
         "type": "choice",
@@ -185,9 +185,9 @@
             "feedback": "The probe has no gauge that would report the distance from the Sun. The numbers in the table have been calculated with a formula from the initial data, so they are values of the model and not measurements."
           },
           {
-            "text": "The values were calculated from the initial data by assuming a constant speed. The real distance may differ slightly, and its precision is the precision of the initial data.",
+            "text": "The values were calculated from the initial data by assuming a constant speed. The real distance may differ slightly from them, because the precision of the calculated values is limited both by the initial data and by the assumption of constant speed.",
             "correct": true,
-            "feedback": "Correct. The signal travel time is calculated from the Sun, not from the Earth. For February 2026 the model gives about 143 AU, and the value reported by JPL is 143.05 AU, so the model fits well for the next few years. Even so, the numbers of the model should not be given with more significant figures than the initial data has."
+            "feedback": "Correct. The signal travel time is calculated from the Sun, not from the Earth. For February 2026 the model gives about $143\\,\\text{AU}$, and the value reported by JPL is $143.05\\,\\text{AU}$, so the model fits well for the next few years. Even so, the numbers of the model should not be given with more significant figures than the initial data has."
           },
           {
             "text": "The values were made up to illustrate, and they have no connection to real data.",
@@ -232,7 +232,7 @@
         "koe-2"
       ],
       "prompt": "Write, based on your tables: how does the travel time of light depend on the distance? How many times longer is the signal travel time to Voyager 2 than the travel time of one AU, and why can a distance be given in three different units?",
-      "model": "In Experiment 1 every increase of $n$ by one made both the distance in AU and the travel time of light ten times greater: $n = 7$ gave $33.4\\,\\text{s}$, $n = 8$ gave $334\\,\\text{s}$ and $n = 9$ gave $3340\\,\\text{s}$. The speed of light is constant, so the time is directly proportional to the distance, $t = s : c$. In Experiment 2 the value of the model for 1 January 2026 was $142.9\\,\\text{AU}$ and the travel time $19.8\\,\\text{h}$, which is about 143 times the travel time of one AU, $8.32\\,\\text{min}$. Later the travel time is longer, because the probe is moving away. The same distance can be written in kilometres, in AU or as the travel time of light: the numbers are different because the units are different, but they describe the same distance: in place of a unit one can always write its value in another unit. The values are calculated by the model with NASA/JPL as the sources, and the travel time to the Earth may differ from them by at most about eight minutes.",
+      "model": "In Experiment 1 every increase of $n$ by one made both the distance in AU and the travel time of light ten times greater: $n = 7$ gave $33.4\\,\\text{s}$, $n = 8$ gave $334\\,\\text{s}$ and $n = 9$ gave $3340\\,\\text{s}$. The speed of light is constant, so the time is directly proportional to the distance, $t = s : c$. In Experiment 2 the value of the model for 1 January 2026 was $142.9\\,\\text{AU}$ and the travel time $19.8\\,\\text{h}$, which is about 143 times the travel time of one AU, $8.32\\,\\text{min}$. Later the travel time is longer, because the probe is moving away. The same distance can be written in kilometres, in AU or as the travel time of light: the numbers are different because the units are different, but they describe the same distance: in place of a unit one can always write its value in another unit. The values are calculated by the model from NASA/JPL's initial data, and the travel time of the signal to the Earth may differ from them by at most about eight minutes.",
       "criteria": [
         "I wrote that the travel time is directly proportional to the distance, because the speed of light is constant.",
         "I used the numbers in the tables: a ten times longer distance gives a ten times longer time.",
@@ -348,7 +348,7 @@
           "feedback": "You used $1.496\\cdot10^{5}\\,\\text{km}$ as the length of an AU. An AU is $1.496\\cdot10^{8}\\,\\text{km}$, a thousand times longer, so the numerical value is a thousandth of that."
         }
       ],
-      "solution": "**Given:** speed $v = 15.341\\,\\text{km/s}$, time $t = 1\\,\\text{a} = 3.156\\cdot10^{7}\\,\\text{s}$, $1\\,\\text{AU} = 1.496\\cdot10^{8}\\,\\text{km}$\n\n**Find:** the distance in a year $s$ in the unit AU/a\n\n**Principle:** By assumption the probe moves at a constant speed, so the given formula $s = vt$ gives the distance travelled in a year in kilometres. It is finally converted to astronomical units.\n\n**Formula:** $s = vt$\n\n**Conversions:** The time is already in seconds, so $\\text{s}$ cancels. Finally we calculate how many AU fit in the distance: $1\\,\\text{AU} = 1.496\\cdot10^{8}\\,\\text{km}$.\n\n**Substitution:** $s = 15.341\\,\\dfrac{\\text{km}}{\\text{s}}\\cdot3.156\\cdot10^{7}\\,\\text{s} = 4.842\\cdot10^{8}\\,\\text{km}$. The number of AU is $4.842\\cdot10^{8}\\,\\text{km} : 1.496\\cdot10^{8}\\,\\text{km} = 3.236$, so $s = 3.236\\,\\text{AU}$\n\n**Answer:** $3.236\\,\\text{AU/a}$, four significant figures, because the length of the year $3.156\\cdot10^{7}\\,\\text{s}$ and the AU $1.496\\cdot10^{8}\\,\\text{km}$ are given to four.\n\n**Reasonableness:** A year has about $3\\cdot10^{7}$ seconds and the speed is about $15\\,\\text{km/s}$, so the distance is about $4.5\\cdot10^{8}\\,\\text{km}$. That is about three AU, and in the table of the model the distance grew in four years by about $13\\,\\text{AU}$, that is about $3.2\\,\\text{AU}$ a year."
+      "solution": "**Given:** speed $v = 15.341\\,\\text{km/s}$, time $t = 1\\,\\text{a} = 3.156\\cdot10^{7}\\,\\text{s}$, $1\\,\\text{AU} = 1.496\\cdot10^{8}\\,\\text{km}$\n\n**Find:** the distance $s$ travelled in a year in astronomical units, that is the speed of recession in the unit $\\text{AU/a}$\n\n**Principle:** By assumption the probe moves at a constant speed, so the given formula $s = vt$ gives the distance travelled in a year in kilometres. It is finally converted to astronomical units.\n\n**Formula:** $s = vt$\n\n**Conversions:** The time is already in seconds, so $\\text{s}$ cancels. Finally we calculate how many AU fit in the distance: $1\\,\\text{AU} = 1.496\\cdot10^{8}\\,\\text{km}$.\n\n**Substitution:** $s = 15.341\\,\\dfrac{\\text{km}}{\\text{s}}\\cdot3.156\\cdot10^{7}\\,\\text{s} = 4.842\\cdot10^{8}\\,\\text{km}$. The number of AU is $4.842\\cdot10^{8}\\,\\text{km} : 1.496\\cdot10^{8}\\,\\text{km} = 3.236$, so $s = 3.236\\,\\text{AU}$ in a year\n\n**Answer:** The probe recedes by $3.236\\,\\text{AU}$ a year, that is $3.236\\,\\text{AU/a}$, four significant figures, because the length of the year $3.156\\cdot10^{7}\\,\\text{s}$ and the AU $1.496\\cdot10^{8}\\,\\text{km}$ are given to four.\n\n**Reasonableness:** A year has about $3\\cdot10^{7}$ seconds and the speed is about $15\\,\\text{km/s}$, so the distance is about $4.5\\cdot10^{8}\\,\\text{km}$. That is about three AU, and in the table of the model the distance grew in four years by about $13\\,\\text{AU}$, that is about $3.2\\,\\text{AU}$ a year."
     },
     {
       "id": "harjoitukset",
@@ -432,7 +432,7 @@
           "feedback": "You converted seconds to hours ($193\\,\\text{s} : 3600$), although the question asked for minutes. One minute is $60\\,\\text{s}$."
         }
       ],
-      "solution": "**Given:** distance $a = 0.387\\,\\text{AU}$, $1\\,\\text{AU} = 1.496\\cdot10^{8}\\,\\text{km}$, $c = 2.998\\cdot10^{5}\\,\\text{km/s}$\n\n**Find:** the travel time of light $t$ in minutes\n\n**Principle:** Light travels at a constant speed $c$, so the given formula $s = ct$ gives the travel time $t = s : c$. The distance must first be converted from AU to kilometres so that it fits the unit of speed.\n\n**Formula:** $s = a\\cdot1\\,\\text{AU}$ and $t = \\dfrac{s}{c}$, from which $t = \\dfrac{a\\cdot1\\,\\text{AU}}{c}$\n\n**Conversions:** $s = 0.387\\cdot1.496\\cdot10^{8}\\,\\text{km} = 5.790\\cdot10^{7}\\,\\text{km}$. Finally seconds to minutes: $1\\,\\text{min} = 60\\,\\text{s}$.\n\n**Substitution:** $t = \\dfrac{5.790\\cdot10^{7}\\,\\text{km}}{2.998\\cdot10^{5}\\,\\text{km/s}} = 193.1\\,\\text{s}$. The number of minutes is $193.1\\,\\text{s} : 60\\,\\text{s} = 3.219$, so $t = 3.219\\,\\text{min}$\n\n**Answer:** $3.22\\,\\text{min}$, three significant figures like the distance $0.387\\,\\text{AU}$.\n\n**Reasonableness:** Light travels one AU in about $8.3\\,\\text{min}$, and Mercury is about 0.4 AU away, so the time is about $0.4\\cdot8.3\\,\\text{min} = 3.3\\,\\text{min}$. The result is of the same order of magnitude."
+      "solution": "**Given:** distance $s = 0.387\\,\\text{AU}$, $1\\,\\text{AU} = 1.496\\cdot10^{8}\\,\\text{km}$, $c = 2.998\\cdot10^{5}\\,\\text{km/s}$\n\n**Find:** the travel time of light $t$ in minutes\n\n**Principle:** Light travels at a constant speed $c$, so the given formula $s = ct$ gives the travel time $t = s : c$. The distance must first be converted from AU to kilometres so that it fits the unit of speed.\n\n**Formula:** $t = \\dfrac{s}{c}$\n\n**Conversions:** $s = 0.387\\,\\text{AU} = 0.387\\cdot1.496\\cdot10^{8}\\,\\text{km} = 5.790\\cdot10^{7}\\,\\text{km}$. Finally seconds to minutes: $1\\,\\text{min} = 60\\,\\text{s}$.\n\n**Substitution:** $t = \\dfrac{5.790\\cdot10^{7}\\,\\text{km}}{2.998\\cdot10^{5}\\,\\text{km/s}} = 193.1\\,\\text{s}$. The number of minutes is $193.1\\,\\text{s} : 60\\,\\text{s} = 3.219$, so $t = 3.219\\,\\text{min}$\n\n**Answer:** $3.22\\,\\text{min}$, three significant figures like the distance $0.387\\,\\text{AU}$.\n\n**Reasonableness:** Light travels one AU in about $8.3\\,\\text{min}$, and Mercury is about $0.4\\,\\text{AU}$ away, so the time is about $0.4\\cdot8.3\\,\\text{min} = 3.3\\,\\text{min}$. The result is of the same order of magnitude."
     },
     {
       "id": "tarkistus-3",
@@ -440,10 +440,10 @@
       "type": "explain",
       "title": "4. Explain and transfer",
       "prompt": "Explain in your own words why in astronomy distances are given in astronomical units or as the travel time of light instead of kilometres. What is needed to move from one unit to another?",
-      "model": "In kilometres, astronomical distances would be huge numbers: Neptune is about $4.5\\cdot10^{9}\\,\\text{km}$ and Voyager 2 more than $2\\cdot10^{10}\\,\\text{km}$. The astronomical unit $1\\,\\text{AU} = 1.496\\cdot10^{8}\\,\\text{km}$ is the distance between the Earth and the Sun, so Neptune is $30.1\\,\\text{AU}$ and the size of the number can be compared with the Earth. The travel time of light tells how long a message is on its way: for Voyager 2 about 20 hours. You move from one unit to another by writing the value of the unit in place of the unit, for example $30.1\\,\\text{AU} = 30.1\\cdot1.496\\cdot10^{8}\\,\\text{km}$; to get the travel time of light you divide the distance by the speed of light, $t = s : c$. The quantity stays the same, only the numerical value changes.",
+      "model": "In kilometres, astronomical distances would be huge numbers: Neptune is about $4.5\\cdot10^{9}\\,\\text{km}$ and Voyager 2 more than $2\\cdot10^{10}\\,\\text{km}$ from the Sun. The astronomical unit $1\\,\\text{AU} = 1.496\\cdot10^{8}\\,\\text{km}$ is close to the mean distance between the Earth and the Sun, so Neptune's distance $30.1\\,\\text{AU}$ is easy to compare with the Earth's: Neptune is about 30 times as far from the Sun as the Earth. The travel time of light tells how long a message is on its way: for Voyager 2 about 20 hours. You move from one unit to another by writing the value of the unit in place of the unit, for example $30.1\\,\\text{AU} = 30.1\\cdot1.496\\cdot10^{8}\\,\\text{km}$; to get the travel time of light you divide the distance by the speed of light, $t = s : c$. The quantity stays the same, only the numerical value changes.",
       "criteria": [
         "I say that in kilometres the numbers would be very large and awkward.",
-        "I mention that the AU is the distance between the Earth and the Sun and gives a point of comparison.",
+        "I mention that the AU is close to the mean distance between the Earth and the Sun and gives a point of comparison.",
         "I say that the travel time of light tells how long a signal is on its way.",
         "I explain that you move from one unit to another by writing the value of the unit in place of the unit, and to the travel time of light by dividing the distance by the speed of light.",
         "I remember that the quantity stays the same and only the numerical value changes."

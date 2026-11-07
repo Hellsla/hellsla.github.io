@@ -558,7 +558,7 @@
       "voyager_2": "Voyager 2",
       "malli": "malli",
       "etaisyys_n": "Etäisyys $d = 10^{ {{n}} }\\,\\text{km}$",
-      "selite": "Yksi kuvapiste on Kuun halkaisija, 3474 km. Alapalkki: etäisyys Auringosta, logaritminen asteikko.",
+      "selite": "Yksi kuvapiste on Kuun halkaisija, $3474\\,\\text{km}$. Alapalkki: etäisyys Auringosta, logaritminen asteikko.",
       "nakyma": "<strong>Näkymän keskikohta:</strong> $d = {{km}}\\,\\text{km} = {{au}}\\,\\text{AU}$, valo kulkee Auringosta tähän kohtaan ajassa $t = {{t}}$",
       "matka": "<br><strong>Valon matka:</strong> $s = {{s}}\\,\\text{km}$, kulunut aika $t = {{t}}$, animaation tahti ${{x}}$-kertainen",
       "voyager_rivi": "<br><strong>Voyager 2</strong>, mallin arvot (NASA/JPL), {{pvm}}: $d = {{km}}\\,\\text{km} = {{au}}\\,\\text{AU}$, $v = {{v}}\\,\\text{km/s}$, signaali Auringosta $t = {{t}}$",

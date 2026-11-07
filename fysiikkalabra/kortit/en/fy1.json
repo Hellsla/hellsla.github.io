@@ -198,7 +198,7 @@
    "luku": "fy1-2",
    "aihe": "fy1-si-jarjestelma",
    "kasite": "Derived unit",
-   "maaritelma": "A combination of base units, such as m/s for velocity or N for force."
+   "maaritelma": "A combination of base units, such as $\\text{m/s}$ for velocity or $\\text{N}$ for force."
   },
   {
    "id": "fy1-kerrannaisyksikko",
@@ -230,7 +230,7 @@
    "luku": "fy1-2",
    "aihe": "fy1-si-jarjestelma",
    "kasite": "Order of magnitude",
-   "maaritelma": "The size of an object described with a suitable power of ten."
+   "maaritelma": "The order of magnitude of a value is the power of ten nearest to it on the power-of-ten axis; for example $8.8\\cdot10^{3}\\,\\text{m}$ is of the order of $10^{4}\\,\\text{m}$."
   },
   {
    "id": "fy1-alkeishiukkanen",

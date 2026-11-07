@@ -56,7 +56,7 @@
       "choices": [
         {
           "text": "Newton ($\\text{N}$), jolla mitataan voimaa.",
-          "feedback": "Newton on johdettu yksikkö: se saadaan perusyksiköistä tulona ja osamääränä, $1\\,\\text{N} = 1\\,\\text{kg}\\cdot\\text{m/s}^2$. Perusyksiköitä on vain seitsemän, eikä voiman yksikkö kuulu niihin."
+          "feedback": "Newton on johdannaisyksikkö: se saadaan perusyksiköistä tulona ja osamääränä, $1\\,\\text{N} = 1\\,\\text{kg}\\cdot\\text{m/s}^2$. Perusyksiköitä on vain seitsemän, eikä voiman yksikkö kuulu niihin."
         },
         {
           "text": "Kilogramma ($\\text{kg}$), jolla mitataan massaa.",
@@ -65,7 +65,7 @@
         },
         {
           "text": "Gramma ($\\text{g}$), jolla mitataan massaa.",
-          "feedback": "Gramma ei ole oma perusyksikkönsä vaan kilogrammasta etuliitteellä muodostettu osa, $1\\,\\text{g} = 10^{-3}\\,\\text{kg}$. Massan SI-perusyksikkö on kilogramma."
+          "feedback": "Gramma ei ole SI-perusyksikkö vaan kilogramman tuhannesosa, $1\\,\\text{g} = 10^{-3}\\,\\text{kg}$. Massan SI-perusyksikkö on kilogramma, vaikka etuliitteet liitetään grammaan: kilogramma on tuhat grammaa."
         },
         {
           "text": "Litra ($\\textsf{l}$), jolla mitataan tilavuutta.",
@@ -282,7 +282,7 @@
     {
       "id": "fy1-2-L3-01",
       "level": 3,
-      "text": "Valovuosi on matka, jonka valo kulkee yhdessä vuodessa. Käytä arvoja $c = 2{,}998\\cdot10^{5}\\,\\text{km/s}$, $1\\,\\text{a} = 3{,}156\\cdot10^{7}\\,\\text{s}$ ja $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$. Kuinka monta astronomista yksikköä yksi valovuosi on?",
+      "text": "Valovuosi on matka, jonka valo kulkee tyhjiössä yhdessä vuodessa. Käytä arvoja $c = 2{,}998\\cdot10^{5}\\,\\text{km/s}$, $1\\,\\text{a} = 3{,}156\\cdot10^{7}\\,\\text{s}$ ja $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$. Kuinka monta astronomista yksikköä yksi valovuosi on?",
       "answer": 63250,
       "unit": "AU",
       "tolerance": 0.02
@@ -306,7 +306,7 @@
     {
       "id": "fy1-2-L3-04",
       "level": 3,
-      "text": "Heilurin jaksonaika $T$ eli aika yhteen täyteen heilahdukseen voi riippua vain heilurin pituudesta $L$, putoamiskiihtyvyydestä $g$ ja heilurin massasta $m$.\n\nOletetaan, että $T = k\\,L^{a}g^{b}m^{c}$, missä $k$ on yksikötön luku. Päättele yksiköiden avulla eksponentit $a$, $b$ ja $c$.\n\nPituudella $0{,}250\\,\\text{m}$ jaksonaika mitattiin $1{,}00\\,\\text{s}$. Kuinka pitkä jaksonaika on samassa paikassa, kun pituus on $1{,}00\\,\\text{m}$?",
+      "text": "Heilurin jaksonaika $T$ on aika yhteen täyteen heilahdukseen. Oletetaan, että heilahdukset ovat pieniä. Silloin jaksonaika voi riippua vain heilurin pituudesta $L$, putoamiskiihtyvyydestä $g$ ja heilurin massasta $m$.\n\nOletetaan, että $T = k\\,L^{a}g^{b}m^{c}$, missä $k$ on yksikötön luku. Päättele yksiköiden avulla eksponentit $a$, $b$ ja $c$.\n\nPituudella $0{,}250\\,\\text{m}$ jaksonaika mitattiin $1{,}00\\,\\text{s}$. Kuinka pitkä jaksonaika on samassa paikassa, kun pituus on $1{,}00\\,\\text{m}$?",
       "kind": [
         "reasoning",
         "model"
