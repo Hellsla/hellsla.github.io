@@ -225,8 +225,59 @@ def scene():
     return f.svg()
 
 
+# Graph choice of task fy7-7-L1-09: four e(t) graphs on the same axes, U = 5,0 V (effective) and f = 40 Hz given; only
+# "pick-u71-t25" is right (peak 5,0 V · √2 ≈ 7,1 V, period 1/f = 25 ms). The other three swap the peak for the effective
+# value, the period for the frequency's number in ms, or both: each option shares one feature with two others, so the
+# right one cannot be found by its form. The names say the drawn curve, not the answer.
+PICK_DESC = ("Kuvaaja mittakaavassa: vaaka-akselilla aika t millisekunteina välillä 0–100 ms, apuviivat 5 ms:n välein ja "
+             "lukuarvot 20 ms:n välein; pystyakselilla jännite e voltteina välillä −10 V … 10 V, apuviivat voltin välein ja "
+             "lukuarvot kahden voltin välein. ")
+
+
+def pick_curve(fid, label, peak, period):
+    """One option: the same axes and the same violet sine for every option, starting from zero and rising."""
+    f = Fig(fid, 406, PICK_DESC + label)
+    ax = Axes(f, (100, 366), (500, 66), x=(0, 100), y=(-10, 10), xticks=[5 * k for k in range(1, 21)],
+              yticks=[-10 + k for k in range(0, 21)], xlabel=r"t\ (\text{ms})", ylabel=r"e\ (\text{V})",
+              xfmt=lambda v: fi(v) if round(v) % 20 == 0 else "",
+              yfmt=lambda v: fi(v) if round(v) % 2 == 0 else "", origin_label=False)
+    f.line(ax.X(0), ax.Y(0), ax.X(100), ax.Y(0), MUTED, 2)
+    f.line(ax.x0 - 7, ax.Y(-10), ax.x0, ax.Y(-10), INK, 2)       # Axes skips the bottom tick: label −10 V by hand
+    f.tex(ax.x0 - 12, ax.Y(-10), fi(-10), "end")
+    ax.curve(lambda t: peak * math.sin(2 * math.pi * t / period), 0, 100, CURRENT, 3, steps=400)
+    return f.svg()
+
+
+def pick_u71_t25():
+    return pick_curve("fy77-pick-u71-t25", "Violetti sinimuotoinen käyrä alkaa nollasta ja nousee huippuarvoon noin 7,1 V "
+                      "hetkellä noin 6 ms. Se on nolla hetkillä 12,5 ms ja 25 ms, ja jaksonaika on 25 ms, joten "
+                      "käyrässä on neljä täyttä jaksoa. Pienin arvo on noin −7,1 V.", 5.0 * math.sqrt(2), 25)
+
+
+def pick_u50_t25():
+    """The effective value drawn as the peak."""
+    return pick_curve("fy77-pick-u50-t25", "Violetti sinimuotoinen käyrä alkaa nollasta ja nousee huippuarvoon 5,0 V "
+                      "hetkellä noin 6 ms. Se on nolla hetkillä 12,5 ms ja 25 ms, ja jaksonaika on 25 ms, joten "
+                      "käyrässä on neljä täyttä jaksoa. Pienin arvo on −5,0 V.", 5.0, 25)
+
+
+def pick_u71_t40():
+    """The frequency's number read as the period in ms."""
+    return pick_curve("fy77-pick-u71-t40", "Violetti sinimuotoinen käyrä alkaa nollasta ja nousee huippuarvoon noin 7,1 V "
+                      "hetkellä 10 ms. Se on nolla hetkillä 20 ms ja 40 ms, ja jaksonaika on 40 ms, joten käyrässä on "
+                      "kaksi ja puoli jaksoa. Pienin arvo on noin −7,1 V.", 5.0 * math.sqrt(2), 40)
+
+
+def pick_u50_t40():
+    """Both: the effective value as the peak and the frequency's number as the period in ms."""
+    return pick_curve("fy77-pick-u50-t40", "Violetti sinimuotoinen käyrä alkaa nollasta ja nousee huippuarvoon 5,0 V "
+                      "hetkellä 10 ms. Se on nolla hetkillä 20 ms ja 40 ms, ja jaksonaika on 40 ms, joten käyrässä on "
+                      "kaksi ja puoli jaksoa. Pienin arvo on −5,0 V.", 5.0, 40)
+
+
 FIGURES = {"hero": hero, "generator": generator, "phi-e": phi_e, "derive": derive, "power": power, "scene": scene,
-           "trace": trace}
+           "trace": trace, "pick-u71-t25": pick_u71_t25, "pick-u50-t25": pick_u50_t25, "pick-u71-t40": pick_u71_t40,
+           "pick-u50-t40": pick_u50_t40}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "generator": "reveals: the parts of an AC generator (coil, slip rings, brushes) and that the coil turns in the field",
@@ -234,4 +285,8 @@ REUSE = {
     "derive": "reveals: the sides' velocity component v sin θ perpendicular to B gives the voltage",
     "power": "reveals: the mean power is half the peak power",
     "trace": "safe: e(t) of a generator, peak 12 V, period 40 ms, no N, A or B",
+    "pick-u71-t25": "reveals: the right option of task fy7-7-L1-09 (U = 5,0 V, f = 40 Hz: peak 7,1 V, period 25 ms)",
+    "pick-u50-t25": "safe: a wrong option of task fy7-7-L1-09 (the effective value drawn as the peak)",
+    "pick-u71-t40": "safe: a wrong option of task fy7-7-L1-09 (the frequency's number read as the period in ms)",
+    "pick-u50-t40": "safe: a wrong option of task fy7-7-L1-09 (both: effective value as peak, 40 ms period)",
 }

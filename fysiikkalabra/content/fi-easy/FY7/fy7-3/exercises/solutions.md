@@ -193,3 +193,30 @@
 **Vastaus:** $5{,}3\,\text{mT}$. Vastauksessa on kaksi merkitsevää numeroa, koska jännitteessä $6{,}0\,\text{V}$ ja halkaisijassa $3{,}0\,\text{cm}$ on kaksi.
 **Järkevyys:** Tiiviissä yhden kerroksen käämissä $N : l = 1 : d_\text{e}$. Siksi $B = \mu_0 I : d_\text{e} = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 2{,}31\,\text{A} : 0{,}55 \cdot 10^{-3}\,\text{m} = 5{,}28\,\text{mT}$. Tulos on sama. Kenttä on noin $100$-kertainen Maan kenttään verrattuna. Teho on $U I = 6{,}0\,\text{V} \cdot 2{,}31\,\text{A} = 13{,}9\,\text{W}$. Ohut lanka lämpenee, joten sähkömagneettia voi käyttää vain lyhyitä aikoja.
 **Perustelu kohtaan d):** Kun lanka on kaksi kertaa pidempi, resistanssi $R = \rho L : A$ kaksinkertaistuu. Virta $I = U : R$ puolittuu arvoon $1{,}16\,\text{A}$. Kierroksia on kaksi kertaa enemmän, mutta ne ovat yhdessä kerroksessa. Siksi käämin pituus $l$ kaksinkertaistuu ja kierrostiheys $N : l$ pysyy samana. Kenttä $B = \mu_0 \tfrac{N}{l} I$ puolittuu siis arvoon $2{,}6\,\text{mT}$. Jos kerroksia olisi kaksi, $l$ pysyisi samana ja kenttä pysyisi ennallaan. Tehtävässä käämi on kuitenkin yksikerroksinen.
+
+## fy7-3-L2-08
+**Kysytty:** miten magneettivuon tiheys käämin keskellä muuttuu, kun $240$ kierroksen käämi venytetään $12\,\text{cm}$:stä $24\,\text{cm}$:iin ja virta kasvatetaan $0{,}60\,\text{A}$:sta $1{,}8\,\text{A}$:iin.
+**Periaate:** Pitkän käämin sisällä $B = \mu_0 \tfrac{N I}{l}$. Kenttä on suoraan verrannollinen virtaan ja kierrostiheyteen $N : l$. Kierrostiheys on kierrosten määrä pituutta kohti. Kenttä ei siis riipu kierrosten kokonaismäärästä. Käämin paksuus ei vaikuta kenttään.
+**Mallivastaus:** Kenttä kasvaa $1{,}5$-kertaiseksi. Muutokset ovat
+
+$\dfrac{I_2}{I_1} = \dfrac{1{,}8\,\text{A}}{0{,}60\,\text{A}} = 3$
+
+$\dfrac{l_2}{l_1} = \dfrac{24\,\text{cm}}{12\,\text{cm}} = 2$
+
+Kierrosmäärä pysyy samana, joten kierrostiheys puolittuu. Kenttien suhde on
+
+$\dfrac{B_2}{B_1} = \dfrac{I_2}{I_1} \cdot \dfrac{l_1}{l_2}$
+
+$\dfrac{B_2}{B_1} = 3 \cdot \dfrac{1}{2} = 1{,}5$
+
+Tarkistus luvuilla:
+
+$B_1 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot \dfrac{240 \cdot 0{,}60\,\text{A}}{0{,}12\,\text{m}}$
+
+$B_1 \approx 1{,}51 \cdot 10^{-3}\,\text{T}$
+
+$B_2 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot \dfrac{240 \cdot 1{,}8\,\text{A}}{0{,}24\,\text{m}}$
+
+$B_2 \approx 2{,}26 \cdot 10^{-3}\,\text{T}$
+
+Kenttä kasvaa siis noin $1{,}5\,\text{mT}$:sta noin $2{,}3\,\text{mT}$:iin. Jos pelkkä kierrosten kokonaismäärä ratkaisisi, kolminkertainen virta antaisi kolminkertaisen kentän. Käämin venyttäminen kuitenkin harventaa kierroksia ja heikentää kenttää.

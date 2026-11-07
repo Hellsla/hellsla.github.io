@@ -28,6 +28,8 @@ a["fy7-2-L3-03"] = math.sqrt((ma / (2 * e)) / (mp / e)) # same U: r ∝ sqrt(m/q
 # Exercise bank additions (teacher 2026-11-04): L1-06 and L2-07 are multiple choice (no number)
 a["fy7-2-L1-07"] = me * 3.0e6 / (e * 0.040) * 1000      # electron on r = 4,0 cm: B = mv/(qr) = 4,264e-4 T = 0,43 mT
 a["fy7-2-L1-08"] = 2 * math.pi * me / (e * 0.020) * 1e9   # T = 2πm/(qB) = 1,786e-9 s = 1,8 ns (v cancels)
+# L2-08 is a force-diagram choice (no number): electron up at 3,0e6 m/s in 0,50 mT out of the page: F_m = |q| v B = 2,4e-16 N to the left
+#   (v x B points right for a positive charge), weight m g = 8,9e-30 N negligible; option C (pick-vasen)
 # L2-05 (example data, ion beam in a vacuum chamber, v = 2,0e5 m/s, B = 0,050 T): track 1 r = 4,1 cm up (positive), 2 down (negative) 4,2 cm, 3 up 8,4 cm
 a["fy7-2-L2-05"] = 0.041 * 0.050 / 2.0e5 / 1e-8         # m/q = rB/v = 1,025e-8 kg/C -> 1,0 (unit 10^-8 kg/C); proton m/e = 1,044e-8
 # L2-06 (example data, magnesium-like): hits d = 19,2 / 20,1 / 20,7 cm, counts 7890 / 1000 / 1110; m ∝ d, so m_B = 25,1 u and m_C = 25,9 u

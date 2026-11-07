@@ -87,6 +87,41 @@
       "answer": 12.020815,
       "unit": "V",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-7-L1-09",
+      "level": 1,
+      "kind": [
+        "graph",
+        "concept"
+      ],
+      "text": "A coil of a small generator rotates steadily in a homogeneous magnetic field. The effective value of the sinusoidal voltage of the generator is $5.0\\,\\text{V}$ and its frequency is $40\\,\\text{Hz}$. The values are example values. At the moment $t = 0$ the voltage is zero and increasing.\n\nWhich of the graphs shows the voltage $e$ of the generator as a function of time $t$?",
+      "answer": "Graph B",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Graph A",
+          "figure": "fy7-7/pick-u50-t40",
+          "feedback": "There are two mistakes here: the effective value $5.0\\,\\text{V}$ has been drawn as the peak value, and the numerical value of the frequency has been read as the period in milliseconds. The peak value is $\\sqrt{2}$ times the effective value, and $T = 1 : f$."
+        },
+        {
+          "text": "Graph B",
+          "figure": "fy7-7/pick-u71-t25",
+          "correct": true,
+          "feedback": "Correct: the peak value is $5.0\\,\\text{V} \\cdot \\sqrt{2} \\approx 7.1\\,\\text{V}$, and the period is $T = 1 : 40\\,\\text{Hz}$, that is $25\\,\\text{ms}$."
+        },
+        {
+          "text": "Graph C",
+          "figure": "fy7-7/pick-u50-t25",
+          "feedback": "The period $25\\,\\text{ms}$ is correct, but the effective value $5.0\\,\\text{V}$ has been drawn as the peak value. The peak value of a sinusoidal voltage is $\\sqrt{2}$ times the effective value, about $7.1\\,\\text{V}$."
+        },
+        {
+          "text": "Graph D",
+          "figure": "fy7-7/pick-u71-t40",
+          "feedback": "The peak value $7.1\\,\\text{V}$ is correct, but the numerical value of the frequency has been read as the period in milliseconds. The period is $T = 1 : f$, that is $25\\,\\text{ms}$."
+        }
+      ]
     }
   ],
   "level2": [

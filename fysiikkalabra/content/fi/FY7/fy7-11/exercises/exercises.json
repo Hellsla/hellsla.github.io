@@ -90,6 +90,50 @@
       "answer": 12.3,
       "unit": "°",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-11-L1-09",
+      "level": 1,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "Valkoisen valon kapea kimppu tulee ilmasta kruunulasiprismaan. Lasin taitekerroin on punaiselle valolle $1{,}514$ ja violetille $1{,}530$. Valon nopeus tyhjiössä on $c = 3{,}00 \\cdot 10^{8}\\,\\text{m/s}$.\n\nSateenkaaressa punainen valo näkyy noin $42^\\circ$:n ja violetti noin $40{,}6^\\circ$:n kulmassa vastapisteen suunnasta.\n\nPäättele, mitkä väitteet ovat tosia ja mitkä epätosia.",
+      "answer": "1 epätosi, 2 tosi, 3 epätosi, 4 tosi, 5 tosi, 6 epätosi",
+      "unit": "",
+      "tolerance": 0.02,
+      "statements": [
+        {
+          "text": "Prisma poikkeuttaa punaista valoa eniten, koska punaisen valon aallonpituus on pisin.",
+          "true": false,
+          "feedback": "Epätosi: lasin taitekerroin on violetille suurempi kuin punaiselle, $1{,}530 > 1{,}514$. Siksi violetti taittuu kummassakin pinnassa eniten ja poikkeaa eniten, ja punainen poikkeaa vähiten."
+        },
+        {
+          "text": "Violetti valo etenee prisman lasissa hitaammin kuin punainen valo.",
+          "true": true,
+          "feedback": "Tosi: $v = c : n$, joten suurempi taitekerroin tarkoittaa pienempää nopeutta. Violetin nopeus on $1{,}961 \\cdot 10^{8}\\,\\text{m/s}$ ja punaisen $1{,}982 \\cdot 10^{8}\\,\\text{m/s}$."
+        },
+        {
+          "text": "Punaisen valon taajuus on lasissa pienempi kuin ilmassa, koska valo hidastuu lasissa.",
+          "true": false,
+          "feedback": "Epätosi: rajapinnassa valon taajuus ei muutu, ja väri määräytyy taajuudesta. Kun nopeus pienenee, aallonpituus lyhenee yhtälön $v = f\\lambda$ mukaan, ja punainen valo pysyy punaisena."
+        },
+        {
+          "text": "Kun prismasta tuleva punainen valo ohjataan toiseen prismaan, se taittuu mutta ei hajoa uusiksi väreiksi.",
+          "true": true,
+          "feedback": "Tosi: prisma ei värjää valoa, vaan erottaa valkoisen valon valmiina olevat värit toisistaan. Yksi erotettu väri taittuu toisessa prismassa, mutta siinä ei ole muita värejä erotettavaksi, kuten Newton osoitti."
+        },
+        {
+          "text": "Sateenkaaren sisäreunalla on violetti, koska violetti näkyy pienemmässä kulmassa vastapisteen suunnasta.",
+          "true": true,
+          "feedback": "Tosi: samassa kulmassa vastapisteestä näkyvät pisarat muodostavat ympyrän. Violetin ympyrän kulma $40{,}6^\\circ$ on pienempi kuin punaisen $42^\\circ$, joten violetti on kaaren sisäreunalla ja punainen ulkoreunalla."
+        },
+        {
+          "text": "Kun aurinko on $45^\\circ$:n korkeudella, tasaisella maalla seisova näkee sateenkaaren punaisen reunan huipun horisontin yläpuolella.",
+          "true": false,
+          "feedback": "Epätosi: vastapiste on $45^\\circ$ horisontin alapuolella, joten punaisen reunan huippu on korkeudella $42^\\circ - 45^\\circ = -3^\\circ$. Koko kaari jää horisontin alapuolelle, eikä sitä näe maan pinnalta."
+        }
+      ]
     }
   ],
   "level2": [

@@ -93,6 +93,41 @@
       "answer": 1.5,
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-14-L1-09",
+      "level": 1,
+      "kind": [
+        "concept",
+        "model"
+      ],
+      "text": "There is a black spot at the top of a soap bubble, and around it the film thickens evenly downwards. The bubble is illuminated with monochromatic light whose wavelength in air is $\\lambda$ and which arrives perpendicular to the film. The refractive index of the film is $n$, and there is air on both sides of it.\n\nBright and dark rings are seen alternately around the spot. What expression gives the thickness $d$ of the film at the first dark ring outside the spot?",
+      "answer": "$d = \\dfrac{\\lambda}{2n}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "$d = \\dfrac{\\lambda}{4n}$",
+          "feedback": "Here the shift of half a wavelength in the reflection from the upper surface has been forgotten. Because of the shift, the path difference $2nd = \\tfrac{1}{2}\\lambda$ makes the interference constructive, so this thickness is the first bright ring."
+        },
+        {
+          "text": "$d = \\dfrac{\\lambda}{n}$",
+          "feedback": "Here the thickness of the film has been taken as the path difference only once. The wave reflected from the lower surface travels through the film back and forth, so the path difference is $2nd$, not $nd$."
+        },
+        {
+          "text": "$d = \\dfrac{\\lambda}{2n}$",
+          "correct": true,
+          "feedback": "Correct: there is one shift in the reflections, so the condition for destructive interference is $2nd = k\\lambda$. The black spot corresponds to $k = 0$ and the first dark ring to $k = 1$."
+        },
+        {
+          "text": "$d = \\dfrac{\\lambda}{2}$",
+          "feedback": "Here the wavelength in air has been used. In the film the wavelength is $\\lambda : n$, so the extra path $2d$ holds as many wavelengths as the path $2nd$ does in air."
+        },
+        {
+          "text": "$d = \\dfrac{n\\lambda}{2}$",
+          "feedback": "Here the wavelength has been assumed to become longer in the film. Light slows down in the film to the speed $c : n$ and the frequency stays the same, so the wavelength becomes shorter, $\\lambda : n$."
+        }
+      ]
     }
   ],
   "level2": [

@@ -193,3 +193,22 @@
 **Sijoitus:** $R_\text{min} = 0{,}50\,\text{mm} \cdot \dfrac{1{,}49 + 1{,}40}{1{,}49 - 1{,}40} = 0{,}50\,\text{mm} \cdot \dfrac{2{,}89}{0{,}09} = 0{,}50\,\text{mm} \cdot 32{,}11 = 16{,}06\,\text{mm}$
 **Vastaus:** $16\,\text{mm}$ ($16{,}1\,\text{mm}$). Tarkkuutta rajoittaa taitekertoimien erotus $n_1 - n_2 = 0{,}09$. Jyrkemmässä mutkassa osa valosta vuotaa kuoreen.
 **Järkevyys:** Tarkistus: kun $R = 16{,}06\,\text{mm}$, suhde $(R - a) : (R + a)$ on $15{,}56 : 16{,}56 = 0{,}9396$. Myös $1{,}40 : 1{,}49 = 0{,}9396$, joten tulokulma on juuri rajakulma $\sin^{-1} 0{,}9396 = 70{,}0^\circ$. Taulukko sopii tulokseen: säteillä $20{,}0\,\text{mm}$ ja suuremmilla teho on vähintään $96\,\%$, mutta säteillä $15{,}0\,\text{mm}$ ja $5{,}0\,\text{mm}$ se on vain $88\,\%$ ja $31\,\%$. Teho ei putoa nollaan täsmälleen kohdassa $R_\text{min}$. Sen alapuolella vuotaa ensin vain ohut osa valosta, joka kulkee sisäreunan vierestä. Vuotava osuus kasvaa vähitellen, kun säde pienenee. Vinosti kulkevat säteet vuotavat jo hieman suuremmilla säteillä.
+
+## fy7-12-L2-08
+**Kysytty:** mitä akvaarion pohjalta tulevalle lasersäteelle tapahtuu vedenpinnassa ja miksi.
+**Periaate:** Kun valo tulee suuremman taitekertoimen aineesta pienemmän taitekertoimen aineeseen, rajakulma saadaan yhtälöstä $\sin\alpha_\text{r} = n_2 : n_1$. Luku $n_1$ kuuluu aineelle, josta valo tulee. Jos tulokulma on suurempi kuin rajakulma, taittunutta sädettä ei ole, ja kaikki valo heijastuu takaisin. Tulokulma mitataan rajapinnan normaalista eli pinnan kohtisuorasta suunnasta. Sitä ei mitata pinnasta.
+**Mallivastaus:** Normaali on kohtisuorassa vedenpintaa vastaan, joten tulokulma on
+
+$\alpha_1 = 90^\circ - 40{,}0^\circ = 50{,}0^\circ$
+
+Valo tulee vedestä ilmaan, joten $n_1 = 1{,}33$ ja $n_2 = 1{,}00$. Rajakulma on
+
+$\sin\alpha_\text{r} = \dfrac{n_2}{n_1} = \dfrac{1{,}00}{1{,}33}$
+
+$\sin\alpha_\text{r} = 0{,}7519$
+
+$\alpha_\text{r} = 48{,}75^\circ \approx 48{,}8^\circ$
+
+Tulokulma $50{,}0^\circ$ on suurempi kuin rajakulma $48{,}8^\circ$. Taittumislaista tulisi $\sin\alpha_2 = 1{,}33 \cdot \sin 50{,}0^\circ$, eli $\sin\alpha_2 = 1{,}02 > 1$. Taittunutta sädettä ei siis ole. Säde kokonaisheijastuu: kaikki valo heijastuu vedenpinnasta takaisin veteen heijastuskulmassa $50{,}0^\circ$.
+
+Perustelu on siis, että tulokulma $50{,}0^\circ$ on suurempi kuin veden ja ilman rajakulma $48{,}8^\circ$. Jos kulmaa $40{,}0^\circ$ pitää tulokulmana, on mitannut kulman pinnasta. Silloin päätyy väärin osittaiseen taittumiseen ilmaan. Jos taitekertoimet vaihtavat paikkaa, rajakulman siniksi tulee $1{,}33$, ja näyttää siltä, ettei rajakulmaa ole. Väite taittumisesta normaalista poispäin on tosi, mutta se ei kerro, onko tulokulma suurempi kuin rajakulma. Valo kulkisi pitkin vedenpintaa vain, jos tulokulma olisi täsmälleen rajakulma.

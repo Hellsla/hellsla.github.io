@@ -26,6 +26,7 @@ a["fy7-9-L2-06"] = b / (1500 + 273.15) * 1e6           # steel 1500 °C = 1773,1
 # lab data: products λ_max · T in 10⁻³ m·K, then their mean
 prod = [T * lam * 1e-3 for T, lam in [(2000, 1.47), (2400, 1.18), (2800, 1.06), (3200, 0.89)]]   # 2,940; 2,832; 2,968; 2,848
 a["fy7-9-L2-07"] = sum(prod) / len(prod)               # b_ka = 11,588 / 4 = 2,897 (·10⁻³ m·K)
+# fy7-9-L2-08 is a data multiple choice (no number): T4 / T1 = 4,10 / 2,90 = 1,41 (707 K -> 999 K); settings 2 and 3 differ 0,05 µm < ±0,10 µm
 # Level 3: reasoning or an unfamiliar context
 a["fy7-9-L3-01"] = b / 2.7255 * 1e3                    # CMB 2,7255 K (Fixsen 2009): λ_max = 1,0633 mm (microwaves)
 a["fy7-9-L3-02"] = b / 8.0e-6 - 273.15                 # thermal camera 8,0–14 µm: peak at 8,0 µm when T = 362,25 K = 89,1 °C

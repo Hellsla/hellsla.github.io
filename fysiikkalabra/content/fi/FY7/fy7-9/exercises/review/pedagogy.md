@@ -1,20 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: b81d92cfb4e125cd
+CONTENT-HASH: bdef4444cc3b7d40
 
-Round 2
+Scope: new task fy7-9-L2-08 (ennuste/mittausdata, YO type 10); rest of set was PASS.
 
 ## Blocking
+(none)
 
 ## Polish
-- exercises.json:fy7-9-L1-08 — still a near twin of L1-02 (c = fλ, GHz to cm); change the situation or the unit step (e.g. 12 cm Wi-Fi wave to frequency).
-- exercises.json (L2) — no graph task yet (`curves`/`spectrum` in the plan); consider one in a later round.
-- exercises.json:fy7-9-L3-04 — a and b are level-2 computation, level-3 demand only in c; a "which star looks reddest and why" in b would lift it.
-- Earlier polish on L1-03 (lesson lookup of 307 K) and L3-01/L3-03 still stands.
+- exercises.json:247 — "Tämä pitää mittausepävarmuuden sisään jäävää eroa todellisena." is clumsy Finnish — "Tässä mittausepävarmuuden sisään jäävää eroa pidetään todellisena."
 
 ## Checked
-- Round 1 had no Blocking. Fixes in the diff are correct: L1-06 correct option moved and reworded (answer equals its choice text, each distractor keeps its own repairing feedback); L2-07 and its solution now state the wire is a black body.
-- L2-05 answer line now rounds each temperature to its own data (2,68·10³, 1,79·10³, 5,8·10³ K); 2683 K in the box is inside the 0,02 tolerance.
-- L3-04 star B changed 500 to 480 nm: T_B = 6038 K (6,0·10³ K), table, solution and the Aurinko comparison agree; the answers 3,19 and the A/C temperatures are unaffected.
-- L1-07 Järkevyys 12,24 cm and L2-06 Järkevyys (now refers to L2-01 correctly) fixed.
-- Paragraph rule: no new task has a lead paragraph over 45 words; lettered parts are separate.
-- Levels, plan coverage and no-duplicate check unchanged from round 1; 1280 px captures of the new tasks show no clipping.
+- Correct option not identifiable by form: same length and template as the two near-twin distractors; the odd-template option (13 K) is a distractor.
+- Distractors carry the chapter's own mistakes: celsius instead of kelvin (ratio 1,7 verified), inverse reading (0,7), difference inside the uncertainty (852 K vs 865 K).
+- Numbers verified: 4,10/2,90 = 1,41; range 1,33-1,50; T2, T3 ranges 828-878 and 840-892 K.
+- Within lesson (Wien, absolute temperature) plus uncertainty from earlier chapters; no photon or power.
+- Solution follows step by step, with all three wrong options explained.
+- Widest inline formula 212 px, no display chains (render). Text/table read from text only.

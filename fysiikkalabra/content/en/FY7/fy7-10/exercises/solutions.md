@@ -195,3 +195,26 @@
 **Substitution:** a) $\sin\alpha_2 = \dfrac{1.00 \cdot \sin 55.0^\circ}{1.52} = 0.5389$, so $\alpha_2 = 32.61^\circ$. b) $\sin\alpha_3 = \dfrac{1.00 \cdot \sin 55.0^\circ}{1.33} = 0.6159$, so $\alpha_3 = 38.02^\circ$; without the glass plate the result would be the same, because for a ray passing directly from air into water $1.00 \cdot \sin 55.0^\circ = 1.33 \cdot \sin\alpha_3$. c) $x = 6.0\,\text{mm} \cdot \tan 32.61^\circ + 20.0\,\text{mm} \cdot \tan 38.02^\circ = 3.839\,\text{mm} + 15.636\,\text{mm} = 19.47\,\text{mm}$
 **Answer:** $x \approx 19.5\,\text{mm}$, three significant figures like the angle of incidence and the refractive indices; the term of the glass ($3.8\,\text{mm}$) is small, so the $20.0\,\text{mm}$ water layer limits the accuracy of the result.
 **Reasonableness:** If the ray travelled the whole distance of $26.0\,\text{mm}$ in the direction of the air, $55.0^\circ$, the horizontal distance would be $26.0\,\text{mm} \cdot \tan 55.0^\circ = 37.1\,\text{mm}$. In denser materials the ray is closer to the normal, so the distance is shorter than this, and $19.5\,\text{mm} < 37.1\,\text{mm}$. The angles $32.6^\circ < 38.0^\circ < 55.0^\circ$ are in the order of the refractive indices $1.52 > 1.33 > 1.00$.
+
+## fy7-10-L2-08
+**Find:** whether there is an error in the student's calculation and on which line, when the angle of refraction of a beam continuing from the top surface of a glass cube into the air is calculated.
+**Principle:** Angles are measured from the normal of the surface. In the law of refraction $n_1 \sin\alpha_1 = n_2 \sin\alpha_2$ the refractive index $n_1$ belongs to the material the light comes from, here glass, and $n_2$ to the material the light goes into, here air. From glass into air the beam is refracted away from the normal, so the angle of refraction must be greater than the angle of incidence.
+**Model answer:** Line 1 is correct: the refractive index of glass, $1.52$, is greater than that of air, $1.00$, so air is optically less dense and the beam is refracted away from the normal.
+
+Line 2 is correct: the normal is perpendicular to the surface, so the angle of incidence is
+
+$\alpha_1 = 90^\circ - 60.0^\circ = 30.0^\circ$
+
+Line 3 is wrong. The student has swapped the refractive indices, as if the light came from air into glass. The light comes from the glass, so $n_1 = 1.52$ and $n_2 = 1.00$:
+
+$\sin\alpha_2 = \dfrac{n_1 \sin\alpha_1}{n_2}$
+
+$\sin\alpha_2 = \dfrac{1.52 \cdot \sin 30.0^\circ}{1.00}$
+
+$\sin\alpha_2 = 0.760$
+
+$\alpha_2 = 49.46^\circ$
+
+Line 4 has been calculated correctly from the value of line 3, but a wrong value gives a wrong angle. The error can also be seen by comparing with line 1: the student's result $19.2^\circ$ is smaller than the angle of incidence $30.0^\circ$, that is, the beam would have been refracted towards the normal.
+
+The correct angle of refraction is $\alpha_2 \approx 49.5^\circ$, three significant figures like the angle $60.0^\circ$ and the refractive indices. Check: $1.52 \cdot \sin 30.0^\circ = 0.760$ and $1.00 \cdot \sin 49.5^\circ = 0.760$, so the law of refraction holds, and $49.5^\circ > 30.0^\circ$, as it must be when the light enters an optically less dense material. The correct answer is line 3.

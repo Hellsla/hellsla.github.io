@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 8bc6b6f0080d71e4
-Round: 3
+CONTENT-HASH: 0103d8f31883bc59
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] fy7-10-L3-04 (10-19), a-kohta — "Piirrä tilanteesta kuva", mutta ratkaisussa ei ole kuvaa tai merkintää "kuvan tarkistat itse" — lisää yksi virke kuvan sisällöstä.
-- [Minor] fy7-10-L2-05 (10-13) — kuvaajan piirtämistä pyydetään, ratkaisussa vain sinit ja kaksi pistettä — pieni sovitettu piirros olisi parempi.
-- [Minor] fy7-10-L3-05 (10-20), Vastaus — "lasin termi (3,8 mm) on pieni, joten 20,0 mm:n vesikerros rajoittaa tuloksen tarkkuutta" on epäselvä — muotoile: "lasin osuus (3,8 mm) on pieni verrattuna veden osuuteen (15,6 mm)".
+- [Minor] exercises.json L2-08 correct feedback opens "Oikein, tämä rivi on väärin:" which reads as a contradiction; write "Oikein: tämä rivi sisältää virheen."
+- [Minor] fy7-10-L2-08 stem — five short paragraphs (rows 1–4 and the task) are fine, but the instruction sentence "Valitse väärä rivi tai viimeinen vaihtoehto…" could stand before the rows so the reader knows what to look for.
 
 ## Checked
-- Round 2 ei jättänyt Blocking-kohtia; kierroksen 2 jälkeinen muutos (L3-04:n tehtävänannon kappalejako) tarkistettu
-- Kuvat 1280 px: open-exercises-L3-1280-4 (10-19 jaettu tehtävänanto, taulukko alkaa) ja sen yläpuolella oleva 10-18-ratkaisu; ei ylivuotoa, KaTeX kunnossa
-- Aiemmat Polish-kohdat vielä voimassa; 360/390 px: tehtäväkohtaisia kuvia ei ole, pakettiraportin layout ok
+- Render fy7-10-L2-08 at 390 px: the four rows with inline and display formulas (sin α2 = 1,00·sin 30,0° / 1,52 fits), five choices with feedback, solution with four fractions; no overflow or clipping.
+- Text only: choices in row order with 'ei virhettä' last (not rotated by length); the error (swapped n) is the chapter's warned mistake and each wrong row has a feedback naming the matching misconception.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations n/a · typography 5 · Finnish 4 · accessibility 5

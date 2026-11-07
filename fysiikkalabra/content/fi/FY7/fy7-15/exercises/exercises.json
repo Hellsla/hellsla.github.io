@@ -87,6 +87,36 @@
       "answer": 55.5915,
       "unit": "°",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-15-L1-09",
+      "level": 1,
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "text": "Viidessä tilanteessa valo kulkee yhden tai kahden ihanteellisen polarisaattorin läpi. Intensiteetit ovat esimerkkiarvoja. Kulma on mitattu tulevan valon polarisaatiosuunnasta tai polarisaattorien läpäisysuuntien välistä.\n\nTilanne A: polarisoitunut valo $600\\,\\text{W/m}^2$, yksi polarisaattori kulmassa $60{,}0^\\circ$.\n\nTilanne B: polarisoimaton valo $400\\,\\text{W/m}^2$, yksi polarisaattori.\n\nTilanne C: polarisoitunut valo $320\\,\\text{W/m}^2$, yksi polarisaattori kulmassa $30{,}0^\\circ$.\n\nTilanne D: polarisoimaton valo $800\\,\\text{W/m}^2$, kaksi polarisaattoria, joiden läpäisysuuntien välinen kulma on $60{,}0^\\circ$.\n\nTilanne E: polarisoitunut valo $500\\,\\text{W/m}^2$, kaksi polarisaattoria. Ensimmäinen on kulmassa $45{,}0^\\circ$ ja toinen kulmassa $90{,}0^\\circ$ valon polarisaatiosuuntaan nähden.\n\nLaske, kuinka suuri intensiteetti tulee kussakin tilanteessa viimeisen polarisaattorin läpi, ja järjestä tilanteet.",
+      "prompt": "Järjestä tilanteet viimeisen polarisaattorin läpi tulevan intensiteetin mukaan pienimmästä suurimpaan.",
+      "order": [
+        {
+          "text": "Tilanne D"
+        },
+        {
+          "text": "Tilanne E"
+        },
+        {
+          "text": "Tilanne A"
+        },
+        {
+          "text": "Tilanne B"
+        },
+        {
+          "text": "Tilanne C"
+        }
+      ],
+      "answer": "Tilanne D ($100\\,\\text{W/m}^2$), tilanne E ($125\\,\\text{W/m}^2$), tilanne A ($150\\,\\text{W/m}^2$), tilanne B ($200\\,\\text{W/m}^2$), tilanne C ($240\\,\\text{W/m}^2$).",
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level2": [

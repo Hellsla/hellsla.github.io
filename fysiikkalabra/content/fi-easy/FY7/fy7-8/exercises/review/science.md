@@ -1,21 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: a57d3a1e79b21477
+CONTENT-HASH: 79b3242698a3fff3
 Mode: full (translation review against the reviewed Finnish set)
-Round 1
+Round 2
 
 ## Blocking
 (none)
 
 ## Fixed
-- solutions.md L3-04 Järkevyys: "sen neliö 3,3: 4,959 MW : 1,500 MW = 3,3" is now "sen neliö 3,3. Näin on: ...". No number changed.
-- solutions.md L3-05 Periaate: "saadaan tästä derivoimalla" is now "saadaan tästä etsimällä funktion huippu derivoimalla" so the step is explained.
+(none)
 
 ## Polish
-- "lukuvirhe" and "derivoimalla" stay as in fi; a Finnish teacher can explain them.
+(none)
 
 ## Checked
-- All 8 new ids exist with the same level, kind, answer, tolerance, units and correct flags as fi; L1-06 has one correct choice, the same as fi, and the model answer equals its text.
-- Every data-table cell and every number in exercises.json and solutions.md is identical to fi (automatic number comparison: no difference); decimal comma in LaTeX, point in table JSON as in fi.
-- Recomputed: 486 kierrosta, 87,7 %, 0,20 A, 210 kW, 90 %, 1,515 milj. euroa, 54,35 kW; all match.
-- Wrong-choice feedback in L1-06 is correct physics and explains the error.
-- check_i18n fi-easy: 0 errors.
+- Structural diff against content/fi, all 4 FY7 exercise sets of this round: same ids, keys, answers, units, tolerances, correct flags, choice/order sequence, data cells; number multisets of every text, feedback and solution equal to fi (decimal separators normalised); LaTeX identical apart from translated subscripts.
+- New YO-skill task L2-08: order of magnitude: I = 150 A, P_h = 11.25 kW -> 10 kW; wrong options 0.1 kW, 10 MW (9.5 MW), 1000 MW (800 MW) verified; recomputed independently, matches fi and answers.py.
+- Distractor feedback says the same as fi (correct option and reason unchanged).
+- check_i18n.py: no fy7-8 finding (fi-easy: 0 errors); build.py fy7-8 succeeds.

@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 1ce25266ae253843
+CONTENT-HASH: 444d1349c80bb015
 
-Round 2
+Scope: new task fy7-11-L1-09 (väitteet tosi/epätosi, YO type 8, six statements, 3 true / 3 false).
 
 ## Blocking
+(none)
 
 ## Polish
-- exercises.json:fy7-11-L3-04 — six rows by two lines of computation is long; four rows would do (carried over).
-- exercises.json:fy7-11-L2-01 (49 words) and L3-03 (50 words) — existing tasks with a lead paragraph over the ~45 limit; split the situation from the data sentence when next touched.
-- solutions.md:fy7-11-L2-05 Periaate — "Tehtävässä on yksi lasilevyn pinta, kuten prisman ensimmäinen pinta" is slightly awkward; "Tehtävän pinta vastaa prisman ensimmäistä pintaa" reads better.
+- exercises.json:124 — "kuten Newton osoitti" names a source the course has not introduced — drop it or say "kuten Newtonin kokeessa" only if the lesson tells the experiment.
 
 ## Checked
-- All three round-1 Blocking items resolved: L3-05 split into three paragraphs (13/12/32 words), L2-07 situation and constants split, L2-06 quotation separated from the data.
-- L2-07: tolerance 0,003 now needs n read to about ±0,002 (v 197 889 km/s for n = 1,516); solution's ±0,002 reading uncertainty (0,15 %) is consistent.
-- L3-05 recomputed: A_max 64,98° (violet) and 66,57° (red); at 65,0° n sin α3 = 1,0005 > 1; Δδ 7,42° at 64,0°, 3,91° at 60,0°; solution now names the 0,02° margin.
-- L3-04 solution: water 42,3° and solution 33,3° recomputed from n = 1,3315 and 1,400, correct.
-- L1-06 shortened, correct option moved and no longer the longest; every distractor keeps repairing feedback.
-- Levels, plan coverage, no duplicates and Finnish unchanged; captures show no clipping.
+- Statement 1 catches the chapter's warned mistake (red bends most because its wavelength is longest); 3 catches frequency/wavelength confusion; 4 catches "prism colours the light".
+- Truth and falsity not identifiable by form: lengths and "koska" mixed in both groups; pattern F T F T T F.
+- Constant frequency at a boundary is taught in fy7-10 and fy7-11 and fy5-10, so statement 3 stays within the course.
+- Statement 6 (sun at 45 deg, arc below horizon) follows from the lesson's "alle 42 deg" rule; the model solution gives the principle h = 42 - h' step.
+- Speeds 1,961 and 1,982 x 10^8 m/s verified.
+- Widest inline formula 155 px (render).

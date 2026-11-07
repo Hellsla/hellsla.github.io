@@ -194,3 +194,22 @@
 **Substitution:** a) $NBA = 120 \cdot 0.20\,\text{T} \cdot 0.0050\,\text{m}^2 = 0.12\,\text{Wb}$. At the frequency $f_1$: $e_{0,1} = 0.12\,\text{Wb} \cdot 2\pi \cdot 25\,\text{Hz} = 18.85\,\text{V}$ and $U_1 = \dfrac{18.85\,\text{V}}{\sqrt{2}} = 13.33\,\text{V}$. At the frequency $f_2$: $e_{0,2} = 0.12\,\text{Wb} \cdot 2\pi \cdot 40\,\text{Hz} = 30.16\,\text{V}$ and $U_2 = \dfrac{30.16\,\text{V}}{\sqrt{2}} = 21.33\,\text{V}$. b) $P_1 = \dfrac{(13.33\,\text{V})^2}{8.0\,\Omega} = 22.2\,\text{W}$ and $P_2 = \dfrac{(21.33\,\text{V})^2}{8.0\,\Omega} = 56.8\,\text{W}$. The greatest instantaneous power is $p_{\max} = \dfrac{(30.16\,\text{V})^2}{8.0\,\Omega} = 113.7\,\text{W}$.
 **Answer:** b) The average power is $P_2 \approx 57\,\text{W}$ at the rotation frequency $40\,\text{Hz}$, two significant figures like the values of the coil and the resistor. At the rotation frequency $25\,\text{Hz}$ the power is $22\,\text{W}$, and the greatest instantaneous power is $1.1 \cdot 10^{2}\,\text{W}$. c) The peak voltage is proportional to the frequency, and the power is proportional to the square of the voltage, so the power is proportional to the square of the frequency: $1.6^2 = 2.56$. The power therefore grows $2.56$-fold, not $1.6$-fold.
 **Reasonableness:** Check: $P_2 : P_1 = 56.8\,\text{W} : 22.2\,\text{W} = 2.56$, which matches $1.6^2$. The average power $56.8\,\text{W}$ is half of the peak power $113.7\,\text{W}$, as it should be for a sinusoidal voltage. Units: $\tfrac{\text{V}^2}{\Omega} = \text{W}$.
+
+## fy7-7-L1-09
+**Find:** which of the four $(t, e)$ graphs shows the voltage of the generator when the effective value is $5.0\,\text{V}$ and the frequency is $40\,\text{Hz}$.
+**Principle:** The effective value of a sinusoidal voltage is the peak value divided by $\sqrt{2}$, so the peak value seen in the graph is $e_0 = U\sqrt{2}$. The period is the reciprocal of the frequency, $T = 1 : f$.
+**Model answer:** The correct one is graph B. The peak value:
+
+$e_0 = 5.0\,\text{V} \cdot \sqrt{2}$
+
+$e_0 \approx 7.1\,\text{V}$
+
+The period:
+
+$T = \dfrac{1}{40\,\text{Hz}}$
+
+$T = 0.025\,\text{s} = 25\,\text{ms}$
+
+The curve of graph B goes between $-7.1\,\text{V}$ and $7.1\,\text{V}$, and it is zero and increasing at the times $0$, $25\,\text{ms}$, $50\,\text{ms}$ and so on: between $0$ and $100\,\text{ms}$ it has four full periods. The period of graph C is correct, but its peak value is only $5.0\,\text{V}$: the effective value has been drawn as the peak value, which is a common mistake in this topic. The peak value of graph D is correct, but its period is $40\,\text{ms}$: the numerical value of the frequency has been read as the period in milliseconds. Graph A has both mistakes.
+
+**Reading the graph:** The peak value is read from the height of the highest point of the curve, and the period from the distance between two successive zeros where the curve goes in the same direction. Reasonableness: a frequency of $40\,\text{Hz}$ means $40$ periods per second, that is $4$ periods in $100\,\text{ms}$.

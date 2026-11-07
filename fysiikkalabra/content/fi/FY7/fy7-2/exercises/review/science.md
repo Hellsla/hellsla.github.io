@@ -1,28 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 8b572d40e2c95165
-Round: 2
-
-Round 2: the round-1 Blocking item is fixed. L2-05 is now an ion beam (≈ 210 eV) in a vacuum chamber with a position-sensitive detector, which is realistic. Tracks 1–3 are H⁺, H⁻ and H₂⁺, all correctly described. The round-1 Polish was taken up: L3-04 says "noin 23 u" with the radii as the limit, L3-05 says "Protoni" and uses 1,00 T (no longer L3-02's numbers), and L2-07 says "yhtä lyhyessä ajassa".
+CONTENT-HASH: 8f2bdb276d7840aa
 
 ## Blocking
+- (none)
 
 ## Polish
-- solutions.md L3-05 Vastaus b): "1,05 µs, kolme merkitsevää numeroa kuten kentässä ja säteessä" is wrong: r = 0,20 m and U = 60 kV have two significant figures. A justified answer of 1,0 µs is 4,8 % off, outside tolerance 0.03. — Write "noin 1,0 µs (1,05 µs)", and set tolerance 0.05.
-- solutions.md L3-05 Vastaus c): "korjaus … ¾(v : c)² ≈ 0,3 %" is the correction at a given speed. Here qBr fixes the momentum, so E_k is about ¼(v/c)² ≈ 0,1 % lower. — The conclusion holds. Optionally write "alle 0,5 %".
-- exercises.json L3-05 c): the task no longer asks why the revolution time stays constant (in the plan). — Optionally restore "Perustele, miksi kierrosaika pysyy vakiona" next to the v : c question.
+- solutions.md:198 fy7-2-L2-08 — the right-hand rule is given in the flat-hand form (peukalo v, sormet B, kämmen työntää), but L3 at solutions.md:120 in the same set uses the three-finger form (peukalo, etusormi, keskisormi); use the one form the fy7-2 lesson teaches in both.
+- solutions.md:210 fy7-2-L2-08 — the inline $G = 9{,}109 \cdot 10^{-31}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2$ is close to 300 px at 390 px width (estimate from text, not rendered); visual reviewer to measure.
 
 ## Checked
-- I recomputed the answers in one script: 0,4265 mT; 1,786 ns; 1,025·10⁻⁸ kg/C; 78,9 %; 22,81 u; 1,050 µs. They match answers.py and exercises.json.
-- L1-08 (v = 5,0·10⁶ m/s): r = 1,42 mm and 2πr/v = 1,79 ns, as the check states. The result does not depend on v.
-- L3-05 (1,00 T): v = 1,915·10⁷ m/s (6,4 % of c), E_k = 3,07·10⁻¹³ J = 1,9 MeV, n = 31,9 ≈ 32 crossings = 16 revolutions, and T = 65,6 ns, so t = 1,05 µs. The energy check, 32 · qU = 3,08·10⁻¹³ J, is right.
-- L2-05: the new right-hand-rule wording gives a force upward on a positive charge, as stated. m : q is 1,025 and 1,05 (·10⁻⁸ kg/C), and r₃ : r₁ = 2,05.
-- L1-06 and L2-07 were reworded and reordered. Each has exactly one correct option, and the new distractors and their feedback are correct.
-- L3-04: the hand-fit wording and the 2-sig-fig reasoning are now consistent with the least-squares value of 22,8 u.
-- There are 8/7/5 tasks, and each numeric solution is solved symbolically first.
-
-## Follow-up (8b572d40e2c95165: four solutions.md edits on top of the hash above)
-- L1-02 Annettu: ${|q| = e = 1,602 \cdot 10^{-19}\,\text{C}}$ is the right elementary charge, given as a magnitude, so the electron's negative sign is no longer hidden. The outer braces only group.
-- L1-02 Kaava: $|q|vB = mv^2/r$, $r = mv/(|q|B)$ is the correct magnitude form, matching the lesson's $|q|$ notation. Recomputed $r = 7,581$ mm → 7,6 mm, unchanged; answers.py and exercises.json untouched.
-- L2-03 and L3-02 chapter references (*Homogeeninen sähkökenttä*, *Ympyrärata: jaksonaika ja ratanopeus*) match the current titles of fy6-11 and fy5-3; the physics is unchanged.
-- Polish (not from this diff): exercises.json L1-02 still gives the electron's charge without a sign; match the solution: "ja varaus $1{,}602…$" → "ja varauksen suuruus $1{,}602…$".
-- Hash at start and end: 8b572d40e2c95165.
+- Round 1, full mode; only L2-08 is new (type 3, four fbdspec option figures). Hash identical start and end.
+- Physics recomputed: v = +y, B = +z, v × B = +x (right) for a positive charge, so the electron's force points left: option C correct. |q|vB = 2,40 · 10⁻¹⁶ N, mg = 8,94 · 10⁻³⁰ N, ratio 3,7 · 10⁻¹⁴ ("noin 10⁻¹⁴-osa") right; leaving the weight out of every figure is justified, and the correct feedback says why.
+- Distractors match the chapter's warned mistakes: A force along B / toward the pole, B forgotten sign, D field "speeds up" the electron; each feedback states the right reason. The correct feedback does not give anything away that the options need.
+- figures.py:197–247: all four arrows have the same length (same scale as the stem says), velocity drawn blue and marked as not a force, each option description complete (body, v, F_m direction; A describes the ⊙ symbol).
+- Notation F_m, |q|, ⊙ and overline vectors match the brief.
+- All numeric answers of the chapter recomputed in one script: all within tolerance.

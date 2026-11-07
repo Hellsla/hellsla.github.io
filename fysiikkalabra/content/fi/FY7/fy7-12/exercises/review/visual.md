@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 2d654420254bbbeb
-Round: 4
+CONTENT-HASH: 613d454f2b784ce1
+Round: 1
 
 ## Blocking
 
 ## Polish
-- [Minor] fy7-12-L3-05 (12-20) — kuvan piirto on merkitty "kuvan tarkistat itse", mutta geometria on ratkaisussa vain sanoin; pieni kolmiokuva (O, R−a, R+a) olisi hyvä (carried over).
+- [Minor] fy7-12-L2-08 — väärien vaihtoehtojen palaute (1, 3, 4) toteaa jo, että tulokulma $50{,}0^\circ$ on rajakulmaa suurempi, eli paljastaa perusteluvaiheen vastauksen; oikean vaihtoehdon palaute ei paljasta. Tiivistä väärien palaute "kokonaisheijastuu"-tasolle.
+- [Minor] fy7-12-L2-08 ratkaisu — "Jos kulman $40{,}0^\circ$ pitää tulokulmana, mittaa kulman pinnasta" on kömpelö; selkeämpi "Jos kulmaa $40{,}0^\circ$ pitää tulokulmana, on mitannut kulman pinnasta".
 
 ## Checked
-- Diff 3b9c8f03d: L1-08 aika 0,50 → 0,500 ms tehtävässä sekä ratkaisun Annettu-, Muunnokset-, Sijoitus-, Vastaus- ja Järkevyys-riveillä; ei jäänyt yhtään "0,50 ms" -riviä. Kolme merkitsevää numeroa (103 km) on nyt perusteltu, ja vastaus mahtuu laatikon 103,4483 toleranssiin.
-- Kuvat 1280 px: open-exercises-1280-8 (12-8 tehtävä, ratkaisu, Vastaus-perustelu) ja -9 (Järkevyys 0,500 ms, 150 km, 103 km): KaTeX-yksiköt oikein, ei leikkautumista eikä ylivuotoa.
-- Hash sama alussa ja lopussa. 360/390 px: tehtäväkohtaisia kuvia ei ole.
+- Kuvat 390 px (oma skripti vis_k7q.py, uusi tehtävä palautteineen ja ratkaisuineen auki): doc scrollWidth 390, ei vaakaylivuotoa, ei yli 300 px leveitä KaTeX-ketjuja, ei KaTeX-virheitä. Sivun 1280 px -kaappauksia en avannut; ne ja muu sivu katsottu vain tekstistä ja determinististen tarkistusten perusteella.
+- 12-16 (L2-08): valinta- ja perustelukortti 390 px, palaute ja ratkaisu auki: luettavissa, yksiköt ja kaavat KaTeXilla, ketjut mahtuvat.
+- Muoto: oikea vaihtoehto ja oikea perustelu eivät erotu pituudesta tai epäröinnistä; harhat osuvat lukun omaan varoitettuun virheeseen (kulma pinnasta, $n_1$/$n_2$ vaihdossa). Todettu tekstistä ja renderistä.
+- L3-02: kolmeen kappaleeseen jaettu teksti, ei ylivuotoa.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 4

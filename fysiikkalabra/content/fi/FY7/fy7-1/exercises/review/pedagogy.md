@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 1362402d4e28bc6a
+CONTENT-HASH: e2a6a2d65fc2e7ac
 
-Round 2
+Round 1 (new task fy7-1-L1-09, statements; rest of set PASS before)
 
 ## Blocking
-(none) Round 1 had none; the round-1 fixes were checked and are correct.
+(none)
 
 ## Polish
-- exercises.json fy7-1-L1-08 — now B = 53 µT, I = 76° (answer 51,4 µT, solution and answers.py agree), but it is still a near twin of L1-02 (B cos I vs B sin I). Acceptable as the vertical-component counterpart; asking for both components would add more.
-- exercises.json fy7-1-L3-04 c) — overlaps L3-03 (horizontal component shrinks northwards, compass gets weaker); say in the question "Selitä, miksi kulma kasvaa, vaikka koko kenttä ei muutu" so the new twist is explicit.
-- exercises.json fy7-1-L2-06 — the iron conclusion in b) is the learning goal and is not checkable; add a short hint "(vertaa Maan kenttään 50 µT)" so students need not guess.
-- solutions.md fy7-1-L3-05 — fine now (scatter reason for the mean added); the figures 5,3…6,3·10^4 in Vastaus and "tuhatta" in Sijoitus use different scales (10^3 vs 10^4); one scale throughout reads easier.
+- exercises.json:139 (L1-09 statement 3) — "Magneetin sisällä kenttäviivat kulkevat S:stä N:ään, joten jokainen kenttäviiva on suljettu silmukka": the brief's Tiivistelmä only gives the direction outside ("ulkopuolella"); closed loops and the inside direction are not in the brief, and "joten" is a non sequitur (direction alone does not imply closure). Check that lesson text or figure teaches it; else drop or reword to "...S:stä N:ään, ja jokainen kenttäviiva on suljettu silmukka" and state it in the lesson. Not Blocking only because I could not open the lesson.
+- exercises.json:134 (statement 2) — clumsy "kyljen vieressä keskikohdan kohdalla"; better "Magneetin keskikohdan vieressä, sen kyljen luona,".
+- solutions.md:177 — add one line that the compass needle defines the field direction, so a student who got statement 2 wrong can follow.
 
 ## Checked
-- Round 1 Polish applied: L2-05 b) now uses 8,0 cm and 16 cm (tan 73° → 45,8 µT, tan 24° → 6,23 µT, ratio 7,3, near 2^3, consistent with the table and answer 14,5 µT for a)); L1-08 numbers changed and consistent; L3-05 mean explained; MC option order shuffled so the correct answer is not always first.
-- New tasks L1-06..08, L2-05..07, L3-04..05 recomputed: all answers match their solutions; counts 8/7/5; levels fit; kinds (conceptual MC, data, error analysis, experiment, model) covered; no duplicate of the worked example.
-- Solutions have all steps (given, asked, principle, formula, units, substitution, answer, sanity check); Finnish reads correctly.
-- Screenshots not opened; phone fit relied on the passed 360 px layout check.
+- Two true, three false; true ones are not longer, hedged or the only ones with a reason (only 3 has "joten").
+- Distractors catch the chapter's warned mistakes: cut magnet (1), N-pole near geographic north (4 as true, tests the correct version), crossing lines (5).
+- Finnish, glossary terms and case endings fine; all five feedbacks consistent with the model solution.
+- Within L1 (five short judgements, no calculation); not a copy of the worked example.
+- Checked from text only (no renders; pedagogy role). No inline formula chains in this task.

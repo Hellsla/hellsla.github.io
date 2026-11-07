@@ -36,6 +36,7 @@ a["fy7-4-L2-05"] = sum(Bs) / len(Bs)                                    # mean: 
 a["fy7-4-L2-06"] = 0.31e-3 * g / (3.0 * 2.5 * 0.01)                     # only l = 2,5 cm is in the field: B = Δm g / (I l) = 3,041e-3 N / 0,075 A m = 0,04055 T -> 0,041 T
 k_coil = sum(I * F for I, F in ((0.2, 1.18), (0.4, 2.27), (0.6, 3.52), (0.8, 4.58), (1.0, 5.83))) / sum(I * I for I in (0.2, 0.4, 0.6, 0.8, 1.0))  # least-squares line through the origin: k = B l = 5,795 N/A
 a["fy7-4-L2-07"] = k_coil / 1.1                                         # l = k / B = 5,795 / 1,1 = 5,27 m -> 5,3 m
+a["fy7-4-L2-08"] = None                                                 # choice + reason (direction): no number; I down x B right = towards the viewer
 Is = [4.0, 6.0, 8.0, 10.0, 12.0]; acc = [1.8, 3.6, 5.6, 7.3, 9.3]       # rod on rails with friction: a = (l B / m) I − μ g
 k_rod = sum((x - 8.0) * (y - sum(acc) / 5) for x, y in zip(Is, acc)) / sum((x - 8.0) ** 2 for x in Is)  # least-squares slope 0,935 (m/s²)/A
 a["fy7-4-L3-04"] = k_rod * 45e-3 / (12 * 0.01)                          # B = k m / l = 0,935 · 0,045 kg / 0,12 m = 0,351 T -> 0,35 T (μ = 1,96 / 9,81 = 0,20)

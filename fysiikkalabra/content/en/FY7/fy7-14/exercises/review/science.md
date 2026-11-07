@@ -1,21 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: be1bb316e8571aa9
+CONTENT-HASH: d24c68bd015724c8
 Mode: full (translation review against the reviewed Finnish set)
-Round 1
+Round 2
 
 ## Blocking
 (none)
 
-## Fixed
-- solutions.md L2-07 reasonableness — clumsy "the about $1.3\,\%$" — reworded to "is close to the $1.3\,\%$ mentioned in the chapter".
-
 ## Polish
-- exercises.json fy7-14-L2-05 / L3-05 — "The answer box takes ..." is a literal rendering of the Finnish but reads fine; keep.
+(none)
 
 ## Checked
-- Structure compared with fi by script: same ids, keys, kind, level, correct flags, units, tolerances and answers in all 8 new tasks (L1-06..08, L2-05..07, L3-04..05); every number in texts, choices, feedback and data tables equals fi (decimal point/comma only).
-- Data tables L2-05 (5 rows), L2-07 (8 rows), L3-05 (8 rows) cell by cell identical to fi; captions and column headings translated.
-- solutions.md: same number multiset as fi in all 178 lines' worth of text; formulas and LaTeX unchanged; answers 96.94, 1.5, 1.315, 443.3, 97.83, 360.0, 12.42 agree with exercises.json.
-- L1-06 choices: one correct (upper surface), feedback matches fi meaning, none gives away the answer in a wrong option.
-- English is natural and idiomatic; no Finnish left (grep for ä/ö in JSON and solutions empty); decimal point used in JSON and LaTeX.
-- check_i18n en: 0 errors.
+- New task fy7-14-L1-09 (an expression choice, d = lambda/(2n)) compared with content/fi: id, level, kind, answer, unit, tolerance, correct flag and every number in text, choices, feedback and solution identical (decimal point in en).
+- Answer recomputed independently: an expression choice, d = lambda/(2n); equals the json and the solution; exactly one correct choice or the correct order, as in fi.
+- Every wrong option's feedback states a real misconception and its physics is right, as in fi.
+- All other exercises: structure and all numbers equal to fi by script (reordered sentences only); no English decimal commas in en.
+- Natural English; terms as in the earlier en exercises.
+- check_i18n.py: nothing for fy7-14; build.py fy7-14 succeeds.

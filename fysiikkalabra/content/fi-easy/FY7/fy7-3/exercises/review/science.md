@@ -1,20 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: acf7bdc90ae62d05
-Mode: full
-Round: 1
+CONTENT-HASH: d99cea5b5dda6932
 
 ## Blocking
 
-## Fixed
-- None needed: no translation text had to be changed.
-
 ## Polish
-- exercises.json L1-08 - unit "kertaa" for a dimensionless ratio is acceptable; the answer is 310 (314 rounded to two significant figures) in both languages and the Finnish.
 
 ## Checked
-- Scripted comparison of exercises.json against content/fi: ids, levels, kinds, answers, units (except the translated unit word of L1-08), tolerances, correct flags, data table cells and every number in text and feedback are identical for all 12 exercises, including the 8 new ones (L1-06..08, L2-05..07, L3-04..05).
-- Choice sets of L1-06 and L2-07 match the Finnish: same option order, the same single correct option, the same feedback physics (right-hand rule, anticlockwise from above; B cos 60 deg = 0.50 B).
-- Answers recomputed: 4.7 mT, 310, 1.26 uVs/(Am), 54 uT (and 320 uT in part d), 16 uT, 5.3 mT; L3-05 chain N = 318, l = 0.175 m, R = 2.60 ohm, I = 2.31 A all agree with the Finnish.
-- solutions.md numbers, formulas and LaTeX equal the Finnish (decimal comma as in fi); principles and reasonableness checks keep the Finnish physics.
-- Terms are explained in plain words (linearisointi, kierrostiheys, homogeeninen).
-- python3 scripts/check_i18n.py fi-easy: 0 errors (formula parity with fi).
+- Scripted comparison against the reviewed Finnish: all 21 ids, kinds, units, tolerances, answers, correct flags, choice order and table cells identical; every number in texts, feedback and solutions matches (same decimal comma).
+- New task fy7-3-L2-08 recomputed with own formulas: B = mu0 N I / l: B1 = 1.508 mT, B2 = 2.262 mT, ratio 1.500; 6x, 3x and 0.5x are the wrong-factor distractors.
+- Solutions: same numbers and display equations as fi in every section (S2 additions contain no new number, no step dropped).
+- Physics terms kept (vektorisuure, kierrostiheys, kääntäen verrannollinen) and explained in the sentence, as NOTES.md section 12 asks.
+- Figures are shared with fi; no figure text changed.
+- check_i18n.py: 0 errors for fi-easy, nothing listed for fy7-3; build.py fy7-3 succeeds.

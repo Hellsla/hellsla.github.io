@@ -222,6 +222,37 @@
       "answer": 1.0,
       "unit": "%",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-16-L2-08",
+      "level": 2,
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "text": "Verkkopelin palvelin on yhteydessä pelaajan kotiin kuituyhteydellä. Yhteyden pituus on esimerkkiarvona $1200\\,\\text{km}$. Kuidun ytimen taitekerroin on $1{,}47$, ja valon nopeus tyhjiössä on $3{,}00 \\cdot 10^8\\,\\text{m/s}$. Valo etenee kuidussa lähes akselin suuntaisesti. Laitteiden viiveitä ei oteta huomioon.\n\nPelaajan komento kulkee valopulssina palvelimelle, ja vastaus palaa samaa kuitua pitkin. Mikä on tämän edestakaisen kulkuajan suuruusluokka? Suuruusluokka kertoo ajan koon suunnilleen.",
+      "answer": "noin $12\\,\\text{ms}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "noin $12\\,\\mu\\text{s}$",
+          "feedback": "Tässä pituus on sijoitettu kilometrien lukuarvona $1200$, vaikka nopeus on metreinä sekunnissa. Ennen jakamista pituus muutetaan metreiksi: $1200\\,\\text{km} = 1{,}2 \\cdot 10^6\\,\\text{m}$."
+        },
+        {
+          "text": "noin $1{,}2\\,\\text{ms}$",
+          "feedback": "Tässä pituus on kirjoitettu muotoon $1{,}2 \\cdot 10^5\\,\\text{m}$. Kilo tarkoittaa tuhatta, joten $1200\\,\\text{km} = 1200 \\cdot 10^3\\,\\text{m}$ eli $1{,}2 \\cdot 10^6\\,\\text{m}$."
+        },
+        {
+          "text": "noin $12\\,\\text{ms}$",
+          "correct": true,
+          "feedback": "Oikein: valo etenee kuidussa nopeudella $c : n = 2{,}04 \\cdot 10^8\\,\\text{m/s}$ ja kulkee matkan $2{,}4 \\cdot 10^6\\,\\text{m}$. Aika on siis noin $11{,}8\\,\\text{ms}$."
+        },
+        {
+          "text": "noin $12\\,\\text{s}$",
+          "feedback": "Tässä valon nopeudeksi on otettu luku $300\\,000$. Se on nopeus kilometreinä sekunnissa, vaikka pituus on sijoitettu metreinä. Pituuden ja nopeuden on oltava samoissa yksiköissä."
+        }
+      ]
     }
   ],
   "level3": [

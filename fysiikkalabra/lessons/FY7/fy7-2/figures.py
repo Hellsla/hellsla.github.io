@@ -5,6 +5,7 @@ import math
 from figlib import (Fig, Axes, fi, INK, MUTED, WHITE, RULE, RULE_LIGHT, HEAT, HEAT_LIGHT, HOT, HOT_LIGHT, COLD, COLD_LIGHT,
                     GOOD, GOOD_LIGHT, GLASS, WATER, ALUMINIUM, METAL_EDGE, IRON, COPPER, ICE, PAPER, SAND, SAND_LIGHT, SAND_DARK, n)
 import herolib as H
+from fbd import FBD, FORCE as FBD_FORCE
 
 FORCE, VEL, FIELD, EFIELD, BEAM = HOT, COLD, GOOD, "#8a5f22", "#7048e8"
 e, mp, md, u = 1.602e-19, 1.673e-27, 3.344e-27, 1.661e-27
@@ -193,6 +194,58 @@ def track_sign():
     return f.svg()
 
 
+# Task fy7-2-L2-08: an electron (m = 9,109e-31 kg, q = -1,602e-19 C) moves up the page at 3,0e6 m/s in a homogeneous
+# field of 0,50 mT out of the page. The magnetic force |q| v B = 2,4e-16 N points left (v x B points right for a positive
+# charge); its weight 8,9e-30 N is negligible. Four option diagrams to one scale, the same force arrow length and the
+# velocity beside the body in each (FBD.motion, velocity blue); only "pick-vasen" is right, each other has one error.
+PK_BODY, PK_L = (150, 170, 100, 40), 80          # the electron as a rectangle; every force arrow is PK_L figure units
+PK_DESC = ("Voimakuvio mittakaavassa: elektroni suorakulmiona. Kappaleen vasemman yläkulman yläpuolella on sininen "
+           "nopeuden nuoli v suoraan ylöspäin; se ei ole voima. ")
+
+
+def _pick(name, desc, vec=None, out=False, wrong=None):
+    """An option of task fy7-2-L2-08: the magnetic force F_m as a red arrow of length PK_L from the middle of a side
+    (vec: its direction, y up) or, as an error, out of the page along the field (out=True: a red circled dot on the
+    body); the velocity v beside the body, up, in every option."""
+    cx, cy, w, h = PK_BODY
+    f = Fig(f"fy72-pick-{name}", 250, desc, width=300)
+    d = FBD(f, 1.0, body=PK_BODY, a_dir=None if wrong else vec, wrong=wrong)
+    if vec is not None:
+        at = (cx + vec[0] * w / 2, cy - vec[1] * h / 2)
+        lab = (34, 4) if vec[1] else (0, 26)
+        d.force("F_m", (vec[0] * PK_L, vec[1] * PK_L), at, "other", tex=r"\overline{F}_\text{m}", lab=lab)
+    d.draw()
+    if out:                                           # the error: the force drawn along B, out of the page
+        f.circle(cx, cy, 12, "none", FBD_FORCE, 3)
+        f.circle(cx, cy, 4, FBD_FORCE)
+        f.tex(cx + 24, cy - 40, r"\overline{F}_\text{m}", "start", FBD_FORCE)
+    d.motion(r"\overline{v}", (0, 1), (cx - w / 2 - 14, cy - h / 2 - 12), length=70, lab=(0, -16))
+    return f.svg()
+
+
+def pick_vasen():
+    return _pick("vasen", PK_DESC + "Kappaleen vasemman kyljen keskeltä lähtee magneettinen voima F m vaakasuoraan "
+                 "vasemmalle, kohtisuoraan nopeutta vastaan.", vec=(-1, 0))
+
+
+def pick_oikea():
+    return _pick("oikea", PK_DESC + "Kappaleen oikean kyljen keskeltä lähtee magneettinen voima F m vaakasuoraan "
+                 "oikealle, kohtisuoraan nopeutta vastaan.", vec=(1, 0),
+                 wrong="the right-hand rule for a positive charge: the electron is negative, so the force points left")
+
+
+def pick_ylos():
+    return _pick("ylos", PK_DESC + "Kappaleen yläpinnan keskeltä lähtee magneettinen voima F m suoraan ylöspäin, "
+                 "nopeuden suuntaan.", vec=(0, 1),
+                 wrong="the force drawn along the velocity, as if the field sped the electron up: F_m is perpendicular to v")
+
+
+def pick_ulos():
+    return _pick("ulos", PK_DESC + "Kappaleen keskellä on punainen ympyrä, jonka sisällä on piste: magneettinen voima "
+                 "F m osoittaa paperista ulos eli kentän suuntaan. Paperin tasossa ei ole voiman nuolta.", out=True,
+                 wrong="the force drawn along the field B, out of the page: F_m is perpendicular to B as well as to v")
+
+
 def hero():
     """Opening illustration: a radiocarbon laboratory. A piece of old wood is the sample; its ions fly through a vacuum
     tube between the poles of a large electromagnet and split into two beams that hit two spots on a detector."""
@@ -243,7 +296,8 @@ def hero():
 
 
 FIGURES = {"hero": hero, "force-dir": force_dir, "circle-path": circle_path, "r-graph": r_graph, "spectrometer": spectrometer,
-           "track-sign": track_sign}
+           "track-sign": track_sign, "pick-vasen": pick_vasen, "pick-oikea": pick_oikea, "pick-ylos": pick_ylos,
+           "pick-ulos": pick_ulos}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "force-dir": "reveals: the direction of the magnetic force for a positive and a negative charge in a field into the page",
@@ -251,4 +305,8 @@ REUSE = {
     "r-graph": "reveals: r grows in proportion to v and to m (proton and deuteron at 0,20 T)",
     "spectrometer": "reveals: the heavier ion lands farther from the slit",
     "track-sign": "safe: a track bending down in a field into the page, the sign of the charge not marked",
+    "pick-vasen": "reveals: the right option of task fy7-2-L2-08 (an electron moving up in a field out of the page: F_m to the left)",
+    "pick-oikea": "safe: a wrong option of task fy7-2-L2-08 (the force on an electron drawn as for a positive charge)",
+    "pick-ylos": "safe: a wrong option of task fy7-2-L2-08 (the magnetic force drawn along the velocity)",
+    "pick-ulos": "safe: a wrong option of task fy7-2-L2-08 (the magnetic force drawn out of the page, along the field)",
 }

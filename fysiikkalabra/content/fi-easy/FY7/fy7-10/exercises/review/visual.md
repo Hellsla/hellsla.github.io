@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 42fcf9545eae0e70
-Mode: full (translation review: visual parity with fi)
-Round 1
+CONTENT-HASH: 820217f747566fa9
+Mode: delta (new task fy7-10-L2-08 and its solution), round 1
 
 ## Blocking
-(none)
-
-## Fixed
 (none)
 
 ## Polish
 (none)
 
 ## Checked
-- Opened exercise screenshots of the new tasks (L2-05 table and solution, L3-04 task text and table, L3-05) in fi-easy: text, tables and LaTeX render, no overflow, no raw markup, no Finnish in en.
-- Data tables and captions translated; units and decimal formatting consistent with the language.
-- check_i18n.py fi-easy: 0 errors.
+- Rebuilt and captured fy7-10 (fi-easy); opened fy7-10-open-exercises captures at 1280 px (last parts of the level) showing fy7-10-L2-08 with its task text, options or input, feedback, answer and opened solution.
+- Layout survived: no clipping or horizontal overflow, options are whole rows, solution blocks (Find, Principle, Model answer) read in order, display equations aligned and broken at meaningful steps.
+- Maths: KaTeX renders, numbers with upright units and thin space, \cdot, colon for division, SI units upright; natural Finnish, decimal comma, glossary terms consistent.
+- No figures in the new task; the lesson page and other tasks are unchanged (delta).
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

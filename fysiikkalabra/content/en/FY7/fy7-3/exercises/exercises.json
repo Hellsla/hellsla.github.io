@@ -242,6 +242,37 @@
           "correct": true
         }
       ]
+    },
+    {
+      "id": "fy7-3-L2-08",
+      "level": 2,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "A student's coil has $240$ turns over a length of $12\\,\\text{cm}$, and the current in it is $0.60\\,\\text{A}$. The student winds the same wire again on a tube of the same thickness so that there are still $240$ turns, but the length of the coil is $24\\,\\text{cm}$. At the same time the current is increased to $1.8\\,\\text{A}$.\n\nThe numbers are example values. In both cases the coil is long compared with its thickness, and there is air inside it.\n\nHow does the magnetic flux density at the centre of the coil change?",
+      "answer": "The field becomes $1.5$ times as large.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The field becomes $6$ times as large.",
+          "feedback": "Here the ratio of the currents has also been multiplied by the ratio of the lengths, $2$, as if a longer coil strengthened the field. The field is, however, inversely proportional to the length, $B = \\mu_0 \\tfrac{NI}{l}$, so lengthening weakens it."
+        },
+        {
+          "text": "The field becomes $3$ times as large.",
+          "feedback": "Here only the tripling of the current has been taken into account, because the number of turns is the same. The field, however, depends on the turn density $N : l$ and not on the total number of turns, and the turn density is halved."
+        },
+        {
+          "text": "The field becomes $1.5$ times as large.",
+          "correct": true,
+          "feedback": "Correct: the current triples and the turn density $N : l$ halves, so the field grows by the factor $3 : 2 = 1.5$, from about $1.5\\,\\text{mT}$ to $2.3\\,\\text{mT}$."
+        },
+        {
+          "text": "The field is halved.",
+          "feedback": "Here only the stretching of the coil has been taken into account. Halving the turn density would halve the field, but at the same time the current triples, and the field is directly proportional to the current."
+        }
+      ]
     }
   ],
   "level3": [

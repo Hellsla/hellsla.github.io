@@ -1,22 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: ca2d15078f51d8b6
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 0311e476009c3306
+Mode: delta (new task fy7-16-L2-08 and its solution), round 1
 
 ## Blocking
 (none)
-
-## Fixed
-- L3-04 text: "Your induction hob operates..." changed to "An induction hob operates..." (fi has no 'your'; generic task voice).
 
 ## Polish
 (none)
 
 ## Checked
-- Captures fy7-16-open-exercises-1280-*, -L2-1280-*, -L3-1280-* of the new tasks opened (L1-08, L2-05, L3-05 in detail): headings, formula blocks, data tables and answer boxes render as in fi; no overflow.
-- Decimal separator and units consistent in text, tables and formulas (en: point; fi-easy: comma in text and LaTeX as in fi).
-- Table captions and column headers translated; symbols and units unchanged.
-- The edits after the captures change words only (no formula or layout), so the captures still apply.
+- Rebuilt and captured fy7-16 (en); opened fy7-16-open-exercises captures at 1280 px (last parts of the level) showing fy7-16-L2-08 with its task text, options or input, feedback, answer and opened solution.
+- Layout survived: no clipping or horizontal overflow, options are whole rows, solution blocks (Find, Principle, Model answer) read in order, display equations aligned and broken at meaningful steps.
+- Maths: KaTeX renders, numbers with upright units and thin space, \cdot, colon for division, SI units upright; no Finnish left in the new task.
+- No figures in the new task; the lesson page and other tasks are unchanged (delta).
 
 ## Scores
-illustrations 4 · typography 5 · English 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

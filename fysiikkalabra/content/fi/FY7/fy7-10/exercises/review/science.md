@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 8bc6b6f0080d71e4
-
-Round 3 (delta). Round 2 had no blocking items. The only change since then is in L3-04: the developer split one paragraph of the task text into three. No words, numbers or symbols changed, and the assumption "Oletetaan, että esine näyttää olevan suoraan todellisen paikkansa yläpuolella" still stands in the task.
+CONTENT-HASH: 0103d8f31883bc59
+ROUND: 1
 
 ## Blocking
 
 ## Polish
-- docs/exercise-bank/FY7.md fy7-10 (carried over, for pedagogy): plan drift. The plan's L3 "sädeleveys" became the horizontal displacement in L3-05, and the plan's α₁/α₂ error case became "angle divided by n". Both are physically sound. — Update the plan.
 
 ## Checked
-- The diff (exercises.json, fy7-10-L3-04 text) only adds paragraph breaks. The model, the data and the answer (1,3301) are unchanged.
-- The round-2 recomputations still apply: 416,4 nm; 25,50°; 1,4985; 35,168°; Δn 0,0379; 1,3301; 19,474 mm.
-- The hash was the same at the start and at the end.
+- New task L2-08 (find the error) only (additions only since b032dcb83~1). Checked from the text only; no renders.
+- Recomputed: α₁ = 30,0° (below the critical angle 41,1°, so the ray does leave the glass, as the task says); the right sin α₂ = 1,52 · 0,500 = 0,760, α₂ = 49,46° → 49,5°. The student's swapped sin α₂ = 0,500 : 1,52 = 0,329, 19,2°. Only row 3 is wrong; rows 1, 2 and 4 are right as written.
+- Each option's feedback gives that row's own check. The row 1 and row 2 distractors are the chapter's warned mistakes (always toward the normal; the angle measured from the surface).
+- "Laskussa ei ole virhettä" is last, as docs/exercise-types.md requires.
+- n₁ belongs to the medium the light comes from, as in the lesson's n₁ sin α₁ = n₂ sin α₂. Solution complete, with a real check (both sides 0,760; 49,5° > 30,0°).
+- Inline formulas (row 3's dfrac, "α₁ = 90° − 60,0° = 30,0°") are judged from the text, under 300 px.
+- answers.py: all 19 numeric answers agree with exercises.json.
+- Hash 0103d8f31883bc59 at start and end.

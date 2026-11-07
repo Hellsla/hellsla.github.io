@@ -198,3 +198,34 @@
 **Vastaus:** $\Delta\delta = 7{,}4^\circ$ (tarkoilla välituloksilla $7{,}42^\circ$), kaksi merkitsevää numeroa, koska tulos on kahden lähes yhtä suuren kulman erotus. Violetti rajoittaa huippukulmaa: $A_\text{max} = 64{,}98^\circ$ violetille ja $66{,}57^\circ$ punaiselle.
 **Mallivastaus:** Huippukulman kasvattaminen kasvattaa värien eroa: kulmalla $60{,}0^\circ$ ero on $3{,}9^\circ$ ja kulmalla $64{,}0^\circ$ se on $7{,}4^\circ$, eli $3{,}5^\circ$ suurempi. Suurin sallittu huippukulma määräytyy violetin valon mukaan, koska sen taitekerroin on suurin ja $\alpha_{3,\text{max}}$ siksi pienin. Huippukulmaa $65{,}0^\circ$ ei kannata valita, koska se on vain $0{,}02^\circ$ yli rajan $A_\text{max} = 64{,}98^\circ$: silloin violetille $n_\text{v}\sin\alpha_3 = 1{,}0005 > 1$, joten violetti säde ei pääse ulos eikä sitä voi mitata. Huippukulma $64{,}0^\circ$ on lähellä rajaa, joten violetti säde lähtee hyvin loivassa kulmassa ($\alpha_4 = 77{,}8^\circ$) ja sen suunta on herkkä pyöristykselle.
 **Järkevyys:** Violetti poikkeaa enemmän kuin punainen ($\delta_\text{v} > \delta_\text{p}$), kuten pitää. Kulma $64{,}0^\circ$ on pienempi kuin $A_\text{max} = 64{,}98^\circ$, ja tarkistus $n_\text{v}\sin\alpha_3 = 0{,}977 < 1$ vahvistaa, että säde pääsee ulos. Yhden pinnan ero olisi vain noin $1^\circ$, ja kaksi pintaa sekä suuri poikkeama kasvattavat sitä.
+
+## fy7-11-L1-09
+**Kysytty:** mitkä kuudesta väitteestä prisman dispersiosta ja sateenkaaresta ovat tosia ja mitkä epätosia.
+**Periaate:** Taitekerroin riippuu aallonpituudesta (dispersio): lasissa violetin taitekerroin on suurempi kuin punaisen, joten violetti hidastuu enemmän ja taittuu enemmän. Valon nopeus aineessa on $v = c : n$. Rajapinnassa valon taajuus ja siksi väri säilyvät, mutta nopeus ja aallonpituus muuttuvat. Sateenkaaressa kukin väri näkyy omassa kulmassaan vastapisteen suunnasta, ja jos aurinko on korkeudella $h$, punaisen reunan huippu on korkeudella $42^\circ - h$.
+**Mallivastaus:** Väite 1 on epätosi. Lasin taitekerroin on violetille $1{,}530$ ja punaiselle $1{,}514$, joten violetti taittuu prisman kummassakin pinnassa enemmän ja poikkeaa eniten. Punainen poikkeaa vähiten, vaikka sen aallonpituus on pisin.
+
+Väite 2 on tosi. Valon nopeudet lasissa ovat
+
+$v_\text{v} = \dfrac{3{,}00 \cdot 10^{8}\,\text{m/s}}{1{,}530}$
+
+$v_\text{v} = 1{,}961 \cdot 10^{8}\,\text{m/s}$
+
+$v_\text{p} = \dfrac{3{,}00 \cdot 10^{8}\,\text{m/s}}{1{,}514}$
+
+$v_\text{p} = 1{,}982 \cdot 10^{8}\,\text{m/s}$
+
+Violetti etenee siis hitaammin.
+
+Väite 3 on epätosi. Taajuuden määrää valonlähde, eikä se muutu rajapinnassa. Kun valo hidastuu, sen aallonpituus lyhenee yhtälön $v = f\lambda$ mukaan, mutta väri, joka määräytyy taajuudesta, pysyy samana.
+
+Väite 4 on tosi. Värit ovat valmiina valkoisessa valossa, ja prisma vain erottaa ne. Erotettu punainen valo taittuu toisessa prismassa, mutta se ei hajoa, koska siinä ei ole muita värejä.
+
+Väite 5 on tosi. Pisarat, jotka näkyvät samassa kulmassa vastapisteen suunnasta, muodostavat ympyrän. Violetin kulma $40{,}6^\circ$ on pienempi kuin punaisen $42^\circ$, joten violetin ympyrä on pienempi ja violetti on kaaren sisäreunalla.
+
+Väite 6 on epätosi. Kun aurinko on $45^\circ$:n korkeudella, vastapiste on $45^\circ$ horisontin alapuolella. Punaisen reunan huippu on korkeudella
+
+$42^\circ - 45^\circ = -3^\circ$
+
+eli horisontin alapuolella, joten kaarta ei näe tasaisella maalla.
+
+Vastaus: väitteet 2, 4 ja 5 ovat tosia, ja väitteet 1, 3 ja 6 ovat epätosia.

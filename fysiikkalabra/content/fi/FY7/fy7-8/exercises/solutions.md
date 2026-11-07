@@ -196,3 +196,20 @@ $$\text{säästö} = (E_\text{A} - E_\text{B}) \cdot \text{hinta}$$
 **Sijoitus:** a) Häviötehot ovat $0{,}6$; $0{,}6$; $0{,}7$; $0{,}9$; $1{,}3$ ja $1{,}9\,\text{kW}$ ja hyötysuhteet rivillä $10\text{–}80\,\text{kW}$ ovat $94{,}3$; $96{,}6$; $97{,}8$; $97{,}9$ ja $97{,}7\,\%$. b) Tyhjäkäynnillä $P_0 = 0{,}6\,\text{kW}$. Suurimmalla kuormalla on pienin suhteellinen lukuvirhe, joten $a = \dfrac{1{,}9\,\text{kW} - 0{,}6\,\text{kW}}{(80{,}0\,\text{kW})^2} = 2{,}03 \cdot 10^{-4}\,\text{kW}^{-1}$. c) $P_\text{ulos} = \sqrt{\dfrac{0{,}6\,\text{kW}}{2{,}03 \cdot 10^{-4}\,\text{kW}^{-1}}} = \sqrt{2954\,\text{kW}^2} = 54{,}35\,\text{kW}$
 **Vastaus:** noin $54\,\text{kW}$, kaksi merkitsevää numeroa, koska häviöiden erotus $1{,}9\,\text{kW} - 0{,}6\,\text{kW} = 1{,}3\,\text{kW}$ on kahden merkitsevän numeron tarkkuudella. Riveiltä $20$–$60\,\text{kW}$ määritetty $a$ antaisi arvoja $49$–$57\,\text{kW}$, joten tulos on epätarkka.
 **Järkevyys:** Taulukon hyötysuhde on suurin rivillä $60\,\text{kW}$ ($97{,}9\,\%$), lähellä tulosta $54\,\text{kW}$. Tuloksella mallin mukainen häviö on $0{,}6\,\text{kW} + 2{,}03 \cdot 10^{-4}\,\text{kW}^{-1} \cdot (54{,}35\,\text{kW})^2 = 1{,}2\,\text{kW}$, ja hyötysuhde $\dfrac{54{,}35}{54{,}35 + 1{,}2} = 97{,}8\,\%$. Kaksi häviön osaa ovat tässä kumpikin $0{,}6\,\text{kW}$.
+
+## fy7-8-L2-08
+**Kysytty:** tuulivoimalan kaapelissa lämmöksi muuttuvan häviötehon $P_\text{h}$ suuruusluokka.
+**Periaate:** Ideaalinen muuntaja ei muuta tehoa, joten kaapeli siirtää tehon $3{,}0\,\text{MW}$ jännitteellä $20\,\text{kV}$. Kaapelin virta saadaan siirrettävästä tehosta ja siirtojännitteestä, $I = P : U$, ja häviöteho on $P_\text{h} = RI^2$. Siirtojännite ei ole kaapelin resistanssin yli oleva jännite, joten lauseketta $U^2 : R$ ei voi käyttää.
+**Mallivastaus:** Kaapelin virta:
+
+$I = \dfrac{3{,}0 \cdot 10^{6}\,\text{W}}{20 \cdot 10^{3}\,\text{V}}$
+
+$I = 150\,\text{A}$
+
+Häviöteho:
+
+$P_\text{h} = 0{,}50\,\Omega \cdot (150\,\text{A})^2$
+
+$P_\text{h} = 11\,250\,\text{W} \approx 11\,\text{kW}$
+
+Häviöteho on noin $11\,\text{kW}$, eli suuruusluokka on $10\,\text{kW}$. Se on vain noin $0{,}4\,\%$ siirrettävästä tehosta. Väärät vaihtoehdot syntyvät tyypillisistä virheistä. Tulo $RI = 75\,\text{V}$ on kaapelin jännitehäviö, ei teho, ja se antaisi luvun $0{,}1\,\text{kW}$ suuruusluokan. Jos muuntajan unohtaa ja laskee virran jännitteellä $690\,\text{V}$, virraksi tulee noin $4\,350\,\text{A}$ ja häviötehoksi noin $9{,}5\,\text{MW}$, mikä on enemmän kuin voimala tuottaa. Lauseke $U^2 : R$ siirtojännitteellä antaa $800\,\text{MW}$, eli suuruusluokka on $1000\,\text{MW}$, ja se on vielä mahdottomampi. Järkevyys: muuntaja pienentää virran noin $29$-osaan ja häviöt noin $840$-osaan siitä, mitä ne olisivat jännitteellä $690\,\text{V}$.

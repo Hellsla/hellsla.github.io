@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 71c65847b5364a38
-ROUND: 2
+CONTENT-HASH: 17151a3c70a4f503
+
+Scope: new task fy7-16-L2-08 (suuruusluokka, YO type 5).
 
 ## Blocking
+(none)
 
 ## Polish
-- fy7-16-L1-07 is still the worked example with new numbers; a twist (given received power, ask the length) would help.
-- fy7-16-L3-05 overlaps L3-02 (same loop model); the frequency scaling is the new part and is good. c) answer now also names skin effect in aluminium/copper and steel's ferromagnetism: correct, though the pyörrevirran oma kenttä sits close to FY7's excluded self-induction; "pohjan resistanssi kasvaa lämpötilan mukana" is a safer example.
-- The plan's `charger` figure (L2-05) and a level-1 aluminium vs steel question are still not used; optional.
+- exercises.json (choices) — option values are 12 us, 1,2 ms, 12 ms, 12 s: the last gap is a factor 1000, outside the "10-100 apart" rule in docs/exercise-types.md; replace 12 s by 120 ms (and a matching unit-slip feedback).
+- exercises.json (12 s feedback) — "valon nopeudeksi on otettu 300 000" is hard to reach since the task gives c in m/s; use a slip a student can make with the given data.
 
 ## Checked
-- Round-1 Blocking resolved: L3-05 lead split into two paragraphs (field, then model and data), each about 30 words.
-- Round-1 Polish done: L2-05 tolerance 0,07 accepts 11,96 to 13,76 mm so the solution's "12 to 13 mm" holds, and the text now says "yli 12,5 mm" and notes the smooth curve lies slightly lower; L1-06 wording and option order tidied, correct option no longer first.
-- Recomputed: L2-05 12,86 mm; L3-05 numbers (14,39 V, powers 2,59/2,07/1,29 kW, 42 kHz) unchanged and consistent with the text.
-- L2-07 error analysis (dB as per cent) intact.
-- Counts 8/7/5, levels fit the plan.
-- Only 1280 px captures listed; no 360 px capture to check.
+- Calculation verified: v = 2,04 x 10^8 m/s, s = 2,4 x 10^6 m, t = 11,8 ms; each wrong value follows from a named unit slip.
+- Forgetting n (8 ms) or the return trip (6 ms) lands near 12 ms, so the order of magnitude is robust; no distractor depends on that.
+- Correct option is not the longest or only hedged one; digits "12" repeat in three options, which hides it.
+- Within fy7-12 (t = ns/c) and earlier units; everyday context (ping).
+- Widest display chain 174 px, inline 187 px (render).

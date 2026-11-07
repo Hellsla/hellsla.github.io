@@ -143,6 +143,30 @@
 **Vastaus:** $55{,}6^\circ$. Vastauksessa on kolme merkitsevää numeroa, kuten taitekertoimissa.
 **Järkevyys:** Kvartsilasin taitekerroin on suurempi kuin veden $1{,}33$ ja pienempi kuin akryylin $1{,}49$. Kulman pitää siis olla veden kulman $53{,}1^\circ$ ja akryylin kulman $56{,}1^\circ$ välissä, kuten tuloksessa. Tarkistus: $\tan 55{,}59^\circ = 1{,}46$.
 
+## fy7-15-L1-09
+**Kysytty:** tilanteiden A–E järjestys viimeisen polarisaattorin läpi tulevan intensiteetin $I$ mukaan pienimmästä suurimpaan.
+**Periaate:** Ihanteellinen polarisaattori päästää läpi puolet polarisoimattoman valon intensiteetistä asennostaan riippumatta. Polarisoituneeseen valoon sovelletaan Malusin lakia $I = I_0 \cos^2\theta$. Siinä $\theta$ on valon polarisaatiosuunnan ja läpäisysuunnan välinen kulma. Polarisaattorin läpi tullut valo on polarisoitunutta sen läpäisysuuntaan. Siksi seuraavan polarisaattorin kulma mitataan tästä suunnasta.
+**Mallivastaus:** Intensiteetit:
+
+$I_\text{A} = 600\,\text{W/m}^2 \cdot \cos^2 60{,}0^\circ$, eli $I_\text{A} = 150\,\text{W/m}^2$
+
+$I_\text{B} = \tfrac{1}{2} \cdot 400\,\text{W/m}^2 = 200\,\text{W/m}^2$
+
+$I_\text{C} = 320\,\text{W/m}^2 \cdot \cos^2 30{,}0^\circ$, eli $I_\text{C} = 240\,\text{W/m}^2$
+
+$I_\text{D} = \tfrac{1}{2} \cdot 800\,\text{W/m}^2 \cdot \cos^2 60{,}0^\circ$, eli $I_\text{D} = 100\,\text{W/m}^2$
+
+Tilanteessa E valo on ensimmäisen polarisaattorin jälkeen polarisoitunut sen läpäisysuuntaan. Toinen polarisaattori on $45{,}0^\circ$:n kulmassa siihen nähden:
+
+$$\begin{aligned}
+&I_\text{E} = 500\,\text{W/m}^2 \cdot \left(\cos^2 45{,}0^\circ\right)^2 \\
+&I_\text{E} = 125\,\text{W/m}^2
+\end{aligned}$$
+
+Intensiteetin mukaan pienimmästä suurimpaan järjestys on D, E, A, B, C.
+
+Jos kerroin $\cos\theta$ otettaisiin ilman neliötä, tilanteen A intensiteetiksi tulisi $300\,\text{W/m}^2$ ja järjestys muuttuisi. Jos polarisoimattoman valon puolittuminen unohdettaisiin, tilanne B olisi $400\,\text{W/m}^2$ ja suurin. Tilanteessa E toinen polarisaattori on ristissä tulevan valon polarisaatiosuunnan kanssa, mutta valoa pääsee silti läpi. Välissä oleva polarisaattori nimittäin kääntää polarisaatiosuunnan.
+
 ## fy7-15-L2-05
 **Annettu:** taulukon mittauspisteet $(\theta;\ E)$ kymmenellä kulmalla. Suurin lukema on $322\,\text{lx}$ kulmalla $0^\circ$ ja pienin $7\,\text{lx}$ kulmalla $90^\circ$.
 **Kysytty:** lukema $E_0$, jonka pelkkä näytön polarisoitunut valo antaa, kun läpäisysuunta on näytön polarisaation suuntainen, yksikössä $\text{lx}$

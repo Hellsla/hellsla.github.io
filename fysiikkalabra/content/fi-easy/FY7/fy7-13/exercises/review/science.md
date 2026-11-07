@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 24f527adb3299ded
+CONTENT-HASH: f2cde3735dc50fff
 Mode: full (translation review against the reviewed Finnish set)
-Round 1
+Round 3 (delta: solutions.md line 195 sentence reworded)
 
 ## Blocking
 (none)
 
-## Fixed
-(none needed: numbers, units, formulas and answers equal to fi)
-
 ## Polish
-- solutions.md L2-05 uses "kulmakerroin" without explanation; the idea (slope of the line) is stated in the same Principle line ("sen kulmakerroin on lambda : d"), so left as is.
+(none)
 
 ## Checked
-- All 20 exercises compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags and every number in texts, choices, feedback, data cells identical (decimal point in en, comma in fi-easy); solutions.md numbers equal to fi (1160/843 tokens, normalised).
-- Formula parity with fi: check_i18n.py fi-easy 0 errors.
-- Physics statements (tan for the screen triangle, sin in the grating equation, kλ < d, zeroth-order reflection back through the hole) are the same as in fi.
-- L1-06 and L2-07: answer string equals the single correct choice.
+- Delta: line 195 now reads "Varjostin siirretään puolet lähemmäs, ja siksi etäisyys puolittuu" - same physics as fi (screen moved half as close, so x halves) and clearer than the earlier wording; numbers unchanged.
+- New task fy7-13-L2-08 (a change prediction (1.5 times)) compared with content/fi: id, level, kind, answer, unit, tolerance, correct flag and every number in text, choices, feedback and solution identical (decimal comma kept).
+- Answer recomputed independently: a change prediction (1.5 times); equals the json and the solution; exactly one correct choice or the correct order, as in fi.
+- Every wrong option's feedback states a real misconception and its physics is right, as in fi.
+- All other exercises: structure and all numbers equal to fi by script (reordered sentences only); no English decimal commas in en.
+- Same physics as fi; clearer, shorter sentences per NOTES.md section 12; no physics changed.
+- check_i18n.py: nothing for fy7-13; build.py fy7-13 succeeds.
