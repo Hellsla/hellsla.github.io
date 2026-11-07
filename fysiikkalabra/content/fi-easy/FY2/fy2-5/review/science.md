@@ -1,6 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 14e1248b6dd72a03
+CONTENT-HASH: 34fe4a4dc1063d55
 Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+Round: 3
 
 ## Blocking
 - none
@@ -9,6 +10,5 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction 
 - none
 
 ## Checked
-- Diff `git diff origin/main...HEAD` of lesson.md, inquiry.json, exit-ticket.json (fi-easy); content hash recomputed and equal to the brief's.
-- inquiry.json ennuste-2: $2200\,\text{kJ} : 0{,}100\,\text{kg} = 22\,\text{MJ/kg} > 15\,\text{MJ/kg}$ recomputed. Exactly one correct option (larger, but nutrition energy = energy usable by the body vs heating value = energy released in combustion); both distractors wrong for the stated reason and their feedback correct (same unit does not make the same quantity; fuels compared by heating values). Removed claim about burning chocolate is no loss.
-- Selkeä suomi changes carry the same physics as fi.
+- Round-3 diff `git diff HEAD~1` (commit a84956a90) of this unit's files (fi-easy), judged in context; content hash recomputed and equal to the new hash.
+- inquiry.json ennuste-2: "Voiko lukuja verrata keskenään niin kuin ne olisivat samaa suuretta?" is neutral and has the same meaning as fi; the options and feedback still fit it.

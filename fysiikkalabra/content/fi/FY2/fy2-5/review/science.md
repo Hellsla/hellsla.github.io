@@ -1,6 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 59dce258a3c98549
+CONTENT-HASH: 4d8688e99d2ef3cb
 Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+Round: 3
 
 ## Blocking
 - none
@@ -9,6 +10,5 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction 
 - none
 
 ## Checked
-- Diff `git diff origin/main...HEAD` of lesson.md, inquiry.json, exit-ticket.json (fi); content hash recomputed and equal to the brief's.
-- inquiry.json ennuste-2: $2200\,\text{kJ} : 0{,}100\,\text{kg} = 22\,\text{MJ/kg} > 15\,\text{MJ/kg}$ recomputed. Exactly one correct option (larger, but nutrition energy = energy usable by the body vs heating value = energy released in combustion); both distractors wrong for the stated reason and their feedback correct (same unit does not make the same quantity; fuels compared by heating values). Removed claim about burning chocolate is no loss.
-- Changed text matches the en and fi-easy versions in substance.
+- Round-3 diff `git diff HEAD~1` (commit a84956a90) of this unit's files (fi), judged in context; content hash recomputed and equal to the new hash.
+- inquiry.json ennuste-2: the second question is now "Voiko lukuja verrata keskenään samana fysikaalisena suureena?" and no longer gives the answer away. The options still fit it: the correct option (larger, but nutrition-label energy and heating value describe different things) answers no, and the distractor that treats them as the same quantity is still wrong for the stated reason. The numbers are unchanged: $2200\,\text{kJ} : 0{,}100\,\text{kg} = 22\,\text{MJ/kg} > 15\,\text{MJ/kg}$.

@@ -1,7 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 194f4fa1e6a46f5a
+CONTENT-HASH: f92ba6741b53a98f
 Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
-Round: 2
+Round: 3
 
 ## Blocking
 - none
@@ -10,6 +10,5 @@ Round: 2
 - none
 
 ## Checked
-- Round-2 diff `git diff HEAD~1` (commit 29f864da6) of this unit's files (fi FY2 koe), judged in context; content hash recomputed and equal to the new hash.
-- solutions.md k5-d: the duplicate closing "Väite on siis liioiteltu." is removed (my round-1 Polish item). The conclusion is still stated in the first sentence and matches the rubric criterion. `practice.py check FY2/koe` OK (7 tasks, 120 points).
-- No changed numbers other than those noted; no physics regression against the round-1 review.
+- Round-3 diff `git diff HEAD~1` (commit a84956a90) of this unit's files (fi FY2 koe), judged in context; content hash recomputed and equal to the new hash.
+- tasks.json k5-d conclusion criterion: a justified "the claim is exaggerated" now earns the point with either reason: (1) the electricity used causes emissions unless it is emission-free, or (2) heat recovery lowers heating emissions but life-cycle emissions are not necessarily zero even with very low-emission electricity. Both reasons are physically correct for the claim "Koska hukkalämpö käytetään, datakeskus ei aiheuta lainkaan päästöjä", and both appear in the model answer. Criterion points total $3$, equal to the part's $3$ points; `practice.py check FY2/koe` OK (7 tasks, 120 points).

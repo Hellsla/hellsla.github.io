@@ -1,6 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 14e1248b6dd72a03
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: 34fe4a4dc1063d55
+Mode: light (teacher 2026-11-07, "kevyt katselmointi"): the round-3 diff (git diff HEAD~1, commit a84956a90) only
+Round: 3
 
 ## Blocking
 - none
@@ -9,7 +10,5 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction 
 - none
 
 ## Checked
-- Diff of lesson.md, inquiry.json, exit-ticket.json (Selkeä suomi), changed passages with surrounding paragraph.
-- Ennuste 2 prompt, three choices and feedbacks: $22\,\text{MJ/kg}$, $15\,\text{MJ/kg}$, $2{,}2\,\text{MJ} : 0{,}100\,\text{kg}$ typeset with colon for division, thin spaces, correct decimal separator; no bold in the prompt.
-- Distractor wording is parallel and grammatical; nutrition-label vs heating-value distinction stated clearly. Short sentences, Selkeä suomi level kept.
-- No captures opened (diff judged from source).
+- inquiry.json ennuste-2 prompt: "Voiko lukuja verrata keskenään niin kuin ne olisivat samaa suuretta?" is plain Selkeä suomi and neutral; the LaTeX is unchanged.
+- Earlier rounds are not re-reviewed. No captures opened (diff judged from source).
