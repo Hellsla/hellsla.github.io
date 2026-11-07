@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9f999931a52c1b2e
+CONTENT-HASH: 328979ec82ec54f4
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] Caption could carry the turbine's role (kinetic energy of wind to electricity) to link it to the paragraph; optional.
+- [Minor] fig-3 aria-label (ilmalierio, lesson.md) — "carry through the area swept by the rotor air that would fill a cylinder" reads awkwardly — "…would carry air through the swept area, filling a cylinder".
 
 ## Checked
-batch delta review: opened en/fy4-15 captures at 360 and 1280 px and the photo file; photo loads, sits in the theory column (floated right or unfloated by layout rule at 1280, full column at 360), no clipping or overflow from the photo, alt and caption natural English and consistent with the picture, no unit-bearing numbers needing LaTeX, credit line present under the caption.
+- Delta only. Opened en/fy4-15 captures: theory-1280-2 and theory-1280-3 (Wind power rewrite, new paragraphs, graph, source note, summary) and example-390-1 (task text, principle) at readable size. Edited text renders in natural English; every number with its unit is inline LaTeX, no inline formula wraps, no overflow or clipping, surrounding layout intact.
+
+## Scores
+illustrations 4 · typography 4 · Finnish (English language quality) 5 · accessibility 4
