@@ -43,9 +43,9 @@ Research proceeds in cycles. An observation raises a question, a model is propos
 
 ### Sizes vary by powers of ten
 
-The objects of physics come in hugely different sizes: a proton is about $1.7\cdot10^{-15}\,\text{m}$ and the observable universe about $8.8\cdot10^{26}\,\text{m}$. A range this wide cannot be written as ordinary numbers. That is why we use **scientific notation** $a\cdot10^{n}$, where $1 \le a < 10$ and $n$ is an integer. When the exponent $n$ grows by one, the number becomes ten times larger. The **Planck length**, about $1.6\cdot10^{-35}\,\text{m}$, is a scale below which, according to physicists, current theories no longer work. It has not been measured directly but calculated from constants of nature.
+The objects of physics come in hugely different sizes: a proton is about $1.7\cdot10^{-15}\,\text{m}$ and the observable universe about $8.8\cdot10^{26}\,\text{m}$. A range of sizes this wide is awkward to present and compare in ordinary decimal form. That is why we use **scientific notation** $a\cdot10^{n}$, where $1 \le a < 10$ and $n$ is an integer. When the exponent $n$ grows by one, the number becomes ten times larger. The **Planck length**, about $1.6\cdot10^{-35}\,\text{m}$, is the scale at which the effects of quantum gravity are expected to become significant. It has not been measured directly but calculated from constants of nature.
 
-<svg data-fig="scale-axis" viewBox="0 0 600 346" role="img" aria-label="Diagram with sizes marked on an axis of powers of ten: the horizontal axis shows the order of magnitude of the size d as powers of ten, drawn to scale. From left to right: proton 10 to the power −15 metres, hydrogen atom −10, hair −4, person 0, Earth 7, Sun 9, Milky Way 21 and universe 27. One step to the right means a tenfold size." style="max-width:100%;font-size:24px">
+<svg data-fig="scale-axis" viewBox="0 0 600 346" role="img" aria-label="Diagram with sizes marked on an axis of powers of ten: the horizontal axis shows the order of magnitude of the size d as powers of ten, drawn to scale. From left to right: proton 10 to the power −15 metres, hydrogen atom −10, hair −4, person 0, Earth 7, Sun 9, Milky Way 21 and observable universe 27. One scale interval to the right means five orders of magnitude, that is, a size a hundred thousand times larger." style="max-width:100%;font-size:24px">
   <line x1="24" y1="236" x2="572" y2="236" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M584,236 L571,242 L571,230 Z" fill="#1f2933" stroke-linejoin="round"/>
   <line x1="52" y1="232" x2="52" y2="241" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
@@ -65,14 +65,14 @@ The objects of physics come in hugely different sizes: a proton is about $1.7\cd
   <line x1="52" y1="230" x2="52" y2="206" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
   <foreignObject x="20.5" y="173.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{proton}$</div></foreignObject>
   <circle cx="52" cy="236" r="7" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <line x1="111" y1="230" x2="111" y2="156" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
-  <foreignObject x="41" y="123.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{hydrogen atom}$</div></foreignObject>
+  <line x1="111" y1="230" x2="111" y2="106" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
+  <foreignObject x="41" y="73.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{hydrogen atom}$</div></foreignObject>
   <circle cx="111" cy="236" r="7" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <line x1="181.5" y1="230" x2="181.5" y2="206" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
   <foreignObject x="155" y="173.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{hair}$</div></foreignObject>
   <circle cx="181.5" cy="236" r="7" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <line x1="229" y1="230" x2="229" y2="106" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
-  <foreignObject x="190.5" y="73.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{person}$</div></foreignObject>
+  <line x1="229" y1="230" x2="229" y2="156" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
+  <foreignObject x="190.5" y="123.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{person}$</div></foreignObject>
   <circle cx="229" cy="236" r="7" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <line x1="311.5" y1="230" x2="311.5" y2="206" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
   <foreignObject x="276.5" y="173.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{Earth}$</div></foreignObject>
@@ -84,9 +84,9 @@ The objects of physics come in hugely different sizes: a proton is about $1.7\cd
   <foreignObject x="422.5" y="173.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{Milky Way}$</div></foreignObject>
   <circle cx="476.5" cy="236" r="7" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <line x1="547.5" y1="230" x2="547.5" y2="106" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
-  <foreignObject x="478" y="73.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{universe}$</div></foreignObject>
+  <foreignObject x="353" y="73.5" width="233" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{observable universe}$</div></foreignObject>
   <circle cx="547.5" cy="236" r="7" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="140" y="25.5" width="320" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\text{one step to the right} \Rightarrow \text{size} \cdot 10$</div></foreignObject>
+  <foreignObject x="77.5" y="25.5" width="445" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\text{one scale interval to the right} \Rightarrow \text{size} \cdot 10^{5}$</div></foreignObject>
 </svg>
 
 ### Order of magnitude tells the rough size
@@ -150,9 +150,9 @@ Distances between stars are so large that the metre is impractical. A **light-ye
 
 ### Matter consists of nested structures
 
-All the matter around us consists of **atoms**. Atoms can join together to form **molecules**: a water molecule has one oxygen atom and two hydrogen atoms. At the centre of every atom there is a small **atomic nucleus**, and **electrons** move around it. The nucleus consists of **protons** and **neutrons**, and each of these consists of three **quarks**. Quarks and the electron are **elementary particles**: as far as we know they have no smaller parts, and no size has been measured for them. According to experiments they are smaller than about $10^{-18}\,\text{m}$.
+All the matter around us consists of **atoms**. Atoms can join together to form **molecules**: a water molecule has one oxygen atom and two hydrogen atoms. At the centre of every atom there is a small **atomic nucleus**, and **electrons** move around it. The nucleus consists of **protons** and usually also **neutrons**. A proton and a neutron each consist of three **quarks**. Quarks and the electron are **elementary particles**: as far as we know they have no smaller parts, and no size has been measured for them. According to experiments they are smaller than about $10^{-18}\,\text{m}$.
 
-<svg data-fig="matter-ladder" viewBox="0 0 600 432" role="img" aria-label="Schematic diagram, not to scale: the structure of matter in steps from top to bottom. A water molecule, about 3 · 10 to the power −10 metres, consists of atoms. An atom, about 10 to the power −10 metres, consists of a nucleus and electrons. A nucleus, 10 to the power −15 … −14 metres, consists of protons and neutrons. A proton and a neutron, about 10 to the power −15 metres, consist of three quarks. Quarks and the electron are elementary particles, smaller than about 10 to the power −18 metres. The picture in each row is a magnification of a small part of the previous row." style="max-width:100%;font-size:24px">
+<svg data-fig="matter-ladder" viewBox="0 0 600 432" role="img" aria-label="Schematic diagram, not to scale: the structure of matter in steps from top to bottom. A water molecule, about 3 · 10 to the power −10 metres, consists of atoms. An atom, about 10 to the power −10 metres, consists of a nucleus and electrons. A nucleus, 10 to the power −15 … −14 metres, consists of protons and neutrons. A proton and a neutron, about 10 to the power −15 metres, consist of three quarks. Quarks and the electron are elementary particles, smaller than about 10 to the power −18 metres. The pictures are magnifications of a small part of the previous row; the quark is a magnification of a proton or neutron, and the electron is connected to the atom row by a separate branch." style="max-width:100%;font-size:24px">
   <line x1="55" y1="72" x2="36" y2="154" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 3"/>
   <line x1="73" y1="72" x2="96" y2="154" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 3"/>
   <line x1="61" y1="154" x2="36" y2="232" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 3"/>
@@ -189,8 +189,9 @@ All the matter around us consists of **atoms**. Atoms can join together to form 
   <circle cx="66" cy="295.5" r="6.6" fill="#c92a2a" stroke="#ffffff" stroke-width="1.5"/>
   <circle cx="78.5" cy="317" r="6.6" fill="#2b8a3e" stroke="#ffffff" stroke-width="1.5"/>
   <circle cx="53.5" cy="317" r="6.6" fill="#1971c2" stroke="#ffffff" stroke-width="1.5"/>
-  <circle cx="52" cy="388" r="6" fill="#c92a2a" stroke="#ffffff" stroke-width="1.5"/>
-  <circle cx="80" cy="388" r="6" fill="#1971c2" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="66" cy="388" r="6" fill="#c92a2a" stroke="#ffffff" stroke-width="1.5"/>
+  <path d="M44 169 H20 V382" fill="none" stroke="#6b7480" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <circle cx="20" cy="388" r="6" fill="#1971c2" stroke="#ffffff" stroke-width="1.5"/>
   <foreignObject x="116" y="46.5" width="407" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{water molecule: three atoms together}$</div></foreignObject>
   <foreignObject x="116" y="78.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$3\cdot10^{-10}\,\text{m}$</div></foreignObject>
   <foreignObject x="116" y="124.5" width="308" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{atom: nucleus and electrons}$</div></foreignObject>
@@ -230,7 +231,7 @@ The diameter of an atom is about $10^{-10}\,\text{m}$, but that of the nucleus i
 
 ### Earth's address in the universe
 
-Earth is a **planet**: it orbits a **star**, the Sun, and the Moon orbits Earth. A star is a hot ball of gas that produces its own light in nuclear reactions in its core. A planet does not produce light, but it is visible because it reflects the light of its star. The Sun, its eight planets with their moons, and the dwarf planets, asteroids and comets form the **Solar System**. It is one **planetary system** among many: thousands of planets orbiting other stars are already known.
+Earth is a **planet**: it orbits a **star**, the Sun, and the Moon orbits Earth. The energy of a Sun-like star is released in fusion reactions in its core, and the star radiates energy into space. In visible light, the planets of the Solar System are seen because of the sunlight they reflect. They also emit their own thermal radiation. The Sun, its eight planets with their moons, and the dwarf planets, asteroids and comets form the **Solar System**. It is one **planetary system** among many: thousands of planets orbiting other stars are already known.
 
 The Sun is one of the hundreds of billions of stars in the Milky Way. The **Milky Way** is a **galaxy**, that is, a huge collection of stars, gas and dust held together by gravity, and its diameter is about $10^{5}$ light-years. There are an estimated hundreds of billions of galaxies in the observable universe. They form **groups of galaxies** and larger **clusters of galaxies**: the Milky Way and the Andromeda Galaxy belong to the Local Group. Groups and clusters form superclusters, and on the largest scale the galaxies lie in web-like filaments with almost empty regions between them.
 
@@ -238,21 +239,21 @@ The Sun is one of the hundreds of billions of stars in the Milky Way. The **Milk
   <rect x="12" y="12" width="576" height="376" rx="10" fill="#ffffff" stroke="#1971c2" stroke-width="2"/>
   <foreignObject x="26" y="23.5" width="233" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{observable universe}$</div></foreignObject>
   <foreignObject x="491" y="23.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$10^{27}\,\text{m}$</div></foreignObject>
-  <rect x="30" y="68" width="540" height="314" rx="10" fill="#eef5f9" stroke="#1971c2" stroke-width="2"/>
-  <foreignObject x="44" y="79.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Virgo Supercluster}$</div></foreignObject>
-  <foreignObject x="473" y="79.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$10^{24}\,\text{m}$</div></foreignObject>
-  <rect x="48" y="124" width="504" height="252" rx="10" fill="#d0e6fb" stroke="#1971c2" stroke-width="2"/>
-  <foreignObject x="62" y="135.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Local Group}$</div></foreignObject>
-  <foreignObject x="455" y="135.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$10^{23}\,\text{m}$</div></foreignObject>
-  <rect x="66" y="180" width="468" height="190" rx="10" fill="#a5d8ff" stroke="#1971c2" stroke-width="2"/>
-  <foreignObject x="80" y="191.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Milky Way}$</div></foreignObject>
-  <foreignObject x="437" y="191.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$10^{21}\,\text{m}$</div></foreignObject>
-  <rect x="84" y="236" width="432" height="128" rx="10" fill="#ffc078" stroke="#e8590c" stroke-width="2"/>
-  <foreignObject x="98" y="247.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Solar System}$</div></foreignObject>
-  <foreignObject x="419" y="247.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$10^{13}\,\text{m}$</div></foreignObject>
-  <rect x="102" y="292" width="396" height="66" rx="10" fill="#ffffff" stroke="#1971c2" stroke-width="2"/>
-  <foreignObject x="116" y="303.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Earth and Moon}$</div></foreignObject>
-  <foreignObject x="414" y="303.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$10^{9}\,\text{m}$</div></foreignObject>
+  <rect x="24" y="68" width="552" height="314" rx="10" fill="#eef5f9" stroke="#1971c2" stroke-width="2"/>
+  <foreignObject x="38" y="79.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Virgo Supercluster}$</div></foreignObject>
+  <foreignObject x="479" y="79.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$10^{24}\,\text{m}$</div></foreignObject>
+  <rect x="36" y="124" width="528" height="252" rx="10" fill="#d0e6fb" stroke="#1971c2" stroke-width="2"/>
+  <foreignObject x="50" y="135.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Local Group}$</div></foreignObject>
+  <foreignObject x="467" y="135.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$10^{23}\,\text{m}$</div></foreignObject>
+  <rect x="48" y="180" width="504" height="190" rx="10" fill="#a5d8ff" stroke="#1971c2" stroke-width="2"/>
+  <foreignObject x="62" y="191.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Milky Way}$</div></foreignObject>
+  <foreignObject x="455" y="191.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$10^{21}\,\text{m}$</div></foreignObject>
+  <rect x="60" y="236" width="480" height="128" rx="10" fill="#ffc078" stroke="#e8590c" stroke-width="2"/>
+  <foreignObject x="74" y="247.5" width="295" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Solar System planet region}$</div></foreignObject>
+  <foreignObject x="443" y="247.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$10^{13}\,\text{m}$</div></foreignObject>
+  <rect x="72" y="292" width="456" height="66" rx="10" fill="#ffffff" stroke="#1971c2" stroke-width="2"/>
+  <foreignObject x="86" y="303.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Earth and Moon}$</div></foreignObject>
+  <foreignObject x="444" y="303.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$10^{9}\,\text{m}$</div></foreignObject>
   <ellipse cx="318" cy="324" rx="44" ry="13" fill="none" stroke="#6b7480" stroke-width="1.5" stroke-dasharray="4 3"/>
   <circle cx="318" cy="324" r="11" fill="#2f74b5" stroke="#1f2933" stroke-width="2"/>
   <circle cx="362" cy="324" r="5" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
@@ -455,7 +456,7 @@ On a calculator, the division $1.1\cdot10^{-10} : 1.7\cdot10^{-15}$ is done by e
 
 ## Common misconception
 
-A difference in powers of ten is not a difference in sizes. If the orders of magnitude of two objects differ by six, one is not six times larger but $10^{6}$, that is, a million times larger. In addition, a scale picture can show truthfully only one scale at a time: everything cannot be drawn in the same picture in the right proportions.
+A difference in powers of ten is not a difference in sizes. If the orders of magnitude of two objects differ by six, the ratio of their sizes based on the orders of magnitude is about $10^{6}$, that is, a million, not six. In addition, objects of very different sizes cannot all be recognised in the same scale picture if they are drawn in the right proportions of size.
 
 Neutron stars and black holes are not steps larger than a galaxy, but objects inside galaxies. A black hole also does not suck in everything around it: far from it, its gravity is the same as that of any object of equal mass, and stars can orbit it like planets orbit the Sun.
 
@@ -465,7 +466,7 @@ Neutron stars and black holes are not steps larger than a galaxy, but objects in
 - Scientific notation $a\cdot10^{n}$ writes very small and very large numbers briefly; one step in the exponent means a tenfold size.
 - The order of magnitude is the nearest power of ten on the axis of powers of ten. The ratio of sizes is found by dividing the larger size by the smaller, and each step of a power of ten is a tenfold size.
 - A light-year is the distance light travels in a year, about $9.46\cdot10^{15}\,\text{m}$.
-- Molecules consist of atoms, atoms of a nucleus and electrons, the nucleus of protons and neutrons, and these of quarks. An atom is tens of thousands of times larger than its nucleus.
+- Molecules consist of atoms, atoms of a nucleus and electrons, the nucleus of protons and usually also neutrons. Protons and neutrons consist of quarks. An atom is tens of thousands of times larger than its nucleus.
 - Earth is a planet that orbits a star. The Solar System is one planetary system in the Milky Way, and the Milky Way is one of the hundreds of billions of galaxies of the observable universe.
 - Nebulae, neutron stars and black holes are types of objects inside galaxies, not steps of structure.
 - The four fundamental interactions are gravity and the electromagnetic, strong and weak interactions. On small scales the interactions of the nucleus and the atom dominate, and on large scales gravity.

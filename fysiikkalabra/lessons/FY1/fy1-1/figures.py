@@ -67,7 +67,7 @@ def hero():
 def scale_axis():
     f = Fig("fy11-axis", 346, "Kaavakuva, jossa koot on merkitty kymmenpotenssien akselille: vaaka-akselilla on koon d suuruusluokka "
             "kymmenpotensseina, akseli piirretty mittakaavassa. Vasemmalta oikealle protoni 10 potenssiin −15 metriä, vetyatomi −10, "
-            "hius −4, ihminen 0, Maa 7, Aurinko 9, Linnunrata 21 ja maailmankaikkeus 27. Yksi askel oikealle tarkoittaa kymmenkertaista kokoa.")
+            "hius −4, ihminen 0, Maa 7, Aurinko 9, Linnunrata 21 ja havaittava maailmankaikkeus 27. Yksi asteikkoväli oikealle tarkoittaa viittä suuruusluokkaa eli satatuhatkertaista kokoa.")
     y0, x0, step = 236, 40, 11.8                      # the axis: exponent n at x0 + (n + 16) step
     X = lambda n: x0 + (n + 16) * step
     f.arrow(24, y0, 584, y0, INK, 2.5, 13)
@@ -76,16 +76,16 @@ def scale_axis():
     for n in (-10, 0, 10, 20):
         f.tex(X(n), y0 + 30, rf"10^{{{n}}}" if n else "10^{0}", "middle", MUTED)
     f.tex(584, y0 + 66, r"d\ (\text{m})", "end")
-    marks = [(-15, 1, "protoni", "middle", 62), (-10, 2, "vetyatomi", "middle", 120), (-4, 1, "hius", "middle", 184),
-             (0, 3, "ihminen", "middle", 232), (7, 1, "Maa", "middle", X(7)), (9, 2, "Aurinko", "middle", 352),
-             (21, 1, "Linnunrata", "middle", X(21)), (27, 3, "maailmankaikkeus", "end", 586)]
+    marks = [(-15, 1, "protoni", "middle", 62), (-10, 3, "vetyatomi", "middle", 120), (-4, 1, "hius", "middle", 184),
+             (0, 2, "ihminen", "middle", 232), (7, 1, "Maa", "middle", X(7)), (9, 2, "Aurinko", "middle", 352),
+             (21, 1, "Linnunrata", "middle", X(21)), (27, 3, "havaittava maailmankaikkeus", "end", 586)]
     rows = {1: 188, 2: 138, 3: 88}
     for n, r, name, anchor, lx in marks:
         yl = rows[r]
         f.line(X(n), y0 - 6, X(n), yl + 18, MUTED, 1.5, "5 4")
         f.tex(lx, yl, rf"\text{{{name}}}", anchor)
         f.circle(X(n), y0, 7, INK, WHITE, 2)
-    f.tex(300, 40, r"\text{yksi askel oikealle} \Rightarrow \text{koko} \cdot 10", "middle", COLD)
+    f.tex(300, 40, r"\text{yksi asteikkoväli oikealle} \Rightarrow \text{koko} \cdot 10^{5}", "middle", COLD)
     return f.svg()
 
 
@@ -136,7 +136,7 @@ def matter_ladder():
     f = Fig("fy11-matter", 432, "Kaaviokuva, ei mittakaavassa: aineen rakenne portaittain ylhäältä alas. Vesimolekyyli, noin 3 · 10 potenssiin −10 metriä, "
             "koostuu atomeista. Atomi, noin 10 potenssiin −10 metriä, koostuu ytimestä ja elektroneista. Ydin, 10 potenssiin −15 … −14 metriä, "
             "koostuu protoneista ja neutroneista. Protoni ja neutroni, noin 10 potenssiin −15 metriä, koostuvat kolmesta kvarkista. "
-            "Kvarkit ja elektroni ovat alkeishiukkasia, pienempiä kuin noin 10 potenssiin −18 metriä. Jokaisen rivin kuva on suurennos edellisen rivin pienestä kohdasta.")
+            "Kvarkit ja elektroni ovat alkeishiukkasia, pienempiä kuin noin 10 potenssiin −18 metriä. Kuvat ovat suurennoksia edellisen rivin pienestä kohdasta; kvarkki on suurennos protonista tai neutronista, ja elektroni on yhdistetty erillisellä haaralla atomin riviin.")
     xi, r, ys = 66, 30, [76, 154, 232, 310, 388]
     # zoom wedges: from a small spot in the picture above to the next picture
     spots = [(xi - 2, ys[0] - 4, 9), (xi, ys[1], 5), (xi - 6, ys[2] - 6, 7), (xi + 9, ys[3] - 8, 6)]
@@ -161,7 +161,10 @@ def matter_ladder():
     _proton(f, xi, ys[3], r)
     # 5 quark and electron: points
     y = ys[4]
-    f.circle(xi - 14, y, 6, HOT, WHITE, 1.5); f.circle(xi + 14, y, 6, COLD, WHITE, 1.5)
+    f.circle(xi, y, 6, HOT, WHITE, 1.5)
+    # the electron is not part of a nucleon: its own branch from the atom row
+    f.add(f'<path d="M{n(xi - 22)} {n(ys[1] + 15)} H20 V{n(y - 6)}" fill="none" stroke="{MUTED}" stroke-width="1.5" stroke-dasharray="4 3"/>')
+    f.circle(20, y, 6, COLD, WHITE, 1.5)
     rows = [(r"\text{vesimolekyyli: kolme atomia yhdessä}", r"3\cdot10^{-10}\,\text{m}"),
             (r"\text{atomi: ydin ja elektronit}", r"10^{-10}\,\text{m}"),
             (r"\text{ydin: protonit ja neutronit}", r"10^{-15}\text{–}10^{-14}\,\text{m}"),
@@ -201,8 +204,8 @@ def cosmic_address():
             "Aurinkokunnan planeettojen alue noin 10 potenssiin 13 metriä ja sisimpänä Maa ja Kuun rata noin 10 potenssiin 9 metriä.")
     levels = [("havaittava maailmankaikkeus", "10^{27}", WHITE), ("Virgon superjoukko", "10^{24}", GLASS),
               ("Paikallinen ryhmä", "10^{23}", COLD_LIGHT), ("Linnunrata", "10^{21}", ICE),
-              ("Aurinkokunta", "10^{13}", HEAT_LIGHT), ("Maa ja Kuu", "10^{9}", WHITE)]
-    step, dx = 56, 18
+              ("Aurinkokunnan planeettojen alue", "10^{13}", HEAT_LIGHT), ("Maa ja Kuu", "10^{9}", WHITE)]
+    step, dx = 56, 12
     for i, (name, size, col) in enumerate(levels):
         x0, y0 = 12 + i * dx, 12 + i * step
         x1, y1 = 588 - i * dx, 388 - (0 if i == 0 else 0)

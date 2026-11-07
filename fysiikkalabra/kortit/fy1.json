@@ -246,7 +246,7 @@
    "luku": "fy1-1",
    "aihe": "fy1-perusrakenteet",
    "kasite": "Kvarkki",
-   "maaritelma": "Protonien ja neutronien rakenneosa, joita näkyvässä aineessa ovat erityisesti ylös- ja alas-kvarkit."
+   "maaritelma": "Protonien ja neutronien rakenneosa. Tavallisen aineen protoneissa ja neutroneissa esiintyy ylöskvarkkeja ja alaskvarkkeja."
   },
   {
    "id": "fy1-leptoni",
@@ -278,7 +278,7 @@
    "luku": "fy1-1",
    "aihe": "fy1-perusrakenteet",
    "kasite": "Atomiydin",
-   "maaritelma": "Tiivis keskiosa, jossa protonit ja neutronit sijaitsevat."
+   "maaritelma": "Atomin tiivis keskiosa, jossa on protoneja ja yleensä myös neutroneja."
   },
   {
    "id": "fy1-atomi",
@@ -302,7 +302,7 @@
    "luku": "fy1-1",
    "aihe": "fy1-perusrakenteet",
    "kasite": "Aurinkokunta",
-   "maaritelma": "Tähti ja sitä kiertävät planeetat, pienkappaleet sekä muu aine."
+   "maaritelma": "Aurinko ja sitä kiertävät planeetat, pienkappaleet sekä muu aine."
   },
   {
    "id": "fy1-galaksi",

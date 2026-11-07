@@ -278,7 +278,7 @@
    "luku": "fy1-1",
    "aihe": "fy1-perusrakenteet",
    "kasite": "Atomic nucleus",
-   "maaritelma": "The dense centre of an atom where the protons and neutrons are."
+   "maaritelma": "The dense centre of an atom, containing protons and usually also neutrons."
   },
   {
    "id": "fy1-atomi",
@@ -301,8 +301,8 @@
    "moduuli": "FY1",
    "luku": "fy1-1",
    "aihe": "fy1-perusrakenteet",
-   "kasite": "Planetary system",
-   "maaritelma": "A star and the planets, small bodies and other matter that orbit it."
+   "kasite": "Solar System",
+   "maaritelma": "The Sun and the planets, small bodies and other matter that orbit it."
   },
   {
    "id": "fy1-galaksi",

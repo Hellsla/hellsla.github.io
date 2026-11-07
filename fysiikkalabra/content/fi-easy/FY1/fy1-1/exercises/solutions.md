@@ -37,7 +37,7 @@
 **Muunnokset:** Ei tarvita. Molemmat halkaisijat ovat metreinä, joten yksiköt supistuvat ja $k$ on pelkkä luku.
 **Sijoitus:** $k = \dfrac{3{,}5\cdot10^{-10}\,\text{m}}{1{,}4\cdot10^{-14}\,\text{m}} = 2{,}5\cdot10^{4}$
 **Vastaus:** $25\,000$ kertaa eli $2{,}5\cdot10^{4}$; kaksi merkitsevää numeroa kuten annetuissa halkaisijoissa.
-**Järkevyys:** Suuruusluokat ovat $10^{-10}\,\text{m}$ ja $10^{-14}\,\text{m}$. Niiden välissä on neljä kymmenpotenssin askelta, joten suhteen pitää olla noin $10^{4}$, ja $2{,}5\cdot10^{4}$ on sitä lähellä. Lyijyn ydin on suuri, koska siinä on yli 200 protonia ja neutronia. Siksi ero atomiin on pienempi kuin vedyllä ($6{,}5\cdot10^{4}$).
+**Järkevyys:** Halkaisijoiden suhde on $\dfrac{3{,}5}{1{,}4}\cdot10^{-10-(-14)}=2{,}5\cdot10^{4}$. Atomin halkaisija on siis kymmeniätuhansia kertoja ytimen halkaisija. Tulos on järkevä. Lyijyn ydin on suuri, koska siinä on yli 200 protonia ja neutronia. Siksi ero atomiin on pienempi kuin vedyllä ($6{,}5\cdot10^{4}$).
 
 ## fy1-1-L1-05
 **Annettu:** hiuksen paksuus $d_\text{hius} = 7{,}0\cdot10^{-5}\,\text{m}$ ja punasolun halkaisija $d_\text{punasolu} = 7{,}5\cdot10^{-6}\,\text{m}$
@@ -121,7 +121,7 @@
 
 ## fy1-1-L1-06
 **Kysytty:** mikä erottaa fysikaalisen mallin pelkästä havainnosta.
-**Periaate:** Havainto kertoo, mitä yksittäisessä tilanteessa tapahtui. Malli on yksinkertaistettu kuvaus ilmiöstä. Mallista voi päätellä ennusteita myös tilanteisiin, joita ei ole vielä tutkittu. Fysiikka nojaa kokeisiin, joten ennuste testataan mittauksella. Malli pätee eli on voimassa vain oloissa, joissa se on testattu.
+**Periaate:** Havainto kertoo, mitä yksittäisessä tilanteessa tapahtui. Malli on yksinkertaistettu kuvaus ilmiöstä. Mallista voi päätellä ennusteita myös tilanteisiin, joita ei ole vielä tutkittu. Fysiikka nojaa kokeisiin, joten ennuste testataan mittauksella. Mallin luotettavuus on varmistettu niissä oloissa, joissa mallia on testattu. Uusissa oloissa täytyy arvioida, kuinka luotettava ennuste on.
 **Mallivastaus:** Mallista voi päätellä ennusteen uuteen tilanteeseen, ja ennusteen voi testata mittauksella. Malli on yksinkertaistettu kuvaus, ja koe tai mittaus ratkaisee, kestääkö se. Kiven ja höyhenen putoaminen on havainto. Malli, jossa ilmanvastus jätetään pois, ennustaa kappaleiden putoamisen. Se pätee vain, kun ilmanvastus on pieni. Malli ei ole toistettu havainto, muuttumaton teoria eikä täydellinen totuus. Jos huolellinen mittaus poikkeaa ennusteesta, mallia korjataan tai sen voimassaolo rajataan.
 
 ## fy1-1-L1-07
@@ -141,7 +141,7 @@
 **Kaava:** $k = \dfrac{10^{n_\text{hiekka}}}{10^{n_\text{virus}}} = 10^{\,n_\text{hiekka} - n_\text{virus}}$
 **Muunnokset:** Ei tarvita. Koot ovat samassa yksikössä, joten suhde on pelkkä luku.
 **Sijoitus:** $k = \dfrac{10^{-3}\,\text{m}}{10^{-7}\,\text{m}} = 10^{-3-(-7)} = 10^{4} = 10\,000$
-**Vastaus:** $10\,000$ eli $10^{4}$. Hiekanjyvä on kymmenentuhatta kertaa viruksen kokoinen. Luku on tarkka, koska suuruusluokat ovat kokonaisia kymmenpotensseja. Suuruusluokkien ero on neljä askelta, mutta koko ero on kymmenentuhatkertainen eikä nelinkertainen.
+**Vastaus:** $10\,000$ eli $10^{4}$. Suuruusluokkien perusteella hiekanjyvän halkaisija on noin kymmenentuhatta kertaa viruksen halkaisija. Annettujen suuruusluokkien suhde on tarkalleen $10^{4}$. Se ei kuitenkaan kerro tarkasti todellisten halkaisijoiden suhdetta. Suuruusluokkien ero on neljä askelta, mutta koko ero on kymmenentuhatkertainen eikä nelinkertainen.
 **Järkevyys:** Jos virus suurennettaisiin millimetrin kokoiseksi, hiekanjyvä olisi $10^{4}\cdot1\,\text{mm} = 10\,000\,\text{mm} = 10\,\text{m}$ eli talon kokoinen. Hiekanjyvä on selvästi paljon viruksen kokoa suurempi.
 
 ## fy1-1-L2-05
@@ -190,7 +190,7 @@
 **Annettu:** $d_0 = 119{,}7\,\text{AU}$, $v = 15{,}341\,\text{km/s}$, $t = 7{,}25\,\text{a}$, $1\,\text{AU} = 1{,}496\cdot10^{8}\,\text{km}$, $1\,\text{a} = 3{,}156\cdot10^{7}\,\text{s}$ ja mitattu $143{,}05\,\text{AU}$
 **Kysytty:** oppilaan virhe, mallin ennuste $d$ yksikössä AU ja se, mitä mittaus kertoo mallista
 **Periaate:** Voyagerin etäisyys mallinnetaan tasaisella liikkeellä, $d = d_0 + vt$, koska nopeus muuttuu tällä välillä hyvin vähän. Yhteenlaskussa ja tulossa suureiden yksiköiden on sovittava yhteen.
-**Kaava:** $s = vt$ ja $d = d_0 + \dfrac{s}{1\,\text{AU}}$
+**Kaava:** $s = vt$ ja $d = d_0 + s$. Ennen kuin lukuarvot lasketaan yhteen, molemmat matkat muutetaan yksikköön AU.
 **Muunnokset:** $t = 7{,}25\,\text{a} = 7{,}25\cdot3{,}156\cdot10^{7}\,\text{s} = 2{,}288\cdot10^{8}\,\text{s}$.
 **Sijoitus:** $s = 15{,}341\,\text{km/s}\cdot2{,}288\cdot10^{8}\,\text{s} = 3{,}510\cdot10^{9}\,\text{km} = \dfrac{3{,}510\cdot10^{9}\,\text{km}}{1{,}496\cdot10^{8}\,\text{km/AU}} = 23{,}46\,\text{AU}$ ja $d = 119{,}7\,\text{AU} + 23{,}46\,\text{AU} = 143{,}16\,\text{AU}$
 **Vastaus:** $143{,}2\,\text{AU}$, yksi desimaali kuten alkuetäisyydessä $119{,}7\,\text{AU}$, joka on summan epätarkin luku. Oppilas kertoi nopeuden $\text{km/s}$ vuosilla eikä sekunneilla, joten tulos ei ollut matka. Lisäksi hän laski yhteen kilometrejä ja tähtitieteellisiä yksiköitä. Malli ei ollut väärä.
@@ -200,6 +200,6 @@
 ## fy1-1-L1-09
 **Annettu:** Kuun etäisyys $3{,}84\cdot10^{8}\,\text{m}$, Kuun halkaisija $3{,}47\cdot10^{6}\,\text{m}$, Auringon halkaisija $1{,}39\cdot10^{9}\,\text{m}$. Pimennyksessä Aurinko ja Kuu näyttävät yhtä suurilta.
 **Kysytty:** Maan etäisyys Auringosta $d_\text{A}$. Se valitaan neljästä vaihtoehdosta, joiden suuruusluokka on eri.
-**Periaate:** Kohde näyttää yhtä suurelta, kun sen etäisyys on yhtä monta kertaa Kuun etäisyys kuin sen halkaisija on Kuun halkaisija. Pimennyksessä Aurinko ja Kuu näyttävät yhtä suurilta. Siksi etäisyyksien suhde on sama kuin halkaisijoiden suhde.
+**Periaate:** Kohde näyttää yhtä suurelta, kun sen etäisyys on yhtä monta kertaa Kuun etäisyys kuin sen halkaisija on Kuun halkaisija. Tehtävässä oletetaan pimennys, jossa Aurinko ja Kuu näyttävät suunnilleen yhtä suurilta. Siksi etäisyyksien suhde on suunnilleen sama kuin halkaisijoiden suhde.
 **Mallivastaus:** Halkaisijoiden suhde on $\dfrac{1{,}39\cdot10^{9}\,\text{m}}{3{,}47\cdot10^{6}\,\text{m}}\approx400$. Siksi $d_\text{A}\approx400\cdot3{,}84\cdot10^{8}\,\text{m}\approx1{,}5\cdot10^{11}\,\text{m}$. Se on oikea vastaus. Arvo $1{,}5\cdot10^{8}\,\text{m}$ on alle puolet Kuun etäisyydestä, joten Aurinko olisi Kuuta lähempänä. Arvo $1{,}5\cdot10^{9}\,\text{m}$ on vain noin $4$ kertaa Kuun etäisyys. Arvo $1{,}5\cdot10^{13}\,\text{m}$ on noin $39\,000$ kertaa Kuun etäisyys. Kumpikaan ei vastaa kerrointa $400$.
 **Järkevyys:** Valo kulkee matkan $1{,}5\cdot10^{11}\,\text{m} : 3{,}0\cdot10^{8}\,\text{m/s} = 5{,}0\cdot10^{2}\,\text{s}$ eli noin $8\,\text{min}$. Se on Auringon valon tunnettu kulkuaika.

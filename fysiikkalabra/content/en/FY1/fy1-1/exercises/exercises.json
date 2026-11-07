@@ -46,7 +46,7 @@
     {
       "id": "fy1-1-L1-06",
       "level": 1,
-      "text": "In physics, observations and models are different things. For example, an observation is that a dropped stone hits the ground faster than a dropped feather. Which of the following separates a physical model from a mere observation?",
+      "text": "In physics, observations and models are different things. For example, an observation is that in air, a stone dropped from the same height at the same time as a feather hits the ground before the feather. Which of the following separates a physical model from a mere observation?",
       "kind": [
         "concept"
       ],
@@ -65,7 +65,7 @@
         },
         {
           "text": "A model is a theory that cannot be changed any more once it has been found to work.",
-          "feedback": "A model is not unchangeable: it is valid only in the conditions where it has been tested. When a new measurement differs from the prediction, the model is corrected or its range of validity is limited. For example, a free-fall model without air resistance describes a stone but not a feather."
+          "feedback": "A model is not unchangeable: its range of validity is determined by experiments and measurements. When a new measurement differs from the prediction, the model is corrected or its range of validity is limited. For example, a free-fall model without air resistance describes a stone but not a feather."
         },
         {
           "text": "A model is a perfect description of a phenomenon, and if a measurement differs from it, the measurement is always wrong.",
@@ -98,7 +98,7 @@
     {
       "id": "fy1-1-L1-09",
       "level": 1,
-      "text": "In a solar eclipse the Moon covers the Sun exactly, so the Sun and the Moon look equally large in the sky. The distance of the Moon from the Earth is $3.84\\cdot10^{8}\\,\\text{m}$, the diameter of the Moon is $3.47\\cdot10^{6}\\,\\text{m}$ and the diameter of the Sun is $1.39\\cdot10^{9}\\,\\text{m}$.\n\nAn object looks equally large when its distance is as many times the distance of the Moon as its diameter is times the diameter of the Moon. Which value is a reasonable estimate for the distance of the Earth from the Sun?",
+      "text": "Assume an eclipse in which the Moon just barely covers the Sun completely. The Sun and the Moon then look approximately equally large in the sky. The distance of the Moon from the Earth is $3.84\\cdot10^{8}\\,\\text{m}$, the diameter of the Moon is $3.47\\cdot10^{6}\\,\\text{m}$ and the diameter of the Sun is $1.39\\cdot10^{9}\\,\\text{m}$.\n\nAn object looks equally large when its distance is as many times the distance of the Moon as its diameter is times the diameter of the Moon. Which value is a reasonable estimate for the distance of the Earth from the Sun?",
       "kind": [
         "concept",
         "model"
@@ -122,7 +122,7 @@
         },
         {
           "text": "About $1.5\\cdot10^{13}\\,\\text{m}$",
-          "feedback": "This is about $39\\,000$ times the distance of the Moon, although the diameter of the Sun is only about $400$ times the diameter of the Moon. That far away, the Sun would look about a hundred times smaller than the Moon, and the Moon would not cover it."
+          "feedback": "This is about $39\\,000$ times the distance of the Moon, although the diameter of the Sun is only about $400$ times the diameter of the Moon. That far away, the apparent diameter of the Sun would be about a hundredth of the apparent diameter of the Moon. The Moon would then easily cover the Sun completely, so the assumption of approximately equal apparent diameters would not hold."
         }
       ]
     }
@@ -164,7 +164,7 @@
     {
       "id": "fy1-1-L2-05",
       "level": 2,
-      "text": "The table shows the mean distance $r$ of the planets from the Sun in astronomical units; one astronomical unit is $1\\,\\text{AU}$, the distance from the Earth to the Sun.\n\nA scale model of the solar system is drawn in a corridor so that Neptune is $2.0\\,\\text{m}$ from the Sun and all distances are reduced by the same factor.\n\nHow far from the Sun is Jupiter in the model? Give the answer in centimetres. Which planet is closest in the model to the point of the corridor that is $1.0\\,\\text{m}$ from the Sun?",
+      "text": "The table shows the mean distance $r$ of the planets from the Sun in astronomical units; one astronomical unit is $1\\,\\text{AU}$. It corresponds approximately to the mean distance of the Earth from the Sun.\n\nA scale model of the solar system is drawn in a corridor so that Neptune is $2.0\\,\\text{m}$ from the Sun and all distances are reduced by the same factor.\n\nHow far from the Sun is Jupiter in the model? Give the answer in centimetres. Which planet is closest in the model to the point of the corridor that is $1.0\\,\\text{m}$ from the Sun?",
       "kind": [
         "data",
         "model"
@@ -218,7 +218,7 @@
       "id": "fy1-1-L2-06",
       "level": 2,
       "core": true,
-      "text": "The table gives the diameter $d = a\\cdot10^{n}\\,\\text{m}$ of four objects in powers-of-ten form. Determine the order of magnitude of each object and calculate how many orders of magnitude there are between a human and the Milky Way. Justify why the order of magnitude of the Milky Way is not $10^{20}$ although its exponent is $20$.",
+      "text": "The table gives the size $d = a\\cdot10^{n}\\,\\text{m}$ of four objects in powers-of-ten form. Determine the order of magnitude of each object and calculate how many orders of magnitude there are between a human and the Milky Way. Justify why the order of magnitude of the Milky Way is not $10^{20}$ although its exponent is $20$.",
       "kind": [
         "data",
         "reasoning"
@@ -227,7 +227,7 @@
       "unit": "orders of magnitude",
       "tolerance": 0.02,
       "data": {
-        "caption": "Diameters of the objects $d = a\\cdot10^{n}\\,\\text{m}$",
+        "caption": "Sizes of the objects $d = a\\cdot10^{n}\\,\\text{m}$",
         "columns": [
           "Object",
           "$a$",

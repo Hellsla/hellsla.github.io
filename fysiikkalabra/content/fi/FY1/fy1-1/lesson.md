@@ -43,9 +43,9 @@ Tutkimus etenee kierroksina. Havainto herättää kysymyksen, kysymykseen ehdote
 
 ### Koot vaihtelevat kymmenpotenssien verran
 
-Fysiikan kohteiden koot ovat valtavan erilaisia: protoni on noin $1{,}7\cdot10^{-15}\,\text{m}$ ja havaittava maailmankaikkeus noin $8{,}8\cdot10^{26}\,\text{m}$. Näin laajaa aluetta ei voi kirjoittaa tavallisina lukuina. Siksi käytetään **kymmenpotenssimuotoa** $a\cdot10^{n}$, jossa $1 \le a < 10$ ja $n$ on kokonaisluku. Kun eksponentti $n$ kasvaa yhdellä, luku kymmenkertaistuu. **Planckin pituus**, noin $1{,}6\cdot10^{-35}\,\text{m}$, on mittakaava, jota pienemmillä etäisyyksillä fyysikoiden mukaan nykyiset teoriat eivät enää toimi. Sitä ei ole mitattu suoraan, vaan se on laskettu luonnonvakioista.
+Fysiikan kohteiden koot ovat valtavan erilaisia: protoni on noin $1{,}7\cdot10^{-15}\,\text{m}$ ja havaittava maailmankaikkeus noin $8{,}8\cdot10^{26}\,\text{m}$. Näin laajaa kokoaluetta on hankala esittää ja vertailla tavallisessa desimaalimuodossa. Siksi käytetään **kymmenpotenssimuotoa** $a\cdot10^{n}$, jossa $1 \le a < 10$ ja $n$ on kokonaisluku. Kun eksponentti $n$ kasvaa yhdellä, luku kymmenkertaistuu. **Planckin pituus**, noin $1{,}6\cdot10^{-35}\,\text{m}$, on mittakaava, jolla kvanttigravitaation vaikutusten odotetaan tulevan merkittäviksi. Sitä ei ole mitattu suoraan, vaan se on laskettu luonnonvakioista.
 
-<svg data-fig="scale-axis" viewBox="0 0 600 346" role="img" aria-label="Kaavakuva, jossa koot on merkitty kymmenpotenssien akselille: vaaka-akselilla on koon d suuruusluokka kymmenpotensseina, akseli piirretty mittakaavassa. Vasemmalta oikealle protoni 10 potenssiin −15 metriä, vetyatomi −10, hius −4, ihminen 0, Maa 7, Aurinko 9, Linnunrata 21 ja maailmankaikkeus 27. Yksi askel oikealle tarkoittaa kymmenkertaista kokoa." style="max-width:100%;font-size:24px">
+<svg data-fig="scale-axis" viewBox="0 0 600 346" role="img" aria-label="Kaavakuva, jossa koot on merkitty kymmenpotenssien akselille: vaaka-akselilla on koon d suuruusluokka kymmenpotensseina, akseli piirretty mittakaavassa. Vasemmalta oikealle protoni 10 potenssiin −15 metriä, vetyatomi −10, hius −4, ihminen 0, Maa 7, Aurinko 9, Linnunrata 21 ja havaittava maailmankaikkeus 27. Yksi asteikkoväli oikealle tarkoittaa viittä suuruusluokkaa eli satatuhatkertaista kokoa." style="max-width:100%;font-size:24px">
   <line x1="24" y1="236" x2="572" y2="236" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M584,236 L571,242 L571,230 Z" fill="#1f2933" stroke-linejoin="round"/>
   <line x1="52" y1="232" x2="52" y2="241" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
@@ -65,14 +65,14 @@ Fysiikan kohteiden koot ovat valtavan erilaisia: protoni on noin $1{,}7\cdot10^{
   <line x1="52" y1="230" x2="52" y2="206" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
   <foreignObject x="14.5" y="173.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{protoni}$</div></foreignObject>
   <circle cx="52" cy="236" r="7" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <line x1="111" y1="230" x2="111" y2="156" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
-  <foreignObject x="60" y="123.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{vetyatomi}$</div></foreignObject>
+  <line x1="111" y1="230" x2="111" y2="106" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
+  <foreignObject x="60" y="73.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{vetyatomi}$</div></foreignObject>
   <circle cx="111" cy="236" r="7" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <line x1="181.5" y1="230" x2="181.5" y2="206" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
   <foreignObject x="155" y="173.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{hius}$</div></foreignObject>
   <circle cx="181.5" cy="236" r="7" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <line x1="229" y1="230" x2="229" y2="106" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
-  <foreignObject x="184.5" y="73.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{ihminen}$</div></foreignObject>
+  <line x1="229" y1="230" x2="229" y2="156" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
+  <foreignObject x="184.5" y="123.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{ihminen}$</div></foreignObject>
   <circle cx="229" cy="236" r="7" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <line x1="311.5" y1="230" x2="311.5" y2="206" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
   <foreignObject x="289" y="173.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{Maa}$</div></foreignObject>
@@ -84,9 +84,9 @@ Fysiikan kohteiden koot ovat valtavan erilaisia: protoni on noin $1{,}7\cdot10^{
   <foreignObject x="410" y="173.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{Linnunrata}$</div></foreignObject>
   <circle cx="476.5" cy="236" r="7" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <line x1="547.5" y1="230" x2="547.5" y2="106" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
-  <foreignObject x="378" y="73.5" width="208" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{maailmankaikkeus}$</div></foreignObject>
+  <foreignObject x="254" y="73.5" width="332" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{havaittava maailmankaikkeus}$</div></foreignObject>
   <circle cx="547.5" cy="236" r="7" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="140" y="25.5" width="320" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\text{yksi askel oikealle} \Rightarrow \text{koko} \cdot 10$</div></foreignObject>
+  <foreignObject x="90" y="25.5" width="420" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\text{yksi asteikkoväli oikealle} \Rightarrow \text{koko} \cdot 10^{5}$</div></foreignObject>
 </svg>
 
 ### Suuruusluokka kertoo karkean koon
@@ -150,9 +150,9 @@ Tähtien väliset etäisyydet ovat niin suuria, että metri on epäkäytännöll
 
 ### Aine koostuu sisäkkäisistä rakenteista
 
-Kaikki ympärillämme oleva aine koostuu **atomeista**. Atomit voivat liittyä toisiinsa **molekyyleiksi**: vesimolekyylissä on yksi happiatomi ja kaksi vetyatomia. Jokaisen atomin keskellä on pieni **atomiydin**, ja sen ympärillä liikkuu **elektroneja**. Ydin koostuu **protoneista** ja **neutroneista**, ja kumpikin niistä koostuu kolmesta **kvarkista**. Kvarkit ja elektroni ovat **alkeishiukkasia**: niillä ei tiettävästi ole pienempiä osia, eikä niille ole mitattu kokoa. Kokeiden mukaan ne ovat pienempiä kuin noin $10^{-18}\,\text{m}$.
+Kaikki ympärillämme oleva aine koostuu **atomeista**. Atomit voivat liittyä toisiinsa **molekyyleiksi**: vesimolekyylissä on yksi happiatomi ja kaksi vetyatomia. Jokaisen atomin keskellä on pieni **atomiydin**, ja sen ympärillä liikkuu **elektroneja**. Ydin koostuu **protoneista** ja yleensä myös **neutroneista**. Protoni ja neutroni koostuvat kumpikin kolmesta **kvarkista**. Kvarkit ja elektroni ovat **alkeishiukkasia**: niillä ei tiettävästi ole pienempiä osia, eikä niille ole mitattu kokoa. Kokeiden mukaan ne ovat pienempiä kuin noin $10^{-18}\,\text{m}$.
 
-<svg data-fig="matter-ladder" viewBox="0 0 600 432" role="img" aria-label="Kaaviokuva, ei mittakaavassa: aineen rakenne portaittain ylhäältä alas. Vesimolekyyli, noin 3 · 10 potenssiin −10 metriä, koostuu atomeista. Atomi, noin 10 potenssiin −10 metriä, koostuu ytimestä ja elektroneista. Ydin, 10 potenssiin −15 … −14 metriä, koostuu protoneista ja neutroneista. Protoni ja neutroni, noin 10 potenssiin −15 metriä, koostuvat kolmesta kvarkista. Kvarkit ja elektroni ovat alkeishiukkasia, pienempiä kuin noin 10 potenssiin −18 metriä. Jokaisen rivin kuva on suurennos edellisen rivin pienestä kohdasta." style="max-width:100%;font-size:24px">
+<svg data-fig="matter-ladder" viewBox="0 0 600 432" role="img" aria-label="Kaaviokuva, ei mittakaavassa: aineen rakenne portaittain ylhäältä alas. Vesimolekyyli, noin 3 · 10 potenssiin −10 metriä, koostuu atomeista. Atomi, noin 10 potenssiin −10 metriä, koostuu ytimestä ja elektroneista. Ydin, 10 potenssiin −15 … −14 metriä, koostuu protoneista ja neutroneista. Protoni ja neutroni, noin 10 potenssiin −15 metriä, koostuvat kolmesta kvarkista. Kvarkit ja elektroni ovat alkeishiukkasia, pienempiä kuin noin 10 potenssiin −18 metriä. Kuvat ovat suurennoksia edellisen rivin pienestä kohdasta; kvarkki on suurennos protonista tai neutronista, ja elektroni on yhdistetty erillisellä haaralla atomin riviin." style="max-width:100%;font-size:24px">
   <line x1="55" y1="72" x2="36" y2="154" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 3"/>
   <line x1="73" y1="72" x2="96" y2="154" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 3"/>
   <line x1="61" y1="154" x2="36" y2="232" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 3"/>
@@ -189,8 +189,9 @@ Kaikki ympärillämme oleva aine koostuu **atomeista**. Atomit voivat liittyä t
   <circle cx="66" cy="295.5" r="6.6" fill="#c92a2a" stroke="#ffffff" stroke-width="1.5"/>
   <circle cx="78.5" cy="317" r="6.6" fill="#2b8a3e" stroke="#ffffff" stroke-width="1.5"/>
   <circle cx="53.5" cy="317" r="6.6" fill="#1971c2" stroke="#ffffff" stroke-width="1.5"/>
-  <circle cx="52" cy="388" r="6" fill="#c92a2a" stroke="#ffffff" stroke-width="1.5"/>
-  <circle cx="80" cy="388" r="6" fill="#1971c2" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="66" cy="388" r="6" fill="#c92a2a" stroke="#ffffff" stroke-width="1.5"/>
+  <path d="M44 169 H20 V382" fill="none" stroke="#6b7480" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <circle cx="20" cy="388" r="6" fill="#1971c2" stroke="#ffffff" stroke-width="1.5"/>
   <foreignObject x="116" y="46.5" width="407" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{vesimolekyyli: kolme atomia yhdessä}$</div></foreignObject>
   <foreignObject x="116" y="78.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$3\cdot10^{-10}\,\text{m}$</div></foreignObject>
   <foreignObject x="116" y="124.5" width="283" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{atomi: ydin ja elektronit}$</div></foreignObject>
@@ -230,7 +231,7 @@ Atomin halkaisija on noin $10^{-10}\,\text{m}$, mutta ytimen vain $10^{-15}$–$
 
 ### Maan osoite maailmankaikkeudessa
 
-Maa on **planeetta**: se kiertää **tähteä** eli Aurinkoa, ja Kuu kiertää Maata. Tähti on kuuma kaasupallo, joka tuottaa itse valonsa ytimessään tapahtuvissa ydinreaktioissa. Planeetta ei tuota valoa, vaan se näkyy, koska se heijastaa tähtensä valoa. Aurinko, sen kahdeksan planeettaa kuineen sekä kääpiöplaneetat, asteroidit ja komeetat muodostavat **Aurinkokunnan**. Se on yksi **planeettakunta** monien joukossa: muita tähtiä kiertäviä planeettoja tunnetaan jo tuhansia.
+Maa on **planeetta**: se kiertää **tähteä** eli Aurinkoa, ja Kuu kiertää Maata. Auringon kaltaisen tähden energia syntyy sen ytimessä tapahtuvissa fuusioreaktioissa, ja tähti säteilee energiaa avaruuteen. Näkyvässä valossa Aurinkokunnan planeetat näkyvät heijastamansa auringonvalon ansiosta. Ne lähettävät myös omaa lämpösäteilyä. Aurinko, sen kahdeksan planeettaa kuineen sekä kääpiöplaneetat, asteroidit ja komeetat muodostavat **Aurinkokunnan**. Se on yksi **planeettakunta** monien joukossa: muita tähtiä kiertäviä planeettoja tunnetaan jo tuhansia.
 
 Aurinko on yksi Linnunradan sadoista miljardeista tähdistä. **Linnunrata** on **galaksi** eli painovoiman koossa pitämä valtava joukko tähtiä, kaasua ja pölyä, ja sen halkaisija on noin $10^{5}$ valovuotta. Galakseja on havaittavassa maailmankaikkeudessa arviolta satoja miljardeja. Ne muodostavat **galaksiryhmiä** ja suurempia **galaksijoukkoja**: Linnunrata ja Andromedan galaksi kuuluvat Paikalliseen ryhmään. Ryhmät ja joukot muodostavat superjoukkoja, ja suurimmassa mittakaavassa galaksit ovat verkon kaltaisissa säikeissä, joiden välissä on lähes tyhjiä alueita.
 
@@ -238,21 +239,21 @@ Aurinko on yksi Linnunradan sadoista miljardeista tähdistä. **Linnunrata** on 
   <rect x="12" y="12" width="576" height="376" rx="10" fill="#ffffff" stroke="#1971c2" stroke-width="2"/>
   <foreignObject x="26" y="23.5" width="332" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{havaittava maailmankaikkeus}$</div></foreignObject>
   <foreignObject x="491" y="23.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$10^{27}\,\text{m}$</div></foreignObject>
-  <rect x="30" y="68" width="540" height="314" rx="10" fill="#eef5f9" stroke="#1971c2" stroke-width="2"/>
-  <foreignObject x="44" y="79.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Virgon superjoukko}$</div></foreignObject>
-  <foreignObject x="473" y="79.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$10^{24}\,\text{m}$</div></foreignObject>
-  <rect x="48" y="124" width="504" height="252" rx="10" fill="#d0e6fb" stroke="#1971c2" stroke-width="2"/>
-  <foreignObject x="62" y="135.5" width="208" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Paikallinen ryhmä}$</div></foreignObject>
-  <foreignObject x="455" y="135.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$10^{23}\,\text{m}$</div></foreignObject>
-  <rect x="66" y="180" width="468" height="190" rx="10" fill="#a5d8ff" stroke="#1971c2" stroke-width="2"/>
-  <foreignObject x="80" y="191.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Linnunrata}$</div></foreignObject>
-  <foreignObject x="437" y="191.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$10^{21}\,\text{m}$</div></foreignObject>
-  <rect x="84" y="236" width="432" height="128" rx="10" fill="#ffc078" stroke="#e8590c" stroke-width="2"/>
-  <foreignObject x="98" y="247.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Aurinkokunta}$</div></foreignObject>
-  <foreignObject x="419" y="247.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$10^{13}\,\text{m}$</div></foreignObject>
-  <rect x="102" y="292" width="396" height="66" rx="10" fill="#ffffff" stroke="#1971c2" stroke-width="2"/>
-  <foreignObject x="116" y="303.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Maa ja Kuu}$</div></foreignObject>
-  <foreignObject x="414" y="303.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$10^{9}\,\text{m}$</div></foreignObject>
+  <rect x="24" y="68" width="552" height="314" rx="10" fill="#eef5f9" stroke="#1971c2" stroke-width="2"/>
+  <foreignObject x="38" y="79.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Virgon superjoukko}$</div></foreignObject>
+  <foreignObject x="479" y="79.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$10^{24}\,\text{m}$</div></foreignObject>
+  <rect x="36" y="124" width="528" height="252" rx="10" fill="#d0e6fb" stroke="#1971c2" stroke-width="2"/>
+  <foreignObject x="50" y="135.5" width="208" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Paikallinen ryhmä}$</div></foreignObject>
+  <foreignObject x="467" y="135.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$10^{23}\,\text{m}$</div></foreignObject>
+  <rect x="48" y="180" width="504" height="190" rx="10" fill="#a5d8ff" stroke="#1971c2" stroke-width="2"/>
+  <foreignObject x="62" y="191.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Linnunrata}$</div></foreignObject>
+  <foreignObject x="455" y="191.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$10^{21}\,\text{m}$</div></foreignObject>
+  <rect x="60" y="236" width="480" height="128" rx="10" fill="#ffc078" stroke="#e8590c" stroke-width="2"/>
+  <foreignObject x="74" y="247.5" width="370" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Aurinkokunnan planeettojen alue}$</div></foreignObject>
+  <foreignObject x="443" y="247.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$10^{13}\,\text{m}$</div></foreignObject>
+  <rect x="72" y="292" width="456" height="66" rx="10" fill="#ffffff" stroke="#1971c2" stroke-width="2"/>
+  <foreignObject x="86" y="303.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Maa ja Kuu}$</div></foreignObject>
+  <foreignObject x="444" y="303.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$10^{9}\,\text{m}$</div></foreignObject>
   <ellipse cx="318" cy="324" rx="44" ry="13" fill="none" stroke="#6b7480" stroke-width="1.5" stroke-dasharray="4 3"/>
   <circle cx="318" cy="324" r="11" fill="#2f74b5" stroke="#1f2933" stroke-width="2"/>
   <circle cx="362" cy="324" r="5" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
@@ -455,7 +456,7 @@ Laskimella jakolasku $1{,}1\cdot10^{-10} : 1{,}7\cdot10^{-15}$ tehdään kirjoit
 
 ## Yleinen virhekäsitys
 
-Kymmenpotenssien ero ei ole kokojen ero. Jos kahden kohteen suuruusluokat eroavat kuudella, toinen ei ole kuusi kertaa suurempi vaan $10^{6}$ eli miljoona kertaa suurempi. Lisäksi mittakaavakuva voi näyttää tosi vain yhden mittakaavan kerrallaan: kaikkea ei voi piirtää samaan kuvaan oikeassa suhteessa.
+Kymmenpotenssien ero ei ole kokojen ero. Jos kahden kohteen suuruusluokat eroavat kuudella, kokojen suhde on suuruusluokkien perusteella noin $10^{6}$ eli miljoona, ei kuusi. Lisäksi hyvin erikokoiset kohteet eivät kaikki erotu tunnistettavina samassa mittakaavakuvassa, jos ne piirretään oikeassa kokosuhteessa.
 
 Neutronitähti ja musta aukko eivät ole galaksia suurempia portaita, vaan kohteita galaksien sisällä. Musta aukko ei myöskään ime kaikkea ympäriltään: kaukana siitä sen painovoima on sama kuin minkä tahansa yhtä suuren massan, ja tähdet voivat kiertää sitä kuten planeetat Aurinkoa.
 
@@ -465,7 +466,7 @@ Neutronitähti ja musta aukko eivät ole galaksia suurempia portaita, vaan kohte
 - Kymmenpotenssimuoto $a\cdot10^{n}$ kirjoittaa hyvin pienet ja hyvin suuret luvut lyhyesti; yksi askel eksponentissa on kymmenkertainen koko.
 - Suuruusluokka on kymmenpotenssien akselilla lähin kymmenpotenssi. Kokojen suhde saadaan jakamalla suurempi koko pienemmällä, ja jokainen kymmenpotenssin askel on kymmenkertainen koko.
 - Valovuosi on matka, jonka valo kulkee vuodessa, noin $9{,}46\cdot10^{15}\,\text{m}$.
-- Molekyylit koostuvat atomeista, atomit ytimestä ja elektroneista, ydin protoneista ja neutroneista ja nämä kvarkeista. Atomi on kymmeniätuhansia kertoja ydintään suurempi.
+- Molekyylit koostuvat atomeista, atomit ytimestä ja elektroneista, ydin protoneista ja yleensä myös neutroneista. Protonit ja neutronit koostuvat kvarkeista. Atomi on kymmeniätuhansia kertoja ydintään suurempi.
 - Maa on planeetta, joka kiertää tähteä. Aurinkokunta on yksi planeettakunta Linnunradassa, ja Linnunrata on yksi havaittavan maailmankaikkeuden sadoista miljardeista galakseista.
 - Sumut, neutronitähdet ja mustat aukot ovat kohteiden tyyppejä galaksien sisällä, eivät rakenteiden portaita.
 - Neljä perusvuorovaikutusta ovat gravitaatio, sähkömagneettinen, vahva ja heikko vuorovaikutus. Pienissä mittakaavoissa hallitsevat ytimen ja atomin vuorovaikutukset, suurissa gravitaatio.
