@@ -295,7 +295,7 @@ missä $m_2 > m_1$. Jännitysvoima on kappaleiden painojen $m_1 g$ ja $m_2 g$ v�
 
 ### Menetelmä kytketyille kappaleille
 1. **Piirrä oma voimakuvio** kummallekin kappaleelle. Lanka vetää kumpaakin kappaletta itseään kohti. Jokaisella kappaleella on oma jännitysvoiman nuoli.
-2. **Valitse positiivinen suunta** kullekin kappaleelle kiihtyvyyden suuntaan.
+2. **Valitse positiivinen suunta** kullekin kappaleelle kiihtyvyyden suuntaan. Joskus kiihtyvyyden oikeaa suuntaa ei tiedetä. Silloin positiivisen suunnan saa olettaa, kunhan kappaleiden suunnat sopivat yhteen langan kanssa. Jos kiihtyvyys on ratkaisussa negatiivinen, oikea kiihtyvyys on vastakkaiseen suuntaan. Kitkan suunta riippuu liikkeen suunnasta. Siksi oletettu suunta on tarkistettava, kun tilanteessa on kitkaa.
 3. **Kirjoita liikeyhtälö** $\Sigma F = ma$ kummallekin kappaleelle erikseen. Kiihtyvyyden suuruus $a$ ja jännitysvoiman suuruus $T$ ovat samat molemmissa. Jos kappaletta vedetään lisäksi ulkoisella voimalla $\overline{F}$, se kuuluu vain vedettävän kappaleen voimakuvioon ja liikeyhtälöön.
 4. **Ratkaise** kaksi yhtälöä. Laske ne yhteen, jolloin $T$ poistuu. Tai sijoita toisesta yhtälöstä saatu $T$ toiseen yhtälöön.
 5. **Tarkista** etumerkit ja vertaa. Kun kappaleet kiihtyvät, jännitysvoima ei ole yhtä suuri kuin riippuvan kappaleen paino.
@@ -409,7 +409,7 @@ Usein ajatellaan, että kärryä vetää riippuvan punnuksen paino. Silloin jän
 Toinen virhe on pitää voimia $\overline{T}_1$ ja $\overline{T}_2$ voimana ja vastavoimana. Ne vaikuttavat eri kappaleisiin, ja ne kuuluvat eri vuorovaikutuksiin: toinen lanka–kärry-parin ja toinen lanka–punnus-parin voimia. Ne ovat yhtä suuret, koska lanka on kevyt ja väkipyörä on kevyt ja kitkaton. Ne eivät ole yhtä suuret siksi, että ne olisivat saman vuorovaikutusparin voimia. Kolmas virhe on ajatella, että raskaampi kappale kiihtyy enemmän. Venymättömän langan päissä olevilla kappaleilla on sama kiihtyvyys.
 
 ## Tiivistelmä
-- Langalla tai väkipyörän yli kytketyillä kappaleilla on kummallakin oma voimakuvio ja oma liikeyhtälö $\Sigma F = ma$. Positiivinen suunta valitaan kullekin kappaleelle kiihtyvyyden suuntaan.
+- Langalla tai väkipyörän yli kytketyillä kappaleilla on kummallakin oma voimakuvio ja oma liikeyhtälö $\Sigma F = ma$. Positiivinen suunta valitaan kullekin kappaleelle kiihtyvyyden suuntaan. Jos suuntaa ei tiedetä, sen saa olettaa: negatiivinen ratkaisu kertoo, että kiihtyvyys on vastakkainen.
 - Kevyt, venymätön lanka ja kevyt, kitkaton väkipyörä antavat kappaleille saman kiihtyvyyden $a$ ja yhtä suuret jännitysvoimat $T_1 = T_2 = T$.
 - Kärrylle ja riippuvalle punnukselle $a = \frac{m_2}{m_1 + m_2}\,g$ ja $T = \frac{m_1 m_2}{m_1 + m_2}\,g$. Kahdelle riippuvalle kappaleelle $a = \frac{m_2 - m_1}{m_1 + m_2}\,g$ ja $T = \frac{2 m_1 m_2}{m_1 + m_2}\,g$.
 - Kiihtyvän riippuvan kappaleen jännitysvoima ei ole sen paino. Kärryn ja punnuksen tapauksessa $T < m_2 g$. Kahdella riippuvalla kappaleella $T$ on painojen välissä.

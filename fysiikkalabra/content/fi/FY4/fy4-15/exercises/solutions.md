@@ -61,7 +61,7 @@
 ## fy4-15-L2-02
 **Annettu:** roottorin halkaisija $d = 82\,\text{m}$, tuulen nopeus $v = 8{,}0\,\text{m/s}$, sähköteho $P = 758\,\text{kW}$, ilman tiheys $\rho = 1{,}25\,\text{kg/m}^3$
 **Kysytty:** sähköksi muuttuva osuus eli hyötysuhde $\eta$ prosentteina
-**Periaate:** Roottorin läpi virtaavan tuulen teho on ilman liike-energia sekunnissa, $\tfrac{1}{2}\rho A v^3$. Voimala muuttaa siitä sähköksi osuuden $\eta$, joten osuus saadaan tuulivoimalan tehon kaavasta.
+**Periaate:** Häiriötön tuuli kuljettaa roottorin pyyhkäisypinta-alan läpi sekunnissa liike-energian $\tfrac{1}{2}\rho A v^3$, joka on voimalan vertailuteho. Voimala muuttaa siitä sähköksi osuuden $\eta$, joten osuus saadaan tuulivoimalan tehon kaavasta.
 **Kaava:** $P = \tfrac{1}{2}\eta\rho A v^3$ ja $A = \pi r^2$, joten $\eta = \dfrac{2P}{\rho A v^3}$
 **Muunnokset:** Säde $r = 82\,\text{m} : 2 = 41\,\text{m}$ ja $P = 758\,\text{kW} = 758\,000\,\text{W}$.
 **Sijoitus:** $A = \pi \cdot (41\,\text{m})^2 = 5281{,}0\,\text{m}^2$ ja $\eta = \dfrac{2 \cdot 758\,000\,\text{W}}{1{,}25\,\tfrac{\text{kg}}{\text{m}^3} \cdot 5281{,}0\,\text{m}^2 \cdot \left(8{,}0\,\tfrac{\text{m}}{\text{s}}\right)^3} = 0{,}4485$
@@ -207,7 +207,7 @@ $$\begin{aligned}m &= \frac{8{,}64 \cdot 10^{11}\,\text{J}}{9{,}81\,\tfrac{\text
 
 ## fy4-15-L2-08
 **Kysytty:** tuulivoimalan sähkötehon $P$ suuruusluokka.
-**Periaate:** Roottorin läpi virtaa sekunnissa ilmaa, jonka liike-energia on tuulen teho $\tfrac{1}{2}\rho A v^3$, ja voimala muuttaa siitä sähköksi osuuden $\eta$. Voimala ei saavuta nimellistehoaan, joten kaava $P = \tfrac{1}{2}\eta\rho A v^3$ kuvaa sitä. Nopeus on muunnettava yksikköön $\text{m/s}$, koska se on kaavassa kolmannessa potenssissa.
+**Periaate:** Häiriötön tuuli kuljettaa roottorin pyyhkäisypinta-alan läpi tehon $\tfrac{1}{2}\rho A v^3$, ja voimala muuttaa tästä vertailutehosta sähköksi osuuden $\eta$. Voimala ei saavuta nimellistehoaan, joten kaava $P = \tfrac{1}{2}\eta\rho A v^3$ kuvaa sitä. Nopeus on muunnettava yksikköön $\text{m/s}$, koska se on kaavassa kolmannessa potenssissa.
 **Mallivastaus:** Säde on $r = 100\,\text{m} : 2 = 50\,\text{m}$ ja $\eta = 0{,}40$. Tuulen nopeus muunnetaan yksikköön $\text{m/s}$, ja sitten lasketaan roottorin pyyhkäisemä pinta-ala ja sähköteho:
 
 $$\begin{aligned}

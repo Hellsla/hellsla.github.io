@@ -435,7 +435,7 @@ A sled of mass $12\,\text{kg}$ is pulled on horizontal snow by a rope that makes
 
 <!-- vaihe -->
 
-**Result.** The acceleration is $a \approx 3.0\,\text{m/s}^2$ and the normal force is $N \approx 72\,\text{N}$, given with two significant figures like the data $80\,\text{N}$, $30\,\text{N}$ and $12\,\text{kg}$.
+**Result.** The acceleration is $a \approx 3.0\,\text{m/s}^2$ and the normal force is $N \approx 72\,\text{N}$, given with two significant figures like the mass $12\,\text{kg}$. The forces $80\,\text{N}$ and $30\,\text{N}$ are also taken to be given to two significant figures.
 
 <!-- vaihe -->
 

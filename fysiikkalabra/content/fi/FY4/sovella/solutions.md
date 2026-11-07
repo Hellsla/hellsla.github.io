@@ -287,7 +287,7 @@ c-kohdan arvo $0{,}030$ on siis noin $0{,}006$ liian suuri, eli virhe on noin vi
 
 *Arviot.* c-kohdan arvio $14\,\text{m/s}$ on liian suuri, koska siinä myös kitka pysyy samana, vaikka se todellisuudessa kasvaa massan mukana. Toisen ohjaajan arvio $11{,}2\,\text{m/s}$ on liian pieni, koska ilmanvastus ei kasva massan mukana. Todellinen nopeus on näiden välissä.
 
-*Mitoitus.* Jarru mitoitetaan suuremman arvion, $14\,\text{m/s}$:n, mukaan: jos todellinen nopeus on pienempi, jarru riittää varmasti, mutta liian pienelle nopeudelle mitoitettu jarru voisi pettää. Paras tieto saadaan mittaamalla tutkalla myös painavien laskijoiden nopeuksia.
+*Mitoitus.* Mallien vertailussa jarru kannattaa mitoittaa suuremman nopeuden mukaan, koska liian pienelle nopeudelle mitoitettu jarru voisi pettää. Kumpikaan luku ei silti ole turvallinen enimmäisnopeus. c-kohdan $14\,\text{m/s}$ on arvio, joka perustuu oletukseen vastusvoimasta, ja kitkattoman mallin $17{,}2\,\text{m/s}$ on tämän yksinkertaistetun energiamallin suurempi vertailuarvo. Todellinen jarrun mitoitus edellyttää erillisiä turvamarginaaleja, kuormitustarkastelua ja todellisia mittauksia, esimerkiksi tutkalla mitattuja painavien laskijoiden nopeuksia.
 
 ### Yleisiä virheitä
 - b-kohdassa koko potentiaalienergian ja liike-energian erotus jaetaan korkeudella $15{,}0\,\text{m}$ eikä vastusvoiman kulkemalla matkalla $180\,\text{m}$.
@@ -297,7 +297,7 @@ c-kohdan arvo $0{,}030$ on siis noin $0{,}006$ liian suuri, eli virhe on noin vi
 
 ### Hyväksytään myös
 - b- ja c-kohdassa voi käyttää pyöristettyä vastusvoimaa $F_\text{vast} = 29\,\text{N}$: silloin $F_\text{vast}\,s = 29\,\text{N} \cdot 180\,\text{m} = 5220\,\text{J}$, ja c-kohdan nopeudeksi tulee taas $13{,}6\,\text{m/s} \approx 14\,\text{m/s}$. c-kohdassa hyväksytään $13{,}6\,\text{m/s}$ ja $14\,\text{m/s}$.
-- d-kohdassa jarrun saa mitoittaa kitkattoman mallin ylärajan $17{,}2\,\text{m/s}$ mukaan tai c-kohdan arvion mukaan turvamarginaalilla painavampia laskijoita varten. Kumpikin on perusteltuna oikea ja turvallinen johtopäätös ja saa johtopäätöksen pisteen.
+- d-kohdassa johtopäätöksen saa perustella c-kohdan arviolla $14\,\text{m/s}$ tai kitkattoman mallin vertailuarvolla $17{,}2\,\text{m/s}$. Kumpikin perusteltu valinta saa johtopäätöksen pisteen.
 
 ## fy4-s3
 
@@ -449,7 +449,7 @@ c-kohdan arvo $0{,}030$ on siis noin $0{,}006$ liian suuri, eli virhe on noin vi
 **Kaava:** $m_\text{B}v_\text{B} + m_\text{A} \cdot 0 = (m_\text{A} + m_\text{B})\,v'$, josta $v_\text{B} = \dfrac{(m_\text{A} + m_\text{B})\,v'}{m_\text{B}}$
 **Muunnokset:** Vertailua varten $1\,\text{m/s} = 3{,}6\,\text{km/h}$.
 **Sijoitus:** $v_\text{B} = \dfrac{2950\,\text{kg} \cdot 7{,}86\,\text{m/s}}{1700\,\text{kg}} = 13{,}6\,\text{m/s}$ ja $13{,}6 \cdot 3{,}6\,\text{km/h} = 49\,\text{km/h}$
-**Vastaus:** $v_\text{B} \approx 14\,\text{m/s}$ (tarkemmin $13{,}6\,\text{m/s} \approx 49\,\text{km/h}$). Kaksi merkitsevää numeroa, koska liukumamatka $4{,}2\,\text{m}$ ja kitkakerroin $0{,}75$ tunnetaan kahden numeron tarkkuudella. Kertomus ei pidä paikkaansa: auton B nopeus oli törmäyshetkellä noin $9\,\text{km/h}$ yli rajoituksen. Pyörät olivat lukossa heti törmäyksen jälkeen, joten kuljettaja oli todennäköisesti jarruttanut jo ennen törmäystä, ja ennen jarrutusta nopeus oli vielä suurempi.
+**Vastaus:** $v_\text{B} \approx 14\,\text{m/s}$ (tarkemmin $13{,}6\,\text{m/s} \approx 49\,\text{km/h}$). Kaksi merkitsevää numeroa, koska liukumamatka $4{,}2\,\text{m}$ ja kitkakerroin $0{,}75$ tunnetaan kahden numeron tarkkuudella. Kertomus ei pidä paikkaansa: mallin mukaan auton B nopeus oli juuri ennen törmäystä noin $49\,\text{km/h}$ eli noin $9\,\text{km/h}$ yli rajoituksen.
 **Järkevyys:** Yhteinen nopeus on pienempi kuin $v_\text{B}$, koska sama liikemäärä jakautuu suuremmalle massalle. Liike-energia pienenee törmäyksessä noin $158\,\text{kJ}$:sta noin $91\,\text{kJ}$:en: noin $40\,\%$ siitä kuluu peltien rutistumiseen, mikä sopii kimmottomaan törmäykseen.
 
 ### c)

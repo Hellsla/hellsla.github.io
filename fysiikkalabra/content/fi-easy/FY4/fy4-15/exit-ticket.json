@@ -9,6 +9,6 @@
   },
   {
     "q": "Miksi tuulivoimalan teho ei enää kasva, kun tuuli voimistuu yli nopeuden, jolla voimala saavuttaa tehokäyrän huipun?",
-    "a": "Voimala on saavuttanut nimellistehonsa, jota generaattori ei voi ylittää. Lapoja käännetään niin, että osa tuulesta pääsee ohi. Silloin sähköksi muuttuva osuus tuulen tehosta pienenee tuulen voimistuessa, ja teho pysyy vakiona."
+    "a": "Voimala on saavuttanut nimellistehonsa, jota generaattori ei voi ylittää. Lapoja käännetään niin, että osa tuulesta pääsee ohi. Silloin sähköksi muuttuva osuus tuulen tehosta pienenee tuulen voimistuessa, ja teho pysyy nimellistehossa. Näin ei jatku loputtomiin. Kun tuuli on voimakkaampi kuin voimalan pysäytysnopeus, voimala pysäytetään, jotta sen rakenteet eivät vaurioidu. Silloin teho putoaa nollaan."
   }
 ]

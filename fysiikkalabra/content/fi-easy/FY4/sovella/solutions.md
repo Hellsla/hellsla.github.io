@@ -287,7 +287,7 @@ c-kohdan arvo $0{,}030$ on siis noin $0{,}006$ liian suuri. Virhe on noin viides
 
 *Arviot.* c-kohdan arvio $14\,\text{m/s}$ on liian suuri, koska siinä myös kitka pysyy samana. Todellisuudessa kitka kasvaa massan mukana. Toisen ohjaajan arvio $11{,}2\,\text{m/s}$ on liian pieni, koska ilmanvastus ei kasva massan mukana. Todellinen nopeus on näiden välissä.
 
-*Mitoitus.* Jarru mitoitetaan suuremman arvion, $14\,\text{m/s}$:n, mukaan: jos todellinen nopeus on pienempi, jarru riittää varmasti. Liian pienelle nopeudelle mitoitettu jarru voisi pettää. Paras tieto saadaan mittaamalla tutkalla myös painavien laskijoiden nopeuksia.
+*Mitoitus.* Kun malleja verrataan, jarru kannattaa mitoittaa suuremman nopeuden mukaan. Liian pienelle nopeudelle mitoitettu jarru voisi pettää. Kumpikaan luku ei silti ole turvallinen suurin nopeus. c-kohdan $14\,\text{m/s}$ on arvio, joka perustuu oletukseen vastusvoimasta. Kitkattoman mallin $17{,}2\,\text{m/s}$ on tämän yksinkertaisen energiamallin suurempi vertailuarvo. Oikean jarrun mitoitukseen tarvitaan erilliset turvamarginaalit, kuormitustarkastelu ja oikeat mittaukset. Esimerkiksi painavien laskijoiden nopeudet voi mitata tutkalla.
 
 ### Yleisiä virheitä
 - b-kohdassa potentiaalienergian ja liike-energian erotus jaetaan korkeudella $15{,}0\,\text{m}$. Oikea jakaja on matka $180\,\text{m}$, jonka vastusvoima kulkee.
@@ -297,7 +297,7 @@ c-kohdan arvo $0{,}030$ on siis noin $0{,}006$ liian suuri. Virhe on noin viides
 
 ### Hyväksytään myös
 - b- ja c-kohdassa saa käyttää pyöristettyä vastusvoimaa $F_\text{vast} = 29\,\text{N}$. Silloin $F_\text{vast}\,s = 29\,\text{N} \cdot 180\,\text{m} = 5220\,\text{J}$, ja c-kohdan nopeudeksi tulee taas $13{,}6\,\text{m/s} \approx 14\,\text{m/s}$. c-kohdassa hyväksytään $13{,}6\,\text{m/s}$ ja $14\,\text{m/s}$.
-- d-kohdassa jarrun saa mitoittaa kitkattoman mallin ylärajan $17{,}2\,\text{m/s}$ mukaan tai c-kohdan arvion mukaan turvamarginaalilla painavampia laskijoita varten. Kumpikin on perusteltuna oikea ja turvallinen johtopäätös, ja se saa johtopäätöksen pisteen.
+- d-kohdassa johtopäätöksen saa perustella c-kohdan arviolla $14\,\text{m/s}$ tai kitkattoman mallin vertailuarvolla $17{,}2\,\text{m/s}$. Kumpikin perusteltu valinta saa johtopäätöksen pisteen.
 
 ## fy4-s3
 
@@ -449,7 +449,7 @@ c-kohdan arvo $0{,}030$ on siis noin $0{,}006$ liian suuri. Virhe on noin viides
 **Kaava:** $m_\text{B}v_\text{B} + m_\text{A} \cdot 0 = (m_\text{A} + m_\text{B})\,v'$. Siitä saadaan $v_\text{B} = \dfrac{(m_\text{A} + m_\text{B})\,v'}{m_\text{B}}$
 **Muunnokset:** Kun nopeutta verrataan rajoitukseen, $1\,\text{m/s} = 3{,}6\,\text{km/h}$.
 **Sijoitus:** Nopeus on $v_\text{B} = \dfrac{2950\,\text{kg} \cdot 7{,}86\,\text{m/s}}{1700\,\text{kg}} = 13{,}6\,\text{m/s}$. Kilometreinä tunnissa $13{,}6 \cdot 3{,}6\,\text{km/h} = 49\,\text{km/h}$
-**Vastaus:** $v_\text{B} \approx 14\,\text{m/s}$ (tarkemmin $13{,}6\,\text{m/s} \approx 49\,\text{km/h}$). Vastauksessa on kaksi merkitsevää numeroa, koska liukumamatka $4{,}2\,\text{m}$ ja kitkakerroin $0{,}75$ tunnetaan kahden numeron tarkkuudella. Kertomus ei ole totta: auton B nopeus oli törmäyshetkellä noin $9\,\text{km/h}$ yli rajoituksen. Pyörät olivat lukossa heti törmäyksen jälkeen, joten kuljettaja oli todennäköisesti jarruttanut jo ennen törmäystä. Ennen jarrutusta nopeus oli vielä suurempi.
+**Vastaus:** $v_\text{B} \approx 14\,\text{m/s}$ (tarkemmin $13{,}6\,\text{m/s} \approx 49\,\text{km/h}$). Vastauksessa on kaksi merkitsevää numeroa, koska liukumamatka $4{,}2\,\text{m}$ ja kitkakerroin $0{,}75$ tunnetaan kahden numeron tarkkuudella. Kertomus ei ole totta: mallin mukaan auton B nopeus oli juuri ennen törmäystä noin $49\,\text{km/h}$. Se on noin $9\,\text{km/h}$ yli rajoituksen.
 **Järkevyys:** Yhteinen nopeus on pienempi kuin $v_\text{B}$, koska sama liikemäärä jakautuu suuremmalle massalle. Liike-energia pienenee törmäyksessä noin $158\,\text{kJ}$:sta noin $91\,\text{kJ}$:en. Noin $40\,\%$ siitä kuluu peltien rutistumiseen. Se sopii kimmottomaan törmäykseen, jossa kappaleet jäävät kiinni toisiinsa.
 
 ### c)

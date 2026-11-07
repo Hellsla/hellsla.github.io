@@ -343,7 +343,7 @@ Kappale voi siirtyä paikasta $x_1$ paikkaan $x_2$. Silloin sen **siirtymä** on
 
 <figure class="unit-photo"><img src="pics/fy4/highway-light-trails.webp" alt="Kaartuva moottoritie yöllä. Tiellä on punaisia ja valkoisia valoviivoja."><figcaption>Kuva on otettu yöllä pitkällä valotusajalla. Autojen valot näkyvät viivoina. Punaiset viivat ovat takavaloja ja valkoiset ajovaloja.</figcaption></figure>
 
-Liike voidaan piirtää **$(t,x)$-kuvaajaksi**. Vaaka-akselilla on aika ja pystyakselilla paikka. Tasaisen liikkeen kuvaaja on suora. Suoran jyrkkyys eli kulmakerroin on nopeus. Jyrkempi suora tarkoittaa suurempaa nopeutta. Vaakasuora suora tarkoittaa, että kappale on paikallaan. Laskeva suora tarkoittaa liikettä negatiiviseen suuntaan. Kuvaaja ei ole kuva kappaleen reitistä. Nouseva viiva ei tarkoita ylämäkeä. Se tarkoittaa, että paikka kasvaa.
+Liike voidaan piirtää **$(t,x)$-kuvaajaksi**. Vaaka-akselilla on aika ja pystyakselilla paikka. Tasaisen liikkeen kuvaaja on suora. Suoran kulmakerroin on nopeus. Mitä suurempi kulmakertoimen itseisarvo on, sitä suurempi on kappaleen vauhti. Kulmakertoimen etumerkki kertoo liikkeen suunnan. Nouseva suora tarkoittaa liikettä positiiviseen suuntaan. Laskeva suora tarkoittaa liikettä negatiiviseen suuntaan. Vaakasuora suora tarkoittaa, että kappale on paikallaan. Kuvaaja ei ole kuva kappaleen reitistä. Nouseva viiva ei tarkoita ylämäkeä. Se tarkoittaa, että paikka kasvaa.
 
 ## Kaava: Keskinopeus ja tasaisen liikkeen yhtälö
 Paikka voi muuttua määrän $\Delta x$ aikavälillä $\Delta t = t_2 - t_1$. Silloin keskinopeus on siirtymä jaettuna ajalla:
@@ -472,7 +472,7 @@ x &= x_1 + v\,t \\
 
 <!-- vaihe -->
 
-**Tulos.** Nopeus on $v = 2{,}5\,\text{m/s}$. Paikka hetkellä $60\,\text{s}$ on $x = 170\,\text{m}$ eli $1{,}7 \cdot 10^2\,\text{m}$. Nopeudessa on kaksi merkitsevää numeroa, koska aikaväli $40\,\text{s}$ on annettu kahdella numerolla. Paikassa tulo $2{,}5\,\text{m/s} \cdot 60\,\text{s} = 150\,\text{m}$ on myös kahdella numerolla. Siksi summa $20\,\text{m} + 150\,\text{m}$ tunnetaan vain kymmenien metrien tarkkuudella: $x = 1{,}7 \cdot 10^2\,\text{m}$.
+**Tulos.** Nopeus on $v = 2{,}5\,\text{m/s}$. Paikka hetkellä $60\,\text{s}$ on $x = 170\,\text{m}$ eli $1{,}7 \cdot 10^2\,\text{m}$. Nopeudessa on kaksi merkitsevää numeroa, koska kuvaajasta luetut arvot tunnetaan noin kahden merkitsevän numeron tarkkuudella. Aikavälin $40\,\text{s}$ loppunolla on siis tässä merkitsevä. Paikassa tulo $2{,}5\,\text{m/s} \cdot 60\,\text{s} = 150\,\text{m}$ on myös kahdella numerolla. Siksi summa $20\,\text{m} + 150\,\text{m}$ tunnetaan vain kymmenien metrien tarkkuudella: $x = 1{,}7 \cdot 10^2\,\text{m}$.
 
 <!-- vaihe -->
 

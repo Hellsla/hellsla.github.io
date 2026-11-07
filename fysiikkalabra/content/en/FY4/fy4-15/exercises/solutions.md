@@ -61,7 +61,7 @@
 ## fy4-15-L2-02
 **Given:** rotor diameter $d = 82\,\text{m}$, wind speed $v = 8.0\,\text{m/s}$, electric power $P = 758\,\text{kW}$, density of air $\rho = 1.25\,\text{kg/m}^3$
 **Find:** the fraction converted into electricity, that is the efficiency $\eta$, as a percentage
-**Principle:** The power of the wind flowing through the rotor is the kinetic energy of the air per second, $\tfrac{1}{2}\rho A v^3$. The turbine converts the fraction $\eta$ of it into electricity, so the fraction follows from the formula for the power of a wind turbine.
+**Principle:** The undisturbed wind carries the kinetic energy $\tfrac{1}{2}\rho A v^3$ per second through the area swept by the rotor; this is the reference power of the turbine. The turbine converts the fraction $\eta$ of it into electricity, so the fraction follows from the formula for the power of a wind turbine.
 **Formula:** $P = \tfrac{1}{2}\eta\rho A v^3$ and $A = \pi r^2$, so $\eta = \dfrac{2P}{\rho A v^3}$
 **Conversions:** The radius is $r = 82\,\text{m} : 2 = 41\,\text{m}$ and $P = 758\,\text{kW} = 758\,000\,\text{W}$.
 **Substitution:** $A = \pi \cdot (41\,\text{m})^2 = 5281.0\,\text{m}^2$ and $\eta = \dfrac{2 \cdot 758\,000\,\text{W}}{1.25\,\tfrac{\text{kg}}{\text{m}^3} \cdot 5281.0\,\text{m}^2 \cdot \left(8.0\,\tfrac{\text{m}}{\text{s}}\right)^3} = 0.4485$
@@ -206,7 +206,7 @@ $$\begin{aligned}m &= \frac{8.64 \cdot 10^{11}\,\text{J}}{9.81\,\tfrac{\text{m}}
 
 ## fy4-15-L2-08
 **Find:** the order of magnitude of the electric power $P$ of the wind turbine.
-**Principle:** The air flowing through the rotor per second has kinetic energy equal to the power of the wind $\tfrac{1}{2}\rho A v^3$, and the turbine converts the fraction $\eta$ of it into electricity. The turbine does not reach its rated power, so the formula $P = \tfrac{1}{2}\eta\rho A v^3$ describes it. The speed must be converted to the unit $\text{m/s}$, because it is in the formula to the third power.
+**Principle:** The undisturbed wind carries the power $\tfrac{1}{2}\rho A v^3$ through the area swept by the rotor, and the turbine converts the fraction $\eta$ of this reference power into electricity. The turbine does not reach its rated power, so the formula $P = \tfrac{1}{2}\eta\rho A v^3$ describes it. The speed must be converted to the unit $\text{m/s}$, because it is in the formula to the third power.
 **Model answer:** The radius is $r = 100\,\text{m} : 2 = 50\,\text{m}$ and $\eta = 0.40$. The wind speed is converted to $\text{m/s}$, and then the area swept by the rotor and the electric power are calculated:
 
 $$\begin{aligned}

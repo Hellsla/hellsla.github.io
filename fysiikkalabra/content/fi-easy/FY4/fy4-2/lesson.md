@@ -659,6 +659,6 @@ Toinen virhe on ajatella, että negatiivinen kiihtyvyys on aina hidastumista. Va
 ## Tiivistelmä
 - Kiihtyvyys $a = \tfrac{\Delta v}{\Delta t}$ kertoo nopeuden muutoksen sekunnissa. Yksikkö on $\text{m/s}^2$. Kiihtyvyys on vektorisuure, ja suoralla etumerkki kertoo suunnan.
 - Vauhti kasvaa, kun kiihtyvyys ja nopeus ovat samansuuntaiset. Vauhti pienenee, kun ne ovat vastakkaissuuntaiset.
-- Tasaisesti kiihtyvässä liikkeessä $(t,v)$-kuvaaja on suora. Sen kulmakerroin on kiihtyvyys. Suoran ja aika-akselin välinen pinta-ala on siirtymä. Aika-akselin alapuolinen osa ($v < 0$) lasketaan negatiivisena.
+- Tasaisesti kiihtyvässä liikkeessä $(t,v)$-kuvaaja on suora. Sen kulmakerroin on kiihtyvyys. Suoran ja aika-akselin väliin jäävä etumerkillinen pinta-ala on siirtymä. Aika-akselin alapuolinen osa ($v < 0$) lasketaan negatiivisena.
 - Yhtälöt ovat $v = v_0 + a\,t$ ja $x = x_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2$. $(t,x)$-kuvaaja on käyrä. Hetkellinen nopeus on käyrän tangentin kulmakerroin.
 - Vapaassa pudotuksessa kiihtyvyys on $g = 9{,}81\,\text{m/s}^2$ alaspäin. Sen voi määrittää sovittamalla mittauspisteisiin toisen asteen polynomin: $a = 2A$.

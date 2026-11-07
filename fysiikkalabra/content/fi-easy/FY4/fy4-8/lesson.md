@@ -371,20 +371,22 @@ Ketjuhissi nostaa junan ensimmäisen mäen huipulle. Sen jälkeen junalla on vai
 ## Kaava: Mekaniikan energiaperiaate
 
 ### Työ ja liike-energia
-Kappale siirtyy suoraviivaisesti matkan $s$, ja siihen vaikuttaa vakiovoima $\overline{F}$. Voiman tekemä työ on silloin
+Kappale liikkuu suoraviivaisesti samaan suuntaan matkan $s$, ja siihen vaikuttaa vakiovoima $\overline{F}$. Voiman tekemä työ on silloin
 ```latex
 W = F_\parallel\, s
 ```
 missä $F_\parallel$ on voiman liikkeen suuntainen komponentti ($\text{N}$) ja $s$ on kuljettu matka ($\text{m}$). Komponentti on negatiivinen, kun se osoittaa liikettä vastaan. Työn yksikkö on $1\,\text{N}\cdot\text{m} = 1\,\text{J}$.
 
-Oletetaan, että kappaleeseen vaikuttaa liikkeen suuntainen vakio kokonaisvoima $\Sigma F$. Silloin kappale kiihtyy tasaisesti, ja sen kiihtyvyys on $a = \tfrac{\Sigma F}{m}$. Luvussa *Kiihtyvyys ja tasaisesti kiihtyvä liike* opit kaksi asiaa. Tasaisesti kiihtyvässä liikkeessä kiihtyvyys on $a = \tfrac{v_2 - v_1}{t}$. Kuljettu matka on keskinopeus kertaa aika, $s = \tfrac{v_1 + v_2}{2}\,t$. Kun nämä kerrotaan keskenään, aika supistuu pois:
+Oletetaan, että kappale liikkuu $x$-akselia pitkin ja siihen vaikuttaa akselin suuntainen vakio kokonaisvoima $\Sigma F_x$. Silloin kappale kiihtyy tasaisesti, ja sen kiihtyvyys on $a = \tfrac{\Sigma F_x}{m}$. Luvussa *Kiihtyvyys ja tasaisesti kiihtyvä liike* opit kaksi asiaa. Tasaisesti kiihtyvässä liikkeessä kiihtyvyys on $a = \tfrac{v_2 - v_1}{t}$. Siirtymä on keskinopeus kertaa aika, $\Delta x = \tfrac{v_1 + v_2}{2}\,t$. Siirtymä kertoo, kuinka paljon ja mihin suuntaan paikka muuttuu. Nopeuksilla $v_1$ ja $v_2$ on tässä etumerkki: negatiivinen nopeus tarkoittaa liikettä akselin negatiiviseen suuntaan. Kun yhtälöt kerrotaan keskenään, aika supistuu pois:
 ```latex
 \begin{aligned}
-&a s = \frac{v_2 - v_1}{t} \cdot \frac{v_1 + v_2}{2}\,t \\
-&\phantom{as} = \tfrac12 \left(v_2^2 - v_1^2\right)
+&a\,\Delta x = \frac{v_2 - v_1}{t} \cdot \frac{v_1 + v_2}{2}\,t \\
+&\phantom{a\,\Delta x} = \tfrac12 \left(v_2^2 - v_1^2\right)
 \end{aligned}
 ```
-Kerro yhtälö puolittain massalla $m$ ja sijoita $ma = \Sigma F$. Saat $\Sigma F\, s = \tfrac{1}{2} m v_2^2 - \tfrac{1}{2} m v_1^2$. Kokonaisvoiman tekemä työ on siis yhtä suuri kuin liike-energian muutos:
+Kerro yhtälö puolittain massalla $m$ ja sijoita $ma = \Sigma F_x$. Saat $\Sigma F_x\, \Delta x = \tfrac{1}{2} m v_2^2 - \tfrac{1}{2} m v_1^2$ eli $\Sigma F_x\, \Delta x = \Delta E_\text{k}$.
+
+Siirtymä $\Delta x$ ja kuljettu matka $s$ ovat eri asioita. Jos kappale liikkuu koko ajan samaan suuntaan, siirtymän suuruus on sama kuin kuljettu matka. Silloin kokonaisvoiman työ on $\Sigma F_\parallel\, s$. Jos kappale kääntyy takaisin, kuljettu matka on pidempi kuin siirtymä. Esimerkki on ylös heitetty pallo. Silloin vakiovoiman työ lasketaan siirtymästä, $W = F_x\, \Delta x$. Toinen tapa on laskea työ osissa niin, että jokaisessa osassa kappale liikkuu yhteen suuntaan. Kitka ja ilmanvastus kääntyvät liikkeen mukana. Siksi niiden työ on aina negatiivinen ja kasvaa kuljetun matkan mukana. Kummassakin tapauksessa kokonaisvoiman tekemä työ on yhtä suuri kuin liike-energian muutos:
 ```latex
 W_\text{kok} = \Delta E_\text{k}
 ```

@@ -435,7 +435,7 @@ Pulkkaa, jonka massa on $12\,\text{kg}$, vedetään vaakasuoralla lumella narull
 
 <!-- vaihe -->
 
-**Tulos.** Kiihtyvyys on $a \approx 3{,}0\,\text{m/s}^2$ ja tukivoima $N \approx 72\,\text{N}$, kahden merkitsevän numeron tarkkuudella kuten lähtötiedot $80\,\text{N}$, $30\,\text{N}$ ja $12\,\text{kg}$.
+**Tulos.** Kiihtyvyys on $a \approx 3{,}0\,\text{m/s}^2$ ja tukivoima $N \approx 72\,\text{N}$, kahden merkitsevän numeron tarkkuudella kuten massa $12\,\text{kg}$. Myös voimat $80\,\text{N}$ ja $30\,\text{N}$ tulkitaan kahden merkitsevän numeron tarkkuudella annetuiksi.
 
 <!-- vaihe -->
 

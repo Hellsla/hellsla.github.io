@@ -297,7 +297,7 @@
             {
               "key": "conclusion",
               "points": 1,
-              "detail": "Jarru mitoitetaan suuremman nopeuden mukaan, koska turvallisuuden kannalta on parempi varautua liian suureen kuin liian pieneen nopeuteen. Myös mitoitus kitkattoman mallin ylärajan $17{,}2\\,\\text{m/s}$ mukaan on oikea."
+              "detail": "Mallien vertailussa varaudutaan suurempaan nopeuteen (c-kohdan arvio tai kitkattoman mallin vertailuarvo $17{,}2\\,\\text{m/s}$), koska liian pienelle nopeudelle mitoitettu jarru voisi pettää. Vastauksesta käy ilmi, että luvut ovat mallin arvioita eivätkä turvallisia enimmäisnopeuksia: todellinen mitoitus vaatii turvamarginaalit, kuormitustarkastelun ja mittaukset."
             }
           ]
         }
@@ -378,7 +378,7 @@
             {
               "key": "conclusion",
               "points": 1,
-              "detail": "Kertomus ei pidä paikkaansa: nopeus oli törmäyshetkellä selvästi yli $40\\,\\text{km/h}$, ja ennen jarrutusta vielä suurempi."
+              "detail": "Kertomus ei pidä paikkaansa: mallin mukaan nopeus oli juuri ennen törmäystä noin $49\\,\\text{km/h}$ eli selvästi yli $40\\,\\text{km/h}$."
             }
           ]
         },

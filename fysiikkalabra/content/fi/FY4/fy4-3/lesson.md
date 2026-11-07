@@ -603,7 +603,7 @@ F_\text{v} &= 2F_1 \\
 
 <!-- vaihe -->
 
-**Järkevyys.** Jos ilmanvastus olisi työntövoimia pienempi, kokonaisvoima osoittaisi eteenpäin ja kone kiihtyisi; jos suurempi, kone hidastuisi. Tasainen nopeus on mahdollinen vain, kun ilmanvastus on yhtä suuri kuin työntövoimien summa $2\cdot 48\,\text{kN}$. Tulos ei riipu nopeuden suuruudesta: sama päättely pätee kaikilla tasaisilla nopeuksilla.
+**Järkevyys.** Jos ilmanvastus olisi työntövoimia pienempi, kokonaisvoima osoittaisi eteenpäin ja kone kiihtyisi; jos suurempi, kone hidastuisi. Tasainen nopeus on mahdollinen vain, kun ilmanvastus on yhtä suuri kuin työntövoimien summa $2\cdot 48\,\text{kN}$. Sama päättely pätee kaikilla tasaisilla nopeuksilla: työntövoiman ja ilmanvastuksen summa on aina nolla. Voimien suuruudet voivat silti olla eri nopeuksilla erilaiset, sillä ilmanvastus kasvaa nopeuden kasvaessa, joten suuremmalla tasaisella nopeudella tarvitaan myös suurempi työntövoima.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että liikkuvaan kappaleeseen täytyy vaikuttaa voima liikkeen suuntaan ja että liike loppuu, kun tämä voima "kuluu loppuun". Ensimmäisen lain mukaan näin ei ole: liukuvaan curlingkiveen ei vaikuta mikään eteenpäin, ja se hidastuu vain kitkan takia. Toinen yleinen virhe on luulla, että voima ja vastavoima kumoavat toisensa. Ne vaikuttavat eri kappaleisiin: hevonen vetää kärryä ja kärry hevosta, mutta kärryn liikkeen ratkaisevat vain kärryyn vaikuttavat voimat. Kolmas virhe on pitää pöydällä lepäävän kirjan painoa ja pöydän tukivoimaa voimana ja vastavoimana. Ne ovat yhtä suuret ensimmäisen lain takia. Tukivoiman vastavoima on kirjan voima pöytään ja painon vastavoima kirjan vetovoima Maahan.

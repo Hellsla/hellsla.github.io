@@ -287,7 +287,7 @@ The value $0.030$ of part c is therefore about $0.006$ too large, an error of ab
 
 *The estimates.* The estimate $14\,\text{m/s}$ of part c is too large, because in it friction also stays the same, although in reality it grows with the mass. The other instructor's estimate $11.2\,\text{m/s}$ is too small, because air resistance does not grow with the mass. The true speed is between these.
 
-*Design.* The brake is designed for the larger estimate, $14\,\text{m/s}$: if the true speed is smaller, the brake is certainly enough, but a brake designed for too small a speed could fail. The best information is obtained by measuring the speeds of heavy riders with the radar as well.
+*Design.* When the models are compared, the brake should be designed for the larger speed, because a brake designed for too small a speed could fail. Neither number is a safe maximum speed, however. The $14\,\text{m/s}$ of part c is an estimate based on an assumption about the resisting force, and the $17.2\,\text{m/s}$ of the frictionless model is the larger reference value of this simplified energy model. Actually designing the brake requires separate safety margins, a load analysis and real measurements, for example radar measurements of the speeds of heavy riders.
 
 ### Yleisiä virheitä
 - In part b the whole difference between the potential energy and the kinetic energy is divided by the height $15.0\,\text{m}$ and not by the distance travelled by the resisting force, $180\,\text{m}$.
@@ -297,7 +297,7 @@ The value $0.030$ of part c is therefore about $0.006$ too large, an error of ab
 
 ### Hyväksytään myös
 - In parts b and c the rounded resisting force $F_\text{res} = 29\,\text{N}$ may be used: then $F_\text{res}\,s = 29\,\text{N} \cdot 180\,\text{m} = 5220\,\text{J}$, and the speed of part c is again $13.6\,\text{m/s} \approx 14\,\text{m/s}$. In part c, $13.6\,\text{m/s}$ and $14\,\text{m/s}$ are accepted.
-- In part d the brake may be designed for the upper limit of the frictionless model, $17.2\,\text{m/s}$, or for the estimate of part c with a safety margin for heavier riders. Either is a correct and safe conclusion when justified, and earns the point for the conclusion.
+- In part d the conclusion may be based on the estimate of part c, $14\,\text{m/s}$, or on the reference value of the frictionless model, $17.2\,\text{m/s}$. Either justified choice earns the point for the conclusion.
 
 ## fy4-s3
 
@@ -449,7 +449,7 @@ The value $0.030$ of part c is therefore about $0.006$ too large, an error of ab
 **Formula:** $m_\text{B}v_\text{B} + m_\text{A} \cdot 0 = (m_\text{A} + m_\text{B})\,v'$, so $v_\text{B} = \dfrac{(m_\text{A} + m_\text{B})\,v'}{m_\text{B}}$
 **Conversions:** For comparison $1\,\text{m/s} = 3.6\,\text{km/h}$.
 **Substitution:** $v_\text{B} = \dfrac{2950\,\text{kg} \cdot 7.86\,\text{m/s}}{1700\,\text{kg}} = 13.6\,\text{m/s}$ and $13.6 \cdot 3.6\,\text{km/h} = 49\,\text{km/h}$
-**Answer:** $v_\text{B} \approx 14\,\text{m/s}$ (more precisely $13.6\,\text{m/s} \approx 49\,\text{km/h}$). Two significant figures, because the sliding distance $4.2\,\text{m}$ and the coefficient of friction $0.75$ are known to two figures. The account is not true: the speed of car B at the moment of collision was about $9\,\text{km/h}$ over the limit. The wheels were locked right after the collision, so the driver had probably braked already before the collision, and before braking the speed was even greater.
+**Answer:** $v_\text{B} \approx 14\,\text{m/s}$ (more precisely $13.6\,\text{m/s} \approx 49\,\text{km/h}$). Two significant figures, because the sliding distance $4.2\,\text{m}$ and the coefficient of friction $0.75$ are known to two figures. The account is not true: according to the model, the speed of car B just before the collision was about $49\,\text{km/h}$, about $9\,\text{km/h}$ over the limit.
 **Reasonableness:** The common speed is smaller than $v_\text{B}$, because the same momentum is shared among a larger mass. The kinetic energy decreases in the collision from about $158\,\text{kJ}$ to about $91\,\text{kJ}$: about $40\,\%$ of it is used in crumpling the bodywork, which fits a perfectly inelastic collision.
 
 ### c)

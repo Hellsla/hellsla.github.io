@@ -343,7 +343,7 @@ When an object moves from the position $x_1$ to the position $x_2$, its **displa
 
 <figure class="unit-photo"><img src="pics/fy4/highway-light-trails.webp" alt="A curving motorway at night: red and white streaks of light, street lamps and snowy verges."><figcaption>In a night photo with a long exposure time, vehicle lights draw streaks. The red streaks are rear lights, the white ones headlights.</figcaption></figure>
 
-Motion can be shown as a **$(t,x)$ graph**, with time on the horizontal axis and position on the vertical axis. The graph of uniform motion is a straight line. The steepness of the line, that is its slope, is the velocity: a steeper line means a greater velocity, a horizontal line means being at rest and a falling line means motion in the negative direction. The graph is not a picture of the path of the object: a rising line does not mean uphill, but that the position increases.
+Motion can be shown as a **$(t,x)$ graph**, with time on the horizontal axis and position on the vertical axis. The graph of uniform motion is a straight line. The slope of the line is the velocity. The greater the absolute value of the slope, the greater the speed of the object, and the sign of the slope tells the direction of the motion: a rising line means motion in the positive direction, a falling line motion in the negative direction and a horizontal line being at rest. The graph is not a picture of the path of the object: a rising line does not mean uphill, but that the position increases.
 
 ## Formula: Average velocity and the equation of uniform motion
 When the position changes by $\Delta x$ during the time interval $\Delta t = t_2 - t_1$, the average velocity is the displacement divided by the time:
@@ -472,7 +472,7 @@ x &= x_1 + v\,t \\
 
 <!-- vaihe -->
 
-**Result.** The velocity is $v = 2.5\,\text{m/s}$ and the position at the moment $60\,\text{s}$ is $x = 170\,\text{m}$ or $1.7 \cdot 10^2\,\text{m}$. The velocity has two significant figures, because the time interval $40\,\text{s}$ has two. In the position, the product $2.5\,\text{m/s} \cdot 60\,\text{s} = 150\,\text{m}$ also has two figures, so the sum $20\,\text{m} + 150\,\text{m}$ is known only to the accuracy of tens of metres: $x = 1.7 \cdot 10^2\,\text{m}$.
+**Result.** The velocity is $v = 2.5\,\text{m/s}$ and the position at the moment $60\,\text{s}$ is $x = 170\,\text{m}$ or $1.7 \cdot 10^2\,\text{m}$. The velocity has two significant figures, because the values read from the graph are known to about two significant figures: the final zero of the time interval $40\,\text{s}$ is significant here. In the position, the product $2.5\,\text{m/s} \cdot 60\,\text{s} = 150\,\text{m}$ also has two figures, so the sum $20\,\text{m} + 150\,\text{m}$ is known only to the accuracy of tens of metres: $x = 1.7 \cdot 10^2\,\text{m}$.
 
 <!-- vaihe -->
 

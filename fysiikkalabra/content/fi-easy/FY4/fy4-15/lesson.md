@@ -234,7 +234,7 @@ Kaikki veden menettämä energia ei muutu sähköksi. Vesi hankaa putken seiniä
 missä $\eta$ (eta) on hyötysuhde. Se ilmoitetaan desimaalilukuna tai prosentteina. Hyötysuhde on enintään $100\,\%$. Todellisissa laitteissa se jää usein alle $100\,\%$, koska osa otetusta energiasta ei päädy haluttuun käyttöön, tässä sähköksi. Suuren vesivoimalan hyötysuhde on noin $90\,\%$.
 
 ### Tuulen liike-energia
-Tuulivoimalassa energian lähde on liikkuvan ilman liike-energia $E_\text{k} = \tfrac{1}{2}mv^2$. Tuuli painaa roottorin lapoja ja pyörittää roottoria. Ilma hidastuu, kun se ohittaa roottorin. Roottori ei voi pysäyttää ilmaa kokonaan, koska ilman on päästävä virtaamaan pois roottorin takaa. Siksi edes ihanteellinen roottori ei saa talteen kuin noin $59\,\%$ läpi virtaavan tuulen tehosta. Todellisen tuulivoimalan osuus on alle puolet. Ilma on kevyttä: kuutiometrin massa on vain noin $1{,}25\,\text{kg}$. Siksi tuulivoimalan roottorin on oltava suuri. Silloin sen läpi virtaa sekunnissa paljon ilmaa.
+Tuulivoimalassa energian lähde on liikkuvan ilman liike-energia $E_\text{k} = \tfrac{1}{2}mv^2$. Tuuli painaa roottorin lapoja ja pyörittää roottoria. Ilma hidastuu, kun se ohittaa roottorin. Roottori ei voi pysäyttää ilmaa kokonaan, koska ilman on päästävä virtaamaan pois roottorin takaa. Siksi edes ihanteellinen roottori ei saa talteen kuin noin $59\,\%$ siitä tehosta, jonka häiriötön tuuli tuo roottorin pyyhkäisemän alueen läpi. Todellisen tuulivoimalan osuus on alle puolet. Ilma on kevyttä: kuutiometrin massa on vain noin $1{,}25\,\text{kg}$. Siksi tuulivoimalan roottorin on oltava suuri. Silloin sen läpi virtaa sekunnissa paljon ilmaa.
 
 <figure class="unit-photo"><img src="pics/fy4/middelgrunden-wind-farm.webp" alt="Valkoisia tuulivoimaloita meren rannalla. Edessä on merta ja veneitä."><figcaption>Merituulipuisto Kööpenhaminan edustalla Tanskassa.</figcaption></figure>
 
@@ -248,7 +248,7 @@ P = \eta \rho Q g h
 missä $P$ on voimalan sähköteho ($\text{W}$), $\eta$ hyötysuhde, $\rho$ veden tiheys ($1000\,\text{kg/m}^3$), $Q$ virtaama ($\text{m}^3\text{/s}$), $g$ putoamiskiihtyvyys ($9{,}81\,\text{m/s}^2$) ja $h$ putouskorkeus ($\text{m}$). Kaavassa oletetaan, että veden liike-energia on ylä- ja alavedessä pieni. Silloin muuttuva energia on potentiaalienergian muutos.
 
 ### Tuulivoimala
-Ajassa $t$ roottorin läpi virtaava ilma täyttää lieriön. Lieriön poikkipinta-ala on roottorin pyyhkäisemä pinta-ala $A = \pi r^2$, ja sen pituus on $vt$. Tämän ilman massa on $m = \rho A v t$. Sen liike-energia on $\tfrac{1}{2}mv^2 = \tfrac{1}{2}\rho A v^3 t$. Roottorin läpi virtaavan tuulen teho on siis $\tfrac{1}{2}\rho A v^3$.
+Tarkastellaan ensin häiriötöntä tuulta. Häiriötön tuuli tarkoittaa tuulta, jota roottori ei ole vielä hidastanut. Sen nopeus on $v$. Ajassa $t$ häiriötön tuuli toisi roottorin pyyhkäisemän alueen $A = \pi r^2$ läpi ilman, joka täyttää lieriön. Lieriön pituus on $vt$. Tämän ilman massa on $m = \rho A v t$. Sen liike-energia on $\tfrac{1}{2}mv^2 = \tfrac{1}{2}\rho A v^3 t$. Häiriöttömän tuulen teho pyyhkäisyalueen läpi on siis $P_\text{tuuli} = \tfrac{1}{2}\rho A v^3$.\n\nOikeasti roottori hidastaa ilmaa jo ennen lapoja. Roottorin kohdalla ilma virtaa siis hitaammin kuin $v$, eikä sen massavirta ole $\rho A v$. Siksi $P_\text{tuuli}$ on vertailuteho. Se kertoo, kuinka paljon energiaa sekunnissa kulkisi samankokoisen alueen läpi, jos voimalaa ei olisi. Voimalan hyötysuhde $\eta$ on osuus tästä vertailutehosta, $\eta = P : P_\text{tuuli}$.
 
 <svg data-fig="ilmalierio" viewBox="0 0 600 360" role="img" aria-label="Periaatekuva, ei mittakaavassa: tuuli puhaltaa vasemmalta tuulivoimalan roottoria kohti. Ajassa t roottorin läpi virtaava ilma täyttää lieriön. Lieriön poikkipinta-ala on roottorin pyyhkäisemä pinta-ala A = πr². Sen pituus on s = vt. Ilman massa on siis m = ρAvt. Sininen nuoli on tuulen nopeus v." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy415-ilc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef5f9"/><stop offset="1" stop-color="#d0e6fb"/></linearGradient></defs>
@@ -292,14 +292,14 @@ Ajassa $t$ roottorin läpi virtaava ilma täyttää lieriön. Lieriön poikkipin
   <foreignObject x="488" y="93.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$A = \pi r^2$</div></foreignObject>
 </svg>
 
-Voimala muuttaa tästä sähköksi osuuden $\eta$:
+Sähköteho on siis:
 ```latex
 P = \frac{1}{2}\eta \rho A v^3
 ```
-missä $P$ on sähköteho ($\text{W}$), $\eta$ tuulen tehosta sähköksi saatu osuus eli voimalan hyötysuhde, $\rho$ ilman tiheys (noin $1{,}25\,\text{kg/m}^3$), $A$ roottorin pyyhkäisemä pinta-ala ($\text{m}^2$) ja $v$ tuulen nopeus ($\text{m/s}$).
+missä $P$ on sähköteho ($\text{W}$), $\eta$ voimalan hyötysuhde eli sähkötehon osuus häiriöttömän tuulen vertailutehosta, $\rho$ ilman tiheys (noin $1{,}25\,\text{kg/m}^3$), $A$ roottorin pyyhkäisemä pinta-ala ($\text{m}^2$) ja $v$ häiriöttömän tuulen nopeus ($\text{m/s}$).
 
 ### Miksi nopeus on kolmannessa potenssissa?
-Kun tuulen nopeus kaksinkertaistuu, roottorin läpi virtaa sekunnissa kaksi kertaa enemmän ilmaa. Lisäksi jokaisella ilmakilogrammalla on neljä kertaa enemmän liike-energiaa. Teho kasvaa siis $2 \cdot 4 = 2^3 = 8$ -kertaiseksi. Todellisen voimalan tehokäyrässä teho kasvaa tuulen nopeudesta $5\,\text{m/s}$ nopeuteen $10\,\text{m/s}$ noin $8{,}9$-kertaiseksi, koska hyötysuhde on suuremmalla nopeudella vähän parempi. Noin $13\,\text{m/s}$:n tuulesta alkaen teho pysyy $1650\,\text{kW}$:ssa. Se on voimalan nimellisteho eli suurin teho, jota generaattori voi antaa. Lapoja käännetään niin, että osa tuulesta pääsee ohi. Silloin kaava vakiohyötysuhteella ei enää kuvaa voimalaa.
+Kun tuulen nopeus kaksinkertaistuu, pyyhkäisyalueen läpi kulkee sekunnissa kaksi kertaa enemmän ilmaa. Lisäksi jokaisella ilmakilogrammalla on neljä kertaa enemmän liike-energiaa. Vertailuteho kasvaa siis $2 \cdot 4 = 2^3 = 8$ -kertaiseksi. Sähköteho kasvaa samassa suhteessa vain mallissa, jossa hyötysuhde pysyy suunnilleen samana. Todellisen voimalan tehokäyrässä teho kasvaa tuulen nopeudesta $5\,\text{m/s}$ nopeuteen $10\,\text{m/s}$ noin $8{,}9$-kertaiseksi, koska hyötysuhde on suuremmalla nopeudella vähän parempi.\n\nOikealla voimalalla on lisäksi kolme tuulen nopeuden aluetta, joita kuutiollinen malli ei kuvaa. Kun tuuli on heikompi kuin käynnistysnopeus, voimala ei tuota sähköä. Tällä voimalalla käynnistysnopeus on noin $3\text{–}4\,\text{m/s}$. Noin $13\,\text{m/s}$:n tuulesta alkaen teho pysyy $1650\,\text{kW}$:ssa. Se on voimalan nimellisteho eli suurin teho, jota generaattori voi antaa. Lapoja käännetään niin, että osa tuulesta pääsee ohi. Silloin kaava vakiohyötysuhteella ei enää kuvaa voimalaa. Kun myrskytuuli on voimakkaampi kuin pysäytysnopeus, voimala pysäytetään, jotta sen rakenteet eivät vaurioidu. Silloin teho putoaa nollaan.
 
 <svg data-fig="tehokayra" viewBox="0 0 600 340" role="img" aria-label="Kuvaaja mittakaavassa, valmistajan ilmoittama tehokäyrä: tuulivoimalan sähköteho P kilowatteina tuulen nopeuden v funktiona, kun roottorin halkaisija on 82 m. Pisteet: 3 m/s 0 kW, 4 m/s 28 kW, 5 m/s 144 kW, 6 m/s 309 kW, 7 m/s 511 kW, 8 m/s 758 kW, 9 m/s 1017 kW, 10 m/s 1285 kW, 11 m/s 1504 kW, 12 m/s 1637 kW ja 13–20 m/s 1650 kW. Katkoviiva on mallin käyrä ½ηρAv³, kun η = 0,45. Se nousee kuten pisteet, mutta jatkaa nousuaan, kun pisteet tasaantuvat 1650 kilowattiin." style="max-width:100%;font-size:24px">
   <line x1="133.5" y1="296" x2="133.5" y2="50" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -379,8 +379,10 @@ Kun tuulen nopeus kaksinkertaistuu, roottorin läpi virtaa sekunnissa kaksi kert
   <foreignObject x="344.5" y="86" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{tehokäyrä}$</span></div></foreignObject>
 </svg>
 
+Kuvaajan pisteet ovat Vestas V82 -tuulivoimalan valmistajan tehokäyrä. Voimalan roottorin halkaisija on $82\,\text{m}$, ja sen nimellisteho on $1650\,\text{kW}$. Valmistaja ilmoittaa tehokäyrän vakio-olosuhteissa. Tavallisesti ilman tiheys on silloin $1{,}225\,\text{kg/m}^3$, ja tuulen nopeus on kymmenen minuutin keskiarvo napakorkeudella. Mallin katkoviiva on laskettu tiheydellä $1{,}25\,\text{kg/m}^3$, joten vertailu on likimääräinen. Liian voimakkaassa tuulessa voimala pysäytetään, ja sen teho putoaa nollaan. Kuvaaja ei näytä tätä aluetta. Lähde: Vestas Wind Systems, V82-voimalan tekniset tiedot; lukuarvot NREL:n tuulivoimala-arkistosta (turbine-models, Vestas V82).
+
 ## Esimerkki
-Tuulivoimalan roottorin halkaisija on $120\,\text{m}$. Tuulen nopeus on $9{,}0\,\text{m/s}$ ja ilman tiheys $1{,}25\,\text{kg/m}^3$. Voimala muuttaa $45\,\%$ roottorin läpi virtaavan tuulen tehosta sähköksi. Kuinka suuri on voimalan sähköteho?
+Tuulivoimalan roottorin halkaisija on $120\,\text{m}$. Tuulen nopeus on $9{,}0\,\text{m/s}$ ja ilman tiheys $1{,}25\,\text{kg/m}^3$. Voimala muuttaa sähköksi $45\,\%$ siitä tehosta, jonka häiriötön tuuli tuo roottorin pyyhkäisemän alueen läpi. Kuinka suuri on voimalan sähköteho?
 
 <!-- vaihe -->
 
@@ -388,7 +390,7 @@ Tuulivoimalan roottorin halkaisija on $120\,\text{m}$. Tuulen nopeus on $9{,}0\,
 
 <!-- vaihe -->
 
-**Periaate.** Roottorin läpi virtaa sekunnissa ilmaa, ja sen liike-energia on tuulen teho $\tfrac{1}{2}\rho A v^3$. Voimala muuttaa siitä sähköksi osuuden $\eta$. Sähköteho saadaan siis tuulivoimalan tehon kaavasta. Pinta-ala $A$ on ympyrä, jonka roottori pyyhkäisee.
+**Periaate.** Häiriötön tuuli tuo roottorin pyyhkäisemän alueen läpi tehon $\tfrac{1}{2}\rho A v^3$. Voimala muuttaa tästä vertailutehosta sähköksi osuuden $\eta$. Sähköteho saadaan siis tuulivoimalan tehon kaavasta. Pinta-ala $A$ on ympyrä, jonka roottori pyyhkäisee.
 
 <!-- vaihe -->
 
@@ -425,7 +427,7 @@ P &= \tfrac{1}{2}\eta\rho A v^3 \\
 
 <!-- vaihe -->
 
-**Järkevyys.** Tehokäyrän voimalan roottorin halkaisija on $82\,\text{m}$. Se antaa tuulen nopeudella $9\,\text{m/s}$ tehon $1017\,\text{kW}$. Tämän esimerkin roottorin pinta-ala on $(120 : 82)^2 \approx 2{,}1$ kertaa suurempi. Tehon pitäisi siis olla noin $2{,}1 \cdot 1{,}0\,\text{MW} \approx 2{,}2\,\text{MW}$. Tulos $2{,}3\,\text{MW}$ on samaa suuruusluokkaa. Tuulen teho on $5{,}2\,\text{MW}$, ja sähköksi saadaan alle puolet, kuten pitääkin.
+**Järkevyys.** Tehokäyrän voimalan roottorin halkaisija on $82\,\text{m}$. Se antaa tuulen nopeudella $9\,\text{m/s}$ tehon $1017\,\text{kW}$. Tämän esimerkin roottorin pinta-ala on $(120 : 82)^2 \approx 2{,}1$ kertaa suurempi. Tehon pitäisi siis olla noin $2{,}1 \cdot 1{,}0\,\text{MW} \approx 2{,}2\,\text{MW}$. Tulos $2{,}3\,\text{MW}$ on samaa suuruusluokkaa. Häiriöttömän tuulen vertailuteho on $5{,}2\,\text{MW}$, ja sähköksi saadaan alle puolet, kuten pitääkin.
 
 ## Yleinen virhekäsitys
 Usein ajatellaan, että voimala tuottaa energiaa. Voimala vain muuntaa energiaa. Vesivoimalan sähkö tulee veden potentiaalienergiasta ja tuulivoimalan sähkö tuulen liike-energiasta. Osa energiasta muuttuu aina muuksi kuin sähköksi. Toinen virhe on ajatella, että kaksinkertainen tuuli antaa kaksinkertaisen tehon. Teho kasvaa nopeuden kolmannessa potenssissa, kunnes voimala saavuttaa nimellistehonsa. Kolmas virhe on sekoittaa teho ja energia. Teho ilmoitetaan watteina. Energia saadaan, kun teho kerrotaan ajalla. Voimala, jonka teho on $3\,\text{MW}$, tuottaa tunnissa $3\,\text{MWh}$ energiaa.
@@ -434,5 +436,5 @@ Usein ajatellaan, että voimala tuottaa energiaa. Voimala vain muuntaa energiaa.
 - Vesi- ja tuulivoimala muuntavat mekaanista energiaa sähköksi. Vesivoimala käyttää veden potentiaalienergiaa ja tuulivoimala ilman liike-energiaa.
 - Hyötysuhde $\eta = \tfrac{P_\text{s}}{P_\text{o}}$ on enintään $100\,\%$. Suuren vesivoimalan hyötysuhde on noin $90\,\%$ ja tuulivoimalan alle $50\,\%$.
 - Vesivoimalan teho on $P = \eta\rho Q g h$. Se on verrannollinen virtaamaan ja putouskorkeuteen.
-- Tuulivoimalan teho on $P = \tfrac{1}{2}\eta\rho A v^3$. Kaksinkertainen tuulen nopeus antaa noin kahdeksankertaisen tehon, kunnes voimala saavuttaa nimellistehonsa.
+- Tuulivoimalan teho on $P = \tfrac{1}{2}\eta\rho A v^3$. Kun hyötysuhde pysyy suunnilleen samana, kaksinkertainen tuulen nopeus antaa noin kahdeksankertaisen tehon, kunnes voimala saavuttaa nimellistehonsa. Hyvin voimakkaassa tuulessa voimala pysäytetään.
 - Energia on teho kertaa aika, $E = Pt$.

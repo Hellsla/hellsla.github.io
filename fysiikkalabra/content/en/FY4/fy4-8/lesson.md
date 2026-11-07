@@ -363,20 +363,22 @@ A chain lift lifts the train to the top of the first hill. After that the train 
 ## Formula: the work–energy principle
 
 ### Work and kinetic energy
-When an object moves in a straight line a distance $s$ and a constant force $\overline{F}$ acts on it, the work done by the force is
+When an object moves in a straight line in one direction a distance $s$ and a constant force $\overline{F}$ acts on it, the work done by the force is
 ```latex
 W = F_\parallel\, s
 ```
 where $F_\parallel$ is the component of the force in the direction of the motion ($\text{N}$), negative when the component points against the motion, and $s$ is the distance travelled ($\text{m}$). The unit of work is $1\,\text{N}\cdot\text{m} = 1\,\text{J}$.
 
-When a constant net force $\Sigma F$ in the direction of the motion acts on an object, it accelerates uniformly, and its acceleration is $a = \tfrac{\Sigma F}{m}$. In the chapter *Acceleration and uniformly accelerated motion* you learned that in uniformly accelerated motion the acceleration is $a = \tfrac{v_2 - v_1}{t}$ and the distance travelled is the average speed times the time, $s = \tfrac{v_1 + v_2}{2}\,t$. When these are multiplied together, the time cancels:
+When an object moves along the $x$-axis and a constant net force $\Sigma F_x$ along the axis acts on it, it accelerates uniformly, and its acceleration is $a = \tfrac{\Sigma F_x}{m}$. In the chapter *Acceleration and uniformly accelerated motion* you learned that in uniformly accelerated motion the acceleration is $a = \tfrac{v_2 - v_1}{t}$ and the displacement is the average velocity times the time, $\Delta x = \tfrac{v_1 + v_2}{2}\,t$. Here the velocities $v_1$ and $v_2$ are signed: a negative velocity means motion in the negative direction of the axis. When these equations are multiplied together, the time cancels:
 ```latex
 \begin{aligned}
-&a s = \frac{v_2 - v_1}{t} \cdot \frac{v_1 + v_2}{2}\,t \\
-&\phantom{as} = \tfrac12 \left(v_2^2 - v_1^2\right)
+&a\,\Delta x = \frac{v_2 - v_1}{t} \cdot \frac{v_1 + v_2}{2}\,t \\
+&\phantom{a\,\Delta x} = \tfrac12 \left(v_2^2 - v_1^2\right)
 \end{aligned}
 ```
-When the equation is multiplied on both sides by the mass $m$ and $ma = \Sigma F$ is substituted, we get $\Sigma F\, s = \tfrac{1}{2} m v_2^2 - \tfrac{1}{2} m v_1^2$. So the work done by the net force equals the change in kinetic energy:
+When the equation is multiplied on both sides by the mass $m$ and $ma = \Sigma F_x$ is substituted, we get $\Sigma F_x\, \Delta x = \tfrac{1}{2} m v_2^2 - \tfrac{1}{2} m v_1^2$, that is, $\Sigma F_x\, \Delta x = \Delta E_\text{k}$.
+
+The displacement $\Delta x$ is not the same as the distance travelled $s$. If the object moves in one direction all the time, the magnitude of the displacement equals the distance travelled, and the work of the net force is $\Sigma F_\parallel\, s$. If the object turns back, like a ball thrown upwards, the distance travelled is longer than the displacement. The work of a constant force is then calculated from the displacement, $W = F_x\, \Delta x$, or in parts so that on each part the motion is in one direction. Friction and air resistance, on the other hand, turn with the motion, so their work is always negative and grows with the distance travelled. In both cases the work done by the net force equals the change in kinetic energy:
 ```latex
 W_\text{net} = \Delta E_\text{k}
 ```
