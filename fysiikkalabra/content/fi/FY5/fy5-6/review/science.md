@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: e60f675c7a4d67f9
+CONTENT-HASH: aaf97035e025d284
 
 ## Blocking
 
 ## Polish
-- lesson.md:647 — "Siksi esimerkiksi ISS:n rataa nostetaan" follows three causes, but reboosts compensate mainly the atmospheric drag — e.g. "Ilmanvastuksen vuoksi esimerkiksi ISS:n rataa nostetaan ajoittain …".
 
 ## Checked
-- light delta review (teacher 2026-11-07): only the passages changed against origin/main were judged, in context, not a full review; weightlessness = no support + common free fall with gravity acting, the same in the text and the summary (guardrail wording); ISS caption (free fall, orbital speed keeps it from hitting Earth) correct; perturbations (drag, Moon and Sun, oblateness) correct; the keskipakoisvoima sentence is unchanged and right.
+- light delta review (teacher 2026-11-07), round 2: HEAD~1 diff: ISS reboost now tied to upper-atmosphere drag (the main cause of decay in low orbit): correct; the earlier Polish item is fixed, no new error.

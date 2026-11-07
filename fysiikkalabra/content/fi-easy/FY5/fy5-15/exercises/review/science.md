@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 4d3e8ba6e9447fc3
+CONTENT-HASH: 3dd4cf5ba6c03743
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-light delta review (teacher 2026-11-07): git diff origin/main of exercises/ and answers.py (one task text), not a full review: L1-03 now states free propagation outdoors so the meter reading may be treated as intensity level (true only in a free field); recomputed 95 dB → 3.2e-3 W/m².
+- light delta review (teacher 2026-11-07), round 2: HEAD~1 diff: L1-03 Annettu now states the free-field condition; recomputed 3,2·10⁻³ W/m²; correct.

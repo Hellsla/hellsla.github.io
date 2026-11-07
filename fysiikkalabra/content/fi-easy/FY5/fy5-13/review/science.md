@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 38decc5e1d75a4f8
+CONTENT-HASH: 96ae571dd1d73779
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-light delta review (teacher 2026-11-07): only the changed passages of the batch packet's diff (= git diff origin/main) judged in context, not a full review; lossless-reflection assumption stated; a weaker reflected wave leaves the nodes vibrating slightly: correct.
+- light delta review (teacher 2026-11-07), round 2: HEAD~1 diff: the ideal-reflection sentences moved after the superposition sentence; physics unchanged and correct.

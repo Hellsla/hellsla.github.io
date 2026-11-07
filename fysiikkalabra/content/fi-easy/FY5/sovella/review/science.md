@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: cd154cee617d1a42
+CONTENT-HASH: 9b134fe278280455
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- solutions.md:341 + tasks.json (s3 d criteria) — no criterion is the effective-mass point alone: criterion 1 joins the energy method with m_eff, and criteria 2–3 name m_eff and 0,43 m/s. Split criterion 1, or say that the massless answer gets criteria 2–3 with m in place of m_eff and 0,45 m/s.
 
 ## Checked
-light delta review (teacher 2026-11-07): git diff origin/main of sovella/ and lessons/FY5/sovella/ (review/ ignored), not a full review: crane moments about horizontal axis A (vertical weights cannot turn about the vertical axis), figure point A; spring m_eff = m + m_s/3, recomputed k = 19.9 N/m, v_max = 0.433 m/s (massless 0.446, 14 g gives 0.434), T = 0.73 s; organ 94 dB, t_v = 1.0 h, 300 %; Jupiter wording only.
+- light delta review (teacher 2026-11-07), round 2: HEAD~1 diff: s3 d massless answer now gets only the other criteria, consistent with the stem's m_s/3; recomputed v_max 0,433 m/s, massless 0,446 m/s.

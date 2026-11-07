@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 809f4a181e50b8ea
+CONTENT-HASH: f56ad36ac4ab3be9
 
 ## Blocking
-(none)
 
 ## Polish
-- content/fi-easy/FY5/fy5-15/lesson.md:218,484 — A-weighted SPL is close to the unweighted intensity level only in a free field and when the A-weighting changes little (mid frequencies) — add that condition or drop "A-painotettua" from the comparison.
-- content/fi-easy/FY5/fy5-15/lesson.md:470 — "annettu kokonaislukuna. Siksi sitä pidetään tarkkana arvona" suggests integers are exact — write that the example takes 10 m as exact.
+- lesson.md:271 (Mitä mittari mittaa) — 'tasojen lukuarvot ovat suunnilleen samat' does not yet say painottamaton, which the caption and summary now say; add it so the section matches them.
 
 ## Checked
-light delta review (teacher 2026-11-07): git diff origin/main of lesson.md, inquiry.json, exit-ticket.json, lessons/FY5/fy5-15/, not a full review: SPL vs intensity level (pressure vs energy flux, p0 = 20 µPa, equal only in a free progressive field, differ in a reverberant room) correct; I0 as conventional reference; recomputed 96 dB → 3.98e-3 W/m², 5.00 W; 80 dB → 1.0e-4 W/m².
+- light delta review (teacher 2026-11-07), round 2: HEAD~1 diff: caption and summary now say only the unweighted SPL ≈ intensity level outdoors and that an A-weighted reading can differ: earlier Polish fixed; 10 m 'pidetään tarkkana arvona' in the example: Polish fixed. Results 4,0·10⁻³ W/m², 5,0 W unchanged.

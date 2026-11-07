@@ -338,7 +338,7 @@ $\tfrac{1}{r}$ is chosen for the horizontal axis and $v^2$ for the vertical axis
 - In part b slopes of $1.95\text{–}2.02\,\text{s}^2/\text{kg}$ and the spring constants calculated from them, $19.5\text{–}20.2\,\text{N/m}$, are accepted, as is a line fitted by a calculator or spreadsheet ($19.9\,\text{N/m}$).
 - The graph of part a can also be drawn from the quantities $m$ and $T^2$ with the mass on a gram scale; in part b the unit must then be converted.
 - In part c the deviation can also be explained by a systematic error, when the explanation is justified and it is stated that an addition of constant size does not change the slope.
-- In part d, $v_\text{max} \approx 0.45\,\text{m/s}$ calculated with a massless spring earns the points of the other criteria, but not the point for the effective mass, when the student says that the mass of the spring is ignored and justifies the assumption. So is the added mass of $14\,\text{g}$ from the intercept of part c, which gives the same $0.43\,\text{m/s}$.
+- In part d, $v_\text{max} \approx 0.45\,\text{m/s}$ calculated with a massless spring earns two points when the student says that the mass of the spring is ignored and justifies the assumption: the point for the energy principle (the first criterion without the effective mass) and the point for the equation (with the mass $m$). The point for the result requires the model the task asks for. The added mass of $14\,\text{g}$ from the intercept of part c, which gives the same $0.43\,\text{m/s}$, is also accepted.
 
 ### Yleisiä virheitä
 - A $(m, T)$ graph is drawn and a straight line is fitted to its curved set of points.

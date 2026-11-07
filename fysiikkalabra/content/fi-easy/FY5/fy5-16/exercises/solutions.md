@@ -36,7 +36,7 @@
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $L = 106\,\text{dB} - 23\,\text{dB} = 83\,\text{dB}$
 **Vastaus:** $83\,\text{dB}$, kokonaisina desibeleinä kuten lähtötiedot.
-**Järkevyys:** Toiminta-arvoihin verrataan altistusta ilman suojaimia. Taso $106\,\text{dB}$ ylittää kummankin toiminta-arvon, joten suojaimia on käytettävä. Korvalle tuleva $83\,\text{dB}$ jää altistuksen raja-arvon $87\,\text{dB(A)}$ alle. Vertailuannos ei siis täyty työpäivän aikana, jos suojaimet ovat hyvin paikallaan ja niitä pidetään koko ajan. Vertailuannosta pienempi annos ei silti takaa, että kuulo on turvassa. Ilman suojaimia vertailuaika olisi noin $4\,\text{min}$.
+**Järkevyys:** Toiminta-arvoihin verrataan altistusta ilman suojaimia. Taso $106\,\text{dB}$ ylittää kummankin toiminta-arvon, joten suojaimia on käytettävä. Korvalle tuleva $83\,\text{dB}$ jää altistuksen raja-arvon $87\,\text{dB(A)}$ alle. Koska $83\,\text{dB}$ on alle $85\,\text{dB}$, vertailuannos ei täyty työpäivän aikana, jos suojaimet ovat hyvin paikallaan ja niitä pidetään koko ajan. Vertailuannosta pienempi annos ei silti takaa, että kuulo on turvassa. Ilman suojaimia vertailuaika olisi noin $4\,\text{min}$.
 
 ## fy5-16-L1-05
 **Kysytty:** kuuluuko kukin keino lähteeseen, kulkutiehen vai korvaan
