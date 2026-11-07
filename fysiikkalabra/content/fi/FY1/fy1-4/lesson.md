@@ -223,7 +223,7 @@ Hyvä sovitus on lähellä kaikkia pisteitä, eikä se painotu yhden pisteen muk
 ### Lineaarinen malli
 Jos pisteet asettuvat likimain suoralle, suureiden riippuvuutta kuvaa lineaarinen malli, jonka yhtälö on suoran yhtälö. Kulmakerroin kertoo, kuinka paljon pystysuure muuttuu, kun vaakasuure kasvaa yhden yksikön, ja vakiotermi kertoo pystysuureen arvon, kun vaakasuure on nolla.
 
-Kun vakiotermi on nolla, suora kulkee origon kautta ja suureet ovat suoraan verrannolliset: kaksinkertainen $x$ antaa kaksinkertaisen $y$:n. Mittaukset osoittavat mallin päteväksi vain mitatulla alueella. Jos suoraa jatketaan mitatun alueen ulkopuolelle, oletetaan, että riippuvuus pysyy samanlaisena, ja tulos on vain arvio. Jos pisteet kaareutuvat systemaattisesti suoran ympärillä, esimerkiksi kaikki pisteet ovat suoran yläpuolella päissä ja alapuolella keskellä, lineaarinen malli ei sovi.
+Kun vakiotermi on nolla, suora kulkee origon kautta ja suureet ovat suoraan verrannolliset: kaksinkertainen $x$ antaa kaksinkertaisen $y$:n. Mittaukset tukevat mallia vain mitatulla alueella. Jos suoraa jatketaan mitatun alueen ulkopuolelle, oletetaan, että riippuvuus pysyy samanlaisena, ja tulos on vain arvio. Jos pisteet kaareutuvat systemaattisesti suoran ympärillä, esimerkiksi päiden pisteet ovat suoran yläpuolella ja keskikohdan pisteet sen alapuolella, lineaarinen malli ei sovi.
 
 ## Kaava: Suoran yhtälö
 Lineaarisen mallin kuvaaja on suora, jonka yhtälö on
@@ -234,7 +234,7 @@ missä $y$ on pystyakselin suure, $x$ vaaka-akselin suure, $k$ kulmakerroin ja $
 ```latex
 k = \frac{\Delta y}{\Delta x} = \frac{y_2 - y_1}{x_2 - x_1}
 ```
-missä $\Delta y$ on pisteiden välinen $y$:n muutos ja $\Delta x$ niiden välinen $x$:n muutos. Kulmakertoimen yksikkö on $y$:n yksikkö jaettuna $x$:n yksiköllä: jos $y$ on metreinä ja $x$ sekunteina, $k$ on $\text{m/s}$.
+missä $\Delta y$ on pisteiden välinen $y$:n muutos ja $\Delta x$ niiden välinen $x$:n muutos. Kulmakertoimen yksikkö on $y$:n yksikkö jaettuna $x$:n yksiköllä: jos $y$ on metreinä ja $x$ sekunteina, $k$:n yksikkö on $\text{m/s}$.
 
 <svg data-fig="slope" viewBox="0 0 600 350" role="img" aria-label="Kaavakuva mittakaavassa: suora y = kx + b, jonka kulmakerroin on 0,5 ja vakiotermi 1. Suora leikkaa y-akselin kohdassa y = b = 1. Suoralta on valittu kaksi kaukana toisistaan olevaa pistettä P₁ = (2, 2) ja P₂ = (8, 5). Kulmakolmion vaakasivu on Δx = x₂ − x₁ = 6 ja pystysivu Δy = y₂ − y₁ = 3, joten kulmakerroin on k = Δy/Δx = 0,5." style="max-width:100%;font-size:24px">
   <line x1="179" y1="300" x2="179" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -402,7 +402,7 @@ t &= \frac{T - b}{k} \\
 
 <!-- vaihe -->
 
-**Järkevyys.** Vakiotermi $20\,{}^\circ\text{C}$ on veden lämpötila ennen lämmitystä, eli huoneenlämpö, ja kulmakerroin $8{,}0\,\tfrac{{}^\circ\text{C}}{\text{min}}$ kertoo lämpenemisvauhdin. Mittaustaulukossa $40\,{}^\circ\text{C}$ ylittyy kolmannen ja neljännen mittauksen välissä, kun $T$ on $36{,}5\,{}^\circ\text{C}$ kahden minuutin ja $43{,}8\,{}^\circ\text{C}$ kolmen minuutin kohdalla, joten $2{,}5\,\text{min}$ on oikealla välillä. Pisteet poikkeavat suorasta enintään noin yhden asteen.
+**Järkevyys.** Vakiotermi $20\,{}^\circ\text{C}$ on mallin mukainen veden lämpötila lämmityksen alkaessa, ja se on huoneenlämmön luokkaa. Kulmakerroin $8{,}0\,\tfrac{{}^\circ\text{C}}{\text{min}}$ kertoo lämpenemisvauhdin. Mittaustaulukossa $40\,{}^\circ\text{C}$ ylittyy kolmannen ja neljännen mittauksen välissä, kun $T$ on $36{,}5\,{}^\circ\text{C}$ kahden minuutin ja $43{,}8\,{}^\circ\text{C}$ kolmen minuutin kohdalla, joten $2{,}5\,\text{min}$ on oikealla välillä. Pisteet poikkeavat suorasta enintään noin yhden asteen.
 
 ## Yleinen virhekäsitys
 Moni yhdistää mittauspisteet toisiinsa viivalla tai pakottaa suoran kulkemaan jonkin mittauspisteen kautta, vaikka siinäkin pisteessä on mittausepävarmuutta. Suora sovitetaan koko pistejoukkoon; se voi kulkea jonkin pisteen kautta, mutta sen ei tarvitse.

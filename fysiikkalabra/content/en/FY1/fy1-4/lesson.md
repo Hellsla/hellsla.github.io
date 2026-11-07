@@ -223,7 +223,7 @@ A good fit is close to all the points and does not lean towards any single point
 ### Linear model
 If the points lie roughly along a straight line, the relationship between the quantities is described by a linear model, whose equation is the equation of a straight line. The slope tells you how much the vertical quantity changes when the horizontal quantity increases by one unit, and the constant term tells you the value of the vertical quantity when the horizontal quantity is zero.
 
-When the constant term is zero, the line passes through the origin and the quantities are directly proportional: doubling $x$ doubles $y$. The measurements show that the model holds only in the range that was measured. If the line is extended beyond the measured range, you assume that the relationship stays the same, and the result is only an estimate. If the points curve systematically around the line, for example all the points are above the line at the ends and below it in the middle, the linear model does not fit.
+When the constant term is zero, the line passes through the origin and the quantities are directly proportional: doubling $x$ doubles $y$. The measurements support the model only in the range that was measured. If the line is extended beyond the measured range, you assume that the relationship stays the same, and the result is only an estimate. If the points curve systematically around the line, for example the points at the ends are above the line and the points in the middle below it, the linear model does not fit.
 
 ## Formula: Equation of a straight line
 The graph of a linear model is a straight line with the equation
@@ -402,7 +402,7 @@ t &= \frac{T - b}{k} \\
 
 <!-- vaihe -->
 
-**Reasonableness.** The constant term $20\,{}^\circ\text{C}$ is the temperature of the water before heating, that is, room temperature, and the slope $8.0\,\tfrac{{}^\circ\text{C}}{\text{min}}$ tells you how fast the water warms up. In the table, $40\,{}^\circ\text{C}$ is passed between the third and fourth measurements, since $T$ is $36.5\,{}^\circ\text{C}$ at two minutes and $43.8\,{}^\circ\text{C}$ at three minutes, so $2.5\,\text{min}$ is in the right interval. The points deviate from the line by at most about one degree.
+**Reasonableness.** The constant term $20\,{}^\circ\text{C}$ is the temperature of the water at the start of heating according to the model, and it is about room temperature. The slope $8.0\,\tfrac{{}^\circ\text{C}}{\text{min}}$ tells you how fast the water warms up. In the table, $40\,{}^\circ\text{C}$ is passed between the third and fourth measurements, since $T$ is $36.5\,{}^\circ\text{C}$ at two minutes and $43.8\,{}^\circ\text{C}$ at three minutes, so $2.5\,\text{min}$ is in the right interval. The points deviate from the line by at most about one degree.
 
 ## Common misconception
 Many students join the data points with a line, or force the line to pass through one of the data points, even though that point, too, has measurement uncertainty. The line is fitted to the whole set of points; it may pass through some point, but it does not have to.

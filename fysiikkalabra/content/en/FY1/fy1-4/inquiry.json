@@ -55,7 +55,7 @@
       "choices": [
         {
           "text": "A broken line that joins the successive data points and so passes through every data point.",
-          "feedback": "The example data refute this. The segments of the broken line would rise with slopes $0.2$, $0.8$, $0.5$, $0.3$ and $0.5\\,\\text{m/s}$, as if the trolley kept changing its speed. The line also follows the random errors. In the experiment, a line with a slope of about $0.5\\,\\text{m/s}$ fits all the points equally well."
+          "feedback": "The example data refute this. The segments of the broken line would rise with slopes $0.2$, $0.8$, $0.5$, $0.3$ and $0.5\\,\\text{m/s}$, as if the trolley kept changing its speed. The line also follows the random errors. In the experiment, a line with a slope of about $0.5\\,\\text{m/s}$ passes close to all the points."
         },
         {
           "text": "A line through the origin that passes close to all the points and has points on both sides of it.",
@@ -91,7 +91,7 @@
         },
         {
           "text": "At the first data point, about $78.5\\,\\text{g}$.",
-          "feedback": "The example data refute this. The first point already has $20\\,\\text{ml}$ of liquid. The line continues to the left, and its mass decreases by about $0.79\\,\\text{g}$ per millilitre as liquid is removed, so at $V = 0$ the mass is about $78.5\\,\\text{g} - 20\\,\\text{ml} \\cdot 0.79\\,\\text{g/ml} \\approx 63\\,\\text{g}$."
+          "feedback": "The example data refute this. The first point already has $20\\,\\text{ml}$ of liquid. The line continues to the left, and along it the mass decreases by about $0.79\\,\\text{g}$ for every millilitre removed, so at $V = 0$ the mass is about $78.5\\,\\text{g} - 20\\,\\text{ml} \\cdot 0.79\\,\\text{g/ml} \\approx 63\\,\\text{g}$."
         }
       ]
     },
@@ -224,7 +224,7 @@
           },
           {
             "text": "It fits, because all the deviations are about the same length and the points are close to the line.",
-            "feedback": "The lengths vary, and the length of a deviation does not tell you whether the model fits. Check the direction of the deviations: up at the ends and down in the middle means that the relationship is curved."
+            "feedback": "The lengths vary, and the length of the deviations alone does not tell you whether the model fits. Check the direction of the deviations: up at the ends and down in the middle means that the relationship is curved."
           }
         ]
       }
@@ -282,7 +282,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Find the error",
-      "prompt": "A student finds the slope of the graph of a trolley from the data points $(1.0\\,\\text{s};\\ 0.6\\,\\text{m})$ and $(2.0\\,\\text{s};\\ 0.8\\,\\text{m})$:\n\n$$k = \\frac{0.8\\,\\text{m} - 0.6\\,\\text{m}}{2.0\\,\\text{s} - 1.0\\,\\text{s}} = 0.2\\,\\text{m/s}$$\n\nThe other data points, however, give about $0.5\\,\\text{m/s}$. Where is the error?",
+      "prompt": "A student finds the slope of the graph of a trolley from the data points $(1.0\\,\\text{s};\\ 0.6\\,\\text{m})$ and $(2.0\\,\\text{s};\\ 0.8\\,\\text{m})$:\n\n$$k = \\frac{0.8\\,\\text{m} - 0.6\\,\\text{m}}{2.0\\,\\text{s} - 1.0\\,\\text{s}} = 0.2\\,\\text{m/s}$$\n\nThe slope of the line fitted to the points, however, is about $0.5\\,\\text{m/s}$. Where is the error?",
       "choices": [
         {
           "text": "The slope should have been calculated by dividing the time difference by the distance difference, that is, $\\Delta t : \\Delta s$ and not $\\Delta s : \\Delta t$.",
@@ -339,7 +339,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Apply to a new situation",
-      "prompt": "The height $h$ of a plant was followed as a function of days $t$, and the line fitted to the data points passes through the points $(2.0\\,\\text{days};\\ 5.6\\,\\text{cm})$ and $(10.0\\,\\text{days};\\ 12.0\\,\\text{cm})$. On which day from the start of the measurements is the plant 20 cm tall according to the line, when the line is extended beyond the measured range? Give the answer in days.",
+      "prompt": "The height $h$ of a plant was followed as a function of days $t$, and the line fitted to the data points passes through the points $(2.0\\,\\text{days};\\ 5.6\\,\\text{cm})$ and $(10.0\\,\\text{days};\\ 12.0\\,\\text{cm})$. How many days after the start of the measurements is the plant $20\\,\\text{cm}$ tall according to the line, when the line is extended beyond the measured range? Give the answer in days.",
       "answer": 20,
       "unit": "days",
       "tolerance": 0.02,
@@ -351,14 +351,14 @@
       "mistakes": [
         {
           "value": 25,
-          "feedback": "You calculated $t = h : k = 20 : 0.80$ as if the line passed through the origin. The line has a constant term $b = 4.0\\,\\text{cm}$: the plant was already 4.0 cm tall at the start of the measurements, so you need $t = (h - b) : k$."
+          "feedback": "You calculated $t = h : k = 20 : 0.80$ as if the line passed through the origin. The line has a constant term $b = 4.0\\,\\text{cm}$: the plant was already $4.0\\,\\text{cm}$ tall at the start of the measurements, so you need $t = (h - b) : k$."
         },
         {
           "value": 16,
           "feedback": "You subtracted the constant term ($20 - 4.0 = 16\\,\\text{cm}$) but did not divide the result by the slope. The change in height, $16\\,\\text{cm}$, is divided by the growth rate $0.80\\,\\tfrac{\\text{cm}}{\\text{day}}$, which gives the time."
         }
       ],
-      "solution": "**Given:** points on the line $(t_1;\\ h_1) = (2.0\\,\\text{days};\\ 5.6\\,\\text{cm})$ and $(t_2;\\ h_2) = (10.0\\,\\text{days};\\ 12.0\\,\\text{cm})$; height $h = 20\\,\\text{cm}$\n\n**Find:** the time $t$ at which $h = 20\\,\\text{cm}$\n\n**Principle:** The growth is steady, so the height follows the line $h = kt + b$. The slope is calculated from two points on the line that are far apart and the constant term from one point. The time is solved from the equation when the height is known. The prediction extends outside the measured range and assumes that the growth continues in the same way.\n\n**Formula:** $k = \\dfrac{h_2 - h_1}{t_2 - t_1}$, $b = h_1 - k t_1$ and $h = kt + b$, from which\n\n$$t = \\frac{h - b}{k}$$\n\n**Conversions:** None needed: the heights are in centimetres and the times in days.\n\n**Substitution:** $k = \\dfrac{12.0\\,\\text{cm} - 5.6\\,\\text{cm}}{10.0\\,\\text{days} - 2.0\\,\\text{days}} = 0.80\\,\\tfrac{\\text{cm}}{\\text{day}}$, $b = 5.6\\,\\text{cm} - 0.80\\,\\tfrac{\\text{cm}}{\\text{day}} \\cdot 2.0\\,\\text{days} = 4.0\\,\\text{cm}$ and $t = \\dfrac{20\\,\\text{cm} - 4.0\\,\\text{cm}}{0.80\\,\\tfrac{\\text{cm}}{\\text{day}}} = 20\\,\\text{days}$\n\n**Answer:** $20\\,\\text{days}$, two significant figures, because the slope $0.80\\,\\tfrac{\\text{cm}}{\\text{day}}$ is known to two figures.\n\n**Reasonableness:** In 20 days the plant has grown $20 \\cdot 0.80 = 16\\,\\text{cm}$ from the starting height of $4.0\\,\\text{cm}$, that is, $4.0 + 16 = 20\\,\\text{cm}$. In reality the growth does not continue in the same way, so the prediction is only an estimate.",
+      "solution": "**Given:** points on the line $(t_1;\\ h_1) = (2.0\\,\\text{days};\\ 5.6\\,\\text{cm})$ and $(t_2;\\ h_2) = (10.0\\,\\text{days};\\ 12.0\\,\\text{cm})$; height $h = 20\\,\\text{cm}$\n\n**Find:** the time $t$ at which $h = 20\\,\\text{cm}$\n\n**Principle:** The growth is steady, so the height follows the line $h = kt + b$. The slope is calculated from two points on the line that are far apart and the constant term from one point. The time is solved from the equation when the height is known. The prediction extends outside the measured range and assumes that the growth continues in the same way.\n\n**Formula:** $k = \\dfrac{h_2 - h_1}{t_2 - t_1}$, $b = h_1 - k t_1$ and $h = kt + b$, from which\n\n$$t = \\frac{h - b}{k}$$\n\n**Conversions:** None needed: the heights are in centimetres and the times in days.\n\n**Substitution:** $k = \\dfrac{12.0\\,\\text{cm} - 5.6\\,\\text{cm}}{10.0\\,\\text{days} - 2.0\\,\\text{days}} = 0.80\\,\\tfrac{\\text{cm}}{\\text{day}}$, $b = 5.6\\,\\text{cm} - 0.80\\,\\tfrac{\\text{cm}}{\\text{day}} \\cdot 2.0\\,\\text{days} = 4.0\\,\\text{cm}$ and $t = \\dfrac{20\\,\\text{cm} - 4.0\\,\\text{cm}}{0.80\\,\\tfrac{\\text{cm}}{\\text{day}}} = 20\\,\\text{days}$\n\n**Answer:** $20\\,\\text{days}$, two significant figures, because the slope $0.80\\,\\tfrac{\\text{cm}}{\\text{day}}$ is known to two figures.\n\n**Reasonableness:** In 20 days the plant has grown $20 \\cdot 0.80 = 16\\,\\text{cm}$ from the starting height of $4.0\\,\\text{cm}$, that is, $4.0 + 16 = 20\\,\\text{cm}$. In reality the growth may not continue in the same way, so the prediction is only an estimate.",
       "optional": true
     },
     {
@@ -402,7 +402,7 @@
         },
         {
           "text": "The line is drawn through the middle of the set of points so that there are roughly equal numbers of points on both sides of it.",
-          "feedback": "Correct. Measurement errors are random, so the points deviate from the line in both directions. A good fit runs close to all the points, and it does not have to pass through any of them.",
+          "feedback": "Correct. Because of random errors, the points deviate from the line in both directions. A good fit runs close to all the points, and it does not have to pass through any of them.",
           "correct": true
         },
         {

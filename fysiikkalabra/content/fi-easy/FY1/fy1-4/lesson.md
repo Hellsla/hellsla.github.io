@@ -223,7 +223,7 @@ Hyvä sovitus on lähellä kaikkia pisteitä. Se ei kallistu yhden pisteen suunt
 ### Lineaarinen malli
 Pisteet voivat asettua likimain suoralle. Silloin suureiden riippuvuutta kuvaa lineaarinen malli. Mallin yhtälö on suoran yhtälö. Kulmakerroin kertoo, kuinka paljon pystysuure muuttuu, kun vaakasuure kasvaa yhden yksikön. Vakiotermi kertoo pystysuureen arvon, kun vaakasuure on nolla.
 
-Vakiotermi voi olla nolla. Silloin suora kulkee origon kautta ja suureet ovat suoraan verrannolliset: kaksinkertainen $x$ antaa kaksinkertaisen $y$:n. Mittaukset osoittavat, että malli pätee eli toimii mitatulla alueella. Sen ulkopuolelta mittaukset eivät kerro mitään. Suoraa voi jatkaa mitatun alueen ulkopuolelle. Silloin oletetaan, että riippuvuus pysyy samanlaisena. Tulos on vain arvio. Pisteet voivat kaareutua systemaattisesti suoran ympärillä. Esimerkiksi kaikki pisteet ovat suoran yläpuolella päissä ja alapuolella keskellä. Silloin lineaarinen malli ei sovi.
+Vakiotermi voi olla nolla. Silloin suora kulkee origon kautta ja suureet ovat suoraan verrannolliset: kaksinkertainen $x$ antaa kaksinkertaisen $y$:n. Mittaukset tukevat mallia vain mitatulla alueella. Sen ulkopuolelta mittaukset eivät kerro mitään. Suoraa voi jatkaa mitatun alueen ulkopuolelle. Silloin oletetaan, että riippuvuus pysyy samanlaisena. Tulos on vain arvio. Pisteet voivat kaareutua systemaattisesti suoran ympärillä. Esimerkiksi päiden pisteet ovat suoran yläpuolella ja keskikohdan pisteet sen alapuolella. Silloin lineaarinen malli ei sovi.
 
 ## Kaava: Suoran yhtälö
 Lineaarisen mallin kuvaaja on suora. Suoran yhtälö on
@@ -234,7 +234,7 @@ Tässä $y$ on pystyakselin suure ja $x$ on vaaka-akselin suure. Kulmakerroin on
 ```latex
 k = \frac{\Delta y}{\Delta x} = \frac{y_2 - y_1}{x_2 - x_1}
 ```
-Tässä $\Delta y$ on pisteiden välinen $y$:n muutos. $\Delta x$ on pisteiden välinen $x$:n muutos. Kulmakertoimen yksikkö on $y$:n yksikkö jaettuna $x$:n yksiköllä. Jos $y$ on metreinä ja $x$ sekunteina, $k$ on $\text{m/s}$.
+Tässä $\Delta y$ on pisteiden välinen $y$:n muutos. $\Delta x$ on pisteiden välinen $x$:n muutos. Kulmakertoimen yksikkö on $y$:n yksikkö jaettuna $x$:n yksiköllä. Jos $y$ on metreinä ja $x$ sekunteina, $k$:n yksikkö on $\text{m/s}$.
 
 <svg data-fig="slope" viewBox="0 0 600 350" role="img" aria-label="Kaavakuva mittakaavassa: suora y = kx + b. Kulmakerroin on 0,5 ja vakiotermi on 1. Suora leikkaa y-akselin kohdassa y = b = 1. Suoralta on valittu kaksi pistettä, jotka ovat kaukana toisistaan: P₁ = (2, 2) ja P₂ = (8, 5). Kulmakolmion vaakasivu on Δx = x₂ − x₁ = 6. Pystysivu on Δy = y₂ − y₁ = 3. Kulmakerroin on siis k = Δy/Δx = 0,5." style="max-width:100%;font-size:24px">
   <line x1="179" y1="300" x2="179" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -402,7 +402,7 @@ t &= \frac{T - b}{k} \\
 
 <!-- vaihe -->
 
-**Järkevyys.** Vakiotermi $20\,{}^\circ\text{C}$ on veden lämpötila ennen lämmitystä, eli huoneenlämpö. Kulmakerroin $8{,}0\,\tfrac{{}^\circ\text{C}}{\text{min}}$ kertoo lämpenemisvauhdin. Taulukossa $40\,{}^\circ\text{C}$ ylittyy kolmannen ja neljännen mittauksen välissä. Kun $T$ on $36{,}5\,{}^\circ\text{C}$, aika on 2 minuuttia. Kun lämpötila on $43{,}8\,{}^\circ\text{C}$, aika on 3 minuuttia. Siksi $2{,}5\,\text{min}$ on oikealla välillä. Pisteet poikkeavat suorasta enintään noin yhden asteen.
+**Järkevyys.** Vakiotermi $20\,{}^\circ\text{C}$ on mallin mukainen veden lämpötila lämmityksen alussa. Se on huoneenlämmön luokkaa. Kulmakerroin $8{,}0\,\tfrac{{}^\circ\text{C}}{\text{min}}$ kertoo lämpenemisvauhdin. Taulukossa $40\,{}^\circ\text{C}$ ylittyy kolmannen ja neljännen mittauksen välissä. Kun $T$ on $36{,}5\,{}^\circ\text{C}$, aika on 2 minuuttia. Kun lämpötila on $43{,}8\,{}^\circ\text{C}$, aika on 3 minuuttia. Siksi $2{,}5\,\text{min}$ on oikealla välillä. Pisteet poikkeavat suorasta enintään noin yhden asteen.
 
 ## Yleinen virhekäsitys
 Moni yhdistää mittauspisteet toisiinsa viivalla. Moni myös pakottaa suoran kulkemaan jonkin mittauspisteen kautta, vaikka siinäkin pisteessä on mittausepävarmuutta. Suora sovitetaan koko pistejoukkoon. Se voi kulkea jonkin pisteen kautta, mutta sen ei tarvitse.
