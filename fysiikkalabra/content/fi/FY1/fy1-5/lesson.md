@@ -173,7 +173,7 @@
 ## Ydinajatus
 Tasainen liike on liikettä suoraa pitkin vakionopeudella: kappale kulkee yhtä pitkissä ajoissa yhtä pitkät matkat. Nopeus kertoo, kuinka pitkän matkan kappale kulkee yhdessä sekunnissa, joten sen yksikkö on metri sekunnissa (m/s). Jos kärry etenee joka sekunti kaksi metriä, sen nopeus on $2\,\text{m/s}$.
 
-<svg data-fig="motion" viewBox="0 0 600 330" role="img" aria-label="Liikekuva, jossa sama kärry on piirretty viiden peräkkäisen sekunnin kohdalle ruudulle 0 s, 1 s, 2 s, 3 s ja 4 s. Kärryjen välit ovat yhtä pitkät, ja jokaisen välin alla on yhtä pitkä sulku Δs: tasaisessa liikkeessä kappale kulkee yhtä pitkissä ajoissa yhtä pitkät matkat. Välit on piirretty mittakaavassa, kärryt ovat samankokoisia." style="max-width:100%;font-size:24px">
+<svg data-fig="motion" viewBox="0 0 600 330" role="img" aria-label="Liikekuva, jossa sama kärry on piirretty viidelle peräkkäiselle hetkelle 0 s, 1 s, 2 s, 3 s ja 4 s. Kärryjen välit ovat yhtä pitkät, ja jokaisen välin alla on yhtä pitkä sulku Δs: tasaisessa liikkeessä kappale kulkee yhtä pitkissä ajoissa yhtä pitkät matkat. Välit on piirretty mittakaavassa, kärryt ovat samankokoisia." style="max-width:100%;font-size:24px">
   <line x1="24" y1="150" x2="576" y2="150" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <rect x="42" y="114" width="56" height="22" rx="4" fill="#d0e6fb" stroke="#1f2933" stroke-width="2.5"/>
   <rect x="57" y="98" width="26" height="16" rx="3" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
@@ -215,9 +215,9 @@ Tasainen liike on liikettä suoraa pitkin vakionopeudella: kappale kulkee yhtä 
   <circle cx="546" cy="142" r="3" fill="#ffffff"/>
   <line x1="530" y1="150" x2="530" y2="162" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="500" y="171.5" width="60" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$4\,\text{s}$</div></foreignObject>
-  <line x1="76" y1="70" x2="123" y2="70" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M136,70 L122,76.5 L122,63.5 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <foreignObject x="96" y="31.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$v$</div></foreignObject>
+  <line x1="76" y1="70" x2="123" y2="70" stroke="#1971c2" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M136,70 L122,76.5 L122,63.5 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <foreignObject x="96" y="31.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$v$</div></foreignObject>
   <path d="M70,212 V224 H185 V212" fill="none" stroke="#6b7480" stroke-width="2.5" stroke-linejoin="round"/>
   <foreignObject x="111" y="235.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\Delta s$</div></foreignObject>
   <path d="M185,212 V224 H300 V212" fill="none" stroke="#6b7480" stroke-width="2.5" stroke-linejoin="round"/>
@@ -232,7 +232,7 @@ Tasainen liike on liikettä suoraa pitkin vakionopeudella: kappale kulkee yhtä 
 <figure class="unit-photo"><img src="pics/fy1/city-highway-light-trails.webp" alt="Moottoritie yöllä kaupungissa: vasemmalla kaistoilla valkoisia ja oikealla punaisia valojuovia, tien varsilla katuvaloja ja taustalla kerrostaloja."><figcaption>Pitkällä valotusajalla autojen valot piirtävät kuvaan viivoja: valkoiset ovat ajovaloja ja punaiset takavaloja. Kuva tallentaa liikkeen radan, mutta siitä ei näe, oliko liike tasaista.</figcaption></figure>
 
 ### Suoraan verrannollisuus
-Kaksi suuretta ovat suoraan verrannollisia, jos niiden suhde on aina sama. Kun tasainen liike alkaa nollakohdasta, kuljettu matka $s$ ja aika $t$ ovat suoraan verrannollisia: kaksinkertainen aika antaa kaksinkertaisen matkan, ja suhde $s : t$ on nopeus $v$. $(t, s)$-kuvaajassa tämä näkyy suorana, joka kulkee origon kautta.
+Kaksi suuretta ovat suoraan verrannollisia, jos niiden suhde on aina sama. Kun tasainen liike alkaa nollakohdasta, paikka $s$ on sama kuin kuljettu matka, ja se on suoraan verrannollinen aikaan $t$: kaksinkertainen aika antaa kaksinkertaisen matkan, ja suhde $s : t$ on nopeus $v$. $(t, s)$-kuvaajassa tämä näkyy suorana, joka kulkee origon kautta.
 
 ### Lineaarinen malli
 Tasainen liike on malli, ei todellisuus. Pyöräilijä polkee epätasaisesti, ja Voyager 2 hidastuu hieman Auringon vetovoiman takia. Malli on silti hyvä, kun nopeus muuttuu tarkasteltavana aikana vain vähän. Sen kuvaaja on suora, ja suoraa kuvaa lineaarinen malli: paikka muuttuu yhtä paljon jokaista sekuntia kohti. Mallilla lasketut arvot ovat mallin arvoja, joita verrataan mittauksiin.
@@ -242,14 +242,14 @@ Oletetaan, että kappale on tarkastelun alussa ($t = 0$) paikassa $s_0$ ja liikk
 ```latex
 s = s_0 + v t
 ```
-missä $s$ on paikka (m) valitusta nollakohdasta mitattuna, $s_0$ alkupaikka (m), $v$ nopeus (m/s) ja $t$ aika alusta (s). Kappaleen kulkema matka on $\Delta s = s - s_0 = vt$. Tässä luvussa kappale liikkuu yhteen suuntaan, joten nopeus on positiivinen.
+missä $s$ on paikka (m) valitusta nollakohdasta mitattuna, $s_0$ alkupaikka (m), $v$ nopeus (m/s) ja $t$ aika alusta (s). Kappaleen kulkema matka on $\Delta s = s - s_0 = vt$. Tämän luvun esimerkeissä kappale liikkuu positiiviseen suuntaan, joten nopeus on positiivinen.
 
 ### Nopeus kuvaajasta
 $(t, s)$-kuvaaja on suora, ja suoran kulmakerroin on nopeus:
 ```latex
 v = \frac{\Delta s}{\Delta t}
 ```
-missä $\Delta s$ on paikan muutos (m) ja $\Delta t$ sen aikaväli (s). Suora leikkaa $s$-akselin alkupaikan $s_0$ kohdalla. Jos $s_0 = 0$, paikka on suoraan verrannollinen aikaan: $s = vt$. Jos $s_0 \neq 0$, suora on yhtä jyrkkä mutta siirtynyt ylös tai alas. Silloin vain matka $\Delta s$, ei paikka $s$, on suoraan verrannollinen aikaan.
+missä $\Delta s$ on paikan muutos (m) ja $\Delta t$ sen aikaväli (s). Suora leikkaa $s$-akselin alkupaikan $s_0$ kohdalla. Jos $s_0 = 0$, paikka on suoraan verrannollinen aikaan: $s = vt$. Jos $s_0 \neq 0$, suora on yhtä jyrkkä kuin samalla nopeudella origosta alkava suora, mutta siirtynyt ylös tai alas. Silloin vain matka $\Delta s$, ei paikka $s$, on suoraan verrannollinen aikaan.
 
 <svg data-fig="graph" viewBox="0 0 600 360" role="img" aria-label="Kuvaaja mittakaavassa: kaksi tasaista liikettä nopeudella 3 m/s esitetään (t, s)-koordinaatistossa suorina. Alempi suora kulkee origon kautta (alkupaikka 0), ylempi alkaa paikasta s₀ = 5 m ja on alemman suoran kanssa yhdensuuntainen. Alemmalle suoralle on piirretty kulmakolmio: 2 s:n aikana paikka kasvaa 6 m, joten kulmakerroin on 3 m/s eli nopeus." style="max-width:100%;font-size:24px">
   <line x1="165" y1="300" x2="165" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -296,7 +296,7 @@ missä $\Delta s$ on paikan muutos (m) ja $\Delta t$ sen aikaväli (s). Suora le
 </svg>
 
 ### Yksiköt
-Muunna aina ennen sijoitusta yhteensopiviin yksiköihin (yleensä SI-yksiköihin): sijoita yksikön paikalle sen arvo. Esimerkiksi $1\,\text{km} = 1000\,\text{m}$ ja $1\,\text{h} = 3600\,\text{s}$, joten $72\,\text{km/h} = \dfrac{72\cdot1000\,\text{m}}{3600\,\text{s}} = 20\,\text{m/s}$. Samoin $1\,\text{min} = 60\,\text{s}$. Tähtitieteessä pitkät etäisyydet ilmoitetaan tähtitieteellisinä yksikköinä: $1\,\text{AU} = 149\,597\,870{,}7\,\text{km}$ on suunnilleen Maan ja Auringon keskietäisyys.
+Muunna aina ennen sijoitusta yhteensopiviin yksiköihin (yleensä SI-yksiköihin): sijoita yksikön paikalle sen arvo. Esimerkiksi $1\,\text{km} = 1000\,\text{m}$ ja $1\,\text{h} = 3600\,\text{s}$, joten $72\,\text{km/h} = \tfrac{72\cdot1000\,\text{m}}{3600\,\text{s}} = 20\,\text{m/s}$. Samoin $1\,\text{min} = 60\,\text{s}$. Aurinkokunnan mittakaavan etäisyyksiä ilmoitetaan usein tähtitieteellisinä yksikköinä: $1\,\text{AU} = 149\,597\,870{,}7\,\text{km}$ on suunnilleen Maan ja Auringon keskietäisyys.
 
 ## Esimerkki
 Voyager 2 -luotain ylitti heliopaussin 5. marraskuuta 2018 etäisyydellä $s_0 = 119{,}7\,\text{AU}$ Auringosta (NASA/JPL). Luotaimen nopeus Aurinkoon nähden on $v = 15{,}341\,\text{km/s}$ (JPL:n Voyager-lentotilanne). Oletetaan nopeus vakioksi. Kuinka kaukana Auringosta luotain on mallin mukaan 5. marraskuuta 2026?
@@ -339,7 +339,7 @@ s &= s_0 + v t \\
 
 <!-- vaihe -->
 
-**Järkevyys.** Nopeus $15\,\text{km/s}$ vie vuodessa noin $15\,\text{km/s} \cdot 3{,}16 \cdot 10^{7}\,\text{s} \approx 4{,}7 \cdot 10^{8}\,\text{km} \approx 3{,}2\,\text{AU}$, joten 8 vuodessa luotain etenee noin 26 AU ja $119{,}7 + 26 \approx 146\,\text{AU}$. Sama malli antaa 15. helmikuuta 2026 arvon $143{,}3\,\text{AU}$, ja JPL ilmoittaa helmikuulle 2026 arvon $143{,}05\,\text{AU}$. Ero on noin $0{,}2\,\text{AU}$, alle $0{,}2\,\%$ etäisyydestä, joten vakionopeusmalli toimii tässä hyvin. Ero johtuu osin siitä, että Auringon vetovoima hidastaa luotainta aivan vähän ja alkuetäisyys on annettu vain kymmenesosan tarkkuudella. Malli on siis tarkka murto-osan prosentista.
+**Järkevyys.** Nopeus $15\,\text{km/s}$ vie vuodessa noin $15\,\text{km/s} \cdot 3{,}16 \cdot 10^{7}\,\text{s} \approx 4{,}7 \cdot 10^{8}\,\text{km} \approx 3{,}2\,\text{AU}$, joten 8 vuodessa luotain etenee noin $26\,\text{AU}$ ja $119{,}7\,\text{AU} + 26\,\text{AU} \approx 146\,\text{AU}$. Sama malli antaa 15. helmikuuta 2026 arvon $143{,}3\,\text{AU}$, ja JPL ilmoittaa helmikuulle 2026 arvon $143{,}05\,\text{AU}$. Ero on noin $0{,}2\,\text{AU}$, alle $0{,}2\,\%$ etäisyydestä, joten vakionopeusmalli toimii tässä hyvin. Ero johtuu osin siitä, että Auringon vetovoima hidastaa luotainta aivan vähän ja alkuetäisyys on annettu vain kymmenesosan tarkkuudella. Mallin poikkeama on siis vain prosentin murto-osa.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että tasaisessa liikkeessä paikka kaksinkertaistuu, kun aika kaksinkertaistuu. Näin käy vain, jos liike alkaa nollakohdasta. Kun kärry on alussa kohdassa $s_0 = 6\,\text{m}$ ja etenee nopeudella $2{,}0\,\text{m/s}$, se on hetkellä $2{,}0\,\text{s}$ paikassa $10\,\text{m}$ ja hetkellä $4{,}0\,\text{s}$ paikassa $14\,\text{m}$, ei $20\,\text{m}$:ssä. Matka sen sijaan kaksinkertaistuu: $4\,\text{m}$ muuttuu $8\,\text{m}$:ksi. Toinen virhe on lukea nopeudeksi paikan arvo eikä paikan muutos aikaa kohti: nopeus on $\Delta s : \Delta t$, ei $s : t$, kun $s_0 \neq 0$.

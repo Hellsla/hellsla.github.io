@@ -76,7 +76,7 @@
     {
       "id": "fy1-5-L1-07",
       "level": 1,
-      "text": "Tasaisesti liikkuvan kärryn nopeus on $(t, v)$-kuvaajassa vaakasuora viiva kohdassa $v = 0{,}80\\,\\text{m/s}$ aikavälillä $0\\,\\text{s} - 12\\,\\text{s}$. Viivan ja $t$-akselin väliin jäävän suorakulmion pinta-ala on vastaava kuljettu matka. Kuinka pitkän matkan kärry kulkee tänä aikana?",
+      "text": "Tasaisesti liikkuvan kärryn $(t, v)$-kuvaaja on vaakasuora viiva kohdassa $v = 0{,}80\\,\\text{m/s}$ aikavälillä $0\\text{–}12\\,\\text{s}$. Viivan ja $t$-akselin väliin jäävän suorakulmion pinta-ala on vastaava kuljettu matka. Kuinka pitkän matkan kärry kulkee tänä aikana?",
       "kind": [
         "model"
       ],
@@ -249,7 +249,7 @@
     {
       "id": "fy1-5-L3-02",
       "level": 3,
-      "text": "Voyager 2 on mallin mukaan $150\\,\\text{AU}$:n etäisyydellä Maasta. Radiosignaali etenee tyhjiössä tasaisesti nopeudella $299\\,792\\,458\\,\\text{m/s}$.\n\nKuinka monta tuntia kuluu siitä, kun komento lähtee Maasta, siihen, kun luotaimen vastaus saapuu Maahan? Luotaimen liike ja sen käsittelyaika vastausta varten jätetään huomiotta. Käytä arvoa $1\\,\\text{AU} = 149\\,597\\,870{,}7\\,\\text{km}$. Perustele, miksi liikkeen voi jättää huomiotta.",
+      "text": "Oletetaan, että Voyager 2 on $150\\,\\text{AU}$:n etäisyydellä Maasta. Radiosignaali etenee tyhjiössä tasaisesti nopeudella $299\\,792\\,458\\,\\text{m/s}$.\n\nKuinka monta tuntia kuluu siitä, kun komento lähtee Maasta, siihen, kun luotaimen vastaus saapuu Maahan? Luotaimen liike ja sen käsittelyaika vastausta varten jätetään huomiotta. Käytä arvoa $1\\,\\text{AU} = 149\\,597\\,870{,}7\\,\\text{km}$. Perustele, miksi liikkeen voi jättää huomiotta.",
       "answer": 41.6,
       "unit": "h",
       "tolerance": 0.02
@@ -265,7 +265,7 @@
     {
       "id": "fy1-5-L3-04",
       "level": 3,
-      "text": "Pyöräilijän paikka $s$ radan alusta mitattiin videoanalyysillä ajan $t$ funktiona. Piirrä pisteistä kuvaaja.\n\nPyöräilijän nopeus muuttuu kesken matkan, joten liikettä ei voi mallintaa yhdellä suoralla. Etsi taulukosta hetki, jolloin nopeus muuttuu, ja mallinna liike kahtena tasaisena osana.\n\nLaske mallin avulla pyöräilijän keskinopeus aikavälillä $5{,}0\\,\\text{s} - 35\\,\\text{s}$, kun keskinopeus on aikavälillä kuljettu matka jaettuna aikavälin pituudella. Hetkeä $35\\,\\text{s}$ ei ole taulukossa. Miksi keskinopeus ei ole osien nopeuksien keskiarvo?",
+      "text": "Pyöräilijän paikka $s$ radan alusta mitattiin videoanalyysillä ajan $t$ funktiona. Piirrä pisteistä kuvaaja.\n\nPyöräilijän nopeus muuttuu kesken matkan, joten liikettä ei voi mallintaa yhdellä suoralla. Etsi taulukosta hetki, jolloin nopeus muuttuu, ja mallinna liike kahtena tasaisena osana.\n\nLaske mallin avulla pyöräilijän keskinopeus aikavälillä $5{,}0\\text{–}35\\,\\text{s}$, kun keskinopeus on aikavälillä kuljettu matka jaettuna aikavälin pituudella. Hetkeä $35\\,\\text{s}$ ei ole taulukossa. Miksi keskinopeus ei ole osien nopeuksien keskiarvo?",
       "kind": [
         "data",
         "graph",

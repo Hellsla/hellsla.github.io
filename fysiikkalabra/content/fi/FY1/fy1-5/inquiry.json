@@ -15,7 +15,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "Voyager 2 -luotain lähti Maasta vuonna 1977. Marraskuussa 2018 se ylitti heliopaussin eli rajan, jonka ulkopuolella Auringon aurinkotuuli ei enää hallitse avaruutta. NASA:n JPL:n mukaan luotain oli silloin 119,7 AU:n päässä Auringosta, ja se etenee yhä poispäin nopeudella $15{,}341\\,\\text{km/s}$. Tähtitieteellinen yksikkö AU on suunnilleen Maan ja Auringon etäisyys. Luotaimen viereen ei voi ojentaa viivainta, mutta sen etäisyyden voi silti ilmoittaa mille tahansa päivälle.",
+      "text": "Voyager 2 -luotain lähti Maasta vuonna 1977. Marraskuussa 2018 se ylitti heliopaussin eli rajan, jonka ulkopuolella Auringon aurinkotuuli ei enää hallitse avaruutta. NASA:n JPL:n mukaan luotain oli silloin $119{,}7\\,\\text{AU}$:n päässä Auringosta, ja se etenee yhä poispäin nopeudella $15{,}341\\,\\text{km/s}$. Tähtitieteellinen yksikkö AU on suunnilleen Maan ja Auringon etäisyys. Luotaimen viereen ei voi ojentaa viivainta, mutta sen etäisyyden voi silti ilmoittaa mille tahansa päivälle.",
       "question": "Mitä tietoja tarvitset, jotta voisit laskea luotaimen etäisyyden Auringosta vaikkapa vuoden päästä, ja mitä oletat sen nopeudesta?"
     },
     {
@@ -27,7 +27,7 @@
       "choices": [
         {
           "text": "Kohdan, jossa suora leikkaa $s$-akselin.",
-          "feedback": "Se on suoran alkukohta, ei kulmakerroin (luku *Graafinen esitys ja suoran sovittaminen*). Kulmakerroin kertoo suoran jyrkkyyden: kuinka monta yksikköä $s$ muuttuu, kun $t$ kasvaa yhdellä."
+          "feedback": "Se on suoran ja $s$-akselin leikkauskohta eli vakiotermi, ei kulmakerroin (luku *Graafinen esitys ja suoran sovittaminen*). Kulmakerroin kertoo suoran jyrkkyyden: kuinka monta yksikköä $s$ muuttuu, kun $t$ kasvaa yhdellä."
         },
         {
           "text": "Kuinka paljon paikka muuttuu aikayksikköä kohti.",
@@ -82,7 +82,7 @@
         {
           "text": "$14\\,\\text{m}$.",
           "correct": true,
-          "feedback": "Mallin arvot tukevat tätä: $s = 6{,}0\\,\\text{m} + 2{,}0\\,\\text{m/s} \\cdot 4{,}0\\,\\text{s} = 14\\,\\text{m}$. Matka kaksinkertaistui ($4{,}0\\,\\text{m}$ on $8{,}0\\,\\text{m}$), mutta paikka ei, koska alkupaikka $6{,}0\\,\\text{m}$ pysyy mukana."
+          "feedback": "Mallin arvot tukevat tätä: $s = 6{,}0\\,\\text{m} + 2{,}0\\,\\text{m/s} \\cdot 4{,}0\\,\\text{s} = 14\\,\\text{m}$. Matka kaksinkertaistui ($4{,}0\\,\\text{m}$:stä $8{,}0\\,\\text{m}$:iin), mutta paikka ei, koska alkupaikka $6{,}0\\,\\text{m}$ pysyy mukana."
         },
         {
           "text": "$12\\,\\text{m}$, koska nopeus on $2{,}0\\,\\text{m/s}$ ja paikka kasvaa siis $2{,}0\\,\\text{m}$.",
@@ -101,7 +101,7 @@
       "type": "sim",
       "text": "Kärry ajaa suoralla radalla vakionopeudella. Muuta alkupaikkaa ja nopeutta, käynnistä liike tai vedä hetkeä, ja katso, miten $(t, s)$-kuvaaja piirtyy.",
       "howto": "Säädä alkupaikka $s_0$ ja nopeus $v$ liukusäätimillä; aika palaa nollaan. *Käynnistä* toistaa liikkeen, *Tauko* pysäyttää sen ja *Alusta* palauttaa alun. Voit myös vetää *Hetki*-säädintä. Radalla oranssit pystyviivat ovat kärryn paikat kokonaisten sekuntien kohdalla, vihreä lippu on alkupaikka ja nuoli näyttää nopeuden. Kuvaajaan piirtyy suora hetkeen asti, jossa olet käynyt. Kun olet käynyt hetkessä $6\\,\\text{s}$, kuvaajaan ilmestyy kulmakolmio. *Nopeus (toisto)* muuttaa vain toiston tahtia.",
-      "model": "Kärry liikkuu suoralla radalla vakionopeudella: ei kitkaa eikä kiihtyvyyttä, ja vauhti on heti alussa täysi. Radan paikat ja kuvaajan arvot ovat mallin laskemia arvoja, eivät mittauksia. Kärry etenee vain yhteen suuntaan, joten nopeus on positiivinen.",
+      "model": "Kärry liikkuu suoralla radalla vakionopeudella: ei kitkaa eikä kiihtyvyyttä, ja vauhti on heti alussa täysi. Radan paikat ja kuvaajan arvot ovat mallin laskemia arvoja, eivät mittauksia. Kärry etenee vain positiiviseen suuntaan, joten nopeus on positiivinen.",
       "calc": "Paikka on $s = s_0 + vt$ ja kuljettu matka $\\Delta s = s - s_0 = vt$. Kuvaajan kulmakolmio kulkee hetkestä $t = 2\\,\\text{s}$ hetkeen $t = 6\\,\\text{s}$, joten $\\Delta t = 4{,}0\\,\\text{s}$, ja kulmakerroin $\\Delta s : \\Delta t$ on nopeus $v$."
     },
     {
@@ -224,7 +224,7 @@
         "koe-2"
       ],
       "prompt": "Kirjoita taulukoidesi perusteella: milloin paikka on suoraan verrannollinen aikaan, ja milloin vain matka? Mitä osamäärä $\\Delta s : t$ kertoo liikkeestä?",
-      "model": "Kokeessa 1 alkupaikka oli nolla, ja paikan ja ajan osamäärä $s : t$ oli joka rivillä $2{,}0\\,\\text{m/s}$ eli nopeus: paikka oli suoraan verrannollinen aikaan. Kokeessa 2 alkupaikka oli $6{,}0\\,\\text{m}$. Paikan osamäärä muuttui, esimerkiksi $10 : 2{,}0 = 5{,}0\\,\\text{m/s}$ ja $14 : 4{,}0 = 3{,}5\\,\\text{m/s}$, mutta matkan osamäärä $\\Delta s : t$ oli joka rivillä $2{,}0\\,\\text{m/s}$. Kuljettu matka on siis aina suoraan verrannollinen aikaan, ja paikka vain silloin, kun alkupaikka on nolla. Osamäärä $\\Delta s : t$ on nopeus. Arvot ovat mallin laskemia arvoja: malli olettaa vakionopeuden eikä kitkaa.",
+      "model": "Kokeessa 1 alkupaikka oli nolla, ja paikan ja ajan osamäärä $s : t$ oli joka rivillä $2{,}0\\,\\text{m/s}$ eli nopeus: paikka oli suoraan verrannollinen aikaan. Kokeessa 2 alkupaikka oli $6{,}0\\,\\text{m}$. Paikan osamäärä muuttui, esimerkiksi $10\\,\\text{m} : 2{,}0\\,\\text{s} = 5{,}0\\,\\text{m/s}$ ja $14\\,\\text{m} : 4{,}0\\,\\text{s} = 3{,}5\\,\\text{m/s}$, mutta matkan osamäärä $\\Delta s : t$ oli joka rivillä $2{,}0\\,\\text{m/s}$. Kuljettu matka on siis aina suoraan verrannollinen aikaan, ja paikka vain silloin, kun alkupaikka on nolla. Osamäärä $\\Delta s : t$ on nopeus. Arvot ovat mallin laskemia arvoja: malli olettaa vakionopeuden eikä kitkaa.",
       "criteria": [
         "Sanoin, että paikka on verrannollinen aikaan vain, kun alkupaikka on nolla.",
         "Käytin taulukon lukuja osamäärien $s : t$ ja $\\Delta s : t$ vertailuun.",
@@ -271,7 +271,7 @@
         {
           "text": "Paikka ei ole suoraan verrannollinen aikaan, koska alkupaikka ei ole nolla. Oikea tulos on $s = 5{,}0\\,\\text{m} + 3{,}0\\,\\text{m/s} \\cdot 6{,}0\\,\\text{s} = 23\\,\\text{m}$.",
           "correct": true,
-          "feedback": "Oikein. Vain matka $\\Delta s = vt$ kolminkertaistuu ($6{,}0\\,\\text{m}$ on $18\\,\\text{m}$), ja alkupaikka lisätään kerran: $5{,}0 + 18 = 23\\,\\text{m}$. Virheen olisi voinut huomata järkeilemällä: kärry ei voi olla yli $30\\,\\text{m}$:n päässä, koska se kulkee $6{,}0\\,\\text{s}$:ssa vain $18\\,\\text{m}$."
+          "feedback": "Oikein. Vain matka $\\Delta s = vt$ kolminkertaistuu ($6{,}0\\,\\text{m}$:stä $18\\,\\text{m}$:iin), ja alkupaikka lisätään kerran: $5{,}0\\,\\text{m} + 18\\,\\text{m} = 23\\,\\text{m}$. Virheen olisi voinut huomata järkeilemällä: kärry ei voi olla kohdassa $33\\,\\text{m}$, koska se lähtee kohdasta $5{,}0\\,\\text{m}$ ja kulkee $6{,}0\\,\\text{s}$:ssa vain $18\\,\\text{m}$."
         },
         {
           "text": "Nopeus pitäisi muuntaa kilometreiksi tunnissa ennen sijoitusta.",
@@ -283,7 +283,7 @@
         },
         {
           "text": "Laskussa ei ole virhettä, koska tasaisessa liikkeessä paikka ja aika ovat verrannollisia.",
-          "feedback": "Verrannollisia ovat matka ja aika, ei paikka, kun alkupaikka on eri kuin nolla. Tarkista sijoittamalla $t = 6{,}0\\,\\text{s}$ suoraan: $5{,}0 + 3{,}0 \\cdot 6{,}0 = 23\\,\\text{m}$, ei $33\\,\\text{m}$."
+          "feedback": "Verrannollisia ovat matka ja aika, ei paikka, kun alkupaikka on eri kuin nolla. Tarkista sijoittamalla $t = 6{,}0\\,\\text{s}$ suoraan: $5{,}0\\,\\text{m} + 3{,}0\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot 6{,}0\\,\\text{s} = 23\\,\\text{m}$, ei $33\\,\\text{m}$."
         }
       ]
     },
@@ -401,7 +401,7 @@
         "Perustelin, miksi arvo on mallin arvo: nopeus ei ole täysin vakio, koska Auringon vetovoima hidastaa luotainta.",
         "Vertasin mallia JPL:n arvoon."
       ],
-      "model": "Luotaimen nopeus on lähes vakio, joten sen etäisyys Auringosta kasvaa yhtä paljon jokaista sekuntia kohti: $s = s_0 + vt$, missä $s_0 = 119{,}7\\,\\text{AU}$ heliopaussin ylityksen hetkellä 5. marraskuuta 2018 ja $v = 15{,}341\\,\\text{km/s}$. Tällä mallilla etäisyys on 5. marraskuuta 2026 noin $145{,}6\\,\\text{AU}$. Arvo on mallin arvo, koska nopeus ei ole täysin vakio: Auringon vetovoima hidastaa luotainta hieman. Malli antaa 15. helmikuuta 2026 arvon $143{,}3\\,\\text{AU}$, kun JPL ilmoittaa helmikuulle 2026 arvon $143{,}05\\,\\text{AU}$. Ero on noin $0{,}2\\,\\text{AU}$. Ero johtuu osin siitä, että Auringon vetovoima hidastaa luotainta hieman ja alkuetäisyys on annettu vain kymmenesosan tarkkuudella. Malli on tarkka murto-osan prosentista, joten se on hyvä muutaman vuoden tarkasteluun.",
+      "model": "Luotaimen nopeus on lähes vakio, joten sen etäisyys Auringosta kasvaa yhtä paljon jokaista sekuntia kohti: $s = s_0 + vt$, missä $s_0 = 119{,}7\\,\\text{AU}$ heliopaussin ylityksen hetkellä 5. marraskuuta 2018 ja $v = 15{,}341\\,\\text{km/s}$. Tällä mallilla etäisyys on 5. marraskuuta 2026 noin $145{,}6\\,\\text{AU}$. Arvo on mallin arvo, koska nopeus ei ole täysin vakio: Auringon vetovoima hidastaa luotainta hieman. Malli antaa 15. helmikuuta 2026 arvon $143{,}3\\,\\text{AU}$, kun JPL ilmoittaa helmikuulle 2026 arvon $143{,}05\\,\\text{AU}$. Ero on noin $0{,}2\\,\\text{AU}$. Ero johtuu osin siitä, että Auringon vetovoima hidastaa luotainta hieman ja alkuetäisyys on annettu vain kymmenesosan tarkkuudella. Mallin poikkeama on vain prosentin murto-osa, joten malli sopii muutaman vuoden tarkasteluun.",
       "optional": true
     },
     {

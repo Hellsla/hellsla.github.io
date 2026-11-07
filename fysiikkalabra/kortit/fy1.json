@@ -480,7 +480,7 @@
    "luku": "fy1-5",
    "aihe": "fy1-tiheys-ja-liike",
    "kasite": "Suoraan verrannollisuus",
-   "maaritelma": "Toisen suureen kaksinkertaistuessa myös toinen kaksinkertaistuu, ja kuvaaja kulkee origon kautta."
+   "maaritelma": "Kahden suureen suhde on vakio: kun toinen kaksinkertaistuu, myös toinen kaksinkertaistuu, ja kuvaaja on origon kautta kulkeva suora."
   },
   {
    "id": "fy1-paikka",
@@ -512,7 +512,7 @@
    "luku": "fy1-5",
    "aihe": "fy1-tiheys-ja-liike",
    "kasite": "Keskinopeus",
-   "maaritelma": "Koko siirtymä jaetaan siihen kuluneella ajalla."
+   "maaritelma": "Siirtymä jaettuna siihen kuluneella ajalla. Kun kappale liikkuu yhteen suuntaan, siirtymä on sama kuin kuljettu matka."
   },
   {
    "id": "fy1-kiihtyvyys",
