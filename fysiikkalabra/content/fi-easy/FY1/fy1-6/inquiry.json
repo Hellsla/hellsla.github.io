@@ -36,7 +36,7 @@
         },
         {
           "text": "$11\\,\\text{m}$",
-          "feedback": "Laskit nopeuden ja ajan yhteen. Yksiköt $\\text{m/s}$ ja $\\text{s}$ eivät ole samaa suuretta, joten niitä ei voi laskea yhteen. Matka saadaan tulosta $s = vt$."
+          "feedback": "Laskit nopeuden ja ajan yhteen. Nopeus ja aika ovat eri suureita (yksiköt $\\text{m/s}$ ja $\\text{s}$), joten niitä ei voi laskea yhteen. Matka saadaan tulosta $s = vt$."
         }
       ]
     },
@@ -57,8 +57,8 @@
           "feedback": "Taulukossa nopeus kasvaa edelleen sekunnista toiseen. Tasaisessa liikkeessä nopeus on vakio, mutta putoavan kappaleen nopeus muuttuu koko ajan."
         },
         {
-          "text": "Noin $20\\,\\text{m/s}$, koska nopeus kasvaa aluksi ja hidastuu sitten.",
-          "feedback": "Taulukossa nopeuden lisäys on jokaisella sekunnilla yhtä suuri eikä hidastu: joka sekunti nopeus kasvaa noin $9{,}81\\,\\text{m/s}$."
+          "text": "Noin $20\\,\\text{m/s}$, koska nopeuden kasvu hidastuu ajan myötä.",
+          "feedback": "Taulukossa nopeuden lisäys on jokaisella sekunnilla yhtä suuri eikä pienene: joka sekunti nopeus kasvaa noin $9{,}81\\,\\text{m/s}$."
         },
         {
           "text": "Noin $30\\,\\text{m/s}$, koska nopeus kasvaa joka sekunti saman verran.",
@@ -109,7 +109,7 @@
       "type": "sim",
       "text": "Simulaatiossa kaksi samankokoista palloa putoaa levosta, ja niiden nopeudet piirtyvät $(t, v)$-kuvaajaan.",
       "howto": "Paina *Pudota* tai vedä *Hetki $t$* -liukusäädintä. Katso, miten pallot putoavat ja miten kuvaaja piirtyy. Valitse *Ympäristö* (tyhjiö tai ilma) ja säädä pallojen massat. Nuolen pituus on nopeus. Pisteet merkitsevät kokonaisia sekunteja. Katkoviiva on kaava $v = gt$.",
-      "model": "Arvot ovat simulaation laskemia mallin arvoja. Ne eivät ole mittauksia. Pallot ovat samankokoiset, ja ne lähtevät levosta. Tyhjiössä vaikuttaa vain putoamiskiihtyvyys $g = 9{,}81\\,\\text{m/s}^2$. Ilmassa pallon halkaisija on $0{,}20\\,\\text{m}$. Ilma hidastaa palloa sitä enemmän, mitä nopeammin se liikkuu. Tuuli ja pallon pyöriminen jätetään huomiotta.",
+      "model": "Arvot ovat simulaation laskemia mallin arvoja. Ne eivät ole mittauksia. Pallot ovat samankokoiset, ja ne lähtevät levosta. Tyhjiössä pallojen kiihtyvyys on koko ajan putoamiskiihtyvyys $g = 9{,}81\\,\\text{m/s}^2$. Ilmassa pallon halkaisija on $0{,}20\\,\\text{m}$. Ilma hidastaa palloa sitä enemmän, mitä nopeammin se liikkuu. Tuuli ja pallon pyöriminen jätetään huomiotta.",
       "calc": "Tyhjiössä nopeus lasketaan kaavalla $v = gt$. Luku $v : t$ kertoo, kuinka paljon nopeus on kasvanut keskimäärin sekunnissa, kun pallo lähti levosta. Ilmassa nopeuden kasvu hidastuu, kun nopeus kasvaa. Nopeus lähestyy rajanopeutta. Kevyellä pallolla rajanopeus on pienempi kuin raskaalla. Siksi $v : t$ jää kevyellä pallolla pienemmäksi."
     },
     {
@@ -293,8 +293,8 @@
             "correct": true
           },
           {
-            "text": "Ilmassa massa ei vaikuta mitään, aivan kuten tyhjiössä.",
-            "feedback": "Taulukossa pallon B nopeus muuttuu, kun massa muuttuu: kevyellä pallolla se on selvästi pienempi kuin raskaalla. Tyhjiössä sama muutos ei vaikuttanut mitään."
+            "text": "Ilmassa massa ei vaikuta mitenkään, aivan kuten tyhjiössä.",
+            "feedback": "Taulukossa pallon B nopeus muuttuu, kun massa muuttuu: kevyellä pallolla se on selvästi pienempi kuin raskaalla. Tyhjiössä sama muutos ei vaikuttanut mitenkään."
           },
           {
             "text": "Ilmassa kevyt pallo on nopeampi, koska ilma kannattelee raskasta palloa enemmän.",
@@ -332,7 +332,7 @@
             "feedback": "Jaoit ajan nopeudella. Kulmakerroin on nousu jaettuna etenemisellä: $\\dfrac{\\Delta v}{\\Delta t}$."
           }
         ],
-        "solution": "**Annettu:** sovitetun suoran kaksi pistettä: origo $(t_1;\\, v_1) = (0\\,\\text{s};\\, 0\\,\\text{m/s})$ ja kuvaajasta luettu piste $(t_2;\\, v_2) \\approx (0{,}50\\,\\text{s};\\, 4{,}9\\,\\text{m/s})$\n\n**Kysytty:** suoran kulmakerroin eli putoamiskiihtyvyys $g$ yksikössä $\\text{m/s}^2$\n\n**Periaate:** Kuula on vapaassa pudotuksessa, joten sen $(t, v)$-kuvaaja on suora. Suoran kulmakerroin on putoamiskiihtyvyys. Mittauksissa on virhettä. Siksi kulmakerroin lasketaan sovitetun suoran pisteistä eikä yksittäisestä mittauksesta.\n\n**Kuvaajan lukeminen:** Origo on annettu. Toinen piste luetaan hetkeltä $t = 0{,}50\\,\\text{s}$. Mene tästä kohdasta ylös suoralle ja siitä vasemmalle $v$-akselille. Suora on hieman alle ruudukkoviivan $5\\,\\text{m/s}$, joten luetaan $v_2 \\approx 4{,}9\\,\\text{m/s}$. Ruudukkoviivojen väli on $1\\,\\text{m/s}$. Arvon voi siis lukea noin kymmenesosan tarkkuudella. Kun pisteet ovat kaukana toisistaan, lukuvirhe on pieni verrattuna muutokseen.\n\n**Kaava:** $g = \\dfrac{\\Delta v}{\\Delta t} = \\dfrac{v_2 - v_1}{t_2 - t_1}$\n\n**Muunnokset:** Nopeus on yksikössä $\\text{m/s}$ ja aika sekunteina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $g = \\dfrac{4{,}9\\,\\text{m/s} - 0\\,\\text{m/s}}{0{,}50\\,\\text{s} - 0\\,\\text{s}} = \\dfrac{4{,}9\\,\\text{m/s}}{0{,}50\\,\\text{s}} = 9{,}8\\,\\text{m/s}^2$\n\n**Vastaus:** $9{,}8\\,\\text{m/s}^2$, kaksi merkitsevää numeroa, koska kuvaajasta luettu arvo $4{,}9\\,\\text{m/s}$ ja aika $0{,}50\\,\\text{s}$ ovat kahdella numerolla. Mittauspisteet poikkeavat suorasta noin $0{,}1\\,\\text{m/s}$. Siksi kulmakertoimen epävarmuus on tällä aineistolla karkeasti arvioiden noin $0{,}2\\,\\text{m/s}^2$.\n\n**Järkevyys:** Tulos on lähellä taulukkoarvoa $9{,}81\\,\\text{m/s}^2$. Tarkistus taulukosta: viimeinen mittaus antaa $\\dfrac{4{,}9\\,\\text{m/s}}{0{,}5\\,\\text{s}} = 9{,}8\\,\\text{m/s}^2$ ja keskimmäinen $\\dfrac{2{,}9\\,\\text{m/s}}{0{,}3\\,\\text{s}} = 9{,}7\\,\\text{m/s}^2$. Tulokset ovat samaa suuruusluokkaa. Kulmakerroin on positiivinen, koska kuvaaja nousee."
+        "solution": "**Annettu:** sovitetun suoran kaksi pistettä: origo $(t_1;\\, v_1) = (0\\,\\text{s};\\, 0\\,\\text{m/s})$ ja kuvaajasta luettu piste $(t_2;\\, v_2) \\approx (0{,}50\\,\\text{s};\\, 4{,}9\\,\\text{m/s})$\n\n**Kysytty:** suoran kulmakerroin eli putoamiskiihtyvyys $g$ yksikössä $\\text{m/s}^2$\n\n**Periaate:** Kuula on vapaassa pudotuksessa, joten sen $(t, v)$-kuvaaja on suora. Suoran kulmakerroin on putoamiskiihtyvyys. Mittauksissa on virhettä. Siksi kulmakerroin lasketaan sovitetun suoran pisteistä eikä yksittäisestä mittauksesta.\n\n**Kuvaajan lukeminen:** Origo on annettu. Toinen piste luetaan hetkeltä $t = 0{,}50\\,\\text{s}$. Mene tästä kohdasta ylös suoralle ja siitä vasemmalle $v$-akselille. Suora on hieman alle ruudukkoviivan $5\\,\\text{m/s}$, joten luetaan $v_2 \\approx 4{,}9\\,\\text{m/s}$. Ruudukkoviivojen väli on $1\\,\\text{m/s}$. Arvon voi siis lukea noin kymmenesosan tarkkuudella. Kun pisteet ovat kaukana toisistaan, lukuvirhe on pieni verrattuna muutokseen.\n\n**Kaava:** $g = \\dfrac{\\Delta v}{\\Delta t} = \\dfrac{v_2 - v_1}{t_2 - t_1}$\n\n**Muunnokset:** Nopeus on yksikössä $\\text{m/s}$ ja aika sekunteina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $g = \\dfrac{4{,}9\\,\\text{m/s} - 0\\,\\text{m/s}}{0{,}50\\,\\text{s} - 0\\,\\text{s}} = \\dfrac{4{,}9\\,\\text{m/s}}{0{,}50\\,\\text{s}} = 9{,}8\\,\\text{m/s}^2$\n\n**Vastaus:** $9{,}8\\,\\text{m/s}^2$, kaksi merkitsevää numeroa, koska kuvaajasta luettu arvo $4{,}9\\,\\text{m/s}$ ja aika $0{,}50\\,\\text{s}$ ovat kahdella numerolla. Mittauspisteet poikkeavat suorasta noin $0{,}1\\,\\text{m/s}$. Siksi kulmakertoimen epävarmuus on tällä aineistolla karkeasti arvioiden noin $0{,}2\\,\\text{m/s}^2$.\n\n**Järkevyys:** Tulos on lähellä taulukkoarvoa $9{,}81\\,\\text{m/s}^2$. Tarkistus taulukosta: viimeinen mittaus antaa $\\dfrac{4{,}9\\,\\text{m/s}}{0{,}5\\,\\text{s}} = 9{,}8\\,\\text{m/s}^2$ ja keskimmäinen $\\dfrac{2{,}9\\,\\text{m/s}}{0{,}3\\,\\text{s}} = 9{,}7\\,\\text{m/s}^2$. Tulokset ovat lähes samat. Kulmakerroin on positiivinen, koska kuvaaja nousee."
       }
     },
     {
@@ -490,7 +490,7 @@
         },
         {
           "text": "Pallo putoaa joka sekunti $9{,}81\\,\\text{m}$.",
-          "feedback": "Yksikkö $\\text{m/s}^2$ ei ole matka. Luku kertoo, kuinka paljon nopeus muuttuu sekunnissa. Se ei kerro, kuinka pitkän matkan pallo kulkee. Matkakin kasvaa joka sekunti, koska pallo kulkee yhä nopeammin."
+          "feedback": "Yksikkö $\\text{m/s}^2$ ei ole matkan yksikkö. Luku kertoo, kuinka paljon nopeus muuttuu sekunnissa. Se ei kerro, kuinka pitkän matkan pallo kulkee. Myös sekunnissa kuljettu matka kasvaa joka sekunti, koska pallo kulkee yhä nopeammin."
         },
         {
           "text": "Pallon nopeus kasvaa $9{,}81\\,\\text{m/s}$ ensimmäisellä sekunnilla. Sen jälkeen kasvu hidastuu.",

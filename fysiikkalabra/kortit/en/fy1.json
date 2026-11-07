@@ -538,7 +538,7 @@
    "luku": "fy1-6",
    "aihe": "fy1-tiheys-ja-liike",
    "kasite": "Acceleration of free fall",
-   "maaritelma": "Near the Earth the speed changes by about $9.81\\,\\text{m/s}$ every second.",
+   "maaritelma": "The acceleration of a freely falling object. At the surface of the Earth the speed of a freely falling object increases by about $9.81\\,\\text{m/s}$ every second.",
    "kaava": "g \\approx 9.81\\,\\text{m/s}^2",
    "kaava_puhe": "g is approximately 9.81 metres per second squared"
   },
@@ -572,7 +572,7 @@
    "luku": "fy1-8",
    "aihe": "fy1-kokeellinen-tutkimus",
    "kasite": "Repeatability",
-   "maaritelma": "A well-described experiment can be done again with similar results."
+   "maaritelma": "How close to each other results of the same measurement repeated in the same way lie. A well-described experiment can be repeated, and its results should agree within their uncertainties."
   },
   {
    "id": "fy1-mittausaineisto",
@@ -636,7 +636,7 @@
    "luku": "fy1-8",
    "aihe": "fy1-tiedonhankinta",
    "kasite": "Source of information",
-   "maaritelma": "The background and purpose of whoever publishes information affect how it should be assessed."
+   "maaritelma": "A party that produces and publishes information, for example a research institute, an authority, a company or a private person. Its background and purpose affect how the information should be assessed."
   },
   {
    "id": "fy1-lahdekritiikki",

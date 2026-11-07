@@ -217,12 +217,12 @@ Fysiikka on kokeellinen tiede. Fysiikan väitteitä arvioidaan havaintojen ja mi
 <figure class="unit-photo"><img src="pics/fy1/ligo-scientists-laser-room.webp" alt="Kaksi suojapukuista tutkijaa katsoo laitetta valkoisessa huoneessa."><figcaption>Tutkijat tutkivat LIGO-laitoksen laserlaitetta puhtaassa huoneessa Yhdysvalloissa vuonna 2019.</figcaption></figure>
 
 ### Tutkimuskysymys ja hypoteesi
-Tutkimuskysymys on kysymys, johon mittaus voi vastata. Esimerkki on "Miten leluauton kulkema matka riippuu ajasta?" Kysymys "Mikä auto on paras?" ei kelpaa, koska sitä ei voi mitata.
+Tutkimuskysymys on kysymys, johon mittaus voi vastata. Esimerkki on "Miten leluauton kulkuaika riippuu ajomatkan pituudesta?" Kysymys "Mikä auto on paras?" ei kelpaa, koska sitä ei voi mitata.
 
-**Hypoteesi** on perusteltu ja testattava ennuste kysymykseen. Esimerkiksi: "Jos auto liikkuu vakionopeudella, kulkema matka on suoraan verrannollinen aikaan, $s = vt$." Hypoteesista pitää seurata jotain mitattavaa. Sen pitää myös voida osoittautua vääräksi. Ennuste "auto kulkee jotenkin" ei ole hypoteesi, koska mikään mittaus ei voi kumota sitä eli osoittaa sitä vääräksi.
+**Hypoteesi** on perusteltu ja testattava ennuste, joka vastaa tutkimuskysymykseen. Esimerkiksi: "Auto liikkuu radalla vakionopeudella. Siksi sen kulkema matka on suoraan verrannollinen aikaan, $s = vt$." Hypoteesista pitää seurata jotain mitattavaa. Sen pitää myös voida osoittautua vääräksi. Ennuste "auto kulkee jotenkin" ei ole hypoteesi, koska mikään mittaus ei voi kumota sitä eli osoittaa sitä vääräksi.
 
 ### Muuttujat
-**Muuttuja** on suure, jonka arvo voi vaihdella tutkimuksessa. Kokeessa tehdään kolme asiaa. Yhtä muuttujaa muutetaan, toista mitataan ja kaikki muut pidetään samoina:
+**Muuttuja** on suure tai muu asia, joka voi vaihdella tutkimuksessa. Kokeessa tehdään kolme asiaa. Yhtä muuttujaa muutetaan, toista mitataan ja kaikki muut pidetään samoina:
 
 - **muutettava muuttuja**: kokeen tekijä valitsee sen arvot, tässä matka $s$
 - **mitattava muuttuja**: sen arvo luetaan mittarista, tässä aika $t$
@@ -424,7 +424,7 @@ s_\text{min} &= v\, t_\text{min} \\
 
 <!-- vaihe -->
 
-**Järkevyys.** Matkalla $1{,}7\,\text{m}$ auton kulkuaika on noin $1{,}7\,\text{m} : 0{,}42\,\text{m/s} \approx 4{,}05\,\text{s}$. Silloin $\varepsilon = 0{,}2\,\text{s} : 4{,}05\,\text{s} \approx 4{,}9\,\%$ eli tasan rajan sisällä. Matkalla $0{,}50\,\text{m}$ aika olisi vain $1{,}2\,\text{s}$ ja epävarmuus noin $17\,\%$. Siksi lyhyt matka oli huono valinta.
+**Järkevyys.** Matkalla $1{,}7\,\text{m}$ auton kulkuaika on noin $1{,}7\,\text{m} : 0{,}42\,\text{m/s} \approx 4{,}05\,\text{s}$. Silloin $\varepsilon = 0{,}2\,\text{s} : 4{,}05\,\text{s} \approx 4{,}9\,\%$ eli juuri ja juuri rajan sisällä. Matkalla $0{,}50\,\text{m}$ aika olisi vain $1{,}2\,\text{s}$ ja epävarmuus noin $17\,\%$. Siksi lyhyt matka olisi huono valinta.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että tutkimus on epäonnistunut, jos mittaus ei tue hypoteesia. Näin ei ole. Jos mittaus kumoaa hypoteesin, tutkija tietää jotakin, mitä hän ei aiemmin tiennyt. Epäonnistunut tutkimus on sellainen, josta ei voi päätellä mitään. Silloin muuttujia ei ole hallittu tai mittaukset ovat liian epävarmoja.

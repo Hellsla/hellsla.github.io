@@ -538,7 +538,7 @@
    "luku": "fy1-6",
    "aihe": "fy1-tiheys-ja-liike",
    "kasite": "Putoamiskiihtyvyys",
-   "maaritelma": "Maan lähellä nopeus muuttuu noin $9{,}81\\,\\text{m/s}$ joka sekunti.",
+   "maaritelma": "Vapaasti putoavan kappaleen kiihtyvyys. Maan pinnalla vapaasti putoavan kappaleen nopeus kasvaa noin $9{,}81\\,\\text{m/s}$ joka sekunti.",
    "kaava": "g \\approx 9{,}81\\,\\text{m/s}^2",
    "kaava_puhe": "g on noin 9,81 metriä sekunnissa toiseen"
   },
@@ -572,7 +572,7 @@
    "luku": "fy1-8",
    "aihe": "fy1-kokeellinen-tutkimus",
    "kasite": "Toistettavuus",
-   "maaritelma": "Hyvin kuvattu koe voidaan tehdä uudelleen ja saada samansuuntaisia tuloksia."
+   "maaritelma": "Se, kuinka lähelle toisiaan samalla tavalla toistetut mittaustulokset osuvat. Hyvin kuvatun kokeen voi toistaa, ja tulosten pitää olla epävarmuuden rajoissa yhteensopivia."
   },
   {
    "id": "fy1-mittausaineisto",
@@ -636,7 +636,7 @@
    "luku": "fy1-8",
    "aihe": "fy1-tiedonhankinta",
    "kasite": "Tiedontuottaja",
-   "maaritelma": "Tahon tausta ja tarkoitus vaikuttavat siihen, miten sen julkaisemaa tietoa kannattaa arvioida."
+   "maaritelma": "Taho, joka tuottaa ja julkaisee tietoa, esimerkiksi tutkimuslaitos, viranomainen, yritys tai yksityishenkilö. Sen tausta ja tarkoitus vaikuttavat siihen, miten tietoa kannattaa arvioida."
   },
   {
    "id": "fy1-lahdekritiikki",

@@ -1,6 +1,6 @@
 # Putoamiskiihtyvyys: $v = gt$
 
-> **Miksi** astronautti Kuussa pudotti vasaran ja höyhenen samaan aikaan ja ne osuivat maahan yhtä aikaa, vaikka Maassa höyhen leijailee hitaasti alas?
+> **Miksi** vasara ja höyhen osuivat Kuun pintaan yhtä aikaa, kun astronautti pudotti ne samaan aikaan, vaikka Maassa höyhen leijailee hitaasti alas?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: astronautti seisoo Kuun harmaalla pinnalla. Taivas on musta. Taustalla on kuumoduuli, ja taivaalla näkyy Maa. Astronautti on pudottanut vasaran ja höyhenen samaan aikaan. Haaleat välikuvat näyttävät, että vasara ja höyhen ovat joka hetki samalla korkeudella. Välikuvien väliset matkat kasvavat putoamisen aikana." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><radialGradient id="fy16h-ocean" cx="0.35" cy="0.35" r="0.8"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></radialGradient><clipPath id="fy16h-clip"><circle cx="1060" cy="110" r="62"/></clipPath><linearGradient id="fy16h-ground" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><linearGradient id="fy16h-foil" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy16h-visor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#6c757d"/></linearGradient></defs>
@@ -162,28 +162,28 @@ Kun kappale päästetään putoamaan levosta, sen nopeus kasvaa. **Vapaa pudotus
   <foreignObject x="102" y="29.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0$</div></foreignObject>
   <circle cx="215" cy="44" r="11" fill="url(#fy16-b0)" stroke="#1f2933" stroke-width="2.5"/>
   <circle cx="211" cy="40" r="2" fill="#ffffff"/>
-  <foreignObject x="239" y="29.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$v = 0$</div></foreignObject>
+  <foreignObject x="239" y="29.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$v = 0$</div></foreignObject>
   <line x1="150" y1="74.5" x2="201" y2="74.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <foreignObject x="102" y="60" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$1$</div></foreignObject>
   <circle cx="215" cy="74.5" r="11" fill="url(#fy16-b1)" stroke="#1f2933" stroke-width="2.5"/>
   <circle cx="211" cy="70" r="2" fill="#ffffff"/>
-  <line x1="215" y1="88.5" x2="215" y2="95" stroke="#e8590c" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M215,106 L209.5,94 L220.5,94 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <foreignObject x="239" y="82.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$v = 9{,}81\,\text{m/s}$</div></foreignObject>
+  <line x1="215" y1="88.5" x2="215" y2="95" stroke="#1971c2" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M215,106 L209.5,94 L220.5,94 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <foreignObject x="239" y="82.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$v = 9{,}81\,\text{m/s}$</div></foreignObject>
   <line x1="150" y1="165.5" x2="201" y2="165.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <foreignObject x="102" y="151" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$2$</div></foreignObject>
   <circle cx="215" cy="165.5" r="11" fill="url(#fy16-b2)" stroke="#1f2933" stroke-width="2.5"/>
   <circle cx="211" cy="161.5" r="2" fill="#ffffff"/>
-  <line x1="215" y1="179.5" x2="215" y2="204" stroke="#e8590c" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M215,215 L209.5,203 L220.5,203 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <foreignObject x="239" y="183" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$v = 19{,}6\,\text{m/s}$</div></foreignObject>
+  <line x1="215" y1="179.5" x2="215" y2="204" stroke="#1971c2" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M215,215 L209.5,203 L220.5,203 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <foreignObject x="239" y="183" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$v = 19{,}6\,\text{m/s}$</div></foreignObject>
   <line x1="150" y1="317.5" x2="201" y2="317.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <foreignObject x="102" y="303" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$3$</div></foreignObject>
   <circle cx="215" cy="317.5" r="11" fill="url(#fy16-b3)" stroke="#1f2933" stroke-width="2.5"/>
   <circle cx="211" cy="313.5" r="2" fill="#ffffff"/>
-  <line x1="215" y1="331.5" x2="215" y2="373.5" stroke="#e8590c" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M215,384.5 L209.5,372.5 L220.5,372.5 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <foreignObject x="239" y="343.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$v = 29{,}4\,\text{m/s}$</div></foreignObject>
+  <line x1="215" y1="331.5" x2="215" y2="373.5" stroke="#1971c2" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M215,384.5 L209.5,372.5 L220.5,372.5 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <foreignObject x="239" y="343.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$v = 29{,}4\,\text{m/s}$</div></foreignObject>
   <line x1="556" y1="156" x2="556" y2="218" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <line x1="548" y1="156" x2="564" y2="156" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <line x1="548" y1="218" x2="564" y2="218" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
@@ -212,21 +212,21 @@ Kun ilmanvastusta ei ole, kaikki kappaleet putoavat samalla kiihtyvyydellä. Kap
   <circle cx="246.5" cy="109.5" r="2" fill="#ffffff"/>
   <circle cx="400" cy="113" r="16" fill="url(#fy16-h1)" stroke="#1f2933" stroke-width="2.5"/>
   <circle cx="394.5" cy="107" r="2.88" fill="#ffffff"/>
-  <line x1="250" y1="126" x2="250" y2="133" stroke="#e8590c" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M250,144 L244.5,132 L255.5,132 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <line x1="400" y1="132" x2="400" y2="139" stroke="#e8590c" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M400,150 L394.5,138 L405.5,138 Z" fill="#e8590c" stroke-linejoin="round"/>
+  <line x1="250" y1="126" x2="250" y2="133" stroke="#1971c2" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M250,144 L244.5,132 L255.5,132 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <line x1="400" y1="132" x2="400" y2="139" stroke="#1971c2" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M400,150 L394.5,138 L405.5,138 Z" fill="#1971c2" stroke-linejoin="round"/>
   <line x1="264" y1="231" x2="380" y2="231" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <foreignObject x="102" y="216.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$2$</div></foreignObject>
   <circle cx="250" cy="231" r="10" fill="url(#fy16-l2)" stroke="#1f2933" stroke-width="2.5"/>
   <circle cx="246.5" cy="227" r="2" fill="#ffffff"/>
   <circle cx="400" cy="231" r="16" fill="url(#fy16-h2)" stroke="#1f2933" stroke-width="2.5"/>
   <circle cx="394.5" cy="225" r="2.88" fill="#ffffff"/>
-  <line x1="250" y1="244" x2="250" y2="268.5" stroke="#e8590c" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M250,279.5 L244.5,267.5 L255.5,267.5 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <line x1="400" y1="250" x2="400" y2="274.5" stroke="#e8590c" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M400,285.5 L394.5,273.5 L405.5,273.5 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <foreignObject x="438" y="256.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$\text{sama nopeus}$</div></foreignObject>
+  <line x1="250" y1="244" x2="250" y2="268.5" stroke="#1971c2" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M250,279.5 L244.5,267.5 L255.5,267.5 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <line x1="400" y1="250" x2="400" y2="274.5" stroke="#1971c2" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M400,285.5 L394.5,273.5 L405.5,273.5 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <foreignObject x="438" y="256.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\text{sama nopeus}$</div></foreignObject>
 </svg>
 
 Ilmassa tilanne on toinen. Ilma hidastaa kevyttä ja leveää kappaletta selvästi enemmän kuin pientä ja tiheää kappaletta. Kevyt ja leveä kappale on esimerkiksi höyhen tai paperiarkki. Pieni ja tiheä kappale on esimerkiksi kivi tai teräskuula. Siksi kotona höyhen putoaa hitaammin kuin vasara. Eron aiheuttaa ilma, ei massa sellaisenaan.
@@ -284,7 +284,7 @@ missä $v$ on nopeus alaspäin ($\text{m/s}$), $g = 9{,}81\,\text{m/s}^2$ on put
   <foreignObject x="116" y="115" width="183" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$g = \dfrac{\Delta v}{\Delta t} = 9{,}81\,\text{m/s}^2$</span></div></foreignObject>
 </svg>
 
-Putoavan kappaleen $(t, v)$-kuvaaja on siis origon kautta kulkeva nouseva suora. Suoran kulmakerroin $\tfrac{\Delta v}{\Delta t}$ on putoamiskiihtyvyys. Voit siis lukea $g$:n kuvaajasta kahdesta pisteestä, jotka ovat kaukana toisistaan. Kiihtyvyys on vakio, joten mille tahansa aikavälille pätee $\Delta v = g\,\Delta t$. Nopeus kasvaa sekunnissa $9{,}81\,\text{m/s}$ myös silloin, kun kappale ei lähtenyt levosta.
+Putoavan kappaleen $(t, v)$-kuvaaja on siis origon kautta kulkeva nouseva suora. Suoran kulmakerroin $\tfrac{\Delta v}{\Delta t}$ on putoamiskiihtyvyys. Voit siis lukea $g$:n kuvaajasta kahdesta pisteestä, jotka ovat kaukana toisistaan. Kiihtyvyys on vakio, joten mille tahansa aikavälille pätee $\Delta v = g\,\Delta t$. Alaspäin liikkuvan kappaleen nopeus kasvaa sekunnissa $9{,}81\,\text{m/s}$ myös silloin, kun kappale ei lähtenyt levosta.
 
 <figure class="unit-photo"><img src="pics/fy1/bouncing-ball-strobe.webp" alt="Keltaisen pallon kuvia kahtena kaarena mustalla taustalla."><figcaption>Pomppiva pallo on kuvattu yhtä pitkin väliajoin. Kun pallo putoaa, sen nopeus kasvaa. Siksi kuvien välit kasvavat.</figcaption></figure>
 
@@ -331,14 +331,14 @@ v &= 14{,}715 \cdot 1\,\text{m/s} \\
 
 <!-- vaihe -->
 
-**Järkevyys.** Kuvaaja näyttää saman. Hetkellä $1\,\text{s}$ nopeus on $9{,}8\,\text{m/s}$. Hetkellä $2\,\text{s}$ se on $19{,}6\,\text{m/s}$. Hetki $1{,}5\,\text{s}$ on näiden välissä, joten nopeus on noin $15\,\text{m/s}$. Nopeus $53\,\text{km/h}$ on tavallinen vauhti autolle kaupungissa. Se on järkevä tulos pudotukselle, joka kestää vain puolitoista sekuntia.
+**Järkevyys.** Kuvaaja näyttää saman. Hetkellä $1\,\text{s}$ nopeus on $9{,}81\,\text{m/s}$. Hetkellä $2\,\text{s}$ se on $19{,}6\,\text{m/s}$. Hetki $1{,}5\,\text{s}$ on näiden välissä, joten nopeus on noin $15\,\text{m/s}$. Nopeus $53\,\text{km/h}$ on tavallinen vauhti autolle kaupungissa. Se on järkevä tulos pudotukselle, joka kestää vain puolitoista sekuntia.
 
 ## Yleinen virhekäsitys
-Raskas kappale ei putoa nopeammin kuin kevyt. Kun ilmanvastusta ei ole, kaikilla kappaleilla on sama $g$. Arkikokemus näyttää toista, koska ilmassa kevyt ja leveä kappale hidastuu eniten. Toinen virhe on pitää lukua $g = 9{,}81\,\text{m/s}^2$ nopeutena. Se kertoo, kuinka paljon nopeus kasvaa joka sekunti. Nopeus itse on $g\,t$.
+Raskas kappale ei putoa nopeammin kuin kevyt. Kun ilmanvastusta ei ole, kaikilla kappaleilla on sama $g$. Arkikokemus näyttää toista, koska ilma jarruttaa eniten kevyen ja leveän kappaleen putoamista. Toinen virhe on pitää lukua $g = 9{,}81\,\text{m/s}^2$ nopeutena. Se kertoo, kuinka paljon nopeus kasvaa joka sekunti. Nopeus itse on $g\,t$.
 
 ## Tiivistelmä
 - Vapaassa pudotuksessa ei ole ilmanvastusta. Kappaleen nopeus kasvaa joka sekunti yhtä paljon.
 - Putoamiskiihtyvyys on Maan pinnalla $g = 9{,}81\,\text{m/s}^2$, ja se on sama kaikille kappaleille massasta riippumatta.
 - Levosta lähteneen kappaleen nopeus on $v = g\,t$, ja $(t, v)$-kuvaaja on origon kautta kulkeva suora, jonka kulmakerroin on $g$.
-- Ilmassa kevyt ja leveä kappale hidastuu eniten. Siksi kaava $v = g\,t$ pätee vain, kun ilmanvastus jätetään huomiotta.
-- Muunnos: tunnissa $3600\,\text{m} = 3{,}6\,\text{km}$, joten $1\,\text{m/s} = 3{,}6\,\text{km/h}$.
+- Ilma jarruttaa eniten kevyen ja leveän kappaleen putoamista. Siksi kaava $v = g\,t$ pätee vain, kun ilmanvastus jätetään huomiotta.
+- Muunnos: nopeudella $1\,\text{m/s}$ kuljetaan tunnissa $3600\,\text{m} = 3{,}6\,\text{km}$, joten $1\,\text{m/s} = 3{,}6\,\text{km/h}$.

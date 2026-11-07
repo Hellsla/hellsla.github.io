@@ -217,12 +217,12 @@ Physics is an experimental science. Physical claims are judged by observations a
 <figure class="unit-photo"><img src="pics/fy1/ligo-scientists-laser-room.webp" alt="Two researchers in protective suits stand in a white clean room by a laser setup and look at it thoughtfully."><figcaption>Researchers examine the laser setup of the LIGO gravitational-wave detector in a clean room at Hanford, USA, in 2019.</figcaption></figure>
 
 ### Research question and hypothesis
-A research question is a question that a measurement can answer: "How does the distance travelled by a toy car depend on time?" The question "Which car is best?" is no good, because it cannot be measured.
+A research question is a question that a measurement can answer: "How does the travel time of a toy car depend on the length of the run?" The question "Which car is best?" is no good, because it cannot be measured.
 
-A **hypothesis** is a reasoned, testable prediction that answers the question. For example: "If the car moves at constant speed, the distance travelled is directly proportional to time, $s = vt$." A hypothesis must lead to something measurable that could turn out to be wrong. The prediction "the car goes somehow" is not a hypothesis, because no measurement can disprove it.
+A **hypothesis** is a reasoned, testable prediction that answers the research question. For example: "The car moves along the track at constant speed, so the distance it travels is directly proportional to time, $s = vt$." A hypothesis must lead to something measurable that could turn out to be wrong. The prediction "the car goes somehow" is not a hypothesis, because no measurement can disprove it.
 
 ### Variables
-A **variable** is a quantity whose value can vary in an investigation. In an experiment you change one variable, measure another and keep everything else the same:
+A **variable** is a quantity or other factor that can vary in an investigation. In an experiment you change one variable, measure another and keep everything else the same:
 
 - **independent variable**: the experimenter chooses its values, here the distance $s$
 - **dependent variable**: its value is read from an instrument, here the time $t$

@@ -244,7 +244,7 @@
     {
       "id": "fy1-6-L2-07",
       "level": 2,
-      "text": "Oppilaat mittaavat putoamiskiihtyvyyden kahdella valoportilla, jotka ovat pystysuunnassa toistensa alapuolella. Levosta pudotetun $5{,}0\\,\\text{cm}$ pitkän kappaleen nopeus saadaan kummassakin portissa kappaleen pituudesta ja valon katkeamisajasta $\\Delta t_\\text{valo}$.\n\nPudotushetkeä ei tunneta tarkasti, mutta kello mittaa hetket $t$, jolloin valon katkos on puolivälissä, eli kappaleen keskikohta on portin kohdalla.\n\nLaske putoamiskiihtyvyys taulukon mittauksista. Selitä, miksi $g$ saadaan kahden portin nopeuksista, vaikka pudotushetki ei ole tiedossa.",
+      "text": "Oppilaat mittaavat putoamiskiihtyvyyden kahdella valoportilla, jotka ovat pystysuunnassa toistensa alapuolella. Levosta pudotetun $5{,}0\\,\\text{cm}$ pitkän kappaleen nopeus saadaan kummassakin portissa kappaleen pituudesta ja valon katkeamisajasta $\\Delta t_\\text{valo}$.\n\nPudotushetkeä ei tunneta tarkasti, mutta kello mittaa hetket $t$, jolloin valon katkos on ajallisesti puolivälissä. Tällä hetkellä kappaleen nopeus on yhtä suuri kuin sen keskinopeus katkoksen aikana.\n\nLaske putoamiskiihtyvyys taulukon mittauksista. Selitä, miksi $g$ saadaan kahden portin nopeuksista, vaikka pudotushetki ei ole tiedossa.",
       "kind": [
         "data",
         "model"
@@ -307,11 +307,11 @@
       "reasons": [
         {
           "text": "Pallot ovat samankokoisia ja ne lähtevät levosta.",
-          "feedback": "Väite on tosi, mutta se ei selitä vastausta. Myös eri kokoiset kappaleet putoaisivat tyhjiössä yhtä nopeasti, ja levosta lähtö vain kertoo, että $v = g\\,t$ alkaa nollasta."
+          "feedback": "Väite on tosi, mutta se ei selitä vastausta. Myös erikokoiset kappaleet putoaisivat tyhjiössä yhtä nopeasti, ja levosta lähtö vain kertoo, että $v = g\\,t$ alkaa nollasta."
         },
         {
-          "text": "Raskaampi pallo vetää itseään voimakkaammin kohti Maata, joten sen nopeus kasvaa nopeammin.",
-          "feedback": "Tämä on yleinen virhekäsitys: raskaampi pallo on myös vaikeampi saada liikkeelle, ja nämä kaksi vaikutusta kumoavat toisensa. Putoamiskiihtyvyys $g$ on sama kaikille kappaleille."
+          "text": "Maa vetää raskaampaa palloa voimakkaammin, joten sen nopeus kasvaa nopeammin.",
+          "feedback": "Tämä on yleinen virhekäsitys. Maa vetää raskaampaa palloa todella voimakkaammin, mutta raskaampi pallo on myös vaikeampi saada liikkeelle, ja nämä kaksi vaikutusta kumoavat toisensa. Putoamiskiihtyvyys $g$ on sama kaikille kappaleille."
         },
         {
           "text": "Putoamiskiihtyvyys $g$ on sama kaikille kappaleille ilman ilmanvastusta, joten nopeus $v = g\\,t$ ei riipu massasta.",

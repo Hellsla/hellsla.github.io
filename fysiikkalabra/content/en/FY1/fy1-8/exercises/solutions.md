@@ -26,7 +26,7 @@
 **Conversions:** The distance is in metres and the time in seconds, so the result comes out directly in $\text{m/s}$.
 **Substitution:** $v = \dfrac{1.50\,\text{m}}{3.6\,\text{s}} = 0.4167\,\text{m/s}$
 **Answer:** $0.42\,\text{m/s}$, two significant figures like the time $3.6\,\text{s}$.
-**Reasonableness:** The result is of the order of an ordinary toy car, less than a third of walking pace ($1.4\,\text{m/s}$). Rough check: $0.4\,\text{m/s} \cdot 3.6\,\text{s} \approx 1.4\,\text{m}$, which is close to 1.5 metres.
+**Reasonableness:** The result is of the order of an ordinary toy car, less than a third of walking pace ($1.4\,\text{m/s}$). Rough check: $0.4\,\text{m/s} \cdot 3.6\,\text{s} \approx 1.4\,\text{m}$, which is close to the distance $1.5\,\text{m}$.
 
 ## fy1-8-L1-04
 **Given:** five measurements $24.1\,\text{cm}$, $24.4\,\text{cm}$, $24.0\,\text{cm}$, $24.3\,\text{cm}$ and $24.2\,\text{cm}$
@@ -66,7 +66,7 @@
 **Conversions:** The distance is in metres and the speed in $\text{m/s}$, so the time comes out in seconds. The quotient is multiplied by one hundred to get a percentage.
 **Substitution:** $t = \dfrac{3.0\,\text{m}}{1.5\,\text{m/s}} = 2.0\,\text{s}$, so $\varepsilon = \dfrac{0.20\,\text{s}}{2.0\,\text{s}} = 0.10 = 10\,\%$
 **Answer:** $10\,\%$, two significant figures like the distance and the speed.
-**Reasonableness:** In a two-second measurement, a reaction-time error of $0.20\,\text{s}$ is a tenth of the total time. The result is twice the $5\,\%$ that a long measurement would reach, which is why the short distance is a poor choice.
+**Reasonableness:** In a two-second measurement, the timing uncertainty $0.20\,\text{s}$ is a tenth of the total time. The result is twice a limit of, for example, $5\,\%$, which is why the short distance is a poor choice.
 
 ## fy1-8-L2-03
 **Given:** points $(t_1, s_1) = (2.0\,\text{s}, 90\,\text{cm})$ and $(t_2, s_2) = (8.0\,\text{s}, 342\,\text{cm})$
@@ -105,8 +105,8 @@
 **Formula:** $r = \dfrac{T_\text{start} - T_\text{end}}{\Delta t}$ and $\Delta r = r_1 - r_2$
 **Conversions:** A fall in temperature in degrees Celsius equals the fall in kelvins, so a change of $1\,{}^\circ\text{C}$ is $1\,\text{K}$ and no conversion is needed.
 **Substitution:** $r_1 = \dfrac{80.0\,{}^\circ\text{C} - 68.0\,{}^\circ\text{C}}{5.0\,\text{min}} = \dfrac{12.0\,\text{K}}{5.0\,\text{min}} = 2.4\,\text{K/min}$ and $r_2 = \dfrac{52.0\,{}^\circ\text{C} - 47.0\,{}^\circ\text{C}}{5.0\,\text{min}} = \dfrac{5.0\,\text{K}}{5.0\,\text{min}} = 1.0\,\text{K/min}$, so $\Delta r = 2.4\,\text{K/min} - 1.0\,\text{K/min} = 1.4\,\text{K/min}$
-**Answer:** $1.4\,\text{K/min}$, two significant figures, because the temperature differences are $12.0\,\text{K}$ and $5.0\,\text{K}$.
-**Reasonableness:** The first rate of fall is more than twice the last one, and this difference cannot come from a reading error of $0.1\,\text{K}$ alone. So the hypothesis of a steady fall does not hold: the temperature falls more slowly the closer the water is to room temperature.
+**Answer:** $1.4\,\text{K/min}$, two significant figures, because the time intervals $5.0\,\text{min}$ and the fall $5.0\,\text{K}$ in the last interval are given with two significant figures.
+**Reasonableness:** The first rate of fall is more than twice the last one, and this difference cannot come from the reading uncertainty alone, which from the precision of the readings is about $0.1\,\text{K}$. So the hypothesis of a steady fall does not hold: the temperature falls more slowly the closer the water is to room temperature.
 
 ## fy1-8-L3-03
 **Given:** total time $60\,\text{min}$, preparation $12\,\text{min}$, number of distances $N = 6$, one repeat $2.0\,\text{min}$
@@ -115,8 +115,8 @@
 **Formula:** $t_\text{tot} - t_\text{prep} = N\, n\, t_\text{rep}$, so $n = \dfrac{t_\text{tot} - t_\text{prep}}{N\, t_\text{rep}}$
 **Conversions:** All times are in minutes, so no conversions are needed.
 **Substitution:** $n = \dfrac{60\,\text{min} - 12\,\text{min}}{6 \cdot 2.0\,\text{min}} = \dfrac{48\,\text{min}}{12\,\text{min}} = 4.0$
-**Answer:** $4.0$ repeats, two significant figures like the duration of a repeat. The number of repeats must be a whole number, and here the result is exactly four.
-**Reasonableness:** Four repeats at six distances make 24 measurements, and $24 \cdot 2.0\,\text{min} = 48\,\text{min}$ plus the preparation of $12\,\text{min}$ gives $60\,\text{min}$. No time is wasted and there is no overrun.
+**Answer:** $4$ repeats. The number of repeats is an exact whole number, and here the division comes out exactly.
+**Reasonableness:** Four repeats at six distances make 24 measurements, and $24 \cdot 2.0\,\text{min} = 48\,\text{min}$ plus the preparation of $12\,\text{min}$ gives $60\,\text{min}$. No time is left unused, and the time set aside is not exceeded.
 
 ## fy1-8-L1-06
 **Find:** the independent (manipulated) variable of the investigation.
@@ -129,9 +129,9 @@
 **Model answer:** A good question is “How does the length of the pendulum string affect the length of the period?” The length of the string can be changed, the period can be measured, and the other factors can be kept the same. The questions “What is a pendulum like?” and “Why does a pendulum swing at all?” are too vague or too broad for one experiment. The question “Is a pendulum nice?” does not concern a measurable quantity.
 
 ## fy1-8-L1-08
-**Find:** which sentence belongs in the results section and not in the discussion.
-**Principle:** The results section tells what was measured and calculated: tables, graphs, means and uncertainties. The discussion interprets the results: it evaluates sources of error and reliability, takes a stand on the hypothesis and suggests further research.
-**Model answer:** The sentence “The mean of the five measurements was $12.4\,\text{s}$ and half of the range was $0.2\,\text{s}$.” belongs in the results, because it states calculated values without interpretation. The evaluation of a source of error (reaction time), the stand on the hypothesis and the suggestion for improvement (photogate) are interpretation, so they belong in the discussion.
+**Find:** which sentence belongs in the results of the report and not in the discussion or the conclusion.
+**Principle:** The results tell what was measured and calculated: tables, graphs, means and uncertainties. The discussion evaluates sources of error and reliability and suggests what to do differently next time. The conclusion answers the research question and takes a stand on whether the results support the hypothesis.
+**Model answer:** The sentence “The mean of the five measurements was $12.4\,\text{s}$ and half of the range was $0.2\,\text{s}$.” belongs in the results, because it states calculated values without interpretation. The evaluation of a source of error (reaction time) and the suggestion for improvement (photogate) belong in the discussion, and the stand on the hypothesis belongs in the conclusion.
 
 ## fy1-8-L1-09
 **Find:** which of the five statements about the research plan are true.
@@ -156,7 +156,7 @@
 ## fy1-8-L2-07
 **Given:** the points of the table $(t;\,s)$ = $(0.0\,\text{s};\,0.00\,\text{m})$, $(2.0\,\text{s};\,0.62\,\text{m})$, $(4.0\,\text{s};\,1.18\,\text{m})$, $(6.0\,\text{s};\,1.83\,\text{m})$, $(8.0\,\text{s};\,2.39\,\text{m})$; the slope read by the student is $3.3$
 **Find:** the speed $v$ of the car in $\text{m/s}$ and what the number $3.3$ describes
-**Principle:** In uniform motion $s = vt$, so when time is on the horizontal axis and distance on the vertical axis, the slope of the line is the speed. The student swapped the axes: when distance is on the horizontal axis, the slope is $\Delta t / \Delta s = 1/v$, the reciprocal of the speed. In addition, the axes lacked quantities and units, so no meaning can be given to the number $3.3$.
+**Principle:** In uniform motion $s = vt$, so when time is on the horizontal axis and distance on the vertical axis, the slope of the line is the speed. The student swapped the axes: when distance is on the horizontal axis, the slope is $\Delta t : \Delta s = 1 : v$, the reciprocal of the speed. In addition, the axes lacked quantities and units, so no meaning can be given to the number $3.3$.
 **Reading the graph:** The points lie almost on a line through the origin. The fitted line passes, for example, through the points $(2.0\,\text{s};\,0.60\,\text{m})$ and $(8.0\,\text{s};\,2.40\,\text{m})$. The slope is read from two points of the line, not from two adjacent measurement points.
 **Formula:** $v = \dfrac{s_2 - s_1}{t_2 - t_1}$
 **Conversions:** The distance is in metres and the time in seconds, so no conversions are needed.
@@ -166,8 +166,8 @@
 
 ## fy1-8-L3-04
 **Given:** $\bar{t}_{50} = 3.12\,\text{s} \pm 0.04\,\text{s}$, $\bar{t}_{200} = 3.08\,\text{s} \pm 0.04\,\text{s}$; hand-timing uncertainty $\Delta t_\text{hand} = 0.15\,\text{s}$; the claims of the discussion “the experiment went well”, “the hypothesis was correct” and “there were few errors”
-**Find:** how many times the difference of the means is $\Delta t_\text{hand}$, and which claims the data supports
-**Principle:** The discussion evaluates what the results show and how reliable they are. A claim is supported only if the difference is greater than the uncertainty, that is, if the uncertainty intervals do not overlap. An experiment is not said to prove a hypothesis for certain, and the sentence “there were few errors” must not be left without numbers.
+**Find:** how many times larger than the difference of the means $\Delta t_\text{hand}$ is, and which claims the data supports
+**Principle:** The discussion evaluates what the results show and how reliable they are. A difference can be shown only if the uncertainty intervals do not overlap, that is, if the difference is greater than the sum of the uncertainties. An experiment is not said to prove a hypothesis for certain, and the sentence “there were few errors” must not be left without numbers.
 **Formula:** $\Delta \bar{t} = \bar{t}_{50} - \bar{t}_{200}$ and the ratio $k = \dfrac{\Delta t_\text{hand}}{\Delta \bar{t}}$
 **Conversions:** All times are in seconds, so no conversions are needed.
 **Substitution:** $\Delta \bar{t} = 3.12\,\text{s} - 3.08\,\text{s} = 0.04\,\text{s}$, so $k = \dfrac{0.15\,\text{s}}{0.04\,\text{s}} = 3.75 \approx 3.8$. The intervals are $3.08$–$3.16\,\text{s}$ and $3.04$–$3.12\,\text{s}$, and they overlap in the interval $3.08$–$3.12\,\text{s}$.
@@ -181,5 +181,5 @@
 **Formula:** $r = \dfrac{T_\text{start} - T_3}{\Delta t}$, $\;\varepsilon = \dfrac{\Delta T_\text{fall}}{T_\text{fall}} \le \varepsilon_\text{max}$, from which $T_\text{fall} \ge \dfrac{\Delta T_\text{fall}}{\varepsilon_\text{max}}$ and $t = \dfrac{T_\text{fall}}{r}$
 **Conversions:** A percent is a hundredth: $5.0\,\% = 0.050$. A fall in temperature is the same in kelvins and degrees Celsius, so $\text{K}$ is suitable as the unit.
 **Substitution:** $r = \dfrac{80.0\,{}^\circ\text{C} - 74.0\,{}^\circ\text{C}}{3.0\,\text{min}} = \dfrac{6.0\,\text{K}}{3.0\,\text{min}} = 2.0\,\text{K/min}$. Then $T_\text{fall} \ge \dfrac{1.0\,\text{K}}{0.050} = 20\,\text{K}$, so $t = \dfrac{20\,\text{K}}{2.0\,\text{K/min}} = 10\,\text{min}$.
-**Answer:** at least $10\,\text{min}$, two significant figures like the given values. Variables to be controlled: the amount of water (otherwise the heat capacity and the surface area change), the initial temperature of the water (the cooling rate depends on the temperature difference to the room) and the surroundings, that is, the temperature of the room and the air flow, and whether there is a lid or not. The curves are drawn in the same graph and compared by their initial slopes (the cooling rate for the same fall in temperature $\Delta T$, for example during the first $20\,\text{K}$ fall), taking the uncertainty into account.
+**Answer:** at least $10\,\text{min}$, two significant figures like the given values. Variables to be controlled: the amount of water (otherwise the heat capacity and the surface area change), the initial temperature of the water (the cooling rate depends on the temperature difference to the room) and the surroundings, that is, the temperature of the room and the air flow, and whether there is a lid or not. The curves are drawn in the same graph and compared by their initial slopes (the cooling rate for the same fall in temperature $T_\text{fall}$, for example during the first $20\,\text{K}$ fall), taking the uncertainty into account.
 **Reasonableness:** The fall in temperature must be $20\,\text{K}$, which is 20 times the uncertainty $1.0\,\text{K}$, so the relative uncertainty is $\tfrac{1}{20} = 5\,\%$. In reality cooling slows down (compare the earlier cooling exercise), and in the container that cools most slowly the fall is smaller, so $10\,\text{min}$ is a lower limit: the period should be planned longer and checked with a preliminary experiment.

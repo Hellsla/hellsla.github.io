@@ -44,7 +44,7 @@
     {
       "id": "fy1-8-L1-06",
       "level": 1,
-      "text": "Oppilas tutkii, miten veden lämpötila vaikuttaa siihen, kuinka kauan sokeripala liukenee. Hän liuottaa saman kokoisia sokeripaloja samaan vesimäärään eri lämpötiloissa ja mittaa liukenemisajan. Mikä on tutkimuksen riippumaton (muutettava) muuttuja?",
+      "text": "Oppilas tutkii, miten veden lämpötila vaikuttaa siihen, kuinka kauan sokeripala liukenee. Hän liuottaa saman kokoisia sokeripaloja samaan vesimäärään eri lämpötiloissa ja mittaa liukenemisajan. Mikä on tutkimuksen muutettava muuttuja?",
       "kind": [
         "concept"
       ],
@@ -54,12 +54,12 @@
       "choices": [
         {
           "text": "Veden lämpötila",
-          "feedback": "Oikein: riippumaton muuttuja on se, jota tutkija tarkoituksella muuttaa. Tässä oppilas valitsee veden lämpötilan ja katsoo, miten liukenemisaika muuttuu.",
+          "feedback": "Oikein: muutettava muuttuja on se, jota tutkija tarkoituksella muuttaa. Tässä oppilas valitsee veden lämpötilan ja katsoo, miten liukenemisaika muuttuu.",
           "correct": true
         },
         {
           "text": "Sokeripalan liukenemisaika",
-          "feedback": "Liukenemisaika on riippuva muuttuja: se mitataan, ja se muuttuu sen mukaan, mitä riippumattomalle muuttujalle tehdään. Tutkija ei valitse sitä itse."
+          "feedback": "Liukenemisaika on mitattava muuttuja: se mitataan, ja se muuttuu sen mukaan, mitä muutettavalle muuttujalle tehdään. Tutkija ei valitse sitä itse."
         },
         {
           "text": "Veden määrä ja sokeripalan koko",
@@ -67,7 +67,7 @@
         },
         {
           "text": "Mittaukseen käytetty kello",
-          "feedback": "Kello on mittalaite, ei muuttuja, jota tutkimuksessa muutetaan tai joka vaikuttaa tulokseen tutkittavalla tavalla. Se mittaa riippuvaa muuttujaa eli aikaa."
+          "feedback": "Kello on mittalaite, ei muuttuja, jota tutkimuksessa muutetaan tai joka vaikuttaa tulokseen tutkittavalla tavalla. Se mittaa mitattavaa muuttujaa eli liukenemisaikaa."
         }
       ]
     },
@@ -105,7 +105,7 @@
     {
       "id": "fy1-8-L1-08",
       "level": 1,
-      "text": "Työselostuksen kirjoittaja miettii, mihin osioon kukin lause kuuluu. Mikä seuraavista lauseista kuuluu selostuksen tulososioon eikä pohdintaan?",
+      "text": "Raportin kirjoittaja miettii, mihin osaan kukin lause kuuluu. Mikä seuraavista lauseista kuuluu raportin tuloksiin eikä pohdintaan tai johtopäätökseen?",
       "kind": [
         "concept"
       ],
@@ -115,7 +115,7 @@
       "choices": [
         {
           "text": "Viiden mittauksen keskiarvo oli $12{,}4\\,\\text{s}$ ja puolet vaihteluvälistä $0{,}2\\,\\text{s}$.",
-          "feedback": "Oikein: tuloksissa esitetään mitatut ja lasketut arvot sellaisinaan, esimerkiksi taulukko, keskiarvo ja epävarmuus. Tulkinta jätetään pohdintaan.",
+          "feedback": "Oikein: tuloksissa esitetään mitatut ja lasketut arvot sellaisinaan, esimerkiksi taulukko, keskiarvo ja epävarmuus. Tulkinta jätetään pohdintaan ja johtopäätökseen.",
           "correct": true
         },
         {
@@ -124,7 +124,7 @@
         },
         {
           "text": "Hypoteesi saa tukea tuloksista.",
-          "feedback": "Johtopäätös siitä, tukevatko tulokset hypoteesia, on tulosten tulkintaa. Se kuuluu pohdintaan."
+          "feedback": "Kanta siihen, tukevatko tulokset hypoteesia, on tulosten tulkintaa. Se kuuluu johtopäätökseen."
         },
         {
           "text": "Jatkossa mittaus kannattaa tehdä valokennolla.",
@@ -340,7 +340,7 @@
     {
       "id": "fy1-8-L3-02",
       "level": 3,
-      "text": "Kuumaa vettä jäähtyy kupissa. Lämpötila on $80{,}0\\,{}^\\circ\\text{C}$ kohdassa $t = 0\\,\\text{min}$, $68{,}0\\,{}^\\circ\\text{C}$ kohdassa $5{,}0\\,\\text{min}$, $52{,}0\\,{}^\\circ\\text{C}$ kohdassa $15{,}0\\,\\text{min}$ ja $47{,}0\\,{}^\\circ\\text{C}$ kohdassa $20{,}0\\,\\text{min}$.\n\nOppilaan hypoteesi on, että lämpötila laskee tasaisesti.\n\nKuinka paljon suurempi on lämpötilan laskunopeus ensimmäisen viiden minuutin aikana kuin viimeisen viiden minuutin aikana? Vastaa yksikössä K/min.",
+      "text": "Kuuma vesi jäähtyy kupissa. Lämpötila on $80{,}0\\,{}^\\circ\\text{C}$ hetkellä $t = 0\\,\\text{min}$, $68{,}0\\,{}^\\circ\\text{C}$ hetkellä $5{,}0\\,\\text{min}$, $52{,}0\\,{}^\\circ\\text{C}$ hetkellä $15{,}0\\,\\text{min}$ ja $47{,}0\\,{}^\\circ\\text{C}$ hetkellä $20{,}0\\,\\text{min}$.\n\nOppilaan hypoteesi on, että lämpötila laskee tasaisesti.\n\nKuinka paljon suurempi on lämpötilan laskunopeus ensimmäisen viiden minuutin aikana kuin viimeisen viiden minuutin aikana? Vastaa yksikössä K/min.",
       "answer": 1.4,
       "unit": "K/min",
       "tolerance": 0.02
@@ -348,7 +348,7 @@
     {
       "id": "fy1-8-L3-03",
       "level": 3,
-      "text": "Tutkimukseen on varattu 60 minuuttia. Laitteiden kasaamiseen ja testaamiseen menee 12 minuuttia, ja mittaus tehdään kuudella eri matkalla. Jokainen mittaustoisto kuluttaa 2,0 minuuttia, kun palautus alkuun ja kirjaaminen lasketaan mukaan. Kuinka monta toistoa jokaiselle matkalle ehtii, kun toistoja on yhtä monta joka matkalla?",
+      "text": "Tutkimukseen on varattu $60\\,\\text{min}$. Laitteiden kasaamiseen ja testaamiseen menee $12\\,\\text{min}$, ja mittaus tehdään kuudella eri matkalla. Jokainen mittaustoisto kuluttaa $2{,}0\\,\\text{min}$, kun palautus alkuun ja kirjaaminen lasketaan mukaan. Kuinka monta toistoa jokaiselle matkalle ehtii, kun toistoja on yhtä monta joka matkalla?",
       "answer": 4.0,
       "unit": "toistoa",
       "tolerance": 0.02
@@ -356,7 +356,7 @@
     {
       "id": "fy1-8-L3-04",
       "level": 3,
-      "text": "Oppilas tutki, vaikuttaako pallon massa vierimisaikaan (vrt. kevyen ja raskaan pallon mittaukset). Viiden toiston tulokset ovat keskiarvoina $\\bar{t}_{50} = 3{,}12\\,\\text{s} \\pm 0{,}04\\,\\text{s}$ ja $\\bar{t}_{200} = 3{,}08\\,\\text{s} \\pm 0{,}04\\,\\text{s}$ (epävarmuus on puolet vaihteluvälistä). Käsikellon ajanoton epävarmuudeksi arvioitiin yksittäisessä mittauksessa $0{,}15\\,\\text{s}$.\n\nPohdinnassa lukee: ”Koe onnistui hyvin. Raskaan pallon keskiarvo on pienempi, joten hypoteesi oli oikein. Virheitä oli vähän.”\n\nKuinka monta kertaa käsiajanoton epävarmuus $0{,}15\\,\\text{s}$ on keskiarvojen erotus? Perustele sen avulla ja tulosten väleillä, mitkä pohdinnan väitteet aineisto tukee ja mitkä ei, ja kirjoita pohdintaan kaksi parempaa lausetta.",
+      "text": "Oppilas tutki, vaikuttaako pallon massa vierimisaikaan (vrt. kevyen ja raskaan pallon mittaukset). Viiden toiston tulokset ovat keskiarvoina $\\bar{t}_{50} = 3{,}12\\,\\text{s} \\pm 0{,}04\\,\\text{s}$ ja $\\bar{t}_{200} = 3{,}08\\,\\text{s} \\pm 0{,}04\\,\\text{s}$ (epävarmuus on puolet vaihteluvälistä). Oppilaan hypoteesi oli, että raskas pallo vierii rinteen alas nopeammin. Käsikellon ajanoton epävarmuudeksi arvioitiin yksittäisessä mittauksessa $0{,}15\\,\\text{s}$.\n\nPohdinnassa lukee: ”Koe onnistui hyvin. Raskaan pallon keskiarvo on pienempi, joten hypoteesi oli oikein. Virheitä oli vähän.”\n\nKuinka moninkertainen käsiajanoton epävarmuus $0{,}15\\,\\text{s}$ on keskiarvojen erotukseen verrattuna? Perustele sen avulla ja tulosten väleillä, mitkä pohdinnan väitteet aineisto tukee ja mitkä ei, ja kirjoita pohdintaan kaksi parempaa lausetta.",
       "kind": [
         "data",
         "reasoning",
@@ -389,7 +389,7 @@
     {
       "id": "fy1-8-L3-05",
       "level": 3,
-      "text": "Oppilas suunnittelee tutkimuksen kysymykseen ”Riippuuko veden jäähtymisnopeus astian materiaalista?” Hän kaataa yhtä monta desilitraa $80\\,{}^\\circ\\text{C}$ vettä kolmeen samankokoiseen astiaan (lasi, metalli, muovi) ja lukee lämpötilan joka minuutti. Riippumaton (muutettava) muuttuja on astian materiaali ja riippuva muuttuja lämpötilan lasku.\n\nEsikokeen lasiastian lämpötilat ovat taulukossa. Arvioi alun jäähtymisnopeus taulukon kolmen ensimmäisen minuutin muutoksesta. Lämpötilan laskun $\\Delta T_\\text{lasku}$ epävarmuudeksi arvioidaan $1{,}0\\,\\text{K}$, ja laskun suhteellisen epävarmuuden halutaan olevan enintään $5{,}0\\,\\%$. Oleta, että hitaimmin jäähtyvässäkin astiassa alun nopeus on suunnilleen sama kuin lasiastiassa.\n\nKuinka pitkä mittausjakso vähintään pitää suunnitella? Nimeä lisäksi kolme vakioitavaa suuretta perusteluineen ja kerro, miten kolmen astian jäähtymiskäyriä verrataan.",
+      "text": "Oppilas suunnittelee tutkimuksen kysymykseen ”Riippuuko veden jäähtymisnopeus astian materiaalista?” Hän kaataa yhtä monta desilitraa $80\\,{}^\\circ\\text{C}$ vettä kolmeen samankokoiseen astiaan (lasi, metalli, muovi) ja lukee lämpötilan joka minuutti. Muutettava muuttuja on astian materiaali ja mitattava muuttuja lämpötilan lasku.\n\nEsikokeen lasiastian lämpötilat ovat taulukossa. Arvioi alun jäähtymisnopeus taulukon kolmen ensimmäisen minuutin muutoksesta. Lämpötilan laskun epävarmuudeksi arvioidaan $\\Delta T_\\text{lasku} = 1{,}0\\,\\text{K}$, ja laskun suhteellisen epävarmuuden halutaan olevan enintään $5{,}0\\,\\%$. Oleta, että hitaimmin jäähtyvässäkin astiassa alun nopeus on suunnilleen sama kuin lasiastiassa.\n\nKuinka pitkä mittausjakso vähintään pitää suunnitella? Nimeä lisäksi kolme vakioitavaa suuretta perusteluineen ja kerro, miten kolmen astian jäähtymiskäyriä verrataan.",
       "kind": [
         "data",
         "model",

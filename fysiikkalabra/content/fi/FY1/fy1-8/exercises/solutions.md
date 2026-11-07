@@ -26,7 +26,7 @@
 **Muunnokset:** Matka on metreinä ja aika sekunteina, joten tulos tulee suoraan yksikössä $\text{m/s}$.
 **Sijoitus:** $v = \dfrac{1{,}50\,\text{m}}{3{,}6\,\text{s}} = 0{,}4167\,\text{m/s}$
 **Vastaus:** $0{,}42\,\text{m/s}$, kaksi merkitsevää numeroa kuten ajassa $3{,}6\,\text{s}$.
-**Järkevyys:** Tulos on tavallisen leluauton luokkaa, alle kolmasosa kävelyvauhdista ($1{,}4\,\text{m/s}$). Karkea tarkistus: $0{,}4\,\text{m/s} \cdot 3{,}6\,\text{s} \approx 1{,}4\,\text{m}$, mikä on lähellä 1,5 metriä.
+**Järkevyys:** Tulos on tavallisen leluauton luokkaa, alle kolmasosa kävelyvauhdista ($1{,}4\,\text{m/s}$). Karkea tarkistus: $0{,}4\,\text{m/s} \cdot 3{,}6\,\text{s} \approx 1{,}4\,\text{m}$, mikä on lähellä matkaa $1{,}5\,\text{m}$.
 
 ## fy1-8-L1-04
 **Annettu:** viisi mittausta $24{,}1\,\text{cm}$, $24{,}4\,\text{cm}$, $24{,}0\,\text{cm}$, $24{,}3\,\text{cm}$ ja $24{,}2\,\text{cm}$
@@ -66,7 +66,7 @@
 **Muunnokset:** Matka on metreinä ja nopeus yksikössä $\text{m/s}$, joten aika saadaan sekunteina. Osamäärä kerrotaan sadalla prosenteiksi.
 **Sijoitus:** $t = \dfrac{3{,}0\,\text{m}}{1{,}5\,\text{m/s}} = 2{,}0\,\text{s}$, joten $\varepsilon = \dfrac{0{,}20\,\text{s}}{2{,}0\,\text{s}} = 0{,}10 = 10\,\%$
 **Vastaus:** $10\,\%$, kaksi merkitsevää numeroa kuten matkassa ja nopeudessa.
-**Järkevyys:** Kahden sekunnin mittauksessa reaktioajan $0{,}20\,\text{s}$ virhe on kymmenesosa kokonaisajasta. Tulos on kaksi kertaa suurempi kuin $5\,\%$, mihin pitkä mittaus ylettäisi, ja siksi lyhyt matka on huono valinta.
+**Järkevyys:** Kahden sekunnin mittauksessa ajanoton epävarmuus $0{,}20\,\text{s}$ on kymmenesosa kokonaisajasta. Tulos on kaksinkertainen esimerkiksi $5\,\%$:n rajaan verrattuna, ja siksi lyhyt matka on huono valinta.
 
 ## fy1-8-L2-03
 **Annettu:** pisteet $(t_1, s_1) = (2{,}0\,\text{s}, 90\,\text{cm})$ ja $(t_2, s_2) = (8{,}0\,\text{s}, 342\,\text{cm})$
@@ -103,10 +103,10 @@
 **Kysytty:** laskunopeuksien erotus ensimmäisen ja viimeisen viiden minuutin aikana yksikössä $\text{K/min}$
 **Periaate:** Hypoteesi "lämpötila laskee tasaisesti" ennustaa saman laskunopeuden joka kohdassa. Siksi lasketaan laskunopeus kahdessa jaksossa ja verrataan niitä. Lämpötilan muutos on sama kelvineinä ja celsiusasteina.
 **Kaava:** $r = \dfrac{T_\text{alku} - T_\text{loppu}}{\Delta t}$ ja $\Delta r = r_1 - r_2$
-**Muunnokset:** Lämpötilan lasku celsiusasteina on yhtä suuri kuin kelvineinä, joten $1\,{}^\circ\text{C}$ muutos on $1\,\text{K}$ eikä muunnosta tarvita.
+**Muunnokset:** Lämpötilan lasku celsiusasteina on yhtä suuri kuin kelvineinä, joten $1\,{}^\circ\text{C}$:n muutos on $1\,\text{K}$ eikä muunnosta tarvita.
 **Sijoitus:** $r_1 = \dfrac{80{,}0\,{}^\circ\text{C} - 68{,}0\,{}^\circ\text{C}}{5{,}0\,\text{min}} = \dfrac{12{,}0\,\text{K}}{5{,}0\,\text{min}} = 2{,}4\,\text{K/min}$ ja $r_2 = \dfrac{52{,}0\,{}^\circ\text{C} - 47{,}0\,{}^\circ\text{C}}{5{,}0\,\text{min}} = \dfrac{5{,}0\,\text{K}}{5{,}0\,\text{min}} = 1{,}0\,\text{K/min}$, joten $\Delta r = 2{,}4\,\text{K/min} - 1{,}0\,\text{K/min} = 1{,}4\,\text{K/min}$
-**Vastaus:** $1{,}4\,\text{K/min}$, kaksi merkitsevää numeroa, koska lämpötilojen erotukset ovat $12{,}0\,\text{K}$ ja $5{,}0\,\text{K}$.
-**Järkevyys:** Ensimmäinen laskunopeus on yli kaksinkertainen viimeiseen verrattuna, eikä tämä ero voi johtua pelkästä lukemavirheestä $0{,}1\,\text{K}$. Hypoteesi tasaisesta laskusta ei siis päde: lämpötila laskee sitä hitaammin, mitä lähempänä huoneen lämpötilaa vesi on.
+**Vastaus:** $1{,}4\,\text{K/min}$, kaksi merkitsevää numeroa, koska aikavälit $5{,}0\,\text{min}$ ja viimeisen jakson lasku $5{,}0\,\text{K}$ on annettu kahdella merkitsevällä numerolla.
+**Järkevyys:** Ensimmäinen laskunopeus on yli kaksinkertainen viimeiseen verrattuna, eikä tämä ero voi johtua pelkästä lukeman epävarmuudesta, joka on lukemien tarkkuuden perusteella noin $0{,}1\,\text{K}$. Hypoteesi tasaisesta laskusta ei siis päde: lämpötila laskee sitä hitaammin, mitä lähempänä huoneen lämpötilaa vesi on.
 
 ## fy1-8-L3-03
 **Annettu:** kokonaisaika $60\,\text{min}$, valmistelu $12\,\text{min}$, matkoja $N = 6$, yksi toisto $2{,}0\,\text{min}$
@@ -115,13 +115,13 @@
 **Kaava:** $t_\text{kok} - t_\text{val} = N\, n\, t_\text{toisto}$, josta $n = \dfrac{t_\text{kok} - t_\text{val}}{N\, t_\text{toisto}}$
 **Muunnokset:** Kaikki ajat ovat minuutteina, joten muunnoksia ei tarvita.
 **Sijoitus:** $n = \dfrac{60\,\text{min} - 12\,\text{min}}{6 \cdot 2{,}0\,\text{min}} = \dfrac{48\,\text{min}}{12\,\text{min}} = 4{,}0$
-**Vastaus:** $4{,}0$ toistoa, kaksi merkitsevää numeroa kuten toiston kestossa. Toistoja pitää olla kokonaisluku, ja tässä tulos on tasan neljä.
-**Järkevyys:** Neljä toistoa kuudella matkalla on 24 mittausta, ja $24 \cdot 2{,}0\,\text{min} = 48\,\text{min}$ sekä valmistelun $12\,\text{min}$ summa on $60\,\text{min}$. Ei jää hukkaan aikaa eikä ylitystä.
+**Vastaus:** $4$ toistoa. Toistojen määrä on tarkka kokonaisluku, ja tässä jako menee tasan.
+**Järkevyys:** Neljä toistoa kuudella matkalla on 24 mittausta, ja $24 \cdot 2{,}0\,\text{min} = 48\,\text{min}$ sekä valmistelun $12\,\text{min}$ summa on $60\,\text{min}$. Aikaa ei jää käyttämättä, eikä varattu aika ylity.
 
 ## fy1-8-L1-06
-**Kysytty:** tutkimuksen riippumaton (muutettava) muuttuja.
-**Periaate:** Riippumaton muuttuja on se, jota tutkija tarkoituksella muuttaa. Riippuva muuttuja on se, jota mitataan ja jonka odotetaan muuttuvan. Vakioitavat muuttujat pidetään samoina kaikissa mittauksissa, jotta muutos voidaan yhdistää riippumattomaan muuttujaan.
-**Mallivastaus:** Riippumaton muuttuja on veden lämpötila, koska oppilas valitsee sen itse. Riippuva muuttuja on sokeripalan liukenemisaika, jonka hän mittaa. Veden määrä ja sokeripalan koko vakioidaan, eli ne pidetään samoina. Kello on mittalaite eikä tutkimuksen muuttuja.
+**Kysytty:** tutkimuksen muutettava muuttuja.
+**Periaate:** Muutettava muuttuja on se, jota tutkija tarkoituksella muuttaa. Mitattava muuttuja on se, jota mitataan ja jonka odotetaan muuttuvan. Vakioitavat muuttujat pidetään samoina kaikissa mittauksissa, jotta muutos voidaan yhdistää muutettavaan muuttujaan.
+**Mallivastaus:** Muutettava muuttuja on veden lämpötila, koska oppilas valitsee sen itse. Mitattava muuttuja on sokeripalan liukenemisaika, jonka hän mittaa. Veden määrä ja sokeripalan koko vakioidaan, eli ne pidetään samoina. Kello on mittalaite eikä tutkimuksen muuttuja.
 
 ## fy1-8-L1-07
 **Kysytty:** mikä esitetyistä kysymyksistä on hyvä tutkimuskysymys.
@@ -129,9 +129,9 @@
 **Mallivastaus:** Hyvä kysymys on ”Miten heilurin langan pituus vaikuttaa heilahdusajan pituuteen?” Langan pituutta voi muuttaa, heilahdusajan voi mitata, ja muut tekijät voi pitää samoina. Kysymykset ”Millainen heiluri on?” ja ”Miksi heiluri ylipäätään heiluu?” ovat liian väljiä tai laajoja yhdelle kokeelle. Kysymys ”Onko heiluri kiva?” ei koske mitattavaa suuretta.
 
 ## fy1-8-L1-08
-**Kysytty:** mikä lause kuuluu tulososioon eikä pohdintaan.
-**Periaate:** Tulososio kertoo, mitä mitattiin ja laskettiin: taulukot, kuvaajat, keskiarvot ja epävarmuudet. Pohdinta tulkitsee tuloksia: se arvioi virhelähteitä ja luotettavuutta, ottaa kantaa hypoteesiin ja ehdottaa jatkotutkimusta.
-**Mallivastaus:** Tuloksiin kuuluu lause ”Viiden mittauksen keskiarvo oli $12{,}4\,\text{s}$ ja puolet vaihteluvälistä $0{,}2\,\text{s}$.”, koska se kertoo laskettuja arvoja ilman tulkintaa. Virhelähteen arviointi (reaktioaika), kanta hypoteesiin ja parannusehdotus (valokenno) ovat tulkintaa, joten ne kuuluvat pohdintaan.
+**Kysytty:** mikä lause kuuluu raportin tuloksiin eikä pohdintaan tai johtopäätökseen.
+**Periaate:** Tulokset kertovat, mitä mitattiin ja laskettiin: taulukot, kuvaajat, keskiarvot ja epävarmuudet. Pohdinta arvioi virhelähteitä ja luotettavuutta ja ehdottaa, mitä seuraavalla kerralla tehtäisiin toisin. Johtopäätös vastaa tutkimuskysymykseen ja ottaa kantaa siihen, tukevatko tulokset hypoteesia.
+**Mallivastaus:** Tuloksiin kuuluu lause ”Viiden mittauksen keskiarvo oli $12{,}4\,\text{s}$ ja puolet vaihteluvälistä $0{,}2\,\text{s}$.”, koska se kertoo laskettuja arvoja ilman tulkintaa. Virhelähteen arviointi (reaktioaika) ja parannusehdotus (valokenno) kuuluvat pohdintaan, ja kanta hypoteesiin kuuluu johtopäätökseen.
 
 ## fy1-8-L1-09
 **Kysytty:** mitkä viidestä väitteestä tutkimussuunnitelmasta ovat tosia.
@@ -156,7 +156,7 @@
 ## fy1-8-L2-07
 **Annettu:** taulukon pisteet $(t;\,s)$ = $(0{,}0\,\text{s};\,0{,}00\,\text{m})$, $(2{,}0\,\text{s};\,0{,}62\,\text{m})$, $(4{,}0\,\text{s};\,1{,}18\,\text{m})$, $(6{,}0\,\text{s};\,1{,}83\,\text{m})$, $(8{,}0\,\text{s};\,2{,}39\,\text{m})$; oppilaan lukema kulmakerroin on $3{,}3$
 **Kysytty:** auton nopeus $v$ yksikössä $\text{m/s}$ ja se, mitä luku $3{,}3$ kuvaa
-**Periaate:** Tasaisessa liikkeessä $s = vt$, joten kun aika on vaaka-akselilla ja matka pystyakselilla, suoran kulmakerroin on nopeus. Oppilas vaihtoi akselit: kun matka on vaaka-akselilla, kulmakerroin on $\Delta t / \Delta s = 1/v$ eli nopeuden käänteisluku. Lisäksi akselilta puuttuivat suureet ja yksiköt, joten lukemalle $3{,}3$ ei voi antaa merkitystä.
+**Periaate:** Tasaisessa liikkeessä $s = vt$, joten kun aika on vaaka-akselilla ja matka pystyakselilla, suoran kulmakerroin on nopeus. Oppilas vaihtoi akselit: kun matka on vaaka-akselilla, kulmakerroin on $\Delta t : \Delta s = 1 : v$ eli nopeuden käänteisluku. Lisäksi akselilta puuttuivat suureet ja yksiköt, joten lukemalle $3{,}3$ ei voi antaa merkitystä.
 **Kuvaajan lukeminen:** Pisteet ovat lähes suoralla, joka kulkee origon kautta. Sovitettu suora kulkee esimerkiksi pisteiden $(2{,}0\,\text{s};\,0{,}60\,\text{m})$ ja $(8{,}0\,\text{s};\,2{,}40\,\text{m})$ kautta. Kulmakerroin luetaan kahdesta suoran pisteestä, ei kahdesta vierekkäisestä mittauspisteestä.
 **Kaava:** $v = \dfrac{s_2 - s_1}{t_2 - t_1}$
 **Muunnokset:** Matka on metreinä ja aika sekunteina, joten muunnoksia ei tarvita.
@@ -165,8 +165,8 @@
 **Järkevyys:** Mittauspisteet kasvavat noin $0{,}6\,\text{m}$ joka kahden sekunnin välein, eli noin $0{,}3\,\text{m/s}$. Tulos on leluauton nopeuden luokkaa.
 ## fy1-8-L3-04
 **Annettu:** $\bar{t}_{50} = 3{,}12\,\text{s} \pm 0{,}04\,\text{s}$, $\bar{t}_{200} = 3{,}08\,\text{s} \pm 0{,}04\,\text{s}$; käsiajanoton epävarmuus $\Delta t_\text{käsi} = 0{,}15\,\text{s}$; pohdinnan väitteet ”koe onnistui hyvin”, ”hypoteesi oli oikein” ja ”virheitä oli vähän”
-**Kysytty:** kuinka monta kertaa $\Delta t_\text{käsi}$ on keskiarvojen erotus, ja mitkä väitteet aineisto tukee
-**Periaate:** Pohdinta arvioi, mitä tulokset osoittavat ja kuinka luotettavia ne ovat. Väite on tuettu vain, jos ero on suurempi kuin epävarmuus eli jos epävarmuusvälit eivät mene päällekkäin. Kokeen ei sanota todistavan hypoteesia varmaksi, eikä lauseen ”virheitä oli vähän” pidä jäädä ilman lukuja.
+**Kysytty:** kuinka moninkertainen $\Delta t_\text{käsi}$ on keskiarvojen erotukseen verrattuna, ja mitkä väitteet aineisto tukee
+**Periaate:** Pohdinta arvioi, mitä tulokset osoittavat ja kuinka luotettavia ne ovat. Ero voidaan osoittaa vain, jos epävarmuusvälit eivät mene päällekkäin eli jos ero on suurempi kuin epävarmuuksien summa. Kokeen ei sanota todistavan hypoteesia varmaksi, eikä lauseen ”virheitä oli vähän” pidä jäädä ilman lukuja.
 **Kaava:** $\Delta \bar{t} = \bar{t}_{50} - \bar{t}_{200}$ ja suhde $k = \dfrac{\Delta t_\text{käsi}}{\Delta \bar{t}}$
 **Muunnokset:** Kaikki ajat ovat sekunteina, joten muunnoksia ei tarvita.
 **Sijoitus:** $\Delta \bar{t} = 3{,}12\,\text{s} - 3{,}08\,\text{s} = 0{,}04\,\text{s}$, joten $k = \dfrac{0{,}15\,\text{s}}{0{,}04\,\text{s}} = 3{,}75 \approx 3{,}8$. Välit ovat $3{,}08$–$3{,}16\,\text{s}$ ja $3{,}04$–$3{,}12\,\text{s}$, ja ne menevät päällekkäin välillä $3{,}08$–$3{,}12\,\text{s}$.
@@ -179,5 +179,5 @@
 **Kaava:** $r = \dfrac{T_\text{alku} - T_3}{\Delta t}$, $\;\varepsilon = \dfrac{\Delta T_\text{lasku}}{T_\text{lasku}} \le \varepsilon_\text{max}$, josta $T_\text{lasku} \ge \dfrac{\Delta T_\text{lasku}}{\varepsilon_\text{max}}$ ja $t = \dfrac{T_\text{lasku}}{r}$
 **Muunnokset:** Prosentti on sadasosa: $5{,}0\,\% = 0{,}050$. Lämpötilan lasku on sama kelvineinä ja celsiusasteina, joten $\text{K}$ sopii yksikkönä.
 **Sijoitus:** $r = \dfrac{80{,}0\,{}^\circ\text{C} - 74{,}0\,{}^\circ\text{C}}{3{,}0\,\text{min}} = \dfrac{6{,}0\,\text{K}}{3{,}0\,\text{min}} = 2{,}0\,\text{K/min}$. Sitten $T_\text{lasku} \ge \dfrac{1{,}0\,\text{K}}{0{,}050} = 20\,\text{K}$, joten $t = \dfrac{20\,\text{K}}{2{,}0\,\text{K/min}} = 10\,\text{min}$.
-**Vastaus:** vähintään $10\,\text{min}$, kaksi merkitsevää numeroa kuten annetuissa arvoissa. Vakioitavia suureita: vesimäärä (muuten lämpökapasiteetti ja pinta-ala muuttuvat), veden alkulämpötila (jäähtymisnopeus riippuu lämpötilaerosta huoneeseen) ja ympäristö eli huoneen lämpötila ja ilmavirta sekä kansi tai ei kantta. Käyrät piirretään samaan kuvaajaan, ja niitä verrataan alun kulmakertoimilla (laskunopeus samalla lämpötilan laskulla $\Delta T$, esimerkiksi ensimmäisen $20\,\text{K}$ laskun aikana) epävarmuus huomioiden.
+**Vastaus:** vähintään $10\,\text{min}$, kaksi merkitsevää numeroa kuten annetuissa arvoissa. Vakioitavia suureita: vesimäärä (muuten lämpökapasiteetti ja pinta-ala muuttuvat), veden alkulämpötila (jäähtymisnopeus riippuu lämpötilaerosta huoneeseen) ja ympäristö eli huoneen lämpötila ja ilmavirta sekä kansi tai ei kantta. Käyrät piirretään samaan kuvaajaan, ja niitä verrataan alun kulmakertoimilla (laskunopeus samalla lämpötilan laskulla $T_\text{lasku}$, esimerkiksi ensimmäisen $20\,\text{K}$ laskun aikana) epävarmuus huomioiden.
 **Järkevyys:** Lämpötilan laskun pitää olla $20\,\text{K}$, mikä on 20 kertaa epävarmuus $1{,}0\,\text{K}$, joten suhteellinen epävarmuus on $\tfrac{1}{20} = 5\,\%$. Todellisuudessa jäähtyminen hidastuu (vrt. aiempi jäähtymistehtävä), ja hitaimmin jäähtyvässä astiassa lasku on pienempi, joten $10\,\text{min}$ on alaraja: jakso kannattaa suunnitella pidemmäksi ja tarkistaa esikokeella.

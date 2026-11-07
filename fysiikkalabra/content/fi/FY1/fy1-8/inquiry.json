@@ -65,7 +65,7 @@
         {
           "text": "Ryhmän A mitattu aika on niin lyhyt, että ajanoton epävarmuus on suuri osa siitä.",
           "correct": true,
-          "feedback": "Oikein. Ajan epävarmuus on noin $0{,}2\\,\\text{s}$, joten ryhmän A ajan suhteellinen epävarmuus on $0{,}2 : 1{,}0 = 20\\,\\%$ ja nopeus $0{,}50 \\pm 0{,}10\\,\\text{m/s}$. Ryhmän B tulos $0{,}42\\,\\text{m/s}$ mahtuu tähän väliin, ja B:n oma epävarmuus on vain noin $\\pm 0{,}01\\,\\text{m/s}$. Pöytäkirja tukee tätä."
+          "feedback": "Oikein. Ajan epävarmuus on noin $0{,}2\\,\\text{s}$, joten ryhmän A ajan suhteellinen epävarmuus on $0{,}2 : 1{,}0 = 20\\,\\%$ ja nopeus $0{,}50\\,\\text{m/s} \\pm 0{,}10\\,\\text{m/s}$. Ryhmän B tulos $0{,}42\\,\\text{m/s}$ mahtuu tähän väliin, ja B:n oma epävarmuus on vain noin $\\pm 0{,}01\\,\\text{m/s}$. Pöytäkirja tukee tätä."
         },
         {
           "text": "Satunnaisen vaihtelun takia kumpaankaan tulokseen ei voi luottaa.",
@@ -92,7 +92,7 @@
           {
             "text": "Nopeus on kaikilla matkoilla sama epävarmuuden rajoissa, noin $0{,}42\\,\\text{m/s}$. Epävarmuus on suurin lyhimmällä matkalla.",
             "correct": true,
-            "feedback": "Oikein. Lyhimmän matkan arvo $0{,}39 \\pm 0{,}05\\,\\text{m/s}$ sisältää arvon $0{,}42\\,\\text{m/s}$, ja pidemmillä matkoilla suhteellinen epävarmuus on noin $6\\,\\%$ tai alle. Pisteet noudattavat tasaisen liikkeen mallia $s = vt$."
+            "feedback": "Oikein. Lyhimmän matkan arvo $0{,}39\\,\\text{m/s} \\pm 0{,}05\\,\\text{m/s}$ sisältää arvon $0{,}42\\,\\text{m/s}$, ja pidemmillä matkoilla suhteellinen epävarmuus on noin $6\\,\\%$ tai alle. Pisteet noudattavat tasaisen liikkeen mallia $s = vt$."
           },
           {
             "text": "Nopeudesta ei voi sanoa mitään, koska saman matkan kolme aikaa eroavat toisistaan.",
@@ -240,7 +240,7 @@
       "core": true,
       "title": "Suunnittele oma tutkimus",
       "prompt": "Valitse jokin ilmiö, jota voit tutkia koulussa tai kotona ja jossa suureet ovat mitattavissa: esimerkiksi kävelyn tai pallon vierimisen nopeus, veden jäähtyminen kupissa tai kumilenkin venyminen. Kirjoita suunnitelma: tutkimuskysymys, hypoteesi, muutettava, mitattava ja vakioitavat muuttujat, mittausalue ja toistot sekä se, miten teet pöytäkirjan.",
-      "model": "Tutkimuskysymys: miten pallon vierimiseen kuluva aika riippuu matkasta tasaisella lattialla? Pallo päästetään aina samasta kohdasta lyhyen lähtörampin yli, ja aika alkaa, kun pallo ohittaa lattialle merkityn alkuviivan, jolloin vauhti on jo tasaantunut. Hypoteesi: jos pallon nopeus lattialla on likimain vakio, kulkuaika on suoraan verrannollinen matkaan, $s = vt$. Jos aika kasvaa matkaa nopeammin, hypoteesi on väärä. Muutettava muuttuja on matka alkuviivasta (esimerkiksi $1{,}6$–$3{,}2\\,\\text{m}$ viidellä tasavälisellä arvolla), mitattava on aika käsikellolla, ja vakioidaan pallo, rampin korkeus ja lähtökohta, alusta sekä lähtötapa (pallo päästetään irti ilman työntöä). Esikokeessa pallon nopeus on noin $0{,}4\\,\\text{m/s}$. Oikea pallo hidastuu vierimisen aikana hieman vierimisvastuksen takia, joten koe testaa myös sen, onko nopeus riittävän vakio. Käsin otetun ajan epävarmuus on noin $0{,}2\\,\\text{s}$, joten lyhimmällä matkalla aikaa pitää olla vähintään $4\\,\\text{s}$, jotta suhteellinen epävarmuus pysyy enintään $5\\,\\%$. Matka $1{,}6\\,\\text{m}$ antaa ajan $4\\,\\text{s}$. Teen jokaisesta matkasta kolme toistoa ja kirjaan pöytäkirjaan jokaisen lukeman yksiköineen sekä havainnot, kuten ”pallo osui seinään”. Esikoe kertoo, onko matka riittävä.",
+      "model": "Tutkimuskysymys: miten pallon vierimiseen kuluva aika riippuu matkasta tasaisella lattialla? Pallo päästetään aina samasta kohdasta lyhyen lähtörampin yli, ja aika alkaa, kun pallo ohittaa lattialle merkityn alkuviivan, jolloin vauhti on jo tasaantunut. Hypoteesi: pallon nopeus lattialla pysyy likimain vakiona, joten kulkuaika on suoraan verrannollinen matkaan, $s = vt$. Jos nopeus $s : t$ pienenee selvästi matkan kasvaessa, hypoteesi on väärä. Muutettava muuttuja on matka alkuviivasta (esimerkiksi $1{,}6$–$3{,}2\\,\\text{m}$ viidellä tasavälisellä arvolla), mitattava on aika käsikellolla, ja vakioidaan pallo, rampin korkeus ja lähtökohta, alusta sekä lähtötapa (pallo päästetään irti ilman työntöä). Esikokeessa pallon nopeus on noin $0{,}4\\,\\text{m/s}$. Oikea pallo hidastuu vierimisen aikana hieman vierimisvastuksen takia, joten koe testaa myös sen, onko nopeus riittävän vakio. Käsin otetun ajan epävarmuus on noin $0{,}2\\,\\text{s}$, joten lyhimmällä matkalla aikaa pitää olla vähintään $4\\,\\text{s}$, jotta suhteellinen epävarmuus pysyy enintään $5\\,\\%$. Matka $1{,}6\\,\\text{m}$ antaa ajan $4\\,\\text{s}$. Teen jokaisesta matkasta kolme toistoa ja kirjaan pöytäkirjaan jokaisen lukeman yksiköineen sekä havainnot, kuten ”pallo osui seinään”. Esikoe kertoo, onko matka riittävä.",
       "criteria": [
         "Kysymys on mitattavissa, ja hypoteesista seuraa ennuste, joka voi osoittautua vääräksi.",
         "Nimesin muutettavan, mitattavan ja vähintään kaksi vakioitavaa muuttujaa.",
@@ -351,7 +351,7 @@
         "Muotoilen johtopäätöksen niin, että siinä on tulos epävarmuuksineen ja vastaus tutkimuskysymykseen.",
         "Mainitsen, mitä vielä pitäisi tutkia tai mikä jäi epävarmaksi."
       ],
-      "model": "Yksi koe ei voi todistaa hypoteesia oikeaksi. Se voi antaa sille tukea, jos tulos osuu ennusteeseen epävarmuuden rajoissa, tai kumota sen. Johtopäätöksessä pitää olla tulos epävarmuuksineen, esimerkiksi $v = 0{,}42 \\pm 0{,}02\\,\\text{m/s}$, ja se pitää vertailla ennusteeseen: tulos sopii ennusteeseen, joten mittaus tukee hypoteesia. Lisäksi on kerrottava, millä ehdoilla tulos on saatu, esimerkiksi tietyllä autolla ja alustalla, sekä mitä jäi tutkimatta, kuten pidemmät matkat. Näin toinen voi arvioida, kuinka paljon johtopäätökseen voi luottaa."
+      "model": "Yksi koe ei voi todistaa hypoteesia oikeaksi. Se voi antaa sille tukea, jos tulos osuu ennusteeseen epävarmuuden rajoissa, tai kumota sen. Johtopäätöksessä pitää olla tulos epävarmuuksineen, esimerkiksi $v = 0{,}42\\,\\text{m/s} \\pm 0{,}02\\,\\text{m/s}$, ja se pitää vertailla ennusteeseen: tulos sopii ennusteeseen, joten mittaus tukee hypoteesia. Lisäksi on kerrottava, millä ehdoilla tulos on saatu, esimerkiksi tietyllä autolla ja alustalla, sekä mitä jäi tutkimatta, kuten pidemmät matkat. Näin toinen voi arvioida, kuinka paljon johtopäätökseen voi luottaa."
     },
     {
       "id": "lahtolippu",

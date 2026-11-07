@@ -1,6 +1,6 @@
 # Acceleration of free fall: $v = gt$
 
-> **Why** did the astronaut on the Moon drop a hammer and a feather at the same time and see them hit the ground together, even though on Earth a feather drifts slowly down?
+> **Why** did a hammer and a feather hit the Moon's surface together when the astronaut dropped them at the same time, even though on Earth a feather drifts slowly down?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: an astronaut on the grey surface of the Moon against a black sky, with the lunar module behind and the Earth in the sky. The astronaut has dropped a hammer and a feather at the same time; faint in-between images show that they are at the same height at every moment and that the gaps between the images grow during the fall." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><radialGradient id="fy16h-ocean" cx="0.35" cy="0.35" r="0.8"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></radialGradient><clipPath id="fy16h-clip"><circle cx="1060" cy="110" r="62"/></clipPath><linearGradient id="fy16h-ground" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><linearGradient id="fy16h-foil" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy16h-visor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#6c757d"/></linearGradient></defs>
@@ -162,28 +162,28 @@ When an object is released from rest, its speed increases. **Free fall** is fall
   <foreignObject x="102" y="29.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0$</div></foreignObject>
   <circle cx="215" cy="44" r="11" fill="url(#fy16-b0)" stroke="#1f2933" stroke-width="2.5"/>
   <circle cx="211" cy="40" r="2" fill="#ffffff"/>
-  <foreignObject x="239" y="29.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$v = 0$</div></foreignObject>
+  <foreignObject x="239" y="29.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$v = 0$</div></foreignObject>
   <line x1="150" y1="74.5" x2="201" y2="74.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <foreignObject x="102" y="60" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$1$</div></foreignObject>
   <circle cx="215" cy="74.5" r="11" fill="url(#fy16-b1)" stroke="#1f2933" stroke-width="2.5"/>
   <circle cx="211" cy="70" r="2" fill="#ffffff"/>
-  <line x1="215" y1="88.5" x2="215" y2="95" stroke="#e8590c" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M215,106 L209.5,94 L220.5,94 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <foreignObject x="239" y="82.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$v = 9.81\,\text{m/s}$</div></foreignObject>
+  <line x1="215" y1="88.5" x2="215" y2="95" stroke="#1971c2" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M215,106 L209.5,94 L220.5,94 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <foreignObject x="239" y="82.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$v = 9.81\,\text{m/s}$</div></foreignObject>
   <line x1="150" y1="165.5" x2="201" y2="165.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <foreignObject x="102" y="151" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$2$</div></foreignObject>
   <circle cx="215" cy="165.5" r="11" fill="url(#fy16-b2)" stroke="#1f2933" stroke-width="2.5"/>
   <circle cx="211" cy="161.5" r="2" fill="#ffffff"/>
-  <line x1="215" y1="179.5" x2="215" y2="204" stroke="#e8590c" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M215,215 L209.5,203 L220.5,203 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <foreignObject x="239" y="183" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$v = 19.6\,\text{m/s}$</div></foreignObject>
+  <line x1="215" y1="179.5" x2="215" y2="204" stroke="#1971c2" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M215,215 L209.5,203 L220.5,203 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <foreignObject x="239" y="183" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$v = 19.6\,\text{m/s}$</div></foreignObject>
   <line x1="150" y1="317.5" x2="201" y2="317.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <foreignObject x="102" y="303" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$3$</div></foreignObject>
   <circle cx="215" cy="317.5" r="11" fill="url(#fy16-b3)" stroke="#1f2933" stroke-width="2.5"/>
   <circle cx="211" cy="313.5" r="2" fill="#ffffff"/>
-  <line x1="215" y1="331.5" x2="215" y2="373.5" stroke="#e8590c" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M215,384.5 L209.5,372.5 L220.5,372.5 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <foreignObject x="239" y="343.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$v = 29.4\,\text{m/s}$</div></foreignObject>
+  <line x1="215" y1="331.5" x2="215" y2="373.5" stroke="#1971c2" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M215,384.5 L209.5,372.5 L220.5,372.5 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <foreignObject x="239" y="343.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$v = 29.4\,\text{m/s}$</div></foreignObject>
   <line x1="556" y1="156" x2="556" y2="218" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <line x1="548" y1="156" x2="564" y2="156" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <line x1="548" y1="218" x2="564" y2="218" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
@@ -212,21 +212,21 @@ When there is no air resistance, all objects fall with the same acceleration reg
   <circle cx="246.5" cy="109.5" r="2" fill="#ffffff"/>
   <circle cx="400" cy="113" r="16" fill="url(#fy16-h1)" stroke="#1f2933" stroke-width="2.5"/>
   <circle cx="394.5" cy="107" r="2.88" fill="#ffffff"/>
-  <line x1="250" y1="126" x2="250" y2="133" stroke="#e8590c" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M250,144 L244.5,132 L255.5,132 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <line x1="400" y1="132" x2="400" y2="139" stroke="#e8590c" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M400,150 L394.5,138 L405.5,138 Z" fill="#e8590c" stroke-linejoin="round"/>
+  <line x1="250" y1="126" x2="250" y2="133" stroke="#1971c2" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M250,144 L244.5,132 L255.5,132 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <line x1="400" y1="132" x2="400" y2="139" stroke="#1971c2" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M400,150 L394.5,138 L405.5,138 Z" fill="#1971c2" stroke-linejoin="round"/>
   <line x1="264" y1="231" x2="380" y2="231" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <foreignObject x="102" y="216.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$2$</div></foreignObject>
   <circle cx="250" cy="231" r="10" fill="url(#fy16-l2)" stroke="#1f2933" stroke-width="2.5"/>
   <circle cx="246.5" cy="227" r="2" fill="#ffffff"/>
   <circle cx="400" cy="231" r="16" fill="url(#fy16-h2)" stroke="#1f2933" stroke-width="2.5"/>
   <circle cx="394.5" cy="225" r="2.88" fill="#ffffff"/>
-  <line x1="250" y1="244" x2="250" y2="268.5" stroke="#e8590c" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M250,279.5 L244.5,267.5 L255.5,267.5 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <line x1="400" y1="250" x2="400" y2="274.5" stroke="#e8590c" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M400,285.5 L394.5,273.5 L405.5,273.5 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <foreignObject x="438" y="256.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$\text{same speed}$</div></foreignObject>
+  <line x1="250" y1="244" x2="250" y2="268.5" stroke="#1971c2" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M250,279.5 L244.5,267.5 L255.5,267.5 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <line x1="400" y1="250" x2="400" y2="274.5" stroke="#1971c2" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M400,285.5 L394.5,273.5 L405.5,273.5 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <foreignObject x="438" y="256.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\text{same speed}$</div></foreignObject>
 </svg>
 
 In air the situation is different. Air slows a light, wide object, such as a feather or a sheet of paper, clearly more than a small, dense object, such as a stone or a steel ball. This is why at home a feather falls more slowly than a hammer. The difference is caused by the air, not by mass as such.
@@ -284,7 +284,7 @@ where $v$ is the downward speed ($\text{m/s}$), $g = 9.81\,\text{m/s}^2$ is the 
   <foreignObject x="116" y="115" width="183" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$g = \dfrac{\Delta v}{\Delta t} = 9.81\,\text{m/s}^2$</span></div></foreignObject>
 </svg>
 
-So the $(t, v)$ graph of a falling object is a rising straight line through the origin. Its slope $\tfrac{\Delta v}{\Delta t}$ is the acceleration of free fall, so $g$ can be found from the graph by reading two points far apart. Because the acceleration is constant, $\Delta v = g\,\Delta t$ holds for any time interval: the speed increases by $9.81\,\text{m/s}$ every second even when the object did not start from rest.
+So the $(t, v)$ graph of a falling object is a rising straight line through the origin. Its slope $\tfrac{\Delta v}{\Delta t}$ is the acceleration of free fall, so $g$ can be found from the graph by reading two points far apart. Because the acceleration is constant, $\Delta v = g\,\Delta t$ holds for any time interval: the speed of an object moving downwards increases by $9.81\,\text{m/s}$ every second even when the object did not start from rest.
 
 <figure class="unit-photo"><img src="pics/fy1/bouncing-ball-strobe.webp" alt="Images of a bouncing yellow ball in two arcs on a black background. Near the bottom of the arcs the images are further apart than at the top."><figcaption>A bouncing ball photographed at equal time intervals. As the ball falls it speeds up, so the gaps between successive images grow.</figcaption></figure>
 
@@ -331,14 +331,14 @@ v &= 14.715 \cdot 1\,\text{m/s} \\
 
 <!-- vaihe -->
 
-**Reasonableness.** The graph shows the same: at the moment $1\,\text{s}$ the speed is $9.8\,\text{m/s}$ and at the moment $2\,\text{s}$ it is $19.6\,\text{m/s}$, so at the moment $1.5\,\text{s}$ it is about $15\,\text{m/s}$. A speed of $53\,\text{km/h}$ is a normal speed for a car in city traffic, and it is a reasonable result for a fall that lasts only one and a half seconds.
+**Reasonableness.** The graph shows the same: at the moment $1\,\text{s}$ the speed is $9.81\,\text{m/s}$ and at the moment $2\,\text{s}$ it is $19.6\,\text{m/s}$, so at the moment $1.5\,\text{s}$ it is about $15\,\text{m/s}$. A speed of $53\,\text{km/h}$ is a normal speed for a car in city traffic, and it is a reasonable result for a fall that lasts only one and a half seconds.
 
 ## Common misconception
-A heavy object does not fall faster than a light one: when there is no air resistance, all objects have the same $g$. Everyday experience seems to show otherwise, because in air a light, wide object is slowed the most. Another mistake is to treat the number $g = 9.81\,\text{m/s}^2$ as a speed: it tells how much the speed increases every second, and the speed itself is $g\,t$.
+A heavy object does not fall faster than a light one: when there is no air resistance, all objects have the same $g$. Everyday experience seems to show otherwise, because air holds back the fall of a light, wide object the most. Another mistake is to treat the number $g = 9.81\,\text{m/s}^2$ as a speed: it tells how much the speed increases every second, and the speed itself is $g\,t$.
 
 ## Summary
 - In free fall there is no air resistance. The speed of the object increases by the same amount every second.
 - The acceleration of free fall on the surface of the Earth is $g = 9.81\,\text{m/s}^2$, and it is the same for all objects regardless of mass.
 - The speed of an object that starts from rest is $v = g\,t$, and the $(t, v)$ graph is a straight line through the origin with slope $g$.
-- In air a light, wide object is slowed the most, so $v = g\,t$ does not hold unless air resistance is ignored.
-- Conversion: in an hour $3600\,\text{m} = 3.6\,\text{km}$, so $1\,\text{m/s} = 3.6\,\text{km/h}$.
+- In air, air holds back the fall of a light, wide object the most, so the formula $v = g\,t$ holds only when air resistance can be ignored.
+- Conversion: at a speed of $1\,\text{m/s}$ an object travels $3600\,\text{m} = 3.6\,\text{km}$ in an hour, so $1\,\text{m/s} = 3.6\,\text{km/h}$.

@@ -1432,7 +1432,7 @@
   },
   {
     "term": "hypoteesi",
-    "definition": "Perusteltu ja testattava ennuste tutkimuskysymykseen, esimerkiksi ”jos auto liikkuu vakionopeudella, matka on verrannollinen aikaan”. Hypoteesista pitää seurata mitattava tulos, joka voi osoittautua vääräksi.",
+    "definition": "Perusteltu ja testattava ennuste tutkimuskysymykseen, esimerkiksi ”auto liikkuu vakionopeudella, joten matka on verrannollinen aikaan”. Hypoteesista pitää seurata mitattava tulos, joka voi osoittautua vääräksi.",
     "lessons": [
       "fy1-8"
     ],
@@ -1444,7 +1444,7 @@
   },
   {
     "term": "muuttuja",
-    "definition": "Suure, jonka arvo voi vaihdella tutkimuksessa. Reilussa kokeessa muutetaan yhtä muuttujaa (muutettava), mitataan toista (mitattava) ja pidetään muut samoina (vakioitavat).",
+    "definition": "Suure tai muu tekijä, joka voi vaihdella tutkimuksessa. Reilussa kokeessa muutetaan yhtä muuttujaa (muutettava), mitataan toista (mitattava) ja pidetään muut samoina (vakioitavat).",
     "lessons": [
       "fy1-8"
     ],
