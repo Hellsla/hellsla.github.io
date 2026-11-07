@@ -268,12 +268,16 @@ def generic(lid):
         # predictions first, as a student makes them: the tasks further down scroll past the theory section that
         # reveals a theory-linked prediction (fy5-17), and its feedback would then rightly show at once
         wrongs = {}
-        for pr in preds:
-            loc = pg.locator(f"#{pr['id']}"); wrong = int(loc.locator("input[data-correct='0']").first.get_attribute("value")); wrongs[pr["id"]] = str(wrong)
-            loc.locator("input[type=radio]").nth(wrong).check(); loc.locator("button.commit").click()
-            check(f"{pr['id']}: committed without feedback", loc.locator("fieldset").get_attribute("data-committed") == "1" and not loc.locator(".feedback").nth(wrong).is_visible())
+        def commit_preds(late):
+            for pr in preds:
+                loc = pg.locator(f"#{pr['id']}")
+                if bool(loc.evaluate("(e) => !!e.closest('details.opt')")) != late: continue   # an optional prediction waits until its box is open
+                wrong = int(loc.locator("input[data-correct='0']").first.get_attribute("value")); wrongs[pr["id"]] = str(wrong)
+                loc.locator("input[type=radio]").nth(wrong).check(); loc.locator("button.commit").click()
+                check(f"{pr['id']}: committed without feedback", loc.locator("fieldset").get_attribute("data-committed") == "1" and not loc.locator(".feedback").nth(wrong).is_visible())
+        commit_preds(False)
         more = pg.locator('#tutki details[data-fold="tutki-more"]')   # Tutki's other tasks wait in a closed box (teacher 2026-11-06)
-        if more.count(): more.evaluate("(d) => { d.open = true; }"); pg.wait_for_timeout(100)   # without scrolling: a theory section seen early would reveal predictions
+        if more.count(): more.evaluate("(d) => { d.open = true; }"); pg.wait_for_timeout(100)
         n_opt = pg.locator("details.opt").count()
         if n_opt:                                         # optional activities: closed, named boxes that open from the keyboard
             st = pg.evaluate("[...document.querySelectorAll('details.opt')].map((d) => [d.open, d.querySelector('summary').textContent.includes('Valinnainen') || !d.querySelector('.opt-tag'), !!d.querySelector('.activity[id]')])")
@@ -281,6 +285,7 @@ def generic(lid):
             pg.locator("details.opt > summary").first.focus(); pg.keyboard.press("Enter")
             check("an optional box opens from the keyboard", pg.locator("details.opt").first.evaluate("(d) => d.open"))
             pg.evaluate("document.querySelectorAll('details.opt').forEach((d) => { d.open = true; })")   # the rest of the run treats them like the others
+        commit_preds(True)
         for a in acts:                                    # plain choices: a wrong option gets its own feedback, the right one "Oikein"
             if a["type"] != "choice" or a.get("reveal"): continue
             loc = pg.locator(f"#{a['id']}")
