@@ -1,16 +1,13 @@
-VERDICT: FAIL
-CONTENT-HASH: ce8f1a81d3554d54
-Mode: delta (s2 d, s3 b)
+VERDICT: PASS
+CONTENT-HASH: 7f4b8f03aa513d9e
+Mode: delta (c2c6eff02, s2 d conclusion criterion)
 
 ## Blocking
-- sovella/tasks.json:298 (s2 d, key conclusion) — one point now needs two things: choosing the larger estimate and stating that the numbers are not safe maximum speeds and that real design needs margins, load analysis and measurements. The part text only asks "Arvioi kummankin ohjaajan mallia. Kumman arvion mukaan jarru kannattaa mitoittaa?", so the second half is a point for something not asked (a student who answers the question correctly is stuck at 3/4). Also solutions.md "Mitoitus" says neither number is a safe maximum while the question asks which to size by. — Either add to the part text "Mitä luvut eivät kerro jarrun todellisesta mitoituksesta?" (and keep the point), or reduce the criterion to the choice plus reason and leave the caveat to "assumptions".
 
 ## Polish
-- s3 b (tasks.json:379) — fixed well: "mallin mukaan ... noin 49 km/h" replaces the unfounded braking inference. Detail says "selvästi yli 40" for 49 km/h; fine.
-- solutions.md "Hyväksytään myös" s2 d now consistent with the new criterion; update it together with the fix.
+- solutions.md "Mitoitus" caveat now carries no point; fine as teaching text. The "Hyväksytään myös" line for s2 d matches the trimmed criterion.
 
 ## Checked
-- Diff only (s2 d solution and rubric, s3 b answer and rubric); text read.
-- s3 b: the conclusion now follows from the calculation (14 m/s, 49 km/h) and no longer claims what the data cannot show.
-- s2 d solution paragraph "Mitoitus" is a good learning step in itself (model limits), only the rubric/prompt alignment is open.
-- Other tasks untouched and passed earlier.
+- Diff only; text read.
+- s2 d conclusion is now only the choice of the larger speed and its reason, which is exactly what the part text asks. The earlier unasked point is gone, so a correct answer can earn 4/4.
+- s3 b and the earlier Sovella deltas unchanged and passed.

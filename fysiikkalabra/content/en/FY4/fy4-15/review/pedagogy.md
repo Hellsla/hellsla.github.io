@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 328979ec82ec54f4
-Mode: delta (wind-power reference power, cut-in/rated/cut-out, figure caption)
+CONTENT-HASH: e7603624bb853c01
+Mode: delta (wind-power reference power, cut-in/rated/cut-out, figure caption; en ilmalierio text reworded in c2c6eff02)
 
 ## Blocking
 
 ## Polish
-- lesson.md:237 — "häiriötön tuuli" / "undisturbed wind" is used in the 59 % sentence before it is explained (lesson.md:249-251). — Add a short gloss at first use ("tuuli ennen roottoria").
-- lesson.md (tehokäyrä caption) — "napakorkeudella", "ten-minute mean", standard density are specialist detail for a 17-year-old; harmless but heavy. — Optional: cut to one sentence ("vakio-olosuhteissa, joten vertailu on likimääräinen").
-- inquiry.json:278, :337 — still speak loosely of "roottorin läpi virtaava tuuli" while the lesson now defines a reference power. Not wrong in context (qualitative), optional to align.
+- lesson.md:237 — "undisturbed wind" is used in the 59 % sentence before it is explained a few lines later. Optional short gloss at first use.
+- Power-curve caption: "hub height", "ten-minute average" are heavy for a 17-year-old; optional trim.
+- inquiry.json:278, :337 still say "the wind flowing through the rotor" loosely; optional to align.
 
 ## Checked
-- Read from text; no render. Diff only: lesson text, figure aria-label, exit ticket, figures.json.
-- The new reference-power paragraph is staged well: undisturbed wind and cylinder first, then "in reality the rotor slows the air", then η defined against P_tuuli. The old unqualified "roottorin läpi virtaava" is gone, so η and the 59 % limit now mean the same thing.
-- The ×8 versus measured ×8,9 explanation now says the cube law holds only for roughly constant η; consistent with the inquiry prediction feedback.
-- Cut-in (3-4 m/s), rated (13 m/s, 1650 kW) and cut-out are named in order in one paragraph; the graph caption says the graph does not show cut-out, so no hidden contradiction. Exit-ticket answer matches the lesson.
-- Example, Periaate and Järkevyys use "vertailuteho/reference power" consistently; summary bullet matches.
-- Figure ilmalierio aria-label is conditional ("kuljettaisi", "olisi") and matches the text.
-- Translation parity checked for this language: same structure and numbers as fi.
+- Read from text; no render.
+- Reference-power paragraph is staged well (undisturbed wind and cylinder, then the rotor slows the air, then efficiency defined against the reference power); the x8 versus x8.9 explanation, cut-in/rated/cut-out paragraph and exit ticket agree.
+- The reworded ilmalierio aria-label and figures.json entry ("would carry air through the area swept by the rotor, and this air would fill a cylinder") read more clearly than before and match the Finnish figure text and the lesson.
+- Example, Principle, Reasonableness and summary use "reference power" consistently.

@@ -1,11 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: f804f3e860bf7501
+CONTENT-HASH: a901b477a60157b3
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] lesson.md:386 — "Vestas V82 -tuulivoimalan" breaks before the hyphen at 390 px (dangling " -" at line end) — write "V82-tuulivoimalan".
+- [Minor] lesson.md summary — $\eta = \tfrac{P_\text{s}}{P_\text{o}}$ in Tiivistelmä uses $P_\text{s}$, $P_\text{o}$ while the new theory names $P_\text{tuuli}$ — optional: keep one notation.
 
 ## Checked
-- batch delta review: "Luvun tärkeät käsitteet" panel captured from preview/fi-easy/fy4-15.html at 390 and 1280 px (the review/shots set has no capture of it) and opened — between the opening and stage 1, term bold over its explanation at 390 px, two-column at 1280 px, no clipping, no horizontal overflow, no KaTeX error; top-390 opened in a montage (read-aloud "Kuuntele" button under the title, layout intact).
+- Delta review (editorial correction round, light, teacher 2026-11-07). Opened theory-1280-2 and stage-selita-390-3/-4/-5: new reference-power paragraphs, P_\text{tuuli} and \eta = P : P_\text{tuuli} inline formulas on one line, sähköteho display, ilmalieriö figure (only aria-label changed) and tehokäyrä graph with the new source paragraph beside it render cleanly; exit-ticket answer and figures.json aria text read in the diff.
+- Plain Finnish: new sentences short and concrete, terms as in the glossary; mathematical typography: \cdot, colon for division, decimal comma, units upright in inline LaTeX; no plain-text quantity in the changed text.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5
