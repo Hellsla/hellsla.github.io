@@ -1,6 +1,6 @@
 {
- "_note": "Annetut tehtävät (opettaja 7.11.2026): tehtävätunnisteet moduuleittain ja luvuittain. scripts/assigned.py tarkistaa ja ehdottaa.",
- "FY3": {
+ "_note": "Annetut tehtävät (opettaja 7.11.2026): tehtävätunnisteet moduuleittain ja luvuittain. scripts/assigned.py tarkistaa ja ehdottaa. Pois käytöstä 7.11.2026 (opettaja: FY3 samaan malliin kuin muut, laskuri laskee kaikki tehtävät). Luettelo säilyy avaimessa _FY3; ota käyttöön nimeämällä se takaisin FY3:ksi.",
+ "_FY3": {
   "fy3-1": [
    "fy3-1-L1-06",
    "fy3-1-L1-07",

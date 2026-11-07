@@ -311,6 +311,9 @@ with sync_playwright() as p:
     pg2.evaluate("localStorage.setItem('ruukkilabra:tehty', JSON.stringify({v: 1, done: {'fy3-1-L1-06': '2026-11-06T09:00:00.000Z'}, log: [['fy3-1-L1-06', '2026-11-06T09:00:00.000Z', 1]]}))")
     pg2.evaluate("() => new Promise((ok) => { const s = document.createElement('script'); s.src = 'padstore.js'; s.onload = () => window.flPadStore.put('fy3-2-L1-01', 'Luvun 2 ratkaisu', 'fy3-2.html').then(() => window.flPadStore.put('fy3-1-L1-06', 'Massa pysyy samana.', 'fy3-1.html')).then(ok); document.head.append(s); })")
     pg2.reload(); pg2.wait_for_timeout(500)
+    # assigned tasks are off since 2026-11-07 evening (annetut.json _FY3); a file made with them on (tehty.js flDone) still
+    # carries the Tehty marks, and the teacher's side keeps reading them
+    pg2.evaluate("window.flDone = window.flDone || { progress: () => ({ course: 'FY3', assigned: ['fy3-1-L1-06', 'fy3-1-L1-07'], done: [['fy3-1-L1-06', '2026-11-06T09:00:00.000Z']], history: [['fy3-1-L1-06', '2026-11-06T09:00:00.000Z', 1]] }) }")
     files["work"] = json.loads(pg2.evaluate("window.flWork.make().then((r) => r.text)"))
     A3 = {a["task"]: a for a in fa["answers"]}
     R = lambda t: A3[t]["responses"]

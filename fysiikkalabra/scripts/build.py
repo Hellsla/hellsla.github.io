@@ -137,6 +137,7 @@ ASSIGNED = assigned.load()
 ASSIGNED_IDS = assigned.flat(ASSIGNED)
 
 
+GOAL_PER_OP = 45   # the progress graph's goal line (teacher 2026-11-07): 90 tasks in a 2 op module, 45 in a 1 op one
 COURSE_FILE = {f"FY{i}" for i in range(1, 9)}   # one work file per module (teacher 2026-11-07): FY1-FY8; FY9 keeps the chapter file
 
 
@@ -162,7 +163,7 @@ def course_block(course, lang):
         goals = self_goals(course, l["id"], lang)
         if goals and chs and chs[-1]["id"] == l["id"]: chs[-1]["goals"] = goals
     given = [i for ids in ASSIGNED.get(course, {}).values() for i in ids]
-    data = {"course": course, "chapters": chs, "assigned": given}
+    data = {"course": course, "chapters": chs, "assigned": given, "goal": GOAL_PER_OP * curriculum[course].get("op", 2)}
     return ('<script id="fl-course" type="application/json">' + json.dumps(data, separators=(",", ":")) + "</script>"
             + ('<script src="tehty.js"></script>' if given else ""))
 
@@ -212,7 +213,7 @@ def local_progress(code, c, lang):
             if k == 0 or not themes or themes[-1]["t"] != ch["title"]: themes.append({"t": ch["title"], "first": u["id"]})
             chs.append({"id": u["id"], "n": n, "tasks": tasks, **({"goals": [inquiry.plain(x) for x in goals]} if goals else {})})
     if not chs: return ""
-    block = '<script id="fl-course" type="application/json">' + json.dumps({"course": code, "chapters": chs, "assigned": []}, separators=(",", ":")) + "</script>"
+    block = '<script id="fl-course" type="application/json">' + json.dumps({"course": code, "chapters": chs, "assigned": [], "goal": GOAL_PER_OP * c.get("op", 2)}, separators=(",", ":")) + "</script>"
     return progress_view(themes, False, block)
 
 

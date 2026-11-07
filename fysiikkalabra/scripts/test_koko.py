@@ -31,7 +31,7 @@ class Quiet(http.server.SimpleHTTPRequestHandler):
 srv = http.server.ThreadingHTTPServer(("127.0.0.1", 0), functools.partial(Quiet, directory=str(SITE)))
 threading.Thread(target=srv.serve_forever, daemon=True).start()
 BASE = f"http://127.0.0.1:{srv.server_port}/"
-assigned = json.loads((ROOT / "annetut.json").read_text())["FY3"]
+_a = json.loads((ROOT / "annetut.json").read_text()); assigned = _a.get("FY3") or _a["_FY3"]   # FY3 list kept (off since 2026-11-07) as a realistic set of 72 tasks
 IDS = [(lid, i) for lid, ids in assigned.items() for i in ids][:75]
 while len(IDS) < 75: IDS.append(IDS[len(IDS) % 72])
 
