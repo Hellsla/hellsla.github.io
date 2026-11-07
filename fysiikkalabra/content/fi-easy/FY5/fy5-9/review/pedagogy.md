@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: f2a9090c70f3a05f
+CONTENT-HASH: 78285414936fe78f
+
 ## Blocking
+(none)
 
 ## Polish
-- meta.json key_concepts "heiluri" (unchanged, carried from the batch review): a pendulum is harmonic only for small swings, as the lesson says ("Pienillä kulmilla …"). Adding "Pienillä heilahduksilla heilurin värähtely on harmonista." would keep it consistent with "harmoninen värähtely".
+- lesson.md:373 — "kello ei kiirehdi eikä jätä" is unclear for S2 (absolute "jättää") — write "kello ei edistä eikä jätätä" or "kello käy oikeaa aikaa".
+
 ## Checked
-- Delta: meta.json key_concepts "vaimeneminen" now reads "… muuttaa osan sen energiasta sisäenergiaksi."
-- The new wording matches the lesson's Vaimeneminen section ("muuttavat osan mekaanisesta energiasta sisäenergiaksi") and the term used in earlier courses. "Osan" correctly says that the energy decreases gradually, period by period, and does not vanish at once.
-- The S2 reading level is kept: one sentence, and the cause (kitka, ilmanvastus) is named.
-- The other key concepts are unchanged since the passed batch review.
+light delta review (teacher 2026-11-07): only the changed passages were judged, in context of the surrounding text, tasks, feedback and solutions; no full review even where the tooling asks for one; physics left to the science review; Foucault caption, the large-angle note in the misconception paragraph and the clock paragraph are consistent with each other and with the small-angle claim.

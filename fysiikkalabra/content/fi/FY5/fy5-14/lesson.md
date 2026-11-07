@@ -558,7 +558,7 @@ Juna ajaa suoraa rataa tasaisella nopeudella $108\,\text{km/h}$ ja soittaa ään
 
 <!-- vaihe -->
 
-**Periaate.** Äänilähde liikkuu ja kuulija on paikallaan, joten käytetään liikkuvan lähteen Dopplerin kaavaa. Lähestyvän junan edessä aaltorintamat tihenevät, joten merkki valitaan niin, että $f_1 > f_0$. Loittonevan junan takana rintamat harvenevat, ja $f_2 < f_0$. Malli on ideaalinen: matkustajan oletetaan olevan radan linjalla, jolloin junan koko nopeus osoittaa kohti häntä tai hänestä poispäin.
+**Periaate.** Äänilähde liikkuu ja kuulija on paikallaan, joten käytetään liikkuvan lähteen Dopplerin kaavaa. Lähestyvän junan edessä aaltorintamat tihenevät, joten merkki valitaan niin, että $f_1 > f_0$. Loittonevan junan takana rintamat harvenevat, ja $f_2 < f_0$. Malli on ideaalinen: matkustajan oletetaan olevan lähes radan linjalla, jolloin junan koko nopeus osoittaa kohti häntä tai hänestä poispäin.
 
 <!-- vaihe -->
 

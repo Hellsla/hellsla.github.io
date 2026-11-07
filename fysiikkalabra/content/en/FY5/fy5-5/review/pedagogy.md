@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 86acf7c53cd4a3be
+CONTENT-HASH: 7d00c1710ea5520b
 ## Blocking
 
 ## Polish
 
 ## Checked
-batch delta review: the diff is a renamed lesson title and updated chapter cross-references; every reference matches the new titles, no stale old title remains in the lesson, inquiry or exercises, and the sentences read correctly. No figures, numbers or symbols changed.
+light delta review (teacher 2026-11-07): batch delta review of the new Artemis II photo (the caption ties it to equal mutual forces, which is the paragraph's point) and the Cavendish sentence in context. The sentence is clear and agrees with the reworded exercise fy5-5-L3-04. No numbers or symbols changed.

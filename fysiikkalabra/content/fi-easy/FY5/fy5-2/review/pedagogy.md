@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: e3e3fdce6c1f6d9e
+CONTENT-HASH: 11f0ae4441e1ac86
+
 ## Blocking
+(none)
 
 ## Polish
+(none)
 
 ## Checked
-- Delta: meta.json key_concepts "painopiste" now reads "Tasa-aineisen ja symmetrisen kappaleen painopiste on sen keskellä."
-- The new wording matches the lesson's own definition word for word (lesson.md, Ydinajatus: "Tasa-aineisen ja symmetrisen kappaleen, kuten tasapaksun lankun, painopiste on keskellä").
-- The added condition removes the oversimplification that any symmetric body has its centre of gravity at the centre. The sentence is still short S2 Finnish, and "tasa-aineinen" is explained by the lesson's example.
-- The other key concepts are unchanged since the passed batch review.
+light delta review (teacher 2026-11-07): only the changed passages were judged, in context of the surrounding text, tasks, feedback and solutions; no full review even where the tooling asks for one; physics left to the science review; tukipinta definition (box, chair examples) and the tipping-vs-sliding distinction are clear and keep the core idea; no figure or task touched.

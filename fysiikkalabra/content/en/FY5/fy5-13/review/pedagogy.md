@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 705d3af808b796fe
-
+CONTENT-HASH: 8595d5be687244d7
 ## Blocking
 
 ## Polish
+- lesson.md:132 — "so even the nodes vibrate a little" comes before nodes are defined (line 198) and just before "certain points stay in place all the time", which reads as a contradiction — move the ideal-reflection sentence to "Nodes and antinodes", after the definition ("In reality the reflected wave is slightly weaker, so a node vibrates a little").
 
 ## Checked
-- delta review: the Find-the-error task is unchanged in content and difficulty; splitting the display formula over two rows (symbolic step, then substitution and result) makes the student's wrong calculation easier to read and keeps the error to be found in the same place.
-- Options, feedback and optional status unchanged; the sequence of the inquiry is unaffected.
+light delta review (teacher 2026-11-07): batch delta review of the ideal-reflection hedge in the paragraph that builds up the standing wave. It is a single sentence and does not change any task or solution, but its position is noted above.

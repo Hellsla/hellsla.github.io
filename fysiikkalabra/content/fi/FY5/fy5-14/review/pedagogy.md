@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 2a5a372104aa7adf
+CONTENT-HASH: e3f9f20d84240585
 
 ## Blocking
+(none)
 
 ## Polish
-
+- lesson.md:597 — the two realism sentences in **Tulos.** are a reasonableness remark, not the result; move them to **Järkevyys.** (one stage, one job) or shorten to one sentence.
+- lesson.md:561 — "radan linjalla" clashes with the task's "seisoo laiturilla aivan radan vieressä"; write "lähes radan linjalla".
 
 ## Checked
-batch delta review: title and chapter-reference renames only; every *chapter* reference in lesson.md, inquiry.json, exercises and solutions of FY5 resolves to a current lesson title; new titles are clear and consistent with neighbouring lessons.
+light delta review (teacher 2026-11-07): batch delta review of changed passages only — ambulance photo/caption before the moving-source section, Periaate idealisation and Tulos addition of the worked train example, judged against the example's task text.

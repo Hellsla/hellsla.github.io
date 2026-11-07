@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 7eec6ef637658e2d
+CONTENT-HASH: 5bc694b064e3028d
 
 ## Blocking
+(none)
 
 ## Polish
-
+(none)
 
 ## Checked
-batch delta review: title and chapter-reference renames only; every *chapter* reference in lesson.md, inquiry.json, exercises and solutions of FY5 resolves to a current lesson title; new titles are clear and consistent with neighbouring lessons.
+light delta review (teacher 2026-11-07): batch delta review of changed passages only — percentage-value hedge (normal incidence) after the gel paragraph and the ultrasound-safety addition to the third misconception (heating, cavitation, limits) are short, plain and keep "ei ionisoi" intact.

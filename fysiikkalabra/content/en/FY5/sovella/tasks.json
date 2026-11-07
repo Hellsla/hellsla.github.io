@@ -297,7 +297,7 @@
       "id": "fy5-s3",
       "title": "A spring and masses",
       "source": "simulated",
-      "source_note": "The data has been calculated from a model in which the spring constant of the spring is $20\\,\\text{N/m}$ and a third of the mass of the spring moves with the mass. A little random variation has been added to the timings, as in a measurement.",
+      "source_note": "The data has been calculated from a model in which the spring constant of the spring is $20\\,\\text{N/m}$. A little random variation has been added to the timings, as in a measurement.",
       "text": "A group of students studied the oscillation of a steel spring hanging vertically. A mass was hung from the lower end of the spring, pulled a few centimetres below its equilibrium position and released. The group measured the time $t_{10}$ of ten periods with a stopwatch. The mass of the spring itself is $45\\,\\text{g}$.\n\n| $m\\ (\\text{g})$ | $t_{10}\\ (\\text{s})$ |\n|---|---|\n| $100$ | $4.74$ |\n| $150$ | $5.73$ |\n| $200$ | $6.50$ |\n| $250$ | $7.25$ |\n| $300$ | $7.86$ |\n| $350$ | $8.51$ |\n\nIn addition, the group hung a $200\\,\\text{g}$ mass from the spring at rest and measured that the spring stretched $9.8\\,\\text{cm}$.",
       "parts": [
         {
@@ -386,7 +386,7 @@
           "id": "d",
           "kind": "calc",
           "points": 3,
-          "text": "A $250\\,\\text{g}$ mass is hung from the spring and set oscillating with an amplitude of $5.0\\,\\text{cm}$. As in part c, assume that the mass of the spring itself adds a third of the mass of the spring to the oscillating mass. How large is the greatest speed of the mass?",
+          "text": "A $250\\,\\text{g}$ mass is hung from the spring and set oscillating with an amplitude of $5.0\\,\\text{cm}$. Use as the oscillating mass the mass of the hanging mass plus the added mass you determined in part c. How large is the greatest speed of the mass?",
           "answer": {
             "value": 0.433,
             "unit": "m/s",
@@ -394,7 +394,7 @@
           },
           "criteria": [
             {
-              "text": "Uses the energy of the oscillation: at an extreme position the energy $\\tfrac{1}{2}kA^2$ is entirely elastic potential energy of the spring, and at the equilibrium position entirely kinetic energy, and the oscillating mass is $m_\\text{eff} = m + \\tfrac{1}{3}m_\\text{s}$.",
+              "text": "Uses the energy of the oscillation: at an extreme position the energy $\\tfrac{1}{2}kA^2$ is entirely elastic potential energy of the spring, and at the equilibrium position entirely kinetic energy, and the oscillating mass is the hanging mass plus the added mass of part c, in the model $m_\\text{eff} = m + \\tfrac{1}{3}m_\\text{s}$.",
               "tag": "transfer",
               "points": 1
             },

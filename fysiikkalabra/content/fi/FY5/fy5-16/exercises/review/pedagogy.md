@@ -1,14 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 431ea9a2e547e7e5
+CONTENT-HASH: add39d85be00fca4
 
 ## Blocking
 (none)
 
 ## Polish
-1. L2-08 correct option is "noin 6 dB ... suunnilleen yhtä paljon joka välillä"; option 1 now also says "suunnilleen", so hedging no longer marks it. Nothing further needed.
+- solutions.md:39 (L1-04) — the Järkevyys has become four sentences of regulation (action values, limit value, safety) and no longer reads as a check; keep the 4 min comparison and one sentence ("Korvalle tuleva 83 dB jää raja-arvon 87 dB(A) alle, mutta vertailuannoksen alittaminen ei takaa kuulon turvallisuutta").
+- exercises.json:7 (L1-01) — the core level-1 question is now a 30-word sentence; the lesson's term would shorten it: "Kuinka pitkä on hänen päivittäinen vertailuaikansa ilman kuulonsuojaimia ($8\,\text{h}$ tasolla $85\,\text{dB}$)?"
 
 ## Checked
-- Round 2. Checked from text only (no renders).
-- Round 1 polish done: option 1 hedged, correct option no longer the only hedged one nor the longest (116 vs 126 characters); 85 dB feedback now says the true level may be 84-86 dB, matching the solution.
-- Differences 6, 6, 5 dB vs 6,0 dB expected, uncertainty of a difference 2 dB: correct option follows from the data, others are the log-scale and within-uncertainty traps.
-- Answer field and solution agree; no new theory.
+light delta review (teacher 2026-11-07): exercise-packet diff only — t_sall → t_v renamed consistently in all solutions (no "sallit" left), reworded questions L1-01, L2-01, L2-07, L3-05 and L2-08 feedback; consistent with the brief's Kaava and Tiivistelmä.

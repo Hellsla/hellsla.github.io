@@ -1,20 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 9e5206ef58e39b4a
-Mode: full (translation review against the reviewed Finnish set; new task fy5-16-L2-08)
-Round 1
-
+CONTENT-HASH: a8679ac7293e5321
 ## Blocking
-(none)
-
-## Fixed
-- None needed; new task fy5-16-L2-08 was already faithful to content/fi.
 
 ## Polish
-(none)
+- exercises.json:7, :119, :376 — the reworded questions are long, and each names the reference dose differently ("the same energy dose as in the exposure that corresponds to…", "the daily energy dose that corresponds to…", "the energy dose that corresponds to…") — use one short form throughout, e.g. "Calculate the reference time, the time in which the dose of the upper action value ($8\,\text{h}$ at $85\,\text{dB}$) builds up."
 
 ## Checked
-- fy5-16-L2-08: situation first, question last as its own sentence; same structure, options and reasoning steps as fi; example-data notice kept where fi has it.
-- Solution has the same stages as fi (Find, Principle, Model answer) and can be followed step by step; nothing skipped or added.
-- Feedback repairs the misconception rather than restating the answer, as in fi.
-- Wording is natural textbook English; decimal point in JSON and LaTeX; no Finnish left.
-- No change to level, workload or figure use; check_i18n.py shows nothing for fy5-16; build.py fy5-16 succeeds.
+light delta review (teacher 2026-11-07): the switch from permitted time to reference time (t_ref) in tasks L1-01, L2-01 and L2-07, in L3-05 b–c, in the solutions and in the feedback at line 299, each judged in context. Every t_perm is gone. The hedges ("not a safety limit", lower action value 80 dB, exposure limit 87 dB(A) in L1-04) are consistent and short, and the answers and values are unchanged.

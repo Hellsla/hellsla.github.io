@@ -1,16 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 1970d2a760102d25
-Mode: full (translation review against the reviewed Finnish set, new task L2-08)
-Round 2
-
+CONTENT-HASH: dd7e8e614e3791d3
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-- fy5-15-L2-08 keeps the Finnish pedagogy: a YO-skill task (error analysis or concept reasoning) with misconception-based distractors, each wrong choice with feedback naming its misconception and repairing it.
-- The stem gives no answer away; the correct option is not distinguishable by wording or length.
-- English is natural and keeps the task level 2 demand.
-- Solution is staged and readable on a phone; new task adds no extra workload.
+light delta review (teacher 2026-11-07): the free-field sentence in fy5-15-L1-03 and its Given line, judged in context. The sentence is short and tells the student why the meter reading may be used as L, without burying the level-1 task. Task and solution agree.

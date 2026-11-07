@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 4005e3350b82d388
+CONTENT-HASH: 782d8d9bf631068a
 ## Blocking
 
 ## Polish
 
 ## Checked
-batch delta review: the diff is a renamed lesson title and updated chapter cross-references; every reference matches the new titles, no stale old title remains in the lesson, inquiry or exercises, and the sentences read correctly. No figures, numbers or symbols changed.
+light delta review (teacher 2026-11-07): batch delta review of the Foucault pendulum photo, the misconception sentence and the damping paragraph in context. "As the table above shows" points to the table of T : T0 (lines 250–255), which comes earlier in the lesson. The reasoning in the clock paragraph (the period depends slightly on the amplitude, so the amplitude is kept constant and small) is clear and does not contradict the small-swing rule.

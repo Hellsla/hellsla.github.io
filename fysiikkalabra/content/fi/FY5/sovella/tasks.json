@@ -297,7 +297,7 @@
       "id": "fy5-s3",
       "title": "Jousi ja punnukset",
       "source": "simulated",
-      "source_note": "Aineisto on laskettu mallista, jossa jousen jousivakio on $20\\,\\text{N/m}$ ja kolmasosa jousen massasta liikkuu punnuksen mukana. Ajanottoon on lisätty pientä satunnaista vaihtelua mittauksen tapaan.",
+      "source_note": "Aineisto on laskettu mallista, jossa jousen jousivakio on $20\\,\\text{N/m}$. Ajanottoon on lisätty pientä satunnaista vaihtelua mittauksen tapaan.",
       "text": "Opiskelijaryhmä tutki pystysuoraan riippuvan teräsjousen värähtelyä. Jousen alapäähän ripustettiin punnus, punnus vedettiin muutama senttimetri tasapainoasemansa alapuolelle ja päästettiin irti. Ryhmä mittasi sekuntikellolla kymmenen jakson ajan $t_{10}$. Jousen oma massa on $45\\,\\text{g}$.\n\n| $m\\ (\\text{g})$ | $t_{10}\\ (\\text{s})$ |\n|---|---|\n| $100$ | $4{,}74$ |\n| $150$ | $5{,}73$ |\n| $200$ | $6{,}50$ |\n| $250$ | $7{,}25$ |\n| $300$ | $7{,}86$ |\n| $350$ | $8{,}51$ |\n\nLisäksi ryhmä ripusti jouseen levossa $200\\,\\text{g}$:n punnuksen ja mittasi, että jousi venyi $9{,}8\\,\\text{cm}$.",
       "parts": [
         {
@@ -386,7 +386,7 @@
           "id": "d",
           "kind": "calc",
           "points": 3,
-          "text": "Jouseen ripustetaan $250\\,\\text{g}$:n punnus, ja se pannaan värähtelemään $5{,}0\\,\\text{cm}$:n amplitudilla. Oleta c-kohdan tapaan, että jousen oma massa lisää värähtelevää massaa kolmanneksella jousen massasta. Kuinka suuri on punnuksen suurin nopeus?",
+          "text": "Jouseen ripustetaan $250\\,\\text{g}$:n punnus, ja se pannaan värähtelemään $5{,}0\\,\\text{cm}$:n amplitudilla. Käytä värähtelevänä massana punnuksen massaa ja c-kohdassa määrittämääsi lisämassaa. Kuinka suuri on punnuksen suurin nopeus?",
           "answer": {
             "value": 0.433,
             "unit": "m/s",
@@ -394,7 +394,7 @@
           },
           "criteria": [
             {
-              "text": "Käyttää värähtelyn energiaa: ääriasennossa energia $\\tfrac{1}{2}kA^2$ on kokonaan jousen potentiaalienergiaa ja tasapainoasemassa kokonaan liike-energiaa, ja värähtelevä massa on $m_\\text{eff} = m + \\tfrac{1}{3}m_\\text{j}$.",
+              "text": "Käyttää värähtelyn energiaa: ääriasennossa energia $\\tfrac{1}{2}kA^2$ on kokonaan jousen potentiaalienergiaa ja tasapainoasemassa kokonaan liike-energiaa, ja värähtelevä massa on punnuksen massa ja c-kohdan lisämassa, mallissa $m_\\text{eff} = m + \\tfrac{1}{3}m_\\text{j}$.",
               "tag": "transfer",
               "points": 1
             },

@@ -370,7 +370,7 @@ Toinen virhe on luulla, että suurempi heilahdus kestää kauemmin. Harmonisella
 ## Vaimeneminen
 Todellisissa värähtelijöissä ilmanvastus ja kitka muuttavat osan mekaanisesta energiasta sisäenergiaksi. Silloin energia $E = \tfrac{1}{2}kA^2$ pienenee, ja amplitudi pienenee jakso jaksolta. Tätä sanotaan **vaimenemiseksi**.
 
-Kun vaimeneminen on pientä, jaksonaika pysyy lähes samana kuin ilman vaimenemista. Heilurin jaksonaika riippuu kuitenkin hieman amplitudista. Siksi tarkassa heilurikellossa amplitudin on pysyttävä samana. Kellon paino tai jousi antaa heilurille energiaa vaimenemisen tilalle, ja heilahdukset pidetään pieninä. Silloin kello ei kiirehdi eikä jätä. Auton iskunvaimentimet taas on tehty vaimentamaan värähtely nopeasti. Niiden ansiosta auto ei jää keinumaan jokaisen kuopan jälkeen.
+Kun vaimeneminen on pientä, jaksonaika pysyy lähes samana kuin ilman vaimenemista. Heilurin jaksonaika riippuu kuitenkin hieman amplitudista. Siksi tarkassa heilurikellossa amplitudin on pysyttävä samana. Kellon paino tai jousi antaa heilurille energiaa vaimenemisen tilalle, ja heilahdukset pidetään pieninä. Silloin kello ei edistä eikä jätätä. Auton iskunvaimentimet taas on tehty vaimentamaan värähtely nopeasti. Niiden ansiosta auto ei jää keinumaan jokaisen kuopan jälkeen.
 
 <svg data-fig="vaimeneva" viewBox="0 0 600 320" role="img" aria-label="Kaavakuva: vaimenevan värähtelyn paikka x ajan t funktiona. Käyrä heilahtelee tasapainoaseman molemmin puolin, ja sen huiput pienenevät tasaisesti. Katkoviivat huippujen kautta näyttävät, miten amplitudi pienenee. Peräkkäisten huippujen väli eli jaksonaika pysyy lähes samana." style="max-width:100%;font-size:24px">
   <line x1="80" y1="290" x2="80" y2="181" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>

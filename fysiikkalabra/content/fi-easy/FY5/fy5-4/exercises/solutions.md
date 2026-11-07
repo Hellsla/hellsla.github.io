@@ -222,7 +222,7 @@ akselit 0
 **Sijoitus:** $F_\mu = 850\,\text{kg}\cdot\dfrac{(18\,\text{m/s})^2}{75\,\text{m}} = 850\,\text{kg}\cdot 4{,}32\,\text{m/s}^2 = 3672\,\text{N} = 3{,}672\,\text{kN}$
 **Vastaus:** $3{,}7\,\text{kN}$ kohti kaarteen keskipistettä. Vastauksessa on kaksi merkitsevää numeroa, kuten nopeudessa $18\,\text{m/s}$ ja säteessä $75\,\text{m}$.
 **Järkevyys:** Normaalikiihtyvyys on $4{,}32\,\text{m/s}^2$ eli noin $0{,}44\,g$. Auton paino on noin $8{,}3\,\text{kN}$. Kitkan on siis oltava noin $0{,}44$-kertainen painoon verrattuna. Se on mahdollista märällä asfaltilla. Oppilaan tulos vaatisi kitkan, joka on noin $0{,}88$-kertainen painoon verrattuna. Se ylittäisi jo kuivan asfaltin tavallisen pidon.
-**Mallivastaus virheestä:** Oppilas piirsi autoon ulospäin osoittavan keskipakoisvoiman ja lisäsi sen kitkaan. Sellaista voimaa ei ole, koska mikään kappale ei vedä autoa ulospäin. Lauseke $m\tfrac{v^2}{r}$ on kokonaisvoiman suuruus eikä oma voimansa. Kokonaisvoima syntyy pelkästä kitkasta. Siksi kitka on $m\tfrac{v^2}{r} = 3672\,\text{N}$. Oppilaan laskema kaksinkertainen arvo $7344\,\text{N}$ on kaksi kertaa liian suuri.
+**Mallivastaus virheestä:** Oppilas piirsi autoon ulospäin osoittavan keskipakoisvoiman ja lisäsi sen kitkaan. Sellaista todellista voimaa ei ole, koska mikään kappale ei vedä autoa ulospäin. Lauseke $m\tfrac{v^2}{r}$ on kokonaisvoiman suuruus eikä oma voimansa. Kokonaisvoima syntyy pelkästä kitkasta. Siksi kitka on $m\tfrac{v^2}{r} = 3672\,\text{N}$. Oppilaan laskema kaksinkertainen arvo $7344\,\text{N}$ on kaksi kertaa liian suuri.
 
 ## fy5-4-L2-08
 **Kysytty:** mikä neljästä voimakuviosta esittää oikein vaunuun vaikuttavat voimat silmukan ylimmässä kohdassa.

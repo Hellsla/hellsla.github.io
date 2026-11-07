@@ -1,12 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 83919e209ffc0f9e
-
+CONTENT-HASH: 2dfa5cdb22af192d
 ## Blocking
-(none)
 
 ## Polish
-- none.
 
 ## Checked
-- English natural; two-stage structure (answer, then reason) and feedback identical to the Finnish.
-- fy5-5-L2-08: situation first, question last, solution staged, same order and feedback structure as the Finnish; nothing extra revealed.
+light delta review (teacher 2026-11-07): the reworded opening of fy5-5-L3-04, judged in context. It reads naturally, still sets the situation first and leaves the parts a–c and their questions unchanged. The "other way round" framing matches the solution (Given lists γ; M = gR²/γ). It gives no answer away.

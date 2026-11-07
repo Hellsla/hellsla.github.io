@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: a12ff6f500d8d885
+CONTENT-HASH: 463dc8311fdab833
 
 ## Blocking
+(none)
 
 ## Polish
-
+(none)
 
 ## Checked
-batch delta review: title and chapter-reference renames only; every *chapter* reference in lesson.md, inquiry.json, exercises and solutions of FY5 resolves to a current lesson title; new titles are clear and consistent with neighbouring lessons.
+light delta review (teacher 2026-11-07): batch delta review of changed passages only — Artemis II photo and caption (ties to equal forces before "Ero on kiihtyvyyksissä"), Cavendish sentence now says he measured Earth's density and γ follows; consistent with exercise fy5-5-L3-04.

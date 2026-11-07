@@ -1,20 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: c27fc22a4b51258e
-Mode: full (translation review against the reviewed Finnish set; new task fy5-16-L2-08)
-Round 1
+CONTENT-HASH: e69929d75809755a
 
 ## Blocking
 (none)
 
-## Fixed
-- None needed; new task fy5-16-L2-08 was already faithful to content/fi.
-
 ## Polish
-(none)
+- solutions.md:31 (L1-04) — Järkevyys of a one-step subtraction now carries six sentences of regulation and first says action values use the unprotected level, then compares 83 dB with 85 dB — keep two: 83 dB is under the raja-arvo 87 dB(A), and with well-fitted protectors the vertailuannos is not reached (not a guarantee of safe hearing).
 
 ## Checked
-- fy5-16-L2-08: situation first, question last as its own sentence; same structure, options and reasoning steps as fi; example-data notice kept where fi has it.
-- Solution has the same stages as fi (Find, Principle, Model answer) and can be followed step by step; nothing skipped or added.
-- Feedback repairs the misconception rather than restating the answer, as in fi.
-- Selkosuomi per NOTES.md section 12: short sentences, common words, glossary terms kept; same physics and numbers as fi; decimal comma in text, point in table cells as in fi.
-- No change to level, workload or figure use; check_i18n.py shows nothing for fy5-16; build.py fy5-16 succeeds.
+light delta review (teacher 2026-11-07): only the changed passages were judged, in context of the surrounding text, tasks, feedback and solutions; no full review even where the tooling asks for one; physics left to the science review; vertailuaika/t_v replaces sallittu aika consistently in all stems and solutions; L2-06 feedback, L2-07 and L3-05 c match the lesson's "not a safety limit" text.

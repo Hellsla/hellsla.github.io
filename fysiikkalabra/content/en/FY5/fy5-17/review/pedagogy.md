@@ -1,9 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 881317d6a36fd926
+CONTENT-HASH: cc23e4c2ca6e21a8
 ## Blocking
 
 ## Polish
-- Long title; acceptable, but a shorter form could be considered later.
 
 ## Checked
-batch delta review: the diff is a renamed lesson title and updated chapter cross-references; every reference matches the new titles, no stale old title remains in the lesson, inquiry or exercises, and the sentences read correctly. No figures, numbers or symbols changed.
+light delta review (teacher 2026-11-07): batch delta review of the model-value sentence on reflection percentages and the ultrasound-safety sentences in the misconception section, in context. Both are short and clear, and they keep the core points (gel removes the air layer; ultrasound is non-ionising mechanical waves). The safety addition does not contradict any task.

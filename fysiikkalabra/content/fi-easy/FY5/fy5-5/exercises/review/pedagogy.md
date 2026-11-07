@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: fabc843ad4a1e368
+CONTENT-HASH: a45736261bc2d590
 
 ## Blocking
 (none)
 
 ## Polish
-- none.
+- exercises.json:361 (L3-04) — "Nykyään laskun voi tehdä toisin päin" is vague (reverse of what?) — "Nykyään gravitaatiovakio tunnetaan. Siksi Maan massa ja keskitiheys saadaan putoamiskiihtyvyydestä."
 
 ## Checked
-- fi-easy sentences shorter, same two-stage structure, answers and reasons.
-- fy5-5-L2-08: situation first, question last, solution staged, same order and feedback structure as the Finnish; nothing extra revealed.
+light delta review (teacher 2026-11-07): only the changed passages were judged, in context of the surrounding text, tasks, feedback and solutions; no full review even where the tooling asks for one; physics left to the science review; L3-04 stem against its solution (Järkevyys still compares with Cavendish's 5450 kg/m³).
