@@ -55,7 +55,7 @@
       "choices": [
         {
           "text": "A centrifugal force pointing outwards acts on the passenger and presses him against the door.",
-          "feedback": "There is no centrifugal force: no object pulls or pushes the passenger outwards. The force from the door points inwards."
+          "feedback": "There is no real centrifugal force: no object pulls or pushes the passenger outwards. The force from the door points inwards."
         },
         {
           "text": "The passenger's body tends to keep going straight, and the door pushes him inwards into the bend.",
@@ -262,7 +262,7 @@
         {
           "text": "Free-body diagram B",
           "figure": "fy5-4/pick-keskipako",
-          "feedback": "There is no centrifugal force: no object pulls the car upwards, away from the centre of the loop. In this diagram the forces cancel each other, although the car accelerates towards the centre, so the net force cannot be zero."
+          "feedback": "There is no real centrifugal force: no object pulls the car upwards, away from the centre of the loop. In this diagram the forces cancel each other, although the car accelerates towards the centre, so the net force cannot be zero."
         },
         {
           "text": "Free-body diagram C",

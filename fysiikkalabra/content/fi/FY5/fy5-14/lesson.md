@@ -558,7 +558,7 @@ Juna ajaa suoraa rataa tasaisella nopeudella $108\,\text{km/h}$ ja soittaa ään
 
 <!-- vaihe -->
 
-**Periaate.** Äänilähde liikkuu ja kuulija on paikallaan, joten käytetään liikkuvan lähteen Dopplerin kaavaa. Lähestyvän junan edessä aaltorintamat tihenevät, joten merkki valitaan niin, että $f_1 > f_0$. Loittonevan junan takana rintamat harvenevat, ja $f_2 < f_0$.
+**Periaate.** Äänilähde liikkuu ja kuulija on paikallaan, joten käytetään liikkuvan lähteen Dopplerin kaavaa. Lähestyvän junan edessä aaltorintamat tihenevät, joten merkki valitaan niin, että $f_1 > f_0$. Loittonevan junan takana rintamat harvenevat, ja $f_2 < f_0$. Malli on ideaalinen: matkustajan oletetaan olevan radan linjalla, jolloin junan koko nopeus osoittaa kohti häntä tai hänestä poispäin.
 
 <!-- vaihe -->
 
@@ -594,7 +594,7 @@ f_2 &= f_0 \cdot \frac{v}{v + v_\text{s}} \\
 
 <!-- vaihe -->
 
-**Tulos.** Matkustaja kuulee lähestyvän junan äänen taajuudella $341\,\text{Hz}$ ja loittonevan taajuudella $286\,\text{Hz}$, kolmella merkitsevällä numerolla kuten lähtötiedoissa. Ohitushetkellä taajuus laskee noin $55\,\text{Hz}$: erotuksen tarkkuus on noin hertsi, koska kumpikin taajuus tunnetaan noin puolen hertsin tarkkuudella.
+**Tulos.** Matkustaja kuulee lähestyvän junan äänen taajuudella $341\,\text{Hz}$ ja loittonevan taajuudella $286\,\text{Hz}$, kolmella merkitsevällä numerolla kuten lähtötiedoissa. Ohitushetkellä taajuus laskee noin $55\,\text{Hz}$: erotuksen tarkkuus on noin hertsi, koska kumpikin taajuus tunnetaan noin puolen hertsin tarkkuudella. Todellisuudessa matkustaja on hieman radan sivussa, joten taajuus ei laske hetkessä vaan liukuvasti sinä lyhyenä aikana, jona juna ohittaa hänet. Kaukana ohituskohdasta kuullut taajuudet ovat silti lähes $341\,\text{Hz}$ ja $286\,\text{Hz}$.
 
 <!-- vaihe -->
 

@@ -358,7 +358,7 @@
     {
       "id": "fy5-5-L3-04",
       "level": 3,
-      "text": "Henry Cavendish määritti gravitaatiovakion vuonna 1798 ja laski sen avulla Maan massan ja keskitiheyden. Toista laskelma nykyarvoilla. Maan pinnalla gravitaatiokentän voimakkuus on $g = 9{,}81\\,\\text{m/s}^2$ ja Maan keskimääräinen säde on $6371\\,\\text{km}$. Mallinna Maa pallosymmetrisenä pallona ja jätä sen pyöriminen huomiotta.\n\na) Laske Maan massa.\n\nb) Laske Maan keskitiheys.\n\nc) Taulukossa on Maan kuoren yleisimpien kivilajien tiheyksiä. Voiko Maa koostua kauttaaltaan tällaisista kivilajeista? Perustele laskemasi keskitiheyden avulla ja päättele, mitä se kertoo Maan sisuksesta.\n\nKirjoita b-kohdan tulos vastauslaatikkoon.",
+      "text": "Henry Cavendish määritti vuonna 1798 lyijypallojen välisen gravitaatiovuorovaikutuksen avulla Maan keskitiheyden. Nykyään laskun voi tehdä toisin päin: kun gravitaatiovakio tunnetaan, Maan massa ja keskitiheys saadaan putoamiskiihtyvyydestä. Tee tämä laskelma nykyarvoilla. Maan pinnalla gravitaatiokentän voimakkuus on $g = 9{,}81\\,\\text{m/s}^2$ ja Maan keskimääräinen säde on $6371\\,\\text{km}$. Mallinna Maa pallosymmetrisenä pallona ja jätä sen pyöriminen huomiotta.\n\na) Laske Maan massa.\n\nb) Laske Maan keskitiheys.\n\nc) Taulukossa on Maan kuoren yleisimpien kivilajien tiheyksiä. Voiko Maa koostua kauttaaltaan tällaisista kivilajeista? Perustele laskemasi keskitiheyden avulla ja päättele, mitä se kertoo Maan sisuksesta.\n\nKirjoita b-kohdan tulos vastauslaatikkoon.",
       "kind": [
         "data",
         "reasoning",

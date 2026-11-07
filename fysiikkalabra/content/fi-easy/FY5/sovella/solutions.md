@@ -75,7 +75,7 @@
 
 Pystysuunnassa kuorma ei kiihdy. Jännitysvoiman pystykomponentti on siis yhtä suuri kuin paino, ja jännitysvoima on painoa hieman suurempi. Jännitysvoiman vaakakomponentti on voimien summa. Se osoittaa kohti tornin akselia, kuten normaalikiihtyvyys $\overline{a}_\text{n}$. Kiihtyvyys piirretään erikseen omalla värillään. Mallikuvassa vaijerin kulma on piirretty paljon suuremmaksi kuin tehtävässä, jotta nuolet erottuvat.
 
-*Kuljettajan selitys.* Keskipakoisvoimaa ei ole. Mikään kappale ei vedä kuormaa ulospäin, eikä voimakuviossa ole ulospäin osoittavaa voimaa. Kun puomi lähtee kääntymään, kuorma pyrkii hitautensa vuoksi jatkamaan suoraan eteenpäin. Siksi se jää ympyrän ulkoreunalle ja vaijeri kallistuu. Kallistus kasvaa, kunnes jännitysvoiman vaakakomponentti riittää kääntämään kuorman ympyräradalle. Kuorma ei siis heitty ulospäin. Se jää jälkeen suoraviivaisesta radastaan vain sen verran, että vaijeri voi vetää sitä kohti keskipistettä.
+*Kuljettajan selitys.* Todellista keskipakoisvoimaa ei ole. Mikään kappale ei vedä kuormaa ulospäin, eikä voimakuviossa ole ulospäin osoittavaa voimaa. Kun puomi lähtee kääntymään, kuorma pyrkii hitautensa vuoksi jatkamaan suoraan eteenpäin. Siksi se jää ympyrän ulkoreunalle ja vaijeri kallistuu. Kallistus kasvaa, kunnes jännitysvoiman vaakakomponentti riittää kääntämään kuorman ympyräradalle. Kuorma ei siis heitty ulospäin. Se jää jälkeen suoraviivaisesta radastaan vain sen verran, että vaijeri voi vetää sitä kohti keskipistettä.
 
 ### e)
 **Annettu:** a-kohdan säde $r = 21\,\text{m}$, kierrosaika $T = 90\,\text{s}$, vaijerin pituus $15\,\text{m}$ ja $g = 9{,}81\,\text{m/s}^2$

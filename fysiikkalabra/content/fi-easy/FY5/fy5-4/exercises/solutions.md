@@ -216,7 +216,7 @@ akselit 0
 ## fy5-4-L2-07
 **Annettu:** $m = 850\,\text{kg}$, $v = 18\,\text{m/s}$, $r = 75\,\text{m}$, tie vaakasuora; oppilaan tulos $7344\,\text{N}$
 **Kysytty:** a) oppilaan virhe, b) kitkavoima $F_\mu$ yksikössä $\text{kN}$
-**Periaate:** Auto on tasaisessa ympyräliikkeessä. Newtonin toisen lain mukaan autoon vaikuttavien todellisten voimien summa osoittaa kohti keskipistettä ja on $m\tfrac{v^2}{r}$. Vaakasuunnassa ainoa todellinen voima on tien kitka, joten kitka on tämä summa. Keskipakoisvoimaa ei ole. Siksi sitä ei piirretä voimakuvioon eikä lasketa mukaan.
+**Periaate:** Auto on tasaisessa ympyräliikkeessä. Newtonin toisen lain mukaan autoon vaikuttavien todellisten voimien summa osoittaa kohti keskipistettä ja on $m\tfrac{v^2}{r}$. Vaakasuunnassa ainoa todellinen voima on tien kitka, joten kitka on tämä summa. Todellista keskipakoisvoimaa ei ole. Siksi sitä ei piirretä voimakuvioon eikä lasketa mukaan.
 **Kaava:** $x$ (kohti keskipistettä): $F_\mu = m\dfrac{v^2}{r}$
 **Muunnokset:** Suureet ovat SI-yksiköissä. Tulos muutetaan lopuksi kilonewtoneiksi, $1\,\text{kN} = 1000\,\text{N}$.
 **Sijoitus:** $F_\mu = 850\,\text{kg}\cdot\dfrac{(18\,\text{m/s})^2}{75\,\text{m}} = 850\,\text{kg}\cdot 4{,}32\,\text{m/s}^2 = 3672\,\text{N} = 3{,}672\,\text{kN}$
@@ -226,7 +226,7 @@ akselit 0
 
 ## fy5-4-L2-08
 **Kysytty:** mikä neljästä voimakuviosta esittää oikein vaunuun vaikuttavat voimat silmukan ylimmässä kohdassa.
-**Periaate:** Valitaan kappaleeksi vaunu. Siihen vaikuttavat Maa (paino $\overline{G}$) ja rata (tukivoima $\overline{N}$). Ilmanvastus ja kitka jätetään huomiotta. Ylimmässä kohdassa silmukan keskipiste on vaunun alapuolella. Siksi normaalikiihtyvyys osoittaa alas, ja Newtonin toisen lain mukaan myös kokonaisvoima osoittaa alas. Rata on vaunun yläpuolella, joten sen tukivoima työntää vaunua radasta poispäin eli alas. Keskipakoisvoimaa ei ole, eikä nopeus ole voima.
+**Periaate:** Valitaan kappaleeksi vaunu. Siihen vaikuttavat Maa (paino $\overline{G}$) ja rata (tukivoima $\overline{N}$). Ilmanvastus ja kitka jätetään huomiotta. Ylimmässä kohdassa silmukan keskipiste on vaunun alapuolella. Siksi normaalikiihtyvyys osoittaa alas, ja Newtonin toisen lain mukaan myös kokonaisvoima osoittaa alas. Rata on vaunun yläpuolella, joten sen tukivoima työntää vaunua radasta poispäin eli alas. Todellista keskipakoisvoimaa ei ole, eikä nopeus ole voima.
 **Mallivastaus:** Oikea on voimakuvio C. Valitaan positiiviseksi suunnaksi alas kohti keskipistettä. Silloin
 
 $G + N = m a_\text{n}$

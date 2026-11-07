@@ -608,7 +608,7 @@ A geostationary satellite orbits above the equator in the same direction as the 
 ## Weightlessness {Painottomuus}
 On a space station the astronauts float, and a scale would show zero. The reason is not the absence of gravity. At the altitude of the ISS, $420\,\text{km}$, the acceleration due to the gravitational force is $\tfrac{\gamma M}{r^2} \approx 8.6\,\text{m/s}^2$, about $88\,\%$ of the value at the surface of the Earth. On an astronaut of mass $70\,\text{kg}$ there acts a weight of about $605\,\text{N}$, that is, the gravitational force $F$ of the Earth, whereas at the surface it would be $687\,\text{N}$.
 
-The station and the astronaut are in free fall: only gravity acts on each, and each gets the same acceleration towards the Earth. Because they fall in the same way, the floor does not press on the astronaut and a scale does not have to support them, so the support force is zero. **Weightlessness (apparent weightlessness) is a state in which only gravity acts on a body and it falls freely: the support force is zero, although the weight acts all the time.**
+The station and the astronaut are in free fall: only gravity acts on each, and each gets the same acceleration towards the Earth. Because they fall in the same way, the floor does not press on the astronaut and a scale does not have to support them, so the support force is zero. **Weightlessness (apparent weightlessness) is a lack of support together with common free fall: only gravity acts on a body, and it falls with the same acceleration as its surroundings. The support force is zero, although the weight acts all the time.** Gravity is therefore not missing; nothing supports the body.
 
 <svg data-fig="paino" viewBox="0 0 600 380" role="img" aria-label="Two free-body diagrams at the same scale. On the left an astronaut stands on a scale at the surface of the Earth, drawn as a rectangle: the gravitational force F (weight) points down from the centre and the support force N of the scale up from the bottom face, equally long, so the acceleration is zero. On the right the same astronaut on a space station: the only force is the gravitational force F, about 12 per cent shorter, there is no support force, and the orange acceleration arrow a beside the body points down towards the Earth. The station falls with the same acceleration, so the floor does not press on the astronaut." style="max-width:100%;font-size:24px">
   <foreignObject x="27.5" y="11.5" width="245" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{on the Earth's surface}$</div></foreignObject>
@@ -643,6 +643,8 @@ The model of uniform circular motion is a simplification. It describes the motio
 - the central body is much more massive than the satellite, so it can be considered to stay in place,
 - the gravity of other bodies and air resistance are so small that only the gravity of the central body acts,
 - the speed of the satellite is exactly the circular-orbit speed of the radius of its orbit, so that the distance from the centre stays constant.
+
+Real satellite motion always deviates slightly from the model. In a low orbit the thin upper atmosphere slows the motion, the gravity of the Moon and the Sun pulls on the satellite, and the mass of the Earth is not distributed exactly spherically, because the Earth is slightly flattened at the poles. That is why, for example, the orbit of the ISS is raised from time to time with rocket engines.
 
 Many real orbits are nearly circles. The distance of the Earth from the Sun varies by only about $3\,\%$ of the mean distance, so the circular model describes the orbit of the Earth well. The distance of the Moon from the Earth varies by about $11\,\%$, so the model gives a good approximation for the Moon. The orbit of Halley's comet, in contrast, is very elongated, and the circular model does not suit it at all.
 
@@ -737,5 +739,5 @@ Another error is to put the altitude $h$ into the formula $v = \sqrt{\tfrac{\gam
 - Only the gravitational force of the central body acts on a satellite. It is the net force, which in a circular orbit gives the centripetal acceleration: $\gamma \tfrac{Mm}{r^2} = \tfrac{mv^2}{r}$.
 - The orbital speed in a circular orbit is $v = \sqrt{\tfrac{\gamma M}{r}}$ and the orbital period $T = \tfrac{2\pi r}{v}$. The mass of the satellite has no effect, and a satellite orbiting farther away is slower and has a longer orbital period.
 - The orbital radius is measured from the centre of the central body: $r = R + h$.
-- Weightlessness is free fall: gravity acts, but the support force is zero.
+- Weightlessness is a lack of support together with common free fall: gravity acts, but the support force is zero.
 - The circular model holds when the central body is much more massive than the satellite, other forces are small and the orbit is nearly a circle.

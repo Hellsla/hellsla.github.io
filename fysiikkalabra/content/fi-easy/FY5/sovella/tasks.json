@@ -102,7 +102,7 @@
             {
               "key": "fbd_forces",
               "points": 1,
-              "detail": "Kuvassa on vain paino $\\overline{G}$ ja vaijerin jännitysvoima $\\overline{S}$. Keskipakoisvoimaa ei ole, eikä mitään muutakaan ulospäin vaikuttavaa voimaa."
+              "detail": "Kuvassa on vain paino $\\overline{G}$ ja vaijerin jännitysvoima $\\overline{S}$. Todellista keskipakoisvoimaa ei ole, eikä mitään muutakaan ulospäin vaikuttavaa voimaa."
             },
             {
               "key": "fbd_directions",

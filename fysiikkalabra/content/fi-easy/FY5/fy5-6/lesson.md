@@ -608,7 +608,7 @@ Geostationaarinen satelliitti kiertää päiväntasaajan yläpuolella samaan suu
 ## Painottomuus
 Avaruusasemalla astronautit leijuvat, ja vaaka näyttäisi nollaa. Syy ei ole se, että painovoimaa ei olisi. ISS:n korkeudella $420\,\text{km}$ gravitaatiovoiman antama kiihtyvyys on $\tfrac{\gamma M}{r^2} \approx 8{,}6\,\text{m/s}^2$. Se on noin $88\,\%$ maanpinnan arvosta. Astronauttiin, jonka massa on $70\,\text{kg}$, vaikuttaa siis noin $605\,\text{N}$:n paino. Se on Maan gravitaatiovoima $F$. Maanpinnalla voima olisi $687\,\text{N}$.
 
-Asema ja astronautti ovat vapaassa pudotuksessa. Kumpaankin vaikuttaa vain gravitaatio, ja kumpikin saa saman kiihtyvyyden kohti Maata. Ne putoavat samalla tavalla. Siksi lattia ei paina astronauttia eikä vaaka joudu tukemaan häntä. Tukivoima on nolla. **Painottomuus on tila, jossa kappaleeseen vaikuttaa vain gravitaatio ja se putoaa vapaasti: tukivoima on nolla, vaikka paino vaikuttaa koko ajan.**
+Asema ja astronautti ovat vapaassa pudotuksessa. Kumpaankin vaikuttaa vain gravitaatio, ja kumpikin saa saman kiihtyvyyden kohti Maata. Ne putoavat samalla tavalla. Siksi lattia ei paina astronauttia eikä vaaka joudu tukemaan häntä. Tukivoima on nolla. **Painottomuus on tuettomuutta ja yhteistä vapaata putoamista. Kappaleeseen vaikuttaa vain gravitaatio, ja se putoaa samalla kiihtyvyydellä kuin ympäristönsä. Tukivoima on nolla, vaikka paino vaikuttaa koko ajan.** Gravitaatio ei siis puutu. Mikään ei vain tue kappaletta.
 
 <svg data-fig="paino" viewBox="0 0 600 380" role="img" aria-label="Kaksi voimakuviota samassa mittakaavassa. Vasemmalla astronautti seisoo vaa&#x27;alla Maan pinnalla, ja hänet on piirretty suorakulmiona: gravitaatiovoima F (paino) osoittaa keskipisteestä alas ja vaa&#x27;an tukivoima N alapinnasta ylös, yhtä pitkinä, joten kiihtyvyys on nolla. Oikealla sama astronautti avaruusasemalla: ainoa voima on noin 12 prosenttia lyhyempi gravitaatiovoima F, tukivoimaa ei ole, ja oranssi kiihtyvyysnuoli a osoittaa alas kohti Maata kappaleen vieressä. Asema putoaa samalla kiihtyvyydellä, joten lattia ei paina astronauttia." style="max-width:100%;font-size:24px">
   <foreignObject x="71" y="11.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{Maan pinnalla}$</div></foreignObject>
@@ -643,6 +643,8 @@ Tasaisen ympyräliikkeen malli on yksinkertaistus. Se kuvaa satelliitin liikett�
 - keskuskappale on paljon massiivisempi kuin satelliitti, joten sitä voidaan pitää paikallaan pysyvänä,
 - muiden kappaleiden gravitaatio ja ilmanvastus ovat niin pieniä, että vain keskuskappaleen gravitaatio vaikuttaa,
 - satelliitin nopeus on juuri sen radan säteen ympyräradan nopeus, jolloin etäisyys keskipisteestä pysyy vakiona.
+
+Todellinen satelliitti poikkeaa aina hieman mallista. Matalalla radalla ohut yläilmakehä jarruttaa liikettä. Kuun ja Auringon gravitaatio vetää satelliittia. Lisäksi Maa on navoiltaan hieman litistynyt, joten sen massa ei jakaudu täsmälleen pallon tavoin. Siksi esimerkiksi ISS:n rataa nostetaan välillä rakettimoottoreilla.
 
 Monet todelliset radat ovat lähes ympyröitä. Maan etäisyys Auringosta vaihtelee vain noin $3\,\%$ keskietäisyydestä. Siksi ympyrämalli kuvaa Maan rataa hyvin. Kuun etäisyys Maasta vaihtelee noin $11\,\%$. Malli antaa Kuulle silti hyvän likiarvon. Halleyn komeetan rata on sen sijaan hyvin pitkänomainen. Ympyrämalli ei sovi siihen lainkaan.
 
@@ -737,5 +739,5 @@ Toinen virhe on sijoittaa kaavaan $v = \sqrt{\tfrac{\gamma M}{r}}$ korkeus $h$. 
 - Satelliittiin vaikuttaa vain keskuskappaleen gravitaatiovoima. Se on kokonaisvoima, joka antaa ympyräradalla normaalikiihtyvyyden: $\gamma \tfrac{Mm}{r^2} = \tfrac{mv^2}{r}$.
 - Ympyräradan ratanopeus on $v = \sqrt{\tfrac{\gamma M}{r}}$ ja kiertoaika $T = \tfrac{2\pi r}{v}$. Satelliitin massa ei vaikuta. Kauempana kiertävä satelliitti on hitaampi, ja sen kiertoaika on pidempi.
 - Radan säde mitataan keskuskappaleen keskipisteestä: $r = R + h$.
-- Painottomuus on vapaata putoamista: gravitaatio vaikuttaa, mutta tukivoima on nolla.
+- Painottomuus on tuettomuutta ja yhteistä vapaata putoamista: gravitaatio vaikuttaa, mutta tukivoima on nolla.
 - Ympyrämalli pätee, kun keskuskappale on paljon satelliittia massiivisempi, muut voimat ovat pieniä ja rata on lähes ympyrä.

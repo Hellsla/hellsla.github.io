@@ -216,7 +216,7 @@ akselit 0
 ## fy5-4-L2-07
 **Given:** $m = 850\,\text{kg}$, $v = 18\,\text{m/s}$, $r = 75\,\text{m}$, the road is horizontal; the result of the student $7344\,\text{N}$
 **Find:** a) the error of the student, b) the friction force $F_\mu$ in $\text{kN}$
-**Principle:** The car is in uniform circular motion, so by Newton's second law the sum of the real forces on the car points towards the centre and is $m\tfrac{v^2}{r}$. In the horizontal direction the only real force is the friction of the road, so the friction is this sum. There is no centrifugal force, so it is not drawn in the force diagram and not included in the calculation.
+**Principle:** The car is in uniform circular motion, so by Newton's second law the sum of the real forces on the car points towards the centre and is $m\tfrac{v^2}{r}$. In the horizontal direction the only real force is the friction of the road, so the friction is this sum. There is no real centrifugal force, so it is not drawn in the force diagram and not included in the calculation.
 **Formula:** $x$ (towards the centre): $F_\mu = m\dfrac{v^2}{r}$
 **Conversions:** The quantities are in SI units; the result is finally converted to kilonewtons, $1\,\text{kN} = 1000\,\text{N}$.
 **Substitution:** $F_\mu = 850\,\text{kg}\cdot\dfrac{(18\,\text{m/s})^2}{75\,\text{m}} = 850\,\text{kg}\cdot 4.32\,\text{m/s}^2 = 3672\,\text{N} = 3.672\,\text{kN}$
@@ -226,7 +226,7 @@ akselit 0
 
 ## fy5-4-L2-08
 **Find:** which of the four free-body diagrams correctly shows the forces acting on the car at the topmost point of the loop.
-**Principle:** The body chosen is the car. The Earth (weight $\overline{G}$) and the track (support force $\overline{N}$) act on it; air resistance and friction are neglected. At the topmost point the centre of the loop is below the car, so the normal acceleration and, by Newton's second law, the net force point down. The track is above the car, so its support force pushes the car away from the track, that is, down. There is no centrifugal force, and velocity is not a force.
+**Principle:** The body chosen is the car. The Earth (weight $\overline{G}$) and the track (support force $\overline{N}$) act on it; air resistance and friction are neglected. At the topmost point the centre of the loop is below the car, so the normal acceleration and, by Newton's second law, the net force point down. The track is above the car, so its support force pushes the car away from the track, that is, down. There is no real centrifugal force, and velocity is not a force.
 **Model answer:** The correct one is free-body diagram C. Let the positive direction be down towards the centre. Then
 
 $G + N = m a_\text{n}$
