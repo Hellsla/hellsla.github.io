@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: df914065e3c42db8
+CONTENT-HASH: 82182e756639fe8e
 
 ## Blocking
 (none)
 
 ## Polish
-- "Mechanical wave motion" is the bold definition while the next paragraph says "mechanical wave"/"wave"; acceptable, consistent enough.
+- lesson.md:137 — the paragraph is about 200 words; start a new paragraph at "Real waves can also carry a little matter", so the ideal-model idea ends its own paragraph.
+- lesson.md:272 — the paragraph is about 200 words; start a new paragraph at "This is not a general law for all waves", so the rope rule (speed set by the medium) stays the core idea.
 
 ## Checked
-batch delta review (en): term matches the paragraph below and the summary; definition holds for the rope example.
+light delta review (teacher 2026-11-07), after fixes: "This is why the bell ..." now follows "energy ... but not matter" directly; the drift remark comes after; earlier Polish resolved.

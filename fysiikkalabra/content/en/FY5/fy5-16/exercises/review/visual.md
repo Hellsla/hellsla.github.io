@@ -1,17 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 9e5206ef58e39b4a
-Mode: delta (new task fy5-16-L2-08), Round: 1
+CONTENT-HASH: 5575f15b7bd4bcfd
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy5-16-L2-08 option 4 feedback and solution — "$84$–$86\,\text{dB}$" breaks across lines after "84" at 390 px (dash starts the next line) — set the range as one formula, e.g. $84\text{–}86\,\text{dB}$ (same in the reviewed Finnish).
+- [Minor] solutions.md fy5-16-L2-05 Reading the table (untouched) — "$\Delta L_1 = … = 15.9\,\text{dB}$" and "$\Delta L_2 = … = 40.1\,\text{dB}$" overflow by about 15 px and clip the unit of the result at 390 px — give each its own chain (or shorten the lead-in) so mathlayout breaks it.
+- [Minor] solutions.md fy5-16-L3-01 Formula — the Formula line still writes "dose $= (\dots) \cdot 100\,\%$" while the Substitution now introduces $D$ without the factor $100\,\%$ — name it $D$ in the Formula too, e.g. "dose $D = \dfrac{t_1}{t_{\text{ref},1}} + \dfrac{t_2}{t_{\text{ref},2}}$, as a percentage".
 
 ## Checked
-- Own 390 px render of preview/en/fy5-16.html after the page scripts ran, task fy5-16-L2-08 with answer feedback and solution opened (scratch script shot_trv5.py): page scrollWidth 390, no element outside the viewport except inside a scroll box, no KaTeX error source, no raw $ left, no JS errors.
-- Opened the task captures in tiles: scenario text, table (caption, header with LaTeX, 4 rows; fits the card, no scroll), choice feedback, full worked solution; units, decimal marks and case endings render correctly. Table cells: decimal comma in fi-easy, point in en (converted correctly at render).
-- Task text and solution read as English; language matches the reviewed Finnish set.
-
-## Scores
-illustrations 5 · typography 5 · language 5 · accessibility 4
+- light delta review (teacher 2026-11-07), after fixes 2: own 390 px (2×) capture of fy5-16-L3-01 Substitution with every box open in preview/en/fy5-16.html — "The dose" then an aligned chain D = 4.0 h/4.0 h + 4.0 h/16 h = 1 + 0.25 = 1.25 = 125 %, fully visible, no scroller, result in view; no inline formula in L3-01 wider than the column; page scrollWidth 390.

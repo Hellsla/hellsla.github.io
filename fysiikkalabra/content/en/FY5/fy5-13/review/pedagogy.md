@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 705d3af808b796fe
+CONTENT-HASH: 45e3242fc73a538e
 
 ## Blocking
+(none)
 
 ## Polish
+(none)
 
 ## Checked
-- delta review: the Find-the-error task is unchanged in content and difficulty; splitting the display formula over two rows (symbolic step, then substitution and result) makes the student's wrong calculation easier to read and keeps the error to be found in the same place.
-- Options, feedback and optional status unchanged; the sequence of the inquiry is unaffected.
+light delta review (teacher 2026-11-07), after fixes: the weaker-reflection remark now follows the node/antinode definitions ("even the nodes vibrate a little"), the build-up paragraph keeps only the ideal assumption; earlier Polish resolved.

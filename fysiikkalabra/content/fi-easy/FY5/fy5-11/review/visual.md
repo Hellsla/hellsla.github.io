@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 5ff2de8d2affde03
+CONTENT-HASH: 165f71432542412b
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] figure.unit-photo (ripple-tank-single-slit) — the photo is soft-focus, and at 390 px the slit itself is hard to locate. The straight crests on the right and the arcs on the left read only faintly, so the caption claims more than a phone reader can see — optionally a sharper or tighter crop, or a caption phrase saying where the slit is ("raon kohta on keskellä tumma").
+- none
 
 ## Checked
-- batch delta review: the new licensed photo (figure.unit-photo) captured in context from preview/fi-easy/fy5-11.html at 390 and 1280 px and opened (review/shots has no dedicated photo capture). The image loads at full resolution, scales inside the column on a phone and sits beside its paragraph at 1280 px. The caption is under the image with its credit line ("Kuva: …, licence"). Nothing is clipped and there is no horizontal overflow. The caption and alt text were read against the picture and the neighbouring paragraph: plain S2 Finnish, quantities in LaTeX.
+- light delta review (teacher 2026-11-07): I checked only the new computed picture pics/fy5/ripple-model-single-slit.webp (960×640), its alt text and its caption. I captured the figure in context at 390 px (both 1× and 2×) and at 1280 px from the rebuilt preview, opened every capture and also opened the source image. At its 320 px display width it is sharp and legible. The barrier, the narrow slit (about one wavelength), the straight crests on the left and the semicircles on the right are all clear, and the old blur problem is gone. The caption matches the picture: light means crest, the wave comes from the left, the slit is a wavelength wide, the strength is shown equal for clarity and the reflection is not drawn. The credit reads "Kuva: Ruukkilabra, laskettu malli". Nothing is clipped and there is no overflow.

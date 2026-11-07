@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 71986967a9004414
+CONTENT-HASH: e85d23c8af85e2db
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-batch delta review: chapter titles renamed in the title, meta and every chapter reference; every reference names the current title of the right chapter (no stale old title left in content/en/FY5); new ISS illustration caption: descriptive only, no physics claim; no formula, number, option or feedback physics changed; every changed choice keeps its single correct option.
+- light delta review (teacher 2026-11-07), after fixes: HEAD~1 diff: definition now 'nothing supports the body: only gravity acts on it, and it falls freely together with its surroundings' and the summary bullet says the same; correct (free fall with surroundings, support force zero, weight acts), no number changed.

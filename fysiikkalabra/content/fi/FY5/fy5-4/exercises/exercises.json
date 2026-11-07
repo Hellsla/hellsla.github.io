@@ -55,7 +55,7 @@
    "choices": [
     {
      "text": "Matkustajaan vaikuttaa ulospäin osoittava keskipakoisvoima, joka painaa hänet kiinni oveen.",
-     "feedback": "Keskipakoisvoimaa ei ole: mikään kappale ei vedä tai työnnä matkustajaa ulospäin. Oven antama voima osoittaa sisäänpäin."
+     "feedback": "Todellista keskipakoisvoimaa ei ole: mikään kappale ei vedä tai työnnä matkustajaa ulospäin. Oven antama voima osoittaa sisäänpäin."
     },
     {
      "text": "Matkustajan keho pyrkii jatkamaan suoraan, ja ovi työntää hänet sisäänpäin kaarteeseen.",
@@ -262,7 +262,7 @@
     {
      "text": "Voimakuvio B",
      "figure": "fy5-4/pick-keskipako",
-     "feedback": "Keskipakoisvoimaa ei ole: mikään kappale ei vedä vaunua ylöspäin, poispäin silmukan keskipisteestä. Tässä kuviossa voimat kumoavat toisensa, vaikka vaunu kiihtyy kohti keskipistettä, joten kokonaisvoima ei voi olla nolla."
+     "feedback": "Todellista keskipakoisvoimaa ei ole: mikään kappale ei vedä vaunua ylöspäin, poispäin silmukan keskipisteestä. Tässä kuviossa voimat kumoavat toisensa, vaikka vaunu kiihtyy kohti keskipistettä, joten kokonaisvoima ei voi olla nolla."
     },
     {
      "text": "Voimakuvio C",

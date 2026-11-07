@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: c27fc22a4b51258e
-Mode: delta (new task fy5-16-L2-08), Round: 1
+CONTENT-HASH: d2b1980c7da012c4
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy5-16-L2-08 option 4 feedback and solution — "$84$–$86\,\text{dB}$" can break across lines after "84" at 390 px — set the range as one formula, e.g. $84\text{–}86\,\text{dB}$ (same in the reviewed Finnish).
+- [Minor] solutions.md fy5-16-L3-01 Kaava — Kaava-rivillä on yhä "annos $= (\dots) \cdot 100\,\%$", mutta Sijoitus ottaa käyttöön symbolin $D$ ilman kerrointa $100\,\%$ — nimeä se $D$ myös kaavassa, esim. "annos $D = \dfrac{t_1}{t_{\text{v},1}} + \dfrac{t_2}{t_{\text{v},2}}$ prosentteina".
 
 ## Checked
-- Own 390 px render of preview/fi-easy/fy5-16.html after the page scripts ran, task fy5-16-L2-08 with answer feedback and solution opened (scratch script shot_trv5.py): page scrollWidth 390, no element outside the viewport except inside a scroll box, no KaTeX error source, no raw $ left, no JS errors.
-- Opened the task captures in tiles: scenario text, table (caption, header with LaTeX, 4 rows; fits the card, no scroll), choice feedback, full worked solution; units, decimal marks and case endings render correctly. Table cells: decimal comma in fi-easy, point in en (converted correctly at render).
-- Task text and solution read as Selkeä suomi; language matches the reviewed Finnish set.
+- light delta review (teacher 2026-11-07), after fixes 2: own 390 px (2×) capture of fy5-16-L3-01 Sijoitus with every box open in preview/fi-easy/fy5-16.html — the earlier Polish item (496 px inline dose formula) is fixed: "Annos" then an aligned chain D = … = 1 + 0,25 = 1,25 = 125 %, fully visible, no scroller; page scrollWidth 390.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

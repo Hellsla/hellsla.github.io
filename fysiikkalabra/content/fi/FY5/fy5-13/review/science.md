@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: d4a87ce48229af48
+CONTENT-HASH: 0dc75d7c4482d80e
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- delta review: the only change since my last PASS is the organ-pipe Find-the-error prompt, whose display formula is split with `aligned` into two rows; f_1 = v/(2L) = 340 m/s / (2 * 0.85 m) = 200 Hz is unchanged, still the deliberate error (closed pipe: v/(4L) = 100 Hz).
-- Choices, correct flags and feedback untouched; exactly one correct option remains.
+- light delta review (teacher 2026-11-07), after fixes: HEAD~1 diff: ideal reflection stated before the sum; the remark that a weaker real reflected wave makes even the nodes vibrate slightly moved after the node/antinode spacing (λ/2, λ/4); consistent with the stated assumption, physics correct.

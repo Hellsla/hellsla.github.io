@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 41a058b080ca98fe
+CONTENT-HASH: 6ecad806cab2ad38
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: the diff only renames this and neighbouring FY5 chapters (title, meta.json, `luku *...*` references in lesson.md and inquiry.json); every renamed reference names the chapter that holds the cited content, and no formula, number, option, `correct` flag or feedback physics changed. Every choice still has exactly one correct option.
+- light delta review (teacher 2026-11-07): only the passages changed against origin/main were judged, in context, not a full review; Δv over a finite interval points inward, parallel to the radius at the interval's midpoint, and tends to the radial direction as the interval shrinks: correct and consistent with the muutos figure (Δv drawn at the midpoint, straight down); centrifugal force only as a fictitious force in the car's rotating frame, no real one in the ground frame: correct and the same in the misconception section, summary, exit ticket and inquiry model answer.

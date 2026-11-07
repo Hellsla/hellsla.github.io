@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 0c494781d50723fc
+CONTENT-HASH: 659ad3e05eafaa51
 
 ## Blocking
 (none)
 
 ## Polish
-- none.
+(none)
 
 ## Checked
-- English natural; option figure A-D descriptions match figures.py; F_cf used the same in task text, solution and figure.
-- fy5-4-L2-08: situation first, question last, solution staged, same order and feedback structure as the Finnish; nothing extra revealed.
+light delta review (teacher 2026-11-07), after fixes: "There is no such real force" in the L2 model answer is consistent with the other three "no real centrifugal force" passages and with its reason.

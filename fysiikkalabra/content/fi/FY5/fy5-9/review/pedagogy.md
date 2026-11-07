@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 4eeb2b7f6aca79bd
+CONTENT-HASH: 3655283bf03a7662
 
 ## Blocking
+(none)
 
 ## Polish
-
+- lesson.md:199 — the Foucault photo sits under the spring oscillator, before the pendulum and T = 2π√(l/g) are introduced, and its caption already states what that section teaches; move it after the pendulum formula paragraph.
 
 ## Checked
-batch delta review: title and chapter-reference renames only; every *chapter* reference in lesson.md, inquiry.json, exercises and solutions of FY5 resolves to a current lesson title; new titles are clear and consistent with neighbouring lessons.
+light delta review (teacher 2026-11-07), after fixes: clock sentence "eikä kello edistä eikä jätätä" is correct, plain Finnish and keeps the constant-amplitude reasoning.

@@ -1,21 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 10312941cf0bba5e
+CONTENT-HASH: 2da28ecf37a7af6b
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] fy5-s2 task text at 390 px — the inline $\gamma = 6{,}674 \cdot 10^{-11}$ … unit breaks across lines, as in fi. Fix: put the constant on its own line.
-- [Minor] fy5-s4-signal — the zero line is unlabelled and the y axis has no ticks, as in fi.
-- [Minor] fy5-s1-fbd at 390 px — small (about 300 px wide). θ, x and y are tiny.
+- [Minor] solutions.md fy5-s3 d, Järkevyys: the new inline formula "$2\pi\sqrt{0{,}265\,\text{kg} : 19{,}9\,\text{N/m}} \approx 0{,}73\,\text{s}$" (295 px) does not fit its 266 px box at 390 px. It scrolls and shows only "≈ 0,7". Fix: shorten it to "$T = 2\pi\sqrt{m_\text{eff} : k} \approx 0{,}73\,\text{s}$" or set it as a display line.
+- [Minor] Figure fy5-s1-crane: the new label "A" sits tight between the mast apex's left leg and the tie line. It is legible at 390 px but crowded. Nudge it left or down.
+- [Minor] solutions.md fy5-s4 d "Annettu": "vapaassa äänikentässä" is not introduced in the S2 lessons. Write "jota käsitellään intensiteettitasona, koska ääni etenee vapaasti".
 
 ## Checked
-Captures are in content/fi-easy/FY5/sovella/review/shots/. The script refuses --lang for a Sovella set, so I took them with a copy of screenshot.py patched to capture preview/fi-easy/FY5-sovella.html, built from the current content.
-- contact-1 (390 px: "Selkeä suomi" top, task 1 text and crane, model answers a–e, Hyväksytään myös / Yleisiä virheitä, rubric cards)
-- contact-5 (figures #49–#57: Jupiter graph (5,0; 6,35), spring graph (0,100; 0,226)/(0,350; 0,722), signal "signaali"; task card #58–#60 with the crane "tornin akseli")
-- fig-1/2 inside contact-1 #3 and #8 ("tilannekuva", "voimakuvio", "akseli")
-- check_layout.py FY5-sovella --width 345: OK for fi-easy (one wide table scrolls, as in fi)
-- Decimal commas in text, LaTeX and figures. The shorter sentences do not leave gaps in the cards.
+- light delta review (teacher 2026-11-07): the packet says Mode full, but per the teacher's decision I judged only the `git diff origin/main` passages and figures. screenshot.py cannot capture a fi-easy Sovella page, so I built preview/fi-easy/FY5-sovella.html and made my own 390 px captures, which I opened. They cover the crane figure at 2× (point A is visible as an axis symbol, matching the text), the s1 text, list item and model paragraph, s1 a, the s2 c, s3 d and s4 d texts, the s1 Periaate, Johtopäätös and Yleisiä virheitä, the s3 d solution (m_eff rows), and the s4 d Annettu, Vastaus and Luotettava selvitys. A page scan found no inline formula that wraps.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4

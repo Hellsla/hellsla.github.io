@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: f3534ac5d0355638
+CONTENT-HASH: e19a95257b2698ca
+
 ## Blocking
 (none)
 
 ## Polish
-- Kuva on nyt painottomuus-osiossa ja sopii kappaleen kanssa; ei huomautettavaa.
+(none)
 
 ## Checked
-batch delta review: opened captures at 360 and 1280 px; photo loads, floats right beside the text at 1280 px and fills the column at 360 px, no clipping or horizontal overflow; alt text and caption natural Finnish, factual, consistent with the image and neighbouring paragraph; credit line present under the caption; numbers with units in LaTeX.
+- light delta review (teacher 2026-11-07): the Painottomuus paragraph with the rewritten bold definition, the new paragraph on deviations from the circular model, and the summary bullet, at 390 px. Bold definition reads cleanly, no inline formula wraps, scrollWidth 390.

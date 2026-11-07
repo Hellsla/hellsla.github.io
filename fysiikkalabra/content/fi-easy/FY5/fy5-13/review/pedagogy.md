@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: d97dd20b77970096
+CONTENT-HASH: 394bea7d94af7b8e
 
 ## Blocking
+(none)
 
 ## Polish
+(none)
 
 ## Checked
-- delta review: the Find-the-error task is unchanged in content and difficulty; splitting the display formula over two rows (symbolic step, then substitution and result) makes the student's wrong calculation easier to read and keeps the error to be found in the same place.
-- Options, feedback and optional status unchanged; the sequence of the inquiry is unaffected.
+light delta review (teacher 2026-11-07), after fixes: the hedge now comes after solmu and kupu are defined ("Siksi solmutkin värähtelevät hiukan"), so it no longer contradicts "koko ajan nolla"; earlier Blocking resolved.

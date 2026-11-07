@@ -152,6 +152,8 @@
   "lesson": {
     "photos": "Photographs",
     "photo_by": "Photo",
+    "computed_by": "Computed image",
+    "computed_note": "Computed from a model for this site.",
     "steps_nav": "Steps of the lesson",
     "theory": "Theory",
     "simulation": "Simulation",

@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 5832f2120e4162ca
-Mode: delta, round 1 (new task fy5-15-L2-08 in fi-easy; L2-08, decibel difference as ratio (choice task))
+CONTENT-HASH: 3dd4cf5ba6c03743
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] sticky tab bar (Examples/Check/Exercises) overlaps the card in element screenshots only; a capture artefact, not a page defect.
+- [Minor] solutions.md fy5-15-L1-03 "Annettu": "jota pidetään vapaassa äänikentässä intensiteettitasona" uses a term (vapaa äänikenttä) that the S2 lesson never introduces; the lesson says "kun ääni etenee vapaasti". It also still calls $I_0$ "kuulokynnys". Fix: "mittarin lukema $L = 95\,\text{dB}$, jota käsitellään intensiteettitasona, koska ääni etenee vapaasti; vertailuintensiteetti $I_0 = …$".
 
 ## Checked
-- Own 390 px render of fy5-15-L2-08 (fi-easy) after the page scripts ran, answer feedback and solution open: page scrollWidth 390, no element clipped outside a scroll box, no .kx-wide line needed, no KaTeX error nodes.
-- Situation, question, choice rows, feedback box, FIND/PRINCIPLE/MODEL ANSWER block read in full: units and quantities set as maths, calculation rows stacked and aligned, no plain-text quantity or stray symbol.
-- Language read in fi-easy: natural, consistent with the chapter terms, instructions clear.
+- light delta review (teacher 2026-11-07): I checked only fy5-15-L1-03. I captured its task text (the new free-field sentence) and its opened solution's Annettu line at 390 px from the rebuilt preview and opened both. The question stays last, the values stay on one line and nothing is clipped. A page scan at 390 px with every box open found no inline formula that wraps or scrolls.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 5
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

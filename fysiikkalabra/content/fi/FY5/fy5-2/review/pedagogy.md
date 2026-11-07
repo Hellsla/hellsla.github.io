@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 3136a84fc7604e67
+CONTENT-HASH: 2834614bb3a402d4
 
 ## Blocking
+(none)
 
 ## Polish
-
+(none)
 
 ## Checked
-batch delta review: title and chapter-reference renames only; every *chapter* reference in lesson.md, inquiry.json, exercises and solutions of FY5 resolves to a current lesson title; new titles are clear and consistent with neighbouring lessons.
+light delta review (teacher 2026-11-07): batch delta review of changed passages only — lesson.md "Milloin kappale kaatuu" rewrite (tukipinta defined with two everyday examples, tipping vs sliding separated) is clear, 114 words, consistent with the inclined-plane figure it introduces.

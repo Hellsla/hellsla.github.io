@@ -1,20 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: c27fc22a4b51258e
-Mode: full (translation review against the reviewed Finnish set; new task fy5-16-L2-08)
-Round 1
+CONTENT-HASH: d2b1980c7da012c4
 
 ## Blocking
-(none)
-
-## Fixed
-- None needed; new task fy5-16-L2-08 was already faithful to content/fi.
 
 ## Polish
-(none)
+- solutions.md:31 (L1-04) — Järkevyys of a one-step subtraction now carries six sentences of regulation and first says action values use the unprotected level, then compares 83 dB with 85 dB — keep two: 83 dB is under the raja-arvo 87 dB(A), and with well-fitted protectors the vertailuannos is not reached (not a guarantee of safe hearing).
+- solutions.md:103 (L3-01) — Kaava kirjoittaa annoksen "$\cdot 100\,\%$"-muodossa ilman tunnusta, mutta Sijoitus ottaa käyttöön $D$:n; yhtenäistä Kaava muotoon "annos $D = \dfrac{t_1}{t_{\text{v},1}} + \dfrac{t_2}{t_{\text{v},2}}$" kuten L3-05:ssä. Selkokielessä sama lauseke kahdesti auttaa eniten.
 
 ## Checked
-- fy5-16-L2-08: situation first, question last as its own sentence; same structure, options and reasoning steps as fi; example-data notice kept where fi has it.
-- Solution has the same stages as fi (Find, Principle, Model answer) and can be followed step by step; nothing skipped or added.
-- Feedback repairs the misconception rather than restating the answer, as in fi.
-- Selkosuomi per NOTES.md section 12: short sentences, common words, glossary terms kept; same physics and numbers as fi; decimal comma in text, point in table cells as in fi.
-- No change to level, workload or figure use; check_i18n.py shows nothing for fy5-16; build.py fy5-16 succeeds.
+light delta review (teacher 2026-11-07), L3-01 chain: HEAD~1 diff only, read in its solution. The chain 1 + 0,25 = 1,25 = 125 % is plain and shorter than the old bracket ·100 %; the sentence "Annos D = …" is plain Finnish, and D matches L3-05; Vastaus and Järkevyys still fit. Physics left to the science review.

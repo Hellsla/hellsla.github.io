@@ -216,17 +216,17 @@ akselit 0
 ## fy5-4-L2-07
 **Annettu:** $m = 850\,\text{kg}$, $v = 18\,\text{m/s}$, $r = 75\,\text{m}$, tie vaakasuora; oppilaan tulos $7344\,\text{N}$
 **Kysytty:** a) oppilaan virhe, b) kitkavoima $F_\mu$ yksikössä $\text{kN}$
-**Periaate:** Auto on tasaisessa ympyräliikkeessä, joten Newtonin toisen lain mukaan autoon vaikuttavien todellisten voimien summa osoittaa kohti keskipistettä ja on $m\tfrac{v^2}{r}$. Vaakasuunnassa ainoa todellinen voima on tien kitka, joten kitka on tämä summa. Keskipakoisvoimaa ei ole, joten sitä ei piirretä voimakuvioon eikä lasketa mukaan.
+**Periaate:** Auto on tasaisessa ympyräliikkeessä, joten Newtonin toisen lain mukaan autoon vaikuttavien todellisten voimien summa osoittaa kohti keskipistettä ja on $m\tfrac{v^2}{r}$. Vaakasuunnassa ainoa todellinen voima on tien kitka, joten kitka on tämä summa. Todellista keskipakoisvoimaa ei ole, joten sitä ei piirretä voimakuvioon eikä lasketa mukaan.
 **Kaava:** $x$ (kohti keskipistettä): $F_\mu = m\dfrac{v^2}{r}$
 **Muunnokset:** Suureet ovat SI-yksiköissä; tulos muutetaan lopuksi kilonewtoneiksi, $1\,\text{kN} = 1000\,\text{N}$.
 **Sijoitus:** $F_\mu = 850\,\text{kg}\cdot\dfrac{(18\,\text{m/s})^2}{75\,\text{m}} = 850\,\text{kg}\cdot 4{,}32\,\text{m/s}^2 = 3672\,\text{N} = 3{,}672\,\text{kN}$
 **Vastaus:** $3{,}7\,\text{kN}$ kohti kaarteen keskipistettä, kaksi merkitsevää numeroa kuten nopeudessa $18\,\text{m/s}$ ja säteessä $75\,\text{m}$.
 **Järkevyys:** Normaalikiihtyvyys on $4{,}32\,\text{m/s}^2$ eli noin $0{,}44\,g$, ja auton paino on noin $8{,}3\,\text{kN}$. Kitkan on siis oltava noin $0{,}44$-kertainen painoon verrattuna, mikä on mahdollista märällä asfaltilla. Oppilaan tulos vaatisi kitkan, joka on noin $0{,}88$-kertainen painoon verrattuna, ja se ylittäisi jo kuivan asfaltin tyypillisen pidon.
-**Mallivastaus virheestä:** Oppilas piirsi autoon ulospäin osoittavan keskipakoisvoiman ja lisäsi sen kitkaan. Sellaista voimaa ei ole, koska mikään kappale ei vedä autoa ulospäin. Lauseke $m\tfrac{v^2}{r}$ on kokonaisvoiman suuruus eikä oma voimansa, ja kokonaisvoima syntyy pelkästä kitkasta. Siksi kitka on $m\tfrac{v^2}{r} = 3672\,\text{N}$, ja oppilaan laskema kaksinkertainen arvo $7344\,\text{N}$ on kaksi kertaa liian suuri.
+**Mallivastaus virheestä:** Oppilas piirsi autoon ulospäin osoittavan keskipakoisvoiman ja lisäsi sen kitkaan. Sellaista todellista voimaa ei ole, koska mikään kappale ei vedä autoa ulospäin. Lauseke $m\tfrac{v^2}{r}$ on kokonaisvoiman suuruus eikä oma voimansa, ja kokonaisvoima syntyy pelkästä kitkasta. Siksi kitka on $m\tfrac{v^2}{r} = 3672\,\text{N}$, ja oppilaan laskema kaksinkertainen arvo $7344\,\text{N}$ on kaksi kertaa liian suuri.
 
 ## fy5-4-L2-08
 **Kysytty:** mikä neljästä voimakuviosta esittää oikein vaunuun vaikuttavat voimat silmukan ylimmässä kohdassa.
-**Periaate:** Valitaan kappaleeksi vaunu. Siihen vaikuttavat Maa (paino $\overline{G}$) ja rata (tukivoima $\overline{N}$); ilmanvastus ja kitka jätetään huomiotta. Ylimmässä kohdassa silmukan keskipiste on vaunun alapuolella, joten normaalikiihtyvyys ja Newtonin toisen lain mukaan myös kokonaisvoima osoittavat alas. Rata on vaunun yläpuolella, joten sen tukivoima työntää vaunua radasta poispäin eli alas. Keskipakoisvoimaa ei ole, eikä nopeus ole voima.
+**Periaate:** Valitaan kappaleeksi vaunu. Siihen vaikuttavat Maa (paino $\overline{G}$) ja rata (tukivoima $\overline{N}$); ilmanvastus ja kitka jätetään huomiotta. Ylimmässä kohdassa silmukan keskipiste on vaunun alapuolella, joten normaalikiihtyvyys ja Newtonin toisen lain mukaan myös kokonaisvoima osoittavat alas. Rata on vaunun yläpuolella, joten sen tukivoima työntää vaunua radasta poispäin eli alas. Todellista keskipakoisvoimaa ei ole, eikä nopeus ole voima.
 **Mallivastaus:** Oikea on voimakuvio C. Valitaan positiivinen suunta alas kohti keskipistettä. Silloin
 
 $G + N = m a_\text{n}$

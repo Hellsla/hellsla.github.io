@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 3136a84fc7604e67
+CONTENT-HASH: 2834614bb3a402d4
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: the diff only renames this and neighbouring FY5 chapters (title, meta.json, `luku *...*` references in lesson.md and inquiry.json); every renamed reference names the chapter that holds the cited content, and no formula, number, option, `correct` flag or feedback physics changed. Opening illustration redrawn: its alt text and capture show the situation correctly (no labels or numbers in the lesson's other figures changed). Every choice still has exactly one correct option.
+- light delta review (teacher 2026-11-07): only the passages changed against origin/main were judged, in context, not a full review; tipping paragraph: the definition of tukipinta (box base, area between a chair's legs), the vertical through the centre of mass, the moment of the weight about the support edge (restoring inside, tipping outside) and tipping (rotation about an edge) vs sliding (prevented by friction) are correct and agree with the kaatuu figure's caption.

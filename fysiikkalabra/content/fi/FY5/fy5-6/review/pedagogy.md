@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: cb6948f3d741ca30
+CONTENT-HASH: e19a95257b2698ca
 
 ## Blocking
+(none)
 
 ## Polish
-
+(none)
 
 ## Checked
-batch delta review: title and chapter-reference renames only; every *chapter* reference in lesson.md, inquiry.json, exercises and solutions of FY5 resolves to a current lesson title; new titles are clear and consistent with neighbouring lessons.
+light delta review (teacher 2026-11-07), after fixes: removed "Gravitaatio ei siis puutu ..." sentence; the bold definition now says gravity acts and support is zero once; earlier Polish resolved.

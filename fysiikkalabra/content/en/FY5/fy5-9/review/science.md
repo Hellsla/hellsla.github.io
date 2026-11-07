@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 4005e3350b82d388
+CONTENT-HASH: 782d8d9bf631068a
 
 ## Blocking
 (none)
@@ -8,4 +8,4 @@ CONTENT-HASH: 4005e3350b82d388
 (none)
 
 ## Checked
-batch delta review: chapter titles renamed in the title, meta and every chapter reference; every reference names the current title of the right chapter (no stale old title left in content/en/FY5); new illustration caption (pendulum clock and baby door bouncer as two oscillators): consistent with the chapter's two models; no formula, number, option or feedback physics changed; every changed choice keeps its single correct option.
+light delta review (teacher 2026-11-07): only the passages changed against origin/main were judged, in context; no full review was done even where the tooling asks for one. Pendulum period grows slightly at large angles (table T:T0 1.002/1.008/1.031/1.073 recomputed from the exact series: correct, table is above line 356); clock argument (amplitude kept constant and small because T depends slightly on amplitude) correct.

@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 7c06a59c69d5cfb8
+CONTENT-HASH: 8a07abce222b31a4
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] ripple-tank-single-slit.webp — the photo is very blurry, so the slit is hard to find; the caption's description is right but the image teaches little — a sharper ripple-tank photo would help if one is available.
+- [Minor] fy5-11 credits list — the heading "Photographs" now lists only a computed image — use a neutral heading such as "Picture credits" when a computed picture is in the list.
 
 ## Checked
-- batch delta review: opened fy5-11-1280-0 and fy5-11-360-0; photo loads, floats right beside the text at 1280 px and sits in the column at 360 px without clipping or overflow; caption and alt are natural English, factual and consistent with the picture and the adjacent paragraph; credit line present under the caption.
+- light delta review (teacher 2026-11-07), after fixes 2: own 390 px (2×) capture of the #credits list in preview/en/fy5-11.html — the entry now reads "Computed model picture: single-slit diffraction in a ripple tank. Ruukkilabra. Computed from a model for this site." (English, no clipping); photos.json diff; page scrollWidth 390, no overflow.

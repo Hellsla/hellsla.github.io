@@ -1,7 +1,7 @@
 [
   {
     "q": "A car turns sharply to the left, and the passenger feels pressed against the door on the right. What force really acts on the passenger in the horizontal direction, and in which direction does it point?",
-    "a": "The door (and the seat) pushes the passenger to the left, towards the centre of the bend. The body of the passenger tends to continue straight on, so the door comes against him and gives him the centripetal force. There is no centrifugal force pushing outwards: the feeling comes from the body continuing straight on if the door did not turn it."
+    "a": "The door (and the seat) pushes the passenger to the left, towards the centre of the bend. The body of the passenger tends to continue straight on, so the door comes against him and gives him the centripetal force. There is no real centrifugal force pushing outwards: the feeling comes from the body continuing straight on if the door did not turn it."
   },
   {
     "q": "A car drives the same bend first at a speed of $40\\,\\text{km/h}$ and then at $120\\,\\text{km/h}$. How many times as large is the centripetal acceleration the second time?",

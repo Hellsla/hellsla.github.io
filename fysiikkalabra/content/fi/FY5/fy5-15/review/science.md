@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: fd603b813dbad4be
+CONTENT-HASH: c74d89688be36f47
 
 ## Blocking
 
 ## Polish
+- lesson.md:271 (Mitä mittari mittaa) — 'mittarin lukemaa käsitellään intensiteettitasona' could say 'painottamatonta lukemaa', since the previous paragraph says ordinary meters show dB(A).
 
 ## Checked
-- batch delta review: the diff only renames this and neighbouring FY5 chapters (title, meta.json, `luku *...*` references in lesson.md and inquiry.json); every renamed reference names the chapter that holds the cited content, and no formula, number, option, `correct` flag or feedback physics changed. Every choice still has exactly one correct option.
+- light delta review (teacher 2026-11-07), after fixes 2: HEAD~1 diff: the decibel section now opens with 'Laajan vaihteluvälin vuoksi …', tying the log scale to the 10¹² range of the previous paragraph; physics unchanged and correct; the old meter-reading Polish item still applies.

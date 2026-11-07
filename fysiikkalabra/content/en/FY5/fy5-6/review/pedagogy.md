@@ -1,8 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 71986967a9004414
+CONTENT-HASH: e85d23c8af85e2db
+
 ## Blocking
+(none)
 
 ## Polish
+(none)
 
 ## Checked
-batch delta review: the diff is a renamed lesson title and updated chapter cross-references; every reference matches the new titles, no stale old title remains in the lesson, inquiry or exercises, and the sentences read correctly. No figures, numbers or symbols changed.
+light delta review (teacher 2026-11-07), after fixes: bold definition ("means that nothing supports the body: only gravity acts on it, and it falls freely together with its surroundings") and summary are natural English and agree with the inquiry, exit ticket and exercises; earlier Polish resolved.

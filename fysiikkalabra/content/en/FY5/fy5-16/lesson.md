@@ -127,27 +127,27 @@ Hearing damage arises in the cochlea of the inner ear. There the hair cells chan
 
 ### Dose: level and time
 
-The dose that harms hearing builds up in the same way as energy: what matters is how much energy the sound brings to the ear during the whole exposure. In the chapter *Intensity and the decibel scale* we learned that a rise of $3\,\text{dB}$ in the intensity level corresponds to roughly a doubling of the intensity. When the intensity doubles, twice as much energy reaches the ear every second, so the same dose is reached in half the time. That is why a noise level only a few decibels higher can shorten the safe time many times over.
+The dose that harms hearing builds up in the same way as energy: what matters is how much energy the sound brings to the ear during the whole exposure. In the chapter *Intensity and the decibel scale* we learned that a rise of $3\,\text{dB}$ in the intensity level corresponds to roughly a doubling of the intensity. When the intensity doubles, twice as much energy reaches the ear every second, so the same dose is reached in half the time. That is why a noise level only a few decibels higher can shorten many times over the time in which the same dose builds up.
 
 ### Noise at work in law
 
-In Finland, noise at work is regulated by Government Decree 85/2006 on the protection of workers from the risks arising from noise. The decree compares a worker's daily noise exposure, that is, the average noise level over an eight-hour working day, with action values. When the lower action value $80\,\text{dB}$ is exceeded, the employer must make hearing protectors available to the worker and inform the worker about the dangers of noise. When the upper action value $85\,\text{dB}$ is exceeded, protectors must be used and noise must be reduced according to a plan. The daily exposure at the ear, taking the attenuation of the hearing protectors into account, must not exceed the limit value $87\,\text{dB}$. The values are A-weighted: the meter weights frequencies roughly as the ear hears them. The decree also has its own C-weighted limits for peak values of sound, which apply to a gunshot or an impact, for example. The law does not set the same limits for the noise of concerts and headphones, but the ear cannot tell leisure from work.
+In Finland, noise at work is regulated by Government Decree 85/2006 on the protection of workers from the risks arising from noise. The decree compares a worker's daily noise exposure, that is, the average noise level over an eight-hour working day, with action values. When the lower action value $80\,\text{dB(A)}$ is exceeded, the employer must make hearing protectors available to the workers and give them information and training about the dangers of noise. When the upper action value $85\,\text{dB(A)}$ is reached or exceeded, hearing protectors must be used, and the employer must reduce the noise according to a plan, a noise control programme. The exposure limit value is $87\,\text{dB(A)}$: the daily exposure at the ear, taking the attenuation of the hearing protectors into account, must not exceed it. The action values, in contrast, are compared with the exposure without hearing protectors. So the action values are not safe or permitted upper limits of exposure, but levels at which the employer's duties begin. The values are A-weighted: the meter weights frequencies roughly as the ear hears them. The decree also has its own C-weighted limits for peak values of sound, which apply to a gunshot or an impact, for example. The law does not set the same limits for the noise of concerts and headphones, but the ear cannot tell leisure from work.
 
-## Formula: Permitted exposure time
+## Formula: Reference time for noise exposure
 
-The upper action value corresponds to eight hours of exposure to a level of $85\,\text{dB}$. The same dose can be received in a shorter time at a higher level, and every rise of $3\,\text{dB}$ halves the time. This rule of thumb follows from the fact that noise exposure is calculated as an average of energy. The permitted daily exposure time is
+The upper action value corresponds to eight hours of exposure to a level of $85\,\text{dB(A)}$. The same energy dose can be received in a shorter time at a higher level, and every rise of $3\,\text{dB}$ halves the time. This rule of thumb follows from the fact that noise exposure is calculated as an average of energy. In this chapter the calculated time in which the energy dose of the upper action value builds up is called the reference time. The daily reference time is
 
 ```latex
-t_\text{perm} = \frac{t_0}{2^{\,n}}
+t_\text{ref} = \frac{t_0}{2^{\,n}}
 ```
 
 ```latex
 n = \frac{L - L_0}{3\,\text{dB}}
 ```
 
-where $L$ is the noise level at the ear (dB), $L_0 = 85\,\text{dB}$ is the upper action value, $t_0 = 8\,\text{h}$ is the corresponding time, and $n$ tells how many steps of $3\,\text{dB}$ the level $L$ is above the action value. For example, at a level of $94\,\text{dB}$ we have $n = 3$, so the time is halved three times: $8\,\text{h} : 8 = 1\,\text{h}$. When $n$ is not a whole number, the power is calculated with a calculator.
+where $L$ is the A-weighted noise level at the ear (in calculations simply dB), $L_0 = 85\,\text{dB}$ is the upper action value, $t_0 = 8\,\text{h}$ is the corresponding time, and $n$ tells how many steps of $3\,\text{dB}$ the level $L$ is above the action value. For example, at a level of $94\,\text{dB}$ we have $n = 3$, so the time is halved three times: $8\,\text{h} : 8 = 1\,\text{h}$. When $n$ is not a whole number, the power is calculated with a calculator.
 
-<svg data-fig="exposure" viewBox="0 0 600 340" role="img" aria-label="Bar chart to scale: the permitted daily exposure time t in hours as a function of the noise level L. At a noise level of 85 dB the time is 8 hours, at 88 dB 4 hours, at 91 dB 2 hours, at 94 dB 1 hour, at 97 dB 0.5 hours and at 100 dB 0.25 hours. Every rise of three decibels halves the height of the bar." style="max-width:100%;font-size:24px">
+<svg data-fig="exposure" viewBox="0 0 600 340" role="img" aria-label="Bar chart to scale: the daily reference time t in hours as a function of the noise level L. At a noise level of 85 dB the time is 8 hours, at 88 dB 4 hours, at 91 dB 2 hours, at 94 dB 1 hour, at 97 dB 0.5 hours and at 100 dB 0.25 hours. Every rise of three decibels halves the height of the bar." style="max-width:100%;font-size:24px">
   <line x1="155" y1="300" x2="155" y2="56" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="214" y1="300" x2="214" y2="56" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="273" y1="300" x2="273" y2="56" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -199,7 +199,7 @@ where $L$ is the noise level at the ear (dB), $L_0 = 85\,\text{dB}$ is the upper
   <foreignObject x="296" y="79.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$+3\,\text{dB} \;\Rightarrow\; t : 2$</div></foreignObject>
 </svg>
 
-The formula is an estimate, not a guarantee: people's hearing withstands noise in different ways, and exposure should be kept clearly below the limit. The noise level at the ear is obtained with the rules of the chapter *Intensity and the decibel scale*: two equally strong sources raise the level by about $3\,\text{dB}$, and doubling the distance from a point source lowers the level in an open space by about $6\,\text{dB}$. A hearing protector lowers the level reaching the ear by its attenuation, when it is well fitted.
+The reference time is not a permitted or safe time but a calculated reference value. Staying below the reference dose does not guarantee that an individual's hearing is safe, because people's hearing withstands noise in different ways, and it does not remove the employer's other duties: they begin already at the lower action value $80\,\text{dB(A)}$. Exposure should be kept clearly below the reference dose. The noise level at the ear is obtained with the rules of the chapter *Intensity and the decibel scale*: two equally strong sources raise the level by about $3\,\text{dB}$, and doubling the distance from a point source lowers the level in an open space by about $6\,\text{dB}$. A hearing protector lowers the level reaching the ear by its attenuation, when it is well fitted.
 
 ## Noise control {Melun torjunta}
 
@@ -237,7 +237,7 @@ Noise can be reduced in three places. **At the source**, a quieter machine is ch
   <foreignObject x="421" y="281.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{ear protector}$</div></foreignObject>
 </svg>
 
-Control at the source is the most effective, because it protects everyone. A hearing protector protects only when it is on: at a level of $100\,\text{dB}$ the dose for the whole day is reached in just $15\,\text{min}$, so taking the protector off for a moment cancels a large part of its benefit. At a concert, earplugs, distance from the loudspeakers and breaks in a quiet place are simple means, and the volume of headphones should be kept moderate.
+Control at the source is the most effective, because it protects everyone. A hearing protector protects only when it is on: at a level of $100\,\text{dB}$ the daily dose of the upper action value builds up in just $15\,\text{min}$, so taking the protector off for a moment cancels a large part of its benefit. At a concert, earplugs, distance from the loudspeakers and breaks in a quiet place are simple means, and the volume of headphones should be kept moderate.
 
 ## Room acoustics {Tilan akustiikka}
 
@@ -397,7 +397,7 @@ A drummer practises with a band for $2.0\,\text{h}$ a day, and the noise level a
 
 <!-- vaihe -->
 
-**Principle.** The dose depends on both the level and the time, and every rise of $3\,\text{dB}$ halves the permitted time. We look for the level $L_\text{perm}$ at which the permitted time is exactly $2.0\,\text{h}$. The protectors must lower the level reaching the ear to this value, so the attenuation is the difference of the levels.
+**Principle.** The dose depends on both the level and the time, and every rise of $3\,\text{dB}$ halves the reference time. We look for the reference level $L_\text{ref}$ at which the reference time is exactly $2.0\,\text{h}$. The protectors must lower the level reaching the ear to this value, so the attenuation is the difference of the levels.
 
 <!-- vaihe -->
 
@@ -406,8 +406,8 @@ A drummer practises with a band for $2.0\,\text{h}$ a day, and the noise level a
 ```latex
 \begin{aligned}
 &2^{\,n} = \frac{t_0}{t} \\
-&L_\text{perm} = L_0 + n \cdot 3\,\text{dB} \\
-&\Delta L = L - L_\text{perm}
+&L_\text{ref} = L_0 + n \cdot 3\,\text{dB} \\
+&\Delta L = L - L_\text{ref}
 \end{aligned}
 ```
 
@@ -417,7 +417,7 @@ A drummer practises with a band for $2.0\,\text{h}$ a day, and the noise level a
 
 <!-- vaihe -->
 
-**Substitution.** $2^{\,n} = 8\,\text{h} : 2.0\,\text{h} = 4$, so $n = 2$, because $2^2 = 4$. The permitted level is $L_\text{perm} = 85\,\text{dB} + 2 \cdot 3\,\text{dB} = 91\,\text{dB}$, and the attenuation is $\Delta L = 100\,\text{dB} - 91\,\text{dB} = 9\,\text{dB}$.
+**Substitution.** $2^{\,n} = 8\,\text{h} : 2.0\,\text{h} = 4$, so $n = 2$, because $2^2 = 4$. The reference level is $L_\text{ref} = 85\,\text{dB} + 2 \cdot 3\,\text{dB} = 91\,\text{dB}$, and the attenuation is $\Delta L = 100\,\text{dB} - 91\,\text{dB} = 9\,\text{dB}$.
 
 <!-- vaihe -->
 
@@ -425,7 +425,7 @@ A drummer practises with a band for $2.0\,\text{h}$ a day, and the noise level a
 
 <!-- vaihe -->
 
-**Reasonableness.** Without protectors the permitted time would be $8\,\text{h} : 2^5 = 15\,\text{min}$, so a two-hour practice would give eight times the dose. Eight times the intensity corresponds to three steps of $3\,\text{dB}$, that is, $9\,\text{dB}$, as we obtained. Ordinary protectors attenuate by $20$–$30\,\text{dB}$, so the requirement is easy to meet; musicians often use plugs that attenuate evenly so that playing sounds natural.
+**Reasonableness.** Without protectors the reference time would be $8\,\text{h} : 2^5 = 15\,\text{min}$, so a two-hour practice would give eight times the dose. Eight times the intensity corresponds to three steps of $3\,\text{dB}$, that is, $9\,\text{dB}$, as we obtained. Ordinary protectors attenuate by $20$–$30\,\text{dB}$, so the calculated minimum is easy to meet, and a larger attenuation protects hearing better; musicians often use plugs that attenuate evenly so that playing sounds natural.
 
 ## Common misconception
 
@@ -434,7 +434,8 @@ A drummer practises with a band for $2.0\,\text{h}$ a day, and the noise level a
 ## Summary
 
 - Noise is unwanted or harmful sound. The dose that harms hearing depends on both level and time.
-- The upper action value $85\,\text{dB}$ corresponds to $8\,\text{h}$, and every rise of $3\,\text{dB}$ halves the permitted time: $t_\text{perm} = t_0 / 2^{\,n}$.
+- The action values for noise at work, $80\,\text{dB(A)}$ and $85\,\text{dB(A)}$, start duties of the employer; they are not safety limits. The limit value $87\,\text{dB(A)}$, with hearing protectors taken into account, must not be exceeded.
+- The upper action value corresponds to $8\,\text{h}$ at $85\,\text{dB(A)}$, and every rise of $3\,\text{dB}$ halves the reference time in which the same energy dose builds up: $t_\text{ref} = t_0 / 2^{\,n}$.
 - Noise is controlled at the source, along the path (distance, barrier, absorbing surfaces) and at the ear (hearing protectors for the whole exposure).
 - Hard surfaces reflect and soft ones absorb sound. The reverberation time is the time in which the level falls by $60\,\text{dB}$.
 - Anti-noise cancels low noise by destructive interference.

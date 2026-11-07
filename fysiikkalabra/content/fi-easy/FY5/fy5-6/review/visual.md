@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 06ad133bdf23e169
+CONTENT-HASH: 9138422ae14414ac
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] figcaption — "Sen nopeus on niin suuri, että se ei osu Maahan" reads more naturally as "…niin suuri, ettei se osu Maahan."
+- none
 
 ## Checked
-- batch delta review: the new licensed photo (figure.unit-photo) captured in context from preview/fi-easy/fy5-6.html at 390 and 1280 px and opened (review/shots has no dedicated photo capture). The image loads at full resolution, scales inside the column on a phone and sits beside its paragraph at 1280 px. The caption is under the image with its credit line ("Kuva: …, licence"). Nothing is clipped and there is no horizontal overflow. The caption and alt text were read against the picture and the neighbouring paragraph: plain S2 Finnish, quantities in LaTeX.
+- light delta review (teacher 2026-11-07): I captured and opened the changed passages at 390 px from the rebuilt preview: the Painottomuus definition (the bold block plus "Gravitaatio ei siis puutu."), the new paragraph on real satellites (drag, the Moon and Sun, oblateness, ISS reboosts) and the Tiivistelmä bullet. I also opened the Painottomuus paragraph at 1280 px beside its two free-body figures, and the row stays balanced. The bold covers only the definition. The new paragraph is 41 words of clear S2 Finnish. Nothing is clipped, and a scan found no inline formula that wraps or scrolls.

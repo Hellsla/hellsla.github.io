@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: fabc843ad4a1e368
+CONTENT-HASH: a45736261bc2d590
 
 ## Blocking
 (none)
 
 ## Polish
-- none.
+(none)
 
 ## Checked
-- Recomputed F = 4.27e7 N, a_B/a_A = 4; same two-stage physics as the Finnish; NOTES §12 shorter sentences.
-- fy5-5-L2-08 compared with the reviewed Finnish: id, level, kind, answer, unit, tolerance, choices, correct flag, feedback and solution steps identical in content.
-- No Finnish text left in en files; check_i18n clean for fy5-5; build.py fy5-5 succeeds.
+light delta review (teacher 2026-11-07): git diff origin/main of exercises/ and answers.py (one task text), not a full review: L3-04 history corrected (Cavendish found Earth's density; today M from g with known γ); recomputed M = 5.97e24 kg, ρ = 5.51e3 kg/m³, answer unchanged.

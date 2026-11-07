@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 07b47a298050cf0f
+CONTENT-HASH: 053cb480bab0df62
 
 ## Blocking
 (none)
 
 ## Polish
-- none.
+(none)
 
 ## Checked
-- fi-easy shorter sentences, same physics and terms; figure descriptions need no change.
-- fy5-4-L2-08: situation first, question last, solution staged, same order and feedback structure as the Finnish; nothing extra revealed.
+light delta review (teacher 2026-11-07), after fixes: "Sellaista todellista voimaa ei ole" matches the other "todellista keskipakoisvoimaa" passages and the lesson.

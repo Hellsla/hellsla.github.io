@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: f9d7445780298a3a
+CONTENT-HASH: 30988471b8c66f62
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] ripple-tank-two-sources.webp — dark, low-contrast narrow portrait photo; the checkered interference pattern the alt text names is faint at 360 px — a brighter crop would help.
+- [Minor] fy5-12 credits list — the heading "Photographs" now lists only a computed image — use a neutral heading such as "Picture credits" when a computed picture is in the list.
 
 ## Checked
-- batch delta review: opened fy5-12-1280-0 and fy5-12-360-0; photo loads, floats right beside the text at 1280 px and sits in the column at 360 px without clipping or overflow; caption and alt are natural English, factual and consistent with the picture and the adjacent paragraph; credit line present under the caption.
+- light delta review (teacher 2026-11-07), after fixes 2: own 390 px (2×) capture of the #credits list in preview/en/fy5-12.html — the entry now reads "Computed model picture: two-source interference in a ripple tank. Ruukkilabra. Computed from a model for this site." (English, no clipping); photos.json diff; page scrollWidth 390, no overflow.

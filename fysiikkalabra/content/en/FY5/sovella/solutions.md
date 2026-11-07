@@ -3,7 +3,7 @@
 ### a)
 **Given:** load $m = 2.0\,\text{t} = 2000\,\text{kg}$, jib $m_\text{p} = 4.0\,\text{t}$ and $r_\text{p} = 12\,\text{m}$, counterweight $m_\text{v} = 9.0\,\text{t}$ and $r_\text{v} = 10\,\text{m}$
 **Find:** the distance $r$ of the trolley from the axis of the tower when the total moment of the weights is zero
-**Principle:** Three weights act on the jib: the weight of the load at the trolley (through the cable), the weight of the jib itself at its centre of mass, and the weight of the counterweight. The axis of rotation is chosen to be the axis of the tower, about which the jib tends to tip. The lever arm of each weight is the perpendicular distance of its line of action from the axis, that is, the horizontal distance. The load and the weight of the jib turn the jib towards the side of the load, the counterweight in the opposite direction. In equilibrium with respect to rotation the sum of the moments is zero.
+**Principle:** Three weights act on the jib: the weight of the load at the trolley (through the cable), the weight of the jib itself at its centre of mass, and the weight of the counterweight. The jib turns about the vertical axis of the tower, but the vertical weights are parallel to this axis and do not turn the jib about it. The weights tend to tip the jib in its vertical plane, so the moments are calculated about the horizontal moment axis A, which passes through the tower perpendicular to this plane. The lever arm of each weight is the perpendicular distance of its line of action from the axis A. The weights are vertical and the axis horizontal, so the lever arm is the horizontal distance of the weight from the axis of the tower. The load and the weight of the jib turn the jib towards the side of the load, the counterweight in the opposite direction. In equilibrium with respect to rotation the sum of the moments is zero.
 **Formula:** $m_\text{p} g r_\text{p} + m g r - m_\text{v} g r_\text{v} = 0$. The acceleration of free fall cancels, so $r = \dfrac{m_\text{v} r_\text{v} - m_\text{p} r_\text{p}}{m}$.
 **Conversions:** $1\,\text{t} = 1000\,\text{kg}$, so $m_\text{p} = 4000\,\text{kg}$ and $m_\text{v} = 9000\,\text{kg}$.
 **Substitution:** $r = \dfrac{9000\,\text{kg} \cdot 10\,\text{m} - 4000\,\text{kg} \cdot 12\,\text{m}}{2000\,\text{kg}} = \dfrac{42\,000\,\text{kg}\cdot\text{m}}{2000\,\text{kg}} = 21\,\text{m}$
@@ -13,7 +13,7 @@
 ### b)
 **Given:** the data of part a, trolley at the tip of the jib $r_\text{max} = 40\,\text{m}$, permitted total moment $M_\text{max} = 600\,\text{kNm}$ and $g = 9.81\,\text{m/s}^2$
 **Find:** the greatest load $m$ at the tip of the jib
-**Principle:** When the load is at the tip, the total moment points towards the side of the load, and with the greatest permitted load it is equal to the limit. The moments are calculated about the axis of the tower as in part a, with the positive direction of rotation towards the side of the load.
+**Principle:** When the load is at the tip, the total moment points towards the side of the load, and with the greatest permitted load it is equal to the limit. The moments are calculated about the moment axis A as in part a, with the positive direction of rotation towards the side of the load.
 **Formula:** $m g r_\text{max} + m_\text{p} g r_\text{p} - m_\text{v} g r_\text{v} = M_\text{max}$, so $m = \dfrac{M_\text{max} + m_\text{v} g r_\text{v} - m_\text{p} g r_\text{p}}{g r_\text{max}}$
 **Conversions:** $M_\text{max} = 600\,\text{kNm} = 600\,000\,\text{Nm}$
 **Substitution:** $m_\text{p} g r_\text{p} = 4000\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 12\,\text{m} = 470\,880\,\text{Nm}$ and $m_\text{v} g r_\text{v} = 9000\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 10\,\text{m} = 882\,900\,\text{Nm}$. The moment of the load may therefore be $600\,000\,\text{Nm} + 882\,900\,\text{Nm} - 470\,880\,\text{Nm} = 1\,012\,020\,\text{Nm}$, so $m = \dfrac{1\,012\,020\,\text{Nm}}{9.81\,\text{m/s}^2 \cdot 40\,\text{m}} = 2579\,\text{kg}$
@@ -29,7 +29,7 @@
 
 *How much could be added.* For the empty crane there is room of $600\,\text{kNm} - 412\,\text{kNm} = 188\,\text{kNm}$ below the limit, so the counterweight can be increased by at most $188\,000\,\text{Nm} : (9.81\,\text{m/s}^2 \cdot 10\,\text{m}) \approx 1.9\,\text{t}$. Then the greatest load at the tip would be $1200\,\text{kNm} : 392.4\,\text{m}^2/\text{s}^2 \approx 3.1\,\text{t}$.
 
-*Conclusion.* The suggestion does not work as it stands. The counterweight is dimensioned so that the limit is not exceeded with the empty or the fully loaded crane. Instead of two tonnes, the counterweight could be increased by at most about $1.9\,\text{t}$, and the lifting capacity cannot be increased further without a sturdier tower.
+*Conclusion.* The suggestion does not work as it stands. In the model of the problem the counterweight is dimensioned so that the limit is not exceeded with the empty or the fully loaded crane. Instead of two tonnes, the counterweight could be increased by at most about $1.9\,\text{t}$, and the lifting capacity cannot be increased further without a sturdier tower. For a real crane one moment condition is not enough: the counterweight may be changed only as the manufacturer instructs, because safety also depends on, for example, the wind, the strength of the structures and the foundation.
 
 ### d)
 **Find:** the free-body diagram of the load while the jib turns steadily, and an evaluation of the operator's explanation
@@ -75,7 +75,7 @@
 
 In the vertical direction the load does not accelerate, so the vertical component of the tension is equal to the weight, and the tension is slightly larger than the weight. The horizontal component of the tension is the net force, and it points towards the axis of the tower like the centripetal acceleration $\overline{a}_\text{n}$, which is drawn separately in its own colour. In the model picture the angle of the cable has been drawn much larger than in the problem so that the arrows can be told apart.
 
-*The operator's explanation.* There is no centrifugal force: no body pulls the load outwards, and there is no outward force in the free-body diagram. When the jib starts to turn, the load tends to continue straight ahead because of its inertia. That is why it stays on the outer edge of the circle and the cable tilts, until the horizontal component of the tension is enough to turn the motion of the load onto a circular path. So the load is not thrown outwards but lags behind its straight path only by as much as the cable needs to pull it towards the centre.
+*The operator's explanation.* There is no real centrifugal force: no body pulls the load outwards, and there is no outward force in the free-body diagram. When the jib starts to turn, the load tends to continue straight ahead because of its inertia. That is why it stays on the outer edge of the circle and the cable tilts, until the horizontal component of the tension is enough to turn the motion of the load onto a circular path. So the load is not thrown outwards but lags behind its straight path only by as much as the cable needs to pull it towards the centre.
 
 ### e)
 **Given:** the radius $r = 21\,\text{m}$ of part a, period $T = 90\,\text{s}$, cable length $15\,\text{m}$ and $g = 9.81\,\text{m/s}^2$
@@ -93,6 +93,7 @@ In the vertical direction the load does not accelerate, so the vertical componen
 - In part e the angle may also be obtained by drawing the forces to scale when the centripetal acceleration has been calculated correctly, and $0.6^\circ$ is accepted as the answer.
 
 ### Yleisiä virheitä
+- The moments are thought to be calculated about the vertical slewing axis of the tower, although the vertical weights do not turn the jib about it. The moments of the weights are calculated about the horizontal moment axis A.
 - The weight of the jib itself is forgotten, or its moment is calculated from the end of the jib instead of its centre of mass.
 - The directions of rotation of the moments are mixed up, so the counterweight and the weight of the jib are calculated in the same direction.
 - In part b the limit is interpreted so that the total moment must be zero, which gives the load at the tip as only $42\,000\,\text{kg}\cdot\text{m} : 40\,\text{m} \approx 1.1\,\text{t}$.
@@ -193,7 +194,7 @@ $\tfrac{1}{r}$ is chosen for the horizontal axis and $v^2$ for the vertical axis
 ### c)
 **Given:** the rotation period of Jupiter $T = 9.93\,\text{h}$ and $\gamma M = 1.27 \cdot 10^{17}\,\text{m}^3/\text{s}^2$ from part b
 **Find:** the radius $r$ of the orbit of the probe
-**Principle:** The probe stays above the same cloud formation only if it orbits Jupiter in the same direction and in the same time as Jupiter rotates about its axis. The centripetal force of the circular motion of the probe is the gravity of Jupiter, as for the moons, so $v^2 = \dfrac{\gamma M}{r}$, and the orbital speed is $v = \dfrac{2\pi r}{T}$.
+**Principle:** The probe stays above the same cloud formation only if it orbits Jupiter in the same direction and in the same time as the cloud formation, which the problem assumes to go round in the rotation period of Jupiter, $9.93\,\text{h}$. The orbit is thus an equatorial circular orbit synchronised with the rotation of Jupiter. The centripetal force of the circular motion of the probe is the gravity of Jupiter, as for the moons, so $v^2 = \dfrac{\gamma M}{r}$, and the orbital speed is $v = \dfrac{2\pi r}{T}$.
 **Formula:** $\dfrac{4\pi^2 r^2}{T^2} = \dfrac{\gamma M}{r}$, so $r^3 = \dfrac{\gamma M T^2}{4\pi^2}$ and $r = \sqrt[3]{\dfrac{\gamma M T^2}{4\pi^2}}$
 **Conversions:** $T = 9.93 \cdot 3600\,\text{s} = 35\,748\,\text{s}$
 **Substitution:** $r^3 = \dfrac{1.27 \cdot 10^{17}\,\text{m}^3/\text{s}^2 \cdot (35\,748\,\text{s})^2}{4\pi^2} = 4.11 \cdot 10^{24}\,\text{m}^3$, so $r = 1.60 \cdot 10^{8}\,\text{m}$
@@ -324,19 +325,20 @@ $\tfrac{1}{r}$ is chosen for the horizontal axis and $v^2$ for the vertical axis
 *Conclusion.* There is no contradiction: the spring constant is reliable, because it is obtained from the slope, which the mass of the spring does not affect. If the line had been forced through the origin, the spring constant would have been too small, about $18.9\,\text{N/m}$.
 
 ### d)
-**Given:** $m = 0.250\,\text{kg}$, amplitude $A = 5.0\,\text{cm}$ and $k = 19.9\,\text{N/m}$ from part b
+**Given:** $m = 0.250\,\text{kg}$, the mass of the spring $m_\text{s} = 45\,\text{g}$, amplitude $A = 5.0\,\text{cm}$ and $k = 19.9\,\text{N/m}$ from part b
 **Find:** the greatest speed $v_\text{max}$ of the mass
-**Principle:** The energy of the oscillation is conserved when friction and air resistance are small. At an extreme position the mass is momentarily at rest, and the whole energy $\tfrac{1}{2}kA^2$ is potential energy. At the equilibrium position the displacement is zero, so the whole energy is kinetic energy and the speed is greatest. For a vertical spring the weight only shifts the equilibrium position, so the displacement is measured from the equilibrium position.
-**Formula:** $\tfrac{1}{2}mv_\text{max}^2 = \tfrac{1}{2}kA^2$, so $v_\text{max} = A\sqrt{\dfrac{k}{m}}$
-**Conversions:** $A = 5.0\,\text{cm} = 0.050\,\text{m}$
-**Substitution:** $v_\text{max} = 0.050\,\text{m} \cdot \sqrt{\dfrac{19.9\,\text{N/m}}{0.250\,\text{kg}}} = 0.050\,\text{m} \cdot 8.92\,\tfrac{1}{\text{s}} = 0.446\,\text{m/s}$
-**Answer:** $v_\text{max} \approx 0.45\,\text{m/s}$, two significant figures like the amplitude $5.0\,\text{cm}$.
-**Reasonableness:** The period is about $0.73\,\text{s}$, and during a period the mass travels $4A = 20\,\text{cm}$, so its average speed is about $0.28\,\text{m/s}$. The greatest speed is larger than this, as it should be. The mass of the spring itself reduces the real greatest speed slightly, because the same energy is also shared with the spring.
+**Principle:** The energy of the oscillation is conserved when friction and air resistance are small. At an extreme position the mass is momentarily at rest, and the whole energy $\tfrac{1}{2}kA^2$ is potential energy. At the equilibrium position the displacement is zero, so the whole energy is kinetic energy and the speed is greatest. For a vertical spring the weight only shifts the equilibrium position, so the displacement is measured from the equilibrium position. In the model of the problem the mass of the spring itself is taken into account as in part c: the lower part of the spring moves with the mass, so a third of the mass of the spring is added to the mass in the kinetic energy.
+**Formula:** $\tfrac{1}{2}m_\text{eff}v_\text{max}^2 = \tfrac{1}{2}kA^2$, where $m_\text{eff} = m + \tfrac{1}{3}m_\text{s}$, so $v_\text{max} = A\sqrt{\dfrac{k}{m_\text{eff}}}$
+**Conversions:** $A = 5.0\,\text{cm} = 0.050\,\text{m}$ and $m_\text{s} = 45\,\text{g} = 0.045\,\text{kg}$
+**Substitution:** $m_\text{eff} = 0.250\,\text{kg} + 0.045\,\text{kg} : 3 = 0.265\,\text{kg}$ and $v_\text{max} = 0.050\,\text{m} \cdot \sqrt{\dfrac{19.9\,\text{N/m}}{0.265\,\text{kg}}} = 0.050\,\text{m} \cdot 8.67\,\tfrac{1}{\text{s}} = 0.433\,\text{m/s}$
+**Answer:** $v_\text{max} \approx 0.43\,\text{m/s}$, two significant figures like the amplitude $5.0\,\text{cm}$.
+**Reasonableness:** The period is about $2\pi\sqrt{0.265\,\text{kg} : 19.9\,\text{N/m}} \approx 0.73\,\text{s}$, and during a period the mass travels $4A = 20\,\text{cm}$, so its average speed is about $0.28\,\text{m/s}$. The greatest speed is larger than this, as it should be. A massless spring would give a slightly larger speed, about $0.45\,\text{m/s}$, because then no energy goes into moving the spring.
 
 ### Hyväksytään myös
 - In part b slopes of $1.95\text{–}2.02\,\text{s}^2/\text{kg}$ and the spring constants calculated from them, $19.5\text{–}20.2\,\text{N/m}$, are accepted, as is a line fitted by a calculator or spreadsheet ($19.9\,\text{N/m}$).
 - The graph of part a can also be drawn from the quantities $m$ and $T^2$ with the mass on a gram scale; in part b the unit must then be converted.
 - In part c the deviation can also be explained by a systematic error, when the explanation is justified and it is stated that an addition of constant size does not change the slope.
+- In part d, $v_\text{max} \approx 0.45\,\text{m/s}$ calculated with a massless spring earns two points when the student says that the mass of the spring is ignored and justifies the assumption: the point for the energy principle (the first criterion without the effective mass) and the point for the equation (with the mass $m$). The point for the result requires the model the task asks for. The added mass of $14\,\text{g}$ from the intercept of part c, which gives the same $0.43\,\text{m/s}$, is also accepted.
 
 ### Yleisiä virheitä
 - A $(m, T)$ graph is drawn and a straight line is fitted to its curved set of points.
@@ -379,13 +381,13 @@ $\tfrac{1}{r}$ is chosen for the horizontal axis and $v^2$ for the vertical axis
 **Reasonableness:** The speed of sound decreases by about $2\,\%$, so the frequency also decreases by about $2\,\%$, and $2\,\%$ of $250\,\text{Hz}$ is $5\,\text{Hz}$. A semitone at this pitch is about $15\,\text{Hz}$, so in winter the organ sounds about a third of a semitone lower. That is why organs are tuned at the temperature at which they are usually played.
 
 ### d)
-**Given:** the sound intensity level $L_1 = 88\,\text{dB}$ at a distance $r_1 = 4.0\,\text{m}$, the distance of the organist $r_2 = 2.0\,\text{m}$, practice time $3\,\text{h}$; upper action value $L_0 = 85\,\text{dB}$ and the corresponding time $t_0 = 8\,\text{h}$
-**Find:** the permitted daily exposure time $t_\text{perm}$ of the organist and whether it is enough
-**Principle:** When a source radiates uniformly in all directions, the same power spreads over the surface of a sphere $4\pi r^2$, so the intensity is $I = \dfrac{P}{4\pi r^2}$. When the distance is halved, the intensity quadruples. The change in the intensity level is obtained from the ratio of the intensities. The permitted exposure time halves for every $3\,\text{dB}$ rise.
-**Formula:** $L_2 - L_1 = 10\,\text{dB} \cdot \lg \dfrac{I_2}{I_1}$, where $\dfrac{I_2}{I_1} = \left(\dfrac{r_1}{r_2}\right)^2$; $n = \dfrac{L_2 - L_0}{3\,\text{dB}}$ and $t_\text{perm} = \dfrac{t_0}{2^{\,n}}$
+**Given:** the sound level $L_1 = 88\,\text{dB}$, treated as an intensity level in a free sound field, at a distance $r_1 = 4.0\,\text{m}$, the distance of the organist $r_2 = 2.0\,\text{m}$, practice time $3\,\text{h}$; upper action value $L_0 = 85\,\text{dB}$ and the corresponding time $t_0 = 8\,\text{h}$
+**Find:** the daily reference time $t_\text{ref}$ of the organist, the time in which the energy dose of the upper action value builds up, and whether the dose of the practice stays below it
+**Principle:** When a source radiates uniformly in all directions, the same power spreads over the surface of a sphere $4\pi r^2$, so the intensity is $I = \dfrac{P}{4\pi r^2}$. When the distance is halved, the intensity quadruples. The change in the intensity level is obtained from the ratio of the intensities. The reference time, in which the same energy dose builds up, halves for every $3\,\text{dB}$ rise.
+**Formula:** $L_2 - L_1 = 10\,\text{dB} \cdot \lg \dfrac{I_2}{I_1}$, where $\dfrac{I_2}{I_1} = \left(\dfrac{r_1}{r_2}\right)^2$; $n = \dfrac{L_2 - L_0}{3\,\text{dB}}$ and $t_\text{ref} = \dfrac{t_0}{2^{\,n}}$
 **Conversions:** Not needed.
-**Substitution:** $\dfrac{I_2}{I_1} = \left(\dfrac{4.0\,\text{m}}{2.0\,\text{m}}\right)^2 = 4$, so $L_2 = 88\,\text{dB} + 10\,\text{dB} \cdot \lg 4 = 88\,\text{dB} + 6.0\,\text{dB} = 94\,\text{dB}$. $n = \dfrac{94\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = 3.0$ and $t_\text{perm} = \dfrac{8\,\text{h}}{2^{3}} = 1.0\,\text{h}$
-**Answer:** $t_\text{perm} \approx 1\,\text{h}$. The time is not enough: three hours of practice is about three times the permitted time. The organist should use hearing protection or practise with quieter stops.
+**Substitution:** $\dfrac{I_2}{I_1} = \left(\dfrac{4.0\,\text{m}}{2.0\,\text{m}}\right)^2 = 4$, so $L_2 = 88\,\text{dB} + 10\,\text{dB} \cdot \lg 4 = 88\,\text{dB} + 6.0\,\text{dB} = 94\,\text{dB}$. $n = \dfrac{94\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = 3.0$ and $t_\text{ref} = \dfrac{8\,\text{h}}{2^{3}} = 1.0\,\text{h}$
+**Answer:** $t_\text{ref} \approx 1\,\text{h}$. The dose does not stay below the reference dose: three hours of practice is about three times the reference time, so the dose is about $300\,\%$ of the reference dose. The organist should use hearing protection or practise with quieter stops.
 **Reasonableness:** A level of $94\,\text{dB}$ is of the same order as the noise of a lawn mower at the ear of the user, when hearing protection is recommended. In the point-source model the sound power of the organ would be $P = I \cdot 4\pi r^2 \approx 0.13\,\text{W}$, which is plausible for an instrument.
 
 ### e)
@@ -397,7 +399,7 @@ $\tfrac{1}{r}$ is chosen for the horizontal axis and $v^2$ for the vertical axis
 
 *Playing.* During practice the organ is seldom played at full power all the time, so the average level is lower. On the other hand, in some churches the position of the pipes and the console may direct sound straight at the organist.
 
-*A reliable way.* A sound level meter measures the A-weighted level at the organist's ear throughout a normal practice and its average is calculated and compared with the action value $85\,\text{dB}$. The exposure is probably smaller than the estimate of part d, but only a measurement tells whether hearing protection is needed.
+*A reliable way.* A sound level meter measures the A-weighted level at the organist's ear throughout a normal practice and the daily noise exposure is calculated from it as an energy average and compared with the action values $80\,\text{dB}$ and $85\,\text{dB}$. The exposure is probably smaller than the estimate of part d, but only a measurement tells whether hearing protection is needed. Even staying below an action value does not guarantee safe hearing, so hearing protection is worth using in loud practices.
 
 ### Hyväksytään myös
 - In part a the period can also be read from the duration of two or three periods; answers of $240\text{–}260\,\text{Hz}$ are accepted.
@@ -409,4 +411,4 @@ $\tfrac{1}{r}$ is chosen for the horizontal axis and $v^2$ for the vertical axis
 - In part b the condition $L = \tfrac{\lambda}{4}$ for a tube closed at one end is used, although the pipe is open at both ends.
 - In part c it is assumed that the wavelength changes and the frequency stays the same, or the change of frequency is calculated to be the same as the change of speed.
 - In part d the level is assumed to double when the distance is halved, or the intensity is assumed to depend on the distance and not on its square.
-- The permitted time is calculated by dividing $8\,\text{h}$ by the difference of the levels instead of halving the time for each step of $3\,\text{dB}$.
+- The reference time is calculated by dividing $8\,\text{h}$ by the difference of the levels instead of halving the time for each step of $3\,\text{dB}$.

@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: a12ff6f500d8d885
+CONTENT-HASH: 463dc8311fdab833
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: the diff only renames this and neighbouring FY5 chapters (title, meta.json, `luku *...*` references in lesson.md and inquiry.json); every renamed reference names the chapter that holds the cited content, and no formula, number, option, `correct` flag or feedback physics changed. Every choice still has exactly one correct option.
+- light delta review (teacher 2026-11-07): only the passages changed against origin/main were judged, in context, not a full review; Cavendish (1798) determined the Earth's mean density from the weak gravitational attraction between lead spheres, and γ follows from his result: historically correct. Artemis II earthset caption: Earth and Moon pull each other with equal gravitational forces (Newton III), correct.

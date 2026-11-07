@@ -1,20 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 9e5206ef58e39b4a
-Mode: full (translation review against the reviewed Finnish set; new task fy5-16-L2-08)
-Round 1
+CONTENT-HASH: 5575f15b7bd4bcfd
 
 ## Blocking
-(none)
-
-## Fixed
-- None needed; new task fy5-16-L2-08 was already faithful to content/fi.
 
 ## Polish
-(none)
+- exercises.json:7, :119, :376 — the reworded questions are long, and each names the reference dose differently ("the same energy dose as in the exposure that corresponds to…", "the daily energy dose that corresponds to…", "the energy dose that corresponds to…") — use one short form throughout, e.g. "Calculate the reference time, the time in which the dose of the upper action value ($8\,\text{h}$ at $85\,\text{dB}$) builds up."
+- solutions.md:103 (L3-01) — the Formula still writes the dose with "$\cdot 100\,\%$" and no symbol, but the Substitution introduces $D$ as a ratio; make the Formula "dose $D = \dfrac{t_1}{t_{\text{ref},1}} + \dfrac{t_2}{t_{\text{ref},2}}$" as in L3-05, so the student sees the same expression twice.
 
 ## Checked
-- fy5-16-L2-08: situation first, question last as its own sentence; same structure, options and reasoning steps as fi; example-data notice kept where fi has it.
-- Solution has the same stages as fi (Find, Principle, Model answer) and can be followed step by step; nothing skipped or added.
-- Feedback repairs the misconception rather than restating the answer, as in fi.
-- Wording is natural textbook English; decimal point in JSON and LaTeX; no Finnish left.
-- No change to level, workload or figure use; check_i18n.py shows nothing for fy5-16; build.py fy5-16 succeeds.
+light delta review (teacher 2026-11-07), L3-01 chain: HEAD~1 diff only, read in its solution. The chain 1 + 0.25 = 1.25 = 125 % is shorter and easier to follow than the old bracket ·100 %, and its D matches L3-05; Given, Answer and Reasonableness still fit. Physics left to the science review.

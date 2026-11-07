@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 6b865c9e57f68a00
+CONTENT-HASH: 9138422ae14414ac
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Terms: kiertorata, satelliitti, and painottomuus (free fall, support force zero, gravity still acts) agree with the lesson and the guardrails.
+- light delta review (teacher 2026-11-07), after fixes 2: HEAD~1 diff: summary bullet now 'Painottomuudessa kappaletta ei tue mikään, ja se putoaa vapaasti: gravitaatio vaikuttaa, mutta tukivoima on nolla'; correct (free fall, gravity acts, zero support force) and consistent with the body text; no number changed.

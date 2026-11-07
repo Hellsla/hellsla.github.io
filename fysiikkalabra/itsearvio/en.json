@@ -63,7 +63,7 @@
   "fy5-13": ["I can recognise the nodes and antinodes of a standing wave.", "I can calculate the natural frequencies of a string and a pipe.", "I can compare the sounds of open and closed pipes."],
   "fy5-14": ["I understand what determines pitch and timbre.", "I can read the fundamental and overtones from an FFT graph.", "I can explain the Doppler effect and calculate the heard frequency."],
   "fy5-15": ["I can calculate sound intensity.", "I can calculate a sound level in decibels.", "I understand why two equally loud sources do not double the decibels."],
-  "fy5-16": ["I can assess the harm of noise and the allowed exposure time.", "I can compare ways of reducing noise.", "I understand the working principle of a loudspeaker and a microphone."],
+  "fy5-16": ["I can assess the harm of noise and calculate the reference time of a noise dose.", "I can compare ways of reducing noise.", "I understand the working principle of a loudspeaker and a microphone."],
   "fy5-17": ["I can calculate the depth of a boundary from an echo time.", "I understand how ultrasound frequency affects image resolution.", "I can determine the distance of an earthquake from the arrival times of its waves."],
   "fy6-1": ["I understand why electric current is not used up in a lamp.", "I can calculate current, charge and transferred energy.", "I can draw and read a circuit diagram."],
   "fy6-2": ["I can connect an ammeter and a voltmeter correctly and justify why.", "I can choose a measuring range and estimate the error limit of a reading.", "I understand how a wrong connection changes the circuit."],

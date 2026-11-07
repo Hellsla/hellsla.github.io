@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: d97dd20b77970096
+CONTENT-HASH: 394bea7d94af7b8e
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] review/shots: no capture shows the optional Find-the-error item opened; I rendered it myself at 390 px (opened details) and checked it there. Consider adding it to the captures.
+- none
 
 ## Checked
-- Own 390 px render of the opened Find-the-error item: the aligned display has two rows with the = signs aligned, fractions in display size, units upright with thin space, no clipping; the formula scrolls 306/306 px (no overflow) and the page scrollWidth is 390 (no horizontal scroll).
-- Contact captures fy5-13-stage-sovella-390-2.png (fi): the item sits collapsed and the surrounding layout is intact.
-- Decimal separator matches the language; text outside the formula unchanged.
+- light delta review (teacher 2026-11-07): I captured and opened two changed paragraphs at 390 px from the rebuilt preview. One is "Aalto ja sen heijastus", with the new assumption "aalto ei menetä energiaa heijastuessaan". The other is "Solmut ja kuvut", with the new closing "Todellisuudessa … Siksi solmutkin värähtelevät hiukan." I also opened the first one at 1280 px beside its three-instant figure, and the row stays balanced. The paragraphs are 100 and 83 words. The λ/2 and λ/4 fractions stay on one line, and the Finnish is natural. Nothing is clipped, and a scan found no inline formula that wraps.

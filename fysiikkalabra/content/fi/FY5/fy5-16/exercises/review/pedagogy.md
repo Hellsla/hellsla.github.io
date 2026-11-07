@@ -1,14 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 431ea9a2e547e7e5
+CONTENT-HASH: 9b2ee0bf44613b3e
 
 ## Blocking
-(none)
 
 ## Polish
-1. L2-08 correct option is "noin 6 dB ... suunnilleen yhtä paljon joka välillä"; option 1 now also says "suunnilleen", so hedging no longer marks it. Nothing further needed.
+- solutions.md:39 (L1-04) — the Järkevyys has become four sentences of regulation (action values, limit value, safety) and no longer reads as a check; keep the 4 min comparison and one sentence ("Korvalle tuleva 83 dB jää raja-arvon 87 dB(A) alle, mutta vertailuannoksen alittaminen ei takaa kuulon turvallisuutta").
+- exercises.json:7 (L1-01) — the core level-1 question is now a 30-word sentence; the lesson's term would shorten it: "Kuinka pitkä on hänen päivittäinen vertailuaikansa ilman kuulonsuojaimia ($8\,\text{h}$ tasolla $85\,\text{dB}$)?"
+- solutions.md:103 (L3-01) — Kaava kirjoittaa annoksen "$\cdot 100\,\%$"-muodossa ilman tunnusta, mutta Sijoitus ottaa käyttöön $D$:n suhdelukuna; yhtenäistä Kaava muotoon "annos $D = \dfrac{t_1}{t_{\text{v},1}} + \dfrac{t_2}{t_{\text{v},2}}$" kuten L3-05:ssä, niin opiskelija näkee saman lausekkeen kahdesti.
 
 ## Checked
-- Round 2. Checked from text only (no renders).
-- Round 1 polish done: option 1 hedged, correct option no longer the only hedged one nor the longest (116 vs 126 characters); 85 dB feedback now says the true level may be 84-86 dB, matching the solution.
-- Differences 6, 6, 5 dB vs 6,0 dB expected, uncertainty of a difference 2 dB: correct option follows from the data, others are the log-scale and within-uncertainty traps.
-- Answer field and solution agree; no new theory.
+light delta review (teacher 2026-11-07), L3-01 chain: HEAD~1 diff only, read in its solution. The chain 1 + 0,25 = 1,25 = 125 % is shorter and easier to follow than the old bracket ·100 %, and its D matches L3-05; Annettu, Vastaus and Järkevyys still fit. Physics left to the science review.

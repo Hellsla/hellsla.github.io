@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 431ea9a2e547e7e5
+CONTENT-HASH: 9b2ee0bf44613b3e
 
 ## Blocking
 
 ## Polish
+- solutions.md:103 (L3-01) — Kaava still reads "annos $= (\ldots) \cdot 100\,\%$" without the symbol, while Sijoitus now gives $D$ as a pure ratio and L3-05 (line 204) defines $D = \sum t_i/t_{\text{v},i}$; write the Kaava as "annos $D = \dfrac{t_1}{t_{\text{v},1}} + \dfrac{t_2}{t_{\text{v},2}}$ ($D = 1$ vastaa $100\,\%$)" so formula and substitution match.
 
 ## Checked
-- Round-1 Major resolved: the feedback now says "Epävarmuuden vuoksi todellinen taso voi olla 84–86 dB" (the reading is 85 dB; only the true level is uncertain, and "voi" keeps it uncertain). The solution uses the same words: "lukema on 85 dB, mutta … todellinen taso voi olla 84–86 dB".
-- The distractor's feedback and the solution now both say "enintään 2ΔL = 2 dB".
-- Hedging evened: distractor 1 now says "suunnilleen puolittuu", and the correct option ends "eli suunnilleen yhtä paljon joka välillä". The correct option still follows from the data (drops of 6, 6 and 5 dB, within 2 dB of 6,02 dB), and distractor 1 is still clearly wrong (91 → 85 dB is far from half). Exactly one option is correct.
-- Checked against the text only, not renders. answers.py is unchanged, and running it with python3 -I gives the same 16 numeric answers. The rest of the set is unchanged.
+light delta review (teacher 2026-11-07), L3-01 chain: HEAD~1 diff of solutions.md only. Recomputed t_v,1 = 8 h/2¹ = 4,0 h, t_v,2 = 8 h/2⁻¹ = 16 h, D = 1 + 0,25 = 1,25; 1,25 = 125 % is exact (% = 1/100). D as a dimensionless ratio (h/h) agrees with L3-05's D = Σ t_i/t_v,i; answer 125 % and Järkevyys unchanged and right. Only the Kaava line keeps the old ·100 % form (Polish).

@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: f42659fc7d7c0a81
+CONTENT-HASH: 4349218cee0a871a
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-batch delta review: chapter titles renamed in the title, meta and every chapter reference; every reference names the current title of the right chapter (no stale old title left in content/en/FY5); no formula, number, option or feedback physics changed; every changed choice keeps its single correct option.
+- light delta review (teacher 2026-11-07), after fixes 2: HEAD~1 diff: worked-example Principle now 'so that the velocity of the train points almost straight towards or away from them'; this resolves the old 'almost' + 'whole velocity' Polish item; the moving-source sign choice and the numbers (recomputed 340.8 Hz and 286.0 Hz) stand.

@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: f9301f495c087da9
+CONTENT-HASH: c581bde179f33e31
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: the diff only renames this and neighbouring FY5 chapters (title, meta.json, `luku *...*` references in lesson.md and inquiry.json); every renamed reference names the chapter that holds the cited content, and no formula, number, option, `correct` flag or feedback physics changed. Every choice still has exactly one correct option.
+- light delta review (teacher 2026-11-07), after fixes: HEAD~1 diff: reference time is 'a calculated reference value', not a permitted or safe time; correct and consistent with VNA 85/2006 wording elsewhere, no number changed.

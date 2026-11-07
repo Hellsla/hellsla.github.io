@@ -1,6 +1,6 @@
 [
   {
-    "q": "A sound level meter reads $80\\,\\text{dB}$. What is the intensity of the sound?",
+    "q": "Outdoors in a free sound field a sound level meter reads $80\\,\\text{dB}$. The reading is treated as the sound intensity level. What is the intensity of the sound?",
     "a": "$I = I_0 \\cdot 10^{\\,L/(10\\,\\text{dB})} = 1.0 \\cdot 10^{-12}\\,\\text{W/m}^2 \\cdot 10^{8} = 1.0 \\cdot 10^{-4}\\,\\text{W/m}^2$."
   },
   {

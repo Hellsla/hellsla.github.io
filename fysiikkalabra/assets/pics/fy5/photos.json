@@ -76,27 +76,27 @@
     "width": 1272,
     "height": 1600
   },
-  "ripple-tank-single-slit.webp": {
-    "title": "Single-slit diffraction in a ripple tank",
-    "creator": "Armedblowfish",
-    "source": "https://commons.wikimedia.org/wiki/File:Single-slit-diffraction-ripple-tank.jpg",
-    "licence": "BSD",
-    "licence_url": "https://commons.wikimedia.org/wiki/Template:BSD",
-    "edit": "Pienennetty, WebP",
-    "checked": "2026-11-03",
-    "width": 1544,
-    "height": 1024
+  "ripple-model-single-slit.webp": {
+    "title": "Computed model picture: single-slit diffraction in a ripple tank",
+    "creator": "Ruukkilabra",
+    "source": "https://ruukkilab.fi/",
+    "licence": "ei lisenssiä: Ruukkilabran oma laskettu kuva",
+    "edit": "Laskettu ohjelmalla lessons/FY5/fy5-11/ripple_model.py (korvaa epäterävän valokuvan, FY5-korjauskierros C5)",
+    "checked": "2026-11-07",
+    "width": 960,
+    "height": 640,
+    "computed": true
   },
-  "ripple-tank-two-sources.webp": {
-    "title": "Two-point interference in a ripple tank",
-    "creator": "Armedblowfish",
-    "source": "https://commons.wikimedia.org/wiki/File:Two-point-interference-ripple-tank.JPG",
-    "licence": "BSD",
-    "licence_url": "https://commons.wikimedia.org/wiki/Template:BSDu",
-    "edit": "Pienennetty, WebP",
-    "checked": "2026-11-03",
-    "width": 1024,
-    "height": 1544
+  "ripple-model-two-sources.webp": {
+    "title": "Computed model picture: two-source interference in a ripple tank",
+    "creator": "Ruukkilabra",
+    "source": "https://ruukkilab.fi/",
+    "licence": "ei lisenssiä: Ruukkilabran oma laskettu kuva",
+    "edit": "Laskettu ohjelmalla lessons/FY5/fy5-11/ripple_model.py (korvaa tumman valokuvan, FY5-korjauskierros C5)",
+    "checked": "2026-11-07",
+    "width": 960,
+    "height": 640,
+    "computed": true
   },
   "guitar-playing.webp": {
     "title": "Close up of an acoustic guitar being played",

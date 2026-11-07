@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 4eeb2b7f6aca79bd
+CONTENT-HASH: 3655283bf03a7662
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: the diff only renames this and neighbouring FY5 chapters (title, meta.json, `luku *...*` references in lesson.md and inquiry.json); every renamed reference names the chapter that holds the cited content, and no formula, number, option, `correct` flag or feedback physics changed. Opening illustration redrawn: its alt text and capture show the situation correctly (no labels or numbers in the lesson's other figures changed). Every choice still has exactly one correct option.
+- light delta review (teacher 2026-11-07), after fixes: HEAD~1 diff: clock 'ei edistä eikä jätätä' (correct terms; constant small amplitude kept by the energy supply because T depends slightly on amplitude): physics unchanged and correct.

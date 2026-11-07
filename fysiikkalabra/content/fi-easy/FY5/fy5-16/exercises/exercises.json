@@ -4,7 +4,7 @@
       "id": "fy5-16-L1-01",
       "level": 1,
       "core": true,
-      "text": "Rakennustyömaalla iskuporakoneen melutaso käyttäjän korvalla on $91\\,\\text{dB}$. Kuinka monta tuntia päivässä hän saa käyttää konetta ilman kuulonsuojaimia? Vertailukohtana on ylempi toiminta-arvo, $8\\,\\text{h}$ tasolla $85\\,\\text{dB}$. Vastaa tunteina.",
+      "text": "Rakennustyömaalla iskuporakoneen melutaso käyttäjän korvalla on $91\\,\\text{dB}$. Hän käyttää konetta ilman kuulonsuojaimia. Kuinka monessa tunnissa hänelle kertyy sama energia-annos kuin ylempää toiminta-arvoa vastaavassa altistuksessa, $8\\,\\text{h}$ tasolla $85\\,\\text{dB}$? Vastaa tunteina.",
       "answer": 2.0,
       "unit": "h",
       "tolerance": 0.02
@@ -116,7 +116,7 @@
       "id": "fy5-16-L2-01",
       "level": 2,
       "core": true,
-      "text": "Tehdashallissa on kaksi samanlaista konetta. Kumpikin tuottaa yksin käydessään työntekijän kohdalle tason $85\\,\\text{dB}$. Kuinka monta tuntia päivässä työntekijä saa olla hallissa ilman kuulonsuojaimia, kun molemmat koneet ovat käynnissä? Vertailukohtana on ylempi toiminta-arvo. Vastaa tunteina.",
+      "text": "Tehdashallissa on kaksi samanlaista konetta. Kumpikin tuottaa yksin käydessään työntekijän kohdalle tason $85\\,\\text{dB}$. Molemmat koneet ovat käynnissä, ja työntekijä on hallissa ilman kuulonsuojaimia. Kuinka monessa tunnissa hänelle kertyy ylempää toiminta-arvoa vastaava päivän energia-annos ($8\\,\\text{h}$ tasolla $85\\,\\text{dB}$)? Vastaa tunteina.",
       "answer": 4.0,
       "unit": "h",
       "tolerance": 0.02
@@ -241,7 +241,7 @@
         "error",
         "reasoning"
       ],
-      "text": "Konepajan työpisteessä melutaso on $109\\,\\text{dB}$. Opiskelija laskee sallitun päivittäisen altistusajan ylemmän toiminta-arvon perusteella ($8\\,\\text{h}$ tasolla $85\\,\\text{dB}$). Hän laskee näin: ”Taso ylittää toiminta-arvon $24\\,\\text{dB}$. Jokainen $3\\,\\text{dB}$ lisää jakaa ajan: $24\\,\\text{dB} : 3\\,\\text{dB} = 8$, joten sallittu aika on $8\\,\\text{h} : 8 = 1{,}0\\,\\text{h}$.”\n\na) Selitä, mikä opiskelijan päättelyssä on väärin.\n\nb) Laske oikea sallittu altistusaika minuutteina.\n\nKirjoita b-kohdan tulos vastauslaatikkoon.",
+      "text": "Konepajan työpisteessä melutaso on $109\\,\\text{dB}$. Opiskelija laskee päivittäisen vertailuajan ylemmän toiminta-arvon perusteella ($8\\,\\text{h}$ tasolla $85\\,\\text{dB}$). Hän laskee näin: ”Taso ylittää toiminta-arvon $24\\,\\text{dB}$. Jokainen $3\\,\\text{dB}$ lisää jakaa ajan: $24\\,\\text{dB} : 3\\,\\text{dB} = 8$, joten vertailuaika on $8\\,\\text{h} : 8 = 1{,}0\\,\\text{h}$.”\n\na) Selitä, mikä opiskelijan päättelyssä on väärin.\n\nb) Laske oikea vertailuaika minuutteina.\n\nKirjoita b-kohdan tulos vastauslaatikkoon.",
       "answer": 1.9,
       "unit": "min",
       "tolerance": 0.02
@@ -298,7 +298,7 @@
         },
         {
           "text": "Etäisyydellä $4{,}0\\,\\text{m}$ taso ei ylitä arvoa $85\\,\\text{dB}$, joten siellä voi työskennellä $8\\,\\text{h}$ turvallisesti.",
-          "feedback": "Epävarmuuden vuoksi todellinen taso voi olla $84$–$86\\,\\text{dB}$. Silloin ylempi toiminta-arvo voi ylittyä. Lisäksi sallitun ajan kaava on arvio, ei takuu kuulon turvallisuudesta."
+          "feedback": "Epävarmuuden vuoksi todellinen taso voi olla $84$–$86\\,\\text{dB}$. Silloin ylempi toiminta-arvo voi ylittyä. Lisäksi ylempi toiminta-arvo ei ole turvallisuusraja. Vaikka annos ei ylittäisi vertailuannosta, kuulo ei ole varmasti turvassa. Jo alempi toiminta-arvo $80\\,\\text{dB}$ ylittyy."
         }
       ]
     }
@@ -373,7 +373,7 @@
         "model",
         "reasoning"
       ],
-      "text": "Ulkofestivaalilla yksi kaiutinpylväs tuottaa tason $112\\,\\text{dB}$ etäisyydellä $2{,}0\\,\\text{m}$. Pidä pylvästä pistemäisenä lähteenä avoimessa tilassa ilman heijastuksia. Taso laskee $6\\,\\text{dB}$ aina, kun etäisyys kaksinkertaistuu. Kuulija seisoo paikallaan etäisyydellä $8{,}0\\,\\text{m}$.\n\nKuulijalla on vaahtomuovitulpat, jotka eivät istu tiiviisti. Niiden vaimennus on käytännössä vain $8\\,\\text{dB}$ kaikilla tasoilla.\n\na) Mikä on melutaso kuulijan paikalla ilman tulppia?\n\nb) Kuinka monta tuntia kuulija saa olla paikallaan tulppien kanssa? Vertailuna on ylempi toiminta-arvo ($8\\,\\text{h}$ tasolla $85\\,\\text{dB}$).\n\nc) Konsertti kestää $3{,}0\\,\\text{h}$. Kuinka monta prosenttia annos on vertailuannoksesta? Riittääkö, että kuulija siirtyy etäisyydelle $16\\,\\text{m}$ ja pitää tulpat siellä edelleen korvissaan? Perustele laskemalla.\n\nKirjoita b-kohdan tulos vastauslaatikkoon.",
+      "text": "Ulkofestivaalilla yksi kaiutinpylväs tuottaa tason $112\\,\\text{dB}$ etäisyydellä $2{,}0\\,\\text{m}$. Pidä pylvästä pistemäisenä lähteenä avoimessa tilassa ilman heijastuksia. Taso laskee $6\\,\\text{dB}$ aina, kun etäisyys kaksinkertaistuu. Kuulija seisoo paikallaan etäisyydellä $8{,}0\\,\\text{m}$.\n\nKuulijalla on vaahtomuovitulpat, jotka eivät istu tiiviisti. Niiden vaimennus on käytännössä vain $8\\,\\text{dB}$ kaikilla tasoilla.\n\na) Mikä on melutaso kuulijan paikalla ilman tulppia?\n\nb) Kuulija on paikallaan tulppien kanssa. Kuinka monessa tunnissa hänelle kertyy ylempää toiminta-arvoa vastaava energia-annos ($8\\,\\text{h}$ tasolla $85\\,\\text{dB}$)?\n\nc) Konsertti kestää $3{,}0\\,\\text{h}$. Kuinka monta prosenttia annos on vertailuannoksesta? Kuulija siirtyy etäisyydelle $16\\,\\text{m}$ ja pitää tulpat siellä edelleen korvissaan. Jääkö annos silloin vertailuannosta pienemmäksi? Perustele laskemalla.\n\nKirjoita b-kohdan tulos vastauslaatikkoon.",
       "answer": 1.6,
       "unit": "h",
       "tolerance": 0.03

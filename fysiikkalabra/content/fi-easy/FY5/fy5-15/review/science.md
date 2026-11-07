@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: fae69bc31f6b2519
+CONTENT-HASH: 05966b3286289439
 
 ## Blocking
-(none)
 
 ## Polish
-- kuulokynnys: the lesson ties it to about 1000 Hz and says it differs between frequencies; the key concept could add "noin 1000 Hz:n taajuudella".
+- lesson.md:271 (Mitä mittari mittaa) — 'mittarin lukemaa käsitellään intensiteettitasona' could say 'painottamatonta lukemaa', since the previous paragraph says ordinary meters show dB(A).
 
 ## Checked
-batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Terms: intensiteetti (power per area), intensiteettitaso relative to the threshold, +10 dB = ×10 intensity, and kuulokynnys agree with the lesson.
+- light delta review (teacher 2026-11-07), after fixes 2: HEAD~1 diff: the decibel section now opens with 'Intensiteetin vaihteluväli on siis hyvin laaja. Siksi …', tying the log scale to the 10¹² range of the previous paragraph; physics unchanged and correct; the old meter-reading Polish item still applies.

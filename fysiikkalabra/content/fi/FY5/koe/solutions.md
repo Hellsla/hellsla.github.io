@@ -7,7 +7,7 @@
 **Perustelu:** Lankku on levossa, joten tukivoimien summa on lankun ja maalarin painojen summa, ja momenttien summa minkä tahansa pisteen suhteen on nolla. Valitaan momenttipisteeksi oikea pukki. Maalari on kaukana siitä, joten hänen painonsa momentti on suuri, ja vasemman pukin tukivoiman on oltava suuri, jotta sen momentti kumoaa sen. Lankun paino jakautuu pukeille tasan, mutta maalarin painosta suurempi osa tulee lähemmälle eli vasemmalle pukille. Vaihtoehto, jossa oikean pukin voima on suurempi, kääntää päättelyn: maalarin pitkä varsi oikean pukin suhteen kasvattaa vasemman pukin voimaa. Tukivoimat olisivat yhtä suuret vain, jos maalari seisoisi keskellä, ja niiden summa on aina painojen summa, missä maalari seisookin.
 
 ### c)
-**Perustelu:** Matkustaja on tasaisessa ympyräliikkeessä, joten hänen kiihtyvyytensä ja häneen vaikuttava kokonaisvoima osoittavat kohti kaarteen keskipistettä eli vasemmalle. Hitautensa vuoksi matkustajan keho pyrkii jatkamaan suoraan, auto kääntyy hänen altaan, ja oikea ovi tulee häntä vasten ja työntää häntä kohti keskipistettä. Painautuminen ovea vasten tuntuu ulospäin vetävältä voimalta, mutta mikään ei vedä matkustajaa ulospäin: keskipakoisvoimaa ei ole. Kokonaisvoima ei ole nolla, koska nopeuden suunta muuttuu, vaikka vauhti pysyy samana, ja kiihtyvyys osoittaa kaarteen sisäpuolelle eikä ulospäin.
+**Perustelu:** Matkustaja on tasaisessa ympyräliikkeessä, joten hänen kiihtyvyytensä ja häneen vaikuttava kokonaisvoima osoittavat kohti kaarteen keskipistettä eli vasemmalle. Hitautensa vuoksi matkustajan keho pyrkii jatkamaan suoraan, auto kääntyy hänen altaan, ja oikea ovi tulee häntä vasten ja työntää häntä kohti keskipistettä. Painautuminen ovea vasten tuntuu ulospäin vetävältä voimalta, mutta mikään ei vedä matkustajaa ulospäin: todellista keskipakoisvoimaa ei ole. Kokonaisvoima ei ole nolla, koska nopeuden suunta muuttuu, vaikka vauhti pysyy samana, ja kiihtyvyys osoittaa kaarteen sisäpuolelle eikä ulospäin.
 
 ### d)
 **Perustelu:** Gravitaatiolain mukaan $F = \gamma\tfrac{m_1 m_2}{r^2}$. Kun suureet ovat SI-yksiköissä ja $r = 1{,}0\,\text{m}$, voima on $F = 6{,}674 \cdot 10^{-11} \cdot 60 \cdot 60\,\text{N}$. Siis $F \approx 2{,}4 \cdot 10^{-7}\,\text{N}$. Luku $2{,}4$ on lähempänä lukua $1$ kuin lukua $10$, joten suuruusluokka on $10^{-7}\,\text{N}$, niin pieni, ettei sitä huomaa. Vaihtoehto $10^{-11}\,\text{N}$ syntyy, jos etäisyys sijoitetaan senttimetreinä ($2{,}4 \cdot 10^{-11}\,\text{N}$), ja $10^{-1}\,\text{N}$, jos massat sijoitetaan grammoina ($0{,}24\,\text{N}$). $10^{3}\,\text{N}$ on opiskelijan paino $60\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \approx 590\,\text{N}$ eli Maan, ei toisen opiskelijan, vetovoima.
@@ -501,43 +501,43 @@ Vaaka-akselilla on langan pituus $l\ (\text{m})$ ja pystyakselilla $T^2\ (\text{
 **Järkevyys:** Tasoero $18\,\text{dB}$ on kuusi $3\,\text{dB}$:n askelta, ja jokainen kaksinkertaistaa intensiteetin: $2^6 = 64$, lähes sama.
 
 ### b)
-**Annettu:** $L = 103\,\text{dB}$, toiminta-arvo $85\,\text{dB}$ ajan $8\,\text{h}$, tulppien oletettu todellinen vaimennus $22\,\text{dB} - 10\,\text{dB} = 12\,\text{dB}$, vuoro $4{,}0\,\text{h}$
-**Kysytty:** sallittu aika ilman suojaimia ja riittävätkö tulpat
-**Periaate:** Tasot ovat A-painotettuja, ja niitä käsitellään intensiteettitasoina. Sallittu aika puolittuu jokaista $3\,\text{dB}$:n nousua kohti, ja puolittuminen pätee jatkuvasti, joten askelten määrä $n$ voi olla myös murtoluku. Lasketaan, montako askelta taso on toiminta-arvon yläpuolella. Tulpat pienentävät korvalle tulevaa tasoa todellisen vaimennuksensa verran.
-**Kaava:** $t_\text{sall} = \dfrac{8\,\text{h}}{2^{\,n}}$, missä $n = \dfrac{L - 85\,\text{dB}}{3\,\text{dB}}$
+**Annettu:** $L = 103\,\text{dB}$, vertailuannos eli ylempi toiminta-arvo $85\,\text{dB}$ ajan $8\,\text{h}$, tulppien oletettu todellinen vaimennus $22\,\text{dB} - 10\,\text{dB} = 12\,\text{dB}$, vuoro $4{,}0\,\text{h}$
+**Kysytty:** vertailuaika ilman suojaimia ja jääkö vuoron annos tulppien kanssa vertailuannoksen alle
+**Periaate:** Tasot ovat A-painotettuja äänenpainetasoja. Tehtävän oletuksin (vapaa äänikenttä, A-painotus ei juuri muuta lukemaa) niitä käsitellään intensiteettitasoina. Vertailuaika on aika, jossa kertyy ylempää toiminta-arvoa vastaava energia-annos. Se puolittuu jokaista $3\,\text{dB}$:n nousua kohti, ja puolittuminen pätee jatkuvasti, joten askelten määrä $n$ voi olla myös murtoluku. Lasketaan, montako askelta taso on toiminta-arvon yläpuolella. Tulpat pienentävät korvalle tulevaa tasoa todellisen vaimennuksensa verran.
+**Kaava:** $t_\text{v} = \dfrac{8\,\text{h}}{2^{\,n}}$, missä $n = \dfrac{L - 85\,\text{dB}}{3\,\text{dB}}$
 **Muunnokset:** $1\,\text{h} = 60\,\text{min}$
-**Sijoitus:** Ilman suojaimia $n = \dfrac{103\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = 6$ ja $t_\text{sall} = \dfrac{8\,\text{h}}{2^6} = 0{,}125\,\text{h} = 7{,}5\,\text{min}$. Tulppien kanssa korvalle tulee $103\,\text{dB} - 12\,\text{dB} = 91\,\text{dB}$, joten $n = 2$ ja $t_\text{sall} = \dfrac{8\,\text{h}}{2^2} = 2{,}0\,\text{h}$.
-**Vastaus:** Ilman kuulonsuojaimia järjestyksenvalvoja saisi olla lavan edessä vain noin $7{,}5\,\text{min}$ päivässä. Tulppien todellisella vaimennuksella sallittu aika on $2{,}0\,\text{h}$, joten tulpat eivät riitä neljän tunnin vuoroon: altistus olisi kaksinkertainen sallittuun verrattuna.
-**Järkevyys:** Valmistajan vaimennuksella $22\,\text{dB}$ korvalle tulisi $81\,\text{dB}$, alle toiminta-arvon, ja tulpat olisivat riittäneet. Ero osoittaa, kuinka paljon suojaimen asettaminen vaikuttaa.
+**Sijoitus:** Ilman suojaimia $n = \dfrac{103\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = 6$ ja $t_\text{v} = \dfrac{8\,\text{h}}{2^6} = 0{,}125\,\text{h} = 7{,}5\,\text{min}$. Tulppien kanssa korvalle tulee $103\,\text{dB} - 12\,\text{dB} = 91\,\text{dB}$, joten $n = 2$ ja $t_\text{v} = \dfrac{8\,\text{h}}{2^2} = 2{,}0\,\text{h}$.
+**Vastaus:** Ilman kuulonsuojaimia vertailuannos kertyisi lavan edessä jo noin $7{,}5\,\text{min}$:ssa. Tulppien todellisella vaimennuksella vertailuaika on $2{,}0\,\text{h}$, joten tulpat eivät riitä neljän tunnin vuoroon: annos olisi kaksinkertainen vertailuannokseen verrattuna.
+**Järkevyys:** Valmistajan vaimennuksella $22\,\text{dB}$ korvalle tulisi $81\,\text{dB}$, alle vertailutason $85\,\text{dB}$, ja annos olisi jäänyt vertailuannoksen alle. Ero osoittaa, kuinka paljon suojaimen asettaminen vaikuttaa.
 
 ### c)
 **Annettu:** $L_1 = 103\,\text{dB}$, kun $r_1 = 10\,\text{m}$; $r_2 = 25\,\text{m}$; tulppien todellinen vaimennus $12\,\text{dB}$
-**Kysytty:** melutaso $L_2$ uudella paikalla ja riittävätkö tulpat
-**Periaate:** Kaiutintorni on pistemäinen lähde, joten intensiteetti on kääntäen verrannollinen etäisyyden neliöön. Tulppien kanssa korvalle tuleva taso verrataan neljän tunnin sallittuun tasoon.
-**Kaava:** $L_2 = L_1 + 10\,\text{dB} \cdot \lg\left(\dfrac{r_1}{r_2}\right)^2$ ja $t_\text{sall} = \dfrac{8\,\text{h}}{2^{\,n}}$
+**Kysytty:** melutaso $L_2$ uudella paikalla ja jääkö annos tulppien kanssa vertailuannoksen alle
+**Periaate:** Kaiutintorni on pistemäinen lähde, joten intensiteetti on kääntäen verrannollinen etäisyyden neliöön. Tulppien kanssa korvalle tuleva taso verrataan neljän tunnin vertailutasoon.
+**Kaava:** $L_2 = L_1 + 10\,\text{dB} \cdot \lg\left(\dfrac{r_1}{r_2}\right)^2$ ja $t_\text{v} = \dfrac{8\,\text{h}}{2^{\,n}}$
 **Muunnokset:** Ei tarvita.
-**Sijoitus:** $L_2 = 103\,\text{dB} + 10\,\text{dB} \cdot \lg\left(\dfrac{10\,\text{m}}{25\,\text{m}}\right)^2 \approx 103\,\text{dB} - 8\,\text{dB} = 95\,\text{dB}$. Tulppien kanssa korvalle tulee $95\,\text{dB} - 12\,\text{dB} = 83\,\text{dB}$, joten $n = \dfrac{83\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} \approx -0{,}67$ ja $t_\text{sall} = \dfrac{8\,\text{h}}{2^{-0{,}67}} \approx 12{,}7\,\text{h}$.
-**Vastaus:** Uudella paikalla melutaso on noin $95\,\text{dB}$. Tulppien kanssa korvalle tulee noin $83\,\text{dB}$, jolla sallittu aika on noin $13\,\text{h}$, joten tulpat riittävät neljän tunnin vuoroon, kun niitä pidetään koko vuoron ajan.
-**Järkevyys:** Neljän tunnin vuoron raja on $85\,\text{dB} + 3\,\text{dB} = 88\,\text{dB}$, ja $83\,\text{dB}$ jää sen alle. Etäisyys kasvaa $2{,}5$-kertaiseksi eli enemmän kuin kerran mutta vähemmän kuin kahdesti kaksinkertaiseksi, joten tason on laskettava $6$–$12\,\text{dB}$: $8\,\text{dB}$ on uskottava.
+**Sijoitus:** $L_2 = 103\,\text{dB} + 10\,\text{dB} \cdot \lg\left(\dfrac{10\,\text{m}}{25\,\text{m}}\right)^2 \approx 103\,\text{dB} - 8\,\text{dB} = 95\,\text{dB}$. Tulppien kanssa korvalle tulee $95\,\text{dB} - 12\,\text{dB} = 83\,\text{dB}$, joten $n = \dfrac{83\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} \approx -0{,}67$ ja $t_\text{v} = \dfrac{8\,\text{h}}{2^{-0{,}67}} \approx 12{,}7\,\text{h}$.
+**Vastaus:** Uudella paikalla melutaso on noin $95\,\text{dB}$. Tulppien kanssa korvalle tulee noin $83\,\text{dB}$, jolla vertailuaika on noin $13\,\text{h}$, joten neljän tunnin vuoron annos jää vertailuannoksen alle, kun tulppia pidetään koko vuoron ajan. Ilman tulppia taso $95\,\text{dB}$ ylittää kummankin toiminta-arvon, joten tulppia on käytettävä koko vuoron ajan. Korvalle tuleva $83\,\text{dB}$ jää raja-arvon $87\,\text{dB(A)}$ alle, mutta vertailuannoksen alittaminen ei takaa kuulon turvallisuutta, joten melua kannattaa vähentää muutenkin.
+**Järkevyys:** Neljän tunnin vuoron vertailutaso on $85\,\text{dB} + 3\,\text{dB} = 88\,\text{dB}$, ja $83\,\text{dB}$ jää sen alle. Etäisyys kasvaa $2{,}5$-kertaiseksi eli enemmän kuin kerran mutta vähemmän kuin kahdesti kaksinkertaiseksi, joten tason on laskettava $6$–$12\,\text{dB}$: $8\,\text{dB}$ on uskottava.
 
 ### d)
-**Annettu:** taso $95\,\text{dB}$ ilman tulppia yhteensä $4 \cdot 15\,\text{min} = 1{,}0\,\text{h}$, $83\,\text{dB}$ tulppien kanssa $3{,}0\,\text{h}$, sallittu aika tasolla $83\,\text{dB}$ $12{,}7\,\text{h}$ (c-kohta)
-**Kysytty:** vuoron melualtistuksen annos prosentteina sallitusta
-**Periaate:** Annos kertyy jaksoista: kunkin jakson osuus sallitusta annoksesta on sen kesto jaettuna sallitulla ajalla samalla tasolla. Osuudet lasketaan yhteen.
-**Kaava:** $D = \dfrac{t_1}{t_\text{sall,1}} + \dfrac{t_2}{t_\text{sall,2}}$, missä $t_\text{sall} = \dfrac{8\,\text{h}}{2^{\,n}}$
+**Annettu:** taso $95\,\text{dB}$ ilman tulppia yhteensä $4 \cdot 15\,\text{min} = 1{,}0\,\text{h}$, $83\,\text{dB}$ tulppien kanssa $3{,}0\,\text{h}$, vertailuaika tasolla $83\,\text{dB}$ $12{,}7\,\text{h}$ (c-kohta)
+**Kysytty:** vuoron melualtistuksen annos prosentteina vertailuannoksesta
+**Periaate:** Annos kertyy jaksoista: kunkin jakson osuus vertailuannoksesta on sen kesto jaettuna vertailuajalla samalla tasolla. Osuudet lasketaan yhteen.
+**Kaava:** $D = \dfrac{t_1}{t_\text{v,1}} + \dfrac{t_2}{t_\text{v,2}}$, missä $t_\text{v} = \dfrac{8\,\text{h}}{2^{\,n}}$
 **Muunnokset:** $1\,\text{h} = 60\,\text{min}$
-**Sijoitus:** Tasolla $95\,\text{dB}$ $n = \dfrac{10\,\text{dB}}{3\,\text{dB}} \approx 3{,}33$ ja $t_\text{sall,1} = \dfrac{8\,\text{h}}{2^{3{,}33}} \approx 0{,}794\,\text{h} \approx 48\,\text{min}$. Annos on $D = \dfrac{1{,}0\,\text{h}}{0{,}794\,\text{h}} + \dfrac{3{,}0\,\text{h}}{12{,}7\,\text{h}} \approx 1{,}26 + 0{,}24 = 1{,}50$.
-**Vastaus:** Vuoron melualtistus on noin $150\,\%$ sallitusta annoksesta, joten se ylittää sallitun. Lähes koko annos kertyy tunnista ilman tulppia.
+**Sijoitus:** Tasolla $95\,\text{dB}$ $n = \dfrac{10\,\text{dB}}{3\,\text{dB}} \approx 3{,}33$ ja $t_\text{v,1} = \dfrac{8\,\text{h}}{2^{3{,}33}} \approx 0{,}794\,\text{h} \approx 48\,\text{min}$. Annos on $D = \dfrac{1{,}0\,\text{h}}{0{,}794\,\text{h}} + \dfrac{3{,}0\,\text{h}}{12{,}7\,\text{h}} \approx 1{,}26 + 0{,}24 = 1{,}50$.
+**Vastaus:** Vuoron melualtistus on noin $150\,\%$ vertailuannoksesta, joten se ylittää vertailuannoksen. Lähes koko annos kertyy tunnista ilman tulppia.
 **Järkevyys:** Jos tulpat olisivat koko ajan korvissa, annos olisi vain $4{,}0\,\text{h} : 12{,}7\,\text{h} \approx 31\,\%$. Ilman tulppia taso on $12\,\text{dB}$ eli neljä $3\,\text{dB}$:n askelta suurempi, joten tunti ilman tulppia vastaa $2^4 = 16$ tuntia tulppien kanssa.
 
 ### e)
 **Annettu:** $L = 103\,\text{dB}$ $10\,\text{m}$:n päässä, kupusuojainten todellinen vaimennus $25\,\text{dB}$, vuoro $4{,}0\,\text{h}$
 **Kysytty:** kupusuojainten antama annos, suositus ja mallin rajoitukset
-**Periaate:** Korvalle tuleva taso on melutaso miinus vaimennus. Annos on vuoron kesto jaettuna sallitulla ajalla tällä tasolla. Suosituksessa verrataan b–e-kohtien tuloksia.
-**Kaava:** $D = \dfrac{t}{t_\text{sall}}$, missä $t_\text{sall} = \dfrac{8\,\text{h}}{2^{\,n}}$ ja $n = \dfrac{L - 25\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}}$
+**Periaate:** Korvalle tuleva taso on melutaso miinus vaimennus. Annos on vuoron kesto jaettuna vertailuajalla tällä tasolla. Suosituksessa verrataan b–e-kohtien tuloksia.
+**Kaava:** $D = \dfrac{t}{t_\text{v}}$, missä $t_\text{v} = \dfrac{8\,\text{h}}{2^{\,n}}$ ja $n = \dfrac{L - 25\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}}$
 **Muunnokset:** Ei tarvita.
-**Sijoitus:** Korvalle tulee $103\,\text{dB} - 25\,\text{dB} = 78\,\text{dB}$, joten $n = \dfrac{78\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} \approx -2{,}33$, $t_\text{sall} = \dfrac{8\,\text{h}}{2^{-2{,}33}} \approx 40\,\text{h}$ ja $D = \dfrac{4{,}0\,\text{h}}{40{,}3\,\text{h}} \approx 0{,}099$.
-**Vastaus:** Kupusuojaimilla annos on noin $10\,\%$ sallitusta. Suosittelen kupusuojaimia, joiden läpi radiopuhelinta voi kuunnella: niitä ei tarvitse ottaa pois, ja d-kohdan mukaan lyhytkin tauko ilman suojaimia moninkertaistaa annoksen. Vartiopaikan siirto kauemmas pienentää annosta lisää, ja tulppia voi käyttää varalla. Arvio on suuntaa antava. Kaiutintorni ei ole pistemäinen lähde, joten taso pienenee etäisyyden kasvaessa hitaammin kuin mallissa, ja yleisön ääni ja heijastukset lisäävät melua. Melutaso vaihtelee kappaleiden mukaan, eikä keskiarvo kerro voimakkaista huipuista. Lisäksi suojainten todellinen vaimennus ja ihmisten kuulon herkkyys vaihtelevat, joten altistus kannattaa pitää selvästi rajan alapuolella.
+**Sijoitus:** Korvalle tulee $103\,\text{dB} - 25\,\text{dB} = 78\,\text{dB}$, joten $n = \dfrac{78\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} \approx -2{,}33$, $t_\text{v} = \dfrac{8\,\text{h}}{2^{-2{,}33}} \approx 40\,\text{h}$ ja $D = \dfrac{4{,}0\,\text{h}}{40{,}3\,\text{h}} \approx 0{,}099$.
+**Vastaus:** Kupusuojaimilla annos on noin $10\,\%$ vertailuannoksesta. Suosittelen kupusuojaimia, joiden läpi radiopuhelinta voi kuunnella: niitä ei tarvitse ottaa pois, ja d-kohdan mukaan lyhytkin tauko ilman suojaimia moninkertaistaa annoksen. Vartiopaikan siirto kauemmas pienentää annosta lisää, ja tulppia voi käyttää varalla. Arvio on suuntaa antava. Kaiutintorni ei ole pistemäinen lähde, joten taso pienenee etäisyyden kasvaessa hitaammin kuin mallissa, ja yleisön ääni ja heijastukset lisäävät melua. Melutaso vaihtelee kappaleiden mukaan, eikä keskiarvo kerro voimakkaista huipuista. Lisäksi suojainten todellinen vaimennus ja ihmisten kuulon herkkyys vaihtelevat, joten vertailuannoksen alittaminen ei takaa kuulon turvallisuutta ja altistus kannattaa pitää selvästi sen alapuolella.
 **Järkevyys:** Kupusuojaimet vaimentavat $13\,\text{dB}$ enemmän kuin tulpat todellisuudessa, eli vähän yli neljä $3\,\text{dB}$:n askelta: annos pienenee noin $2^{4{,}33} \approx 20$-osaan b-kohdan $200\,\%$:sta, noin $10\,\%$:iin.
 
 ### Yleisiä virheitä
@@ -545,9 +545,9 @@ Vaaka-akselilla on langan pituus $l\ (\text{m})$ ja pystyakselilla $T^2\ (\text{
 - Kohdassa b valmistajan vaimennus otetaan sellaisenaan, vaikka tehtävän mukaan todellinen vaimennus on pienempi.
 - Kohdassa c tason oletetaan pienenevän suoraan verrannollisesti etäisyyteen.
 - Kohdassa d tauot jätetään huomiotta, koska ne ovat lyhyitä, tai annokset lasketaan keskiarvona eikä summana.
-- Desibeleistä vähennetään vaimennus kahteen kertaan tai sallittua aikaa kaksinkertaistetaan väärään suuntaan.
+- Desibeleistä vähennetään vaimennus kahteen kertaan tai vertailuaikaa kaksinkertaistetaan väärään suuntaan.
 
 ### Hyväksytään myös
-- Sallittu aika laskettuna kaavalla $t_\text{sall} = 8\,\text{h} \cdot 2^{(85\,\text{dB} - L)/(3\,\text{dB})}$.
-- Kohdassa c perustelu vertaamalla korvalle tulevaa tasoa neljän tunnin rajaan $88\,\text{dB}$.
+- Vertailuaika laskettuna kaavalla $t_\text{v} = 8\,\text{h} \cdot 2^{(85\,\text{dB} - L)/(3\,\text{dB})}$.
+- Kohdassa c perustelu vertaamalla korvalle tulevaa tasoa neljän tunnin vertailutasoon $88\,\text{dB}$.
 - Kohdassa e muu perusteltu suositus, kun se nojaa laskettuihin annoksiin ja nimeää vähintään kaksi mallin rajoitusta.

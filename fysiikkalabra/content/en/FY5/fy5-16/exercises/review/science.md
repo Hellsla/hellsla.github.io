@@ -1,20 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 9e5206ef58e39b4a
-Mode: full (translation review against the reviewed Finnish set; new task fy5-16-L2-08)
-Round 1
+CONTENT-HASH: 5575f15b7bd4bcfd
 
 ## Blocking
-(none)
-
-## Fixed
-- None needed; new task fy5-16-L2-08 was already faithful to content/fi.
 
 ## Polish
-(none)
+- solutions.md:103 (L3-01) — Formula still reads "dose $= (\ldots) \cdot 100\,\%$" without the symbol, while Substitution now gives $D$ as a pure ratio and L3-05 (line 204) defines $D = \sum t_i/t_{\text{ref},i}$; write the Formula as "dose $D = \dfrac{t_1}{t_{\text{ref},1}} + \dfrac{t_2}{t_{\text{ref},2}}$ ($D = 1$ means $100\,\%$)" so formula and substitution match.
 
 ## Checked
-- fy5-16-L2-08 (noise level vs distance with uncertainty): id, level, kind, answer, unit, tolerance, correct flags, choices order, data rows and every number in text, choices, feedback and solution identical to content/fi.
-- Recomputed independently: drops 6, 6, 5 dB vs 10 lg 4 = 6.0 dB, difference uncertainty 2 dB; 85 dB +-1 dB action value; all agree with the solution and with the correct choice.
-- Distractor feedback keeps the Finnish physics (each wrong option's error named correctly).
-- Wording is natural textbook English; decimal point in JSON and LaTeX; no Finnish left.
-- check_i18n.py shows nothing for fy5-16; build.py fy5-16 succeeds.
+light delta review (teacher 2026-11-07), L3-01 chain: HEAD~1 diff of solutions.md only. Recomputed t_ref,1 = 8 h/2¹ = 4.0 h, t_ref,2 = 8 h/2⁻¹ = 16 h, D = 1 + 0.25 = 1.25; 1.25 = 125 % is exact (% = 1/100). D as a dimensionless ratio (h/h) agrees with L3-05's D = Σ t_i/t_ref,i; answer 125 % and Reasonableness unchanged and right. Only the Formula line keeps the old ·100 % form (Polish).

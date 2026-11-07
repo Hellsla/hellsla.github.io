@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 751af08c90959771
+CONTENT-HASH: be1ccffb88eff6c2
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] lesson.md "Nopeus riippuu väliaineesta, taajuus lähteestä" — paragraph is 27 lines at 390 px after the dispersion addition — start a new paragraph at "Tämä ei ole kaikkien aaltojen yleinen laki".
 
 ## Checked
-- batch delta review: "Mekaaninen aaltoliike" definition; built page and scripts/screenshot.py fy5-10 (captures current), changed passages opened at 390 px (k-390-0): clean wrapping, KaTeX renders, no inline formula wraps, no clipping, no horizontal scroll. Diff read; the rest of the lesson unchanged.
+- light delta review (teacher 2026-11-07): the "Aalto on etenevä häiriö" and "Nopeus riippuu väliaineesta" paragraphs, the summary bullet and the exit-ticket answer at 390 px; the inquiry model text in source. Units on one line, no wraps, scrollWidth 390.

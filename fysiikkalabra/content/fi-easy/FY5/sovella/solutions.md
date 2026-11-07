@@ -3,7 +3,7 @@
 ### a)
 **Annettu:** kuorma $m = 2{,}0\,\text{t} = 2000\,\text{kg}$, puomi $m_\text{p} = 4{,}0\,\text{t}$ ja $r_\text{p} = 12\,\text{m}$, vastapaino $m_\text{v} = 9{,}0\,\text{t}$ ja $r_\text{v} = 10\,\text{m}$
 **Kysytty:** vaunun etäisyys $r$ tornin akselista, kun painojen kokonaismomentti on nolla
-**Periaate:** Puomiin vaikuttaa kolme painoa. Ne ovat kuorman paino vaunun kohdalla (vaijerin kautta), puomin oma paino sen painopisteessä ja vastapainon paino. Kiertoakseliksi valitaan tornin akseli, koska puomi pyrkii kallistumaan sen ympäri. Voiman varsi on matka akselilta voiman vaikutussuoralle. Tässä se on sama kuin vaakasuora etäisyys akselista. Kuorma ja puomin paino kiertävät puomia kuorman puolelle. Vastapaino kiertää puomia vastakkaiseen suuntaan. Tasapainossa momenttien summa on nolla.
+**Periaate:** Puomiin vaikuttaa kolme painoa. Ne ovat kuorman paino vaunun kohdalla (vaijerin kautta), puomin oma paino sen painopisteessä ja vastapainon paino. Puomi kääntyy tornin pystysuoran akselin ympäri. Pystysuorat painot ovat kuitenkin tämän akselin suuntaisia, eivätkä ne kierrä puomia sen ympäri. Painot pyrkivät kallistamaan puomia sen pystytasossa. Siksi momentit lasketaan vaakasuoran momenttiakselin A suhteen. Akseli A kulkee tornin kohdalla, ja se on kohtisuorassa tätä tasoa vastaan. Voiman varsi on matka akselilta A voiman vaikutussuoralle. Painot ovat pystysuoria ja akseli on vaakasuora. Siksi varsi on painon vaakasuora etäisyys tornin akselista. Kuorma ja puomin paino kiertävät puomia kuorman puolelle. Vastapaino kiertää puomia vastakkaiseen suuntaan. Tasapainossa momenttien summa on nolla.
 **Kaava:** $m_\text{p} g r_\text{p} + m g r - m_\text{v} g r_\text{v} = 0$. Putoamiskiihtyvyys supistuu, joten $r = \dfrac{m_\text{v} r_\text{v} - m_\text{p} r_\text{p}}{m}$.
 **Muunnokset:** $1\,\text{t} = 1000\,\text{kg}$, joten $m_\text{p} = 4000\,\text{kg}$ ja $m_\text{v} = 9000\,\text{kg}$.
 **Sijoitus:** $r = \dfrac{9000\,\text{kg} \cdot 10\,\text{m} - 4000\,\text{kg} \cdot 12\,\text{m}}{2000\,\text{kg}} = \dfrac{42\,000\,\text{kg}\cdot\text{m}}{2000\,\text{kg}} = 21\,\text{m}$
@@ -13,7 +13,7 @@
 ### b)
 **Annettu:** a-kohdan tiedot, vaunu puomin kärjessä $r_\text{max} = 40\,\text{m}$, sallittu kokonaismomentti $M_\text{max} = 600\,\text{kNm}$ ja $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** suurin kuorma $m$ puomin kärjessä
-**Periaate:** Kun kuorma on kärjessä, kokonaismomentti osoittaa kuorman puolelle. Suurimmalla sallitulla kuormalla se on yhtä suuri kuin raja. Momentit lasketaan tornin akselin suhteen kuten a-kohdassa. Positiivinen kiertosuunta on kuorman puolelle.
+**Periaate:** Kun kuorma on kärjessä, kokonaismomentti osoittaa kuorman puolelle. Suurimmalla sallitulla kuormalla se on yhtä suuri kuin raja. Momentit lasketaan momenttiakselin A suhteen kuten a-kohdassa. Positiivinen kiertosuunta on kuorman puolelle.
 **Kaava:** $m g r_\text{max} + m_\text{p} g r_\text{p} - m_\text{v} g r_\text{v} = M_\text{max}$, josta $m = \dfrac{M_\text{max} + m_\text{v} g r_\text{v} - m_\text{p} g r_\text{p}}{g r_\text{max}}$
 **Muunnokset:** $M_\text{max} = 600\,\text{kNm} = 600\,000\,\text{Nm}$
 **Sijoitus:** $m_\text{p} g r_\text{p} = 4000\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 12\,\text{m} = 470\,880\,\text{Nm}$ ja $m_\text{v} g r_\text{v} = 9000\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 10\,\text{m} = 882\,900\,\text{Nm}$. Kuorman momentti saa siis olla $600\,000\,\text{Nm} + 882\,900\,\text{Nm} - 470\,880\,\text{Nm} = 1\,012\,020\,\text{Nm}$. Siitä saadaan $m = \dfrac{1\,012\,020\,\text{Nm}}{9{,}81\,\text{m/s}^2 \cdot 40\,\text{m}} = 2579\,\text{kg}$
@@ -29,7 +29,7 @@
 
 *Kuinka paljon voisi lisätä.* Tyhjällä nosturilla rajaan on varaa $600\,\text{kNm} - 412\,\text{kNm} = 188\,\text{kNm}$. Vastapainoa voi siis lisätä enintään $188\,000\,\text{Nm} : (9{,}81\,\text{m/s}^2 \cdot 10\,\text{m}) \approx 1{,}9\,\text{t}$. Silloin kärjen suurin kuorma olisi $1200\,\text{kNm} : 392{,}4\,\text{m}^2/\text{s}^2 \approx 3{,}1\,\text{t}$.
 
-*Johtopäätös.* Ehdotus ei käy sellaisenaan. Vastapaino mitoitetaan niin, että raja ei ylity tyhjällä eikä täysin kuormatulla nosturilla. Kahden tonnin sijaan vastapainoa voisi lisätä enintään noin $1{,}9\,\text{t}$. Nostokykyä ei voi kasvattaa siitä enempää ilman tukevampaa tornia.
+*Johtopäätös.* Ehdotus ei käy sellaisenaan. Tehtävän mallissa vastapaino mitoitetaan niin, että raja ei ylity tyhjällä eikä täysin kuormatulla nosturilla. Kahden tonnin sijaan vastapainoa voisi lisätä enintään noin $1{,}9\,\text{t}$. Nostokykyä ei voi kasvattaa siitä enempää ilman tukevampaa tornia. Oikeassa nosturissa yksi momenttiehto ei riitä. Vastapainoa saa muuttaa vain valmistajan ohjeiden mukaan, koska turvallisuus riippuu myös esimerkiksi tuulesta, rakenteiden lujuudesta ja perustuksesta.
 
 ### d)
 **Kysytty:** kuorman voimakuvio puomin kääntyessä tasaisesti ja arvio kuljettajan selityksestä
@@ -75,7 +75,7 @@
 
 Pystysuunnassa kuorma ei kiihdy. Jännitysvoiman pystykomponentti on siis yhtä suuri kuin paino, ja jännitysvoima on painoa hieman suurempi. Jännitysvoiman vaakakomponentti on voimien summa. Se osoittaa kohti tornin akselia, kuten normaalikiihtyvyys $\overline{a}_\text{n}$. Kiihtyvyys piirretään erikseen omalla värillään. Mallikuvassa vaijerin kulma on piirretty paljon suuremmaksi kuin tehtävässä, jotta nuolet erottuvat.
 
-*Kuljettajan selitys.* Keskipakoisvoimaa ei ole. Mikään kappale ei vedä kuormaa ulospäin, eikä voimakuviossa ole ulospäin osoittavaa voimaa. Kun puomi lähtee kääntymään, kuorma pyrkii hitautensa vuoksi jatkamaan suoraan eteenpäin. Siksi se jää ympyrän ulkoreunalle ja vaijeri kallistuu. Kallistus kasvaa, kunnes jännitysvoiman vaakakomponentti riittää kääntämään kuorman ympyräradalle. Kuorma ei siis heitty ulospäin. Se jää jälkeen suoraviivaisesta radastaan vain sen verran, että vaijeri voi vetää sitä kohti keskipistettä.
+*Kuljettajan selitys.* Todellista keskipakoisvoimaa ei ole. Mikään kappale ei vedä kuormaa ulospäin, eikä voimakuviossa ole ulospäin osoittavaa voimaa. Kun puomi lähtee kääntymään, kuorma pyrkii hitautensa vuoksi jatkamaan suoraan eteenpäin. Siksi se jää ympyrän ulkoreunalle ja vaijeri kallistuu. Kallistus kasvaa, kunnes jännitysvoiman vaakakomponentti riittää kääntämään kuorman ympyräradalle. Kuorma ei siis heitty ulospäin. Se jää jälkeen suoraviivaisesta radastaan vain sen verran, että vaijeri voi vetää sitä kohti keskipistettä.
 
 ### e)
 **Annettu:** a-kohdan säde $r = 21\,\text{m}$, kierrosaika $T = 90\,\text{s}$, vaijerin pituus $15\,\text{m}$ ja $g = 9{,}81\,\text{m/s}^2$
@@ -93,6 +93,7 @@ Pystysuunnassa kuorma ei kiihdy. Jännitysvoiman pystykomponentti on siis yhtä 
 - e-kohdassa kulman saa myös piirtämällä voimat mittakaavaan, kun normaalikiihtyvyys on laskettu oikein. Vastaukseksi hyväksytään $0{,}6^\circ$.
 
 ### Yleisiä virheitä
+- Momentit lasketaan tornin pystysuoran kääntöakselin suhteen. Pystysuorat painot eivät kuitenkaan kierrä puomia sen ympäri. Painojen momentit lasketaan vaakasuoran momenttiakselin A suhteen.
 - Puomin oma paino unohdetaan, tai sen momentti lasketaan puomin päästä eikä painopisteestä.
 - Momenttien kiertosuunnat sekoitetaan, jolloin vastapaino ja puomin paino lasketaan samaan suuntaan.
 - b-kohdassa raja tulkitaan niin, että kokonaismomentin pitää olla nolla. Silloin kärjen kuormaksi saadaan vain $42\,000\,\text{kg}\cdot\text{m} : 40\,\text{m} \approx 1{,}1\,\text{t}$.
@@ -193,7 +194,7 @@ Vaaka-akselille valitaan $\tfrac{1}{r}$ ja pystyakselille $v^2$.
 ### c)
 **Annettu:** Jupiterin pyörähdysaika $T = 9{,}93\,\text{h}$ ja b-kohdan $\gamma M = 1{,}27 \cdot 10^{17}\,\text{m}^3/\text{s}^2$
 **Kysytty:** luotaimen radan säde $r$
-**Periaate:** Luotain pysyy saman pilvimuodostelman yläpuolella vain, jos se kiertää Jupiteria samaan suuntaan ja samassa ajassa kuin Jupiter pyörähtää akselinsa ympäri. Luotaimen ympyräliikkeen keskeisvoima on Jupiterin gravitaatio, kuten kuilla. Siksi $v^2 = \dfrac{\gamma M}{r}$, ja ratanopeus on $v = \dfrac{2\pi r}{T}$.
+**Periaate:** Luotain pysyy saman pilvimuodostelman yläpuolella vain, jos se kiertää Jupiteria samaan suuntaan ja samassa ajassa kuin pilvimuodostelma. Tehtävässä oletetaan, että pilvimuodostelma kiertää Jupiterin pyörähdysajassa $9{,}93\,\text{h}$. Rata on siis Jupiterin pyörimiseen synkronoitu päiväntasaajan ympyrärata. Luotaimen ympyräliikkeen keskeisvoima on Jupiterin gravitaatio, kuten kuilla. Siksi $v^2 = \dfrac{\gamma M}{r}$, ja ratanopeus on $v = \dfrac{2\pi r}{T}$.
 **Kaava:** $\dfrac{4\pi^2 r^2}{T^2} = \dfrac{\gamma M}{r}$, josta $r^3 = \dfrac{\gamma M T^2}{4\pi^2}$ ja $r = \sqrt[3]{\dfrac{\gamma M T^2}{4\pi^2}}$
 **Muunnokset:** $T = 9{,}93 \cdot 3600\,\text{s} = 35\,748\,\text{s}$
 **Sijoitus:** $r^3 = \dfrac{1{,}27 \cdot 10^{17}\,\text{m}^3/\text{s}^2 \cdot (35\,748\,\text{s})^2}{4\pi^2} = 4{,}11 \cdot 10^{24}\,\text{m}^3$, joten $r = 1{,}60 \cdot 10^{8}\,\text{m}$
@@ -324,19 +325,20 @@ Vaaka-akselille valitaan $\tfrac{1}{r}$ ja pystyakselille $v^2$.
 *Johtopäätös.* Ristiriitaa ei ole. Jousivakio on luotettava, koska se saadaan kulmakertoimesta, johon jousen massa ei vaikuta. Jos suora olisi pakotettu origon kautta, jousivakioksi olisi saatu liian pieni arvo, noin $18{,}9\,\text{N/m}$.
 
 ### d)
-**Annettu:** $m = 0{,}250\,\text{kg}$, amplitudi $A = 5{,}0\,\text{cm}$ ja b-kohdan $k = 19{,}9\,\text{N/m}$
+**Annettu:** $m = 0{,}250\,\text{kg}$, jousen massa $m_\text{j} = 45\,\text{g}$, amplitudi $A = 5{,}0\,\text{cm}$ ja b-kohdan $k = 19{,}9\,\text{N/m}$
 **Kysytty:** punnuksen suurin nopeus $v_\text{max}$
-**Periaate:** Värähtelyn energia säilyy, kun kitka ja ilmanvastus ovat pieniä. Ääriasennossa punnus on hetken levossa. Silloin koko energia $\tfrac{1}{2}kA^2$ on potentiaalienergiaa. Tasapainoasemassa poikkeama on nolla, joten koko energia on liike-energiaa ja nopeus on suurimmillaan. Pystysuorassa jousessa paino vain siirtää tasapainoasemaa. Siksi poikkeama mitataan tasapainoasemasta.
-**Kaava:** $\tfrac{1}{2}mv_\text{max}^2 = \tfrac{1}{2}kA^2$, josta $v_\text{max} = A\sqrt{\dfrac{k}{m}}$
-**Muunnokset:** $A = 5{,}0\,\text{cm} = 0{,}050\,\text{m}$
-**Sijoitus:** $v_\text{max} = 0{,}050\,\text{m} \cdot \sqrt{\dfrac{19{,}9\,\text{N/m}}{0{,}250\,\text{kg}}} = 0{,}050\,\text{m} \cdot 8{,}92\,\tfrac{1}{\text{s}} = 0{,}446\,\text{m/s}$
-**Vastaus:** $v_\text{max} \approx 0{,}45\,\text{m/s}$. Vastauksessa on kaksi merkitsevää numeroa, kuten amplitudissa $5{,}0\,\text{cm}$.
-**Järkevyys:** Jaksonaika on noin $0{,}73\,\text{s}$, ja punnus kulkee jakson aikana $4A = 20\,\text{cm}$. Sen keskimääräinen vauhti on siis noin $0{,}28\,\text{m/s}$. Suurin nopeus on tätä suurempi, kuten pitää. Jousen oma massa pienentää todellista suurinta nopeutta hieman, koska sama energia jakautuu myös jouselle.
+**Periaate:** Värähtelyn energia säilyy, kun kitka ja ilmanvastus ovat pieniä. Ääriasennossa punnus on hetken levossa. Silloin koko energia $\tfrac{1}{2}kA^2$ on potentiaalienergiaa. Tasapainoasemassa poikkeama on nolla, joten koko energia on liike-energiaa ja nopeus on suurimmillaan. Pystysuorassa jousessa paino vain siirtää tasapainoasemaa. Siksi poikkeama mitataan tasapainoasemasta. Tehtävän mallissa jousen oma massa otetaan huomioon samoin kuin c-kohdassa. Jousen alaosa liikkuu punnuksen mukana. Siksi liike-energiaan lasketaan punnuksen lisäksi kolmasosa jousen massasta.
+**Kaava:** $\tfrac{1}{2}m_\text{eff}v_\text{max}^2 = \tfrac{1}{2}kA^2$, missä $m_\text{eff} = m + \tfrac{1}{3}m_\text{j}$, josta $v_\text{max} = A\sqrt{\dfrac{k}{m_\text{eff}}}$
+**Muunnokset:** $A = 5{,}0\,\text{cm} = 0{,}050\,\text{m}$ ja $m_\text{j} = 45\,\text{g} = 0{,}045\,\text{kg}$
+**Sijoitus:** $m_\text{eff} = 0{,}250\,\text{kg} + 0{,}045\,\text{kg} : 3 = 0{,}265\,\text{kg}$ ja $v_\text{max} = 0{,}050\,\text{m} \cdot \sqrt{\dfrac{19{,}9\,\text{N/m}}{0{,}265\,\text{kg}}} = 0{,}050\,\text{m} \cdot 8{,}67\,\tfrac{1}{\text{s}} = 0{,}433\,\text{m/s}$
+**Vastaus:** $v_\text{max} \approx 0{,}43\,\text{m/s}$. Vastauksessa on kaksi merkitsevää numeroa, kuten amplitudissa $5{,}0\,\text{cm}$.
+**Järkevyys:** Jaksonaika on noin $2\pi\sqrt{0{,}265\,\text{kg} : 19{,}9\,\text{N/m}} \approx 0{,}73\,\text{s}$, ja punnus kulkee jakson aikana $4A = 20\,\text{cm}$. Sen keskimääräinen vauhti on siis noin $0{,}28\,\text{m/s}$. Suurin nopeus on tätä suurempi, kuten pitää. Massattoman jousen mallilla saataisiin hieman suurempi nopeus, noin $0{,}45\,\text{m/s}$. Silloin energiaa ei jakaudu lainkaan jouselle.
 
 ### Hyväksytään myös
 - b-kohdassa kulmakertoimet $1{,}95\text{–}2{,}02\,\text{s}^2/\text{kg}$ ja niistä lasketut jousivakiot $19{,}5\text{–}20{,}2\,\text{N/m}$ hyväksytään. Myös laskimen tai taulukkolaskennan suoran sovitus ($19{,}9\,\text{N/m}$) hyväksytään.
 - a-kohdan kuvaajan voi piirtää myös suureista $m$ ja $T^2$ niin, että massa on gramma-asteikolla. Silloin b-kohdassa yksikkö pitää muuttaa.
 - c-kohdassa poikkeaman voi selittää myös systemaattisella virheellä. Selityksen pitää olla perusteltu, ja siinä pitää todeta, että vakiosuuruinen lisäys ei muuta kulmakerrointa.
+- d-kohdassa massattoman jousen mallilla laskettu $v_\text{max} \approx 0{,}45\,\text{m/s}$ saa kaksi pistettä: energiaperiaatteen pisteen (ensimmäinen kriteeri ilman tehollista massaa) ja yhtälön pisteen (massana $m$). Tuloksen piste edellyttää tehtävän mukaista mallia. Opiskelijan pitää kertoa, että hän jättää jousen massan huomiotta, ja perustella oletus. Myös c-kohdan leikkauskohdasta saatu lisämassa $14\,\text{g}$ hyväksytään. Sillä tulos on sama $0{,}43\,\text{m/s}$.
 
 ### Yleisiä virheitä
 - Kuvaajaksi piirretään $(m, T)$-kuvaaja, ja sen kaarevaan pisteistöön sovitetaan suora.
@@ -379,13 +381,13 @@ Vaaka-akselille valitaan $\tfrac{1}{r}$ ja pystyakselille $v^2$.
 **Järkevyys:** Äänen nopeus pienenee noin $2\,\%$, joten taajuuskin pienenee noin $2\,\%$. Luvusta $250\,\text{Hz}$ $2\,\%$ on $5\,\text{Hz}$. Puolisävelaskel on tällä korkeudella noin $15\,\text{Hz}$. Urut soivat talvella siis noin kolmanneksen puolisävelaskelta matalammalta. Siksi urut viritetään lämpötilassa, jossa niitä tavallisesti soitetaan.
 
 ### d)
-**Annettu:** intensiteettitaso $L_1 = 88\,\text{dB}$ etäisyydellä $r_1 = 4{,}0\,\text{m}$, urkurin etäisyys $r_2 = 2{,}0\,\text{m}$, harjoitusaika $3\,\text{h}$; ylempi toiminta-arvo $L_0 = 85\,\text{dB}$ ja sitä vastaava aika $t_0 = 8\,\text{h}$
-**Kysytty:** urkurin sallittu päivittäinen altistusaika $t_\text{sall}$ ja riittääkö se
-**Periaate:** Kun lähde säteilee tasaisesti joka suuntaan, sama teho jakautuu pallon pinnalle $4\pi r^2$. Intensiteetti on silloin $I = \dfrac{P}{4\pi r^2}$. Kun etäisyys puolittuu, intensiteetti nelinkertaistuu. Intensiteettitason muutos saadaan intensiteettien suhteesta. Sallittu altistusaika puolittuu jokaista $3\,\text{dB}$:n nousua kohti.
-**Kaava:** $L_2 - L_1 = 10\,\text{dB} \cdot \lg \dfrac{I_2}{I_1}$, missä $\dfrac{I_2}{I_1} = \left(\dfrac{r_1}{r_2}\right)^2$; $n = \dfrac{L_2 - L_0}{3\,\text{dB}}$ ja $t_\text{sall} = \dfrac{t_0}{2^{\,n}}$
+**Annettu:** äänitaso $L_1 = 88\,\text{dB}$, jota käsitellään vapaassa äänikentässä intensiteettitasona, etäisyydellä $r_1 = 4{,}0\,\text{m}$, urkurin etäisyys $r_2 = 2{,}0\,\text{m}$, harjoitusaika $3\,\text{h}$; ylempi toiminta-arvo $L_0 = 85\,\text{dB}$ ja sitä vastaava aika $t_0 = 8\,\text{h}$
+**Kysytty:** urkurin päivittäinen vertailuaika $t_\text{v}$ eli aika, jossa kertyy ylempää toiminta-arvoa vastaava energia-annos, ja jääkö harjoituksen annos sitä pienemmäksi
+**Periaate:** Kun lähde säteilee tasaisesti joka suuntaan, sama teho jakautuu pallon pinnalle $4\pi r^2$. Intensiteetti on silloin $I = \dfrac{P}{4\pi r^2}$. Kun etäisyys puolittuu, intensiteetti nelinkertaistuu. Intensiteettitason muutos saadaan intensiteettien suhteesta. Vertailuaika on aika, jossa sama energia-annos kertyy. Se puolittuu jokaista $3\,\text{dB}$:n nousua kohti.
+**Kaava:** $L_2 - L_1 = 10\,\text{dB} \cdot \lg \dfrac{I_2}{I_1}$, missä $\dfrac{I_2}{I_1} = \left(\dfrac{r_1}{r_2}\right)^2$; $n = \dfrac{L_2 - L_0}{3\,\text{dB}}$ ja $t_\text{v} = \dfrac{t_0}{2^{\,n}}$
 **Muunnokset:** Ei tarvita.
-**Sijoitus:** $\dfrac{I_2}{I_1} = \left(\dfrac{4{,}0\,\text{m}}{2{,}0\,\text{m}}\right)^2 = 4$, joten $L_2 = 88\,\text{dB} + 10\,\text{dB} \cdot \lg 4 = 88\,\text{dB} + 6{,}0\,\text{dB} = 94\,\text{dB}$. $n = \dfrac{94\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = 3{,}0$ ja $t_\text{sall} = \dfrac{8\,\text{h}}{2^{3}} = 1{,}0\,\text{h}$
-**Vastaus:** $t_\text{sall} \approx 1\,\text{h}$. Aika ei riitä. Kolmen tunnin harjoitus on noin kolminkertainen sallittuun aikaan nähden. Urkurin kannattaa käyttää kuulonsuojaimia tai harjoitella hiljaisemmilla äänikerroilla.
+**Sijoitus:** $\dfrac{I_2}{I_1} = \left(\dfrac{4{,}0\,\text{m}}{2{,}0\,\text{m}}\right)^2 = 4$, joten $L_2 = 88\,\text{dB} + 10\,\text{dB} \cdot \lg 4 = 88\,\text{dB} + 6{,}0\,\text{dB} = 94\,\text{dB}$. $n = \dfrac{94\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = 3{,}0$ ja $t_\text{v} = \dfrac{8\,\text{h}}{2^{3}} = 1{,}0\,\text{h}$
+**Vastaus:** $t_\text{v} \approx 1\,\text{h}$. Annos ei jää vertailuannosta pienemmäksi. Kolmen tunnin harjoitus on noin kolminkertainen vertailuaikaan nähden, joten annos on noin $300\,\%$ vertailuannoksesta. Urkurin kannattaa käyttää kuulonsuojaimia tai harjoitella hiljaisemmilla äänikerroilla.
 **Järkevyys:** Taso $94\,\text{dB}$ on samaa luokkaa kuin ruohonleikkurin melu käyttäjän korvalla. Silloin suositellaan kuulonsuojaimia. Pistelähdemallissa urkujen ääniteho olisi $P = I \cdot 4\pi r^2 \approx 0{,}13\,\text{W}$, mikä on soittimelle uskottava.
 
 ### e)
@@ -397,7 +399,7 @@ Vaaka-akselille valitaan $\tfrac{1}{r}$ ja pystyakselille $v^2$.
 
 *Soittaminen.* Harjoituksessa urut soivat harvoin koko ajan täysillä, joten keskimääräinen taso on pienempi. Toisaalta pillien ja soittopöydän sijainti voi joissain kirkoissa ohjata ääntä suoraan urkuria kohti.
 
-*Luotettava selvitys.* Melumittarilla mitataan A-painotettu taso urkurin korvan kohdalta koko tavallisen harjoituksen ajalta. Tason keskiarvoa verrataan toiminta-arvoon $85\,\text{dB}$. Altistus on todennäköisesti pienempi kuin d-kohdan arvio. Vain mittaus kuitenkin kertoo, tarvitaanko kuulonsuojaimia.
+*Luotettava selvitys.* Melumittarilla mitataan A-painotettu taso urkurin korvan kohdalta koko tavallisen harjoituksen ajalta. Mittauksesta lasketaan päivän melualtistus, ja sitä verrataan toiminta-arvoihin $80\,\text{dB}$ ja $85\,\text{dB}$. Altistus on todennäköisesti pienempi kuin d-kohdan arvio. Vain mittaus kuitenkin kertoo, tarvitaanko kuulonsuojaimia. Vaikka toiminta-arvo ei ylittyisi, kuulo ei ole varmasti turvassa. Siksi kuulonsuojaimia kannattaa käyttää kovissa harjoituksissa.
 
 ### Hyväksytään myös
 - a-kohdassa jaksonajan voi lukea myös kahden tai kolmen jakson kestosta. Vastaukset $240\text{–}260\,\text{Hz}$ hyväksytään.
@@ -409,4 +411,4 @@ Vaaka-akselille valitaan $\tfrac{1}{r}$ ja pystyakselille $v^2$.
 - b-kohdassa käytetään yhdestä päästä suljetun putken ehtoa $L = \tfrac{\lambda}{4}$, vaikka pilli on molemmista päistä avoin.
 - c-kohdassa oletetaan, että aallonpituus muuttuu ja taajuus pysyy samana. Toinen virhe on laskea taajuuden muutos samaksi kuin nopeuden muutos.
 - d-kohdassa oletetaan tason kaksinkertaistuvan, kun etäisyys puolittuu. Toinen virhe on olettaa, että intensiteetti riippuu etäisyydestä eikä sen neliöstä.
-- Sallittu aika lasketaan jakamalla $8\,\text{h}$ tasojen erotuksella. Oikein olisi puolittaa aika jokaista $3\,\text{dB}$:n askelta kohti.
+- Vertailuaika lasketaan jakamalla $8\,\text{h}$ tasojen erotuksella. Oikein olisi puolittaa aika jokaista $3\,\text{dB}$:n askelta kohti.

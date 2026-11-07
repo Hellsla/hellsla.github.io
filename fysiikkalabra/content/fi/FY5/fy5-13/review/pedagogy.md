@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: d4a87ce48229af48
+CONTENT-HASH: 0dc75d7c4482d80e
 
 ## Blocking
+(none)
 
 ## Polish
+(none)
 
 ## Checked
-- delta review: the Find-the-error task is unchanged in content and difficulty; splitting the display formula over two rows (symbolic step, then substitution and result) makes the student's wrong calculation easier to read and keeps the error to be found in the same place.
-- Options, feedback and optional status unchanged; the sequence of the inquiry is unaffected.
+light delta review (teacher 2026-11-07), after fixes: ideal-reflection assumption kept short before the sum; the weaker-reflection remark now comes after the solmu/kupu definitions ("solmutkin värähtelevät hiukan"), so no clash with "pysyvät koko ajan paikallaan".

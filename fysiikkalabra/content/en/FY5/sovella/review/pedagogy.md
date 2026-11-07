@@ -1,24 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 2c7cc76823c0c1d0
+CONTENT-HASH: 53bb3f7e9c3e009e
 
 ## Blocking
-(none left)
-
-## Fixed
-- fy5-s4 e (tasks.json criterion, solutions.md): "in practice the organ is seldom played…" read as "in reality". It is now "during practice".
-- fy5-s3 c (solutions.md): "Out of the time of ten periods it is only 0.02 s in the period" is now "Spread over ten periods, it is only 0.02 s in the period".
+(none)
 
 ## Polish
-- The page-wide strings "Draft: this lesson has not been reviewed yet" are shared lang strings (lang/en.json), so they are not in this unit. They call the Sovella page a "lesson".
+- tasks.json:9 (fy5-s1) — two paragraphs (axis A, and the idealised-model disclaimer) stand between the data and part a; shorten the axis text to one sentence and move the load-chart disclaimer into the source note.
+- tasks.json:389 (fy5-s3 d) — "the added mass that the graph of part c gives": the graph is drawn in part a, and d names the cause c asks for; e.g. "Take into account your conclusion from part c."
 
 ## Checked
-- No task text names the model or formula, same as the Finnish:
-  - s2 a asks for a graph that is a straight line through the origin but does not say $v^2$ against $1/r$.
-  - s3 a does not name $T^2$.
-  - s4 a does not warn about the double peak.
-- The situations read naturally in English: the site foreman, the crane operator, the student's claim about Ganymede, the organ builder and the organist.
-- Every part, criterion and model-answer step of the Finnish is present. Find / Principle / Formula / Conversions / Substitution / Answer / Reasonableness are in English, and the section headings render as "Also accepted" and "Common mistakes".
-- Accepted alternatives and common mistakes are complete: 3+3+3+3 accepted, 6+5+5+5 mistakes.
-- Rubric criteria are specific and match what each part asks, with points 18/15/14/17 = 64. The self-assessment lead is in English.
-- One idea per sentence where the Finnish has it. The register suits 16–18-year-olds, with British spelling: centre, metres, practise (verb), colour.
-- Hash: f330caf239bff423 at the start, 2c7cc76823c0c1d0 at the end.
+light delta review (teacher 2026-11-07), after fixes 2: fy5-s3 d now reads "Include in the oscillating mass the added mass ...", no longer the clumsy "mass of the hanging mass plus"; consistent with c's criterion (14 g from the intercept) and answer 0.433 m/s.

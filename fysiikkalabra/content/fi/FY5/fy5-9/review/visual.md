@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 261529522cf7421e
+CONTENT-HASH: 3655283bf03a7662
+
 ## Blocking
 (none)
 
 ## Polish
-- Kuvassa heiluri on osittain kuvan reunan esineiden peitossa, eikä vaijeri erotu; alt-teksti kuvaa tämän rehellisesti.
+(none)
 
 ## Checked
-batch delta review: opened captures at 360 and 1280 px; photo loads, floats right beside the text at 1280 px and fills the column at 360 px, no clipping or horizontal overflow; alt text and caption natural Finnish, factual, consistent with the image and neighbouring paragraph; credit line present under the caption; numbers with units in LaTeX.
+- light delta review (teacher 2026-11-07): the misconception paragraph (new sentence refers to the T : T0 table above, which exists) and the rewritten Vaimeneminen paragraph at 390 px; $E = \tfrac{1}{2}kA^2$ stays on one line; scrollWidth 390.

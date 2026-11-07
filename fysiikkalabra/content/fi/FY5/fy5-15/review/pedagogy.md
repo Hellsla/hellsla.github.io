@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: fd603b813dbad4be
+CONTENT-HASH: c74d89688be36f47
 
 ## Blocking
+(none)
 
 ## Polish
-- inquiry.json prior (unchanged line, outside the diff) cites the FY2 chapter as *Teho*, while its title is "Teho: $P = \\Delta E/\\Delta t$"; harmless, could use the full title.
+- lesson.md:218 — the park photo caption carries four sentences of A-weighting caveats; keep "Näyttö kertoo äänitason desibeleinä" and the 62 dB comparison, and leave the explanation to "Mitä mittari mittaa".
+- lesson.md:271 — "niiden energiavirrat kumoavat osittain toisiaan" is a hard idea and not needed; "joten äänenpainetaso voi olla suurempi kuin intensiteettitaso" is enough.
 
 ## Checked
-batch delta review: title and chapter-reference renames only; every *chapter* reference in lesson.md, inquiry.json, exercises and solutions of FY5 resolves to a current lesson title; new titles are clear and consistent with neighbouring lessons.
+light delta review (teacher 2026-11-07), after fixes 2: Desibeliasteikko now opens "Laajan vaihteluvälin vuoksi ...", so the reason for the dB scale is explicit and the hedge no longer reads as the reason; earlier Polish resolved.

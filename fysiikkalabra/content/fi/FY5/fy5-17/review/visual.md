@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 7eec6ef637658e2d
+CONTENT-HASH: 5bc694b064e3028d
 
 ## Blocking
+(none)
 
 ## Polish
+(none)
 
 ## Checked
-batch delta review: diff is chapter-title and chapter-reference renames only (no figures, maths or numbers touched); opened top-390 (and contact context) for titles that wrap at 390 px; renamed title and cross-references read consistently across FY5.
+- light delta review (teacher 2026-11-07): the "Miksi geeliä tarvitaan" and "Yleinen virhekäsitys" paragraphs with their new sentences at 390 px; percentages and $65\,\mu\text{s}$ unwrapped; scrollWidth 390.

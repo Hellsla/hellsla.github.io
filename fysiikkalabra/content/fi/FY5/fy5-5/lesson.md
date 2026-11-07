@@ -201,7 +201,7 @@ Kahden kappaleen välinen gravitaatiovoima on sitä suurempi, mitä suuremmat ma
 F = \gamma \frac{m_1 m_2}{r^2}
 ```
 
-missä $F$ on kumpaankin kappaleeseen vaikuttavan gravitaatiovoiman suuruus (N), $m_1$ ja $m_2$ kappaleiden massat (kg), $r$ kappaleiden keskipisteiden välinen etäisyys (m) ja $\gamma$ gravitaatiovakio, $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$. Voima vaikuttaa kumpaankin kappaleeseen kohti toista kappaletta. Henry Cavendish mittasi vakion ensimmäisen kerran vuonna 1798 kahden lyijypallon välisestä vetovoimasta.
+missä $F$ on kumpaankin kappaleeseen vaikuttavan gravitaatiovoiman suuruus (N), $m_1$ ja $m_2$ kappaleiden massat (kg), $r$ kappaleiden keskipisteiden välinen etäisyys (m) ja $\gamma$ gravitaatiovakio, $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$. Voima vaikuttaa kumpaankin kappaleeseen kohti toista kappaletta. Henry Cavendish määritti vuonna 1798 Maan keskitiheyttä mittaamalla lyijypallojen välistä heikkoa gravitaatiovuorovaikutusta. Hänen tuloksestaan voidaan johtaa gravitaatiovakion arvo.
 
 <svg data-fig="kaava" viewBox="0 0 600 300" role="img" aria-label="Kaavakuva: kaksi palloa, vasemmalla suurempi massa m1 ja oikealla pienempi massa m2. Pallojen keskipisteiden välinen etäisyys r on merkitty mittajanalla pallojen alle. Kumpaankin palloon vaikuttaa yhtä suuri gravitaatiovoima kohti toista palloa: F1 vasemmasta pallosta oikealle ja F2 oikeasta pallosta vasemmalle." style="max-width:100%;font-size:24px">
   <defs><radialGradient id="fy55-rock" cx="0.35" cy="0.35" r="0.8"><stop offset="0" stop-color="#c4ccd4"/><stop offset="1" stop-color="#6c757d"/></radialGradient></defs>

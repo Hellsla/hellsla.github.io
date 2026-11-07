@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: a14b5ec6e29354e5
+CONTENT-HASH: 9e16c6f71ec70bc6
+
 ## Blocking
 (none)
 
 ## Polish
-- Kuva on epäterävä ja tumma, eikä rakoa itseään näy; alt-teksti kertoo epäterävyyden, ja kuva on silti luettavissa.
+- [Minor] ripple-model-single-slit.webp — at 320 px the barrier is a ~3 px line and the slit is small; legible, but a slightly wider/darker barrier would make the slit obvious on a phone (optional).
 
 ## Checked
-batch delta review: opened captures at 360 and 1280 px; photo loads, floats right beside the text at 1280 px and fills the column at 360 px, no clipping or horizontal overflow; alt text and caption natural Finnish, factual, consistent with the image and neighbouring paragraph; credit line present under the caption; numbers with units in LaTeX.
+- light delta review (teacher 2026-11-07): the new figure (image at 320 px and the 960 px asset), caption, credit "Kuva: Ruukkilabra, laskettu malli" and alt text at 390 px. Plane wave from the left, slit about one wavelength wide, semicircles behind: matches the caption, the alt text and fig-8 (wave from the left); idealisations are stated in the caption. scrollWidth 390.

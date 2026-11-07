@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 86acf7c53cd4a3be
+CONTENT-HASH: 7d00c1710ea5520b
 
 ## Blocking
 (none)
@@ -8,4 +8,4 @@ CONTENT-HASH: 86acf7c53cd4a3be
 (none)
 
 ## Checked
-batch delta review: chapter titles renamed in the title, meta and every chapter reference; every reference names the current title of the right chapter (no stale old title left in content/en/FY5); no formula, number, option or feedback physics changed; every changed choice keeps its single correct option.
+light delta review (teacher 2026-11-07): only the passages changed against origin/main were judged, in context; no full review was done even where the tooling asks for one. Cavendish 1798: measured the Earth's mean density from the attraction of lead spheres, γ derivable from his result: historically and physically correct (the photo and caption were already on main).

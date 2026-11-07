@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 20c69152d215564e
+CONTENT-HASH: 8abde523421734f2
 
 ## Blocking
 - none
@@ -8,4 +8,4 @@ CONTENT-HASH: 20c69152d215564e
 - none
 
 ## Checked
-- batch delta review: the new licensed photo (figure.unit-photo) captured in context from preview/fi-easy/fy5-5.html at 390 and 1280 px and opened (review/shots has no dedicated photo capture). The image loads at full resolution, scales inside the column on a phone and sits beside its paragraph at 1280 px. The caption is under the image with its credit line ("Kuva: …, licence"). Nothing is clipped and there is no horizontal overflow. The caption and alt text were read against the picture and the neighbouring paragraph: plain S2 Finnish, quantities in LaTeX.
+- light delta review (teacher 2026-11-07): I checked only the rewritten Cavendish sentences after the gravitational-law symbols. I captured the paragraph at 390 px from the rebuilt preview and opened it: the γ formula with its \tfrac unit stays on one line, nothing is clipped, and the paragraph is 56 words. The three new short sentences ("määritti … Maan keskitiheyden", "lyijypallojen välistä heikkoa gravitaatiovuorovaikutusta", "Hänen tuloksestaan voidaan laskea …") read naturally in plain S2 Finnish. A page scan at 390 px with every box open found no inline formula that wraps or scrolls.

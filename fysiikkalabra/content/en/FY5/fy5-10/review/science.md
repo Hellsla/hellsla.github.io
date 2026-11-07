@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: df914065e3c42db8
+CONTENT-HASH: 82182e756639fe8e
 
 ## Blocking
 
 ## Polish
-- The goals and contribution in inquiry.json still say "wave motion" generically; that is fine, since the lesson treats mechanical waves throughout and says light comes in FY7.
 
 ## Checked
-batch delta review: the definition in Key idea and in the Summary now reads "Mechanical wave motion is the propagation of a disturbance in a medium", which removes the implied claim that every wave needs a medium (electromagnetic waves do not) and agrees with the following sentence "A mechanical wave needs a medium". The two places are worded the same. Particles vibrate about equilibrium, energy but not matter carried, thermal motion in a gas: unchanged and correct. No numbers, choices or answers changed.
+- light delta review (teacher 2026-11-07), after fixes: HEAD~1 diff: the bell sentence now follows directly from 'energy but not matter' in the ideal wave model, and the real-wave net transport (Stokes drift of a floating object) comes after it; causality and the ideal-model qualifier correct, no new error.

@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 2a5a372104aa7adf
+CONTENT-HASH: 0de7306bade9b4cf
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: the diff only renames this and neighbouring FY5 chapters (title, meta.json, `luku *...*` references in lesson.md and inquiry.json); every renamed reference names the chapter that holds the cited content, and no formula, number, option, `correct` flag or feedback physics changed. Every choice still has exactly one correct option.
+- light delta review (teacher 2026-11-07), after fixes 2: HEAD~1 diff: worked-example Principle now 'jolloin junan nopeus osoittaa lähes suoraan kohti häntä'; this resolves the old 'almost' + 'whole velocity' Polish item; the moving-source sign choice and the numbers (recomputed 340.8 Hz and 286.0 Hz) stand.

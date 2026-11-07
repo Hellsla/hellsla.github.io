@@ -6,14 +6,14 @@
       "title": "Tower crane",
       "source": "example",
       "source_note": "The dimensions and masses of the crane are made up, but they are of the same order of magnitude as in a small tower crane on a building site.",
-      "text": "The horizontal jib of a tower crane on a building site is at the top of the tower, and it can turn about the vertical axis of the tower. The load hangs on a cable from a trolley that can be driven along the jib. On the other side of the tower, the jib continues as a counter-jib with a concrete counterweight at its end.\n\nData of the crane:\n\n- the mass of the jib with its counter-jib is $4.0\\,\\text{t}$, with its centre of mass $12\\,\\text{m}$ from the axis of the tower on the side of the load\n- the mass of the counterweight is $9.0\\,\\text{t}$, with its centre of mass $10\\,\\text{m}$ from the axis of the tower on the other side\n- the greatest distance of the trolley from the axis of the tower is $40\\,\\text{m}$\n- according to the manufacturer, the total moment of the weights about the axis of the tower may be at most $600\\,\\text{kNm}$ in either direction.\n\nThe masses of the trolley and the cable can be ignored.",
+      "text": "The horizontal jib of a tower crane on a building site is at the top of the tower, and it can turn about the vertical axis of the tower. The load hangs on a cable from a trolley that can be driven along the jib. On the other side of the tower, the jib continues as a counter-jib with a concrete counterweight at its end.\n\nData of the crane:\n\n- the mass of the jib with its counter-jib is $4.0\\,\\text{t}$, with its centre of mass $12\\,\\text{m}$ from the axis of the tower on the side of the load\n- the mass of the counterweight is $9.0\\,\\text{t}$, with its centre of mass $10\\,\\text{m}$ from the axis of the tower on the other side\n- the greatest distance of the trolley from the axis of the tower is $40\\,\\text{m}$\n- in the crane model of this problem, the total moment of the weights about the moment axis A may be at most $600\\,\\text{kNm}$ in either direction.\n\nThe jib turns about the vertical axis of the tower, but the moments of the weights are calculated about the horizontal moment axis A. The axis A passes through the tower at the height of the jib and is perpendicular to the vertical plane of the jib; in the figure it appears as a point. The masses of the trolley and the cable can be ignored.\n\nThe moment limit is an idealised model made up for this problem. The safe load of a real tower crane is read from the manufacturer's load chart, and its design also takes into account, for example, wind, the swinging of the load, the strength of the structures and the foundation of the tower.",
       "figure": "fy5-sovella/fy5-s1-crane",
       "parts": [
         {
           "id": "a",
           "kind": "calc",
           "points": 3,
-          "text": "The crane lifts a $2.0\\,\\text{t}$ concrete element. How far from the axis of the tower must the trolley be driven so that the total moment of the weights about the axis of the tower is zero?",
+          "text": "The crane lifts a $2.0\\,\\text{t}$ concrete element. How far from the axis of the tower must the trolley be driven so that the total moment of the weights about the moment axis A is zero?",
           "answer": {
             "value": 21,
             "unit": "m",
@@ -21,7 +21,7 @@
           },
           "criteria": [
             {
-              "text": "Chooses the axis of the tower as the axis of rotation and takes all three weights into account: the load, the weight of the jib at its centre of mass and the counterweight, each moment in the correct direction of rotation.",
+              "text": "Calculates the moments about the horizontal moment axis A, so that the lever arms of the weights are horizontal distances from the axis of the tower, and takes all three weights into account: the load, the weight of the jib at its centre of mass and the counterweight, each moment in the correct direction of rotation.",
               "tag": "transfer",
               "points": 1
             },
@@ -89,7 +89,7 @@
             {
               "key": "conclusion",
               "points": 1,
-              "detail": "The suggestion does not work as it stands: the counterweight is dimensioned so that the limit is not exceeded with either the empty or the fully loaded crane."
+              "detail": "The suggestion does not work as it stands: in the model of the problem the counterweight is dimensioned so that the limit is not exceeded with either the empty or the fully loaded crane."
             }
           ]
         },
@@ -232,7 +232,7 @@
           "id": "c",
           "kind": "calc",
           "points": 3,
-          "text": "Jupiter rotates once about its axis in $9.93\\,\\text{h}$. A probe is to orbit above the equator so that it stays above the same cloud formation all the time. How far from the centre of Jupiter is the orbit of the probe?",
+          "text": "Jupiter rotates once about its axis in $9.93\\,\\text{h}$. Jupiter is not a solid body, and its cloud belts rotate at slightly different rates. Assume that the equatorial cloud formation in question goes round the axis of Jupiter with exactly this period of $9.93\\,\\text{h}$. A probe is to move in a circular orbit above the equator so that it stays above this cloud formation all the time. How far from the centre of Jupiter is the orbit of the probe?",
           "answer": {
             "value": 160000,
             "unit": "km",
@@ -297,7 +297,7 @@
       "id": "fy5-s3",
       "title": "A spring and masses",
       "source": "simulated",
-      "source_note": "The data has been calculated from a model in which the spring constant of the spring is $20\\,\\text{N/m}$ and a third of the mass of the spring moves with the mass. A little random variation has been added to the timings, as in a measurement.",
+      "source_note": "The data has been calculated from a model in which the spring constant of the spring is $20\\,\\text{N/m}$. A little random variation has been added to the timings, as in a measurement.",
       "text": "A group of students studied the oscillation of a steel spring hanging vertically. A mass was hung from the lower end of the spring, pulled a few centimetres below its equilibrium position and released. The group measured the time $t_{10}$ of ten periods with a stopwatch. The mass of the spring itself is $45\\,\\text{g}$.\n\n| $m\\ (\\text{g})$ | $t_{10}\\ (\\text{s})$ |\n|---|---|\n| $100$ | $4.74$ |\n| $150$ | $5.73$ |\n| $200$ | $6.50$ |\n| $250$ | $7.25$ |\n| $300$ | $7.86$ |\n| $350$ | $8.51$ |\n\nIn addition, the group hung a $200\\,\\text{g}$ mass from the spring at rest and measured that the spring stretched $9.8\\,\\text{cm}$.",
       "parts": [
         {
@@ -386,27 +386,27 @@
           "id": "d",
           "kind": "calc",
           "points": 3,
-          "text": "A $250\\,\\text{g}$ mass is hung from the spring and set oscillating with an amplitude of $5.0\\,\\text{cm}$. How large is the greatest speed of the mass?",
+          "text": "A $250\\,\\text{g}$ mass is hung from the spring and set oscillating with an amplitude of $5.0\\,\\text{cm}$. Include in the oscillating mass the added mass that the graph of part c gives. How large is the greatest speed of the mass?",
           "answer": {
-            "value": 0.446,
+            "value": 0.433,
             "unit": "m/s",
             "tolerance": 0.03
           },
           "criteria": [
             {
-              "text": "Uses the energy of the oscillation: at an extreme position the energy $\\tfrac{1}{2}kA^2$ is entirely elastic potential energy of the spring, and at the equilibrium position entirely kinetic energy.",
+              "text": "Uses the energy of the oscillation: at an extreme position the energy $\\tfrac{1}{2}kA^2$ is entirely elastic potential energy of the spring, and at the equilibrium position entirely kinetic energy, and the oscillating mass is the hanging mass plus the added mass of part c, in the model $m_\\text{eff} = m + \\tfrac{1}{3}m_\\text{s}$.",
               "tag": "transfer",
               "points": 1
             },
             {
               "key": "equation",
               "points": 1,
-              "detail": "$\\tfrac{1}{2}mv_\\text{max}^2 = \\tfrac{1}{2}kA^2$, so $v_\\text{max} = A\\sqrt{\\dfrac{k}{m}}$"
+              "detail": "$\\tfrac{1}{2}m_\\text{eff}v_\\text{max}^2 = \\tfrac{1}{2}kA^2$, so $v_\\text{max} = A\\sqrt{\\dfrac{k}{m_\\text{eff}}}$"
             },
             {
               "key": "units_precision",
               "points": 1,
-              "detail": "$v_\\text{max} \\approx 0.45\\,\\text{m/s}$"
+              "detail": "$v_\\text{max} \\approx 0.43\\,\\text{m/s}$"
             }
           ]
         }
@@ -520,7 +520,7 @@
           "id": "d",
           "kind": "calc",
           "points": 4,
-          "text": "In front of the pipes, at a distance of $4.0\\,\\text{m}$, the sound intensity level was measured as $88\\,\\text{dB}$ while the organ was playing at full power. The organist sits $2.0\\,\\text{m}$ from the pipes and practises three hours a day. Estimate the organist's permitted daily exposure time, assuming that the organ radiates sound uniformly in all directions from a single point and sounds equally loud throughout the practice. Is it enough?",
+          "text": "In front of the pipes, at a distance of $4.0\\,\\text{m}$, a sound level meter measured a sound level of $88\\,\\text{dB}$ while the organ was playing at full power. The organist sits $2.0\\,\\text{m}$ from the pipes and practises three hours a day. Assume that the organ radiates sound uniformly in all directions from a single point in a free sound field, so that the sound level can be treated as an intensity level, and that it sounds equally loud throughout the practice. Estimate in how long a time the organist receives the same energy dose as in eight hours at the upper action value for noise at work, $85\\,\\text{dB}$. Does the dose of the three-hour practice stay below this reference dose?",
           "answer": {
             "value": 1.0,
             "unit": "h",
@@ -535,17 +535,17 @@
             {
               "key": "equation",
               "points": 1,
-              "detail": "$n = \\dfrac{L - 85\\,\\text{dB}}{3\\,\\text{dB}}$ and $t_\\text{perm} = \\dfrac{8\\,\\text{h}}{2^{\\,n}}$"
+              "detail": "$n = \\dfrac{L - 85\\,\\text{dB}}{3\\,\\text{dB}}$ and $t_\\text{ref} = \\dfrac{8\\,\\text{h}}{2^{\\,n}}$"
             },
             {
               "key": "units_precision",
               "points": 1,
-              "detail": "$t_\\text{perm} \\approx 1\\,\\text{h}$"
+              "detail": "$t_\\text{ref} \\approx 1\\,\\text{h}$"
             },
             {
               "key": "conclusion",
               "points": 1,
-              "detail": "It is not enough: three hours of practice is about three times the permitted time, so the organist should use hearing protection or practise more quietly."
+              "detail": "It does not: three hours of practice is about three times the reference time, so the dose is about three times the reference dose and the organist should use hearing protection or practise more quietly."
             }
           ]
         },
@@ -566,7 +566,7 @@
               "detail": "The walls and vaults of the church reflect sound, so part of the level at $4.0\\,\\text{m}$ is reverberation, which does not get louder closer up; also, during practice the organ is seldom played at full power all the time. Both make the estimate probably too large."
             },
             {
-              "text": "Suggests a measurement: a sound level meter measures the A-weighted level at the organist's ear throughout the practice, and its average is compared with the action value.",
+              "text": "Suggests a measurement: a sound level meter measures the A-weighted level at the organist's ear throughout the practice, and the daily noise exposure calculated from it is compared with the action values.",
               "tag": "experiment",
               "points": 1
             }

@@ -1,8 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 32e63de67a0a9c1b
+CONTENT-HASH: 8abde523421734f2
+
 ## Blocking
+(none)
 
 ## Polish
-- *gravitaatiokenttä*: "jokaiseen kappaleeseen" → "jokaiseen toiseen kappaleeseen".
+(none)
+
 ## Checked
-batch delta review: added meta.json key_concepts ("Luvun tärkeät käsitteet") read against lesson.md: every term is a term the lesson bolds and uses, each explanation is short S2 Finnish, physically correct and consistent with the lesson's own definition, wording, tasks and feedback; no numbers or symbols changed, nothing in the lesson disclosed or removed.
+light delta review (teacher 2026-11-07): only the changed passages were judged, in context of the surrounding text, tasks, feedback and solutions; no full review even where the tooling asks for one; physics left to the science review; Artemis II photo caption ties to the equal-force idea; Cavendish sentence matches the exercise L3-04 stem and solution.

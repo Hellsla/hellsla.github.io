@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: d13b60ab3f95d95b
+CONTENT-HASH: 5e67d8c09b2d9382
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-batch delta review: the definition in theory and Tiivistelmä now reads "Mekaaninen aaltoliike on häiriön etenemistä väliaineessa", so it no longer implies every wave needs a medium; consistent with the next paragraph ("Mekaaninen aalto tarvitsee väliaineen") and with energy-not-matter transport; no other unqualified "Aaltoliike on" left in the lesson or inquiry.
+- light delta review (teacher 2026-11-07), after fixes: HEAD~1 diff: the bell sentence now follows directly from 'energy but not matter' in the ideal wave model, and the real-wave net transport (Stokes drift of a floating object) comes after it; causality and the ideal-model qualifier correct, no new error.

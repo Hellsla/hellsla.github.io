@@ -127,27 +127,27 @@ Kuulovaurio syntyy sisäkorvan simpukassa. Siellä aistinkarvasolut muuttavat ä
 
 ### Annos: taso ja aika
 
-Kuulolle haitallinen annos kertyy samalla tavalla kuin energia: ratkaisevaa on, kuinka paljon ääni tuo korvaan energiaa koko altistuksen aikana. Luvussa *Intensiteetti ja desibeliasteikko* opittiin, että intensiteettitason kasvu $3\,\text{dB}$ vastaa noin intensiteetin kaksinkertaistumista. Kun intensiteetti kaksinkertaistuu, korvaan tulee sekunnissa kaksi kertaa enemmän energiaa, joten sama annos täyttyy puolessa ajassa. Siksi melutaso, joka on vain muutaman desibelin suurempi, voi lyhentää turvallista aikaa moninkertaisesti.
+Kuulolle haitallinen annos kertyy samalla tavalla kuin energia: ratkaisevaa on, kuinka paljon ääni tuo korvaan energiaa koko altistuksen aikana. Luvussa *Intensiteetti ja desibeliasteikko* opittiin, että intensiteettitason kasvu $3\,\text{dB}$ vastaa noin intensiteetin kaksinkertaistumista. Kun intensiteetti kaksinkertaistuu, korvaan tulee sekunnissa kaksi kertaa enemmän energiaa, joten sama annos täyttyy puolessa ajassa. Siksi melutaso, joka on vain muutaman desibelin suurempi, voi lyhentää moninkertaisesti aikaa, jossa sama annos kertyy.
 
 ### Työmelu laissa
 
-Työmelusta säädetään valtioneuvoston asetuksessa työntekijöiden suojelemisesta melusta aiheutuvilta vaaroilta (85/2006). Asetus vertaa työntekijän päivittäistä melualtistusta, eli kahdeksan tunnin työpäivän keskimääräistä melutasoa, toiminta-arvoihin. Kun alempi toiminta-arvo $80\,\text{dB}$ ylittyy, työnantajan on annettava kuulonsuojaimet työntekijän käyttöön ja kerrottava melun vaaroista. Kun ylempi toiminta-arvo $85\,\text{dB}$ ylittyy, suojaimia on käytettävä ja melua on vähennettävä suunnitelmallisesti. Päivittäinen melualtistus korvalla, kuulonsuojainten vaimennus huomioon ottaen, ei saa ylittää raja-arvoa $87\,\text{dB}$. Arvot ovat A-painotettuja: mittari painottaa taajuuksia suunnilleen niin kuin korva kuulee ne. Lisäksi asetuksessa on äänen huippuarvoille omat, C-painotetut rajansa, jotka koskevat esimerkiksi laukausta tai iskua. Konserttien ja kuulokkeiden melulle laki ei aseta samoja rajoja, mutta korva ei erota vapaa-aikaa työstä.
+Työmelusta säädetään valtioneuvoston asetuksessa työntekijöiden suojelemisesta melusta aiheutuvilta vaaroilta (85/2006). Asetus vertaa työntekijän päivittäistä melualtistusta, eli kahdeksan tunnin työpäivän keskimääräistä melutasoa, toiminta-arvoihin. Kun alempi toiminta-arvo $80\,\text{dB(A)}$ ylittyy, työnantajan on asetettava kuulonsuojaimet työntekijöiden saataville ja annettava tietoa ja koulutusta melun vaaroista. Kun ylempi toiminta-arvo $85\,\text{dB(A)}$ saavutetaan tai ylittyy, kuulonsuojaimia on käytettävä, ja työnantajan on vähennettävä melua suunnitelmallisesti meluntorjuntaohjelman avulla. Altistuksen raja-arvo on $87\,\text{dB(A)}$: päivittäinen melualtistus korvalla, kuulonsuojainten vaimennus huomioon ottaen, ei saa ylittää sitä. Toiminta-arvoihin sen sijaan verrataan altistusta ilman kuulonsuojaimia. Toiminta-arvot eivät siis ole turvallisia tai sallittuja altistuksen ylärajoja, vaan tasoja, joilla työnantajan velvoitteet alkavat. Arvot ovat A-painotettuja: mittari painottaa taajuuksia suunnilleen niin kuin korva kuulee ne. Lisäksi asetuksessa on äänen huippuarvoille omat, C-painotetut rajansa, jotka koskevat esimerkiksi laukausta tai iskua. Konserttien ja kuulokkeiden melulle laki ei aseta samoja rajoja, mutta korva ei erota vapaa-aikaa työstä.
 
-## Kaava: Sallittu altistusaika
+## Kaava: Melualtistuksen vertailuaika
 
-Ylempää toiminta-arvoa vastaa kahdeksan tunnin altistus tasolle $85\,\text{dB}$. Saman annoksen saa lyhyemmässä ajassa suuremmalla tasolla, ja jokainen $3\,\text{dB}$:n nousu puolittaa ajan. Tämä nyrkkisääntö seuraa siitä, että melualtistus lasketaan energian keskiarvona. Sallittu päivittäinen altistusaika on
+Ylempää toiminta-arvoa vastaa kahdeksan tunnin altistus tasolle $85\,\text{dB(A)}$. Saman energia-annoksen saa lyhyemmässä ajassa suuremmalla tasolla, ja jokainen $3\,\text{dB}$:n nousu puolittaa ajan. Tämä nyrkkisääntö seuraa siitä, että melualtistus lasketaan energian keskiarvona. Laskennallista aikaa, jossa kertyy ylempää toiminta-arvoa vastaava energia-annos, kutsutaan tässä luvussa vertailuajaksi. Päivittäinen vertailuaika on
 
 ```latex
-t_\text{sall} = \frac{t_0}{2^{\,n}}
+t_\text{v} = \frac{t_0}{2^{\,n}}
 ```
 
 ```latex
 n = \frac{L - L_0}{3\,\text{dB}}
 ```
 
-missä $L$ on melutaso korvalla (dB), $L_0 = 85\,\text{dB}$ ylempi toiminta-arvo, $t_0 = 8\,\text{h}$ sitä vastaava aika ja $n$ kertoo, montako $3\,\text{dB}$:n askelta $L$ on toiminta-arvon yläpuolella. Esimerkiksi tasolla $94\,\text{dB}$ on $n = 3$, joten aika puolittuu kolmesti: $8\,\text{h} : 8 = 1\,\text{h}$. Kun $n$ ei ole kokonaisluku, potenssi lasketaan laskimella.
+missä $L$ on A-painotettu melutaso korvalla (laskuissa lyhyesti dB), $L_0 = 85\,\text{dB}$ ylempi toiminta-arvo, $t_0 = 8\,\text{h}$ sitä vastaava aika ja $n$ kertoo, montako $3\,\text{dB}$:n askelta $L$ on toiminta-arvon yläpuolella. Esimerkiksi tasolla $94\,\text{dB}$ on $n = 3$, joten aika puolittuu kolmesti: $8\,\text{h} : 8 = 1\,\text{h}$. Kun $n$ ei ole kokonaisluku, potenssi lasketaan laskimella.
 
-<svg data-fig="exposure" viewBox="0 0 600 340" role="img" aria-label="Pylväskuvaaja mittakaavassa: sallittu päivittäinen altistusaika t tunteina melutason L funktiona. Melutasolla 85 dB aika on 8 tuntia, 88 dB 4 tuntia, 91 dB 2 tuntia, 94 dB 1 tunti, 97 dB 0,5 tuntia ja 100 dB 0,25 tuntia. Jokainen kolmen desibelin nousu puolittaa pylvään korkeuden." style="max-width:100%;font-size:24px">
+<svg data-fig="exposure" viewBox="0 0 600 340" role="img" aria-label="Pylväskuvaaja mittakaavassa: päivittäinen vertailuaika t tunteina melutason L funktiona. Melutasolla 85 dB aika on 8 tuntia, 88 dB 4 tuntia, 91 dB 2 tuntia, 94 dB 1 tunti, 97 dB 0,5 tuntia ja 100 dB 0,25 tuntia. Jokainen kolmen desibelin nousu puolittaa pylvään korkeuden." style="max-width:100%;font-size:24px">
   <line x1="155" y1="300" x2="155" y2="56" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="214" y1="300" x2="214" y2="56" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="273" y1="300" x2="273" y2="56" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -199,7 +199,7 @@ missä $L$ on melutaso korvalla (dB), $L_0 = 85\,\text{dB}$ ylempi toiminta-arvo
   <foreignObject x="296" y="79.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$+3\,\text{dB} \;\Rightarrow\; t : 2$</div></foreignObject>
 </svg>
 
-Kaava on arvio, ei takuu: ihmisten kuulo kestää melua eri tavoin, ja altistus kannattaa pitää selvästi rajan alapuolella. Melutaso korvalla saadaan luvun *Intensiteetti ja desibeliasteikko* säännöillä: kaksi yhtä voimakasta lähdettä nostaa tasoa noin $3\,\text{dB}$, ja etäisyyden kaksinkertaistuminen pistemäisestä lähteestä laskee tasoa avoimessa tilassa noin $6\,\text{dB}$. Kuulonsuojain vähentää korvaan pääsevää tasoa, hyvin asetettuna, vaimennuksensa verran.
+Vertailuaika ei ole sallittu eikä turvallinen aika, vaan laskennallinen vertailuarvo. Vertailuannoksen alittaminen ei takaa yksilön kuulon turvallisuutta, koska ihmisten kuulo kestää melua eri tavoin, eikä se poista työnantajan muita velvoitteita: ne alkavat jo alemmasta toiminta-arvosta $80\,\text{dB(A)}$. Altistus kannattaa pitää selvästi vertailuannoksen alapuolella. Melutaso korvalla saadaan luvun *Intensiteetti ja desibeliasteikko* säännöillä: kaksi yhtä voimakasta lähdettä nostaa tasoa noin $3\,\text{dB}$, ja etäisyyden kaksinkertaistuminen pistemäisestä lähteestä laskee tasoa avoimessa tilassa noin $6\,\text{dB}$. Kuulonsuojain vähentää korvaan pääsevää tasoa, hyvin asetettuna, vaimennuksensa verran.
 
 ## Melun torjunta
 
@@ -237,7 +237,7 @@ Melua voidaan vähentää kolmessa kohdassa. **Lähteessä** valitaan hiljaisemp
   <foreignObject x="415" y="281.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kuulonsuojain}$</div></foreignObject>
 </svg>
 
-Torjunta lähteessä on tehokkainta, koska se suojaa kaikkia. Kuulonsuojain suojaa vain silloin, kun se on päässä: tasolla $100\,\text{dB}$ koko päivän annos täyttyy jo $15\,\text{min}$:ssa, joten suojaimen riisuminen hetkeksi kumoaa suuren osan sen hyödystä. Konsertissa korvatulpat, etäisyys kaiuttimiin ja tauot hiljaisessa ovat yksinkertaisia keinoja, ja kuulokkeiden äänenvoimakkuus kannattaa pitää kohtuullisena.
+Torjunta lähteessä on tehokkainta, koska se suojaa kaikkia. Kuulonsuojain suojaa vain silloin, kun se on päässä: tasolla $100\,\text{dB}$ ylempää toiminta-arvoa vastaava päivän annos kertyy jo $15\,\text{min}$:ssa, joten suojaimen riisuminen hetkeksi kumoaa suuren osan sen hyödystä. Konsertissa korvatulpat, etäisyys kaiuttimiin ja tauot hiljaisessa ovat yksinkertaisia keinoja, ja kuulokkeiden äänenvoimakkuus kannattaa pitää kohtuullisena.
 
 ## Tilan akustiikka
 
@@ -393,11 +393,11 @@ Rumpali harjoittelee bändin kanssa $2{,}0\,\text{h}$ päivässä, ja melutaso h
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Melutaso $L = 100\,\text{dB}$, altistusaika $t = 2{,}0\,\text{h}$, vertailuannos $L_0 = 85\,\text{dB}$ ajan $t_0 = 8\,\text{h}$. Kysytään kuulonsuojainten vähimmäisvaimennusta $\Delta L$.
+**Tunnetut ja kysytty.** Melutaso $L = 100\,\text{dB}$, altistusaika $t = 2{,}0\,\text{h}$, vertailuannos eli taso $L_0 = 85\,\text{dB}$ ajan $t_0 = 8\,\text{h}$. Kysytään kuulonsuojainten vähimmäisvaimennusta $\Delta L$.
 
 <!-- vaihe -->
 
-**Periaate.** Annos riippuu sekä tasosta että ajasta, ja jokainen $3\,\text{dB}$:n nousu puolittaa sallitun ajan. Etsitään taso $L_\text{sall}$, jolla sallittu aika on juuri $2{,}0\,\text{h}$. Suojainten on laskettava korvalle tuleva taso tähän arvoon, joten vaimennus on tasojen erotus.
+**Periaate.** Annos riippuu sekä tasosta että ajasta, ja jokainen $3\,\text{dB}$:n nousu puolittaa vertailuajan. Etsitään vertailutaso $L_\text{v}$, jolla vertailuaika on juuri $2{,}0\,\text{h}$. Suojainten on laskettava korvalle tuleva taso tähän arvoon, joten vaimennus on tasojen erotus.
 
 <!-- vaihe -->
 
@@ -406,8 +406,8 @@ Rumpali harjoittelee bändin kanssa $2{,}0\,\text{h}$ päivässä, ja melutaso h
 ```latex
 \begin{aligned}
 &2^{\,n} = \frac{t_0}{t} \\
-&L_\text{sall} = L_0 + n \cdot 3\,\text{dB} \\
-&\Delta L = L - L_\text{sall}
+&L_\text{v} = L_0 + n \cdot 3\,\text{dB} \\
+&\Delta L = L - L_\text{v}
 \end{aligned}
 ```
 
@@ -417,7 +417,7 @@ Rumpali harjoittelee bändin kanssa $2{,}0\,\text{h}$ päivässä, ja melutaso h
 
 <!-- vaihe -->
 
-**Sijoitus.** $2^{\,n} = 8\,\text{h} : 2{,}0\,\text{h} = 4$, joten $n = 2$, koska $2^2 = 4$. Sallittu taso on $L_\text{sall} = 85\,\text{dB} + 2 \cdot 3\,\text{dB} = 91\,\text{dB}$, ja vaimennus on $\Delta L = 100\,\text{dB} - 91\,\text{dB} = 9\,\text{dB}$.
+**Sijoitus.** $2^{\,n} = 8\,\text{h} : 2{,}0\,\text{h} = 4$, joten $n = 2$, koska $2^2 = 4$. Vertailutaso on $L_\text{v} = 85\,\text{dB} + 2 \cdot 3\,\text{dB} = 91\,\text{dB}$, ja vaimennus on $\Delta L = 100\,\text{dB} - 91\,\text{dB} = 9\,\text{dB}$.
 
 <!-- vaihe -->
 
@@ -425,7 +425,7 @@ Rumpali harjoittelee bändin kanssa $2{,}0\,\text{h}$ päivässä, ja melutaso h
 
 <!-- vaihe -->
 
-**Järkevyys.** Ilman suojaimia sallittu aika olisi $8\,\text{h} : 2^5 = 15\,\text{min}$, joten kahden tunnin harjoitus antaisi kahdeksankertaisen annoksen. Kahdeksankertainen intensiteetti vastaa kolmea $3\,\text{dB}$:n askelta eli $9\,\text{dB}$:ä, kuten saatiin. Tavalliset suojaimet vaimentavat $20$–$30\,\text{dB}$, joten vaatimus on helppo täyttää; muusikot käyttävät usein tasaisesti vaimentavia tulppia, jotta soitto kuulostaa luonnolliselta.
+**Järkevyys.** Ilman suojaimia vertailuaika olisi $8\,\text{h} : 2^5 = 15\,\text{min}$, joten kahden tunnin harjoitus antaisi kahdeksankertaisen annoksen. Kahdeksankertainen intensiteetti vastaa kolmea $3\,\text{dB}$:n askelta eli $9\,\text{dB}$:ä, kuten saatiin. Tavalliset suojaimet vaimentavat $20$–$30\,\text{dB}$, joten laskennallinen vähimmäisvaatimus on helppo täyttää, ja suurempi vaimennus suojaa kuuloa paremmin; muusikot käyttävät usein tasaisesti vaimentavia tulppia, jotta soitto kuulostaa luonnolliselta.
 
 ## Yleinen virhekäsitys
 
@@ -434,7 +434,8 @@ Rumpali harjoittelee bändin kanssa $2{,}0\,\text{h}$ päivässä, ja melutaso h
 ## Tiivistelmä
 
 - Melu on ei-toivottua tai haitallista ääntä. Kuulolle haitallinen annos riippuu sekä tasosta että ajasta.
-- Ylempää toiminta-arvoa $85\,\text{dB}$ vastaa $8\,\text{h}$, ja jokainen $3\,\text{dB}$:n nousu puolittaa sallitun ajan: $t_\text{sall} = t_0 / 2^{\,n}$.
+- Työmelun toiminta-arvot $80\,\text{dB(A)}$ ja $85\,\text{dB(A)}$ käynnistävät työnantajan velvoitteita, eivätkä ne ole turvallisuusrajoja. Raja-arvoa $87\,\text{dB(A)}$ ei saa ylittää kuulonsuojaimet huomioiden.
+- Ylempää toiminta-arvoa vastaa $8\,\text{h}$ tasolla $85\,\text{dB(A)}$, ja jokainen $3\,\text{dB}$:n nousu puolittaa vertailuajan, jossa sama energia-annos kertyy: $t_\text{v} = t_0 / 2^{\,n}$.
 - Melua torjutaan lähteessä, kulkutiellä (etäisyys, este, vaimentavat pinnat) ja korvalla (kuulonsuojaimet koko altistuksen ajan).
 - Kovat pinnat heijastavat ja pehmeät vaimentavat ääntä. Jälkikaiunta-aika on aika, jossa taso laskee $60\,\text{dB}$.
 - Vastamelu kumoaa matalaa melua heikentävällä interferenssillä.

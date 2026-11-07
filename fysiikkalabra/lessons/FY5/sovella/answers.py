@@ -15,7 +15,7 @@ def fit(x, y):
 
 out = {}
 
-# fy5-s1: the tower crane. Moments about the tower's axis, positive on the load side.
+# fy5-s1: the tower crane. Moments about the horizontal moment axis A through the tower (perpendicular to the jib's vertical plane), positive on the load side.
 mp, rp = 4000.0, 12.0          # jib (with its counter-jib): mass and the distance of its centre of mass, load side
 mv, rv = 9000.0, 10.0          # counterweight, on the other side
 m1 = 2000.0                    # a)
@@ -77,8 +77,10 @@ out.update({"fy5-s3-fit-slope": round(k_fit, 4), "fy5-s3-fit-icpt": round(b_fit,
             "fy5-s3-b": round(k_dyn, 3), "fy5-s3-kstat": round(k_stat, 3), "fy5-s3-icpt-read": round(0.226 - slope * 0.100, 4),
             "fy5-s3-dT": dt, "fy5-s3-dT2-rel": round(2 * dt / 0.474, 4), "fy5-s3-meff": round((0.226 - slope * 0.100) / slope, 4),
             "fy5-s3-k-origin": round(4 * math.pi ** 2 * sum(a * a for a in ms) / sum(a * b for a, b in zip(ms, T2)), 3)})
-A, m_d = 0.050, 0.250                                     # d)
-vmax = A * math.sqrt(k_dyn / m_d)
+A, m_d, m_spring = 0.050, 0.250, 0.045                   # d) the main model counts a third of the spring's mass, as in c)
+m_eff = m_d + m_spring / 3
+vmax = A * math.sqrt(k_dyn / m_eff)
+out.update({"fy5-s3-d-meff": round(m_eff, 4), "fy5-s3-d-massless": round(A * math.sqrt(k_dyn / m_d), 4)})
 out.update({"fy5-s3-d": round(vmax, 4), "fy5-s3-d-E": round(0.5 * k_dyn * A * A, 5)})
 
 # fy5-s4: the organ pipe

@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: d10acd84a4cef2c2
+CONTENT-HASH: f3a92ad89167f2ed
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Terms: melu, jälkikaiunta (reflections after the source stops), kaiutin (signal to sound) and mikrofoni (sound to signal) agree with the lesson.
+- light delta review (teacher 2026-11-07), after fixes: HEAD~1 diff: reference time is 'a calculated reference value', not a permitted or safe time; correct and consistent with VNA 85/2006 wording elsewhere, no number changed.

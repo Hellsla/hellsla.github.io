@@ -1,8 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: d10acd84a4cef2c2
+CONTENT-HASH: f3a92ad89167f2ed
+
 ## Blocking
+(none)
 
 ## Polish
+- lesson.md:134 — the asetus paragraph is 142 words (rule about 120); split before "Toiminta-arvoihin sen sijaan verrataan".
+- inquiry.json:58 — "Kuinka kauan suunnilleen kestää, että melutasossa 94 dB korvaan kertyy..." is clumsy; "Kuinka kauan suunnilleen kestää, ennen kuin korvaan kertyy sama äänienergian annos tasolla 94 dB?"
 
 ## Checked
-batch delta review: added meta.json key_concepts ("Luvun tärkeät käsitteet") read against lesson.md: every term is a term the lesson bolds and uses, each explanation is short S2 Finnish, physically correct and consistent with the lesson's own definition, wording, tasks and feedback; no numbers or symbols changed, nothing in the lesson disclosed or removed.
+light delta review (teacher 2026-11-07), after fixes: "Se on laskennallinen vertailuarvo" is short and plain and keeps the not-safe point.

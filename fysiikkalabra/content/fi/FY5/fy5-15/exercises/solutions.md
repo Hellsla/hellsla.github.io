@@ -19,7 +19,7 @@
 **Järkevyys:** Intensiteetti on välillä $10^{-5}$–$10^{-4}\,\text{W/m}^2$, joten tason on oltava välillä $70$–$80\,\text{dB}$. Pölynimuri on tavallisesti suunnilleen yhtä äänekäs kuin vilkas katu.
 
 ## fy5-15-L1-03
-**Annettu:** intensiteettitaso $L = 95\,\text{dB}$, kuulokynnys $I_0 = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2$
+**Annettu:** mittarin lukema, jota pidetään vapaassa äänikentässä intensiteettitasona, $L = 95\,\text{dB}$, kuulokynnys $I_0 = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2$
 **Kysytty:** intensiteetti $I$ yksikössä $\text{W/m}^2$
 **Periaate:** Taso on kymmenen kertaa intensiteettien suhteen logaritmi. Intensiteetti saadaan, kun yhtälö jaetaan $10\,\text{dB}$:llä ja käytetään logaritmin määritelmää: jos $\lg x = y$, niin $x = 10^y$.
 **Kaava:** $L = 10\,\text{dB} \cdot \lg \dfrac{I}{I_0}$, joten $\lg \dfrac{I}{I_0} = \dfrac{L}{10\,\text{dB}}$ ja $I = I_0 \cdot 10^{\,L/(10\,\text{dB})}$

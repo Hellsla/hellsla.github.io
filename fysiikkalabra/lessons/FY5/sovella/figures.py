@@ -34,7 +34,9 @@ def crane():
     f = Fig("fy5-s1-crane", 350, "Kaaviokuva torninosturista sivulta. Pystysuora torni, jonka akseli on merkitty katkoviivalla. Tornin "
             "huipulla vaakasuora puomi: oikealle pitkä puomi, jota pitkin vaunu liikkuu, ja vasemmalle lyhyt vastapuomi, jonka päässä "
             "riippuu betoninen vastapaino m v. Vastapainon painopisteen etäisyys tornin akselista on r v. Puomin painopiste, massa m p, "
-            "on merkitty puomiin oikealle tornista etäisyydelle r p. Vaunusta riippuu vaijerissa kuorma m etäisyydellä r tornin akselista.")
+            "on merkitty puomiin oikealle tornista etäisyydelle r p. Vaunusta riippuu vaijerissa kuorma m etäisyydellä r tornin akselista. "
+            "Tornin akselin ja puomin keskiviivan leikkauskohdassa on piste A: vaakasuora momenttiakseli, joka on kohtisuorassa kuvan "
+            "tasoa vastaan.")
     ax, yj = 200, 104                                             # the tower's axis, the jib's centre line
     sc = 9.5                                                      # px per metre along the jib
     ground(f, 20, 590, 318)
@@ -66,6 +68,9 @@ def crane():
     # the axis and the dimensions
     f.line(ax, yj - 70, ax, 330, MUTED, 1.5, "8 6")
     f.tex(ax + 10, 30, r"\text{tornin akseli}", "start", MUTED)
+    # the horizontal moment axis A, perpendicular to the picture: a point where the tower's axis meets the jib's centre line
+    f.circle(ax, yj, 6.5, WHITE, INK, 2); f.circle(ax, yj, 2.2, INK, INK, 1)
+    f.tex(ax - 22, yj - 22, r"A", "middle")
     _dim(f, xv, ax, yj + 96, r"r_\text{v}")
     _dim(f, ax, xp, yj + 36, r"r_\text{p}", above=False)
     _dim(f, ax, xr, 284, r"r")

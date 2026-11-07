@@ -558,7 +558,7 @@ A train runs along a straight track at a steady speed of $108\,\text{km/h}$ and 
 
 <!-- vaihe -->
 
-**Principle.** The sound source moves and the listener is at rest, so we use the Doppler formula for a moving source. In front of the approaching train the wavefronts bunch together, so the sign is chosen so that $f_1 > f_0$. Behind the receding train the wavefronts spread out, and $f_2 < f_0$.
+**Principle.** The sound source moves and the listener is at rest, so we use the Doppler formula for a moving source. In front of the approaching train the wavefronts bunch together, so the sign is chosen so that $f_1 > f_0$. Behind the receding train the wavefronts spread out, and $f_2 < f_0$. The model is ideal: the passenger is assumed to be almost on the line of the track, so that the velocity of the train points almost straight towards or away from them.
 
 <!-- vaihe -->
 
@@ -594,7 +594,7 @@ f_2 &= f_0 \cdot \frac{v}{v + v_\text{s}} \\
 
 <!-- vaihe -->
 
-**Answer.** The passenger hears the approaching train at $341\,\text{Hz}$ and the receding train at $286\,\text{Hz}$, to three significant figures like the given data. At the moment of passing, the frequency drops by about $55\,\text{Hz}$: the difference is accurate to about a hertz, because each frequency is known to about half a hertz.
+**Answer.** The passenger hears the approaching train at $341\,\text{Hz}$ and the receding train at $286\,\text{Hz}$, to three significant figures like the given data. At the moment of passing, the frequency drops by about $55\,\text{Hz}$: the difference is accurate to about a hertz, because each frequency is known to about half a hertz. In reality the passenger stands slightly to the side of the track, so the frequency does not drop instantly but gradually during the short time in which the train passes them. Far from the passing point the heard frequencies are still almost $341\,\text{Hz}$ and $286\,\text{Hz}$.
 
 <!-- vaihe -->
 

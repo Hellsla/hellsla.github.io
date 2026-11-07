@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: cb6948f3d741ca30
+CONTENT-HASH: e19a95257b2698ca
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: the diff only renames this and neighbouring FY5 chapters (title, meta.json, `luku *...*` references in lesson.md and inquiry.json); every renamed reference names the chapter that holds the cited content, and no formula, number, option, `correct` flag or feedback physics changed. Opening illustration redrawn: its alt text and capture show the situation correctly (no labels or numbers in the lesson's other figures changed). Every choice still has exactly one correct option.
+- light delta review (teacher 2026-11-07), after fixes: HEAD~1 diff of lesson.md drops the closing 'Gravitaatio ei siis puutu, vaan mikään ei tue kappaletta.'; the bold definition (only gravity, common free fall, support force zero while the weight acts) stays correct and matches the summary; no number changed.

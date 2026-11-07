@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 751af08c90959771
+CONTENT-HASH: be1ccffb88eff6c2
 
 ## Blocking
 
-None.
-
 ## Polish
 
-None.
-
 ## Checked
-
-batch delta review: "Mekaaninen aaltoliike on häiriön etenemistä väliaineessa" in Ydinajatus and Tiivistelmä is now correct as a definition (electromagnetic waves need no medium); it agrees with the next paragraph ("Mekaaninen aalto tarvitsee väliaineen"), and the energy-not-matter and particles-oscillate statements are unchanged. No number, option or feedback changed.
+- light delta review (teacher 2026-11-07), after fixes: HEAD~1 diff: the bell sentence now follows directly from 'energy but not matter' in the ideal wave model, and the real-wave net transport (Stokes drift of a floating object) comes after it; causality and the ideal-model qualifier correct, no new error.

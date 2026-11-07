@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 07b47a298050cf0f
+CONTENT-HASH: 053cb480bab0df62
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] pick-alas, pick-keskipakoisvoima... (A, C) — the figures keep an empty strip above the shortest arrows because all four share the same-scale canvas; harmless, same as the Finnish.
+- none
 
 ## Checked
-- Own 390 px render (scratch script, after the page's scripts, hints, feedback and solution open) of fy5-4-L2-08 in fi-easy: page scrollWidth 390, no element outside a scroll box (only KaTeX-internal svg paths, clipped by their own box).
-- Opened the whole task card in tiles: task text, every choice with feedback, answer, solution (Find/Principle/Model answer).
-- All four option figures (B, A, C, D) at readable size: forces red #c92a2a, velocity (D) blue, no acceleration arrow; labels G, N, F_cf as maths; the figure label matches the text's $\overline{F}_\text{kp}$; arrow lengths match the aria-label (N half of G, F 1.5 G); labels translated in fi-easy (kp).
+- light delta review (teacher 2026-11-07): I checked only the edits that add "Todellista keskipakoisvoimaa ei ole" / "todellista voimaa". I captured them at 390 px from the rebuilt preview with every solution open and opened each capture: the L1 choice feedback and the L2-08 choice B feedback (feedback revealed), and the Periaate and Mallivastaus lines of the error-finding task and of fy5-4-L2-08. The m·v²/r fractions stay on one line, the wording is natural and the term is used consistently. Nothing is clipped, and a page scan at 390 px found no inline formula that wraps or scrolls.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4
