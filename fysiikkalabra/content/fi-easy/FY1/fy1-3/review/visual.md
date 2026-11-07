@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 60df86b54c7def57
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: c93916da7159938e
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
 
 ## Polish
-- Hyphen fix virhe-arvio -> virhearvio applied consistently; no issues.
+- none
 
 ## Checked
-- lesson.md, inquiry.json, figures.json, exit-ticket.json, figures.py diff vs origin/main; no captures, SVG not rendered
+- example-plot figure moved after the Järkevyys step (content unchanged), inquiry.json answer 2,08, lesson-answers.py.
+- No captures opened (light mode, judged from the diff). Fi-easy: sentences stay short and plain, notation and units in LaTeX with decimal comma, changes match the Finnish fix.

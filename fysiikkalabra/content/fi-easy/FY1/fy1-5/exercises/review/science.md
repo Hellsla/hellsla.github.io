@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 768d1a5bee752e06
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 5f14b6e77e1df132
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- none that affect correctness
 
 ## Checked
-- Interval notation 0-12 s, Voyager round trip 'Oletetaan', slope/speed wording (negative velocity when position decreases), 30x steepness bullet figures; correct.
+- diff since edb368de4 (exercises.json, solutions.md, answers.py): Voyager task 150 AU: (150-119,0)/0,0088602 = 3498,8 d -> 3500 d (recomputed, date June 2028), model vs JPL 1 AU remark, 41,6 h sig-fig wording, uncertainty notation Delta t, option B feedback, answers.py
+- numbers recomputed independently in Python

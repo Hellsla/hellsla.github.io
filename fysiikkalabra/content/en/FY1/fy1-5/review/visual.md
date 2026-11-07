@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 0d40c14d4544312a
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: f9fb7857e33c9c3c
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
@@ -9,4 +9,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since 
 - none
 
 ## Checked
-- diff of lesson.md, inquiry.json, exit-ticket.json, figures.json, figures.py, sims (fy1-5); figure changes judged from the lesson.md SVG rendered locally with KaTeX (no stale shots used); rendered motion (velocity arrow now blue, readable on white); sim.js syntax ok
+- Diff since edb368de4 of: lesson.md, inquiry.json. unit-substitution line (1 km = 1/149 597 870.7 AU) is clear and typographically consistent; comparison paragraph clearly says Sun distance vs Earth distance. Judged from the diff and source only; no captures opened (light mode).

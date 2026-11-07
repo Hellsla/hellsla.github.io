@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 703ae5847715501a
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 2f4ee739ed45e9bf
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-3 diff since the round-2 commit only)
 
 ## Blocking
 - none
 
 ## Polish
-- Mittapullo korvattu mittalasilla; johdonmukainen.
+- none
 
 ## Checked
-- lesson.md, inquiry.json, exit-ticket.json
-- Arvioitu: muutosten vaikutus oppimispolkuun, palautteen korjaavuus (ei ennenaikaista vastauksen paljastamista), termien johdonmukaisuus, suomen luettavuus.
+- inquiry.json (hook no longer names metals; two-row slope caveat; stone task states 1 ml reading precision; check-c2 title), figures.py hero alt, lesson.md table note. Hook now leaves the metals open, so the prediction is not given away.

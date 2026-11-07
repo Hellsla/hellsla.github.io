@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 4f05d67aa2366f83
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 3d04085ff61812ac
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-3 diff since the round-2 commit only)
 
 ## Blocking
 - none
 
 ## Polish
-- lesson: "a hundred, ten or one kilometre" reads slightly clipped; "a hundred kilometres, ten kilometres or one kilometre" is clearer.
+- none
 
 ## Checked
-- diff of lesson.md, inquiry.json, exit-ticket.json, figures.json, figures.py, sims (fy1-2); figure changes judged from the lesson.md SVG rendered locally with KaTeX (no stale shots used)
+- git diff edb368de4 of the part's files (en fy1-2 lesson): Voyager 2 d0 119,0 AU, 142,2 AU / 19,7 h feedback, source_note, table, calc text, significant-figure paragraph of lesson.md, sim.js D0 constant (no layout change); numbers in LaTeX with thin-space units, decimal comma/point per language consistent between feedback, model and reflection text.
+- source diff only (text, alt text, numbers); no figure geometry or layout changed, so no new captures were opened

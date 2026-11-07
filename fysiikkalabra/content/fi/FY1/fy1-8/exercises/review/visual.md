@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: a641cdeb2dff458e
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 8e9f0b247c03065b
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- ei huomautettavaa
 
 ## Checked
-- exercises.json, solutions.md, answers.py diff vs origin/main: $-delimiter and brace balance of every changed line, Finnish typographic style (thin space before units, nonbreaking AU:n), no notation broken.
+- fy1-8 exercises.json, solutions.md, answers.py (diff edb368de4 jälkeen)
+- 0,500/0,420 m/s -> 16 %, (s2 - s1)/(t2 - t1) -merkinnät, d ja erotus-kaavat ovat luettavia ja johdonmukaisia.

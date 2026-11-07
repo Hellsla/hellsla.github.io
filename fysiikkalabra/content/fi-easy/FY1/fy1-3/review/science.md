@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 60df86b54c7def57
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: c93916da7159938e
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- none that affect correctness
 
 ## Checked
-- Pure terminology (virhearvio), 'vaimentaa' instead of 'kumoaa' for averaging vs random error, reference value wording; no numeric change; physics right.
+- diff since edb368de4 (lesson.md, inquiry.json, exit-ticket.json, figures/sim/answers): inq-check2 answer 2,08 % (0,05/2,40 recomputed); lesson.md diff is the regenerated SVG only (no figures.py change)
+- numbers recomputed independently in Python; physics guardrails 1-7 on the changed passages

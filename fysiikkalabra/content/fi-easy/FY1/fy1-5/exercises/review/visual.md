@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 768d1a5bee752e06
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 5f14b6e77e1df132
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
 
 ## Polish
-- Exercise and solution wording changes read as clear Finnish; notation (units in math, decimal commas) intact. No issues.
+- none
 
 ## Checked
-- exercises.json, solutions.md, answers.py diff vs origin/main
+- units in LaTeX in prompts, d0 119,0 AU item (answer 3500), feedback on v-graph, Δt notation in solutions, answers.py.
+- No captures opened (light mode, judged from the diff). Fi-easy: sentences stay short and plain, notation and units in LaTeX with decimal comma, changes match the Finnish fix.

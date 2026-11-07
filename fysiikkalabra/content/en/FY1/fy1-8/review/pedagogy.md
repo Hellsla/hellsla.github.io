@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 0c7463bee6880e70
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: b0ba3657e5d92a73
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
@@ -9,4 +9,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since 
 - none
 
 ## Checked
-- lesson.md, inquiry.json, exit-ticket.json, figures.json, figures.py (and sim.js for fy1-5) diffs vs origin/main; wording, learner-facing feedback, notation, consistency with the Finnish fix. Changed passages read clearly for a 16-19-year-old, no new misconception or misleading feedback introduced.
+- lesson.md, inquiry.json, figures.py diffs. Delta symbols replaced by (s2 - s1) : (t2 - t1) so the slope is not confused with an uncertainty; velocity arrow blue in the figure with neutral grey distance bar (figures.py), consistent with the book; source-criticism and objective-record sentences added to theory.

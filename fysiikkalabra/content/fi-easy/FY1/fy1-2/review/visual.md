@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: e18b0f31d580983a
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 5f1df957828d01c9
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-3 diff since the round-2 commit only)
 
 ## Blocking
 - none
 
 ## Polish
-- Unit symbols moved into math ($142{,}9\,\text{AU}$:n) consistently; no issues.
+- none
 
 ## Checked
-- lesson.md, inquiry.json, figures.json, exit-ticket.json, figures.py diff vs origin/main; no captures, SVG not rendered
+- git diff edb368de4 of the part's files (fi-easy fy1-2 lesson): Voyager 2 d0 119,0 AU, 142,2 AU / 19,7 h feedback, source_note, table, calc text, significant-figure paragraph of lesson.md, sim.js D0 constant (no layout change); numbers in LaTeX with thin-space units, decimal comma/point per language consistent between feedback, model and reflection text.
+- source diff only (text, alt text, numbers); no figure geometry or layout changed, so no new captures were opened

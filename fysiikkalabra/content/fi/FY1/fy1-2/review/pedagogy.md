@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 9d7cf3ca9df81e8c
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 47933f68f26e6279
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-3 diff since the round-2 commit only)
 
 ## Blocking
 - none
 
 ## Polish
-- Kerto- ja jakolaskun merkitsevien numeroiden sääntö ja AU-määritelmä ovat nyt täsmällisempiä; ei muuta huomautettavaa.
+- lesson.md: "loppunolliin päättyvä arvo" is ungrammatical Finnish; better "nollaan päättyvä" or "loppunollilla päättyvä" (same in fi-easy).
 
 ## Checked
-- lesson.md, inquiry.json (word diff)
-- Arvioitu: muutosten vaikutus oppimispolkuun, palautteen korjaavuus (ei ennenaikaista vastauksen paljastamista), termien johdonmukaisuus, suomen luettavuus.
+- git diff edb368de4: inquiry.json (feedbacks 142,2 AU / 19,7 h / 142-kertainen, model, calc d0 119,0, source_note, table, Burlaga comparison feedback and explain model/criteria all consistent), lesson.md sig-fig sentence, sim.js D0, tests/sims/fy1-2.json. Comparison feedback is honest about 1 AU accuracy.

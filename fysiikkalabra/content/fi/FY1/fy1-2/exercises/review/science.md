@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 9871f6408d93f811
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 536d455eb8f2210b
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
 
 ## Polish
-- solutions.md L3-02 Kaava — N = a/D·1 px/W mixes AU and km until Muunnokset; fine as written, an "(a kilometreinä)" note would make it self-contained.
+- L1-02: "384 400 km on … tarkka arvo" follows the teacher's convention, but a measured mean distance is not exact. "käsitellään tarkkana" would be better.
 
 ## Checked
-- exercises.json (johdannaisyksikkö, gramma vs SI base unit, light-year in vacuum, pendulum small-swing condition), solutions.md (Mm check, ruler reading to 1 mm and difference 116 mm, 1 km^2 = 100 ha, apple mass, light-year 6,325·10^4 AU, Neptune pixels/screens, Voyager 2 round trip ~40 h). Every changed number recomputed; physics guardrails 1–7 applied to the changed passages only.
+- diff exercises.json, solutions.md, answers.py (L1-02 rounding reason, L3-05).
+- Recomputed L3-05: t_A = 2,34·10⁶ J : 85,0 W = 7,647 h, t_B = 6,111 h, difference 1,536 h → 1,5 h (key 1.5, tolerance 0,03 covers 1,455–1,545).

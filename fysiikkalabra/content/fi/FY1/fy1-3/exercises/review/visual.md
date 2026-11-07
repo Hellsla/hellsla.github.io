@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 9436846cd0f7b485
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 1bd8250b92e55c2c
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- ei huomautettavaa
 
 ## Checked
-- exercises.json, solutions.md, answers.py diff vs origin/main: $-delimiter and brace balance of every changed line, Finnish typographic style (thin space before units, nonbreaking AU:n), no notation broken.
+- fy1-3 exercises.json, solutions.md, answers.py (diff edb368de4 jälkeen)
+- Uudet lukemat (0,9 g; 36,4 g; 8,04…8,09 cm), summa 40,30 cm, 0,06 cm ja selitys systemaattisesta virheestä sopivat yhteen ja ovat luettavia.

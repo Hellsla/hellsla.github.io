@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 3fe489dcb602a583
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 84947dbee0c76ca6
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
@@ -9,4 +9,5 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since 
 - none
 
 ## Checked
-- exercises.json ((t, v) area task 0,80·12 = 9,6 m context, Voyager 150 AU as an assumption, cyclist interval), solutions.md (s0 cancels in the difference, 0,2 AU ≈ 20 vrk, interval notation, bullet 300 m/s steepness wording, negative slope = negative velocity for decreasing position). Every changed number recomputed; physics guardrails 1–7 applied to the changed passages only.
+- diff exercises.json, solutions.md, answers.py (unit wording, L2-08 distractor feedback, L3-01 Voyager, L3-02 rounding reason, uncertainty notation Δt).
+- Recomputed L3-01: 31,0 AU / 0,0088602 AU/vrk = 3498,8 vrk → 3,50·10³ (key 3500, tolerance 0,02); 2018-11-05 + 3499 vrk = 4.6.2028 ("kesäkuu 2028" right); 1 AU ≈ 112,9 vrk ("noin 110 vrk"). L3-02: 2·150 AU/c = 41,58 h → 41,6. L2-08: v = −1,0 m/s on the return trip is right.

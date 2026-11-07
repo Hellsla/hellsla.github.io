@@ -1,12 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 703ae5847715501a
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 2f4ee739ed45e9bf
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 + round-3 diff since edb368de4 only)
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- tulkinta solution: the least-squares slope with free intercept is 8,962 g/cm3 (8,96 as stated); a fit forced through the origin gives 8,966 (8,97). Correct as written; no change needed.
 
 ## Checked
-- lesson.md (density at given state, temperature and pressure; uncertainty wording; m = ρV as direct proportionality; slope from the fitted line; water displacement fully submerged; m_yht = ρV + m0 and intercept; beam 7870·1,20·0,040^2 ≈ 15,11 kg → 15 kg; g vs m^3 gives a 1000× too large number in kg/m^3), inquiry.json (162 g, m = kV + b distractor, 8,96 g/cm^3 sig. figs, mittalasi 0,79 g/cm^3 and 42 g, 0,675 kg, stone 70 ml, iron cube doubled volume, pine 4,00 kg, explain prompt additions covered by the model answer), exit-ticket.json (1,5 dm^3 of water). Every changed number recomputed; physics guardrails 1–7 applied to the changed passages only.
+- git diff edb368de4 of lesson.md, inquiry.json, figures.py (and figures.json for en/fi-easy).
+- Hook and hero alt no longer name the metals ("vaalea ja tumma", heavier = dark cube): consistent with the hook, no physics claim lost.
+- Density table note (room temperature, ice at 0 C, pine typical): correct.
+- Stone task: 187 g / 70 cm3 = 2671 -> 2,7e3 kg/m3; 1 ml reading resolution now stated, so 2 s.f. of the 70 ml difference is justified and agrees with the fy1-2 exact-integer convention.
+- check-c2 retitled "Kaksi rautakuutiota": title only, options unchanged.

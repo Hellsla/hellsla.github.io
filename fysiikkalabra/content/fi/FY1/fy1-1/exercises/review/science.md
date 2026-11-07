@@ -1,12 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 4dcb15e625705316
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 4ea094c3a76b7a09
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- L3-05: the answer 142,5 AU is the distance from the Sun and 143,05 AU is from the Earth; the solution says this, and the 0,6 AU difference is under the stated 1 AU limit. Physically right (in February Voyager 2 lies about 50° from the Sun's direction, so Earth−probe ≈ d + 0,6 AU).
 
 ## Checked
-- exercises.json (stone vs feather in air, model validity feedback, eclipse task: 39 000/400 ≈ 100 → apparent diameter ~1/100 of the Moon's, AU definition, "koko" table), solutions.md (atom/nucleus 3,5/1,4·10^4 = 2,5·10^4, Periaate on model reliability, 10^4 ratio of orders vs real diameters, d = d0 + s in AU). answers.py unchanged. Every changed number recomputed; physics guardrails 1–7 applied to the changed passages only.
+- diff exercises.json, solutions.md, answers.py (L3-04 10 min exact; L3-05 Voyager d0 119,0 AU).
+- Recomputed: 15,341 km/s · 7,25 · 3,156·10⁷ s = 3,510·10⁹ km = 23,46 AU; 119,0 + 23,46 = 142,46 → 142,5 AU (key 142.5). L3-04 1,19·10⁹ unchanged.
+- Voyager values agree across chapters: fy1-2 says Feb 2026 ≈ 142,5 AU, fy1-5 says 15.2.2026 142,6 AU (exact dates 142,4–142,7 AU).

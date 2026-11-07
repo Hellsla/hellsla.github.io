@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: a1190e072a3d246b
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 4bf62d81fbbd81e3
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-3 diff since the round-2 commit only)
 
 ## Blocking
 - none
 
 ## Polish
-- Units put into math ($1000\,\text{kg/m}^3$) and typographic quotes used; no issues.
+- none
 
 ## Checked
-- lesson.md, inquiry.json, figures.json, exit-ticket.json, figures.py diff vs origin/main; no captures, SVG not rendered
+- git diff edb368de4 of the part's files (fi-easy fy1-7 lesson): hero alt text (figures.py, figures.json, rendered aria-label) no longer names the metals, matches the Finnish fix in en and fi-easy; hook text, table note about temperature/wood (units LaTeX), second section title, density-estimate note in inquiry.
+- source diff only (text, alt text, numbers); no figure geometry or layout changed, so no new captures were opened

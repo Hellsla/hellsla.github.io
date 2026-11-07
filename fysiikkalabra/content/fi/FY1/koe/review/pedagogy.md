@@ -1,19 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 4a08579575d5056c
+CONTENT-HASH: b843e0bd094c59bd
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the koe/sovella copy-edit diff only)
 
 ## Blocking
-None. Round-1 items verified:
-- k3 c now asks to compare the relative uncertainties and explain the difference; the rubric states 15 % against 6 % and the summing of two effects (etumatka and erotusnopeus), 2+1+2 = 5 p. Correct.
-- k7 b gives the 1 mm uncertainty and asks "Pitääkö suoran kulkea origon kautta? Perustele."; the rubric 1+2+2+1 = 6 p asks only what is asked. k7 c uses the given value.
-- k1 e solution now attributes 4,5·10^-5 m to nano/micro confusion. Correct.
-- Intro states the consequential-error rule. Osa 1 correct options are now spread over A to D (2,1,0,3,1,2,0,1,2,1 zero-based).
+- none
 
 ## Polish
-- Osa 2 pair k4 + k5 still has no graph or linear model in Osa 2 (Osa 3 supplies it).
-- Both Osa 3 tasks are lab-data tasks; the brief prefers one societal or technological judgment. k7 d ends on a mild evaluation.
-- k4 a accepts only the "12 heilahdusta" cause; add "Hyväksytään myös" for other credible causes. k5 d and k2 d are open; list alternatives.
-- Verify fy1-3 teaches half-range as the uncertainty estimate, and fy1-6 that air resistance grows with speed.
-- k1 a wording ("monta kertaa") and k1 j distractors A,B,C,D and C,A,B,D map to no named error.
+- none
 
 ## Checked
-Totals (20 + 60 + 40), rubric sums, no bold, LaTeX, decimal comma, \cdot. Coverage of fy1-1..3, 5..7 in Osa 1 and all chapters across the exam; difficulty rises Osa 1 to 3; solutions complete and consistent with answers.py; no new hints introduced by the edits.
+- k1 a: stem now asks for the ratio of diameters; the distractor 10^2 explanation (nucleus taken to fill much of the atom) names a real misconception. k1 c: tilavuus-via-pituus makes the derived-quantity chain complete.
+- k2 d, k7: 'karkea arvio' is plain for the student; rubric detail matches the model answer. k5: reading uncertainty wording is clear. k7 d: Δd/N formula and the exact-80 g/m² reasoning (precision limited by thickness, ~20 kg/m³) is learnable and consistent with the answer.
+- Reaction-time 7-14 % matches 0,1-0,2 s over 1,4 s; the 6 % + 7 % ≈ 13 % explanation links to the 15 % and is a teachable step. Graph alt texts agree in number; no answer given away.

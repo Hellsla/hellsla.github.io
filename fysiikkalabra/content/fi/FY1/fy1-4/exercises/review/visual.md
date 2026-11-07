@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 66db7ab3ad3aa3ad
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 4c62fd761e2de5e6
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- ei huomautettavaa
 
 ## Checked
-- exercises.json, solutions.md, answers.py diff vs origin/main: $-delimiter and brace balance of every changed line, Finnish typographic style (thin space before units, nonbreaking AU:n), no notation broken.
+- fy1-4 exercises.json, solutions.md, answers.py (diff edb368de4 jälkeen)
+- Yksi lause (kahden numeron perustelu) selkeä.

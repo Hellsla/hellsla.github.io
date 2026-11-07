@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 2ed30cbfbb176f4e
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 7d2e25570024b2be
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
@@ -9,4 +9,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since 
 - none
 
 ## Checked
-- exercises.json, solutions.md and answers.py diffs vs origin/main; wording of tasks and feedback, solution structure, significant figures, consistency with the Finnish fix. Changed passages read clearly for a 16-19-year-old, no new misconception or misleading feedback introduced.
+- exercises.json, solutions.md, answers.py diffs. Zero-error scale task (0.9 g, 36.4 g) and calliper task (0.06 cm) have fresh numbers so figure-zero values are not reused; reasonableness text consistent (random about half the systematic).

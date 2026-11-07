@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 0c7463bee6880e70
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: b0ba3657e5d92a73
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
@@ -9,4 +9,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since 
 - none
 
 ## Checked
-- Diff of lesson.md, inquiry.json (feedbacks, model answers, solutions), figures.json, exit-ticket.json, figures.py, sim files since origin/main; the changes are physics-neutral clarifications (units in math mode, AU as a close-to-mean distance, vacuum for light-year, wording of feedback); no answer or correct option changed.
+- inquiry.json, lesson.md, figures.py diff. Slope notation (s2-s1)/(t2-t1); velocity arrow blue, distance marker grey in figure (matches figures.py); source-criticism and objectivity sentences correct; min distance 1.7 m (0.42*0.2/0.05=1.68) and 14 m (1.4*0.3/0.03) recomputed.

@@ -1,20 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 4dcb15e625705316
+CONTENT-HASH: 4ea094c3a76b7a09
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] L1-08, L2-06 Vastaus — carried: "Eli 10^4; …" reads awkwardly after the answer chip.
-- [Minor] L2-05, L2-07 tables — carried: left-aligned, decimals not aligned (shared component).
-- [Minor] L1-09 feedback — carried: "näyttäisi tuhat kertaa Kuuta suuremmalta" is a loose phrase; "tuhatkertaiselta" reads smoother.
+- ei huomautettavaa
 
 ## Checked
-- Delta of exercises.json and solutions.md read in full against captures.
-- open-exercises-1280-5: L1-07 solution chain, L1-06 reworded task and feedback render cleanly.
-- open-exercises-1280-8: L1-08 reworded Vastaus, L1-09 new two-paragraph task, units in LaTeX, feedback in its card.
-- open-exercises-1280-9: L1-09 Periaate (likimain), Mallivastaus fraction, Järkevyys chain; nothing clipped.
-- L2-05 caption and L2-09 "koko" wording, and the L1-04 Järkevyys fraction, checked in the source diff only.
-
-## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+- fy1-1 exercises.json, solutions.md, answers.py (diff edb368de4 jälkeen)
+- Voyager 2 -tehtävä ja ratkaisu: d0 = 119,0 AU, ennuste 142,5 AU Auringosta vs. havainto 143,05 AU Maasta, ero 0,6 AU; lause 'Kesto 10 min on tarkka' ja LaTeX-yksiköt kunnossa.

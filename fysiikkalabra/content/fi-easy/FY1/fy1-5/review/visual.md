@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 457aac29ef483907
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 78fc686408e8e015
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
 
 ## Polish
-- Velocity arrow and label now blue (COLD) in figures.py and sim.js, as NOTES.md §3 requires; consistent.
+- none
 
 ## Checked
-- lesson.md, inquiry.json, figures.json, exit-ticket.json, figures.py, sim.js diff vs origin/main; no captures, SVG not rendered
+- Voyager 2 d0 119,0 AU, 142,6 AU Sun vs 143,05 AU Earth comparison, unit-conversion line, inquiry.json.
+- No captures opened (light mode, judged from the diff). Fi-easy: sentences stay short and plain, notation and units in LaTeX with decimal comma, changes match the Finnish fix.

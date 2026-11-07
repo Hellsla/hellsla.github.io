@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: ec3033d2695b3618
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: bf1ac684a0b58cd2
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
@@ -9,4 +9,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since 
 - none
 
 ## Checked
-- Diff of exercises.json, solutions.md and answers.py since origin/main; changed numbers recomputed by hand or in Python where they changed (substitutions, rounding, reasonableness checks); no answer or correct option changed.
+- exercises.json, solutions.md, answers.py diff. L3-05: 1.536 h -> 1.5 h (0.65 kWh has two figures), tolerance covers 1.54; 384 400 km exact whole-number convention consistent with the lesson.md sentence.

@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 0c51717ed8e7897c
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 1d524cde5c7b4567
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
 
 ## Polish
-- Ei huomautettavaa.
+- none
 
 ## Checked
-- Pedagogy role, fi-easy: diff since origin/main of content/fi-easy/FY1/fy1-3/exercises/exercises.json, exercises/solutions.md, lessons/FY1/fy1-3/answers.py. Judged: learning path unchanged, feedback still repairs the misconception, no answer disclosed early, difficult words explained (NOTES §12), same physics as the Finnish fix.
+- exercises.json, solutions.md, answers.py (new numbers 36,4 - 0,9 = 35,5 g; calliper data 8,04..8,09 cm, error 0,06 cm; arithmetic and the 0,025 cm vs 0,06 cm reasoning rechecked).

@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: d302cb2338c362fa
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 7e281292c53d6b9f
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 + round-3 diff since edb368de4 only)
 
 ## Blocking
 - none
 
 ## Polish
-- Sig-fig rewrites (4.0e2 cm3, 1.8e3 kg, 9.20e2 kg/m3) are consistent with the stated figure counts.
+- none
 
 ## Checked
-- Diff of exercises.json, solutions.md and answers.py since origin/main; changed numbers recomputed by hand or in Python where they changed (substitutions, rounding, reasonableness checks); no answer or correct option changed.
+- no content change in this part since the previous light review: exercises.json and solutions.md are as passed in round 2; the only new change is a comment in answers.py (inq-siirto: "readings to 1 ml, stated in the task"), which changes the hash, not any value.
+- Rechecked the round-2 values: alloy (2,70*100 + 7,87*50)/150 = 4,42 g/cm3; 2,5 dm3 * 790 = 2,0 kg; 197/250 = 788 kg/m3; 8,96/2,70 = 3,32; V_Cu = 250/6,26 = 39,9 cm3.

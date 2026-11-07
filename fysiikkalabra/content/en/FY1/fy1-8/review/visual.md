@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 0c7463bee6880e70
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: b0ba3657e5d92a73
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] figures.py figure: no capture opened; blue/grey change judged from the code diff only.
 
 ## Checked
-- diff of lesson.md, inquiry.json, exit-ticket.json, figures.json, figures.py, sims (fy1-8); figure changes judged from the lesson.md SVG rendered locally with KaTeX (no stale shots used)
+- Diff since edb368de4 of: lesson.md, inquiry.json, figures.py (velocity arrow and v label blue, s bracket grey). velocity blue per convention; the s bracket no longer shares the velocity colour. Judged from the diff and source only; no captures opened (light mode).

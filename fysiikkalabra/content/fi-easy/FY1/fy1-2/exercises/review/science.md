@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 504b03b343c2fadf
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 5f4f2426ee24d0b6
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- none that affect correctness
 
 ## Checked
-- Heilurin small-angle assumption added (correct, T independent of m, dimensional analysis intact); gram/kilogram, derived-unit feedback; N formula now a/D with a in km (consistent with 4,498e9 km / 3474 km = 1,295e6); light-travel estimates (145 AU: 20 h, 40 h round trip) recomputed.
+- diff since edb368de4 (exercises.json, solutions.md, answers.py): L3-05 answer 1,5 h (1,536 h; tolerance range in answers.py checked), exact 384 400 km wording, answers.py Voyager table (2018-2030, Feb 2026)
+- numbers recomputed independently in Python

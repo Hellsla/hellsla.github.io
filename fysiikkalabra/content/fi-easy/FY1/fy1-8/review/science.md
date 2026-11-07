@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: fb2e6c19d308e982
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 530cc5a1ca475aac
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- none that affect correctness
 
 ## Checked
-- Hypothesis (s=vt, s:t falsifies if falling clearly), research-question example fixed (kulkuaika vs matka), 'muutettava/mitattava muuttuja' terms, 0,05 s*... 4,9 % 'juuri ja juuri' within limit; correct.
+- diff since edb368de4 (lesson.md, inquiry.json, exit-ticket.json, figures/sim/answers): velocity arrow blue in figures.py (fy1-8 figure), slope notation (s2-s1)/(t2-t1), design-estimate rounding of 14 m and 1,7 m, source-criticism and objectivity sentences
+- numbers recomputed independently in Python; physics guardrails 1-7 on the changed passages

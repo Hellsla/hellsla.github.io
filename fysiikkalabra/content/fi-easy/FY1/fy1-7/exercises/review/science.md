@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 3e6abde419223023
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: d231a9d1d2b474fc
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 + round-3 diff since edb368de4 only)
 
 ## Blocking
 - none
@@ -9,4 +9,5 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since 
 - none
 
 ## Checked
-- Recomputed: standard-form answers 4,0e2 cm3, 1,8e3 kg, 9,20e2, 8,9e3 kg/m3 (sig figs match data); 0,0890/1,0e-5; 15,11 kg approx; unit conversion chains written out correctly; oil 0,92 -> floats.
+- no content change in this part since the previous light review: exercises.json and solutions.md are as passed in round 2; the only new change is a comment in answers.py (inq-siirto: "readings to 1 ml, stated in the task"), which changes the hash, not any value.
+- Rechecked the round-2 values: alloy (2,70*100 + 7,87*50)/150 = 4,42 g/cm3; 2,5 dm3 * 790 = 2,0 kg; 197/250 = 788 kg/m3; 8,96/2,70 = 3,32; V_Cu = 250/6,26 = 39,9 cm3.

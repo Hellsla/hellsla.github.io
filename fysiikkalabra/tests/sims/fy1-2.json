@@ -211,75 +211,75 @@
  {
   "setup": "const q=(s)=>document.querySelector(s), J=(i)=>q('#sim-root .jumps').children[i].click(), bs=[...document.querySelectorAll('#sim-root .controls > button')], fire=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}, setN=(v)=>{const r=q('#sim-root input[type=range]'); r.value=v; fire(r);}, setD=(v)=>{const e=q('#sim-root input[type=date]'); e.value=v; fire(e);}, setSp=(v)=>{const e=q('#sim-root select'); e.value=v; fire(e);}; setD('2018-11-05');",
   "expr": "window.simState.vAU",
-  "expected": 119.69999999999999,
+  "expected": 118.99999999999999,
   "tol": 1e-06,
-  "note": "Voyager 2 on 2018-11-05: d = d0 + v(t - t0) = 119.70 AU"
+  "note": "Voyager 2 on 2018-11-05: d = d0 + v(t - t0) = 119.00 AU"
  },
  {
   "expr": "window.simState.vKm",
-  "expected": 17906865122.789997,
+  "expected": 17802146613.299995,
   "tol": 1e-06,
-  "note": "Voyager 2 on 2018-11-05: d = 1.791e+10 km (119,7 AU = 1,79e10 km at t0 plus 15,341 km/s times the time)"
+  "note": "Voyager 2 on 2018-11-05: d = 1.780e+10 km (119,0 AU = 1,78e10 km at t0 plus 15,341 km/s times the time)"
  },
  {
   "expr": "window.simState.vTLight",
-  "expected": 59730.87262518791,
+  "expected": 59381.5692765026,
   "tol": 1e-06,
-  "note": "Voyager 2 on 2018-11-05: one-way signal time d/c = 16.59 h"
+  "note": "Voyager 2 on 2018-11-05: one-way signal time d/c = 16.49 h"
  },
  {
   "expr": "window.simState.vTh",
-  "expected": 16.591909062552197,
+  "expected": 16.494880354584055,
   "tol": 1e-06,
   "note": "Voyager 2 on 2018-11-05: signal time in hours"
  },
  {
   "setup": "const q=(s)=>document.querySelector(s), J=(i)=>q('#sim-root .jumps').children[i].click(), bs=[...document.querySelectorAll('#sim-root .controls > button')], fire=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}, setN=(v)=>{const r=q('#sim-root input[type=range]'); r.value=v; fire(r);}, setD=(v)=>{const e=q('#sim-root input[type=date]'); e.value=v; fire(e);}, setSp=(v)=>{const e=q('#sim-root select'); e.value=v; fire(e);}; setD('2026-01-01');",
   "expr": "window.simState.vAU",
-  "expected": 142.86048147869792,
+  "expected": 142.16048147869793,
   "tol": 1e-06,
-  "note": "Voyager 2 on 2026-01-01: d = d0 + v(t - t0) = 142.86 AU"
+  "note": "Voyager 2 on 2026-01-01: d = d0 + v(t - t0) = 142.16 AU"
  },
  {
   "expr": "window.simState.vKm",
-  "expected": 21371623836.389996,
+  "expected": 21266905326.899994,
   "tol": 1e-06,
-  "note": "Voyager 2 on 2026-01-01: d = 2.137e+10 km (119,7 AU = 1,79e10 km at t0 plus 15,341 km/s times the time)"
+  "note": "Voyager 2 on 2026-01-01: d = 2.127e+10 km (119,0 AU = 1,78e10 km at t0 plus 15,341 km/s times the time)"
  },
  {
   "expr": "window.simState.vTLight",
-  "expected": 71288.06367900688,
+  "expected": 70938.76033032157,
   "tol": 1e-06,
-  "note": "Voyager 2 on 2026-01-01: one-way signal time d/c = 19.80 h"
+  "note": "Voyager 2 on 2026-01-01: one-way signal time d/c = 19.71 h"
  },
  {
   "expr": "window.simState.vTh",
-  "expected": 19.802239910835244,
+  "expected": 19.7052112028671,
   "tol": 1e-06,
   "note": "Voyager 2 on 2026-01-01: signal time in hours"
  },
  {
   "setup": "const q=(s)=>document.querySelector(s), J=(i)=>q('#sim-root .jumps').children[i].click(), bs=[...document.querySelectorAll('#sim-root .controls > button')], fire=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}, setN=(v)=>{const r=q('#sim-root input[type=range]'); r.value=v; fire(r);}, setD=(v)=>{const e=q('#sim-root input[type=date]'); e.value=v; fire(e);}, setSp=(v)=>{const e=q('#sim-root select'); e.value=v; fire(e);}; setD('2030-01-01');",
   "expr": "window.simState.vAU",
-  "expected": 155.80518822712094,
+  "expected": 155.10518822712095,
   "tol": 1e-06,
-  "note": "Voyager 2 on 2030-01-01: d = d0 + v(t - t0) = 155.81 AU"
+  "note": "Voyager 2 on 2030-01-01: d = d0 + v(t - t0) = 155.11 AU"
  },
  {
   "expr": "window.simState.vKm",
-  "expected": 23308124402.789997,
+  "expected": 23203405893.299995,
   "tol": 1e-06,
-  "note": "Voyager 2 on 2030-01-01: d = 2.331e+10 km (119,7 AU = 1,79e10 km at t0 plus 15,341 km/s times the time)"
+  "note": "Voyager 2 on 2030-01-01: d = 2.320e+10 km (119,0 AU = 1,78e10 km at t0 plus 15,341 km/s times the time)"
  },
  {
   "expr": "window.simState.vTLight",
-  "expected": 77747.53427182614,
+  "expected": 77398.23092314083,
   "tol": 1e-06,
-  "note": "Voyager 2 on 2030-01-01: one-way signal time d/c = 21.60 h"
+  "note": "Voyager 2 on 2030-01-01: one-way signal time d/c = 21.50 h"
  },
  {
   "expr": "window.simState.vTh",
-  "expected": 21.596537297729483,
+  "expected": 21.49950858976134,
   "tol": 1e-06,
   "note": "Voyager 2 on 2030-01-01: signal time in hours"
  },
@@ -291,15 +291,15 @@
  },
  {
   "setup": "const q=(s)=>document.querySelector(s), J=(i)=>q('#sim-root .jumps').children[i].click(), bs=[...document.querySelectorAll('#sim-root .controls > button')], fire=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}, setN=(v)=>{const r=q('#sim-root input[type=range]'); r.value=v; fire(r);}, setD=(v)=>{const e=q('#sim-root input[type=date]'); e.value=v; fire(e);}, setSp=(v)=>{const e=q('#sim-root select'); e.value=v; fire(e);}; setD('2026-01-01');",
-  "expr": "(() => { const x=simText('#sim-root .readout'); return x.includes('Voyager 2') && x.includes('mallin arvot (NASA/JPL)') && x.includes('d = 2{,}14\\\\cdot10^{10}\\\\,\\\\text{km} = 143\\\\,\\\\text{AU}') && x.includes('v = 15{,}341\\\\,\\\\text{km/s}') && x.includes('t = 19{,}8\\\\,\\\\text{h}') && x.includes('1.1.2026') ? 1 : 0 })()",
+  "expr": "(() => { const x=simText('#sim-root .readout'); return x.includes('Voyager 2') && x.includes('mallin arvot') && x.includes('d = 2{,}13\\\\cdot10^{10}\\\\,\\\\text{km} = 142\\\\,\\\\text{AU}') && x.includes('v = 15{,}341\\\\,\\\\text{km/s}') && x.includes('t = 19{,}7\\\\,\\\\text{h}') && x.includes('1.1.2026') ? 1 : 0 })()",
   "expected": 1,
   "tol": 0.01,
-  "note": "Voyager 2 readout for 1.1.2026 (set before): model values with their source, d in km and AU, v, signal time"
+  "note": "Voyager 2 readout for 1.1.2026 (set before): model values, d in km and AU, v, signal time"
  },
  {
   "setup": "const q=(s)=>document.querySelector(s), J=(i)=>q('#sim-root .jumps').children[i].click(), bs=[...document.querySelectorAll('#sim-root .controls > button')], fire=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}, setN=(v)=>{const r=q('#sim-root input[type=range]'); r.value=v; fire(r);}, setD=(v)=>{const e=q('#sim-root input[type=date]'); e.value=v; fire(e);}, setSp=(v)=>{const e=q('#sim-root select'); e.value=v; fire(e);}; setD('2030-01-01'); J(9);",
   "expr": "window.simState.x",
-  "expected": 6709304.664015544,
+  "expected": 6679161.166753022,
   "tol": 1e-06,
   "note": "the Voyager 2 jump button goes to the probe on the chosen date (2030-01-01)"
  },
@@ -378,11 +378,11 @@
   "note": "the readout shows the distance travelled and the elapsed time during a trip"
  },
  {
-  "setup": "const q=(s)=>document.querySelector(s), J=(i)=>q('#sim-root .jumps').children[i].click(), bs=[...document.querySelectorAll('#sim-root .controls > button')], fire=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}, setN=(v)=>{const r=q('#sim-root input[type=range]'); r.value=v; fire(r);}, setD=(v)=>{const e=q('#sim-root input[type=date]'); e.value=v; fire(e);}, setSp=(v)=>{const e=q('#sim-root select'); e.value=v; fire(e);}; bs[1].click(); setD('2026-02-01'); setN(10.33); setSp('10000'); bs[0].click();",
-  "expr": "(() => { const S=window.simState; return S.running===false && S.active===true && Math.abs(S.sTrip/33092275.767673492-1)<1e-4 && Math.abs(S.tTrip/110.38395024491741-1)<1e-4 ? 1 : 0 })()",
+  "setup": "const q=(s)=>document.querySelector(s), J=(i)=>q('#sim-root .jumps').children[i].click(), bs=[...document.querySelectorAll('#sim-root .controls > button')], fire=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}, setN=(v)=>{const r=q('#sim-root input[type=range]'); r.value=v; fire(r);}, setD=(v)=>{const e=q('#sim-root input[type=date]'); e.value=v; fire(e);}, setSp=(v)=>{const e=q('#sim-root select'); e.value=v; fire(e);}; bs[1].click(); setD('2026-02-01'); setN(10.32); setSp('10000'); bs[0].click();",
+  "expr": "(() => { const S=window.simState; return S.running===false && S.active===true && Math.abs(S.sTrip/415033352.75959015-1)<1e-4 && Math.abs(S.tTrip/1384.4022479030816-1)<1e-4 ? 1 : 0 })()",
   "expected": 1,
   "tol": 0.01,
-  "note": "a trip from d = 10^10,33 km at x10 000 stops at Voyager 2 (2026-02-01): s = d_V - 10^10,33 km, t = s/c"
+  "note": "a trip from d = 10^10,32 km at x10 000 stops at Voyager 2 (2026-02-01): s = d_V - 10^10,32 km, t = s/c"
  },
  {
   "setup": "const q=(s)=>document.querySelector(s), J=(i)=>q('#sim-root .jumps').children[i].click(), bs=[...document.querySelectorAll('#sim-root .controls > button')], fire=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}, setN=(v)=>{const r=q('#sim-root input[type=range]'); r.value=v; fire(r);}, setD=(v)=>{const e=q('#sim-root input[type=date]'); e.value=v; fire(e);}, setSp=(v)=>{const e=q('#sim-root select'); e.value=v; fire(e);}; bs[1].click();",

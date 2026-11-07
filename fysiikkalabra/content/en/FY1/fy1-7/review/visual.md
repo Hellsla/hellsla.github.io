@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 73788ee47a96da85
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: dacadcdcabc7d37b
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-3 diff since the round-2 commit only)
 
 ## Blocking
 - none
@@ -9,4 +9,5 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since 
 - none
 
 ## Checked
-- diff of lesson.md, inquiry.json, exit-ticket.json, figures.json, figures.py, sims (fy1-7); figure changes judged from the lesson.md SVG rendered locally with KaTeX (no stale shots used)
+- git diff edb368de4 of the part's files (en fy1-7 lesson): hero alt text (figures.py, figures.json, rendered aria-label) no longer names the metals, matches the Finnish fix in en and fi-easy; hook text, table note about temperature/wood (units LaTeX), second section title, density-estimate note in inquiry.
+- source diff only (text, alt text, numbers); no figure geometry or layout changed, so no new captures were opened

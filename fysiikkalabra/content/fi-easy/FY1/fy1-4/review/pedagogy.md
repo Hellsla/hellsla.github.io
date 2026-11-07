@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: bfa8e210388bf308
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 8fe1982305035989
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
 
 ## Polish
-- Ei huomautettavaa. 'Kuinka monen vuorokauden kuluttua' on selkeämpi kuin entinen 'monentenako'.
+- none
 
 ## Checked
-- Pedagogy role, fi-easy: diff since origin/main of content/fi-easy/FY1/fy1-4/lesson.md, inquiry.json, exit-ticket.json, figures.json; lessons/FY1/fy1-4/figures.py. Judged: learning path unchanged, feedback still repairs the misconception, no answer disclosed early, difficult words explained (NOTES §12), same physics as the Finnish fix.
+- inquiry.json (cart pushed then uniform; cyclist clock started late: explains the non-zero intercept), lesson.md (physical/graphical/mathematical model, interpolation/extrapolation, exact zeros 20 / 60 in the worked example).

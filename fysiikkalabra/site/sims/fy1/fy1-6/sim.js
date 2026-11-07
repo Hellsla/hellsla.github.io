@@ -4,11 +4,12 @@
 // Its exact solution is v = vt·tanh(g t / vt) with the terminal speed vt = √(m g / K); the fallen distance is (vt²/g)·ln cosh(g t / vt).
 // Time: the slider "Hetki t" scrubs 0…4 s; the main button plays it in simulated time (dt·speed), so the "Nopeus (toisto)" select changes
 // only the pace. The graph is drawn for the times visited so far (tmax); dots mark whole seconds; the faint dashed line is v = g t.
-// Colour carries meaning: orange = ball A, blue = ball B, in the scene, the arrows, the graph and the legend.
+// Colour carries meaning: orange = ball A, blue = ball B, on the ball, its trail dots, its graph line and the legend. Both velocity arrows are
+// velocity blue (VEL, the book's colour for velocity); they are told apart by their position beside ball A or B.
 // Every canvas text goes through lab(), which pushes its ink box to simState.labels. p5.js 1.9 instance mode.
 new p5((p) => {
   const g = 9.81, KDRAG = 0.5 * 1.2 * 0.47 * Math.PI * 0.1 * 0.1, T = 4, H = 80;      // g (m/s²), drag constant (kg/m), run time (s), scale height (m)
-  const COL = { A: [232, 118, 28], B: [38, 110, 214] };
+  const COL = { A: [232, 118, 28], B: [38, 110, 214] }, VEL = [25, 113, 194];   // ball identity colours; velocity arrows #1971c2
   const SC = { x0: 8, x1: 240, top: 46, ppm: 3.75, ground: 360, ax: 110, bx: 184, ruler: 50 };    // scene: pixels per metre, ball columns, ruler x
   const G = { x0: 316, x1: 500, y0: 350, y1: 70 };                         // graph box: t 0…4 s, v 0…40 m/s
   let btn, sl, slA, slB, lSl, lA, lB, selEnv, selSp, readout;
@@ -104,7 +105,7 @@ new p5((p) => {
       // trail dots at every whole second visited so far
       for (let s = 0; s <= Math.min(T, Math.floor(tmax + 1e-9)); s++) { p.noStroke(); p.fill(...c, 170); p.circle(bx - 20, SY(fallen(m, s, air)), 5); }
       ball(bx, SY(y), c);
-      if (v > 0.01) arrow(bx + 20, SY(y), bx + 20, SY(y) + v * 1.4, c);
+      if (v > 0.01) arrow(bx + 20, SY(y), bx + 20, SY(y) + v * 1.4, VEL);
       lab(`$\\text{${letter}}$`, bx, 24 + fh * 0.36, 'c', fh, c);
     }
   }

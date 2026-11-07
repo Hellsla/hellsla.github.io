@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 9436846cd0f7b485
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 1bd8250b92e55c2c
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
 
 ## Polish
-- Yksikkömuunnos 'sijoita yksikön arvo' on johdonmukainen ratkaisuissa.
+- Calliper data now give a one-figure answer 0,06 cm; fine, and the 'zero error / dirt' explanation is plausible.
 
 ## Checked
-- exercises.json, solutions.md; vastaus 10,67 mm vastaa edelleen tehtävän answer-arvoa ja answers.py:tä
-- Arvioitu: muutosten vaikutus oppimispolkuun, palautteen korjaavuus (ei ennenaikaista vastauksen paljastamista), termien johdonmukaisuus, suomen luettavuus.
+- exercises.json, solutions.md, answers.py diff: Zero-offset task (36,4 - 0,9 = 35,5 g) and calliper task (mean 8,06, error 0,06 cm, random error 0,025, 'puolet'); numbers and reasoning recomputed and consistent.

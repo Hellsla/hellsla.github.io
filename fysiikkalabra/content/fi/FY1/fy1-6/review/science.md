@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 772da5217571230b
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 8df0fe9533bdd32b
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
 
 ## Polish
-- lesson.md "ilma jarruttaa eniten kevyen ja leveän kappaleen putoamista" — right as an effect on the motion (small mass per area); level C, no change needed.
+- none
 
 ## Checked
-- lesson.md (Moon question, slope from two distant points, Δv = gΔt for a downward-moving body not starting at rest, 9,81 → 15 m/s at 1,5 s, v = gt valid only when drag can be neglected, 1 m/s = 3,6 km/h), inquiry.json (contribution, unit/quantity feedback, constant Δv per second, mass absent from v = gt, vacuum acceleration g, g = 4,9/0,50 = 9,8 m/s^2), figures.py (velocity arrows recoloured, B dashed; alt text). Every changed number recomputed; physics guardrails 1–7 applied to the changed passages only.
+- diff sim.js (velocity arrows VEL blue; colours only, physics unchanged), exit-ticket.json, lesson.md ("metriä sekunnissa toiseen"), inquiry.json (fit line colour), lesson-answers.py.
+- Recomputed: 9,81 : 1,62 = 6,056 → 6,06 (three figures, as in g); 1,62·3,0 = 4,9 m/s and 9,81·3,0 = 29 m/s unchanged.

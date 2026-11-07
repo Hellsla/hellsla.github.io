@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 6e088868424da153
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: c21f036fe7209f89
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
 
 ## Polish
-- Discussion/conclusion split (L-section items) is consistent across question, feedback and solution. answers/solutions use T_fall in one place where the rest of the chapter writes Delta T_fall; notation only.
+- none
 
 ## Checked
-- Diff of exercises.json, solutions.md and answers.py since origin/main; changed numbers recomputed by hand or in Python where they changed (substitutions, rounding, reasonableness checks); no answer or correct option changed.
+- exercises.json, solutions.md, answers.py diff. |0.500-0.420|/0.500 = 16 %; 3.75 = 0.15/0.04 ratio; reaction-time caveat in the discussion task is sound physics; Delta-t notation clash resolved (d, t_end - t_start).

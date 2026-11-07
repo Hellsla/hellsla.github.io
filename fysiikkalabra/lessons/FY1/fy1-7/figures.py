@@ -13,8 +13,8 @@ RHO = {"mänty": 0.50, "alumiini": 2.70, "rauta": 7.87}
 
 def hero():
     """The chapter's opening illustration: two cubes of the same size tip a balance, a measuring cylinder waits beside them."""
-    f = H.hero("fy17-hero", "Kuvitus: laboratorion pöydällä vaaka, jonka kupeissa on kaksi samankokoista metallikuutiota, vaalea alumiininen ja "
-               "tumma rautainen. Vaaka kallistuu rautakuution puolelle. Vieressä mittalasi, jossa on vettä.")
+    f = H.hero("fy17-hero", "Kuvitus: laboratorion pöydällä vaaka, jonka kupeissa on kaksi samankokoista metallikuutiota, vaalea ja tumma. "
+               "Vaaka kallistuu tumman kuution puolelle. Vieressä mittalasi, jossa on vettä.")
     H.tiles(f, 430)
     H.window(f, 60, 50, 220, 230, "fy17h-win")
     f.rect(820, 120, 340, 14, RULE, INK, 3, 3)                               # a shelf with bottles

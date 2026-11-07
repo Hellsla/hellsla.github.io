@@ -1,5 +1,5 @@
 {
-  "intro": "Kaksi tehtävää kokoavat moduulin mittaamisen, kuvaajien ja tutkimisen taidot. Kolmannella arvioit oman tutkimusraporttisi.",
+  "intro": "Kaksi tehtävää kokoaa moduulin mittaamisen, kuvaajien ja tutkimisen taidot. Kolmannella arvioit oman tutkimusraporttisi.",
   "tasks": [
     {
       "id": "fy1-s1",
@@ -115,7 +115,7 @@
       "title": "Kahden kuulan kilpa",
       "source": "example",
       "source_note": "Työselostus ja mittaukset on laadittu esimerkiksi.",
-      "text": "Ryhmä tutki, vaikuttaako kuulan massa siihen, kuinka kauan kuulalta kestää vieriä rampin alas. Tässä on ryhmän työselostus.\n\n> **Tutkimuskysymys.** Vierivätkö raskaat kuulat nopeammin?\n>\n> **Hypoteesi.** Raskas kuula on nopeampi, koska painovoima vetää sitä enemmän.\n>\n> **Välineet.** $1{,}2\\,\\text{m}$ pitkä ramppi, kirjapino, teräskuula ($110\\,\\text{g}$), samankokoinen umpinainen muovikuula ($16\\,\\text{g}$) ja puhelimen sekuntikellosovellus, joka näyttää tuhannesosasekunnit.\n>\n> **Menetelmä.** Nostimme rampin yläpään kirjapinon päälle. Päästimme teräskuulan rampin yläpäästä, ja Eetu käynnisti ajanoton kuulan lähtiessä. Muovikuula ei meinannut lähteä liikkeelle, joten annoimme sille pienen tönäisyn suunnilleen samasta kohdasta. Välissä kirjapinosta otettiin yksi kirja pois, koska sitä tarvittiin toisella tunnilla. Ajanotto pysäytettiin, kun kuula osui rampin päässä olevaan seinään.\n>\n> **Tulokset.** Teräskuula $2{,}437\\,\\text{s}$, muovikuula $2{,}109\\,\\text{s}$.\n>\n> **Johtopäätös.** Muovikuula oli $0{,}328\\,\\text{s}$ nopeampi, joten hypoteesi on väärä: kevyt kuula vierii nopeammin. Kevyet kappaleet liikkuvat aina nopeammin kuin raskaat.\n\nOpettajan palautteen jälkeen ryhmä korjasi menetelmänsä ja mittasi uudelleen:\n\n| Mittaus | teräskuula $t\\ (\\text{s})$ | muovikuula $t\\ (\\text{s})$ |\n|---|---|---|\n| $1$ | $2{,}31$ | $2{,}40$ |\n| $2$ | $2{,}45$ | $2{,}33$ |\n| $3$ | $2{,}38$ | $2{,}47$ |\n| $4$ | $2{,}29$ | $2{,}36$ |\n| $5$ | $2{,}42$ | $2{,}44$ |",
+      "text": "Ryhmä tutki, vaikuttaako kuulan massa siihen, kuinka kauan kuulalta kestää vieriä ramppia alas. Tässä on ryhmän työselostus.\n\n> **Tutkimuskysymys.** Vierivätkö raskaat kuulat nopeammin?\n>\n> **Hypoteesi.** Raskas kuula on nopeampi, koska painovoima vetää sitä enemmän.\n>\n> **Välineet.** $1{,}2\\,\\text{m}$ pitkä ramppi, kirjapino, teräskuula ($110\\,\\text{g}$), samankokoinen umpinainen muovikuula ($16\\,\\text{g}$) ja puhelimen sekuntikellosovellus, joka näyttää tuhannesosasekunnit.\n>\n> **Menetelmä.** Nostimme rampin yläpään kirjapinon päälle. Päästimme teräskuulan rampin yläpäästä, ja Eetu käynnisti ajanoton kuulan lähtiessä. Muovikuula ei meinannut lähteä liikkeelle, joten annoimme sille pienen tönäisyn suunnilleen samasta kohdasta. Välissä kirjapinosta otettiin yksi kirja pois, koska sitä tarvittiin toisella tunnilla. Ajanotto pysäytettiin, kun kuula osui rampin päässä olevaan seinään.\n>\n> **Tulokset.** Teräskuula $2{,}437\\,\\text{s}$, muovikuula $2{,}109\\,\\text{s}$.\n>\n> **Johtopäätös.** Muovikuula oli $0{,}328\\,\\text{s}$ nopeampi, joten hypoteesi on väärä: kevyt kuula vierii nopeammin. Kevyet kappaleet liikkuvat aina nopeammin kuin raskaat.\n\nOpettajan palautteen jälkeen ryhmä korjasi menetelmänsä ja mittasi uudelleen:\n\n| Mittaus | teräskuula $t\\ (\\text{s})$ | muovikuula $t\\ (\\text{s})$ |\n|---|---|---|\n| $1$ | $2{,}31$ | $2{,}40$ |\n| $2$ | $2{,}45$ | $2{,}33$ |\n| $3$ | $2{,}38$ | $2{,}47$ |\n| $4$ | $2{,}29$ | $2{,}36$ |\n| $5$ | $2{,}42$ | $2{,}44$ |",
       "parts": [
         {
           "id": "a",
@@ -129,7 +129,7 @@
               "points": 1
             },
             {
-              "text": "Ensimmäinen puutteen korjaus poistaa ongelman.",
+              "text": "Ensimmäisen puutteen korjaus poistaa ongelman.",
               "tag": "experiment",
               "points": 1
             },
@@ -139,7 +139,7 @@
               "points": 1
             },
             {
-              "text": "Toinen puutteen korjaus poistaa ongelman.",
+              "text": "Toisen puutteen korjaus poistaa ongelman.",
               "tag": "experiment",
               "points": 1
             },
@@ -149,7 +149,7 @@
               "points": 1
             },
             {
-              "text": "Kolmas puutteen korjaus poistaa ongelman.",
+              "text": "Kolmannen puutteen korjaus poistaa ongelman.",
               "tag": "experiment",
               "points": 1
             },
@@ -159,7 +159,7 @@
               "points": 1
             },
             {
-              "text": "Neljäs puutteen korjaus poistaa ongelman.",
+              "text": "Neljännen puutteen korjaus poistaa ongelman.",
               "tag": "experiment",
               "points": 1
             }

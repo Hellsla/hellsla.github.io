@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 8cc790bd392aaf00
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: a49ccdab79639a3d
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
@@ -9,4 +9,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since 
 - none
 
 ## Checked
-- Diff of lesson.md, inquiry.json (feedbacks, model answers, solutions), figures.json, exit-ticket.json, figures.py, sim files since origin/main; the changes are physics-neutral clarifications (units in math mode, AU as a close-to-mean distance, vacuum for light-year, wording of feedback); no answer or correct option changed.
+- inquiry.json, lesson.md diff: linear-model-as-physical-model sentence, interpolation/extrapolation wording, trailing-zero removal in the worked example (exact read-off points). No error introduced.

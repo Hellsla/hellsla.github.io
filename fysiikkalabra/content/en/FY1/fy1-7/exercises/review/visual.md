@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: d302cb2338c362fa
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 7e281292c53d6b9f
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-3 diff since the round-2 commit only)
 
 ## Blocking
 - none
@@ -9,4 +9,5 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since 
 - none
 
 ## Checked
-- diff of exercises.json, solutions.md, answers.py (fy1-7); notation (units in LaTeX, en dash ranges, fractions, substitution chains) read from source; no figures in this part
+- git diff edb368de4 of the part's files (en fy1-7 exercises): no visual change in this part beyond answer 4.42 and the solution wording on exact values (units in LaTeX, fractions kept as before).
+- no layout-relevant change; exercises.json answer 4.4 to 4.42 and solutions.md wording only

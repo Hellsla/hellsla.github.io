@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 2369acb3ae0c6322
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 54f5f1ae106f642a
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
 
 ## Polish
-- Yhtenäinen termi virhearvio kaikkialla; ei muuta huomautettavaa.
+- The example figure now sits after the last stage (Järkevyys) instead of before the stages; it works as a result figure and gives nothing away early. Fine.
 
 ## Checked
-- lesson.md, inquiry.json, figures.py (virhearvio yhteen kirjoitettuna, aika-akseli)
-- Arvioitu: muutosten vaikutus oppimispolkuun, palautteen korjaavuus (ei ennenaikaista vastauksen paljastamista), termien johdonmukaisuus, suomen luettavuus.
+- Lesson diff: inquiry.json answer 2,08, lesson.md (example figure moved to end of the staged example, text unchanged), lesson-answers.py.

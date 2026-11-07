@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 457aac29ef483907
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 78fc686408e8e015
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- none that affect correctness
 
 ## Checked
-- Velocity arrow now blue in figure code (figures.py VEL/COLD, NOTES colour rule); position vs distance wording; 33 m vs 23 m (5,0+3,0*6,0=23); model vs JPL: 143,3 vs 143,05 AU = 0,17 % (<1 %); 0,2 AU ~ 20 d at 3,2 AU/a; correct.
+- diff since edb368de4 (lesson.md, inquiry.json, exit-ticket.json, figures/sim/answers): Voyager d0 119,0 AU, example 144,9 AU on 5.11.2026 (2922 d recomputed), 142,6 AU on 15.2.2026 vs JPL 143,05 AU from Earth, 0,1 km/s Sun-pull claim, unit substitution wording, explain prompt/model
+- numbers recomputed independently in Python; physics guardrails 1-7 on the changed passages

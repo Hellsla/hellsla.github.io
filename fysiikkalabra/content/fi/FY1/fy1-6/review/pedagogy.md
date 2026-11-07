@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 772da5217571230b
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 8df0fe9533bdd32b
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
 
 ## Polish
-- Kuvassa A ja B erotetaan katkoviivalla eikä pelkällä värillä; harkitse maininta kuvauksessa.
+- Ball B is also blue and the velocity arrows are blue; they are told apart by position and the arrow, but a student may link blue arrow to ball B. Colour meaning is kept consistent with the book's velocity colour, so acceptable.
 
 ## Checked
-- lesson.md, inquiry.json, figures.py (nopeus siniseksi, B-suora katkoviivalla)
-- Arvioitu: muutosten vaikutus oppimispolkuun, palautteen korjaavuus (ei ennenaikaista vastauksen paljastamista), termien johdonmukaisuus, suomen luettavuus.
+- Lesson diff: sim.js (both velocity arrows now blue), exit-ticket 6,06, lesson.md wording of m/s2, lesson-answers.py. 9,81/1,62 = 6,056 -> 6,06 correct.

@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 457aac29ef483907
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 78fc686408e8e015
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
 
 ## Polish
-- Ei huomautettavaa. Sinisen nopeusnuolen väri (sim.js, figures.py) on yhtenäinen muiden kuvien kanssa.
+- Unit substitution written as a fraction of fractions (AU : (1/86400 vrk)) is a little heavy for fi-easy; acceptable.
 
 ## Checked
-- Pedagogy role, fi-easy: diff since origin/main of content/fi-easy/FY1/fy1-5/lesson.md, inquiry.json, exit-ticket.json, figures.json; lessons/FY1/fy1-5/figures.py; assets/sims/fy1/fy1-5/sim.js. Judged: learning path unchanged, feedback still repairs the misconception, no answer disclosed early, difficult words explained (NOTES §12), same physics as the Finnish fix.
+- inquiry.json, lesson.md (d0 119,0 AU, 144,89 AU, 142,6 AU from the Sun vs JPL 143,05 AU from Earth, 0,5 AU < ~1 AU; new unit-substitution step; comparison prompt asks for the limit of the test). Arithmetic rechecked.

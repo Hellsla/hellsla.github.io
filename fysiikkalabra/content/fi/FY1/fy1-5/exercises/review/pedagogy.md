@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 3fe489dcb602a583
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 84947dbee0c76ca6
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
 
 ## Polish
-- Aikavälien merkintä 0–12 s on selkeämpi.
+- none
 
 ## Checked
-- exercises.json, solutions.md
-- Arvioitu: muutosten vaikutus oppimispolkuun, palautteen korjaavuus (ei ennenaikaista vastauksen paljastamista), termien johdonmukaisuus, suomen luettavuus.
+- exercises.json, solutions.md, answers.py diff: Unit wording ($20\,s$ etc.), extra feedback on the (t,v) distractor, Voyager 3500 d (3498,8) with 1 AU caveat (about 110 d), notation Δt for uncertainty. Recomputed and consistent.

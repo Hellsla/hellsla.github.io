@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 60df86b54c7def57
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: c93916da7159938e
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
 
 ## Polish
-- Ei huomautettavaa. Virhearvio-yhdyssana ja tarkennetut ratkaisuvaiheet ovat selkeitä.
+- none
 
 ## Checked
-- Pedagogy role, fi-easy: diff since origin/main of content/fi-easy/FY1/fy1-3/lesson.md, inquiry.json, exit-ticket.json, figures.json; lessons/FY1/fy1-3/figures.py. Judged: learning path unchanged, feedback still repairs the misconception, no answer disclosed early, difficult words explained (NOTES §12), same physics as the Finnish fix.
+- inquiry.json (answer 2,08), lesson-answers.py, lesson.md (example-plot figure moved after the worked example: the result no longer shows before the student's steps; body unchanged).

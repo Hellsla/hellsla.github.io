@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 2369acb3ae0c6322
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 54f5f1ae106f642a
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
@@ -9,4 +9,5 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since 
 - none
 
 ## Checked
-- lesson.md (satunnaisvirhe and averaging, virhearvio wording, rounding rule, systematic-error reference "jäävesi 0 °C", worked example 3,18 s ± 0,12 s and 3,8 % recomputed), inquiry.json (0,30 s by decimals rule, ratio-of-half-ranges hint, karkea virhe option, keskiarvo vaimentaa satunnaisvirhettä, 0,05/2,40 = 2,08 % → 2 %), figures.py alt text only. Every changed number recomputed; physics guardrails 1–7 applied to the changed passages only.
+- diff inquiry.json (check-2 key 2.08), lesson-answers.py, lesson.md (the example-plot SVG moved unchanged into the worked example; figures.py unchanged).
+- Recomputed check-2: mean 12,00 s : 5 = 2,40 s, half-range 0,05 s → 2,083 %. A relative tolerance of 0,05 accepts the shown answer 2 % and 2,1 %. Mistake 4,2 % (0,10 : 2,40) still right.

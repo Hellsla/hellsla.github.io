@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: b100e0e92a7b7c45
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 65a2c477b29acac2
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
 
 ## Polish
-- Tutkimuskysymys ja hypoteesi nyt linjassa (kulkuaika vs. matka); termit muutettava/mitattava muuttuja yhtenäiset.
+- none
 
 ## Checked
-- lesson.md, inquiry.json
-- Arvioitu: muutosten vaikutus oppimispolkuun, palautteen korjaavuus (ei ennenaikaista vastauksen paljastamista), termien johdonmukaisuus, suomen luettavuus.
+- Lesson diff: inquiry.json ((s2-s1):(t2-t1) in place of Δs:Δt, rounding of 1,7 m explained), lesson.md (source criticism, objective logging), figures.py (velocity arrow blue, dimension line grey).

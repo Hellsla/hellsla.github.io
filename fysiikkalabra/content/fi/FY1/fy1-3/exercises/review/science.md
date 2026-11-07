@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 9436846cd0f7b485
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 1bd8250b92e55c2c
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- L3-03: a zero error of 0,6 mm in a calliper is on the large side but plausible with dirt between the jaws, as the text says.
 
 ## Checked
-- exercises.json (virhearvio wording, reaction-delay task, mass-vs-time conclusion feedback, paper stack), solutions.md (+0,3 cm, tape: mean 1,01067 m → 10,67 mm, half-range 1,5 mm → 10,7 mm ± 1,5 mm, consistent with answer 10.67 ± 0.04; unit substitutions; 2 µm; 5,43 ± 0,04 cm; turntable 1,820 ± 0,015 s; N = 14 → 0,95 %; outlier case 19,84/8 = 2,48 → 2,5 ± 0,3 s, shift 0,07 s ≈ 2,3 × 0,03 s). Every changed number recomputed; physics guardrails 1–7 applied to the changed passages only.
+- diff exercises.json, solutions.md, answers.py (L1-02 new numbers, L3-03 new readings).
+- Recomputed L1-02: 36,4 g − 0,9 g = 35,5 g (key 35.5). L3-03: Σ = 40,30 cm, mean 8,06 cm, Δx_sys = 0,06 cm (key 0.06); half-range 0,025 ≈ 0,03 cm ≈ half of 0,06; corrected 7,98–8,03 cm. All right.

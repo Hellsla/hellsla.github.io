@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 772da5217571230b
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 8df0fe9533bdd32b
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
 
 ## Polish
-- figures.py: velocity arrows/labels and both (t,v) lines now blue (COLD), consistent with the velocity-is-blue rule. two_planets: B line dashed ('12 7') to tell it from A
+- [Minor] sim.js — pallo B ja sen nopeusnuoli ovat lähes samaa sinistä, ja pallo A:n nuoli on sininen vaikka pallo on oranssi; ehkä selitteeseen rivi 'sininen nuoli = nopeus' jos sitä ei ole.
 
 ## Checked
-- lesson.md, inquiry.json, exit-ticket.json, figures.py diff vs origin/main; figures.py: velocity arrows/labels and both (t,v) lines now blue (COLD), consistent with the velocity-is-blue rule. two_planets: B line dashed ('12 7') to tell it from A; polish: the alt text does not say that B is dashed, and A/B are told apart only by the end labels and the dash (fine at 390 px, labels at line ends are unambiguous). Judged from figures.py and the regenerated lesson.md SVG, not rendered. No captures opened (diff judged from source; not rendered).
+- fy1-6 sim.js (COL/VEL, arrow-kutsu), lesson.md, exit-ticket.json (6,06); kuvien osalta lähdekoodi/SVG (ei kuvakaappauksia, kevyt katselmointi)
+- Nopeusnuolet ovat sim.js:ssä nyt nopeuden sinisiä (VEL #1971c2), pallot erotetaan toisistaan sijainnillaan ja pallon, jälkipisteiden, kuvaajan ja selitteen värillä (A oranssi, B sininen); koodista ei näy vaaraa, että pallon B tunnusväri ja nopeuden väri sekoittuisivat pahasti: B-pallo (38,110,214) ja nuoli (25,113,194) ovat lähes samaa sinistä, mutta nuolet ovat aina pallon vieressä ja selite kertoo asian. 'metriä sekunnissa toiseen' on selkeä ja luonteva.

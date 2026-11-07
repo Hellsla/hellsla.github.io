@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: ec3033d2695b3618
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: bf1ac684a0b58cd2
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
@@ -9,4 +9,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since 
 - none
 
 ## Checked
-- diff of exercises.json, solutions.md, answers.py (fy1-2); notation (units in LaTeX, en dash ranges, fractions, substitution chains) read from source; no figures in this part
+- Diff since edb368de4 of: exercises.json, solutions.md, answers.py. 1.54 h shown as approx 1.5 h; trailing-zeros wording consistent; voyager() helper only in answers.py. Judged from the diff and source only; no captures opened (light mode).

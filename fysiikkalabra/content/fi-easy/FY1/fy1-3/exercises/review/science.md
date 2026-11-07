@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 0c51717ed8e7897c
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 1d524cde5c7b4567
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- none that affect correctness
 
 ## Checked
-- Recomputed: 10,67 mm -> 10,7 mm +- 1,5 mm (two digits since first digit 1), dT=0,2/14=0,0143 s -> 0,95 %, 1,0 mm/(2*250)=2,0 um, T=1,820+-0,015 s, 2,48+-0,3 s; unit-conversion wording ok.
+- diff since edb368de4 (exercises.json, solutions.md, answers.py): zero-reading task 36,4 - 0,9 = 35,5 g; calliper systematic error mean 8,06 cm - 8,00 = 0,06 cm (recomputed, random-error 0,025 cm, shifted readings 7,98-8,03 cm), answers.py
+- numbers recomputed independently in Python

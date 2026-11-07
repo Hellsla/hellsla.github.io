@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 97b8d8648935b953
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 544b7ae791e33883
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- none that affect correctness
 
 ## Checked
-- Velocity colour changed to blue in figures.py (COLD); 'Maa vetaa raskaampaa palloa voimakkaammin' (true, cancels with inertia); acceleration wording; 29,43 m/s = 106 km/h; correct.
+- diff since edb368de4 (lesson.md, inquiry.json, exit-ticket.json, figures/sim/answers): sim.js velocity arrow colour only (VEL blue), exit ratio 9,81/1,62 = 6,06, 'toiseen' reading, lesson-answers.py key
+- numbers recomputed independently in Python; physics guardrails 1-7 on the changed passages

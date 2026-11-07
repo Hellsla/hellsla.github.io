@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 768d1a5bee752e06
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 5f14b6e77e1df132
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
 
 ## Polish
-- Ei huomautettavaa.
+- Unit substitution written as a fraction of fractions (AU : (1/86400 vrk)) is a little heavy for fi-easy; acceptable.
 
 ## Checked
-- Pedagogy role, fi-easy: diff since origin/main of content/fi-easy/FY1/fy1-5/exercises/exercises.json, exercises/solutions.md, lessons/FY1/fy1-5/answers.py. Judged: learning path unchanged, feedback still repairs the misconception, no answer disclosed early, difficult words explained (NOTES §12), same physics as the Finnish fix.
+- exercises.json, solutions.md, answers.py (units in math mode; extra feedback that negative velocity rules out option B; Voyager 3500 d, June 2028, 31,0 AU / 0,0088602 = 3499 d; unit-substitution step).

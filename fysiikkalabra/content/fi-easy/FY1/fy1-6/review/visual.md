@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 97b8d8648935b953
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 544b7ae791e33883
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
 
 ## Polish
-- Velocity arrows/labels and both (t,v) lines now blue; line B dashed to tell A and B apart (figures.py, dash arg supported by Axes.line). Legible, consistent with §3. Not rendered.
+- sim.js: both velocity arrows are blue and ball B is also blue; they are told apart by position beside the ball (comment says so). Acceptable under the velocity-blue convention; keep the legend clear.
 
 ## Checked
-- lesson.md, inquiry.json, figures.json, exit-ticket.json, figures.py diff vs origin/main; no captures, SVG not rendered
+- sim.js velocity arrows blue (VEL), 6,06 ratio in exit-ticket, 'metriä sekunnissa toiseen', inquiry.json.
+- No captures opened (light mode, judged from the diff). Fi-easy: sentences stay short and plain, notation and units in LaTeX with decimal comma, changes match the Finnish fix.

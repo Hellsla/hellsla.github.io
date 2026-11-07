@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 6e088868424da153
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: c21f036fe7209f89
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
@@ -9,4 +9,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since 
 - none
 
 ## Checked
-- exercises.json, solutions.md and answers.py diffs vs origin/main; wording of tasks and feedback, solution structure, significant figures, consistency with the Finnish fix. Changed passages read clearly for a 16-19-year-old, no new misconception or misleading feedback introduced.
+- exercises.json, solutions.md, answers.py diffs. 0.500/0.420 m/s with 16 % answer; Delta notation replaced by differences; heavy-ball task notes reaction time may differ between series.

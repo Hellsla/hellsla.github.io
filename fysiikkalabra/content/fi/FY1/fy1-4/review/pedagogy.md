@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 4343001430ae156e
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: eec42dc6115fb05b
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
 
 ## Polish
-- Kärryn kulmakerroin-tehtävän virhe-palaute on nyt selkeämpi (sovitetun suoran kulmakerroin vs. kaksi pistettä).
+- The model-types sentence is dense (fysikaalinen, graafinen, matemaattinen, kvantitatiivinen in one sentence); acceptable, could be split.
 
 ## Checked
-- lesson.md, inquiry.json, exit-ticket.json
-- Arvioitu: muutosten vaikutus oppimispolkuun, palautteen korjaavuus (ei ennenaikaista vastauksen paljastamista), termien johdonmukaisuus, suomen luettavuus.
+- Lesson diff: inquiry.json (cart 'tönäistiin ... liikkui tasaisesti' justifies the line through origin), lesson.md (model types, interpolation/extrapolation, example data written as exact 0 min / 20 °C / 60 °C).

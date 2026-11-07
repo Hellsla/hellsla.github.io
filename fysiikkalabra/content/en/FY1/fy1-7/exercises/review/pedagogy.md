@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: d302cb2338c362fa
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 7e281292c53d6b9f
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-3 diff since the round-2 commit only)
 
 ## Blocking
 - none
@@ -9,4 +9,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since 
 - none
 
 ## Checked
-- exercises.json, solutions.md and answers.py diffs vs origin/main; wording of tasks and feedback, solution structure, significant figures, consistency with the Finnish fix. Changed passages read clearly for a 16-19-year-old, no new misconception or misleading feedback introduced.
+- exercises.json, solutions.md, answers.py: significant-figure reasoning now treats 100 cm3, 50 cm3, 250 cm3, 520 g as exact; L3-02 answer 4.42 (3 s.f.) and the explanation read clearly. Diff vs edb368de4 is the round-2 sig-fig edit, same as the Finnish fix.

@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 07a6184fff7386c1
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: bd0d2d79608aaaee
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
@@ -9,4 +9,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since 
 - none
 
 ## Checked
-- exercises.json, solutions.md and answers.py diffs vs origin/main; wording of tasks and feedback, solution structure, significant figures, consistency with the Finnish fix. Changed passages read clearly for a 16-19-year-old, no new misconception or misleading feedback introduced.
+- exercises.json, solutions.md, answers.py diffs. Units in $...$; Voyager time task 3500 d (June 2028) with the JPL comparison; the added feedback that a negative velocity makes graph B wrong even as a velocity graph repairs the misconception; Delta t renamed for uncertainty.

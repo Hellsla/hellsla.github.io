@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: c1cdec646524732d
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 34b61e38bb1fe753
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
@@ -9,4 +9,5 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since 
 - none
 
 ## Checked
-- exercises.json (oil 0,92, viskositeetti, erikokoiset), solutions.md (95 g, 4,0·10^2 cm^3, 1,8·10^3 kg, 9,20·10^2 kg/m^3, unit substitutions, 2,0 kg ethanol, 8,9·10^3 kg/m^3, 0,197 kg/2,50·10^-4 m^3 and 1650 without the bottle, aluminium/copper 3,32, lead 55 g vs 56,5 g, liquid 0,92 g/cm^3 with m0 = 85 g and check at 60 cm^3). Every changed number recomputed; physics guardrails 1–7 applied to the changed passages only.
+- diff exercises.json, solutions.md, answers.py (sig-figure reasons; alloy key 4.42).
+- Recomputed: alloy (270 + 393,5) g / 150 cm³ = 4,423 → 4,42 g/cm³; 790·2,5·10⁻³ = 1,98 → 2,0 kg; 197 g/250 cm³ = 788 kg/m³; 8,96/2,70 = 3,32; V_Cu = (520 − 270)/(8,96 − 2,70) = 39,9 cm³. All right.

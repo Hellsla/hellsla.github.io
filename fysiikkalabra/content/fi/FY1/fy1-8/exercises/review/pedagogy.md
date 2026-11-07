@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: a641cdeb2dff458e
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 8e9f0b247c03065b
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
 
 ## Polish
-- Termit muutettava/mitattava korvaavat riippumaton/riippuva johdonmukaisesti; raportin tulokset/pohdinta/johtopäätös erotettu selkeästi.
+- none
 
 ## Checked
-- exercises.json, solutions.md
-- Arvioitu: muutosten vaikutus oppimispolkuun, palautteen korjaavuus (ei ennenaikaista vastauksen paljastamista), termien johdonmukaisuus, suomen luettavuus.
+- exercises.json, solutions.md, answers.py diff: Percent task 0,500/0,420 (16 %), reaction-time remark in the ball task (k = 3,75), slope notation (s2-s1):(t2-t1), cooling-rate notation. Consistent.

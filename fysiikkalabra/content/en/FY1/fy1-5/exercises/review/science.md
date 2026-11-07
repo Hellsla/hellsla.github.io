@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 07a6184fff7386c1
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: bd0d2d79608aaaee
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
@@ -9,4 +9,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since 
 - none
 
 ## Checked
-- Diff of exercises.json, solutions.md and answers.py since origin/main; changed numbers recomputed by hand or in Python where they changed (substitutions, rounding, reasonableness checks); no answer or correct option changed.
+- exercises.json, solutions.md, answers.py diff. L3-01: (150-119.0)/0.0088602 = 3498.8 d -> 3.50e3 d (3500), date June 2028 correct (2028-06-04); 1 AU ~ 113 d; extra negative-velocity remark on option B correct; Delta t / epsilon notation fine.
