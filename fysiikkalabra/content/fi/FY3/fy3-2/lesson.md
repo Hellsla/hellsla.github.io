@@ -118,7 +118,7 @@
 ## Ydinajatus
 Arkikielessä työ tarkoittaa usein ponnistelua. Fysiikassa työllä on täsmällisempi merkitys: voima tekee työtä, kun kappale siirtyy ja voimalla on siirtymän suuntainen komponentti.
 
-Kun kannat reppua vaakasuoraan tasaisella vauhdilla, reppua kannatteleva voimasi osoittaa ylöspäin mutta reppu siirtyy vaakasuunnassa. Voima on kohtisuorassa siirtymään nähden, joten tämän voiman tekemä mekaaninen työ on nolla. Lihaksesi kuluttavat silti energiaa myös repun kannattelemiseen.
+Kun kannat reppua vaakasuoraan tasaisella vauhdilla, reppua kannatteleva voimasi osoittaa ylöspäin, mutta reppu siirtyy vaakasuunnassa. Voima on kohtisuorassa siirtymään nähden, joten tämän voiman tekemä mekaaninen työ on nolla. Lihaksesi kuluttavat silti energiaa myös repun kannattelemiseen.
 
 <svg data-fig="carry-lift" viewBox="0 0 600 320" role="img" aria-label="Kaavakuva kahdesta tilanteesta. Vasemmalla reppua kannetaan vaakasuoraan: kannatteleva voima F osoittaa ylös, mutta liike on sivulle, joten voima ei tee työtä, W = 0. Oikealla reppu nostetaan ylös: voima F ja liike ovat samansuuntaiset, joten voima tekee työn W = F s." style="max-width:100%;font-size:24px">
   <foreignObject x="71" y="15.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kanto sivulle}$</div></foreignObject>

@@ -267,7 +267,17 @@ Kun jää on sulanut, laukussa on $1{,}0\,\text{kg}$ sulamisvettä ja $0{,}50\,\
 &\approx 6285\,\tfrac{\text{J}}{\text{K}}
 \end{aligned}
 ```
-Lämpöä siirtyy laukkuun teholla $33{,}6\,\text{W}$. Mallin mukaan sisällön lämpötila alkaa silloin nousta noin $19\,\text{K}$ tunnissa. Arvio pätee lämpötilan nousun alkuvaiheessa. Se olettaa myös, että lämpöteho pysyy vakiona.
+Lämpöä siirtyy laukkuun teholla $33{,}6\,\text{W}$. Mallin mukaan sisällön lämpötila alkaa silloin nousta noin $19\,\text{K}$ tunnissa:
+```latex
+\begin{aligned}
+&\frac{\Delta T}{\Delta t} = \frac{P}{C} \\
+&= \frac{33{,}6\,\text{W}}{6285\,\tfrac{\text{J}}{\text{K}}} \\
+&\approx 0{,}00535\,\tfrac{\text{K}}{\text{s}} \\
+&= 0{,}00535 \cdot 3600\,\tfrac{\text{K}}{\text{h}} \\
+&\approx 19\,\tfrac{\text{K}}{\text{h}}
+\end{aligned}
+```
+Arvio pätee lämpötilan nousun alkuvaiheessa. Se olettaa myös, että lämpöteho pysyy vakiona.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että jää tuottaa kylmää ja kylmä virtaa juomiin. Kylmyys ei virtaa. Lämpötilaeron takia energiaa siirtyy kaiken kaikkiaan lämpimästä kylmempään. Jää jäähdyttää, koska se ottaa energiaa vastaan. Toinen virhe on ajatella, että lämpötila nousee tasaisesti koko ajan. Sulamisen aikana lämpötila pysyy vakiona, vaikka energiaa tulee koko ajan.
