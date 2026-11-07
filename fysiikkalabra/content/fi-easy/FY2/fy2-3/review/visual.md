@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 151da7f671505989
+CONTENT-HASH: c1e3566a25135732
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] lesson.md: new "Niiden osamäärä on aikavälin keskiteho." repeats the following "Jos energiaa muuntuu epätasaisesti, kaava antaa … keskitehon."; one of them could go.
 
 ## Checked
-- batch delta review: "Luvun tärkeät käsitteet" panel captured from preview/fi-easy/fy2-3.html at 390 and 1280 px (the review/shots set has no capture of it) and opened — between the opening and stage 1, term bold over its explanation at 390 px, two-column at 1280 px, no clipping, no horizontal overflow, no KaTeX error; the edited lesson.md/inquiry.json sentences read in their diff (prose only, no new maths); top-390 opened in a montage (read-aloud "Kuuntele" button under the title, layout intact).
+- Diff of lesson.md, inquiry.json, exit-ticket.json (Selkeä suomi), changed passages with surrounding paragraph.
+- Meaning of $\Delta E$ and $\Delta t$ in $P = \Delta E/\Delta t$: symbols in LaTeX, units in parentheses as before, grammar correct.
+- No captures opened (diff judged from source).

@@ -1,17 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: c5d377ec0ca6ef49
-Round: 3
-Mode: delta
+CONTENT-HASH: afdb1c4e9986b7f7
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- Carried over: L2-07 correct option is the only one naming the mechanism; L1-03 vs L1-07 same step; L3-05 hint gives the model; L2-08 "Yhtä paljon" feedback shows the numbers (fine, opens after the choice).
+- none
 
 ## Checked
-- Only change: solutions.md L2-08 two loss lines are split into "häviö = osuus * lähtö, eli häviö = tulos" so each line is shorter on a phone.
-- Numbers unchanged: 0,040 * 1000 = 40 MWh, 0,090 * 300 = 27 MWh; the comparison sentence below still matches (40 > 27, percentage over twice).
-- The "eli" step makes the substitution and the result separate, which a student can follow; no meaning lost.
-- Round 2 fixes (reason lengths 98/110/108/98) untouched.
-- Judged from the delta only; phone captures not opened.
+- git diff origin/main...HEAD of the unit's files (fi); pedagogy of the changed passages in context only; FY2 text level.
+- exercises.json feedbacks and solutions.md: loss mechanism wording as in the lesson (internal energy of wires, heat to surroundings; district heating through pipes). Feedback still explains why the distractor is wrong.

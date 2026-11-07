@@ -1,20 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 051ea6bef718bc5f
-Mode: full
-Round: 2
+CONTENT-HASH: 4bcb3dc614bcc743
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
-
-## Fixed
-- exercises.json L2-08 reasons — the correct reason was the longest (138 vs 107/132/126 characters), a length cue; shortened it to 126 and lengthened the first distractor to 118.
+- none
 
 ## Polish
-- (none)
+- none
 
 ## Checked
-- New task L2-08 (choice with reasons) vs reviewed fi: id, level, kind, answer, tolerance, three choices and four reasons, correct flags (grid; share-times-energy reason) identical.
-- Numbers equal fi: 1000 and 300 MWh, 4.0 and 9.0 %, 40 and 27 MWh recomputed (0.040*1000, 0.090*300); decimal point used in JSON and solutions.
-- Physics: loss = share times energy sent out; percentage alone does not decide; each distractor (percentage only, equal, distances, speed of light) is wrong and its feedback is right.
-- Length cue: reasons now 126 (correct), 118, 132, 126 chars; choices 31/23/16, correct in the middle; correct feedback is the shortest, as in fi.
-- check_i18n: nothing for fy2-7; build.py fy2-7 succeeds.
+- Diff `git diff origin/main...HEAD` of exercises/exercises.json, exercises/solutions.md (en); content hash recomputed and equal to the brief's.
+- exercises.json/solutions.md: loss wording (internal energy in wires, then heat to surroundings; district heating through pipes) consistent with the lesson; the $40\,\text{MWh}$ vs $27\,\text{MWh}$ comparison unchanged and correct. No changed numbers.
+- English changes match the fi source in substance (CO2 equivalent, internal energy vs heat, accounting assumption).

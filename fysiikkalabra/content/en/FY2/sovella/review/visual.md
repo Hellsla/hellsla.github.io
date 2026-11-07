@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 9b7b27daf4f282be
-
-Round 2. The Major finding of round 1 (the misaligned answer-template table) is fixed.
+CONTENT-HASH: 31d260a2d9963b78
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] solutions.md fy2-s2 a) — "the page tells about the advantages of wind power" → "the page describes the advantages of wind power"; c) "If the source does not tell something" → "If the source does not say something".
+- [Minor] tasks.json: the paragraph "In the table, $e$ is…" is now ~128 words; could be split before "For the biomass option…".
 
 ## Checked
-- Heading at 360 and 390 px: "Two sources on the same energy question" fits on three lines with "14 points" inside (right edge 344/374 px). The page is exactly as wide as the viewport.
-- The answer template is now a numbered list of six items at 360 and 390 px: readable, wrapped items indent cleanly, nothing clipped.
-- check_layout en FY2-sovella OK at 360 and 390. Own captures of preview/en/FY2-sovella.html.
-- Inline formulas in fy2-s2: none wraps and none overflows. The stacked g/kWh fraction is intentional (teacher's rule).
-
-## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 5
+- Diff of sovella/tasks.json, sovella/solutions.md, lessons/FY2/sovella/answers.py (English), changed passages with surrounding paragraph.
+- solutions.md a: $P < 0.05 \cdot 28 \cdot 5.0\,\text{MW} = 7\,\text{MW}$ and $P > 80\,\text{MW} - 7\,\text{MW} = 73\,\text{MW}$: inequality signs, \cdot, thin spaces correct; English wording of the answer correct.
+- tasks.json source_note and biomass paragraph (accounting assumption, IPCC AR5 WGIII Annex III, forest chips may differ): grammar correct, $230\,\text{g/kWh}$ in LaTeX; criterion text for a); part b answer list (five values) is data only, no presentation change; counterargument and option lines in solutions.md.
+- No captures opened (diff judged from source).

@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: bacb4dd371d60001
+CONTENT-HASH: c1e3566a25135732
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
 - none
 
 ## Checked
-- batch delta review: key_concepts, reworded sentences, photo captions, objective-form and level-policy edits, chapter-reference titles judged against the guardrails and the lesson text; restyled figure lines are styling only.
+- Diff `git diff origin/main...HEAD` of lesson.md, inquiry.json, exit-ticket.json (fi-easy); content hash recomputed and equal to the brief's.
+- lesson.md: new meaning of $\Delta E$ in $P = \Delta E/\Delta t$ (energy transferred or transformed during the interval; $\Delta t$ its length; the quotient is the interval's average power) is correct and agrees with the unchanged sentence on uneven conversion and with $P = E : t$ for steady operation.
+- Selkeä suomi changes carry the same physics as fi.

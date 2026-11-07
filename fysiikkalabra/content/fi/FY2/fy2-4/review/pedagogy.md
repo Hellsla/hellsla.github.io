@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 5bbf013f0cfa631d
+CONTENT-HASH: 8fbdca349e627a9f
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- Ledilampun hehku on yhtä laaja kuin hehkulampun; hieman kylmempi tai pienempi hehku ilman lämpöväreitä korostaisi eroa entisestään.
-- Pöydän esineet (kirja, kuppi) ovat 360 px:ssä hyvin pieniä; ne voi myös jättää pois.
+- none
 
 ## Checked
-batch delta review: uusi tekstitön avauskuva (data-fig="hero") Miksi-kysymyksen alla, kaappaukset 1200 ja 360 px sekä SVG. Iltahuone, hehkulamppu hehkulankoineen ja lämpöväreineen (lämpötilan punainen, oikea merkitys), ledilamppu ledisiruineen, yhtä kirkkaat valokeilat pöydälle: kysymyksen vertailu suoraan. Aria-label vastaa kuvaa, ei tekstiä, värit figuuripaletista.
+- git diff origin/main...HEAD of the unit's files (fi); pedagogy of the changed passages in context only; FY2 text level.
+- lesson.md opening question and inquiry hook: 'gives as much (visible) light' instead of 'as bright' - removes the brightness/power ambiguity without disclosing anything.
+- New paragraph (simplified model, useful energy = visible radiation; luminous flux describes lighting better): no new formula, framed as a model limit, appropriate for FY2.

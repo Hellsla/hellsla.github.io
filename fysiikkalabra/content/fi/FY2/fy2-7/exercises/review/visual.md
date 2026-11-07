@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: c5d377ec0ca6ef49
-Round: 3
+CONTENT-HASH: afdb1c4e9986b7f7
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
+- [Minor] exercises.json L1 feedback: "johtimien sisäenergiaksi ja edelleen lämmöksi ympäristöön" keeps "lämmöksi" while the other edits say "siirtyy lämpönä"; for consistency "…sisäenergiaksi, joka siirtyy lämpönä ympäristöön".
 
 ## Checked
-- Round 3. Round-2 Minor (fy2-7-L2-08 loss lines cut to "= 40 M" / "= 27 MV") is fixed: rendered live (Playwright, rebuilt preview/fy2-7.html, no review/shots for this hash) at 390 and 1280 px with a wrong choice committed and Mallivastaus open; each loss is split "..., eli E_häviö = 40 MWh" / "27 MWh" and every line fits the column). Measured: no scrolling formula, no page overflow at 390 or 1280 px.
-- Opened the whole card (stem, options, feedback, Mallivastaus) at 390 px: reads cleanly, no other change.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+- Diff of exercises/exercises.json, exercises/solutions.md (Finnish), changed passages with surrounding paragraph.
+- exercises.json feedbacks (3) and solutions.md L1-02 Periaate, L2 comparison paragraph, L2-07 Periaate/Mallivastaus: grammar and mechanism wording; amounts $40\,\text{MWh}$, $27\,\text{MWh}$, $4\,\%$ unchanged in LaTeX.
+- No captures opened (diff judged from source).

@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 0d565ba6ef9f6c32
+CONTENT-HASH: f031b195707cb161
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-
+- none
 
 ## Polish
-
+- [Minor] lesson.md formula paragraph: the new "Their quotient is the average power over the interval." duplicates the existing "If energy is transformed unevenly, the formula gives the average power…"; consider merging. The paragraph is now ~108 words, still within limit.
 
 ## Checked
-- batch delta review: opened fy2-3-1280-0, fy2-3-360-0; photo loads, no clipping or horizontal overflow, credit line under the caption, alt text and caption natural English and consistent with the picture and the paragraph, no number with a unit in the new text.
+- Diff of lesson.md, inquiry.json, exit-ticket.json (English), changed passages with surrounding paragraph.
+- Meaning of $\Delta E$ and $\Delta t$ in $P = \Delta E/\Delta t$: symbols in LaTeX, units in parentheses as before, grammar correct.
+- No captures opened (diff judged from source).

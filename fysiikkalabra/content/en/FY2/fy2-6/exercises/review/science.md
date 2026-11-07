@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 8a33f75cd251a5cc
-Mode: full
-Round: 2
+CONTENT-HASH: ce4d78b324133976
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-fy2-6-L1-09 (en) after commit 442c889ba: the correct-option feedback is split into short inline formulas joined by "that is" with the same numbers as the reviewed Finnish (0.33 * 3.0 MW ~ 1 MW = 1000 kW; 1000 kW * 8760 h ~ 8.7e6 kWh; 8.7e6 : 5000 ~ 1700). Translation fix this round: the closing clause now reads "so the closest option is $2000$", matching the Finnish change from "of the order of 2000" (no number or formula touched). Solution text unchanged and equal to Finnish (990 kW, 8.67e6 kWh, 1700, 2000; distractor 5300). check_i18n.py: nothing for fy2-6; build.py fy2-6 succeeds. Hash at start 1dc03f6c1872c7d2 (en) / a0071dd8179f13ff (fi-easy), final below; packets regenerated for both roles.
-Physics recomputed again: 1734 houses, so 2000; all distractor numbers (2, 200, 5256) correct.
+- Diff `git diff origin/main...HEAD` of exercises/exercises.json, exercises/solutions.md (en); content hash recomputed and equal to the brief's.
+- L2-07: $(820-12)\,\text{g/kWh}\cdot2{,}0\cdot10^{9}\,\text{kWh} = 1{,}616\cdot10^{12}\,\text{g} = 1{,}6\cdot10^{6}\,\text{t}$ CO2-eq recomputed; check $1{,}64\cdot10^{6}\,\text{t}$, ratio $0{,}99$. L3-05 c: wording now "tonnes of CO2-equivalent"; numbers unchanged. CO2 vs CO2-eq now consistent between exercises.json and solutions.md (life-cycle factors are CO2-eq).
+- English changes match the fi source in substance (CO2 equivalent, internal energy vs heat, accounting assumption).

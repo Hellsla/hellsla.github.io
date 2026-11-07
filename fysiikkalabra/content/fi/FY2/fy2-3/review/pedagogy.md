@@ -1,13 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: afb3b91be208f94f
+CONTENT-HASH: 0a69a31a274c6306
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- exit-ticket.json a — "Muunnetaan teho kilowateiksi: sijoitetaan ..." toimii; minuuttien muunnos tunneiksi on edelleen sulkeissa-vapaa mutta vailla omaa lausetta. Samaa rakennetta ("Muunnetaan aika tunneiksi: ...") kannattaisi käyttää, jotta kaksi muunnosta näyttävät samalta.
+- none
 
 ## Checked
-- Delta: vain mallivastauksen sanamuoto; kaavat, luvut ja tulokset (43,8 kWh ≈ 44 kWh; 36,5 kWh ≈ 37 kWh) ennallaan.
-- Yksikkömuunnos on nyt oma lauseensa ennen tulosta eikä sulkeissa: askeleet seuraavat järjestyksessä (energia = teho · aika, muunnos, tulo, pyöristys), joten oppilas näkee muunnoksen omana vaiheenaan.
-- Suomi: "Muunnetaan teho kilowateiksi" on oikea muoto; lauserakenne ja pyöristysperuste kunnossa.
-- Aiempi hyväksyntä (hero-kuva, kaappaukset, rakenne) ei muutu, koska diff ei kosketa niitä.
+- git diff origin/main...HEAD of the unit's files (fi); pedagogy of the changed passages in context only; FY2 text level.
+- lesson.md: ΔE now 'energy transferred or transformed during the interval', Δt 'length of the interval', quotient = average power. Clearer than 'energian muutos' and consistent with the next sentence on uneven conversion; slight redundancy (average power said twice) is harmless.

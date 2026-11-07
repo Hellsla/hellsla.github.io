@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: fa0fb23fca92af8d
+CONTENT-HASH: 3a567565910709a1
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
-
-## Fixed
-- inquiry.json: check titles were numbered 1., 2., 3., 2., 3. (stale after the Finnish renumbering); now 1.-5. as in the Finnish.
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-Same teaching sequence as the Finnish (hook, recap, predictions, interpret tables, conclusion, theory, reflection, find-the-mistake, transfer, exercises, three checks, exit ticket); same hint ladders, mistake feedback, self-assessment criteria; the correct options are not revealed by wording; English is natural and plain.
+- git diff origin/main...HEAD of the unit's files (en); pedagogy of the changed passages in context only; FY2 text level.
+- lesson.md: 8760 h for an ordinary 365-day year, 8784 h for a leap year, and the stated convention for the chapter's examples; 1598 kW = 1,598 MW (the old '1,598·1000 kW' was confusing). Both are clearer for the student.

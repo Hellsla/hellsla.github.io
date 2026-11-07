@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9a519f0b05bec852
+CONTENT-HASH: 172e1cf560924717
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-
+- none
 
 ## Checked
-batch delta review: scratchpad kc/fy2-6-390.png and kc/fy2-6-1280.png (the new section cut from the built page, preview/fi-easy/fy2-6.html): stacked at 390 px, two columns at 1280 px, no raw maths, no overflow, no clipping; the diff text read for wording (the packet's own captures show no figure change, so only sheets of the new section were opened); fy2-6-theory-1280-2.png for the recaptioned Olkiluoto photo (caption and credit fit, fine).
+- Diff of lesson.md, inquiry.json, exit-ticket.json (Selkeä suomi), changed passages with surrounding paragraph.
+- Year length sentence ($365$ days, $8760\,\text{h}$, $8784\,\text{h}$) and Result step $1598\,\text{kW} = 1{,}598\,\text{MW} \approx 1{,}6\,\text{MW}$: LaTeX, thin spaces, decimal separator correct.
+- No captures opened (diff judged from source).

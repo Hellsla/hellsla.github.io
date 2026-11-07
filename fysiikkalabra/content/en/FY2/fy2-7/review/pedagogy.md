@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: c100fac7732027fa
+CONTENT-HASH: 584132dd2c786c0c
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
-
-## Fixed
-- Chapter title cited as *Power P = ΔE/Δt* in lesson.md, inquiry.json and solutions.md; the course title is *Power: P = ΔE/Δt*, colon restored.
+- none
 
 ## Polish
-- (none)
+- none
 
 ## Checked
-- Same teaching sequence and activity types as the Finnish (hook, recap, two predictions, three interpret tables, conclusion, reflect, worked example in 7 steps, error-spotting, transfer with 3 hints, 3 checks, exit ticket). Natural English at reading level, 'Common misconception', 'Worked example' headings; hints progressive; option feedback repairs the misconception; prediction wording still makes sense when reopened. No wall of text added.
-- Re-review after 9ba584f: only the English grid figure label position changed ("distribution / network" nudged, no longer overlaps "substation"); wording and teaching unchanged, label reads cleanly and still marks the house end of the grid.
+- git diff origin/main...HEAD of the unit's files (en); pedagogy of the changed passages in context only; FY2 text level.
+- lesson.md: 'energy is moved in many ways; this chapter treats two' replaces the false 'in Finland it happens in two ways'.
+- Loss mechanism now distinguishes the grid (electrical energy -> internal energy of wires -> heat to surroundings) from district heating (energy passes as heat from hot water through the pipes); repeated consistently in theory, misconception section, summary, inquiry options/feedback and exit ticket. Correct option and distractor feedback in inquiry.json still repair the 'energy disappears / wires store energy' misconceptions.
+- Internal energy is a FY2 glossary term; level appropriate.

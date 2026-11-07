@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: abcb7e503f0e1643
+CONTENT-HASH: 8fd0bc81ab0e87c6
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- "Effective radiating temperature" and "radiative balance model" are not explained for a FY2 student. The changed prediction-1 feedback now uses them in the Predict/Explore stage, before the Key idea. Add one clause: "a model that assumes the Earth sends into space as much energy as it receives from the Sun".
-- The tarkistus-3 criterion now expects the student to name the model. The teacher should accept "without the greenhouse effect about −18 °C" as meeting it.
-- The Europe-at-night caption does not say what it teaches (energy use, hence emissions). Add a linking clause.
-- Chapter titles with $E = Hm$ in italics: check that they render as in the lesson heading.
+- ennuste-2 correct-option feedback is now five sentences and adds a biomass remark the chosen option did not raise; could be trimmed by one sentence.
 
 ## Checked
-Follow-up delta (2c31ff041): prediction-1 feedback and the explain criterion now match the lesson's hedged wording ("while the mean surface temperature is about +15 °C"; difference 33 K). The feedback still repairs the misconception, and the criterion is observable. Earlier: the −18 °C hedge is consistent across the page, and the anomaly map's caption explains its colours.
+- git diff origin/main...HEAD of the unit's files (en); pedagogy of the changed passages in context only; FY2 text level.
+- lesson.md: biomass zero-combustion CO2 now explicitly an accounting assumption; real impact depends on origin, carbon-stock changes and regrowth speed; added to the summary. Supports critical reading of the table without new load.
+- inquiry.json ennuste-2: options unchanged in substance (wind 'no fuel is burned' instead of 'burns nothing'); correct feedback now says wind still has life-cycle emissions from construction and materials; the biomass distractor feedback says renewability alone does not make life-cycle emissions small. Appropriate, repairs the misconception, no disclosure of the table values (the next stage still shows them).
+- Later biomass feedbacks add the condition that the forest really regrows; consistent.

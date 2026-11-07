@@ -1,20 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: a8fbefe90565d098
-Mode: delta
-Round: 1
+CONTENT-HASH: e76526cc5ac51eed
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- (none)
+- none
 
 ## Checked
-- Delta = new task fy2-7-L2-08 (choice + reason, solution block). Own Playwright render at 390 px of preview/fi-easy/fy2-7.html: L2-08 card with all feedback and the solution open, plus a whole-page check for horizontal overflow (page scrollWidth 390; L2-08 produced no clipping, no kx-wide scroll). Both calculation lines break at 'eli' and stay in the 390 px column; no clipping.
-- Existing capture fy2-7-open-exercises-L2-1280-10.png (L2-08 at 1280 px, answers wrong then solution open): layout, feedback blocks, Find/Principle/Model answer render cleanly.
-- Text only (not rendered by me): the diff of exercises.json, solutions.md, answers.py. Short sentences, easy Finnish, decimal comma in LaTeX, terms consistent (häviö, lähtevä energia, osuus). Units and numbers in LaTeX, \cdot, thin spaces.
-- Not opened: figures and other tasks (unchanged by the delta).
-- Other tasks (L1-L3 subtraction chains) are scrollable wide formulas by design at 390 px; not in the delta.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+- Diff of exercises/exercises.json, exercises/solutions.md (Selkeä suomi), changed passages with surrounding paragraph.
+- exercises.json feedbacks (3) and solutions.md L1-02 Periaate, L2 comparison paragraph, L2-07 Periaate/Mallivastaus: grammar and mechanism wording; amounts $40\,\text{MWh}$, $27\,\text{MWh}$, $4\,\%$ unchanged in LaTeX.
+- No captures opened (diff judged from source).

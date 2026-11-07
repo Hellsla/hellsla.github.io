@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 845d6f3cd3798b31
+CONTENT-HASH: da4ba59f593fc976
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-None.
+- none
 
 ## Polish
-- The model reference for Lähde 1 has no web address, but criterion a1 lists one (verkko-osoite). Add the IPCC AR5 WGIII address, or say that a printed book chapter is findable without one, so that the model meets its own criterion.
+- none
 
 ## Checked
-- Delta review, scope `git diff 336f8c6cd -- content/*/FY2/sovella/tasks.json`: only the fy2-s2 title (fi, fi-easy) and the answer template changed. The template is now a numbered list of the same six items. No physics, number, criterion or point changed, and solutions.md and answers.py are untouched. Hash 845d6f3cd3798b31 at the start and the end. The earlier findings below stand.
-- Re-review of the fixes. Hash 6ad8e1333a0cfb00 at the start and the end. The diff touches only the fy2-s2 solution; tasks.json and answers.py are unchanged.
-- Earlier Blocking 1 is resolved: Lähde 1 is now stated to be real (IPCC AR5 WGIII Annex III, 2014). Its reference is correct: Schlömer, S. et al. (2014), Annex III: Technology-specific cost and performance parameters, in *Climate Change 2014: Mitigation of Climate Change*, Contribution of WG III to AR5, Cambridge University Press. Only Lähde 2 (Esimerkkienergia Oy) is invented, and it is labelled invented in the introduction and in its reference, with placeholders for the year, the address and the date. Nothing invented is presented as real.
-- Earlier Blocking 2 is resolved: the quantity is now the life-cycle greenhouse-gas emission in CO2 equivalent, and the CO2-equivalent definition is correct. Lähde 2's claim is noted as CO2 only, and part d treats this as a near-same quantity, not the cause of the difference. This is correct for wind, whose non-CO2 share is small.
-- Facts: the onshore wind median is 11 g CO2-eq/kWh with range 7–56 (AR5 WGIII Table A.III.2). Both are correct and consistent with fy2-s1 and answers.py. The conversion 11 g/kWh = 11·10⁻⁶ t / 10⁻⁶ GWh = 11 t/GWh is correct.
-- The added second conclusion (not comparable because Lähde 2 states neither boundary nor year, so a life-cycle source on the same boundary is needed) is sound. It fits the conclusion criterion and "Hyväksytään myös".
-- The physics of the boundaries, lifetime and operational emissions is unchanged and correct. Points are unchanged: a 3, b 3, c 4, d 4 = 14, with the criteria adding up to each part's total. No FY3 physics.
+- Diff `git diff origin/main...HEAD` of sovella/tasks.json, sovella/solutions.md, lessons/FY2/sovella/answers.py (fi-easy); content hash recomputed and equal to the brief's.
+- Ran `python3 lessons/FY2/sovella/answers.py` and `python3 scripts/practice.py check FY2` (OK, 2 tasks, 32 points, all three languages).
+- fy2-s1 b five answers recomputed: coal $820\cdot380\cdot10^{6}\,\text{g} = 311\,600\,\text{t}$, gas $490 \to 186\,200\,\text{t}$, wind $11 \to 4180\,\text{t}$, cuts $1-490/820 = 40{,}2\,\%$ and $1-11/820 = 98{,}7\,\%$; match answers.py and the task text asks for exactly these.
+- fy2-s1 c: $P_\text{tuuli} < 0{,}05\cdot28\cdot5{,}0\,\text{MW} = 7\,\text{MW}$ so $P_\text{muualta} > 80 - 7 = 73\,\text{MW}$: inequality direction correct in solution and rubric.
+- Biomass $230\,\text{g/kWh}$ now a stated calculation assumption from IPCC AR5 WGIII Annex III (certain biomass chains, median; forest chips may differ considerably): matches the source; counterargument and alternative solution consistent.
+- Selkeä suomi changes carry the same physics as fi.

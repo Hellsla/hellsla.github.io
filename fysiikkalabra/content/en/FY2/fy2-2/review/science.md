@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: cfae1052da108738
+CONTENT-HASH: 926d2ac39577cda9
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- (none)
+- none
 
 ## Checked
-- Translation of lesson.md, inquiry.json, exit-ticket.json and figures.json compared with the reviewed Finnish: every number, unit, formula and answer (340 kJ, 66 MJ, 51 GJ, 100 days' food, ratio 3.2, 620 EJ against 620 EJ) is identical; a script check found no differing number in any text.
-- Same physics: conservation, heat at every step, prefixes k/M/G/T, order-of-magnitude comparison; each prediction has one correct option and the feedback matches the values; no physics added or lost.
-- Terms and units are English with no Finnish left in text or units. The experiments keep the Finnish initial value (correct for the simulation); the values map shows it in words (a day's food; Sun to Earth in one hour), matching the menu labels in lang/en.json.
-- figures.json labels checked against the Finnish: correct, none lengthened.
+- Diff `git diff origin/main...HEAD` of lesson.md, inquiry.json, exit-ticket.json (en); content hash recomputed and equal to the brief's.
+- lesson.md worked example result: $0{,}45\,\text{MJ} - 110\,\text{kJ} = 340\,\text{kJ}$ recomputed; two significant figures set by $0{,}45\,\text{MJ}$ is correct, and treating the integer $110\,\text{kJ}$ as exact follows the teacher's rule of 2026-11-07 (no $1{,}0\cdot10^{1}$-style notation introduced).
+- English changes match the fi source in substance (CO2 equivalent, internal energy vs heat, accounting assumption).

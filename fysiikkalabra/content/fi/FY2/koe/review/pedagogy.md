@@ -1,18 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: d0f3be8f9671a1e0
+CONTENT-HASH: 13cc91dffc2212dc
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-None. Round-1 items verified:
-- Climate and environment now appear in k3 c, k4 d (can solar alone replace fossil electricity for mitigation; rubric 1+1+1+1) and k5 d, so any two Osa 2 tasks include some of it. E = Hm is in k3 and Osa 1 g; acceptable, though k2 + k4 meets it only in Osa 1.
-- k2 b states "ottaa sähköverkosta tehon 11 kW"; the grid-power reading is now unambiguous.
-- k4 a asks to justify the graph type; k4 b rubric is 2+1 and asks only the question; k3 c rubric is 2+1+2 with no unasked item, and now gives the IPCC factors (112 and 74 g/MJ) in the statement.
-- Intro states the consequential-error rule. Osa 1 correct options are spread over A to D (1,0,2,1,1,2,2,3,1,0).
+- none
 
 ## Polish
-- No task shows the Sankey picture or measurement uncertainty or reliability (the brief asks for one in Osa 2).
-- k5 a solution mixes "kaksi merkitsevää numeroa (noin 180 GWh)" with 175 GWh and 8200 houses; unify precision.
-- k7 c: motor "antaa polkimille" is physically odd; the k7 d health-benefit criterion is outside the course; k7 is easier than k6, so the Osa 3 choice is uneven.
-- Osa 1 a, b and j: the correct option is still the longest.
+- fy2-k5-d: the 'conclusion' point now partly repeats criterion 2 (waste heat reduces heating emissions) and can be earned only via the life-cycle argument (equipment manufacture, construction). A student who correctly concludes 'exaggerated because the electricity production emits' gets no conclusion point. Optional: 'Päättelee, että väite on liioiteltu; esim. sähköntuotannon tai laitteiden ja rakennuksen elinkaaren päästöt.'
 
 ## Checked
-Totals (20 + 60 + 40), rubric sums, no bold, LaTeX, decimal comma, \cdot. k6 source_note now dates capacities (2025). Scope respected (no W, Q, chained efficiencies). Distractors are real errors; progression good; solutions complete; Finnish natural.
+- git diff origin/main...HEAD of the unit's files (fi); pedagogy of the changed passages in context only; FY2 text level.
+- fy2-k3-c: question no longer leading ('why is pellet heating considered better' -> 'under which conditions can it be better'); the prompt names the aspects to consider (origin of carbon, forest growth, time horizon), which map to the three criteria. Criteria are observable; the third explicitly accepts either well-justified conclusion and does not reward 'renewable = automatically better'; 'Hyväksytään myös' adds the 'not better over the period considered' conclusion. Fair to different conclusions.
+- fy2-k5-d: life-cycle criterion added; fy2-k6 data marked fictional; fy2-k7-c simplified motor-only model stated in the task; k6-b and k7-b list answers match the two questions each part asks (lessons/FY2/koe/answers.py keys renamed consistently).

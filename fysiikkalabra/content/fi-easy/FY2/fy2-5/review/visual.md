@@ -1,5 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 7faa91be1e7e6ab4
+CONTENT-HASH: 14e1248b6dd72a03
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
 - none
@@ -8,4 +9,7 @@ CONTENT-HASH: 7faa91be1e7e6ab4
 - none
 
 ## Checked
-- batch delta review: "Luvun tärkeät käsitteet" panel captured from preview/fi-easy/fy2-5.html at 390 and 1280 px (the review/shots set has no capture of it) and opened — between the opening and stage 1, term bold over its explanation at 390 px, two-column at 1280 px, no clipping, no horizontal overflow, no KaTeX error; the edited lesson.md/inquiry.json sentences read in their diff (prose only, no new maths); top-390 opened in a montage (read-aloud "Kuuntele" button under the title, layout intact).
+- Diff of lesson.md, inquiry.json, exit-ticket.json (Selkeä suomi), changed passages with surrounding paragraph.
+- Ennuste 2 prompt, three choices and feedbacks: $22\,\text{MJ/kg}$, $15\,\text{MJ/kg}$, $2{,}2\,\text{MJ} : 0{,}100\,\text{kg}$ typeset with colon for division, thin spaces, correct decimal separator; no bold in the prompt.
+- Distractor wording is parallel and grammatical; nutrition-label vs heating-value distinction stated clearly. Short sentences, Selkeä suomi level kept.
+- No captures opened (diff judged from source).

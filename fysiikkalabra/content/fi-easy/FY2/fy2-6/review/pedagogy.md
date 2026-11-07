@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9a519f0b05bec852
+CONTENT-HASH: 172e1cf560924717
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- meta.json key_concepts — three of five are plant types (ydinvoima, vesivoima, tuulivoima); the chapter's comparison idea (uusiutuva/uusiutumaton, säädettävyys) is thinner. Glossary-limited; consider "aurinkoenergia" or a glossary term for controllability instead of one plant type.
+- S2 §12.3: 'karkausvuosi' is new and not explained; e.g. 'Karkausvuodessa eli vuodessa, jossa on $366$ vuorokautta, on $8784\,\text{h}$.'
 
 ## Checked
-batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.
+- git diff origin/main...HEAD of the unit's files (fi-easy); pedagogy of the changed passages in context only; FY2 text level.
+- lesson.md: 8760 h for an ordinary 365-day year, 8784 h for a leap year, and the stated convention for the chapter's examples; 1598 kW = 1,598 MW (the old '1,598·1000 kW' was confusing). Both are clearer for the student.
+- S2 (NOTES.md §12): the changed sentences are short, connected, natural Finnish; physics terms kept.

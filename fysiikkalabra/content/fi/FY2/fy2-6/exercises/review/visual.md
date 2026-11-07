@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 7ba8761f49283226
-Round: 4
+CONTENT-HASH: edb74adb68359f9d
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
+- [Minor] exercises.json L2-07: "esimerkkipäästökertoimet (esimerkkiaineisto)" repeats "esimerkki"; e.g. "neljän sähköntuotantotavan päästökertoimet esimerkkiaineistona".
 
 ## Checked
-- Round 4 (delta = the correct-option feedback of L1-09 split with "eli" and "joten lähin vaihtoehto on $2000$"). Rendered live (Playwright, rebuilt preview/fy2-6.html; no review/shots for this hash) at 390 and 1280 px: committed the correct option "noin 2000 taloa" and opened the feedback card, then the whole task with Mallivastaus. The feedback now reads "keskiteho on ... ≈ 1 MW, eli 1000 kW, vuosienergia noin ... , eli noin 8,7 · 10^6 kWh ja ... ≈ 1700, joten lähin vaihtoehto on 2000": every formula fits the column, no scrolling formula anywhere, no page overflow at either width.
-- The wording matches the stem's "Valitse lähin arvo" and the solution's "lähin vaihtoehto".
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+- Diff of exercises/exercises.json, exercises/solutions.md (Finnish), changed passages with surrounding paragraph.
+- L2-07 and L3-05 task texts, Find/Kysytty and Answer lines: CO2-equivalent wording consistent, units $\text{g/kWh}$, $\text{TWh}$ in LaTeX; task text paragraphs split by blank lines, no bold.
+- No captures opened (diff judged from source).

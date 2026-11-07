@@ -1,20 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: aee428d2fbf9ff1e
-
-Round 2. Both Major findings of round 1 are fixed.
+CONTENT-HASH: d24acf3a281cd034
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] solutions.md fy2-s2 Yleisiä virheitä — "Lähteellä on sama julkaisija" → "Lähteillä on sama julkaisija".
+- [Minor] solutions.md a: "Tyynellä jaksolla teho on $P_\text{tuuli} < …$" reads "teho on P < …"; e.g. "Tyynellä jaksolla tuulivoimaloiden teho on $P_\text{tuuli} < …$" (optional).
 
 ## Checked
-- Scope (teacher: only changed parts): fy2-s2 title, Vastauspohja and the fy2-s2 text and solutions around them.
-- Heading at 360 and 390 px (own viewport captures): "Kaksi lähdettä samasta kysymyksestä" wraps on three lines, and "14 pistettä" sits fully inside (right edge 344/374 px). The page is exactly as wide as the viewport.
-- Vastauspohja is now a numbered list of six items at 360 and 390 px: readable, item 3 wraps cleanly under its number, nothing clipped. The lead-in says where to write the answers.
-- check_layout FY2-sovella OK at 360 and 390 (fi, en, fi-easy). Captures re-taken (screenshot.py --if-stale).
-- Inline formulas in fy2-s2: none wraps and none overflows at 360/390. The stacked g/kWh fraction is kept on purpose (teacher's rule: no slash division), so it is no longer a finding.
-
-## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 5
+- Diff of sovella/tasks.json, sovella/solutions.md, lessons/FY2/sovella/answers.py (Finnish), changed passages with surrounding paragraph.
+- solutions.md a: $P < 0{,}05 \cdot 28 \cdot 5{,}0\,\text{MW} = 7\,\text{MW}$ and $P > 80\,\text{MW} - 7\,\text{MW} = 73\,\text{MW}$: inequality signs, \cdot, thin spaces correct; "alle $7\,\text{MW}$:n" inflection correct.
+- tasks.json source_note and biomass paragraph (accounting assumption, IPCC AR5 WGIII Annex III, forest chips may differ): grammar correct, $230\,\text{g/kWh}$ in LaTeX; criterion text for a); part b answer list (five values) is data only, no presentation change; counterargument and option lines in solutions.md.
+- No captures opened (diff judged from source).
