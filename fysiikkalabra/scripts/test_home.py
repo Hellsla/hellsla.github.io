@@ -126,8 +126,8 @@ for lang in i18n.languages():
            and f'src="{"" if out == SITE else "../"}brand/kiviruukin-lukio-oikea-valkoinen.svg"' in about)
     leaks = sorted(str(f.relative_to(out)) for f in out.glob("*.html") if ('href="' + "../" * len(out.relative_to(ROOT.parent).parts) + 'index.html"') in f.read_text())
     expect(f"{lang}: no page links out of the site to the teacher's portfolio (teacher 2026-11-04)", not leaks, leaks[:5])
-    expect(f"{lang}: the front page header links Sivustosta after Lukuvinkit",
-           f'<a class="nav-reading" href="lukuvinkit.html">{_h.escape(T("site.reading_tips"))}</a><a class="nav-about" href="tietoa.html">{_h.escape(T("site.about"))}</a>' in hdr, hdr[-400:])
+    expect(f"{lang}: the front page header links Vihkot and Sivustosta after Lukuvinkit (teacher 2026-11-07)",
+           f'<a class="nav-reading" href="lukuvinkit.html">{_h.escape(T("site.reading_tips"))}</a><a class="nav-booklets" href="vihkot.html">{_h.escape(T("site.booklets"))}</a><a class="nav-about" href="tietoa.html">{_h.escape(T("site.about"))}</a>' in hdr, hdr[-400:])
     src = next((f for f in (ROOT / "content" / lang / "tietoa.md", ROOT / "content" / "fi" / "tietoa.md") if f.is_file()), None)
     heads = re.findall(r"^#+ (.+)$", src.read_text(), re.M) if src else []
     expect(f"{lang}: Sivustosta shows the teacher's text (content/{lang}/tietoa.md) with all its headings and bold parts",
@@ -239,6 +239,18 @@ for lang in i18n.languages():
            all(_h.escape(b["author"]) in i and _h.escape(b["language"]) in i and _h.escape(b["level"]) in i and _h.escape(b["text"]) in i and _h.escape(b["courses"]) in i for b, i in zip(want, items)))
     no_link = [p.name for p in out.glob("*.html") if 'href="lukuvinkit.html"' not in re.search(r'<header class="top">.*?</header>', p.read_text(), re.S).group(0)]
     expect(f"{lang}: every page links to {reading_tips.PAGE} in its header", not no_link, no_link[:10])
+    # Vihkot (teacher 2026-11-07, scripts/booklets.py): every header links it; each book of the language (fi-easy: the
+    # Finnish where it has none) is listed with its pages and a download link to a PDF that the build copied
+    import booklets
+    no_bk = [p.name for p in out.glob("*.html") if 'href="vihkot.html"' not in re.search(r'<header class="top">.*?</header>', p.read_text(), re.S).group(0)]
+    expect(f"{lang}: every page links to {booklets.PAGE} in its header", not no_bk, no_bk[:10])
+    bp = (out / booklets.PAGE).read_text() if (out / booklets.PAGE).is_file() else ""
+    want_bk = booklets.books(lang)
+    got_bk = re.findall(r'<a class="booklet-get" href="(?:\.\./)?vihkot/([^"]+)" download', bp)   # one copy of the PDFs, site/vihkot/
+    expect(f"{lang} {booklets.PAGE}: the books {[n for _, n, *_ in want_bk]} in course order", got_bk == [n for _, n, *_ in want_bk], got_bk)
+    missing = [n for n in got_bk if not (SITE / booklets.PUBLISHED / n).is_file()]
+    expect(f"{lang} {booklets.PAGE}: every listed PDF is on the site", not missing, missing)
+    expect(f"{lang} {booklets.PAGE}: pages shown for every book", all(T("booklets.meta", pages=e["pages"], size="X").split("X")[0] in _h.unescape(bp) for _, _, e, _ in want_bk))
 
 # Käsitetakomo (teacher 2026-11-03, scripts/concept_cards.py): the cards come to the chapter
 import concept_cards

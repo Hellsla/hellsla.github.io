@@ -2,7 +2,7 @@
 the site shows them, no tasks or interactive parts; a QR code at the start of each chapter leads to its page on the
 web (simulation, tasks and model solutions).
 
-    python scripts/print_book.py FY1 [--lang fi|en|fi-easy] [--out print]
+    python scripts/print_book.py FY1 [--lang fi|en|fi-easy] [--out print] [--publish]
 
 Writes two PDFs:
   <out>/<C>-<lang>-A5.pdf          the book page by page (for reading on a screen or an A5 printer)
@@ -104,6 +104,21 @@ def render_chapter(page, f, url, label):
       for (const el of document.querySelectorAll('main *'))
         if (getComputedStyle(el).breakInside === 'avoid' && el.getBoundingClientRect().height > limit)
           el.classList.add('book-may-break'); }""")
+    # photos as JPEG at print resolution (about 190 dpi over the column): Chromium otherwise embeds them as lossless PNG
+    # at full size and a course book grows to 20-30 MB
+    page.evaluate("""async () => {
+      for (const img of document.querySelectorAll('main img')) {
+        if (/\\.svg($|[?#])/i.test(img.currentSrc || img.src)) continue;
+        img.loading = 'eager';   // a lazy photo below the fold has not loaded yet
+        if (!img.complete || !img.naturalWidth) await img.decode().catch(() => {});
+        const scale = Math.min(1, 900 / img.naturalWidth);
+        if (!img.naturalWidth) continue;
+        const c = document.createElement('canvas');
+        c.width = Math.round(img.naturalWidth * scale); c.height = Math.round(img.naturalHeight * scale);
+        const g = c.getContext('2d'); g.fillStyle = '#fff'; g.fillRect(0, 0, c.width, c.height); g.drawImage(img, 0, 0, c.width, c.height);
+        img.removeAttribute('srcset'); img.src = c.toDataURL('image/jpeg', 0.82);
+        await img.decode().catch(() => {});
+      } }""")
     page.evaluate("(b) => { const h = document.querySelector('main h1'); "
                   "const q = h.closest('.intro-head')?.querySelector('blockquote') || h; q.insertAdjacentHTML('afterend', b); }", box)
     return title, page.pdf(format="A5", print_background=True, prefer_css_page_size=True)
@@ -182,7 +197,8 @@ def number_pages(reader, skip, stop):
             c.drawCentredString(w / 2, 7 * MM, str(i + 1))
             c.save()
             pg.merge_page(PdfReader(buf).pages[0])
-        out.add_page(pg)
+        out.add_page(pg).compress_content_streams()   # merging leaves the page's drawing uncompressed (4-5 MB a course)
+    out.compress_identical_objects()
     return out
 
 
@@ -200,7 +216,7 @@ def cut_and_stack(src):
             s = PageObject.create_blank_page(width=2 * w, height=h)
             s.merge_transformed_page(pages[left], Transformation())
             s.merge_transformed_page(pages[right], Transformation().translate(w, 0))
-            out.add_page(s)
+            out.add_page(s).compress_content_streams()
     return out, n
 
 
@@ -209,6 +225,7 @@ def main():
     ap.add_argument("course")
     ap.add_argument("--lang", default="fi", choices=sorted(TEXT))
     ap.add_argument("--out", default=str(ROOT / "print"))
+    ap.add_argument("--publish", action="store_true", help="also put the A5 book on the site's Vihkot page (booklets/)")
     a = ap.parse_args()
     course = a.course.upper()
     chs, sub = chapters(course, a.lang)
@@ -216,7 +233,7 @@ def main():
     out.mkdir(parents=True, exist_ok=True)
     label = TEXT[a.lang]["qr"]
     with sync_playwright() as pw:
-        b = launch(pw)
+        b = launch(pw, args=["--allow-file-access-from-files"])   # site images on a canvas (photos as JPEG, render_chapter)
         page = b.new_page()
         rendered = []
         for cid, f in chs:
@@ -266,6 +283,10 @@ def main():
     a5 = out / f"{course}-{a.lang}-A5.pdf"
     with open(a5, "wb") as fh:
         numbered.write(fh)
+    if a.publish:   # Vihkot (teacher 2026-11-07): the page lists booklets/, build.py copies it to site/vihkot/
+        import booklets, datetime
+        dst = booklets.record(course, a.lang, a5, len(PdfReader(a5).pages), datetime.date.today().isoformat())
+        print(f"published {dst.relative_to(ROOT)}; rebuild the site (python scripts/build.py)")
     sheets, n = cut_and_stack(PdfReader(a5))
     a4 = out / f"{course}-{a.lang}-A4-tulostus.pdf"
     with open(a4, "wb") as fh:

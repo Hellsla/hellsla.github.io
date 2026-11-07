@@ -1,0 +1,30 @@
+{
+ "FY1-en": {
+  "course": "FY1",
+  "lang": "en",
+  "pages": 104,
+  "bytes": 2460569,
+  "date": "2026-11-07"
+ },
+ "FY1-fi": {
+  "course": "FY1",
+  "lang": "fi",
+  "pages": 104,
+  "bytes": 2424539,
+  "date": "2026-11-07"
+ },
+ "FY2-en": {
+  "course": "FY2",
+  "lang": "en",
+  "pages": 96,
+  "bytes": 2386311,
+  "date": "2026-11-07"
+ },
+ "FY2-fi": {
+  "course": "FY2",
+  "lang": "fi",
+  "pages": 96,
+  "bytes": 2362034,
+  "date": "2026-11-07"
+ }
+}

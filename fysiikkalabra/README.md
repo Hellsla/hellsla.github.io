@@ -113,6 +113,10 @@ the investigation and model solutions are left out by print CSS only; the conten
 cut-and-stack order. Print the A4 file double-sided, flipped on the short edge, at 100 %; cut the stack in half, put
 the left half on top of the right half and bind the left edge. Needs `pip install playwright segno pypdf reportlab`.
 
+With `--publish` the A5 book also goes to `booklets/<C>-<lang>.pdf` (recorded in `booklets/booklets.json`) and onto
+the site's **Vihkot** page (`vihkot.html`, scripts/booklets.py, teacher 2026-11-07), linked from every header; rebuild
+the site after it. Photos are embedded as JPEG at print resolution, so a course book is about 2.5 MB.
+
 ## Curriculum
 `curriculum.json` covers FY1–FY8 with module goals, central contents and a proposed lesson-slot list per
 module, generated from the LOPS 2019 texts in `docs/lops2019/`. The reference lesson is `content/_gold/`.
