@@ -50,6 +50,15 @@
   };
   const clean = (r) => ({ id: r.id, html: r.html, page: typeof r.page === 'string' ? r.page : '', updated: typeof r.updated === 'string' ? r.updated : '' });
 
+  // the time of each solution's first save (teacher 2026-11-07: the module page's graph, tehty.js): set once, gone with the solution
+  const FIRST = 'ruukkilabra:ratkaistu';
+  const first = (id, on) => {
+    try {
+      const m = id === null ? {} : JSON.parse(localStorage.getItem(FIRST) || '{}') || {};
+      if (on && !m[id]) m[id] = new Date().toISOString(); else if (!on && id !== null) delete m[id]; else if (on) return;
+      localStorage.setItem(FIRST, JSON.stringify(m));
+    } catch (e) { /* the graph then uses the last save */ }
+  };
   const api = {
     // the saved html of one task, '' when there is none; a damaged record rejects with code "corrupt"
     get: (id) => run('readonly', (s) => s.get(id)).then((r) => {
@@ -59,9 +68,9 @@
     }),
     // an empty answer removes the record, so "delete everything" and an emptied editor leave nothing behind
     put: (id, html, page) => (html ? run('readwrite', (s) => s.put({ id, html, page: page || '', updated: new Date().toISOString() }))
-                                   : run('readwrite', (s) => s.delete(id))).then((r) => { changed({ id, html: html || '' }); return r; }),
-    remove: (id) => run('readwrite', (s) => s.delete(id)).then((r) => { changed({ id }); return r; }),
-    clear: () => run('readwrite', (s) => s.clear()).then((r) => { changed({ all: true }); return r; }),
+                                   : run('readwrite', (s) => s.delete(id))).then((r) => { first(id, !!html); changed({ id, html: html || '' }); return r; }),
+    remove: (id) => run('readwrite', (s) => s.delete(id)).then((r) => { first(id, false); changed({ id }); return r; }),
+    clear: () => run('readwrite', (s) => s.clear()).then((r) => { first(null, false); changed({ all: true }); return r; }),
     // every intact record; damaged ones are counted, not returned
     all: () => run('readonly', (s) => s.getAll()).then((rs) => ({ solutions: rs.filter(valid).map(clean), damaged: rs.filter((r) => !valid(r)).length })),
     backup: () => api.all().then(({ solutions }) => JSON.stringify(Object.assign({ format: FORMAT, version: VERSION, exported: new Date().toISOString(), solutions }, readDone() ? { progress: readDone() } : {}), null, 1)),

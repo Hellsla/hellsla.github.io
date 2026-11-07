@@ -25,15 +25,25 @@
   const themes = (() => { try { return JSON.parse(box.dataset.themes || '[]'); } catch (e) { return []; } })();
   const spans = [];
   chs.forEach((c) => { const th = themes.find((t) => t.first === c.id); if (th || !spans.length) spans.push({ t: th ? th.t : '', n: 0 }); spans[spans.length - 1].n++; });
+  // The themes' names over their columns on one row; when a name does not fit its columns (a one- or two-chapter theme),
+  // each theme gets a row of its own, a staircase, its name running on from its first column (or back from its last).
+  const themeRows = (stair) => {
+    const t = document.createElement('div'); t.className = 'sm-themes' + (stair ? ' sm-stair' : ''); t.setAttribute('aria-hidden', 'true');
+    t.style.setProperty('--cols', chs.length);
+    let start = 0;
+    spans.forEach((sp, k) => {
+      const lab = document.createElement('span'), txt = document.createElement('span');
+      lab.className = 'sm-theme' + (stair && start + sp.n / 2 > chs.length / 2 ? ' sm-end' : ''); lab.title = sp.t; txt.textContent = sp.t; lab.append(txt);
+      lab.style.gridColumn = (start + 2) + ' / span ' + sp.n; lab.style.gridRow = String(stair ? k + 1 : 1);
+      t.append(lab); start += sp.n;
+    });
+    return t;
+  };
   const draw = () => {
     let n = 0, total = 0;
     const grid = document.createElement('div');
     grid.className = 'sm-grid'; grid.setAttribute('role', 'img'); grid.setAttribute('aria-label', S('selfmap_aria'));
     grid.style.setProperty('--cols', chs.length); grid.style.setProperty('--rows', rows);
-    if (themes.length) {
-      grid.append(Object.assign(document.createElement('span'), { className: 'sm-corner' }));
-      spans.forEach((sp) => { const t = document.createElement('span'); t.className = 'sm-theme'; t.textContent = sp.t; t.style.gridColumn = 'span ' + sp.n; grid.append(t); });
-    }
     const head = document.createElement('span'); head.className = 'sm-corner'; grid.append(head);
     chs.forEach((c) => { const h = document.createElement('span'); h.className = 'sm-col'; h.textContent = c.n; h.title = S('selfmap_col', { n: c.n }); grid.append(h); });
     for (let k = 1; k <= rows; k++) {
@@ -48,7 +58,13 @@
       });
     }
     box.querySelector('.sm-count').textContent = S('selfmap_count', { n, total });
-    box.querySelector('.sm-map').replaceChildren(grid);
+    const map = box.querySelector('.sm-map');
+    map.replaceChildren(grid);
+    if (themes.length) {
+      map.prepend(themeRows(false));
+      const tight = [...map.querySelectorAll('.sm-theme')].some((l) => l.scrollWidth > l.clientWidth + 1 || l.firstChild.offsetHeight > l.clientHeight - 4);
+      if (tight) map.firstChild.replaceWith(themeRows(true));
+    }
     const legend = box.querySelector('.sm-legend');
     if (!legend.children.length) LEVELS.forEach((lv) => { const li = document.createElement('li'), sw = document.createElement('span');
       sw.className = 'sm-cell'; sw.dataset.level = lv; li.append(sw, ' ' + S('sa_' + lv)); legend.append(li); });
@@ -56,6 +72,10 @@
     const wrap = box.closest('details'); if (wrap) wrap.hidden = false;
   };
   draw();
+  const wrap = box.closest('details');   // measured only when shown: the staircase is decided when the view opens
+  if (wrap) wrap.addEventListener('toggle', () => { if (wrap.open) draw(); });
+  let w0 = 0;
+  window.addEventListener('resize', () => { const w = box.clientWidth; if (w && Math.abs(w - w0) > 8) { w0 = w; draw(); } });
   window.addEventListener('storage', (e) => { if (!e.key || e.key.startsWith('ruukkilabra:itsearvio:')) draw(); });
   window.addEventListener('pageshow', (e) => { if (e.persisted) draw(); });
 })();

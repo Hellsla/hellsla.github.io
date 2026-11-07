@@ -493,6 +493,7 @@
     "progress_axis_y": "done",
     "progress_chart": "Assigned tasks done by date: {{n}}/{{total}}.",
     "progress_note": "Your Done marks and their times stay in this browser. They are included when you submit your solutions to your teacher.",
+    "progress_note_all": "A task counts as done when your own solution is saved or its answers are checked with Check or Answer. This stays in this browser.",
     "progress_show": "Show my progress",
     "selfmap_title": "My self-assessment",
     "selfmap_count": "{{n}}/{{total}} statements assessed",

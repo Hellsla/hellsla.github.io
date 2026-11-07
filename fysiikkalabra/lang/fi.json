@@ -493,6 +493,7 @@
     "progress_axis_y": "tehtyjä",
     "progress_chart": "Tehtyjen annettujen tehtävien määrä päivittäin: {{n}}/{{total}}.",
     "progress_note": "Tehty-merkinnät ja niiden ajat säilyvät tässä selaimessa. Ne tulevat mukaan, kun palautat ratkaisut opettajalle.",
+    "progress_note_all": "Tehdyiksi lasketaan tehtävät, joille on tallennettu oma ratkaisu tai joiden vastaukset on tarkistettu Tarkista- tai Vastaa-napilla. Tiedot säilyvät tässä selaimessa.",
     "progress_show": "Näytä edistyminen",
     "selfmap_title": "Oma itsearvio",
     "selfmap_count": "{{n}}/{{total}} väitettä arvioitu",
