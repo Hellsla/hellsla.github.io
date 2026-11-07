@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: e3a2b96260884af2
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 73b5a31d6409a888
+Mode: translation
 
 ## Blocking
 (none)
-
-## Fixed
-- solutions.md L3-05 b): "litiumilla / natriumilla / kaliumilla kuorella" changed to "litiumissa / natriumissa / kaliumissa" (the valence electron is in the atom, not on it).
 
 ## Polish
 (none)
 
 ## Checked
-- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) and the 12 older ones compared with content/fi by script: ids, levels, kinds, answers, units (kpl as in fi), tolerances, correct flags, choice order, data cells and figure id are identical.
-- Every number in exercises.json and solutions.md has the same multiset as in fi per exercise; the decimal comma stays as in fi; formulas pass check_i18n parity.
-- Re-derived by hand: 14; 72.25 % and 92.0 %; 40/80/120 Hz; 200 vs 205; slope 13.6 eV, n = 3..6, 397 nm; 590.5 nm and 241.2 nm. All agree.
-- Science content is not weakened by simplification: probability boundary, standing wave, quantised energy and screening are all kept; terms added in brackets are correct (solmu, kupu, emissiospektri, alkukuori, valenssielektroni, interpolointi).
-- check_i18n.py fi-easy: 0 errors.
+- fy8-5-L1-09 (fi-easy) compared with reviewed fi: same data, same options, same correct option, same answer.
+- Recomputed independently: ordering: E_n = -13.6/n^2 gives B -13.6, D -3.40, A -1.51, C -0.850, E -0.544 eV; energy depends on n only, so order B, D, A, C, E.
+- solutions.md L1-09: principle, symbolic step, substitution, rounding and reasonableness agree with fi; answers.py note agrees.
+- fi-easy follows NOTES.md section 12 (shorter sentences, terms explained, same physics and numbers as fi).
+- check_i18n shows nothing for fy8-5; build.py fy8-5 succeeds. No translation edit was needed.
+- Hash 73b5a31d6409a888 at start and end.

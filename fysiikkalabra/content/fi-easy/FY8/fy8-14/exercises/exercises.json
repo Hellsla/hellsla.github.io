@@ -91,6 +91,37 @@
       "answer": 1.3e-14,
       "unit": "J",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-14-L1-09",
+      "level": 1,
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "text": "PET-merkkiaine valmistetaan syklotronilla ja kuljetetaan toiseen sairaalaan. Kuljetus ja valmistelut kestävät ajan $t$. Fluori-$18$:n puoliintumisaika on $T_{1/2}$. Ruiskutushetkellä merkkiaineen aktiivisuuden on oltava $A$. Oletetaan, että aktiivisuus pienenee vain hajoamalla.\n\nMikä lauseke antaa aktiivisuuden $A_0$, joka merkkiaineella on oltava lähtiessä?",
+      "answer": "$A_0 = A \\cdot 2^{t/T_{1/2}}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "$A_0 = A \\cdot \\left(\\tfrac{1}{2}\\right)^{t/T_{1/2}}$",
+          "feedback": "Tässä hajoamislakia on käytetty väärään suuntaan. Lauseke antaa aktiivisuuden, joka olisi jäljellä vielä ajan $t$ kuluttua ruiskutushetkestä. Lähtiessä aktiivisuuden on oltava suurempi kuin $A$, ei pienempi."
+        },
+        {
+          "text": "$A_0 = A \\cdot 2^{T_{1/2}/t}$",
+          "feedback": "Tässä eksponentti on käännetty ylösalaisin. Puoliintumisten lukumäärä on $\\tfrac{t}{T_{1/2}}$, joten pidempi kuljetus vaatii suuremman lähtöaktiivisuuden. Tämä lauseke pienenisi kuljetusajan kasvaessa."
+        },
+        {
+          "text": "$A_0 = A \\cdot 2^{t/T_{1/2}}$",
+          "correct": true,
+          "feedback": "Oikein: ajassa $t$ aktiivisuus puolittuu $\\tfrac{t}{T_{1/2}}$ kertaa. Lähtiessä aktiivisuuden on siis oltava $2^{t/T_{1/2}}$-kertainen. Esimerkiksi kolmessa puoliintumisajassa $A_0 = 2^{3}A = 8A$."
+        },
+        {
+          "text": "$A_0 = A \\cdot \\tfrac{2t}{T_{1/2}}$",
+          "feedback": "Tässä aktiivisuuden ajatellaan muuttuvan tasaisesti ajan mukana. Jokainen puoliintumisaika puolittaa kuitenkin jäljellä olevan aktiivisuuden. Lisäksi ajalla $t = 0$ lauseke antaisi nollan eikä $A$:ta."
+        }
+      ]
     }
   ],
   "level2": [

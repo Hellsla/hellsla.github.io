@@ -263,6 +263,36 @@
           "feedback": "Oikein: energiaa vapautuu vain, jos syntyvien ytimien sidosenergia on yhteensä suurempi kuin alkuperäisten. Huipun molemmin puolin $\\tfrac{E_\\text{B}}{A}$ on pienempi. Rautaytimien yhdistäminen tai halkaiseminen veisi nukleonit kohti löyhempää sidosta ja vaatisi energiaa. Muiden ytimien kanssa reaktio voi silti vapauttaa energiaa."
         }
       ]
+    },
+    {
+      "id": "fy8-10-L2-08",
+      "level": 2,
+      "kind": [
+        "reasoning"
+      ],
+      "text": "Kulta-197-atomin ${}^{197}_{79}\\text{Au}$ massa on $196{,}966569\\,\\text{u}$. Vetyatomin massa on $m_\\text{H} = 1{,}007825\\,\\text{u}$ ja neutronin massa on $m_\\text{n} = 1{,}008665\\,\\text{u}$. Käytä arvoa $1\\,\\text{u} = 931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$.\n\nMikä vaihtoehdoista on lähimpänä kulta-197-ytimen sidosenergiaa $E_\\text{B}$?",
+      "answer": "noin $1600\\,\\text{MeV}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "noin $0{,}002\\,\\text{MeV}$",
+          "feedback": "Tässä massavaje $1{,}674\\,\\text{u}$ on jaettu luvulla $931{,}5$. Muunnos on siis tehty väärin päin. Atomimassayksikön paikalle sijoitetaan $931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$, joten massavaje kerrotaan tällä luvulla."
+        },
+        {
+          "text": "noin $8\\,\\text{MeV}$",
+          "feedback": "Tämä on sidosenergia nukleonia kohti, noin $1560\\,\\text{MeV} : 197 \\approx 7{,}9\\,\\text{MeV}$. Tehtävässä kysytään koko ytimen sidosenergiaa. Siksi tulosta ei jaeta nukleonien määrällä $A = 197$."
+        },
+        {
+          "text": "noin $1600\\,\\text{MeV}$",
+          "correct": true,
+          "feedback": "Oikein: massavaje on noin $1{,}674\\,\\text{u}$. Sitä vastaa energia $1{,}674 \\cdot 931{,}5\\,\\text{MeV}$, eli noin $1560\\,\\text{MeV}$."
+        },
+        {
+          "text": "noin $180\\,000\\,\\text{MeV}$",
+          "feedback": "Tässä koko atomin massa on muutettu energiaksi: $196{,}97 \\cdot 931{,}5\\,\\text{MeV}$, eli noin $183\\,000\\,\\text{MeV}$. Sidosenergia ei ole ytimen koko energia. Se vastaa vain massavajetta eli sitä, kuinka paljon kevyempi atomi on kuin sen osat yhteensä."
+        }
+      ]
     }
   ],
   "level3": [

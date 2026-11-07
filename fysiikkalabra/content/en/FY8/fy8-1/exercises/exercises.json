@@ -94,6 +94,45 @@
       "answer": "An electron is released when it absorbs one photon whose energy is at least equal to the work function. The energy of an ultraviolet photon, $3.40\\,\\text{eV}$, is greater than the work function $2.28\\,\\text{eV}$, so even one photon releases an electron immediately, even if few photons arrive. The energy of a photon of red light, $1.91\\,\\text{eV}$, is smaller than the work function, so no single photon is enough on its own, and energy does not accumulate from several photons. So a large number of photons, that is brightness, does not help.",
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-1-L1-09",
+      "level": 1,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "A metal plate is illuminated by two lamps in turn. The values in the situation are example values.\n\nThe work function of the metal is $W = 2.50\\,\\text{eV}$.\n\nLamp A is dim, and the photon energy of its violet light is $3.10\\,\\text{eV}$.\n\nLamp B is very bright, and the photon energy of its green light is $2.25\\,\\text{eV}$.\n\nWork out which statements are true and which are false.",
+      "answer": "1 false, 2 true, 3 false, 4 true, 5 false",
+      "unit": "",
+      "tolerance": 0.02,
+      "statements": [
+        {
+          "text": "Lamp B starts to release electrons when the intensity of its light is increased enough.",
+          "true": false,
+          "feedback": "False: this is the idea of the wave model, that light that is bright enough would always release electrons. One electron receives the energy of one photon, and the photon energy of lamp B, $2.25\\,\\text{eV}$, is smaller than the work function $2.50\\,\\text{eV}$. Brighter light only brings more photons with too little energy."
+        },
+        {
+          "text": "The maximum kinetic energy of the electrons released by lamp A is $0.60\\,\\text{eV}$.",
+          "true": true,
+          "feedback": "True: from the photoelectric equation $E_\\text{k,max} = hf - W$, so $E_\\text{k,max} = 3.10\\,\\text{eV} - 2.50\\,\\text{eV}$, that is $0.60\\,\\text{eV}$."
+        },
+        {
+          "text": "When the intensity of lamp A is doubled, the maximum kinetic energy is $1.20\\,\\text{eV}$.",
+          "true": false,
+          "feedback": "False: here brighter light is assumed to give an electron more energy. The frequency does not change, so the energy of one photon is still $3.10\\,\\text{eV}$, and an electron does not collect energy from two photons. The maximum kinetic energy stays at $0.60\\,\\text{eV}$."
+        },
+        {
+          "text": "When the intensity of lamp A is doubled, more electrons are released per second.",
+          "true": true,
+          "feedback": "True: with light of one colour, the intensity tells how many photons hit the surface per second. When more photons arrive and each can release one electron, more electrons are released too."
+        },
+        {
+          "text": "Lamp A releases electrons only after they have collected energy from its light for some time.",
+          "true": false,
+          "feedback": "False: a delay is a prediction of the wave model that is not observed in experiments. Already the first photon of lamp A brings the energy $3.10\\,\\text{eV}$, which is greater than the work function, so electrons are released immediately even with dim light."
+        }
+      ]
     }
   ],
   "level2": [

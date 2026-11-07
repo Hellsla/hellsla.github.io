@@ -87,7 +87,7 @@
     {
       "id": "fy8-2-L1-08",
       "level": 1,
-      "text": "A student solved the problem like this: “A hydrogen atom moves from the state $n = 2$, whose energy is $E_2 = -3.40\\,\\text{eV}$, to the state $n = 3$, whose energy is $E_3 = -1.51\\,\\text{eV}$. The energy of the photon is the difference between the states, $E_3 - E_2 = -1.51\\,\\text{eV} - (-3.40\\,\\text{eV}) = 1.89\\,\\text{eV}$, so the atom emits a photon whose energy is $1.89\\,\\text{eV}$.”\n\nThe numerical value is correct, but the conclusion is not. What is the error in the student's reasoning?",
+      "text": "A student solved the problem like this: “A hydrogen atom moves from the state $n = 2$, whose energy is $E_2 = -3.40\\,\\text{eV}$, to the state $n = 3$, whose energy is $E_3 = -1.51\\,\\text{eV}$. The energy of the photon is the difference between the states, $E_3 - E_2 = -1.51\\,\\text{eV} - (-3.40\\,\\text{eV})$, that is $E_3 - E_2 = 1.89\\,\\text{eV}$, so the atom emits a photon whose energy is $1.89\\,\\text{eV}$.”\n\nThe numerical value is correct, but the conclusion is not. What is the error in the student's reasoning?",
       "kind": [
         "error",
         "concept"
@@ -289,6 +289,42 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy8-2-L2-08",
+      "level": 2,
+      "kind": [
+        "graph",
+        "concept",
+        "reasoning"
+      ],
+      "text": "A model atom has four energy states whose energies are example values.\n\nGround state: $E_1 = -5.00\\,\\text{eV}$\n\nExcited state: $E_2 = -2.50\\,\\text{eV}$\n\nExcited state: $E_3 = -2.00\\,\\text{eV}$\n\nExcited state: $E_4 = -0.60\\,\\text{eV}$\n\nA gas made of these atoms is at room temperature, so almost all of its atoms are in the ground state. The light of an incandescent lamp is passed through the gas, and the light that comes through is examined with a spectroscope in the visible range $380$–$720\\,\\text{nm}$. Use the value $hc = 1240\\,\\text{eV}\\,\\text{nm}$.\n\nWhich picture shows the observed spectrum?",
+      "answer": "Spectrum C",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Spectrum A",
+          "figure": "fy8-2/pick-emissio",
+          "feedback": "Bright lines on a black background are emission lines, that is light emitted by the gas itself, not light that has passed through it. Incandescent light that has passed through the gas gives a continuous band of colour from which the wavelengths absorbed by the atoms are missing as dark lines."
+        },
+        {
+          "text": "Spectrum B",
+          "figure": "fy8-2/pick-kolme",
+          "feedback": "The line $653\\,\\text{nm}$ corresponds to the transition from state $2$ to state $4$. The atoms of a cold gas are in the ground state, so they absorb only transitions that start from the ground state, and this line does not appear."
+        },
+        {
+          "text": "Spectrum C",
+          "figure": "fy8-2/pick-kaksi",
+          "correct": true,
+          "feedback": "Correct: the transitions from the ground state to states $2$ and $3$ give dark lines at $496\\,\\text{nm}$ and $413\\,\\text{nm}$. The line $282\\,\\text{nm}$ that corresponds to the transition to state $4$ is ultraviolet."
+        },
+        {
+          "text": "Spectrum D",
+          "figure": "fy8-2/pick-kaista",
+          "feedback": "Here the atom is assumed to absorb all photons whose energy is enough for excitation. When the electron stays in the atom, the photon energy must be exactly the difference between two states, so narrow lines are formed."
+        }
+      ]
     }
   ],
   "level3": [

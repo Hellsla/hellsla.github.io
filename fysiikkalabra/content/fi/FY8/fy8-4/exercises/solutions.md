@@ -169,6 +169,27 @@
 **Vastaus:** a) Oppilas sijoitti aallonpituuden nanometreinä metrien sijaan, joten nimittäjässä oli $633$ eikä $633 \cdot 10^{-9}$ ja fotonin energia jäi $10^{9}$-kertaa liian pieneksi ($3{,}14 \cdot 10^{-28}\,\text{J}$ oikean $3{,}14 \cdot 10^{-19}\,\text{J}$:n sijaan). Fotonivirta tuli siksi $10^{9}$-kertaisena. b) $6{,}4 \cdot 10^{15}\,\tfrac{1}{\text{s}}$, kaksi merkitsevää numeroa kuten tehossa $2{,}0\,\text{mW}$.
 **Järkevyys:** Luvun $1\,\text{mW}$:n laserosoitin lähettää noin $3 \cdot 10^{15}$ fotonia sekunnissa, joten $2{,}0\,\text{mW}$ antaa noin $2 \cdot 3 \cdot 10^{15}\,\tfrac{1}{\text{s}} = 6 \cdot 10^{15}\,\tfrac{1}{\text{s}}$, mikä sopii tulokseen. Oppilaan luku $6{,}4 \cdot 10^{24}\,\tfrac{1}{\text{s}}$ olisi miljardikertainen tähän verrattuna, ja jo näin voi päätellä sen virheelliseksi.
 
+## fy8-4-L2-08
+**Kysytty:** onko sironneen fotonin aallonpituus $\lambda'$ pidempi, lyhyempi vai yhtä suuri kuin tulevan fotonin aallonpituus $\lambda$, ja mikä perustelu sen selittää.
+**Periaate:** Comptonin ilmiössä fotoni törmää lähes vapaaseen elektroniin. Energia säilyy, joten sironneen fotonin energia on tulevan fotonin energia vähennettynä elektronin saamalla liike-energialla, $hf = hf' + E_\text{k}$. Fotonin energia on $E = \tfrac{hc}{\lambda}$, joten aallonpituus on kääntäen verrannollinen energiaan.
+**Mallivastaus:** Aallonpituus $\lambda'$ on pidempi kuin $\lambda$. Sironneen fotonin energia on
+
+$hf' = hf - E_\text{k}$
+
+$hf' = 17{,}4\,\text{keV} - 0{,}55\,\text{keV}$
+
+$hf' = 16{,}85\,\text{keV}$
+
+Koska $\lambda = \tfrac{hc}{E}$, aallonpituuksien suhde on energioiden käänteinen suhde:
+
+$\dfrac{\lambda'}{\lambda} = \dfrac{hf}{hf'}$
+
+$\dfrac{\lambda'}{\lambda} = \dfrac{17{,}4\,\text{keV}}{16{,}85\,\text{keV}} \approx 1{,}03$
+
+Aallonpituus kasvaa siis noin $3\,\%$. Tarkistus arvolla $hc = 1240\,\text{eV}\,\text{nm}$: $\lambda \approx 0{,}0713\,\text{nm}$ ja $\lambda' \approx 0{,}0736\,\text{nm}$.
+
+Oikea perustelu on, että sironneen fotonin energia on pienempi ja fotonin energia on kääntäen verrannollinen aallonpituuteen. Jos riippuvuus luettaisiin suoraan verrannolliseksi, pienempi energia antaisi väärin lyhyemmän aallonpituuden. Aaltomallin mukaan elektroni säteilisi samalla taajuudella kuin tuleva säteily, jolloin aallonpituus ei muuttuisi, mutta Compton mittasi aallonpituuden kasvavan. Fotonin liikemäärä $p = \tfrac{h}{\lambda}$ on tosi tieto, mutta se ei yksin kerro muutoksen suuntaa.
+
 ## fy8-4-L3-04
 **Annettu:** aallonpituus $\lambda = 532\,\text{nm}$, rakoihin tulevan valon teho $P = 1{,}5 \cdot 10^{-15}\,\text{W}$. Rakoihin tulevista fotoneista $20\,\%$ kulkee rakojen läpi ja osuu ilmaisimen alueelle, ja ilmaisin rekisteröi $40\,\%$ siihen osuvista fotoneista; tavoite $5000$ osumaa, laitteen pituus $1{,}5\,\text{m}$; $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$
 **Kysytty:** osumien keräämiseen kuluva aika $t$ sekunteina fotonien keskimääräinen väli $d$ sekä perustelu sille, miksi reitin tunteminen tuhoaisi raitakuvion

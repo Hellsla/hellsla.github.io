@@ -1,18 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: eb2ae3787808b0eb
-Round: 2
+CONTENT-HASH: f7549c461bffdbad
 
 ## Blocking
 
 ## Polish
-- exercises.json:212 (L2-06) — `answer` is 170.9, while solutions.md:160 now answers 1,7 · 10² Mpc. The 2 % tolerance accepts 170, so this is optional alignment.
-- L2-05 — The plan's `hubble-t` figure is still missing. This is for pedagogy and visual to judge.
 
 ## Checked
-- Round 1 Blocking A (L3-05 b, "ei liiku valoa nopeammin avaruudessa"): resolved. The task asks "Miksi tulosta ei voi pitää galaksin nopeutena?", and the answer says that v = cz is a small-z approximation (z < 0,1). The speed-of-light sentence is gone. Järkevyys adds the z vs 1 + z slip (8,2 K), which is right.
-- Round 1 Polish resolved: Planck Collaboration 2018 is cited; L1-06 has a Doppler distractor with correct feedback (distant redshift comes from expansion, and peculiar motion is a small part); L2-06 is 1,7 · 10² Mpc with 2 sf; L3-04 says "muutaman kilometrin sekunnissa".
-- L1-06, L1-08 and L2-07: the options were reordered and reworded. There is still exactly one correct option each, and the feedback is right.
-- L2-05: the tolerance is now 5 %, which matches the stated eye-fit range of 65–72. The least-squares value 68,45 is unchanged.
-- L3-04: dropping "1 kpc = 0,001 Mpc" is fine, because no conversion is needed.
-- Recomputed: L2-06 d = 2,998·10⁵ · 0,03991 / 70 = 170,9 Mpc, about 4900 times smaller than the student's result; L3-05 z = 3,000 and T = 4 · 2,725 = 10,9 K, with T·λ = 2,89 K mm before and after. All the other answers are unchanged and agree with answers.py.
-- The hash eb2ae3787808b0eb was the same at the start and at the end.
+- Hash f7549c461bffdbad at the start and at the end. Only the new task L2-08 (multiple choice) was judged.
+- Recomputed: z_A = 6,6/656,3 = 0,010056, z_B = 14,6/486,1 = 0,030035, d_B/d_A = z_B/z_A = 2,987 ≈ 3,0. This is correct, and the 2 s.f. reason (Δλ = 6,6 nm) is right.
+- Distractors: 14,6/6,6 = 2,21 (shifts compared in nm), 500,7/662,9 = 0,755 (measured wavelengths compared), z_A/z_B = 0,335 (inverse relation). Each is really wrong, and its feedback states the error correctly. There is exactly one correct option.
+- Conditions: z < 0,1 for both galaxies, so v = cz holds, as the lesson states. A relativistic check gives 2,96, still 3,0. Peculiar motion is excluded in the task text; vA ≈ 3000 km/s against a few hundred km/s is a C-level idealisation for example values.
+- The laboratory lines are correct: Hα 656,3 nm and Hβ 486,1 nm. The task uses two different lines on purpose, to test that z is the same fraction for every line, which is the lesson's "sama spektrin jokaiselle viivalle".
+- Notation (z, Δλ, λ₀, v = cz, d = v/H₀) is the lesson's, and the scope is within fy8-16. No de Broglie content. Checked from text only.

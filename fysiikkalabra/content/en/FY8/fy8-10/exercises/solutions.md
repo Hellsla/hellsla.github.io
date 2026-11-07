@@ -133,6 +133,39 @@
 **Principle:** A nuclear reaction releases energy when the total binding energy of the nuclei formed is greater than that of the original ones. The number of nucleons is conserved, so the binding energy per nucleon $\tfrac{E_\text{B}}{A}$ decides: energy is released when the nucleons move up along the binding energy curve.
 **Model answer:** Iron-56 is at the peak of the binding energy curve together with nickel-62, and $\tfrac{E_\text{B}}{A}$ is about $8.8\,\text{MeV}$. For both lighter and heavier nuclei the value is smaller, so in iron the nucleons are bound almost as tightly as in the most tightly bound nuclei at the peak. If an iron nucleus were combined with another iron nucleus or split, the nucleons in the nuclei formed would be on average more loosely bound, so the binding energy would decrease and the reaction would require energy. Chemical stability is irrelevant, because it concerns electrons and not nuclei. Electric repulsion affects only the starting of fusion and not the energy balance, and iron-56 has $26$ protons and $30$ neutrons. With other nuclei a reaction can still release energy: for example, iron-56 and helium-4 can form nickel-60 and release about $6.3\,\text{MeV}$.
 
+## fy8-10-L2-08
+**Asked:** which option is closest to the binding energy $E_\text{B}$ of the gold-197 nucleus.
+**Principle:** The nucleus is lighter than its separate nucleons, and the mass defect $\Delta m$ corresponds to the binding energy $E_\text{B} = \Delta m\,c^2$. We calculate with atomic masses: $79$ hydrogen atoms contain $79$ electrons, like the gold atom, so the masses of the electrons cancel. The nucleus has $Z = 79$ protons and $N = 197 - 79 = 118$ neutrons.
+**Model answer:** First we calculate the masses of the hydrogen atoms and the neutrons.
+
+$Z\,m_\text{H} = 79 \cdot 1.007825\,\text{u}$
+
+$Z\,m_\text{H} = 79.618175\,\text{u}$
+
+$N\,m_\text{n} = 118 \cdot 1.008665\,\text{u}$
+
+$N\,m_\text{n} = 119.022470\,\text{u}$
+
+The mass defect is $\Delta m = Z\,m_\text{H} + N\,m_\text{n} - m_\text{atom}$:
+
+$$\begin{aligned}
+&\Delta m = 79.618175\,\text{u} \\
+&\quad + 119.022470\,\text{u} \\
+&\quad - 196.966569\,\text{u} \\
+&= 1.674076\,\text{u}
+\end{aligned}$$
+
+The binding energy is obtained by putting $931.5\,\tfrac{\text{MeV}}{c^2}$ in place of the unit $\text{u}$, so that $c^2$ cancels:
+
+$$\begin{aligned}
+&E_\text{B} = 1.674076 \cdot 931.5\,\text{MeV} \\
+&\approx 1559\,\text{MeV}
+\end{aligned}$$
+
+The binding energy is about $1560\,\text{MeV}$, so the closest option is about $1600\,\text{MeV}$. The wrong options come from common mistakes: dividing the mass defect by $931.5$ gives about $0.002\,\text{MeV}$, dividing by the number of nucleons $197$ gives the binding energy per nucleon, about $7.9\,\text{MeV}$, and turning the mass of the whole atom into energy gives about $183\,000\,\text{MeV}$.
+
+Reasonableness: a binding energy per nucleon of $7.9\,\text{MeV}$ is typical of heavy nuclei, for which it is slightly smaller than the iron value of about $8.8\,\text{MeV}$, and the mass defect $1.674\,\text{u}$ is about $0.8\,\%$ of the mass of the atom.
+
 ## fy8-10-L3-01
 **Given:** $m({}^{4}\text{He}) = 4.002603\,\text{u}$, $m({}^{3}\text{He}) = 3.016029\,\text{u}$, $m_\text{n} = 1.008665\,\text{u}$, $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$, reference value $\tfrac{E_\text{B}}{A} = 7.07\,\text{MeV}$
 **Asked:** the energy $E$ needed to remove a neutron, in megaelectronvolts

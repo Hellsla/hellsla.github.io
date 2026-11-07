@@ -138,6 +138,25 @@
 **Vastaus:** $14$ elektronia. Tulos on tarkka kokonaisluku, koska se on laskettu lukumääristä.
 **Järkevyys:** Samalla säännöllä s-alikuorelle mahtuu $2 \cdot 1 = 2$, p-alikuorelle $2 \cdot 3 = 6$ ja d-alikuorelle $2 \cdot 5 = 10$ elektronia. Kuoren $n = 4$ alikuorille s, p, d ja f mahtuu yhteensä $2 + 6 + 10 + 14 = 32$ elektronia. Tämä on yhtä suuri kuin $2n^2 = 2 \cdot 4^2 = 32$.
 
+## fy8-5-L1-09
+**Kysytty:** tilojen A–E järjestys elektronin energian $E_n$ mukaan pienimmästä suurimpaan.
+**Periaate:** Vetyatomissa tilan energia riippuu vain pääkvanttiluvusta $n$. Se on tilan nimen numero. Kirjain kertoo aallon muodon, mutta se ei muuta vetyatomin tilan energiaa. Energiat ovat negatiivisia. Siksi pienin energia on tilalla, jonka energian itseisarvo on suurin.
+**Mallivastaus:** Lasketaan energiat:
+
+$E_1 = -\tfrac{13{,}6\,\text{eV}}{1^2} = -13{,}6\,\text{eV}$ (tila B)
+
+$E_2 = -\tfrac{13{,}6\,\text{eV}}{2^2} = -3{,}40\,\text{eV}$ (tila D)
+
+$E_3 = -\tfrac{13{,}6\,\text{eV}}{3^2} = -1{,}51\,\text{eV}$ (tila A)
+
+$E_4 = -\tfrac{13{,}6\,\text{eV}}{4^2} = -0{,}850\,\text{eV}$ (tila C)
+
+$E_5 = -\tfrac{13{,}6\,\text{eV}}{5^2} = -0{,}544\,\text{eV}$ (tila E)
+
+Pienimmästä suurimpaan energian mukaan järjestys on B, D, A, C, E.
+
+Kirjaimen perusteella tiloja ei voi järjestää. Tila $3\text{d}$ on alempana kuin tila $4\text{s}$, koska sen pääkvanttiluku on pienempi. Samoin tila $5\text{p}$ on ylempänä kuin tila $4\text{s}$, koska sen pääkvanttiluku on suurempi. Jos tilat järjestää energian itseisarvon mukaan, järjestys menee väärin päin. Tila $1\text{s}$ on sidotuin eli sitä on vaikeinta irrottaa ytimestä, ja sen energia on pienin.
+
 ## fy8-5-L2-05
 **Annettu:** mittauksia $N = 400$. Luokan leveys on $0{,}05\,\text{nm}$. Luokkien lukumäärät $k$ ovat $118$, $171$, $79$, $23$, $7$ ja $2$. Rajan $90\,\%$ säde on $0{,}14\,\text{nm}$.
 **Kysytty:** a) yleisin luokka, b) alle $0{,}10\,\text{nm}$:n etäisyydelle osuvien mittausten osuus $P$ prosentteina, c) sopiiko aineisto $90\,\%$:n rajaan

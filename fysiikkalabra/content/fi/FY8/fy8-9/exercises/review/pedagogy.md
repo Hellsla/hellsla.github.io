@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 9d4ef2778f138504
-Round: 2
+CONTENT-HASH: cac0fd5db47fb84c
 
 ## Blocking
-- None. Round 1 Blocking (L2-05 hint 320 s "neljäsosaan" vs answer 149 s) is resolved: the hint now says "hieman alle neljäsosaan ... noin 23 % alkuarvosta" and the solution says "hieman yli kaksi puoliintumisaikaa (2^2 = 4)"; 64/283 = 22,6 %, ratio 4,42, T = 149,2 s, consistent with the 6 % tolerance.
+
+(none)
 
 ## Polish
-- fy8-9-L3-04 c): "noin 240 000 vuodessa" assumes Pu-239 dominates the activity; say "jos plutonium-239 on määräävä nuklidi" (carried over, still applies).
-- fy8-9-L1-07 is the same type as the existing L1-02 (percent remaining, integer half-lives); acceptable as practice, or change the data type.
-- fy8-9-L2-07 is closer to level 1 in demand (background, net rate, sqrt N); fine as the experiment task.
-- fy8-9-L2-05 solution answer line "tarkkuus noin ±8 %" is a good addition; no change needed.
-- fy8-9-L3-05 c): the question now asks "kumpi prosessi pienentää aktiivisuutta nopeammin" and the solution answers it via lambda_bio > lambda_fys; good.
+
+- exercises.json fy8-9-L1-09 feedback of option A — 'kuin loput ytimet hajoaisivat toisessa puoliintumisajassa' is a long sentence for a phone; split after 'tasaisesti' (optional).
 
 ## Checked
-- Changed tasks: L1-06 (correct option moved to position 3, exactly one correct, answer matches), L1-07 (notation "144 a : 28,8 a"), L2-05, L2-06 (solution now separates a) check from the b) explanation; answer 60 s unchanged), L3-05 (c) wording and solution). All recomputed and correct (L3-05: 4,96 d, 50,1 %, 16,4 %, lambda_bio 0,140, lambda_fys 0,0864).
-- Set has 8/7/5 = 20 tasks; levels fit docs/exercise-bank/FY8.md; no duplicate of existing tasks.
-- Every new solution has principle, conversions, substitution and sanity check.
-- Screenshots: only 1280 px captures in the packet; layout checks passed; not opened.
+
+- New task L1-09 (graph choice, type 2) is level 1: one idea, four graphs, all sharing the 800 kBq start and 2,0 h point (B too), so reading the first half-life alone does not decide.
+- Distractors map to the chapter's own warned mistakes: A = 'two half-lives and all is gone', B = nuclei 'due to decay' (no memory), D = e^(-t/T) without ln 2. Correct option C is not identifiable by form (all feedbacks equally long, A-D all graphs).
+- Figure descriptions give every value the task needs (axes, 800 kBq, 2/4/6/8 h points) and equal information to a reader who cannot see the graph; the stem gives no curve shape.
+- Correct feedback states the halving, not a hidden next stage; no equation chain wider than one line. Solution: principle, one worked point, then each wrong graph explained.
+- Stays within fy8-9 (decay law, e-form with lambda). Checked from text only (JSON, solutions.md, packet brief); no renders or screenshots were available in the packet, so the 390 px fit of the new task and the formula-chain width were judged from the line lengths of the aligned blocks.

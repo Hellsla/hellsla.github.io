@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 4efa7f8dc5cb79f0
-Round: 3
+CONTENT-HASH: 1f3ea63329b692d8
 
 ## Blocking
 
+(none)
+
 ## Polish
-- fy8-15-L3-04 — still the easiest level-3 task (threshold 2·0,511 MeV as in L2-03); consider giving the nucleus a fixed fraction of the kinetic energy in b).
-- solutions.md fy8-15-L2-07 Mallivastaus — the sentence "neutronin $d$-kvarkki voi muuttua $u$-kvarkiksi" repeats the first sentence, and the model answer does not say explicitly why the claim fails in general; replace the repeat with "Perushiukkasuus ei siis estä hajoamista."
-- solutions.md fy8-15-L3-05 Vastaus — end with "eli noin $218{,}5\,\text{MeV}$" so the displayed value matches the answer box.
+
+- fy8-15-L1-09 statement 5 feedback and solution — mentions beeta plus -hajoaminen (u to d), which the chapter does not teach; cut that sentence or write 'käänteinen muutos'.
+- Statement 4 — the brief excerpt carries no sentence that the strong force acts only on quarks; confirm the lesson says so, otherwise add one clause to the statement ('...koska ne eivät koostu kvarkeista').
+- Five statements across four topics is heavy for level 1; consider moving statement 5 or 3 to a separate task.
 
 ## Checked
-- Round 2 Blocking resolved: L2-07 distractor 1 feedback no longer contradicts itself; it says decay does not depend on being elementary (muon elementary but decays, proton composite but stable) and that conservation laws and $Q > 0$ decide.
-- L2-07 stored answer, correct-answer feedback and the other two distractors unchanged and consistent; each distractor still holds one misconception with repairing feedback.
-- Round-3 commit changed only this feedback in exercises.json (and the round-2 solutions edits), so L2-05, L3-04 and L3-05 values (hadron counts, 0,797, 218,471 MeV) are unchanged and correct.
-- Level fit and variety as in round 2; no 360 px exercise captures listed.
+
+- New task L1-09 (true/false, type 8): 2 true, 3 false, each wrong feedback names the misconception ('kumoavat aina', 'kuin talo ja tiilet', direction reversed), matching the chapter's two warned mistakes (proton mass = sum of quark masses, quark and antiquark charges).
+- Charge arithmetic: uus +1 e, d u-bar -1 e, both correct; the s-quark charge is given in the stem. Statements are not decidable by wording length or hedging.
+- Solution gives both charge sums before the five verdicts; the answer line is clear. Checked from text only (JSON, solutions.md, packet brief); no renders or screenshots were available in the packet, so the 390 px fit of the new task and the formula-chain width were judged from the line lengths of the aligned blocks.

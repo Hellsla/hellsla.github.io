@@ -264,6 +264,53 @@
       "answer": 6.4,
       "unit": "10¹⁵ 1/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-4-L2-08",
+      "level": 2,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "An X-ray photon with an energy of $17.4\\,\\text{keV}$ scatters from an almost free electron in graphite, initially at rest. In the scattering the electron gains a kinetic energy of $0.55\\,\\text{keV}$. The values are example values.\n\nHow does the wavelength $\\lambda'$ of the scattered photon compare with the wavelength $\\lambda$ of the incoming photon?",
+      "answer": "The wavelength $\\lambda'$ is longer than $\\lambda$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The wavelength $\\lambda'$ is shorter than $\\lambda$.",
+          "feedback": "Think whether the photon gains more energy in the scattering or gives some away, and how the energy of a photon depends on its wavelength."
+        },
+        {
+          "text": "The wavelength $\\lambda'$ is longer than $\\lambda$.",
+          "correct": true,
+          "feedback": "Correct: the wavelength increases by about $3\\,\\%$, from $0.0713\\,\\text{nm}$ to $0.0736\\,\\text{nm}$. This is exactly the change that Compton measured with graphite."
+        },
+        {
+          "text": "The wavelength $\\lambda'$ is equal to $\\lambda$.",
+          "feedback": "This is a prediction of the wave model that the measurements do not support. Compton observed that the wavelength of the scattered radiation changes and that the change grows with the scattering angle."
+        }
+      ],
+      "reason_prompt": "Which reason explains your answer?",
+      "reasons": [
+        {
+          "text": "The energy of the scattered photon is smaller than that of the incoming one, and the energy of a photon is directly proportional to its wavelength.",
+          "feedback": "The decrease in energy is right, but the dependence is read the wrong way round. The energy of a photon is $E = \\tfrac{hc}{\\lambda}$, so a smaller energy means a longer wavelength."
+        },
+        {
+          "text": "The electron oscillates in time with the incoming wave and therefore radiates at the same frequency as the incoming X-rays.",
+          "feedback": "This is an explanation of the wave model that does not match Compton's measurements. In the photon model the scattering is a collision in which the electron receives part of the energy of the photon."
+        },
+        {
+          "text": "The energy of the scattered photon is smaller than that of the incoming one, and the energy of a photon is inversely proportional to its wavelength.",
+          "correct": true,
+          "feedback": "Correct: from conservation of energy $hf' = hf - E_\\text{k}$, and from the equation $E = \\tfrac{hc}{\\lambda}$ a smaller energy gives a longer wavelength."
+        },
+        {
+          "text": "A photon has momentum $p = \\tfrac{h}{\\lambda}$, even though it has no rest mass and cannot be at rest.",
+          "feedback": "The statement is true, but it does not tell in which direction the wavelength changes. The direction is decided by the fact that the photon gives energy and momentum to the electron."
+        }
+      ]
     }
   ],
   "level3": [

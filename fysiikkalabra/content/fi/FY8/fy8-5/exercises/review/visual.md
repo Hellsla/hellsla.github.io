@@ -1,20 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 60d9e9328cf45092
-Round: 3
+CONTENT-HASH: 9eb9faed238b0eb0
+ROUND: 2
+
 ## Blocking
-(none) Round 1 Blocking resolved: the L2-05 (5-13) class ranges now read "0,00–0,05" … "0,25–0,30" with a decimal comma in all six rows, matching the task text and solution.
+(none)
 
 ## Polish
-- [Minor] solutions.md L3-05 Annettu — the long constants line wraps between constants at 1280 px (no longer inside "h ="); acceptable.
-- [Minor] solutions.md L2-06 (5-14) Vastaus — the answer box value (120 Hz) is stated first, then a)–c); fine, but "kaksi merkitsevää numeroa" could sit after b) where the 120 Hz appears.
-- [Minor] exercises.json L2-06 (5-14) — the figure labels "0 solmua / 1 solmu / 2 solmua" already give the a)-count away; harmless now that a) asks only for λ.
+- [Minor] exercises.json fy8-5-L1-09 — the ordering selects are labelled only "Sija"; the prompt states the direction, so fine.
 
 ## Checked
-- Round 1 Polish carried: L2-05 Vastaus now split into a)/b)/c) lines (opened open-exercises-L2-1280-5, -6: table with comma, solution readable).
-- Opened at 1280 px: open-exercises-L2-1280-7 (5-14 changed task text, figure fy8-5/string, node labels, answer box Hz), open-exercises-L3-1280-8 (L3-05 with NIST source line, constants).
-- Read the diff against 8041d06bb: MC option order changed, L2-06 now asks λ and f for all three states (40/80/120 Hz recomputed, match), spectrum and L3-05 task texts split into paragraphs, L3-05 source (NIST) added. All numbers match answers.
-- No 360 px exercise capture exists; layout check at 360 px is clean per packet.
-- Delta (boxed value added to the Vastaus first line of L2-05): 72,3 % is correct (72,25 % in the solution and exercises.json within tolerance), LaTeX number+unit and decimal comma right; the line is short and reads well.
+- Round 1 polish resolved: state E is now "5p-tila", the energy labels are shortened to "(tila B)" etc.; no line wraps alone at 390 px.
+- Own 390 and 1280 px renders of fy8-5-L1-09 with answer and solution open (r2 captures, read as 2x tiles): the five state cards, the E_n = -13,6 eV / n^2 = ... lines (each fits the card), the closing paragraph (3d vs 4s, 5p vs 4s, |E| reversal) all readable; no clipping, no page overflow (measured). Units and state symbols in LaTeX.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: cf9ab3e66ab0f8e4
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 831c7e820df028d2
+Mode: translation
 
 ## Blocking
 (none)
-
-## Fixed
-(none needed: the text already matched fi in every number and was plain, short-sentenced selkosuomi)
 
 ## Polish
 (none)
 
 ## Checked
-- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) and the older ones compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags, data cells and all numbers in texts, choices, feedback and solutions.md are identical (solutions.md number sequence 967 = 967).
-- Physics statements unchanged: moderator vs control rods vs coolant, Coulomb repulsion, binding energy per nucleon, decay-law extrapolation, Pu-239 half-life.
-- L2-05 k = 1.01248, N50 = 1860; L2-06 34.6 TWh; L3-04 250 a; L3-05 540 kg: values equal fi.
-- check_i18n.py fi-easy: 0 errors.
+- fy8-11-L2-08 (fi-easy) compared with reviewed fi: same data, same options, same correct option, same answer.
+- Recomputed independently: 12*7.680 = 92.16 MeV, 12*7.074 = 84.888 MeV, Q = -7.27 MeV so energy is required; the reasons' numbers agree and exactly one reason is correct.
+- solutions.md L2-08: principle, symbolic step, substitution, rounding and reasonableness agree with fi; answers.py note agrees.
+- fi-easy follows NOTES.md section 12 (shorter sentences, terms explained, same physics and numbers as fi).
+- check_i18n shows nothing for fy8-11; build.py fy8-11 succeeds. No translation edit was needed.
+- Hash 831c7e820df028d2 at start and end.

@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: bd05ae74ce1f9dca
+CONTENT-HASH: 71d2daa94d495d74
 Mode: full (translation review against the reviewed Finnish set)
 Round 1
 
 ## Blocking
 (none)
 
-## Fixed
-(none needed: the text already matched fi in every number and was natural)
-
 ## Polish
 (none)
 
 ## Checked
-- English text of the 8 new exercises: natural English, no Finnish left (grep for ä/ö: none), decimal point in JSON and LaTeX, display units translated.
-- Task structure (a/b/c parts, which result goes into the answer field, kinds, level) matches fi; scaffolding and feedback of distractors in L1-06 follow the same error types as fi.
-- Solutions keep the order Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness as in fi.
-- check_i18n.py en: 0 errors.
+- fy8-8-L2-08: Error-analysis task at level 2: the student must check A and Z on each line; distractor feedback names the likely misconception (alpha as one particle, beta+ vs beta-, gamma changes element); the "no error" option gives a hint without the answer.
+- Level and kind identical to fi; a mixture of levels per the rubric remains.
+- English text matches fi in every number; decimal point used in en; wording natural.
+- Solution is followable step by step and mirrors fi.

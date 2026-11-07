@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 979a1f51c50d7c78
-Mode: full
-Round: 1
+CONTENT-HASH: 612296f7d7d63cce
+Mode: translation
 
 ## Blocking
 (none)
 
-## Fixed
-(none: no text needed changing)
-
 ## Polish
-- L1-06: the task text and the choices use "annihilaatio" / "annihiloituu" without a gloss in the task itself; the solution explains it ("hiukkaset häviävät ja niistä syntyy säteilyä"). Acceptable, because the lesson teaches the term.
+(none)
 
 ## Checked
-- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) compared field by field with the Finnish: ids, answers, units, tolerances, kind, correct flags and choice order identical.
-- Data table cells in L2-05, L2-06, L3-04 and L3-05 match the Finnish; decimal point in JSON, decimal comma in LaTeX as in fi.
-- Solutions carry the same numbers and formulas as the Finnish; only sentences were shortened. All results recomputed: 44 %, 51 %, 26 mm, 10 mSv, 12 mm, 1,3 e-14 J.
-- check_i18n.py fi-easy: 0 errors. Hash at start and end: 979a1f51c50d7c78.
+- fy8-14-L1-09 (fi-easy) compared with reviewed fi: same data, same options, same correct option, same answer.
+- Recomputed independently: A = A0 (1/2)^(t/T) solved gives A0 = A 2^(t/T); 3 half-lives gives 8A; (1/2)^(t/T) is the wrong direction, 2^(T/t) falls with t, 2t/T gives 0 at t=0; F-18 half-life about 110 min, 330 min gives 8 vs 6.
+- solutions.md L1-09: principle, symbolic step, substitution, rounding and reasonableness agree with fi; answers.py note agrees.
+- fi-easy follows NOTES.md section 12 (shorter sentences, terms explained, same physics and numbers as fi).
+- check_i18n shows nothing for fy8-14; build.py fy8-14 succeeds. No translation edit was needed.
+- Hash 612296f7d7d63cce at start and end.

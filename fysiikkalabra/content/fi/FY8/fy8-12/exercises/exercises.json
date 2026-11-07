@@ -109,6 +109,36 @@
           "feedback": "Alfasäteily ei muutu gammasäteilyksi kudoksessa. Gammasäteily läpäisee kudoksen helpommin ja luovuttaa energiaansa harvemmin, joten vaara johtuu juuri alfahiukkasten tiheästä ionisaatiosta."
         }
       ]
+    },
+    {
+      "id": "fy8-12-L1-09",
+      "level": 1,
+      "text": "Cesium-137-lähteen gammasäteilyä vaimennetaan vuorotellen viidellä eri suojalla. Kunkin suojan paksuus $d$ ja aineen puoliintumispaksuus $d_{1/2}$ tälle säteilylle ovat:\n\nSuoja A: rautaa, $d = 30\\,\\text{mm}$ ja $d_{1/2} = 12\\,\\text{mm}$\n\nSuoja B: betonia, $d = 120\\,\\text{mm}$ ja $d_{1/2} = 39\\,\\text{mm}$\n\nSuoja C: lyijyä, $d = 22\\,\\text{mm}$ ja $d_{1/2} = 5{,}5\\,\\text{mm}$\n\nSuoja D: vettä, $d = 400\\,\\text{mm}$ ja $d_{1/2} = 81\\,\\text{mm}$\n\nSuoja E: alumiinia, $d = 120\\,\\text{mm}$ ja $d_{1/2} = 34\\,\\text{mm}$\n\nOletetaan kapea säde. Missä järjestyksessä suojat ovat sen mukaan, kuinka suuren osan gammasäteilystä ne päästävät läpi?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "prompt": "Järjestä läpi pääsevän säteilyn osuuden mukaan suurimmasta pienimpään.",
+      "order": [
+        {
+          "text": "Suoja A"
+        },
+        {
+          "text": "Suoja B"
+        },
+        {
+          "text": "Suoja E"
+        },
+        {
+          "text": "Suoja C"
+        },
+        {
+          "text": "Suoja D"
+        }
+      ],
+      "answer": "Suoja A ($18\\,\\%$), suoja B ($12\\,\\%$), suoja E ($8{,}7\\,\\%$), suoja C ($6{,}3\\,\\%$), suoja D ($3{,}3\\,\\%$).",
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level2": [

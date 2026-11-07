@@ -39,4 +39,5 @@ mf = sum(fd) / 5; mu = sum(u for _, u in LD) / 5
 kd = sum((x - mf) * (u - mu) for x, (_, u) in zip(fd, LD)) / sum((x - mf) ** 2 for x in fd)   # slope 4,208e-15 V s, same before and after the correction
 a["fy8-6-L3-04"] = e * kd                                  # h = e k = 6,742e-34 J s -> 6,74e-34 J s (+1,7 %); intercept −0,062 V -> −0,112 V after the correction
 a["fy8-6-L3-05"] = c / ((2.46 + 0.10) / 4.15e-15) * 1e9    # calibration line f = (U_k − b)/k = 6,169e14 Hz -> λ = 486,0 nm (direct hc/(eU_k) = 504,1 nm; Δλ = 9,5 nm)
+# fy8-6-L2-08 is multiple choice without a number: example data, slope k = 3,98e-15 ± 0,21e-15 V s -> h = e k = 6,376e-34 J s, Δh = 0,336e-34 J s; 6,626e-34 lies inside h ± Δh
 print(json.dumps({k_: (round(v, 8) if abs(v) >= 1e-3 else float(f"{v:.6g}")) for k_, v in a.items()}))

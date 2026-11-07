@@ -218,6 +218,37 @@
       "answer": 13.1,
       "unit": "eV",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-3-L2-08",
+      "level": 2,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "Vetyatomin energiatasot ovat $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$.\n\nVedyn infrapunaspektrin viiva $\\lambda_1$ syntyy, kun elektroni siirtyy tasolta $n = 4$ tasolle $n = 3$.\n\nToinen viiva $\\lambda_2$ syntyy, kun elektroni siirtyy tasolta $n = 6$ tasolle $n = 3$.\n\nMiten fotonin aallonpituus muuttuu, kun siirtymä $4 \\to 3$ vaihtuu siirtymäksi $6 \\to 3$?",
+      "answer": "Aallonpituus pienenee noin $0{,}58$-kertaiseksi.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Aallonpituus kasvaa noin $1{,}7$-kertaiseksi.",
+          "feedback": "Tässä riippuvuus luetaan väärin päin. Siirtymän $6 \\to 3$ energiaero on suurempi. Aallonpituus on kääntäen verrannollinen energiaeroon, $\\lambda = \\tfrac{hc}{E_\\text{y} - E_\\text{a}}$. Aallonpituus siis lyhenee eikä kasva."
+        },
+        {
+          "text": "Aallonpituus pienenee noin $0{,}58$-kertaiseksi.",
+          "correct": true,
+          "feedback": "Oikein: energiaero kasvaa arvosta $0{,}661\\,\\text{eV}$ arvoon $1{,}133\\,\\text{eV}$. Aallonpituus muuttuu käänteisesti, $\\lambda_2 : \\lambda_1 = 0{,}661 : 1{,}133$. Tulos on noin $0{,}58$."
+        },
+        {
+          "text": "Aallonpituus ei muutu, sillä päätetaso on sama.",
+          "feedback": "Sama päätetaso tekee viivoista saman sarjan jäseniä. Fotonin energia on kuitenkin lähtötason ja päätason erotus. Ylempi lähtötaso antaa suuremman erotuksen ja siksi eri aallonpituuden."
+        },
+        {
+          "text": "Aallonpituus pienenee noin $0{,}44$-kertaiseksi.",
+          "feedback": "Tässä suhteeksi on otettu lähtötasojen energioiden suhde $0{,}38\\,\\text{eV} : 0{,}85\\,\\text{eV}$. Fotoni kantaa kuitenkin tasojen erotuksen $E_\\text{y} - E_\\text{a}$, ei yhden tason energiaa. Aallonpituus on kääntäen verrannollinen tähän erotukseen."
+        }
+      ]
     }
   ],
   "level3": [

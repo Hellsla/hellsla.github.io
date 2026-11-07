@@ -1,20 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 2876b3a6403442d6
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: c613f40e4f2b0479
+Mode: translation
 
 ## Blocking
 (none)
-
-## Fixed
-(none needed)
 
 ## Polish
 (none)
 
 ## Checked
-- English is natural and plain; sentence structure follows the reviewed Finnish, so levels, goals (concept, data, model, graph) and hints are unchanged.
-- Distractors and their feedback keep the same misconception targeted as in fi (reversed roles, rising vs dropping, energy added, mirrors, no photons); the correct choice's feedback says why.
-- Multi-part tasks keep "Enter the result of part x) in the answer box" and the same answer part as fi.
-- Solutions keep the structure Given / Find / Principle / Formula / Conversions / Substitution / Answer / Reasonableness with significant-figure remarks.
-- No Finnish left; terms used consistently.
+- fy8-7-L1-09 (en): situation first, question last as its own sentence, options and feedback keep the misconception each wrong option carries, as in fi.
+- Each feedback names the specific error and repairs it; none gives the answer before the student commits.
+- Solution can be followed step by step (Kysytty, Periaate, Mallivastaus) and matches fi.
+- English decimal point used, wording natural English.
+- Hash c613f40e4f2b0479 at start and end.

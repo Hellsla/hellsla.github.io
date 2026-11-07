@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 90c5f28699ad31ea
+CONTENT-HASH: e7058b83c8abc9c1
 Mode: translation
-Round: 1
 
 ## Blocking
 (none)
-
-## Fixed
-- (none needed) fi-easy matched the reviewed Finnish in every number, unit and formula.
 
 ## Polish
 (none)
 
 ## Checked
-- Ids L1-06..08, L2-05..07, L3-04..05 present and in the same order as fi; kind, level, unit, tolerance and correct flags identical.
-- Answers identical to fi: 69.2 km/s/Mpc, 68.45 km/s/Mpc, 170.9 Mpc, 1.885, 10.9 K; multiple-choice exactly one correct choice in L1-06, L1-08, L2-07, the same one as in fi.
-- Data tables L2-05 (9 rows) and L3-04 (7 rows x 3 columns): every cell equals fi; symbols v_obs/v_vis (en) and v_hav/v_näk (fi-easy) consistent with the fi pair.
-- Numbers and LaTeX identical to fi apart from the decimal separator (comma, as in fi); check_i18n fi-easy: 0 errors (formula parity).
-- solutions.md: sums 11 439 330 and 167 127, 28 Mpc deviation 18 %, z = 3.000, k = 4.000, 10.9 K all as in fi; no maths changed.
+- fy8-16-L2-08 (fi-easy) compared with reviewed fi: same data, same options, same correct option, same answer.
+- Recomputed independently: z_A = 6.6/656.3 = 0.010056, z_B = 14.6/486.1 = 0.030035, ratio 2.987 = 3.0; distractors 14.6/6.6 = 2.2, 500.7/662.9 = 0.76, 1/3 = 0.33 recomputed; v = cz valid (z < 0.1).
+- solutions.md L2-08: principle, symbolic step, substitution, rounding and reasonableness agree with fi; answers.py note agrees.
+- fi-easy follows NOTES.md section 12 (shorter sentences, terms explained, same physics and numbers as fi).
+- check_i18n shows nothing for fy8-16; build.py fy8-16 succeeds. No translation edit was needed.
+- Hash e7058b83c8abc9c1 at start and end.

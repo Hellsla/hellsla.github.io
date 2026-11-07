@@ -197,3 +197,20 @@
 **Vastaus:** $2{,}4\,\text{h}$, kaksi merkitsevää numeroa kuten annosrajoitteessa $25\,\mu\text{Sv}$ ja seinän paksuudessa $10\,\text{cm}$. Kohdan b) annosnopeus on noin $11\,\mu\text{Sv/h}$.
 **Mallivastaus kohtaan d):** Kaava olettaa, että betoniin osuneet fotonit joko absorboituvat tai pääsevät läpi samalla osuudella. Todellisuudessa osa gammasäteilystä siroaa seinässä ja ympäristössä, ja sironnut säteily voi nostaa annosnopeuden työpisteessä laskettua suuremmaksi. Myös lähteen pistemäisyys ja puoliintumispaksuuden lukeminen taulukosta ovat likimääräisiä. Siksi työaika kannattaa valita laskettua lyhyemmäksi, esimerkiksi puolet siitä, ja seurata annosta annosmittarilla.
 **Järkevyys:** Seinän takana $1{,}0\,\text{m}$:n etäisyydellä annosnopeus olisi $240 \cdot \left(\tfrac{1}{2}\right)^{2{,}5} = 42{,}4\,\mu\text{Sv/h}$, joka on taulukon arvojen $60{,}5$ ja $29{,}8\,\mu\text{Sv/h}$ välissä, kuten $10\,\text{cm}$ on paksuuksien $8{,}0\,\text{cm}$ ja $12{,}0\,\text{cm}$ välissä. Etäisyys $2{,}0\,\text{m}$ pienentää sen neljäsosaan eli $10{,}6\,\mu\text{Sv/h}$, ja $2{,}4\,\text{h} \cdot 10{,}6\,\mu\text{Sv/h} \approx 25\,\mu\text{Sv}$.
+
+## fy8-13-L2-08
+**Kysytty:** lennoista vuodessa kertyvän annoksen $H$ suuruusluokka millisieverteinä.
+**Periaate:** Annosnopeus on oletuksen mukaan koko lennon ajan vakio, joten annos on annosnopeus kertaa oleskeluaika, $H = \dot{H} t$. Ajaksi $t$ otetaan kaikkien vuoden lentojen yhteenlaskettu kesto. Lopuksi mikrosievertit muutetaan millisieverteiksi: $1\,\text{mSv} = 1000\,\mu\text{Sv}$.
+**Mallivastaus:** Lentoaika vuodessa:
+
+$$t = 12 \cdot 6 \cdot 9{,}0\,\text{h} = 648\,\text{h}$$
+
+Annos:
+
+$$\begin{aligned}
+&H = 3{,}0\,\mu\text{Sv/h} \cdot 648\,\text{h} \\
+&\phantom{H} = 1944\,\mu\text{Sv} \\
+&\phantom{H} \approx 1{,}9\,\text{mSv}
+\end{aligned}$$
+
+Lennoista kertyy vuodessa noin $1{,}9\,\text{mSv}$, joten suuruusluokka on noin $2\,\text{mSv}$. Väärät vaihtoehdot syntyvät tavallisista virheistä: yhden lennon annos on vain $27\,\mu\text{Sv}$ eli noin $0{,}03\,\text{mSv}$, yhden kuukauden annos noin $160\,\mu\text{Sv}$ eli noin $0{,}2\,\text{mSv}$, mikrosievertien jakaminen miljoonalla antaa noin $0{,}002\,\text{mSv}$ ja yksikön muuntamatta jättäminen noin $2000\,\text{mSv}$. Järkevyys: $2\,\text{mSv}$ on noin kolmasosa suomalaisen keskimääräisestä vuosiannoksesta $5{,}9\,\text{mSv}$, joten paljon lentävän ihmisen annos kasvaa selvästi mutta jää samaan suuruusluokkaan. Annos $2000\,\text{mSv}$ olisi satoja kertoja keskimääräistä suurempi, mikä ei ole mahdollista pelkistä lennoista.

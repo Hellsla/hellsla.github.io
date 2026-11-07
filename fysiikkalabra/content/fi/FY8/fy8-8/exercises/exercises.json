@@ -251,6 +251,41 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy8-8-L2-08",
+      "level": 2,
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "text": "Opiskelija kirjoitti neljän radioaktiivisen hajoamisen yhtälöt.\n\nRivi 1, polonium-210:n alfahajoaminen: ${}^{210}_{84}\\text{Po} \\to {}^{206}_{82}\\text{Pb} + {}^{4}_{2}\\text{He}$\n\nRivi 2, hiili-11:n beeta plus -hajoaminen: ${}^{11}_{6}\\text{C} \\to {}^{11}_{5}\\text{B} + {}^{0}_{+1}\\text{e} + \\nu$\n\nRivi 3, jodi-131:n beeta miinus -hajoaminen: ${}^{131}_{53}\\text{I} \\to {}^{131}_{52}\\text{Te} + {}^{0}_{-1}\\text{e} + \\bar{\\nu}$\n\nRivi 4, viritetyn teknetium-99:n gammahajoaminen: ${}^{99}_{43}\\text{Tc}^{\\ast} \\to {}^{99}_{43}\\text{Tc} + \\gamma$\n\nMikä rivi on väärin? Jos yhtälöissä ei ole virhettä, valitse viimeinen vaihtoehto.",
+      "answer": "Rivi 3: jodi-131:n beeta miinus -hajoaminen",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Rivi 1: polonium-210:n alfahajoaminen",
+          "feedback": "Rivi 1 on oikein: massaluvut $210 = 206 + 4$ ja varausluvut $84 = 82 + 2$. Jos pidät riviä virheellisenä, ajattelet ehkä, että alfahiukkanen on yksi hiukkanen ja pienentää järjestyslukua vain yhdellä."
+        },
+        {
+          "text": "Rivi 2: hiili-11:n beeta plus -hajoaminen",
+          "feedback": "Rivi 2 on oikein: massaluvut $11 = 11 + 0$ ja varausluvut $6 = 5 + 1$. Jos pidät riviä virheellisenä, sekoitat ehkä beeta plus- ja beeta miinus -hajoamisen: positronin lähtiessä protoni muuttuu neutroniksi ja $Z$ pienenee."
+        },
+        {
+          "text": "Rivi 3: jodi-131:n beeta miinus -hajoaminen",
+          "correct": true,
+          "feedback": "Oikein, tämä rivi on väärin: varausluku ei säily, koska $52 + (-1) = 51$ eikä $53$. Beeta miinus -hajoamisessa neutroni muuttuu protoniksi, joten tytärydin on ${}^{131}_{54}\\text{Xe}$."
+        },
+        {
+          "text": "Rivi 4: teknetium-99:n gammahajoaminen",
+          "feedback": "Rivi 4 on oikein: gammafotoni vie vain energiaa, joten $A = 99$ ja $Z = 43$ pysyvät. Jos pidät riviä virheellisenä, ajattelet ehkä, että gammahajoaminen muuttaa alkuaineen."
+        },
+        {
+          "text": "Yhtälöissä ei ole virhettä",
+          "feedback": "Tarkista jokaisesta rivistä varausluvut: laske alaindeksien summa nuolen kummallakin puolella."
+        }
+      ]
     }
   ],
   "level3": [

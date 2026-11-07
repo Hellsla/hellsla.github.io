@@ -25,7 +25,7 @@ n_up = math.sqrt(13.6 / (13.6 - Eph))                     # E_n = -13,6 + 12,744
 a["fy8-5-L3-01"] = round(n_up) ** 2                       # orbitals in shell 4: 16
 a["fy8-5-L3-02"] = 2 + 2 + 6 + 2 + 3                      # 1s2 2s2 2p6 3s2 3p3 (3p half full): 15 electrons
 a["fy8-5-L3-03"] = (0.90 - 0.053) * 5000                  # 2s: inside the 90 % region but outside the node sphere (5,3 %): 4235
-# Exercise-bank additions (L1-06, L1-07 and L2-07 are multiple choice without a number; the others below)
+# Exercise-bank additions (L1-06, L1-07 and L2-07 are multiple choice and L1-09 an ordering task, without a number; the others below)
 a["fy8-5-L1-08"] = 2 * 7                                  # 4f: 7 orbitals, 2 electrons each = 14
 a["fy8-5-L2-05"] = (118 + 171) / 400 * 100                # example data: 289 of 400 inside 0,10 nm = 72,25 % (0,15 nm: 368/400 = 92 %)
 a["fy8-5-L2-06"] = 64 / (2 * 0.80 / 3)                    # string, 2 nodes -> 3 antinodes: lambda = 2L/3 = 0,5333 m, f = v/lambda = 120 Hz

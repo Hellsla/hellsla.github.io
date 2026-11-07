@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 3b8c917c57419b7d
+CONTENT-HASH: 1eb7bd804dee5a96
 Round: 2
 
 ## Blocking
 
 ## Polish
-- exercises.json fy8-7-L1-07 — carried over: the key is 1.34e16 while the Vastaus gives 1,3·10¹⁶; the Vastaus now names the calculator value, so this is consistent; 1.3e16 would match the stated two figures.
-- exercises.json fy8-7-L2-05 b) — "Onko energiarako suoraan verrannollinen pisteen kokoon?" has an obvious no (the gap falls as d grows). — Ask instead "Onko energiarako kääntäen verrannollinen halkaisijaan?" (it is not: E·d grows from 5,1 to 12,1 eV nm), which tests the data.
+- exercises.json fy8-7-L1-09 statement 5 — "vahvistuu vain akselin suuntainen valo" is slightly absolute: off-axis light also gains a little on its single pass before leaving. As the feedback explains, only axial light is amplified appreciably, so it is a level-appropriate simplification (C). "vahvistuu merkittävästi vain" would make it exact.
 
 ## Checked
-- Round-1 Blocking L3-05 resolved: Periaate and d) now say a Nd laser (four-level) has inversion already at low pumping, the threshold is gain = losses (output mirror, scattering, absorption), below it only weak spontaneous light, P_L ≈ 0; inversion kept as the necessary condition. No other task in the set claims "no inversion below threshold".
-- Round-1 polish applied: L2-06 now 1,3 with two figures (key 1.3, answers.py comment updated); L2-07 option 2 feedback says "laserista ulos tuleva energia"; L3-05 "pumppaustehoilla" fixed and the two figures justified by the fit's spread.
-- L3-05: slope 0,398, threshold 24,8 mW, 0,398·1064/808 = 0,524 recomputed.
-- L1-07 Sijoitus rewritten: hc = 1,9865·10⁻²⁵ J m, Pλ = 2,660·10⁻⁹ W m, 1,339·10¹⁶ 1/s.
-- L3-04 only re-paragraphed: 82,22 %, 5,0 W, 1,44 W, 75,0 % unchanged.
-- L1-06, L1-08, L2-07: one correct option each, answer text matches.
-- All 17 answers.py values reproduced; hash identical at start and end.
+- Round-1 polish resolved. Statement 3 now asks for the two-level rule. Physics is right: with optical pumping, absorption and stimulated emission are equally likely between two levels, so N₂ only approaches N₁ (at most half) and inversion is impossible. The statement is false as keyed. Feedback and solution agree, and the set's level-3 task ("miksi inversio vaatii vähintään kolme tasoa") covers the same idea.
+- Statement 5 feedback now says "monta kertaa", consistent with the solution.
+- The hc, hf and eV chains in solutions.md are now aligned display blocks of 2–3 lines. Values are unchanged: 1,9865·10⁻²⁵ J m, 3,056·10⁻¹⁹ J, 1,91 eV, recomputed in my script.
+- Key "1 epätosi, 2 tosi, 3 epätosi, 4 epätosi, 5 tosi" still correct. Statements 1, 2 and 4 are unchanged from round 1 and checked there.
+- Periaate no longer mentions heating and agrees with statement 3.
+- No de Broglie. Notation as in the brief.
+- Text only: the new aligned lines are short (≤ ~250 px estimated); not rendered.
+- Hash identical at start and end.

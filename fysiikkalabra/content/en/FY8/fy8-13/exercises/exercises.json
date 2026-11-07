@@ -203,6 +203,40 @@
       "answer": 7.0,
       "unit": "mSv",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-13-L2-08",
+      "level": 2,
+      "kind": [
+        "reasoning"
+      ],
+      "text": "A member of the cabin crew flies $6$ long-haul flights a month, and each flight lasts $9.0\\,\\text{h}$. Assume that the dose rate of radiation from space in the cabin is $3.0\\,\\mu\\text{Sv/h}$ for the whole flight and that she flies the same way every month of the year. The numbers are example values.\n\nWhat is the order of magnitude of the dose she accumulates from flights in a year?",
+      "answer": "about $2\\,\\text{mSv}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "about $0.002\\,\\text{mSv}$",
+          "feedback": "Here the microsieverts were converted to millisieverts by dividing by a million. However, micro is a thousandth of milli, so $1\\,\\text{mSv} = 1000\\,\\mu\\text{Sv}$ and the divisor is $1000$."
+        },
+        {
+          "text": "about $0.03\\,\\text{mSv}$",
+          "feedback": "This is the dose of one flight only, $9.0\\,\\text{h} \\cdot 3.0\\,\\mu\\text{Sv/h} = 27\\,\\mu\\text{Sv}$. The dose grows with the time spent in the radiation, so the flight hours of the whole year are added together."
+        },
+        {
+          "text": "about $0.2\\,\\text{mSv}$",
+          "feedback": "This is the dose of one month, $54\\,\\text{h} \\cdot 3.0\\,\\mu\\text{Sv/h} \\approx 160\\,\\mu\\text{Sv}$. The question asks for the dose of a year, so the flight hours of a month must still be multiplied by $12$."
+        },
+        {
+          "text": "about $2\\,\\text{mSv}$",
+          "correct": true,
+          "feedback": "Correct: in a year there are $12 \\cdot 6 \\cdot 9.0\\,\\text{h} = 648\\,\\text{h}$ of flying, so the dose is about $1900\\,\\mu\\text{Sv}$, that is about $2\\,\\text{mSv}$."
+        },
+        {
+          "text": "about $2000\\,\\text{mSv}$",
+          "feedback": "Here the result $1944\\,\\mu\\text{Sv}$ was marked as millisieverts without converting the unit. Microsieverts are converted to millisieverts by dividing by $1000$, because $1\\,\\text{mSv} = 1000\\,\\mu\\text{Sv}$."
+        }
+      ]
     }
   ],
   "level3": [

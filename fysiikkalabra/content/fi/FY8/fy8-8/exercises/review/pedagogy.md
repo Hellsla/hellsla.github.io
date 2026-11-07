@@ -1,21 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 36ac7c9b588458f9
+CONTENT-HASH: 5d522b9e7134f99f
 
 ## Blocking
 (none)
 
 ## Polish
-- exercises.json L1-07 — Ra-226 → Rn-222 on myös L2-05:n ensimmäinen rivi ja muistuttaa L1-02:ta; vaihda L1-07 toiseen alfahajoajaan (esim. Po-210 tai Th-232), jotta L2-05:n rivi ei paljasta vastausta.
-- exercises.json L3-04 — vastaus 4 on sama kuin olemassa olevan L3-01:n (Th-232 → Pb-208), ja menetelmä on sama (A- ja Z-muutos); L3-04:n lisäarvo on taulukon luku, joten pidä se, mutta harkitse L3-01:n vaihtamista toiseen tehtävätyyppiin myöhemmin.
-- exercises.json L2-07 — johdanto on yksi noin 42 sanan kappale (raja ei ylity); luettavuuden vuoksi voi jakaa kohdasta "Taulukossa on …".
-- solutions.md L3-05 — kohta a) kannattaisi tuoda esiin kuvana (tasokaavio); tehtävä pyytää piirtämään sen, mutta ratkaisussa on vain sanallinen tasojen luettelo. Lisää rivi "Tasokaavio: perustila 0; 351,2; 820,5; 1501,4 keV; nuolet 3→0, 3→2, 2→0, 2→1, 1→0 ja puuttuva 3→1".
+- exercises.json fy8-8-L2-08, wrong-option feedback — each says "Rivi n on oikein" and shows the check (fair as repair), but "Jos pidät riviä virheellisenä, ajattelet ehkä ..." guesses at the student's thought. End after the check.
+- stem — "Mikä rivi on väärin? Jos yhtälöissä ei ole virhettä, valitse viimeinen vaihtoehto." mixes two instructions. Put the last-option rule before the equations and end with "Mikä rivi on väärin?".
+- solutions.md — the closing sentence "Opiskelija on käyttänyt beeta plus -hajoamisen sääntöä Z - 1" explains the slip well; keep it.
 
 ## Checked
-- Määrät 8/7/5; tasot ja kinds sopivat: MC beeta miinus, luku-, protoni- ja neutronilaskut, hajoamistapataulukko, yhtälövirhe, kalibrointisuora, hajoamissarja, tasokaavio.
-- L2-05: rivit alfa, β−, β+, β−, gamma, β− ja vastaus 3 oikein (N, Z täsmäävät NuDat-tietoihin).
-- L2-06: Np-237 Z = 93, N' = 144; virhe (varausluku 95 ≠ 96) oikein.
-- L2-07: sovitus k = 0,598 keV/kanava, 916 keV oikein.
-- L3-04: 3 alfaa ja 2 beetaa taulukossa, 1 alfa ja 2 beetaa loppuun; yhteensä 4 beetaa, tarkistus oikein.
-- L3-05: tasot 351,2; 820,5; 1501,4 keV yksikäsitteiset, puuttuva 1150,2 keV, 1,078 pm oikein.
-- Johdannot: ei yli noin 45 sanan kappaletta; kohdat omina kappaleinaan.
-- Ratkaisuissa kaikki vaiheet; 1280 px -kaappaukset ilman leikkautumista.
+- New task fy8-8-L2-08 (find the error, type 4): rows 1, 2, 4 verified (210 = 206 + 4, 84 = 82 + 2; 6 = 5 + 1; 99/43 unchanged); row 3: 52 + (-1) = 51, not 53. Iodine-131 gives xenon-131 (Z = 54).
+- The error is the lesson's warned one (beta minus raises Z by 1). Distractors cover the beta plus/minus mix-up and gamma as an element change.
+- "Yhtälöissä ei ole virhettä" is last, as the type requires; its feedback sends the student to check every row.
+- Notation (electron, positron, antineutrino) matches the brief; stays within the chapter.
+- Method: text only (packet, exercises.json, solutions.md, git diff of the new task); no renders opened. Long formula chains are wrapped by scripts/mathlayout.py per CLAUDE.md, so no separate 300 px finding.

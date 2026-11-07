@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 32070231e8079b94
+CONTENT-HASH: 7b7785dbfa112764
 
 ## Blocking
+(none)
 
 ## Polish
-- exercises.json:82 fy8-3-L1-08 — answer 2,55 eV equals L1-03 and the solution itself notes the same Balmer line — fix: use another pair (e.g. 3 to 5, 0,97 eV) so it is not the inverse of L1-03.
-- exercises.json:74 fy8-3-L1-07 — 122 nm is still readable from the lesson's series table — fix: ask for the Lyman limit or the Paschen longest wavelength.
-- exercises.json:242 fy8-3-L3-04 — the lesson table lists Paschen as 821-1876 nm, so end level n = 3 is guessable — fix: ask the student to name which argument excludes each m.
+- exercises.json fy8-3-L2-08 stem — "Miten fotonin aallonpituus muuttuu" has no stated reference direction. Say "Miten siirtymän 6 -> 3 fotonin aallonpituus on verrattuna siirtymän 4 -> 3 fotonin aallonpituuteen?"
 
 ## Checked
-- Delta (41862d574): answers.py now fits with hand-written _polyfit1; L2-05 gives slope -3,289e15 Hz, E_ion 13,6025 eV (same as the numpy value, answer 13,6 eV, tolerance 0,03). No numpy import remains in the path.
-- check_solutions.py fy8-3 ok; answers_shown.py: all 4374 shown answers agree. All 19 numeric json answers within their 2 % tolerance of the code values (L1-07 121,57, L1-08 2,55, L2-06 3, L2-07 13,056, L3-04 365,3, L3-05 97,25).
-- Nothing else in the set changed since the PASS; counts 8/7/5 unchanged.
+- Round 2: the correct option (pienenee 0,58-kertaiseksi) is no longer the only shrinking one; the new distractor "pienenee noin 0,44-kertaiseksi" is 0,38 : 0,85 (0,445), the single-level mistake with the direction right, and its feedback names that error and states the inverse proportionality. The unique-direction tell is gone.
+- The 1,7 / 0,58 reciprocal pair remains, now one of several distractors and harmless.
+- The check lines in the solution are split one per line; numbers verified (1876 nm and 1094 nm, ratio 0,583).
+- Method: text only (diff and packet); no renders opened.

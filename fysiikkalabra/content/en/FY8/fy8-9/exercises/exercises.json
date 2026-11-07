@@ -87,6 +87,41 @@
       "answer": 17.5,
       "unit": "a",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-9-L1-09",
+      "level": 1,
+      "kind": [
+        "graph",
+        "concept"
+      ],
+      "text": "The activity of a radioactive sample is $800\\,\\text{kBq}$ at the start, and the half-life of the isotope of the sample is $2.0\\,\\text{h}$. The values are example values. The sample contains a very large number of nuclei, and no new radioactive nuclei are formed in it.\n\nWhich of the graphs shows the activity $A$ of the sample as a function of time $t$?",
+      "answer": "Graph C",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Graph A",
+          "figure": "fy8-9/pick-suora",
+          "feedback": "Here the activity decreases steadily and is zero after two half-lives, as if the rest of the nuclei decayed in the second half-life. In the second half-life, however, only half of the remaining nuclei decay, so at the time $4.0\\,\\text{h}$ the activity is $200\\,\\text{kBq}$."
+        },
+        {
+          "text": "Graph B",
+          "figure": "fy8-9/pick-kiihtyy",
+          "feedback": "Here the decay speeds up as time passes, as if the nuclei that have lasted a long time were next in line to decay. A nucleus has no memory: in every half-life the same fraction of the remaining nuclei decays, so the curve becomes gentler and not steeper."
+        },
+        {
+          "text": "Graph C",
+          "figure": "fy8-9/pick-puolittuu",
+          "correct": true,
+          "feedback": "Correct: the activity halves in every period of $2.0\\,\\text{h}$, so at the times $2.0\\,\\text{h}$, $4.0\\,\\text{h}$ and $6.0\\,\\text{h}$ it is $400\\,\\text{kBq}$, $200\\,\\text{kBq}$ and $100\\,\\text{kBq}$. The curve never reaches zero."
+        },
+        {
+          "text": "Graph D",
+          "figure": "fy8-9/pick-e",
+          "feedback": "This curve is $A = A_0 e^{-t/T_{1/2}}$, that is, the decay constant has been taken as $\\tfrac{1}{T_{1/2}}$ without the factor $\\ln 2$. At the time $2.0\\,\\text{h}$ the activity is only about $290\\,\\text{kBq}$, although at the half-life it must be $400\\,\\text{kBq}$."
+        }
+      ]
     }
   ],
   "level2": [

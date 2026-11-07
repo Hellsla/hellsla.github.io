@@ -1,20 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: e3a2b96260884af2
-Mode: full (translation review against the reviewed Finnish set)
+CONTENT-HASH: 73b5a31d6409a888
 Round 1
 
 ## Blocking
-(none)
-
-## Fixed
 (none)
 
 ## Polish
 (none)
 
 ## Checked
-- Screenshots of the fi-easy exercises and solutions (L2, L3) opened: no clipped text, decimal comma in maths and tables, units upright with a thin space, fractions legible.
-- Tables (L2-05, L3-04, L3-05) have translated captions and headers; data cells match fi.
-- Figure fy8-5/string referenced as in fi.
-- Short sentences give clean line breaks in the solution blocks; no overly long lines.
-- check_i18n.py fi-easy: 0 errors.
+- Own scratch script, 390 px, task card opened with Answer and solution: opened /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-b2-m4x9/fi-easy-fy8-5-L1-09.png (ordering of five hydrogen states; wrong order entered, 4/5 items marked); read in full. For fy8-6 I also cropped the card into three columns (/tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-b2-m4x9/s-fi-easy-6.png) to read the table, options and solution formulas at full size.
+- By script: no horizontal scroll at 390 px, no KaTeX error nodes. The packet's screenshot list was empty and not used; solutions.md and answers.py read as source only.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

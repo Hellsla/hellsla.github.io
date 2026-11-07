@@ -87,7 +87,7 @@
     {
       "id": "fy8-2-L1-08",
       "level": 1,
-      "text": "Oppilas ratkaisi tehtävän näin: ”Vetyatomi siirtyy tilasta $n = 2$, jonka energia on $E_2 = -3{,}40\\,\\text{eV}$, tilaan $n = 3$, jonka energia on $E_3 = -1{,}51\\,\\text{eV}$. Fotonin energia on tilojen erotus $E_3 - E_2 = -1{,}51\\,\\text{eV} - (-3{,}40\\,\\text{eV}) = 1{,}89\\,\\text{eV}$, joten atomi lähettää fotonin, jonka energia on $1{,}89\\,\\text{eV}$.”\n\nLukuarvo on oikein, mutta johtopäätös ei ole. Mikä virhe oppilaan päättelyssä on?",
+      "text": "Oppilas ratkaisi tehtävän näin: ”Vetyatomi siirtyy tilasta $n = 2$, jonka energia on $E_2 = -3{,}40\\,\\text{eV}$, tilaan $n = 3$, jonka energia on $E_3 = -1{,}51\\,\\text{eV}$. Fotonin energia on tilojen erotus $E_3 - E_2 = -1{,}51\\,\\text{eV} - (-3{,}40\\,\\text{eV})$, eli $E_3 - E_2 = 1{,}89\\,\\text{eV}$, joten atomi lähettää fotonin, jonka energia on $1{,}89\\,\\text{eV}$.”\n\nLukuarvo on oikein, mutta johtopäätös ei ole. Mikä virhe oppilaan päättelyssä on?",
       "kind": [
         "error",
         "concept"
@@ -289,6 +289,42 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy8-2-L2-08",
+      "level": 2,
+      "kind": [
+        "graph",
+        "concept",
+        "reasoning"
+      ],
+      "text": "Malliatomilla on neljä energiatilaa. Tilojen energiat ovat esimerkkiarvoja.\n\nPerustila: $E_1 = -5{,}00\\,\\text{eV}$\n\nViritystila: $E_2 = -2{,}50\\,\\text{eV}$\n\nViritystila: $E_3 = -2{,}00\\,\\text{eV}$\n\nViritystila: $E_4 = -0{,}60\\,\\text{eV}$\n\nNäistä atomeista koostuva kaasu on huoneenlämpöistä, joten lähes kaikki sen atomit ovat perustilassa. Hehkulampun valo johdetaan kaasun läpi. Läpi tullut valo tutkitaan spektroskoopilla näkyvän valon alueella $380$–$720\\,\\text{nm}$. Käytä arvoa $hc = 1240\\,\\text{eV}\\,\\text{nm}$.\n\nMikä kuva esittää havaittua spektriä?",
+      "answer": "Spektri C",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Spektri A",
+          "figure": "fy8-2/pick-emissio",
+          "feedback": "Kirkkaat viivat mustalla pohjalla ovat emissioviivoja. Emissioviivat ovat kaasun itse lähettämää valoa, eivät sen läpi kulkenutta valoa. Kaasun läpi kulkenut hehkulampun valo antaa jatkuvan värikaistan. Siitä puuttuvat tummina viivoina ne aallonpituudet, jotka atomit ovat absorboineet."
+        },
+        {
+          "text": "Spektri B",
+          "figure": "fy8-2/pick-kolme",
+          "feedback": "Viiva $653\\,\\text{nm}$ vastaa siirtymää tilasta $2$ tilaan $4$. Kylmän kaasun atomit ovat perustilassa. Ne absorboivat siis vain siirtymiä, jotka alkavat perustilasta. Tätä viivaa ei synny."
+        },
+        {
+          "text": "Spektri C",
+          "figure": "fy8-2/pick-kaksi",
+          "correct": true,
+          "feedback": "Oikein: perustilasta lähtevät siirtymät tiloihin $2$ ja $3$ antavat tummat viivat kohdissa $496\\,\\text{nm}$ ja $413\\,\\text{nm}$. Siirtymää tilaan $4$ vastaava viiva $282\\,\\text{nm}$ on ultraviolettia, joten se ei näy."
+        },
+        {
+          "text": "Spektri D",
+          "figure": "fy8-2/pick-kaista",
+          "feedback": "Tässä luullaan, että atomi absorboi kaikki fotonit, joiden energia riittää virittämiseen. Kun elektroni jää atomiin, fotonin energian täytyy olla täsmälleen kahden tilan erotus. Siksi syntyy kapeita viivoja."
+        }
+      ]
     }
   ],
   "level3": [

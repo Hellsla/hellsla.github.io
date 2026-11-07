@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 55a1c542063de95f
+CONTENT-HASH: d4cac7da6f13b625
+Mode: delta
 
 ## Blocking
+(none)
 
 ## Polish
-- exercises/solutions.md fy8-2-L1-07 (Model answer) — the parenthesis "(this reason is required: merely stating “the states are different” is not enough)" is a grader note inside the model answer; it mirrors the Finnish, so left as is.
-- exercises/solutions.md fy8-2-L3-04 (Reasonableness) — "mirror-image level system" is mirrored from the Finnish; understandable, no change needed.
+(none)
 
 ## Checked
-- Structural scripted diff against content/fi: same ids, kinds, answers, units, tolerances, correct flags, choice order, table captions, columns and every table cell for all 8 new tasks (L1-06..08, L2-05..07, L3-04..05); no differences.
-- Every number in the task texts, choices, feedback and solutions equals the Finnish after decimal-comma normalisation; the only token-order difference is L1-08 (wording of the same two energies), same values.
-- Decimal point used in en JSON and LaTeX; no decimal comma left; no Finnish words left in en (grep of exercises.json and solutions.md).
-- Recomputed new answers: L2-05 2.27 eV (mercury 435.8/546.1/577.0 match), L2-06 -0.85 eV (E_n = -13.6/16, n = 4; line E 527.1 nm unidentified), L2-07 497 nm (fit 12.01 nm/mm, 299.6 nm), L3-04 1127 nm (levels 1.10, 2.40, 3.90 eV), L3-05 22.1 % (dye B; D gives 477 nm).
-- L1-06 and L1-08: exactly one correct choice, feedback names the actual misconception; L1-08 direction of transition (absorb vs emit) correct.
-- check_i18n.py en: 0 errors.
+- fy8-2-L2-08 (en) compared with reviewed fi: same data, same options, same correct option, same answer.
+- Recomputed independently: ground-state absorption 2.50, 3.00, 4.40 eV gives 496, 413, 282 nm (UV); 2->4 gives 1.90 eV = 653 nm which a cold gas does not absorb; so two dark lines in a continuous band (C); A is emission, B has the 653 nm line, D is a band; the four option-figure descriptions match these lines.
+- solutions.md L2-08: principle, symbolic step, substitution, rounding and reasonableness agree with fi; answers.py note agrees.
+- English decimal point used, wording natural English.
+- check_i18n shows nothing for fy8-2; build.py fy8-2 succeeds. No translation edit was needed.
+- Delta: L1-08 student chain now reads E_3 - E_2 = -1.51 eV - (-3.40 eV), that is E_3 - E_2 = 1.89 eV; arithmetic -1.51 + 3.40 = 1.89 correct, same as fi, nothing else changed; answer and options unaffected.
+- Hash d4cac7da6f13b625 at start and end.

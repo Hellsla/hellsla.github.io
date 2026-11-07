@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: a3e2c0e4d656c80d
-Mode: full (translation review against the reviewed Finnish set)
+CONTENT-HASH: 17991a95637aadf8
 Round 1
 
 ## Blocking
 (none)
 
-## Fixed
-(none needed: the text already matched fi in every number and was natural)
-
 ## Polish
 (none)
 
 ## Checked
-- Opened exercise captures in content/fi-easy/FY8/fy8-8/review/shots (fy8-8-open-exercises-*, incl. L2 and L3 sets): tables, solution boxes and maths render, no overflow, no leftover Finnish in en, labels translated.
-- Data tables (L2-05, L2-07, L3-04, L3-05) have translated captions and column headers; LaTeX symbols identical to fi.
-Scores: illustrations 4 / typography 4 / language 5 / accessibility 4
-- check_i18n.py fi-easy: 0 errors.
+- Own scratch script (preview built with build.py, 390 px, task card opened with its answer and solution): opened /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-all-k7q2/fi-easy-fy8-8-L2-08.png (find-the-error, 5 options; Line 3 marked wrong with feedback shown; Answer and solution open, all of it read) .
+- Changed older tasks (text split into paragraphs or re-set): fi-easy-fy8-8-L3-02.png (top, text paragraphs, solution); opened the top 760 px of each in the contact montages /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-all-k7q2/m-fi-easy-0.png and m-fi-easy-3.png (solution parts below not opened for these).
+- Same checks by script: no horizontal scroll at 390 px, no KaTeX error nodes. The packet's own screenshot list was empty and was not used; answers.py and solutions.md read as source only.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

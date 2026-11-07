@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: cf9ab3e66ab0f8e4
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 831c7e820df028d2
+Mode: translation
 
 ## Blocking
 (none)
 
-## Fixed
-(none needed)
-
 ## Polish
-- L3-04 repeats 'Perustele' in part c) twice (same in the reviewed fi-easy text); acceptable in selkosuomi, left as is.
+(none)
 
 ## Checked
-- Plain Finnish: short sentences, common words; terms explained in place (esim. ekstrapolointi eli suoran jatkaminen; plasma; säätösauvat sitovat neutroneja).
-- Distractor feedback in L1-06, L1-07, L2-07 explains the error in short sentences and names the correct concept.
-- Instructions to the answer box ('Vastauslaatikkoon tulee kohdan b) tulos') present in L2-05, L2-06, L3-04, L3-05.
-- Solutions keep the staged structure (Annettu, Kysytty, Periaate, Kaava, Muunnokset, Sijoitus, Vastaus, Järkevyys).
+- fy8-11-L2-08 (fi-easy): situation first, question last as its own sentence, options and feedback keep the misconception each wrong option carries, as in fi.
+- Each feedback names the specific error and repairs it; none gives the answer before the student commits.
+- Solution can be followed step by step (Kysytty, Periaate, Mallivastaus) and matches fi.
+- fi-easy follows NOTES.md section 12 (shorter sentences, terms explained, same physics and numbers as fi).
+- Hash 831c7e820df028d2 at start and end.

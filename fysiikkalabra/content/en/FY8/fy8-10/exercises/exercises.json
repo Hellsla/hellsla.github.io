@@ -263,6 +263,36 @@
           "feedback": "Correct: energy is released only if the total binding energy of the nuclei formed is greater than that of the original ones. On both sides of the peak $\\tfrac{E_\\text{B}}{A}$ is smaller, so combining or splitting iron nuclei would move the nucleons toward looser binding and would require energy. With other nuclei, a reaction can still release energy."
         }
       ]
+    },
+    {
+      "id": "fy8-10-L2-08",
+      "level": 2,
+      "kind": [
+        "reasoning"
+      ],
+      "text": "The mass of the gold-197 atom ${}^{197}_{79}\\text{Au}$ is $196.966569\\,\\text{u}$. The mass of the hydrogen atom is $m_\\text{H} = 1.007825\\,\\text{u}$ and that of the neutron is $m_\\text{n} = 1.008665\\,\\text{u}$. Use $1\\,\\text{u} = 931.5\\,\\tfrac{\\text{MeV}}{c^2}$.\n\nWhich option is closest to the binding energy $E_\\text{B}$ of the gold-197 nucleus?",
+      "answer": "about $1600\\,\\text{MeV}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "about $0.002\\,\\text{MeV}$",
+          "feedback": "Here the mass defect $1.674\\,\\text{u}$ has been divided by $931.5$, so the conversion was done the wrong way round. The value $931.5\\,\\tfrac{\\text{MeV}}{c^2}$ is put in place of the atomic mass unit, so the mass defect is multiplied by this number."
+        },
+        {
+          "text": "about $8\\,\\text{MeV}$",
+          "feedback": "This is the binding energy per nucleon, about $1560\\,\\text{MeV} : 197 \\approx 7.9\\,\\text{MeV}$. The question asks for the binding energy of the whole nucleus, so the result is not divided by the number of nucleons $A = 197$."
+        },
+        {
+          "text": "about $1600\\,\\text{MeV}$",
+          "correct": true,
+          "feedback": "Correct: the mass defect is about $1.674\\,\\text{u}$, and it corresponds to the energy $1.674 \\cdot 931.5\\,\\text{MeV}$, that is, about $1560\\,\\text{MeV}$."
+        },
+        {
+          "text": "about $180\\,000\\,\\text{MeV}$",
+          "feedback": "Here the mass of the whole atom has been turned into energy, $196.97 \\cdot 931.5\\,\\text{MeV}$, that is, about $183\\,000\\,\\text{MeV}$. The binding energy is not the whole energy of the nucleus: it corresponds only to the mass defect, that is, to how much lighter the atom is than its parts."
+        }
+      ]
     }
   ],
   "level3": [

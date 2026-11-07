@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 128fe4045df341c6
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 75705ee3121c8447
+Mode: translation
 
 ## Blocking
 (none)
 
-## Fixed
-- exercises.json L2-05, L2-06, L3-04, L3-05 `text` — the translation held a literal backslash-n (`\\n\\n`) where fi has real line breaks, so the task text showed `\n\n` on the page (visible in open-exercises-L2-1280-5 and L3-1280-4 captures) and the a)/b)/c) parts ran together; replaced with real newlines (the same line breaks as fi).
-
 ## Polish
-- solutions.md L3-04 reasonableness is a long paragraph (about 150 words); fi has the same length, and splitting it would change structure, so left as is.
+(none)
 
 ## Checked
-- Plain Finnish: short sentences, common words; added aids (nuklidi, nukleoni explained in L2-05, L1-06, L1-08) are accurate and do not give away answers.
-- Parts a)–d) and the answer-box sentences match fi in meaning; tolerances, kinds and levels equal fi for all 20 tasks.
-- Choice feedback in L1-06, L1-08, L2-07 split into shorter sentences while keeping the same error named as in fi.
-- Solutions keep the Annettu / Kysytty / Periaate / Kaava / Muunnokset / Sijoitus / Vastaus / Järkevyys order.
+- fy8-10-L2-08 (fi-easy): situation first, question last as its own sentence, options and feedback keep the misconception each wrong option carries, as in fi.
+- Each feedback names the specific error and repairs it; none gives the answer before the student commits.
+- Solution can be followed step by step (Kysytty, Periaate, Mallivastaus) and matches fi.
+- fi-easy follows NOTES.md section 12 (shorter sentences, terms explained, same physics and numbers as fi).
+- Hash 75705ee3121c8447 at start and end.

@@ -165,6 +165,32 @@ b) At the distance $28\,\text{Mpc}$ the line gives the speed $68.45 \cdot 28\,\t
 **Principle:** The Big Bang was not an explosion at a certain point in space; space itself began to expand everywhere. In the expansion, all distances between galaxies grow in the same proportion, so viewed from any galaxy the other galaxies recede in the same way: the speed is proportional to the distance, $v = H_0\,d$. Therefore the expansion has no centre and no edge.
 **Model answer:** The student's observation is correct, but the conclusion is wrong: the fact that galaxies recede from us in every direction does not make the Milky Way a centre. Space expands everywhere, so viewed from any galaxy the others recede in the same way and there is no centre. If the explosion had a location, the recession would look different from different galaxies, but observations do not support that. According to the Hubble–Lemaître law, distant galaxies recede faster, not slower, so the claim of slower recession far away is wrong. The claim of tired light is also wrong, because the distances between galaxies really do grow as space expands.
 
+## fy8-16-L2-08
+**Asked:** how many times the distance of galaxy A, $d_\text{A}$, the distance of galaxy B, $d_\text{B}$, is.
+**Principle:** The redshift $z = \tfrac{\Delta\lambda}{\lambda_0}$ is the same fraction of the wavelength of each line itself, so the redshifts calculated from different lines are comparable, but the shifts in nanometres are not. At a small redshift $v = cz$, and by the Hubble–Lemaître law $d = \tfrac{v}{H_0}$, so $d = \tfrac{cz}{H_0}$ is directly proportional to the redshift. In the ratio $c$ and $H_0$ cancel.
+**Model answer:** The redshift of galaxy A:
+
+$$\begin{aligned}
+&z_\text{A} = \frac{662.9\,\text{nm} - 656.3\,\text{nm}}{656.3\,\text{nm}} \\
+&\phantom{z_\text{A}} = \frac{6.6\,\text{nm}}{656.3\,\text{nm}} = 0.010056
+\end{aligned}$$
+
+The redshift of galaxy B:
+
+$$\begin{aligned}
+&z_\text{B} = \frac{500.7\,\text{nm} - 486.1\,\text{nm}}{486.1\,\text{nm}} \\
+&\phantom{z_\text{B}} = \frac{14.6\,\text{nm}}{486.1\,\text{nm}} = 0.030035
+\end{aligned}$$
+
+The ratio of the distances:
+
+$$\begin{aligned}
+&\frac{d_\text{B}}{d_\text{A}} = \frac{c z_\text{B} : H_0}{c z_\text{A} : H_0} = \frac{z_\text{B}}{z_\text{A}} \\
+&\phantom{\frac{d_\text{B}}{d_\text{A}}} = \frac{0.030035}{0.010056} = 2.987
+\end{aligned}$$
+
+The distance of galaxy B is about $3.0$ times the distance of galaxy A, two significant figures like the shift $6.6\,\text{nm}$. Both redshifts are below $0.1$, so $v = cz$ holds. The wrong options: comparing the shifts in nanometres gives $14.6 : 6.6 \approx 2.2$, comparing the measured wavelengths gives $500.7 : 662.9 \approx 0.76$, and the inverse dependence gives $0.010056 : 0.030035 \approx 0.33$. Reasonableness: the line of galaxy B has shifted about $3\,\%$ and the line of galaxy A about $1\,\%$ of its own wavelength, so B recedes about three times faster and is therefore about three times farther away.
+
 ## fy8-16-L3-04
 **Given:** sample data: orbital speeds $v_\text{obs}$ and model speeds $v_\text{vis}$ at seven distances $r = 2$–$30\,\text{kpc}$ in the table; $r = 10\,\text{kpc}$: $v_\text{obs} = 207\,\text{km/s}$, $v_\text{vis} = 185\,\text{km/s}$; $r = 30\,\text{kpc}$: $v_\text{obs} = 213\,\text{km/s}$, $v_\text{vis} = 113\,\text{km/s}$
 **Asked:** a) the relative changes of the speeds between $10$–$30\,\text{kpc}$; b) the ratio $\tfrac{v_\text{obs}}{v_\text{vis}}$ at the distance $30\,\text{kpc}$; c) the interpretation about mass and dark matter

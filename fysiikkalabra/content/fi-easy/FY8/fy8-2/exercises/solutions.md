@@ -164,6 +164,37 @@
 **Vastaus:** a) hehkulamppu antaa jatkuvan spektrin ja elohopeaputki viivaspektrin; b) $497\,\text{nm}$. Vastauksessa on kolme merkitsevää numeroa, koska lukemassa $16{,}4\,\text{mm}$ ja aallonpituuksissa on kolme.
 **Järkevyys:** Arvo on elohopean viivojen $435{,}8\,\text{nm}$ ja $546{,}1\,\text{nm}$ välissä. Lukema $16{,}4\,\text{mm}$ on niiden lukemien $11{,}4\,\text{mm}$ ja $20{,}5\,\text{mm}$ välissä. Jos käyttää vain näitä kahta pistettä, saa $435{,}8\,\text{nm} + 12{,}1\,\tfrac{\text{nm}}{\text{mm}} \cdot 5{,}0\,\text{mm} = 496{,}3\,\text{nm}$. Tulos on sama. Aallonpituus on sinivihreää valoa, kuten tehtävässä.
 
+## fy8-2-L2-08
+**Kysytty:** mikä neljästä spektristä on huoneenlämpöisen kaasun läpi kulkeneen hehkulampun valon spektri alueella $380$–$720\,\text{nm}$.
+**Periaate:** Hehkulamppu antaa jatkuvan spektrin. Kaasun atomi absorboi fotonin vain, jos fotonin energia on täsmälleen kahden energiatilan erotus. Atomi voi lähteä vain tilasta, jossa atomeja on. Huoneenlämpöisessä kaasussa lähes kaikki atomit ovat perustilassa. Siksi absorptioviivat syntyvät vain siirtymistä, jotka alkavat perustilasta. Viivan aallonpituus on $\lambda = \dfrac{hc}{E_\text{y} - E_\text{a}}$.
+**Mallivastaus:** Oikea on spektri C. Perustilasta lähtevien siirtymien energiat ja aallonpituudet ovat
+
+$E_2 - E_1 = (-2{,}50 + 5{,}00)\,\text{eV}$
+
+$E_2 - E_1 = 2{,}50\,\text{eV}$
+
+$\lambda_{12} = 1240\,\text{eV}\,\text{nm} : 2{,}50\,\text{eV}$
+
+$\lambda_{12} \approx 496\,\text{nm}$
+
+$E_3 - E_1 = (-2{,}00 + 5{,}00)\,\text{eV}$
+
+$E_3 - E_1 = 3{,}00\,\text{eV}$
+
+$\lambda_{13} = 1240\,\text{eV}\,\text{nm} : 3{,}00\,\text{eV}$
+
+$\lambda_{13} \approx 413\,\text{nm}$
+
+$E_4 - E_1 = (-0{,}60 + 5{,}00)\,\text{eV}$
+
+$E_4 - E_1 = 4{,}40\,\text{eV}$
+
+$\lambda_{14} = 1240\,\text{eV}\,\text{nm} : 4{,}40\,\text{eV}$
+
+$\lambda_{14} \approx 282\,\text{nm}$
+
+Viiva $282\,\text{nm}$ on ultraviolettia, eikä se näy tutkitulla alueella. Jatkuvassa värikaistassa on siis kaksi tummaa viivaa, kohdissa $413\,\text{nm}$ ja $496\,\text{nm}$. Spektrin A viivat ovat kirkkaita mustalla pohjalla, joten ne ovat emissioviivoja. Emissioviivat ovat kaasun itse lähettämää valoa, eivät sen läpi kulkenutta valoa. Läpi tulleessa valossa absorboidut aallonpituudet näkyvät tummina viivoina jatkuvassa värikaistassa. Spektrin B viiva $653\,\text{nm}$ tulee siirtymästä $2 \to 4$, joka alkaa viritystilasta. Kylmässä kaasussa ei ole atomeja tässä tilassa. Spektri D syntyisi, jos atomi absorboisi kaikki fotonit, joiden energia on vähintään $2{,}50\,\text{eV}$. Atomi absorboi kuitenkin vain fotonit, joiden energia on täsmälleen tilojen erotus.
+
 ## fy8-2-L3-04
 **Annettu:** viivojen aallonpituudet $318\,\text{nm}$, $443\,\text{nm}$, $517\,\text{nm}$, $827\,\text{nm}$ ja $954\,\text{nm}$, kuudes viiva syntyy alimmalta viritystilalta perustilaan ja on pisin, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** a) viivojen fotonien energiat, b) viritystilojen energiat ja tasokaavio, c) kuudennen viivan aallonpituus $\lambda_6$ nanometreinä

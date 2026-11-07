@@ -68,6 +68,29 @@
 **Periaate:** Valo luovuttaa energiansa fotoneina, ja yksi elektroni absorboi yhden fotonin kokonaan. Elektroni irtoaa, jos fotonin energia $hf$ on vähintään irrotustyön $W$ suuruinen. Valon kirkkaus kertoo vain, kuinka monta fotonia tulee, ei sitä, kuinka paljon energiaa yksittäinen fotoni kantaa.
 **Mallivastaus:** Ultraviolettifotonin energia $3{,}40\,\text{eV}$ on suurempi kuin natriumin irrotustyö $2{,}28\,\text{eV}$, joten jo yksi fotoni riittää irrottamaan elektronin. Siksi elektroneja irtoaa heti, vaikka valo olisi himmeää ja fotoneja tulisi vähän. Punaisen valon fotonin energia $1{,}91\,\text{eV}$ on pienempi kuin irrotustyö, joten yksikään fotoni ei riitä irrottamaan elektronia. Elektroni ei voi koota energiaa usean fotonin yhteisvaikutuksesta tai odottamalla, joten kirkkaampi punainen valo tuo vain lisää liian vähäenergisiä fotoneja eikä irrota yhtään elektronia.
 
+## fy8-1-L1-09
+**Kysytty:** mitkä viidestä väitteestä lamppujen A ja B irrottamista elektroneista ovat tosia.
+**Periaate:** Valon energia on kvantittunut fotoneiksi, ja yksi fotoni luovuttaa koko energiansa yhdelle elektronille. Elektroni irtoaa vain, jos fotonin energia $hf$ on vähintään irrotustyön $W$ suuruinen, ja ylimääräinen energia jää liike-energiaksi: $E_\text{k,max} = hf - W$. Intensiteetti kertoo vain, kuinka monta fotonia pinnalle osuu sekunnissa.
+**Mallivastaus:** Lampun A fotonin energia riittää irrotukseen, ja suurin liike-energia on
+
+$E_\text{k,max} = hf - W$
+
+$E_\text{k,max} = 3{,}10\,\text{eV} - 2{,}50\,\text{eV}$
+
+$E_\text{k,max} = 0{,}60\,\text{eV}$
+
+Lampun B fotonin energia $2{,}25\,\text{eV}$ on pienempi kuin irrotustyö $2{,}50\,\text{eV}$.
+
+1 epätosi: yksikään lampun B fotoni ei yksin riitä irrottamaan elektronia, eikä elektroni kerää energiaa useammalta fotonilta. Kirkkaampi valo tuo vain lisää samanlaisia fotoneja, joten elektroneja ei irtoa lainkaan.
+
+2 tosi: lasku antaa $0{,}60\,\text{eV}$.
+
+3 epätosi: kaksinkertainen intensiteetti kaksinkertaistaa fotonien määrän, mutta yhden fotonin energia $3{,}10\,\text{eV}$ ei muutu. Suurin liike-energia pysyy arvossa $0{,}60\,\text{eV}$.
+
+4 tosi: fotoneja osuu pinnalle sekunnissa enemmän, joten niiden irrottamia elektronejakin on enemmän.
+
+5 epätosi: jo yksi lampun A fotoni riittää irrotukseen, joten elektroneja irtoaa heti, kun valo osuu levyyn, eikä viivettä ole.
+
 ## fy8-1-L2-01
 **Annettu:** cesiumin irrotustyö $W = 2{,}14\,\text{eV}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** pisin irrottava aallonpituus eli raja-aallonpituus $\lambda_0$ nanometreinä

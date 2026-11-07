@@ -164,6 +164,37 @@
 **Answer:** a) the incandescent lamp gives a continuous spectrum and the mercury tube a line spectrum; b) $497\,\text{nm}$, three significant figures like the reading $16.4\,\text{mm}$ and the wavelengths.
 **Reasonableness:** The value is between the lines of mercury $435.8\,\text{nm}$ and $546.1\,\text{nm}$, and the reading $16.4\,\text{mm}$ is between their readings $11.4\,\text{mm}$ and $20.5\,\text{mm}$. Interpolation using only these two points gives $435.8\,\text{nm} + 12.1\,\tfrac{\text{nm}}{\text{mm}} \cdot 5.0\,\text{mm} = 496.3\,\text{nm}$, the same result. The wavelength is blue-green light, as in the problem.
 
+## fy8-2-L2-08
+**Find:** which of the four spectra is the spectrum of incandescent light that has passed through a room-temperature gas, in the range $380$–$720\,\text{nm}$.
+**Principle:** An incandescent lamp gives a continuous spectrum. An atom of the gas absorbs a photon only if the photon energy is exactly the difference between two energy states, and it can start only from a state in which there are atoms. In a room-temperature gas almost all atoms are in the ground state, so the absorption lines are formed only by transitions that start from the ground state. The wavelength of a line is $\lambda = \dfrac{hc}{E_\text{u} - E_\text{l}}$.
+**Model answer:** The correct one is spectrum C. The energies and wavelengths of the transitions from the ground state are
+
+$E_2 - E_1 = (-2.50 + 5.00)\,\text{eV}$
+
+$E_2 - E_1 = 2.50\,\text{eV}$
+
+$\lambda_{12} = 1240\,\text{eV}\,\text{nm} : 2.50\,\text{eV}$
+
+$\lambda_{12} \approx 496\,\text{nm}$
+
+$E_3 - E_1 = (-2.00 + 5.00)\,\text{eV}$
+
+$E_3 - E_1 = 3.00\,\text{eV}$
+
+$\lambda_{13} = 1240\,\text{eV}\,\text{nm} : 3.00\,\text{eV}$
+
+$\lambda_{13} \approx 413\,\text{nm}$
+
+$E_4 - E_1 = (-0.60 + 5.00)\,\text{eV}$
+
+$E_4 - E_1 = 4.40\,\text{eV}$
+
+$\lambda_{14} = 1240\,\text{eV}\,\text{nm} : 4.40\,\text{eV}$
+
+$\lambda_{14} \approx 282\,\text{nm}$
+
+The line $282\,\text{nm}$ is ultraviolet and is not visible in the range examined, so the continuous band of colour has two dark lines, at $413\,\text{nm}$ and $496\,\text{nm}$. The lines of spectrum A are bright on a black background, so they are emission lines, that is light emitted by the gas itself, not light that has passed through it. In the light that has come through, the absorbed wavelengths appear as dark lines in the continuous band of colour. The line $653\,\text{nm}$ of spectrum B comes from the transition $2 \to 4$, which starts from an excited state. There are no atoms in that state in a cold gas. Spectrum D would be formed if the atom absorbed all photons whose energy is at least $2.50\,\text{eV}$. However, the atom absorbs only photons whose energy is exactly the difference between the states.
+
 ## fy8-2-L3-04
 **Given:** the wavelengths of the lines $318\,\text{nm}$, $443\,\text{nm}$, $517\,\text{nm}$, $827\,\text{nm}$ and $954\,\text{nm}$, the sixth line is formed from the lowest excited state to the ground state and is the longest, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Find:** a) the energies of the photons of the lines, b) the energies of the excited states and the energy level diagram, c) the wavelength $\lambda_6$ of the sixth line in nanometres

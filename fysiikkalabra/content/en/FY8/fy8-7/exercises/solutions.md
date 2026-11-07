@@ -138,6 +138,41 @@
 **Principle:** An incoming photon with the energy $E_2 - E_1$ can either be absorbed by an atom on the lower level or make an atom on the upper level emit a new photon. Which happens more often depends on which level has more atoms.
 **Model answer:** Population inversion is a state in which there are more atoms on the upper laser level than on the lower, $N_2 > N_1$. Then more stimulated emissions than absorptions take place, and the light passing through is amplified. Usually the situation is the opposite: almost all the atoms are on the lower level, so absorption wins and the light is attenuated. Inversion does not mean that the directions of the photons are the same or that the level is the other way round, but how the atoms are distributed among the levels. It is achieved by pumping atoms to the upper level.
 
+## fy8-7-L1-09
+**Find:** which of the five statements about the laser and quantum dots A and B are true.
+**Principle:** The energy of a photon depends only on the wavelength, $hf = \tfrac{hc}{\lambda}$, not on what kind of light source emits it. Laser light is produced in stimulated emission, which requires population inversion $N_2 > N_1$; it is achieved by pumping a material that has at least three levels. In a quantum dot the energy gap grows as the dot gets smaller.
+**Model answer:** The energy of a $650\,\text{nm}$ photon of both light sources is
+
+$hf = \dfrac{hc}{\lambda}$
+
+$$\begin{aligned}
+&hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\quad \cdot 2.998 \cdot 10^{8}\,\text{m/s} \\
+&= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}$$
+
+$$\begin{aligned}
+&hf = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{650 \cdot 10^{-9}\,\text{m}} \\
+&= 3.056 \cdot 10^{-19}\,\text{J}
+\end{aligned}$$
+
+In electronvolts, when $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$:
+
+$$\begin{aligned}
+&hf = \dfrac{3.056 \cdot 10^{-19}}{1.602 \cdot 10^{-19}}\,\text{eV} \\
+&= 1.91\,\text{eV}
+\end{aligned}$$
+
+1 false: the energies of the photons are the same, $1.91\,\text{eV}$. The danger of a laser comes from the whole power travelling in a narrow beam, which the eye focuses to a small spot.
+
+2 true: a stimulated photon gets the energy, direction and phase of the incoming photon, so the waves of laser light are in step.
+
+3 false: with two levels the pumping light causes stimulated emission in atoms of the upper state as probably as it excites atoms of the ground state, so at most half of the atoms can be brought to the upper state. Population inversion is made by pumping a material that has at least three levels and a long-lived upper laser level.
+
+4 false: dot A is smaller, so its energy gap is greater and the energy of the photon is greater. So dot A emits light of a shorter wavelength than dot B.
+
+5 true: light along the axis travels through the material between the mirrors many times and is amplified, and the beam comes out through the partly transmitting mirror. Photons that go sideways leave the material and do not have time to multiply.
+
 ## fy8-7-L2-05
 **Given:** diameters of the quantum dots $d = 2.0$; $3.0$; $4.0$; $5.0$ and $6.0\,\text{nm}$ and wavelengths of their light $\lambda = 486$; $529$; $573$; $601$ and $617\,\text{nm}$ (table), $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Find:** the difference $\Delta E$ of the energy gaps between the smallest and the largest dot in electronvolts

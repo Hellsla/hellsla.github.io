@@ -267,6 +267,53 @@
           "feedback": "Tilanne on päinvastainen: tuotteissa sidosenergia nukleonia kohti on suurempi, ei pienempi. Tiukemmin sidottujen nukleonien kokonaismassa on pienempi, ja pienenevä massa vapauttaa energiaa."
         }
       ]
+    },
+    {
+      "id": "fy8-11-L2-08",
+      "level": 2,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "Ajatellaan reaktiota, jossa hiili-12-ydin jakautuu kolmeksi helium-4-ytimeksi: ${}^{12}_{6}\\text{C} \\rightarrow 3\\,{}^{4}_{2}\\text{He}$. Hiili-12:n sidosenergia nukleonia kohti on $7{,}680\\,\\text{MeV}$ ja helium-4:n $7{,}074\\,\\text{MeV}$.\n\nVapautuuko tässä jakautumisessa energiaa?",
+      "answer": "Reaktio vaatii energiaa.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Reaktiossa vapautuu energiaa.",
+          "feedback": "Jakautuminen ei aina vapauta energiaa. Vertaa sidosenergiaa nukleonia kohti ennen reaktiota ja sen jälkeen."
+        },
+        {
+          "text": "Reaktio vaatii energiaa.",
+          "correct": true,
+          "feedback": "Oikein: jakautuminen vaatii noin $7{,}3\\,\\text{MeV}$ energiaa. Käänteinen reaktio, kolmen helium-4-ytimen fuusio hiili-12:ksi, vapauttaa saman energian."
+        },
+        {
+          "text": "Energiaa ei vapaudu eikä kulu.",
+          "feedback": "Nukleonien määrä säilyy, mutta massa ei säily. Energiaa vapautuu tai kuluu, kun sidosenergia nukleonia kohti muuttuu, ja tässä se muuttuu arvosta $7{,}680\\,\\text{MeV}$ arvoon $7{,}074\\,\\text{MeV}$."
+        }
+      ],
+      "reason_prompt": "Mikä perustelu selittää vastauksesi?",
+      "reasons": [
+        {
+          "text": "Kun ydin jakautuu osiin, sen sidosenergia vapautuu syntyvien ytimien liike-energiaksi.",
+          "feedback": "Sidosenergia ei ole ytimeen varastoitunutta energiaa. Se vapautui, kun ydin muodostui, ja sama energia tarvitaan, kun ydin hajotetaan osiin."
+        },
+        {
+          "text": "Ytimen jakautuminen vaatii aina energiaa, koska vahva vuorovaikutus sitoo nukleonit yhteen.",
+          "feedback": "Jakautuminen ei vaadi aina energiaa: uraani-235:n fissio vapauttaa noin $200\\,\\text{MeV}$. Ratkaisevaa on, kasvaako vai pieneneekö sidosenergia nukleonia kohti."
+        },
+        {
+          "text": "Tuotteissa nukleonit ovat löyhemmin sidottuja, joten sidosenergia on yhteensä pienempi.",
+          "correct": true,
+          "feedback": "Oikein: $12$ nukleonin sidosenergia pienenee arvosta $92{,}16\\,\\text{MeV}$ arvoon $84{,}89\\,\\text{MeV}$, joten erotus on tuotava reaktioon."
+        },
+        {
+          "text": "Nukleonien määrä on molemmin puolin $12$, joten mikään osa ytimistä ei muutu energiaksi.",
+          "feedback": "Nukleonien määrä säilyy, mutta johtopäätös ei seuraa siitä. Energia ei synny nukleonien häviämisestä vaan sidosenergian muutoksesta, ja sidosenergian muutos vastaa massan muutosta."
+        }
+      ]
     }
   ],
   "level3": [

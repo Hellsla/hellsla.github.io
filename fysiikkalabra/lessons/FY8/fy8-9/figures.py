@@ -151,7 +151,54 @@ def hero():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "ydin": ydin, "kuvaaja": kuvaaja, "sovitus": sovitus, "pa-points": pa_points, "aktiivisuus": aktiivisuus}
+# Graph choice of task fy8-9-L1-09: four (t, A) graphs on the same axes, A0 = 800 kBq and T½ = 2,0 h given; only
+# "pick-puolittuu" is right (400, 200, 100, 50 kBq at 2, 4, 6, 8 h). The names say the drawn curve, not the answer.
+PICK_A0, PICK_T = 800, 2.0
+PICK_DESC = ("(t,A)-kuvaaja mittakaavassa: vaaka-akselilla aika t tunteina nollasta kahdeksaan tuntiin, apuviivat tunnin "
+             "välein ja lukuarvot kahden tunnin välein; pystyakselilla aktiivisuus A kilobecquereleinä nollasta 900 "
+             "kilobecquereliin, apuviivat 50 kilobecquerelin välein ja lukuarvot 200 kilobecquerelin välein. ")
+
+
+def pick_graph(fid, label, fn):
+    """One option: the same axes and the same curve colour and weight for every option."""
+    f = Fig(fid, 360, PICK_DESC + label)
+    ax = Axes(f, (100, 312), (476, 58), x=(0, 8), y=(0, 900), xticks=list(range(1, 9)), yticks=list(range(50, 901, 50)),
+              xlabel=r"t\ (\text{h})", ylabel=r"A\ (\text{kBq})",
+              xfmt=lambda v: fi(v) if v % 2 == 0 else "", yfmt=lambda v: fi(v) if v % 200 == 0 else "")
+    ax.curve(fn, 0, 8, HEAT, 3)
+    return f.svg()
+
+
+def pick_puolittuu():
+    return pick_graph("fy89-pick-puolittuu", "Käyrä alkaa arvosta 800 kBq ja laskee yhä loivemmin: se kulkee pisteiden "
+                      "(2 h; 400 kBq), (4 h; 200 kBq) ja (6 h; 100 kBq) kautta ja on hetkellä 8 h arvossa 50 kBq.",
+                      lambda t: PICK_A0 * 0.5 ** (t / PICK_T))
+
+
+def pick_suora():
+    """The lesson's misconception: the decay goes on at a constant rate, so the rest decays in the second half-life."""
+    return pick_graph("fy89-pick-suora", "Laskeva suora alkaa arvosta 800 kBq, kulkee pisteen (2 h; 400 kBq) kautta ja "
+                      "osuu nollaan hetkellä 4 h. Sen jälkeen viiva kulkee vaaka-akselia pitkin arvossa nolla.",
+                      lambda t: max(0.0, PICK_A0 * (1 - t / (2 * PICK_T))))
+
+
+def pick_e():
+    """λ taken as 1/T½ without ln 2: A = A0 e^(-t/T½), about 294 kBq at 2 h."""
+    return pick_graph("fy89-pick-e", "Käyrä alkaa arvosta 800 kBq ja laskee yhä loivemmin: se kulkee noin pisteiden "
+                      "(2 h; 290 kBq) ja (4 h; 110 kBq) kautta ja on hetkellä 8 h noin arvossa 15 kBq.",
+                      lambda t: PICK_A0 * math.exp(-t / PICK_T))
+
+
+def pick_kiihtyy():
+    """The nuclei taken to have a memory: the decay speeds up, A = A0 (1 - t²/8 h²), zero at about 2,8 h."""
+    return pick_graph("fy89-pick-kiihtyy", "Käyrä alkaa arvosta 800 kBq ja laskee yhä jyrkemmin: se kulkee pisteen "
+                      "(2 h; 400 kBq) kautta ja osuu nollaan noin hetkellä 2,8 h. Sen jälkeen viiva kulkee vaaka-akselia "
+                      "pitkin arvossa nolla.",
+                      lambda t: max(0.0, PICK_A0 * (1 - t * t / (2 * PICK_T ** 2))))
+
+
+FIGURES = {"hero": hero, "ydin": ydin, "kuvaaja": kuvaaja, "sovitus": sovitus, "pa-points": pa_points, "aktiivisuus": aktiivisuus,
+           "pick-puolittuu": pick_puolittuu, "pick-suora": pick_suora, "pick-e": pick_e, "pick-kiihtyy": pick_kiihtyy}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "hero": "decorative",
@@ -160,4 +207,8 @@ REUSE = {
     "sovitus": "reveals: Ba-137m counts with the fitted A e^(-Ct) + B and the background level B",
     "pa-points": "safe: simulated Pa-234m counts per 10 s, 0–400 s, points only, no fit",
     "aktiivisuus": "safe: activity curve of an unknown sample from 720 kBq over 0–20 h on a 1 h grid; the half-life is to be read off",
+    "pick-puolittuu": "reveals: the right option of task fy8-9-L1-09 (800 kBq halving every 2,0 h)",
+    "pick-suora": "safe: a wrong option of task fy8-9-L1-09 (a straight line from 800 kBq to zero at 4 h, decay at a constant rate)",
+    "pick-e": "safe: a wrong option of task fy8-9-L1-09 (A0 e^(-t/T½), the decay constant taken as 1/T½)",
+    "pick-kiihtyy": "safe: a wrong option of task fy8-9-L1-09 (the decay speeding up to zero at 2,8 h, as if nuclei aged)",
 }

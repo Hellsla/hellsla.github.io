@@ -112,6 +112,45 @@
       "answer": 1,
       "unit": "e",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-15-L1-09",
+      "level": 1,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "Kvarkkien varaukset ovat $u$ ($+\\tfrac{2}{3}e$) sekä $d$ ja $s$ ($-\\tfrac{1}{3}e$), ja antikvarkin varaus on vastakkainen kuin kvarkin.\n\nPäättele, mitkä väitteet ovat tosia ja mitkä epätosia.",
+      "answer": "1 tosi, 2 epätosi, 3 epätosi, 4 tosi, 5 epätosi",
+      "unit": "",
+      "tolerance": 0.02,
+      "statements": [
+        {
+          "text": "Hiukkanen, jonka kvarkkisisältö on $u\\,u\\,s$, on baryoni, ja sen varaus on $+e$.",
+          "true": true,
+          "feedback": "Tosi: kolmen kvarkin hadroni on baryoni, ja sen varaus on kvarkkien varausten summa $+\\tfrac{2}{3}e + \\tfrac{2}{3}e - \\tfrac{1}{3}e$, eli $+e$."
+        },
+        {
+          "text": "Mesoni $d\\,\\bar{u}$ on sähköisesti neutraali.",
+          "true": false,
+          "feedback": "Epätosi: tässä oletetaan, että mesonin kvarkki ja antikvarkki kumoavat aina toistensa varauksen. Anti-$u$-kvarkin varaus on $-\\tfrac{2}{3}e$, joten mesonin varaus on $-\\tfrac{1}{3}e - \\tfrac{2}{3}e$, eli $-e$."
+        },
+        {
+          "text": "Protonin massa on likimain sen kolmen kvarkin massojen summa.",
+          "true": false,
+          "feedback": "Epätosi: tässä protonia ajatellaan kuin taloa, jonka massa on tiilten massojen summa. Kvarkkien massat ovat vain noin $1\\,\\%$ protonin massasta; loppu on kvarkkeja sitovan vahvan vuorovaikutuksen energiaa."
+        },
+        {
+          "text": "Vahva vuorovaikutus ei vaikuta elektroneihin eikä neutriinoihin.",
+          "true": true,
+          "feedback": "Tosi: vahva vuorovaikutus vaikuttaa kvarkkeihin. Elektroni ja neutriinot ovat leptoneja, jotka eivät koostu kvarkeista, joten niihin vaikuttavat vain muut vuorovaikutukset."
+        },
+        {
+          "text": "Beeta miinus -hajoamisessa neutronin $u$-kvarkki muuttuu $d$-kvarkiksi.",
+          "true": false,
+          "feedback": "Epätosi: tässä muutoksen suunta on käännetty. Neutroni $udd$ muuttuu protoniksi $uud$, joten $d$-kvarkki muuttuu $u$-kvarkiksi heikon vuorovaikutuksen välityksellä. Muutos $u \\to d$ tapahtuu beeta plus -hajoamisessa."
+        }
+      ]
     }
   ],
   "level2": [

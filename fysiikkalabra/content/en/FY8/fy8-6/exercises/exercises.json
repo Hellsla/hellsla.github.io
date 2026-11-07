@@ -283,6 +283,73 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy8-6-L2-08",
+      "level": 2,
+      "text": "A group measured the threshold voltages $U_\\text{k}$ of five LEDs of different colours and calculated the frequencies $f$ of the light from the peak wavelengths of the LEDs (table, sample data). The measurement uncertainty of the voltages is $\\pm 0.05\\,\\text{V}$.\n\nThe slope of the line fitted to the points $(f, U_\\text{k})$ is $k = 3.98 \\cdot 10^{-15}\\,\\text{V}\\,\\text{s}$, and its uncertainty is $\\Delta k = 0.21 \\cdot 10^{-15}\\,\\text{V}\\,\\text{s}$. The line crosses the vertical axis at $-0.07\\,\\text{V}$.\n\nUse the values $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$ and the accepted value of the Planck constant, $6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$.\n\nWhich conclusion from the data is justified?",
+      "kind": [
+        "data",
+        "experiment",
+        "reasoning"
+      ],
+      "answer": "The Planck constant of the group agrees with the accepted value, because the difference is smaller than the uncertainty.",
+      "unit": "",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Threshold voltages (sample data)",
+        "columns": [
+          "LED",
+          "$f\\,(10^{14}\\,\\text{Hz})$",
+          "$U_\\text{k}\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "red",
+            "4.76",
+            "1.85"
+          ],
+          [
+            "yellow",
+            "5.08",
+            "1.90"
+          ],
+          [
+            "green",
+            "5.71",
+            "2.18"
+          ],
+          [
+            "blue",
+            "6.38",
+            "2.51"
+          ],
+          [
+            "violet",
+            "7.40",
+            "2.85"
+          ]
+        ]
+      },
+      "choices": [
+        {
+          "text": "The measurement has failed, because the fitted line does not pass through the origin but crosses the axis below zero.",
+          "feedback": "The line does not have to pass through the origin. The measured threshold voltage differs from the value $\\tfrac{hf}{e}$ by about the same amount for all LEDs, and this difference shifts the line without changing the slope $\\tfrac{h}{e}$."
+        },
+        {
+          "text": "There is a systematic error in the measurement, because the Planck constant of the group is smaller than the accepted value and the difference is not zero.",
+          "feedback": "Here the difference is read as significant, although it is within the uncertainty. The difference from the accepted value is $0.25 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, and it is smaller than the uncertainty $\\Delta h = e\\,\\Delta k$, that is $0.34 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$."
+        },
+        {
+          "text": "The Planck constant of the group agrees with the accepted value, because the difference is smaller than the uncertainty.",
+          "correct": true,
+          "feedback": "Correct: $h = ek = 6.38 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$ and $\\Delta h = e\\,\\Delta k$, that is $0.34 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$. The accepted value $6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$ is in the interval $h \\pm \\Delta h$."
+        },
+        {
+          "text": "The Planck constant of the group differs from the accepted value, because the difference is greater than the uncertainty $\\Delta k$ of the slope.",
+          "feedback": "The difference cannot be compared directly with the uncertainty $\\Delta k$, because they have different units. The uncertainty of the Planck constant is $\\Delta h = e\\,\\Delta k$, that is $0.34 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, and the difference $0.25 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$ is smaller than it."
+        }
+      ]
     }
   ],
   "level3": [

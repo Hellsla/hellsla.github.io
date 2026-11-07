@@ -105,7 +105,7 @@
 
 ## Ydinajatus
 
-<figure class="unit-photo"><img src="pics/fy8/cloud-chamber-radon.webp" alt="Mustalla pohjalla on paljon lyhyitä, paksuja valkoisia viivoja eri kohdissa."><figcaption>Radonin hajoamisia sumukammiossa. Jokainen paksu viiva on yhden ytimen lähettämä alfahiukkanen. Emme tiedä, mikä ydin hajoaa seuraavaksi. Suuressa joukossa hajoamisia tapahtuu kuitenkin tasaisesti.</figcaption></figure>
+<figure class="unit-photo"><img src="pics/fy8/cloud-chamber-radon.webp" alt="Mustalla pohjalla on paljon lyhyitä, paksuja valkoisia viivoja eri kohdissa."><figcaption>Radonin hajoamisia sumukammiossa. Jokainen paksu viiva on yhden ytimen lähettämä alfahiukkanen. Sitä ei voi ennustaa, mikä ydin hajoaa seuraavaksi. Suuressa joukossa hajoamisia tapahtuu kuitenkin tasaisesti.</figcaption></figure>
 
 ### Yksittäisen ytimen hajoaminen on satunnaista
 Radioaktiivinen ydin hajoaa ja muuttuu toiseksi ytimeksi (luku *Atomiydin ja radioaktiivinen hajoaminen*). Hajoamishetkeä ei voi ennustaa. Kaksi samanlaista ydintä voi hajota eri aikaan: toinen heti ja toinen vasta vuosien päästä. Ennustaa voi vain sen, kuinka todennäköisesti ydin hajoaa tietyn ajan kuluessa. Todennäköisyys on sama kaikille saman isotoopin ytimille. Isotooppi tarkoittaa saman alkuaineen ydintä, jossa on tietty määrä neutroneja. Todennäköisyys ei käytännössä riipu lämpötilasta, paineesta eikä kemiallisista sidoksista. Se ei riipu myöskään ytimen iästä: ydin ei vanhene. Ydin, joka on säilynyt pitkään, hajoaa seuraavan sekunnin aikana yhtä todennäköisesti kuin juuri syntynyt ydin.

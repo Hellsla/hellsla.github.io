@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 2fd787570d831d56
-Mode: delta
+CONTENT-HASH: 811adecc5e47049e
+Mode: translation
 
 ## Blocking
 (none)
 
 ## Polish
-- None new. (Same optional items as the Finnish report on L1-07, L1-08, L3-04 apply to the shared task design.)
+(none)
 
 ## Checked
-- Delta (41862d574): answers.py now fits with hand-written _polyfit1; L2-05 gives slope -3,289e15 Hz, E_ion 13,6025 eV (same as the numpy value, answer 13,6 eV, tolerance 0,03). No numpy import remains in the path.
-- check_solutions.py fy8-3 ok; answers_shown.py: all 4374 shown answers agree. All 19 numeric json answers within their 2 % tolerance of the code values (L1-07 121,57, L1-08 2,55, L2-06 3, L2-07 13,056, L3-04 365,3, L3-05 97,25).
-- Nothing else in the set changed since the PASS; counts 8/7/5 unchanged.
+- fy8-3-L2-08 (en): situation first, question last as its own sentence, options and feedback keep the misconception each wrong option carries, as in fi.
+- Each feedback names the specific error and repairs it; none gives the answer before the student commits.
+- Solution can be followed step by step (Kysytto, Periaate, Mallivastaus) and matches fi.
+- English decimal point used, wording natural English.
+- Hash 811adecc5e47049e at start and end.

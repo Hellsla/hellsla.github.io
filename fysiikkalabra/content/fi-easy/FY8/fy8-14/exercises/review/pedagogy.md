@@ -1,20 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 979a1f51c50d7c78
-Mode: full
-Round: 1
+CONTENT-HASH: 612296f7d7d63cce
+Mode: translation
 
 ## Blocking
 (none)
 
-## Fixed
+## Polish
 (none)
 
-## Polish
-- Language is clear selkosuomi: short sentences, one idea per sentence, terms explained where first needed (positroni, kohinainen, kalibroidaan eli säädetään oikeaksi).
-- L1-06 task could gloss "annihilaatio" once; left as is, since the model answer explains it and a gloss would give away the answer.
-
 ## Checked
-- Feedback of every L1-06 choice split into short sentences, intent unchanged from Finnish.
-- Multi-part tasks keep the instruction to write the result of part a or c in the answer box.
-- L2-07 student solution unchanged (6,64 and 1,7 mm), so error finding works.
-- Hash at start and end: 979a1f51c50d7c78.
+- fy8-14-L1-09 (fi-easy): situation first, question last as its own sentence, options and feedback keep the misconception each wrong option carries, as in fi.
+- Each feedback names the specific error and repairs it; none gives the answer before the student commits.
+- Solution can be followed step by step (Kysytty, Periaate, Mallivastaus) and matches fi.
+- fi-easy follows NOTES.md section 12 (shorter sentences, terms explained, same physics and numbers as fi).
+- Hash 612296f7d7d63cce at start and end.

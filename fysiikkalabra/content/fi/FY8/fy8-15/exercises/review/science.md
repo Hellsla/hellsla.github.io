@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 4efa7f8dc5cb79f0
-Round: 3
+CONTENT-HASH: 1f3ea63329b692d8
 
 ## Blocking
 
 ## Polish
-- exercises.json:260 (L2-07 distractor feedback) — "protoni ... on stabiili" is a fair simplification (C), but the lesson says "protonia ei ole nähty hajoavan (elinikä yli 10³⁴ vuotta)". — Optionally write "protonin hajoamista ei ole havaittu" so that the two texts agree.
-- solutions.md:142 (L2-07, model answer) — The model answer still says "d-kvarkki voi muuttua u-kvarkiksi" twice and opens with "Virhe on lähtöoletus". — Give the two errors as two sentences: (1) the neutron is not an elementary particle (udd); (2) "perushiukkanen ⇒ hajoamaton" is false anyway (the muon is elementary and decays). Then say that the conservation laws and Q > 0 decide, and drop the repeated clause.
-- exercises.json:106 (L1-08) — K⁺ = u s̄ repeats the combination in L2-05 row 7. — Use another hadron, or accept it as L1 practice.
-- exercises.json:353 (L3-05) — `answer` is 218.5, but the solution's Vastaus is 218,471 MeV. The tolerance covers both; aligning them is optional.
 
 ## Checked
-- Round 2 pedagogy item (L2-07 distractor feedback): resolved. The feedback no longer contradicts itself. It says the electron is stable, that decay does not depend on being elementary (the muon is elementary but decays; the proton is made of quarks but is stable), and that the conservation laws and Q > 0 decide. This is correct and agrees with the correct option's feedback and with the lesson's account of proton stability (baryon number, the lightest baryon).
-- L2-07 still has exactly one correct option ("kvarkin laji voi muuttua"). The other three distractors and their feedback are unchanged and right.
-- The diff since the round-2 version is this one feedback string, with no numbers. Answers, solutions and answers.py are unchanged from round 2, where I recomputed them.
-- The hash 4efa7f8dc5cb79f0 was the same at the start and at the end.
+- Hash 1f3ea63329b692d8 at the start and at the end. Only the new task L1-09 (true/false statements) was judged.
+- 1 TRUE: uus = 2/3 + 2/3 − 1/3 = +1 e (exact fractions), and three quarks make a baryon (Σ⁺).
+- 2 FALSE: d ū = −1/3 − 2/3 = −1 e (π⁻). The solution's remark that the charges cancel only when they are opposite numbers is correct (it also covers u ū and d s̄).
+- 3 FALSE: the current-quark masses (2·2,2 + 4,7 ≈ 9 MeV) are about 1 % of 938 MeV. "Loppu on vahvan vuorovaikutuksen energiaa" is the lesson's own wording (Yleinen virhekäsitys), a C-level simplification.
+- 4 TRUE: leptons do not feel the strong interaction (glossary "leptoni"). The feedback's "vain muut vuorovaikutukset" is correct.
+- 5 FALSE: β⁻ is d → u + W⁻, and u → d in β⁺. Both match the lesson's section "Beetahajoaminen kvarkkitasolla". The neutron does contain a u quark, so the false statement is plausible.
+- Each feedback's physics is right, and the given quark charges are enough to decide every statement. Scope is within fy8-15, and there is no de Broglie content. Checked from text only.

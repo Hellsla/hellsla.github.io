@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 6702b9fe339ccec9
-Mode: full (translation review against the reviewed Finnish set)
+CONTENT-HASH: a62399de6badd7f8
 Round 1
 
 ## Blocking
@@ -10,10 +9,9 @@ Round 1
 (none)
 
 ## Checked
-- Screenshots fy8-12-open-exercises-*.png (L1, L2, L3) of the new tasks: tables, captions, KaTeX and answer boxes render without clipping or red errors.
-- Numbers and units in text, tables and LaTeX use the decimal comma; units upright with thin spaces.
-- Table captions and column headings translated; units in headers kept as in fi.
-- check_i18n fi-easy: 0 errors; no stray Finnish text.
+- Own scratch script (preview built with build.py, 390 px, task card opened with its answer and solution): opened /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-all-k7q2/fi-easy-fy8-12-L1-09.png (ordering of five shields; 3/5 items marked wrong; Answer and solution open, all of it read) .
+- Changed older tasks (text split into paragraphs or re-set): fi-easy-fy8-12-L3-01.png (top, text paragraphs, solution); opened the top 760 px of each in the contact montages /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-all-k7q2/m-fi-easy-0.png and m-fi-easy-3.png (solution parts below not opened for these).
+- Same checks by script: no horizontal scroll at 390 px, no KaTeX error nodes. The packet's own screenshot list was empty and was not used; answers.py and solutions.md read as source only.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

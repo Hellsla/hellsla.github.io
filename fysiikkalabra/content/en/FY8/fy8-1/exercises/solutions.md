@@ -68,6 +68,29 @@
 **Principle:** Light gives its energy as photons, and one electron absorbs one photon entirely. The electron is released if the photon energy $hf$ is at least equal to the work function $W$. The brightness of the light tells only how many photons arrive, not how much energy a single photon carries.
 **Model answer:** The energy of an ultraviolet photon, $3.40\,\text{eV}$, is greater than the work function of sodium, $2.28\,\text{eV}$, so even one photon is enough to release an electron. That is why electrons are released immediately, even if the light is dim and few photons arrive. The energy of a photon of red light, $1.91\,\text{eV}$, is smaller than the work function, so not a single photon is enough to release an electron. An electron cannot collect energy from the combined effect of several photons or by waiting, so brighter red light only brings more photons with too little energy and releases no electrons.
 
+## fy8-1-L1-09
+**Find:** which of the five statements about the electrons released by lamps A and B are true.
+**Principle:** The energy of light is quantised into photons, and one photon gives all its energy to one electron. An electron is released only if the photon energy $hf$ is at least equal to the work function $W$, and the extra energy remains as kinetic energy: $E_\text{k,max} = hf - W$. The intensity tells only how many photons hit the surface per second.
+**Model answer:** The photon energy of lamp A is enough for release, and the maximum kinetic energy is
+
+$E_\text{k,max} = hf - W$
+
+$E_\text{k,max} = 3.10\,\text{eV} - 2.50\,\text{eV}$
+
+$E_\text{k,max} = 0.60\,\text{eV}$
+
+The photon energy of lamp B, $2.25\,\text{eV}$, is smaller than the work function $2.50\,\text{eV}$.
+
+1 false: not a single photon of lamp B is enough on its own to release an electron, and an electron does not collect energy from several photons. Brighter light only brings more similar photons, so no electrons are released at all.
+
+2 true: the calculation gives $0.60\,\text{eV}$.
+
+3 false: doubling the intensity doubles the number of photons, but the energy of one photon, $3.10\,\text{eV}$, does not change. The maximum kinetic energy stays at $0.60\,\text{eV}$.
+
+4 true: more photons hit the surface per second, so the electrons they release are also more numerous.
+
+5 false: already one photon of lamp A is enough for release, so electrons are released as soon as the light hits the plate, and there is no delay.
+
 ## fy8-1-L2-01
 **Given:** work function of caesium $W = 2.14\,\text{eV}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Find:** the longest wavelength that releases electrons, that is the threshold wavelength $\lambda_0$, in nanometres

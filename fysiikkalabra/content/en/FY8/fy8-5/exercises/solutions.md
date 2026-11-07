@@ -138,6 +138,25 @@
 **Answer:** $14$ electrons; the result is an exact integer, because it is calculated from counts.
 **Reasonableness:** By the same rule, $2 \cdot 1 = 2$ electrons fit in an s subshell, $2 \cdot 3 = 6$ in a p subshell and $2 \cdot 5 = 10$ in a d subshell. In the subshells s, p, d and f of the shell $n = 4$ there is room for $2 + 6 + 10 + 14 = 32$ electrons in total, and this equals $2n^2 = 2 \cdot 4^2 = 32$.
 
+## fy8-5-L1-09
+**Find:** the order of the states A–E by the energy $E_n$ of the electron, from the smallest to the greatest.
+**Principle:** In a hydrogen atom the energy of a state depends only on the principal quantum number $n$, which is the number in the name of the state. The letter tells the shape of the wave, but it does not change the energy of a state of the hydrogen atom. The energies are negative, so the state whose energy has the greatest absolute value has the smallest energy.
+**Model answer:** The energies:
+
+$E_1 = -\tfrac{13.6\,\text{eV}}{1^2} = -13.6\,\text{eV}$ (state B)
+
+$E_2 = -\tfrac{13.6\,\text{eV}}{2^2} = -3.40\,\text{eV}$ (state D)
+
+$E_3 = -\tfrac{13.6\,\text{eV}}{3^2} = -1.51\,\text{eV}$ (state A)
+
+$E_4 = -\tfrac{13.6\,\text{eV}}{4^2} = -0.850\,\text{eV}$ (state C)
+
+$E_5 = -\tfrac{13.6\,\text{eV}}{5^2} = -0.544\,\text{eV}$ (state E)
+
+From the smallest energy to the greatest the order is B, D, A, C, E.
+
+The letter does not allow ordering: the $3\text{d}$ state is lower than the $4\text{s}$ state, because its principal quantum number is smaller. Likewise the $5\text{p}$ state is higher than the $4\text{s}$ state, because its principal quantum number is greater. If the states are ordered by the absolute value of the energy, the order is turned the wrong way round: the $1\text{s}$ state is the most tightly bound, and its energy is the smallest.
+
 ## fy8-5-L2-05
 **Given:** measurements $N = 400$; class width $0.05\,\text{nm}$; counts $k$ of the classes: $118$, $171$, $79$, $23$, $7$ and $2$; radius of the $90\,\%$ boundary $0.14\,\text{nm}$
 **Find:** a) the most common class, b) the share $P$ of the measurements that land at a distance of less than $0.10\,\text{nm}$, as a percentage, c) whether the data fits the $90\,\%$ boundary

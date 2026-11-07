@@ -68,6 +68,27 @@
 **Answer:** $+1\,e$. The result is exact because the charges of the quarks are exact fractions.
 **Reasonableness:** The notation $K^+$ of the kaon tells the charge $+e$, and it agrees. The kaon is a meson, so the fractional parts of the charges of the quark and the antiquark complete each other into a whole number, as for every hadron.
 
+## fy8-15-L1-09
+**Asked:** which of the five statements about quarks, hadrons and interactions are true.
+**Principle:** The charge of a hadron is the sum of the charges of its quarks and antiquarks, and the charge of an antiquark is opposite to that of the quark. A hadron of three quarks is a baryon, and a hadron of a quark and an antiquark is a meson. The strong interaction acts only on quarks, and the weak interaction can change the flavour of a quark.
+**Model answer:** First calculate the charges of two particles. The particle $u\,u\,s$:
+
+$q = +\tfrac{2}{3}e + \tfrac{2}{3}e - \tfrac{1}{3}e = +e$
+
+The meson $d\,\bar{u}$, where the charge of the anti-$u$ quark is $-\tfrac{2}{3}e$:
+
+$q = -\tfrac{1}{3}e - \tfrac{2}{3}e = -e$
+
+1 true: $u\,u\,s$ is a hadron of three quarks, that is a baryon, and its charge is $+e$.
+
+2 false: the charge of the meson $d\,\bar{u}$ is $-e$. The charges of a quark and an antiquark cancel each other only when they are opposites, as in the meson $u\,\bar{u}$.
+
+3 false: the masses of the quarks are only about $1\,\%$ of the mass of the proton. Most of the mass of the proton is the energy of the strong interaction that binds the quarks, $m = \tfrac{E}{c^2}$.
+
+4 true: the electron and the neutrinos are leptons. They are not made of quarks, so the strong interaction does not act on them.
+
+5 false: in beta minus decay the neutron $udd$ changes into the proton $uud$, so one $d$ quark changes into a $u$ quark: $d \to u + W^-$. The change $u \to d$ happens in beta plus decay.
+
 ## fy8-15-L2-01
 **Given:** nucleus ${}^{12}_{6}\text{C}$: atomic number $Z = 6$, mass number $A = 12$; proton $uud$, neutron $udd$
 **Asked:** the number of $d$ quarks $N_d$

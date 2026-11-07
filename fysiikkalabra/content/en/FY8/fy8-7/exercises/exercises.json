@@ -109,6 +109,45 @@
           "feedback": "An atom cannot drop upwards. The upper level is by definition the higher one, and an inversion only means that more atoms have been pumped to it than are on the lower level."
         }
       ]
+    },
+    {
+      "id": "fy8-7-L1-09",
+      "level": 1,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "The wavelength of the light of a red laser pointer is $650\\,\\text{nm}$, and the peak of the spectrum of a red LED is at the same wavelength, $650\\,\\text{nm}$.\n\nQuantum dots A and B are made of the same material. The diameter of dot A is $3\\,\\text{nm}$ and that of dot B is $5\\,\\text{nm}$.\n\nDecide which statements are true and which are false.",
+      "answer": "1 false, 2 true, 3 false, 4 false, 5 true",
+      "unit": "",
+      "tolerance": 0.02,
+      "statements": [
+        {
+          "text": "A photon of $650\\,\\text{nm}$ from the laser pointer has more energy than a photon of $650\\,\\text{nm}$ from the LED.",
+          "true": false,
+          "feedback": "False: here the danger of laser light is mistaken for a great energy of the photon. The energy of a photon depends only on the wavelength, so the energy of both $650\\,\\text{nm}$ photons is $1.91\\,\\text{eV}$. A laser is dangerous because the whole power travels in a narrow beam."
+        },
+        {
+          "text": "Laser light is coherent, because every stimulated photon copies the phase of the photon that caused it.",
+          "true": true,
+          "feedback": "True: a photon produced in stimulated emission has the energy, direction and phase of the incoming photon, so the waves stay in step. The phases of photons produced spontaneously are random."
+        },
+        {
+          "text": "In a two-level material more atoms can be brought to the upper level than to the lower level when there is enough pumping light.",
+          "true": false,
+          "feedback": "False: here it is thought that the strength of the pumping alone decides. With two levels the pumping light causes stimulated emission in atoms of the upper state as probably as it excites atoms of the ground state, so at most half of the atoms can be brought to the upper state. That is why a laser material has at least three levels."
+        },
+        {
+          "text": "Quantum dot A emits light of a longer wavelength than quantum dot B made of the same material.",
+          "true": false,
+          "feedback": "False: here the connection between size and colour is read the wrong way round. In a smaller dot the allowed energies move further apart and the energy gap grows, so dot A ($3\\,\\text{nm}$) emits light of a shorter wavelength than dot B ($5\\,\\text{nm}$)."
+        },
+        {
+          "text": "In a laser only light along the axis between the mirrors is amplified, and it comes out as a beam.",
+          "true": true,
+          "feedback": "True: a photon along the axis travels through the material between the mirrors many times and is multiplied on the way. Photons that go sideways leave the material before they have time to multiply."
+        }
+      ]
     }
   ],
   "level2": [

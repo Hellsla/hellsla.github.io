@@ -169,6 +169,27 @@
 **Answer:** a) The student substituted the wavelength in nanometres instead of metres, so the denominator had $633$ and not $633 \cdot 10^{-9}$, and the energy of the photon came out $10^{9}$ times too small ($3.14 \cdot 10^{-28}\,\text{J}$ instead of the correct $3.14 \cdot 10^{-19}\,\text{J}$). The photon flow therefore came out $10^{9}$ times too large. b) $6.4 \cdot 10^{15}\,\tfrac{1}{\text{s}}$, two significant figures as in the power $2.0\,\text{mW}$.
 **Reasonableness:** The $1\,\text{mW}$ laser pointer of the chapter emits about $3 \cdot 10^{15}$ photons per second, so $2.0\,\text{mW}$ gives about $2 \cdot 3 \cdot 10^{15}\,\tfrac{1}{\text{s}} = 6 \cdot 10^{15}\,\tfrac{1}{\text{s}}$, which agrees with the result. The student's number $6.4 \cdot 10^{24}\,\tfrac{1}{\text{s}}$ would be a billion times this, and already from that one can conclude that it is wrong.
 
+## fy8-4-L2-08
+**Find:** whether the wavelength $\lambda'$ of the scattered photon is longer than, shorter than or equal to the wavelength $\lambda$ of the incoming photon, and which reason explains it.
+**Principle:** In the Compton effect a photon collides with an almost free electron. Energy is conserved, so the energy of the scattered photon is the energy of the incoming photon minus the kinetic energy gained by the electron, $hf = hf' + E_\text{k}$. The energy of a photon is $E = \tfrac{hc}{\lambda}$, so the wavelength is inversely proportional to the energy.
+**Model answer:** The wavelength $\lambda'$ is longer than $\lambda$. The energy of the scattered photon is
+
+$hf' = hf - E_\text{k}$
+
+$hf' = 17.4\,\text{keV} - 0.55\,\text{keV}$
+
+$hf' = 16.85\,\text{keV}$
+
+Because $\lambda = \tfrac{hc}{E}$, the ratio of the wavelengths is the inverse ratio of the energies:
+
+$\dfrac{\lambda'}{\lambda} = \dfrac{hf}{hf'}$
+
+$\dfrac{\lambda'}{\lambda} = \dfrac{17.4\,\text{keV}}{16.85\,\text{keV}} \approx 1.03$
+
+So the wavelength increases by about $3\,\%$. Check with the value $hc = 1240\,\text{eV}\,\text{nm}$: $\lambda \approx 0.0713\,\text{nm}$ and $\lambda' \approx 0.0736\,\text{nm}$.
+
+The correct reason is that the energy of the scattered photon is smaller and the energy of a photon is inversely proportional to its wavelength. If the dependence were read as directly proportional, a smaller energy would wrongly give a shorter wavelength. According to the wave model, the electron would radiate at the same frequency as the incoming radiation, so the wavelength would not change, but Compton measured the wavelength to increase. The momentum of a photon, $p = \tfrac{h}{\lambda}$, is true information, but on its own it does not tell the direction of the change.
+
 ## fy8-4-L3-04
 **Given:** wavelength $\lambda = 532\,\text{nm}$, power of the light arriving at the slits $P = 1.5 \cdot 10^{-15}\,\text{W}$. Of the photons arriving at the slits, $20\,\%$ pass through the slits and hit the area of the detector, and the detector registers $40\,\%$ of the photons that hit it; target $5000$ hits, length of the apparatus $1.5\,\text{m}$; $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^8\,\text{m/s}$
 **Asked:** the time $t$ needed to collect the hits in seconds, the average spacing $d$ of the photons, and a justification of why knowing the path would destroy the stripe pattern
