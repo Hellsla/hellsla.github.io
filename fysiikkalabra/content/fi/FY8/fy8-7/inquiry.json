@@ -96,7 +96,7 @@
         {
           "text": "Enintään puolet, koska pumppausvalo saa ylätilan atomit myös emittoimaan.",
           "correct": true,
-          "feedback": "Mallin arvot tukevat tätä: $33{,}3\\,\\%$, $40{,}0\\,\\%$ ja $45{,}5\\,\\%$. Sama fotoni virittää perustilan atomin tai aiheuttaa viritetyssä atomissa stimuloidun emission yhtä todennäköisesti, joten ylätila ei voi täyttyä alatilaa enemmän. Siksi laseraineessa tarvitaan ainakin kolme tasoa."
+          "feedback": "Mallin arvot tukevat tätä: $33{,}3\\,\\%$, $40{,}0\\,\\%$ ja $45{,}5\\,\\%$. Sama fotoni virittää perustilan atomin tai aiheuttaa viritetyssä atomissa stimuloidun emission yhtä todennäköisesti, joten ylätila ei voi täyttyä alatilaa enemmän. Siksi monissa atomi- ja ionilasereissa käytetään kolmea tai neljää tasoa."
         },
         {
           "text": "Ei yhtään atomia, koska kaksitasoinen atomi ei voi absorboida pumppausvaloa.",

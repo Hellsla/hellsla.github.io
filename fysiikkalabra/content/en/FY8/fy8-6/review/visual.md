@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: d19d24c2d543f15f
+CONTENT-HASH: 37514d449f22d53d
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] Both LED photos (red-led, green-led) sit back to back in the right column; fine, but the two near-identical dark-blue dome photos add little over one.
+- none
 
 ## Checked
-- batch delta review: red-led, green-led and rgb-led photos opened; alt texts match what is visible (chip, bond wire, four legs, coloured glints); captions physically correct and tied to threshold voltage and photon energy; wide layout figure.unit-photo float right 320 px with credit line, 390 px float none, no overflow.
+- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.

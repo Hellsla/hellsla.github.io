@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 4124867e5d7571f6
+CONTENT-HASH: 10f9ed8b56b4a356
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- batch delta review: the Luvun tärkeät käsitteet list with the new *efektiivinen annos* explanation captured at 360 and 390 px: short plain sentences, consistent with the lesson's own answer text ("pienten annosten … syöpäriskiä keskimääräiselle ihmiselle"), nothing clipped; check_layout 360 OK.
+- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.

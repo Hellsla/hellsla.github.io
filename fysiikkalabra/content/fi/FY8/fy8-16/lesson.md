@@ -281,7 +281,7 @@ Jos galaksit loittonevat toisistaan nyt, ne olivat menneisyydessä lähempänä 
 Ensimmäisten sekuntien jälkeen maailmankaikkeudessa oli protoneja, neutroneja, elektroneja, fotoneja ja neutriinoja. Noin kolmen minuutin kuluttua lämpötila oli laskenut miljardiin kelviniin, ja protonit ja neutronit alkoivat yhtyä fuusiossa ytimiksi (luku *Fissio, fuusio ja ydinvoima*). Lähes kaikki neutronit päätyivät helium-4-ytimiin, koska niiden sidosenergia nukleonia kohti on kevyistä ytimistä suurin (luku *Massavaje ja ytimen sidosenergia*). Neutroneja oli tällöin noin yksi seitsemää protonia kohti. Siksi noin $25\,\%$ massasta päätyi heliumiksi ja noin $75\,\%$ jäi vedyksi, eli yksittäisiksi protoneiksi. Noin $20$ minuutin kuluttua maailmankaikkeus oli jo liian kylmä ja harva fuusiolle, joten raskaampia alkuaineita syntyi vain hivenen. Vanhimpien tähtien ja kaasupilvien havaittu heliumin osuus on juuri tätä luokkaa.
 
 ### Kosminen taustasäteily
-Ytimet eivät heti saaneet elektroneja ympärilleen. Fotonien energia oli niin suuri, että ne ionisoivat jokaisen syntyvän atomin, ja vapaat elektronit sirottivat fotoneja joka suuntaan: maailmankaikkeus oli kuin hehkuvaa sumua. Noin $380\,000$ vuoden kuluttua lämpötila oli laskenut noin $3000\,\text{K}$:iin. Silloin fotoneja, joiden energia riittää vetyatomin ionisoimiseen eli on vähintään $13{,}6\,\text{eV}$ (luku *Vetyatomin energiatasot ja Bohrin malli*), ei enää ollut tarpeeksi. Elektronit sitoutuivat ytimiin atomeiksi, ja koska atomi absorboi vain energiatasojensa erotusta vastaavia fotoneja, maailmankaikkeus muuttui läpinäkyväksi.
+Ytimet eivät heti saaneet elektroneja ympärilleen. Fotonien energia oli niin suuri, että ne ionisoivat jokaisen syntyvän atomin, ja vapaat elektronit sirottivat fotoneja joka suuntaan: maailmankaikkeus oli kuin hehkuvaa sumua. Noin $380\,000$ vuoden kuluttua lämpötila oli laskenut noin $3000\,\text{K}$:iin. Silloin fotoneja, joiden energia riittää vetyatomin ionisoimiseen eli on vähintään $13{,}6\,\text{eV}$ (luku *Vetyatomin energiatasot ja Bohrin malli*), ei enää ollut tarpeeksi. Protonit ja elektronit pystyivät muodostamaan pysyviä vetyatomeja, ja vapaiden elektronien määrä pieneni voimakkaasti. Fotonit olivat aiemmin sironneet jatkuvasti vapaista elektroneista (Thomsonin sironta). Sironnan harveneminen teki maailmankaikkeudesta läpinäkyvän sille säteilylle, jonka havaitsemme nykyisin kosmisena mikroaaltotaustana: fotonit pääsivät etenemään pitkiä matkoja törmäilemättä.
 
 Tuolloin vapautunut valo on yhä matkalla. Laajeneminen on venyttänyt sen aallonpituudet noin $1100$-kertaisiksi, joten nyt se on mikroaaltoja, joiden tyypillinen aallonpituus on noin $1{,}06\,\text{mm}$. Tämä on **kosminen taustasäteily**. Arno Penzias ja Robert Wilson löysivät sen vuonna 1965. Sitä tulee joka suunnasta lähes tasaisesti, ja sen spektri vastaa kappaletta, jonka lämpötila on $2{,}725\,\text{K}$.
 
@@ -425,7 +425,7 @@ v = c\,z
 missä $v$ on etääntymisnopeus ja $c = 2{,}998 \cdot 10^{5}\,\text{km/s}$ valon nopeus. Esimerkiksi punasiirtymä $z = 0{,}010$ tarkoittaa nopeutta $v = 2{,}998 \cdot 10^{5}\,\text{km/s} \cdot 0{,}010 \approx 3000\,\text{km/s}$. Hyvin kaukaisille galakseille, joiden punasiirtymä on suuri, yhtälö ei enää päde.
 
 ### Hubblen ja Lemaîtren laki
-Galaksien etäisyyksiä mitataan **megaparsekeina**: $1\,\text{Mpc} = 3{,}086 \cdot 10^{22}\,\text{m}$, eli valo kulkee megaparsekin noin $3{,}26$ miljoonassa vuodessa. Galaksin etääntymisnopeus on suoraan verrannollinen sen etäisyyteen:
+Galaksien etäisyyksiä mitataan **megaparsekeina**: $1\,\text{Mpc} = 3{,}086 \cdot 10^{22}\,\text{m}$, eli valo kulkee megaparsekin noin $3{,}26$ miljoonassa vuodessa. Galaksin etääntymisnopeus on nykyhetkellä suoraan verrannollinen sen etäisyyteen:
 ```latex
 v = H_0\,d
 ```
@@ -489,12 +489,12 @@ missä $v$ on etääntymisnopeus, $d$ galaksin etäisyys ja $H_0$ **Hubblen vaki
   <foreignObject x="470" y="49.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$v = H_0\,d$</div></foreignObject>
 </svg>
 
-### Maailmankaikkeuden ikä
-Jos galaksi on liikkunut koko ajan nopeudella $v = H_0\,d$, se on ollut samassa paikassa kuin me ajan $t = \tfrac{d}{v}$ sitten. Sijoitetaan Hubblen ja Lemaîtren laki:
+### Syventävä: maailmankaikkeuden ikä Hubblen vakiosta
+Maailmankaikkeuden ikää voi arvioida karkeasti olettamalla, että galaksien nykyiset etääntymisnopeudet kuvaavat koko laajenemishistoriaa. Jos galaksi on liikkunut koko ajan nopeudella $v = H_0\,d$, se on ollut samassa paikassa kuin me ajan $t = \tfrac{d}{v}$ sitten. Sijoitetaan Hubblen ja Lemaîtren laki:
 ```latex
 t = \frac{d}{v} = \frac{d}{H_0\,d} = \frac{1}{H_0}
 ```
-Etäisyys supistuu pois, joten aika on sama kaikille galakseille. Arvolla $H_0 = 70\,\tfrac{\text{km/s}}{\text{Mpc}}$, kun megaparsekin paikalle sijoitetaan $1\,\text{Mpc} = 3{,}086 \cdot 10^{19}\,\text{km}$ ja vuoden paikalle $1\,\text{a} = 3{,}156 \cdot 10^{7}\,\text{s}$:
+Etäisyys supistuu pois, joten aika on sama kaikille galakseille. Tätä aikaa kutsutaan **Hubblen ajaksi**. Arvolla $H_0 = 70\,\tfrac{\text{km/s}}{\text{Mpc}}$, kun megaparsekin paikalle sijoitetaan $1\,\text{Mpc} = 3{,}086 \cdot 10^{19}\,\text{km}$ ja vuoden paikalle $1\,\text{a} = 3{,}156 \cdot 10^{7}\,\text{s}$:
 ```latex
 \begin{aligned}
 &t = \frac{1}{H_0} \\
@@ -505,7 +505,7 @@ Etäisyys supistuu pois, joten aika on sama kaikille galakseille. Arvolla $H_0 =
 &\approx 1{,}4 \cdot 10^{10}\,\text{a}
 \end{aligned}
 ```
-Arvio on noin $14$ miljardia vuotta, lähellä tarkempaa arvoa $13{,}8$ miljardia vuotta. Arvio ei ole tarkka, koska laajenemisnopeus ei ole ollut koko ajan sama: ensin painovoima hidasti laajenemista, ja viimeiset miljardit vuodet pimeä energia on kiihdyttänyt sitä.
+Hubblen aika on noin $14$ miljardia vuotta. Se antaa oikean suuruusluokan maailmankaikkeuden iälle mutta ei tarkkaa ikää, koska laajenemisnopeus on muuttunut maailmankaikkeuden historian aikana: ensin painovoima hidasti laajenemista, ja viimeiset miljardit vuodet pimeä energia on kiihdyttänyt sitä. Tarkempi arvo, $13{,}8$ miljardia vuotta, saadaan taustasäteilyn mittauksista ja laajenemismallista.
 
 ## Esimerkki
 Galaksin spektrissä vedyn punainen $\text{H}\alpha$-viiva, jonka aallonpituus laboratoriossa on $656{,}3\,\text{nm}$, näkyy aallonpituudella $679{,}3\,\text{nm}$. Galaksin etäisyys on mitattu muulla tavalla, ja se on $150\,\text{Mpc}$. Laske galaksin etääntymisnopeus ja sen avulla Hubblen vakion arvo.
@@ -565,8 +565,8 @@ Toinen virhe on ajatella, että punasiirtymä tarkoittaa galaksin olevan värilt
 ## Tiivistelmä
 - Kaukaisten galaksien spektriviivat ovat siirtyneet pidempiin aallonpituuksiin. Punasiirtymä on $z = \tfrac{\Delta\lambda}{\lambda_0}$, ja pienellä punasiirtymällä etääntymisnopeus on $v = cz$.
 - Hubblen ja Lemaîtren lain mukaan $v = H_0\,d$, missä $H_0 \approx 70\,\tfrac{\text{km/s}}{\text{Mpc}}$. Avaruus laajenee, eikä laajenemisella ole keskipistettä.
-- Maailmankaikkeuden iän arvio on $\tfrac{1}{H_0} \approx 14$ miljardia vuotta; tarkempi arvo on $13{,}8$ miljardia vuotta.
+- Syventävä: Hubblen aika $\tfrac{1}{H_0} \approx 14$ miljardia vuotta antaa maailmankaikkeuden iän suuruusluokan; tarkempi arvo on $13{,}8$ miljardia vuotta.
 - Alkuräjähdyksen ensimmäisten minuuttien fuusiossa noin $25\,\%$ massasta muuttui heliumiksi ja loput jäi vedyksi.
-- Kosminen taustasäteily vapautui, kun maailmankaikkeus jäähtyi noin $3000\,\text{K}$:iin ja atomit syntyivät; laajeneminen on venyttänyt sen mikroaalloiksi, joiden lämpötila on $2{,}725\,\text{K}$.
+- Kosminen taustasäteily vapautui, kun maailmankaikkeus jäähtyi noin $3000\,\text{K}$:iin, atomit syntyivät ja fotoneja sirottavia vapaita elektroneja ei enää juuri ollut; laajeneminen on venyttänyt sen mikroaalloiksi, joiden lämpötila on $2{,}725\,\text{K}$.
 - Tähdet fuusioivat alkuaineita rautaan asti, ja raskaammat syntyvät neutronisieppauksessa supernovissa ja neutronitähtien törmäyksissä.
 - Tavallista ainetta on vain noin $5\,\%$ maailmankaikkeuden energiasisällöstä; pimeä aine ja pimeä energia ovat yhä avoimia kysymyksiä.

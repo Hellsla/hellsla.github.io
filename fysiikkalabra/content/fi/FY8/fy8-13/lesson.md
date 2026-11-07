@@ -375,7 +375,7 @@ Elimen tai kudoksen $\text{T}$ ekvivalenttiannos ottaa huomioon säteilylajin:
 ```latex
 H_\text{T} = w_\text{R} D_\text{T}
 ```
-missä $H_\text{T}$ on kudoksen ekvivalenttiannos ($\text{Sv}$), $w_\text{R}$ säteilyn painotuskerroin (paljas luku) ja $D_\text{T}$ kudoksen absorboitunut annos ($\text{Gy}$). Painotuskerroin kertoo, kuinka moninkertaisesti säteilylaji vaurioittaa soluja samalla absorboituneella annoksella kuin gammasäteily. Neutronien kerroin riippuu niiden energiasta.
+missä $H_\text{T}$ on kudoksen ekvivalenttiannos ($\text{Sv}$), $w_\text{R}$ säteilyn painotuskerroin (paljas luku) ja $D_\text{T}$ kudoksen absorboitunut annos ($\text{Gy}$). Painotuskerroin on säteilysuojelussa sovittu pyöristetty arvo. Se kuvaa, kuinka paljon haitallisempi säteilylaji on samalla absorboituneella annoksella kuin gammasäteily, mutta se ei ole tarkka mitattu vaurioiden suhde jokaisessa solussa. Neutronien kerroin riippuu niiden energiasta.
 
 | Säteilylaji | $w_\text{R}$ |
 | --- | --- |
@@ -468,7 +468,7 @@ Kudosten painotuskertoimet ovat:
 - $0{,}04$ kukin: virtsarakko, ruokatorvi, maksa ja kilpirauhanen
 - $0{,}01$ kukin: luun pinta, aivot, sylkirauhaset ja iho
 
-Painotuskertoimet ovat Kansainvälisen säteilysuojelutoimikunnan ICRP:n suosituksesta vuodelta 2007, ja ne ovat myös Suomen säteilylainsäädännön perusta. Kudosten kertoimien summa on $1$, joten kun koko keho saa saman ekvivalenttiannoksen, efektiivinen annos on yhtä suuri kuin se. Efektiivinen annos on tarkoitettu pienille annoksille. Suurten kerta-annosten välittömiä vaikutuksia, kuten säteilysairautta, arvioidaan absorboituneella annoksella grayna.
+Painotuskertoimet ovat Kansainvälisen säteilysuojelutoimikunnan ICRP:n suosituksesta vuodelta 2007, ja ne ovat myös Suomen säteilylainsäädännön perusta. Kudosten kertoimien summa on $1$, joten kun koko keho saa saman ekvivalenttiannoksen, efektiivinen annos on yhtä suuri kuin se. Efektiivinen annos on säteilysuojelun suure, joka on laskettu sovitulle keskimääräiselle ihmiselle ja tarkoitettu pienille annoksille. Sillä verrataan altistuksia ja valvotaan annosrajoja, mutta se ei ole yksittäisen ihmisen tarkka riskiarvio, eikä sillä suunnitella sädehoitoa. Suurten kerta-annosten välittömiä vaikutuksia, kuten säteilysairautta, arvioidaan absorboituneella annoksella grayna.
 
 ### Annosnopeus ja aika
 Säteilymittari näyttää yleensä **annosnopeuden** $\dot{H}$ eli annoksen aikayksikössä, esimerkiksi yksikössä $\mu\text{Sv/h}$. Kun annosnopeus pysyy vakiona, ajassa $t$ kertyy annos
@@ -619,7 +619,7 @@ H_\text{E} = w_\text{T} w_\text{R} \frac{E}{m}
 
 <!-- vaihe -->
 
-**Järkevyys.** Absorboitunut annos on vain noin $1{,}7\,\text{mGy}$, mutta alfasäteilyn kerroin $20$ kasvattaa keuhkojen ekvivalenttiannoksen noin $33\,\text{mSv}$:iin, ja kerroin $0{,}12$ pienentää sen efektiiviseksi annokseksi, joka kuvaa koko kehon säteilyhaittaa. Tulos on samaa suuruusluokkaa kuin suomalaisen keskimääräinen radonannos, noin $4\,\text{mSv}$ vuodessa. Esimerkki käsitteli annoksen painotusta; seuraavassa tehtävässä annosta pienennetään ajalla, etäisyydellä ja suojalla.
+**Järkevyys.** Absorboitunut annos on vain noin $1{,}7\,\text{mGy}$, mutta alfasäteilyn kerroin $20$ kasvattaa keuhkojen ekvivalenttiannoksen noin $33\,\text{mSv}$:iin, ja kerroin $0{,}12$ pienentää sen efektiiviseksi annokseksi, joka kuvaa koko kehon säteilyhaittaa. Tasainen jakautuminen on karkea mallioletus: todellisuudessa alfahiukkaset absorboituvat hengitysteiden pinnan ohueen solukerrokseen. Tulos on samaa suuruusluokkaa kuin suomalaisen keskimääräinen radonannos, noin $4\,\text{mSv}$ vuodessa. Esimerkki käsitteli annoksen painotusta; seuraavassa tehtävässä annosta pienennetään ajalla, etäisyydellä ja suojalla.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että luonnon säteily on vaaratonta ja vain ihmisen tuottama säteily on vaarallista. Elimistö ei kuitenkaan erota, tuleeko alfahiukkanen kellarin radonista vai laboratorion lähteestä: säteilyn alkuperä ei sinänsä määrää sen vaarallisuutta. Efektiivisen annoksen avulla voidaan vertailla altistuksia ja arvioida säteilyhaittoja, mutta sama efektiivinen annos ei takaa täsmälleen samaa yksilöllistä riskiä. Suomalaisen suurin annos tulee luonnon radonista, ja siksi radonin mittaaminen ja korjaaminen on tehokkain tapa pienentää omaa säteilyannosta.

@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 45ac0575dbe6b9c7
+CONTENT-HASH: 04da912ff11c958c
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- The heading on the link to chemistry orbitals is not marked as an extension although the detailed counting exercises are.
 
 ## Checked
-- batch delta review (scope: the diff only, by the teacher's ruling): meta goal now "orbitaali elektronin kvanttitilana ja sen kuva alueena, jossa todennäköisyys ylittää kynnysarvon" — matches lesson.md:273–274 and Tiivistelmä :1442 (orbitaali kuvaa kvanttitilaa, havainnollistetaan valitun todennäköisyyden alueella) and keeps the orbital-is-not-an-orbit point of :1437; physics right; hash equal at start and end.
+- Word-level diff since origin/main of this part checked for physics: values, units and significant figures, definitions (gamma decay, beta atomic masses, Hubble time, w_R and effective dose scope, conservation of B and L, photon interactions, ITER and Onkalo facts), worked solutions recomputed where numbers changed; formulas identical across languages (check_i18n).

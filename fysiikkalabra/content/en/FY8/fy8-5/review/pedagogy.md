@@ -1,14 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 3dba5186ee293e46
-Scope: the diff since my last PASS (base 0e2116304, hash e43ea85aaa4a9edf), not a full review: the packet says full (reason: meta goals changed), but the teacher ruled "katselmoi vain muuttuneet osat". The only change is meta.json goal 2 (Clarification).
+CONTENT-HASH: 7874b81a3deef5d7
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- The heading on the link to chemistry orbitals is not marked as an extension although the detailed counting exercises are.
 
 ## Checked
-- "an orbital as a quantum state of the electron, pictured as a region where the probability exceeds a threshold" matches the fi goal and the lesson's distinction between the state and its picture; natural English.
-- The goal is not student-facing on the page (only the first goal is a fallback description); no other file changed.
-- Hash unchanged at start and end.
+- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.

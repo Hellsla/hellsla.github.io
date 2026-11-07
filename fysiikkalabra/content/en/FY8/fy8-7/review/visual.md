@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 8fc2a5381f0425b2
+CONTENT-HASH: 5318e9526d309a04
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] fy8-7 He-Ne caption: 'the mirrors at the ends of the tube amplify the light' is imprecise; the gas amplifies, the mirrors give the feedback. Suggest 'the gas amplifies the light and the mirrors at the ends of the tube make it a narrow red beam'.
-- [Minor] He-Ne alt: the visible red glow is on a small red-lit holder at the left, not clearly light from the box's end; say 'a small red-lit holder at its left end'.
-- [Minor] He-Ne photo sits just before 'Applications of quantum structures', so at 1280 px it floats beside the quantum-dot text, not the laser theory; consider moving it earlier.
+- none
 
 ## Checked
-- batch delta review: helium-neon-laser and rgb-laser-pointer photos opened; RGB beams caption correct (scattering makes beams visible, blue photon most energy); float and 390 px layout fine, no overflow.
+- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.

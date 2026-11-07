@@ -135,7 +135,7 @@
 
 ## fy8-16-L1-08
 **Asked:** where the almost uniform radiation of the cosmic background radiation, arriving from every direction, comes from.
-**Principle:** About $380\,000$ years after the Big Bang, atoms formed and the universe became transparent, so the radiation could travel freely. It arrives from every direction because the hot, dense universe was the same everywhere. The expansion has since stretched its wavelengths about $1100$-fold, so the radiation is now microwaves with a temperature of $2.725\,\text{K}$.
+**Principle:** About $380\,000$ years after the Big Bang, protons and electrons formed atoms. The photons no longer scattered continuously from free electrons, so the universe became transparent and the radiation could travel freely. It arrives from every direction because the hot, dense universe was the same everywhere. The expansion has since stretched its wavelengths about $1100$-fold, so the radiation is now microwaves with a temperature of $2.725\,\text{K}$.
 **Model answer:** The background radiation is radiation that was released when atoms formed, and the expansion of space has stretched it into microwaves. It is not the light of stars and galaxies, because they are only in certain directions and formed only after the background radiation was released. Nor is it radiation from dark matter, because dark matter does not emit radiation. Supernovae do not explain it, because they are individual events and do not produce almost exactly the same radiation from every direction.
 
 ## fy8-16-L2-05

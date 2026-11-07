@@ -1331,7 +1331,7 @@ Vetyatomissa tilan energia riippuu vain pääkvanttiluvusta $n$. Aaltomalli anta
 ```latex
 E_n = -\frac{13{,}6\,\text{eV}}{n^2}
 ```
-missä $E_n$ on elektronin energia (eV) kuorella $n = 1, 2, 3, \ldots$ Samaan pääkvanttilukuun kuuluvat tilat muodostavat elektronikuoren. Kuorella $n$ on $n$ alikuorta: s, p, d ja f. Alikuori on kuoren osa, jossa orbitaaleilla on sama muoto. Niissä on $1$, $3$, $5$ ja $7$ orbitaalia. Kuoren orbitaalien määrä on siksi $n^2$.
+missä $E_n$ on elektronin energia (eV) kuorella $n = 1, 2, 3, \ldots$ Samaan pääkvanttilukuun kuuluvat tilat muodostavat elektronikuoren. Kuorella, jonka pääkvanttiluku on $n$, on $n$ alikuorta. Alikuori on kuoren osa, jossa orbitaaleilla on sama muoto. Ensimmäiset alikuoret merkitään kirjaimilla s, p, d ja f. Niissä on $1$, $3$, $5$ ja $7$ orbitaalia. Kun pääkvanttiluku on suurempi kuin neljä, alikuoria on enemmän. Kuoren kaikkien orbitaalien määrä on $n^2$.
 
 Alikuoren orbitaalien määrä riippuu aallon muodosta. s-orbitaali on pallo, joten sitä voi olla vain yksi. p-orbitaalin lohkopari voi osoittaa kolmeen suuntaan, jotka ovat kohtisuorassa toisiaan vastaan ($x$, $y$ ja $z$). Siksi p-orbitaaleja on kolme. Tämän luvun kuvissa näkyy niistä yksi, jonka lohkot ovat pystysuunnassa. Alikuorilla d ja f on vastaavasti viisi ja seitsemän erilaista orbitaalia.
 

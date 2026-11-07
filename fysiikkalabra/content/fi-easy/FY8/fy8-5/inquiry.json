@@ -251,7 +251,7 @@
       "id": "virhe",
       "stage": "sovella",
       "type": "choice",
-      "title": "Etsi virhe",
+      "title": "Syventävä: etsi virhe",
       "optional": true,
       "prompt": "Opiskelija laskee, kuinka monta elektronia mahtuu kuorelle $n = 3$: ”Kuorella on kolme alikuorta, $3\\text{s}$, $3\\text{p}$ ja $3\\text{d}$. Se tarkoittaa kolmea orbitaalia. Kullekin mahtuu kaksi elektronia, joten kuorelle mahtuu $6$ elektronia.” Missä on virhe?",
       "choices": [

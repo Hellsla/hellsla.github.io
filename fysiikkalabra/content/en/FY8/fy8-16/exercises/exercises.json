@@ -104,7 +104,7 @@
         },
         {
           "text": "It is radiation that was released when atoms formed, and the expansion has stretched it into microwaves.",
-          "feedback": "Correct: about $380\\,000$ years after the Big Bang, atoms formed and the universe became transparent. The radiation released then arrives from every direction, and the expansion has stretched its wavelength into microwaves.",
+          "feedback": "Correct: about $380\\,000$ years after the Big Bang, atoms formed, the free electrons that scattered photons almost disappeared and the universe became transparent. The radiation released then arrives from every direction, and the expansion has stretched its wavelength into microwaves.",
           "correct": true
         },
         {
@@ -118,6 +118,7 @@
     {
       "id": "fy8-16-L2-01",
       "level": 2,
+      "core": true,
       "text": "The wavelength of the $\\text{H}\\alpha$ line of hydrogen in the laboratory is $656.3\\,\\text{nm}$. In the spectrum of a galaxy the line appears at a wavelength of $671.0\\,\\text{nm}$. How far away is the galaxy, when the Hubble constant is $H_0 = 70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$ and the speed of light $c = 2.998 \\cdot 10^{5}\\,\\text{km/s}$? Give the answer in megaparsecs.",
       "answer": 95.9,
       "unit": "Mpc",
@@ -126,8 +127,8 @@
     {
       "id": "fy8-16-L2-02",
       "level": 2,
-      "core": true,
-      "text": "The value of the Hubble constant obtained from the Planck satellite's measurements of the background radiation is $H_0 = 67.4\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$. Estimate the age of the universe, assuming that the speed of the expansion has stayed the same. Use $1\\,\\text{Mpc} = 3.086 \\cdot 10^{19}\\,\\text{km}$ and $1\\,\\text{a} = 3.156 \\cdot 10^{7}\\,\\text{s}$. Give the answer in the unit $10^{9}\\,\\text{a}$, that is, in billions of years.",
+      "core": false,
+      "text": "Extension task.\n\nThe value of the Hubble constant obtained from the Planck satellite's measurements of the background radiation is $H_0 = 67.4\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$. Estimate the age of the universe, assuming that the speed of the expansion has stayed the same. Use $1\\,\\text{Mpc} = 3.086 \\cdot 10^{19}\\,\\text{km}$ and $1\\,\\text{a} = 3.156 \\cdot 10^{7}\\,\\text{s}$. Give the answer in the unit $10^{9}\\,\\text{a}$, that is, in billions of years.",
       "answer": 14.51,
       "unit": "10⁹ a",
       "tolerance": 0.02

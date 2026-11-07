@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 4124867e5d7571f6
+CONTENT-HASH: 10f9ed8b56b4a356
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- batch delta review: scope was the diff only (teacher: "katselmoi vain muuttuneet osat"): meta.json term "efektiivinen annos" now "Sillä arvioidaan pienten annosten syöpäriskiä keskimääräiselle ihmiselle." Plain language is good: one short sentence, everyday words, no new term; it replaces the overstated "kuvaa koko kehon syöpäriskiä" and now agrees with lesson.md:300 ("keskimääräisen ihmisen riskiä, ei kenenkään oman riskin") and the glossary definition. Hash unchanged at start and end.
+- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.

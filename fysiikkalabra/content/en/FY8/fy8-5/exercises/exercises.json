@@ -3,8 +3,8 @@
     {
       "id": "fy8-5-L1-01",
       "level": 1,
-      "core": true,
-      "text": "In heavy elements the electrons are in shells farther and farther out. What is the greatest number of electrons that fit in the shell $n = 5$?",
+      "core": false,
+      "text": "Extension task.\n\nIn heavy elements the electrons are in shells farther and farther out. What is the greatest number of electrons that fit in the shell $n = 5$?",
       "answer": 50,
       "unit": "electrons",
       "tolerance": 0.02
@@ -20,6 +20,7 @@
     {
       "id": "fy8-5-L1-03",
       "level": 1,
+      "core": true,
       "text": "The position of the $1\\text{s}$ electron of a hydrogen atom is measured $3000$ times, and the $90\\,\\%$ boundary of the $1\\text{s}$ orbital is drawn in the picture. How many measurements do you expect to land outside the boundary?",
       "answer": 300,
       "unit": "hits",
@@ -44,6 +45,7 @@
     {
       "id": "fy8-5-L1-06",
       "level": 1,
+      "core": true,
       "text": "In the Bohr model the electron orbits the nucleus on a precisely determined circular path. In the wave-mechanical model of the atom, the ground state of the hydrogen atom is described by the $1\\text{s}$ orbital. What is the essential difference between an orbital and a Bohr orbit?",
       "kind": [
         "concept"
@@ -104,7 +106,8 @@
     {
       "id": "fy8-5-L1-08",
       "level": 1,
-      "text": "An electron has spin, so at most two electrons can be in one orbital. What is the greatest number of electrons that fit in the $4\\text{f}$ subshell?",
+      "core": false,
+      "text": "Extension task.\n\nAn electron has spin, so at most two electrons can be in one orbital. What is the greatest number of electrons that fit in the $4\\text{f}$ subshell?",
       "kind": [
         "concept"
       ],
@@ -156,7 +159,8 @@
     {
       "id": "fy8-5-L2-02",
       "level": 2,
-      "text": "An argon atom has $18$ electrons, and in the ground state they fill the orbitals in the order $1\\text{s}$, $2\\text{s}$, $2\\text{p}$, $3\\text{s}$, $3\\text{p}$. How many electrons are in the outermost shell of argon?",
+      "core": false,
+      "text": "Extension task.\n\nAn argon atom has $18$ electrons, and in the ground state they fill the orbitals in the order $1\\text{s}$, $2\\text{s}$, $2\\text{p}$, $3\\text{s}$, $3\\text{p}$. How many electrons are in the outermost shell of argon?",
       "answer": 8,
       "unit": "electrons",
       "tolerance": 0.02
@@ -273,7 +277,8 @@
     {
       "id": "fy8-5-L3-01",
       "level": 3,
-      "text": "An ultraviolet photon with a wavelength of $97.3\\,\\text{nm}$ hits a hydrogen atom in the ground state, and the atom absorbs it. How many orbitals does the shell to which the electron moves have?",
+      "core": false,
+      "text": "Extension task.\n\nAn ultraviolet photon with a wavelength of $97.3\\,\\text{nm}$ hits a hydrogen atom in the ground state, and the atom absorbs it. How many orbitals does the shell to which the electron moves have?",
       "answer": 16,
       "unit": "orbitals",
       "tolerance": 0.02
@@ -281,7 +286,8 @@
     {
       "id": "fy8-5-L3-02",
       "level": 3,
-      "text": "In light atoms, the electrons fill the orbitals in the ground state in the order $1\\text{s}$, $2\\text{s}$, $2\\text{p}$, $3\\text{s}$, $3\\text{p}$, and at most two electrons fit in each orbital. In an atom of a certain element the $3\\text{p}$ subshell is exactly half full. How many electrons does the atom have?",
+      "core": false,
+      "text": "Extension task.\n\nIn light atoms, the electrons fill the orbitals in the ground state in the order $1\\text{s}$, $2\\text{s}$, $2\\text{p}$, $3\\text{s}$, $3\\text{p}$, and at most two electrons fit in each orbital. In an atom of a certain element the $3\\text{p}$ subshell is exactly half full. How many electrons does the atom have?",
       "answer": 15,
       "unit": "electrons",
       "tolerance": 0.02

@@ -1,16 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: cba4f71f0f3aefc0
-Mode: translation
+CONTENT-HASH: ddbe8e2dcd6bbc03
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- fy8-5-L1-09 (en): situation first, question last as its own sentence, options and feedback keep the misconception each wrong option carries, as in fi.
-- Each feedback names the specific error and repairs it; none gives the answer before the student commits.
-- Solution can be followed step by step (Kysytty, Periaate, Mallivastaus) and matches fi.
-- English decimal point used, wording natural English.
-- Hash cba4f71f0f3aefc0 at start and end.
+- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.

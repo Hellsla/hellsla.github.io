@@ -1,6 +1,6 @@
 # The photoelectric effect and the photon
 
-> **Why** does even weak ultraviolet light release electrons from a zinc plate, while bright red light does not release a single one?
+> **Why** does even weak short-wavelength ultraviolet light release electrons from a zinc plate, while bright red light does not release a single one?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: on a laboratory bench there are two glass-domed electroscopes with a shiny zinc plate on top of each. Above the left one a small ultraviolet lamp glows violet, small blue electrons fly from the plate and the leaves of the electroscope hang down. Above the right one a large red lamp shines brightly, but no electrons are released and the leaves of the electroscope are still apart." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy81h-table" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy81h-zinc" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a96a3"/><stop offset="0.3" stop-color="#ffffff"/><stop offset="0.65" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><radialGradient id="fy81h-uvglow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#b9a5f5"/><stop offset="0.55" stop-color="#7048e8" stop-opacity="0.8"/><stop offset="1" stop-color="#7048e8" stop-opacity="0"/></radialGradient><radialGradient id="fy81h-redglow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ffb3a8"/><stop offset="0.55" stop-color="#db0000" stop-opacity="0.8"/><stop offset="1" stop-color="#db0000" stop-opacity="0"/></radialGradient></defs>
@@ -77,7 +77,7 @@
 ## Key idea
 
 ### Light releases electrons from a metal
-When a negatively charged zinc plate is illuminated with ultraviolet light, the plate quickly loses its charge: the light releases electrons from the surface of the plate. This phenomenon is called the **photoelectric effect**. A metal contains many electrons that move freely inside it but cannot leave through its surface on their own. The smallest energy needed to release an electron from a metal is called the **work function** $W$. It depends on the metal: for sodium it is about $2.3\,\text{eV}$ and for zinc about $4.3\,\text{eV}$. The unit electronvolt is introduced at the end of this chapter.
+When a negatively charged zinc plate is illuminated with ultraviolet radiation of short enough wavelength, the plate quickly loses its charge: the radiation releases electrons from the surface of the plate. This phenomenon is called the **photoelectric effect**. A metal contains many electrons that move freely inside it but cannot leave through its surface on their own. The smallest energy needed to release an electron from a metal is called the **work function** $W$. It depends on the metal: for sodium it is about $2.3\,\text{eV}$ and for zinc about $4.3\,\text{eV}$. The unit electronvolt is introduced at the end of this chapter.
 
 <svg data-fig="ilmio" viewBox="0 0 600 340" role="img" aria-label="Schematic figure, not to scale: a horizontal zinc plate at the bottom of the figure. On the left, four photons of red light, wavelength 650 nanometres, hit the plate, drawn as wavy arrows labelled hf. No electrons are released from the plate. On the right, only two photons of ultraviolet light, wavelength 254 nanometres, hit the plate, and from the point of impact of each one a blue electron, e minus, leaves with a velocity arrow, v with a bar above it, pointing up and to the right. A vertical dashed line separates the two situations." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy81-zinc" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a96a3"/><stop offset="0.3" stop-color="#ffffff"/><stop offset="0.65" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient></defs>
@@ -256,6 +256,11 @@ where $hf$ is the photon energy, $W$ is the work function of the metal and $E_\t
 
 When the equation is written in the form $E_\text{k,max} = hf - W$, it is the equation of a straight line: the maximum kinetic energy grows steadily with the frequency, and the slope of the line is the Planck constant $h$ for all metals. The lines of different metals are therefore parallel, and each starts on the horizontal axis at the threshold frequency of its metal. Robert Millikan measured such lines in 1916 and obtained the Planck constant from the slope. The intensity of the light does not appear in the equation at all.
 
+### Zinc needs short-wavelength ultraviolet
+The threshold frequency corresponds to the **threshold wavelength** $\lambda_0 = hc : W$: radiation of longer wavelength does not release electrons. Electrons are released from zinc only if the photon energy of the radiation exceeds the work function of zinc. With the work function $4.31\,\text{eV}$ the threshold wavelength is $\lambda_0 \approx 1240\,\text{eV}\,\text{nm} : 4.31\,\text{eV} \approx 288\,\text{nm}$. For example, an ordinary $365\,\text{nm}$ UV-A lamp is therefore not enough, but ultraviolet radiation of short enough wavelength, such as $254\,\text{nm}$ UV-C, can release electrons. The experiment works best with a freshly polished zinc surface, because an oxide layer and dirt on the surface weaken the effect.
+
+UV-C radiation damages the eyes and skin even in a short exposure. At school the experiment is not done with an unshielded UV-C lamp: it is done as a teacher demonstration with shielded apparatus, or studied with a simulation and ready-made measurement data.
+
 ## Worked example
 A violet laser pointer emits light with a wavelength of $405\,\text{nm}$. The light hits a sodium surface whose work function is $2.28\,\text{eV}$. What is the maximum kinetic energy of the released electrons in electronvolts?
 
@@ -307,7 +312,7 @@ Many people think that brighter light gives the electrons more energy, because b
 Another mistake is to think that a photon is a small "ball" of light with a definite position and size, and that light is therefore either a wave or a collection of particles. In the photoelectric effect the transfer of the energy of light shows up in quanta, but for example the interference of light is explained by the wave model. We return to the dual nature of light in the chapter *Light and electrons as waves and particles*.
 
 ## Summary
-- In the photoelectric effect, light releases electrons from the surface of a metal. The smallest energy needed for the release is the work function $W$ of the metal.
+- In the photoelectric effect, light releases electrons from the surface of a metal. The smallest energy needed for the release is the work function $W$ of the metal. Zinc needs ultraviolet radiation with a wavelength below about $288\,\text{nm}$.
 - The energy of light is quantised into photons. The photon energy is $E = hf = \tfrac{hc}{\lambda}$, where $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$.
 - One photon gives its energy to one electron: $hf = W + E_\text{k,max}$. Electrons are released only when $hf \geq W$, that is $f \geq f_0 = \tfrac{W}{h}$.
 - The intensity of the light determines the number of released electrons, and the frequency determines their maximum kinetic energy.

@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 6dec24abd3d540b2
+CONTENT-HASH: f2c261fc94008078
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- The heading on the link to chemistry orbitals is not marked as an extension although the detailed counting exercises are.
 
 ## Checked
-- batch delta review (scope: the diff only, by the teacher's ruling): meta goal identical to the fi change ("orbitaali elektronin kvanttitilana ja sen kuva alueena ...") and consistent with lesson.md:279–282 (orbitaali kuvaa kvanttitilaa; raja on sovittu kynnysarvo); physics right; hash equal at start and end.
+- Word-level diff since origin/main of this part checked for physics: values, units and significant figures, definitions (gamma decay, beta atomic masses, Hubble time, w_R and effective dose scope, conservation of B and L, photon interactions, ITER and Onkalo facts), worked solutions recomputed where numbers changed; formulas identical across languages (check_i18n).

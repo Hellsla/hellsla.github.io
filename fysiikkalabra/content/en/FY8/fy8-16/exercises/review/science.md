@@ -1,17 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: a3cf3fc6c3997829
-Mode: translation
+CONTENT-HASH: 0f4be83bc954f7c2
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- fy8-16-L2-08 (en) compared with reviewed fi: same data, same options, same correct option, same answer.
-- Recomputed independently: z_A = 6.6/656.3 = 0.010056, z_B = 14.6/486.1 = 0.030035, ratio 2.987 = 3.0; distractors 14.6/6.6 = 2.2, 500.7/662.9 = 0.76, 1/3 = 0.33 recomputed; v = cz valid (z < 0.1).
-- solutions.md L2-08: principle, symbolic step, substitution, rounding and reasonableness agree with fi; answers.py note agrees.
-- English decimal point used, wording natural English.
-- check_i18n shows nothing for fy8-16; build.py fy8-16 succeeds. No translation edit was needed.
-- Hash a3cf3fc6c3997829 at start and end.
+- Word-level diff since origin/main of this part checked for physics: values, units and significant figures, definitions (gamma decay, beta atomic masses, Hubble time, w_R and effective dose scope, conservation of B and L, photon interactions, ITER and Onkalo facts), worked solutions recomputed where numbers changed; formulas identical across languages (check_i18n).

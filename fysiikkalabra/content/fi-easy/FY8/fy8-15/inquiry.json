@@ -92,7 +92,7 @@
         {
           "text": "Aino: Protoni on kevyin kolmen kvarkin hiukkanen. Baryonien määrä ei muutu, ja protoni on kevyin baryoni. Siksi protoni ei voi hajota kevyemmäksi baryoniksi, eikä sitä kevyempää baryonia ole.",
           "correct": true,
-          "feedback": "Teoria tukee tätä. Baryoniluku säilyy, joten protonin hajoamistuotteissa pitäisi olla baryoni. Protoni on kevyin baryoni, ja hajoaminen vaatii, että tuotteet ovat kevyempiä. Neutroni on protonia raskaampi, joten se voi hajota protoniksi."
+          "feedback": "Teoria tukee tätä. Standardimallin tavallisissa reaktioissa baryoniluku säilyy, joten protonin hajoamistuotteissa pitäisi olla baryoni. Protoni on kevyin baryoni, ja hajoaminen vaatii, että tuotteet ovat kevyempiä. Neutroni on protonia raskaampi, joten se voi hajota protoniksi."
         },
         {
           "text": "Bea: Protoni on alkeishiukkanen, jolla ei ole osia. Siksi se ei voi muuttua miksikään muuksi hiukkaseksi.",
@@ -104,7 +104,7 @@
         },
         {
           "text": "Kalle: Protoni hajoaa yhtä usein kuin neutroni, mutta sen hajoamistuotteet ovat niin kevyitä, ettei niitä huomata.",
-          "feedback": "Jos protonit hajoaisivat vartissa, ainetta ei olisi. Kokeiden mukaan protonin elinikä on yli $10^{34}$ vuotta. Hajoamisen estää baryoniluvun säilyminen."
+          "feedback": "Jos protonit hajoaisivat vartissa, ainetta ei olisi. Protonin hajoamista ei ole havaittu. Esimerkiksi hajoamiselle $p \\to e^+ + \\pi^0$ kokeet antavat eliniän alarajaksi yli $10^{34}$ vuotta. Standardimallin tavallisissa reaktioissa hajoamisen estää baryoniluvun säilyminen."
         }
       ]
     },
@@ -178,7 +178,7 @@
       "type": "explain",
       "title": "Johtopäätös: mikä erottaa havaitut reaktiot?",
       "prompt": "Vertaa taulukon havaittuja ja havaitsemattomia reaktioita. Mitkä luvut säilyvät kaikissa havaituissa reaktioissa? Nimeä jokaisesta havaitsemattomasta reaktiosta luku, joka ei säily.",
-      "model": "Kaikissa havaituissa reaktioissa varauksen, baryoniluvun ja leptoniluvun summa on alussa ja lopussa sama. Esimerkiksi reaktiossa $\\bar{\\nu}_e + p \\to n + e^+$ luku $q$ on $0 + 1 = 0 + 1$, luku $B$ on $0 + 1 = 1 + 0$ ja luku $L$ on $-1 + 0 = 0 + (-1)$. Havaitsemattomissa reaktioissa jokin luku muuttuu. Reaktiossa $n \\to p + e^-$ leptoniluku muuttuu luvusta $0$ lukuun $1$. Reaktiossa $p + p \\to p + p + n$ baryoniluku muuttuu luvusta $2$ lukuun $3$. Reaktiossa $p \\to e^+ + \\pi^0$ baryoniluku muuttuu luvusta $1$ lukuun $0$ ja leptoniluku luvusta $0$ lukuun $-1$. Varaus säilyy kaikissa taulukon reaktioissa, joten pelkkä varaus ei riitä erottamaan reaktioita toisistaan.",
+      "model": "Kaikissa havaituissa reaktioissa varauksen, baryoniluvun ja leptoniluvun summa on alussa ja lopussa sama. Esimerkiksi reaktiossa $\\bar{\\nu}_e + p \\to n + e^+$ luku $q$ on $0 + 1 = 0 + 1$, luku $B$ on $0 + 1 = 1 + 0$ ja luku $L$ on $-1 + 0 = 0 + (-1)$. Havaitsemattomissa reaktioissa jokin luku muuttuu. Reaktiossa $n \\to p + e^-$ leptoniluku muuttuu luvusta $0$ lukuun $1$. Reaktiossa $p + p \\to p + p + n$ baryoniluku muuttuu luvusta $2$ lukuun $3$. Reaktiossa $p \\to e^+ + \\pi^0$ baryoniluku muuttuu luvusta $1$ lukuun $0$ ja leptoniluku luvusta $0$ lukuun $-1$. Varaus säilyy kaikissa taulukon reaktioissa, joten pelkkä varaus ei riitä erottamaan reaktioita toisistaan. Säilymislait ovat välttämättömiä ehtoja. Niiden toteutuminen ei yksin takaa, että reaktio tapahtuu.",
       "criteria": [
         "Totesin, että havaituissa reaktioissa varaus, baryoniluku ja leptoniluku säilyvät.",
         "Nimesin reaktiolle $n \\to p + e^-$ leptoniluvun ja reaktiolle $p + p \\to p + p + n$ baryoniluvun.",
@@ -200,7 +200,7 @@
       "type": "reflect",
       "title": "Palaa ennusteisiisi",
       "optional": true,
-      "prompt": "Vertaa ennusteitasi taulukoihin ja teoriaan. Palaa sitten alun kysymykseen: miksi neutroni voi hajota protoniksi, mutta protoni ei voi hajota miksikään?",
+      "prompt": "Vertaa ennusteitasi taulukoihin ja teoriaan. Palaa sitten alun kysymykseen: miksi neutroni voi hajota protoniksi, mutta protonin hajoamista ei ole havaittu?",
       "predictions": [
         "ennuste-1",
         "ennuste-2"
@@ -218,7 +218,7 @@
       "id": "virhe",
       "stage": "sovella",
       "type": "choice",
-      "title": "Etsi virhe",
+      "title": "Syventävä: etsi virhe",
       "optional": true,
       "prompt": "Opiskelija kirjoittaa elektronikaappauksen näin. Siinä ytimen protoni sieppaa atomin elektronin.\n\n$$p + e^- \\to n + \\bar{\\nu}_e$$\n\nHän perustelee, että beetahajoamisessakin syntyy antineutriino. Missä on virhe?",
       "choices": [

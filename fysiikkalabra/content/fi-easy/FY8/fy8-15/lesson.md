@@ -327,7 +327,7 @@ LHC on $27\,\text{km}$ pitkä maanalainen rengas Sveitsin ja Ranskan rajalla. Si
 ## Kaava: Säilymislait hiukkasreaktioissa
 
 ### Varaus, baryoniluku ja leptoniluku
-Kaikissa havaituissa hiukkasreaktioissa ja hajoamisissa säilyy kolme lukua. Säilyminen tarkoittaa, että luku on sama ennen reaktiota ja sen jälkeen. Luvut lasketaan yhteen reaktion kummallakin puolella. **Varaus** säilyy:
+Hiukkasreaktioita ja hajoamisia tarkastellaan kolmen luvun avulla. Säilyminen tarkoittaa, että luku on sama ennen reaktiota ja sen jälkeen. Luvut lasketaan yhteen reaktion kummallakin puolella. **Varaus** säilyy kaikissa tunnetuissa ilmiöissä:
 ```latex
 q_\text{alku} = q_\text{loppu}
 ```
@@ -335,15 +335,15 @@ missä $q$ on hiukkasten varausten summa alkeisvarauksen $e$ monikertoina. Hiukk
 ```latex
 B = \frac{n_\text{q} - n_{\bar{\text{q}}}}{3}
 ```
-missä $n_\text{q}$ on kvarkkien ja $n_{\bar{\text{q}}}$ antikvarkkien määrä. Baryonin $B$ on siis $1$, antibaryonin $-1$ ja mesonin $0$. Baryoniluku säilyy:
+missä $n_\text{q}$ on kvarkkien ja $n_{\bar{\text{q}}}$ antikvarkkien määrä. Baryonin $B$ on siis $1$, antibaryonin $-1$ ja mesonin $0$. Standardimallin tavallisissa reaktioissa baryoniluku säilyy:
 ```latex
 B_\text{alku} = B_\text{loppu}
 ```
-**Leptoniluku** $L$ on leptonille $+1$, antileptonille $-1$ ja muille hiukkasille $0$. Leptoniluku säilyy:
+**Leptoniluku** $L$ on leptonille $+1$, antileptonille $-1$ ja muille hiukkasille $0$. Tavallisissa reaktioissa kokonaisleptoniluku säilyy:
 ```latex
 L_\text{alku} = L_\text{loppu}
 ```
-Tarkemmin jokaisen sukupolven leptoniluku säilyy erikseen. Tämän luvun tehtävissä riittää kuitenkin yhteinen $L$.
+Tämän luvun tavallisissa hiukkasreaktioissa käytetään kokonaisleptoniluvun säilymistä. Elektroni-, myoni- ja tauleptoniluku eivät kuitenkaan säily kaikissa ilmiöissä erikseen. Neutriino-oskillaatioissa neutriinon laji voi muuttua, esimerkiksi myonineutriinosta tauneutriinoksi. Baryoniluvun ja kokonaisleptoniluvun säilyminen toteutuvat kokeissa erittäin hyvin. Tämän luvun tehtävissä niitä käytetään mallina. Niitä ei kuitenkaan pidetä ehdottomina luonnonlakeina samalla tavalla kuin varauksen säilymistä. Joissakin standardimallia laajentavissa teorioissa ne voisivat rikkoutua.
 
 Taulukossa ovat tämän luvun hiukkasten luvut: protoni $p$, neutroni $n$, antiprotoni $\bar{p}$, elektroni $e^-$, myoni $\mu^-$, positroni $e^+$, neutriino $\nu$, antineutriino $\bar{\nu}$, pionit ja fotoni $\gamma$.
 
@@ -366,9 +366,9 @@ Hiukkanen voi hajota itsestään vain kevyemmiksi hiukkasiksi. Hajoamisessa vapa
 ```latex
 Q = (m_\text{alku} - m_\text{loppu})\,c^2
 ```
-missä $m_\text{alku}$ on hajoavan hiukkasen massa ja $m_\text{loppu}$ on syntyvien hiukkasten massojen summa (luku *Massavaje ja ytimen sidosenergia*). Hajoaminen on mahdollinen vain, kun $Q > 0$ ja kaikki kolme lukua säilyvät. Hiukkasten massat ilmoitetaan yksikössä $\tfrac{\text{MeV}}{c^2}$. Silloin $c^2$ supistuu pois, ja $Q$ saadaan suoraan megaelektronivoltteina.
+missä $m_\text{alku}$ on hajoavan hiukkasen massa ja $m_\text{loppu}$ on syntyvien hiukkasten massojen summa (luku *Massavaje ja ytimen sidosenergia*). Hajoaminen voi tapahtua vain, kun $Q > 0$ ja kaikki kolme lukua säilyvät. Nämä ehdot ovat välttämättömiä, mutta ne eivät aina riitä. Reaktion pitää myös olla jonkin vuorovaikutuksen välitettävissä, ja muut säilymislait voivat silti estää sen. Hiukkasten massat ilmoitetaan yksikössä $\tfrac{\text{MeV}}{c^2}$. Silloin $c^2$ supistuu pois, ja $Q$ saadaan suoraan megaelektronivoltteina.
 
-Protoni on kevyin baryoni. Baryoniluku säilyy, joten protonin hajoamistuotteissa pitäisi olla baryoni. Protonia kevyempää baryonia ei kuitenkaan ole. Siksi protonin hajoamista ei ole nähty. Kokeiden mukaan protonin elinikä on yli $10^{34}$ vuotta.
+Protoni on kevyin baryoni. Standardimallin tavallisissa matalaenergiaisissa reaktioissa baryoniluku säilyy. Siksi protoni ei voi hajota kevyemmiksi hiukkasiksi näiden reaktioiden kautta. Hajoamistuotteissa pitäisi olla baryoni, eikä protonia kevyempää baryonia ole. Joissakin standardimallia laajentavissa teorioissa protonin hajoaminen voisi kuitenkin olla mahdollista. Siksi sitä etsitään kokeissa. Protonin hajoamista ei ole havaittu. Esimerkiksi hajoamiselle $p \to e^+ + \pi^0$ kokeet antavat eliniän alarajaksi yli $10^{34}$ vuotta.
 
 ### Beetahajoaminen kvarkkitasolla
 Beeta miinus -hajoamisessa neutroni muuttuu protoniksi. Kvarkkitasolla yksi neutronin $d$-kvarkki muuttuu $u$-kvarkiksi heikon vuorovaikutuksen välittäjähiukkasen $W^-$ välityksellä:
@@ -427,7 +427,7 @@ Vapaa neutroni hajoaa reaktiolla $n \to p + e^- + \bar{\nu}_e$. Näytä, että v
 
 <!-- vaihe -->
 
-**Periaate.** Hajoaminen on mahdollinen, jos varaus, baryoniluku ja leptoniluku säilyvät. Lisäksi syntyvien hiukkasten massan täytyy olla pienempi kuin neutronin massa. Massojen erotusta vastaava energia vapautuu syntyvien hiukkasten liike-energiaksi.
+**Periaate.** Hajoaminen voi tapahtua vain, jos varaus, baryoniluku ja leptoniluku säilyvät. Lisäksi syntyvien hiukkasten massan täytyy olla pienempi kuin neutronin massa. Massojen erotusta vastaava energia vapautuu syntyvien hiukkasten liike-energiaksi.
 
 <!-- vaihe -->
 
@@ -465,7 +465,7 @@ Vapaa neutroni hajoaa reaktiolla $n \to p + e^- + \bar{\nu}_e$. Näytä, että v
 
 <!-- vaihe -->
 
-**Tulos.** Varaus, baryoniluku ja leptoniluku säilyvät, joten hajoaminen on mahdollinen. Siinä vapautuu $0{,}782\,\text{MeV}$ energiaa. Vastauksessa on kolme merkitsevää numeroa, koska massat on annettu tuhannesosan $\tfrac{\text{MeV}}{c^2}$ tarkkuudella.
+**Tulos.** Varaus, baryoniluku ja leptoniluku säilyvät, ja energiaa vapautuu. Säilymislait siis sallivat hajoamisen, ja se myös havaitaan. Siinä vapautuu $0{,}782\,\text{MeV}$ energiaa. Vastauksessa on kolme merkitsevää numeroa, koska massat on annettu tuhannesosan $\tfrac{\text{MeV}}{c^2}$ tarkkuudella.
 
 <!-- vaihe -->
 
@@ -482,5 +482,5 @@ Toinen virhe on ajatella, että antiaineella on negatiivinen massa tai että se 
 - Perusvuorovaikutukset ja niiden välittäjät: vahva (gluoni), sähkömagneettinen (fotoni), heikko ($W^\pm$, $Z^0$) ja gravitaatio (hypoteettinen gravitoni).
 - Higgsin kenttä antaa massan $W$- ja $Z$-bosoneille, kvarkeille ja varatuille leptoneille. Sen kvantti Higgsin bosoni löydettiin CERNissä vuonna 2012.
 - Antihiukkasella on sama massa ja vastakkainen varaus. Hiukkanen ja antihiukkanen voivat annihiloitua säteilyksi.
-- Hiukkasreaktiossa säilyvät varaus, baryoniluku ja leptoniluku. Hajoaminen vaatii, että $Q = (m_\text{alku} - m_\text{loppu})\,c^2 > 0$.
+- Varaus säilyy aina. Tavallisissa hiukkasreaktioissa säilyvät myös baryoniluku ja kokonaisleptoniluku. Hajoaminen vaatii lisäksi, että $Q = (m_\text{alku} - m_\text{loppu})\,c^2 > 0$. Ehdot ovat välttämättömiä, mutta ne eivät aina riitä.
 - Beeta miinus -hajoamisessa $d \to u + W^-$ ja $W^- \to e^- + \bar{\nu}_e$.

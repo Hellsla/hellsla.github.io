@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 141c2ca7c9b3b1f4
+CONTENT-HASH: f63f6dccc3931f34
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- batch delta review: scope was the diff only (teacher: "katselmoi vain muuttuneet osat"); the packet's diff for en fy8-13 is empty (0 changed wording lines) and the hash equals the one I passed, so nothing new to judge; previous PASS stands.
+- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.

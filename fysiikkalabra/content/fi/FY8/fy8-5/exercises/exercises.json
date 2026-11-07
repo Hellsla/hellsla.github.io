@@ -3,8 +3,8 @@
     {
       "id": "fy8-5-L1-01",
       "level": 1,
-      "core": true,
-      "text": "Raskaissa alkuaineissa elektroneja on yhä kauempana olevilla kuorilla. Kuinka monta elektronia mahtuu enintään kuorelle $n = 5$?",
+      "core": false,
+      "text": "Syventävä tehtävä.\n\nRaskaissa alkuaineissa elektroneja on yhä kauempana olevilla kuorilla. Kuinka monta elektronia mahtuu enintään kuorelle $n = 5$?",
       "answer": 50,
       "unit": "kpl",
       "tolerance": 0.02
@@ -20,6 +20,7 @@
     {
       "id": "fy8-5-L1-03",
       "level": 1,
+      "core": true,
       "text": "Vetyatomin $1\\text{s}$-elektronin paikka mitataan $3000$ kertaa, ja kuvaan piirretään $1\\text{s}$-orbitaalin $90\\,\\%$:n raja. Kuinka monen mittauksen odotat osuvan rajan ulkopuolelle?",
       "answer": 300,
       "unit": "kpl",
@@ -44,6 +45,7 @@
     {
       "id": "fy8-5-L1-06",
       "level": 1,
+      "core": true,
       "text": "Bohrin mallissa elektroni kiertää ydintä tarkasti määrätyllä ympyräradalla. Aaltomekaanisessa atomimallissa vetyatomin perustilaa kuvaa $1\\text{s}$-orbitaali. Mikä on orbitaalin ja Bohrin radan olennainen ero?",
       "kind": [
         "concept"
@@ -104,7 +106,8 @@
     {
       "id": "fy8-5-L1-08",
       "level": 1,
-      "text": "Elektronilla on spin, joten yhdellä orbitaalilla voi olla enintään kaksi elektronia. Kuinka monta elektronia mahtuu enintään $4\\text{f}$-alikuorelle?",
+      "core": false,
+      "text": "Syventävä tehtävä.\n\nElektronilla on spin, joten yhdellä orbitaalilla voi olla enintään kaksi elektronia. Kuinka monta elektronia mahtuu enintään $4\\text{f}$-alikuorelle?",
       "kind": [
         "concept"
       ],
@@ -156,7 +159,8 @@
     {
       "id": "fy8-5-L2-02",
       "level": 2,
-      "text": "Argonatomissa on $18$ elektronia, ja perustilassa ne täyttävät orbitaalit järjestyksessä $1\\text{s}$, $2\\text{s}$, $2\\text{p}$, $3\\text{s}$, $3\\text{p}$. Kuinka monta elektronia on argonin uloimmalla kuorella?",
+      "core": false,
+      "text": "Syventävä tehtävä.\n\nArgonatomissa on $18$ elektronia, ja perustilassa ne täyttävät orbitaalit järjestyksessä $1\\text{s}$, $2\\text{s}$, $2\\text{p}$, $3\\text{s}$, $3\\text{p}$. Kuinka monta elektronia on argonin uloimmalla kuorella?",
       "answer": 8,
       "unit": "kpl",
       "tolerance": 0.02
@@ -273,7 +277,8 @@
     {
       "id": "fy8-5-L3-01",
       "level": 3,
-      "text": "Perustilassa olevaan vetyatomiin osuu ultraviolettifotoni, jonka aallonpituus on $97{,}3\\,\\text{nm}$, ja atomi absorboi sen. Kuinka monta orbitaalia on sillä kuorella, jolle elektroni siirtyy?",
+      "core": false,
+      "text": "Syventävä tehtävä.\n\nPerustilassa olevaan vetyatomiin osuu ultraviolettifotoni, jonka aallonpituus on $97{,}3\\,\\text{nm}$, ja atomi absorboi sen. Kuinka monta orbitaalia on sillä kuorella, jolle elektroni siirtyy?",
       "answer": 16,
       "unit": "kpl",
       "tolerance": 0.02
@@ -281,7 +286,8 @@
     {
       "id": "fy8-5-L3-02",
       "level": 3,
-      "text": "Kevyissä atomeissa elektronit täyttävät perustilassa orbitaalit järjestyksessä $1\\text{s}$, $2\\text{s}$, $2\\text{p}$, $3\\text{s}$, $3\\text{p}$, ja kullekin orbitaalille mahtuu enintään kaksi elektronia. Erään alkuaineen atomissa $3\\text{p}$-alikuori on täsmälleen puoliksi täynnä. Kuinka monta elektronia atomissa on?",
+      "core": false,
+      "text": "Syventävä tehtävä.\n\nKevyissä atomeissa elektronit täyttävät perustilassa orbitaalit järjestyksessä $1\\text{s}$, $2\\text{s}$, $2\\text{p}$, $3\\text{s}$, $3\\text{p}$, ja kullekin orbitaalille mahtuu enintään kaksi elektronia. Erään alkuaineen atomissa $3\\text{p}$-alikuori on täsmälleen puoliksi täynnä. Kuinka monta elektronia atomissa on?",
       "answer": 15,
       "unit": "kpl",
       "tolerance": 0.02

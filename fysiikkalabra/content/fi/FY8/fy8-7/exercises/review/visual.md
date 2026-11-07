@@ -1,16 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 1eb7bd804dee5a96
-Round: 2 (delta)
+CONTENT-HASH: 7484fd155bd7aa7c
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none) Round 1 Major resolved: the hc, hf and hf-in-eV lines are aligned blocks that fit the 390 px column (measured: no overflowing KaTeX, no page scroll).
+- none
 
 ## Polish
-- [Minor] exercises.json L1-09 statement 5 — "vain peilien välisen akselin suuntainen valo" is now absolute and true by hedge-free wording; the form hint is gone. Science may check that "vain" is acceptable.
+- none
 
 ## Checked
-- Own 390 px re-render of 7-9 with solution open: the three calculation blocks are aligned and readable, units upright, results visible.
-- Statements 3 and 5 rewording read in source; statement feedback judged from text only.
-
-## Scores
-illustrations n/a (5) · typography 5 · Finnish 5 · accessibility 4
+- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.

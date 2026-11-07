@@ -281,7 +281,7 @@ If galaxies are receding from each other now, they were closer to each other in 
 After the first seconds, the universe contained protons, neutrons, electrons, photons and neutrinos. After about three minutes, the temperature had fallen to a billion kelvins, and protons and neutrons began to combine into nuclei in fusion (chapter *Fission, fusion and nuclear power*). Almost all the neutrons ended up in helium-4 nuclei, because their binding energy per nucleon is the greatest of the light nuclei (chapter *Mass defect and nuclear binding energy*). There was then about one neutron for every seven protons. This is why about $25\,\%$ of the mass ended up as helium and about $75\,\%$ remained hydrogen, that is, single protons. After about $20$ minutes, the universe was already too cold and too thin for fusion, so only traces of heavier elements formed. The observed helium fraction of the oldest stars and gas clouds is just of this order.
 
 ### The cosmic background radiation
-The nuclei did not get electrons around them right away. The energy of the photons was so great that they ionised every atom that formed, and the free electrons scattered the photons in every direction: the universe was like a glowing fog. After about $380\,000$ years, the temperature had fallen to about $3000\,\text{K}$. Then there were no longer enough photons with enough energy to ionise a hydrogen atom, that is, at least $13.6\,\text{eV}$ (chapter *Energy levels of the hydrogen atom and the Bohr model*). The electrons bound to the nuclei as atoms, and because an atom absorbs only photons that correspond to the differences between its energy levels, the universe became transparent.
+The nuclei did not get electrons around them right away. The energy of the photons was so great that they ionised every atom that formed, and the free electrons scattered the photons in every direction: the universe was like a glowing fog. After about $380\,000$ years, the temperature had fallen to about $3000\,\text{K}$. Then there were no longer enough photons with enough energy to ionise a hydrogen atom, that is, at least $13.6\,\text{eV}$ (chapter *Energy levels of the hydrogen atom and the Bohr model*). Protons and electrons could form stable hydrogen atoms, and the number of free electrons fell sharply. The photons had earlier scattered continuously from free electrons (Thomson scattering). The scattering becoming rare made the universe transparent to the radiation that we now observe as the cosmic microwave background: the photons could travel long distances without collisions.
 
 The light released then is still on its way. The expansion has stretched its wavelengths by a factor of about $1100$, so now it is microwaves with a typical wavelength of about $1.06\,\text{mm}$. This is the **cosmic background radiation**. Arno Penzias and Robert Wilson discovered it in 1965. It arrives almost evenly from every direction, and its spectrum corresponds to a body at a temperature of $2.725\,\text{K}$.
 
@@ -425,7 +425,7 @@ v = c\,z
 where $v$ is the recession speed and $c = 2.998 \cdot 10^{5}\,\text{km/s}$ the speed of light. For example, a redshift of $z = 0.010$ means a speed of $v = 2.998 \cdot 10^{5}\,\text{km/s} \cdot 0.010 \approx 3000\,\text{km/s}$. For very distant galaxies with a large redshift, the equation no longer holds.
 
 ### The Hubble–Lemaître law
-The distances of galaxies are measured in **megaparsecs**: $1\,\text{Mpc} = 3.086 \cdot 10^{22}\,\text{m}$, so light travels a megaparsec in about $3.26$ million years. The recession speed of a galaxy is directly proportional to its distance:
+The distances of galaxies are measured in **megaparsecs**: $1\,\text{Mpc} = 3.086 \cdot 10^{22}\,\text{m}$, so light travels a megaparsec in about $3.26$ million years. The present recession speed of a galaxy is directly proportional to its distance:
 ```latex
 v = H_0\,d
 ```
@@ -489,12 +489,12 @@ where $v$ is the recession speed, $d$ the distance of the galaxy and $H_0$ the *
   <foreignObject x="470" y="49.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$v = H_0\,d$</div></foreignObject>
 </svg>
 
-### The age of the universe
-If a galaxy has moved all the time at the speed $v = H_0\,d$, it was in the same place as we were a time $t = \tfrac{d}{v}$ ago. Substituting the Hubble–Lemaître law:
+### Extension: the age of the universe from the Hubble constant
+The age of the universe can be estimated roughly by assuming that the present recession speeds of the galaxies describe the whole history of the expansion. If a galaxy has moved all the time at the speed $v = H_0\,d$, it was in the same place as we were a time $t = \tfrac{d}{v}$ ago. Substituting the Hubble–Lemaître law:
 ```latex
 t = \frac{d}{v} = \frac{d}{H_0\,d} = \frac{1}{H_0}
 ```
-The distance cancels, so the time is the same for all galaxies. With $H_0 = 70\,\tfrac{\text{km/s}}{\text{Mpc}}$, substituting $1\,\text{Mpc} = 3.086 \cdot 10^{19}\,\text{km}$ for the megaparsec and $1\,\text{a} = 3.156 \cdot 10^{7}\,\text{s}$ for the year:
+The distance cancels, so the time is the same for all galaxies. This time is called the **Hubble time**. With $H_0 = 70\,\tfrac{\text{km/s}}{\text{Mpc}}$, substituting $1\,\text{Mpc} = 3.086 \cdot 10^{19}\,\text{km}$ for the megaparsec and $1\,\text{a} = 3.156 \cdot 10^{7}\,\text{s}$ for the year:
 ```latex
 \begin{aligned}
 &t = \frac{1}{H_0} \\
@@ -505,7 +505,7 @@ The distance cancels, so the time is the same for all galaxies. With $H_0 = 70\,
 &\approx 1.4 \cdot 10^{10}\,\text{a}
 \end{aligned}
 ```
-The estimate is about $14$ billion years, close to the more accurate value of $13.8$ billion years. The estimate is not exact, because the speed of the expansion has not been the same all the time: at first gravity slowed the expansion, and during the last billions of years dark energy has accelerated it.
+The Hubble time is about $14$ billion years. It gives the correct order of magnitude for the age of the universe but not the exact age, because the speed of the expansion has changed during the history of the universe: at first gravity slowed the expansion, and during the last billions of years dark energy has accelerated it. The more accurate value, $13.8$ billion years, is obtained from measurements of the background radiation and a model of the expansion.
 
 ## Worked example
 In the spectrum of a galaxy, the red $\text{H}\alpha$ line of hydrogen, whose wavelength in the laboratory is $656.3\,\text{nm}$, appears at a wavelength of $679.3\,\text{nm}$. The distance of the galaxy has been measured in another way, and it is $150\,\text{Mpc}$. Calculate the recession speed of the galaxy and, using it, the value of the Hubble constant.
@@ -565,8 +565,8 @@ Another mistake is to think that redshift means that a galaxy is red in colour. 
 ## Summary
 - The spectral lines of distant galaxies have shifted to longer wavelengths. The redshift is $z = \tfrac{\Delta\lambda}{\lambda_0}$, and for a small redshift the recession speed is $v = cz$.
 - According to the Hubble–Lemaître law, $v = H_0\,d$, where $H_0 \approx 70\,\tfrac{\text{km/s}}{\text{Mpc}}$. Space is expanding, and the expansion has no centre.
-- The estimate of the age of the universe is $\tfrac{1}{H_0} \approx 14$ billion years; the more accurate value is $13.8$ billion years.
+- Extension: the Hubble time $\tfrac{1}{H_0} \approx 14$ billion years gives the order of magnitude of the age of the universe; the more accurate value is $13.8$ billion years.
 - In the fusion of the first minutes after the Big Bang, about $25\,\%$ of the mass turned into helium and the rest remained hydrogen.
-- The cosmic background radiation was released when the universe had cooled to about $3000\,\text{K}$ and atoms formed; the expansion has stretched it into microwaves that correspond to a temperature of $2.725\,\text{K}$.
+- The cosmic background radiation was released when the universe had cooled to about $3000\,\text{K}$, atoms formed and there were hardly any free electrons left to scatter the photons; the expansion has stretched it into microwaves that correspond to a temperature of $2.725\,\text{K}$.
 - Stars fuse elements up to iron, and the heavier ones form in neutron capture in supernovae and in neutron star collisions.
 - Ordinary matter is only about $5\,\%$ of the energy content of the universe; dark matter and dark energy are still open questions.

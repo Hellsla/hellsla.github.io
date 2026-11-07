@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 141c2ca7c9b3b1f4
+CONTENT-HASH: f63f6dccc3931f34
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- batch delta review: no changed line in en (diff empty); check_layout en 360 OK; fi fig-row-1280 opened for the shared layout.
+- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.

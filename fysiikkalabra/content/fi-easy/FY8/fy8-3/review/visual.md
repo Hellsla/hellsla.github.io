@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 9a75d81ecf795758
+CONTENT-HASH: 7cf00fb14ee5fdf8
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] fy8-3-theory-1280-1/2: the discharge tube photo is a small dark strip, readable. The Orion photo has the caption formula $n = 3$ and $n = 2$ set as maths: good.
+- none
 
 ## Checked
-batch delta review: opened fy8-3-theory-1280 captures holding the new unit-photo (floats right, 20 rem wide, no clipping or overflow, figure beside it intact, credit line present, alt text and caption natural Finnish, any quantity in the caption set as LaTeX with its unit) plus the surrounding figures and formulas.
+- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.

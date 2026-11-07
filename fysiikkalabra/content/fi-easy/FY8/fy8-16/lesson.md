@@ -281,7 +281,7 @@ Jos galaksit loittonevat toisistaan nyt, ne olivat aiemmin lähempänä toisiaan
 Ensimmäisten sekuntien jälkeen maailmankaikkeudessa oli protoneja, neutroneja, elektroneja, fotoneja ja neutriinoja. Noin kolmen minuutin kuluttua lämpötila oli laskenut miljardiin kelviniin. Silloin protonit ja neutronit alkoivat yhtyä ytimiksi fuusiossa (luku *Fissio, fuusio ja ydinvoima*). Lähes kaikki neutronit päätyivät helium-4-ytimiin, koska helium-4:n sidosenergia nukleonia kohti on suurin kevyistä ytimistä (luku *Massavaje ja ytimen sidosenergia*). Neutroneja oli tällöin noin yksi seitsemää protonia kohti. Siksi noin $25\,\%$ massasta päätyi heliumiksi ja noin $75\,\%$ jäi vedyksi, eli yksittäisiksi protoneiksi. Noin $20$ minuutin kuluttua maailmankaikkeus oli jo liian kylmä ja liian harva fuusiolle. Raskaampia alkuaineita syntyi siksi vain hyvin vähän. Vanhimmissa tähdissä ja kaasupilvissä on havaittu juuri tämän verran heliumia.
 
 ### Kosminen taustasäteily
-Ytimet eivät heti saaneet elektroneja ympärilleen. Fotonien energia oli niin suuri, että ne ionisoivat jokaisen syntyvän atomin. Ionisoida tarkoittaa, että atomista irrotetaan elektroni. Vapaat elektronit myös sirottivat fotoneja joka suuntaan, joten maailmankaikkeus oli kuin hehkuvaa sumua. Noin $380\,000$ vuoden kuluttua lämpötila oli laskenut noin $3000\,\text{K}$:iin. Silloin fotoneja, joiden energia riittää vetyatomin ionisoimiseen, ei enää ollut tarpeeksi. Niiden energian pitää olla vähintään $13{,}6\,\text{eV}$ (luku *Vetyatomin energiatasot ja Bohrin malli*). Elektronit sitoutuivat ytimiin, ja syntyi atomeja. Atomi absorboi vain sellaisia fotoneja, joiden energia on sen energiatasojen erotus. Siksi maailmankaikkeus muuttui läpinäkyväksi.
+Ytimet eivät heti saaneet elektroneja ympärilleen. Fotonien energia oli niin suuri, että ne ionisoivat jokaisen syntyvän atomin. Ionisoida tarkoittaa, että atomista irrotetaan elektroni. Vapaat elektronit myös sirottivat fotoneja joka suuntaan, joten maailmankaikkeus oli kuin hehkuvaa sumua. Noin $380\,000$ vuoden kuluttua lämpötila oli laskenut noin $3000\,\text{K}$:iin. Silloin fotoneja, joiden energia riittää vetyatomin ionisoimiseen, ei enää ollut tarpeeksi. Niiden energian pitää olla vähintään $13{,}6\,\text{eV}$ (luku *Vetyatomin energiatasot ja Bohrin malli*). Protonit ja elektronit pystyivät muodostamaan pysyviä vetyatomeja. Silloin vapaiden elektronien määrä pieneni voimakkaasti. Fotonit olivat aiemmin sironneet jatkuvasti vapaista elektroneista (Thomsonin sironta). Kun sironta harveni, maailmankaikkeus muuttui läpinäkyväksi sille säteilylle, jonka havaitsemme nykyisin kosmisena mikroaaltotaustana. Fotonit pääsivät etenemään pitkiä matkoja törmäilemättä.
 
 Silloin vapautunut valo on yhä matkalla. Laajeneminen on venyttänyt sen aallonpituudet noin $1100$-kertaisiksi. Nyt se on mikroaaltoja, joiden tyypillinen aallonpituus on noin $1{,}06\,\text{mm}$. Tämä on **kosminen taustasäteily**. Arno Penzias ja Robert Wilson löysivät sen vuonna 1965. Sitä tulee joka suunnasta lähes yhtä paljon. Sen spektri on samanlainen kuin kappaleen, jonka lämpötila on $2{,}725\,\text{K}$.
 
@@ -425,7 +425,7 @@ v = c\,z
 Tässä $v$ on etääntymisnopeus ja $c = 2{,}998 \cdot 10^{5}\,\text{km/s}$ valon nopeus. Esimerkiksi punasiirtymä $z = 0{,}010$ tarkoittaa nopeutta $v = 2{,}998 \cdot 10^{5}\,\text{km/s} \cdot 0{,}010 \approx 3000\,\text{km/s}$. Hyvin kaukaisille galakseille punasiirtymä on suuri, eikä yhtälö enää päde.
 
 ### Hubblen ja Lemaîtren laki
-Galaksien etäisyyksiä mitataan **megaparsekeina**. Yksi megaparsek on $1\,\text{Mpc} = 3{,}086 \cdot 10^{22}\,\text{m}$. Valo kulkee megaparsekin noin $3{,}26$ miljoonassa vuodessa. Galaksin etääntymisnopeus on suoraan verrannollinen sen etäisyyteen:
+Galaksien etäisyyksiä mitataan **megaparsekeina**. Yksi megaparsek on $1\,\text{Mpc} = 3{,}086 \cdot 10^{22}\,\text{m}$. Valo kulkee megaparsekin noin $3{,}26$ miljoonassa vuodessa. Galaksin etääntymisnopeus on nykyhetkellä suoraan verrannollinen sen etäisyyteen:
 ```latex
 v = H_0\,d
 ```
@@ -489,12 +489,12 @@ Tässä $v$ on etääntymisnopeus, $d$ galaksin etäisyys ja $H_0$ **Hubblen vak
   <foreignObject x="470" y="49.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$v = H_0\,d$</div></foreignObject>
 </svg>
 
-### Maailmankaikkeuden ikä
-Oletetaan, että galaksi on liikkunut koko ajan nopeudella $v = H_0\,d$. Silloin se on ollut samassa paikassa kuin me ajan $t = \tfrac{d}{v}$ sitten. Sijoitetaan Hubblen ja Lemaîtren laki:
+### Syventävä: maailmankaikkeuden ikä Hubblen vakiosta
+Maailmankaikkeuden ikää voi arvioida karkeasti. Silloin oletetaan, että galaksien nykyiset etääntymisnopeudet kuvaavat koko laajenemishistoriaa. Oletetaan, että galaksi on liikkunut koko ajan nopeudella $v = H_0\,d$. Silloin se on ollut samassa paikassa kuin me ajan $t = \tfrac{d}{v}$ sitten. Sijoitetaan Hubblen ja Lemaîtren laki:
 ```latex
 t = \frac{d}{v} = \frac{d}{H_0\,d} = \frac{1}{H_0}
 ```
-Etäisyys supistuu pois, joten aika on sama kaikille galakseille. Lasketaan aika arvolla $H_0 = 70\,\tfrac{\text{km/s}}{\text{Mpc}}$. Megaparsekin paikalle sijoitetaan $1\,\text{Mpc} = 3{,}086 \cdot 10^{19}\,\text{km}$ ja vuoden paikalle $1\,\text{a} = 3{,}156 \cdot 10^{7}\,\text{s}$:
+Etäisyys supistuu pois, joten aika on sama kaikille galakseille. Tätä aikaa kutsutaan **Hubblen ajaksi**. Lasketaan aika arvolla $H_0 = 70\,\tfrac{\text{km/s}}{\text{Mpc}}$. Megaparsekin paikalle sijoitetaan $1\,\text{Mpc} = 3{,}086 \cdot 10^{19}\,\text{km}$ ja vuoden paikalle $1\,\text{a} = 3{,}156 \cdot 10^{7}\,\text{s}$:
 ```latex
 \begin{aligned}
 &t = \frac{1}{H_0} \\
@@ -505,7 +505,7 @@ Etäisyys supistuu pois, joten aika on sama kaikille galakseille. Lasketaan aika
 &\approx 1{,}4 \cdot 10^{10}\,\text{a}
 \end{aligned}
 ```
-Arvio on noin $14$ miljardia vuotta. Se on lähellä tarkempaa arvoa $13{,}8$ miljardia vuotta. Arvio ei ole aivan tarkka, koska laajenemisnopeus ei ole pysynyt koko ajan samana. Ensin painovoima hidasti laajenemista. Viimeiset miljardit vuodet pimeä energia on kiihdyttänyt sitä.
+Hubblen aika on noin $14$ miljardia vuotta. Se antaa oikean suuruusluokan maailmankaikkeuden iälle. Se ei kuitenkaan ole tarkka ikä, koska laajenemisnopeus on muuttunut maailmankaikkeuden historian aikana. Ensin painovoima hidasti laajenemista. Viimeiset miljardit vuodet pimeä energia on kiihdyttänyt sitä. Tarkempi arvo, $13{,}8$ miljardia vuotta, saadaan taustasäteilyn mittauksista ja laajenemismallista.
 
 ## Esimerkki
 Galaksin spektrissä vedyn punainen $\text{H}\alpha$-viiva näkyy aallonpituudella $679{,}3\,\text{nm}$. Viivan aallonpituus laboratoriossa on $656{,}3\,\text{nm}$. Galaksin etäisyys on mitattu toisella tavalla, ja se on $150\,\text{Mpc}$. Laske galaksin etääntymisnopeus. Laske sen avulla myös Hubblen vakion arvo.
@@ -565,8 +565,8 @@ Toinen virhe on ajatella, että punasiirtymä tarkoittaa galaksin olevan punaine
 ## Tiivistelmä
 - Kaukaisten galaksien spektriviivat ovat siirtyneet pidempiin aallonpituuksiin. Punasiirtymä on $z = \tfrac{\Delta\lambda}{\lambda_0}$. Kun punasiirtymä on pieni, etääntymisnopeus on $v = cz$.
 - Hubblen ja Lemaîtren lain mukaan $v = H_0\,d$, missä $H_0 \approx 70\,\tfrac{\text{km/s}}{\text{Mpc}}$. Avaruus laajenee, eikä laajenemisella ole keskipistettä.
-- Maailmankaikkeuden iän arvio on $\tfrac{1}{H_0} \approx 14$ miljardia vuotta. Tarkempi arvo on $13{,}8$ miljardia vuotta.
+- Syventävä: Hubblen aika $\tfrac{1}{H_0} \approx 14$ miljardia vuotta antaa maailmankaikkeuden iän suuruusluokan. Tarkempi arvo on $13{,}8$ miljardia vuotta.
 - Alkuräjähdyksen ensimmäisten minuuttien fuusiossa noin $25\,\%$ massasta muuttui heliumiksi. Loput jäi vedyksi.
-- Kosminen taustasäteily vapautui, kun maailmankaikkeus jäähtyi noin $3000\,\text{K}$:iin ja atomit syntyivät. Laajeneminen on venyttänyt sen mikroaalloiksi, joiden lämpötila on $2{,}725\,\text{K}$.
+- Kosminen taustasäteily vapautui, kun maailmankaikkeus jäähtyi noin $3000\,\text{K}$:iin ja atomit syntyivät. Silloin fotoneja sirottavia vapaita elektroneja ei enää juuri ollut. Laajeneminen on venyttänyt sen mikroaalloiksi, joiden lämpötila on $2{,}725\,\text{K}$.
 - Tähdet fuusioivat alkuaineita rautaan asti. Raskaammat alkuaineet syntyvät neutronisieppauksessa supernovissa ja neutronitähtien törmäyksissä.
 - Tavallista ainetta on vain noin $5\,\%$ maailmankaikkeuden energiasisällöstä. Pimeä aine ja pimeä energia ovat yhä avoimia kysymyksiä.

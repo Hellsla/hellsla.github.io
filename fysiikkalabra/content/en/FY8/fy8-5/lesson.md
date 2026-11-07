@@ -1323,7 +1323,7 @@ In the hydrogen atom the energy of a state depends only on the principal quantum
 ```latex
 E_n = -\frac{13.6\,\text{eV}}{n^2}
 ```
-where $E_n$ is the energy of the electron (eV) in the shell $n = 1, 2, 3, \ldots$ States with the same principal quantum number form an electron shell. The shell $n$ has $n$ subshells, s, p, d and f, which have $1$, $3$, $5$ and $7$ orbitals, so the number of orbitals in a shell is $n^2$.
+where $E_n$ is the energy of the electron (eV) in the shell $n = 1, 2, 3, \ldots$ States with the same principal quantum number form an electron shell. The shell with principal quantum number $n$ has $n$ subshells. The first subshells are labelled with the letters s, p, d and f, and they have $1$, $3$, $5$ and $7$ orbitals, respectively. When the principal quantum number grows beyond four, there are more possible subshells. The total number of orbitals in a shell is $n^2$.
 
 The number of orbitals in a subshell depends on the shape of the wave. An s orbital is a sphere, so there can be only one. The pair of lobes of a p orbital can point in three mutually perpendicular directions ($x$, $y$ and $z$), so there are three p orbitals; the figures of this chapter show one of them, whose lobes are vertical. The d and f subshells have five and seven different orbitals, respectively. An electron also has spin, its own property with only two possible values. Each orbital can therefore hold at most two electrons, and they have opposite spins (Pauli exclusion principle). So at most
 ```latex

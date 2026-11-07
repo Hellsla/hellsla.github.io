@@ -92,7 +92,7 @@
         {
           "text": "Aino: The proton is the lightest particle made of three quarks. The number of baryons does not change, and the proton is the lightest baryon, so there is no lighter product for the proton.",
           "correct": true,
-          "feedback": "The theory supports this: the baryon number is conserved, so the decay products of the proton would have to include a baryon. The proton is the lightest baryon, and a decay requires the products to be lighter. The neutron is heavier than the proton, so it can decay into a proton."
+          "feedback": "The theory supports this: in the ordinary reactions of the Standard Model the baryon number is conserved, so the decay products of the proton would have to include a baryon. The proton is the lightest baryon, and a decay requires the products to be lighter. The neutron is heavier than the proton, so it can decay into a proton."
         },
         {
           "text": "Bea: The proton is an elementary particle with no parts, so it cannot turn into any other particle.",
@@ -104,7 +104,7 @@
         },
         {
           "text": "Kalle: The proton decays as often as the neutron, but its decay products are so light that they are not detected.",
-          "feedback": "If protons decayed in a quarter of an hour, there would be no matter. According to experiments, the lifetime of the proton is over $10^{34}$ years. The decay is prevented by the conservation of baryon number."
+          "feedback": "If protons decayed in a quarter of an hour, there would be no matter. The decay of the proton has not been observed: for example, for the decay $p \\to e^+ + \\pi^0$ experiments give a lower limit of over $10^{34}$ years for the lifetime. In the ordinary reactions of the Standard Model the decay is prevented by the conservation of baryon number."
         }
       ]
     },
@@ -178,7 +178,7 @@
       "type": "explain",
       "title": "Conclusion: what distinguishes the observed reactions?",
       "prompt": "Compare the observed and unobserved reactions in the table. Which numbers are conserved in all the observed reactions? For each unobserved reaction, name a number that is not conserved.",
-      "model": "In all the observed reactions the sum of the charge, the baryon number and the lepton number is the same at the start and at the end. For example $\\bar{\\nu}_e + p \\to n + e^+$: $q$ is $0 + 1 = 0 + 1$, $B$ is $0 + 1 = 1 + 0$ and $L$ is $-1 + 0 = 0 + (-1)$. In the unobserved reactions some number changes: in the reaction $n \\to p + e^-$ the lepton number changes from $0$ to $1$, in the reaction $p + p \\to p + p + n$ the baryon number changes from $2$ to $3$, and in the reaction $p \\to e^+ + \\pi^0$ the baryon number changes from $1$ to $0$ and the lepton number from $0$ to $-1$. The charge is conserved in all the reactions of the table, so the charge alone is not enough to tell them apart.",
+      "model": "In all the observed reactions the sum of the charge, the baryon number and the lepton number is the same at the start and at the end. For example $\\bar{\\nu}_e + p \\to n + e^+$: $q$ is $0 + 1 = 0 + 1$, $B$ is $0 + 1 = 1 + 0$ and $L$ is $-1 + 0 = 0 + (-1)$. In the unobserved reactions some number changes: in the reaction $n \\to p + e^-$ the lepton number changes from $0$ to $1$, in the reaction $p + p \\to p + p + n$ the baryon number changes from $2$ to $3$, and in the reaction $p \\to e^+ + \\pi^0$ the baryon number changes from $1$ to $0$ and the lepton number from $0$ to $-1$. The charge is conserved in all the reactions of the table, so the charge alone is not enough to tell them apart. The conservation laws are necessary conditions: their fulfilment alone does not guarantee that the reaction happens.",
       "criteria": [
         "I stated that in the observed reactions the charge, the baryon number and the lepton number are conserved.",
         "For the reaction $n \\to p + e^-$ I named the lepton number, and for the reaction $p + p \\to p + p + n$ the baryon number.",
@@ -200,7 +200,7 @@
       "type": "reflect",
       "title": "Return to your predictions",
       "optional": true,
-      "prompt": "Compare your predictions with the tables and the theory. Then return to the question at the start: why can the neutron decay into a proton but the proton cannot decay into anything?",
+      "prompt": "Compare your predictions with the tables and the theory. Then return to the question at the start: why can the neutron decay into a proton, while the decay of the proton has not been observed?",
       "predictions": [
         "ennuste-1",
         "ennuste-2"
@@ -218,7 +218,7 @@
       "id": "virhe",
       "stage": "sovella",
       "type": "choice",
-      "title": "Find the error",
+      "title": "Extension: find the error",
       "optional": true,
       "prompt": "A student writes electron capture, in which a proton in the nucleus captures an electron of the atom, like this:\n\n$$p + e^- \\to n + \\bar{\\nu}_e$$\n\nShe argues that an antineutrino is produced in beta decay too. Where is the error?",
       "choices": [

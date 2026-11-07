@@ -133,9 +133,9 @@
           "feedback": "Tosi: stimuloidussa emissiossa syntyvällä fotonilla on saapuvan fotonin energia, suunta ja vaihe, joten aallot pysyvät samassa tahdissa. Spontaanisti syntyvien fotonien vaiheet ovat satunnaiset."
         },
         {
-          "text": "Kaksitasoisessa aineessa saadaan ylemmälle tasolle enemmän atomeja kuin alemmalle, kun pumppausvaloa on riittävästi.",
+          "text": "Kahden erillisen tason mallissa saadaan ylemmälle tasolle enemmän atomeja kuin alemmalle, kun pumppausvaloa on riittävästi.",
           "true": false,
-          "feedback": "Epätosi: tässä luullaan, että pumppauksen voimakkuus yksin ratkaisee. Kahdella tasolla pumppausvalo aiheuttaa ylätilan atomeissa stimuloitua emissiota yhtä todennäköisesti kuin virittää perustilan atomeja, joten ylätilaan saadaan enintään puolet atomeista. Siksi laseraineessa on ainakin kolme tasoa."
+          "feedback": "Epätosi: tässä luullaan, että pumppauksen voimakkuus yksin ratkaisee. Kahden tason mallissa pumppausvalo aiheuttaa ylätilan atomeissa stimuloitua emissiota yhtä todennäköisesti kuin virittää perustilan atomeja, joten ylätilaan saadaan enintään puolet atomeista. Siksi monissa atomi- ja ionilasereissa käytetään kolmea tai neljää tasoa."
         },
         {
           "text": "Kvanttipiste A lähettää pidemmän aallonpituuden valoa kuin samasta aineesta tehty kvanttipiste B.",
@@ -171,7 +171,8 @@
     {
       "id": "fy8-7-L2-03",
       "level": 2,
-      "text": "Kvanttipiste, jonka halkaisija on $6{,}0\\,\\text{nm}$, lähettää valoa aallonpituudella $620\\,\\text{nm}$. Samasta aineesta tehdyn pienemmän kvanttipisteen fotonien energia on $0{,}35\\,\\text{eV}$ suurempi. Laske pienemmän pisteen valon aallonpituus nanometreinä ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "core": false,
+      "text": "Lisätietotehtävä.\n\nKvanttipiste, jonka halkaisija on $6{,}0\\,\\text{nm}$, lähettää valoa aallonpituudella $620\\,\\text{nm}$. Samasta aineesta tehdyn pienemmän kvanttipisteen fotonien energia on $0{,}35\\,\\text{eV}$ suurempi. Laske pienemmän pisteen valon aallonpituus nanometreinä ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).",
       "answer": 528,
       "unit": "nm",
       "tolerance": 0.02
@@ -187,12 +188,12 @@
     {
       "id": "fy8-7-L2-05",
       "level": 2,
-      "core": true,
+      "core": false,
       "kind": [
         "data",
         "reasoning"
       ],
-      "text": "Esimerkkiaineisto: samasta puolijohteesta valmistettujen kvanttipisteiden halkaisija $d$ on mitattu elektronimikroskoopilla ja niiden lähettämän valon aallonpituus $\\lambda$ spektrometrillä. Taulukossa on viiden pisteen tulokset.\n\nOletetaan, että fotonin energia on yhtä suuri kuin pisteen energiarako.\n\na) Laske kunkin pisteen fotonin energia elektronivoltteina ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).\n\nb) Päättele taulukon perusteella, miten energiarako riippuu pisteen koosta. Onko energiarako suoraan verrannollinen pisteen kokoon?\n\nc) Kuinka paljon suurempi energiarako on pienimmällä kuin suurimmalla pisteellä?\n\nAnna c)-kohdan tulos vastauslaatikkoon.",
+      "text": "Lisätietotehtävä.\n\nEsimerkkiaineisto: samasta puolijohteesta valmistettujen kvanttipisteiden halkaisija $d$ on mitattu elektronimikroskoopilla ja niiden lähettämän valon aallonpituus $\\lambda$ spektrometrillä. Taulukossa on viiden pisteen tulokset.\n\nOletetaan, että fotonin energia on yhtä suuri kuin pisteen energiarako.\n\na) Laske kunkin pisteen fotonin energia elektronivoltteina ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).\n\nb) Päättele taulukon perusteella, miten energiarako riippuu pisteen koosta. Onko energiarako suoraan verrannollinen pisteen kokoon?\n\nc) Kuinka paljon suurempi energiarako on pienimmällä kuin suurimmalla pisteellä?\n\nAnna c)-kohdan tulos vastauslaatikkoon.",
       "answer": 0.54,
       "unit": "eV",
       "tolerance": 0.04,
@@ -271,6 +272,7 @@
     {
       "id": "fy8-7-L2-07",
       "level": 2,
+      "core": true,
       "text": "Oppilas väittää: ”Laserissa stimuloidun emission jälkeen on kaksi fotonia, vaikka fotoneja oli ennen vain yksi. Laser siis lisää valon energiaa tyhjästä.” Mikä oppilaan päättelyssä on virheellistä?",
       "kind": [
         "error",

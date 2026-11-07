@@ -257,7 +257,7 @@ eU_\text{k} \approx hf = \frac{hc}{\lambda}
 where $e = 1.602 \cdot 10^{-19}\,\text{C}$ is the elementary charge, $U_\text{k}$ the threshold voltage of the LED ($\text{V}$), $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$ the Planck constant, $f$ the frequency of the light ($\text{Hz}$), $c = 2.998 \cdot 10^8\,\text{m/s}$ the speed of light and $\lambda$ the wavelength of the peak of the spectrum of the LED ($\text{m}$). For a red LED, $\lambda = 630\,\text{nm}$, this gives the threshold voltage $U_\text{k} \approx \tfrac{hc}{e\lambda}$. In the chapter *The photoelectric effect and the photon* we calculated $hc = 1240\,\text{eV}\,\text{nm}$, and because $1\,\text{eV} = e \cdot 1\,\text{V}$, we have $\tfrac{hc}{e} = 1240\,\text{V}\,\text{nm}$. Thus $U_\text{k} \approx 1240\,\text{V}\,\text{nm} : 630\,\text{nm} = 1.97\,\text{V}$. The measured threshold voltage is usually a little smaller, for example $1.88\,\text{V}$. The energy of a photon in electronvolts is approximately the same number as the threshold voltage in volts, because $1\,\text{eV}$ is the energy that an electron receives in a voltage of $1\,\text{V}$.
 
 ### Determining the threshold voltage
-The threshold voltage is measured by connecting the LED in series with a protective resistor and an ammeter to an adjustable voltage source, and a voltmeter across the terminals of the LED. The voltage is increased gradually, and the current is recorded at each voltage. In the $(U, I)$ graph the current is at first almost zero and then grows almost linearly. The threshold voltage is obtained when the line fitted to the straight part of the graph is extended to the voltage axis, where $I = 0$. This method is more repeatable than searching for the voltage at which the LED seems to start to glow, because the sensitivity of the eye varies with colour and from person to person.
+The threshold voltage is measured by connecting the LED in series with a protective resistor and an ammeter to an adjustable voltage source, and a voltmeter across the terminals of the LED. The protective resistor limits the current so that the LED does not overheat and break, and the current must not exceed the largest allowed value given by the manufacturer. The voltage is increased gradually, and the current is recorded at each voltage. In the $(U, I)$ graph the current is at first almost zero and then grows almost linearly. The threshold voltage is obtained when the line fitted to the straight part of the graph is extended to the voltage axis, where $I = 0$. This method is more repeatable than searching for the voltage at which the LED seems to start to glow, because the sensitivity of the eye varies with colour and from person to person.
 
 <svg data-fig="iu" viewBox="0 0 600 380" role="img" aria-label="Graph to scale: the current of three LEDs in milliamperes as a function of voltage, voltage axis 0–3.5 volts. The current of the red LED is almost zero up to about 1.8 volts and then grows linearly. The curve of the green LED has the same shape but is further to the right, and that of the blue one still further right. The straight part of each curve has been extended with a dashed line to the voltage axis, and the point of intersection is the threshold voltage U k of the LED: 1.88 volts for the red, 2.30 for the green and 2.52 for the blue." style="max-width:100%;font-size:24px">
   <line x1="148.5" y1="322" x2="148.5" y2="64" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -322,13 +322,13 @@ The threshold voltage is measured by connecting the LED in series with a protect
 </svg>
 
 ### The Planck constant from the slope
-From the equation $eU_\text{k} = hf$ we get the threshold voltage as a function of frequency:
+In the simplified model $eU_\text{k} \approx hf$, so the threshold voltage is approximately proportional to the frequency:
 ```latex
-U_\text{k} = \frac{h}{e}\,f
+U_\text{k} \approx \frac{h}{e}\,f
 ```
-When the threshold voltages of several LEDs of different colours are plotted as a graph $(f, U_\text{k})$, the points are approximately on a line whose slope is $k = \tfrac{h}{e}$. The Planck constant is obtained from the slope:
+When the threshold voltages of several LEDs of different colours are plotted as a graph $(f, U_\text{k})$, the points are approximately on a line whose slope according to the model is about $\tfrac{h}{e}$. The Planck constant is estimated from the slope:
 ```latex
-h = ek
+h \approx ek
 ```
 where $k$ is the slope of the fitted line ($\tfrac{\text{V}}{\text{Hz}} = \text{V}\,\text{s}$) and $e$ the elementary charge; $\text{C} \cdot \text{V}\,\text{s} = \text{J}\,\text{s}$. The slope is read from the fitted line, not from two measured points. In Graphical Analysis Pro the line is fitted with the choices **Curve Fit** and **Linear**, and the $m$ of the result box is the slope.
 
@@ -400,7 +400,9 @@ where $k$ is the slope of the fitted line ($\tfrac{\text{V}}{\text{Hz}} = \text{
   <circle cx="395.5" cy="104.5" r="6.5" fill="#6f00ac" stroke="#ffffff" stroke-width="2"/>
 </svg>
 
-In real series of measurements the measured points are usually not exactly on the same line because of measurement uncertainty. In addition, the line usually does not pass exactly through the origin: in the data of the figure it cuts the vertical axis about $0.05\,\text{V}$ below zero. The measured threshold voltage is not exactly $\tfrac{hf}{e}$: the electrons also receive a little extra energy from thermal motion, and the threshold voltage is defined as the extension of the line. The difference is typically about $0.1\,\text{V}$. When the difference is almost the same for all the LEDs, it shifts the line but does not change its slope. This is why the Planck constant is determined from the line of many LEDs and not from one LED. The width of the spectrum of the LED also brings uncertainty: the wavelength of the peak is known only to within a few nanometres.
+In real series of measurements the measured points are usually not exactly on the same line because of measurement uncertainty. In addition, the line usually does not pass exactly through the origin: in the data of the figure it cuts the vertical axis about $0.05\,\text{V}$ below zero. In a real measurement the threshold voltage is an approximate value determined by the method, not exactly $\tfrac{hf}{e}$. It depends on the structure and material of the LED, the temperature, the chosen current range and where the line is fitted; in addition, the electrons receive a little energy from thermal motion. In the data of this chapter the difference is about $0.1\,\text{V}$, but this is not a universal value and not necessarily the same for all LEDs.
+
+If the difference were the same for all LEDs, it would only shift the line. Because it varies from one LED to another, the experimental slope can differ from $\tfrac{h}{e}$, and the measurement gives an estimate of the Planck constant with its own uncertainty. This is why the Planck constant is determined from the line of many LEDs and not from one LED. The width of the spectrum of the LED also brings uncertainty: the wavelength of the peak is known only to within a few nanometres.
 
 ## Worked example
 A group measured the threshold voltages of five LEDs of different colours and fitted a line to the points $(f, U_\text{k})$. The fitted line passes through the points $(4.50 \cdot 10^{14}\,\text{Hz};\ 1.74\,\text{V})$ and $(7.50 \cdot 10^{14}\,\text{Hz};\ 2.96\,\text{V})$. The elementary charge is $e = 1.602 \cdot 10^{-19}\,\text{C}$. What value did the group get for the Planck constant?
@@ -411,11 +413,11 @@ A group measured the threshold voltages of five LEDs of different colours and fi
 
 <!-- vaihe -->
 
-**Principle.** At the threshold voltage the energy received by an electron is approximately the energy of a photon, $eU_\text{k} \approx hf$, so the slope of the graph $(f, U_\text{k})$ is $k = \tfrac{h}{e}$. The slope is calculated from two points of the fitted line that are far from each other, not from individual measured points.
+**Principle.** At the threshold voltage the energy received by an electron is approximately the energy of a photon, $eU_\text{k} \approx hf$, so in the model the slope of the graph $(f, U_\text{k})$ is about $\tfrac{h}{e}$. The slope is calculated from two points of the fitted line that are far from each other, not from individual measured points.
 
 <!-- vaihe -->
 
-**Formula solved.** The slope is $k = \tfrac{U_2 - U_1}{f_2 - f_1}$, and $h$ is solved from the equation $k = \tfrac{h}{e}$:
+**Formula solved.** The slope is $k = \tfrac{U_2 - U_1}{f_2 - f_1}$, and the estimate of the Planck constant $h$ is solved from the model equation $k \approx \tfrac{h}{e}$:
 ```latex
 h = ek = \frac{e\,(U_2 - U_1)}{f_2 - f_1}
 ```
@@ -446,11 +448,11 @@ h = ek = \frac{e\,(U_2 - U_1)}{f_2 - f_1}
 ## Common misconception
 Many people think that by increasing the voltage of an LED its light becomes bluer, because the electrons receive more energy. The energy of a photon is decided by the energy gap of the semiconductor, however, not by the voltage. A voltage greater than the threshold voltage increases the current, so more photons are created and the LED shines brighter, but the energy of every photon is still approximately $E_\text{g}$. The extra energy heats the LED. So blue light cannot be obtained from a red LED at any voltage, and too large a current only breaks the LED.
 
-Another mistake is to think that the measurement has failed if the line of the graph $(f, U_\text{k})$ does not pass through the origin. The measured threshold voltage differs from the value $\tfrac{hf}{e}$ by almost the same amount for all the LEDs. The difference shifts the line up or down but does not change its slope $\tfrac{h}{e}$, from which the Planck constant is obtained.
+Another mistake is to think that the measurement has failed if the line of the graph $(f, U_\text{k})$ does not pass through the origin. The measured threshold voltage differs from the value $\tfrac{hf}{e}$. When the difference is almost the same for all the LEDs, it shifts the line up or down but hardly changes the slope from which the Planck constant is estimated.
 
 ## Summary
 - In an LED an electron falls from the conduction band of the semiconductor into a hole of the valence band and creates one photon whose energy is approximately equal to the energy gap: $hf \approx E_\text{g}$.
 - An LED starts to conduct and emit light when the voltage reaches the threshold voltage: $eU_\text{k} \approx hf = \tfrac{hc}{\lambda}$. An LED of a shorter wavelength needs a greater threshold voltage.
 - The threshold voltage is obtained by extending the straight part of the $(U, I)$ graph to the voltage axis.
-- The slope of the graph $(f, U_\text{k})$ is $k = \tfrac{h}{e}$, so $h = ek$. The line does not have to pass through the origin.
+- In the model the slope of the graph $(f, U_\text{k})$ is about $\tfrac{h}{e}$, so the Planck constant is estimated from the slope: $h \approx ek$. The line does not have to pass through the origin, and the experimental slope can differ from $\tfrac{h}{e}$.
 - The spectrum of an incandescent lamp is continuous, that of an LED a narrow band and that of a laser diode a very narrow line.

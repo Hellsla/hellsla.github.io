@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 3dba5186ee293e46
+CONTENT-HASH: 7874b81a3deef5d7
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- The heading on the link to chemistry orbitals is not marked as an extension although the detailed counting exercises are.
 
 ## Checked
-- batch delta review (scope: the diff only, by the teacher's ruling): meta goal now "an orbital as a quantum state of the electron, pictured as a region where the probability exceeds a threshold" — matches lesson.md:273–274 and summary :1442 and the fi goal; physics right; hash equal at start and end.
+- Word-level diff since origin/main of this part checked for physics: values, units and significant figures, definitions (gamma decay, beta atomic masses, Hubble time, w_R and effective dose scope, conservation of B and L, photon interactions, ITER and Onkalo facts), worked solutions recomputed where numbers changed; formulas identical across languages (check_i18n).

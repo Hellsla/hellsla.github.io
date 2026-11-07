@@ -1,16 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 73b5a31d6409a888
-Round 1
+CONTENT-HASH: 5fa6e34cbd8f06bb
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- Own scratch script, 390 px, task card opened with Answer and solution: opened /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-b2-m4x9/fi-easy-fy8-5-L1-09.png (ordering of five hydrogen states; wrong order entered, 4/5 items marked); read in full. For fy8-6 I also cropped the card into three columns (/tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-b2-m4x9/s-fi-easy-6.png) to read the table, options and solution formulas at full size.
-- By script: no horizontal scroll at 390 px, no KaTeX error nodes. The packet's screenshot list was empty and not used; solutions.md and answers.py read as source only.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.

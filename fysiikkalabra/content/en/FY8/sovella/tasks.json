@@ -184,11 +184,20 @@
           "kind": "calc",
           "points": 4,
           "text": "How many kilograms of plutonium-238 must the generator contain for its thermal power to be $2000\\,\\text{W}$? What fraction of the plutonium of the generator is then plutonium-238? Assume that the whole energy of the decay is turned into heat in the generator.",
-          "answer": {
-            "value": 3.5,
-            "unit": "kg",
-            "tolerance": 0.03
-          },
+          "answer": [
+            {
+              "name": "m",
+              "value": 3.5,
+              "unit": "kg",
+              "tolerance": 0.03
+            },
+            {
+              "name": "share",
+              "value": 83,
+              "unit": "%",
+              "tolerance": 0.03
+            }
+          ],
           "criteria": [
             {
               "text": "Justifies that the activity is the power divided by the energy of one decay, $A = \\dfrac{P}{Q} \\approx 2.2 \\cdot 10^{15}\\,\\text{Bq}$, when $Q$ has been converted to joules.",
@@ -245,11 +254,20 @@
           "kind": "calc",
           "points": 4,
           "text": "How large is the thermal power of the generator $14$ years after the launch? How large would the electrical power be if the efficiency of the generator stayed the same? According to NASA, the real electrical power has decreased faster. What can be the reason for this?",
-          "answer": {
-            "value": 1790,
-            "unit": "W",
-            "tolerance": 0.01
-          },
+          "answer": [
+            {
+              "name": "P",
+              "value": 1790,
+              "unit": "W",
+              "tolerance": 0.01
+            },
+            {
+              "name": "Pel",
+              "value": 98,
+              "unit": "W",
+              "tolerance": 0.02
+            }
+          ],
           "criteria": [
             {
               "text": "Justifies that the thermal power is proportional to the activity and thus to the number of undecayed nuclei, so it decreases according to the decay law: $P = P_0 \\left(\\tfrac{1}{2}\\right)^{t / T_{1/2}}$.",
@@ -277,7 +295,7 @@
           "id": "e",
           "kind": "calc",
           "points": 4,
-          "text": "Plutonium-238 is most dangerous if it gets into the body. Suppose that in a launch accident plutonium dioxide dust with an activity of $10\\,\\text{Bq}$ remained in a person's lungs and that the dust stayed in the lungs for a whole year. The mass of the lungs is $1.2\\,\\text{kg}$, the radiation weighting factor of alpha radiation is $20$ and the tissue weighting factor of lung tissue is $0.12$. How large an effective dose would this cause in a year? Compare the result with the average annual dose of a person in Finland, $5.9\\,\\text{mSv}$.",
+          "text": "The alpha radiation of plutonium-238 is especially harmful if the substance gets into the body. Suppose that in a launch accident plutonium dioxide dust with an activity of $10\\,\\text{Bq}$ remained in a person's lungs and that the dust stayed in the lungs for a whole year. The mass of the lungs is $1.2\\,\\text{kg}$, the radiation weighting factor of alpha radiation is $20$ and the tissue weighting factor of lung tissue is $0.12$. How large an effective dose would this cause in a year? Compare the result with the average annual dose of a person in Finland, $5.9\\,\\text{mSv}$.",
           "answer": {
             "value": 0.57,
             "unit": "mSv",
@@ -319,7 +337,7 @@
       "title": "The school's caesium source",
       "source": "example",
       "source_note": "The pulse counts have been calculated from a model, and random variation has been added to them as in a measurement; they are not the results of a real measurement. Dose rate of background radiation outdoors: STUK (2026).",
-      "text": "In an upper secondary school physics classroom there is a sealed caesium-137 radiation source. The students placed the source in front of a GM tube and counted the pulses for $1.0\\,\\text{min}$ at different distances $r$. The distance was measured from the source to the window of the tube with a millimetre scale. Before the measurement they measured the background radiation without the source and got $112$ pulses in $5.0\\,\\text{min}$.\n\n| $r\\ (\\text{cm})$ | pulses in $1.0\\,\\text{min}$ |\n|---|---|\n| $2.0$ | $3048$ |\n| $3.0$ | $1806$ |\n| $4.0$ | $1172$ |\n| $5.0$ | $790$ |\n| $6.0$ | $617$ |\n| $8.0$ | $405$ |\n| $10.0$ | $256$ |\n| $14.0$ | $152$ |\n| $20.0$ | $94$ |\n\nRadioactive decay is random. When $N$ pulses are counted, the random variation in their number is about $\\sqrt{N}$.",
+      "text": "In an upper secondary school physics classroom there is a sealed caesium-137 radiation source. Under the supervision of the teacher, the students placed the source with tongs in front of a GM tube and counted the pulses for $1.0\\,\\text{min}$ at different distances $r$. The distance was measured from the source to the window of the tube with a millimetre scale. Before the measurement they measured the background radiation without the source and got $112$ pulses in $5.0\\,\\text{min}$.\n\n| $r\\ (\\text{cm})$ | pulses in $1.0\\,\\text{min}$ |\n|---|---|\n| $2.0$ | $3048$ |\n| $3.0$ | $1806$ |\n| $4.0$ | $1172$ |\n| $5.0$ | $790$ |\n| $6.0$ | $617$ |\n| $8.0$ | $405$ |\n| $10.0$ | $256$ |\n| $14.0$ | $152$ |\n| $20.0$ | $94$ |\n\nRadioactive decay is random. When $N$ pulses are counted, the random variation in their number is about $\\sqrt{N}$.",
       "parts": [
         {
           "id": "a",

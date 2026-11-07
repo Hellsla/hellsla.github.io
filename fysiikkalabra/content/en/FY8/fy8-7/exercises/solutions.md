@@ -167,7 +167,7 @@ $$\begin{aligned}
 
 2 true: a stimulated photon gets the energy, direction and phase of the incoming photon, so the waves of laser light are in step.
 
-3 false: with two levels the pumping light causes stimulated emission in atoms of the upper state as probably as it excites atoms of the ground state, so at most half of the atoms can be brought to the upper state. Population inversion is made by pumping a material that has at least three levels and a long-lived upper laser level.
+3 false: in the two-level model the pumping light causes stimulated emission in atoms of the upper state as probably as it excites atoms of the ground state, so at most half of the atoms can be brought to the upper state. In atomic and ion lasers, population inversion is made by pumping a material that has three or four levels and a long-lived upper laser level.
 
 4 false: dot A is smaller, so its energy gap is greater and the energy of the photon is greater. So dot A emits light of a shorter wavelength than dot B.
 

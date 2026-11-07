@@ -1,17 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: fdc5942edc3dece8
-ROUND: 2
+CONTENT-HASH: 29e493b0c24a1745
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] exercises.json fy8-6-L2-08 — the correct option is now the longest of the four (about 95 characters against 75-90) and the only one that pairs "sopusoinnussa" with the uncertainty comparison; the difference is small, but shortening it or lengthening one distractor would remove the cue.
-- [Minor] data table — column headers sit left of the right-aligned numbers (template matter, carried over).
+- none
 
 ## Checked
-- Round 1 Blocking resolved: the h = ek, Delta h, difference and red-LED lines are now aligned blocks with one short row each; all fit the 390 px card (measured: no overflow past the viewport; read at 2x in my own capture r2/fy8-6-390), results 6,376, 0,336, 0,25 and 1,82 V fully visible.
-- Opened the task text and table, all four rewritten options with feedback, and the full solution card at 390 px; 1280 px capture also fine. Feedback formulas (inline fractions) legible; the first-paragraph split and caption are short and labelled as example data.
-
-## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.

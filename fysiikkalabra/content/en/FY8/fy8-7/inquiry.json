@@ -96,7 +96,7 @@
         {
           "text": "At most a half, because the pump light also makes the atoms of the upper state emit.",
           "correct": true,
-          "feedback": "The values of the model support this: $33.3\\,\\%$, $40.0\\,\\%$ and $45.5\\,\\%$. The same photon is equally likely to excite an atom in the ground state or to cause stimulated emission in an excited atom, so the upper state cannot fill more than the lower state. That is why a laser medium needs at least three levels."
+          "feedback": "The values of the model support this: $33.3\\,\\%$, $40.0\\,\\%$ and $45.5\\,\\%$. The same photon is equally likely to excite an atom in the ground state or to cause stimulated emission in an excited atom, so the upper state cannot fill more than the lower state. That is why many atomic and ion lasers use three or four levels."
         },
         {
           "text": "No atoms at all, because a two-level atom cannot absorb the pump light.",

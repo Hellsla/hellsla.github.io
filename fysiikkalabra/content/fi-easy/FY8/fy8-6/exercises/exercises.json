@@ -334,7 +334,7 @@
       "choices": [
         {
           "text": "Mittaus on epäonnistunut. Sovitettu suora ei kulje origon kautta vaan leikkaa akselin nollan alapuolella.",
-          "feedback": "Suoran ei tarvitse kulkea origon kautta. Mitattu kynnysjännite eroaa arvosta $\\tfrac{hf}{e}$ suunnilleen yhtä paljon kaikilla LEDeillä. Tämä ero siirtää suoraa, mutta se ei muuta kulmakerrointa $\\tfrac{h}{e}$."
+          "feedback": "Suoran ei tarvitse kulkea origon kautta. Mitattu kynnysjännite eroaa arvosta $\\tfrac{hf}{e}$. Kun ero on suunnilleen sama kaikilla LEDeillä, se siirtää suoraa. Kulmakerroin ei silloin juuri muutu."
         },
         {
           "text": "Mittauksessa on systemaattinen virhe. Ryhmän Planckin vakio on hyväksyttyä pienempi, eikä ero ole nolla.",

@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 4aac98fc1dee8909
+CONTENT-HASH: 4c881d9b6b28f8be
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] hfir-refueling caption: 'particles move through the water faster than light' should read 'charged particles' (Cherenkov radiation needs charged ones).
+- none
 
 ## Checked
-- batch delta review: hfir-refueling and dosimeter-chernobyl photos opened; alts match (blue-glowing core in round lids; yellow pocket meter held on a knee); captions tie to penetrating power and GM tube; layout fine at 1280 and 390 px.
+- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.

@@ -1,9 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: aafdb4f31ff8bc16
+CONTENT-HASH: bc7041c806d858ab
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-- batch delta review: cloud-chamber-beta and cloud-chamber-alpha photos opened; alt texts match (thin winding tracks from a source top left; short thick straight tracks); captions physically correct (ionisation density vs track); both float right beside the decay-type text, no clipping at 1280 or 390 px.
+- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.

@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: d2f0ed57be8db41f
+CONTENT-HASH: a5bcdc4c18223477
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- lesson.md, Yleinen virhekäsitys — "Moni ajattelee ... Hän ajattelee" shifts from a general to a personal "hän"; write "Moni ajattelee myös, että galaksit lentävät...".
-- lesson.md, Pimeä aine — the sentence "Myös galaksijoukkojen galaksit liikkuvat niin nopeasti, ja joukot taivuttavat ... niin paljon, että ..." is long for Selkeä suomi; split it in two.
-- lesson.md, Hubblen ja Lemaîtren laki — "Valo kulkee megaparsekin noin 3,26 miljoonassa vuodessa" is awkward; "Valolta kuluu megaparsekin matkaan noin 3,26 miljoonaa vuotta".
+- none
 
 ## Checked
-Selkeä suomi: short sentences, new terms explained at first use (suoraan verrannollinen, ionisoida, absorboida, luhistua, sieppaavat), glossary terms consistent. meta.json key_concepts: 5 items, each explain at most 20 words, no numbers or $. Inquiry structure and correct flags identical to en. Exit ticket answers clear. Captures: contact-1, sim-1280. Exercises in their own report.
+- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.

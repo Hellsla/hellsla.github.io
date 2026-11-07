@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 0f20175ebae17ba0
+CONTENT-HASH: a2f4be8f5f40f7c8
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] fy8-8 kuvat sijaitsevat ennen otsikkoa "Alfa-, beeta- ja gammahajoaminen", joten kuvatekstit esittelevät alfa- ja beetahiukkaset ennen tekstiä; järjestys beeta ennen alfaa on päinvastainen kuin tekstissä.
+- none
 
 ## Checked
-batch delta review: opened the source images in assets/pics/fy8 and rendered fy8-8: 2 cloud chamber photos at 1280 and 390 px; alt text matches what is visible, captions physically correct and in plain Finnish, units in LaTeX; figure.unit-photo floats right at 1280 px (x 744, width 320), full width at 390 px, no overflow or clipping.
+- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.
