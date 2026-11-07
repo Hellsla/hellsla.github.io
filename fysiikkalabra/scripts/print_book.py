@@ -80,7 +80,10 @@ def page_url(lang, name):
 def render_chapter(page, f, url, label):
     page.goto(f.as_uri(), wait_until="networkidle")
     page.evaluate("() => window.dispatchEvent(new Event('beforeprint'))")
-    title = page.evaluate("() => document.querySelector('main h1')?.textContent.trim() || document.title")
+    # the title as HTML: a formula in it stays KaTeX (rule 1); the MathML copy is dropped so it is not printed twice
+    title = page.evaluate("() => { const h = document.querySelector('main h1'); if (!h) return document.title; "
+                          "const c = h.cloneNode(true); c.querySelectorAll('.katex-mathml').forEach((m) => m.remove()); "
+                          "return c.innerHTML.trim(); }")
     page.add_style_tag(content=BOOK_CSS)
     box = (f'<div class="book-qr">{qr_svg(url)}<p>{html.escape(label)}:<br>'
            f'<span class="u">{html.escape(url.replace("https://", ""))}</span></p></div>')
@@ -102,9 +105,10 @@ li .t{flex:1}li .p{flex:none;width:8mm;text-align:right}"""
 def front_html(course, lang, course_title, toc, toc_start):
     t = TEXT[lang]
     url = page_url(lang, f"{course}.html")
-    rows = "".join(f'<li><span class="n">{i}</span><span class="t">{html.escape(title)}</span>'
+    rows = "".join(f'<li><span class="n">{i}</span><span class="t">{title}</span>'
                    f'<span class="p">{p}</span></li>' for i, (title, p) in enumerate(toc, 1))
-    return (f'<!doctype html><html lang="{lang[:2]}"><meta charset="utf-8"><style>{FRONT_CSS}</style><body>'
+    return (f'<!doctype html><html lang="{lang[:2]}"><meta charset="utf-8">'
+            f'<link rel="stylesheet" href="{(SITE / "vendor/katex/katex.min.css").as_uri()}"><style>{FRONT_CSS}</style><body>'
             f'<div class="cover"><div><div class="brand">Ruukkilabra</div><div class="code">{course}</div>'
             f'<h1>{html.escape(course_title)}</h1></div><div><div class="qr">{qr_svg(url)}<div>{t["course_qr"]}:<br>'
             f'{html.escape(url.replace("https://", ""))}</div></div><p class="note">{t["note"]}</p></div></div>'
@@ -178,7 +182,10 @@ def main():
             for title, r in rendered:
                 toc.append((title, p))
                 p += len(r.pages)
-            page.set_content(front_html(course, a.lang, course_title, toc, front_n))
+            front_file = out / f".{course}-{a.lang}-front.html"   # a file, so the page may load KaTeX's file:// CSS
+            front_file.write_text(front_html(course, a.lang, course_title, toc, front_n), encoding="utf-8")
+            page.goto(front_file.as_uri(), wait_until="networkidle")
+            front_file.unlink()
             front = PdfReader(io.BytesIO(page.pdf(format="A5", prefer_css_page_size=True)))
             if len(front.pages) == front_n:
                 break
