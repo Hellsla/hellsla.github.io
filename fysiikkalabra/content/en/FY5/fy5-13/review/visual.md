@@ -1,12 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 705d3af808b796fe
+CONTENT-HASH: 45e3242fc73a538e
 
 ## Blocking
 
 ## Polish
-- [Minor] review/shots: no capture shows the optional Find-the-error item opened; I rendered it myself at 390 px (opened details) and checked it there. Consider adding it to the captures.
 
 ## Checked
-- Own 390 px render of the opened Find-the-error item: the aligned display has two rows with the = signs aligned, fractions in display size, units upright with thin space, no clipping; the formula scrolls 306/306 px (no overflow) and the page scrollWidth is 390 (no horizontal scroll).
-- Contact captures fy5-13-stage-sovella-390-2.png (fi): the item sits collapsed and the surrounding layout is intact.
-- Decimal separator matches the language; text outside the formula unchanged.
+light delta review (teacher 2026-11-07): two changed sentences only (ideal reflection, nodes vibrate a little); own 390 px element captures of the current built page preview/en/fy5-13.html (hash unchanged since the stamped review/shots), inline KaTeX wrap scan of the whole page: none wraps; $\tfrac{\lambda}{2}$, $\tfrac{\lambda}{4}$ inline intact.

@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 88efef8753545278
+CONTENT-HASH: 463dc8311fdab833
+
 ## Blocking
 (none)
 
 ## Polish
-- Kuvan Maa on pieni 360 px:ssä; alt-teksti kuvaa sen silti riittävästi.
+- [Minor] lesson.md Newtonin gravitaatiolaki — "Henry Cavendish määritti vuonna 1798 Maan keskitiheyttä mittaamalla": a completed determination takes the accusative — "Henry Cavendish määritti vuonna 1798 Maan keskitiheyden mittaamalla …" (as the exercise L3-04 already says).
 
 ## Checked
-batch delta review: opened captures at 360 and 1280 px; photo loads, floats right beside the text at 1280 px and fills the column at 360 px, no clipping or horizontal overflow; alt text and caption natural Finnish, factual, consistent with the image and neighbouring paragraph; credit line present under the caption; numbers with units in LaTeX.
+- light delta review (teacher 2026-11-07): the gravitational-constant paragraph with the new Cavendish sentences at 390 px; formula line after it unchanged and unwrapped; scrollWidth 390.

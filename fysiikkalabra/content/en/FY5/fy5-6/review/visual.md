@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: c1a58d89ce42d050
+CONTENT-HASH: e85d23c8af85e2db
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] lesson.md, Summary — "with nothing to support you" switches to the second person, unlike the rest of the summary — "…falling freely together with the surroundings with nothing supporting the body".
 
 ## Checked
-- batch delta review: opened fy5-6-1280-0 and fy5-6-360-0; photo loads, floats right beside the text at 1280 px and sits in the column at 360 px without clipping or overflow; caption and alt are natural English, factual and consistent with the picture and the adjacent paragraph; credit line present under the caption.
+light delta review (teacher 2026-11-07): changed passages only (weightlessness definition, new real-orbits paragraph, summary bullet); own 390 px element captures of the current built page preview/en/fy5-6.html (hash unchanged since the stamped review/shots), inline KaTeX wrap scan of the whole page: none wraps; nothing clipped.

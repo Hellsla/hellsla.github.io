@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: d4a87ce48229af48
+CONTENT-HASH: 0dc75d7c4482d80e
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] review/shots: no capture shows the optional Find-the-error item opened; I rendered it myself at 390 px (opened details) and checked it there. Consider adding it to the captures.
+(none)
 
 ## Checked
-- Own 390 px render of the opened Find-the-error item: the aligned display has two rows with the = signs aligned, fractions in display size, units upright with thin space, no clipping; the formula scrolls 306/306 px (no overflow) and the page scrollWidth is 390 (no horizontal scroll).
-- Contact captures fy5-13-stage-sovella-390-2.png (fi): the item sits collapsed and the surrounding layout is intact.
-- Decimal separator matches the language; text outside the formula unchanged.
+- light delta review (teacher 2026-11-07): the "Aalto ja sen heijastus" and "Solmut ja kuvut" paragraphs with the two new hedging sentences at 390 px; $\tfrac{\lambda}{2}$, $\tfrac{\lambda}{4}$ unwrapped; scrollWidth 390.

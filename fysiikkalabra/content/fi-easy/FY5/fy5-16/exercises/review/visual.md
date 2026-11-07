@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: c27fc22a4b51258e
-Mode: delta (new task fy5-16-L2-08), Round: 1
+CONTENT-HASH: e69929d75809755a
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] fy5-16-L2-08 option 4 feedback and solution — "$84$–$86\,\text{dB}$" can break across lines after "84" at 390 px — set the range as one formula, e.g. $84\text{–}86\,\text{dB}$ (same in the reviewed Finnish).
+- [Minor] solutions.md fy5-16-L3-01 Sijoitus: the line was touched (t_v), and the chain "Annos $= \left(\dfrac{4{,}0\,\text{h}}{4{,}0\,\text{h}} + …\right) \cdot 100\,\% = … = 125\,\%$" is a 496 px inline formula in a 304 px column. At 390 px it scrolls sideways and the result is out of view. Fix: write it as its own chain, e.g. "$D = … = 125\,\%$", so the build sets it as aligned rows.
 
 ## Checked
-- Own 390 px render of preview/fi-easy/fy5-16.html after the page scripts ran, task fy5-16-L2-08 with answer feedback and solution opened (scratch script shot_trv5.py): page scrollWidth 390, no element outside the viewport except inside a scroll box, no KaTeX error source, no raw $ left, no JS errors.
-- Opened the task captures in tiles: scenario text, table (caption, header with LaTeX, 4 rows; fits the card, no scroll), choice feedback, full worked solution; units, decimal marks and case endings render correctly. Table cells: decimal comma in fi-easy, point in en (converted correctly at render).
-- Task text and solution read as Selkeä suomi; language matches the reviewed Finnish set.
+- light delta review (teacher 2026-11-07): review/shots was missing, so I made fresh captures with screenshot.py after a preview build that skipped the en inquiry's learn-length error. I opened 390 px tiles of these cards with every solution open: L1-01, L1-03, L1-04, L2-01, L2-02, L2-05, L2-07, L2-08, L3-01, L3-02, L3-04 and L3-05 (all three tiles). I also opened the rewritten task texts and the L2-08 choice feedback (revealed). The renaming from t_sall to t_v and from "sallittu" to "vertailuaika" is complete and consistent with the lesson, and the questions stand last. No inline formula wraps; L3-01's is the only one that scrolls.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

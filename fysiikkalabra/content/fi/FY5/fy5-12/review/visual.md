@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 579965d0db1b68e7
+CONTENT-HASH: dae80bdf3e841595
+
 ## Blocking
 (none)
 
 ## Polish
-- Kuva on pieni ja matalakontrastinen pystykuva (noin 150 px leveä 1280 px:ssä); kuvio erottuu heikosti, mutta alt ja kuvateksti auttavat.
+- [Minor] ripple-model-two-sources.webp caption — unlike the fy5-11 caption it does not say that the contrast is kept constant with distance (no decay is shown) — add e.g. "Todellisuudessa aallot heikkenevät kauempana; kuvassa kontrasti on tasattu."
 
 ## Checked
-batch delta review: opened captures at 360 and 1280 px; photo loads, floats right beside the text at 1280 px and fills the column at 360 px, no clipping or horizontal overflow; alt text and caption natural Finnish, factual, consistent with the image and neighbouring paragraph; credit line present under the caption; numbers with units in LaTeX.
+- light delta review (teacher 2026-11-07): the new figure at 390 px (320 px image) and the 960 px asset, caption, credit and alt text. Two white source dots visible at the top, about 3λ apart, nodal lines fan downward as grey bands: matches the caption and alt text. scrollWidth 390.

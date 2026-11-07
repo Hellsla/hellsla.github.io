@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 881317d6a36fd926
+CONTENT-HASH: cc23e4c2ca6e21a8
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-batch delta review: chapter title and chapter cross-reference renames only (no figures, maths or numbers changed); opened contact-1 captures (fy5-13, fy5-14 plus layout of the long new titles at 390 px), titles wrap cleanly, cross-references read naturally.
+light delta review (teacher 2026-11-07): two added sentences only (percentages as model values, cavitation); own 390 px element captures of the current built page preview/en/fy5-17.html (hash unchanged since the stamped review/shots), inline KaTeX wrap scan of the whole page: none wraps.

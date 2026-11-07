@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 8d5b53da7cc9270f
+CONTENT-HASH: 977ddad9a5067b61
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] alt text of sound-level-meter-park.webp — "62 dB" in the alt is plain text, while the caption sets it as maths; alt cannot render LaTeX, so consider "reads sixty-two decibels" to keep one convention.
+- [Minor] lesson.md, What a meter measures — $20\,\mu\text{Pa}$ sets the micro prefix as italic μ — upright prefix inside the unit, e.g. $20\,\text{µPa}$ / \upmu.
+- [Minor] lesson.md, park-photo caption — the caption now carries the A-weighting explanation that the new section repeats (7 lines at 390 px) — keep the caption to the display and the 62 dB comparison.
 
 ## Checked
-- batch delta review: opened fy5-15-1280-0 and fy5-15-360-0; photo loads, floats right beside the text at 1280 px and sits in the column at 360 px without clipping or overflow; caption and alt are natural English, factual and consistent with the picture and the adjacent paragraph; credit line present under the caption.
+light delta review (teacher 2026-11-07): changed passages only (photo caption, thresholds, decibel scale, new section "What a meter measures", formula legend, worked example, summary, exit ticket); own 390 px element captures of the current built page preview/en/fy5-15.html (hash unchanged since the stamped review/shots), inline KaTeX wrap scan of the whole page: none wraps; nothing clipped.

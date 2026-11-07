@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 59a571abcd4ef802
+CONTENT-HASH: 7b2c3b0b1c173327
 
 ## Blocking
 - none
@@ -8,4 +8,4 @@ CONTENT-HASH: 59a571abcd4ef802
 - none
 
 ## Checked
-- batch delta review: the new licensed photo (figure.unit-photo) captured in context from preview/fi-easy/fy5-14.html at 390 and 1280 px and opened (review/shots has no dedicated photo capture). The image loads at full resolution, scales inside the column on a phone and sits beside its paragraph at 1280 px. The caption is under the image with its credit line ("Kuva: …, licence"). Nothing is clipped and there is no horizontal overflow. The caption and alt text were read against the picture and the neighbouring paragraph: plain S2 Finnish, quantities in LaTeX.
+- light delta review (teacher 2026-11-07): I checked only the two changed worked-example stages, Periaate (the ideal model, with the passenger almost on the track line) and Tulos (the gradual frequency drop when the passenger stands to the side). I opened review/shots/fy5-14-example-390-1.png and -2.png, where every stage is revealed, and both stages read in sequence with their neighbours. The Hz values stay on one line and the stage headings are intact. The added sentences are short, clear S2 Finnish and consistent with the problem text ("aivan radan vieressä"). Nothing is clipped, and a page scan at 390 px found no inline formula that wraps.

@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: fabc843ad4a1e368
+CONTENT-HASH: a45736261bc2d590
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] solutions.md — the two aligned display blocks are set in a smaller size than body text on a phone (flFitMath), still legible; same as the Finnish.
+- none
 
 ## Checked
-- Own 390 px render (scratch script, after the page's scripts, hints, feedback and solution open) of fy5-5-L2-08 in fi-easy: page scrollWidth 390, no element outside a scroll box (only KaTeX-internal svg paths, clipped by their own box).
-- Opened the whole task card in tiles: task text, every choice with feedback, answer, solution (Find/Principle/Model answer).
+- light delta review (teacher 2026-11-07): I checked only the rewritten opening of fy5-5-L3-04 (what Cavendish measured, then "Nykyään laskun voi tehdä toisin päin …"). I captured the task text at 390 px from the rebuilt preview and opened it. The sequence reads logically in short S2 sentences, the situation comes first and the a–c questions last, and the data ($g = 9{,}81\,\text{m/s}^2$, $6371\,\text{km}$) stays on one line. Nothing is clipped, and a page scan at 390 px found no inline formula that wraps or scrolls.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

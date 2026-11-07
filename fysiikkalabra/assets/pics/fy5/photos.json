@@ -80,21 +80,23 @@
     "title": "Laskettu mallikuva: diffraktio raossa aaltoaltaassa",
     "creator": "Ruukkilabra",
     "source": "https://ruukkilab.fi/",
-    "licence": "laskettu malli",
+    "licence": "ei lisenssiä: Ruukkilabran oma laskettu kuva",
     "edit": "Laskettu ohjelmalla lessons/FY5/fy5-11/ripple_model.py (korvaa epäterävän valokuvan, FY5-korjauskierros C5)",
     "checked": "2026-11-07",
     "width": 960,
-    "height": 640
+    "height": 640,
+    "computed": true
   },
   "ripple-model-two-sources.webp": {
     "title": "Laskettu mallikuva: kahden lähteen interferenssi aaltoaltaassa",
     "creator": "Ruukkilabra",
     "source": "https://ruukkilab.fi/",
-    "licence": "laskettu malli",
+    "licence": "ei lisenssiä: Ruukkilabran oma laskettu kuva",
     "edit": "Laskettu ohjelmalla lessons/FY5/fy5-11/ripple_model.py (korvaa tumman valokuvan, FY5-korjauskierros C5)",
     "checked": "2026-11-07",
     "width": 960,
-    "height": 640
+    "height": 640,
+    "computed": true
   },
   "guitar-playing.webp": {
     "title": "Close up of an acoustic guitar being played",

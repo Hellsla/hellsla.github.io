@@ -151,6 +151,8 @@
   "lesson": {
     "photos": "Valokuvat",
     "photo_by": "Kuva",
+    "computed_by": "Laskettu kuva",
+    "computed_note": "Laskettu mallista tätä sivustoa varten.",
     "steps_nav": "Oppitunnin vaiheet",
     "theory": "Teoria",
     "simulation": "Simulaatio",

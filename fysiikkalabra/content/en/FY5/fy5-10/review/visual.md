@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: df914065e3c42db8
+CONTENT-HASH: 82182e756639fe8e
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- [Minor] lesson.md, The speed depends on the medium — "The very long wave of a tsunami, again, travels the faster the deeper the sea is." reads awkwardly — "A tsunami, whose wavelength is very long, travels faster the deeper the sea is."
 
 ## Checked
-- batch delta review: opened the captures of the changed passages (theory-1280 / example-390), source diff read; no figure changed; text-only edits render cleanly, no clipping, no horizontal overflow, no inline formula wrapped.
+light delta review (teacher 2026-11-07): changed passages only (travelling disturbance, speed/dispersion paragraph, summary, exit ticket); own 390 px element captures of the current built page preview/en/fy5-10.html (hash unchanged since the stamped review/shots), inline KaTeX wrap scan of the whole page: none wraps; long paragraphs still readable at 390 px.

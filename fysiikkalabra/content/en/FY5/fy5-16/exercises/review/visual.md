@@ -1,17 +1,10 @@
-VERDICT: PASS
-CONTENT-HASH: 9e5206ef58e39b4a
-Mode: delta (new task fy5-16-L2-08), Round: 1
+VERDICT: FAIL
+CONTENT-HASH: a8679ac7293e5321
 
 ## Blocking
-(none)
+- [Major] fy5-16 exercises — visual verification incomplete: no captures exist and screenshot.py fy5-16 --lang en cannot make them, because the lesson build stops on inquiry.json learn[0] (25 words) — the reworded task texts and the many t_ref fractions cannot be checked for wrapping at 390 px — shorten learn[0], capture, re-review.
 
 ## Polish
-- [Minor] fy5-16-L2-08 option 4 feedback and solution — "$84$–$86\,\text{dB}$" breaks across lines after "84" at 390 px (dash starts the next line) — set the range as one formula, e.g. $84\text{–}86\,\text{dB}$ (same in the reviewed Finnish).
 
 ## Checked
-- Own 390 px render of preview/en/fy5-16.html after the page scripts ran, task fy5-16-L2-08 with answer feedback and solution opened (scratch script shot_trv5.py): page scrollWidth 390, no element outside the viewport except inside a scroll box, no KaTeX error source, no raw $ left, no JS errors.
-- Opened the task captures in tiles: scenario text, table (caption, header with LaTeX, 4 rows; fits the card, no scroll), choice feedback, full worked solution; units, decimal marks and case endings render correctly. Table cells: decimal comma in fi-easy, point in en (converted correctly at render).
-- Task text and solution read as English; language matches the reviewed Finnish set.
-
-## Scores
-illustrations 5 · typography 5 · language 5 · accessibility 4
+light delta review (teacher 2026-11-07): diff read in full (t_perm → t_ref, new reasonableness and feedback sentences); no page could be looked at.

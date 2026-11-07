@@ -2,7 +2,7 @@
   "version": 1,
   "contribution": "The chapter applies decibels to health and engineering: noise exposure dose (a rise of $3\\,\\text{dB}$ halves the reference time, the action values for noise at work in Finnish Government Decree 85/2006), noise control at the source, along the path and at the ear, room acoustics and reverberation, active noise cancelling as destructive interference, and the energy conversion in a loudspeaker and a microphone.",
   "learn": [
-    "estimate the harms of noise and calculate from a noise level the reference time in which the dose of the upper action value builds up.",
+    "estimate the harms of noise and calculate the reference time of a noise dose from a noise level.",
     "compare ways of controlling noise at the source, along the path and at the ear.",
     "explain reverberation, active noise cancelling, and the working principle of a loudspeaker and a microphone."
   ],

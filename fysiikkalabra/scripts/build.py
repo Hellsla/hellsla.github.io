@@ -276,13 +276,16 @@ def photos(html):
     def one(m):
         wide, ref, attrs, cap = m.group(1) or "", m.group(2), m.group(3), m.group(4) or ""
         c = photo_credits(ref); used.append(c)
+        credit = (f'{T("lesson.computed_by")}: {esc(c["creator"])}' if c.get("computed")      # a picture computed from a model (2026-11-07 FY5 ripple tank): no photo, no licence
+                  else f'{T("lesson.photo_by")}: {esc(c["creator"])}, {esc(c["licence"])}')
         return (f'<figure class="unit-photo{wide}"><img src="{ref}"{attrs} width="{c["width"]}" height="{c["height"]}" loading="lazy" decoding="async">'
-                f'<figcaption>{cap} <span class="photo-credit">{T("lesson.photo_by")}: {esc(c["creator"])}, {esc(c["licence"])}</span></figcaption></figure>')
+                f'<figcaption>{cap} <span class="photo-credit">{credit}</span></figcaption></figure>')
     html = PHOTO.sub(one, html)
     if not used: return html, ""
     items = "".join(f'<li><strong>{esc(c["title"])}</strong>. {esc(c["creator"])}. '
-                    + f'<a href="{esc(c["source"])}">{T("units.credit_source")}</a>, '
-                    + (f'<a href="{esc(c["licence_url"])}">{esc(c["licence"])}</a>' if c.get("licence_url") else esc(c["licence"]))
+                    + (T("lesson.computed_note") if c.get("computed") else
+                       f'<a href="{esc(c["source"])}">{T("units.credit_source")}</a>, '
+                       + (f'<a href="{esc(c["licence_url"])}">{esc(c["licence"])}</a>' if c.get("licence_url") else esc(c["licence"])))
                     + "</li>" for c in used)
     return html, f'<section class="unit-credits" id="credits"><h2>{T("lesson.photos")}</h2><ul>{items}</ul></section>'
 

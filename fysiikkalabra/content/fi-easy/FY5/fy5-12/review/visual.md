@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 9713a07afd908166
+CONTENT-HASH: a8ec381d11db29f6
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] figure.unit-photo (ripple-tank-two-sources) — the portrait image renders only about 150 px wide at 390 px and is dark, so the reinforcing and cancelling directions the caption names are barely visible — optionally a landscape crop of the interference region.
+- [Minor] pics/fy5/ripple-model-two-sources.webp: at the 320 px display width the nodal lines ("tasaisen harmaita viivoja") are clearest at the outer edges and fainter near the centre. Optionally add a pointer to the caption ("näkyvät selvimmin kuvan alaosassa") so an S2 reader finds them.
 
 ## Checked
-- batch delta review: the new licensed photo (figure.unit-photo) captured in context from preview/fi-easy/fy5-12.html at 390 and 1280 px and opened (review/shots has no dedicated photo capture). The image loads at full resolution, scales inside the column on a phone and sits beside its paragraph at 1280 px. The caption is under the image with its credit line ("Kuva: …, licence"). Nothing is clipped and there is no horizontal overflow. The caption and alt text were read against the picture and the neighbouring paragraph: plain S2 Finnish, quantities in LaTeX.
+- light delta review (teacher 2026-11-07): I checked only the new computed picture, its alt text and its caption. I captured the figure in context at 390 px (both 1× and 2×) and at 1280 px from the rebuilt preview, opened every capture and also opened the source image. Both white source points are visible at the top, the checkerboard pattern between them and the radial maxima and nodal lines are legible, and the old dark, glare-covered photo is gone. The caption matches the picture: the sources are in phase, three wavelengths apart, light means crest, and the grey lines are where the waves cancel. The credit reads "Kuva: Ruukkilabra, laskettu malli". Nothing is clipped. The page is only 1 px wider than the screen at 390 px with every box forced open, outside the changed passage.
