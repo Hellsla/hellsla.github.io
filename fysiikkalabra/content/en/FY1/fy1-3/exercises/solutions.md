@@ -15,7 +15,7 @@
 **Formula:** The measurement error is the difference between the result and the true value: $\text{measurement error} = x - x_\text{true}$
 **Conversions:** Both lengths are in centimetres, so no conversions are needed.
 **Substitution:** $x - x_\text{true} = 20.3\,\text{cm} - 20.0\,\text{cm} = +0.3\,\text{cm}$
-**Answer:** $0.3\,\text{cm}$, that is, the result is too large. The difference is known only to one decimal place, because both lengths are given with one decimal place.
+**Answer:** $+0.3\,\text{cm}$, that is, the result is too large. The difference is known only to one decimal place, because both lengths are given with one decimal place.
 **Reasonableness:** The result $20.3\,\text{cm}$ is larger than the true value $20.0\,\text{cm}$, so the error must be positive. Relative to the length the error is $\dfrac{0.3\,\text{cm}}{20.0\,\text{cm}} \approx 1.5\,\%$, which is a large error for a tape measure (a tape is usually accurate to about a millimetre), so the cause is probably systematic, for example a worn start of the tape or a wrong zero.
 
 ## fy1-3-L1-03
@@ -64,17 +64,17 @@
 **Find:** the average error of the tape $\Delta L_\text{sys}$ in the unit $\text{mm}$
 **Principle:** The rod is the same length all the time, and the worn start of the tape adds the same amount to every reading: this is a systematic error. The readings vary slightly because of random error, so the error is estimated as the difference between the mean of the readings and the true value.
 **Formula:** $\bar{L} = \dfrac{L_1 + L_2 + L_3}{3}$ and $\Delta L_\text{sys} = \bar{L} - L_0$
-**Conversions:** The result comes out in metres, and $1\,\text{m} = 1000\,\text{mm}$, so it is multiplied by a thousand.
-**Substitution:** The sum is $1.012\,\text{m} + 1.009\,\text{m} + 1.011\,\text{m} = 3.032\,\text{m}$, so $\bar{L} = \dfrac{3.032\,\text{m}}{3} = 1.01067\,\text{m}$ and $\Delta L_\text{sys} = 1.01067\,\text{m} - 1.000\,\text{m} = 0.01067\,\text{m} = 10.67\,\text{mm}$
-**Answer:** about $11\,\text{mm}$ (calculator value $10.67\,\text{mm}$): the readings vary by about $\pm 1.5\,\text{mm}$, so the mean should not be stated more precisely than a millimetre.
-**Reasonableness:** Each reading is $9\,\text{mm}$–$12\,\text{mm}$ too large, so the mean $11\,\text{mm}$ is between these. The tape shows about $1\,\%$ too much, and the sign of the error is positive, because the readings exceed the true value.
+**Conversions:** The result comes out in metres. Since $1\,\text{m} = 1000\,\text{mm}$, $1000\,\text{mm}$ is written in place of the metre.
+**Substitution:** The sum is $1.012\,\text{m} + 1.009\,\text{m} + 1.011\,\text{m} = 3.032\,\text{m}$, so $\bar{L} = \dfrac{3.032\,\text{m}}{3} = 1.01067\,\text{m}$ and $\Delta L_\text{sys} = 1.01067\,\text{m} - 1.000\,\text{m} = 0.01067\,\text{m}$, that is, $\Delta L_\text{sys} = 0.01067 \cdot 1000\,\text{mm} = 10.67\,\text{mm}$
+**Answer:** $10.7\,\text{mm}$ (calculator value $10.67\,\text{mm}$). The half-range of the readings is $1.5\,\text{mm}$; its first figure is 1, so it is given with two figures and the result to tenths of a millimetre: $10.7\,\text{mm} \pm 1.5\,\text{mm}$.
+**Reasonableness:** Each reading is $9\,\text{mm}$–$12\,\text{mm}$ too large, so the result $10.7\,\text{mm}$ is between these. The tape shows about $1\,\%$ too much, and the sign of the error is positive, because the readings exceed the true value.
 
 ## fy1-3-L2-03
 **Given:** $L_1 = 12.4\,\text{cm}$, $L_2 = 0.125\,\text{m}$, $L_3 = 123\,\text{mm}$
 **Find:** the mean $\bar{L}$ in the unit $\text{cm}$
 **Principle:** A mean can be calculated only from numbers in the same unit, because numbers in different units cannot be added. So convert all results to centimetres first.
 **Formula:** $\bar{L} = \dfrac{L_1 + L_2 + L_3}{3}$
-**Conversions:** $0.125\,\text{m} = 12.5\,\text{cm}$, because $1\,\text{m} = 100\,\text{cm}$, and $123\,\text{mm} = 12.3\,\text{cm}$, because $10\,\text{mm} = 1\,\text{cm}$.
+**Conversions:** $100\,\text{cm}$ is written in place of the metre and $0.1\,\text{cm}$ in place of the millimetre: $0.125 \cdot 100\,\text{cm} = 12.5\,\text{cm}$ and $123 \cdot 0.1\,\text{cm} = 12.3\,\text{cm}$.
 **Substitution:** The sum is $12.4\,\text{cm} + 12.5\,\text{cm} + 12.3\,\text{cm} = 37.2\,\text{cm}$, so $\bar{L} = \dfrac{37.2\,\text{cm}}{3} = 12.4\,\text{cm}$
 **Answer:** $12.4\,\text{cm}$, three significant figures like the measurement results.
 **Reasonableness:** The mean is between the smallest result $12.3\,\text{cm}$ and the largest result $12.5\,\text{cm}$. If the numbers had not been converted, the sum $12.4 + 0.125 + 123$ would give the absurd mean $45.2$, so the conversion is necessary.
@@ -102,10 +102,10 @@
 ## fy1-3-L3-02
 **Given:** the number of sheets $n = 250$, the smallest scale division $d = 1.0\,\text{mm}$
 **Find:** the error estimate of the thickness of one sheet $\Delta h_1$ in the unit $\mu\text{m}$
-**Principle:** The thickness of the stack is the sum of $n$ equally thick sheets, $h = n h_1$. The thickness of the stack has a reading error, and because the number of sheets is exact, the error of the thickness of one sheet is the error of the stack divided by $n$.
+**Principle:** The thickness of the stack is the sum of $n$ equally thick sheets, $h = n h_1$. The reading of the stack's thickness has an uncertainty, and because the number of sheets is exact, the uncertainty of the thickness of one sheet is the uncertainty of the stack divided by $n$.
 **Formula:** $\Delta h = \dfrac{d}{2}$ and $\Delta h_1 = \dfrac{\Delta h}{n}$, so $\Delta h_1 = \dfrac{d}{2n}$
-**Conversions:** The result comes out in millimetres, and $1\,\text{mm} = 1000\,\mu\text{m}$, so it is multiplied by a thousand.
-**Substitution:** $\Delta h_1 = \dfrac{1.0\,\text{mm}}{2 \cdot 250} = \dfrac{0.5\,\text{mm}}{250} = 0.0020\,\text{mm} = 2.0\,\mu\text{m}$
+**Conversions:** The result comes out in millimetres. Since $1\,\text{mm} = 1000\,\mu\text{m}$, $1000\,\mu\text{m}$ is written in place of the millimetre.
+**Substitution:** $\Delta h_1 = \dfrac{1.0\,\text{mm}}{2 \cdot 250} = \dfrac{0.5\,\text{mm}}{250} = 0.0020\,\text{mm}$, that is, $\Delta h_1 = 0.0020 \cdot 1000\,\mu\text{m} = 2.0\,\mu\text{m}$
 **Answer:** $2\,\mu\text{m}$, one significant figure, because the error estimate is rounded to one significant figure; the number of sheets is an exact number.
 **Reasonableness:** The thickness of ordinary copy paper is about $0.1\,\text{mm} = 100\,\mu\text{m}$, so the relative uncertainty is about $2\,\%$. Measuring one sheet directly with a ruler would give an uncertainty of $0.5\,\text{mm}$, that is, about $500\,\%$ of its thickness, so measuring the stack reduces the relative uncertainty to a 250th.
 
@@ -142,16 +142,16 @@
 **Conversions:** Both intervals are in millimetres, so no conversions are needed.
 **Substitution:** $\Delta x_\text{r} = \dfrac{1.0\,\text{mm}}{2} = 0.5\,\text{mm}$ and $\Delta x_\text{c} = \dfrac{0.01\,\text{mm}}{2} = 0.005\,\text{mm}$, so $0.5\,\text{mm} : 0.005\,\text{mm} = 100$
 **Answer:** $100$ times smaller, one significant figure like the step $0.01\,\text{mm}$. The reading uncertainty of the calliper is a hundredth of that of the ruler.
-**Reasonableness:** The ratio is the same as the ratio of the reading intervals $1.0\,\text{mm} : 0.01\,\text{mm} = 100$, because halving cancels out. With a ruler the width is read to half a millimetre and with a calliper to a hundredth of a millimetre, which matches everyday experience that a calliper is more precise.
+**Reasonableness:** The ratio is the same as the ratio of the reading intervals $1.0\,\text{mm} : 0.01\,\text{mm} = 100$, because halving cancels out. With a ruler the thickness is read to half a millimetre and with a calliper to half a hundredth of a millimetre, which matches everyday experience that a calliper is more precise.
 
 ## fy1-3-L2-05
 **Given:** the eight times $t_{10}$ (10 revolutions) of the table: $18.12\,\text{s}$, $18.31\,\text{s}$, $18.05\,\text{s}$, $18.27\,\text{s}$, $18.19\,\text{s}$, $18.35\,\text{s}$, $18.10\,\text{s}$ and $18.22\,\text{s}$; $n = 8$
-**Find:** the mean time of one revolution $\bar{T}$ in the unit $\text{s}$
+**Find:** the mean time of one revolution $\bar{T}$ and its error estimate $\Delta T$ in the unit $\text{s}$
 **Principle:** A time taken by hand has a random error, so the result is the mean and the error estimate is half of the range. The time of one revolution is obtained from the time of ten revolutions by dividing both the mean and the error estimate by the exact number $10$.
 **Formula:** $\bar{t}_{10} = \dfrac{t_1 + \dots + t_8}{n}$, $\;\Delta t_{10} = \dfrac{t_\text{max} - t_\text{min}}{2}$, $\;\bar{T} = \dfrac{\bar{t}_{10}}{10}$ and $\Delta T = \dfrac{\Delta t_{10}}{10}$
 **Conversions:** Not needed: all times are in seconds.
 **Substitution:** The sum is $145.61\,\text{s}$, so $\bar{t}_{10} = \dfrac{145.61\,\text{s}}{8} = 18.20125\,\text{s}$ and $\Delta t_{10} = \dfrac{18.35\,\text{s} - 18.05\,\text{s}}{2} = 0.15\,\text{s}$. Thus $\bar{T} = \dfrac{18.20125\,\text{s}}{10} = 1.820125\,\text{s}$ and $\Delta T = \dfrac{0.15\,\text{s}}{10} = 0.015\,\text{s}$.
-**Answer:** $\bar{T} = 1.820\,\text{s}$, that is $1.82\,\text{s}$. The error estimate $0.015\,\text{s}$ is a two-figure number because the first figure is 1, so the result is rounded to thousandths: $T = 1.820\,\text{s} \pm 0.015\,\text{s}$.
+**Answer:** The error estimate $0.015\,\text{s}$ is a two-figure number because the first figure is 1, so the result is rounded to thousandths: $T = 1.820\,\text{s} \pm 0.015\,\text{s}$.
 **Reasonableness:** The usual speed of a turntable is $33.33$ revolutions per minute, so one revolution takes $60\,\text{s} : 33.33 = 1.800\,\text{s}$. The measured $1.820\,\text{s} \pm 0.015\,\text{s}$ has the right order of magnitude, but $1.800\,\text{s}$ falls just outside that interval; the turntable may therefore be turning slightly slowly, or the timing may have a small systematic error. Timing ten revolutions reduces the relative share of the reaction time: the error estimate $0.15\,\text{s}$ is only about $0.8\,\%$ of the time $18.2\,\text{s}$.
 
 ## fy1-3-L2-06
@@ -172,7 +172,7 @@
 **Conversions:** Not needed: all times are in seconds, and $1\,\% = 0.01$.
 **Substitution:** $N \ge \dfrac{0.2\,\text{s}}{0.01 \cdot 1.5\,\text{s}} = 13.33\ldots$
 **Answer:** At least $14$ swings must be timed, because $N$ is an integer and $13$ is not enough ($0.2 : (13 \cdot 1.5) = 1.03\,\%$).
-**Reasonableness:** Check: $N = 14$ gives $\Delta T = 0.2\,\text{s} : 14 = 0.014\,\text{s}$ and $0.014\,\text{s} : 1.5\,\text{s} = 0.95\,\%$, so the requirement is met. Timing a single swing would give the uncertainty $0.2 : 1.5 = 13\,\%$.
+**Reasonableness:** Check: $N = 14$ gives $\Delta T = 0.2\,\text{s} : 14 \approx 0.0143\,\text{s}$ and $0.0143\,\text{s} : 1.5\,\text{s} \approx 0.95\,\%$, so the requirement is met. Timing a single swing would give the uncertainty $0.2 : 1.5 = 13\,\%$.
 **Model answer:** The error from reaction time does not grow with the length of the time; it is about the same at the start and at the end. A long measurement is divided among many swings, so the share per swing becomes smaller. Repeating also reduces random error through the mean.
 
 ## fy1-3-L3-04
@@ -182,7 +182,7 @@
 **Formula:** $\bar{t} = \dfrac{t_1 + \dots + t_n}{n}$, where $n = 7$ remaining results
 **Conversions:** Not needed: all times are in seconds.
 **Substitution:** The sum of the results is $2.41\,\text{s} + 2.38\,\text{s} + 2.44\,\text{s} + 2.40\,\text{s} + 2.43\,\text{s} + 2.39\,\text{s} + 2.42\,\text{s} = 16.87\,\text{s}$, so $\bar{t} = \dfrac{16.87\,\text{s}}{7} = 2.41\,\text{s}$
-**Answer:** The result may be left out, because the notebook note gives the reason and the omission is recorded; the mean is $2.41\,\text{s}$, three significant figures like the measurements. The half-range is $(2.44\,\text{s} - 2.38\,\text{s}) : 2 = 0.03\,\text{s}$. If no reason had been found, the result would stay in the data: the mean would be $19.84\,\text{s} : 8 = 2.48\,\text{s}$ and the half-range $(2.97\,\text{s} - 2.38\,\text{s}) : 2 = 0.30\,\text{s}$, ten times as large. The result would be given with this uncertainty, the deviation would be mentioned, and it would be worth repeating the measurement.
+**Answer:** The result may be left out, because the notebook note gives the reason and the omission is recorded; the mean is $2.41\,\text{s}$, three significant figures like the measurements. The half-range is $(2.44\,\text{s} - 2.38\,\text{s}) : 2 = 0.03\,\text{s}$. If no reason had been found, the result would stay in the data: the mean would be $19.84\,\text{s} : 8 = 2.48\,\text{s}$ and the half-range $(2.97\,\text{s} - 2.38\,\text{s}) : 2 \approx 0.3\,\text{s}$, ten times as large. The result would be given with this uncertainty, $t = 2.5\,\text{s} \pm 0.3\,\text{s}$, the deviation would be mentioned, and it would be worth repeating the measurement.
 **Reasonableness:** With the deviating result the mean shifts by $0.07\,\text{s}$, which is over twice the half-range $0.03\,\text{s}$. The omission is based on the recorded reason and not on the size of the deviation $2.97\,\text{s} - 2.41\,\text{s} = 0.56\,\text{s}$: on the basis of the notebook note the result is a gross error.
 
 ## fy1-3-L3-05

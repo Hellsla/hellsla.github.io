@@ -126,7 +126,7 @@
    "luku": "fy1-3",
    "aihe": "fy1-mittaaminen",
    "kasite": "Mittausvirhe",
-   "maaritelma": "Mitatun arvon poikkeama suureen todellisesta arvosta."
+   "maaritelma": "Mittaustuloksen ja suureen oikean arvon erotus. Sitä ei yleensä tunneta, joten sen mahdollinen suuruus arvioidaan mittausepävarmuutena."
   },
   {
    "id": "fy1-satunnaisvirhe",
@@ -134,7 +134,7 @@
    "luku": "fy1-3",
    "aihe": "fy1-mittaaminen",
    "kasite": "Satunnaisvirhe",
-   "maaritelma": "Vaihteleva poikkeama, jonka vaikutusta voidaan pienentää toistamalla mittaus ja laskemalla keskiarvo."
+   "maaritelma": "Vaihteleva poikkeama, jonka vaikutusta voidaan pienentää toistamalla mittauksen ja laskemalla keskiarvon."
   },
   {
    "id": "fy1-systemaattinen-virhe",
@@ -165,8 +165,8 @@
    "moduuli": "FY1",
    "luku": "fy1-3",
    "aihe": "fy1-mittaaminen",
-   "kasite": "Mittalaitteen tarkkuus",
-   "maaritelma": "Kertoo, kuinka pieniä muutoksia mittavälineellä voidaan luotettavasti havaita."
+   "kasite": "Mittalaitteen resoluutio",
+   "maaritelma": "Pienin lukeman muutos, jonka mittalaite pystyy näyttämään, esimerkiksi pienin asteikkoväli tai näytön viimeisen numeron askel. Se ei yksin kerro mittauksen epävarmuutta."
   },
   {
    "id": "fy1-si-jarjestelma",

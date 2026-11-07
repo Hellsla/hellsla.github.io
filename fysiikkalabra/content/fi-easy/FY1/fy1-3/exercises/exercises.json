@@ -76,7 +76,7 @@
     {
       "id": "fy1-3-L1-07",
       "level": 1,
-      "text": "Puupalikan leveys mitataan viisi kertaa: $5{,}41\\,\\text{cm}$, $5{,}47\\,\\text{cm}$, $5{,}39\\,\\text{cm}$, $5{,}44\\,\\text{cm}$ ja $5{,}43\\,\\text{cm}$. Virhe-arvioksi otetaan vaihteluvälin puolikas, ja se pyöristetään yhteen merkitsevään numeroon. Anna keskiarvo pyöristettynä niin, että sen tarkkuus sopii virhe-arvioon.",
+      "text": "Puupalikan leveys mitataan viisi kertaa: $5{,}41\\,\\text{cm}$, $5{,}47\\,\\text{cm}$, $5{,}39\\,\\text{cm}$, $5{,}44\\,\\text{cm}$ ja $5{,}43\\,\\text{cm}$. Virhearvioksi otetaan vaihteluvälin puolikas, ja se pyöristetään yhteen merkitsevään numeroon. Anna keskiarvo pyöristettynä niin, että sen tarkkuus sopii virhearvioon.",
       "kind": [
         "reasoning"
       ],
@@ -133,7 +133,7 @@
     {
       "id": "fy1-3-L2-05",
       "level": 2,
-      "text": "Levysoittimen levyn kymmenen kierroksen aika mitattiin käsikellolla kahdeksan kertaa. Tulokset ovat taulukossa. Ota 10 kierroksen ajan virhe-arvioksi vaihteluvälin puolikas ja pyöristä keskiarvo virhe-arvion tarkkuuteen. Ilmoita yhden kierroksen aika muodossa $\\bar{T} \\pm \\Delta T$.",
+      "text": "Levysoittimen levyn kymmenen kierroksen aika mitattiin käsikellolla kahdeksan kertaa. Tulokset ovat taulukossa. Ota 10 kierroksen ajan virhearvioksi vaihteluvälin puolikas ja pyöristä keskiarvo virhearvion tarkkuuteen. Ilmoita yhden kierroksen aika muodossa $\\bar{T} \\pm \\Delta T$.",
       "kind": [
         "data",
         "reasoning"
@@ -234,7 +234,7 @@
     {
       "id": "fy1-3-L2-07",
       "level": 2,
-      "text": "Heilurin heilahdusaika on noin $1{,}5\\,\\text{s}$. Käsin ajanotossa reaktioaika aiheuttaa kellon käynnistyksessä ja pysäytyksessä yhteensä noin $0{,}2\\,\\text{s}$:n epävarmuuden koko mitattuun aikaan. Tämä on arvio, joka ei riipu mitatun ajan pituudesta.\n\nSuunnittelet mittauksen, jossa mitataan kerralla $N$ peräkkäistä heilahdusta ja jaetaan aika luvulla $N$.\n\nKuinka monta heilahdusta vähintään on mitattava, jotta heilahdusajan suhteellinen epävarmuus on enintään $1\\,\\%$? Selitä myös, miksi pidemmän ajan mittaaminen pienentää reaktioajan vaikutusta.",
+      "text": "Heilurin heilahdusaika on noin $1{,}5\\,\\text{s}$. Käsin tehdyssä ajanotossa reaktioaika aiheuttaa kellon käynnistyksessä ja pysäytyksessä yhteensä noin $0{,}2\\,\\text{s}$:n epävarmuuden koko mitattuun aikaan. Tämä on arvio, joka ei riipu mitatun ajan pituudesta.\n\nSuunnittelet mittauksen, jossa mitataan kerralla $N$ peräkkäistä heilahdusta ja jaetaan aika luvulla $N$.\n\nKuinka monta heilahdusta vähintään on mitattava, jotta heilahdusajan suhteellinen epävarmuus on enintään $1\\,\\%$? Selitä myös, miksi pidemmän ajan mittaaminen pienentää reaktioajan vaikutusta.",
       "kind": [
         "experiment",
         "model"
@@ -314,7 +314,7 @@
     {
       "id": "fy1-3-L3-01",
       "level": 3,
-      "text": "Käsin otetussa ajanotossa kello käynnistetään aina $0{,}18\\,\\text{s}$ liian myöhään. Kello pysäytetään aina $0{,}12\\,\\text{s}$ liian myöhään. Viiveet ovat joka kerralla samat. Mikä on ajanoton systemaattinen virhe eli lukema miinus oikea aika? Anna vastaus etumerkkeineen.",
+      "text": "Käsin tehdyssä ajanotossa kello käynnistetään aina $0{,}18\\,\\text{s}$ liian myöhään. Kello pysäytetään aina $0{,}12\\,\\text{s}$ liian myöhään. Viiveet ovat joka kerralla samat. Mikä on ajanoton systemaattinen virhe eli lukema miinus oikea aika? Anna vastaus etumerkkeineen.",
       "answer": -0.06,
       "unit": "s",
       "tolerance": 0.02
@@ -322,7 +322,7 @@
     {
       "id": "fy1-3-L3-02",
       "level": 3,
-      "text": "Paperipinossa on 250 samanlaista arkkia. Pinon paksuus mitataan viivaimella. Viivaimen pienin asteikkoväli on $1{,}0\\,\\text{mm}$, ja lukeman epävarmuudeksi arvioidaan puoli asteikkoväliä. Mikä on yhden arkin paksuuden virhe-arvio, kun kaikki arkit ovat yhtä paksuja? Anna vastaus mikrometreinä. Yksi mikrometri on tuhannesosa millimetristä.",
+      "text": "Paperipinossa on 250 samanlaista arkkia. Pinon paksuus mitataan viivaimella. Viivaimen pienin asteikkoväli on $1{,}0\\,\\text{mm}$, ja lukeman epävarmuudeksi arvioidaan puoli asteikkoväliä. Mikä on yhden arkin paksuuden virhearvio, kun kaikki arkit ovat yhtä paksuja? Anna vastaus mikrometreinä. Yksi mikrometri on tuhannesosa millimetristä.",
       "answer": 2.0,
       "unit": "µm",
       "tolerance": 0.02

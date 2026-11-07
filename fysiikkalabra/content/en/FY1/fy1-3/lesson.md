@@ -427,7 +427,7 @@ The ratio of the error estimate, that is, the measurement uncertainty, to the re
 ```
 where $\varepsilon$ is the relative uncertainty as a percentage. It tells whether the uncertainty is small or large compared with the size of the result: an uncertainty of $0.5\,\text{mm}$ is small for measuring a metre but large for a wire one millimetre thick.
 
-A systematic error is estimated by measuring a quantity whose true value is known and comparing with the mean. The known value can be, for example, an empty scale, $0\,{}^\circ\text{C}$ in ice water or a rod of precisely known length:
+A systematic error is estimated by measuring a quantity whose true value is known and comparing the mean of the measurements with this value. The reference can be, for example, an empty scale, ice water, whose temperature is $0\,{}^\circ\text{C}$, or a rod of precisely known length:
 ```latex
 \Delta x_\text{sys} = \bar{x}_\text{ref} - x_\text{true}
 ```

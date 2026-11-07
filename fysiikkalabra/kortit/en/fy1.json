@@ -126,7 +126,7 @@
    "luku": "fy1-3",
    "aihe": "fy1-mittaaminen",
    "kasite": "Measurement error",
-   "maaritelma": "The difference between a measured value and the true value of the quantity."
+   "maaritelma": "The difference between a measurement result and the true value of the quantity. It is usually not known, so its possible size is estimated as the measurement uncertainty."
   },
   {
    "id": "fy1-satunnaisvirhe",
@@ -166,7 +166,7 @@
    "luku": "fy1-3",
    "aihe": "fy1-mittaaminen",
    "kasite": "Resolution of an instrument",
-   "maaritelma": "How small a change a measuring instrument can reliably detect."
+   "maaritelma": "The smallest change in the reading that an instrument can show, for example the smallest scale division or the step of the display's last digit. On its own it does not give the uncertainty of the measurement."
   },
   {
    "id": "fy1-si-jarjestelma",
