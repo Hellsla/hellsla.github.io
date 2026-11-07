@@ -102,7 +102,7 @@ Kaikki erotukset ovat lähellä odotettua $6{,}0\,\text{dB}$:ä. Suurin poikkeam
 **Periaate:** Annos on korvaan kertynyt energia. Eri jaksojen osuudet lasketaan siis yhteen. Kunkin jakson osuus on sen keston ja kyseisen tason vertailuajan suhde.
 **Kaava:** $t_{\text{v},i} = \dfrac{t_0}{2^{\,n_i}}$, missä $n_i = \dfrac{L_i - L_0}{3\,\text{dB}}$, ja annos $= \left(\dfrac{t_1}{t_{\text{v},1}} + \dfrac{t_2}{t_{\text{v},2}}\right) \cdot 100\,\%$
 **Muunnokset:** Ei tarvita. Ajat ovat tunteina, ja yksikkö supistuu.
-**Sijoitus:** $n_1 = 1$, joten $t_{\text{v},1} = 8\,\text{h} : 2 = 4{,}0\,\text{h}$. $n_2 = \dfrac{82\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = -1$, joten $t_{\text{v},2} = 8\,\text{h} \cdot 2 = 16\,\text{h}$. Annos $= \left(\dfrac{4{,}0\,\text{h}}{4{,}0\,\text{h}} + \dfrac{4{,}0\,\text{h}}{16\,\text{h}}\right) \cdot 100\,\% = (1 + 0{,}25) \cdot 100\,\% = 125\,\%$
+**Sijoitus:** $n_1 = 1$, joten $t_{\text{v},1} = 8\,\text{h} : 2 = 4{,}0\,\text{h}$. $n_2 = \dfrac{82\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = -1$, joten $t_{\text{v},2} = 8\,\text{h} \cdot 2 = 16\,\text{h}$. Annos $D = \dfrac{4{,}0\,\text{h}}{4{,}0\,\text{h}} + \dfrac{4{,}0\,\text{h}}{16\,\text{h}} = 1 + 0{,}25 = 1{,}25 = 125\,\%$
 **Vastaus:** $125\,\%$. Ajat on annettu kahden numeron tarkkuudella, joten tulos on arvio, noin $1{,}3$-kertainen annos. Päivittäinen altistus ylittää ylemmän toiminta-arvon. Kuulonsuojaimia on siis käytettävä, ja melua on vähennettävä.
 **Järkevyys:** Jo lastauslaiturin $4\,\text{h}$ täyttää koko annoksen, joten tuloksen täytyy olla yli $100\,\%$. Pakkaamon osuus on pieni. Siellä intensiteetti on vain neljäsosa laiturin intensiteetistä.
 

@@ -102,7 +102,7 @@ All the differences are close to the expected $6.0\,\text{dB}$, and the largest 
 **Principle:** The dose is the energy accumulated in the ear, so the shares of the different periods are added. The share of each period is the ratio of its duration to the reference time at that level.
 **Formula:** $t_{\text{ref},i} = \dfrac{t_0}{2^{\,n_i}}$, where $n_i = \dfrac{L_i - L_0}{3\,\text{dB}}$, and dose $= \left(\dfrac{t_1}{t_{\text{ref},1}} + \dfrac{t_2}{t_{\text{ref},2}}\right) \cdot 100\,\%$
 **Conversions:** Not needed: the times are in hours, and the unit cancels.
-**Substitution:** $n_1 = 1$, so $t_{\text{ref},1} = 8\,\text{h} : 2 = 4.0\,\text{h}$. $n_2 = \dfrac{82\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = -1$, so $t_{\text{ref},2} = 8\,\text{h} \cdot 2 = 16\,\text{h}$. Dose $= \left(\dfrac{4.0\,\text{h}}{4.0\,\text{h}} + \dfrac{4.0\,\text{h}}{16\,\text{h}}\right) \cdot 100\,\% = (1 + 0.25) \cdot 100\,\% = 125\,\%$
+**Substitution:** $n_1 = 1$, so $t_{\text{ref},1} = 8\,\text{h} : 2 = 4.0\,\text{h}$. $n_2 = \dfrac{82\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = -1$, so $t_{\text{ref},2} = 8\,\text{h} \cdot 2 = 16\,\text{h}$. The dose $D = \dfrac{4.0\,\text{h}}{4.0\,\text{h}} + \dfrac{4.0\,\text{h}}{16\,\text{h}} = 1 + 0.25 = 1.25 = 125\,\%$
 **Answer:** $125\,\%$. The times are given to two figures, so the result is an estimate, about $1.3$ times the dose. The daily exposure exceeds the upper action value, so hearing protectors must be used and the noise must be reduced.
 **Reasonableness:** The $4\,\text{h}$ at the loading dock alone fill the whole dose, so the result must be over $100\,\%$. The share of the packing room is small, because there the intensity is only a quarter of the intensity at the dock.
 

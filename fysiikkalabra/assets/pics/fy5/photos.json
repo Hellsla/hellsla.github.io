@@ -77,7 +77,7 @@
     "height": 1600
   },
   "ripple-model-single-slit.webp": {
-    "title": "Laskettu mallikuva: diffraktio raossa aaltoaltaassa",
+    "title": "Computed model picture: single-slit diffraction in a ripple tank",
     "creator": "Ruukkilabra",
     "source": "https://ruukkilab.fi/",
     "licence": "ei lisenssiä: Ruukkilabran oma laskettu kuva",
@@ -88,7 +88,7 @@
     "computed": true
   },
   "ripple-model-two-sources.webp": {
-    "title": "Laskettu mallikuva: kahden lähteen interferenssi aaltoaltaassa",
+    "title": "Computed model picture: two-source interference in a ripple tank",
     "creator": "Ruukkilabra",
     "source": "https://ruukkilab.fi/",
     "licence": "ei lisenssiä: Ruukkilabran oma laskettu kuva",
