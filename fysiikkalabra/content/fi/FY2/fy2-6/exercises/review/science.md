@@ -1,6 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: edb74adb68359f9d
+CONTENT-HASH: a52283bbb84cf337
 Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+Round: 2
 
 ## Blocking
 - none
@@ -9,6 +10,6 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction 
 - none
 
 ## Checked
-- Diff `git diff origin/main...HEAD` of exercises/exercises.json, exercises/solutions.md (fi); content hash recomputed and equal to the brief's.
-- L2-07: $(820-12)\,\text{g/kWh}\cdot2{,}0\cdot10^{9}\,\text{kWh} = 1{,}616\cdot10^{12}\,\text{g} = 1{,}6\cdot10^{6}\,\text{t}$ CO2-eq recomputed; check $1{,}64\cdot10^{6}\,\text{t}$, ratio $0{,}99$. L3-05 c: wording now "tonnes of CO2-equivalent"; numbers unchanged. CO2 vs CO2-eq now consistent between exercises.json and solutions.md (life-cycle factors are CO2-eq).
-- Changed text matches the en and fi-easy versions in substance.
+- Round-2 diff `git diff HEAD~1` (commit 29f864da6) of this unit's files (fi fy2-6 exercises), judged in context; content hash recomputed and equal to the new hash.
+- exercises.json L2-07: wording only ("päästökertoimet esimerkkiaineistona"); the CO2-equivalent life-cycle statement and the data are unchanged; the answer is still $1{,}6 \cdot 10^{6}\,\text{t}$ CO2-eq.
+- No changed numbers other than those noted; no physics regression against the round-1 review.

@@ -1,6 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 172e1cf560924717
+CONTENT-HASH: 034ee247de8415bb
 Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+Round: 2
 
 ## Blocking
 - none
@@ -9,6 +10,6 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction 
 - none
 
 ## Checked
-- Diff `git diff origin/main...HEAD` of lesson.md, inquiry.json, exit-ticket.json (fi-easy); content hash recomputed and equal to the brief's.
-- lesson.md: ordinary year $365\cdot24 = 8760\,\text{h}$, leap year $366\cdot24 = 8784\,\text{h}$ recomputed; worked example $14\,\text{GWh} : 8760\,\text{h} = 1598\,\text{kW} = 1{,}598\,\text{MW} \approx 1{,}6\,\text{MW}$, $1{,}598 : 5{,}0 = 32\,\%$ recomputed; unit conversion now correct.
-- Selkeä suomi changes carry the same physics as fi.
+- Round-2 diff `git diff HEAD~1` (commit 29f864da6) of this unit's files (fi-easy fy2-6), judged in context; content hash recomputed and equal to the new hash.
+- lesson.md: "karkausvuosi eli vuosi, jossa on $366$ vuorokautta": $366 \cdot 24\,\text{h} = 8784\,\text{h}$ recomputed, correct.
+- No changed numbers other than those noted; no physics regression against the round-1 review.

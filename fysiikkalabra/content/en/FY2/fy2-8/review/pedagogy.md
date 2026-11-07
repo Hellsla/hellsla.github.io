@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 8fd0bc81ab0e87c6
+CONTENT-HASH: 88ba38802bc0befd
 Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+Round: 2
 
 ## Blocking
 - none
 
 ## Polish
-- ennuste-2 correct-option feedback is now five sentences and adds a biomass remark the chosen option did not raise; could be trimmed by one sentence.
+- none
 
 ## Checked
-- git diff origin/main...HEAD of the unit's files (en); pedagogy of the changed passages in context only; FY2 text level.
-- lesson.md: biomass zero-combustion CO2 now explicitly an accounting assumption; real impact depends on origin, carbon-stock changes and regrowth speed; added to the summary. Supports critical reading of the table without new load.
-- inquiry.json ennuste-2: options unchanged in substance (wind 'no fuel is burned' instead of 'burns nothing'); correct feedback now says wind still has life-cycle emissions from construction and materials; the biomass distractor feedback says renewability alone does not make life-cycle emissions small. Appropriate, repairs the misconception, no disclosure of the table values (the next stage still shows them).
-- Later biomass feedbacks add the condition that the forest really regrows; consistent.
+- git diff HEAD~1 (commit 29f864da6) of the unit's files (en), judged in context; round-1 findings for this unit.
+- inquiry.json ennuste-2 correct feedback: 'comparison data given' -> 'IPCC life-cycle comparison'; no reference to unseen data, no values disclosed.
+- lesson.md: the accounting-assumption sentences are now their own paragraph after the table source note; 'This' still clearly refers to counting the burning CO2 as zero. Fine for reading on a phone.

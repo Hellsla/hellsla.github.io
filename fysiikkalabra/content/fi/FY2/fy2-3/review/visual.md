@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 0a69a31a274c6306
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: d5830c49a5122d07
+Mode: light (teacher 2026-11-07, "kevyt katselmointi"): the round-2 polish diff (git diff HEAD~1, commit 29f864da6) only
+Round: 2
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] lesson.md Teho-kaava: the new sentence "Niiden osamäärä on aikavälin keskiteho." and the existing "Jos energiaa muuntuu epätasaisesti, kaava antaa aikavälin $\Delta t$ keskitehon." now say nearly the same thing two sentences apart; consider merging (e.g. drop the new sentence or turn the later one into "Kun energiaa muuntuu epätasaisesti, keskiteho poikkeaa hetkellisestä tehosta.").
+- none
 
 ## Checked
-- Diff of lesson.md, inquiry.json, exit-ticket.json (Finnish), changed passages with surrounding paragraph.
-- Meaning of $\Delta E$ and $\Delta t$ in $P = \Delta E/\Delta t$: symbols in LaTeX, units in parentheses as before, grammar correct.
-- No captures opened (diff judged from source).
+- lesson.md: the duplicate sentence "Niiden osamäärä on aikavälin keskiteho." removed; the paragraph still reads fluently and the keskiteho idea stays in the next sentence.
+- Round-1 changes are not re-reviewed (they passed in round 1). No captures opened (diff judged from source).

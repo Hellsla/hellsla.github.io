@@ -1,6 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 4bcb3dc614bcc743
+CONTENT-HASH: 28bd5e532512e22f
 Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+Round: 2
 
 ## Blocking
 - none
@@ -9,5 +10,5 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction 
 - none
 
 ## Checked
-- git diff origin/main...HEAD of the unit's files (en); pedagogy of the changed passages in context only; FY2 text level.
-- exercises.json feedbacks and solutions.md: loss mechanism wording as in the lesson (internal energy of wires, heat to surroundings; district heating through pipes). Feedback still explains why the distractor is wrong.
+- git diff HEAD~1 (commit 29f864da6) of the unit's files (en), judged in context; round-1 findings for this unit.
+- exercises.json correct-option feedback: '...internal energy of the conductors, which is transferred as heat to the surroundings' - consistent with the lesson.

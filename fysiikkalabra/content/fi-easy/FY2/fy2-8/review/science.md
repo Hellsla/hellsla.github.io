@@ -1,6 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 1891e9149c2236df
+CONTENT-HASH: 62af83de39e59e3d
 Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+Round: 2
 
 ## Blocking
 - none
@@ -9,6 +10,6 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction 
 - none
 
 ## Checked
-- Diff `git diff origin/main...HEAD` of lesson.md, inquiry.json, exit-ticket.json (fi-easy); content hash recomputed and equal to the brief's.
-- lesson.md, inquiry.json: biomass combustion CO2 = 0 now consistently framed as an accounting assumption of the IPCC AR5 WGIII Annex III comparison (median about $230\,\text{g/kWh}$, CO2-eq), with re-growth as a condition; ennuste-2 feedback: wind burns no fuel in operation but has life-cycle emissions from construction and materials; renewability not an automatic advantage. Correct option unchanged and right; every changed feedback consistent with the table (coal largest, wind smallest). No numbers changed ($820$, $230\,\text{g/kWh}$ as before).
-- Selkeä suomi changes carry the same physics as fi.
+- Round-2 diff `git diff HEAD~1` (commit 29f864da6) of this unit's files (fi-easy fy2-8), judged in context; content hash recomputed and equal to the new hash.
+- inquiry.json: the feedback cites the IPCC life-cycle comparison, as in fi. lesson.md: gloss "hiilivarastot eli metsään ja maaperään sitoutunut hiili" is a correct plain-language explanation of carbon stocks.
+- No changed numbers other than those noted; no physics regression against the round-1 review.

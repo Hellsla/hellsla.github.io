@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 31d260a2d9963b78
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: 3f36e52638fd2f55
+Mode: light (teacher 2026-11-07, "kevyt katselmointi"): the round-2 polish diff (git diff HEAD~1, commit 29f864da6) only
+Round: 2
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] tasks.json: the paragraph "In the table, $e$ is…" is now ~128 words; could be split before "For the biomass option…".
+- none
 
 ## Checked
-- Diff of sovella/tasks.json, sovella/solutions.md, lessons/FY2/sovella/answers.py (English), changed passages with surrounding paragraph.
-- solutions.md a: $P < 0.05 \cdot 28 \cdot 5.0\,\text{MW} = 7\,\text{MW}$ and $P > 80\,\text{MW} - 7\,\text{MW} = 73\,\text{MW}$: inequality signs, \cdot, thin spaces correct; English wording of the answer correct.
-- tasks.json source_note and biomass paragraph (accounting assumption, IPCC AR5 WGIII Annex III, forest chips may differ): grammar correct, $230\,\text{g/kWh}$ in LaTeX; criterion text for a); part b answer list (five values) is data only, no presentation change; counterargument and option lines in solutions.md.
-- No captures opened (diff judged from source).
+- tasks.json: the paragraph on $e$ is split before "For the biomass option…" (\n\n inserted). Both parts are within the length guide, and the markdown remains valid inside the JSON string.
+- Round-1 changes are not re-reviewed (they passed in round 1). No captures opened (diff judged from source).

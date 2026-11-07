@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 8fd0bc81ab0e87c6
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: 88ba38802bc0befd
+Mode: light (teacher 2026-11-07, "kevyt katselmointi"): the round-2 polish diff (git diff HEAD~1, commit 29f864da6) only
+Round: 2
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] lesson.md source paragraph under the emission table is now ~160 words (was ~112), over the ~120-word guide; split before "This is an accounting assumption…" so the assumption and its caveat form their own paragraph.
-- [Minor] inquiry.json ennuste-2 correct feedback: "According to the comparison data given" refers to data shown only in the next step; e.g. "According to the comparison data you will see next".
+- none
 
 ## Checked
-- Diff of lesson.md, inquiry.json, exit-ticket.json (English), changed passages with surrounding paragraph.
-- Biomass paragraph, table source paragraph (accounting-assumption sentences), new summary bullet, ennuste-2 choices/feedbacks, L-step feedbacks: $230\,\text{g/kWh}$, $820\,\text{g/kWh}$ in LaTeX; grammar correct.
-- No captures opened (diff judged from source).
+- lesson.md: the source paragraph under the emission table is split; the two paragraphs are about 101 and 59 words, within the ~120-word guide, and the second paragraph begins naturally with "This is an accounting assumption…".
+- inquiry.json ennuste-2 correct feedback: "According to the IPCC life-cycle comparison"; grammar correct.
+- Round-1 changes are not re-reviewed (they passed in round 1). No captures opened (diff judged from source).

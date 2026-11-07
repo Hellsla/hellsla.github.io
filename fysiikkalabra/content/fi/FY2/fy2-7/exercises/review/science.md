@@ -1,6 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: afdb1c4e9986b7f7
+CONTENT-HASH: d1be3d5c2b9e2503
 Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+Round: 2
 
 ## Blocking
 - none
@@ -9,6 +10,6 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction 
 - none
 
 ## Checked
-- Diff `git diff origin/main...HEAD` of exercises/exercises.json, exercises/solutions.md (fi); content hash recomputed and equal to the brief's.
-- exercises.json/solutions.md: loss wording (internal energy in wires, then heat to surroundings; district heating through pipes) consistent with the lesson; the $40\,\text{MWh}$ vs $27\,\text{MWh}$ comparison unchanged and correct. No changed numbers.
-- Changed text matches the en and fi-easy versions in substance.
+- Round-2 diff `git diff HEAD~1` (commit 29f864da6) of this unit's files (fi fy2-7 exercises), judged in context; content hash recomputed and equal to the new hash.
+- exercises.json feedback: "sähköenergiaa johtimien sisäenergiaksi, joka siirtyy lämpönä ympäristöön". This is the correct internal energy -> heat-in-transfer mechanism, consistent with the lesson.
+- No changed numbers other than those noted; no physics regression against the round-1 review.

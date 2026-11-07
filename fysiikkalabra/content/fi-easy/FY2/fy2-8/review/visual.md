@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 1891e9149c2236df
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: 62af83de39e59e3d
+Mode: light (teacher 2026-11-07, "kevyt katselmointi"): the round-2 polish diff (git diff HEAD~1, commit 29f864da6) only
+Round: 2
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] inquiry.json ennuste-2 correct feedback: "Annetun vertailuaineiston mukaan" refers to the table of the next step; e.g. "Seuraavan vaiheen taulukon mukaan".
+- none
 
 ## Checked
-- Diff of lesson.md, inquiry.json, exit-ticket.json (Selkeä suomi), changed passages with surrounding paragraph.
-- Biomass paragraph, table source paragraph (accounting-assumption sentences), new summary bullet, ennuste-2 choices/feedbacks, L-step feedbacks: $230\,\text{g/kWh}$, $820\,\text{g/kWh}$ in LaTeX; grammar correct. Selkeä suomi: new sentences short; "laskentaoletus" is explained in the lesson.
-- No captures opened (diff judged from source).
+- lesson.md: the gloss "hiilivarastot eli metsään ja maaperään sitoutunut hiili" helps S2 readers, and the verb agreement (hiilivarastot … muuttuvat) is correct. The paragraph is about 106 words.
+- inquiry.json ennuste-2 correct feedback now cites "IPCC:n elinkaarivertailun mukaan".
+- Round-1 changes are not re-reviewed (they passed in round 1). No captures opened (diff judged from source).

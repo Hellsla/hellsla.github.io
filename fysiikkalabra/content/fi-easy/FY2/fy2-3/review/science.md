@@ -1,6 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: c1e3566a25135732
+CONTENT-HASH: 39a737c8fb70f7e1
 Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+Round: 2
 
 ## Blocking
 - none
@@ -9,6 +10,6 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction 
 - none
 
 ## Checked
-- Diff `git diff origin/main...HEAD` of lesson.md, inquiry.json, exit-ticket.json (fi-easy); content hash recomputed and equal to the brief's.
-- lesson.md: new meaning of $\Delta E$ in $P = \Delta E/\Delta t$ (energy transferred or transformed during the interval; $\Delta t$ its length; the quotient is the interval's average power) is correct and agrees with the unchanged sentence on uneven conversion and with $P = E : t$ for steady operation.
-- Selkeä suomi changes carry the same physics as fi.
+- Round-2 diff `git diff HEAD~1` (commit 29f864da6) of this unit's files (fi-easy fy2-3), judged in context; content hash recomputed and equal to the new hash.
+- lesson.md: the same sentence removed as in fi; the average-power meaning is still stated; consistent with fi.
+- No changed numbers other than those noted; no physics regression against the round-1 review.

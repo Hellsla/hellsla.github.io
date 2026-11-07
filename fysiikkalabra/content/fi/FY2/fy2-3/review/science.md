@@ -1,6 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 0a69a31a274c6306
+CONTENT-HASH: d5830c49a5122d07
 Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+Round: 2
 
 ## Blocking
 - none
@@ -9,6 +10,6 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction 
 - none
 
 ## Checked
-- Diff `git diff origin/main...HEAD` of lesson.md, inquiry.json, exit-ticket.json (fi); content hash recomputed and equal to the brief's.
-- lesson.md: new meaning of $\Delta E$ in $P = \Delta E/\Delta t$ (energy transferred or transformed during the interval; $\Delta t$ its length; the quotient is the interval's average power) is correct and agrees with the unchanged sentence on uneven conversion and with $P = E : t$ for steady operation.
-- Changed text matches the en and fi-easy versions in substance.
+- Round-2 diff `git diff HEAD~1` (commit 29f864da6) of this unit's files (fi fy2-3), judged in context; content hash recomputed and equal to the new hash.
+- lesson.md: removed the sentence "Niiden osamäärä on aikavälin keskiteho". The average-power meaning is still stated in the next sentences (uneven conversion gives the average power over $\Delta t$; steady operation gives $P = E : t$), so nothing is lost and nothing becomes wrong.
+- No changed numbers other than those noted; no physics regression against the round-1 review.

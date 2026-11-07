@@ -1,6 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: f031b195707cb161
+CONTENT-HASH: 8b7d7cb8f1d3b7cf
 Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+Round: 2
 
 ## Blocking
 - none
@@ -9,6 +10,6 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction 
 - none
 
 ## Checked
-- Diff `git diff origin/main...HEAD` of lesson.md, inquiry.json, exit-ticket.json (en); content hash recomputed and equal to the brief's.
-- lesson.md: new meaning of $\Delta E$ in $P = \Delta E/\Delta t$ (energy transferred or transformed during the interval; $\Delta t$ its length; the quotient is the interval's average power) is correct and agrees with the unchanged sentence on uneven conversion and with $P = E : t$ for steady operation.
-- English changes match the fi source in substance (CO2 equivalent, internal energy vs heat, accounting assumption).
+- Round-2 diff `git diff HEAD~1` (commit 29f864da6) of this unit's files (en fy2-3), judged in context; content hash recomputed and equal to the new hash.
+- lesson.md: removed "Their quotient is the average power over the interval." The average-power meaning is still stated in the following sentences; consistent with fi.
+- No changed numbers other than those noted; no physics regression against the round-1 review.

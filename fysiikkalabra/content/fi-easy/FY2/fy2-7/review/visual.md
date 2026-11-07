@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 6a0dcba838f38427
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: 94cfb94728086217
+Mode: light (teacher 2026-11-07, "kevyt katselmointi"): the round-2 polish diff (git diff HEAD~1, commit 29f864da6) only
+Round: 2
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] for science: lesson.md Siirtohäviö: "Sisäenergia on aineen hiukkasten liikkeen energiaa" omits the particles' potential energy; acceptable simplification for S2 if consistent with the chapter that defines sisäenergia.
+- none
 
 ## Checked
-- Diff of lesson.md, inquiry.json, exit-ticket.json (Selkeä suomi), changed passages with surrounding paragraph.
-- Ydinajatus, Siirtohäviö paragraph (~70–90 words), symbol list under the loss formula, Yleinen virhekäsitys, summary bullet, inquiry choices/feedbacks and exit ticket: mechanism wording (electrical energy -> internal energy -> heat; district heating: energy passes as heat through pipes) consistent across all changed passages; no new formulas.
-- No captures opened (diff judged from source).
+- lesson.md Siirtohäviö: "Sisäenergia on aineen hiukkasten liikkeen ja niiden välisten vuorovaikutusten energiaa. Sen kasvu näkyy johtimen lämpenemisenä." is grammatical and short enough for S2 learners. It also resolves my round-1 science note about the missing potential energy.
+- Round-1 changes are not re-reviewed (they passed in round 1). No captures opened (diff judged from source).

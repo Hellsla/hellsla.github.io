@@ -1,6 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: edb74adb68359f9d
+CONTENT-HASH: a52283bbb84cf337
 Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+Round: 2
 
 ## Blocking
 - none
@@ -9,5 +10,5 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction 
 - none
 
 ## Checked
-- git diff origin/main...HEAD of the unit's files (fi); pedagogy of the changed passages in context only; FY2 text level.
-- exercises.json L2-07, L3-05 and solutions.md: 'hiilidioksidimäärä' -> emissions in CO2 equivalent, matching the life-cycle factors; task demand unchanged.
+- git diff HEAD~1 (commit 29f864da6) of the unit's files (fi), judged in context; round-1 findings for this unit.
+- exercises.json L2-07: 'päästökertoimet esimerkkiaineistona' - wording only, clearer; task demand unchanged.

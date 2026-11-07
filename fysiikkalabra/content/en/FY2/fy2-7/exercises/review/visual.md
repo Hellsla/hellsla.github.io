@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 4bcb3dc614bcc743
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: 28bd5e532512e22f
+Mode: light (teacher 2026-11-07, "kevyt katselmointi"): the round-2 polish diff (git diff HEAD~1, commit 29f864da6) only
+Round: 2
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] exercises.json L1 feedback: "converted into internal energy of the conductors and on into heat in the surroundings" is awkward and inconsistent with the other edits; e.g. "…into internal energy of the conductors, which is transferred as heat to the surroundings".
+- none
 
 ## Checked
-- Diff of exercises/exercises.json, exercises/solutions.md (English), changed passages with surrounding paragraph.
-- exercises.json feedbacks (3) and solutions.md L1-02 Periaate, L2 comparison paragraph, L2-07 Periaate/Mallivastaus: grammar and mechanism wording; amounts $40\,\text{MWh}$, $27\,\text{MWh}$, $4\,\%$ unchanged in LaTeX.
-- No captures opened (diff judged from source).
+- exercises.json first feedback: "internal energy of the conductors, which is transferred as heat to the surroundings" is idiomatic and matches the wording of the other edits.
+- Round-1 changes are not re-reviewed (they passed in round 1). No captures opened (diff judged from source).

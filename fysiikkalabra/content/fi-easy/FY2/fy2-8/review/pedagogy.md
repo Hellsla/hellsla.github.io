@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 1891e9149c2236df
+CONTENT-HASH: 62af83de39e59e3d
 Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+Round: 2
 
 ## Blocking
 - none
 
 ## Polish
-- ennuste-2 correct-option feedback is now five sentences and adds a biomass remark the chosen option did not raise; could be trimmed by one sentence.
-- S2 §12.3: 'hiilivarasto' is new here and unexplained; e.g. 'hiilivarastot eli metsään ja maaperään sitoutunut hiili'.
+- none
 
 ## Checked
-- git diff origin/main...HEAD of the unit's files (fi-easy); pedagogy of the changed passages in context only; FY2 text level.
-- lesson.md: biomass zero-combustion CO2 now explicitly an accounting assumption; real impact depends on origin, carbon-stock changes and regrowth speed; added to the summary. Supports critical reading of the table without new load.
-- inquiry.json ennuste-2: options unchanged in substance (wind 'no fuel is burned' instead of 'burns nothing'); correct feedback now says wind still has life-cycle emissions from construction and materials; the biomass distractor feedback says renewability alone does not make life-cycle emissions small. Appropriate, repairs the misconception, no disclosure of the table values (the next stage still shows them).
-- Later biomass feedbacks add the condition that the forest really regrows; consistent.
-- S2: 'laskentaoletus' is explained by the following sentence ('Se ei tarkoita, että biomassan poltossa ei vapautuisi hiilidioksidia').
-- S2 (NOTES.md §12): the changed sentences are short, connected, natural Finnish; physics terms kept.
+- git diff HEAD~1 (commit 29f864da6) of the unit's files (fi-easy), judged in context; round-1 findings for this unit.
+- lesson.md: 'hiilivarastot eli metsään ja maaperään sitoutunut hiili' explains the new word in the sentence (§12.3).
+- inquiry.json ennuste-2 correct feedback: 'IPCC:n elinkaarivertailun mukaan' replaces the reference to not-yet-shown data; no values disclosed.

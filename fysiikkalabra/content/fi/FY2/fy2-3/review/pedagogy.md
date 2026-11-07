@@ -1,6 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 0a69a31a274c6306
+CONTENT-HASH: d5830c49a5122d07
 Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+Round: 2
 
 ## Blocking
 - none
@@ -9,5 +10,5 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction 
 - none
 
 ## Checked
-- git diff origin/main...HEAD of the unit's files (fi); pedagogy of the changed passages in context only; FY2 text level.
-- lesson.md: ΔE now 'energy transferred or transformed during the interval', Δt 'length of the interval', quotient = average power. Clearer than 'energian muutos' and consistent with the next sentence on uneven conversion; slight redundancy (average power said twice) is harmless.
+- git diff HEAD~1 (commit 29f864da6) of the unit's files (fi), judged in context; round-1 findings for this unit.
+- lesson.md: removed the duplicated 'their quotient is the average power' sentence; the average-power statement remains in the next sentence, so nothing is lost and the definition reads more cleanly.

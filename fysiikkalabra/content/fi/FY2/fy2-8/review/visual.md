@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 77a6111c181d225e
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: fdb9602a936296b0
+Mode: light (teacher 2026-11-07, "kevyt katselmointi"): the round-2 polish diff (git diff HEAD~1, commit 29f864da6) only
+Round: 2
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] lesson.md summary bullet: "hiilen takaisin sitoutumisen nopeudesta" is a heavy nominal chain; e.g. "…ja siitä, kuinka nopeasti hiili sitoutuu takaisin".
-- [Minor] inquiry.json ennuste-2 correct feedback: "Annetun vertailuaineiston mukaan…" refers to data the student sees only in the next step; e.g. "Vertailuaineiston mukaan, jonka näet seuraavaksi,…".
+- none
 
 ## Checked
-- Diff of lesson.md, inquiry.json, exit-ticket.json (Finnish), changed passages with surrounding paragraph.
-- Biomass paragraph, table source paragraph (accounting-assumption sentences), new summary bullet, ennuste-2 choices/feedbacks, L-step feedbacks: $230\,\text{g/kWh}$, $820\,\text{g/kWh}$ in LaTeX; grammar correct.
-- No captures opened (diff judged from source).
+- lesson.md summary bullet: noun chain replaced by "siitä, kuinka nopeasti hiili sitoutuu takaisin"; grammar correct.
+- inquiry.json ennuste-2 correct feedback now cites "IPCC:n elinkaarivertailun mukaan" and no longer points to data not yet shown.
+- Round-1 changes are not re-reviewed (they passed in round 1). No captures opened (diff judged from source).

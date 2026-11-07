@@ -1,6 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: afdb1c4e9986b7f7
+CONTENT-HASH: d1be3d5c2b9e2503
 Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+Round: 2
 
 ## Blocking
 - none
@@ -9,5 +10,5 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction 
 - none
 
 ## Checked
-- git diff origin/main...HEAD of the unit's files (fi); pedagogy of the changed passages in context only; FY2 text level.
-- exercises.json feedbacks and solutions.md: loss mechanism wording as in the lesson (internal energy of wires, heat to surroundings; district heating through pipes). Feedback still explains why the distractor is wrong.
+- git diff HEAD~1 (commit 29f864da6) of the unit's files (fi), judged in context; round-1 findings for this unit.
+- exercises.json correct-option feedback: '...sisäenergiaksi, joka siirtyy lämpönä ympäristöön' - consistent with the lesson's mechanism (internal energy, then heat transfer) and removes the 'into heat' slip.

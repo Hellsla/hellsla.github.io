@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 77a6111c181d225e
+CONTENT-HASH: fdb9602a936296b0
 Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+Round: 2
 
 ## Blocking
 - none
 
 ## Polish
-- ennuste-2 correct-option feedback is now five sentences and adds a biomass remark the chosen option did not raise; could be trimmed by one sentence.
+- none
 
 ## Checked
-- git diff origin/main...HEAD of the unit's files (fi); pedagogy of the changed passages in context only; FY2 text level.
-- lesson.md: biomass zero-combustion CO2 now explicitly an accounting assumption; real impact depends on origin, carbon-stock changes and regrowth speed; added to the summary. Supports critical reading of the table without new load.
-- inquiry.json ennuste-2: options unchanged in substance (wind 'no fuel is burned' instead of 'burns nothing'); correct feedback now says wind still has life-cycle emissions from construction and materials; the biomass distractor feedback says renewability alone does not make life-cycle emissions small. Appropriate, repairs the misconception, no disclosure of the table values (the next stage still shows them).
-- Later biomass feedbacks add the condition that the forest really regrows; consistent.
+- git diff HEAD~1 (commit 29f864da6) of the unit's files (fi), judged in context; round-1 findings for this unit.
+- inquiry.json ennuste-2 correct-option feedback: 'Annetun vertailuaineiston mukaan' -> 'IPCC:n elinkaarivertailun mukaan', so the feedback no longer refers to data the student has not yet seen; it still discloses no table values and the next stage still shows them.
+- lesson.md summary bullet: wording only ('siitä, kuinka nopeasti hiili sitoutuu takaisin'), clearer.

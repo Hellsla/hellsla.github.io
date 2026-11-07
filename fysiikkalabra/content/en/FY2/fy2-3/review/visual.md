@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: f031b195707cb161
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: 8b7d7cb8f1d3b7cf
+Mode: light (teacher 2026-11-07, "kevyt katselmointi"): the round-2 polish diff (git diff HEAD~1, commit 29f864da6) only
+Round: 2
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] lesson.md formula paragraph: the new "Their quotient is the average power over the interval." duplicates the existing "If energy is transformed unevenly, the formula gives the average power…"; consider merging. The paragraph is now ~108 words, still within limit.
+- none
 
 ## Checked
-- Diff of lesson.md, inquiry.json, exit-ticket.json (English), changed passages with surrounding paragraph.
-- Meaning of $\Delta E$ and $\Delta t$ in $P = \Delta E/\Delta t$: symbols in LaTeX, units in parentheses as before, grammar correct.
-- No captures opened (diff judged from source).
+- lesson.md: the duplicate "Their quotient is the average power over the interval." removed; paragraph reads correctly.
+- Round-1 changes are not re-reviewed (they passed in round 1). No captures opened (diff judged from source).

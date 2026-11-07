@@ -1,6 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 172e1cf560924717
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: 034ee247de8415bb
+Mode: light (teacher 2026-11-07, "kevyt katselmointi"): the round-2 polish diff (git diff HEAD~1, commit 29f864da6) only
+Round: 2
 
 ## Blocking
 - none
@@ -9,6 +10,5 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction 
 - none
 
 ## Checked
-- Diff of lesson.md, inquiry.json, exit-ticket.json (Selkeä suomi), changed passages with surrounding paragraph.
-- Year length sentence ($365$ days, $8760\,\text{h}$, $8784\,\text{h}$) and Result step $1598\,\text{kW} = 1{,}598\,\text{MW} \approx 1{,}6\,\text{MW}$: LaTeX, thin spaces, decimal separator correct.
-- No captures opened (diff judged from source).
+- lesson.md: the gloss "Karkausvuodessa eli vuodessa, jossa on $366$ vuorokautta, on $8784\,\text{h}$" is clear Selkeä suomi; numbers in LaTeX with thin space.
+- Round-1 changes are not re-reviewed (they passed in round 1). No captures opened (diff judged from source).

@@ -1,6 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: c1e3566a25135732
+CONTENT-HASH: 39a737c8fb70f7e1
 Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+Round: 2
 
 ## Blocking
 - none
@@ -9,6 +10,5 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction 
 - none
 
 ## Checked
-- git diff origin/main...HEAD of the unit's files (fi-easy); pedagogy of the changed passages in context only; FY2 text level.
-- lesson.md: ΔE now 'energy transferred or transformed during the interval', Δt 'length of the interval', quotient = average power. Clearer than 'energian muutos' and consistent with the next sentence on uneven conversion; slight redundancy (average power said twice) is harmless.
-- S2 (NOTES.md §12): the changed sentences are short, connected, natural Finnish; physics terms kept.
+- git diff HEAD~1 (commit 29f864da6) of the unit's files (fi-easy), judged in context; round-1 findings for this unit.
+- lesson.md: duplicated keskiteho sentence removed; the next sentence still says it. S2 text stays short and connected.
