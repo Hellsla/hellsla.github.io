@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: e69929d75809755a
+CONTENT-HASH: d2b1980c7da012c4
 
 ## Blocking
 
 ## Polish
+- solutions.md:103 (L3-01) — Kaava still reads "annos $= (\ldots) \cdot 100\,\%$" without the symbol, while Sijoitus now gives $D$ as a pure ratio and L3-05 (line 204) defines $D = \sum t_i/t_{\text{v},i}$; write the Kaava as "annos $D = \dfrac{t_1}{t_{\text{v},1}} + \dfrac{t_2}{t_{\text{v},2}}$ ($D = 1$ vastaa $100\,\%$)" so formula and substitution match.
 
 ## Checked
-- light delta review (teacher 2026-11-07), round 3: HEAD~1 diff of exercises/: L1-04 Järkevyys now draws 'vertailuannos ei täyty' from 83 dB < 85 dB, not from the limit value; 106 dB vs action values and 83 dB vs 87 dB(A) unchanged and right: earlier Polish fixed, no new error. Recomputed 83 dB; unprotected 8 h/2⁷ = 3,75 min ≈ 4 min.
+light delta review (teacher 2026-11-07), L3-01 chain: HEAD~1 diff of solutions.md only. Recomputed t_v,1 = 8 h/2¹ = 4,0 h, t_v,2 = 8 h/2⁻¹ = 16 h, D = 1 + 0,25 = 1,25; 1,25 = 125 % is exact (% = 1/100). D as a dimensionless ratio (h/h) agrees with L3-05's D = Σ t_i/t_v,i; answer 125 % and Järkevyys unchanged and right. Only the Kaava line keeps the old ·100 % form (Polish).
