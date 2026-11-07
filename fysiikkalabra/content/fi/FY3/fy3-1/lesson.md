@@ -269,11 +269,11 @@ Kuvaajassa paino on piirretty massan funktiona. Jokaisella taivaankappaleella pa
 </svg>
 
 ## Esimerkki
-Tutkimusrobotin massa on $120\,\text{kg}$. Mikä on sen paino Maassa ja Marsissa?
+Tutkimusrobotin massa on $1{,}20 \cdot 10^2\,\text{kg}$. Mikä on sen paino Maassa ja Marsissa?
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Massa on $m = 120\,\text{kg}$, ja taulukosta $g_\text{Maa} = 9{,}81\,\text{m/s}^2$ ja $g_\text{Mars} = 3{,}71\,\text{m/s}^2$. Kysytään painoja $G_\text{Maa}$ ja $G_\text{Mars}$.
+**Tunnetut ja kysytty.** Massa on $m = 1{,}20 \cdot 10^2\,\text{kg}$, ja taulukosta $g_\text{Maa} = 9{,}81\,\text{m/s}^2$ ja $g_\text{Mars} = 3{,}71\,\text{m/s}^2$. Kysytään painoja $G_\text{Maa}$ ja $G_\text{Mars}$.
 
 <!-- vaihe -->
 
@@ -299,21 +299,21 @@ G_\text{Mars} &= m g_\text{Mars}
 ```latex
 \begin{aligned}
 &G_\text{Maa} = m g_\text{Maa} \\
-&= 120\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\
+&= 1{,}20 \cdot 10^2\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\
 &= 1177{,}2\,\text{N} \\[6pt]
 &G_\text{Mars} = m g_\text{Mars} \\
-&= 120\,\text{kg} \cdot 3{,}71\,\text{m/s}^2 \\
+&= 1{,}20 \cdot 10^2\,\text{kg} \cdot 3{,}71\,\text{m/s}^2 \\
 &= 445{,}2\,\text{N}
 \end{aligned}
 ```
 
 <!-- vaihe -->
 
-**Tulos.** Kolmen merkitsevän numeron tarkkuudella robotin paino Maassa on $G_\text{Maa} \approx 1180\,\text{N}$ eli noin $1{,}18\,\text{kN}$ ja Marsissa $G_\text{Mars} \approx 445\,\text{N}$. Kolme numeroa, koska massa $120\,\text{kg}$ ja $g$-arvot on annettu kolmella numerolla.
+**Tulos.** Kolmen merkitsevän numeron tarkkuudella robotin paino on Maassa noin $1{,}18\,\text{kN}$ ja Marsissa noin $445\,\text{N}$. Tulokset ilmoitetaan kolmella merkitsevällä numerolla, koska massa ja putoamiskiihtyvyyden arvot on annettu tällä tarkkuudella.
 
 <!-- vaihe -->
 
-**Järkevyys.** Yhden kilogramman massan paino Maassa on noin $10\,\text{N}$, joten $120\,\text{kg}$:n massan paino on noin $1200\,\text{N}$. Marsin $g$ on vähän yli kolmasosa Maan arvosta ($3{,}71 : 9{,}81 \approx 0{,}38$), ja $445\,\text{N}$ on vähän yli kolmasosa $1180\,\text{N}$:sta. Marsissa paino on pienempi, koska Marsin ja robotin välinen vuorovaikutus on heikompi kuin Maan ja robotin. Massa on molemmissa sama.
+**Järkevyys.** Yhden kilogramman massan paino Maassa on noin $10\,\text{N}$, joten $120\,\text{kg}$:n massan paino on noin $1200\,\text{N}$. Marsin $g$ on vähän yli kolmasosa Maan arvosta ($3{,}71 : 9{,}81 \approx 0{,}38$), ja $445\,\text{N}$ on vähän yli kolmasosa $1{,}18\,\text{kN}$:sta. Marsissa paino on pienempi, koska Marsin ja robotin välinen vuorovaikutus on heikompi kuin Maan ja robotin. Massa on molemmissa sama.
 
 ## Yleinen virhekäsitys
 Arkikielessä sanotaan ”painan 70 kiloa”, mutta kilogramma on massan yksikkö, ei painon. Fysiikassa massa on $70\,\text{kg}$ ja paino Maassa noin $690\,\text{N}$. Toinen virhe on ajatella, että kappaleen massa muuttuu Kuussa. Massa pysyy samana, ja vain paino pienenee. Huomaa myös, että voimamittari mittaa voimaa, ei massaa: sen lukema muuttuu, kun sama kappale viedään toiseen paikkaan. Kylpyhuonevaaka näyttää silti kilogrammoja, koska se mittaa voimaa ja sen asteikko on tehty Maassa jakamalla voima arvolla $9{,}81\,\text{m/s}^2$. Kuussa tällainen vaaka näyttäisi vain noin kuudesosan massasta.

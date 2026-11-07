@@ -91,7 +91,7 @@
 
 ## fy3-10-L2-08
 **Kysytty:** mikä oppilaan laskun riveistä on väärin.
-**Periaate:** Tilanyhtälö $pV = nRT$ vaatii perusyksiköt: paine pascaleina, tilavuus kuutiometreinä ja lämpötila kelvineinä. Kun tulos on kelvineinä, celsiusasteet saadaan vähentämällä $273$, koska celsiuslämpötilaan lisätään $273$ kelvineiksi muutettaessa. Laskun voi tarkistaa rivi riviltä: yksikkömuunnokset, yhtälön ratkaisu, sijoitus ja lopuksi muunnos celsiusasteiksi.
+**Periaate:** Tilanyhtälössä $pV = nRT$ yksiköiden on sovittava yhteen $R$:n yksikön kanssa: paine pascaleina ja tilavuus kuutiometreinä (tai kilopascaleina ja litroina), lämpötila aina kelvineinä. Kun tulos on kelvineinä, celsiusasteet saadaan vähentämällä $273$, koska celsiuslämpötilaan lisätään $273$ kelvineiksi muutettaessa. Laskun voi tarkistaa rivi riviltä: yksikkömuunnokset, yhtälön ratkaisu, sijoitus ja lopuksi muunnos celsiusasteiksi.
 **Mallivastaus:** Rivi 1: $100\,\text{kPa} = 100\,000\,\text{Pa}$ ja $2{,}00\,\textsf{l} = 0{,}00200\,\text{m}^3$ ovat oikein.
 Rivi 2: $T = \dfrac{pV}{nR}$ on oikein.
 Rivi 3: osoittaja $100\,000 \cdot 0{,}00200 = 200$ ja nimittäjä $0{,}0800 \cdot 8{,}31 = 0{,}665$, joten $T = 200 : 0{,}665 \approx 301\,\text{K}$ on oikein.
@@ -153,7 +153,7 @@ $$\begin{aligned} d &= \dfrac{1328{,}9\,\text{J}}{121\,200\,\text{N}} \\ &= 0{,}
 
 ## fy3-10-L1-08
 **Kysytty:** mikä virhe oppilaan laskussa on.
-**Periaate:** Tilanyhtälö toimii oikein vain, kun suureet ovat perusyksiköissä: paine pascaleina, tilavuus kuutiometreinä ja lämpötila kelvineinä. Muuten tulokseen jää yksikön kerroin.
+**Periaate:** Tilanyhtälössä yksiköiden on sovittava yhteen $R$:n yksikön kanssa: paine pascaleina ja tilavuus kuutiometreinä (tai kilopascaleina ja litroina), lämpötila aina kelvineinä. Muuten tulokseen jää yksikön kerroin.
 **Mallivastaus:** Oppilas sijoitti paineen $150\,\text{kPa}$ lukuna $150$ pascaleiden sijaan. Oikea paine on $150\,000\,\text{Pa}$, jolloin $n = \dfrac{150\,000 \cdot 0{,}0020}{8{,}31 \cdot 300} \approx 0{,}12\,\text{mol}$. Oppilaan tulos on siis tuhat kertaa liian pieni, kuten hänen arvionsakin vihjasi. Lämpötila ja tilavuus oli sijoitettu oikeissa yksiköissä, eikä moolimassaa tarvita.
 
 ## fy3-10-L2-05

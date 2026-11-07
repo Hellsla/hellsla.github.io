@@ -116,7 +116,9 @@
 </svg>
 
 ## Key idea
-In everyday language, work means any kind of effort. In physics the word is more precise: a force does work when it moves an object in the direction of the force. When you carry a backpack horizontally at a steady speed, your supporting force points up, but the backpack moves sideways. The force is perpendicular to the motion, so it does no work. Your muscles get tired because they use energy to maintain the force, but no energy is transferred to the backpack.
+In everyday language, work often means effort. In physics, work has a more precise meaning: a force does work when an object is displaced and the force has a component along the displacement.
+
+When you carry a backpack horizontally at a steady speed, your force supporting the backpack points upwards but the backpack is displaced horizontally. The force is perpendicular to the displacement, so the mechanical work done by this force is zero. Your muscles still use energy to hold the backpack up.
 
 <svg data-fig="carry-lift" viewBox="0 0 600 320" role="img" aria-label="Diagram of two situations. On the left a backpack is carried sideways: the supporting force F points up but the motion is sideways, so the force does no work, W = 0. On the right the backpack is lifted up: the force F and the motion are in the same direction, so the force does work W = F s." style="max-width:100%;font-size:24px">
   <foreignObject x="52.5" y="15.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{carried sideways}$</div></foreignObject>
@@ -268,7 +270,7 @@ P = \frac{W}{t} = F v
 where $P$ is the power (W), $t$ is the time (s) and $v$ is the speed (m/s). One watt is one joule per second: $1\,\text{W} = 1\,\text{J/s}$.
 
 ## Worked example
-A spring is stretched 20 cm. The stretching force increases steadily from zero to 40 newtons, as the graph shows. How much work does the stretching force do?
+A spring is stretched $20\,\text{cm}$. The stretching force increases steadily from zero to 40 newtons, as the graph shows. How much work does the stretching force do?
 
 <svg data-fig="spring-work" viewBox="0 0 600 320" role="img" aria-label="(s,F) graph to scale: the force increases linearly from zero to 40 newtons over 0–0.20 metres; the area of the triangle is the work." style="max-width:100%;font-size:24px">
   <line x1="167.5" y1="270" x2="167.5" y2="56" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -358,7 +360,7 @@ W &= F_\text{avg}\, s \\
 &= 4.0\,\text{J}
 \end{aligned}
 ```
-If you calculated $40\,\text{N} \cdot 0.20\,\text{m} = 8.0\,\text{J}$, the result would be twice too large, because the force is not 40 N over the whole distance.
+If you calculated $40\,\text{N} \cdot 0.20\,\text{m} = 8.0\,\text{J}$, the result would be twice too large, because the force is not $40\,\text{N}$ over the whole distance.
 
 ## Common misconception
 Work is not the same thing as effort: getting tired does not mean you have done work in the physics sense. Another common mistake is to mix up work and power: a large power does not mean a large amount of work, but work done quickly.

@@ -26,11 +26,11 @@
       "prompt": "Repun massa on $10\\,\\text{kg}$. Kuinka suuri painovoima $G = mg$ reppuun vaikuttaa?",
       "choices": [
         {
-          "text": "10 N",
+          "text": "$10\\,\\text{N}$",
           "feedback": "Massa ja paino menivät sekaisin. Paino on voima: $G = mg = 10\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\approx 98\\,\\text{N}$."
         },
         {
-          "text": "98 N",
+          "text": "$98\\,\\text{N}$",
           "correct": true,
           "feedback": "Oikein: $G = mg = 10\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\approx 98\\,\\text{N}$. Tätä voimaa tarvitset kannattelemaan reppua."
         },
@@ -39,7 +39,7 @@
           "feedback": "Paino on voima, ja voiman yksikkö on newton. Kilogramma on massan yksikkö."
         },
         {
-          "text": "981 N",
+          "text": "$981\\,\\text{N}$",
           "feedback": "Putoamiskiihtyvyys on $9{,}81\\,\\text{m/s}^2$, ei 98,1. Tulos on $10 \\cdot 9{,}81\\,\\text{N} \\approx 98\\,\\text{N}$."
         }
       ],
@@ -50,7 +50,7 @@
       "stage": "ennusta",
       "type": "choice",
       "title": "Ennuste 1: matka kaksinkertaistuu",
-      "prompt": "Laatikkoa vedetään lattialla 60 N:n voimalla. Voima on liikkeen suuntainen. Laatikkoa vedetään ensin $10\\,\\text{m}$ ja sitten $20\\,\\text{m}$. Voima pysyy samana. Mitä voiman tekemälle työlle tapahtuu?",
+      "prompt": "Laatikkoa vedetään lattialla $60\\,\\text{N}$:n voimalla. Voima on liikkeen suuntainen. Laatikkoa vedetään ensin $10\\,\\text{m}$ ja sitten $20\\,\\text{m}$. Voima pysyy samana. Mitä voiman tekemälle työlle tapahtuu?",
       "justify": true,
       "reveal": {
         "after": "exp-1",
@@ -78,7 +78,7 @@
       "stage": "ennusta",
       "type": "choice",
       "title": "Ennuste 2: sama veto hitaammin",
-      "prompt": "Sama veto (60 N, $10\\,\\text{m}$) tehdään ensin 5 sekunnissa. Sitten se tehdään 20 sekunnissa. Mitä tapahtuu työlle ja teholle?",
+      "prompt": "Sama veto ($60\\,\\text{N}$, $10\\,\\text{m}$) tehdään ensin 5 sekunnissa. Sitten se tehdään 20 sekunnissa. Mitä tapahtuu työlle ja teholle?",
       "justify": true,
       "reveal": {
         "after": "exp-2",
@@ -110,7 +110,7 @@
       "type": "choice",
       "layout": "models",
       "title": "Ennuste 3: reppu käytävällä",
-      "prompt": "Kannat reppua, jonka paino on 98 N. Kuljet $20\\,\\text{m}$ vaakasuoraa käytävää tasaisella vauhdilla. Kolme opiskelijaa selittää, kuinka suuren työn kannatteleva voimasi tekee reppuun. Kuka on oikeassa? Simulaatio ei testaa tätä, koska siinä voima on aina liikkeen suuntainen. Vertaa ennustettasi Teoriatiivistelmän malliin ja kuvaan.",
+      "prompt": "Kannat reppua, jonka paino on $98\\,\\text{N}$. Kuljet $20\\,\\text{m}$ vaakasuoraa käytävää tasaisella vauhdilla. Kolme opiskelijaa selittää, kuinka suuren työn kannatteleva voimasi tekee reppuun. Kuka on oikeassa? Simulaatio ei testaa tätä, koska siinä voima on aina liikkeen suuntainen. Vertaa ennustettasi Teoriatiivistelmän malliin ja kuvaan.",
       "justify": true,
       "choices": [
         {
@@ -290,17 +290,17 @@
           "feedback": "Joule on työn yksikkö, ja $1\\,\\text{J} = 1\\,\\text{N}\\cdot\\text{m}$. Yksikkö on oikein; virhe on muualla."
         },
         {
-          "text": "Voima ei ole 40 N koko matkalla. Työ on $(s, F)$-kuvaajan kolmion pinta-ala, $\\tfrac{1}{2} \\cdot 40\\,\\text{N} \\cdot 0{,}20\\,\\text{m} = 4{,}0\\,\\text{J}$.",
+          "text": "Voima ei ole $40\\,\\text{N}$ koko matkalla. Työ on $(s, F)$-kuvaajan kolmion pinta-ala, $\\tfrac{1}{2} \\cdot 40\\,\\text{N} \\cdot 0{,}20\\,\\text{m} = 4{,}0\\,\\text{J}$.",
           "correct": true,
           "feedback": "Oikein. $W = Fs$ pätee vakiovoimalle. Tässä voima kasvaa tasaisesti nollasta. Silloin keskimääräinen voima on puolet huippuarvosta. Työ on siis puolet opiskelijan tuloksesta."
         },
         {
           "text": "Matkan pitäisi olla $20\\,\\text{m}$, ei $0{,}20\\,\\text{m}$.",
-          "feedback": "Jousta venytettiin 20 cm, ja $20\\,\\text{cm} = 0{,}20\\,\\text{m}$. Yksikkömuunnos on oikein."
+          "feedback": "Jousta venytettiin $20\\,\\text{cm}$, ja $20\\,\\text{cm} = 0{,}20\\,\\text{m}$. Yksikkömuunnos on oikein."
         },
         {
           "text": "Laskussa ei ole virhettä.",
-          "feedback": "Kaava $W = Fs$ koskee vakiovoimaa. Tässä voima kasvaa nollasta 40 N:iin. Voima on siis 40 N vain matkan lopussa."
+          "feedback": "Kaava $W = Fs$ koskee vakiovoimaa. Tässä voima kasvaa nollasta $40\\,\\text{N}$:iin. Voima on siis $40\\,\\text{N}$ vain matkan lopussa."
         }
       ],
       "optional": true
@@ -310,7 +310,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Sovella uuteen tilanteeseen",
-      "prompt": "Sähköpotkulauta kulkee tasaisella $5{,}0\\,\\text{m/s}$:n nopeudella. Moottori työntää lautaa liikkeen suuntaisella 48 N:n voimalla. Voima kumoaa kitkan ja ilmanvastuksen. Kuinka suuri on moottorin teho? Vastaa watteina.",
+      "prompt": "Sähköpotkulauta kulkee tasaisella $5{,}0\\,\\text{m/s}$:n nopeudella. Moottori työntää lautaa liikkeen suuntaisella $48\\,\\text{N}$:n voimalla. Voima kumoaa kitkan ja ilmanvastuksen. Kuinka suuri on moottorin teho? Vastaa watteina.",
       "answer": 240,
       "unit": "W",
       "tolerance": 0.02,
@@ -343,20 +343,20 @@
       "stage": "tarkista",
       "type": "choice",
       "title": "1. Käsite",
-      "prompt": "Jousta venytetään ensin 0 cm:stä 10 cm:iin. Sitten sitä venytetään 10 cm:stä 20 cm:iin. Voima kasvaa tasaisesti venymän mukana. Jälkimmäinen venytys vaatii ensimmäiseen verrattuna",
+      "prompt": "Jousta venytetään ensin $0\\,\\text{cm}$:stä $10\\,\\text{cm}$:iin. Sitten sitä venytetään $10\\,\\text{cm}$:stä $20\\,\\text{cm}$:iin. Voima kasvaa tasaisesti venymän mukana. Jälkimmäinen venytys vaatii ensimmäiseen verrattuna",
       "choices": [
         {
           "text": "saman työn, koska venymä kasvaa yhtä paljon.",
-          "feedback": "Voima on jälkimmäisellä välillä suurempi. Siksi $(s, F)$-kuvaajan pinta-ala on siellä suurempi. Piirrä kolmio. Jaa se pystyviivalla kohdasta 10 cm."
+          "feedback": "Voima on jälkimmäisellä välillä suurempi. Siksi $(s, F)$-kuvaajan pinta-ala on siellä suurempi. Piirrä kolmio. Jaa se pystyviivalla kohdasta $10\\,\\text{cm}$."
         },
         {
           "text": "kaksinkertaisen työn, koska voima on lopussa kaksinkertainen.",
-          "feedback": "Loppuvoima on kaksinkertainen, mutta työ on pinta-ala, ei loppuvoima. Kolmion 0–20 cm pinta-ala on nelinkertainen verrattuna kolmioon 0–10 cm. Väli 10–20 cm on siis 4 − 1 = 3 osaa."
+          "feedback": "Loppuvoima on kaksinkertainen, mutta työ on pinta-ala, ei loppuvoima. Kolmion 0–$20\\,\\text{cm}$ pinta-ala on nelinkertainen verrattuna kolmioon 0–$10\\,\\text{cm}$. Väli 10–$20\\,\\text{cm}$ on siis 4 − 1 = 3 osaa."
         },
         {
           "text": "kolminkertaisen työn.",
           "correct": true,
-          "feedback": "Oikein. $(s, F)$-kuvaaja on kolmio. Välin 0–10 cm pinta-ala on 1 osa ja välin 0–20 cm pinta-ala 4 osaa. Välin 10–20 cm pinta-ala on siis 3 osaa."
+          "feedback": "Oikein. $(s, F)$-kuvaaja on kolmio. Välin 0–$10\\,\\text{cm}$ pinta-ala on 1 osa ja välin 0–$20\\,\\text{cm}$ pinta-ala 4 osaa. Välin 10–$20\\,\\text{cm}$ pinta-ala on siis 3 osaa."
         }
       ]
     },
@@ -391,7 +391,7 @@
       "stage": "tarkista",
       "type": "numeric",
       "title": "3. Kuvaaja ja laskeminen",
-      "prompt": "$(s, F)$-kuvaajassa liikkeen suuntainen voima on 30 N välillä 0–$4{,}0\\,\\text{m}$. Sen jälkeen voima laskee tasaisesti nollaan välillä 4,0–$8{,}0\\,\\text{m}$. Kuinka suuren työn voima tekee koko $8{,}0\\,\\text{m}$:n matkalla? Vastaa jouleina.",
+      "prompt": "$(s, F)$-kuvaajassa liikkeen suuntainen voima on $30\\,\\text{N}$ välillä 0–$4{,}0\\,\\text{m}$. Sen jälkeen voima laskee tasaisesti nollaan välillä 4,0–$8{,}0\\,\\text{m}$. Kuinka suuren työn voima tekee koko $8{,}0\\,\\text{m}$:n matkalla? Vastaa jouleina.",
       "answer": 180,
       "unit": "J",
       "tolerance": 0.02,
@@ -403,7 +403,7 @@
       "mistakes": [
         {
           "value": 240,
-          "feedback": "Laskit $30\\,\\text{N} \\cdot 8{,}0\\,\\text{m}$, mutta voima ei ole 30 N koko matkalla. Jälkimmäinen osa on kolmio. Sen pinta-ala on puolet suorakulmiosta."
+          "feedback": "Laskit $30\\,\\text{N} \\cdot 8{,}0\\,\\text{m}$, mutta voima ei ole $30\\,\\text{N}$ koko matkalla. Jälkimmäinen osa on kolmio. Sen pinta-ala on puolet suorakulmiosta."
         },
         {
           "value": 120,

@@ -23,23 +23,23 @@
       "stage": "herata",
       "type": "choice",
       "title": "Kertaa: Boylen laki",
-      "prompt": "Ruiskun suu tukitaan, kun ruiskussa on 60 ml ilmaa 100 kPa:n paineessa. Mäntää painetaan, kunnes ilman tilavuus on 30 ml. Lämpötila ei muutu. Mikä on ilman paine nyt?",
+      "prompt": "Ruiskun suu tukitaan, kun ruiskussa on $60\\,\\text{ml}$ ilmaa $100\\,\\text{kPa}$:n paineessa. Mäntää painetaan, kunnes ilman tilavuus on $30\\,\\text{ml}$. Lämpötila ei muutu. Mikä on ilman paine nyt?",
       "choices": [
         {
-          "text": "50 kPa",
+          "text": "$50\\,\\text{kPa}$",
           "feedback": "Vakiolämpötilassa paine ja tilavuus muuttuvat vastakkaisiin suuntiin. Boylen laki $p_1V_1 = p_2V_2$ tarkoittaa kääntäen verrannollisuutta. Kun tilavuus puolittuu, paine kaksinkertaistuu."
         },
         {
-          "text": "100 kPa",
+          "text": "$100\\,\\text{kPa}$",
           "feedback": "Ilman määrä pysyy samana, mutta paine ei pysy. Boylen lain $p_1V_1 = p_2V_2$ mukaan $p_2 = p_1V_1/V_2 = 100\\,\\text{kPa} \\cdot 60\\,\\text{ml} / 30\\,\\text{ml} = 200\\,\\text{kPa}$."
         },
         {
-          "text": "200 kPa",
+          "text": "$200\\,\\text{kPa}$",
           "correct": true,
           "feedback": "Oikein. Boylen laki $p_1V_1 = p_2V_2$ antaa $p_2 = 100\\,\\text{kPa} \\cdot 60\\,\\text{ml} / 30\\,\\text{ml} = 200\\,\\text{kPa}$. Tilavuus on puolet pienempi, joten paine on kaksinkertainen."
         },
         {
-          "text": "400 kPa",
+          "text": "$400\\,\\text{kPa}$",
           "feedback": "Paine on kääntäen verrannollinen tilavuuteen. Se ei ole kääntäen verrannollinen tilavuuden neliöön. Tilavuus puolittuu vain kerran, joten paine kaksinkertaistuu vain kerran: $200\\,\\text{kPa}$."
         }
       ],
@@ -81,7 +81,7 @@
       "stage": "tutki",
       "type": "interpret",
       "title": "Punnitaan pallot",
-      "text": "Ohutseinäinen lasipallo on 5,00 litran kokoinen. Pallo punnitaan ensin tyhjäksi pumpattuna. Sitten se punnitaan täytettynä eri kaasuilla. Joka kerta kaasun paine on 101 kPa ja lämpötila $20\\,{}^\\circ\\text{C}$. Mooli on aina sama hiukkasmäärä. Moolimassa $M$ on yhden moolin massa. Taulukossa ovat kaasujen massat ja moolimassat. Massat ovat *esimerkkiarvoja*. Niissä on punnituksen tavallista hajontaa, noin ±$0{,}02\\,\\text{g}$.\n\n| kaasu | $m$ (g) | $M$ (g/mol) |\n|---|---|---|\n| helium He | 0,83 | 4,00 |\n| typpi N₂ | 5,78 | 28,0 |\n| ilma | 6,02 | 29,0 |\n| hiilidioksidi CO₂ | 9,10 | 44,0 |\n\nLaske ensin heliumille massan ja moolimassan osamäärä $m/M$.",
+      "text": "Ohutseinäinen lasipallo on 5,00 litran kokoinen. Pallo punnitaan ensin tyhjäksi pumpattuna. Sitten se punnitaan täytettynä eri kaasuilla. Joka kerta kaasun paine on $101\\,\\text{kPa}$ ja lämpötila $20\\,{}^\\circ\\text{C}$. Mooli on aina sama hiukkasmäärä. Moolimassa $M$ on yhden moolin massa. Taulukossa ovat kaasujen massat ja moolimassat. Massat ovat *esimerkkiarvoja*. Niissä on punnituksen tavallista hajontaa, noin ±$0{,}02\\,\\text{g}$.\n\n| kaasu | $m$ (g) | $M$ (g/mol) |\n|---|---|---|\n| helium He | 0,83 | 4,00 |\n| typpi N₂ | 5,78 | 28,0 |\n| ilma | 6,02 | 29,0 |\n| hiilidioksidi CO₂ | 9,10 | 44,0 |\n\nLaske ensin heliumille massan ja moolimassan osamäärä $m/M$.",
       "question": {
         "type": "numeric",
         "prompt": "Paljonko on heliumin $m/M$?",
@@ -118,7 +118,7 @@
         {
           "text": "$m/M$ on kaikilla kaasuilla lähes sama.",
           "correct": true,
-          "feedback": "Juuri näin. Helium 0,2075 mol, typpi 0,2064 mol, ilma 0,2076 mol ja hiilidioksidi 0,2068 mol. Erot ovat alle $1\\,\\%$, eli ne ovat punnituksen hajontaa. Osamäärä $m/M$ on ainemäärä mooleina. Samassa paineessa, tilavuudessa ja lämpötilassa kaikissa näissä kaasuissa on siis yhtä monta moolia."
+          "feedback": "Juuri näin. Helium $0{,}2075\\,\\text{mol}$, typpi $0{,}2064\\,\\text{mol}$, ilma $0{,}2076\\,\\text{mol}$ ja hiilidioksidi $0{,}2068\\,\\text{mol}$. Erot ovat alle $1\\,\\%$, eli ne ovat punnituksen hajontaa. Osamäärä $m/M$ on ainemäärä mooleina. Samassa paineessa, tilavuudessa ja lämpötilassa kaikissa näissä kaasuissa on siis yhtä monta moolia."
         },
         {
           "text": "$m/M$ on suurin heliumilla, koska kevyttä kaasua mahtuu palloon enemmän.",
@@ -130,7 +130,7 @@
         },
         {
           "text": "$m/M$ kasvaa samassa suhteessa kuin massa.",
-          "feedback": "Hiilidioksidi on noin 11 kertaa heliumia raskaampaa. Silti $m/M$ on molemmilla lähes sama, 0,2068 mol ja 0,2075 mol. Moolimassa kasvaa samassa suhteessa kuin massa. Siksi osamäärä pysyy samana."
+          "feedback": "Hiilidioksidi on noin 11 kertaa heliumia raskaampaa. Silti $m/M$ on molemmilla lähes sama, $0{,}2068\\,\\text{mol}$ ja $0{,}2075\\,\\text{mol}$. Moolimassa kasvaa samassa suhteessa kuin massa. Siksi osamäärä pysyy samana."
         }
       ]
     },
@@ -143,7 +143,7 @@
       "choices": [
         {
           "text": "Ilmapallossa, koska ilmapallo on raskaampi.",
-          "feedback": "Punnituksessa ilman massa oli noin 7 kertaa heliumin massa ($6{,}02\\,\\text{g}$ ja $0{,}83\\,\\text{g}$). Kun massa jaetaan moolimassalla, kummastakin tulee lähes sama ainemäärä, 0,2076 mol ja 0,2075 mol. Mooli on aina sama hiukkasmäärä, joten hiukkasia on yhtä monta. Massa kertoo hiukkasmäärän vain silloin, kun hiukkaset ovat samanlaisia."
+          "feedback": "Punnituksessa ilman massa oli noin 7 kertaa heliumin massa ($6{,}02\\,\\text{g}$ ja $0{,}83\\,\\text{g}$). Kun massa jaetaan moolimassalla, kummastakin tulee lähes sama ainemäärä, $0{,}2076\\,\\text{mol}$ ja $0{,}2075\\,\\text{mol}$. Mooli on aina sama hiukkasmäärä, joten hiukkasia on yhtä monta. Massa kertoo hiukkasmäärän vain silloin, kun hiukkaset ovat samanlaisia."
         },
         {
           "text": "Yhtä monta.",
@@ -152,7 +152,7 @@
         },
         {
           "text": "Heliumpallossa, koska pienet ja nopeat heliumhiukkaset mahtuvat tiiviimmin.",
-          "feedback": "Punnitus ei tue tätä. Heliumin $m/M$ oli 0,2075 mol. Se on sama kuin muilla kaasuilla mittaushajonnan rajoissa. Kevyet heliumhiukkaset liikkuvat samassa lämpötilassa nopeammin. Ne osuvat seiniin useammin, mutta jokainen osuma painaa seinää heikommin. Punnitus näyttää, että lopputulos on sama paine samalla hiukkasmäärällä. Ideaalikaasun mallissa hiukkaset ovat pistemäisiä. Koko ei vaikuta siihen, montako hiukkasta mahtuu."
+          "feedback": "Punnitus ei tue tätä. Heliumin $m/M$ oli $0{,}2075\\,\\text{mol}$. Se on sama kuin muilla kaasuilla mittaushajonnan rajoissa. Kevyet heliumhiukkaset liikkuvat samassa lämpötilassa nopeammin. Ne osuvat seiniin useammin, mutta jokainen osuma painaa seinää heikommin. Punnitus näyttää, että lopputulos on sama paine samalla hiukkasmäärällä. Ideaalikaasun mallissa hiukkaset ovat pistemäisiä. Koko ei vaikuta siihen, montako hiukkasta mahtuu."
         },
         {
           "text": "Se riippuu kaasujen laadusta ja lämpötilasta, joten sitä ei voi päätellä.",
@@ -300,7 +300,7 @@
       "stage": "tutki",
       "type": "numeric",
       "title": "Laske vakio punnituksesta",
-      "prompt": "Simulaatiossa $pV/(NT)$ pysyi vakiona. Lasketaan sama suure punnitusaineistosta. Aineisto muistuttaa oikean kaasun mittausta. Punnituksessa heliumin ainemäärä oli $n = m/M = 0{,}2075\\,\\text{mol}$. Paine oli 101 kPa, tilavuus $5{,}00\\,\\textsf{l}$ ja lämpötila $20\\,{}^\\circ\\text{C}$. Laske $pV/(nT)$ SI-yksiköissä.",
+      "prompt": "Simulaatiossa $pV/(NT)$ pysyi vakiona. Lasketaan sama suure punnitusaineistosta. Aineisto muistuttaa oikean kaasun mittausta. Punnituksessa heliumin ainemäärä oli $n = m/M = 0{,}2075\\,\\text{mol}$. Paine oli $101\\,\\text{kPa}$, tilavuus $5{,}00\\,\\textsf{l}$ ja lämpötila $20\\,{}^\\circ\\text{C}$. Laske $pV/(nT)$ SI-yksiköissä.",
       "answer": 8.3,
       "unit": "J/(mol·K)",
       "tolerance": 0.02,
@@ -377,20 +377,20 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Etsi virhe",
-      "prompt": "Opiskelija laskee, kuinka monta moolia ilmaa on 2,0 litran pullossa. Paine on 101 kPa ja lämpötila $20\\,{}^\\circ\\text{C}$:\n\n$$\\begin{aligned} n &= \\frac{pV}{RT} \\\\ &= \\frac{101\\,000\\,\\text{Pa} \\cdot 0{,}0020\\,\\text{m}^3}{8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 20\\,\\text{K}} \\\\ &\\approx 1{,}2\\,\\text{mol} \\end{aligned}$$\n\nMissä on virhe?",
+      "prompt": "Opiskelija laskee, kuinka monta moolia ilmaa on 2,0 litran pullossa. Paine on $101\\,\\text{kPa}$ ja lämpötila $20\\,{}^\\circ\\text{C}$:\n\n$$\\begin{aligned} n &= \\frac{pV}{RT} \\\\ &= \\frac{101\\,000\\,\\text{Pa} \\cdot 0{,}0020\\,\\text{m}^3}{8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 20\\,\\text{K}} \\\\ &\\approx 1{,}2\\,\\text{mol} \\end{aligned}$$\n\nMissä on virhe?",
       "choices": [
         {
-          "text": "Paine pitäisi sijoittaa kilopascaleina, 101 kPa.",
-          "feedback": "Pascal on oikea yksikkö, koska $1\\,\\text{Pa}\\cdot\\text{m}^3 = 1\\,\\text{J}$ sopii yhteen $R$:n yksikön kanssa. Kilopascaleilla tulos olisi tuhatkertaisesti väärä. Virhe on jossakin muualla."
+          "text": "Paine pitäisi sijoittaa kilopascaleina, $101\\,\\text{kPa}$.",
+          "feedback": "Paine on sijoitettu oikein. Tilavuus on kuutiometreinä. Silloin paine sijoitetaan pascaleina, koska $1\\,\\text{Pa}\\cdot\\text{m}^3 = 1\\,\\text{J}$ sopii yhteen $R$:n yksikön kanssa. Kilopascaleilla ja kuutiometreillä tulos olisi tuhat kertaa väärä. Virhe on jossakin muualla."
         },
         {
           "text": "Lämpötila on celsiusasteina. Kelvineinä $T = 293{,}15\\,\\text{K}$, ja $n \\approx 0{,}083\\,\\text{mol}$.",
           "correct": true,
-          "feedback": "Oikein. Tilanyhtälössä lämpötila on aina kelvineinä: $n = 101\\,000\\,\\text{Pa} \\cdot 0{,}0020\\,\\text{m}^3 / (8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 293{,}15\\,\\text{K}) \\approx 0{,}083\\,\\text{mol}$. Järkevyystarkistus: mooli vie huoneenlämmössä noin $24\\,\\textsf{l}$. Siksi 2,0 litrassa on noin 0,08 mol."
+          "feedback": "Oikein. Tilanyhtälössä lämpötila on aina kelvineinä: $n = 101\\,000\\,\\text{Pa} \\cdot 0{,}0020\\,\\text{m}^3 / (8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 293{,}15\\,\\text{K}) \\approx 0{,}083\\,\\text{mol}$. Järkevyystarkistus: mooli vie huoneenlämmössä noin $24\\,\\textsf{l}$. Siksi 2,0 litrassa on noin $0{,}08\\,\\text{mol}$."
         },
         {
           "text": "Tilavuus pitäisi sijoittaa litroina, $2{,}0\\,\\textsf{l}$.",
-          "feedback": "Kuutiometri on oikein: $2{,}0\\,\\text{l} = 0{,}0020\\,\\text{m}^3$. Vain se sopii yhteen pascalin ja $R$:n yksikön kanssa. Virhe on jossakin muualla."
+          "feedback": "Kuutiometri on oikein: $2{,}0\\,\\textsf{l} = 0{,}0020\\,\\text{m}^3$. Paine on pascaleina, joten tilavuus sijoitetaan kuutiometreinä. Litrat sopisivat vain kilopascalien kanssa, koska $1\\,\\text{kPa}\\cdot\\textsf{l} = 1\\,\\text{J}$. Virhe on jossakin muualla."
         },
         {
           "text": "Laskussa ei ole virhettä.",
@@ -404,7 +404,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Sovella uuteen tilanteeseen",
-      "prompt": "Kuumailmapallon kuoren tilavuus on $2{,}80 \\cdot 10^3\\,\\text{m}^3$. Kuoren alaosa on auki. Siksi sisäilman paine on sama kuin ulkoilman, 101 kPa. Poltin lämmittää sisäilman $100\\,{}^\\circ\\text{C}$:een. Kuinka monta kilogrammaa ilmaa kuoren sisällä on? Ilman moolimassa on $29{,}0\\,\\text{g/mol}$, ja $R = 8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$. Oleta, että ilma on ideaalikaasua.",
+      "prompt": "Kuumailmapallon kuoren tilavuus on $2{,}80 \\cdot 10^3\\,\\text{m}^3$. Kuoren alaosa on auki. Siksi sisäilman paine on sama kuin ulkoilman, $101\\,\\text{kPa}$. Poltin lämmittää sisäilman $100\\,{}^\\circ\\text{C}$:een. Kuinka monta kilogrammaa ilmaa kuoren sisällä on? Ilman moolimassa on $29{,}0\\,\\text{g/mol}$, ja $R = 8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$. Oleta, että ilma on ideaalikaasua.",
       "answer": 2640,
       "unit": "kg",
       "tolerance": 0.02,
@@ -522,7 +522,7 @@
         "Sanon, että mooli on aina sama hiukkasmäärä, joten hiukkasiakin on yhtä monta.",
         "Selitän massojen eron moolimassalla: $m = nM$, ja raskaamman kaasun hiukkaset ovat raskaampia."
       ],
-      "model": "Punnituksessa jokaisella neljällä kaasulla oli sama paine, tilavuus ja lämpötila. Osamäärä $m/M$ oli kaikilla lähes sama: heliumilla 0,2075 mol ja hiilidioksidilla 0,2068 mol. Tilanyhtälö selittää tämän. Siinä $n = pV/(RT)$, ja moolinen kaasuvakio $R$ on sama kaikille kaasuille. Samat $p$, $V$ ja $T$ antavat siis saman ainemäärän kaasun laadusta riippumatta. Mooli on aina sama hiukkasmäärä, joten hiukkasia on yhtä monta. Massat eroavat, koska $m = nM$. Hiilidioksidihiukkanen on paljon raskaampi kuin heliumhiukkanen. Siksi sama ainemäärä hiilidioksidia painaa noin 11 kertaa enemmän.",
+      "model": "Punnituksessa jokaisella neljällä kaasulla oli sama paine, tilavuus ja lämpötila. Osamäärä $m/M$ oli kaikilla lähes sama: heliumilla $0{,}2075\\,\\text{mol}$ ja hiilidioksidilla $0{,}2068\\,\\text{mol}$. Tilanyhtälö selittää tämän. Siinä $n = pV/(RT)$, ja moolinen kaasuvakio $R$ on sama kaikille kaasuille. Samat $p$, $V$ ja $T$ antavat siis saman ainemäärän kaasun laadusta riippumatta. Mooli on aina sama hiukkasmäärä, joten hiukkasia on yhtä monta. Massat eroavat, koska $m = nM$. Hiilidioksidihiukkanen on paljon raskaampi kuin heliumhiukkanen. Siksi sama ainemäärä hiilidioksidia painaa noin 11 kertaa enemmän.",
       "optional": true
     },
     {

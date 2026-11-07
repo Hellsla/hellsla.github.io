@@ -235,7 +235,7 @@
       "stage": "selita",
       "type": "reflect",
       "title": "Return to your predictions",
-      "prompt": "Compare your predictions with the measurements and the model $Q = sm$, $Q = rm$. Then return to the opening question: where does the energy from the hotplate go at the moments when the thermometer reading does not change, and why does the temperature of boiling water not rise even though the hob is on full?",
+      "prompt": "Compare your predictions with the measurements and the model $Q = sm$, $Q = rm$. Then return to the opening question: where does the energy from the hotplate go at the moments when the thermometer reading does not change, and why does the temperature of boiling water stay at about $100\\,{}^\\circ\\text{C}$ even though energy keeps flowing into the pan?",
       "predictions": [
         "pred-1",
         "pred-2",

@@ -223,7 +223,7 @@ t &= \frac{s\,m_\text{jää} - c\,m_\text{j}\Delta T_\text{j}}{UA\Delta T_\text{
 
 <!-- vaihe -->
 
-**Yksikkömuunnokset.** Lämpötilan muutokset ovat samat kelvineinä ja celsiusasteina: juomat jäähtyvät $20\,{}^\circ\text{C} - 0\,{}^\circ\text{C} = 20\,\text{K}$ ja seinän yli on $28\,{}^\circ\text{C} - 0\,{}^\circ\text{C} = 28\,\text{K}$. Sulamislämpö on $s = 334\,\tfrac{\text{kJ}}{\text{kg}} = 334\,000\,\tfrac{\text{J}}{\text{kg}}$, jotta energiat ovat joulejaan ja teho watteina. Lopuksi aika muutetaan sekunneista tunneiksi: $1\,\text{h} = 3600\,\text{s}$.
+**Yksikkömuunnokset.** Lämpötilan muutokset ovat samat kelvineinä ja celsiusasteina: juomat jäähtyvät $20\,{}^\circ\text{C} - 0\,{}^\circ\text{C} = 20\,\text{K}$ ja seinän yli on $28\,{}^\circ\text{C} - 0\,{}^\circ\text{C} = 28\,\text{K}$. Sulamislämpö muunnetaan jouleiksi kilogrammaa kohti: $s = 334\,\tfrac{\text{kJ}}{\text{kg}} = 334\,000\,\tfrac{\text{J}}{\text{kg}}$. Näin energiat voidaan laskea jouleina ja teho watteina. Lopuksi aika muunnetaan sekunneista tunneiksi: $1\,\text{h} = 3600\,\text{s}$.
 
 <!-- vaihe -->
 
@@ -255,7 +255,17 @@ Jäätä riittää noin $2{,}4\,\text{h}$. Tulos ilmoitetaan kahdella merkitsev�
 
 <!-- vaihe -->
 
-**Järkevyys.** Ilman lämpimiä juomia jäätä riittäisi $\tfrac{334\,000\,\text{J}}{33{,}6\,\text{W}} \approx 9940\,\text{s} \approx 2{,}8\,\text{h}$, joten tulos on kohtuullisen vähän lyhyempi. Juomien jäähdyttäminen sulattaa jäästä osuuden $\tfrac{41\,900\,\text{J}}{334\,000\,\text{J}} \approx 0{,}13 = 13\,\%$, ja aika lyhenee saman osuuden: $2{,}8\,\text{h} \cdot 0{,}87 \approx 2{,}4\,\text{h}$. Kun jää on sulanut, laukussa on $1{,}5\,\text{kg}$ vettä, jonka lämpökapasiteetti on $4190 \cdot 1{,}5 = 6285\,\text{J/K}$. Teho nostaa sen lämpötilaa aluksi $\tfrac{33{,}6\,\text{W}}{6285\,\text{J/K}} \cdot 3600\,\tfrac{\text{s}}{\text{h}} \approx 19\,\tfrac{\text{K}}{\text{h}}$, kuten kuvaaja näyttää.
+**Järkevyys.** Ilman lämpimiä juomia jäätä riittäisi $\tfrac{334\,000\,\text{J}}{33{,}6\,\text{W}} \approx 9940\,\text{s} \approx 2{,}8\,\text{h}$, joten tulos on kohtuullisen vähän lyhyempi. Juomien jäähdyttäminen sulattaa jäästä osuuden $\tfrac{41\,900\,\text{J}}{334\,000\,\text{J}} \approx 0{,}13 = 13\,\%$, ja aika lyhenee saman osuuden: $2{,}8\,\text{h} \cdot 0{,}87 \approx 2{,}4\,\text{h}$.
+
+Kun jää on sulanut, laukussa on $1{,}0\,\text{kg}$ sulamisvettä ja $0{,}50\,\text{kg}$ juomia. Kun juomien ominaislämpökapasiteetin oletetaan olevan yhtä suuri kuin veden, sisällön yhteenlaskettu lämpökapasiteetti on
+```latex
+\begin{aligned}
+&C = (m_\text{jää} + m_\text{j})\,c \\
+&= 1{,}50\,\text{kg} \cdot 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \\
+&\approx 6285\,\tfrac{\text{J}}{\text{K}}
+\end{aligned}
+```
+Kun lämpöä siirtyy laukkuun teholla $33{,}6\,\text{W}$, sisällön lämpötila alkaa nousta mallin mukaan noin $19\,\text{K}$ tunnissa. Tämä arvio pätee lämpötilan nousun alkuvaiheessa ja olettaen, että lämpöteho pysyy vakiona.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että jää tuottaa kylmää, joka virtaa juomiin. Kylmyys ei virtaa: lämpötilaeron vuoksi energiaa siirtyy nettomääräisesti lämpimästä kylmempään, ja jää jäähdyttää, koska se ottaa energiaa vastaan. Toinen virhe on olettaa, että lämpötila nousee tasaisesti koko ajan. Sulamisen aikana lämpötila pysyy vakiona, vaikka energiaa tulee koko ajan.

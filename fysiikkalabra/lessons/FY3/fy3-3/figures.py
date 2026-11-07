@@ -90,7 +90,7 @@ def kelvin_scale():
     f.tex(X(0) - 8, 30, r"\text{absoluuttinen nollapiste}", "start", w=250)
     f.tex(450, 30, r"\text{vesi jäätyy}", "end", w=118)
     f.tex(590, 30, r"\text{vesi kiehuu}", "end", w=118)
-    f.tex(222, 147, r"T = \theta + 273{,}15", "middle", w=230, bg=True)
+    f.tex(222, 147, r"T/\text{K} = \theta/{}^\circ\text{C} + 273{,}15", "middle", w=300, bg=True)
     f.tex(553, yk, r"T", "start", w=30)
     f.tex(553, yc, r"\theta", "start", w=30)
     return f.svg()

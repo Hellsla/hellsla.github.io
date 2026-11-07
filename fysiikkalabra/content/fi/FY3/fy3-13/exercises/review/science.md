@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: ae1ef4425b8ef94d
+CONTENT-HASH: b38642a6e641d4f2
 Round: 1
 
 ## Blocking
-(none)
+- none
 
 ## Polish
 - exercises.json:273 (L2-08) — the five example points lie within 0,16 kPa of the fitted line although Δp = 1,0 kPa; the set is labelled esimerkkiaineisto, so not an error, but a little more scatter (as in the lesson's example) would make the "within the uncertainty" judgement less artificial.
@@ -11,6 +11,8 @@ Round: 1
 - solutions.md:237 (L3-05) — "desimaali annetaan, jotta tulos vastaa vastauskentän arvoa" is not a physics reason (carried over).
 
 ## Checked
+- delta review 2026-11-07 round 2 (follow-up consistency edits): L1-08: shortened correct option (extending the line beyond the measured range, assuming the linear dependence holds there) is correct; option lengths now 95–105 characters (fi), comparable, all four of the same 'X, because Y' form, so no length giveaway; answer equals the option text; the teacher's full definition opens the feedback and agrees with the rest of it. Exactly one correct option. Hashes equal at start and end.
+- delta review 2026-11-07 (teacher's proofread replacement texts): L1-08 correct option, answer key, feedback and model answer now define extrapolation as extending the fitted line beyond the measurement range assuming the linear p(θ) dependence holds there, result a model-based estimate, not measured: correct, exactly one correct option, distractors unchanged and still wrong.
 - Recomputed in one script: Δp(60–20 °C) = 13,5 kPa; Δp(22–20 °C) = 0,8 kPa < Δp; intervals 101,0–103,0 / 101,8–103,8 overlap, 101,0–103,0 / 114,5–116,5 disjoint; least-squares line k = 0,3365 kPa/°C, p0 = 95,27 kPa, p(−100 °C) = 61,6 ≈ 62 kPa; −100 °C is 120 °C below the range. All numbers in options, feedback and solution agree.
 - Exactly one correct option; each distractor really wrong and its feedback right: overlap = "ei voi osoittaa", not "ei eroa" (guardrail "cannot be shown ≠ equal"); extrapolation as estimate, not certain (the chapter's own warned mistake "nollapiste on mitattu").
 - Correct option not identifiable by form: options 1 and 3 have the same structure, option 2 also cites the uncertainty; option 4 alone says "varmasti" but is wrong.

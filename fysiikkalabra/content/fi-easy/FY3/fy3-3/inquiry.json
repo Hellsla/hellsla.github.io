@@ -265,24 +265,24 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Etsi virhe",
-      "prompt": "Säiliö on jäykkä ja suljettu. Säiliössä kaasun paine on 120 kPa lämpötilassa $20\\,{}^\\circ\\text{C}$. Kaasu lämpenee $40\\,{}^\\circ\\text{C}$:seen. Opiskelija päättelee: ”Lämpötila kaksinkertaistuu, joten paine kaksinkertaistuu: $p = 2 \\cdot 120\\,\\text{kPa} = 240\\,\\text{kPa}$.” Missä on virhe?",
+      "prompt": "Säiliö on jäykkä ja suljettu. Säiliössä kaasun paine on $120\\,\\text{kPa}$ lämpötilassa $20\\,{}^\\circ\\text{C}$. Kaasu lämpenee $40\\,{}^\\circ\\text{C}$:seen. Opiskelija päättelee: ”Lämpötila kaksinkertaistuu, joten paine kaksinkertaistuu: $p = 2 \\cdot 120\\,\\text{kPa} = 240\\,\\text{kPa}$.” Missä on virhe?",
       "choices": [
         {
           "text": "Paine ei muutu lainkaan, koska säiliön tilavuus pysyy samana.",
           "feedback": "Vakiotilavuudessakin paine kasvaa, kun hiukkaset liikkuvat nopeammin. Opiskelija oli oikeassa siinä, että paine kasvaa. Virhe on siinä, kuinka paljon se kasvaa."
         },
         {
-          "text": "Lämpötilojen suhde pitää laskea kelvineinä: $313\\,\\text{K} / 293\\,\\text{K} \\approx 1{,}07$, joten paine on noin 128 kPa.",
+          "text": "Lämpötilojen suhde pitää laskea kelvineinä: $313\\,\\text{K} / 293\\,\\text{K} \\approx 1{,}07$, joten paine on noin $128\\,\\text{kPa}$.",
           "correct": true,
           "feedback": "Oikein. Paine on suoraan verrannollinen kelvinlämpötilaan. Se ei ole verrannollinen celsiuslämpötilaan: $p_2 = 120\\,\\text{kPa} \\cdot \\dfrac{313{,}15\\,\\text{K}}{293{,}15\\,\\text{K}} \\approx 128\\,\\text{kPa}$. Celsiusasteikon nollakohta on vain veden jäätymispiste."
         },
         {
-          "text": "Paineeseen lisätään lämpötilan nousu: 120 kPa + 20 kPa = 140 kPa.",
-          "feedback": "Kelvinejä tai celsiusasteita ei voi lisätä kilopascaleihin, koska ne ovat eri suureita. Paine muuttuu samassa suhteessa kuin kelvinlämpötila. Muutos on noin $7\\,\\%$, eli paine nousee noin 128 kPa:iin."
+          "text": "Paineeseen lisätään lämpötilan nousu: $120\\,\\text{kPa} + 20\\,\\text{kPa} = 140\\,\\text{kPa}$.",
+          "feedback": "Kelvinejä tai celsiusasteita ei voi lisätä kilopascaleihin, koska ne ovat eri suureita. Paine muuttuu samassa suhteessa kuin kelvinlämpötila. Muutos on noin $7\\,\\%$, eli paine nousee noin $128\\,\\text{kPa}$:iin."
         },
         {
           "text": "Päättelyssä ei ole virhettä.",
-          "feedback": "Lämpötila ei fysikaalisesti kaksinkertaistu. Kelvineinä se nousee $293\\,\\text{K}$:sta $313\\,\\text{K}$:iin, vain noin $7\\,\\%$. Paine kasvaa samassa suhteessa, noin 128 kPa:iin."
+          "feedback": "Lämpötila ei fysikaalisesti kaksinkertaistu. Kelvineinä se nousee $293\\,\\text{K}$:sta $313\\,\\text{K}$:iin, vain noin $7\\,\\%$. Paine kasvaa samassa suhteessa, noin $128\\,\\text{kPa}$:iin."
         }
       ],
       "optional": true
@@ -292,7 +292,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Sovella uuteen tilanteeseen",
-      "prompt": "Lasipurkki suljetaan tiiviillä kannella huoneessa. Ilman lämpötila on $20\\,{}^\\circ\\text{C}$ ja paine 101 kPa. Purkki lämmitetään vesihauteessa, kunnes sen sisällä olevan ilman lämpötila on $80\\,{}^\\circ\\text{C}$. Purkin tilavuus ja ilman määrä pysyvät samoina. Mikä on purkin ilman paine? Vastaa kilopascaleina.",
+      "prompt": "Lasipurkki suljetaan tiiviillä kannella huoneessa. Ilman lämpötila on $20\\,{}^\\circ\\text{C}$ ja paine $101\\,\\text{kPa}$. Purkki lämmitetään vesihauteessa, kunnes sen sisällä olevan ilman lämpötila on $80\\,{}^\\circ\\text{C}$. Purkin tilavuus ja ilman määrä pysyvät samoina. Mikä on purkin ilman paine? Vastaa kilopascaleina.",
       "answer": 122,
       "unit": "kPa",
       "tolerance": 0.02,

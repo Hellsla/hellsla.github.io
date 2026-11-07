@@ -49,7 +49,7 @@
       "kind": [
         "concept"
       ],
-      "answer": "Exactly $0\\,{}^\\circ\\text{C}$, because the heat is used for melting the ice.",
+      "answer": "About $0\\,{}^\\circ\\text{C}$, because ice and water are in equilibrium together only at the melting temperature.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
@@ -66,9 +66,9 @@
           "feedback": "If the temperature were above the melting temperature, the ice would still melt and the temperature would fall because of the melting. In thermal equilibrium no heat is transferred, so there could be no ice left."
         },
         {
-          "text": "Exactly $0\\,{}^\\circ\\text{C}$, because the heat is used for melting the ice.",
+          "text": "About $0\\,{}^\\circ\\text{C}$, because ice and water are in equilibrium together only at the melting temperature.",
           "correct": true,
-          "feedback": "Correct: in thermal equilibrium ice and water exist together only at the melting temperature of ice, $0\\,{}^\\circ\\text{C}$. The heat is used for the change of state and does not change the temperature."
+          "feedback": "Correct. At normal pressure, the temperature of a mixture of pure water and ice is about $0\\,{}^\\circ\\text{C}$ when both phases are in equilibrium. This is the melting and freezing temperature of water at normal pressure. In equilibrium no more heat is transferred, so the ice does not melt and the water does not freeze."
         }
       ]
     },
@@ -256,7 +256,7 @@
         {
           "text": "The water can give out about $19\\,\\text{kJ}$ when it cools to $0\\,{}^\\circ\\text{C}$.",
           "true": true,
-          "feedback": "Correct: the heat given out by the water is $Q_\\text{w} = c_\\text{w} m_\\text{w} T_\\text{w}$, that is $Q_\\text{w} \\approx 18\\,855\\,\\text{J} \\approx 19\\,\\text{kJ}$. The temperature of the water falls by $18\\,\\text{K}$."
+          "feedback": "Correct: the heat given out by the water is $Q_\\text{w} = c_\\text{w} m_\\text{w} \\Delta T_\\text{w}$, that is $Q_\\text{w} \\approx 18\\,855\\,\\text{J} \\approx 19\\,\\text{kJ}$. The temperature of the water falls by $18\\,\\text{K}$."
         },
         {
           "text": "All the ice melts, because there is more water than ice ($0.25\\,\\text{kg} > 0.080\\,\\text{kg}$).",

@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: ecedd7bc074658dc
+CONTENT-HASH: f13d1afb729a0e44
 
 Follow-up review of the fix commit 2c31ff041 (delta from e3d3c48d800417d8, whose full review is kept below). Change: the paragraph after $P = UA\Delta T$ in `## Kaava: Energiatase`.
 
 ## Blocking
-
-None.
+- none
 
 ## Polish
 
@@ -13,6 +12,7 @@ None.
 2. lesson.md Ydinajatus "Olomuodon muutoksen aikana lämpötila ei muutu": optional "puhtaan aineen … normaalipaineessa" (C).
 
 ## Checked
+- delta review 2026-11-07 (teacher's proofread replacement texts): heat capacity after melting C = (1,0 + 0,50) kg·4190 J/(kg·K) = 6285 J/K with the stated assumption c_drinks = c_water, and 33,6 W/6285 J/K·3600 s/h = 19,2 K/h recomputed; the new limits (initial phase, constant heat flow, which really decreases as the inside warms) are correct; unit-conversion sentence unchanged in substance.
 
 - Earlier blocking item resolved: "Mallissa oletetaan, että laukun sisälämpötila on $0\,{}^\circ\text{C}$ niin kauan kuin jäätä on, jolloin $\Delta T$ on ulkolämpötila celsiusasteina. Silloin kaikki seinän läpi tuleva energia sulattaa jäätä" — now a stated model assumption, so $t = sm/(UA\Delta T)$ carries its condition and agrees with the Ydinajatus (only the ice–water mixture is at about $0\,{}^\circ\text{C}$).
 - Consistency: grep of "$0\,{}^\circ\text{C}$" in lesson.md and inquiry.json finds no remaining unqualified claim outside the model contexts listed under Polish.

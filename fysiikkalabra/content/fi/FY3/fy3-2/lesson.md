@@ -116,7 +116,9 @@
 </svg>
 
 ## Ydinajatus
-Arkikielessä työ on mitä tahansa ponnistelua. Fysiikassa sana on tarkempi: voima tekee työtä, kun se siirtää kappaletta voiman suuntaan. Kun kannat reppua vaakasuoraan tasaisella vauhdilla, kannatteleva voimasi osoittaa ylös, mutta reppu liikkuu sivulle. Voima on kohtisuorassa liikettä vastaan, joten se ei tee työtä. Lihaksesi väsyvät, koska ne kuluttavat energiaa voiman ylläpitoon, mutta reppuun ei siirry energiaa.
+Arkikielessä työ tarkoittaa usein ponnistelua. Fysiikassa työllä on täsmällisempi merkitys: voima tekee työtä, kun kappale siirtyy ja voimalla on siirtymän suuntainen komponentti.
+
+Kun kannat reppua vaakasuoraan tasaisella vauhdilla, reppua kannatteleva voimasi osoittaa ylöspäin mutta reppu siirtyy vaakasuunnassa. Voima on kohtisuorassa siirtymään nähden, joten tämän voiman tekemä mekaaninen työ on nolla. Lihaksesi kuluttavat silti energiaa myös repun kannattelemiseen.
 
 <svg data-fig="carry-lift" viewBox="0 0 600 320" role="img" aria-label="Kaavakuva kahdesta tilanteesta. Vasemmalla reppua kannetaan vaakasuoraan: kannatteleva voima F osoittaa ylös, mutta liike on sivulle, joten voima ei tee työtä, W = 0. Oikealla reppu nostetaan ylös: voima F ja liike ovat samansuuntaiset, joten voima tekee työn W = F s." style="max-width:100%;font-size:24px">
   <foreignObject x="71" y="15.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kanto sivulle}$</div></foreignObject>
@@ -268,7 +270,7 @@ P = \frac{W}{t} = F v
 missä $P$ on teho (W), $t$ aika (s) ja $v$ nopeus (m/s). Yksi watti on yksi joule sekunnissa: $1\,\text{W} = 1\,\text{J/s}$.
 
 ## Esimerkki
-Jousta venytetään 20 cm. Venyttävä voima kasvaa tasaisesti nollasta 40 newtoniin, kuten kuvaaja näyttää. Kuinka suuren työn venyttävä voima tekee?
+Jousta venytetään $20\,\text{cm}$. Venyttävä voima kasvaa tasaisesti nollasta 40 newtoniin, kuten kuvaaja näyttää. Kuinka suuren työn venyttävä voima tekee?
 
 <svg data-fig="spring-work" viewBox="0 0 600 320" role="img" aria-label="(s,F)-kuvaaja mittakaavassa: voima kasvaa suoraviivaisesti nollasta 40 newtoniin matkalla 0–0,20 metriä; kolmion pinta-ala on työ." style="max-width:100%;font-size:24px">
   <line x1="167.5" y1="270" x2="167.5" y2="56" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -358,7 +360,7 @@ W &= F_\text{ka}\, s \\
 &= 4{,}0\,\text{J}
 \end{aligned}
 ```
-Jos laskisit $40\,\text{N} \cdot 0{,}20\,\text{m} = 8{,}0\,\text{J}$, tulos olisi kaksinkertainen, koska voima ei ole 40 N koko matkalla.
+Jos laskisit $40\,\text{N} \cdot 0{,}20\,\text{m} = 8{,}0\,\text{J}$, tulos olisi kaksinkertainen, koska voima ei ole $40\,\text{N}$ koko matkalla.
 
 ## Yleinen virhekäsitys
 Työ ei ole sama asia kuin ponnistelu: väsyminen ei tarkoita, että olisit tehnyt fysiikan tarkoittamaa työtä. Toinen yleinen virhe on sotkea työ ja teho: suuri teho ei tarkoita suurta työtä, vaan nopeasti tehtyä työtä.

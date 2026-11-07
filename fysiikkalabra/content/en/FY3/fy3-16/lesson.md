@@ -223,7 +223,7 @@ t &= \frac{s\,m_\text{ice} - c\,m_\text{j}\Delta T_\text{j}}{UA\Delta T_\text{u}
 
 <!-- vaihe -->
 
-**Unit conversions.** Changes in temperature are the same in kelvins and in degrees Celsius: the drinks cool by $20\,{}^\circ\text{C} - 0\,{}^\circ\text{C} = 20\,\text{K}$ and the difference across the wall is $28\,{}^\circ\text{C} - 0\,{}^\circ\text{C} = 28\,\text{K}$. The latent heat of fusion is $s = 334\,\tfrac{\text{kJ}}{\text{kg}} = 334\,000\,\tfrac{\text{J}}{\text{kg}}$, so that the energies are in joules and the power in watts. Finally the time is converted from seconds to hours: $1\,\text{h} = 3600\,\text{s}$.
+**Unit conversions.** Changes in temperature are the same in kelvins and in degrees Celsius: the drinks cool by $20\,{}^\circ\text{C} - 0\,{}^\circ\text{C} = 20\,\text{K}$ and the difference across the wall is $28\,{}^\circ\text{C} - 0\,{}^\circ\text{C} = 28\,\text{K}$. The latent heat of fusion is converted to joules per kilogram: $s = 334\,\tfrac{\text{kJ}}{\text{kg}} = 334\,000\,\tfrac{\text{J}}{\text{kg}}$. This way the energies can be calculated in joules and the power in watts. Finally the time is converted from seconds to hours: $1\,\text{h} = 3600\,\text{s}$.
 
 <!-- vaihe -->
 
@@ -255,7 +255,17 @@ The ice lasts about $2.4\,\text{h}$. The result is given with two significant fi
 
 <!-- vaihe -->
 
-**Reasonableness.** Without the warm drinks the ice would last $\tfrac{334\,000\,\text{J}}{33.6\,\text{W}} \approx 9940\,\text{s} \approx 2.8\,\text{h}$, so the result is moderately shorter. Cooling the drinks melts a share $\tfrac{41\,900\,\text{J}}{334\,000\,\text{J}} \approx 0.13 = 13\,\%$ of the ice, and the time becomes shorter by the same share: $2.8\,\text{h} \cdot 0.87 \approx 2.4\,\text{h}$. When the ice has melted, the bag contains $1.5\,\text{kg}$ of water with a heat capacity of $4190 \cdot 1.5 = 6285\,\text{J/K}$. At first the power raises its temperature by $\tfrac{33.6\,\text{W}}{6285\,\text{J/K}} \cdot 3600\,\tfrac{\text{s}}{\text{h}} \approx 19\,\tfrac{\text{K}}{\text{h}}$, as the graph shows.
+**Reasonableness.** Without the warm drinks the ice would last $\tfrac{334\,000\,\text{J}}{33.6\,\text{W}} \approx 9940\,\text{s} \approx 2.8\,\text{h}$, so the result is moderately shorter. Cooling the drinks melts a share $\tfrac{41\,900\,\text{J}}{334\,000\,\text{J}} \approx 0.13 = 13\,\%$ of the ice, and the time becomes shorter by the same share: $2.8\,\text{h} \cdot 0.87 \approx 2.4\,\text{h}$.
+
+When the ice has melted, the bag contains $1.0\,\text{kg}$ of meltwater and $0.50\,\text{kg}$ of drinks. Assuming that the specific heat capacity of the drinks is the same as that of water, the total heat capacity of the contents is
+```latex
+\begin{aligned}
+&C = (m_\text{ice} + m_\text{j})\,c \\
+&= 1.50\,\text{kg} \cdot 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \\
+&\approx 6285\,\tfrac{\text{J}}{\text{K}}
+\end{aligned}
+```
+When heat flows into the bag at a power of $33.6\,\text{W}$, the model says the temperature of the contents starts to rise by about $19\,\text{K}$ per hour. This estimate holds at the start of the temperature rise and assumes that the heat flow stays constant.
 
 ## Common misconception
 Many people think that ice produces cold that flows into the drinks. Cold does not flow: because of the temperature difference, energy moves on net from the warmer object to the colder one, and ice cools things because it takes in energy. Another mistake is to assume that the temperature rises steadily all the time. During melting the temperature stays constant, even though energy keeps coming in.

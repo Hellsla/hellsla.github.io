@@ -242,7 +242,21 @@ Precise measurements give the value $R = 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\
 ```latex
 pV = nRT
 ```
-where $p$ is the pressure (Pa), $V$ the volume (m³), $n$ the amount of substance (mol), $R = 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$ the molar gas constant and $T$ the temperature in kelvins (K). The type of gas does not appear in the equation at all. A temperature $\theta$ given in degrees Celsius is converted to kelvins by adding $273.15$ to the numerical value. The pressure is always the total pressure in pascals and the volume is in cubic metres, because the unit of $R$ contains the joule: ${1\,\text{Pa} \cdot \text{m}^3} = {1\,\tfrac{\text{N}}{\text{m}^2} \cdot \text{m}^3} = {1\,\text{N} \cdot \text{m}} = 1\,\text{J}$.
+where $p$ is the absolute pressure of the gas, $V$ the volume, $n$ the amount of substance, $R$ the molar gas constant and $T$ the temperature in kelvins. The type of gas does not appear in the equation at all. A temperature $\theta$ given in degrees Celsius is converted to kelvins by adding $273.15$ to the numerical value.
+
+When the value of the gas constant
+```latex
+R = 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}
+```
+is used, the unit of the product $pV$ must be the joule. Usually the pressure is converted to pascals and the volume to cubic metres, and then
+```latex
+1\,\text{Pa} \cdot \text{m}^3 = 1\,\tfrac{\text{N}}{\text{m}^2} \cdot \text{m}^3 = 1\,\text{N} \cdot \text{m} = 1\,\text{J}
+```
+Kilopascals and litres can also be combined, because
+```latex
+1\,\text{kPa} \cdot \textsf{l} = 1000\,\text{Pa} \cdot 0.001\,\text{m}^3 = 1\,\text{J}
+```
+What matters most is to handle the units consistently throughout the calculation.
 
 When you solve the equation of state for pressure, you see that the pressure doubles when the number of particles or the temperature in kelvins doubles, or when the volume is halved. So the pressure is directly proportional to the number of particles and the temperature in kelvins and inversely proportional to the volume, that is, $p \propto NT/V$.
 

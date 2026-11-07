@@ -269,11 +269,11 @@ In the graph, weight is plotted as a function of mass. For each celestial body, 
 </svg>
 
 ## Worked example
-A research robot has a mass of $120\,\text{kg}$. What is its weight on Earth and on Mars?
+A research robot has a mass of $1.20 \cdot 10^2\,\text{kg}$. What is its weight on Earth and on Mars?
 
 <!-- vaihe -->
 
-**Given and find.** The mass is $m = 120\,\text{kg}$, and from the table $g_\text{Earth} = 9.81\,\text{m/s}^2$ and $g_\text{Mars} = 3.71\,\text{m/s}^2$. We want the weights $G_\text{Earth}$ and $G_\text{Mars}$.
+**Given and find.** The mass is $m = 1.20 \cdot 10^2\,\text{kg}$, and from the table $g_\text{Earth} = 9.81\,\text{m/s}^2$ and $g_\text{Mars} = 3.71\,\text{m/s}^2$. We want the weights $G_\text{Earth}$ and $G_\text{Mars}$.
 
 <!-- vaihe -->
 
@@ -299,21 +299,21 @@ G_\text{Mars} &= m g_\text{Mars}
 ```latex
 \begin{aligned}
 &G_\text{Earth} = m g_\text{Earth} \\
-&= 120\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
+&= 1.20 \cdot 10^2\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
 &= 1177.2\,\text{N} \\[6pt]
 &G_\text{Mars} = m g_\text{Mars} \\
-&= 120\,\text{kg} \cdot 3.71\,\text{m/s}^2 \\
+&= 1.20 \cdot 10^2\,\text{kg} \cdot 3.71\,\text{m/s}^2 \\
 &= 445.2\,\text{N}
 \end{aligned}
 ```
 
 <!-- vaihe -->
 
-**Result.** To three significant figures, the robot's weight on Earth is $G_\text{Earth} \approx 1180\,\text{N}$, or about $1.18\,\text{kN}$, and on Mars $G_\text{Mars} \approx 445\,\text{N}$. Three figures, because the mass $120\,\text{kg}$ and the $g$ values are given to three figures.
+**Result.** To three significant figures, the robot's weight is about $1.18\,\text{kN}$ on Earth and about $445\,\text{N}$ on Mars. The results are given to three significant figures because the mass and the values of the free-fall acceleration are given to that precision.
 
 <!-- vaihe -->
 
-**Reasonableness.** The weight of a one-kilogram mass on Earth is about $10\,\text{N}$, so the weight of a $120\,\text{kg}$ mass is about $1200\,\text{N}$. Mars's $g$ is a little over one third of the Earth's value ($3.71 : 9.81 \approx 0.38$), and $445\,\text{N}$ is a little over one third of $1180\,\text{N}$. On Mars the weight is smaller because the interaction between Mars and the robot is weaker than between the Earth and the robot. The mass is the same in both.
+**Reasonableness.** The weight of a one-kilogram mass on Earth is about $10\,\text{N}$, so the weight of a $120\,\text{kg}$ mass is about $1200\,\text{N}$. Mars's $g$ is a little over one third of the Earth's value ($3.71 : 9.81 \approx 0.38$), and $445\,\text{N}$ is a little over one third of $1.18\,\text{kN}$. On Mars the weight is smaller because the interaction between Mars and the robot is weaker than between the Earth and the robot. The mass is the same in both.
 
 ## Common misconception
 In everyday language people say "I weigh 70 kilos", but the kilogram is a unit of mass, not of weight. In physics the mass is $70\,\text{kg}$ and the weight on Earth is about $690\,\text{N}$. Another mistake is to think that an object's mass changes on the Moon. The mass stays the same, and only the weight decreases. Note also that a force meter measures force, not mass: its reading changes when the same object is taken to another place. A bathroom scale still shows kilograms, because it measures force and its scale has been made on Earth by dividing the force by $9.81\,\text{m/s}^2$. On the Moon such a scale would show only about one sixth of the mass.

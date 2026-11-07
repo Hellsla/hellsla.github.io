@@ -136,7 +136,7 @@
 ## fy3-13-L1-08
 **Find:** what extrapolation means when a line fitted to the measurement points is extended to $p = 0$.
 **Principle:** The measurement covers only the interval $20\ldots 100\,{}^\circ\text{C}$. When the line is extended beyond this interval, the result is not measured but inferred, and the inference assumes that the same linear dependence also holds outside the measured range.
-**Model answer:** Extrapolation is extending a line beyond the measurement range on the assumption that the pressure behaves there as it does in the measured range. So the extrapolated value is an estimate, not a measurement result. Reading between two measured points is interpolation, repeating reduces the random error of the mean, and the line passes through the middle of the set of points, not through every point.
+**Model answer:** Extrapolation means extending the line fitted to the measurement points beyond the measurement range, assuming that the linear dependence of the pressure on the temperature also holds there. So the extrapolated value is an estimate based on the model, not a directly measured result. Reading between two measured points is interpolation, repeating reduces the random error of the mean, and the line passes through the middle of the set of points, not through every point.
 
 ## fy3-13-L2-05
 **Given:** five points from the table; the slope of the fitted line $k = 0.363\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$; the line passes through the centre point $(\theta_{\text{av}}, p_{\text{av}})$

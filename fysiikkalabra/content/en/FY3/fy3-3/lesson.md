@@ -122,7 +122,7 @@
 </svg>
 
 ## Key idea
-When you study a phenomenon, you separate the part of the world you are looking at from the rest. The separated part is the thermodynamic system, and everything outside it is the surroundings. The air in a bicycle tyre is an example of a system. If no matter can leave or enter the system, the system is closed. The state of a system is described by state variables: temperature, pressure and volume, and the amount of substance. Pressure is force per unit area; its unit is the pascal (Pa), and 1 kPa = 1000 Pa. Pressure is studied in more detail later. When you change one state variable of a gas system, at least one of the others changes too.
+When you study a phenomenon, you separate the part of the world you are looking at from the rest. The separated part is the thermodynamic system, and everything outside it is the surroundings. The air in a bicycle tyre is an example of a system. If no matter can leave or enter the system, the system is closed. The state of a system is described by state variables: temperature, pressure and volume, and the amount of substance. Pressure is force per unit area; its unit is the pascal (Pa), and $1\,\text{kPa} = 1000\,\text{Pa}$. Pressure is studied in more detail later. When you change one state variable of a gas system, at least one of the others changes too.
 
 <svg data-fig="system" viewBox="0 0 600 340" role="img" aria-label="Principle diagram, not to scale: gas in a cylinder whose upper end is closed by a movable piston. The gas is a thermodynamic system; its boundary is drawn as a dashed line around the gas. The walls of the cylinder, the piston and the rest of the world are the surroundings. The state variables that describe the state of the system are pressure p, volume V and temperature T." style="max-width:100%;font-size:24px">
   <rect x="138" y="150" width="204" height="140" fill="#eef5f9"/>
@@ -226,11 +226,11 @@ Temperature is measured on the Celsius scale, where $0\,{}^\circ\text{C}$ is the
 The statement "temperature tells you the average kinetic energy of the particles" holds as such for a dilute gas whose particles interact with each other only when they collide. Then the temperature is proportional to the average kinetic energy of the translational motion of the particles. In a liquid and in a solid the particles are close to each other and vibrate, pulled by their neighbours. Temperature describes the strength of the thermal motion of the particles in them too, but the energy of the substance also includes the energy of the interactions between the particles. So temperature is not the same thing as the energy of a substance: ice and water can have the same temperature $0\,{}^\circ\text{C}$, although water of the same mass has more internal energy than ice (chapters *Internal energy, heat and conservation of energy* and *Changes of state*). Even at absolute zero not all motion of the particles stops, but its energy is the smallest possible.
 
 ## Formula: Kelvin scale
-The conversion of a Celsius temperature $\theta$ to kelvins is:
+The numerical values of the Celsius temperature $\theta$ and the kelvin temperature $T$ are related by the equation
 ```latex
-T = \theta + 273.15
+\frac{T}{\text{K}} = \frac{\theta}{{}^\circ\text{C}} + 273.15
 ```
-where $T$ is the temperature in kelvins (K) and $\theta$ is the temperature in degrees Celsius (°C). In practice the number 273 is often enough. For kelvins you do not use the word degree: you say "300 kelvins", not "300 degrees kelvin".
+For example, $20\,{}^\circ\text{C}$ corresponds to $293.15\,\text{K}$. A temperature difference, on the other hand, has the same numerical value in kelvins and in degrees Celsius: a rise from $20\,{}^\circ\text{C}$ to $30\,{}^\circ\text{C}$ is $10\,\text{K}$. In practice the number 273 is often enough. For kelvins you do not use the word degree: you say "300 kelvins", not "300 degrees kelvin".
 
 Absolute zero is therefore $0\,\text{K}$ = $-273.15\,{}^\circ\text{C}$. A temperature in kelvins cannot be negative, but a Celsius temperature can.
 
@@ -257,7 +257,7 @@ Absolute zero is therefore $0\,\text{K}$ = $-273.15\,{}^\circ\text{C}$. A temper
   <foreignObject x="62" y="15.5" width="250" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{absolute zero}$</div></foreignObject>
   <foreignObject x="332" y="15.5" width="118" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{water freezes}$</div></foreignObject>
   <foreignObject x="472" y="15.5" width="118" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{water boils}$</div></foreignObject>
-  <foreignObject x="107" y="132.5" width="230" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$T = \theta + 273.15$</span></div></foreignObject>
+  <foreignObject x="72" y="132.5" width="300" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$T/\text{K} = \theta/{}^\circ\text{C} + 273.15$</span></div></foreignObject>
   <foreignObject x="553" y="97.5" width="30" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$T$</div></foreignObject>
   <foreignObject x="553" y="167.5" width="30" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\theta$</div></foreignObject>
 </svg>
@@ -381,7 +381,7 @@ Many people think that the temperature doubles when it rises from $10\,{}^\circ\
 - In a gas system, temperature, pressure and volume depend on each other: if you change one, at least one of the others changes too.
 - Micro model of a gas: temperature tells you the average kinetic energy of the particles, and pressure arises from the collisions of the particles with the wall. In a liquid and in a solid the energy also includes the energy of the interactions between the particles, so temperature is not the same thing as the energy of a substance.
 - When the volume and the amount of substance stay the same, the pressure of a dilute gas is directly proportional to the temperature in kelvins. Continuing the line through the data points, that is, extrapolation, gives an estimate of absolute zero.
-- The conversion is $T = \theta + 273.15$. Absolute zero is $0\,\text{K}$ = $-273.15\,{}^\circ\text{C}$.
+- The conversion is $\tfrac{T}{\text{K}} = \tfrac{\theta}{{}^\circ\text{C}} + 273.15$. Absolute zero is $0\,\text{K}$ = $-273.15\,{}^\circ\text{C}$.
 
 <svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Illustration: the same bicycle on a snowy frosty morning. There is snow on the ground and on the saddle, and the column of the thermometer on the post is low." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy33s-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d0e6fb"/><stop offset="1" stop-color="#ffffff"/></linearGradient></defs>

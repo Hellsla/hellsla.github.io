@@ -91,7 +91,7 @@
 
 ## fy3-10-L2-08
 **Find:** which row of the student's calculation is wrong.
-**Principle:** The equation of state $pV = nRT$ requires base units: pressure in pascals, volume in cubic metres and temperature in kelvins. When the result is in kelvins, degrees Celsius are obtained by subtracting $273$, because $273$ is added to a Celsius temperature when converting it to kelvins. The calculation can be checked row by row: unit conversions, solving the equation, substitution and finally the conversion to degrees Celsius.
+**Principle:** In the equation of state $pV = nRT$ the units must match the unit of $R$: pressure in pascals and volume in cubic metres (or kilopascals and litres), temperature always in kelvins. When the result is in kelvins, degrees Celsius are obtained by subtracting $273$, because $273$ is added to a Celsius temperature when converting it to kelvins. The calculation can be checked row by row: unit conversions, solving the equation, substitution and finally the conversion to degrees Celsius.
 **Model answer:** Row 1: $100\,\text{kPa} = 100\,000\,\text{Pa}$ and $2.00\,\textsf{l} = 0.00200\,\text{m}^3$ are correct.
 Row 2: $T = \dfrac{pV}{nR}$ is correct.
 Row 3: the numerator $100\,000 \cdot 0.00200 = 200$ and the denominator $0.0800 \cdot 8.31 = 0.665$, so $T = 200 : 0.665 \approx 301\,\text{K}$ is correct.
@@ -153,7 +153,7 @@ $$\begin{aligned} d &= \dfrac{1328.9\,\text{J}}{121\,200\,\text{N}} \\ &= 0.0109
 
 ## fy3-10-L1-08
 **Find:** what the error in the student's calculation is.
-**Principle:** The equation of state works correctly only when the quantities are in base units: pressure in pascals, volume in cubic metres and temperature in kelvins. Otherwise a unit factor is left in the result.
+**Principle:** In the equation of state the units must match the unit of $R$: pressure in pascals and volume in cubic metres (or kilopascals and litres), temperature always in kelvins. Otherwise a unit factor is left in the result.
 **Model answer:** The student substituted the pressure $150\,\text{kPa}$ as the number $150$ instead of in pascals. The correct pressure is $150\,000\,\text{Pa}$, which gives $n = \dfrac{150\,000 \cdot 0.0020}{8.31 \cdot 300} \approx 0.12\,\text{mol}$. The student's result is thus a thousand times too small, as the student's own estimate hinted. The temperature and the volume were substituted in the correct units, and no molar mass is needed.
 
 ## fy3-10-L2-05

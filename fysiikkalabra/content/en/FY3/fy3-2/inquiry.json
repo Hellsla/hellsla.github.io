@@ -26,11 +26,11 @@
       "prompt": "The mass of the backpack is $10\\,\\text{kg}$. How large is the gravitational force $G = mg$ acting on it?",
       "choices": [
         {
-          "text": "10 N",
+          "text": "$10\\,\\text{N}$",
           "feedback": "You mixed up mass and weight. Weight is a force: $G = mg = 10\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\approx 98\\,\\text{N}$."
         },
         {
-          "text": "98 N",
+          "text": "$98\\,\\text{N}$",
           "correct": true,
           "feedback": "Correct: $G = mg = 10\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\approx 98\\,\\text{N}$. This is the force you need to hold the backpack up."
         },
@@ -39,7 +39,7 @@
           "feedback": "Weight is a force, and the unit of force is the newton. The kilogram is the unit of mass."
         },
         {
-          "text": "981 N",
+          "text": "$981\\,\\text{N}$",
           "feedback": "The acceleration of free fall is $9.81\\,\\text{m/s}^2$, not 98.1. The result is $10 \\cdot 9.81\\,\\text{N} \\approx 98\\,\\text{N}$."
         }
       ],
@@ -50,7 +50,7 @@
       "stage": "ennusta",
       "type": "choice",
       "title": "Prediction 1: the distance doubles",
-      "prompt": "A crate is pulled along the floor by a 60 N force in the direction of motion, first $10\\,\\text{m}$ and then $20\\,\\text{m}$. The force stays the same. What happens to the work done by the force?",
+      "prompt": "A crate is pulled along the floor by a $60\\,\\text{N}$ force in the direction of motion, first $10\\,\\text{m}$ and then $20\\,\\text{m}$. The force stays the same. What happens to the work done by the force?",
       "justify": true,
       "reveal": {
         "after": "exp-1",
@@ -78,7 +78,7 @@
       "stage": "ennusta",
       "type": "choice",
       "title": "Prediction 2: the same pull, more slowly",
-      "prompt": "The same pull (60 N, $10\\,\\text{m}$) is done first in 5 seconds and then in 20 seconds. What happens to the work and the power?",
+      "prompt": "The same pull ($60\\,\\text{N}$, $10\\,\\text{m}$) is done first in 5 seconds and then in 20 seconds. What happens to the work and the power?",
       "justify": true,
       "reveal": {
         "after": "exp-2",
@@ -110,7 +110,7 @@
       "type": "choice",
       "layout": "models",
       "title": "Prediction 3: the backpack in the corridor",
-      "prompt": "You carry a backpack that weighs 98 N for $20\\,\\text{m}$ along a level corridor at a steady speed. Three students explain how much work your supporting force does on the backpack. Who is right? The simulation does not test this, because in it the force is always in the direction of motion; compare your prediction with the model and the figure in the Theory summary.",
+      "prompt": "You carry a backpack that weighs $98\\,\\text{N}$ for $20\\,\\text{m}$ along a level corridor at a steady speed. Three students explain how much work your supporting force does on the backpack. Who is right? The simulation does not test this, because in it the force is always in the direction of motion; compare your prediction with the model and the figure in the Theory summary.",
       "justify": true,
       "choices": [
         {
@@ -290,17 +290,17 @@
           "feedback": "The joule is the unit of work, and $1\\,\\text{J} = 1\\,\\text{N}\\cdot\\text{m}$. The unit is correct; the error is elsewhere."
         },
         {
-          "text": "The force is not 40 N over the whole distance. The work is the area of the triangle under the $(s, F)$ graph, $\\tfrac{1}{2} \\cdot 40\\,\\text{N} \\cdot 0.20\\,\\text{m} = 4.0\\,\\text{J}$.",
+          "text": "The force is not $40\\,\\text{N}$ over the whole distance. The work is the area of the triangle under the $(s, F)$ graph, $\\tfrac{1}{2} \\cdot 40\\,\\text{N} \\cdot 0.20\\,\\text{m} = 4.0\\,\\text{J}$.",
           "correct": true,
           "feedback": "Correct. $W = Fs$ holds for a constant force. When the force increases steadily from zero, the average force is half of the peak value, and the work is half of the student's result."
         },
         {
           "text": "The distance should be $20\\,\\text{m}$, not $0.20\\,\\text{m}$.",
-          "feedback": "The spring was stretched 20 cm, and $20\\,\\text{cm} = 0.20\\,\\text{m}$. The unit conversion is correct."
+          "feedback": "The spring was stretched $20\\,\\text{cm}$, and $20\\,\\text{cm} = 0.20\\,\\text{m}$. The unit conversion is correct."
         },
         {
           "text": "There is no error in the calculation.",
-          "feedback": "The formula $W = Fs$ applies to a constant force. Here the force increases from zero to 40 N, so it is 40 N only at the end of the distance."
+          "feedback": "The formula $W = Fs$ applies to a constant force. Here the force increases from zero to $40\\,\\text{N}$, so it is $40\\,\\text{N}$ only at the end of the distance."
         }
       ],
       "optional": true
@@ -310,7 +310,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Apply to a new situation",
-      "prompt": "An electric scooter travels at a steady $5.0\\,\\text{m/s}$. The motor pushes the scooter with a 48 N force in the direction of motion, which cancels friction and air resistance. How large is the power of the motor? Give your answer in watts.",
+      "prompt": "An electric scooter travels at a steady $5.0\\,\\text{m/s}$. The motor pushes the scooter with a $48\\,\\text{N}$ force in the direction of motion, which cancels friction and air resistance. How large is the power of the motor? Give your answer in watts.",
       "answer": 240,
       "unit": "W",
       "tolerance": 0.02,
@@ -343,20 +343,20 @@
       "stage": "tarkista",
       "type": "choice",
       "title": "1. Concept",
-      "prompt": "A spring is stretched first from 0 cm to 10 cm and then from 10 cm to 20 cm. The force increases steadily with the extension. Compared with the first stretch, the second stretch requires",
+      "prompt": "A spring is stretched first from $0\\,\\text{cm}$ to $10\\,\\text{cm}$ and then from $10\\,\\text{cm}$ to $20\\,\\text{cm}$. The force increases steadily with the extension. Compared with the first stretch, the second stretch requires",
       "choices": [
         {
           "text": "the same work, because the extension increases by the same amount.",
-          "feedback": "The force is larger in the second interval, so the area under the $(s, F)$ graph is larger there. Draw the triangle and split it with a vertical line at 10 cm."
+          "feedback": "The force is larger in the second interval, so the area under the $(s, F)$ graph is larger there. Draw the triangle and split it with a vertical line at $10\\,\\text{cm}$."
         },
         {
           "text": "twice the work, because the force is twice as large at the end.",
-          "feedback": "The final force is twice as large, but work is the area, not the final force. The area of the triangle 0–20 cm is four times that of the triangle 0–10 cm, so the interval 10–20 cm is 4 − 1 = 3 parts."
+          "feedback": "The final force is twice as large, but work is the area, not the final force. The area of the triangle 0–$20\\,\\text{cm}$ is four times that of the triangle 0–$10\\,\\text{cm}$, so the interval 10–$20\\,\\text{cm}$ is 4 − 1 = 3 parts."
         },
         {
           "text": "three times the work.",
           "correct": true,
-          "feedback": "Correct. The $(s, F)$ graph is a triangle: the area of the interval 0–10 cm is 1 part and that of 0–20 cm is 4 parts, so the area of the interval 10–20 cm is 3 parts."
+          "feedback": "Correct. The $(s, F)$ graph is a triangle: the area of the interval 0–$10\\,\\text{cm}$ is 1 part and that of 0–$20\\,\\text{cm}$ is 4 parts, so the area of the interval 10–$20\\,\\text{cm}$ is 3 parts."
         }
       ]
     },
@@ -391,7 +391,7 @@
       "stage": "tarkista",
       "type": "numeric",
       "title": "3. Graph and calculation",
-      "prompt": "In an $(s, F)$ graph the force in the direction of motion is 30 N from 0–$4.0\\,\\text{m}$ and then falls steadily to zero from 4.0–$8.0\\,\\text{m}$. How much work does the force do over the whole $8.0\\,\\text{m}$? Give your answer in joules.",
+      "prompt": "In an $(s, F)$ graph the force in the direction of motion is $30\\,\\text{N}$ from 0–$4.0\\,\\text{m}$ and then falls steadily to zero from 4.0–$8.0\\,\\text{m}$. How much work does the force do over the whole $8.0\\,\\text{m}$? Give your answer in joules.",
       "answer": 180,
       "unit": "J",
       "tolerance": 0.02,
@@ -403,7 +403,7 @@
       "mistakes": [
         {
           "value": 240,
-          "feedback": "You calculated $30\\,\\text{N} \\cdot 8.0\\,\\text{m}$, but the force is not 30 N over the whole distance. The second part is a triangle whose area is half that of the rectangle."
+          "feedback": "You calculated $30\\,\\text{N} \\cdot 8.0\\,\\text{m}$, but the force is not $30\\,\\text{N}$ over the whole distance. The second part is a triangle whose area is half that of the rectangle."
         },
         {
           "value": 120,

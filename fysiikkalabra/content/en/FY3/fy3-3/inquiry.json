@@ -265,24 +265,24 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Find the error",
-      "prompt": "In a rigid closed tank the pressure of a gas is 120 kPa at $20\\,{}^\\circ\\text{C}$. The gas warms up to $40\\,{}^\\circ\\text{C}$. A student reasons: \"The temperature doubles, so the pressure doubles: $p = 2 \\cdot 120\\,\\text{kPa} = 240\\,\\text{kPa}$.\" Where is the error?",
+      "prompt": "In a rigid closed tank the pressure of a gas is $120\\,\\text{kPa}$ at $20\\,{}^\\circ\\text{C}$. The gas warms up to $40\\,{}^\\circ\\text{C}$. A student reasons: \"The temperature doubles, so the pressure doubles: $p = 2 \\cdot 120\\,\\text{kPa} = 240\\,\\text{kPa}$.\" Where is the error?",
       "choices": [
         {
           "text": "The pressure does not change at all, because the volume of the tank stays the same.",
           "feedback": "Even at constant volume the pressure increases when the particles move faster. The student was right that the pressure increases; the error is in how much."
         },
         {
-          "text": "The ratio of the temperatures must be calculated in kelvins: $313\\,\\text{K} / 293\\,\\text{K} \\approx 1.07$, so the pressure is about 128 kPa.",
+          "text": "The ratio of the temperatures must be calculated in kelvins: $313\\,\\text{K} / 293\\,\\text{K} \\approx 1.07$, so the pressure is about $128\\,\\text{kPa}$.",
           "correct": true,
           "feedback": "Correct. The pressure is directly proportional to the temperature in kelvins, not to the Celsius temperature: $p_2 = 120\\,\\text{kPa} \\cdot \\dfrac{313.15\\,\\text{K}}{293.15\\,\\text{K}} \\approx 128\\,\\text{kPa}$. The zero of the Celsius scale is only the freezing point of water."
         },
         {
-          "text": "The rise in temperature is added to the pressure: 120 kPa + 20 kPa = 140 kPa.",
-          "feedback": "You cannot add kelvins or degrees Celsius to kilopascals, because they are different quantities. The pressure changes in the same proportion as the temperature in kelvins: by about $7\\,\\%$, to about 128 kPa."
+          "text": "The rise in temperature is added to the pressure: $120\\,\\text{kPa} + 20\\,\\text{kPa} = 140\\,\\text{kPa}$.",
+          "feedback": "You cannot add kelvins or degrees Celsius to kilopascals, because they are different quantities. The pressure changes in the same proportion as the temperature in kelvins: by about $7\\,\\%$, to about $128\\,\\text{kPa}$."
         },
         {
           "text": "There is no error in the reasoning.",
-          "feedback": "Physically the temperature does not double: in kelvins it rises from $293\\,\\text{K}$ to $313\\,\\text{K}$, only about $7\\,\\%$. The pressure increases in the same proportion, to about 128 kPa."
+          "feedback": "Physically the temperature does not double: in kelvins it rises from $293\\,\\text{K}$ to $313\\,\\text{K}$, only about $7\\,\\%$. The pressure increases in the same proportion, to about $128\\,\\text{kPa}$."
         }
       ],
       "optional": true
@@ -292,7 +292,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Apply to a new situation",
-      "prompt": "A glass jar is sealed with an airtight lid in a room where the air temperature is $20\\,{}^\\circ\\text{C}$ and the pressure is 101 kPa. The jar is heated in a water bath until the temperature of the air inside it is $80\\,{}^\\circ\\text{C}$. The volume of the jar and the amount of air stay the same. What is the pressure of the air in the jar? Give your answer in kilopascals.",
+      "prompt": "A glass jar is sealed with an airtight lid in a room where the air temperature is $20\\,{}^\\circ\\text{C}$ and the pressure is $101\\,\\text{kPa}$. The jar is heated in a water bath until the temperature of the air inside it is $80\\,{}^\\circ\\text{C}$. The volume of the jar and the amount of air stay the same. What is the pressure of the air in the jar? Give your answer in kilopascals.",
       "answer": 122,
       "unit": "kPa",
       "tolerance": 0.02,
